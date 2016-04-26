@@ -1,0 +1,51 @@
+状态	文件名	类型	播放方式	主角身后开始帧	主角身后结束帧	动画总帧数	动画总方向数	动画帧间隔	
+状态1	Special	Head	Loop			8	1	1	眩晕
+状态2	Special	Foot	Loop			8	1	1	中毒
+状态3	Special	Body	Loop	0	29	8	1	1	冰冻
+状态4	Special	Body	Loop	10	20	8	1	1	燃烧
+状态5	Special	Body				8	1	1	混乱
+状态6	\spr\skill\五毒教\wdu_06_无形蛊.spr	Foot	Loop	0	0	30	1	1	无形蛊
+状态7	\spr\skill\五毒教\wdu_07_毒盾.spr	Body	Loop	5	15	20	1	1	毒盾
+状态8	\spr\skill\五毒教\wdu_08_冰蓝玄晶.spr	Head	Loop	0	0	30	1	1	冰蓝玄晶
+状态9	\spr\skill\五毒教\wdu_09_雷动九天.spr	Head	Loop	0	0	30	1	1	雷动九天
+状态10	\spr\skill\五毒教\wdu_10_赤焰蚀天.spr	Head	Loop	0	0	30	1	1	赤焰蚀天
+状态11	\spr\skill\五毒教\wdu_11_万蛊蚀心.spr	Head	Loop	0	0	30	1	1	万蛊蚀心
+状态12	\spr\skill\五毒教\wdu_12_移花接玉.spr	Head	Loop	0	0	20	1	1	移花接玉
+状态13	\spr\skill\昆仑\kl_06_大浪蚀空.spr	Body	Loop	5	15	20	1	2	大浪浊空
+状态14	\spr\skill\昆仑\kl_07_引雷遁地.spr	Body	Loop	7	22	30	1	2	引雷遁地
+状态15	\spr\skill\昆仑\kl_08_烈火红尘.spr	Body	Loop	7	22	30	1	2	烈火红尘
+状态16	\spr\skill\昆仑\kl_09_木珠兵解.spr	Body	Loop	40	40	40	1	2	木珠兵解
+状态17	\spr\skill\昆仑\kl_10_滑不留手.spr	Body	Loop	4	12	15	1	2	滑不留手
+状态18	\spr\skill\武当\wd_08_人剑合一.spr	Body	Loop	7	22	30	1	1	人剑合一
+状态19	\spr\skill\武当\wd_06_坐忘无我.spr	Head	Loop	0	0	36	1	1	坐忘无我
+状态20	\spr\skill\武当\wd_07_七星阵.spr	Foot	Loop	0	0	30	1	1	七星阵
+状态21	\spr\skill\天忍\mag_tr_06_火盾.spr	Body	Loop	4	12	15	1	1	火盾
+状态22	\spr\skill\天忍\mag_tr_07_偷天换日.spr	Head	Loop	0	0	15	1	1	偷天换日
+状态23	\spr\skill\天忍\mag_tr_08_吸星大法.spr	Head	Loop	0	0	15	1	1	吸星大法
+状态24	\spr\skill\天忍\mag_tr_09_借力打力.spr	Head	Loop	0	0	15	1	1	借力打力
+状态25	\spr\skill\天忍\mag_tr_10_蚀骨血仞.spr	Head	Loop	0	0	15	1	1	蚀骨血仞
+状态26	\spr\skill\天忍\mag_tr_11_幻影飞狐.spr	Head	Loop	0	0	15	1	1	幻影飞狐
+状态27	\spr\skill\天忍\mag_tr_12_飞鸿无迹.spr	Head	Loop	0	0	15	1	1	飞鸿无亦
+状态28	\spr\skill\天忍\mag_tr_13_厉魔夺魂.spr	Head	Loop	0	0	15	1	1	厉魔夺魂
+状态29	\spr\skill\天忍\mag_tr_14_五行阵.spr	Foot	Loop	0	0	15	1	1	五行阵
+状态30	\spr\skill\天忍\mag_tr_15_天魔解体.spr	Head	Loop	0	0	15	1	1	天魔解体
+状态31	\spr\skill\翠烟\mag_cy_06_雪盾.spr	Body	Loop	4	12	16	1	2	雪盾
+状态32	\spr\skill\翠烟\mag_cy_07_冰盾.spr	Body	Loop	4	12	16	1	2	冰盾
+状态33	\spr\skill\翠烟\mag_cy_09_雪影.spr	Body	Loop	16	16	16	1	2	雪影
+状态34	\spr\skill\翠烟\mag_cy_12_摄心术.spr	Head	Loop	0	0	18	1	4	摄心术
+状态35	\spr\skill\唐门\tm_01_毒附加.spr	Head	Loop	0	0	30	1	1	毒附加
+状态36	\spr\skill\唐门\tm_02_冰附加.spr	Head	Loop	0	0	30	1	1	冰附加
+状态37	\spr\skill\峨嵋\mag_em_06_秋风叶.spr	Foot	Loop	0	0	16	1	1	秋风叶
+状态38	\spr\skill\峨嵋\mag_em_07_醉仙望月.spr	Foot	Loop	0	0	16	1	1	醉仙望月
+状态39	\spr\skill\峨嵋\mag_em_08_流水.spr	Foot	Loop	0	0	16	1	1	流水
+状态40	\spr\skill\峨嵋\mag_em_09_梦蝶.spr	Foot	Loop	0	0	16	1	1	梦蝶
+状态41	\spr\skill\峨嵋\mag_em_10_佛心慈佑.spr	Foot	Loop	0	0	15	1	1	佛心慈佑
+状态42	\spr\skill\峨嵋\mag_em_11_风雨飘香.spr	Head	Loop	0	0	4	1	1	风雨飘香
+状态43	\spr\skill\丐帮\mag_gb_11_醉蝶狂舞.spr	Body	Loop	4	12	16	1	1	醉蝶狂舞
+状态44	\spr\skill\丐帮\mag_gb_12_打狗阵.spr	Foot	Loop	0	0	8	1	1	打狗阵
+状态45	\spr\skill\少林\sl_07_罗汉阵.spr	Foot	Loop	0	0	10	1	1	罗汉阵
+状态46	\spr\skill\天王\tw_01_火眼金睛.spr	Head	Loop	0	0	10	1	2	火眼金睛
+状态47	\spr\skill\天王\tw_02_天王战意.spr	Body	Loop	20	20	20	1	2	天王战意
+状态48	\spr\skill\天王\tw_03_沾衣十八跌.spr	Body	Loop	20	15	20	1	2	沾衣十八跌
+状态49	\spr\skill\天王\tw_04_金钟罩.spr	Body	Loop	5	15	20	1	1	金钟罩
+状态50	\spr\skill\补充\mag_spe_眩晕.spr	Head	Loop	0	0	10	1	1	眩晕效果

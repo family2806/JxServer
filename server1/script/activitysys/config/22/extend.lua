@@ -1,0 +1,630 @@
+Include("\\script\\activitysys\\config\\22\\head.lua")
+Include("\\script\\lib\\awardtemplet.lua")
+Include("\\script\\activitysys\\playerfunlib.lua")
+
+--¶Å¿µ¾Æ¶Ò»»½±Àø
+function pActivity:AddDukangjiuAward(TSK_EXP_A,TSK_DATE_A,nCount)
+	--¼ì²é±³°üÊÇ·ñÖÁÉÙÓÐÒ»¸ö1*1µÄ¿ÕÎ»
+	if(CalcFreeItemCellCount() < 1) then
+		Say("×°±¸²»×ã¿ÕÎ»£¬×îÉÙÐèÒª1*1¿ÕÎ»", 0);
+		return
+	end
+	--ÏÈ´Ó±³°üÖÐ¿Û³ý¶Å¿µ¾Æ
+	if (ConsumeItem(3, nCount, 6,1,2572,-1) ~= 1) then
+		return
+	end
+	
+	--¼ÆËãÓ¦¸Ã¼ÓµÄ¾­Ñé
+	local nBigRateExp = 500000
+	local nSmallRateExp = 1000000
+	local nDailyUpExp = 20000000 
+	local nTaskDailyCount = self:GetTaskA(TSK_EXP_A,TSK_DATE_A)
+	local nTemp = nDailyUpExp - nTaskDailyCount
+	if (nTemp < nBigRateExp) then
+		nBigRateExp = nTemp
+	end
+	if (nTemp < nSmallRateExp) then
+		nSmallRateExp = nTemp
+	end
+	--¸ø½±Àø
+	local tbAward = 
+	{
+		{
+			[1] = {nExp = nBigRateExp},
+			[2] = {szName="Î÷ºþÁú¾®²è", tbProp={6,1,2573,1,0,0},nCount = 3,nExpiredTime=20101213},
+			[3] = 
+			{
+				pFun = function (tbItem, nItemCount, szLogTitle)
+					%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, %nBigRateExp * nItemCount)
+				end
+			},
+			nRate = 80,
+		},
+		{
+			[1] = {nExp = nSmallRateExp},
+			[2] = {szName="Î÷ºþÁú¾®²è", tbProp={6,1,2573,1,0,0},nCount = 6,nExpiredTime=20101213},
+			
+			[3] = 
+			{
+				pFun = function (tbItem, nItemCount, szLogTitle)
+					%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, %nSmallRateExp * nItemCount)
+				end
+			},
+			nRate = 20,
+		}
+	}
+	tbAwardTemplet:GiveAwardByRate(tbAward, "½±Àø»»È¡¶Å¿µ¾Æ")
+	Say("ºÃ¾Æ£¡ºÃ¾Æ£¡²»ÊÇÄÇÃ´ÈÝÒ×ÓÐÕâÃ´Ð¢µÀµÄµÜ×Ó¡£µÜ×Ó£¬ÎÒÓÐÒ»Ð©Î÷ºþÁú¾®²èËÍÓëÄã")
+end
+
+--´ò¿ªË¿³ñÏã°üµÃµ½½±Àø
+function pActivity:AddSichouxiangbaoAward(TSK_EXP_A)
+	local nUpExp = 1e6
+	local nRateExp1 = 2000000
+	local nRateExp2 = 2500000
+	local nRateExp3 = 3000000
+	local nTaskValue = self:GetTask(TSK_EXP_A)
+	local nTemp = (nUpExp - nTaskValue) * 10000
+	if (nTemp < nRateExp1) then
+		nRateExp1 = nTemp
+	end
+	if(nTemp < nRateExp2) then
+		nRateExp2 = nTemp
+	end
+	if(nTemp < nRateExp3) then
+		nRateExp3 = nTemp
+	end
+	local tbAward = 
+	{
+		{
+			[1] = {nExp = nRateExp1},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp1 / 10000)
+				end
+			},
+			nRate = 70,
+		},
+		{
+			[1] = {nExp = nRateExp2},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp2 / 10000)
+				end
+			},
+			nRate = 20,
+		},
+		{
+			[1] = {nExp = nRateExp3},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp3 / 10000)
+				end
+			},
+			nRate = 10,
+		},
+	}
+	tbAwardTemplet:GiveAwardByRate(tbAward, "½±Àø»»È¡Ë¿³ñÏã°ü")
+end
+
+function pActivity:CheckFreeRoom(nWidth, nHeight, nCount, szMsg)
+	if(CountFreeRoomByWH(nWidth,nHeight,1) >= nCount) then	
+		return 1
+	else
+		szMsg = format("×°±¸²»×ã£¬×îÉÙÐèÒª×°±¸Ê£Óà%d %d*%d ¿ÕÎ»", nCount, nWidth, nHeight)
+		Say(szMsg, 0)
+	end	
+end
+
+--´ò¿ªÎå²ÊÏã°üµÃµ½½±Àø
+function pActivity:AddWucaixiangbaoAward(TSK_EXP_A)
+	local nUpExp = 1e6
+	local nRateExp1 = 5000000
+	local nRateExp2 = 6000000
+	local nRateExp3 = 8000000
+	local nRateExp4 = 10000000
+	local nRateExp5 = 20000000
+	local nTaskValue = self:GetTask(TSK_EXP_A)
+	local nTemp = (nUpExp - nTaskValue) * 10000
+	if (nTemp < nRateExp1) then
+		nRateExp1 = nTemp
+	end
+	if (nTemp < nRateExp2) then
+		nRateExp2 = nTemp
+	end
+	if (nTemp < nRateExp3) then
+		nRateExp3 = nTemp
+	end
+	if (nTemp < nRateExp4) then
+		nRateExp4 = nTemp
+	end
+	if (nTemp < nRateExp5) then
+		nRateExp5 = nTemp
+	end
+	local tbAwardEXP = 
+	{
+		{
+			[1] = {nExp = nRateExp1},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp1 / 10000)
+				end
+			},
+			nRate = 67,
+		},
+		{
+			[1] = {nExp = nRateExp2},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp2 / 10000)
+				end
+			},
+			nRate = 20,
+		},
+		{
+			[1] = {nExp = nRateExp3},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp3 / 10000)
+				end
+			},
+			nRate = 10,
+		},
+		{
+			[1] = {nExp = nRateExp4},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp4 / 10000)
+				end
+			},
+			nRate = 2,
+		},
+		{
+			[1] = {nExp = nRateExp5},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp5 / 10000)
+				end
+			},
+			nRate = 1,
+		},
+	}
+	local tbAward = 
+	{
+		{szName="ÐþÔ³ÖÇ»ÛÖéÁ´", tbProp={0,1595}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÉ®Ã±", tbProp={0,1596}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÉÏ½ä", tbProp={0,1597}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»Û»¤Íó", tbProp={0,1598}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÑü´ø", tbProp={0,1599}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛôÂôÄ", tbProp={0,1600}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»Û²øÊÖ", tbProp={0,1601}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÉ®Ð¬", tbProp={0,1602}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÑü×¹", tbProp={0,1603}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÖÇ»ÛÏÂ½ä", tbProp={0,1604}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²Âú·ðÖé", tbProp={0,1605}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÉ®Ã±", tbProp={0,1606}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÉÏ½ä", tbProp={0,1607}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²Âú»¤Íó", tbProp={0,1608}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÑü´ø", tbProp={0,1609}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúôÂôÄ", tbProp={0,1610}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÉ®¹÷", tbProp={0,1611}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÉ®Ð¬", tbProp={0,1612}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÑü×¹", tbProp={0,1613}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ô²ÂúÏÂ½ä", tbProp={0,1614}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÏîÁ´", tbProp={0,1615}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÉ®Ã±", tbProp={0,1616}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÉÏ½ä", tbProp={0,1617}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄ»¤Íó", tbProp={0,1618}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÑü´ø", tbProp={0,1619}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄôÂôÄ", tbProp={0,1620}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄ½äµ¶", tbProp={0,1621}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÉ®Ð¬", tbProp={0,1622}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÑü×¹", tbProp={0,1623}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ðÐÄÏÂ½ä", tbProp={0,1624}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÏîÁ´", tbProp={0,1625}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌì¿ø", tbProp={0,1626}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÉÏ½ä", tbProp={0,1627}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÊøÑü", tbProp={0,1628}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÑü´ø", tbProp={0,1629}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìîø", tbProp={0,1630}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌì´¸", tbProp={0,1631}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÑ¥", tbProp={0,1632}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÅå", tbProp={0,1633}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³³åÌìÏÂ½ä", tbProp={0,1634}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÏîÁ´", tbProp={0,1635}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆ¿ø", tbProp={0,1636}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÉÏ½ä", tbProp={0,1637}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÊøÑü", tbProp={0,1638}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÑü´ø", tbProp={0,1639}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆîø", tbProp={0,1640}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÇ¹", tbProp={0,1641}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÑ¥", tbProp={0,1642}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÑü×¹", tbProp={0,1643}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·ÉÔÆÏÂ½ä", tbProp={0,1644}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÏîÁ´", tbProp={0,1645}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛ¿ø", tbProp={0,1646}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÉÏ½ä", tbProp={0,1647}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÊøÑü", tbProp={0,1648}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÑü´ø", tbProp={0,1649}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛîø", tbProp={0,1650}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛ±¦µ¶", tbProp={0,1651}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÑ¥", tbProp={0,1652}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÑü×¹", tbProp={0,1653}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ó¢ÐÛÏÂ½ä", tbProp={0,1654}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÖéÁ´", tbProp={0,1655}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²Òô·¢´ø", tbProp={0,1656}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÉÏ½ä", tbProp={0,1657}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²Òô»¤Íó", tbProp={0,1658}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÊøÑü", tbProp={0,1659}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÉ´ÒÂ", tbProp={0,1660}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²Òô½£", tbProp={0,1661}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÐ¬", tbProp={0,1662}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÏãÄÒ", tbProp={0,1663}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¾²ÒôÏÂ½ä", tbProp={0,1664}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÖéÁ´", tbProp={0,1665}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ù·¢´ø", tbProp={0,1666}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÉÏ½ä", tbProp={0,1667}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ù»¤Íó", tbProp={0,1668}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÊøÑü", tbProp={0,1669}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÉÀ", tbProp={0,1670}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ù²øÊÖ", tbProp={0,1671}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÐ¬", tbProp={0,1672}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÏãÄÒ", tbProp={0,1673}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®±ùÏÂ½ä", tbProp={0,1674}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÖéÁ´", tbProp={0,1675}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ô¢", tbProp={0,1676}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÉÏ½ä", tbProp={0,1677}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨Ðä", tbProp={0,1678}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÊøÑü", tbProp={0,1679}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÉÀ", tbProp={0,1680}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨µ¶", tbProp={0,1681}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨Ñ¥", tbProp={0,1682}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÏãÄÒ", tbProp={0,1683}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÔÂ»¨ÏÂ½ä", tbProp={0,1684}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÖéÁ´", tbProp={0,1685}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªô¢", tbProp={0,1686}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÉÏ½ä", tbProp={0,1687}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÐä", tbProp={0,1688}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÑü´ø", tbProp={0,1689}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÉÀ", tbProp={0,1690}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÔ§Ñìµ¶", tbProp={0,1691}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÑ¥", tbProp={0,1692}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÏãÄÒ", tbProp={0,1693}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³·±»ªÏÂ½ä", tbProp={0,1694}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦ÏîÁ´", tbProp={0,1695}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦·¢´ø", tbProp={0,1696}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦ÉÏ½ä", tbProp={0,1697}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦»¤Íó", tbProp={0,1698}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦Ñü´ø", tbProp={0,1699}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦ÃØ×°", tbProp={0,1700}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦²øÊÖ", tbProp={0,1701}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦Ñ¥", tbProp={0,1702}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦Ñü×¹", tbProp={0,1703}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³¶Ï³¦ÏÂ½ä", tbProp={0,1704}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·ÏîÁ´", tbProp={0,1705}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ··¢´ø", tbProp={0,1706}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·ÉÏ½ä", tbProp={0,1707}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·»¤Íó", tbProp={0,1708}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·Ñü´ø", tbProp={0,1709}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·ÃØ×°", tbProp={0,1710}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·µ¶", tbProp={0,1711}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·Ñ¥", tbProp={0,1712}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·Ñü×¹", tbProp={0,1713}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÑªÉ·ÏÂ½ä", tbProp={0,1714}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄÏîÁ´", tbProp={0,1715}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ¹Ú", tbProp={0,1716}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄÉÏ½ä", tbProp={0,1717}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ»¤Íó", tbProp={0,1718}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ²øÑü", tbProp={0,1719}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ¼×ÒÂ", tbProp={0,1720}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ·Éµ¶", tbProp={0,1721}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄÂÄ", tbProp={0,1722}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄ´¸", tbProp={0,1723}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÀäÐÄÏÂ½ä", tbProp={0,1724}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÏîÁ´", tbProp={0,1725}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇé¹Ú", tbProp={0,1726}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÉÏ½ä", tbProp={0,1727}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇé»¤Íó", tbProp={0,1728}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÊøÑü", tbProp={0,1729}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇé¼×", tbProp={0,1730}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÐä", tbProp={0,1731}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÂÄ", tbProp={0,1732}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÑü×¹", tbProp={0,1733}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³ÎÞÇéÏÂ½ä", tbProp={0,1734}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÁ´", tbProp={0,1735}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹â·¢¹Ú", tbProp={0,1736}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÉÏ½ä", tbProp={0,1737}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹â»¤Íó", tbProp={0,1738}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÊøÑü", tbProp={0,1739}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹â¼×ÒÂ", tbProp={0,1740}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÏô", tbProp={0,1741}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÂÄ", tbProp={0,1742}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹â´¸", tbProp={0,1743}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³º®¹âÏÂ½ä", tbProp={0,1744}, nQuality=1, nRate=0.002},	
+		{szName="ÐþÔ³Ñô¸ÕÏîÁ´", tbProp={0,1745}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÍ·»·", tbProp={0,1746}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÉÏ½ä", tbProp={0,1747}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸Õ»¤Íó", tbProp={0,1748}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÊøÑü", tbProp={0,1749}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸Õ¸ÇÒÂ", tbProp={0,1750}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸Õ²øÊÖ", tbProp={0,1751}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÑ¥", tbProp={0,1752}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÑü×¹", tbProp={0,1753}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Ñô¸ÕÏÂ½ä", tbProp={0,1754}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÏîÁ´", tbProp={0,1755}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÍ·»·", tbProp={0,1756}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÉÏ½ä", tbProp={0,1757}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½Áú»¤Íó", tbProp={0,1758}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÊøÑü", tbProp={0,1759}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½Áú¸ÇÒÂ", tbProp={0,1760}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÕÈ", tbProp={0,1761}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÑ¥", tbProp={0,1762}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÑü×¹", tbProp={0,1763}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Õ½ÁúÏÂ½ä", tbProp={0,1764}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÈ¦", tbProp={0,1765}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»ê¿ø", tbProp={0,1766}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÉÏ½ä", tbProp={0,1767}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»ê»¤Íó", tbProp={0,1768}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÑü´ø", tbProp={0,1769}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»ê¼×ÒÂ", tbProp={0,1770}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÇ¹", tbProp={0,1771}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÑ¥", tbProp={0,1772}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÅå", tbProp={0,1773}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Âä»êÏÂ½ä", tbProp={0,1774}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÏîÁ´", tbProp={0,1775}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇé¹ÚÃá", tbProp={0,1776}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÉÏ½ä", tbProp={0,1777}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇé»¤Íó", tbProp={0,1778}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÑü´ø", tbProp={0,1779}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇé¼×ÒÂ", tbProp={0,1780}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéµ¶", tbProp={0,1781}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÑ¥", tbProp={0,1782}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÅå", tbProp={0,1783}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³×ÃÇéÏÂ½ä", tbProp={0,1784}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·á·û", tbProp={0,1785}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·á¹Ú", tbProp={0,1786}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áÉÏ½ä", tbProp={0,1787}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áÐä", tbProp={0,1788}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·á·¢´ø", tbProp={0,1789}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áµÀÅÛ", tbProp={0,1790}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·á½£", tbProp={0,1791}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áÂÄ", tbProp={0,1792}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áÓñÅå", tbProp={0,1793}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³Èý·áÏÂ½ä", tbProp={0,1794}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄ·û", tbProp={0,1795}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄ¹Ú", tbProp={0,1796}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄÉÏ½ä", tbProp={0,1797}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄÐä", tbProp={0,1798}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄ·¢´ø", tbProp={0,1799}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄµÀÅÛ", tbProp={0,1800}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄ½£", tbProp={0,1801}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄÂÄ", tbProp={0,1802}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄÓñÅå", tbProp={0,1803}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÐÞÐÄÏÂ½ä", tbProp={0,1804}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÏîÁ´", tbProp={0,1805}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆµÀ¹Ú", tbProp={0,1806}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÉÏ½ä", tbProp={0,1807}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆ»¤Íó", tbProp={0,1808}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÑü´ø", tbProp={0,1809}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆµÀÅÛ", tbProp={0,1810}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆ½äÖ¸", tbProp={0,1811}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÑ¥×Ó", tbProp={0,1812}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÅå", tbProp={0,1813}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³´©ÔÆÏÂ½ä", tbProp={0,1814}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ù·û", tbProp={0,1815}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùµÀ¹Ú", tbProp={0,1816}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÉÏ½ä", tbProp={0,1817}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÊÖ", tbProp={0,1818}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÑü´ø", tbProp={0,1819}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùµÀÅÛ", tbProp={0,1820}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ù³¤½£", tbProp={0,1821}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÑ¥", tbProp={0,1822}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÅå", tbProp={0,1823}, nQuality=1, nRate=0.0025},	
+		{szName="ÐþÔ³ÆÆ±ùÏÂ½ä", tbProp={0,1824}, nQuality=1, nRate=0.0025},	
+		{szName="»ìÔªÁéÂ¶", tbProp={6,1,2312,1,0,0}, nCount=1, nRate=4},	
+		{szName="ÐþÌì½õÄÒ", tbProp={6,1,2355,1,0,0}, nCount=1, nRate=5, nExpiredTime=20101220},	
+		{szName="ÁúÑªÍè", tbProp={6,1,2117,1,0,0}, nCount=1, nRate=3, nExpiredTime=20101220},	
+		{szName="º£ÁúÖì", tbProp={6,1,2115,1,0,0}, nCount=1, nRate=3, nExpiredTime=20101220},	
+		{szName="É±ÊÖïµÀñ°ü", tbProp={6,1,2339,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="É½ºÓÉçð¢µØÍ¼ (1000¿é)", tbProp={6,1,2514,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="Ä®±±´«ËÍÁî", tbProp={6,1,1448,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="Óñ¹Þ", tbProp={6,1,2311,1,0,0}, nCount=1, nRate=5, nExpiredTime=20101220},	
+		{szName="°ÙÄêÕäÂ¶", tbProp={6,1,2266,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="ÌØÖÆ°×¾ÔÍè", tbProp={6,1,1157,1,0,0}, nCount=1, nRate=4},	
+		{szName="Ìì¾«°×¾ÔÍè", tbProp={6,1,2183,1,0,0}, nCount=1, nRate=2},	
+		{szName="Ç§ÄêÕäÂ¶", tbProp={6,1,2267,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="ÍòÄêÕäÂ¶", tbProp={6,1,2268,1,0,0}, nCount=1, nRate=2, nExpiredTime=20101220},	
+		{szName="´óÁ¦ÍèÀñ°ü", tbProp={6,1,2517,1,0,0}, nCount=1, nRate=5},	
+		{szName="·ÉËÙÍèÀñ°ü", tbProp={6,1,2520,1,0,0}, nCount=1, nRate=5},	
+		{szName="°×¹ÇÁî", tbProp={6,1,2255,1,0,0}, nCount=1, nRate=5, nExpiredTime=20101220},	
+		{szName="ÌØÖÆÏÉ²ÝÂ¶", tbProp={6,1,1181,1,0,0}, nCount=1, nRate=5},	
+		{szName="¸»¹ó½õºÐ", tbProp={6,1,2402,1,0,0}, nCount=1, nRate=14.6, nExpiredTime=20101220},	
+		{szName="°ËÕä¸£ÔÂÀ¯Öò", tbProp={6,1,1817,1,0,0}, nCount=1, nRate=10},	
+		{szName="ÒøÁ½", nJxb =1000000, nRate=10},	
+		{szName="ÒøÁ½", nJxb =2000000, nRate=2},	
+		{szName="ÒøÁ½", nJxb =5000000, nRate=1},	
+		{szName="ÒøÁ½", nJxb =10000000, nRate=0.5},	
+		{szName="Ò»¼ÍÇ¬À¤·û", tbProp={6,1,2126,1,0,0}, nCount=1, nRate=0.2, nExpiredTime=43200},	
+		{szName="³ÊÏéºì°ü", tbProp={6,1,2104,1,0,0}, nCount=1, nRate=0.2},	
+		{szName="»ØÌìÔÙÔì½õÄÒ", tbProp={6,1,1781,1,0,0}, nCount=1, nRate=3, tbParam={60}},	
+
+	}
+	tbAwardTemplet:GiveAwardByList(tbAward, "ÎåÉ«Ïã°ü½±Àø")
+	tbAwardTemplet:GiveAwardByList(tbAwardEXP, "ÎåÉ«Ïã°üEXP½±Àø")
+end
+
+--´ò¿ªÖÐÒ©Ïã°üµÃµ½½±Àø
+function pActivity:AddZhongyaoxiangbaoAward(TSK_EXP_A)
+	local nUpExp = 1e6
+	local nRateExp1 = 25000000
+	local nRateExp2 = 30000000
+	local nRateExp3 = 40000000
+	local nRateExp4 = 50000000
+	local nRateExp5 = 100000000
+	local nTaskValue = self:GetTask(TSK_EXP_A)
+	local nTemp = (nUpExp - nTaskValue) * 10000
+	if (nTemp < nRateExp1) then
+		nRateExp1 = nTemp
+	end
+	if (nTemp < nRateExp2) then
+		nRateExp2 = nTemp
+	end
+	if (nTemp < nRateExp3) then
+		nRateExp3 = nTemp
+	end
+	if (nTemp < nRateExp4) then
+		nRateExp4 = nTemp
+	end
+	if (nTemp < nRateExp5) then
+		nRateExp5 = nTemp
+	end
+	local tbAwardEXP = 
+	{
+		{
+			[1] = {nExp = nRateExp1},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp1 / 10000)
+				end
+			},
+			nRate = 60,
+		},
+		{
+			[1] = {nExp = nRateExp2},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp2 / 10000)
+				end
+			},
+			nRate = 27,
+		},
+		{
+			[1] = {nExp = nRateExp3},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp3 / 10000)
+				end
+			},
+			nRate = 10,
+		},
+		{
+			[1] = {nExp = nRateExp4},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp4 / 10000)
+				end
+			},
+			nRate = 2,
+		},
+		{
+			[1] = {nExp = nRateExp5},
+			[2] = 
+			{
+				pFun = function(tbItem, nItemCount, szLogTitle)
+					%self:AddTask(%TSK_EXP_A, %nRateExp5 / 10000)
+				end
+			},
+			nRate = 1,
+		},
+	}
+	local tbAward = 
+	{
+		{szName="ÐþÔ³Áî", tbProp={6,1,2351,1,0,0}, nRate=1, nCount=1},	
+		{szName="»ìÔªÁéÂ¶", tbProp={6,1,2312,1,0,0}, nRate=4, nCount=5},	
+		{szName="ÌìÁúÁî", tbProp={6,1,2256,1,0,0}, nRate=5, nCount=5, nExpiredTime=20101220},	
+		{szName="ÌØÖÆÏÉ²ÝÂ¶", tbProp={6,1,1181,1,0,0}, nRate=10, nCount=2, nExpiredTime=20101220},	
+		{szName="¸»¹ó½õºÐ", tbProp={6,1,2402,1,0,0}, nRate=17.7, nCount=5, nExpiredTime=20101220},	
+		{szName="ÍòÄêÕäÂ¶", tbProp={6,1,2268,1,0,0}, nRate=10, nCount=2, nExpiredTime=20101220},	
+		{szName="ÍòÄêÎå²Ê»ª", tbProp={6,1,2265,1,0,0}, nRate=1, nCount=1},	
+		{szName="Ç§ÄêÆßÐÇ²Ý", tbProp={6,1,1675,1,0,0}, nRate=1, nCount=1},	
+		{szName="ÌØÖÆ°×¾ÔÍè", tbProp={6,1,1157,1,0,0}, nRate=14, nCount=1},	
+		{szName="Ìì¾«°×¾ÔÍè", tbProp={6,1,2183,1,0,0}, nRate=6, nCount=1},	
+		{szName="ÒøÁ½", nJxb =10000000, nRate=5},	
+		{szName="ÒøÁ½", nJxb =20000000, nRate=2},	
+		{szName="ÒøÁ½", nJxb =50000000, nRate=1},	
+		{szName="ÒøÁ½", nJxb =100000000, nRate=0.2},	
+		{szName="Ò»¼ÍÇ¬À¤·û", tbProp={6,1,2126,1,0,0}, nRate=2, nCount=1, nExpiredTime=43200},	
+		{szName="Ç¬À¤Ë«¾øÅå", tbProp={6,1,2219,1,0,0}, nRate=0.1, nCount=1, nExpiredTime=86400},	
+		{szName="´óÁ¦ÍèÀñ°ü", tbProp={6,1,2517,1,0,0}, nRate=5, nCount=5},	
+		{szName="·ÉËÙÍèÀñ°ü", tbProp={6,1,2520,1,0,0}, nRate=5, nCount=5},	
+		{szName="³ÊÏéºì°ü", tbProp={6,1,2104,1,0,0}, nRate=3, nCount=1},	
+		{szName="°²¿µºì°ü", tbProp={6,1,2105,1,0,0}, nRate=1, nCount=1},	
+		{szName="»ØÌìÔÙÔì½õÄÒ", tbProp={6,1,1781,1,0,0}, nRate=6, nCount=5, tbParam={60}},	
+	}
+	tbAwardTemplet:GiveAwardByList(tbAward, "ÖÐÒ©Ïã°ü½±Àø")
+	tbAwardTemplet:GiveAwardByList(tbAwardEXP, "ÖÐÒ©Ïã°üEXP½±Àø")
+end
+
+function pActivity:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
+	local nRecordDate = self:GetTask(TSK_DATE_A)
+	
+	if nCurDate ~= nRecordDate then
+		self:SetTask(TSK_DATE_A, nCurDate)
+		self:SetTask(TSK_EXP_A, 0)
+	end
+end
+
+function pActivity:CheckTaskA(TSK_EXP_A, TSK_DATE_A, nTargetValue, szFailMsg, szOption)
+
+	self:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	return self:CheckTask(TSK_EXP_A, nTargetValue, szFailMsg, szOption)
+end
+
+function pActivity:AddTaskA(TSK_EXP_A, TSK_DATE_A, nAddValue)
+	self:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	return self:AddTask(TSK_EXP_A, nAddValue)
+end
+
+function pActivity:GetTaskA(TSK_EXP_A, TSK_DATE_A)
+	self:ResetTaskA(TSK_EXP_A, TSK_DATE_A)
+	return self:GetTask(TSK_EXP_A)
+end
+
+function pActivity:AddExpB(TSK_EXP_B,nTskBExpLimit,nAddExp,nbStack,szLogTitle, szFailMsg)
+	
+	if self:GetTask(TSK_EXP_B) >= nTskBExpLimit then
+		return Msg2Player(szFailMsg)
+	end
+	
+	DynamicExecuteByPlayer(PlayerIndex, "\\script\\activitysys\\playerfunlib.lua", "PlayerFunLib:AddExp", nAddExp, nbStack, szLogTitle)
+	self:AddTask(TSK_EXP_B, nAddExp)
+end
+
+function pActivity:AddDialogNpc(szNpcName, nNpcId, tbNpcPos)
+	for i=1, getn(tbNpcPos) do
+		local pPos = tbNpcPos[i]
+		
+		local nMapIndex = SubWorldID2Idx(pPos[1])
+		if nMapIndex > 0 then
+			local nNpcIndex = AddNpc(nNpcId, 1, nMapIndex, pPos[2] * 32, pPos[3] * 32, 0, szNpcName);
+			SetNpcScript(nNpcIndex, "\\script\\activitysys\\npcdailog.lua");	
+		end		
+	end
+end
+
+function pActivity:Give5SHB(nEXP_Give_NSHB, TSK_Date_Give_NSHB)
+	
+	if (PlayerFunLib:CheckTaskDaily(TSK_Date_Give_NSHB,8,"Ã¿ÌìÖ»ÄÜËÍ8¸öÎåÉ«Ïã°ü!","<") ~= 1) then
+			return
+	end
+	if (ConsumeEquiproomItem(1, 6,1,2578,-1) ~= 1) then
+		return
+	end
+	PlayerFunLib:AddTaskDaily(TSK_Date_Give_NSHB,1)
+	AddOwnExp(nEXP_Give_NSHB)
+	Msg2Player("Äã»ñµÃ 8000000 »ý·Ö")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 20112010"..GetAccount().."\t"..GetName().."\t".."ËÍÎåÉ«Ïã°ü")
+end

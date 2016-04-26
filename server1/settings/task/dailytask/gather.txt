@@ -1,0 +1,5 @@
+TaskId	TaskName	MapId	MapName	GatherName	G	D	P	GatherCount
+1		141	药王洞一层	剑心海棠	6	1	2567	3
+2		193	武夷山	侠香草	6	1	2568	3
+3		92	蜀冈山	情义金兰	6	1	2569	3
+4		167	点苍山	缘长青莲	6	1	2570	3

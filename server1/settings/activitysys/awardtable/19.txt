@@ -1,0 +1,4 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+19	¿Î±¾	"return {tbProp={6,1,2173,1,0,0},}"	3	100	131	4
+19	Ã«±Ê	"return {tbProp={6,1,2174,1,0,0},}"	3	100	132	4
+19	Ë®Ä«	"return {tbProp={6,1,2175,1,0,0},}"	3	100	133	4

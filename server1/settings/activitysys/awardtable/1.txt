@@ -1,0 +1,13 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+1	[无限制]天煌龙器之龙抬头	"return {szName=\"[无限制]天煌龙器之龙抬头\",tbProp={0,521},nQuality=1,nUsageTime=6000,}"	1	100	1	
+1	[无限制]天煌龙器之白龙息	"return {szName=\"[无限制]天煌龙器之白龙息\",tbProp={0,522},nQuality=1,nUsageTime=6000,}"	1	100	2	
+1	[无限制]天煌龙器之镇冥之链	"return {szName=\"[无限制]天煌龙器之镇冥之链\",tbProp={0,523},nQuality=1,nUsageTime=6000,}"	1	100	3	
+1	[无限制]天煌龙器之九现之指	"return {szName=\"[无限制]天煌龙器之九现之指\",tbProp={0,524},nQuality=1,nUsageTime=6000,}"	1	100	4	
+1	[无限制]天煌龙器之玉逍遥	"return {szName=\"[无限制]天煌龙器之玉逍遥\",tbProp={0,525},nQuality=1,nUsageTime=6000,}"	1	100	5	
+1	[无限制]天煌龙器之黄金鳞	"return {szName=\"[无限制]天煌龙器之黄金鳞\",tbProp={0,526},nQuality=1,nUsageTime=6000,}"	1	100	6	
+1	[无限制]天煌龙器之磐龙瑰	"return {szName=\"[无限制]天煌龙器之磐龙瑰\",tbProp={0,527},nQuality=1,nUsageTime=6000,}"	1	100	7	
+1	[无限制]天煌龙器之龙哭千里	"return {szName=\"[无限制]天煌龙器之龙哭千里\",tbProp={0,528},nQuality=1,nUsageTime=6000,}"	1	100	8	
+1	[无限制]天煌龙器之怒龙之瞳	"return {szName=\"[无限制]天煌龙器之怒龙之瞳\",tbProp={0,529},nQuality=1,nUsageTime=6000,}"	1	100	9	
+1	特效仙草露	"return {szName=\"特效仙草露\",tbProp={6,1,1181,1,0,0},nExpiredTime=10080,}"	5	100	10	
+1	天山玉露	"return {szName=\"天山玉露\",tbProp={6,1,72,1,0,0},}"	10	100	11	
+1	珍藏幸运少侠宝盒	"return {szName=\"珍藏幸运少侠宝盒\",tbProp={6,1,2083,2,0,0},}"	1	100	12	

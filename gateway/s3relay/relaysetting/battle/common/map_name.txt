@@ -1,0 +1,19 @@
+BATTLE_MAP_ID	MAP_NAME_1	MAP_NAME_2	MAP_NAME_3	MAP_NAME_4	MAP_NAME_5	MAP_NAME_6	MAP_NAME_7	MAP_NAME_8	MAP_NAME_9	MAP_NAME_10
+1	Hoµng Sa L©m Ngao ChiÕn	LiÔu Nguyªn ChiÕn	Ngò Ph­¬ng Nguyªn ChiÕn	B¹ch M«n Nguyªn ChiÕn						
+2	C«ng thµnh chiÕn (khu vùc Cöu Khóc) 	Long V­¬ng Ch©u ChiÕn	§an Giang KhÈu ChiÕn							
+3	Hoµng Sa L©m Ngao ChiÕn									
+4	Hoµng Sa L©m Ngao ChiÕn	Léc M«n S¬n Truy KÝch ChiÕn								
+5	C«ng thµnh chiÕn (khu vùc Cöu Khóc) 	V©n L©m ChiÕn								
+6	Hoµng Sa L©m Ngao ChiÕn	§¹i doanh Qu©n Tèng	§¹i doanh Qu©n Kim							
+7	Hoµng Sa L©m Ngao ChiÕn									
+8	Hoµng Sa L©m Ngao ChiÕn									
+9	C«ng thµnh chiÕn (khu vùc Cöu Khóc) 									
+10	Hoµng Sa L©m Ngao ChiÕn									
+11	Hoµng Sa L©m Ngao ChiÕn									
+12	C«ng thµnh chiÕn (khu vùc Cöu Khóc) 									
+13	Hoµng Sa L©m Ngao ChiÕn									
+14	Hoµng Sa L©m Ngao ChiÕn									
+15	Quèc chiÕn Hoµng Sa L©m									
+16	Quèc chiÕn Hoµng Sa L©m									
+17	Quèc chiÕn Hoµng Sa L©m									
+18	Hoµng Sa L©m Ngao ChiÕn									

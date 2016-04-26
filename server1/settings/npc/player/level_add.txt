@@ -1,0 +1,6 @@
+系别	LifePerLevel	StaminaMalePerLevel	StaminaFemalePerLevel	ManaPerLevel	LifePerVitality	StaminaPerVitality	ManaPerEnergy	LeadExpShare	fireres	coldres	poisonres	lightingres	physicres	StaminaMaleBase	StaminaFemaleBase
+金系	4	9	8	1	8	0	1	25	-25	0	25	0	0	180	180
+木系	3	9	8	2	5	0	3	25	0	0	0	25	-15	180	180
+水系	3	9	8	2	6	0	3	25	25	0	0	-25	0	180	180
+火系	3	9	8	1	7	0	2	25	0	-25	0	0	15	180	180
+土系	1	9	8	3	3	0	4	25	0	25	-25	0	0	180	180

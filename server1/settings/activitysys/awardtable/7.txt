@@ -1,0 +1,10 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+7	玄晶补天包	"return {szName=\"玄晶补天包\",tbProp={6,1,1621,1,0,0},}"	1	3	41	
+7	黄金装修复晶石	"return {szName=\"黄金装修复晶石\",tbProp={6,1,1170,1,0,0},}"	1	7	42	
+7	紫装修复晶石	"return {szName=\"紫装修复晶石\",tbProp={6,1,1169,1,0,0},}"	1	10	43	
+7	技能大白驹丸 	"return {szName=\"技能大白驹丸\",tbProp={6,1,977,1,0,0},}"	2	10	44	
+7	大白驹丸	"return {szName=\"大白驹丸\",tbProp={6,1,130,1,0,0},}"	2	10	45	
+7	特效仙草露	"return {szName=\"特效仙草露\",tbProp={6,1,1181,1,0,0},nExpiredTime=10080,}"	1	12	46	
+7	回城符（无限使用） 	"return {szName=\"回城符（无限使用）\",tbProp={6,1,438,1,0,0},nExpiredTime=10080,}"	1	13	47	
+7	福缘露（大） 	"return {szName=\"福缘露（大）\",tbProp={6,1,124,1,0,0},}"	2	15	48	
+7	经验值 	"return {nExp=1}"	1000000	20	49	

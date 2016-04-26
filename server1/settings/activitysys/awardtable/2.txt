@@ -1,0 +1,7 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+2	特效五花玉露丸锦囊	"return {szName=\"特效五花玉露丸锦囊\",tbProp={6,1,1333,1,0,0},nUsageTime=10080,}"	10	100	13	
+2	同伴技能书大礼包（公共技能） 	"return {szName=\"同伴技能书大礼包（公共技能）\",tbProp={6,1,964,1,0,0},}"	1	100	14	
+2	福缘露（中） 	"return {szName=\"福缘露（中）\",tbProp={6,1,123,1,0,0},}"	5	100	15	
+2	百果露	"return {szName=\"百果露\",tbProp={6,1,73,1,0,0},}"	10	100	16	
+2	回城符（无限使用） 	"return {szName=\"回城符（无限使用）\",tbProp={6,1,438,1,0,0},nExpiredTime=10080,}"	1	100	17	
+2	珍藏幸运少侠宝盒	"return {szName=\"珍藏幸运少侠宝盒\",tbProp={6,1,2083,3,0,0},}"	1	100	18	

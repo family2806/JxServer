@@ -1,0 +1,5 @@
+SkillId	SkillName	ThiefStyle	AttackRadius	MaxLevel	TimePerCast	ThiefPercent	SkillCostType	Param1	Param2	Movie	TargetMovieInfo	SkillSound	TargetMovie	SkillIcon	Cost	Desc
+400	劫富济贫	0	100	1	100	0	0	0	0	\spr\skill\补充\劫富济贫1.spr	10,1,1	\sound\skill\劫富济贫.wav	\spr\skill\补充\劫富济贫2.spr	\spr\Ui\技能图标\劫富济贫.spr	50	<color=yellow>劫富济贫<color><enter><enter>有一定几率偷盗别人身上所带的钱财<enter>被偷的钱被系统吃掉
+401	显示生命	1	100	1	100	50	0	0	0					\spr\Ui\技能图标\劫富济贫.spr	50	技能名称：了解对方的当前生命值状态
+402	显示内力	2	100	1	100	50	0	0	0					\spr\Ui\技能图标\劫富济贫.spr	50	技能名称：了解对方的当前内力值状态
+403	显示金钱	3	100	1	100	50	0	0	0					\spr\Ui\技能图标\劫富济贫.spr	50	技能名称：了解对方的当前金钱值状态

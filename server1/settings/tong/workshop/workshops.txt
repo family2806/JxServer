@@ -1,0 +1,8 @@
+TYPE	NAME	DESC	COEFFICIENT	OPEN_ICON	CLOSE_ICON	UNFOUNDED_ICON	SCRIPT
+1	兵甲坊	利用镇帮之石附以其打造工艺可提高提取属性矿石、镶嵌紫装、打造黄金装备的成功概率。	1.4	\spr\Ui3\帮会界面\作坊信息页\兵甲坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\兵甲坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\兵甲坊_1.spr	\script\tong\workshop\ws_bingjia.lua
+2	天工坊	其维修技艺不但可以使修理花费更少的钱，还可以强化修理装备。	1	\spr\Ui3\帮会界面\作坊信息页\天工坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\天工坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\天工坊_1.spr	\script\tong\workshop\ws_tiangong.lua
+3	面具坊	仿制易容术士曾经贩卖的面具，可以用较少的铜钱买到；还可用贡献度购买帮会自制的面具。	1.2	\spr\Ui3\帮会界面\作坊信息页\面具坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\面具坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\面具坊_1.spr	\script\tong\workshop\ws_mianju.lua
+4	试炼坊	可提供双倍经验，辅助帮会成员和同伴的修炼。	1	\spr\Ui3\帮会界面\作坊信息页\试炼坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\试炼坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\试炼坊_1.spr	\script\tong\workshop\ws_shilian.lua
+5	天意坊	产出任务令牌，使用后可以随机接到各种任务。	0.8	\spr\Ui3\帮会界面\作坊信息页\天意坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\天意坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\天意坊_1.spr	\script\tong\workshop\ws_tianyi.lua
+6	礼物坊	发放帮会神秘红包，提供给帮会成员惊喜的礼物。	1	\spr\Ui3\帮会界面\作坊信息页\礼物坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\礼物坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\礼物坊_1.spr	\script\tong\workshop\ws_liwu.lua
+7	活动坊	为帮会成员安排娱乐、消遣的活动。<enter><color=orange>产出Boss召唤符<enter>招募弟子活动<enter>打年兽活动<enter>收集物资活动<color>	0.6	\spr\Ui3\帮会界面\作坊信息页\活动坊_0.spr	\spr\Ui3\帮会界面\作坊信息页\活动坊_2.spr	\spr\Ui3\帮会界面\作坊信息页\活动坊_1.spr	\script\tong\workshop\ws_huodong.lua

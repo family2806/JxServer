@@ -1,0 +1,5 @@
+TaskType	ConditionFile	EntityFile	AwardFile	TalkFile
+随机_对话	settings\task\random\talk\condition.txt	settings\task\random\talk\entity.txt	settings\task\random\talk\award.txt	settings\task\random\talk\talk.txt
+随机_收集	settings\task\random\coll\condition.txt	settings\task\random\coll\entity.txt	settings\task\random\coll\award.txt	settings\task\random\coll\talk.txt
+随机_杀怪	settings\task\random\kill\condition.txt	settings\task\random\kill\entity.txt	settings\task\random\kill\award.txt	settings\task\random\kill\talk.txt
+随机_卷轴	settings\task\random\next\condition.txt	settings\task\random\next\entity.txt	settings\task\random\next\award.txt	settings\task\random\next\talk.txt

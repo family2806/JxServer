@@ -1,0 +1,22 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+15	宋金军装	"return {szName=\"宋金军装\",tbProp={6,1,2124,1,0,0},nExpiredTime=20091102,}"	1	20	102	2
+15	五行奇石	"return {szName=\"五行奇石\",tbProp={6,1,2125,1,0,0},}"	1	20	103	2
+15	金牛灯笼	"return {szName=\"金牛灯笼\",tbProp={6,1,2128,1,0,0},nExpiredTime=20100101,}"	1	4	104	2
+15	完美金牌	"return {szName=\"完美金牌\",tbProp={6,1,2129,1,0,0},}"	1	4	105	2
+15	龙静汤壶	"return {szName=\"龙静汤壶\",tbProp={6,1,2123,1,0,0},nExpiredTime=20091109,}"	1	0.2	106	2
+15	挑战礼包	"return {szName=\"挑战礼包\",tbProp={6,1,2006,1,0,0},}"	1	19.336	107	2
+15	铁罗汉	"return {szName=\"铁罗汉\",tbProp={6,1,23,1,0,0},}"	1	5	108	2
+15	般若心经	"return {szName=\"般若心经\",tbProp={6,1,12,1,0,0},}"	1	2	109	2
+15	特效仙草露	"return {szName=\"特效仙草露\",tbProp={6,1,1181,1,0,0},}"	1	5	110	2
+15	飞速丸	"return {szName=\"飞速丸\",tbProp={6,0,6,1,0,0},}"	1	5	111	2
+15	大力丸	"return {szName=\"大力丸\",tbProp={6,0,3,1,0,0},}"	1	5	112	2
+15	大马虎之北京之梦	"return {szName=\"大马虎之北京之梦\",tbProp={0,197},nQuality=1,}"	1	0.002	113	2
+15	大马虎之雅典之魂	"return {szName=\"大马虎之雅典之魂\",tbProp={0,202},nQuality=1,}"	1	0.002	114	2
+15	天山雪莲	"return {szName=\"天山雪莲\",tbProp={6,1,1431,1,0,0},}"	1	0.03	115	2
+15	玄真丹	"return {szName=\"玄真丹\",tbProp={6,1,1678,1,0,0},tbParam={15e8}}"	1	0.05	116	2
+15	血真丹	"return {szName=\"血真丹\",tbProp={6,1,1677,1,0,0},tbParam={10e8}}"	1	0.08	117	2
+15	白真丹	"return {szName=\"白真丹\",tbProp={6,1,1676,1,0,0},tbParam={5e8}}"	1	0.2	118	2
+15	神秘矿	"return {szName=\"神秘矿石\",tbProp={6,1,398,1,0,0},}"	1	0.1	119	2
+15	玄晶矿石[6级]	"return {szName=\"玄晶矿石[6级]\",tbProp={6,1,147,6,0,0},}"	1	5	120	2
+15	玄晶矿石[7级]	"return {szName=\"玄晶矿石[7级]\",tbProp={6,1,147,7,0,0},}"	1	4	121	2
+15	玄晶矿石[8级]	"return {szName=\"玄晶矿石[8级]\",tbProp={6,1,147,8,0,0},}"	1	1	122	2

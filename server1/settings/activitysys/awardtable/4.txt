@@ -1,0 +1,6 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+4	大白驹丸	"return {szName=\"大白驹丸\",tbProp={6,1,130,1,0,0},}"	5	100	24	
+4	蓬莱仙草露	"return {szName=\"蓬莱仙草露\",tbProp={6,1,1401,1,0,0},}"	1	100	25	
+4	同伴技能书大礼包（抗性技能） 	"return {szName=\"同伴技能书大礼包（抗性技能）\",tbProp={6,1,963,1,0,0},}"	1	100	26	
+4	北京雅典仙草包	"return {szName=\"北京雅典仙草包\",tbProp={6,1,1684,1,0,0},}"	2	100	27	
+4	洗髓经	"return {szName=\"洗髓经\",tbProp={6,1,22,1,0,0},}"	1	100	28	

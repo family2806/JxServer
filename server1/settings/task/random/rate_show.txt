@@ -1,0 +1,2 @@
+TaskName	Rate10	Rate20	Rate30	Rate40	Rate50	Rate60	Rate70	Rate80	Rate90	Rate100
+任务类型	10级权重	20级权重	30级权重	40级权重	50级权重	60级权重	70级权重	80级权重	90级权重	100级权重

@@ -1,0 +1,662 @@
+Include("\\script\\activitysys\\config\\1002\\variables.lua")
+tbConfig = {}
+tbConfig[1] =
+{
+	nId = 1,
+	szMessageType = "ServerStart",
+	szName = "Init Npc",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {nil},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"ThisActivity:InitNpc",	{nil} },
+	},
+}
+tbConfig[2] = --ËÎ½ð2000µã
+{
+	nId = 2,
+	szMessageType = "FinishSongJin",
+	szName = "¸ß¼¶ËÎ½ð2000µã",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {-2,"3"},
+	tbCondition = 
+	{
+		{"PlayerFunLib:CheckBT_PL_BATTLEPOINT",	{2000,">="} },
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_Ñ©ÐÇÐÇ\tËÎ½ð2000"} },
+	},
+}
+tbConfig[3] =
+{
+	nId = 3,
+	szMessageType = "Chuanguan",
+	szName = "´³¹ý17¹Ø",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"17"},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\t´³¹ý17¹Ø"} },
+	},
+}
+tbConfig[4] =
+{
+	nId = 4,
+	szMessageType = "Chuanguan",
+	szName = "´³¹Ø28",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"28"},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\t´³¹Ø28"} },
+	},
+}
+tbConfig[5] = 
+{
+	nId = 5,
+	szMessageType = "FinishFengLingDu",
+	szName = "Íê³É·çÁê¶É",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {nil},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_Ñ©ÐÇÐÇ\tÍê³É·çÁê¶É"} },
+	},
+}
+tbConfig[6] = --É±ÊÖboss
+{
+	nId = 6,
+	szMessageType = "NpcOnDeath",
+	szName = "90¼¶É±ÊÖÈÎÎñ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {nil},
+	tbCondition = 
+	{
+		{"NpcFunLib:CheckKillerdBoss",	{90} },
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},3,"Event_Ñ©ÐÇÐÇ\tÏûÃðÉ±ÊÖBOSS"} },
+	},
+}
+tbConfig[7] = --ËÎ½ð1000µã
+{
+	nId = 7,
+	szMessageType = "FinishSongJin",
+	szName = "¸ß¼¶ËÎ½ð1000µã",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {-2,"3"},
+	tbCondition = 
+	{
+		--{"PlayerFunLib:CheckBT_PL_BATTLEPOINT",	{1000,">="} },
+		--{"PlayerFunLib:CheckTaskDaily",	{nTSK_DAILY_TK_Áì_±ù_Ê¯,4,"","<"} },
+	},
+	tbActition = 
+	{
+		--{"PlayerFunLib:AddTaskDaily",	{nTSK_DAILY_TK_Áì_±ù_Ê¯,4} },
+		--{"PlayerFunLib:GetItem",	{{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime, nBindState = -2},4,"Event_Ñ©ÐÇÐÇ\tËÎ½ðÁìÈ¡±ùÊ¯"} },
+	},
+}
+tbConfig[8] = --Ê¹ÓÃÑ©±ùÊ¯ÀñºÐ
+{
+	nId = 8,
+	szMessageType = "ItemScript",
+	szName = "Ê¹ÓÃÑ©±ùÊ¯ÀñºÐ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {{tbProp={6,1,30120,1,0,0},}},
+	tbCondition = 
+	{
+		{"PlayerFunLib:CheckFreeBagCell",	{2,"default"} },
+		{"PlayerFunLib:CheckTaskDaily",	{nTSK_DAILY_SU_DUNG_BANG_THACH_LE_HOP,15,"½ñÌìÒÑÊ¹ÓÃ15¸öÑ©±ùÊ¯ÀñºÐ£¬Ã÷Ìì¼ÌÐøÊ¹ÓÃÅ¶.","<"} },
+	},
+	tbActition = 
+	{
+		{"PlayerFunLib:AddTaskDaily",	{nTSK_DAILY_SU_DUNG_BANG_THACH_LE_HOP,1} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime},10,"Event_NgoiSaoTuyet\tSuDungTuyetBangThachLeHop"} },
+		{"ThisActivity:UseFreezingStoneBoxLog", {nil}},
+	},
+}
+----add¶Ô»°npc
+tbConfig[9] = --´óÀÏÊ¦¶Ô»°
+{
+	nId = 9,
+	szMessageType = "ClickNpc",
+	szName = "µã»÷Ìì¾«ÀÏÈË",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"Ìì¾«ÀÏÈË"},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"SetDialogTitle",	{"ÄúºÃ£¬ÄúÏëÒªÎÒÉý¼¶Ñ©±ù¾§Âð?"} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§1¼¶", 11} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§2¼¶", 12} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§3¼¶", 13} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§4¼¶", 14} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§5¼¶", 15} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§6¼¶", 16} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§7¼¶", 17} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§8¼¶", 18} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§9¼¶", 19} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§10¼¶", 20} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§11¼¶", 21} },
+		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§12¼¶", 22} },	
+	},
+}
+tbConfig[10] =
+{
+	nId = 10,
+	szMessageType = "CreateDialog",
+	szName = "Éý¼¶Ñ©±ù¾§",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>ÇëÑ¡ÔñµÈ¼¶"},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{		
+--		{"AddDialogOpt",	{"Ñ©±ù¾§1¼¶", 11} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§2¼¶", 12} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§3¼¶", 13} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§4¼¶", 14} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§5¼¶", 15} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§6¼¶", 16} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§7¼¶", 17} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§8¼¶", 18} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§9¼¶", 19} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§10¼¶", 20} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§11¼¶", 21} },
+--		{"AddDialogOpt",	{"Ñ©±ù¾§12¼¶", 22} },
+	},
+}
+----ºÏ³ÉÔ­ÁÏ
+tbConfig[11] = --ºÏ³É1¼¶ÐÇÐÇ
+{
+	nId = 11,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É1¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[1¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[0]¼¶",{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{1} },
+	},
+}
+tbConfig[12] = --ºÏ³É2¼¶ÐÇÐÇ
+{
+	nId = 12,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É2¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[2¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[1]¼¶",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{2} },
+	},
+}
+tbConfig[13] = --ºÏ³É3¼¶ÐÇÐÇ
+{
+	nId = 13,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É3¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[3]¼¶",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[2]¼¶",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{3} },
+	},
+}
+tbConfig[14] = --ºÏ³É4¼¶ÐÇÐÇ
+{
+	nId = 14,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É4¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[4¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[3]¼¶",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{4} },
+	},
+}
+tbConfig[15] = --ºÏ³É5¼¶ÐÇÐÇ
+{
+	nId = 15,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É5¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[5¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[4]¼¶",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{5} },
+	},
+}
+tbConfig[16] = --ºÏ³É6¼¶ÐÇÐÇ
+{
+	nId = 16,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É6¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[6¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[5]¼¶",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{6} },
+	},
+}
+tbConfig[17] = --ºÏ³É7¼¶ÐÇÐÇ
+{
+	nId = 17,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É7¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[7¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[6]¼¶",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{7} },
+	},
+}
+tbConfig[18] = --ºÏ³É8¼¶ÐÇÐÇ
+{
+	nId = 18,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É8¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[8¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[7]¼¶",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{8} },
+	},
+}
+tbConfig[19] = --ºÏ³É9¼¶ÐÇÐÇ
+{
+	nId = 19,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É9¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[9¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[8]¼¶",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{9} },
+	},
+}
+tbConfig[20] = --ºÏ³É10¼¶ÐÇÐÇ
+{
+	nId = 20,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É10¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[10¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[9]¼¶",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{10} },
+	},
+}
+tbConfig[21] = --ºÏ³É11¼¶ÐÇÐÇ
+{
+	nId = 21,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É11¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[11¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[10]¼¶",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{11} },
+	},
+}
+tbConfig[22] = --ºÏ³É12¼¶ÐÇÐÇ
+{
+	nId = 22,
+	szMessageType = "CreateCompose",
+	szName = "ºÏ³É12¼¶ÐÇÐÇ",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[12¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[11]¼¶",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UpgradeStar",	{12} },
+	},
+}
+
+tbConfig[23] = --Ð¡Í¯×Ó¶Ô»°
+{
+	nId = 23,
+	szMessageType = "ClickNpc",
+	szName = "µã»÷Ð¡Í¯×Ó",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"Ð¡Í¯×Ó"},
+	tbCondition = 
+	{
+	},
+	tbActition = 
+	{
+		{"SetDialogTitle",	{"ÄúºÃ£¬´óÏÀÐèÒªÊ²Ã´?"} },
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[1¼¶]",24} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[2¼¶]",25} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[3¼¶]",26} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[4¼¶]",27} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[5¼¶]",28} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[6¼¶]",29} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[7¼¶]",30} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[8¼¶]",31} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[9¼¶]",32} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[10¼¶]",33} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[11¼¶]",34} },	
+		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[12¼¶]",35} },	
+	},
+}
+tbConfig[24] = --ËÍÑ©±ù¾§1¼¶
+{
+	nId = 24,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ 1",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[1¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[1]¼¶",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{1} },
+	},
+}
+tbConfig[25] = --ËÍÑ©±ù¾§2¼¶
+{
+	nId = 25,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ 2",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[2¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[2]¼¶",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{2} },
+	},
+}
+tbConfig[26] = --ËÍÑ©±ù¾§3¼¶
+{
+	nId = 26,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ3",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[3¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[3]¼¶",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{3} },
+	},
+}
+tbConfig[27] = --ËÍÑ©±ù¾§4¼¶
+{
+	nId = 27,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ4",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[4¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[4]¼¶",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{4} },
+	},
+}
+tbConfig[28] = --ËÍÑ©±ù¾§5¼¶
+{
+	nId = 28,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ5",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[5¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[5]¼¶",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{5} },
+	},
+}
+tbConfig[29] = --ËÍÑ©±ù¾§6¼¶
+{
+	nId = 29,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ6",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[6¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[6]¼¶",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{6} },
+	},
+}
+tbConfig[30] = --ËÍÑ©±ù¾§7¼¶
+{
+	nId = 30,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ7",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[7¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[7]¼¶",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{7} },
+	},
+}
+tbConfig[31] = --ËÍÑ©±ù¾§8¼¶
+{
+	nId = 31,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ8",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[8¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[8]¼¶",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{8} },
+	},
+}
+tbConfig[32] = --ËÍÑ©±ù¾§9¼¶
+{
+	nId = 32,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ9",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[ 9¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[9]¼¶",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{9} },
+	},
+}
+tbConfig[33] = --ËÍÑ©±ù¾§10¼¶
+{
+	nId = 33,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ10",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[10¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[10]¼¶",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{10} },
+	},
+}
+tbConfig[34] = --ËÍÑ©±ù¾§11¼¶
+{
+	nId = 34,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ 11",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[ 11¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[11]¼¶",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{11} },
+	},
+}
+tbConfig[35] = --ËÍÑ©±ù¾§12¼¶
+{
+	nId = 35,
+	szMessageType = "CreateCompose",
+	szName = "ËÍÐÇÐÇ12",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {"<npc>Ñ©±ù¾§[12¼¶]",1,1,1,0.02},
+	tbCondition = 
+	{
+		{"AddOneMaterial",	{"Ñ©±ù¾§[12]¼¶",{tbProp={6,1,30118,12,0,0},nExpiredTime=nItemExpiredTime,},1} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:GiveStar",	{12} },
+	},
+}
+tbConfig[36] = --Ê¹ÓÃÄ¾Ïä
+{
+	nId = 36,
+	szMessageType = "ItemScript",
+	szName = "Ê¹ÓÃÄ¾Ïä",
+	nStartDate = nil,
+	nEndDate  = nil,
+	tbMessageParam = {{tbProp={6,1,30121,1,0,0},}},
+	tbCondition = 
+	{
+		{"PlayerFunLib:CheckFreeBagCell",	{2,"default"} },
+	},
+	tbActition = 
+	{
+		{"ThisActivity:UseWoodenChest", {nil}},
+	},
+}

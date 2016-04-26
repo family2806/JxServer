@@ -1,0 +1,492 @@
+NAME	GENRE	INDEX	VALUE
+梦龙之正黄僧帽	0	1	700000000
+梦龙之金丝正红袈裟	0	2	1200000000
+梦龙之玄丝法带	0	3	1500000000
+梦龙之佛法玄佩	0	4	400000
+梦龙之达摩僧鞋	0	5	1000000000
+伏魔之紫金棍	0	6	800000000
+伏魔之玄黄袈裟	0	7	700000
+伏魔之乌金软绦	0	8	1200000000
+伏魔之佛心软扣	0	9	900000
+伏魔之普渡僧鞋	0	10	1200000000
+四空之降魔戒刀	0	11	2400000000
+四空之紫金袈裟	0	12	120000
+四空之护法腰带	0	13	1800000000
+四空之软皮护腕	0	14	1800000000
+四空之戒律法戒	0	15	150000
+撼天之金环大眼神锤	0	16	6000000000
+撼天之武神镶金甲	0	17	170000
+撼天之威武束腰环	0	18	2400000000
+撼天之虎头紧束腕	0	19	190000
+撼天之乘龙战靴	0	20	2000000000
+继业之奔雷钻龙枪	0	21	6000000000
+继业之玄武黄金铠	0	22	2000000000
+继业之白虎无双扣	0	23	2000000000
+继业之火云麒麟手	0	24	240000
+继业之朱雀凌云靴	0	25	250000
+御龙之亮银宝刀	0	26	1500000000
+御龙之战神挂坠	0	27	2000000000
+御龙之天门束腰环	0	28	1500000000
+御龙之迅风护腕	0	29	290000
+御龙之绝命指环	0	30	300000
+无间之倚天剑	0	31	2000000000
+无间之清风缁衣	0	32	320000
+无间之拂云丝带	0	33	1800000000
+无间之琴韵护腕	0	34	1800000000
+无间之白玉般指	0	35	350000
+无魇之摩尼冠	0	36	1800000000
+无魇之紫襟袈裟	0	37	370000
+无魇之冰晶指环	0	38	380000
+无魇之洗象玉扣	0	39	700000000
+无魇之红缁软禢鞋	0	40	1800000000
+无尘之玉女素心冠	0	41	1200000000
+无尘之清心向善珠	0	42	800000000
+无尘之慈悲玉般指	0	43	430000
+无尘之佛心慈佑腰配	0	44	440000
+无尘之佛光指环	0	45	1500000000
+栖凰之凤仪刀	0	46	2400000000
+栖凰之慧心轻纱衣	0	47	470000
+栖凰之风雪白云束带	0	48	1800000000
+栖凰之冰踪锦腕	0	49	1800000000
+栖凰之翠玉指环	0	50	500000
+碧海之鸳鸯连环刀	0	51	800000000
+碧海之环珠雨链	0	52	520000
+碧海之红铃金丝带	0	53	1000000000
+碧海之红铃波	0	54	800000000
+碧海之纤细指环	0	55	550000
+幽胧之金蛇发带	0	56	600000000
+幽胧之赤蝎秘装	0	57	570000
+幽胧之青蜈缠腰	0	58	1500000000
+幽胧之银蟾护手	0	59	590000
+幽胧之墨蛛软履	0	60	800000000
+冥幻之邪刹毒刃	0	61	1500000000
+冥幻之幽蛊暗衣	0	62	1000000000
+冥幻之毒蝎指环	0	63	630000
+冥幻之腐骨护腕	0	64	1500000000
+冥幻之双环蛇鞋	0	65	650000
+咒缚之破甲头环	0	66	1000000000
+咒缚之灭雷颈符	0	67	800000000
+咒缚之幽幻指环	0	68	680000
+咒缚之穿心毒腕	0	69	800000000
+咒缚之冰火蚀骨靴	0	70	700000
+冰寒之弹指飞刀	0	71	1500000000
+冰寒之玄衣束甲	0	72	1000000000
+冰寒之心箭腰扣	0	73	1500000000
+冰寒之玄天冰火佩	0	74	740000
+冰寒之月影靴	0	75	750000
+天光之花雨漫天	0	76	1800000000
+天光之定心凝神符	0	77	1500000000
+天光之森罗束腰	0	78	1500000000
+天光之风暴寒铁镯	0	79	790000
+天光之束天缚地环	0	80	800000
+森荒之飞星夺魂	0	81	1200000000
+森荒之金钱连环甲	0	82	820000
+森荒之魂咬腰束	0	83	1500000000
+森荒之玄铁镶玉佩	0	84	840000
+森荒之星陨飞履	0	85	1200000000
+地魄之五行连环冠	0	86	1000000000
+地魄之黑焰冲天链	0	87	800000000
+地魄之霹雳雷火戒	0	88	880000
+地魄之扣心镯	0	89	1000000000
+地魄之地行千里靴	0	90	900000
+同仇之飞龙头环	0	91	910000
+同仇之降龙丐衣	0	92	1500000000
+同仇之潜龙腰带	0	93	1500000000
+同仇之亢龙护手	0	94	1200000000
+同仇之见龙扳指	0	95	950000
+敌忾之绿玉杖	0	96	3500000000
+敌忾之九袋丐衣	0	97	970000
+敌忾之缠莽腰带	0	98	1800000000
+敌忾之狗脊皮护腕	0	99	1200000000
+敌忾之草间石戒	0	100	1000000
+魔煞之鬼谷幽冥枪	0	101	2000000000
+魔煞之残阳映血甲	0	102	1200000000
+魔煞之赤骥锁腰扣	0	103	1500000000
+魔煞之举火燎天腕	0	104	1040000
+魔煞之云龙吐珠戒	0	105	1050000
+魔煌之金甲盔	0	106	1200000000
+魔煌之按出虎项圈	0	107	800000000
+魔煌之溪谷束腰带	0	108	1000000000
+魔煌之血衣兽镯	0	109	1090000
+魔煌之蹬踏靴	0	110	1100000
+魔嗜之烈焰冠冕	0	111	1500000000
+魔嗜之厉魔噬心链	0	112	1120000
+魔嗜之业火幽冥戒	0	113	1130000
+魔嗜之血玉七杀佩	0	114	1000000000
+魔嗜之山海飞鸿履	0	115	500000000
+凌岳之太极剑	0	116	1500000000
+凌岳之无我道袍	0	117	1170000
+凌岳之怒雷法戒	0	118	1500000000
+凌岳之无极玄玉佩	0	119	1800000000
+凌岳之天地玄黄戒	0	120	1200000
+及丰之真武剑	0	121	6000000000
+及丰之三清符	0	122	2000000000
+及丰之玄丝三段锦	0	123	1500000000
+及丰之翠玉玄黄佩	0	124	1240000
+及丰之青松法戒	0	125	1250000
+霜晶之千年寒铁	0	126	1500000000
+霜晶之傲霜道袍	0	127	1270000
+霜晶之清风缕带	0	128	1500000000
+霜晶之天清冰晶手	0	129	1800000000
+霜晶之风暴指环	0	130	1300000
+雷穹之寒松冰柏冠	0	131	900000000
+雷穹之天地护符	0	132	800000000
+雷穹之风雷青锦带	0	133	1500000000
+雷穹之灵玉蕴雷	0	134	1340000
+雷穹之九天引雷戒	0	135	1350000
+雾幻之北冥道冠	0	136	400000000
+雾幻之羁绊符咒	0	137	1370000
+雾幻之束心指环	0	138	1380000
+雾幻之清影玄玉佩	0	139	800000000
+雾幻之松风雪影靴	0	140	1200000000
+雅典之魂	0	141	1410000
+北京之梦	0	142	1420000
+洞察之白金雕龙戒	0	143	1430000
+洞察之白玉乾坤佩	0	144	800000000
+洞察之白金锈凤戒	0	145	1500000000
+洞察之翡翠玉项圈	0	146	1500000000
+定业头冠	0	147	1470000
+定业战袍	0	148	1480000
+定业腰带	0	149	1490000
+定业护腕	0	150	1500000
+定业战靴	0	151	1510000
+定业扳指	0	152	1520000
+定国头冠	0	153	1530000
+定国战袍	0	154	1540000
+定国腰箍	0	155	1550000
+定国护腕	0	156	1560000
+定国战靴	0	157	1570000
+定国扳指	0	158	1580000
+定国之青纱长衫	0	159	200000000
+定国之钨砂发冠	0	160	300000000
+定国之赤绢软靴	0	161	80000000
+定国之紫藤护腕	0	162	100000000
+定国之银蚕腰带	0	163	80000000
+安邦之冰晶石项链	0	164	350000000
+安邦之菊花石指环	0	165	250000000
+安邦之田黄石玉佩	0	166	250000000
+安邦之鸡血石戒指	0	167	250000000
+天煌龙器之龙抬头	0	168	1680000
+天煌龙器之白龙息	0	169	1690000
+天煌龙器之镇冥之链	0	170	1700000
+天煌龙器之九现之指	0	171	1710000
+天煌龙器之玉逍遥	0	172	1720000
+天煌龙器之黄金鳞	0	173	1730000
+天煌龙器之磐龙瑰	0	174	1740000
+天煌龙器之龙哭千里	0	175	1750000
+天煌龙器之怒龙之瞳	0	176	1760000
+金枫之青阳盔	0	177	1770000
+金枫之麒麟血	0	178	1780000
+金枫之濯之链光	0	179	1790000
+金枫之公谨三叹	0	180	1800000
+金枫之夺魂玉带	0	181	1810000
+金枫之后羿引弓	0	182	1820000
+金枫之兰亭玉	0	183	1830000
+金枫之千里草上飞	0	184	1840000
+金枫之铜雀春深	0	185	1850000
+侠骨之铁血衫	0	186	1860000
+侠骨之多情环	0	187	1870000
+侠骨之丹心戒	0	188	1880000
+侠骨之情意结	0	189	1890000
+柔情之巾帼霓裳	0	190	1900000
+柔情之淑女项链	0	191	1910000
+柔情之凤仪戒指	0	192	1920000
+柔情之慧心玉佩	0	193	1930000
+Чi M? H? Tr輈h Tinh ho祅	0	194	
+Чi M? H? Л阯g Ngh? gi竝	0	195	
+Чi M? H? L鬰 Ph? Th髖 H? Th﹏ ph? 	0	196	
+Чi M? H? B綾 Kinh Chi M閚g	0	197	
+Чi M? H? B筩h Kim y猽 i	0	198	
+Чi M? H? Thi猲 T祄 H? Uy觧	0	199	
+Чi M? H? Ng? S綾 Ng鋍 B閕	0	200	
+Чi M? H? Thi猲 T祄 Ngoa	0	201	
+Чi M? H? Nha 觧 Chi H錸	0	202	
+Чi M? H? B玭 L玦 To祅 Long thng	0	203	
+H錸g 秐h Th萴 Vi猲 Uy觧	0	204	
+H錸g 秐h Ki誱 B礽	0	205	
+H錸g 秐h M鬰 T骳	0	206	
+H錸g 秐h T? Chi猽	0	207	
+Tu? Thanh	0	208	
+Duy猲 Qu﹏	0	209	
+[Ho祅 M黓 An Bang B╪g Tinh Th筩h H筺g Li猲	0	210	
+[Ho祅 M黓 An Bang C骳 Hoa Th筩h Ch? Ho祅	0	211	
+[Ho祅 M黓 An Bang 襫 Ho祅g Th筩h Ng鋍 B閕	0	212	
+[Ho祅 M黓 An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	213	
+Vinh Di謚 Chi Y	0	214	
+Tinh Chu萵 Chi Ngoa	0	215	
+An Bang B╪g Tinh Th筩h H筺g Li猲	0	216	
+An Bang C骳 hoa Th筩h ch? ho祅	0	217	
+An Bang 襫 Ho祅g th筩h ng鋍 b閕	0	218	
+An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	219	
+[мnh th阨] M閚g Long Ch輓h Ho祅g T╪g M穙	0	220	
+[мnh th阨] M閚g Long Kim Ty Ch輓h H錸g C? Sa	0	221	
+[мnh th阨] Huy襫 Thi誸 Ph竧 Цi	0	222	
+[мnh th阨] Ph藅 Ph竝 Huy襫 B閕	0	223	
+[мnh th阨] M閚g Long Чt Ma T╪g H礽	0	224	
+[мnh th阨] Ph鬰 Ma T? Kim C玭	0	225	
+[мnh th阨] Ph鬰 Ma Huy襫 Ho祅g C? Sa	0	226	
+[мnh th阨] Ph鬰 Ma ? Kim Nhuy詎 Thao	0	227	
+[мnh th阨] Ph鬰 Ma Ph藅 T﹎ Nhuy詎 Kh蕌	0	228	
+[мnh th阨] Ph鬰 Ma Ph? ч T╪g H礽	0	229	
+[мnh th阨] T? Kh玭g Gi竛g Ma Gi韎 o	0	230	
+[мnh th阨] T? Kh玭g T? Kim C? Sa	0	231	
+[мnh th阨] T? Kh玭g H? Ph竝 Y猽 Цi	0	232	
+[мnh th阨] T? Kh玭g Nhuy詎 B? H? Uy觧	0	233	
+[мnh th阨] T? Kh玭g Gi韎 Lu藅 Ph竝 Gi韎	0	234	
+[мnh th阨] H穖 Thi猲 Kim Ho祅 Чi Nh穘 Th莕 Ch飝	0	235	
+[мnh th阨] H穖 Thi猲 V? Th莕 Tng Kim Gi竝	0	236	
+[мnh th阨] H穖 Thi猲 Uy V? Th骳 Y猽 Ho祅	0	237	
+[мnh th阨] H穖 Thi猲 H? u Kh萵 Th骳 Uy觧	0	238	
+[мnh th阨] H穖 Thi猲 Th鮝 Long Chi課 Ngoa	0	239	
+[мnh th阨] T鬰 Nghi謕 B玭 L玦 To祅 Long Thng	0	240	
+[мnh th阨] T鬰 Nghi謕 Huy襫 V? Ho祅g Kim Kh秈	0	241	
+[мnh th阨] T鬰 Nghi謕 B筩h H? V? Song Kh蕌	0	242	
+[мnh th阨] T鬰 Nghi謕 H醓 V﹏ K? L﹏ Th?	0	243	
+[мnh th阨] T鬰 Nghi謕 Chu Tc L╪g V﹏ Ngoa	0	244	
+[мnh th阨] Ng? Long Lng Ng﹏ B秓 o	0	245	
+[мnh th阨] Ng? Long Chi課 Th莕 Qua Tr魕	0	246	
+[мnh th阨] Ng? Long Long Thi猲 M玭 Th骳 Y猽 Ho祅	0	247	
+[мnh th阨] Ng? Long T蕁 Phong H? Uy觧	0	248	
+[мnh th阨] Ng? Long Tuy謙 M謓h Ch? Ho祅	0	249	
+[мnh th阨] V? Gian ? Thi猲 Ki誱	0	250	
+[мnh th阨] V? Gian Thanh Phong Tri Y	0	251	
+[мnh th阨] V? Gian Ph蕋 V﹏ Ty Цi	0	252	
+[мnh th阨] V? Gian C莔 V薾 H? Uy觧	0	253	
+[мnh th阨] V? Gian B筩h Ng鋍 Ban Ch?	0	254	
+[мnh th阨] V? Ma Ma Ni Qu竛	0	255	
+[мnh th阨] V? Ma T? Kh﹎ C? Sa	0	256	
+[мnh th阨] V? Ma B╪g Tinh Ch? Ho祅	0	257	
+[мnh th阨] V? Ma T葃 Tng Ng鋍 Kh蕌	0	258	
+[мnh th阨] V? Ma H錸g Tri Nhuy詎 Th竝 H礽	0	259	
+[мnh th阨] V? Tr莕 Ng鋍 N? T? T﹎ Qu竛	0	260	
+[мnh th阨] V? Tr莕 Thanh T﹎ Hng Thi謓 Ch﹗	0	261	
+[мnh th阨] V? Tr莕 T? Bi Ng鋍 Ban Ch?	0	262	
+[мnh th阨] V? Tr莕 Ph藅 T﹎ T? H鵸 Y猽 Ph鑙	0	263	
+[мnh th阨] V? Tr莕 Ph藅 Quang Ch? Ho祅	0	264	
+[мnh th阨] Th? Ho祅g Ph鬾g Nghi o	0	265	
+[мnh th阨] Th? Ho祅g Tu? T﹎ Kinh Sa Y	0	266	
+[мnh th阨] Th? Ho祅g Phong Tuy誸 B筩h V﹏ Y猽 Цi	0	267	
+[мnh th阨] Th? Ho祅g B╪g Tuy C萴 Uy觧	0	268	
+[мnh th阨] Th? Ho祅g Th髖 Ng鋍 Ch? Ho祅	0	269	
+[мnh th阨] B輈h H秈 Uy猲 Μng Li猲 Ho祅 o	0	270	
+[мnh th阨] B輈h H秈 Ho祅 Ch﹗ V? Li猲	0	271	
+[мnh th阨] B輈h H秈 H錸g Linh Kim Ty Цi	0	272	
+[мnh th阨] B輈h H秈 H錸g Linh Ba	0	273	
+[мnh th阨] B輈h H秈 Ti猰 T? Ch? Ho祅	0	274	
+[мnh th阨] U Lung Kim X? Ph竧 Цi	0	275	
+[мnh th阨] U Lung X輈h H箃 B? Trang	0	276	
+[мnh th阨] U Lung Thanh Ng? Tri襫 Y猽	0	277	
+[мnh th阨] U Lung Ng﹏ Thi襪 H? Th?	0	278	
+[мnh th阨] U Long M芻 Th? Nhuy詎 L?	0	279	
+[мnh th阨] Minh Hoan T? S竧 чc o	0	280	
+[мnh th阨] V? Ho竛 U C? 竚 Y	0	281	
+[мnh th阨] V? Ho竛 чc H箃 Ch? Ho祅	0	282	
+[мnh th阨] V? Ho竛 H? C鑤 H? Uy觧	0	283	
+[мnh th阨] V? Ho竛 Song Ho祅 X? H礽	0	284	
+[мnh th阨] Ch? Ph鋍 Ph? Gi竝 u Ho祅	0	285	
+[мnh th阨] Ch? Ph鋍 Di謙 L玦 C秐h Ph?	0	286	
+[мnh th阨] Ch? Ph鋍 U Hoan Ch? Ho祅	0	287	
+[мnh th阨] Ch? Ph鋍 Xuy猲 T﹎ чc Uy觧	0	288	
+[мnh th阨] Ch? Ph鋍 B╪g H醓 Th鵦 C鑤 Ngoa	0	289	
+[мnh th阨] B╪g H祅 Уn Ch? Phi o	0	290	
+[мnh th阨] B╪g H祅 Huy襫 y Th骳 Gi竝	0	291	
+[мnh th阨] B╪g H祅 T﹎ Ti詎 Y猽 Kh蕌	0	292	
+[мnh th阨] B╪g H祅 Huy襫 Thi猲 B╪g H醓 B閕	0	293	
+[мnh th阨] B╪g H祅 Nguy謙 秐h Ngoa	0	294	
+[мnh th阨] Thi猲 Quang Hoa V? M筺 Thi猲	0	295	
+[мnh th阨] Thi猲 Ngoa мnh T﹎ Ng璶g Th莕 Ph?	0	296	
+[мnh th阨] Thi猲 Ngoa S﹎ La Th骳 Y猽	0	297	
+[мnh th阨] Thi猲 Ngoa Phong B穙 H祅 Thi誸 Tr鋍	0	298	
+[мnh th阨] Thi猲 Ngoa Th骳 Thi猲 Ph鋍 мa Ho祅	0	299	
+[мnh th阨] S﹎ Hoang Phi Tinh 箃 H錸	0	300	
+[мnh th阨] S﹎ Hoang Kim Ti襫 Li猲 Ho祅 Gi竝	0	301	
+[мnh th阨] S﹎ Hoang H錸 Gi秓 Y猽 Th骳	0	302	
+[мnh th阨] S﹎ Hoang Huy襫 Thi誸 Tng Ng鋍 B閕	0	303	
+[мnh th阨] S﹎ Hoang Tinh V﹏ Phi L?	0	304	
+[мnh th阨] мa Ph竎h Ng? H祅h Li猲 Ho祅 Qu竛	0	305	
+[мnh th阨] мa Ph竎h H綾 Di謒 Xung Thi猲 Li猲	0	306	
+[мnh th阨] мa Ph竎h T辌h L辌h L玦 H醓 Gi韎	0	307	
+[мnh th阨] мa Ph竎h Kh蕌 T﹎ Tr鋍	0	308	
+[H筺 ch? th阨 gian] мa Ph竎h Phong H祅 Th骳 Y猽	0	309	
+[H筺 ch? th阨 gian] уng C鮱 Ng? Long Ng鋍 B閕	0	310	
+[мnh th阨] уng C鴘 Gi竛g Long C竔 Y	0	311	
+[мnh th阨] уng C鮱 Ti襪 Long Y猽 Цi	0	312	
+[мnh th阨] уng C鮱 Kh竛g Long H? Th?	0	313	
+[мnh th阨] уng C鮱 Ki課 Long Ban Ch?	0	314	
+[мnh th阨] мch Kh竔 L鬰 Ng鋍 Trng	0	315	
+[мnh th阨] мch Kh竔 C鰑 Цi C竔 Y	0	316	
+[мnh th阨] мch Kh竔 Ph鬰 M穘g Y猽 Цi	0	317	
+[мnh th阨] мch Kh竔 C萿 T輈h B? H? Uy觧	0	318	
+[мnh th阨] мch Kh竔 Th秓 Gian Th筩h Gi韎	0	319	
+[мnh th阨] Ma S竧 Qu? C鑓 U Minh Thng	0	320	
+[мnh th阨] Ma S竧 T祅 Dng 竛h Huy誸 Gi竝	0	321	
+[мnh th阨] Ma S竧 X輈h K? T醓 Y猽 Kh蕌	0	322	
+[мnh th阨] Ma S竧 C? H醓 Li猽 Thi猲 Uy觧	0	323	
+[мnh th阨] Ma S竧 V﹏ Long Th? Ch﹗ Gi韎	0	324	
+[мnh th阨] Ma Ho祅g Kim Gi竝 Kh玦	0	325	
+[мnh th阨] Ma Ho祅g 竛 Xu蕋 H? H筺g Khuy猲	0	326	
+[мnh th阨] Ma Ho祅g Kh? C鑓 Th骳 Y猽 Цi	0	327	
+[мnh th阨] Ma Ho祅g Huy誸 Y Th? Tr鋍	0	328	
+[мnh th阨] Ma Ho祅g Жng Чp Ngoa	0	329	
+[мnh th阨] Ma Th? Li謙 H醓 Qu竛 Mi謓	0	330	
+[мnh th阨] Ma Th? L辌h Ma Ph? T﹎ Li猲	0	331	
+[мnh th阨] Ma Th? Nghi謕 H醓 U Minh Gi韎	0	332	
+[мnh th阨] Ma Th? Huy誸 Ng鋍 Th蕋 S竧 B閕	0	333	
+[мnh th阨] Ma Ho祅g S琻 H秈 Phi H錸g L?	0	334	
+[мnh th阨] L╪g Nh筩 Th竔 C鵦 Ki誱	0	335	
+[мnh th阨] L╪g Nh筩 V? Ng? Чo B祇	0	336	
+L╪g Nh筩 N? L玦 Gi韎 (k? h筺)	0	337	
+[мnh th阨] L╪g Nh筩 V? C鵦 Huy襫 Ng鋍 B閕	0	338	
+[мnh th阨] L╪g Nh筩 Thi猲 мa Huy襫 Ho祅g Gi韎	0	339	
+[мnh th阨] C藀 Phong Ch﹏ V? Ki誱	0	340	
+[мnh th阨] C藀 Phong Tam Thanh Ph?	0	341	
+[мnh th阨] C藀 Phong Huy襫 Ty Tam 筺 C萴	0	342	
+[мnh th阨] C藀 Phong Th髖 Ng鋍 Huy襫 Ho祅g B閕	0	343	
+[мnh th阨] C藀 Phong Thanh T飊g Ph竝 Gi韎	0	344	
+[мnh th阨] S琻 Tinh Thi猲 Ni猲 H祅 Thi誸	0	345	
+[мnh th阨] Sng Tinh Ng筼 Sng Чo B祇	0	346	
+[мnh th阨] Sng Tinh Thanh Phong L? Цi	0	347	
+[мnh th阨] Sng Tinh Thi猲 Thanh B╪g Tinh Th?	0	348	
+[мnh th阨] Sng Tinh Phong B筼 Ch? Ho祅	0	349	
+[мnh th阨] L玦 Khung H祅 T飊g B╪g B竎h Qu竛	0	350	
+[мnh th阨] L玦 Khung Thi猲 мa H? Ph?	0	351	
+[мnh th阨] L玦 Khung Phong Tuy誸 Thanh C萴 Цi	0	352	
+[мnh th阨] L玦 Khung Linh Ng鋍 U萵 L玦	0	353	
+[мnh th阨] L玦 Khung C鰑 Thi猲 D蒼 L玦 Gi韎	0	354	
+[мnh th阨] V? Ho竛 B綾 Minh Чo Qu竛	0	355	
+[мnh th阨] V? Hoan Ki Ban Ph? Ch?	0	356	
+[мnh th阨] V? Hoan Th骳 T﹎ Ch? Ho祅	0	357	
+[мnh th阨] V? Hoan Thanh 秐h Huy襫 Ng鋍 B閕	0	358	
+[мnh th阨] V? Hoan T飊g Phong Tuy誸 秐h Ngoa	0	359	
+[мnh th阨] чng S竧 B筩h Kim 猽 Long Gi韎	0	360	
+[мnh th阨] чng S竧 B筩h Ng鋍 C祅 Kh玭 B閕	0	361	
+[мnh th阨] чng S竧 B筩h Kim T? Ph鬾g Gi韎	0	362	
+[мnh th阨] чng S竧 Ph? Th髖 Ng鋍 H筺g Khuy猲	0	363	
+[мnh th阨] Чi M? H? Tr輈h Tinh Ho祅	0	364	
+[мnh th阨] Чi M? H? Л阯g Ngh? Gi竝	0	365	
+[мnh th阨] Чi M? H? L鬰 Ph? Th髖 H? Th﹏ Ph?	0	366	
+[мnh th阨] Чi M? H? B綾 Kinh Chi M閚g	0	367	
+[мnh th阨] Чi M? H? B筩h Kim Y猽 Цi	0	368	
+[мnh th阨] Чi M? H? Thi猲 T祄 H? Uy觧	0	369	
+[мnh th阨] Чi M? H? Ng? S綾 Ng鋍 B閕	0	370	
+[мnh th阨] Чi M? H? Thi猲 T祄 Ngoa	0	371	
+[мnh th阨] Чi M? H? Nh? 觧 Chi H錸	0	372	
+[мnh th阨] Чi M? H? B玭 L玦 To祅 Long Thng	0	373	
+[мnh th阨] H錸g 秐h Tr莔 Vi猲 V穘 T髖	0	374	
+[мnh th阨] H錸g 秐h Ki誱 Qua T﹜ Phng	0	375	
+[мnh th阨] H錸g 秐h M鬰 T骳 Tng Vong	0	376	
+[мnh th阨] H錸g 秐h H錸g T? Chi猽	0	377	
+[мnh th阨] Th? T骳 Kim Gi韎	0	378	
+[мnh th阨] Th? T骳 Ng﹏ Gi韎	0	379	
+[мnh th阨] мnh Qu鑓 Thanh Sa Trng Sam	0	380	
+[мnh th阨] мnh Qu鑓 Thanh Sa Ph竧 Qu竛	0	381	
+[мnh th阨] мnh Qu鑓 X輈h Quy猲 Nhuy詎 Ngoa	0	382	
+[мnh th阨] мnh Qu鑓 T? Щng H? Uy觧	0	383	
+[мnh th阨] мnh Qu鑓 Ng﹏ T祄 Y猽 Цi	0	384	
+[мnh th阨] An Bang B╪g Tinh Th筩h H筺g Li猲	0	385	
+[мnh th阨] An Bang C骳 Hoa Th筩h Ch? Ho祅	0	386	
+[мnh th阨] An Bang 襫 Ho祅g Th筩h Ng鋍 B閕	0	387	
+[мnh th阨] An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	388	
+[Li猲 u] мnh Qu鑓 Thanh sa Trng sam	0	389	
+[Li猲 u] мnh Qu鑓 ? Sa Ph竧 Qu竛	0	390	
+[Li猲 u] мnh Qu鑓 X輈h Quy猲 Nhuy詎 Ngoa	0	391	
+[Li猲 u] мnh Qu鑓 T? Щng H? Uy觧	0	392	
+[Li猲 u] мnh Qu鑓 Ng﹏ T祄 Y猽 Цi	0	393	
+[Li猲 u] An Bang B╪g Tinh Th筩h H筺g Li猲	0	394	
+[Li猲 u] An Bang C骳 hoa Th筩h ch? ho祅	0	395	
+[Li猲 u] An Bang 襫 Ho祅g th筩h ng鋍 b閕	0	396	
+[Li猲 u] An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	397	
+мnh Qu鑓 Thanh sa Trng sam	0	398	
+мnh Qu鑓 ? Sa Ph竧 Qu竛	0	399	
+мnh Qu鑓 X輈h Quy猲 Nhuy詎 Ngoa	0	400	
+мnh Qu鑓 T? Щng H? Uy觧	0	401	
+мnh Qu鑓 Ng﹏ T祄 Y猽 Цi	0	402	
+[C鵦 ph萴] мnh Qu鑓 Thanh Sa Trng Sam	0	403	
+[C鵦 ph萴] мnh Qu鑓 Thanh Sa Ph竧 Qu竛	0	404	
+[C鵦 ph萴] мnh Qu鑓 X輈h Quy猲 Nhuy詎 Ngoa	0	405	
+[C鵦 ph萴] мnh Qu鑓 T? Щng H? Uy觧	0	406	
+[C鵦 ph萴] мnh Qu鑓 Ng﹏ T祄 Y猽 Цi	0	407	
+[C鵦 ph萴] An Bang B╪g Tinh Th筩h H筺g Li猲	0	408	
+[C鵦 ph萴] An Bang C骳 Hoa Th筩h Ch? Ho祅	0	409	
+[C鵦 ph萴] An Bang 襫 Ho祅g Th筩h Ng鋍 B閕	0	410	
+[C鵦 ph萴] An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	411	
+[C鵦 ph萴] Hi謓 C鑤 Thi誸 Huy誸 Sam	0	412	
+[C鵦 ph萴] Hi謓 C鑤  T譶h Ho祅	0	413	
+[C鵦 ph萴] Hi謓 C鑤 n T﹎ Gi韎	0	414	
+[C鵦 ph萴] Hi謓 C鑤 T譶h ? K誸	0	415	
+[C鵦 ph萴] Nhu T譶h C﹏ Qu鑓 Ngh? Thng	0	416	
+[C鵦 ph萴] Nhu T譶h Th鬰 N? H筺g Li猲	0	417	
+[C鵦 ph萴] Nhu T譶h Ph鬾g Nghi Gi韎 Ch?	0	418	
+[C鵦 ph萴] Nhu T譶h Tu? T﹎ Ng鋍 B閕	0	419	
+[Tinh Ch誡 чng S竧 B筩h Kim 猽 Long Gi韎	0	420	
+[Tinh Ch誡 чng S竧 B筩h Ng鋍 C祅 Kh玭 B閕	0	421	
+[Tinh Ch誡 чng S竧 B筩h Kim T? Ph鬾g Gi韎	0	422	
+[Tinh Ch誡 чng S竧 Ph? Th髖 Ng鋍 H筺g Khuy猲	0	423	
+[Ho祅 M黓 C鵦 Ph萴 An Bang B╪g Tinh Th筩h H筺g Li猲	0	424	
+[Ho祅 M黓 C鵦 Ph萴 An Bang C骳 Hoa Th筩h Ch? Ho祅	0	425	
+[Ho祅 M黓 C鵦 Ph萴 An Bang 襫 Ho祅g Th筩h Ng鋍 B閕	0	426	
+[Ho祅 M黓 C鵦 Ph萴 An Bang K? Huy誸 Th筩h Gi韎 Ch?	0	427	
+C祅 Kh玭 Gi韎 Ch?	0	428	
+[мnh th阨] Th? T骳 To祅 Gi韎	0	429	
+[Ph醤g ch誡 H錸g 秐h Tr莔 Vi猲 V穘 T髖	0	430	
+[Ph醤g ch誡 H錸g 秐h Ki誱 Qua T﹜ Phng	0	431	
+[Ph醤g ch誡 H錸g 秐h M鬰 T骳 Tng Vong	0	432	
+[Ph醤g ch誡 H錸g 秐h H錸g T? Chi猽	0	433	
+[Ho祅 M黓 H錸g 秐h Tr莔 Vi猲 V穘 T髖	0	434	
+[Ho祅 M黓 H錸g 秐h Ki誱 Qua T﹜ Phng	0	435	
+[Ho祅 M黓 H錸g 秐h M鬰 T骳 Tng Vong	0	436	
+[Ho祅 M黓 H錸g 秐h H錸g T? Chi猽	0	437	
+Ch蕄 T? Chi Th?	0	438	
+D? T? Giai L穙	0	439	
+Minh Nguy謙 K誸	0	440	
+Thi襫 Quy猲 Li猲	0	441	
+To筰 Nh﹏ X輈h Huy誸 Nguy猲 V? Gi竝	0	442	2000000000
+To筰 Nh﹏ B竎h Luy謓 Kh玦	0	443	1800000000
+To筰 Nh﹏ Th蕋 L璾 Quang Y猽 Kh蕌	0	444	
+To筰 Nh﹏ Tr鬰 Thi猲 Ngoa	0	445	1500000000
+To竔 Nh﹏ Kim L? Nhuy詎 Vi H? Uy觧	0	446	1500000000
+To竔 Nh﹏ 筺 Thng	0	447	
+To竔 Nh﹏ V? L﹎ Linh	0	448	2200000000
+To筰 Nh﹏ B竧 Nh? Ng鋍 Ban Ch?	0	449	
+To筰 Nh﹏ Thi猲 Ph藅 Ng鋍 Ban Ch?	0	450	
+To筰 Nh﹏ Huy襫 Kim L璾 Ly B閕	0	451	
+Ph鬰 Hi H鏽 чn Ng? Linh Y	0	452	
+Ph鬰 Hi Th? H? M筼	0	453	
+Ph鬰 Hi Phng Phi Ng鋍 Lung Y猽 Ho祅	0	454	
+Ph鬰 Hi Hoan 秐h K辌h	0	455	1500000000
+Ph鬰 Hi V? Lng T辌h T? Th?	0	456	1500000000
+Ph鬰 Hi To竔 T﹎	0	457	1200000000
+Ph鬰 Hi Kh骳 Du Xu﹏	0	458	1800000000
+Ph鬰 Hi B竔 Tinh Gi韎 Ch?	0	459	
+Ph鬰 Hi Lo筰 Nguy謙 Gi韎 Ch?	0	460	
+Ph鬰 Hi H? Ph竎h H? Ph?	0	461	
+N? Oa B輈h T辌h Nhuy詎 H? C莡	0	462	
+N? Oa H錸g Nhan Ph竧 Цi	0	463	1500000000
+N? Oa L鬰 Ngh? Ngh? Thng Th骳 Цi	0	464	1500000000
+N? Oa Чp L穘g L?	0	465	
+N? Oa B? б T辬h T萴 C萴 Uy觧	0	466	
+N? Oa H祅 Tng	0	467	2000000000
+N? Oa Ni謒 N? Ki襲	0	468	1800000000
+N? Oa D藅 Th竔 Ch? Ho祅	0	469	
+N? Oa Ti猽 Tng Ch? Ho祅	0	470	
+N? Oa 竚 Hng Thu Th駓 K誸	0	471	
+Ch骳 Dung Li謙 Di謒 N? Phong Trang	0	472	1800000000
+Ch骳 Dung Ph莕 Dng Qu竛	0	473	
+Ch骳 Dung Thi猲 Vi猰 L璾 Y猲 C萴 Цi	0	474	
+Ch骳 Dung Tuy謙 Tr莕 Ngoa	0	475	
+Ch骳 Dung Kinh Ch輈h B蕋 Di謙 Tr秓	0	476	1500000000
+Ch骳 Dung Ph? Nh藅	0	477	1500000000
+Ch骳 Dung T髖 Th竔 B譶h	0	478	1800000000
+Ch骳 Dung B竎h Li謙 Ban Ch?	0	479	
+Ch骳 Dung Thi猲 祅 Ban Ch?	0	480	
+Ch骳 Dung Tam Ti猲 Tr蕁 T﹜ Ph?	0	481	
+Th莕 N玭g Ti猽 Dng мa Ho祅g Y	0	482	2000000000
+Th莕 N玭g N? L玦 u Ho祅	0	483	1500000000
+Th莕 N玭g M芻 L﹏ Tri襫 Y猽	0	484	
+Th莕 N玭g Ng? Phong L?	0	485	1800000000
+Th莕 N玭g Thng M穘g C鎛 Long Uy觧	0	486	
+Th莕 N玭g Tr秏 Nh筩	0	487	1200000000
+Th莕 N玭g Thi猲 T辬h Sa	0	488	2200000000
+Th莕 N玭g Nhi誴 H錸 C竧 Tng Gi韎	0	489	
+Th莕 N玭g C﹗ Ph竎h Nh? ? Gi韎	0	490	
+Th莕 N玭g  Dng S竧 T﹎ K誸	0	491	

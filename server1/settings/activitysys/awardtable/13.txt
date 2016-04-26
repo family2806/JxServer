@@ -1,0 +1,3 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+13	极品之源	"return {szName=\"极品之源\",tbProp={6,1,2130,-1,-1,0},}"	60	100	91	2
+13	失传秘法	"return {szName=\"失传秘法\",tbProp={6,1,2131,-1,-1,0},}"	10	100	95	2

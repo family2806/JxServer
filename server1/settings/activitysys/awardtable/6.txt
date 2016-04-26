@@ -1,0 +1,5 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+6	神功大成	"return {szName=\"神功大成包\",tbProp={6,1,1402,1,0,0},}"	1	10	37	
+6	女娲补天包	"return {szName=\"女娲补天包\",tbProp={6,1,1683,1,0,0},}"	2	20	38	
+6	百宝五花盒	"return {szName=\"百宝五花盒\",tbProp={6,1,1741,1,0,0},}"	3	35	39	
+6	漠化易容包	"return {szName=\"漠化易容包\",tbProp={6,1,1728,1,0,0},}"	3	35	40	

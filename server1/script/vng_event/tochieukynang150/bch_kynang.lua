@@ -1,0 +1,15 @@
+--Include("\\script\\vng_event\\tochieukynang150\\head.lua")
+--
+--function main(nItemIndex)
+----	if tbTrainSkill150:checkLevelSkill() ~= 1 then
+----		if (tbTrainSkill150:CheckValueTask() ~= 1) then
+----			Msg2Player("大侠需要缴30次经验值来领取修炼值才能使用该物品");
+----			return 1
+----		end
+----	end	
+--	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbTrainSkill150.tbBIT_BCH_USE, 20, "每个人物只能最多使用20次", "~=") ~= 1 then
+--		return 1
+--	end
+--	tbVNG_BitTask_Lib:addTask(tbTrainSkill150.tbBIT_BCH_USE, 1);
+--	Msg2Player("恭喜大侠成功换取一次150技能经验值.");
+--end

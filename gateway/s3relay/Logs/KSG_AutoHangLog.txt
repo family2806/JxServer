@@ -1,0 +1,27 @@
+
+-----Time: [2015-05-20 21:33]-----
+MapID:240 OnlineCount:0£¬AutoHangCount:0
+MapID:239 OnlineCount:0£¬AutoHangCount:0
+MapID:238 OnlineCount:0£¬AutoHangCount:0
+
+-----Time: [2015-05-20 22:03]-----
+MapID:237 OnlineCount:0£¬AutoHangCount:0
+MapID:236 OnlineCount:0£¬AutoHangCount:0
+MapID:235 OnlineCount:0£¬AutoHangCount:0
+MapID:241 OnlineCount:0£¬AutoHangCount:0
+MapID:240 OnlineCount:0£¬AutoHangCount:0
+MapID:239 OnlineCount:0£¬AutoHangCount:0
+
+-----Time: [2015-05-20 23:05]-----
+MapID:240 OnlineCount:0£¬AutoHangCount:0
+MapID:239 OnlineCount:0£¬AutoHangCount:0
+MapID:238 OnlineCount:0£¬AutoHangCount:0
+MapID:237 OnlineCount:0£¬AutoHangCount:0
+
+-----Time: [2015-05-20 23:52]-----
+MapID:240 OnlineCount:0£¬AutoHangCount:0
+
+-----Time: [2015-05-21 00:02]-----
+MapID:239 OnlineCount:0£¬AutoHangCount:0
+MapID:238 OnlineCount:0£¬AutoHangCount:0
+MapID:237 OnlineCount:0£¬AutoHangCount:0

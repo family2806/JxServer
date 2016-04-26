@@ -1,0 +1,2 @@
+TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	SYNC_FLAG	TASK_DESCRIBE
+开始ID（ID占用不连续请空行）	结束ID	任务名称	0：不同步，1：同步到客户端	任务描述

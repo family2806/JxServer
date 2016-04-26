@@ -1,0 +1,10 @@
+[2015-05-21 20:51:45] error: `end' expected (to close `function' at line 7);
+  last token read: `else' at line 14 in string "/script/Á½ºşÇø/°ÍÁêÏØ/npc/°ÍÁêÏØ_Â·ÈË9°¢·¼¶Ô»°.lua"
+
+[2015-05-21 21:04:33] error: `end' expected (to close `function' at line 7);
+  last token read: `else' at line 14 in string "/script/Á½ºşÇø/°ÍÁêÏØ/npc/°ÍÁêÏØ_Â·ÈË9°¢·¼¶Ô»°.lua"
+
+[2015-05-21 21:15:09] error: attempt to index global `str' (a nil value)
+stack traceback:
+   1[150]:  function `jn' at line 41 [string "/script/Á½ºşÇø/°ÍÁêÏØ/npc/°ÍÁêÏØ_Â·ÈË9°¢·¼¶..."]
+

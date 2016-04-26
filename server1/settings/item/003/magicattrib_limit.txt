@@ -1,0 +1,1 @@
+MagicType	Min1	Max1	Min2	Max2	Min3	Max3	备注限制魔法属性(Min1Max1表示魔法属性第一个数值）

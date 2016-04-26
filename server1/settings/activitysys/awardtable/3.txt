@@ -1,0 +1,6 @@
+TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
+3	黑骐	"return {szName=\"黑骐\",tbProp={0,10,3,5,5,0},}"	1	100	19	
+3	福缘露（大） 	"return {szName=\"福缘露（大）\",tbProp={6,1,124,1,0,0},}"	3	100	20	
+3	心心相映符	"return {szName=\"心心相映符\",tbProp={6,1,18,1,0,0},nExpiredTime=10080,}"	1	100	21	
+3	一鸣惊人包	"return {szName=\"一鸣惊人包\",tbProp={6,1,1782,1,0,0},}"	2	100	22	
+3	珍藏幸运少侠宝盒	"return {szName=\"珍藏幸运少侠宝盒\",tbProp={6,1,2083,4,0,0},}"	1	100	23	
