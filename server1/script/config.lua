@@ -8,6 +8,6 @@ FC_OLYMPIC_MEDAL = 1 --°ÂÔË½±ÅÆ¹¦ÄÜ£¬Èç¹û¹Ø±Õ£¬Çë¸¶Öµnil
 
 --³å¿¨´ÙÏú»î¶¯Ïà¹ØÅäÖÃÐÅÏ¢
 GIFT_SAVE_MONEY = 1 --³å¿¨´ÙÏú»î¶¯¿ª¹Ø£¬Èç¹û¹Ø±Õ£¬Çë¸¶Öµnil
-MSG_SAVE_MONEY = "´Ë´Î´ÙÏú»î¶¯µÄÄÚÈÝÎª£º\n ³ä<color=red>1 ÕÅ¿¨<color> <color=red>60000<color> ½«ËÍ³ö <color=green>10<color> ÏÉ²ÝÂ¶" --³å¿¨´ÙÏú»î¶¯µÄÏà¹ØÐÅÏ¢
+MSG_SAVE_MONEY = "Néi dung cña ch­¬ng tr×nh nµy lµ:\n PhÝ: <color=red>1 lÇn 60000 <color> sÏ göi  <color=green>10<color> s­¬ng bÊt tö" --³å¿¨´ÙÏú»î¶¯µÄÏà¹ØÐÅÏ¢
 
 
