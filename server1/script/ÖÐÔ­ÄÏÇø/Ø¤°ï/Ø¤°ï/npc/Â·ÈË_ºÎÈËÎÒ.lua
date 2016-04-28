@@ -73,13 +73,13 @@ function oldentence()
 
 	local tbDes = {"§¸i nghÖ ®Çu s­/#daiyitoushi_main(6)", "Muèn thØnh gi¸o viÖc kh¸c/common_talk"};
 	
-	Say("GÇn ®©y ta cã rÊt nhiÒu viÖc gi¶i quyÕt, ng­¬i ®Õn ®©y cã viÖc g×.", getn(tbDes), tbDes);
+	Say("×î½üÎÒÓĞºÜ¶àÊÂÒª½â¾ö£¬ÄãT×m ta cã viÖc g×?", getn(tbDes), tbDes);
 end
 
 function common_talk()
 	local UTask_gb = GetTask(8)
 	if (GetTask(39) == 10) and (GetBit(GetTask(40),8) == 0) then				-- ÊÀ½çÈÎÎñ£ºÎäÁÖÏò±³
-		Talk(1,"","C¸i bang vµ Kim Quèc kh«ng ®éi trêi chung, h¬n n÷a Minh chñ cã lÖnh, t¹i h¹ kh«ng d¸m kh«ng nghe! Mêi ng­¬i vÒ chuyÓn lêi: C¸i Bang trªn d­íi sÏ nghe theo lÖnh cña ngµi.")
+		Talk(1,"","C¸i BangºÍ½ğ¹ú²»¹²´÷Ìì£¬¶øÇÒÃËÖ÷ÓĞÁî£¬ÔÚÏÂ²»ÄÜ²»´Ó¡£ÇëÄã»ØÈ¥×ª¸æ£ºC¸i BangÉÏÏÂ½«ÌıÄãµÄ.")
 		Uworld40 = SetBit(GetTask(40),8,1)
 		SetTask(40,Uworld40)
 	elseif (GetSeries() == 3) and (GetFaction() == "gaibang") then
@@ -99,7 +99,7 @@ function common_talk()
 		elseif (UTask_gb > 10*256) and (UTask_gb < 20*256) then		--10¼¶ÈÎÎñ½øĞĞÊ±µÄÆÕÍ¨¶Ô»°
 			Talk(1,"","Sao r­îu cßn ch­a mang ®Õn? LÑ ®i nµo, lÑ ®i!")
 		else
-			Talk(1,"","B¶ Töu §­¬ng Ca, Nh©n Sinh Kû Hµ.")
+			Talk(1,"","Tr­íc giê Th¸nh nh©n ®Òu phiÒn muén chØ cã nh­ ta ®©y míi vui vÎ th«i.")
 		end
 --	elseif (UTask_gb == 5*256+20) then			-- ×ªÃÅÅÉÍê³É
 --		Talk(1,"defection_complete","ºÎÈËÎÒ£ººÜºÃ£¬Æú°µÍ¶Ã÷¸üÊÇ´óÖÇ´óÓÂ¡£µ½¿¹½ğÇ°ÏßÉÏÈ¥Ö¤Ã÷ÄãµÄ³àµ¨ÖÒĞÄ°É£¡")
@@ -110,7 +110,7 @@ function common_talk()
 --	elseif (GetTask(4) == 70*256+10) and (HaveMagic(128) >= 0) then		-- ÌìÈÌÖØ·µÃÅÅÉ£¬ÊÕ»Ø¿ºÁúÓĞ»Ú
 --		Say("ºÎÈËÎÒ£º±¾°ïÓë½ğ¹úÊÄ²»Á½Á¢£¬Äã¾¹Ïë±³Æú±¾½ÌÍ¶¿¿½ğ¹ú£¿",2,"ÊôÏÂĞÄÒâÒÑ¾ö/defection_yes","¶Ô²»Æğ£¬ÊôÏÂÖª´íÁË/no")
 	else
-		Talk(1,"","B¶ Töu §­¬ng Ca, Nh©n Sinh Kû Hµ.")
+		Talk(1,"","Tr­íc giê Th¸nh nh©n ®Òu phiÒn muén chØ cã nh­ ta ®©y míi vui vÎ th«i.")
 	end
 end;
 ---------------------- ¼¼ÄÜµ÷ÕûÏà¹Ø ------------------------
@@ -139,18 +139,18 @@ function defection_complete()
 	SetCurCamp(1)
 	SetRank(37)
 	AddMagic(117)
-	Msg2Player("Hoan nghªnh b¹n gia nhËp C¸i bang,trë thµnh ®Ö tö kh«ng tói!")
+	Msg2Player("»¶Ó­Äã¼ÓÈëC¸i Bang£¬³ÉÎªÎŞ´üµÜ×Ó!")
 	Msg2Player("Häc ®­îc KiÕn Nh©n ThÇn Thñ, Diªn M«n Th¸c B¸t")
-	AddNote("Gia  nhËp C¸i bang, trë thµnh §Ö tö kh«ng tói! Häc ®­îc KiÕn Nh©n ThÇn Thñ, Diªn M«n Th¸c B¸t")
-	Msg2Faction("gaibang",GetName().."Cã thªm ng­êi cña Thiªn NhÉn gia nhËp, lùc l­îng C¸i bang ®· m¹nh thªm",GetName())
+	AddNote("¼ÓÈëC¸i Bang£¬³ÉÎªÎŞ´üµÜ×Ó£¬Ñ§µ½¼ûÈËÉñÊØ£¬ÑØÃÅÍĞ²§")
+	Msg2Faction("gaibang",GetName().."ÓĞÌìÈÌ½ÌÈË¼ÓÈëC¸i Bang£¬C¸i Bang¸ü¼ÓÇ¿´ó",GetName())
 end
 
 --------------- ÖØ·µÊ¦ÃÅÏà¹Ø ------------------------
 function goff_yes()
 	Talk(1,"","Tèt! nhí ®Êy gÆp chuyÖn bÊt b×nh, ph¶i ra tay nghÜa hiÖp ®ã!")
 	SetTask(8,70*256)
-	AddNote("Rêi khái C¸i bang, tiÕp tôc hµnh tÈu giang hå ")
-	Msg2Player("B¹n rêi khái C¸i bang, tiÕp tôc hµnh tÈu giang hå ")
+	AddNote("Àë¿ªC¸i Bang£¬¼ÌĞøĞĞ×ß½­ºş")
+	Msg2Player("ÄãÀë¿ªC¸i Bang£¬ĞĞ×ß½­ºş ")
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
@@ -163,8 +163,8 @@ end;
 function return_yes()
 	Talk(2,"","ChØ t¹i bæn bang chi c¸c kho¶n lín, th­êng kh«ng ®ñ xoay së, nÕu ng­¬i muèn trïng ph¶i bæn ph¸i th× ph¶i quyªn gãp 50000 l­îng.","§­îc! §Ö tö chuÈn bŞ tiÒn ngay ®©y.")
 	SetTask(8,70*256+20)
-	AddNote("Giao nép 50000 l­îng, trïng ph¶n C¸i bang.")
-	Msg2Player("Giao nép 50000 l­îng, trïng ph¶n C¸i bang.")
+	AddNote("½»50000Á½£¬ÖØ·µC¸i Bang.")
+	Msg2Player("½»50000Á½£¬ÖØ·µC¸i Bang.")
 end;
 
 function return_no()
@@ -186,8 +186,8 @@ function return_complete()
 		add_gb(70)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
 		Msg2Player("B¹n häc ®­îc tuyÖt häc trÊn ph¸i Tóy §iÖp Cuång Vò, vâ c«ng Tiªu Diªu C«ng")
 --		end
-		AddNote("§· ®­îc phĞp trë l¹i C¸i bang")
-		Msg2Player(GetName().."Trïng ph¶n C¸i bang, ®­îc phong lµ Cöu §¹i Tr­ëng L·o")
+		AddNote("ÔÊĞí·µ»ØC¸i Bang")
+		Msg2Player(GetName().."ÖØ·µC¸i Bang£¬±»·âÎª¾Å´ó³¤ÀÏ")
 	else
 		Talk(2,"","§õng nghÜ ta ®· say, ng©n l­îng th× ta nh×n râ l¾m, ®©y kh«ng ®ñ 5 v¹n l­îng mµ!","Xin lçi! Lµ t«i ®Õm nhÇm, ®Ó t«i kiÓm tra l¹i.")
 	end
@@ -221,7 +221,7 @@ function L10_prise()
 --	AddMagic(115)
 	add_gb(20)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
 	AddNote("Mua ®ñ 5 l¹i r­îu, hoµn thµnh nhiÖm vô cÊp 10, trë thµnh ChÊp §¹i ®Ö tö ")
-	Msg2Player("Chóc mõng b¹n! §­îc phong lµ ChÊp §¹i ®Ö tö! Häc ®­îc C¸i bang Ch­ëng ph¸p, C¸i bang Bæng ph¸p.")
+	Msg2Player("¹§Ï²£¬±»·âÎªÖ´´ü´óµÜ×Ó¡£Ñ§µ½C¸i BangÕÆ·¨£¬C¸i Bang°ô·¨.")
 end;
 
 function L50_get_yes()

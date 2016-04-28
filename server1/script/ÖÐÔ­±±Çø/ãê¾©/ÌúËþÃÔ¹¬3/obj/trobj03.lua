@@ -12,7 +12,7 @@ function main()
 			UTask_trsub01 = SetBit(UTask_trsub01,3,1)
 			SetTask(21, UTask_trsub01)
 			AddNote("Më ®­îc c¬ quan thø ba ")
-			Msg2Player("Më ®­îc B¶o r­¬ng ë tÇng thø ba. Më ®­îc c¬ quan thø ba ")
+			Msg2Player("´ò¿ªµÚÈý²ãÀïµÄ±¦Ïä£¬Më ®­îc c¬ quan thø ba ")
 			if (UTask_trsub01 == 7) then 			-- bin: 100 + 010 + 001
 				Talk(1,"","B¹n ®· ph¸ ®­îc c¬ quan tÇng 3, cøu ®­îc Phông HÊp Nh­.")
 				Msg2Player("B¹n ®· ph¸ ®­îc c¬ quan tÇng 3, cøu ®­îc Phông HÊp Nh­.")

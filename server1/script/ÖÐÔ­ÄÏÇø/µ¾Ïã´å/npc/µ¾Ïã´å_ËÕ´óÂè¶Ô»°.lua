@@ -8,43 +8,43 @@
 function main()
 	UTask_world43=GetTask(71)
 	if ((UTask_world43==0) and (GetLevel() >= 3)) then		-- ¼ÓÈëµÈ¼¶ÏŞÖÆ
-		Talk(2, "select", "Hõ! §øa con ngç nghŞch cña ta, ng­¬i muèn ta ph¶i thÕ nµo?")
+		Talk(2, "select", "ÎÒµ÷Æ¤µÄ¶ù×Ó£¬ÄãÏëÔõÃ´Ñù£¬ÓĞÊ²Ã´ÊÂ?")
 	elseif (UTask_world43==2) then
-		Talk(2, "", "Ta ®· khuyªn T« ®Ö cè g¾ng häc hµnh, ng­êi kh«ng nªn lo l¾ng.", "Tèt qu¸! L·o th©n kh«ng biÕt lÊy g× ®Ó c¶m ¬n, ®©y lµ Kim S¸ng D­îc, ng­¬i nhËn ®i!")
+		Talk(2, "", "ÎÒÈ°ËÕµÜÅ¬Á¦Ñ§Ï°£¬Äã²»ÓÃµ£ĞÄ.", "ºÜºÃ£¬ÎÒ²»¶®ÔõÃ´¸ĞĞ»Äã£¬ÕâÊÇ½ğ´¯Ò©£¬ÄãÄÃÆğ°É!")
 		AddItem(1,0,0,1,0,0,0)
 		AddItem(1,0,0,1,0,0,0)
 		AddItem(1,0,0,1,0,0,0)
 		SetTask(71,4)
-		AddNote("Nãi víi T« §¹i Ma, ®· thuyÕt phôc thµnh c«ng T« Trung ë nhµ, nhiÖm vô hoµn thµnh. ")
-		Msg2Player("Nãi víi T« §¹i Ma, ®· thuyÕt phôc thµnh c«ng T« Trung ë nhµ, nhiÖm vô hoµn thµnh. ")
-		Msg2Player("Cã 3 bao Kim S¸ng d­îc. ")
+		AddNote("ºÍËÕ´óÂèËµ£¬ÒÑËµ·şÁË¼ÒÖĞµÄËÕÖĞ£¬ÈÎÎñÍê³É. ")
+		Msg2Player("ºÍËÕ´óÂèËµ£¬ÒÑËµ·şÁË¼ÒÖĞµÄËÕÖĞ£¬ÈÎÎñÍê³É. ")
+		Msg2Player("ÓĞÈı°ü½ğ´¯Ò©. ")
 		AddRepute(6)
-		Msg2Player("Thanh thÕ giang hå cña b¹n ®­îc gia t¨ng 6 ®iÓm. ")
+		Msg2Player("ÄãµÄ½­ºşÃûÍûÔö¼Ó3µã. ")
 	elseif (UTask_world43==3) then
-		Talk(2, "", "§¹i Ma! Ta biÕt T« Trung cã chİ khİ, huynh Êy muèn giÕt ®Şch trªn chiÕn tr­êng, nam nhi chİ t¹i bèn ph­¬ng. H·y ®Ó huynh Êy lµm theo lı t­ëng cña m×nh.", "¤i, con ®· lín ta kh«ng thÓ gi÷ ®­îc! Nã cã chİ lín, ta lµm mÑ còng kh«ng thÓ ng¨n c¶n, c¸m ¬n ng­¬i ®· gióp ta hiÓu nã, Kim S¸ng D­îc nµy ng­¬i lÊy ®i!")
-		Msg2Player("Cã 3 bao Kim S¸ng d­îc. ")
+		Talk(2, "", "´óÂè£¬ÎÒÖªµÀËÕÖĞÓĞÖ¾Æø£¬ËûÏëµ½Õ½³¡É±µĞ£¬ÄĞ¶ùÖ¾ÔÚËÄ·½¡£ÈÃËû°´ÕÕ×Ô¼ºµÄÀíÏëÈ¥×ö°É.", "¤i, ¶ù×Ó´óÁË£¬²»ÄÜÁôÁË¡£ËûÓĞÖ¾Ïò£¬ÎÒÒ²²»ÄÜ×èÖ¹£¬Ğ»Ğ»Äã£¬Õâ¸ö½ğ´¯Ò©ÄãÄÃÈ¥°É!")
+		Msg2Player("ÓĞ3°ü½ğ´¯Ò©. ")
 		AddItem(1,0,0,1,0,0,0)
 		AddItem(1,0,0,1,0,0,0)
 		AddItem(1,0,0,1,0,0,0)
 		SetTask(71,5)
-		AddNote("Gióp T« §¹i Ma lı gi¶i sù lùa chän cña T« Trung, hoµn thµnh nhiÖm vô. ")
-		Msg2Player("Gióp T« §¹i Ma lı gi¶i sù lùa chän cña T« Trung, hoµn thµnh nhiÖm vô. ")
-		Msg2Player("Cã 3 bao Kim S¸ng d­îc. ")
+		AddNote("°ïÖúËÕ´óÂèÀí½âËÕÖĞµÄÑ¡Ôñ, ÈÎÎñÍê³É")
+		Msg2Player("°ïÖúËÕ´óÂèÀí½âËÕÖĞµÄÑ¡Ôñ, ÈÎÎñÍê³É")
+		Msg2Player("ÓĞ3°ü½ğ´¯Ò©. ")
 		AddRepute(4)
-		Msg2Player("Thanh thÕ giang hå cña b¹n ®· t¨ng lªn 4 ®iÓm. ")
+		Msg2Player("ÄãµÄ½­ºşÃûÍûÔö¼Ó4µã. ")
 	else	
-		Say("MÊy n¨m nay hai mÑ con ta vÊt v¶ sèng qua ngµy. Cø nghÜ ®Õn T­íng c«ng ®· tö trËn lµ ta chØ muèn khãc! Hy väng con ta ®­îc b×nh an v« sù!", 0)	
+		Say("ÕâĞ©Äê£¬ÎÒÃÇÄ¸×ÓÁ½Éú»î¼è¿à£¬Ïëµ½Õ½ËÀµÄÏà¹«£¬ÎÒ¾ÍÏë¿Ş£¬Ï£ÍûÎÒ¶ù×ÓÆ½°²ÎŞÊÂ", 0)	
 	end
 end;
 
 function select()
-Say("Nã vèn lµ ®øa nghiªm tóc miÖt mµi ®Ìn s¸ch,gÇn ®©y l¹i muèn tßng qu©n giÕt giÆc, rèt cuéc kh«ng biÕt nã nghÜ g× n÷a?", 2, "Ta gióp bµ ®i hái nã /yes", "ViÖc nµy ta còng kh«ng biÕt /no")
+Say("Ëû±¾À´¾ÍºÃÑ§£¬×î½üÓÖÏë´Ó¾üÉ±µĞ£¬Õæ²»¶®ËûÏëÊ²Ã´?", 2, "ÎÒ°ïÄãÈ¥ÎÊËû/yes", "Õâ¸öÎÒ²»¶®/no")
 end
 
 function yes()
 SetTask(71,1)
-AddNote("NhËn nhiÖm vô: Gióp T« §¹i Ma t×m hiÓu suy nghÜ cña con trai. ")
-Msg2Player("NhËn nhiÖm vô: Gióp T« §¹i Ma t×m hiÓu suy nghÜ cña con trai. ")
+AddNote("½ÓÈÎÎñ£º°ïËÕ´óÂèÁË½â¶ù×ÓµÄÏë·¨. ")
+Msg2Player("½ÓÈÎÎñ£º°ïËÕ´óÂèÁË½â¶ù×ÓµÄÏë·¨. ")
 end 
 
 function no()

@@ -9,35 +9,35 @@ function main()
 		if ((UTask_wu == 50*256+20) and (HaveItem(88) == 1)) then		-- ÈÎÎñ½øĞĞÖĞ
 			L40_prise()
 		elseif ((UTask_wu == 50*256) and (GetLevel() >= 50)) then		--50¼¶ÈÎÎñ
-			Talk(1,"L50_get","B¸ t¸nh 100 dÆm trong vïng nµy ®Òu ph¶i nép phİ ®Ó ®­îc Ngò §éc gi¸o cña chóng ta b¶o hé. Nh­ng mµ gÇn ®©y cã mét tªn gäi lµ L­u KhÊu, ®· tËp hîp ®å ®Ö ë Ngäc Hoa ®éng trªn nói Vò Di. H¾n l¹i d¸m leo lªn l­ng cäp, tung hoµnh kh«ng coi bæn gi¸o ra g×. Míi ®©y chóng ®· c­íp ®i Ngäc San H« cña bæn gi¸o. ChuyÖn nµy khiÕn cho ta thËt lµ mÊt mÆt. Kh«ng thÓ bá qua cho chóng!")
+			Talk(1,"L50_get","Õâ·½Ô²°ÙÀïµÄÀÏ°ÙĞÕ¶¼ÒªÏò±¾½Ì½»ÄÉ±£»¤·Ñ¡£¿ÉÊÇ×î½üÓĞÒ»Èº³öÃ»ÔÚÎäÒÄÉ½Óñ»ª¶´¸½½üµÄÁ÷¿Ü£¬¾¹¸ÒÀÏ»¢Í·ÉÏ¶¯ÍÁ£¬ÔÚ±¾½ÌµÄµØÅÌÉÏºá²åÒ»ÊÖ£¬°Ñ±¾¸ÃĞ¢¾´±¾½ÌµÄÓñÉºº÷¸øÇÀÁËÈ¥£¬ÕâÈÃ±¾½ÌÑÕÃæºÎ´æ£¡²»ÄÜ·Å¹ıËûÃÇ!")
 		else							-- ³£¹æ¶Ô»°
-			Talk(1,"","ChØ cÇn luyÖn thµnh vâ c«ng, th× kim ng©n mü n÷ sÏ tù ïn ïn mµ ®Õn ")
+			Talk(1,"","Ö»ÒªÁ·³ÉÎä¹¦£¬½ğÒøÃÀÅ®¾ÍÔ´Ô´¶øÀ´")
 		end
 	else
-		Talk(1,"","Nh¾c ®Õn con g¸i,ta l¹i nhí ®Õn c¸c c« n­¬ng cña Thóy Yªn m«n. ¤i! ThËt lµ ®Ñp! Kh«ng ngê con g¸i cña c« ta l¹i ®Ñp ®Õn nh­ vËy. Míi nghÜ ®Õn th× löa trong ng­êi ta l¹i bèc lªn råi! Khµ!Khµ! ")
+		Talk(1,"","Ëµµ½Å®º¢£¬ÎÒÏëµ½ÁË´äÑÌÃÅµÄ¹ÃÄï¡£°¥Ñ½£¡ÕæÊÇºÃ¿´£¡Ïë²»µ½ËıµÄ¹ÃÄïÕâÃ´ºÃ¿´¡£Ö»ÒªÏëµ½ÎÒĞÄÖĞµÄ»ğ¾Í°´ÄÍ²»×¡¡£")
 	end
 end;
 
 function L50_get()
-	Say("Ng­¬i h·y ®i d¹y cho bän L­u KhÊu kia mét bµi häc, cho chóng thÊy ®­îc sù lîi h¹i cña bæn m«n","Tu©n lÖnh!/L50_get_yes")
+	Say("ÄãÈ¥½ÌÑµ½ÌÑµÕâ°ïÁ÷¿Ü£¬ÒªËûÃÇÖªµÀ±¾½ÌµÄÀ÷º¦!/L50_get_yes","ËûÃÇÍ¬»ïÌ«¶à£¬ÊôÏÂÖ»ÅÂ/L50_get_no")
 end;
 
 function L50_get_yes()
 	SetTask(10,50*256+10)
-	AddNote("§Õn Ngäc Hoa ®éng trªn Vò Di s¬n s¬n ®¸nh L­u KhÊu ®Ó lÊy l¹i Ngäc San H«. ")
-	Msg2Player("§Õn Ngäc Hoa ®éng trªn Vò Di s¬n s¬n ®¸nh L­u KhÊu ®Ó lÊy l¹i Ngäc San H«. ")
+	AddNote("µ½ÎäÒÄÉ½Óñ»ª¶´´ò°ÜÁ½ÃûÁ÷¿ÜÄÃ»ØÓñÉºº÷¡£")
+	Msg2Player("µ½ÎäÒÄÉ½Óñ»ª¶´´ò°ÜÁ½ÃûÁ÷¿ÜÄÃ»ØÓñÉºº÷¡£")
 end;
 
 function L50_get_no()
 end;
 
 function L40_prise()
-	Talk(2,"","Ng­¬icã thÓ ®¬n th­¬ng ®éc m· mµ ®o¹t l¹i ®­îc Ngäc San H«, qu¶ lµ b¶n lÜnh bÊt phµm. Bæn tr¹i chñ xem ng­¬i®óng lµ mét kú tµi,phong cho ng­¬ilµm Co §éc T«n Gi¶. Sau nµy ng­¬icã thÓ thay ta mµ ®iÒu hµnh mäi viÖc trong tr¹i","Tu©n lÖnh!")
+	Talk(2,"","ÄãÄÜ¶À´³»¢Ñ¨£¬¶á»ØÓñÉºº÷£¬¹ûÈ»ÓĞµã±¾ÊÂ£¬±¾Õ¯Ö÷¿´ÄãÊÇ¸ö¿ÉÔìÖ®²Ä£¬¾ÍÉıÄãÎª¹Æ¶¾×ğÕß°É£¡²»¹ı£¬ÄãÒÔºóÒªºÃºÃÌæ±¾Õ¯Ö÷°ìÊÂ","×ğÁî!")
 	SetTask(10,60*256)
 	DelItem(88)
 	SetRank(54)
 --	AddMagic(72)
 	add_wu(60)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	AddNote("Mang Ngäc San H« vÒ cho Thang BËt, ®­îc th¨ng lµ Co §éc T«n Gi¶ ")
-	Msg2Player("Chóc mõng B¹n! §· ®­îc th¨ng lµm Co §éc T«n Gi¶. Häc ®­îc vâ c«ng Xuyªn T©m §éc Thİch ")
+	AddNote("´ø»ØÓñÉºº÷¸øÌÀåö£¬½úÉıÎª¹Æ¶¾×ğÕß")
+	Msg2Player("¹§Ï²Äã£¡ÒÑ½úÉıÎª¹Æ¶¾×ğÕß¡£Ñ§»á´©ĞÄ¶¾´Ì")
 end;

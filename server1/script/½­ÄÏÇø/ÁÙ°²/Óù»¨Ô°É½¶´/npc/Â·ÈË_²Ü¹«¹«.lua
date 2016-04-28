@@ -4,21 +4,21 @@
 function main()
 	UTask_gb = GetTask(8)
 	if (UTask_gb == 50*256+20) and (HaveItem(199) == 1) then		-- 50¼¶ÈÎÎñ£¬µÚÒ»´Î½ø¹¬
-		Talk(3,"L50_after1","VŞ c«ng c«ng nµy! Ta muèn vµo gÆp Hoµng th­îng. Cã mét vËt quan träng muèn giao cho Hoµng th­îng. "," Hoµng th­îng hiÖn ®ang nghØ ng¬i. Cø giao vËt ®ã cho ta. Ta sÏ chuyÓn ®Õn cho Hoµng th­îng","µ…chuyÖn nµy… ","Sao h¶? Kh«ng tin t­ëng ta µ? Còng kh«ng chŞu hái tr­íc xem Tµo c«ng c«ng ta lµ ng­êi nh­ thÕ nµo. Hoµng th­îng tõ nhá ®Õn lín ®Òu do ta s¨n sãc. LÏ nµo ta l¹i ®i g¹t ng­¬i sao? ","VËy còng ®­îc!")
+		Talk(3,"L50_after1","ÕâÎ»¹«¹«£¬ÎÒÏë°İ¼û»ÊÉÏ£¬ÓĞÒ»¼şÖØÒªµÄ¶«Î÷Òª½»¸øËû. "," »ÊÉÏÕıÔÚĞİÏ¢£¬Äã°Ñ¶«Î÷½»¸øÎÒ¾ÍĞĞÁË£¬ÎÒ»áÌæÄã×ª½»µÄ","ÕâÑù°¡.......","ÔõÃ´£¿ÄãĞÅ²»¹ıÎÒ£¿Ò²²»´òÌı´òÌıÎÒ²Ü¹«¹«ÊÇÊ²Ã´ÈË£¬»ÊÉÏÊÇÎÒ´ÓĞ¡´ø´óµÄ£¬ÄÑµÀÎÒ»¹»áÆ­Äã²»³É? ","ÄÇºÃ°É!")
 	elseif (UTask_gb == 50*256+50) then		--50¼¶ÈÎÎñ£¬µÚ¶ş´Î½ø¹¬´ò°ÜÁËÎÀÊ¿Ö®ºó
-		Talk(7,"L50_after2","Xin h·y tha m¹ng!","Nãi! Bøc ®Şa ®å Trung Nguyªn hiÖn ®ang ë ®©u?","ë chç ta! ë chç ta!","Ó¢ĞÛXin h·y tha m¹ng!","Xin h·y tha m¹ng!","Nh­ng mµ ta l¹i kh«ng muèn khiÕn cho Hoµng th­îng kinh sînªn míi tha cho c¸i m¹ng cña ng­¬i. Ng­¬i h·y tù gi÷ lÊy c¸i m¹ng cña m×nh. NÕu nh­ cßn c©u kÕt víi bän ng­êi Kimm·i quèc cÇu vinh th× thiªn h¹ còng sÏ kh«ng tha cho ng­¬i. ")
+		Talk(7,"L50_after2","ÈÄÃü!","Ëµ£¡ÖĞÔ­µØĞÎÍ¼ÔÚÄÄÀïÔÚÎÒÕâ£¡ÔÚÎÒÕâ!","±¾À´ÎÒÒªÉ±ÁËÄã!","Ó¢ĞÛÈÄÃü!","µ«ÊÇÎÒ²»ÏëÈÃ»ÊÉÏÊÜ¾ª£¬¾Í¹ÃÇÒÈÄÄãÒ»Ãü£¬ÄãÒªºÃ×ÔÎªÖ®£¡Èç¹ûÔÙ¸Ò¹´½á½ğÈË£¬Âô¹úÇóÈÙ£¬ÌìÏÂÈË¶¼²»»áÈÄÄã. ","ÊÇ£¡ÊÇ£¡")
 	elseif (UTask_gb == 50*256+40) then			-- 50¼¶ÈÎÎñ£¬µÚ¶ş´Î½øÎ´´òÎÀÊ¿
-		Talk(1,"","Kh«ng ®­îc qua ®©y! VÖ sÜ! Mau ®Õn cøu mang!")
+		Talk(1,"","²»ÄÜ¹ıÈ¥£¡ÎÀÊ¿£¡¿ìÀ´¾ÈÃü!")
 	else
-		Talk(1,"","Cã thİch kh¸ch! VÖ sÜ!")
+		Talk(1,"","ÓĞ´Ì¿Í!ÎÀÊ¿£¡")
 		SetFightState(0)
 		NewWorld(176, 1627, 3206)
 	end
 end;
 
 function L50_after1()
-	AddNote("Giao bøc ®Şa ®å cho Tµo c«ng c«ng. ")
-	Msg2Player("Giao bøc ®Şa ®å cho Tµo c«ng c«ng. ")
+	AddNote("½»µØÍ¼¸ø²Ü¹«¹«. ")
+	Msg2Player("½»µØÍ¼¸ø²Ü¹«¹«. ")
 	DelItem(199)
 	SetTask(8,50*256+30)
 	SetFightState(0)
@@ -27,8 +27,8 @@ end
 
 function L50_after2()
 	AddEventItem(199)
-	AddNote("§o¹t l¹i bøc ®Şa ®å Trung Nguyªn. ")
-	Msg2Player("§o¹t l¹i bøc ®Şa ®å Trung Nguyªn. ")
+	AddNote("¶áÀ´ÖĞÔ­µØÍ¼. ")
+	Msg2Player("¶áÀ´ÖĞÔ­µØÍ¼. ")
 	SetFightState(0)
 	NewWorld(176, 1627, 3206)
 end

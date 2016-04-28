@@ -10,25 +10,25 @@ function education_wushi()
 	Uworld1065 = nt_getTask(1065)      -- ¼ÇÂ¼ÏÊÈâÊıÁ¿µÄ±äÁ¿
 	local name = GetName()  
 	if ( Uworld1000 == 10 ) and ( Uworld1065 >= 3 ) then   
-		Talk(1,"Uworld1000_end1",name.."<#>:  S­ phô! Long thñ lÜnh b¶o ta ®Õn t×m «ng. §©y lµ thŞt t­¬i cña «ng.")
+		Talk(1,"Uworld1000_end1",name.."<#>£ºÊ¦¸µ£¬ÁúÊ×ÁìÈÃÎÒÀ´ÕÒÄã¡£ÕâÊÇ¸øÄúÉÓµÄÏÊÈâ¡£")
 	elseif (( Uworld1000 == 20 ) or ( Uworld1000 == 30 )) then  
-		Talk(1,"Uworld1000_end1",name.."<#>:  S­ phô! Long thñ lÜnh b¶o ta ®Õn t×m «ng. §©y lµ thŞt t­¬i cña «ng.")
+		Talk(1,"Uworld1000_end1",name.."<#>£ºÊ¦¸µ£¬ÁúÊ×ÁìÈÃÎÒÀ´ÕÒÄã¡£ÕâÊÇ¸øÄúÉÓµÄÏÊÈâ¡£")
 	elseif (( Uworld1000 == 10 ) or ( Uworld1000 == 20 ) or ( Uworld1000 == 30 )) and ( Uworld1065 < 3 ) then 
-		Talk(1,"","A! ThŞt t­¬i còng kh«ng ®ñ! B»ng h÷u! Ng­¬i kh«ng cã thµnh ı chót nµo. H·y ®i lÊy 3 miÕng thŞt t­¬i vÒ.")
+		Talk(1,"","ÎäÊ¦£º°¡£¬ÏÊÈâ¶¼²»¹»£¬ÅóÓÑÄãÌ«Ã»ÒâË¼ÁË°É¡£ÏÈÄÃÈı¿éÀ´¡£")
 	elseif ( Uworld1000 == 180 ) and ( Uworld1065 < 5 ) then
-		Talk(1,"","Sao? L¹i quªn ®­a thŞt t­¬i cho ta, lÊy ®ñ 5 miÕng råi quay l¹i.")
+		Talk(1,"","Õ¦£¿ÓÖÍü¼Ç¸øÎÒ´øÏÊÈâÀ­£¬´Õ×ãÎå¿éÔÙÀ´¡£")
 	elseif ( Uworld1000 == 180) or ( Uworld1000 == 190 ) then
 		if ( Uworld1000 == 180 and Uworld1065 >= 5 ) then
 			Uworld1065 = Uworld1065 - 5
 			nt_setTask(1065,Uworld1065)
 		elseif ( Uworld1000 == 180 ) then
-			Talk(1,"no","Sao? L¹i quªn ®­a thŞt t­¬i cho ta, lÊy ®ñ 5 miÕng råi quay l¹i.")
+			Talk(1,"no","Õ¦£¿ÓÖÍü¼Ç¸øÎÒ´øÏÊÈâÀ­£¬´Õ×ãÎå¿éÔÙÀ´¡£")
 		end
 			nt_setTask(1000,190) --»·½Ú10start
 			Talk(10,"Uworld1000_good4",
-			name.."<#>:  S­ phô.","Ta kh«ng d¸m nhËn, ta vµ ng­¬i kh«ng ph©n lín nhá. Sao? L¹i ®em thŞt t­¬i ®Õn! Ha ha!",name.."<#>:  Long Ngò thËt sù khiÕn ng­êi tøc giËn.","õ õ! ThŞt ngon! ThŞt ngon.",name.."<#>:  S­ phô! Con ®ang nãi chuyÖn víi ng­êi mµ ","Ha ha...Long §Çu Nhi lµ ng­êi th¼ng th¾n, thËt ra y v× tèt cho ng­¬i mµ th«i. Kh«ng gi¸o huÊn ng­¬i nghiªm kh¾c sau nµy ra giang hå chÕt kh«ng kŞp biÕt v× sao chÕt!",name.."<#>:  Nh­ng mµ «ng Êy nãi nÆng qu¸.","Vâ s­: B¹n trÎ, mäi chuyÖn nªn nhŞn, chØ cã quyÕt t©m luyÖn tËp nh­ kim cang bÊt ho¹i míi cã thÓ lµm nªn ®¹i sù.",name.."<#>:  A! Th× ra lµ thÕ.","Vâ s­: ë trong th«n l©u råi ch¾c ng­¬i còng buån. Cã muèn kÕt giao vµi vŞ b»ng h÷u kh«ng?",name.."<#>:  Muèn chø!","H·y Ên [F6] më giao diÖn h¶o h÷u, Ên nót phİa d­íi ®Ó t×m kiÕm, hoÆc cã thÓ chän tªn ng­êi ch¬i xung quanh... HoÆc cã thÓ Ên [Ctrl] + chuét ph¶i trªn nguêi cña ®èi ph­¬ng, chän: h¶o h÷u")
+			name.."<#>£ºÊ¦¸µ¡£","ÎäÊ¦£ºÍòÍò²»¸Òµ±£¬ÄãÎÒÆ½±²ÂÛ½»¡£Õ¦£¿ÓÖÄÃÈâÀ´À­£¬ºÇºÇ£¬ºÃ£¡",name.."<#>£ºÁúÎåÊµÔÚÈÃÈËÆø·ß¡£","ÎäÊ¦£º¶÷¶÷£¬ºÃÈâ£¬ºÃÈâ¡£",name.."<#>£ºÊ¦¸µ£¬ÎÒÔÚºÍÄãËµ»°ÄØ¡£","ÎäÊ¦£º¹ş¹ş£¬ÁúÍ·¶ùÎªÈË¹¢Ö±£¬ÆäÊµÊÇÎªÄãºÃ¡£Ã»ÓĞÑÏ¸ñµÄÑµÁ·£¬½«À´³ö½­ºşËÀµÄ¿ì°¡¡£",name.."<#>£º¿ÉËûËµ»°Ò²Ì«³åÁË¡£","ÎäÊ¦£ºÄêÇáÈË£¬ÍòÊÂĞèÈÌ£¬Ö»ÓĞÄ¥Á·³ö½ğ¸Õ²»»µµÄ¶¨Á¦£¬Äã²ÅÄÜ×ö³É´óÊÂ¡£",name.."<#>£ºÅ¶£¬Ô­À´Èç´Ë¡£","ÎäÊ¦£º²»ÂŞàÂ£¬ÔÚ´å×ÓÀï´ôÕâÃ´¾ÃÄã±ØÈ»Ò²ÃÆÁË¡£Ïë²»Ïë½»¼¸¸öÅóÓÑ£¿",name.."<#>£ºËæ±ã¡£","ÎäÊ¦£º°´F6´ò¿ªºÃÓÑ½çÃæ£¬µã»÷ÏÂ·½µÄ²éÕÒ°´Å¥£¬¾Í¿ÉÔÚÍæ¼ÒĞÕÃûÖĞÑ¡Ôñ£¬»òÕß×Ô¼º¾«È·¶¨Î»¡£µ±È»£¬Ò²¿ÉÒÔ°´×¡ctrlºÍÊó±êÓÒ¼üµ½¶Ô·½ÉíÉÏ£¬ÔÚµ¯³ö²Ëµ¥ÖĞÑ¡ÔñºÃÓÑÑ¡Ïî¡£")
 	else 
-		Talk(1,"","Nam b¾c ®Òu cã nh÷ng phong tôc riªng, b¹n ph¶i häc nhiÒu míi cã thÓ tån t¹i!")
+		Talk(1,"","×ßÄÏ´³±±¹ßÁË£¬ÕæÒªÏĞÏÂÀ´»¹ÊÇ²»Ï°¹ß¡£")
 	end
 end
 
@@ -38,16 +38,16 @@ function zboss()
 	local name = GetName()  
 		if ( Uworld1000 == 120 ) or ( Uworld1000 == 130 ) then
 			nt_setTask(1000,130) --»·½Ú7start
-			Describe(DescLink_ZaHuoPu.."<#>:  B¹n trÎ t×m ta cã viÖc g×?<enter>"
-			..name.."<#>:  Long thñ lÜnh b¶o ta ®Õn gÆp «ng.<enter>A! Tªn chÕt tiÖt ®ã l¹i sai ng­¬i ®Õn ph¸ ta! Ta kh«ng cã g× ®Ó d¹y ng­¬i c¶!<enter>"
-			..name.."<#>:  Sao l¹ vËy? <enter> Mµ nµy! Ng­¬i sau nµy hµnh tÈu giang hå cã thÓ sÏ nghe nãi ®Õn 'Thiªn Hoµng Long Khİ...<enter>"
-			..name.."<#>:  Thiªn Hoµng Long Khİ?<enter> §ã lµ bé ¸o gi¸p thÇn bİ do TÇn Thñy Hoµng chiªu tËp thî rÌn giái cña 7 n­íc lµm nªn. Nghe nãi bªn trong Èn chøa bİ mËt rÊt lín<enter>"
-			..name.."<#>:  Hö?<enter> Cô thÓ th× ta kh«ng râ! µ ®óng råi! Ta cã Thæ §Şa Phï, sau nµy khi ng­¬i luyÖn c«ng mÖt mái cã thÓ sö dông nã ®Ó lËp tøc quay vÒ thµnh hoÆc th«n!<enter>"
-			..name.."<#>:  Cã thø nµy thËt tèt! <enter> TÆng ng­¬i 2 tÊm, nÕu kh«ng tªn chÕt tiÖt kia l¹i nãi ta İch kû! <enter>"
-			..name.."<#>:  Ai? µ! Long ®Çu lÜnh h¶? <enter>B¹n trÎ h·y cè g¾ng nhĞ!",
-			2,"Ta muèn xem bøc häa ®å cña Thiªn Hoµng Long Khİ /Uworld1000_tianhuanglongqi","KÕt thóc ®èi tho¹i/Uworld1000_high7")
+			Describe(DescLink_ZaHuoPu.."<#>£ºÄêÇáÈË£¬ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÂğ¡£<enter>"
+			..name.."<#>£ºÁúÊ×ÁìÈÃÎÒÀ´ÕÒÄúÑ§µã¶«Î÷¡£<enter>ÔÓ»õÆÌÀÏ°å£ººÇºÇ£¬ÄÇ¸öËÀÈË£¬ÓÖ´ò·¢Ğ¡ÅóÓÑ¹ıÀ´ĞßÎÒ¡£ÎÒÄÄÀïÓĞÊ²Ã´¶«Î÷¿É½Ì¸øÄã°¡¡£<enter>"
+			..name.."<#>£ºÄúÌ«¿ÍÆøÁË¡£<enter>ÔÓ»õÆÌÀÏ°å£º»°Ëµ»ØÀ´£¬ÄãÒÔºóĞĞ×ß½­ºş£¬¿ÉÄÜ»áÌıµ½¹ØÓÚ¡®Ìì»ÍÁúÆ÷¡¯µÄ´«ÎÅ¡£<enter>"
+			..name.."<#>£ºÌì»ÍÁúÆ÷£¿<enter>ÔÓ»õÆÌÀÏ°å£º¶÷£¬ÄÇÊÇÒ»Ì×ÇØ³¯»ÊµÛÕ÷ÕÙÆß¹úÃû½³´òÔìµÄ¿ø¼×£¬¾İËµÀïÃæÒş²Ø×Å¾Ş´óÃØÃÜ¡£<enter>"
+			..name.."<#>£ºÅ¶£¿<enter>ÔÓ»õÆÌÀÏ°å£º¾ßÌåÎÒÒ²²»Çå³ş¡£Å¶£¬¶ÔÁË£¬ÎÒÕâÀïÓĞĞ©»Ø³Ç·û£¬Äã½ñºóÔÚÓëÒ°ÊŞ×÷Õ½Ê±£¬Ò»µ©Æ£±¹ÁË¿ÉÒÔÊ¹ÓÃËü»Øµ½³ÇÊĞ»òÕßÏçÕòÀï¡£<enter>"
+			..name.."<#>£ºÓĞÕâÑùµÄºÃ¶«Î÷£¿<enter>ÔÓ»õÆÌÀÏ°å£ºÊÇ°¡£¬À´£¬ËÍÄãÁ½ÕÅ£¬ÔÙÍâËÍĞ¬×ÓÒ»Ë«£¬·ñÔòÄÇ¸öËÀÈËÓÖµÃËµÎÒĞ¡ÆøÁË¡£<enter>"
+			..name.."<#>£ºË­°¡£¿°¡£¡ÁúÊ×Áì£¿<enter>ÔÓ»õÆÌÀÏ°å£ººÇºÇ£¬Ğ¡ÅóÓÑÄã¼ÓÓÍÅ¶¡£",
+			2,"ÎÒÒª¿´¿´Ìì»ÍÁúÆ÷µÄÍ¼Ö½/Uworld1000_tianhuanglongqi","½áÊø¶Ô»°/Uworld1000_high7")
 		else 
-			Talk(1,"","Phiªu b¹t giang hå ch¼ng b»ng ë nhµ sèng nhµn nh· thÕ nµy!")
+			Talk(1,"","ÔÓ»õÆÌÀÏ°å£º³öÈ¥´³µ´Ê²Ã´½­ºş°¡£¬ÔÚ¼ÒÀÏÊµ¹ı»î¶àºÃ¡£")
 		end
 end
 
@@ -57,9 +57,9 @@ function yboss()
 	local name = GetName()  
 	if ( Uworld1000 == 80 ) or ( Uworld1000 == 90 ) then
 		nt_setTask(1000,90) --»·½Ú5start
-		Talk(9,"Uworld1000_high5","Kh¸ch quan cÇn g×?",name.."<#>:  Ta kh«ng cã tiÒn, lµ Long thñ lÜnh b¶o  ta ®Õn t×m «ng.","Ngò Gia b¶o ng­¬i ®Õn µ? Ta hiÓu råi! ThËt ra ta còng kh«ng cã g× ®Ó d¹y, tr­íc tiªn tÆng ng­¬i 1 İt d­îc d­îc phÈm, cã lóc h÷u dông",name.."<#>:  C¶m ¬n.","§õng kh¸ch s¸o! Nªn cè g¾ng! BiÕt ®©u sau nµy ng­¬i sÏ trë thµnh mét ®¹i hiÖp, cã chç ®Ó ta n­¬ng nhê'",name.."<#>:  ¤ng kh¸ch s¸o råi.","Sau nµy cã th­¬ng tËt, bÖnh ho¹n g× cø ®Õn t×m ta! NÕu muèn mua sè l­îng lín cã thÓ Ên phİm [shift] vµ nhÊn chuét ph¶i",name.."<#>:  §­îc, ta biÕt råi.","Ng­¬i h·y ®i t×m thî rÌn ® ") 
+		Talk(9,"Uworld1000_high5","Ò©ÆÌÀÏ°å£º¿ÍÈËºÃ°¡£¬ÄúÒªµãÊ²Ã´¡£",name.."<#>£ºÎÒÉíÉÏÃ»Ê²Ã´Ç®£¬ÊÇÁúÊ×ÁìÈÃÎÒÀ´ÕÒÄãµÄ¡£","Ò©ÆÌÀÏ°å£ºÅ¶£¬ÎåÒ¯ÈÃÄãÀ´µÄ¡£ÕâÑùÎÒÃ÷°×ÁË¡£ÆäÊµÒ²Ã»Ê²Ã´¿É½ÌµÄ£¬ÏÈËÍÄãµãÒ©Æ·ÒÔ±¸²»Ê±Ö®Ğè°É¡£",name.."<#>£º¶àĞ»Äã¡£","Ò©ÆÌÀÏ°å£º²»ÓÃ¿ÍÆø£¬³öÃÅÔÚÍâË­ÄÜÃ»¸öÄÑ´¦£¬ºÃºÃÓÃ¹¦°É£¬Ëµ²»¶¨½«À´Äã³ÉÁË´óÏÀ£¬ÎÒ»¹ÓĞĞèÒªÑöÕÌµÄµØ·½¡£",name.."<#>£ºÄúÌ«¿ÍÆøÁË¡£","Ò©ÆÌÀÏ°å£ºÒÔºóÓĞÊ²Ã´ÉË»¼Ö»¹ÜÀ´ÕÒÎÒ£¬Èç¹ûÏëµ¥¸ö¹ºÂò£¬¿ÉÒÔ°´×¡shift¼ÓÊó±êÓÒ¼ü¡£",name.."<#>£ººÃ£¬ÎÒÖªµÀÁË¡£","Ò©ÆÌÀÏ°å£º¶÷£¬È¥ÕÒ´åÕòÀïµÄÌú½³°É¡£") 
 	else 
-		Talk(1,"","Lóc bŞ th­¬ng nhí uèng thuèc, phßng bÖnh h¬n ch÷a bÖnh.")
+		Talk(1,"","Ò©ÆÌÀÏ°å£ºÊÜÉËµÄÊ±ºòÇ§Íò¼ÇµÃ·şÒ©£¬Ğ¡²¡²»ÖÎ£¬´ó²¡ÄÑÒ½°¡¡£")
 	end
 end
 
@@ -69,9 +69,9 @@ function tboss()
 	local name = GetName() 
 	 	if ( Uworld1000 == 100 ) or ( Uworld1000 == 110 ) then
 			nt_setTask(1000,110) --»·½Ú6start
-			Talk(11,"Uworld1000_high6"," A! Ng­¬i ®Õn råi!",name.."<#>:  Uhm! Chİnh t¹i h¹!","Muèn mua thø g×?",name.."<#>:  Ta ®Õn hái th¨m tin tøc.","Ng­êi cña Ngò Gia?",name.."<#>:  §óng vËy.","Ta binh khİ nµo còng cã. ChiÕu theo Ngò hµnh mµ chän binh khİ sÏ cã thÓ kİch ho¹t c¸c thuéc tİnh Èn",name.."<#>:  VËy sao!","Ng­¬i nhÊn [F4] ®Ó më hµnh trang, tiÕp theo nhÊn [F3] ®Ó më giao diÖn trang bŞ, Ên gi÷ chuét tr¸i kĞo thanh kiÕm vµo phÇn giao diÖn trang bŞ lµ cã thÓ sö dông",name.."<#>:  C¸m ¬n «ng.","§õng kh¸ch s¸o! B©y giê ®i t×m chñ t¹p hãa ®i!")
+			Talk(11,"Uworld1000_high6","Ìú½³£ºÓ´£¬ÄúÀ´À­¡£",name.."<#>£ººÇºÇ£¬¶÷£¬À´ÁË¡£","Ìú½³£ºÏëÒªµã¶ùÉ¶£¿",name.."<#>£ºÎÒÊÇÀ´´òÌıÏûÏ¢µÄ¡£","Ìú½³£ºÎåÒ¯µÄÈË£¿",name.."<#>£ºÊÇ¡£","Ìú½³£ºÄÇ¾ÍºÃ°ì¡£ÎÒÕâÊ²Ã´ÎäÆ÷¶¼ÓĞ£¬°´ÕÕÄãµÄÎåĞĞÑ¡ÔñÎäÆ÷»áÓĞ¿ÉÄÜ¼¤»î°µ²ØÊôĞÔÅ¶¡£",name.."<#>£ºÊÇÂï¡£","Ìú½³£ºÄã°´×¡F4´ò¿ª±³°ü£¬°´F3´ò¿ª×°±¸½çÃæ£¬ÓÃÊó±ê×ó¼ü°ÑÎäÆ÷×°±¸µ½ÎäÆ÷À¸Àï¾Í¿ÉÒÔÊ¹ÓÃÁË¡£",name.."<#>£ºĞ»Ğ»Äú¡£","Ìú½³£º±ğ¿ÍÆø£¬ÕÒÔÓ»õÆÌÀÏ°åÄïÈ¥°É£¬Ëı¿ÉÊÇ¸öÃÀÈË¡£")
 		else
-			Talk(1,"","Ng­¬i nªn mua binh khİ phßng th©n.")
+			Talk(1,"","Ìú½³£ºÂò°Ñ±øÆ÷·ÀÉíÌ«ÓĞ±ØÒªÁË£¬·ñÔòË­¼ûÄã¶¼µÃ´òÄãÖ÷Òâ¡£")
 		end
 end    
 
@@ -81,12 +81,12 @@ function education_tiejiang()
 	local name = GetName()  
 	if ( Uworld1000 == 380 ) or ( Uworld1000 == 390 ) then
 		nt_setTask(1000,390) --»·½Ú20start
-		Talk(12,"Uworld1000_repair","ThÇn binh t¸i xuÊt, Thiªn h¹ sÏ cµng hçn lo¹n.Thêi ®¹i lo¹n l¹c nµy bao giê míi kÕt thóc ®©y.",name.."<#>:  Tiªn sinh, «ng nãi g× vËy?","Lµ ng­êi cña Ngò Ca ph¸i ®Õn?",name.."<#>:  §óng vËy.","Thiªn Hoµng Long Khİ ®· t¸i xuÊt giang hå, kh«ng biÕt sÏ ®Ém m¸u bao l©u n÷a.",name.."<#>:  'Thiªn Hoµng Long Khİ' lµ c¸i g×?","Sau nµy ng­¬i sÏ râ. Ngò Ca cã ®Ó 1 bé ¸o gi¸p ë ®©y, ng­¬i lÊy ®i.",name.."<#>:  C¸m ¬n «ng.","Thø nµy cÊt trong mËt thÊt l©u ngµy nªn ®· rØ sĞt, lÊy chót dÇu lau nã ®i.",name.."<#>:  VËy lµm thÕ nµo?","Sau nµy nÕu trang bŞ cña ng­¬i bŞ h­, nhÊn vµo ch÷ söa ë d­íi giao diÖn trang bŞ, sau ®ã nhÊp vµo mãn ®å ng­¬i muèn söa.",name.."<#>:  VËy ta thö xem")
+		Talk(12,"Uworld1000_repair","Ìú½³£ºÉñÆ÷ÒÑ³ö£¬ÌìÏÂ±ØÈ»¸ü¼Ó»ìÂÒ¡£Õâ²ÔÃ£µÄÊ±´ú£¬ºÎÊ±²Å»áÖÕ½á°¡¡£",name.."<#>£ºÏÈÉú£¬ÄúÔÚËµÊ²Ã´£¿","Ìú½³£ºÄãÊÇÎå¸çÅÉÀ´µÄ£¿",name.."<#>£ºÊÇ¡£","Ìú½³£º´«ËµÖĞÊ¼»ÊµÛÇãÒ»¹úÖ®Á¦´òÔìµÄ¡®Ìì»ÍÁúÆ÷¡¯ÓÖÔÙÏÖ½­ºş£¬²»ÖªµÀ½«ÌôÆğ¶àÉÙĞÈ·çÑªÓê°¡¡£",name.."<#>£º¾¿¾¹Ê²Ã´ÊÇ¡®Ìì»ÍÁúÆ÷¡¯£¿","Ìú½³£ºÕâ¸öÒÔºóÄã×Ô»áÖªµÀ¡£À´£¬ÕâÊÇÎå¸ç´æÔÚÎÒÕâÀïµÄÒ»¼şîø¼×£¬ÄãÄÃÈ¥°É¡£",name.."<#>£º¶àĞ»Äú¡£","Ìú½³£ºÕâ¶«Î÷²ØÔÚÃØÊÒÈÕ¾Ã£¬ÒÑ¾­ÓĞĞ©ĞâÊ´£¬Äã¿ÉÒÔÔÚÎÒÕâÀïÉÏÓÍ´òÄ¥Ò»·¬¡£",name.."<#>£ºÅ¶£¬ÄÇ¾ßÌåÔõÃ´×ö£¿","Ìú½³£ºÔÙ´ÎºÍÎÒÁÄÌì£¬µã»÷¹ºÂò×°±¸ÏÂÃæÄÇ¸öĞŞ×Ö£¬¾Í¿ÉÒÔÓÃ¼ıÍ·À´µã»÷ÄãÒªĞŞÀíµÄ×°±¸ÁË¡£",name.."<#>£ºÄÇÎÒĞŞĞŞ°É¡£")
 	elseif ( Uworld1000 == 400 ) or ( Uworld1000 == 410 ) then  --È±ÉÙ¶Ô¿ø¼×ÊÇ·ñĞŞÀíºÃµÄÅĞ¶Ï
 		nt_setTask(1000,410) --»·½Ú21start
-		Talk(9,"Uworld1000_luck1","Thî rÌn: Phµo, ®· söa xong råi.",name.."<#>:  Qu¶ nhiªn lµ kh¸c h¼n!","Ng­¬i thÊy thuéc tİnh Èn trªn trang bŞ ®· kİch ho¹t ch­a?",name.."<#>:  ThÊy råi, thÊy råi...ViÖc nµy lµ thÕ nµo, ta kh«ng hiÓu g× c¶. Ta kh«ng t×m thÊy trang bŞ kİch ho¹t.","Bëi v× ngò hµnh cña trang bŞ nµy t­¬ng sinh víi ngò hµnh cña ng­¬i nªn thuéc tİnh Èn thø nhÊt cña trang bŞ sÏ tù ®éng ®­îc kİch ho¹t. Kim sinh Thñy, Thñy sinh Méc, Méc sinh Háa, Háa sinh Thæ, Thæ sinh Kim.",name.."<#>:  Tèt qu¸! Ta ®· hiÓu râ vÒ Ngò Hµnh råi.","B©y giê ta sÏ cho ng­¬i mét mãn quµ ®Æc biÖt.",name.."<#>:      Lµ g× vËy?","Ta sÏ cho ng­¬i mét tr¹ng th¸i ®Æc biÖt, mçi giê ®­îc 10 ®iÓm may m¾n.")
+		Talk(9,"Uworld1000_luck1","Ìú½³£ºÔõÑù£¬ÒÑ¾­ĞŞºÃÁË°É¡£",name.."<#>£º¶÷£¬ĞŞºÃÁË¡£","Ìú½³£ºÄã¿´µ½×°±¸ÉÏµÄ°µÊôĞÔ±»¼¤»îÃ»ÓĞ£¿",name.."<#>£º¿´µ½ÁË£¬ÕâÊÇÔõÃ´»ØÊÂ£¿ÎÒÃ»ÓĞÈ¥ÕÒ¼¤»îµÄ×°±¸°¡¡£","Ìú½³£ºÒòÎªÕâ¼ş×°±¸ÊÇÓëÄã×ÔÉíÊôĞÔÏàÉúµÄ£¬ÕâÑùµÄ×°±¸£¬µÚÒ»¸ö°µÊôĞÔ½«×Ô¶¯¼¤»î¡£½ğÉúË®£¬Ë®ÉúÄ¾£¬Ä¾Éú»ğ£¬»ğÉúÍÁ£¬ÍÁÉú½ğ¡£",name.."<#>£ºÅ¶£¬Ì«ºÃÁË¡£ÕâÏÂÎÒ³¹µ×Ã÷°×ÎåĞĞ¼¤»îÁË¡£","Ìú½³£ºÏÖÔÚÎÒ½«¸øÄãÒ»¸öÌØ±ğµÄ½±Àø¡£",name.."<#>£ºÄÇÊÇÊ²Ã´£¿","Ìú½³£ºÎÒ½«¸øÄãÒ»¸öÌØÊâ×´Ì¬£¬ĞÒÔËÔö¼Ó10µã£¬²»¹ıÖ»ÄÜ³ÖĞø1Ğ¡Ê±Å¶¡£")
 	else 
-		Talk(1,"","Ng­¬i nªn mua binh khİ phßng th©n.")
+		Talk(1,"","Ìú½³£ºÂò°Ñ±øÆ÷·ÀÉíÌ«ÓĞ±ØÒªÁË£¬·ñÔòË­¼ûÄã¶¼µÃ´òÄãÖ÷Òâ¡£")
 	end
 end
 
@@ -131,12 +131,12 @@ function Uworld1000_repair() --Ôö¼ÓË«¼Ó¹ı°ÙÒÂÒ»¼ş
 		end
 	end
 	nt_setTask(1000,400) --»·½Ú20end
-	Msg2Player("Thî rÌn ®­a b¹n ¸o gi¸p ®· söa xong.")	
+	Msg2Player("Ìú½³ÈÃÄã½«¿ø¼×ĞŞÀíºÃ£¬¾ÍÔÚÌú½³´¦¿ÉÒÔĞŞÀí¡£")	
 end
 
 function Uworld1000_luck1()
 	local name = GetName()  
-	Talk(4,"Uworld1000_luck2",name.."<#>:      NghÜa lµ g× vËy?","May m¾n lµ lóc ng­¬i ®¸nh nhau víi thó d÷ sÏ cã kh¶ n¨ng nhÆt ®­îc trang bŞ tèt. §iÓm may m¾n cao nhÊt lµ 100. HiÖn giê ng­¬i ®­îc mét giê may m¾n, h·y cè mµ tËn dông.",name.."<#>:  §a t¹, ta biÕt råi."," §­îc råi, h·y quay l¹i gÆp ng­êi ®· sai ng­¬i ®Õn ®©y, h¾n sÏ giao 1 bøc th­ cña Ngò Ca cho ng­¬i.")
+	Talk(4,"Uworld1000_luck2",name.."<#>£ºÄÇÊÇÊ²Ã´ÒâË¼¡£","Ìú½³£ºĞÒÔË¾ÍÊÇÄãÔÚÓëÒ°ÊŞµÄ²«¶·ÖĞ£¬½«»áÓĞ¸ü¸ßµÄ¿ÉÄÜ»ñµÃºÃ×°±¸¡£ĞÒÔËÖµ×î¸ßÎª255£¬ÏÖÔÚÎÒÃâ·Ñ¸øÄã1Ğ¡Ê±µÄĞÒÔË£¬ºÃ×ÔÕäÖØ¡£",name.."<#>£º¶÷£¬ÎÒ»áµÄ¡£","Ìú½³£ººÃ£¬½­ºşÂ·Ô¶°¡¡£Äã¿ÉÒÔ»ØÈ¥ÕÒÈÃÄãÀ´µÄÈËÁË£¬Ëû»á½«Îå¸çµÄÒ»·âĞÅ½»¸øÄã¡£")
 end
 
 function Uworld1000_luck2()
@@ -147,13 +147,13 @@ function Uworld1000_luck2()
 		AddOwnExp(2000)
 	end
 	nt_setTask(1000,420) --»·½Ú21end
-	Msg2Player("B¹n nhËn ®­îc 1 giê may m¾n cã thÓ lÊy nhÆt ®­îc trang bŞ tèt.")
+	Msg2Player("Äú»ñµÃÁËĞÒÔË1Ğ¡Ê±£¬½ÓÏÂÀ´1Ğ¡Ê±ÄÚ£¬Äú½«»áÓĞ¿ÉÄÜ´òµ½¸üºÃµÄ×°±¸¡£")
 	if  ( curCamp == 0 ) then
-		Msg2Player("Thî rÌn b¶o b¹n cã thÓ vÒ Ph­îng T­êng t×m Ng¹o V©n T«ng.")
+		Msg2Player("Ìú½³¸æËßÄã¿ÉÒÔ»ØÈ¥·ïÏèÕÒ°ÁÔÆ×ÚÁË¡£")
 	elseif  ( curCamp == 2 ) then
-		Msg2Player("Thî rÌn b¶o b¹n cã thÓ ®i BiÖn Kinh t×m Th¸c B¹t Hoµi Xuyªn.")
+		Msg2Player("Ìú½³¸æËßÄã¿ÉÒÔ»ØÈ¥ãê¾©ÕÒÍØ°Ï»³´¨ÁË¡£")
 	elseif  ( curCamp == 1 )  then
-		Msg2Player("Thî rÌn b¶o b¹n cã thÓ ®i L©m An t×m LiÔu Nam V©n.")
+		Msg2Player("Ìú½³¸æËßÄã¿ÉÒÔ»ØÈ¥ÁÙ°²ÕÒÁøÄÏÔÆÁË¡£")
 	end
 end
 
@@ -164,7 +164,7 @@ function education_qianzhuanglaoban()
 	local name = GetName()  
 	if ( Uworld1000 == 360 ) or ( Uworld1000 == 370 ) then
 		nt_setTask(1000,370) --»·½Ú19start
-		Talk(4,"Uworld1000_yinpiao","Ng­¬i lµ ng­êi cña Ngò Ca?",name.."<#>:  §óng vËy."," Mêi ngåi, n¨m x­a chŞu ¬n cña Ngò Ca, chuyÖn cña «ng ta còng lµ chuyÖn cña ta.",name.."<#>:  ThËt ra Ngò Gia b¶o ta vµo thµnh d¹o.","Ta nãi cho ng­¬i biÕt nh÷ng chuyÖn cÇn l­u ı khi hµnh tÈu giang hå.")
+		Talk(4,"Uworld1000_yinpiao","Ç®×¯ÀÏ°å£ºÄãÊÇÎå¸çµÄÈË£¿",name.."<#>£ºÊÇ¡£","Ç®×¯ÀÏ°å£º¿ìÇë×ø£¬µ±ÄêÎÒ³Ğ¹ıÎå¸çµÄ¶÷Çé£¬ËûµÄÊÂ¾ÍÊÇÎÒµÄÊÂ¡£",name.."<#>£ºÆäÊµÖ»ÊÇÎåÒ¯Öö¸ÀÎÒÀ´³ÇÀï×ª×ª¡£","Ç®×¯ÀÏ°å£ºÅ¶£¬ÕâÑù¡£À´£¬ÎÒ¸æËßÄãÒ»Ğ©ĞĞ×ß½­ºşĞèÒª×¢ÒâµÄÊÂÏî¡£")
 	end
 end
 
@@ -174,12 +174,12 @@ Uworld1000 = nt_getTask(1000)
 	local name = GetName()  
 	if ( Uworld1000 == 340 ) or ( Uworld1000 == 350 ) then 
 		nt_setTask(1000,350) --»·½Ú18start
-		Talk(6,"Uworld1000_goon3","Cuèi cïng ng­¬i còng ®Õn råi",name.."<#>:  ¤ng biÕt ta sÏ ®Õn?","T¹i h¹ vèn cã thÓ ®o¸n ®­îc sè mÖnh, nh©n duyªn tµi léc...th× sao l¹i kh«ng biÕt!",name.."<#>:  Tiªn sinh thËt biÕt ®ïa.","§­îc råi, ta sÏ cho ng­¬i biÕt mét chót vÒ phóc duyªn. Phóc duyªn lµ ph­¬ng thøc tİch lòy 2 giê ch¬i th× cã thÓ ®Õn 7 thµnh lín hoÆc §µo Hoa Nguyªn t×m Vâ L©m TruyÒn Nh©n nhËn l·nh. Sau ®ã ®Õn T­¬ng D­¬ng t×m ThÇn Bİ Th­¬ng Nh©n dïng ®iÓm Phóc duyªn ®æi p",name.."<#> å! Cã chuyÖn ®ã n÷a sao! PhÇn th­ëng cã nhiÒu kh«ng?");
+		Talk(6,"Uworld1000_goon3","ÎäÁÖÃË´«ÈË£ººÇºÇ£¬Ğ¡ÓÑ£¬ÄãÀ´ÁË¡£",name.."<#>£ºÄúÖªµÀÎÒÒªÀ´£¿","ÎäÁÖÃË´«ÈË£ºÔÚÏÂÒÔÇ°µ±¹ıËãÃüÏÈÉú£¬ÒöÔµÇ°³Ì£¬²ÆÆø¸»¹óÊÇÒ»¿´°ü×¼µÄ¡£",name.."<#>£ººÇºÇ£¬ÏÈÉúÕæ»áµ÷Ù©¡£","ÎäÁÖÃË´«ÈË£ºÁøÀÏ°åÄÇÀïµÄĞí¶à»õÎï£¬ÄãÔÚ½­ºşÉÏÅÂ¶¼ÄÑÕÒµ½¡£",name.."<#>£ºÅ¶£¬ÄÇÃ´ÓĞÊ²Ã´ÏŞÖÆÃ»¡£");
 	end
 end
 
 function Uworld1000_tianhuanglongqi()
-	Describe("<link=image:\\spr\\Ui3\\ĞÂÈÎÎñÏµÍ³\\ÈÎÎñÍ¼±ê\\tianhuanglongqi_01.spr>Thiªn Hoµng Long Khİ<link>",1,"KÕt thóc/Uworld1000_high7")
+	Describe("<link=image:\\spr\\Ui3\\ĞÂÈÎÎñÏµÍ³\\ÈÎÎñÍ¼±ê\\tianhuanglongqi_01.spr>Ìì»ÍÁúÆ÷<link>",1,"½áÊø¹Û¿´/Uworld1000_high7")
 end
 
 function Uworld1000_high7()
@@ -194,9 +194,9 @@ Uworld1000 = nt_getTask(1000)
 		AddItem(5,0,0,0,0,0)
 		AddOwnExp(200)
 		nt_setTask(1000,140) --»·½Ú7end
-		Msg2Player("B¹n nhËn ®­îc 2 tÊm Håi Thµnh Phï.")
-		Msg2Player("B¹n nhËn ®­îc 1 ®«i giµy.")
-		Msg2Player("H·y quay vÒ gÆp Long Ngò.")
+		Msg2Player("Äú»ñµÃÁËÁ½ÕÅ»Ø³Ç·û¡£")
+		Msg2Player("Äú»ñµÃÁËÒ»Ë«Ğ¬×Ó¡£")
+		Msg2Player("½ÓÏÂÀ´ÇëÄú»ØÈ¥ÁúÎå´¦¡£")
 		seteducationnpcpos()
 	end
 end
@@ -209,8 +209,8 @@ Uworld1000 = nt_getTask(1000)
 		end
 		AddOwnExp(200)
 		nt_setTask(1000,100) --»·½Ú5end
-		Msg2Player("B¹n nhËn ®­îc 3 b×nh Hång D­îc Thñy.")
-		Msg2Player("H·y quay vÒ ®èi tho¹i víi thî rÌn.")
+		Msg2Player("Äú»ñµÃÁËÈı¸öºìÒ©Ë®¡£")
+		Msg2Player("½ÓÏÂÀ´ÇëÄúµ½´åÕòµÄÌú½³´¦¶Ô»°£¬")
 		seteducationnpcpos()
 	end
 end
@@ -220,7 +220,7 @@ Uworld1000 = nt_getTask(1000)
 	if ( Uworld1000 == 110 ) then
 		AddOwnExp(200)
 		nt_setTask(1000,120) --»·½Ú6end
-		Msg2Player("Quay vÒ ®èi tho¹i víi Bµ chñ tiÖm t¹p hãa.")
+		Msg2Player("½ÓÏÂÀ´ÇëÄúµ½ÔÓ»õÆÌÕÒÀÏ°åÄï£¨ÀÏ°å£©¶Ô»°¡£")
 		seteducationnpcpos()
 	end
 end
@@ -234,7 +234,7 @@ function Uworld1000_end1()
 		nt_setTask(1065,Uworld1065)
 	end
 	nt_setTask(1000,30) --»·½Ú2start
-	Talk(5,"Uworld1000_wuxing","L¹i lµ thŞt t­¬i? GÇn ®©y nhiÒu ng­¬i ®Õn häc vâ vËy. MÖt chÕt ®i ®­îc!",name.."<#>:  Nî n­íc thï nhµ, cÇn ph¶i b¸o!","ThËt kh«ng ngê ng­¬i l¹i cã chİ khİ nh­ vËy. Ta d¹y ng­¬i bµi häc ®Çu tiªn: Ên phİm [V] lµ cã thÓ ngåi xuèng håi phôc khİ huyÕt. Sau nµy khi phiªu b¹t giang hå, h·y dïng c¸ch nµy ®Ó lÊy l¹i chót h¬i søc gi÷ ®­îc m¹ng sèng",name.."<#>:  §a t¹ s­ phô!","¢m D­¬ng t­¬ng sinh, Ngò Hµnh t­¬ng kh¾c. B©y giê ta sÏ d¹y ng­¬i 1 bé Ngò Hµnh quyÒn ph¸p.")
+	Talk(5,"Uworld1000_wuxing","ÎäÊ¦£ºÓÖÊÇÏÊÈâ£¿ÄÌÄÌµÄ×î½üÀ´Ñ§±¾ÊÂµÄÈËµ¹²»ÉÙ¡£¶¼½ô¸ÏÂı¸ÏÈ¥ËÍËÀ°¡¡£",name.."<#>£º¹úºŞ¼Ò³ğ£¬¶¼Òª±¨µÄ¡£","ÎäÊ¦£ºÇÆ²»³öÀ´£¬»¹Í¦ÓĞÖ¾Æø¡£ºÃ°É£¬¿´ÄãÓĞĞ©Æ£±¹£¬ÏëÊÇÔÚ´åÍâÔâÁË·¬Ò°ÊŞÏ®»÷£¬À´À´À´£¬°´v¼ü£¬±ã¿ÉÒÔ´ò×ø»ØÆø»ØÑªÁË¡£½ñºó´³µ´½­ºş£¬Ãâ²»ÁËĞ×ÏÕµÄÊ±ºò£¬ÄÜ»ØµÄÒ»Ë¿Ò»ºÁÆøÏ¢£¬Ëµ²»¶¨¾Í¼ñÌõÃü¡£",name.."<#>£ºÅ¶£¬ÎÒ¶®ÁË¡£","ÎäÊ¦£ºÒõÑôÏàÉú£¬ÎåĞĞ»¥¿Ë¡£ÎÒÏÖÔÚ½Ì¸øÄãÒ»Ì×ÎåĞĞÈ­·¨¡£")
 end
 
 function Uworld1000_wuxing()
@@ -255,18 +255,18 @@ Uworld1000 = nt_getTask(1000)
 	end
 		nt_setTask(1000,40) --»·½Ú2end
 		seteducationnpcpos()
-		Msg2Player("B¹n häc ®­îc Ngò Hµnh quyÒn ph¸p.")
-		Talk(2,"","Bé vâ c«ng nµy chØ ®Ó hé th©n, luyÖn tËp rÊt chËm! ChØ cÇn ng­¬i hiÓu ®­îc nguyªn lı 'Sinh kh¾c' th× hiÖu qu¶ kh¾c chÕ kÎ ®Şch sÏ t¨ng gÊp béi: Kim kh¾c Méc, Méc kh¾c Thæ, Thæ kh¾c Thñy, Thñy kh¾c Háa, Háa kh¾c Kim","Vâ häc lÊy chuyªn cÇn luyÖn tËp lµ chİnh... Ai da! MiÖng l¹i kh¸t råi! Th«i ng­¬i h·y quay vÒ t×m Long §Çu ®i!")
+		Msg2Player("ÄúÑ§»áÁËÎåĞĞÈ­·¨.")
+		Talk(2,"","ÎäÊ¦£ºÕâÌ×¹¦·òÖ»ÎªĞŞÉí£¬ÕæÕıÁ·ÆğÀ´Ì«Âı¡£ÄãÖ»Òª¶®µÃÓÃÏàÓ¦Îä¹¦¹¥»÷¿ËÖÆµÄµĞÈË£¬¾ÍÄÜÊÂ°ë¹¦±¶¡£½ğ¿ËÄ¾£¬Ä¾¿ËÍÁ£¬ÍÁ¿ËË®£¬Ë®¿Ë»ğ£¬»ğ¿Ë½ğ¡£","ÎäÊ¦£ºÎªÎäÖ®µÀ£¬ÇÚ¼ÓĞŞÁ¶ÎªÒª¡£°¥£¬¿ÚÓÖ¿ÊÁË£¬ºÈ¾ÆÖóÈâ£¬Î§Â¯ÉÕ»ğÈ¥¡£ÄãÁ·Á·¾Í»ØÈ¥ÕÒÁúÍ·¶ù½»´ú°É¡£")
 end
 
 function Uworld1000_good4()
 	local name = GetName()  
-	Talk(9,"Uworld1000_changewuxing",name.."<#>:  å, hãa ra l¹i tiÖn lîi nh­ vËy.","Ng­¬i cã thÓ thö xem råi h·y ®Õn t×m ta.",name.."<#>:  Ta ®· thö xong.","NÕu ng­¬i muèn tiÕn thªm mét b­íc, cïng b¹n bÌ kÕt thµnh huynh ®Ö chi giao th× cã thÓ ®Õn Nam Nh¹c trÊn tù miÕu, t×m TÜnh §èc thiÒn s­!",name.."<#> §­îc! Ta nhí råi","Trªn nÎo ®­êng b«n tÈu Giang hå, cã nhiÒu b»ng h÷u tøc lµ cã nhiÒu sù trî gióp","§­îc råi, ta tÆng ng­¬i 1 b¶o kiÕm cã thuéc tİnh Èn! vµ cã 1 sîi d©y chuyÒn cã thuéc tİnh, trang bŞ chóng, ng­¬i sÏ thÊy ®­îc hiÖu nghiÖm cña Ngò Hµnh: thuéc tİnh Èn trªn kiÕm cña ng­¬i sÏ ®­îc kİch ho¹t",name.."<#>:  Qu¶ nhiªn lµ huyÒn diÖu!","Sau nµy muèn kİch ho¹t trang bŞ, Ên [F4], thÊy ë d­íi xem ë d­íi dßng mµu vµng cña dßng trang bŞ sÏ biÕt thuéc tİnh cña trang bŞ. B©y giê ng­¬i vÒ ®i, cã g× kh«ng hiÓu Ên [F1] ra xem, vÒ ph­¬ng diÖn nhiÖm vô th× nhÊn [F11]")
+	Talk(9,"Uworld1000_changewuxing",name.."<#>£ºÅ¶£¬Ô­À´ÕâÑù·½±ã¡£","ÎäÊ¦£ºÄã¿ÉÒÔÈ¥³¢ÊÔÒ»ÏÂ£¬ÔÙÀ´ÕÒÎÒ¡£",name.."<#>£ººÃÁË£¬ÎÒÒÑ¾­³¢ÊÔ¹ıÁË¡£","ÎäÊ¦£º¶÷£¬Èç¹ûÄãÏë½øÒ»²½ºÍ×Ô¼ºµÄÅóÓÑ½áÎªĞÖµÜµÄ»°£¬¿ÉÒÔÈ¥ÄÏÔÀÕòËÂÃíÕÒÒ»¸öºÍÉĞ¡£",name.."<#>£º¶÷£¬ÎÒ¼Ç×¡ÁË¡£","ÎäÊ¦£º½­ºşÂ·Ô¶£¬ÅóÓÑ¶àÒ»¸ö£¬¾Í¶àÁË·ÖÖúÁ¦£¬ÄãºÃ×ÔÎªÖ®¡£","ÎäÊ¦£ººÃÁË£¬ÕâÀïÓĞÒ»°Ñ´ø°µÊôĞÔµÄ±¦½££¬»¹ÓĞÒ»Ìõ´øÎåĞĞÊôĞÔµÄÏîÁ´£¬ÎÒËÍ¸øÄã¡£°ÑËüÃÇ¶¼×°±¸ÉÏ£¬Äã»á¿´µ½ÓÉÓÚÎåĞĞµÄÔµ¹Ê£¬Äã½£ÉÏµÄ°µÊôĞÔ±»¼¤»îÁË¡£",name.."<#>£º¹ûÈ»¡£","ÎäÊ¦£º½ñºóÏë¼¤»î×°±¸£¬µã¿ªF4£¬¿´Ã¿¸ö×°±¸À¸ÏÂÏÔÊ¾µÄ½ğÉ«ÎÄ×Ö¾ÍÖªµÀÒªÕÒÊ²Ã´ÊôĞÔµÄ×°±¸ÁË¡£Äã»ØÈ¥°É¡£ÓĞ²»¶®µÄ´ò¿ªF1½õÄÒ²é¿´£¬ÈÎÎñ·½Ãæ´ò¿ªF11¡£")
 end
 
 function Uworld1000_changewuxing()
 	local name = GetName()  
-	Talk(2,"Uworld1000_high9","Vâ c«ng lÇn tr­íc d¹y ng­¬i chØ thö xem sù nhÉn n¹i cña ng­¬i. B©y giê ta sÏ d¹y ng­¬i vâ c«ng chİnh t«ng","ChØ cÇn dùa theo bé vâ c«ng nµy, ch¨m chØ luyÖn tËp. Ngµy trë thµnh cao thñ sÏ kh«ng cßn xa.")
+	Talk(2,"Uworld1000_high9","ÎäÊ¦£º¶ÔÁË£¬ÉÏ»Ø·¢¸øÄãµÄÎä¹¦¼¼ÄÜÆäÊµÊÇÎŞĞ§µÄ£¬ÎªµÄ²»¹ı¿´ÄãÕâÈËµÄÈÌÄÍÄÜÁ¦¡£ÏÖÔÚ´«ÊÚ¸øÄãÕæÕıµÄ¼¼ÄÜ¡£","ÎäÊ¦£º´óÇÉÈô×¾£¬Ö»ÒªÄãÇÚ¼ÓÁ·Ï°£¬¿¿ÕâÌ×Îä¹¦Ëµ²»¶¨±ãÄÜ³ÉÎª²»ÊÀ¸ßÊÖ£¬³É°ÜÒ»Äî¼ä£¬ºÃ×ÔÎªÖ®¡£")
 end
 
 function Uworld1000_high9()
@@ -340,34 +340,34 @@ function Uworld1000_high9()
 	end
 	AddOwnExp(800)
 	nt_setTask(1000,200) 
-	Msg2Player("Vâ s­ h­íng dÉn b¹n c¸ch t×m h¶o h÷u, cã thÓ nhÊn F1 më CÈm nang ra xem. B¹n cã thÓ quay vÒ gÆp Long Ngò.")
-	Msg2Player("B¹n nhËn ®­îc 1 thanh B¶o kiÕm vµ sîi d©y chuyÒn, cã thÓ dïng d©y chuyÒn kİch ho¹t kiÕm.")
-	Msg2Player("B¹n ®· häc ®­îc kü n¨ng c«ng kİch Ngò hµnh.")
+	Msg2Player("ÎäÊ¦¸æËßÄãÒ»Ğ©½»ÓÑ·½·¨£¬²¢Ëµ¿ÉÒÔÔÚF1½õÄÒÖĞ²é¿´µ½¡£Äã¿ÉÒÔ»ØÈ¥ÕÒÁúÎåÁË¡£")
+	Msg2Player("Äú»ñµÃÁËÒ»°Ñ±¦½£ºÍÒ»ÌõÏîÁ´£¬¿ÉÒÔÓÃÏîÁ´¼¤»î½£¡£")
+	Msg2Player("ÄúÒÑ¾­µÃµ½ÁËÕæÕıµÄÎåĞĞ¹¥»÷¼¼ÄÜ¡£")
 	seteducationnpcpos()
 end
 
 function Uworld1000_yinpiao()
 	local name = GetName()  
-	Talk(1,"Uworld1000_get","Ng©n phiÕu còng t­¬ng ®­¬ng víi Nguyªn b¶o, cã thÓ ®æi ra giê ch¬i hoÆc tiÒn §ång. Ng­¬i h·y ®i t×m thî rÌn ®Ó hái thªm")
+	Talk(1,"Uworld1000_get","Ç®×¯ÀÏ°å£ºÎÒÕâÀïÓĞÁ÷Í¨È«¹úµÄÒøÆ±¡£ÒøÆ±ÊÇ·½±ãÍæ¼ÒÔÚÓÎÏ·ÄÚÕı³£Ã³Ò×½»Á÷¶øÌá¹©µÄÒ»ÖÖĞéÄâÎïÆ·¡£ÒøÆ±¿ÉÍ¨¹ıÒ»¿¨Í¨ÏòÓÎÏ·³äÖµ»ñµÃ£¬Ä¿Ç°Ö»ÔÚ½ğÉ½ÓÎÏ·ÄÚÁ÷Í¨¡£Ò»ÕÅ30ÔªµÄµã¿¨¿É³ä³ÉÁ½ÕÅÒøÆ±£»Ò»ÕÅ15ÔªµÄµã¿¨¿É³ä³ÉÒ»ÕÅÒøÆ±¡£Íæ¼Ò¿ÉÔÚÁÙ°²µÄÇ®×¯¶Ò»»ÒøÆ±¡£Ã¿ÕÅÒøÆ±¿ÉÒÔ¶Ò»»³É7ÌìÓÎÏ·Ê±¼ä¡¢1500µãĞÂÓÎÏ·µãÊı»ò 1500 ½ğÉ½±Ò¡£µã¿¨»»³ÉÒøÆ±ºó£¬²»¿ÉÔÙ»»»Øµã¿¨¡£ÒøÆ±Ö®¼ä²»¿ÉÒÔÏà»¥¶Ò»»¡£µ«ÒøÆ±¿ÉÒÔ¶Ò»»³ÉÍ­Ç®£¬¼´Ò»ÕÅÒøÆ±ÄÜ¶Ò»»³É15Ã¶Í­Ç®£¬ÒøÆ±»»³ÉÍ­Ç®ºó£¬²»¿ÉÔÙ»»»ØÒøÆ±¡£ºÃÁË£¬È¥ÕÒ³ÇÊĞÀïµÄÌú½³°É¡£")
 end
 
 function Uworld1000_get()
 	AddOwnExp(5000)
 	nt_setTask(1000,380)	--»·½Ú19end
-	Msg2Player("Chñ tiÒn trang b¶o b¹n ®Õn t×m Thî rÌn trong thµnh")	
+	Msg2Player("Ç®×¯ÀÏ°åÈÃÄãÈ¥ÕÒ³ÇÊĞÀïµÄÌú½³¡£")	
 	seteducationnpcpos()
 end
 
 
 function Uworld1000_goon3()
 	local name = GetName()  
-	Talk(3,"Uworld1000_queding","Cã chø, n¹p thÎ míi cã thÓ l·nh quµ!",name.."<#>:  Ta hiÓu råi!","Ng­¬i t­ chÊt th«ng minh, giê h·y ®Õn L©m An t×m Chñ tiÒn trang (180, 191) ,¤ng ta sÏ chØ ®iÓm cho ng­¬i.T×m Xa phu trong thµnh ®­a ng­¬i ®i.")
+	Talk(3,"Uworld1000_queding","ÎäÁÖÃË´«ÈË£ºÊÇÓĞµÄ£¬Ö»ÒªÇóÄã³ä¹ıÓÎÏ·µã¿¨¾Í¿ÉÒÔÁì¡£",name.."<#>£ºÊÇÕâÑù£¬ÄÇÎÒÃ÷°×ÁË¡£","ÎäÁÖÃË´«ÈË£ººÇºÇ£¬Ğ¡ÓÑÌì×Ê´ÏÓ±£¬½ÓÏÂÀ´ÄãÈ¥ÌËÁÙ°²°É¡£ÕÒÁÙ°²µÄÇ®×¯ÀÏ°å£¬×ø±êÊÇ(180£¬191),ËûÒ²»á¸øÄãĞ©Ö¸µã¡£¿ÉÒÔÕÒ³ÇÊĞÀïµÄ³µ·òÔØÄã¹ıÈ¥¡£")
 end
 
 function Uworld1000_queding()
 	AddOwnExp(5000)
 	nt_setTask(1000,360) --»·½Ú18end 
-	Msg2Player("Vâ L©m TruyÒn Nh©n b¶o b¹n t×m Chñ tiÒn trang L©m An.")	
+	Msg2Player("ÎäÁÖÃË´«ÈËÈÃÄãÈ¥ÕÒÁÙ°²µÄÇ®×¯ÀÏ°å¡£")	
 	seteducationnpcpos()
 end
 

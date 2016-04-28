@@ -5,49 +5,49 @@ XINGYUNLIBAO = 2556 --Byte:1.Äê 2.ÔÂ 3.ÈÕ 4.´ÎÊı
 
 function nanfangjiefangri_main()
 	local aryTalk = {
-		"<dec><npc>Nh÷ng n¨m gÇn ®©y, chiÕn sù Tèng Kim ngµy cµng kŞch liÖt. Vâ l©m nh©n sü c¸c n¬i ®· héi tô tham chiÕn. Hä ®· hi sinh th©n m×nh ®Ó ®¸nh ®uæi kÎ thï b¶o vÖ tæ quèc. §Ó ca ngîi tinh thÇn hiÖp nghÜa nµy, Vâ l©m minh chñ quyÕt ®Şnh tÆng th­ëng cho nh÷ng anh hïng lËp ®­îc nhiÒu c«ng tr¹ng trªn chiÕn tr­êng Tèng Kim.",
-		"Ta muèn t×m hiÓu ho¹t ®éng nµy./about",
-		"Ta muèn nhËn C«ng tr¹ng lÖnh./getGongLaoLin",
-		"Ta muèn nhËn phÇn th­ëng anh hïng chiÕn tr­êng./getXingYunLiBao",
-		"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no",
+		"<dec><npc>½ñÈÕ£¬ËÎ½ğÕ½ÊÂÈÕÒæ¼¤ÁÒ¡£¸÷µØµÄÎäÁÖÈËÊ¿¶¼»ã¾Û²ÎÕ½¡£ËûÃÇÎşÉüĞÔÃü´òÍË³ğÈË±£ÎÀ×æ¹ú¡£ÎªÁË¸èËÌÕâÖÖÏÀÒå¾«Éñ£¬ÎäÁÖÃËÖ÷¾ö¶¨Òª¸øÔÚËÎ½ğÕ½³¡ÉÏÁ¢ÏÂÕ½¹¦µÄÓ¢ĞÛÃÇÓèÒÔ½±Àø.",
+		"ÎÒÏëÁË½â»î¶¯./about",
+		"ÎÒÏëÁì¹¦ÀÍÁî./getGongLaoLin",
+		"ÎÒÏëÁìÕ½³¡Ó¢ĞÛ½±Àø./getXingYunLiBao",
+		"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»áÔÙÀ´./no",
 	}
 	CreateTaskSay(aryTalk)
 	
 end
 function getGongLaoLin()
 	if (GetCash()<300000) then
-		CreateTaskSay({"<dec><npc>CÇn ph¶i nép vµo 30 v¹n l­îng lÖ phİ ®¨ng kı, ®¹i hiÖp kh«ng ®ñ tiÒn råi!"});
+		CreateTaskSay({"<dec><npc>Òª½»30ÍòÁ½µÇ¼Ç·ÑÓÃ£¬´óÏÀµÄÇ®²»¹»ÄØ£¡/no"});
 		return 0;
 	end
 	if (GetExtPoint(0) == 0) then
-		CreateTaskSay({"<dec><npc>ChØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ nhËn.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>Ö»ÓĞ³äÖµÍæ¼Ò²Å¿ÉÒÔÁìÈ¡.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	if ( GetLevel()< 50 ) then
-		CreateTaskSay({"<dec><npc>ChØ cã ng­êi ch¬i cÊp tõ 50 trë lªn míi cã thÓ nhËn.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>Ö»ÓĞ50¼¶ÒÔÉÏÍæ¼Ò²Å¿ÉÒÔÁìÈ¡.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	if ( CalcFreeItemCellCount() < 1 ) then
-		CreateTaskSay({"<dec><npc>H·y chuÈn bŞ 1 « trèng ®Ó ®Æt vµo 1 <color=yellow>C«ng tr¹ng lÖnh<color>.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>×¼±¸³ö1¸ö¿ÕÎ»·Å1¿é<color=yellow>¹¦³¼Áî<color>.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	Pay(300000);
 	local nidx = AddItem(6,1,1411,1,0,0);
 	WriteLog(format("[GetZhanGongXunZhang]\t date:%s \t Account:%s \t Name:%s \t GetItem:%s\t",GetLocalDate("%Y-%m-%d %H:%M:%S"),GetAccount(),GetName(),GetItemName(nidx)));
-	CreateTaskSay({"<dec><npc>B¹n ®· nhËn thµnh c«ng 1 <color=yellow>C«ng tr¹ng lÖnh<color>.","BiÕt råi/no"});
+	CreateTaskSay({"<dec><npc>ÄãÒÑ¾­ÁìÈ¡ÁË1¿é <color=yellow>¹¦³¼Áî<color>.","ÖªµÀÁË/no"});
 end
 
 function getXingYunLiBao()
 	if (GetExtPoint(0) == 0) then
-		CreateTaskSay({"<dec><npc>ChØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ nhËn.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>Ö»ÓĞ³äÖµÍæ¼Ò²Å¿ÉÒÔÁìÈ¡.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	if ( GetLevel()< 50 ) then
-		CreateTaskSay({"<dec><npc>ChØ cã ng­êi ch¬i cÊp tõ 50 trë lªn míi cã thÓ nhËn.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>Ö»ÓĞ50¼¶ÒÔÉÏÍæ¼Ò²Å¿ÉÒÔÁìÈ¡.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	if ( CalcFreeItemCellCount() < 1 ) then
-		CreateTaskSay({"<dec><npc>H·y chuÈn bŞ 1 « trèng ®Ó ®Æt vµo 1 <color=yellow>C«ng tr¹ng lÖnh<color>.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>×¼±¸³ö1¸ö¿ÕÎ»·Å1¿é<color=yellow>¹¦³¼Áî<color>.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	local ndate = tonumber(tonumber(GetLocalDate("%y"))..tonumber(GetLocalDate("%m"))..tonumber(GetLocalDate("%d")));
@@ -59,17 +59,17 @@ function getXingYunLiBao()
 		num = 0;
 	end
 	if ndate == olddate then 
-		CreateTaskSay({"<dec><npc> Mçi ngµy chØ cã thÓ nhËn tèi ®a 50 c¸i, ngµy mai h·y ®Õn nhĞ.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc>Ã¿Ìì×î¶àÖ»ÄÜÁìÈ¡50¸ö£¬Ã÷ÌìÔÙÀ´°É¡£","ÖªµÀÁË/no"});
 		return 0;
 	end
 	local ngonglao = CalcEquiproomItemCount(6,1,1411,-1)
 	local nxunzhang = CalcEquiproomItemCount(6,1,1412,-1)
 	if ngonglao < 1 then
-		CreateTaskSay({"<dec><npc> §¹i hiÖp kh«ng mang theo <color=yellow>C«ng tr¹ng lÖnh<color>.","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc> ´óÏÀÃ»ÓĞ´ø<color=yellow>¹¦³¼Áî<color>.","ÖªµÀÁË/no"});
 		return 0;
 	end
 	if nxunzhang < 1 then
-		CreateTaskSay({"<dec><npc> §¹i hiÖp kh«ng mang theo <color=yellow>Huy ch­¬ng Tèng Kim<color>. H·y dïng ®iÓm tİch lòy ®Ó ®æi lÊy Huy ch­¬ng Tèng Kim ","BiÕt råi/no"});
+		CreateTaskSay({"<dec><npc> ´óÏÀÃ»ÓĞ´ø<color=yellow>ËÎ½ğ»ÕÕÂ<color>. ÓÃ»ıÀÛµã»»ËÎ½ğ»ÕÕÂ","ÖªµÀÁË/no"});
 		return 0;
 	end	
 	num = num + 1;
@@ -85,9 +85,9 @@ function getXingYunLiBao()
 	ConsumeEquiproomItem(1, 6, 1, 1412, -1)
 	local nidx = AddItem(6,1,1413,1,0,0);
 	WriteLog(format("[XINGYUNLIBAO]\t Date:%s\t Account:%s\t Name:%s\t GetItem:%s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),GetItemName(nidx)));
-	CreateTaskSay({"<dec><npc>§· nhËn thµnh c«ng 1 <color=yellow>Tói quµ may m¾n<color>.","BiÕt råi/no"});
+	CreateTaskSay({"<dec><npc>³É¹¦ÁìÈ¡1¸ö<color=yellow>ĞÒÔËÀñ°ü<color>.","ÖªµÀÁË/no"});
 end
 
 function about()
-	CreateTaskSay({"<dec><npc>Tõ ngµy 28/4/2007 ®Õn 13/5/2007, ng­êi ch¬i cÊp 50 ®· n¹p thÎ cã thÓ ®Õn chç ta dïng 1 <color=yellow>C«ng tr¹ng lÖnh<color> (®ãng 30 v¹n phİ ®¨ng kı cho ta ®Ó nhËn) vµ 1 <color=yellow>Huy ch­¬ng Tèng Kim<color> (dïng 500 ®iÓm tİch lòy ®Ó ®æi t¹i Qu©n Nhu Quan) ®Ó ®æi lÊy ","BiÕt råi/no"})
+	CreateTaskSay({"<dec><npc>´Ó28/4/2007µ½13/5/2007, 50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò¿ÉÒÔµ½ÎÒÕâÓÃ1¿é<color=yellow>¹¦³¼Áî<color> (½ÉÄÉ30ÍòµÇ¼Ç·ÑÎÒ²Å³ĞÈÏ) ºÍ1¸ö<color=yellow>ËÎ½ğ»ÕÕÂ<color> (ÔÚ¾üĞè¹Ù´¦ÓÃ500»ıÀÛµã¿É¶Ò»») ½øĞĞ¶Ò»»","ÖªµÀÁË/no"})
 end

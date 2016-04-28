@@ -24,40 +24,40 @@ ChuangGuan30.tbForbitItemType = --ÖØÔØ Î¥½ûµÀ¾ß
 {
 	"TRANSFER","MATE"
 }
-ChuangGuan30.szMapType = "MËt Phßng cöa ¶i" --¸Ä±äµØÍ¼±íÊ¾
+ChuangGuan30.szMapType = "ÕÏ°­ÃÜ·¿" --¸Ä±äµØÍ¼±íÊ¾
 
 --Drop Item when kill final boss - Modified By DinhHQ - 20120312
 --Give message to all player in map about the lucky award - Modifed by DinhHQ - 20110510
 function AnnounceLuckyAward(strAwardName)		
-	local strMsg = format("Tæ ®éi cña <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng boss %s, giµnh ®­îc phÇn th­ëng ®Æc biÖt lµ <color=yellow>%s<color>", GetName(), "ÔÚMËt Phßng cöa ¶iÖÐ", strAwardName)
+	local strMsg = format("×é¶Ó<color=yellow>%s<color>ÒÑ¾­³É¹¦ÏûÃð %s£¬»ñµÃµÄÌØ±ð½±ÀøÊÇ <color=yellow>%s<color>", GetName(), "ÔÚÕÏ°­ÃÜ·¿ÖÐ", strAwardName)
 	Msg2Team(strMsg)			
 	Msg2SubWorld(strMsg)
 	AddGlobalNews(strMsg)	
 end
 tbVnItemAwardEx = {
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[10]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[11]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[12]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[13]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[14]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[15]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[16]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[17]={{szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
-	[18]={{szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
-	[19]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
-	[20]={{szName="Long HuyÕt Hoµn",tbProp={6,1,2379,1,0,0},nCount=1,nRate=10},},
-	[21]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
-	[22]={{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=10},},
-	[23]={{szName="Thiªn Long LÖnh",tbProp={6,1,26,1,0,0},nCount=1,nRate=15},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="¾«Á¶Ê¯",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[10]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[11]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[12]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[13]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[14]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[15]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[16]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[17]={{szName="Óñ¹Þ",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
+	[18]={{szName="Óñ¹Þ",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
+	[19]={{szName="ÎåÖÞÁè¿Õµ¤",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
+	[20]={{szName="¾ÅÌìÔÆÓÎµ¤",tbProp={6,1,2379,1,0,0},nCount=1,nRate=10},},
+	[21]={{szName="ÎåÖÞÁè¿Õµ¤",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
+	[22]={{szName="´óÁ¦ÍèÀñ°ü",tbProp={6,1,2517,1,0,0},nCount=1,nRate=10},},
+	[23]={{szName="ÎäÁÖÃØ¼®",tbProp={6,1,26,1,0,0},nCount=1,nRate=15},},
 }
 
 function ChuangGuan30:Init()
@@ -118,7 +118,7 @@ function ChuangGuan30:OnEnterMap()
 	self.tbPlayer[szName] = 1
 	self.nCount = self.nCount + 1
 	SetDeathScript("\\script\\missions\\challengeoftime\\chuangguang30.lua")
-	WriteLog("TiÕn vµo b¶n ®å, ng­êi ch¬i lµ".. szName)
+	WriteLog("½øÈë°æÍ¼£¬Íæ¼ÒÊÇ".. szName)
 	SetTmpCamp(nMapId) -- ÉèÖÃplayerµÄÕóÓª
 	self:SetState()
 end
@@ -126,7 +126,7 @@ end
 function ChuangGuan30:GiveAward(nGroupId, nCount)
 	if GetTask(PLAYER_MAP_TASK) == nGroupId then
 		local tbPro = {			
-			{szName="§iÓm Kinh NghiÖm",nExp = 10e6},
+			{szName="¾­ÑéÖµ",nExp = 10e6},
 		}
 		tbAwardTemplet:GiveAwardByList(tbPro, "jixuchuangguang award", 1)
 		tbAwardTemplet:GiveAwardByList(tbVnItemAwardEx, "jixuchuangguang item award", 1)
@@ -233,7 +233,7 @@ function ChuangGuan30:OnAddBoss()
 	local szFile = "\\settings\\maps\\liandandong\\npc_3.txt"
 	local x,y = get_file_pos(szFile, random(2,50), 1)
 	basemission_CallNpc(map_new_Ncp[nBossid], CHUANGGUAN30_MAP_ID, x, y)
-	local Msg = format("%s xuÊt hiÖn råi, c¸c ch­ vÞ anh hïng h·y nhanh chãng hµnh ®éng !",map_new_Ncp[nBossid].szName)
+	local Msg = format("%s³öÏÖÁË, ÖîÎ»Ó¢ÐÛ¸Ï¿ìÐÐ¶¯!",map_new_Ncp[nBossid].szName)
 	Msg2Player(Msg)
 	self.bActive = 1
 end

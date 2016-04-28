@@ -5,27 +5,27 @@ function main()
 	UTask_cy = GetTask(6)
 	if (GetFaction() == "cuiyan") then
 		if (UTask_cy == 60*256+20) then				--³öÊ¦ÈÎÎñ½øĞĞÖĞ
-			Talk(2,"","Bµ bµ! L·o b¸ ®ã ®· nãi cho ta nghe ch©n t­íng sù thËt, ta sÏ ®­a bøc th­ n¨m ®ã cho Ch­ëng m«n, mäi ng­êi xem xong sÏ hiÓu nçi khæ t©m cña S­ tæ! ","T©m nguyÖn n¨m ®ã cña S­ tû, ta ®· thay S­ tû hoµn thµnh, vËy còng ®· may råi! ")
+			Talk(2,"","ÆÅÆÅ£¬ÄÇ¸öÀÏ²®¸æËßÎÒÊÂÇéµÄÕæÏàÁË£¬ÎÒ½«´øÄÇ·âĞÅ¸øÕÆÃÅ£¬´ó¼Ò¿´Íê¾ÍÖªµÀÊ¦×æµÄ¿àĞÄÁË ","Ê¦½ãµÄĞÄÔ¸£¬ÎÒÒÑ¾­°ïËıÍê³ÉÁË£¬ÄÇÒ²ĞÒÔËÁË! ")
 			SetTask(6,60*256+30)
 		elseif (UTask_cy == 60*256) and (GetLevel() >= 50) then		--³öÊ¦ÈÎÎñ
-			Talk(3,"L60_get","Ng­êi ngoµi lu«n cã thµnh kiÕn víi Thóy Yªn chóng ta, ngay c¶ ®Ö tö còng truyÒn r»ng tæ s­ s¸ng lËp ph¸i, do bŞ ng­êi yªu ruång bá nªn tİnh t×nh thay ®æi rÊt nhiÒu, c¨m hËn hÕt tÊt c¶ ®µn «ng trong thiªn h¹, cho nªn ®· ®Şnh ra m«n quy kh¾c nghiÖt, khiÕn cho c¸c ®Ö tö trong m«n ®êi ®êi c¨m ghĞt ®µn «ng.","Nh÷ng m«n quy nµy nh­ mét sîi d©y lu«n buéc chÆt tÊt c¶ mäi ng­êi, kú thùc vèn kh«ng ph¶i nh­ vËy, nguyªn do trong ®ã ng­êi ngoµi kh«ng hiÓu th× mÆc, tù b¶n th©n chïng ta còng kh«ng muèn khiÕn ng­êi kh¸c th­¬ng t©m nh­ vËy.")
+			Talk(3,"L60_get","ÍâÃæµÄÈË¶ÔÔÛÃÇ´äÑÌÃÅÒ»Ö±´æÓĞÆ«¼û£¬ÃÅÏÂµÜ×ÓÀïÒ²Ò»Ö±ÓĞÒ»ÖÖ´«ÑÔ£¬Ëµ±¾ÃÅµÄ´´ÅÉ×æÊ¦ÒòÎªµ±ÄêÔâ°®ÈËÒÅÆú£¬ĞÔÇé´ó±ä£¬ºŞ¾¡ÌìÏÂÄĞ×Ó£¬ËùÒÔ¶¨ÏÂÃÅ¹æ£¬ÒªÈÃ±¾ÃÅµÜ×ÓÊÀÊÀ´ú´ú¶¼Í´ºŞÄĞ×Ó£¬ÕâĞ©ÃÅ¹æ¾ÍÏñÉşË÷£¬Ò»Ö±Êø¸¿×Å´ó¼Ò£¬ÆäÊµÊÂÊµ¸ù±¾²»ÊÇÕâÑù£¡ÕâÆäÖĞµÄÔµÓÉÍâÈË²»Ã÷Ò²¾Í°ÕÁË£¬ÔÛÃÇ×Ô¼ºÈËÒ²ÕâÃ´Ïë£¬¾ÍÈÃÈËÌ«ÉËĞÄÁË.","ÔõÑù²ÅÄÜÈÃ´ó¼ÒÃ÷°×ÊÂÇéµÄÕæÏàÄØ?")
 		else
-			Talk(1,"","Tõ nhá ®· l­u l¹c trong chèn giang hå, chíp m¾t ®· nhiÒu n¨m tr«i qua råi ")
+			Talk(1,"","´ÓĞ¡Á÷Âä½­ºş£¬×ªÑÛ¼ä¾Í¶àÄê¹ıÈ¥ÁË")
 		end
 	else
-		Talk(1,"","Nhí ngµy nµo ta cßn ½m Do·n ch­ëng m«n trªn tay, b©y giê ®· lín thÕ nµy råi! Thêi gian tr«i qua nhanh nh­ tªn b¾n! ")
+		Talk(1,"","¼ÇµÃÄÇÌì»¹±§×ÅÒüÕÆÃÅ£¬ÏÖÔÚÒÑ¾­ÕâÃ´´óÁË£¬Ê±¼ä·ÉÊÅ! ")
 	end
 end;
 
 function L60_get()
-	Say("Ch©n t­íng sù thËt cã liªn quan ®Õn mét ng­êi trong cÊm ®Şa, chØ cã t×m ®­îc ng­êi nµy th× tr¾ng ®en sÏ râ rµng",2,"TiÕp tôc t×m hiÓu /L60_get_yes","Hay mÆc kÖ kh«ng lo /L60_get_no")
+	Say("ÊÂÊµÕæÏàºÍÒ»¸öÔÚ½ûµØÀïµÄÈËÓĞ¹Ø£¬Ö»ÓÃÕÒµ½Ëû¾ÍÊÂÇéÕæÏà´ó°×ÁË",2,"¼ÌĞøÁË½â/L60_get_yes","²»ÓÃµ£ĞÄ/L60_get_no")
 end;
 
 function L60_get_yes()
-	Talk(4,"","Th©n lµ ®Ö tö bæn m«n, tù thÊy cã tr¸ch nhiÖm ph¶i t×m ra sù thËt.","Ra khái cæng ®i theo h­íng §«ng B¾c sÏ ®Õn Ngäc N÷ hå, cÊm ®Şa ë gÇn Ngäc N÷ hå.","§­îc råi! Ta ®i ®©y! ","§õng véi! Ng­êi b¹n trÎ! §Ó b¶o vÖ tİnh m¹ng cho ng­¬i, tr­íc khi gÆp ng­êi ®ã cÇn ph¶i cã mét c¸i kh¨n t¬, kh¨n t¬ nµy sÏ xuÊt hiÖn trong S¬n §éng cña CÊm Cung."	)
+	Talk(4,"","ÉíÎª±¾ÃÅµÜ×Ó£¬ÓĞÔğÈÎÕÒ³öÕæÏà?","³öÃÅÏò¶«±±·½Ïò×ß¾ÍÄÜµ½ÓñÅ®ºş£¬½ûµØÔÚÓñÅ®ºş¸½½ü! ","¿ÉÒÔ£¬ÎÒÈ¥ÁË! ","²»ÓÃ¼±£¬ÄêÇáÈË£¬ÎªÁË±£»¤ÄãµÄĞÔÃü£¬ÔÚ¼ûÄÇ¸öÈËÖ®Ç°£¬ĞèÒªÒ»ÌõË¿ÅÁ£¬Õâ¸öË¿ÅÁ½«³öÏÖÔÚ½û¹¬É½¶´."	)
 	SetTask(6,60*256+10)
-	AddNote("TiÕp nhËn nhiÖm vô xuÊt s­ cña Thóy Yªn M«n, ®iÒu tra ch©n t­íng cña cÊm ®Şa Thóy Yªn m«n ")
-	Msg2Player("TiÕp nhËn nhiÖm vô xuÊt s­ cña Thóy Yªn M«n, ®iÒu tra ch©n t­íng cña cÊm ®Şa Thóy Yªn m«n ")
+	AddNote("½Ó´äÑÌÃÅ³öÊ¦ÈÎÎñ£¬µ÷²é´äÑÌÃÅ½ûµØÕæÏà")
+	Msg2Player("½Ó´äÑÌÃÅ³öÊ¦ÈÎÎñ£¬µ÷²é´äÑÌÃÅ½ûµØÕæÏà")
 end;
 
 function L60_get_no()

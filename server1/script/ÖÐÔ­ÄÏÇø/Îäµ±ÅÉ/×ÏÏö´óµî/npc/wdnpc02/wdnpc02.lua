@@ -180,7 +180,7 @@ function defection_yes()			-- ×ªÅÉ£¬ÊÕ»ØÔ­ÃÅÅÉÎä¹¦¼¼ÄÜ
 		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng "..GetRepute().."®iÓm!")
 		AddRepute(-1 * GetRepute())
 	else
-		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200 ®iÓm! ")
+		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200®iÓm! ")
 		AddRepute(-200)
 	end
 	AddNote("Thu håi vâ c«ng Vâ §ang, hñy bá chøc vŞ HuyÒn vâ ch©n nh©n. B¹n cã thÓ gia nhËp C«n L«n ph¸i. ")
@@ -301,7 +301,7 @@ function L60_prise()
 	SetCamp(4)
 	SetCurCamp(4)
 	AddNote("VÒ Tö Tiªu ®¹i ®iÖn, lÊy 3 b¶n ch©n kinh giao cho ch­ëng m«n §¹o NhÊt Ch©n Nh©n, hoµn thµnh nhiÖm vô xÊt s­. Trë thµnh ng­êi gióp viÖc, thuËn lîi xuÊt s­. ")
-	Msg2Player("Chóc mõng b¹n xuÊt s­! §­îc phong lµm HuyÒn Vò ThÇn ThŞ! Danh väng cña b¹n t¨ng thªm 120 ®iÓm! ")
+	Msg2Player("¹§Ï²Äã³öÊ¦£¬±»·âÎªĞşÎäÉñÊÌ£¬ÄãµÄÃûÍûÔö¼Ó120®iÓm! ")
 	AddRepute(120)
 end;
 

@@ -3,18 +3,18 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "ItemScript",
-	szName = "Sö dông thÇn bÝ b¶o r­¬ng cña d· tÈu",
+	szName = "Ê¹ÓÃÒ°ÛÅµÄÉñÃØ±¦Ïä",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2374,1,-1,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2348,1,-1,0},},6,"CÇn %d HuyÒn Thiªn Chïy, c¸c h¹ ®em kh«ng ®ñ sè l­îng!"} },
+		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2348,1,-1,0},},6,"ÐèÒª%d ÐþÌì´¸, ¸óÏÂËù´øÊýÁ¿²»¹»!"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{71,1,"B¶o r­¬ng thÇn bÝ cña D· TÈu"} },
+		{"PlayerFunLib:GetAward",	{71,1,"Ò°ÛÅµÄÉñÃØ±¦Ïä"} },
 		{"PlayerFunLib:ConsumeEquiproomItem",	{{tbProp={6,1,2348,1,-1,0},},6} },
 		{"ThisActivity:Jiluxiaohao_yesou",	{nil} },
 	},
@@ -23,7 +23,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = "Sö dông lÔ bao c«ng thµnh chiÕn",
+	szName = "Ê¹ÓÃ¹¥³ÇÕ½Àñ°ü",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2377,1,-1,0},}},
@@ -33,7 +33,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{72,1,"C«ng Thµnh ChiÕn LÔ Bao"} },
+		{"PlayerFunLib:GetAward",	{72,1,"¹¥³ÇÕ½Àñ°ü"} },
 		{"ThisActivity:Jiluxiaohao_chengzhan",	{nil} },
 	},
 }
@@ -41,18 +41,18 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "ItemScript",
-	szName = "Sö dông chÝ t«n mËt b¶o",
+	szName = "Ê¹ÓÃÖÁ×ðÃØ±¦",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2375,-1,-1,-1},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
-		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2348,1,-1,0},},12,"CÇn %d HuyÒn Thiªn Chïy, c¸c h¹ ®em kh«ng ®ñ sè l­îng!"} },
+		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2348,1,-1,0},},12,"ÐèÒª%d ÐþÌì´¸£¬¸óÏÂ²»¹»ÊýÁ¿!"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{73,1,"ChÝ T«n BÝ B¶o"} },
+		{"PlayerFunLib:GetAward",	{73,1,"ÖÁ×ðÃØ±¦"} },
 		{"PlayerFunLib:ConsumeEquiproomItem",	{{tbProp={6,1,2348,1,-1,0},},12} },
 		{"ThisActivity:Jiluxiaohao_zhizun",	{nil} },
 	},
@@ -61,7 +61,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃTµi B¶o Thñy TÆc(¾É)",
+	szName = "Ê¹ÓÃË®ÔôµÄ²Æ±¦(¾É)",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2376,1,-1,0},}},
@@ -71,14 +71,14 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{74,1,"Tµi B¶o Thñy TÆc"} },		
+		{"PlayerFunLib:GetAward",	{74,1,"Ë®ÔôµÄ²Æ±¦"} },		
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "ItemScript",
-	szName = "Sö dông phong háa cÈm nang",
+	szName = "Ê¹ÓÃ·ç»ð½õÄÒ",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2373,1,-1,0},}},
@@ -88,20 +88,20 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{75,1,"Phong Háa CÈm Nang"} },
+		{"PlayerFunLib:GetAward",	{75,1,"·ç»ð½õÄÒ"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "NpcOnDeath",
-	szName = "§éc c« thiªn phong chÕt",
+	szName = "¶À¹ÂÌì·åËÀ",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"NpcFunLib:CheckName",	{"§éc C« Thiªn Phong"} },
+		{"NpcFunLib:CheckName",	{"¶À¹ÂÌì·å"} },
 	},
 	tbActition = 
 	{
@@ -112,7 +112,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "NpcOnDeath",
-	szName = "BOSS chÕt",
+	szName = "BOSS ËÀ",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -205,7 +205,7 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,2743,1,0,0},}},
 	tbCondition = 
 	{
-		--{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2744,1,0,0},},1,"CÇn mét c¸i %d Ch×a Khãa Nh­ ý
+		--{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2744,1,0,0},},1,"ÐèÒªÒ»¸ö %d ÈçÒâÔ¿³×} },
 		{"ThisActivity:VnUsePirateBox",	{nil}}
 	},
 	tbActition = 

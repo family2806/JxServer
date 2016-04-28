@@ -9,9 +9,9 @@ end
 function main()
 	Say(10855,
 		3,
-		"Giao dŞch/yes",
-		"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
-		"Kh«ng giao dŞch/Cancel")
+		"½»Ò×/yes",
+		"Á¶ÖÆ»ìÔªÁéÂ¶/refine",
+		"²»½»Ò×/Cancel")
 end;
 
 function yes()

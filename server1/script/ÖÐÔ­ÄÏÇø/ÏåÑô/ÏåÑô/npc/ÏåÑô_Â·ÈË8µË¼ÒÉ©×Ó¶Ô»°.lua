@@ -6,11 +6,11 @@
 function main(sel)
 	UTask_wd = GetTask(5);
 	if (UTask_wd == 50*256+50) then 
-		Talk(3, "select", "Ta ®©y c¸ lµm mÑ thËt ®au lßng .....", "§¹i tÈu, ta ®©y cã 1 v¹n l­îng. TÈu mau nhËn ®i! ChØ cÇn cã ®Ö tö Vâ §ang ta ®©y, c¸c ng­êi sî kh«ng ph¶i chŞu ®ãi l¹nh n÷a!", "¸i da,ta qu¶ lµ gÆp ®­îc bå t¸t sèng råi! Ta ®ang tØnh hay m¬ B©y giê cßn cã ng­êi tèt vËy sao?")
+		Talk(3, "select", "Nhµ ta kh«ng cßn g× ®Ó ¨n, nh×n con nhá lu«n miªng kªu ®ãi, lµm mÑ ta thËt rÊt ®au lßng!", "§¹i tÈu, ta ®©y cã 1 v¹n l­îng. TÈu mau nhËn ®i! ChØ cÇn cã ®Ö tö Vâ §ang ta ®©y, c¸c ng­êi sî kh«ng ph¶i chŞu ®ãi l¹nh n÷a!", "¸i da,ta qu¶ lµ gÆp ®­îc bå t¸t sèng råi! Ta ®ang tØnh hay m¬ B©y giê cßn cã ng­êi tèt vËy sao?")
 	elseif (UTask_wd > 50*256+50) then
 		Talk(1,"","C¸c ®¹i hiÖp trªn Vâ §ang s¬n thËt lµ bå t¸t sèng cøu m¹ng bän ng­êi cïng kh?ta! NÕu h?kh«ng th­êng gióp ®ì, m?con ta ch¾c ®· chÕt ®ãi mÊt råi!")
 	else
-		Talk(1,"","Ta ®©y c¸ lµm mÑ thËt ®au lßng .....")
+		Talk(1,"","Nhµ ta kh«ng cßn g× ®Ó ¨n, nh×n con nhá lu«n miªng kªu ®ãi, lµm mÑ ta thËt rÊt ®au lßng!")
 	end
 end;
 

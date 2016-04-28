@@ -1,8 +1,0 @@
-[2015-05-20 21:25:47] error: attempt to index global `str' (a nil value)
-stack traceback:
-   1[150]:  function `jn' at line 51 [string "/script/Á½ºşÇø/°ÍÁêÏØ/npc/°ÍÁêÏØ_Â·ÈË9°¢·¼¶..."]
-
-[2015-05-20 23:45:21] error: attempt to index global `str' (a nil value)
-stack traceback:
-   1[150]:  function `jn' at line 51 [string "/script/Á½ºşÇø/°ÍÁêÏØ/npc/°ÍÁêÏØ_Â·ÈË9°¢·¼¶..."]
-
