@@ -65,7 +65,7 @@ end
 function wlls_view_me()
 	-- Èç¹û ¸ÕµÇ¼Ç/¸Õ¸üĞÂ Á¢¼´ÔËĞĞ´Ëº¯Êı ÓĞ¿ÉÄÜÏÔÊ¾Òì³£
 	Describe(wlls_get_infostr(GetName()), 3,
-		" söa ®æi ta c¨n b¶n tin tøc /wlls_reg_refresh", "¸ü¸ÄÆÚÍû¶ÓÓÑµNam ÅÏ¢/wlls_edit_need('')", "Trë vÒ ")
+		" söa ®æi ta c¨n b¶n tin tøc /wlls_reg_refresh", "¸ü¸ÄÆÚÍû¶ÓÓÑµNam ÅÏ¢/#wlls_edit_need('')", "Trë vÒ ")
 end
 
 -- ¸üĞÂ×Ô¼ºµÄ»ù±¾ĞÅÏ¢
@@ -156,7 +156,7 @@ function wlls_reg_query_menu()
 	for n_idx, tb_fmt in WLLS_REG_TABLE do
 		tb_option[getn(tb_option)+1]	= "°´ÕÕ [" .. tb_fmt[1] .. "] /wlls_reg_query_single(" .. n_idx .. ")"
 	end
-	tb_option[getn(tb_option)+1] = "¸ßCÊp ÁË½â/wlls_edit_need('',1)"
+	tb_option[getn(tb_option)+1] = "¸ßCÊp ÁË½â/#wlls_edit_need('',1)"
 	tb_option[getn(tb_option)+1] = "Trë vÒ "
 	Say("ÁªÈüÊ¹Õß: Äã¿ÉÒÔ¸ù¾İ²»Í¬ÀàĞÍÀ´ÁË½âÑ¡ÊÖ£¬°üÀ¨Giíi tİnh , M«n ph¸i ¸i, CÊp bËc .", getn(tb_option), tb_option)
 end
@@ -366,9 +366,9 @@ function wlls_get_oneneed(n_idx, n_value)
 		if (not tb_range) then
 			return " kh«ng thµnh vÊn ®Ò "
 		elseif (not tb_range[1]) then
-			return "" .. tb_range[2] .. str_units
+			return "#" .. tb_range[2] .. str_units
 		elseif (not tb_range[2]) then
-			return "" .. tb_range[1] .. str_units
+			return "#" .. tb_range[1] .. str_units
 		else
 			return tb_range[1] .. "~" .. tb_range[2] .. str_units
 		end
@@ -390,7 +390,7 @@ function wlls_get_oneinfo(n_idx, n_value)
 	local str_units	= WLLS_REG_TABLE[n_idx][4]
 	if (type(tb[1]) == "table") then	-- ÊıÖµ
 		if (n_value >= 255) then
-			return "" .. n_value .. str_units
+			return "#" .. n_value .. str_units
 		else
 			return n_value .. str_units
 		end

@@ -20,13 +20,13 @@ function main(sel)
 	local tbDailog = DailogClass:new(szNpcName)
 	tbDailog.szTitleMsg = "<#><npc>D­¬ng Ch©u chóng ta cã mét con suèi, nhiÒu s«ng, nhiÒu cÇu, nhiÒu thuyÒn. Nh÷ng ng­êi giµu cã th× sÏ ®ãn thuyÒn ®i du ngo¹n D­¬ng Ch©u, dùa vµo c¸c thuyÒn phu cña chóng ta"
 	tbDailog:AddOptEntry("Ngåi thuyÒn", WharfFun)
-	tbDailog:AddOptEntry("²»Ngåi thuyÒn", OnCancel)
+	tbDailog:AddOptEntry("Kh«ng ngåi", OnCancel)
 	if GetLevel() >= 50 then
 		tbDailog:AddOptEntry("§i §µo Hoa §¶o (2) [ "..AEXP_TICKET.." l­îng]", go_thd)
 	end
 	G_TASK:OnMessage("NguyÖt Ca §¶o", tbDailog, "DialogWithNpc")
 	if check_showdialog_condition() then
-		tbDailog:AddOptEntry("´øÎÒµ½NguyÖt Ca §¶o", goto_yuegedao)
+		tbDailog:AddOptEntry("§­a ta ®Õn NguyÖt Ca §¶o", goto_yuegedao)
 	end
 	tbDailog:Show()
 end;
@@ -65,7 +65,7 @@ end
 ---------------------------------------------------------------
 function  OnCancel()
 
-   Say("´¬·ò£ºÃ»Ç®Ngåi thuyÒnÄã¾Í×ßºµÂ·°É£¡",0)
+   Say("Kh«ng cã tiÒn ngåi thuyÒn th× ng­¬i ®i bé vËy! ",0)
 
 end;
 

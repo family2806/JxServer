@@ -37,6 +37,6 @@ function L10_correct()
 	Talk(1,"","TËt læm! Xem ra ng≠¨i cÚng c„ chÛt ki’n th¯c v“ r≠Óu! T∆ng ng≠¨i Æ©y!")
 	AddEventItem(76)
 	SetTask(8,10*256+40)
-	AddNote("C„ r≠Óu Hu÷ tuy“n  ")
-	Msg2Player("C„ r≠Óu Hu÷ tuy“n  ")
+	AddNote("C„ r≠Óu Hu÷ tuy“n ")
+	Msg2Player("C„ r≠Óu Hu÷ tuy“n ")
 end;

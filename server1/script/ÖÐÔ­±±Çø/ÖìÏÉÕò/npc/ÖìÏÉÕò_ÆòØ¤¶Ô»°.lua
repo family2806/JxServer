@@ -16,7 +16,7 @@ function main()
 		DelItem(187)
 		AddEventItem(191)
 		Msg2Player("LÊy ®­îc nhÉn cña Song Song c« n­¬ng. ")
-		AddNote("°Ñ¶¹¸¯¸øÆòØ¤£¬LÊy ®­îc nhÉn cña Song Song c« n­¬ng. ")
+		AddNote("§­a ®Ëu phô Ngò H­¬ng cho ng­êi ¨n mµy, lÊy ®­îc nhÉn cho Song Song c« n­¬ng. ")
 --		SetTask(68,5)
 	else
 		i = random(0,1)

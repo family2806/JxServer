@@ -22,5 +22,5 @@ function L20_prise()
 --	AddMagic(129)
 	add_gb(30)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
 	Msg2Player("Chóc mõng B¹n!. §· ®­îc th¨ng lµ: C¸i Bang ChÊp B¸t ®Ö tö. Häc ®­îcHãa hiÓm Vi Di ")
-	AddNote("Chóc mõng B¹n!. §· ®­îc th¨ng lµ: C¸i Bang ChÊp B¸t ®Ö tö. Häc ®­îcHãa hiÓm Vi Di  ")
+	AddNote("Chóc mõng B¹n!. §· ®­îc th¨ng lµ: C¸i Bang  ChÊp B¸t ®Ö tö. Häc ®­îc Hãa HiÓm Vi Di ")
 end

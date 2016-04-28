@@ -32,7 +32,7 @@ function main()
 	elseif (UTask_world38 == 3) then				-- Îª¼ÆÊ±Æ÷ÈÝ´í¼ÓÈëÊÖ¶¯³¬Ê±´¦Àí
 		i = GetRestSec(6)
 		if (i > 0) then
-			Say("<#> Thêi gian ch­a ®ñ, thuèc ch­a lµm xong ®­îc, ng­¬i ph¶i chê ®îi thªm."..i.."<#> gi©y.", 3, "Ta kh«ng muèn ®îi n÷a, ®Ó mua trùc tiÕp cho råi!/buy","ÎÒÏëGiao dÞch/yes", "VËy th«i ®i/no")
+			Say("<#> Thêi gian ch­a ®ñ, thuèc ch­a lµm xong ®­îc, ng­¬i ph¶i chê ®îi thªm."..i.."<#> gi©y.", 3, "Ta kh«ng muèn ®îi n÷a, ®Ó mua trùc tiÕp cho råi!/buy","Ta muèn giao dÞch/yes", "VËy th«i ®i/no")
 		else
 			StopTimer()						--½áÊø¼ÆÊ±
 			W66_getitem()
@@ -50,7 +50,7 @@ function buy()
   	else
   		Pay(750)
   		AddEventItem(186)
-  		Msg2Player("Cã ®­îc X¹ H­¬ng Hæ Cèt Cao.")
+  		Msg2Player("NhËn ®­îc X¹ H­¬ng Hæ Cèt Cao.")
   		SetTask(66,5)
   		AddNote("Mua ®­îc X¹ H­¬ng Hæ Cèt Cao.")
   		Msg2Player("Mua ®­îc X¹ H­¬ng Hæ Cèt Cao.")
@@ -68,10 +68,10 @@ end
 
 function W66_getitem()
 	AddEventItem(186)
-	Msg2Player("Cã ®­îc X¹ H­¬ng Hæ Cèt Cao.")
+	Msg2Player("NhËn ®­îc X¹ H­¬ng Hæ Cèt Cao.")
 	SetTask(66,5)
 --	StopTimer()
-	AddNote("Cã ®­îc X¹ H­¬ng Hæ Cèt Cao.")
+	AddNote("NhËn ®­îc X¹ H­¬ng Hæ Cèt Cao.")
 end
 
 function yes()

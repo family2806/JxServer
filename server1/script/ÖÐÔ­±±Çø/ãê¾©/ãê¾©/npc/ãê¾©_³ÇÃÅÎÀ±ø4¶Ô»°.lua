@@ -17,7 +17,7 @@ function enroll_S1_correct()
 	Talk(1,"","Xİch §ång kho¸ng mÆc dï kh«ng ®¸ng gi¸ g× nh­ng còng xin tÆng ng­êi lµm quµ vËy!")
 	AddEventItem(121)
 	Msg2Player("NhËn ®­îc Xİch §ång kho¸ng")
-	AddNote("»Ø´ğÎÀ±øµÄÎÊÌâ£¬NhËn ®­îc Xİch §ång kho¸ng")
+	AddNote("Tr¶ lêi c©u hái cña vÖ binh, nhËn ®­îc Xİch §ång kho¸ng")
 end;
 
 function enroll_S1_wrong()

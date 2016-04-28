@@ -22,7 +22,7 @@ function main()
 end;
 
 function select()
-	Say("°ïPhiÒn huynh nãi víi t×nh lang Tr­¬ng §¹i Nguyªn, canh ba ®ªm nay, t¹i chç cò, kh«ng gÆp kh«ng vÒ.", 2, "§­îc, ta sÏ gióp /yes", "Ta cßn viÖc kh¸c ph¶i lµm /no")
+	Say("H·y gióp tiÓu n÷ ®em chiÕc kh¨n tay nµy ®Õn t×nh lang Tr­¬ng §¹i Nguyªn, vµ nãi víi huynh Êy canh ba ®ªm nay, chç cò, kh«ng gÆp kh«ng vÒ.", 2, "§­îc, ta sÏ gióp /yes", "Ta cßn viÖc kh¸c ph¶i lµm /no")
 end
 
 function yes()

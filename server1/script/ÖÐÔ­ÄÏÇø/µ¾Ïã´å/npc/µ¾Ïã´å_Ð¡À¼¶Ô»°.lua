@@ -27,7 +27,7 @@ function main(sel)
   			end
   			AddRepute(i)
   			AddNote("Giao X¹ H­¬ng Hæ Cèt Cao cho TiÓu Lan, hoµn thµnh nhiÖm vô. ")
-  			Msg2Player("Giao X¹ H­¬ng Hæ Cèt Cao cho TiÓu Lan, hoµn thµnh nhiÖm vô.  ")
+  			Msg2Player("Giao X¹ H­¬ng Hæ Cèt Cao cho TiÓu Lan, hoµn thµnh nhiÖm vô. ")
   			if (random(0,3) == 0) then				-- 25%µÄ»úÂÊµÃ¶þ¼¶½äÖ¸
 				p1,p2,p3,p4,p5,p6 = RndItemProp(6,15)
   				AddItem(0,3,0,2,random(0,4),GetLucky(), p1,p2,p3,p4,p5,p6)

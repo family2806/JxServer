@@ -8,7 +8,7 @@ function main()
 	if (UTask_tr == 20*256+50) and (HaveItem(126) == 0) then
 		SetPropState()
 		AddEventItem(126)
-		Msg2Player("T×m ®­îc TiÓu Kh«i la ®i l¹c. ")
-		AddNote("T×m ®­îc TiÓu Kh«i la ®i l¹c. ")
+		Msg2Player("T×m ®­îc TiÓu Kh«i la. ")
+		AddNote("T×m ®­îc TiÓu Kh«i la. ")
 	end
 end;	

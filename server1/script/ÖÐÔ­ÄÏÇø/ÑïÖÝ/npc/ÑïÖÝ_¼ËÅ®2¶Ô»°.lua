@@ -19,9 +19,9 @@ end;
 
 function prise_1()
 --	if (GetSex() == 1) then		--ÈôÍæ¼Ò½ÇÉ«ÊÇÅ®ĞÔ£¬¶Ô»°Ó¦¸ÃĞŞ¸Ä¡£ÏÈÁô³ö½Ó¿Ú£¬¾ßÌåµÄÑÔ´ÊÒÔºóÔÙ¸Ä¡£
---		Talk(4,"","Íæ¼Ò£ºÕâÎ»¹ÃÄïÃ¼Èç´äÓğ£¬¼¡Èç°×Ñ©£¬ÑüÈçÊøËØ£¬³İÈçº¬±´¡£ÔöÖ®Ò»·ÖÔòÌ«³¤£¬¼õÖ®Ò»·ÖÔòÌ«¶Ì¡£Öø·ÛÔòÌ«°×£¬Ê©ÖìÔòÌ«³à¡£µ±ÕæÓĞÎ÷Ê©Ö®Ã²£¬¹óåúÖ®Èİ°¡£¡","Ng­¬i thËt biÕt nh×n, bæn c« n­¬ng hiÖu x­ng lµ D­¬ng Ch©u ®Ö nhÊt mü nh©n. §µn «ng tõ 8 tuæi trë lªn,80 tuæi trë xuèng ®Òu quú mäp d­íi ch©n bæn c« n­¬ng!","Ta qu¶ thËt vinh h¹nh, cuèi cïng còng cã thÓ chiªm ng­ìng vÎ ®Ñp cña ®Ö nhÊt mü nh©n D­¬ng Ch©u. Ch¼ng hay c« n­¬ng cã thÓ tÆng ta 1 chiÕc kh¨n tay? Ta muèn nh×n kh¨n nh­ nh×n thÊy ng­êi, m·i m·i ghi nhí nĞt xinh ®Ñp mü miÒu cña c« n­¬ng!","Å®×Ó£ºÕâÓĞºÎÄÑ£¿")
+--		Talk(4,"","Íæ¼Ò£ºÕâÎ»¹ÃÄïÃ¼Èç´äÓğ£¬¼¡Èç°×Ñ©£¬ÑüÈçÊøËØ£¬³İÈçº¬±´¡£ÔöÖ®Ò»·ÖÔòÌ«³¤£¬¼õÖ®Ò»·ÖÔòÌ«¶Ì¡£Öø·ÛÔòÌ«°×£¬Ê©ÖìÔòÌ«³à¡£µ±ÕæÓĞÎ÷Ê©Ö®Ã²£¬¹óåúÖ®Èİ°¡£¡","Å®×Ó£ºÄãÕæÓĞÑÛ¹â£¬¹ÃÄïÎÒºÅ³ÆÑïÖİµÚÒ»ÃÀÈË£¬°ËËêÒÔÉÏ£¬°ËÊ®ËêÒÔÏÂ£¬Ö»ÒªÊÇÄĞÈË£¬Ã»ÓĞ²»°İµ¹ÔÚ±¾¹ÃÄïµÄÈ¹ÏÂµÄ£¡","Íæ¼Ò£ºÎÒÕæÊÇÈÙĞÒ£¬¾¹ÄÜ¼ûÊ¶µ½ÑïÖİµÚÒ»ÃÀÅ®£¬²»Öª¹ÃÄïÄÜ·ñËÍÎÒÒ»ÌõÊÖÅÁ£¬ÈÃÎÒ¼ûÅÁÈç¼ûÈË£¬ÓÀÔ¶¼Ç×¡¹ÃÄïµÄÃÀÃ²£¿","Å®×Ó£ºÕâÓĞºÎÄÑ£¿")
 --	else
-		Talk(4,"","VŞ c« n­¬ng nµy mµi nh­ phØ thóy, da tr¾ng nh­ tuyÕt, r¨ng tr¾ng nh­ ngäc kh«ng thua kĞm g× T©y Thi, Quı Phi!","Ng­¬i thËt biÕt nh×n, bæn c« n­¬ng hiÖu x­ng lµ D­¬ng Ch©u ®Ö nhÊt mü nh©n. §µn «ng tõ 8 tuæi trë lªn,80 tuæi trë xuèng ®Òu quú mäp d­íi ch©n bæn c« n­¬ng!","Ta qu¶ thËt vinh h¹nh, cuèi cïng còng cã thÓ chiªm ng­ìng vÎ ®Ñp cña ®Ö nhÊt mü nh©n D­¬ng Ch©u. Ch¼ng hay c« n­¬ng cã thÓ tÆng ta 1 chiÕc kh¨n tay? Ta muèn nh×n kh¨n nh­ nh×n thÊy ng­êi, m·i m·i ghi nhí nĞt xinh ®Ñp mü miÒu cña c« n­¬ng!","VËy cã g× khã?")
+		Talk(4,"","VŞ c« n­¬ng nµy mµi nh­ phØ thóy, da tr¾ng nh­ tuyÕt, r¨ng tr¾ng nh­ ngäc kh«ng thua kĞm g× T©y Thi, Quı Phi!","Å®×Ó£ºÄãÕæÓĞÑÛ¹â£¬¹ÃÄïÎÒºÅ³ÆÑïÖİµÚÒ»ÃÀÈË£¬°ËËêÒÔÉÏ£¬°ËÊ®ËêÒÔÏÂ£¬Ö»ÒªÊÇÄĞÈË£¬Ã»ÓĞ²»°İµ¹ÔÚ±¾¹ÃÄïµÄÈ¹ÏÂµÄ£¡","Íæ¼Ò£ºÎÒÕæÊÇÈÙĞÒ£¬¾¹ÄÜ¼ûÊ¶µ½ÑïÖİµÚÒ»ÃÀÅ®£¬²»Öª¹ÃÄïÄÜ·ñËÍÎÒÒ»ÌõÊÖÅÁ£¬ÈÃÎÒ¼ûÅÁÈç¼ûÈË£¬ÓÀÔ¶¼Ç×¡¹ÃÄïµÄÃÀÃ²£¿","VËy cã g× khã?")
 --	end
 	AddEventItem(74)
 	Msg2Player("Th­ Sinh tÆng b¹n chiÕc qu¹t ")

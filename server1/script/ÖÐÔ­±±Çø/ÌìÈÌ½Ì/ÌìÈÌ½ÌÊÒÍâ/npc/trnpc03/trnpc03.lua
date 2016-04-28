@@ -23,7 +23,7 @@ function main()
 		elseif (UTask_tr == 20*256+80) and (HaveItem(58) == 1 ) then
 			L20_prise()
 		elseif (UTask_tr == 30*256+20) then	--½Óµ½30¼¶ÈÎÎñ£¬ÒªÖ±½ÓÇĞ»»µ½ÇØÊ¼»ÊÁê
-			Say("Muèn ta ®­a ng­¬i ®Õn l¨ng TÇn Thñy Hoµng kh«ng? Kh«ng vÊn ®Ò g×, chØ cÇn 500 l­îng th«i!", 2, "Lµm phiÒn ®­a ta ®i /L30_deliver_yes", "Ta sÏ tù ®i! /L30_deliver_no")
+			Say("Muèn ta ®­a ng­¬i ®Õn l¨ng TÇn Thñy Hoµng kh«ng? Kh«ng vÊn ®Ò g×, chØ cÇn 500 l­îng th«i!", 2, "Lµm phiÒn ®­a ta ®i /W30_deliver_yes", "Ta sÏ tù ®i! /L30_deliver_no")
 		elseif (UTask_tr == 40*256+20) then	--½Óµ½40¼¶ÈÎÎñ£¬ÒªÖ±½ÓÇĞ»»µ½½£¸óÖĞÔ­
 			Say("Muèn ta ®­a ng­¬i ®Õn l¨ng TÇn Thñy Hoµng kh«ng? Kh«ng vÊn ®Ò g×, chØ cÇn 700 l­îng th«i!", 2, "Lµm phiÒn ®­a ta ®i /L40_deliver_yes", "Ta sÏ tù ®i! /L40_deliver_no")
 		elseif (UTask_tr >= 20*256+30) and (UTask_tr < 20*256+80) then					--ÒÑ¾­½Óµ½20¼¶ÈÎÎñ£¬ÉĞÎ´Íê³É
@@ -34,7 +34,7 @@ function main()
 			Talk(4, "", "BiÕt ta lµ ai kh«ng? Ta chİnh lµ Thiªn h¹ ®Ö tø cao thñ oai phong lÉm liÖt ¤ Hîp T¸t!", "Thiªn h¹ ®Ö tø th«i sao?", "§óng, ®Ö nhÊt chİnh lµ Gi¸o chñ, ngoµi Gi¸o chñ, Gia LuËt TŞ Ly vµ §oan Méc DuÖ ra, vâ c«ng cña ta lµ lîi h¹i nhÊt! ThÕ nµo? Ng­¬i cã phôc kh«ng? NÕu kh«ng phôc ta sÏ cho ng­¬i nÕm sù lîi h¹i cña NhËt NguyÖt Song Lu©n!", "§­îc råi! §­îc råi!")
 		end
 	elseif (GetTask(30) == 5) then		--½Óµ½ÓíÍõ½£ÈÎÎñ£¬ÒªÖ±½ÓÇĞ»»µ½»ªÉ½
-		Say("Muèn ta ®­a ng­¬i ®Õn l¨ng TÇn Thñy Hoµng kh«ng? Kh«ng vÊn ®Ò g×, chØ cÇn 500 l­îng th«i!", 2, "Lµm phiÒn ®­a ta ®i /L30_deliver_yes", "Ta sÏ tù ®i! /W30_deliver_no")
+		Say("Muèn ta ®­a ng­¬i ®Õn l¨ng TÇn Thñy Hoµng kh«ng? Kh«ng vÊn ®Ò g×, chØ cÇn 500 l­îng th«i!", 2, "Lµm phiÒn ®­a ta ®i /W30_deliver_yes", "Ta sÏ tù ®i! /W30_deliver_no")
 	elseif (UTask_tr >= 70*256) then							--ÒÑ¾­³öÊ¦
 		Talk(1,"","Ng­¬i muèn ®i µ? Ta sÏ nhí ng­¬i ®Êy, huhuhu….")
 	else
@@ -61,7 +61,7 @@ function L20_get()
 end;
 
 function L20_get_yes()
-	Talk(1,"","Ì«ºÃÁË£¡Tªn tiÓu quû ®ã ë <color=Red>c¸nh rõng phİa §«ng<color>, phiÒn ng­¬i gi¸o huÊn nã!")
+	Talk(1,"","Tèt qu¸! Tªn nhãc ®ã ë <color=Red>c¸nh rõng phİa §«ng<color>, h·y thay ta gi¸o huÊn nã!")
 	SetTask(4, 20*256+30)
 	AddNote("NhËn nhiÖm vô '§øa trÎ th«ng minh': T×m ®øa trÎ lÊy l¹i cÆp NhËt NguyÖt Song Lu©n cho ¤ Hîp T¸t. ")
 	Msg2Player("NhËn nhiÖm vô '§øa trÎ th«ng minh': T×m ®øa trÎ lÊy l¹i cÆp NhËt NguyÖt Song Lu©n cho ¤ Hîp T¸t. ")
@@ -100,7 +100,7 @@ function L30_deliver_yes()	--ÌìÈÌ30¼¶ÈÎÎñ£¬ÒªÖ±½ÓÇĞ»»µ½ÇØÊ¼»ÊÁê
 		Pay(500)
 		NewWorld(7, 2235, 2847)
 	else
-		Talk(1,"","Ë­¶¼ÖªµÀ£¬Kh«ng tiÒn b¹c nµo cã thÓ mua ®­îc ta, Thiªn h¹ ®Ö tø cao thñ oai phong lÉm liÖt NhËt NguyÖt §µn Chñ ¤ Hîp T¸t.")
+		Talk(1,"","Ai còng biÕt, kh«ng tiÒn b¹c nµo cã thÓ mua ®­îc ta, Thiªn h¹ ®Ö tø cao thñ oai phong lÉm liÖt NhËt NguyÖt §µn Chñ ¤ Hîp S¸t.")
 	end
 end;
 
@@ -113,7 +113,7 @@ function L40_deliver_yes()	--40¼¶ÈÎÎñ£¬ÒªÖ±½ÓÇĞ»»µ½½£¸óÖĞÔ­
 		Pay(700)
 		NewWorld(43, 1695, 3200)
 	else
-		Talk(1,"","Ë­¶¼ÖªµÀ£¬Kh«ng tiÒn b¹c nµo cã thÓ mua ®­îc ta, Thiªn h¹ ®Ö tø cao thñ oai phong lÉm liÖt NhËt NguyÖt §µn Chñ ¤ Hîp T¸t.")
+		Talk(1,"","Ai còng biÕt, kh«ng tiÒn b¹c nµo cã thÓ mua ®­îc ta, Thiªn h¹ ®Ö tø cao thñ oai phong lÉm liÖt NhËt NguyÖt §µn Chñ ¤ Hîp S¸t.")
 	end
 end;
 

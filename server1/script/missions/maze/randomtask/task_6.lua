@@ -1,5 +1,5 @@
 --ªÆ∑÷Œ™9∏ˆ«¯”Ú£¨÷–º‰”–∏ˆBOSSCÊ Tuy÷t S∏t
---√ø∏ÙNh t∑÷÷”æÕª·À¢“ª∏ˆæ¯…±X∫≈–°π÷
+--√ø∏Ù1∑÷÷”æÕª·À¢“ª∏ˆæ¯…±X∫≈–°π÷
 --–°π÷≤ªƒ‹…±
 --∞—BOSS…±µÙπ˝πÿ°£
 
@@ -8,22 +8,22 @@ Include("\\script\\global\\fightnpc_list.lua")
 Include("\\script\\lib\\timerlist.lua")
 IL("NPCINFO")
 
-StepNh t = Step:New()
-NUMBER_STRING = {"Nh t", "Nhﬁ ", "Tam", "T¯" , "5", "lÙc ", "7", "8"}
+Step1 = Step:New()
+NUMBER_STRING = {"1", "2", "3", "4" , "5", "6", "7", "8"}
 
-function StepNh t:Start(task)
+function Step1:Start(task)
 	local tbPos = task:GetPosition()
-	local nNpcIndex = FightNpcManager:AddNpc("CÊ Tuy÷t S∏t", Nh tlÙc TamTam, task:GetMapId(), tbPos.boss.x, tbPos.boss.y, self, Nh t, Nh t, Nh t)
+	local nNpcIndex = FightNpcManager:AddNpc("CÊ Tuy÷t S∏t", 1633, task:GetMapId(), tbPos.boss.x, tbPos.boss.y, self, 1, 1, 1)
 	self.tbNpcIndex = {}
 	tinsert(self.tbNpcIndex, nNpcIndex)
-	self.nTimer = TimerList:AddTimer(self, Nh t0 * Nh t8)
+	self.nTimer = TimerList:AddTimer(self, 10 * 18)
 	self.tbPos = tbPos
 	self.pTask = task
 end
 
-function StepNh t:OnTime()
+function Step1:OnTime()
 	local nIndex = getn(self.tbNpcIndex)
-	local nId = Nh tlÙc TamT¯ + nIndex - Nh t
+	local nId = 1634 + nIndex - 1
 	local nNpcIndex = FightNpcManager:AddNpc(
 		format("Tuy÷t s∏t %s sË", NUMBER_STRING[nIndex]),
 		nId,
@@ -31,28 +31,28 @@ function StepNh t:OnTime()
 		self.tbPos.jueshas[nIndex].x,
 		self.tbPos.jueshas[nIndex].y,
 		self,
-		nIndex + Nh t,
-		Nh t,
-		Nh t)
+		nIndex + 1,
+		1,
+		1)
 	tinsert(self.tbNpcIndex, nNpcIndex)
 	if (getn(self.tbNpcIndex) >= 9) then
 		self.nTimer = 0
 		return 0
 	else
-		return Nh t
+		return 1
 	end
 end
 
-function StepNh t:OnDeath(nKilledIndex, pKillerPlayer, nIndex)
+function Step1:OnDeath(nKilledIndex, pKillerPlayer, nIndex)
 	self.tbNpcIndex[nIndex] = 0
-	if (nIndex == Nh t) then
+	if (nIndex == 1) then
 		self.pTask:Proceed()
 	end
 end
 
-function StepNh t:Destroy()
+function Step1:Destroy()
 	if (self.tbNpcIndex) then
-		for i = Nh t, getn(self.tbNpcIndex) do
+		for i = 1, getn(self.tbNpcIndex) do
 			local nNpcIndex = self.tbNpcIndex[i]
 			if (nNpcIndex > 0) then
 				FightNpcManager:DelNpc(nNpcIndex)
@@ -66,5 +66,5 @@ function StepNh t:Destroy()
 	end
 end
 
-pTask = Task:New(lÙc )
-pTask:AddStep(clone(StepNh t))
+pTask = Task:New(6)
+pTask:AddStep(clone(Step1))

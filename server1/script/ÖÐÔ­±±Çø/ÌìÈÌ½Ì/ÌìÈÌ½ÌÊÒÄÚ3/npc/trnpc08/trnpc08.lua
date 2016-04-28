@@ -89,8 +89,8 @@ function L50_prise()
 	SetTask(21,0)		--ÓÃÍêºó¾Í½«¸¨Öú±äÁ¿ÇåÁã£¬±ãÓÚ½ñºóÖØ¸´ÀûÓÃ
 --	AddMagic(143)
 	add_tr(60)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã±»²á·âÎªThiªn NhÉn½Ì»¤½ÌÊ¹.")
-	AddNote("»ØThiªn NhÉn½Ì¼û×ó»¤·¨¶ËÄ¾î£¸´Ãü£¬Íê³É¾ÈÈËÈÎÎñ£¬ÉıÎª»¤½ÌÊ¹")
+	Msg2Player("Chóc mõng b¹n ®· ®­îc s¾c phong lµm Hé Gi¸o Sø cña Thiªn NhÉn Gi¸o! Häc ®­îc vâ c«ng LŞch Ma §o¹t Hån.")
+	AddNote("VÒ Thiªn NhÉn Gi¸o ®Õn gÆp T¶ Hé ph¸p §oan Méc DuÖ phôc mÖnh, hoµn thµnh nhiÖm vô cøu ng­êi. Th¨ng chøc lµm Hé Gi¸o Sø.")
 end;
 
 function Uworld123_step4a()
@@ -117,6 +117,6 @@ end
 function Uworld123_step4b()
 	DelItem(377)
 	SetTask(123,70)
-	Talk(1,"","ºÜºÃ£¬Nhê ng­¬i thay ta chuyÓn lêi cho BÊt NhiÔm C«ng Tö, nãi §oan Méc DuÖ ta quyÕt kh«ng lµm ngµi thÊt väng. ")
+	Talk(1,"","RÊt tèt! nhê ng­¬i thay ta chuyÓn lêi cho BÊt NhiÔm C«ng Tö, nãi §oan Méc DuÖ ta quyÕt kh«ng lµm ngµi thÊt väng. ")
 	Msg2Player("§oan Méc DuÖ tiÕp tôc mêi b¹n vÒ b¸o tin cho §­êng BÊt NhiÔm.")
 end

@@ -22,7 +22,7 @@ function prise_2()
 	Talk(2,"","VŞ l·o gia nµy giµu cã nhÊt vïng, danh tiÕng kh¾p n¬i. §Õn Hoµng Th­îng còng khã mµ b× ®­îc víi sù phó quı cña ngµi! Ta chóc «ng tiÒn v« ngµy cµng nhiÒu,phiÒn phøc ngµy cµng İt!"," Hõm!C¸i tªn tiÓu quû nµy miÖng l­ìi cña h¾n míi ngät lµm sao! §­îc! Xem nh­ h«m nay ta më lßng mét lÇn vËy. MiÕng 'b¶n chØ' nµy ta tÆng cho ng­¬i!")
 	AddEventItem(75)
 	Msg2Player("T«n Viªn Ngo¹i tÆng b¹n B¶n chØ ")
-	AddNote("T«n Viªn Ngo¹i tÆng b¹n B¶n chØ   ")
+	AddNote("T«n Viªn Ngo¹i tÆng b¹n B¶n chØ ")
 end;
 
 function prise_3()

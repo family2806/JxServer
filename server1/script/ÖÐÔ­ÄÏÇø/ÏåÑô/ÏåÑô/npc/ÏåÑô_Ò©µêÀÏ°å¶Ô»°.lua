@@ -30,22 +30,22 @@ function main(sel)
 			else
 				Say("Muèn trŞ ch÷a bÖnh dŞch cÇn 5 lo¹i thuèc: <color=Red> §­¬ng Quy, Hîp Hoan, HuyÒn S©m, Phßng Kû, Chu Sa <color>.H·y ®Õn <color=Red>§«ng Phôc Ng­u s¬n<color> ®Ó t×m!",
 					2,
-					"Ta ph¶i mua tr­íc İt d­îc phÈm/yes",
-					"ta ®i t×m ngay ®©y/no")
+					"Giao dŞch/yes",
+					"Kh«ng giao dŞch/no")
 			end
 		else
 			Say("C¸c lo¹i thuèc trŞ ®¶ th­¬ng, trËt th­¬ng, trµng th­¬ng, vÕt c¾t, báng ®Çy ®ñ h¬n chç kh¸c, ng­¬i muèn mua thuèc g×?",
 				3,
-				"Ta ph¶i mua tr­íc İt d­îc phÈm/yes",
+				"Giao dŞch/yes",
 				"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
-				"ta ®i t×m ngay ®©y/no")
+				"Kh«ng giao dŞch/no")
 		end
 	else
 		Say("C¸c lo¹i thuèc trŞ ®¶ th­¬ng, trËt th­¬ng, trµng th­¬ng, vÕt c¾t, báng ®Çy ®ñ h¬n chç kh¸c, ng­¬i muèn mua thuèc g×?",
 			3,
-			"Ta ph¶i mua tr­íc İt d­îc phÈm/yes",
+			"Giao dŞch/yes",
 			"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
-			"ta ®i t×m ngay ®©y/no")
+			"Kh«ng giao dŞch/no")
 	end
 end
 
