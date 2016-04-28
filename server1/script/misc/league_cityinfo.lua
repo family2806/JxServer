@@ -93,7 +93,7 @@ function get_maincitybonus_date(nCityID)
 	local nDate = 0;
 	
 	if (GetGlbValue(CITYINFO_GLBVALUEID[nCityID]) == 1) then
-		debug_print("×¢Òâ£º»¹Î´Ö´ĞĞÃüÁî"..nCityID)
+		debug_print("Chó ı: VÉn ch­a chÊp hµnh mÖmh lÖnh"..nCityID)
 		nDate = get_maincity_deadline(nCityID);--tonumber(date("%y%m%d"))
 	else
 		debug_print("GetDate ok!")
@@ -109,7 +109,7 @@ function get_citybonus_date(nCityID)
 	local nDate = 0;
 	
 	if (GetGlbValue(CITYINFO_GLBVALUEID[nCityID]) == 1) then
-		debug_print("×¢Òâ£º»Øµ÷»¹Î´Ö´ĞĞ£¡"..nCityID)
+		debug_print("Chó ı: VÉn ch­a chÊp hµnh mÖmh lÖnh"..nCityID)
 		nDate = tonumber(date("%Y%m%d"))
 	else
 		debug_print("GetDate ok!")
@@ -125,7 +125,7 @@ function get_citybonus_task(nCityID, nTsk)
 	local nValue = 0;
 	
 	if (GetGlbValue(CITYINFO_GLBVALUEID[nCityID]) == 1) then
-		debug_print("×¢Òâ£º»¹Î´Ö´ĞĞÃüÁî"..nCityID)
+		debug_print("Chó ı: VÉn ch­a chÊp hµnh mÖmh lÖnh"..nCityID)
 		nValue = 100;	--½±ÀøµÄ×î´óÖµ
 	else
 		debug_print("GetDate ok!")

@@ -1,13 +1,13 @@
 tbVNGWORDPOS= tbVNGWORDPOS or {}
 tbVNGWORDPOS.tbOtherMap = {
-		{523,1579,3121	,"Ã÷ÔÂÕòÏåÑô",},
-		{521,1579,3121	,"Ã÷ÔÂÕò³É¶¼",},
-		{520,1579,3121	,"Ã÷ÔÂÕò·ïÏè",},
-		{525,1579,3121	,"Ã÷ÔÂÕò´óÀí",},
-		{524,1579,3121	,"Ã÷ÔÂÕòÑïÖİ",},
-		{522,1579,3121	,"Ã÷ÔÂÕòãê¾©",},
-		{526,1579,3121	,"Ã÷ÔÂÕòÁÙ°²",},
-		{55,1602,3125		,"ÌÒ»¨Ô´",},
+		{523,1579,3121	,"Minh nguyÖt trÊn T­¬ng D­¬ng",},
+		{521,1579,3121	,"Minh nguyÖt trÊn Thµnh §«",},
+		{520,1579,3121	,"Minh nguyÖt trÊn Ph­îng T­êng",},
+		{525,1579,3121	,"Minh nguyÖt trÊn §¹i Lı",},
+		{524,1579,3121	,"Minh nguyÖt trÊn D­¬ng Ch©u",},
+		{522,1579,3121	,"Minh nguyÖt trÊn BiÖn Kinh",},
+		{526,1579,3121	,"Minh nguyÖt trÊn L©m An",},
+		{55,1602,3125		,"§µo Hoa Nguyªn",},
 	};
 
 function tbVNGWORDPOS:GotoOtherMap()
@@ -16,14 +16,14 @@ function tbVNGWORDPOS:GotoOtherMap()
 	for i = 1, nCount do
 		tinsert(tab_Content, self.tbOtherMap[i][4].."/#tbVNGWORDPOS:GotoStepPos( "..i..")");
 	end
-	tinsert(tab_Content, "Àë¿ª/no");
-	Say("ÉñĞĞ·û£¬µ½ÄãÏëÈ¥µÄµØ·½.", getn(tab_Content), tab_Content);
+	tinsert(tab_Content, "Rêi khái/no");
+	Say("ThÇn hµnh phï, ®i ®Õn n¬i ng­¬i muèn.", getn(tab_Content), tab_Content);
 end
 
 function tbVNGWORDPOS:GotoStepPos(nIdx)
 	local tbOtherMap = self.tbOtherMap[nIdx];
 	NewWorld(tbOtherMap[1], tbOtherMap[2], tbOtherMap[3]);
 	SetFightState(0);
-	Msg2Player("Çë×øºÃ£¬ÎÒÃÇÈ¥"..tbOtherMap[4].."°É");
+	Msg2Player("Xin h·y ngåi yªn, chóng ta ®i"..tbOtherMap[4].." nµo");
 end
 

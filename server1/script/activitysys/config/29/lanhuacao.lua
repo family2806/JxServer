@@ -13,7 +13,7 @@ tbLanHuanCaoPos =
 		{153,1757,3197,},
 	}
 tbLanHuaCao = {
-		szName = "Ò°À¼»¨·Û", 
+		szName = "Bôi Hoa Lan Rõng", 
 		nLevel = 95,
 		nNpcId = 1782,
 		nIsboss = 0,
@@ -28,15 +28,15 @@ local _Limit = function(nNpcIdx)
 	}
 	
 	if not pActivity:CheckDate() then
-		Msg2Player(format("»î¶¯Ê±¼äÒÑ¹ı£¬²»ÄÜÔÙ¼ÌĞøÊÕ¼¯ÁË."))
+		Msg2Player(format("Thêi gian ho¹t ®éng ®· qua, kh«ng thÓ tiÕp tôc thu thËp n÷a."))
 		return
 	end
 	
-	if (not PlayerFunLib:CheckTotalLevel(120,"ÄãµÄµÈ¼¶²»×ã120¼¶",">=")) then
+	if (not PlayerFunLib:CheckTotalLevel(120,"§¼ng cÊp cña ng­¬i ch­a ®ñ 120",">=")) then
 		return
 	end
 	
-	if (not lib:CheckTime(tbAllowTime,"Ä¿Ç°²»ÊÇÊÕ¼¯Ê±¼ä£¬Ã¿Ìì12:30 µ½13:00 ÒÔ¼°20:00 µ½ 20:30 À´Å¶?")) then
+	if (not lib:CheckTime(tbAllowTime,"HiÖn t¹i kh«ng ph¶i thêi gian thu thËp, mçi ngµy vµo lóc 12:30 ®Õn 13:00 vµ 20:00 ®Õn 20:30 h½ng ®Õn nhĞ.")) then
 		return
 	end
 	
@@ -68,7 +68,7 @@ local _GetFruit = function(nNpcIdx, dwNpcId)
 	
 	local nCount = CalcItemCount(-1, 6, 1, 1977, -1)
 	if nCount > 2 then
-		Msg2Player(format("Ã¿ÌìÖ»ÔÊĞíËÍ2¶äÒ°À¼»¨¸øÊ¿±ø£¬ÄãÒÑ¾­´ïµ½ %d¶äÁË.",nCount))
+		Msg2Player(format("Mçi ngµy chØ ®­îc phĞp tÆng 2 Hoa Lan Rõng cho Ng­êi Lİnh, trªn ng­êi ng­¬i ®· ®¹t ®Õn %d c¸i råi.",nCount))
 	end
 	--Msg2Player("ÄãµÃµ½ÁËÒ»¶äÀ¼»¨¡£");
 end
@@ -85,7 +85,7 @@ function _GenLanHuaCao(nNpcParam)
 end
 
 local _OnBreak = function()
-	Msg2Player("ÊÕ¼¯¼ä¶Ï")
+	Msg2Player("Thu thËp ®øt ®o¹n")
 end
 
 function main()

@@ -13,18 +13,18 @@ GTSK_NA_MONEYGIFT_SVMAXMONEY	= 832				--µ±ÈÕÀñ¹ÙÒÑ¶Ò»»½±Àø½ğÇ®µÄÊıÁ¿
 
 EXT_NA_MONEYGIFT_ACCT					= 2					--À©Õ¹µã£¬Èı¸ö½ÇÉ«²Î¼Ó»î¶¯
 TB_MONEYGIFT_MSG = {
-	"<#>Äú»¹Î´½»Ö¤¼ş,ÎŞ·¨²Î¼Ó´Ë»î¶¯!",
-	"<#>50¼¶ÒÔÉÏµÄÍæ¼Ò²Å¿ÉÒÔ²Î¼Ó´Ë»î¶¯.",
-	"<#>ÄúÒÑÓĞ3¸ö½ÇÉ«²Î¼Ó´Ë»î¶¯£¬ÎŞ·¨ÔÙ²Î¼ÓÁË.",
-	"<#>´Ë´Î»î¶¯ÄúÒÑ¶Ò»»¹»100Íò! ¸ĞĞ»Ö§³Ö!",
-	"<#>½ñÌìÄúÒÑ¶Ò»»¹»20Íò. Ã÷ÌìÔÙÀ´!",
-	"<#>Õæ²»ÇÉ! ÎÒ¸Õ¸Õ»»ÍêÇ®! Òª²»ÊÔÊÔµ½±ğµÄ³Ç»»»òÕßÃ÷ÌìÔÙÀ´.×£Äú¿ªĞÄ!",
-	"<#>ËÆºõÃ»ÓĞÄúµÄ¹úÇìÀñÎïÅ¶!",
+	"<#>Quı kh¸ch ch­a n¹p thÎ, kh«ng thÓ tham gia ho¹t ®éng nµy!",
+	"<#>ChØ nh÷ng ng­êi ®¼ng cÊp trªn 50 míi cã thÓ tham gia ho¹t ®éng nµy.",
+	"<#>Ng­¬i ®· cã 3 nh©n vËt tham gia ho¹t ®éng nµy, kh«ng thÓ tham gia thªm ®­îc n÷a.",
+	"<#>Quı kh¸ch ®· ®æi ®ñ 100 v¹n trong ho¹t ®éng nµy! C¶m ¬n ®· ñng hé!",
+	"<#>H«m nay quı kh¸ch ®· ®æi ®ñ 20 v¹n. Mai l¹i ®Õn nhĞ!",
+	"<#>ThËt ng¹i qu¸! Ta míi ®æi hÕt tiÒn! H·y thö ®i c¸c thµnh kh¸c hoÆc ngµy mai quay l¹i nhĞ. Chóc vui vÎ!",
+	"<#>H×nh nh­ quı kh¸ch kh«ng cã “Quµ Quèc Kh¸nh”!",
 }
 function vm_NationalDay()
-	Say("<#>¹úÇì¿ìÀÖ! ¿ìÈ¥Á·¹¦, ÕÒµ½¹úÇìÀñÎïµ½ÎÒÕâ¶Ò»»ÓĞÈ¤µÄÀñÎï!", 2,
-	"¶Ò»»¹úÇìÀñÎï/NA_want2changegift",
-	"ÎÒÖ»ÊÇËæ±ã¿´¿´/OnCancel");
+	Say("<#>Quèc kh¸nh vui vÎ! H·y mau ®i luyÖn c«ng, t×m ®­îc “Quµ Quèc Kh¸nh” ®Õn ®©y ta sÏ ®æi cho phÇn quµ thó vŞ!", 2,
+	"§æi quµ Quèc Kh¸nh/NA_want2changegift",
+	"Ta chØ ®Õn xem th«i/OnCancel");
 end;
 
 function NA_want2changegift()
@@ -37,8 +37,8 @@ function NA_want2changegift()
 		SetTask(TSK_NA_MONEYGIFT_DAYMAXMONEY, GetTask(TSK_NA_MONEYGIFT_DAYMAXMONEY) + NA_MONEYGIFT_MONEY);
 		SetGlbValue(GTSK_NA_MONEYGIFT_SVMAXMONEY, GetGlbValue(GTSK_NA_MONEYGIFT_SVMAXMONEY) + NA_MONEYGIFT_MONEY);
 		Earn(NA_MONEYGIFT_MONEY);
-		WriteLog("[¹úÇì»î¶¯]\t"..date().." \tName:"..GetName().."\tAccount:"..GetAccount().." ½ÓÊÜ"..NA_MONEYGIFT_MONEY.." Á½")
-		Say("<#>ÇëÊÕÏÂÒøÁ½. ×£Äú¹úÇì¿ìÀÖ£¡", 1, "ÊÕÏÂÒøÁ½/OnCancel")
+		WriteLog("[Ho¹t ®éng Quèc Kh¸nh]\t"..date().." \tName:"..GetName().."\tAccount:"..GetAccount().." NhËn ®­îc"..NA_MONEYGIFT_MONEY.." l­îng")
+		Say("<#>Xin nhËn ng©n l­îng. Chóc Quèc Kh¸nh vui vÎ!", 1, "NhËn ng©n l­îng/OnCancel")
 		if (GetTask(TSK_NA_MONEYGIFT_ISTAKED) == 0) then
 			SetTask(TSK_NA_MONEYGIFT_ISTAKED, 1);
 			AddExtPoint(EXT_NA_MONEYGIFT_ACCT, 1);

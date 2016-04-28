@@ -4,26 +4,26 @@ Include("\\script\\item\\battles\\songjinskill.lua");
 
 egg_tbAward	=
 {
-	{szName = "½ğÖ®Õ½»ê", 	nRate = 0.05, tbSkill = {add466}},
-	{szName = "Ä¾Ö®Õ½»ê", 	nRate = 0.05, tbSkill = {add466}},
-	{szName = "Ë®Ö®Õ½»ê", 	nRate = 0.05, tbSkill = {add466, add469}},
-	{szName = "»ğÖ®Õ½»ê", 	nRate = 0.05, tbSkill = {add466, add468}},
-	{szName = "ÍÁÖ®»¤¼×", 	nRate = 0.05, tbSkill = {add466, add467}},
-	{szName = "½ğÖ®»¤¼×", 	nRate = 0.05, tbSkill = {add474}},
-	{szName = "Ä¾Ö®»¤¼×", 	nRate = 0.05, tbSkill = {add477}},
-	{szName = "Ë®Ö®»¤¼×", 	nRate = 0.05, tbSkill = {add476}},
-	{szName = "»ğÖ®»¤¼×", 	nRate = 0.05, tbSkill = {add473}},
-	{szName = "ÍÁÖ®»¤¼×", 	nRate = 0.05, tbSkill = {add475}},
-	{szName = "½ğÖ®ÀûÈĞ", 	nRate = 0.05, tbSkill = {add479, add487, add487_1}},	-- ???
-	{szName = "Ä¾Ö®ÀûÈĞ", 	nRate = 0.05, tbSkill = {add480, add485}},
-	{szName = "Ë®Ö®ÀûÈĞ", 	nRate = 0.05, tbSkill = {add481, add486}},
-	{szName = "»ğÖ®ÀûÈĞ", 	nRate = 0.05, tbSkill = {add482}},
-	{szName = "ÍÁÖ®ÀûÈĞ", 	nRate = 0.05, tbSkill = {add483}},
-	{szName = "Îå»¨Â¶", 	nRate = 0.05, tbSkill = {add472_1, add472_2, add490_1}},
-	{szName = "ºóôàÖ®ÑÛ", 	nRate = 0.05, tbSkill = {add495}},
-	{szName = "°×¾Ô»¤Íó", 	nRate = 0.05, tbSkill = {add496}},
-	{szName = "¼²·çÑ¥", 	nRate = 0.05, tbSkill = {add493}},
-	{szName = "ÉñÃØÎïÆ·", 	nRate = 0.05, tbSkill = {add466, add469, add468, add467, add474, add476, add477, add473, add475, add479, 
+	{szName = "Kim Chi ChiÕn Hån ", 	nRate = 0.05, tbSkill = {add466}},
+	{szName = "Méc Chi ChiÕn Hån ", 	nRate = 0.05, tbSkill = {add466}},
+	{szName = "Thñy Chi ChiÕn Hån ", 	nRate = 0.05, tbSkill = {add466, add469}},
+	{szName = "Háa Chi ChiÕn Hån ", 	nRate = 0.05, tbSkill = {add466, add468}},
+	{szName = "Thæ Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add466, add467}},
+	{szName = "Kim Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add474}},
+	{szName = "Méc Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add477}},
+	{szName = "Thñy Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add476}},
+	{szName = "Háa Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add473}},
+	{szName = "Thæ Chi Hé gi¸p  ", 	nRate = 0.05, tbSkill = {add475}},
+	{szName = "Kim Chi Lîi NhËn", 	nRate = 0.05, tbSkill = {add479, add487, add487_1}},	-- ???
+	{szName = "Méc Chi Lîi NhËn", 	nRate = 0.05, tbSkill = {add480, add485}},
+	{szName = "Thñy Chi Lîi NhËn", 	nRate = 0.05, tbSkill = {add481, add486}},
+	{szName = "Háa Chi Lîi NhËn", 	nRate = 0.05, tbSkill = {add482}},
+	{szName = "Thæ Chi Lîi NhËn", 	nRate = 0.05, tbSkill = {add483}},
+	{szName = "Ngò Hoa Lé ", 	nRate = 0.05, tbSkill = {add472_1, add472_2, add490_1}},
+	{szName = "HËu NghÖ Chi Nh·n ", 	nRate = 0.05, tbSkill = {add495}},
+	{szName = "B¹ch C©u Hé uyÓn", 	nRate = 0.05, tbSkill = {add496}},
+	{szName = "TËt phong ngoa ", 	nRate = 0.05, tbSkill = {add493}},
+	{szName = "ThÇn bİ vËt phÈm ", 	nRate = 0.05, tbSkill = {add466, add469, add468, add467, add474, add476, add477, add473, add475, add479, 
 			add487, add487_1, add480, add485, add481, add486, add472_1, add472_2, add482, add483, add490_1, add493, add495, add496}},
 }
 egg_nTotalRate	= 100;
@@ -42,11 +42,11 @@ end
 
 function egg_addskill(nIndex)
 	local nRate	= random(getn(egg_tbAward[nIndex].tbSkill));
-	Msg2Player(format("¹§Ï²ÄãÓöµ½<color=yellow>%s<color>", egg_tbAward[nIndex].szName));
+	Msg2Player(format("Chóc mõng ng­¬i gÆp ®­îc<color=yellow>%s<color>", egg_tbAward[nIndex].szName));
 	egg_tbAward[nIndex].tbSkill[nRate]();
 	
 	WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\tAward:%s \tProbability:%d",
-				"ĞÒÔËÎå²Êµ°",
+				"Trøng nhiÒu mµu may m¾n",
 				GetLocalDate("%y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName(),

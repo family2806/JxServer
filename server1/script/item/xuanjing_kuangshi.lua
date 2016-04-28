@@ -6,5 +6,5 @@ end
 
 function GetDesc(nItem)
 	local _, _, _, lvl = GetItemProp(nItem);
-	return "<color=blue> Ù–‘∆∑÷ £∫<color=yellow>"..lvl;
+	return "<color=blue>Ph»m ch t thuÈc t›nh:<color=yellow>"..lvl;
 end

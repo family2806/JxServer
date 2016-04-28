@@ -1,7 +1,7 @@
 Include("\\script\\vng_event\\vip_account_2011\\item\\head.lua")
 function main(nItemIdx)
 	if (tbVNG_VIPAcc_ItemHead:isExpired(nItemIdx) == 1) then
-		Msg2Player("ÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 	local nResult, szErrorMessage = tbVNG_VIPAcc_ItemHead:useItem("trung")

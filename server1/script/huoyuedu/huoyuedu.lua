@@ -78,7 +78,7 @@ function tbHuoYueDu:AddHuoYueDu(szActivity)
 		nAddedValue = self.nMaxHuoYueDu - nTaskValue
 	end
 	if nAddedValue > 0 then
-		Msg2Player(format("恭喜你获得%d 活跃点",nAddedValue))
+		Msg2Player(format("Ch骳 m鮪g ngi nh薾 頲 %d 甶觤 n╪g ng",nAddedValue))
 		PlayerFunLib:AddTaskDaily(self.TSK_TotalHuoYueDu, nAddedValue)
 	end
 end
@@ -114,7 +114,7 @@ function tbHuoYueDu:CheckTimes(nActivityId)
 	end
 	
 	if PlayerFunLib:CheckTaskDaily(self.TSK_TotalHuoYueDu, self.nMaxHuoYueDu, "", ">=") == 1 then
-		Msg2Player("你的活跃点今天已经满了，本次活跃点不计入内")
+		Msg2Player("觤 n╪g ng c馻 ngi h玬 nay  y, 甶觤 n╪g ng l莕 n祔 kh玭g t輓h v祇 trong")
 		return 
 	end
 	

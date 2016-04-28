@@ -12,7 +12,7 @@ function HonourType:AddHonour(nAmount)
 	
 	SetTask(WLLS_TASKID_HONOUR, GetTask(WLLS_TASKID_HONOUR) + nAmount);
 	SyncTaskValue(WLLS_TASKID_HONOUR);
-	Msg2Player(format("§iÈÙÓþµãÔö¼Ó%d", nAmount))
+	Msg2Player(format("§iÓm Ving Dù t¨ng cao %d", nAmount))
 end
 
 function HonourType:Give(tbItem, nAwardCount, tbLogTitle)

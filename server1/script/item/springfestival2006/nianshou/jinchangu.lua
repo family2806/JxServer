@@ -16,5 +16,5 @@ function main()
         AddSkillState(i, 10, 0, 0);
     end;
     AddSkillState(309, 10, 0, 5 * 18); --²»ÊÜ¹¥»÷
-    Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>½ğ²õ¹Æ<color>£¬ÔÚ<color=0xB5FDD7>5ÃëÖÓ<color>ÄÚ²»ÊÜ×´Ì¬Ó°Ïì¡£");
+    Msg2Player("B¹n ®· sö dông mét <color=0xB5FDD7>Kim ThiÒn Cæ<color>, trong <color=0xB5FDD7>5 gi©y<color> t¨ng phßng thñ tuyÖt ®èi.");
 end;

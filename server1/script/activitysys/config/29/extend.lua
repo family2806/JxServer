@@ -10,8 +10,8 @@ function pActivity:AddInitNpc()
 --		{2,2613,3499,},
 --	}
 --	local tbSoldier = {
---		szName = "Ê¿±ø", 
---		szTitle = "<npc>22/04/2011~22/05, 120¼¶ÒÔÉÏÈËÊ¿¿ÉÒÔËÍÀ¼»¨£¬Ã×´ü£¬ÒÂ·ş¸øÎÒ£¬ÎÒ½«ºñ´ıÄãÖÜµ½.",
+--		szName = "Ng­êi lİnh", 
+--		szTitle = "<npc>22/04/2011~22/05, Nh©n sü cÊp 120 trë lªn cã thÓ tÆng Hoa Lan Rõng, Tói G¹o, ChiÕc ¸o cho ta, ta sÏ hËu ®·I ng­¬i chu ®¸o.",
 --		nLevel = 95,
 --		nNpcId = 1781,--246,
 --		nIsboss = 0,
@@ -29,7 +29,7 @@ function pActivity:AddInitNpc()
 		{153,1757,3197,},
 	}
 	local tbLanHuaCao = {
-		szName = "Ò°À¼»¨·Û", 
+		szName = "Bôi Hoa Lan Rõng", 
 		nLevel = 95,
 		nNpcId = 1782,--1407,844
 		nIsboss = 0,
@@ -50,24 +50,24 @@ end
 --ÉÏ½»À¼»¨
 function pActivity:OnGiveLanHua()
 --	if not self:CheckDate() then
---		Msg2Player(format("»î¶¯Ê±¼äÒÑ¹ı, ²»ÄÜËÍÀ¼»¨ÁË."))
+--		Msg2Player(format("Thêi gian ho¹t ®éng ®· qua, kh«ng thÓ tÆng Hoa Lan n÷a."))
 --		return
 --	end
 --	self:AddTaskDaily(%TSK_IDX_DAILY_GIVE_LANHUA,1)
 --	PlayerFunLib:ConsumeEquiproomItem({tbProp={6,1,1977,1,0,0},},1)
 --	--PlayerFunLib:AddExp(20000000,1,"ÔùËÍ¾ü±øÀ¼»¨»ñµÃ¾­Ñé")
---	tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"201104ËÍ»¨»î¶¯", "ËÍÀ¼»¨¸øÊ¿±ø"});
+--	tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "TangHoaChoNguoiLinh"});
 --	AddStatData("jiefangri_shangjiaolanhua")
 end
 
 function pActivity:Vng_OnGiveLanHua(nCount)
 	if not self:CheckDate() then
-		Msg2Player(format("»î¶¯Ê±¼äÒÑ¹ı, ²»ÄÜËÍÀ¼»¨ÁË."))
+		Msg2Player(format("Thêi gian ho¹t ®éng ®· qua, kh«ng thÓ tÆng Hoa Lan n÷a."))
 		return
 	end
 	for i = 1, nCount do
 		self:AddTaskDaily(%TSK_IDX_DAILY_GIVE_LANHUA,1)
-		tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"201104ËÍ»¨»î¶¯", "ËÍÀ¼»¨¸øÊ¿±ø"});
+		tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "TangHoaChoNguoiLinh"});
 		AddStatData("jiefangri_shangjiaolanhua")
 	end
 end
@@ -75,7 +75,7 @@ end
 function pActivity:Vng_LanHua_Limit(nCount)
 	local nDailyCount = PlayerFunLib:GetTaskDailyCount(1357)
 	if nDailyCount + nCount > %MAX_GIVE_LANHUA_PERDAY then
-		Msg2Player(format("SÊıÁ¿³¬¹ı½çÏŞ£¬´óÏÀÖ»ÄÜËÍ<color=yellow>%d <color>À¼»¨ÁË.", %MAX_GIVE_LANHUA_PERDAY - nDailyCount))
+		Msg2Player(format("Sè l­îng v­ît qu¸ giíi h¹n, §¹i hiÖp chØ cã thÓ tÆng <color=yellow>%d <color>Hoa Lan n÷a.", %MAX_GIVE_LANHUA_PERDAY - nDailyCount))
 		return 0
 	end
 	return 1

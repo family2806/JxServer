@@ -1,4 +1,4 @@
--- ÁÙ°²¡¡Â·ÈË¡¡Ò¶Ğ¡Óñ
+-- ÁÙ°²¡¡Â·ÈË¡¡ L¸ tiÓu ngäc 
 -- by£ºDan_Deng(2003-09-16)
 
 Include("\\script\\task\\150skilltask\\g_task.lua")
@@ -17,10 +17,10 @@ function main()
 
 	local tbDailog = DailogClass:new(szNpcName)
 	if (GetSex() == 0) then
-		tbDailog.szTitleMsg = "<npc>¹«×Ó£ºÎÒÉĞÎ´³ö¸ó£¬ÄãÀÏÊÇ¸ú×ÅÎÒ£¬µ½µ××öÉ¶½é£¿ÒªÊÇÈÃÎÒÄêÖªµÀ£¬ÄÍÄ©ÎğµÃÁË¡£"
+		tbDailog.szTitleMsg = "<npc> C«ng tö  ta ch­a ra c¸c , nhÜ l·o lµ theo ch©n ta , rèt cuéc lµm g× giíi ? nÕu ®Ó cho ta n¨m biÕt , n¹i m¹t chí ®­îc . "
 	else
-		tbDailog.szTitleMsg = "<npc>ÃÃ×Ó£¬ÄãÓĞÉ¶½éÊÂÂğ£¿"
+		tbDailog.szTitleMsg = "<npc> Muéi tö , ng­¬i cã g× giíi chuyÖn sao ? "
 	end
-	G_TASK:OnMessage("Ò¶Ğ¡Óñ", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage(" L¸ tiÓu ngäc ", tbDailog, "DialogWithNpc")
 	tbDailog:Show()
 end;

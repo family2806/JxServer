@@ -6,30 +6,30 @@
 function main()
 	UTask_world43=GetTask(71)
 	if (UTask_world43==1) then
-		Talk(3, "select", "ĞÖµÜÊÇËÕÖÒ£¿ÄãÄ¸Ç×Õıµ£ĞÄÄã!", "ÎÒ²»ÏëÄ¸Ç×µ£ĞÄ£¬µ«ÊÇÎÒ¾ö¶¨´Ó¾üÁË!", "ÎªÊ²Ã´?")
+		Talk(3, "select", "Huynh lµ T« Trung? MÑ ng­¬i ®ang lo l¾ng cho ng­¬i!", "Ta còng kh«ng muèn mÑ ta bËn t©m, nh­ng ta ®· quyÕt ®Şnh tßng qu©n råi!", "T¹i sao vËy?")
 	elseif (UTask_world43==2) then
-		Talk(1,"","Ğ»Ğ»Ö¸µã! ")
+		Talk(1,"","C¸m ¬n ng­¬i chØ ®iÓm! ")
 	elseif (UTask_world43==3) then
-		Talk(1,"","ÄÇÂé·³ÄãÈ°ÎÒÄ¸Ç×! ")
+		Talk(1,"","VËy phiÒn ng­¬i khuyªn mÑ ta! ")
 	else	
-		Talk(1,"","¸¸Ç×ËÀÓÚ½ğÈËÖ®ÊÖ£¬Õâ¸ö³ğÎÒ²»ÄÜÍü! ")
+		Talk(1,"","Cha ta chÕt d­íi tay ng­êi Kim, mèi thï nµy c¶ ®êi ta kh«ng quªn! ")
 	end
 end;
 
 function select()
-Say("ÏÖÔÚ¹ú¼ÒÓĞÄÑ£¬ÎÒÔõÃ´ÄÜÖ»¶ÁÊé?",2,"È°¸æ /against","ÔŞ³É /support")
+Say("HiÖn Quèc gia ®ang l©m n¹n, ta lµm sao chØ lo ®äc s¸ch ®­îc?",2,"Khuyªn can /against","T¸n ®ång /support")
 end
 
 function against()
-	Talk(4,"","µ«ÊÇÄã»¹ÄêÇá£¬¾ı×Ó±¨³ğÊ®Äê²»Íí£¬¶àÑ§µã±¾Áì£¬ÈÕºó²ÅÄÜÉ±µĞ! ", ".....ÄãËµµÄÒ²ÓĞµÀÀí","ÄãÖªµÀ¾ÍºÃ£¬¿ì»ØÈ¥¿´Ä¸Ç×°É£¬ËıºÜÏëÄã!", "ºÃµÄ£¬Ğ»Ğ»!")
+	Talk(4,"","Nh­ng mµ tuæi ng­¬i cßn trÎ, qu©n tö b¸o thï 10 n¨m kh«ng muén, häc thªm chót b¶n lÜnh ngµy sau míi cã thÓ giÕt ®Şch! ", ".....Ng­¬i nãi còng rÊt cã ®¹o lı!","Ng­¬i hiÓu th× tèt! Mau vÒ th¨m mÑ, bµ ta rÊt nhí ng­¬i!", "§­îc råi! C¸m ¬n!")
 	SetTask(71,2)
-	AddNote("È°ËÕÖÒ³É¹¦. ")
-	Msg2Player("È°ËÕÖÒ³É¹¦. ")
+	AddNote("Khuyªn T« Trung ë nhµ ®· thµnh c«ng. ")
+	Msg2Player("Khuyªn T« Trung ë nhµ ®· thµnh c«ng. ")
 end
 
 function support()
-	Talk(3,"","ËµµÄºÜºÃ£¬ÄãËäÈ»ÄêÇá£¬µ«ÊÇÖ¾Æø´ó.","ÎÒÏëÈëÎé£¬µ«ÊÇµ£ĞÄÄ¸Ç×²»¸øÈ¥.","Äã·ÅĞÄ£¬ÎÒ°ïÄãÈ°ËıÁË")
+	Talk(3,"","Nãi rÊt hay! Ng­¬i tuy trÎ tuæi nh­ng l¹i mang chİ lín.","Ta muèn nhËp ngò, nh­ng lo mÑ ta sÏ kh«ng cho ta ®i.","Ng­¬i yªn t©m! Ta ®· gióp ng­¬i khuyªn bµ ta råi")
 	SetTask(71,3)		
-	AddNote("Ö§³ÖËÕÖÒµÄ¾ö¶¨£¬°ïÖúËûÈ°Ä¸Ç×")
-	MsgPlayer("Ö§³ÖËÕÖÒµÄ¾ö¶¨£¬°ïÖúËûÈ°ËÕ´óÂè")
+	AddNote("ñng hé quyÕt ®Şnh cña T« Trung, gióp T« Trung khuyªn MÑ. ")
+	MsgPlayer("ñng hé quyÕt ®Şnh cña T« Trung, gióp T« Trung khuyªn T« §¹i Ma")
 end

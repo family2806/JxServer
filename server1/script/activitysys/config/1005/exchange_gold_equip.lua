@@ -10,111 +10,111 @@ function tbPVLB_ExchgEquip:MainDialog()
 	if nTransLife < 1 or nTransLife > 3 then
 		return
 	end
-	local strTittle = "Ä¿Ç°¿ÉÒÔ"
+	local strTittle = "HiÖn t¹i cã thÓ: "
 	local tbOpt = {}
 	local nLevel = GetLevel()
 	if nTransLife == 1 then		
 		if nLevel >= 115 and nLevel <= 129 then
-			strTittle = strTittle.."»»1Ì×²ÔÀÇ×°±¸»ñÈ¡ÐþÔ³(³ýÎäÆ÷ºÍ½äÖ¸)"
+			strTittle = strTittle.."§æi 1 trang bÞ Th­¬ng Lang lÊy HuyÒn Viªn (Trõ vò khÝ vµ nhÉn)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_1) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "DoiTrangBiLan1", tbBITTASK_EXCHANGE_EQUIP_1}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "DoiTrangBiLan1", tbBITTASK_EXCHANGE_EQUIP_1}})
 			else
 				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel >= 130 and nLevel <= 139 then
-			strTittle = strTittle.."»»1Ì×²ÔÀÇ×°±¸»ñÈ¡ÐþÔ³(³ýÎäÆ÷ºÍ½äÖ¸)"
+			strTittle = strTittle.."§æi 1 trang bÞ Th­¬ng Lang lÊy HuyÒn Viªn (Trõ vò khÝ vµ nhÉn)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_2) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "DoiTrangBiLan2", tbBITTASK_EXCHANGE_EQUIP_2}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "DoiTrangBiLan2", tbBITTASK_EXCHANGE_EQUIP_2}})
 			else
 				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel >= 140 and nLevel <= 149 then
-			strTittle = strTittle.."»»1Ì×²ÔÀÇ×°±¸»ñÈ¡ÐþÔ³(³ýÎäÆ÷ºÍ½äÖ¸)"
+			strTittle = strTittle.."§æi 1 trang bÞ Th­¬ng Lang lÊy HuyÒn Viªn (Trõ vò khÝ vµ nhÉn)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_3) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚÈý´Î»»×°±¸3", tbBITTASK_EXCHANGE_EQUIP_3}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚÈý´Î§æi trang bÞ3", tbBITTASK_EXCHANGE_EQUIP_3}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel >= 150 and nLevel <= 159 then
-			strTittle = strTittle.."»»3Ì×²ÔÀÇ×°±¸»ñÈ¡ÐþÔ³(³ýÎäÆ÷ºÍ½äÖ¸)"
+			strTittle = strTittle.."§æi 1 trang bÞ Th­¬ng Lang lÊy HuyÒn Viªn (Trõ vò khÝ vµ nhÉn)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_4) == 0 then
-				tinsert(tbOpt, {"»»×°±¸",tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ4´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_4}})
+				tinsert(tbOpt, {"§æi trang bÞ",tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ4´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_4}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel >= 160 and nLevel <= 169 then
-			strTittle = strTittle.."»»3Ì×²ÔÀÇ×°±¸»ñÈ¡ÐþÔ³(³ýÎäÆ÷ºÍ½äÖ¸)"
+			strTittle = strTittle.."§æi 1 trang bÞ Th­¬ng Lang lÊy HuyÒn Viªn (Trõ vò khÝ vµ nhÉn)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_5) == 1 and tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_13) == 1 and tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_14) == 1 then				
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			else
 				if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_5) == 0 then
-					tinsert(tbOpt, {"µÚÒ»´Î»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚÎå´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_5}})
+					tinsert(tbOpt, {"µÚÒ»´Î§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚÎå´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_5}})
 				end
 				if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_13) == 0 then
-					tinsert(tbOpt, {"µÚ2´Î»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ13´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_13}})
+					tinsert(tbOpt, {"µÚ2´Î§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ13´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_13}})
 				end
 				if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_14) == 0 then
-					tinsert(tbOpt, {"µÚ3´Î»»×°±¸", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ14´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_14}})
+					tinsert(tbOpt, {"µÚ3´Î§æi trang bÞ", tbPVLB_ExchgEquip.Exchange1, {tbPVLB_ExchgEquip, "µÚ14´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_14}})
 				end
 			end
 		end
 	elseif nTransLife == 2 then
 		if nLevel >= 115 and nLevel <= 129 then
-			strTittle = strTittle.."»»2¸ö²ÔÀÇ½äÖ¸»ñÈ¡2¸öÐþÔ³½äÖ¸"
+			strTittle = strTittle.."§æi 2 nhÉn Th­¬ng Lang lÊy 2 nhÉn HuyÒn Viªn"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_6) == 1 and  tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_12) == 1 then
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			else
 				if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_12) == 0 then
-					tinsert(tbOpt, {"»»½äÖ¸1", tbPVLB_ExchgEquip.Exchange2, {tbPVLB_ExchgEquip, "µÚ12´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_12}})
+					tinsert(tbOpt, {"§æi nhÉn 1", tbPVLB_ExchgEquip.Exchange2, {tbPVLB_ExchgEquip, "µÚ12´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_12}})
 				end
 				if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_6) == 0 then
-					tinsert(tbOpt, {"»»½äÖ¸2", tbPVLB_ExchgEquip.Exchange2, {tbPVLB_ExchgEquip, "µÚ6´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_6}})
+					tinsert(tbOpt, {"§æi nhÉn 2", tbPVLB_ExchgEquip.Exchange2, {tbPVLB_ExchgEquip, "µÚ6´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_6}})
 				end
 			end
 		end
 		if nLevel >= 131 and nLevel <= 139 then
-			strTittle = strTittle.."»»Ò»¸ö²ÔÀÇÎäÆ÷»î¶¯1¸öÐþÔ³ÎäÆ÷"
+			strTittle = strTittle.."§æi 1 vò khÝ Th­¬ng Lang lÊy 1 vò khÝ HuyÒn Viªn"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_7) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange3, {tbPVLB_ExchgEquip, "µÚ7´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_7}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange3, {tbPVLB_ExchgEquip, "µÚ7´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_7}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end		
 		if nLevel == 175 then
-			strTittle = strTittle.."»»Ò»Ì×ÐþÔ³×°±¸»ñÈ¡Ò»Ì××ÏÃ§×°±¸£¨³ý½äÖ¸ºÍÎäÆ÷£©"
+			strTittle = strTittle.."§æi 1 trang bÞ HuyÒn Viªn lÊy 1 trang bÞ Tö M·ng (trõ nhÉn vµ vò khÝ)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_8) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ8´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_8}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ8´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_8}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel == 177 then
-			strTittle = strTittle.."»»Ò»Ì×ÐþÔ³×°±¸»ñÈ¡Ò»Ì××ÏÃ§×°±¸£¨³ý½äÖ¸ºÍÎäÆ÷£©"
+			strTittle = strTittle.."§æi 1 trang bÞ HuyÒn Viªn lÊy 1 trang bÞ Tö M·ng (trõ nhÉn vµ vò khÝ)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_9) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ9´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_9}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ9´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_9}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 		if nLevel == 179 then
-			strTittle = strTittle.."»»Ò»Ì×ÐþÔ³×°±¸»ñÈ¡Ò»Ì××ÏÃ§×°±¸£¨³ý½äÖ¸ºÍÎäÆ÷£©"
+			strTittle = strTittle.."§æi 1 trang bÞ HuyÒn Viªn lÊy 1 trang bÞ Tö M·ng (trõ nhÉn vµ vò khÝ)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_10) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ10´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_10}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ10´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_10}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 	elseif nTransLife == 3 then
 		if nLevel == 130 then
-			strTittle = strTittle.."»»Ò»Ì×ÐþÔ³×°±¸»ñÈ¡Ò»Ì××ÏÃ§×°±¸£¨³ý½äÖ¸ºÍÎäÆ÷£©"
+			strTittle = strTittle.."§æi 1 trang bÞ HuyÒn Viªn lÊy 1 trang bÞ Tö M·ng (trõ nhÉn vµ vò khÝ)"
 			if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_EQUIP_11) == 0 then
-				tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ11´Î»»×°±¸", tbBITTASK_EXCHANGE_EQUIP_11}})
+				tinsert(tbOpt, {"§æi trang bÞ", tbPVLB_ExchgEquip.Exchange4, {tbPVLB_ExchgEquip, "µÚ11´Î§æi trang bÞ", tbBITTASK_EXCHANGE_EQUIP_11}})
 			else
-				strTittle = strTittle.."\n\t\t\t\t<color=red>ÒÑ»»½±Àø<color>"
+				strTittle = strTittle.."\n\t\t\t\t<color=red>§· ®æi th­ëng<color>"
 			end
 		end
 	end

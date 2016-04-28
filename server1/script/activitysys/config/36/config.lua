@@ -38,7 +38,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "CaiJiHuiHuangZhiGuo",
-	szName = "¼ñ»Ô»Í¹û",
+	szName = "NhÆt qu¶ huy hoµng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -72,7 +72,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "FinishMail",
-	szName = "ĞÅÊ¹ÈÎÎñ",
+	szName = "NhiÖm vô Tİn Sø ",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,3},

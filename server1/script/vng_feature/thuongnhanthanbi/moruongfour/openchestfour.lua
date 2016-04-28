@@ -3,48 +3,48 @@ Include("\\script\\lib\\composeex.lua")
 tbChectfour = {};
 tbChectfour.tbCompose = 
 {
-				["ÉñÃØÖ®Êé"] = 
+				["ThÇn Bİ Chi Th­"] = 
 				{
 					tbFormula = 
 						{
-							szComposeTitle = format("»»Ô­ÁÏ\t ºÏ³É %s", "ÉñÃØÖ®Êé"),
+							szComposeTitle = format("§æi nguyªn liÖu\t Hîp thµnh %s", "ThÇn Bİ Chi Th­"),
 							nWidth = 1,
 							nHeight = 1,
 							nFreeItemCellLimit = 0.02,
 							tbMaterial = 
 								{
-									{szName = "×ÏË®¾§", tbProp = {4,239,1,1,0,0}, nCount = 1},
-									{szName = "ÂÌË®¾§", tbProp = {4,240,1,1,0,0}, nCount = 1},
-									{szName = "À¶Ë®¾§", tbProp = {4,238,1,1,0,0}, nCount = 1},
-									{szName = "1¼¶Ğş¾§", tbProp = {6,1,147,1,-1,0}, nCount = 50},
-									{szName = "2¼¶Ğş¾§", tbProp = {6,1,147,2,-1,0}, nCount = 50},
-									{szName = "3¼¶Ğş¾§", tbProp = {6,1,147,3,-1,0}, nCount = 50},
-									{szName = "¾ÅÖİÁî", tbProp = {6,1,30117,1,0,0}, nCount = 1},
-									{szName = "ÁúÑªÍè", tbProp = {6,1,2117,1,0,0}, nCount = 1},
-									{szName = "Ç§±¦¿âÁî", tbProp = {6,1,2813,1,0,0}, nCount = 1},
-									{szName = "ĞĞÏÀÁî", tbProp = {6,1,2566,1,0,0}, nCount = 50},
-									{szName = "ÌúÂŞºº", tbProp = {6,1,23,-1,-1,0}, nCount = 2},
+									{szName = "Tö thñy tinh", tbProp = {4,239,1,1,0,0}, nCount = 1},
+									{szName = "Lôc thñy tinh", tbProp = {4,240,1,1,0,0}, nCount = 1},
+									{szName = "Lam thñy tinh", tbProp = {4,238,1,1,0,0}, nCount = 1},
+									{szName = "HuyÒn tinh cÊp 1", tbProp = {6,1,147,1,-1,0}, nCount = 50},
+									{szName = "HuyÒn tinh cÊp 2", tbProp = {6,1,147,2,-1,0}, nCount = 50},
+									{szName = "HuyÒn tinh cÊp 3", tbProp = {6,1,147,3,-1,0}, nCount = 50},
+									{szName = "Cöu Ch©u LÖnh", tbProp = {6,1,30117,1,0,0}, nCount = 1},
+									{szName = "Long HuyÕt Hoµn", tbProp = {6,1,2117,1,0,0}, nCount = 1},
+									{szName = "Thiªn B¶o Khè LÖnh", tbProp = {6,1,2813,1,0,0}, nCount = 1},
+									{szName = "Hµnh HiÖp LÖnh", tbProp = {6,1,2566,1,0,0}, nCount = 50},
+									{szName = "ThiÕt La H¸n", tbProp = {6,1,23,-1,-1,0}, nCount = 2},
 								},
-							tbProduct = {szName = "ÉñÃØÖ®Êé", tbProp = {6,1,30181,1,0,0}, nExpiredTime = 60*24*7},
+							tbProduct = {szName = "ThÇn Bİ Chi Th­", tbProp = {6,1,30181,1,0,0}, nExpiredTime = 60*24*7},
 						},
 						pCompos = nil;
 				},
-				["¿ªÏä4"] = 
+				["Më R­¬ng 4"] = 
 				{
 					tbFormula = 
 						{
-							szComposeTitle = format("½»ÎïÆ·\t ¿ÉÒÔ?%s", "¿ªÏä4"),
+							szComposeTitle = format("Nép vËt phÈm\t cã thÓ %s", "Më R­¬ng 4"),
 							nWidth = 1,
 							nHeight = 1,
 							nFreeItemCellLimit = 0.02,
 							tbMaterial = 
 								{
-									{szName = "ÉñÃØÖ®Êé", tbProp = {6,1,30181,1,0,0}, nCount = 3},
-									{szName = "ÉñÃØÔ¿³×", tbProp = {6,1,30182,1,0,0}, nCount = 1},
+									{szName = "ThÇn Bİ Chi Th­", tbProp = {6,1,30181,1,0,0}, nCount = 3},
+									{szName = "Ch×a khãa thÇn bİ", tbProp = {6,1,30182,1,0,0}, nCount = 1},
 								},
 							pProductFun = function (self)
 								OpenStoreBox(3)
-								Msg2Player("Äã»ñµÃ´ò¿ª´æÓĞÖÈĞòÎïµÄÏä×Ó")
+								Msg2Player("B¹n nhËn ®­îc më r­¬ng chøa ®å thø t­")
 							end,
 							pLimitFun = function (self) 
 								return %tbChectfour:LimitStoreBox()
@@ -72,12 +72,12 @@ function tbChectfour:ComposeItem(strItemName)
 		tbItem.pCompos:ComposeDailog(0);
 	end
 end
---ÉñÃØÖ®Êé
+--ThÇn Bİ Chi Th­
 function tbChectfour:main()
 	local tbMainDialog = tbChectfour:CreateDialog()
-	tbMainDialog.szTitleMsg = "²»¶®ÎÒÄÜ°ïÄãÊ²Ã´?"
-	tbMainDialog:AddOptEntry("»»ÉñÃØÖ®Êé", tbChectfour.ComposeItem, {tbChectfour, "ÉñÃØÖ®Êé"})
-	tbMainDialog:AddOptEntry("½»ÎïÆ·¿ªÏä4", tbChectfour.ComposeItem, {tbChectfour, "¿ªÏä 4"})
+	tbMainDialog.szTitleMsg = "Kh«ng biÕt ta cã thÓ gióp g× cho ®¹i hiÖp ?"
+	tbMainDialog:AddOptEntry("»»ThÇn Bİ Chi Th­", tbChectfour.ComposeItem, {tbChectfour, "ThÇn Bİ Chi Th­"})
+	tbMainDialog:AddOptEntry("½»ÎïÆ·Më R­¬ng 4", tbChectfour.ComposeItem, {tbChectfour, "Më R­¬ng 4"})
 	tbMainDialog:Show()
 end	
 
@@ -92,11 +92,11 @@ end
 
 function tbChectfour:LimitStoreBox()
 		if tbChectfour:CheckStoreBox() > 0 then
-			Msg2Player(format("´óÏÀ»¹Î´´ò¿ªÏä×Ó%d",tbChectfour:CheckStoreBox() + 1))
+			Msg2Player(format("§¹i hiÖp vÉn ch­a më r­¬ng thø %d",tbChectfour:CheckStoreBox() + 1))
 			return 0
 		end
 		if CheckStoreBoxState(3) > 0 then
-			Msg2Player("´óÏÀÒÑ´ò¿ª4ºÅÏä×Ó£¬²»ÄÜ¿ªÁË")
+			Msg2Player("§¹i hiÖp ®· më r­¬ng thø 4 råi, kh«ng thÓ më n÷a")
 			return 0
 		end
 		return 1

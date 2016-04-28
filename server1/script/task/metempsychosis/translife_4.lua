@@ -35,58 +35,58 @@ end
 function sureGetTranslifeTask_4()
 	local ntranscount = ST_GetTransLifeCount()
 	if ntranscount ~= 3 then
-		CreateTaskSay({"<dec><npc>".."Ä¿Ç°Äã²»ÊÇ3×ª£¬²»ÄÜ¼ÌĞøÈÎÎñ", "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({"<dec><npc>".."HiÖn t¹i ng­¬i kh«ng ph¶i lµ chuyÓn sinh 3, kh«ng thÓ tiÕp nhËn nhiÖm vô!", "BiÕt råi/OnCancel"})
 		return 
 	end
 	
 	local nCurLevel = GetLevel()
 	if nCurLevel < 200 then
-		CreateTaskSay({"<dec><npc>".."ÄãµÄµÈ¼¶Î´µ½200¼¶!", "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({"<dec><npc>".."§¼ng cÊp cña ng­¬i ch­a ®Õn cÊp 200!", "BiÕt råi/OnCancel"})
 		return 
 	end
 	
 	SetTask(TSK_TRANSLIFE_4, 1)
-	Msg2Player("ÄãÒÑ½ÓÊÜÈÎÎñ³É¹¦£¬¿ìÈ¥ÊÕ¼¯Åùö¨µ¤°É")
+	Msg2Player("Ng­¬i ®· nhËn nhiÖm vô thµnh c«ng, h·y nhanh ch©n ®i thu thËp Tİch LŞch §¬n ®i")
 end
 
 function wantGetTranslifeTask_4()
-	CreateTaskSay({"<dec><npc>Ö»ÓĞ×ªÉú3´ÎµÄ¸ßÊÖ£¬µÈ¼¶´ïµ½200¼¶²ÅÄÜ½ÓÈÎÎñ£¬ÄãÈ·¶¨Ïà½ÓÂğ£¿",
-		"È·¶¨/sureGetTranslifeTask_4",
-		"ÈÃÎÒÏëÏë/OnCancel"})
+	CreateTaskSay({"<dec><npc>ChØ cã nh÷ng cao thñ nµo cã sè lÇn chuyÓn sinh lµ 3 lÇn, h¬n n÷a ®¼ng cÊp ph¶i ®¹t ®Õn cÊp 200 míi cã thÓ nhËn nhiÖm vô nµy, ng­¬i x¸c ®Şnh muèn nhËn kh«ng?",
+		"X¸c nhËn/sureGetTranslifeTask_4",
+		"§Ó ta suy nghÜ l¹i/OnCancel"})
 end
 
 function querySkillPoint_4()
 	local ntranscount = ST_GetTransLifeCount()
 	if ntranscount < 4 then
-		CreateTaskSay({"<dec><npc>Äã»¹Î´4×ª£¬Ã»ÓĞ¼¼ÄÜµãÒª¼ì²é!", "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({"<dec><npc>Ng­¬i vÉn ch­a chuyÓn sinh 4, kh«ng cã ®iÓm kü n¨ng ®Ó kiÓm tra!", "BiÕt råi/OnCancel"})
 		return 
 	end
 	updataSkillPoint_4()		-- ¸üĞÂÊ£Óà¿ÉÓÃµÄ¼¼ÄÜµã
 	local nLeaveSkillPoint = GetTask(TSK_LEAVE_SKILL_POINT_4)
 	local nUsedSkillPoint = GetTask(TSK_USED_SKILL_POINT_4)
-	CreateTaskSay({format("<dec><npc>Ä¿Ç°Äã¿ÉÒÔÊ¹ÓÃµÄÊ£ÓàµÄ4×ª¼¼ÄÜµãÎª %d, ÒÑÊ¹ÓÃ %d µã", nLeaveSkillPoint, nUsedSkillPoint),
-		 "ÖªµÀÁË/OnCancel"})
+	CreateTaskSay({format("<dec><npc>HiÖn t¹i ng­¬i cã thÓ sö dông ®iÓm kü n¨ng chuyÓn sinh 4 d­ l¹i lµ %d, ®· sö dông lµ %d ®iÓm", nLeaveSkillPoint, nUsedSkillPoint),
+		 "BiÕt råi/OnCancel"})
 	return 
 end
 
 function wantClearSkillPoint_4()
 	--§iµ÷ÕûÇåÏ´TS4¼¼ÄÜµã¼Û¸ñ - Modified by DinhHQ - 20110813
-	CreateTaskSay({format("<dec><npc>ÇåÏ´4×ª¼¼ÄÜµã£¬ĞèÒª%d Á½ºÍ1<color=red>[±±¶·Ï´Ëèµ¤]<color>, ÄãÈ·¶¨ÒªÏ´Âğ?",CLEAR_SKILL_4_PRICE ),
-		"È·¶¨/sureClearSkillPoint_4",
-		"ÈÃÎÒÏëÏë/OnCancel"})
+	CreateTaskSay({format("<dec><npc>TÈy ®iÓm kü n¨ng trïng sinh 4, cÇn cã %d l­îng vµ 1 <color=red>[B¾c §Èu TÈy Tñy §¬n]<color>, ng­¬i x¸c ®Şnh lµ tÈy l¹i hay kh«ng?",CLEAR_SKILL_4_PRICE ),
+		"X¸c nhËn/sureClearSkillPoint_4",
+		"§Ó ta suy nghÜ l¹i/OnCancel"})
 end
 
 function sureClearSkillPoint_4()
 	-- Î´4×ª
 	local ntranscount = ST_GetTransLifeCount()
 	if ntranscount < 4 then
-		CreateTaskSay({"<dec><npc>Äã»¹Î´4×ª£¬²»ÄÜÏ´¼¼ÄÜµã!", "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({"<dec><npc>Ng­¬i vÉn ch­a chuyÓn sinh 4, kh«ng cÇn tÈy ®iÓm kü n¨ng nµy!", "BiÕt råi/OnCancel"})
 		return 
 	end
 	-- Ç®²»¹»	
 	--§iµ÷Õû4×ª¼¼ÄÜµãµÄÇåÏ´¼Û¸ñ- Modified by DinhHQ - 20110813
 	if GetCash() < CLEAR_SKILL_4_PRICE or CalcItemCount(3, 6, 1, 30127, -1) <= 0 then
-		CreateTaskSay({format("<dec><npc>ÇåÏ´4×ª¼¼ÄÜµãĞèÒª<color=yellow> %d <color> Á½ºÍ1 <color=yellow>[±±¶·Ï´Ëèµ¤]<color>, ×¼±¸ºÃºóÔÙÀ´¼ûÎÒ",CLEAR_SKILL_4_PRICE), "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({format("<dec><npc>TÈy ®iÓm kü n¨ng trïng sinh 4 cÇn cã <color=yellow> %d <color> l­îng vµ 1 <color=yellow>[B¾c §Èu TÈy Tñy §¬n]<color>, h·y chuÈn bŞ ®Çy ®ñ råi ®Õn gÆp ta",CLEAR_SKILL_4_PRICE), "BiÕt råi/OnCancel"})
 		return 
 	end
 	
@@ -94,13 +94,13 @@ function sureClearSkillPoint_4()
 	local nUsedSkillPoint = GetTask(TSK_USED_SKILL_POINT_4)
 	-- Ã»ÓĞÊ¹ÓÃ¼¼ÄÜµã
 	if nUsedSkillPoint <= 0 then
-		CreateTaskSay({"<dec><npc>ÄãÒÑ·ÖÅäµÄ4×ª¼¼ÄÜµãÎª0£¬²»ÄÜÏ´!", "ÖªµÀÁË/OnCancel"})
+		CreateTaskSay({"<dec><npc>Ng­¬i ®· ph©n phèi ®iÓm kü n¨ng chuyÓn sinh 4 lµ 0, kh«ng cÇn tÈy ®iÓm!", "BiÕt råi/OnCancel"})
 		return 
 	end
 	
 	--§iµ÷Õû4×ª¼¼ÄÜµãµÄÇåÏ´¼Û¸ñ- Modified by DinhHQ - 20110813
 	if ConsumeItem(3, 1, 6, 1, 30127, -1) ~= 1 then
-		CreateTaskSay({"<dec><npc>ÄãËµÓĞ±±¶·Ï´Ëèµ¤£¬ÎªÊ²Ã´Ã»¼û?", "ÎÒÈ¥ÕÒ/OnCancel"})
+		CreateTaskSay({"<dec><npc>Ng­¬i nãi cã B¾c §Èu TÈy Tñy §¬n sao ta kh«ng thÊy?", "§Ó ta ®i t×m/OnCancel"})
 		return 
 	end
 	Pay(CLEAR_SKILL_4_PRICE)
@@ -114,7 +114,7 @@ function sureClearSkillPoint_4()
 	nUsedSkillPoint = 0
 	SetTask(TSK_LEAVE_SKILL_POINT_4, nLeaveSkillPoint)
 	SetTask(TSK_USED_SKILL_POINT_4, nUsedSkillPoint)
-	CreateTaskSay({format("<dec><npc>ÄãÒÑÇåÏ´³É¹¦4×ª¼¼ÄÜµã£¬Ä¿Ç°Äã¿ÉÒÔÊ¹ÓÃ4×ª¼¼ÄÜµãÎª%d, ÒÑÊ¹ÓÃ%d µã", nLeaveSkillPoint, nUsedSkillPoint),
-		 "ÖªµÀÁË/OnCancel"})
+	CreateTaskSay({format("<dec><npc>Ng­¬i ®· tÈy thµnh c«ng ®iÓm kü n¨ng chuyÓn sinh 4, hiÖn t¹i ng­¬i cã thÓ sö dông ®iÓm kü n¨ng chuyÓn sinh 4 d­ l¹i lµ %d, ®· sö dông lµ %d ®iÓm", nLeaveSkillPoint, nUsedSkillPoint),
+		 "BiÕt råi/OnCancel"})
 	tbLog:PlayerActionLog("clear_4_turn_skill_point")
 end

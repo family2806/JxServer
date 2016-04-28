@@ -103,7 +103,7 @@ function tbRule:OnEnterMap()
 	PlayerHandle:SetRank(0)
 	PlayerHandle:SetAwardFlag(0)
 	local nFrame = PREPARE_TIME * 18 + self.nBeginFrame - GetLoop()
-	Msg2Player(format(" %s 秒之后正式开始", floor(nFrame/18)))
+	Msg2Player(format("sau %s gi﹜ ch輓h th鴆 b総 u", floor(nFrame/18)))
 end
 
 function tbRule:OnLeaveMap()
@@ -197,12 +197,12 @@ end
 
 function tbRule:MakeReport(tbPlayer)
 	local tb = {}
-	tinsert(tb, "排行版")
+	tinsert(tb, "B秐g x誴 h筺g")
 	for i = 1, 10 do
 		if not tbPlayer[i] then
 			break
 		end
-		tinsert(tb, format("排 %d: <color=yellow>%s<color> - <color=yellow>%d<color> 点", i,tbPlayer[i].szName, tbPlayer[i].nPoint))
+		tinsert(tb, format("H筺g %d: <color=yellow>%s<color> - <color=yellow>%d<color> 甶觤", i,tbPlayer[i].szName, tbPlayer[i].nPoint))
 	end
 	return tb
 end

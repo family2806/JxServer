@@ -22,12 +22,12 @@ tbTongSupport.nMaxExp = nTS_MAX_EXP_AWARD
 function tbTongSupport:GetRank()
 	local szTongName, nTongID = GetTongName();	
 	if szTongName == nil or szTongName == "" then
-		Talk(1, "", "¸óÏÂÎ´²Î¼Ó°ï»á£¬²»ÄÜÁì½±!")
+		Talk(1, "", "C¸c h¹ ch­a gia nhËp bang héi kh«ng thÓ nhËn phÇn th­ëng nµy!")
 		return 0
 	end
 	local nItemCount = TONG_GetTaskValue(nTongID, self.nTong_TSK_Item_Count)
 	if nItemCount < 10 then
-		Talk(1, "", "ÊıÁ¿ <color=red>ĞÂÉú½ğÅÆ<color>½ÉµÄ²»¹»£¬Çë¼ÌĞø°ïÖúĞÂÊÖ»î¶¯´óµÄ½±ÀøÅ¶")
+		Talk(1, "", "Sè l­îng <color=red>T©n Thñ Kim Bµi<color> n¹p vµo kh«ng ®ñ, h·y cè g¾ng gióp ®ì c¸c t©n thñ ®Ó nhËn ®­îc phÇn th­ëng lín nhĞ!")
 		return 0
 	end
 	if nItemCount >= 10 and nItemCount <= 49 then
@@ -53,22 +53,22 @@ end
 function tbTongSupport:CheckCondition()
 	local szTongName, nTongID = GetTongName();	
 	if szTongName == nil or szTongName == "" then
-		Talk(1, "", "¸óÏÂÎ´¼ÓÈë°ï»á£¬²»ÄÜÁì½±!")
+		Talk(1, "", "C¸c h¹ ch­a gia nhËp bang héi kh«ng thÓ nhËn phÇn th­ëng nµy!")
 		return nil
 	end
 	local nTongTime = GetJoinTongTime()
 	if nTongTime < self.nMinTongJoinTime then
-		Talk(1, "", "¼ÓÈë°ï»áÊ±¼ä²»¹»<color=red>1Ìì<color>, ²»ÄÜÁì½±.")
+		Talk(1, "", "Thêi gian gia nhËp bang ch­a ®ñ <color=red>1 ngµy<color>, kh«ng thÓ nhËn th­ëng.")
 		return 0
 	end
 	local nTaskDailyCount = PlayerFunLib:GetTaskDailyCount(self.nTSK_Daily_Award_Count)
 	if nTaskDailyCount >= 1 then
-		Talk(1, "", "Ã¿ÌìÖ»ÄÜ»ñµÃ¸Ã½±<color=red>1 <color>´Î, Ã÷ÌìÔÙÀ´°É.")
+		Talk(1, "", "Mçi ngµy chØ nhËn ®­îc phÇn th­ëng nµy <color=red>1 <color>lÇn, mai råi h·y quay l¹i.")
 		return 0
 	end
 	local nTaskExp = GetTask(self.nTSK_Exp)*1e6
 	if nTaskExp >= self.nMaxExp then
-		Talk(1, "", "¸óÏÂÒÑ´ï¸Ã½±ÉÏÏŞ£¬²»ÄÜ¼ÌĞøÁìÁË.")
+		Talk(1, "", "C¸c h¹ ®· ®¹t giíi h¹n phÇn th­ëng nµy, kh«ng thÓ nhËn thªm.")
 		return 0
 	end
 	return 1
@@ -78,22 +78,22 @@ function tbTongSupport:main()
 	local szTongName, nTongID = GetTongName();	
 	local strCurrentCount = ""
 	if szTongName == nil or szTongName == "" then
-		strCurrentCount = "Ä¿Ç°: <color=red>Î´¼ÓÈë°ï»á<color>\n\n"
+		strCurrentCount = "HiÖn t¹i: <color=red>Ch­a gia nhËp bang héi<color>\n\n"
 	else
 		local nItemCount = TONG_GetTaskValue(nTongID, self.nTong_TSK_Item_Count)
-		strCurrentCount = format("°ï»á<color=red>ĞÂÊÖ½ğÅÆ<color> Ä¿Ç°: <color=yellow>%d<color>\n\n", nItemCount)
+		strCurrentCount = format("Sè l­îng <color=red>T©n Thñ Kim Bµi<color> hiÖn t¹i: <color=yellow>%d<color>\n\n", nItemCount)
 	end
 	
-	local strTittle = format("°ï»á½ÓÊÕµÄĞÂÊÖÔ½¶à£¬½±ÀøÔ½´ó%s", strCurrentCount)
-	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "S?l­îng", "¾­Ñé")
+	local strTittle = format("Bang héi tiÕp nhËn cµng nhiÒu t©n thñ, phÇn th­ëng cµng lín. %s", strCurrentCount)
+	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "Sè l­îng", "Kinh nghiÖm")
 	strTittle = strTittle..format("\t\t\t\t<color=yellow>%-16s%26s\n", "10 - 49", "6,000,000")
 	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "50 - 99", "10,000,000")
 	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "100 - 199", "20,000,000")
 	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "200 - 299", "40,000,000")
 	strTittle = strTittle..format("\t\t\t\t%-16s%26s\n", "300 - 399", "80,000,000")
-	strTittle = strTittle..format("\t\t\t\t%-16s%26s<color>", "400ÒÔÉÏ", "100,000,000")
+	strTittle = strTittle..format("\t\t\t\t%-16s%26s<color>", "Trªn 400", "100,000,000")
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÁìÈ¡", tbTongSupport.GetAward, {tbTongSupport}})
+	tinsert(tbOpt, {"NhËn", tbTongSupport.GetAward, {tbTongSupport}})
 	tinsert(tbOpt, {"§ãng"})	
 	CreateNewSayEx(strTittle, tbOpt)
 end
@@ -120,6 +120,6 @@ function tbTongSupport:GetAward()
 	PlayerFunLib:AddTaskDaily(self.nTSK_Daily_Award_Count, 1)
 	SetTask(self.nTSK_Exp, floor((nExpAward + nTskExp)/1e6))
 	--print(GetTask(self.nTSK_Exp))
-	local tbAward = {szName = "§i¾­ÑéÖµ", nExp=nExpAward}
-	tbAwardTemplet:Give(tbAward, 1, {"PhongVanLenhBai", "°ï»á½ÓÊÕĞÂÊÖ½±Àø"})
+	local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=nExpAward}
+	tbAwardTemplet:Give(tbAward, 1, {"PhongVanLenhBai", "PhanThuongBangHoiTiepNhanTanThu"})
 end

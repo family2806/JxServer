@@ -6,11 +6,11 @@ Include([[\script\global\yuenan_feiyunrenwu.lua]]);	--by liaozhishan 11/15/2006
 
 function main()
 	local tab_Content = {
-		"ÎÒÀ´×öÖ§ÏßÈÎÎñ/branch_liuyungu", "Ë³±ãÂ·¹ı/no"
+		"Ta ®Õn lµm nhiÖm vô phô tuyÕn/branch_liuyungu", "Nh©n tiÖn ghĞ qua th«i/no"
 	};
 	if (v_fy_is_active() == 1) then
-		tinsert(tab_Content, "ÁìÈ¡100¼¶½±Àø/v_fy_100_entrance")
-		Say("ÎÒ¿ÉÒÔ°ïÊ²Ã´Âğ£¿ ", getn(tab_Content), tab_Content);
+		tinsert(tab_Content, "NhËn phÇn th­ëng cÊp 100/v_fy_100_entrance")
+		Say("Ta cã thÓ gióp g×?", getn(tab_Content), tab_Content);
 		return
 	end;	
 	branch_liuyungu();

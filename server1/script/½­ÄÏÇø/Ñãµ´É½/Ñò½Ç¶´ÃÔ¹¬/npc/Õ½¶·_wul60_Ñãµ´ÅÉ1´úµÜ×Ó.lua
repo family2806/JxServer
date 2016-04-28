@@ -8,11 +8,11 @@ function OnDeath()
 		if (i >= 5) then
 			SetTask(10,60*256+20)
 			SetTaskTemp(48,0)
-			AddNote("Ñãµ´ÅÉÕÆÃÅÒÑ³öÏÖ")
-			Msg2Player("ÄãÉ±ÁËÎŞÊıÈËÖ®ºó, Ñãµ´ÅÉÕÆÃÅ×îºó³öÏÖÁË")
+			AddNote("Ch­ëng m«n cña Nh¹n §·ng ph¸i ®· xuÊt hiÖn ")
+			Msg2Player("Sau khi ng­¬i giÕt v« sè tªn, ch­ëng m«n Nh¹n §·ng ph¸i cuèi cïng ®· xuÊt hiÖn ")
 		else
 			SetTaskTemp(48,i)
-			Msg2Player("ÄãÉ±ÁËÒ»ÃûÑãµ´ÅÉµÄµÜ×Ó")
+			Msg2Player("B¹n giÕt ®­îc mét tªn ®Ö tö cña Nh¹n §·ng ph¸i ")
 		end
 	end
 end;

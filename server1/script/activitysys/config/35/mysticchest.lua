@@ -3,7 +3,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\objbuffer_head.lua")
 function main(nIdx)
 	if tbVngMysticChest:IsActive() ~= 1 then
-		Talk(1, "", "¸ÃÎïÆ·Ö»ÄÜÔÚ´ËÊ±¼äÄÚÊ¹ÓÃ: <color=red>2011Äê10ÔÂ22ÈÕ00Ê±00ÖÁ2011Äê10ÔÂ31ÈÕ24Ê±00<color>")
+		Talk(1, "", "VËt phÈm nµy chØ cã thÓ sö dông vµo thêi gian: <color=red>00h00 ngµy 22 th¸ng 10 n¨m 2011 ®Õn 24h00 ngµy 31 th¸ng 10 n¨m 2011<color>")
 		return 1
 	end
 	if PlayerFunLib:VnCheckInCity("default") ~= 1 or PlayerFunLib:CheckFreeBagCell(2,"default") ~= 1 then
@@ -15,7 +15,7 @@ end
 
 MysticChestAnnounce = function (nItemIdx)
 	local strItemName = GetItemName(nItemIdx)
-	local strMessage = format("<color=green>¹§Ï²<color=yellow>%s<color=green> ÒÑ»ñµÃÎïÆ·<color=yellow>%s<color=green> µ±Ê¹ÓÃ<color=yellow>ÉñÃØÏä<color>", GetName(), strItemName)
+	local strMessage = format("<color=green>Chóc mõng <color=yellow>%s<color=green> ®· nhËn ®­îc vËt phÈm <color=yellow>%s<color=green> khi sö dông <color=yellow>R­¬ng ThÇn BÝ<color>", GetName(), strItemName)
 	local handle = OB_Create()
 	local _, nTongId = GetTongName()
 	if (nTongId ~= 0) then
@@ -29,21 +29,21 @@ end
 tbVngMysticChest = {}
 tbVngMysticChest.tbAward =
 {
-	{szName="×ÏÃ§Áî",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2, CallBack = MysticChestAnnounce},
-	{szName="½ð»¨Ö®±¦",tbProp={6,1,3002,1,0,0},nCount=1,nRate=2, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚ¿øÍ¼Æ×",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.6, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÒÂÍ¼Æ×",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÐ¬Í¼Æ×",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÑü´øÍ¼Æ×",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚ»¤ÍóÍ¼Æ×",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÏîÁ´Í¼Æ×",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÅåÍ¼Æ×",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÉÏ½äÍ¼Æ×",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÏÂ½äÍ¼Æ×",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
-	{szName="½ðÎÚÆ÷ÐµÍ¼Æ×",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.4, CallBack = MysticChestAnnounce},
-	{szName = "§i¾­ÑéÖµ", nExp=50000000,nRate=70},
-	{szName = "§i¾­ÑéÖµ", nExp=100000000,nRate=13},	
+	{szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10, CallBack = MysticChestAnnounce},
+	{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2, CallBack = MysticChestAnnounce},
+	{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=2, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.6, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.3, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.7, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.5, CallBack = MysticChestAnnounce},
+	{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.4, CallBack = MysticChestAnnounce},
+	{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=70},
+	{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=13},	
 }
 
 function tbVngMysticChest:IsActive()

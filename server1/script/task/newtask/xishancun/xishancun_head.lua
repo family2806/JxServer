@@ -7,6 +7,6 @@
 
 -- DescribÍ¼Æ¬ÃèÊö
 ------------------------------------------Î÷É½´åÈÎÎñ--------------------------------------------------------------------------
-DescLink_BuXingRenShi 	= "<#><link=image[0,19]:\\spr\\npcres\\passerby\\passerby080\\passerby080s.spr>²»ĞÑÈËÊ¿<link>"
-DescLink_XiShanXiaoEr 	= "<#><link=image[0,3]:\\spr\\npcres\\passerby\\passerby045\\passerby045s.spr>Î÷É½Ğ¡¶ş<link>"
+DescLink_BuXingRenShi 	= "<#><link=image[0,19]:\\spr\\npcres\\passerby\\passerby080\\passerby080s.spr>TÜnh S­<link>"
+DescLink_XiShanXiaoEr 	= "<#><link=image[0,3]:\\spr\\npcres\\passerby\\passerby045\\passerby045s.spr>T©y S¬n TiÓu NhŞ<link>"
 

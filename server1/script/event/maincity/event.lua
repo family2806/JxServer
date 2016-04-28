@@ -5,13 +5,13 @@ Include("\\script\\lib\\gb_taskfuncs.lua");		--gb_Task
 Include("\\script\\misc\\league_cityinfo.lua")
 TB_MAINCITY_CITYWAR_T = {
 --[³ÇÊĞ±àºÅ]={¹¥³ÇĞÇÆÚ£¬³ÇÊĞMap£¬³ÇÊĞÃû}
-	{4, 1, "·ïÏè"},
-	{2, 11, "³É¶¼"},
-	{3, 162, "´óÀí"},
-	{6, 37, "ãê¾©"},
-	{5, 78, "ÏåÑô"},
-	{1, 80, "ÑïÖİ"},
-	{7, 176, "ÁÙ°²"},
+	{4, 1, "Ph­îng T­êng"},
+	{2, 11, "Thµnh §«"},
+	{3, 162, "§¹i Lı"},
+	{6, 37, "BiÖn Kinh"},
+	{5, 78, "T­¬ng D­¬ng"},
+	{1, 80, "D­¬ng Ch©u"},
+	{7, 176, "L©m An"},
 }
 
 TB_MAINCITY_AWARDARY = {
@@ -24,15 +24,15 @@ TB_MAINCITY_AWARDARY = {
 function maincity_award_entry()
 	local city_id = gb_GetTask("MAINCITYCFG", 1);
 	if (GetTongMaster() ~= GetName() or GetCityOwner(city_id) ~= GetTongName()) then
-		Say("<#>Äã²»ÊÇ<"..GetCityAreaName(city_id).."µÄÌ«ÊØ¸®>, ²»ÄÜÁìÈ¡½±Àø!", 0);
+		Say("<#>Ng­¬i kh«ng ph¶i lµ Th¸i thó cña <"..GetCityAreaName(city_id).."Phñ>, kh«ng thÓ nhËn phÇn th­ëng!", 0);
 		return 0;
 	end;
 	
-	Say("<#>ÁìÈ¡¸øÌ«ÊØµÄ½±Àø",
+	Say("<#>NhËn phÇn th­ëng dµnh cho Th¸i Thó ",
 	3,
-	"<#>ÁìÈ¡³ÇÖ÷Àñ°ü/take_maincity_award",
-	"<#>ÁìÈ¡³ÇÖ÷ÀñÆ·/take_maincity_award",
-	"<#> ÎÒÃÇÔİÊ±²»Áì/OnCancel");
+	"<#>NhËn Thµnh chñ LÔ bao/take_maincity_award",
+	"<#>NhËn Thµnh chñ LÔ phÈm/take_maincity_award",
+	"<#> T¹m thêi ta kh«ng l·nh ®©u/OnCancel");
 end;
 
 function take_maincity_award(nSel)
@@ -45,7 +45,7 @@ function take_maincity_award(nSel)
 	local ncount = TB_MAINCITY_AWARDARY[nlg_tsk][8];
 	local ncurcount = get_citybonus_task(city_id, nlg_tsk);
 	if (CalcFreeItemCellCount() < ncount) then
-		Say("<#>ÄãµÄ±³°ü¿Õ¼ä²»×ã£¬ÇëÏÈÕûÀí!", 0);
+		Say("<#>Hµnh trang cña ng­¬i kh«ng ®ñ chç trèng, xin h·y s¾p xÕp l¹i!", 0);
 		return 0;
 	end;
 	local ng, nd, np, nl, ns, nluck = TB_MAINCITY_AWARDARY[nlg_tsk][1],TB_MAINCITY_AWARDARY[nlg_tsk][2],TB_MAINCITY_AWARDARY[nlg_tsk][3],
@@ -54,13 +54,13 @@ function take_maincity_award(nSel)
 	
 	local szLogmsg = "";
 	if (nlg_tsk == 1) then
-		szLogmsg = "ÁìÈ¡³ÇÖ÷Àñ°ü";
+		szLogmsg = " nhËn Thµnh chñ LÔ bao";
 	else
-		szLogmsg = "³ÇÖ÷ÀñÆ·";
+		szLogmsg = "Thµnh chñ LÔ phÈm";
 		if (ncurcount >= ncount) then
-			szLogmsg = "ÁìÈ¡µÚ2²ã: "..szLogmsg;
+			szLogmsg = "NhËn ®ît thø 2: "..szLogmsg;
 		else
-			szLogmsg = "ÁìÈ¡µÚ1²ã: "..szLogmsg;
+			szLogmsg = "NhËt ®ît thø 1: "..szLogmsg;
 		end;
 	end;
 	
@@ -68,14 +68,14 @@ function take_maincity_award(nSel)
 	for i = 1, ncount do
 		AddItem(ng, nd, np, nl, ns, nluck);
 	end;
-	WriteLog("[½±Àø server 7´ó³ÇÊĞ\t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount()..szLogmsg..ncount.."¸ö");
-	Say("<#>Äã"..szLogmsg..". ×£ºØ!", 0);
+	WriteLog("[PhÇn th­ëng server ThÊt §¹i Thµnh ThŞ]\t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount()..szLogmsg..ncount.."c¸i");
+	Say("<#>Ng­¬i "..szLogmsg..". Xin chóc mõng!", 0);
 end;
 
 function check_award_condition(city_id, nlg_tsk, show_talk)
 	if (city_id > 7 or city_id < 1) then
 		if (show_talk) then
-			Say("<#>Ö¸¶¨Ì«ÊØÓĞ²î´í£¬ÇëºÍ¹ÜÀíÈËÔ±ÁªÏµ£¡", 0);
+			Say("<#>ChØ ®Şnh Th¸i thó sai sãt, xin liªn l¹c víi ng­êi qu¶n lı!", 0);
 		end;
 		return 0
 	end;
@@ -86,7 +86,7 @@ function check_award_condition(city_id, nlg_tsk, show_talk)
 		ncurweek = 7;
 	end;
 	if (TB_MAINCITY_CITYWAR_T[city_id][1] == ncurweek and tonumber(GetLocalDate("%H%M")) >= 2000 and tonumber(GetLocalDate("%H%M")) < 2230) then
-		Say("<#>´¦ÓÚ¹¥³ÇÊ±¼ä£¬³ÇÖ÷²»ÄÜÁìÈ¡½±Àø.", 0);
+		Say("<#>§ang thêi gian c«ng thµnh, Thµnh chñ kh«ng thÓ nhËn phÇn th­ëng.", 0);
 		return 0;
 	end;
 	local nTskDate = get_maincitybonus_date(city_id);
@@ -99,7 +99,7 @@ function check_award_condition(city_id, nlg_tsk, show_talk)
 	
 	if (ntskvalue >= TB_MAINCITY_AWARDARY[nlg_tsk][7]) then
 		if (show_talk) then
-			Say("<#>Äã²»ÊÇÒÑ¾­ÁìÈ¡ÕâÖÜµÄ½±ÀøÁËÂğ?", 0);
+			Say("<#>Ng­¬i ch¼ng ph¶i ®· nhËn phÇn th­ëng tuÇn nµy råi sao?", 0);
 		end;
 		return 0;
 	end;

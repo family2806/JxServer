@@ -9,9 +9,9 @@ function main(sel)
 		NewWorld(158, 1584, 3191);
 	elseif (UTask_cy <= 60*256) then
 --		SetPos()
-		Talk(1,"","²»ÄÜ½øÈë±¾ÃÅ½ûµØ!")
+		Talk(1,"","Kh«ng ®­îc x«ng vµo cÊm ®Þa bæn m«n!")
 	else
 --		SetPos()
-		Talk(1,"","ÕâÊÇ´äÑÌ½ûµØ£¬²»ÄÜ½øÈë!")
+		Talk(1,"","N¬i nµy lµ cÊm ®Þa Thóy Yªn kh«ng ®­îc x«ng vµo!")
 	end
 end;

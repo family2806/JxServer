@@ -53,19 +53,19 @@ end
 function ChangeExpState(key)
 	if(key >= 30) then
 		AddSkillState(440, 1, 1, 10 * 60 * 60 * 18)	--10Ğ¡Ê±Ë«±¶¾­Ñé
-		PutMessage("ÄãµÃµ½10Ğ¡Ê±Ë«±¶¾­Ñé")
+		PutMessage("B¹n nhËn ®­îc 10 giê nh©n ®«i ®iÓm kinh nghiÖm")
 	elseif(key >= 21) then
 		AddSkillState(440, 1, 1, 8 * 60 * 60 * 18)	--8Ğ¡Ê±Ë«±¶¾­Ñé
-		PutMessage("ÄãµÃµ½8Ğ¡Ê±Ë«±¶¾­Ñé")
+		PutMessage("B¹n nhËn ®­îc 8 giê nh©n ®«i ®iÓm kinh nghiÖm")
 	elseif(key >= 14) then
 		AddSkillState(440, 1, 1, 6 * 60 * 60 * 18)	--6Ğ¡Ê±Ë«±¶¾­Ñé
-		PutMessage("ÄãµÃµ½6Ğ¡Ê±Ë«±¶¾­Ñé")
+		PutMessage("B¹n nhËn ®­îc 6 giê nh©n ®«i ®iÓm kinh nghiÖm")
 	elseif(key >= 7) then
 		AddSkillState(440, 1, 1, 4 * 60 * 60 * 18)	--4Ğ¡Ê±Ë«±¶¾­Ñé
-		PutMessage("ÄãµÃµ½4Ğ¡Ê±Ë«±¶¾­Ñé")
+		PutMessage("B¹n nhËn ®­îc 4 giê nh©n ®«i ®iÓm kinh nghiÖm")
 	elseif(key >= 3) then
 		AddSkillState(531, 5, 1, 4 * 60 * 60 * 18)	--4Ğ¡Ê±1.5±¶¾­Ñé
-		PutMessage("ÄãµÃµ½4 Ğ¡Ê±1.5 ±¶¾­Ñé")
+		PutMessage("B¹n nhËn ®­îc 4 giê nh©n 1.5 ®iÓm kinh nghiÖm")
 	end
 	revival_player(key)
 end

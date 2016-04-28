@@ -2,7 +2,7 @@ Include("\\script\\lib\\basic.lua")
 
 IP_EXTPOINT = 4 								-- Ext used for IP Bonus
 IP_BIT = 1 											-- Bit check
-IP_Name = "Ë«±¶¾­Ñé"		-- Event Name
+IP_Name = "Nh©n ®«i kinh nghiÖm"		-- Event Name
 IP_SWITCH = 0 									-- Open or close event
 
 
@@ -10,18 +10,18 @@ function IpBonus()
 do return end
 	local nPromotionSay =
 	{		
-		"¸óÏÂÏëÖªµÀ×Ô¼º¹»Ìõ¼şÁì½±ÁËÂğ?/getInfo",
+		"T¹i h¹ muèn biÕt m×nh ®ñ ®iÒu kiÖn nhËn th­ëng kh«ng?/getInfo",
 	}	
 	
 	local nDay = tonumber(date("%w"))
 	
 	if nDay == 6 or nDay == 0 then
-		tinsert(nPromotionSay,"ÁìÈ¡½±Àø/getBonus")
+		tinsert(nPromotionSay,"NhËn phÇn th­ëng/getBonus")
 	end	
 	
-	tinsert(nPromotionSay,"ÔÚÏÂÖ»ÊÇÂ·¹ı¶øÒÑ!/OnCancel")
+	tinsert(nPromotionSay,"T¹i h¹ chØ ghĞ qua th«i!/OnCancel")
 	
-	Say("Ö´ĞĞÕß½«ËÍ¸øÔÚ»ú·¿µÄÍæ¼Ò»òÕßÓĞ¹±Ï×µÄ¸öÈËºÜ¶à½±Àø<color=red>"..IP_Name.."<color>.",getn(nPromotionSay),nPromotionSay)
+	Say("Nhµ ®iÒu hµnh sÏ göi tÆng nhiÒu phÇn quµ cho nh÷ng ng­êi ch¬i ë nh÷ng phßng m¸y hoÆc c¸ nh©n cã nhiÒu ®ãng gãp. Néi dung cña ho¹t ®éng trong giai ®o¹n nµy lµ <color=red>"..IP_Name.."<color>.",getn(nPromotionSay),nPromotionSay)
 end;
 
 function IsIPBonus()
@@ -42,7 +42,7 @@ function getBonus()
 		if (CheckIPBonus() == 1) then			
 			AddIPAward();
 		else
-			Say("ÕæÊÇÒÅº¶£¬ÄãµÄIP²»ÊôÓÚÁì½±Ãûµ¥",1,"ÕæÊÇ²»ºÃÒâË¼/OnCancel")
+			Say("ThËt tiÕc, IP cña ng­¬i kh«ng thuéc trong danh s¸ch nhËn th­ëng. H·y quay l¹i sau nhĞ!",1,"ThËt ng¹i qu¸!/OnCancel")
 			return
 		end;	
 	end;
@@ -50,23 +50,23 @@ end;
 
 function getInfo()
 	if (CheckIPBonus() == 1) then
-		Say("¹§Ï²£¡ÄãµÄIPÕı´¦ÓÚÁì½±Ãûµ¥£¬ÇëÅ¬Á¦Ğ©Å¶!",1,"¶àĞ»/OnCancel")
+		Say("Cung hû! IP cña ng­¬i ®ang cã trong danh s¸ch nhËn th­ëng. H·y cè g¾ng h¬n!",1,"Xin ®a t¹/OnCancel")
 		return
 	else
-		Say("ÕæÊÇÒÅº¶£¬ÄãµÄIP²»ÊôÓÚÁì½±Ãûµ¥£¬ÉÔºóÔÙÀ´Å¶",1,"ÕæÊÇ²»ºÃÒâË¼/OnCancel")
+		Say("ThËt tiÕc, IP cña ng­¬i kh«ng thuéc trong danh s¸ch nhËn th­ëng. H·y quay l¹i sau nhĞ!",1,"ThËt ng¹i qu¸!/OnCancel")
 		return
 	end;
 end;
 
 function AddIPAward()
 	if GetSkillState(451) > 0 then
-		Say("Äã²»ÊÇÒÑ¾­ÁìÁËÂğ?" ,1,"ÕæÊÇ²»ºÃÒâË¼/OnCancel")
+		Say("Ch¼ng ph¶i ng­¬i ®· nhËn th­ëng råi sao?" ,1,"ThËt ng¹i qu¸!/OnCancel")
 		return
 	end	
 	
-	Say("ËÍ¸øÄãÒ»¼şĞ¡ÀñÎï£¬¸ÃÀñÎïÊÇ<color=red>"..IP_Name.."<color>.",1,"¶àĞ»/OnCancel")
+	Say("TÆng ng­¬i 1 mãn quµ nhá thay cho lêi tri ©n! Mãn quµ lÇn nµy lµ <color=red>"..IP_Name.."<color>.",1,"Xin ®a t¹/OnCancel")
 	AddSkillState(451, 20, 1, 18*60*60*24);
-	Msg2Player("¹§Ï²Äã»ñµÃ½±Àø"..IP_Name);	
+	Msg2Player("Chóc mõng b¹n nhËn ®­îc phÇn th­ëng "..IP_Name);	
 	WriteLog(format("[IPBonus]\t%s\t%s\t%s\t%s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),IP_Name))
 end;
 

@@ -19,10 +19,10 @@ function main(nItem)
 	local nRestCount = GetItemParam(nItem, 1)
 	
 	if (nRestCount <= 0) then
-		Say("ÎŞË«É±ÕóÒÑ´ò¿ª£¬ÊÇ·ñÒª¹Ø±Õ£¿", 2, "¹Ø±Õ/#closebook("..nItem..")", "ÔİÊ±²»Òª/no")
+		Say("V« song s¸t trËn ®· më ra, cã muèn ®ãng l¹i kh«ng?", 2, "§ãng/#closebook("..nItem..")", "T¹m dõng/no")
 			--, "ÔÙ¸øÒ»±¾/addbook", "Ñ¡ÔñÎÒÏëÒªµÄÃæ¾ß/selectface")
 	else
-		Say("ÎŞË«É±ÕóÒÑ¹Ø±Õ£¬ÊÇ·ñÒª´ò¿ª£¿", 2, "´ò¿ª/#openbook("..nItem..")", "ÔİÊ±²»Òª/no")
+		Say("V« song s¸t trËn ®· ®ãng, cã muèn më ra kh«ng?", 2, "Më ra /#openbook("..nItem..")", "T¹m dõng/no")
 		--, "ÔÙ¸øÒ»±¾/addbook", "Ñ¡ÔñÎÒÏëÒªµÄÃæ¾ß/selectface")
 	end
 	return 1;
@@ -41,16 +41,16 @@ function openbook(nItem)
 	end;
 	
 	if (GetTask(WSSZ_TK_USING) == USE_YES) then
-		Say("ÄãÒÑ¾­´ò¿ªÒ»¸öÎŞË«É±Õó", 0);
-		Msg2Player("ÄãÒÑ¾­´ò¿ªÒ»¸öÎŞË«É±Õó");
+		Say("§· më ra 1 V« song s¸t trËn", 0);
+		Msg2Player("§· më ra 1 V« song s¸t trËn");
 		return
 	end;
 	
 	SetTaskTemp(193, nItem);
 	local nMaskIdx = GetItemParam(nItem, 2);
-	Say("¸ÃÎŞË«É±Õó»¹Ã»ÓĞÑ¡Ôñ±íÏÖÔìĞÍ£¬¿ÉÒÔ´ÓÒÑÓĞÔìĞÍÖÖÌí¼ÓÒ»¸ö¡£·ñÔò£¬ÄãºÍÄãÊÜÎŞË«É±ÕóÓ°ÏìµÄÅóÓÑ½«ÒÔ´Ìâ¬µÄÍâĞÎ³öÏÖ£¬ÄãÈ·Êµ²»ĞèÒªÑ¡ÔñÔìĞÍÂğ£¿", 2, 
-	"ÎÒÒªÑ¡Ôñ¶ÀÌØµÄÔìĞÍ/sel_face", 
-	"ÎÒ¾õµÃ´Ìâ¬ÍâĞÎ²»´í/select_no");
+	Say("V« song s¸t trËn vÉn ch­a chän khu«n mÉu, cã thÓ chØnh söa lo¹i h×nh ®· cã. Cã muèn lùa chän khu«n mÉu kh«ng?", 2, 
+	"Chän khu«n mÉu ®Æc s¾c/sel_face", 
+	"Ta c¶m thÊy lo¹i nµy còng tèt råi/select_no");
 end
 
 function sel_face()
@@ -63,19 +63,19 @@ function sel_face()
 		nMaskIdx = TONG_GetTaskValue(nTongID, TTK_FACE[i]);
 		if (nMaskIdx > 0) then
 			szMaskName = gettabfilestring(MAPFILE, (nMaskIdx + 2), 1);
-			tinsert(tab_face, szMaskName.."ÍâĞÎ²»´í/#sel_mask("..i..")");
+			tinsert(tab_face, szMaskName.."khu«n mÉu kh¸ tèt/#sel_mask("..i..")");
 		end;
 	end;
 	
 	if (getn(tab_face) == 0) then
-		Say("¹ó°ïÄ¿Ç°Ã»ÓĞÌí¼ÓÎŞË«É±ÕóµÄÍâĞÎ£¬°ïÖ÷¸ú³¤ÀÏ¿ÉÒÔµ½°ï»áÍ¼ÌÚÈ¥ÔöÉ¾»òÕßĞŞ¸Ä¡£×î¶àÓµÓĞÊ®¸ö¡£ÄãÈ·ÊµÒªÊ¹ÓÃÎŞË«É±ÕóÂğ£¿", 2,
-		"ÊÇµÄ£¬ÎÒ¾õµÃ´Ìâ¬ÍâĞÎ²»´í/select_no",
-		"½áÊø¶Ô»°/no");
+		Say("Quİ bang ch­a thªm vµo h×nh thï V« song s¸t trËn, bang chñ hoÆc tr­ëng l·o cã thÓ ®Õn Cét biÓu t­îng ®Ó thay ®æi. Tèi ®a cã 10 khu«n mÉu, cã ®ång ı sö dông V« song s¸t trËn kh«ng?", 2,
+		"Ta c¶m thÊy khu«n mÉu nhİm còng tèt/select_no",
+		"KÕt thóc ®èi tho¹i/no");
 		return
 	end;
 	
-	tinsert(tab_face, "½áÊø¶Ô»°/no");
-	Say("¹ó°ïÄ¿Ç°ÎŞË«É±ÕóÓµÓĞµÄÍâĞÎ°üÀ¨ÒÔÏÂÒ»Ğ©£¬×î¶àÓµÓĞÊ®¸ö£¬°ïÖ÷¸ú³¤ÀÏ¿ÉÒÔµ½°ï»áÍ¼ÌÚÈ¥ÔöÉ¾»òÕßĞŞ¸Ä¡£ÄãÒªÑ¡ÔñÄÄ¸ö×÷ÎªÕâ´ÎÊ¹ÓÃµÄÄ£ĞÍ", getn(tab_face), tab_face);
+	tinsert(tab_face, "KÕt thóc ®èi tho¹i/no");
+	Say("H×nh thï V« song s¸t trËn quİ bang hiÖn cã gåm nh÷ng c¸i bªn d­íi, tèi ®a cã 10 c¸i, bang chñ hoÆc tr­ëng l·o cã thÓ ®Õn Cét biÓu t­îng cña bang ®Ó thay ®æi, ng­¬i chän khu«n mÉu nµo", getn(tab_face), tab_face);
 end;
 
 function select_no()
@@ -120,7 +120,7 @@ function start_book(nMaskIdx)
 		set_rest_count(nItem, 0)
 		
 		emitskill(nMask, nRestCount)
-		Msg2Player("Äã´ò¿ªÁËÒ»¸öÎŞË«É±Õó£¡")
+		Msg2Player("B¹n ®· më ra V« song s¸t trËn!")
 	end
 end
 
@@ -143,27 +143,27 @@ function closebook(nItem)
 		-- if (²»ÅäÌ×) then nRestCount = 0 end
 		TM_StopTimer(TIMER_ID)
 		if (not nRestCount or nRestCount <= 0) then
-			Msg2Player("¸ÃÎŞË«É±ÕóÒÑºÄ¾¡£¡")
+			Msg2Player("V« song s¸t trËn nµy ®· tiªu hao hÕt!")
 			RemoveItemByIndex(nItem)
 		else
 			ChangeOwnFeature( 1, 0, 12);
 			SetPkReduceState(0, 80, 80, 50);
-			Msg2Player("ÎŞË«É±ÕóÒÑ¹Ø±Õ£¡")
+			Msg2Player("V« song s¸t trËn ®· ®ãng l¹i!")
 			set_rest_count(nItem, nRestCount)
 		end
 		nt_setTask(WSSZ_TK_USING, USE_NO);
 	else
-		Say("ÄãÃ»ÓĞ´ò¿ªÕâ¸öÎŞË«É±Õó", 0);
-		Msg2Player("ÄãÃ»ÓĞ´ò¿ªÕâ¸öÎŞË«É±Õó");
+		Say("B¹n ch­a më ra V« song s¸t trËn", 0);
+		Msg2Player("B¹n ch­a më ra V« song s¸t trËn");
 	end
 end
 
 function GetDesc(nItem)
 	local nRestCount = GetItemParam(nItem, 1)
 	if (nRestCount <= 0) then
-		return "<color=blue>¸ÃÎŞË«É±ÕóÒÑ´ò¿ª<color>"
+		return "<color=blue>V« song s¸t trËn nµy ®· më<color>"
 	else
-		return format("<color=blue>¸ÃÎŞË«É±ÕóÉĞ¿ÉÊ¹ÓÃ%dĞ¡Ê±%.2f·ÖÖÓ<color>", floor(nRestCount / 360), mod(nRestCount, 360) / 6)
+		return format("<color=blue>V« song s¸t trËn nµy cßn cã thÓ sö dông trong %d giê %.2f phót<color>", floor(nRestCount / 360), mod(nRestCount, 360) / 6)
 	end
 end
 
@@ -181,7 +181,7 @@ function OnTimer()
 
 	if (nRestCount == 0) then --Èç¹û´ÎÊıÎª0£»
 		nt_setTask(WSSZ_TK_USING, USE_NO);
-		Msg2Player("¸ÃÎŞË«É±ÕóÒÑ¾­ºÄ¾¡¡£")
+		Msg2Player("V« song s¸t trËn nµy ®· tiªu hao hÕt.")
 		return
 	end
 	
@@ -190,7 +190,7 @@ function OnTimer()
 	
 	emitskill(nMask, nRestCount);
 	if (mod(nRestCount, 30) == 0 and nRestCount > 0) then
-		Msg2Player("Äã´ò¿ªÁË<color=yellow>ÎŞË«É±Õó<color>£¬»¹¿ÉÒÔ×÷ÓÃ<color=yellow>"..floor(nRestCount / 360).."<color>Ğ¡Ê±<color=yellow>"..floor(mod(nRestCount, 360) / 6).."<color>·ÖÖÓ¡£");
+		Msg2Player("B¹n ®· më ra <color=yellow>V« song s¸t trËn<color>, cã thÓ t¸c dông <color=yellow>"..floor(nRestCount / 360).."<color> giê <color=yellow>"..floor(mod(nRestCount, 360) / 6).."<color> phót.");
 	end;
 end
 

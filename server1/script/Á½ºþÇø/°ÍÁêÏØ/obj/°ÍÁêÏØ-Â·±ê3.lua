@@ -3,6 +3,6 @@
 function main(sel)
 
 --Say("巴陵县<——>神农架", 0)
-Say("巴陵县<——>苗岭", 0)
+Say("Ba L╪g huy謓<---->Mi猽 L躰h", 0)
 
 end;

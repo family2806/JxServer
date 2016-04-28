@@ -2,11 +2,11 @@
 --Include("\\script\\event\\storm\\function.lua")
 --storm_ask2start(gameid)
 
---Storm ¼Ó»ı·Ö
+--Storm ¼Ó»ıphót
 --Include("\\script\\event\\storm\\function.lua")
 --storm_addpoint(gameid, addpoint)
 
---Storm ¼Ó½±Àø»ı·Ö£¨ËÎ½ğ£©
+--Storm ¼Ó½±Àø»ıphót£¨ËÎ½ğ£©
 --local add_time = 60 * FRAME2TIME / TIMER_1
 --Include("\\script\\event\\storm\\function.lua")
 --storm_addm_mspointex(1, MISSIONID, (t - RUNGAME_TIME) / add_time)
@@ -16,7 +16,7 @@
 
 Include("\\script\\event\\storm\\head.lua")
 
---¼ì²éµ±Ç°ÊÇ·ñ¿ÉÒÔ¿ªÊ¼»î¶¯»ı·Ö
+--¼ì²éµ±Ç°ÊÇ·ñ¿ÉÒÔ¿ªÊ¼»î¶¯»ıphót
 --·µ»Ø1±íÊ¾¿ÉÒÔ¿ªÊ¼£¬nilÎª²»¿ÉÒÔ
 function storm_can_start(gameid, silent)
 	if (gameid == nil or TB_STORM_TASKID[gameid] == nil) then
@@ -27,19 +27,19 @@ function storm_can_start(gameid, silent)
 	storm_anotherday()
 	
 	local str = ""
-	if (GetTask(STORM_TASKID_DAY) > STORM_END_DAY) then	--·ç±©»ı·ÖÏµÍ³ÒÑ¾­¹Ø±ÕÁË
-		str = "·ç±©»ı·ÖÏµÍ³ÒÑ¾­¹Ø±Õ£¡"
+	if (GetTask(STORM_TASKID_DAY) > STORM_END_DAY) then	--·ç±©»ıphótÏµÍ³ÒÑ¾­¹Ø±ÕÁË
+		str = "Xin lçi! HÖ thèng tİch lòy Phong Ba ®· ®ãng l¹i."
 	elseif (GetLevel() < 50) then	--50¼¶ÒÔÉÏ
-		str = "²»ºÃÒâË¼£¡ÄãµÄµÈ¼¶Ì«µÍÁË£¬ÎŞ·¨²Î¼Ó»ı·Ö»î¶¯."
+		str = "Xin lçi! §¼ng cÊp b¹n qu¸ thÊp, kh«ng thÓ tham gia ho¹t ®éng tİch lòy."
 	elseif (storm_valid_game(gameid)) then	--ÕıÔÚ»î¶¯ÖĞ
-		str = "ÄãÇ°Ãæ"..storm_gamename(gameid, "red").."ÒÑ²Î¼ÓÁË·ç±©»ı·Ö»î¶¯.¸Ï¿ì»ıÀÛ·ÖÖµÈ¥!"
+		str = "Tr­íc m¾t b¹n"..storm_gamename(gameid, "red").."®· tham gia ho¹t ®éng khiªu chiÕn Phong Ba. Mau ®i tİch lòy ®iÓm ®i!"
 	elseif (GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_TRYCOUNT]) >= TB_STORM_TRYTIMES[gameid] or	--¸Ã»î¶¯³¢ÊÔ´ÎÊı´ïµ½ÉÏÏŞ
 		(GetTask(STORM_TASKID_GAMES) >= 3 and GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_TRYCOUNT]) == 0)) then	--»ò²Î¼Ó»î¶¯Êı´ïµ½ÉÏÏŞ£¨Èı¸ö£©ÇÒµ±Ç°»î¶¯Ã»ÓĞ²Î¼Ó¹ı
-		str = "²»ºÃÒâË¼£¡Äã½ñÌì²»ÄÜ²Î¼Ó"..storm_gamename(gameid, "red").."·ç±©»ı·ÖÁË. Ã÷ÌìÔÙÀ´°É!"
+		str = "Xin lçi! H«m nay b¹n kh«ng thÓ tham gia"..storm_gamename(gameid, "red").."tİch lòy Phong Ba råi. Ngµy mai h·y ®Õn ®i!"
 	elseif (gameid == 1) then
 		local n_timer = tonumber(GetLocalDate("%H%M"))
 		if (n_timer > 2245 or n_timer < 200) then	--ËÎ½ğ×îºóÒ»³¡
-			str = "ÄãÀ´ÍíÁË£¬Ã÷ÌìÔÙÀ´ÌôÕ½°É!"
+			str = "ng­¬i ®Õn trÔ qu¸, ngµy mai h·y ®Õn khiªu chiÕn ®i!"
 		end
 	end
 	
@@ -53,7 +53,7 @@ function storm_can_start(gameid, silent)
 	return 1
 end
 
---½«´Ë´Î±ÈÈüÄÉÈëµ½·ç±©»ı·Ö»î¶¯ÖĞµÄ¶Ô»°
+--½«´Ë´Î±ÈÈüÄÉÈëµ½·ç±©»ıphót»î¶¯ÖĞµÄ¶Ô»°
 function storm_ask2start(gameid, b_nonext)
 --	if (storm_can_start(gameid, 1)) then
 --		Say("¡¡¡¡·ç±©»î¶¯¿ª·ÅÈÕÆÚÎª9ÔÂ8ÈÕ-10ÔÂ2ÈÕ£¬°üÀ¨ËÎ½ğ´óÕ½¡¢Ò°ÛÅÈÎÎñÁ´¡¢É±ÊÖÊÔÁ¶ÈÎÎñ¡£Ã¿Ìì¸ù¾İÄãÔÚ¸÷¸öÏµÍ³ÖĞµÄ³É¼¨×ª»¯ÎªÄãµÄ·ç±©»ı·Ö£¨²Î¼ÓÌõ¼ş£º50¼¶¼°ÒÔÉÏÍæ¼Ò£©¡£<enter>"..
@@ -70,15 +70,15 @@ function storm_ask2start(gameid, b_nonext)
 	return nil
 end
 
---½«´Ë´Î±ÈÈüÄÉÈëµ½·ç±©»ı·Ö»î¶¯ÖĞµÄ¶Ô»°
+--½«´Ë´Î±ÈÈüÄÉÈëµ½·ç±©»ıphót»î¶¯ÖĞµÄ¶Ô»°
 function storm_want2start(gameid, b_nonext)
 	if (storm_can_start(gameid)) then
 		local str = TB_STORM_HELP[gameid]..TB_STORM_DIALOG[gameid]
-		if (gameid == 1) then	--ËÎ½ğ´óÕ½ĞèÒª¶îÍâµÄÏÔÊ¾¼¶±ğºÍµ±Ç°»ı·Ö
+		if (gameid == 1) then	--ËÎ½ğ´óÕ½ĞèÒª¶îÍâµÄÏÔÊ¾¼¶±ğºÍµ±Ç°»ıphót
 			local tb_levelstr = {
-				"ÔÚ³õ¼¶ËÎ½ğÕ½³¡, Ã¿ÈËÃ¿Ìì×î¸ßÄÜÁìÈ¡»ı·Ö<color=yellow>80<color> µã.",
-				"ÔÚÖĞ¼¶ËÎ½ğÕ½³¡, Ã¿ÈËÃ¿Ìì×î¸ßÄÜÁìÈ¡»ı·Ö<color=yellow>90<color> µã.",
-				"ÔÚ¸ß¼¶ËÎ½ğÕ½³¡, Ã¿ÈËÃ¿Ìì×î¸ßÄÜÁìÈ¡»ı·Ö<color=yellow>100<color> µã."
+				"Trong chiÕn tr­êng Tèng Kim s¬ cÊp, mçi ng­êi mçi ngµy nhËn ®­îc tİch lòy Phong Ba cao nhÊt <color=yellow>80<color> ®iÓm.",
+				"Trong chiÕn tr­êng Tèng Kim trung cÊp, mçi ng­êi mçi ngµy nhËn ®­îc tİch lòy Phong Ba cao nhÊt <color=yellow>90<color> ®iÓm.",
+				"Trong chiÕn tr­êng Tèng Kim cao cÊp, mçi ng­êi mçi ngµy nhËn ®­îc tİch lòy Phong Ba cao nhÊt <color=yellow>100<color> ®iÓm."
 			}
 			local level = BT_GetGameData(GAME_LEVEL)
 			local point = 0
@@ -87,13 +87,13 @@ function storm_want2start(gameid, b_nonext)
 			end
 			str = format(str,tb_levelstr[level],point)
 		end
-		Say(str, 2,"ÎÒÏëÈ·¶¨¿ªÊ¼/#storm_start("..gameid..",nil,"..tostring(b_nonext)..")","µÈÒ»ÏÂ!/#storm_goon_start("..gameid..","..tostring(b_nonext)..")")
+		Say(str, 2,"Ta muèn x¸c ®Şnh b¾t ®Çu/#storm_start("..gameid..",nil,"..tostring(b_nonext)..")","§îi mét l¸t ®i!/#storm_goon_start("..gameid..","..tostring(b_nonext)..")")
 		return 1
 	end
 	return nil
 end
 
---¿ªÊ¼Ä³Ò»»î¶¯µÄ¼Æ·Ö
+--¿ªÊ¼Ä³Ò»»î¶¯µÄ¼Æphót
 --gameid£º	1~10	»î¶¯µÄID
 --·µ»ØÖµ£º	1Æô¶¯³É¹¦	nilÆô¶¯Ê§°Ü
 function storm_start(gameid, silent, b_nonext)
@@ -103,34 +103,34 @@ function storm_start(gameid, silent, b_nonext)
 	
 	local nowtime = storm_gettime(gameid)
 	if (nowtime == 0) then
-		Say("Ä¿Ç°"..storm_gamename(gameid, "red").."»î¶¯»¹Ã»¿ªÊ¼£¬µÈ»áÔÙÀ´°É!", 0)
+		Say("HiÖn t¹i"..storm_gamename(gameid, "red").."ho¹t ®éng ch­a b¾t ®Çu, ®îi mét l¸t quay l¹i ®i!", 0)
 	end
 	
 	local gamemode = 0
-	--²¿·Ö»î¶¯ÌØÊâÒªÇó
+	--²¿phót»î¶¯ÌØÊâÒªÇó
 	if (gameid == 1) then
 		local ruleid = BT_GetGameData(GAME_RULEID)
 		local sjmode = 0
-		if (ruleid == 16) then	--ÔªË§Ä£Ê½
+		if (ruleid == 16) then	--D¹ng thøc nguyªn so¸i
 			sjmode = 3
-		elseif (ruleid == 20) then	--É±Â¾Ä£Ê½
+		elseif (ruleid == 20) then	--D¹ng thøc Cõu s¸t
 			sjmode = 4
 		elseif (ruleid == 11) then
 			local tempSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(BT_GetGameData(GAME_MAPID))
-			sjmode = GetMissionV(2)	--1¡¢¹Ì¶¨¶áÆì£»2¡¢Ëæ¼´¶áÆì
+			sjmode = GetMissionV(2)	--1¡¢§o¹t cê cè ®Şnh£»2¡¢§o¹t cê ngÉu nhiªn
 			SubWorld = tempSubWorld;
 		end
 		local level = BT_GetGameData(GAME_LEVEL)
 		if (sjmode == 0 or level == 0) then
-			Say("²»ºÃÒâË¼! »¹Î´È·¶¨·½Ê½, ²»ÄÜ¿ªÊ¼·ç±©ÌôÕ½£¬ÇëÁªÏµGMÓèÒÔ½â¾ö!", 0)
+			Say("Xin lçi! Ch­a x¸c ®Şnh ®­îc ph­¬ng thøc, kh«ng thÓ b¾t ®Çu khiªu chiÕn Phong Ba, xin liªn hÖ GM ®Ó gi¶i quyÕt!", 0)
 			return nil
 		end
 		gamemode = sjmode*10+level
 	elseif (gameid == 2) then
 		gamemode = map_isadvanced[SubWorldIdx2ID(SubWorld)]
 		if (gamemode == nil) then
-			Say("²»ºÃÒâË¼! »¹Î´È·¶¨É±ÊÖµÈ¼¶£¬²»ÄÜ¿ªÊ¼·ç±©ÌôÕ½£¬ÇëÁªÏµGMÓèÒÔ½â¾ö!", 0)
+			Say("Xin lçi! Ch­a x¸c ®Şnh ®­îc ®¼ng cÊp s¸t thñ, kh«ng thÓ b¾t ®Çu khiªu chiÕn Phong Ba, xin liªn hÖ GM ®Ó gi¶i quyÕt!", 0)
 			return nil
 		end
 	elseif (gameid == 4) then
@@ -154,11 +154,11 @@ function storm_start(gameid, silent, b_nonext)
 	
 	SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_MODE], gamemode)	--ÓÎÏ·µ±Ç°Ä£Ê½
 	
-	Msg2Player(storm_gamename(gameid).."·ç±©ÌôÕ½¿ªÊ¼ÁË.")
-	debug_out(storm_gamename(gameid).."ĞÎÊ½Ï¸½Ú:"..gamemode)
+	Msg2Player(storm_gamename(gameid).."khiªu chiÕn Phong Ba b¾t ®Çu råi.")
+	debug_out(storm_gamename(gameid).."H×nh thøc chi tiÕt:"..gamemode)
 	
 	if (tonumber(GetLocalDate("%H")) == 23) then
-		local str = "×¢Òâ£º½ñÌìµÄ·ç±©»ıÀÛµ½24:00¾ÍÊ§Ğ§ÁË(ÒÔServerµÄÊ±¼äÎª×¼) , Çë¼°Ê±Áì½±!"
+		local str = "Chó ı: Tİch lòy Phong Ba h«m nay sÏ mÊt hiÖu dông vµo lóc 24h:00 (lÊy giê trªn Server lµm chuÈn) , xin kŞp thêi nhËn phÇn th­ëng cña m×nh!"
 		Talk(1, "", str)
 		Msg2Player(str)
 	end
@@ -173,45 +173,45 @@ function storm_start(gameid, silent, b_nonext)
 	return 1
 end
 
---ÖØĞÂ¼ÆËãµ±ÈÕ×Ü»ı·Ö£¬Èç¹ûÓĞ±ä»¯£¬ÔòÍ¬Ê±¼ÇÂ¼ÈÕ¡¢ÖÜ¡¢ÔÂ»ı·Ö
---Èç¹ûgameid²»Îªnil£¬ÔòÎªÖ¸¶¨µÄ»î¶¯¸Ä±ä»ı·Ö
+--ÖØĞÂ¼ÆËãµ±ÈÕ×Ü»ıphót£¬Èç¹ûÓĞ±ä»¯£¬ÔòÍ¬Ê±¼ÇÂ¼ÈÕ¡¢ÖÜ¡¢ÔÂ»ıphót
+--Èç¹ûgameid²»Îªnil£¬ÔòÎªÖ¸¶¨µÄ»î¶¯¸Ä±ä»ıphót
 function storm_calc_today(gameid, newpoint)
-	if (gameid ~= nil and TB_STORM_TASKID[gameid] ~= nil) then	--¸Ä±äÖ¸¶¨µÄ»î¶¯»ı·Ö
+	if (gameid ~= nil and TB_STORM_TASKID[gameid] ~= nil) then	--¸Ä±äÖ¸¶¨µÄ»î¶¯»ıphót
 		local gamemode = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_MODE])
-		if (gameid == 1) then	--ËÎ½ğ»ı·ÖÉÏÏŞ
+		if (gameid == 1) then	--ËÎ½ğ»ıphótÉÏÏŞ
 			local level = mod(gamemode, 10)
-			if (level == 1 and newpoint > 80) then	--³õ¼¶80·Ö
+			if (level == 1 and newpoint > 80) then	--³õ¼¶80phót
 				newpoint = 80
-			elseif (level == 2 and newpoint > 90) then	--ÖĞ¼¶90·Ö
+			elseif (level == 2 and newpoint > 90) then	--ÖĞ¼¶90phót
 				newpoint = 90
 			end
-		elseif (gameid == 2) then	--É±ÊÖ»ı·ÖÉÏÏŞ
-			if (gamemode ~= 1 and newpoint > 90) then	--³õ¼¶90·Ö
+		elseif (gameid == 2) then	--É±ÊÖ»ıphótÉÏÏŞ
+			if (gamemode ~= 1 and newpoint > 90) then	--³õ¼¶90phót
 				newpoint = 90
 			end
 		end
 	
-		--if (newpoint == GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTCUR])) then	--»ı·ÖÎŞ±ä»¯£¬Ö±½Ó·µ»Ø
+		--if (newpoint == GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTCUR])) then	--»ıphótÎŞ±ä»¯£¬Ö±½Ó·µ»Ø
 			--return
 		--end
 		SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTCUR], newpoint)
 		local pointmax = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTMAX])
-		if (newpoint >= pointmax) then	--³¬¹ıµ±ÈÕ×î¸ß·Ö¼ÇÂ¼£¬¸Ä±ä×î¸ß·Ö
+		if (newpoint >= pointmax) then	--³¬¹ıµ±ÈÕ×î¸ßphót¼ÇÂ¼£¬¸Ä±ä×î¸ßphót
 			pointmax = newpoint
 		end
-		local str = "ÄãÖ®Ç°"..storm_gamename(gameid).."¶Ò»»µÄ·ç±©»ı·ÖÊÇ:"..storm_point2str(newpoint)
+		local str = "Tr­íc m¾t b¹n"..storm_gamename(gameid).."tİch lòy Phong Ba ®æi lµ:"..storm_point2str(newpoint)
 		if (TB_STORM_TRYTIMES[gameid] > 1) then	--¸Ã»î¶¯¿ÉÒÔ½øĞĞ¶à´Î
-			str = str..", Äã½ñÌìÔÚ»î¶¯ÖĞµÄ×îºÃ³É¼¨ÊÇ:"..storm_point2str(pointmax)
+			str = str..", thµnh tİch tèt nhÊt trong ho¹t ®éng h«m nay cña b¹n lµ:"..storm_point2str(pointmax)
 		end
 		debug_out(str)
-		--if (pointmax == GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTMAX])) then	--×î¸ß·ÖÃ»ÓĞ¸Ä±ä£¬Ö±½Ó·µ»Ø
+		--if (pointmax == GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTMAX])) then	--×î¸ßphótÃ»ÓĞ¸Ä±ä£¬Ö±½Ó·µ»Ø
 			--return
 		--end
 		nt_settask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTMAX], pointmax)
 	end
 
 	local todaypoint = 0
-	--¼ÆËãËùÓĞ»î¶¯×Ü»ı·Ö
+	--¼ÆËãËùÓĞ»î¶¯×Ü»ıphót
 	for i = 1, STORM_GAMEID_MAX do
 		if (TB_STORM_TASKID[i] ~= nil) then
 			local point = GetTask(TB_STORM_TASKID[i][STORM_TASKIDX_POINTMAX])
@@ -221,11 +221,11 @@ function storm_calc_today(gameid, newpoint)
 		end
 	end
 
-	--¼ÇÂ¼µ±ÈÕ¡¢±¾ÖÜ¡¢±¾ÔÂ»ı·Ö
-	local addpoint = todaypoint - GetTask(STORM_TASKID_DAY_POINT)	--±¾ÈÕ»ı·ÖÔö³¤
+	--¼ÇÂ¼µ±ÈÕ¡¢±¾ÖÜ¡¢±¾ÔÂ»ıphót
+	local addpoint = todaypoint - GetTask(STORM_TASKID_DAY_POINT)	--±¾ÈÕ»ıphótÔö³¤
 	if (addpoint ~= 0) then
-		if (gameid ~= 1 or (floor(todaypoint/5) > floor((todaypoint-addpoint)/5))) then	--ËÎ½ğÒª×Ü·ÖÔö¼Ó³¬¹ı5·Ö£¬¸æÖª»ı·ÖÇé¿ö
-			Msg2Player("ÄãÄ¿Ç°µÄ·ç±©»ı·ÖÊÇ:"..storm_point2str(todaypoint))
+		if (gameid ~= 1 or (floor(todaypoint/5) > floor((todaypoint-addpoint)/5))) then	--ËÎ½ğÒª×ÜphótÔö¼Ó³¬¹ı5phót£¬¸æÖª»ıphótÇé¿ö
+			Msg2Player("Tİch lòy Phong Ba tr­íc m¾t cña b¹n lµ:"..storm_point2str(todaypoint))
 		end
 		
 		nt_settask(STORM_TASKID_DAY_POINT, todaypoint)
@@ -241,11 +241,11 @@ function storm_calc_today(gameid, newpoint)
 		end
 		Ladder_NewLadder(STORM_LADDERID_MONTH, playername, monthpoint, 1);
 		
-		debug_out("½ñÈÕ»ıÀÛ:"..storm_point2str(todaypoint).."; ±¾ÖÜ:"..storm_point2str(weekpoint).."; ±¾ÔÂ:"..storm_point2str(monthpoint))	--temp
+		debug_out("Tİch lòy h«m nay:"..storm_point2str(todaypoint).."; tuÇn nµy:"..storm_point2str(weekpoint).."; th¸ng nµy:"..storm_point2str(monthpoint))	--temp
 	end
 end
 
---Ëã»ı·Öº¯Êı
+--Ëã»ıphótº¯Êı
 function storm_calc_point(tb_point, pointorg)
 	local newpoint = 0
 	for i = 1, getn(tb_point) do
@@ -261,71 +261,71 @@ function storm_calc_point(tb_point, pointorg)
 	return newpoint
 end
 
---¼ÆËã²¢¼ÇÂ¼Ä³Ò»»î¶¯µÄµ±Ç°»ı·Ö£¨ÀÛ¼Ó£©
+--¼ÆËã²¢¼ÇÂ¼Ä³Ò»»î¶¯µÄµ±Ç°»ıphót£¨ÀÛ¼Ó£©
 --gameid£º	1~10	»î¶¯µÄID
---addpoint£º»î¶¯Ôö¼Ó·Ö
---·µ»ØÖµ£º	1¼Æ·Ö³É¹¦	0¼Æ·ÖÊ§°Ü
+--addpoint£º»î¶¯Ôö¼Óphót
+--·µ»ØÖµ£º	1¼Æphót³É¹¦	0¼ÆphótÊ§°Ü
 function storm_addpoint(gameid, addpoint)
 	--¼ì²éµ±Ç°»î¶¯ÊÇ·ñÓĞĞ§£¬ÇÒaddpoint´óÓÚ0
 	if (not storm_valid_game(gameid) or addpoint <= 0) then
 		return nil
 	end
 	
-	--¸ù¾İ²»Í¬µÄgameid£¬Ñ¡Ôñ²»Í¬µÄ»ı·Ö±íÀ´¼ÆËã»ı·Ö
+	--¸ù¾İ²»Í¬µÄgameid£¬Ñ¡Ôñ²»Í¬µÄ»ıphót±íÀ´¼ÆËã»ıphót
 	local newpoint = 0
-	local pointorg = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA]) + addpoint	--»î¶¯Ô­Ê¼·Ö
+	local pointorg = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA]) + addpoint	--»î¶¯Ô­Ê¼phót
 	local gamemode = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_MODE])
 	if (gameid == 1) then
 		local sjmode = floor(gamemode/10)
 		local sjlevel = mod(gamemode,10)
-		local tb_sjmode = {"¹Ì¶¨¶áÆì", "Ëæ¼´¶áÆì", "ÔªË§Ä£Ê½", "É±Â¾Ä£Ê½"}
-		local tb_sjlevel = {" (³õ) ", " (ÖĞ) ", " (¸ß) "}
-		debug_out("³õÆÚ»ı·Ö[<color=blue>ËÎ½ğÕ½³¡-"..tb_sjmode[sjmode]..tb_sjlevel[sjlevel].."<color>] ÄãµÄÊÇ:"..storm_point2str(pointorg))	--temp
+		local tb_sjmode = {"§o¹t cê cè ®Şnh", "§o¹t cê ngÉu nhiªn", "D¹ng thøc nguyªn so¸i", "D¹ng thøc Cõu s¸t"}
+		local tb_sjlevel = {" (S¬) ", " (Trung) ", " (Cao) "}
+		debug_out("§iÓm tİch lòy ban ®Çu [<color=blue>ChiÕn tr­êng Tèng Kim-"..tb_sjmode[sjmode]..tb_sjlevel[sjlevel].."<color>] cña b¹n lµ:"..storm_point2str(pointorg))	--temp
 		newpoint = storm_calc_point(TB_STORM_POINT[1][sjmode], pointorg)
 	elseif (gameid == 2) then
 		local pointorg = pointorg - addpoint
-		debug_out("Õâ´Î"..storm_gamename(gameid).."¹²ÓÃÊ±¼äÎª:"..storm_point2str(addpoint)..", ¼ÍÂ¼ÓĞ:"..pointorg)
+		debug_out("lÇn nµy"..storm_gamename(gameid).."cßn d­ thêi gian lµ:"..storm_point2str(addpoint)..", kû lôc cò:"..pointorg)
 		if (addpoint > pointorg) then	--´Ë´ÎÊ£ÓàÊ±¼ä¸ü¶à
 			pointorg = addpoint
 		end
 		newpoint = storm_calc_point(TB_STORM_POINT[gameid], addpoint)
 	else
-		debug_out("ÄãµÄ"..storm_gamename(gameid).."³õÊ¼»ı·Ö:"..storm_point2str(pointorg))	--temp
+		debug_out("cña b¹n"..storm_gamename(gameid).."§iÓm tİch lòy ban ®Çu:"..storm_point2str(pointorg))	--temp
 		newpoint = storm_calc_point(TB_STORM_POINT[gameid], pointorg)
 	end
 	
-	SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA],pointorg)	--±£´æ»î¶¯Ô­Ê¼·Ö
-	newpoint = newpoint + GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX])	--¼ÓÉÏ½±Àø»ı·Ö
-	storm_calc_today(gameid, newpoint)	--¼Æ·Ö
+	SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA],pointorg)	--±£´æ»î¶¯Ô­Ê¼phót
+	newpoint = newpoint + GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX])	--¼ÓÉÏ½±Àø»ıphót
+	storm_calc_today(gameid, newpoint)	--¼Æphót
 	return 1
 end
 
---¼ÆËã²¢¼ÇÂ¼Ä³Ò»»î¶¯µÄµ±Ç°»ı·Ö£¨¸üĞÂ£¬È¡ÀúÊ·×îºÃÖµ£©
+--¼ÆËã²¢¼ÇÂ¼Ä³Ò»»î¶¯µÄµ±Ç°»ıphót£¨¸üĞÂ£¬È¡ÀúÊ·×îºÃÖµ£©
 --gameid£º	1~10	»î¶¯µÄID
---addpoint£º»î¶¯Ôö¼Ó·Ö
---·µ»ØÖµ£º	1¼Æ·Ö³É¹¦	0¼Æ·ÖÊ§°Ü
+--addpoint£º»î¶¯Ôö¼Óphót
+--·µ»ØÖµ£º	1¼Æphót³É¹¦	0¼ÆphótÊ§°Ü
 function storm_newpoint(gameid, newpoint)
-	--¸ù¾İ²»Í¬µÄgameid£¬Ñ¡Ôñ²»Í¬µÄ»ı·Ö±íÀ´¼ÆËã»ı·Ö
+	--¸ù¾İ²»Í¬µÄgameid£¬Ñ¡Ôñ²»Í¬µÄ»ıphót±íÀ´¼ÆËã»ıphót
 	local newpoint = 0
-	local oldpoint = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA])	--»î¶¯Ô­Ê¼·Ö
+	local oldpoint = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA])	--»î¶¯Ô­Ê¼phót
 	local gamemode = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_MODE])
-	debug_out("Õâ´Î"..storm_gamename(gameid).."·ÖÊı:"..storm_point2str(addpoint)..", ³õÊ¼·Ö:"..pointorg)
-	if (newpoint < oldpoint) then	--´Ë´ÎµÃ·Ö¸üµÍ
+	debug_out("lÇn nµy"..storm_gamename(gameid).."®iÓm sè:"..storm_point2str(addpoint)..", ®iÓm ban ®Çu:"..pointorg)
+	if (newpoint < oldpoint) then	--´Ë´ÎµÃphót¸üµÍ
 		newpoint = oldpoint
 	else
-		SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA], newpoint)	--±£´æ»î¶¯Ô­Ê¼·Ö
+		SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_EXTRA], newpoint)	--±£´æ»î¶¯Ô­Ê¼phót
 	end
 	
-	local stormpoint = storm_calc_point(TB_STORM_POINT[gameid], newpoint)	--Ëã»ı·Ö
-	stormpoint = stormpoint + GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX])	--¼ÓÉÏ½±Àø»ı·Ö
-	storm_calc_today(gameid, stormpoint)	--¼Æ·Ö
+	local stormpoint = storm_calc_point(TB_STORM_POINT[gameid], newpoint)	--Ëã»ıphót
+	stormpoint = stormpoint + GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX])	--¼ÓÉÏ½±Àø»ıphót
+	storm_calc_today(gameid, stormpoint)	--¼Æphót
 	
 	return 1
 end
 
---Ôö¼Ó½±Àø»ı·Ö
+--Ôö¼Ó½±Àø»ıphót
 --gameid£º	1~10	»î¶¯µÄID
---addpoint£ºÔö¼ÓµÄ»ı·Ö
+--addpoint£ºÔö¼ÓµÄ»ıphót
 function storm_add_pointex(gameid, addpoint)
 	--¼ì²éµ±Ç°»î¶¯ÊÇ·ñÓĞĞ§
 	if (not storm_valid_game(gameid)) then
@@ -334,7 +334,7 @@ function storm_add_pointex(gameid, addpoint)
 	
 	local pointex = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX]) + addpoint
 	
-	if (pointex > 40) then	--×î¶à40½±Àø·Ö
+	if (pointex > 40) then	--×î¶à40½±Àøphót
 		addpoint = addpoint - (pointex - 40)
 		pointex = 40
 	end
@@ -343,16 +343,16 @@ function storm_add_pointex(gameid, addpoint)
 		return nil
 	end
 	
-	Msg2Player("ÄãµÃµ½"..storm_gamename(gameid).."²ÎÓë½±Àø - ·ç±©»ı·Ö"..storm_point2str(addpoint).."·Ö")
+	Msg2Player("B¹n ®¹t ®­îc"..storm_gamename(gameid).."PhÇn th­ëng tham gia - tİch lòy Phong Ba"..storm_point2str(addpoint).."phót")
 
-	SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX], GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX]) + addpoint)	--¼ÇÂ¼¸½¼Ó·Ö
+	SetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX], GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTEX]) + addpoint)	--¼ÇÂ¼¸½¼Óphót
 
-	storm_calc_today(gameid, GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTCUR]) + addpoint)	--¼ÇÂ¼¸Ã»î¶¯»ı·Ö¡¢²¢¼ÆËã½ñÈÕ×Ü·ÖµÈ
+	storm_calc_today(gameid, GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTCUR]) + addpoint)	--¼ÇÂ¼¸Ã»î¶¯»ıphót¡¢²¢¼ÆËã½ñÈÕ×ÜphótµÈ
 
 	return 1
 end
 
---ÔÚÊÊµ±µÄÊ±ºòÎªMissionÖĞËùÓĞ³ÉÔ±Ôö¼Ó½±Àø»ı·Ö
+--ÔÚÊÊµ±µÄÊ±ºòÎªMissionÖĞËùÓĞ³ÉÔ±Ôö¼Ó½±Àø»ıphót
 --gameid£º	1~10	»î¶¯µÄID
 --msid£º	Mission ID
 --time£º	µ±timeÊÇ10¡¢20¡¢30Ê±ÓĞĞ§
@@ -391,7 +391,7 @@ end
 
 function storm_clear(gameid)
 	if (gameid == nil) then
-		Msg2Player("Çå³ı´ËÈËÎïµÄËùÓĞ»ıÀÛĞÅÏ¢!")
+		Msg2Player("Xãa hÕt c¸c tin tøc tİch lòy cña nh©n vËt nµy!")
 		--ÇåÈÎÎñ±äÁ¿
 		SetTask(1550,0);	--É±ÊÖ½øĞĞ´ÎÊı
 		SetTask(1036,0);	--Ò°ÛÅÈ¡Ïû´ÎÊı
@@ -403,11 +403,11 @@ function storm_clear(gameid)
 			Msg2Player("error gameid!")
 			return nil
 		end
-		Msg2Player("Çå³ıÈËÎïËùÓĞ"..storm_gamename(gameid).."»ıÀÛĞÅÏ¢!")
+		Msg2Player("Xãa hÕt nh©n vËt"..storm_gamename(gameid).."tin tøc tİch lòy!")
 		if (GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_TRYCOUNT]) > 0) then	--²ÎÓë¹ı£¬¼õ²ÎÓë»î¶¯Êı
 			SetTask(STORM_TASKID_GAMES, GetTask(STORM_TASKID_GAMES) - 1)
 		end
-		--¼õ»ı·Ö
+		--¼õ»ıphót
 		local gamepoint = GetTask(TB_STORM_TASKID[gameid][STORM_TASKIDX_POINTMAX])
 		SetTask(STORM_TASKID_DAY_POINT, GetTask(STORM_TASKID_DAY_POINT) - gamepoint)
 		SetTask(STORM_TASKID_WEEK_POINT, GetTask(STORM_TASKID_WEEK_POINT) - gamepoint)

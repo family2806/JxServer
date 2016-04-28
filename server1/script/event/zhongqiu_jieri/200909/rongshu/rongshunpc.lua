@@ -10,11 +10,11 @@ function main()
 	
 	
 	if nCount <= 0 then
-		return Talk(1, "", "´ËÊ÷ÒÑÂäÍêÒ¶×ÓÁË£¬ÇëµÈ·¢Ñ¿Ê±ÔÙ¼ÌÐø²ÉÕª")
+		return Talk(1, "", "C©y nµy ®· tr¬ trôi l¸ råi, xin h·y ®îi c©y mäc l¹i råi h¸i tiÕp")
 	end
 	
 	if CalcFreeItemCellCount() < 2 then
-		return Talk(1, "", format("×°±¸ÐèÒªÊ£Óà d?%d ?", 2))
+		return Talk(1, "", format("Hµnh trang ph¶i d­ %d «.", 2))
 	end
 	
 	SetNpcParam(nNpcIndex, 4, 1)
@@ -50,7 +50,7 @@ function main()
 			SetNpcParam(nNpcIndex, 1, nCount-1)
 			
 		else
-			Msg2Player(format("%d £¬Ãëºó²ÅÄÜ²ÉÕª.", tbZhongQiu200909_rongshu[PlayerIndex].nTime + 15 - GetCurServerTime()))
+			Msg2Player(format("%d gi©y sau míi cã thÓ h¸i ®­îc.", tbZhongQiu200909_rongshu[PlayerIndex].nTime + 15 - GetCurServerTime()))
 		end
 		
 		

@@ -6,7 +6,7 @@ if (not CHRISMAS_HEAD) then
 	Include("\\script\\lib\\gb_taskfuncs.lua") --
 	Include("\\script\\lib\\common.lua")
 	--³£Öµ²¿·Ö
-	DescLink_LiGuan = "<#><link=image[0,13]:\\spr\\npcres\\enemy\\enemy195\\enemy195_st.spr>Ê¥µ®ÀÏÈË:<link>"	
+	DescLink_LiGuan = "<#><link=image[0,13]:\\spr\\npcres\\enemy\\enemy195\\enemy195_st.spr>¤ng giµ Noel:<link>"	
 	
 	CH_MISSIONID = 28;
 	CH_PREPAREMISSIONID = 29;
@@ -15,7 +15,7 @@ if (not CHRISMAS_HEAD) then
 	
 	CH_FRAME = 18;	--Ã¿Ãë18Ö¡
 	CH_REFRASHTIME = 15 * CH_FRAME; -- Ã¿15ÃëÖÓË¢Ò»´Î¹Ö
-	CH_VANISHTIME = 10 * CH_FRAME;	--Ê¥µ®Àñ°üÍ£Áô10ÃëÖÓ
+	CH_VANISHTIME = 10 * CH_FRAME;	--Bao quµ gi¸ng sinhÍ£Áô10ÃëÖÓ
 	CH_RUNINTERVER = 30 * CH_FRAME; --30ÃëÒ»´Î£¬¿ÉÒÔ¹«¸æÓÎÏ·
 	CH_MAXPLAYTIMES = 5; --Ã¿ÈË×î¶àÒ»ÌìÍæ5´Î
 	
@@ -27,10 +27,10 @@ if (not CHRISMAS_HEAD) then
 	
 	--GLBÖµ
 	GLB_CH_PHASE = 848;
-	CHRISMAS_SHREWMOUSE = "Ê¥µ®»î¶¯";
+	CHRISMAS_SHREWMOUSE = "Ho¹t ®éng Gi¸ng Sinh";
 	--===============ºÍ¹ÖÏà¹Ø==================
 	CH_NPCID = 1236;	--Ë¢³ö¹ÖµÄNCP index
-	CH_MAPID = {582, 583};	--Ê¥µ®»î¶¯µØÍ¼Id
+	CH_MAPID = {582, 583};	--Ho¹t ®éng Gi¸ng SinhµØÍ¼Id
 	
 	CH_SMALLMAPCOUNT = 12;	--Ò»¹²ÓĞ12ÕÅĞ¡µØÍ¼
 	CH_MOUSECOUNT_MIN = 10;	--Ò»¸öĞ¡µØÍ¼Ò»´Î×îÉÙË¢µØÊóÊıÄ¿
@@ -71,10 +71,10 @@ if (not CHRISMAS_HEAD) then
 	
 	MS_PREPARENEWSVALUE = 5; --×¼±¸³¡¼ÆÊ±±äÁ¿
 	
-	MSS_MOUSENAME = 1; --Ê¥µ®Àñ°üµÄÃû×Ö
+	MSS_MOUSENAME = 1; --Bao quµ gi¸ng sinhµÄÃû×Ö
 	
 	
-	--²¥ÈöÊ¥µ®Àñ°ü
+	--²¥ÈöBao quµ gi¸ng sinh
 	function putfairy()
 		local nNPCCount;
 		local PosTab;	--ÓÃÓÚ¼ÇÂ¼
@@ -96,11 +96,11 @@ if (not CHRISMAS_HEAD) then
 	end;
 	
 	
-	--Çå³ıÊ¥µ®Àñ°ü
+	--Çå³ıBao quµ gi¸ng sinh
 	function clearfairy()
 		local OldWorld = SubWorld;
 		SubWorld = SubWorldID2Idx(CH_MAPID[2]);
-		ClearMapNpcWithName(CH_MAPID[2], "Ê¥µ®Àñ°ü");
+		ClearMapNpcWithName(CH_MAPID[2], "Bao quµ gi¸ng sinh");
 		SubWorld = OldWorld;
 	end;
 	
@@ -109,7 +109,7 @@ if (not CHRISMAS_HEAD) then
 	function joingame()
 		local nNowTime = tonumber(date("%y%m%d"));
 		if (GetTask(TK_PLAYMAXTIMES) >= 50) then
-			Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>:Ã¿ÈË×î¶àÖ»ÄÜ²Î¼Ó50´ÎÑ°ÕÒÀñÎï£¬Äã²»ÄÜÔÙ²Î¼ÓÁË!");
+			Talk(1, "", "<color=yellow>¤ng giµ Noen<color>: Mçi ng­êi chØ cã thÓ tham gia nhiÒu nhÊt 50 ®ît t×m quµ, ng­¬i kh«ng thÓ tham gia ®­îc n÷a!");
 			return
 		end;
 		
@@ -121,22 +121,22 @@ if (not CHRISMAS_HEAD) then
 		--½øĞĞ¼ÆÊı
 		local nTimes = GetTask(TK_PLAYTIMES);
 		if (GetTask(TK_PLAYTIMES) >= CH_MAXPLAYTIMES) then
-			Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>: 1ÌìÖ»±ÈÈü5³¡!");
+			Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: 1 ngµy chØ thi ®Êu 5 trËn!");
 			return
 		end;
 		
 		
-		if (gb_GetTask("Ê¥µ®»î¶¯", 1) ~= 1) then
+		if (gb_GetTask("Ho¹t ®éng Gi¸ng Sinh", 1) ~= 1) then
 			local nNowTime = tonumber(GetLocalDate("%H%M"));
 			local bOn = 0;
 			if ((nNowTime >=1900 and nNowTime <=2300) or (nNowTime >=1200 and nNowTime <=1400)) then
 				bOn = 1;
 			end;
 			if (bOn == 0) then
-				Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>: ´ÓÃ¿ÌìµÄ12:00-4:00 ºÍÍíÉÏ19:00-23:00¿ªÕ¹Ê¥µ®»î¶¯, ÏÖÔÚ»¹Ã»ÓĞµ½»î¶¯Ê±¼ä»òÕß»î¶¯»¹Ã»ÓĞ¿ªÊ¼!");
+				Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: Mçi ngµy tõ 12:00-4:00 vµ buæi tèi 19:00-23:00 triÓn khai ho¹t ®éng Gi¸ng Sinh,  hiÖn t¹i ch­a ®Õn thêi gian ho¹t ®éng hoÆc ho¹t ®éng ch­a b¾t ®Çu!");
 				return
 			else
-				Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>: ÓÎÏ·ÕıÔÚ½øĞĞ£¬°´Ë³ĞòÀ´£¡Ã¿³¡15¡¢30¡¢45·ÖÕû¿ªÊ¼.");
+				Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: Trß ch¬i ®ang tiÕn hµnh, h·y chê l­ît sau ®i! Mçi trËn ®óng 15 phót, 30 phót, 45 phót b¾t ®Çu.");
 				return
 			end;
 		end;

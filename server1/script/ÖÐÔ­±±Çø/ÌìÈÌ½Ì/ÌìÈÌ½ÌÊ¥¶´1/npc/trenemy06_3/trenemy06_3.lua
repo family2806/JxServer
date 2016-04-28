@@ -8,7 +8,7 @@ function OnDeath()
 	Task_trtmp60 = GetTask(28)
 	if (UTask_tr == 60*256+50) and (GetBit(Task_trtmp60,3) == 0) then
 		SetTask(28, SetBit(Task_trtmp60,3,1))
-		AddNote("µÃµ½¿Ú¾÷¡°½­ºşÉçğ¢. ")
-		Msg2Player("µÃµ½¿Ú¾÷¡°½­ºşÉçğ¢. ")
+		AddNote("LÊy ®­îc khÈu quyÕt giang hå X· T¾c. ")
+		Msg2Player("LÊy ®­îc khÈu quyÕt giang hå X· T¾c. ")
 	end
 end;

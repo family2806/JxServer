@@ -8,10 +8,10 @@ function main(sel)
 	times = mod(GetTask(80),16)
 	party = GetLastAddFaction()
 	str={
-		"ÄãÄÃ×Å¡¶ÌÆÃÅÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÊ²Ã´Ò²Ã»ÓĞÁìÎòµ½¡£",
-		"ÄãÄÃ×Å¡¶ÌÆÃÅÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÁìÎòÉõÉÙ£¬Ã»Ê²Ã´Ğ§¹û¡£",
-		"ÄãÄÃ×Å¡¶ÌÆÃÅÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹û»ñµÃÁËÒ»Ğ©¹ØÓÚÎä¹¦µÄĞÄµÃ¡£",
-		"ÄãÒÑ¾­°Ñ¡¶ÌÆÃÅÃØ¼®¡·×êÑĞÍ¸³¹£¬´ÓÖĞÔÙÒ²µÃ²»µ½ÈÎºÎĞÄµÃ¡£"
+		"B¹n cÇm quyÓn §­êng M«n MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng kh«ng lÜnh ngé ®­îc g×. ",
+		"B¹n cÇm quyÓn §­êng M«n MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé ®­îc chót İt. ",
+		"B¹n cÇm quyÓn §­êng M«n MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng thu ®­îc mét vµi ®iÒu t©m ®¾c liªn quan ®Õn vâ c«ng ",
+		"B¹n ®· nghiÒn ngÉm kü quyÓn §­êng M«n MËt TŞch, nh­ng kh«ng thu ®­îc ®iÒu g× t©m ®¾c "
 		}
 	if(party ~= "tangmen") then     -- ²»ÊÇÌÆÃÅ
 		Msg2Player(str[1])

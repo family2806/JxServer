@@ -1,7 +1,7 @@
 Include("\\script\\missions\\autohang\\head.lua")
 
 function InitMission()
-	WriteLog(GetLoop()..date("%m%d-%H:%M")..": 开始挂机!")
+	WriteLog(GetLoop()..date("%m%d-%H:%M")..": B総 u treo m竬!")
 	StartMissionTimer(AEXP_MISSIONID, AEXP_TIMERID, AEXP_UPDATETIME);
 	
 	-- 设置是否免费，以及经验倍数(>=1)
@@ -12,6 +12,6 @@ function RunMission()
 end;
 
 function EndMission()
-	WriteLog(GetLoop()..date("%m%d-%H:%M")..": 结束挂机!");
+	WriteLog(GetLoop()..date("%m%d-%H:%M")..": K誸 th骳 treo m竬!");
 	StopMissionTimer(AEXP_MISSIONID, AEXP_TIMERID);
 end;

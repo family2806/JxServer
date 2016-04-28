@@ -13,11 +13,11 @@ function  main()
 	local nBuildFund = 20000
 	local _, nTongID = GetTongName()
 	if(nTongID == 0) then
-		Msg2Player("Î´²Î¼Ó°ï»á£¬²»ÄÜÊ¹ÓÃ¸ÃµÀ¾ß.");
+		Msg2Player("Ch­a gia nhËp bang héi, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 	AddContribution(nBuildFund)
-	Msg2Player(format("Äã»ñµÃ%d ¸öÈË¹±Ï×µã", nBuildFund))
-	%tbLog:PlayerAwardLog("¹±Ï×´óÀñ°ü", "Ê¹ÓÃÎïÆ·»î¶¯20000000¹±Ï×µã")
+	Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm cèng hiÕn c¸ nh©n", nBuildFund))
+	%tbLog:PlayerAwardLog("CongHienDaiLebao", "SuDungVatPhamNhanDuoc20000000diemCongHien")
 	return 0
 end

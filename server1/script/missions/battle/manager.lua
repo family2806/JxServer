@@ -8,9 +8,9 @@ Include("\\script\\trip\\define.lua")
 MAX_BATTLE_COUNT = 10
 BattleManagerDef = 
 {
-	{"³õ¼¶ËÎ½ğÁ¬server", 972, 5000, 35000},
-	{"ÖĞ¼¶ËÎ½ğÁ¬server", 973, 30000, 50000},
-	{"¸ß¼¶ËÎ½ğÁ¬server", 974, 45000},
+	{"S¬ cÊp Tèng Kim liªn server", 972, 5000, 35000},
+	{"Trung cÊp Tèng Kim liªn server", 973, 30000, 50000},
+	{"Cao cÊp Tèng Kim liªn server", 974, 45000},
 }
 
 NPC_LIST = 
@@ -88,19 +88,19 @@ function BattleManager:SignUp(nId, nCamp)
 			local nOldCamp = pPrevBattle.Data:GetPLData(szName, "BATTLECAMP")
 			if nOldCamp ~= 0 and nOldCamp ~= nCamp then
 				print(szName, pPrevBattle.Data:GetPLData(szName, "BATTLECAMP"))
-				return Talk(1, "", "ÔÚÍ¬Ò»³¡ËÎ½ğÕ½ÖĞ²»ÄÜ»»¾üÓª")
+				return Talk(1, "", "Ng­¬i kh«ng thÓ ®æi qu©n doanh trong cïng mét trËn Tèng Kim")
 			end
 		end
 		local bRet = pPrevBattle:IsInPlaying(szName)
 		if bRet then
-			return Talk(1, "", "ÄãÕıÔÚÁíÒ»¸öÕ½³¡")
+			return Talk(1, "", "Ng­¬i ®ang ë trong mét chiÕn tr­êng kh¸c")
 		end
 		pPrevBattle:CancelWaiting(szName)
 	end
 	if pBattle:JoinWaiting(szName, nCamp) then
 		BattleManagerPlayer[szName] = pBattle
 		--Fix lçi text - Modified by DinhHQ - 20111025
-		Msg2Player(format("ÄãÒÑ³É¹¦±¨Ãû¼ÓÈë %sµÄÃûµ¥", %CAMP_NAME[nCamp]));
+		Msg2Player(format("Ng­¬i ®· thµnh c«ng gia nhËp vµo %s danh s¸ch b¸o danh", %CAMP_NAME[nCamp]));
 	end
 	
 end

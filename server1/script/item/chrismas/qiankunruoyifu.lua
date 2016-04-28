@@ -34,8 +34,8 @@ function main()
 	end;
 	
 	PlayerIndex = OldPlayer;
-	tabPlayer[ getn(tabPlayer) + 1 ] = "È¡Ïû/giveback_yu"
-	Say("ÄãÒª¶ÔÄÄ¸ö¶ÔÊÖÊ¹ÓÃµÀ¾ß<color=0xB5FDD7>Ç¬À¤Å²ÒÆ·û<color>£¿", getn(tabPlayer), tabPlayer);
+	tabPlayer[ getn(tabPlayer) + 1 ] = "Hñy bá /giveback_yu"
+	Say("B¹n muèn sö dông dông cô <color=0xB5FDD7>Cµn Kh«n Na Di Phï<color> víi ®èi thñ nµo?", getn(tabPlayer), tabPlayer);
 end;
 
 function useqk(szName)
@@ -58,9 +58,9 @@ function useqk(szName)
 	PlayerIndex = pidx;
 	SetPos(floor(PosX / 32), floor(PosY / 32));
 	
-	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>¶ÔÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>Ç¬À¤Å²ÒÆ·û<color>£¬´òÂÒÄãµÄÎ»ÖÃ¡£");
+	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color> sö dông 1 <color=0xB5FDD7>Cµn Kh«n Na Di Phï<color> víi b¹n, ®¶o lén vŞ trİ cña b¹n.");
 	PlayerIndex = OldPlayer;
-	Msg2Player("<#>Äã¶Ô<color=0xB5FDD7>"..szName.."<color>Ê¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>Ç¬À¤Å²ÒÆ·û<color>£¬´òÂÒËûµÄÎ»ÖÃ¡£");
+	Msg2Player("<#> B¹n<color=0xB5FDD7>"..szName.."<color>sö dông 1 <color=0xB5FDD7>Cµn Kh«n Na Di Phï<color> cho ®èi thñ, ®¶o lén vŞ trİ cña b¹n.");
 end;
 
 function giveback_yu()

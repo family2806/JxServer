@@ -3,13 +3,13 @@ Include("\\script\\global\\rename_head.lua")
 function QueryTongNameResult(tong, result)
 	local msg = "<color=red>" .. tong .. "<color>"
 	if (result == TONGNAMERES_FREE) then
-		msg = msg .. "<#>Õâ¸öÃû×Ö»¹Ã»ÓĞ±»Ê¹ÓÃ"
+		msg = msg .. "<> danh tù nµy cßn kh«ng cã bŞ sö dông "
 	elseif (result == TONGNAMERES_USED) then
-		msg = msg .. "<#>Õâ¸öÃû×ÖÒÑ¾­±»Ê¹ÓÃÁË"
+		msg = msg .. "<> danh tù nµy ®· bŞ sö dông "
 	elseif (result == TONGNAMERES_APPLY) then
-		msg = msg .. "<#>Õâ¸öÃû×ÖÒÑ¾­±»ÉêÇëÁË"
+		msg = msg .. "<> danh tù nµy ®· bŞ th©n thØnh "
 	else
-		msg = msg .. "<#>Õâ¸öÃû×ÖÎŞĞ§£¬²»ÄÜÊ¹ÓÃ"
+		msg = msg .. "<> danh tù nµy kh«ng cã hiÖu qu¶ , kh«ng thÓ sö dông "
 	end
-	Say(msg, 1, "<#>ÖªµÀÁË/cancel")
+	Say(msg, 1, "<> biÕt /cancel")
 end

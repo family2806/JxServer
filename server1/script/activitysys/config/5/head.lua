@@ -4,6 +4,6 @@ pActivity.nId = 5
 pActivity.szName = "½ðÅÆ¶Ò»»»Æ½ð×°±¸£¨³¤ÆÚ£©"
 pActivity.nStartDate = nil
 pActivity.nEndDate = nil
-pActivity.szDescription = "½ðÅÆ¶Ò»»»Æ½ð×°±¸"
+pActivity.szDescription = "Kim bµi ®æi trang bÞ hoµng kim"
 pActivity.nGroupId = nil
 pActivity.nVersion = nil

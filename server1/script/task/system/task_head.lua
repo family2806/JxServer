@@ -15,7 +15,7 @@
 -- ÈÎÎñÏµÍ³¿âÖ§³Ö
 IncludeLib("TASKSYS");
 
--- ÎïÆ·¿âÖ§³Ö
+-- vËt phÈm ¿âÖ§³Ö
 IncludeLib("ITEM");
 
 -- Ëæ»úÈÎÎñµÄ´¦ÀíÖ§³Ö
@@ -25,13 +25,13 @@ Include("\\script\\task\\random\\task_head.lua");
 -- ÈÎÎñ¹ı³Ì¼ä´«µİÈÎÎñ ID µÄÁÙÊ±±äÁ¿ºÅ
 TASK_TEMP_ID = 201;
 
--- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄÎïÆ· ID ×ÜÊı
+-- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄvËt phÈm  ID ×ÜÊı
 TASK_CHECKITEM_NUM = 202;
 
--- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄÎïÆ· ID ÆğÊ¼±äÁ¿ºÅ
+-- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄvËt phÈm  ID ÆğÊ¼±äÁ¿ºÅ
 TASK_CHECKITEM_START = 203;
 
--- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄÎïÆ· ID ×î´óÊı
+-- ÓÃÓÚÁÙÊ±¼ÇÂ¼µÄvËt phÈm  ID ×î´óÊı
 TAKS_CHECKITEM_MAX = 20;
 
 
@@ -46,18 +46,18 @@ Condition = {
 	TaskType_Row    = 1,
 	TaskDesc_Row    = 2,
 	
-	TaskStart       = "ÈÎÎñ¿ªÊ¼",	
-	TaskEnd         = "ÈÎÎñ½áÊø",
-	LevelMore       = "µÈ¼¶´óÓÚ",
-	LevelLess       = "µÈ¼¶Ğ¡ÓÚ",
-	LevelEqual      = "µÈ¼¶µÈÓÚ",
-	ValueMore       = "±äÁ¿´óÓÚ",
-	ValueLess       = "±äÁ¿Ğ¡ÓÚ",
-	ValueEqual      = "±äÁ¿µÈÓÚ",
-	ReputeMore      = "ÉùÍû´óÓÚ",
-	HaveItem        = "³ÖÓĞÎïÆ·",
+	TaskStart       = "B¾t ®Çu nhiÖm vô ",	
+	TaskEnd         = "KÕt thóc nhiÖm vô ",
+	LevelMore       = "®¼ng cÊp lín ",
+	LevelLess       = "®¼ng cÊp nhá ",
+	LevelEqual      = "®¼ng cÊp",
+	ValueMore       = "thay ®æi lín",
+	ValueLess       = "thay ®æi nhá ",
+	ValueEqual      = "thay ®æi",
+	ReputeMore      = "danh väng lín",
+	HaveItem        = "vËt phÈm",
 	
-	CanRestart      = "¿ÉÖØ¸´¿ªÊ¼",
+	CanRestart      = "Cã thÓ thi triÓn tiÕp",
 
 }
 
@@ -81,11 +81,11 @@ Entity = {
 	TalkNpcMap_Row        = 15,
 	TaskText_Row          = 16,
 	
-	Collect               = "ÊÕ¼¯ÎïÆ·",
-	CollectGoldItem       = "ÊÕ¼¯»Æ½ğ×°±¸",
-	CollectNpcItem		  = "É±¹ÖµôÂäÎïÆ·",
-	KillNpc               = "É±¹Ö",
-	TalkNpc               = "¶Ô»°",
+	Collect               = "thu thËp vËt phÈm ",
+	CollectGoldItem       = "thu thËp Trang bŞ Hoµng Kim",
+	CollectNpcItem		  = "GiÕt qu¸i r¬i ra vËt phÈm",
+	KillNpc               = "s¸t qu¸i",
+	TalkNpc               = "§èi tho¹i",
 
 }
 
@@ -111,14 +111,14 @@ Award = {
 	ArrayRate_Row         = 17,
 	AlliedAward_Row       = 18,
 	
-	Money                 = "½ğÇ®",
-	Exp                   = "¾­Ñé",
-	Goods                 = "ÎïÆ·",
-	GoldItem              = "»Æ½ğ×°±¸",
-	Task                  = "¿ªÊ¼ÈÎÎñ",
-	RandomTask            = "Ëæ»úÈÎÎñ¾íÖá",  -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬µ÷ÓÃÌØ¶¨µÄ¹ı³Ì²úÉúÒ»¸öÈÎÎñ¾íÖá
-	AlliedAwardIndex      = "½±ÀøË÷Òı",      -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬Ö±½ÓË÷Òıµ½±ğµÄÈÎÎñ½±ÀøÉÏ£¬²¢ÅÉ·¢Ò»Ä£Ò»ÑùµÄ½±Àø
-	TreasureMap           = "²Ø±¦Í¼",        -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬µ÷ÓÃÌØ¶¨µÄ¹ı³Ì¸øÍæ¼Ò·¢Ò»ÕÅ²Ø±¦Í¼
+	Money                 = "TiÒn",
+	Exp                   = "kinh nghiÖm ",
+	Goods                 = "vËt phÈm ",
+	GoldItem              = "Trang bŞ Hoµng Kim",
+	Task                  = "B¾t ®Çu nhiÖm vô ",
+	RandomTask            = "NgÉu nhiªn_MËt ®å nhiÖm vô ",  -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬µ÷ÓÃÌØ¶¨µÄ¹ı³Ì²úÉúÒ»¸öÈÎÎñ¾íÖá
+	AlliedAwardIndex      = "hÖ thèng phÇn th­ëng",      -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬Ö±½ÓË÷Òıµ½±ğµÄÈÎÎñ½±ÀøÉÏ£¬²¢ÅÉ·¢Ò»Ä£Ò»ÑùµÄ½±Àø
+	TreasureMap           = "Tµng B¶o §å",        -- ÌØÊâµÄ½±ÀøÀàĞÍ£¬µ÷ÓÃÌØ¶¨µÄ¹ı³Ì¸øÍæ¼Ò·¢Ò»ÕÅTµng B¶o §å
 	
 }
 
@@ -172,10 +172,10 @@ function CancelTaskConfirm(nTaskID)
 	local taskName = TaskName(nTaskID);
 	local szText = GetTaskText(taskName);
 	
-	Say("ÄãÈ·ÈÏÒªÈ¡Ïû´Ë´ÎÈÎÎñÂğ£º<color=yellow>"..szText.."<color>¡£", 
+	Say("ThËt sù muèn hñy bá nhiÖm vô nµy kh«ng: <color=yellow>"..szText.."<color>.", 
 		2,
-		"ÊÇµÄ/#CancelTaskMain("..nTaskID..")",
-		"²»ÁË/Task_Exit");
+		"Muèn/#CancelTaskMain("..nTaskID..")",
+		"Kh«ng muèn/Task_Exit");
 end;
 
 
@@ -188,14 +188,14 @@ function CancelTaskMain(nTaskID)
 		SetTaskStatus(taskName, 0);
 		CloseTask(taskName);
 		
-		Msg2Player("ÄúÒÑ¾­³É¹¦µÄÈ¡ÏûÁË£º<color=yellow>"..szText.."<color>¡£");
+		Msg2Player("§· hñy bá thµnh c«ng: <color=yellow>"..szText.."<color>.");
 		
-		WriteTaskLog("È¡ÏûÁËÈÎÎñ£º"..taskName);
+		WriteTaskLog("Hñy bá nhiÖm vô:"..taskName);
 		
 end;
 
 
--- Ö´ĞĞÈÎÎñ¶Ô»°
+-- Ö´ ÈÎÎñ§èi tho¹i
 function ShowTaskSay(taskID)
 
 local taskName = TaskName(taskID)
@@ -205,18 +205,18 @@ local taskName = TaskName(taskID)
 end;
 
 
--- ÓÃ¶Ô»°Ãæ°æÏÔÊ¾ÈÎÎñµÄÏêÏ¸ĞÅÏ¢
+-- ÓÃ§èi tho¹iÃæ°æÏÔÊ¾ÈÎÎñµÄÏêÏ¸ĞÅÏ¢
 function ShowTaskInfo(taskID)
 
 local taskName = TaskName(taskID);
 local strInfo = TaskTalk(taskName, 1, 6);
 
-	Say(strInfo, 1, "·µ»Ø/#BackTaskStart("..TaskNo(taskName)..")");
+	Say(strInfo, 1, "Trë l¹i/#BackTaskStart("..TaskNo(taskName)..")");
 
 end;
 
 
--- ·µ»ØÈÎÎñ¶Ô»°Ö÷Ãæ°æ
+-- ·µ»ØÈÎÎñ§èi tho¹iÖ÷Ãæ°æ
 function BackTaskStart(taskID)
 	OnTaskSay_Call(TaskName(taskID), 0);
 end;
@@ -230,7 +230,7 @@ function GetTaskFinishConditionNum(taskName)
 	
 	for i=1, nRow do
 		strType = TaskEntity(taskName, i, Entity.TaskType_Row);
-		-- Èç¹ûÓĞÊÕ¼¯¹ÖÎïµôÂäÎïÆ·µÄÈÎÎñ£¬Ôò²»¼ÆËã
+		-- Èç¹ûÓĞÊÕ¼¯¹ÖÎïµôÂävËt phÈm µÄÈÎÎñ£¬Ôò²»¼ÆËã
 		if strType==Entity.CollectNpcItem then
 			nRightCheck = nRightCheck - 1;
 		end;
@@ -240,23 +240,23 @@ function GetTaskFinishConditionNum(taskName)
 end;
 
 
--- »ñÈ¡Ò»¸öÈÎÎñµÄËÑ¼¯ÀàĞÍÊÇÎïÆ·»¹ÊÇ»Æ½ğ×°±¸
--- ·µ»ØÖµ£º1 ÎªÎïÆ·£¬2 Îª»Æ½ğ×°±¸£¬nil ÎªÃ»ÊÕ¼¯ÈÎÎñ
+-- »ñÈ¡Ò»¸öÈÎÎñµÄËÑ¼¯ÀàĞÍÊÇvËt phÈm »¹ÊÇTrang bŞ Hoµng Kim
+-- ·µ»ØÖµ£º1 ÎªvËt phÈm £¬2 ÎªTrang bŞ Hoµng Kim£¬nil ÎªÃ»ÊÕ¼¯ÈÎÎñ
 function GetTaskCollectType(taskName)
 
 local nRow, nCol = TaskEntityMatrix(taskName);	
 local checkType = nil;
 local i=0;
 
-	-- ¼ì²é´ËÈÎÎñÊÇÕÒ»Æ½ğ×°±¸»¹ÊÇÕÒÆÕÍ¨ÎïÆ·
+	-- ¼ì²é´ËÈÎÎñÊÇÕÒTrang bŞ Hoµng Kim»¹ÊÇÕÒÆÕÍ¨vËt phÈm 
 	for i=1, nRow do
 		
-		-- ÊÇ»Æ½ğ×°±¸
+		-- ÊÇTrang bŞ Hoµng Kim
 		if TaskEntity(taskName, i, Entity.TaskType_Row)==Entity.CollectGoldItem then
 			checkType=2;
 		end;
 		
-		-- ÊÇÆÕÍ¨ÎïÆ·
+		-- ÊÇÆÕÍ¨vËt phÈm 
 		if TaskEntity(taskName, i, Entity.TaskType_Row)==Entity.Collect then
 			checkType=1;
 		end;
@@ -267,9 +267,9 @@ local i=0;
 	
 end;
 
--- ·µ»ØÒ»¸öÈÎÎñÖĞÊÕ¼¯ÀàĞÍµÄÎïÆ·Êı×é
--- ÎïÆ·Êı×éÀàĞÍ£º{nGenre, nDetail, nParticular, nLevel, nGoodsFive, nNum, nIsDel}
--- »Æ½ğ×°±¸Êı×éÀàĞÍ£º{nQuality, nNum, nIsDel}
+-- ·µ»ØÒ»¸öÈÎÎñÖĞÊÕ¼¯ÀàĞÍµÄvËt phÈm Êı×é
+-- vËt phÈm Êı×éÀàĞÍ£º{nGenre, nDetail, nParticular, nLevel, nGoodsFive, nNum, nIsDel}
+-- Trang bŞ Hoµng KimÊı×éÀàĞÍ£º{nQuality, nNum, nIsDel}
 function GetTaskCollectArray(taskName, nType)
 
 local nGenre, nDetail, nParticular, nLevel, nGoodsFive = 0,0,0,0,0;
@@ -328,7 +328,7 @@ local i=0;
 
 end;
 
--- È¡µÃÒ»¸öÈÎÎñËùÒªÊÕ¼¯ÎïÆ·µÄ×ÜÊı
+-- È¡µÃÒ»¸öÈÎÎñËùÒªthu thËp vËt phÈm µÄ×ÜÊı
 function GetTaskCollectNum(taskName)
 
 local nNum = 0;
@@ -350,7 +350,7 @@ local i=0;
 end;
 
 
--- È¡µÃÒ»ÈÎÎñÊÕ¼¯ÎïÆ·µÄĞĞÊı
+-- È¡µÃÒ»ÈÎÎñthu thËp vËt phÈm µÄ Êı
 function GetTaskCollectRow(taskName)
 
 local aryRow = {}
@@ -403,7 +403,7 @@ function PayAwardMain(taskName, nAlliedTask)
 		nAlliedTask = 0;
 	end;
 	
-		CDebug:MessageOut(taskName.."ÈÎÎñ¿ªÊ¼¸øÓè½±Àø");
+		CDebug:MessageOut(taskName.."phÇn th­ëng khi b¾t ®Çu nhiÖm vô ");
 	
 		for i=1, nRow do
 		
@@ -414,11 +414,11 @@ function PayAwardMain(taskName, nAlliedTask)
 			-- Èç¹û½±Àø±»¶¨ÒåÁËÊı×é
 			if strArray~="" then
 			
-				CDebug:MessageOut(taskName.."µÄ½±Àø°üº¬ÓĞÊı×é¡£");
+				CDebug:MessageOut(taskName.."sè phÇn th­ëng bao gåm.");
 				
 				-- Èç¹ûÊı×é²»´æÔÚÔò³õÊ¼»¯Êı×é
 				if aryAward[tonumber(strArray)]==nil then
-					CDebug:MessageOut(taskName.."³õÊ¼»¯½±ÀøÊı×é£º"..tonumber(strArray));
+					CDebug:MessageOut(taskName.."b¾t ®Çu më th­ëng"..tonumber(strArray));
 					rawset(aryAward, tonumber(strArray), {}); 
 				end;
 				
@@ -430,7 +430,7 @@ function PayAwardMain(taskName, nAlliedTask)
 				 nIsArray = 1;
 			else
 				nResult = PayAward(taskName, i, strType, nAlliedTask);
-				-- ´¢´æÊÇ·ñ¿ªÊ¼ÈÎÎñ
+				-- ´¢´æÊÇ·ñB¾t ®Çu nhiÖm vô 
 				if nResult==1 then nIsTaskStart = 1; end;
 			end;
 		
@@ -438,7 +438,7 @@ function PayAwardMain(taskName, nAlliedTask)
 		
 		-- Èç¹û½±Àø±»¶¨ÒåÁËÊı×é£¬Ôòµ÷ÓÃÊı×é·¢½±º¯Êı
 		if nIsArray==1 then
-			CDebug:MessageOut(taskName.."½±ÀøÓĞ±»¶¨ÒåµÄÊı×é£¬¿ªÊ¼µ÷ÓÃÊı×é·¢½±º¯Êı£¡");
+			CDebug:MessageOut(taskName.."®iÒu chØnh l¹i hµm sè ph¸t th­ëng");
 			for i=1, getn(aryAward) do
 				if PayAwardForArray(taskName, aryAward[i], nAlliedTask)==1 then
 					nResult = 1;
@@ -449,11 +449,11 @@ function PayAwardMain(taskName, nAlliedTask)
 		end;
 		
 		
-		-- Èç¹ûÈÎÎñ½±ÀøÃ»ÓĞ¿ªÊ¼ĞÂÈÎÎñµÄ»°ÔòÕ¹¿ªÈÎÎñÍê³ÉºóµÄ¶Ô»°
+		-- Èç¹ûÈÎÎñ½±ÀøÃ»ÓĞ¿ªÊ¼ĞÂÈÎÎñµÄ»°ÔòÕ¹¿ªÈÎÎñÍê³ÉºóµÄ§èi tho¹i
 		if nIsTaskStart==0 then
-			CDebug:MessageOut(taskName.." ÈÎÎñÃ»ÓĞ¿ªÊ¼ĞÂÈÎÎñ£¬Ôòµ÷ÓÃ½áÊø·¢½±Ê±µÄ¶Ô»°");
+			CDebug:MessageOut(taskName.." Ch­a më nhiÖm vô míi. §iÒu chØnh l¹i thêi gian ph¸t th­ëng");
 			CreateTaskSay({TaskTalk(taskName, 1, 5),
-						  "½áÊø¶Ô»°/OnTaskExit"
+						  "KÕt thóc ®èi tho¹i/OnTaskExit"
 						  });
 			return 1;
 		end;
@@ -464,16 +464,16 @@ end;
 
 
 -- ·¢½±µÄÍ³Ò»Ï¸½Ú´¦Àí¹ı³Ì
--- ´«Èë²ÎÊıÎªÈÎÎñµÄÃû×Ö¡¢½±ÀøĞĞºÅ¡¢·¢½±ÀàĞÍ
+-- ´«Èë²ÎÊıÎªÈÎÎñµÄÃû×Ö¡¢½±Àø ºÅ¡¢·¢½±ÀàĞÍ
 -- ´«Èë²ÎÊı£ºnAlliedTask ¿ÉÑ¡²ÎÊı£¬Èç¹û·Ç¿Õ£¬Ôò±íÃ÷ÊÇÓÉË÷Òı½±ÀøÀ´·¢½±
 function PayAward(taskName, nRow, strType, nAlliedTask)
 
 local nGenre, nDetail, nParticular, nLevel, nGoodsFive, nQuality, nNum = 0,0,0,0,0,0,0;
 local nMoney, nExp = 0,0
-local nRandomItemIndex = 0;  -- ²úÉúËæ»úÈÎÎñ¾íÖáµÄË÷Òı
+local nRandomItemIndex = 0;  -- ²úÉúNgÉu nhiªn_MËt ®å nhiÖm vô µÄË÷Òı
 local nRandomTaskID = 0;  -- ²úÉúËæ»úÈÎÎñµÄÈÎÎñË÷Òı
 
--- Èç¹ûÎïÆ·ĞèÒª¼ÇÂ¼Ëæ»úÖÖ×Ó£¬Ôò¼ÇÂ¼ĞòºÅ
+-- Èç¹ûvËt phÈm ĞèÒª¼ÇÂ¼Ëæ»úÖÖ×Ó£¬Ôò¼ÇÂ¼ĞòºÅ
 local nRandomSeedRecord = 0;
 
 -- Ëæ»úÖÖ×ÓÊı	
@@ -494,7 +494,7 @@ local i=0;
 	-- Òì³£´¦Àí
 	if taskName=="" or taskName==nil then
 		-- Ğ´ LOG
-		WriteTaskLog("·Ç·¨µÄµ÷ÓÃÁË·¢½±¹ı³Ì£¡");		
+		WriteTaskLog("®· thay ®æi qu¸ tr×nh nhËn th­ëng phi ph¸p");		
 		return
 	end;
 
@@ -508,7 +508,7 @@ local i=0;
 	-- Òì³£´¦Àí
 	if strShowName==nil then strShowName=""; end;
 
-	-- Èç¹û½±ÀøµÄÀàĞÍÊÇ½ğÇ®
+	-- Èç¹û½±ÀøµÄÀàĞÍÊÇTiÒn
 	if strType==Award.Money then		
 		nMoney = TaskAward(taskName, nRow, Award.MoneyNum_Row);
 		
@@ -516,20 +516,20 @@ local i=0;
 		
 		Earn(nMoney);
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>½ğÇ®"..nMoney.."<color>");
-		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎª½ğÇ®£º"..nMoney);
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>tiÒn<color=green>"..nMoney.."<color>");
+		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ tiÒn:"..nMoney);
 	end;
 	
-	-- Èç¹û½±ÀøµÄÀàĞÍÊÇ¾­Ñé
+	-- Èç¹û½±ÀøµÄÀàĞÍÊÇkinh nghiÖm 
 	if strType==Award.Exp then
 		nExp = TaskAward(taskName, nRow, Award.ExpNum_Row);
 		AddOwnExp(nExp);
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>¾­Ñé"..nExp.."<color>");
-		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎª¾­Ñé£º"..nExp);
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>®iÓm kinh nghiÖm<color=green>"..nExp.."<color>");
+		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ ®iÓm kinh nghiÖm:"..nExp);
 	end;
 
-	-- Èç¹û½±ÀøµÄÀàĞÍÊÇÎïÆ·
+	-- Èç¹û½±ÀøµÄÀàĞÍÊÇvËt phÈm 
 	if strType==Award.Goods then
 	
 		nGenre      = TranItemNumber(TaskAward(taskName, nRow, Award.Goods_Genre_Row));
@@ -539,22 +539,22 @@ local i=0;
 		nGoodsFive  = TranItemNumber(TaskAward(taskName, nRow, Award.Goods_GoodsFive_Row));
 		nNum        = TranItemNumber(TaskAward(taskName, nRow, Award.Goods_GoodsNum_Row));
 		
-		-- ½±ÀøµÄÎïÆ·ÎÄ×Ö
+		-- ½±ÀøµÄvËt phÈm ÎÄ×Ö
 		strText     = TranEnableString(TaskAward(taskName, nRow, Award.AwardText_Row));
 		
 		for i=1, nNum do
 			AddItem(nGenre, nDetail, nParticular, nLevel, nGoodsFive, 0, 0);
 		end;
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>ÎïÆ·"..strText..nNum.."¸ö<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>vËt phÈm<color=green>"..strText..nNum.."c¸i<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("ÔÚÈÎÎñ£º"..strShowName.."»ñµÃÁËÎïÆ·£º"..strText);
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc vËt phÈm:"..strText);
 		
-		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªÎïÆ·£¬ÎïÆ·Îª£º"..strText);
+		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ vËt phÈm:"..strText);
 	end;
 		
-	-- Èç¹û½±ÀøµÄÀàĞÍÊÇ»Æ½ğ×°±¸
+	-- Èç¹û½±ÀøµÄÀàĞÍÊÇTrang bŞ Hoµng Kim
 	if strType==Award.GoldItem then
 	
 		nQuality = tonumber(TaskAward(taskName, nRow, Award.Goods_Quality_Row));
@@ -564,31 +564,31 @@ local i=0;
 			nRandomSeed = GetTmpValue(taskName, TmpType.ItemSeed..nRandomSeedRecord);
 			-- AddItemEx Ö¸ÁîĞèÒª½«»Æ½ğĞòºÅ -1
 			AddItemEx(4, nRandomSeed, 1, 0, nQuality - 1, 0, 0, 0, 0, 0);
-			CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎª»Æ½ğ×°±¸£¬±àºÅÎª£º"..nQuality.." Ëæ»úÖÖ×ÓÎª£º"..nRandomSeed);
+			CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ trang bŞ hoµng kim, sè hiÖu nhiÖm vô lµ:"..nQuality.." NhiÖm vô ngÉu nhiªn:"..nRandomSeed);
 		else
 			AddGoldItem(0, nQuality);
 		end;
 
-		-- ½±ÀøµÄÎïÆ·ÎÄ×Ö
+		-- ½±ÀøµÄvËt phÈm ÎÄ×Ö
 		strText     = TranEnableString(TaskAward(taskName, nRow, Award.AwardText_Row));
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º»Æ½ğ×°±¸£º<color=Orange>"..strText.."<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>trang bŞ hoµng kim:<color=Orange>"..strText.."<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("ÔÚÈÎÎñ£º"..strShowName.."»ñµÃÁËÒ»¼ş»Æ½ğ×°±¸£º"..nQuality);
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc mét bé trang bŞ hoµng kim:"..nQuality);
 		
-		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎª»Æ½ğ×°±¸£¬±àºÅÎª£º"..nQuality);
+		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ trang bŞ hoµng kim, sè hiÖu nhiÖm vô lµ:"..nQuality);
 	end;
 	
 	-- Èç¹û½±ÀøÀàĞÍÊÇ¿ªÊ¼Ò»¸öÈÎÎñ
 	if strType==Award.Task then
 		strTask = TaskAward(taskName, nRow, Award.AwardTask_Row);
 		nResult = ApplyTask(strTask);
-		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎª¿ªÊ¼ÈÎÎñ£¬Ãû³ÆÎª£º"..strTask.." £¬¿ªÊ¼½á¹ûÎª£º"..nResult);
+		CDebug:MessageOut(strShowName.."phÇn th­ëng b¾t ®Çu nhiÖm vô tªn lµ:"..strTask..", kÕt qu¶ lµ:"..nResult);
 		return 1;
 	end;
 	
-	-- Èç¹û½±ÀøÀàĞÍÊÇ²úÉúÒ»¸öËæ»úÈÎÎñ¾íÖá
+	-- Èç¹û½±ÀøÀàĞÍÊÇ²úÉúÒ»¸öNgÉu nhiªn_MËt ®å nhiÖm vô 
 	if strType==Award.RandomTask then
 		
 		-- Ñ¡ÔñÒ»¸öµÚ¶ş²ãµÄËæ»úÈÎÎñ
@@ -599,37 +599,37 @@ local i=0;
 			nRandomItemIndex = AddItem(6, 2, 2, 0, 1, 0, 0);
 			SetItemMagicLevel(nRandomItemIndex, 1, nRandomTaskID);
 			
-			-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
+			-- Í¬²½vËt phÈm Ä§·¨ÊôĞÔ
 			SyncItem(nRandomItemIndex);
 
-			Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>ÈÎÎñ¾íÖáÒ»¸ö£¡<color>");
-			CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªÒ»¸öÈÎÎñ¾íÖá£¬ÆäÈÎÎñ±àºÅÎª£º"..nRandomTaskID.." Ë÷ÒıÎª£º"..nRandomItemIndex);
+			Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>:<color=green> nhËn ®­îc 1 mËt ®å<color>");
+			CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ 1 mËt ®å ngÉu nhiªn! Sè hiÖu nhiÖm vô lµ:"..nRandomTaskID.." tiÕp theo lµ:"..nRandomItemIndex);
 		else
-			CDebug:MessageOut(strShowName.."ÈÎÎñ½±ÀøÈÎÎñ¾íÖáÊ§°Ü£¡");
+			CDebug:MessageOut(strShowName.."nhiÖm vô thÊt b¹i!");
 		end;
 		
 	end;
 	
 	
-	-- Èç¹û½±ÀøÀàĞÍÊÇ²Ø±¦Í¼
+	-- Èç¹û½±ÀøÀàĞÍÊÇTµng B¶o §å
 	if strType==Award.TreasureMap then
-		-- ²úÉúÒ»ÕÅ²Ø±¦Í¼
+		-- ²úÉúÒ»ÕÅTµng B¶o §å
 		CreateTreasureMap();
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>²Ø±¦Í¼Ò»¸ö£¡<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>phÇn th­ëng:<color=green>mét tÊm Tµng B¶o §å!<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("ÔÚÈÎÎñ£º"..strShowName.."»ñµÃÁËÒ»ÕÅ²Ø±¦Í¼¡£");
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc 1 tÊm Tµng B¶o §å.");
 	end;
 	
 	
-	-- Èç¹û½±ÀøÀàĞÍÊÇ½±ÀøË÷Òı
+	-- Èç¹û½±ÀøÀàĞÍÊÇhÖ thèng phÇn th­ëng
 	if strType==Award.AlliedAwardIndex then
 
-		-- »ñÈ¡½±ÀøË÷ÒıÃû
+		-- »ñÈ¡hÖ thèng phÇn th­ëngÃû
 		strAlliedTask = TaskAward(taskName, nRow, Award.AlliedAward_Row);
 		
-		CDebug:MessageOut(taskName.."µÄ½±ÀøÀàĞÍÎª½±ÀøË÷Òı£º"..strAlliedTask);
+		CDebug:MessageOut(taskName.."Lo¹i phÇn th­ëng:"..strAlliedTask);
 		
 		-- °Ñ×Ô¼º±¾Éí×ª»»³ÉÒ»¸öÊı×Ö´«½øÈ¥
 		PayAwardMain(strAlliedTask, TaskNo(taskName));
@@ -651,7 +651,7 @@ local strType = "";
 local nAdd = 0;
 local nResult = 0;
 local nRandom = 0;
-local nIsTaskStart = 0; -- ÅĞ¶ÏÊ¼ÊÇ·ñÓĞÈÎÎñ¿ªÊ¼
+local nIsTaskStart = 0; -- ÅĞ¶ÏÊ¼ÊÇ·ñÓĞB¾t ®Çu nhiÖm vô 
 local i=0;
 
 local RATE_ADD = 100; -- ¸ÅÂÊ¶¼³Ë 100 £¬ÒÔ·ÀÖ¹³öÏÖĞ¡Êı
@@ -667,10 +667,10 @@ local RATE_ADD = 100; -- ¸ÅÂÊ¶¼³Ë 100 £¬ÒÔ·ÀÖ¹³öÏÖĞ¡Êı
 	
 	nRandom = random(1, nAdd);
 	
-	CDebug:MessageOut(taskName.."½±ÀøÈ¡µÃÒ»¸öËæ»úÊı£º"..nRandom);
+	CDebug:MessageOut(taskName.."phÇn th­ëng ngÉu nhiªn cã ®­îc:"..nRandom);
 	
 	if nAdd~=10000 then -- Èç¹û¸ÅÂÊÏà¼Ó²»µ½ 10000 µÄÈİ´í´¦Àí
-		print(taskName.."µÄ½±Àø±í¸ñÌîĞ´´íÎó£¡");
+		print(taskName.."®iÒn nhËp phÇn th­ëng cã sai sãt");
 		nRandom=1; 
 	end;
 	
@@ -683,7 +683,7 @@ local RATE_ADD = 100; -- ¸ÅÂÊ¶¼³Ë 100 £¬ÒÔ·ÀÖ¹³öÏÖĞ¡Êı
 		nAdd = nAdd + aryAward[i][2]*RATE_ADD;
 		
 		if nAdd>=nRandom then
-			CDebug:MessageOut(taskName.."½±ÀøÔÚÊı×éÖĞÈ¡µÃµÚ "..aryAward[i][1].."ĞĞ");
+			CDebug:MessageOut(taskName.."Sè phÇn th­ëng cã ®­îc"..aryAward[i][1].." ");
 			nResult = PayAward(taskName, aryAward[i][1], strType, nAlliedTask);
 			
 			if nResult==1 then
@@ -699,7 +699,7 @@ local RATE_ADD = 100; -- ¸ÅÂÊ¶¼³Ë 100 £¬ÒÔ·ÀÖ¹³öÏÖĞ¡Êı
 end;
 
 
--- ÓÃÓÚÅĞ¶Ï¶Ô»°ÈÎÎñÊÇ·ñÄÜÍê³É
+-- ÓÃÓÚÅĞ¶Ï§èi tho¹iÈÎÎñÊÇ·ñÄÜÍê³É
 function CheckTalkCanFinish(taskName)
 
 local nTalkNpc = 0;
@@ -707,7 +707,7 @@ local nOrder = 0;
 local nFinish = 0;
 
 	if GetTmpValue(taskName, TmpType.KillNpc) ~= nil then
-		CDebug:MessageOut(taskName.." ÅĞ¶Ï¶Ô»°ÈÎÎñÊÇ·ñ¿ÉÒÔÍê³É£¬É±¹ÖÈÎÎñµÄÁÙÊ±±äÁ¿²»Îª¿Õ¡£");
+		CDebug:MessageOut(taskName.."XĞt xem nhiÖm vô ®èi tho¹i lµ cã thÓ hoµn thµnh hay kh«ng, biÕn sè t¹m thêi cña nhiÖm vô giÕt qu¸i kh¸c 0.");
 		nOrder = nOrder + 1;
 		nFinish = nFinish + GetTmpValue(taskName, TmpType.KillNpc);	
 	end;
@@ -722,7 +722,7 @@ local nFinish = 0;
 	
 	if nOrder>1 then
 		if nFinish + 1 == nOrder then
-			CDebug:MessageOut(taskName.." ¶Ô»°ÈÎÎñ¿ÉÒÔÍê³É");
+			CDebug:MessageOut(taskName.." nhiÖm vô cã thÓ hoµn thµnh");
 			return 1;
 		else
 			return nil;
@@ -734,7 +734,7 @@ local nFinish = 0;
 end;
 
 
--- ¹¹ÔìÈÎÎñÑ¡Ôñ¶Ô»°
+-- ¹¹ÔìÈÎÎñÑ¡Ôñ§èi tho¹i
 function CreateTalkTask()
 
 local nNpcIndex = GetLastDiagNpc();
@@ -745,7 +745,7 @@ local mapName = SubWorldName(subworld);
 
 local aryTask = EnumTaskList();
 
-local aryTaskText = {"ÄãÀ´×öÊ²Ã´ÄØ£¿"};
+local aryTaskText = {"Ng­¬i ®Õn lµm g×?"};
 
 local i=0;
 
@@ -762,11 +762,11 @@ local i=0;
 		if OnTaskNpcTalk(NpcName, mapName, aryTask[i])==1 then
 			rawset(aryTaskText,
 					getn(aryTaskText)+1,
-					"ÎÒÊÇÀ´×ö"..GetTaskEventName(aryTask[i]).."µÄ/#ShowTaskSay("..TaskNo(aryTask[i])..")");
+					"Ta ®Õn ®Ó"..GetTaskEventName(aryTask[i]).." /#ShowTaskSay("..TaskNo(aryTask[i])..")");
 		end;
 	end;
 	
-	rawset(aryTaskText, getn(aryTaskText)+1, "¼ÌĞøÔ­À´µÄ¶Ô»°/NpcDialog");
+	rawset(aryTaskText, getn(aryTaskText)+1, "tiÕp tôc nãi chuyÖn tr­íc ®©y/NpcDialog");
 	
 	if getn(aryTaskText)>2 then
 		SelectSay(aryTaskText);
@@ -778,7 +778,7 @@ local i=0;
 end;
 
 
--- Ñ¡ÔñÊÕ¼¯É±¹ÖÎïÆ·ÈÎÎñµÄÎïÆ·£¬ÔÚÃ¿É±Ò»´ÎÖ¸¶¨µÄ¹ÖÊ±´¥·¢
+-- Ñ¡ÔñÊÕ¼¯s¸t qu¸ivËt phÈm ÈÎÎñµÄvËt phÈm £¬ÔÚÃ¿É±Ò»´ÎÖ¸¶¨µÄ¹ÖÊ±´¥·¢
 function SelectCollectItemTask(taskName)
 	local nRow, nCol = TaskEntityMatrix(taskName);
 	local nItemRate = tonumber(GetTmpValue(taskName, "ItemRate"));
@@ -789,7 +789,7 @@ function SelectCollectItemTask(taskName)
 	
 	if nItemRate==0 or nItemRate==nil then return end;
 	
-	CDebug:MessageOut(taskName.." µÃµ½É±¹ÖµôÂäÎïÆ·µÄ¸ÅÂÊ£º"..nItemRate);
+	CDebug:MessageOut(taskName.." X¸c suÊt giÕt qu¸i nhËn ®­îc vËt phÈm:"..nItemRate);
 	
 		if nRate~=nil or nRate~="" then
 			nRandom = random(1, 100);
@@ -808,14 +808,14 @@ function SelectCollectItemTask(taskName)
 				end;
 				
 				AddItem(nGenre, nDetail, nParticular, nLevel, nGoodsFive, 0, 0);
-				Msg2Player("ÄãµÃµ½ÁËÒ»¸ö£º<color=green>"..szText.."<color>£¡");
+				Msg2Player("B¹n nhËn ®­îc 1: <color=green>"..szText.."<color>!");
 				
 			end;
 		end;
 end;
 
 
--- ½«Ò»¸ö´«½øÀ´µÄÎïÆ·Ë÷Òı×ª»»³ÉÒ»¸ö STRING µÄ KEY£¬ÒÔ¼°·µ»ØµÈ¼¶ºÍÎåĞĞ
+-- ½«Ò»¸ö´«½øÀ´µÄvËt phÈm Ë÷Òı×ª»»³ÉÒ»¸ö STRING µÄ KEY£¬ÒÔ¼°·µ»ØµÈ¼¶ºÍÎå 
 function TranKey(nIndex)
 
 local nGenre,nDetail,nParticular,nLevel,nGoodsFive,nLuck = GetItemProp(nIndex);
@@ -842,7 +842,7 @@ local strKey = "";
 end;
 
 
--- ×ª»»Ò»¸öÎïÆ·µÄ±êÊ¶ÎªÊı×Ö£¬Èç¹ûÆäÎª n »òÕßÊÇ nil Ôò·µ»Ø -1
+-- ×ª»»Ò»¸övËt phÈm µÄ±êÊ¶ÎªÊı×Ö£¬Èç¹ûÆäÎª n »òÕßÊÇ nil Ôò·µ»Ø -1
 function TranItemNumber(num)
 
 	if num=="n" or num=="" or num==nil then
@@ -870,7 +870,7 @@ function TranEnableString(strMain)
 end;
 
 
--- Ã¶¾Ùµ±Ç°ÕıÔÚ½øĞĞµÄÈÎÎñ£¬·µ»ØÒ»¸öÈÎÎñÃûÊı×é
+-- Ã¶¾Ùµ±Ç°ÕıÔÚ½ø µÄÈÎÎñ£¬·µ»ØÒ»¸öÈÎÎñÃûÊı×é
 function EnumTaskList()
 
 local aryTask = {}
@@ -912,7 +912,7 @@ function WriteTaskLog(strMain)
 	-- Èç¹ûÊÇ¿ÕÖµÔò²»Ğ´Èë
 	if strMain==nil then return end;
 
-	WriteLog("[ÈÎÎñÏµÍ³¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."[ÕËºÅ£º"..GetAccount().."][½ÇÉ«£º"..GetName().."]"..strMain);
+	WriteLog(" [HÖ thèng nhiÖm vô]"..date(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]"..strMain);
 end;
 
 

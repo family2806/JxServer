@@ -153,10 +153,10 @@ function cd_buildfightnpc()
 	local citycamp = GetMissionV( MS_CITYCAMP )
 --print(citycamp.."==citycamp")
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 	local npccount_1 = floor( filehigh * 0.82 )		--1886
 	local npccount_2 = floor( filehigh * 0.12 )		--276
@@ -175,23 +175,23 @@ function GameOver()
 	local citycamp = GetMissionV(MS_CITYCAMP)
 	local campname = ""
 	if ( citycamp == 1 ) then
-		campname = "ËÎ¾ü"
+		campname = "Qu©n Tèng"
 	else
-		campname = "½ð¾ü"
+		campname = "Qu©n Kim"
 	end
 	local isWin = 0;--¼ÇÂ¼ÊÇ·ñÊ¤Àû£­£­byÖ¾É½
 	if ( GetMissionV(MS_CITYDEFENCE) == 1 ) then
 		isWin = 1;--byÖ¾É½
 		--Ê¤Àû
 		cd_awardall()
-		AddGlobalNews("¾­¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."±£³Ç³É¹¦£¡ËùÓÐ²Î¼ÓµÄÍæ¼Ò¶¼µÃµ½Ò»Æ¿ÏÉ²ÝÂ¶")
-		Msg2MSAll( MISSIONID, "¾­¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."±£³Ç³É¹¦£¡ËùÓÐ²Î¼ÓµÄÍæ¼Ò¶¼µÃµ½Ò»Æ¿ÏÉ²ÝÂ¶" )
-		cd_writelog(date("%m-%d,%H:%M;")..campname.."ÊØ³Ç³É¹¦£¬ÈËÊý=="..GetMSPlayerCount(MISSIONID, 0))
+		AddGlobalNews("tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."Gi÷ thµnh thµnh c«ng! TÊt c¶ ng­êi ch¬i tham gia ®Òu nhËn ®­îc 1 b×nh Tiªn Th¶o lé.")
+		Msg2MSAll( MISSIONID, "tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."Gi÷ thµnh thµnh c«ng! TÊt c¶ ng­êi ch¬i tham gia ®Òu nhËn ®­îc 1 b×nh Tiªn Th¶o lé." )
+		cd_writelog(date("%m-%d,%H:%M;")..campname.."Thñ thµnh thµnh c«ng, sè ng­êi=="..GetMSPlayerCount(MISSIONID, 0))
 	else
 		--Ê§°Ü
-		AddGlobalNews("¾­¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."ÔÚÎþÉüºÜ´óµÄÇé¿öÏÂ±£×¡ÁË³Ç£¬µ«ÊÇ³ÇÒÑ±»Ëð»ÙµÃºÜÑÏÖØ.")
-		Msg2MSAll( MISSIONID, "¾­¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."ÔÚÎþÉüºÜ´óµÄÇé¿öÏÂ±£×¡ÁË³Ç£¬µ«ÊÇ³ÇÒÑ±»Ëð»ÙµÃºÜÑÏÖØ." )
-		cd_writelog(date("%m-%d,%H:%M;")..campname.."ÊØ³ÇÊ§°Ü£¬ÈËÊý=="..GetMSPlayerCount(MISSIONID, 0)..";npcÊýÁ¿»¹ÓÐ, "..tbSOLDIER_NAME[1]..":"..GetMissionV(MS_1RSTNPC_TCNT)..";"..tbSOLDIER_NAME[2]..":"..GetMissionV(MS_1RSTNPC_TCNT+1)..";"..tbSOLDIER_NAME[3]..":"..GetMissionV(MS_1RSTNPC_TCNT+2)..";"..tbSOLDIER_NAME[4]..":"..GetMissionV(MS_1RSTNPC_TCNT+3)..";"..tbSOLDIER_NAME[5]..":"..GetMissionV(MS_1RSTNPC_TCNT+4)..";")
+		AddGlobalNews("tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."Sau khi bá ra mét sù hy sinh rÊt lín cuèi cïng còng gi÷ ®­îc thµnh, nh­ng thµnh ®· bÞ tµn ph¸ nghiªm träng.")
+		Msg2MSAll( MISSIONID, "tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."Sau khi bá ra mét sù hy sinh rÊt lín cuèi cïng còng gi÷ ®­îc thµnh, nh­ng thµnh ®· bÞ tµn ph¸ nghiªm träng." )
+		cd_writelog(date("%m-%d,%H:%M;")..campname.."Thñ thµnh thÊt b¹i, sè ng­êi=="..GetMSPlayerCount(MISSIONID, 0).."; sè l­îng npc cßn l¹i, "..tbSOLDIER_NAME[1]..":"..GetMissionV(MS_1RSTNPC_TCNT)..";"..tbSOLDIER_NAME[2]..":"..GetMissionV(MS_1RSTNPC_TCNT+1)..";"..tbSOLDIER_NAME[3]..":"..GetMissionV(MS_1RSTNPC_TCNT+2)..";"..tbSOLDIER_NAME[4]..":"..GetMissionV(MS_1RSTNPC_TCNT+3)..";"..tbSOLDIER_NAME[5]..":"..GetMissionV(MS_1RSTNPC_TCNT+4)..";")
 	end
 	local tbPlayer = {};
 	local idx = 0;

@@ -6,13 +6,13 @@ function xmas2007_getnextgirlname()
 	local sznextgirl = ""
 	local ntask = GetTask(xmas2007_findgirl_taskID)
 	if ntask == 0 then
-		sznextgirl = "±ù¶ù"
+		sznextgirl = "B¨ng Nhi"
 	elseif ntask == 1 then
-		sznextgirl = "¶¬¶ù"
+		sznextgirl = "§«ng Nhi"
 	elseif ntask == 2 then
-		sznextgirl = "°×¶ù"
+		sznextgirl = "B¹ch Nhi"
 	elseif ntask == 3 then
-		sznextgirl = "Ñ©¶ù"
+		sznextgirl = "TuyÕt Nhi"
 	end
 	return sznextgirl
 end
@@ -21,13 +21,13 @@ function main()
 
 	local tbarytalk = 
 	{
-		[1]= "<dec><npc>ÎÒºÍ¸÷Î»½ãÃÃÒÑÊ§È¥ÁªÂçÁË£¬´óÏÀ¿ÉÒÔ°ïÎÒÕÒµ½ËıÃÇÂğ£¿¿ìÈ¥ÏÈ°ïÎÒÕÒ<color=yellow>±ù¶ù<color> ¿ÉÄÜËıÕıÔÚ³ÇÄÚ.",
-		[2]= "<dec><npc>Ô­À´½ãÃÃ½Ğ´óÏÀÀ´ÕÒÎÒ£¬µ«ÊÇÏÖÔÚ»¹Î´ÕÒµ½<color=yellow>%s<color>Âé·³´óÏÀÁË!",
-		[3]= "<dec><npc>´óÏÀ£¬ÎÒÃÇÒÀÈ»Î´ÕÒµ½<color=yellow>%s<color> Âé·³´óÏÀÔÙÈ¥Ò»ÌË.",
-		[4]= "<dec><npc>¹§Ï²£¬´óÏÀÒÑ»ñµÃ¼ÛÖµ½±Àø£¬Ï£ÍûÏÂ´ÎÔÙ¼û",
-		[5]= "<dec><npc>¹§Ï²£¬´óÏÀÒÑÕÒµ½ÎÒÃÇ.",
-		[6]= "»ñµÃ <color=yellow>%s<color> ¾­ÑéÖµ",
-		[7]= "<dec><npc>´óÏÀÀ´µÄÌ«ÍíÁË£¬ÒÑÓĞ3ÈËÕÒµ½ÁË£¬ÏÂ´ÎÀ´ÔçµãÅ¶",
+		[1]= "<dec><npc>Ta vµ c¸c tû muéi ®· thÊt l¹c nhau råi, ®¹i hiÖp cã thÓ gióp ta t×m muéi muéi ®­îc kh«ng? H·y gióp ta t×m <color=yellow>B¨ng Nhi<color> tr­íc, cã thÓ muéi Êy ®ang ë trong thµnh.",
+		[2]= "<dec><npc>Th× ra c¸c tû muéi ta nhê ®¹i hiÖp ®i t×m ta, nh­ng giê vÉn ch­a t×m ®­îc <color=yellow>%s<color> n÷a, lµm phiÒn ®¹i hiÖp vËy!",
+		[3]= "<dec><npc>§¹i hiÖp, chóng t«i vÉn ch­a t×m thÊy <color=yellow>%s<color> n÷a, phiÒn ®¹i hiÖp ®i t×m mét chuyÕn n÷a.",
+		[4]= "<dec><npc>Xin chóc mõng, ®¹i hiÖp ®· nhËn ®­îc phÇn th­ëng gi¸ trŞ, hi väng lÇn sau sÏ gÆp l¹i",
+		[5]= "<dec><npc>Xin chóc mõng, ®¹i hiÖp ®· t×m ®­îc chóng t«i.",
+		[6]= "NhËn ®­îc <color=yellow>%s<color> ®iÓm kinh nghiÖm",
+		[7]= "<dec><npc>§¹i hiÖp ®Õn qu¸ muén råi, ®· cã 3 ng­êi ®· t×m thÊy t«i, lÇn sau ®Õn sím h¬n nhĞ.",
 
 	}
 	local nidx = GetLastDiagNpc()
@@ -43,21 +43,21 @@ function main()
 		SetTask(xmas2007_findgirl_taskID,0)
 		local arysay = {}
 		arysay[1] = tbarytalk[1]
-		arysay[2] = "ºÃ!/NoChoice"
+		arysay[2] = "§­îc!/NoChoice"
 		CreateTaskSay(arysay)
 		return
 	end
 	if ntask == 0 then
 		local arysay = {}
 		arysay[1] = tbarytalk[1]
-		arysay[2] = "ºÃ!/NoChoice"
+		arysay[2] = "§­îc!/NoChoice"
 		CreateTaskSay(arysay)
 		return
 	
 	elseif ntask == 4 then
 		local arysay = {}
 		arysay[1] = tbarytalk[4]
-		arysay[2] = "ºÃ!/NoChoice"
+		arysay[2] = "§­îc!/NoChoice"
 		CreateTaskSay(arysay)		
 		return
 	end
@@ -67,13 +67,13 @@ function main()
 			sznextgirl = xmas2007_getnextgirlname()
 			local arysay = {}
 			arysay[1] = format(tbarytalk[2],sznextgirl)
-			arysay[2] = "ºÃ!/NoChoice"
+			arysay[2] = "§­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		else
 			local arysay = {}
 			arysay[1] = format(tbarytalk[3],sznextgirl)
-			arysay[2] = " ºÃ!/NoChoice"
+			arysay[2] = "§­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		end
@@ -84,13 +84,13 @@ function main()
 			sznextgirl = xmas2007_getnextgirlname()
 			local arysay = {}
 			arysay[1] = format(tbarytalk[2],sznextgirl)
-			arysay[2] = "ºÃ!/NoChoice"
+			arysay[2] = "§­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		else
 			local arysay = {}
 			arysay[1] = format(tbarytalk[3],sznextgirl)
-			arysay[2] = "ºÃ!/NoChoice"
+			arysay[2] = "§­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		end
@@ -103,24 +103,24 @@ function main()
 				SetNpcParam(nidx,2,(nsort+1))
 				AddOwnExp(xmas2007_findgirl_exp)
 				Msg2Player(format(tbarytalk[6],xmas2007_findgirl_exp))
-				xmas2007_sdl_writeLog("Ñ°ÕÒÉñÃØÉÙÅ®",format("»ñµÃ%s ¾­ÑéÖµ",xmas2007_findgirl_exp),0)
+				xmas2007_sdl_writeLog("T×m kiÕm thiÕu n÷ thÇn bİ",format("NhËn ®­îc %s ®iÓm kinh nghiÖm",xmas2007_findgirl_exp),0)
 				xmas2007_findgirl_award()
 				local arysay = {}
 				arysay[1] = format(tbarytalk[5])
-				arysay[2] = "ºÃ!/NoChoice"
+				arysay[2] = "§­îc!/NoChoice"
 				CreateTaskSay(arysay)
 				return
 			else
 				local arysay = {}
 				arysay[1] = format(tbarytalk[7])
-				arysay[2] = "ºÃ!/NoChoice"
+				arysay[2] = "§­îc!/NoChoice"
 				CreateTaskSay(arysay)
 				return
 			end
 		else
 			local arysay = {}
 			arysay[1] = format(tbarytalk[3],sznextgirl)
-			arysay[2] = "ºÃ!/NoChoice"
+			arysay[2] = "§­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		end
@@ -137,8 +137,8 @@ function xmas2007_findgirl_award()
 		nsum = nsum + tbitem[1]*nallrate
 		if nsum > np then
 			AddGoldItem(tbitem[2][1],tbitem[2][2])
-			Msg2Player(format("»ñµÃ<color=yellow>%s<color>",tbitem[3]))
-			xmas2007_sdl_writeLog("Ñ°ÕÒÉñÃØÉÙÅ®",format("»ñµÃ»Æ½ğ×°±¸ %s",tbitem[3]))
+			Msg2Player(format("NhËn ®­îc <color=yellow>%s<color>",tbitem[3]))
+			xmas2007_sdl_writeLog("T×m kiÕm thiÕu n÷ thÇn bİ",format("NhËn ®­îc trang bŞ hoµng kim %s",tbitem[3]))
 			return 
 		end
 	end

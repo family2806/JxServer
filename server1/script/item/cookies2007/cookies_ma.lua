@@ -2,13 +2,13 @@ Include("\\script\\event\\cookies2007\\head.lua");
 
 function main(nItemIdx)
 	if (checkcookies2007Date(20070424) ~= 1) then
-		Say("¸ÃÔ­ÁÏÒÑ¹ıÆÚ£¬²»ÄÜÓÃÀ´×ö±ıÁË.", 0);
+		Say("Nguyªn liÖu nµy ®· ®Ó qu¸ h¹n sö dông. Kh«ng thÓ dïng ®Ó lµm b¸nh n÷a.", 0);
 		return 0;
 	end;
 	
 	local nteam = GetTeamSize();
 	if (nteam ~= 2) then
-		Say("×ö±ıÔ­ÁÏ°ü£ºÖ»ÄÜÄĞÅ®×é¶Ó²ÅÄÜÒ»Æğ×ö±ı.", 0);
+		Say("Bao nguyªn liÖu lµm b¸nh: ChØ cã tæ ®éi nam n÷ míi cã thÓ cïng nhau lµm b¸nh.", 0);
 		return 1;
 	end;
 	
@@ -21,7 +21,7 @@ function main(nItemIdx)
 		end;
 	end;
 	if (nb == 0) then
-		Msg2Player("Ö»ÄÜÔÚ7´ó³ÇÊĞ¡¢8¸öĞÂÊÖ´åºÍ4¸ö·ç¾°Çø·¶Î§ÄÚ×ö±ı.");
+		Msg2Player("ChØ cã thÓ lµm b¸nh trong ph¹m vi t¹i 7 ®¹i thµnh thŞ, 8 t©n thñ th«n vµ 4 khu vùc phong c¶nh.");
 		return 1;
 	end;
 	
@@ -48,7 +48,7 @@ function main(nItemIdx)
 	end;
 	PlayerIndex = oldPlayer;
 	if (bS ~= 2) then
-		Say("Ö»ÓĞÄĞÅ®×é¶Ó²ÅÄÜÊ¹ÓÃ¸ÃÔ­ÁÏ×ö±ı.", 0);
+		Say("ChØ cã tæ ®éi nam n÷ míi cã thÓ sö dung nguyªn liÖu nµy ®Ó lµm b¸nh.", 0);
 		return 1;
 	end;
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
@@ -63,7 +63,7 @@ function main(nItemIdx)
 		
 		if (tonumber(GetTask(TSK_33_COOKIES_DATE)) == nDate and tonumber(GetTask(TSK_33_COOKIES_COUNT)) >= 8) then
 			PlayerIndex = oldPlayer;
-			Say("ÄúÒÑ¾­ºÜÀÛÁË£¬Ã÷Ìì²ÅÄÜ¼ÌĞø×ö±ı¡£Ã¿Ìì×î¶àÖ»ÄÜ×ö8´Î.",0);
+			Say("B¹n ®· qu¸ mÖt råi, mai míi cã thÓ tiÕp tôc lµm b¸nh. Mçi ngµy chØ ®ñ søc lµm tèi ®a 8 lÇn.",0);
 			return 1;
 		end
 		
@@ -73,7 +73,7 @@ function main(nItemIdx)
 		
 		if (checkcookies2007Limit() ~= 1) then
 			PlayerIndex = oldPlayer;
-			Say("ÕæÊÇ²»ºÃÒâË¼£¬Ö»ÓĞÍæ¼Ò<color=yellow>50¼¶ÒÔÉÏÇÒÒÑ³äÖµ<color> ²ÅÄÜÊ¹ÓÃÔ­ÁÏ°ü×ö±ı£¬ÆäÖĞÒ»Î»ÏÀ¿ÍÃ»ÓĞ´ïµ½¸ÃÌõ¼ş.", 0);
+			Say("ThËt ng¹i qu¸, chØ cã ng­êi ch¬i <color=yellow>cÊp trªn 50 ®· n¹p thÎ<color> míi cã thÓ sö dông bao nguyªn liÖu lµm b¸nh, mét trong hai vŞ hiÖp kh¸ch ch­a ®¸p øng ®ñ ®iÒu kiÖn nµy råi.", 0);
 			return 1;
 		end;
 	end
@@ -91,7 +91,7 @@ function main(nItemIdx)
 	end
 	PlayerIndex = oldPlayer;
 	
-	sztreename = format("»ğÂ¯ - %s v?%s", szname1, szname2);
+	sztreename = format("BÕp löa - %s vµ %s", szname1, szname2);
 	local _, nx, ny = GetWorldPos();
 	local nNpcIdx = AddNpc(TB_PAN_NPCID[1], 1, SubWorld, (nx-1)*32, (ny-1)*32, 1, sztreename);
 	if (nNpcIdx > 0) then

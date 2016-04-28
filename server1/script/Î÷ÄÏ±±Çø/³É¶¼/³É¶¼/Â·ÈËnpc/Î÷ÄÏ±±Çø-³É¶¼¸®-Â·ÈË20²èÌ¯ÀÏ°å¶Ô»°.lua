@@ -5,6 +5,6 @@ function main(sel)
 		allbrother_0801_FindNpcTaskDialog(185)
 		return 0;
 	end
-Say("ĞÁ¶şÉô£ºÒªºÈÉ¶×Ó²è£¿ÅİÒ»ºøÃ«¼âÈçºÎ£¿",0)
+Say("Muèn uèng trµ g×? Mét Êm trµ Mao Tiªm nhĞ?",0)
 
 end;

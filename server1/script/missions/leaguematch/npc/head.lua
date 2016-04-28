@@ -2,16 +2,16 @@ IL("RELAYLADDER");
 
 --²éÑ¯£¨Ö÷¶Ô»°£©
 function wlls_query()
-	local str = "<enter>  µ±½ñÂÒÊÀ£¬Ó¢ĞÛºÀ½Ü±²³ö£¬ÒòÎªÏë·´¿¹½­ºşÉÏµÄÕù¶á£¬ËùÒÔ£¬¶À¹ÂÃËÖ÷¾ÙĞĞÎäÁÖÁªÈü: Ê×ÏÈÊÇÑ¡³öÎäÁÖÖĞÓÅĞãµÄÈË²Å£¬µÚ¶şÊÇÒ»ÆğÏ×¼Æ¡£²Î¼ÓÁªÈüÈç¹û±íÏÖºÃ£¬¿ÉÒÔ»ñµÃ½±Àø¡£<enter>"..
-		"ÄãÒÀÈ»»¹ÄÜÔÚÎÒÕâ¼ì²éÎäÁÖĞÂĞãÁªÈüºÍÎäÁÖÁªÈüÏà¹ØÇé¿ö."
+	local str = "<enter> ®­¬ng kim lo¹n thÕ , anh hïng hµo kiÖt bèi xuÊt , bëi v× muèn ph¶n kh¸ng trªn giang hå ®İch tranh ®o¹t , cho nªn , ®éc c« minh chñ cö hµnh vâ l©m liªn cuéc so tµi : ®Çu tiªn lµ chän lùa trong chèn vâ l©m ­u tó ng­êi cña míi , thø nh× lµ cïng nhau hiÕn kÕ . tham gia liªn cuéc so tµi nÕu nh­ biÓu hiÖn h¶o , cã thÓ ®¹t ®­îc t­ëng th­ëng . <enter>"..
+		"B¹n cã thÓ kiÓm tra t×nh h×nh liªn quan ®Õn vâ l©m liªn ®Êu kiÖt xuÊt(d­íi 119) vµ vâ l©m liªn ®Êu ë chç ta."
 	local tb_option = {}
 	if (LG_GetLeagueObjByRole(WLLS_LGTYPE, GetName()) ~= 0) then
-		tb_option[getn(tb_option)+1] = "ÎÒÏë¼ì²é×é¶ÓÇé¿ö[×Ô¼ºµÄ¶Ó]/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "KiÓm tra t×nh h×nh chiÕn ®éi[®éi cña ta]/wlls_query_mylg"
 	end
-	tb_option[getn(tb_option)+1] = "ÎÒÏë¼ì²é×é¶ÓÇé¿ö[ÅÅÃûÇ°Ê®]/wlls_query_level"
-	tb_option[getn(tb_option)+1] = "ÎÒÏë¼ì²éÖ¸¶¨Õ½¶ÓÇé¿ö[Õ½¶ÓÃû³Æ] /wlls_query_lgnamein"
-	tb_option[getn(tb_option)+1] = "ÎÒÏë¼ì²éÖ¸¶¨Õ½¶ÓÇé¿ö[ÈËÎïÃû³Æ]/wlls_query_plnamein"
-	tb_option[getn(tb_option)+1] = "²»ĞèÒª!/OnCancel"
+	tb_option[getn(tb_option)+1] = "KiÓm tra t×nh h×nh chiÕn ®éi [10 h¹ng ®Çu]/wlls_query_level"
+	tb_option[getn(tb_option)+1] = "KiÓm tra t×nh h×nh chiÕn ®éi [tªn chiÕn ®éi] /wlls_query_lgnamein"
+	tb_option[getn(tb_option)+1] = "KiÓm tra t×nh h×nh chiÕn ®éi [tªn nh©n vËt]/wlls_query_plnamein"
+	tb_option[getn(tb_option)+1] = "Kh«ng cÇn!/OnCancel"
 	wlls_descript(str, tb_option)
 end
 
@@ -19,7 +19,7 @@ end
 function wlls_query_mylg()
 	local n_lid = LG_GetLeagueObjByRole(WLLS_LGTYPE, GetName())
 	if (FALSE(n_lid)) then
-		Say(wlls_npcname().."¶Ô²»Æğ£¬ÄãÒÀÈ»»¹Î´Èë¶Ó£¬²»ÄÜ¼ì²é!", 0)
+		Say(wlls_npcname()..": ch­a vµo ®éi, kh«ng thÓ xem!", 0)
 	else
 		wlls_query_do(n_lid)
 	end
@@ -27,11 +27,11 @@ end
 
 --²éÑ¯ÅÅĞĞÇ°10µÄÕ½¶Ó£¨¼¶±ğÁĞ±í£ºĞÂĞã¡¢¸ß¼¶£©
 function wlls_query_level()
-	wlls_descript("ÄãÏë¼ì²éÄÄ¸ö¼¶±ğÕ½¶ÓµÄÅÅÃû?",
-		WLLS_LEVEL_DESC[1].."ÅÅÃûÇ°Ê®/#wlls_query_type(1)",
-		WLLS_LEVEL_DESC[2].."ÅÅÃûÇ°Ê®/#wlls_query_type(2)",
-		"·µ»Ø/wlls_query",
-		"ÎÒÖªµÀÁË/OnCancel")
+	wlls_descript(" b¹n muèn kiÓm tra ®éi nµo?",
+		WLLS_LEVEL_DESC[1].." 10 h¹ng ®Çu/#wlls_query_type(1)",
+		WLLS_LEVEL_DESC[2].." 10 h¹ng ®Çu/#wlls_query_type(2)",
+		"Trë l¹i/wlls_query",
+		"Ta biÕt råi/OnCancel")
 end
 
 --²éÑ¯ÅÅĞĞÇ°10µÄÕ½¶Ó£¨·ÖÀàÁĞ±í£©
@@ -42,16 +42,16 @@ function wlls_query_type(n_level)
 	for n_mtype, tb_mtaype in WLLS_TAB[n_type].match_type do
 		if (tb_mtaype.level == n_level) then
 			n = n_mtype
-			tb_option[getn(tb_option)+1] = WLLS_LEVEL_DESC[tb_mtaype.level].."-"..tb_mtaype.name.."ÅÅÃûÇ°Ê®/#wlls_query_top10("..n_mtype..")"
+			tb_option[getn(tb_option)+1] = WLLS_LEVEL_DESC[tb_mtaype.level].."-"..tb_mtaype.name.." 10 h¹ng ®Çu/#wlls_query_top10("..n_mtype..")"
 		end
 	end
 	if (getn(tb_option) == 1) then	--Ö»ÓĞÒ»¸ö£¬Ö±½ÓÏÔÊ¾
 		wlls_query_top10(n)
 		return
 	end
-	tb_option[getn(tb_option)+1] = "·µ»Ø/wlls_query_level"
-	tb_option[getn(tb_option)+1] = "ÎÒÖªµÀÁË/OnCancel"
-	wlls_descript("´Ë´Î "..WLLS_LEVEL_DESC[n_level].."°üÀ¨ "..(getn(tb_option) - 1).."ÄãÏë¼ì²éÄÄ¸ö¼¶±ğÕ½¶ÓµÄÅÅÃû?", tb_option)
+	tb_option[getn(tb_option)+1] = "Trë l¹i/wlls_query_level"
+	tb_option[getn(tb_option)+1] = "Ta biÕt råi/OnCancel"
+	wlls_descript("§iÒu nµy "..WLLS_LEVEL_DESC[n_level].." bao gåm "..(getn(tb_option) - 1).." b¹n muèn kiÓm tra ®éi nµo?", tb_option)
 end
 
 --²éÑ¯ÅÅĞĞÇ°10µÄÕ½¶Ó£¨Ç°Ê®ÃûÁĞ±í£©
@@ -63,15 +63,15 @@ function wlls_query_top10(n_mtype)
 	for i = 1, 10 do
 		local str_lgname, n_order = Ladder_GetLadderInfo(n_ladder, i)
 		if (not FALSE(n_order)) then
-			tb_option[getn(tb_option)+1] = strfill_left("Ãû´Î"..(-n_order).."danh ", 7)..str_lgname.."/#wlls_query_top("..n_ladder..","..i..")"
+			tb_option[getn(tb_option)+1] = strfill_left("h¹ng "..(-n_order).." danh ", 7)..str_lgname.."/#wlls_query_top("..n_ladder..","..i..")"
 		end
 	end
 	if (getn(tb_option) <= 0) then
-		Say(wlls_npcname().."¶Ô²»Æğ£¬Ä¿Ç°»¹Ã»ÓĞÕ½¶ÓÅÅÃû£¬²»ÄÜ¼ì²é!", 0)
+		Say(wlls_npcname().." : ch­a xÕp h¹ng, kh«ng thÓ kiÓm tra!", 0)
 	else
-		tb_option[getn(tb_option)+1] = "·µ»Ø/#wlls_query_type("..n_level..")"
-		tb_option[getn(tb_option)+1] = "ÎÒÖªµÀÁË/OnCancel"
-		Say(wlls_npcname().."ÄãÏë¼ì²éÄÄ¸ö×é?", getn(tb_option), tb_option)
+		tb_option[getn(tb_option)+1] = "Trë vÒ/#wlls_query_type("..n_level..")"
+		tb_option[getn(tb_option)+1] = "Ta biÕt råi/OnCancel"
+		Say(wlls_npcname().." muèn kiÓm tra nhãm nµo ?", getn(tb_option), tb_option)
 	end
 end
 
@@ -82,20 +82,20 @@ function wlls_query_top(n_ladder, n_idx)
 	if (n_lid ~= 0 and LG_GetLeagueTask(n_lid, WLLS_LGTASK_RANK) > 0) then
 		wlls_query_do(n_lid)
 	else
-		Say(wlls_npcname().."¶Ô²»Æğ! Õ½¶ÓÒÑ½âÉ¢, ²»ÄÜ¼ì²é!", 0)
+		Say(wlls_npcname()..": §éi ®· gi¶i t¸n, kh«ng thÓ kiÓm tra!!", 0)
 	end
 end
 
 --²éÑ¯Ö¸¶¨Õ½¶Ó(ÊäÈë)
 function wlls_query_lgnamein()
-	AskClientForString("wlls_query_lgname", "", 1, 16, "ÊäÈëÏëÒª¼ì²éµÄÕ½¶ÓÃû³Æ!")
+	AskClientForString("wlls_query_lgname", "", 1, 16, "NhËp tªn chiÕn ®éi!")
 end
 
 --²éÑ¯Ö¸¶¨Õ½¶Ó(²éÑ¯)
 function wlls_query_lgname(str_lgname)
 	local n_lid = LG_GetLeagueObj(WLLS_LGTYPE, str_lgname)
 	if (FALSE(n_lid)) then
-		Say(wlls_npcname().."¶Ô²»Æğ! Õ½¶Ó²»´æÔÚ»òÕßÒÑ½âÉ¢.", 0)
+		Say(wlls_npcname()..": chiÕn ®éi kh«ng tån t¹i hoÆc ®· gi¶i t¸n", 0)
 	else
 		wlls_query_do(n_lid)
 	end
@@ -103,14 +103,14 @@ end
 
 --²éÑ¯Ö¸¶¨½ÇÉ«(ÊäÈë)
 function wlls_query_plnamein()
-	AskClientForString("wlls_query_plname", "", 1, 16, "ÇëÊäÈëÏëÒª¼ì²éµÄÈËÎïÃû×Ö!")
+	AskClientForString("wlls_query_plname", "", 1, 16, "NhËp tªn nh©n vËt!")
 end
 
 --²éÑ¯Ö¸¶¨½ÇÉ«(²éÑ¯)
 function wlls_query_plname(str_plname)
 	local n_lid = LG_GetLeagueObjByRole(WLLS_LGTYPE, str_plname)
 	if (FALSE(n_lid)) then
-		Say(wlls_npcname().."¶Ô²»Æğ! ÄãÊäÈëµÄÈËÎïÃû×Ö²»´æÔÚ»òÕßÃ»ÓĞ¼ÓÈëÕ½¶Ó, ²»ÄÜ¼ì²é!", 0)
+		Say(wlls_npcname()..": Xin lçi! Tªn kh«ng tån t¹i, hoÆc ch­a gia nhËp ®éi!", 0)
 	else
 		wlls_query_do(n_lid)
 	end
@@ -136,19 +136,19 @@ function wlls_query_do(n_lid)
 	local n_rank = LG_GetLeagueTask(n_lid, WLLS_LGTASK_RANK)
 	local str_rank
 	if (n_rank > 1000) then
-		str_rank = "Sau 1000"
+		str_rank = "H¹ng sau 1000"
 	elseif (n_rank > 0) then
-		str_rank = "Ãû´Î "..n_rank.."danh "
+		str_rank = "H¹ng thø "..n_rank.." danh "
 	else
-		str_rank = "»¹Î´ÅÅÃû"
+		str_rank = "Kh«ng ®­îc xÕp h¹ng"
 	end
 	local n_width = 17
 	local str = "<enter>"
-	str = str .. strfill_center(str_mtype.."Ğ¡×é[<color=yellow>"..str_lgname.."<color>]", 53+21, "-")
-	str = str .. strfill_left("°üÀ¨<color=yellow>"..n_memcount.."<color> ³ÉÔ±", n_width+21).."<color=cyan>"..str_mem.."<color><enter>"
-	str = str .. strfill_left("®· ²Î¼Ó<color=yellow>"..n_total.."<color>ÁªÈü:", n_width+21).."Ê¤Àû<color=yellow>"..n_win.."<color>³¡/ºÍ<color=yellow>"..n_tie.."<color>³¡/Ê§°Ü<color=yellow>"..n_lose.."<color>³¡<enter>"
-	str = str .. strfill_left("",n_width).."È¡Ê¤±ÈÀı<color=yellow>"..strsub(f_rate,1,4).."<color>%<enter>"
-	str = str .. strfill_left("Ğ¡×é½±Àø:<color=yellow>"..n_point.."<color>", n_width+21).."Õ½¶·»ıÀÛÊ±¼ä:<color=yellow>"..n_time.."<color>Ãë <enter>"
+	str = str .. strfill_center(str_mtype.." nhãm [<color=yellow>"..str_lgname.."<color>]", 53+21, "-")
+	str = str .. strfill_left("°Bao gåm <color=yellow>"..n_memcount.."<color> thµnh viªn ", n_width+21).."<color=cyan>"..str_mem.."<color><enter>"
+	str = str .. strfill_left("§· tham gia <color=yellow>"..n_total.."<color> trËn:", n_width+21).." chiÕn th¾ng<color=yellow>"..n_win.."<color>trËn/hßa<color=yellow>"..n_tie.."<color>trËn/thua<color=yellow>"..n_lose.."<color>trËn<enter>"
+	str = str .. strfill_left("",n_width).."Tû lÖ th¾ng <color=yellow>"..strsub(f_rate,1,4).."<color> %<enter>"
+	str = str .. strfill_left("§iÓm th­ëng nhãm: <color=yellow>"..n_point.."<color>", n_width+21).." thêi gian chiÕn ®Êu tİch lòy: <color=yellow>"..n_time.."<color> gi©y <enter>"
 	str = str .. ""..strfill_center("<<  <color=yellow>"..str_rank.."<color>  >>", 53+21).."<color>"
 	wlls_descript(str)
 end
@@ -164,7 +164,7 @@ function wlls_help(n_type, n_level, n_id)
 			tb_option[getn(tb_option)+1] = tb[i][n_level][1].."/#wlls_help("..n_type..","..n_level..","..i..")"
 		end
 	end
-	tb_option[getn(tb_option)+1] = "ÎÒÃ÷°×ÁË!/OnCancel"
+	tb_option[getn(tb_option)+1] = "Ta biÕt råi!/OnCancel"
 	wlls_descript("<enter>"..strfill_center(" ( "..tb[n_id][n_level][1]..") ", 52).."<enter>"..tb[n_id][n_level][2], tb_option)
 end
 
@@ -175,7 +175,7 @@ function wlls_descript(str, ...)
 		arg = arg[1]
 	end
 	if (getn(arg) <= 0) then
-		Describe(str, 1, "½áÊø¶Ô»°/OnCancel")
+		Describe(str, 1, "Kh«ng cÇn/OnCancel")
 	else
 		Describe(str, getn(arg), arg)
 	end
@@ -204,7 +204,7 @@ end
 
 --Ìí¼Ó²éÑ¯¡¢°ïÖúÑ¡Ïî
 function wlls_add_option(tb, str)
-	tb[getn(tb)+1] = "ÎÒÏë¼ì²éÄ¿Ç°ÁªÈüÇé¿ö/wlls_query"
+	tb[getn(tb)+1] = "Ta muèn kiÓm tra t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query"
 	local n_type = GetGlbValue(GLB_WLLS_TYPE)
 	local n_next = GetGlbValue(GLB_WLLS_NEXT)
 	local n_mtype, _, n_map = wlls_get_mapinfo()
@@ -215,10 +215,10 @@ function wlls_add_option(tb, str)
 		n_level = wlls_getcityinfo()
 	end
 	if (n_type == n_next) then
-		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. "ÁªÈü°ïÖú/#wlls_help("..n_type..","..n_level..",1)"
+		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. " hç trî thi ®Êu/#wlls_help("..n_type..","..n_level..",1)"
 	else
-		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. WLLS_TAB[n_type].name .. "ÁªÈü°ïÖú/#wlls_help("..n_type..","..n_level..",1)"
-		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. WLLS_TAB[n_next].name .. "ÁªÈü°ïÖú/#wlls_help("..n_next..","..n_level..",1)"
+		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. WLLS_TAB[n_type].name .. " hç trî thi ®Êu/#wlls_help("..n_type..","..n_level..",1)"
+		tb[getn(tb)+1] = WLLS_LEVEL_DESC[n_level] .. WLLS_TAB[n_next].name .. " hç trî thi ®Êu/#wlls_help("..n_next..","..n_level..",1)"
 	end
 	--if (n_map == 1) then
 	--	tb[getn(tb)+1] = "ÎÒÒªÀë¿ª»á³¡/wlls_want2transback"

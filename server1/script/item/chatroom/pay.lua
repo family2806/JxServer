@@ -1,19 +1,19 @@
 MONEY_ADDLIFETIME = 1000000
 
 function main()
-	Say("ÁÄÌìÊÒ"..",".."ÇëÉèÖÃĞÕÃû ".."!", 2, "¿ÉÒÔ£¬ÎÒÊäÈë/pay_chatroom_enter","½áÊø¶Ô»°/OnCancel");
+	Say("ThÎ cho phßng t¸n gÉu"..",".."Xin ®Æt tªn ".."!", 2, "§­îc th«i! §Ó ta nhËp vµo/pay_chatroom_enter","KÕt thóc ®èi tho¹i/OnCancel");
 	return 1;
 end
 
 function pay_chatroom_enter()
-	AskClientForString("pay_chatroom_time", "", 1, 20, "ÇëÊäÈëÁÄÌìÊÒÃû×Ö"); 
+	AskClientForString("pay_chatroom_time", "", 1, 20, "Xin ®Æt tªn "); 
 end
 
 function pay_chatroom_time(roomname)
 
-	-- ÁÄÌìÊÒ³äÖµ²»ĞèÒª½»·Ñ
+	-- ThÎ cho phßng t¸n gÉu³äÖµ²»ĞèÒª½»·Ñ
 	if (ChatRoom_FindRoom(roomname) == 0) then
-		Msg2Player("<#>ÁÄÌìÊÒ" .. roomname .. "²»´æÔÚ")
+		Msg2Player("<#>tªn " .. roomname .. "nµy kh«ng tån t¹i")
 	else
 		ChatRoom_AddTime(roomname)
 	end

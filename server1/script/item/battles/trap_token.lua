@@ -9,77 +9,77 @@ function EatMedicine(nItemIdx)
 	local n_lasttime = GetTaskTemp(113);
 	
 	if (ST_IsRideHorse() == 1) then
-		Msg2Player("ÆïÂí²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·!")
+		Msg2Player("C­ìi ngùa kh«ng thÓ sö dông vËt phÈm nµy!")
 		return -1
 	end;
 	
 	if (n_curtime <= n_lasttime) then
-		Msg2Player("1Ãëºó²ÅÄÜ¼ÌĞøÊ¹ÓÃ!")
+		Msg2Player("1 gi©y sau míi cã thÓ tiÕp tôc sö dông!")
 		return -1
 	end;
 	
 	if(detail == 393) then --´©ĞÄÁî
 		if ( GetLevel() >= 40 and GetLevel() <= 79) then
 			CastSkill( 343,7);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö´©ĞÄÁî");
+			Msg2Player("B¹n ®· sö dông 1 Xuyªn T©m LÖnh");
 		elseif ( GetLevel() >= 80 and GetLevel() <= 119) then
 			CastSkill( 343,9);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö´©ĞÄÁî");
+			Msg2Player("B¹n ®· sö dông 1 Xuyªn T©m LÖnh");
 		else
 			CastSkill( 343,14);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö´©ĞÄÁî");
+			Msg2Player("B¹n ®· sö dông 1 Xuyªn T©m LÖnh");
 		end
 	end
 	
 	if(detail == 394) then --¶¾´ÌÁî
 		if ( GetLevel() >= 40 and GetLevel() <= 79) then
 			CastSkill( 303,5);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö¶¾´ÌÁî");
+			Msg2Player("B¹n ®· sö dông 1 §éc Thø LÖnh");
 		elseif ( GetLevel() >= 80 and GetLevel() <= 119) then
 			CastSkill( 303,8);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö¶¾´ÌÁî");
+			Msg2Player("B¹n ®· sö dông 1 §éc Thø LÖnh");
 		else
 			CastSkill( 303,12);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö¶¾´ÌÁî");
+			Msg2Player("B¹n ®· sö dông 1 §éc Thø LÖnh");
 		end
 	end	
 
 	if(detail == 395) then --º®±ùÁî
 		if ( GetLevel() >= 40 and GetLevel() <= 79) then
 			CastSkill(345 ,7);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öº®±ùÁî");
+			Msg2Player("B¹n ®· sö dông 1 Hµn B¨ng LÖnh");
 		elseif ( GetLevel() >= 80 and GetLevel() <= 119) then
 			CastSkill(345 ,9);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öº®±ùÁî");
+			Msg2Player("B¹n ®· sö dông 1 Hµn B¨ng LÖnh");
 		else
 			CastSkill( 345,14);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öº®±ùÁî");
+			Msg2Player("B¹n ®· sö dông 1 Hµn B¨ng LÖnh");
 		end
 	end
 	
 	if(detail == 396) then --µØ»ğÁî
 		if ( GetLevel() >= 40 and GetLevel() <= 79) then
 			CastSkill( 347,7);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öµØ»ğÁî");
+			Msg2Player("B¹n ®· sö dông 1 §Şa Háa LÖnh");
 		elseif ( GetLevel() >= 80 and GetLevel() <= 119) then
 			CastSkill( 347,9);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öµØ»ğÁî");
+			Msg2Player("B¹n ®· sö dông 1 §Şa Háa LÖnh");
 		else
 			CastSkill( 347,14);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öµØ»ğÁî");
+			Msg2Player("B¹n ®· sö dông 1 §Şa Háa LÖnh");
 		end
 	end
 	
 	if(detail == 397) then --À×»÷Áî
 		if ( GetLevel() >= 40 and GetLevel() <= 79) then
 			CastSkill( 349,7);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öÀ×»÷Áî");
+			Msg2Player("B¹n ®· sö dông 1 L«i Kİch LÖnh");
 		elseif ( GetLevel() >= 80 and GetLevel() <= 119) then
 			CastSkill( 349,9);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öÀ×»÷Áî");
+			Msg2Player("B¹n ®· sö dông 1 L«i Kİch LÖnh");
 		else
 			CastSkill( 349,14);	
-			Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öÀ×»÷Áî");
+			Msg2Player("B¹n ®· sö dông 1 L«i Kİch LÖnh");
 		end
 	end		
 	
@@ -87,11 +87,11 @@ function EatMedicine(nItemIdx)
 	
 	if ((n_param) >= SJ_TRAPITEM_COUNT) then
 		RemoveItemByIndex(nItemIdx)
-		Msg2Player("<#> "..s_name.."<#> ÒÑÊ¹ÓÃ"..SJ_TRAPITEM_COUNT.."<#> ´Î£¬²»ÄÜÔÙÊ¹ÓÃÁË!")
+		Msg2Player("<#> "..s_name.."<#> ®· sö dông"..SJ_TRAPITEM_COUNT.."<#> lÇn, kh«ng thÓ dïng ®­îc n÷a!")
 	else
 		SetSpecItemParam(nItemIdx,1,n_param)
 		SyncItem(nItemIdx)
-		Msg2Player("<#> "..s_name.."<#> »¹¿ÉÒÔÊ¹ÓÃ"..(SJ_TRAPITEM_COUNT - n_param).."<#> ´Î")
+		Msg2Player("<#> "..s_name.."<#> cßn cã thÓ sö dông"..(SJ_TRAPITEM_COUNT - n_param).."<#> lÇn")
 	end
 	return -1
 end
@@ -99,7 +99,7 @@ end
 function GetDesc( nItemIdx )
 	local szDesc = ""
 	local n_param = tonumber(GetItemParam( nItemIdx, 1 ))
-	szDesc = szDesc..format("\n¿ÉÒÔÊ¹ÓÃ<color=yellow>%d<color>´Î", (SJ_TRAPITEM_COUNT - n_param));
+	szDesc = szDesc..format("\nCã thÓ sö dông<color=yellow>%d<color>lÇn", (SJ_TRAPITEM_COUNT - n_param));
 	return szDesc;
 end
 

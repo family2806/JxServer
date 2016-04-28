@@ -15,7 +15,7 @@ local _GetFruit = function(nNpcIdx, dwNpcId)
 	end
 	
 	-- ¼ì²éÊÇ·ñÓĞÊ³Îï
-	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2866,1,0,0},},1,"ÄãÃ»ÓĞÊ³Îï£¬²»ÄÜÑøÍÃ×Ó") ~= 1) then 
+	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2866,1,0,0},},1,"B¹n kh«ng cã thøc ¨n, kh«ng thÓ nu«i thá.") ~= 1) then 
 		return 
 	end
 	
@@ -24,12 +24,12 @@ local _GetFruit = function(nNpcIdx, dwNpcId)
 		
 	DelNpc(nNpcIdx)
 	pActivity.tbNpc[nNpcIdx] = nil
-	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,2865,1,0,0}, nExpiredTime=20110630}, "»ñµÃÍÃÃ«", 1);	
+	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,2865,1,0,0}, nExpiredTime=20110630}, "NhanDuocLongTho", 1);	
 end
 
 
 local _OnBreak = function()
-	Msg2Player("ÍÃ×ÓÃ»³ÔÍêÊ³Îï.")
+	Msg2Player("Thá ch­a ¨n hÕt thøc ¨n.")
 end
 
 
@@ -42,7 +42,7 @@ function main()
 	end
 	
 	-- ¼ì²éÊÇ·ñÓĞÊ³Îï
-	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2866,1,0,0},},1,"ÄãÃ»ÓĞÊ³Îï£¬²»ÄÜÑøÍÃ×Ó") ~= 1) then 
+	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2866,1,0,0},},1,"B¹n kh«ng cã thøc ¨n, kh«ng thÓ nu«i thá.") ~= 1) then 
 		return 
 	end
 
@@ -54,6 +54,6 @@ function OnTimer(nNpcIndex, nTimeOut)
 	DelNpc(nNpcIndex);
 	strPlayerName = pActivity.tbNpc[nNpcIndex]
 	if strPlayerName then
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."ÎäÁÖ´«ÆæÉúÈÕ".."\tQuanThoiGianThoBienMat".."\tThoCuaNguoiChoi"..strPlayerName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."SinhNhatVoLamTruyenKy".."\tQuanThoiGianThoBienMat".."\tThoCuaNguoiChoi"..strPlayerName)
 	end
 end

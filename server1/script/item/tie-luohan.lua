@@ -27,10 +27,10 @@ function main(sel)
 		{3611636,5}
 	}
 	msg={
-		"Äã¶Ô×ÅÌúÂŞººÑĞÏ°ÁË°ëÌì£¬½á¹û»ñµÃÒ»Ğ©ÊµÕ½¾­Ñé¡£",
-		"Äã¶Ô×ÅÌúÂŞººÑĞÏ°ÁË°ëÌì£¬½á¹û»ñµÃ²»ÉÙÊµÕ½¾­Ñé¡£",
-		"Äã¶Ô×ÅÌúÂŞººÑĞÏ°ÁË°ëÌì£¬½á¹ûÃ»ÓĞ»ñµÃÈÎºÎĞ§¹û¡£",
-		"Äã¶Ô×ÅÌúÂŞººÑĞÏ°ÁË°ëÌì£¬½á¹û»ñµÃÁËÉÙĞí¾­Ñé¡£",
+		"B¹n ®Êu víi ThiÕt La H¸n h¬n nöa ngµy, kÕt qu¶ ®· thu ®­îc mét sè kinh nghiÖm thùc tiÔn chiÕn ®Êu ",
+		"B¹n ®Êu víi ThiÕt La H¸n h¬n nöa ngµy, kÕt qu¶ ®· thu ®­îc mét sè kinh nghiÖm thùc tiÔn chiÕn ®Êu ",
+		"B¹n cïng víi ThiÕt La H¸n ®èi luyÖn h¬n nöa ngµy, kÕt qu¶ kh«ng thu ®­îc hiÖu qu¶ g× ",
+		"§¹i hiÖp ®· thu ®­îc kinh nghiÖm cao nhÊt tõ ho¹t ®éng nµy.",
 	}
 	local nDate = tonumber(GetLocalDate("%m%d"))
 	if ( GetTask(TASKIDDAY) ~= nDate ) then

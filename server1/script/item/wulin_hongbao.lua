@@ -29,7 +29,7 @@ function wl_award_hongbao_item( item )
 	else
 		print( "error!!!the award table is wrong!!!!!!!!!!!" )
 	end
-	Msg2Player("¹§Ï²£¬Äã»ñµÃÁË"..name)
-	Say("¹§Ï²Äã»ñµÃÁË<color=yellow>"..name.."<color>£¡", 0)
-	WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName().."£¬´ÓÎäÁÖ´ó»áºì°üÖĞµÃµ½  "..name)
+	Msg2Player("Chóc mõng, b¹n nhËn ®­îc"..name)
+	Say("Chóc mõng b¹n nhËn ®­îc <color=yellow>"..name.."<color>!", 0)
+	WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", tõ vâ l©m ®¹i hång bao nhËn ®­îc"..name)
 end

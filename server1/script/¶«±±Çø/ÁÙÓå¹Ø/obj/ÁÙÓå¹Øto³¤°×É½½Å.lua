@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("到达长白山脚下", 0)
+Say(" n ch﹏ n骾 Trng B筩h ", 0)
 
 end;

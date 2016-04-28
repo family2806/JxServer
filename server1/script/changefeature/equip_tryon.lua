@@ -51,7 +51,7 @@ function tbEquipTryOn:DailogMenu(nPage)
 		nEnd = nTotalCount
 	end
 
-	local szTitle = format("ÕıÔÚ¿´ÍâĞÎ %d~%d", nStart, nEnd)
+	local szTitle = format("§ang xem thö ngo¹i h×nh tõ %d~%d", nStart, nEnd)
 	local tbOpt = {}
 	
 	
@@ -66,14 +66,14 @@ function tbEquipTryOn:DailogMenu(nPage)
 	end
 	
 	if nStart > 1 then
-		tinsert(tbOpt, {"ÉÏÒ»Ò³", self.DailogMenu, {self, nPage - 1}})
+		tinsert(tbOpt, {"Trang tr­íc", self.DailogMenu, {self, nPage - 1}})
 	end
 	
 	if nEnd < nTotalCount then
-		tinsert(tbOpt, {"ÏÂÒ»Ò³ ", self.DailogMenu, {self, nPage + 1}})
+		tinsert(tbOpt, {"Trang kÕ ", self.DailogMenu, {self, nPage + 1}})
 	end
 	
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -89,12 +89,12 @@ function tbEquipTryOn:TryOnDailog(nIdx)
 	
 	self:TryOn(tbData[nIdx].nFeature)
 	
-	local szTitle = format("¸óÏÂ¾õµÃÈçºÎ£¿ÂúÒâÂğ£¿ÏëÁ·Ï°´ËÍâĞÎĞèÒª<color=yellow>%d<color> ¾«Á¶Ê¯.", tbData[nIdx].nPrice)
+	local szTitle = format("C¸c h¹ c¶m thÊy thÕ nµo? Cã võa lßng kh«ng? Muèn luyÖn ngo¹i h×nh nµy cÇn <color=yellow>%d<color> tinh lùc.", tbData[nIdx].nPrice)
 	local nPage = ceil(nIdx/self.nCountPerPage)
 	local tbOpt = 
 	{
-		{"ºÜºÏÊÊ£¬¿ì¸øÎÒ×ö.", self.GiveEquip, {self, nIdx}},
-		{"ÈÃÎÒÔÙ¿´¿´.", self.DailogMenu, {self, nPage}}
+		{"RÊt võa vÆn, h·y lµm nhanh cho ta.", self.GiveEquip, {self, nIdx}},
+		{"§Ó ta xem l¹i.", self.DailogMenu, {self, nPage}}
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -136,13 +136,13 @@ end
 
 function tbEquipTryOn:GiveEquip(nIdx)
 	
-	g_GiveItemUI("¸ü»»×°±¸ÍâĞÎ","Çë½øÈëĞèÒª¸ü»»µÄ×°±¸", {self.Proc, {self, nIdx}})
+	g_GiveItemUI("Thay ®æi ngo¹i h×nh trang bŞ","Xin h·y bá vµo trang bŞ cÇn thay ®æi ngo¹i h×nh", {self.Proc, {self, nIdx}})
 	
 end
 
 function tbEquipTryOn:Proc(nIdx, nCount)
 	if nCount ~= 1 then
-		Talk(1, "", "Ö»ÄÜ»»Ò»¼şĞèÒª¸ü»»µÄ×°±¸.")
+		Talk(1, "", "ChØ ®­îc bá 1 mãn trang bŞ cÇn thay ®æi ngo¹i h×nh.")
 		return
 	end
 	
@@ -153,7 +153,7 @@ function tbEquipTryOn:Proc(nIdx, nCount)
 	
 	local pData =  tbData[nIdx]
 	if not pData then
-		Talk(1, "", "Ñ¡ÔñÍâĞÎ´íÎó.")
+		Talk(1, "", "Chän ngo¹i h×nh lçi.")
 		return 
 	end
 	
@@ -172,7 +172,7 @@ function tbEquipTryOn:Proc(nIdx, nCount)
 --	end
 
 	if GetEnergy() < nCount then
-		Talk(1, "", format("¸óÏÂÒÀÈ»Ã»ÓĞ´ø¹»¾«Á¶Ê¯£¬ĞèÒª %d ¾«Á¶Ê¯", nCount))
+		Talk(1, "", format("C¸c h¹ vÉn ch­a mang ®ñ tinh lùc, cÇn %d tinh lùc", nCount))
 		return
 	end
 	
@@ -182,7 +182,7 @@ function tbEquipTryOn:Proc(nIdx, nCount)
 	
 	if pData.nFeature then
 		self:InjectToItem(nItemIndex, pData.nFeature)
-		Msg2Player(format("×°±¸ÍâĞÎ %s ÒÑ¸ü»»", GetItemName(nItemIndex)))
+		Msg2Player(format("Ngo¹i h×nh trang bŞ %s ®· ®­îc ®æi", GetItemName(nItemIndex)))
 	end
 	
 end
@@ -199,7 +199,7 @@ function tbEquipTryOn:AskFeatureNo()
 	
 	
 	local nMaxCount = getn(tbData)
-	g_AskClientNumberEx(1, nMaxCount, "ÇëÑ¡ÔñÍâĞÎºÅ", {self.GiveEquip, {self}})
+	g_AskClientNumberEx(1, nMaxCount, "Xin h·y chän sè hiÖu ngo¹i h×nh", {self.GiveEquip, {self}})
 end
 
 

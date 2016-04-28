@@ -1,14 +1,14 @@
 Include("\\script\\lib\\awardtemplet.lua")
 jijielibao_tbItemList =
 {
-	{szName="Çì×£", tbProp={6, 1, 1752,1,0,0}},
-	{szName="ÎäÁÖ´«Ææ", tbProp={6, 1, 1753,1,0,0}},
+	{szName="Kh¸nh chóc", tbProp={6, 1, 1752,1,0,0}},
+	{szName="VLTK", tbProp={6, 1, 1753,1,0,0}},
 	{szName="3", tbProp={6, 1, 1754,1,0,0}},
-	{szName="Ëê", tbProp={6, 1, 1755,1,0,0}},
-	{szName="·ç", tbProp={6, 1, 1756,1,0,0}},
-	{szName="»ğ", tbProp={6, 1, 1757,1,0,0}},
-	{szName="Á¬", tbProp={6, 1, 1758,1,0,0}},
-	{szName="³Ç", tbProp={6, 1, 1759,1,0,0}},
+	{szName="Tuæi", tbProp={6, 1, 1755,1,0,0}},
+	{szName="Phong", tbProp={6, 1, 1756,1,0,0}},
+	{szName="Háa", tbProp={6, 1, 1757,1,0,0}},
+	{szName="Liªn", tbProp={6, 1, 1758,1,0,0}},
+	{szName="thµnh ", tbProp={6, 1, 1759,1,0,0}},
 }
 jijielibao_tbItemRate = 
 
@@ -25,7 +25,7 @@ function main(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	local nLevel = GetLevel();
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯Ê§È¥.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
@@ -37,7 +37,7 @@ function main(nItemIndex)
 	for i = 1, getn(tbItemList) do
 		tbItemList[i].nRate = tbItemRate[i]
 	end
-	tbAwardTemplet:GiveAwardByList(tbItemList, "¼¾½ÚÀñ°ü"..nId)
+	tbAwardTemplet:GiveAwardByList(tbItemList, "Tø Quı Hû Bao"..nId)
 	return 0
 end
 
@@ -46,7 +46,7 @@ function GetDesc(nItemIndex)
 	local nMonth	= 07
 	local nDay		= 13
 	if nYear == 0 and nMonth == 0 and nDay == 0 then
-		return "<color=red>ÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ<color>"
+		return "<color=red>VËt phÈm nµy ®· qu¸ h¹n sö dông<color>"
 	end
-	return format("<color=green>Ê¹ÓÃÆÚÏŞ: %d-%d-%d<color>",nDay, nMonth, nYear)
+	return format("<color=green>Thêi h¹n sö dông: %d-%d-%d<color>",nDay, nMonth, nYear)
 end

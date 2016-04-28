@@ -35,16 +35,16 @@ tbTreeMap = {
 }
 
 tbTreeName = {
-	[1] = "Ç§ËêÆ½°²",
-	[2] = "Ç§ËêĞÒ¸£",
-	[3] = "Ç§ËêĞËÍú",
-	[4] = "Ç§Ëê²ÆÂ»",
-	[5] = "Ç§ËêÇ§Äê",
-	[6] = "Ç§ËêĞÒÔË",
-	[7] = "Ç§ËêÔÂÉñ",
-	[8] = "Ç§Ëê²»ËÀ",
-	[9] = "Ç§Ëê»Æ½ğ",
-	[10] = "Ç§Ëê°×½ğ",
+	[1] = "Thiªn TuÕ An Lµnh",
+	[2] = "Thiªn TuÕ H¹nh Phóc",
+	[3] = "Thiªn TuÕ ThŞnh V­îng",
+	[4] = "Thiªn TuÕ Tµi Léc",
+	[5] = "Thiªn TuÕ Ngµn N¨m",
+	[6] = "Thiªn TuÕ May M¾n",
+	[7] = "Thiªn TuÕ NguyÖt ThÇn",
+	[8] = "Thiªn TuÕ BÊt Tö",
+	[9] = "Thiªn TuÕ Hoµng Kim",
+	[10] = "Thiªn TuÕ B¹ch Kim",
 }
 tbTreeRate = {
 	[1] = 50,
@@ -155,27 +155,27 @@ end
 
 function tbSeed:Check()
 	if (tbSeed:InMapList(tbTreeMap) == 0 or GetFightState() == 1) then
-		Say("Ö»ÄÜÔÚ³ÇÊĞ·ÇÕ½¶·ÇøºÍÅ©´åÖÖÇ§ËêÊ÷!")
+		Say("ChØ ®­îc trång c©y thiªn tuÕ t¹i n¬i phi chiÕn ®Êu thµnh thŞ, t©n thñ th«n!")
 		return 0
 	end
 
 	if (offlineCheckPermitRegion() == 0) then
-		Say("²»ÄÜÔÚ³µ·ò¸½½üÒÔ¼°ÈË¶àµÄµØ·½ÖÖÊ÷")
+		Say("Kh«ng ®­îc trång c©y thiªn tuÕ t¹i nh÷ng n¬i gÇn xa phu hoÆc xung quanh nh÷ng n¬i ®«ng ng­êi")
 		return 0
 	end
 		local mate_name = GetName()
 		if (IsCharged() == 0) then
 			PlayerIndex = player
-			Say(format("%s ²»ËÀ³äÖµÕËºÅ", mate_name))
+			Say(format("%s kh«ng ph¶i lµ tµi kho¶n ®· n¹p thÎ!", mate_name))
 			return 0
 		elseif (GetLevel() < 50) then
-			Say(format("ÈËÎï %s ²»×ã50¼¶!", mate_name))
+			Say(format("Nh©n vËt %s ch­a ®ñ cÊp 50!", mate_name))
 			return 0
 --		elseif (tbSeed:GetPlantCount() >= 4) then
---			Say(format("½ñÌì%s ÒÑ¾­²Î¼Ó¹»4´ÎÁË!", mate_name))
+--			Say(format("H«m nay %s ®· tham gia ®ñ 4 lÇn råi!", mate_name))
 --			return 0
 		elseif (tbVNG_BitTask_Lib:isMaxBitTaskValue(tbTaskInfo) == 1) then
-			Talk(1, "", "ÖÖÊ÷ÒÑ´ïÉÏÏŞ£¬²»ÄÜÔÙÖÖÁË")
+			Talk(1, "", "Trång c©y ®· ®¹t giíi h¹n, kh«ng thÓ trång thªm")
 			return 0
 		end
 	return 1
@@ -205,7 +205,7 @@ function tbSeed:Grow(Kind)
 	tbSeed:AddPlantCount()
 	if (Kind == 7 or Kind == 8 or Kind == 9 or Kind == 10) then
 		local handle = OB_Create()
-		local msg = format("¹§Ï²¸ßÊÖ <color=yellow>%s<color> ÒÑ³É¹¦ÖÖ<color=yellow>%s<color>!", GetName(), tbTreeName[Kind])
+		local msg = format("Chóc mõng cao thñ <color=yellow>%s<color> ®· trång thµnh c«ng <color=yellow>%s<color>!", GetName(), tbTreeName[Kind])
 		local _, nTongID = GetTongName()
 		Msg2Tong(nTongID, msg)
 		ObjBuffer:PushObject(handle, msg)
@@ -258,9 +258,9 @@ function tbTree:New(Kind, Members)
 	tb.Npc = AddNpc(tbMaintainInfo[1].Npc, 1, pos[1], pos[2], pos[3], 1, tb.Name)
 	if (tb.Npc > 0) then
 		SetNpcScript(tb.Npc, SCRIPT_TREE)
-		tbLog:PlayerActionLog(LOG_HEAD, "ÖÖÊ÷³É¹¦", tb.Name, pos[1]..", "..pos[2]..", "..pos[3])	
+		tbLog:PlayerActionLog(LOG_HEAD, "TrongCayThanhCong", tb.Name, pos[1]..", "..pos[2]..", "..pos[3])	
 	else
-		tbLog:PlayerActionLog(LOG_HEAD, "ÖÖÊ÷Ê§°Ü", tb.Name)
+		tbLog:PlayerActionLog(LOG_HEAD, "TrongCayThatBai", tb.Name)
 		return nil
 	end
 
@@ -277,7 +277,7 @@ end
 function tbTree:Dialog()
 	local name = GetName()
 	if (self.Team:FindMember(name) == 0) then
-		Say("Õâ²»ÊÇ¸óÏÂµÄÇ§ËêÊ÷")
+		Say("§©y kh«ng ph¶i lµ c©y thiªn tuÕ cña c¸c h¹.")
 	else
 		self.State:Dialog()
 	end
@@ -324,33 +324,33 @@ end
 
 tbMaintainInfo = {
 	[1] = {
-		Dlg = "¸øÇ§ËêÊ÷Ê©·Ê",
-		Msg = "Çë¸øÇ§ËêÊ÷Ê©·Ê",
-		Err = "´óÏÀÒÑ¾­¸øÊ÷Ê©·ÊÁË",
+		Dlg = "Bãn ph©n cho c©y thiªn tuÕ",
+		Msg = "H·y tiÕn hµnh bãn ph©n cho c©y thiªn tuÕ",
+		Err = "§¹i hiÖp ®· bãn ph©n cho c©y råi",
 		Npc = 1529,
 		},
 	[2] = {
-		Dlg = "¸øÇ§ËêÊ÷½½Ë®",
-		Msg = "Çë¸øÇ§ËêÊ÷½½Ë®",
-		Err = "´óÏÀÒÑ¾­¸øÊ÷½½Ë®ÁË.",
+		Dlg = "T­íi n­íc cho c©y thiªn tuÕ",
+		Msg = "H·y tiÕn hµnh t­íi n­íc cho c©y thiªn tuÕ",
+		Err = "§¹i hiÖp ®· t­íi n­íc cho c©y råi.",
 		Npc = 1530,
 		},
 	[3] = {
-		Dlg = "¸øÊ÷³ı²İ ",
-		Msg = "Çë¸øÊ÷³ı²İ ",
-		Err = "´óÏÀÒÑ¾­¸øÊ÷³ı²İÁË",
+		Dlg = "DiÖt cá d¹i cho c©y",
+		Msg = "H·y tiÕn hµnh diÖt cá d¹i cho c©y",
+		Err = "§¹i hiÖp ®· diÖt cá cho c©y råi",
 		Npc = 1531,
 		},
 --	[4] = {
---		Dlg = "¸øÊ÷³ı³æ ",
---		Msg = "Çë¸øÊ÷³ı³æ ",
---		Err = "´óÏÀ¸øÊ÷³ı³æÁË",
+--		Dlg = "B¾t s©u cho c©y",
+--		Msg = "H·y tiÕn hµnh b¾t s©u cho c©y",
+--		Err = "§¹i hiÖp ®· b¾t s©u cho c©y råi",
 --		Npc = 1532,
 --		},
 	[4] = {
-		Dlg = "¸øÊ÷ĞŞÒ¶ ",
-		Msg = "Çë¸øÊ÷ĞŞÒ¶ ",
-		Err = "´óÏÀ¸øÊ÷ĞŞÒ¶ÁË",
+		Dlg = "TrÈy l¸ cho c©y",
+		Msg = "H·y tiÕn hµnh trÈy l¸ cho c©y",
+		Err = "§¹i hiÖp ®· trÈy l¸ råi",
 		Npc = {[1] = 1552, [2] = 1554, [3] = 1553, [4] = 1550, [5] = 1555, [6] = 1555, [7] = 1551, [8] = 1551, [9] = 1452, [10] = 1453,},
 		}
 }
@@ -369,10 +369,10 @@ function tbMaintainState:New(Tree)
 end
 
 function tbMaintainState:Dialog()
-	Say("ÕâÊÇÒ»¿ÃºÜÃÀµÄÇ§ÄêÊ÷",
+	Say("§©y lµ 1 c©y thiªn tuÕ thËt ®Ñp",
 		1,
 --		format("%s/select_tree", tbMaintainInfo[self.Step].Dlg),
-		"ÎÒÖ»À´Íæ/Cancel")
+		"Ta chØ ®Õn ch¬i/Cancel")
 end
 
 function tbMaintainState:NotifyTeam(Team)
@@ -399,12 +399,12 @@ function tbMaintainState:CaculateScore(Seconds)
 end
 
 function tbMaintainState:Process(Tree, Team, Name)
---	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2348,1,-1,0}},1,"ĞèÒª%d ĞşÌì´¸£¬´óÏÀ´øµÄÊıÁ¿²»¹»!") ~= 1) then
+--	if (PlayerFunLib:CheckItemInBag({tbProp={6,1,2348,1,-1,0}},1,"CÇn %d HuyÒn Thiªn Chïy, c¸c h¹ ®em kh«ng ®ñ sè l­îng!") ~= 1) then
 --		return
 --	end
 	
 	if (Team.MemberList[self.Turn] ~= Name) then
-		Say("ÒÀÈ»»¹Î´ÂÖµ½Äã£¬ÇëÔÙµÈÒ»ÏÂ")
+		Say("VÉn ch­a ®Õn l­ît, xin ®îi mét lóc n÷a")
 		return
 	elseif (self.OpFlag[Name] == 1) then
 		Say(tbMaintainInfo[self.Step].Err)
@@ -423,7 +423,7 @@ function tbMaintainState:Process(Tree, Team, Name)
 	-- ¸ø¶ÓÎé¼Ó·Ö
 	local add = tbMaintainState:CaculateScore(current - self.Time)
 	Team.Score = Team.Score + add
-	local msg = format("»ñµÃ %d µã£¬Ä¿Ç°×Ü·ÖÎª %d!", add, Team.Score)
+	local msg = format("NhËn ®­îc %d ®iÓm, hiÖn t¹i tæng ®iÓm lµ %d!", add, Team.Score)
 	Team:BroadCast(msg)
 	-- LOG
 	WriteLog(format("[%s %s]Tree[%d] add score(%d), total(%d)",
@@ -472,12 +472,12 @@ function tbAwardState:New()
 end
 
 function tbAwardState:Dialog()
---	Say("ÕâÊÇÒ»¿ÃºÜÃÀµÄÇ§ÄêÊ÷",
+--	Say("§©y lµ 1 c©y thiªn tuÕ thËt ®Ñp",
 --		2,
---		"ÎÒÏëÁì½±/select_tree",
---		"ÎÒÖ»À´Íæ/Cancel")
+--		"Ta muèn nhËn th­ëng/select_tree",
+--		"Ta chØ ®Õn ch¬i/Cancel")
 	if CalcFreeItemCellCount() <= 0 then
-		Talk(1, "", "ÇëÁôÏÂÒ»¸ö¿ÕÎ»ºó²ÅÄÜÁì½±")
+		Talk(1, "", "Xin h·y chõa mét « trèng trong hµnh trang råi míi nhËn th­ëng")
 		return
 	end
 	select_tree()
@@ -485,7 +485,7 @@ end
 
 function tbAwardState:Process(Tree, Team, Name)
 	if (self.AwardFlag[Name] == 1) then
-		Say("´óÏÀÒÑÁì½± ÁË")
+		Say("§¹i hiÖp ®· nhËn th­ëng råi")
 		return
 	end
 	
@@ -496,9 +496,9 @@ function tbAwardState:Process(Tree, Team, Name)
 	end
 --	if (exp > 0) then
 --		AddOwnExp(exp)
---		Team:BroadCast(format("%s ÒÑ»ñµÃ¾­Ñé½±ÀøÎª%d!", Name, exp))
+--		Team:BroadCast(format("%s ®· nhËn ®­îc phÇn th­ëng kinh nghiÖm lµ %d!", Name, exp))
 --	else
---		Say("ÕæÊÇÒÅº¶£¬´óÏÀÃ»ÓĞ½±Àø¡£ÇëÅ¬Á¦Å¶!")
+--		Say("Thµnh thËt ®¸ng tiÕc, ®¹i hiÖp kh«ng cã phÇn th­ëng nµo. Xin h·y nç lùc lÇn tíi!")
 --	end
 --	self.AwardFlag[Name] = 1
 end
@@ -508,7 +508,7 @@ function tbAwardState:GetAward(kind)
 end
 
 function tbAwardState:NotifyTeam(Team)
-	Team:BroadCast("<color=green>¹§Ï²´óÏÀÒÑÖÖµÃÃÀÀöµÄÇ§ËêÊ÷£¬Çë¿ìµãÀ´Áì½±.<color>")
+	Team:BroadCast("<color=green>Chóc mõng ®¹i hiÖp ®· trång ®­îc c©y thiªn tuÕ thËt ®Ñp, h·y nhanh ch©n ®Õn ®ã nhËn th­ëng.<color>")
 end
 
 function tbAwardState:NextState(Tree, Team)
@@ -530,7 +530,7 @@ function tbShowState:New()
 end
 
 function tbShowState:Dialog()
-	Say("ÕâÊÇÒ»¿ÃºÜÃÀµÄÇ§ÄêÊ÷")
+	Say("§©y lµ 1 c©y thiªn tuÕ thËt ®Ñp")
 end
 
 function tbShowState:Process(Tree, Team, Name)
@@ -538,7 +538,7 @@ function tbShowState:Process(Tree, Team, Name)
 end
 
 function tbShowState:NotifyTeam(Team)
-	Team:BroadCast("Áì½±Ê±¼ä½áÊø")
+	Team:BroadCast("Thêi gian nhËn th­ëng kÕt thóc")
 end
 
 function tbShowState:NextState(Tree, Team)

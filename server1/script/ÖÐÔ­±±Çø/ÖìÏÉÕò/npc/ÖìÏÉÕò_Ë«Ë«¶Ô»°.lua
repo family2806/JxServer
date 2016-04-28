@@ -9,55 +9,55 @@ Include("\\script\\global\\itemhead.lua")
 function main(sel)
 	UTask_world40 = GetTask(68)
 	if ((UTask_world40 == 0) and (GetLevel() >= 6)) then		--ÈÎÎñÆô¶¯
-		Say("ÎÒ°ÑÄïÁôÎÒµÄÊÖ»·Åª¶ªÁË£¬ÔõÃ´¶¼ÕÒ²»µ½£¬ÄÇ¿ÉÊÇÎÒ×îÏ²»¶µÄÊÖ»·.", 2, "ÎÒ°ïÄãÕÒ/yes", "ÕæÊÇÂé·³/no")
+		Say("TiÓu n÷ lµm mÊt chiÕc nhÉn mÑ ®Ó l¹i råi, t×m hoµi kh«ng thÊy, ®ã lµ chiÕc nhÉn tiÓu n÷ thİch nhÊt.", 2, "Ta sÏ gióp c« t×m nã. /yes", "ThËt lµ phiÒn phøc. /no")
 	elseif ((UTask_world40 == 3) and (HaveItem(191) == 1)) then		-- Íê³ÉÈÎÎñ
 		DelItem(191)
-		Talk(2,"finish_select","ÕâÊÇÄãµÄÊÖ»·Ã´?","ÊÇµÄ£¬Ì«Ğ»Ğ»ÄãÁË£¬ÇëÊÕÏÂÎÒµÄÒ»µãĞÄÒâ°É")
+		Talk(2,"finish_select","§©y cã ph¶i lµ nhÉn cña c« n­¬ng kh«ng?","§óng råi, thËt c¸m ¬n, xin h·y nhËn chót thµnh ı cña tiÓu n÷.")
 	elseif (UTask_world40 <= 3) then		-- ÈÎÎñÖĞµÄÆÕÍ¨¶Ô»°
-		Talk(1,"","Ï£Íû¿ÉÒÔÕÒ»ØÎÒµÄÊÖ»·. ")
+		Talk(1,"","Hy väng cã thÓ t×m l¹i ®­îc chiÕc nhÉn cña ta. ")
 	else
 		i = random(0,2)
 		if (i==0) then
-			Talk(1,"","ÄÇÊÇÎÒÄïÁô¸öÎÒµÄ£¬ÎÒºÜÏ²»¶")
+			Talk(1,"","§©y lµ chiÕc nhÉn do mÑ tiÓu n÷ ®Ó l¹i, tiÓu n÷ rÊt thİch nã.")
 		elseif (i==1) then
-			Talk(1,"","È¥ÄêÎÒÄïµÃ²¡¹ıÊÀÁË£¬Ö»ÁôÏÂÕâ¸öÊÖ»·.")
+			Talk(1,"","N¨m ngo¸i mÑ tiÓu n÷ l©m bÖnh qua ®êi, chØ ®Ó l¹i chiÕc nhÉn nµy th«i.")
 		else
-			Talk(1,"","Ğ¡Å®×ÓºÃÏëÄï°¡ ")
+			Talk(1,"","Hu hu hu! TiÓu n÷ nhí mÑ qu¸.")
 		end
 	end
 end;
 
 function yes()
 	SetTask(68,1)
-	Msg2Player("½ÓÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·. ")
-	AddNote("½ÓÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·. ")
+	Msg2Player("NhËn nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn. ")
+	AddNote("NhËn nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn. ")
 end;
 
 function no()
-	Talk(1,"","²»¶®ÊÖ»·¶ªÂäÔÚÄÄÀïÁË?")
+	Talk(1,"","¤i, kh«ng biÕt chiÕc nhÉn ®· r¬i ë ®©u?")
 end;
 
 function finish_select()
-	Say("ÕâÊÇ200Á½£¬ÇëÊÕÏÂ.", 2, "½ÓÊÜ. /finish_a","¾Ü¾ø /finish_b")
+	Say("§©y lµ 200 l­îng, xin h·y nhËn lÊy.", 2, "NhËn. /finish_a","Tõchèi /finish_b")
 end;
 
 function finish_a()
-	Talk(1,"","¶àĞ» ")
+	Talk(1,"","Xin ®a t¹.")
 	Earn(200)
 	SetTask(68,4)
 	AddRepute(7)
-	Msg2Player("Íê³ÉÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·£¬»ñµÃ200Á½°×Òø. ")
-	AddNote("Íê³ÉÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·£¬»ñµÃ200Á½°×Òø. ")
-	Msg2Player("ÄãµÄ½­ºşÃûÍûÔö¼Ó7µã")
+	Msg2Player("Hoµn thµnh nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn, lÊy ®­îc 200 l­îng b¹c. ")
+	AddNote("Hoµn thµnh nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn, lÊy ®­îc 200 l­îng b¹c. ")
+	Msg2Player("Danh tiÕng giang hå cña b¹n t¨ng thªm 7 ®iÓm ")
 end;
 
 function finish_b()
-	Talk(2,"","ÈËÔÚ½­ºş£¬»¥Ïà°ïÖúÊÇÓ¦¸ÃµÄ£¬Äã²»ÒªÌ«¿ÍÆø","ÄãÕæÊÇÒ»Î»ÏÀÒåÖ®Ê¿£¬Ğ¡Å®×ÓÓĞÒ»ÌõÅ£Æ¤Ñü´ø£¬ËÍ¸øÄã·ÀÉí°É .")
+	Talk(2,"","Ng­êi trªn giang hå gióp ®ì nhau lµ chuyÖn th­êng t×nh, C« n­¬ng kh«ng cÇn ph¶i kh¸ch khİ.","C¸c h¹ thËt lµ mét ng­êi hiÖp nghÜa, tiÓu n÷ cã mét chiÕc th¾t l­ng da sãi, xin tÆng c¸c h¹ ®Ó phßng th©n.")
 	SetTask(68,5)
 	AddRepute(9)
 	p1,p2,p3,p4,p5,p6 = RndItemProp(6,15)
 	AddItem(0,6,0,2,random(0,4),GetLucky(), p1,p2,p3,p4,p5,p6)
-	Msg2Player("Íê³ÉÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·£¬»ñµÃÒ»ÌõÅ£Æ¤Ñü´ø. ")
-	AddNote("Íê³ÉÈÎÎñ£º°ïÖúË«Ë«ÕÒµ½ÊÖ»·£¬»ñµÃÒ»ÌõÅ£Æ¤Ñü´ø. ")
-	Msg2Player("ÄãµÄÃûÍûÔö¼Ó9µã ")
+	Msg2Player("Hoµn thµnh nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn. LÊy ®­îc mét chiÕc th¾t l­ng da sãi. ")
+	AddNote("Hoµn thµnh nhiÖm vô: Gióp Song Song t×m l¹i chiÕc nhÉn. LÊy ®­îc mét chiÕc th¾t l­ng da sãi. ")
+	Msg2Player("Danh väng cña b¹n t¨ng thªm 9 ®iÓm ")
 end;

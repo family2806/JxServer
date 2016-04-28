@@ -49,7 +49,7 @@ function tbItem2Equip:Compose(nComposeCount, nProductId)
 	nFreeItemCellLimit = ceil(nFreeItemCellLimit * nComposeCount)
 	
 	if self.tbFormula.nWidth ~= 0 and self.tbFormula.nHeight ~= 0 and CountFreeRoomByWH(self.tbFormula.nWidth, self.tbFormula.nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("Îª±£»¤´óÏÀµÄ²Æ²ú°²È«, ÇëÕûÀí³ö %d %dx%d ±³°ü", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
 		return 0
 	end
 	
@@ -57,25 +57,25 @@ function tbItem2Equip:Compose(nComposeCount, nProductId)
 	
 	
 	if self:CheckMaterial(tbMaterial, nComposeCount) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄ²ÄÁÏ²»×ã!<!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
 
 	if self:ConsumeMaterial(tbMaterial, nComposeCount, self.szLogTitle) ~= 1 then
-		Msg2Player("ÖıÔìÊ§°Ü, ¶ªÊ§²¿·ÖÎïÆ·.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	
 	
 	
 	if self:ConsumeAdditive(nAdditiveCount) ~= 1 then
-		Msg2Player("ÖıÔìÊ§°Ü, ¶ªÊ§²¿·ÖÎïÆ·.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	
 	if random(1, 100) > nSuccessRate then
-		Msg2Player("Õæ¿ÉÏ§ÖıÔìÊ§°Ü")
+		Msg2Player("ThËt ®¸ng tiÕc chÕ t¹o ®· thÊt b¹i")
 		return 0
 	end
 	
@@ -89,16 +89,16 @@ end
 
 function tbItem2Equip:GiveUIOk(nCount)
 	if nCount < getn(self.tbFormula.tbMaterial) then
-		return Talk(1, "", self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÎïÆ·²»¹»!<color>")
+		return Talk(1, "", self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>")
 	end
 	
 	local nSuccessRate, nAdditiveCount = self:GetSuccessRate()
-	local szMsg = format("ÄãÒÑ·ÅÈë %d ¸ö %s, ³É¹¦ÂÊÊÇ%d%%, Òª¼ÌĞøÖıÔìÂğ?", nAdditiveCount, self.tbFormula.tbAdditive.szName, nSuccessRate)
+	local szMsg = format("Ng­¬i ®Æt vµo %d c¸i %s, tØ lÖ thµnh c«ng lµ %d%%, cã muèn tiÕp tôc chÕ t¹o kh«ng?", nAdditiveCount, self.tbFormula.tbAdditive.szName, nSuccessRate)
 	local tbOpt = 
 	{
-		{"¼ÌĞøÖıÔì", self.SelectEquip, {self, 1, 5}},
-		{"ÔÙ·ÅÒ»´Î", self.ComposeGiveUI, {self}},
-		{"È¡Ïû"},
+		{"TiÕp tôc chÕ t¹o", self.SelectEquip, {self, 1, 5}},
+		{"§Æt vµo lÇn n÷a", self.ComposeGiveUI, {self}},
+		{"Hñy bá "},
 	}
 	CreateNewSayEx(szMsg, tbOpt)
 end
@@ -106,12 +106,12 @@ end
 function tbItem2Equip:SelectEquip(nId, nCount)
 	
 	if self:CheckMaterial(self.tbFormula.tbMaterial, 1) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÎïÆ·²»¹»!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
 	local tbProduct = self.tbFormula.tbProduct
-	local szMsg = format("Ñ¡Ò»¸ö %s", tbProduct.szName)
+	local szMsg = format("Chon mét c¸i %s", tbProduct.szName)
 	local nProductCount = getn(tbProduct)
 	local nEndId = nCount + nId - 1
 	if nEndId > nProductCount then
@@ -122,33 +122,33 @@ function tbItem2Equip:SelectEquip(nId, nCount)
 		tinsert(tbOpt, {%tbRepresentName[i], self.Compose, {self, 1, i}})
 	end
 	if nId >= nCount + 1  then
-		tinsert(tbOpt, {"ÉÏÒ»Ò³", self.SelectEquip, {self, nId-nCount, nCount}})
+		tinsert(tbOpt, {"Trang tr­íc", self.SelectEquip, {self, nId-nCount, nCount}})
 	end
 	if nEndId < nProductCount then
-		tinsert(tbOpt, {"ÏÂÒ»Ò³", self.SelectEquip, {self, nId+nCount, nCount}})
+		tinsert(tbOpt, {"Trang kÕ ", self.SelectEquip, {self, nId+nCount, nCount}})
 	end
-	tinsert(tbOpt, {"È¡Ïû"})
+	tinsert(tbOpt, {"Hñy bá "})
 	CreateNewSayEx(szMsg, tbOpt)
 end
 
 
 tbCommonMaterial = 
 {
-	{szName="×Ïòş½ğÅÆ", tbProp={6, 1, 2765}, nCount = 1},
-	{szName="Çà¾ÔÊ¯", tbProp={6, 1, 2710}, nCount = 4},
-	{szName="ÔÆÂ¶Ê¯", tbProp={6, 1, 2711}, nCount = 3},
-	{szName="²ÔÀÇÊ¯", tbProp={6, 1, 2712}, nCount = 2},
-	{szName="ĞşÔ³Ê¯", tbProp={6, 1, 2713}, nCount = 1},
-	{szName="×ÏòşÁî", tbProp={6, 1, 2350}, nCount = 1},
+	{szName="Tö M·ng Kim Bµi", tbProp={6, 1, 2765}, nCount = 1},
+	{szName="Thanh C©u Th¹ch", tbProp={6, 1, 2710}, nCount = 4},
+	{szName="V©n Léc Th¹ch", tbProp={6, 1, 2711}, nCount = 3},
+	{szName="Th­¬ng Lang Th¹ch", tbProp={6, 1, 2712}, nCount = 2},
+	{szName="HuyÒn Viªn Th¹ch", tbProp={6, 1, 2713}, nCount = 1},
+	{szName="Tö M·ng LÖnh", tbProp={6, 1, 2350}, nCount = 1},
 }
 
 tbFormulaList = 
 {
 	[1] = 
 	{
-		szName = "×Ïòş¿ø",
+		szName = "Tö M·ng Kh«i",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×Ïòş¿øÍ¼Æ×", tbProp = {6,1,2714}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Kh«i", tbProp = {6,1,2714}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 2,
@@ -156,9 +156,9 @@ tbFormulaList =
 	},
 	[2] = 
 	{
-		szName = "×ÏòşÒÂ",
+		szName = "Tö M·ng Y",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÒÂÍ¼Æ×", tbProp = {6,1,2715}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Y", tbProp = {6,1,2715}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 3,
@@ -166,9 +166,9 @@ tbFormulaList =
 	},
 	[3] = 
 	{
-		szName = "×ÏòşĞ¬",
+		szName = "Tö M·ng Hµi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşĞ¬Í¼Æ×", tbProp = {6,1,2716}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Hµi", tbProp = {6,1,2716}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 2,
@@ -176,9 +176,9 @@ tbFormulaList =
 	},
 	[4] = 
 	{
-		szName = "×ÏòşÑü´ø",
+		szName = "Tö M·ng Yªu §¸i",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÑü´øÍ¼Æ×", tbProp = {6,1,2717}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Yªu §¸i", tbProp = {6,1,2717}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 1,
@@ -186,9 +186,9 @@ tbFormulaList =
 	},
 	[5] = 
 	{
-		szName = "×Ïòş»¤Íó",
+		szName = "Tö M·ng Hé UyÓn",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×Ïòş»¤ÍóÍ¼Æ×", tbProp = {6,1,2718}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Hé UyÓn", tbProp = {6,1,2718}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 2,
@@ -196,9 +196,9 @@ tbFormulaList =
 	},
 	[6] = 
 	{
-		szName = "×ÏòşÏîÁ´",
+		szName = "Tö M·ng H¹ng Liªn",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÏîÁ´Í¼Æ×", tbProp = {6,1,2719}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng H¹ng Liªn", tbProp = {6,1,2719}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 1,
@@ -206,9 +206,9 @@ tbFormulaList =
 	},
 	[7] = 
 	{
-		szName = "×ÏòşÅå",
+		szName = "Tö M·ng Béi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÅåÍ¼Æ×", tbProp = {6,1,2720}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Béi", tbProp = {6,1,2720}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 2,
@@ -216,9 +216,9 @@ tbFormulaList =
 	},
 	[8] = 
 	{
-		szName = "×ÏòşÉÏ½äÖ¸",
+		szName = "§å Phæ Tö M·ng Th­îng Giíi ChØ",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÉÏ½äÖ¸", tbProp = {6,1,2721}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Th­îng Giíi ChØ", tbProp = {6,1,2721}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 1,
@@ -226,9 +226,9 @@ tbFormulaList =
 	},
 	[9] = 
 	{
-		szName = "×ÏòşÏÂ½äÖ¸",
+		szName = "Tö M·ng H¹ Giíi chØ",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÏÂ½äÖ¸Í¼Æ×",tbProp = {6,1,2722}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp = {6,1,2722}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 1,
@@ -236,9 +236,9 @@ tbFormulaList =
 	},
 	[10] = 
 	{
-		szName = "×ÏòşÆ÷½ä",
+		szName = "Tö M·ng Khİ Giíi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "×ÏòşÆ÷½äÍ¼Æ×", tbProp = {6,1,2723}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "§å Phæ Tö M·ng Khİ Giíi", tbProp = {6,1,2723}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 4,
@@ -255,11 +255,11 @@ for i=1, getn(tbFormulaList) do
 	
 	local p = tbItem2Equip:new(tbFormulaList[i], "Item2Equip", INVENTORY_ROOM.room_giveitem)
 	p.bAccessBindItem = 1
-	local szOpt = format("ÖıÔì %s", tbFormulaList[i].tbProduct.szName)
+	local szOpt = format("ChÕ t¹o %s", tbFormulaList[i].tbProduct.szName)
 	tinsert(tbOpt, {szOpt, p.ComposeGiveUI, {p}})
 end
-tinsert(tbOpt, {"È¡Ïû"})
-nItem2EquipRegId = pEventType:Reg("³ÇÖĞÌú½³", "ÖıÔì×Ïòş×°±¸", CreateNewSayEx, {"Ñ¡ÔñÒªÖıÔìµÄ×°±¸", tbOpt})
+tinsert(tbOpt, {"Hñy bá "})
+nItem2EquipRegId = pEventType:Reg("Thî rÌn trong thµnh", "ChÕ t¹o  trang bŞ Tö M·ng", CreateNewSayEx, {"Lùa chän trang bŞ b¹n muèn chÕ t¹o", tbOpt})
 
 --?gm ds Include[[\script\event\equip_publish\zimang\item2equip.lua]]
 --?gm ds Include[[\script\lib\awardtemplet.lua]]

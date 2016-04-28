@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("ÕâÀïµÄ¾Æ¶¼ÊÇÃû¼Ò¾Æ£¬±£Ö¤¿Í¹ÙÂúÒâ£¡",0)
+Say("R­îu ë ®©y ®Òu thuéc hµng danh gia, b¶o ®¶m kh¸ch quan sÏ võa ı!",0)
 
 end;

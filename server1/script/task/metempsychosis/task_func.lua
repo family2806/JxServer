@@ -108,18 +108,18 @@ function check_zhuansheng_level()
 	local nlevel = GetLevel();
 	local ntranscount = ST_GetTransLifeCount();
 	if (ntranscount >= 5) then
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[7], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[7], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	
 	
 	if (not TB_LEVEL_REMAIN_PROP[nlevel] or not TB_LEVEL_LIMIT[ntranscount + 1]) then
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[5], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[5], "§­îc råi./OnCancel"});
 		return
 	end
 	
 	if (nlevel < TB_LEVEL_LIMIT[ntranscount + 1]) then
-		CreateTaskSay({"<dec><npc>"..format("ÔÚµÚ (%d)´Î×ªÉú, µÈ¼¶×îÉÙÒª%d!", (ntranscount + 1), TB_LEVEL_LIMIT[ntranscount + 1]), "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>"..format("T¹i lÇn chuyÓn sinh thø (%d), ®¼ng cÊp chİ İt còng ph¶i %d!", (ntranscount + 1), TB_LEVEL_LIMIT[ntranscount + 1]), "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end
 	

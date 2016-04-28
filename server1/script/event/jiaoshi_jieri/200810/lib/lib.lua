@@ -1,8 +1,8 @@
 function jiaoshi0810_TransferDigit2CnNum(nDigit)
 	local tbModelUnit = {
 		[1]	= "",
-		[2]	= "万",
-		[3] = " 亿", 	
+		[2]	= " v筺",
+		[3] = " tr╩ tri謚", 	
 	};
 	
 	local nDigitTmp = nDigit;	-- 临时变量,
@@ -20,7 +20,7 @@ function jiaoshi0810_TransferDigit2CnNum(nDigit)
 		nDigitTmp = -nDigit;
 	end
 	
-	-- 分别从个,万,亿三段考虑,因为nDigit的值小于1万亿,所以每一段都不超过4位
+	-- 分别从个, v筺,亿三段考虑,因为nDigit的值小于1 v筺亿,所以每一段都不超过4位
 	for i = 1, getn(tbModelUnit) do
 		szNumTmp	= "";
 		n4LenNum	= mod(nDigitTmp , 10000);

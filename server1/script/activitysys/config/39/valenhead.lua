@@ -23,29 +23,29 @@ ValenAct_tbNpcId = {1252, 1253, 1254, 1255,}
 ValenAct_nUnGrow = 0
 ValenAct_nGrowing = 1
 ValenAct_tbConfig = {
-	["Ãµ¹åÖÖ×Ó"] = {nTeamSize = 2, nItemIndex = 3109, nSexScore = 1, 
-		tbName = {"Ãµ¹åÅÌ", "Ğ¡Ãµ¹åÊ÷", "Ãµ¹åÊ÷Ã»ÓĞ¿ª»¨", "Ãµ¹åÊ÷¿ªÂú»¨", },
+	["H¹t Gièng Hoa Hång"] = {nTeamSize = 2, nItemIndex = 3109, nSexScore = 1, 
+		tbName = {"MÇm hoa hång", "C©y hoa hång nhá", "C©y hoa hång ch­a træ hoa", "C©y hoa hång në ®Çy hoa", },
 		tbDialog = {
-			"¾ıĞÄË¼ÎÒĞÄ",
-			"Ö´×ÓÖ®ÊÖ£¬Óë×Ó½ÔÀÏ.",
-			"´ËÇéÎŞ¼Æ¿ÉÏû³ı£¬²ÅÏÂÃ¼Í·,È´ÉÏĞÄÍ·.",
-			"ÎÒÔ¸Óë¾ıÏàÖª",
-			"Ô¸ÌìÏÂÓĞÇéÈËÖÕ³É¾ìÊô.",
+			"Qu©n T©m Tù Ng· T©m",
+			"ChÊp Tö Chi Thñ, D÷ Tö Giai L·o.",
+			"Thö T×nh V« KÕ Tiªu Trõ,Tµi H¹ Mao §Çu, Kh­íc Th­îng T©m §Çu.",
+			"Ng· NguyÖn D÷ Qu©n T­¬ng Tri",
+			"NguyÖn Thiªn H¹ H÷u T×nh Nh©n Chung Thµnh Tr­íc Thuéc.",
 		},
 		szAddStatKey = "qingrenjie_zhongmeiguihuazhong",
 	},
 	["§Ëu Hång"] = {nTeamSize = nil, nItemIndex = 3110,	nSexScore = nil,
-		tbName = {"ºì¶¹ÖÖ×Ó", "Ğ¡ºì¶¹Ê÷", "ºì¶¹Ê÷Î´¿ª»¨", "ºì¶¹Ê÷½á¹û", },
+		tbName = {"H¹t Gièng §Ëu Hång", "C©y §Ëu Hång nhá", "C©y §Ëu Hång ch­a ra hoa", "C©y §Ëu Hång kÕt tr¸i", },
 		tbDialog = {
-			"ºì¶¹ÉúÄÏ¹ú£¬´ºÀ´·¢¼¸Ö¦",
-			"Ô¸¾ı¶à²Éß¢£¬´ËÎï×îÏàË¼",
-			"ÇéÈËÔ¹Ò££¬¾¹Ï¦ÆğÏàË¼",
-			"³¤ÏàË¼£¬³¤ÏàË¼£¬ÈôÎÊÏàË¼ÉõÁËÆÚ¡£³ı·ÇÏà¼ûÊ±.",
-			"³¤ÏàË¼£¬³¤ÏàË¼£¬Óû°ÑÏàË¼ËµËÆË­ Ç³ÇéÈË²»Öª.",
-			"³¤ÏàË¼Ùâ³¤ÏàÒä£¬¶ÌÏàË¼ÙâÎŞÇî¼«.",
+			"Hång §Ëu Sinh Nam Quèc, Xu©n Lai Ph¸t Kû Chi",
+			"NguyÖn Qu©n §a Th¸i HiÖt, Thö VËt Tèi T­¬ng T­.",
+			"T×nh Nh©n O¸n Dao, C¶nh TŞch Khëi T­¬ng T­.",
+			"Tr­êng T­¬ng T­, Tr­êng T­¬ng T­, Nh­îc VÊn T­¬ng T­ ThËm LiÔu Kú, Trõ Phi T­¬ng KiÕn Thêi.",
+			"Tr­êng T­ng T­, Tr­êng T­¬ng T­, Dôc B¶ T­¬ng T­ ThuyÕt T­ Thïy, ThiÓn T×nh Nh©n BÊt Tri.",
+			"Tr­êng T­¬ng T­ HÒ Tr­êng T­¬ng ¦c, §o¶n T­¬ng T­ HÒ V« Cïng Cùc.",
 		},
 		szAddStatKey = "qingrenjie_zhonghongdou",
 	},
 }
 ValenAct_nRedLineIndex = 3111
-ValenAct_Op = {"T­íi n­íc", "½½Ë®", "¸î²İ", "³ı³æ",}
+ValenAct_Op = {"T­íi n­íc", "Bãn ph©n", "C¾t cá d¹i", "B¾t s©u",}

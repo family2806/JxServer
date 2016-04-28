@@ -8,8 +8,8 @@ TASKID_ZMD_EXPIRE_TIME	=	2558;					-- ×ÓÄ¸´üÓĞĞ§ÈÕÆÚÈÎÎñ±äÁ¿
 
 
 function main(nItemIdx)
-	local szMsg = "<#>ÄúµÄ×ÓÄ¸´üÓĞĞ§Ê¹ÓÃÆÚÊÇ£º<color=yellow>"..zmd_get_expire_date().."<color>";
-	Say(szMsg, 2, "Ôö¼Ó×ÓÄ¸´üÊ¹ÓÃÊ±¼äÒ»ÖÜ/#recharge("..nItemIdx..")", "È¡Ïû/cancel");
+	local szMsg = "<#>Tói tö mÉu cã thêi h¹n sö dông lµ: <color=yellow>"..zmd_get_expire_date().."<color>";
+	Say(szMsg, 2, "N¹p 1 tuÇn/#recharge("..nItemIdx..")", "Hñy bá /cancel");
 	return 1;
 end
 
@@ -22,7 +22,7 @@ function recharge(nItemIdx)
 	if (GetPartnerBagLevel() ~= 10) then
 		SetPartnerBagLevel(10);
 	end
-	Say("<#>³äÖµ³É¹¦£¬ÄúµÄ×ÓÄ¸´üÓĞĞ§Ê¹ÓÃÆÚÊÇ£º<color=yellow>"..zmd_get_expire_date().."<color>", 0);
+	Say("<#>N¹p thµnh c«ng, tói tö mÉu cña ®¹i hiÖp cã thêi h¹n sö dông lµ: <color=yellow>"..zmd_get_expire_date().."<color>", 0);
 end
 
 -- ×ÓÄ¸´ü¶¨Ê±¼ì²é
@@ -31,11 +31,11 @@ function zmd_check_expire_timer()
 	if (nExpireState == 2) then
 		if (GetPartnerBagLevel() ~= 0) then
 			SetPartnerBagLevel(0);
-			Msg2Player("ÄãµÄ×ÓÄ¸´üÒÑ¹ıÆÚÁË");
+			Msg2Player("Tói tö mÉu cña ®¹i hiÖp ®· qu¸ h¹n råi");
 		end
 	elseif (nExpireState == 1) then
 		if (random(1, 3) == 1) then
-			Msg2Player("ÄãµÄ×ÓÄ¸´ü1ÌìÄÚ½«¹ıÆÚÌáĞÑ");
+			Msg2Player("Tói tö mÉu cña ®¹i hiÖp sÏ hÕt h¹n trong vßng h«m nay");
 		end
 	end
 end
@@ -80,7 +80,7 @@ function zmd_get_expire_date()
 	if (nExpireTime ~= 0) then
 		return FormatTime2String("%Y-%m-%d", nExpireTime - DAY_SECOND_SUM);
 	else
-		return "Î´¿ªÆô";
+		return "Ch­a khëi ®éng";
 	end
 end
 

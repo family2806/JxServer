@@ -19,7 +19,7 @@ function tbVng_Exchange_HHL:AddDialog(tbDialog)
 	if self:IsActive() ~= 1 then
 		return
 	end
---	tbDialog:AddOptEntry("ª÷∏¥––œ¿¡Ó", tbVng_Exchange_HHL.Recover_Item_UI, {tbVng_Exchange_HHL})
+--	tbDialog:AddOptEntry("PhucHoiHanhHiepLenh", tbVng_Exchange_HHL.Recover_Item_UI, {tbVng_Exchange_HHL})
 end
 
 function OnCancel() end
@@ -33,7 +33,7 @@ function Do_Recover(nCount)
 		local nIdx = GetGiveItemUnit(i)
 		local nG, nD, nP = GetItemProp(nIdx)
 		if nG ~= 6 or nD ~= 1 or nP ~= 2566 then
-			Talk(1, "", "Œ“÷ª∏¯ƒ„ª÷∏¥ <color=red>––œ¿¡Ó<color>. ƒ„∑≈»ÎµƒŒÔ∆∑≤ª∂‘")
+			Talk(1, "", "Ta chÿ phÙc hÂi cho ng≠¨i <color=red>Hµnh Hi÷p L÷nh<color>. VÀt ph»m ng≠¨i b· vµo kh´ng ÆÛng rÂi")
 			return
 		else
 			nItemCount = nItemCount + GetItemStackCount(nIdx)			
@@ -47,16 +47,16 @@ function Do_Recover(nCount)
 		local nIdx = GetGiveItemUnit(i)
 		local nRemovedCount = GetItemStackCount(nIdx)
 		if IsMyItem(nIdx) ~= 1 or RemoveItemByIndex(nIdx) ~= 1 then
-			Talk(1, "", "≤Ÿ◊˜ ß∞‹£¨ ß»•“ª–©‘≠¡œ.")
+			Talk(1, "", "Thao t∏c th t bπi, m t mÈt sË nguy™n li÷u.")
 			return
 		else
-			tbLog:PlayerActionLog("ª÷∏¥––œ¿¡Ó", "…æ≥˝æ…––œ¿¡Ó", "SoLuong: "..nRemovedCount)
+			tbLog:PlayerActionLog("PhucHoiHanhHiepLenh", "XoaHanhHiepLenhCu", "SoLuong: "..nRemovedCount)
 		end		
 	end
-	local tbAward = {szName = "––œ¿¡Ó", tbProp = {6,1,2566,1,0,0}, nCount = nItemCount}
-	tbAwardTemplet:Give(tbAward, 1, {"ª÷∏¥––œ¿¡Ó", "¡Ï»°–¬––œ¿¡Ó"})
+	local tbAward = {szName = "Hµnh Hi÷p L÷nh", tbProp = {6,1,2566,1,0,0}, nCount = nItemCount}
+	tbAwardTemplet:Give(tbAward, 1, {"PhucHoiHanhHiepLenh", "NhanHanhHiepLenhMoi"})
 end
 
 function tbVng_Exchange_HHL:Recover_Item_UI()
-	GiveItemUI("––œ¿¡ÓΩ±¿¯", "«Î∑≈»Î––œ¿¡Ó", "Do_Recover", "OnCancel")
+	GiveItemUI("PhÙc hÂi Hµnh Hi÷p L÷nh", "Xin b· vµo Hµnh Hi÷p L÷nh", "Do_Recover", "OnCancel")
 end

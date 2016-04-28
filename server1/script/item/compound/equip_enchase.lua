@@ -141,7 +141,7 @@ function finalCompound( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcItemVa
 			local nCommonItemVal = GetGlbValue( GLBID_COMMON_VAL_SUM );
 			SetGlbValue( GLBID_COMMON_VAL_SUM, nCommonItemVal + nDesItemValCut );
 			if( nCommonItemVal + nDesItemValCut >= COMMON_SUM_MAX_VAL ) then
-				local strMsg = format( "[¾¯±¨] %s ½ñÈÕ[ºÏ³É]µÄ×ÏÉ«×°±¸Ïà¹ØÎïÆ·µÄ¼ÛÖµ×ÜÁ¿£¨%0.2fE£©£¬ÒÑ³¬¹ı¼ÛÖµ×ÜÁ¿¾¯±¨ãĞÖµ£¨%0.2fE£©£¬¿ÉÄÜ³öÏÖË¢ÎïÆ·ÏÖÏó£¬Çë¾¡¿ìÁªÏµÑĞ·¢²¿£¡£¡£¡", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
+				local strMsg = format( " [C¶nh b¸o]%s Tæng gi¸ trŞ vËt phÈm t­¬ng quan cña Trang bŞ HuyÒn Tinh [ghĞp]h«m nay (%0.2fE) , ®· v­ît qu¸ møc c¶nh b¸o tæng gi¸ trŞ (%0.2fE) , cã thÓ xuÊt hiÖn hiÖn t­îng quĞt vËt phÈm, h·y liªn hÖ khÈn víi bé phËn nghiªn cøu!!!  ", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
 				print( strMsg );
 				WriteLog( strMsg );
 			end
@@ -154,7 +154,7 @@ function finalCompound( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcItemVa
 			SetMaxDurability( nResultDesItemIdx, nMaxDur );
 			SetCurDurability( nResultDesItemIdx, nCurDur );
 			return nResultDesItemIdx, RESULT_SUCCEED;
-		else	-- Éú³ÉÎïÆ·Ê§°ÜµÄÒì³£Ò²µ±×÷Ëæ»úÊ§°Ü£¬×îºÃ×ö¼ÇÂ¼
+		else	-- Éú³ÉÎïÆ·ThÊt b¹iµÄÒì³£Ò²µ±×÷Ëæ»úThÊt b¹i£¬×îºÃ×ö¼ÇÂ¼
 			return -1, RESULT_FAIL;
 		end
 	else
@@ -230,14 +230,14 @@ function previewProb( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcItemValS
 	if( dFailProb > 0 ) then
 		nItemCount = nItemCount + 1;
 		aryszItemMsg[nItemCount] = {};
-		aryszItemMsg[nItemCount][1] = "Ê§°Ü";
+		aryszItemMsg[nItemCount][1] = "ThÊt b¹i";
 		aryszItemMsg[nItemCount][2] = dFailProb;
 	end
-	local szMsg = "<dec><npc>±¾´Î³É¹¦¼¸ÂÊÎª\n";
+	local szMsg = "<dec><npc>Tû lÖ kh¶m n¹ thµnh c«ng lÇn nµy lµ\n";
 	for i = 1, nItemCount do
 		szMsg = szMsg..format( "[<color=yellow>%05.2f%%<color>] %s\n", aryszItemMsg[i][2] * 100, aryszItemMsg[i][1] );
 	end
-	CreateTaskSay( { szMsg, "È·ÈÏ/onCancel" } );
+	CreateTaskSay( { szMsg, "X¸c nhËn/onCancel" } );
 end
 
 -- ¼ÆËã±ØĞë²ÄÁÏÖĞµÄ[ºÏ³É]¹Ø¼üÎïÆ·µÄ¼ÛÖµ×ÜÁ¿£¬ÏŞÖÆ¿ÉÑ¡²ÄÁÏ¼ÛÖµÁ¿¼ÓÈ¨

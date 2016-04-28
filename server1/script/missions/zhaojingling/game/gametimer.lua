@@ -81,11 +81,11 @@ function Game:SortPaiMingOneRoom(nMapId, tbRoomPlayer, nTimeDis)
 				local nCurMapId = getplayermapid(nPlayerIndex)
 				if nCurMapId == nMapId then
 					CallPlayerFunction(nPlayerIndex, SetTask, TSK_RANK, nIndex)
-					local szMsg = format("ÄãÒÑÕÒµ½%dÄ¾ÈË£¬Ä¿Ç°ÅÅÃûµÚ%d", value[2], nIndex)
+					local szMsg = format("Ng­¬i ®· t×m ®­îc %d Méc Nh©n, hiÖn t¹i lµ h¹ng thø %d", value[2], nIndex)
 					CallPlayerFunction(nPlayerIndex, Msg2Player, szMsg)
 					local nRoomId = CallPlayerFunction(nPlayerIndex, GetTask, TSK_GROUPID)
 					local szAccount = CallPlayerFunction(nPlayerIndex, GetAccount)
-					WriteLog(format("[ Ä¾ÈËÊ±¼ä :%s ·¿¼äºÅ: %d ÅÅÃû:%d account: %s ÈËÎï: %s ÊıÁ¿: %s", GetLocalDate("%Y-%m-%d %H:%M"), nRoomId, nIndex, szAccount, value[1], value[2]))
+					WriteLog(format("[ Thêi gian Méc Nh©n:%s Sè phßng: %d xÕp h¹ng:%d account: %s nh©n vËt: %s sè l­îng: %s", GetLocalDate("%Y-%m-%d %H:%M"), nRoomId, nIndex, szAccount, value[1], value[2]))
 					nIndex = nIndex + 1
 					if nTimeDis >= 0 then --Ò»¾Ö½áÊøµÄÊ±ºò
 						self:AddMuRenCount(value[1], value[2])

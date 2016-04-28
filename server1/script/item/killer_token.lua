@@ -7,6 +7,6 @@ end
 function GetDesc( nItemIdx )
 	local strDesc = "";
 	local _, _, _, _, nSeries = GetItemProp( nItemIdx );
-	strDesc = "<enter>"..strDesc.."ŒÂ–– Ù–‘£∫"..toSeries( nSeries ).."\n";
+	strDesc = "<enter>"..strDesc.."ThuÈc t›nh ngÚ hµnh:"..toSeries( nSeries ).."\n";
 	return strDesc;
 end

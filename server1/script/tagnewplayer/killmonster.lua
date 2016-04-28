@@ -33,7 +33,7 @@ function tbAnBangHKL:_init()
 		
 		if tbTask.szTaskName == nil or tbTask.szTaskName == "" then
 			
-			tbTask.szTaskName = format("ÏûÃğ %s", tbTask.szMonsterName)
+			tbTask.szTaskName = format("Tiªu diÖt %s", tbTask.szMonsterName)
 		end
 		
 		tinsert(self.tbTaskList, tbTask)
@@ -71,9 +71,9 @@ function tbAnBangHKL:AcceptTask(nStart, nEnd)
 	SetTask(self.TSK_KILL_COUNT, 0)
 	
 	
-	local szMsg = format("»ñµÃ <color=yellow><%s> <color> ÔÚ<%s>", tbTask.szTaskName, tbTask.szMapName)
+	local szMsg = format("Thu ®­îc <color=yellow><%s> <color> t¹i<%s>", tbTask.szTaskName, tbTask.szMapName)
 	Msg2Player(szMsg)
-	Talk(1, "", "Çë´óÏÀÅ¬Á¦Íê³ÉÈÎÎñ")
+	Talk(1, "", "Xin ®¹i hiÖp h·y nç lùc hoµn thµnh nhiÖm vô")
 end
 
 function tbAnBangHKL:IsHaveTask(bFlag)
@@ -87,12 +87,12 @@ function tbAnBangHKL:IsHaveTask(bFlag)
 		if bFlag == 1 then
 			return 1
 		else
-			Talk(1, "", "Ã»ÓĞÒª·ÅÆúµÄÈÎÎñ")
+			Talk(1, "", "Kh«ng cã nhiÖm vô ®Ó hñy")
 			return 	
 		end
 	else
 		if bFlag == 1 then
-			Talk(1, "", "´óÏÀÒÑ¾­½ÓÈÎÎñÁË.")
+			Talk(1, "", "§¹i hiÖp ®· nhËn nhiÖm vô råi.")
 			return 
 		else
 			return 1	
@@ -107,7 +107,7 @@ function tbAnBangHKL:CancelTask()
 	SetTask(self.TSK_TASK_ID, 0)
 	SetTask(self.TSK_KILL_COUNT, 0)
 	
-	Msg2Player("³É¹¦·ÅÆúÈÎÎñ")
+	Msg2Player("Hñy nhiÖm vô thµnh c«ng")
 	
 end
 
@@ -133,7 +133,7 @@ function tbAnBangHKL:KillMonster(nNpcIndex)
 				
 				if nKillCount < tbTask.nKillCount then
 					SetTask(self.TSK_KILL_COUNT, nKillCount + 1)
-					local szMsg = format("´óÏÀÒÑ¾­ %s : <color=yellow>%d/%d<color>", tbTask.szTaskName, nKillCount + 1, self.tbTaskList[i].nKillCount)
+					local szMsg = format("§¹i hiÖp ®· %s : <color=yellow>%d/%d<color>", tbTask.szTaskName, nKillCount + 1, self.tbTaskList[i].nKillCount)
 					Msg2Player(szMsg)
 				end				
 			end
@@ -184,7 +184,7 @@ function tbAnBangHKL:CheckTaskComplete()
 		return 
 	end
 	if nTaskId <= 0 then
-		Talk(1, "", "´óÏÀÎ´½ÓÈÎÎñ")
+		Talk(1, "", "§¹i hiÖp ch­a nhËn nhiÖm vô")
 		return
 	end
 
@@ -194,9 +194,9 @@ function tbAnBangHKL:CheckTaskComplete()
 			if tbTask.nKillCount == nKillCount then		
 				return 1
 			else
-				local szMsg = format("´óÏÀĞèÒª %s:<color=yellow> %d/%d<color>", tbTask.szTaskName, nKillCount, self.tbTaskList[i].nKillCount)
+				local szMsg = format("§¹i hiÖp cÇn %s:<color=yellow> %d/%d<color>", tbTask.szTaskName, nKillCount, self.tbTaskList[i].nKillCount)
 				Msg2Player(szMsg)
-				Talk(1, "", "»¹Î´Íê³É¾Í²»ÄÜÁì½±£¬ÇëÅ¬Á¦.")
+				Talk(1, "", "VÉn ch­a hoµn thµnh th× kh«ng thÓ nhËn th­ëng, xin h·y cè lªn.")
 				return
 			end
 		end
@@ -211,15 +211,15 @@ function tbAnBangHKL:ReviewCurKillMonsterTask()
 		return 
 	end
 	if nTaskId <= 0 then
-		Talk(1, "", "´óÏÀÎ´½ÓÈÎÎñ")
+		Talk(1, "", "§¹i hiÖp ch­a nhËn nhiÖm vô")
 		return
 	end
 
 	for i=1, getn(self.tbTaskList) do
 		if nTaskId == self.tbTaskList[i].nTaskId then
 			local tbTask = self.tbTaskList[i]
-			local szTaskName =format("Çë<color=yellow><%s> <color> ÔÚ<%s>", tbTask.szTaskName, tbTask.szMapName)
-			local szCurKill =format("´óÏÀÒÑ¾­ %s : <color=yellow>%d/%d<color>", tbTask.szTaskName, nKillCount, self.tbTaskList[i].nKillCount)
+			local szTaskName =format("H·y <color=yellow><%s> <color> t¹i<%s>", tbTask.szTaskName, tbTask.szMapName)
+			local szCurKill =format("§¹i hiÖp ®· %s : <color=yellow>%d/%d<color>", tbTask.szTaskName, nKillCount, self.tbTaskList[i].nKillCount)
 			local szShow = szTaskName .. "\n" .. szCurKill
 			Talk(1, "", szShow)
 		end
@@ -229,7 +229,7 @@ end
 function tbAnBangHKL:CompleteTask()
 	SetTask(self.TSK_TASK_ID, 0)
 	SetTask(self.TSK_KILL_COUNT, 0)
-	Msg2Player("Íê³ÉÈÎÎñ")
+	Msg2Player("Hoµn thµnh nhiÖm vô")
 end
 
 tbAnBangHKL:_init()

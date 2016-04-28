@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_sl = GetTask(7);
 	if (UTask_sl == 30*256+10) and (random(0,99) < 50) then
 		SetTask(7,30*256+20)
-		Msg2Player("Ô­À´ÐÐ×Ù¹îÃØµÄÈËÊÇ½ðÈË, ËûÃÇµÄÍ¬µ³ÒÑ¾­ÍµÁË°ãÈô²¨ÂÞÃÛ¶àÐÄ¾­£¬ÅÜµ½±±½£¸óÎ÷±ßµÄ½ð¹â¶´ÁË. ")
-		AddNote("ÔÚËþÁÖÐÐ×Ù¹îÃØµÄÈËÊÇ½ðÈË, ËûÃÇµÄÍ¬µ³ÒÑ¾­ÍµÁË°ãÈô²¨ÂÞÃÛ¶àÐÄ¾­£¬ÅÜµ½±±½£¸óÎ÷±ßµÄ½ð¹â¶´ÁË. ")
+		Msg2Player("Th× ra kÎ hµnh tung bÝ mËt nµy lµ tay ch©n cña ng­êi Kim, ®ång ®¶ng cña chóng ®· lÊy c¾p B¸t Nh· Ba La MËt §a T©m Kinh, ch¹y ®Õn Kim Quang ®éng phÝa t©y B¾c KiÕm C¸c. ")
+		AddNote("Ng­êi hµnh tung bÝ mËt ë Th¸p L©m lµ tay ch©n cña ng­êi Kim, ®ång ®¶ng cña chóng ®· lÊy c¾p B¸t Nh· Ba La MËt §a T©m Kinh, ch¹y ®Õn Kim Quang ®éng phÝa T©y B¾c KiÕm C¸c. ")
 	end
 end;

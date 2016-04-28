@@ -5,23 +5,23 @@ local wuguo_tbFormulaList =
 {
 	[1] =
 	{
-		szFailMsg = "<color=red>Ö»ÓÃÕâĞ©Ô­ÁÏ²»ÄÜ¶Ò»»Îå¹ûºØ´º½±Àø£¬´óÏÀÏÈÈ¥°ÉÔ­ÁÏÕÒ¹»°É<color>",
+		szFailMsg = "<color=red>ChØ dïng mÊy nguyªn liÖu nµy th× kh«ng thÓ ®æi phÇn th­ëng Ngò Qu¶ Mõng Xu©n ®­îc, ®¹i hiÖp ph¶i t×m ®ñ nguyªn liÖu ®i ®·<color>",
 		nFreeItemCellLimit = 1,
 		tbMaterial = 
 		{
-			{szName = "·¬ÀóÖ¦",	tbProp={6, 1, 1886, 1, 0, 0}, 	nCount = 2},
-			{szName = "Ò¬×Ó", 	tbProp={6, 1, 1887, 1, 0, 0}, 	nCount = 1},
-			{szName = "Ä¾¹Ï", tbProp={6, 1, 1888, 1, 0, 0}, 	nCount = 1},
-			{szName = "Ã¢¹û", 	tbProp={6, 1, 1889, 1, 0, 0},	nCount = 1},
-			{szName = "ÎŞ»¨¹û",	tbProp={6, 1, 1890, 1, 0, 0},	nCount = 3},
+			{szName = "M·ng CÇu",	tbProp={6, 1, 1886, 1, 0, 0}, 	nCount = 2},
+			{szName = "Dõa", 	tbProp={6, 1, 1887, 1, 0, 0}, 	nCount = 1},
+			{szName = "§u §ñ", tbProp={6, 1, 1888, 1, 0, 0}, 	nCount = 1},
+			{szName = "Xoµi", 	tbProp={6, 1, 1889, 1, 0, 0},	nCount = 1},
+			{szName = "Sung",	tbProp={6, 1, 1890, 1, 0, 0},	nCount = 3},
 		},
 		tbProduct = 
 		{
-			szName = "Îå¹ûºØ´º½±Àø",
+			szName = "PhÇn th­ëng Ngò Qu¶ Mõng Xu©n",
 			[1] =
 			{
-				{szName="ÈçÒâÌû", 	tbProp={6, 1, 1016, 1, 0, 0},	nRate = 50},
-				{szName="²ÊÉ«Ìû", tbProp={6, 1, 1053, 1, 0, 0}, 	nRate = 50},
+				{szName="ThiÖp Nh­ ı ", 	tbProp={6, 1, 1016, 1, 0, 0},	nRate = 50},
+				{szName="ThiÖp mµu", tbProp={6, 1, 1053, 1, 0, 0}, 	nRate = 50},
 			},
 			[2] = {nExp = 8e6},
 			[3] = 
@@ -33,7 +33,7 @@ local wuguo_tbFormulaList =
 		},
 		pLimitFun = function (self, nCount)
 			if (GetTask(newyear0901_TSK_GetExp_Wuguo) + 800 > 40000) then
-				Msg2Player("´óÏÀÒÑÄÃµ½×î¸ß¾­Ñé£¬²»ÄÜÔÙ´ÓÎå¹ûºØ´º»î¶¯ÖĞÁìÈ¡½±ÀøÁË!");
+				Msg2Player("§¹i hiÖp ®· ®¹t ®Õn kinh nghiÖm cao nhÊt, kh«ng thÓ nhËn thªm phÇn th­ëng tõ ho¹t ®éng Ngò Qu¶ Mõng Xu©n n÷a!");
 				return 0;
 			else
 				return 1;
@@ -47,11 +47,11 @@ function newyear0901_wuguo_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	newyear0901_ResetTask();
 	
 	if (newyear0901_wuguo_IsActDate() ~= 1) then
-		return Talk(1, "", "»î¶¯½áÊøÁË.")
+		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 	end
 	
 	if (GetLevel() < 50 or GetExtPoint(0) < 1) then
-		Say("´òÏÂ²»µ½50¼¶»òÕßÊÇÎ´³äÖµÒò´Ë²»ÄÜ²Î¼Ó´Ë»î¶¯.", 0);
+		Say("§¹i hiÖp vÉn ch­a ®ñ cÊp 50 hoÆc vÉn ch­a n¹p thÎ nªn kh«ng thÓ tham gia ho¹t ®éng nµy.", 0);
 		return 1;
 	end
 	
@@ -60,9 +60,9 @@ function newyear0901_wuguo_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
 	
-	local tbSay = newyear0901_wuguo_Compose:MakeOptByProductName("ÎÒÒªÁìÈ¡", nItemIndex, szDescLink);
-	tinsert(tbSay , 1, "<dec>"..szDescLink.."Èç¹ûÕÒ¹»·¬ÀóÖ¦£¬Ò¬×Ó£¬Ä¾¹Ï£¬Ã¢¹û£¬ÎŞ»¨¹ûÕâÎåÖÖË®¹û½«»áµÃµ½¸ü¶àµÄĞÒÔË.");
-	tinsert(tbSay , getn(tbSay)+1, "½áÊø¶Ô»°/OnCancel");
+	local tbSay = newyear0901_wuguo_Compose:MakeOptByProductName("Ta muèn nhËn l·nh", nItemIndex, szDescLink);
+	tinsert(tbSay , 1, "<dec>"..szDescLink.."NÕu nh­ t×m ®ñ 5 lo¹i hoa qu¶ 'M·ng CÇu, Dõa, §u §ñ, Xoµi, Sung' th× sÏ thu ®­îc cµng nhiÒu may m¾n.");
+	tinsert(tbSay , getn(tbSay)+1, "KÕt thóc ®èi tho¹i/OnCancel");
 	CreateTaskSay(tbSay);
 end
 

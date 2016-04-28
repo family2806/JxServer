@@ -6,19 +6,19 @@ function main()
 	if (UTask_sl == 50*256+30) and (HaveItem(28) == 0) then		--ÉÙÁÖ50¼¶ÈÎÎñÖĞ
 		i = GetTaskTemp(47)
 		if (i == 2) then
-			Talk(1,"","Ê¯Í·ÂıÂı±»Å²¶¯£¬¿´µ½ÏÂÃæºÃÏñÓĞ±¾Êé")
+			Talk(1,"","T¶ng ®¸ dÇn ®­îc xª dŞch, b¹n h×nh thÊy phİa d­íi h×nh nh­ cã 1 quyÓn s¸ch")
 			AddEventItem(28)
-			AddNote("ÄÃµ½Ò×½î¾­. ")
-			Msg2Player("ÄÃµ½Ò×½î¾­. ")
+			AddNote("LÊy ®­îc DŞch C©n Kinh. ")
+			Msg2Player("LÊy ®­îc DŞch C©n Kinh. ")
 			SetTaskTemp(47,0)			--¸´Î»ÁÙÊ±±äÁ¿£¬ÍòÒ»ÔÙÀ´´ò...
 		elseif (i == 1) then
-			Talk(1,"","ÄãÓÃÁ¦ÍÆÊ¯Í·®¸, ºÃÏñÓĞµã×ª¶¯")
+			Talk(1,"","B¹n thö dïng søc ®Èy t¶ng ®¸, h×h nh­ nã cã chót lay chuyÓn")
 			SetTaskTemp(47,2)
 		else
-			Talk(1,"","ÄãÓÃÁ¦ÍÆÊ¯Í·®¸, µ«ÊÇ£¬ËüÒÀÈ»²»¶¯ ")
+			Talk(1,"","B¹n thö dïng søc ®Èy t¶ng ®¸, nh­ng nã cø n»m tr¬ tr¬ ")
 			SetTaskTemp(47,1)
 		end
 	else
-		Talk(1,"","ÄãÓÃÁ¦ÍÆÊ¯Í·®¸, µ«ÊÇ£¬ËüÒÀÈ»²»¶¯")
+		Talk(1,"","B¹n thö dïng søc ®Èy t¶ng ®¸, nh­ng nã cø n»m tr¬ tr¬ ")
 	end
 end;

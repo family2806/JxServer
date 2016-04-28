@@ -22,7 +22,7 @@ function IsInDistance(nX, nY, tbPosList)
 end
 
 local _OnBreak = function()
-	Msg2Player("È¡Ë®±»¼ä¶Ï.")
+	Msg2Player("LÊy n­íc bÞ gi¸n ®o¹n.")
 end
 
 local _GetAward = function(nItemIndex)
@@ -30,13 +30,13 @@ local _GetAward = function(nItemIndex)
 		return 0
 	end	
 	
-	if PlayerFunLib:CheckFreeBagCell(1,"×°±¸²»×ã") ~= 1 then
+	if PlayerFunLib:CheckFreeBagCell(1,"Hµnh trang kh«ng ®ñ") ~= 1 then
 		return 0
 	end
-	Msg2Player("È¡Ë®Íê³É")
+	Msg2Player("LÊy n­íc hoµn thµnh")
 	PlayerFunLib:ConsumeEquiproomItem({tbProp={6,1,2736,1,0,0},},1)
-	local tbAward =  {{szName = "ÂúÍ°Ë®", tbProp = {6, 1, 2737, 1, 0, 0}, nBindState = -2, nExpiredTime = 20110405},}
-	tbAwardTemplet:GiveAwardByList(tbAward, "2011Ö²Ê÷½Ú, »ñµÃÂúÍ°Ë®")
+	local tbAward =  {{szName = "Thïng N­íc §Çy", tbProp = {6, 1, 2737, 1, 0, 0}, nBindState = -2, nExpiredTime = 20110405},}
+	tbAwardTemplet:GiveAwardByList(tbAward, "TiÕt trång c©y 2011, nhËn ®­îc Thïng N­íc §Çy")
 end
 
 function InMap(nMapId)
@@ -53,16 +53,16 @@ end
 function main(nItemIndex)
 	local nMapId, nX, nY = GetWorldPos()
 	if InMap(nMapId) ~= 1 then
-		Msg2Player("ÇëÔÚµØÍ¼ÖÆ¶¨µØµãÈ¡Ë®")
+		Msg2Player("Xin h·y lÊy n­íc t¹i b¶n ®å chØ ®Þnh")
 		return 1
 	end
 	
 	if IsInDistance(nX, nY, %tbPool[nMapId]) ~= 1 then
-		Msg2Player("Çë¿¿½üË®Ì¶È¡Ë®")
+		Msg2Player("Xin h·y ®Õn gÇn ®Çm n­íc lÊy n­íc")
 		return 1
 	end
 	
-	Msg2Player("¿ªÊ¼È¡Ë®")
+	Msg2Player("B¾t ®Çu lÊy n­íc")
 	tbProgressBar:OpenByConfig(6, %_GetAward, {nItemIndex}, %_OnBreak)
 	return 1
 end

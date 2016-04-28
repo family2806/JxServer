@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("瓜贩：要买搞快，不然城管来了我小命不保！",0)
+Say("D璦 h蕌 to, ru閠  nhi襲 c竧, kh玭g ng鋞 kh玭g l蕐 ti襫!",0)
 
 end;
 

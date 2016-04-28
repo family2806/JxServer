@@ -1,6 +1,6 @@
 -- 文件名　：npcdeath_translife_4.lua
 -- 创建者　：wangjingjun
--- 内容　　：判断转生4时 杀死怪物的时候是否需要掉落霹雳弹
+-- 内容　　：判断转生4时 杀死怪物的时候是否需要掉落T輈h L辌h n
 -- 创建时间：2011-07-30 16:39:31
 
 Include("\\script\\task\\metempsychosis\\task_head.lua")
@@ -21,10 +21,10 @@ local tbcondition =
 
 local tbAward = 
 {
-	[75] = {{szName = "霹雳弹", tbProp = {6,1,2973, 1, 0,0}, nRate = 80},},
-	[144] = {{szName = "霹雳弹", tbProp = {6,1,2973, 1, 0,0}, nRate = 80},},
-	[227] = {{szName = "霹雳弹", tbProp = {6,1,2973, 1, 0,0}, nRate = 70},},
-	[321] = {{szName = "霹雳弹", tbProp = {6,1,2973, 1, 0,0}, nRate = 70},},
+	[75] = {{szName = "T輈h L辌h n", tbProp = {6,1,2973, 1, 0,0}, nRate = 80},},
+	[144] = {{szName = "T輈h L辌h n", tbProp = {6,1,2973, 1, 0,0}, nRate = 80},},
+	[227] = {{szName = "T輈h L辌h n", tbProp = {6,1,2973, 1, 0,0}, nRate = 70},},
+	[321] = {{szName = "T輈h L辌h n", tbProp = {6,1,2973, 1, 0,0}, nRate = 70},},
 }
 
 function OnNpcDeath(nNpcIndex, nPlayerIndex)
@@ -48,8 +48,8 @@ end
 
 function giveAward(nMapId, nNpcId)
 	if CountFreeRoomByWH(1,1,1) < 1 then
-		Msg2Player("你的装备已满，请整理装备!")
+		Msg2Player("H祅h trang c馻 ngi  y, xin h穣 s緋 x誴 l筰!")
 		return 
 	end
-	tbAwardTemplet:GiveAwardByList(%tbAward[nMapId], format("消灭 %d 获得霹雳弹",nNpcId), 1)
+	tbAwardTemplet:GiveAwardByList(%tbAward[nMapId], format("Ti猽 di謙 %d nh薾 頲 T輈h L辌h Кn",nNpcId), 1)
 end

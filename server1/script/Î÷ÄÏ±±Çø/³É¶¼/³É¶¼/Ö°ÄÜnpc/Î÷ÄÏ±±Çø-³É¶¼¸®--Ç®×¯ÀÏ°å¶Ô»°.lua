@@ -4,5 +4,5 @@
 Include("\\script\\global\\Ç®×¯¹¦ÄÜ.lua")
 
 function main(sel)
-	Talk(1,"main_proc","Ç®×¯ÀÏ°å£º±¾Ç®×¯×öµÄÊÇ»Æ½ğ°×ÒøµÄÉúÒâ£¬´æÈ¡×ÔÓÉ£¬½è´û×ÔÖ÷£¬´æ¿îÎŞÏ¢£¬´û¿î¸ßÀû¡£")
+	Talk(1,"main_proc","B¹ch ng©n hoµng kim ®Òu cã thÓ kı göi ë ®©y! Bæn tiÖm lµm ¨n rÊt uy tİn!")
 end;

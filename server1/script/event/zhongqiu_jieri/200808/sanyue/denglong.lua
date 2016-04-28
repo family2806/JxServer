@@ -7,10 +7,10 @@ function main()	--¶Ô»°Èë¿Ú
 	
 	local tbSay = 
 	{
-		"Õâ¸öµÆÁıÌ«Æ¯ÁÁÁË",
-		"Õâ¸öÉÁÉÁµÄµÆÁıÌ«Æ¯ÁÁÁË",
-		"ÖĞÇïÉÍµÆÁıÕæÊÇ¿ìÀÖ.",
-		"ÖĞÇïÕæÊÇÀËÂş£¬ÈÃÎÒºÜÏëÄã"
+		"Lång ®Ìn nµy ®Ñp qu¸.",
+		"Lång ®Ìn nµy lÊp l¸nh ®Ñp qu¸",
+		"Trung thu ng¾m lång ®Ìn thËt lµ vui.",
+		"Trung thu thËt l·ng m¹n, lµm ta nhí nµng qu¸."
 	}
 	
 	Say(tbSay[random(1,getn(tbSay))], 0)

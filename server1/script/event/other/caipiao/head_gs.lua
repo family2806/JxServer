@@ -26,23 +26,23 @@ tbCaiPiao.TSK_USE_GENGYIN	= 4
 tbCaiPiao.TSK_USE_GENGYIN_DATE	= 5
 
 --ÈÎÎñ±äÁ¿
-tbCaiPiao.tbTicket = {szName="¸ýÒúºì°ü", tbProp={6, 1, 2250, 1, 0, 0}, nExpiredTime = 20100322}
+tbCaiPiao.tbTicket = {szName="Canh DÇn Hång Bao", tbProp={6, 1, 2250, 1, 0, 0}, nExpiredTime = 20100322}
 
 
 function tbCaiPiao:CommonLimit()
 	if tonumber(GetLocalDate("%Y%m%d")) < 20100224 then
-		Talk(1, "", "ÔÝ±Õ´Ë¼¼ÄÜ")
+		Talk(1, "", "TÝnh n¨ng nµy t¹m thêi ®ãng")
 		return 
 	end
 	
 	local nMinLevel	= 50
 	if GetLevel() < nMinLevel then
-		Talk(1, "", format(" %d¼¶ÒÔÉÏ²Å¿ÉÒÔÓÃÕâ¸öµÀ¾ß", nMinLevel))
+		Talk(1, "", format("CÊp %d trë lªn míi cã thÓ sö dông ®¹o cô nµy", nMinLevel))
 		return
 	end
 	
 	if IsCharged() ~= 1 then
-		Talk(1, "", "³äÖµºó²Å¿ÉÒÔÊ¹ÓÃ´ËµÀ¾ß")
+		Talk(1, "", "Nép thÎ míi cã thÓ sö dông ®¹o cô nµy")
 		return
 	end
 	return 1
@@ -65,7 +65,7 @@ function tbCaiPiao:UseCailuLimit()
 	end
 	
 	if TaskManager:GetTask(self.TSKG_ID, self.TSK_USE_CAILU) >= nMaxCount then
-		Talk(1, "", format("Ã¿ÌìÖ»ÄÜÓÃ  %dÕâ¸öµÀ¾ß", nMaxCount))
+		Talk(1, "", format("Mçi ngµy chØ ®­îc dïng  %d ®¹o cô nµy", nMaxCount))
 		return 
 	end
 	return 1
@@ -80,7 +80,7 @@ function tbCaiPiao:UseGengYinLimit()
 	local nHM		= tonumber(GetLocalDate("%H%M"))
 	local nDay		= tonumber(GetLocalDate("%w"))
 	if not (0800 <= nHM and nHM < 2100 and (nDay == 5 or nDay == 6 or nDay == 0)) then -- 2100Ç°
-		Talk(1, "", "ÏÖÔÚ²»ÄÜÑ¡Êý×Ö")
+		Talk(1, "", "HiÖn t¹i kh«ng thÓ chän sè")
 		return
 	end
 	
@@ -91,7 +91,7 @@ function tbCaiPiao:UseGengYinLimit()
 	end
 	
 	if TaskManager:GetTask(self.TSKG_ID, self.TSK_USE_GENGYIN) >= nMaxCount then
-		Talk(1, "", format("Ã¿ÌìÖ»ÄÜÓÃ  %dÕâ¸öµÀ¾ß", nMaxCount))
+		Talk(1, "", format("Mçi ngµy chØ ®­îc dïng  %d ®¹o cô nµy", nMaxCount))
 		return 
 	end
 	
@@ -101,7 +101,7 @@ end
 
 function tbCaiPiao:OpenInputUI()
 	local nRandomNumber = random(self.nMinNumber, self.nMaxNumber)
-	local szTitle = "ÇëÊäÈëÒ»¸öÊý×Ö"
+	local szTitle = "NhËp mét sè bÊt kú"
 	local pData = {self.ApplyWager, {self}}
 	g_AskClientNumberEx(1, self.nMaxNumber, szTitle, pData)
 end
@@ -115,7 +115,7 @@ function tbCaiPiao:ApplyWager(nCount)
 	--É¾³ýµÀ¾ß
 	local tbProp = self.tbTicket.tbProp
 	if ConsumeEquiproomItem(1, tbProp[1], tbProp[2], tbProp[3], -1) ~= 1 then
-		Msg2Player("µÀ¾ß²»´æÔÚ")
+		Msg2Player("§¹o cô kh«ng tån t¹i")
 		return
 	end
 	local handle = OB_Create()
@@ -130,11 +130,11 @@ end
 function tbCaiPiao:WagerCallBack(nResult)
 	local szMsg		= ""
 	if nResult <= -1 then
-		szMsg		= "ÏÖÔÚ²»ÄÜÑ¡Êý×Ö"
+		szMsg		= "HiÖn t¹i kh«ng thÓ chän sè"
 	elseif nResult == 0 then
-		szMsg		= "ÊäÈëÊý×ÖÓÐÎó"
+		szMsg		= "NhËp sè sai quy c¸ch"
 	else
-		szMsg		= format("´óÏÀÒÑÑ¡ÁË<color=yellow>%d<color>", nResult)
+		szMsg		= format("§¹i hiÖp ®· chän <color=yellow>%d<color>", nResult)
 	end
 	Msg2Player(szMsg)
 	Talk(1, "", szMsg)
@@ -161,7 +161,7 @@ function tbCaiPiao:QueryResult(nWeekDay)
 	nWeekDay = nWeekDay or self:GetCurAwardWeekDay()
 	
 	if not nWeekDay or nWeekDay <=0 then
-		Talk(1, "", "ÏÖÔÚ»¹Ã»ÓÐ½á¹û")
+		Talk(1, "", "HiÖn t¹i vÉn ch­a cã kÕt qu¶")
 		return 0
 	end
 	
@@ -198,7 +198,7 @@ function tbCaiPiao:BagFreeCellLimit(nType)
 	
 	--ÅÐ¶Ï±³°ü¿Õ¼ä
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Talk(1, "", format("Îª±£Ö¤´óÏÀ²Æ²ú°²È«, ÇëÁô³ö %d %dx%dµÄ±³°ü¿Õ¼ä", nCount, nWidth, nHeight))
+		Talk(1, "", format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight))
 		return 0
 	end
 	return 1
@@ -217,7 +217,7 @@ end
 --¸ø½±
 function tbCaiPiao:GetAward(tbData)
 	if not tbData or getn(tbData) ~= 4 or not tbData[1] then
-		Talk(1, "", "ÏÖÔÚ»¹Ã»ÓÐ½á¹ûÂï")
+		Talk(1, "", "HiÖn t¹i vÉn ch­a cã kÕt qu¶ mµ")
 		return 0
 	end
 	local nType			= tbData[1]
@@ -232,13 +232,13 @@ function tbCaiPiao:GetAward(tbData)
 	
 	
 	if GetName() ~= szPlayerName then
-		Talk(1,"", "´óÏÀÃ»ÓÐ×Ê¸ñÁì½±")
+		Talk(1,"", "§¹i hiÖp kh«ng ®ñ ®iÒu kiÖn l·nh th­ëng")
 		return 0
 	end 
 	
 	--Èç¹ûÁìÈ¡¹ý²»ÄÜÁìÈ¡
 	if TaskManager:GetTask(self.TSKG_ID, self.TSK_IS_GET_AWARD) == nWeekDay then
-		Talk(1,"", "´óÏÀÒÑ¾­ÁìÈ¡¹ýÁË.")
+		Talk(1,"", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.")
 		return 0
 	end
 	
@@ -255,7 +255,7 @@ function tbCaiPiao:GetAwardToday()
 	local tbAward = 
 	{
 		{nExp = 100000000},
-		{szName="Ò»¼ÍÇ¬À¤·û", tbProp={6, 1, 2126, 1, 0, 0}},
+		{szName="NhÊt Kû Cµn Kh«n Phï", tbProp={6, 1, 2126, 1, 0, 0}},
 	}
 	tbAwardTemplet:GiveAwardByList(tbAward, "cailuhongbao")
 end
@@ -264,10 +264,10 @@ function tbCaiPiao:GetAwardWeek()
 	local tbAward = 
 	{
 		{nExp = 200000000},
-		{szName="[¼«Æ·] ºèÓ°ÉòÔ°Íí×í", nQuality=1, tbProp={0, 536}},
-		{szName="[¼«Æ·] ºèÓ°½£¹ÒÎ÷·½", nQuality=1, tbProp={0, 537}},
-		{szName="[¼«Æ·] ºèÓ°ÜÙÞ£ÏàÍü", nQuality=1, tbProp={0, 538}},
-		{szName="[¼«Æ·] ºèÓ°ºìÐäÕÐ", nQuality=1, tbProp={0, 539}},
+		{szName="[Cùc phÈm] Hång ¶nh TrÇm Viªn V·n Tóy", nQuality=1, tbProp={0, 536}},
+		{szName="[Cùc phÈm] Hång ¶nh KiÕm Qua T©y Ph­¬ng", nQuality=1, tbProp={0, 537}},
+		{szName="[Cùc phÈm] Hång ¶nh Môc Tóc T­¬ng Vong", nQuality=1, tbProp={0, 538}},
+		{szName="[Cùc phÈm]Hång ¶nh Hång Tô Chiªu", nQuality=1, tbProp={0, 539}},
 	}
 	tbAwardTemplet:GiveAwardByList(tbAward, "cailuhongbao")
 end
@@ -299,7 +299,7 @@ function tbCaiPiao:ApplyGetAward(nWeekDay)
 	nWeekDay = nWeekDay or self:GetCurAwardWeekDay()
 	
 	if not nWeekDay or nWeekDay <=0 then
-		Talk(1, "", "²»ÊÇÁì½±Ê±¼ä.")
+		Talk(1, "", "Kh«ng ph¶i lµ thêi gian l·nh th­ëng.")
 		return 0
 	end
 	
@@ -307,7 +307,7 @@ function tbCaiPiao:ApplyGetAward(nWeekDay)
 	
 	--Èç¹ûÁìÈ¡¹ý²»ÄÜÁìÈ¡
 	if TaskManager:GetTask(self.TSKG_ID, self.TSK_IS_GET_AWARD) == nWeekDay then
-		Talk(1,"", "´óÏÀÒÑÁìÈ¡¹ý½±ÀøÁË.")
+		Talk(1,"", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.")
 		return 0
 	end
 	local handle = OB_Create()
@@ -325,7 +325,7 @@ end
 
 function tbCaiPiao:ShowResult(tbData)
 	if not tbData or getn(tbData) ~= 4 or not tbData[1] then
-		Talk(1, "", "ÏÖÔÚ»¹Ã»ÓÐ½á¹û")
+		Talk(1, "", "HiÖn t¹i vÉn ch­a cã kÕt qu¶")
 		return 0
 	end
 	local nType			= tbData[1]
@@ -336,12 +336,12 @@ function tbCaiPiao:ShowResult(tbData)
 	local szMsg = ""
 	
 	if nResultNumber == 0 and szPlayerName and szPlayerName ~= "" then
-		szMsg = format("Õâ´ÎÃ»ÓÐÈËÖÐ½±£¬Ëæ»úÑ¡ÖÐÒ»Î»ÖÐ½±ÕßÊÇ<color=yellow>%s<color>", szPlayerName)
+		szMsg = format("§ît nµy kh«ng cã ng­êi tróng th­ëng, ngÉu nhiªn chän mét ng­êi tróng th­ëng lµ <color=yellow>%s<color>", szPlayerName)
 	elseif nResultNumber > 0 and szPlayerName and szPlayerName ~= "" then
-		szMsg = format("ÖÐ½±ºÅÂë<color=yellow>%s<color>", nResultNumber)
-		szMsg = szMsg.."<enter>"..format("ÖÐ½±Õß <color=yellow>%s<color>", szPlayerName)
+		szMsg = format("Sè tróng th­ëng <color=yellow>%s<color>", nResultNumber)
+		szMsg = szMsg.."<enter>"..format("Nh©n vËt tróng th­ëng <color=yellow>%s<color>", szPlayerName)
 	else
-		szMsg = "ÏÖÔÚ»¹Ã»ÓÐ½á¹û"
+		szMsg = "HiÖn t¹i vÉn ch­a cã kÕt qu¶"
 	end
 	Talk(1, "", szMsg)
 end

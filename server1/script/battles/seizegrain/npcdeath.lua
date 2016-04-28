@@ -73,9 +73,9 @@ function OnDeath( nNpcIndex )
 	
 	if (rank == 6) then
 		if (GetCurCamp() == 1) then
-			Msg2MSAll(MISSIONID, "<color=yellow> 宋金公报: 宋军"..GetName().." 已杀死金军元帅!!!")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: T鑞g qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe Kim!!!")
 		else
-			Msg2MSAll(MISSIONID, "<color=yellow> 宋金公报: 金军"..GetName().." 已杀死宋金元帅!!!")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: Kim qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe T鑞g!!!")
 		end
 	end
 

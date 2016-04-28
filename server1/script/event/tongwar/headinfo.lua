@@ -23,7 +23,7 @@ TONGWAR_LGTASK_CITYID = 7		--¸Ã³ÇÊÐid
 TONGWAR_LGTASK_CAMP = 8			--¸Ã³¡±ÈÈüÕóÓª
 TONGWAR_LGTASK_MAP = 9			--¸Ã³Ç±ÈÈü±ÈÈüµØÍ¼
 TONGWAR_LGTASK_RANK = 10		--±ÈÈü×îÖÕÅÅÃû
---11	»Æ½ðÖ®¹û
+--11	Qu¶ Hoµng Kim
 --12	»Ô»ÍÖ®¹ûÀñ°ü
 --13	ÉñÃØºì°üÀñ°ü
 --14	ÎäÁÖÃØ¼®
@@ -51,7 +51,7 @@ TONGWAR_RLTASK_AWARD = 1737;	--BYTE1=season ÁìÈ¡¹ýÆÕÍ¨½±Àø
 								--BYTE3=°ïÖ÷ºÍ³¤ÀÏ½±Àø
 								--BYTE4=³õÊ¼»¯Îªseason
 
---Õ½¶Ó±äÁ¿¡ª¡ª½±Àø »Æ½ðÖ®¹û	»Ô»ÍÖ®¹û	ÉñÃØ´óºì°ü	ÎäÁÖÃØ¼®	Ï´Ëè¾­
+--Õ½¶Ó±äÁ¿¡ª¡ª½±Àø Qu¶ Hoµng Kim	»Ô»ÍÖ®¹û	ÉñÃØ´óºì°ü	ÎäÁÖÃØ¼®	Ï´Ëè¾­
 LG_TASK_AWORD = {11, 12, 13, 14, 21};
 PL_TEMPTASK_SECURITY = 193;
 
@@ -117,40 +117,40 @@ TV_SERIESKILL_REALY = 2305  --Íæ¼Òµ±Ç°µÄÊµ¼ÊÁ¬Õ¶Öµ£¨¸ß¼¶É±±È½ÏµÍ¼¶µÄÍæ¼Ò£¬¼ÆÁ¬Õ¶
 		GAME_ROUND = 14
 
 --ÎäÁÖÃË´«ÈË	
-WULINMENG_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>ÎäÁÖ´«Ææ\n   <link>"
+WULINMENG_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>Vâ L©m TruyÒn Nh©n\n   <link>"
 --³ÇÊÐ
-TONGWAR_CITY = {"·ïÏè","³É¶¼","´óÀí","ãê¾©","ÏåÑô","ÑïÖÝ","ÁÙ°²",}
-TONGWAR_CITYID = {['·ïÏè']=1,['³É¶¼']=2,['´óÀí']=3,['ãê¾©']=4,['ÏåÑô']=5,['ÑïÖÝ']=6,['ÁÙ°²']=7}
+TONGWAR_CITY = {"Ph­îng T­êng","Thµnh §«","§¹i Lý","BiÖn Kinh","T­¬ng D­¬ng","D­¬ng Ch©u","L©m An",}
+TONGWAR_CITYID = {['Ph­îng T­êng']=1,['Thµnh §«']=2,['§¹i Lý']=3,['BiÖn Kinh']=4,['T­¬ng D­¬ng']=5,['D­¬ng Ch©u']=6,['L©m An']=7}
 --Change schedule VLDNB 11 - Modified by DinhHQ - 20120507
 TONGWAR_CALENDAR = {
-			format("<color=red>%s<color><color=yellow>|<color>ÁÙ°² vs ÏåÑô<color=yellow>|<color>ãê¾© vs ÑïÖÝ<color=yellow>|<color>\n³É¶¼ vs ´óÀí<color=yellow>|<color>·ïÏè²»±ÈÈü.", "16/05"),
-			format("<color=red>%s<color><color=yellow>|<color>·ïÏèvs ãê¾©<color=yellow>|<color>ÏåÑôvsÑïÖÝ<color=yellow>|<color>ÁÙ°²vs´óÀí<color=yellow>|<color>³É¶¼²»±ÈÈü.", "17/05"),
-			format("<color=red>%s<color><color=yellow>|<color>³É¶¼ vs ÁÙ°²<color=yellow>|<color>·ïÏèvs ÏåÑô<color=yellow>|<color>\ÑïÖÝ vs ´óÀí<color=yellow>|<color>ãê¾©²»±ÈÈü.", "19/05"),
-			format("<color=red>%s<color><color=yellow>|<color>ãê¾© vs ÏåÑô<color=yellow>|<color>³É¶¼vs ÑïÖÝ<color=yellow>|<color>·ïÏèvs ´óÀí<color=yellow>|<color>ÁÙ°²²»±ÈÈü.", "20/05"),
-			format("<color=red>%s<color><color=yellow>|<color>·ïÏèvs ³É¶¼<color=yellow>|<color>ÁÙ°²vs ÑïÖÝ<color=yellow>|<color>\ãê¾©vs ´óÀí<color=yellow>|<color>ÏåÑô²»±ÈÈü.", "21/05"),
-			format("<color=red>%s<color><color=yellow>|<color>³É¶¼vs ãê¾©<color=yellow>|<color>·ïÏèvs ÁÙ°²<color=yellow>|<color>\ÏåÑôvs ´óÀí<color=yellow>|<color>ÑïÖÝ²»±ÈÈü.", "22/05"),
-			format("<color=red>%s<color><color=yellow>|<color>ãê¾©vs ÁÙ°²<color=yellow>|<color>³É¶¼vs ÏåÑô<color=yellow>|<color>\·ïÏèvs ÑïÖÝ<color=yellow>|<color>´óÀí²»±ÈÈü.", "23/05"),
+			format("<color=red>%s<color><color=yellow>|<color>L©m An vs T­¬ng D­¬ng<color=yellow>|<color>BiÖn Kinh vs D­¬ng Ch©u<color=yellow>|<color>\nThµnh §« vs §¹i Lý<color=yellow>|<color>Ph­îng T­êng kh«ng thi ®Êu.", "16/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êng vs BiÖn Kinh<color=yellow>|<color>T­¬ng D­¬ng vs D­¬ng \nCh©u<color=yellow>|<color>L©m An vs §¹i Lý<color=yellow>|<color>Thµnh §« kh«ng thi ®Êu.", "17/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Thµnh §« vs L©m An<color=yellow>|<color>Ph­îng T­êng vs T­¬ng D­¬ng<color=yellow>|<color>\nD­¬ng Ch©u vs §¹i Lý<color=yellow>|<color>BiÖn Kinh kh«ng thi ®Êu.", "19/05"),
+			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinh vs T­¬ng D­¬ng<color=yellow>|<color>Thµnh §« vs D­¬ng Ch©u<color=yellow>|<color>Ph­îng T­êng vs §¹i Lý<color=yellow>|<color>L©m An kh«ng thi ®Êu.", "20/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êng vs Thµnh §«<color=yellow>|<color>L©m An vs D­¬ng Ch©u<color=yellow>|<color>\nBiÖn Kinh vs §¹i Lý<color=yellow>|<color>T­¬ng D­¬ng kh«ng thi ®Êu.", "21/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Thµnh §« vs BiÖn Kinh<color=yellow>|<color>Ph­îng T­êng vs L©m An <color=yellow>|<color>\nT­¬ng D­¬ng vs §¹i Lý<color=yellow>|<color>D­¬ng Ch©u kh«ng thi ®Êu.", "22/05"),
+			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinh vs L©m An<color=yellow>|<color>Thµnh §« vs T­¬ng D­¬ng<color=yellow>|<color>\nPh­îng T­êng vs D­¬ng Ch©u<color=yellow>|<color>§¹i Lý kh«ng thi ®Êu.", "23/05"),
 			}
 			
 PHB_WULIN = 10227 --ÎäÁÖÊ®´óÅÅÃû
-PHB_CHENGSHI = {['³É¶¼'] = 10228 ,--³É¶¼Ê®´óÅÅÃû
-				['·ïÏè'] = 10229 ,--·ïÏèÊ®´óÅÅÃû
-				['ãê¾©'] = 10230 ,--ãê¾©Ê®´óÅÅÃû
-				['ÁÙ°²'] = 10231 ,--ÁÙ°²Ê®´óÅÅÃû
-				['´óÀí'] = 10232 ,--´óÀíÊ®´óÅÅÃû
-				['ÏåÑô'] = 10233 ,--ÏåÑôÊ®´óÅÅÃû
-				['ÑïÖÝ'] = 10234 --ÑïÖÝÊ®´óÅÅÃû
+PHB_CHENGSHI = {['Thµnh §«'] = 10228 ,--Thµnh §«Ê®´óÅÅÃû
+				['Ph­îng T­êng'] = 10229 ,--Ph­îng T­êngÊ®´óÅÅÃû
+				['BiÖn Kinh'] = 10230 ,--BiÖn KinhÊ®´óÅÅÃû
+				['L©m An'] = 10231 ,--L©m AnÊ®´óÅÅÃû
+				['§¹i Lý'] = 10232 ,--§¹i LýÊ®´óÅÅÃû
+				['T­¬ng D­¬ng'] = 10233 ,--T­¬ng D­¬ngÊ®´óÅÅÃû
+				['D­¬ng Ch©u'] = 10234 --D­¬ng Ch©uÊ®´óÅÅÃû
 			}
 
 TAB_AWORD_GOOD = 
 		{
-			{{tbProp={6,1,907 ,1},szName="»Æ½ðÖ®¹û",nExpiredTime=10080}, {15, 10, 8, 6, 5, 3, 1}},	--»Æ½ðÖ®ÖÖµÄ½±ÀøÁÐ±í
-			{{tbProp={6,1,1075,1},szName="»Ô»Í¹ûÀñºÐ"}, {150, 100, 80, 60, 50, 30, 10}},	--»Ô»ÍÖ®ÖÖµÄ½±ÀøÁÐ±í
-			{{tbProp={6,1,2263,1},szName="×Ï½ðÕæµ¤",tbParam={0,20}}, {8, 4, 2, 1, 0, 0, 0}},	--×Ï½ðÕæµ¤£¨20ÒÚ£©µÄ½±ÀøÁÐ±í
-			{{tbProp={6,1,2270,1},szName="Ç§Äê»Ô»Í¹û"}, {80, 60, 50, 40, 30, 20, 10}},	--Ç§Äê»Ô»ÍÖ®¹ûµÄ½±ÀøÁÐ±í
+			{{tbProp={6,1,907 ,1},szName="Qu¶ Hoµng Kim",nExpiredTime=10080}, {15, 10, 8, 6, 5, 3, 1}},	--»Æ½ðÖ®ÖÖµÄ½±ÀøÁÐ±í
+			{{tbProp={6,1,1075,1},szName="LÔ hép qu¶ huy hoµng"}, {150, 100, 80, 60, 50, 30, 10}},	--»Ô»ÍÖ®ÖÖµÄ½±ÀøÁÐ±í
+			{{tbProp={6,1,2263,1},szName="Tö Kim Ch©n §¬n",tbParam={0,20}}, {8, 4, 2, 1, 0, 0, 0}},	--Tö Kim Ch©n §¬n£¨20ÒÚ£©µÄ½±ÀøÁÐ±í
+			{{tbProp={6,1,2270,1},szName="Thiªn Niªn Huy Hoµng qu¶"}, {80, 60, 50, 40, 30, 20, 10}},	--Ç§Äê»Ô»ÍÖ®¹ûµÄ½±ÀøÁÐ±í
 			--VLDNB 11 - Modified By DinhHQ - 20120507
-			{{tbProp={6,1,2357,1},szName="°×»¢Áî"}, {5, 3, 2, 1, 0, 0, 0}},			
-			{{tbProp={0,10,9,1, 5},szName="³àÁú¾Ô", nExpiredTime=180 * 60 * 24}, {1, 0, 0, 0, 0, 0, 0}},	--ÐþÔ³ÁîµÄ½±ÀøÁÐ±í
+			{{tbProp={6,1,2357,1},szName="B¹ch Hæ LÖnh"}, {5, 3, 2, 1, 0, 0, 0}},			
+			{{tbProp={0,10,9,1, 5},szName="XÝch Long C©u", nExpiredTime=180 * 60 * 24}, {1, 0, 0, 0, 0, 0, 0}},	--ÐþÔ³ÁîµÄ½±ÀøÁÐ±í
 			
 			
 --		{{6, 1, 1074, TONGTASK_AWORD_SMDHB, "ÉñÃØ´óºì°üÀñºÐ"}, {80, 50, 30, 20, 15, 10, 5}},	--ÉñÃØ´óºì°üµÄ½±ÀøÁÐ±í

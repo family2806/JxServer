@@ -15,7 +15,7 @@ function plantTree_0801(nEvent, nMapIdx, nX, nY, szName, nNameId, nGameTime)
 	}
 	local nNpcIdx = AddNpc(tbTreeInfo[nEvent].nNpcId, 1, nMapIdx, nX, nY, 1, szName);
 	
-	local strOwnerName = gsub(szName, "µÄÊ÷", "")
+	local strOwnerName = gsub(szName, "C©y cña ", "")
 	local nOwnerIndex = SearchPlayer(strOwnerName)
 	local nOldPlayer = PlayerIndex
 	if nOwnerIndex > 0 then

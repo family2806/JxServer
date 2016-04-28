@@ -4,9 +4,9 @@ function main()
 	newyear0901_resettask();
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= newyear0901_lazhu_expiredtime) then
-		Msg2Player("¸ÃÎïÆ·ÒÑ¹ıÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	SetTask(newyear0901_TSK_GetExpUpLimit, 300000);
-	Say("´óÏÀ¿ÉÒÔ»ñµÃµÄ¾­ÑéÖµ×î¸ßÎª30ÒÚ", 0);
+	Say("§¹i hiÖp cã thÓ thu ®­îc kinh nghiÖm cao nhÊt lµ 3 tû.", 0);
 end

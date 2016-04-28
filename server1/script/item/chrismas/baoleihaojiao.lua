@@ -5,7 +5,7 @@ SKILLLEVEL2 = 20;
 SKILLLEVEL3 = 0;
 SKILLLEVEL41 = 3;
 SKILLLEVEL42 = 18;
-ITEMNAME = "±©¿◊∫≈Ω«";
-ITEMDFFECT = "À˘”–∂‘ ÷—£‘Œ3√Î";
+ITEMNAME = "Bπo L´i Hi÷u gi∏c";
+ITEMDFFECT = "T t c∂ ÆËi thÒ sœ bﬁ cho∏ng 3 gi©y.";
 
 Include([[\script\item\chrismas\head_haojiao.lua]]);

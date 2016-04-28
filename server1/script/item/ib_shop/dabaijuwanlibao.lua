@@ -1,13 +1,13 @@
 -- ÎÄ¼şÃû¡¡£ºdabaijuwanlibao.lua
 -- ´´½¨Õß¡¡£ºwangjingjun
--- ÄÚÈİ¡¡¡¡£º´ó°×¾ÔÍèÀñ°ü ¼¯ºÏÈı¸ö´ó°×¾ÔÍè
+-- ÄÚÈİ¡¡¡¡£º§¹i B¹ch C©u hoµnÀñ°ü ¼¯ºÏÈı¸ö§¹i B¹ch C©u hoµn
 -- ´´½¨Ê±¼ä£º2011-07-12 10:38:31
 
 Include("\\script\\lib\\awardtemplet.lua")
 
 local tbAward = 
 {
-	{szName = "´ó°×¾ÔÍè", tbProp = {6,1,130,1,0,0}, nCount = 3},	
+	{szName = "§¹i B¹ch C©u hoµn", tbProp = {6,1,130,1,0,0}, nCount = 3},	
 }
 
 
@@ -16,10 +16,10 @@ function main(nItemIndex)
 	local nHeight = 1
 	local nCount = 3
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Say(format("ÎªÈ·±£´óÏÀµÄ²Æ²ú°²È«£¬ÇëÁôÏÂ%d %dx%d ×°±¸¿ÕÎ»", nCount, nWidth, nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight))
 		return 1
 	end
 	-- ÅĞ¶Ï±³°ü¿Õ¼ä
-	tbAwardTemplet:GiveAwardByList(%tbAward, "Ê¹ÓÃ´ó°×¾ÔÍèÀñ°ü", 1)
+	tbAwardTemplet:GiveAwardByList(%tbAward, "Sö dông §¹i B¹ch C©u Hoµn LÔ Bao", 1)
 	return 0
 end

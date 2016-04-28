@@ -2,7 +2,7 @@
 Include("\\script\\task\\newtask\\education\\jiaoyutasknpc.lua")
 Include("\\script\\task\\newtask\\newtask_head.lua")
 function main(sel)
-Say("¿Í¹ÙÏëÂòÊ²Ã´ ", 3, "½»Ò×/yes","ÎÒÀ´½ÓÈëÃÅÈÎÎñ/yboss", "²»½»Ò×/no");
+Say("Kh¸ch quan muèn mua g×?", 3, "Giao dŞch/yes","Ta ®Õn nhËn nhiÖm vô S¬ nhËp/yboss", "Kh«ng giao dŞch/no");
 end;
 
 

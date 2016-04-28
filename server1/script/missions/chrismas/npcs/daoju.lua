@@ -1,7 +1,7 @@
 Include([[\script\missions\chrismas\ch_head.lua]]);
 
 function main()
-	Say("ÄãÏëÒªÄÄ¸öÎïÆ·?", 8, "¼ÓËÙÍè/jiasuwan", "Ñ£ÔÎÏİÚå/xuanyunxianjing", "ĞşÌìÏİÚå/xuantianxianjing", "³Ù»ºÏİÚå/chihuanxianjing", "±ù·âÏİÚå/bingfengxianjing", "±©À×ºÅ½Ç/baoleihaojiao", "±ùËªºÅ½Ç/bingshuanghaojiao", "ÎÒÏëÏë¿´/oncancel");
+	Say("Ng­¬i muèn vËt phÈm nµo?", 8, "Gia Tèc hoµn/jiasuwan", "HuyÔn Hu©n H·m TÜnh/xuanyunxianjing", "HuyÒn Thiªn H·m TÜnh/xuantianxianjing", "BÉy lµm chËm/chihuanxianjing", "B¨ng Phong H·m TÜnh/bingfengxianjing", "B¹o L«i HiÖu gi¸c/baoleihaojiao", "B¨ng S­¬ng HiÖu gi¸c /bingshuanghaojiao", "§Ó ta suy nghÜ kü l¹i xem/oncancel");
 end;
 
 function jiasuwan()	

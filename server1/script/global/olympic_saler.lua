@@ -5,13 +5,13 @@ TEMP_QCHOOSE = 123;
 
 function onBuyTicket()
 if (IsCharged() ~= 1 ) then
-	 Say("¶Ô²»Æğ£¬ÄúÉĞÎ´³äÖµ£¬ËùÒÔÎŞ·¨²Î¼ÓÑÅµäÊ¢»á²ÊÆ±»î¶¯¡£", 0)
+	 Say("ThËt xin lçi , ngµi ch­a sung trŞ gi¸ , cho nªn kh«ng c¸ch nµo tham gia nh· ®iÓn thŞnh héi vĞ sè ho¹t ®éng . ", 0)
 	return
 end
 nCount = GetTicketCount();
 
 if (nCount == 0 ) then 
-	Say("¶Ô²»Æğ£¬ÏÖÔÚÔİÊ±Ã»ÓĞÈÎºÎ²ÊÆ±¿ÉÒÔ¹ºÂò£¡", 0)
+	Say("ThËt xin lçi , b©y giê t¹m thêi kh«ng cã bÊt kú vĞ sè cã thÓ mua ", 0)
 	return
 end;
 
@@ -19,8 +19,8 @@ Tab = {};
 for i = 1, nCount do 
 	Tab[i] = GetQuestionTip(GetTicket(i)).."/OSAsk";
 end;
-Tab[nCount + 1] = "ÔİÊ±²»²Î¼Ó¾º²ÂÁË/Cancel";
-Say("5000Ò»ÕÅ²ÊÆ±£¬ÄúÒª¾º²ÂÄÄ¸ö?", nCount + 1, Tab)
+Tab[nCount + 1] = "Kh«ng/Cancel";
+Say("5000 mét tê vĞ sè , ngµi muèn c¹nh ®o¸n c¸i nµo ?", nCount + 1, Tab)
 end;
 
 function OSAsk(nSel)
@@ -36,7 +36,7 @@ function OSAsk(nSel)
 	for i = 1,  ChooseCount do 
 		Choose[i] = GetChoose(nQId, i).."/OSSale";
 	end;
-	Choose[ChooseCount + 1] = "ÔİÊ±²»²Î¼Ó¾º²ÂÁË/Cancel";
+	Choose[ChooseCount + 1] = "Kh«ng/Cancel";
 	Say(GetQuestion(nQId), ChooseCount + 1, Choose);
 	SetTaskTemp(TEMP_QID, nQId)
 end;
@@ -46,7 +46,7 @@ function OSSale(nSel)
 		return
 	end
 	SetTaskTemp(TEMP_QCHOOSE, nSel + 1)
-	Say(GetQuestion(GetTaskTemp(TEMP_QID)).."\nÍ¶:<color=yellow>"..GetChoose(GetTaskTemp(TEMP_QID), GetTaskTemp(TEMP_QCHOOSE)).."<color>\n¼Û¸ñ:5000", 2, "ºÃ£¬ÎÒÂòÁË£¡/OSOnSale", "ÔİÊ±²»ÂòÁË/OSCancel");
+	Say(GetQuestion(GetTaskTemp(TEMP_QID)).."\n ®Çu :<color=yellow>"..GetChoose(GetTaskTemp(TEMP_QID), GetTaskTemp(TEMP_QCHOOSE)).."<color>\n gi¸ c¶ :5000", 2, "H¶o , ta mua /OSOnSale", "T¹m thêi kh«ng mua /OSCancel");
 end;
 
 function OSOnSale()
@@ -59,13 +59,13 @@ function OSOnSale()
 				SetSpecItemParam(nItem, 1, nQId)
 				SetSpecItemParam(nItem, 2, nQChoose)
 				SyncItem(nItem)
-				Msg2Player("³É¹¦¹ºµÃ²ÊÆ±Ò»ÕÅ£¡")
+				Msg2Player("Thµnh c«ng mua ®­îc vĞ sè mét tê ")
 			else
 				Earn(GetQuestionPrice(nQId))
-				Say("¶Ô²»Æğ£¬¸ÃÀà²ÊÆ±ÒÑ¾­ÎŞ·¨ÔÙ¹ºÂòÁË¡£",0)
+				Say("ThËt xin lçi , nªn lo¹i vĞ sè ®· kh«ng c¸ch nµo n÷a mua . ",0)
 			end
 		else
-			Say("ÄúÉíÉÏ´øµÄÇ®²»¹»£¬ÇëÏÈÈ¥È¡ÁËÔÙÀ´Âò°É¡£",0)
+			Say("Ngµi trªn ng­êi mang ®İch kh«ng ®ñ tiÒn , xin/mêi ®i tr­íc lÊy trë l¹i mua ®i . ",0)
 		end;
 	end
 end

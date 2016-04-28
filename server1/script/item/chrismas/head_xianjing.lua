@@ -8,9 +8,9 @@ Include([[\script\item\chrismas\chrismasitem.lua]]);
 function main()
 	tabidx = itemmapcheck(TAB_ACTION);
 	if (0 == tabidx and race_ItemMapCheck() == 0) then
-		Talk(1, "", "´ËµØÍ¼²»ÄÜÊ¹ÓÃ.");
+		Talk(1, "", "§¹o cô nµy kh«ng dïng ®­îc ë khu vùc nµy.");
 		return 1;
 	end;
 	CastSkill(SKILLTYPE, SKILLLEVEL)
-	Msg2Player("<#>Äã²¼ÖÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>");
+	Msg2Player("<#> B¹n ®· bè trİ mét <color=0xB5FDD7>"..SKILLNAME.."<color>");
 end;

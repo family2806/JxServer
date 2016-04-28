@@ -37,8 +37,8 @@ function main(itemIdx)
 		end;
 	end;
 	PlayerIndex = OldPlayer;
-		tabPlayer[ getn(tabPlayer) + 1 ] = "È¡Ïû/giveback_yu"
-		Say("ÄãÒª¶ÔÄÄ¸ö¶ÔÊÖÊ¹ÓÃµÀ¾ß<color=0xB5FDD7>"..szItem.."<color>£¿", getn(tabPlayer), tabPlayer);
+		tabPlayer[ getn(tabPlayer) + 1 ] = "Hñy bá /giveback_yu"
+		Say("B¹n muèn sö dông ®¹o cô <color=0xB5FDD7>"..szItem.."<color> nµy cho ®èi thñ nµo?", getn(tabPlayer), tabPlayer);
 end;
 
 function useyu(szName)
@@ -52,10 +52,10 @@ function useyu(szName)
 	local OldPlayer = PlayerIndex;
 	PlayerIndex = pidx;
 	AddSkillState(nSkillId, nSkillLevel, 0, nTime * 18)
-	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>¶ÔÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..szItem.."<color>£¬"..szEffect);
+	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color> ®· nh¾m vµo b¹n sö dông <color=0xB5FDD7>"..szItem.."<color>?"..szEffect);
 	
 	PlayerIndex = OldPlayer;
-	Msg2Player("<#>Äã¶Ô<color=0xB5FDD7>"..szName.."<color>Ê¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..szItem.."<color>£¬Áî¶ÔÊÖ"..szEffect);
+	Msg2Player("<#> B¹n<color=0xB5FDD7>"..szName.."<color> sö dông <color=0xB5FDD7>"..szItem.."<color>?"..szEffect);
 end;
 
 

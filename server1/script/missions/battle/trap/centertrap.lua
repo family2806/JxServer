@@ -13,7 +13,7 @@ function main(nAreaId)
 		if nCamp then
 			local nX, nY = pDungeon:GetRandomAPos(CAMP2AREA[nCamp], "homepos")
 			SetPos(floor(nX/32), floor(nY/32))
-			Msg2Player("现在还未开战，不能离开大营! ")
+			Msg2Player("Hi謓 v蒼 ch璦 khai chi課, kh玭g 頲 ph衟 r阨 Чi Doanh! ")
 			SetFightState(0)
 		end
 	end

@@ -12,7 +12,7 @@ function tbZhuansheng_4_Skill.skilllvelup(nSkillId)
 	local nMaxLevel = GetSkillMaxLevel(nSkillId)
 	local szSkillName = GetSkillName(nSkillId)
 	if mlvl > nMaxLevel then
-		Msg2Player(format(" ÄãµÄ[%s]ÒÑ´ï×î´óÖµ£¬²»ÄÜ¼ÌĞøÉı¼¶ÁË!", szSkillName))
+		Msg2Player(format(" [%s] cña b¹n ®· ®Õn tèi ®a, kh«ng thÓ tiÕp tôc th¨ng cÊp ®­îc!", szSkillName))
 		return 0
 	end 
 	
@@ -20,7 +20,7 @@ function tbZhuansheng_4_Skill.skilllvelup(nSkillId)
 	
 	local nLeaveSkillPoint = GetTask(TSK_LEAVE_SKILL_POINT_4)
 	if nLeaveSkillPoint < 1 then
-		Msg2Player("ÄãÃ»ÓĞÖØÉú4¼¼ÄÜµã£¬¼¼ÄÜ²»ÄÜÉı¼¶.")
+		Msg2Player("Ng­¬i kh«ng cã ®iÓm kü n¨ng trïng sinh 4, kü n¨ng kh«ng thÓ n©ng lªn.")
 		return 0
 	end
 	
@@ -28,6 +28,6 @@ function tbZhuansheng_4_Skill.skilllvelup(nSkillId)
 	SetTask(TSK_LEAVE_SKILL_POINT_4, nLeaveSkillPoint) -- ¼õÉÙ¿ÉÊ¹ÓÃµÄ¼¼ÄÜµãÁ¿
 	SetTask(TSK_USED_SKILL_POINT_4, (GetTask(TSK_USED_SKILL_POINT_4) + 1))	-- Ôö¼ÓÒÑÊ¹ÓÃµÄ¼¼ÄÜµãÖµ
 	AddMagic(nSkillId, mlvl + 1)
-	Msg2Player(format("ĞŞÁ¶<color=green>%s<color> ÒÑ¾­Éı¼¶£¬ÒÀÈ»¿ÉÒÔÊ¹ÓÃÖØÉú4¼¼ÄÜµã%d.", szSkillName, nLeaveSkillPoint))
+	Msg2Player(format("Tu luyÖn <color=green>%s<color> cña ng­¬i ®· ®­îc th¨ng cÊp, VÉn cã thÓ sö dông ®iÓm kü n¨ng trïng sinh 4 lµ %d.", szSkillName, nLeaveSkillPoint))
 	return 1
 end

@@ -10,21 +10,21 @@ Include("\\script\\missions\\clearskill\\head.lua")
 function TeamEnterHole(nTrapId)
 	
 	if (IsCaptain() == 0) then
-		Say("ÏëÒª½øÈëÕâ¸öÊÔÁ¶ÇøÄãµÃ×é¶Ó£¡Ö»ÓĞ×é³¤²Å¿ÉÒÔ´øÁì×Ô¼ºµÄ¶ÓÎé½øÈë!", 0);
+		Say("Muèn vµo khu vùc thİ luyÖn nµy b¹n cÇn ph¶i tæ ®éi! ChØ cã tæ tr­ëng míi ®­îc phĞp dÉn tæ cña m×nh vµo!", 0);
 		return 0
 	end;
 
 	--¶Ó³¤½ø¶´Ç°½øĞĞºÏ·¨ĞÔ¼ì²â
 	-- ·Ç·¨×´Ì¬
 	if (CSP_CheckValid() == 0) then
-		CSP_WriteLog("·Ç·¨½øÈëÏ´Ëè¶´. ");
-		Say("GM: <color=red>Äã²»ÄÜ½øÈëÏ´Ëè¶´,ÒÑ±»ÏµÍ³¼ÇÂ¼£¬ÇëÕÒ·şÎñÈËÔ±ÕûÀíÒ»ÏÂ! <color> ", 0);
+		CSP_WriteLog("TiÕn nhËp vµo §¶o TÈy Tñy mét c¸ch kh«ng b×nh th­êng. ");
+		Say("GM: <color=red>B¹n kh«ng thÓ vµo ®¶o TÈy Tñy, ®· bŞ hÖ thèng ghi nhí, xin h·y ®i t×m ng­êi phôc vô ®Ó chØnh lı l¹i! <color> ", 0);
 		return 0
 	end
 
 	Size = GetTeamSize();
 	if (Size > MAX_MEMBER_COUNT or Size < 2) then
-		Say("¶ÓÎéÖĞÓ¦ÓĞ2µ½8ÈË!" , 0);
+		Say("Sè ng­êi trong nhãm ph¶i tõ 2 ®Õn 8 ng­êi!" , 0);
 		return 0
 	end;
 	
@@ -43,7 +43,7 @@ function TeamEnterHole(nTrapId)
 	
 	nFreeMap = CSP_GetFreeTestMapID(nCityIndex);
 	if (nFreeMap <= 0 ) then 
-		Say("²»ºÃÒâË¼£¬É½¶´ÒÑÂú!", 0)
+		Say("Xin lçi! S¬n ®éng kh«ng cßn chç trèng!", 0)
 		return 0
 	end;
 	OldSubWorld = SubWorld;

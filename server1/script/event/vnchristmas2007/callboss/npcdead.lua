@@ -10,7 +10,7 @@ function OnDeath(index)
 			local np = random(1,nallrate)
 			if tbitem[1] > np then 
 				tbxmas2007_callboss_award(index,tbitem[2])
-				xmas2007_sdl_writeLog("寻找圣诞树活动",format("获得 %s",tbitem[4]))
+				xmas2007_sdl_writeLog("Ho箃 ng t譵 c﹜ gi竛g sinh",format("Nh薾 頲 %s",tbitem[4]))
 			end
 		end
 	end

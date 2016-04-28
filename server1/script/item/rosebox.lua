@@ -4,11 +4,11 @@ function main()
 	p = random(0,99)
 	if (p < 50) then
 		AddItem(0,2,28,2,0,0,0)		-- ¾ªÌì¼×
-		Msg2Player("¹§Ï²ÄãµÃµ½ÐÂ½­ºþÇéÂÂÌ××°Ö®¾ªÌì¼×£¬×£ÄãÌìÌì¿ªÐÄ!")
+		Msg2Player("Gi¸ng Sinh vui vÎ! Chóc mõng b¹n nhËn ®­îc 'Giang hå t×nh l÷' Kinh Thiªn Gi¸p!")
 		return 0
 	else
 		AddItem(0,2,28,5,0,0,0)		-- ÆüµØÈ¹
-		Msg2Player("¹§Ï²ÄãµÃµ½ÐÂ½­ºþÇéÂÂÌ××°Ö®ÆüµØÈ¹£¬×£ÄãÌìÌì¿ªÐÄ!")
+		Msg2Player("Gi¸ng Sinh vui vÎ! Chóc mõng b¹n nhËn ®­îc 'Giang hå t×nh l÷' KhÊp §Þa QuÇn")
 		return 0
 	end
 	

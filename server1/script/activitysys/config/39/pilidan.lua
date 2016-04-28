@@ -24,10 +24,10 @@ function main(nItemIndex)
 	
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate < ValenAct_nStartDate then
-		Msg2Player("»î¶¯Ê±¼ä»¹Î´µ½!")
+		Msg2Player("Thêi gian ho¹t ®éng vÉn ch­a ®Õn!")
 		return 1
 	elseif nDate >= ValenAct_nEndDate then
-		Msg2Player("»î¶¯Ê±¼äÒÑ¹ý£¬µÀ¾ß¹ýÆÚ")
+		Msg2Player("Thêi gian ho¹t ®éng ®· ®i qua, ®¹o cô qu¸ h¹n")
 		return
 	end
 	
@@ -35,7 +35,7 @@ function main(nItemIndex)
 	local nMapId, nX, nY = GetWorldPos()
 
 	if IsInMap(nMapId) ~= 1 then
-		Msg2Player("¸ÃµÀ¾ßÖ»ÄÜÔÚ¶ñÀÇ¹ÈÊ¹ÓÃ!")
+		Msg2Player("§¹o cô nµy chØ cã thÓ sö dông t¹i ¸c Lang Cèc!")
 		return 1
 	end
 	
@@ -50,7 +50,7 @@ function main(nItemIndex)
 		end
 	end
 	if nSignIndex < 0 then
-		Msg2Player("Óë¶ñÀÇ×óÊ¹µÄ¾àÀëÌ«Ô¶£¬Çë×ß½üºóÊ¹ÓÃ!")
+		Msg2Player("Cù ly c¸ch qu¸ xa ¸c Lang T¶ Sø, xin h·y ®Õn gÇn råi h·y sö dông!")
 		return 1
 	end
 	
@@ -63,13 +63,13 @@ function main(nItemIndex)
 	local nPlayerIdxToNpcIdx = PIdx2NpcIdx(PlayerIndex)
 	KillNpcWithIdx(nSignIndex, nPlayerIdxToNpcIdx)
 	
-	if pActivity:CheckTask(TSK_PILIDAN,MAX_EXP,"´ò°Ü¶ñÀÇ×óÊ¹»ñµÃ¾­Ñé´ïµ½ÉÏÏÞ.","<") == 1 then
+	if pActivity:CheckTask(TSK_PILIDAN,MAX_EXP,"§¸nh b¹i ¸c Lang T¶ Sø nhËn ®­îc kinh nghiÖm ®¹t giíi h¹n.","<") == 1 then
 		pActivity:AddTask(TSK_PILIDAN, PER_EXP)
 		PlayerFunLib:AddExp(PER_EXP, 1, EVENT_LOG_TITLE, "use pilidan exp")
 	end
 
 	local tbAward = {
-		{szName="Ðþ¾§",tbProp={6,1,147,1,0,0},nExpiredTime=20120301,},
+		{szName="HuyÒn tinh",tbProp={6,1,147,1,0,0},nExpiredTime=20120301,},
 	}
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, "use pilidan item"})
 end

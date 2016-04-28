@@ -19,8 +19,8 @@ function OnDeath(nNpcIndex)
 			pAttackData.nScores = pAttackData.nScores + 1
 			pAttackData.nTotalScores = pAttackData.nTotalScores + 1
 		end
-		CallPlayerFunction(nPlayerIndex, Msg2Player, format("Äã°Ñ %s¹¥»÷³ÉÖØÉË, µÃ1·Ö.", szDeathManName))
-		Msg2Player(format("Äã±» %s ¹¥»÷ÖØÉË!", szName))
+		CallPlayerFunction(nPlayerIndex, Msg2Player, format("Ng­¬i ®· %s c«ng kİch träng th­¬ng, nhËn ®­îc 1 ®iÓm.", szDeathManName))
+		Msg2Player(format("Ng­¬i bŞ %s c«ng kİch träng th­¬ng!", szName))
 	end
 	local pDeatherData = pDungeon.tbPlayer[szDeathManName]
 	if pDeatherData then
@@ -31,8 +31,8 @@ function OnDeath(nNpcIndex)
 			pDeatherData.nLife = pDeatherData.nLife - 1
 			
 			local nTime = (10 + (5 - pDeatherData.nLife) * 5)
-			Msg2Player(format("Äã»¹ÓĞ %d´ÎÖØÉú»ú»á", pDeatherData.nLife))
-			Msg2Player(format("%dÃëºó½«½øÈëÕ½¶·×´Ì¬.", nTime))
+			Msg2Player(format("Ng­¬i cßn cã %d lÇn c¬ héi phôc sinh", pDeatherData.nLife))
+			Msg2Player(format("%d gi©y sau sÏ ®i vµo tr¹ng th¸i chiÕn ®Êu.", nTime))
 			TM_SetTimer( nTime  * 18,105,1,0);	-- ÏÂÏßÏûÊ§
 		end
 	end

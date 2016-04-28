@@ -11,9 +11,9 @@ function InitMission()
 		SetMissionS(i, "");
 	end;
 	
-	strGlbNews = "ÓÖÓĞÒ»ÅúĞÂÈËÀ´ÕÒÊ§ÂäµÄÀñÎï¡£"
+	strGlbNews = "L¹i thªm mét nhãm ng­êi míi ®i t×m quµ thÊt l¹c."
 	AddGlobalNews(strGlbNews);
-	gb_SetTask("Ê¥µ®»î¶¯", 1, 1);
+	gb_SetTask("Ho¹t ®éng Gi¸ng Sinh", 1, 1);
 	SetGlbValue(GLB_CH_PHASE, 1);	--¿ÉÒÔ¿ªÊ¼±¨ÃûÁË
 	StartMissionTimer(CH_PREPAREMISSIONID, CH_PREPARETIME, CH_RUNINTERVER); --
 end;
@@ -25,7 +25,7 @@ end;
 function EndMission()
 	StopMissionTimer(CH_PREPAREMISSIONID, CH_PREPARETIME);
 	SetGlbValue(GLB_CH_PHASE, 3); --½ûÖ¹ÔÙ½øÀ´±¨Ãû
-	gb_SetTask("Ê¥µ®»î¶¯", 1, 2);
+	gb_SetTask("Ho¹t ®éng Gi¸ng Sinh", 1, 2);
 end;
 
 function OnLeave()

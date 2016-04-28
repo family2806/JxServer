@@ -15,7 +15,7 @@ function main(nItemIndex)
 		return 1;
 	end;
 	
-	GiveItemUI("Ï×¶÷Ê¦½Ú","Çë°ÑËÄ¸ö×Ö£ºÒ»×ÖÎªÊ¦ ·ÅÈëºÏÊÊµÄ¿Õ¸ñÄÚ!", "sendgift", "no" );
+	GiveItemUI("D©ng lÔ ¢n S­","Xin ®Æt 4 ch÷ “NhÊt”,”Tù”,”Vi”,”S­” vµo « thİch hîp!", "sendgift", "no" );
 	return 1;
 end;
 
@@ -26,7 +26,7 @@ function sendgift(nCount)
 		return 1;
 	end;
 	if (nCount ~= 4) then
-		Say("Äã·ÅÈëµÄ×ÖÊı²»¶Ô!", 0);
+		Say("Sè ch÷ b¹n ®Æt vµo ch­a ®óng!", 0);
 		return
 	end
 	
@@ -34,7 +34,7 @@ function sendgift(nCount)
 	for i = 1, nCount do
 		idxItem = GetGiveItemUnit(i)
 		if (GetItemStackCount(idxItem) > 1) then
-			Say("²»ÄÜ·ÅÖØ¸´2¸ö×Ö", 0);
+			Say("Kh«ng thÓ ®Æt chång 2 ch÷!", 0);
 			return
 		end;
 	end;
@@ -60,7 +60,7 @@ function sendgift(nCount)
 	end;
 	
 	if (0 == bFull) then
-		Say("Äã·ÅµÄ×ÖÊı²»¶Ô", 0);
+		Say("B¹n ®Æt kh«ng ®óng sè ch÷!", 0);
 		return
 	end
 
@@ -79,7 +79,7 @@ end;
 --Í½µÜ½±Àø
 function prize()
 	AddItem(6, 1, 1295, 1, 0, 0, 0);
-	Msg2Player("Äã»ñµÃ <color=yellow>¸ßÍ½¿¨<color>, ´ø¸øÕÆÃÅÊÕÀñ!");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>ThÎ Cao §å<color>, mang ®Õn ch­ëng m«n nhËn th­ëng!");
 end;
 
 --Ê¦¸¸½±Àø
@@ -97,7 +97,7 @@ function prizemaster()
 	local OldPlayer = PlayerIndex;
 	PlayerIndex = masterIdx;
 	AddItem(6, 1, 1293, 1, 0, 0, 0);
-	Msg2Player("Äã»ñµÃ <color=yellow> ¶÷Ê¦¿¨<color>, ´ø¸øÕÆÃÅÊÕÀñ!");
+	Msg2Player("B¹n nhËn ®uîc <color=yellow> ThÎ ¢n S­<color>, mang ®Õn ch­ëng m«n nhËn th­ëng!");
 	PlayerIndex = OldPlayer;
 end;
 
@@ -106,13 +106,13 @@ function mastercheck()
 	local szName = GetName();
 	local masterName = GetMaster(szName);
 	if(not masterName or masterName == szName) then
-		Say("Õâ¸öÎïÆ·ÊÇ×ÓµÜ±í´ï¶ÔÊ¦¸µµÄ¸Ğ¶÷Ö®Çé£¬ÄãÏÖÔÚÃ»ÓĞÊ¦¸µ", 0);
+		Say("VËt phÈm nµy dïng ®Ó b¶y tá lßng biÕt ¬n cña ®Ö tö víi s­ phô. B¹n hiÖn ch­a cã S­ phô!", 0);
 		return 0;
 	end
 	
 	local masterIdx = SearchPlayer(masterName)
 	if(not masterIdx or masterIdx <= 0) then
-		Say("Ê¦¸µ²»ÔÚÏß£¬²»ÄÜÏ×Àñ", 0);
+		Say("S­ phô kh«ng trªn m¹ng, kh«ng thÓ d©ng lÔ!", 0);
 		return 0;
 	end
 	return 1;

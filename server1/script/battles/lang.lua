@@ -1,2 +1,2 @@
-BATTLE_STR_1 = "Õ½³¡»¹ÓÐ<color=red>%d <color=red>·ÖÖÓ¿ÉÒÔ±¨Ãû"
-BATTLE_STR_2 = "¶Ô²»Æð, ²Î¼Ó´Ë´Î·çÔÆÂÛ½£ÐèÒª½ÉÒ»¸öËÎ½ðÕÐ±øÁî"
+BATTLE_STR_1 = "ChiÕn tr­êng cßn <color=red>%d <color=red>phót n÷a cã thÓ b¸o danh"
+BATTLE_STR_2 = "Xin lçi, tham gia ®ît Phong V©n LuËn KiÕm nµy, cÇn ph¶i nép 1 Phong V©n Chiªu Binh LÖnh"

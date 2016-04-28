@@ -3,7 +3,7 @@ Include("\\script\\global\\×ÏÉ«¼°»Æ½ğ×°±¸ÖıÔì.lua")
 
 function main(sel)
 
-Say("Ìú½³£º×Ô¹ÅÃÀ¾ÆÅäÓ¢ĞÛ¡¢Ãû½£ÅäÏÀÊ¿£¬ËäÈ»Ò»Ö¦ÁøÌõÒà¿ÉÉ±ÈË£¬µ«ÊÇÏ°ÎäÖ®ÈË£¬ÓĞË­»á²»Ï²»¶±¦½£ÀûÈĞÄØ£¿", 2, "½»Ò×/yes", "²»½»Ò×/no");
+Say("Thî rÌn  tõ x­a r­îu ngon xøng anh hïng  danh kiÕm xøng hiÖp sÜ , mÆc dï mét chi liÔu con còng nh­ng giÕt ng­êi , nh­ng lµ ng­êi tËp vâ , cã ai sÏ kh«ng thİch b¶o kiÕm l­ìi dao s¾c bĞn ®©y ? ", 2, "Giao dŞch /yes", "Kh«ng giao dŞch /no");
 
 end;
 

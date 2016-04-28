@@ -150,7 +150,7 @@ for i = 1 , 500 do
    		Earn(Bonus + MS_SIGN_MONEY);
    		AddLeadExp(500);				-- By Dan(Í³ÂÊ¾­Ñé´Ó1000¸ÄÎª500)
    		AddRepute(3);					-- By Dan(ÉùÍû´Ó20¸ÄÎª3)
-   		Msg2Player("¹§Ï²¹ó·½»ñµÃÊ¤Àû£¡ÄãµÄÃûÍûÔö¼Ó3µã£¬Í³Áì¾­ÑéÔö¼Ó500µã!")
+   		Msg2Player("Xin chóc mõng phe b¹n ®· giµnh chiÕn th¾ng! Danh väng t¨ng 3 ®iÓm, Tµi l·nh ®¹o t¨ng 500 ®iÓm!")
 
 
 		randitem = random(1, sj_itemcount);
@@ -158,7 +158,7 @@ for i = 1 , 500 do
 			local szItemName = sj_aryItems[randitem][1];
 			local arySelItemID =  sj_aryItems[randitem][2];
 			AddItem( arySelItemID[1], arySelItemID[2], arySelItemID[3], arySelItemID[4], arySelItemID[5], arySelItemID[6], 0);
-			Msg2Player("¹§Ï²Äã»ñµÃ<#>"..szItemName);
+			Msg2Player("Xin chóc mõng b¹n nhËn ®­îc <#>"..szItemName);
 		end;
 		
    		
@@ -186,7 +186,7 @@ if (MaxNpc_idx > 0) then
 		p3 = random(0,4);
 		p4 = random(50,70);
 		AddItem(0,2,p1,p2,p3,p4,6,6,0,0,0,0);
-		resultstr = "<#> ÄãÉ±NPCµĞÈË×î¸ß·ÖÊıÎª"..GetName().."<#>, ÄãÉ±ËÀÁË"..MaxNpc_c.."<#> µĞÈË!";
+		resultstr = "<#> Tæng ®iÓm tiªu diÖt Npc phe ®Şch cao nhÊt thuéc vÒ "..GetName().."<#>, b¹n tiªu diÖt "..MaxNpc_c.."<#> kÎ ®Şch!";
 	else
 	--¸øÒÂ·ş ,²ÎÊıÎª0,2,0-13(0,6 ÄĞ, 7,13Å®),8-9,0-4,70-99
 		p1 = random(7,13);
@@ -194,10 +194,10 @@ if (MaxNpc_idx > 0) then
 		p3 = random(0,4);
 		p4 = random(50,70);
 		AddItem(0,2,p1,p2,p3,p4,6,6,0,0,0,0);
-		resultstr = "<#> ÄãÉ±NPCµĞÈË×î¸ß·ÖÊıÎª"..GetName().."<#>,ÄãÉ±ËÀÁË"..MaxNpc_c.."<#> µĞÈË!";
+		resultstr = "<#> Tæng ®iÓm tiªu diÖt Npc phe ®Şch cao nhÊt thuéc vÒ "..GetName().."<#>, b¹n tiªu diÖt "..MaxNpc_c.."<#> kÎ ®Şch!";
 	end;
 	AddRepute(30)
-	Msg2Player("Äã»ñµÃ30µãÃûÍûÖµºÍÒ»Ì××°±¸ !");
+	Msg2Player("B¹n nhËn ®­îc 30 ®iÓm danh véng vµ mét bé trang bŞ!");
 end;
 
 -----------PKÈËÊı×î¶àµÄÈËµÃµ½Ò»°ÑÎäÆ÷
@@ -211,8 +211,8 @@ if (MaxPK_idx > 0) then
 	--Msg2Player("Äã»ñµÃÁËÒ»°ÑÎäÆ÷!");
 	AddRepute(15)
 	AddLeadExp(5000);				-- By Dan(Í³ÂÊ¾­Ñé´Ó1000¸ÄÎª500)
-	Msg2Player("¹§Ï²£¬ÔÚ´Ë´ÎÕ½ÒÛÖĞ£¬ÄãÊÇÓµÓĞPKÖµ×î¸ßµÄÈË£¬»ñµÃ15µãÃûÍûÖµ£¬Í³Áì¾­ÑéÔö¼Ó5000µã!")
-	resultstr = resultstr .."<#>¡£PKÍæ¼Ò×î¸ßÕßÎª"..GetName().."<#>,ÊıÁ¿:"..MaxPK_c;
+	Msg2Player("Xin chóc mõng, trong trËn nµy b¹n lµ ng­êi cã chØ sè PK cao nhÊt! NhËn ®­îc 15 ®iÓm danh väng, tµi l·nh ®¹o t¨ng 5000 ®iÓm!")
+	resultstr = resultstr .."<#>Binh sÜ cã chØ sè PK cao nhÊt lµ "..GetName().."<#>,sè l­îng :"..MaxPK_c;
 end;
 
 return resultstr;
@@ -236,7 +236,7 @@ SetCreateTeam(0);
 SetTask(SJTASKID, MS_SJTASKID);
 SetTask(SJTASKKEY, GetMissionV(MS_KEY));
 SetTask(SJTASKVLAUE, 2);
-str = GetName().."<#>¼ÓÈëÁË½ğ·½ÕóÓª";
+str = GetName().."<#>tham gia doanh tr¹i phe Kim";
 Msg2MSAll(1,str);
 SetPKFlag(1)
 ForbidChangePK(1);
@@ -244,7 +244,7 @@ SetDeathScript("\\script\\missions\\ËÎ½ğÕ½³¡pkÕ½\\Ö÷½ÇËÀÍö1.lua");
 
 --´ËÎªÍæ¼Ò½»ÁË±¨Ãû·Ñ£¬ÕıÊ½¼ÓÈë¶ÓÎéÊÇÌáÊ¾¶Ô»°
 
-Talk(2, "", "½ğ¹úµÄÓÂÊ¿£¬»¶Ó­ÄãµÄµ½À´£¡ÏÖÔÚËÎ¾üÉĞÎ´³öÏÖ£¬´ó¼ÒÏÈÉÔÊÂĞİÏ¢¡£", "·¢ÏÖËÎ¾üºó£¬´ó¼ÒÒªÌı´ÓÊ×ÁìºÅÁî£¬ÏÈÈ¡ËÎ¾üÖ÷½«Ê×¼¶ÕßÓĞÖØÉÍ!");
+Talk(2, "", "Chµo mõng Kim binh sÜ! HiÖn t¹i Tèng binh vÉn ch­a xuÊt hiÖn, chóng ta h·y nghØ ng¬i vµ chê lÖnh", "§· t×m thÊy Tèng binh, lËp tøc chÊp hµnh mÖnh lÖnh!");
 end;
 -------------------------------------------------------------------------
 
@@ -254,7 +254,7 @@ AddMSPlayer(1,1);
 SetCurCamp(1);
 SetTaskTemp(200,1);
 SetFightState(0);
-str = GetName().."<#>¼ÓÈëÁËËÎ·½ÕóÓª";
+str = GetName().."<#>tham gia doanh tr¹i phe Tèng";
 SetDeathScript("\\script\\missions\\ËÎ½ğÕ½³¡pkÕ½\\Ö÷½ÇËÀÍö.lua");
 SetLogoutRV(1);
 SetCreateTeam(0);
@@ -269,7 +269,7 @@ SetTask(SJTASKKEY, GetMissionV(MS_KEY));
 SetTask(SJTASKVLAUE, 1);
 SetPKFlag(1)
 ForbidChangePK(1);
-Talk(2,"","ÄãºÃ£¬»¶Ó­Äã¼ÓÈëËÎ¾ü£¬ÏÖÔÚ½ğ±øÉĞÎ´³öÏÖ£¬´ó¼ÒÏÈÉÔÊÂĞİÏ¢¡£","Ò»µ©Ç°·½ºÅ½Ç´µÏì£¬Õ½¶·¾Í»á¿ªÊ¼¡£");
+Talk(2,"","Chµo mõng Tèng binh sÜ! HiÖn t¹i Kim binh vÉn ch­a xuÊt hiÖn, chóng ta h·y nghØ ng¬i vµ chê lÖnh","§· t×m thÊy Kim binh, lËp tøc chÊp hµnh mÖnh lÖnh!");
 end;
 
 -------------------------------------------------------------------------
@@ -295,7 +295,7 @@ if (Taskid == MS_SJTASKID) then
 			if (State == 2) then
 				SetFightState(1);
 			end;
-			Msg2Player("»¶Ó­ÄãÔÙ´Î»Øµ½Õ½³¡!");
+			Msg2Player("Chµo mõng b¹n trë l¹i víi chiÕn tr­êng!");
 		elseif (State == 2) then
 			return 2 --±íÊ¾·Çµ±Ç°ÕóÓª
 		else 
@@ -362,22 +362,22 @@ function ShowTheKing(Group)
 
 if (Group == 1) then 
 	HideNpc("ÄÏËÎ½«¾ü",1);
-	str1 = "Çé±¨:Ä¿Ç°ÎÒ·½Õ½ÊÂ³Ô½ô£¬´ó½«¾üÒÑÇ××Ôµ½ÕóÇ°¶½Õ½£¬ÊÄÓÚÕóµØ¹²´æÍö! ½«Ê¿ÃÇ¼ÓÓÍ»÷ÍËÀ´·¸µĞ¾ü£¬Á¢±£´ó½«¾üÎŞ°­!";
-	str2 ="Çé±¨:½«Ê¿ÃÇ! µĞ·½ÉËÍö²ÒÖØ£¬µĞ·½´ó½«ÒÑ¾­×ø²»×¡ÁË! ½«Ê¿ÃÇ¼ÌĞøÅ¬Á¦£¬É±ËÀµĞ·½´ó½«!";
+	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Kim ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
+	str2 ="H·y tiÕp tôc nç lùc tiªu diÖt t­íng ®Şch!";
 	Msg2MSGroup(1,str1, 1);
 	Msg2MSGroup(1,str2, 2);
-	str3 = "<#>ËÎ½ğ´óÕ½Õ½ÒÛ±¨¸æ:ËÎ·½Ö÷½«ÒÑÔÚËÎÓªÖĞ³öÏÖ!";
+	str3 = "<#>ChiÕn tr­êng Tèng Kim:Chñ t­íng phe Tèng ®· xuÊt hiÖn!";
 	AddGlobalCountNews(str3 , 3);
 	return 0
 end;
 
 if (Group == 2) then
 	HideNpc("½ğ¹ú´ó½«",1);
-	str1 = "Çé±¨:Ä¿Ç°ÎÒ·½Õ½ÊÂ³Ô½ô£¬´ó½«¾üÒÑÇ××Ôµ½ÕóÇ°¶½Õ½£¬ÊÄÓÚÕóµØ¹²´æÍö! ½«Ê¿ÃÇ¼ÓÓÍ»÷ÍËÀ´·¸µĞ¾ü£¬Á¢±£´ó½«¾üÎŞ°­!";
-	str2 = "Çé±¨:½«Ê¿ÃÇ! µĞ·½ÉËÍö²ÒÖØ£¬µĞ·½´ó½«ÒÑ¾­×ø²»×¡ÁË! ½«Ê¿ÃÇ¼ÌĞøÅ¬Á¦£¬É±ËÀµĞ·½´ó½«!";
+	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Kim ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
+	str2 = "H·y tiÕp tôc nç lùc tiªu diÖt t­íng ®Şch!";
 	Msg2MSGroup(1,str1, 2);
 	Msg2MSGroup(1,str2, 1);
-	str3 = "<#>ËÎ½ğ´óÕ½Õ½ÒÛ±¨¸æ:½ğ¹úÖ÷½«ÒÑÔÚÕóÓª³öÏÖ£¬Ç××Ô¶½Õ½!";
+	str3 = "<#>ChiÕn tr­êng Tèng Kim:Chñ t­íng phe Kim ®· xuÊt hiÖn!";
 	AddGlobalCountNews(str3 , 3);
 	return 0
 end;

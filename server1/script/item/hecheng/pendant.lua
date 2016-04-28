@@ -27,7 +27,7 @@ function ComputePendantWorth(nCount)
 	local wnum = 0
 
 	if(nCount == 0) then
-		Talk(1,"GiveUIForThing","<#>É¶¶¼²»¸ø£¬ÄãÏë¸ÉÉ¶Ñ½¡£")
+		Talk(1,"GiveUIForThing","<#> C¸i g× còng kh«ng ®­a, ng­¬i muèn lµm g× ®©y!")
 		return nil
 	end
 	for i=1,nCount do
@@ -35,14 +35,14 @@ function ComputePendantWorth(nCount)
 		local g, d, p, l, f = GetItemProp(itemIdx)
 
 		if((g ~= 4 or (d < 508 or d > 518)) and (g ~= 0 or (d~= 5 and d~= 7 ))) then --´íÎóµÀ¾ß  
-			Talk(1,"GiveUIForThing","<#>Äã¸øµÄÊÇÏºÃ×¶«Î÷Ñ½£¬Õ¦¿´²»¶®à¿£¿")
+			Talk(1,"GiveUIForThing","<#> Ng­¬i ®­a cho ta c¸i qu¸i g× thÕ nµy?")
 			return nil
 		end
 		if(g == 0) then -- ÎäÆ÷
 			wnum = wnum + 1
 
 			if (wnum > 1) then	--Ö»ÄÜ·ÅÒ»¼ş×°±¸
-				Talk(1,"GiveUIForThing","<#>Äã²»Òª°ÑÏºÃ×À¬»ø¶«¶«¶¼¸øÅ¼°¡£¬Å¼ÓÖ²»ÊÇÀ¬»øÍ°£¬ÎØ¡­¡­¡£")
+				Talk(1,"GiveUIForThing","<#> Ng­¬i ®­a c¸i qu¸i g× thÕ?……")
 				return nil
 			end
 			det = d
@@ -53,7 +53,7 @@ function ComputePendantWorth(nCount)
 			function checkGiftCount(idx,count)  --¼ì²âÉñÃØµÀ¾ßµÄÊıÁ¿
 				local num = GetItemStackCount(idx)
 				if(count + num > MAXGIVENUM) then -- ÊıÁ¿Ì«¶à
-					Talk(1,"GiveUIForThing","<#>Äã¸øµÄ¶«Î÷Ì«¶à£¬¿´²»Çå°¡¡£")
+					Talk(1,"GiveUIForThing","<#> §å ng­¬i cho nhiÒu qu¸, nh×n kh«ng râ g× hÕt!")
 					return nil
 				end
 				return num
@@ -74,11 +74,11 @@ function ComputePendantWorth(nCount)
 		end
 	end
 	if(worth ==0) then
-		Talk(1,"GiveUIForThing","<#>¶Ô²»Æğ£¬ÖÁÉÙĞèÒªÒ»¸ö¼¦ÄêÉñÃØÀñÎï¡£")
+		Talk(1,"GiveUIForThing","<#> Xin lçi! İt nhÊt cÇn mét LÔ vËt n¨m DËu.")
 		return nil
 	end
 	if (wnum == 0) then
-		Talk(1,"GiveUIForThing","<#>¶Ô²»Æğ£¬±ØĞëÒªÒ»¼şÍ·´÷£¨»òĞ¬×Ó£©¡£")
+		Talk(1,"GiveUIForThing","<#> Xin lçi cÇn mét c¸i nãn (hoÆc ®«i giµy) ")
 		return nil
 	end
 
@@ -107,7 +107,7 @@ function ConvertPendant(nCount)
 	--ÒÑ¾­µÃµ½ºÏÀíµÄ¼ÛÖµÁ¿£¬É¾³ıËùÓĞÎïÆ·£¬Ñ¡Ôñ¶ÔÓ¦µÄ½±Àø
 	local idx = Convert:convertpendant(worth, five)
 	if(not idx) then --Ê§°Ü£¬Ã»ÓĞÑ¡³öÈÎºÎ¶«Î÷
-		Talk(1,"GiveUIForThing","<#>ß×£¬Ê§°ÜÁË£¬Õ¦»ØÊÂ°¡£¬Õ¦»ØÊÂ°¡¡­¡­")
+		Talk(1,"GiveUIForThing","<#> ThÊt b¹i råi! Hu hu!")
 		return
 	end
 
@@ -158,10 +158,10 @@ function PayPendant(bonusIdx, det, par, level, five)
 						Convert.__pendanttabfile:getCell(TF_BONUS_P6,bonusIdx),
 						Convert.__pendanttabfile:getCell(TF_BONUS_P7,bonusIdx))
 	SetRandSeed(_nSeed)
-	WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-			"£¬¶Ò»»µÃµ½"..pendantmsg[par + 1][level].."£¬¼ÛÖµÁ¿Îª£º"..
+	WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+			", ®æi ®­îc"..pendantmsg[par + 1][level]..", gi¸ trŞ lµ:"..
 			Convert.__pendanttabfile:getCell(TF_BONUS_WORTH,bonusIdx))
-	Talk(1, "", "ÄãºÏ³É³öÁËÒ»¼ş"..pendantmsg[par + 1][level])
-	Msg2Player("Äã»ñµÃÒ»¼ş"..pendantmsg[par + 1][level])
+	Talk(1, "", "B¹n hîp thµnh ®­îc 1 "..pendantmsg[par + 1][level])
+	Msg2Player("B¹n nhËn ®­îc 1 "..pendantmsg[par + 1][level])
 	return
 end

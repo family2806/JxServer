@@ -101,7 +101,7 @@ function finalCompound( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcItemVa
 			local nCommonItemVal = GetGlbValue( GLBID_COMMON_VAL_SUM );
 			SetGlbValue( GLBID_COMMON_VAL_SUM, nCommonItemVal );
 			if( nCommonItemVal + nDesItemValCut >= COMMON_SUM_MAX_VAL ) then
-				local strMsg = format( "[¾¯±¨] %s ½ñÈÕ[ºÏ³É]µÄ×ÏÉ«×°±¸Ïà¹ØÎïÆ·µÄ¼ÛÖµ×ÜÁ¿£¨%0.2fE£©£¬ÒÑ³¬¹ı¼ÛÖµ×ÜÁ¿¾¯±¨ãĞÖµ£¨%0.2fE£©£¬¿ÉÄÜ³öÏÖË¢ÎïÆ·ÏÖÏó£¬Çë¾¡¿ìÁªÏµÑĞ·¢²¿£¡£¡£¡", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
+				local strMsg = format( " [C¶nh b¸o]%s Tæng gi¸ trŞ vËt phÈm t­¬ng quan cña Trang bŞ HuyÒn Tinh [ghĞp]h«m nay (%0.2fE) , ®· v­ît qu¸ møc c¶nh b¸o tæng gi¸ trŞ (%0.2fE) , cã thÓ xuÊt hiÖn hiÖn t­îng quĞt vËt phÈm, h·y liªn hÖ khÈn víi bé phËn nghiªn cøu!!!  ", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
 				print( strMsg );
 				WriteLog( strMsg );
 			end

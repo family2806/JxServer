@@ -34,12 +34,12 @@ function main(nItemIndex)
 	end
 	
 	if GetBitTask(Data.nTaskId, 16, 16) >= nMaxCount then
-		Talk(1, "", format("Ã¿¼¾ÁªÈü£¬Ã¿ÈËÖ»ÄÜÊ¹ÓÃ%d ¸ÃµÀ¾ß.", nMaxCount))
+		Talk(1, "", format("Mçi quı liªn cuéc so tµi , mçi ng­êi chØ cã thÓ sö dông %d nªn ®¹o cô .", nMaxCount))
 		return 1
 	end
 	
 	if GetLevel() < 120 or IsCharged() ~= 1 then
-		Talk(1, "", "120¼¶ÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.")
+		Talk(1, "", "120 cÊp ®· sung trŞ gi¸ nhµ ch¬i míi cã thÓ sö dông .")
 		return 1
 	end
 	

@@ -15,12 +15,12 @@ TB_CITYWAR_ARRANGE = {
 			
 -----¹ºÂò¹¥³ÇÕ½µÀ¾ß start
 function AskDeal()
-	Say("¸¨Öú¹¥³ÇµÄÓÃ¾ßÊ®·ÖÓĞĞ§ÓÃ, Ö»ÄÜÓÃÔª±¦¹ºÂò! ¿Í¹ÛÈç¹û´í¹ıÁË²»ÂòÕæµÄ¾ÍÊÇÒÅº¶ÁË!", 4, 
+	Say("Dông cô hç trî c«ng thµnh chiÕn cùc kú hiÖu dông, chØ cã thÓ dïng Nguyªn b¶o ®Ó mua! Kh¸ch quan nÕu bá lì kh«ng mua th× thËt v« cïng ®¸ng tiÕc!", 4, 
 	--"»ëÊ¯ÁÑ/DealBuy", 
-	"ÄõÁú³å³µ/#DealBuy(1)", 
-	"ÔÆ¼¯±ø·û/#DealBuy(2)", 
-	"Íç¹Ì±ø·û/#DealBuy(3)", 
-	"²»ĞèÒª/OnCancelBuy");
+	"NghiÖt Long Xung Xa/#DealBuy(1)", 
+	"V©n Kú Binh phï /#DealBuy(2)", 
+	"Ngoan Cæ Binh phï /#DealBuy(3)", 
+	"Kh«ng cÇn ®©u/OnCancelBuy");
 end;
 
 function DealBuy(ItemID)
@@ -35,7 +35,7 @@ function DealBuy(ItemID)
 	else
 		return
 	end;
-	Say("ÒòÎªÂòµÄÈËºÜ¶à! ¿Í¹ÛÖ»ÄÜÂòÒ»´Î!Í¬ÒâÂğ?", 2, "ºÃ/DoBuy", "ÎÒÏëÒ»ÏÂ/OnCancelBuy");
+	Say("Do qu¸ nhiÒu ng­êi mua! Kh¸ch quan chØ cã thÓ mua mét lÇn mµ th«i!Cã ®ång ı kh«ng?", 2, "Muèn/DoBuy", "ta nghÜ l¹i xem /OnCancelBuy");
 end;
 
 function DoBuy()
@@ -44,15 +44,15 @@ function DoBuy()
 		if (GetItemCountEx(343) > 0) then
 			DelItemEx(343);
 			AddItem(6,1,TheItem,1,0,0);
-			WriteLog(format("%s ÓÃ343¸ö½ğÔª±¦Âò1¸ö¹¥³ÇµÀ¾ß>> %s",GetName(),TheItem));
-			Say("¿Í¹ÙÕæÊ¶»õ!", 0);
+			WriteLog(format("%s dïng kim nguyªn b¶o 343 ®Ó mua 1 ®¹o cô c«ng thµnh >> %s",GetName(),TheItem));
+			Say("Kh¸ch quan thËt biÕt xem hµng!", 0);
 		else
-			Say("¿Í¹ÛÊÇºÍĞ¡ÈË¿ªÍæĞ¦»¹ÊÇÕæµÄÃ»ÓĞÔª±¦?", 0);
+			Say("Kh¸ch quan ®ang trªu chäc tiÓu nh©n hay thËt sù kh«ng cã Nguyªn B¶o?", 0);
 		end;
 	end;
 end;
 function OnCancelBuy()
-	Say("×£ÒåÊ¿Æì¿ªµÃÊ¤, ÔçÈÕ¿­Ğı!", 0);
+	Say("Chóc nghÜa sÜ kú khai ®¾c th¾ng, sím ca khóc kh¶i hoµn!", 0);
 end;
 -----¹ºÂò¹¥³ÇÕ½µÀ¾ß end
 
@@ -78,7 +78,7 @@ end;
 function check_award_condition(city_index, show_talk)
 	if (city_index == 0) then
 		if (show_talk == 1) then
-			Talk(1, "", "<#> Ö»ÓĞÕ¼Áì³ÇÊĞµÄ°ïÅÉ²Å¿ÉÒÔÁì½±, ´øÁìÎÒµÄĞÖµÜÃÇÈ¥Õ¼ÁìÒ»×ù³ÇÈ¥!")
+			Talk(1, "", "<#> ChØ cã bang ph¸i chiÕm ®­îc thµnh thŞ míi nhËn ®­îc phÇn th­ëng, h·y dÉn anh em cña m×nh ®i chiÕm mét thµnh nµo ®i!")
 		end
 		return 0
 	end
@@ -96,7 +96,7 @@ function check_award_condition(city_index, show_talk)
 	local hour = tonumber(GetLocalDate("%H"))
 	if (wday ~= 1 or hour < 9 or hour >= 20) then
 		if (show_talk == 1) then
-			Talk(1, "", "<#>Ã¿ÖÜ´Ó9:00~20:00 ÊÇÁì½±Ê±¼ä, µ½Ê±ºòÔÙÈ¥")
+			Talk(1, "", "<#> Mçi tuÇn tõ 9:00~20:00 lµ thêi gian l·nh th­ëng, ®Õn giê ®ã tíi ®i")
 		end
 		return 0
 	end
@@ -105,7 +105,7 @@ function check_award_condition(city_index, show_talk)
 	if (ndate == get_citybonus_task(city_index, CITYINFO_LEAGUETASK_BONUS)) then
 		if (get_city_orecount(city_index) <= get_citybonus_task(city_index, CITYINFO_LEAGUETASK_COUNT)) then
 			if (show_talk == 1) then
-				Talk(1, "", "<#>ÕâÖÜµÄ½±Æ·ÒÑÁìÍê£¬ÏÂÖÜÔÙÀ´°É¡£")
+				Talk(1, "", "<#>PhÇn th­ëng tuÇn nµy ®· nhËn hÕt, tuÇn sau h·y ®Õn nhĞ.")
 			end
 			return 0
 		end;
@@ -122,11 +122,11 @@ TSK_CITYTONG_DATE = 2518
 function talk_citytong_award()
 	local city_index = gettongownercity()
 	if (check_award_condition(city_index, 1) == 1) then
-		Say("<#>Õ¼³Ç°ï»á½±Æ·. Õ¼³Ç°ï³ÉÔ±¿ÉÒÔµ½ÎäÁÖ´«ÈË´¦ÁìÈ¡5¼¶Ğş¾§, Ã¿ÈË¿ÉÒÔÁìÈ¡1¿Å. ½çÏŞ:¶¼³Ç(ÁÙ°²ºÍãê¾©) ÁìÈ¡300¿Å5¼¶Ğş¾§, ³ÇÊĞ(ÆäËû³ÇÊĞ) ÁìÈ¡200¿Å5¼¶Ğş¾§. ÔÚ18h00Ö®ºóÈç¹û»¹Ã»ÓĞÁìÍêµÄ»°£¬ÄÇÃ´°ïÖ÷¿ÉÒÔÔÚ20h00 Ö®Ç°ÔÙÁìÈ¡.",
+		Say("<#>PhÇn th­ëng bang chiÕm thµnh. Thµnh viªn bang chiÕm thµnh cã thÓ ®i t×m Vâ l©m truyÒn nh©n ®Ó nhËn phÇn th­ëng huyÒn tinh cÊp 5, mçi ng­êi cã thÓ nhËn 1 viªn. Giíi h¹n: §« Thµnh (L©m An vµ BiÖn Kinh) nhËn 300 viªn cÊp 5, Thµnh ThŞ (nh÷ng thµnh thŞ kh¸c) nhËn 200 viªn huyÒn tinh cÊp 5. NÕu sau 18h00 vÉn ch­a nhËn hÕt th× bang chñ tr­íc 20h00 cã thÓ nhËn sè cßn l¹i.",
 			3,
-			"<#>ÎÒÏëÁìÈ¡Ğş¾§¿óÊ¯/#take_tong_award(1)",
-			"<#>ÎÒÊÇ°ïÖ÷£¬ÔÙÀ´ÁìÒ»´Î½±Æ·/take_tong_resaward",
-			"<#>ÎÒÔİÊ±²»Áì/nothing")
+			"<#>Ta muèn nhËn huyÒn tinh kho¸ng th¹ch/#take_tong_award(1)",
+			"<#>Ta lµ bang chñ, ®Õn ®Ó nhËn phÇn th­ëng cßn l¹i/take_tong_resaward",
+			"<#> T¹m thêi ta kh«ng l·nh ®©u/nothing")
 	end
 end
 
@@ -134,7 +134,7 @@ end
 function take_tong_award(count)
 	-- Ò»¸öºì°üÕ¼Ò»¸ö¸ñ×Ó
 	if (CalcFreeItemCellCount() < count) then
-		Talk(1, "", "<#>ÄãµÄ±³°üÂúÁË£¬ÕûÀíºÃÔÙÀ´Áì½±.")
+		Talk(1, "", "<#> Hµnh trang cña ng­¬i ®· ®Çy, chØnh lı l¹i xong míi ®Õn l·nh th­ëng.")
 		return
 	end
 	
@@ -145,7 +145,7 @@ function take_tong_award(count)
 	
 	local nH = tonumber(GetLocalDate("%H"));
 	if (nH >= 18) then
-		Talk(1, "", "<#>Ã¿¸ö°ï»áµÄÁì½±Ê±¼äÊÇ9h00µ½18h00, Çë×¼Ê±À´Áì½±. ¶ÔÓÚ»¹Ã»ÓĞÁìÈ¡µÄ½±Æ·, Í¨Öª°ïÖ÷20h00Ç°À´ÁìÈ¡.");
+		Talk(1, "", "<#>Thêi gian nhËn th­ëng cña mçi bang héi tõ 9h00 ®Õn 18h00, h·y ®Õn ®óng giê nµy ®Ó nhËn th­ëng. §èi víi phÇn th­ëng ch­a ®­îc nhËn, h·y th«ng b¸o cho bang chñ ®Õn nhËn tr­íc 20h00.");
 		return 0;
 	end;
 	local today = tonumber(GetLocalDate("%Y%m%d"));
@@ -154,11 +154,11 @@ function take_tong_award(count)
 		AddItem(6,1,147,5,1,1);
 		SetTask(TSK_CITYTONG_DATE, today);
 		add_citybonus_task(city_index, CITYINFO_LEAGUETASK_COUNT, 1);
-	local msg =	format("%s %s (%s) ÁìÈ¡ %s 5¼¶Ğş¾§´Ó½ğÉ½ÕÆÃÅÈË´¦",GetLocalDate("[%y-%m-%d %H:%M] "),GetAccount(),GetName(),count)
+	local msg =	format("%s %s (%s) nhËn %s huyÒn tinh cÊp 5 tõ Kim s¬n ch­ëng m«n nh©n",GetLocalDate("[%y-%m-%d %H:%M] "),GetAccount(),GetName(),count)
 		WriteLog(msg);
-		Talk(1, "", "<#>ÕâÊÇÄãµÄ½±Æ·£¬ÇëÁìÈ¡.")
+		Talk(1, "", "<#>§©y lµ phÇn th­ëng cña ng­¬i, h·y nhËn lÊy.")
 	else
-		Talk(1, "", "<#>ÄãÒÑ¾­ÁìÁËÕâÖÜµÄ½±Æ·, µÈÏÂÖÜ°É¡£");
+		Talk(1, "", "<#>Ng­¬i ®· nhËn phÇn th­ëng tuÇn nµy råi, ®îi tuÇn sau nhĞ?");
 	end
 end
 
@@ -170,18 +170,18 @@ function take_tong_resaward()
 	
 	local nH = tonumber(GetLocalDate("%H"));
 	if (nH < 18 or nH >= 20) then
-		Talk(1, "", "<#>°ïÖ÷¿ÉÒÔÔÚ18h00µ½20:00µÚ¶ş´ÎÁì½±Æ·£¬Çë×¼Ê±À´Áì.");
+		Talk(1, "", "<#>Bang chñ vµo mçi thø hai cã thÓ ®Õn nhËn phÇn th­ëng cßn l¹i tr­íc 18h00 ®Õn 20h00, h·y ®Õn ®óng giê ®Ó nhËn.");
 		return 0;
 	end;
 	
 	if (GetName() ~= GetTongMaster()) then
-		Talk(1, "", "<#>Ö»ÓĞ°ïÖ÷²Å¿ÉÒÔÔÙ´ÎÁìÈ¡ÊôÓÚ°ï»á½±Æ·. Çë¸æÖª¹ó°ï°ïÖ÷ÔÚ20h00Ö®Ç°µ½ÕâÁì½±.");
+		Talk(1, "", "<#>ChØ cã bang chñ míi cã thÓ nhËn phÇn th­ëng bang héi cßn l¹i. H·y th«ng b¸o cho bang chñ quİ bang ®Õn ®©y nhËn tr­íc 20h00.");
 		return 0;
 	end;
 	
 	local nFreecell = CalcFreeItemCellCount();
 	if (nFreecell < 20) then
-		Talk(1, "", "<#>±³°ü¿Õ¼ä²»¹»£¬ÇëÕûÀí±³°ü.")
+		Talk(1, "", "<#>Hµnh trang kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.")
 		return 0;
 	end;
 	
@@ -191,9 +191,9 @@ function take_tong_resaward()
 		AddItem(6,1,147,5,1,1);
 	end;
 	add_citybonus_task(city_index, CITYINFO_LEAGUETASK_COUNT, nCount);
-	local msg =	format("%s %s (%s) ÁìÈ¡ %s 5¼¶Ğş¾§´Ó½ğÉ½ÕÆÃÅÈË",GetLocalDate("[%y-%m-%d %H:%M] "),GetAccount(),GetName(),count)
+	local msg =	format("%s %s (%s) nhËn %s huyÒn tinh cÊp 5 tõ Kim s¬n ch­ëng m«n nh©n",GetLocalDate("[%y-%m-%d %H:%M] "),GetAccount(),GetName(),count)
 	WriteLog(msg);
-	Say(format("ÕâÊÇ¹ó°ïµÄ½±Æ·, %s¿ÅĞş¾§»¹ÓĞ!",nCount), 0);
+	Say(format("§©y lµ phÇn th­ëng cña quİ bang, %s viªn huyÒn tinh cßn l¹i!",nCount), 0);
 end;
 
 function get_city_orecount(cityid)

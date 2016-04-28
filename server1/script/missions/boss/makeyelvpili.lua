@@ -1,4 +1,4 @@
---Ò®ÂÉ±ÙÀë(563)£¬ÉúÓÚÃ¿Ìì23£º05£¬ÔÚ226,1724,3227
+--Gia LuËt TŞ Ly(563)£¬ÉúÓÚÃ¿Ìì23£º05£¬ÔÚ226,1724,3227
 function main()
 	mapindex = SubWorldID2Idx(226)
 	if (mapindex < 0 ) then
@@ -8,6 +8,6 @@ function main()
 	bosslvl = 95
 	posx = 1724*32
 	posy = 3227*32
-	AddNpcEx(bossid,bosslvl,3,mapindex,posx,posy,1, "Ò®ÂÉ±ÙÀë", 1)
-	AddGlobalNews("ÌıËµÌìÈÌ½ÌµÄÓÒÊ¹Ò®ÂÉ±ÙÀëÒÑ¾­³öÏÖÔÚ¶Ø»ÍµÄÉ³Ä®ÃÔ¹¬(215, 201). ")
+	AddNpcEx(bossid,bosslvl,3,mapindex,posx,posy,1, "Gia LuËt TŞ Ly", 1)
+	AddGlobalNews("Nghe nãi H÷u sø cña Thiªn NhÉn Gi¸o Gia LuËt TŞ Ly ®· xuÊt hiÖn ë Mª Cung sa m¹c (215, 201) §«n Hoµng. ")
 end; 

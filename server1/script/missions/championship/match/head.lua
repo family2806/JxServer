@@ -10,9 +10,9 @@ MS_ROUND = 3
 
 function GameOver()
 	local mapname = checkmap(1)
-	resultstr = "½ñÌì "..GetMissionV(3).."µÚ¼¸"..mapname.."½áÊø."
+	resultstr = "H«m nay "..GetMissionV(3).."thø mÊy"..mapname.."®· kÕt thóc."
 	Msg2MSAll(MISSIONID, resultstr)
-	resultstr = date("%m ÔÂg%d ÈÕ, %H:%M, ")..resultstr
+	resultstr = date("%m th¸ng%d ngµy, %H:%M, ")..resultstr
 	WriteLog(resultstr)
 	local tbPlayer = {};
 	idx = 0;
@@ -47,8 +47,8 @@ function GameOver()
 	 		PlayerIndex = tbPlayer[i]
 	 	end
 	 	PlayerIndex = tbPlayer[i]
-	 	Msg2Player("Õâ¾Ö±ÈÈü½áÊøÁË£¬ÄãºÍ¶ÔÊÖ<color=blue>"..eny_name.." <color>´òÆ½,µÃ1·Ö")
-	 	WriteLog("Íæ¼Ò["..org_name.."]ºÍ¶ÔÊÖ["..eny_name.."]²»·ÖÊ¤¸º£¬ÏÖÔÚ³É¼¨ÊÇ£ºÊ¤"..nt_gettask(CP_TASKID_WIN)..", ¸º"..nt_gettask(CP_TASKID_LOSE)..", ºÍ"..nt_gettask(CP_TASKID_TIE)..", ×îÖÕ½á¹û"..nt_gettask(CP_TASKID_POINT))
+	 	Msg2Player("Vßng ®Êu nµy ®· kÕt thóc, b¹n vµ ®èi ®èi thñ <color=blue>"..eny_name.." <color>hßa, ®¹t ®­îc 1 ®iÓm")
+	 	WriteLog("Ng­êi ch¬i ["..org_name.."]vµ ®èi thñ ["..eny_name.."]bÊt ph©n th¾ng b¹i, thµnh tİch hiÖn t¹i lµ: th¾ng"..nt_gettask(CP_TASKID_WIN)..", thua"..nt_gettask(CP_TASKID_LOSE)..", hßa"..nt_gettask(CP_TASKID_TIE)..", chung cuéc"..nt_gettask(CP_TASKID_POINT))
 		camp = GetCamp();
 		SetCurCamp(camp);
 		SetLogoutRV(0);

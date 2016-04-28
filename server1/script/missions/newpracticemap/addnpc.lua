@@ -13,7 +13,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1510,
 					nNpcLevel = 110,
-					szNpcName = "·ÉÉ³Ð°¶ñ",
+					szNpcName = "Phi Sa Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1271,2740},
@@ -682,7 +682,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1511,
 					nNpcLevel = 110,
-					szNpcName = "×ßÊ¯Ð°¶ñ",
+					szNpcName = "TÈu Th¹ch Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1258,2739},
@@ -1352,7 +1352,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1512,
 					nNpcLevel = 110,
-					szNpcName = "É³µÁÐ°¶ñ",
+					szNpcName = "Sa §¹o Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1263,2732},
@@ -1999,7 +1999,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1513,
 					nNpcLevel = 110,
-					szNpcName = "Ä®ÔôÐ°¶ñ",
+					szNpcName = "M¹c TÆc Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1262,2748},
@@ -2647,7 +2647,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1514,
 					nNpcLevel = 110,
-					szNpcName = "½ð»·òþÉßÐ°¶ñ",
+					szNpcName = "Kim Hoµn M·ng Xµ Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1631,2797},
@@ -2870,7 +2870,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1515,
 					nNpcLevel = 110,
-					szNpcName = "½ðµñÐ°¶ñ",
+					szNpcName = "Kim §iªu Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1631,2810},
@@ -3022,7 +3022,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1516,
 					nNpcLevel = 110,
-					szNpcName = "Ð«×ÓÐ°¶ñ",
+					szNpcName = "H¹t Tö Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1622,2792},
@@ -3394,7 +3394,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1517,
 					nNpcLevel = 119,
-					szNpcName = "Ëªµ¶Ð°¶ñ",
+					szNpcName = "S­¬ng §ao Tµ ¸c",
 					tbNpcPos = 
 					{
 						{991,2302},
@@ -4014,7 +4014,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1518,
 					nNpcLevel = 119,
-					szNpcName = "Àä¹­Ð°¶ñ",
+					szNpcName = "L·nh Cung Tµ ¸c",
 					tbNpcPos = 
 					{
 						{995,2295},
@@ -4634,7 +4634,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1519,
 					nNpcLevel = 119,
-					szNpcName = "½µ´¸Ð°¶ñ",
+					szNpcName = "Gi¸ng Chïy Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1036,2306},
@@ -5142,7 +5142,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1520,
 					nNpcLevel = 119,
-					szNpcName = "²ùÎèÐ°¶ñ",
+					szNpcName = "S¶n Vò Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1001,2299},
@@ -5769,7 +5769,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1521,
 					nNpcLevel = 119,
-					szNpcName = "µ¶Õ¶Ð°¶ñ",
+					szNpcName = "§ao Tr¶m Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1595,3159},
@@ -6274,7 +6274,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1522,
 					nNpcLevel = 119,
-					szNpcName = "ÅüÁ­Ð°¶ñ",
+					szNpcName = "Ph¸ch Liªm Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1596,3153},
@@ -6780,7 +6780,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1523,
 					nNpcLevel = 119,
-					szNpcName = "º®Ç¹Ð°¶ñ",
+					szNpcName = "Hµn Th­¬ng Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1601,3149},
@@ -7291,7 +7291,7 @@ function tbNewPracticeMap:addNpc()
 				{
 					nNpcTempId = 1524,
 					nNpcLevel = 119,
-					szNpcName = "¸«¹âÐ°¶ñ",
+					szNpcName = "Phï Quang Tµ ¸c",
 					tbNpcPos = 
 					{
 						{1653,3156},

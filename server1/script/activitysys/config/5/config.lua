@@ -1,7 +1,7 @@
 
 
 -------¾Ö²¿±äÁ¿¶¨Òå ¿ªÊ¼---------
-local fn		= function(nItemIndex) local szMsg=format("¹§Ï²¸ßÊÖ%sÒÑ»ñµÃ%s",GetName(),GetItemName(nItemIndex)) AddGlobalNews(szMsg) Msg2SubWorld(szMsg) end
+local fn		= function(nItemIndex) local szMsg=format("Chóc mõng cao thñ %s ®· nhËn ®­îc %s",GetName(),GetItemName(nItemIndex)) AddGlobalNews(szMsg) Msg2SubWorld(szMsg) end
 -------¾Ö²¿±äÁ¿¶¨Òå ½áÊø---------
 
 tbConfig = {}
@@ -9,32 +9,32 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "CreateDialog",
-	szName = "»»È¡ÍêÃÀºèÓ°",
+	szName = "§æi hoµn mü hång ¶nh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>¸óÏÂÏë»»È¡ÄÄÖÖ×°±¸ÄØ?"},
+	tbMessageParam = {"<npc>C¸c h¹ muèn ®æi lo¹i trang bŞ nµo?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"»» [ÍêÃÀ]ºèÓ°ºìĞäÕĞ",2} },
-		{"AddDialogOpt",	{"»» [ÍêÃÀ]ºèÓ°½£¹ÒÎ÷·½",3} },
-		{"AddDialogOpt",	{"»» [ÍêÃÀ]ºèÓ°ÉòÔ°Íí",4} },
-		{"AddDialogOpt",	{"ÎÒÏë»» [ÍêÃÀ]ºèÓ°ÜÙŞ£",5} },
+		{"AddDialogOpt",	{"§æi [Hoµn mü] Hång ¶nh hång tô chiªu",2} },
+		{"AddDialogOpt",	{"§æi [Hoµn mü] Hång ¶nh qua kiÕm t©y ph­¬ng",3} },
+		{"AddDialogOpt",	{"§æi [Hoµn mü] Hång ¶nh thÈm viªn uyÓn",4} },
+		{"AddDialogOpt",	{"Ta muèn ®æi [Hoµn Mü] Hång ¶nh Môc Tóc",5} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "CreateCompose",
-	szName = "»» [ÍêÃÀ]ºèÓ°ºìĞäÕĞ",
+	szName = "§æi [Hoµn mü] Hång ¶nh hång tô chiªu",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[ÍêÃÀ]ºèÓ°ºìĞäÕĞ",0,0,0,1},
+	tbMessageParam = {"[Hoµn Mü] Hång ¶nh Hång Tô Chiªu",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -45,13 +45,13 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "CreateCompose",
-	szName = "»» [ÍêÃÀ]ºèÓ°½£¹ÒÎ÷·½",
+	szName = "§æi [Hoµn mü] Hång ¶nh qua kiÕm t©y ph­¬ng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[[ÍêÃÀ]ºèÓ°½£¹ÒÎ÷·½",0,0,0,1},
+	tbMessageParam = {"[Hoµn Mü] Hång ¶nh KiÕm Qua T©y Ph­¬ng",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -62,13 +62,13 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "CreateCompose",
-	szName = "»» [ÍêÃÀ]ºèÓ°ÉòÔ°Íí",
+	szName = "§æi [Hoµn mü] Hång ¶nh thÈm viªn uyÓn",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[ÍêÃÀ]ºèÓ°ÉòÔ°Íí×í",0,0,0,1},
+	tbMessageParam = {"[Hoµn Mü] Hång ¶nh TrÇm Viªn V·n Tóy",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -79,13 +79,13 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "CreateCompose",
-	szName = "ÎÒÏë»» [ÍêÃÀ]ºèÓ°ÜÙŞ£",
+	szName = "Ta muèn ®æi [Hoµn Mü] Hång ¶nh Môc Tóc",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[ÍêÃÀ]ºèÓ°ÜÙŞ£ÏàÍü",0,0,0,1},
+	tbMessageParam = {"[Hoµn Mü] Hång ¶nh Môc Tóc T­¬ng Vong",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -96,7 +96,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "nil",
-	szName = "»»½ğÅÆ³É»Æ½ğ×°±¸",
+	szName = "§æi kim bµi thµnh trang bŞ hoµng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -112,32 +112,32 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "CreateDialog",
-	szName = "»»ºèÓ°¼«Æ·",
+	szName = "§æi cùc phÈm hång ¶nh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>¸óÏÂÏë»»ÄÄÖÖ×°±¸?"},
+	tbMessageParam = {"<npc>C¸c h¹ muèn ®æi lo¹i trang bŞ nµo?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÎÒÏë»»[¼«Æ·]ºèÓ°ºìĞäÕĞ",8} },
-		{"AddDialogOpt",	{"ÎÒÏë»»[¼«Æ·]ºèÓ°½£¹ÒÎ÷·½",9} },
-		{"AddDialogOpt",	{"ÎÒÏë»»[¼«Æ·]ºèÓ°ÉòÔ°Íí×í",10} },
-		{"AddDialogOpt",	{"ÎÒÏë»»[¼«Æ·]ºèÓ°ÜÙŞ£ÏàÍü",11} },
+		{"AddDialogOpt",	{"Ta muèn ®æi [Cùc phÈm] Hång ¶nh Hång Tô Chiªu",8} },
+		{"AddDialogOpt",	{"Ta muèn ®æi [Cùc phÈm] Hång ¶nh KiÕm Qua T©y Ph­¬ng",9} },
+		{"AddDialogOpt",	{"Ta muèn ®æi [Cùc phÈm] Hång ¶nh TrÇm Viªn V·n Tóy",10} },
+		{"AddDialogOpt",	{"Ta muèn ®æi [Cùc phÈm] Hång ¶nh Môc Tóc T­¬ng Vong",11} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "CreateCompose",
-	szName = "ÎÒÏë»»[¼«Æ·]ºèÓ°ºìĞäÕĞ",
+	szName = "Ta muèn ®æi [Cùc phÈm] Hång ¶nh Hång Tô Chiªu",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[¼«Æ·]ºèÓ°ºìĞäÕĞ",0,0,0,1},
+	tbMessageParam = {"[Cùc phÈm] Hång ¶nh Hång Tô Chiªu",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -148,13 +148,13 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 {
 	nId = 9,
 	szMessageType = "CreateCompose",
-	szName = "ÎÒÏë»»[¼«Æ·]ºèÓ°½£¹ÒÎ÷·½",
+	szName = "Ta muèn ®æi [Cùc phÈm] Hång ¶nh KiÕm Qua T©y Ph­¬ng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[¼«Æ·]ºèÓ°½£¹ÒÎ÷·½",0,0,0,1},
+	tbMessageParam = {"[Cùc phÈm]Hång ¶nh KiÕm Qua T©y Ph­¬ng",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -165,13 +165,13 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 {
 	nId = 10,
 	szMessageType = "CreateCompose",
-	szName = "ÎÒÏë»»[¼«Æ·]ºèÓ°ÉòÔ°Íí×í",
+	szName = "Ta muèn ®æi [Cùc phÈm] Hång ¶nh TrÇm Viªn V·n Tóy",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[¼«Æ·]ºèÓ°ÉòÔ°Íí×í",0,0,0,1},
+	tbMessageParam = {"[Cùc phÈm] Hång ¶nh TrÇm Viªn V·n Tóy",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -182,13 +182,13 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "CreateCompose",
-	szName = "ÎÒÏë»»[¼«Æ·]ºèÓ°ÜÙŞ£ÏàÍü",
+	szName = "Ta muèn ®æi [Cùc phÈm] Hång ¶nh Môc Tóc T­¬ng Vong",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"[¼«Æ·]ºèÓ°ÜÙŞ£ÏàÍü",0,0,0,1},
+	tbMessageParam = {"[Cùc phÈm] Hång ¶nh Môc Tóc T­¬ng Vong",0,0,0,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÍêÃÀ½ğÅÆ",{tbProp={6,1,2129,1,0,0},},50} },
+		{"AddOneMaterial",	{"Hoµn Mü Kim Bµi",{tbProp={6,1,2129,1,0,0},},50} },
 	},
 	tbActition = 
 	{
@@ -199,10 +199,10 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 {
 	nId = 12,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷Àñ¹Ù",
+	szName = "BÊm vµo LÔ Quan",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Àñ¹Ù"},
+	tbMessageParam = {"LÔ Quan"},
 	tbCondition = 
 	{
 		{"NpcFunLib:IsInCity",	{nil} },
@@ -210,17 +210,17 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 --Change request 04/06/2011, ÖÆ×÷°×½ğ×°±¸- Modified by DinhHQ - 20110605
---		{"AddDialogOpt",	{"»»½ğÅÆ³É»Æ½ğ×°±¸",6} },
---		{"AddDialogOpt",	{"»»ºèÓ°¼«Æ·",7} },
---		{"AddDialogOpt",	{"»»ÍêÃÀºèÓ°",1} },
---		{"AddDialogOpt",	{"»»½ğÅÆ×°±¸»Æ½ğ(¼ÌĞø)",13} },
+--		{"AddDialogOpt",	{"§æi kim bµi thµnh trang bŞ hoµng kim",6} },
+--		{"AddDialogOpt",	{"§æi cùc phÈm hång ¶nh",7} },
+--		{"AddDialogOpt",	{"§æi hoµn mü hång ¶nh",1} },
+--		{"AddDialogOpt",	{"§æi kim bµi trang bŞ hoµng kim (tiÕp theo)",13} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "nil",
-	szName = "»»½ğÅÆ×°±¸»Æ½ğ(¼ÌĞø)",
+	szName = "§æi kim bµi trang bŞ hoµng kim (tiÕp theo)",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

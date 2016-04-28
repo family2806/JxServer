@@ -16,36 +16,36 @@ tbPVLB_Main = {}
 function tbPVLB_Main:MainDialog()
 	local tbOpt = {}
 	if tbVNG_BitTask_Lib:getBitTask(tbBITTSK_DONATE_ITEM_LIMIT) == 0 then
-		tinsert(tbOpt, {"½»ĞÂÊÖ½ğÅÆ", tbPVLB_Main.DonateItem, {tbPVLB_Main}})
+		tinsert(tbOpt, {"NopTanThuKimBai", tbPVLB_Main.DonateItem, {tbPVLB_Main}})
 	end
-	tinsert(tbOpt, {"½±³Í½±Àø", tbPVLB_Award.MainDialog, {tbPVLB_Award}})
-	tinsert(tbOpt, {"Ã¿ÈÕ½±Àø", PhongVanLenhBai2011.ShowDialogDaily, {PhongVanLenhBai2011}})
-	tinsert(tbOpt, {"ĞÂÊÖÈÎÎñ", tbPVLB_Quest.Main, {tbPVLB_Quest}})
-	tinsert(tbOpt, {"»»×°±¸", tbPVLB_ExchgEquip.MainDialog, {tbPVLB_ExchgEquip}})
+	tinsert(tbOpt, {"KiÓm tra phÇn th­ëng", tbPVLB_Award.MainDialog, {tbPVLB_Award}})
+	tinsert(tbOpt, {"PhÇn th­ëng hµng ngµy", PhongVanLenhBai2011.ShowDialogDaily, {PhongVanLenhBai2011}})
+	tinsert(tbOpt, {"NhiÖm vô t©n thñ", tbPVLB_Quest.Main, {tbPVLB_Quest}})
+	tinsert(tbOpt, {"§æi trang bŞ", tbPVLB_ExchgEquip.MainDialog, {tbPVLB_ExchgEquip}})
 	if tbVNG_BitTask_Lib:getBitTask(tbBITTASK_EXCHANGE_WRONG_EQUIP) == 0 then
-		tinsert(tbOpt, {"»»»Ø³ö´í×°±¸", tbExchangeWrongEquip.GetGoldEquipListInRoom, {tbExchangeWrongEquip}})
+		tinsert(tbOpt, {"§æi l¹i trang bŞ nhËn sai", tbExchangeWrongEquip.GetGoldEquipListInRoom, {tbExchangeWrongEquip}})
 	end
-	tinsert(tbOpt, {"È¡Ïû"})
-	CreateNewSayEx("·çÔÆÁîÅÆ:", tbOpt)
+	tinsert(tbOpt, {"Hñy bá "})
+	CreateNewSayEx("Phong V©n LÖnh Bµi:", tbOpt)
 end
 
 function confirm_donate_ttkb(nCount)
 	local nW, _, _ = GetWorldPos()
 	if nW ~= 162 or GetFightState() ~= 0 then
-		Talk(1, "", "¸Ã²Ù×÷Ö»ÄÜÔÚ´óÀí³ÇÖ´ĞĞ")
+		Talk(1, "", "Thao t¸c nµy chØ thùc hiÖn ®­îc trong thµnh §¹i Lı.")
 		return
 	end
-	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBITTSK_DONATE_ITEM_LIMIT, 1, "Ã¿¸öÈËÎïÖ»ÄÜ½»Ò»´Î¸ÃÎïÆ·.", "~=") ~= 1 then
+	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBITTSK_DONATE_ITEM_LIMIT, 1, "Mçi nh©n vËt chØ ®­îc nép vËt phÈm nµy 1 lÇn.", "~=") ~= 1 then
 		return
 	end
 	if nCount > 1 or nCount <= 0 then
-		Talk(1, "", "·ÅÈëÎïÆ·²»¶Ô£¬ÇëÔÙ¼ì²éÒ»ÏÂ")
+		Talk(1, "", "VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
 		return
 	end
 	local nIdx=GetGiveItemUnit(1)
 	local nG,nD,nP,_,_=GetItemProp(nIdx)
 	if nG ~= 6 or nD ~= 1 or nP ~= 30144 then
-		Talk(1, "", "·ÅÈëÎïÆ·²»¶Ô£¬ÇëÔÙ¼ì²éÒ»ÏÂ")
+		Talk(1, "", "VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
 		return
 	end
 	if IsMyItem(nIdx) ~= 1 or RemoveItemByIndex(nIdx) ~= 1 then
@@ -56,16 +56,16 @@ function confirm_donate_ttkb(nCount)
 	if nItemCount >= 0 then
 		tbVNG_BitTask_Lib:setBitTask(tbBITTSK_DONATE_ITEM_LIMIT, 1)
 		TONG_ApplySetTaskValue(nTongID, nTS_TONG_TASK_ITEM_COUNT, nItemCount + 1)
-		Msg2Player(format("½»³É¹¦1 <color=yellow>ĞÂÊÖ½ğÅÆ<color> µ½°ï»á¡£Ä¿Ç°ÊıÁ¿Îª: <color=green>%d<color>", nItemCount + 1))
-		tbLog:PlayerActionLog("PhongVanLenhBai", "½»ĞÂÊÖ½ğÅÆ")
-		tbVngTransLog:Write("201109_·çÔÆÁîÅÆ»î¶¯/", 11, "½»ĞÂÊÖ½ğÅÆ", "°ïÄÚĞÂÊÖ½ğÅÆ: "..nItemCount + 1, 1)
+		Msg2Player(format("Nép thµnh c«ng 1 <color=yellow>T©n Thñ Kim Bµi<color> vµo bang héi. Sè l­îng hiÖn t¹i: <color=green>%d<color>", nItemCount + 1))
+		tbLog:PlayerActionLog("PhongVanLenhBai", "NopTanThuKimBai")
+		tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "NopTanThuKimBai", "T©n Thñ Kim Bµi trong bang: "..nItemCount + 1, 1)
 	end	
 end
 
 function tbPVLB_Main:DonateItem()
 	local nW, _, _ = GetWorldPos()
 	if nW ~= 162 or GetFightState() ~= 0 then
-		Talk(1, "", "¸Ã²Ù×÷Ö»ÄÜÔÚ´óÀí³ÇÖ´ĞĞ")
+		Talk(1, "", "Thao t¸c nµy chØ thùc hiÖn ®­îc trong thµnh §¹i Lı.")
 		return
 	end
 	if tbPVLB_Check:IsNewPlayer() ~= 1 then
@@ -73,11 +73,11 @@ function tbPVLB_Main:DonateItem()
 	end
 	local szTongName, nTongID = GetTongName();	
 	if szTongName == nil or szTongName == "" then
-		Talk(1, "", "¸óÏÂÎ´¼ÓÈë°ï»á£¬²»ÄÜ½»ĞÂÊÖ½ğÅÆ")
+		Talk(1, "", "¸óÏÂÎ´¼ÓÈë°ï»á£¬²»ÄÜNopTanThuKimBai")
 		return
 	end
-	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBITTSK_DONATE_ITEM_LIMIT, 1, "Ã¿¸öÈËÖ»ÄÜ½ÉÒ»´Î¸ÃÎïÆ·.", "~=") == 1 then
-		GiveItemUI("½»ĞÂÊÖ½ğÅÆ", "ÒªÇó£ºĞÂÊÖ½ğÅÆ", "confirm_donate_ttkb", "onCancel", 1)
+	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBITTSK_DONATE_ITEM_LIMIT, 1, "Mçi nh©n vËt chØ ®­îc nép vËt phÈm nµy 1 lÇn.", "~=") == 1 then
+		GiveItemUI("NopTanThuKimBai", "Yªu CÇu: T©n Thñ Kim Bµi", "confirm_donate_ttkb", "onCancel", 1)
 	end
 end
 

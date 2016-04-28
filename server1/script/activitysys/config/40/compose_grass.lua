@@ -1,6 +1,6 @@
 -- ÎÄ¼þÃû¡¡£ºcompose_grass.lua
 -- ´´½¨Õß¡¡£ºwangjingjun
--- ÄÚÈÝ¡¡¡¡£ºÓÃ¸÷ÖÖÃµ¹å»¨¶Ò»»ÂÌ²Ý
+-- ÄÚÈÝ¡¡¡¡£ºÓÃ¸÷ÖÖÃµ¹å»¨¶Ò»»Cá Xanh
 -- ´´½¨Ê±¼ä£º2012-02-15 15:00:45
 
 Include("\\script\\lib\\composeex.lua")
@@ -14,39 +14,39 @@ tbFormulaList = {
 	nHeight = 1,
 	nFreeItemCellLimit = 0.02,
 	
-	tbProduct = {szName="ÂÌ²Ý",tbProp={6,1,3124,1,0,0},nExpiredTime=20120401,},
+	tbProduct = {szName="Cá Xanh",tbProp={6,1,3124,1,0,0},nExpiredTime=20120401,},
 }
 
 tbMaterial_Rose = {
-	[1]={szName="°×Ãµ¹å",tbProp={6,1,3117,1,0,0}, nCount=50,},
-	[2]={szName="»ÆÃµ¹å",tbProp={6,1,3119,1,0,0}, nCount=50,},
-	[3]={szName="À¶Ãµ¹å",tbProp={6,1,3118,1,0,0}, nCount=50,},
-	[4]={szName="ºìÃµ¹å®á",tbProp={6,1,3120,1,0,0}, nCount=50,},
+	[1]={szName="Hoa Hång Tr¾ng",tbProp={6,1,3117,1,0,0}, nCount=50,},
+	[2]={szName="Hoa Hång Vµng",tbProp={6,1,3119,1,0,0}, nCount=50,},
+	[3]={szName="Hoa Hång Xanh",tbProp={6,1,3118,1,0,0}, nCount=50,},
+	[4]={szName="Hoa hång ®á",tbProp={6,1,3120,1,0,0}, nCount=50,},
 	}
 
 tbMaterial_Jxb = {
-	[1]={szName="ÒøÁ½",nJxb=300000, nCount = 1,},
-	[2]={szName="ÒøÁ½",nJxb=600000, nCount = 1,},
-	[3]={szName="ÒøÁ½",nJxb=1000000, nCount = 1,},
+	[1]={szName="Ng©n l­îng",nJxb=300000, nCount = 1,},
+	[2]={szName="Ng©n l­îng",nJxb=600000, nCount = 1,},
+	[3]={szName="Ng©n l­îng",nJxb=1000000, nCount = 1,},
 	}	
 	
 tbSelectMoney = {
-	[1] = "3 ÍòÁ½",
-	[2] = "6 ÍòÁ½",
-	[3] = "10 ÍòÁ½",
+	[1] = "3 v¹n l­îng",
+	[2] = "6 v¹n l­îng",
+	[3] = "10 v¹n l­îng",
 	}	
 
 pActivity.tbCompose = {}
 function pActivity:composegrassdialog()
 	
 	local nSelectCount = getn(%tbSelectMoney)
-	local szTitle = format("»»ÂÌ²ÝÓÐ%dÖÖÄ£Ê½", nSelectCount)
+	local szTitle = format("§æi Cá Xanh cã %d lo¹i h×nh thøc", nSelectCount)
 	for i=1, nSelectCount do
-		szTitle = format("%s, ÖÖÎïÆ·%d ÒªÇó %s", szTitle, i, %tbSelectMoney[i])
+		szTitle = format("%s, lo¹i thø %d yªu cÇu %s", szTitle, i, %tbSelectMoney[i])
 		if i ~= nSelectCount then
-			szTitle = format("%s, Ã¿ÈÕ×î¶à»»%d ´Î", szTitle, %MAX_TB_DAILY_COMPOSE_GRASS[i])
+			szTitle = format("%s, mçi ngµy ®æi nhiÒu nhÊt %d lÇn", szTitle, %MAX_TB_DAILY_COMPOSE_GRASS[i])
 		else
-			szTitle = format("%s,´Ë·½·¨²»ÏÞÖÆ»»È¡´ÎÊý", szTitle)	
+			szTitle = format("%s, ph­¬ng ph¸p nµy kh«ng h¹n chÕ sè lÇn ®æi", szTitle)	
 		end
 	end
 	
@@ -54,7 +54,7 @@ function pActivity:composegrassdialog()
 	for i=1, nSelectCount do
 		tinsert(tbOpt, {%tbSelectMoney[i], self.selectrose, {self, i}})
 	end
-	tinsert(tbOpt, {"Àë¿ª", cancel})
+	tinsert(tbOpt, {"Rêi khái", cancel})
 	
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -62,13 +62,13 @@ end
 function pActivity:selectrose(nMoneyIndex)
 	
 	local nSelectCount = getn(%tbMaterial_Rose)
-	local szTitle = "ÇëÑ¡ÔñÏë»»È¡µÄÃµ¹åÖÖÀà"
+	local szTitle = "Xin h·y lù chän lo¹i Hoa Hång muèn ®æi"
 
 	local tbOpt = {}
 	for i=1, nSelectCount do
 		tinsert(tbOpt, {%tbMaterial_Rose[i].szName, self.tocompose, {self, nMoneyIndex,i}})
 	end
-	tinsert(tbOpt, {"·µ»Ø", self.composegrassdialog, {self}})
+	tinsert(tbOpt, {"Trë l¹i", self.composegrassdialog, {self}})
 	
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -84,7 +84,7 @@ function pActivity:InitCompose()
 				nWidth = 1,
 				nHeight = 1,
 				nFreeItemCellLimit = 0.02,
-				tbProduct = {szName="ÂÌ²Ý",tbProp={6,1,3124,1,0,0},nCount=10, nExpiredTime=20120401,},
+				tbProduct = {szName="Cá Xanh",tbProp={6,1,3124,1,0,0},nCount=10, nExpiredTime=20120401,},
 			}
 			
 			tbFormulaList.tbMaterial = {}
@@ -117,7 +117,7 @@ function pActivity:tocompose(nMoneyIndex, nRoseIndex)
 	end
 	
 	if nMaxCount <= 0 then
-		Say("Í¨¹ý´ËÖÖ·½·¨ÄúÒÑ»»È¡µÄÂÌ²Ý´ïµ½ÉÏÏÞ£¬ÇëÊÔÊÔÆäËû·½·¨!")
+		Say("Th«ng qua c¸ch nµy ng­¬i ®· ®æi Cá Xanh ®¹t ®Õn giíi h¹n, xin h·y thö c¸ch kh¸c xem sao!")
 		return
 	end
 	local bAskNumber = 1

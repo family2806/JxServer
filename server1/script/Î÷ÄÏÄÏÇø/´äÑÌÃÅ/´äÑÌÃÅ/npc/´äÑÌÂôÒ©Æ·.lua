@@ -4,9 +4,9 @@
 function main(sel)
 	Uworld36 = GetByte(GetTask(36),2)
 	if (GetFaction() == "cuiyan") or (Uworld36 == 127) then
-		Say("×°±¸ÀïµÄÕä¹óÒ©Æ·Ô½¶à£¬¾ÍÔ½ÓĞÒæ", 2, "½»Ò×/yes", "²»½»Ò×/no")
+		Say("Trang bŞ cµng nhiÒu d­îc liÖu quı th× cµng cã İch", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 	else
-		Talk(1,"","ÃÅÖ÷ÓĞÁî£¬±¾ÃÅÒ©Æ·Ö»Âô¸øÍ¬ÃÅ.")
+		Talk(1,"","M«n chñ cã lÖnh, D­îc liÖu cña bæn m«n chØ dµnh cho tû muéi ®ång m«n.")
 	end
 end;
 

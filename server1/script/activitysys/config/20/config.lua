@@ -13,7 +13,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:AddDialogNpc",	{"ÇïÔÆ",1907,{{11,3182,4951}}} },
+		{"NpcFunLib:AddDialogNpc",	{"Thu V©n",1907,{{11,3182,4951}}} },
 		{"ThisActivity:InitRule",	{nil} },
 	},
 }
@@ -30,11 +30,11 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"´Ó6ÔÂ3ÈÕµ½2012Äê6ÔÂ30ÈÕ£¬¸÷Î»ÏÀ¿Í¿ÉÒÔµ½ÎÒÕâ²Î¼ÓË®µ¾ÊÕ¸î»î¶¯£¬ÊÕ¸îË®µ¾ºó£¬¿ÉÒÔÀ´¼ûÎÒ»»½±Æ·£¬Ã¿ÌìÃ¿ÈË×î¶àÖ»ÄÜ²Î¼Ó2ÂÖ£¬Ê±¼ä´Ó16hµ½17hÒÔ¼°20hµ½21h"} },
-		{"AddDialogOpt",	{"²Î¼ÓÊÕ¸îË®µ¾»î¶¯",3} },		
-		{"AddDialogOpt",	{"ÁìÈ¡ÅÅÃû½±",5} },
-		{"AddDialogOpt",	{"½ÉÂÌÉ«Ë®µ¾ÎïÆ·",4} },
-		{"AddDialogOpt",	{"½É»Æ½ğË®µ¾ÎïÆ·",8} },
+		{"SetDialogTitle",	{"Tõ ngµy 3 th¸ng 6 ®Õn ngµy 30 th¸ng 6 n¨m 2012, c¸c hiÖp kh¸ch cã thÓ ®Õn chç cña ta tham gia ho¹t ®éng thu nhÆt lóa n­íc, sau khi thu nhÆt lóa n­íc cã thÓ ®Õn gÆp ta ®Ó ®æi phÇn th­ëng, mçi ngµy mçi ng­êi chØ ®­îc tham gia nhiÒu nhÊt 2 vßng, thêi gian tõ 16h ®Õn 17h vµ 20h ®Õn 21h"} },
+		{"AddDialogOpt",	{"Tham gia ho¹t ®éng thu nhÆt lóa n­íc",3} },		
+		{"AddDialogOpt",	{"NhËn th­ëng xÕp h¹ng",5} },
+		{"AddDialogOpt",	{"Nép vËt phÈm Lóa Xanh",4} },
+		{"AddDialogOpt",	{"Nép vËt phÈm Lóa Vµng",8} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -60,10 +60,10 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	szName = "compose",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>½ÉÎïÆ·",1,1,1,0.02},
+	tbMessageParam = {"<npc>Nép vËt phÈm",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÂÌÉ«µ¾¹È",{tbProp={6,1,3199}},1} },
+		{"AddOneMaterial",	{"Lóa Xanh",{tbProp={6,1,3199}},1} },
 	},
 	tbActition = 
 	{		
@@ -93,13 +93,13 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	szName = "click lingfan",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ğ¡··"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÂòÌúË¿Íø",7} },
+		{"AddDialogOpt",	{"mua L­ìi LiÒm S¾t",7} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -109,10 +109,10 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	szName = "buy item",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÌúË¿Íø",1,1,1,0.02},
+	tbMessageParam = {"L­ìi LiÒm S¾t",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=1},100000} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},100000} },
 	},
 	tbActition = 
 	{
@@ -126,32 +126,32 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	szName = "compose",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>½ÉÎïÆ·",1,1,1,0.02},
+	tbMessageParam = {"<npc>Nép vËt phÈm",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"»Æ½ğµ¾¹È",{tbProp={6,1,3200}},1} },
+		{"AddOneMaterial",	{"Lóa Vµng",{tbProp={6,1,3200}},1} },
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{3000000,0,"Event_Thang6","½É»Æ½ğµ¾¹ÈÎïÆ·"} },
+		{"PlayerFunLib:AddExp",	{3000000,0,"Event_Thang6","NopVatPhamLuaVang"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
 {
 	nId = 9,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÏã´ü",
+	szName = "Sö dông Tói h­¬ng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,3201,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTaskDaily",	{VN_TSK_USE_BAG_DAILY,2,"½ñÌìÄã²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·ÁË£¬ÇëÃ÷Ìì¼ÌĞøÊ¹ÓÃ.","<"} },
+		{"PlayerFunLib:CheckTaskDaily",	{VN_TSK_USE_BAG_DAILY,2,"H«m nay ng­¬i kh«ng thÓ sö dông vËt phÈm nµy n÷a, ngµy mai h·y sö dông tiÕp.","<"} },
 	},
 	tbActition = 
 	{		
 		{"PlayerFunLib:AddTaskDaily",	{VN_TSK_USE_BAG_DAILY,1} },
-		{"Msg2Player",	{"¶àÔö¼ÓÒ»´Î²Î¼ÓÅ©»§³ÑÄÜ»î¶¯."} },
+		{"Msg2Player",	{"NhËn ®­îc thªm 1 lÇn tham gia ho¹t ®éng Træ Tµi Nhµ N«ng."} },
 		{"ThisActivity:UseBagLog",	{nil} }		
 	},
 }

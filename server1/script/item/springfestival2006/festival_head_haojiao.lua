@@ -25,10 +25,10 @@ function main()
 	
 	nGroupId = festival_getgroupid(nGroupId);
 	if ("nil" == type(nGroupId)) then
-	    Talk(1, "", "µÀ¾ßÊ¹ÓÃ³ö´í£¡");
+	    Talk(1, "", "§¹o cô sö dông bÞ lçi!");
 	end;
 	if (nGroupId < 1 or nGroupId > SF_SMALLMAPCOUNT * 2) then
-	    Talk(1, "", "µÀ¾ßÊ¹ÓÃ³ö´í£¡");
+	    Talk(1, "", "§¹o cô sö dông bÞ lçi!");
 	    return 1;
 	end;
 	
@@ -42,7 +42,7 @@ function main()
 		if (pidx > 0 and pidx ~= OldPlayer) then	--Ñ¡Ôñ³ýÍæ¼ÒÍâµÄËùÓÐ¶ÔÊÖ£»
 			PlayerIndex = pidx;
 			AddSkillState(SKILLTYPE, SKILLLEVEL2, SKILLLEVEL3, SKILLLEVEL41 * SKILLLEVEL42);
-			Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>Ê¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..ITEMNAME.."<color>£¬"..ITEMDFFECT)
+			Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color> sö dông <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT)
 		end;
 		
 		if (0 == idx) then
@@ -50,5 +50,5 @@ function main()
 		end;
 	end;
 	PlayerIndex = OldPlayer;
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..ITEMNAME.."<color>£¬"..ITEMDFFECT);
+	Msg2Player("<#> B¹n ®· sö dông mét <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT);
 end;

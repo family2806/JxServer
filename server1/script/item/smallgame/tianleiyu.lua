@@ -1,6 +1,6 @@
 ITEMTYPE = 1; --¹«¹²µÀ¾ß
-szItem = "ÌìÀ×Óñ"
-szEffect = "ÔÎ3Ãë";
+szItem = "Thiªn L«i Ngäc"
+szEffect = "Cho¸ng 3 gi©y";
 nSkillId = 673;
 nSkillLevel = 20;
 nTime = 3;
@@ -9,7 +9,7 @@ function main(nItemID, nNpcIndex)
 	
 	local nTargetPlayerIndex = NpcIdx2PIdx(nNpcIndex)
 	if nTargetPlayerIndex == 0 then
-		Msg2Player("¸ÃµÀ¾ßÖ»ÄÜ¶ÔÍæ¼ÒÊ¹ÓÃ!");
+		Msg2Player("§¹o cô nµy chØ cã thÓ sö dông ®èi víi ng­êi ch¬i!");
 		return 1
 	end
 	
@@ -21,10 +21,10 @@ function main(nItemID, nNpcIndex)
 	
 	PlayerIndex = nTargetPlayerIndex
 	AddSkillState(nSkillId, nSkillLevel, 0, nTime * 18)
-	Msg2Player(format("%s ¶ÔÄãÊ¹ÓÃÁË:%s!", szSelfName, szItemName));
+	Msg2Player(format("%s sö dông víi ng­¬i råi :%s!", szSelfName, szItemName));
 	PlayerIndex = nOldPlayerIndex
 	
-	Msg2Player(format("Äã¶ÔÄ¿±ê:%s Ê¹ÓÃ:%s!", szTargetName, szItemName));
+	Msg2Player(format("Ng­¬i ®èi víi môc tiªu:%s sö dông :%s!", szTargetName, szItemName));
 	
 	return 0
 end

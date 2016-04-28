@@ -24,18 +24,18 @@ tbl_finish_stat = {
 };
 
 tbl_making_msg = {
-	[STAT_BAOXIAN_MAKING] = "<#> ¿ªÊ¼×ö<color=yellow>ÏÚ<color>",
-	[STAT_HONGKAO_MAKING] = "<#> ¿ªÊ¼<color=yellow>¿¾ÔÂ±ı<color>",
+	[STAT_BAOXIAN_MAKING] = "<#> b¾t ®Çu lµm <color=yellow>nh©n b¸nh<color>",
+	[STAT_HONGKAO_MAKING] = "<#> B¾t ®Çu <color=yellow>n­íng b¸nh<color>",
 };
 
 -- ²»Í¬ÀàĞÍµÄÔÂ±ı
 tbl_mooncake = {
-	"<#> Ê²½õÔÂ±ı",
-	"<#> ¹ûÈÊÔÂ±ı",
-	"<#> µ°»ÆÁ«ÈØÔÂ±ı",
-	"<#> µ°»Æ¶¹É³ÔÂ±ı",
-	"<#> Á«ÈØÔÂ±ı",
-	"<#> ¶¹É³ÔÂ±ı",
+	"<#> B¸nh trung thu thËp cÈm ",
+	"<#> B¸nh Trung thu H¹nh nh©n",
+	"<#> B¸nh trung thu ®Ëu trøng",
+	"<#> B¸nh Trung Thu §Ëu Trøng",
+	"<#> B¸nh Trung Thu Bét Sen",
+	"<#> B¸nh trung thu nh©n ®Ëu ",
 };
 
 tbl_mooncake_item = {
@@ -70,52 +70,52 @@ tbl_mooncake_material = {
 
 -- È·¶¨ÒªÖÆ×÷ÔÂ±ıµÄ¶Ô»°
 tbl_mooncake_talk = {
-	"<#> <color=red>Ê²½õÔÂ±ı<color> ĞèÒª£º 4Ãæ·Û£¬4É°ÌÇ£¬1¶¹É³£¬1Á«ÈØ£¬1ĞÓÈÊ£¬1»¨Éú£¬3Ò¬Ë¿. ÌıËµÕâÖÖÒ¬Ë¿Ö»ÔÚÄÏ·½²ÅÓĞ£¬ºÜ¹óµÄ£¡Èç¹ûÊÇÕâÑùÎÒÒªÇ§ÍòĞ¡ĞÄ£¬¿ªÊ¼ÁËÂğ?",
-	"<#> <color=red>¹ûÈÊÔÂ±ı<color> ĞèÒª£º6Ãæ·Û£¬6É°ÌÇ£¬1ĞÓÈÊ£¬2»¨Éú. ÄÃÒ»µã»¨ÉúÄëËéÖ®ºó·Åµ½ÔÂ±ıÀï£¬ÕâÑù²Å¿ÉÒÔÊÇÔÂ±ı´ÓÄÚÉ¢·¢³öÏãÎ¶.²»¶àËµÁË£¬¿ÉÒÔ¿ªÊ¼ÁËÂğ?",
-	"<#> <color=red>µ°»ÆÁ«ÈØÔÂ±ı<color> ĞèÒª£º5Ãæ·Û£¬6É°ÌÇ£¬2Á«ÈØ£¬2µ°. ÒªÁ½¸öµ°£¬Ò»¸öÓÃÀ´×öÏÚ£¬ÁíÒ»¸öÔÚºæ¿¾µÄÊ±ºòÍ¿ÔÚÍâÆ¤ÉÏ£¬¸ö°ëĞ¡Ê±Í¿Ò»´Î.²»Òª¶àËµÁË£¬¿ÉÒÔ¿ªÊ¼ÁËÂğ?",
-	"<#> <color=red>µ°»Æ¶¹É³ÔÂ±ı<color> ĞèÒª£º6Ãæ·Û£¬5É°ÌÇ£¬2¶¹É³£¬2µ°. ÄãÖªµÀÂğ£¿ÒªÁ½¸öµ°£¬Ò»¸öÓÃÓÚ×öÏÚ£¬ÁíÒ»¸öÔÚ¿¾µÄÊ±ºòÍ¿ÔÚÍâÆ¤ÉÏ£¬°ëĞ¡Ê±Í¿Ò»´Î.²»Òª¶àËµÁË£¬¿ÉÒÔ¿ªÊ¼ÁËÂğ?",
-	"<#> <color=red>Á«ÈØÔÂ±ı<color> ĞèÒª£º5Ãæ·Û£¬8É°ÌÇ£¬2Á«ÈØ. ÃØ¾÷ÊÇÒª°ÑÁ«×ÓµÄĞÄÈ¥µô£¬Í¬Ê±ÒªºÍÌÇ½Á°èÔÚÒ»Æğ£¬ÕâÑù²Å¿ÉÒÔ×ö³öÀ´ÃÀÎ¶µÄÔÂ±ı.²»¶àËµÁË£¬¿ÉÒÔ¿ªÊ¼ÁËÂğ?",
-	"<#> <color=red>¶¹É³ÔÂ±ı<color> ĞèÒª£º8Ãæ·Û£¬5É°ÌÇ£¬2¶¹É³. ²»ÒªĞ¡¿´Õâ¸öÔÂ±ı£¬×öµÄºÃ³ÔÒªÓĞÃØ¾÷£¬ÄÃ¶¹É³À´Ëµ£¬ÔÚ½şÅİÍêÖ®ºóÒª°ÑÆ¤È¥ÁË²Å¿ÉÒÔÄë£¬ÕâÑù²Å»áÓĞÏãÎ¶. ²»¶àËµÁË£¬¿ÉÒÔ¿ªÊ¼ÁË°É?",
+	"<#> <color=red>B¸nh Trung Thu ThËp CÈm<color> cÇn cã: 4 bét m×, 4 ®­êng c¸t, 1 ®Ëu xanh, 1 gãi bét sen, 1 h¹nh nh©n, 1 ®Ëu phéng, 3 c¬m dõa. Nghe nãi lo¹i c¬m dõa nµy chØ cã ë ph­¬ng Nam th«i, m¾c l¾m ®Êy! NÕu ®· vËy, ta sÏ cÈn  thËn, b¾t ®Çu chø?",
+	"<#> <color=red>B¸nh Trung Thu H¹nh nh©n<color> cÇn cã: 6 bét m×, 6 ®­êng c¸t, 1 h¹nh nh©n, 2 ®Ëu phéng. §em mét İt ®Ëu phéng xay cho n¸t sau ®ã ®em bá vµo trong b¸nh trung thu, nh­ vËy míi táa ®­îc h­¬ng th¬m cña b¸nh tõ trong ra. Kh«ng nãi nhiÒu n÷a, b¾t ®Çu chø?",
+	"<#> <color=red>B¸nh Trung Thu Sen Trøng<color> cÇn cã: 5 bét m×, 6 ®­êng c¸t, 2 gãi bét sen, 2 trøng. CÇn hai trøng, mét trøng ta dïng lµm nh©n, trøng kia ta b«i lªn bÒ mÆt sau khi n­íng, c¸ch nöa tiÕng b«i lªn mét lÇn. Kh«ng nãi nhiÒu n÷a, b¾t ®Çu chø?",
+	"<#> <color=red>B¸nh Trung Thu §Ëu Trøng<color> cÇn cã: 6 bét m×, 5 ®­êng c¸t, 2 ®Ëu xanh, 2 trøng. Ng­¬i biÕt kh«ng vËy? CÇn hai trøng, mét trøng ta dïng lµm nh©n, trøng kia ta b«i lªn bÒ mÆt sau khi n­íng, c¸ch nöa tiÕng b«i lªn mét lÇn. Kh«ng nãi nhiÒu n÷a, b¾t ®Çu chø?",
+	"<#> <color=red>B¸nh Trung Thu Bét Sen<color> cÇn cã: 5 bét m×, 8 ®­êng c¸t, 2 gãi bét sen. Bİ quyÕt lµ ph¶i ®em nhôy cña h¹t sen bá ®i sau ®ã xay thµnh bét sen, ®ång thêi ph¶i trén ®Òu víi ®­êng c¸t, nh­ vËy míi lµm ra ®­îc b¸nh ngon. Kh«ng nãi nhiÒu n÷a, b¾t ®Çu chø?",
+	"<#> <color=red>B¸nh Trung Thu §Ëu Xanh<color> cÇn cã: 8 bét m×, 5 ®­êng c¸t, 2 ®Ëu xanh. §õng xem th­êng lo¹i b¸nh trung thu nµy, nh­ng muèn lµm ngon ph¶i cã bİ quyÕt ®ã, nh­ ®Ëu xanh ch¼ng h¹n sau khi ng©m xong ph¶i bá vá míi xay n¸t, nh­ vËy sÏ cã vŞ ngon. Kh«ng nãi nhiÒu n÷a, b¾t ®Çu chø?",
 };
 
 -- ²»Í¬ÔÂ±ı×´Ì¬µÄ¶Ô»°
 tbl_maketalk = {
 	-- ºÍÃæÍê³É
 	[STAT_HUOMIAN_FINISH] = {
-		"<#> ºÍÃæÍê³É, ÏÖÔÚ¿ªÊ¼×öÏÚ£¬ĞèÒªÒ»Ğ©Ê±¼ä£¬¿¿Äã°ïÃ¦ÁË£¬ËùÒÔ×öÏÚÆÚ¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬Íê³ÉºóÎÒ»á¸æËßÄã£¬Ìıµ½ÎÒ½ĞÄã¾ÍÒªÁ¢¿Ì¸Ï»ØÀ´£¬Ô­ÁÏÊ±¼ä·Å¾Ã»á»µµô!",
-		"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É!/keep_making_mooncake",
-		"<#> Ò»»á»ØÀ´!/cancel"},
+		"<#> Bét ®· ®¸nh xong, b©y giê b¾t ®Çu lµm nh©n, cÇn mét İt thêi gian, cã thÓ nhê ng­¬i phô ®Êy, v× vËy trong lóc lµm nh©n ng­¬i ®õng rêi khái Minh NguyÖt trÊn, sau khi xong ta sÏ th«ng b¸o cho ng­¬i. Sau khi nghe ta gäi th× lËp tøc ®Õn ®©y, nguyªn liÖu ®Ó l©u sÏ bŞ háng!",
+		"<#> Ta biÕt råi! B¾t ®Çu ®i!/keep_making_mooncake",
+		"<#> L¸t n÷a ta sÏ quay l¹i!/cancel"},
 	-- °üÏÚÍê³É
 	[STAT_BAOXIAN_FINISH] = {
-		"<#>ÏÚ×öºÃÁË£¬¿ªÊ¼ºæ¿¾£¬ÒªÒ»µãÊ±¼ä£¬¿¿Äã°ïÃ¦ÁË£¬ÔÚ´ËÆÚ¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬ºÃÁËÎÒ»á¸æËßÄã£¬¼Ç×¡Ìıµ½ÎÒ½ĞÄã¾ÍÁ¢¿Ìµ½ÕâÀï²»È»µÄ»°ÔÂ±ı¾ÍºıÁË!",
-		"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É!/keep_making_mooncake",
-		"<#> Ò»»á»ØÀ´!/cancel"},
+		"<#> Nh©n ®· lµm xong råi, qua giai ®o¹n n­íng ®©y, cÇn mét İt thêi gian, cã thÓ nhê sù gióp ®ì cña ng­¬i, trong thêi gian nµy ng­¬i ®õng nªn rêi khái Minh NguyÖt trÊn, xong ta sÏ th«ng b¸o cho ng­¬i, nhí ®Êy khi nghe ta gäi ph¶i lËp tøc ®Õn ngay kh«ng th× khĞt b¸nh ®ã!",
+		"<#> Ta biÕt råi! B¾t ®Çu ®i!/keep_making_mooncake",
+		"<#> L¸t n÷a ta sÏ quay l¹i!/cancel"},
 };
 
 
 tbl_stoptalk = {
 	-- ÕıÔÚºÍÃæ
 	[STAT_HUOMIAN_MAKING] = {
-		"<#> Èç¹ûÕâÑùÎÒ¿ªÊ¼·¢ÃæÁË£¬ĞèÒªÒ»µãÊ±¼ä£¬¿¿Äã°ïÃ¦ÁË£¬×öÏÚÆÚ¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬Íê³ÉºóÎÒ»á¸æËßÄã£¬Ìıµ½ÎÒ½ĞÄã¾ÍÒªÁ¢¿Ì¸Ï»ØÀ´£¬Ô­ÁÏÊ±¼ä·Å¾Ã»á»µµô!",
-		"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É!/resume_making_mooncake",
-		"<#> Ò»»á»ØÀ´!/cancel"},
+		"<#> NÕu vËy ta b¾t ®Çu pha bét ®©y, cÇn mét İt thêi gian, cã thÓ nhê ng­¬i phô ®Êy, v× vËy trong lóc lµm nh©n ng­¬i ®õng rêi khái Minh NguyÖt trÊn, sau khi xong ta sÏ th«ng b¸o cho ng­¬i. Sau khi nghe ta gäi th× mau lËp tøc ®Õn ®©y, nguyªn liÖu ®Ó l©u sÏ bŞ háng!",
+		"<#> Ta biÕt råi! B¾t ®Çu ®i!/resume_making_mooncake",
+		"<#> L¸t n÷a ta sÏ quay l¹i!/cancel"},
 	-- ÕıÔÚ°üÏÚ
 	[STAT_BAOXIAN_MAKING] = {
-		"<#> ÃæºÍºÃÁË£¬ÏÖÔÚ¿ªÊ¼°üÏÚ£¬ĞèÒªÒ»µãÊ±¼ä£¬ÒªÄã°ïÃ¦ÁË£¬Òò´ËÔÚÕâ¶ÎÊ±¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬Íê³ÉºóÎÒ»á¸æËßÄã£¬Ìıµ½ÎÒ½ĞÄã¾ÍÒªÁ¢¿Ì¸Ï»ØÀ´£¬Ô­ÁÏÊ±¼ä·Å¾Ã»á»µµô!",
-		"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É£¡resume_making_mooncake",
-		"<#> Ò»»á»ØÀ´!/cancel"},
+		"<#> Bét ®· ®¸nh xong, b©y giê b¾t ®Çu lµm nh©n, cÇn mét İt thêi gian, cã thÓ nhê ng­¬i phô ®Êy, v× vËy trong lóc lµm nh©n ng­¬i ®õng rêi khái Minh NguyÖt trÊn, sau khi xong ta sÏ th«ng b¸o cho ng­¬i. Sau khi nghe ta gäi th× lËp tøc ®Õn ®©y, nguyªn liÖu ®Ó l©u sÏ bŞ háng!",
+		"<#> Ta biÕt råi! B¾t ®Çu ®i!/resume_making_mooncake",
+		"<#> L¸t n÷a ta sÏ quay l¹i!/cancel"},
 	-- ÕıÔÚºæ¿¾
 	[STAT_HONGKAO_MAKING] = {
-		"<#> ÏÚ°üºÃÁË£¬ÏÖÔÚ¿ªÊ¼ºæ¿¾£¬ÒªÒ»µãÊ±¼ä£¬¿¿Äã°ïÃ¦ÁË£¬ÔÚ´ËÆÚ¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬ºÃÁËÎÒ»á¸æËßÄã£¬¼Ç×¡Ìıµ½ÎÒ½ĞÄã¾ÍÁ¢¿Ìµ½ÕâÀï²»È»µÄ»°ÔÂ±ı¾ÍºıÁË!",
-		"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É£¡resume_making_mooncake",
-		"<#> Ò»»á»ØÀ´!/cancel"},
+		"<#> Nh©n ®· lµm xong råi, qua giai ®o¹n n­íng ®©y, cÇn mét İt thêi gian, cã thÓ nhê sù gióp ®ì cña ng­¬i, trong thêi gian nµy ng­¬i ®õng nªn rêi khái Minh NguyÖt trÊn, xong ta sÏ th«ng b¸o cho ng­¬i, nhí ®Êy khi nghe ta gäi ph¶i lËp tøc ®Õn ngay kh«ng th× khĞt b¸nh ®ã!",
+		"<#> Ta biÕt råi! B¾t ®Çu ®i!/resume_making_mooncake",
+		"<#> L¸t n÷a ta sÏ quay l¹i!/cancel"},
 };
 
 -- ²½ÖèÃû³Æ
 tbl_stepname = {
-	[STAT_HUOMIAN_MAKING] = "<#> ºÍÃæ",	-- ÕıÔÚºÍÃæ
-	[STAT_BAOXIAN_MAKING] = "<#> °üÏÚ",	-- ÕıÔÚ°üÏÚ
-	[STAT_HONGKAO_MAKING] = "<#> ºæ¿¾",	-- ÕıÔÚºæ¿¾
+	[STAT_HUOMIAN_MAKING] = "<#> Pha bét",	-- ÕıÔÚºÍÃæ
+	[STAT_BAOXIAN_MAKING] = "<#> Lµm nh©n",	-- ÕıÔÚ°üÏÚ
+	[STAT_HONGKAO_MAKING] = "<#> N­íng",	-- ÕıÔÚºæ¿¾
 };
 
 tbMOONCAKE_LADDERID = {
@@ -136,22 +136,22 @@ end
 -- È·¶¨ÒªÖÆ×÷µÄÔÂ±ıÀàĞÍ
 function confirm_mooncake(ltype)
 	Say(tbl_mooncake_talk[ltype], 2,
-		"¶ÔÁË./" .. format("#make_mooncake(%d)", ltype),
-		"²»£¡ÎÒÒªÏëÒ»Ïë!/cancel")
+		"§óng råi./" .. format("#make_mooncake(%d)", ltype),
+		"Kh«ng! §Ó ta suy nghÜ l¹i!/cancel")
 end
 
 -- ¶Ô»°£ºÖÆ×÷ÔÂ±ı
 function talk_makemooncake()
-	local caption = "<#> ÔÂ±ıÊ¦¸µ: ÎÒÃÇ³§ÓĞ×öÔÂ±ıµÄ¶ÀÃÅÃØ·½£¬×ö³öÀ´µÄÔÂ±ı¿ÉÒÔÂú×ã×îÌôÌŞµÄ¿ÍÈË. ÄãÒª×öÄÄÖÖÔÂ±ı?"
+	local caption = "<#> Thî b¸nh: X­ëng chóng ta cã bİ quyÕt lµm b¸nh riªng cã thÓ t¹o ra nh÷ng chiÕc b¸nh hîp khÈu vŞ ng­êi khã tİnh nhÊt. ng­¬i muèn lµm b¸nh trung thu lo¹i nµo?"
 	Say(caption,
 		7,
-		"<#> ÎÒÒª×ö¶¹É³ÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_DOUSHA),
-		"<#> ÎÒÒª×öÁ«ÈØÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_LIANRONG),
-		"<#> ÎÒÒª×öµ°»Æ¶¹É³ÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_DANHUANGDOUSHA),
-		"<#> ÎÒÒª×öµ°»ÆÁ«ÈØÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_DANHUANGLIANRONG),
-		"<#> ÎÒÒª×ö¹ûÈÊÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_GUOREN),
-		"<#> ÎÒÒª×öÊ²½õÔÂ±ı/" .. format("#confirm_mooncake(%d)", TYPE_SHIJIN),
-		"<#> ÎÒÖ»ÊÇÂ·¹ı¿´¿´/cancel")
+		"<#> Ta muèn lµm B¸nh Trung Thu §Ëu Xanh/" .. format("#confirm_mooncake(%d)", TYPE_DOUSHA),
+		"<#> Ta muèn lµm B¸nh Trung Thu Bét Sen/" .. format("#confirm_mooncake(%d)", TYPE_LIANRONG),
+		"<#> Ta muèn lµm B¸nh Trung Thu §Ëu Trøng/" .. format("#confirm_mooncake(%d)", TYPE_DANHUANGDOUSHA),
+		"<#> Ta muèn lµm B¸nh Trung Thu Sen Trøng/" .. format("#confirm_mooncake(%d)", TYPE_DANHUANGLIANRONG),
+		"<#> Ta muèn lµm B¸nh Trung Thu H¹nh nh©n/" .. format("#confirm_mooncake(%d)", TYPE_GUOREN),
+		"<#> Ta muèn lµm B¸nh Trung Thu ThËp CÈm/" .. format("#confirm_mooncake(%d)", TYPE_SHIJIN),
+		"<#> Ta chØ ®i d¹o th«i/cancel")
 end
 
 -- ¶Ô»°£º¼ì²éÔÂ±ıÖÆ×÷×´Ì¬
@@ -161,26 +161,26 @@ function talk_querymooncake(varv)
 	name = tbl_mooncake[ltype]
 	-- ÔÂ±ı¿¾½¹ÁË
 	if (stat == STAT_PARCHED or stat == STAT_HUOMIAN_PARCHED) then
-		Say("<#> ¿Í¹ÙÕæ²»ºÃÒâË¼£¬ÎÒ¿´ÄãÕâÃ´¾Ã¶¼Ã»ÓĞÀ´ÔÂ±ıÒÑ¾­¿¾½¹ÁË!",
+		Say("<#> ThËt xin lçi vŞ kh¸ch quan nµy, ta thÊy ng­¬i l©u qu¸ ch­a ®Õn ®· lµm khĞt b¸nh råi!",
 			1,
-			"<#> µÃµ½¿¾½¹µÄÔÂ±ı/#take_parched_mooncake("..stat..")")
+			"<#> NhËn b¸nh trung thu bŞ khĞt/#take_parched_mooncake("..stat..")")
 	-- ÔÂ±ı×öºÃÁË
 	elseif (stat == STAT_HONGKAO_FINISH) then
 		close_hint()
 		local caption = ""
 		if (tbl_mooncake_exchangable[ltype] == 1) then
-			caption = "<#> ÕâÎ»¿Í¹Ù, <color=red>" .. tbl_mooncake[ltype] .. "<color> ÒÑ¾­×öºÃÁË£¬ÏãÂğ£¿¸Ï¿ìĞÀÉÍÒ»ÏÂ£¡ÌıËµÕòÉÏÓĞÒ»Î»ºÜÏ²»¶³ÔÔÂ±ıµÄÃ÷ÔÂÀÏÈË£¬Äã°ÑÔÂ±ı´øÈ¥¸øËûËµ²»¶¨»áÓĞÒâÏë²»µ½µÄÀñÎïÄØ£¡"
+			caption = "<#> VŞ kh¸ch quan nµy, <color=red>" .. tbl_mooncake[ltype] .. "<color> ®· lµm xong råi, cã th¬m kh«ng vËy? Mau th­ëng thøc xem! Nghe ®©u trong thŞ trÊn cã vŞ Minh NguyÖt l·o nh©n thİch ¨n b¸nh trung thu l¾m, ng­¬i ®em ®Õn cho «ng ta ®i biÕt ®©u cã tÆng phÈm bÊt ngê!"
 		else
-			caption = "<#> ÕâÎ»¿Í¹Ù, <color=red>" .. tbl_mooncake[ltype] .. "<color> ÒÑ¾­×öºÃÁË£¬ÏãÂğ£¿¸Ï¿ìĞÀÉÍÒ»ÏÂ!"
+			caption = "<#> VŞ kh¸ch quan nµy, <color=red>" .. tbl_mooncake[ltype] .. "<color> ®· ®­îc lµm xong, th¬m kh«ng vËy? Mau th­ëng thøc ®i nµo!"
 		end
-		Say(caption, 1, "<#> µÃµ½ÔÂ±ı/" .. format("#take_mooncake(%d)", ltype))
+		Say(caption, 1, "<#> NhËn b¸nh trung thu/" .. format("#take_mooncake(%d)", ltype))
 	elseif (tbl_stoptalk[stat] ~= nil) then		-- ÖÆ×÷ÖĞ
 		-- ÔİÍ£
 		if (TM_IsTimerSuspending(TIMER_MOONCAKE) == 1) then
 			Say(tbl_stoptalk[stat][1], 2, tbl_stoptalk[stat][2], tbl_stoptalk[stat][3])
 		-- ÔÂ±ıÖÆ×÷ÖĞ
 		else
-			local talk = "<#> ¿Í¹Ù²»Òª×Å¼±, <color=red>" .. tbl_mooncake[ltype] .. "<color> »¹ÔÚ<color=red>" .. tbl_stepname[stat] .. "<color>, Õâ¸ö½×¶Î½áÊøÁËÎÒ»á¸æËßÄã!"
+			local talk = "<#> VŞ kh¸ch quan nµy ®õng gÊp, <color=red>" .. tbl_mooncake[ltype] .. "<color> cßn ®ang <color=red>" .. tbl_stepname[stat] .. "<color>, sau khi xong giai ®o¹n nµy ta sÏ th«ng b¸o cho!"
 			Talk(1, "", talk)
 		end
 	elseif (tbl_maketalk[stat] ~= nil) then		-- ²½ÖèÍê³É
@@ -208,7 +208,7 @@ function consume_material(ltype)
 		if (want_count ~= 0) then
 			local curr_count = CalcEquiproomItemCount(material_item[2], material_item[3], 1, -1)
 			if (curr_count < want_count) then
-				Talk(1, "", "<#>¿Í¹Ù£¬ÄãÉíÉÏµÄ²ÄÁÏ²»¹»£¬ÕÒ¹»Ô­ÁÏÖ®ºóÔÙÀ´°É!")
+				Talk(1, "", "<#> VŞ kh¸ch quan nµy, nguyªn liÖu trªn ng­êi ng­¬i kh«ng ®ñ, ®îi t×m ®ñ nguyªn liÖu råi h·y ®Õn!")
 				return 0
 			end
 		end
@@ -240,16 +240,16 @@ function make_mooncake(ltype)
 		--print(format("TM_SetTimer(%d, %d, %d, %d)", resttime * 18, TIMER_MOONCAKE, 1, 2))
 		TM_SuspendTimer(TIMER_MOONCAKE)
 		
-		Say("<#>ÕâÑùµÄ»°ÎÒ×ÅÊÖ<color=red>ºÍÃæ<color>, ĞèÒªÒ»µãÊ±¼ä£¬¿¿Äã°ïÃ¦ÁË£¬Òò´Ë×öÏÚÆÚ¼äÄã²»ÄÜÀë¿ªÃ÷ÔÂÕò£¬Íê³ÉºóÎÒ»á¸æËßÄã£¬Ìıµ½ÎÒ½ĞÄã¾ÍÒªÁ¢¿Ì¸Ï»ØÀ´£¬Ô­ÁÏÊ±¼ä·Å¾Ã»á»µµô!",
+		Say("<#> NÕu vËy ta b¾t tay <color=red>pha bét<color>, cÇn mét İt thêi gian, cã thÓ nhê ng­¬i phô ®Êy, v× vËy trong lóc lµm nh©n ng­¬i ®õng rêi khái Minh NguyÖt trÊn, sau khi xong ta sÏ th«ng b¸o cho ng­¬i. Sau khi nghe ta gäi th× lËp tøc ®Õn ®©y, nguyªn liÖu ®Ó l©u sÏ bŞ háng!",
 			2,
-			"<#> ÎÒÖªµÀÁË£¡¿ªÊ¼°É£¡resume_mooncake",
-			"<#> Ò»»á»ØÀ´!/cancel")
+			"<#> Ta biÕt råi! B¾t ®Çu ®i!/resume_mooncake",
+			"<#> L¸t n÷a ta sÏ quay l¹i!/cancel")
 	end
 end
 
 -- »Ö¸´ÖÆ×÷ÔÂ±ı
 function resume_mooncake()
-	Msg2Player("<#> ÏÖÔÚ¿ªÊ¼<color=yellow>ºÍÃæ <color>®©y!")
+	Msg2Player("<#> B©y giê b¾t ®Çu <color=yellow>pha bét <color>®©y!")
 	TM_ResumeTimer(TIMER_MOONCAKE)
 end
 
@@ -287,7 +287,7 @@ function take_parched_mooncake(stat)
 	if (lstat == STAT_HUOMIAN_PARCHED or lstat == STAT_PARCHED) then
 		nt_setTask(VARV_MOONCAKE, 0)
 		AddItem(6,1,890,1,0,0)
-		Msg2Player("<#> ÄãµÃµ½Ò»¸ö¿¾ºÃµÄÔÂ±ı")
+		Msg2Player("<#> ng­¬i nhËn ®­îc mét b¸nh trung thu n­íng xong")
 		CastSkill(358, 1)
 		local nExp = 0;
 		if (stat == STAT_PARCHED) then
@@ -311,9 +311,9 @@ function take_mooncake(ltype)
 		local cakename = tbl_mooncake[ltype]
 		local item = tbl_mooncake_item[ltype]
 		AddItem(item[1], item[2], item[3], item[4], item[5], item[6])
-		Msg2Player("<#> ÄãµÃµ½Ò»¸ö<color=yellow>" .. cakename .. "<color>")
+		Msg2Player("<#> B¹n nhËn ®­îc mét <color=yellow>" .. cakename .. "<color>")
 		if (ltype == 1) then
-			AddGlobalNews("<#> ¹§Ï²Íæ¼Ò"..GetName().."<#> ×öºÃÁËÊ²½õÔÂ±ı")
+			AddGlobalNews("<#> Chóc mõng ng­êi ch¬i"..GetName().."<#> lµm ®­îc B¸nh Trung Thu ThËp CÈm")
 		end
 		ladder_mooncake_ladder(ltype)
 		local nExp = makecake_addexp(GetLevel(), 0.60)
@@ -392,11 +392,11 @@ end
 -- °ïÖúËµÃ÷
 function about_mooncake(step)
 	if (step == 1) then
-		Talk(1,"#about_mooncake(2)","<#> ÔÂ±ıÊ¦¸µ:×öÔÂ±ıÒª½øĞĞ<color=red>3<color> ½×¶Î. Ñ¡ÔñĞèÒªÖÆ×÷µÄÔÂ±ıÖÖÀà£¬×¼±¸ºÃÔ­ÁÏ£¬ÖÆ×÷²½ÖèÈçÏÂ: <color=red>'ºÍÃæ<color>', <color=red>'°üÏÚ'<color>, <color=red>'ºæ¿¾'<color>. ¾­¹ıÕâÈı¸ö½×¶Î¾ÍÍê³ÉÁËÔÂ±ı.")
+		Talk(1,"#about_mooncake(2)","<#> Thî b¸nh: Lµm b¸nh trung thu cÇn tiÕn hµnh <color=red>3<color> giai ®o¹n. Chän lo¹i h×nh b¸nh trung thu cÇn lµm, chuÈn bŞ ®ñ c¸c thø nguyªn liÖu, c¸c b­íc ®­îc tiÕn hµnh nh­ sau: <color=red>'Pha bét<color>', <color=red>'Lµm nh©n'<color>, <color=red>'N­íng'<color>. Qua ba giai ®o¹n trªn hoµn thµnh b¸nh trung thu.")
 	elseif (step == 2) then
-		Talk(1, "#about_mooncake(3)","<#> Ã¿¸ö½×¶Î¶¼ÓĞ¹Ì¶¨µÄÖÆ×÷Ê±¼ä£¬Íê³ÉÒ»¸ö½×¶ÎÖ®ºó£¬½«ÓĞ±£ÖÊÆÚ(×ö³öµÄÔÂ±ıÔ½ÃÀÎ¶±£´æµÄÊ±¼äÔ½¾Ã) , <color=red>50ºÍ50¼¶ÒÔÉÏ<color>Íæ¼ÒÔÚÍê³ÉÃ¿¸ö½×¶ÎÖ®ºó½«»áµÃµ½Ò»¶¨µÄ¾­ÑéÖµ.")
+		Talk(1, "#about_mooncake(3)","<#> Mçi mét giai ®o¹n ®Òu cã mét thêi gian lµm nhÊt ®Şnh, sau mçi giai ®o¹n lµm xong, sÏ cã h¹n sö dông (Lµm ra b¸nh cµng ngon th× b¶o qu¶n ®­îc cµng l©u) , <color=red>cÊp 50 vµ cÊp 50 trë lªn <color>ng­êi ch¬i sau khi tr¶i qua mçi giai ®o¹n lµm sÏ nhËn ®­îc ®iÓm kinh nghiÖm nhÊt ®Şnh.")
 	elseif (step == 3) then
-		Talk(1, "","<#>Èç¹ûÔÚÖÆ×÷ÆÚ¼äÃ»ÓĞ¾­¹ı½ÓÏÂÀ´µÄ½×¶Î»òÕßÁìÈ¡ÔÂ±ı£¬¾ÍÊÓÎªÊ§°Ü£¬Ö»ÄÜµÃµ½<color=red>¿¾½¹µÄÔÂ±ı<color>.")
+		Talk(1, "","<#> NÕu trong thêi gian lµm, ch­a tr¶i qua giai ®o¹n tiÕp theo hoÆc nhËn b¸nh, th× xem nh­ thÊt b¹i, chØ nhËn ®­îc <color=red>b¸nh trung thu bŞ khĞt<color>.")
 
 	end
 end
@@ -406,12 +406,12 @@ function main()
 	-- DEBUG
 	--print(format("GetTask(%d):%d", VARV_MOONCAKE, varv))
 	if (varv == 0) then
-		local caption = "<#> Ã÷ÔÂÕòµÄÔÂ±ıÉùÃûÔ¶²¥. ÎÒÃÇ×öµÄÔÂ±ı±£Ö¤ºÃ³Ô. ¿Í¹ÙÒªÂòÂğ?"
+		local caption = "<#> B¸nh ë Minh NguyÖt trÊn næi tiÕng kh¾p n¬i. B¸nh trung thu chóng ta lµm ra b¶o ®¶m khÈu vŞ th¬m ngon. VŞ kh¸ch quan nµy cã mua kh«ng?"
 		Say(caption,
 			3,
-			"<#> ÎÒÏëÒª×öÔÂ±ı/talk_makemooncake",
-			"<#> Óë×öÔÂ±ıÏà¹Ø/#about_mooncake(1)",
-			"<#> ÈÃÎÒÏëÒ»Ïë!/cancel")
+			"<#> Ta muèn lµm mét vµi b¸nh trung thu/talk_makemooncake",
+			"<#> Liªn quan ®Õn viÖc lµm b¸nh trung thu/#about_mooncake(1)",
+			"<#> §Ó ta suy nghÜ l¹i!/cancel")
 	else
 		talk_querymooncake(varv)
 	end

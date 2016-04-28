@@ -1,7 +1,7 @@
 -- ÃÎ¾³ Â·ÈË_Ò©··.lua  ÉÌÈËNPC
 
 function main()
-	Say("ĞĞ×ß½­ºş£¬ĞèÂòÒ»Ğ©Ò©Æ·×ö·À±¸!",2,"½»Ò×/buy_yes","²»½»Ò×/no")	
+	Say("Hµnh tÈu giang hå, nªn mua İt th­¬ng d­îc phßng khi ho¹n n¹n!",2,"Giao dŞch/buy_yes","Kh«ng giao dŞch/no")	
 end
 
 function buy_yes()

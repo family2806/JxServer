@@ -11,25 +11,25 @@ W,X,Y = GetWorldPos();
 nSubWorldID = SubWorldIdx2ID();
 
 if (nSubWorldID ~= CityWarID) then 
-	Msg2Player("Äã²»ÄÜÔÚÕâ¸öµØ·½Ê¹ÓÃÄõÁú³å³µ£¡")
+	Msg2Player("B¹n kh«ng thÓ sö dông NghiÖt Long Xung Xa t¹i ®©y! ")
 	return 1;
 end
 
 if (GetCurCamp() ~= 2) then
-	Msg2Player("Ö»ÓĞ¹¥³ÇÒ»·½²ÅÄÜÊ¹ÓÃÄõÁú³å³µ£¡")
+	Msg2Player("ChØ cã phe C«ng Thµnh míi cã thÓ sö dông NghiÖt Long Xung Xa! ")
 	return 1;
 end
 
 PosId = GetNearstPos(X*32,Y*32, GccPos);
 if (PosId == 0) then 
-	Say("ÄãËùÔÚÎ»ÖÃÀëÄõÁú³å³µ·ÅÖÃÎ»ÖÃÌ«Ô¶£¬ÎŞ·¨Ê¹ÓÃ£¡",0)
+	Say("B¹n ®øng c¸ch NghiÖt Long Xung Xa qu¸ xa, kh«ng thÓ sö dông! ",0)
 	return 1
 end;
 
 
 
 if (GetMissionV(MS_DOORBEGIN + PosId - 1)  == 0 ) then 
-	Msg2Player("ÄãËù´¦Î»ÖÃÇ°·½µÄ³ÇÃÅÒÑ±»¹¥Ïİ£¡ÎŞĞëÊ¹ÓÃÄõÁú³å³µÁË¡£");
+	Msg2Player("Thµnh m«n phİa tr­íc mÆt ng­¬i ®ang ®øng ®· bŞ c«ng ph¸, kh«ng thÓ sö dông NghiÖt Long Xung Xa ");
 	return 1
 end;
 
@@ -40,12 +40,12 @@ if (GetMissionV(MSBegin + PosId - 1) == 0) then
 		SetNpcDeathScript(ToolIndex, "\\script\\missions\\citywar_city\\tooldeath.lua");
 		SetMissionV(MSBegin + PosId -1, ToolIndex); 
 		SetSiegeVoitureParam(ToolIndex, GetMissionV(MS_DOORBEGIN + PosId - 1))
-		Msg2MSAll(MISSIONID, GetName().."·ÅÖÃÁËÒ»Ì¨ÄõÁú³å³µ£¬Ğ­Öú¹¥³Ç¡£");
+		Msg2MSAll(MISSIONID, GetName().."S¾p ®Æt thªm mét chiÕc NghiÖt Long Xung Xa, hç trî C«ng Thµnh. ");
 		WriteLog(GetLoop()..GetName()..":AddCC"..ToolIndex)
 		return 0
 	end;
 else
-	Msg2Player("Äãµ±Ç°Ëù´¦Î»ÖÃ¶ÔÓ¦µÄÄõÁú³å³µÒÑ´æÔÚ£¬ÔİÊ±²»¿ÉÔÙ´Î·ÅÖÃ¡£");
+	Msg2Player("NghiÖt Long Xung Xa mµ b¹n bè trİ tr­íc ®©y hiÖn vÉn cßn, t¹m thêi kh«ng thÓ bè trİ thªm n÷a ");
 	return 1
 end;
 

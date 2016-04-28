@@ -9,8 +9,8 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)	
-	tbDailog.szTitleMsg = "<npc>ÎÒ¿ÉÒÔ´øÄãÀë¿ª×¼±¸¶·³¡"
-	tbDailog:AddOptEntry("ÎÒÏëÀë¿ª!", leave)
+	tbDailog.szTitleMsg = "<npc>Ta cã thÓ ®­a ng­¬I rêi khái ®Êu tr­êng chuÈn bŞ"
+	tbDailog:AddOptEntry("Ta muèn rêi khái!", leave)
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)
 	tbDailog:Show()		
 end

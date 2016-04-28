@@ -3,6 +3,6 @@
 
 function OnTimer()
 	StopTimer()						--结束计时
-	Msg2Player("酿酒时间已到！")
+	Msg2Player("Ch璶g c蕋 ru th阨 gian  n ")
 	SetTask(38,SetByte(GetTask(38),1,80))
 end;

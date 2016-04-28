@@ -66,7 +66,7 @@ end
 
 
 function tbDangBoss:OnInit()
-	AddGlobalCountNews("¶·Óã»î¶¯¿ªÊ¼ÁË, ´ó¼Ò¿ÉÒÔµ½ÁÙ°²µÄÕÆµÆ¹¬Å®´¦±¨Ãû")
+	AddGlobalCountNews("Ho¹t ®éng ®Êu ng­u b¾t ®Çu råi, mäi ng­êi cã thÓ ®Õn ch­ëng ®¨ng cung n÷ ë L©m An ®Ó b¸o danh")
 	SetMissionV(self.tbMissionV.MISSION_STATE, self.READY_STATE)
 	local nMapId = SubWorldIdx2ID(SubWorld)
 	SetMissionV(self.tbMissionV.CUR_MAPID, nMapId)
@@ -83,19 +83,19 @@ function tbDangBoss:OnPlayerJoin()
 	local nContinueCount = self.tbTask:GetContinueCount(nCurMatchId) + 1
 	
 	if nMissionState ~= self.READY_STATE and nMissionState ~= self.BATTLE_STATE  then
-		Msg2Player("»î¶¯»¹Ã»ÓĞ¿ªÊ¼.")
+		Msg2Player("Ho¹t ®éng vÉn ch­a b¾t ®Çu.")
 		self:GotoSignUpPlace()
 		return 0
 	end
 	
 	if nPlayerCount >= self.nMaxPlayerCount then
-		Msg2Player("Õæ¿ÉÏ§,±¨ÃûÈËÊıÒÑ¾­¹»ÁË.ÇëµÈÒ»µÈ")
+		Msg2Player("RÊt tiÕc, sè ng­êi b¸o danh ®· ®ñ. Xin h·y ®îi ®ît sau")
 		self:GotoSignUpPlace()
 		return 0
 	end
 	
 	if self.tbTask:GetJoinCount() >= self.tbTask.nMaxJoinCount then
-		Msg2Player(format("Ã¿¸öÈË×î¶àÖ»ÄÜ²Î¼Ó %d´Î»î¶¯", self.tbTask.nMaxJoinCount))
+		Msg2Player(format("Mçi nh©n vËt nhiÒu nhÊt chØ cã thÓ tham gia %d ho¹t ®éng", self.tbTask.nMaxJoinCount))
 		self:GotoSignUpPlace()
 		return 0
 	end
@@ -106,7 +106,7 @@ function tbDangBoss:OnPlayerJoin()
 	end
 	
 	if self:IsPlayerEligible() ~= 1 then
-		Msg2Player(format(" %d¼¶ÒÔÉÏºÍ %s²Å¿ÉÒÔ²Î¼Ó", self.nMinLevel, (self.bIsCharged == 1 and "½»") or ""))
+		Msg2Player(format("CÊp %d trë lªn vµ %s míi cã thÓ tham gia", self.nMinLevel, (self.bIsCharged == 1 and "Nép") or ""))
 		self:GotoSignUpPlace()
 		return 0
 	end
@@ -114,13 +114,13 @@ function tbDangBoss:OnPlayerJoin()
 	
 	if nMoney > 0 then
 		if Pay(nMoney) ~= 1 then
-			Msg2Player(format("¸¶ %dÒøÁ½²Å¿ÉÒÔ½øÈ¥.", nMoney))
+			Msg2Player(format("Chi tr¶ %d ng©n l­îng míi cã thÓ vµo.", nMoney))
 			self:GotoSignUpPlace()
 			return 0
 		else
 			local szMsg = format("Account %s\tName %s\tpay %d money", GetAccount(), GetName(), nMoney)
 			self:WriteLog(szMsg)
-			Msg2Player(format("ÒÑ¸¶ %dÒøÁ½", nMoney))
+			Msg2Player(format("§· chi tr¶ %d ng©n l­îng", nMoney))
 		end
 	end
 	
@@ -137,7 +137,7 @@ function tbDangBoss:OnPlayerJoin()
 	SetCreateTeam(0);	--¹Ø±Õ×é¶Ó¹¦ÄÜ
 	
 	ForbidEnmity(1)	--ÉèÖÃ³ğÉ±
-	DisabledStall(1);	--½ûÖ¹½»Ò×;
+	DisabledStall(1);	--½ûÖ¹NépÒ×;
 	ForbitTrade(0);
 	ForbidChangePK(1);
 	DisabledUseTownP(1);	--½ûÖ¹Ê¹ÓÃ»Ø³Ì£»
@@ -192,19 +192,19 @@ function tbDangBoss:OnTimer()
 		if nTimerCount >= self.nReadyTime then
 			return self:TranBattleState(nMapId, nPlayerCount)
 		else
-			Msg2MSAll(self.nMissionId, format("»¹ÓĞ<color=yellow>%d<color> Ãë»î¶¯¿ªÊ¼", self.nReadyTime - nTimerCount))
+			Msg2MSAll(self.nMissionId, format("Cßn <color=yellow>%d<color> gi©y n÷a ho¹t ®éng b¾t ®Çu", self.nReadyTime - nTimerCount))
 		end
 	end
 	
 	if nMissionState == self.BATTLE_STATE then
 		if nRound >= self.nMaxRound and nTimerCount >= nNextTime then
 			self:ClearAllBox()
-			Msg2MSAll(self.nMissionId, "»î¶¯½áÊø")
+			Msg2MSAll(self.nMissionId, "Ho¹t ®éng kÕt thóc")
 			return self:CloseGameInMap(nMapId)	
 		end	
 		
 		if nRound < self.nMaxRound and mod(nTimerCount, 30) and self:IsBossExist() then
-			local szMsg = format("»¹ÓĞ<color=yellow>%d<color>Ãë»¯×±³É½ğÓã", nNextTime - nTimerCount)
+			local szMsg = format("Cßn <color=yellow>%d<color> gi©y n÷a ®Õn ®ît sau hãa trang thµnh kim ng­u", nNextTime - nTimerCount)
 			Msg2MSAll(self.nMissionId, szMsg)
 		end
 		
@@ -231,10 +231,10 @@ function tbDangBoss:TranBattleState(nMapId, nPlayerCount)
 	local szMsg = format("map %d\tplayer count?%d", nMapId, nPlayerCount)
 	self:WriteLog(szMsg)
 	if nPlayerCount < self.nMinPlayerCount then
-		Msg2MSAll(self.nMissionId, format("<color=green>ÈËÊı²»¹» %d,´Ë²ã»î¶¯È¡Ïû!<color>", self.nMinPlayerCount))
+		Msg2MSAll(self.nMissionId, format("<color=green>Sè ng­êi kh«ng ®ñ %d, ®ît ho¹t ®éng nµy sÏ bŞ hñy!<color>", self.nMinPlayerCount))
 		return self:CloseGameInMap(nMapId)	
 	else
-		Msg2MSAll(self.nMissionId, "<color=green>»î¶¯¿ªÊ¼!<color>")
+		Msg2MSAll(self.nMissionId, "<color=green>Ho¹t ®éng b¾t ®Çu!<color>")
 		SetMissionV(self.tbMissionV.MISSION_STATE, self.BATTLE_STATE)
 		SetMissionV(self.tbMissionV.WAIT_TIME, 0)
 		return self:ChangeBoss()	
@@ -285,7 +285,7 @@ end
 
 function tbDangBoss:AddBossAward()
 	local szName = GetName()
-	local szMsg = format("<color=yellow>%s<color> ±äÉí³É½ğÓãÓĞÎŞË«µÄÉúÃüÁ¦", szName)
+	local szMsg = format("<color=yellow>%s<color> biÕn th©n thµnh kim ng­u víi søc m¹nh v« song", szName)
 	Msg2MSAll(self.nMissionId, szMsg)
 	self:BecomeNormal()
 	self.tbTask:AddAwardCount()
@@ -341,20 +341,20 @@ function tbDangBoss:BecomeBoss()
 
 	local tbBossName = 
 	{
-		[3] = "´óÁ¦Óã",
-		[2] = "½ğ¸ÕÓã",
-		[1] = "ÓãÄ§Íõ"
+		[3] = "§¹i Lùc Ng­u",
+		[2] = "Kim Cang Ng­u",
+		[1] = "Ng­u Ma V­¬ng"
 	}
 	
 	SetDeathScript(self.szBossPlayerDeathScript);
 	local szFile = "\\settings\\maps\\chunfenggu\\niu.txt"
 	local nPosX, nPosY = getadata(szFile);
 	SetPos(floor(nPosX / 32), floor(nPosY / 32));
-	Msg2MSAll(self.nMissionId, format("<color=yellow>%s<color> ±äÉí³É <color=yellow>%s<color>, ¸Ï¿ìÈ¥×¥ ,ÏÖÔÚÔÚ(%d,%d)", GetName(), tbBossName[nLevel], floor(nPosX / 32 / 8), floor(nPosY / 32 / 16)))
+	Msg2MSAll(self.nMissionId, format("<color=yellow>%s<color> biÕn th©n thµnh <color=yellow>%s<color>, h·y mau truy b¾t , hiÖn t¹i ®ang ë (%d,%d)", GetName(), tbBossName[nLevel], floor(nPosX / 32 / 8), floor(nPosY / 32 / 16)))
 end
 
 function tbDangBoss:RefreshBox()
-	Msg2MSAll(self.nMissionId, "ÖÜÎ§³öÏÖºÜ¶à±¦Ïä,ÎÒÃÇ»¹ÊÇ¸Ï¿ìÈ¥¿ª±¦Ïä°É!")
+	Msg2MSAll(self.nMissionId, "Xung quanh xuÊt hiÖn rÊt nhiÒu b¶o r­¬ng, chóng ta h·y mau chãng më r­¬ng th«i!")
 	local nMapId	= GetMissionV(self.tbMissionV.CUR_MAPID)
 	local szFile = "\\settings\\maps\\chunfenggu\\xiangzi.txt"
 	local nCount = ceil(GetMSPlayerCount(self.nMissionId, 0) * 1.2)
@@ -379,7 +379,7 @@ function tbDangBoss:BossOnDeath(nNpcIndex)
 	SetMissionV(self.tbMissionV.NEXT_TIME, nNextTime)
 	SetMissionV(self.tbMissionV.WAIT_TIME, nWaitTime)
 	local nPlayerIndex = NpcIdx2PIdx(nNpcIndex);
-	local szMsg = format("%s ±äÉí³É½ğÓãÒÑ¾­±»´òÅÜÁË, ³¯Í¢½«ÖØÉÍ¸÷Î»¶·ÓãÓ¢²Å. <enter>Ö®ºó<color=yellow>%d<color>½«»á³öÏÖºÜ¶à±¦Ïä, ¸÷Î»Òª×¢ÒâÁË£¡", GetName(), nWaitTime - nTimerCount)
+	local szMsg = format("%s biÕn thµnh thµnh kim ng­u ®· bŞ ®¸nh ®uæi, triÒu ®×nh sÏ träng th­ëng c¸c vŞ anh tµi ®Êu ng­u. <enter>Sau <color=yellow>%d<color> gi©y sÏ xuÊt hiÖn rÊt nhiÒu b¶o r­¬ng, ch­ vŞ h·y chó ı!", GetName(), nWaitTime - nTimerCount)
 	Msg2MSAll(self.nMissionId, szMsg)
 	SetMissionV(self.tbMissionV.BOSS_NAME_ID, 0)
 	SetMissionV(self.tbMissionV.BOSS_BORN_DATE, 0)
@@ -390,9 +390,9 @@ function tbDangBoss:GiveKillPlayerExp()
 	local nExp = self.nKillPlayerExp
 	if self.tbTask:GetKillPlayerExp() < self.tbTask.nMaxKillPlayerExp then
 		self.tbTask:AddKillPlayerExp(nExp)		
-		tbAwardTemplet:GiveAwardByList({nExp = nExp}, format("´ò°ÜÍæ¼Ò: %s",GetName()) )
+		tbAwardTemplet:GiveAwardByList({nExp = nExp}, format("§¸nh b¹i ng­êi ch¬i: %s",GetName()) )
 	else
-		Msg2Player("´ò°Ü»ñµÃ¾­ÑéÖµ×î¸ßµÄÍæ¼Ò.")
+		Msg2Player("§¸nh b¹i ng­êi ch¬i nhËn ®¹t ®­îc kinh nghiÖm cao nhÊt.")
 	end
 	
 end
@@ -406,7 +406,7 @@ function tbDangBoss:PlayerOnDeath(nNpcIndex)
 		
 		local szBossName = doFunByPlayer(nPlayerIndex, GetName)
 		local szName = GetName()
-		Msg2MSPlayer(self.nMissionId, format("½ğÓã %s ´ò°Ü %s!", szBossName, szName))
+		Msg2MSPlayer(self.nMissionId, format("Kim ng­u %s ®¸nh b¹i %s!", szBossName, szName))
 	end
 	
 	

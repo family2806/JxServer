@@ -3,7 +3,7 @@ Include([[\script\missions\tong\tong_springfestival\head.lua]]);
 -- LLG_ALLINONE_TODO_20070802
 Include([[\script\item\springfestival2006\itemhead.lua]]);
 
-ITEMNAME = "»ìãç¹Æ";
+ITEMNAME = "Hçn ThuÇn Cæ ";
 function main()
 	tabidx = itemmapcheck(TAB_ACTION);
 	if (0 == tabidx) then
@@ -38,7 +38,7 @@ function main()
 	    if (tabPlayer[i] > 0) then
 	        PlayerIndex = tabPlayer[i];
 	        festival_go_back(nBeginMapID)
-			Msg2Player("<#><color=0xB5FDD7>"..szName.."<color> Ê¹ÓÃ<color=0xB5FDD7>"..ITEMNAME.."<color>, Ê¹µÃ¸÷¶ÔÊÖ±»×ªµ½ÆäËûÇøÓò.");
+			Msg2Player("<#><color=0xB5FDD7>"..szName.."<color> sö dông <color=0xB5FDD7>"..ITEMNAME.."<color>, khiÕn cho c¸c ®èi thñ bŞ chuyÓn ®i mét khu vùc bÊt kú kh¸c.");
 	    end;
 	end;
 	

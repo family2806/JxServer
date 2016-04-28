@@ -5,7 +5,7 @@ Include("\\script\\item\\battles\\addmarshalpoint.lua")
 function add476()
 		level = random(1,7);
 		AddSkillState(476, level, 0, 1080 )	--增加玩家火防
-		Msg2Player("<#>你获得了<color=0xB5FDD7>1分钟的火防：增加"..(level*10).."<#>％")	
+		Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7> t╪g ph遪g h醓 trong 1 ph髏"..(level*10).."<#> %")	
 end
 
 Tab={add476}

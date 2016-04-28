@@ -7,7 +7,7 @@
 --	À©Õ¹luaÎ´Ìá¹©µÄ×Ö·û´®´¦Àíº¯Êı
 --
 --ÓÎÏ·½Å±¾¡¤½£ÏÀÇéÔµÍøÂç°æ
---½ğÉ½Èí¼ş¹É·İÓĞÏŞ¹«Ë¾£¬copyright 1992-2005
+--KimÉ½Èí¼ş¹É·İÓĞÏŞ¹«Ë¾£¬copyright 1992-2005
 --==================================================--
 
 if not STRING_HEAD then
@@ -34,7 +34,7 @@ if (1) then
 --·µ»ØÖµ£º
 --	Ìæ»»ºóµÄ×Ö·û´®¡£
 --ÓÃÀı£º
---	ÎŞ
+--	V« hÖ 
 --==================================================--
 function replace(str,pattern,s)
 	/*
@@ -181,11 +181,11 @@ end
 
 ---½«ÎåĞĞÊıÖµ×ª»»³É²ÊÉ«ÎåĞĞºº×Ö
 SERIESWORD = {
-	{ "½ğ",	"metal"	},
-	{ "Ä¾",	"wood"	},
-	{ "Ë®",	"water"	},
-	{ "»ğ",	"fire"	},
-	{ "ÍÁ",	"earth"	}
+	{ "Kim",	"metal"	},
+	{ "Méc",	"wood"	},
+	{ "Thñy ",	"water"	},
+	{ "Háa",	"fire"	},
+	{ "Thæ ",	"earth"	}
 }
 
 function toSeriesColorText(text, sno)
@@ -198,7 +198,7 @@ end
 
 function toSeries(sno, bUnColorful)
 	if(not tonumber(sno)) then return "error" end
-	if(sno < 0 or sno > 4) then return "ÎŞ" end
+	if(sno < 0 or sno > 4) then return "V« hÖ " end
 	if (bUnColorful == 1) then
 		return SERIESWORD[sno+1][1];
 	else
@@ -209,21 +209,21 @@ end
 
 ---½«µÈ¼¶Êı×Ö×ª»»³É²ÊÉ«µÈ¼¶ºº×Ö
 LEVELWORD = {
-	"<color="..toColor(200,200,200).."> 1¼¶<color>",
-	"<color="..toColor(0,200,0).."> 2¼¶<color>",
-	"<color="..toColor(200,0,0).."> 3¼¶<color>",
-	"<color="..toColor(200,0,200).."> 4¼¶<color>",
-	"<color="..toColor(200,200,0).."> 5¼¶<color>",
-	"<color="..toColor(0,0,255).."> 6¼¶<color>",
-	"<color="..toColor(0,255,0).."> 7¼¶<color>",
-	"<color="..toColor(255,0,0).."> 8¼¶<color>",
-	"<color="..toColor(255,0,255).."> 9¼¶<color>",
-	"<color="..toColor(255,255,0)..">10¼¶<color>",	
+	"<color="..toColor(200,200,200).."> cÊp1 <color>",
+	"<color="..toColor(0,200,0).."> cÊp2 <color>",
+	"<color="..toColor(200,0,0).."> cÊp3 <color>",
+	"<color="..toColor(200,0,200).."> cÊp4 <color>",
+	"<color="..toColor(200,200,0).."> cÊp5 <color>",
+	"<color="..toColor(0,0,255).."> cÊp6 <color>",
+	"<color="..toColor(0,255,0).."> cÊp7 <color>",
+	"<color="..toColor(255,0,0).."> cÊp8 <color>",
+	"<color="..toColor(255,0,255).."> cÊp9 <color>",
+	"<color="..toColor(255,255,0).."> cÊp10 <color>",	
 }
 
 function toLevel(lvl)
 	if(not tonumber(lvl)) then return "error" end
-	if(lvl < 0 or lvl > 10) then return "Î´Öª" end
+	if(lvl < 0 or lvl > 10) then return "Ch­a biÕt" end
 	return LEVELWORD[lvl]
 end
 ---------------------------------
@@ -231,8 +231,8 @@ end
 function transferDigit2CnNum(nDigit)
 	local tbModelUnit = {
 		[1]	= "",
-		[2]	= "Íò",
-		[3] = "ÒÚ", 	
+		[2]	= " v¹n",
+		[3] = " tr¨m triÖu", 	
 	};
 	
 	local nDigitTmp = nDigit;	-- ÁÙÊ±±äÁ¿,
@@ -250,7 +250,7 @@ function transferDigit2CnNum(nDigit)
 		nDigitTmp = -nDigit;
 	end
 	
-	-- ·Ö±ğ´Ó¸ö,Íò,ÒÚÈı¶Î¿¼ÂÇ,ÒòÎªnDigitµÄÖµĞ¡ÓÚ1ÍòÒÚ,ËùÒÔÃ¿Ò»¶Î¶¼²»³¬¹ı4Î»
+	-- ·Ö±ğ´Ó¸ö, v¹n, tr¨m triÖuÈı¶Î¿¼ÂÇ,ÒòÎªnDigitµÄÖµĞ¡ÓÚ1 v¹n tr¨m triÖu,ËùÒÔÃ¿Ò»¶Î¶¼²»³¬¹ı4Î»
 	for i = 1, getn(tbModelUnit) do
 		szNumTmp	= "";
 		n4LenNum	= mod(nDigitTmp , 10000);

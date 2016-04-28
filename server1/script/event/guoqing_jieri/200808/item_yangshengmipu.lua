@@ -1,6 +1,6 @@
 -- ====================== ÎÄ¼şĞÅÏ¢ ======================
 
--- ½£ÏÀÇéÔµÍøÂç°æÒ»×·Ñ°ÃØÆ×µÀ¾ßÑøÉúÃØÆ×½Å±¾
+-- ½£ÏÀÇéÔµÍøÂç°æÒ»×·Ñ°ÃØÆ×µÀ¾ßD­ìng sinh bİ phæ½Å±¾
 
 -- Edited by ×Ó·Çô~
 -- 2008/07/24 13:43
@@ -14,12 +14,12 @@ function main()
 	zxmp_reset_vertsk();
 	
 	if (zxmp_200808_itemdate() ~= 1) then
-		Msg2Player("ÎïÆ·¹ıÆÚ£¬×Ô¶¯¶ªÆú.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
 	if (GetLevel() < 50 or IsCharged() == 0) then
-			Say("Ö»ÓĞ50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò²Å¿ÉÒÔÊ¹ÓÃ.", 0)
+			Say("ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông.", 0)
 		return 1;
 	end
 	
@@ -36,20 +36,20 @@ function main()
 			if (tb.n_type == 2) then
 				local ng, nd, sz_name = tb.tb_itemid[1], tb.tb_itemid[2], tb.sz_name;
 				AddGoldItem(ng, nd);
-				sz_msg = format("µÃµ½»Æ½ğ×°±¸ %s", sz_name);
+				sz_msg = format("NhËn ®­îc trang bŞ Hoµng Kim %s", sz_name);
 			elseif (tb.n_type == 1) then
 				local ng, nd, np, nl, ns, nlk, sz_name = tb.tb_itemid[1], tb.tb_itemid[2], tb.tb_itemid[3], 
 										tb.tb_itemid[4], tb.tb_itemid[5], tb.tb_itemid[6], tb.sz_name;
 				AddItem(ng, nd, np, nl, ns, nlk);
-				sz_msg = format("µÃµ½ %s", sz_name);
+				sz_msg = format("NhËn ®­îc %s", sz_name);
 			elseif (tb.n_type == 3) then
 				
 				AddRepute(tb.n_repute);
-				sz_msg = format("µÃµ½ %d ÃûÍûµã", tb.n_repute);
+				sz_msg = format("NhËn ®­îc %d ®iÓm danh väng", tb.n_repute);
 			end
 			if (sz_msg ~= "") then
 				Msg2Player(sz_msg);
-				WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\t %s¡£","ÑøÉúÃØÆ×",
+				WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\t %s¡£","D­ìng sinh bİ phæ",
 							GetLocalDate("%Y-%m-%d,%X"),
 							GetName(),
 							GetAccount(),
@@ -66,12 +66,12 @@ function main()
 	local n_addexp = zxmp_200808_checkexp();
 	
 	if (n_addexp <= 0) then
-		Msg2Player("ÒÑ¾­´ïµ½8ÒÚµÄ¾­Ñé½çÏŞ£¬²»ÄÜÔÙ¼ÌĞøÁìÈ¡.");
+		Msg2Player("§· ®¹t giíi h¹n 800 triÖu ®iÓm kinh nghiÖm, kh«ng thÓ tiÕp tôc nhËn n÷a.");
 	else
 		AddOwnExp(n_addexp);
 		SetTask(TSK_ZXMP_MAXEXP, GetTask(TSK_ZXMP_MAXEXP) + n_addexp);
-		Msg2Player(format("Äã»ñµÃ %d ¾­ÑéÖµ.",n_addexp));
-		WriteLog(format("[Ê¹ÓÃ %s]\t%s\tName:%s\tAccount:%s\t Ôö¼Ó %s ¾­ÑéÖµ.", "ÑøÉúÃØÆ×",
+		Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm kinh nghiÖm.",n_addexp));
+		WriteLog(format("[Sö dông %s]\t%s\tName:%s\tAccount:%s\t t¨ng %s ®iÓm kinh nghiÖm.", "D­ìng sinh bİ phæ",
 						GetLocalDate("%Y-%m-%d,%X"),
 						GetName(),
 						GetAccount(),

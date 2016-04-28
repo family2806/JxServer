@@ -20,33 +20,33 @@ TSK_ZXMP_MAXEXP		= 1904;				-- »ñµÃ¾­ÑéÀÛ¼Æ±äÁ¿
 
 TB_ZHUIXUNMIPU_ITEMLIST = {
 --	TYPE,	TBITEMID,	RATE,	NAME
-	{n_type = 2,	tb_itemid = {0, 164},	n_rate = 0.0007,	sz_name = "°²°î±ù¾§Ê¯ÏîÁ´"},
-	{n_type = 2,	tb_itemid = {0, 165},	n_rate = 0.001,	sz_name = "°²°î¾Õ»¨Ê¯Ö¸»·"},
-	{n_type = 2,	tb_itemid = {0, 166},	n_rate = 0.002,	sz_name = "°²°îÌï»ÆÊ¯ÓñÅå"},
-	{n_type = 2,	tb_itemid = {0, 167},	n_rate = 0.001,	sz_name = "°²°î¼¦ÑªÊ¯½äÖ¸"},
+	{n_type = 2,	tb_itemid = {0, 164},	n_rate = 0.0007,	sz_name = "An Bang B¨ng Tinh Th¹ch H¹ng Liªn"},
+	{n_type = 2,	tb_itemid = {0, 165},	n_rate = 0.001,	sz_name = "An Bang Cóc Hoa Th¹ch ChØ hoµn"},
+	{n_type = 2,	tb_itemid = {0, 166},	n_rate = 0.002,	sz_name = "An Bang §iÒn Hoµng Th¹ch Ngäc Béi"},
+	{n_type = 2,	tb_itemid = {0, 167},	n_rate = 0.001,	sz_name = "An Bang Kª HuyÕt Th¹ch Giíi ChØ "},
 	
-	{n_type = 2,	tb_itemid = {0, 159},	n_rate = 0.002,	sz_name = "¶¨¹úÇàÉ´³¤ÉÀ"},
-	{n_type = 2,	tb_itemid = {0, 160},	n_rate = 0.001,	sz_name = "¶¨¹úÎÙÉ°·¢¹Ú"},
-	{n_type = 2,	tb_itemid = {0, 161},	n_rate = 0.004,	sz_name = "¶¨¹ú³à¾ê¶ÌÑ¥"},
-	{n_type = 2,	tb_itemid = {0, 162},	n_rate = 0.004,	sz_name = "¶¨¹ú×ÏÌÙ»¤Íó"},
-	{n_type = 2,	tb_itemid = {0, 163},	n_rate = 0.004,	sz_name = "¶¨¹úÒø²ÏÑü´ø"},
+	{n_type = 2,	tb_itemid = {0, 159},	n_rate = 0.002,	sz_name = "§Şnh Quèc Thanh Sa Tr­êng Sam"},
+	{n_type = 2,	tb_itemid = {0, 160},	n_rate = 0.001,	sz_name = "§Şnh Quèc ¤ Sa Ph¸t Qu¸n"},
+	{n_type = 2,	tb_itemid = {0, 161},	n_rate = 0.004,	sz_name = "§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa"},
+	{n_type = 2,	tb_itemid = {0, 162},	n_rate = 0.004,	sz_name = "§Şnh Quèc Tö §»ng Hé uyÓn"},
+	{n_type = 2,	tb_itemid = {0, 163},	n_rate = 0.004,	sz_name = "§Şnh Quèc Ng©n Tµm Yªu ®¸i"},
 	
-	{n_type = 1,	tb_itemid = {6,1,147,3,0,0},	n_rate = 4,	sz_name = "3¼¶Ğş¾§¿óÊ¯"},
-	{n_type = 1,	tb_itemid = {6,1,147,4,0,0},	n_rate = 1,	sz_name = "4¼¶Ğş¾§¿óÊ¯"},
-	{n_type = 1,	tb_itemid = {6,1,147,5,0,0},	n_rate = 0.5,	sz_name = "5¼¶Ğş¾§¿óÊ¯"},
+	{n_type = 1,	tb_itemid = {6,1,147,3,0,0},	n_rate = 4,	sz_name = "HuyÒn tinh kho¸ng th¹ch cÊp 3"},
+	{n_type = 1,	tb_itemid = {6,1,147,4,0,0},	n_rate = 1,	sz_name = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 4"},
+	{n_type = 1,	tb_itemid = {6,1,147,5,0,0},	n_rate = 0.5,	sz_name = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 5"},
 	
-	{n_type = 1,	tb_itemid = {6,1,26,1,0,0},	n_rate = 0.003,	sz_name = "ÎäÁÖÃØ¼®"},
-	{n_type = 1,	tb_itemid = {6,1,22,1,0,0},	n_rate = 0.003,	sz_name = "Ï´Ë®¾§"},
+	{n_type = 1,	tb_itemid = {6,1,26,1,0,0},	n_rate = 0.003,	sz_name = "Vâ L©m MËt TŞch"},
+	{n_type = 1,	tb_itemid = {6,1,22,1,0,0},	n_rate = 0.003,	sz_name = "TÈy Tñy Kinh"},
 	
-	{n_type = 3,	n_repute = 1,	n_rate = 44.4743,	sz_name = "ÃûÍû"},
-	{n_type = 3,	n_repute = 2,	n_rate = 30,	sz_name = "ÃûÍû"},
-	{n_type = 3,	n_repute = 3,	n_rate = 20,	sz_name = "ÃûÍû"},
+	{n_type = 3,	n_repute = 1,	n_rate = 44.4743,	sz_name = "Danh väng"},
+	{n_type = 3,	n_repute = 2,	n_rate = 30,	sz_name = "Danh väng"},
+	{n_type = 3,	n_repute = 3,	n_rate = 20,	sz_name = "Danh väng"},
 };
 
 TB_ZHUIXUNMIPU_COMPLIST = {
-	{n_type = 1,	tb_itemid = {6,1,196,-1},	n_count = 5,	sz_name = "ÉñÃØÃÜÍ¼"},
-	{n_type = 1,	tb_itemid = {6,1,122,-1},	n_count = 1,	sz_name = "¸£ÔµÂ¶£¨Ğ¡£©"},
-	{n_type = 4,	n_money = 10000,			n_count = 1,	sz_name = "ÒøÁ½"},
+	{n_type = 1,	tb_itemid = {6,1,196,-1},	n_count = 5,	sz_name = "MËt ®å thÇn bİ "},
+	{n_type = 1,	tb_itemid = {6,1,122,-1},	n_count = 1,	sz_name = "Phóc Duyªn Lé (TiÓu) "},
+	{n_type = 4,	n_money = 10000,			n_count = 1,	sz_name = "Ng©n l­îng"},
 }
 
 function zxmp_reset_vertsk()

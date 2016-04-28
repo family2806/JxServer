@@ -141,7 +141,7 @@ function TestNormal()
 		end
 	end
 	
-	print("检查完成!!")
+	print("Ki觤 tra ho祅 th祅h!!")
 end
 
 --完全测试
@@ -270,7 +270,7 @@ function TestAll()
 		end
 	end
 	
-	print("检查完成!!")
+	print("Ki觤 tra ho祅 th祅h!!")
 end
 
 function TestOne(nZoneSection, strAccountName, nKeyName, nTaskID, nCount)

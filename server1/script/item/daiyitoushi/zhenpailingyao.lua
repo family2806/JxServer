@@ -1,8 +1,8 @@
 -- ====================== Œƒº˛–≈œ¢ ======================
 
--- Ω£œ¿«È‘µÕ¯¬Á∞Ê“ª’Ú≈…¡È“©
+-- Ω£œ¿«È‘µÕ¯¬Á∞Ê“ªTr n ph∏i linh d≠Óc
 --  ≥”√∫Ûƒ‹Ã·…˝5µ„«±ƒ‹µ„
--- ”Î’Ú≈…¡È“©π≤”√±‰¡ø£¨µ⁄“ª∏ˆByteº«¬º¡Èµ§ π”√¥Œ ˝£¨µ⁄∂˛∏ˆByteº«¬º¡È“© π”√¥Œ ˝
+-- ”ÎTr n ph∏i linh d≠Ócπ≤”√±‰¡ø£¨µ⁄“ª∏ˆByteº«¬º¡Èµ§ π”√¥Œ ˝£¨µ⁄∂˛∏ˆByteº«¬º¡È“© π”√¥Œ ˝
 
 -- Edited by ◊”∑«Ù~
 -- 2008/03/03 23:29
@@ -18,7 +18,7 @@ TSK_TOUSHI_COUNT			=	1883						-- °∞¥¯“’Õ∂ ¶°±◊™÷∞µƒ¥Œ ˝
 
 function main(nItemIdx)
 --	if (gb_GetModule("SWITH_DAIYITOUSHI") ~= 1) then
---		Say("∂‘≤ª∆£¨∏√π¶ƒ‹‘› ±±ªπÿ¡À£¨¥Úø™ ±º‰ª·‘⁄…‘∫ÚÕ®÷™", 0);
+--		Say("Xin lÁi, c´ng n®ng nµy tπm thÍi Æ∑ bﬁ Æ„ng, thÍi gian mÎ lπi sœ Æ˘oc th´ng b∏o sau ", 0);
 --		return 1;
 --	end
 	
@@ -26,9 +26,9 @@ function main(nItemIdx)
 	local nTimes = GetByte(nValue, 2);
 	
 	local str ={
-		"—–æø“ªª·’Ú≈…¡È“©ªπ «≤ªª· π”√(Œ¥◊™√≈≈…≤ªƒ‹ π”√)",
-		"’Ú≈…¡È“©∏’∏’∑˛œ¬£¨µ§ÃÔ¡¢øÃæÕ≤˙…˙“ªπ…»»∆¯¡˜œÚ∆Êæ≠∞À¬ˆ(‘ˆº”5∏ˆ«±ƒ‹µ„)",
-		" ÷ƒ√’Ú≈…¡È“©∑¢œ÷À¸√ª”–π¶–ß¡À(“— π”√µΩ◊Ó∏ﬂ…œœﬁ¡À)"
+		"Nghi™n c¯u mÈt hÂi tr n ph∏i linh d≠Óc mµ v…n kh´ng bi’t c∏ch sˆ dÙng. (ch≠a chuy”n m´n ph∏i kh´ng th” sˆ dÙng)",
+		"Tr n ph∏i linh d≠Óc vıa Æ≠Óc nuËt xuËng, Æan Æi“n li“n sinh ra mÈt dﬂng nhi÷t kh› chπy khæp k˙ kinh b∏t mπch(T®ng 5 Æi”m ti“m n®ng)",
+		"Tay c«m l y tr n ph∏i linh d≠Óc mµ ph∏t hi÷n ra rªng n„ kh´ng cﬂn t∏c dÙng g◊ n˜a (Æ∑ sˆ dÙng Æ’n sË l«n giÌi hπn cao nh t)"
 	}
 	
 	if(nTimes >= 15) then 				-- π”√≥¨π˝¥Œ ˝
@@ -42,7 +42,7 @@ function main(nItemIdx)
 		SetTask(TSK_ZHENPAILINGDAN_USECNT, SetByte(nValue, 2, nTimes + 1));
 		Msg2Player(str[2]);
 		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tAdd Prop 5 by ZhenPaiLingYao",
-						"’Ú≈…¡È“©",
+						"Tr n ph∏i linh d≠Óc",
 						GetLocalDate("%Y-%m-%d %X"),
 						GetName(), GetAccount()));
 		return 0;

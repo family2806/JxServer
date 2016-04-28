@@ -9,7 +9,7 @@ function tbCaiPiao:ShowAllInfo(tbNumberList, tbNumberNameList)
 				szMsg = szMsg.." "..k
 			end
 		end
-		szMsg = format("ºÅÂë<color=yellow>%s<color> ÒÑÑ¡ÖĞ <color=yellow>%s<color> ´Î, ÄãÑ¡ <color=green>%s<color>", nNumber, nCount, szMsg)
+		szMsg = format("Sè <color=yellow>%s<color> ®· chän <color=yellow>%s<color> lÇn, ng­êi chän <color=green>%s<color>", nNumber, nCount, szMsg)
 		Msg2Player(szMsg)
 	end
 end
@@ -46,24 +46,24 @@ function tbCaiPiao:AutoTest(nWeekDay, nOnlyWager)
 end
 
 function tbCaiPiao:GM(nWeekDay)
-	local szTitle = "Ö¸Áî"	
+	local szTitle = "ChØ lÖnh"	
 	nWeekDay = nWeekDay or 15
 	local tbOpt = 
 	{
 		{"×Ô¶¯²âÊÔ", self.AutoTest, {self}},
 		{"×Ô¶¯²âÊÔÄ³Ìì", self.AutoTest, {self, nWeekDay}},
 		{"×Ô¶¯¾ºÍ¶Ä³Ìì", self.AutoTest, {self, nWeekDay, 1}},
-		{"¿´Ñ¡ÔñºÅÂëĞÅÏ¢", self.ApplyGetInfo, {self, nWeekDay} },
+		{"Xem th«ng tin chän sè", self.ApplyGetInfo, {self, nWeekDay} },
 		{"¾ºÍ¶", self.OpenInputUI, {self}},
-		{"Áì½±", self.ApplyGetAward, {self, nWeekDay}},
-		{"¿´½á¹û", self.QueryResult, {self, nWeekDay}},
+		{"NhËn l·nh phÇn th­ëng", self.ApplyGetAward, {self, nWeekDay}},
+		{"Xem kÕt qu¶", self.QueryResult, {self, nWeekDay}},
 		{"ÔÊĞíÍ¶×¢", self.SetStage, {self, 1}},
-		{"¿ªÊ¼ËãÖĞ½±", self.SetStage, {self, 2}},
+		{"B¾t ®Çu tİnh tróng th­ëng", self.SetStage, {self, 2}},
 		
 		
 		{"ÖØÔØ½Å±¾head_gs", LoadScript, {[[\script\event\other\caipiao\head_gs.lua]]}},
 		{"ÖØÔØ½Å±¾GM", LoadScript, {[[\script\event\other\caipiao\testcomand.lua]]}},
-		{"½áÊø¶Ô»°"},
+		{"KÕt thóc ®èi tho¹i"},
 	}
 	
 	

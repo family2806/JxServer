@@ -1,4 +1,4 @@
--- ·¿¼äÀïË¢³ö10¸ö´øÎÞÐÎ¹ÆµÄ¸ß¿¹Öù×Ó£¨¿É¹²ÓÃ20µÄ»ðÖù×Óµã£¬µ«ÊÇÒªÇó±é²¼·¿¼äÄÚ£¬Ö»ÔÚËÄ½ÇÁôÓÐ½ÏÎªÈÝÒ×´æ»îµÄ¿Õµµµã£©¡£
+-- ·¿¼äÀïË¢³ö10¸ö´øÎÞÐÎ¹ÆµÄ¸ß¿¹Trô Tö£¨¿É¹²ÓÃ20µÄ»ðTrô Töµã£¬µ«ÊÇÒªÇó±é²¼·¿¼äÄÚ£¬Ö»ÔÚËÄ½ÇÁôÓÐ½ÏÎªÈÝÒ×´æ»îµÄ¿Õµµµã£©¡£
 -- ±ØÐë¼á³Ö5·ÖÖÓ£¨Èç¹û·¿¼äÀïÃ»ÈËÔòÍ£Ö¹¼ÆÊ±£©²ÅÄÜ¹ý¹Ø
 
 Include("\\script\\missions\\maze\\task.lua")
@@ -13,11 +13,11 @@ function pTask:OnStart()
 	self.m_Pillars = {}
 	local poss = self.m_Pos.pillars
 	for i = 1, getn(poss) do
-		local index = FightNpcManager:AddNpc("Öù×Ó", 1672, self.m_Maze.m_MapId, poss[i].x, poss[i].y, self, i, 1, 1)
+		local index = FightNpcManager:AddNpc("Trô Tö", 1672, self.m_Maze.m_MapId, poss[i].x, poss[i].y, self, i, 1, 1)
 		tinsert(self.m_Pillars, index)
 	end
 	self.m_TimerId = TimerList:AddTimer(self, 18 * self.m_Timeout)
-	self:BroadCast("¼ÆÊ±ÏÖÔÚ¿ªÊ¼.")
+	self:BroadCast("TÝnh thêi gian b©y giê b¾t ®Çu.")
 end
 
 function pTask:OnDestroy()
@@ -39,7 +39,7 @@ function pTask:OnDeath(killed, player_killer, param)
 end
 
 function pTask:OnTime()
-	self:BroadCast(format("¼ÆÊ± %d ·ÖÖÓ½áÊø.", floor(self.m_Timeout / 60)))
+	self:BroadCast(format("TÝnh thêi gian %d phót kÕt thóc.", floor(self.m_Timeout / 60)))
 	self.m_TimerId = 0
 	self:Proceed()
 	return 0
@@ -49,7 +49,7 @@ function pTask:OnEnter(player, count)
 	-- DEBUG
 	print(format("enter room: player(%s), count(%d)", player:GetName(), count))
 	if (count == 1 and self.m_TimerId > 0) then
-		player:Msg2Player("»Ö¸´Ê±¼ä.")
+		player:Msg2Player("Thêi gian phôc håi.")
 		TimerList:ResumeTimer(self.m_TimerId)
 	end
 end
@@ -58,7 +58,7 @@ function pTask:OnLeave(player, count)
 	-- DEBUG
 	print(format("leave room: player(%s), count(%d)", player:GetName(), count))
 	if (count == 0 and self.m_TimerId > 0) then
-		self:BroadCast("ÔÝÍ£Ê±¼ä.")
+		self:BroadCast("Thêi gian t¹m dõng.")
 		TimerList:SuspendTimer(self.m_TimerId)
 	end
 end

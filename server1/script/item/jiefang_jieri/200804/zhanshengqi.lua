@@ -23,21 +23,21 @@ function main(nItemIndex)
 	
 	
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
 	
 	
 	if IsCharged() == 0 or GetLevel() < 50 then
-		Say("Ö»ÓĞ50¼¶ÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.", 0)
+		Say("ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông.", 0)
 		return 1;
 	end
 	
 	local nExp = 2000000
 	local nCurFlagExp = GetTask(jiefang_0804_TSK_FlagExpLimit)
 	if nCurFlagExp >= jiefang_0804_TSKV_FlagExpLimit then
-		Say(format("ÔÚ»î¶¯ÆÚ¼ä£¬Í¨¹ıÊ¹ÓÃÊ¤ÀûÆì×Ó×î¶àÖ»ÄÜ»ñµÃ%d ¾­ÑéÖµ.", jiefang_0804_TSKV_FlagExpLimit), 0)
+		Say(format("Trong thêi gian ho¹t ®éng, th«ng qua viÖc sö dông l¸ cê chiÕn th¾ng chØ cã thÓ nhËn ®­îc tèi ®a %d ®iÓm kinh nghiÖm.", jiefang_0804_TSKV_FlagExpLimit), 0)
 		return 1
 	end
 	AddOwnExp(nExp)

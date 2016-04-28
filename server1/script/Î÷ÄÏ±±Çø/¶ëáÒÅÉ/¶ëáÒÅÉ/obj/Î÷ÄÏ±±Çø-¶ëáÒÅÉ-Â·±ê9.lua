@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("通往长江源头", 0)
+Say(" Trng Giang Nguy猲 u", 0)
 
 end;

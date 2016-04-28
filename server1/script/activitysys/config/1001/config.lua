@@ -4,7 +4,7 @@ tbConfig[1] = --本周宋金2000点场数
 {
 	nId = 1,
 	szMessageType = "FinishSongJin",
-	szName = "高级宋金2000点",
+	szName = "T鑞g kim cao c蕄 2000 甶觤",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,"3"},
@@ -21,7 +21,7 @@ tbConfig[2] =
 {
 	nId = 2,
 	szMessageType = "Chuanguan",
-	szName = "本周完成闯关",
+	szName = "Ho祅 th祅h vt 秈 trong tu莕",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"28"},
@@ -31,14 +31,14 @@ tbConfig[2] =
 	tbActition = 
 	{
 		{"ThisActivity:VngAddWeeklyTask", {nTSK_VUOTAI_WEEKLY_MATCH_COUNT, 1}},
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"回天再造锦囊", "闯关28"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAi28"} },
 	},
 }
 tbConfig[3] = --炎帝
 {
 	nId = 3,
 	szMessageType = "YDBZguoguan",
-	szName = "闯过炎帝第5关",
+	szName = "VuotAiViemDe5",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {5},
@@ -48,14 +48,14 @@ tbConfig[3] = --炎帝
 	tbActition = 
 	{
 		{"ThisActivity:VngAddWeeklyTask", {nTSK_VIEMDE_WEEKLY_MATCH_COUNT, 1}},
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"回天再造锦囊", "闯过炎帝第5关"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAiViemDe5"} },
 	},
 }
-tbConfig[4] =		--闯关17
+tbConfig[4] =		--VuotAi17
 {
 	nId = 4,
 	szMessageType = "Chuanguan",
-	szName = "闯关17",
+	szName = "VuotAi17",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"17"},
@@ -64,14 +64,14 @@ tbConfig[4] =		--闯关17
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"回天再造锦囊", "闯关17"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAi17"} },
 	},
 }
 tbConfig[5] = --炎帝- 闯关10
 {
 	nId = 5,
 	szMessageType = "YDBZguoguan",
-	szName = "闯过炎帝第10关",
+	szName = "VuotAiViemDe10",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {10},
@@ -80,7 +80,7 @@ tbConfig[5] = --炎帝- 闯关10
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"回天再造锦囊", "闯过炎帝第10关"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAiViemDe10"} },
 	},
 }
 

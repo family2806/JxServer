@@ -7,9 +7,9 @@ Include("\\script\\event\\jxanniversary3\\head.lua");
 
 function main(nItemIndex)
 	str=
-	{	"<#>Ê³ÓÃÔæÄàÊÙÌÒ£¬¿É»ñµÃ<color=red>8<color>Ğ¡Ê±¾­ÑéË«±¶£¬µ«ÊÇ²»¿ÉÓëÏÉ²İÂ¶µş¼Ó¡£",
-		"<#>Ê³ÓÃÔæÄàÊÙÌÒ/#_UseZaoNiShoutao("..nItemIndex..")",
-		"<#>ÎÒÔÙ¿¼ÂÇ¿¼ÂÇ/OnCancel",
+	{	"<#>Sö dông §µo v¹n thä, nhËn ®­îc <color=red>8<color> giê nh©n ®«i kinh nghiÖm, nh­ng kh«ng thÓ cïng sö dông víi Tiªn Th¶o Lé.",
+		"<#>Sö dông §µo v¹n thä/#_UseZaoNiShoutao("..nItemIndex..")",
+		"<#> §Ó ta suy nghÜ l¹i!/OnCancel",
 	};
 	Say(str[1], 2, str[2], str[3]);
 	return 1;
@@ -22,7 +22,7 @@ function _UseZaoNiShoutao(nItemIndex)
 	
 	if RemoveItemByIndex(nItemIndex) == 1 then
 		AddSkillState(440, 1, 1, 64800 * 8);
-		Msg2Player("ÄãÊ³ÓÃÁËÒ»¸öÔæÄàÊÙÌÒ£¬»ñµÃ8Ğ¡Ê±´ò¹Ö¾­ÑéË«±¶Ğ§¹û¡£")
+		Msg2Player("Sö dông §µo v¹n thä, cã thÓ nh©n ®«i kinh nghiÖm trong 8 giê.")
 	end;
 end;
 

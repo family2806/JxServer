@@ -20,7 +20,7 @@ function  main(nItemIndex)
 	
 	
 	if nDate >= nItemData then
-		Msg2Player("ÎïÆ·Ê¹ÓÃ¹ıÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
@@ -28,7 +28,7 @@ function  main(nItemIndex)
 	local nBuildFund = 10000
 	local _, nTongID = GetTongName()
 	if(nTongID == 0) then
-		Msg2Player("Î´¼ÓÈë°ï»á£¬²»ÄÜÊ¹ÓÃ¸ÃµÀ¾ß.");
+		Msg2Player("Ch­a gia nhËp bang héi, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 	local figure = TONGM_GetFigure(nTongID, GetName())
@@ -38,7 +38,7 @@ function  main(nItemIndex)
 		
 		return 0;
 	else
-		Msg2Player("²»ÊÇ°ïÖ÷£¬²»ÄÜÊ¹ÓÃ¸ÃµÀ¾ß.");
+		Msg2Player("Kh«ng ph¶i lµ bang chñ, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 end

@@ -10,88 +10,88 @@ Include("\\script\\global\\forbidmap.lua");
 ForbiddenMap = {44, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 326, 327, 328, 329, 330, 331, 334, 335, 337, 338, 339, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374}
 
 --Boss	{ID,Name,Level,Series}
-mengjiangBoss ={{562, "ÎŞÃûµÀÈË",95,4},--1 ÓñÅÆ
-	{565, "ÎŞÃûÀÏÈË",95,3},--2
-	{741, "ÎŞÃûÉ±ÊÖ",95,1},--3
-	{744, "ÎŞÃûÃÀÈË",95,2},--4
-	{1284, "½ğ¹Ú½«¾ü",95,-1},--5 ½ğÅÆ
-	{511, "ÕÅ×ÚÕı",95,4},--6 ÒøÅÆ
-	{513, "ÃîÈç",95,2},--7
-	{523, "ÁøÇàÇà",95,1},--8
-	{725,"Ë®ÔôÊ×Áì",85,-1},--9 Í­ÅÆ
-	{851, "²½Ïù³¾",20,-1},--10 ÒÔÏÂÊÇÄ¾ÅÆ
-	{852, "ÇÇ¶¦Ìì",30,-1},--11
-	{853, "µóÒ×µ¶",40,-1},--12
-	{854, "Î÷ÃÅÎŞ½ä",50,-1},--13
-	{855, "ºòÆò½£",60,-1},--14
-	{856, "Ó¦Ğ¥·ç",70,-1},--15
-	{857, "Ô¬ÄîÏ¦",80,-1},--16
-	{858, "èúÌìÃô",90,-1}--17
+mengjiangBoss ={{562, "V« Danh §¹o Nh©n",95,4},--1 Ngäc Bµi
+	{565, "V« Danh L·o Nh©n",95,3},--2
+	{741, "V« Danh S¸t Thñ",95,1},--3
+	{744, "V« Danh Mü Nh©n",95,2},--4
+	{1284, "Kim Quang T­íng Qu©n",95,-1},--5 Kim Bµi
+	{511, "Tr­¬ng T«ng Chİnh",95,4},--6 Ng©n Bµi
+	{513, "DiÖu Nh­ ",95,2},--7
+	{523, "LiÔu Thanh Thanh",95,1},--8
+	{725,"Thñy tÆc ®Çu lÜnh",85,-1},--9 §ång Bµi
+	{851, "Bé Hiªu TrÇn",20,-1},--10 ÒÔÏÂÊÇMéc Bµi
+	{852, "KiÒu §Ønh Thiªn",30,-1},--11
+	{853, "§iªu DŞch §ao",40,-1},--12
+	{854, "T©y M«n V« Giíi",50,-1},--13
+	{855, "HËu  KhÊt KiÕm",60,-1},--14
+	{856, "øng  Tiªu Phong",70,-1},--15
+	{857, "Viªn NiÖm TŞch",80,-1},--16
+	{858, "Trö Thiªn MÉn",90,-1}--17
 }
 
 function CallBoss( lingpai  )
 	local W,X,Y = GetWorldPos();
 	local nMapId = W;
 	if ( GetFightState() == 0 ) then	--·ÇÕ½¶·Çø½ûÓÃ
-		Msg2Player("·ÇÕ½¶·×´Ì¬ÎŞ·¨Ê¹ÓÃ");
+		Msg2Player("Kh«ng ë trong tr¹ng th¸i chiÕn ®Êu th× kh«ng thÓ sö dông");
 		return 1
 	end
 	for i = 249, 318 do	--Ï´ËèµºÉ½¶´
 		if ( i == nMapId ) then
-			Msg2Player("ÕâÀïÎŞ·¨Ê¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end	
 	for i = 375, 415 do	--ĞÂÔöËÎ½ğÕ½³¡µØÍ¼ ËÍĞÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
 		if ( i == nMapId ) then
-			Msg2Player("ÕâÀïÎŞ·¨Ê¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end	
 	for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
 		if( ForbiddenMap[i] == nMapId ) then
-			Msg2Player("ÕâÀïÎŞ·¨Ê¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end
 	
 	if (CheckAllMaps(nMapId) == 1) then
-		Msg2Player("ÕÙ»ØÁîÅÆ²»ÄÜÔÚÕâ¸öÌØÊâÇøÓòÊ¹ÓÃ.");
+		Msg2Player("TriÖu håi lÖnh bµi kh«ng thÓ sö dông t¹i khu vùc ®Æc thï nµy.");
 		return 1
 	end;
-	if(lingpai == 1) then -- Ä¾ÅÆ
+	if(lingpai == 1) then -- Méc Bµi
 		i = random(10,17);	
 		summonBoss(i);
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t%s Ê¹ÓÃ³É¹¦",
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
-			"Ä¾ÅÆ"));
-	 elseif(lingpai == 2 ) then--Í­ÅÆ
+			"Méc Bµi"));
+	 elseif(lingpai == 2 ) then--§ång Bµi
 		summonBoss(9)
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t%s Ê¹ÓÃ³É¹¦",
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
-			"Í­ÅÆ"));
-	elseif(lingpai == 3 ) then --ÒøÅÆ
+			"§ång Bµi"));
+	elseif(lingpai == 3 ) then --Ng©n Bµi
 		i= random(6,8);
 		summonBoss(i);
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t%s Ê¹ÓÃ³É¹¦",
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
-			"ÒøÅÆ"));
-	elseif(lingpai == 4) then --½ğÅÆ
+			"Ng©n Bµi"));
+	elseif(lingpai == 4) then --Kim Bµi
 		summonBoss(5);
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t%s Ê¹ÓÃ³É¹¦",
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
-			"½ğÅÆ"));
-	elseif(lingpai == 5) then --ÓñÅÆ
+			"Kim Bµi"));
+	elseif(lingpai == 5) then --Ngäc Bµi
 		if( CalcFreeItemCellCount() < 10) then
-			Say("±³°üÒÑÂú£¡ÇëÕûÀí³ö±³°ü¿Õ¼ä£¨×îÉÙ10¸ö¿ÕÎ»£©.",0);
+			Say("Hµnh trang ®· ®Çy! H·y s¾p xÕp l¹i hµnh trang ®Ó cã tèi thiÓu 10 « trèng.",0);
 			return 1;
 		end
 		local equit_index=random(159,167);--Ëæ»ú¶¨¹ú°²°î
@@ -99,12 +99,12 @@ function CallBoss( lingpai  )
 		for i=1,5 do
 			summonBoss(i);
 		end
-		Msg2SubWorld(format("Íæ¼Ò %s ÔÚ %s(%d,%d) ÒÑ¾­Ê¹ÓÃ£¬Ê¹½ğ¹Ú½«¾ü³öÏÖ.",GetName(),SubWorldName(SubWorld),floor(X/8),floor((Y+5)/16),"ÓñÅÆ"));
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t%s Ê¹ÓÃ³É¹¦",
+		Msg2SubWorld(format("Ng­êi ch¬i %s t¹i %s(%d,%d) ®· sö dông %s, lµm cho Kim Quang T­íng Qu©n xuÊt hiÖn.",GetName(),SubWorldName(SubWorld),floor(X/8),floor((Y+5)/16),"Ngäc Bµi"));
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
-			"ÓñÅÆ"));
+			"Ngäc Bµi"));
 	end
 	return 0;
 end
@@ -116,5 +116,5 @@ function summonBoss(mengjiang_index)
 	BossSeries = mengjiangBoss[mengjiang_index][4];
 	if(BossSeries == -1) then BossSeries = random(0,4) end;
 	AddNpcEx( BossId,BossLevel ,BossSeries, SubWorldID2Idx(W), X * 32, (Y +  5) * 32, 1,BossName, 1 );
-	Msg2Player(format("ÄãÒÑ¾­ÕÙ»ØÁË %s",BossName));
+	Msg2Player(format("B¹n ®· triÖu håi ®­îc %s",BossName));
 end

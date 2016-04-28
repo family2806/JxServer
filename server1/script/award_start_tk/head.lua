@@ -12,9 +12,9 @@ tbTimeActive =
 }
 tbAwardTK =
 {
-	{szName = "Ç¬À¤Ôì»¯µ¤(´ó) ", tbProp = {6, 1, 215, 0, 0, 0}, nCount = 40, nExpiredTime = 1440, nBindState = -2},	
-	{szName = "ËÎ½ð·ÉËÙÍè", tbProp = {6, 1, 190, 0, 0, 0}, nCount = 20, nExpiredTime = 1440, nBindState = -2},	
-	{szName = "ÁîÅÆ", tbProp = {6, 1, 157, 0, 0, 0}, nCount = 10, nExpiredTime = 1440, nBindState = -2},	
+	{szName = "Cµn Kh«n T¹o Hãa §an (®¹i) ", tbProp = {6, 1, 215, 0, 0, 0}, nCount = 40, nExpiredTime = 1440, nBindState = -2},	
+	{szName = "Tèng Kim Phi Tèc hoµn", tbProp = {6, 1, 190, 0, 0, 0}, nCount = 20, nExpiredTime = 1440, nBindState = -2},	
+	{szName = "LÖnh bµi", tbProp = {6, 1, 157, 0, 0, 0}, nCount = 10, nExpiredTime = 1440, nBindState = -2},	
 }
 
 TASK_RESET_DAILY_AWARD_TK	= 2776
@@ -43,7 +43,7 @@ end
 
 function GetAwardTK()
 	if CalcFreeItemCellCount() < 10 then
-		Talk(1, "", "×°±¸²»×ã10¸ö¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 10 « trèng.");
 		return
 	end
 	
@@ -54,10 +54,10 @@ function GetAwardTK()
 	if (GetTask(TASK_INDEX_AWARD_TK) ~= nIndex) then
 		SetTask(TASK_INDEX_AWARD_TK, nIndex)
 		for i = 1, getn(tbAwardTK) do
-			tbAwardTemplet:GiveAwardByList(tbAwardTK[i] , "½ÓÊÕËÎ½ð°ïÖú");
+			tbAwardTemplet:GiveAwardByList(tbAwardTK[i] , "Nhan ho tro Tong Kim");
 		end
 	else
-		Talk(1, "", "´óÏÀ²»ÊÇÁìÁËÂð!");
+		Talk(1, "", "Ch¼ng ph¶i §¹i hiÖp ®· nhËn råi sao!");
 		return
 	end
 end

@@ -6,7 +6,7 @@ Include("\\script\\lib\\log.lua")
 
 local tbEnterNpc = 
 {
-		szName = "»Ê³ÇË¾Ìáµã¹Ù",
+		szName = "Quan nh¾c nhë Hoµng Thµnh T­",
 		nNpcId = 1747,
 		nLevel = 95,
 		nMapId = 176,
@@ -22,8 +22,8 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>ÎªÑµÁ·ĞÂµÄ´óÄÚ¸ßÊÖ£¬Ìá¸ß½­ºşÖ¾Ê¿£¬ÎÒ»Ê³ÇË¾ÕĞÄ¼ÌìÏÂºÀ½Ü¡£Èç¹ûÄãÓĞÒâÏòÏë±¨Ïú³¯Í¢£¬Çë²Î¼Ó±¨Ãû»î¶¯¡£Ñ§³ÉÎäÒÕ£¬°ïÖ÷µÛÍõ¡£¸óÏÂÎäÒÕ³¬Èº¡£."
-	tbDailog:AddOptEntry("»Ê³ÇË¾ÑµÁ·¹¬", xunlianying)
+	tbDailog.szTitleMsg = "<npc>§Ó huÊn luyÖn nh÷ng ®ai néi cao thñ míi , ®Ó n©ng cao chİ sü giang hå, Hoµng Thµnh T­ ta ®©y chiªu mé Hßa KiÖt kh¾p n¬i. NÕu nh­ ng­¬i cã ı ®Şnh b¸o hiÕu cho triÒu ®×nh, h·y tham gia b¸o danh ho¹t ®éng. Häc thµnh v¨n vâ nghÖ, gióp cho §Õ V­¬ng Gia. C¸c h¹ vâ nghÖ ®Çy m×nh, b¶o kiÕm m«ng trÇn."
+	tbDailog:AddOptEntry("Hoµng Thµnh T­ huÊn luyÖn cung", xunlianying)
 	EventSys:GetType("AddNpcOption"):OnEvent(szNpcName, tbDailog, nNpcIndex)
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)
 	tbDailog:Show()
@@ -31,9 +31,9 @@ end
 
 function xunlianying()
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÑµÁ·Ä¾ÈË ", zhaojingling})
-	tinsert(tbOpt, {"½áÊø¶Ô»°", oncancel})
-	CreateNewSayEx("<npc>¸ÃÑµÁ·¹¬ÓÃÓÚÑµÁ·ÈËÄÜÁ¦µÄµØ·½£¬½«ÑµÁ·³ÉÎª´óÄÚ¸ßÊÖ£¬»ñµÃ³¯Í¢µÄ½±Àø¡£", tbOpt)	
+	tinsert(tbOpt, {"HuÊn luyÖn Méc Nh©n", zhaojingling})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i", oncancel})
+	CreateNewSayEx("<npc>HuÊn LuyÖn Cung nµy lµ dïng c¸c lo¹i ho¹t ®éng ®Ó huÊn luyÖn c¸c lo¹i n¨ng lùc cña ng­¬i, vµ sÏ trë thµnh mét trong nh÷ng ®¹i néi cao thñ, vµ nhËn ®­îc ban th­ëng cña triÒu ®×nh.", tbOpt)	
 end
 
 function zhaojingling()

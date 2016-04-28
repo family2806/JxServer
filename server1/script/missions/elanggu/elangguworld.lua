@@ -2,25 +2,25 @@ Include("\\script\\global\\autoexec_head.lua")
 Include("\\script\\missions\\basemission\\lib.lua")
 ELangGuWorld = {}
 
-ELangGuWorld.szMapType = "¶ñÀÇ¹È" --¸Ä±äµØÍ¼±íÊ¾
+ELangGuWorld.szMapType = "Ác Lang Cèc" --¸Ä±äµØÍ¼±íÊ¾
 
 ELangGuWorld.tbMapList = {950, 951, 952, 953, 954, 955, 956,}
 
 ELangGuWorld.tbNpcTypeList = --npcµÄÀàĞÍ
 {
-	["¶ñÀÇ×óÊ¹"] = 
+	["¸c Lang T¶ Sø"] = 
 	{
 		nNpcId = 1693,
-		szName = "¶ñÀÇ×óÊ¹",
+		szName = "¸c Lang T¶ Sø",
 		nLevel = 95,
 		bNoRevive = 0, --ÖØÉú
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szPosPath = "\\settings\\maps\\elanggu\\elangshizhe.txt",
 	},
-	["¶ñÀÇ¹ÈÒıÕß"] = 
+	["DÉn Gi¶ ¸c Lang Cèc"] = 
 	{
 		nNpcId = 108,
-		szName = "¶ñÀÇ¹ÈÒıÕß",
+		szName = "DÉn Gi¶ ¸c Lang Cèc",
 		nLevel = 95,
 		bNoRevive = 1,
 		szPosPath = "\\settings\\maps\\elanggu\\yinshigaoren.txt",
@@ -55,13 +55,13 @@ function ELangGuWorld:UseItemKillNpc()
 	
 	local nMapId, nX, nY = GetWorldPos()
 	if not self:IsInMap(nMapId) then
-		Talk(1, "", "¸ÃµÀ¾ßÖ»ÄÜÔÚ¶ñÀÇ¹ÈÊ¹ÓÃ!")
+		Talk(1, "", "§¹o cô nµy chØ cã thÓ sö dông t¹i ¸c Lang Cèc!")
 		return 
 	end	
 	
 	local nSignIndex = self:GetNearestNpc(nX, nY)
 	if nSignIndex <= 0 then
-		Msg2Player("Àë¶ñÀÇ×óÊ¹µÄ¾àÀëÌ«Ô¶£¬Çë½Ó½üºóÊ¹ÓÃ!")
+		Msg2Player("Cù ly c¸ch qu¸ xa ¸c Lang T¶ Sø, xin h·y ®Õn gÇn råi h·y sö dông!")
 		return
 	end
 	local nX32, nY32, nMapIndex = GetNpcPos(nSignIndex)

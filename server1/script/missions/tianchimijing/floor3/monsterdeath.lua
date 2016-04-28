@@ -4,7 +4,7 @@ Include("\\script\\missions\\tianchimijing\\floor_templet\\game.lua")
 local nDistance = 20 * 20
 
 function OnDeath(nNpcIndex)
-	Game:WritePlayerLog(3, "…±À¿π÷ŒÔ")
+	Game:WritePlayerLog(3, "Gi’t ch’t qu∏i vÀt")
 	local tbAward = 
 	{
 		--DC ÃÏ≥ÿ√ÿæ≥ - Modifie By DinhHQ - 20120403

@@ -1,5 +1,5 @@
 -- Î÷ÄÏÄÏÇø	ÌìÁúËÂÍ¨ÍùÁúÏó±¦Ëş
 
 function main(sel)
-	Say("ËÂÄÚÉ®ÈËÕıÔÚ¾²ĞŞ£¬Äã×îºÃ²»ÒªËæ±ã½øÈëÁúÏó±¦Ëş!",0);
+	Say("T¨ng nh©n trong tù ®ang tŞnh tu, tèt nhÊt ng­¬i ®õng nªn tïy tiÖn x«ng vµo Long T­îng B¶o Th¸p ®ã!",0);
 end

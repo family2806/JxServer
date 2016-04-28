@@ -75,5 +75,5 @@ end
 
 function killbossall()
 	AddSkillState(541,1,0,54)
-	Msg2Player("ÄãÒÑÊÕ·şÁËÉ±ÊÖ£¬Íê³ÉÈÎÎñ")
+	Msg2Player("B¹n ®· thu phôc ®­îc tªn s¸t thñ, hoµn thµnh nhiÖm vô!")
 end

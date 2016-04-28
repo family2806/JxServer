@@ -11,12 +11,12 @@ function main()
 			DelItem(14)
 			DelItem(15)
 			AddEventItem(16)
-			AddNote("±»ÅÉÈ¥ÄÃÎåÉ«Ê¯")
-			Msg2Player("ÄãÓÃÉÏ·½µÄ5°ÑÔ¿³×´ò¿ªÏä×ÓÄÃÎå²ÊÊ¯")
+			AddNote("Ph¸i lÊy Ngò S¾c Th¹ch ")
+			Msg2Player("B¹n dïng 5 chiÕc ch×a khãa treo phİa trªn ®Ó më r­¬ng lÊy Ngò S¾c Th¹ch ")
 		else
-			Talk("Ã»ÓĞÄÇ5°ÑÔ¿³×£¬ÄãÎŞ·¨¿ªÏä×ÓÄÃÊ¯Í·")
+			Talk("Kh«ng cã 5 chiÕc ch×a khãa kia, b¹n kh«ng thÓ më ®­îc r­¬ng ®Ó lÊy ®¸ ")
 		end
 	else
-		Talk(1,"","Õâ¸ö±¦ÏäËøÆğÁË")
+		Talk(1,"","B¶o r­¬ng nµy ®· khãa råi")
 	end
 end;

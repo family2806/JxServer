@@ -31,9 +31,9 @@ function check_queue()
 	if pPrevBattle then
 		local bRet = pPrevBattle:IsInPlaying(szName)
 		if bRet then
-			return Talk(1, "",  format("ÄãÕıÔÚ %d Õ½³¡", pPrevBattle.nId))
+			return Talk(1, "",  format("Ng­¬i ®ang ë trong %d chiÕn tr­êng", pPrevBattle.nId))
 		else
-			return Talk(1, "", format("ÄãÔÚ %d Õ½³¡×¼±¸", pPrevBattle.nId))
+			return Talk(1, "", format("Ng­¬i ®ang trong %d chiÕn tr­êng chuÈn bŞ.", pPrevBattle.nId))
 		end
 	end
 end

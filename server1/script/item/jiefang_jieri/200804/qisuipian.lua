@@ -27,17 +27,17 @@ function main(nItemIndex)
 	
 	
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·Ê¹ÓÃ¹ıÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
 	if IsCharged() == 0 then
-		Say("Ö»ÓĞÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.", 0)
+		Say("ChØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ sö dông.", 0)
 		return 1;
 	end
 	local nCurFlagCount = GetTask(jiefang_0804_TSK_FlagCount)
 	if nCurFlagCount >= jiefang_0804_TSKV_FlagCount then
-		Say(format("ÒÑÊ¹ÓÃ %d ¸ÃÎïÆ·£¬ÒÑ´ïµ½Ê¹ÓÃÉÏÏŞ.", jiefang_0804_TSKV_FlagCount), 0)
+		Say(format("§· sö dông %d vËt phÈm nµy, ®· ®¹t ®Õn giíi h¹n sö dông.", jiefang_0804_TSKV_FlagCount), 0)
 		return 1
 	end
 	AddOwnExp(304)

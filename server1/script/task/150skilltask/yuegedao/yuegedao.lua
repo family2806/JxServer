@@ -3,83 +3,83 @@
 tbConfig = {}
 tbMissionDialog = {}
 tbMissionDialog[0] = {
-	"ÔÂ¸èÎäÎÀ£ºÕâÎ»ÉÙÏÀ£¬Çë½»ÔÂ¸èÁî£¬ÔÚÏÂ¿´Ò»ÏÂ£¬Èç¹û¼ì²éÎŞÎó£¬ÔÚÏÂ½«ËÍÉÙÏÀÉÏÉ½.",
-	"Íæ¼Ò:Çë",
-	"Íæ¼Ò: ½»ÔÂ¸èÁî³öÀ´",
-	"ÔÂ¸èÎäÎÀ£º ÕæÊÇÔÂ¸èÁî£¬Ö»ÊÇÔÂ¸èÁîÃ¿´Îµ½ÖĞÔ­¶¼ÓĞÒ»´ÎÈ¾Ñª£¬ÔÚÏÂÎÅµ½ÁËËüÉÏÃæµÄĞÈÎ¶£¬²»ÖªµÀÒÑ¾­ØËÉ±¹ı¶àÉÙ´ÎÁË.",
-	"Íæ¼Ò:ÔÚ½­ºşÉÏ£¬ÉúËÀÄÑÃâ£¬ÒÑ½øÈë½­ºş£¬»¹ÅÂËÀÂğ?",
-	"ÔÂ¸èÎäÎÀ£ºÒ²¶Ô£¬ÉÙÏÀÁ·Îä½ø½­ºş£¬ÎÒÃÇÔÂ¸èµºÈËÁ·Îä¶ã±Ü½­ºş£¬ÈË¸ñÓĞÆø£¬ÉÙÏÀÇëÉÏÉ½£¬µ½Ï´½£³Ø£¬½«ÓĞÈËµÈÉÙÏÀ¡£",
+	"NguyÖt Ca Vò VÖ:VŞ thiÕu hiÖp nµy, h·y nép NguyÖt Ca LÖnh vµ t¹i h¹ sÏ xem qua mét l­ît, nÕu kiÓm tra kh«ng sai t¹i h¹ c­ìi ngùa ®­a thiÕu hiÖp lªn nói.",
+	"Ng­êi ch¬i:Xin mêi",
+	"Ng­êi ch¬i: giao NguyÖt Ca LÖnh ra",
+	"NguyÖt Ca Vò VÖ:õ, ®óng lµ NguyÖt Ca LÖnh thËt, chØ lµ NguyÖt Ca LÖnh mçi lÇn tíi Trung Nguyªn lµ mét lÇn ®Ém m¸u t­¬i, t¹i h¹ ngöi thÊy mïi tanh trªn NguyÖt Ca LÖnh nµy, kh«ng biÕt ®· qua bao nhiªu lÇn t­ s¸t.",
+	"Ng­êi ch¬i:Trªn giang hå, sèng chÕt khã tr¸nh,®· vµo giíi giang hå, lÏ nµo ta cßn sî h·i sao?",
+	"NguyÖt Ca Vò VÖ:còng ®óng, thiÕu hiÖp luyÖn vâ nhËp giang hå, ng­êi NguyÖt Ca §¶o chóng t«i th× luyÖn vâ tr¸nh giang hå, nh©n c¸ch h÷u khİ, thiÕu hiÖp xin mêi lÖn nói, ®Õn TÈy KiÕm Tr×, sÏ cã ng­êi chê thiÕu hiÖp.",
 }
 
 tbMissionDialog[1] = {
-	"ÔÂ¸èÎäÎÀ£ºÕâÊÇÕæµÄÊÇÏ´½£É½µÄÏ´½£³ØÁË£¬Ï´¾»Éí×Óºó£¬ÉÙÏÀ°ÑÕâ°Ñ½£Ò²Ï´ÁË£¬Õâ°Ñ½£ÒÔÇ°¿ÉÊÇÃûÕğ½­ºş¡£",
-	"ÔÂ¸èÎäÎÀ£º Ö®ºó£¬ËüµÄÖ÷ÈËµ½ÎÒÃÇÔÂ¸èµº£¬ÂÛ½£Ê§°Ü£¬±»À§ÔÚµºÉÏ£¬ÖÁ½ñÁô×ÅÕâ°Ñ½££¬ÉÙÏÀÈ¥Ï´¸É¾»Ëü°É.",
-	"Íæ¼Ò: ÔÂ¸èµºµÄ¹æ¶¨Õæ¸´ÔÓ£¬±ÈÎäÂÛ½££¬×öÀ´¸ÉÂï?",
-	"ÔÂ¸èÎäÎÀ£º¹ş¹ş£¬ÉÙÏÀ²»Òª¼±Ôê£¬ÓĞÈËÒ»µ©ÉÏÁËÉ½£¬Ò»±²×ÓÒ²ÏÂ²»ÁËÉ½ÁË£¬ÒÑµ½ÕâÀïÁË£¬ÉÙÏÀ×Å¼±¸ÉÂï?",
-	"ÔÂ¸èÎäÎÀ£º ÔÚÏ´¾»ÉíÌåºó£¬Ï´±¦½£Ê±£¬ÉÙÏÀ»ØÒäÒ»ÏÂ×Ô¼ºÑ§µ½µÄÎä¹¦¾­Ñé£¬»òÕß×Ô¼ºĞÄÒâµÄÊÂ.",
+	"NguyÖt Ca Vò VÖ:N¬i nµy ®óng lµ TÈy KiÕm Tr× trªn TÈy KiÕm S¬n råi. Sau khi ®· t¾m n­íc th¬m, thiÕu hiÖp h·y röa thanh cæ kiÕm nµy, thanh kiÕm nµy n¨m x­a còng tõng lµ danh trÇn thiªn h¹.",
+	"NguyÖt Ca Vò VÖ: sau nµychñ nh©n cña nã ®Õn NguyÖt Ca §¶o chóng t«i luËn kiÕm thÊt b¹i, bŞ nhèt l¹i trªn ®¶o, tíi nay cßn l¹i thanh kiÕm nµy, thiÕu hiÖp h·y ®i röa cho s¹ch.",
+	"Ng­êi ch¬i:Quy t¾c cña NguyÖt Ca §¶o thËt phiÒn phøc, tû vâ luËn kiÕm, lµm mÊy viÖc nµy lµm g× chø?",
+	"NguyÖt Ca Vò VÖ:Ha ha, thiÕu hiÖp ®õng nãng véi, cã nhiÒu ng­êi mét khi ®· lªn nói th× c¶ ®êi kh«ng thÓ xuèng ®­îc, ®· tíi n¬i nµy råi, thiÕu hiÖp nãng véi lµm g×.",
+	"NguyÖt Ca Vò VÖ: sau khi t¸m n­íc th¬m xong, trong khi röa thanh kiÕm nµy, thiÕu hiÖp h·y håi t­ëng l¹i kinh nghiÖm vâ c«ng m×nh ®· häc, hoÆc lµ nh÷ng g× m×nh t©m ®¾c.",
 }
 
 tbMissionDialog[2] = {
-	"Ã»ÓĞÎäÆ÷£¬Òª²»ÎÒÈ¥ÕÒÔÂ¸èÎäÎÀÎÊÎÊ¿´.",
+	"Kh«ng cã vò khİ, hay ta ®i t×m NguyÖt Ca Vò VÖ hái thö xem.",
 }
 
 tbMissionDialog[3] = {
-	"ÔÂ¸èÎäÎÀ£ºÔÚÄÏ±ßµÄÊ÷ÁÖÀïÓĞºÜ¶àÊ÷£¬¿ÉÒÔ°ïÖú¹«×Ó£¬µ«ÊÇÈç¹ûÏëÄÃµ½Ê÷Æ¤£¬¿ÖÅÂÓĞµãÀ§ÄÑ.",
+	"NguyÖt Ca Vò VÖ:Trong rõng c©y ë phİa nam cã rÊt nhiÒu c©y, cã thÓ gióp İch cho c«ng tö, nh­ng nÕu muèn lÊy ®­îc vá c©y cña c¸c lo¹i c©y ®ã, e r»ng cã chót trë ng¹i.",
 }
 
 tbMissionDialog[4] = {
-	"ÔÂ¸èÎäÎÀ£º Äã¸Õ¸Õ¿´µ½µÄºşÄÚµÄ×Ö£º¼ÒÔÚ´ËÉ½ÖĞ£¬ÔÆÉî²»Öª´¦",
-	"Íæ¼Ò:ÎÒÃ»ÓĞÁôÒâ£¬ËÄÖÜ·ç¾°ÕæÊÇÃÀ£¬µ«ÊÇ£¬Ğ´Õâ¸ö×öÊ²Ã´ÄØ?",
-	"ÔÂ¸èÎäÎÀ£ºÉÙÏÀÄÇÄê´ÓĞ¡É½´åÀëÈ¥£¬ÒòÎªÉ½ºÓÉçğ¢£¬¿ªÊ¼¶À´³½­ºş£¬µ½ÏÖÔÚÒÑ¾­8ÄêÁË£¬ÉÙÏÀ¹ıµÃºÃÂğ?",
-	"Íæ¼Ò:ËáÌğ¿àÀ±£¬Ö»ÓĞ×Ô¼ºÃ÷°×£¬ÄÇĞ©Äê£¬²»¶®¶àÉÙÉÙÄê¶À´³½­ºş£¬²»ÂÛÊÇ¿¹½ğ»¤ËÎ£¬»¹ÊÇÖú½ğÃğËÎ£¬¶¼ÊÇÎªÁË×Ô¼ºµÄÀíÏë.",
-	"Íæ¼Ò: 8ÄêÁË£¬ÉÙÄê¶¼¿ìµ½ÖĞÄêÁË£¬½ñÌì¿´µ½ÕâÀïµÄ»°£¬ÕæÊÇÓĞºÜ¶à¸Ğ¿®",
-	"ÔÂ¸èÎäÎÀ£º½­ºş¾ÍÊÇÕâÑù£¬ÈËÉúÒ²Ò»Ñù£¬ÇëÉÙÏÀÉ½ÉÏ£¬µ½²Ø½£¹Èºó£¬Çë¸ø×Ô¼ºµÄ±øÆ÷Ò»¸ö¿Õ¼ä£¬ËüºÍ¹«×ÓÕâÃ´Ğ©Äê£¬Ò²²»ÊÇÈİÒ×µÄÊÂ¡£",
+	"NguyÖt Ca Vò VÖ: Nh÷ng dßng ch÷ mµ thiÕu hiÖp võa míi nh×n thÊy trong hå:  'Gia t¹i thö s¬n trung, v©n th©m bÊt tri xø'",
+	"Ng­êi ch¬i:Ta kh«ng ®Ó ı, phong c¶nh xung quanh ®Ñp thËt, nh­ng viÕt nh­ vËy ®Ó lµm g×?",
+	"NguyÖt Ca Vò VÖ:ThiÕu hiÖp n¨m ®ã ra ®i tõ tiÓu s¬n th«n nghÌo nµn nµy, v× lêi tuyªn truyÒn s¬n hµ x· t¾c, ®· b¾t ®Çu dÊn th©n vµo giang hå, ®Õn nay ®· 8 n¨m råi, thiÕu hiÖp sèng cã tèt kh«ng?",
+	"Ng­êi ch¬i:Cay ®¾ng ngät bïi, chØ cã b¶n th©n m×nh thÊu hiÓu, nh÷ng n¨m qua, ®· cã kh«ng biÕt bao nhiªu thiÕu niªn dÊn th©n vµo b­íc giang hå, bÊt luËn lµ kh¸ng Kim phß Tèng hay lµ trî Kim diÖt Tèng, th× ®Òu phÊn ®Êu cho lı t­ëng cña riªng m×nh.",
+	"Ng­êi ch¬i: T¸m n¨m qua, thiÕu niªn hiÖp kh¸ch dÒu ®· s¾p tíi tuæi trung niªn, h«m nay t×nh cê nh×n thÊy c©u nãi nµy t¹i ®©y, thËt lµ cã nhiÒu t©m sù.",
+	"NguyÖt Ca Vò VÖ:Giang hå lµ nh­ vËy, ®êi ng­êi còng nh­ vËy, mêi thiÕu hiÖp lªn nói, sau khi dÕn Tµng KiÕm Cèc råi råi, h·y t¹o cho binh khİ cña m×nh mét kh«ng gia, nã ®· bÇu b¹n víi c«ng tö suèt mÊy n¨m qua, còng kh«ng ph¶i lµ chuyÖn dÔ dµng.",
 }
 
 tbMissionDialog[5] = {
-	"ÏĞÔÆµ­Ó°ÈÕÓÆÓÆ£¬Îï»»ĞÇÒÆ¼¸¶ÈÇï",
+	"Nhµn V©n ®µm ¶nh nhËt du du, vËt ho¸n tinh di kØ ®é thu",
 }
 
 tbMissionDialog[6] = {
-	"Íæ¼Ò: ¹ûÕæÊÇÊÇ·Ç³É°Ü×ªÍ·¿Õ£¬Èç¹ûÎÒÂÛ½£Ê§°Ü£¬Ò²½«±»ÁôÔÚÕâÀïÂğ?",
+	"Ng­êi ch¬i: qu¶ ch©n thŞ thŞ phi thµnh b¹i chuyÓn ®Çu kh«ng, nÕu nh­ ta luËn kiÕm thÊt b¹i, còng sÏ bŞ gi÷ l¹i ë ®©y hay sao?",
 }
 
 tbMissionDialog[7] = {
-	"ÔÂ¸è½£ÊÌ£ºÕâÀï¸ÄÃûÎª¼º½£¸Ô£¬ÕâÊÇÂÛ½£Ç°×îºóÒ»¹Ø£¬ÉÙÏÀºÃÏñºÜÆ½¾²",
-	"Íæ¼Ò:ºÆºÆÊÀÍ¾£¬ÊÇ·ÇÍ¬¹ì£¬ÎÒÔ­²»ÊÇÏÍÈË£¬ÔõÃ´ÄÜĞÄÆ½?",
-	"ÔÂ¸è½£ÊÌ£ºÎÒÈ°´óÏÀ»ØÍ·ÊÇ°¶£¬Ò»°ÙÄêÀ´£¬²»¶®¶àÉÙÓ¢ĞÛÔÚ´ËÉ¥Ãü¡£",
-	"ÔÂ¸è½£ÊÌ£º Ò²ÓĞÈËÏëÑ§Îä¹¦°ïÖú×æ¹ú£¬×ÜÖ®£¬ËûÃÇ¶¼ÊÇÎªÎä¾­À´µÄ£¬³ıÁË±ÌÌì£¬ËùÓĞµÄÈË¶¼±»À§ÔÚÕâÀï£¬ËùÒÔ£¬ÉÙÏÀÂÛ½£Ê§°Ü£¬Ò²»áÀ§ÔÚÕâÀï¡£",
-	"Íæ¼Ò:ÎÒÒÑ¾­À´ÁË£¬ÔõÃ´ÄÜ»ØÍ·£¬ÎÒÉí¸º¹ú¼ÒÏ£Íû¶øÀ´£¬ÔõÃ´ÄÜ»ØÈ¥?",
-	"ÔÂ¸è½£ÊÌ£ºÈç¹ûÉÙÏÀ»ØÍ·£¬Í¬Ê±Ğ´³ö×Ô¼ºµÄÎäÑ§´óÒâ£¬°ÑÎäÆ÷·ÅÔÚÕâÀï.",
-	"ÔÂ¸è½£ÊÌ£ºÕâÑù£¬´Ó½ñÍùºó½«²»½øÈë½­ºş",
-	"Íæ¼Ò:½­ºşÖ®Â·²»¾¡£¬8ÄêÇ°£¬ÎÒÀë¿ª´å×Ó£¬¾ÍÖªµÀÓĞÒ»Ìì»áµ¹ÏÂ£¬½øÈë½­ºşÁË¾Í²»Ïë»ØÍ·.",
-	"ÔÂ¸è½£ÊÌ£º£ºÎäÁÖÖĞÔ­ÈË¶¼ÊÇÕâÑù£¬ËãÁË£¬ÎÒÃÇÈ¥°É£¬ÔÂ¸èµºÖ÷ÈËÕıÔÚÂÛ½£·åµÈÎÒÃÇ.",
-	"Íæ¼Ò:¶àĞ»",
+	"NguyÖt Ca KiÕm ThŞ:N¬i nµy ®æi tªn thµnh KØ KiÕm C­¬ng, ®©y lµ ¶i cuèi cïng tr­íc khi luËn kiÕm, thiÕu hiÖp h×nh nh­ lµ trong lßng rÊt yªn tÜnh nh­ lóc ®Çu?",
+	"Ng­êi ch¬i:H¹o h¹o thÕ ®å, thŞ phi ®ång quü, xØ nha t­¬ng yÕt, ba lan tø khëi, ta vèn kh«ng ph¶i hiÒn nh©n, lµm sao mµ b×nh t©m ®­îc chø?",
+	"NguyÖt Ca KiÕm ThŞ:Ta khuyªn thiÕu hiÖp nªn quay ®Çu lµ bê, trong mét tr¨m n¨m, cã kh«ng biÕt bao nhiªu cao thñ bá m¹ng t¹i NguyÖt Ca §¶o nµy, cã ng­êi th× muèn t×m ng­êi b¸o thï, cã ng­êi muèn thu lîi sau khi x­ng hïng.",
+	"NguyÖt Ca KiÕm ThŞ: vµ còng cã ng­êi muèn häc vâ c«ng ®Ó gióp quèc gia d©n téc,  nãi tãm l¹i, hä ®Ò v× Vò Kinh mµ ®Õn, nh­ng ngoµi Bİch Thiªn ra, tÊt c¶ ®Òu bŞ giam ë ®©y, nÕu thiÕu hiÖp luËn kiÕm thÊt b¹i th× còng bŞ giam nh­ hä mµ th«i",
+	"Ng­êi ch¬i:Ta ®· ®Õn ®©y råi, sao cã thÓ quay ®Çu, ta g¸nh v¸c hy väng cña quèc gia mµ ®Õn, v× hy väng cña Kiªn Giang s­ m«n mµ ®Õn, sao cã thÓ quay vÒ ®­îc?",
+	"NguyÖt Ca KiÕm ThŞ:NÕu thiÕu hiÖp quay ®Çu , ®ång thêi viÕt ra ®¹i nghÜa vâ häc cña m×nh, sau ®ã vøt bá vò khİ lªn Khİ KiÕm C­¬ng.",
+	"NguyÖt Ca KiÕm ThŞ: vµ thÒ, tõ nay sÏ kh«ng b­íc vµo giang hå n÷a, hoÆc lµ vøt bá tÊt c¶.",
+	"Ng­êi ch¬i:Con ®­êng giang hå bÊt tËn, t¸m n¨m tr­íc, khi ta ra ®i tõ tiÓu s¬n th«n ®ã, ta ®· biÕt cã mét ngµy sÏ ng· xuèng, b­íc vµo giang hå lµ kh«ng mong trë l¹i, ta ®êi nµy kiÕp nµy kh«ng quay ®Çu.",
+	"NguyÖt Ca KiÕm ThŞ:Nh÷ng ng­êi Trung Nguyªn Vâ L©m lÏ nµo ®Òu kiªn c­êng bÊt khuÊt nh­ vËy, Th«i, chóng ta ®i nµo, chñ nh©n NguyÖt Ca §¶o ®ang ë trªn LuËn KiÕm Phong.",
+	"Ng­êi ch¬i:§a t¹!",
 }
 
 tbMissionDialog[8] = {
-	"Íæ¼Ò:²»ÁÏ£¬ÔÂ¸èµºµÄÖ÷ÈËÊÇÎ»Å®×Ó£¬²»¶®ÌìÏÂÎäÁÖÖªµÀÁË»áÊÇÔõÃ´ÑùµÄ¸Ğ¿®.",
-	"ÔÂ¸èµºÖ÷£ºÊÇÄĞÊÇÅ®ÓĞÊ²Ã´Âğ£¿¶àÉÙÄêÀ´£¬ÔÂ¸èµºµÄÖ÷ÈË¶¼ÊÇÅ®µÄ.",
-	"ÔÂ¸èµºÖ÷£º.µ«ÊÇ£¬Ò²²»Êä¸øÄĞ¶ù£¬Èç¹ûÉÙÏÀ¿´ÎÒÊÇ¸öÅ®×Ó¾ÍÇáÊÓÎÒ£¬ÄÇÕæÊÇ²»±Ø",
-	"Íæ¼Ò: .Ò»¸öºô·ç»½ÓêµÄÔÂ¸èµº£¬ÎÒµ±È»²»»áĞ¡ÊÓ",
-	"Íæ¼Ò: µ«ÊÇ£¬¿´µ½µºÖ÷ÊÇ¸öÇåĞãµÄ¹ÃÄï£¬¹À¼ÆË­¶¼ºÜ¾ªÑÈ.",
-	"ÔÂ¸èµºÖ÷£ºÉÙÏÀÒ»Â·×ßÀ´£¬Â·¹ıÏ´½£³Ø£¬²Ø½£¹È£¬Æ÷½£¸Ô.",
-	"ÔÂ¸èµºÖ÷£º µ½²İ½£·æ£¬ÕâËÄ¸öµØ·½ÊÇÉúËÀÖ®µØ£¬ÉÙÏÀ»¹¼ÇµÃÂğ?",
-	"Íæ¼Ò:¹ÃÄïÊÇÍâÈË£¬ÒÑÈë½­ºş£¬Ã¿Ìì¶¼ÊÇÉúËÀµÄÑ¡Ôñ£¬Ñ¡Ôñ¶àÁË£¬Ò²¾ÍÏñÃ»ÓĞÑ¡ÔñÁË",
-	"ÔÂ¸èµºÖ÷£ºàÅ£¬½øÈë½­ºşµÄÈË¶¼ÊÇÃ»ÓĞÆäËûÑ¡ÔñµÄ£¬ÉÙÏÀ³öÕĞ°É.",
+	"Ng­êi ch¬i:ThËt kh«ng ngê chñ nh©n NguyÖt Ca §¶o khĞt tiÕng trªn giang hå l©u nµy l¹i lµ mét nhi n÷, kh«ng biÕt lµ sau khi vâ l©m thiªn ¹ biÕt ®Õn th× sÏ c¶m kh¸i nh­ thÕ nµo.",
+	"NguyÖt Ca §¶o Chñ:Lµ nam hay n÷ cã g× trë ng¹i ®©u, bao nhiªu n¨m qua, ng«i vŞ NguyÖt Ca §¶o Chñ nµy lu«n do n÷ nhi ®¶m nhËn.",
+	"NguyÖt Ca §¶o Chñ: nh­ng còng ch¼ng thua kĞm g× nam nhi, thiÕu hiÖp nÕu nh­ v× ta lµ mét n÷ nhi mµ xem th­êng ta, th× lµ mét thiÖt thßi lín.",
+	"Ng­êi ch¬i: Mét NguyÖt Ca §¶o Chñ h« m­a gäi giã trªn giang hå, ta ®­¬ng nhiªn lµ kh«ng d¸m coi th­êng.",
+	"Ng­êi ch¬i: nh­ng qu¶ thËt nh×n thÊy ®¶o chñ l¹i lµ c« n­¬ng thanh tó nh­ vËy,  ch¾c h¼n ai còng kh«ng khái th¾c m¾c.",
+	"NguyÖt Ca §¶o Chñ:ThiÕu hiÖp trªn ®­êng ®i cã ngang qua TÈy KiÕm Tr×, Tµng KiÕm Cèc, Khİ KiÕm C­¬ng cña NguyÖt Ca §¶o.",
+	"NguyÖt Ca §¶o Chñ: §Õn Th¶o KiÕm Phong, bèn n¬i nµy thËt ra lµ gi÷a sèng vµ chÕt ®· lùa chän nhiÒu lÇn råi, thiÕu hiÖp cã nhí kh«ng?",
+	"Ng­êi ch¬i:C« n­¬ng lµ ng­êi bªn ngoµi, ng­êi cña NguyÖt Ca ®¶o nµy kh«ng hÒ do dù khi häc vâ, ®· dÊn th©n vµo giang hå, mçi ngµy ®Òu lµ lùa chän gi÷a sèng vµ chÕt, chän lùa nhiÒu råi, nh­ng còng ch¼ng cã sù lùa chän nµo c¶.",
+	"NguyÖt Ca §¶o Chñ: õ, cã ph¶i lµ mçi ng­êi khi b­íc vµo giang hå th× ®Òu lµ kh«ng cã sù lùa chän nµo kh¸c, thiÕu hiÖp h·y xuÊt chiªu ®i.",
 }
 tbMissionDialog[9] = {
-	"Íæ¼Ò:×ñÃü£¬¹ÃÄï£¬Çë!",
-	"ÔÂ¸èµºÖ÷£ºÉÙÏÀ´Ë´ÎÔõÃ´À´ÕâÀï?",
-	"Íæ¼Ò:Ï°ÎäÖ®ÈË£¬¶¼ÊÇÎªÁË¸ßÉîµÄÎäÑ§¶øÀ´£¬ÓĞÈËÎŞË½£¬ÓĞÈË²»¶®Á®³Ü",
-	"Íæ¼Ò:µ«ÊÇ£¬¶¼ÊÇÎªÁË×Ô¼ºµÄÀíÏë²»¶Ï·Ü¶·£¬ÆäÖĞ£¬ÓĞºÜ¶àÀ§ÄÑ£¬ÎÒÖªµÀ¡£ÓĞĞÂµÄÎäÑ§£¬ÎÒÔõÄÜ´í¹ı¡£",
-	"ÔÂ¸èµºÖ÷£º½øÈë½­ºşºó£¬´óÏÀ¶¼ÊÇÎªÁË×Ô¼ºµÄÀíÏë£¬ÊÇ·ñÍüÁË×Ô¼º±¾ÉíµÄÎäÑ§.",
-	"Íæ¼Ò:ÕıÊÇ",
-	"ÔÂ¸èµºÖ÷£º£ºÕæÊÇÇÉºÏ£¬ÎÒ²»Áô´óÏÀÁË£¬´óÏÀÀë¿ªÕâÀï°É!",
-	"Íæ¼Ò:ÔõÃ´ÁË?!",
-	"ÔÂ¸èµºÖ÷£º²»ÓÃĞ»ÎÒ£¬Ò»°ÙÄêÇ°£¬ÓĞÎ»Î¨Ò»µÄ¸ßÈËÂÛ½£³É¹¦£¬ÓĞÒ»¸öÒªÇó.",
-	"ÔÂ¸èµºÖ÷£º ÕâÀïÓĞ¸ö½õºĞ£¬Ò²ÊÇÓÉÄÇÎÒ¸ßÈËÁôÏÂµÄ£¬ÉÙÏÀĞèÒªÏÂÉ½²ÅÄÜ´ò¿ª£¬Õâ¸öÎäÑ§¾­¾Í¸ø´óÏÀÁË",
-	"Íæ¼Ò:¶àĞ» ",
+	"Ng­êi ch¬i:Tu©n lÖnh, c« n­¬ng, xin mêi!",
+	"NguyÖt Ca §¶o Chñ:ThiÕu hiÖp lÇn nµy sao l¹i tíi ®©y?",
+	"Ng­êi ch¬i:Ng­êi luyÖn vâ, th«ng th­êng lµ v× vâ häc cao th©m míi tíi, sau nµy cã ng­êi th× ®ª tiÖn, cã ng­êi th× v« t­, cã ng­êi kh«ng biÕt xÊu hæ.",
+	"Ng­êi ch¬i:Nh­ng ®Òu lµ phÊn ®Êu kh«ng ngõng cho lı t­ëng cña riªng m×nh, trong ®ã cã rÊt nhiÒu khã kh¨n vµ trë ng¹i, ta tù biÕt! §· cã nh÷gn ®ét ph¸ trong vâ häc, ta lµm sao cã thÓ bá qua c¬ héi lÇn nµy?",
+	"NguyÖt Ca §¶o Chñ:Tõ lóc b­íc vµo giang hå ®Õn nay, thiÕu hiÖp lu«n theo ®uæi lı t­ëng cña m×nh, d­êng nh­ ®· bá lì vâ häc cña b¶n th©n.",
+	"Ng­êi ch¬i:§óng lµ nh­ vËy",
+	"NguyÖt Ca §¶o Chñ:C¬ duyªn thËt trïng hîp, ta kh«ng gi÷ thiÕu hiÖp l¹i n÷a, thiÕu hiÖp h·y ®i khái n¬i nµy ®i!",
+	"Ng­êi ch¬i:Sao?!",
+	"NguyÖt Ca §¶o Chñ:Kh«ng cÇn c¶m ¬n ta, mét tr¨m n¨m tr­íc, cã mét cao nh©n duy nhÊt luËn kiÕm thµnh c«ng ®· cã mét yªu cÇu víi NguyÖt Ca §¶o chóng t«i.",
+	"NguyÖt Ca §¶o Chñ: ë ®©y cã mét cÈm hép, còng lµ do vŞ cao nh©n ®ã l­u l¹i cho thiÕu hiÖp, thiÕu hiÖp ph¶i xuèng nói míi ®­îc më ra, vµ kinh vâ häc m«n ph¸i nµy xin ®­a lu«n cho thiÕu hiÖp",
+	"Ng­êi ch¬i:§a t¹!",
 }
 
 tbConfig.tbNpcPos = {
@@ -88,12 +88,12 @@ tbConfig.tbNpcPos = {
 tbConfig[0] = {
 	m_nCurStepId = 0,
 	tbMessage = {
-		{"DialogWithNpc", {"´¬·ò"}},
+		{"DialogWithNpc", {"ThuyÒn Phu"}},
 	},
 	tbCondition = {
 	},
 	tbAction = {
-		{"AddDialog", {1, "ËÍÎÒµ½ÔÂ¸èµº"}},
+		{"AddDialog", {1, "§­a ta ®Õn NguyÖt Ca §¶o"}},
 	},
 }
 
@@ -113,7 +113,7 @@ tbConfig[1] = {
 tbConfig[2] = {
 	m_nCurStepId = 1,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èÎäÎÀ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca Vâ VÖ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -121,7 +121,7 @@ tbConfig[2] = {
 		{"CheckItem", {{{tbProp = {6,1,2908,1,0,0,},},}}},
 	},
 	tbAction = {
-		{"AddDialog", {3, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {3, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -132,21 +132,21 @@ tbConfig[3] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 0, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 0, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[4] = {
 	m_nCurStepId = 2, 
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èÎäÎÀ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca Vâ VÖ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 		{"ThisTask:CheckNpcPos", {46592, 96608}},
 	},
 	tbAction = {
-		{"AddDialog", {5, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {5, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -155,10 +155,10 @@ tbConfig[5] = {
 	tbMessage = {
 	},
 	tbCondition = {
-		{"CheckBagFreeCell", {1, "×îÉÙĞèÒªÒ»¸ö×°±¸¿ÕÎ»"}}
+		{"CheckBagFreeCell", {1, "CÇn cã İt nhÊt mét « trèng trong hµnh trang"}}
 	},
 	tbAction = {
-		{"PlotDialogue", {-1, -1, 1, "ÔÂ¸èµº", 6}},
+		{"PlotDialogue", {-1, -1, 1, "NguyÖt Ca §¶o", 6}},
 	},
 }
 
@@ -167,7 +167,7 @@ tbConfig[6] = {
 	tbMessage = {
 	},
 	tbCondition = {
-		{"CheckBagFreeCell", {1, "×îÉÙĞèÒªÒ»¸ö×°±¸¿ÕÎ»"}}
+		{"CheckBagFreeCell", {1, "CÇn cã İt nhÊt mét « trèng trong hµnh trang"}}
 	},
 	tbAction = {
 		{"GetMissionItem", {{{tbProp = {6,1,2970,1,0,0,}, nBindState = -2,},}}},
@@ -185,21 +185,21 @@ tbConfig[7] = {
 		{"ThisTask:CheckPos", {}},
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 2, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 2, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[8] = {
 	m_nCurStepId = 4, 
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èÎäÎÀ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca Vâ VÖ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 		{"ThisTask:CheckNpcPos", {46592, 96608}},
 	},
 	tbAction = {
-		{"AddDialog", {9, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {9, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -210,20 +210,20 @@ tbConfig[9] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 3, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 3, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[10] = {
 	m_nCurStepId = 5, 
 	tbMessage = {
-		{"DialogWithNpc", {"Ê÷Ä¾"}},
+		{"DialogWithNpc", {"Thô Méc"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"ThisTask:GetShuPi", {1, 2885, "ÔÂ¸èµº", -1}},
+		{"ThisTask:GetShuPi", {1, 2885, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
@@ -247,14 +247,14 @@ tbConfig[11] = {
 tbConfig[12] = {
 	m_nCurStepId = 7,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èÎäÎÀ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca Vâ VÖ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 		{"ThisTask:CheckNpcPos", {46592, 96608}},
 	},
 	tbAction = {
-		{"AddDialog", {13, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {13, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -266,7 +266,7 @@ tbConfig[13] = {
 		{"CheckItem", {{{tbProp = {6,1,2971,0,0,},},}}},
 	},
 	tbAction = {
-		{"PlotDialogue", {-1, -1, 4, "ÔÂ¸èµº", 14}},
+		{"PlotDialogue", {-1, -1, 4, "NguyÖt Ca §¶o", 14}},
 	},
 }
 
@@ -287,21 +287,21 @@ tbConfig[14] = {
 tbConfig[15] = {
 	m_nCurStepId = 8,
 	tbMessage = {
-		{"DialogWithNpc", {"Ê¯±®"}},
+		{"DialogWithNpc", {"Bia §¸"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 		{"ThisTask:CheckNpcPos", {43488, 92032}},
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 5, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 5, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[16] = {
 	m_nCurStepId = 9,
 	tbMessage = {
-		{"DialogWithNpc", {"½£Ú£Ê¯±®"}},
+		{"DialogWithNpc", {"Bia §¸ KiÕm Gia"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -309,20 +309,20 @@ tbConfig[16] = {
 	},
 	tbAction = {
 		{"ThisTask:ChangeNpc", {}},
-		{"PlotDialogue", {1, 2885, 6, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 6, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[17] = {
 	m_nCurStepId = 10,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸è½£ÊÌ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca KiÕm ThŞ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {18, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {18, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -333,20 +333,20 @@ tbConfig[18] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 7, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 7, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[19] = {
 	m_nCurStepId = 11,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èµºÖ÷£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {20, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {20, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -357,20 +357,20 @@ tbConfig[20] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 8, "ÔÂ¸èµº", -1}},
+		{"PlotDialogue", {1, 2885, 8, "NguyÖt Ca §¶o", -1}},
 	},
 }
 
 tbConfig[21] = {
 	m_nCurStepId = 12,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èµºÖ÷£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {22, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {22, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -381,7 +381,7 @@ tbConfig[22] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"CreateDialog", {"<npc>»¶Ó­µ½ÔÂ¸èµº", {{25, "ÄãÈ·¶¨ÏëÈ¥ÔÂ¸èÃÜ¹È?"}}}},
+		{"CreateDialog", {"<npc>Hoan nghªnh ®Õn NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
 	},
 }
 
@@ -389,14 +389,14 @@ tbConfig[22] = {
 tbConfig[23] = {
 	m_nCurStepId = 12,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èÎäÎÀ£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca Vâ VÖ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 		{"ThisTask:CheckNpcPos", {45344, 99744}},
 	},
 	tbAction = {
-		{"AddDialog", {24, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {24, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -407,7 +407,7 @@ tbConfig[24] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"CreateDialog", {"<npc>»¶Ó­µ½ÔÂ¸èµº", {{25, "ÄãÈ·¶¨ÏëÈ¥ÔÂ¸èÃÜ¹È?"}}}},
+		{"CreateDialog", {"<npc>Hoan nghªnh ®Õn NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
 	},
 }
 	
@@ -426,13 +426,13 @@ tbConfig[25] = {
 tbConfig[26] = {
 	m_nCurStepId = 13,
 	tbMessage = {
-		{"DialogWithNpc", {"ÔÂ¸èµºÖ÷£º"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {27, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {27, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -446,7 +446,7 @@ tbConfig[27] = {
 		{"CheckItem", {{{tbProp = {6,1,30165,0,0,},},}}},
 	},
 	tbAction = {
-		{"PlotDialogue", {-1, -1, 9, "ÔÂ¸èµº", 28}},
+		{"PlotDialogue", {-1, -1, 9, "NguyÖt Ca §¶o", 28}},
 	},
 }
 

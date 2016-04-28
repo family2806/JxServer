@@ -22,7 +22,7 @@ function pTask:OnStart()
 		tb.Pos = pos_boy[i]
 		tb.Index = i
 		tb.IsBoy = 1
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúÄÐµÜ×Ó", self.m_BoyId, mapid, tb.Pos.x, tb.Pos.y, self, tb, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long Nam §Ö Tö", self.m_BoyId, mapid, tb.Pos.x, tb.Pos.y, self, tb, 1, 1)
 		tinsert(self.m_Boys, nNpcIndex)
 	end
 	for i = 1, 10 do
@@ -30,7 +30,7 @@ function pTask:OnStart()
 		tb.Pos = pos_girl[i]
 		tb.Index = i
 		tb.IsBoy = 0
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúÅ®µÜ×Ó", self.m_GirlId, mapid, tb.Pos.x, tb.Pos.y, self, tb, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long N÷ §Ö Tö", self.m_GirlId, mapid, tb.Pos.x, tb.Pos.y, self, tb, 1, 1)
 		tinsert(self.m_Girls, nNpcIndex)
 	end
 end
@@ -74,12 +74,12 @@ function pTask:OnDeath(nKilledIndex, pPlayer, tb)
 			if (random(0, 1) == 1) then
 				inf.Index = getn(self.m_Boys) + 1
 				inf.IsBoy = 1
-				local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúÄÐµÜ×Ó", self.m_BoyId, mapid, tb.Pos.x, tb.Pos.y, self, inf, 1, 1)
+				local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long Nam §Ö Tö", self.m_BoyId, mapid, tb.Pos.x, tb.Pos.y, self, inf, 1, 1)
 				tinsert(self.m_Boys, nNpcIndex)
 			else
 				inf.Index = getn(self.m_Girls) + 1
 				inf.IsBoy = 0
-				local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúÅ®µÜ×Ó",self.m_GirlId, mapid, tb.Pos.x, tb.Pos.y, self, inf, 1, 1)
+				local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long N÷ §Ö Tö",self.m_GirlId, mapid, tb.Pos.x, tb.Pos.y, self, inf, 1, 1)
 				tinsert(self.m_Girls, nNpcIndex)
 			end
 		end

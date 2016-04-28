@@ -8,29 +8,29 @@ function OnDeath()
 	UTask_tmtmp = GetTaskTemp(48)
 	if (Uworld37 == 20) and (random(0,99) < 50) then		-- ´øÈÎÎñÊ±£¬50%»úÂÊ³öÏÖÏÂÒ»¾ä¿Ú¾÷£¨¹²Îå¾ä£©
 		if (UTask_tmtmp == 0) then
-			Talk(1,"","2 4 Îª¼ç")
-			Msg2Player("µÃµ½¿Ú¾÷¡°¶þËÄÎª¼ç")
+			Talk(1,"","2 4 lµ tay")
+			Msg2Player("Cã ®­îc khÈu quyÕt  NhÞ Tø Vi Kiªn ")
 			SetTaskTemp(48,1)
 		elseif (UTask_tmtmp == 1) then 
-			Talk(1,"","68 Îª×ã")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Áù°ËÎª×ã")
+			Talk(1,"","68 lµ ch©n")
+			Msg2Player("Cã ®­îc khÈu quyÕt  B¸t HuyÖt VÞ Tóc ")
 			SetTaskTemp(48,2)
 		elseif (UTask_tmtmp == 2) then 
-			Talk(1,"","×óÈýÓÒÆß")
-			Msg2Player("µÃµ½¿Ú¾÷¡°×óÈýÓÒÆß")
+			Talk(1,"","tr¸i 3 ph¶i 7")
+			Msg2Player("Cã ®­îc khÈu quyÕt  T¶ Tam H÷u ThÊt ")
 			SetTaskTemp(48,3)
 		elseif (UTask_tmtmp == 3) then 
-			Talk(1,"","´÷¾ÅÂÄÒ»")
-			Msg2Player("µÃµ½¿Ú¾÷¡°´÷¾ÅÂÄÒ»")
+			Talk(1,"","§¸i Cöu Lý nhÊt ")
+			Msg2Player("Cã ®­îc khÈu quyÕt  §íi Cöu Lý NhÊt ")
 			SetTaskTemp(48,4)
 		elseif (UTask_tmtmp == 4) then 
-			Talk(1,"","Îå¾ÓÖÐÑë")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Îå¾ÓÖÐÑë")
+			Talk(1,"","Ngò cø trung ­¬ng")
+			Msg2Player("Cã ®­îc khÈu quyÕt Ngò C­ Trung ¦¥ng ")
 			SetTaskTemp(48,5)
 		else
 			if (random(1,99) < 40) then		-- ÍêÕûÏÔÊ¾Ò»´Î¿Ú¾÷£¬È»ºó¾Í¸´Î»ÁÙÊ±±äÁ¿£¨ÔÙ¿´ÒªÖØÐÂÀ´¹ý£©
 				SetTaskTemp(48,0)
-				Msg2Player("ÍêÕûµÄ¿Ú¾÷Îª£º¶þËÄÎª¼ç£¬Áù°ËÎª×ã£¬×óÈýÓÒÆß£¬´÷¾ÅÂÄÒ»£¬Îå¾ÓÖÐÑë")
+				Msg2Player("KhÈu quyÕt hoµn chØnh lµ: NhÞ Tø Vi Kiªn, B¸t HuyÖt VÞ Tóc, T¶ Tam H÷u ThÊt, Ngò C­ Trung ¦¬ng ")
 			end
 		end
 	end

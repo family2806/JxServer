@@ -2,7 +2,7 @@ Include("\\script\\tong\\workshop\\ws_shilian.lua")
 function main()
 	local szTongName, nTongID = GetTongName()
 	if nTongID == 0 then
-		Say("<#>ÊÔÁ¶×Ü¹Ü£ºÄãÎ´¼ÓÈë°ïÅÉ£¬À´ÕÒÎÒÓĞÊÂÂğ?", 0)
+		Say("<#>Tæng qu¶n Thİ luyÖn ph­êng: Ng­¬i ch­a gia nhËp bang, t×m ta cã viÖc g×?", 0)
 		return
 	end	
 	local nTypeID = wsGetTypeID(NAME_SHILIAN)

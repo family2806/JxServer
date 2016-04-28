@@ -7,7 +7,7 @@ function OnDeath()
 	Uworld36 = GetByte(GetTask(36),1)
 	if (Uworld36 == 70) and (HaveItem(17) == 0) and (random(0,100) < 40) then			--Ã»ÓÐ°×ÓñÈçÒâÊ±£¬40%¸ÅÂÊ
 		AddEventItem(17)
-		Msg2Player("µÃµ½°×ÓñÈçÒâ")
-		AddNote("´ò°Ü×êÌìÆÂ£¬µÃµ½°×ÓñÈçÒâ")
+		Msg2Player("NhËn ®­îc B¹ch Ngäc Nh­ ý. ")
+		AddNote("§¸nh b¹i Toµn Thiªn Ph¸, nhËn ®­îc B¹ch Ngäc Nh­ ý. ")
 	end
 end;

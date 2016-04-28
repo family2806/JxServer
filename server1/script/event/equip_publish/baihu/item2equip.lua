@@ -6,34 +6,34 @@ Include("\\script\\event\\equip_publish\\baihu\\equiptable.lua")
 IncludeLib("ITEM")
 tbItem2BaiHu = tbActivityCompose:new()
 tbItem2BaiHu.bAccessBindItem = 0
-MSG_COMPOSE_TITLE = "ºÏ³ÉÒ»Ì×°×»¢×°±¸ÐèÒª1¸ö°×»¢½ðÅÆ, 3¸öÐþÔ³Ê¯£¬1¸ö×ÏòþÊ¯£¬1¸ö°×»¢Áî£¬ÖÁÉÙ1ÕÅ¶ÔÓ¦µÄ°×»¢Í¼Æ×ºÍ½ðÎÚ×°±¸£¬2ÒÚÁ½£¬1¿Å9¼¶Ðþ¾§£¬ÒÔ¼°ÆäËûÌá¸ß³É¹¦¼¸ÂÊµÄÎïÆ·"
+MSG_COMPOSE_TITLE = "Hîp thµnh 1 trang bÞ B¹ch Hæ yªu cÇu cã 1 B¹ch Hæ Kim Bµi, 3 HuyÒn Viªn Th¹ch, 1 Tö M·ng Th¹ch, 1 B¹ch Hæ LÖnh, Ýt cÇn cã 1 §å Phæ B¹ch Hæ t­¬ng øng vµ trang bÞ Kim ¤, 20000 v¹n l­îng, 1 viªn HuyÒn Tinh cÊp 9, vµ c¸c nguyªn liÖu kh¸c lµm t¨ng tØ lÖ thµnh c«ng"
 
 CommonMaterial = 
 {
-	{szName="°×»¢½ðÅÆ", tbProp={6, 1, 3183}, nCount = 1},
-	{szName="ÐþÔ³Ê¯", tbProp={6, 1, 2713}, nCount = 3},
-	{szName="×ÏòþÊ¯", tbProp={6, 1, 3000}, nCount = 2},
-	{szName="°×»¢Áî", tbProp={6, 1, 2357}, nCount = 1},	
-	{szName="9¼¶Ðþ¾§¿óÊ¯", tbProp={6, 1, 147, 9}, nCount = 1},
-	{szName=" Á½", nJxb=1, nCount = 200000000},
+	{szName="B¹ch Hæ Kim Bµi", tbProp={6, 1, 3183}, nCount = 1},
+	{szName="HuyÒn Viªn Th¹ch", tbProp={6, 1, 2713}, nCount = 3},
+	{szName="Tö M·ng Th¹ch", tbProp={6, 1, 3000}, nCount = 2},
+	{szName="B¹ch Hæ LÖnh", tbProp={6, 1, 2357}, nCount = 1},	
+	{szName="HuyÒn tinh kho¸ng th¹ch cÊp 9", tbProp={6, 1, 147, 9}, nCount = 1},
+	{szName=" l­îng", nJxb=1, nCount = 200000000},
 	
 }
 
 AdditiveMaterial =
 {
-	{szName = "°×»¢±¦Ê¯", tbProp = {6,1,3184}, nSuccessRate = 1, nMaxSuccessRate = 9},
-	{szName = "°×»¢ÌìÊ¯", tbProp = {6,1,3185}, nSuccessRate = 2, nMaxSuccessRate = 18},
-	{szName = "°×»¢ÉñÊ¯", tbProp = {6,1,3186}, nSuccessRate = 5, nMaxSuccessRate = 45},
+	{szName = "B¹ch Hæ B¶o Th¹ch", tbProp = {6,1,3184}, nSuccessRate = 1, nMaxSuccessRate = 9},
+	{szName = "B¹ch Hæ Thiªn Th¹ch", tbProp = {6,1,3185}, nSuccessRate = 2, nMaxSuccessRate = 18},
+	{szName = "B¹ch Hæ ThÇn Th¹ch", tbProp = {6,1,3186}, nSuccessRate = 5, nMaxSuccessRate = 45},
 }
 
 tbFormulaList = 
 {
 	[1] = 
 	{
-		szName = "°×»¢ÏîÁ´",
+		szName = "B¹ch Hæ H¹ng Liªn",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÏîÁ´Í¼Æ×", tbProp = {6,1,3178}, nSuccessRate = 10, nMaxSuccessRate = 80},
+			{szName = "§å Phæ B¹ch Hæ H¹ng Liªn", tbProp = {6,1,3178}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		},				
 		nWidth = 2,
 		nHeight = 1,
@@ -41,10 +41,10 @@ tbFormulaList =
 	},
 	[2] = 
 	{				
-		szName = "°×»¢¿ø",
+		szName = "B¹ch Hæ Kh«i",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢¿øÍ¼Æ×", tbProp = {6,1,3173}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Kh«i", tbProp = {6,1,3173}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},
 		nWidth = 2,
 		nHeight = 2,
@@ -52,10 +52,10 @@ tbFormulaList =
 	},
 	[3] = 
 	{
-		szName = "°×»¢ÉÏ½ä",
+		szName = "B¹ch Hæ Th­îng Giíi",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÉÏ½äÍ¼Æ×", tbProp = {6,1,3180}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Th­îng Giíi", tbProp = {6,1,3180}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		nWidth = 1,
 		nHeight = 1,
@@ -63,10 +63,10 @@ tbFormulaList =
 	},
 	[4] = 
 	{
-		szName = "°×»¢»¤Íó",
+		szName = "B¹ch Hæ Hé UyÓn",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢»¤ÍóÍ¼Æ×", tbProp = {6,1,3177}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Hé UyÓn", tbProp = {6,1,3177}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		
 		nWidth = 1,
@@ -75,10 +75,10 @@ tbFormulaList =
 	},
 	[5] = 
 	{
-		szName = "°×»¢Ñü´ø",
+		szName = "B¹ch Hæ Yªu §¸i",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢Ñü´øÍ¼Æ×", tbProp = {6,1,3176}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Yªu §¸i", tbProp = {6,1,3176}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},
 		nWidth = 2,
 		nHeight = 1,
@@ -86,10 +86,10 @@ tbFormulaList =
 	},
 	[6] = 
 	{
-		szName = "°×»¢ÒÂ",
+		szName = "B¹ch Hæ Y",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÒÂÍ¼Æ×", tbProp = {6,1,3174}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Y", tbProp = {6,1,3174}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		nWidth = 2,
 		nHeight = 3,
@@ -97,10 +97,10 @@ tbFormulaList =
 	},
 	[7] = 
 	{
-		szName = "°×»¢ÎäÆ÷",
+		szName = "B¹ch Hæ Vò KhÝ",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÎäÆ÷Í¼Æ×",tbProp = {6,1,3182}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Vò KhÝ",tbProp = {6,1,3182}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		
 		nWidth = 2,
@@ -109,10 +109,10 @@ tbFormulaList =
 	},
 	[8] = 
 	{
-		szName = "°×»¢Ð¬",
+		szName = "B¹ch Hæ Hµi",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢Ð¬Í¼Æ×", tbProp = {6,1,3175}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Hµi", tbProp = {6,1,3175}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},			
 		
 		nWidth = 2,
@@ -121,10 +121,10 @@ tbFormulaList =
 	},
 	[9] = 
 	{
-		szName = "°×»¢Åå",
+		szName = "B¹ch Hæ Béi",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÅåÍ¼Æ×", tbProp = {6,1,3179}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "§å Phæ B¹ch Hæ Béi", tbProp = {6,1,3179}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},				
 		
 		nWidth = 1,
@@ -133,10 +133,10 @@ tbFormulaList =
 	},
 	[10] = 
 	{
-		szName = "°×»¢ÏÂ½ä",
+		szName = "B¹ch Hæ H¹ Giíi",
 		tbSpecialMaterial = 
 		{
-			{szName = "°×»¢ÏÂ½äÍ¼Æ×", tbProp = {6,1,3181}, nSuccessRate = 10, nMaxSuccessRate = 80},		
+			{szName = "B¹ch Hæ §å Phæ H¹ Giíi", tbProp = {6,1,3181}, nSuccessRate = 10, nMaxSuccessRate = 80},		
 		},		
 
 		nWidth = 1,
@@ -228,7 +228,7 @@ function tbItem2BaiHu:Compose(nProductId)
 	-- ¼ì²é±³°ü¿Õ¼ä
 	local nFreeItemCellLimit = 1
 	if self.tbFormula.nWidth ~= 0 and self.tbFormula.nHeight ~= 0 and CountFreeRoomByWH(self.tbFormula.nWidth, self.tbFormula.nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("Îª±£»¤ÄúµÄ²Æ²ú°²È«, ÇëÕûÀí±³°üÁô³ö %d %dx%d µÄ¿Õ¸ñ", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
 		return 0
 	end
 	
@@ -237,7 +237,7 @@ function tbItem2BaiHu:Compose(nProductId)
 	local nSuccessRate = self:GetComposeRate()
 	
 	-- ¼ì²é²ÄÁÏÊÇ·ñ³ä×ã
-	local szFailMsg = "<color=red>Äú´øµÄ²ÄÁÏ²»×ã!<color>"
+	local szFailMsg = "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 	if self:CheckMaterial(%CommonMaterial, 1) ~=1 then
 		Talk(1, "", szFailMsg)
 		return 0;
@@ -257,7 +257,7 @@ function tbItem2BaiHu:Compose(nProductId)
 	self:ConsumeAdditive(%AdditiveMaterial, self.szLogTitle)
 
 	if random(1, 100) > nSuccessRate then
-		Msg2Player("ÖýÔìÊ§°ÜÁË£¬Õæ¿ÉÏ§")
+		Msg2Player("ThËt ®¸ng tiÕc chÕ t¹o ®· thÊt b¹i")
 		return 0
 	end
 	
@@ -277,7 +277,7 @@ function tbItem2BaiHu:GiveUIOk(nCount)
 	
 	-- ¼ì²é²ÄÁÏÊÇ·ñ³ä×ã
 	
-	local szFailMsg = "<color=red>Äú´øµÄ²ÄÁÏ²»¹»!<color>"
+	local szFailMsg = "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 	if self:CheckMaterial(%CommonMaterial, 1) ~=1 then
 		Talk(1, "", szFailMsg)
 		return 0;
@@ -288,16 +288,16 @@ function tbItem2BaiHu:GiveUIOk(nCount)
 	end
 	
 	local nSuccessRate = self:GetComposeRate()
-	local szMsg = format("·ÅÈë²ÄÁÏ³É¹¦µÄ¼¸ÂÊÊÇ d%%, ´óÏÀÒª¼ÌÐøÖýÔìÂð?", nSuccessRate)
+	local szMsg = format("§Æt nguyªn liÖu vµo nhËn ®­îc tØ lÖ thµnh c«ng lµ%d%%, ®¹i hiÖp cã muèn tiÕp tôc chÕ t¹o kh«ng?", nSuccessRate)
 	if nSuccessRate > 100 then
-		szMsg = "³É¹¦¼¸ÂÊ³¬¹ý100%Ôò»áÀË·Ñ´óÏÀµÄ²ÄÁÏ, ÄãÒª¼ÌÐøÖýÔìÂð?"
+		szMsg = "TØ lÖ thµnh c«ng v­ît qu¸ 100% sÏ l·ng phÝ nguyªn liÖu cña ®¹i hiÖp, ng­¬i cã muèn tiÕp tôc chÕ kh«ng?"
 	end
 	
 	local tbOpt = 
 	{
-		{"¼ÌÐøÖýÔì", self.SelectEquip, {self, 1, 5}},
-		{"ÔÙ·ÅÈëÒ»´Î", self.ComposeGiveUI, {self}},
-		{"Ïú»Ù"},
+		{"TiÕp tôc chÕ t¹o", self.SelectEquip, {self, 1, 5}},
+		{"§Æt vµo lÇn n÷a", self.ComposeGiveUI, {self}},
+		{"Hñy bá "},
 	}
 	CreateNewSayEx(szMsg, tbOpt)
 end
@@ -305,7 +305,7 @@ end
 function tbItem2BaiHu:SelectEquip(nId, nCount)
 	
 	local msg = %MSG_COMPOSE_TITLE
-	local szMsg = format("%s,Ñ¡Ôñ1 %s", msg, self.tbFormula.szName)
+	local szMsg = format("%s,lùa chän mét %s", msg, self.tbFormula.szName)
 	local nProductCount = getn(self.tbFormula.tbProduct)
 	local nEndId = nCount + nId - 1
 	if nEndId > nProductCount then
@@ -316,33 +316,33 @@ function tbItem2BaiHu:SelectEquip(nId, nCount)
 		tinsert(tbOpt, {%tbRepresentName[i], self.Compose, {self, i}})
 	end
 	if nId >= nCount + 1  then
-		tinsert(tbOpt, {"ÉÏÒ»Ò³", self.SelectEquip, {self, nId-nCount, nCount}})
+		tinsert(tbOpt, {"Trang tr­íc", self.SelectEquip, {self, nId-nCount, nCount}})
 	end
 	if nEndId < nProductCount then
-		tinsert(tbOpt, {"ÏÂÒ»Ò³", self.SelectEquip, {self, nId+nCount, nCount}})
+		tinsert(tbOpt, {"Trang kÕ ", self.SelectEquip, {self, nId+nCount, nCount}})
 	end
-	tinsert(tbOpt, {"Ïú»Ù"})
+	tinsert(tbOpt, {"Hñy bá "})
 	CreateNewSayEx(szMsg, tbOpt)
 end
 
 local tbDialogOpt = {}
 function tbItem2BaiHu:ComposeGiveUI()
 		
-	local szTitle = format("¶Ò»» %s", self.tbFormula.szName)
+	local szTitle = format("§æi %s", self.tbFormula.szName)
 	local szContent = self:GetMaterialList(%CommonMaterial)
 	
 	szContent = gsub(szContent, "<color=?%w*>", "")
 	
 	szContent = gsub(szContent, "%((%d+)/(%d+)%)", "%2")
 	
-	szContent = format("%s<enter>%-20s  %s", szContent, "°×»¢×°±¸", "1")
-	szContent = format("%s<enter>%-20s  %s", szContent, "°×»¢Í¼Æ×", "1")
+	szContent = format("%s<enter>%-20s  %s", szContent, "Trang BÞ B¹ch Hæ", "1")
+	szContent = format("%s<enter>%-20s  %s", szContent, "B¹ch Hæ §å Phæ", "1")
 	
 	g_GiveItemUI(szTitle, szContent, {self.GiveUIOk, {self}}, nil, self.bAccessBindItem)
 end
 
 function tbItem2BaiHu:SelectParts()
-	CreateNewSayEx(format("%s, Ñ¡ÔñÄãÒªÖýÔìµÄ×°±¸:", %MSG_COMPOSE_TITLE), %tbDialogOpt)
+	CreateNewSayEx(format("%s, lùa chän trang bÞ mµ ng­¬i muèn chÕ t¹o:", %MSG_COMPOSE_TITLE), %tbDialogOpt)
 end
 
 for i=1, getn(tbFormulaList) do
@@ -352,11 +352,11 @@ for i=1, getn(tbFormulaList) do
 	
 	local p = tbItem2BaiHu:new(tbFormulaList[i], "Item2BaiHu", INVENTORY_ROOM.room_giveitem)
 	
-	local szOpt = format("ÖýÔì %s", tbFormulaList[i].szName)
+	local szOpt = format("ChÕ t¹o %s", tbFormulaList[i].szName)
 	tinsert(tbDialogOpt, {szOpt, p.ComposeGiveUI, {p}})
 end
-tinsert(tbDialogOpt, {"Ïú»Ù"})
+tinsert(tbDialogOpt, {"Hñy bá "})
 
 --ÔÝÊ±¹Ø±ÕÖýÔì°×»¢ÐÔÄÜ - Modified By DinhHQ - 20120511
---pEventType:Reg("³ÇÖÐÌú½³", "ÖýÔì°×»¢×°±¸", tbItem2BaiHu.SelectParts, {tbItem2BaiHu})
+--pEventType:Reg("Thî rÌn trong thµnh", "ChÕ T¹o Trang BÞ B¹ch Hæ", tbItem2BaiHu.SelectParts, {tbItem2BaiHu})
 

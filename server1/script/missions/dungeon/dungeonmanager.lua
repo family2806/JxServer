@@ -33,15 +33,15 @@ function tbDungeonManager:_CheckExistCallBack(nPlayerIndex, strDungeon, tbDungeo
 
 	if (tbDungeonData ~= nil and bSaved ~= 1) then
 		if (SubWorldID2Idx(tbDungeonData.nDungeonId) <= 0 and tbDungeonInfo:GetDungeon(tbDungeonData.nDungeonId) == nil) then
-			local szTitle = "<npc>ÄãÒÑ´ò¿ªÁíÒ»¸öµØ·½µÄ¸±±¾£¬ĞèÒªÍ¨¹ıÄÄ¶ùÂğ?"
+			local szTitle = "<npc>Ng­¬i ®· më ra phã b¶n ë mét n¬i kh¸c cã cÇn ®i qua ®ã kh«ng?"
 			local tbOpt = 
 			{
-				{"´øÎÒÈ¥", NewWorld, {tbDungeonData.tbEnterPos.nMapId, tbDungeonData.tbEnterPos.nX, tbDungeonData.tbEnterPos.nY}},
-				{"È¡Ïû "}
+				{"H·y ®­a ta qua", NewWorld, {tbDungeonData.tbEnterPos.nMapId, tbDungeonData.tbEnterPos.nX, tbDungeonData.tbEnterPos.nY}},
+				{"Hñy bá "}
 			}
 			CreateNewSayEx(szTitle, tbOpt)
 		else
-			Talk(1,"",format("Æô¶¯ [<color=red>%s<color>] Ê§°Ü, ¿ÉÄÜ¸Ã¸±±¾ÒÑ¹»ÈËÁË, ÇëÔÙµÈÒ»ÏÂ.", strDungeon));
+			Talk(1,"",format("Khëi ®éng [<color=red>%s<color>] thÊt b¹i, cã thÓ phã b¶n nµy ®· ®ñ ng­êi, xin h·y ®îi thªm chót n÷a.", strDungeon));
 		end
 		
 		return 0;
@@ -53,7 +53,7 @@ function tbDungeonManager:_CheckExistCallBack(nPlayerIndex, strDungeon, tbDungeo
 	end
 	
 	if (tbTemplet:CheckOpenDungeonServerLimit() ~= 1) then
-		Talk(1,"",format("Æô¶¯ [<color=red>%s<color>] Ê§°Ü, ¿ÉÄÜ¸Ã¸±±¾ÒÑ¹»ÈËÁË, ÇëÔÙµÈÒ»ÏÂ.", strDungeon));
+		Talk(1,"",format("Khëi ®éng [<color=red>%s<color>] thÊt b¹i, cã thÓ phã b¶n nµy ®· ®ñ ng­êi, xin h·y ®îi thªm chót n÷a.", strDungeon));
 		WriteLog(format("[%s] [%s] create [%s] dungeon failed because Game Server Resource Limit.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strPlayerName, strDungeon));
 		return 0;
 	end
@@ -61,7 +61,7 @@ function tbDungeonManager:_CheckExistCallBack(nPlayerIndex, strDungeon, tbDungeo
 	local nId = ApplyDungeonMap(tbTemplet.nMapTemplet);
 	
 	if (nId == 0) then
-		Talk(1,"",format("Æô¶¯ [<color=red>%s<color>] Ê§°Ü, ¿ÉÄÜ¸Ã¸±±¾ÒÑ¹»ÈËÁË, ÇëÔÙµÈÒ»ÏÂ.", strDungeon));
+		Talk(1,"",format("Khëi ®éng [<color=red>%s<color>] thÊt b¹i, cã thÓ phã b¶n nµy ®· ®ñ ng­êi, xin h·y ®îi thªm chót n÷a.", strDungeon));
 		WriteLog(format("[%s] [%s] create [%s] dungeon failed because allpy dungeon failed.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strPlayerName, strDungeon));
 		return 0;
 	end
@@ -77,7 +77,7 @@ function tbDungeonManager:_CheckExistCallBack(nPlayerIndex, strDungeon, tbDungeo
 	tbDungeon.nTimerInterval = tbTemplet.nTimerInterval or 1;
 	
 	if (tbDungeonInfo:AddDungeon(tbDungeon) == 0) then
-		Talk(1,"",format("Æô¶¯ [%s] Ê§°Ü, ¿ÉÄÜ¸Ã¸±±¾ÒÑ¹»ÈËÁË, ÇëÔÙµÈÒ»ÏÂ.", strDungeon));
+		Talk(1,"",format("Khëi ®éng [%s] thÊt b¹i, cã thÓ phã b¶n ®· ®ñ ng­êi, xin h·y ®îi thªm chót n÷a.", strDungeon));
 		WriteLog(format("[%s] [%s] create [%s] dungeon failed cause add dungeon info failed.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strPlayerName, strDungeon));
 		if (ReturnDungenonMap(tbDungeon.nMapTemplet, tbDungeon.nDungeonId) == 1) then
 			WriteLog(format("[%s] return [%s]'s dungeon map [%0.f] success.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strPlayerName, tbDungeon.nDungeonId));
@@ -112,7 +112,7 @@ function tbDungeonManager:_OpenCallBack(nPlayerIndex, nDungeonId, bSuccess)
 	PlayerIndex = nPlayerIndex;
 	
 	if (bSuccess ~= 1) then
-		Talk(1,"","´ò¿ª¸±±¾Ê§°Ü£¬¿ÉÄÜ¸±±¾ÒÑÂú£¬ÇëÉÔºòÔÙÊÔ.");
+		Talk(1,"","Më Phã B¶n thÊt b¹i, cã thÓ Phã B¶n ®· ®Çy, xin h·y thö l¹i sau.");
 		self:CloseDungeon(nDungeonId);
 		return 0;
 	end
@@ -137,7 +137,7 @@ function tbDungeonManager:OpenDungeon(strDungeon)
 	
 	for i,v in tbDungeonList do
 		if (i ~= "n" and v ~= nil and v.strOwner == strPlayerName) then
-			Talk(1,"",format("´óÏÀÒÑ¾­´ò¿ª1 [<color=red>%s<color>], ´ò¿ªĞÂµÄÖ®Ç°£¬Çë°Ñ¾ÉµÄ¹ØÁË.", strDungeon));
+			Talk(1,"",format("§¹i hiÖp ®· më 1 [<color=red>%s<color>], h·y ®ãng c¸i cò tr­íc khi më c¸i míi.", strDungeon));
 			return 0;
 		end
 	end
@@ -205,7 +205,7 @@ function tbDungeonManager:AddMember(nDungeonId, strMemberName)
 		local nNewMemberIdx = SearchPlayer(strMemberName);
 		
 		if (nNewMemberIdx > 0) then
-			doFunByPlayer(nNewMemberIdx, PutMessage, format("´óÏÀÒÑ²Î¼Ó [%s] ÔÚ[%s]", tbDungeon.strOwner, tbDungeon.strDungeon));
+			doFunByPlayer(nNewMemberIdx, PutMessage, format("§¹i hiÖp ®· tham gia cïng víi [%s] ë [%s]", tbDungeon.strOwner, tbDungeon.strDungeon));
 		end
 		
 		WriteLog(format("[%s] Add [%s] to [%s]'s [%s] dungeon(id:[%0.f]) success.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strMemberName, 
@@ -245,7 +245,7 @@ function tbDungeonManager:DelMember(nDungeonId, strMemberName)
 				if (tbDungeon.tbMember[i].bInDungeon == 1) then
 					-- °ÑÍæ¼Ò´«³ö¸±±¾
 					self:LeaveDungeon(tbDungeon.nDungeonId, tbDungeon.tbMember[i].nIndex);
-					doFunByPlayer(tbDungeon.tbMember[i].nIndex, Talk, 1,"",format("´óÏÀÒÑ±»ÍÆ³ö£¬ÒòÎª[%s] ?[%s].", tbDungeon.strOwner, tbDungeon.strDungeon));
+					doFunByPlayer(tbDungeon.tbMember[i].nIndex, Talk, 1,"",format("§¹i hiÖp ®· bŞ ®Èy ra bëi [%s] ë [%s].", tbDungeon.strOwner, tbDungeon.strDungeon));
 				end
 				tremove(tbDungeon.tbMember, i);
 				-- Èç¹û³ÉÔ±Îª0,Òª¹Ø±Õ¸±±¾
@@ -377,7 +377,7 @@ function tbDungeonManager:ApplyJoinDungeon(nDungeonId, strPlayerName)
 		end
 		
 		if (nOwnerIdx > 0) then
-			doFunByPlayer(nOwnerIdx, PutMessage, format("[%s] Çë¼ÓÈë[%s]", strPlayerName, tbDungeon.strDungeon));
+			doFunByPlayer(nOwnerIdx, PutMessage, format("[%s] mêi gia nhËp ë [%s]", strPlayerName, tbDungeon.strDungeon));
 		end
 		
 		tbDungeon.tbApply[strPlayerName] = strPlayerName;

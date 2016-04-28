@@ -7,10 +7,10 @@ function OnDeath()
 		if (HaveItem(8) == 0) and (HaveItem(117) == 1) then
 			DelItem(117)
 			AddEventItem(8)
-			Msg2Player("½ğË¿ºï°ÔÕ¼ÁËÉ½Àïºì£¬Äã³Ã»úÈ¥×¥µ½½ğË¿ºï. ")
-			AddNote("×¥µ½½ğË¿ºï. ")
+			Msg2Player("Kim T¬ HÇu bÊu chÆt s¬n Lı Hång kh«ng bu«ng, b¹n thõa c¬ b¾t lÊy Kim T¬ HÇu. ")
+			AddNote("B¾t ®­îc Kim T¬ HÇu. ")
 		else
-			Msg2Player("½ğË¿ºï³ÃÄã²»×¢ÒâÌÓÅÜÁË. ")
+			Msg2Player("Kim T¬ HÇu thõa lóc b¹n nhÊt thêi l¬ ®Ônh lÎn mÊt. ")
 		end
 	end
 end;

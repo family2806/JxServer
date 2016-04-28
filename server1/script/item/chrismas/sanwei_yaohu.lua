@@ -18,11 +18,11 @@ function main()
 	end
 	use_time = GetByte(GetTask(Uworld0001), 1)
 	if (use_time >= MAX_USETIME) then
-		Talk(1, "", "ÈıÎ¶Ò©ºøÃ¿ÌìÖ»ÄÜÁ¶ÖÆ"..MAX_USETIME.."¿Åµ¤Ò©¡£")
+		Talk(1, "", "B×nh Tam VŞ D­îc mçi ngµy chØ cã thÓ tinh luyÖn"..MAX_USETIME.."viªn ®¬n d­îc.")
 	else
 		--AddItem()ÈıÎ¶ÏÉµ¤
 		SetTask(Uworld0001, SetByte(GetTask(Uworld0001), 1, use_time + 1))
-		Msg2Player("Äú»ñµÃÁËÒ»¿ÅÈıÎ¶ÏÉµ¤")
+		Msg2Player("B¹n nhËn ®­îc 1 viªn Tam VŞ Tiªn §¬n")
 	end
 	return 1
 end

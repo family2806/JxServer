@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_wu = GetTask(10)
 	if (UTask_wu == 50*256+20) and (random(0,99) < 33) then		-- ÔÚÈÎÎñÖÐ£¬°´»úÂÊ´ò³ö¡£
 		AddEventItem(88)
-		AddNote("ÄÃÀ´ÓñÉºº÷")
-		Msg2Player("ÄÃÀ´ÓñÉºº÷")
+		AddNote("LÊy l¹i Ngäc San H« ")
+		Msg2Player("LÊy l¹i Ngäc San H« ")
 	end
 end;

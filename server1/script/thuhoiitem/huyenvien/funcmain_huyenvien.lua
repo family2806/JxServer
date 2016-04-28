@@ -3,107 +3,107 @@
   Task_Limit_Do = 2724
   tbHuyenVien=
   {
-  		{szName = "ĞşÔ³Ö®ÖÇ»ÛÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Ö®Ô²Âú·ğÖé ", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³Ö®Ô²ÂúÑü´ø", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³Ö®Ô²ÂúÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Ö®Ô²ÂúÉ®Ğ¬", tbProp = {0, 5, 0}},	
-		{szName = "ĞşÔ³·ğĞÄÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³·ğĞÄ»¤Íó", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³·ğĞÄÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³·ğĞÄÑü´ø", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³³åÌìÑü´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³³åÌìîø", tbProp = {0, 2, 4}},	
-		{szName = "ĞşÔ³³åÌìÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³³åÌìÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³·ÉÔÆÑü´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³·ÉÔÆÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³·ÉÔÆÑ¥", tbProp = {0, 5, 0}},	
-		{szName = "ĞşÔ³Ó¢ÓÂ¿ø", tbProp = {0, 7, 4}},	
-		{szName = "ĞşÔ³Ó¢ÓÂÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³¾²ÒôÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³¾²ÒôÏãÄÒ", tbProp = {0, 9, 0}},	
-		{szName = "ĞşÔ³¾²Òô»¤Íó", tbProp = {0, 8, 0}},	
-		{szName = "ĞşÔ³¾²ÒôÖéÁ´", tbProp = {0, 4, 0}},	
-		{szName = "ĞşÔ³º®±ùÊøÑü", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³º®±ùÖéÁ´", tbProp = {0, 4, 0}},	
-		{szName = "ĞşÔ³º®±ùĞ¬", tbProp = {0, 5, 3}},	
-		{szName = "ĞşÔ³º®±ùÏãÄÒ", tbProp = {0, 9, 0}},	
-		{szName = "ĞşÔ³ÔÂ»ªÏãÄÒ", tbProp = {0, 9, 0}},	
-		{szName = "ĞşÔ³ÔÂ»ªÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³ÔÂ»ªĞä", tbProp = {0, 8, 0}},	
-		{szName = "ĞşÔ³ÔÂ»ªÖéÁ´", tbProp = {0, 4, 0}},	
-		{szName = "ĞşÔ³·±»ªÖéÁ´", tbProp = {0, 4, 0}},	
-		{szName = "ĞşÔ³¶Ï³¦ÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³¶Ï³¦Ñü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³¶Ï³¦ÃØ×°", tbProp = {0, 2, 2}},	
-		{szName = "ĞşÔ³¶Ï³¦Ñü´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³ÑªÉ·ÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ÑªÉ·Ñü´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³ÑªÉ·Ñü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ÑªÉ·ÃØ×°", tbProp = {0, 2, 2}},	
-		{szName = "ĞşÔ³ÀäĞÄ²øÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³ÀäĞÄ¼×ÒÂ", tbProp = {0, 2, 3}},	
-		{szName = "ĞşÔ³ÀäĞÄÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ÀäĞÄ×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ÎŞÇéÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³ÎŞÇéÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ÎŞÇéÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ÎŞÇéÂÄ", tbProp = {0, 5, 1}},	
-		{szName = "ĞşÔ³º®¹âÂÄ", tbProp = {0, 5, 1}},	
-		{szName = "ĞşÔ³º®¹âÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³º®¹âÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³º®¹â×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Ñô¸ÕÑ¥", tbProp = {0, 5, 0}},	
-		{szName = "ĞşÔ³Ñô¸ÕÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³Ñô¸ÕÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³Ñô¸ÕÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Õ½ÁúÑü×¹", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Õ½ÁúÊøÑü", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³Õ½Áú»¤Íó", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³Õ½ÁúÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ÀÓ»êÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ÀÓ»êÑü´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³ÀÓ»ê»¤Íó", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³ÀÓ»êÏîÈ¦", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³×ÆÇéÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³×ÆÇé»¤Íó", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³×ÆÇé¹ÚÃá", tbProp = {0, 7, 2}},	
-		{szName = "ĞşÔ³×ÆÇéÏîÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³Èı·áÂÄ", tbProp = {0, 5, 0}},	
-		{szName = "ĞşÔ³Èı·áÓñÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³Èı·á·¢´ø", tbProp = {0, 6, 1}},	
-		{szName = "ĞşÔ³Èı·á·û", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ĞŞĞÄÓñÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ĞŞĞÄĞä", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³ĞŞĞÄ·û", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³ĞŞĞÄ·¢´ø", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³´©ÔÆÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³´©ÔÆÁ´", tbProp = {0, 4, 1}},	
-		{szName = "ĞşÔ³´©ÔÆ»¤Íó", tbProp = {0, 8, 1}},	
-		{szName = "ĞşÔ³´©ÔÆÑü´ø", tbProp = {0, 6, 0}},	
-		{szName = "ĞşÔ³ÆÆ±ùÅå", tbProp = {0, 9, 1}},	
-		{szName = "ĞşÔ³ÆÆ±ùÊÖ", tbProp = {0, 8, 1}},
+  		{szName = "HuyÒn Viªn Trİ TuÖ Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Viªn M·n PhËt Ch©u", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Viªn M·n Yªu §¸i", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn Viªn M·n Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Viªn M·n T¨ng Hµi", tbProp = {0, 5, 0}},	
+		{szName = "HuyÒn Viªn PhËt T©m H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn PhËt T©m Hé UyÓn", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn PhËt T©m Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn PhËt T©m Yªu §¸i", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn Xung Thiªn Yªu §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn Xung Thiªn Kh¶i", tbProp = {0, 2, 4}},	
+		{szName = "HuyÒn Viªn Xung Thiªn Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Xung Thiªn H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Phi V©n Yªu §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn Phi V©n Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Phi V©n Ngoa", tbProp = {0, 5, 0}},	
+		{szName = "HuyÒn Viªn Anh Dòng Kh«i", tbProp = {0, 7, 4}},	
+		{szName = "HuyÒn Viªn Anh Dòng H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn TŞnh ¢m Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn TŞnh ¢m H­¬ng Nang", tbProp = {0, 9, 0}},	
+		{szName = "HuyÒn Viªn TŞnh ¢m Hé UyÓn", tbProp = {0, 8, 0}},	
+		{szName = "HuyÒn Viªn TŞnh ¢m Ch©u Liªn", tbProp = {0, 4, 0}},	
+		{szName = "HuyÒn Viªn Hµn B¨ng Thóc Yªu", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn Hµn B¨ng Ch©u Liªn", tbProp = {0, 4, 0}},	
+		{szName = "HuyÒn Viªn Hµn B¨ng Hµi", tbProp = {0, 5, 3}},	
+		{szName = "HuyÒn Viªn Hµn B¨ng H­¬ng Nang", tbProp = {0, 9, 0}},	
+		{szName = "HuyÒn Viªn NguyÖt Hoa H­¬ng Nang", tbProp = {0, 9, 0}},	
+		{szName = "HuyÒn Viªn NguyÖt Hoa Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn NguyÖt Hoa Tô", tbProp = {0, 8, 0}},	
+		{szName = "HuyÒn Viªn NguyÖt Hoa Ch©u Liªn", tbProp = {0, 4, 0}},	
+		{szName = "HuyÒn Viªn Phån Hoa Ch©u Liªn", tbProp = {0, 4, 0}},	
+		{szName = "HuyÒn Viªn §o¹n Tr­êng H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn §o¹n Tr­êng Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn §o¹n Tr­êng Bİ Trang", tbProp = {0, 2, 2}},	
+		{szName = "HuyÒn Viªn §o¹n Tr­êng Yªu §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn HuyÕt S¸t H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn HuyÕt S¸t Yªu §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn HuyÕt S¸t Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn HuyÕt S¸t Bİ Trang", tbProp = {0, 2, 2}},	
+		{szName = "HuyÒn Viªn L·nh T©m TriÒn Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn L·nh T©m Gi¸p Y", tbProp = {0, 2, 3}},	
+		{szName = "HuyÒn Viªn L·nh T©m H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn L·nh T©m Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn V« T×nh Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn V« T×nh Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn V« T×nh H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn V« T×nh Lı", tbProp = {0, 5, 1}},	
+		{szName = "HuyÒn Viªn Hµn Quang Lı", tbProp = {0, 5, 1}},	
+		{szName = "HuyÒn Viªn Hµn Quang Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn Hµn Quang Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Hµn Quang Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn D­¬ng C­¬ng Ngoa", tbProp = {0, 5, 0}},	
+		{szName = "HuyÒn Viªn D­¬ng C­¬ng Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn D­¬ng C­¬ng H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn D­¬ng C­¬ng Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn ChiÕn Long Yªu Trôy", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn ChiÕn Long Thóc Yªu", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn ChiÕn Long Hé UyÓn", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn ChiÕn Long H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn L¹c Hån Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn L¹c Hån Yªu §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn L¹c Hån Hé UyÓn", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn L¹c Hån H¹ng Khuyªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Ch­íc T×nh Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Ch­íc T×nh Hé UyÓn", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn Ch­íc T×nh Qu¸n MiÖn", tbProp = {0, 7, 2}},	
+		{szName = "HuyÒn Viªn Ch­íc T×nh H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Tam Phong Lı", tbProp = {0, 5, 0}},	
+		{szName = "HuyÒn Viªn Tam Phong Ngäc Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Tam Phong Ph¸p §¸i", tbProp = {0, 6, 1}},	
+		{szName = "HuyÒn Viªn Tam Phong Phï", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Tu T©m Ngäc Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Tu T©m Tô", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn Tu T©m Phï", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Tu T©m Ph¸p §¸i", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn Xuyªn V©n Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Xuyªn V©n H¹ng Liªn", tbProp = {0, 4, 1}},	
+		{szName = "HuyÒn Viªn Xuyªn V©n Hé UyÓn", tbProp = {0, 8, 1}},	
+		{szName = "HuyÒn Viªn Xuyªn V©n Yªu §¸i", tbProp = {0, 6, 0}},	
+		{szName = "HuyÒn Viªn Ph¸ B¨ng Béi", tbProp = {0, 9, 1}},	
+		{szName = "HuyÒn Viªn Ph¸ B¨ng Thñ", tbProp = {0, 8, 1}},
   };
 
  
 function  ThuHoiHuyenVien_main(nItemIndex)
 	
 	if (IsActiveTime()~=1) then
-		Talk(1,"","¹¦ÄÜÔİÊ±¹Ø±Õ !")
+		Talk(1,"","Chøc n¨ng t¹m ®ãng !")
 		return
 	end
 	if (GetTask(Task_Limit_Do) >= 4) then
-		Talk(1,"","×î¶àÖ»ÄÜ»»4´Î")
+		Talk(1,"","ChØ cã thÓ ®æi tèi ®a 4 lÇn")
 		return
 	end
-	GiveItemUI( "ÊÕ»ØĞşÔ³×°±¸", "·ÅÈëĞşÔ³ÎïÆ·", "ConfirmTask", "no",1 );
+	GiveItemUI( "Thu håi trang bŞ HuyÒn Viªn", "§Æt vµo vËt phÈm HuyÒn Viªn", "ConfirmTask", "no",1 );
 end
 
 function ConfirmTask(nCount)
 	--Msg2Player("Callll")
 	if (nCount ~= 1) then
-		Talk(1,"","Ã¿´ÎÖ»ÊÕ»ØÒ»¸öÎïÆ· !")
+		Talk(1,"","Mçi lÇn chØ thu håi mét vËt phÈm !")
 		return
 	end
 	local nItemIdx = GetGiveItemUnit(1);
@@ -122,18 +122,18 @@ function ConfirmTask(nCount)
 					RemoveItemByIndex(nItemIdx)
 					AddEnergy(46000)
 					
-					Msg2Player("Äã¸Õ¸Õ»¹»Ø×°±¸ "..szItemName)
-					Msg2Player("Äã¸Õ¸Õ»ñµÃ 46000 ¾«Á¶Ê¯Öµ£¬Çë¼ì²é !")
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."ÊÕ»ØĞşÔ³item"..GetAccount().."\t"..GetName().."\t".."»¹»ØÎïÆ· "..szItemName)
+					Msg2Player("B¹n võa tr¶ l¹i trang bŞ "..szItemName)
+					Msg2Player("B¹n võa nhËn l¹i 46000 ®iÓm tinh lùc, xin kiÓm tra l¹i !")
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."Thu Håi Item HuyÒn Viªn"..GetAccount().."\t"..GetName().."\t".."tr¶ l¹i vËt phÈm "..szItemName)
 					return
 				else
-					Talk(1,"","ÎÒÖ»»ñµÃĞşÔ³×°±¸£¬2010Äê8ÔÂ16ÈÕ6Ê±µ½2010Äê8ÔÂ18ÈÕ»»µÄ")
+					Talk(1,"","Ta chØ nhËn l¹i trang bŞ HuyÒn Viªn ®æi ra 6 giê 16-8-2010 ®Õn 8 giê 18-08-2010")
 					return
 				end
 			end
 		end
 	end--for
-	Talk(1,"","ÎÒÖ»»ñµÃĞşÔ³×°±¸£¬2010Äê8ÔÂ16ÈÕ6Ê±µ½2010Äê8ÔÂ18ÈÕ»»µÄ!")
+	Talk(1,"","Ta chØ nhËn nhËn l¹i trang bŞ HuyÒn Viªn ®æi ra trong kho¶ng thêi gian tõ  6 giê 16-8-2010 ®Õn 8 giê 18-08-2010 !")
 end
 
 function CheckTimeGenItem(nTimeGenItem)

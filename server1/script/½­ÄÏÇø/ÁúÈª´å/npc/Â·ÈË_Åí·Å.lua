@@ -8,11 +8,11 @@ function main(sel)
 	UTask_world19 = GetTask(19)
 	if (UTask_world19 == 0) and (GetLevel() >= 2) then 		--ĞŞµ¶ÈÎÎñÆô¶¯
 		if (GetSex() == 0) then
-			W19_rank = "ºóÉú"
+			W19_rank = "hËu sinh"
 		else
-			W19_rank = "¹ÃÄï"
+			W19_rank = "C« n­¬ng"
 		end
-		Talk(2,"W19_get","Åí·Å:"..W19_rank.."¿ÉÒÔ°ïÖúÔÚÏÂÂğ?","°ïÊ²Ã´Âğ? ")
+		Talk(2,"W19_get","Bµnh Phãng:"..W19_rank.."cã thÓ gióp t¹i h¹ kh«ng?","Gióp g× ®©y? ")
 	elseif (UTask_world19 == 2) and (HaveItem(229) == 0) then
 		AddEventItem(229)
 		Talk(1,"", 10903)
@@ -20,33 +20,33 @@ function main(sel)
 		Talk(1,"", 10904)
 		DelItem(230)
 		SetTask(19,10)
-		AddNote("°ÑĞŞºÃµÄ±¦µ¶¸øÅí·Å, Íê³ÉÈÎÎñ")
-		Msg2Player("°ÑĞŞºÃµÄ±¦µ¶¸øÅí·Å, Íê³ÉÈÎÎñ")
+		AddNote("Mang b¶o ®ao ®· söa xong vÒ cho Bµnh Phãng, hoµn thµnh nhiÖm vô ")
+		Msg2Player("Mang b¶o ®ao ®· söa xong vÒ cho Bµnh Phãng, hoµn thµnh nhiÖm vô ")
 		p1,p2,p3,p4,p5,p6 = RndItemProp(6,10)
 		if(GetSex() == 0) then
 			AddItem(0, 8, 1, 1, random(0,4), GetLucky(), p1,p2,p3,p4,p5,p6)
-			Msg2Player("µÃµ½ÓãÆ¤»¤Íó")
+			Msg2Player("NhËn ®­îc Ng­u B× Hé UyÓn ")
 		else
 			AddItem(0, 8, 0, 1, random(0,4), GetLucky(), p1,p2,p3,p4,p5,p6)
-			Msg2Player("µÃµ½ÓãÆ¤»¤Íó")
+			Msg2Player("NhËn ®­îc Ng­u B× Hé UyÓn ")
 		end
 		AddRepute(6)
-		Msg2Player("ÄãµÄÃûÍûÔö¼ÓÁË6µã")
+		Msg2Player("Danh väng cña b¹n t¨ng thªm 6 ®iÓm ")
 	else
 		Talk(1,"", 10905)
 	end
 end;
 
 function W19_get()
-	Say(10906 ,2,"°ïÖúËû! /W19_get_yes","²»ÒªÓÌÔ¥/W19_get_no")
+	Say(10906 ,2,"Gióp ®ì h¾n! /W19_get_yes","Kh«ng cÇn do dù /W19_get_no")
 end
 
 function W19_get_yes()
 	SetTask(19,2)
 	AddEventItem(229)
 	Talk(1,"", 10907)
-	AddNote("½ÓÊÜÈÎÎñ£º°ïÖúÅí·Å´øµ¶È¥ĞŞ")
-	Msg2Player("½ÓÊÜÈÎÎñ£º°ïÖúÅí·Å´øµ¶È¥ĞŞ")
+	AddNote("TiÕp nhËn nhiÖm vô: Gióp Bµnh Phãng mang ®ao ®i söa ")
+	Msg2Player("TiÕp nhËn nhiÖm vô: Gióp Bµnh Phãng mang ®ao ®i söa ")
 end
 
 function W19_get_no()

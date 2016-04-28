@@ -4,7 +4,7 @@ function OnTimer()
 	local nNewsValue = GetMissionV(MS_NEWSVALUE) + 1;
 	SetMissionV(MS_NEWSVALUE, nNewsValue);
 	
-	gb_SetTask("Ê¥µ®»î¶¯", 1, 2);
+	gb_SetTask("Ho¹t ®éng Gi¸ng Sinh", 1, 2);
 	if (20 == nNewsValue) then
 		CloseMission(CH_MISSIONID);
 		return
@@ -25,7 +25,7 @@ function OnTimer()
 		if (nTime > 0) then
 			local OldSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(CH_MAPID[2]);
-			Msg2MSAll(CH_MISSIONID, "»î¶¯»¹ÓĞ<color=yellow>"..nTime.."<color>·Ö½áÊø!");
+			Msg2MSAll(CH_MISSIONID, "Ho¹t ®éng vÉn cßn<color=yellow>"..nTime.."<color>phót kÕt thóc!");
 			SubWorld = OldSubWorld;
 		end;
 	end;
@@ -78,7 +78,7 @@ function groupsort(nGroupId, bSave)
 	for i=1,nRankCount do
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
-			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", ÕÒµ½"..tabPlayer[i][2].."ÀñÎï"
+			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", t×m ®­îc"..tabPlayer[i][2].."mãn quµ"
 		end
 	end
 	--ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
@@ -91,7 +91,7 @@ function groupsort(nGroupId, bSave)
 		if (szMsg ~= nil and szMsg ~= "") then
 			Msg2Player(szMsg)
 		end
-		Msg2Player("ÏÖÔÚÄãÕÒµ½<color=yellow>"..GetTask(TK_COUNT_ONETIME).."<color>ÀñÎï£¬ÏÖÔÚÅÅÃû<color=yellow>"..i.."<color>, ¼ÌĞø¼ÓÓÍ!");
+		Msg2Player("HiÖn b¹n t×m ®­îc <color=yellow>"..GetTask(TK_COUNT_ONETIME).."<color>mãn quµ, hiÖn t¹i xÕp h¹ng <color=yellow>"..i.."<color>, tiÕp tôc cè g¾ng!");
 	end;
 	
 	PlayerIndex = OldPlayer;

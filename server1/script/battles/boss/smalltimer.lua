@@ -8,23 +8,23 @@ function OnTimer()
 	t = GetMissionV(MS_TIMER1) + 1;--¼ÆÊıÆ÷£¬Í³¼Æµ±Ç°¶¨Ê±Æ÷´¥·¢ÁË¶àÉÙ´ÎÁË
 	SetMissionV(MS_TIMER1, t)
 	
-	--Storm ¼Ó½±Àø»ı·Ö
+	--Storm ¼Ó½±Àø»ıphót
 	local add_time = 60 * FRAME2TIME / TIMER_1
 	storm_addm_mspointex(1, MISSIONID, (t - RUNGAME_TIME) / add_time)
 
 	local lsf_level = BT_GetGameData(GAME_LEVEL)
 	if (lsf_level == 1) then
-		resultstr = "³õ¼¶ÇøÓò"
+		resultstr = "Khu vùc S¬ cÊp "
 	elseif (lsf_level == 2) then
-		resultstr = "ÖĞ¼¶ÇøÓò "
+		resultstr = "Khu vùc Trung cÊp "
 	elseif (lsf_level == 3) then
-		resultstr = "¸ß¼¶ÇøÓò"
+		resultstr = "Khu vùc Cao cÊp "
 	end
 	
 	if (t == RUNGAME_TIME) then --Èç¹ûµ½ÁËÕıÊ½¿ªÕ½Ê±¿Ì£¬ÔòÍ£Ö¹±¨Ãû£¬ÕıÊ½½øÈëÕ½¶·½×¶Î
 		RunMission(MISSIONID)
-		AddGlobalCountNews(resultstr.."ËÎ½ğÕ½ÒÛBOSS±¨ÃûÊ±¼äĞÎÊ½ÒÑµ½, ÇëÎäÁÖÈËÊ¿²Î¼ÓÕ½¶·!", 2);
-		Msg2MSAll(MISSIONID, "ËÎ½ğÕıÊ½¿ªÕ½! ¸÷Î»Õ½Ê¿£¡³å°¡!");
+		AddGlobalCountNews(resultstr.."Thêi gian b¸o danh h×nh thøc BOSS cña chiÕn dŞch Tèng Kim ®· ®Õn, xin mêi vâ l©m nh©n sü h·y tham gia chiÕn ®Êu!", 2);
+		Msg2MSAll(MISSIONID, "Tèng Kim chİnh thøc khai chiÕn! C¸c chiÕn sÜ! X«ng lªn!");
 		WriteLog("boss battle is entering fight state. now member count="..GetMSPlayerCount(MISSIONID, 1)..":"..GetMSPlayerCount(MISSIONID, 2))
 	end
 
@@ -32,11 +32,11 @@ function OnTimer()
 		RestTime = (RUNGAME_TIME - t) * TIMER_1 / FRAME2TIME
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
-			str1 = resultstr.."<#>BOSSĞÎÊ½µÄËÎ½ğÕ½ÒÛÕı½ôÕÅ½øĞĞ£¬ÏÖÔÚÕı´¦ÓÚ±¨Ãû½×¶Î£¬ÄÄÎ»ÎäÁÖÈËÊ¿Ïë²Î¼Ó£¬Çëµ½ÏåÑô»òÕßÖìÏÉÕò½øÈëÕ½³¡»òÕßÊ¹ÓÃËÎ½ğÚ¯Êé±¨Ãû¡£¿ªÕ½Ê±¼ä»¹ÓĞ:"..RestMin.."·ÖÖÓ¡£²Î¼ÓÌõ¼ş£ºµÈ¼¶²»µÍÓÚ40¼¶,±¨Ãû·ÑÎª100000Á½¡£¿ªÕ½ºó£¬Èç¹ûÒÀÈ»Ã»ÓĞµ½×î¸ßÆÚÏŞ£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø½øÈë±¨Ãû";
-			str2 = "<#> ±¨ÃûÊ±¼ä»¹Ê£"..RestMin.."·ÖÖÓ"
+			str1 = resultstr.."<#>ChiÕn dŞch Tèng Kim h×nh thøc BOSS ®ang diÔn ra hÕt søc c¨ng th¼ng, hiÖn t¹i ®ang ë giai ®o¹n b¸o danh, vŞ vâ l©m nh©n sü nµo muèn tham gia th× h·y ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó vµo chiÕn tr­êng hoÆc sö dông Tèng Kim chiªu th­ ®Ó b¸o danh. Thêi gian khai chiÕn cßn:"..RestMin.." phót. §iÒu kiÖn tham gia: CÊp kh«ng İt h¬n 40, phİ b¸o danh 100000 l­îng. Sau khi khai chiÕn nÕu nh­ vÉn ch­a ®Õn giíi h¹n cao nhÊt th× vÉn cã thÓ b¸o danh vµo tiÕp";
+			str2 = "<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"
 		else
-			str1 = resultstr.."<#>BOSSĞÎÊ½µÄËÎ½ğÕ½ÒÛÕı½ôÕÅ½øĞĞ£¬ÏÖÔÚÕı´¦ÓÚ±¨Ãû½×¶Î£¬ÄÄÎ»ÎäÁÖÈËÊ¿Ïë²Î¼Ó£¬Çëµ½ÏåÑô»òÕßÖìÏÉÕò½øÈëÕ½³¡»òÕßÊ¹ÓÃËÎ½ğÚ¯Êé±¨Ãû¡£¿ªÕ½Ê±¼ä»¹ÓĞ:"..RestMin.."·ÖÖÓ"..RestSec.."Ãë. ²Î¼ÓÌõ¼ş£ºµÈ¼¶²»µÍÓÚ40¼¶,±¨Ãû·ÑÎª100000Á½¡£¿ªÕ½ºó£¬Èç¹ûÒÀÈ»Ã»ÓĞµ½×î¸ßÆÚÏŞ£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø½øÈë±¨Ãû";
-			str2 = "<#> ±¨ÃûÊ±¼ä»¹Ê£"..RestMin.."·Ö"..RestSec.."Ãë©y"
+			str1 = resultstr.."<#>ChiÕn dŞch Tèng Kim h×nh thøc BOSS ®ang diÔn ra hÕt søc c¨ng th¼ng, hiÖn t¹i ®ang ë giai ®o¹n b¸o danh, vŞ vâ l©m nh©n sü nµo muèn tham gia th× h·y ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó vµo chiÕn tr­êng hoÆc sö dông Tèng Kim chiªu th­ ®Ó b¸o danh. Thêi gian khai chiÕn cßn:"..RestMin.."phót"..RestSec.." gi©y. §iÒu kiÖn tham gia: CÊp kh«ng İt h¬n 40, phİ b¸o danh 100000 l­îng. Sau khi khai chiÕn nÕu nh­ vÉn ch­a ®Õn giíi h¹n cao nhÊt th× vÉn cã thÓ b¸o danh vµo tiÕp";
+			str2 = "<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"..RestSec.." gi©y"
 		end
 		AddGlobalCountNews(str1, 2);
 		Msg2MSAll(MISSIONID,str2);		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
@@ -62,7 +62,7 @@ function OnTimer()
 				end
 			end
 
-			if (t == VANISHGAME_TIME) then	--µ½×îºó20·ÖÖÓÊ±½«ÁíÒ»·½µÄÔªË§²úÉú
+			if (t == VANISHGAME_TIME) then	--µ½×îºó20phótÊ±½«ÁíÒ»·½µÄÔªË§²úÉú
 				mar = GetMissionV(MS_MARSHAL)
 				if (mar == 1) then
 					BattleBoss_AddBigBoss(2);
@@ -89,10 +89,10 @@ function OnTimer()
 			
 			bt_pop2signmap()	--½«ÔÚºóÓª£¨fight=0£©µÄÍæ¼ÒËÍ»Ø±¨Ãûµã
 			
-			--Ã¿Ò»·ÖÖÓÍ¨¸æµ±Ç°Ë«·½»ı·Ö£¬ºÍnpc
+			--Ã¿Ò»phótÍ¨¸æµ±Ç°Ë«·½»ıphót£¬ºÍnpc
 			if (mod(t, 3) == 0 ) then
 				sf_callfightnpc(t - RUNGAME_TIME, VANISHGAME_TIME - RUNGAME_TIME)	-- ²úÉúÕ½¶·Npc				
-				msstr = format("Í¨Öª: ÏÖÔÚË«·½µÄËÎ½ğµãÎª<color=yellow>%d:%d<color>, ËÎ½ğË«·½ÏûÃğbossµÄÊıÁ¿Îª<color=yellow>%d:%d<color>", GetMissionV(MS_TOTALPOINT_S), GetMissionV(MS_TOTALPOINT_J), GetMissionV(MS_KILLBOSSCOUNT_S), GetMissionV(MS_KILLBOSSCOUNT_J));
+				msstr = format("Th«ng b¸o: HiÖn t¹i ®iÓm Tèng Kim cña hai bªn lµ <color=yellow>%d:%d<color>,  sè boss c¶ hai bªn Tèng Kim tiªu diÖt lµ <color=yellow>%d:%d<color>", GetMissionV(MS_TOTALPOINT_S), GetMissionV(MS_TOTALPOINT_J), GetMissionV(MS_KILLBOSSCOUNT_S), GetMissionV(MS_KILLBOSSCOUNT_J));
 				Msg2MSAll(MISSIONID, msstr)
 			end
 			

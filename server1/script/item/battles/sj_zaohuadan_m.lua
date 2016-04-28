@@ -2,6 +2,6 @@ Include( "\\script\\item\\checkmapid.lua" )
 
 function EatMedicine()
 		AddSkillState(472, 10, 0, 54 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦³ÖĞø»Ö¸´
-		Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸öÇ¬À¤Ôì»¯µ¤£¨ÖĞ£©¡£")	
+		Msg2Player("<#> B¹n sö dông 1 Cµn Kh«n T¹o Hãa ®an (Võa) .")	
 end
 

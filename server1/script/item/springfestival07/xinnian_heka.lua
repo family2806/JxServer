@@ -6,10 +6,10 @@ Include("\\script\\lib\\string.lua")
 --<playerbless> -- [ÊÕ¿¨ÈËÃû×Ö]
 --<name> -- [·¢¿¨ÈËÃû×Ö]
 tbMessage={
-	["6,1,1346"] = "×£<color=red><playerbless><color> ĞÂµÄÒ»Äê°²¿µĞËÍú.<color=red><name><color>",
-	["6,1,1347"] = "×£ <color=red><playerbless><color> ĞÂÄêÍòÊÂÈçÒâ£¬ÉúÒâ·¢´ï.<color=red><name><color>",
-	["6,1,1348"] = "×£ <color=red><playerbless><color>ĞÂÄê½ø²Æ½øÂ»£¬ÍòÊÂĞËÍ¨.<color=red><name><color>",
-	["6,1,1349"] = "×£ <color=red><playerbless><color>°²¿µĞËÍú£¬¼ÒÍ¥½¡¿µ£¬ÉúÒâ·¢´ï.<color=red><name><color>",
+	["6,1,1346"] = "Chóc <color=red><playerbless><color> mét n¨m míi An Khang ThŞnh V­îng.<color=red><name><color>",
+	["6,1,1347"] = "Chóc <color=red><playerbless><color> n¨m míi V¹n Sù Nh­ ı, lµm ¨n ph¸t tµi.<color=red><name><color>",
+	["6,1,1348"] = "Chóc <color=red><playerbless><color> n¨m míi TÊn Tµi TÊn Léc, V¹n Sù Hanh Th«ng.<color=red><name><color>",
+	["6,1,1349"] = "Chóc <color=red><playerbless><color> An Khang ThŞnh V­îng, gia quyÕn m¹nh kháe, lµm ¨n ph¸t ®¹t.<color=red><name><color>",
 	}
 
 ITEM_TASK_TEMP=26
@@ -19,13 +19,13 @@ UNIQUE_USE_TASK_TEMP=20
 function main(sel)
 
 	if (GetTaskTemp(UNIQUE_USE_TASK_TEMP) > 0) then
-		Msg2Player("ÄúÕıÔÚ·¢×£¸£Óï£¬ÇëÉÔµÈÒ»ÏÂ!");
+		Msg2Player("B¹n hiÖn ®ang ph¸t c©u chóc! Xin vui lßng ®îi mét l¸t!");
 		return 1;
 	end
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 1);
 	SetTaskTemp(ITEM_TASK_TEMP,sel);
 	
-	Say("ÄúÏëÔÚ½ÚÈÕÖ®¼Ê¸øÇ×ÓÑ·¢×îÃÀºÃµÄ×£¸£Âğ", 2, "Ïë/sendWish","ÔİÊ±²»ÓÃ/wishCancel");
+	Say("B¹n muèn nh©n dŞp TÕt göi ®Õn nh÷ng th©n h÷u nh÷ng lêi chóc tèt ®Ñp nhÊt kh«ng?", 2, "Muèn/sendWish","T¹m thêi kh«ng/wishCancel");
 	return 1;
 end
 
@@ -48,17 +48,17 @@ function BlessPlayerOnline(TargetName, nSelect, LifeMax, ManaMax, PKValue, Playe
 			szMsg = replace(szMsg,"<name>",GetName());
 			AddGlobalCountNews(szMsg,1);
 		else
-			Msg2Player("ÕÒ²»µ½¿¨£¬ÇëÔÙÊÔÒ»´Î!.")
+			Msg2Player("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.")
 		end
 	else
-		Msg2Player("Ê¹ÓÃ¿¨Ê§°Ü£¬ÇëÔÙÊÔÒ»´Î.")
+		Msg2Player("Sö dông thÎ thÊt b¹i, xin thö l¹i 1 lÇn.")
 	end
 	SetTaskTemp(ITEM_TASK_TEMP,0)
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 
 function BlessPlayerOffline(TargetName, nP)
-	Msg2Player("ÄúÏë×£¸£µÄÈËÏÖÔÚ²»ÔÚÏß£¬µÈÏÂÒ»´ÎÔÙÊÔ!.");
+	Msg2Player("Ng­êi mµ b¹n muèn chóc phóc hiÖn kh«ng cã trªn m¹ng! §îi lóc sau thö l¹i!.");
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 

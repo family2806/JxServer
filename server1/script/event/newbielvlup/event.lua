@@ -20,22 +20,22 @@ ENewbieLevelUp = {
 	end,
 	PayDoubleExp = function()
 		if not validateDate(DATESNEWBIELEVELUP,DATEENEWBIELEVELUP) then
-			Talk(1,"","²»ºÃÒâË¼£¡»î¶¯Ê±¼äÒÑ¾­½áÊøÁË!")
+			Talk(1,"","Xin lçi! Thêi gian diÔn ra ho¹t ®éng ®· chÊm døt råi!")
 			return
 		end
 		local ret = ENewbieLevelUp.validate()
 		if(ret ==1) then
-			Talk(1,"","²»ºÃÒâË¼£¡ÄãµÄµÈ¼¶ÒÑ¾­³¬¹ı60¼¶ÁË£¬²»ÄÜÁìÈ¡2Ğ¡Ê±Ë«±¶¾­Ñé.")
+			Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n ®· v­ît qu¸ cÊp 60 kh«ng thÓ nhËn phÇn th­ëng t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê.")
 			return
 		end
 		if(ret == 2) then
-			Talk(1,"","²»ºÃÒâË¼£¡Äã²»ÊÇĞÂÈËÎïÒò´Ë²»ÄÜÁìÈ¡2Ğ¡Ê±Ë«±¶¾­Ñé")
+			Talk(1,"","Xin lçi! B¹n kh«ng ph¶i nh©n vËt míi t¹o nªn kh«ng thÓ nhËn phÇn th­ëng t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê.")
 			return
 		end
 		AddSkillState(531,10,1,2*60*60*18)
 		AddSkillState(461, 1, 1,2*60*60*18)
-		Talk(1,"","»¶Ó­²Î¼Ó¡®ĞÂÊÖÁ·¼¶¡¯»î¶¯£¬ÕâÊÇ2Ğ¡Ê±Ë«±¶¾­ÑéµÄ½±Àø")
-		Msg2Player("ÄãÒÑÁìÈ¡2Ğ¡Ê±Ë«±¶¾­ÑéµÄ½±Àø")
+		Talk(1,"","Hoan nghªnh b¹n tham gia 'Ho¹t ®éng t©n thñ luyÖn cÊp', ®©y lµ phÇn th­ëng t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê.")
+		Msg2Player("B¹n nhËn ®­îc phÇn th­ëng t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê ")
 		return
 	end,
 	validate = function()
@@ -52,10 +52,10 @@ ENewbieLevelUp = {
 }
 
 function BTNNewbieLevelUp()
-	local msg = "»¶Ó­²Î¼Ó¡®ĞÂÊÖÁ·¼¶¡¯»î¶¯'."
+	local msg = "Hoan nghªnh tham gia 'Ho¹t ®éng t©n thñ luyÖn cÊp'."
 	local btns = {
-		"ÎÒÀ´ÁìÈ¡2Ğ¡Ê±Ë«±¶¾­Ñé/PayDoubleExp",
-		"ÁË½â´Ë´Î»î¶¯/AboutNewbieLevelUp",
+		"Ta ®Õn nhËn t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê /PayDoubleExp",
+		"T×m hiÓu ho¹t ®éng lÇn nµy/AboutNewbieLevelUp",
 	}
 	Say(msg,getn(btns),btns)
 end
@@ -65,10 +65,10 @@ function PayDoubleExp()
 end
 
 function AboutNewbieLevelUp()
-	local msg = ": »î¶¯ÆÚ¼ä£¬Ö»ÒªĞÂÈËÎïÉıµ½20¼¶²¢ÔÚ60¼¶ÒÔÏÂ¾Í¿ÉÒÔµ½Àñ¹Ù´¦ÁìÈ¡2Ğ¡Ê±Ë«±¶¾­Ñé"
+	local msg = ": Trong thêi gian ho¹t ®éng, chØ cÇn nh©n vËt míi t¹o lªn ®Õn cÊp 20 vµ d­íi cÊp 60 cã thÓ ®Õn LÔ Quan nhËn t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê."
 	local btns = {
-		"·µ»Ø/BTNNewbieLevelUp",
-		"Àë¿ª/Quit"
+		"Trë l¹i/BTNNewbieLevelUp",
+		"Tho¸t ra/Quit"
 	}
 	Describe(LIGUAN_TAG(msg),getn(btns),btns)
 end

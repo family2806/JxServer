@@ -27,9 +27,9 @@ local nExpiredTime = 20090907
 
 --ÔÚÕâÀïÔö¼ÓÊÂ¼ş¶Ô»°Èë¿Ú
 function tbItemJingnianshijian:Dailog(nItemIndex)
-	local szMsg = self.szDescLink.."Ê¹ÓÃ½õÄÒÊÂ¼ş."
+	local szMsg = self.szDescLink.."Sö dông cÈm nang sù kiÖn."
 	local tbOpt = {}	
-	tinsert(tbOpt, "·ÅÆú/OnCancel")
+	tinsert(tbOpt, "Hñy bá /OnCancel")
 	
 	Describe(szMsg, getn(tbOpt), tbOpt);
 end
@@ -74,7 +74,7 @@ function tbItemJingnianshijian:CheckItem(nItemIndex)
 		return nil;
 	end
 	if  tonumber(GetLocalDate("%Y%m%d")) >= GetItemParam(nItemIndex, 1) then
-		Talk(1,"","¸ÃÎïÆ·ÒÑ¹ıÆÚ");
+		Talk(1,"","VËt phÈm nµy ®· hÕt h¹n");
 		return nil
 	end
 	
@@ -92,7 +92,7 @@ function tbItemJingnianshijian:CheckItem(nItemIndex)
 	local nUseCount =  GetItemParam(nItemIndex, self.PARAM_ID_USECOUNT)
 	if nUseCount < 1 then --ÄÍ¾ÃĞ¡ÓÚ 1 É¾³ı
 		RemoveItemByIndex(nItemIndex)
-		Talk(1,"", "¸ÃÎïÆ·ÒÑ¹ı±£ÖÊÆÚ£¬±äÖÊÁË.")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt ®é bÒn vµ biÕn mÊt.")
 		return nil
 	end
 	return 1
@@ -129,7 +129,7 @@ function tbItemJingnianshijian:GetDesc(nItemIndex)
 		nUseCount = %nMaxUseCount
 	end
 	
-	return format("<color=green>Ê¹ÓÃ´ÎÊı»¹Ê£: %d<color>", nUseCount)
+	return format("<color=green>Sè lÇn sö dông cßn l¹i: %d<color>", nUseCount)
 end
 function OnCancel()
 	

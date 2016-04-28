@@ -17,7 +17,7 @@ tbNpc =
 		nLevel = 95,		-- µÈ¼¶
 		--nSeries = 1,		-- ÎåĞĞ
 		bNoRevive = 1,			-- ²»ÖØÉú
-		szName = "ÌØÌ½",		-- Ãû×Ö
+		szName = "§Æc Th¸m",		-- Ãû×Ö
 		nIsboss = 1,
 		nCurCamp = 1,	--ÕóÓª 1ËÎ 2½ğ
 	},
@@ -27,7 +27,7 @@ tbNpc =
 		nLevel = 95,		-- µÈ¼¶
 	--	nSeries = 1,		-- ÎåĞĞ
 		bNoRevive = 1,			-- ²»ÖØÉú
-		szName = "ÌØÌ½",		-- Ãû×Ö
+		szName = "§Æc Th¸m",		-- Ãû×Ö
 		nIsboss = 1,
 		nCurCamp = 2,	--ÕóÓª 1ËÎ 2½ğ
 	}
@@ -66,7 +66,7 @@ function AddTeTan(nNowTimeCount)
 		s_area = BT_GetGameData(GAME_CAMP1AREA) 	-- GAME_CAMP1AREA ËÎ GAME_CAMP1AREA ½ğ
 		j_area = BT_GetGameData(GAME_CAMP2AREA)
 		
-		Msg2MSAll(MISSIONID, "ĞÂµÄÌØÌ½ÒÑ¾­½øÈëÕ½³¡ÁË£¬´ó¼Ò¿ìµãĞĞ¶¯!");
+		Msg2MSAll(MISSIONID, "§Æc Th¸m míi ®· tiÕn vµo chiÕn tr­êng råi, mäi ng­êi nhanh chãng hµnh ®éng!");
 		
 		SelectPosition(nrandomCount)
 		local tbPosition_s = tbPoint[s_area]
@@ -74,13 +74,13 @@ function AddTeTan(nNowTimeCount)
 		
 		for i=1,4 do
 			local nIndex = tbIndex[i]
-			tbNpc.szName = "ÌØÌ½"
+			tbNpc.szName = "§Æc Th¸m"
 			basemission_CallNpc(tbNpc[1], nNowMapId, tbPosition_s[nIndex].x * 32, tbPosition_s[nIndex].y * 32)
-			local msg = format("Ôö¼ÓËÎ½ğÌØÌ½: X = %d Y = %d",tbPosition_s[nIndex].x,tbPosition_s[nIndex].y)
+			local msg = format("T¨ng thªm Tèng Kim §Æc Th¸m: X = %d Y = %d",tbPosition_s[nIndex].x,tbPosition_s[nIndex].y)
 			WriteLog(msg)
-			tbNpc.szName = "ÌØÌ½"
+			tbNpc.szName = "§Æc Th¸m"
 			basemission_CallNpc(tbNpc[2], nNowMapId, tbPosition_j[nIndex].x * 32, tbPosition_j[nIndex].y * 32)
-			local msg = format("Ôö¼Ó½ğ¾üÌØÌ½: X = %d Y = %d",tbPosition_j[nIndex].x,tbPosition_j[nIndex].y)
+			local msg = format("T¨ng thªm Kim §Æc Th¸m : X = %d Y = %d",tbPosition_j[nIndex].x,tbPosition_j[nIndex].y)
 			WriteLog(msg)
 		end
 	end
@@ -91,23 +91,23 @@ function OnTimer()
 	t = GetMissionV(MS_TIMER1) + 1;--¼ÆÊıÆ÷£¬Í³¼Æµ±Ç°¶¨Ê±Æ÷´¥·¢ÁË¶àÉÙ´ÎÁË
 	SetMissionV(MS_TIMER1, t)
 	
-	--Storm ¼Ó½±Àø»ı·Ö
+	--Storm ¼Ó½±Àø»ıphót
 	local add_time = 60 * FRAME2TIME / TIMER_1
 	storm_addm_mspointex(1, MISSIONID, (t - RUNGAME_TIME) / add_time)
 
 	local lsf_level = BT_GetGameData(GAME_LEVEL)
 	if (lsf_level == 1) then
-		resultstr = "³õ¼¶Õ½³¡µÄ"
+		resultstr = "Khu vùc S¬ cÊp "
 	elseif (lsf_level == 2) then
-		resultstr = "ÖĞ¼¶Õ½³¡µÄ"
+		resultstr = "Khu vùc Trung cÊp "
 	elseif (lsf_level == 3) then
-		resultstr = "¸ß¼¶Õ½³¡µÄ"
+		resultstr = "Khu vùc Cao cÊp "
 	end
 	
 	if (t == RUNGAME_TIME) then --Èç¹ûµ½ÁËÕıÊ½¿ªÕ½Ê±¿Ì£¬ÔòÍ£Ö¹±¨Ãû£¬ÕıÊ½½øÈëÕ½¶·½×¶Î
 		RunMission(MISSIONID)
-		AddGlobalCountNews(resultstr.."ËÎ½ğÕ½ÒÛÖ®É±Â¾Ä£Ê½±¨ÃûÊ±¼äµ½£¬Õ½¶·ÕıÊ½¿ªÊ¼£¡", 2);
-		Msg2MSAll(MISSIONID, "ËÎ½ğÕ½ÒÛÕıÊ½½øÈëÕ½¶·½×¶Î£¡½«Ê¿ÃÇ£¬³åÑ½£¡");
+		AddGlobalCountNews(resultstr.."Thêi gian b¸o danh Phong V©n LuËn KiÕm ®· hÕt! ChiÕn ®Êu chİnh thøc khai chiÕn!", 2);
+		Msg2MSAll(MISSIONID, "Phong V©n LuËn KiÕm chİnh thøc khai chiÕn! C¸c chiÕn sÜ! X«ng lªn!");
 		WriteLog("butcher battle is entering fight state. now member count="..GetMSPlayerCount(MISSIONID, 1)..":"..GetMSPlayerCount(MISSIONID, 2))
 		-- ÈÕ³£ÈÎÎñË¢ĞÂ¶Ô»°NPC
 		%tbTalkDailyTask:AddTalkNpc(BT_GetGameData(GAME_MAPID), BT_GetGameData(GAME_MAPID));
@@ -117,18 +117,18 @@ function OnTimer()
 		RestTime = (RUNGAME_TIME - t) * TIMER_1 / FRAME2TIME
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
-			str1 = resultstr.."<#>ËÎ½ğÕ½ÒÛÖ®É±Â¾Ä£Ê½Ò»´¥¼´·¢£¬Ä¿Ç°Õı½øÈë±¨Ãû½×¶Î£¬Óû²ÎÕ½ÕßÇë¾¡¿ì´ÓÏåÑô»òÖìÏÉÕòÇ°ÍùËÎ½ğÕ½³¡£»»òÊ¹ÓÃËÎ½ğÚ¯Êéµ½´ï±¨Ãûµã±¨Ãû¡£¿ªÕ½Ê±¼ä»¹Ê££º"..RestMin.."·Ö¡£²ÎÕ½Ìõ¼ş£ºµÈ¼¶²»Ğ¡ÓÚ40¼¶¡£¿ªÕ½ºóÈô²ÎÕ½ÈËÊıÎ´´ïÉÏÏŞ£¬ÈÔ¿É±¨Ãû½øÈëÕ½³¡¡£";
-			str2 = "<#>¿ªÕ½Ê±¼ä»¹Ê££º"..RestMin.."·Ö"
+			str1 = resultstr.."<#>Phong V©n LuËn KiÕm ®ang trong giai ®o¹n b¸o danh. C¸c hiÖp kh¸ch muèn tham gia h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh! (hoÆc dïng Phong V©n Chiªu th­) .Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.." phót. §iÒu kiÖn tham gia: CÊp kh«ng İt h¬n 40, phİ b¸o danh 1 Phong V©n Chiªu Binh LÖnh. Sau khi khai chiÕn nÕu nh­ vÉn ch­a ®Õn giíi h¹n cao nhÊt th× vÉn cã thÓ b¸o danh vµo tiÕp";
+			str2 = "<#>C¸ch thêi gian khai chiÕn chØ cßn:"..RestMin.."phót"
 		else
-			str1 = resultstr.."<#>ËÎ½ğÕ½ÒÛÖ®É±Â¾Ä£Ê½Ò»´¥¼´·¢£¬Ä¿Ç°Õı½øÈë±¨Ãû½×¶Î£¬Óû²ÎÕ½ÕßÇë¾¡¿ì´ÓÏåÑô»òÖìÏÉÕòÇ°ÍùËÎ½ğÕ½³¡£»»òÊ¹ÓÃËÎ½ğÚ¯Êéµ½´ï±¨Ãûµã±¨Ãû¡£¿ªÕ½Ê±¼ä»¹Ê££º"..RestMin.."·Ö"..RestSec.."Ãë¡£²ÎÕ½Ìõ¼ş£ºµÈ¼¶²»Ğ¡ÓÚ40¼¶¡£¿ªÕ½ºóÈô²ÎÕ½ÈËÊıÎ´´ïÉÏÏŞ£¬ÈÔ¿É±¨Ãû½øÈëÕ½³¡¡£";
-			str2 = "<#>¿ªÕ½Ê±¼ä»¹Ê££º"..RestMin.."·Ö"..RestSec.."Ãë"
+			str1 = resultstr.."<#>Phong V©n LuËn KiÕm ®ang trong giai ®o¹n b¸o danh. C¸c hiÖp kh¸ch muèn tham gia h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh! (hoÆc dïng Phong V©n Chiªu th­) .Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"..RestSec.." gi©y. §iÒu kiÖn tham gia: CÊp kh«ng İt h¬n 40, phİ b¸o danh 1 Phong V©n Chiªu Binh LÖnh. Sau khi khai chiÕn nÕu nh­ vÉn ch­a ®Õn giíi h¹n cao nhÊt th× vÉn cã thÓ b¸o danh vµo tiÕp";
+			str2 = "<#>C¸ch thêi gian khai chiÕn chØ cßn:"..RestMin.."phót"..RestSec.." gi©y"
 		end
 		AddGlobalCountNews(str1, 2);
 		Msg2MSAll(MISSIONID,str2);		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
 	end
 	
 	if (t >= RUNGAME_TIME) then
-		AddTeTan(t)  -- Ôö¼ÓËÎ½ğÌØÌ½
+		AddTeTan(t)  -- Ôö¼ÓËÎ½ğ§Æc Th¸m
 
 		--Èç¹û³¡ÉÏÄ³Ò»ÕóÓªÈËÊıµÍÓÚ×îĞ¡ÊıÁ¿£¬Ôò±ÈÈü½áÊø£¬ÈË¶àµÄÕóÓªÖ±½Ó»ñÊ¤
 		local group1count = GetMSPlayerCount(MISSIONID, 1)
@@ -147,9 +147,9 @@ function OnTimer()
 			return
 		end
 		if (t > RUNGAME_TIME) then
-			--Ã¿Ò»·ÖÖÓÍ¨¸æµ±Ç°Ë«·½»ı·Ö£¬ºÍnpc
+			--Ã¿Ò»phótÖÓÍ¨¸æµ±Ç°Ë«·½»ıphót£¬ºÍnpc
 			if (mod(t, 3) == 0 ) then
-			msstr = "¹«¸æ£ºµ±Ç°ËÎ½ğË«·½×Ü»ı·ÖÎª"..GetMissionV(MS_TOTALPOINT_S).."£º"..GetMissionV(MS_TOTALPOINT_J);
+			msstr = "C«ng c¸o: hiÖn giê tæng tİch lòy cña 2 phe lµ "..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
 				Msg2MSAll(MISSIONID, msstr)
 			end
 		

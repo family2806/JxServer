@@ -1,6 +1,6 @@
 ITEMTYPE = 1; --公共道具
-szItem = "寒风玉"
-szEffect = "减速10秒";
+szItem = "H祅 Phong Ng鋍"
+szEffect = "gi秏 t鑓 trong 10 gi﹜";
 nSkillId = 674;
 nSkillLevel = 15;
 nTime = 10;

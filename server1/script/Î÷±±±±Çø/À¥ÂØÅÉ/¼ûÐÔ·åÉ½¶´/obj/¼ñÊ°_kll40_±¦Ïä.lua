@@ -4,12 +4,12 @@
 function main()
 	UTask_kl = GetTask(9)
 	if ((UTask_kl == 40*256+20) and (HaveItem(212) == 1)) then		-- Ô¿³×Ó¦Ê¹ÓÃIDºÅ
-		Msg2Player("ÄãµÃµ½Ñª»êÉñ½£")
+		Msg2Player("B¹n thö dïngch×a khãamë chiÕc r­¬ng ")
 		DelItem(212)
 		AddEventItem(9)
-		AddNote("ÄãµÃµ½Ñª»êÉñ½£")
-		Msg2Player("ÄãµÃµ½Ñª»êÉñ½£")
+		AddNote("B¹n thö dïngch×a khãamë chiÕc r­¬ng ")
+		Msg2Player("B¹n thö dïngch×a khãamë chiÕc r­¬ng ")
 	else
-		Talk(1,"","±¦ÏäËø×¡ÁË")
+		Talk(1,"","B¶o r­¬ng nµy ®· khãa råi")
 	end
 end;

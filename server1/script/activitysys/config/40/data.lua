@@ -1,7 +1,7 @@
 
 _Message = function (nItemIdx)
 	local strItemName = GetItemName(nItemIdx)
-	local strMessage = format("<color=green>πßœ≤ <color=yellow>%s<color=green> “—ªÒµ√ŒÔ∆∑<color=yellow>%s<color=green> µ± π”√ <color=yellow>”¿æ√√µπÂª®¿∫<color>", GetName(), strItemName)
+	local strMessage = format("<color=green>ChÛc mıng <color=yellow>%s<color=green> Æ∑ nhÀn Æ≠Óc vÀt ph»m <color=yellow>%s<color=green> khi sˆ dÙng <color=yellow>Gio Hoa HÂng V‹nh Cˆu<color>", GetName(), strItemName)
 	local handle = OB_Create();
 	ObjBuffer:PushObject(handle, strMessage)
 	RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
@@ -10,14 +10,14 @@ end
 
 tbActivityNpc = {	
 	[1] = {
-		szName = "∫œ≥…ª®µƒ»À", 
+		szName = "ThÓ Gh–p Hoa", 
 		nLevel = 95,
 		nNpcId = 1888,
 		nIsboss = 0,
 		szScriptPath = "\\script\\activitysys\\npcdailog.lua",
 		},
 	[2] = {
-		szName = "¬Ã≤›", 
+		szName = "C· Xanh", 
 		nLevel = 95,
 		nNpcId = 1889,
 		nIsboss = 0,
@@ -47,131 +47,131 @@ tbActivityNpcPos = {
 	
 tbMonstorAward = {
 	[321] = {	-- ≥§∞◊…Ωƒœ
-		[1]={szName="∞◊√µπÂ",tbProp={6,1,3117,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
-		[2]={szName="ª∆√µπÂ",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
-		[3]={szName="√µπÂœ„¥¸",tbProp={6,1,3125,1,0,0},nExpiredTime=20120401,nRate = 10.0,},
+		[1]={szName="Hoa HÂng Træng",tbProp={6,1,3117,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
+		[2]={szName="Hoa HÂng Vµng",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
+		[3]={szName="TÛi H≠¨ng Hoa HÂng",tbProp={6,1,3125,1,0,0},nExpiredTime=20120401,nRate = 10.0,},
 		},	
 	[322] = {	-- ≥§∞◊…Ω±±
-		[1]={szName="¿∂√µπÂ",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
-		[2]={szName="∫Ï√µπÂ",tbProp={6,1,3120,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
-		[3]={szName="√µπÂœ„¥¸",tbProp={6,1,3125,1,0,0},nExpiredTime=20120401,nRate = 10.0,},
+		[1]={szName="Hoa HÂng Xanh",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
+		[2]={szName="Hoa hÂng Æ·",tbProp={6,1,3120,1,0,0},nExpiredTime=20120401,nRate = 25.0,},
+		[3]={szName="TÛi H≠¨ng Hoa HÂng",tbProp={6,1,3125,1,0,0},nExpiredTime=20120401,nRate = 10.0,},
 		},
 	[227] = {	-- …≥ƒÆ…Ω∂¥3
-		[1]={szName="∞◊√µπÂ",tbProp={6,1,3117,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
-		[2]={szName="ª∆√µπÂ",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
-		[3]={szName="¿∂√µπÂ",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[1]={szName="Hoa HÂng Træng",tbProp={6,1,3117,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[2]={szName="Hoa HÂng Vµng",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[3]={szName="Hoa HÂng Xanh",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
 		},
 	[340] = {	-- ƒ™∏ﬂøﬂ
-		[1]={szName="¿∂√µπÂ",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
-		[2]={szName="ª∆√µπÂ",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
-		[3]={szName="∫Ï√µπÂ",tbProp={6,1,3120,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[1]={szName="Hoa HÂng Xanh",tbProp={6,1,3118,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[2]={szName="Hoa HÂng Vµng",tbProp={6,1,3119,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
+		[3]={szName="Hoa hÂng Æ·",tbProp={6,1,3120,1,0,0},nExpiredTime=20120401,nRate = 20.0,},
 		},
 	}	
 	
 tbItemAward = {
-	["3Color_Rose"] = {szName = "500000 µ„exp", nExp=500000},
-	["4Color_Rose"] = {szName = "1000000 µ„exp", nExp=1000000},
+	["3Color_Rose"] = {szName = "500000 Æi”m exp", nExp=500000},
+	["4Color_Rose"] = {szName = "1000000 Æi”m exp", nExp=1000000},
 	["MeiGuiXiangDai"] = {
-		[1]={szName="¿∂√µπÂ",tbProp={6,1,3118,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
-		[2]={szName="ª∆√µπÂ",tbProp={6,1,3119,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
-		[3]={szName="∫Ï√µπÂ",tbProp={6,1,3120,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
-		[4]={szName="∞◊√µπÂ",tbProp={6,1,3117,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
+		[1]={szName="Hoa HÂng Xanh",tbProp={6,1,3118,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
+		[2]={szName="Hoa HÂng Vµng",tbProp={6,1,3119,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
+		[3]={szName="Hoa hÂng Æ·",tbProp={6,1,3120,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
+		[4]={szName="Hoa HÂng Træng",tbProp={6,1,3117,1,0,0},nCount=5, nExpiredTime=20120401,nRate = 25.0,},
 		},		
 	}	
 
 tbItemOtherAward = {
 	["3Color_Rose"] = {
-		[500] = " π”√500¥Œ»˝…´ª® ¯",
-		[1000] = " π”√1000¥Œ»˝…´ª® ¯",
+		[500] = "SuDung500LanBoHongTuSac",
+		[1000] = "SuDung1000LanBoHongTuSac",
 		},
 	["4Color_Rose"] = {
-		[500] = " π”√500¥Œ»˝…´ª® ¯",
-		[1000] = " π”√1000¥Œ»˝…´ª® ¯",
-		[1500] = " π”√1500¥Œ»˝…´ª® ¯",
+		[500] = "SuDung500LanBoHongTuSac",
+		[1000] = "SuDung1000LanBoHongTuSac",
+		[1500] = "SuDung1500LanBoHongTuSac",
 		},
 	["Corbeil"] = {
 		[100] = {
 			tbAward = {nExp_tl=10000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫100¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu100Lan",
 			},
 		[200] = {
 			tbAward = {nExp_tl=10000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫200¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu200Lan",
 			},
 		[300] = {
 			tbAward = {nExp_tl=10000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫300¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu300Lan",
 			},
 		[400] = {
 			tbAward = {nExp_tl=10000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫400¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu400Lan",
 			},
 		[500] = {
 			tbAward = {nExp_tl=20000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫500¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu500Lan",
 			},
 		[600] = {
 			tbAward = {nExp_tl=20000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫600¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu600Lan",
 			},
 		[700] = {
 			tbAward = {nExp_tl=20000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫700¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu700Lan",
 			},
 		[800] = {
 			tbAward = {nExp_tl=20000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫800¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu800Lan",
 			},
 		[900] = {
 			tbAward = {nExp_tl=20000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫900¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu900Lan",
 			},
 		[1000] = {
 			tbAward = {nExp_tl=30000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1000¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu1000Lan",
 			},
 		[1100] = {
 			tbAward = {nExp_tl=30000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1100¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu1100Lan",
 			},
 		[1200] = {
 			tbAward = {nExp_tl=30000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1200¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu1200Lan",
 			},
 		[1300] = {
 			tbAward = {nExp_tl=40000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1300¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu1300Lan",
 			},
 		[1400] = {
 			tbAward = {nExp_tl=50000000},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1400¥Œ",
+			szLog = "SuDungGioHoaHongVinhCuu1400Lan",
 			},
 		[1500] = {
 			tbAward ={
-					{szName="ΩŒ⁄ø¯±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=14, CallBack = _Message},
-					{szName="ΩŒ⁄“¬±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={6,0,0,0,0,0},nRate=14, CallBack = _Message},
-					{szName="ΩŒ⁄–¨±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=14, CallBack = _Message},
-					{szName="ΩŒ⁄—¸¥¯±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=11, CallBack = _Message},
-					{szName="ΩŒ⁄ª§ÕÛ±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=11, CallBack = _Message},
-					{szName="ΩŒ⁄œÓ¡¥±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={1,0,0,0,0,0},nRate=14, CallBack = _Message},
-					{szName="ΩŒ⁄≈Â±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}, nRate=10, CallBack = _Message},
-					{szName="ΩŒ⁄…œΩ‰±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=5, CallBack = _Message},
-					{szName="ΩŒ⁄œ¬Ω‰±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={10,0,0,0,0,0},nRate=5, CallBack = _Message},
-					{szName="ΩŒ⁄Œ‰∆˜±¶œ‰",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={7,0,0,0,0,0},nRate=2, CallBack = _Message},	
+					{szName="B∂o R≠¨ng Kim § Kh´i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=14, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Y",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={6,0,0,0,0,0},nRate=14, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=14, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Y™u ß∏i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=11, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § HÈ Uy”n",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=11, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Hπng Li™n",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={1,0,0,0,0,0},nRate=14, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § BÈi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}, nRate=10, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Th≠Óng GiÌi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=5, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § Hπ GiÌi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={10,0,0,0,0,0},nRate=5, CallBack = _Message},
+					{szName="B∂o R≠¨ng Kim § VÚ Kh›",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={7,0,0,0,0,0},nRate=2, CallBack = _Message},	
 			},
-			szLog = " π”√”¿æ√√µπÂª®¿∫1500¥ŒΩ±¶œ‰O",
+			szLog = "SuDungGioHoaHongVinhCuu1500LanBaoRuongKimO",
 			},	
 		},
 	}	
 	
 -- –“‘À¥¯µƒΩ±¿¯“‘º∞∏≈¬ 	
 tbLuckBeltAward = {
-	[1]={szName="»˝…´√µπÂª® ¯",tbProp={6,1,3121,1,0,0},nExpiredTime=20120401,nBindState = -2,},
-	[2]={szName="Àƒ…´√µπÂª® ¯",tbProp={6,1,3122,1,0,0},nExpiredTime=20120401,nBindState = -2,},
-	[3]={szName="”¿æ√√µπÂª®¿∫",tbProp={6,1,3127,1,0,0},nExpiredTime=20120401,nBindState = -2,},	
+	[1]={szName="B„ HÂng Tam Sæc",tbProp={6,1,3121,1,0,0},nExpiredTime=20120401,nBindState = -2,},
+	[2]={szName="B„ HÂng T¯ Sæc",tbProp={6,1,3122,1,0,0},nExpiredTime=20120401,nBindState = -2,},
+	[3]={szName="Gi· Hoa HÂng V‹nh Cˆu",tbProp={6,1,3127,1,0,0},nExpiredTime=20120401,nBindState = -2,},	
 	}	
 tbLuckBelt = {
-	[1] = {nRate = 45, szActionLog = " π”√–“‘À¥¸¡Ï»°»˝…´ª® ¯",},
-	[2] = {nRate = 45, szActionLog = " π”√–“‘À¥¸¡Ï»°Àƒ…´ª® ¯",},
-	[3] = {nRate = 10, szActionLog = " π”√–“‘À¥¸¡Ï»°”¿æ√√µπÂª®¿∫",},
+	[1] = {nRate = 45, szActionLog = "SuDungTuiMayManNhanBoHongTamSac",},
+	[2] = {nRate = 45, szActionLog = "SuDungTuiMayManNhanBoHongTuSac",},
+	[3] = {nRate = 10, szActionLog = "SuDungTuiMayManNhanGioHoaHongVinhCuu",},
 	}	

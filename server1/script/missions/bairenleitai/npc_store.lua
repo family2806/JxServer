@@ -3,10 +3,10 @@ Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\dailogsys\\g_dialog.lua")
 
 function main()
-	local szTitle = "<npc>ÐèÒªÂòÒ©Âð?"
+	local szTitle = "<npc>Cã cÇn mua thuèc kh«ng?"
 	local tbOpt = {}
-	tinsert(tbOpt, {"½»Ò×", yes})
-	tinsert(tbOpt, {"²»½»Ò×"})
+	tinsert(tbOpt, {"Giao dÞch", yes})
+	tinsert(tbOpt, {"Kh«ng giao dÞch"})
 	CreateNewSayEx(szTitle, tbOpt)
 end;
 

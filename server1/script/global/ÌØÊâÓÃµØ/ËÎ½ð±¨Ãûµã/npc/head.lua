@@ -1,29 +1,29 @@
 
 function talk_yulongtie()
-	Say("Õâ¸öÊÇÓñÁú×¯¸ø¸÷Î»Ó¢ĞÛºÀ½ÜµÄÇëÌû£¬²»ÊÇË­¶¼ÄÜµÃµ½Ëü?",
+	Say("§©y lµ thiÖp mêi mµ Ngäc Long Trang Chñ ®­a cho c¸c anh hïng hµo kiÖt  trong thiªn h¹, kh«ng ph¶i ai còng cã thÓ cã ®­îc nã.",
 		2,
-		"ÎÒÊ¹ÓÃÔÀÍõ»êÖ®Ê¯À´»»È¡/get_yulongtie",
-		"ÈÃÎÒÏëÏë/Cancel")
+		"Ta sö dông Nh¹c V­¬ng Hån Th¹ch ®Ó ®æi/get_yulongtie",
+		"§Ó ta suy nghÜ l¹i/Cancel")
 end
 
 -- ÓÃÔÀÍõ»êÖ®Ê¯»»È¡îÚÁúÓ¢ĞÛÌû
 function get_yulongtie()
 	if (CalcEquiproomItemCount(4, 507, 1, -1) < 1) then
-		Say("ÄãÃ»ÓĞÔÀÍõ»êÖ®Ê¯£¬¼ÌĞøÈ¥Á·Ï°£¬È»ºóÀ´ÕâÀï?")
+		Say("Ng­¬i kh«ng cã Nh¹c V­¬ng Hån Th¹ch, tiÕp tôc ®i luyÖn thªm råi h·y ®Õn nhĞ.")
 	else
-		Say("ÄãÈ·¶¨Ê¹ÓÃÔÀÍõ»êÖ®Ê¯¶Ò»»ÓñÁúÓ¢ĞÛÌû½øÈë½£Ú£ÃÔ¹¬Âğ?",
+		Say("Ng­¬i x¸c ®Şnh dïng Nh¹c V­¬ng Hån Th¹ch ®Ó ®æi lÊy Ngäc Long anh Hïng ThiÕp ®Ó ®i vµo KiÕm Gia Mª Cung chø?",
 			2,
-			"Ïë/exchange_yulongtie",
-			"ÈÃÎÒÏëÏë/Cancel")	
+			"Muèn/exchange_yulongtie",
+			"§Ó ta suy nghÜ l¹i/Cancel")	
 	end
 end
 
 function exchange_yulongtie()
 	if (CalcFreeItemCellCount() == 0) then
-		Say("×°±¸¿ÕÎ»²»×ã®ñ.")
+		Say("Chç trèng hµnh trang kh«ng ®ñ.")
 	elseif (CalcEquiproomItemCount(4, 507, 1, -1) >= 1 and 
 		ConsumeEquiproomItem(1, 4, 507, 1, -1) == 1) then
 		AddItem(6, 1, 2622, 1, 0, 0)
-		Msg2Player("Äã»ñµÃÒ»¸öÓñÁúÓ¢ĞÛÌû.")
+		Msg2Player("Ng­¬i nhËn ®­îc 1 Ngäc Long Anh Hïng ThiÕp.")
 	end
 end

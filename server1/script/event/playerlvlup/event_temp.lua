@@ -55,6 +55,6 @@ function OnLevelUp_Temp()
 	if (mark == 0) then
 		return
 	end
-	Msg2Player("×£ºØÄãÔÚÕâ´Î¡®Á·¼¶»î¶¯¡¯ÖĞ³É¹¦Íê³ÉÈÎÎñ£¬Í¬Ê±Ñ§»á90¼¶¼¼ÄÜ")
+	Msg2Player("Chóc mõng b¹n lÇn nµy t¹i 'Ho¹t ®éng luyÖn cÊp' thµnh c«ng hoµn thµnh nhiÖm vô, ®ång thêi häc ®­îc kü n¨ng cÊp 90")
 	return
 end

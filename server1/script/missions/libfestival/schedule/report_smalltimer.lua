@@ -16,7 +16,7 @@ function OnTimer()
 		if (nTime > 0) then
 			local OldSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(CO_MAPID[2]);
-			Msg2MSAll(CO_MISSIONID, "活动还有<color=yellow>"..nTime.."<color>分钟结束!");
+			Msg2MSAll(CO_MISSIONID, "Ho箃 ng v蒼 c遪<color=yellow>"..nTime.."<color>ph髏 k誸 th骳!");
 			SubWorld = OldSubWorld;
 		end;
 	end;

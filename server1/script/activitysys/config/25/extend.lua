@@ -8,7 +8,7 @@ Include("\\script\\activitysys\\playerfunlib.lua")
 function pActivity:CheckCondition()
 	local nTeamSize = GetTeamSize()
 	if nTeamSize ~= 3 then
-		Msg2Player("ÐèÒª3ÈË×é¶Ó²ÅÄÜ²Î¼Ó")
+		Msg2Player("CÇn ph¶i cã 3 ng­êi tæ ®éi víi nhau míi cã thÓ tham gia")
 		return
 	end
 	local tbMarkList = 
@@ -27,7 +27,7 @@ function pActivity:CheckCondition()
 			nSum = nSum + nP
 			nMul = nMul * nP
 		else
-			Msg2Player("²Î¼Ó¶ÓÎé²»·ûºÏÌõ¼þ£¬Äã²»ÄÜÔÒµ°") 
+			Msg2Player("§éi ngò tham gia kh«ng phï hîp ®iÒu kiÖn, b¹n kh«ng thÓ ®Ëp trøng") 
 			return
 		end
 	end
@@ -41,7 +41,7 @@ function pActivity:CheckCondition()
 		end
 	end
 	if nFlag == 0 then
-		Msg2Player("²Î¼Ó¶ÓÎé²»·ûºÏÌõ¼þ£¬Äã²»ÄÜÔÒµ°")
+		Msg2Player("§éi ngò tham gia kh«ng phï hîp ®iÒu kiÖn, b¹n kh«ng thÓ ®Ëp trøng")
 		return
 	end 
 	return 1
@@ -51,7 +51,7 @@ end
 function pActivity:AddYuanDanDialogNpc()
 	local tbNpc = {
 	[1] = {
-			szName = "Ôªµ©", 
+			szName = "Nguyªn §¶n", 
 			nLevel = 95,
 			nMapId = 37,
 			nPosX = 1760 * 32,
@@ -61,7 +61,7 @@ function pActivity:AddYuanDanDialogNpc()
 			szScriptPath = "\\script\\activitysys\\npcdailog.lua"
 		},
 	[2] = {
-			szName = "Ôªµ©", 
+			szName = "Nguyªn §¶n", 
 			nLevel = 95,
 			nMapId = 37,
 			nPosX = 1658 * 32,
@@ -71,7 +71,7 @@ function pActivity:AddYuanDanDialogNpc()
 			szScriptPath = "\\script\\activitysys\\npcdailog.lua"
 		},
 	[3] = {
-			szName = "Ôªµ©", 
+			szName = "Nguyªn §¶n", 
 			nLevel = 95,
 			nMapId = 37,
 			nPosX = 1704 * 32,
@@ -87,7 +87,7 @@ function pActivity:AddYuanDanDialogNpc()
 end
 
 function pActivity:GetGoldExp(nExp, bFlag, szLogTitle, TaskVarIdx_GetGoldExpSum, nGoldExpLimit)
-	local szFailMsg = "»ñµÃ¾­ÑéÒÑ¹º,²»ÄÜÔÙ»ñµÃ¸ü¶à¾­ÑéÁË"
+	local szFailMsg = "NhËn kinh nghiÖm ®· ®ñ, kh«ng thÓ nhËn thªm kinh nghiÖm nhiÒu h¬n"
 	local szOption = "<"
 	if self:CheckTask(TaskVarIdx_GetGoldExpSum, nGoldExpLimit, szFailMsg, szOption) then
 		self:AddTask(TaskVarIdx_GetGoldExpSum, nExp/100000)

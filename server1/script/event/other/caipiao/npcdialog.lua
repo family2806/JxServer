@@ -7,18 +7,18 @@ function main()
 	local nDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if (nDate >= 201006190000 and nDate <= 201007310000) then
 		local tbOpt = {}
-		local szTitle = "<#>".."ÇëÎÊ´óÏÀÒªÊ²Ã´";
-		tinsert(tbOpt, "ÎÒÒªÁì½± Poster/GetDialogPoster")
-		tinsert(tbOpt, "Àë¿ª/OnCancel")
+		local szTitle = "<#>".."Xin hái §¹i hiÖp cÇn g×?";
+		tinsert(tbOpt, "Ta muèn nhËn phÇn th­ëng Poster/GetDialogPoster")
+		tinsert(tbOpt, "Tho¸t/OnCancel")
 		Say(szTitle, getn(tbOpt), tbOpt)
 	end
 
 	
 	if 201002040000 > nDate or nDate > 201003220000 then
-		--return Talk(1, "", "»î¶¯½áÊøÁË.")	
+		--return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")	
 	else
 	
-		local szTitle = "<npc>".."·¢²ÆÁË£¡ÕæĞÒÔË£¬¿´À´¸÷Î»ºÍÕâ¸öÓÎÏ·ºÜÓĞÔµÄØ!";
+		local szTitle = "<npc>".."Ph¸t tµi råi! ThËt lµ may m¾n, xem ra c¸c h¹ rÊt cã duyªn víi trß nµy!";
 		
 		
 		
@@ -30,24 +30,24 @@ function main()
 			
 			szKey = nil
 		elseif mod(nWeekDay, 10) == 0 then
-			szKey = "Ã¿ÖÜ½±Àø"
+			szKey = "PhÇn th­ëng mçi tuÇn"
 			szKey2 = szKey
 		else
-			szKey = "Õâ²ã"
-			szKey2 = "Õâ²ã½±Àø"
+			szKey = "®ît nµy"
+			szKey2 = "PhÇn th­ëng ®ît nµy"
 		end
 		
 		
 		
 		local tbOpt = {}
 		if szKey then
-			local szOpt1 = format("¿´ÖĞ½±ºÅÂë %s", szKey)
-			local szOpt2 = format("µÃµ½ %s", szKey2)	
+			local szOpt1 = format("Xem sè tróng th­ëng %s", szKey)
+			local szOpt2 = format("NhËn %s", szKey2)	
 			tinsert(tbOpt, {szOpt1, tbCaiPiao.QueryResult,{tbCaiPiao, nWeekDay}})
 			tinsert(tbOpt, {szOpt2, tbCaiPiao.ApplyGetAward,{tbCaiPiao, nWeekDay}})
-			tinsert(tbOpt, {"ÎÒÖ»ÊÇÂ·¹ı"})
+			tinsert(tbOpt, {"Ta chØ tiÖn ®­êng ghĞ ch¬i"})
 		else
-			tinsert(tbOpt, {"ÏÖÔÚ»¹Ã»ÓĞ½á¹û£¬ÓĞ½á¹ûÖ®ºóÔÙÀ´°É£¡"})
+			tinsert(tbOpt, {"HiÖn t¹i vÉn ch­a cã kÕt qu¶, ®îi cã kÕt qu¶ råi l¹i ®Õn nhĞ!"})
 		end
 			
 		

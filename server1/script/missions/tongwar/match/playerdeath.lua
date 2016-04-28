@@ -35,16 +35,16 @@ function OnDeath(Launcher)
 				if (deathcamp == 1) then
 					bt_addtotalpoint(tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
 					but_addmissionpoint(tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
-					Msg2Player("<color=yellow> Äã»ñµÃÁ¬Õ¶»ý·Ö"..tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
+					Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tÝch lòy Liªn tr¶m "..tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
 				else
 					bt_addtotalpoint(tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
 					but_addmissionpoint(tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
-					Msg2Player("<color=yellow> Äã»ñµÃÁ¬Õ¶»ý·Ö"..tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
+					Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tÝch lòy Liªn tr¶m "..tongwar_GetTypeBonus(BONUS_MAXSERIESKILL))
 				end
 			end
 			if (mod(tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER), 5) == 0) then
 				tongwar_setdata(TONGWAR_RLTASK_MAXDEATH, GetTask(TONGWAR_RLTASK_MAXDEATH) + 1)
-				Msg2Player("<color=green>ËÀÍöÔö¼Ó´ÎÊý:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."´Î")
+				Msg2Player("<color=green>Sè lÇn tö vong t¨ng lªn:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."lÇn")
 			end
 		end
 			
@@ -77,11 +77,11 @@ function OnDeath(Launcher)
 			BT_BroadSelf();
 		
 			if (GetCurCamp()  == 1) then
-				str  = GetMissionS(MS_S_CITYNAME_S)..launrankname..LaunName.." É±ËÀ"..GetMissionS(MS_S_CITYNAME_J)..rankname..DeathName..", ×ÜPKÎª "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
+				str  = GetMissionS(MS_S_CITYNAME_S)..launrankname..LaunName.." giÕt ®­îc"..GetMissionS(MS_S_CITYNAME_J)..rankname..DeathName..", Tæng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
 			else
-				str  = GetMissionS(MS_S_CITYNAME_J)..launrankname..LaunName.." É±ËÀ"..GetMissionS(MS_S_CITYNAME_S)..rankname..DeathName..", ×ÜPKÎª"..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
+				str  = GetMissionS(MS_S_CITYNAME_J)..launrankname..LaunName.." giÕt ®­îc"..GetMissionS(MS_S_CITYNAME_S)..rankname..DeathName..", Tæng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
 			end
-			Msg2Player("<color=pink> ¹§Ï²£¬ÄãÏÂµÃ:"..rankname..DeathName..", ×ÜPKÎª"..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER));
+			Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", Tæng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER));
 			Msg2MSAll(MISSIONID, str);
 		end
 		PlayerIndex = OrgPlayer;
@@ -90,7 +90,7 @@ function OnDeath(Launcher)
 	tongwar_setdata(TONGWAR_RLTASK_NDEATH, tongwar_getdata(TONGWAR_RLTASK_NDEATH) + 1)
 	tongwar_setdata(TONGWAR_RLTASK_SERIESKILL, 0)
 	SetTask(TV_SERIESKILL_REALY,0)
-	Msg2Player("<color=green>ËÀÍö´ÎÊý»¹Ê£:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."´Î")
+	Msg2Player("<color=green>Sè lÇn tö vong cßn l¹i:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."lÇn")
 	BT_SortLadder();
 	BT_BroadSelf();
 	sf_onplayerleave()

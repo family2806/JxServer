@@ -5,30 +5,30 @@ Include("\\script\\lib\\awardtemplet.lua")
 
 function main(nItemIndex)
 --	if GetItemParam(nItemIndex, 1) == 0 or GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
---		Talk(1,"", "ÎïÆ·ÒÑ¹ıÆÚ")
+--		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 --		return 0
 --	end
 	
 	if GetLevel() < 50 then
-		Talk(1,"", "µÈ¼¶²»×ã50£¬Çë¶àÁ·Ï°")
+		Talk(1,"", "§¼ng cÊp kh«ng ®ñ 50, h·y rÌn luyÖn thªm")
 		return 1
 	end
 	
 	IpResetTask();
 	
 	if GetTask(TASKID_GREEN_USE_TIMES) >= 6 then
-		Talk(1,"", "Ã¿¸öÔÂÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ·×î¶à6´Î")
+		Talk(1,"", "Mçi ngµy chØ cã thÓ sö dông vËt phÈm  tèi ®a 6 lÇn")
 		return 1
 	end
 		
 	if CalcFreeItemCellCount() < 2 then
-		Talk(1,"", format("×°±¸¿ÕÎ»²»×ã %d ¿ÕÎ»£¬ÇëÔÙ°²ÅÅÒ»ÏÂ.", 2))
+		Talk(1,"", format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 2))
 		return 1
 	end
 	
 --	local nTotalExp = GetTask(TASKID_CUR_GREEN_EXP)*GREEN_ITEM_EXP
 --	if nTotalExp >= MAX_GREEN_EXP then
---		Talk(1,"","ÄãÒÑ´ïµ½3000000000¾­ÑéÖµÉÏÏŞ, ²»ÄÜ¼ÌĞøÊ¹ÓÃ.")
+--		Talk(1,"","B¹n ®· ®¹t ®Õn giíi h¹n 3000000000 ®iÓm kinh nghiÖm, kh«ng thÓ tiÕp tôc sö dông.")
 --		return 1
 --	end
 		
@@ -40,10 +40,10 @@ function main(nItemIndex)
 	SetTask(TASKID_CUR_GREEN_EXP, GetTask(TASKID_CUR_GREEN_EXP) + 1)
 	SetTask(TASKID_GREEN_USE_TIMES, GetTask(TASKID_GREEN_USE_TIMES) + 1)
 	--AddOwnExp(nAddExp)
-	--Msg2Player("Äã»ñµÃ"..nAddExp.." ¾­ÑéÖµ.")
-	tbExpAward = {szName = "§i¾­ÑéÖµ", nExp_tl = nAddExp}
+	--Msg2Player("B¹n nhËn ®­îc "..nAddExp.." ®iÓm kinh nghiÖm.")
+	tbExpAward = {szName = "§iÓm kinh nghiÖm", nExp_tl = nAddExp}
 	tbAwardTemplet:GiveAwardByList(tbExpAward, "Use Lam Bao Hap");
 	
-	--WriteLog(format("[IPBonus]\t%s\t%s\t%s","Ê¹ÓÃÀ¼±¦ºĞ",GetAccount(),GetName()))		
+	--WriteLog(format("[IPBonus]\t%s\t%s\t%s","sö dông Lam B¶o H¹p",GetAccount(),GetName()))		
 	return 0;
 end

@@ -16,15 +16,15 @@ Uworld1012 = nt_getTask(1012)
 	elseif ( Uworld1054 == 130 ) then
 		Uworld1012 = Uworld1012 + 10
 		nt_setTask(1012,Uworld1012)
-		Talk(1,"","²»ÊÇÄãÄÃµÄÂğ?")
+		Talk(1,"","Kh«ng ph¶i ng­¬i lÊy sao?")
 	end
 end
 
 function zhengbranch2()
 	AddOwnExp(30000)
 	AddExp_Skill_Extend(30000)
-	Msg2Player("ÄãÒÑ¾­ÄÃµ½±¦½££¬¿ÉÒÔ»ØÀ´½»¸øÂæÇåÇï.")
-	Talk(1,"","±¦½£ÔÚÕâ£¬ÄãÄÃ°É.")
+	Msg2Player("B¹n ®· lÊy ®­îc B¶o kiÕm, cã thÓ quay vÒ giao cho L¹c Thanh Thu.")
+	Talk(1,"","B¶o kiÕm ë ®©y, ng­¬i lÊy ®i.")
 end
 
 

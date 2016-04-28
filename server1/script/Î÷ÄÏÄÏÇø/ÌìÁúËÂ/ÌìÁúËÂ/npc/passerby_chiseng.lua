@@ -8,6 +8,6 @@ function main()
 	if ( Uworld1050 ~= 0 ) then
 		branch_chiseng()
 	else
-		Talk(1,"","×î½ü¼¸Äê£¬ÆäËûµØ·½À´µÄµÜ×ÓÔ½À´Ô½ÉÙ£¬·½ÕÉ²»µ£ĞÄËÂÖĞµÄÊÂ£¬Ö»¾²ĞŞ¡£µÜ×Ó¸ö¸ö¶¼»ÅÃ¦£¬Ä¿Ç°ÒÑ¾­ÏÂÉ½ÕĞÄ¼ĞÂµÄµÜ×Ó¡£Ê©Ö÷µÈÒ»¶ÎÊ±¼äºóÔÙÀ´°É!");
+		Talk(1,"","MÊy n¨m gÇn ®©y ®Ö tö c¸c n¬i kh¸c ®Õn ngµy mét İt, ph­¬ng tr­îng th× kh«ng lo l¾ng viÖc trong tù, chØ lo tŞnh tu. §Ö tö ai còng hoang mang, hiÖn ®· xuèng nói chiªu mé c¸c ®Ö tö míi. Thİ chñ mét thêi gian sau h·y tíi ®i!");
 	end
 end

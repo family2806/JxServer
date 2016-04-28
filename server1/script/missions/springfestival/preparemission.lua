@@ -1,4 +1,4 @@
 Include([[\script\missions\springfestival\head.lua]]);
 Include([[\script\missions\libfestival\preparemission.lua]]);
 
-PRE_STRGLAOBALNEWS = "Çı¸Ï30ËêÈË»î¶¯¿ªÊ¼ÁË£¬´ó¼Ò¿ÉÒÔµ½ÑÃÃÅ²îÒÛ´¦±¨Ãû²Î¼Ó.";
+PRE_STRGLAOBALNEWS = "Ho¹t ®éng '§uæi ¤ng Ba M­¬i' ®· b¾t ®Çu råi, mäi ng­êi cã thÓ ®Õn Nha m«n sai dŞch t¹i c¸c thµnh thŞ ®Ó b¸o danh tham gia.";

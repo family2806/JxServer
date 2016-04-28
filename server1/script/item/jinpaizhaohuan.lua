@@ -34,7 +34,7 @@ function main( nItemIdx )
 	
 	--tinhpn 20100803: Patch ReQuest
 	if %checkOnlyUseInMap() ~= 1 then
-		Msg2Player("²»ÄÜÔÚÎÒÕâÊ¹ÓÃÎïÆ·.")
+		Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
 		return 1
 	end
 	
@@ -44,11 +44,11 @@ function main( nItemIdx )
 	end
 	
 	if( IsCharged() == 0) then
-		Say("ÕæÒÅº¶£¬Ö»ÓĞÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i cÊp 90 trë lªn míi cã thÓ sö dông.",0);
 		return 1; 
 	end
 	if( GetLevel() <90 ) then
-		Say("ÕæÒÅº¶£¬Ö»ÓĞÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i cÊp 90 trë lªn míi cã thÓ sö dông.",0);
 		return 1;
 	end
 	nDate = tonumber(GetLocalDate("%d"));
@@ -61,7 +61,7 @@ function main( nItemIdx )
 			return 1;
 		end	
 	else
-		Say("½ñÌìÒÑÊ¹ÓÃ1¸ö½ğÅÆÁË£¡µÈÃ÷Ìì²ÅÄÜ¼ÌĞøÊ¹ÓÃ!",0);
+		Say("H«m nay ®· sö dông 1 Kim Bµi råi! H·y ®îi ngµy mai míi cã thÓ tiÕp tôc sö dông!",0);
 		return 1;
 	end
 	

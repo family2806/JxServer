@@ -49,7 +49,7 @@ function main()	--¶Ô»°Èë¿Ú
 			local nCurTime = GetCurServerTime();
 			local nmyTime = GetNpcParam(nNpcIdx, PRM_ROSETREE_TIME);
 			if (nmyTime > nCurTime) then
-				Msg2Player("ÕýÔÚ²ÉÕªÃµ¹å»¨£¬ÇëµÈÒ»ÏÂ!");
+				Msg2Player("§ang h¸i hoa hång, xin ®îi trong gi©y l¸t!");
 				return 0;
 			end;
 --			if (GetSkillState(765) == 1) then		--ÕýÔÚ²É»¨×´Ì¬
@@ -61,17 +61,17 @@ function main()	--¶Ô»°Èë¿Ú
 					
 					local szmsg = "";
 					if (pure > 0) then
-						szmsg = format("<color=yellow>%d ®ãa<color> ÌØ±ðºìÃµ¹å",pure);
+						szmsg = format("<color=yellow>%d ®ãa<color> hoa hång ®á ®Æc biÖt",pure);
 					end;
 					if (norm > 0) then
-						szmsg = format("<color=yellow>%d ®ãa<color> Ò»°ãºìÃµ¹å %s",norm, szmsg);
+						szmsg = format("<color=yellow>%d ®ãa<color> hoa hång ®á b×nh th­êng %s",norm, szmsg);
 					end;
 					if (bud > 0) then
-						szmsg = format("<color=yellow>%d ®ãa<color> Ãµ¹å»¨¿ª%s",bud, szmsg);
+						szmsg = format("<color=yellow>%d ®ãa<color> hoa hång ®á chím në %s",bud, szmsg);
 					end;
 					
 					szmsg = format(DEC_ROSETREE_EVENT[5], szmsg);
-					Say(szmsg, 2, "²ÉÕªÃµ¹å»¨/#sure2pickrose("..nNpcIdx..")", "µÈÏÂ»ØÀ´/OnCancel");
+					Say(szmsg, 2, "H¸i hoa hång/#sure2pickrose("..nNpcIdx..")", "L¸t n÷a quay l¹i /OnCancel");
 				elseif (nmyTime <= nCurTime) then
 					local nItem = 0;
 					if (pure > 0) then
@@ -92,7 +92,7 @@ function main()	--¶Ô»°Èë¿Ú
 						return 0;
 					end;
 					
-					Msg2Player("ÄãµÃµ½Ò»¶ä»¨"..GetItemName(nItem));
+					Msg2Player("B¹n cã ®­îc mét ®ãa hång"..GetItemName(nItem));
 					SetNpcParam(nNpcIdx, PRM_ROSETREE_TIME, 0);
 				end;
 --			end;
@@ -100,10 +100,10 @@ function main()	--¶Ô»°Èë¿Ú
 		else									--³É³¤½×¶Î
 			if (task >= 1 and task <= 4) then		--ÓÐÒ»¸öÈÎÎñ
 				if (nstate == 0) then	--»¹Ã»½Ó
-					Say(DEC_ROSETREE_EVENT[task], 1, "ÎÒÖªµÀÁË/#sure2rosetaketask("..nNpcIdx..")");
+					Say(DEC_ROSETREE_EVENT[task], 1, "Ta biÕt råi/#sure2rosetaketask("..nNpcIdx..")");
 				elseif (nstate == 1) then	--½ÓÁË£¬Ã»×ö
 					local szOpp = format("%s/#sure2rosedotask(%d)",DEC_ROSETREE_STASK[task], nNpcIdx);
-					Say("", 2, szOpp, "ÇëµÈÒ»ÏÂ/OnCancel");
+					Say("", 2, szOpp, "H·y ®îi mét chót/OnCancel");
 				elseif (nstate == 2) then	--×öÍêÁË
 					Talk(1, "", DEC_ROSETREE_OTHER[random(getn(DEC_ROSETREE_OTHER))]);
 				end;
@@ -124,10 +124,10 @@ function sure2pickrose(nNpcIdx)
 	if (nparam4 > 0) then
 		--AddSkillState(765, 1, 1, 3*18);--SkillState(509)
 		SetNpcParam(nNpcIdx, PRM_ROSETREE_TIME, GetCurServerTime()+3);
-		Msg2Player("µÈ´ý3Ãëºó²ÅÄÜ²ÉÕªÃµ¹å");
+		Msg2Player("§îi 3 gi©y sau míi cã thÓ h¸i hoa hång");
 	else
 		Talk(1, "", DEC_ROSETREE_OTHER[random(getn(DEC_ROSETREE_OTHER))]);
-		Msg2Player("ËùÒÔÃµ¹åÒÑ¾­²ÉÕªÍê");
+		Msg2Player("TÊt c¶ hoa hång ®· ®­îc h¸i hÕt");
 	end;
 end;
 
@@ -142,7 +142,7 @@ function sure2rosetaketask(nNpcIdx)
 		AddNpcSkillState(nNpcIdx, 662, 1,1, 0);	--Çå Ì¾ºÅ
 		AddNpcSkillState(nNpcIdx, 765, 1,1, 30*18);	--¼Ó ÎÊºÅ
 		SetNpcParam(nNpcIdx, PRM_ROSETREE_TIME, GetCurServerTime()+TB_ROSETREE_TASKTIME[task]);
-		Msg2Player(format("µÈ %sÃëºó²ÅÄÜ%s.", TB_ROSETREE_TASKTIME[task], DEC_ROSETREE_STASK[task]));
+		Msg2Player(format("§îi %s gi©y sau míi cã thÓ %s.", TB_ROSETREE_TASKTIME[task], DEC_ROSETREE_STASK[task]));
 	end;
 end;
 
@@ -161,9 +161,9 @@ function sure2rosedotask(nNpcIdx)
 			SetNpcParam(nNpcIdx, PRM_ROSETREE_EVENT, SetByte(GetNpcParam(nNpcIdx, PRM_ROSETREE_EVENT), 4, 0));
 			SetNpcParam(nNpcIdx, PRM_ROSETREE_TIME, 0);
 			AddNpcSkillState(nNpcIdx, 765,1, 1, 0);	--Çå ÎÊºÅ
-			Msg2Player("¶àÐ»"..DEC_ROSETREE_STASK[task]);
+			Msg2Player("Xin ®a t¹"..DEC_ROSETREE_STASK[task]);
 		elseif (GetSex() ~= nsex) then
-			local szmsg = format("Ö»ÓÐ%s m²ÅÄÜ?%s.", DEC_ROSETREE_SZSEX[nsex], DEC_ROSETREE_STASK[task]);
+			local szmsg = format("ChØ cã %s míi cã thÓ %s ®­îc.", DEC_ROSETREE_SZSEX[nsex], DEC_ROSETREE_STASK[task]);
 			Say(szmsg, 0);
 		end;
 	end;
@@ -183,8 +183,8 @@ function calcrosetreepoint(nNpcIdx, nvalue)
 		npoint = 5;
 	end;
 	local ncurpoint = GetNpcParam(nNpcIdx, PRM_ROSETREE_POINT);
-	Msg2Team("§i´Ë´ÎµãÊý"..npoint);
-	Msg2Team("×Ü·ÖÊý»ñµÃ"..(ncurpoint+npoint));
+	Msg2Team("§iÓm sè lÇn nµy"..npoint);
+	Msg2Team("Tæng ®iÓm nhËn ®­îc"..(ncurpoint+npoint));
 	SetNpcParam(nNpcIdx, PRM_ROSETREE_POINT, ncurpoint + npoint);
 end;
 

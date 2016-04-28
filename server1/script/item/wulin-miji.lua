@@ -7,10 +7,10 @@
 function main(sel) 
 	times = mod(GetTask(80),16)
 	str={
-		"ÄãÄÃ×Å¡¶ÎäÁÖÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÊ²Ã´Ò²Ã»ÓĞÁìÎòµ½¡£",
-		"ÄãÄÃ×Å¡¶ÎäÁÖÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÁìÎòÉõÉÙ£¬Ã»Ê²Ã´Ğ§¹û¡£",
-		"ÄãÄÃ×Å¡¶ÎäÁÖÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹û»ñµÃÁËÒ»Ğ©¹ØÓÚÎä¹¦µÄĞÄµÃ¡£",
-		"ÄãÒÑ¾­°Ñ¡¶ÎäÁÖÃØ¼®¡·×êÑĞÍ¸³¹£¬´ÓÖĞÔÙÒ²µÃ²»µ½ÈÎºÎĞÄµÃ¡£"
+		"B¹n cÇm quyÓn Vâ L©m MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng kh«ng lÜnh ngé ®­îc g×. ",
+		"B¹n cÇm quyÓn Vâ L©m MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé ®­îc chót İt. ",
+		"B¹n cÇm quyÓn Vâ L©m MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng thu ®­îc mét vµi ®iÒu t©m ®¾c liªn quan ®Õn vâ c«ng ",
+		"B¹n ®· nghiÒn ngÉm kü quyÓn Vâ L©m MËt TŞch, nh­ng kh«ng thu ®­îc ®iÒu g× t©m ®¾c "
 		}
 	if(times >14) then                -- Ê¹ÓÃ´ÎÊıÒÑ´ïµ½ÉÏÏŞ
 		Msg2Player(str[4])

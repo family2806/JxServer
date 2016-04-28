@@ -29,7 +29,7 @@ function wlls_leveupcheck()
 	if (n_level == 1) then	--ĞÂĞãÕ½¶Ó³ÉÔ±£¬ÅĞ¶ÏÊÇ·ñÔ½¼¶
 		if (GetLevel() >= WLLS_LEVEL_SENIOR) then	--ÒÑ¾­Ô½¼¶
 			wlls_set_over(str_lgname, str_plname)
-			Msg2Player("Ä¿Ç°µÈ¼¶ÒÑ³¬¹ı²Î¼ÓÒªÇó<color=yellow>ÎäÁÖĞÂĞãÁªÈü<color> µ«ÊÇÄã»¹¿ÉÒÔ²Î¼Ó<color=yellow>´Ë´ÎÎäÁÖĞÂĞãÁªÈü<color> . ÏÂ¼¾Äã½«²»ÄÜ²Î¼Ó<color=yellow>ÎäÁÖ´ó»á<color>.")
+			Msg2Player("§¼ng cÊp cña b¹n ®· cao h¬n 119, kh«ng thÓ tham gia <color=yellow>vâ l©m liªn ®Êu kiÖt xuÊt<color> nh­ng b¹n cã thÓ tham gia <color=yellow>vâ l©m liªn ®Êu<color> .")
 			return
 		end
 	end
@@ -38,7 +38,7 @@ function wlls_leveupcheck()
 	if (n_mytype == 3 and n_job == 0) then	--Ê¦Í½ÁªÈü£¬ÅĞ¶ÏÍ½µÜÊÇ·ñÔ½¼¶
 		if (GetLevel() >= 90) then	--ÒÑ¾­Ô½¼¶
 			wlls_set_over(str_lgname, str_plname)
-			Msg2Player("ÄãµÄµÈ¼¶ÒÑ³¬¹ı±ÈÈü¹æ¶¨<color=yellow>Ê¦Í½Ë«¶·<color>µ«ÊÇÄã»¹¿ÉÒÔ²Î¼Ó±ÈÈü<color=yellow>ÈıµÈ½±<color>. Ê×ÏÈĞèÒª½¨Á¢ĞÂ¶ÓÎé")
+			Msg2Player("§¼ng cÊp qu¸ cao so víi quy ®Şnh <color=yellow>song ®Êu s­ ®å<color> cã thÓ tham gia h×nh thøc kh¸c <color=yellow>tam ®Êu<color>. Tr­íc tiªn ph¶i lËp ®éi")
 			return
 		end
 	end

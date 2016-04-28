@@ -3,12 +3,12 @@ Include("\\script\\lib\\basic.lua");
 local nOpenLevel = 7
 function platina_main()
 	local aryDescribe = {
-	"<dec><npc>Ö®Ç°£¬ÎÒÔø°ïÖú¹Ù¸®ÓÃ<color=yellow>²¹ÌìÊ¯ËéÆ¬<color>ÖÆÔì³öÉñ±øÀûÆ÷.Èç¹û<sex>ÕÒµ½<color=yellow>ÕâĞ©²¹ÌìÊ¯ËéÆ¬<color> , ÎÒ±ã¿ÉÒÔ°ïÄã´òÔì°×½ğ×°±¸, Õâ¸öÎïÆ·Ò»¶¨²»ÄÜÉÙ.",
-	"ÎÒÏëÉı¼¶ÕâÌ×°×½ğ×°±¸/upgrade_paltinaequip",
-	"ÎÒÏë°Ñ»Æ½ğ×°±¸´òÔì³É°×½ğ×°±¸/upgrade_goldformplatina",
-	"ÊÕ¼¯²¹ÌìÊ¯ËéÆ¬µÄ·½·¨/about_aerolite",
-	"ÊÇÊ²Ã´°×½ğ×°±¸/about_platina",
-	"ÈÃÎÒ×ĞÏ¸ÏëÏë¿´/no",
+	"<dec><npc>Tr­íc kia, ta tõng gióp quan phñ dïng c¸c <color=yellow>m¶nh Bæ Thiªn Th¹ch<color> ®Ó chÕ t¹o ra thÇn binh lîi khİ. NÕu nh­ <sex>cã thÓ t×m ra<color=yellow>m¶nh Bæ Thiªn Th¹ch<color> nµy, ta cã thÓ gióp ng­¬i chÕ t¹o trang bŞ B¹ch Kim, nhÊt ®Şnh kh«ng thÓ thiÕu vËt liÖu nµy.",
+	"Ta muèn th¨ng cÊp cho trang bŞ B¹ch Kim nµy/upgrade_paltinaequip",
+	"Ta muèn chÕ t¹o trang bŞ Hoµng Kim thµnh trang bŞ B¹ch Kim/upgrade_goldformplatina",
+	"C¸ch thu thËp m¶nh Bæ Thiªn Th¹ch/about_aerolite",
+	"Trang bŞ B¹ch Kim lµ g×/about_platina",
+	"§Ó ta suy nghÜ kü l¹i xem/no",
 	};
 	CreateTaskSay(aryDescribe);
 end;
@@ -16,19 +16,19 @@ end;
 ----½«»Æ½ğ×°±¸´òÔì³É°×½ğ×°±¸
 function upgrade_goldformplatina()
 	CreateTaskSay({
-		"<dec><npc>Ò»°ãµÄ»Æ½ğ×°±¸Éı¼¶³É°×½ğ×°±¸ËùĞè²ÄÁÏÎª: À×Ôóæm£¬ÒÔ¼°1000ÍòÒøÁ½.Èç¹ûÊÇÔö¼ÓËùÓĞÎä¹¦µÈ¼¶µÄ»Æ½ğ×°±¸£¬ÓÉÓÚÆäÌØÊâµÄ²ÄÁÏ£¬ÒªÖØĞÂÁ¶»¯ĞèÒª¾«Á¶µÄÂ¯»ğ¶øÌıËµÌìÏÂÖ»ÓĞ»ìãç¶¦²ÅÄÜ³ĞÊÜÈç´Ë¸ßÎÂ.<enter>Èç¹ûÄãÏëÒªÖªµÀÉı¼¶ºóµÄ°×½ğ×°±¸µÄÊôĞÔÈçºÎ£¬Ö»Òª°Ñ»Æ½ğ×°±¸¸øÎÒ¿´¿´¾ÍĞĞ!",
-		"ÎÒÏëÖªµÀÕâ¼ş×°±¸´òÔìÎª°×½ğ×°±¸ºóµÄÊôĞÔ./want_upgoldeq_preview",
-		"ÄÜ°ïÎÒ°ÑÕâ¼ş×°±¸´òÔìÎª°×½ğ×°±¸Âğ?/want_upgoldeq",
-		"ÎÒÔÙÏëÏë¿´/no"
+		"<dec><npc>Th«ng th­êng trang bŞ hoµng kim n©ng cÊp thµnh b¹ch kim cÇn nh÷ng nguyªn liÖu: L«i Tr¹ch Chïy vµ 1000 v¹n ng©n l­îng. NÕu nh­ muèn gia t¨ng tÊt c¶ vâ c«ng víi ®¼ng cÊp trang bŞ hoµng kim, do v× ®©y lµ nguyªn liÖu ®Æc biÖt, muèn luyÖn thµnh cÇn ph¶i cã  mét lß ®Æc biÖt. Nghe ®ån thiªn h¹ chØ cã Hçn §én §Ønh míi cã thÓ chŞu nhiÖt ®é cao ®­îc.<enter>NÕu nh­ muèn biÕt trang bŞ n©ng cÊp  thµnh b¹ch kim cã thuéc tİnh nh­ thÕ nµo cø viÖc ®­a trang bŞ hoµng kim cho ta th× sÏ biÕt ngay!",
+		"Ta muèn xem thuéc tİnh cña trang bŞ B¹ch Kim sau khi n©ng cÊp tõ trang bŞ Hoµng Kim nµy./want_upgoldeq_preview",
+		"Cã thÓ gióp ta chÕ t¹o trang bŞ nµy thµnh trang bŞ B¹ch Kim ®­îc kh«ng?/want_upgoldeq",
+		"ta nghÜ l¹i xem /no"
 	});
 end;
 
 function want_upgoldeq_preview()
-	GiveItemUI("¿´¹ı´òÔì°×½ğ×°±¸", "Òª°Ñ»Æ½ğ×°±¸·ÅÈëÎïÆ·ºĞÖĞ.", "do_upgoldeq_preview", "no",1);
+	GiveItemUI("Xem qua chÕ t¹o trang bŞ B¹ch Kim", "§Æt trang bŞ Hoµng Kim muèn chÕ t¹o vµo hép ®ùng vËt phÈm.", "do_upgoldeq_preview", "no",1);
 end;
 
 function want_upgoldeq()
-	GiveItemUI("´òÔì°×½ğ×°±¸", "ÒªÉı¼¶ÈÎºÎµÄ»Æ½ğ×°±¸¾ÍÖ»ĞèÒª°ÑËùÓĞÔ­ÁÏ·ÅÈëÏÂÃæ£¬Í¬Ê±ĞèÒª1000Íò.", "do_upgoldeq_process", "no",1);
+	GiveItemUI("ChÕ t¹o trang bŞ B¹ch Kim", "Muèn n©ng cÊp trang bŞ hoµng kim nµo th× chØ cÇn bá tÊt c¶ nh÷ng nguyªn liÖu vµo bªn d­íi ®ång  thêi cÇn 1000 v¹n.", "do_upgoldeq_process", "no",1);
 end;
 
 function do_upgoldeq_process(nItemCount)
@@ -37,10 +37,10 @@ end;
 
 function do_upgoldeq_preview(nItemCount)
 	if (nItemCount == 0) then
-		CreateTaskSay({"<dec><npc>ÄãÃ»ÓĞ´ø»Æ½ğ×°±¸À´£¬ÎÒÃÇÔõÃ´ÄÜ¸øÄã¿´Íê³ÉºóµÄ°×½ğ×°±¸ÊÇÊ²Ã´Ñù×Ó? ", "Çë·ÅĞÄ£¬ÎÒ²»»áËğº¦ÄãµÄ×°±¸µÄ./want_upgoldeq_preview", "µÈÎÒ´ø¹ıÀ´./no"});
+		CreateTaskSay({"<dec><npc>Ng­¬i kh«ng mang trang bŞ Hoµng Kim ®Õn ®©y, ta lµm sao gióp ng­¬i xem trang bŞ B¹ch Kim hoµn thµnh sÏ nh­ thÕ nµo? H·y yªn t©m, ta sÏ kh«ng lµm tæn h¹i g× ®Õn trang bŞ cña ng­¬i ®©u.", "§Ó ta ®Æt l¹i vËy./want_upgoldeq_preview", "Lóc kh¸c quay l¹i./no"});
 		return 0;
 	elseif (nItemCount > 1) then
-		CreateTaskSay({"<dec><npc>Ö»Òª·ÅÈëÏëÖÆÔìµÄ»Æ½ğ×°±¸¾Í¿ÉÒÔÁË£¬±ğµÄ²»ĞèÒª.", "¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÈÃÎÒÀ´·Å./want_upgoldeq_preview", "ÎÒÏÈÕûÀí±³°ü/no"});
+		CreateTaskSay({"<dec><npc>ChØ cÇn ®Æt vµo trang bŞ Hoµng Kim muèn chÕ t¹o lµ ®­îc råi, nh÷ng thø kh¸c ta kh«ng cÇn.", "Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_upgoldeq_preview", "§Ó ta s¾p l¹i hµnh trang ®·/no"});
 		return 0;
 	end;
 	local nComposeEntryIdx = 0;
@@ -50,7 +50,7 @@ function do_upgoldeq_preview(nItemCount)
 	local tbCurItemProp = pack(GetItemProp(nCurItemIdx));
 	if (nCurItemQuality == 1) then
 		if (tbCurItemProp[1] ~= 0) then
-			CreateTaskSay({"<dec><npc>Ö»Òª·ÅÈëÏëÒªÖÆÔìµÄ»Æ½ğ×°±¸¾Í¿ÉÒÔÁË£¬±ğµÄ²»ĞèÒª.", "¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµãµÄÊ±ºò£¬ÈÃÎÒÀ´·Å./want_upgoldeq_preview", "ÎÒÏÈÕûÀí±³°ü/no"});
+			CreateTaskSay({"<dec><npc>ChØ cÇn ®Æt vµo trang bŞ Hoµng Kim muèn chÕ t¹o lµ ®­îc råi, nh÷ng thø kh¸c ta kh«ng cÇn.", "Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_upgoldeq_preview", "§Ó ta s¾p l¹i hµnh trang ®·/no"});
 			return 0;
 		end;
 		for szkey, tbPlatinaData in TB_PLATINAEQ_GOLDEQ do
@@ -61,14 +61,14 @@ function do_upgoldeq_preview(nItemCount)
 		end;
 	end;
 	if (nCurItemQuality == 4) then
-		CreateTaskSay(	{	"<dec><npc>×°±¸color=yellow>"..GetItemName(nCurItemIdx).."<color> ®· ®­ÒÑ´òÔì³É°×½ğ×°±¸ÁË.",
-							"´òÔìÆäËûµÄ»Æ½ğ×°±¸./want_upgoldeq_preview",
-							"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+		CreateTaskSay(	{	"<dec><npc>Trang bŞ <color=yellow>"..GetItemName(nCurItemIdx).."<color> ®· ®­îc chÕ t¹o thµnh trang bŞ B¹ch Kim råi.",
+							"ChÕ t¹o trang bŞ Hoµng Kim kh¸c./want_upgoldeq_preview",
+							"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 		return
 	elseif (nComposeEntryIdx == 0) then
-		CreateTaskSay(	{	"<dec><npc>ÕæÒÅº¶£¬ÎÒÄÜÁ¦ÓĞÏŞ£¬°ï²»ÁËÄã<color=yellow>"..GetItemName(nCurItemIdx).."<color>ÕâÌ×»Æ½ğ×°±¸ÒÑ´òÔì³É°×½ğ×°±¸ÁË.",
-							"´òÔìÆäËûµÄ»Æ½ğ×°±¸./want_upgoldeq_preview",
-							"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+		CreateTaskSay(	{	"<dec><npc>ThËt ®¸ng tiÕc, kh¶ n¨ng cña ta cã h¹n, kh«ng thÓ gióp ®­îc cho ng­¬i<color=yellow>"..GetItemName(nCurItemIdx).."<color>Trang bŞ Hoµng Kim nµy ®· ®­îc chÕ t¹o thµnh trang bŞ B¹ch Kim råi.",
+							"ChÕ t¹o trang bŞ Hoµng Kim kh¸c./want_upgoldeq_preview",
+							"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 		return
 	end
 	
@@ -88,26 +88,26 @@ function do_upgoldeq_preview(nItemCount)
 					szItemDesc = szItemDesc.."<color=green>"..GetItemMagicDesc(unpack(tbPlatinaMagicAttrib[i])).."<color><enter>";
 				end;
 	end;
-	CreateTaskSay({"<dec><npc>Íê³ÉµÄ°×½ğ×°±¸ÊÇ<color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]..", ÊôĞÔÈçÏÂ: <enter>"..szItemDesc,
-	"°ïÎÒ¿´¿´±ğµÄ×°±¸´òÔì³öÀ´µÄ°×½ğ×°±¸»áÊÇÊ²Ã´Ñù×Ó./want_upgoldeq_preview",
-	"ÄÜ°ïÎÒ°ÑÕâÌ××°±¸´òÔì³É°×½ğ×°±¸Âğ/want_upgoldeq",
-	"ÎÒÖªµÀÁË£¬¶àĞ»./no"});
+	CreateTaskSay({"<dec><npc>Trang bŞ B¹ch Kim hoµn thµnh lµ <color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]..", thuéc tİnh nh­ sau: <enter>"..szItemDesc,
+	"Gióp ta xem trang bŞ B¹ch Kim hoµn thµnh tõ nh÷ng trang bŞ kh¸c sÏ nh­ thÕ nµo./want_upgoldeq_preview",
+	"Cã thÓ gióp ta chÕ t¹o trang bŞ nµy thµnh trang bŞ B¹ch Kim ®­îc kh«ng/want_upgoldeq",
+	"Ta biÕt råi, xin ®a t¹./no"});
 end;
 ----°×½ğ×°±¸Éı¼¶
 function upgrade_paltinaequip()
 	CreateTaskSay({
-		"<dec><npc>Éı¼¶°×½ğ×°±¸ĞèÒªµÄ²ÄÁÏÈçÏÂ:1¿é<color=yellow>²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©<color> ºÍ1000ÍòÁ½.¿ÉÒÔÓÃÈÙÓşµã¶Ò»»²¹ÌìÊ¯ËéÆ¬£¬Èç¹ûÄãÒÑ¾­×¼±¸ºÃÎÒÃÇ¾Í¿ÉÒÔ¿ªÊ¼ÁË.<enter><color=red>Éı¼¶°×½ğ×°±¸ÓĞÒ»¶¨·çÏÕ£¬Èç¹ûÊ§°ÜÁËÔòÎïÆ·ºÍ1000Íò¶¼½«ËğÊ§.<color><enter>Èç¹ûÄãÏëÖªµÀ´òÔìºóµÄ°×½ğ×°±¸ÊôĞÔÈçºÎÖ»Òª°Ñ»Æ½ğ×°±¸´ø¸øÎÒ¿´¿´¾Í¿ÉÒÔÁË.",
-		"ÎÒÏë¿´¿´Ö®ºóµÄ°×½ğ×°±¸µÄÊôĞÔ./#want_upplatinaeq(1)",
-		"ÎÒ¿É°ïÎÒÉı¼¶×°±¸Âğ/#want_upplatinaeq(0)",
-		"ÎÒÔÙÏëÏë¿´ /no"
+		"<dec><npc>Th¨ng cÊp thµnh trang bŞ B¹ch Kim yªu cÇu nh÷ng vËt liÖu sau: 1 m¶nh <color=yellow>Bæ Thiªn Th¹ch (trung)<color> vµ 1000 v¹n l­îng. Cã thÓ dïng ®iÓm vinh dù ®Ó ®æi m¶nh Bæ Thiªn Th¹ch, ng­¬i ®· chuÈn bŞ s½n sµng råi, chóng ta cã thÓ b¾t ®Çu.<enter><color=red>Th¨ng cÊp trang bŞ B¹ch Kim sÏ cã rñi ro nhÊt ®Şnh, nÕu nh­ thÊt b¹i th× nh÷ng vËt liÖu vµ 1000 v¹n sÏ bŞ mÊt.<color><enter>NÕu ng­¬i muèn biÕt thuéc tİnh trang bŞ B¹ch Kim hoµn thµnh nh­ thÕ nµo cã thÓ mang trang bŞ Hoµng Kim ®Õn ®©y cho ta xem thö.",
+		"Ta muèn xem thuéc tİnh trang bŞ B¹ch Kim hoµn thµnh./#want_upplatinaeq(1)",
+		"Cã thÓ gióp ta th¨ng cÊp trang bŞ nµy kh«ng/#want_upplatinaeq(0)",
+		"ta nghÜ l¹i xem /no"
 	});
 end;
 
 function want_upplatinaeq(bPreview)
 	if (bPreview == 1) then
-		GiveItemUI("¿´Éı¼¶°×½ğ×°±¸¹ı³Ì", "°ÑÒªÉı¼¶µÄ°×½ğ×°±¸ºÍ²¹ÌìÊ¯ËéÆ¬·ÅÈëÎïÆ·ºĞ.", "do_upplatinaeq_preview", "no",1);
+		GiveItemUI("Xem qu¸ tr×nh th¨ng cÊp trang bŞ B¹ch Kim", "H·y ®Æt trang bŞ B¹ch Kim muèn th¨ng cÊp vµ m¶nh Bæ Thiªn Th¹ch vµo hép vËt phÈm.", "do_upplatinaeq_preview", "no",1);
 	else
-		GiveItemUI("Éı¼¶°×½ğ×°±¸", "°ÑÒªÉı¼¶µÄ°×½ğ×°±¸ºÍ²¹ÌìÊ¯ËéÆ¬·ÅÈëÎïÆ·ºĞ£¬Éı¼¶ÏûºÄ1000ÍòÁ½.", "do_upplatinaeq_process", "no",1);
+		GiveItemUI("Th¨ng cÊp trang bŞ B¹ch Kim", "H·y ®Æt trang bŞ B¹ch Kim muèn th¨ng cÊp vµ m¶nh Bæ Thiªn Th¹ch vµo hép vËt phÈm, th¨ng cÊp tiªu tèn 1000 v¹n l­îng.", "do_upplatinaeq_process", "no",1);
 	end;
 end;
 
@@ -150,19 +150,19 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			--Èç¹û²»ÊÇ×°±¸(¿ÉÄÜÊÇËğ»µ×°±¸)
 			if (tbCurItemProp[1] ~= 0) then
 				CreateTaskSay(	{	szErrorMsg,
-					"¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÎÒÀ´·Å°É./".."#"..szContinueFunc.."("..bPreview..")",
-					"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+					"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+					"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end
 			if (nExpiredTime > 0) then -- ÓĞ±£ÖÊÆÚµÄ×°±¸£¬²»ÄÜ£¡
-				CreateTaskSay(	{	"<dec><npc>×°±¸ÓĞ<color=fire>thÊ¹ÓÃÆÚÏŞ<color> ²»ÄÜ¶ÍÔì.",
-									"Õæ²»ºÃÒâË¼£¬ÎÒÓÖ·Å´íÁË.Ò»»áÓÖ»ØÀ´cancel"	}	);
+				CreateTaskSay(	{	"<dec><npc>Trang bŞ cã <color=fire>thêi h¹n sö dông<color> th× kh«ng thÓ rÌn ®­îc.",
+									"ThËt lµ thø lçi, ta l¹i bá nhÇm n÷a råi. Mét lóc sau quay l¹i nhĞ/cancel"	}	);
 				return
 			end
 			if (nComposeEntryIdx ~= 0) then
-				CreateTaskSay(	{	"<dec><npc>×îºóÄãÏë´òÔìÄÄÌ×»Æ½ğ×°±¸£¿ÎÒÃ»ÓĞÑÛ»¨°É£¿",
-									"¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÎÒÀ´·Å°É./".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+				CreateTaskSay(	{	"<dec><npc>Rèt cuéc ng­¬i muèn chÕ t¹o trang bŞ Hoµng Kim nµo? Ta kh«ng hoa m¾t chø?",
+									"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end
 			
@@ -181,22 +181,22 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			end
 			
 			if (nComposeEntryIdx == 0) then
-				CreateTaskSay(	{	"<dec><npc>Õæ²»ºÃÒâË¼£¬ÎÒÏÖÔÚµÄÄÜÁ¦°ï²»ÁËÄãÊ²Ã´<color=yellow>"..GetItemName(nCurItemIdx).."<color>.",
-									"ÊÔÊÔ±ğµÄ×°±¸/".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+				CreateTaskSay(	{	"<dec><npc>ThËt ng¹i qu¸, kh¶ n¨ng ta hiÖn giê kh«ng gióp ®­îc g× cho ng­¬i<color=yellow>"..GetItemName(nCurItemIdx).."<color>.",
+									"Thö mãn trang bŞ kh¸c/".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end
 			
 			if (tb_tempUpgrade.nItemQuality == 4 and GetPlatinaLevel(nCurItemIdx) >= %nOpenLevel) then
-				CreateTaskSay(	{"<dec><npc>ÎÒÏÖÔÚµÄÄÜÁ¦Ö»ÄÜ°ïÄã°Ñ×°±¸Ç¿»¯µ½Õâ¸ö¼¶±ğÁË£¬Ö®ºóÎÒ¿ÉÒÔ°ïÄã¼ÌĞøĞŞÁ¶.ÏàĞÅÎÒÀë¿ªÖ®ºóÖÕÓĞÒ»ÈÕ¿ÉÒÔ°ïÄãÇ¿»¯ÕâĞ©ÎïÆ·£¬µ½ÄÇÊ±ÔÙ»ØÀ´ÕÒÎÒ°É£¡",
-									"ÊÔÊÔ±ğµÄ×°±¸/".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./cancel"	}	);
+				CreateTaskSay(	{"<dec><npc>Víi søc hiÖn t¹i cña ta chØ cã thÓ gióp ng­¬i c­êng hãa trang bŞ nµy ®Õn cÊp nµy th«i, nh­ng mµ sau nµy ta cã thÓ gióp ng­¬i tu luyÖn tiÕp. Cø tin ta ®i råi sÏ cã mét ngµy ta sÏ gióp ng­¬i c­êng hãa mãn ®å nµy lªn, ®Õn lóc ®ã ng­¬i h·y quay l¹i gÆp ta nhĞ!",
+									"Thö mãn trang bŞ kh¸c/".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./cancel"	}	);
 				return
 			end;
 			if (tb_tempUpgrade.nItemQuality == 4 and GetPlatinaLevel(nCurItemIdx) >= 10) then
-				CreateTaskSay(	{	"<dec><npc>×°±¸ÒÑ´ïµ½×î¸ß¼¶£¬²»ĞèÒªÔÙÉı¼¶ÁË.",
-									"ÊÔÊÔ±ğµÄ×°±¸/".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+				CreateTaskSay(	{	"<dec><npc>Trang bŞ nµy ®· ®¹t ®¼ng cÊp cao nhÊt, kh«ng cÇn ph¶i th¨ng cÊp n÷a.",
+									"Thö mãn trang bŞ kh¸c/".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end;
 			
@@ -221,15 +221,15 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			local szItemKey = tbCurItemProp[1]..","..tbCurItemProp[2]..","..tbCurItemProp[3];
 			if (tb_tempUpgrade.tbUpItemList[szItemKey] == nil) then
 				CreateTaskSay(	{	tb_tempUpgrade.szErrorMsg,
-									"¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÎÒÀ´·Å°É./".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+									"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end
 			if (tb_tempUpgrade.tbUpItemList[szItemKey][3] ~= -1) then
 				if (tbCurItemProp[4] ~= tb_tempUpgrade.tbUpItemList[szItemKey][3]) then
-					CreateTaskSay(	{	"<dec><npc>×°±¸µÈ¼¶"..GetItemName(nCurItemIdx).." ÕâËÆºõ²»¶Ô.",
-									"¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÎÒÀ´·Å°É./".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+					CreateTaskSay(	{	"<dec><npc>§¼ng cÊp cña trang bŞ"..GetItemName(nCurItemIdx).." nµy d­êng nh­ kh«ng ®óng.",
+									"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 					return
 				end;
 			end;
@@ -242,15 +242,15 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 		end
 	end
 	if (nComposeEntryIdx == 0) then
-		CreateTaskSay(	{	"<dec><npc>Èç¹ûĞèÒªÎÒ°ïÖú£¬¾Í°Ñ×¼±¸½»¸øÎÒ.",
-							"¹ş¹ş£¬´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÎÒÀ´·Å°É./".."#"..szContinueFunc.."("..bPreview..")",
-							"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+		CreateTaskSay(	{	"<dec><npc>NÕu muèn ta gióp ng­¬i, h·y giao trang bŞ ®ã cho ta.",
+							"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+							"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 		return
 	end
 	
 	local tbBeidoujuan = 
 	{
-		[6] = "±±¶·Á¶½ğÊõ(¾í 1)", [7] = "±±¶·Á¶½ğÊõ(¾í 2)", [8] = "±±¶·Á¶½ğÊõ(¾í 3)", [9] = "±±¶·Á¶½ğÊõ(¾í 4)"
+		[6] = "B¾c ®Èu luyÖn kim thuËt (QuyÓn 1)", [7] = "B¾c ®Èu luyÖn kim thuËt (QuyÓn 2)", [8] = "B¾c ®Èu luyÖn kim thuËt (QuyÓn 3)", [9] = "B¾c ®Èu luyÖn kim thuËt (QuyÓn 4)"
 	};
 	local PLevel = GetPlatinaLevel(nEquipItemIdx);
 	if (nStep == 3 and bPreview == 0) then
@@ -259,13 +259,13 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 				if (PLevel == tb_item[4] and tb_enhanceitem_count[szkey][1] ~= tb_item[1] or (PLevel ~= tb_item[4] and tb_enhanceitem_count[szkey][1] ~= 0)) then
 					local szErrorMsg = "";
 					if (PLevel < 6) then
-						szErrorMsg = "<dec><npc> ´òÔì´Ë×°±¸ĞèÒª±±¶·Á¶½ğÊõ";
+						szErrorMsg = "<dec><npc> ChÕ t¹o trang bŞ nµy kh«ng cÇn b¾c ®Èu luyÖn kim thuËt";
 					else
-						szErrorMsg = "<dec><npc>´òÔì´Ë×°±¸Ö»ĞèÒª<color=yellow>1"..tbBeidoujuan[GetPlatinaLevel(nEquipItemIdx)].."<color>, ·ÅÈëÌ«¶à»á³Ô¿÷£¬µ«ÊÇÉÙÁËÓÖÎŞ·¨ÖÆÔì.";
+						szErrorMsg = "<dec><npc>ChÕ t¹o trang bŞ nµy chØ cÇn <color=yellow>1"..tbBeidoujuan[GetPlatinaLevel(nEquipItemIdx)].."<color>, ®Æt nhiÒu qu¸ sÏ thiÖt thßi cho ng­¬i, nh­ng İt qu¸ th× ta kh«ng chÕ t¹o ®­îc.";
 					end
 					CreateTaskSay({szErrorMsg,
-									"ÎÒÔÙÊÔÊÔ./".."#"..szContinueFunc.."("..bPreview..")",
-									"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+									"§Ó ta thö l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+									"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 					return
 				end
 			end
@@ -274,9 +274,9 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 	if (nStep == 1) then
 		for szkey, tb_item in tb_tempUpgrade.tbUpItemList do
 			if (tb_enhanceitem_count[szkey][1] ~= tb_tempUpgrade.tbUpItemList[szkey][1]) then
-				CreateTaskSay(	{	"<dec><npc>Òª´òÔì´Ë×°±¸£¬ÎÒ×îÉÙĞèÒª <color=yellow>"..tb_tempUpgrade.tbUpItemList[szkey][1].."¸ö"..tb_tempUpgrade.tbUpItemList[szkey][2].."<color>, ·ÅÈëÌ«¶à»á³Ô¿÷£¬µ«ÊÇÉÙÁËÓÖÎŞ·¨ÖÆÔì.",
-										"ÎÒÔÙÊÔÊÔ./".."#"..szContinueFunc.."("..bPreview..")",
-										"Õæ²»ºÃÒâË¼£¬ÎÒ´ı»á»ØÀ´./no"	}	);
+				CreateTaskSay(	{	"<dec><npc>Muèn chÕ t¹o trang bŞ nµy, tèi thiÓu ta còng cÇn <color=yellow>"..tb_tempUpgrade.tbUpItemList[szkey][1].."c¸i"..tb_tempUpgrade.tbUpItemList[szkey][2].."<color>, ®Æt nhiÒu qu¸ sÏ thiÖt thßi cho ng­¬i, nh­ng İt qu¸ th× ta kh«ng chÕ t¹o ®­îc.",
+										"§Ó ta thö l¹i./".."#"..szContinueFunc.."("..bPreview..")",
+										"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 				return
 			end
 		end
@@ -291,7 +291,7 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			nUpGradeProb = 0.9999;
 		end;
 		if (bPreview == 1) then
-			local szItemDesc = format("<dec><npc>¸ù¾İÎÒµÄ¾­Ñé£¬ÕâÌ×°×½ğ×°±¸ÓĞ <color=yellow>%5.2f%%µÄ¼¸ÂÊ<color> Éı1¼¶£¬ÊôĞÔÈçÏÂ:  <enter>", nUpGradeProb*100);
+			local szItemDesc = format("<dec><npc>Theo kinh nghiÖm cña ta, trang bŞ B¹ch Kim nµy cã x¸c suÊt <color=yellow>%5.2f%%<color> n©ng lªn 1 cÊp, thuéc tİnh nh­ sau:  <enter>", nUpGradeProb*100);
 			
 			local tbNextPlatinaMagicAttrib = pack(PreviewPlatinaUpgrade(nEquipIndex));
 			
@@ -311,9 +311,9 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 				end;
 			end;
 			CreateTaskSay({szItemDesc,
-								"°ïÎÒ¿´¿´ÆäËû×°±¸´òÔì³öµÄ°×½ğ×°±¸ÊÇÊ²Ã´Ñù×Ó./".."#"..szContinueFunc.."("..bPreview..")",
-								"¿ÉÒÔ°ïÎÒ°ÑÕâÌ××°±¸´òÔì³É°×½ğ×°±¸Âğ/".."#"..szContinueFunc.."(0)",
-								"ÎÒÖªµÀÁË£¬¶àĞ»/no"});
+								"Gióp ta xem trang bŞ B¹ch Kim hoµn thµnh tõ nh÷ng trang bŞ kh¸c sÏ nh­ thÕ nµo./".."#"..szContinueFunc.."("..bPreview..")",
+								"Cã thÓ gióp ta chÕ t¹o trang bŞ nµy thµnh trang bŞ B¹ch Kim ®­îc kh«ng/".."#"..szContinueFunc.."(0)",
+								"Ta biÕt råi, xin ®a t¹./no"});
 			return
 		end;
 	end;
@@ -331,7 +331,7 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 --	end
 	
 	if (GetCash() < 10000000) then
-		CreateTaskSay({"<dec><npc>ÄãÃ»ÓĞ´ø´òÔì·ÑÓÃ<color=yellow>1000Íò<color> Á½.", "ÎÒÖªµÀÁË£¬µÈÎÒÏÈ×¼±¸/no"});
+		CreateTaskSay({"<dec><npc>Ng­¬i kh«ng mang theo chi phİ chÕ t¹o <color=yellow>1000 v¹n<color> l­îng.", "Ta biÕt råi, ®Ó ta chuÈn bŞ ®·/no"});
 		return
 	end;
 	Pay(10000000);
@@ -339,18 +339,18 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 	-- É¾Ô­ÁÏ
 	for i = 1, nItemCount do
 		if (GetGiveItemUnit(i) ~= nEquipItemIdx and RemoveItemByIndex(GetGiveItemUnit(i)) ~= 1) then
-			WriteLog("[Task Éı¼¶°×½ğ×°±¸ ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t É¾³ıÊ§°ÜÎïÆ·\t"..GetItemName(GetGiveItemUnit(i)));
+			WriteLog("[Task n©ng cÊp trang bŞ B¹ch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Xãa vËt phÈm thÊt b¹i\t"..GetItemName(GetGiveItemUnit(i)));
 			return
 		end
 	end
 	if (random() > nUpGradeProb) then
-		CreateTaskSay({"<dec><npc>°×½ğ×°±¸Éı¼¶Ê§°Ü£¬¶ªÊ§ÖÆÔìÔ­ÁÏºÍ1000ÍòÁ½.", "ÎÒÒ»»á»ØÀ´/no"});
-		Msg2Player("°×½ğ×°±¸Éı¼¶Ê§°Ü£¬¶ªÊ§ÖÆÔìÔ­ÁÏºÍ1000ÍòÁ½.");
-		WriteLog("[Task Éı¼¶°×½ğ×°±¸ FAIL!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t ¼ÛÖµÁ¿²»¹»£¬È·¶¨ÂÊÎª"..nUpGradeProb);
+		CreateTaskSay({"<dec><npc>N©ng cÊp trang bŞ B¹ch Kim thÊt b¹i, bŞ mÊt ®i vËt liÖu chÕ t¹o vµ 1000 v¹n l­îng.", "Ta sÏ quay l¹i sau/no"});
+		Msg2Player("N©ng cÊp trang bŞ B¹ch Kim thÊt b¹i, bŞ mÊt ®i vËt liÖu chÕ t¹o vµ 1000 v¹n l­îng.");
+		WriteLog("[Task n©ng cÊp trang bŞ B¹ch Kim FAIL!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Gi¸ trŞ l­îng kh«ng ®ñ, x¸c suÊt lµ"..nUpGradeProb);
 		return
 	end;
 	
-	local szLog = "ÏûºÄ \t"..GetItemName(nEquipItemIdx).."1 \t";
+	local szLog = "tiªu hao \t"..GetItemName(nEquipItemIdx).."1 \t";
 	local szBeforeItemInfo = getItemInfo(nEquipItemIdx);	--»ñµÃÉı¼¶Ç°µÄÏêÏ¸ĞÅÏ¢
 	
 	local nSuccess = getglobal(tb_tempUpgrade.szDoProcessFunc)(nEquipItemIdx);
@@ -367,14 +367,14 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			SetItemBindState(nEquipItemIdx, nItemBindState)
 		end;
 		local szBehindItemInfo = getItemInfo(nEquipItemIdx);--»ñµÃÉı¼¶ºóµÄÏêÏ¸ĞÅÏ¢
-		CreateTaskSay({"<dec><npc>Éı¼¶°×½ğ×°±¸³É¹¦£¬µÃµ½1Ì×°×½ğ×°±¸<color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."<color>, ¼¶"..nItemLevel..".", "ÎÒÒ»»á»ØÀ´/no"});
-		Msg2Player("Éı¼¶°×½ğ×°±¸³É¹¦,µÈ¼¶ÊÇ"..nItemLevel.."°×½ğ×°±¸:"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]);
-		WriteLog("[Task Éı¼¶°×½ğ×°±¸ SUCCESS!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t µÃµ½°×½ğ×°±¸"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."\t"..szLog);
-		writeRecoinLog("[Éı¼¶°×½ğ×°±¸Ô­ÁÏ]", szBeforeItemInfo);
-		writeRecoinLog("[Éı¼¶°×½ğ×°±¸½á¹û]", szBehindItemInfo);
+		CreateTaskSay({"<dec><npc>N©ng cÊp trang bŞ B¹ch Kim thµnh c«ng, nhËn ®­îc 1 trang bŞ B¹ch Kim <color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."<color>, cÊp"..nItemLevel..".", "Ta sÏ quay l¹i sau/no"});
+		Msg2Player("N©ng cÊp trang bŞ B¹ch Kim thµnh c«ng, ®¼ng cÊp lµ"..nItemLevel.."trang bŞ B¹ch Kim:"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]);
+		WriteLog("[Task n©ng cÊp trang bŞ B¹ch Kim SUCCESS!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t nhËn ®­îc trang bŞ B¹ch Kim"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."\t"..szLog);
+		writeRecoinLog("[Nguyªn liÖu n©ng cÊp trang bŞ B¹ch Kim]", szBeforeItemInfo);
+		writeRecoinLog("[KÕt qu¶ n©ng cÊp trang bŞ B¹ch Kim]", szBehindItemInfo);
 	else
-		WriteLog("[Task Éı¼¶°×½ğ×°±¸ ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Éı¼¶°×½ğ×°±¸Ê§°Ü\t"..szLog);
-		writeRecoinLog("[Éı¼¶°×½ğ×°±¸Ô­ÁÏ]", szBeforeItemInfo);
+		WriteLog("[Task n©ng cÊp trang bŞ B¹ch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t NhËn ®­îc trang bŞ B¹ch Kim thÊt b¹i \t"..szLog);
+		writeRecoinLog("[Nguyªn liÖu n©ng cÊp trang bŞ B¹ch Kim]", szBeforeItemInfo);
 	end;
 end;
 ----½«»Æ½ğ×°±¸´òÔì³É°×½ğ×°±¸ END
@@ -390,11 +390,11 @@ end;
 
 function about_aerolite()
 	CreateTaskSay({
-		"²¹ÌìÊ¯ËéÆ¬ÊÇÌìÉÏµÄ±¦Îï£¬ÔÚÈË¼äºÜÄÑÕÒµ½. ËäÈ»£¬Äã¿ÉÒÔµ½<color=yellow>ÁªÈüÊ¹Õß<color> ÎÊÎÊ¿´£¬Èç¹ûÄãÓĞ<color=yellow>ÈÙÓşµã<color> ¾Í¿ÉÒÔÂòµ½. Ò²¿ÉÒÔµ½<color=yellow>ÆæÕä¸ó<color> ¿´¿´",
-		"ÖªµÀÁË!/no",
+		"m¶nh Bæ Thiªn Th¹ch lµ b¶o vËt cña trêi ®Êt, chèn nh©n gian khã t×m. Tuy nhiªn, ng­¬i cã thÓ ®Õn  <color=yellow>Sø gi¶ liªn ®Êu<color> hái xem thÕ nµo, nÕu ng­¬i cã <color=yellow>§iÓm vinh dù<color> th× cã thÓ mua ®­îc. Còng cã thÓ ghĞ vµo <color=yellow>Kú Tr©n C¸c<color> xem thö.",
+		"Ta biÕt råi!/no",
 	});
 end;
 
 function about_platina()
-	CreateTaskSay({"<dec><npc>°×½ğ×°±¸•AÊôĞÔÊÇÓÉ´òÔìµÄ»Æ½ğ×°±¸¾ö¶¨µÄ. »Æ½ğ×°±¸µÄÊôĞÔÔ½ºÃÄÇÃ´´òÔì³öÀ´µÄ°×½ğ×°±¸¾ÍÔ½ºÃ£¬ÎÒ½¨ÒéÓÃ±ğµÄ»Æ½ğ×°±¸.","½áÊø¶Ô»°¡±/no"});
+	CreateTaskSay({"<dec><npc>Thuéc tİnh cña trang bŞ B¹ch Kim sÏ do thuéc tİnh cña trang bŞ Hoµng Kim chÕ t¹o quyÕt ®Şnh. Thuéc tİnh trang bŞ Hoµng Kim cµng tèt th× trang bŞ B¹ch Kim t¹o thµnh sÏ cµng tèt. NÕu kh«ng hµi lßng víi trang bŞ Hoµng Kim hiÖn t¹i, ta kiÕn nghŞ h·y t×m trang bŞ Hoµng Kim kh¸c.","KÕt thóc ®èi tho¹i/no"});
 end;

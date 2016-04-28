@@ -8,23 +8,23 @@ function main(sel)
 	UTask_tw = GetTask(3)
 	UTask_world18 = GetTask(46)
 	if (UTask_tw == 40*256+20) then						-- ÌìÍõ40¼¶ÈÎÎñ
-		Talk(5, "L40_tw_talk2", "ÔÚÏÂÊÇÌìÍõ°ïµÄµÜ×Ó, ÎÒÓĞÒ»¸öÍ¬ÃÅÖĞÁË³àÁ·ÉßµÄ¶¾£¬ÇëÉñÒ½¸øÎÒ½âÒ©!", "³àÁ·Éß? ÕæµÄÊÇÌ«Î£ÏÕÁË..ÎÒ¿ÉÒÔ¾È, ÒªÕÒ²ÄÁÏÀ´ÅäÒ©!", "²»ÖªµÀÒªÊ²Ã´²ÄÁÏÄØ£¿", "ÕâÊÇ¼Ò´«ÃØ¾÷, µ«ÄãÊÇÌìÍõµÜ×ÓÎÒ¾ÍËµ¸øÄãÌı! ÒªÓĞ<color=Red>»ğòáòæµÄÁÛÆ¬<color> ºÍ<color=Red>ÂÌÃ«¹ê¹ê¿ÇÉÏµÄÃ«<color>. ÕÒµ½ÕâÁ½Ñù¶«Î÷£¬ÄãµÄÍ¬ÃÅ¾ÍÓĞ¾ÈÁË", "²»ÖªµÀ¿ÉÒÔÕÒµ½ÕâÁ½Ñù¶«Î÷Âğ£¿")
+		Talk(5, "L40_tw_talk2", "T¹i h¹ lµ Thiªn v­¬ng gióp ®İch ®Ö tö , ta cã mét ®ång m«n trung liÔu xİch luyÖn xµ ®İch ®éc , xin/mêi thÇn y cho ta gi¶i d­îc !", "Xİch luyÖn xµ ? thËt sù lµ qu¸ nguy hiÓm .. ta cã thÓ cøu , muèn t×m tµi liÖu tíi chÕ thuèc !", "Kh«ng biÕt muèn c¸i g× tµi liÖu ®©y ? ", "§©y lµ gia truyÒn bİ quyÕt , nh­ng ng­¬i lµ Thiªn v­¬ng ®Ö tö ta liÒn nãi cho ng­¬i nghe ! ph¶i cã <color=Red> löa con th»n l»n ®İch v¶y <color> cïng <color=Red> l«ng xanh con rïa vá rïa th­îng ®İch mao <color>. t×m ®­îc hai thø ®å nµy , ng­¬i ®ång m«n th× cã cøu ", "Kh«ng biÕt cã thÓ t×m ®­îc hai thø ®å nµy sao ? ")
 	elseif(UTask_world18 == 1) then				-- ĞÂÊÖ´åĞ¡ÓæÈÎÎñ
-		Talk(1,"","ÎâÉñÒ½£ºàŞ£¿Ğ¡ÓæµÄµùµù²¡µ¹ÁË£¿ÄãÀ´µÄ¿ÉÕæ²»ÇÉ£¬¸Õ½øµÄÒ»ÅúèÁèËÍèÈ«Âô¸øÌìÍõ°ïÁË¡£Òª²»£¬ÄãÈ¥ÎÊÎÊ´åÀïÌìÍõ°ïµÄµÜ×Ó£¿")
-		Msg2Player("Ò©µêÀÏ°å¸æËßÄãèÁèËÍèÒÑÂôÍê£¬ĞèÈ¥Ñ°ÕÒÌìÍõ°ïµÜ×Ó")
-		AddNote("Ò©µêÀÏ°å¸æËßÄãèÁèËÍèÒÑÂôÍê£¬ĞèÈ¥Ñ°ÕÒÌìÍõ°ïµÜ×Ó")
+		Talk(1,"","Ng« thÇn y: oh ? tiÓu c¸ ®İch phô th©n ng· bÖnh ? ng­¬i tíi thËt lµ kh«ng khĞo , míi võa vµo ®İch mét nhãm tú ba hoµn b¸n hÕt cho Thiªn v­¬ng gióp . nÕu kh«ng , ng­¬i ®i hái mét chót trong th«n Thiªn v­¬ng gióp ®İch ®Ö tö ? ")
+		Msg2Player("TiÖm thuèc l·o b¶n nãi cho ng­¬i biÕt tú ba hoµn ®· b¸n xong , cÇn ®i t×m Thiªn v­¬ng gióp ®Ö tö ")
+		AddNote("TiÖm thuèc l·o b¶n nãi cho ng­¬i biÕt tú ba hoµn ®· b¸n xong , cÇn ®i t×m Thiªn v­¬ng gióp ®Ö tö ")
 	elseif (UTask_tw == 40*256+50) then
-		Say("ÌıËµÔÚ<color=Red>·üÁ÷¶´<color> ÓĞ<olor=Red>»ğòáòæ<color> ºÍ<color=Red>ÂÌÃ«¹ê<color>, ÓĞÈËÔÚ<color=Red>ÌìÍõµº<color>¼ûµ½ÁË. Ö»ÒªÕÒµ½ÄãµÄÍ¬ÃÅ¾ÍÓĞ¾ÈÁË", 2, "ÎÒÏÈÈ¥ÂòÒ»µãÒ©/yes", "ÎÒÒªÁ¢¼´È¥ÂòÒ©Òı/no")
+		Say("Nghe nãi ë <color=Red> phôc l­u ®éng <color> cã <olor=Red> löa con th»n l»n <color> cïng <color=Red> l«ng xanh con rïa <color>, cã ng­êi ë <color=Red> Thiªn v­¬ng ®¶o <color> gÆp ®­îc . chØ cÇn t×m ®­îc ng­¬i ®ång m«n th× cã cøu ", 2, "Ta ®i tr­íc mua mét chót thuèc /yes", "Ta muèn lËp tøc ®i mua thuèc dÉn /no")
 	else							-- ·ÇÈÎÎñ×´Ì¬
-		Say("ÎâÉñÒ½£ºÎÒÕâÀï¶¼ÊÇÉÏºÃµÄÒ©²Ä£¬ÓĞ²¡ÖÎ²¡£¬ÎŞ²¡Ç¿Éí£¬»õÕæ¼ÛÊµ£¬Èç¼Ù°ü»»£¬ÒªÂòµãÊ²Ã´Ò©£¿", 3, "½»Ò×/yes", "ÎÒÊÇÀ´×ö½ÌÓıÈÎÎñµÄ/yboss","²»½»Ò×/no");
+		Say("Bæn tiÖm lµ thÇn d­îc! Cã bÖnh sÏ khái bÖnh, kh«ng bÖnh sÏ kháe, gi¸ c¶ ph¶i ch¨ng. Mua mét İt chø? ", 3, "Giao dŞch /yes", "Ta ®Õn nhËn nhiÖm vô s¬ nhËp /yboss","Kh«ng giao dŞch /no");
 	end
 end;
 
 function L40_tw_talk2()
-	Talk(2,"","ÌıËµÔÚ<color=Red>·üÁ÷¶´<color> ÓĞ<color=Red>»ğòáòæ<color> ºÍ<color=Red>ÂÌÃ«¹ê<color>, ÓĞÈËÔÚ<color=Red>ÌìÍõµº<color>¼ûµ½ÁË", "¶àĞ»ÉñÒ½!")
+	Talk(2,"","Nghe nãi ë <color=Red> phôc l­u ®éng <color> cã <color=Red> löa con th»n l»n <color> cïng <color=Red> l«ng xanh con rïa <color>, cã ng­êi ë <color=Red> Thiªn v­¬ng ®¶o <color> gÆp ®­îc ", "§a t¹ thÇn y !")
 	SetTask(3, 40*256+50)								-- ÌìÍõ40¼¶ÈÎÎñ
-	AddNote("Ìı°ÍÁêÏØµÄÉñÒ½Ëµ: ÏëÒª½âÉß¶¾ÒªÓĞ»ğòáòæÆ¤ºÍÂÌÃ«¹ê")
-	Msg2Player("ÏëÒª½âÉß¶¾ÒªÓĞ»ğòáòæÆ¤ºÍÂÌÃ«¹ê.")
+	AddNote("Nghe ba l¨ng huyÒn ®İch thÇn y nãi : muèn mæ r¾n ®éc ph¶i cã löa con th»n l»n da cïng l«ng xanh con rïa ")
+	Msg2Player("Muèn mæ r¾n ®éc ph¶i cã löa con th»n l»n da cïng l«ng xanh con rïa .")
 end;
 
 function yes()

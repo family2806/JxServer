@@ -410,11 +410,11 @@ SKILLS={
 		skill_mintimepercast_v={{{1,35*18},{15,18*18},{20,15*18},{21,15*18}}},
 		skill_desc=
 			function(level)
-				return "ÀäÈ´Ê±¼ä£º<color=orange>"..floor(Link(level,SKILLS.wudang120.skill_mintimepercast_v[1]) / 18).."Ãë<color>\n"..
-				"ÆïÂíÊ©Õ¹ÀäÈ´Ê±¼ä£º<color=orange>"..floor(Link(level,SKILLS.wudang120.skill_mintimepercastonhorse_v[1]) / 18).."Ãë<color>\n" ..
-				"ÓĞ<color=orange>"..floor(100 - Link(level,SKILLS.wudang120.missle_missrate[1])).."%<color>µÄ¸ÅÂÊ<color>Çå³ıÖÜÎ§Ò»¶¨·¶Î§ÄÚÓÑ·½Íæ¼ÒµÄÒì³£×´Ì¬\n"..
-				"ÓĞ<color=orange>"..floor(100 - Link(level,SKILLS.wudang120_child.missle_missrate[1])).."%<color>µÄ¸ÅÂÊ<color>Ê¹×ÔÉí¶Ô¸÷ÖÖ¸ºÃæ×´Ì¬ºÍ¼¼ÄÜÃâÒß£¬³ÖĞø<color=orange>"..
-				floor(Link(level,SKILLS.wudang120_child.ignorenegativestate_p[2]) / 18).."Ãë<color>\n"
+				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.wudang120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
+				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.wudang120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n" ..
+				"X¸c suÊt <color=orange>"..floor(100 - Link(level,SKILLS.wudang120.missle_missrate[1])).."%<color> <color>lo¹i bá tr¹ng th¸i dŞ th­êng cho ®ång ®éi \n"..
+				"X¸c suÊt <color=orange>"..floor(100 - Link(level,SKILLS.wudang120_child.missle_missrate[1])).."%<color> <color>tù lo¹i bá vµ miÔn dŞch tr¹ng th¸i dŞ th­êng trong <color=orange>"..
+				floor(Link(level,SKILLS.wudang120_child.ignorenegativestate_p[2]) / 18).." gi©y<color>\n"
 			end,
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},

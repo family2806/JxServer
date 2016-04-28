@@ -3,14 +3,14 @@ IncludeLib("FILESYS")
 
 TB_PLATINAEQ_GOLDEQ ={
 --[°×½ğID] = {°×½ğID, »Æ½ğID,×°±¸Éı¼¶¼ÛÖµÁ¿ÏµÊı,×°±¸Ãû};
---[1] = {1, 1, 4, "ÃÎÁúÖ®Õı»ÆÉ®Ã±"},
+--[1] = {1, 1, 4, "Méng long chi ®ang hoµng t¨ng m¹o "},
 }
 
 function LoadPlatinaEquipSetting()
 	
 	local b1 = TabFile_Load("\\settings\\task\\equipex\\platina_def.txt", "PlatinaData")
 	if b1~=1 then
-		print("ÏÂÔØÉı¼¶°×½ğ×°±¸ĞÅÏ¢Ê§°Ü!")
+		print("KÕ tiÕp th¨ng cÊp b¹ch kim trang bŞ tin tøc thÊt b¹i !")
 		return
 	end
 	local nRowCount = TabFile_GetRowCount("PlatinaData", "EQUIPNAME")
@@ -47,33 +47,33 @@ TB_PLATINAEQ_UPGRADERATE = {
 tb_upgrade_material	=
 {
 	--[²ÄÁÏID] = {²ÄÁÏÃû£¬¼ÛÖµÁ¿£¬²ÄÁÏLevel£¬ËùĞèÊıÁ¿£¬Éı¼¶¼¸¼¶°×½ğ}
-	["6,1,1308"] 	= {szName = "²¹ÌìÊ¯ËéÆ¬£¨Ğ¡£©", nValue = 20000000},
-	["6,1,1309"] 	= {szName = "²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©", nValue = 100000000},
-	["6,1,1310"]	= {szName = "²¹ÌìÊ¯ËéÆ¬£¨´ó£©", nValue = 1000000000},
-	["6,1,2127"]	= {szName = "±±¶·Á¶½ğÊõ (µÚÒ»Æª)", nValue = 0, nCount = 1, nUpgradeLevel = 6},
-	["6,1,2160"]	= {szName = "±±¶·Á¶½ğÊõ£¨¾í¶ş£©", nValue = 0, nCount = 1, nUpgradeLevel = 7},
-	["6,1,2161"]	= {szName = "±±¶·Á¶½ğÊõ£¨¾íÈı£©", nValue = 0, nCount = 1, nUpgradeLevel = 8},
-	["6,1,2162"]	= {szName = "±±¶·Á¶½ğÊõ£¨¾íËÄ£©", nValue = 0, nCount = 1, nUpgradeLevel = 9},
+	["6,1,1308"] 	= {szName = " bæ ngµy ®¸ bÓ phiÕn  tiÓu ", nValue = 20000000},
+	["6,1,1309"] 	= {szName = " bæ ngµy ®¸ bÓ phiÕn  trung ", nValue = 100000000},
+	["6,1,1310"]	= {szName = " bæ ngµy ®¸ bÓ phiÕn  ®¹i ", nValue = 1000000000},
+	["6,1,2127"]	= {szName = " b¾c ®Èu luyÖn kim thuËt ( phÇn ®Çu tiªn )", nValue = 0, nCount = 1, nUpgradeLevel = 6},
+	["6,1,2160"]	= {szName = " b¾c ®Èu luyÖn kim thuËt  cuèn hai ", nValue = 0, nCount = 1, nUpgradeLevel = 7},
+	["6,1,2161"]	= {szName = " b¾c ®Èu luyÖn kim thuËt  cuèn ba ", nValue = 0, nCount = 1, nUpgradeLevel = 8},
+	["6,1,2162"]	= {szName = " b¾c ®Èu luyÖn kim thuËt  cuèn bèn ", nValue = 0, nCount = 1, nUpgradeLevel = 9},
 };
 
 tb_gold2planita_material =
 {
-	["6,1,398"] 	= {szName = "ÉñÃØ¿óÊ¯", nCount = 1},
-	["6,1,147"] 	= {szName = "°Ë¼¶Ğş¾§¿óÊ¯", nItemLevel = 8, nCount = 1},
-	["6,1,1309"]	= {szName = "²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©", nCount = 1},
+	["6,1,398"] 	= {szName = " thÇn bİ qu¸ng th¹ch ", nCount = 1},
+	["6,1,147"] 	= {szName = " cÊp t¸m huyÒn tinh qu¸ng th¹ch ", nItemLevel = 8, nCount = 1},
+	["6,1,1309"]	= {szName = " bæ ngµy ®¸ bÓ phiÕn  trung ", nCount = 1},
 };
 
 tbUpGradeProcess = {
 [1] = {
 				tbUpItemList = tb_gold2planita_material,
-				szErrorMsg = "<dec><npc>´íÎó<color=yellow>°×½ğ×°±¸<color>, ÎÒ»¹Ğè<color=yellow>ÉñÃØ¿óÊ¯<color>, color=yellow>°Ë¼¶Ğş¾§¿óÊ¯<color> £¬<color=yellow>²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©<color>, ÇëÁôÏÂÆäËû¶«Î÷.",
+				szErrorMsg = "<dec><npc> sai lÇm <color=yellow> b¹ch kim trang bŞ <color>, ta cßn cÇn <color=yellow> thÇn bİ qu¸ng th¹ch <color>, color=yellow> cÊp t¸m huyÒn tinh qu¸ng th¹ch <color> , <color=yellow> bæ ngµy ®¸ bÓ phiÕn  trung <color>, xin/mêi l­u l¹i nh÷ng vËt kh¸c .",
 				nItemQuality = 1,
 				szGetEquipIDFunc = "GetGlodEqIndex",
 				szContinueFunc = "want_upgoldeq",
 				szDoProcessFunc = "UpgradePlatinaFromGoldItem"},
 [3] = {
 				tbUpItemList = tb_upgradematerial,
-				szErrorMsg = "<dec><npc>´íÎó<color=yellow>°×½ğ×°±¸<color>, ÎÒ»¹Ğè  <color=yellow>²¹ÌìÊ¯ËéÆ¬<color> ÇëÁôÏÂÆäËû¶«Î÷.",
+				szErrorMsg = "<dec><npc> sai lÇm <color=yellow> b¹ch kim trang bŞ <color>, ta cßn cÇn <color=yellow> bæ ngµy ®¸ bÓ phiÕn <color> xin/mêi l­u l¹i nh÷ng vËt kh¸c .",
 				nItemQuality = 4,
 				szGetEquipIDFunc = "GetPlatinaEquipIndex",
 				szContinueFunc = "want_upplatinaeq",

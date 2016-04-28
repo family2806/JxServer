@@ -1,4 +1,4 @@
---ÇéÈË½ÚÀñºĞ
+--LÔ vËt t×nh nh©n
 --2006Äê2ÔÂ14ÈÕ~2006Äê2ÔÂ21ÈÕ 50¼¶¼°ÒÔÉÏ ³åÖµÍæ¼Ò¿ÉÒÔ»ñµÃ
 --ÏÀÊ¿Ö»ÄÜ¸øÏÀÅ®ÔùËÍ¡°ÇéÅ¨Ãµ¹å»¨¡±
 --ÏÀÅ®Ö»ÄÜ¸øÏÀÊ¿ÔùËÍ¡°ĞÄÒâÇÉ¿ËÁ¦¡±
@@ -24,40 +24,40 @@ TB_FORBIDWORD = {
 
 Bless=
 {
-	"<#>´º·çÈçÃÎ£¬·ç¹ıÎŞºÛ£¬Ö»ÎªĞÄµÄË¼Äî£¬Ò£¼ÄÒ»·İÅ¨Å¨µÄ×£¸£¡£",
-	"<#>ÎŞÂÛÎ´À´µÄÂ·ÎÒÃÇÄÜ·ñÒ»Æğ×ßÍê£¬µ«ÎÒ»áÒ»Ö±°®ÄãÖ±µ½ÉúÃü½áÊø¡£",
-	"<#>¿Õ°×µÄÈÕ×ÓÓĞÄãÀ´ÌîÂú£¬ÎŞÂÛÆ½¾²»¹ÊÇ²ÓÀÃ£¬ÎÒ¶¼Ï²»¶¡£",
-	"<#>ÈËÉúµÄÂÃÍ¾ÓĞÄãÀ´×ö°é£¬²»¹Ü¿²¿ÀÒà»òÆ½Ì¹£¬ÎÒ¶¼ÇéÔ¸¡£",
-	"<#>½á·¢Îª·òÆŞ£¬¶÷°®Á½²»ÒÉ¡£»¶ÓéÔÚ½ñÏ¦£¬ÑàÍñ¼°Á¼Ê±¡£",
-	"<#>×£ÇéÈË½Ú¿ìÀÖ£¡Ô¸ÇéÈËºÍ¿ìÀÖÓÀÔ¶°éËæÄãÉí±ß£¡£¡£¡",
+	"<#> Méng nh­ giã xu©n, lµn giã qua ®i kh«ng ®Ó l¹i dÊu vÕt, chØ v× nçi nhí trong lßng, xin gëi mét lêi chóc phóc nång nµn.",
+	"<#> Dï t­¬ng lai cã thÕ nµo ®i n÷a t«i còng sÏ yªu nµng cho ®Õn h¬i thë cuèi cïng.",
+	"<#> Ngµy r¶nh rçi cã b¹n ®Õn hµn huyªn, dï cuéc sèng cã thÕ nµo t«i còng ®Òu thİch.",
+	"<#> Con ®­êng t«i ®i cã b¹n ®ång hµnh dï ch«ng gai t«i còng cam lßng.",
+	"<#> KÕt duyªn thµnh phu thª, m·i bªn nhau trän ®êi.  ",
+	"<#> Chóc lÔ t×nh nh©n vui vÎ! CÇu mong nh÷ng ®iÒu tèt lµnh nhÊt sÏ ®Õn víi b¹n!!",
 	--"<#>ÈÃÔÆÉÓÈ¥ÂúĞÄµÄ×£¸££¬µã×ºÄãÌğÃÛµÄÃÎ£¬Ô¸ÄãÓµÓĞÒ»¸öĞÒ¸£¿ìÀÖµÄĞÂÄê£¡",
 }
 
 function main()
-if (gb_GetModule("ÇéÈË½ÚÀñºĞ") == 1) then
+if (gb_GetModule("LÔ vËt t×nh nh©n") == 1) then
 	if (GetSex() == 0) then	--ÄĞ
-		Say("<#>    Ê¹ÓÃ¡°ÇéÈË½ÚÀñºĞ¡±¿ÉÒÔËÍ¸øÄúÖĞÒâµÄ<color=yellow>Ëı<color>Ò»¶ä<color=yellow>¡°ÇéÅ¨Ãµ¹å»¨¡±<color>²¢ËÍÉÏÄúµÄ×£¸£¡£", 2, "<#>ÔùËÍÃµ¹å»¨/want2present", "<#>È¡Ïû/OnCancel")
+		Say("<#>  Sö dông 'LÔ vËt t×nh nh©n' cã thÓ tÆng cho <color=yellow>'ng­êi Êy'<color> mét ®ãa <color=yellow>'Hoa hång t×nh ı'<color> ®ång thêi nãi lªn lêi chóc phóc cña b¹n.", 2, "<#> TÆng hoa hång/want2present", "<#> Hñy bá /OnCancel")
 	elseif (GetSex() == 1) then	--Å®
-		Say("<#>    Ê¹ÓÃ¡°ÇéÈË½ÚÀñºĞ¡±¿ÉÒÔËÍ¸øÄúÖĞÒâµÄ<color=yellow>Ëû<color>Ò»¿é<color=yellow>¡°ĞÄÒâÇÉ¿ËÁ¦¡±<color>²¢ËÍÉÏÄúµÄ×£¸£¡£", 2, "<#>ÔùËÍÇÉ¿ËÁ¦/want2present", "<#>È¡Ïû/OnCancel")
+		Say("<#>  Sö dông 'LÔ vËt t×nh nh©n' cã thÓ tÆng cho <color=yellow>'ng­êi Êy'<color> mét miÕng <color=yellow>'S« c« la t×nh yªu'<color> ®ång thêi nãi lªn lêi chóc phóc cña b¹n.", 2, "<#> TÆng S« c« la/want2present", "<#> Hñy bá /OnCancel")
 	end
 end
 	return 1
 end
 
 function want2present()
-	AskClientForString("PlayerSelect", "", 1, 16, "ÇëÊäÈë¶Ô·½Ãû×Ö");
+	AskClientForString("PlayerSelect", "", 1, 16, "Xin nhËp tªn ®èi ph­¬ng");
 end
 
 function PlayerSelect(rolename)
 	if (ST_CheckTextFilter(rolename) ~= 1) then
-		Say("¶Ô²»Æğ£¬ÄúËùÊäÈëµÄÃû×Öº¬ÓĞ·Ç·¨µ¥´Ê£¬ÇëÖØÊÔÒ»´Î¡£", 0)
+		Say("Xin lçi! Tªn b¹n nhËp vµo cã ch÷ kh«ng hîp lÖ, h·y thö l¹i lÇn n÷a!", 0)
 		return
 	end
 	
 	for i = 1, getn(TB_FORBIDWORD) do
 		local bp = strfind(rolename, TB_FORBIDWORD[i])
 		if (bp ~= nil) then
-			Say("¶Ô²»Æğ£¬ÄúËùÊäÈëµÄÃû×Öº¬ÓĞ·Ç·¨µ¥´Ê£¬ÇëÖØÊÔÒ»´Î¡£", 0)
+			Say("Xin lçi! Tªn b¹n nhËp vµo cã ch÷ kh«ng hîp lÖ, h·y thö l¹i lÇn n÷a!", 0)
 			return
 		end
 	end
@@ -69,18 +69,18 @@ end
 function BlessPlayerOnline(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, PlayerLevel, MapName, nPosX, nPosY, nSex, nWorldRank, nSubWorldID, nFightMode, bTargetProtect)
 	if (nSex == GetSex()) then
 		if (nSex == 0) then
-			Say("<#>¡°ÇéÅ¨Ãµ¹å»¨¡±Ö»ÄÜËÍ¸øÏÀÅ®Å¶£¡", 0)
+			Say("<#> 'Hoa hång t×nh ı' chØ cã thÓ tÆng cho hiÖp n÷ th«i!", 0)
 		elseif (nSex == 1) then
-			Say("<#>¡°ĞÄÒâÇÉ¿ËÁ¦¡±Ö»ÄÜËÍ¸øÏÀÊ¿Å¶£¡", 0)
+			Say("<#> 'S« c« la t×nh yªu' chØ cã thÓ tÆng cho tr¸ng sÜ th«i!", 0)
 		end
 		return
 	end
 	SetTaskTemp(TEMPSK_MAPID, nSubWorldID)
-	Say("<#>ÇëÊäÈëÄúµÄ×£¸£Óï£¬»òÕßÑ¡ÔñÔ¤Éè×£¸£Óï£º", 3, "ÊäÈë×£¸£Óï/inputmsg", "Ñ¡ÔñÔ¤Éè×£¸£Óï/selectmsg", "È¡Ïû/OnCancel")
+	Say("<#> Xin nhËp lêi chóc phóc cña b¹n vµo hoÆc chän nh÷ng lêi chóc phóc cã s½n:", 3, "NhËp lêi chóc phóc vµo/inputmsg", "Chän lêi chóc phóc cã s½n/selectmsg", "Hñy bá /OnCancel")
 end
 
 function inputmsg()
-	AskClientForString("BlessPlayer", "", 1, 100, "ÇëÊäÈë×£¸£Óï");
+	AskClientForString("BlessPlayer", "", 1, 100, "Xin nhËp lêi chóc phóc vµo");
 end
 
 function selectmsg()
@@ -88,8 +88,8 @@ function selectmsg()
 	for  i = 1, getn(Bless) do
 		tbOpp[i] = Bless[i].."/BlessPlayer"
 	end
-	tbOpp[getn(tbOpp) + 1] = "È¡Ïû/OnCancel"
-	Say("<#>ÇëÑ¡Ôñ×£¸£Óï£º", getn(tbOpp), tbOpp)
+	tbOpp[getn(tbOpp) + 1] = "Hñy bá /OnCancel"
+	Say("<#> H·y chän c©u chóc:", getn(tbOpp), tbOpp)
 end
 
 function BlessPlayer(szBless)
@@ -97,14 +97,14 @@ function BlessPlayer(szBless)
 		szBless = Bless[szBless + 1]
 	end
 	if (ST_CheckTextFilter(szBless) ~= 1) then
-		Say("¶Ô²»Æğ£¬ÄúµÄ×£¸£ÓïÖĞº¬ÓĞ·Ç·¨µ¥´Ê£¬ÇëÖØÊÔÒ»´Î¡£", 0)
+		Say("Xin lçi! Lêi chóc phóc cña b¹n cã ch÷ kh«ng hîp lÖ, h·y thö l¹i lÇn n÷a!", 0)
 		return
 	end
 	
 	for i = 1, getn(TB_FORBIDWORD) do
 		local bp = strfind(szBless, TB_FORBIDWORD[i])
 		if (bp ~= nil) then
-			Say("¶Ô²»Æğ£¬ÄúËùÊäÈëµÄÃû×Öº¬ÓĞ·Ç·¨µ¥´Ê£¬ÇëÖØÊÔÒ»´Î¡£", 0)
+			Say("Xin lçi! Tªn b¹n nhËp vµo cã ch÷ kh«ng hîp lÖ, h·y thö l¹i lÇn n÷a!", 0)
 			return
 		end
 	end
@@ -115,17 +115,17 @@ function BlessPlayer(szBless)
 	if (CalcEquiproomItemCount(ITEM_GENRE,ITEM_DETAIL,ITEM_PARTI,-1) >= 1) then
 		ConsumeEquiproomItem(1, ITEM_GENRE, ITEM_DETAIL, ITEM_PARTI, -1)
 		local szMsg = ""
-		szMsg = GetName().." <#>¶Ô "..GetStringTask(STSK_OTHERNAME).." <#>Ëµ£º"..szBless
+		szMsg = GetName().." <#> nãi "..GetStringTask(STSK_OTHERNAME).." <#> r»ng:"..szBless
 		AddGlobalNews(szMsg)
 		local szParam = GetStringTask(STSK_OTHERNAME).." "..GetTaskTemp(TEMPSK_MAPID).." "..GetName()
 		LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "valentine_bless_anywhere", szParam, "", "")
 	else
-		Say("<#>ÕÒ²»µ½ÇéÈË½ÚÀñºĞ£¬ÇëÖØÊÔÒ»´Î¡£", 0)
+		Say("<#> Kh«ng t×m ra lÔ vËt t×nh nh©n, xin h·y thö l¹i.", 0)
 	end
 end
 
 function BlessPlayerOffline(TargetName)
-	Say("<#>¶Ô²»Æğ£¬"..TargetName.."Ä¿Ç°²»ÔÚ£¬ÎŞ·¨µÃÖªËû£¨Ëı£©µÄÏÂÂä¡£",0)
+	Say("<#> Xin lçi! "..TargetName.."HiÖn t¹i c« Êy (anh Êy) kh«ng cã trªn m¹ng.",0)
 end
 
 function OnCancel()

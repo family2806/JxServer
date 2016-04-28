@@ -11,10 +11,10 @@ function OnDeath()
 Uworld1050 = nt_getTask(1050)
 	if ( Uworld1050 == 40 ) then
 		AddEventItem(504)
-		Msg2Player("Äã»ñµÃÁËÒ»±¾Ìì²ĞµØÈ±ÆåÆ×¡£")
+		Msg2Player("B¹n nhËn ®­îc mét quyÓn Kú phæ Thiªn Tµn §Şa KhuyÕt.")
 	end
 	if ( GetItemCount(504) >= 5 ) then
-		Talk(1,"","ÄãÒÑ¾­»ñµÃÁËÎå±¾ÒÔÉÏµÄÌì²ĞµØÈ±ÆåÆ×£¬¾Í²»ÒªÔÙÄÑÎª²Ø±¦¿ÍÁË£¬·ÅËûÃÇÒ»ÌõÉúÂ·°É¡£")
+		Talk(1,"","B¹n lÊy ®­îc 5 quyÓn Thiªn Tµn §Şa KhuyÕt kú phæ, h·y tha cho Tµng B¶o Kh¸ch.")
 	end
 end
 

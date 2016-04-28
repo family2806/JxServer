@@ -1,7 +1,7 @@
 Include("\\script\\activitysys\\activity.lua")
 pActivity = ActivityClass:new()
 pActivity.nId = 22
-pActivity.szName = "2010Event ½ÌÊ¦½Ú_ »î¶¯"
+pActivity.szName = "2010Event nhµ gi¸o_ Ho¹t ®éng"
 pActivity.nStartDate = 201011160000
 pActivity.nEndDate = 201012130000
 pActivity.szDescription = "nil"

@@ -101,17 +101,17 @@ function main()
 	
 	-- ÔÚ global\systemconfig.lua ÖĞÅäÖÃÆæÕä¸ó¿ª¹Ø
 	if SYSCFG_SHOP_OPEN ~= 1 then
-		Msg2Player("<color=yellow>ÆæÕä¸óÄ¿Ç°»¹Ã»ÓĞ¿ª·ÅÅ¶£¡<color>")
+		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më<color>")
 		return 0
 	end
 
 	if GetTripMode() == TRIP_MODE_SERVER then
-		Msg2Player("<color=yellow>ÆæÕä¸óÄ¿Ç°»¹Ã»ÓĞ¿ª·ÅÅ¶£¡<color>")
+		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më<color>")
 		return 0
 	end
 	local nMapID, _, _ = GetWorldPos()
 	if (GetFightState() >= 1 or IsShopMap(nMapID) == 0) then
-		Msg2Player("<color=yellow>ÆæÕä¸óÖ»ÄÜÔÚ³ÇÊĞ¡¢ĞÂÊÖ´åºÍ²¿·ÖÌØÊâµØÍ¼µÄ·ÇÕ½¶·ÇøÓòÄÚ¿ªÆôÅ¶£¡<color>");
+		Msg2Player("<color=yellow>Kú Tr©n C¸c chØ cã thÓ ë thµnh thŞ, th«n trÊn vµ mét sè khu vùc phi chiÕn ®Êu !<color>");
 		return 0
 	else
 		return 1

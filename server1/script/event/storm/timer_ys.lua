@@ -6,7 +6,7 @@ function OnTimer()
 		if (restcount == 0) then
 			storm_end(4)
 		else
-			Msg2Player(storm_gamename(4).."ÃÙ’Ω∑Á±© £”‡ ±º‰:"..storm_point2str(STORM_TIMER_YS*restcount).."∑÷")
+			Msg2Player(storm_gamename(4).."Khi™u chi’n Phong Ba cﬂn d≠ thÍi gian:"..storm_point2str(STORM_TIMER_YS*restcount).."phÛt")
 		end
 	else
 		TM_StopTimer(STORM_TIMERID_YS)

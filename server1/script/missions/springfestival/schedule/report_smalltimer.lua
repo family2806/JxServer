@@ -25,13 +25,13 @@ function report_add(tabPlayer, nGroupId)
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
 			if (nGroupId > CO_SMALLMAPCOUNT) then
-		    	szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", ÕÒµ½"..CO_MOUSENAME..tabPlayer[i][2].."´Î";
+		    	szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", t×m ®­îc"..CO_MOUSENAME..tabPlayer[i][2].."lÇn";
 		    else
-		    	szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", Çý¸Ï30ËêÈË"..tabPlayer[i][2].."´Î";
+		    	szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", ®uæi ¤ng ba m­¬i"..tabPlayer[i][2].."lÇn";
 		    end;
 		end
 	end
-	--ÅÅÐòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
+	--ÅÅÐòºó´ÓÇ°µ½ºó¾ÍÊÇÃûlÇnµÄÏÈºó
 	for i = 1, getn(tabPlayer) do
 		PlayerIndex = tabPlayer[i][1];
 		if (bSave == 1) then
@@ -41,9 +41,9 @@ function report_add(tabPlayer, nGroupId)
 			Msg2Player(szMsg)
 		end
 		if (nGroupId > CO_SMALLMAPCOUNT) then
-		    Msg2Player("Ä¿Ç°ÄãÕÒµ½ <color=yellow>"..CO_MOUSENAME..GetTask(TK_CO_COUNT_ONETIME).."<color>´Î"..", Ä¿Ç°ÅÅÃûµÚ<color=yellow>"..i.."<color>.");
+		    Msg2Player("HiÖn b¹n t×m ®­îc <color=yellow>"..CO_MOUSENAME..GetTask(TK_CO_COUNT_ONETIME).."<color>lÇn"..", hiÖn ®ang xÕp thø <color=yellow>"..i.."<color>.");
 		else
-			Msg2Player("ÒÑÇý¸Ï <color=yellow>30ËêÈË"..GetTask(TK_CO_COUNT_ONETIME).."<color>´Î"..", Ä¿Ç°ÅÅÃûµÚ<color=yellow>"..i.."<color>.");
+			Msg2Player("§· ®uæi <color=yellow>¤ng ba m­¬i"..GetTask(TK_CO_COUNT_ONETIME).."<color>lÇn"..", hiÖn ®ang xÕp thø <color=yellow>"..i.."<color>.");
 		end;
 	end;
 end;

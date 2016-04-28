@@ -4,21 +4,21 @@
 function main()
 	UTask_sl = GetTask(7)
 	if (UTask_sl == 50*256+10)then		-- 50¼¶ÈÎÎñ½øĞĞÖĞ
-		Talk(1,"","ÎÒÖªµÀÒ»¸ö¹ØÓÚ³ÎÔ¶Ê¦ĞÖµÄĞ¡ÃØÃÜ£¬Èç¹ûÄãÏëÖªµÀ£¬¾ÍÈ¥ÍµÍµµØ¸øÎÒÅªÖ»ÉÕ¼¦À´£¬ÌìÌì³ÔËØ£¬ÎÒÊµÔÚÊÇ°¾²»×¡ÁË!")
+		Talk(1,"","Ta biÕt mét bİ mËt nhá vÒ TrÇn ViÔn s­ huynh, nÕu muèn biÕt th× mau mau lµm con gµ n­íng cho ta ¨n, ngµy nµo còng ¨n chay, thËt ch¸n chÕt ®i ®­îc!")
 		SetTask(7,50*256+20)
-		AddNote("³ÎĞÄÖªµÀ³ÎÔ¶µÄÃØÃÜ£¬µ«ÊÇĞèÒª»ßÂ¸¿¾¼¦²ÅÄÜËµ. ")
-		Msg2Player("³ÎĞÄÖªµÀ³ÎÔ¶µÄÃØÃÜ£¬µ«ÊÇĞèÒª»ßÂ¸¿¾¼¦²ÅÄÜËµ. ")
+		AddNote("Trõng T©m biÕt ®­îc bİ mËt cña Trõng ViÔn, nh­ng ph¶i hèi lé gµ quay th× míi nãi. ")
+		Msg2Player("Trõng T©m biÕt ®­îc bİ mËt cña Trõng ViÔn, nh­ng ph¶i hèi lé gµ quay th× míi nãi. ")
 	elseif (UTask_sl == 50*256+20) then
 		if (HaveItem(123) == 1) then
-			Talk(1,"","Å¶£¬¿¾¼¦Ì«ºÃ³ÔÁË£¬¹ıÀ´£¬ÎÒ¸æËßÄãÃØÃÜ£º³ÎÔ¶Ê¦ĞÖËÀÇ°ÔÚµØÉÏĞ´ÁË3¸öºÅÊÇ£º4, 5, 3. µ«ÊÇ£¬Ã¿ÈËÖªµÀÊÇÊ²Ã´ÒâË¼")
-			Msg2Player("´ø¿¾¼¦¸ø³ÎĞÄ£¬ÖªµÀ£º³ÎÔ¶ÔÚµØÉÏĞ´ÏÂ3¸öºÅ4, 5, 3. ")
-			AddNote("´ø¿¾¼¦¸ø³ÎĞÄ£¬ÖªµÀ£º³ÎÔ¶ÔÚµØÉÏĞ´ÏÂ3¸öºÅ4, 5, 3. ")
+			Talk(1,"","Oh, gµ n­íng ngon qu¸ ®i! GhĞ tai tíi ®©y ta nãi cho nghe bİ mËt: N¨m x­a tr­íc khi Tr×nh ViÔn s­ huynh chÕt ®· viÕt bèn sè lªn ®Êt lµ: 4, 5, 3. Nh­ng kh«ng ai hiÓu ®­îc ı nghÜa ®ã lµ g×!")
+			Msg2Player("§em gµ quay cho Trõng T©m, ®­îc h¾n chØ: N¨m x­a Trõng ViÔn ®· viÕt ra trªn ®Êt ba con sè: 4, 5, 3. ")
+			AddNote("§em gµ quay cho Trõng T©m, ®­îc h¾n chØ: N¨m x­a Trõng ViÔn ®· viÕt ra trªn ®Êt ba con sè: 4, 5, 3. ")
 			DelItem(123)
 			SetTask(7,50*256+30)
 		else
-			Talk(1,"","ÎÒÖªµÀ³ÎÔ¶Ê¦ĞÖÒ»¸öĞ¡ÃØÃÜ£¬Èç¹ûÏëÖªµÀ£¬¿ìÈ¥´ø¸ö¿¾¼¦¸øÎÒ£¬Ã¿Ìì¶¼³ÔÕ«£¬ÕæÊÇ°¾²»×¡ÁË!")
+			Talk(1,"","Ta biÕt mét bİ mËt nhá vÒ TrÇn ViÔn s­ huynh, nÕu muèn biÕt th× mau mau lµm con gµ n­íng cho ta ¨n, ngµy nµo còng ¨n chay, thËt ch¸n chÕt ®i ®­îc!")
 		end
 	else							-- ³£¹æ¶Ô»°
-		Talk(1,"","·½ÕÉÌ«Å³ÈõÁË£¬Èç¹û¼ÌĞøÕâÑù£¬½ğÈË½«ÆÛ¸ºµ½ÎÒÃÇÍ·ÉÏ.")
+		Talk(1,"","Ph­¬ng tr­îng nhu nh­îc qu¸, nÕu cø tiÕp tôc nh­ vËy ng­êi Kim sÏ ®Ì ®Çu c­ìi cæ chóng ta mµ ®i ®ã.")
 	end
 end;

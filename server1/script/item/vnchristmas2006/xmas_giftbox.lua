@@ -4,13 +4,13 @@
 
 TB_Giftbox = {
  --1.ÎïÆ·Ãû	    2.ÎïÆ·ID	3.µôÂä¼¸ÂÊ
-	{"Ñ©»¨", 			1312,		20	},
-	{"ÇÑ×Ó",		1313,		20	},
-	{"ËÉÖ¦",	1314,		20	},
-	{"Ê¥µ®Ã±",		1315,		18	},
-	{"Î§½í (ÂÌ)",	1316,		11	},
-	{"Î§½í (®áºì)",	1317,		5		},
-	{"ËÉ",		1318,		1		},
+	{"Hoa tuyÕt", 			1312,		20	},
+	{"Cµ rèt",		1313,		20	},
+	{"Cµnh th«ng",	1314,		20	},
+	{"Nãn gi¸ng sinh",		1315,		18	},
+	{"Kh¨n choµng (xanh)",	1316,		11	},
+	{"Kh¨n choµng (®á)",	1317,		5		},
+	{"C©y th«ng ",		1318,		1		},
 }
 
 function main()
@@ -22,7 +22,7 @@ function main()
 		PItem = PItem + TB_Giftbox[ngift][3];
 		if(PGetItem < PItem) then
 			AddItem(6,1,TB_Giftbox[ngift][2],1,0,0,0);
-			Msg2Player("Äú»ñµÃÊ¥µ®Ô­ÁÏ:"..TB_Giftbox[ngift][1]);
+			Msg2Player("B¹n nhÆt ®­îc nguyªn liÖu gi¸ng sinh:"..TB_Giftbox[ngift][1]);
 			return
 		end
 	end

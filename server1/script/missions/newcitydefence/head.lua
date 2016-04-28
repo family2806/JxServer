@@ -170,10 +170,10 @@ function cd_buildfightnpc_old()
 	local citycamp = GetMissionV( MS_CITYCAMP )
 --print(citycamp.."==citycamp")
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 	local npccount_1 = floor( filehigh * 0.82 )		--1886
 	local npccount_2 = floor( filehigh * 0.12 )		--276
@@ -192,23 +192,23 @@ function GameOver()
 	local citycamp = GetMissionV(MS_CITYCAMP)
 	local campname = ""
 	if ( citycamp == 1 ) then
-		campname = "ËÎ¾ü"
+		campname = "Qu©n Tèng"
 	else
-		campname = "½ð¾ü"
+		campname = "Qu©n Kim"
 	end
 	local isWin = 0;--¼ÇÂ¼ÊÇ·ñÊ¤Àû£­£­byÖ¾É½
 	if ( GetMissionV(MS_CITYDEFENCE) == 1 ) then
 		isWin = 1;--byÖ¾É½
 		--Ê¤Àû
 		cd_awardall(campname)
-		AddGlobalNews("Í¨¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."³É¹¦±£ÎÀ³Ç³Ø ")
-		Msg2MSAll( MISSIONID, "Í¨¹ý¼¤ÁÒµÄÕ½¶·, "..campname.."³É¹¦±£ÎÀ³Ç³Ø" )
-		cd_writelog(date("%m-%d,%H:%M;")..campname.."ÊØ³Ç³É¹¦, ÈËÊý=="..GetMSPlayerCount(MISSIONID, 0))
+		AddGlobalNews("tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."b¶o vÖ thµnh c«ng thµnh tr×!")
+		Msg2MSAll( MISSIONID, "tr¶i qua chiÕn ®Êu quyÕt liÖt, "..campname.."b¶o vÖ thµnh c«ng thµnh tr×!" )
+		cd_writelog(date("%m-%d,%H:%M;")..campname.."Thñ thµnh thµnh c«ng, sè ng­êi=="..GetMSPlayerCount(MISSIONID, 0))
 	else
 		--Ê§°Ü
-		AddGlobalNews("¾­¹ý¼¤ÁÒµÄÕ½¶·,ËäÈ»ÒÑ¾­Å¬Á¦¿¹µÐ£¬µ«ÊÇ»¹ÊÇÊ§°ÜÁË")
-		Msg2MSAll( MISSIONID, "¾­¹ý¼¤ÁÒµÄÕ½¶·,ËäÈ»ÒÑ¾­Å¬Á¦¿¹µÐ£¬µ«ÊÇ»¹ÊÇÊ§°ÜÁË" )
-		cd_writelog(date("%m-%d,%H:%M;")..campname.."ÊØ³ÇÊ§°Ü, ÈËÊý=="..GetMSPlayerCount(MISSIONID, 0).."; »¹Ê£npcÊýÁ¿Îª, "..tbSOLDIER_NAME[1]..":"..GetMissionV(MS_MAXCOUNTNPC_1)..";"..tbSOLDIER_NAME[2]..":"..GetMissionV(MS_MAXCOUNTNPC_1+1)..";"..tbSOLDIER_NAME[3]..":"..GetMissionV(MS_MAXCOUNTNPC_1+2)..";"..tbSOLDIER_NAME[4]..":"..GetMissionV(MS_MAXCOUNTNPC_1+3)..";"..tbSOLDIER_NAME[5]..":"..GetMissionV(MS_MAXCOUNTNPC_1+4)..";")
+		AddGlobalNews("Tr¶i qua cuéc chiÕn kÞch liÖt, dï ®· cè g¾ng nh­ng cuèi cïng b¹n bªn b¹n chèng kh«ng l¹i ®Þch, thñ thµnh thÊt b¹i……")
+		Msg2MSAll( MISSIONID, "Tr¶i qua cuéc chiÕn kÞch liÖt, dï ®· cè g¾ng nh­ng cuèi cïng b¹n bªn b¹n chèng kh«ng l¹i ®Þch, thñ thµnh thÊt b¹i……" )
+		cd_writelog(date("%m-%d,%H:%M;")..campname.."Thñ thµnh thÊt b¹i, sè ng­êi=="..GetMSPlayerCount(MISSIONID, 0).."; sè l­îng npc cßn l¹i, "..tbSOLDIER_NAME[1]..":"..GetMissionV(MS_MAXCOUNTNPC_1)..";"..tbSOLDIER_NAME[2]..":"..GetMissionV(MS_MAXCOUNTNPC_1+1)..";"..tbSOLDIER_NAME[3]..":"..GetMissionV(MS_MAXCOUNTNPC_1+2)..";"..tbSOLDIER_NAME[4]..":"..GetMissionV(MS_MAXCOUNTNPC_1+3)..";"..tbSOLDIER_NAME[5]..":"..GetMissionV(MS_MAXCOUNTNPC_1+4)..";")
 	end
 	--cd_WinLadder(isWin) --ÅÅÐÐ
 	local tbPlayer = {};
@@ -262,9 +262,9 @@ function cd_join(camp)
 	SetTempRevPos(mapid, posx * 32, posy * 32);
 	SetDeathScript( FILE_PLAYERDEATH );
 	if (GetMissionV(MS_STATE) == 2) then
-		Msg2Player("ÄãÒÑ¼ÓÈë <color=white>"..GetMissionS(MS_S_CD_NAME).."<color> ·½. ÊØ³Ç½«ÁìÎª"..GetMissionV(MS_SHOUCHENGWEIBING).."ÈË£¬×Ü¹²Ô®±øÎª"..GetMSPlayerCount(MISSIONID, 0).."ÈË.")
+		Msg2Player("B¹n ®· gia nhËp <color=white>"..GetMissionS(MS_S_CD_NAME).."<color> phe. T­íng lÜnh thñ thµnh hiÖn lµ "..GetMissionV(MS_SHOUCHENGWEIBING).."ng­êi, viÖn binh tæng céng"..GetMSPlayerCount(MISSIONID, 0).."ng­êi.")
 	else
-		Msg2Player("ÄãÒÑ¼ÓÈë"..GetMissionS(MS_S_CD_NAME).."·½.")
+		Msg2Player("B¹n ®· gia nhËp"..GetMissionS(MS_S_CD_NAME).."phe.")
 	end
 	DynamicExecuteByPlayer(PlayerIndex, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "fenghuoliancheng")
 end
@@ -285,7 +285,7 @@ function cd_awardall(szCampName)		--ÊØ³Ç³É¹¦·¢½±
 	end 	
  	
  	oldPlayerIndex = PlayerIndex;
- 	local szMsg = szCampName.."»ñµÃ×îºóÊ¤Àû£¬»ñµÃ%d ¾­ÑéÖµ."
+ 	local szMsg = szCampName.."Giµnh ®­îc th¾ng lîi cuèi cïng, nhËn ®­îc %d ®iÓm kinh nghiÖm."
  	for i= 1, getn(tbPlayer) do 
  		PlayerIndex = tbPlayer[i];
  		local nsumExp = cd_calc_sumexp();
@@ -381,7 +381,7 @@ function cd_awardItem_cc()
 		else
 			print("itemparam error!!!! itemid = "..itemid)
 		end
-		Msg2Player("Äú»ñµÃ<color=yellow>"..TB_CD_AWARDITEM[itemid][1])
+		Msg2Player("B¹n nhËn ®­îc<color=yellow>"..TB_CD_AWARDITEM[itemid][1])
 end
 
 -- Çå³ýÉÏ´Î·é»ðÊ±¼ÆËãµÄÀÛ¼Æ¾­Ñé

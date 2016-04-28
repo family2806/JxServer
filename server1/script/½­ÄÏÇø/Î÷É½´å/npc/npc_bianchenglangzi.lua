@@ -2,5 +2,5 @@
 -- ÀîĞÀ 2005-01-26
 
 function main()
-	Talk(1,"","¶ÀĞĞÀË×Ó, ÄĞ, ¶ÀÉí.<enter>×¨ÓÃÎäÆ÷: ¶ÀÃÅ±øÆ÷,³¤Ò»³ßÈı·Ö, ¿í6·Ö6, ÉíÊÀ²»Ïê.")
+	Talk(1,"","L·ng tö ®éc hµnh, nam, ®éc th©n.<enter>Vò khİ chuyªn dïng: Binh khİ ®éc m«n, dµi mét th­íc t¸m ph©n, réng 6 ph©n 6, th©n thÕ ch­a râ….")
 end;

@@ -1,266 +1,266 @@
 IncludeLib("LEAGUE")
 function query()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "ÎÒµÄ±ÈÈüĞÅÏ¢/selfmatch", "ÎÒµÄ±ÈÈüĞÅÏ¢/owntong", "ÆäËû±ÈÈüĞÅÏ¢/whichtong", "Ë³±ãÂ·¹ı/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "Tin tøc thi ®Êu cña m×nh/selfmatch", "Tin tøc thi ®Êu cña khu vùc m×nh/owntong", "Tin tøc thi ®Êu cña khu vùc kh¸c/whichtong", "Nh©n tiÖn ghĞ qua th«i/no");
 end
 
 function owntong()
-	Say("ÄãÏë¿´ÄÄ¸öÏîÄ¿µÄ±ÈÈüĞÅÏ¢?", 7, "±ÈÈüÃÅÅÉĞÅÏ¢/owntong_SINGLE", "Ë«¶·/owntong_DOUBLE", "ÎåĞĞ¶·/owntong_FIVE", "Ê®ÅÉ¶·/owntong_TEN", "Ê®Áù¶·/owntong_SIXTEEN", "ÉÏÒ»Ò³/query", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ®¬n ®Êu cña m«n ph¸i nµo?", 7, "Danh s¸ch m«n ph¸i thi ®Êu/owntong_SINGLE", "Song ®Êu/owntong_DOUBLE", "Ngò hµnh ®Êu/owntong_FIVE", "ThËp ph¸i ®Êu/owntong_TEN", "ThËp lôc ®Êu/owntong_SIXTEEN", "ÉÏÒ»Ò³/query", "¹Ø±Õ/no");
 end
 
 function owntong_SINGLE()
-	Say("ÄãÏë¿´ÄÄ¸öÃÅÅÉµÄµ¥¶·±ÈÈüĞÅÏ¢?", 12, "ÉÙÁÖ/owntong_sl", "ÌìÍõ/owntong_tw", "ÌÆÃÅ/owntong_tm", "Îå¶¾/owntong_wu", "¶ëÃ¼/owntong_em", "´äÑÌ/owntong_cy", "Ø¤°ï/owntong_gb", "ÌìÈÌ/owntong_tr", "Îäµ±/owntong_wd", "Ø¤°ï/owntong_kl", "ÉÏÒ»Ò³/owntong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ®¬n ®Êu cña m«n ph¸i nµo?", 12, "ThiÕu L©m/owntong_sl", "Thiªn V­¬ng/owntong_tw", "§­êng M«n/owntong_tm", "Ngò §éc/owntong_wu", "Nga Mi/owntong_em", "Thóy Yªn/owntong_cy", "C¸i Bang/owntong_gb", "Thiªn NhÉn/owntong_tr", "Vâ §ang/owntong_wd", "C«n L«n/owntong_kl", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_sl()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ1_";
-	Say("ÄãÏë¿´ÉÙÁÖµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(1,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(1,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(1,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(1,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(1,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 1_";
+	Say("Ng­¬i muèn xem tin tøc ThiÕu L©m ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(1,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(1,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(1,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(1,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(1,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_tw()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ2_";
-	Say("ÄãÏë¿´ÌìÍõµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(2,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(2,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(2,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(2,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(2,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 2_";
+	Say("Ng­¬i muèn xem tin tøc Thiªn V­¬ng ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(2,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(2,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(2,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(2,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(2,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_tm()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ3_";
-	Say("ÄãÏë¿´ÌÆÃÅµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(3,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(3,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(3,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(3,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(3,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 3_";
+	Say("Ng­¬i muèn xem tin tøc §­êng M«n ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(3,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(3,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(3,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(3,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(3,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_wu()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ4_";
-	Say("ÄãÏë¿´Îå¶¾µ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(4,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(4,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(4,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(4,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(4,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 4_";
+	Say("Ng­¬i muèn xem tin tøc Ngò §éc ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(4,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(4,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(4,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(4,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(4,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_em()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ5_";
-	Say("ÄãÏë¿´¶ëÃ¼µ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(5,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(5,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(5,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(5,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(5,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 5_";
+	Say("Ng­¬i muèn xem tin tøc Nga My ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(5,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(5,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(5,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(5,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(5,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_cy()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ6_";
-	Say("ÄãÏë¿´´äÑÌµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(6,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(6,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(6,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(6,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(6,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 6_";
+	Say("Ng­¬i muèn xem tin tøc Thóy Yªn ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(6,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(6,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(6,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(6,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(6,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_gb()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ7_";
-	Say("ÄãÏë¿´Ø¤°ïµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(7,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(7,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(7,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(7,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(7,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 7_";
+	Say("Ng­¬i muèn xem tin tøc C¸i Bang ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(7,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(7,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(7,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(7,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(7,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_tr()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ8_";
-	Say("ÄãÏë¿´ÌìÈÌµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(8,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(8,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(8,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(8,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(8,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 8_";
+	Say("Ng­¬i muèn xem tin tøc Thiªn NhÉn ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(8,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(8,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(8,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(8,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(8,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_wd()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ 9_";
-	Say("ÄãÏë¿´Îäµ±µ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(9,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(9,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(9,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(9,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(9,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 9_";
+	Say("Ng­¬i muèn xem tin tøc Vâ §ang ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(9,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(9,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(9,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(9,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(9,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_kl()
-	local owntongteamname = getowntongname().."µ¥¶·ÃÅÅÉ10_";
-	Say("ÄãÏë¿´À¥ÂØµ¥¶·ÄÄ¸öÕ½¶ÓµÄ±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(10,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(10,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(10,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(10,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(10,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."M«n ph¸i ®¬n ®Êu 10_";
+	Say("Ng­¬i muèn xem tin tøc C«n L«n ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(10,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(10,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(10,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(10,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(10,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_DOUBLE()
-	local owntongteamname = getowntongname().."Ë«¶·";
-	Say("ÄãÏë¿´ÄÄ¸öÕ½¶ÓµÄË«ÈË¶·±ÈÈüĞÅÏ¢?", 7, "µÚ1×é".."/#tonginfo(11,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(11,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(11,'"..owntongteamname.."3')", "µÚ4×é".."/#tonginfo(11,'"..owntongteamname.."4')", "µÚ5×é".."/#tonginfo(11,'"..owntongteamname.."5')", "ÉÏÒ»Ò³/owntong_SINGLE", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."Song ®Êu";
+	Say("Ng­¬i muèn xem tin tøc Song Nh©n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(11,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(11,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(11,'"..owntongteamname.."3')", "Nhãm thø 4".."/#tonginfo(11,'"..owntongteamname.."4')", "Nhãm thø 5".."/#tonginfo(11,'"..owntongteamname.."5')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_FIVE()
-	local owntongteamname = getowntongname().."ÎåĞĞ¶·";
-	Say("ÄãÏë¿´ÄÄ¸öÕ½¶ÓµÄÎåĞĞ¶·±ÈÈüĞÅÏ¢?", 5, "µÚ1×é".."/#tonginfo(12,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(12,'"..owntongteamname.."2')", "µÚ3×é".."/#tonginfo(12,'"..owntongteamname.."3')", "ÉÏÒ»Ò³/owntong", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."Ngò hµnh ®Êu";
+	Say("Ng­¬i muèn xem tin tøc Ngò hµnh ®Êu cña chiÕn ®éi nµo?", 5, "Nhãm thø 1".."/#tonginfo(12,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(12,'"..owntongteamname.."2')", "Nhãm thø 3".."/#tonginfo(12,'"..owntongteamname.."3')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_TEN()
-	local owntongteamname = getowntongname().."Ê®È«¶·";
-	Say("ÄãÏë¿´ÄÄ¸öÕ½¶ÓµÄÊ®È«¶·±ÈÈüĞÅÏ¢?", 4, "µÚ1×é".."/#tonginfo(13,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(13,'"..owntongteamname.."2')", "ÉÏÒ»Ò³/owntong", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."ThËp toµn ®Êu";
+	Say("Ng­¬i muèn xem tin tøc ThËp toµn ®Êu cña chiÕn ®éi nµo?", 4, "Nhãm thø 1".."/#tonginfo(13,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(13,'"..owntongteamname.."2')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function owntong_SIXTEEN()
-	local owntongteamname = getowntongname().."Ê®Áù¶·";
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "µÚ1×é".."/#tonginfo(14,'"..owntongteamname.."1')", "µÚ2×é".."/#tonginfo(14,'"..owntongteamname.."2')", "ÉÏÒ»Ò³/owntong", "¹Ø±Õ/no");
+	local owntongteamname = getowntongname().."ThËp lôc ®Êu";
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "Nhãm thø 1".."/#tonginfo(14,'"..owntongteamname.."1')", "Nhãm thø 2".."/#tonginfo(14,'"..owntongteamname.."2')", "Trang tr­íc/owntong", "¹Ø±Õ/no");
 end
 
 function whichtong()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 6, "Çø1 ~   Çø 5/tong_1to5", "Khu 6 ~ Khu10/tong_6to10", "Çø 11 ~ Çø15/tong_11to15", "Çø16 ~ Çø 22/tong_16to22", "ÉÏÒ»Ò³/query", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 6, "Khu 1 ~   Khu 5/tong_1to5", "Khu 6 ~ Khu10/tong_6to10", "Khu 11 ~ Khu15/tong_11to15", "Khu 16 ~ Khu 22/tong_16to22", "ÉÏÒ»Ò³/query", "¹Ø±Õ/no");
 end
 
 function tong_1to5()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 7, "Çø1/tong_1", "Çø2/tong_2", "Khu 3/tong_3", "Çø 4/tong_4", "Çø5/tong_5", "ÉÏÒ»Ò³/whichtong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 7, "Khu 1/tong_1", "Khu 2/tong_2", "Khu 3/tong_3", "Khu 4/tong_4", "Khu 5/tong_5", "Trang tr­íc/whichtong", "¹Ø±Õ/no");
 end
 
 function tong_6to10()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 7, "Çø 6/tong_6", "Çø 7/tong_7", "Çø8/tong_8", "Çø 9/tong_9", "Çø 10/tong_10", "ÉÏÒ»Ò³/whichtong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 7, "Khu 6/tong_6", "Khu 7/tong_7", "Khu 8/tong_8", "Khu 9/tong_9", "Khu 10/tong_10", "Trang tr­íc/whichtong", "¹Ø±Õ/no");
 end
 
 function tong_11to15()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 7, "Çø11/tong_11", "Çø12/tong_12", "Çø 13/tong_13", "Çø 14/tong_14", "Çø 15/tong_15", "ÉÏÒ»Ò³/whichtong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 7, "Khu 11/tong_11", "Khu 12/tong_12", "Khu 13/tong_13", "Khu 14/tong_14", "Khu 15/tong_15", "Trang tr­íc/whichtong", "¹Ø±Õ/no");
 end
 
 function tong_16to22()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 8, "Çø16/tong_16", "Çø 17/tong_17", "Çø 18/tong_18", "Çø19/tong_19", "Çø 20/tong_20", "Çø 22/tong_22", "ÉÏÒ»Ò³/whichtong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 8, "Khu 16/tong_16", "Khu 17/tong_17", "Khu 18/tong_18", "Khu 19/tong_19", "Khu 20/tong_20", "Khu 22/tong_22", "Trang tr­íc/whichtong", "¹Ø±Õ/no");
 end
 
 function tong_1()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "1-1/#othertong('1-1')", "1-2/#othertong('1-2')", "1-3/#othertong('1-3')", "ÉÏÒ»Ò³/tong_1to5", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "1-1/#othertong('1-1')", "1-2/#othertong('1-2')", "1-3/#othertong('1-3')", "Trang tr­íc/tong_1to5", "¹Ø±Õ/no");
 end
 
 function tong_2()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "2-1/#othertong('2-1')", "2-2/#othertong('2-2')", "2-3/#othertong('2-3')", "ÉÏÒ»Ò³/tong_1to5", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "2-1/#othertong('2-1')", "2-2/#othertong('2-2')", "2-3/#othertong('2-3')", "Trang tr­íc/tong_1to5", "¹Ø±Õ/no");
 end
 
 function tong_3()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "3-1/#othertong('3-1')", "3-2/#othertong('3-2')", "3-3/#othertong('3-3')", "ÉÏÒ»Ò³/tong_1to5", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "3-1/#othertong('3-1')", "3-2/#othertong('3-2')", "3-3/#othertong('3-3')", "Trang tr­íc/tong_1to5", "¹Ø±Õ/no");
 end
 
 function tong_4()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "4-1/#othertong('4-1')", "4-2/#othertong('4-2')", "4-3/#othertong('4-3')", "ÉÏÒ»Ò³/tong_1to5", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "4-1/#othertong('4-1')", "4-2/#othertong('4-2')", "4-3/#othertong('4-3')", "Trang tr­íc/tong_1to5", "¹Ø±Õ/no");
 end
 
 function tong_5()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "5-1/#othertong('5-1')", "5-2/#othertong('5-2')", "ÉÏÒ»Ò³/tong_1to5", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "5-1/#othertong('5-1')", "5-2/#othertong('5-2')", "Trang tr­íc/tong_1to5", "¹Ø±Õ/no");
 end
 
 function tong_6()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "6-1/#othertong('6-1')", "6-2/#othertong('6-2')", "6-3/#othertong('6-3')", "ÉÏÒ»Ò³/tong_6to10", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "6-1/#othertong('6-1')", "6-2/#othertong('6-2')", "6-3/#othertong('6-3')", "Trang tr­íc/tong_6to10", "¹Ø±Õ/no");
 end
 
 function tong_7()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "7-1/#othertong('7-1')", "7-2/#othertong('7-2')", "7-3/#othertong('7-3')", "ÉÏÒ»Ò³/tong_6to10", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "7-1/#othertong('7-1')", "7-2/#othertong('7-2')", "7-3/#othertong('7-3')", "Trang tr­íc/tong_6to10", "¹Ø±Õ/no");
 end
 
 function tong_8()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "8-1/#othertong('8-1')", "8-2/#othertong('8-2')", "ÉÏÒ»Ò³/tong_6to10", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "8-1/#othertong('8-1')", "8-2/#othertong('8-2')", "Trang tr­íc/tong_6to10", "¹Ø±Õ/no");
 end
 
 function tong_9()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "9-1/#othertong('9-1')", "9-2/#othertong('9-2')", "ÉÏÒ»Ò³/tong_6to10", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "9-1/#othertong('9-1')", "9-2/#othertong('9-2')", "Trang tr­íc/tong_6to10", "¹Ø±Õ/no");
 end
 
 function tong_10()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "10-1/#othertong('10-1')", "10-2/#othertong('10-2')", "ÉÏÒ»Ò³/tong_6to10", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "10-1/#othertong('10-1')", "10-2/#othertong('10-2')", "Trang tr­íc/tong_6to10", "¹Ø±Õ/no");
 end
 
 function tong_11()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 5, "11-1/#othertong('11-1')", "11-2/#othertong('11-2')", "11-3/#othertong('11-3')", "ÉÏÒ»Ò³/tong_11to15", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 5, "11-1/#othertong('11-1')", "11-2/#othertong('11-2')", "11-3/#othertong('11-3')", "Trang tr­íc/tong_11to15", "¹Ø±Õ/no");
 end
 
 function tong_12()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "12-1/#othertong('12-1')", "12-2/#othertong('12-2')", "ÉÏÒ»Ò³/tong_11to15", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "12-1/#othertong('12-1')", "12-2/#othertong('12-2')", "Trang tr­íc/tong_11to15", "¹Ø±Õ/no");
 end
 
 function tong_13()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "13-1/#othertong('13-1')", "13-2/#othertong('13-2')", "ÉÏÒ»Ò³/tong_11to15", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "13-1/#othertong('13-1')", "13-2/#othertong('13-2')", "Trang tr­íc/tong_11to15", "¹Ø±Õ/no");
 end
 
 function tong_14()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "14-1/#othertong('14-1')", "ÉÏÒ»Ò³/tong_11to15", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "14-1/#othertong('14-1')", "Trang tr­íc/tong_11to15", "¹Ø±Õ/no");
 end
 
 function tong_15()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "15-1/#othertong('15-1')", "ÉÏÒ»Ò³/tong_11to15", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "15-1/#othertong('15-1')", "Trang tr­íc/tong_11to15", "¹Ø±Õ/no");
 end
 
 function tong_16()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "16-1/#othertong('16-1')", "ÉÏÒ»Ò³/tong_16to22", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "16-1/#othertong('16-1')", "Trang tr­íc/tong_16to22", "¹Ø±Õ/no");
 end
 
 function tong_17()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "17-1/#othertong('17-1')", "ÉÏÒ»Ò³/tong_16to22", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "17-1/#othertong('17-1')", "Trang tr­íc/tong_16to22", "¹Ø±Õ/no");
 end
 
 function tong_18()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "18-1/#othertong('18-1')", "ÉÏÒ»Ò³/tong_16to22", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "18-1/#othertong('18-1')", "Trang tr­íc/tong_16to22", "¹Ø±Õ/no");
 end
 
 function tong_19()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "19-1/#othertong('19-1')", "ÉÏÒ»Ò³/tong_16to22", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "19-1/#othertong('19-1')", "Trang tr­íc/tong_16to22", "¹Ø±Õ/no");
 end
 
 function tong_20()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 4, "20-1/#othertong('20-1')", "20-2/#othertong('20-2')", "ÉÏÒ»Ò³/tong_16to20", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "20-1/#othertong('20-1')", "20-2/#othertong('20-2')", "Trang tr­íc/tong_16to20", "¹Ø±Õ/no");
 end
 
 function tong_22()
-	Say("ÄãÏë¿´ÄÄ¸öÇøÓòµÄ±ÈÈüĞÅÏ¢?", 3, "22-1/#othertong('22-1')", "ÉÏÒ»Ò³/tong_16to20", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 3, "22-1/#othertong('22-1')", "Trang tr­íc/tong_16to20", "¹Ø±Õ/no");
 end
 
 function othertong(tongname)
-	Say("ÄãÏë¿´ÄÄ¸öÃÅÅÉµÄ±ÈÈüĞÅÏ¢?", 7, "±ÈÈüÃÅÅÉÃûµ¥/#othertong_SINGLE('"..tongname.."')", "Ë«¶·/#othertong_DOUBLE('"..tongname.."')", "ÎåĞĞ¶·/#othertong_FIVE('"..tongname.."')", "Ê®ÅÉ¶·/#othertong_TEN('"..tongname.."')", "Ê®Áù¶·/#othertong_SIXTEEN('"..tongname.."')", "ÉÏÒ»Ò³/whichtong", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ®¬n ®Êu cña m«n ph¸i nµo?", 7, "Danh s¸ch m«n ph¸i thi ®Êu/#othertong_SINGLE('"..tongname.."')", "Song ®Êu/#othertong_DOUBLE('"..tongname.."')", "Ngò hµnh ®Êu/#othertong_FIVE('"..tongname.."')", "ThËp ph¸i ®Êu/#othertong_TEN('"..tongname.."')", "ThËp lôc ®Êu/#othertong_SIXTEEN('"..tongname.."')", "Trang tr­íc/whichtong", "¹Ø±Õ/no");
 end
 
 function othertong_SINGLE(tongname)
-	Say("ÄãÏë¿´ÄÄ¸öÃÅÅÉµÄ±ÈÈüĞÅÏ¢?", 12, "ÉÙÁÖ/#othertong_sl('"..tongname.."')", "ÌìÍõ/#othertong_tw('"..tongname.."')", "ÌÆÃÅ/#othertong_tm('"..tongname.."')", "Îå¶¾/#othertong_wu('"..tongname.."')", "¶ëÃ¼/#othertong_em('"..tongname.."')", "´äÑÌ/#othertong_cy('"..tongname.."')", "Ø¤°ï/#othertong_gb('"..tongname.."')", "ÌìÈÌ/#othertong_tr('"..tongname.."')", "Îäµ±/#othertong_wd('"..tongname.."')", "À¥ÂØ/#othertong_kl('"..tongname.."')", "ÉÏÒ»Ò³/#othertong('"..tongname.."')", "¹Ø±Õ/no");
+	Say("Ng­¬i muèn xem tin tøc ®¬n ®Êu cña m«n ph¸i nµo?", 12, "ThiÕu L©m/#othertong_sl('"..tongname.."')", "Thiªn V­¬ng/#othertong_tw('"..tongname.."')", "§­êng M«n/#othertong_tm('"..tongname.."')", "Ngò §éc/#othertong_wu('"..tongname.."')", "Nga Mi/#othertong_em('"..tongname.."')", "Thóy Yªn/#othertong_cy('"..tongname.."')", "C¸i Bang/#othertong_gb('"..tongname.."')", "Thiªn NhÉn/#othertong_tr('"..tongname.."')", "Vâ §ang/#othertong_wd('"..tongname.."')", "C«n L«n/#othertong_kl('"..tongname.."')", "Trang tr­íc/#othertong('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_sl(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶· 1_";
-	Say("ÄãÏë¿´ÉÙÁÖµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(1,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(1,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(1,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(1,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(1,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 1_";
+	Say("Ng­¬i muèn xem tin tøc ThiÕu L©m ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(1,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(1,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(1,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(1,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(1,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_tw(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  2_";
-	Say("ÄãÏë¿´ÌìÍõµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(2,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(2,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(2,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(2,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(2,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 2_";
+	Say("Ng­¬i muèn xem tin tøc Thiªn V­¬ng ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(2,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(2,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(2,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(2,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(2,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_tm(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  3_";
-	Say("ÄãÏë¿´ÌÆÃÅµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(3,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(3,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(3,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(3,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(3,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 3_";
+	Say("Ng­¬i muèn xem tin tøc §­êng M«n ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(3,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(3,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(3,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(3,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(3,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_wu(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  4_";
-	Say("ÄãÏë¿´Îå¶¾µ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(4,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(4,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(4,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(4,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(4,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 4_";
+	Say("Ng­¬i muèn xem tin tøc Ngò §éc ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(4,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(4,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(4,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(4,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(4,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_em(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶· 5_";
-	Say("ÄãÏë¿´¶ëÃ¼µ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(5,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(5,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(5,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(5,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(5,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 5_";
+	Say("Ng­¬i muèn xem tin tøc Nga My ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(5,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(5,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(5,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(5,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(5,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_cy(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  6_";
-	Say("ÄãÏë¿´´äÑÌµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(6,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(6,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(6,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(6,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(6,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 6_";
+	Say("Ng­¬i muèn xem tin tøc Thóy Yªn ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(6,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(6,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(6,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(6,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(6,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_gb(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  7_";
-	Say("ÄãÏë¿´Ø¤°ïµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(7,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(7,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(7,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(7,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(7,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 7_";
+	Say("Ng­¬i muèn xem tin tøc C¸i Bang ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(7,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(7,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(7,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(7,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(7,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_tr(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  8_";
-	Say("ÄãÏë¿´ÌìÈÌµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(8,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(8,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(8,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(8,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(8,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 8_";
+	Say("Ng­¬i muèn xem tin tøc Thiªn NhÉn ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(8,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(8,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(8,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(8,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(8,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_wd(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·  9_";
-	Say("ÄãÏë¿´Îäµ±µ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(9,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(9,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(9,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(9,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(9,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 9_";
+	Say("Ng­¬i muèn xem tin tøc Vâ §ang ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(9,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(9,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(9,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(9,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(9,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_kl(tongname)
-	local othertongteamname = tongname.."ÃÅÅÉµ¥¶·10_";
-	Say("ÄãÏë¿´À¥ÂØµ¥¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(10,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(10,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(10,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(10,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(10,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."M«n ph¸i ®¬n ®Êu 10_";
+	Say("Ng­¬i muèn xem tin tøc C«n L«n ®¬n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(10,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(10,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(10,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(10,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(10,'"..othertongteamname.."5')", "Trang tr­íc/#othertong_SINGLE('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_DOUBLE(tongname)
-	local othertongteamname = tongname.."Ë«¶·";
-	Say("ÄãÏë¿´Ë«¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 7, "µÚÒ»×é".."/#tonginfo(11,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(11,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(11,'"..othertongteamname.."3')", "µÚ4×é".."/#tonginfo(11,'"..othertongteamname.."4')", "µÚ5×é".."/#tonginfo(11,'"..othertongteamname.."5')", "ÉÏÒ»Ò³/#othertong('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."Song ®Êu";
+	Say("Ng­¬i muèn xem tin tøc Song Nh©n ®Êu cña chiÕn ®éi nµo?", 7, "Nhãm thø 1".."/#tonginfo(11,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(11,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(11,'"..othertongteamname.."3')", "Nhãm thø 4".."/#tonginfo(11,'"..othertongteamname.."4')", "Nhãm thø 5".."/#tonginfo(11,'"..othertongteamname.."5')", "Trang tr­íc/#othertong('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_FIVE(tongname)
-	local othertongteamname = tongname.."Ng?hµnh ®Êu";
-	Say("ÄãÏë¿´ÎåĞĞ¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 5, "µÚÒ»×é".."/#tonginfo(12,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(12,'"..othertongteamname.."2')", "µÚ3×é".."/#tonginfo(12,'"..othertongteamname.."3')", "ÉÏÒ»Ò³/#othertong('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."Ngò hµnh ®Êu";
+	Say("Ng­¬i muèn xem tin tøc Ngò hµnh ®Êu cña chiÕn ®éi nµo?", 5, "Nhãm thø 1".."/#tonginfo(12,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(12,'"..othertongteamname.."2')", "Nhãm thø 3".."/#tonginfo(12,'"..othertongteamname.."3')", "Trang tr­íc/#othertong('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_TEN(tongname)
-	local othertongteamname = tongname.."Ê®È«¶·";
-	Say("ÄãÏë¿´Ê®È«¶·ÄÄ¸öÕ½¶ÓĞÅÏ¢?", 4, "µÚÒ»×é".."/#tonginfo(13,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(13,'"..othertongteamname.."2')", "ÉÏÒ»Ò³/#othertong('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."ThËp toµn ®Êu";
+	Say("Ng­¬i muèn xem tin tøc ThËp toµn ®Êu cña chiÕn ®éi nµo?", 4, "Nhãm thø 1".."/#tonginfo(13,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(13,'"..othertongteamname.."2')", "Trang tr­íc/#othertong('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function othertong_SIXTEEN(tongname)
-	local othertongteamname = tongname.."Ê®Áù¶·";
-	Say("ÄãÏë¿´Ê®Áù¶·ÄÄ¸öÕ½¶ÓµÄĞÅÏ¢?", 4, "µÚÒ»×é".."/#tonginfo(14,'"..othertongteamname.."1')", "µÚ2×é".."/#tonginfo(14,'"..othertongteamname.."2')", "ÉÏÒ»Ò³/#othertong('"..tongname.."')", "¹Ø±Õ/no");
+	local othertongteamname = tongname.."ThËp lôc ®Êu";
+	Say("Ng­¬i muèn xem tin tøc ThËp lôc ®Êu cña chiÕn ®éi nµo?", 4, "Nhãm thø 1".."/#tonginfo(14,'"..othertongteamname.."1')", "Nhãm thø 2".."/#tonginfo(14,'"..othertongteamname.."2')", "Trang tr­íc/#othertong('"..tongname.."')", "¹Ø±Õ/no");
 end
 
 function getowntongname()
@@ -272,8 +272,8 @@ function tonginfo(matchtype, tongname)
 	print("getinfo-"..leagueid..":"..tongname)
 	local lid = LG_GetLeagueObj(leagueid, tongname)
 	if(FALSE(lid)) then
-		print("Ğ¡×é²»´æÔÚ");
-		Say("ÄãÏë¿´µÄ¶Ó²»´æÔÚ.", 0);
+		print("§éi nhãm kh«ng tån t¹i");
+		Say("§éi ng­¬i muèn xem kh«ng tån t¹i.", 0);
 		return 0
 	end
 	local mark = LG_GetLeagueTask(lid, 3);
@@ -295,19 +295,19 @@ function tonginfo(matchtype, tongname)
 			membername[i + 1] = name
 		end
 		local opp = selfinfo2next( lid, 0 )
-		Say("ÄãµÄ¶ÓÃûÊÇ[<color=red>"..leaguename.."<color>], ¶Ó³¤ÊÇ<color=red>"..captain.."<color> Ä¿Ç°ÕıÔÚ²Î¼Ó±ÈÈüÑ¡°Î½×¶Î£¬»ı·ÖÎª<color=red>"..mark.."<color>. ÒÑ¹ı <color=red>"..matchcount.."<color> ³¡±ÈÈü£¬Ê¤ <color=red>"..wincount.."<color> ³¡£¬´òÆ½ <color=red>"..drawcount.."<color> ³¡£¬°Ü <color=red>"..losecount.."<color> ³¡¡£³ÉÔ±°üÀ¨"..num.."ÈË£¬Ãûµ¥ÈçÏÂ:",getn(opp),opp );
+		Say("Tªn ®éi cña ng­¬i lµ [<color=red>"..leaguename.."<color>], ®éi tr­ëng lµ <color=red>"..captain.."<color> hiÖn ®ang trong giai ®o¹n dù tuyÓn thi ®Êu, ®iÓm tİch lòy lµ <color=red>"..mark.."<color>. §· qua <color=red>"..matchcount.."<color> trËn ®Êu, th¾ng <color=red>"..wincount.."<color> trËn, hßa <color=red>"..drawcount.."<color> trËn, b¹i <color=red>"..losecount.."<color> trËn. Thµnh viªn gåm"..num.."ng­êi, danh s¸ch nh­ sau:",getn(opp),opp );
 	else
 		leaugeid = matchtype + 30;
 		local lid = LG_GetLeagueObj(leaugeid, tongname)
 		local loldid = LG_GetLeagueObj(matchtype + 10,  tongname)
 		if(FALSE(loldid)) then
-			print("Ğ¡×é²»´æÔÚ");
-			Say("ÄãÏë¿´µÄ¶Ó²»´æÔÚ.", 0);
+			print("§éi nhãm kh«ng tån t¹i");
+			Say("§éi ng­¬i muèn xem kh«ng tån t¹i.", 0);
 			return 0
 		end
 		if(FALSE(lid)) then
-			print("Ğ¡×é²»´æÔÚ");
-			Say("ÄãÏë¿´µÄ¶Ó²»´æÔÚ.", 0);
+			print("§éi nhãm kh«ng tån t¹i");
+			Say("§éi ng­¬i muèn xem kh«ng tån t¹i.", 0);
 			return 0
 		end
 		local num = LG_GetMemberCount(loldid);
@@ -322,19 +322,19 @@ function tonginfo(matchtype, tongname)
 		end
 		local opp = selfinfo2next( loldid, 0 )
 		if ( position == 32 ) then
-			positioninfo = "×îÃÍ32¶Ó";
+			positioninfo = "32 ®éi m¹nh nhÊt";
 		elseif ( position == 16 ) then
-			positioninfo = "×îÃÍ16¶Ó";
+			positioninfo = "16 ®éi m¹nh nhÊt";
 		elseif ( position == 8 ) then
-			positioninfo = "×îÃÍ8¶Ó";
+			positioninfo = "8 ®éi m¹nh nhÊt";
 		elseif ( position == 4 ) then
-			positioninfo = "×îÃÍ4¶Ó";
+			positioninfo = "4 ®éi m¹nh nhÊt";
 		elseif ( position == 2 ) then
-			positioninfo = "×îºó¾ö¶¨";
+			positioninfo = "QuyÕt ®Şnh cuèi cïng";
 		else
-			print("±ÈÈü½×¶Î²»¶Ô");
+			print("Giai ®o¹n thi ®Êu kh«ng ®óng");
 		end
-		Say("¸ÃÕ½¶ÓµÄÃû×ÖÊÇ[ "..tongname.." ], ¶Ó³¤ÊÇ"..captain..", Ä¿Ç°ÕıÔÚ<color=red>"..positioninfo.."<color>. ³ÉÔ±°üÀ¨"..num..", Ãûµ¥ÈçÏÂ:", getn(opp), opp);
+		Say("Tªn cña chiÕn ®éi nµy lµ [ "..tongname.." ], ®éi tr­ëng lµ "..captain..", hiÖn ®ang ë <color=red>"..positioninfo.."<color>. Thµnh viªn gåm"..num..", danh s¸ch nh­ sau:", getn(opp), opp);
 	end
 end
 
@@ -344,30 +344,30 @@ function selfmatch()
 	playername = GetName()
 	local lid = LG_GetLeagueObjByRole(faction + 10, playername)
 	if (not FALSE(lid)) then
-		tab[getn(tab) + 1] = "±ÈÈüÃÅÅÉÃûµ¥/#selfinfo("..faction..")"
+		tab[getn(tab) + 1] = "Danh s¸ch m«n ph¸i thi ®Êu/#selfinfo("..faction..")"
 	end
 	for i = 11, 15 do 
 		local lid = LG_GetLeagueObjByRole(i + 10, playername)
 		if (not FALSE(lid)) then
 			local l_leaguename = LG_GetLeagueInfo(lid)
-			tab[getn(tab) + 1] = "Õ½¶Ó["..l_leaguename.."] ®·ÒÑ¼ÓÈë.".."/#selfinfo("..i..")"
+			tab[getn(tab) + 1] = "chiÕn ®éi ["..l_leaguename.."] ®· gia nhËp.".."/#selfinfo("..i..")"
 		end
 	end
 	if ( getn( tab ) == 0 ) then
-		Say("  Ä¿Ç°ÄãÎ´²Î¼ÓÈÎºÎ³¡´Î±ÈÈü!", 0)
+		Say("   HiÖn ng­¬i ch­a tham gia trËn ®Êu nµo!", 0)
 		return
 	end
-	tab[getn(tab) + 1] = "²»ĞèÒª/OnCancel"
+	tab[getn(tab) + 1] = "Kh«ng cÇn/OnCancel"
 	--Say("ÎäÁÖ´ó»á¹ÙÔ±£ºÄãÒª²éÑ¯×Ô¼ºµÄÄÄÏî±ÈÈüÄØ£¿", 7, "ÃÅÅÉµ¥ÏîÈü/#selfinfo(10)", "Ë«ÈËÈü/#selfinfo(11)", "ÎåĞĞÍÅ¶ÓÈü/#selfinfo(12)", "Ê®È«ÍÅ¶ÓÈü/#selfinfo(13)", "16ÈËÍÅ¶ÓÈü/#selfinfo(14)", "ÉÏÒ»Ò³/query", "¹Ø±Õ/no");
-	Say("   ÄãÒª²éÑ¯×Ô¼ºµÄÄÄÏî±ÈÈüÄØ?", getn(tab),tab);
+	Say("   Ng­¬i muèn xem môc thi ®Êu nµo cña m×nh?", getn(tab),tab);
 end
 
 function selfinfo(teamtpye)
 	local playername = GetName();
 	local lid = LG_GetLeagueObjByRole(teamtpye + 10,playername);
 	if(FALSE(lid)) then
-		print("Ğ¡×é²»´æÔÚ");
-		Say(" ÄãÎ´²Î¼Ó¸Ã±ÈÈüÏîÄ¿", 0);
+		print("§éi nhãm kh«ng tån t¹i");
+		Say("   Ng­¬i kh«ng tham gia môc thi ®Êu nµy", 0);
 		return 0
 	end
 	local leaguename = LG_GetLeagueInfo(lid)
@@ -390,21 +390,21 @@ function selfinfo(teamtpye)
 		end
 		local opp = selfinfo2next( lid, 0 )
 		
-		Say("ÄãµÄ¶ÓÃûÊÇ[<color=red>"..leaguename.."<color>], ¶Ó³¤ÊÇ<color=red>"..captain.."<color> Ä¿Ç°ÕıÔÚ²Î¼Ó±ÈÈüÑ¡°Î½×¶Î£¬»ı·ÖÎª<color=red>"..mark.."<color>. ÒÑ¹ı <color=red>"..matchcount.."<color> ³¡±ÈÈü£¬Ê¤ <color=red>"..wincount.."<color> ³¡£¬´òÆ½ <color=red>"..drawcount.."<color> ³¡£¬°Ü <color=red>"..losecount.."<color> ³¡¡£³ÉÔ±°üÀ¨"..num.."ÈË£¬Ãûµ¥ÈçÏÂ:",getn(opp),opp );
+		Say("Tªn ®éi cña ng­¬i lµ [<color=red>"..leaguename.."<color>], ®éi tr­ëng lµ <color=red>"..captain.."<color> hiÖn ®ang trong giai ®o¹n dù tuyÓn thi ®Êu, ®iÓm tİch lòy lµ <color=red>"..mark.."<color>. §· qua <color=red>"..matchcount.."<color> trËn ®Êu, th¾ng <color=red>"..wincount.."<color> trËn, hßa <color=red>"..drawcount.."<color> trËn, b¹i <color=red>"..losecount.."<color> trËn. Thµnh viªn gåm"..num.."ng­êi, danh s¸ch nh­ sau:",getn(opp),opp );
 	else
 		leaugeid = teamtpye + 30;
 		local lcirleid = LG_GetLeagueObjByRole(teamtpye + 10,playername);	--Ñ­»·ÈüµÄlid
 		local szleaguename = LG_GetLeagueInfo(lcirleid)
 		local lid = LG_GetLeagueObj(leaugeid,szleaguename);	--ÌÔÌ­ÈüµÄlid
 		if(FALSE(lcirleid)) then
-			print("Ğ¡×é²»´æÔÚ");
-			Say("ÄãÏë¿´µÄ¶Ó²»´æÔÚ.", 0);
+			print("§éi nhãm kh«ng tån t¹i");
+			Say("§éi ng­¬i muèn xem kh«ng tån t¹i.", 0);
 			return 0
 		end
 		
 		if(FALSE(lid)) then
-			print("Ğ¡×é²»´æÔÚ");
-			Say("ÄãÏë¿´µÄ¶Ó²»´æÔÚ.", 0);
+			print("§éi nhãm kh«ng tån t¹i");
+			Say("§éi ng­¬i muèn xem kh«ng tån t¹i.", 0);
 			return 0
 		end
 		local num = LG_GetMemberCount(lcirleid);
@@ -419,19 +419,19 @@ function selfinfo(teamtpye)
 		end
 		local opp = selfinfo2next( lcirleid, 0 )
 		if ( position == 32 ) then
-			positioninfo = "×îÇ¿32¶Ó";
+			positioninfo = "32 ®éi m¹nh nhÊt";
 		elseif ( position == 16 ) then
-			positioninfo = "×îÇ¿16¶Ó";
+			positioninfo = "16 ®éi m¹nh nhÊt";
 		elseif ( position == 8 ) then
-			positioninfo = "×îÇ¿8¶Ó";
+			positioninfo = "8 ®éi m¹nh nhÊt";
 		elseif ( position == 4 ) then
-			positioninfo = "×îÇ¿4¶Ó";
+			positioninfo = "4 ®éi m¹nh nhÊt";
 		elseif ( position == 2 ) then
-			positioninfo = "×îºó¾ö¶¨";
+			positioninfo = "QuyÕt ®Şnh cuèi cïng";
 		else
-			print("±ÈÈü½×¶Î²»¶Ô");
+			print("Giai ®o¹n thi ®Êu kh«ng ®óng");
 		end
-		Say("ÄãµÄ¶ÓÃûÊÇ[ "..leaguename.." ], ¶Ó³¤ÊÇ"..captain..",ÏÖÔÚÔÚ<color=red>"..positioninfo.."<color>. ³ÉÔ±°üÀ¨"..num..", Ãûµ¥ÈçÏÂ:", getn(opp), opp);
+		Say("Tªn ®éi cña ng­¬i lµ [ "..leaguename.." ], ®éi tr­ëng lµ "..captain..", hiÖn ®ang ë <color=red>"..positioninfo.."<color>. Thµnh viªn gåm"..num..", danh s¸ch nh­ sau:", getn(opp), opp);
 	end
 end
 
@@ -461,7 +461,7 @@ function selfinfo2next( lid, num )
 		for i = num+1, num+10 do
 			opp[ getn(opp) + 1 ] = membername[i].."/#selfinfo2next("..lid..","..(num+10)..")"
 		end
-		opp[getn(opp)+1] = "ÏÂÒ»Ò³/#selfinfo2next("..lid..","..(num+10)..")"
+		opp[getn(opp)+1] = "Trang kÕ /#selfinfo2next("..lid..","..(num+10)..")"
 	else
 		for i = num+1, getn( membername ) do
 			opp[getn(opp) + 1] = membername[i]
@@ -471,5 +471,5 @@ function selfinfo2next( lid, num )
 	if( num == 0 ) then
 		return opp
 	end
-	Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:", getn(opp), opp)
+	Say("Quan viªn Vâ l©m kiÖt xuÊt:", getn(opp), opp)
 end

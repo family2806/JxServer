@@ -56,34 +56,34 @@ function pActivity:GiveEatAward(TSK_EXP_A, TSK_DATE_A, TSK_EXP_B, nNumber)
 	{
 		{nExp_tl = 1000000, nRate = 40, 
 			pFun = function(tbItem, nItemCount, szLogTitle)
-				Talk(1, "", "Äã³ÔÒ»¿Ú'ËáÌğÅÅ¹Ç'»ñµÃ1.000.000 ¾­Ñé")
+				Talk(1, "", "Ng­¬i ¨n mét miÕng ' S­ên Xµo Chua Ngät'  nhËn ®­îc  1.000.000 kinh nghiÖm")
 				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 1000000 / %nNumber)
 				%self:AddTask(%TSK_EXP_B, nItemCount * 1000000 / %nNumber)
 			end
 		},
 		{nExp_tl = 2000000, nRate = 30,
 			pFun = function(tbItem, nItemCount, szLogTitle)
-				Talk(1, "", "Äã¼ĞÒ»¿éºÃ³ÔµÄ 'ºìÉÕÀğÓã' £¬»ñµÃ2.000.000¾­Ñé")
+				Talk(1, "", "Ng­¬i g¾p mét miÕng 'C¸ ChĞp Kho Om' ¨n ngon lµnh, nhËn ®­îc 2.000.000 kinh nghiÖm")
 				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 2000000 / %nNumber)
 				%self:AddTask(%TSK_EXP_B, nItemCount * 2000000 / %nNumber)
 			end
 		},
 		{nExp_tl = 3000000, nRate = 20,
 			pFun = function(tbItem, nItemCount, szLogTitle)
-				Talk(1, "", "ÄãÀ´Ò»¿éºÃ³ÔµÄ'½Ğ»¨¼¦' , »ñµÃ3.000.000¾­Ñé")
+				Talk(1, "", "Ng­¬i lÊy mét miÕng 'Gµ Trèng T¬' ¨n ngon lµnh, nhËn ®­îc 3.000.000 kinh nghiÖm")
 				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 3000000 / %nNumber)
 				%self:AddTask(%TSK_EXP_B, nItemCount * 3000000 / %nNumber)
 			end
 		},
 		{nExp_tl = 5000000, nRate = 10, 
 			pFun = function(tbItem, nItemCount, szLogTitle)
-				Talk(1, "", "ÄãÄÃÆğÒ»¿é'¿¾ÈéÖí' ³ÔÒ»¿ÚºÜºÃ³Ô,»ñµÃ5.000.000 ¾­Ñé")
+				Talk(1, "", "Ng­¬i cÇm lªn mét miÕng ' Heo S÷a Quay' ¨n mét miÕng ngon lµnh, nhËn ®­îc 5.000.000 kinh nghiÖm")
 				%self:AddTaskA(%TSK_EXP_A, %TSK_DATE_A, nItemCount * 5000000 / %nNumber)
 				%self:AddTask(%TSK_EXP_B, nItemCount * 5000000 / %nNumber)
 			end
 		},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "2011´óÑçÈºÏÀ,³Ô²Ë»ñµÃ¾­Ñé.", 1)
+	tbAwardTemplet:GiveAwardByList(tbAward, "§¹i YÕn QuÇn HiÖp n¨m 2011, ¨n thøc ¨n nhËn ®­îc kinh nghiÖm.", 1)
 end
 
 function pActivity:CheckNotGetDrunk(nSkillId, szMsg)
@@ -117,7 +117,7 @@ function pActivity:DrinkOneRound(TSK_A, TSK_B, TSK_Time, TSK_Round, TSK_AwardB, 
 	end
 	--TSK_AwardB:¶·¾Æ³É¹¦½±  TSK_AwardC:°²Î¿½±
 	self:AddTask(TSK_A, nAddValueA)--¾ÆÒâ
-	self:AddTask(TSK_B, nAddValueB)--¾ÆÁ¿
+	self:AddTask(TSK_B, nAddValueB)--Töu L­îng
 	
 	local nValueA = self:GetTask(TSK_A)
 	local nValueB = self:GetTask(TSK_B)
@@ -127,9 +127,9 @@ function pActivity:DrinkOneRound(TSK_A, TSK_B, TSK_Time, TSK_Round, TSK_AwardB, 
 		self:AddTaskDaily(TSK_Time, 1)--³¡Êı¼Ó1
 		self:SetTask(TSK_Round, 0)--ÂÖÊıÇåÁã
 		self:SetTask(TSK_A, 0)--¾ÆÒâÇåÁã
-		self:SetTask(TSK_B, 0)--¾ÆÁ¿ÇåÁã
+		self:SetTask(TSK_B, 0)--Töu L­îngÇåÁã
 		PlayerFunLib:AddSkillState(nSkillId, 1, 3, 30 * 60 * 18, 1)
-		Talk(1, "", "ÄãÒÑ¾­ºÈ×íÁË£¬¶¼Å»ÍÂµ½µØÉÏÁË£¬¿ìµãÈ¥Áî°²Î¿½±°É")
+		Talk(1, "", "Ng­¬i ®· uèng say råi, ãi möa ra c¶ ®Êt kia k×a, nhanh ®i nhËn th­ëng an ñi ®i")
 	else
 		self:AddTask(TSK_Round, 1)--ÂÖÊı¼Ó1
 		local nRound = self:GetTask(TSK_Round)
@@ -139,10 +139,10 @@ function pActivity:DrinkOneRound(TSK_A, TSK_B, TSK_Time, TSK_Round, TSK_AwardB, 
 			self:SetTask(TSK_Round, 0)--ÂÖÊıÇåÁã
 			self:SetTask(TSK_A, 0)--¾ÆÒâÇåÁã
 			self:AddJiuLiang(nValueB)
-			self:SetTask(TSK_B, 0)--¾ÆÁ¿ÇåÁã
+			self:SetTask(TSK_B, 0)--Töu L­îngÇåÁã
 			local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
 			self:SetTask(TSK_Date, nCurDate)			
-			Talk(1, "", "´Ë´Î¶·¾Æ±ÈÈü£¬Äã³É¹¦ÁË!")
+			Talk(1, "", "TrËn ®Êu r­îu lÇn nµy ng­¬i thµnh c«ng råi!")
 		else
 			self:ExecActivityDetail(nDetailId)
 		end
@@ -165,7 +165,7 @@ function pActivity:GetTitle(TSK_A, TSK_B, TSK_C)
 	local nValueA = self:GetTask(TSK_A)
 	local nValueB = self:GetTask(TSK_B)
 	local nValueC = self:GetTask(TSK_C)
-	local szTitle = "´Ë´Î¶·¾Æ±ÈÈü£¬ÄãĞèÒªºÈÍê12ÂÖ¾Æ£¬ÄãÒÑ¾­ºÈÁË %d ÂÖ¾Æ, ÄãµÄ×íÒâÎª %d, ´Ë´Î¶·¾Æ£¬ÄãÒÑ»ñµÃµÄ¾ÆÁ¿Îª %d, ºÈÒ»Ğ¡±­¾Æ,Äã½«Ôö¼Ó1-6¶È×íÒâ£¬ºÈÒ»ÖĞ±­¾Æ£¬Äã½«Ôö¼Ó2-12¶È×íÒâ£¬Ôö¼Ó7Á½¾ÆÁ¿£¬ºÈÒ»´ó±­¾Æ£¬Äã½«Ôö¼Ó3-18¶È×íÒâ£¬Ôö¼Ó11Á½¾ÆÁ¿¡£ "
+	local szTitle = "TrËn ®Êu r­îu lÇn nµy ng­¬i ph¶i uèng hÕt 12 l­ît r­îu, ng­¬i ®· uèng %d l­ît r­îu, ®é say xØn tr­íc m¾t cña ng­¬i lµ %d, trËn ®Êu r­îu lÇn nµy ng­¬i ®· nhËn ®­îc töu l­îng lµ %d, uèng 1 b¸t r­îu nhá sÏ lµm t¨ng 1-6 ®é say xØn, uèng mét b¸t rùîu trung sÏ lµm t¨ng 2-12 ®é say xØn, t¨ng 7 l­îng töu l­îng, uèng mét b¸t r­îu lín sÏ lµm t¨ng 3-18 ®é say xØn, t¨ng 11 l­îng töu l­îng."
 	szTitle = format(szTitle, nValueA, nValueB, nValueC)
 	return szTitle
 end
@@ -176,7 +176,7 @@ function pActivity:Lose(TSK_A, TSK_B, TSK_C, TSK_D, TSK_E)
 	self:SetTask(TSK_B, 0)--ÂÖÊıÇåÁã
 	self:SetTask(TSK_C, 0)--×íÒâÇåÁã
 	self:SetTask(TSK_D, 1)--ÓĞ°²Î¿½±Áì
-	self:SetTask(TSK_E, 1)--¾ÆÁ¿ÇåÁã
+	self:SetTask(TSK_E, 1)--Töu L­îngÇåÁã
 end
 
 function pActivity:AddDialogNpc(szNpcName, nNpcId, tbNpcPos)
@@ -238,8 +238,8 @@ function pActivity:ReceiveCurJiuLiang(nParam, ResultHandle)
 	local szMsg = format("%-32s%-10d\n", szName, nJiuLiang)
 	local nPlayerIndex = SearchPlayer(szName)
 	if nPlayerIndex > 0 then
-		local szTitle = format("%-32s%-10s\n", "Ãû×Ö", "½ñÈÕ¾ÆÁ¿")
-		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szMsg, {{"½áÊø¶Ô»°"}})
+		local szTitle = format("%-32s%-10s\n", "Tªn", "Töu L­îng h«m nay")
+		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szMsg, {{"KÕt thóc ®èi tho¹i"}})
 	end
 end
 
@@ -268,7 +268,7 @@ function pActivity:GetPaiMingAward()
 	local nDate = self:GetTask(%TSK_LastTimeDate)
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate == 0 or nDate >= nCurDate then
-		Talk(1, "", "ÉÙÏÀÄ¿Ç°ÒÀÈ»Ã»ÓĞ½±ÀøÒªÁì")
+		Talk(1, "", "ThiÕu HiÖp tr­íc m¾t ng­¬i vÉn ch­a cã phÇn th­ëng ®Ó nhËn")
 		return
 	end
 	self:GetFixCountData(nDate, 10, GetName())
@@ -301,7 +301,7 @@ function pActivity:ReceiveFixCountData(nParam, ResultHandle)
 		nCount = getn(tbTopTen)
 	end
 	if nCount == 0 then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ÉÙÏÀÄúÔİÊ±Ã»ÓĞ½±ÀøÒªÁì")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp ng­¬i t¹m thêi ch­a cã phÇn th­ëng ®Ó nhËn")
 		return
 	end
 	local nPos = -1
@@ -314,7 +314,7 @@ function pActivity:ReceiveFixCountData(nParam, ResultHandle)
 		end
 	end
 	if nPos == -1 then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ÉÙÏÀÄúÔİÊ±Ã»ÓĞ½±ÀøÒªÁì")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp ng­¬i t¹m thêi ch­a cã phÇn th­ëng ®Ó nhËn")
 		return
 	end
 	local nAddExpA = 0
@@ -328,14 +328,14 @@ function pActivity:ReceiveFixCountData(nParam, ResultHandle)
 		nAddExpA = %tbPaiMingExp[4]
 	end
 	local bFlag = DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:GetDrinkAward", 
-		%TSK_TotalDrinkExp, %nTotalDrinkUpExp, nAddExpA, "ÉÙÏÀ²Î¼Ó¶·¾Æ»ñµÃµÄ¾­ÑéÒÑ´ïÉÏÏŞ£¬²»ÄÜ¼ÌĞøÁìÈ¡Óë¶·¾ÆÏà¹ØµÄ½±ÀøÁË¡£", "<", %nNumber, "2011Äê´óÑçÈºÏÀ£¬ÁìÈ¡¶·¾ÆÅÅÃû½±Àø.")
+		%TSK_TotalDrinkExp, %nTotalDrinkUpExp, nAddExpA, "ThiÕu HiÖp ng­¬i tham gia ®Êu r­îu nhËn ®­îc kinh nghiÖm ®· ®¹t ®Õn giíi h¹n, kh«ng thÓ tiÕp tôc nhËn nh÷ng phÇn th­ëng cã liªn quan ®Õn ®Êu r­îu", "<", %nNumber, "§¹i YÕn QuÇn HiÖp n¨m 2011, nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu.")
 	DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:SetTask", %TSK_LastTimeDate, 0)
 	if bFlag == 1 then
 		local szMsg = ""
 		if nPos >= 4 then
-			szMsg = "ÒÑÁìÈ¡³É¹¦ÅÅĞĞ´Ó4-10¶·¾Æ½±Àø."
+			szMsg = "§· nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu xÕp h¹ng tõ 4-10 thµnh c«ng."
 		else
-			szMsg = format("ÒÑÁìÈ¡¶·¾ÆÅÅĞĞ½±Àø%d( ÅÅĞĞ%d)³É¹¦", nPos, nPos)
+			szMsg = format("§· nhËn phÇn th­ëng xÕp h¹ng ®Êu r­îu xÕp h¹ng cÊp thø %d( xÕp h¹ng thø %d) thµnh c«ng", nPos, nPos)
 		end
 		CallPlayerFunction(nPlayerIndex, Msg2Player, szMsg)
 	end
@@ -363,7 +363,7 @@ end
 function pActivity:DisplayYTopTen()
 	local nTime = tonumber(GetLocalDate("%H%M"))
 	if nTime >= 0 and nTime <= 5 then
-		Talk(1, "", "Ä¿Ç°Ã»ÓĞÅÅĞĞ")
+		Talk(1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
 		return
 	end	
 	local nYDate = self:GetYDate()
@@ -383,19 +383,19 @@ function pActivity:ReceiveTopTen(nParam, ResultHandle)
 	if nPlayerIndex == nil or nPlayerIndex <= 0 then
 		return
 	end
-	local szMsg = "Ä¿Ç°Ã»ÓĞÅÅÃû"
+	local szMsg = "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng"
 	if tbTopTen ~= nil then
 		local nCount = getn(tbTopTen)
 		if nCount == 0 then
 			CallPlayerFunction(nPlayerIndex, Talk, 1, "", szMsg)
 			return
 		end
-		local szPaiMing = format("%-32s%-10s\n", "Ãû×Ö", "¾ÆÁ¿")
+		local szPaiMing = format("%-32s%-10s\n", "Tªn", "Töu L­îng")
 		for i = 1, nCount do
 			local szTemp = format("%-32s%-10d\n", tbTopTen[i][1], tbTopTen[i][2])
 			szPaiMing = szPaiMing..szTemp
 		end
-		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szPaiMing, {{"½áÊø¶Ô»°"}})
+		CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szPaiMing, {{"KÕt thóc ®èi tho¹i"}})
 	else
 		CallPlayerFunction(nPlayerIndex, Talk, 1, "", szMsg)
 	end
@@ -414,7 +414,7 @@ end
 function pActivity:DisplayYPlayerPaiMing()
 	local nTime = tonumber(GetLocalDate("%H%M"))
 	if nTime >= 0 and nTime <= 5 then
-		Talk(1, "", "Ä¿Ç°Ã»ÓĞÅÅÃû")
+		Talk(1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
 		return
 	end	
 	local nYDate = self:GetYDate()	
@@ -429,12 +429,12 @@ function pActivity:ReceivePlayerPaiMing(nParam, ResultHandle)
 		return
 	end
 	if nPaiMing == nil then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ÉÙÏÀÄ¿Ç°Ã»ÓĞ×òÈÕ¾ÆÁ¿ÅÅÃû")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp tr­íc m¾t ng­¬i ch­a cã xÕp h¹ng Töu L­îng cña ngµy h«m tr­íc")
 		return
 	end
 	local szPaiMing = format("%-32s%-10d\n", szName, nPaiMing)
-	local szTitle = format("%-32s%-10s\n", "Ãû×Ö", "×òÈÕÅÅÃû")
-	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szPaiMing, {{"½áÊø¶Ô»°"}})
+	local szTitle = format("%-32s%-10s\n", "Tªn", "XÕp h¹ng ngµy h«m tr­íc")
+	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle..szPaiMing, {{"KÕt thóc ®èi tho¹i"}})
 end
 
 function pActivity:CheckPaiMing()
@@ -455,7 +455,7 @@ function pActivity:CheckRePaiMing(nParam, ResultHandle)
 		return
 	end
 	if nPaiMing ~= nil and nPaiMing >= 1 and nPaiMing <= 10 then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ÔÚ²Î¼Ó´Ë´Î¶·¾Æ±ÈÈüÇ°£¬ĞèÒªÁìÍêÉÏ´Î¶·¾Æ±ÈÈüµÄËùÓĞ½±Àø(°²Î¿½±£¬³É¹¦¶·¾Æ½±£¬ÅÅÃû½± ) ÇëÈ¥ÁìÍêÕâĞ©½±Àø£¬È»ºóÀ´²Î¼ÓÅ¶¡£")	
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhĞ")	
 	else
 		DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:SetTask", %TSK_LastTimeDate, 0)
 		DynamicExecuteByPlayer(nPlayerIndex, "\\script\\activitysys\\config\\26\\extend.lua", "pActivity:pCreateDialog")
@@ -465,10 +465,10 @@ end
 function pActivity:pCreateDialog()
 	local tbDailog = DailogClass:new()
 	tbDailog.szTitleMsg = self:GetTitle(%TSK_DrinkRound, %TSK_ZuiYi, %TSK_JiuLiang)
-	tbDailog:AddOptEntry("ºÈÒ»Ğ¡±­¾Æ", self.GotoDetail, {self, 6, {tbDailog}})
-	tbDailog:AddOptEntry("ºÈÒ»ÖĞ±­¾Æ", self.GotoDetail, {self, 7, {tbDailog}})
-	tbDailog:AddOptEntry("ºÈÒ»´ó±­¾Æ", self.GotoDetail, {self, 8, {tbDailog}})
-	tbDailog:AddOptEntry("ÎÒºÈ²»ÏÂÈ¥ÁË£¬´Ë´Î¶·¾Æ±ÈÈüÎÒÈÏÊä", self.GotoDetail, {self, 9, {tbDailog}})
+	tbDailog:AddOptEntry("Uèng mét b¸t r­îu nhá", self.GotoDetail, {self, 6, {tbDailog}})
+	tbDailog:AddOptEntry("Uèng 1 B¸t R­îu Trung", self.GotoDetail, {self, 7, {tbDailog}})
+	tbDailog:AddOptEntry("Uèng mét b¸t r­îu lín", self.GotoDetail, {self, 8, {tbDailog}})
+	tbDailog:AddOptEntry("Ta uèng hÕt nçi råi, trËn §Êu R­îu nµy ta chŞu thua", self.GotoDetail, {self, 9, {tbDailog}})
 	tbDailog:Show()
 end
 
@@ -477,23 +477,23 @@ function pActivity:BeginDrink()
 		return
 	end
 		
-	if self:CheckDrinkTime(9, 23, "ÉÙÏÀÏÖÔÚ²»ÊÇ¶·¾ÆÊ±¼ä£¬Ã÷Ìì9Ê±µ½24Ê±µ½ÎÒÕâÀï¶·¾ÆÅ¶") ~= 1 then
+	if self:CheckDrinkTime(9, 23, "ThiÕu HiÖp b©y giê kh«ng ph¶i lµ thêi gian ®Êu r­îu, ngµy mai vµo lóc 9h-24h h·y ®Õn chç cña ta ®Êu r­îu nhĞ") ~= 1 then
 		return
 	end
 	
-	if self:CheckTaskDaily(%TSK_DrinkTimes, 3, "½ñÈÕÒÑ¾­ºÈ¹»3³¡¾ÆÁË£¬Ã÷ÌìÔÙÀ´°É", "<") ~= 1 then
+	if self:CheckTaskDaily(%TSK_DrinkTimes, 3, "H«m nay ®· uèng ®ñ 3 trËn r­îu råi, ngµy mai h·y quay l¹i nhĞ", "<") ~= 1 then
 		return
 	end
 	
-	if self:CheckNotGetDrunk(1020, "ÉÙÏÀÄúÒÑ¾­ºÈ×íÁË£¬µÈ¾ÍĞÑÁËÔÙÀ´Å¶") ~= 1 then
+	if self:CheckNotGetDrunk(1020, "ThiÕu HiÖp ng­¬i ®· uèng say råi, ®îi tØnh r­îu råi l¹i ®Õn nhĞ") ~= 1 then
 		return
 	end
 	
-	if self:CheckTask(%TSK_WinDrink, 0, "ÔÚ²Î¼Ó´Ë´Î¶·¾Æ±ÈÈüÇ°£¬ĞèÒªÁìÍêÉÏ´Î¶·¾Æ±ÈÈüµÄËùÓĞ½±Àø(°²Î¿½±£¬³É¹¦¶·¾Æ½±£¬ÅÅÃû½± ) ÇëÈ¥ÁìÍêÕâĞ©½±Àø£¬È»ºóÀ´²Î¼ÓÅ¶", "==") ~= 1 then
+	if self:CheckTask(%TSK_WinDrink, 0, "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhĞ", "==") ~= 1 then
 		return
 	end
 	
-	if self:CheckTask(%TSK_AnWei, 0, "ÔÚ²Î¼Ó´Ë´Î¶·¾Æ±ÈÈüÇ°£¬ĞèÒªÁìÍêÉÏ´Î¶·¾Æ±ÈÈüµÄËùÓĞ½±Àø(°²Î¿½±£¬³É¹¦¶·¾Æ½±£¬ÅÅÃû½± ) ÇëÈ¥ÁìÍêÕâĞ©½±Àø£¬È»ºóÀ´²Î¼ÓÅ¶", "==") ~= 1 then
+	if self:CheckTask(%TSK_AnWei, 0, "Tr­íc khi tham gia trËn ®Êu r­îu nµy cÇn ph¶i nhËn hÕt tÊt c¶ phÇn th­ëng cña trËn ®Êu r­îu tr­íc( phÇn th­ëng an ñi, phÇn th­ëng ®Êu r­îu thµnh c«ng, phÇn th­ëng xÕp h¹ng ) xin h·y ®i nhËn hÕt nh÷ng phÇn th­ëng nµy ®i råi h·y ®Õn tham gia nhĞ", "==") ~= 1 then
 		return
 	end
 	

@@ -10,7 +10,7 @@
 Include("\\script\\task\\task_award_extend.lua")		--ÈÎÎñÖĞ½±ÀøµÄÀ©Õ¹½Å±¾
 
 -- DescribÍ¼Æ¬ÃèÊö
-DescLink_NieShiChen = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>Äôß±³¾:<link>";
+DescLink_NieShiChen = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>NhiÕp Thİ TrÇn:<link>";
 TSKID_KILLTASKID =		1082;	-- ½ÓÊÜµÄÄÄ¸öÈÎÎñ
 TSKID_KILLERDATE =		1192;	--½ÓÈÎÎñÊ±µÄÈÕÆÚ
 TSKID_KILLERMAXCOUNT =	1193;	--Ã¿ÌìÉ±ÈË´ÎÊı

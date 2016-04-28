@@ -5,7 +5,7 @@ GameFloor3.tbMapCapacity = {} --Ã¿¸ö·¿¼äµÄµ±Ç°Íæ¼ÒÈËÊý
 
 GameFloor3.tbMap = {937,938,939,940,941,942,943,944,945,946} --Ã¿¸ö·¿¼ä¶ÔÓ¦µÄµØÍ¼
 --GameFloor3.tbMap = {937} --Ã¿¸ö·¿¼ä¶ÔÓ¦µÄµØÍ¼
-GameFloor3.szMapType = "Ìì³ØÃØ±¦µÚÈý²ã"
+GameFloor3.szMapType = "Thiªn Tr× MËt C¶nh tÇng 3"
 
 GameFloor3.tbForbitItemType = 
 {
@@ -23,7 +23,7 @@ GameFloor3.tbNpcTypeList =
 	["monster1"] = 
 	{
 		nNpcId = 1602,
-		szName = "ÃÏ°²",
+		szName = "M·nh An",
 		nLevel = 95,
 		nIsboss = 1,
 		bNoRevive = 0,
@@ -33,7 +33,7 @@ GameFloor3.tbNpcTypeList =
 	["monster2"] = 
 	{
 		nNpcId = 1603,
-		szName = "Ä±¿Ë",
+		szName = "M­u Kh¾c",
 		nLevel = 95,
 		nIsboss = 1,
 		bNoRevive = 0,		
@@ -43,7 +43,7 @@ GameFloor3.tbNpcTypeList =
 	["monster3"] = 
 	{
 		nNpcId = 1604,
-		szName = "ÆÕÀîÑÝ",
+		szName = "Bå LÝ DiÔn",
 		nLevel = 95,
 		nIsboss = 1,
 		bNoRevive = 0,		

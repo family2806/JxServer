@@ -30,60 +30,60 @@ GiveSupportItem.END_DATE = 201206032400
 GiveSupportItem.tbListItem = 
 {
 	--{szName="", nG=, nD=, nP=, nStack=, nType=}
---	{szName="Ç¬À¤Ôì»¯µ¤ (´ó) ", nG=6, nD=1, nP=215, nType=1},
---	{szName="Ç¬À¤Ôì»¯µ¤ (ÖĞ) ", nG=6, nD=1, nP=216, nType=1},
---	{szName="Ç¬À¤Ôì»¯µ¤ (Ğ¡) ", nG=6, nD=1, nP=217, nType=1},
---	{szName="ËÎ½ğÆÕ·ÀÍè", nG=6, nD=1, nP=190, nType=1},
---	{szName="Õ½¹Ä ", nG=6, nD=1, nP=156, nType=2},
---	{szName="¿¹µ¤Ö®¾õ ", nG=6, nD=1, nP=214, nType=2},
---	{szName="ÁîÅÆ", nG=6, nD=1, nP=157, nType=2},
---	{szName="×¨ÓÃÓÚËÎ½ğ¶¾·ÀÍè", nG=6, nD=1, nP=195, nType=3},
---	{szName="×¨ÓÃÓÚËÎ½ğÀ×·ÀÍè", nG=6, nD=1, nP=193, nType=3},
---	{szName="×¨ÓÃÓÚËÎ½ğ»ğ·ÀÍè", nG=6, nD=1, nP=194, nType=3},
---	{szName="ËÎ½ğ±ù·ÀÍè", nG=6, nD=1, nP=192, nType=3},
---	{szName="ËÎ½ğÆÕ·ÀÍè", nG=6, nD=1, nP=191, nType=3},
---	{szName="ËÎ½ğ³¤ÃüÍè", nG=6, nD=1, nP=186, nType=3},
---	{szName="ËÎ½ğ¸ßÖĞÍè", nG=6, nD=1, nP=189, nType=3},
---	{szName="ËÎ½ğ¸ßÉÁÍè", nG=6, nD=1, nP=188, nType=3},
---	{szName="ËÎ½ğ¼ÓÅÛÍè", nG=6, nD=1, nP=187, nType=3},
---	{szName="ËÎ½ğ³¤ÃüÍè", nG=6, nD=1, nP=186, nType=3},
---	{szName="ËÎ½ğÄÚÀ×Íè", nG=6, nD=1, nP=185, nType=3},
---	{szName="ËÎ½ğÄÚ±ùÍè", nG=6, nD=1, nP=183, nType=3},
---	{szName="ËÎ½ğÄÚ¶¾Íè", nG=6, nD=1, nP=182, nType=3},
---	{szName="ËÎ½ğÄÚ»ğÍè", nG=6, nD=1, nP=184, nType=3},
---	{szName="ËÎ½ğÄÚÆÕÍè", nG=6, nD=1, nP=181, nType=3},
---	{szName="ËÎ½ğÍâ±ùÍè", nG=6, nD=1, nP=180, nType=3},
---	{szName="ËÎ½ğÍâ¶¾Íè", nG=6, nD=1, nP=179, nType=3},
---	{szName="ËÎ½ğÍâÆÕÍè", nG=6, nD=1, nP=178, nType=3},
+--	{szName="Cµn Kh«n T¹o Hãa §an (®¹i) ", nG=6, nD=1, nP=215, nType=1},
+--	{szName="Cµn Kh«n T¹o Hãa §an (trung) ", nG=6, nD=1, nP=216, nType=1},
+--	{szName="Cµn Kh«n T¹o Hãa §an (tiÓu) ", nG=6, nD=1, nP=217, nType=1},
+--	{szName="Tèng Kim Phi Tèc hoµn", nG=6, nD=1, nP=190, nType=1},
+--	{szName="ChiÕn cæ ", nG=6, nD=1, nP=156, nType=2},
+--	{szName="Kh¸ng §¬n Chi Gi¸c ", nG=6, nD=1, nP=214, nType=2},
+--	{szName="LÖnh bµi", nG=6, nD=1, nP=157, nType=2},
+--	{szName="Chuyªn dïng cho Tèng Kim §éc phßng hoµn", nG=6, nD=1, nP=195, nType=3},
+--	{szName="Chuyªn dïng cho Tèng Kim L«i phßng hoµn", nG=6, nD=1, nP=193, nType=3},
+--	{szName="Chuyªn dïng cho Tèng Kim Háa phßng hoµn", nG=6, nD=1, nP=194, nType=3},
+--	{szName="Tèng Kim B¨ng Phßng hoµn", nG=6, nD=1, nP=192, nType=3},
+--	{szName="Tèng Kim Phi Tèc hoµn", nG=6, nD=1, nP=191, nType=3},
+--	{szName="Tèng Kim Tr­êng MÖnh hoµn", nG=6, nD=1, nP=186, nType=3},
+--	{szName="Tèng Kim Cao Trung hoµn", nG=6, nD=1, nP=189, nType=3},
+--	{szName="Tèng Kim Cao ThiÓm hoµn", nG=6, nD=1, nP=188, nType=3},
+--	{szName="Tèng Kim Gia Bµo hoµn", nG=6, nD=1, nP=187, nType=3},
+--	{szName="Tèng Kim Tr­êng MÖnh hoµn", nG=6, nD=1, nP=186, nType=3},
+--	{szName="Tèng Kim Néi L«i hoµn", nG=6, nD=1, nP=185, nType=3},
+--	{szName="Tèng Kim Néi B¨ng hoµn", nG=6, nD=1, nP=183, nType=3},
+--	{szName="Tèng Kim Néi §éc hoµn", nG=6, nD=1, nP=182, nType=3},
+--	{szName="Tèng Kim Néi Háa hoµn", nG=6, nD=1, nP=184, nType=3},
+--	{szName="Tèng Kim Néi Phæ hoµn", nG=6, nD=1, nP=181, nType=3},
+--	{szName="Tèng Kim Ngo¹i B¨ng hoµn", nG=6, nD=1, nP=180, nType=3},
+--	{szName="Tèng Kim Ngo¹i §éc hoµn", nG=6, nD=1, nP=179, nType=3},
+--	{szName="Tèng Kim Ngo¹i Phæ hoµn", nG=6, nD=1, nP=178, nType=3},
 
-	{szName="Ç¬À¤Ôì»¯µ¤ (´ó) ", nG=6, nD=1, nP=215, nType=1},
-	{szName="Ç¬À¤Ôì»¯µ¤ (ÖĞ) ", nG=6, nD=1, nP=216, nType=2},
-	{szName="Ç¬À¤Ôì»¯µ¤ (Ğ¡) ", nG=6, nD=1, nP=217, nType=3},
-	{szName="ËÎ½ğÆÕ·ÀÍè", nG=6, nD=1, nP=190, nType=4},
-	{szName="Õ½¹Ä", nG=6, nD=1, nP=156, nType=5},
-	{szName="¿¹µ¤Ö®¾õ ", nG=6, nD=1, nP=214, nType=5},
-	{szName="ÁîÅÆ", nG=6, nD=1, nP=157, nType=5},
-	{szName="×¨ÓÃÓÚËÎ½ğ¶¾·ÀÍè", nG=6, nD=1, nP=195, nType=6},
-	{szName="×¨ÓÃÓÚËÎ½ğÀ×·ÀÍè", nG=6, nD=1, nP=193, nType=6},
-	{szName="×¨ÓÃÓÚËÎ½ğ»ğ·ÀÍè", nG=6, nD=1, nP=194, nType=6},
-	{szName="ËÎ½ğ±ù·ÀÍè", nG=6, nD=1, nP=192, nType=6},
-	{szName="ËÎ½ğÆÕ·ÀÍè", nG=6, nD=1, nP=191, nType=6},
-	{szName="ËÎ½ğ³¤ÃüÍè", nG=6, nD=1, nP=186, nType=6},
-	{szName="ËÎ½ğ¸ßÖĞÍè", nG=6, nD=1, nP=189, nType=6},
-	{szName="ËÎ½ğ¸ßÉÁÍè", nG=6, nD=1, nP=188, nType=6},
-	{szName="ËÎ½ğ¼ÓÅÛÍè", nG=6, nD=1, nP=187, nType=6},
-	{szName="ËÎ½ğ³¤ÃüÍè", nG=6, nD=1, nP=186, nType=6},
-	{szName="ËÎ½ğÄÚÀ×Íè", nG=6, nD=1, nP=185, nType=6},
-	{szName="ËÎ½ğÄÚ±ùÍè", nG=6, nD=1, nP=183, nType=6},
-	{szName="ËÎ½ğÄÚ¶¾Íè", nG=6, nD=1, nP=182, nType=6},
-	{szName="ËÎ½ğÄÚ»ğÍè", nG=6, nD=1, nP=184, nType=6},
-	{szName="ËÎ½ğÄÚÆÕÍè", nG=6, nD=1, nP=181, nType=6},
-	{szName="ËÎ½ğÍâ±ùÍè", nG=6, nD=1, nP=180, nType=6},
-	{szName="ËÎ½ğÍâ¶¾Íè", nG=6, nD=1, nP=179, nType=6},
-	{szName="ËÎ½ğÍâÆÕÍè", nG=6, nD=1, nP=178, nType=6},
+	{szName="Cµn Kh«n T¹o Hãa §an (®¹i) ", nG=6, nD=1, nP=215, nType=1},
+	{szName="Cµn Kh«n T¹o Hãa §an (trung) ", nG=6, nD=1, nP=216, nType=2},
+	{szName="Cµn Kh«n T¹o Hãa §an (tiÓu) ", nG=6, nD=1, nP=217, nType=3},
+	{szName="Tèng Kim Phi Tèc hoµn", nG=6, nD=1, nP=190, nType=4},
+	{szName="ChiÕn cæ ", nG=6, nD=1, nP=156, nType=5},
+	{szName="Kh¸ng §¬n Chi Gi¸c ", nG=6, nD=1, nP=214, nType=5},
+	{szName="LÖnh bµi", nG=6, nD=1, nP=157, nType=5},
+	{szName="Chuyªn dïng cho Tèng Kim §éc phßng hoµn", nG=6, nD=1, nP=195, nType=6},
+	{szName="Chuyªn dïng cho Tèng Kim L«i phßng hoµn", nG=6, nD=1, nP=193, nType=6},
+	{szName="Chuyªn dïng cho Tèng Kim Háa phßng hoµn", nG=6, nD=1, nP=194, nType=6},
+	{szName="Tèng Kim B¨ng Phßng hoµn", nG=6, nD=1, nP=192, nType=6},
+	{szName="Tèng Kim Phi Tèc hoµn", nG=6, nD=1, nP=191, nType=6},
+	{szName="Tèng Kim Tr­êng MÖnh hoµn", nG=6, nD=1, nP=186, nType=6},
+	{szName="Tèng Kim Cao Trung hoµn", nG=6, nD=1, nP=189, nType=6},
+	{szName="Tèng Kim Cao ThiÓm hoµn", nG=6, nD=1, nP=188, nType=6},
+	{szName="Tèng Kim Gia Bµo hoµn", nG=6, nD=1, nP=187, nType=6},
+	{szName="Tèng Kim Tr­êng MÖnh hoµn", nG=6, nD=1, nP=186, nType=6},
+	{szName="Tèng Kim Néi L«i hoµn", nG=6, nD=1, nP=185, nType=6},
+	{szName="Tèng Kim Néi B¨ng hoµn", nG=6, nD=1, nP=183, nType=6},
+	{szName="Tèng Kim Néi §éc hoµn", nG=6, nD=1, nP=182, nType=6},
+	{szName="Tèng Kim Néi Háa hoµn", nG=6, nD=1, nP=184, nType=6},
+	{szName="Tèng Kim Néi Phæ hoµn", nG=6, nD=1, nP=181, nType=6},
+	{szName="Tèng Kim Ngo¹i B¨ng hoµn", nG=6, nD=1, nP=180, nType=6},
+	{szName="Tèng Kim Ngo¹i §éc hoµn", nG=6, nD=1, nP=179, nType=6},
+	{szName="Tèng Kim Ngo¹i Phæ hoµn", nG=6, nD=1, nP=178, nType=6},
 	--THDNB9
-	{szName="»ØÌìÔÙÔìÀñ°ü", nG=6, nD=1, nP=2527, nType=7},
-	--{szName="»ØÌìÔÙÔì½õÄÒ", nG=6, nD=1, nP=1781, nType=7},
+	{szName="Håi thiªn t¸i t¹o lÔ bao", nG=6, nD=1, nP=2527, nType=7},
+	--{szName="CÈm nang thay ®æi trêi ®Êt", nG=6, nD=1, nP=1781, nType=7},
 }
 
 
@@ -97,10 +97,10 @@ end
 
 function GiveSupportItem:ShowDialog()
 	local tbOpt = {}
-	local str = "½»ÎïÆ·Ö§³ÖËÎ½ğ"
+	local str = "Giao nép vËt phÈm hæ trî Tèng Kim"
 
-	tinsert(tbOpt, "ÎÒÏë½»¹¤¾ßÖ§³ÖËÎ½ğ/#GiveSupportItem:OpenUI()")
-	tinsert(tbOpt, "<#>ÍË³ö/OnCancel")
+	tinsert(tbOpt, "Ta muèn gia nép dông cô hæ trî Tèng Kim/#GiveSupportItem:OpenUI()")
+	tinsert(tbOpt, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpt ) == 0 ) then
 		Say(str, 0);
 		return
@@ -118,7 +118,7 @@ function GiveSupportItem:OpenUI()
 		tbVNG_BitTask_Lib:setBitTask(self.tbResetTask, 1)
 	end
 	
-	GiveItemUI("½»ÎïÆ·Ö§³ÖËÎ½ğ", "½»ÎïÆ·Ö§³ÖËÎ½ğ", "ConfirmSupportItem", "OnCancel");
+	GiveItemUI("Giao nép vËt phÈm hæ trî Tèng Kim", "Giao nép vËt phÈm hæ trî Tèng Kim", "ConfirmSupportItem", "OnCancel");
 end
 
 function ConfirmSupportItem(nCount)
@@ -126,25 +126,25 @@ function ConfirmSupportItem(nCount)
 		local nItemIndex = GetGiveItemUnit(i)	
 		local itemgenre, detailtype, parttype = GetItemProp(nItemIndex)
 		
-		--THDNB9¼ì²é»ØÌìÔÙÔìÀñ°üºÍ»ØÌìÔÙÔì½õÄÒµÄ¼ÛÖµ - Modified by DinhHQ - 20110517
+		--THDNB9¼ì²éHåi thiªn t¸i t¹o lÔ baoºÍCÈm nang thay ®æi trêi ®ÊtµÄ¼ÛÖµ - Modified by DinhHQ - 20110517
 		if (itemgenre == 6 and detailtype == 1 and parttype == 1781) then
 			local nItemValue= GetItemParam(nItemIndex, 1)
 			if nItemValue < 60 then
-				Talk(1, "", "<color=yellow>»ØÌìÔÙÔì½õÄÒ<color> ĞèÒªÊ£ÓàµÄ¼ÛÖµÎª60²ÅÄÜ½ÓÊÜ!");
+				Talk(1, "", "<color=yellow>CÈm nang thay ®æi trêi ®Êt<color> ph¶i cßn ®ñ gi¸ trŞ lµ 60 míi ®­îc chÊp nhËn!");
 				return
 			end
 		end
 		if (itemgenre == 6 and detailtype == 1 and parttype == 2527) then
 			local nItemValue= GetItemParam(nItemIndex, 1)
 			if nItemValue ~= 0 then
-				Talk(1, "", "<color=yellow>»ØÌìÔÙÔìÀñ°ü <color>ĞèÒªÊ£ÓàµÄ¼ÛÖµÎª60²ÅÄÜ½ÓÊÜ!");
+				Talk(1, "", "<color=yellow>Håi thiªn t¸i t¹o lÔ bao <color>ph¶i cßn ®ñ gi¸ trŞ lµ 60 míi ®­îc chÊp nhËn!");
 				return
 			end
 		end
 		
 		
 		if (GiveSupportItem:CheckItem(itemgenre, detailtype, parttype) <= 0) then
-			Talk(1, "", "Çë´óÏÀ·ÅÈëÕıÈ·µÄÎïÆ·!");
+			Talk(1, "", "§¹i hiÖp xin h·y bá vµo ®óng vËt phÈm !");
 			return
 		end
 	end
@@ -211,14 +211,14 @@ function GiveSupportItem:ProcessGiveItem(nCount)
 	local nSum = floor(nTotal_1/10) +  floor(nTotal_2/10) +  floor(nTotal_3/10) +  floor(nTotal_4/50) + floor(nTotal_5/50) + floor(nTotal_6/50) + nMod + nTotal_7
 	--Msg2Player(nSum .. "..................")
 	if (nSum > 300) then
-		Talk(1, "", "ÉÏ½»ÎïÆ·ÊıÁ¿³¬¹ıÔÊĞí·¶Î§!");
+		Talk(1, "", "Sè l­îng vËt phÈm giao nép qu¸ giíi h¹n cho phĞp!");
 		return
 	end
 	
 	for i=1, nCount do
 		local nItemIndex = GetGiveItemUnit(i)
 		if (RemoveItemByIndex(nItemIndex) ~= 1) then
-			Talk(1, "", "ÎïÆ·ÓĞÎÊÌâ ®Ò!");
+			Talk(1, "", "VËt phÈm cã vÊn ®Ò!");
 			return
 		end
 	end
@@ -228,50 +228,50 @@ function GiveSupportItem:ProcessGiveItem(nCount)
 	if (nCount_1 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_1)
 		SetTask(self.TASK_COUNT_ITEM_1, nTotal + nCount_1)
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_1 .. " <color>ÎïÆ·Àà±ğ1 - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_1 .. " Àà±ğ1 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_1 .. " <color>vËt phÈm lo¹i 1 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_1 .. " lo¹i 1 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_2 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_2)
 		SetTask(self.TASK_COUNT_ITEM_2, nTotal + nCount_2)
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_2 .. " <color>ÎïÆ·Àà±ğ2 - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_2 .. " Àà±ğ2 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_2 .. " <color>vËt phÈm lo¹i 2 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_2 .. " lo¹i 2 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_3 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_3)
 		SetTask(self.TASK_COUNT_ITEM_3, nTotal + nCount_3)
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_3 .. " <color>ÎïÆ·Àà±ğ3 - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_3 .. " Àà±ğ3 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_3 .. " <color>vËt phÈm lo¹i 3 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_3 .. " lo¹i 3 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_4 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_4)
 		SetTask(self.TASK_COUNT_ITEM_4, nTotal + nCount_4)		
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_4 .. " <color>ÎïÆ·Àà±ğ4 - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_4 .. " Àà±ğ4 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_4 .. " <color>vËt phÈm lo¹i 4 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_4 .. " lo¹i 4 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_5 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_5)
 		SetTask(self.TASK_COUNT_ITEM_5, nTotal + nCount_5)
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_5 .. " <color>5ÀàÎïÆ·- ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_5 .. " 5Àà- ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_5 .. " <color>vËt phÈm lo¹i 5 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_5 .. " lo¹i 5 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_6 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_6)
 		SetTask(self.TASK_COUNT_ITEM_6, nTotal + nCount_6)
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_6 .. " <color>6ÀàÎïÆ· - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_6 .. " Àà±ğ6 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_6 .. " <color>vËt phÈm lo¹i 6 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_6 .. " lo¹i 6 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_7 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_7)
 		SetTask(self.TASK_COUNT_ITEM_7, nTotal + nCount_7)		
-		Msg2Player("´óÏÀÒÑ½» <color=yellow>" .. nCount_7 .. " <color>7ÀàÎïÆ· - ÒÑ½»×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."½»ÎïÆ·Ö§³ÖËÎ½ğ"..GetAccount().."\t"..GetName().."\t".."½»" .. nCount_7 .. " Àà±ğ7 - ×ÜÊı" .. nTotalAll)
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_7 .. " <color>vËt phÈm lo¹i 7 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_7 .. " lo¹i 7 - Tæng sè: " .. nTotalAll)
 	end
 end
 

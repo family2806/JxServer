@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("Í¨ÍùÁúÃÅÕò ", 0)
+Say("§i Long M«n trÊn ", 0)
 
 end;

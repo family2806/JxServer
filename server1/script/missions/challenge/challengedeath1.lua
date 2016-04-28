@@ -16,13 +16,13 @@ function OnDeath(Launcher)
 		LaunName = GetName();
 		pkcount = GetTaskTemp(SJKILLPK) + 1;
 		SetTaskTemp(SJKILLPK, pkcount);
-		str  = "<#> »Æ·½:"..LaunName.."<#>´òÉË×Ï·½µÄ"..DeathName.."<#>, ÏÖÔÚPKÖµÊÇ"..pkcount;
+		str  = "<#> phe Vµng:"..LaunName.."<#> ®¸nh träng th­¬ng ng­êi cña phe TÝm lµ:"..DeathName.."<#>, ®iÓm sè PK hiÖn t¹i lµ"..pkcount;
 		Msg2MSAll(MISSIONID,str);
 		SetMissionV(MS_J_DEATHCOUNT, GetMissionV(MS_J_DEATHCOUNT) + 1);
 		PlayerIndex = OrgPlayer;
 	end;
 	if (GetMSPlayerCount(MISSIONID, 2) <= 0 ) then 
-		Msg2MSAll(MISSIONID, "±ÈÈü½áÊø£¬»Æ·½È¡µÃ×îÖÕÊ¤Àû");
+		Msg2MSAll(MISSIONID, "TrËn ®Êu ®· kÕt thóc, phe Vµng ®· giµnh ®­îc th¾ng lîi chung cuéc ");
 		DelMSPlayer(MISSIONID, 2);	
 		SetLogoutRV(1);
 		CloseMission(MISSIONID);

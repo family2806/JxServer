@@ -1,5 +1,5 @@
 --by ÁÎÖ¾É½ [2006-09-12]
---2006ÖĞÇï»î¶¯Ö®×öµÆÁı»î¶¯,´ò¹ÖµÃµ½µÆÁı,µÆÁı»»È¡¾­ÑéºÍÔÂ±ı.
+--2006ÖĞÇï»î¶¯Ö®Lµm µÆÁı»î¶¯,´ò¹ÖµÃµ½µÆÁı,µÆÁı»»È¡¾­ÑéºÍÔÂ±ı.
 --Illustration: µÆÁı -- lightcage au06- -- midautumn2006
 
 Include([[\script\event\mid_autumn06\head.lua]]);
@@ -8,20 +8,20 @@ Include([[\script\lib\gb_taskfuncs.lua]]);
 --ÖĞÇï»î¶¯Èë¿Úº¯Êı
 function au06_entrance()
 	if (au06_IsPayed_player() == 0) then
-		Say("Ö»ÓĞ³äÖµÍæ¼Ò²Å¿ÉÒÔ²Î¼ÓÖĞÇï»î¶¯", 0);
+		Say("ChØ cã ng­êi ch¬i n¹p thÎ míi cã thÓ tham gia ho¹t ®éng Trung thu", 0);
 		return
 	end;
 	
 	local tab_Content = {
-		"ÎÒÏë×ö²ÊµûµÆÁı[ĞèÒª2»Æµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ1000 Á½]/#determine_process( 1 )",
-		"ÎÒÏë×ö²ÊĞÇµÆÁı[ĞèÒª2À¶µ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ2000 Á½]/#determine_process( 2 )",
-		"ÎÒÏë×ö¹Ü×´µÆÁı[ĞèÒª2ÂÌµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ3000 Á½]/#determine_process( 3 )",
-		"ÎÒÏë×öÔ²ĞÎµÆÁı[ĞèÒª2ºìµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ4000 Á½]/#determine_process( 4 )",
-		"ÎÒÏë×öÀğÓãµÆÁı[ĞèÒª1³Èµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ5000 Á½]/#determine_process( 5 )",
-		"ÎÒÏë×öÎå²ÊµÆÁı[ĞèÒª5ÖÖµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ5000 Á½]/sure_colorfulcage",
-		"Ö»ÊÇÀ´¿´Ò»ÏÂÄú¶øÒÑ!/oncancel"
+		"Ta muèn lµm lång ®Ìn b­¬m b­ím [cÇn 2 giÊy kiÕng vµng, 1 thanh tre, 1 d©y cãi, 1 nÕn  vµ 1000 l­îng]/#determine_process( 1 )",
+		"Ta muèn lµm lång ®Ìn ng«i sao [cÇn 2 giÊy kiÕng lam, 1 thanh tre, 1 d©y cãi, 1 nÕn vµ 2000 l­îng]/#determine_process( 2 )",
+		"Ta muèn lµm lång ®Ìn èng [cÇn 2 giÊy kiÕng lôc, 1 thanh tre, 1 d©y cãi, 1 nÕn vµ 3000 l­îng]/#determine_process( 3 )",
+		"Ta muèn lµm lång ®Ìn trßn [cÇn 2 giÊy kiÕng ®á, 1 thanh tre, 1 d©y cãi, 1 nÕn vµ 4000 l­îng]/#determine_process( 4 )",
+		"Ta muèn lµm lång ®Ìn c¸ chĞp [cÇn 1 giÊy kiÕng cam, 1 thanh tre, 1 d©y cãi, 1 nÕn vµ 5000 l­îng]/#determine_process( 5 )",
+		"Ta muèn lµm lång ®Ìn kĞo qu©n [cÇn 5 lo¹i giÊy kiÕng, 1 thanh tre, 1 d©y cãi, 1 nÕn vµ 5000 l­îng]/sure_colorfulcage",
+		"ChØ ®Õn th¨m «ng chót th«i!/oncancel"
 	};
-	Say("ÎÒ×öµÄµÆÁıºÜÓĞÃû£¬ÈËÈË¶¼°®. ¿Í¹ÙÏë×öÊ²Ã´µÆÁı?", getn(tab_Content), tab_Content);
+	Say("Lång ®Ìn ta lµm næi danh kh¾p n¬i, ng­êi ng­êi ®Òu thİch. Kh¸ch quan muèn lµm lång ®Ìn g×?", getn(tab_Content), tab_Content);
 end;
 
 --È·¶¨ÖÆÔì(ÆÕÍ¨µÆÁı)
@@ -31,7 +31,7 @@ function determine_process(nIndex)
 	end;
 	tab_Index = {1, 2, 3, 4, 5};
 	local szCageName = tab_Lightcage[nIndex][3];
-	Say("×ö"..szCageName.."ĞèÒª<color=yellow>"..tab_Lightcage[nIndex][9].."¿ª"..tab_Lightcage[nIndex][4]..", 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ<color=red>"..tab_Lightcage[nIndex][5].."<color> Á½¹¤Ç®, ×öÂğ", 2, "ºÃ£¡ÇëÇ°±²´Í½Ì!/#process_lightcage("..tab_Index[nIndex]..")", "ÎÒÒ»»á»ØÀ´!/oncancel");
+	Say("Lµm "..szCageName.."cÇn <color=yellow>"..tab_Lightcage[nIndex][9].."Më "..tab_Lightcage[nIndex][4]..", 1 thanh tre, 1 d©y cãi, 1 nÕn vµ <color=red>"..tab_Lightcage[nIndex][5].."<color> l­îng tiÒn c«ng, lµm chø?", 2, "§óng! Xin l·o bèi træ tµi!/#process_lightcage("..tab_Index[nIndex]..")", "Ta sÏ quay l¹i sau!/oncancel");
 	
 end;
 
@@ -57,7 +57,7 @@ function process_lightcage(nIndex)
 		end
 	end;
 	if (bEnough == 0) then
-		Say("¿Í¹ÙµÄ²ÄÁÏ²»¹», <color=red>"..szCageName.."<color> ĞèÒª<color=yellow>"..tab_Lightcage[nIndex][9].."¿ª"..tab_Lightcage[nIndex][4]..", 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯ÖòºÍ<color=red>"..tab_Lightcage[nIndex][5].."<color> Á½¹¤Ç®.", 1, "ÎÒÏÈÈ¥×¼±¸!/oncancel");
+		Say("Kh¸ch quan kh«ng ®ñ vËt liÖu, <color=red>"..szCageName.."<color> cÇn <color=yellow>"..tab_Lightcage[nIndex][9].."Më "..tab_Lightcage[nIndex][4]..", 1 thanh tre, 1 d©y cãi, 1 nÕn vµ <color=red>"..tab_Lightcage[nIndex][5].."<color> l­îng tiÒn c«ng.", 1, "§Ó ta ®i chuÈn bŞ ®·!/oncancel");
 		return
 	end;
 	
@@ -79,8 +79,8 @@ function process_lightcage(nIndex)
 	--¸øÓèÎïÆ·
 		AddItem(6, 1, tab_Lightcage[nIndex][1], 1, 0, 0, 0);
 	--¹«¸æ
-		Say("<color=red>"..szCageName.."<color> ÒÑ×öÍê£¬¿Í¹ÙÂúÒâÂğ?!", 0);
-		Msg2Player("ÄãµÃµ½ <color=yellow>"..szCageName.."(".."ÌØ±ğ"..")<color>");
+		Say("<color=red>"..szCageName.."<color> ®· lµm xong, Kh¸ch quan võa ı chø?!", 0);
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..szCageName.."(".."®Æc biÖt"..")<color>");
 	else
 	--¸øÓèÎïÆ·
 		local iIdx = AddItem(6, 1, tab_Lightcage[nIndex][6], 1, 0, 0, 0);
@@ -89,20 +89,20 @@ function process_lightcage(nIndex)
 			SyncItem(iIdx);
 		end;
 	--¹«¸æ
-		Say("<color=red>"..szCageName.."<color> ×öÍêÁË£¬µ«²»ÂúÒâ¡£Õæ²»ºÃÒâË¼£¡", 0);
-		Msg2Player("ÄãµÃµ½<color=yellow>"..szCageName.."<color>");
+		Say("<color=red>"..szCageName.."<color> ®· lµm xong, nh­ng kh«ng ®­îc nh­ ı. ThËt ng¹i qu¸!", 0);
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..szCageName.."<color>");
 	end;
 end;
 
---È·¶¨ÖÆÔì(Îå²ÊµÆÁı)
+--È·¶¨ÖÆÔì(Lång ®Ìn kĞo qu©n)
 function sure_colorfulcage()
-	Say("<color=red>Îå²ÊµÆÁı<color><color> ĞèÒªÓĞ<color=yellow>5ÖÖµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯Öò<color> v?<color=red>5000 Á½<color> ¹¤Ç®, ×öÂğ", 2, "ºÃ£¡ÇëÇ°±²´Í½Ì!/make_colorfulcage", "ÎÒÒ»»á»ØÀ´!/oncancel");
+	Say("<color=red>lång ®Ìn Ngò s¾c<color><color> cÇn cã <color=yellow>5 lo¹i giÊy kiÕng, 1 thanh tre, 1 d©y cãi, 1 nÕn<color> vµ <color=red>5000 l­îng<color> tiÒn c«ng, lµm chø?", 2, "§óng! Xin l·o bèi træ tµi!/make_colorfulcage", "Ta sÏ quay l¹i sau!/oncancel");
 end;
 
---ÖÆÔìÎå²ÊµÆÁı
+--ÖÆÔìLång ®Ìn kĞo qu©n
 function make_colorfulcage()
-	local szCageName = "Îå²ÊµÆÁı";
-	--¼ì²éÊÇ·ñÒÑ¾­×öÁË300¸ö
+	local szCageName = "Lång ®Ìn kĞo qu©n";
+	--¼ì²éÊÇ·ñÒÑ¾­Lµm ÁË300¸ö
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	local w = GetWorldPos();
 	local szCityLGName = "midautumn2006_city_"..tostring(w);
@@ -113,7 +113,7 @@ function make_colorfulcage()
 	end;
 	
 	if (n_wc_Count >= AU06_COLORED_LIMITED) then
-		Say("½ñÌìÎÒÒÑ¾­×öÁË<color=yellow>3000¸öÎå²ÊµÆÁı<color>ÁË£¬ÎÒÌ«ÀÛÁË£¬¸ÄÌìÔÙÀ´°É.", 0);
+		Say("H«m nay ta ®· lµm<color=yellow>3000 c¸i lång ®Ìn kĞo qu©n<color> råi, ta ®· qu¸ mÖt, h«m kh¸c quay l¹i nhĞ.", 0);
 		return
 	end;
 	
@@ -133,7 +133,7 @@ function make_colorfulcage()
 		end
 	end;
 	if (bEnough == 0) then
-		Say("¿Í¹ÙµÄ²ÄÁÏ²»¹», <color=red>"..szCageName.."<color> ĞèÒª<color=yellow>5ÖÖµ¥¹âÖ½, 1ÇàÖñ, 1ÆÑ²İÏß, 1À¯Öò<color> v?<color=red>5000 Á½<color> ¹¤Ç®.", 1, "ÎÒÏÈÈ¥×¼±¸!/oncancel");
+		Say("Kh¸ch quan kh«ng ®ñ vËt liÖu, <color=red>"..szCageName.."<color> cÇn <color=yellow>5 lo¹i giÊy kiÕng, 1 thanh tre, 1 d©y cãi, 1 nÕn<color> vµ <color=red>5000 l­îng<color> tiÒn c«ng.", 1, "§Ó ta ®i chuÈn bŞ ®·!/oncancel");
 		return
 	end;
 	
@@ -158,8 +158,8 @@ function make_colorfulcage()
 	--¸øÓèÎïÆ·
 		AddItem(6, 1, 1234, 1, 0, 0, 0);
 	--¹«¸æ
-		Say("<color=red>"..szCageName.."<color>ÒÑ¾­×öÍêÁË£¬¿Í¹ÛÂúÒâÂğ?!", 0);
-		Msg2Player("ÄãµÃµ½<color=yellow>"..szCageName.."(".."ÌØ±ğ"..")<color>");
+		Say("<color=red>"..szCageName.."<color> ®· lµm xong, Kh¸ch quan võa ı chø?!", 0);
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..szCageName.."(".."®Æc biÖt"..")<color>");
 	else
 	--¸øÓèÎïÆ·
 		local iIdx = AddItem(6, 1, 1246, 1, 0, 0, 0);
@@ -168,7 +168,7 @@ function make_colorfulcage()
 			SyncItem(iIdx);
 		end;
 	--¹«¸æ
-		Say("<color=red>"..szCageName.."<color>ÒÑ¾­×öÍêÁË£¬µ«ÊÇ²»ÂúÒâ.Õæ²»ºÃÒâ£¡", 0);
-		Msg2Player("ÄãµÃµ½<color=yellow>"..szCageName.."<color>");
+		Say("<color=red>"..szCageName.."<color> ®· lµm xong, nh­ng kh«ng ®­îc nh­ ı. ThËt ng¹i qu¸!", 0);
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..szCageName.."<color>");
 	end;
 end;

@@ -3,7 +3,7 @@ Include("\\script\\missions\\basemission\\lib.lua")
 Include("\\script\\vng_event\\20110225_8_thang_3\\item\\item_head.lua")
 function main(itemidx)
 	if (tbVNGWD2011_ItemHead:isExpired(itemidx) == 1 or tbVNG_WomenDay2011:IsActive() ~= 1) then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 
@@ -38,7 +38,7 @@ function main(itemidx)
 
 	basemission_CallNpc(tbNpc)
 		
-	Msg2Player("ÖÖÖ²Ò»¿ÅÓĞÉ«Ê÷ÖÖ×Ó")
+	Msg2Player("Trång 1 H¹t Gièng C©y Mµu S¾c")
 	
 	local tbPos = cutround_in8(nX, nY, 8)
 	for i = 1, getn(tbPos) do

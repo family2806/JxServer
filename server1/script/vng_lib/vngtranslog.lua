@@ -2,17 +2,17 @@ Include("\\script\\vng_lib\\files_lib.lua")
 IncludeLib("SETTING")
 local tbVngFactionName = 
 {
-[-1]="Î´ÈëÅÉ",
- [0]="ÉÙÁÖÅÉ",
- [1]="ÌìÍõ°ï",
- [2]="ÌÆÃÅ",
- [3]="Îå¶¾½Ì",
- [4]="¶ëáÒÅÉ",
- [5]="´äÑÌÃÅ",
- [6]="Ø¤°ï",
- [7]="ÌìÈÌ½Ì",
- [8]="Îäµ±ÅÉ",
- [9]="À¥ÂØÅÉ",
+[-1]="Ch­a nhËp ph¸i",
+ [0]="ThiÕu L©m ph¸i",
+ [1]="Thiªn V­¬ng Bang",
+ [2]="§­êng M«n",
+ [3]="Ngò §éc Gi¸o",
+ [4]="Nga My ph¸i",
+ [5]="Thóy Yªn m«n",
+ [6]="C¸i Bang",
+ [7]="Thiªn NhÉn Gi¸o",
+ [8]="Vâ §ang ph¸i",
+ [9]="C«n L«n ph¸i",
 }
 tbVngTransLog = {}
 tbVngTransLog.strFolder = "vng_data/Logs/"

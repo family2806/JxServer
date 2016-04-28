@@ -15,7 +15,7 @@ function messenger_killpoint()
 		if ( Uworld1213 ~= 0 ) then       --ÅĞ¶ÏÊÇ·ñË«±¶¾­ÑéÊ±¼ä
 			if  ( GetGameTime() - Uworld1213 >= 1200 ) then
 				nt_setTask(1213,0)
-				Msg2Player("ÄãµÄÔö¼ÓË«±¶¾­ÑéÖµµÄÊ±¼äÒÑ½áÊø!")
+				Msg2Player("Thêi gian t¨ng gÊp ®«i ®iÓm kinh nghiÖm cña b¹n ®· kÕt thóc!")
 			else
 				AddOwnExp(FLYPOINT_EXP)    --¸øÓèÒ»±¶µÄ¾­Ñé£¬Ö»ÓĞ´òËÀ¸Ã¹ÖÎïµÄÈËÓĞÈÎÎñ±äÁ¿²Å¿ÉÒÔ
 			end
@@ -25,5 +25,5 @@ function messenger_killpoint()
 		messenger_killbugbear_inteam(FLYPOINT_EXP,FLYPOINT_MAPID)   --Ôö¼Ó¶ÓÎéÄÚÍæ¼Ò¾­Ñé
 		nt_setTask(1214,0)
 	
-		Msg2Player("¹§Ï²ÄãÍê³ÉÈÎÎñ "..killfly[Uworld1214][3].."!")
+		Msg2Player("Chóc mõng b¹n hoµn thµnh nhiÖm vô!"..killfly[Uworld1214][3].."!")
 end

@@ -12,7 +12,7 @@ tbHonor_Sys_2009.bLoaded = 0;
 -- ÅÅÃûµñÏñÁĞ±í
 tbHonor_Sys_2009.tbHonor_Ladder_List =
 {
-	[1]={["nId"]=1, ["strName"] = "Ê®´ó¸ßÊÖ", ["nCount"] = 0, ["content"] = "ÏûÃğ: <color=green>%d<color> ¸ö", ["nLadderID"] = 3,["tbLadder"]=
+	[1]={["nId"]=1, ["strName"] = "ThËp ®¹i cao thñ", ["nCount"] = 0, ["content"] = "Tiªu diÖt: <color=green>%d<color> cao thñ", ["nLadderID"] = 3,["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52256, ["ny"] = 103264, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52864, ["ny"] = 103936, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -25,7 +25,7 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 51488, ["ny"] = 104032, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52224, ["ny"] = 104704, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 	} },
-	[2]={["nId"]=1, ["strName"] = "Ê®´ó²Æ¸»", ["nCount"] = 0, ["content"] = "²Æ¸» <color=green>%d<color> µã", ["nLadderID"] = 36, ["tbLadder"]=
+	[2]={["nId"]=1, ["strName"] = "ThËp ®¹i tµi phó", ["nCount"] = 0, ["content"] = "Tµi phó: <color=green>%d<color> ®iÓm", ["nLadderID"] = 36, ["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50656, ["ny"] = 105056, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 51168, ["ny"] = 105568, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -38,7 +38,7 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 49760, ["ny"] = 105920, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50272, ["ny"] = 106464, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 	} },
-	[3]={["nId"]=1, ["strName"] = "ËÎ½ğ¸ßÊÖ", ["nCount"] = 0, ["content"] = "ËÎ½ğ: <color=green>%d<color> µã", ["nLadderID"] = 10086, ["tbLadder"]=
+	[3]={["nId"]=1, ["strName"] = "Tèng kim cao thñ", ["nCount"] = 0, ["content"] = "Tèng kim: <color=green>%d<color> ®iÓm", ["nLadderID"] = 10086, ["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 49280, ["ny"] = 103872, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 49280, ["ny"] = 103520, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -46,7 +46,7 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 48928, ["ny"] = 103872, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 49344, ["ny"] = 104288, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 	} },
-	[4]={["nId"]=1, ["strName"] = "´³¹Ø¸ßÊÖ", ["nCount"] = 0, ["content"] = "´³¹ØÊ±¼ä: <color=green>%d<color> ·Ö.", ["nLadderID"] = 10180, ["tbLadder"]=
+	[4]={["nId"]=1, ["strName"] = "V­ît ¶i cao thñ", ["nCount"] = 0, ["content"] = "Thêi gian v­ît ¶i: <color=green>%d<color> phót.", ["nLadderID"] = 10180, ["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50464, ["ny"] = 102624, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50464, ["ny"] = 102240, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -54,7 +54,7 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50080, ["ny"] = 102624, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 50496, ["ny"] = 103040, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 	} },
-	[5]={["nId"]=1, ["strName"] = "ÁªÈü¸ßÊÖ", ["nCount"] = 0, ["content"] = "ÁªÈü: <color=green>%d<color> ´Î¹Ú¾ü", ["nLadderID"] = 38, ["tbLadder"]=
+	[5]={["nId"]=1, ["strName"] = "Liªn ®Êu cao thñ", ["nCount"] = 0, ["content"] = "Liªn ®Êu: <color=green>%d<color> lÇn qu¸n qu©n", ["nLadderID"] = 38, ["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52384, ["ny"] = 107040, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52384, ["ny"] = 107456, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -62,7 +62,7 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 51968, ["ny"] = 107040, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52384, ["ny"] = 106656, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 	} },
-	[6]={["nId"]=1, ["strName"] = "Boss ¸ßÊÖ", ["nCount"] = 0, ["content"] = "ÏûÃğboss: <color=green>%d<color> ´Î.", ["nLadderID"] = 37, ["tbLadder"]=
+	[6]={["nId"]=1, ["strName"] = "Boss cao thñ", ["nCount"] = 0, ["content"] = "Tiªu diÖt boss: <color=green>%d<color> lÇn.", ["nLadderID"] = 37, ["tbLadder"]=
 	{
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 53600, ["ny"] = 105728, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
 		{["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 53600, ["ny"] = 105344, ["strScript"] = "\\script\\honor\\honor_ladder.lua", ["strNpcName"] = ""},
@@ -72,10 +72,10 @@ tbHonor_Sys_2009.tbHonor_Ladder_List =
 	} },
 }
 
--- Ìì×Ó¼ÇÂ¼ÁĞ±í
+-- Thiªn Tö¼ÇÂ¼ÁĞ±í
 tbHonor_Sys_2009.tbHonor_Tianzi_List =
 {
-	["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52672, ["ny"] = 103360, ["strScript"] = "\\script\\honor\\honor_tianzi.lua", ["strNpcName"] = "Ìì×ÓÀúÊ·",
+	["nTemplate"] = 0, ["nSubworld"] = 897, ["nx"] = 52672, ["ny"] = 103360, ["strScript"] = "\\script\\honor\\honor_tianzi.lua", ["strNpcName"] = "Thiªn TöÀúÊ·",
 	["tbHistory"] = {},
 }
 
@@ -89,19 +89,19 @@ tbHonor_Sys_2009.tbHonor_NPC_List =
 -- ÅÅÃûµñÏñnpcĞÎÏóÄ£°å
 tbHonor_Sys_2009.tbNPC_Template_List = 
 {
-    [255] = {[0]=1415, [1]=1423, strName = "ÎŞÃÅÅÉ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÎŞÃÅÅÉ Ä¬ÈÏÓÃÌìÍõµÄµñÏñ
-    [-1] = {[0]=1415, [1]=1423, strName = "ÎŞÃÅÅÉ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÎŞÃÅÅÉ Ä¬ÈÏÓÃÌìÍõµÄµñÏñ
-	[0] = {[0]=1422, [1]=1422, strName = "ÉÙÁÖ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÉÙÁÖ
-	[1] = {[0]=1421, [1]=1420, strName = "ÌìÍõ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÌìÍõ
-	[2] = {[0]=1417, [1]=1416, strName = "Îå¶¾"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÌÆÃÅ
-	[3] = {[0]=1415, [1]=1414, strName = "ÌÆÃÅ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Îå¶¾
-	[4] = {[0]=1423, [1]=1423, strName = "¶ëÃ¼"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ¶ëÃ¼
-	[5] = {[0]=1428, [1]=1428, strName = "´äÑÌ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ´äÑÌ
-	[6] = {[0]=1413, [1]=1412, strName = "Ø¤°ï"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Ø¤°ï
-	[7] = {[0]=1419, [1]=1418, strName = "ÌìÈÌ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ÌìÈÌ
-	[8] = {[0]=1427, [1]=1426, strName = "Îäµ±"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Îäµ±
-	[9] = {[0]=1425, [1]=1424, strName = "À¥ÂØ"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® À¥ÂØ
-	[10] = {[0]=1430, [1]=1429, strName = "Ìì×Ó"}, -- 0 ÄĞ, 1 Å® Ìì×Ó
+    [255] = {[0]=1415, [1]=1423, strName = "Kh«ng m«n ph¸i"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Kh«ng m«n ph¸i Ä¬ÈÏÓÃThiªn V­¬ngµÄµñÏñ
+    [-1] = {[0]=1415, [1]=1423, strName = "Kh«ng m«n ph¸i"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Kh«ng m«n ph¸i Ä¬ÈÏÓÃThiªn V­¬ngµÄµñÏñ
+	[0] = {[0]=1422, [1]=1422, strName = "ThiÕu L©m"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® ThiÕu L©m
+	[1] = {[0]=1421, [1]=1420, strName = "Thiªn V­¬ng"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Thiªn V­¬ng
+	[2] = {[0]=1417, [1]=1416, strName = "§­êng M«n"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Ngò §éc
+	[3] = {[0]=1415, [1]=1414, strName = "Ngò §éc"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® §­êng M«n
+	[4] = {[0]=1423, [1]=1423, strName = "Nga My"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Nga My
+	[5] = {[0]=1428, [1]=1428, strName = "Thóy Yªn"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Thóy Yªn
+	[6] = {[0]=1413, [1]=1412, strName = "C¸i Bang"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® C¸i Bang
+	[7] = {[0]=1419, [1]=1418, strName = "Thiªn NhÉn"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Thiªn NhÉn
+	[8] = {[0]=1427, [1]=1426, strName = "Vâ §ang"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® Vâ §ang
+	[9] = {[0]=1425, [1]=1424, strName = "C«n L«n"}, -- key ÃÅÅÉid; 0 ÄĞ, 1 Å® C«n L«n
+	[10] = {[0]=1430, [1]=1429, strName = "Thiªn Tö"}, -- 0 ÄĞ, 1 Å® Thiªn Tö
 }
 
 tbHonor_Sys_2009.exit_portal = 
@@ -140,7 +140,7 @@ function tbHonor_Sys_2009:honor_sys_startup()
 	self:add_exit_portal();
 end
 
--- ¼ÓÔØÅÅÃûºÍÌì×Ó¼ÇÂ¼
+-- ¼ÓÔØÅÅÃûºÍThiªn Tö¼ÇÂ¼
 function tbHonor_Sys_2009:load_ladder()
     local nCount = 0;
     
@@ -170,7 +170,7 @@ function tbHonor_Sys_2009:load_ladder()
         end
     end
     
-    -- Ìì×ÓÀúÊ·
+    -- Thiªn TöÀúÊ·
     nCount = NW_EmperorHistoryCount(); -- ¿Ï¶¨»áÓĞÒ»¸ö¼ÇÂ¼µÄ
     
     for i = 1, nCount do

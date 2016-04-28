@@ -12,16 +12,16 @@
 --2¡¢1000Á½Òø×Ó
 --¼Ó¹¤Ìõ¼þ£º·ÇÇüÔ­Ê²½õôÕ×ÓÒÔÍâµÄ¸÷ÖÖÊ²½õôÕ×ÓºÍÈÎÒ»ôÕ×ÓÔ­ÁÏ£»1000Á½Òø×Ó
 --Ê§°Ü½á¹û£º»ñµÃÊ²½õôÕ×Ó£¨ÎÞÂÛÄã¼Ó¹¤Ç°ÊÇÊ²Ã´Ê²½õôÕ×Ó£©£¬¼Ó¹¤ÓÃôÕ×Ó²ÄÁÏÏûÊ§£¬²»·µ»¹1000Á½Òø×Ó¡£
---ÏÞÖÆËµÃ÷£º»î¶¯½áÊøÊ±¹¦Ð§ÏûÊ§£¨¼´±äÖÊ£©£¬Ã¿ÔÚÏßÒ»Ð¡Ê±Ö»ÄÜ³ÔÒ»¸ö£¬Ò»¸ö½ÇÉ«³Ô³¬¹ý20,000,000µã¾­ÑéµÄ¸÷ÀàÊ²½õôÕ×ÓÖ®ºó¾Í²»ÄÜÔÙ³ÔÈÎºÎÊ²½õôÕ×Ó¡£
+--ÏÞÖÆËµÃ÷£º»î¶¯½áÊøÊ±¹¦Ð§ÏûÊ§£¨¼´±äÖÊ£©£¬Ã¿T¹iÏßÒ»Ð¡Ê±Ö»ÄÜ³ÔÒ»¸ö£¬Ò»¸ö½ÇÉ«³Ô³¬¹ý20,000,000µã¾­ÑéµÄ¸÷ÀàÊ²½õôÕ×ÓÖ®ºó¾Í²»ÄÜÔÙ³ÔÈÎºÎÊ²½õôÕ×Ó¡£
 
 
 function main(sel)
 firsttime = GetTask(139)
 num = GetTask(138)
-msg={	     "Äã³ÔÁËÌ«¶àµÄÊ²½õôÕ×Ó£¬ÒÑ¾­²»ÄÜ¼ÌÐø³ÔÁË£¡",
-	     "ÄãµÄµÈ¼¶ÌáÉýÁË£¡",
-	     "Äã¾õµÃºÜ±¥£¬ÒªµÈÒ»¶ÎÊ±¼ä²Å¿ÉÒÔ³ÔÊ²½õôÕ×Ó£¡",
-		 "Äã³ÔÁË×ã¹»¶àµÄôÕ×Ó£¬ÕâÒÑ¾­ÊÇ×îºóÒ»¸ö£¡"
+msg={	     "B¹n ®· ¨n rÊt nhiÒu b¸nh ch­ng, kh«ng thÓ ¨n thªm ®­îc n÷a ",
+	     "§¼ng cÊp cña b¹n ®· t¨ng lªn ",
+	     "B¹n c¶m thÊy rÊt no, ph¶i ®îi thªm chót n÷a míi cã thÓ ¨n b¸nh ch­ng! ",
+		 "B¹n ®· ¨n rÊt nhiÒu b¸nh ch­ng, ®©y lµ c¸i cuèi cïng "
 	    }
 
 
@@ -34,10 +34,10 @@ msg={	     "Äã³ÔÁËÌ«¶àµÄÊ²½õôÕ×Ó£¬ÒÑ¾­²»ÄÜ¼ÌÐø³ÔÁË£¡",
 			AddOwnExp(200000000)  --¾­ÑéÖµÔö¼Ó200000000
 			time=GetItemGenTime(sel)
 		        name=GetName()
-	    		WriteLog("Íæ¼Ò"..name.."ÔÚ"..time.."³ÔµôÁËÒ»¸öÇüÔ­ôÕ×Ó")
+	    		WriteLog("Ng­êi ch¬i"..name.."T¹i"..time.."¨n hÕt mét c¸i b¸nh ch­ng KhuÊt Nguyªn")
 			Msg2Player(msg[2])
 			SetTask(138,num+200000000)
-			SetTask(139, GetGameTime())  --¼ÇÂ¼µ±Ç°ÔÚÏßÊ±¼ä
+			SetTask(139, GetGameTime())  --¼ÇÂ¼µ±Ç°T¹iÏßÊ±¼ä
 			if(GetTask(138)>20000000) then
 				Msg2Player(msg[4])
 			end
@@ -46,10 +46,10 @@ msg={	     "Äã³ÔÁËÌ«¶àµÄÊ²½õôÕ×Ó£¬ÒÑ¾­²»ÄÜ¼ÌÐø³ÔÁË£¡",
 			AddOwnExp(200000000)  --¾­ÑéÖµÔö¼Ó200000000
 			time=GetItemGenTime(sel)
 		        name=GetName()
-	    		WriteLog("Íæ¼Ò"..name.."ÔÚ"..time.."³ÔµôÁËÒ»¸öÇüÔ­ôÕ×Ó")
+	    		WriteLog("Ng­êi ch¬i"..name.."T¹i"..time.."¨n hÕt mét c¸i b¸nh ch­ng KhuÊt Nguyªn")
 			Msg2Player(msg[2])
 			SetTask(138,num+200000000)
-			SetTask(139, GetGameTime())  --¼ÇÂ¼µ±Ç°ÔÚÏßÊ±¼ä
+			SetTask(139, GetGameTime())  --¼ÇÂ¼µ±Ç°T¹iÏßÊ±¼ä
 			if(GetTask(138)>20000000) then
 				Msg2Player(msg[4])
 			end

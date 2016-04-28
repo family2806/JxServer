@@ -3,7 +3,7 @@
 
 --Î÷ÏÄÉÌÈË	
 Include([[\script\missions\chrismas\npcs\xixiashangren.lua]]);
-XIXIA_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby013\\passerby013s.spr>Î÷ÏÄÉÌÈË <link>"
+XIXIA_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby013\\passerby013s.spr>T©y H¹ th­¬ng nh©n <link>"
 
 
 function main()

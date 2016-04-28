@@ -14,27 +14,27 @@ Include("\\script\\missions\\yandibaozang\\yandiduihuan.lua")
 --YDBZ_DATE_END = 23		--	½áÊøÊ±¼ä
 ID_PRISONMAN = 96; 		-- ÅĞ¶ÏÊÇ·ñÔÚ×øÀÎµÄ ID
 function main()
---	Say("¸Ã¹¦ÄÜÔİÊ±±»¹Ø±ÕÁË",0)
+--	Say("Chøc n¨ng ®ang ®­îc t¹m ®ãng",0)
 --	do return end
 --	if gb_GetModule("YANDIBAOZANG_TALK") ~= 1 then
 --		Say("¶Ô²»Æğ£¬´Ë¹¦ÄÜÔİÊ±¹Ø±Õ£¬¿ª·ÅÊ±¼ä¾´Çë¹Ø×¢¹Ù·½¹«¸æ¡£",0)
 --		return
 --	end
 	local tbarytalk = {
-	"<dec><npc>´³ĞÂ¹Ø¿ÚµÄ·½·¨£¬ĞÂÄÚÈİ£¬ĞÂboss£¬ĞÂµØÍ¼£¬Êı²»ÇåµÄÆæÕäÒì±¦£¬ºÜÊÊºÏÖ»ÔÚÑ×µÛ±¦²Ø²ÅÓĞµÄ»Æ½ğ×°±¸¡£¸óÏÂ×°±¸ºÃÁËÂğ?",
-	"¿´×é¶ÓÇé¿ö/YDBZ_view_player",
+	"<dec><npc>C¸ch ch¬i v­ît ¶i míi, néi dung míi, boss míi, b¶n ®å míi, v« vµn kú tr©n dŞ b¶o, rÊt thİch hîp c¸c trang bŞ hoµng kim cña m«n ph¸i chØ cã t¹i b¶o tµng viªm ®Õ. C¸c h¹ ®· chuÈn bŞ ch­a?",
+	"Xem t×nh h×nh tæ ®éi/YDBZ_view_player",
 --	"Ñ×µÛ»Æ½ğÍ¼Æ×¶Ò»»/YDBZ_golditem",
 --	"Ñ×µÛÍ¼ÌÚ¶Ò»»/YDBZ_tradeYandiTuTeng",
---	"ÎÒÏë»»Ñ×µÛÁîÆìYDBZ_tradeYandiLingQi",
---	"ÎÒÏë»»ĞşÔ³Áî/YDBZ_tradeXuanYuanLing",
+--	"Ta muèn ®æi viªm ®Õ lÖnh kú/YDBZ_tradeYandiLingQi",
+--	"Ta muèn ®æi huyÒn viªn lÖnh/YDBZ_tradeXuanYuanLing",
 --	"ÎÒÒªÖØÖıÑ×µÛ»Æ½ğ×°±¸/yandiduihuan_main",
 --	"ÖØÖıÑ×µÛ»Æ½ğ×°±¸ËµÃ÷/yandiduihuan_shuoming",
-	"Ñ×µÛ±¦²Ø³ö´¦/YDBZ_about",
-	"ÎÒÖ»ÏëËæ±ãÍæÍæ/NoChoice",
+	"Nguån gèc b¶o tµng viªm ®Õ/YDBZ_about",
+	"Ta chØ muèn d¹o ch¬i/NoChoice",
 	}
 	if YDBZ_check_ready_state() == 1 then
-		tinsert(tbarytalk,2,"±¨Ãû²Î¼Ó/YDBZ_want_play")
-		tinsert(tbarytalk,3,"²ÎÕ½³ÉÔ±/YDBZ_member_play")
+		tinsert(tbarytalk,2,"B¸o danh tham gia/YDBZ_want_play")
+		tinsert(tbarytalk,3,"Thµnh viªn tham chiÕn/YDBZ_member_play")
 	end
 	CreateTaskSay(tbarytalk)
 end
@@ -65,20 +65,20 @@ function YDBZ_view_player()
 	if YDBZ_checkLimit() == 1 then
 		return
 	end
-	Say("¸óÏÂµÄ×é¶Ó·ûºÏ½øÈëÑ×µÛ±¦²ØµÄÌõ¼ş®Õ",0)
+	Say("Tæ ®éi cña c¸c h¹ phï hîp víi ®iÒu kiÖn tiÕn vµo b¶o tµng viªm ®Õ",0)
 end
 
 function YDBZ_checkLimit2()
 	if GetCamp() == 0 then
-			Say("ÄãµÄ×é¶ÓÓĞ³ÉÔ±Î´¼ÓÈëÃÅÅÉ£¬²»ÄÜ²Î¼Ó»î¶¯.",0)
+			Say("Thµnh viªn trong tæ ®éi cã ng­êi ch­a gia nhËp m«n ph¸i, kh«ng thÓ tham gia ho¹t ®éng.",0)
 			return 1
 	end 
 	if GetTeamSize() ~= 0 then
-		Say("ĞèÒª·µ»Ø×é¶Ó½øÈëÑ×µÛ±¦²ØµÄÃÅ¿Ú£¬Ä¿Ç°²»ÄÜ×é¶Ó",0)
+		Say("CÇn ph¶i trë vÒ ë cöa vµo b¶o tµng viªm ®Õ cña tæ ®éi, hiÖn giê kh«ng thÓ tæ ®éi ®­îc",0)
 		return 1
 	end
 	if (GetLevel() < YDBZ_LIMIT_PLAYER_LEVEL) then
-		Say("µÈ¼¶²»¹»²Î¼Ó»î¶¯",0)
+		Say("CÊp bËc kh«ng ®ñ ®Ó tham gia ho¹t ®éng",0)
 		return 1
 	end
 		
@@ -97,7 +97,7 @@ function YDBZ_checkLimit2()
 	local numzimu = CalcItemCount(3,g,d,p,-1)
 	local numbeibao = CalcItemCount(23,g,d,p,-1)
 	if ( (numzimu+numbeibao) < YDBZ_LIMIT_ITEM[2] and (ndnumzimu+ndnumbeibao) < YDBZ_LIMIT_DOUBEL_ITEM[2] ) then
-		Say("¸óÏÂÃ»´øÓ¢ĞÛÌû£¬²»ÄÜ²Î¼ÓÑ×µÛÕù¶á.",0)
+		Say("C¸c h¹ kh«ng ®em theo anh hïng thiÕp, kh«ng thÓ tham gia tranh ®o¹t viªm ®Õ.",0)
 		return 1
 	end
 	
@@ -110,10 +110,10 @@ function YDBZ_checkLimit2()
 	local ndaycount = YDBZ_sdl_getTaskByte(YDBZ_PLAY_LIMIT_COUNT,4)
 
 	if nweek == noldweek and ncount >= YDBZ_LIMIT_WEEK_COUNT and (ndnumzimu + ndnumbeibao) == 0 then
-			Say("±¾ÖÜÄãÒÑ²Î¼Ó¹»ĞèÒªµÄ´ÎÊıÁË.",0)
+			Say("TuÇn nµy c¸c h¹ ®· tham gia ®ñ sè ®ît cÇn thiÕt.",0)
 			return 1
 	elseif (nday == noldday and ndaycount >= YDBZ_LIMIT_DAY_COUNT and (ndnumzimu + ndnumbeibao) == 0 )then
-			Say("µ±ÈÕ²Î¼ÓµÄ´ÎÊıÒÑ´ï×î¸ßÖµ.",0)
+			Say("Sè lÇn tham gia trong ngµy ®· ®¹t ®Õn møc cao nhÊt.",0)
 			return 1
 	end
 	if nweek ~= noldweek then
@@ -135,16 +135,16 @@ function YDBZ_checkLimit()
 	local oldplayer = PlayerIndex
 	if (IsCaptain() ~= 1) then
 		local tbarytalk ={
-			"<dec><npc>²Î¼ÓÑ×µÛ±¦²Ø´³¹Ø»î¶¯ĞèÒªÓÉ¶Ó³¤±¨Ãû²ÅÄÜ½øÈë.",
-			"ÖªµÀÁË/NoChoice",
+			"<dec><npc>Tham gia ho¹t ®éng v­ît ¶i viªm ®Õ b¶o tµng cÇn ph¶i do ®éi tr­ëng b¸o danh míi vµo ®­îc.",
+			"BiÕt råi/NoChoice",
 		}
 		CreateTaskSay(tbarytalk)
 		return 1
 	end
 	if (GetTeamSize() < YDBZ_TEAM_COUNT_LIMIT or GetTeamSize() > YDBZ_TEAM_COUNT_MAXLIMIT) then
 		local tbarytalk ={
-			"<dec><npc>×é¶Ó²Î¼ÓÑ×µÛ±¦²Ø×îÉÙĞèÒª<color=red>"..YDBZ_TEAM_COUNT_LIMIT.."<color> ÈËÇÒ²»ÄÜ³¬¹ı<color=red>"..YDBZ_TEAM_COUNT_MAXLIMIT.."<color>. Ä¿Ç°×é¶ÓÄÚÈËÊı²»·ûºÏÒªÇó.",
-			"ÖªµÀÁË/NoChoice",
+			"<dec><npc>Tæ ®éi tham gia b¶o tang viªm ®Õ cÇn İt nhÊt <color=red>"..YDBZ_TEAM_COUNT_LIMIT.."<color> ng­êi vµ kh«ng thÓ v­ît qu¸ <color=red>"..YDBZ_TEAM_COUNT_MAXLIMIT.."<color>. Tr­íc m¾t sè ng­êi trong tæ ®éi kh«ng phï hîp yªu cÇu.",
+			"BiÕt råi/NoChoice",
 		}
 		CreateTaskSay(tbarytalk)
 		return 1
@@ -161,7 +161,7 @@ function YDBZ_checkLimit()
 		PlayerIndex = GetTeamMember(i)
 		if GetCamp() == 0 then
 			PlayerIndex = oldplayer
-			Say("ÄãµÄ×é¶ÓÓĞ³ÉÔ±Î´¼ÓÈëÃÅÅÉ£¬²»ÄÜ²Î¼Ó»î¶¯.",0)
+			Say("Thµnh viªn trong tæ ®éi cã ng­êi ch­a gia nhËp m«n ph¸i, kh«ng thÓ tham gia ho¹t ®éng.",0)
 			return 1
 		end 
 		--¼ì²éµÈ¼¶
@@ -239,14 +239,14 @@ function YDBZ_checkLimit()
 		for i=2,noplaylv do 
 			szstr1 = szstr1 .. ", " .. tbstr[1][i]
 		end
-		szstr = szstr .. format("Íæ¼Ò %s ÔÚ¶ÔÄÚ»¹Î´´ïµ½µÈ¼¶%s.",szstr1,YDBZ_LIMIT_PLAYER_LEVEL)
+		szstr = szstr .. format("Ng­êi ch¬i %s trong ®éi vÉn ch­a ®¹t cÊp %s.",szstr1,YDBZ_LIMIT_PLAYER_LEVEL)
 	end
 	if noitem > 0 then
 		local szstr1 = tbstr[2][1]
 		for i=2,noitem do 
 			szstr1 = szstr1 .. ", " .. tbstr[2][i]
 		end
-		szstr = szstr .. format("Íæ¼Ò %s Ã»ÓĞ´ø%s.",szstr1,YDBZ_LIMIT_ITEM[3])
+		szstr = szstr .. format("Ng­êi ch¬i %s kh«ng mang theo %s.",szstr1,YDBZ_LIMIT_ITEM[3])
 	end
 	if nocount > 0 then
 		local szstr1 = tbstr[3][1]
@@ -254,9 +254,9 @@ function YDBZ_checkLimit()
 			szstr1 = szstr1 .. ", " .. tbstr[3][i]
 		end
 		if nsignweekday == 1 then
-			szstr = szstr .. format("Íæ¼Ò %s ±¾ÖÜÄÚ²Î¼Ó´ÎÊı´ïµ½ <color=yellow>%s ´Î<color>, ²»ÄÜ²Î¼Ó´³¹Ø»î¶¯",szstr1,YDBZ_LIMIT_WEEK_COUNT)	
+			szstr = szstr .. format("Ng­êi ch¬i %s trong tuÇn nµy cã sè lÇn tham gia ®· ®¹t ®Õn <color=yellow>%s lÇn<color>, kh«ng thÓ tham gia ho¹t ®éng v­ît ¶i",szstr1,YDBZ_LIMIT_WEEK_COUNT)	
 		elseif nsignweekday == 2 then
-			szstr = szstr .. format("Íæ¼Ò %s µ±ÈÕ²Î¼Ó´ÎÊı´ïµ½ <color=yellow>%s ´Î<color>, ²»ÄÜ²Î¼Ó´Ë´Î»î¶¯.",szstr1,YDBZ_LIMIT_DAY_COUNT)	
+			szstr = szstr .. format("Ng­êi ch¬i %s trong ngµy cã sè lÇn tham gia ®· ®¹t ®Õn <color=yellow>%s lÇn<color>, kh«ng thÓ tham gia ho¹t ®éng lÇn nµy.",szstr1,YDBZ_LIMIT_DAY_COUNT)	
 		end
 	end
 	if (nAcc > 0) then
@@ -264,7 +264,7 @@ function YDBZ_checkLimit()
 		for i = 2, nAcc do 
 			szstr1 = szstr1 .. ", " .. tbstr[4][i]
 		end
-		szstr = szstr .. format("Íæ¼Ò %s Ã»ÓĞ´ø%s.",szstr1,YDBZ_LIMIT_DOUBEL_ITEM[3])
+		szstr = szstr .. format("Ng­êi ch¬i %s kh«ng mang theo %s.",szstr1,YDBZ_LIMIT_DOUBEL_ITEM[3])
 	end
 	
 	if noplaylv + noitem + nAcc +nocount > 0 then
@@ -311,29 +311,29 @@ function YDBZ_want_play()
 		end
 	end
 	--print("total"..totalboat.."free"..freeboat)
-	local	strlevel = "Ñ×µÛ±¦²Ø´³¹Ø"
+	local	strlevel = "V­ît ¶i b¶o tµng viªm ®Õ"
 	if (startboat == 1) then
 		if (freeboat == 0) then
 			local tbarytalk ={
-			"<dec><npc>³ÇÄÚÇøÓò"..strlevel.." ÒÑ¿ªÊ¼, Ã»ÓĞ¿ÕÎ»ÁË.",
-			"ÖªµÀÁË/NoChoice",
+			"<dec><npc>Khu vùc thµnh nµy"..strlevel.." ®·  b¾t ®Çu, kh«ng cßn vŞ trİ trèng nµo.",
+			"BiÕt råi/NoChoice",
 		}
 		CreateTaskSay(tbarytalk)
 			return
 		else
 			local tbarytalk ={
 			-- ¸ü»»Í¨ÖªÀ¸ÏÔÊ¾ - Modified - by AnhHH 20110725
-			"<dec><npc>³ÇÄÚÇøÓò"..strlevel.." ½øÈë±¨Ãû½×¶Î, ¿ªÊ¼Ê±£¬Ã¿¸ö³ÉÔ±ĞèÒª½»<color=red>"..YDBZ_LIMIT_ITEM[2].." ¸ö"..YDBZ_LIMIT_ITEM[3].."<color>. ´ÓµÚ¶ş´Î£¬Ã¿¸ö³ÉÔ±Òª½»<color=red>"..YDBZ_LIMIT_DOUBEL_ITEM[2].." ¸ö"..YDBZ_LIMIT_DOUBEL_ITEM[3].."<color>, ´óÏÀÏë²Î¼Ó?",
-			"ÊÇµÄ£¬ÎÒÏë´øÁìÎÒµÄ¶Ó²Î¼Ó./YDBZ_dragon_join",
-			"²»ÓÃ/NoChoice",
+			"<dec><npc>Khu vùc thµnh nµy"..strlevel.." tiÕn vµo giai ®oan b¸o danh, LÇn ®Çu mçi thµnh viªn cÇn ph¶i nép <color=red>"..YDBZ_LIMIT_ITEM[2].." c¸i "..YDBZ_LIMIT_ITEM[3].."<color>. Tõ lÇn thø 2 mçi thµnh viªn cÇn ph¶i nép  <color=red>"..YDBZ_LIMIT_DOUBEL_ITEM[2].." c¸i "..YDBZ_LIMIT_DOUBEL_ITEM[3].."<color>, ®¹i hiÖp cã muèn tham gia?",
+			"Ph¶i! Ta muèn dÉn d¾t ®éi cña ta tham gia./YDBZ_dragon_join",
+			"Kh«ng cÇn/NoChoice",
 		}
 		CreateTaskSay(tbarytalk)
 			return
 		end
 	else
 		local tbarytalk ={
-			"<dec><npc>¶Ô²»Æğ, ³ÇÄÚÇøÓò"..strlevel.."Ä¿Ç°Ã»ÓĞÈÎºÎÑ×µÛ±¦²ØÈÎÎñ¿ÉÒÔ²Î¼Ó¡£¿ªÊ¼´Ó<color=red>14:00 µ½ 24:00<color>, Çë×¢ÒâÍ¨Öª²¢ÌáÇ°5·ÖÖÓ±¨Ãû.",
-			"ÖªµÀÁË/NoChoice",
+			"<dec><npc>Xin lçi, khu vùc thµnh nµy"..strlevel.."HiÖn t¹i kh«ng cã nhiÖm vô b¶o tµng viªm ®Õ nµo cã thÓ tham gia. B¾t ®Çu tõ <color=red>14:00 ®Õn 24:00<color>, xin h·y chó ı th«ng b¸o vµ ®Õn tr­íc 5 phót ®Ó b¸o danh.",
+			"BiÕt råi/NoChoice",
 		}
 		CreateTaskSay(tbarytalk)
 		return
@@ -383,9 +383,9 @@ function YDBZ_dragon_join()
 					w,x,y = GetWorldPos();
 					if GetTask(ID_PRISONMAN)>100 or w==208 then
 						SetPK(10);
-						Msg2Player("<color=red>ÄãÒòÎªÓĞÏëÔ½ÓüµÄÒâÍ¼£¬±»¼ÓÖØĞÌ·£<color><color=yellow>PK ±ä³É10!<color>");
+						Msg2Player("<color=red>Ng­¬i v× cã ı ®å v­ît ngôc vµ bŞ t¨ng khung h×nh ph¹t nÆng thªm, <color><color=yellow>PK biÕn thµnh 10!<color>");
 						for i=1, 3 do
-							Msg2SubWorld("<color=yellow>Íæ¼Ò: <color><color=green>"..GetName().."<color><color=yellow> ÓĞÔ½ÓüµÄÒâÍ¼£¬±»ÑÃ²îµ±³¡×¥µ½£¬Í¬Ê±Ôö¼ÓĞÌ·£¡£Í¨¸æÈ«ÌìÏÂ¡£<color>!");
+							Msg2SubWorld("<color=yellow>Ng­êi ch¬i: <color><color=green>"..GetName().."<color><color=yellow> cã ı ®å v­ît ngôc, bŞ nha dŞch b¾t ngay t¹i hiÖn tr­êng, ®ång thêi t¨ng møc h×nh ph¹t! Th«ng b¸o cho toµn thiªn h¹ biÕt tin<color>!");
 						end;
 					else
 						SetTask(YDBZ_TEAMS_TASKID,(nteammax+1))
@@ -394,15 +394,15 @@ function YDBZ_dragon_join()
 				end
 				BuildATeam(1,0,tabplayer)
 				SubWorld = sub
-				Msg2MSAll(YDBZ_READY_MISSION,format("<color=blue>§éi %s <color> ½øÈëÑ×µÛ±¦²Ø´óÃÅ®Õ",szteamname))
+				Msg2MSAll(YDBZ_READY_MISSION,format("<color=blue>§éi %s <color> tiÕn vµo cæng b¶o tµng viªm ®Õ",szteamname))
 				return
 			end
 		end
 	end
 	SubWorld = OldSubWorld
 	PlayerIndex = OldPlayer
-	local	strlevel = "Ñ×µÛ±¦²Ø´³¹Ø"
-	Say(format("Ä¿Ç°<color=red>%s<color> Ã»ÓĞ¿ÕÎ»ÁË. µÈÏÂ´Î°É", strlevel),0);
+	local	strlevel = "V­ît ¶i b¶o tµng viªm ®Õ"
+	Say(format("HiÖn t¹i <color=red>%s<color> kh«ng cßn vŞ trİ trèng nµo. H·y ®îi ®ît sau", strlevel),0);
 end
 
 
@@ -420,13 +420,13 @@ function YDBZ_dragon_mem_join()
 			local state = GetMissionV(YDBZ_READY_STATE)
 			if ( state == 1 ) then
 				if GetTask(YDBZ_MISSIOM_PLAYER_KEY) ~=  GetMissionV(YDBZ_MISSION_KEY) then
-					Say("´óÏÀµÄ×é¶Ó²»×ãÕâ´Î´³¹ØÄÚ.",0)
+					Say("Tæ ®éi cña ®¹i hiÖp kh«ng ë t¹i ®ît v­ît ¶i lÇn nµy.",0)
 					return
 				end
 				local ngroup = GetTask(YDBZ_TEAMS_TASKID)
 				--SetTask(YDBZ_TEAMS_TASKID,(nteammax+1))
 				if GetMSPlayerCount(YDBZ_READY_MISSION,ngroup) == 0 then
-					Say("½øÈëÑ×µÛ±¦²ØµÄ´óÃÅÃ»ÓĞ´óÏÀµÄ×é¶Ó£¬Çë×é¶Ó±¨Ãû²Î¼Ó",0)
+					Say("Cæng vµo b¶o tµng viªm ®Õ kh«ng cã tæ ®éi cña ®¹i hiÖp, h·y tæ ®éi l¹i b¸o danh tham gia",0)
 					return
 				end
 				YDBZ_ready_joinmap(PlayerIndex)
@@ -458,13 +458,13 @@ function YDBZ_dragon_mem_join()
 	end
 	SubWorld = OldSubWorld
 	PlayerIndex = OldPlayer
-	local	strlevel = "Ñ×µÛ´³¹Ø±¦²Ø"
-	Say(format("Ä¿Ç°<color=red>%s<color> Ã»ÓĞ¿ÕÎ»ÁË. µÈÏÂ´Î°É", strlevel),0);
+	local	strlevel = "V­ît ¶i b¶o tµng viªm ®Õ"
+	Say(format("HiÖn t¹i <color=red>%s<color> kh«ng cßn vŞ trİ trèng nµo. H·y ®îi ®ît sau", strlevel),0);
 	
 end
 
 function YDBZ_about()
 	-- ¸Ä±ä²Î¼Ó±¨ÃûµÄÍ¨Öª-Modifiled by AnhHH - 20110802
-	Say(format(" ´³ĞÂ¹Ø¿ÚµÄ·½·¨£¬ĞÂÄÚÈİ£¬ĞÂboss£¬ĞÂµØÍ¼£¬Êı²»ÇåµÄÆæÕäÒì±¦£¬ºÜÊÊºÏÖ»ÔÚÑ×µÛ±¦²Ø²ÅÓĞµÄ»Æ½ğ×°±¸¡£ <enter>Ã¿Ìì %s, ÇëÌáÇ°5·ÖÖÓµ½Æ¼Æ¼¹ÃÄïÄÇÀï±¨Ãû.", "14:25, 16:25, 18:25, 20:25, 22:25"),0)
+	Say(format("C¸ch ch¬i v­ît ¶i míi, néi dung míi, boss míi, b¶n ®å míi, v« vµn kú tr©n dŞ b¶o, rÊt thİch hîp c¸c trang bŞ hoµng kim cña m«n ph¸i chØ cã t¹i b¶o tµng viªm ®Õ! <enter>Mçi ngµy %s, h·y ®Õn tr­íc 5 phót ®Ó b¸o danh ë B×nh B×nh c« n­¬ng.", "14:25, 16:25, 18:25, 20:25, 22:25"),0)
 	
 end

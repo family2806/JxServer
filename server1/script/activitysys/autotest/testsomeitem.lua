@@ -7,39 +7,39 @@ Include("\\script\\lib\\unittest.lua")
 
 tbItemList = 
 {
-	["Ä¾ÖÊ±¦ºÐ"] = {tbProp={6,1,2318,1,0,0},},
-	["Í­ÖÆ±¦ºÐ"] = {tbProp={6,1,2319,1,0,0},},
-	["ÒøÖÆ±¦ºÐ"] = {tbProp={6,1,2320,1,0,0},},
-	["»Æ½ð±¦Ïä"] = {tbProp={6,1,2321,1,0,0},},
-	["°×½ð±¦Ïä"] = {tbProp={6,1,2322,1,0,0},},
-	["Ò°ÛÅµÄÉñÃØ±¦Ïä"] = {tbProp={6,1,2374,1,0,0},},
-	["¹¥³ÇÕ½Àñ°ü"] = {tbProp={6,1,2377,1,0,0},},
-	["ÖÁ×ðÃØ±¦"] = {tbProp={6,1,2375,1,0,0},},
-	["Ë®Ôô²Æ±¦"] = {tbProp={6,1,2376,1,0,0},},
-	["·ç»ð½õÄÒ"] = {tbProp={6,1,2373,1,0,0},},
+	["Méc ChÕ B¶o H¹p"] = {tbProp={6,1,2318,1,0,0},},
+	["§ång ChÕ B¶o H¹p"] = {tbProp={6,1,2319,1,0,0},},
+	["Ng©n ChÕ B¶o H¹p"] = {tbProp={6,1,2320,1,0,0},},
+	["Hoµng Kim B¶o r­¬ng"] = {tbProp={6,1,2321,1,0,0},},
+	["B¶o r­¬ng B¹ch Kim"] = {tbProp={6,1,2322,1,0,0},},
+	["B¶o r­¬ng thÇn bÝ cña D· TÈu"] = {tbProp={6,1,2374,1,0,0},},
+	["C«ng Thµnh ChiÕn LÔ Bao"] = {tbProp={6,1,2377,1,0,0},},
+	["ChÝ T«n BÝ B¶o"] = {tbProp={6,1,2375,1,0,0},},
+	["Tµi B¶o Thñy TÆc"] = {tbProp={6,1,2376,1,0,0},},
+	["Phong Háa CÈm Nang"] = {tbProp={6,1,2373,1,0,0},},
 	
 }
 
 tbRequireList = 
 {
-	["Ä¾ÖÊ±¦ºÐ"] = {nMinCell = 1, },
-	["Í­ÖÆ±¦ºÐ"] = {nMinCell = 1, },
-	["ÒøÖÆ±¦ºÐ"] = {nMinCell = 1, },
-	["»Æ½ð±¦Ïä"] = {nMinCell = 1, },
-	["°×½ð±¦Ïä"] = {nMinCell = 1, },
-	["Ò°ÛÅµÄÉñÃØ±¦Ïä"] = 
+	["Méc ChÕ B¶o H¹p"] = {nMinCell = 1, },
+	["§ång ChÕ B¶o H¹p"] = {nMinCell = 1, },
+	["Ng©n ChÕ B¶o H¹p"] = {nMinCell = 1, },
+	["Hoµng Kim B¶o r­¬ng"] = {nMinCell = 1, },
+	["B¶o r­¬ng B¹ch Kim"] = {nMinCell = 1, },
+	["B¶o r­¬ng thÇn bÝ cña D· TÈu"] = 
 	{
 		nMinCell = 1, 
 		tbItem = {tbProp={6,1,2348,1,-1,0}, nCount = 6},
 	},
-	["¹¥³ÇÕ½Àñ°ü"] = {nMinCell = 1, },
-	["ÖÁ×ðÃØ±¦"] = 
+	["C«ng Thµnh ChiÕn LÔ Bao"] = {nMinCell = 1, },
+	["ChÝ T«n BÝ B¶o"] = 
 	{
 		nMinCell = 1, 
 		tbItem = {tbProp={6,1,2348,1,-1,0}, nCount = 12},
 	},
-	["Ë®Ôô²Æ±¦"] = {nMinCell = 1},
-	["·ç»ð½õÄÒ"] = {nMinCell = 1,},
+	["Tµi B¶o Thñy TÆc"] = {nMinCell = 1},
+	["Phong Háa CÈm Nang"] = {nMinCell = 1,},
 
 	
 }
@@ -55,14 +55,14 @@ function tbTestAward:GiveAwardByList(tbItem, szLogTitle, nAwardCount)
 end
 
 
-suite = TestSuite:new("×Ô¶¯²âÊÔ»î¶¯ÏµÍ³µÀ¾ß")
+suite = TestSuite:new("§¹o cô hÖ thèng ho¹t ®éng tù ®éng test")
 
 
 
 ItemCase = {}
 
 function ItemCase:new(szName)
-	local tb = TestCase:new("Ê¹ÓÃ"..szName, self)
+	local tb = TestCase:new("Sö dông "..szName, self)
 	tb.szName = szName
 	tb.szExePath = "\\script\\item\\activityitem.lua"
 	tb.tbRequire = tbRequireList[szName]
@@ -113,7 +113,7 @@ function ItemCase:tearDown()
 end
 
 
---±³°ü¿Õ¼ä²»×ã²»ÄÜÊ¹ÓÃµÀ¾ß
+--±³°ü¿Õ¼ä²»×ã²»ÄÜSö dông µÀ¾ß
 function ItemCase:test_Use2_1()
 	local tbItem = {}
 	
@@ -125,9 +125,9 @@ function ItemCase:test_Use2_1()
 		local nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 		
 		if nCell == 0 then
-			self:assertTrue(nRet ~= 1, "×°±¸¹»µ«ÊÇ²»ÄÜÊ¹ÓÃ")
+			self:assertTrue(nRet ~= 1, "Hµnh trang ®ñ « nh­ng kh«ng thÓ sö dông")
 		else
-			self:assertTrue(nRet == 1, "Î´Ìí¼Ó×°±¸¿ÕÎ»ÉÏÏÞ")
+			self:assertTrue(nRet == 1, "Ch­a thªm giíi h¹n « trèng hµnh trang")
 		
 			for i=1, getn(tbItem) do
 				RemoveItemByIndex(tbItem[i])
@@ -136,7 +136,7 @@ function ItemCase:test_Use2_1()
 	end
 end
 
---Ã»ÓÐÐèÇóµÀ¾ß²»ÄÜÊ¹ÓÃ
+--Ã»ÓÐÐèÇóµÀ¾ß²»ÄÜSö dông 
 function ItemCase:test_Use3()
 	local tbRequireItem = self.tbRequire.tbItem
 	
@@ -152,9 +152,9 @@ function ItemCase:test_Use3()
 	
 	local nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 	
-	self:assertTrue(nRet == 1, "Ô­ÁÏ²»×ãÒ²¿ÉÒÔÊ¹ÓÃ"..nRet)
+	self:assertTrue(nRet == 1, "Nguyªn liÖu kh«ng ®ñ còng cã thÓ sö dông"..nRet)
 	local nCount = CalcEquiproomItemCount(tbProp[1], tbProp[2], tbProp[3],tbProp[4])
-	self:assertEquals(nCount, nOldCount, "Ê¹ÓÃÊ§°Ü»¹¿ÛÔ­ÁÏ")
+	self:assertEquals(nCount, nOldCount, "Sö dông thÊt b¹i hoµn khÊu nguyªn liÖu")
 	
 	ConsumeEquiproomItem(nCount, tbProp[1], tbProp[2], tbProp[3], tbProp[4])
 	
@@ -163,10 +163,10 @@ function ItemCase:test_Use3()
 	nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 
 	
-	self:assertTrue(nRet ~= 1, "Ô­ÁÏ×ãÒ²²»ÄÜÊ¹ÓÃ")
+	self:assertTrue(nRet ~= 1, "Nguyªn liÖu ®ñ còng kh«ng thÓ sö dông")
 	
 	nCount = CalcEquiproomItemCount(tbProp[1], tbProp[2], tbProp[3],tbProp[4])
-	self:assertEquals(nCount, tbRequireItem.nCount, "¿Û³ý¸ü¶àÐèÒªÔ­ÁÏ")	
+	self:assertEquals(nCount, tbRequireItem.nCount, "KhÊu trõ nhiÒu h¬n nguyªn liÖu cÇn thiÕt")	
 	
 	
 end
@@ -179,10 +179,10 @@ function ItemCase:test_Use1()
 	
 	
 	DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
-	self:assertTrue(%tbTestAward.szLogTitle ~= nil, format("Ê¹ÓÃ%s ÊÕµ½½±Æ·£¬Ã»ÓÐ¼ÇÂ¼", GetItemName(self.nItemIndex)))	
+	self:assertTrue(%tbTestAward.szLogTitle ~= nil, format("Sö dông %s nhËn ®­îc phÇn th­ëng, kh«ng cã nhËt ký", GetItemName(self.nItemIndex)))	
 	local tbItem = %tbTestAward.tbItem
 	local nTotalRate = 0
-	self:assertTrue(tbItem ~= nil, format("Ê¹ÓÃ %s ÊÕ²»µ½½±Æ·", GetItemName(self.nItemIndex)))
+	self:assertTrue(tbItem ~= nil, format("Sö dông %s nhËn kh«ng ®­îc phÇn th­ëng", GetItemName(self.nItemIndex)))
 	
 	if not tbItem then
 		return
@@ -191,7 +191,7 @@ function ItemCase:test_Use1()
 	for i=1, getn(tbItem) do
 		nTotalRate = nTotalRate + tbItem[i].nRate	
 	end
-	self:assertEquals(nTotalRate, 100, format("½±Æ·%s ¼¸ÂÊ²»¹» 100%%", GetItemName(self.nItemIndex)) )
+	self:assertEquals(nTotalRate, 100, format("PhÇn th­ëng %s cã x¸c suÊt kh«ng ®ñ 100%%", GetItemName(self.nItemIndex)) )
 end
 
 

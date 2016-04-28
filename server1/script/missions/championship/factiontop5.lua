@@ -17,7 +17,7 @@ function OnCreateFaction5List()
 		if(name == "") then
 			tabname = SetFactionTop5( 10119+j, Faction[j][1], Faction[j][2]);
 			if (tabname ~= nil) then
-				local strtalk = "×£ºØ"..Faction[j][3].." ÓĞ5Î»Ñ¡ÊÖ½øÈëÁË×îÖÕµÄ±ÈÈü:"..tabname[1]..","..tabname[2]..","..tabname[3]..","..tabname[4]..","..tabname[5]
+				local strtalk = "Chóc mõng"..Faction[j][3].." N¨m tuyÓn thñ cã tªn trong m«n ph¸i ®Êu dù tuyÓn ®­îc chän vµo vßng chung kÕt:"..tabname[1]..","..tabname[2]..","..tabname[3]..","..tabname[4]..","..tabname[5]
 				AddGlobalNews(strtalk)
 				strtalk = date("%Y-%m-%d-%H:%M")..","..strtalk
 				WriteLog(strtalk)

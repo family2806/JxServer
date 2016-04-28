@@ -19,28 +19,28 @@ MATCH_TIMER_2 = 10 * 60 * FRAME2TIME; --Îª10·ÖÖÓ
 CP_ONEDAY_MAXROUND = floor(TRYOUT_TIMER_2  / (MATCH_TIMER_2 + 5 * 60 * FRAME2TIME))
 
 Faction = {
-			{"\\data\\shaolin_top5.dat", "ShaoLin_Top5", "ÉÙÁÖ"},
-			{"\\data\\tianwang_top5.dat", "TianWang_Top5", "ÌìÍõ"},
-			{"\\data\\tangmen_top5.dat", "TangMen_Top5", "ÌÆÃÅ"},
-			{"\\data\\wudu_top5.dat", "Wudu_Top5", "Îå¶¾"},
-			{"\\data\\emei_top5.dat", "EMei_Top5", "¶ëÃ¼"},
-			{"\\data\\cuiyan_top5.dat", "CuiYan_Top5", "´äÑÌ"},
-			{"\\data\\gaibang_top5.dat", "GaiBang_Top5", "Ø¤°ï"},
-			{"\\data\\tianren_top5.dat", "TianRen_Top5", "ÌìÈÌ"},
-			{"\\data\\wudang_top5.dat", "WuDang_Top5", "Îäµ±"},
-			{"\\data\\kunlun_top5.dat", "KunLun_Top5", "À¥ÂØ"}
+			{"\\data\\shaolin_top5.dat", "ShaoLin_Top5", "ThiÕu L©m"},
+			{"\\data\\tianwang_top5.dat", "TianWang_Top5", "Thiªn V­¬ng"},
+			{"\\data\\tangmen_top5.dat", "TangMen_Top5", "§­êng M«n"},
+			{"\\data\\wudu_top5.dat", "Wudu_Top5", "Ngò §éc"},
+			{"\\data\\emei_top5.dat", "EMei_Top5", "Nga Mi"},
+			{"\\data\\cuiyan_top5.dat", "CuiYan_Top5", "Thóy Yªn"},
+			{"\\data\\gaibang_top5.dat", "GaiBang_Top5", "C¸i Bang"},
+			{"\\data\\tianren_top5.dat", "TianRen_Top5", "Thiªn NhÉn"},
+			{"\\data\\wudang_top5.dat", "WuDang_Top5", "Vâ §ang"},
+			{"\\data\\kunlun_top5.dat", "KunLun_Top5", "C«n L«n"}
 		  }
 FactionTitle = {
-				"ÎäÁÖ´ó»áÉÙÁÖ¸ßÊÖ",
-				"ÎäÁÖ´ó»áÌìÍõ¸ßÊÖ",
-				"ÎäÁÖ´ó»áÌÆÃÅ¸ßÊÖ",
-				"ÎäÁÖ´ó»áÎå¶¾¸ßÊÖ",
-				"ÎäÁÖ´ó»á¶ëÃ¼¸ßÊÖ",
-				"ÎäÁÖ´ó»á´äÑÌ¸ßÊÖ",
-				"ÎäÁÖ´ó»áØ¤°ï¸ßÊÖ",
-				"ÎäÁÖ´ó»áÌìÈÌ¸ßÊÖ",
-				"ÎäÁÖ´ó»áÎäµ±¸ßÊÖ",
-				"ÎäÁÖ´ó»áÀ¥ÂØ¸ßÊÖ",
+				"Vâ L©m §¹i héi ThiÕu L©m cao thñ ",
+				"Vâ L©m §¹i héi Thiªn V­¬ng cao thñ ",
+				"Vâ L©m §¹i héi §­êng M«n cao thñ ",
+				"Vâ L©m §¹i héi Ngò §éc cao thñ ",
+				"Vâ L©m §¹i héi Nga Mi cao thñ ",
+				"Vâ L©m §¹i héi Thóy Yªn cao thñ ",
+				"Vâ L©m §¹i héi C¸i Bang cao thñ ",
+				"Vâ L©m §¹i héi Thiªn NhÉn  cao thñ ",
+				"Vâ L©m §¹i héi Vâ §ang cao thñ ",
+				"Vâ L©m §¹i héi C«n L«n cao thñ ",
 				}
 CP_TASKID_REGIST = 1083		--1£º±¨¹ıÃû£»9£ºÈ¡ÏûÁËÔ¤Ñ¡Èü×Ê¸ñ
 CP_TASKID_POINT = 1084		--¼ÇÂ¼Ô¤Ñ¡ÈüµÃ·Ö
@@ -57,85 +57,85 @@ CP_TASKID_LOGOUT = 1094		--Îª 0 Ê±±íÃ÷Õı³£ÍË³ö£¬Îª 1 Ê±±íÊ¾·ÇÕı³£ÍË³ö£¨Èçµ±»ú¡¢Î
 CP_CASH = 100000
 CP_MAXROUND = 30
 CP_PLNUM_LIMT = 10
-CP_PLNUM_LIMT_ESPECIAL = 4	--Îå¶¾¡¢ÌÆÃÅ¡¢À¥ÂØÈËÊıÏŞÖÆ ÖÁÉÙ4ÈË
+CP_PLNUM_LIMT_ESPECIAL = 4	--Ngò §éc¡¢§­êng M«n¡¢C«n L«nÈËÊıÏŞÖÆ ÖÁÉÙ4ÈË
 CP_MAPPOS_IN = {1508,3026}
 CP_MAPPOS_OUT = {1472,3243}
 CP_MAPPOS_PRE = {1596,2977}
 CP_MAPTAB = {
-				{396, 397, "ÉÙÁÖ"},
-				{398, 399, "ÌìÍõ"},
-				{400, 401, "ÌÆÃÅ"},
-			 	{402, 403, "Îå¶¾"},
-			 	{404, 405, "¶ëÃ¼"},
-			 	{406, 407, "´äÑÌ"},
-			 	{408, 409, "Ø¤°ï"},
-			 	{410, 411, "ÌìÈÌ"},
-			 	{412, 413, "Îäµ±"},
-			 	{414, 415, "À¥ÂØ"}
+				{396, 397, "ThiÕu L©m"},
+				{398, 399, "Thiªn V­¬ng"},
+				{400, 401, "§­êng M«n"},
+			 	{402, 403, "Ngò §éc"},
+			 	{404, 405, "Nga Mi"},
+			 	{406, 407, "Thóy Yªn"},
+			 	{408, 409, "C¸i Bang"},
+			 	{410, 411, "Thiªn NhÉn"},
+			 	{412, 413, "Vâ §ang"},
+			 	{414, 415, "C«n L«n"}
 			 }
 			 
 CP_AWARD_ITEM = {
-					{"×ÏË®¾§", {4, 239}, 10},
-					{"À¶Ë®¾§", {4, 238}, 10},
-					{"ÂÌË®¾§", {4, 240}, 10},
-					{"ĞÉºì±¦Ê¯", {4, 353}, 10},
-					{"4¼¶Ğş¾§¿óÊ¯", {6, 1, 147, 4, 0, 0}, 5},
-					{"5¼¶Ğş¾§¿óÊ¯", {6, 1, 147, 5, 0, 0}, 100},
-					{"6¼¶Ğş¾§¿óÊ¯", {6, 1, 147, 6, 0, 0}, 300},
-					{"´ó¸£ÔµÂ¶", {6, 1, 124, 1, 0, 0}, 100},
-					{"ÖĞ¸£ÔµÂ¶", {6, 1, 123, 1, 0, 0}, 200},
-					{"Ğ¡¸£ÔµÂ¶", {6, 1, 122, 1, 0, 0}, 400},
-					{"ÏÉ²İÂ¶", {6, 1, 71, 1, 0, 0}, 1000},
-					{"ÌìÉ½±¦Â¶", {6, 1, 72, 1, 0, 0}, 1125},
-					{"´ó°×¾ÔÍè", {6, 1, 130, 1, 0, 0}, 200},
-					{"Ãµ¹å»¨", {6, 0, 20, 1, 0, 0}, 1700},
-					{"ĞÄĞÄÏàÓ¡·û", {6, 1, 18, 1, 0, 0}, 1700},
-					{"·çÁê¶ÉÁîÅÆ", {4, 489}, 300},
-					{"±¬Öñ", {6, 0, 11, 1, 0, 0}, 1700},
+					{"Tö Thñy Tinh", {4, 239}, 10},
+					{"Lam Thñy Tinh", {4, 238}, 10},
+					{"Lôc Thñy Tinh", {4, 240}, 10},
+					{"Tinh Hång B¶o Th¹ch", {4, 353}, 10},
+					{"HuyÒn Tinh Kho¸ng Th¹ch cÊp 4", {6, 1, 147, 4, 0, 0}, 5},
+					{"HuyÒn Tinh Kho¸ng Th¹ch cÊp 5", {6, 1, 147, 5, 0, 0}, 100},
+					{"HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", {6, 1, 147, 6, 0, 0}, 300},
+					{"§¹i Phóc Duyªn Lé ", {6, 1, 124, 1, 0, 0}, 100},
+					{"Trung  Phóc Duyªn Lé ", {6, 1, 123, 1, 0, 0}, 200},
+					{"TiÓu Phóc Duyªn Lé ", {6, 1, 122, 1, 0, 0}, 400},
+					{"Tiªn Th¶o Lé ", {6, 1, 71, 1, 0, 0}, 1000},
+					{"Thiªn s¬n  B¶o Lé ", {6, 1, 72, 1, 0, 0}, 1125},
+					{"§¹i B¹ch C©u hoµn", {6, 1, 130, 1, 0, 0}, 200},
+					{"Hoa hång", {6, 0, 20, 1, 0, 0}, 1700},
+					{"T©m T©m T­¬ng ¸nh phï ", {6, 1, 18, 1, 0, 0}, 1700},
+					{"LÖnh bµi Phong L¨ng §é", {4, 489}, 300},
+					{"Ph¸o Hoa", {6, 0, 11, 1, 0, 0}, 1700},
 				}
 
 CP_FORBID_ITEM = {
-					{	"¹¥ËÙÍè", {6, 1, 218, 1, 0, 0}, 511	},
-					{	"ÅÜËÙÍè", {6, 1, 219, 1, 0, 0}, 512	},
-					{	"ÆÕ·ÀÍè", {6, 1, 220, 1, 0, 0}, 513	},
-					{	"¶¾·ÀÍè", {6, 1, 221, 1, 0, 0}, 514	},
-					{	"±ù·ÀÍè", {6, 1, 222, 1, 0, 0}, 515	},
-					{	"»ğ·ÀÍè", {6, 1, 223, 1, 0, 0}, 516	},
-					{	"À×·ÀÍè", {6, 1, 224, 1, 0, 0}, 517	},
-					{	"¼õÉËÍè", {6, 1, 225, 1, 0, 0}, 518	},
-					{	"¼õ»èÍè", {6, 1, 226, 1, 0, 0}, 519	},
-					{	"¼õ¶¾Íè", {6, 1, 227, 1, 0, 0}, 520	},
-					{	"¼õ±ùÍè", {6, 1, 228, 1, 0, 0}, 521	},
-					{	"ÆÕ¹¥Íè", {6, 1, 229, 1, 0, 0}, 522	},
-					{	"¶¾¹¥Íè", {6, 1, 230, 1, 0, 0}, 523	},
-					{	"±ù¹¥Íè", {6, 1, 231, 1, 0, 0}, 524	},
-					{	"»ğ¹¥Íè", {6, 1, 232, 1, 0, 0}, 525	},
-					{	"À×¹¥Íè", {6, 1, 233, 1, 0, 0}, 526	},
-					{	"³¤ÃüÍè", {6, 1, 234, 1, 0, 0}, 527	},
-					{	"³¤ÄÚÍè", {6, 1, 235, 1, 0, 0}, 528	},
-					{	"æÌºìµ¤", {6, 1, 115, 1, 0, 0}, 450	},
-					{	"ÉâÀ¶µ¤", {6, 1, 116, 1, 0, 0}, 451	},
-					{	"ÄÚÆÕÍè", {6, 1, 117, 1, 0, 0}, 453	},
-					{	"ÄÚ¶¾Íè", {6, 1, 118, 1, 0, 0}, 454	},
-					{	"ÄÚ±ùÍè", {6, 1, 119, 1, 0, 0}, 455	},
-					{	"ÄÚ»ğÍè", {6, 1, 120, 1, 0, 0}, 456	},
-					{	"ÄÚÀ×Íè", {6, 1, 121, 1, 0, 0}, 457	},
-					{	"³¤ÃüÍè", {6, 0, 1, 1, 0, 0}, 256	},
-					{	"¼ÓÅÜÍè", {6, 0, 2, 1, 0, 0}, 257	},
-					{	"´óÁ¦Íè", {6, 0, 3, 1, 0, 0}, 258	},
-					{	"¸ßÉÁÍè", {6, 0, 4, 1, 0, 0}, 259	},
-					{	"¸ßÖĞÍè", {6, 0, 5, 1, 0, 0}, 260	},
-					{	"·ÉËÙÍè", {6, 0, 6, 1, 0, 0}, 261	},
-					{	"±ù·ÀÍè", {6, 0, 7, 1, 0, 0}, 262	},
-					{	"À×·ÀÍè", {6, 0, 8, 1, 0, 0}, 263	},
-					{	"»ğ·ÀÍè", {6, 0, 9, 1, 0, 0}, 264	},
-					{	"À×·ÀÍè", {6, 0, 10, 1, 0, 0}, 265	},
-					{	"Àõ×ÓôÕ×Ó", {6, 0, 60, 1, 0, 0}, 401	},
-					{	"»ğÍÈÔÂ±ı", {6, 0, 61, 1, 0, 0}, 402	},
-					{	"¸É°ÍÔÂ±ı", {6, 0, 62, 1, 0, 0}, 403	},
-					{	"°Ù¹ûÂ¶", {6, 1, 73, 1, 0, 0}, 442	},
-					{	"¼ªÏéºì°ü", {6, 1, 19, 1, 0, 0}, 442	},
-					{"»Æ½ğ±¦Ïä",	{6,	1,	69,	1,	0,	0},	442}
+					{	"C«ng Tèc hoµn", {6, 1, 218, 1, 0, 0}, 511	},
+					{	"Bµo Tèc hoµn", {6, 1, 219, 1, 0, 0}, 512	},
+					{	"Phæ Phßng hoµn", {6, 1, 220, 1, 0, 0}, 513	},
+					{	"§éc Phßng hoµn", {6, 1, 221, 1, 0, 0}, 514	},
+					{	"B¨ng Phßng hoµn", {6, 1, 222, 1, 0, 0}, 515	},
+					{	"Háa Phßng hoµn", {6, 1, 223, 1, 0, 0}, 516	},
+					{	"§éc Phßng hoµn", {6, 1, 224, 1, 0, 0}, 517	},
+					{	"Gi¶m Th­¬ng hoµn", {6, 1, 225, 1, 0, 0}, 518	},
+					{	"Gi¶m H«n hoµn", {6, 1, 226, 1, 0, 0}, 519	},
+					{	"Gi¶m §éc hoµn", {6, 1, 227, 1, 0, 0}, 520	},
+					{	"Gi¶m B¨ng hoµn", {6, 1, 228, 1, 0, 0}, 521	},
+					{	"Phæ C«ng hoµn", {6, 1, 229, 1, 0, 0}, 522	},
+					{	"§éc C«ng hoµn", {6, 1, 230, 1, 0, 0}, 523	},
+					{	"B¨ng C«ng hoµn", {6, 1, 231, 1, 0, 0}, 524	},
+					{	"Háa C«ng hoµn", {6, 1, 232, 1, 0, 0}, 525	},
+					{	"L«i C«ng hoµn", {6, 1, 233, 1, 0, 0}, 526	},
+					{	"Tr­êng MÖnh hoµn", {6, 1, 234, 1, 0, 0}, 527	},
+					{	"Tr­êng Néi hoµn", {6, 1, 235, 1, 0, 0}, 528	},
+					{	"Yªn Hång ®an", {6, 1, 115, 1, 0, 0}, 450	},
+					{	"X¸ Lam ®an", {6, 1, 116, 1, 0, 0}, 451	},
+					{	"Néi Phæ hoµn", {6, 1, 117, 1, 0, 0}, 453	},
+					{	"Néi §éc hoµn", {6, 1, 118, 1, 0, 0}, 454	},
+					{	"Néi B¨ng hoµn", {6, 1, 119, 1, 0, 0}, 455	},
+					{	"Néi Háa hoµn", {6, 1, 120, 1, 0, 0}, 456	},
+					{	"Néi L«i hoµn", {6, 1, 121, 1, 0, 0}, 457	},
+					{	"Tr­êng MÖnh hoµn", {6, 0, 1, 1, 0, 0}, 256	},
+					{	"Gia Bµo hoµn", {6, 0, 2, 1, 0, 0}, 257	},
+					{	"§¹i Lùc hoµn", {6, 0, 3, 1, 0, 0}, 258	},
+					{	"Cao ThiÓm hoµn", {6, 0, 4, 1, 0, 0}, 259	},
+					{	"Cao Trung hoµn", {6, 0, 5, 1, 0, 0}, 260	},
+					{	"Phi Tèc hoµn", {6, 0, 6, 1, 0, 0}, 261	},
+					{	"B¨ng Phßng hoµn", {6, 0, 7, 1, 0, 0}, 262	},
+					{	"§éc Phßng hoµn", {6, 0, 8, 1, 0, 0}, 263	},
+					{	"Háa Phßng hoµn", {6, 0, 9, 1, 0, 0}, 264	},
+					{	"§éc Phßng hoµn", {6, 0, 10, 1, 0, 0}, 265	},
+					{	"B¸nh ch­ng H¹t dÎ ", {6, 0, 60, 1, 0, 0}, 401	},
+					{	"B¸nh ch­ng ThŞt heo", {6, 0, 61, 1, 0, 0}, 402	},
+					{	"B¸nh ch­ng ThŞt bß ", {6, 0, 62, 1, 0, 0}, 403	},
+					{	"B¸ch Qu¶ Lé ", {6, 1, 73, 1, 0, 0}, 442	},
+					{	"C¸t t­êng hång bao", {6, 1, 19, 1, 0, 0}, 442	},
+					{"Hoµng Kim B¶o r­¬ng",	{6,	1,	69,	1,	0,	0},	442}
 				}
 
 CP_TRAPIN = "\\settings\\maps\\championship\\linantoplace_trap.txt"
@@ -149,56 +149,56 @@ CP_UPTO_TRYOUT = 5051620
 CP_END_TRYOUT = 5052224
 
 CP_HELP_TRYOUT = {
-					"<color=yellow>ÎäÁÖ´ó»áÔ¤Ñ¡ÈüÎäÁÖĞÂĞã<color>, Ñ¡³ö <color=yellow>Ç°5<color> ÔÚÃ¿¸öÇøÓòÖĞ²Î¼Ó¡®È«·şÎäÁÖ´ó»á¡¯µÄÊ®´óÃÅÅÉÔ¤Ñ¡Ñ¡ÊÖ. Ô¤Ñ¡Èü´Ó16/5µ½22/5. Ã¿Ìì20:00µ½24:00¿ª·ş; ±¨ÃûÊ±¼ä5·ÖÖÓ; ±ÈÈüÊ±¼ä10·ÖÖÓ.",
-					"Ô¤Ñ¡Èü¿ªÊ¼Ö®ºó£¬90¼¶ÒÔÏÂµÄÍæ¼Ò¿ÉÒÔÔÚÎäÁÖ´ó»á¶·³¡ÖĞ±¨Ãû¡£²Î¼Ó±ÈÈüµÄĞÂÍæ¼ÒÒª½»10ÍòÁ½±¨Ãû·Ñ¡£Ã¿¸öÍæ¼Ò±¨ÃûÖ®ºó×î¶à¿ÉÒÔ²Î¼Ó±ÈÈü"..CP_MAXROUND.." ³¡. Èç¹ûÄã¶ÔÈËÎïµÄ³É¼¨²»ÂúÒâ£¬¿ÉÒÔÈ¡Ïû´ËÈËÎïµÄ±ÈÈü×Ê¸ñ,µ«ÊÇ±»È¡Ïû±ÈÈü×Ê¸ñµÄÈËÎï²»ÄÜÔÙ¼ÌĞø±¨Ãû±ÈÈü.",
-					"Ô¤Ñ¡Èü¸ù¾İÏµÍ³ÖĞµÄ»ı·ÖÑ¡³öÇ°5Ãû.Íæ¼Ò±ÈÈüÊ±"..CP_MAXROUND.."Èü³¡ÉÏ£¬Ê¤Ò»³¡µÃ3·Ö£¬ºÍ1³¡µÃ1·Ö£¬¸º1³¡²»µÃ·Ö¡£µ½5ÔÂ23ÈÕ, ÏµÍ³½«»áÑ¡³ö¸÷ÃÅÅÉ»ı·Ö×î¸ßµÄ5¸öÍæ¼Ò²Î¼Ó¡®È«ÇøÎäÁÖ´ó»á¡¯'",
-					"²Î¼Ó¹ı³ÌÖĞÃ¿¸ö²Î¼Ó±¨ÃûµÄÍæ¼Ò¶¼¿ÉÒÔÁìÈ¡Ò»¶¨µÄ½±Àø¡£Ã¿²Î¼ÓÒ»¾Ö½«µÃµ½Ò»¶¨µÄ½±Àø£¬³ı´ËÖ®Íâ£¬Íæ¼Ò»¹¿ÉÒÔµÃµ½ÈçÏÂÎïÆ·£º±¬Öñ£¬Ğş¾§¿óÊ¯£¬¸£ÔµÂ¶£¬Ë®¾§) "
+					"<color=yellow>TrËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt<color>, chän ra <color=yellow>5 h¹ng ®Çu<color> trong thËp ®¹i m«n ph¸i ë mçi khu vùc tham gia trËn dù tuyÓn tuyÓn thñ cña '§¹i héi Vâ L©m toµn khu vùc'. TrËn dù tuyÓn b¾t ®Çu tõ 16/5 ®Õn 22/5 kÕt thóc. Më tõ 20:00 ®Õn 24:00 mçi ngµy; thêi gian b¸o danh 5 phót; thêi gian thi ®Êu 10 phót.",
+					"Sau khi trËn dù tuyÓn b¾t ®Çu, ng­êi ch¬i nhá h¬n cÊp 90 cã thÓ b¸o danh thi ®Êu trong §Çu tr­êng §¹i héi Vâ l©m.Ng­êi ch¬i míi tham gia thi ®Êu cÇn nép 10 v¹n l­îng phİ b¸o danh. Mçi ng­êi ch¬i ®· b¸o danh cã thÓ thi ®Êu nhiÒu nhÊt"..CP_MAXROUND.." trËn. NÕu b¹n kh«ng hµi lßng víi thµnh tİch cña nh©n vËt nµy, cã thÓ xãa bá t­ c¸ch thi ®Êu cña nh©n vËt, nh­ng nhËn vËt ®· bŞ xãa bá t­ c¸ch thi ®Êu kh«ng thÓ tiÕp tôc b¸o danh thi ®Êu n÷a.",
+					"TrËn dù tuyÓn dùa trªn hÖ thèng ®iÓm tİch lòy ®Ó chän ra 5 h¹ng ®Çu. Ng­êi ch¬i khi thi ®Êu "..CP_MAXROUND.."trong ®Êu tr­êng,  th¾ng 1 trËn ®­îc 3 ®iÓm, hßa 1 trËn ®­îc 1 ®iÓm, b¹i 1 trËn kh«ng ®­îc ®iÓm. §Õn ngµy 23/5, hÖ thèng sÏ chän ra 5 ng­êi ch¬i cã sè ®iÓm tİch ph©n cao nhÊt ë mçi m«n ph¸i, nhËn ®­îc t­ c¸ch tham gia '§¹i héi Vâ L©m toµn khu vùc'",
+					"Mçi ng­êi ch¬i tham gia b¸o danh trong qu¸ tr×nh tham gia nhËn ®­îc gi¶i th­ëng nhÊt ®Şnh. Mçi lÇn tham gia 1 vßng sÏ ®o¹t ®­îc gi¶i th­ëng nhÊt ®Şnh, ngoµi ra ng­êi ch¬i cßn nhËn ®­îc nh÷ng vËt phÈm nh­: Ph¸o hoa, HuyÒn Tinh Kho¸ng Th¹ch, Phóc Duyªn lé, Tiªn Th¶o Lé, Thñy Tinh) "
 				}
 				
 CP_HELP_BID = {
-				"<color=yellow>Õù´ËÇøÓò¶ÓÎéµÄ×ÜÁì¶Ó<color>, Ò»¶¨ÊÇÒª°ïÖ÷²Å¿ÉÒÔµ½ÎÒÕâÀï²Î¼ÓÈ«·şÁì¶ÓµÄÕù¶á. ¾ºÅÄ¼ÛÃ¿´Î×îÉÙÊÇ100ÍòÁ½£¬Ã¿´ÎÒÔ100ÍòÁ½Îªµ¥Î»Ôö¼Ó¡£¾ºÅÄÊ±¼äÊÇ´Ó2005Äê5ÔÂ12ÈÕ12µã¿ªÊ¼µ½5ÔÂ14ÈÕ½áÊø.",
-				"°ïÖú²Î¼Ó¾ºÅÄ¿´³ö¼Û×î¸ßµÄÈË£¨²»¹«²¼¾ßÌå¼Û¸ñ£© ºÍÖªµÀ×Ô¼ºµÄ³ö¼Û¡£µ½5ÔÂ14ÈÕ12µã£¬³ö¼Û×î¸ßµÄ°ïÖ÷³ÉÎª´ËÇøÓòµÄ×ÜÁì¶Ó£¬Í¬Ê±µÃµ½×ÜÁì¶ÓµÄÃûºÅ¿ÉÒÔÅĞ¾ö±ÈÈü.¾ºÕùÊ§°ÜÒªµ½ÎÒÕâÀïÔÙÁì¾º¼Û·Ñ.Ã¿´Î×î¶àÁì50ÍòÁ½£¬±£Ö¤Íæ¼ÒÇ®Ò»Ö±×ã¹»",
-				"×ÜÁì¶Ó¿ÉÒÔ·Ö·¢29¿éÎäÁÖ¾ö¶·ÁîÅÆ¸øÆäËûÔÚÎäÁÖĞÂĞãÁªÈü¹ÙÔ±´¦µÄÍæ¼Ò.ÒÑÔÚÖÕ½áÇøÄÚÓĞ×Ê¸ñµÄÍæ¼Ò¾Í²»ÄÜÔÙÁì×Ê¸ñÁË¡£"
+				"<color=yellow>Tranh Tæng L·nh ®éi ®éi cña khu vùc nµy<color>, nhÊt thiÕt lµ Bang chñ míi cã thÓ ®Õn chç cña ta tham gia tranh chøc l·nh ®¹o ®éi nhãm cña toµn Server. TiÒn ®Êu gi¸ mçi lÇn İt nhÊt lµ 100 v¹n l­îng, mçi lÇn lÊy ®¬n vŞ 100 v¹n l­îng ®Ó t¨ng thªm. Thêi gian ®Êu gi¸ b¾t ®Çu tõ 12/05/2005 ®Õn 12 h ngµy 14/05 kÕt thóc.",
+				"Bang chñ tham gia ®Êu gi¸ xem ng­êi cã tiÒn ®Êu gi¸ cao nhÊt (Kh«ng c«ng bè sè tiÒn cô thÓ) vµ tù biÕt sè tiÒn ®Êu gi¸ cña m×nh. §Õn 12h ngµy 14/5, Bang chñ ®­a møc ®Êu gi¸ cao nhÊt trë thµnh Tæng L·nh ®éi cña khu vùc nµy vµ nhËn ®­îc t­ c¸ch ph¸n quyÕt thi ®Êu víi danh hiÖu lµ Tæng L·nh ®éi. C¹nh tranh thÊt b¹i cÇn ®Õn chç ta nhËn l¹i tiÒn ®Êu gi¸. Mçi lÇn l·nh nhiÒu nhÊt 50 v¹n l­îng, ®¶m b¶o ng­êi ch¬i lu«n cã ®ñ tiÒn.",
+				"Tæng L·nh ®éi cã thÓ ph©n ph¸t 29 tÊm Vâ l©m quyÕt ®Êu lÖnh bµi cho ng­êi ch¬i kh¸c t¹i Quan viªn Vâ l©m kiÖt xuÊt. Ng­êi ch¬i ®· cã ®­îc t­ c¸ch ë vßng chung kÕt kh«ng thÓ nhËn t­ c¸ch n÷a."
 				}
 
-CP_HELP_FINAL = "<color=yellow>ÎäÁÖ´ó»á<color>, ÓÉ¸÷¸öÇøÓòµÄ90¸öÈË×é³É1¶Ó²Î¼ÓÈ«ÇøÓòÎäÁÖ´ó»á¡£ÆäÖĞ£¬10¸öÈËÊÇÇøÓòÀïµÄÊ®´ó¸ßÊÖ£»50ÈËÊÇÊ®´óÃÅÅÉµÄÇ°5´ó¸ßÊÖ×ÜÁì¶Ó;ÆäÓà30ÈËÖĞ½«Ñ¡³ö1ÈË×ö×ÜÁì¶Ó¡£×ÜÁì¶ÓÓĞ×Ê¸ñ¾ö¶¨ÔÚÊ£ÏÂµÄ29ÈËÖĞË­ÓĞ×Ê¸ñ²Î¼Ó×îÖÕµÄ±ÈÈü¡£"
+CP_HELP_FINAL = "<color=yellow>Vâ L©m ®¹i héi<color>, do 90 ng­êi ë mçi khu vùc lµm thµnh 1 nhãm tham gia Vâ l©m ®¹i héi toµn khu vùc. Trong ®ã, 10 ng­êi lµ ThËp ®¹i cao thñ cña khu vùc; 50 ng­êi lµ 5 h¹ng ®Çu trong ThËp ®¹i m«n ph¸i; 30 ng­êi cßn l¹i sÏ bÇu ra 1 ng­êi lµm Tæng L·nh ®éi. Tæng L·nh ®éi cã quyÒn quyÕt ®Şnh ai trong sè 29 ng­êi cßn l¹i cã t­ c¸ch thi ®Êu vßng chung kÕt"
 
 function transtoplace()
-Say("ÎäÁÖĞÂĞãÁªÈü´ó»áÔ¤Ñ¡ÈüÔ²Âú½áÊø¡£ÏÖÔÚ¿ÉÒÔµ½ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±´¦¿´±ÈÈü½á¹û²¢ÁìÈ¡ÏàÓ¦µÄ³ÆºÅ¡£¾´ÇëÆÚ´ıÎäÁÖ´ó»áµÄ¿ªÊ¼.", 0)
+Say("TrËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt ®· kÕt thóc tèt ®Ñp. HiÖn t¹i cã thÓ ®Õn Quan viªn Vâ l©m kiÖt xuÊt xem kÕt qu¶ thi ®Êu vµ nhËn danh hiÖu t­¬ng øng. Vui lßng chê ®îi Vâ l©m ®¹i héi b¾t ®Çu.", 0)
 do return end
 	if (GetLevel() < 90) then
-		Say("ÄãÒªµ½90¼¶ÒÔÉÏ²Å¿ÉÒÔ½øÈëÎäÁÖ´ó»áÈü³¡£¬Çë¼ÌĞøÁ·¼¶!", 0)
+		Say("B¹n ph¶i ®¹t ®­îc cÊp 90 trë lªn míi cã thÓ x©m nhËp ®Êu tr­êng Vâ l©m ®¹i héi, h·y tiÕp tôc luyÖn thªm!", 0)
 		return
 	end
 	if (GetLastFactionNumber() == -1) then
-		Say("ÎäÁÖÃËÖ÷ÓĞÁî: Ö»ÓĞ10´óÃÅÅÉµÄÈË²Å¿ÉÒÔ²Î¼ÓÎäÁÖ´ó»á£¬ÎŞÃÅÅÉÈËÊ¿²»ÄÜ²Î¼Ó¡£¼ÓÈë10´óÃÅÅÉÖ®ºó²Å¿ÉÒÔ²Î¼Ó±ÈÈü!", 0)
+		Say("Vâ L©m Minh Chñ cã lÖnh: ChØ cã ng­êi cña ThËp ®¹i ph¸i ®­îc tham gia §¹i héi vâ l©m, ng­¬i kh«ng m«n kh«ng ph¸i kh«ng thÓ tham gia. Sau khi gia nhËp ThËp ®¹i ph¸i míi ®­îc tham gia thi ®Êu!", 0)
 		return
 	elseif(nt_gettask(CP_TASKID_REGIST) ~= CP_UPTO_TRYOUT) then
-		Msg2Player("Äã»¹Ã»ÓĞ±¨Ãû£¡µ½ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±´¦±¨Ãû²Î¼Ó±ÈÈü!")
+		Msg2Player("B¹n ch­a b¸o danh! H·y ®Õn Quan viªn Vâ l©m kiÖt xuÊt b¸o danh tham gia trËn dù tuyÓn!")
 		NewWorld(176, 1444, 3256)
 	else
 		if(GetLastFactionNumber() == 0) then
-			NewWorld(CP_MAPTAB[1][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÉÙÁÖ
+			NewWorld(CP_MAPTAB[1][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ThiÕu L©m
 		elseif (GetLastFactionNumber() == 1) then
-			NewWorld(CP_MAPTAB[2][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÌìÍõ
+			NewWorld(CP_MAPTAB[2][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Thiªn V­¬ng
 		elseif (GetLastFactionNumber() == 2) then
-			NewWorld(CP_MAPTAB[3][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÌÆÃÅ
+			NewWorld(CP_MAPTAB[3][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--§­êng M«n
 		elseif (GetLastFactionNumber() == 3) then
-			NewWorld(CP_MAPTAB[4][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Îå¶¾
+			NewWorld(CP_MAPTAB[4][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Ngò §éc
 		elseif (GetLastFactionNumber() == 4) then
 			NewWorld(CP_MAPTAB[5][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--¶ëáÒ
 		elseif (GetLastFactionNumber() == 5) then
-			NewWorld(CP_MAPTAB[6][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--´äÑÌ
+			NewWorld(CP_MAPTAB[6][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Thóy Yªn
 		elseif (GetLastFactionNumber() == 6) then
-			NewWorld(CP_MAPTAB[7][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Ø¤°ï
+			NewWorld(CP_MAPTAB[7][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--C¸i Bang
 		elseif (GetLastFactionNumber() == 7) then
-			NewWorld(CP_MAPTAB[8][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÌìÈÌ
+			NewWorld(CP_MAPTAB[8][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Thiªn NhÉn
 		elseif (GetLastFactionNumber() == 8) then
-			NewWorld(CP_MAPTAB[9][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Îäµ±
+			NewWorld(CP_MAPTAB[9][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Vâ §ang
 		elseif (GetLastFactionNumber() == 9) then
-			NewWorld(CP_MAPTAB[10][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--À¥ÂØ
+			NewWorld(CP_MAPTAB[10][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--C«n L«n
 		end
-		Talk(1, "", "ÄãÒÑ½øÈëÎäÁÖ´ó»áÈü³¡£¬Çëµ½¹ÛÕ½³¡ (189, 188) , (191, 190) , (185, 187) Çë²Î¼ÓÕâ¾Ö±ÈÈü!")
+		Talk(1, "", "B¹n ®· vµo ®Êu tr­êng Vâ l©m ®¹i héi, h·y ®Õn viªn quan ®Êu tr­êng (189, 188) , (191, 190) , (185, 187) xin tham gia thi ®Êu vßng nµy!")
 	end
 end
 
@@ -206,34 +206,34 @@ function checkmap(flag)
 	local mapid = SubWorldIdx2ID(SubWorld)
 	local ladder = 0
 	if (mapid == 397 or mapid == 396) then
-		mapname = "ÉÙÁÖ"
+		mapname = "ThiÕu L©m"
 		ladder = 10120
 	elseif (mapid == 399 or mapid == 398) then
-		mapname = "ÌìÍõ"
+		mapname = "Thiªn V­¬ng"
 		ladder = 10121
 	elseif (mapid == 401 or mapid == 400) then
-		mapname = "ÌÆÃÅ"
+		mapname = "§­êng M«n"
 		ladder = 10122
 	elseif (mapid == 403 or mapid == 402) then
-		mapname = "Îå¶¾"
+		mapname = "Ngò §éc"
 		ladder = 10123
 	elseif (mapid == 405 or mapid == 404) then
-		mapname = "¶ëÃ¼"
+		mapname = "Nga Mi"
 		ladder = 10124
 	elseif (mapid == 407 or mapid == 406) then
-		mapname = "´äÑÌ"
+		mapname = "Thóy Yªn"
 		ladder = 10125
 	elseif (mapid == 409 or mapid == 408) then
-		mapname = "Ø¤°ï"
+		mapname = "C¸i Bang"
 		ladder = 10126
 	elseif (mapid == 411 or mapid == 410) then
-		mapname = "ÌìÈÌ"
+		mapname = "Thiªn NhÉn"
 		ladder = 10127
 	elseif (mapid == 413 or mapid == 412) then
-		mapname = "Îäµ±"
+		mapname = "Vâ §ang"
 		ladder = 10128
 	elseif (mapid == 415 or mapid == 414) then
-		mapname = "À¥ÂØ"
+		mapname = "C«n L«n"
 		ladder = 10129
 	end
 	if (flag == 1) then
@@ -263,7 +263,7 @@ function help_final()
 end
 
 function help_championship()
-	Say("ÄãÏë¼ÓÈë°ïÖúÄÄ±ß?", 4, "¾ºÕùÇøÓò×ÜÁì¶Ó/help_bid", "ÎäÁÖĞÂĞãÁªÈü´ó»áÔ¤Ñ¡Èü/help_tryout", "ÎäÁÖ´ó»á/help_final", "ÎÒÖªµÀÁË!/OnCancel")
+	Say("B¹n muèn nhËn ®­îc gióp ®ì cña bªn nµo?", 4, "Tranh chÊp Tæng LÜnh ®éi cña khu vùc/help_bid", "trËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt/help_tryout", "Vâ L©m ®¹i héi/help_final", "C¸i nµy ta hiÓu råi!/OnCancel")
 end
 
 function validateDate(startt,endt)
@@ -293,7 +293,7 @@ function AddAword(level, fac, result)
 	else
 		AddEventItem(CP_AWARD_ITEM[numth][2][2])
 	end
-	Msg2Player("ÄãµÃµ½1¸ö"..CP_AWARD_ITEM[numth][1])
+	Msg2Player("B¹n nhËn ®­îc mét"..CP_AWARD_ITEM[numth][1])
 end
 
 function randByProbability(aryProbability)

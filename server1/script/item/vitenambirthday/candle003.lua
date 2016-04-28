@@ -1,4 +1,4 @@
 function main()
-		Msg2Player("您已点燃一支幸运蜡烛，在30分钟内获得双倍经验值奖励.")
+		Msg2Player("B筺  th緋 s竛g m閠 ng鋘 n課 'May m緉', nh薾 頲 ph莕 thng t╪g i 甶觤 kinh nghi謒 trong 30 ph髏.")
 		AddSkillState(440, 1, 1, 32400);
 end

@@ -19,7 +19,7 @@ FLYBUGBEAR_MESSENGEREXP= tonumber( TabFile_GetCell( "tollprize" ,2 ,"bug_jifen")
 function OnDeath()
 	local name = GetName()
 	if ( messenger_middletime() == 10  ) then --Íæ¼ÒÔÚµØÍ¼ÖĞµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æğ! "..name.."! Ö´ĞĞĞÅÊ¹ÈÎÎñµÄÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
 		messenger_killbugbear()

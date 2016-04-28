@@ -28,7 +28,7 @@ function EndMission()
 		end;
 	end;
 	festival_gameover(SF_MAPID[2], SF_MISSIONID);	--½«ËùÓĞÍæ¼ÒÇå³ı³öµØÍ¼
-	strGlbNews = format("°ï»áÓÂÊ¿È¥×·²¶%s ÒÑ»ØÀ´ÁË£¬´Ë´ÎËäÈ»ÏûÃğÁË %s, µ«ÊÇ£¬ËüµÄĞ°Æø»¹´æÔÚ.", SF_ANIMALNAME, SF_ANIMALNAME);
+	strGlbNews = format("C¸c dòng sü bang héi ®i truy ®uæi %s ®· trë vÒ, lÇn nµy tuy ®· diÖt trõ ®­îc %s, nh­ng tµ khİ cña nã vÉn cßn tån t¹i.", SF_ANIMALNAME, SF_ANIMALNAME);
 	AddGlobalNews(strGlbNews);
 	
 	ClearMapObj(SF_MAPID[2]);
@@ -113,9 +113,9 @@ function festival_getsz(tabMsg, nMsgCount, tabPlayer, nGroupId)
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1];
 			if (nGroupId > SF_SMALLMAPCOUNT) then
-			    tabMsg[i + nMsgCount] = format("<color=green>ÅÅÃû %d: %s, ×¥µ½%d %s", i, GetName(), tabPlayer[i][2], SF_MOUSENAME);
+			    tabMsg[i + nMsgCount] = format("<color=green>XÕp h¹ng %d: %s, b¾t ®­îc %d %s", i, GetName(), tabPlayer[i][2], SF_MOUSENAME);
 			else
-			    tabMsg[i + nMsgCount] = format("<color=orange>ÅÅÃû %d: %s, ´òÖĞ%s %d ´Î",i,GetName(),SF_ANIMALNAME, tabPlayer[i][2]);
+			    tabMsg[i + nMsgCount] = format("<color=orange>XÕp h¹ng %d: %s, ®¸nh tróng %s %d lÇn",i,GetName(),SF_ANIMALNAME, tabPlayer[i][2]);
 			end;
 		end
 	end
@@ -137,9 +137,9 @@ function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
 		    Msg2Player(tabMsg[j]);
 		end;
 		if (GetTask(TK_GROUPID) > SF_SMALLMAPCOUNT) then
-    		Msg2Player("ÄãÊÇµÚ <color=yellow>"..i.."<color> ÈËÊ¿×¥µ½ÄêÊŞ£¬¿ÉÒÔµ½ <color=yellow>»î¶¯·»×Ü¹Ü<color> Áì½±!");
+    		Msg2Player("B¹n lµ ng­êi thø <color=yellow>"..i.."<color> nh©n sü tham gia b¾t niªn thó cã thÓ ®Õn <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
     	else
-    	    Msg2Player("ÄãÊÇµÚ <color=yellow>¸ö´òÖĞ¹ÖÊŞµÄÈË"..i.."<color>, ¿ÉÒÔÈ¥¼û <color=yellow>»î¶¯·»×Ü¹Ü<color> Áì½±!");
+    	    Msg2Player("B¹n lµ ng­êi ®¸nh tróng Qu¸i thó <color=yellow>"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
     	end;
 	end;
 end;

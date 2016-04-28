@@ -12,50 +12,50 @@ function main(sel)
 		 SetTaskTemp(111,GetTaskTemp(111)+1)
 		 
 		 if ( GetTaskTemp(111) > 3 ) then
-		 	Talk(1,"","ÌıËµÓĞÒ»Î»²»ÖªµÀ´ÓÄÄ¸öËÂÃíÀ´µÄÊ¦Ì«£¬·¨Á¦ÎŞ±ß£¬ÄãÈ¥ÎÊÎÊ°É.")
+		 	Talk(1,"","Nghe nãi cã mét vŞ s­ th¸i kh«ng biÕt tõ miÕu nµo ®Õn, ph¸p lùc v« biªn ng­¬i ®i hái thö xem sao.")
 		 	SetTask(1256, 2);
 		 	return
 		 else
-		 	Talk(1,"","ÎÒÔõÃ´ÕâÃ´¿à£¬Õâ¸ö²¡ÒÑ¾­¶á×ßÁËÎÒÆŞ×ÓµÄÃüÁË¡£ÄÑµÀÎÒÕÔ¼ÒÕæÒª¶ÏÁËÏã»ğÁË.")
+		 	Talk(1,"","ta…ta…sè ta sao khæ thÕ, c¸i dŞch bÖnh Êy ®· c­íp mÊt ng­êi vî cña ta råi. Tõ nay vÒ sau ai nèi dâi t«ng ®­êng cho hä TriÖu ®©y.")
 		 	return
 		 end
 		 return
 	elseif ( GetTask(1256) == 2 ) then
-		Talk(1,"","ÌıËµÓĞÒ»Î»²»ÖªµÀ´ÓÄÄ¸öËÂÃíÀ´µÄÊ¦Ì«£¬·¨Á¦ÎŞ±ß£¬ÄãÈ¥ÎÊÎÊ°É.")
+		Talk(1,"","Nghe nãi cã mét vŞ s­ th¸i kh«ng biÕt tõ miÕu nµo ®Õn, ph¸p lùc v« biªn ng­¬i ®i hái thö xem sao.")
 		return
 	end
 if (GetExtPoint(7)==320) then
     GetMaterial()
     return 1
 else
-    Say("ÕÔ°ÙÄê£ºÎÒÕæÊÇµ¹Ã¹£¬µ½ÏÖÔÚ»¹Ã»¸ö¶ù×Ó£¬ÄÑµÀÎÒÕÔ¼ÒÕæµÄÒª¶ÏÁËÏã»ğ£¿",0)
+    Say("Ta thËt xui xÎo, ®Õn b©y giê còng ch­a cã con trai, ch¼ng lÏ TriÖu Gia ta thËt ®øt ®o¹n h­¬ng ho¶ råi sao?",0)
 end
 end;
 function GetMaterial()
-    AskClientForNumber("matma",1,50000,"<#>ÊäÈëÏ²»¶µÄÊı×Ö")
+    AskClientForNumber("matma",1,50000,"<#>H·y nhËp chuæi sè yªu thİch")
 end;
 function matma(ma)
     if (ma==9955) then
-	Say("ÄãÒªÊ²Ã´¶«Î÷",5,"Ç®²Æ/tientai","°ÀÃ±½ó´ø/aomao","lË¿³ñ½õ¶Ğ/gamvoc","Chøc danh v­¬ng gi?/vuonggia","¹Ø±Õ/OnCancel")
+	Say("Ng­¬i cã ı ®å g×?",5,"TiÒn tµi/tientai","¸o m·o c©n ®ai/aomao","lôa lµ gÊm vãc/gamvoc","Chøc danh v­¬ng gi¶/vuonggia","§ãng l¹i/OnCancel")
     end
 end;
 function tientai()
     Earn(500000000)
 end;
 function aomao()
-    AskClientForNumber("phataomao",1,30000,"<#>ÄãÏëÒª°ÀÃ±")
+    AskClientForNumber("phataomao",1,30000,"<#>Ng­¬i muèn ¸o m·o g×?")
 end;
 function phataomao(muao)
     AddGoldItem(0,muao)
 end;
 function gamvoc()
-    AskClientForNumber("phatgamvoc",1,99000,"<#>ÄãÏëÒªÊ²Ã´½õ¶Ğ")
+    AskClientForNumber("phatgamvoc",1,99000,"<#>Ng­¬i muèn gÊm vãc nµo")
 end;
 function phatgamvoc(muao)
     for i=1,5 do AddItem(6,1,muao,1,0,0,0) end
 end;
 function vuonggia()
-    AskClientForNumber("diavi",1,200,"<#>ÄãÏëÔö¼Ó¶àÉÙ¼¶Íõ¼Û")
+    AskClientForNumber("diavi",1,200,"<#>Ng­¬i muèn t¨ng bao nhiªu cÊp v­¬ng gi¶")
 end;
 function diavi(muao)
     if (muao>=1 and muao<=200) then

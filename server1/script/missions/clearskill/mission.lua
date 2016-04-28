@@ -22,7 +22,7 @@ end;
 
 function InitMission()
 	StartMissionTimer(MISSIONID, 20, CSP_PKTIME);
-	nNpcId = AddNpc(68, 10, SubWorld, CSP_CAMPMANX, CSP_CAMPMANY, 1, "∞Ô≈… π’ﬂ");
+	nNpcId = AddNpc(68, 10, SubWorld, CSP_CAMPMANX, CSP_CAMPMANY, 1, "S¯ gi∂ bang ph∏i");
 	SetMissionV(2, nNpcId)
 	SetNpcScript(nNpcId, "\\script\\missions\\clearskill\\camperman.lua");
 	SetMissionV(1, 1)

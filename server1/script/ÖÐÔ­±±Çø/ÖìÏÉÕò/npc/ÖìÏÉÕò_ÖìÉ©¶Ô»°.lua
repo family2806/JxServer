@@ -7,19 +7,19 @@
 function main()
 	UTask_world46=GetTask(74)
 	if (UTask_world46==0)  then
-		Say("ÄãÓĞÃ»ÓĞ¿´¼ûÎÒ¼ÒÄÇ¸öËÀ¹íµ½ÄÄÀïÈ¥ÁË¡£ºß£¬½ñÌìÃ»»î¸ÉÒ²²»´ô¼ÒÀï£¬ËµËûÁ½¾ä¾ÍÅÜµô£¬Ò»¶¨ÊÇµ½ÄÄÀïºÈ¾ÆÈ¥ÁË¡£ÄãÄÜ°ïÎÒ°ÑËûÕÒ»ØÀ´Ã´?", 2, "¿ÉÒÔ£¬ÎÒ°ïÄã/yes", "²»¹ØĞÄËûÈË·òÆŞµÄÊÂ /no")
+		Say("Ng­¬i cã thÊy «ng chång quû nhµ ta ch¹y ®i ®©u kh«ng? ¤i! H«m nay còng kh«ng chŞu ë nhµ, võa nãi hai c©u «ng ta ®· ch¹y mÊt, ch¾c l¹i ®i uèng r­îu ®©u ®ã råi. Ng­¬i cã thÓ gióp ta t×m «ng ta vÒ kh«ng?", 2, "§­îc, ta sÏ gióp /yes", "Kh«ng quan t©m ®Õn chuyÖn vî chång ng­êi kh¸c /no")
 	elseif (UTask_world46==2)  then
-		Talk(1,"","ËûÒ»¶¨ÓÖÈ¥ºÈ¾ÆÁË!")
+		Talk(1,"","L·o Êy ch¾c l¹i ®i uèng r­îu ®©u ®ã råi!")
 	else
-		Talk(1,"","ÎÒÃÇÀÏ°ÙĞÕ£¬²»ĞèÒªÉı¹Ù·¢²Æ£¬Ö»ÒªÒ»¸ö°²ÎÈµÄÈÕ×Ó¾ÍĞĞ. ")
+		Talk(1,"","L·o b¸ t¸nh chóng t«i, kh«ng cÇn th¨ng quan còng kh«ng cÇn ph¸t tµi, chØ cÇn mét cuéc sèng b×nh an lµ ®ñ. ")
 	end
 end
 
 function yes()
-	Talk(1,"","ËûÒ»¶¨ÓÖÈ¥ºÈ¾ÆÁË!")
+	Talk(1,"","L·o Êy ch¾c l¹i ®i uèng r­îu ®©u ®ã råi!")
 	SetTask(74,2)
-	AddNote("½ÓÈÎÎñ£º°ïÖìÉ©ÕÒÀÏ¹«. ")
-	Msg2Player("½ÓÈÎÎñ£º°ïÖìÉ©ÕÒÀÏ¹«. ")
+	AddNote("NhËn nhiÖm vô: Gióp Chu TÈu t×m chång. ")
+	Msg2Player("NhËn nhiÖm vô: Gióp Chu TÈu t×m chång. ")
 end
 
 function no()

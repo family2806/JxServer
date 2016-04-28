@@ -1,14 +1,14 @@
 EVENT_LOG_TITLE		= "xmas2011"
 ITEM_XMAS_TREE		= {tbProp={6,1,3065,1,0,0},nExpiredTime=20120101,nBindState=-2}
-ITEM_XMAS_STOCKING		= {szName="Ê¥µ®Íà",tbProp={6,1,3066,1,0,0},nExpiredTime=20120101,nBindState=-2}
+ITEM_XMAS_STOCKING		= {szName="Ví Gi¸ng Sinh",tbProp={6,1,3066,1,0,0},nExpiredTime=20120101,nBindState=-2}
 ITEM_XMAS_AWARD		= {tbProp={6,1,2739,1,0,0},nExpiredTime=20120101,}
 TSKI_TREE_LIMIT		= 1
 TSKI_STOCKING_LIMIT		= 2
-ITEM_XMAS_APPLE		= {szName="Ê¥µ®¹û",tbProp={6,1,3067,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_LANTERN		= {szName="Ê¥µ®µÆÁý",tbProp={6,1,3068,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_CANDY		= {szName="¹ÕÕÈÌÇ",tbProp={6,1,3069,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_BELL		= {szName="Ê¥µ®ÖÓ",tbProp={6,1,3070,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_STAR		= {szName="Ê¥µ®ÐÇÐÇ",tbProp={6,1,3071,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_APPLE		= {szName="Qu¶ Gi¸ng Sinh",tbProp={6,1,3067,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_LANTERN		= {szName="§Ìn Lång Gi¸ng Sinh",tbProp={6,1,3068,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_CANDY		= {szName="KÑo chiÕc gËy",tbProp={6,1,3069,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_BELL		= {szName="Chu«ng Gi¸ng Sinh",tbProp={6,1,3070,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_STAR		= {szName="Sao Gi¸ng Sinh",tbProp={6,1,3071,1,0,0},nExpiredTime=20120101,}
 ITEM_XMAS_HAT		= {tbProp={6,1,3072,1,0,0},nExpiredTime=20120101,}
 MAX_GET_TREE_LIMIT		= 6
 MAX_GET_STOCKING_LIMIT		= 20

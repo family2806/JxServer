@@ -1,5 +1,5 @@
 function main()
-	Msg2Player("Ë«±¶¾­Ñé»î¶¯ÆÚ¼äÔİÊ±²»ÄÜÊ¹ÓÃ.¶àĞ»Ö§³Ö!")
+	Msg2Player("T¹m thêi kh«ng thÓ nh©n ®«i ®iÓm kinh nghiÖm! C¶m ¬n ®· ñng hé! ")
 	return 1
 	--AddSkillState(440, 1, 1, 64800);
 	--return 0

@@ -10,7 +10,7 @@ function tbExchangeWrongEquip:GetGoldEquipListInRoom()
 	local tbRoomItems = GetRoomItems(0)
 	local tb = {}
 	if getn(tbRoomItems) <= 0 then
-		Talk(1, "", "×°±¸Ïä¿ÕµÄ£¬ÇëÔÙ¼ì²é")
+		Talk(1, "", "R­¬ng hµnh trang trèng, xin h·y kiÓm tra l¹i")
 		return
 	end
 	local nItemIdx
@@ -39,7 +39,7 @@ function tbExchangeWrongEquip:CheckItems(tb)
 		end
 	end
 	if nFoundIDX == 0 then
-		Talk(1, "", "Ã»ÓÐºÏÊÊµÄ×°±¸¿ÉÒÔ»»")
+		Talk(1, "", "Kh«ng cã trang bÞ thÝch hîp ®Ó ®æi")
 		return
 	end
 	local tbEq2Consume = {}
@@ -47,7 +47,7 @@ function tbExchangeWrongEquip:CheckItems(tb)
 		if tb[nFoundIDX+i] then
 			tinsert(tbEq2Consume, tb[nFoundIDX+i])
 		else
-			Talk(1, "", "ÇëÉèÖÃÕûÌ×ÐèÒª»»µÄ×°±¸µ½×°±¸Ïä£¬È»ºóÔÙÊÔ")
+			Talk(1, "", "Xin h·y ®Æt c¶ bé trang bÞ cÇn ®æi vµo r­¬ng hµnh trang råi thö l¹i")
 			return
 		end
 	end
@@ -55,12 +55,12 @@ function tbExchangeWrongEquip:CheckItems(tb)
 		return
 	end
 	local tbOpt = {}
-	local strTittle = "ÒÔÏÂ×°±¸½«±»ÊÕ»Ø£¬ÇëÔÙ¼ì²éÒ»ÏÂ:\n"
+	local strTittle = "C¸c trang bÞ sau sÏ bÞ thu håi, xin h·y kiÓm tra kü l¹i:\n"
 	for i = 1, getn(tbEq2Consume) do
 		strTittle = strTittle.."<color=red>"..GetItemName(tbEq2Consume[i]).."<color>\n"
 	end
-	tinsert(tbOpt, {"ÖØ¸´»»È¡", tbExchangeWrongEquip.Exchange, {tbExchangeWrongEquip, tbEq2Consume}})
-	tinsert(tbOpt, {"³·Ïú"})
+	tinsert(tbOpt, {"ChËp nhËn ®æi", tbExchangeWrongEquip.Exchange, {tbExchangeWrongEquip, tbEq2Consume}})
+	tinsert(tbOpt, {"Hñy bá "})
 	CreateNewSayEx(strTittle, tbOpt)
 end
 
@@ -68,13 +68,13 @@ function tbExchangeWrongEquip:Exchange(tbItem)
 	for i = 1, getn(tbItem) do
 		local strItemName = GetItemName(tbItem[i])
 		if IsMyItem(tbItem[i]) ~= 1 or RemoveItemByIndex(tbItem[i]) ~= 1 then
-			Talk(1, "", "ÄúµÄ×°±¸ÒÑ±»ÒÆ³ý£¬»»È¡Ê§°Ü£¬Ê§È¥Ò»Ð©×°±¸")
+			Talk(1, "", "Trang bÞ cña b¹n ®· bÞ di dêi, ®æi thÊt b¹i mÊt 1 sè trang bÞ")
 			return
 		else
-			tbLog:PlayerActionLog("·çÔÆÁîÅÆ", "»»È¡²ÔÀÇ×°±¸³ö´í", "É¾³ýItem: "..strItemName)
+			tbLog:PlayerActionLog("PhongVanLenhBai", "DoiTrangBiThuongLangNhanSai", "XoaItem: "..strItemName)
 		end
 	end
 	tbVNG_BitTask_Lib:setBitTask(self.tbBitTask, 1)
-	local tbItem = {szName = "²ÔÀÇÖ®±¦", tbProp={6,1,30146,1,0,0}, nCount = 1, nBindState = -2,nExpiredTime=10080}
-	tbAwardTemplet:Give(tbItem, 1, {"·çÔÆÁîÅÆ", "»»È¡²ÔÀÇ×°±¸³ö´í" })
+	local tbItem = {szName = "Th­¬ng Lang Chi B¶o", tbProp={6,1,30146,1,0,0}, nCount = 1, nBindState = -2,nExpiredTime=10080}
+	tbAwardTemplet:Give(tbItem, 1, {"PhongVanLenhBai", "DoiTrangBiThuongLangNhanSai" })
 end

@@ -8,7 +8,7 @@ if (GetLevel() >= 5) then						--µÈ¼¶´ïµ½Ê®¼¶
 	SetFightState(1);
 	NewWorld(1, 1800 ,3603)
 else
-	Talk(1,"","Ç°ÃæÎ£ÏÕ£¬»¹ÊÇ»ØÈ¥ĞŞÁ¶Ò»ÏÂ!")
+	Talk(1,"","Phİa tr­íc nguy hiÓm! Xin h·y quay vÒ rÌn luyÖn thªm!")
 	SetPos(1411, 2913)						--×ß³öTrapµã
 end
 

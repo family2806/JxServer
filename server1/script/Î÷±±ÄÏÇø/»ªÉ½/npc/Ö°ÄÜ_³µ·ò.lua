@@ -5,9 +5,9 @@ CurStation = 7
 Include("\\script\\global\\station.lua")
 
 function main(sel)
-	Say("±ÈÈü½áÊøÁË£¿ÒªÎÒÀ­Äã»ØÈ¥Âğ?", 4, "¾­¹ıµÄµØ·½/WayPointFun", "¾­¹ıµÄ³ÇÊĞ/StationFun","·µ»ØÔ­µã/TownPortalFun", "²»ĞèÒª/OnCancel")
+	Say("Thi ®Êu xong råi ­? Cã cÇn ta ®­a vÒ kh«ng?", 4, "Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thŞ ®· ®i qua/StationFun","Trë l¹i ®Şa ®iÓm cò/TownPortalFun", "Kh«ng cÇn ®©u/OnCancel")
 end;
 
 function  OnCancel()
-   Talk(1,"","ÓĞÇ®¾Í»ØÀ´")
+   Talk(1,"","Cã tiÒn th× h·y quay l¹i nhĞ! ")
 end;

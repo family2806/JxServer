@@ -62,7 +62,7 @@ function gbCallBossTest()
 	local nMapId = 176
 	local nPosX = 1754
 	local nPosY = 2799
-	local szBossname = "ÕÅÐû"
+	local szBossname = "Tr­¬ng Tuyªn"
 	local szWorldMsg = "this is a test boss"
 	
 	if (not nBossId) or (not nBossLevel) or (not nSeries) or (not nMapId)

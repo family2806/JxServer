@@ -6,11 +6,11 @@ function refine()
 end
 
 function main(sel)
-	Say("Ò©µêÀÏ°å£ºÎÒÄêÇáµÄÊ±ºò£¬Ïë×öÒ»¸öÏñ»ªÙ¢Ò»ÑùµÄÃûÒ½£¬ºóÀ´È¢ÆŞÉú×Ó£¬ÎªÁËÑø¼Òºı¿Ú£¬Ö»µÃ¿ªÁËÕâ¼ÒÒ©µê¡£ÇÆÎÒÕâ¸öÈË£¬ÂŞàÂÁË°ëÌì£¬»¹Ã»ÓĞÎÊÄãÒªÂòÉ¶×ÓÒ©£¿",
+	Say("Lóc ta cßn trÎ, muèn lµm mét danh y gièng nh­ Hoa §µ, sau nµy lËp gia thÊt sinh con ®Î c¸i, v× nu«i mÊy miÖng ¨n mµ chØ cã thÓ më c¸i tiÖm thuèc nµy th«i. Chao!Con ng­êi cña ta, nhiÒu chuyÖn n·y giê mµ vÉn ch­a hái kh¸ch quan cÇn mua thuèc g×?",
 		3,
-		"½»Ò×/yes",
-		"Á¶ÖÆ»ìÔªÁéÂ¶/refine",
-		"²»½»Ò×/Cancel")
+		"Giao dŞch/yes",
+		"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
+		"Kh«ng giao dŞch/Cancel")
 end
 
 function yes()

@@ -15,7 +15,7 @@ else
 	Include("\\script\\tong\\map\\map_management.lua")
 end
 
---°ï»á³õÊ¼»¯
+--Bang héi³õÊ¼»¯
 function INIT_R(nTongID)
 	if (nTongID == 0 or TONG_GetDay(nTongID) ~= 0)then
 		return 0
@@ -26,8 +26,8 @@ INIT_G_1 = DefFun1
 INIT_G_2 = DefFun1
 
 function ADD_R(nTongID, nMasterID)
-	-- °ï»áÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
-	local szRecord = "´´Á¢°ï»á";
+	-- Bang héiÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
+	local szRecord = "T¹o bang héi";
 	local szRecordPlus;
 	local szMasterName = TONGM_GetName(nTongID, nMasterID);
 	if (szMasterName ~= "") then
@@ -36,8 +36,8 @@ function ADD_R(nTongID, nMasterID)
 		szMasterName = "";
 		szRecordPlus = szRecord;
 	end
-	TONG_ApplyAddHistoryRecord(nTongID, szRecordPlus);	-- °ï»áÀúÊ·¼ÇÂ¼
-	TONG_ApplyAddEventRecord(nTongID, szRecordPlus);	-- °ï»áÊÂ¼ş¼ÇÂ¼
+	TONG_ApplyAddHistoryRecord(nTongID, szRecordPlus);	-- Bang héiÀúÊ·¼ÇÂ¼
+	TONG_ApplyAddEventRecord(nTongID, szRecordPlus);	-- Bang héiÊÂ¼ş¼ÇÂ¼
 	
 	cTongLog:WriteInfTB("TONG", "build", nTongID, {master = szMasterName})
 		
@@ -61,10 +61,10 @@ REMOVE_G_1 = DefFun1
 REMOVE_G_2 = DefFun1
 
 aszTongLogXPFileHead = {	
-	"ÈÕÆÚ","ÖÜÊı","°ï»á","½¨ÉèµÈ¼¶","½¨Éè»ù½ğ","Õ½±¸»ù½ğ","´¢±¸¹±Ï×¶È","°ï»áÈËÊı",
-	"ÍËÒşÈËÊı","ÖÜ½¨Éè»ù½ğ","ÏûºÄ½¨Éè»ù½ğ","ÖÜÕ½±¸»ù½ğ","ÏûºÄÕ½±¸»ù½ğ","×Ê½ğ2½¨Éè","¾èÇ®2½¨Éè","½¨Éè2Õ½±¸",
-	"×÷·»²ú³ö","×÷·»×ÜÊı","±ø¼×·»","Ìì¹¤·»","Ãæ¾ß·»","ÊÔÁ··»","ÌìÒâ·»","ÀñÎï·»",
-	"»î¶¯·»","×÷·»×î¸ß¼¶","ÖÜÄ¿±êÄÑ¶È","ÖÜÄ¿±êÍê³É","ÖÜÄ¿±êÏµÍ³",
+	"Ngµy","Sè tuÇn","Bang héi","§¼ng cÊp kiÕn thiÕt","Ng©n s¸ch kiÕn thiÕt","Ng©n s¸ch chiÕn bŞ","N¹p ®iÓm cèng hiÕn","Bang héiÈËÊı",
+	"Sè ng­êi tho¸i Èn","ÖÜNg©n s¸ch kiÕn thiÕt","ÏûºÄNg©n s¸ch kiÕn thiÕt","ÖÜNg©n s¸ch chiÕn bŞ","ÏûºÄNg©n s¸ch chiÕn bŞ","Ng©n quü thµnh kiÕn thiÕt","Gãp tiÒn thµnh kiÕn thiÕt","KiÕn thiÕt thµnh chiÕn bŞ",
+	"T¸c ph­êng s¶n xuÊt","Tæng sè T¸c Ph­êng","Khu Binh gi¸p ","Khu Thiªn C«ng ","Khu MÆt n¹ ","Thİ luyÖn ph­êng","Khu Thiªn ı ","Khu LÔ vËt ",
+	"Khu ho¹t ®éng ","CÊp T¸c Ph­êng cao nhÊt","§é khã môc tiªu tuÇn","Hoµn thµnh môc tiªu tuÇn","HÖ thèng môc tiªu tuÇn",
 }
 TongLogXPRecords = 0
 function WriteXPLog(nTongID)
@@ -128,18 +128,18 @@ function WEEKLY_MAINTAIN_R(nTongID)
 	TONG_ApplySetLWeekGoalPlayer(nTongID, nWeekGoalPlayer)
 	TONG_ApplySetLWeekGoalPriceTong(nTongID, nWeekGoalPriceTong)
 	TONG_ApplySetLWeekGoalPricePlayer(nTongID, nWeekGoalPricePlayer)
-	--ÅĞ¶Ï°ï»áÖÜÄ¿±êÊÇ·ñÍê³É
+	--ÅĞ¶ÏBang héiÖÜÄ¿±êÊÇ·ñÍê³É
 	if (nWeekGoalTotal > 0 and nWeekGoalValue >= nWeekGoalTotal) then		
 		TONG_ApplySetTaskValue(nTongID, TONGTSK_WEEKGOAL_COMPLETE, 1)
-		TONG_ApplyAddEventRecord(nTongID, "ÉÏÖÜÖÜÄ¿±ê´ï³É£¬°ïÖ÷»òÓĞÈ¨ÏŞ³¤ÀÏ¿ÉÒÔµ½°ï»á¼ÀÌ³ÁìÈ¡°ï»á½±Àø");	-- °ï»áÊÂ¼ş¼ÇÂ¼
-		Msg2Tong(nTongID, "±¾ÖÜÖÜÄ¿±ê´ï³É£¬°ïÖ÷»òÓĞÈ¨ÏŞ³¤ÀÏ¿ÉÒÔµ½°ï»á¼ÀÌ³ÁìÈ¡°ï»á½±Àø£¬Íê³É¸öÈËÖÜÄ¿±êµÄ°ïÖÚ¿Éµ½¼ÀÌ³ÁìÈ¡¸öÈË½±Àø¡£ÆÚÏŞÎªÒ»ÖÜ£¡")
+		TONG_ApplyAddEventRecord(nTongID, "ÉÏÖÜÖÜÄ¿±ê´ï³É£¬°ïÖ÷»òÓĞÈ¨ÏŞ³¤ÀÏ¿ÉÒÔµ½Bang héi¼ÀÌ³ÁìÈ¡Bang héi½±Àø");	-- Bang héiÊÂ¼ş¼ÇÂ¼
+		Msg2Tong(nTongID, "±¾ÖÜÖÜÄ¿±ê´ï³É£¬°ïÖ÷»òÓĞÈ¨ÏŞ³¤ÀÏ¿ÉÒÔµ½Bang héi¼ÀÌ³ÁìÈ¡Bang héi½±Àø£¬Íê³É¸öÈËÖÜÄ¿±êµÄ°ïÖÚ¿Éµ½¼ÀÌ³ÁìÈ¡¸öÈË½±Àø¡£ÆÚÏŞÎªÒ»ÖÜ£¡")
 	else
 		TONG_ApplySetTaskValue(nTongID, TONGTSK_WEEKGOAL_COMPLETE, 0)
 	end		
 	local nTongWeekBuildFund = TONG_GetWeekBuildFund(nTongID)
 	local nBuildLevel = TONG_GetBuildLevel(nTongID)
 	local nWeekBuildUpper = tongGetWeekBuildUpper(nTongID, nBuildLevel)
-	--Èç¹ûÖÜÀÛ»ı½¨Éè»ù½ğÎ´µ½ÉÏÏŞ
+	--Èç¹ûÖÜÀÛ»ıNg©n s¸ch kiÕn thiÕtÎ´µ½ÉÏÏŞ
 	if (nTongWeekBuildFund < nWeekBuildUpper) then
 		--²î¶àÉÙµ½ÉÏÏŞ
 		local nDec = nWeekBuildUpper - nTongWeekBuildFund
@@ -150,14 +150,14 @@ function WEEKLY_MAINTAIN_R(nTongID)
 		end
 		if (TONG_ApplyAddStoredBuildFund(nTongID, -nDec) == 1) then
 			TONG_ApplyAddBuildFund(nTongID, nDec)
-			local szMsg = "ÖÜÄÚ»ñµÃµÄ½¨Éè»ù½ğÎ´´ï½çÏŞ£¬´¢±¸½¨Éè»ù½ğ×ª"..nDec.." Íò½øÈë½¨Éè»ù½ğ"
+			local szMsg = "ÖÜÄÚ»ñµÃµÄNg©n s¸ch kiÕn thiÕtÎ´´ï½çÏŞ£¬´¢±¸Ng©n s¸ch kiÕn thiÕt×ª"..nDec.."  v¹n½øÈëNg©n s¸ch kiÕn thiÕt"
 			Msg2Tong(nTongID, szMsg)
 			TONG_ApplyAddEventRecord(nTongID, szMsg)
 		end
 	end
-	TONG_ApplySetWeekBuildFund(nTongID, 0) --ÖÜÀÛ»ı½¨Éè»ù½ğÇå0
+	TONG_ApplySetWeekBuildFund(nTongID, 0) --ÖÜÀÛ»ıNg©n s¸ch kiÕn thiÕtÇå0
 	TONG_ApplySetWeekGoalValue(nTongID, 0)	--ÖÜÄ¿±êÀÛ»ı¹±Ï×¶ÈÇå0
-	TONG_ApplyAddWeek(nTongID, 1)			--°ï»áÖÜÊı¼Ó1
+	TONG_ApplyAddWeek(nTongID, 1)			--Bang héiSè tuÇn¼Ó1
 	
 	local nMembers = TONG_GetMemberCount(nTongID, -1)		
 	cTongLog:WriteInfTB("TONG", "weeklymaintain", nTongID,
@@ -190,12 +190,12 @@ function WEEKLY_MAINTAIN_R(nTongID)
 				TONG_ApplySetTaskValue(nTongID, TONGTSK_STUNT_ID, nNextStunt)
 				TONG_ApplySetTaskValue(nTongID, TONGTSK_STUNT_SWICTH, 0)
 				nStuntID = nNextStunt
-				local szMsg = "°ï»á¼¼ÄÜ×ª³É"..TB_STUNTID_INFO[nStuntID].name
+				local szMsg = "Bang héi¼¼ÄÜ×ª³É"..TB_STUNTID_INFO[nStuntID].name
 				Msg2Tong(nTongID, szMsg)
-				TONG_ApplyAddEventRecord(nTongID, szMsg)	-- °ï»áÊÂ¼ş¼ÇÂ¼
+				TONG_ApplyAddEventRecord(nTongID, szMsg)	-- Bang héiÊÂ¼ş¼ÇÂ¼
 			end
 			--Ó¦¸ÃÔÚÖÜÆÚÎ¬»¤Ê±
-			Maintain_Stunt(nTongID, nStuntID)	--ÒÔÕ½±¸»ù½ğÎ¬»¤ÌØ¼¼
+			Maintain_Stunt(nTongID, nStuntID)	--ÒÔNg©n s¸ch chiÕn bŞÎ¬»¤ÌØ¼¼
 			if (nBuildLevel == 5) then
 				local nCitySTID = tong_GetCityStuntID(nTongID)
 				if (nCitySTID ~= 0 and TB_STUNTID_INFO[nCitySTID].right == 1) then
@@ -207,9 +207,9 @@ function WEEKLY_MAINTAIN_R(nTongID)
 		end
 	end
 	
-	--Éè¶¨°ï»áÖÜÄ¿±ê
+	--Éè¶¨Bang héiÖÜÄ¿±ê
 	if nMembers < MIN_WEEKGOAL_MEMBER then
-		local szMsg = "°ï»áÈËÊıĞ¡ÓÚ"..MIN_WEEKGOAL_MEMBER.."ÈË£¬°ï»áÖÜÄ¿±ê²»ÄÜÆô¶¯£¡"
+		local szMsg = "Bang héiÈËÊıĞ¡ÓÚ"..MIN_WEEKGOAL_MEMBER.."ÈË£¬Bang héiÖÜÄ¿±ê²»ÄÜÆô¶¯£¡"
 		Msg2Tong(nTongID, szMsg)
 		TONG_ApplyAddEventRecord(nTongID, szMsg);
 --		TONG_ApplySetWeekGoalEvent(nTongID, 0)
@@ -221,18 +221,18 @@ function WEEKLY_MAINTAIN_R(nTongID)
 	else
 		local nType = random(getn(TB_WEEKGOAL_TYPE_ID))
 		local nLevel = TONG_GetCurWeekGoalLevel(nTongID)
-		if (nLevel <= 0) then nLevel = 1 end --¿ªÊ¼Ê±ÖÜÄ¿±êÄÑ¶ÈÄ¬ÈÏÎª1
+		if (nLevel <= 0) then nLevel = 1 end --¿ªÊ¼Ê±§é khã môc tiªu tuÇnÄ¬ÈÏÎª1
 		if (nLevel > 2) then
 			nLevel = 2
 			TONG_ApplySetCurWeekGoalLevel(nTongID, 2)
 		end
 		local nHourValue = random(150, 170)
 		nWeekGoalPlayer = TB_WEEKGOAL_CHANGE[nLevel] * nHourValue --È·¶¨Íæ¼ÒÖÜÄ¿±ê¹±Ï×¶È
-		nWeekGoalTotal = floor(0.4 * nMembers * nWeekGoalPlayer) --È·¶¨°ï»áÖÜÄ¿±ê¹±Ï×¶È
+		nWeekGoalTotal = floor(0.4 * nMembers * nWeekGoalPlayer) --È·¶¨Bang héiÖÜÄ¿±ê¹±Ï×¶È
 		nWeekGoalPricePlayer = floor(TB_WEEKGOAL_PRICE_BASE[nLevel] * nHourValue) --È·¶¨Íæ¼ÒÖÜÄ¿±ê½±Àø
-		nWeekGoalPriceTong = floor(TB_WEEKGOAL_PRICE_BASE[nLevel] * nHourValue * 0.4 * nMembers) --È·¶¨°ï»áÖÜÄ¿±ê½±Àø
+		nWeekGoalPriceTong = floor(TB_WEEKGOAL_PRICE_BASE[nLevel] * nHourValue * 0.4 * nMembers) --È·¶¨Bang héiÖÜÄ¿±ê½±Àø
 --		nWeekGoalPlayer = WEEKGOAL_VALUE_PERSON;
---		nWeekGoalTotal = floor(0.4 * nMembers * nWeekGoalPlayer); --È·¶¨°ï»áÖÜÄ¿±ê¹±Ï×¶È
+--		nWeekGoalTotal = floor(0.4 * nMembers * nWeekGoalPlayer); --È·¶¨Bang héiÖÜÄ¿±ê¹±Ï×¶È
 --		nWeekGoalPricePlayer = WEEKGOAL_PRICE_PERSON;
 --		nWeekGoalPriceTong = WEEKGOAL_PRICE_TONG;
 --		TONG_ApplySetWeekGoalEvent(nTongID, TB_WEEKGOAL_TYPE_ID[nType])
@@ -243,8 +243,8 @@ function WEEKLY_MAINTAIN_R(nTongID)
 		TONG_ApplySetWeekGoalPricePlayer(nTongID, nWeekGoalPricePlayer)
 		TONG_ApplySetWeekGoalPriceTong(nTongID, nWeekGoalPriceTong)
 	
-		TONG_ApplyAddEventRecord(nTongID, "±¾ÖÜÖÜÄ¿±êÎª£º"..TB_WEEKGOAL_TYPE_NAME[nType]);	-- °ï»áÊÂ¼ş¼ÇÂ¼
-		Msg2Tong(nTongID, "±¾ÖÜµÄ°ï»áÖÜÄ¿±êÎª£º<color=green>"..TB_WEEKGOAL_TYPE_NAME[nType])
+		TONG_ApplyAddEventRecord(nTongID, "Môc tiªu tuÇn nµy: "..TB_WEEKGOAL_TYPE_NAME[nType]);	-- Bang héiÊÂ¼ş¼ÇÂ¼
+		Msg2Tong(nTongID, "±¾ÖÜµÄBang héiÖÜÄ¿±êÎª£º<color=green>"..TB_WEEKGOAL_TYPE_NAME[nType])
 	end
 	return 1
 end
@@ -266,7 +266,7 @@ function Maintain_Stunt(nTongID, nStuntID)
 		TONG_ApplySetTaskValue(nTongID, TONGTSK_STUNT_PAUSE, TB_STUNT_PAUSESTATE[nStuntState][4])
 		local nCurFund = TONG_GetWarBuildFund(nTongID)
 		if (nCurFund < TB_STUNTID_INFO[nStuntID].consume) then
-			local szMsg = "Õ½±¸»ù½ğ²»×ãÒÔÎ¬»¤°ï»áÌØ¼¼£¬±¾ÖÜ°ï»áÌØ¼¼ÔİÍ££¡"
+			local szMsg = "Ng©n s¸ch chiÕn bŞ²»×ãÒÔÎ¬»¤Bang héiÌØ¼¼£¬±¾ÖÜBang héiÌØ¼¼ÔİÍ££¡"
 			Msg2Tong(nTongID, szMsg)
 			TONG_ApplyAddEventRecord(nTongID, szMsg)
 			TONG_ApplySetTaskValue(nTongID, TONGTSK_STUNT_ENABLED, 0)
@@ -274,16 +274,16 @@ function Maintain_Stunt(nTongID, nStuntID)
 			TONG_ApplyAddWarBuildFund(nTongID, -TB_STUNTID_INFO[nStuntID].consume)
 			if (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ENABLED) == 0) then
 				TONG_ApplySetTaskValue(nTongID, TONGTSK_STUNT_ENABLED, 1)
-				local szMsg = "Õ½±¸»ù½ğÒÑ´ï°ï»áÌØ¼¼Î¬»¤ÒªÇó£¬°ï»áÌØ¼¼ÔİÍ£×´Ì¬½â³ı£¡"
+				local szMsg = "Ng©n s¸ch chiÕn bŞÒÑ´ïBang héiÌØ¼¼Î¬»¤ÒªÇó£¬Bang héiÌØ¼¼ÔİÍ£Tr¹ng th¸i ½â³ı£¡"
 				Msg2Tong(nTongID, szMsg)
 				TONG_ApplyAddEventRecord(nTongID, szMsg)
 			else
 				if (nStuntState == TB_STUNT_PAUSESTATE[nStuntState][4]) then
-					Msg2Tong(nTongID, "°ï»áÌØ¼¼Î¬»¤¼ÌĞø±£³Ö"..TB_STUNT_PAUSESTATE[nStuntState][2].."×´Ì¬")
-					TONG_ApplyAddEventRecord(nTongID, "°ï»áÌØ¼¼Î¬»¤¼ÌĞø±£³Ö"..TB_STUNT_PAUSESTATE[nStuntState][2].."×´Ì¬")
+					Msg2Tong(nTongID, "Bang héiÌØ¼¼Î¬»¤¼ÌĞø±£³Ö"..TB_STUNT_PAUSESTATE[nStuntState][2].."Tr¹ng th¸i ")
+					TONG_ApplyAddEventRecord(nTongID, "Bang héiÌØ¼¼Î¬»¤¼ÌĞø±£³Ö"..TB_STUNT_PAUSESTATE[nStuntState][2].."Tr¹ng th¸i ")
 				else
-					Msg2Tong(nTongID, "°ï»áÌØ¼¼Î¬»¤"..TB_STUNT_PAUSESTATE[nStuntState][2])
-					TONG_ApplyAddEventRecord(nTongID, "°ï»áÌØ¼¼Î¬»¤"..TB_STUNT_PAUSESTATE[nStuntState][2])
+					Msg2Tong(nTongID, "Bang héiÌØ¼¼Î¬»¤"..TB_STUNT_PAUSESTATE[nStuntState][2])
+					TONG_ApplyAddEventRecord(nTongID, "Bang héiÌØ¼¼Î¬»¤"..TB_STUNT_PAUSESTATE[nStuntState][2])
 				end
 			end
 		end
@@ -326,9 +326,9 @@ function MAINTAIN_R(nTongID)
 		nexweek = 1
 		TONG_ApplySetTaskValue(nTongID, TONGTSK_LAST_WM_DAY, nDay)
 	end
-	Msg2Tong(nTongID, "°ï»á½øÈëµÚ<color=white>"..(nDay+1).."<color>Ìì£¬Ä¿Ç°½¨Éè»ù½ğ£º<color=gold>"..
-		TONG_GetBuildFund(nTongID).."<color>Íò£¬Õ½±¸»ù½ğ£º<color=gold>"..TONG_GetWarBuildFund(nTongID)..
-		"<color>Íò")
+	Msg2Tong(nTongID, "Bang héi½øÈëh¹ng thø <color=white>"..(nDay+1).."<color>Ìì£¬Ä¿Ç°Ng©n s¸ch kiÕn thiÕt£º<color=gold>"..
+		TONG_GetBuildFund(nTongID).."<color> v¹n£¬Ng©n s¸ch chiÕn bŞ£º<color=gold>"..TONG_GetWarBuildFund(nTongID)..
+		"<color> v¹n")
 	cTongLog:WriteInfTB("TONG", "maintain", nTongID,
 						{
 						day = nDay,
@@ -339,7 +339,7 @@ function MAINTAIN_R(nTongID)
 						warbuildfund = TONG_GetWarBuildFund(nTongID),
 						storedoffer = TONG_GetStoredOffer(nTongID),
 						}	)
-	--°ï»á0¼¶Ê±²»ÏûºÄ
+	--Bang héi0cÊpÊ±²»ÏûºÄ
 	local nTongLevel = TONG_GetBuildLevel(nTongID)
 	if (nTongLevel > 0)then
 		--×÷·»Î¬»¤
@@ -353,60 +353,60 @@ function MAINTAIN_R(nTongID)
 					and nUseLevelSet <= tongGetWorkshopUpperLevel(nTongID, nTongLevel) then
 					TWS_ApplySetUseLevel(nTongID, nWS, nUseLevelSet)
 					local nType = TWS_GetType(nTongID, nWS)
-					Msg2Tong(nTongID, "<color=green>"..wsGetName(nType).."<color>Ê¹ÓÃµÈ¼¶µ÷ÕûÎª<color=blue>"..nUseLevelSet..
-						"<color>¼¶")
+					Msg2Tong(nTongID, "<color=green>"..wsGetName(nType).."<color>§¼ng cÊp sö dông ®iÒu chØnh thµnh cÊp<color=blue>"..nUseLevelSet..
+						"<color>")
 				end
 			end
 			TWS_ApplyMaintain(nTongID, nWS)
 			nWS = TWS_GetNextWorkshop(nTongID, nWS)
 		end
-		--ÅĞ¶ÏÔİÍ£×´Ì¬
+		--ÅĞ¶ÏÔİÍ£Tr¹ng th¸i 
 		local nCurFund = TONG_GetWarBuildFund(nTongID)
 		if (TONG_GetPauseState(nTongID) ~= 0)then
 			if (nCurFund >= TONG_GetStandFund(nTongID))then
 				TONG_ApplySetPauseState(nTongID, 0)
-				TONG_ApplyAddEventRecord(nTongID, "Õ½±¸»ù½ğÒÑ´ï°ï»áÖÜÎ¬»¤Õ½±¸»ù½ğÒªÇó£¬ °ï»áÔİÍ£×´Ì¬½â³ı!");	-- °ï»áÊÂ¼ş¼ÇÂ¼
-				Msg2Tong(nTongID, "Õ½±¸»ù½ğÒÑ´ï°ï»áÖÜÎ¬»¤Õ½±¸»ù½ğÒªÇó£¬ °ï»áÔİÍ£×´Ì¬½â³ı£¡")
+				TONG_ApplyAddEventRecord(nTongID, "Ng©n s¸ch chiÕn bŞÒÑ´ïBang héiÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞÒªÇó£¬ Bang héiÔİÍ£Tr¹ng th¸i ½â³ı!");	-- Bang héiÊÂ¼ş¼ÇÂ¼
+				Msg2Tong(nTongID, "Ng©n s¸ch chiÕn bŞÒÑ´ïBang héiÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞÒªÇó£¬ Bang héiÔİÍ£Tr¹ng th¸i ½â³ı£¡")
 				cTongLog:WriteInfTB("TONG", "unpause", nTongID, {})
 			end
 		elseif (nCurFund < TONG_GetStandFund(nTongID)) then
 			TONG_ApplySetPauseState(nTongID, 1)
-			TONG_ApplyAddEventRecord(nTongID, "±¾°ïµÄ×÷·»ÒòÕ½±¸»ù½ğ²»×ãÖÜÎ¬»¤Õ½±¸»ù½ğ¶øÔİÍ£");	-- °ï»áÊÂ¼ş¼ÇÂ¼
-			Msg2Tong(nTongID, "Õ½±¸»ù½ğÒÑµÍÓÚ°ï»áÖÜÎ¬»¤Õ½±¸»ù½ğ£¬ °ï»á×´Ì¬Îª<color=red>ÔİÍ££¡")
+			TONG_ApplyAddEventRecord(nTongID, "±¾°ïµÄ×÷·»ÒòNg©n s¸ch chiÕn bŞ²»×ãÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞ¶øÔİÍ£");	-- Bang héiÊÂ¼ş¼ÇÂ¼
+			Msg2Tong(nTongID, "Ng©n s¸ch chiÕn bŞÒÑµÍÓÚBang héiÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞ£¬ Bang héiTr¹ng th¸i Îª<color=red>ÔİÍ££¡")
 			cTongLog:WriteInfTB("TONG", "pause", nTongID, {})
 		end	
 		
 		local nConsume = TONG_GetMaintainFund(nTongID)
 		TONG_ApplyAddWarBuildFund(nTongID, -nConsume)		
-		TONG_ApplyAddEventRecord(nTongID, "±¾ÈÕ°ï»áÎ¬»¤£¬ÏûºÄ"..nConsume.."Íò°ï»áÕ½±¸»ù½ğ");	-- °ï»áÊÂ¼ş¼ÇÂ¼
-		Msg2Tong(nTongID, "±¾ÈÕ°ï»áÎ¬»¤£¬ÏûºÄ°ï»áÕ½±¸»ù½ğ£º<color=gold>"..nConsume.."<color>Íò")
+		TONG_ApplyAddEventRecord(nTongID, "±¾ÈÕBang héiÎ¬»¤£¬ÏûºÄ"..nConsume.." v¹nBang héiNg©n s¸ch chiÕn bŞ");	-- Bang héiÊÂ¼ş¼ÇÂ¼
+		Msg2Tong(nTongID, "±¾ÈÕBang héiÎ¬»¤£¬ÏûºÄBang héiNg©n s¸ch chiÕn bŞ£º<color=gold>"..nConsume.."<color> v¹n")
 		TONG_ApplyAddTaskValue(nTongID, TONGTSK_WEEK_WFCONSUME, nConsume)
 		nConsume = wsGetAllDayConsume(nTongID)
 		nConsume = nConsume + tongGetBaseMaintainFund(nTongID, nTongLevel)
-		Msg2Tong(nTongID, "µ±Ç°°ï»áÈÕÎ¬»¤Õ½±¸»ù½ğ£º<color=gold>"..nConsume.."Íò")
-		Msg2Tong(nTongID, "µ±Ç°°ï»áÖÜÎ¬»¤Õ½±¸»ù½ğ£º<color=gold>"..(nConsume * 7).."Íò")
+		Msg2Tong(nTongID, "µ±Ç°Bang héiÈÕÎ¬»¤Ng©n s¸ch chiÕn bŞ£º<color=gold>"..nConsume.." v¹n")
+		Msg2Tong(nTongID, "µ±Ç°Bang héiÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞ£º<color=gold>"..(nConsume * 7).." v¹n")
 		local nWarBuildFund = TONG_GetWarBuildFund(nTongID)
 		if (TONG_GetPauseState(nTongID) ~= 1 and nWarBuildFund < nConsume * 7)then
-			local szMsg = "Õ½±¸»ù½ğĞ¡ÓÚÖÜÎ¬»¤Õ½±¸»ù½ğ£¬ÏÂ´ÎÎ¬»¤Ç°Î´¸Ä±ä£¬°ï»á×÷·»½«ÔİÍ££¡"
+			local szMsg = "Ng©n s¸ch chiÕn bŞĞ¡ÓÚÖÜÎ¬»¤Ng©n s¸ch chiÕn bŞ£¬ÏÂ´ÎÎ¬»¤Ç°Î´¸Ä±ä£¬Bang héi×÷·»½«ÔİÍ££¡"
 			Msg2Tong(nTongID, szMsg)
-			TONG_ApplyAddEventRecord(nTongID, szMsg)-- °ï»áÊÂ¼ş¼ÇÂ¼
+			TONG_ApplyAddEventRecord(nTongID, szMsg)-- Bang héiÊÂ¼ş¼ÇÂ¼
 		end
 		TONG_ApplySetMaintainFund(nTongID, nConsume)
 		local nPerStandFund = floor(nConsume * 7 / TONG_GetMemberCount(nTongID, -1))
 		TONG_ApplySetPerStandFund(nTongID, nPerStandFund)
-		--Õ½±¸»ù½ğÎª0Ê±ÅĞ¶Ï½µ¼¶
+		--Ng©n s¸ch chiÕn bŞÎª0Ê±ÅĞ¶Ï½µcÊp
 --		if (nWarBuildFund == 0)then
 --		local nLastDegradeDay = TONG_GetTaskValue(nTongID, TONGTSK_LAST_DEGRADE_DAY)
 --			if (nDay - nLastDegradeDay > 7)then
 --				if TONG_ApplyDegrade(nTongID) == 1 then
 --					TONG_ApplySetTaskValue(nTongID, TONGTSK_LAST_DEGRADE_DAY, nDay)
---					local szMsg = "°ï»áÕ½±¸»ù½ğÒÑ½µÖÁ0£¬½¨ÉèµÈ¼¶ÏÂ½µÒ»¼¶£¡²¢ÇÒÔÚÒ»ÖÜÄÚ°ï»á²»»áÔÙ½µ¼¶¡£"
+--					local szMsg = "Bang héiNg©n s¸ch chiÕn bŞÒÑ½µÖÁ0£¬§¼ng cÊp kiÕn thiÕtÏÂ½µÒ»cÊp£¡²¢ÇÒÔÚÒ»ÖÜÄÚBang héi²»»áÔÙ½µcÊp¡£"
 --					Msg2Tong(nTongID, szMsg)
---					TONG_ApplyAddEventRecord(nTongID, szMsg)	-- °ï»áÊÂ¼ş¼ÇÂ¼
+--					TONG_ApplyAddEventRecord(nTongID, szMsg)	-- Bang héiÊÂ¼ş¼ÇÂ¼
 --				end	
 --			end	
 --		end
-	else	--½¨ÉèµÈ¼¶Îª0
+	else	--§¼ng cÊp kiÕn thiÕtÎª0
 		if (TONG_GetMaintainFund(nTongID) > 0) then
 			TONG_ApplySetMaintainFund(nTongID, 0)
 		end	
@@ -420,10 +420,10 @@ function MAINTAIN_R(nTongID)
 	Master_SelfCommend_Maintain(nTongID);
 	
 	--Ã¿7Ìì½øĞĞÖÜÎ¬»¤
-	--µ±Ä³´ÎµÄÖÜÎ¬»¤ÓÉÓÚÒì³£Ã»ÓĞÕı³£½øĞĞ£¬µÚ¶şÌì»á¼ÌĞø´¥·¢ÖÜÎ¬»¤
+	--µ±Ä³´ÎµÄÖÜÎ¬»¤ÓÉÓÚÒì³£Ã»ÓĞÕı³£½øĞĞ£¬h¹ng thø ¶şÌì»á¼ÌĞø´¥·¢ÖÜÎ¬»¤
 	if (nexweek) then
 		TONG_ApplyWeeklyMaintain(nTongID)
-		Msg2Tong(nTongID, "±¾°ï½øÈë°ï»á½¨ÉèµÚ<color=white>"..(nWeek+1).."<color>ÖÜ")
+		Msg2Tong(nTongID, "±¾°ï½øÈëBang héi½¨Éèh¹ng thø <color=white>"..(nWeek+1).."<color>.")
 	end
 	
 	--ÌØ¼¼Î¬»¤
@@ -521,25 +521,25 @@ function UPGRADE_R(nTongID)
 	local nCurLevel = TONG_GetBuildLevel(nTongID)
 	TONG_ApplySetTaskValue(nTongID, TASKID_LAST_LEVELUP_DAY, TONG_GetDay(nTongID))
 
-	-- °ï»áÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
-	local szRecord = "°ï»á½¨ÉèµÈ¼¶ÉıÖÁ"..(nCurLevel + 1).."¼¶";
+	-- Bang héiÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
+	local szRecord = "Bang héi§¼ng cÊp kiÕn thiÕtÉıÖÁ"..(nCurLevel + 1).."cÊp";
 	local szRecordPlus;
 	local szExecutorName = TONGM_GetName(nTongID, ExecutorId);
 	if (szExecutorName ~= "") then
-		szRecordPlus = szExecutorName.." ½«"..szRecord;
+		szRecordPlus = szExecutorName.." lµm cho"..szRecord;
 	else
 		szExecutorName = "";
 		szRecordPlus = szRecord;
 	end
-	TONG_ApplyAddHistoryRecord(nTongID, szRecordPlus);	-- °ï»áÀúÊ·¼ÇÂ¼
-	TONG_ApplyAddEventRecord(nTongID, szRecordPlus);	-- °ï»áÊÂ¼ş¼ÇÂ¼
+	TONG_ApplyAddHistoryRecord(nTongID, szRecordPlus);	-- Bang héiÀúÊ·¼ÇÂ¼
+	TONG_ApplyAddEventRecord(nTongID, szRecordPlus);	-- Bang héiÊÂ¼ş¼ÇÂ¼
 	Msg2Tong(nTongID, szRecordPlus);
 	cTongLog:WriteInfTB("TONG", "upgrade", nTongID, {buildlevel = (nCurLevel + 1), day = TONG_GetDay(nTongID)})
-	--0¼¶Éıµ½Ò»¼¶Ê±ÌáÊ¾
+	--0cÊpÉıµ½Ò»cÊpÊ±ÌáÊ¾
 	if (nCurLevel == 0)then
-		local szMsg = "°ï»á½¨ÉèµÈ¼¶ÒÑÉıµ½1¼¶£¬¼ÀÌ³·¢·Å¹±Ï×¶È¹¦ÄÜ¿ªÆô";
+		local szMsg = "Bang héi§¼ng cÊp kiÕn thiÕtÒÑÉıµ½1cÊp£¬¼ÀÌ³·¢·Å¹±Ï×¶È¹¦ÄÜ¿ªÆô";
 		Msg2Tong(nTongID, szMsg);
-		TONG_ApplyAddEventRecord(nTongID, szMsg);	-- °ï»áÊÂ¼ş¼ÇÂ¼
+		TONG_ApplyAddEventRecord(nTongID, szMsg);	-- Bang héiÊÂ¼ş¼ÇÂ¼
 	end
 	if (nCurLevel == 4) then
 		local nCitySTID = tong_GetCityStuntID(nTongID)
@@ -556,7 +556,7 @@ function UPGRADE_R(nTongID)
 			end
 		end
 	end
-	--Éı¼¶°ï»áÃû´Î¼ÇÂ¼
+	--ÉıcÊpBang héiÃû´Î¼ÇÂ¼
 	local nNowLevel = nCurLevel + 1;
 	if (nNowLevel == 2 or nNowLevel == 4) then
 		local nOrder = gb_GetTask("TONG_LVL_UP_ORDER", nNowLevel) + 1
@@ -572,28 +572,28 @@ function UPGRADE_G_1(nTongID)
 	if (nRet == 0)then
 		return 1
 	elseif (nRet == 1)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶Éıµ½ÏÂÒ»¼¶ĞèÒª½¨ÉèÓĞ<color=yellow>"..rt_1.."<color>¸ö×÷·»")
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÉıµ½ÏÂÒ»cÊpĞèÒª½¨ÉèÓĞ<color=yellow>"..rt_1.."<color> T¸c Ph­êng")
 	elseif (nRet == 2)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶Éıµ½ÏÂÒ»¼¶ĞèÒª×÷·»ÖĞÓĞ<color=yellow>"..rt_1.."<color>¸ö´ïµ½<color=green>"..rt_2.."<color>¼¶")
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÉıµ½ÏÂÒ»cÊpĞèÒª×÷·»ÖĞÓĞ<color=yellow>"..rt_1.."<color> ®¹t <color=green>"..rt_2.."<color>")
 	elseif (nRet == 3)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶Éıµ½ÏÂÒ»¼¶ĞèÒª½¨Éè»ù½ğ<color=gold>£º"..rt_1.."Íò")
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÉıµ½ÏÂÒ»cÊpĞèÒªNg©n s¸ch kiÕn thiÕt<color=gold>£º"..rt_1.." v¹n")
 	elseif (nRet == 4)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶ÌáÉıÖÁÉÙÒª¼ä¸ôÒ»ÖÜ£¡")
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÌáÉıÖÁÉÙÒª¼ä¸ôÒ»ÖÜ£¡")
 	elseif (nRet == 5)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶ÒÑ´ï×î¸ßµÈ¼¶£¡")
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÒÑ´ï×î¸ßµÈcÊp£¡")
 	elseif (nRet == 6)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶Éıµ½3¼¶ĞèÒªÓĞ¶ÀÁ¢°ï»áµØÍ¼£¡")		
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÉıµ½3cÊpĞèÒªÓĞ¶ÀÁ¢Bang héiµØÍ¼£¡")		
 	elseif (nRet == 7)then
-		Msg2Player("°ï»á½¨ÉèµÈ¼¶Éıµ½5¼¶ĞèÕ¼ÁìÒ»¸ö³ÇÊĞ£¡")				
+		Msg2Player("Bang héi§¼ng cÊp kiÕn thiÕtÉıµ½5cÊpĞèÕ¼ÁìÒ»¸ö³ÇÊĞ£¡")				
 	end	
 	return 0	
 end
 --UPGRADE_G_2 = DefFun1
 --//////////////////
---Éı¼¶ºó½¨ÉèµÈ¼¶´ïµ½4¡¢5¼¶£¬°ï»áÓµÓĞÍ¼ÌÚÖ®Öù
+--ÉıcÊpºó§¼ng cÊp kiÕn thiÕt´ïµ½4¡¢5cÊp£¬Bang héiÓµÓĞÍ¼ÌÚÖ®Öù
 --//////////////////
 function UPGRADE_G_2(nTongID)
---´ËÊ±»ñµÃµÄ½¨ÉèµÈ¼¶£¿Éı¼¶Ç°£¿Éı¼¶ºó£¿´Ë´¦ÔİÒÔÉı¼¶ºó´¦Àí
+--´ËÊ±»ñµÃµÄ§¼ng cÊp kiÕn thiÕt£¿ÉıcÊpÇ°£¿ÉıcÊpºó£¿´Ë´¦ÔİÒÔÉıcÊpºó´¦Àí
 	local nCurLevel = TONG_GetBuildLevel(nTongID) + 1
 	local nMap = TONG_GetTongMap(nTongID)
 	local nMapIndex = SubWorldID2Idx(nMap)
@@ -604,11 +604,11 @@ function UPGRADE_G_2(nTongID)
 			return 0
 		end
 		if (nCurLevel == 4) then
-			ClearMapNpcWithName(nMap, "°ï»áÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
-			local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "°ï»áÍ¼ÌÚÖ®Öù")--ÓÒ
+			ClearMapNpcWithName(nMap, "Bang héiÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
+			local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "Bang héiÍ¼ÌÚÖ®Öù")--ÓÒ
 			TONG_ApplySetTaskValue(nTongID, TONGTSK_TOTEMINDEX[1], nNpcIndex1)
 			SetNpcScript(nNpcIndex1, "\\script\\tong\\npc\\tong_totempole.lua")
-			local nNpcIndex2 = AddNpc(1192, 1, nMapIndex, TB_TOTEMPOLE_POS[2][1] * 32, TB_TOTEMPOLE_POS[2][2] * 32, 1, "°ï»áÍ¼ÌÚÖ®Öù")--×ó
+			local nNpcIndex2 = AddNpc(1192, 1, nMapIndex, TB_TOTEMPOLE_POS[2][1] * 32, TB_TOTEMPOLE_POS[2][2] * 32, 1, "Bang héiÍ¼ÌÚÖ®Öù")--×ó
 			TONG_ApplySetTaskValue(nTongID, TONGTSK_TOTEMINDEX[2], nNpcIndex2)
 			SetNpcScript(nNpcIndex2, "\\script\\tong\\npc\\tong_totempole.lua")
 			local nStuntID = TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ID)
@@ -617,11 +617,11 @@ function UPGRADE_G_2(nTongID)
 				AddNpcSkillState(nNpcIndex2, TB_STUNTID_INFO[nStuntID].skillid, 1, 1, 18*60*60*24*30)
 			end
 		elseif (nCurLevel == 5) then
-			ClearMapNpcWithName(nMap, "°ï»áÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
-			local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "°ï»áÍ¼ÌÚÖ®Öù")--ÓÒ
+			ClearMapNpcWithName(nMap, "Bang héiÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
+			local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "Bang héiÍ¼ÌÚÖ®Öù")--ÓÒ
 			TONG_ApplySetTaskValue(nTongID, TONGTSK_TOTEMINDEX[1], nNpcIndex1)
 			SetNpcScript(nNpcIndex1, "\\script\\tong\\npc\\tong_totempole.lua")
-			local nNpcIndex2 = AddNpc(1192, 1, nMapIndex, TB_TOTEMPOLE_POS[2][1] * 32, TB_TOTEMPOLE_POS[2][2] * 32, 1, "³ÇÊĞÍ¼ÌÚÖ®Öù")--×ó
+			local nNpcIndex2 = AddNpc(1192, 1, nMapIndex, TB_TOTEMPOLE_POS[2][1] * 32, TB_TOTEMPOLE_POS[2][2] * 32, 1, "Cét biÓu t­îng thµnh th")--×ó
 			TONG_ApplySetTaskValue(nTongID, TONGTSK_TOTEMINDEX[2], 0)
 			SetNpcScript(nNpcIndex2, "\\script\\tong\\npc\\city_totempole.lua")
 			local nStuntID = TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ID)
@@ -651,17 +651,17 @@ function DEGRADE_R(nTongID)
 	end	
 	local nWorkshop = TWS_GetFirstWorkshop(nTongID)
 	local nWsUpperLevel = tongGetWorkshopUpperLevel(nTongID, nCurLevel - 1)
-	--µ÷ÕûËùÓĞ×÷·»Ê¹ÓÃµÈ¼¶
+	--µ÷ÕûËùÓĞ×÷·»Ê¹ÓÃµÈcÊp
 	while(nWorkshop ~= 0)do
 		if (TWS_GetUseLevel(nTongID, nWorkshop) > nWsUpperLevel)then
 			TWS_ApplySetUseLevel(nTongID, nWorkshop, nWsUpperLevel)
 		end
 		nWorkshop = TWS_GetNextWorkshop(nTongID, nWorkshop)
 	end
-	-- °ï»áÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
-	local szRecord = "°ï»á½¨ÉèµÈ¼¶½µÖÁ"..(nCurLevel - 1).."¼¶";
-	TONG_ApplyAddHistoryRecord(nTongID, szRecord);		-- °ï»áÀúÊ·¼ÇÂ¼
-	TONG_ApplyAddEventRecord(nTongID, szRecord);		-- °ï»áÊÂ¼ş¼ÇÂ¼
+	-- Bang héiÀúÊ·/ÊÂ¼ş¼ÇÂ¼¡¢Í¨Öª
+	local szRecord = "Bang héi§¼ng cÊp kiÕn thiÕt½µÖÁ"..(nCurLevel - 1).."cÊp";
+	TONG_ApplyAddHistoryRecord(nTongID, szRecord);		-- Bang héiÀúÊ·¼ÇÂ¼
+	TONG_ApplyAddEventRecord(nTongID, szRecord);		-- Bang héiÊÂ¼ş¼ÇÂ¼
 	cTongLog:WriteInfTB("TONG", "degrade", nTongID, {buildlevel = (nCurLevel - 1), day = TONG_GetDay(nTongID)})
 	return 1
 end
@@ -675,17 +675,17 @@ function DEGRADE_G_1(nTongID)
 end
 --DEGRADE_G_2 = DefFun1
 function DEGRADE_G_2(nTongID)
---´ËÊ±»ñµÃµÄ½¨ÉèµÈ¼¶£¿Éı¼¶Ç°£¿Éı¼¶ºó£¿´Ë´¦ÔİÒÔÉı¼¶ºó´¦Àí
+--´ËÊ±»ñµÃµÄ§¼ng cÊp kiÕn thiÕt£¿ÉıcÊpÇ°£¿ÉıcÊpºó£¿´Ë´¦ÔİÒÔÉıcÊpºó´¦Àí
 	local nCurLevel = TONG_GetBuildLevel(nTongID) - 1
 	local nMap = TONG_GetTongMap(nTongID)
 	local nMapIndex = SubWorldID2Idx(nMap)
 	if (nMapIndex < 0) then
 		return 1
 	end
-	if (nCurLevel == 4) then	--5¼¶½µÖÁ4¼¶Ê±£¬Í¼ÌÚÒª±äÉíµÄ
-		ClearMapNpcWithName(nMap, "°ï»áÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
-		ClearMapNpcWithName(nMap, "³ÇÊĞÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
-		local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "°ï»áÍ¼ÌÚÖ®Öù")--ÓÒ
+	if (nCurLevel == 4) then	--5cÊp½µÖÁ4cÊpÊ±£¬Í¼ÌÚÒª±äÉíµÄ
+		ClearMapNpcWithName(nMap, "Bang héiÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
+		ClearMapNpcWithName(nMap, "Cét biÓu t­îng thµnh th");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
+		local nNpcIndex1 = AddNpc(1191, 1, nMapIndex, TB_TOTEMPOLE_POS[1][1] * 32, TB_TOTEMPOLE_POS[1][2] * 32, 1, "Bang héiÍ¼ÌÚÖ®Öù")--ÓÒ
 		TONG_ApplySetTaskValue(nTongID, TONGTSK_TOTEMINDEX[1], nNpcIndex1)
 		SetNpcScript(nNpcIndex1, "\\script\\tong\\npc\\tong_totempole.lua")
 		local nNpcIndex2 = AddNpc(1192, 1, nMapIndex, TB_TOTEMPOLE_POS[2][1] * 32, TB_TOTEMPOLE_POS[2][2] * 32, 1, "Cét biÓu t­îng bang héi")--×ó
@@ -696,8 +696,8 @@ function DEGRADE_G_2(nTongID)
 			AddNpcSkillState(nNpcIndex1, TB_STUNTID_INFO[nStuntID].skillid, 1, 1, 18*60*60*24*30)
 			AddNpcSkillState(nNpcIndex2, TB_STUNTID_INFO[nStuntID].skillid, 1, 1, 18*60*60*24*30)
 		end
-	elseif (nCurLevel == 3) then	--½µÖÁ3¼¶Ê±£¬¾ÍÃ»ÓĞÍ¼ÌÚÁË
-		ClearMapNpcWithName(nMap, "°ï»áÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
+	elseif (nCurLevel == 3) then	--½µÖÁ3cÊpÊ±£¬¾ÍÃ»ÓĞÍ¼ÌÚÁË
+		ClearMapNpcWithName(nMap, "Bang héiÍ¼ÌÚÖ®Öù");	--É¾³ıÄ³¸öµØÍ¼IDÉÏµÄ£¬Ä³¸öÃû×ÖµÄNPC
 	end
 	return 1
 end
@@ -719,7 +719,7 @@ function TONGCLAIMWAR_R(nTongID, nDestTongID)
 	local nTimes = TONG_GetTaskValue(nTongID, TONGTSK_CLAIMWAR_TIMES);
 	local nCurTimes = nTimes + 1;
 	
-	local nCostMoneyFund = 0;	--µ¥Î»:Íò
+	local nCostMoneyFund = 0;	--µ¥Î»: v¹n
 	if (nCurTimes == 1) then
 		nCostMoneyFund = 5000;
 	elseif (nCurTimes == 2) then
@@ -731,7 +731,7 @@ function TONGCLAIMWAR_R(nTongID, nDestTongID)
 	end;
 	
 	if (TONG_ApplyAddMoney(nTongID, -(nCostMoneyFund*10000)) ~= 1) then	
-		Msg2Player("°ï»áĞûÕ½Ğè½ÉÄÉ"..nCostMoneyFund.."Íò°ï»á×Ê½ğ£¡");
+		Msg2Player("Bang héiĞûÕ½Ğè½ÉÄÉ"..nCostMoneyFund.." v¹nBang héi×Ê½ğ£¡");
 		return 0;
 	end;
 	
@@ -739,25 +739,25 @@ function TONGCLAIMWAR_R(nTongID, nDestTongID)
 	TONG_ApplySetTaskValue(nTongID, TONGTSK_CLAIMWAR_TIMES, nCurTimes);
 	
 	local szDestTongName = GetTongNameByID(nDestTongID);
-	local szTongMsg = "°ïÖ÷¶Ô"..szDestTongName.."°ï»áĞûÕ½ÁË£¡";
+	local szTongMsg = "Bang chñ  ®· tuyªn chiÕn bang héi"..szDestTongName.."Bang héiĞûÕ½ÁË£¡";
 	Msg2Tong(nTongID, szTongMsg);
 	TONG_ApplyAddEventRecord(nTongID, szTongMsg);
 	return 1;
 end
 
 function TONGCLAIMWAR_G_1(nTongID, nDestTongID)
-	-- ´ò¿ª°ï»áĞûÕ½Modifiled NgaVN - 20111124
+	-- ´ò¿ªBang héiĞûÕ½Modifiled NgaVN - 20111124
 --	do
 --		return
 --	end
 	
 	if (nTongID == nDestTongID) then
-		Msg2Player("Äú²»ÄÜ¶Ô×Ô¼º°ï»áĞûÕ½£¡");
+		Msg2Player("Äú²»ÄÜ¶Ô×Ô¼ºBang héiĞûÕ½£¡");
 		return 0;
 	end;
 	
 	local szDoFunc = "/#DO_TONGCLAIMWAR_G_1("..nTongID..","..nDestTongID..")"
-	Say("ÄúÈ·¶¨ÒªĞûÕ½Âğ£¿",2,"ÎÒÈ·¶¨"..szDoFunc, "ÎÒÔÙÏëÒ»Ïë/cancel")
+	Say("X¸c nhËn muèn tuyªn chiÕn?",2,"X¸c nhËn"..szDoFunc, "§Ó ta suy nghÜ l¹i/cancel")
 end
 
 function DO_TONGCLAIMWAR_G_1(nTongID, nDestTongID)
@@ -774,7 +774,7 @@ function DO_TONGCLAIMWAR_G_1(nTongID, nDestTongID)
 	end;
 	
 	nCurTimes = nTimes + 1;	
-	local nCostMoneyFund = 0;	--µ¥Î»:Íò
+	local nCostMoneyFund = 0;	--µ¥Î»: v¹n
 	if (nCurTimes == 1) then
 		nCostMoneyFund = 5000;
 	elseif (nCurTimes == 2) then
@@ -786,13 +786,13 @@ function DO_TONGCLAIMWAR_G_1(nTongID, nDestTongID)
 	end;
 	
 	if (TONG_GetMoney(nTongID) < nCostMoneyFund * 10000) then
-		Msg2Player("°ï»áĞûÕ½ĞèĞè½»ÄÉ"..nCostMoneyFund.."Íò°ï»á×Ê½ğ£¡");
+		Msg2Player("Bang héiĞûÕ½ĞèĞè½»ÄÉ"..nCostMoneyFund.." v¹nBang héi×Ê½ğ£¡");
 		return 0;
 	end;	
 	
 	--ÔÚrelayÄÇÉèÖÃ
 --	TONG_ApplySetTaskValue(nTongID, TONGTSK_CLAIMWAR_TIMES, nCurTimes);	
--- È·¶¨°ï»áĞûÕ½Modifiled AnhHH - 20111110
+-- È·¶¨Bang héiĞûÕ½Modifiled AnhHH - 20111110
 	TongClaimWar(nDestTongID);
 	return 1;
 end
@@ -810,7 +810,7 @@ function ClaimWar_Death_Process(nAttackerIndex)
 	local szAttackPlayer = GetNpcName(nAttackerIndex);
 	local szDestTong     = GetNpcTong(nAttackerIndex);
 	
-	local szMsg = format("%s°ï»áµÄ%sÉ±ËÀÁË%s°ï»áµÄ%s", szDestTong, szAttackPlayer, szTong, GetName());
+	local szMsg = format("%sBang héiµÄ%sÉ±ËÀÁË%sBang héiµÄ%s", szDestTong, szAttackPlayer, szTong, GetName());
 	Msg2SubWorld(szMsg);
 end
 
@@ -825,21 +825,21 @@ function CHANGECAMP_R(nTongID, nCamp)
 		return 0;
 	end
 	if (TONG_GetUnionID(nTongID) ~= 0) then
-		Msg2PlayerByName(szExecutorName, "°ï»áÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
+		Msg2PlayerByName(szExecutorName, "Bang héiÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
 		return 0;
 	end
 --	if (TONG_GetWarState(nTongID) ~= 0) then
---		Msg2PlayerByName(szExecutorName, "¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±ä°ï»áÕóÓª£¡");
+--		Msg2PlayerByName(szExecutorName, "¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±äBang héiÕóÓª£¡");
 --		return 0;
 --	end
 	
-	local nCostMoneyFund = 100;	-- µ¥Î»£ºÍò Ó¦Ô½ÄÏÈËÒªÇó¸ÄÎª100W by Zhi Dong
+	local nCostMoneyFund = 100;	-- µ¥Î»£º v¹n Ó¦Ô½ÄÏÈËÒªÇó¸ÄÎª100W by Zhi Dong
 	if (TONG_ApplyAddMoney(nTongID, -(nCostMoneyFund*10000)) ~= 1) then
 		local szExecutorName = TONGM_GetName(nTongID, ExecutorId);
-		Msg2PlayerByName(szExecutorName, "¸ü¸Ä°ï»áÕóÓªĞè½»ÄÉ"..nCostMoneyFund.."Íò°ï»á×Ê½ğ£¡");
+		Msg2PlayerByName(szExecutorName, "¸ü¸ÄBang héiÕóÓªĞè½»ÄÉ"..nCostMoneyFund.." v¹nBang héi×Ê½ğ£¡");
 		return 0;
 	end
-	Msg2Tong(nTongID, "°ïÖ÷¸Ä±ä±¾°ïÃÅÅÉ! ");
+	Msg2Tong(nTongID, "Bang chñ thay ®æi phe ph¸i cña bæn bang! ");
 	cTongLog:WriteInfTB("TONG", "changecamp", nTongID, {camp = nCamp, camp_old = nCurCamp})
 	return 1;
 end
@@ -853,16 +853,16 @@ function CHANGECAMP_G_1(nTongID, nCamp)
 		return 0;
 	end
 	if (TONG_GetUnionID(nTongID) ~= 0) then
-		Msg2Player("°ï»áÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
+		Msg2Player("Bang héiÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
 		return 0;
 	end
 --	if (TONG_GetWarState(nTongID) ~= 0) then
---		Msg2Player("¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±ä°ï»áÕóÓª£¡");
+--		Msg2Player("¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±äBang héiÕóÓª£¡");
 --		return 0;
 --	end
-	local nCostMoneyFund = 100; -- µ¥Î»£ºÍò Ó¦Ô½ÄÏÈËÒªÇó¸Ä??100W by Zhi Dong
+	local nCostMoneyFund = 100; -- µ¥Î»£º v¹n Ó¦Ô½ÄÏÈËÒªÇó¸Ä??100W by Zhi Dong
 	if (TONG_GetMoney(nTongID) < nCostMoneyFund*10000) then
-		Msg2Player("¸ü¸Ä°ï»áÕóÓªĞè½»ÄÉ"..nCostMoneyFund.."Íò°ï»á×Ê½ğ£¡");
+		Msg2Player("¸ü¸ÄBang héiÕóÓªĞè½»ÄÉ"..nCostMoneyFund.." v¹nBang héi×Ê½ğ£¡");
 		return 0;
 	end
 	return 1;
@@ -881,11 +881,11 @@ function Master_SelfCommend_Maintain(nTongID)
 		return
 	end
 	
-	Msg2Tong(nTongID, "°ïÖ÷×Ô¼ö¾ºÍ¶ÆÚÒÑ¾­½áÊø");
-	TONG_ApplyAddEventRecord(nTongID, "°ïÖ÷×Ô¼ö¾ºÍ¶ÆÚÒÑ¾­½áÊø");
+	Msg2Tong(nTongID, "Thêi gian tù tiÕn cö ®· kÕt thóc");
+	TONG_ApplyAddEventRecord(nTongID, "Thêi gian tù tiÕn cö ®· kÕt thóc");
 	local bRetireLoop = 0;
 	local nMemberID  = TONG_GetFirstMember(nTongID, -1);
-	--±£´æÇ°3Ãû£¬ÊôĞÔ·Ö±ğÎª³ÉÔ±ID,¾ºÍ¶Êı£¬¾ºÍ¶ÈÕÆÚ
+	--±£´æÇ°3Ãû£¬ÊôĞÔ·Ö±ğÎª³ÉÔ±ID,¾ºÍ¶Êı£¬¾ºÍ¶Ngµy
 	tbForecontributiveness = 
 	{ 
 		{0, 0, dwCurrTime}, 
@@ -926,7 +926,7 @@ function Master_SelfCommend_Maintain(nTongID)
 		if (bRetireLoop == 0) then
 			nMemberID = TONG_GetNextMember(nTongID, nMemberID, -1);	--±éÀúÏÂÒ»¸ö³ÉÔ±
 			if (nMemberID == 0) then
-				nMemberID = TONG_GetFirstMember(nTongID, 4);		--±éÀúµÚÒ»¸öÒşÊ¿
+				nMemberID = TONG_GetFirstMember(nTongID, 4);		--±éÀúh¹ng thø Ò»¸öÒşÊ¿
 				bRetireLoop = 1;
 			end
 		else
@@ -940,7 +940,7 @@ function Master_SelfCommend_Maintain(nTongID)
 		if (tbForecontributiveness[i][1] ~= 0 and tbForecontributiveness[i][2] ~= 0) then
 			local szMember = TONGM_GetName(nTongID, tbForecontributiveness[i][1])
 			local szDateTime = FormatTime2String(tbForecontributiveness[i][3])
-			local szMsg = "µÚ"..i.."Ãû£º"..szMember.." ¾ºÍ¶Êı£º"..tostring(tbForecontributiveness[i][2]).." ¾ºÍ¶ÈÕÆÚ£º"..szDateTime;
+			local szMsg = "h¹ng thø "..i.." "..szMember.." Sè tranh cö: "..tostring(tbForecontributiveness[i][2]).." ¾ºÍ¶Ngµy£º"..szDateTime;
 			Msg2Tong(nTongID, szMsg)
 			TONG_ApplyAddEventRecord(nTongID, szMsg)
 		end
@@ -948,13 +948,13 @@ function Master_SelfCommend_Maintain(nTongID)
 	
 	--ÉèÖÃĞÂµÄ°ïÖ÷
 	if (tbForecontributiveness[1][1] == 0) then
-			Msg2Tong(nTongID, "Õâ´Î°ïÖ÷Ñ¡¾ÙÃ»ÓĞ·ûºÏÌõ¼şµÄ¾ºÑ¡ÈË,Ğû¸æÊ§°Ü.");
+			Msg2Tong(nTongID, "LÇn tranh cö chøc bang chñ nµy kh«ng chän ®­îc ng­êi thİch hîp.");
 	else
 		if (TONG_GetFirstMember(nTongID, 0) == tbForecontributiveness[1][1] or
 			SetTongMaster(nTongID, tbForecontributiveness[1][1]) == 1) then
 			local szMember = TONGM_GetName(nTongID, tbForecontributiveness[1][1]);
-			Msg2Tong(nTongID, "×Ô¼öµÃ³öµÄĞÂ°ïÖ÷Îª"..tostring(szMember).."ËûµÄ¾ºÍ¶ÊıÎª£º"..tostring(tbForecontributiveness[1][2]));
-			TONG_ApplyAddHistoryRecord(nTongID, "×Ô¼öµÃ³öµÄĞÂ°ïÖ÷Îª"..tostring(szMember).."ËûµÄ¾ºÍ¶ÊıÎª£º"..tostring(tbForecontributiveness[1][2]));
+			Msg2Tong(nTongID, "Bang chñ nhiÖm vŞ míi cña bang sÏ lµ "..tostring(szMember).."Sè ®iÓm tranh cö cña bang chñ míi lµ: "..tostring(tbForecontributiveness[1][2]));
+			TONG_ApplyAddHistoryRecord(nTongID, "Bang chñ nhiÖm vŞ míi cña bang sÏ lµ "..tostring(szMember).."Sè ®iÓm tranh cö cña bang chñ míi lµ: "..tostring(tbForecontributiveness[1][2]));
 		else
 			local tbMsg = {
 				masterid     = tbForecontributiveness[1][1]
@@ -974,11 +974,11 @@ end
 --		return 0;
 --	end
 --	if (TONG_GetUnionID(nTongID) ~= 0) then
---		Msg2Player("°ï»áÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
+--		Msg2Player("Bang héiÁªÃËÖĞ£¬²»ÄÜĞŞ¸ÄÕóÓª£¡");
 --		return 0;
 --	end
 --	if (TONG_GetWarState(nTongID) ~= 0) then
---		Msg2Player("¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±ä°ï»áÕóÓª£¡");
+--		Msg2Player("¹¥³ÇÕ½½×¶Î²»ÄÜ¸Ä±äBang héiÕóÓª£¡");
 --		return 0;
 --	end
 --	return 1;

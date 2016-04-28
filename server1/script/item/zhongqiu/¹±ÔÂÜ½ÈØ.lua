@@ -1,6 +1,6 @@
 --Create by mengfan ,2004-9-14
 --¹±ÔÂÜ½ÈØ
---×÷ÓÃ£ºÖÐÇï¸ß¼¶ÔÂ±ýÖ®Ò»£¬×÷ÓÃÍ¬Ï´Ëè¾­£¬80¼¶ÒÔÉÏÍæ¼ÒÊ¹ÓÃ£¬Ôö¼Ó5µãÇ±ÄÜµã¡£
+--×÷ÓÃ£ºÖÐÇï¸ß¼¶ÔÂ±ýÖ®Ò»£¬×÷ÓÃÍ¬Ï´Ëè¾­£¬80¼¶ÒÔÉÏNg­êi ch¬iÊ¹ÓÃ£¬Ôö¼Ó5µãÇ±ÄÜµã¡£
 --»ñµÃÌõ¼þ£º¼¯Æë»ñµÃ´ËÎïÆ·ËùÐèÒªµÄËùÓÐµ¥×Ö¡£
 --ÏÞÖÆËµÃ÷£º¸ÃÎïÆ·ÒªÇóÈËÎïµÈ¼¶80¼¶Ê±Ê¹ÓÃÓÐÐ§£¬Ã¿ÈË×î¶àÊ¹ÓÃ3´Î¡£
 --ÈÎÎñ±äÁ¿701µÍ4Î»±íÊ¾Ê¹ÓÃ¸ÃÎïÆ·µÄ´ÎÊý
@@ -10,9 +10,9 @@
 function main(sel)
 	times = GetTask(701)
         str ={
-		"<#>ÄãÊÔ×ÅÒ§ÁËÒ»¿Ú¹±ÔÂÜ½ÈØÔÂ±ý£¬½á¹ûÊ²Ã´Ò²Ã»ÓÐ·¢Éú¡£:(",
-		"<#>Äã³ÔÁËÒ»¸ö¹±ÔÂÜ½ÈØÔÂ±ý£¬¾õµÃÌå¸ñÇáÆæÍÑË×£¬¾­Âö»ºÏ¢Ë³³©¡£",
-		"<#>ÄãÒÑ¾­³Ô¹ý3¸ö¹±ÔÂÜ½ÈØÔÂ±ý£¬ÊµÔÚ³Ô²»ÏÂÁË¡£"
+		"<#> B¹n c¾n thö mét miÕng Cèng NguyÖt Phï Dung, kÕt qu¶ kh«ng cã chuyÖn g× x¶y ra.: (",
+		"<#> B¹n c¾n mét miÕng Cèng NguyÖt Phï Dung, c¶m thÊy c¬ thÓ kháe h¼n, kinh m¹ch l­u th«ng.",
+		"<#> B¹n ®· ¨n 3 c¸i Cèng NguyÖt Phï Dung, kh«ng thÓ dïng tiÕp."
 	        }
 	level = GetLevel()
 	if(level < 80) then     --µÈ¼¶Ì«µÍ£¬²»ÈÃÊ¹ÓÃ
@@ -26,7 +26,7 @@ function main(sel)
 	AddProp(5)              --Ç±ÄÜµãÔö¼Ó5µã
 	time=date("%m%d%H%M%S")
         name=GetName()
-	WriteLog("Íæ¼Ò"..name.."ÔÚ"..time.."³ÔµôÁËÒ»¸ö¹±ÔÂÜ½ÈØÔÂ±ý")
+	WriteLog("Ng­êi ch¬i"..name.."T¹i"..time.."¡n hÕt mét c¸i B¸nh Trung thu Cèng NguyÖt Phï Dung")
 	SetTask(701,times+1)
 	Msg2Player(str[2])
 	return 0

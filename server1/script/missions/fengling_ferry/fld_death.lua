@@ -1,7 +1,7 @@
 Include("\\script\\missions\\fengling_ferry\\fld_head.lua")
 
 function OnDeath(Launcher)
-	Msg2Player("ÔÚ¶É´¬ÉÏ²»ĞÒÉíÍö.")
+	Msg2Player("B¹n kh«ng may tö vong trong lóc ®i thuyÒn.")
 --	Msg2MSAll(GetName().."ÔÚ¶É´¬ÉÏ²»ĞÒÉíÍö¡£")
 	camp = GetCamp()
 	SetCurCamp(camp)

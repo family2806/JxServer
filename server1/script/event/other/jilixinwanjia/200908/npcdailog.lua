@@ -8,60 +8,60 @@ tbJILIWanJia0908.tbData =
 	{
 		nLevel = 30,
 		pLimit = function ()
-			return  GetLastFactionNumber() > -1, "Ó¦¸ÃÒª¼ÓÈëÃÅÅÉ"
+			return  GetLastFactionNumber() > -1, "CÇn ph¶i gia nhËp m«n ph¸i"
 		end,
 		tbAward = 
 		{
 			{nExp_tl = 16e6},
-			{szName="³õÈëºì°ü", tbProp={6, 1, 2101, 1, 0, 0}, nExpiredTime = 20090923},
+			{szName="Hång bao S¬ nhËp", tbProp={6, 1, 2101, 1, 0, 0}, nExpiredTime = 20090923},
 		}
 	},
 	[2] = 
 	{
 		nLevel = 70,
 		pLimit = function ()
-			return GetTong() ~= nil and GetTong() ~= "", "¸÷Î»»¹Î´¼ÓÈë°ï»á"
+			return GetTong() ~= nil and GetTong() ~= "", "C¸c h¹ vÉn ch­a gia nhËp bang héi"
 		end,
 		tbAward = 
 		{
 			{nExp_tl = 2e8},
-			{szName="ĞÒÔËºì°ü", tbProp={6, 1, 2102, 1, 0, 0}, nExpiredTime = 20090923},
+			{szName="Hång bao May m¾n", tbProp={6, 1, 2102, 1, 0, 0}, nExpiredTime = 20090923},
 		}
 	},
 	[3] = 
 	{
 		nLevel = 100,
 		pLimit = function ()
-			return GetLeadLevel() >= 30 and GetTask(151) >= 1000, "ĞèÒª30¸öÒÔÉÏµÄÍ³Ë§µãºÍ1000¸ö¸£Ôµ"
+			return GetLeadLevel() >= 30 and GetTask(151) >= 1000, "CÇn ®iÓm thèng so¸i 30 trë lªn vµ phóc duyªn 1000"
 		end,
 		tbAward = 
 		{
 			{nExp_tl = 11e8},
-			{szName="¸»¹óºì°ü", tbProp={6, 1, 2103, 1, 0, 0}, nExpiredTime = 20090923},
+			{szName="Hång bao Phó quı", tbProp={6, 1, 2103, 1, 0, 0}, nExpiredTime = 20090923},
 		}
 	},
 	[4] = 
 	{
 		nLevel = 125,
 		pLimit = function ()
-			return GetTask(2463) > 0, "Ó¦¸ÃÒªÑ§Ï°120¼¶¼¼ÄÜ"
+			return GetTask(2463) > 0, "CÇn ph¶i häc kü n¨ng cÊp 120"
 		end,
 		tbAward = 
 		{
 			{nExp_tl = 14e8},
-			{szName="ÍÅÔ²ºì°ü", tbProp={6, 1, 2104, 1, 0, 0}},
+			{szName="Hång bao Sum vÇy", tbProp={6, 1, 2104, 1, 0, 0}},
 		}
 	},
 	[5] = 
 	{
 		nLevel = 140,
 		pLimit = function ()
-			return GetRepute() > 455 and tl_counttasklinknum(1) >= 300, "´ïµ½455µÄÃûÍûºÍÍê³É300µÄÒ°ÛÅÈÎÎñ."
+			return GetRepute() > 455 and tl_counttasklinknum(1) >= 300, "§¹t 455 danh väng vµ hoµn thµnh 300 nhiÖm vô d· tÈu."
 		end,
 		tbAward = 
 		{
 			{nExp_tl = 42e8},
-			{szName="°²¿µºì°ü", tbProp={6, 1, 2105, 1, 0, 0}},
+			{szName="Hång bao An khang", tbProp={6, 1, 2105, 1, 0, 0}},
 		}
 	},
 }
@@ -70,23 +70,23 @@ function tbJILIWanJia0908:DailogMain()
 	
 	
 --	if not tbJILIWanJia0908:IsActDate() then
---		return Talk(1, "", "»î¶¯ÒÑ½áÊø.")
+--		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 --	end
 	
 	local nDay = tonumber(GetLocalDate("%Y%m%d"))
 	if nDay >= 20090923 then
-		return Talk(1, "", "»î¶¯ÒÑ½áÊø.")
+		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 	end
 	
 	tbSay = 
 	{
-		"ÇëÁìÈ¡ÄãµÄ½±Àø£¡",
-		"ÎÒÀ´ÁìÈ¡30¼¶½±Àø/#tbJILIWanJia0908:GetAwardById(1)",
-		"ÎÒÀ´ÁìÈ¡70¼¶½±Àø/#tbJILIWanJia0908:GetAwardById(2)",
-		"ÎÒÀ´ÁìÈ¡100¼¶½±Àø/#tbJILIWanJia0908:GetAwardById(3)",
-		"ÎÒÀ´ÁìÈ¡125¼¶½±Àø/#tbJILIWanJia0908:GetAwardById(4)",
-		"ÎÒÀ´ÁìÈ¡140¼¶½±Àø/#tbJILIWanJia0908:GetAwardById(5)",
-		"È¡Ïû/OnCancel"
+		"§¹i hiÖp muèn nhËn phÇn th­ëng nµo?",
+		"Ta ®Õn nhËn phÇn th­ëng cÊp 30/#tbJILIWanJia0908:GetAwardById(1)",
+		"Ta ®Õn nhËn phÇn th­ëng cÊp 70/#tbJILIWanJia0908:GetAwardById(2)",
+		"Ta ®Õn nhËn phÇn th­ëng cÊp 100/#tbJILIWanJia0908:GetAwardById(3)",
+		"Ta ®Õn nhËn phÇn th­ëng cÊp 125/#tbJILIWanJia0908:GetAwardById(4)",
+		"Ta ®Õn nhËn phÇn th­ëng cÊp 140/#tbJILIWanJia0908:GetAwardById(5)",
+		"KÕt thóc ®èi tho¹i/OnCancel"
 		
 	}
 	CreateTaskSay(tbSay)
@@ -95,7 +95,7 @@ end
 function tbJILIWanJia0908:GetAwardById(nId)
 	local tbAwardData = self.tbData[nId]
 	if self.tbTask:GetAwardState(nId) == 1 then
-		return Talk(1, "", "´óÏÀÒÑÁìÈ¡¹ı½±ÀøÁË.")
+		return Talk(1, "", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.")
 	end
 	
 	
@@ -105,11 +105,11 @@ function tbJILIWanJia0908:GetAwardById(nId)
 	end
 	
 	if CalcFreeItemCellCount() < 1 then 
-		return Talk(1, "",  format("±³°ü¿Õ¼ä²»¹» %dÇëÕûÀíÒ»ÏÂ.", 1))
+		return Talk(1, "",  format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 1))
 	end
 	
 	if GetLevel() < tbAwardData.nLevel then
-		return Talk(1, "", format("´óÏÀ²»¹» %d¼¶.", tbAwardData.nLevel))
+		return Talk(1, "", format("§¹i hiÖp kh«ng ®ñ cÊp %d.", tbAwardData.nLevel))
 	end
 
 	local nResult, szFailMsg = tbAwardData.pLimit()

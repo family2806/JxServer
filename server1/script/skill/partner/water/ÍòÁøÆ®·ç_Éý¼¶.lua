@@ -3,9 +3,9 @@ function OnLevelUp(uplevel,nPartnerIdx)
 	local partnerlevel = PARTNER_GetLevel(nPartnerIdx);
 	local requirlevel = 30 + (uplevel - 1) * 1;
 	if(partnerlevel < requirlevel) then
-		Msg2Player("<color=yellow>Äãµ±Ç°Í¬°éµÄ<color=blue>¡°ÍòÁøÆ®·ç¡±<color>¼¼ÄÜĞŞÁ¶¶ÈÒÑ´ï100%£¬µ«ĞèÒªÍ¬°é<color=blue>"..requirlevel.."<color>¼¶²ÅÄÜÉı¼¶");
+		Msg2Player("HiÖn nay <color=yellow>'V¹n LiÔu Phiªu Phong' cña <color=blue>®ång hµnh<color> ®· luyÖn ®Õn 100%, nh­ng cÇn ®ång hµnh<color=blue>"..requirlevel.."<color> míi cã thÓ th¨ng cÊp.");
 		return	
 	end
 	PARTNER_AddSkill(nPartnerIdx,1,567,uplevel);
-	Msg2Player("<color=yellow>Äãµ±Ç°Í¬°éµÄ<color=blue>¡°ÍòÁøÆ®·ç¡±<color>¼¼ÄÜĞŞÁ¶¶ÈÒÑ´ï100%£¬Éı»ªÎª<color=blue>"..uplevel.."<color>¼¶");
+	Msg2Player("HiÖn nay <color=yellow>'V¹n LiÔu Phiªu Phong' cña <color=blue>®ång hµnh<color> ®· luyÖn ®Õn 100%, ®· t¨ng lªn cÊp<color=blue>"..uplevel.."<color>");
 end

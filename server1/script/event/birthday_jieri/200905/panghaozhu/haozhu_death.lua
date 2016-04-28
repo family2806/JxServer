@@ -12,9 +12,9 @@ Include("\\script\\event\\birthday_jieri\\200905\\class.lua");	--
 
 local tbAwardItem = 
 {
-	{szName="ÏÉ²İÂ¶", nRate=10, tbProp={6, 1, 71, 1, 0, 0}},
-	{szName="°Ù¹ûÂ¶", nRate=10, tbProp={6, 1, 73, 1, 0, 0}},
-	{szName="¹ğ»¨¾Æ", nRate=10, tbProp={6, 1, 125, 1, 0, 0}},
+	{szName="Tiªn Th¶o Lé ", nRate=10, tbProp={6, 1, 71, 1, 0, 0}},
+	{szName="B¸ch Qu¶ Lé ", nRate=10, tbProp={6, 1, 73, 1, 0, 0}},
+	{szName="QuÕ Hoa Töu", nRate=10, tbProp={6, 1, 125, 1, 0, 0}},
 };
 
 
@@ -36,7 +36,7 @@ end
 
 function tbDropItem:DropItemByList(tbItem, szLogTitle, nMapId, nPosX32, nPosY32, nSeries)
 	if not tbItem then --ÎïÆ·±íÎª¿Õ
-		self:Debug("ÎïÆ·±íÎª¿Õ.")
+		self:Debug("B¶ng vËt phÈm trèng.")
 		return 0
 	end
 	if type(tbItem[1]) == "table" then -- Èç¹ûÊÇ¶à¸öÎïÆ·
@@ -97,7 +97,7 @@ function OnDeath( nNpcIndex )
 	end
 	
 	if (tbBirthday0905.tbTask:get_shoulie_count() >= 20) then
-		Msg2Player("½ñÌìÄúÒÑ¾­²¶µ½20Ö»ÅÖºÀÖíÁË, Ã÷ÌìÔÙÀ´°É.");
+		Msg2Player("H«m nay ®· s¨n b¾t 20 Nhİm bĞo ph× råi, ngµy mai h·y ®Õn l¹i nhĞ.");
 		return
 	end
 	

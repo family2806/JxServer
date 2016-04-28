@@ -5,7 +5,7 @@ Include("\\script\\item\\battles\\addmarshalpoint.lua")
 function add496()
 		level = random(1,2);
 		AddSkillState(496, level, 0, 1080 )	--玩家获得武功出招动作速度增加
-		Msg2Player("<#>你获得了<color=0xB5FDD7>1分钟的武功出招动作：增加"..(level*10).."<#>％")	
+		Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7> t╪g ng t竎 xu蕋 chi猽 trong 1 ph髏"..(level*10).."<#> %")	
 end
 
 Tab={add496}

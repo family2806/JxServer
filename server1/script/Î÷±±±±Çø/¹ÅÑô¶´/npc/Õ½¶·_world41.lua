@@ -6,15 +6,15 @@ function OnDeath()
 	if (Uworld41 >= 10) and (Uworld41 < 100) and (HaveItem(352) == 0) and (random(0,99) < 50) then		-- ÈÎÎñÖÐ²¢ÇÒÃ»ÓÐÔ¿³×£¬50%»úÂÊ
 		if (Uworld41 == 10) then		-- µÚÒ»´Î´òÊ±¼Ó¾çÇé¶Ô»°,¼°±äÁ¿¸³Öµ
 			if (GetSex() == 0) then		-- ¶Ô»°ÄÐÅ®²»Í¬
-				Talk(1,"","Ó¢ÐÛÈÄÃü£¬×òÌìÇÀÀ´Ð¡¾êÖ®ºóËýµÖËÀ²»´Ó£¬ÏÖÔÚ»¹¹ØÔÚºÚÀÎÀïÃæÄØ¡£ÕâÊÇÔ¿³×£¬Ö»ÇóÓ¢ÐÛÈÄ¹ýÐ¡µÄ¹·Ãü!")
+				Talk(1,"","Anh hïng xin tha m¹ng! H«m qua b¾t TiÓu Quyªn giam trong H¾c lao nh­ng c« ta kh«ng bÞ tæn h¹i g×! §©y lµ ch×a khãa. Xin anh hïng tha cho m¹ng sèng!")
 			else
-				Talk(1,"","Å®ÏÀÈÄÃü£¬×òÌìÇÀÀ´Ð¡¾êÖ®ºóËýµÖËÀ²»´Ó£¬ÏÖÔÚ»¹¹ØÔÚºÚÀÎÀïÃæÄØ¡£ÕâÊÇÔ¿³×£¬Ö»ÇóÓ¢ÐÛÈÄ¹ýÐ¡µÄ¹·Ãü!")
+				Talk(1,"","N÷ hiÖp xin tha m¹ng! H«m qua b¾t TiÓu Quyªn giam trong H¾c lao nh­ng c« ta kh«ng bÞ tæn h¹i g×! §©y lµ ch×a khãa. Xin n÷ hiÖp tha cho m¹ng sèng!")
 			end
 			Uworld41 = SetByte(GetTask(41),1,30)
 			SetTask(41,Uworld41)
-			AddNote("´ò°ÜÇ¿µÁÍ·Ä¿¡°Ñýµ¶¡±ÕÔ·½£¬µÃµ½Ò»°Ñ´ò¿ªºÚÀÎ¾ÈÐ¡¾êµÄÔ¿³×")
+			AddNote("§¸nh b¹i ®­îc ®Çu lÜnh Yªu ®ao TriÖu ph­¬ng. LÊy ®­îc ch×a khãa ®Ó më H¾c lao cøu TiÓu Quyªn ")
 		end
 		AddEventItem(352)			-- »ú¹ØÔ¿³×
-		Msg2Player("ÄÃµ½»ú¹ØÔ¿³×")
+		Msg2Player("LÊy ®­îc ch×a khãa C¬ quan ")
 	end
 end;

@@ -19,6 +19,6 @@ local myTaskValue = GetTask(1003)
 		return
 	end
 	
-	Say("ºÙ£¬ÕâÊ¥ÉÏ½ñÈÕ¿´ÉÏÁË³ÇÍâÀî¼ÒµÄÒ»¸ö¹ÃÄï£¬¾İËµ´µÀ­µ¯³ªÎŞËù²»ÄÜ£¬Õı²îÎÒÈ¥°ÑËû½ÓÀ´ÒÔÎ¿Ê¥ÑÕÄØ¡£",0);
+	Say("H«m tr­íc hoµng th­îng ®i s¨n, nh×n thÊy 1 thiÕu n÷ ngoµi th«n, vÒ t©m thÇn mª mÉn… ",0);
 
 end

@@ -25,7 +25,7 @@ end
 
 function main(nItemIndex)
 	if IsAcitve() ~= 1 then
-		Msg2Player("ÒÑ¹ı»î¶¯Ê±¼ä£¬²»ÄÜÖÖÊ÷ÁË.")
+		Msg2Player("§· qu¸ thêi gian ho¹t ®éng, kh«ng thÓ trång c©y.")
 		return 1
 	end	
 	if plant_tree() == 1 then

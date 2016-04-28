@@ -1,4 +1,4 @@
--- ÀïÃæ1¸öÉßÍõºÍ30¸öÉßÂÑ£¬Ã¿¸ô30ÃëÓÐ3¸öÉßÂÑ»á±ä³ÉÉß£¬ÉßµÄÑª±ÈÉßÂÑ¶à£¬ÉßÓÐ¹¥»÷£¬ÉßÂÑÃ»¹¥»÷¡£°ÑÉßÍõÉ±µôÈ«²¿ºó¹ý¹Ø¡£
+-- ÀïÃæ1¸öXµ V­¬ngºÍ30¸öXµ No·n£¬Ã¿¸ô30ÃëÓÐ3¸öXµ No·n»á±ä³ÉÉß£¬ÉßµÄÑª±ÈXµ No·n¶à£¬ÉßÓÐ¹¥»÷£¬Xµ No·nÃ»¹¥»÷¡£°ÑXµ V­¬ngÉ±µôÈ«²¿ºó¹ý¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -14,7 +14,7 @@ function pTask:OnStart()
 	local pos_snake = self:GetPosition().t7_snake
 	local mapid = self:GetMapId()
 	for i = 1, 30 do
-		local nNpcIndex = FightNpcManager:AddNpc("ÉßÂÑ", 1700, mapid, pos_snake[i].x, pos_snake[i].y, self, i, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Xµ No·n", 1700, mapid, pos_snake[i].x, pos_snake[i].y, self, i, 1, 1)
 		if (nNpcIndex <= 0) then
 			self:LogError("TASK7: failed to create egg npc")
 		end
@@ -25,7 +25,7 @@ function pTask:OnStart()
 		self.m_Snakes[i] = tb
 	end
 	local pos_boss = self:GetPosition().t7_boss
-	local nBossIndex = FightNpcManager:AddNpc("ÉßÍõ", 1699, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
+	local nBossIndex = FightNpcManager:AddNpc("Xµ V­¬ng", 1699, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
 	if (nBossIndex <= 0) then
 		self:LogError("TASK5: failed to create boss npc")
 	end
@@ -59,7 +59,7 @@ function pTask:OnTime()
 		local tb = self.m_Snakes[i]
 		if (tb.IsEgg == 1 and tb.NpcIndex > 0) then
 			FightNpcManager:DelNpc(tb.NpcIndex)
-			local nNpcIndex = FightNpcManager:AddNpc("Ð¡Éß", 1748, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
+			local nNpcIndex = FightNpcManager:AddNpc("TiÓu Xµ", 1748, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
 			if (nNpcIndex <= 0) then
 				self:LogError("TASK7: failed to create snake npc")
 			end

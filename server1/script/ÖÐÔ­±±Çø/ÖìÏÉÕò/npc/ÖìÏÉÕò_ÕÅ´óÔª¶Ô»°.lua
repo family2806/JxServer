@@ -6,13 +6,13 @@
 function main()
 	UTask_world44=GetTask(72)
 	if (UTask_world44==2) then
-		Talk(8,"","ÄãÊÇÕÅ´óÔªÃ´?","ÎÒÊÇ£¬ÓĞÊ²Ã´ÊÂÇé?","ÓĞÎ»Ó¯Ó¯¹ÃÄïÒªÎÒ°ÑÕâÌõÔ§ÑìÅÁ¸øÄã£¬»¹ÒªÎÒ´«»°£¬½ñÍíÈı¸ü£¬ÀÏµØ·½£¬²»¼û²»É¢","Ê²Ã´£¡ÕÅ´óÔª£¡Äã¾ÓÈ»ºÍÄÇ¸ö²Ã·ìÅ®¹´´îÉÏ?"," ÔõÃ´»á£¿ÎÒ¸ù±¾Ã»ºÍËıËµ¹ı»°£¬Äï×ÓÄãÒªÏàĞÅÎÒ.","µ«ÊÇ....."," Î¹£¬Äã¿É²»ÒªËæ±ãÎÜÏİºÃÈË°¡",".....?")
+		Talk(8,"","Huynh cã ph¶i lµ Tr­¬ng §¹i Nguyªn kh«ng?"," Lµ ta ®©y, cã chuyÖn g× kh«ng?","Doanh Doanh c« n­¬ng nhê ta ®­a cho huynh chiÕc kh¨n tay nµy, nhê ta nãi l¹i, canh ba ®ªm nay, chç cò, kh«ng gÆp kh«ng vÒ.","C¸i g×? Tr­¬ng §¹i Nguyªn! Anh vÉn cßn giao du víi ¶ thî may Êy µ?"," Lµm g× cã? Ta ®©u cã chuyÖn g× víi c« Êy, n­¬ng tö h·y tin ta.","Nh­ng....."," Nµy, ng­¬i ®õng tïy tiÖn vu c¸o ng­êi tèt chø!",".....….")
 		SetTask(72,4)
-		Msg2Player("²»ÁÏÒòÎªÒ»ÌõË¿ÅÁ±»Âî£¬»ØÈ¥¼ûÓ¯Ó¯. ")
-		AddNote("ÕÒµ½ÕÅ´óÔª£¬´«»°¸øËû£¬²»ÁÏËûÒÑÓĞÀÏÆÅ£¬²»ÄÜ¸øËûË¿ÅÁ£¬»¹±»ÂîÁËÒ»³¡. ")		
+		Msg2Player("Kh«ng ngê chØ v× mét chiÕc kh¨n tay gÊm mµ bŞ m¾ng chöi, quay l¹i nãi víi Doanh Doanh. ")
+		AddNote("T×m thÊy Tr­¬ng §¹i Nguyªn, chuyÓn l¹i lêi cña Doanh Doanh, kh«ng ngê anh ta lµ ng­êi ®· cã vî, kh«ng ®­a ®­îc chiÕc kh¨n tay uyªn ­¬ng, mµ cßn bŞ chöi. ")		
 	elseif (UTask_world44==4)  then
-		Talk(1,"","²»ÒªÎÜ¸æºÃÈË")
+		Talk(1,"","§õng tïy tiÖn vu c¸o ng­êi tèt chø!")
 	else
-		Talk(1,"","×öÈËÕæÊÇ²»ÈİÒ×£¬×öÄĞÈË¸ü¼Ó²»ÈİÒ×£¬×öÒ»¸öÌÒ»¨ÄĞÈË¸ü¼ÓµÄÄÑ.")
+		Talk(1,"","Lµm ng­êi thËt kh«ng dÔ, lµm ®µn «ng cµng kh«ng dÔ, lµm ng­êi ®µn «ng ®µo hoa l¹i cµng khã h¬n.")
 	end
 end

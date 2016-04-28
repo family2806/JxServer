@@ -29,14 +29,14 @@ function main()
 		local n_cur_exp = GetTask(TSK_ZINGPLAY_MAXEXP);
 		
 		if (n_cur_exp >= n_max_exp) then
-			Say(format("´óÏÀ´Ózingplay»ñµÃÖĞÒÑ»ñµÃ%d¾­Ñé£¬ËùÒÔ£¬²»ÄÜ¼ÌĞøÊ¹ÓÃzingplayºì°üÁË.", n_max_exp), 0);
+			Say(format("§¹i hiÖp ®· nhËn ®­îc %d kinh nghiÖm tõ ho¹t ®éng ZingPlay, v× vËy kh«ng thÓ tiÕp tôc sö dông bao l× x× ZingPlay n÷a.", n_max_exp), 0);
 			return 1;
 		end
 		
 		SetTask(TSK_ZINGPLAY_MAXEXP, n_cur_exp + n_one_exp);
 		AddOwnExp(n_one_exp);
 		
-		local sz_msg = format("Ê¹ÓÃzingplayºì°ü»ñµÃ%d ¾­Ñé", n_one_exp);
+		local sz_msg = format("Sö dông bao l× x× ZingPlay thu ®­îc %d kinh nghiÖm", n_one_exp);
 		
 		Msg2Player(sz_msg);
 		
@@ -47,7 +47,7 @@ function main()
 				sz_msg	));
 	else
 		
-		Say("»î¶¯ÒÑ½áÊø£¬²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·ÁË.");
+		Say("Ho¹t ®éng ®· kÕt thóc, kh«ng thÓ sö dông vËt phÈm nµy n÷a.");
 		return 0;
 	end
 end

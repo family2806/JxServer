@@ -17,11 +17,11 @@ function main(nNpcIndex)
 	local szNpcName = GetNpcName(nNpcIndex)
 	local nParam1 = GetNpcParam(nNpcIndex, 1);
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>ËûÃÇËµÖ»ÒªÌıÎÒ×àÍêÕâÊ×¸è¾Í»á¸Ğ¾õ¾«ÉñÕñ·Ü£¬ĞŞÁ¶Ê±ºòÒ²¿ÉÒÔÌá¸ßÒ»Ğ©¹¦Á¦£¬ÄãÌıÌı¿´ÊÇ²»ÊÇ¹ûÕæÏñ´«ËµµÄÕâÃ´Ææ¹Ö?"
+	tbDailog.szTitleMsg = "<npc>Hä nãi r»ng hÔ mµ nghe ta d¹o xong khóc nh¹c nµy ®Òu c¶m thÊy kh¶ng kh¸i tinh thÇn, khi tu luyÖn còng lµm t¨ng mét phÇn c«ng lùc, ng­¬i nghe thö xem qu¶ thËt cã chuyÖn kú l¹ nh­ vËy sao?"
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 	
-	tinsert(tbDailog, {"ÕâÃ´À÷º¦£¬ÄÇÃ´ÎÒÒªÌıÌı¿´.", onBeautyState, {szName, nParam1}});
-	tinsert(tbDailog, {"ËãÁË£¬ÎÒ¶ÔÄÇĞ©ÍæĞ¦Ã»ÓĞĞËÈ¤."})
+	tinsert(tbDailog, {"Lîi h¹i ®Õn nh­ vËy sao, vËy th× ta nghe thö xem.", onBeautyState, {szName, nParam1}});
+	tinsert(tbDailog, {"Th«i th«i, ta kh«ng cã thó víi mÊy c¸i trß nµy ®©u."})
 	CreateNewSayEx(tbDailog.szTitleMsg, tbDailog)
 	
 end

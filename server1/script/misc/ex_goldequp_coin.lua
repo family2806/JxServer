@@ -13,55 +13,55 @@ IncludeLib("LEAGUE")
 local tbGoldEquip_Coin = {
 	[1] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "¼ÌÒµ½ðÅÆ", tbProp = {6,1,2075,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "¼ÌÒµÐþÎä»Æ½ðîø", nQuality = 1, tbProp = {0,22}},
+		tbMaterial = {{szName = "KÕ NghiÖp Kim Bµi", tbProp = {6,1,2075,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "KÕ NghiÖp HuyÒn Vò Hoµng Kim Kh¶i", nQuality = 1, tbProp = {0,22}},
 	},
 	[2] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "ÃÎÁú½ðÅÆ", tbProp = {6,1,2076,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "ÃÎÁúÐþË¿·¢´ø", nQuality = 1, tbProp = {0,3}},
+		tbMaterial = {{szName = "Méng Long Kim Bµi", tbProp = {6,1,2076,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "Méng Long HuyÒn Ti Ph¸t ®¸i", nQuality = 1, tbProp = {0,3}},
 	},
 	[3] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Ú¤»Ã½ðÅÆ", tbProp = {6,1,2077,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "Ú¤»ÃÓÄ¹Æ°µÒÂ", nQuality = 1, tbProp = {0,62}},
+		tbMaterial = {{szName = "Minh ¶o Kim Bµi", tbProp = {6,1,2077,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "Minh ¶o U §éc ¸m Y", nQuality = 1, tbProp = {0,62}},
 	},
 	[4] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "µØÆÇ½ðÅÆ", tbProp = {6,1,2078,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "µØÆÇÎåÐÐÁ¬»·¹Ú", nQuality = 1, tbProp = {0,86}},
+		tbMaterial = {{szName = "§Þa Ph¸ch Kim Bµi", tbProp = {6,1,2078,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "§Þa Ph¸ch Ngò hµnh Liªn Hoµn Qu¸n", nQuality = 1, tbProp = {0,86}},
 	},
 	[5] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "ÎÞ³¾½ðÅÆ", tbProp = {6,1,2079,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "ÎÞ³¾ÓñÅ®ËØÐÄ¹Ú", nQuality = 1, tbProp = {0,41}},
+		tbMaterial = {{szName = "V« TrÇn Kim Bµi", tbProp = {6,1,2079,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "V« TrÇn Ngäc N÷ Tè T©m qu¸n", nQuality = 1, tbProp = {0,41}},
 	},
 	[6] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "±Ìº£½ðÅÆ", tbProp = {6,1,2080,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "±Ìº£ºìÁå½ðË¿´ø", nQuality = 1, tbProp = {0,53}},
+		tbMaterial = {{szName = "BÝch H¶i Kim Bµi", tbProp = {6,1,2080,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "BÝch H¶i Hång Linh Kim Ti ®¸i", nQuality = 1, tbProp = {0,53}},
 	},
 	[7] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Îí»Ã½ðÅÆ", tbProp = {6,1,2081,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "Îí»ÃÖ®ËÉ·çÑ©Ó°Ñ¥", nQuality = 1, tbProp = {0,140}},
+		tbMaterial = {{szName = "Vô ¶o Kim Bµi", tbProp = {6,1,2081,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "Vô ¶o Tung Phong TuyÕt ¶nh ngoa", nQuality = 1, tbProp = {0,140}},
 	},
 	[8] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Ä§ÊÈ½ðÅÆ", tbProp = {6,1,2082,1,0,0}, nCount = 100}},
-		tbProduct = {szName = "Ä§ÊÈÖ®ÑªÓñÆßÉ±Åå", nQuality = 1, tbProp = {0,114}},
+		tbMaterial = {{szName = "Ma ThÞ Kim Bµi", tbProp = {6,1,2082,1,0,0}, nCount = 100}},
+		tbProduct = {szName = "Ma ThÞ HuyÕt Ngäc ThÊt S¸t Béi", nQuality = 1, tbProp = {0,114}},
 	},
 	[9] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "É®Ã±½ðÅÆ", tbProp = {6,1,2203,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "T¨ng m·o kim bµi", tbProp = {6,1,2203,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "ÃÎÁúÕýºìÉ®Ã±",
-			[1]	= {szName = "ÃÎÁúÕýºìÉ®Ã±", nQuality = 1, tbProp = {0,1}},
+			szName = "Méng Long ChÝnh Hång T¨ng M·o",
+			[1]	= {szName = "Méng Long ChÝnh Hång T¨ng M·o", nQuality = 1, tbProp = {0,1}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>ÃÎÁúÕýºìÉ®Ã±<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Méng Long ChÝnh Hång T¨ng M·o<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -71,15 +71,15 @@ local tbGoldEquip_Coin = {
 	},
 	[10] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "ÓÄëÊ½ðÅÆ", tbProp = {6,1,2204,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "U lung kim bµi", tbProp = {6,1,2204,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "ÓÄëÊÖ®³àÐ«ÃØ×°",
-			[1]	= {szName = "ÓÄëÊÖ®³àÐ«ÃØ×°", nQuality = 1, tbProp = {0,57}},
+			szName = "U Lung XÝch YÕt MËt trang",
+			[1]	= {szName = "U Lung XÝch YÕt MËt trang", nQuality = 1, tbProp = {0,57}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>ÓÄëÊÖ®³àÐ«ÃØ×°<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>U Lung XÝch YÕt MËt Trang<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -88,15 +88,15 @@ local tbGoldEquip_Coin = {
 	},
 	[11] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Ä§É·½ðÅÆ", tbProp = {6,1,2205,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "Ma s¸t kim bµi", tbProp = {6,1,2205,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "Ä§É·Ö®¾Ù»ðÁÇÌìÍó",
-			[1]	= {szName = "Ä§É·Ö®¾Ù»ðÁÇÌìÍó", nQuality = 1, tbProp = {0,104}},
+			szName = "Ma S¸t Cö Háa Liªu Thiªn Hoµn",
+			[1]	= {szName = "Ma S¸t Cö Háa Liªu Thiªn Hoµn", nQuality = 1, tbProp = {0,104}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s ®·»ñµÃ<color=yellow>Ä§É·Ö®¾Ù»ðÁÇÌìÍó<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Ma S¸t Cö Háa Liªu Thiªn UyÓn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -105,15 +105,15 @@ local tbGoldEquip_Coin = {
 	},
 	[12] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "µÐâé½ðÅÆ", tbProp = {6,1,2206,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "§Þch kh¸i kim bµi", tbProp = {6,1,2206,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "µÐâéÖ®²øÃ§Ñü´ø",
-			[1]	= {szName = "µÐâéÖ®²øÃ§Ñü´ø", nQuality = 1, tbProp = {0,98}},
+			szName = "§Þch Kh¸i TriÒn M·ng yªu ®¸i",
+			[1]	= {szName = "§Þch Kh¸i TriÒn M·ng yªu ®¸i", nQuality = 1, tbProp = {0,98}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>µÐâéÖ®²øÃ§Ñü´ø<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>§Þch  Kh¸i TriÒn M·ng Yªu §¸i<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -126,15 +126,15 @@ local tbGoldEquip_Coin = {
 local tbGoldEquip_Coin_2 = {
 		[1] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "º³Ìì½ðÅÆ", tbProp = {6,1,2237,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "H¸m Thiªn Kim Bµi", tbProp = {6,1,2237,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "º³ÌìÖ®»¢Í·½ôÊøÍó",
-			[1]	= {szName = "º³ÌìÖ®»¢Í·½ôÊøÍó", nQuality = 1, tbProp = {0,19}},
+			szName = "H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn",
+			[1]	= {szName = "H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn", nQuality = 1, tbProp = {0,19}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>º³ÌìÖ®»¢Í·½ôÊøÍó<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>H¸m Thiªn Hæ §Çu KhÈn Thóc UyÓn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -143,15 +143,15 @@ local tbGoldEquip_Coin_2 = {
 	},
 	[2] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Ìì¹â½ðÅÆ", tbProp = {6,1,2238,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "Thiªn Quang Kim Bµi", tbProp = {6,1,2238,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "Ìì¹âÖ®ÊøÌì¸¿µØ»·",
-			[1]	= {szName = "Ìì¹âÖ®ÊøÌì¸¿µØ»·", nQuality = 1, tbProp = {0,80}},
+			szName = "Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn",
+			[1]	= {szName = "Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn", nQuality = 1, tbProp = {0,80}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ <color=yellow>Ìì¹âÖ®ÊøÌì¸¿µØ»·<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -160,15 +160,15 @@ local tbGoldEquip_Coin_2 = {
 	},
 	[3] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "±Ìº£½ðÅÆ", tbProp = {6,1,2239,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "BÝch H¶i Kim Bµi", tbProp = {6,1,2239,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "±Ìº£Ö®ºìÁå²¨",
-			[1]	= {szName = "±Ìº£Ö®ºìÁå²¨", nQuality = 1, tbProp = {0,54}},
+			szName = "BÝch H¶i Hång L¨ng Ba",
+			[1]	= {szName = "BÝch H¶i Hång L¨ng Ba", nQuality = 1, tbProp = {0,54}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>±Ìº£Ö®ºìÁå²¨<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>BÝch H¶i Hång L¨ng Ba<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -177,15 +177,15 @@ local tbGoldEquip_Coin_2 = {
 	},
 	[4] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "ÎÞÄ§½ðÅÆ", tbProp = {6,1,2240,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "V« Ma Kim Bµi", tbProp = {6,1,2240,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "ÎÞ÷ÊÖ®±ù¾§Ö¸»·",
-			[1]	= {szName = "ÎÞ÷ÊÖ®±ù¾§Ö¸»·", nQuality = 1, tbProp = {0,38}},
+			szName = "V« Ma B¨ng Tinh ChØ Hoµn",
+			[1]	= {szName = "V« Ma B¨ng Tinh ChØ Hoµn", nQuality = 1, tbProp = {0,38}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>ÎÞ÷ÊÖ®±ù¾§Ö¸»·<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>V« Ma B¨ng Tinh ChØ Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -194,15 +194,15 @@ local tbGoldEquip_Coin_2 = {
 	},
 	[5] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "ÁèÔÀ½ðÅÆ", tbProp = {6,1,2241,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "L¨ng Nh¹c Kim Bµi", tbProp = {6,1,2241,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "ÁèÔÀÖ®ÌìµØÐþ»Æ½ä",
-			[1]	= {szName = "ÁèÔÀÖ®ÌìµØÐþ»Æ½ä", nQuality = 1, tbProp = {0,120}},
+			szName = "L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng giíi",
+			[1]	= {szName = "L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng giíi", nQuality = 1, tbProp = {0,120}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>ÁèÔÀÖ®ÌìµØÐþ»Æ½ä<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng Giíi<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -211,15 +211,15 @@ local tbGoldEquip_Coin_2 = {
 	},
 	[6] = {
 		nFreeItemCellLimit = 12,
-		tbMaterial = {{szName = "Ëª¾§½ðÅÆ", tbProp = {6,1,2242,1,0,0}, nCount = 100}},
+		tbMaterial = {{szName = "S­¬ng Tinh Kim Bµi", tbProp = {6,1,2242,1,0,0}, nCount = 100}},
 		tbProduct =
 		{
-			szName = "Ëª¾§Ö®·ç±©Ö¸»·",
-			[1]	= {szName = "Ëª¾§Ö®·ç±©Ö¸»·", nQuality = 1, tbProp = {0,130}},
+			szName = "S­¬ng Tinh Phong B¹o chØ hoµn",
+			[1]	= {szName = "S­¬ng Tinh Phong B¹o chØ hoµn", nQuality = 1, tbProp = {0,130}},
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>Ëª¾§Ö®·ç±©Ö¸»·<color>", GetName());
+					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>S­¬ng Tinh Phong B¹o ChØ Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -232,11 +232,11 @@ function ex_goldequp_coin()
 		tbComposeGoldEquipCoin = tbComposeListClass:new("tbComposeGoldEquipCoin", %tbGoldEquip_Coin);
 	end
 	
-	local szTitle = "<dec><npc>".."¸óÏÂÏë¶Ò»»Ê²Ã´½ðÅÆ?";
+	local szTitle = "<dec><npc>".."C¸c h¹ muèn ®æi lo¹i lÖnh bµi nµo?";
 		
 	local tbSay = tbComposeGoldEquipCoin:MakeOptByProductName("§æi");
 	tinsert(tbSay, 1, szTitle);
-	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel");
 	
 	CreateTaskSay(tbSay)
 end
@@ -246,11 +246,11 @@ function ex_goldequp_coin_2()
 		tbComposeGoldEquipCoin_b = tbComposeListClass:new("tbComposeGoldEquipCoin_b", %tbGoldEquip_Coin_2);
 	end
 	
-	local szTitle = "<dec><npc>".."¸óÏÂÏë¶Ò»»Ê²Ã´½ðÅÆ?";
+	local szTitle = "<dec><npc>".."C¸c h¹ muèn ®æi lo¹i lÖnh bµi nµo?";
 		
 	local tbSay = tbComposeGoldEquipCoin_b:MakeOptByProductName("§æi");
 	tinsert(tbSay, 1, szTitle);
-	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel");
 	
 	CreateTaskSay(tbSay)
 end

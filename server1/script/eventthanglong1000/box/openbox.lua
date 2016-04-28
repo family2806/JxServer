@@ -6,20 +6,20 @@ function main()
 	local n_size = GetTeamSize();
 	local strLeaderName = ""
 	if (n_size < 2) then
-		CreateTaskSay({"<dec><npc>ÇëÓë»áÔ±×é¶Ó£¬È»ºó²Å´ò¿ªÏä×Ó!", "½áÊø¶Ô»°OnCancel"});
+		CreateTaskSay({"<dec><npc>H·y tæ ®éi víi thµnh viªn råi míi më R­¬ng !", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	if (IsCaptain() == 0) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞ¶Ó³¤²ÅÄÜ¿ªÏä.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã ®éi tr­ëng míi cã thÓ më R­¬ng.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	else
 		strLeaderName = GetName()
 	end
 	if (GetTask(Task_Allow_OpenBox) ~= 1) then
-		Talk(1,"","ĞèÒªÏûÃğ<color=yellow>ÕòÁú»¤±¦ <color> ²ÅÄÜ´ò¿ªÏä×Ó!")
+		Talk(1,"","CÇn ph¶i tiªu diÖt <color=yellow>TrÊn Long Hé B¶o <color>  th× míi cã thÓ më ®­îc R­¬ng !")
 		return
 	end
-	if (PlayerFunLib:CheckTaskDaily(Task_Daily_OpenBox,3,"Ã¿ÌìÖ»ÄÜ´ò¿ª3¸ö¹ÅÎïÏä×Ó!","<") ~= 1) then
+	if (PlayerFunLib:CheckTaskDaily(Task_Daily_OpenBox,3,"Mçi ngµy chØ cã thÓ më 3 R­¬ng Cæ VËt mµ th«i !","<") ~= 1) then
 			return
 	end
 	PlayerFunLib:AddTaskDaily(Task_Daily_OpenBox,1)
@@ -29,9 +29,9 @@ function main()
 		local nplayer = GetTeamMember(i);
 		PlayerIndex = nplayer;
 		SetTask(Task_Allow_OpenBox, 0)
-		Talk(1,"","§éi Tr­ëng <color=yellow>" ..strLeaderName.. "<color> ¸Õ¸Õ³É¹¦´ò¿ª¹ÅÎïÏä×Ó!")
-		if (PlayerFunLib:CheckTaskDaily(Task_Daily_GetBonusByKillBoss,21,"Ã¿ÌìÍæ¼Ò¿ÉÒÔÓë×é¶Ó×î¶àÁìÈ¡21´Î¾­ÑéÖµ!","<") ~= 1) then
-			Msg2Player("½ñÌìÄúÓë×é¶ÓÁì¹»21´Î¾­ÑéÖµÁË")
+		Talk(1,"","§éi Tr­ëng <color=yellow>" ..strLeaderName.. "<color> võa míi më R­¬ng Cæ VËt thµnh c«ng !")
+		if (PlayerFunLib:CheckTaskDaily(Task_Daily_GetBonusByKillBoss,21,"Mçi ngµy ng­êi ch¬i cã thÓ nhËn ®iÓm kinh nghiÖm chung víi tæ ®éi tèi ®a  21 lÇn !","<") ~= 1) then
+			Msg2Player("H«m nay ®¹i hiÖp ®· nhËn ®iÓm kinh nghiÖm chung víi tæ ®éi ®ñ 21 lÇn")
 		else
 			PlayerFunLib:AddTaskDaily(Task_Daily_GetBonusByKillBoss,1)
 			GetBonusOpenBox(IsCaptain())
@@ -66,8 +66,8 @@ function GetBonusOpenBox(nValue)
 			end
 		end
 		AddOwnExp(4000000)
-		Msg2Player("Äã»ñµÃ4000000¾­ÑéÖµ")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 ÄêÉıÁú"..GetAccount().."\t"..GetName().."\t".."´ò¿ªÏä×Ó»ñµÃ4000000 µãEXP ")
+		Msg2Player("Ban nhËn ®­îc 4000000 ®iÓm kinh nghiÖm")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 N¨m Th¨ng Long"..GetAccount().."\t"..GetName().."\t".."Më R­¬ng nhËn ®­îc 4000000 ®iÓm EXP ")
 	else --la thanh vien
 			local nVar2 = random(1, 3)
 			if (nVar2 ==1) then
@@ -86,8 +86,8 @@ function GetBonusOpenBox(nValue)
 					SyncItem(nItemIndex)
 			end
 	AddOwnExp(1000000)
-	Msg2Player("Äã»ñµÃ1000000 ¾­ÑéÖµ")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 ÄêÉıÁú"..GetAccount().."\t"..GetName().."\t".."¿ªÏä»ñµÃ1000000 µãEXP ")
+	Msg2Player("Ban nhËn ®­îc 1000000 ®iÓm kinh nghiÖm")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 N¨m Th¨ng Long"..GetAccount().."\t"..GetName().."\t".."Më R­¬ng nhËn ®­îc 1000000 ®iÓm EXP ")
 	end
 end
 

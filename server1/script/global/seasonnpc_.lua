@@ -44,7 +44,7 @@ local nNum     = GetTask(ID_TASKLINK_LIMITNUM);
 	else
 		-- 40 ´ÎµÄÏŞÖÆ
 		if nNum>=40 then
-			Say("¹ş¹ş£¬Ã¿ÌìÈÎÎñ×ÜÊı²»ÄÜ³¬¹ı40´Î¡£", 0);
+			Say("Ha ha , mçi ngµy nhiÖm vô tæng sè kh«ng thÓ v­ît qua 40 lÇn . ", 0);
 			return 0;
 		end;
 		
@@ -102,14 +102,14 @@ function Task_NewVersionAward()
 	
 	-- Ã¿ÌìÍê³ÉµÚ30¸ö¶îÍâ½±Àø
 	if (nNum - nCancelNum) == 30 then
-		Msg2Player("¹§Ï²Äã£¬Íê³É30¸öÒ°ÛÅÈÎÎñ£¬»ñµÃ¶îÍâ½±Àø£¡");
-		tbAwardTemplet:GiveAwardByList({nExp_tl = 30000000}, "»ñµÃ¶îÍâ½±Àø£¡")
+		Msg2Player("Chóc mõng ng­¬i , hoµn thµnh 30 c¸ d· tÈu nhiÖm vô , ®¹t ®­îc ng¹ch ngo¹i t­ëng th­ëng ");
+		tbAwardTemplet:GiveAwardByList({nExp_tl = 30000000}, "§¹t ®­îc ng¹ch ngo¹i t­ëng th­ëng ")
 	end
 	
 	-- Ã¿ÌìÍê³ÉµÚ40¸ö¶îÍâ½±Àø
 	if (nNum == 40 and nCancelNum) == 0 then
-		Msg2Player("¹§Ï²Äã£¬Íê³É40¸öÒ°ÛÅÈÎÎñ£¬»ñµÃ¶îÍâ½±Àø£¡");
-		tbAwardTemplet:GiveAwardByList({nExp_tl = 100000000}, "»ñµÃ¶îÍâ½±Àø£¡")
+		Msg2Player("Chóc mõng ng­¬i , hoµn thµnh 40 c¸ d· tÈu nhiÖm vô , ®¹t ®­îc ng¹ch ngo¹i t­ëng th­ëng ");
+		tbAwardTemplet:GiveAwardByList({nExp_tl = 100000000}, "§¹t ®­îc ng¹ch ngo¹i t­ëng th­ëng ")
 	end	
 	
 end
@@ -121,11 +121,11 @@ function main()
 --	local nDate = tonumber(GetLocalDate("%y%m%d"));
 --	if (nDate >= 60808 and nDate <= 60815) then
 --		local tab_Content = {
---			"Xem cßn nhiÖm v?g?®Ó lµm kh«ng/tasklink_entence",
+--			"Xem c nhi v?g? l kh tÇn g/tasklink_entence",
 --		}
---		tinsert(tab_Content, "Ta muèn lµm mét vßng Liªn Hoa/menglanjie");
---		tinsert(tab_Content, "Rêi khái/Task_Wait");
---		Say("MÊy n¨m nay chiÕn tranh triÒn miªn, d©n t×nh thèng kh? Ph­¬ng tr­îng ThiÕu L©m t?muèn t?chøc th?trai mõng L?Vu Lan ®Ó mäi ng­êi h­ëng chót gi©y phót yªn b×nh", getn(tab_Content), tab_Content);
+--		tinsert(tab_Content, "Ta mu l¹p l m vg Li yÕt Hoa/menglanjie");
+--		tinsert(tab_Content, "R ¸ch kh ta /Task_Wait");
+--		Say("M n nay chi khãa tranh tri thİch mi yÕt , d th th l¹p g kh? Phng trng Thi phØ L t?mu l¹p t?ch chËm th?trai m vŞ g L?Vu Lan  m ngi hng ch l©u gi ph l©u y yÕt bh", getn(tab_Content), tab_Content);
 --		return
 --	end;
 	
@@ -134,25 +134,25 @@ end;
 
 function menglanjie()
 	if (GetExtPoint(0) <= 0 or GetLevel() < 30) then
-		Say("Xin lçi! Ch?c?ng­êi ch¬i t?cÊp <color=red>30, ®· n¹p th?color> míi c?th?tham gia ho¹t ®éng nµy", 0)
+		Say("Xin l! Ch?c?ngi ch béi t?c <color=red>30,  n th?color> m c?th?tham gia ho ng n phô ", 0)
 		return 
 	end;
 	local tab_Content = {
-		"Ta muèn kÕt vßng Kim Liªn Hoa [cÇn 9 Kim Liªn Hoa]/#process(1)",
-		"Ta muèn hîp thµnh vßng Méc Liªn Hoa [cÇn 9 Méc Liªn Hoa]/#process(2)",
-		"Ta muèn hîp thµnh vßng Thñy Liªn Hoa [cÇn 9 Thñy Liªn Hoa]/#process(3)",
-		"Ta muèn hîp thµnh vßng Háa Liªn Hoa [cÇn 9 Háa Liªn Hoa]/#process(4)",
-		"Ta muèn hîp thµnh vßng Th?Liªn Hoa [cÇn 9 Th?Liªn Hoa]/#process(5)",
-		"Ch?®Õn th¨m «ng chót th«i!/Task_Wait"
+		"Ta mu l¹p k vg Kim Li yÕt Hoa [c 9 Kim Li yÕt Hoa]/process(1)",
+		"Ta mu l¹p h th yªu h vg M nhuËn Li yÕt Hoa [c 9 M nhuËn Li yÕt Hoa]/process(2)",
+		"Ta mu l¹p h th yªu h vg Th Li yÕt Hoa [c 9 Th Li yÕt Hoa]/process(3)",
+		"Ta mu l¹p h th yªu h vg H Li yÕt Hoa [c 9 H Li yÕt Hoa]/process(4)",
+		"Ta mu l¹p h th yªu h vg Th?Li yÕt Hoa [c 9 Th?Li yÕt Hoa]/process(5)",
+		"Ch?n th tÇn g ch l©u th quyÕt !/Task_Wait"
 	}
-	Say("Ch?cÇn ng­¬i ®i thu thËp ®ñ s?Liªn Hoa v?<color=yellow>"..MAKING_COST.."<color> l­îng ta s?gióp ng­¬i kÕt vßng hoa tuyÖt ®Ñp. Nh­ng l­u ? mçi ngµy ch?c?th?kÕt ®­îc 2 vßng Liªn Hoa cïng thuéc tİnh m?th«i.", getn(tab_Content), tab_Content);
+	Say("Ch?c ngi  thu th  s?Li yÕt Hoa v?<color=yellow>"..MAKING_COST.."<color> lng ta s?gi ngi k vg hoa tuy khiªm p. Nhg l ? m ng phô ch?c?th?k  2 vg Li yÕt Hoa cg thu nhuËn t v·n h m?th quyÕt .", getn(tab_Content), tab_Content);
 end;
 
 --{name, product}
 MAKING_COST = 10000;
 MAKING_COUNT = 9;
 tab_Flower = {
-	{1126, "½ğ", 1131, 1760, 1761}, {1127, "Ä¾", 1132, 1762, 1763}, {1128, "Ë® ", 1133, 1764, 1765}, {1129, "»ğ", 1134, 1766, 1767}, {1130, "ÍÁ", 1135, 1768, 1769}
+	{1126, "Kim ", 1131, 1760, 1761}, {1127, "Méc ", 1132, 1762, 1763}, {1128, "N­íc ", 1133, 1764, 1765}, {1129, " löa ", 1134, 1766, 1767}, {1130, "§Êt ", 1135, 1768, 1769}
 }
 
 function process(nIdx)
@@ -173,18 +173,18 @@ function process(nIdx)
 		nIndex = 5;
 	end;
 	
-	Say("Muèn lµm 1 vßng <color=yellow>"..tab_Flower[nIdx][2].." Liªn Hoa<color> cÇn c?9 <color=yellow>"..tab_Flower[nIdx][2].."Liªn Hoa<color>. Ng­¬i x¸c ®Şnh lµm ch?", 2, "§óng! Xin l·o bèi tr?tµi!/#make_round("..nIndex..")", "Ta s?quay l¹i sau!/Task_Wait");
+	Say("Mu l¹p l 1 vg <color=yellow>"..tab_Flower[nIdx][2].." Li yÕt Hoa<color> c c?9 <color=yellow>"..tab_Flower[nIdx][2].."Li yÕt Hoa<color>. Ngi x nh l ch?", 2, "ng! Xin l b tr?t nh­ng !/make_round("..nIndex..")", "Ta s?quay l t¹c sau!/Task_Wait");
 end;
 
 function make_round(nIdx)
 	if (GetCash() < MAKING_COST) then
-		Say("Xin t×m ®ñ 10000 l­îng råi h·y quay l¹i! Ta ?®©y ch?", 1, "§­îc th«i! Ta ®i lÊy thªm tiÒn!/Task_Wait");
+		Say("Xin t  10000 lng r m¹nh h quay l t¹c ! Ta ?y ch?", 1, " th quyÕt ! Ta  l th ¸p ti thİch !/Task_Wait");
 		return
 	end;
 	
 	local nCount = CalcEquiproomItemCount(6,1,tab_Flower[nIdx][1],-1);
 	if (nCount < 9) then
-		Say("Ng­¬i h×nh nh?ch­a ®ñ <color=yellow>"..tab_Flower[nIdx][2].." Liªn Hoa<color=yellow>. Ch­a ®ñ 9 <color=yellow>"..tab_Flower[nIdx][2].." Liªn Hoa<color> th?ta kh«ng th?gióp ng­¬i kÕt vßng "..tab_Flower[nIdx][2].." Liªn Hoa hoµn", 1, "§Ó ta ®i chuÈn b?®·!/Task_Wait");
+		Say("Ngi hh nh?ch  <color=yellow>"..tab_Flower[nIdx][2].." Li yÕt Hoa<color=yellow>. Ch  9 <color=yellow>"..tab_Flower[nIdx][2].." Li yÕt Hoa<color> th?ta kh tÇn g th?gi ngi k vg "..tab_Flower[nIdx][2].." Li yÕt Hoa ho yªu ", 1, " ta  chu oa b?!/Task_Wait");
 		return
 	end;
 	
@@ -196,7 +196,7 @@ function make_round(nIdx)
 	
 	local nTimes = GetTask(tab_Flower[nIdx][5]);
 	if (nTimes >= 2) then
-		Say(tab_Flower[nIdx][2].."H«m nay ®· kÕt thµnh c«ng 2 vßng råi! Mai h·y ®Õn nh?", 0)
+		Say(tab_Flower[nIdx][2].."H nay  k th yªu h c tÇn g 2 vg r m¹nh ! Mai h n nh?", 0)
 		return
 	end;
 	
@@ -204,8 +204,8 @@ function make_round(nIdx)
 	ConsumeEquiproomItem(9, 6, 1, tab_Flower[nIdx][1], -1);
 	SetTask(tab_Flower[nIdx][5], nTimes + 1);
 	AddItem(6, 1, tab_Flower[nIdx][3], 1, 0, 0, 0);
-	Say("Vßng "..tab_Flower[nIdx][2].." Liªn Hoa cña ng­¬i ®· kÕt xong. H·y mang n?®Õn ch?L?Quan ®i!", 1, "NhËn vßng hoa/Task_Wait");
-	Msg2Player("B¹n nhËn ®­îc mét"..tab_Flower[nIdx][2].." Liªn Hoa hoµn");
+	Say("Vg "..tab_Flower[nIdx][2].." Li yÕt Hoa c ngi  k xong. H mang n?n ch?L?Quan !", 1, "Nh nhÜ vg hoa/Task_Wait");
+	Msg2Player("B nh nhÜ  m"..tab_Flower[nIdx][2].." Li yÕt Hoa ho yªu ");
 end;
     
 -- ÈÎÎñÁ´µÄÈë¿Ú
@@ -246,8 +246,8 @@ end
 
 	if (tl_gettaskcourse() == 0) then
 		-- Èç¹û»¹Ã»ÓĞ¿ªÊ¼Ò°ÛÅµÄÈÎÎñÁ´µÄ»°
---		Say(" V?nµy"..GetPlayerSex().."xem ra ®· b«n ba giang h?®­îc mét thêi gian dµi råi nh? c?muèn tham gia kh¶o nghiÖm nhiÖm v?liªn tôc cña ta kh«ng?",3,"§­îc th«i! Ta kh«ng tin c?nhiÖm v?nµo lµm kh?d?®­îc ta/Task_Confirm","Ta muèn biÕt kh¶o nghiÖm cña ng­¬i nãi c?néi dung ra sao/Task_Info","Ta bËn råi, kh«ng r¶nh ngåi t¸n gÉu víi «ng/Task_Exit");
-		Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."¿´À´´³µ´½­ºşÒ²ÓĞÒ»¶ÎÊ±¼äÁË£¬¿É·ñÓĞĞËÈ¤À´²Î¼ÓÎÒµÄ<color=yellow>¡°»·»·Á´Á´Ïà°ãÅä£¬²ã²ãµüµüÈ¡ºñÀñ¡±<color>µÄÈÎÎñ¿¼ÑéÄØ£¿",3,"ºÃÑ½£¬ÎÒ¾Í²»ĞÅÓĞÊ²Ã´ÈÎÎñÄÜÄÑµÃµ¹ÎÒµÄ/Task_Confirm","ÎÒÏëÖªµÀÄãËµµÄ¿¼ÑéÊÇ¸öÊ²Ã´Ñù×Ó/Task_Info","ÎÒ»¹ÓĞÊÂ£¬Ã»¿ÕºÍÄãÔÚÕâÏĞ³¶/Task_Exit");
+--		Say("V?n phô "..GetPlayerSex().."xem ra  b tÇn ba giang h? m th ¸ch gian d nh­ng r m¹nh nh? c?mu l¹p tham gia kh nghi nhi v?li yÕt t c ta kh tÇn g?",3," th quyÕt ! Ta kh tÇn g tin c?nhi v?n kú l kh?d? ta/Task_Confirm","Ta mu l¹p bi kh nghi c ngi n c?n dung ra sao/Task_Info","Ta b nhÜ r m¹nh , kh tÇn g rh ng m¹nh t g cèt v tÇn g/Task_Exit");
+		Say("D· tÈu  vŞ nµy "..GetPlayerSex().." xem ra x«ng x¸o giang hå còng cã mét ®o¹n thêi gian , cã thÓ hay kh«ng cã høng thó tíi tham gia ta <color=yellow>“ hoµn hoµn liªn liªn t­¬ng xøng ®«i , tÇng tÇng ®iÖt ®iÖt lÊy hËu lÔ ”<color> ®İch nhiÖm vô kh¶o nghiÖm ®©y ? ",3,"H¶o nha , ta còng kh«ng tin cã c¸i g× nhiÖm vô cã thÓ khã ®­îc còng ta /Task_Confirm"," ta muèn biÕt ng­¬i nãi kh¶o nghiÖm lµ mét h×nh d¸ng g× /Task_Info","Ta cßn cã chuyÖn , kh«ng r·nh cïng ng­¬i ë ®©y rçi r·nh kĞo /Task_Exit");
 	end
 	
 	if (tl_gettaskcourse() == 3) then
@@ -258,8 +258,8 @@ end
 		myCountLinks = tl_counttasklinknum(2)
 		myCountTimes = tl_counttasklinknum(1)
 		
---		Say(":<enter>V?"..GetPlayerSex().."®· hoµn thµnh <color=yellow>"..myCountTimes.."<color>, nhiÖm v?nµy ngµy h«m nay c?th?thùc hiÖn l¹i<color=yellow>"..(40 - GetTask(ID_TASKLINK_LIMITNUM)).."<color>, ng­¬i c?muèn lµm n÷a kh«ng?",2,"§­¬ng nhiªn, mau cho ta biÕt nhiÖm v?tiÕp theo l?g?/Task_TaskProcess","§Ó ta ngh?ng¬i mét l¸t ®·! Ta bËn råi/Task_Wait");
-		Say("Ò°ÛÅ£º<enter>ÕâÎ»"..GetPlayerSex().."ÒÑ¾­Íê³ÉÁË <color=yellow>"..myCountTimes.."<color> ´ÎÎÒËù¸øÄãµÄÈÎÎñ£¬²»ÖªÄã»¹ÓĞÃ»ÓĞĞËÈ¤¼ÌĞø½Ó×Å×öÏÂÈ¥ÄØ£¿",2,"µ±È»£¬¿ìÈÃÎÒÖªµÀÏÂÒ»¸öÈÎÎñÊÇÊ²Ã´/Task_TaskProcess","»¹ÊÇÈÃÎÒĞªÒ»»á¶ù°É£¬ÎÒ»¹ÓĞ±ğµÄÊÂÇé/Task_Wait");
+--		Say(":<enter>V?"..GetPlayerSex().." ho yªu th yªu h <color=yellow>"..myCountTimes.."<color>, nhi v?n phô ng phô h nay c?th?th hi l t¹c <color=yellow>"..(40 - GetTask(ID_TASKLINK_LIMITNUM)).."<color>, ngi c?mu l¹p l n kh tÇn g?",2,"g nhi yÕt , mau cho ta bi nhi v?ti theo l?g?/Task_TaskProcess"," ta ngh?ng béi m l ! Ta b nhÜ r m¹nh /Task_Wait");
+		Say("D· tÈu <enter> vŞ nµy "..GetPlayerSex().." ®· hoµn thµnh <color=yellow>"..myCountTimes.."<color> lÇn ta ®­a cho nhiÖm vô cña ng­¬i , kh«ng biÕt ng­¬i cã cßn hay kh«ng høng thó tiÕp tôc tiÕp theo lµm tiÕp ®©y ? ",2,"DÜ nhiªn , mau ®Ó cho ta biÕt ng­êi/c¸i kÕ tiÕp nhiÖm vô lµ c¸i g× /Task_TaskProcess","H·y ®Ó cho ta nghØ mét l¸t mµ ®i , ta cßn kh¸c biÖt chuyÖn cña t×nh /Task_Wait");
 	elseif (tl_gettaskcourse() == 1) then
 		Task_MainDialog()
 	end
@@ -284,7 +284,7 @@ tl_settaskstate(6,0)
 
 storm_ask2start(4)	--Storm ¿ªÊ¼ÌôÕ½
 tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuDaTau")
---tbLog:PlayerActionLog("Ö÷ÒªÌØµã","NhanNhiemVuDaTau")
+--tbLog:PlayerActionLog("Chñ yÕu ®Æc ®iÓm ","NhanNhiemVuDaTau")
 end
 
 
@@ -323,21 +323,21 @@ tl_settaskcourse(1)
 
 
 if myTaskTotalNum==0 or myTaskTotalNum==nil then
-	myTitleText = "Ò°ÛÅ£º<enter><enter>"..myTaskInfo;
+	myTitleText = " d· tÈu <enter><enter>"..myTaskInfo;
 else
-	myTitleText = "Ò°ÛÅ£º<enter><enter>ÕâÊÇµÚ <color=green>"..myTaskTotalNum.."<color> ¸öÈÎÎñ£¬"..myTaskInfo;
+	myTitleText = " d· tÈu <enter><enter> ®©y lµ thø <color=green>"..myTaskTotalNum.."<color> c¸ nhiÖm vô , "..myTaskInfo;
 end;
 
 Say(myTitleText,
 	4,
---	"BiÕt råi, ®Ó ta hoµn thµnh nhiÖm v?xong míi l¹i t×m ng­¬i/Task_Wait",
---	"ta ®· hoµn thµnh nhiÖm v?lÇn nµy, xin h·y kiÓm tra l¹i!/Task_Accept",
---	"NhiÖm v?lÇn nµy kh?qu? Ta muèn hñy b?kh«ng lµm n÷a/Task_CancelConfirm",
---	"Ta muèn biÕt kh¶o nghiÖm cña ng­¬i nãi c?néi dung ra sao/Task_Info"
-	"ÖªµÀÁË£¬µÈÎÒÍê³ÉÈÎÎñºóÔÙÀ´ÕÒÄã/Task_Wait",
-	"ÎÒÒÑ¾­Íê³ÉÁËÕâ´ÎµÄÈÎÎñ£¬ÇëÄãÑéÊÕ°É£¡/Task_Accept",
-	"Õâ´ÎÈÎÎñÒ²Ì«ÄÑÁË£¬ÎÒÏëÈ¡Ïûµô²»×öÁË/Task_CancelConfirm",
-	"ÎÒÏëÖªµÀÄãËµµÄ¿¼ÑéÊÇ¸öÊ²Ã´Ñù×Ó/Task_Info"
+--	"Bi r m¹nh ,  ta ho yªu th yªu h nhi v?xong m l t¹c t ngi/Task_Wait",
+--	"ta  ho yªu th yªu h nhi v?l n phô , xin h ki tra l t¹c !/Task_Accept",
+--	"Nhi v?l n phô kh?qu? Ta mu l¹p h b?kh tÇn g l n/Task_CancelConfirm",
+--	"Ta mu l¹p bi kh nghi c ngi n c?n dung ra sao/Task_Info"
+	" biÕt , chê ta hoµn thµnh nhiÖm vô sau l¹i tíi t×m ng­¬i /Task_Wait",
+	" ta ®· hoµn thµnh nhiÖm vô lÇn nµy , mêi/xin ng­¬i nghiÖm thu ®i /Task_Accept",
+	" nhiÖm vô lÇn nµy còng qu¸ khã kh¨n , ta muèn hñy bá r¬i kh«ng lµm /Task_CancelConfirm",
+	" ta muèn biÕt ng­¬i nãi kh¶o nghiÖm lµ mét h×nh d¸ng g× /Task_Info"
 	);
 
 -- ÉèÖÃÈ¡ÏûÈÎÎñµÄ±ê¼ÇÎª¿ÉÒÔÈ¡Ïû
@@ -357,26 +357,26 @@ local myTaskCancel = tl_gettaskstate(4) -- Íæ¼Ò¿ÉÒÔÈ¡ÏûµÄ´ÎÊı
 local myCountTimes = tl_counttasklinknum(1);  -- Íæ¼Ò½øĞĞµÄÈÎÎñ×ÜÊı
 
 if (myTaskCancel==0) then
-	Say("Ò°ÛÅ£ºÄúÏÖÔÚÒ»´ÎÈ¡ÏûµÄ»ú»áÒ²Ã»ÓĞ£¬ÕâÑùÒ»À´Äã¾Í±ØĞëµÃ´ÓÍ·¿ªÊ¼à¸£¡¶øÇÒÄãÖ®Ç°µÄ½±ÀøÀÛ»ı¾Í»áÖØĞÂ¿ªÊ¼¼ÆÊı¡£",3,"ÊÇµÄ£¬ÎÒ¾ÍÊÇ²»Ïë×öÕâ¸ö¹íÈÎÎñ/Task_NormalCancel","ÎÒÏëÓÃ 100 ÕÅÉ½ºÓÉçğ¢Í¼²ĞÆ¬À´È¡ÏûÕâ´ÎÈÎÎñ/#Task_Cancel(2)","àÅ¡­¡­ÄÇ¾ÍÈÃÎÒÔÙÏëÏë°É/Task_Wait");
+	Say("D· tÈu  ngµi b©y giê mét lÇn hñy bá ®İch c¬ héi còng kh«ng cã , cø nh­ vËy ng­¬i liÒn ph¶i b¾t ®Çu l¹i tõ ®Çu ¸c  h¬n n÷a tr­íc ng­¬i ®İch t­ëng th­ëng tİch lòy sÏ lÇn n÷a b¾t ®Çu ®Õm hÕt . ",3,"§óng vËy , ta chİnh lµ kh«ng muèn lµm c¸i nµy quû nhiÖm vô /Task_NormalCancel","Ta muèn dïng 100 tê nói s«ng x· t¾c ®å m¶nh vôn tíi lÊy tiªu nhiÖm vô lÇn nµy /Task_Cancel(2)"," õ/d¹ …… vËy h·y ®Ó cho ta suy nghÜ l¹i mét chót ®i /Task_Wait");
 else
-	Say("Ò°ÛÅ£ºÄúÏÖÔÚ»¹ÓĞ "..myTaskCancel.." ´ÎÈ¡ÏûÈÎÎñµÄ»ú»á£¬ÄãÈ·¶¨ÒªÈ¡ÏûÕâ´ÎÈÎÎñÂğ£¿",2,"ÊÇµÄ£¬ÎÒ¾ÍÊÇ²»Ïë×öÕâ¸ö¹íÈÎÎñ/#Task_Cancel(1)","àÅ¡­¡­ÄÇ¾ÍÈÃÎÒÔÙÏëÏë°É/Task_Wait");
+	Say("D· tÈu  ngµi b©y giê cßn cã "..myTaskCancel.." lÇn hñy bá nhiÖm vô c¬ héi , ng­¬i nhÊt ®Şnh ph¶i hñy bá nhiÖm vô lÇn nµy sao ? ",2,"§óng vËy , ta chİnh lµ kh«ng muèn lµm c¸i nµy quû nhiÖm vô /Task_Cancel(1)"," õ/d¹ …… vËy h·y ®Ó cho ta suy nghÜ l¹i mét chót ®i /Task_Wait");
 end
 
 
 --if (myTaskCancel==0) then
 --	
---	Say(" HiÖn t¹i b¹n kh«ng c?c?héi nµo ®Ó hñy b?nhiÖm v? b¹n ch?c?th?lµm l¹i t?®Çu th«i! §ång thêi phÇn th­ëng tİch lòy cña b¹n lóc tr­íc s?®­îc tİnh l¹i t?®Çu.",
+--	Say("Hi t t¹c b kh tÇn g c?c?h n kú  h b?nhi v? b ch?c?th?l l t¹c t?u th quyÕt ! ng th ¸ch ph thng t chu h l c b l bİ trc s? t v·n h l t¹c t?u.",
 --		3,
---		"§óng, ta kh«ng muèn lµm nhiÖm v?qu?qu¸i nµy ®©u/Task_NormalCancel",
---		"Ta muèn s?dông 100 m¶nh s¬n H?X?T¾c ®Ó hñy b?nhiÖm v?lÇn nµy/#Task_Cancel(2)",
---		"Uhm! §Ó ta suy ngh?l¹i ®·/Task_Wait");
+--		"ng, ta kh tÇn g mu l¹p l nhi v?qu?qu n phô u/Task_NormalCancel",
+--		"Ta mu l¹p s?dg 100 mh s H?X?T l¨ng  h b?nhi v?l n phô /Task_Cancel(2)",
+--		"Uhm!  ta suy ngh?l t¹c /Task_Wait");
 --	
 --else
 --	
---	Say(" HiÖn t¹i b¹n cßn"..myTaskCancel.." s?lÇn c?héi hñy b?nhiÖm v? b¹n x¸c ®Şnh hñy b?nhiÖm v?lÇn nµy ®óng kh«ng?",
+--	Say("Hi t t¹c b c"..myTaskCancel.." s?l c?h h b?nhi v? b x nh h b?nhi v?l n phô ng kh tÇn g?",
 --		2,
---		"§óng, ta kh«ng muèn lµm nhiÖm v?qu?qu¸i nµy ®©u/#Task_Cancel(1)",
---		"Uhm! §Ó ta suy ngh?l¹i ®·/Task_Wait");
+--		"ng, ta kh tÇn g mu l¹p l nhi v?qu?qu n phô u/Task_Cancel(1)",
+--		"Uhm!  ta suy ngh?l t¹c /Task_Wait");
 --	
 --end
 
@@ -386,16 +386,16 @@ end
 -- Õı³£µÄÈ¡Ïû·½Ê½ÔÙÈ·ÈÏÒ»´Î
 function Task_NormalCancel()
 
-Say("Ò°ÛÅ£ºÄãÏëºÃÁËÕæµÄÒªÈ¡ÏûÕâ´ÎÈÎÎñÂğ£¿",2,"²»Òª†ªËôÁË£¬ÎÒ¾ÍÊÇ²»Ïë×öÕâ¸ö¹íÈÎÎñ/#Task_Cancel(1)","ÄÇ»¹ÊÇÈÃÎÒÔÙÏëÏë°É/Task_Wait");
+Say("D· tÈu  ng­¬i nghÜ tèt l¾m thËt muèn lÊy tiªu nhiÖm vô lÇn nµy sao ? ",2,"Kh«ng muèn la toa liÔu , ta chİnh lµ kh«ng muèn lµm c¸i nµy quû nhiÖm vô /Task_Cancel(1)","VËy hay lµ ®Ó cho ta suy nghÜ l¹i mét chót ®i /Task_Wait");
 
---Say(" B¹n suy ngh?k?hñy b?nhiÖm v?lÇn nµy ®óng kh«ng?",2,"§õng l«i th«i n÷a! ta kh«ng muèn lµm nhiÖm v?qu?qu¸i nµy ®©u/#Task_Cancel(1)","Th«i ®Ó ta suy ngh?l¹i ®·!/Task_Wait");
+--Say("B suy ngh?k?h b?nhi v?l n phô ng kh tÇn g?",2,"ng l quyÕt th quyÕt n! ta kh tÇn g mu l¹p l nhi v?qu?qu n phô u/Task_Cancel(1)","Th quyÕt  ta suy ngh?l t¹c !/Task_Wait");
 
 end;
 
 
 -- 1000 ´ÎÒÔÉÏµÄÈÎÎñÈ¡ÏûÊ±ĞèÒª·ÅË®¾§
 function Task_TotalCancel()
-	GiveItemUI("Ò°ÛÅÈÎÎñ1000´ÎÒÔÉÏÈ¡Ïû£¬ĞèÒªÌá¹©ÂÌË®¾§Ò»¿Å£¬Çë½«Ë®¾§·ÅÔÚÏÂÃæµÄÎïÆ·¿òÖĞ£º", "Task_TotalCancel_Main", "Task_Wait");
+	GiveItemUI("D· tÈu nhiÖm vô 1000 lÇn trë lªn hñy bá , cÇn cung cÊp n­íc biÕc tinh mét viªn , xin/mêi ®em thñy tinh ®Æt ë phİa d­íi vËt phÈm khu«ng trung ", "Task_TotalCancel_Main", "Task_Wait");
 end;
 
 
@@ -405,7 +405,7 @@ function Task_TotalCancel_Main(nCount)
 	local nIndex = 0;
 	
 	if nCount~=1 then
-		Say("Ò°ÛÅ£ºÄã¸øÎÒµÄ²»ÊÇÂÌÉ«µÄ<color=yellow>1¸ö<color> Ë®¾§!", 0);
+		Say("D· tÈu  ng­¬i cho ta kh«ng ph¶i lµ mµu xanh l¸ c©y <color=yellow>1 c¸ <color> thñy tinh !", 0);
 		return
 	end;
 	
@@ -415,7 +415,7 @@ function Task_TotalCancel_Main(nCount)
 	if nGenre==4 and nDetail==240 and nParticular==1 then
 		Task_Cancel(1);  -- È«²¿È¡Ïû
 	else
-		Say("Ò°ÛÅ:Äã¸øÎÒµÄ²»ÊÇÂÌÉ«µÄ<color=yellow>1¸ö<color> Ë®¾§!", 0);
+		Say("D· tÈu : ng­¬i cho ta kh«ng ph¶i lµ mµu xanh l¸ c©y <color=yellow>1 c¸ <color> thñy tinh !", 0);
 		return		
 	end;
 	
@@ -443,12 +443,12 @@ local myCountTimes = tl_counttasklinknum(1)
 
 -- local myMainValue = myTaskValue1 + (myTaskValue2 * (1+(myCountLinks+myTimes)*0.1))
 
--- local myMainValueText1 = "ÄãÄ¿Ç°µÄÈÎÎñÎïÆ·¼ÛÖµÎª: "..myTaskValue1.."  ÈÎÎñ¼ÛÖµÎª: "..myTaskValue2.."<enter>".."ÄãÏÖÔÚµÄÈÎÎñ×Ü¼ÛÖµÁ¿Îª: "..myMainValue
+-- local myMainValueText1 = " ng­¬i tr­íc m¾t ®İch nhiÖm vô vËt phÈm gi¸ trŞ v× : "..myTaskValue1.." nhiÖm vô gi¸ trŞ v× : "..myTaskValue2.."<enter>".." nhiÖm vô cña ng­¬i b©y giê tæng gi¸ trŞ l­îng v× : "..myMainValue
 
---	Say("Ò°ÛÅ£ºÄãÏÖÔÚ½øĞĞµ½ÁËµÚ "..myTaskLoops.." »·ÖĞµÄµÚ "..myTaskLinks.." Á´ÖĞµÄµÚ "..myTaskTimes.." ´Î¡£<enter>ÄãÁ¬Ğø½øĞĞµÄ´ÎÊıÎª£º"..tl_counttasklinknum(1).." ´Î<enter>ÄãÁ¬Ğø½øĞĞµÄÁ´ÊıÎª£º"..tl_counttasklinknum(2).." Á´<enter>"..myMainValueText1,0);
+--	Say("D· tÈu  ng­¬i b©y giê tiÕn hµnh ®­îc liÔu thø "..myTaskLoops.." hoµn trung ®İch thø "..myTaskLinks.." liªn trung ®İch thø "..myTaskTimes.." lÇn . <enter> ng­¬i liªn tôc tiÕn hµnh ®İch sè lÇn v× "..tl_counttasklinknum(1).." lÇn <enter> ng­¬i liªn tôc tiÕn hµnh ®İch liªn ®Õm v× "..tl_counttasklinknum(2).." liªn <enter>"..myMainValueText1,0);
 
---	Say(" HiÖn t¹i ng­êi ®· hoµn thµnh <color=yellow>"..myCountTimes.."<color> s?lÇn nhiÖm v?ta giao cho, cÇn c?g¾ng h¬n nh?", 0);
-	Say("Ò°ÛÅ£ºÄãÏÖÔÚÒÑ¾­Íê³ÉÁË <color=yellow>"..myCountTimes.."<color> ´ÎÎÒËù¸øÄãµÄÈÎÎñ£¬»¹Çë¼ÌĞøÅ¬Á¦Å¶£¡", 0);
+--	Say("Hi t t¹c ngi  ho yªu th yªu h <color=yellow>"..myCountTimes.."<color> s?l nhi v?ta giao cho, c c?g l­ìng g h nh?", 0);
+	Say("D· tÈu  ng­¬i b©y giê ®· hoµn thµnh <color=yellow>"..myCountTimes.."<color> lÇn ta ®­a cho nhiÖm vô cña ng­¬i , kİnh xin tiÕp tôc cè g¾ng nga ", 0);
 
 end
 
@@ -457,17 +457,17 @@ end
 function Task_Accept()
 	--2007-09-19 Ôö¼ÓÎïÆ·½±ÀøÊ±µÄ±³°ü¿Õ¼äÅĞ¶Ï
 	if (CalcFreeItemCellCount() < 5) then
-		Say("Ò°ÛÅ£ºÇëÇåÀíÄãµÄ°ü¸¤²»µÍÓÚ5¸ö¸ñ×Ó£¬È»ºóÀ´ÁìÈ¡½±Æ·£¡",0);
+		Say("D· tÈu  xin/mêi dän dÑp tói x¸ch cña ng­¬i phôc kh«ng thua kĞm 5 c¸ c¸ch tö , sau ®ã tíi nhËn lÊy phÇn th­ëng ",0);
 		return
 	end;
 local myTaskType = tl_getplayertasktype()
 
 	if (myTaskType == 1) then
-		GiveItemUI("Ñ°ÕÒÎïÆ·ÈÎÎñ","Ò°ÛÅ£ºÅ¶£¿ÎÒÈÃÄãÈ¥ÂòµÄ¶«Î÷Äã¸øÎÒÂòµ½ÁËÂğ£¿","Task_Accept_01","Task_Wait");
+		GiveItemUI("T×m kiÕm vËt phÈm nhiÖm vô ","D· tÈu  nga ? ta cho ng­¬i ®i mua ®å ng­¬i mua cho ta ®· tíi ch­a ? ","Task_Accept_01","Task_Wait");
 	elseif (myTaskType == 2) then
-		GiveItemUI("¹ºÂòÎïÆ·ÈÎÎñ","Ò°ÛÅ£ºÅ¶£¿ÎÒÈÃÄãÈ¥ÕÒµÄ¶«Î÷Äã¸øÎÒÕÒµ½ÁËÂğ£¿","Task_Accept_02","Task_Wait");
+		GiveItemUI("Mua vËt phÈm nhiÖm vô ","D· tÈu  nga ? ta cho ng­¬i ®i t×m ®å ng­¬i cho ta t×m ®­îc sao ? ","Task_Accept_02","Task_Wait");
 	elseif (myTaskType == 3) then
-		GiveItemUI("ÎïÆ·Õ¹Ê¾ÈÎÎñ","Ò°ÛÅ£ºÅ¶£¿ÎÒÈÃÄãÈ¥ÕÒµÄ¶«Î÷Äã¸øÎÒÕÒµ½ÁËÂğ£¿","Task_Accept_03","Task_Wait");
+		GiveItemUI("VËt phÈm biÓu diÔn nhiÖm vô ","D· tÈu  nga ? ta cho ng­¬i ®i t×m ®å ng­¬i cho ta t×m ®­îc sao ? ","Task_Accept_03","Task_Wait");
 	elseif (myTaskType == 4) then
 		Task_Accept_04()
 	elseif (myTaskType == 5) then
@@ -475,7 +475,7 @@ local myTaskType = tl_getplayertasktype()
 	elseif (myTaskType == 6) then
 		Task_Accept_06()
 	else -- Òì³£´¦Àí
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù×öµÄ¶«Î÷»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê lµm ®å cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 
 end
@@ -487,10 +487,10 @@ local myTaskGoods
 local ItemGenre,DetailType,ParticularType,Level,nSeries,Luck
 
 if ( nCount > 1 ) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬ÄãÒ»´Î·ÅÕâÃ´¶à¶«Î÷½øÀ´ÎÒÊÇ¿´µÃÄ¿²»Ï¾½ÓÑ½£¬»¹ÊÇÂıÂıÀ´°É¡­¡­",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i mét lÇn ®Ó nhiÒu nh­ vËy ®å ®i vµo ta lµ thÊy con m¾t bÊt h¹ tiÕp nha , cßn lµ tõ tõ ®i ®i ……",0);
 	return 0
 elseif ( nCount == 0) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬Äã¡­¡­ÕæµÄ·ÅÓĞ¶«Î÷ÔÚÀïÃæÂğ£¿ÊÇ²»ÊÇÎÒÀÏ»¨ÁËÑÛÑ½£¿",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i …… thËt ®Ó cã ®å cã ë bªn trong kh«ng ? cã ph¶i hay kh«ng ta l·o Hoa liÔu m¾t nha ? ",0);
 	return 0
 end
 
@@ -498,7 +498,7 @@ end
 --	magictype , p1, p2, p3 = GetItemMagicAttrib(nItemIndex, 1)
 	myTaskGoods = {ItemGenre,DetailType,ParticularType,nSeries,Level}
 	
---	tl_print ("Ò°ÛÅ¼ìÑéÁËÎïÆ·£º"..ItemGenre..DetailType..ParticularType..nSeries..Level)
+--	tl_print ("D· tÈu kiÓm nghiÖm liÔu vËt phÈm "..ItemGenre..DetailType..ParticularType..nSeries..Level)
 	
 	if (tl_checktask(myTaskGoods) == 1) then
 		RemoveItemByIndex(GetGiveItemUnit(1)) -- É¾³ıÍæ¼ÒÉíÉÏµÄÎïÆ·
@@ -506,7 +506,7 @@ end
 		Task_GiveAward()
 		-- ·¢½±´¦Àí
 	else
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù¸øµÄ¶«Î÷»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê ®­a cho ®İch ®å cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 end
 
@@ -520,10 +520,10 @@ local magictype,p1,p2,p3
 local i,n,m = 0,0,0
 
 if ( nCount > 1 ) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬ÄãÒ»´Î·ÅÕâÃ´¶à¶«Î÷½øÀ´ÎÒÊÇ¿´µÃÄ¿²»Ï¾½ÓÑ½£¬»¹ÊÇÂıÂıÀ´°É¡­¡­",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i mét lÇn ®Ó nhiÒu nh­ vËy ®å ®i vµo ta lµ thÊy con m¾t bÊt h¹ tiÕp nha , cßn lµ tõ tõ ®i ®i ……",0);
 	return 0
 elseif ( nCount == 0) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬Äã¡­¡­ÕæµÄ·ÅÓĞ¶«Î÷ÔÚÀïÃæÂğ£¿ÊÇ²»ÊÇÎÒÀÏ»¨ÁËÑÛÑ½£¿",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i …… thËt ®Ó cã ®å cã ë bªn trong kh«ng ? cã ph¶i hay kh«ng ta l·o Hoa liÔu m¾t nha ? ",0);
 	return 0
 end
 
@@ -531,7 +531,7 @@ end
 		ItemGenre,DetailType,ParticularType,Level,nSeries,Luck = GetItemProp(GetGiveItemUnit(1))
 		magictype , p1, p2, p3 = GetItemMagicAttrib(GetGiveItemUnit(1), i)
 		myTaskGoods = {ItemGenre,DetailType,ParticularType,Level,nSeries,magictype,p1,p2,p3}
---		tl_print("¼ìÑéÁËÄ§·¨ÊôĞÔ "..i.." :".." Ä§·¨ ID Îª: "..magictype.."  Ä§·¨²ÎÊı1Îª: "..p1.."  Ä§·¨²ÎÊı2Îª: "..p2.." Ä§·¨²ÎÊı3Îª: "..p3);
+--		tl_print("KiÓm nghiÖm liÔu ma ph¸p thuéc tİnh "..i.." :".." ma ph¸p ID v× : "..magictype.." ma ph¸p tham sæ 1 v× : "..p1.." ma ph¸p tham sæ 2 v× : "..p2.." ma ph¸p tham sæ 3 v× : "..p3);
 		n = tl_checktask(myTaskGoods)
 		if (n == 1) then
 			m = 1
@@ -543,7 +543,7 @@ end
 		Task_AwardRecord()
 		Task_GiveAward()
 	else
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù¸øµÄ¶«Î÷»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê ®­a cho ®İch ®å cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 	
 end
@@ -558,10 +558,10 @@ local i,n,m = 0,0,0
 
 
 if ( nCount > 1 ) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬ÄãÒ»´Î·ÅÕâÃ´¶à¶«Î÷½øÀ´ÎÒÊÇ¿´µÃÄ¿²»Ï¾½ÓÑ½£¬»¹ÊÇÂıÂıÀ´°É¡­¡­",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i mét lÇn ®Ó nhiÒu nh­ vËy ®å ®i vµo ta lµ thÊy con m¾t bÊt h¹ tiÕp nha , cßn lµ tõ tõ ®i ®i ……",0);
 	return 0
 elseif ( nCount == 0) then
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."£¬Äã¡­¡­ÕæµÄ·ÅÓĞ¶«Î÷ÔÚÀïÃæÂğ£¿ÊÇ²»ÊÇÎÒÀÏ»¨ÁËÑÛÑ½£¿",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." , ng­¬i …… thËt ®Ó cã ®å cã ë bªn trong kh«ng ? cã ph¶i hay kh«ng ta l·o Hoa liÔu m¾t nha ? ",0);
 	return 0
 end
 
@@ -579,7 +579,7 @@ end
 		Task_GiveAward()
 		-- ·¢½±´¦Àí
 	else
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù¸øµÄ¶«Î÷»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê ®­a cho ®İch ®å cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 	
 end
@@ -593,7 +593,7 @@ function Task_Accept_04()
 		Task_GiveAward()
 		-- ·¢½±´¦Àí
 	else
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù×öµÄÊÂÇé»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê chuyÖn lµm cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 	
 end
@@ -607,7 +607,7 @@ function Task_Accept_05()
 		Task_GiveAward()
 		-- ·¢½±´¦Àí
 	else
-		Say("Ò°ÛÅ£ºÄãÏÖÔÚËù×öµÄÊÂÇé»¹Ã»ÓĞ´ïµ½ÎÒµÄÒªÇóÅ¶£¬»¹ÊÇÇëÄãÔÙÅ¬Á¦°É£¡",0);
+		Say("D· tÈu  ng­¬i b©y giê chuyÖn lµm cßn kh«ng cã ®¹t tíi yªu cÇu cña ta nga , cßn lµ mêi/xin ng­¬i cè g¾ng n÷a ®i ",0);
 	end
 	
 end
@@ -622,7 +622,7 @@ function Task_Accept_06()
 		Task_GiveAward()
 		return 1
 	else
-		Say("Ò°ÛÅ£º¹ş¹ş¹ş¡­¡­ÕâÎ»"..GetPlayerSex().."£¬Ä³Ëä²»²Å£¬µ«Ò²Ã÷°×½­ºşÉÏ½²µÄÊÇÒ»¸öĞÅ×Ö£¬Äã¶¼»¹Ã»ÓĞÊÕ¼¯ÍêÎÒËùÒªÇóµÄÉ½ºÓÉçğ¢Í¼²ĞÆ¬ÔõÃ´¾ÍÏëÀ´ÁìÉÍÁËÄØ£¿",0);
+		Say("D· tÈu  ha ha ha …… vŞ nµy "..GetPlayerSex().." , mét tuy bÊt tµi , nh­ng còng hiÓu trªn giang hå nãi lµ mét tin/th¬ ch÷ , ng­¬i còng cßn kh«ng cã thu tËp hoµn ta muèn cÇu nói s«ng x· t¾c ®å m¶nh vôn thÕ nµo liÒn muèn tíi lÜnh th­ëng ®©y ? ",0);
 		return 0
 	end
 
@@ -652,7 +652,7 @@ end;
 
 -- ÅĞ¶ÏÊÇ·ñ´æÔÚË¢È¡Ïû»ú»áµÄĞĞÎª
 if _CancelTaskDebug()~=1 then
-	Say("Ò°ÛÅ£ºàÅ¡­¡­ÄêÇáÈË£¬ºÃÏñÄãÒÑ¾­Ã»ÓĞÈ¡Ïû»ú»áÁËÅ¶£¡", 0);
+	Say("D· tÈu  õ/d¹ …… ng­êi tuæi trÎ , gièng nh­ ng­¬i ®· kh«ng cã hñy bá c¬ héi nga ", 0);
 	return
 end;
 
@@ -664,10 +664,10 @@ if checkTask_Limit()~=1 then return end;
 			myMapNum = myMapNum - 100;
 			nt_setTask(1027, myMapNum);
 			myTaskCancel = myTaskCancel + 1;
-			Msg2Player("ÄúÊ¹ÓÃÁË 100 ÕÅÉ½ºÓÉçğ¢Í¼²ĞÆ¬À´È¡ÏûÒ»´ÎÈÎÎñ£¡");
-			Msg2Player("ÄúÏÖÔÚµÄÉ½ºÓÉçğ¢Í¼²ĞÆ¬»¹Ê£ "..myMapNum.." ÕÅ£¡");
+			Msg2Player("Ngµi sö dông 100 tê nói s«ng x· t¾c ®å m¶nh vôn tíi lÊy tiªu mét lÇn nhiÖm vô ");
+			Msg2Player("Ngµi b©y giê nói s«ng x· t¾c ®å m¶nh vôn cßn l¹i "..myMapNum.." tê ");
 		else
-			Say("Ò°ÛÅ£ºÄã¡­¡­Äã¡­¡­ÄãÕæµÄ´øÓĞ <color=yellow>100<color> ÕÅÉ½ºÓÉçğ¢Í¼²ĞÆ¬À´Âğ£¿ÎÒÃ»¿´ÑÛ»¨°É£¿",0);
+			Say("D· tÈu  ng­¬i …… ng­¬i …… ng­¬i thËt mang cã <color=yellow>100<color> tê nói s«ng x· t¾c ®å m¶nh vôn tíi sao ? ta kh«ng cã nh×n hoa m¾t ®i ? ",0);
 			return
 		end;
 	end;
@@ -726,7 +726,7 @@ if checkTask_Limit()~=1 then return end;
 		-- ÔÚÕâÀï¼ÇÂ¼Ò»ÏÂÈÎÎñµÄ×ÜÊı
 		nt_setTask(1044, tl_counttasklinknum(1));
 		
---		Msg2Player("<color=yellow>Chuçi nhiÖm v?D?TÈu ®· xãa b?hoµn toµn, b©y gi?s?ph¶i lµm l¹i t?nhiÖm v?®Çu tiªn<color>!");
+--		Msg2Player("<color=yellow>Chu nhi v?D?T  x b?ho yªu to yªu , b gi?s?ph tiªn l l t¹c t?nhi v?u ti yÕt <color>!");
 	end
 	
 	-- ÉèÖÃÈ¡ÏûÈÎÎñµÄ±ê¼ÇÎª²»¿ÉÒÔÈ¡Ïû
@@ -742,10 +742,10 @@ end;
 function Task_Info()
 	Talk(4,
 		"tasklink_entence",
-		"Ò°ÛÅ£ºÎÒÕâ´Î°²ÅÅµÄ¿¼Ñé·ÖÎª¸÷ÖÖ²»Í¬ÀàĞÍµÄĞ¡ÈÎÎñÀ´¼ìÑé¸÷Î»ÎäÁÖÈËÊ¿µÄÎäÊõÓëÄÍÁ¦¡£",
-		"Ò°ÛÅ£ºÃ¿Íê³ÉÒ»´ÎÈÎÎñ¶¼ÓĞ<color=red>ÏàÓ¦µÄ½±Àø<color>µÈ×Å¸÷Î»£¬ÖÁÓÚÄÜÁ¬Ğø´ï³É<color=red>°ËÇ§´Î<color>ÈÎÎñµÄÈËÔò»áÓĞ<color=red>ÖµµÃ¾ªÏ²µÄ±¨³ê<color>µÈ×ÅÄã£¡",
-		"Ò°ÛÅ£º¶øÈç¹ûÄãÔÚÆäÖĞ·ÅÆúÁËÒ»¸öÈÎÎñµÄ»°£¬Ôò½«´ÓµÚÒ»¸öÈÎÎñ¿ªÊ¼ËãÆğ¡£²»¹ı£¬ÎÒÓĞÊ±ºî»¹ÊÇ»á¸øÓèÄãÈ¡ÏûÈÎÎñµÄ»ú»á£¬ÄÇµÃ¿´Äã×Ô¼ºÔõÃ´°ÑÎÕÁË¡£",
-		"Ò°ÛÅ£ºÔõÃ´Ñù£¿ÄêÇáÈË£¬ÓĞÃ»ÓĞĞËÈ¤À´½ÓÊÜÎÒµÄÕâ¸ö¿¼ÑéÑ½£¿"
+		" d· tÈu  ta ®©y lÇn an bµi kh¶o nghiÖm chia lµm c¸c lo¹i bÊt ®ång lo¹i h×nh tiÓu nhiÖm vô tíi kiÓm nghiÖm c¸c vŞ vâ l©m nh©n sÜ ®İch vâ thuËt cïng n¹i lùc . ",
+		" d· tÈu  mçi hoµn thµnh mét lÇn nhiÖm vô ®Òu cã <color=red> t­¬ng øng t­ëng th­ëng <color> chê c¸c vŞ , vÒ phÇn cã thÓ liªn tôc ®¹t thµnh <color=red> t¸m ngµn lÇn <color> nhiÖm vô ng­êi lµ sÏ cã <color=red> ®¸ng gi¸ vui mõng thï lao <color> chê ng­¬i ",
+		" d· tÈu  mµ nÕu nh­ ng­¬i ë ®©y trong ®ã bá qua mét c¸i nhiÖm vô lêi cña , lµ ®em tõ nhiÖm vô thø nhÊt b¾t ®Çu coi lµ khëi . bÊt qu¸ , ta cã lóc hÇu cßn lµ sÏ cho d­ ng­¬i hñy bá nhiÖm vô c¬ héi , kia ph¶i xem ng­¬i m×nh t¹i sao n¾m chÆc . ",
+		" d· tÈu  nh­ thÕ nµo ? ng­êi tuæi trÎ , cã høng thó hay kh«ng tíi ®ãn bŞ ta c¸i nµy kh¶o nghiÖm nha ? "
 		);
 end
 
@@ -754,9 +754,9 @@ end
 function Task_Exit()
 
 	if (GetSex() == 0) then
-		Say("Ò°ÛÅ£º¹ş¹ş¹ş¡­¡­µÈ¹«×ÓÖªµÀÁËÍ¨¹ıÎÒµÄ¿¼ÑéÓĞ¶à·áºñµÄ½±Àøºó¾Í×ÔÈ»»áÔÙ»ØÀ´ÕÒÎÒÁË¡£",0);
+		Say("D· tÈu  ha ha ha …… chê c«ng tö biÕt th«ng qua kh¶o nghiÖm cña ta cã nhiÒu phong phó t­ëng th­ëng sau liÒn tù nhiªn sÏ trë vÒ n÷a t×m ta liÔu . ",0);
 	else
-		Say("Ò°ÛÅ£º¹ş¹ş¹ş¡­¡­µÈÕâÎ»Å®ÏÀÖªµÀÁËÍ¨¹ıÎÒµÄ¿¼ÑéÓĞ¶à·áºñµÄ½±Àøºó¾Í×ÔÈ»»áÔÙ»ØÀ´ÕÒÎÒÁË¡£",0);
+		Say("D· tÈu  ha ha ha …… chê vŞ nµy n÷ hiÖp biÕt th«ng qua kh¶o nghiÖm cña ta cã nhiÒu phong phó t­ëng th­ëng sau liÒn tù nhiªn sÏ trë vÒ n÷a t×m ta liÔu . ",0);
 	end
 end
 
@@ -768,7 +768,7 @@ end
 
 
 function Task_Punish()
-	Say("Ò°ÛÅ£ºÕâÎ»"..GetPlayerSex().."ÊÇ²»ÊÇÒ²Ì«×Å¼±ÁËĞ©£¬ÎÒ°²ÅÅµÄ¿¼ÑéÕæµÄÕâÃ´ÄÑÂğ£¿Äã»¹ÊÇ³ÙĞ©ÔÙÀ´°É£¡",0);
+	Say("D· tÈu  vŞ nµy "..GetPlayerSex().." cã ph¶i hay kh«ng còng qu¸ gÊp g¸p liÔu chót , ta an bµi kh¶o nghiÖm thËt khã kh¨n nh­ thÕ sao ? ng­¬i cßn lµ tr× chót trë l¹i ®i ",0);
 	return 0
 end
 
@@ -794,10 +794,10 @@ function Task_GiveAward()
 --		SetTask(TKS_TASKLINK_SPITEM, nTotalTaskNum);
 --		local tbItem = {tbProp = {6, 1, 2374, 1, 0, 0}}
 --		tbAwardTemplet:GiveAwardByList(tbItem, "seasonnpc_10task")
---		Msg2Player(format("Chóc mõng ®¹i hiÖp ®· hoµn thµnh liªn tiÕp %d nhiÖm v?D?TÈu, nhËn ®­îc phÇn th­ëng %s!", 10, "B¶o r­¬ng thÇn b?cña D?TÈu"));
+--		Msg2Player(format("Ch bİ m vŞ g i hi  ho yªu th yªu h li yÕt ti %d nhi v?D?T, nh nhÜ  ph thng %s!", 10, "B rng th b?c D?T"));
 --	end
 
-	--tl_print ("¸øÁ´½±ÀøºÍ»·½±Àø·¢½±Íê±Ï£¡£¡£¡");
+	--tl_print ("Cho liªn t­ëng th­ëng cïng hoµn t­ëng th­ëng ph¸t t­ëng xong ");
 	local nTongValue;
 	myAward, nTongValue = tl_giveplayeraward(1);
 	if (not nTongValue) then
@@ -809,14 +809,14 @@ function Task_GiveAward()
 	end;
 	
 	for i=1,3 do
-	--	tl_print ("µÃµ½½ğÇ®½±Àø£¡");
+	--	tl_print (" lÊy ®­îc kim tiÒn t­ëng th­ëng ");
 		if (myAward[i][1] == 1) then
-			ShowText[i] = "µÃµ½"..myAward[i][9].."/3".."/"..myAward[i][2].."/SelectAward_Money"
+			ShowText[i] = " lÊy ®­îc "..myAward[i][9].."/3".."/"..myAward[i][2].."/SelectAward_Money"
 		elseif (myAward[i][1] == 2) then
-			ShowText[i] = "µÃµ½"..myAward[i][9].."/4".."/"..myAward[i][2].."/SelectAward_Exp"
+			ShowText[i] = " lÊy ®­îc "..myAward[i][9].."/4".."/"..myAward[i][2].."/SelectAward_Exp"
 		elseif (myAward[i][1] == 3) then
 			myGoodsText = myAward[i][3]..","..myAward[i][4]..","..myAward[i][5]..","..myAward[i][6]..","..myAward[i][7]..","..myAward[i][8]
-			ShowText[i] = "µÃµ½"..myAward[i][9].."/5".."/"..myGoodsText.."/mySG"
+			ShowText[i] = " lÊy ®­îc "..myAward[i][9].."/5".."/"..myGoodsText.."/mySG"
 		elseif (myAward[i][1] == 4) then
 			if (myAward[i][10]==1) then
 				myGoodsText = myAward[i][3]..","..myAward[i][4]..","..myAward[i][5]..","..myAward[i][6]..","..myAward[i][7]..","..myAward[i][8]
@@ -828,7 +828,7 @@ function Task_GiveAward()
 			end
 			
 		elseif (myAward[i][1] == 5) then
-			ShowText[i] = "µÃµ½"..myAward[i][9].."/7".."/"..myAward[i][1].."/SelectAward_Cancel"
+			ShowText[i] = " lÊy ®­îc "..myAward[i][9].."/7".."/"..myAward[i][1].."/SelectAward_Cancel"
 		end
 		
 	end
@@ -837,9 +837,9 @@ function Task_GiveAward()
 	tl_print(ShowText[2])
 	tl_print(ShowText[3])
 	
-Prise( "Ò°ÛÅ£ºĞÁ¿àÁË£¬ÇëÕâÎ»"..GetPlayerSex().."¿´¿´ÄÄÒ»Ñù¶«Î÷ÊÇÄã×îÏëÒªµÄÄØ£¿",ShowText[1],ShowText[2],ShowText[3] );
+Prise( "D· tÈu  cùc khæ , xin/mêi vŞ nµy "..GetPlayerSex().." xem mét chót bªn nµo ®å lµ ng­¬i rÊt muèn ®İch ®©y ? ",ShowText[1],ShowText[2],ShowText[3] );
 	
-	--tl_print ("·¢½±Íê±Ï£¡£¡£¡£¡£¡");
+	--tl_print ("Ph¸t t­ëng xong ");
 
 end
 
@@ -867,29 +867,29 @@ function mySG(myQuality,myGenre,myDetail,myParticular,myLevel,myFive)
 
 -- ·ÀÖ¹¶à¸öÃæ°æµ¯³öÀ´Ë¢½±ÀøµÄ´¦Àí
 if (tl_gettaskcourse() == 3) then
-	Say("Ò°ÛÅ£ºÄãÒÑ¾­Áì¹ı½±ÀøÁËÅ¶£¬ÔõÃ´»¹ÏëÔÙÁìÄØ£¿",0);
+	Say("D· tÈu  ng­¬i ®· dÉn qu¸ phÇn th­ëng nga , thÕ nµo cßn muèn n÷a dÉn ®©y ? ",0);
 	return
 end
 	--2007-09-19 Ôö¼ÓÎïÆ·½±ÀøÊ±µÄ±³°ü¿Õ¼äÅĞ¶Ï
 	if (CalcFreeItemCellCount() < 5) then
-		Say("Ò°ÛÅ£ºÇëÇåÀí°ü¸¤¸ñ×Ó²»µÍÓÚ5¸ö£¬È»ºóÔÙÀ´ÁìÈ¡½±Àø£¡",0);
+		Say("D· tÈu  xin/mêi dän dÑp bäc quÇn ¸o c¸ch tö kh«ng thua kĞm 5 c¸ , sau ®ã sÏ tíi nhËn lÊy t­ëng th­ëng ",0);
 		return
 	end;
 	
---	tl_print("µÃµ½ÁË½±ÀøÎïÆ·±àºÅ£º"..myQuality..myGenre..myDetail..myParticular..myLevel..myGoodsFive);
+--	tl_print(" lÊy ®­îc t­ëng th­ëng vËt phÈm biªn sè "..myQuality..myGenre..myDetail..myParticular..myLevel..myGoodsFive);
 	if (myQuality == 0) then
 		AddItem(myGenre,myDetail,myParticular,myLevel,myFive,0,0)
 		
 		if (myDetail==238) or (myDetail==239) or (myDetail==240) or (myDetail==252) then
-			WriteLog("[ÈÎÎñÁ´½±Àø¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚÈÎÎñÁ´½±ÀøÖĞµÃµ½ÁË±¦Ê¯Ò»¸ö£¬±¦Ê¯µÄÀàĞÍ±àºÅÎª£º"..myDetail)
+			WriteLog("[ nhiÖm vô liªn t­ëng th­ëng ghi chĞp ]"..date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." ë nhiÖm vô liªn t­ëng th­ëng trung lÊy ®­îc b¶o th¹ch mét , b¶o th¹ch lo¹i h×nh biªn sè v× "..myDetail)
 		end
 
 	else
 		AddGoldItem(0,myGenre)
-		AddGlobalNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÒòÎªÍê³ÉÁËÈÎÎñÔÚÒ°ÛÅ´¦µÃµ½ÁË»Æ½ğ×°±¸Ò»¼ş£¡£¡£¡");
-		WriteLog("[ÈÎÎñÁ´½±Àø¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚÈÎÎñÁ´½±ÀøÖĞµÃµ½ÁË»Æ½ğ×°±¸Ò»¼ş£¬»Æ½ğ×°±¸±àºÅÎª£º"..myGenre)
+		AddGlobalNews("Th«ng b¸o  nhµ ch¬i "..GetName().." bëi v× hoµn thµnh nhiÖm vô ë d· tÈu chç lÊy ®­îc hoµng kim trang bŞ mét mãn ");
+		WriteLog("[ nhiÖm vô liªn t­ëng th­ëng ghi chĞp ]"..date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." ë nhiÖm vô liªn t­ëng th­ëng trung lÊy ®­îc hoµng kim trang bŞ mét mãn , hoµng kim trang bŞ biªn sè v× "..myGenre)
 	end
-	Msg2Player("ÄúµÃµ½ÁËÒ»¸öÈÎÎñÎïÆ·½±Àø£¡");
+	Msg2Player("Ngµi lÊy ®­îc mét c¸i nhiÖm vô vËt phÈm t­ëng th­ëng ");
 	
 	tl_settaskcourse(3)
 	PayPlayerLinkAward();
@@ -903,28 +903,28 @@ end
 	Task_NewVersionAward()
 end
 
--- Ñ¡ÔñÁË½ğÇ®µÄ½±Àø
+-- Ñ¡ÔñÁËKim Ç®µÄ½±Àø
 function SelectAward_Money(nAward)
 
 -- ·ÀÖ¹¶à¸öÃæ°æµ¯³öÀ´Ë¢½±ÀøµÄ´¦Àí
 if (tl_gettaskcourse() == 3) then
-	Say("Ò°ÛÅ£ºÄãÒÑ¾­Áì¹ı½±ÀøÁËÅ¶£¬ÔõÃ´»¹ÏëÔÙÁìÄØ£¿",0);
+	Say("D· tÈu  ng­¬i ®· dÉn qu¸ phÇn th­ëng nga , thÕ nµo cßn muèn n÷a dÉn ®©y ? ",0);
 	return
 end
 
 	Earn(nAward)
-	Msg2Player("ÄúµÃµ½ÁË <color=green>"..nAward.."<color> Á½Òø×Ó");
+	Msg2Player("Ngµi lÊy ®­îc <color=green>"..nAward.."<color> l­îng b¹c ");
 	
 	tl_settaskcourse(3)	
 	PayPlayerLinkAward();
 	
-	-- Èç¹û½±ÀøµÄ½ğÇ®ÊıÁ¿´óÓÚ 30W£¬Ôò¼ÇLOG
+	-- Èç¹û½±ÀøµÄKim Ç®ÊıÁ¿´óÓÚ 30W£¬Ôò¼ÇLOG
 	if nAward>=300000 then
-		WriteLog("[ÈÎÎñÁ´½ğÇ®¼ÇÂ¼]"..
-				 date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]")..
-				 "[ÕËºÅ]"..GetAccount()..
-				 "[½ÇÉ«]"..GetName()..
-				 "ÔÚÈÎÎñÁ´ÖĞ»ñµÃÁË<money>"..nAward.."</money>Á½Òø×ÓµÄ½±Àø£¡");
+		WriteLog("[ nhiÖm vô liªn kim tiÒn ghi chĞp ]"..
+				 date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]")..
+				 "[ tr­¬ng môc ]"..GetAccount()..
+				 "[ vai trß ]"..GetName()..
+				 " ë nhiÖm vô liªn trung thu ®­îc <money>"..nAward.."</money> l­îng b¹c ®İch t­ëng th­ëng ");
 	end;
 	local nBeishu = greatnight_huang_event(4);
 	local nTongValueGift = GetTaskTemp(TASKID_TONG_TASKLINKTEMP);
@@ -940,12 +940,12 @@ function SelectAward_Exp(nAward)
 
 -- ·ÀÖ¹¶à¸öÃæ°æµ¯³öÀ´Ë¢½±ÀøµÄ´¦Àí
 if (tl_gettaskcourse() == 3) then
-	Say("Ò°ÛÅ£ºÄãÒÑ¾­Áì¹ı½±ÀøÁËÅ¶£¬ÔõÃ´»¹ÏëÔÙÁìÄØ£¿",0);
+	Say("D· tÈu  ng­¬i ®· dÉn qu¸ phÇn th­ëng nga , thÕ nµo cßn muèn n÷a dÉn ®©y ? ",0);
 	return
 end
 
 	tl_addPlayerExp(nAward)
-	Msg2Player("ÄúµÃµ½ÁË <color=green>"..nAward.."<color> µã¾­ÑéÖµ");
+	Msg2Player("Ngµi lÊy ®­îc <color=green>"..nAward.."<color> chót kinh nghiÖm trŞ gi¸ ");
 	
 	tl_settaskcourse(3)
 	PayPlayerLinkAward();
@@ -963,11 +963,11 @@ function SelectAward_Change(nAward)
 
 -- ·ÀÖ¹¶à¸öÃæ°æµ¯³öÀ´Ë¢½±ÀøµÄ´¦Àí
 if (tl_gettaskcourse() == 3) then
-	Say("Ò°ÛÅ£ºÄãÒÑ¾­Áì¹ı½±ÀøÁËÅ¶£¬ÔõÃ´»¹ÏëÔÙÁìÄØ£¿",0);
+	Say("D· tÈu  ng­¬i ®· dÉn qu¸ phÇn th­ëng nga , thÕ nµo cßn muèn n÷a dÉn ®©y ? ",0);
 	return
 end
 
-	Msg2Player("ÄúµÃµ½ÁËËæ»úÔÙÑ¡ÔñÒ»´Î½±ÀøµÄ»ú»á£¡");
+	Msg2Player("Ngµi lÊy ®­îc ngÉu nhiªn n÷a lùa chän mét lÇn t­ëng th­ëng ®İch c¬ héi ");
 	
 	tl_settaskcourse(3)
 	PayPlayerLinkAward();
@@ -982,7 +982,7 @@ local myNewCancel = GetTask(DEBUG_TASKVALUE);
 
 	-- ·ÀÖ¹¶à¸öÃæ°æµ¯³öÀ´Ë¢½±ÀøµÄ´¦Àí
 	if (tl_gettaskcourse() == 3) then
-		Say("Ò°ÛÅ£ºÄãÒÑ¾­Áì¹ı½±ÀøÁËÅ¶£¬ÔõÃ´»¹ÏëÔÙÁìÄØ£¿",0);
+		Say("D· tÈu  ng­¬i ®· dÉn qu¸ phÇn th­ëng nga , thÕ nµo cßn muèn n÷a dÉn ®©y ? ",0);
 		return
 	end
 
@@ -1005,14 +1005,14 @@ local myNewCancel = GetTask(DEBUG_TASKVALUE);
 	tl_settaskstate(4, myCancel);
 	
 	if myCancel<=254 then
-		Msg2Player("ÄúµÃµ½ÁË <color=green>Ò»´ÎÈ¡ÏûÈÎÎñµÄ»ú»á<color>!");
+		Msg2Player("Ngµi lÊy ®­îc <color=green>Ò»´ÎÈ¡ÏûÈÎÎñµÄ»ú»á<color>!");
 	end;
 
-	WriteLog("[ÈÎÎñÁ´½±Àø¼ÇÂ¼]"..
-			 date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö%SÃë]")..
-			 "[ÕËºÅ]"..GetAccount()..
-			 "[½ÇÉ«]"..GetName()..
-			 "ÔÚÈÎÎñÁ´ÖĞ»ñµÃÁËÈ¡Ïû»ú»áµÄ½±Àø£¬µ±Ç°µÄÈ¡Ïû»ú»áÎª <"..myCancel.."> ´Î¡£");
+	WriteLog("[ nhiÖm vô liªn t­ëng th­ëng ghi chĞp ]"..
+			 date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n %S gi©y ]")..
+			 "[ tr­¬ng môc ]"..GetAccount()..
+			 "[ vai trß ]"..GetName()..
+			 " ë nhiÖm vô liªn trung thu ®­îc hñy bá c¬ héi t­ëng th­ëng , tr­íc mÆt ®İch hñy bá c¬ héi v× <"..myCancel.."> lÇn . ");
 	
 	tl_settaskcourse(3)	
 	PayPlayerLinkAward();
@@ -1027,10 +1027,10 @@ local myNewCancel = GetTask(DEBUG_TASKVALUE);
 end
 
 
--- ·¢¸øÍæ¼ÒÁ´½±Àø¡¢»·½±Àø»òÕß»Æ½ğ×°±¸
+-- ·¢¸øÍæ¼ÒÁ´½±Àø¡¢»·½±Àø»òÕß»ÆKim ×°±¸
 function PayPlayerLinkAward()
 
-local myGolden = {2,6,11,16,21,22,26,31,39,40,42,46,51,54,56,60,61,67,71,76,81,87,92,94,96,101,106,107,115,119,121,122,126,132,136,144,145,146} -- 20 »·½±Àø»Æ½ğ×°±¸µÄ±àºÅ
+local myGolden = {2,6,11,16,21,22,26,31,39,40,42,46,51,54,56,60,61,67,71,76,81,87,92,94,96,101,106,107,115,119,121,122,126,132,136,144,145,146} -- 20 »·½±Àø»ÆKim ×°±¸µÄ±àºÅ
 local nGoldenID = 0
 
 local myTaskTimes = tl_gettaskstate(1)
@@ -1050,17 +1050,17 @@ if (nTotalTask == 8000) then
 
 --	nGoldenID = myGolden[random(getn(myGolden))]
 	
-	-- Âú 8000 ´ÎÈÎÎñ½±Àø 1E ½ğÇ®
+	-- Âú 8000 ´ÎÈÎÎñ½±Àø 1E Kim Ç®
 	Earn(100000000);
 	
 --	AddGoldItem( 0, nGoldenID )
 	
-	WriteLog("[ÈÎÎñÁ´½±Àø¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚÈÎÎñÁ´½±ÀøÖĞÒòÎªÍê³É 8000 ´ÎÈÎÎñµÃµ½ÁË»Æ½ğ×°±¸Ò»¼ş£¬»Æ½ğ×°±¸±àºÅÎª£º"..nGoldenID)
+	WriteLog("[ nhiÖm vô liªn t­ëng th­ëng ghi chĞp ]"..date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." ë nhiÖm vô liªn t­ëng th­ëng trung bëi v× hoµn thµnh 8000 lÇn nhiÖm vô lÊy ®­îc hoµng kim trang bŞ mét mãn , hoµng kim trang bŞ biªn sè v× "..nGoldenID)
 	
-	AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÒòÎªÍê³ÉÁË 8000 ´ÎÈÎÎñÔÚÒ°ÛÅ´¦µÃµ½ÁËÃÅÅÉ´ó»Æ½ğ×°±¸Ò»¼şºÍ½£ÏÀ±ÒÒ»ÒÚÁ½£¡£¡£¡", 3);
+	AddGlobalCountNews("Th«ng b¸o  nhµ ch¬i "..GetName().." bëi v× hoµn thµnh 8000 lÇn nhiÖm vô ë d· tÈu chç lÊy ®­îc m«n ph¸i ®¹i hoµng kim trang bŞ mét mãn cïng kiÕm hiÖp tiÒn mét øc hai ", 3);
 	
 	for i=1,3 do
-		Msg2Player("¹§Ï²Äã£¡£¡ÒòÎªÄãÁ¬ĞøÍê³ÉÁË 8000 ´ÎÈÎÎñËùÒÔµÃµ½ÁËÒ»¸ö¼«Æ·½±ÀøºÍÒ»ÒÚÁ½½£ÏÀ±Ò£¡£¡£¡");
+		Msg2Player("Chóc mõng ng­¬i  bëi v× ng­¬i liªn tôc hoµn thµnh 8000 lÇn nhiÖm vô cho nªn lÊy ®­îc mét cùc phÈm t­ëng th­ëng cïng mét øc hai kiÕm hiÖp tiÒn ");
 	end
 
 	return
@@ -1102,11 +1102,11 @@ local nDiff    = 0;
 	if nOrgTask==nDecTask or nOrgTask==0 then
 		return 1;
 	else
-		WriteLog("[ÈÎÎñÁ´³ö´í¼ÇÂ¼]"..
-				 date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö%SÃë]")..
-				 "[ÕËºÅ]"..GetAccount()..
-				 "[½ÇÉ«]"..GetName()..
-				 "ÈÎÎñÈ¡Ïû»ú»á²»¾ùµÈ£¬µ±Ç°È¡Ïû»ú»áÎª <"..nDecTask..">£¬±¸·İµÄÈ¡Ïû»ú»áÎª <"..nOrgTask..">¡£");
+		WriteLog("[ nhiÖm vô liªn bŞ lçi ghi chĞp ]"..
+				 date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n %S gi©y ]")..
+				 "[ tr­¬ng môc ]"..GetAccount()..
+				 "[ vai trß ]"..GetName()..
+				 " nhiÖm vô hñy bá c¬ héi kh«ng ®Òu chê , tr­íc mÆt hñy bá c¬ héi v× <"..nDecTask.."> , bŞ ph©n ®İch hñy bá c¬ héi v× <"..nOrgTask.."> . ");
 		return 0;
 	end;
 
@@ -1119,9 +1119,9 @@ end;
 function _WriteCancelLog(nType, nTime, nCancel)
 
 	if nType==1 then
-		WriteLog("[ÈÎÎñÁ´È¡Ïû¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚÈÎÎñ´ÎÊıÎª"..nTime.."È¡Ïû»ú»áÊ£Óà"..nCancel.."Ê±È¡ÏûÁËÒ»´ÎÈÎÎñ¡£");
+		WriteLog("[ nhiÖm vô liªn hñy bá ghi chĞp ]"..date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." ë nhiÖm vô sè lÇn v× "..nTime.." hñy bá c¬ héi cßn thõa l¹i "..nCancel.." lóc hñy bá mét lÇn nhiÖm vô . ");
 	else
-		WriteLog("[ÈÎÎñÁ´È¡Ïû¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚÈÎÎñ´ÎÊıÎª"..nTime.."Ê±ÓÃ100ÕÅÉçğ¢Í¼È¡ÏûÁËÒ»´ÎÈÎÎñ¡£");
+		WriteLog("[ nhiÖm vô liªn hñy bá ghi chĞp ]"..date("[%y n¨m %m th¸ng %d ngµy %H lóc %M ph©n ]").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." ë nhiÖm vô sè lÇn v× "..nTime.." lóc dïng 100 tê x· t¾c ®å hñy bá mét lÇn nhiÖm vô . ");
 	end;
 
 end;

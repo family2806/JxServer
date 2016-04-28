@@ -35,16 +35,16 @@ tabRate = {
 };
 
 tab_Goods = {
-{"¸£ÔµÂ¶ (Ð¡) ",	1,	122	},
-{"¸£ÔµÂ¶(ÖÐ) ",	1,	123	},
-{"¸£ÔµÂ¶(´ó) ",	1,	124	},
-{"Ðþ¾§3¼¶",	3,	147	},
-{"ÏÉ²ÝÂ¶ ",	1,	71	},
-{"Ðþ¾§4¼¶",	4,	147	},
-{"Ðþ¾§5¼¶",	5,	147	},
-{"Ðþ¾§6¼¶",	6,	147	},
-{"Ðþ¾§7¼¶",	7,	147	},
-{"½ÚÈÕÑÌ»¨",	1,	1345 },
+{"Phóc Duyªn Lé (TiÓu) ",	1,	122	},
+{"Phóc Duyªn Lé (Trung) ",	1,	123	},
+{"Phóc Duyªn Lé (§¹i) ",	1,	124	},
+{"HuyÒn tinh cÊp 3",	3,	147	},
+{"Tiªn Th¶o Lé ",	1,	71	},
+{"HuyÒn Tinh cÊp 4",	4,	147	},
+{"HuyÒn Tinh cÊp 5",	5,	147	},
+{"HuyÒn Tinh cÊp 6",	6,	147	},
+{"HuyÒn Tinh cÊp 7",	7,	147	},
+{"Ph¸o hoa ngµy TÕt",	1,	1345 },
 };
 
 function festival_goodsaward(nRank)
@@ -55,7 +55,7 @@ function festival_goodsaward(nRank)
 	else
 		AddItem(6, 1, tab_Goods[nGoodsType][3], tab_Goods[nGoodsType][2], 0, 0, 0);
 	end;
-	Msg2Player("Äã»ñµÃ <color=yellow>"..tab_Goods[nGoodsType][1].."<color>.");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>"..tab_Goods[nGoodsType][1].."<color>.");
 end;
 
 function festival_getgoodtype(nRank)
@@ -79,7 +79,7 @@ function festival_expaward(nRank)
     end;
     local nCount = tabExp[nRank];
 	AddOwnExp(nCount);
-	Msg2Player("Äã»ñµÃ<color=yellow>"..nCount.."<color>¾­ÑéÖµ")
+	Msg2Player("B¹n nhËn ®­îc<color=yellow>"..nCount.."<color>®iÓm kinh nghiÖm")
 end;
 
 

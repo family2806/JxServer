@@ -28,7 +28,7 @@ function main(nItemIndex)
 		shouxi_CreateBook()
 	else
 		AddItem(nG, nD, nP, nL, 1, 1);
-		Msg2Player("ÄúµÃµ½ÁË<color=green>"..tb_JXAN_SHOUXIGIFT[nItemN][2].."<color>Ò»¸ö");
-		WriteLog(date().."\t[½£ÍøÈıÖÜÄê]\tName:"..GetName().."\tAccount:"..GetAccount().."\t´ÓÊÙìûÀñ°üÖĞ»ñµÃ"..tb_JXAN_SHOUXIGIFT[nItemN][2].."Ò»¸ö")
+		Msg2Player("B¹n nhËn ®­îc <color=green>"..tb_JXAN_SHOUXIGIFT[nItemN][2].."<color> 1 ");
+		WriteLog(date().."\t[VLTK trßn 3 n¨m]\tName:"..GetName().."\tAccount:"..GetAccount().."\t më Thä lÔ bao nhËn ®­îc "..tb_JXAN_SHOUXIGIFT[nItemN][2].."mét ng­êi ë ")
 	end;
 end;

@@ -47,13 +47,13 @@ ChengShi_GiftsTabfile:release()
 
 function main()
 	if CalcFreeItemCellCount() < 6 then
-		Talk(1,"","×°±¸²»×ã¿ÕÎ»£¬²»ÄÜ´ò¿ªºì°ü.")
-		Msg2Player("×°±¸²»×ã¿ÕÎ»£¬²»ÄÜ´ò¿ªºì°ü.")
+		Talk(1,"","Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ më ®¹i hång bao.")
+		Msg2Player("Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ më ®¹i hång bao.")
 		return 1
 	end
 	local idx = ChengShi_BonusHongbao:randomSelect()
 	if(not idx) then
-		Msg2Player("Äú´ò¿ªºì°ü·¢ÏÖÀïÃæÊ²Ã´Ò²Ã»ÓÐ.")
+		Msg2Player("B¹n më ®¹i hång bao ra ph¸t hiÖn bªn trong kh«ng cã g× hÕt.")
 		return 0
 	end
 	ChengShi_BonusHongbao:payBonus(PlayerIndex,idx)

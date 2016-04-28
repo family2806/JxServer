@@ -8,8 +8,8 @@ function OnDeath()
 		UTask_wd40tmp = SetBit(GetTaskTemp(16),2,1)
 		if (UTask_wd40tmp == 31) then
 			SetTask(5,40*256+40)
-			AddNote("ÊÕ·ş5Ö»ÈóÄïµÄ°×Óñ»¢. ")
-			Msg2Player("ÊÕ·ş5Ö»ÈóÄïµÄ°×Óñ»¢. ")
+			AddNote("Thu phôc ®­îc n¨m con  B¹ch Ngäc Hæ cña NhuËn N­¬ng. ")
+			Msg2Player("Thu phôc ®­îc n¨m con  B¹ch Ngäc Hæ cña NhuËn N­¬ng. ")
 		else
 			SetTaskTemp(16, UTask_wd40tmp)
 		end

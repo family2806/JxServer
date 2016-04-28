@@ -20,5 +20,5 @@ function main()
 		return 1;
 	end;
 	AddSkillState(SKILLTYPE, SKILLLEVEL2, SKILLLEVEL3, SKILLLEVEL41 * SKILLLEVEL42); --第二个参数是技能的级别；
-	Msg2Player("<#>你获得了<color=0xB5FDD7>"..SKILLEFECT.."<color>");
+	Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7>"..SKILLEFECT.."<color>");
 end;

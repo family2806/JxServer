@@ -7,18 +7,18 @@ function main()
 end
 function zhongqiu0808_npc_main()
 	if zhongqiu0808_IsActDate() ~= 1 then
-		return Say("»î¶¯ÒÑ½áÊø.", 0)
+		return Say("Ho¹t ®éng ®· kÕt thóc.", 0)
 	end
 	local tbSay = 
 	{
-		"<dec><npc>ÖĞÇï»î¶¯´Ó05-09-2008 µ½ 05-10-2008 24:00Ê±¾ÙĞĞ ,°üÀ¨6´ó»î¶¯£¬ÏëÁË½âÄÄ¸ö»î¶¯?",
-		"ÉÍÔÂÖĞÇï±ı»î¶¯/zhongqiu0808_hecheng_dialog",
-		"ÁúÖİ-·ïÓğ»î¶¯/zhongqiu0808_longzhuhecheng_dialog",
-		"Îå²ÊµÆÁı»î¶¯/#zhongqiu0808_ActContent(1)",
-		"±±¶·ÀÏÈË»î¶¯/#zhongqiu0808_ActContent(4)",
-		"Õ½¹¦Ñ«ÕÂ»î¶¯/#zhongqiu0808_ActContent(3)",
-		"Î¯ÍĞÊÕ¼¯»î¶¯/#zhongqiu0808_ActContent(2)",
-		"ÔÚÏÂÖ»ÊÇË³±ãÂ·¹ı!/OnCancel",
+		"<dec><npc>Ho¹t ®éng trung thu diÔn ra tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, bao gåm 6 ho¹t ®éng, muèn t×m hiÓu ho¹t ®éng nµo?",
+		"Ho¹t ®éng b¸nh trung thu Th­ëng NguyÖt/zhongqiu0808_hecheng_dialog",
+		"Ho¹t ®éng Long ch©u - Phông vò/zhongqiu0808_longzhuhecheng_dialog",
+		"Ho¹t ®éng ®Ìn kĞo qu©n/#zhongqiu0808_ActContent(1)",
+		"Ho¹t ®éng B¾c ®Èu l·o nh©n/#zhongqiu0808_ActContent(4)",
+		"Ho¹t ®éng huy ch­¬ng chiÕn c«ng/#zhongqiu0808_ActContent(3)",
+		"Ho¹t ®éng ñy th¸c thu thËp/#zhongqiu0808_ActContent(2)",
+		"T¹i h¹ chØ tiÖn ®­êng qua ®©y!/OnCancel",
 	}
 	CreateTaskSay(tbSay);
 end
@@ -30,28 +30,28 @@ function zhongqiu0808_ActContent(nStep)
 	if nStep == 1 then
 		tbSay = 
 		{
-			"<dec><npc>Îå²ÊµÆÁı»î¶¯´Ó05-09-2008 µ½05-10-2008 24µã¾ÙĞĞ. ¾ßÌåÊ±¼äÎª£ºÃ¿ÖÜ´ÓÖÜÒ»µ½ÖÜËÄ19:00 - 19:59, 21:30 - 22:29; ÖÜÎå¡¢ÖÜÁùºÍÖÜÈÕÎª£º11:00 - 11:59, 19:00 - 19:59, 21:30 - 22:29. »î¶¯¿ªÊ¼ºó£¬Îå²ÊµÆÁı½«»áÔÚËùÓÃ°æÍ¼³öÏÖ£¬Íæ¼Ò¿ÉÒÔÓÃºìÀ¯Öò(¿ÉÒÔÔÚNPCĞ¡··´¦¹ºÂò) À´µãµÆÁı(ĞèÒª¸ù¾İ¶«Î÷ÄÏ±±µÄ´ÎĞòÀ´µã)²ÅÄÜ»ñµÃ½±Àø.",
-			"½áÊø¶Ô»°/OnCancel"
+			"<dec><npc>Ho¹t ®éng ®Ìn kĞo qu©n diÔn ra tõ 05-09-2008 ®Õn 24 giê ngµy 05-10-2008. Thêi gian cô thÓ: Tõ thø hai ®Õn thø n¨m mçi tuÇn: 19:00 - 19:59, 21:30 - 22:29; Thø s¸u, thø b¶y vµ chñ nhËt mçi tuÇn: 11:00 - 11:59, 19:00 - 19:59, 21:30 - 22:29. Sau khi ho¹t ®éng ®­îc b¾t ®Çu, ®Ìn kĞo qu©n sÏ xuÊt hiÖn trªn tÊt c¶ b¶n ®å, ng­êi ch¬i cã thÓ dïng nÕn ®á (cã thÓ mua t¹i NPC hµng rong) ®Ó th¾p ®Ìn (ph¶i c¨n cø theo tuÇn tù §«ng T©y Nam B¾c ®Ó th¾p ®Ìn) th× míi cã thÓ nhËn ®­îc gi¶i th­ëng.",
+			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 		
 	elseif nStep == 2 then
 		tbSay = 
 		{
-			"<dec><npc>´Ó05-09-2008 µ½05-10-2008 24Ê±, Íæ¼ÒÒÔ°×¾ÔÍèÔÚÏßÎ¯ÍĞ½«»ñµÃÏÉÓğºĞ",
-			"½áÊø¶Ô»°/OnCancel"
+			"<dec><npc>Tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, ng­êi ch¬i ñy th¸c trªn m¹ng b»ng c¸c lo¹i B¹ch CÇu Hoµn sÏ nhËn ®­îc hép Tiªn Vò.",
+			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 	elseif nStep == 3 then
 		tbSay = 
 		{
-			"<dec><npc>ÔÚ»î¶¯Ê±¼ä´Ó05-09-2008 µ½05-10-2008 24Ê±, ÔÚÕù¶á½ğ·½´ó½«³ÆºÅ»òÕßËÎ·½´ó½«³ÆºÅµÄÕ½³¡µÄÍ·20ÈË½«»ñµÃÕ½¹¦Ñ«ÕÂ¡£´ËÍâ£¬Íæ¼Ò¿ÉÒÔµ½ËÎ·½»òÕß½ğ·½NPC¾üĞè¹ÙÄÇÀïÊ¹ÓÃ2000»ı·Ö»»È¡Ò»¸ö¹¦×´ÁîÅÆ¡£Ê¹ÓÃÕ½¹¦Ñ«ÕÂºÍ¹¦×´ÁîÅÆ½«»ñµÃ¾­ÑéÖµºÍÓĞ¼ÛÖµµÄÎïÆ·¡£",
-			"½áÊø¶Ô»°/OnCancel"
+			"<dec><npc>Trong thêi gian ho¹t ®éng tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, 20 ng­êi ®øng ®Çu chiÕn tr­êng ®o¹t danh hiÖu §¹i t­íng phe Kim hoÆc §¹i t­íng phe Tèng sÏ nhËn ®­îc huy ch­¬ng chiÕn c«ng. Ngoµi ra ng­êi ch¬i cã thÓ ®Õn NPC Qu©n Nhu Quan bªn Tèng hoÆc bªn Kim, sö dông 2000 ®iÓm tİch lòy Tèng Kim ®Ó ®æi 1 C«ng tr¹ng lÖnh bµi. Sö dông ChiÕn c«ng huy ch­¬ng vµ C«ng tr¹ng lÖnh bµi sÏ nhËn ®­îc ®iÓm kinh nghiÖm vµ vËt phÈm gi¸ trŞ.",
+			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 		
 	elseif nStep == 4 then
 		tbSay = 
 		{
-			"<dec><npc>ÔÚ»î¶¯Ê±¼äÄÚ£¬(05-09-2008 µ½05-10-2008 24Ê±), ÔÚÃ¿ÖÜÖÜÎå¡¢ÖÜÁù¡¢ÖÜÈÕ½«¾ÙĞĞ±±¶·ÀÏÈË»î¶¯.",
-			"½áÊø¶Ô»°/OnCancel"
+			"<dec><npc>Trong thêi gian ho¹t ®éng (05-09-2008 ®Õn 24:00 ngµy 05-10-2008), vµo thø s¸u, thø b¶y, chñ nhËt hµng tuÇn sÏ diÔn ra ho¹t ®éng B¾c ®Èu l·o nh©n.",
+			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 	end
 	CreateTaskSay(tbSay);

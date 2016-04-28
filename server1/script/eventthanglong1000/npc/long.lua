@@ -2,21 +2,21 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\EventThangLong1000\\head.lua")
 tbCTL = 
 {
-	{szName = "¹¦×´Áî", tbProp = {6,1, 30048,1,0,0}, nExpiredTime = 20101025, nCount = 1},
+	{szName = "C«ng Tr¹ng LÖnh", tbProp = {6,1, 30048,1,0,0}, nExpiredTime = 20101025, nCount = 1},
 }
 function main(nItemIndex)
 	local nItemData	= tonumber(FormatTime2String("%Y%m%d%H%M",ITEM_GetExpiredTime(nItemIndex)));
 	local nDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	if (GetLevel() < 50) then
-		Talk(1, "", "µÈ¼¶Ğ¡ÓÚ50²»ÄÜÊ¹ÓÃ!");
+		Talk(1, "", "§¼ng cÊp nhá h¬n 50 kh«ng thÓ sö dông !");
 		return 1
 	end
 	if CalcFreeItemCellCount() < 10 then
-			Talk(1, "", "×°±¸²»×ã10¸ö¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 10 « trèng.");
 			return 1
 	end
 	local nGenre, nDetailType, nPartType = GetItemProp(nItemIndex)
@@ -30,33 +30,33 @@ end
 
 function TieuLongControl()
 	if (GetTask(Task_Use_TieuLong) >= 1000) then
-		Talk(1, "", "(ÒÑÊ¹ÓÃ¸ÃÎïÆ·×î¶àÁË£¬²»ÄÜÔÙÊ¹ÓÃÁË!.");
+		Talk(1, "", "(§· sö dông tèi ®a vËt phÈm nµy. Kh«ng thÓ sö dông thªm ®­îc n÷a !.");
 		return 1
 	end
 	SetTask(Task_Use_TieuLong, GetTask(Task_Use_TieuLong) + 1)
-	tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 ÄêÉıÁú, Use Ğ¡Áú");
+	tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 N¨m Th¨ng Long, Use TiÓu Long");
 	AddOwnExp(2000000)
-	Msg2Player("Äã»ñµÃ2000000 ¾­ÑéÖµ")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 ÄêÉıÁú"..GetAccount().."\t"..GetName().."\t".."Ê¹ÓÃĞ¡ÁúÁìÈ¡2000000 µãEXP ")
+	Msg2Player("Ban nhËn ®­îc 2000000 ®iÓm kinh nghiÖm")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 N¨m Th¨ng Long"..GetAccount().."\t"..GetName().."\t".."Sö Dông TiÓu Long nhËn 2000000 ®iÓm EXP ")
 end
 function TrungDaiLongControl(nPartType)
 	if (GetTask(Task_Use_TrungDaiLong) >= 60000) then
-		Talk(1, "", "(ÒÑÊ¹ÓÃ¸ÃÎïÆ·×î¶àÁË£¬²»ÄÜÔÙÊ¹ÓÃÁË!.");
+		Talk(1, "", "(§· sö dông tèi ®a vËt phÈm nµy. Kh«ng thÓ sö dông thªm ®­îc n÷a !.");
 		return 1
 	end
 	if (nPartType == 30054) then--Èç¹ûÊÇ´óÁú
-		tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 ÄêÉıÁú, Use ´óÁú");		
-		tbAwardTemplet:GiveAwardByList(tbAwardItemUseDaiLong, "Event 1000 ÄêÉıÁú");
+		tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 N¨m Th¨ng Long, Use §¹i Long");		
+		tbAwardTemplet:GiveAwardByList(tbAwardItemUseDaiLong, "Event 1000 N¨m Th¨ng Long");
 		local nExp, nTaskValue = GetValueByRandom(tbAwardExp)
 		SetTask(Task_Use_TrungDaiLong, GetTask(Task_Use_TrungDaiLong) + nTaskValue)
 		AddOwnExp(nExp)
-		Msg2Player(format("´óÏÀ»ñµÃ%d ¾­ÑéÖµ", nExp))
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000ÄêÉıÁú"..GetAccount().."\t"..GetName().."\t".."Ê¹ÓÃÖĞÁú»ñµÃ¾­ÑéÖµ  " .. nExp)
+		Msg2Player(format("§¹i hiÖp nhËn ®­îc %d ®iÓm kinh nghiÖm", nExp))
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 N¨m Th¨ng Long"..GetAccount().."\t"..GetName().."\t".."Sö Dông Trung Long nhËn ®iÓm EXP  " .. nExp)
 	else
 		SetTask(Task_Use_TrungDaiLong, GetTask(Task_Use_TrungDaiLong) + 20)
 		AddOwnExp(2000000)
-		Msg2Player("´óÏÀ»ñµÃ 2000000 ¾­ÑéÖµ!")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 ÄêÉıÁú"..GetAccount().."\t"..GetName().."\t".."Ê¹ÓÃÖĞÁú»ñµÃ¾­ÑéÖµ 2000000")
+		Msg2Player("§¹i hiÖp nhËn ®­îc 2000000 ®iÓm kinh nghiÖm !")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."Event 1000 N¨m Th¨ng Long"..GetAccount().."\t"..GetName().."\t".."Sö Dông Trung Long nhËn ®iÓm EXP 2000000")
 	end
 	
 	

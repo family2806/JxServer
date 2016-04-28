@@ -51,7 +51,7 @@ function SetMessengerPlayer(messengertask1,messengertask2,taskgiveexp,MapId) --´
 		end
 		
 	if ( nt_getTask(1273) >= 14000000 ) then
-		Msg2Player("¶Ô²»Æğ£¬Äã½ñÌìÔÚĞÅÊ¹¹Ø»ñµÃµÄ¾­ÑéÖµÒÑ³¬¹ıÉÏÏŞ£¬Ã÷ÌìÔÙÀ´°É£¬Ğ»Ğ»!")
+		Msg2Player("Xin lçi! §iÓm kinh nghiÖm h«m nay b¹n nhËn ®­îc trong ¶i Tİn sø ®· v­ît qu¸ giíi h¹n. Ngµy mai h·y ®Õn, c¸m ¬n!")
 	end
 end;
 
@@ -83,7 +83,7 @@ function messenger_killbugbear_inteam(taskgiveexp,BMapId)  --Ğ¡¹Ö¹Òµôºóµ÷ÓÃµÄ¸ø¶
 			return
 		end
 	elseif ( nt_getTask(1273) >= 14000000 ) then
-		Msg2Player("¶Ô²»Æğ£¬Äã½ñÌìÔÚĞÅÊ¹¹Ø»ñµÃµÄ¾­ÑéÖµÒÑ³¬¹ıÉÏÏŞ£¬Ã÷ÌìÔÙÀ´°É£¬Ğ»Ğ»!")
+		Msg2Player("Xin lçi! §iÓm kinh nghiÖm h«m nay b¹n nhËn ®­îc trong ¶i Tİn sø ®· v­ît qu¸ giíi h¹n. Ngµy mai h·y ®Õn, c¸m ¬n!")
 	end
 end;
 
@@ -135,7 +135,7 @@ function messenger_killnpc_jifen(realjifen,BMapId)
 			return
 		end
 	elseif ( nt_getTask(1274) >= xianzhijifen ) then
-		Msg2Player("¶Ô²»Æğ£¬Äã½ñÌìÔÚĞÅÊ¹¹Ø»ñµÃµÄ¾­ÑéÖµÒÑ³¬¹ıÉÏÏŞ£¬Ã÷ÌìÔÙÀ´°É£¬Ğ»Ğ»!")
+		Msg2Player("Xin lçi! §iÓm kinh nghiÖm h«m nay b¹n nhËn ®­îc trong ¶i Tİn sø ®· v­ît qu¸ giíi h¹n. Ngµy mai h·y ®Õn, c¸m ¬n!")
 	end
 end
 

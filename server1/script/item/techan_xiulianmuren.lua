@@ -38,14 +38,14 @@ function main(nItemIndex)
 	
 	
 	if %checkOnlyUseInMap() ~= 1 then
-		Msg2Player("´ËµØÍ¼Äã²»ÄÜÊ¹ÓÃ´ËµÀ¾ß.")
+		Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
 		return 1
 	end
 	
 	
 	
 	if (n_my_count >= 100) then
-		Msg2Player("ÄúµÄÊ¹ÓÃ×î´óÊıÁ¿ÒÑ¾­³¬¹ı100¸ö²»ÄÜÔÙÊ¹ÓÃ.");
+		Msg2Player("Mçi ng­êi ch¬i mçi ngµy chØ ®­îc sö dông nhiÒu nhÊt 100 Tu luyÖn méc nh©n.");
 		return 1;
 	end
 	
@@ -57,7 +57,7 @@ function main(nItemIndex)
 			return 1
 		end
 		if ( CheckAllMaps(w) == 1 ) then
-			Msg2Player("ÔÚÕâÀïÔõÃ´ÄÜ½øĞĞĞŞÁ¶ÄØ£¿»¹ÊÇÈ¥Ò°Íâ°É¡£")
+			Msg2Player("ë ®©y lµm sao mµ tËp luyÖn ®­îc chø? H·y ra bªn ngoµi kia.")
 			return 1
 		end
 		local nParam1 = GetItemParam(nItemIndex, 2)	--¹ºÂòÄ¾ÈËÊ±×÷·»µÄÊ¹ÓÃµÈ¼¶
@@ -67,21 +67,21 @@ function main(nItemIndex)
 		bossid = 1161
 		bosslvl = 100
 		--local key = random(1,100000)
-		local npcindex = AddNpc(bossid,bosslvl,mapindex,posx,posy,1,GetName().."µÄĞŞÁ¶Ä¾ÈË",2)
+		local npcindex = AddNpc(bossid,bosslvl,mapindex,posx,posy,1,GetName().."Méc nh©n",2)
 		if (npcindex > 0) then
 			SetNpcParam(npcindex, 2, nParam1)
 			local playerid = String2Id(GetName())
 			SetNpcParam(npcindex, 3, floor( playerid/100000 ) )
 			SetNpcParam(npcindex, 4, mod( playerid, 100000 ) )
 			SetNpcDeathScript(npcindex, "\\script\\tong\\npc\\muren_death.lua")
-			Msg2Player("ÄãÉèÖÃÁËÒ»¸öĞŞÁ¶Ä¾ÈË£¬¸Ï¿ì½øĞĞĞŞÁ¶°É¡£")
+			Msg2Player("Méc nh©n ®· xuÊt hiÖn, h·y mau ®i luyÖn tËp.")
 			
 			SetTask(TSK_MAXCOUNT, SetByte(n_my_value, 2, n_my_count+1));		-- ½ñÌìÊ¹ÓÃ´ÎÊı¼ÆÊı
 			--SetTask(1740, key)
 		end
 		return 0
 	else
-		Msg2Player("ĞŞÁ¶Ä¾ÈËÖ»ÄÜÔÚÒ°ÍâÊ¹ÓÃ¡£")
+		Msg2Player("Méc nh©n chØ cã thÓ sö dông ë khu vùc chiÕn ®Êu.")
 		return 1
 	end
 end

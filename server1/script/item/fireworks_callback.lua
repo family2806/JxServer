@@ -19,7 +19,7 @@ function doBlessFireWorks(szParam)
 		PlayerIndex = 1
 	else
 		PlayerIndex = pidx
-		Msg2Player("ÄúµÄÅóÓÑ<color=yellow>"..rolename.."<color>¸øÄú·¢ÁËÒ»ÕÅÑÌ»¨ºØ¿¨£¬²¢×£ÄúÍòÊÂË³Òâ£¬ºÏ¼Ò°²¿µ£¡")
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..rolename.."<color> mét thiÖp ph¸o hoa, víi lêi chóc v¹n sù nh­ ı, c¶ nhµ b×nh an!")
 	end
 	for i = 1, getn(tbPos) do
 		CastSkill(687, 1, tbPos[i][1] * 32, tbPos[i][2] * 32)

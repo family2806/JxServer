@@ -18,21 +18,21 @@ function main()
 	local name = GetName()
 	
 	if ( messenger_middletime() == 10  ) then
-		Msg2Player("¶Ô²»Æğ! "..name.."! ÄãÒÑÃ»Ê±¼äÖ´ĞĞĞÅÊ¹ÈÎÎñ£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
 		if ( Uworld1206 == 0 ) then
-			Describe(DescLink_BaiYi..":"..name..", Äã²»ÊÇÒÑ¾­´©¹ı·çÆïÌôÕ½ÁËÂğ£¿Ïë³ö¹Ø°¡?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")	
+			Describe(DescLink_BaiYi..":"..name..", Kh«ng ph¶i b¹n ®· v­ît qua thö th¸ch cña Phong Kú sao? Muèn xuÊt quan µ?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")	
 		elseif ( Uworld1206 == 1 ) then
-			Describe(DescLink_BaiYi..": ĞÅÊ¹Áî - Ä¾"..name..", Äã²»ÊÇÒÑ¾­´©¹ı·çÆïÌôÕ½ÁËÂğ£¿Ïë³ö¹Ø°¡?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")
+			Describe(DescLink_BaiYi..": Tİn Sø LÖnh - Méc"..name..", Kh«ng ph¶i b¹n ®· v­ît qua thö th¸ch cña Phong Kú sao? Muèn xuÊt quan µ?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		elseif ( Uworld1206 == 2 ) then
-			Describe(DescLink_BaiYi..": ĞÅÊ¹Áî - Í­"..name.."´óÈË£¬ÊÇ²»ÊÇÄãÒÑ¹ıÁË·çÆïµÄÌôÕ½ÁË£¿Ïë³ö¹ØÊÇÂğ ?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")
+			Describe(DescLink_BaiYi..": Tİn sø lÖnh - §ång"..name.."§¹i nh©n! Cã ph¶i ng­êi ®· v­ît qua thö th¸ch cña Phong Kú sao? Muèn xuÊt quan µ?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		elseif ( Uworld1206 == 3 ) then
-			Describe(DescLink_BaiYi..": ĞÅÊ¹Áî - Òø"..name.."´óÈË£¬ÊÇ²»ÊÇÄãÒÑ¹ıÁË·çÆïµÄÌôÕ½ÁË£¿Ïë³ö¹ØÊÇÂğ ?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")
+			Describe(DescLink_BaiYi..": Tİn sø lÖnh - B¹c"..name.."§¹i nh©n! Cã ph¶i ng­êi ®· v­ît qua thö th¸ch cña Phong Kú sao? Muèn xuÊt quan µ?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		elseif ( Uworld1206 == 4 ) then
-			Describe(DescLink_BaiYi..": ĞÅÊ¹Áî - ½ğ"..name.."´óÈË£¬ÊÇ²»ÊÇÄãÒÑ¹ıÁË·çÆïµÄÌôÕ½ÁË£¿Ïë³ö¹ØÊÇÂğ ?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")
+			Describe(DescLink_BaiYi..": Tİn sø lÖnh - Vµng"..name.."§¹i nh©n! Cã ph¶i ng­êi ®· v­ît qua thö th¸ch cña Phong Kú sao? Muèn xuÊt quan µ?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		elseif ( Uworld1206 == 5 ) then
-			Describe(DescLink_BaiYi..": Óù´Í½ğÅÆ- ½ğ"..name.."´óÈË£¬ÎÒÎ´¼û¹ıÓù´Í½ğÅÆ£¬½ñÌìËãÊÇ´ó¿ªÑÛ½çÁË¡£ÄãÕæÊÇÀ÷º¦¡£ÄãÒÑ¹ıÁË·çÆïµÄÌôÕ½£¬Ïë³ö¹ØÊÇÂğ ?",3,"¶Ô¡£ÎÒÏëÀë¿ª/messenger_comeback","ÎÒÎ´Íê³É¿¼Ñé£¬µ«ÊÇ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞø/no")
+			Describe(DescLink_BaiYi..": Ngù Tø lÖnh bµi - Vµng"..name.."§¹i nh©n! Ta ch­a thÊy qua Ngù Tø Kim bµi, h«m nay coi nh­ ®­îc më mang tÇm nh×n! ¤ng thËt lîi h¹i!  Ng­êi ®· v­ît qua thö th¸ch cña Phong Kú, muèn xuÊt quan ­?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		end
 	end
 end
@@ -58,12 +58,12 @@ function messenger_comeback()
 		
 		SetPos(1563,3118);
 	else
-		Describe(DescLink_BaiYi..":¶Ô²»Æğ£¬ÄãÎ´¹ı¹Ø£¬ÔÚ·çÆïµØÍ¼ÉÏ×îÉÙÄãÒªÈ·¶¨<color=red>5¸ö×ø±ê®é<color> ²ÅÄÜ¹ı¹Ø.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_BaiYi..":Xin lçi!  B¹n ch­a qua ¶i, trong b¶n ®å Phong Kú İt nhÊt b¹n ph¶i x¸c ®Şnh İt nhÊt <color=red>5 täa ®é<color> míi cã thÓ qua ¶i.",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
 function messenger_icantdo()
-	Describe(DescLink_BaiYi..": ÄãÏëÀë¿ªÊÇÂğ£¿Èç¹ûÎ´Íê³ÉÈÎÎñ¾ÍÀë¿ª£¬ÄãÒ²¿ÉÒÔµ½æä¹ÙÄÇÀï½»ÈÎÎñºÍÁì½±£¬µ«ÊÇ£¬½±Àø»áÉÙºÜ¶à¡£",2,"¶Ô¡£ÎÒÏëÀë¿ª/f_fallmessengertask","ÈÃÎÒÏëÏë/no")
+	Describe(DescLink_BaiYi..": Cã ph¶i b¹n muèn rêi khái, nÕu ch­a hoµn thµnh nhiÖm vô mµ rêi khái, b¹n còng cã thÓ ®Õn DŞch Quan giao tr¶ nhiÖm vô vµ nhËn phÇn th­ëng nh­ng phÇn th­ëng sÏ gi¶m xuèng rÊt nhiÒu.",2,"§óng! Ta muèn rêi khái/f_fallmessengertask","§Ó ta nghÜ l¹i xem sao/no")
 
 end
 

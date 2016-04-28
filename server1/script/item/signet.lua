@@ -9,10 +9,10 @@ function main(nItemIndex)
 	end
 	
 	if (GetWeeklyOffer() >= MAX_WEEK_CONTRIBUTION)	then
-		Say("ÄãµÄ¹±Ï×¶È»ñµÃÒÑ´ïÖÜÉÏÏŞ£¬½öÄÜÔö¼Ó°ï»áµÄ½¨Éè»ù½ğºÍÕ½±¸»ù½ğ¡£ÄãÊÇ·ñÒªÊ¹ÓÃ´ËµÀ¾ß£¿", 
+		Say("§iÓm cèng hiÕn ®· ®¹t giíi h¹n tuÇn, chØ cã thÓ bæ sung vµo ng©n s¸ch kiÕn thiÕt vµ ng©n s¸ch chiÕn bŞ. Cã muèn sö dông ®¹o cô nµy kh«ng?", 
 		2,
-		"Ê¹ÓÃ/#signet_sure_use("..nItemIndex..")",
-		"È¡Ïû/cancel")
+		"Sö dông /#signet_sure_use("..nItemIndex..")",
+		"Hñy bá /cancel")
 		return 1
 	end
 	--Ôö¼Ó¸öÈË¹±Ï×¶È¼°°ï»á»ù½ğ
@@ -25,7 +25,7 @@ function GetDesc(nItemIndex)
 	local nMonth = GetItemParam(nItemIndex, 3)
 	local nDate = GetItemParam(nItemIndex, 4)
 
-	return "Ê¹ÓÃÆÚÏŞ£º<color=blue>"..nYear.."Äê"..nMonth.."ÔÂ"..nDate.."ÈÕ"
+	return "Thêi h¹n sö dông: <color=blue>"..nYear.."n¨m"..nMonth.."nguyÖt "..nDate.."nhËt "
 end
 
 function PickUp( nItemIndex, nPlayerIndex )
@@ -44,7 +44,7 @@ function signet_sure_use(nItemIndex)
 	if (RemoveItemByIndex(nItemIndex) == 1) then
 		tongaward_fenglingdui()
 	else
-		print("É¾³ıß±ÕßÖ®Ó¡´íÎó²Ù×÷£¡")
+		print("Thao t¸c hñy bá S¸t gi¶ Ên gÆp lçi!")
 	end
 end
 
@@ -53,19 +53,19 @@ function signet_clude_use(nItemIndex)
 	local nCurTime = GetCurServerTime()	--/Ãë
 	local szItemName = GetItemName(nItemIndex)
 	if (nCurTime >= nParam1) then
-		Msg2Player(szItemName.."ÒÑ¾­Ëğ»µ£¬²»ÄÜÊ¹ÓÃÁË£¡")
+		Msg2Player(szItemName.." ®· hµo mßn, kh«ng thÓ sö dông!")
 		RemoveItemByIndex(nItemIndex)
 		return 0
 	end
 	local _, nTongID = GetTongName()
 
 	if (nTongID == 0) then
-		Msg2Player("Äã²»ÔÚ°ï»áÖĞ£¬²»ÄÜÊ¹ÓÃ´ËµÀ¾ß¡£")
+		Msg2Player("Kh«ng cã trong bang héi, kh«ng thÓ sö dông ®¹o cô nµy.")
 		return 0
 	end
 
 	if (TONGM_GetFigure(nTongID, GetName()) == TONG_RETIRE) then
-		Msg2Player("ÒşÊ¿²»ÄÜÊ¹ÓÃ´ËµÀ¾ß¡£")
+		Msg2Player("Èn sü kh«ng thÓ sö dông ®¹o cô nµy.")
 		return 0
 	end	
 	return 1

@@ -3,7 +3,7 @@
 
 function main()
 
-	Say("¿Í¹ÙÐèÒªÏûÃð±¦Îï¾¡¹Ü´ò¿ª<color=yellow>ÆæÕä¸ó<color> Ñ¡Ôñ¾ÍÐÐ¡£ÀÏ·òÎÒÖÕÓÚ¿ÉÒÔÐÝÏ¢ÁË!", 0);
+	Say("Kh¸ch quan cÇn b¶o vËt g× cø më <color=yellow>Kú Tr©n C¸c<color> chän lµ ®­îc. Cuèi cïng l·o phu còng cã thÓ nghØ ng¬i råi!", 0);
 	return
 
 --	Say("ÐÐ½ÅÉÌÈË£ºÕâÎ»¿Í¹Ù£¬¿ì¹ýÄêÁË×¼±¸Äê»õÊÇ°É£¿ÎÒÕâ¶ùÐÂ½øµÄÒ»ÅúÄê»õ<color=yellow>¡°¶¬ÈÕÅ¨Çé´óÀñ°ü¡±<color>£¬¾­¼ÃÊµ»Ý£¬×ßÇ×´®ÓÑ»òÄúÁô×Å×Ô¼ºÓÃ¶¼ºÏÊÊ°¢£¬Ëæ±ã¿´¿´°É£¡", 

@@ -3,7 +3,7 @@
 
 --HaveBeginWar(CityID) -- CityID(1-7)		//ÏÖÔÚÄ³¸ö³ÇÊĞÊÇ·ñÒÑ¿ªÕ½,·µ»ØÖµÎªÒ»¸öBOOLÖµ
 --GetCityAreaName(CityID)					//È¡1µ½7µÄ³ÇÇøÃû³Æ,·µ»ØÖµÎªÒ»¸ö×Ö·û´®
---GetCityWarBothSides(CityID)				//»ñµÃ¹¥»÷·½ÓëÊØ·½µÄ°ï»áÃû,·µ»ØÁ½¸ö×Ö·û´®,°´´ÎĞò·Ö±ğ´ú±í¹¥»÷·½ºÍÊØ·½
+--GetCityWarBothSides(CityID)				//»ñµÃ¹¥»÷·½ÓëÊØ·½µÄ°ï»áÃû,·µ»ØÁ½¸ö×Ö·û´®,°´´ÎĞò·Ö±ğ´ú±í¹¥»÷·½vµÊØ·½
 --NotifyWarResult(CityID, WarResult)		//±ÈÈü½áÊøÖ®ºó£¬Í¨ÖªRelay±ÈÈü½á¹û(WarResultÎªBOOLÖµ±íÊ¾¹¥³Ç·½ÊÇ·ñÊ¤Àû)
 --GetCityWarTongCamp(TongName)				//»ñµÃ²ÎÓë¹¥³ÇÕ½Ïà¹Ø»î¶¯µÄ°ï»áÕóÓª£¬·µ»ØINT¼´ÕóÓª´ú±íÖµ
 --IsArenaBegin(ArenaID) -- ArenaID(0-7)		//»ñµÃµ±Ç°¸÷¸öÀŞÌ¨³¡ÇøÊÇ·ñ¿ªÊ¼£¬·µ»ØBOOL
@@ -27,9 +27,9 @@ function main()
 			Tong1, Tong2 = GetArenaBothSides(ArenaID);
 			Tong1 = safeshow(Tong1)
 			Tong2 = safeshow(Tong2)
-			Say(Tong1.."ºÍ"..Tong2.."Á¢¼´×¼±¸Õ½¶·£¬Èü³¡Õı×¼±¸×Å£¬Ã¿¸öÈË¶¼×¼±¸ºÃ", 0);
+			Say(Tong1.."vµ"..Tong2.."LËp tøc chuÈn bŞ chiÕn ®Êu, ®Êu tr­êng ®ang chuÈn bŞ, mäi ng­êi h·y s½n sµng ", 0);
 		else
-			Say("Õ½¶·Ê±¼ä»¹Ã»ÓĞµ½!", 1, "ÖªµÀÁË£¬ÎÒÏÈÈ¥/OnCancel");
+			Say("Thêi gian chiÕn ®Êu vÉn ch­a ®Õn!", 1, "BiÕt råi, ta ®i tr­íc ®©y /OnCancel");
 		end;
 	elseif (ms_state == 1) then
 		OnReady();
@@ -41,7 +41,7 @@ function main()
 end;
 
 function OnHelp()
-	Talk(8, "",	"°ï»áÀŞÌ¨ÊÇ½­ºşÉÏ¸ö°ï»áÖ®¼äÇĞ´èÎäÒÕµÄµØ·½£¡ÕâÊÇÒ»¸ö¹«Æ½¾ºÕùµÄÎèÌ¨", "ÏëÒª²Î¼Ó°ï»áÀŞÌ¨£¬ÒªÏÈÀ´ÏòÎÒÉêÇë£¡ÉêÇëÈËÓ¦¸ÃÊÇ±ÈÈü°ï»áµÄ°ïÖ÷£¡", "×é¶ÓÖ®ºóË«·½¶Ó³¤ÒªÀ´±¨Ãû¡£Ë«·½°ïÖ÷Ã¿ÈËÒª½»IÇ§ÍòÁ½¶¨½ğ¡£", "½»ÁË¶¨½ğÖ®ºó£¬±ÈÈüÉêÇë¾ÍÍê³ÉÁË¡£ÔÚ2¸ö°à»á±ÈÈüÆÚ¼ä²»ÄÜ±¨Ãû", "ÉêÇë³É¹¦£¬Ë«·½¶ÓÔ±ÓĞ10·ÖÖÓ¼ÓÈë±ÈÈü¡£Ö®ºó±ÈÈü½«ÕıÊ½¿ªÊ¼!","Ê¤¸º½«¼ÆÈëË«·½µÄ±ÈÈü»ı·Ö¡£Ã¿Î»°ï»á³ÉÔ±½«¶Ô·½´òÖØÉËµÄ½«ÓĞ3¸ö»ı·Ö£¬¶Ô·½±»¿Û³ı1¸ö»ı·Ö", "±ÈÈü½áÊø£¬»ı·Ö¸ßµÄ°ï»á½«È¡µÃÊ¤Àû£¡", "´ËÍâ£¬±ÈÈüÖĞÓĞÒ»±ßÃ»ÓĞ³ÉÔ±ÔÙ±ÈÈüÔòÊ¤ÀûÊôÓÚÁíÍâÒ»±ß", "Ê¤ÀûµÄ°ï»á½«¿ÉÒÔÊÕ»ØÒÑ½ÉÄÉµÄ1Ç§ÍòÁ½£¬´ËÍâ£¬»¹¿ÉÒÔµÃµ½800ÍòÁ½µÄ½±ÀøºÍ1Íò2Ç§µã°ï»á¾­Ñé¡£Ê§°ÜµÄ°ï»á²»ÄÜÁì»ØÒÑ½ÉÄÉµÄ·ÑÓÃ£¬»¹Òª¿Û³ı1Íò4Ç§µã°ï»á¾­Ñé");
+	Talk(8, "",	"L«i ®µi bang héi lµ n¬i häc hái vâ nghÖ gi÷a c¸c bang héi trªn giang hå! §©y sÏ lµ n¬i thi ®Êu c«ng b»ng", "Muèn tham gia L«i ®µi bang héi, tr­íc hÕt ph¶i gÆp ta ®Ó xin phĞp! Ng­êi xin phĞp ph¶i lµ bang chñ cña bang héi thi ®Êu!", "Sau khi tæ ®éi, ®éi tr­ëng 2 bªn sÏ ®Õn b¸o danh. Bang chñ hai bªn  mçi ng­êi ph¶i ®Æt c­îc thi ®Êu 1000 v¹n l­îng. ", "Sau khi ®Æt c­îc xong, xin phĞp thi ®Êu ®· hoµn thµnh. Trong lóc cã 2 bang héi kh¸c ®ang thi ®Êu, kh«ng cho phĞp b¸o danh", "Xin phĞp thµnh c«ng xong, thµnh viªn cña hai bang héi cã10 phót gia nhËp ®Êu tr­êng. Sau ®ã thi ®Êu sÏ chİnh thøc b¾t ®Çu!","Th¾ng b¹i phô thuéc vµo ®iÓm tİch lòy thi ®Êu cña hai bªn. Mçi thµnh viªn bang héi lµm träng th­¬ng ®èi ph­¬ng sÏ ®­îc 3 ®iÓm, ®èi ph­¬ng bŞ trõ 1 ®iÓm", "KÕt thóc thi ®Êu, bang héi nµo tİch lòy ®iÓm cao h¬n sÏ giµnh th¾ng lîi!", "Ngoµi ra, trong lóc thi ®Êu mét bªn nµo kh«ng cßn thµnh viªn nµo ë l¹i ®Êu tr­êng th× th¾ng lîi sÏ thuéc vÒ bªn kia. ", "Bang héi chiÕn th¾ng cã thÓ thu håi 1000 v¹n l­îng ®· ®ãng, ngoµi ra cßn ®­îc 800 v¹n l­îng tiÒn th­ëng vµ 12.000 ®iÓm kinh nghiÖm bang héi. Bang héi thua cuéc sÏ kh«ng lÊy l¹i ®­îc tiÒn ®· ®ãng, mµ cßn bŞ trõ 14.000 ®iÓm kinh nghiÖm bang héi");
 end;
 
 function OnReady()
@@ -54,21 +54,21 @@ function OnReady()
 	
 	RestMin, RestSec = GetMinAndSec(RestTime);
 
-	str = "<#>ÕâÀïÕı½øĞĞ±ÈÈü"..GetMissionS(3).."<#>¹¥³ÇÌôÕ½£¬ÏÖÔÚ±ÈÈü°ï»áÊÇ:"..GetMissionS(1).."<#> ¶Ô"..GetMissionS(2).."<#>, Èë³¡Ê±¼ä»¹ÓĞ"..RestMin.."<#> ·Ö"..RestSec.."<#> Ãë.";
-	Say(str, 2, "ÎÒ·ûºÏÌõ¼ş£¬ÏëÒªÉÏÈü³¡ /OnJoin", "ÎÒ²»ÏëÉÏÈü³¡/OnCancel");
+	str = "<#> N¬i nµy ®ang diÔn ra tranh ®Êu"..GetMissionS(3).."<#> c«ng thµnh khiªu chiÕn, hiÖn t¹i bang héi thi ®Êu lµ:"..GetMissionS(1).."<#> víi"..GetMissionS(2).."<#>, thêi gian nhËp tr­êng cßn l¹i"..RestMin.."<#> phót "..RestSec.."<#> gi©y.";
+	Say(str, 2, "Ta thİch hîp víi ®iÒu kiÖn, ta muèn vµo ®Êu tr­êng /OnJoin", "ta kh«ng muèn vµo ®Êu tr­êng /OnCancel");
 end;
 
 function ErrorMsg(ErrorId)
 if (ErrorId == 1) then 
-	Say("ÏëÒªÉêÇë±ÈÈüµÄË«·½°ïÖ÷ÒªÏÈ×é¶ÓÖ®ºóÔÙÉêÇë±ÈÈü",0)
+	Say("Bang chñ hai bªn muèn xin phĞp thi ®Êu tr­íc hÕt ph¶i lËp nhãm råi míi xin phĞp. ",0)
 elseif (ErrorId == 2) then 
-	Say("À´±¨ÃûµÄÒªÊÇÏë²Î¼Ó±ÈÈüµÄ°ï»á¶Ó³¤£¬°ïÖ÷Òª´ø¹»1000ÍòÁ½",0)
+	Say("§Õn b¸o danh ph¶i lµ ®éi tr­ëng cña bang héi muèn thi ®Êu, mçi bang chñ ph¶i mang ®ñ 1000 v¹n l­îng",0)
 elseif (ErrorId == 3) then 
-	Say("±¨Ãû¹ÊÕÏ£¬ÇëÁªÏµ¹ÜÀíÈËÔ±£¡",0);
+	Say("B¸o danh xuÊt hiÖn trôc trÆc. Xin liªn hÖ ng­êi qu¶n lı!",0);
 elseif (ErrorId == 4) then 
-	Say("Äã²»ÊÇ±ÈÈüË«·½°ï»áµÄ³ÉÔ±»òÕßÈü³¡ÖĞµÄÈËÊıÒÑÂú£¬²»ÄÜ½øÈ¥!", 0);
+	Say("B¹n kh«ng ph¶i lµ thµnh viªn cña hai bang héi thi ®Êu hoÆc sè ng­êi trong ®Êu tr­êng ®· ®Çy, kh«ng thÓ vµo ®­îc!", 0);
 elseif(ErrorId == 5) then 
-	Say("±¨Ãû°ïÖ÷ÊÇÒªÏÖÔÚ¶ÓÎéµÄ¶Ó³¤",0);
+	Say("Bang chñ b¸o danh cÇn ph¶i lµ ®éi tr­ëng cña ®éi ngò hiÖn t¹i",0);
 else
 	
 end;
@@ -81,13 +81,13 @@ function OnJoin()
 		if (GetJoinTongTime() >= 7200) then
 			JoinCamp(1);
 		else
-			Say("Äã¼ÓÈë°ï»áµÄÊ±¼äÌ«¶ÌÁË£¬²»ÄÜ²Î¼ÓÕ½¶·!", 0);
+			Say("Thêi gian b¹n gia nhËp bang héi qu¸ ng¾n, kh«ng thÓ tham gia chiÕn ®Êu!", 0);
 		end;
 	elseif (GetTongName() == GetMissionS(2)) then 
 		if (GetJoinTongTime() >= 7200) then
 			JoinCamp(2);
 		else
-			Say("TÄã¼ÓÈë°ï»áµÄÊ±¼äÌ«¶ÌÁË£¬²»ÄÜ²Î¼ÓÕ½¶·!", 0);
+			Say("Thêi gian b¹n gia nhËp bang héi qu¸ ng¾n, kh«ng thÓ tham gia chiÕn ®Êu!", 0);
 		end;
 	else
 		ErrorMsg(4)
@@ -97,8 +97,8 @@ end;
 function OnFighting()
 	gametime = (floor(GetMSRestTime(MISSIONID,17)/18));
 	RestMin, RestSec = GetMinAndSec(gametime);
-	str1 = "<#>ÏÖÔÚË«·½µÄÈËÊıÊÇ"..GetMSPlayerCount(MISSIONID, 1).."<#> "..GetMSPlayerCount(MISSIONID, 2).."<#>. Ê±¼ä»¹Ê£Óà"..RestMin.."<#>·Ö "..RestSec.."<#>Ãë.";
-	str = "<#>ÏÖÔÚ°ï»á"..GetMissionS(1).."<#>ºÍ"..GetMissionS(2).."<#>ÕıÔÚ½øĞĞ";
+	str1 = "<#> nh©n sè 2 bªn hiÖn t¹i lµ:"..GetMSPlayerCount(MISSIONID, 1).."<#> "..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian cßn d­ "..RestMin.."<#> phót "..RestSec.."<#> gi©y.";
+	str = "<#> hiÖn t¹i bang héi"..GetMissionS(1).."<#> víi"..GetMissionS(2).."<#> ®ang tiÕn hµnh";
 	Say(str..str1, 0);
 end;
 

@@ -7,13 +7,13 @@
 -----------------------------------------------------------------
 Include("\\script\\missions\\citydefence\\headinfo.lua")
 function main()
-	Say("³µ·ò:Õ½ÕùÁ¬Ãà£¬ÀÏ°ÙÐÕÉú»îÊ®·ÖÀ§¿à£¡²»ÖªµÀºÎÊ±²Åµ½Í·°¡£¿ÄãÏëÈ¥ÄÄ×ù³Ç?", 8, tbDEFENCE_RETURN[1][3].."/#cd_transtocity(1)", tbDEFENCE_RETURN[11][3].."/#cd_transtocity(11)", tbDEFENCE_RETURN[37][3].."/#cd_transtocity(37)", tbDEFENCE_RETURN[78][3].."/#cd_transtocity(78)", tbDEFENCE_RETURN[80][3].."/#cd_transtocity(80)", tbDEFENCE_RETURN[162][3].."/#cd_transtocity(162)", tbDEFENCE_RETURN[176][3].."/#cd_transtocity(176)", "Kh«ng cÇn/OnCancel" )
+	Say("Xa phu: ChiÕn tranh liªn miªn, l·o b¸ t¸nh sèng rÊt c¬ cùc! Kh«ng biÕt lóc nµo míi ngãc ®Çu ®­îc? Ng­¬i muèn ®Õn thµnh nµo?", 8, tbDEFENCE_RETURN[1][3].."/#cd_transtocity(1)", tbDEFENCE_RETURN[11][3].."/#cd_transtocity(11)", tbDEFENCE_RETURN[37][3].."/#cd_transtocity(37)", tbDEFENCE_RETURN[78][3].."/#cd_transtocity(78)", tbDEFENCE_RETURN[80][3].."/#cd_transtocity(80)", tbDEFENCE_RETURN[162][3].."/#cd_transtocity(162)", tbDEFENCE_RETURN[176][3].."/#cd_transtocity(176)", "Kh«ng cÇn/OnCancel" )
 end
 
 function OnCancel()
 end
 
 function cd_transtocity(cityid)
-	Msg2Player("×øÎÈÁË£¡×¼±¸×ßÁË!"..tbDEFENCE_RETURN[cityid][3])
+	Msg2Player("Ngåi yªn! ChuÈn bÞ khëi hµnh!"..tbDEFENCE_RETURN[cityid][3])
 	NewWorld( cityid, tbDEFENCE_RETURN[cityid][1], tbDEFENCE_RETURN[cityid][2] )
 end

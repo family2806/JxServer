@@ -1,11 +1,11 @@
 ----------×÷·»Ãû³Æ------------------------
-NAME_BINGJIA = "±ø¼×·»"
-NAME_TIANGONG = "Ìì¹¤·»"
-NAME_MIANJU = "Ãæ¾ß·»"
-NAME_SHILIAN = "ÊÔÁ¶·»"
-NAME_TIANYI = "ÌìÒâ·»"
-NAME_LIWU = "ÀñÎï·»"
-NAME_HUODONG = "»î¶¯·»"
+NAME_BINGJIA = "Khu Binh gi¸p "
+NAME_TIANGONG = "Khu Thiªn C«ng "
+NAME_MIANJU = "Khu MÆt n¹ "
+NAME_SHILIAN = "Khu LuyÖn tËp"
+NAME_TIANYI = "Khu Thiªn ý "
+NAME_LIWU = "Khu LÔ vËt "
+NAME_HUODONG = "Khu ho¹t ®éng "
 ----------Íæ¼ÒÈÎÎñ±äÁ¿--------------------
 TASKVALUE_CONTRIBUTION = 2341
 ----------×÷·»ÈÎÎñ±äÁ¿¶¨Òå-----------------

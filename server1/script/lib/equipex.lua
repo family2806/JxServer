@@ -45,11 +45,11 @@ function createLikeEquip(nIndex, nNeedGold, nNeedMagicType, nCount)
 		return 0;
 	end;
 	
-	CDebug:MessageOut("¿ªÊ¼²úÉúÁÙÊ±×°±¸£¡");
+	CDebug:MessageOut("B¾t ®Çu t¹o ra trang bŞ t¹m thêi!");
 	
 	nGoldIndex = GetGlodEqIndex(nIndex);
 
-	CDebug:MessageOut("»ñÈ¡µ½´«ÈëµÄ»Æ½ğ×°±¸ĞòºÅÎª£º"..nGoldIndex);
+	CDebug:MessageOut("NhËn ®­îc sè hiÖu trang bŞ hoµng kim ®­a vµo lµ:"..nGoldIndex);
 	
 	-- »ñÈ¡Ö¸¶¨Ä§·¨ÊôĞÔµÄÖµ
 	for i=1, 6 do
@@ -57,7 +57,7 @@ function createLikeEquip(nIndex, nNeedGold, nNeedMagicType, nCount)
 		if nMagicType==nNeedMagicType then
 			nMagicIndex = i;
 			nNeedValue = nP1;
-			CDebug:MessageOut("»ñÈ¡µ½Ö¸¶¨µÄÊôĞÔÎ»ÖÃÔÚ£º"..i.."  ÊıÖµÎª£º"..nNeedValue);
+			CDebug:MessageOut("NhËn ®­îc vŞ trİ thuéc tİnh chØ ®Şnh t¹i:"..i.."  Gi¸ trŞ:"..nNeedValue);
 		end;
 	end;
 	
@@ -73,12 +73,12 @@ function createLikeEquip(nIndex, nNeedGold, nNeedMagicType, nCount)
 		nCreateIndex = NewItemEx(4, 0, 1, 0, nNeedGold - 1, 0, 0, 0, 0, 0);
 		nMagicType, nP1, nP2, nP3 = GetItemMagicAttrib(nCreateIndex, nMagicIndex);
 		
-		CDebug:MessageOut("²úÉúÁËÎïÆ·ĞòºÅ£º"..nCreateIndex.." Ä§·¨ÊôĞÔÎª£º"..nP1);
+		CDebug:MessageOut("T¹o sè thø tù vËt phÈm:"..nCreateIndex.." Thuéc tİnh ma ph¸p:"..nP1);
 		
 		tinsert(aryIndex, nCreateIndex);
 		
 			if nMagicType==nNeedMagicType and nP1==nNeedValue then
-				CDebug:MessageOut("ÓëÖ¸¶¨µÄÊôĞÔÏàµÈ£º"..nCreateIndex);
+				CDebug:MessageOut("Ngang b»ng víi thuéc tİnh chØ ®Şnh:"..nCreateIndex);
 				return nCreateIndex, aryIndex;
 			end;
 	end;

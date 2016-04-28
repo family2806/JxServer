@@ -11,11 +11,11 @@ ROLENAMECHANGE_ONLINE	= 4		-- ¸Ã½ÇÉ«ÔÚÏß
 function QueryNameResult(newname, result)
 	local msg = "<color=red>" .. newname .. "<color>"
 	if (result == ROLENAMEQUERY_FREE) then
-		msg = msg .. "Õâ¸öÃû×Ö»¹Ã»ÓĞ±»Ê¹ÓÃ"
+		msg = msg .. " danh tù nµy cßn kh«ng cã bŞ sö dông "
 	elseif (result == ROLENAMEQUERY_USED) then
-		msg = msg .. "Õâ¸öÃû×ÖÒÑ¾­±»Ê¹ÓÃÁË"
+		msg = msg .. " danh tù nµy ®· bŞ sö dông "
 	else
-		msg = msg .. "Õâ¸öÃû×ÖÎŞĞ§£¬²»ÄÜÊ¹ÓÃ"
+		msg = msg .. " danh tù nµy kh«ng cã hiÖu qu¶ , kh«ng thÓ sö dông "
 	end
 	Talk(1, "", msg)
 end
@@ -23,11 +23,11 @@ end
 function ChangeNameResult(newname, result)
 	local msg = "<color=red>" .. newname .. "<color>"
 	if (result == ROLENAMECHANGE_FAILURE) then
-		msg = msg .. "Õâ¸öÃû×Ö²»ÄÜÊ¹ÓÃ"
+		msg = msg .. " danh tù nµy kh«ng thÓ sö dông "
 	elseif (result == ROLENAMECHANGE_USED or result == ROLENAMECHANGE_ONLINE) then
-		msg = msg .. "Õâ¸öÃû×ÖÒÑ¾­±»Ê¹ÓÃÁË"
+		msg = msg .. " danh tù nµy ®· bŞ sö dông "
 	else
-		msg = msg .. "Õâ¸öÃû×ÖÎŞĞ§£¬²»ÄÜÊ¹ÓÃ"
+		msg = msg .. " danh tù nµy kh«ng cã hiÖu qu¶ , kh«ng thÓ sö dông "
 	end
 	Talk(1, "", msg)
 end

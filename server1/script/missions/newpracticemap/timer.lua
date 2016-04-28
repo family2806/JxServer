@@ -32,14 +32,14 @@ function OnTimer()
 	TM_SetTimer(tbNewPracticeMap.interval, tbNewPracticeMap.timerId, 1, 0);
 	
 	if nTimeLeft < 0 then
-		Msg2Player("ÄãµÄÐÞÁ¶Ê±¼äÒÑ½áÊø,½«±»Ç¿ÖÆÍÆ³öµØÍ¼®å!");
+		Msg2Player("Thêi gian tu luyÖn cña ®¹i hiÖp ®· kÕt thóc, sÏ bÞ c­ìng chÕ ®Èy khái b¶n ®å!");
 		local nSubWorldId, nX, nY = RevID2WXY(GetPlayerRev());
 		NewWorld(nSubWorldId, nX/32, nY/32);
 		return
 	end
 		
 	if nTimeLeft <= tbNewPracticeMap.WarningTime then
-		Msg2Player("ÄãµÄÐÞÁ¶Ê±¼äÒÑ½áÊø, Çë×¼±¸Àë¿ªµØÍ¼®å!");
+		Msg2Player("Thêi gian tu luyÖn cña ®¹i hiÖp ®· kÕt thóc, h·y chuÈn bÞ rêi khái b¶n ®å!");
 	end
 		
 end

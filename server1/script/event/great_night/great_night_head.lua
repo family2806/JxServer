@@ -11,7 +11,7 @@ Include("\\script\\misc\\eventsys\\type\\map.lua")
 tbFruitData = {
 	N_FRUIT_START_DATE = 2011042800,--»î¶¯¿ªÊ¼ÈÕÆÚ
     N_FRUIT_END_DATE = 2011052900,--»î¶¯½áÊøÈÕÆÚ(º¬)
-    SZ_FRUIT_MAP_NAME = "Õ½Áú¶´",
+    SZ_FRUIT_MAP_NAME = "ChiÕn Long §éng",
     N_FRUIT_MAP_ID = 959,
     --Éú³¤»Æ½ğÖ®¹ûµÄÎ»ÖÃ
     TB_FRUIT_POS = 
@@ -155,21 +155,21 @@ function _ShowSeed(worldidx, mapid, seedlevel, count, tbPos ,szMapName, nBatch)
 	local szScriptFile = "\\script\\activitysys\\config\\31\\npc_great_seed.lua"
 	--ÆÕÍ¨¹ûÊµ¶Ô°×
 	local szGrowScriptFile = "\\script\\activitysys\\config\\31\\npc_great_fruit.lua"
-	--»Æ½ğÖÖ×Ó¶Ô°×
+	--H¹t Hoµng Kim¶Ô°×
 	local szGoldFruitScriptFile = "\\script\\activitysys\\config\\31\\golden_fruit.lua";
 	
-	local szGoldSeedName = "»Æ½ğÖÖ×Ó"
-	local szGrowSeedName = "»Ô»ÍÖÖ×Ó"
-	local szGoldFruitName = "»Æ½ğÖ®¹ûÊµ"
-	local szGrowFruitName = "»Ô»Í¹ûÊµ"
+	local szGoldSeedName = "H¹t Hoµng Kim"
+	local szGrowSeedName = "h¹t Huy Hoµng"
+	local szGoldFruitName = "Qu¶ Hoµng Kim"
+	local szGrowFruitName = "Qu¶ Huy Hoµng"
 	
 	--local nBeginNumber = gb_GetTask("»Ô»ÍÖ®ÖÖ",12)
 	local nNpcTmpl = 1110
 	local szNpcScriptFile = szScriptFile
-	local szNpcName = "»Ô»ÍÖÖ×Ó"
+	local szNpcName = "h¹t Huy Hoµng"
 	if mod(nBatch	,2 ) == 0 then
 		--Èç¹ûÎª¹ûÊµÅú´Î£¬ÔòÇå³ıÖÖ×ÓNPC
-		ClearMapNpcWithName(mapid, "»Ô»ÍÖÖ×Ó")
+		ClearMapNpcWithName(mapid, "h¹t Huy Hoµng")
 		ClearMapNpcWithName(mapid, szGoldSeedName);
 		if seedlevel == 4  then
 			nNpcTmpl = 1118
@@ -178,7 +178,7 @@ function _ShowSeed(worldidx, mapid, seedlevel, count, tbPos ,szMapName, nBatch)
 		else
 			nNpcTmpl = 1111
 			szNpcScriptFile = szGrowScriptFile
-			szNpcName = "»Ô»Í¹ûÊµ"
+			szNpcName = "Qu¶ Huy Hoµng"
 		end
 	elseif seedlevel ==  4 then
 			nNpcTmpl = 1117
@@ -209,7 +209,7 @@ function _ShowSeed(worldidx, mapid, seedlevel, count, tbPos ,szMapName, nBatch)
 					SetNpcParam(nNpcIndex, 1, seedlevel);
 					--SetNpcParam(nNpcIndex, 2, nBeginNumber*10000 +  nCurDate ); --  nCurDate --¼ÓÉÏµ±Ç°ÈÕÆÚ
 					if szNpcName == szGoldFruitName or szNpcName == szGoldSeedName then
-						Msg2SubWorld("<color=yellow>"..szNpcName.."<color>".."³öÏÖÔÚ"..szMapName.."("..floor(nPosX / 8)..","..floor(nPosY / 16)..").")
+						Msg2SubWorld("<color=yellow>"..szNpcName.."<color>".." xuÊt hiÖn t¹i "..szMapName.."("..floor(nPosX / 8)..","..floor(nPosY / 16)..").")
 					end
             	end
 			end;
@@ -240,19 +240,19 @@ function OnGoToNewLiangShuiDong()
 			NewWorld(unpack(t.TB_ENTER_POS[nRand]))
 		end
 	else
-		Talk(1, "", "Çë¼ûÁÂ£¬ÏÖÔÚ²»ÊÇ»î¶¯Ê±¼ä£¬Ô­ÁÂÎÒÃÇÎŞ·¨´øÄãÈ¥.")
+		Talk(1, "", "Xin l­îng thø, hiÖn t¹i kh«ng ph¶I thêi gian ho¹t ®éng, thø lçi cho ta kh«ng thÓ ®­a ng­¬I ®I ®­îc")
 	end
 end
 
 --NPC»á»°Ñ¡Ïî
 function OnNpcTalk()
 	local szMapName = t.SZ_FRUIT_MAP_NAME
-	local szDesc = format("<color=yellow>%s<color>ÏÖ½ñÎäÁÖÖĞ·çµ÷ÓêË³£¬ÎªÁË±íÊ¾¶Ô¸÷Î»½­ºş´óÏÀµÄ¸ĞĞ»£¬ÎäÁÖÃËÖ÷¶À¹Â½£ÌØÒâÔÚ<color=yellow>00:00-28-04-2011~00:00-29-05-2011<color>¿ªÆô»î¶¯<color=yellow> »Æ½ğÖ®ºË<color>´ó¹æÄ£µÄ.<enter>", "ÎäÁÖÃËÖ÷´«ÈË")
-	szDesc = format("%sÃ¿ÈÕ»î¶¯ÆÚ¼ä<color=yellow>13:15, 13:35, 19:00, 19:20<color>ÔÚ<color=yellow>%s<color>°æÍ¼ÉÏ½«³öÏÖ3¿Å»Æ½ğÖÖ×Ó£¬Ò»¶ÎÊ±¼äºó¸÷Î»´óÏÀ½«¿ÉÊÕ»ñËüµÄ¹ûÊµ£¬Ê¹ÓÃÊ±½«»áÔö¼Ó»Æ½ğÖ®¹ûÊµµÄ¹¦Á¦.<enter>", szDesc, szMapName)
-	szDesc = format("%s Ö»ÓĞÍ¨¹ıÎÒÕâ²Å¿ÉÒÔ´øÄãµ½<color=yellow>%s<color>", szDesc, szMapName)
+	local szDesc = format("<color=yellow>%s<color>HiÖn t¹i trong vâ l©m m­a hßa giã thuËn. ®Ó tá lßng c¶m t¹ ®èi víi c¸c vŞ giang hå ®¹i hiÖp, Vâ L©m Minh Chñ §éc C« KiÕm ®¾c ı vµo<color=yellow>00:00-28-04-2011~00:00-29-05-2011<color>më ra mét ho¹t ®éng<color=yellow> “H¹t Hoµng Kim”<color>víi quy m« lín.<enter>", "Vâ L©m Minh Chñ TruyÒn Nh©n")
+	szDesc = format("%strong thêi gian ho¹t ®éng mçi ngµy <color=yellow>13:15, 13:35, 19:00, 19:20<color>t¹i<color=yellow>%s<color>b¶n ®å sÏ xuÊt hiÖn 3 H¹t Hoµng Kim , mét thêi gian sau ®ã c¸c vŞ ®¹i hiÖp cã thÓ thu thËp ®­îc Qu¶ cña nã, khi sö dông sÏ lµm t¨ng c«ng lùc cña Qu¶ Hoµng Kim.<enter>", szDesc, szMapName)
+	szDesc = format("%s chØ cã thÓ th«ng qua ta ®©y míi cã thÓ ®­a ng­¬i ®Õn<color=yellow>%s<color>", szDesc, szMapName)
 	Describe(szDesc, 2,
-		"Çë´øÎÒµ½Õ½Áú¶´/OnGoToNewLiangShuiDong",
-		"ÖªµÀÁË/no"
+		"Xin h·y ®­a ta ®Õn ChiÕn Long §éng/OnGoToNewLiangShuiDong",
+		"HiÓu råi/no"
 	)
 end
 
@@ -264,8 +264,8 @@ function _AddOutNpc()
 	local nOffset = 3
 	local tbNpcPos = t.TB_ENTER_POS
 	local tbNpc = {
-		szName = "Õ½Áú¶´´«ËÍÈË", 
-		szTitle = "<npc>ÎÒ¿ÉÒÔ´øÄã»Ø³Ç",
+		szName = "Ng­êi truyÒn tèng ChiÕn Long §éng", 
+		szTitle = "<npc>Ta cã thÓ ®­a ng­¬i vÒ thµnh",
 		nLevel = 95,
 		nNpcId = 238,
 		nIsboss = 0,

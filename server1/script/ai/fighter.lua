@@ -32,7 +32,7 @@ function main()
 
 	--Í¨ÖªÊ£ÓàÊ±¼ä
 	if ( mod(ai_totaltime,  AI_REPORTTIME) == 0 ) then 
-		Sys_Msg2Player("×Ô¶¯´ò¹ÖÊ±¼ä»¹ÓĞ".. floor(AI_GetRestTime() / (60 * 18)).."·ÖÖÓ" );
+		Sys_Msg2Player("Thêi gian tù ®éng ®¸nh qu¸i cßn ".. floor(AI_GetRestTime() / (60 * 18)).."phót" );
 	end
 
 	--Ã¿¸ôÒ»¶¨Ê±¼äÖ´ĞĞÒ»´ÎÓÒ¼ü¼¼ÄÜ£¬±ÈÈç¸¨Öú¼¼ÄÜ
@@ -68,18 +68,18 @@ function main()
 	if (nBloodNow < 30) then
 		ReturnCity()
 		count=1
-		Sys_Msg2Player("ÒòÑª²»¹»ÁË»Ø³ÇÁË!!")
+		Sys_Msg2Player("m¸u kh«ng ®ñ, ®· vÒ thµnh")
 	--Ñª²»¹»¾Í²¹Ñª
 	elseif (nBloodNow < 75) then 
 		if (ai_eatsleep <= 0) then 
-			if (HaveMagic("´Èº½ÆÕ¶É") > 0) then
+			if (HaveMagic("Tõ Hµng Phæ D") > 0) then
 				DoAttack(93, GetSelfIndex())
 				ai_eatsleep = 8
 			elseif (Eat(1) == 0) then
 				ReturnCity()
 				home_state = 0;
 				count=1
-				Sys_Msg2Player("»Ø³ÇÁË!!")
+				Sys_Msg2Player("VÒ thµnh råi!!")
 			end
 			ai_eatsleep = 8;
 		end

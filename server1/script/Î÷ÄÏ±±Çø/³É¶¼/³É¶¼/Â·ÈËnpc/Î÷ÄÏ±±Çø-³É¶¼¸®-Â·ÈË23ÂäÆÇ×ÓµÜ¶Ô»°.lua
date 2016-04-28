@@ -9,17 +9,17 @@ i = random(0,4)									--´¥·¢ÂòÂôµÄ»úÂÊÊÇ20%
 
 if (i == 0) then  -- ÔİÊ±¹Ø±Õ
 -- Say("ÂäÆÇ×ÓµÜ£ºàË£¬À´³ò³òÎÒµÄ±¦±´£¬ÎÒÒ»¿´¾ÍÖªµÀÄãÊÇ¸öÊ¶»õµÄÈË£¬ÇÆÇÆ£¬Õâ¿ÉÊÇÎÒµÄ´«¼ÒÖ®±¦°¡£¬Òª²»ÊÇÊÖÍ·ÊµÔÚ½ôµÃºÜ£¬ÎÒ»¹Éá²»µÃÂôÄØ£¡", 2, "Âò/accept", "²»Âò/refuse")
-Say("ÂäÆÇ×ÓµÜ£ºàË£¬À´³ò³òÎÒµÄ±¦±´£¬ÎÒÒ»¿´¾ÍÖªµÀÄãÊÇ¸öÊ¶»õµÄÈË£¬ÇÆÇÆ£¬Õâ¿ÉÊÇÎÒµÄ´«¼ÒÖ®±¦°¡£¡", 0)
+Say("Võa nh×n th× biÕt ngay lµ ng­êi tinh m¾t! Nµo! Nµo! Chän mét thø ®i!", 0)
 return
 end;
 
 if (i == 1) or (i == 2) then  
-Say("ÂäÆÇ×ÓµÜ£º¿´Ê²Ã´¿´£¡ÄãÔÚ¸½½ü×ªÁË¼¸È¦ÁË£¬±ğÒÔÎªÎÒ²»ÖªµÀ£¬Äã¾ÍÊÇ´òÎÒÉíÉÏµÄ±¦±´Ö÷Òâ£¡", 0)
+Say("Xem c¸i g× mµ xem! §õng t­ëng ta kh«ng biÕt, ng­¬i cã ı ®Şnh lÊy b¶o bèi cña ta µ?", 0)
 return
 end;
 
 if (i == 3) or (i == 4) then  
-Say("ÂäÆÇ×ÓµÜ£º±ğ¿´ÎÒ´©µÃ²»ÔõÃ´Ñù£¬¸æËßÄã£¬ÎÒ¿ÉÊÇÃûÃÅÖ®ºó£¬Ïëµ±Äê¡­¡­", 0)
+Say("§õng thÊy ta ¨n mÆc r¸ch r­íi nh­ thÕ nµy...nãi cho ng­¬i biÕt ta lµ danh m«n chi hËu, nhí n¨m ®ã… ", 0)
 return
 end;
 
@@ -82,12 +82,12 @@ if (GetCash() >= 5000) then					--²Î¿¼Öµ
 		Pay(5000)
 	end
 else
-	Say("ÂäÆÇ×ÓµÜ£ºÔ­À´ÊÇ¸öÃ»ÓĞÓÍË®µÄ£¡", 0)
+	Say("Th× ra chØ lµ mét kÎ nghÌo m¹c", 0)
 end;
 
 end;
 
 
 function refuse()
-Say("¸ã²»ºÃÊÇ¸öÆ­×Ó¡£", 0);
+Say("Hãa ra còng chØ lµ mét kÎ l­êng g¹t.", 0);
 end;

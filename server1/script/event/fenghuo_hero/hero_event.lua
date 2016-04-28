@@ -4,12 +4,12 @@ Include("\\script\\item\\techan_dahuandan.lua")
 ----·é»ğÓ¢ĞÛÁî»î¶¯ Èë¿Ú
 function enter_heroling()
 	local nCount = GetTask(TASKID_HEROLING_COUNT);
-	local tbDescribe = {"<dec>·é»ğÓ¢ĞÛÁî»î¶¯´Ó <color=yellow>01-12-2006<color>¿ªÊ¼µ½<color=yellow>24h00 01-01-2007<color>. Ê¹ÓÃ·é»ğÓ¢ĞÛÁî¹ºÂòÎïÆ·ºÍ¶Ò»»BossÕÙ»½·û¿ÉÒÔÑÓĞøµ½<color=yellow>08-01-2007<color>. ÏêÏ¸ÄÚÈİ¿´Ö÷Ò³.<enter>Ä¿Ç°ÄãµÄÓ¢ĞÛÁîµÄÊıÁ¿ÊÇ:<color=yellow>"..nCount.." c¸i<color>.<enter>ÄãÏë²Î¼ÓÄÄ¸ö»î¶¯?", 
-	"¶Ò»»·é»ğÓ¢ĞÛÁî/change_contribution_heroling", 
-	"ÒÔ·é»ğÓ¢ĞÛÁî¹ºÂòÎïÆ·/saleby_heroling", 
-	"ÓÃ·é»ğÓ¢ĞÛÁî¶Ò»»BossÕÙ»½·û/change_heroling_bosscharm", 
-	"ÓÃÃÜ¼ş½»»»ÈÙÓşÁîÅÆ/change_letter_honour",
-	"Àë¿ª/tong_cancel"};
+	local tbDescribe = {"<dec>Ho¹t ®éng Phong Háa Anh Hïng LÖnh b¾t ®Çu tõ <color=yellow>01-12-2006<color> ®Õn <color=yellow>24h00 01-01-2007<color>. Sö dông Phong Háa Anh Hïng LÖnh ®Ó mua c¸c vËt phÈm vµ ®æi LÖnh bµi gäi Boss sÏ tiÕp tôc ®Õn <color=yellow>08-01-2007<color>. Néi dung chi tiÕt xem trªn trang chñ. <enter>Tr­íc m¾t sè l­îng anh hïng lÖnh cña ng­¬i lµ: <color=yellow>"..nCount.." c¸i<color>.<enter>Ng­¬i muèn tham gia ho¹t ®éng nµo?", 
+	"§æi phong háa anh hïng lÖnh/change_contribution_heroling", 
+	"§em Phong Háa Anh Hïng lÖnh ®Ó mua vËt phÈm/saleby_heroling", 
+	"§em Phong Háa Anh Hïng LÖnh ®æi lÊy LÖnh bµi gäi Boss/change_heroling_bosscharm", 
+	"§em MËt th­ ®æi lÊy LÖnh bµi vinh dù/change_letter_honour",
+	"Rêi khái/tong_cancel"};
 	
 	CreateTaskSay(tbDescribe);
 end;
@@ -17,20 +17,20 @@ end;
 -----ÒÔ·é»ğÓ¢ĞÛÁî¹ºÂòÌØÊâÎïÆ· Start
 function saleby_heroling()
 	local nCount = GetTask(TASKID_HEROLING_COUNT);
-	CreateTaskSay({"<dec><color=yellow>·é»ğÓ¢ĞÛÁî<color>ÓÃÓÚ¹ºÂòÌØÊâÎïÆ·. ÌØÊâÎïÆ·»¹ÒªÏûºÄ<color=yellow>¸öÈË¹±Ï×µã<color> À´½»»». ¹ºÂòÎïÆ·Òª´Ó¿ÉÒÔ¼ÇÂ¼µÄÁîÅÆÊıÖĞ¿Û³ı<color=yellow>°ï»áÁîÅÆÊıÁ¿±»ÏûºÄ<color>. Õâ¸öÏûºÄÁ¿½«¾ö¶¨Ò»ÖÜ°ï»á¿ÉÒÔ»ñµÃµÄBossÕÙ»½·ûÊıÁ¿, °ï»áÓĞÈ¨¾ö¶¨ÊÇ·ñ²Î¼ÓÃÜ¼ş»î¶¯."
-	.."<enter>ÏÖÔÚ¿ÉÒÔÊ¹ÓÃµÄ·é»ğÓ¢ĞÛÁîµÄÊıÁ¿ÊÇ: <color=yellow>"..nCount.." ¸ö<color>."
-	.."<enter>ÏÖÔÚ¿ÉÒÔÊ¹ÓÃµÄ×Ü¹±Ï×µãÊÇ: <color=yellow>"..GetContribution().." µã<color>."
-	.."<enter>ÄãÏëÒªÂòÊ²Ã´ÎïÆ·?", 
-	"×Ï½ğ¸ä/saleby_heroling_enter",
-	"ĞŞÀí°ü/saleby_heroling_enter",
-	"Ä¾ÈË/saleby_heroling_enter",
-	"°µÓ°¹â»·/saleby_heroling_enter",
-	"Ïã½¶¹â»·/saleby_heroling_enter",
-	"²ÔÓ¥¹â»·/saleby_heroling_enter",
-	"Î±×°Ãæ¾ß/saleby_heroling_enter",
-	"´ó»¹µ¤/saleby_heroling_enter",
-	"·µ»Ø/enter_heroling",
-	"Àë¿ª/tong_cancel"});
+	CreateTaskSay({"<dec><color=yellow>Phong Háa Anh Hïng LÖnh<color> dïng ®Ó mua c¸c vËt phÈm ®Æc biÖt. VËt phÈm ®Æc biÖt vÉn ph¶i tiªu hao <color=yellow>®iÓm cèng hiÕn c¸ nh©n<color> ®Ó ®æi. Khi mua vËt phÈm sÏ trõ vµo sè l­îng lÖnh bµi vµ ®­îc ghi l¹i ë <color=yellow>sè l­îng lÖnh bµi cña bang bŞ tiªu hao<color>. Sè l­îng tiªu hao nµy sÏ quyÕt ®Şnh bang héi cã thÓ nhËn ®­îc bao nhiªu lÖnh bµi gäi Boss trong tuÇn, vµ bang héi cã quyÒn tham gia ho¹t ®éng MËt th­ hay kh«ng."
+	.."<enter>Sè l­îng Phong Háa Anh Hïng LÖnh cã thÓ sö dông hiÖn t¹i lµ: <color=yellow>"..nCount.." c¸i<color>."
+	.."<enter>Tæng ®iÓm cèng hiÕn hiÖn t¹i cã thÓ sö dông lµ: <color=yellow>"..GetContribution().." ®iÓm<color>."
+	.."<enter>Ng­¬i muèn mua vËt phÈm g×?", 
+	"Tö Kim Cµo/saleby_heroling_enter",
+	"Tói ThÇn kú/saleby_heroling_enter",
+	"Méc nh©n/saleby_heroling_enter",
+	"Vßng s¸ng ¸m ¶nh/saleby_heroling_enter",
+	"Vßng s¸ng H­¬ng Tiªu/saleby_heroling_enter",
+	"Vßng s¸ng Th­¬ng ¦ng/saleby_heroling_enter",
+	"MÆt n¹ ngôy trang/saleby_heroling_enter",
+	"§¹i Hoµn §¬n/saleby_heroling_enter",
+	"Trë vÒ/enter_heroling",
+	"Rêi khái/tong_cancel"});
 end;
 
 function check_salebyheroling(nTongID, nPrice)
@@ -40,9 +40,9 @@ function check_salebyheroling(nTongID, nPrice)
 	local nContribution = GetContribution();
 	local nHeroling = GetTask(TASKID_HEROLING_COUNT);
 	if (nHeroling < 1) then
-		CreateTaskSay({"<dec>¹±Ï×µã²»¹», ÏÈÅ¬Á¦Ñ°ÕÒ¹±Ï×µã.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>§iÓm cèng hiÕn kh«ng ®ñ, h·y cè g¾ng t×m ®iÓm cèng hiÕn tr­íc ®·.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 	elseif (nContribution < nPrice) then
-		CreateTaskSay({"<dec>ÏÖÔÚÃ»ÓĞ·é»ğÓ¢ĞÛÁî, ÔÚ»ıÀÛÁË¹±Ï×µãÖ®ºó²Å¿ÉÒÔÈ¥ÁìÈ¡·é»ğÓ¢ĞÛÁî.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>HiÖn t¹i kh«ng cã Phong Háa Anh Hïng LÖnh, sau khi tİch lòy ®ñ ®iÓm cèng hiÕn míi cã thÓ ®Õn nhËn Phong Háa Anh Hïng LÖnh.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 	else
 		return 1
 	end;
@@ -53,7 +53,7 @@ end;
 -----**´ó»¹µ¤**
 function sale_heroling_dahuandan(nCount, nPrice)
 		local nRestH, nRestM = adddahuandan_main(10, nCount);	--1.6±¶ĞèÒª 10¼¶×÷·»
-		Msg2Player("<#>ÄãÂòµ½1Á£"..nCount.."´ó»¹µ¤,ÏÖÔÚÊ¹ÓÃ´ó»Æµ¤µÄÊ±¼äÊÇ"..nRestH.."Ê± "..nRestM.."·Ö.")
+		Msg2Player("<#>B¹n mua ®­îc 1 viªn"..nCount.."§¹i Hoµn §¬n, thêi gian sö dông §¹i Hoµn ®¬n hiÖn t¹i lµ "..nRestH.."giê "..nRestM.."phót.")
 end;
 -----**´ó»¹µ¤ end
 
@@ -63,7 +63,7 @@ function sale_heroling_weizhuang(nCount, nPrice)
 	for i = 1, nCount do
 		AddItem(0,11,366,1,0,0);
 	end;
-		Msg2Player("Äã´ïµ½"..nCount.." 24Ê±, Î±×°Ãæ¾ß¿ÉÒÔÊ¹ÓÃ10´Î")
+		Msg2Player("B¹n ®¹t ®­îc "..nCount.." 24 giê, mÆt n¹ ngôy trang cã thÓ sö dông 10 lÇn")
 end;
 -----**Î±×°Ãæ¾ß end
 
@@ -71,8 +71,8 @@ end;
 -----**²ÔÓ¥¹â»·**
 function sale_heroling_cangying(nCount, nPrice)
 	delguanghuan()
-	AddSkillState(728, 1, 1, 10886400 * nCount, 1);--7Ìì
-	Msg2Player("µÃµ½1¸ö²ÔÓ¥ÃûºÅ»·£¬Ê£ÓàÊ±¼äÎª "..(7*nCount).."Ìì");
+	AddSkillState(728, 1, 1, 10886400 * nCount, 1);--7Ngµy
+	Msg2Player("NhËn ®­îc 1 vßng danh hiÖu Th­¬ng ¦ng, thêi gian cßn l¹i lµ "..(7*nCount).."Ngµy");
 end;
 -----**²ÔÓ¥¹â»· end
 
@@ -80,8 +80,8 @@ end;
 -----**Ïã½¶¹â»·**
 function sale_heroling_xiangjiao(nCount, nPrice)	
 	delguanghuan()
-	AddSkillState(727, 1, 1, 10886400 * nCount,1);--7Ìì
-	Msg2Player("µÃµ½1¸öÏã½¶ÃûºÅ»·£¬Ê£ÓàÊ±¼äÎª "..(7*nCount).."Ìì");
+	AddSkillState(727, 1, 1, 10886400 * nCount,1);--7Ngµy
+	Msg2Player("NhËn ®­îc 1 vßng danh hiÖu H­¬ng Tiªu, thêi gian cßn l¹i lµ "..(7*nCount).."Ngµy");
 end;
 -----**Ïã½¶¹â»· end
 
@@ -89,8 +89,8 @@ end;
 -----**°µÓ°¹â»·**
 function sale_heroling_anying(nCount, nPrice)
 	delguanghuan()
-	AddSkillState(730, 1, 1, 10886400 * nCount, 1);--7Ìì
-	Msg2Player("µÃµ½1¸ö°µÓ°ÃûºÅ»·£¬Ê£ÓàÊ±¼äÎª "..(7*nCount).."Ìì");
+	AddSkillState(730, 1, 1, 10886400 * nCount, 1);--7Ngµy
+	Msg2Player("NhËn ®­îc 1 vßng danh hiÖu ¢m ¶nh, thêi gian cßn l¹i lµ "..(7*nCount).."Ngµy");
 end;
 -----**°µÓ°¹â»· end
 
@@ -108,7 +108,7 @@ function sale_heroling_xiulianmuren(nCount, nPrice)
 		SetSpecItemParam(nItemIndex, 2, 10)
 		SyncItem(nItemIndex)
 	end;
-	Msg2Player("µÃµ½"..nCount.."1¸öÄ¾ÈË.")
+	Msg2Player("NhËn ®­îc "..nCount.." mét Méc Nh©n.")
 end;
 -----**ĞŞÁ¶Ä¾ÈË end
 
@@ -119,14 +119,14 @@ function sale_heroling_xiulibao(nCount, nPrice)
 		SetSpecItemParam(nItemIndex, 2, GetLocalDate("%y%m%d"))
 		SyncItem(nItemIndex)
 	end;
-		Msg2Player("µÃµ½"..nCount.." ĞŞÀí°ü, Ê£ÓàÊ±¼äÊÇ7Ìì")
+		Msg2Player("NhËn ®­îc "..nCount.." tói ®å nghÒ, thêi gian cßn l¹i lµ 7 ngµy.")
 end;
 -----**ĞŞÀí°ü end
 
 -----**×Ï½ğ¸ä**
 function sale_heroling_zijingao(nCount, nPrice)
 		local nRestH, nRestM = addzijingao_main(nCount);
-		Msg2Player("µÃµ½1¸ö×Ï½ğ¸ä£¬Ê£ÓàÊ±¼äÊÇ"..nRestH.." Ê±, "..nRestM.."·Ö")
+		Msg2Player("NhËn ®­îc 1 Tö Kim Cµo, thêi gian cßn l¹i lµ "..nRestH.." giê, "..nRestM.."phót")
 end;
 -----**×Ï½ğ¸ä end
 
@@ -134,25 +134,25 @@ function saleby_heroling_enter(nSel)
 	nSel = nSel + 1
 	local nCount = GetTask(TASKID_HEROLING_COUNT);
 	if (nCount < 1) then
-		CreateTaskSay({"<dec>Ã»ÓĞ·é»ğÓ¢ĞÛÁî¾Í²»ÄÜÂòÎïÆ·.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>Kh«ng cã Phong Háa Anh Hïng LÖnh th× kh«ng thÓ mua vËt phÈm.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 		return 0
 	end;
 	local arySalebyHeroling = {
-						{"<dec>¿ÉÒÔÊ¹ÓÃ<color=yellow>×Ï½ğ¸ä<color> ®Ó ÔÚÌÒ»¨µºÍÚ¿ó, Òª×¢ÒâµÄÊÇ×Ï½ğ¸ä²»ÄÜÓë±ğµÄÑ°³£¿ª¿ó¹¤¾ßÒ»Í¬Ê¹ÓÃ. Èç¹ûÒ»Í¬Ê¹ÓÃµÄ»°Ö®Ç°½«»áÕ¼ÓÃ×Ï½ğ¸äµÄÊ¹ÓÃÊ±¼ä, Ö®ºó½«»áÊÇÁíÒ»ÖÖ¹¦Ğ§. <enter>ÁìÈ¡×Ï½ğ¸ä»áÏûºÄ:<color=yellow>200µã<color> ", "ÒªÁì1¸ö/#saleby_heroling_confirm(1,200,'sale_heroling_zijingao')", "ÒªÁì2¸ö/#saleby_heroling_confirm(2,400,'sale_heroling_zijingao')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec><color=yellow>ĞŞÀí°ü<color> ÊÇ¿ÉÒÔ·ÅÈë±³°üµÄµÀ¾ß, Ëü¿ÉÒÔ°ïÖúÄã²»±Ø»Ø³Ç¾ÍĞŞÀí×°±¸,µ±È»Òª¸¶ÏàÓ¦µÄ·ÑÓÃ. ĞŞÀí°üµÄÊ¹ÓÃÆÚÏŞÊÇ1ÖÜ.<enter>ÁìÈ¡1¸öĞŞÀí°üÏûºÄµÄ¹±Ï×µãÊÇ: <color=yellow>50 µã<color>", "»»È¡1¸öĞŞÀí°ü/#saleby_heroling_confirm(50,'sale_heroling_xiulibao')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>µãÊó±êÓÒ¼üÕÙ»½Ä¾ÈË. ´ò°ÜÄ¾ÈËºó½«ÓĞ¾­ÑéÖµ.<enter>ÁìÈ¡1¸öÄ¾ÈËÒªÏûºÄµÄ¹±Ï×µãÊÇ: <color=yellow>100µã<color>", "»»È¡1¸öÄ¾ÈË/#saleby_heroling_confirm(100,'sale_heroling_xiulianmuren')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>ÃûºÅ¹â»·¸øÈËÉîåäĞé»ÃµÄ¸Ğ¾õ, Ê¹ÓÃÆÚÏŞÊÇ1ÖÜ.<enter>»»È¡ÃûºÅ¹â»·ĞèÒª¹±Ï×Öµ: <color=yellow>30 µã<color>", "»ñµÃ1¸ö°µÓ°¹â»·/#saleby_heroling_confirm(30,'sale_heroling_anying')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>ÕâÊÇÒ»¸öÓĞÄÏ·½É«²ÊµÄ¹â»·. »ñÈ¡Ïã½¶¹â»·ĞèÒª¹±Ï×µã <color=yellow>30 µã<color>. ¹±Ï×Öµ, Ê¹ÓÃÆÚÏŞÊÇ1ÖÜ.", "ÁìÈ¡1¸öÏã½¶¹â»·/#saleby_heroling_confirm(30,'sale_heroling_xiangjiao')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>ÄãÏ²»¶·ÉĞĞÂğ? Õâ¸ö¹â»·¸øÄã´øÀ´Ó¥»÷³¤¿ÕµÄ¸Ğ¾õ? ½Ó×Å£¬Ê¹ÓÃÆÚÏŞÊÇ1ÖÜ.<enter>ÏëÒªµÃµ½Õâ¸öÃûºÅ¹â»·ÒªÓÃµÄ¹±Ï×µãÊÇ: <color=yellow>30 µã<color>", "ÁìÈ¡1¸ö²ÔÓ¥¹â»·/#saleby_heroling_confirm(30,'sale_heroling_cangying')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>Î±×°Ãæ¾ßÊÇ¿ÉÒÔÎ±×°10´Î£¬Î±×°Ê±³¤24Ğ¡Ê±µÄÃæ¾ß.ÓÃÍê10´Î½«²»ÄÜÔÙÊ¹ÓÃÎ±×°¹¦ÄÜ.<enter>§iÎ±×°Ãæ¾ßËùĞèµÄ¹±Ï×ÖµÎª£º<color=yellow>300 µã<color>", "»»È¡1¸öÎ±×°Ãæ¾ß/#saleby_heroling_confirm(300,'sale_heroling_weizhuang')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
-						{"<dec>µ±ÀëÏßÍĞ¹ÜÊ±ÕâÀàÓĞÉñÁ¦µÄµ¤Ò©¿ÉÒÔÔö¼Ó1.6±¶¾­ÑéÖµ£¬Ã¿Á£¿ÉÒÔÊ¹ÓÃ6¸öĞ¡Ê±<enter>§i¿ÉÒÔ½»»»1¿Å´ó»¹µ¤µÄ¹±Ï×ÖµÊÇ: <color=yellow>30 µã<color>", "¶Ò»»1¿Å´ó»¹µ¤/#saleby_heroling_confirm(1,30,'sale_heroling_dahuandan')", "¶Ò»»2¿Å´ó»¹µ¤/#saleby_heroling_confirm(2,60,'sale_heroling_dahuandan')", "¶Ò»»5¿Å´ó»¹µ¤/#saleby_heroling_confirm(5,150,'sale_heroling_dahuandan')", "¶Ò»»10¿Å´ó»¹µ¤/#saleby_heroling_confirm(10,300,'sale_heroling_dahuandan')", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"},
+						{"<dec>Cã thÓ sö dông <color=yellow>Tö Kim Cµo<color> ®Ó ®µo kho¸ng trªn §µo Hoa §¶o, L­u ı lµ kh«ng thÓ dïng Tö Kim Cµo chung víi c¸c c«ng cô ®µo kho¸ng th­êng kh¸c. NÕu dïng chung th× tr­íc tiªn sÏ trõ thêi gian sö dông Tö Kim Cµo, sau ®ã lµ ®Õn c«ng cô kia. <enter>§Ó nhËn Tö Kim Cµo cÇn tiªu phİ: <color=yellow>200 ®iÓm<color> ", "Muèn nhËn 1 c¸i/#saleby_heroling_confirm(1,200,'sale_heroling_zijingao')", "Muèn nhËn 2 c¸i/#saleby_heroling_confirm(2,400,'sale_heroling_zijingao')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec><color=yellow>Tói ®å nghÒ<color> lµ ®¹o cô cã thÓ ®Æt vµo hµnh trang, gióp söa ch÷a trang bŞ mµ kh«ng cÇn quay vÒ thµnh, vµ ®­¬ng nhiªn lµ ph¶i tr¶ chi phİ t­¬ng ®­¬ng. Tói ®å nghÒ cã thêi h¹n sö dông lµ 1 tuÇn.<enter>§Ó nhËn 1 tói ®å nghÒ cÇn tiªu phİ ®iÓm cèng hiÕn lµ: <color=yellow>50 ®iÓm<color>", "§æi 1 tói ®å nghÒ/#saleby_heroling_confirm(50,'sale_heroling_xiulibao')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>NhÊp chuét ph¶i sö dông ®Ó gäi ra 1 Méc Nh©n. Sau khi ®¸nh b¹i méc nh©n sÏ nhËn ®­îc ®iÓm kinh nghiÖm.<enter>§Ó nhËn 1 Méc nh©n cÇn tiªu phİ ®iÓm cèng hiÕn: <color=yellow>100 ®iÓm<color>", "§æi 1 méc nh©n/#saleby_heroling_confirm(100,'sale_heroling_xiulianmuren')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>Vßng danh hiÖu nµy sÏ cho ng­¬i mét c¶m gi¸c th©m s©u huyÒn ¶o, cã thêi h¹n sö dông lµ 1 tuÇn.<enter>§Ó ®æi lÊy vßng danh hiÖu cÇn sö dông ®iÓm cèng hiÕn: <color=yellow>30 ®iÓm<color>", "NhËn 1 vßng danh hiÖu ¢m ¶nh/#saleby_heroling_confirm(30,'sale_heroling_anying')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>§©y lµ vßng danh hiÖu mang s¾c th¸i ph­¬ng Nam. NhËn vßng H­¬ng Tiªu cÇn sö dông ®iÓm cèng hiÕn lµ <color=yellow>30 ®iÓm<color>. ®iÓm cèng hiÕn, thêi gian sö dông lµ 1 tuÇn.", "NhËn 1 vßng danh hiÖu H­¬ng Tiªu/#saleby_heroling_confirm(30,'sale_heroling_xiangjiao')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>Ng­¬i thİch bay l­în kh«ng? vßng danh hiÖu nµy mang l¹i c¶m gi¸c mét con chim ¦ng bay ë phİa sau, cã thêi gian sö dông lµ 1 tuÇn.<enter>Muèn nhËn vßng danh hiÖu nµy cÇn sö dông ®iÓm cèng hiÕn lµ: <color=yellow>30 ®iÓm<color>", "NhËn 1 vßng danh hiÖu Th­¬ng ¦ng/#saleby_heroling_confirm(30,'sale_heroling_cangying')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>MÆt n¹ ngôy trang lµ lo¹i mÆt n¹ h¹n chÕ thêi gian 24 giê vµ sè lÇn sö dông kü n¨ng ngôy trang lµ 10 lÇn. Khi dïng hÕt 10 lÇn th× kh«ng thÓ sö dông kü n¨ng ngôy trang ®­îc n÷a.<enter>§iÓm cèng hiÕ cÇn ®Ó ®æi mÆt n¹ ngôy trang lµ: <color=yellow>300 ®iÓm<color>", "§æi 1 mÆt n¹ ngôy trang/#saleby_heroling_confirm(300,'sale_heroling_weizhuang')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
+						{"<dec>Lo¹i ®¬n d­îc thÇn kú nµy cã thÓ gióp t¨ng 1.6 lÇn kinh nghiÖm khi ñy th¸c rêi m¹ng, mçi viªn cã thÓ sö dông trong 6 giê.<enter>§iÓm cèng hiÕn ®Ó ®æi lÊy 1 viªn §¹i Hoµn §¬n: <color=yellow>30 ®iÓm<color>", "§æi 1 viªn §¹i Hoµn §¬n/#saleby_heroling_confirm(1,30,'sale_heroling_dahuandan')", "§æi 2 viªn §¹i Hoµn §¬n/#saleby_heroling_confirm(2,60,'sale_heroling_dahuandan')", "§æi 5 viªn §¹i Hoµn §¬n/#saleby_heroling_confirm(5,150,'sale_heroling_dahuandan')", "§æi 10 viªn §¹i Hoµn §¬n/#saleby_heroling_confirm(10,300,'sale_heroling_dahuandan')", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"},
 																	};
 	if (arySalebyHeroling[nSel]) then
 		if (nSel == 8) then
 			nRestH, nRestM = GetMinAndSec(GetTask(TASKID_TECHAN_HUANDAN_TIME));
-			arySalebyHeroling[nSel][1] = arySalebyHeroling[nSel][1].."<enter>´ó»¹µ¤µÄÊ¹ÓÃÊ±¼ä»¹ÓĞ: <color=yellow>"..nRestH.."Ê±"..nRestM.."·Ö<color>"
+			arySalebyHeroling[nSel][1] = arySalebyHeroling[nSel][1].."<enter>Thêi gian sö dông §¹i Hoµn §¬n cßn l¹i lµ: <color=yellow>"..nRestH.."giê "..nRestM.." phót<color>"
 		end;
-		arySalebyHeroling[nSel][1] = arySalebyHeroling[nSel][1].."<enter>ÏÖÔÚ¿ÉÒÔÊ¹ÓÃ·é»ğÓ¢ĞÛÁîµÄÊıÁ¿ÊÇ: <color=yellow>"..nCount.." c¸i<color><enter>ÏÖÔÚ¿ÉÒÔÊ¹ÓÃµÄ×Ü¹±Ï×ÖµÊÇ: <color=yellow>"..GetContribution().." µã<color><enter>ÄãÍ¬Òâ»»Âğ?"
+		arySalebyHeroling[nSel][1] = arySalebyHeroling[nSel][1].."<enter>Sè l­îng Phong Háa Anh Hïng LÖnh cã thÓ sö dông hiÖn t¹i lµ: <color=yellow>"..nCount.." c¸i<color><enter>Tæng ®iÓm cèng hiÕn hiÖn t¹i cã thÓ sö dông lµ: <color=yellow>"..GetContribution().." ®iÓm<color><enter>Ng­¬i ®ång ı ®æi kh«ng?"
 		CreateTaskSay(arySalebyHeroling[nSel]);
 	end;
 end;
@@ -177,7 +177,7 @@ end;
 -----¶Ò»»·é»ğÓ¢ĞÛÁî Start
 function change_contribution_heroling()
 	if (tonumber(GetLocalDate("%Y%m%d")) > 20070101) then
-		CreateTaskSay({"<dec>·é»ğÓ¢ĞÛÁî»î¶¯½«ÓÚ01-01-2007½áÊø. 08-01-2007Ö®Ç°, Íæ¼Ò¿ÉÒÔ¼ÌĞøÓÃ·é»ğÓ¢ĞÛÁî»»È¡½±Àø.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>Ho¹t ®éng Phong Háa Anh Hïng LÖnh sÏ kÕt thóc vµo 01-01-2007. Tr­íc 08-01-2007, ng­êi ch¬i cã thÓ tiÕp tôc dïng Phong Háa Anh Hïng LÖnh ®Ó ®æi phÇn th­ëng.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 		return 0;
 	end;
 	local nWeekOffer = GetWeeklyOffer();--»ñµÃÖÜÀÛ»ı¹±Ï×¶È
@@ -207,15 +207,15 @@ function change_contribution_heroling()
 		nHeroCount = 3 - nMyCount;
 	end;
 	if (nHeroCount > 0) then
-		CreateTaskSay({"<dec>¿ÉÒÔÔÚ»î¶¯ÖĞ×¬È¡¹±Ï×¶È. ¹±Ï×¶ÈÓÉÏµÍ³×Ô¶¯¼ÇÂ¼»ıÀÛ£¬Ã¿»ıÀÛµ½ <color=yellow>100¸ö¹±Ï×¶È<color>Ôò°ï»á³ÉÔ±¿ÉÒÔµ½×ÏÌ´°ï»áÁìÈ¡1¸ö·é»ğÓ¢ĞÛÁî£¬Ã¿ÈÕÁìÈ¡ÊıÁ¿²»µÃ³¬¹ı <color=yellow>3 ¸ö<color>, Ã¿ÖÜ½«»áÇåÁã."
-	.."<enter>§i»ıÀÛµÄ¹±Ï×¶ÈÊÇ£º<color=yellow>"..nWeekOffer.." µã<color>."
-	.."<enter>ÏÖÔÚ¿ÉÒÔ»»È¡·é»ğÓ¢ĞÛÁî: <color=yellow>"..nHeroCount.." ¸ö<color>.",
-	"ÎÒÒª»»È¡·é»ğÓ¢ĞÛÁî/#sure_contribution_heroling("..nHeroCount..")", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"});
+		CreateTaskSay({"<dec>§iÓm cèng hiÕn cã thÓ kiÕm tõ c¸c ho¹t ®éng. §iÓm cèng hiÕn nµy sÏ ®­îc hÖ thèng tù ®éng ghi nhËn tİch lòy, mçi khi tİch lòy ®­îc <color=yellow>100 ®iÓm cèng hiÕn<color> th× bang chóng cã thÓ ®Õn TÕ §µn bang héi ®Ó nhËn 1 Phong Háa Anh Hïng LÖnh, sè l­îng nhËn ®­îc mçi ngµy kh«ng thÓ h¬n <color=yellow>3 tÊm<color>, mçi tuÇn sÏ tİnh l¹i tõ ®Çu."
+	.."<enter>§iÓm cèng hiÕn tİch lòy tuÇn nµy lµ: <color=yellow>"..nWeekOffer.." ®iÓm<color>."
+	.."<enter>Phong Háa Anh Hïng LÖnh cã thÓ ®æi hiÖn t¹i lµ: <color=yellow>"..nHeroCount.." c¸i<color>.",
+	"Ta muèn ®æi Phong Háa Anh Hïng LÖnh/#sure_contribution_heroling("..nHeroCount..")", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"});
 	else
-		CreateTaskSay({"<dec>§i¿ÉÒÔÔÚ»î¶¯ÖĞ×¬È¡¹±Ï×¶È. ¹±Ï×¶ÈÓÉÏµÍ³×Ô¶¯¼ÇÂ¼»ıÀÛ£¬Ã¿»ıÀÛµ½ <color=yellow>100 ¸ö¹±Ï×¶È<color> Ôò°ï»á³ÉÔ±¿ÉÒÔµ½×ÏÌ´°ï»áÁìÈ¡1¸ö·é»ğÓ¢ĞÛÁî£¬Ã¿ÈÕÁìÈ¡ÊıÁ¿²»µÃ³¬¹ı <color=yellow>3¸ö<color>, Ã¿ÖÜ½«»áÇåÁã."
-	.."<enter>§i»ıÀÛµÄ¹±Ï×¶ÈÊÇ£º<color=yellow>"..nWeekOffer.." µã<color>."
-	.."<enter>ÏÖÔÚ¿ÉÒÔ»»È¡·é»ğÓ¢ĞÛÁî£º<color=yellow>"..nHeroCount.." ¸ö<color>.",
-	"·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"});
+		CreateTaskSay({"<dec>§iÓm cèng hiÕn cã thÓ kiÕm tõ c¸c ho¹t ®éng. §iÓm cèng hiÕn nµy sÏ ®­îc hÖ thèng tù ®éng ghi nhËn tİch lòy, mçi khi tİch lòy ®­îc <color=yellow>100 ®iÓm cèng hiÕn<color> th× bang chóng cã thÓ ®Õn TÕ §µn bang héi ®Ó nhËn 1 Phong Háa Anh Hïng LÖnh, sè l­îng nhËn ®­îc mçi ngµy kh«ng thÓ h¬n <color=yellow>3 tÊm<color>, mçi tuÇn sÏ tİnh l¹i tõ ®Çu."
+	.."<enter>§iÓm cèng hiÕn tİch lòy tuÇn nµy lµ: <color=yellow>"..nWeekOffer.." ®iÓm<color>."
+	.."<enter>Phong Háa Anh Hïng LÖnh cã thÓ ®æi hiÖn t¹i lµ: <color=yellow>"..nHeroCount.." c¸i<color>.",
+	"Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"});
 	end;
 end;
 
@@ -227,11 +227,11 @@ function sure_contribution_heroling(ncount)
 	SetTask(TASKID_HEROLING_COUNT, GetTask(TASKID_HEROLING_COUNT) + ncount);	--Ôö¼Ó·é»ğÓ¢ĞÛÁîµÄ×ÜÊı
 	SetTask(TASKID_CONTRIBUTE_USED, GetTask(TASKID_CONTRIBUTE_USED) + ncount * 100);	--Ôö¼Ó¶Ò»»ÏûºÄµÄ¹±Ï×¶È
 	SetTask(TASKID_LASTHERO_TAKED, GetTask(TASKID_LASTHERO_TAKED) + ncount);		--Ôö¼Ó±¾ÈÕÁìÈ¡µÄ×ÜÊı
-	Msg2Player("ÄãµÃµ½"..ncount.." ¸ö·é»ğÓ¢ĞÛÁî.");
+	Msg2Player("B¹n ®¹t ®­îc "..ncount.." c¸i Phong Háa Anh Hïng LÖnh.");
 end;
 
 -----¶Ò»»·é»ğÓ¢ĞÛÁî End
------½«Ãë´«»»³É·ÖÓëÃë£¬±ÈÈç62s = 1m2s
+-----½«Ãë´«»»³ÉphótÓëÃë£¬±ÈÈç62s = 1m2s
 function GetMinAndSec(nSec)
 	nRestMin = floor(nSec / 60);
 	nRestSec = mod(nSec,60)
@@ -247,7 +247,7 @@ function change_heroling_bosscharm()
 	end;
 	local nTongHeroling = TONG_GetTaskValue(nTongID, TONGTSK_HEROLING);
 	local nUseHeroling = TONG_GetTaskValue(nTongID, TONGTSK_USEHEROLING);
-	CreateTaskSay({"<dec>°ï»áÒª´ø×Å·é»ğÓ¢ĞÛÁî¶Ò»»BossÕÙ»½·û. »ıÀÛ·½Ê½ÊÇ£ºµ±°ïÖÚÓÃ·é»ğÓ¢ĞÛÁî¹ºÂòÎïÆ·Ê±£¬ÎïÆ·½«»á±»¼ÆÈë°ï»áµÄÁîÅÆÊı. µ±µÃµ½ <color=yellow>63¸ö·é»ğÓ¢ĞÛÁî<color> Ôò°ïÖ÷»ò³¤ÀÏ¿ÉÒÔ¶Ò»»1¸öBossÕÙ»½·û.·é»ğÓ¢ĞÛÁî»ıÀÛµÄ×î´óÊıÁ¿ÊÇÃ¿ÖÜ<color=yellow>900¸ö<color>. ½øÈëĞÂµÄÒ»ÖÜÔò·é»ğÓ¢ĞÛÁî½«»á´ÓÍ·¼ÆÊı.<enter>Ò»ÖÜ°ï»á·é»ğÓ¢ĞÛÁî»ıÀÛµÄÊıÁ¿ÊÇ£º"..nTongHeroling.." ¸ö.<enter>¿ÉÓÃÓÚ¶Ò»»BossÕÙ»½·ûµÄ°ï»á·é»ğÓ¢ĞÛÁîµÄÊıÁ¿ÊÇ£º"..(nTongHeroling-nUseHeroling).." ¸ö<enter>, ¿ÉÒÔÁìÈ¡µ½µÄBossÕÙ»½·ûµÄÊıÁ¿ÊÇ£º"..floor((nTongHeroling-nUseHeroling)/63).."¸ö", "¶Ò»»BossÕÙ»½·û/sure_heroling_bosscharm", "·µ»Ø/enter_heroling", "Àë¿ª/tong_cancel"});
+	CreateTaskSay({"<dec>Bang héi cÇn ®em Phong Háa Anh Hïng LÖnh ®Ó ®æi LÖnh bµi gäi Boss. Ph­¬ng thøc tİch lòy lµ: Khi bang chóng dïng Phong Háa Anh Hïng LÖnh ®Ó mua vËt phÈm, th× nã sÏ ®­îc tİch lòy vµo sè lÖnh bµi cña bang héi. Khi ®¹t ®­îc <color=yellow>63 c¸i Phong Háa Anh Hïng LÖnh<color> th× bang chñ hoÆc tr­ëng l·o cã thÓ ®æi lÊy 1 LÖnh bµi gäi Boss.Phong Háa Anh Hïng LÖnh tİch lòy tèi ®a hµng tuÇn lµ <color=yellow>900 c¸i<color>. Vµo tuÇn míi th× Phong Háa Anh Hïng LÖnh sÏ tİnh l¹i tõ ®Çu.<enter>Phong Háa Anh Hïng LÖnh tİch lòy trong tuÇn cña bang lµ: "..nTongHeroling.." c¸i.<enter>Sè l­îng Phong Háa Anh Hïng LÖnh bang héi cã thÓ dïng ®Ó ®æi LÖnh bµi gäi Boss lµ:  "..(nTongHeroling-nUseHeroling).." c¸i<enter>, sè l­îng LÖnh bµi gäi Boss cã thÓ nhËn ®­îc lµ: "..floor((nTongHeroling-nUseHeroling)/63).."c¸i", "§æi lÖnh bµi gäi Boss/sure_heroling_bosscharm", "Trë vÒ/enter_heroling", "Rêi khái/tong_cancel"});
 end;
 
 
@@ -257,37 +257,37 @@ function sure_heroling_bosscharm()
 		return
 	end;
 	if (GetTongFigure() ~= TONG_MASTER and GetTongFigure() ~= TONG_ELDER) then
-		CreateTaskSay({"<dec>Ö»ÓĞ°ïÖ÷»ò³¤ÀÏ²Å¿ÉÒÔÊ¹ÓÃ·é»ğÓ¢ĞÛÁî¶Ò»»BossÕÙ»½·û.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>ChØ cã bang chñ hoÆc tr­ëng l·o míi cã thÓ sö dông Phong Háa Anh Hïng LÖnh ®æi LÖnh bµi gäi Boss.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 		return 0;
 	end;
 	local nTongHeroling = TONG_GetTaskValue(nTongID, TONGTSK_HEROLING);
 	local nUseHeroling = TONG_GetTaskValue(nTongID, TONGTSK_USEHEROLING);
 	local nCount = floor((nTongHeroling-nUseHeroling) / 63);
 	if (nCount < 1) then
-		CreateTaskSay({"<dec>°ï»á¿ÉÒÔÓÃ·é»ğÓ¢ĞÛÁî¶Ò»»1¸öBossÕÙ»½·û. ·é»ğÓ¢ĞÛÁîµÄ»ıÀÛÃ¿¸öÈËÒª¸ü¼ÓÅ¬Á¦.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>Phong Háa Anh Hïng LÖnh mµ bang héi cã thÓ dïng ®Ó ®æi 1 lÖnh bµi gäi Boss. Phong Háa Anh Hïng LÖnh tİch lòy cÇn sù nç lùc cña tÊt c¶ mäi ng­êi.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 		return 0;
 	end;
 	if (CalcFreeItemCellCount() < nCount * 2) then
-		CreateTaskSay({"<dec>±³°ü¿Õ¼ä²»×ã. ¿ÉÄÜ»áÁìÈ¡µ½ "..nCount.." BossÕÙ»½·ûÇëÏÈÕûÀí±³°ü.", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>Hµnh trang kh«ng ®ñ chç trèng. Cã kh¶ n¨ng sÏ nhËn "..nCount.." lÖnh bµi gäi Boss, h·y s¾p xÕp l¹i hµnh trang tr­íc.", "KÕt thóc ®èi tho¹i/tong_cancel"});
 		return 0;
 	end;
 	TONG_ApplyAddTaskValue(nTongID, TONGTSK_USEHEROLING, nCount*63);
 	for i=1, nCount do
 		AddItem(6, 1, 1022, 10, 0, 0, 0);
 	end;
-	Msg2Player("ÄãµÃµ½ "..nCount.." BossÕÙ»½·û.");
+	Msg2Player("B¹n ®¹t ®­îc  "..nCount.." LÖnh bµi gäi Boss.");
 end;
 -----¶Ò»»BossÕÙ»½·û end
 
 
 -----¶Ò»»µĞ¹úÃÜ¼ş
 function change_letter_honour()
-	CreateTaskSay({"<dec>µ±·é»ğÓ¢ĞÛÁîÓĞ<color=yellow>120¸ö<color> ÔòÃ¿ÖÜ5£¬ÖÜ6¿ÉÒÔ²Î¼Ó»î¶¯<color=yellow>×·×ÙÃÜ¼şcolor>. ÖÜ5£¬ÖÜ6ÔÚĞÂÊÖ´åµÄÍâÃæ³öÏÖ<color=yellow>µ¾²İÈË<color> ´ø×ÅÃÜ¼ş. ËùÓĞÈËÒªÕÒµ½ÕâĞ©µ¾²İÈËÉíÉÏµÄÃÜ¼ş. µ¾²İÈË³öÏÖµÄÊ±¼äÊÇ7h30, 7h40, 7h50, ¿ÉÒÔÑ°ÕÒÃÜĞÅµÄÊ±¼äÊÇ <color=yellow>7h35, 7h45, 7h55<color>. ÄãÈ¡µÃÃÜ¼şµÄÊ±¼äÊÇ1·ÖÖÓ£¬Ö®ºóÒªÇ××ÔÉÏ½»µ½³¯Í¢. ³¯Í¢½«¸øÓèÄãÉÍ´Í<color=yellow>25¿éºÚÌúÈÙÓşÁîÅÆ<color>. µ¾²İÈËµÄ×ø±êÊÇ£º<enter>"
-	.."°ÍÁêÏØ: 220/200     ½­½ò´å: 438/396<enter>"
-	.."ÓÀÀÖÕò: 197/188     µ¾Ïã´å: 215/185<enter>"
-	.."ÁúÃÅÕò: 233/287     Ê¯¹ÄÕò: 214/205<enter>"
-	.."ÁúÈª´å: 216/199",
-	"ÎÒÃÇ½øÈë×ÅÕÒµ½ÃÜ¼ş!/sure_letter_honour", "»Øµ½Ö®Ç°µÄ²Ù×÷/enter_heroling", "Àë¿ª/tong_cancel"});
+	CreateTaskSay({"<dec>Khi sè l­îng Phong Háa Anh Hïng LÖnh ®¹t <color=yellow>120 c¸i<color> th× vµo thø 6, thø 7 hµng tuÇn cã thÓ tham gia ho¹t ®éng <color=yellow>Truy t×m mËt th­<color>. Vµo thø 6 vµ thø 7, bªn ngoµi c¸c T©n Thñ Th«n sÏ xuÊt hiÖn <color=yellow>Ng­êi r¬m<color> mang theo c¸c mËt th­. Mäi ng­êi cÇn t×m c¸c mËt th­ cã trªn ng­êi nh÷ng ng­êi r¬m nµy. Thêi gian xuÊt hiÖn cña ng­êi r¬m lµ 7h30, 7h40, 7h50, thêi gian cã thÓ t×m mËt th­ lµ <color=yellow>7h35, 7h45, 7h55<color>. Thêi gian nhËn ®­îc mËt th­ lµ 1 phót. Ta sÏ nhËn mËt th­ tõ cÊp l·nh ®¹o bang, sau ®ã sÏ ®İch th©n ta giao cho triÒu ®×nh. TriÒu ®×nh sÏ tÆng th­ëng cho bang <color=yellow>25 tÊm lÖnh bµi vinh dù H¾c thiÕt<color>. Täa ®é cña ng­êi r¬m lµ: <enter>"
+	.."Ba L¨ng HuyÖn: 220/200     Giang T©n Th«n: 438/396<enter>"
+	.."VÜnh L¹c TrÊn: 197/188     §¹o H­¬ng Th«n: 215/185<enter>"
+	.."Long M«n TrÊn: 233/287     Th¹ch Cæ TrÊn: 214/205<enter>"
+	.."Long TuyÒn Th«n: 216/199",
+	"MËt th­ ta t×m ®­îc vÒ ®©y!/sure_letter_honour", "Trë l¹i thao t¸c tr­íc/enter_heroling", "Rêi khái/tong_cancel"});
 end;
 
 function sure_letter_honour()
@@ -295,17 +295,17 @@ function sure_letter_honour()
 	
 	local count = CalcEquiproomItemCount(4,1121,1,-1);
 	if (GetTongFigure() ~= TONG_MASTER and GetTongFigure() ~= TONG_ELDER) then
-		CreateTaskSay({"<dec>×îºÃÊÇÓÉ°ïÖ÷»ò³¤ÀÏ½»¸øÎÒ.", "ÖªµÀÁË/tong_cancel"});
+		CreateTaskSay({"<dec>Tèt nhÊt sÏ do bang chñ hoÆc tr­ëng l·o giao cho ta.", "Ta biÕt råi/tong_cancel"});
 	elseif (count < 1) then
-		CreateTaskSay({"<dec>ÎÒÔõÃ´Ã»¿´µ½ÃÜ¼şÔÚÄÄ?", "½áÊø¶Ô»°/tong_cancel"});
+		CreateTaskSay({"<dec>MËt th­ ®©u sao ta kh«ng thÊy?", "KÕt thóc ®èi tho¹i/tong_cancel"});
 	elseif (CalcFreeItemCellCount() < 25) then
-		CreateTaskSay({"<dec>±³°ü¿Õ¼ä²»×ã, ²»ÄÜ½»ºÚÌúÁî.", "µÈÎÒÏÈÕûÀíÏÂ±³°ü./tong_cancel"});
+		CreateTaskSay({"<dec>Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ giao H¾c thiÕt lÖnh.", "§Ó ta xÕp l¹i hµnh trang ®·./tong_cancel"});
 	else
 		ConsumeEquiproomItem(1,4,1121,1,-1);
 		for i = 1, 25 do
 			AddItem(6,1,1257,1,1,1); 
 		end;
-		Msg2Player("µÃµ½25¸öºÚÌúÈÙÓşÁîÅÆ");
+		Msg2Player("NhËn ®­îc 25 c¸i lÖnh bµi vinh dù H¾c thiÕt");
 	end;
 end;
 

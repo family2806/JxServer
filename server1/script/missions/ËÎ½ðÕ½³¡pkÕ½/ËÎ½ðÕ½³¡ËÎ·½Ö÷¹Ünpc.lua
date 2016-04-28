@@ -12,7 +12,7 @@ local State = GetMissionV(1)
 
 --Î´¿ªÊ¼
 if (State == 0 ) then 
-	Say("ÎÒ´ó¾ü»¹Î´³ö·¢£¬ÇëÔİÊ±ĞİÏ¢µÈĞÅÏ¢!",0);
+	Say("Xin h·y nghØ ng¬i vµ chê th«ng b¸o!",0);
 	NewWorld(78,1768,3098)
 	SetFightState(1)
 	return
@@ -35,7 +35,7 @@ end
 
 if (result == 2) then
 	--´Ë¾ä»°ÊÇµĞ·½Íæ¼ÒÓë¶Ô·½µÄ±¨ÃûNpcµÄ¶Ô»°
-	Say("ÄãµÈ½ğÈË£¬ÇÖ·¸ÎÒ½­É½£¬É±º¦ÎÒÍ¬°û£¬ÎÒÊÄÓëÄãÃÇÉ±¸öÄãËÀÎÒ»î!",0)
+	Say("Ng­¬i ®· x©m chiÕm n­íc ta, giÕt chÕt ®ång bµo ta, ta thÒ sÏ ®Ó ng­¬i chÕt trong cay ®¾ng!",0)
 end
 
 
@@ -46,9 +46,9 @@ if (State == 1 or State == 2) then
 		nGroup = GetMSIdxGroup(1, MSDIdx);
  		
 	if ( nGroup == 1) then 
-    		Say("¹ú¼ÒĞËÍöÆ¥·òÓĞÔğ£¬ÏÖÔÚÊÇÎÒÃÇ±¨Ğ§×æ¹úµÄÊ±ºòÁË!",0)
+    		Say("T¸t c¶ chóng ta ®Òu ph¶i cã tr¸ch nhiÖm cho d©n téc, b©y giê lµ lóc ta phôc vô cho quª h­¬ng!",0)
   		else
-    		Say("ÄãµÈ½ğÈË£¬ÇÖ·¸ÎÒ½­É½£¬É±º¦ÎÒÍ¬°û£¬ÎÒÊÄÓëÄãÃÇÉ±¸öÄãËÀÎÒ»î!",0)
+    		Say("Ng­¬i ®· x©m chiÕm n­íc ta, giÕt chÕt ®ång bµo ta, ta thÒ sÏ ®Ó ng­¬i chÕt trong cay ®¾ng!",0)
   		end
 	
 		return
@@ -57,16 +57,16 @@ end;
 
 if (State == 1) then
 	if (GetMSPlayerCount(1,1) >= MAX_S_COUNT) then
-		Say("ÎÒÃÇµÄ¾üÁ¦Ä¿Ç°ÒÑ¹»ÏûÃğ½ğ¹ú£¬×³Ê¿ÇëµÈÏÂÒ»´Î°É!", 0)
+		Say("HiÖn t¹i qu©n lùc ®· ®ñ ®Ó tiªu diÖt qu©n Kim, binh sÜ h·y vui lßng chê ®ît tiÕp theo!", 0)
 	return
 	end;
 	
-	Say("¹ú¼ÒĞËÍöÆ¥·òÓĞÔğ£¬ÏÖÔÚÊÇÎÒÃÇ±¨Ğ§×æ¹úµÄÊ±ºòÁË£¬Ö»ĞèÒª´ïµ½40¼¶ÒÔÉÏ£¬Ö§³Ö3000Á½¾ÍÄÜ³å·æÉ±µĞ!",2, "ÎÒ²Î¼Ó. /Yes", "ÈÃÎÒÏëÏë!/No");
+	Say("HiÖn t¹i qu©n lùc ®· ®ñ ®Ó tiªu diÖt qu©n Kim, binh sÜ h·y vui lßng chê ®ît tiÕp theo!",2, "T«i ®· tham dù. /Yes", "H·y ®Ó t«i nghÜ!/No");
 end;
 
 --½»Õ½Ê±ÆÚ
 if (State == 2) then 
-	Say("Ç°·½Õı·¢ÉúÕ½Õù£¬¸÷Î»ÏçÇ×ÇëÕÒ¶ã±ÜµÄµØ·½",0);
+	Say("B¹n vui lßng t×m mét n¬i ®Ó chèn tho¸t",0);
 	return 
 end;
 
@@ -78,7 +78,7 @@ if (GetMissionV(1) ~= 1) then
 end
 if (GetLevel() >= 40) then 
   if (Pay(MS_SIGN_MONEY) == 1) then
-  Msg2Player("»¶Ó­ÄãµÄ¼ÓÈë£¬ËÎ³¯µÄÓ¢ĞÛ£¬¸Ï¿ì½øÈëÕ½³¡°É!");
+  Msg2Player("Chµo mõng b¹n tham gia chiÕn tr­êng!");
   V = GetMissionV(5);
   SetMissionV(5, V + 1);
   AddMSPlayer(1,1);
@@ -90,9 +90,9 @@ if (GetLevel() >= 40) then
   end;
 end;
 
-Say("Äã²»¹»40¼¶»òÕßÃ»ÓĞ´ø¹»Ç®",0);
+Say("B¹n ch­a ®¹t cÊp 40 hoÆc kh«ng ®ñ tiÒn",0);
 end;
 
 function No()
-Say("¿ì»ØÈ¥ÏëÏë£¬Ê±¼ä²»¶àÁË!",0);
+Say("H·y suy nghØ l¹i ®i! thêi gian cã h¹n!",0);
 end;

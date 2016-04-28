@@ -13,7 +13,7 @@ Convert = {
 --´´½¨ÈÕÆÚ£º2005-1-26
 --×îºóĞŞ¸ÄÈÕÆÚ£º2005-1-26
 --¹¦ÄÜĞğÊö£º
---	ÔØÈëÅäÖÃÎÄ¼ş²¢½øĞĞ¼ÛÖµÁ¿µÄ¼ÆËã¡£¸Ãº¯ÊıÊ×ÏÈÔØÈë
+--	ÔØÈëÅäÖÃÎÄ¼ş²¢½øĞĞGi¸ trŞ ¼ÆËã¡£¸Ãº¯ÊıÊ×ÏÈÔØÈë
 --settings/event/chinesenewyear/giftlvlup.txtºÍ
 --settings/event/chinesenewyear/bounslist.txtÎÄ¼ş£¬
 --È»ºó¸ù¾İÕâÁ½·İÎÄ¼ş·Ö±ğ¼ÆËãÉñÃØÀñÎïÉı¼¶µÄ¼ÛÖµÁ¿±íºÍ
@@ -57,7 +57,7 @@ function ComputeWorth(nCount)
 	local mark = 0
 
 	if(nCount == 0) then
-		Talk(1,"GiveUIForOre","<#>ÄãÉ¶Ã×¶¼²»·Å£¬ÔõÃ´ºÏ³Éà¿£¿")
+		Talk(1,"GiveUIForOre","<#> C¸i g× còng kh«ng bá vµo, sao hîp thµnh ®©y?")
 		return nil
 	end
 	for i=1,nCount do
@@ -67,24 +67,24 @@ function ComputeWorth(nCount)
 		if (mark ~= 0) then
 			if (mark ~= lvl) then
 
-				Talk(1,"GiveUIForOre","<#>Äã·ÅÈëµÄ¶¼ÊÇÉ¶Ã×¶«Î÷£¿ºÃÏñµÈ¼¶¶¼²»Í¬Âï¡£")
+				Talk(1,"GiveUIForOre","<#> Ng­¬i bá c¸i qu¸i g× thÕ? §¼ng cÊp kh«ng gièng nhau g× hÕt!")
 				return nil
 			end
 		end
 		mark = lvl
 
 		if (lvl > 4) then
-			Talk(1, "GiveUIForOre", "<#>Äã·ÅÈëµÄĞş¾§¿óÊ¯µÈ¼¶Ì«¸ß£¬³¬³öÁËÎÒµÄÄÜÁ¦·¶Î§¡£")
+			Talk(1, "GiveUIForOre", "<#> HuyÒn Tinh Kho¸ng Th¹ch cña ng­¬i bá vµo ®¼ng cÊp qu¸ cao, kh«ng n»m trong ph¹m vi n¨ng lùc cña ta.")
 			return nil
 		end
 		if(g ~= 6 or p ~= 147) then --´íÎóµÀ¾ß
-			Talk(1, "GiveUIForOre", "<#>Äã·ÅÈëµÄ¶¼ÊÇÉ¶Ã×¶«Î÷£¿ÊÇĞş¾§¿óÊ¯Âğ£¿")
+			Talk(1, "GiveUIForOre", "<#> Ng­¬i bá c¸i qu¸i g× thÕ? Cã ph¶i HuyÒn Tinh Kho¸ng Th¹ch kh«ng?")
 			return nil
 		end
 		function checkGiftCount(idx,count)  --¼ì²âÉñÃØµÀ¾ßµÄÊıÁ¿
 			local num = GetItemStackCount(idx)
 			if(count + num > MAXGIVENUM) then -- ÊıÁ¿Ì«¶à
-				Talk(1,"GiveUIForOre","<#>Äã¸øµÄ¶«Î÷Ì«¶à£¬¿´²»Çå°¡£¬Ñ£ÔÎ¡­¡­")
+				Talk(1,"GiveUIForOre","<#> Ng­¬i bá c¸i qu¸i g× v« vËy?")
 				return nil
 			end
 			return num
@@ -117,7 +117,7 @@ end
 --	ÎŞ
 --==================================================--
 function GiveUIForOre()
-	GiveItemUI("Ğş¾§¿óÊ¯ºÏ³É","½«×î¶à50¸öÍ¬Ò»µÈ¼¶µÄĞş¾§¿óÊ¯·ÅÈëÎïÆ·À¸ÄÚ£¬¾Í¿ÉÒÔºÏ³É³öÏàÓ¦¼ÛÖµ¶ÔÓ¦¸öÊıµÄ¸ßÒ»µÈ¼¶µÄĞş¾§¿óÊ¯¡£", "OreLevelUp", "onCancel" );
+	GiveItemUI("Hîp thµnh HuyÒn Tinh Kho¸ng Th¹ch","§em tèi ®a 50 viªn HuyÒn Tinh Kho¸ng Th¹ch cã ®¼ng cÊp gièng nhau ®Æt vµo thanh vËt phÈm th× cã thÓ hîp thµnh ra sè l­îng HuyÒn Tinh Kho¸ng Th¹ch cÊp cao h¬n t­¬ng øng.", "OreLevelUp", "onCancel" );
 end
 
 --========º¯Êı¶¨Òå==================================--
@@ -146,23 +146,23 @@ function OreLevelUp(nCount)
 		RemoveItemByIndex(GetGiveItemUnit( i ))
 	end
 	if (num < 1) then
-		Talk(1, "", "°¥Ñ½Ñ½£¬ºÏ³ÉÊ§°ÜÁË£¬ÄÃÄÇÃ´ÉÙµÄĞş¾§¿óÊ¯À´ºÏ³É¸ß¼¶µÄ¿ÉÊÇÓĞºÜ´óµÄÎ£ÏÕĞÔÄØ£¡")
+		Talk(1, "", "Hõ! L¹i thÊt b¹i n÷a råi, ®em İt HuyÒn Tinh Kho¸ng Th¹ch hîp thµnh cÊp cao cã vÎ nguy hiÓm ®Êy!")
 		return
 	end
 
 	if(not num) then  --Ê§°Ü£¬Ã»ÓĞÑ¡³öÈÎºÎ¶«Î÷
-		Talk(1,"","<#>ß×£¬Ê§°ÜÁË£¬Õ¦»ØÊÂ°¡£¿Õâ¡¢Õâ¡¢ÄãÏòGM»ã±¨Ò»ÏÂ°É£¬ÎÒ²»ÖªµÀÔõÃ´°ì°¡£¡")
+		Talk(1,"","<#> ThÊt b¹i råi µh! Liªn hÖ GM ®i! Ta còng kh«ng biÕt gi¶i quyÕt sao n÷a!")
 		print("Error: the number of ore is non.")
 		return
 	end
 	
 	AddStackItem(num, 6, 1, 147, lvl2, 1, 1, 1)
-	WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-					"£¬ÓÃÁË¹²"..worth.."¼ÛÖµÁ¿µÄ"..lvl.."µÈ¼¶µÄĞş¾§¿óÊ¯£¬ºÏ³ÉµÃµ½"..
-					num.."¸ö"..lvl2.."µÈ¼¶µÄĞş¾§¿óÊ¯£¬ÏµÍ³µÃµ½"..
-					worth-worth2.."Ê£Óà¼ÛÖµÁ¿¡£")
-	Talk(1, "", "ÄãºÏ³É³öÁË<color=yellow>"..num.."<color>¸ö<color=yellow>"..lvl2.."<color>µÈ¼¶µÄĞş¾§¿óÊ¯£¡")
-	Msg2Player("Äã»ñµÃÁË"..num.."¸öĞş¾§¿óÊ¯")
+	WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+					", sö dông"..worth.."Gi¸ trŞ "..lvl.." HuyÒn Tinh Kho¸ng Th¹ch, hîp thµnh ra"..
+					num.."c¸i"..lvl2.." HuyÒn Tinh Kho¸ng Th¹ch, hÖ thèng nhËn ®­îc"..
+					worth-worth2.."Gi¸ trŞ cßn thõa l¹i.")
+	Talk(1, "", "B¹n ®· hîp thµnh ra <color=yellow>"..num.."<color> <color=yellow>"..lvl2.."<color> HuyÒn Tinh Kho¸ng Th¹ch ")
+	Msg2Player("B¹n ®¹t ®­îc"..num.." viªn HuyÒn Tinh Kho¸ng Th¹ch")
 	return
 end
 
@@ -178,7 +178,7 @@ end
 
 
 function main()
-	Talk(1, "GiveUIForOre", "ºÏ³É¸ß¼¶Ğş¾§¿óÊ¯£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>50<color>¸ö<color=yellow>Í¬Ò»µÈ¼¶<color>µÄĞş¾§¿óÊ¯£¬¾Í¿ÉÒÔºÏ³É³ö¸ßÒ»µÈ¼¶µÄĞş¾§¿óÊ¯¡£µ«ÊÇ£¬×î¸ßÖ»ÄÜºÏ³É³öµÈ¼¶Îª<color=yellow>5<color>µÄĞş¾§¿óÊ¯¡£")
+	Talk(1, "GiveUIForOre", "ºÏ³É¸ß¼¶Ğş¾§¿óÊ¯£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>50<color> <color=yellow>Í¬Ò»µÈ¼¶<color>µÄĞş¾§¿óÊ¯£¬¾Í¿ÉÒÔºÏ³É³ö¸ßÒ»µÈ¼¶µÄĞş¾§¿óÊ¯¡£µ«ÊÇ£¬×î¸ßÖ»ÄÜºÏ³É³öµÈ¼¶Îª<color=yellow>5<color>µÄĞş¾§¿óÊ¯¡£")
 	return
 end
 

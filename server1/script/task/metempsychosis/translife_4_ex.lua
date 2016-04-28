@@ -1,22 +1,22 @@
 -- ÎÄ¼şÃû¡¡£ºtranslife_4_ex.lua
 -- ´´½¨Õß¡¡£ºwangjingjun
--- ÄÚÈİ¡¡¡¡£º×ªÉú4²¹³äÉè¼Æ ÈôÍæ¼ÒÒÑ×ªÉú4´Î£¬ÇÒÃ¿´Î¶¼ÔÚ200¼¶×ªÉú£¬Ôò¿ÉÒÔ»ñµÃÌØÊâ¼¼ÄÜ£¬Õ½ÒâÇ§Çï	
+-- ÄÚÈİ¡¡¡¡£º×ªÉú4²¹³äÉè¼Æ ÈôÍæ¼ÒÒÑ×ªÉú4´Î£¬ÇÒÃ¿´Î¶¼ÔÚ200¼¶×ªÉú£¬Ôò¿ÉÒÔ»ñµÃÌØÊâ¼¼ÄÜ£¬ChiÕn ı Thiªn Thu	
 -- ´´½¨Ê±¼ä£º2011-09-14 16:20:38
 
 Include("\\script\\task\\metempsychosis\\task_head.lua")
 
 TRANSLIFE_TIME = 4
 TRANSLIFE_LEVEL = 200
-SKILL_NAME = "Õ½ÒâÇ§Çï"
-SKILL_ID = 1171 -- Õ½ÒâÇ§Çï id
-SKILL_LEVEL = 1 -- Õ½ÒâÇ§Çï µÈ¼¶
+SKILL_NAME = "ChiÕn ı Thiªn Thu"
+SKILL_ID = 1171 -- ChiÕn ı Thiªn Thu id
+SKILL_LEVEL = 1 -- ChiÕn ı Thiªn Thu µÈ¼¶
 
 function beidou_learn_specialskill()
-	local szTitle = format("Ö»ÓĞ¼á³ÖµÄ´óÏÀ<color=yellow>%d<color> ÖØÉúµÈ¼¶ <color=yellow>%d<color> ´Î²ÅÄÜÑ§µ½ÎÒµÄÃØ´«Îä¹¦! ",TRANSLIFE_LEVEL,TRANSLIFE_TIME)
+	local szTitle = format("ChØ cã nh÷ng ®¹i hiÖp nµo kiªn tr×  <color=yellow>%d<color> trïng sinh cÊp <color=yellow>%d<color> lÇn míi cã thÓ häc ®­îc vâ c«ng bİ truyÒn t¹i chç cña ta ®©y! ",TRANSLIFE_LEVEL,TRANSLIFE_TIME)
 	local tbOpt = {}
 	
-	tinsert(tbOpt, {"È·¶¨ÒªÑ§Âğ",sureLearnSpecialSkill,{PlayerIndex}})
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"X¸c ®Şnh muèn häc kü n¨ng",sureLearnSpecialSkill,{PlayerIndex}})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -24,7 +24,7 @@ end
 function checkTranslifetime()
 	local n_transcount = ST_GetTransLifeCount()
 	if n_transcount ~= TRANSLIFE_TIME then
-		Talk(1,"","Ã»ÓĞ´ïµ½¼á³Ö200¼¶ÖØÉúµ½4´ÎµÄÒªÇó£¬²»ÄÜ»ñµÃ¸Ã¼¼ÄÜ")	
+		Talk(1,"","Ch­a ®¹t ®­îc yªu cÇu lu«n kiªn tr× cÊp 200 trïng sinh ®Õn lÇn 4, kh«ng thÓ nhËn ®­îc kü n¨ng nµy")	
 		return 0
 	end
 	return 1
@@ -56,7 +56,7 @@ function checkTranslifeLevel()
 	end
 	
 	if bRet ~= 1 then
-		Talk(1,"","Ã»ÓĞ´ïµ½¼á³Ö200¼¶ÖØÉúµ½4´ÎµÄÒªÇó£¬²»ÄÜ»ñµÃ¸Ã¼¼ÄÜ")	
+		Talk(1,"","Ch­a ®¹t ®­îc yªu cÇu lu«n kiªn tr× cÊp 200 trïng sinh ®Õn lÇn 4, kh«ng thÓ nhËn ®­îc kü n¨ng nµy")	
 	end
 	
 	return bRet
@@ -66,7 +66,7 @@ function checkIsLearned()
 	if HaveMagic(SKILL_ID) == -1 then
 		return 1
 	end
-	Talk(1,"",format("´óÏÀÑ§µ½ <color=yellow>%s<color>, ²»ÄÜÔÙÑ§ÁË",SKILL_NAME))
+	Talk(1,"",format("§¹i hiÖp ®· häc ®­îc <color=yellow>%s<color>, kh«ng thÓ häc l¹i ®­îc n÷a",SKILL_NAME))
 	return 0
 end
 
@@ -87,6 +87,6 @@ function sureLearnSpecialSkill(nPlayerIndex)
 	-- Ñ§Ï°¼¼ÄÜ
 	
 	AddMagic(SKILL_ID, SKILL_LEVEL)
-	Talk(1,"",format("¹§Ï²´óÏÀÑ§µ½<color=yellow>%s<color>",SKILL_NAME))
+	Talk(1,"",format("Chóc mõng ng­¬i häc ®­îc <color=yellow>%s<color>",SKILL_NAME))
 end
 

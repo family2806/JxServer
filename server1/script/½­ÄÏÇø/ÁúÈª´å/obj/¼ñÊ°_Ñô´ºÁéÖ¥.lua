@@ -4,6 +4,6 @@
 function main()
 	SetPropState()
 	AddEventItem(231)
-	AddNote("到龙泉村找到阳春灵芝")
-	Msg2Player("到龙泉村找到阳春灵芝")
+	AddNote("дn Long Tuy襫 th玭 t譵 頲 Dng Xu﹏ Linh Chi ")
+	Msg2Player("дn Long Tuy襫 th玭 t譵 頲 Dng Xu﹏ Linh Chi ")
 end;

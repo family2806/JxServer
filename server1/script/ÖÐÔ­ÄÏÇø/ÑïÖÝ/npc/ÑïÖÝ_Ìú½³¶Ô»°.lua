@@ -2,7 +2,7 @@
 
 Include("\\script\\global\\global_tiejiang.lua")
 
-TIEJIANG_DIALOG = "<dec><npc>ÄãÊÇÏÀ¿Í£¿ÕâÀïÓĞ¸÷ÖÖ±øÆ÷£¬ÄãÏ²»¶ÄÄÒ»ÖÖ?"
+TIEJIANG_DIALOG = "<dec><npc>Ng­¬i cã ph¶i lµ hiÖp kh¸ch? ë ®©y cã c¸c lo¹i binh khİ, ng­¬i thİch lo¹i nµo?"
 
 function main(sel)
 	tiejiang_city()

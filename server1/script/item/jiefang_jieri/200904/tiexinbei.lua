@@ -6,7 +6,7 @@ Include("\\script\\event\\jiefang_jieri\\200904\\taskctrl.lua");
 function main()
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= jf0904_jiu_expiredtime) then
-		Msg2Player("ÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	

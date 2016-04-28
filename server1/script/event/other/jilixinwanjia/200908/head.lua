@@ -30,11 +30,11 @@ end
 
 function tbJILIWanJia0908:IsPlayerEligible()
 	if ST_IsTransLife() == 1 then
-		return nil, "¸÷Î»ÒÑÖØÉúÁË."
+		return nil, "C¸c h¹ ®· trïng sinh."
 	end
 	
 	if GetExtPoint(5) ~= 1 then
-		return nil, "Ö»ÓĞÔÚ21/08/2009µ½24h£¬20/09/2009µÇ¼Ç¹ıµÄÕË»§²Å¿ÉÒÔ²Î¼Ó²¢Áì½±"
+		return nil, "ChØ cã nh÷ng tµi kho¶n ®­îc ®¨ng kı trong thêi gian 21/08/2009 – 24h 20/09/2009 míi cã thÓ tham gia vµ nhËn th­ëng"
 	end
 	return 1
 end

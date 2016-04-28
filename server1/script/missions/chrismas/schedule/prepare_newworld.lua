@@ -3,14 +3,14 @@ Include("\\script\\maps\\newworldscript_default.lua")
 
 function OnNewWorld(szParam)
 	if (GetGlbValue(GLB_CH_PHASE) ~= 1) then	--Ê±¼äÒÑ¹ı
-		Say("<color=yellow>Ê¥µ®ÀÏÈË<color>: ²»ºÃÒâË¼£¬ÄãÀ´ÍíÁË£¬»î¶¯¸Õ¸Õ¸Õ¿ªÊ¼¡¢ÎÒËÍÄã»ØÈ¥", 0)
+		Say("<color=yellow>¤ng giµ Noel<color>: Xin lçi! B¹n ®Õn trÔ råi. Ho¹t ®éng võa b¾t ®Çu. §Ó ta tiÔn ng­¬i vÒ nhĞ!", 0)
 		NewWorld(GetTask(TK_LEAVERMAPID), GetTask(TK_LEAVERPOSX), GetTask(TK_LEAVERPOSY))
 		return
 	end
 	
 	local nPlayerCount = GetMSPlayerCount(CH_PREPAREMISSIONID, 0);
 	if (nPlayerCount >= CH_ALL_MAXPLAYERCOUNT) then
-		Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>:²Î¼Ó»î¶¯µÄÈËÌ«¶àÁË£¬ÇëµÈÏÂ´Î!");
+		Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: Sè ng­êi tham gia ho¹t ®éng ®· qu¸ nhiÒu, vui lßng ®îi lÇn sau!");
 		NewWorld(GetTask(TK_LEAVERMAPID), GetTask(TK_LEAVERPOSX), GetTask(TK_LEAVERPOSY))
 		return
 	end;

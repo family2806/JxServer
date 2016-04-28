@@ -20,11 +20,11 @@ function main(nItemIdx)
 		end
 		
 		sutra_addexp(exp)
-		Msg2Player("ÔÚ×ĞÏ¸ÑĞ¾¿°ãÈôĞÄ¾­ºó£¬Äú¸Ğ¾õÈ«ÉíÊæ³©£¬ÊµÕ½¾­Ñé»Ö¸´²»ÉÙ. ")
+		Msg2Player("Sau khi nghiªn cøu kü B¸t Nh­îc T©m Kinh, b¹n c¶m thÊy toµn th©n khoan kho¸i, kinh nghiÖm thùc chiÕn håi phôc kh«ng İt. ")
 		return 0
 	end 
 	
-	Msg2Player("ÄúÑĞ¾¿°ãÈôĞÄ¾­°ëÌì£¬µ«ÊÇÒÀÈ»»¹Î´ÁìÎòÊ²Ã´")
+	Msg2Player("B¹n nghiªn cøu B¸t Nh­îc T©m Kinh ®­îc nöa ngµy, nh­ng vÉn ch­a lÜnh ngé ®­îc g×. ")
 	return 1;
 end
 

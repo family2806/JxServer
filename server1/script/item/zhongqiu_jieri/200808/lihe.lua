@@ -9,28 +9,28 @@ function main(nItemIndex)
 	-- ÔÆÓÎºĞ
 	local tbItem = 
 	{
-	{szName="ºûµûµÆÁı", tbProp={6, 1, 1796, 1, 0, 0}, nRate = 1},
-	{szName="ĞÇĞÇµÆÁı", tbProp={6, 1, 1797, 1, 0, 0}, nRate = 33},
-	{szName="³¤¹ÜµÆÁı", tbProp={6, 1, 1798, 1, 0, 0}, nRate = 33},
-	{szName="Ô²µÆÁı", tbProp={6, 1, 1799, 1, 0, 0}, nRate = 33},
+	{szName="Lång ®Ìn b­¬m b­ím", tbProp={6, 1, 1796, 1, 0, 0}, nRate = 1},
+	{szName="Lång ®Ìn ng«i sao", tbProp={6, 1, 1797, 1, 0, 0}, nRate = 33},
+	{szName="Lång ®Ìn èng", tbProp={6, 1, 1798, 1, 0, 0}, nRate = 33},
+	{szName="Lång ®Ìn trßn", tbProp={6, 1, 1799, 1, 0, 0}, nRate = 33},
 	}
 	-- ÏÉÓğºĞ
 	local tbItem2 = 
 	{
-	{szName="ºûµûµÆÁı", tbProp={6, 1, 1796, 1, 0, 0}, nRate = 97},
-	{szName="ĞÇĞÇµÆÁı", tbProp={6, 1, 1797, 1, 0, 0}, nRate = 1},
-	{szName="³¤¹ÜµÆÁı", tbProp={6, 1, 1798, 1, 0, 0}, nRate = 1},
-	{szName="Ô²µÆÁı", tbProp={6, 1, 1799, 1, 0, 0}, nRate = 1},
+	{szName="Lång ®Ìn b­¬m b­ím", tbProp={6, 1, 1796, 1, 0, 0}, nRate = 97},
+	{szName="Lång ®Ìn ng«i sao", tbProp={6, 1, 1797, 1, 0, 0}, nRate = 1},
+	{szName="Lång ®Ìn èng", tbProp={6, 1, 1798, 1, 0, 0}, nRate = 1},
+	{szName="Lång ®Ìn trßn", tbProp={6, 1, 1799, 1, 0, 0}, nRate = 1},
 	}
 	
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_liheEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 	if zhongqiu0808_PlayerLimit() ~= 1 then		
-		Say("ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ", 0)
+		Say("Yªu cÇu ®¨ng cÊp ph¶i trªn 50 vµ ®· qua n¹p thÎ.", 0)
 		return 1
 	end
 	local nG, nD, nP = GetItemProp(nItemIndex)

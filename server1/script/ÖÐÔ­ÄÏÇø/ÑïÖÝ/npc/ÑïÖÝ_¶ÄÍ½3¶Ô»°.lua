@@ -6,7 +6,7 @@ function main(sel)
 	if ( Uworld1054 ~= 0 ) then
 		branch_dugun()
 	else
-Say("¶ÄÍ½£º±¾À´ºÃÈİÒ×Ó®ÁË¼¸°Ñ£¬½á¹ûÓÖÊäÁË£¬Õæ²»¸ÊĞÄ£¡", 0);
+Say("T­ëng lµ dÔ th¾ng ®­îc mÊy v¸n, kÕt qu¶ l¹i thua n÷a! ThËt kh«ng ®µnh lßng!", 0);
 	end
 end;
 

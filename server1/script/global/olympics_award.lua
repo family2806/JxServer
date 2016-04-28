@@ -6,15 +6,15 @@ EXTPOINT_LAST_AWARD_DATETIME = 6;		--À©Õ¹µãID of Íæ¼ÒÉÏ´ÎÁìÈ¡ÀñÆ·µÄÊ±¼ä
 --Áì½±Ê±¼ä¶Î ( { ÆğÊ¼Ê±¼ä£¬ ½áÊøÊ±¼ä } Ê±¼ä¸ñÊ½ÎªHHMM )
 aryAwardTime = { { 1000, 1400 }, { 1900, 2000 }, { 2300, 2400 } };
 
---"È«¾Ö±äÁ¿ID of ½±ÅÆÊı"µÄÊı×é
+--" toµn côc thay ®æi l­îng ID of t­ëng bµi ®Õm "µÄÊı×é
 arynMedalCountGlbID = { GLBID_GOLD_COUNT, GLBID_SILVER_COUNT, GLBID_BRONZE_COUNT };
 
 --½±Æ·Êı×é
-aryAwardItem = {{ "ÏÉ²İÂ¶", {6,1,71,1,0,0,0} },	--½ğÅÆ½±Æ·
-				{ "°×¾ÔÍè", {6,1,74,1,0,0,0} },	--ÒøÅÆ½±Æ·
-				{ "ÑÌ»¨", {6,0,11,1,0,0,0} }};	--Í­ÅÆ½±Æ·
+aryAwardItem = {{ " tiªn th¶o lé ", {6,1,71,1,0,0,0} },	--½ğÅÆ½±Æ·
+				{ " b¹ch c©u hoµn ", {6,1,74,1,0,0,0} },	--ÒøÅÆ½±Æ·
+				{ " ph¸o b«ng ", {6,0,11,1,0,0,0} }};	--Í­ÅÆ½±Æ·
 				
---°ÂÔËËÍÀñ	·µ»ØÖµ£¨3¸ö£© ½ğÅÆÊı£¬ÒøÅÆÊı£¬Í­ÅÆÊı£» Èô½ğÅÆÊıÎª¸ºÊı -1:Î´³ä¿¨  -2:µ±Ç°²»ÊÇÁì½±Ê±¼ä  -3:ÒÑÁì¹ı½±
+--°ÂÔËËÍÀñ	·µ»ØÖµ£¨3 c¸ £© ½ğÅÆÊı£¬ÒøÅÆÊı£¬Í­ÅÆÊı£» Èô½ğÅÆÊıÎª¸ºÊı -1:Î´³ä¿¨  -2:µ±Ç°²»ÊÇÁì½±Ê±¼ä  -3:ÒÑÁì¹ı½±
 function olympics_Award()
 	--Î´³ä¿¨
 	if( IsCharged() ~= 1 ) then
@@ -53,7 +53,7 @@ function olympics_Award()
 				AddItem( aryAwardItem[i][2][1], aryAwardItem[i][2][2], aryAwardItem[i][2][3], aryAwardItem[i][2][4], aryAwardItem[i][2][5], aryAwardItem[i][2][6] , aryAwardItem[i][2][7]);
 			end
 			if( arynMedalCount[i] > 0 ) then
-				Msg2Player( "Äã»ñµÃÁË"..arynMedalCount[i].."¸ö"..aryAwardItem[i][1] );
+				Msg2Player( "Ng­¬i thu ®­îc "..arynMedalCount[i].." c¸ "..aryAwardItem[i][1] );
 			end
 		end		
 		

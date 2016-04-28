@@ -5,7 +5,7 @@ Include("\\script\\task\\newtask\\newtask_head.lua")
 Include("\\script\\global\\global_zahuodian.lua");
 function main(sel)
 	local buttons = store_sel_village_extend()
-		Say("±¾µêËäĞ¡µ«Ê²Ã´¶¼ÓĞ¡£¿Í¹ÙÏëÂòÊ²Ã´?",getn(buttons), buttons)
+		Say("Bæn tiÖm tuy nhá nh­ng thø g× còng cã. Kh¸ch quan muèn mua g×?",getn(buttons), buttons)
 end;
 
 function yes()

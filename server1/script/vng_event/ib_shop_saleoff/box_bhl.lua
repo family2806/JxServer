@@ -2,7 +2,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 
 local tbAward = 
 {	
-	{szName = "°×»¢Áî", tbProp = {6,1,2357,1,0,0}, nCount = 10},	
+	{szName = "B¹ch Hæ LÖnh", tbProp = {6,1,2357,1,0,0}, nCount = 10},	
 }
 
 function main(nItemIndex)
@@ -10,7 +10,7 @@ function main(nItemIndex)
 	local nHeight = 1
 	local nCount = 10
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Say(format("ÎªÈ·±£²Æ²ú°²È«£¬ÇëÁôÏÂ %d %dx%d ×°±¸¿ÕÎ»", nCount, nWidth, nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight))
 		return 1
 	end
 	tbAwardTemplet:Give(%tbAward, 1)

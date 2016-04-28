@@ -19,9 +19,9 @@ function main()
 	EventSys:GetType("AddNpcOption"):OnEvent(szNpcName, tbDailog, nNpcIndex)
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 
-	if (szNpcName == "ÃËÖ÷- ÉòÉıÒÂ") then 
-		tbDailog.szTitleMsg = "ÒÔÎäÑ§ÕğÉåÌìÏÂ"
-		tbDailog:AddOptEntry("ÎäÁÖÃËÖ÷µÄ¸£Àû", VLMC_main)
+	if (szNpcName == "Minh Chñ - ThÈmTh¨ngY") then 
+		tbDailog.szTitleMsg = "DÜ vâ häc chÊn nhiÕp thiªn h¹!"
+		tbDailog:AddOptEntry("Phóc lîi Vâ L©m Minh Chñ", VLMC_main)
 	end
 	--µ¯³ö¶Ô»°¿ò
 	tbDailog:Show()

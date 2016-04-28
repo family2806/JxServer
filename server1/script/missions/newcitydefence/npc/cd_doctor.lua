@@ -1,5 +1,5 @@
 function main()
-	Say("ÊØ³Ç¾üĞè¹Ù£ºÎÒÕâÓĞºÜ¶àÖÖÃû¹óÒ©Æ·£¬Õ½³¡Ê¹ÓÃµÄÎïÆ·¡£Äã¿ÉÒÔÊ¹ÓÃ <color=yellow>ËÎ½ğ½±Àø<color> µ½ÎÒÕâÂò<color=yellow>ËÎ½ğÎïÆ·<color>, µ«ÊÇ<color=red>Ê¿±øºÅ½ÇºÍ¸ë×Ó<color>Ö»ÄÜÔÚËÎ½ğÕ½³¡Ê¹ÓÃ£¬ÏëÂòÊ²Ã´£¿", 3, "ÂòÒ©Æ·/salemedicine", "ÂòËÎ½ğÎïÆ·/sj_shop_sell", "È¡Ïû/OnCancel")
+	Say("Qu©n nhu quan thñ thµnh: Chç ta cã nhiÒu lo¹i d­îc phÈm quı, nh÷ng vËt phÈm sö dông chiÕn tr­êng. Ng­¬i cã thÓ sö dông <color=yellow>®iÓm th­ëng Tèng Kim<color> ®Õn chç ta mua <color=yellow>vËt phÈm Tèng Kim<color>, nh­ng <color=red>Binh sÜ hiÖu gi¸c vµ bå c©u<color> chØ ®­îc sö dông trong ChiÕn tr­êng Tèng Kim, muèn mua thø g×?", 3, "Mua d­îc phÈm/salemedicine", "Mua VËt phÈm Tèng Kim/sj_shop_sell", "Hñy bá /OnCancel")
 end
 
 function salemedicine()

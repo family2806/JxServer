@@ -104,7 +104,7 @@ Convert = {
 --==================================================--
 	convertring = function(self,worth,mark)
 		for i=1,self.__ringtabfile:getRow() do
-			if (tonumber(self.__ringtabfile:getCell("ÎåĞĞ",i)) == mark or tonumber(self.__ringtabfile:getCell("ÎåĞĞ",i)) == 9) then
+			if (tonumber(self.__ringtabfile:getCell("Ngò Hµnh",i)) == mark or tonumber(self.__ringtabfile:getCell("Ngò Hµnh",i)) == 9) then
 				self.__ringWorth:addWorth(i, tonumber(self.__ringtabfile:getCell("Worth",i)), tonumber(self.__ringtabfile:getCell("mID",i)))
 			else
 				self.__ringWorth:addWorth(i, 0, tonumber(self.__ringtabfile:getCell("mID",i)))
@@ -116,7 +116,7 @@ Convert = {
 	end,
 	convertpendant = function(self,worth, mark)
 		for i=1,self.__pendanttabfile:getRow() do
-			if (tonumber(self.__pendanttabfile:getCell("ÎåĞĞ",i)) == mark or tonumber(self.__pendanttabfile:getCell("ÎåĞĞ",i)) == 9) then
+			if (tonumber(self.__pendanttabfile:getCell("Ngò Hµnh",i)) == mark or tonumber(self.__pendanttabfile:getCell("Ngò Hµnh",i)) == 9) then
 				self.__pendantWorth:addWorth(i, tonumber(self.__pendanttabfile:getCell("Worth",i)), tonumber(self.__pendanttabfile:getCell("mID",i)))
 			else
 				self.__pendantWorth:addWorth(i, 0, tonumber(self.__pendanttabfile:getCell("mID",i)))
@@ -128,7 +128,7 @@ Convert = {
 	end,
 	convertamulet = function(self,worth, mark)		
 		for i=1,self.__amulettabfile:getRow() do
-			if (tonumber(self.__amulettabfile:getCell("ÎåĞĞ",i)) == mark or tonumber(self.__amulettabfile:getCell("ÎåĞĞ",i)) == 9) then
+			if (tonumber(self.__amulettabfile:getCell("Ngò Hµnh",i)) == mark or tonumber(self.__amulettabfile:getCell("Ngò Hµnh",i)) == 9) then
 				self.__amuletWorth:addWorth(i, tonumber(self.__amulettabfile:getCell("Worth",i)), tonumber(self.__amulettabfile:getCell("mID",i)))
 			else
 				self.__amuletWorth:addWorth(i, 0, tonumber(self.__amulettabfile:getCell("mID",i)))
@@ -144,28 +144,28 @@ Convert = {
 Convert:loadSettings()
 ringmsg = 
 	{
-		"»ÆÓñ½äÖ¸",
-		"éÏé­Ê¯½äÖ¸",
-		"Ü½ÈØÊ¯½äÖ¸",
-		"ôä´ä½äÖ¸",
-		"´äÁñÊ¯½äÖ¸",
-		"×æÄ¸ÂÌ½äÖ¸",
-		"º£À¶±¦Ê¯½äÖ¸",
-		"ºì±¦Ê¯½äÖ¸",
-		"À¶±¦Ê¯½äÖ¸",
-		"×êÊ¯½äÖ¸"
+		"Hoµng Ngäc Giíi ChØ",
+		"C¶m L·m Th¹ch Giíi ChØ",
+		"Phï Dung Th¹ch Giíi ChØ",
+		"PhØ Thóy Giíi ChØ",
+		"Thóy Lùu Th¹ch Giíi ChØ",
+		"Tæ MÉu Lôc Giíi ChØ",
+		"H¶i Lam B¶o Th¹ch Giíi ChØ",
+		"Hång B¶o Th¹ch Giíi ChØ",
+		"Lam B¶o Th¹ch Giíi ChØ",
+		"Toµn Th¹ch Giíi ChØ"
 	}
 
 pendantmsg = 
 	{
-		{"Ñ¬ÒÂÏãÄÒ","ÜÔÀòÏãÄÒ","ÈéÏãÏãÄÒ","À¼»¨ÏãÄÒ","ºÏ»¶ÏãÄÒ","×ÏËÕÏãÄÒ","³ÁÌ´ÏãÄÒ","ÏÉ÷êÏãÄÒ","åÈéªÏãÄÒ","ÁúÏÑÏãÄÒ"},
-		{"ÂÌòÄÓñÅå","¾©°×ÓñÅå","ÌÒ»¨ÓñÅå","Ã·»¨ÓñÅå","ÎåÉ«ÓñÅå","ÇàÓñÓñÅå","±ÌÓñÓñÅå","Ä«ÓñÓñÅå","»ÆÓñÓñÅå","ÑòÖ¬°×Óñ"}
+		{"Hu©n Y H­¬ng Nang","M¹t LŞ H­¬ng Nang","Nhò H­¬ng H­¬ng Nang","Lan Hoa H­¬ng Nang","Hîp Hoan H­¬ng Nang","Tö T« H­¬ng Nang","TrÇm §µn H­¬ng Nang","Tiªn X¹ H­¬ng Nang","Giµ Nam H­¬ng Nang","Long Tiªn H­¬ng Nang"},
+		{"Du Diªn Ngäc Béi ","Kinh B¹ch Ngäc Béi ","§µo Hoa Ngäc Béi ","Mai Hoa  Ngäc Béi ","Ngò S¾c Ngäc Béi ","Thanh Ngäc Ngäc Béi ","Bİch Ngäc Ngäc Béi ","MÆc Ngäc Ngäc Béi ","Hoµng Ngäc Ngäc Béi ","D­¬ng Chi B¹ch Ngäc"}
 	}
 	
 amuletmsg = 
 	{
-		{"Í­ÏîÁ´","ÒøÏîÁ´","½ğÏîÁ´","°×½ğÏîÁ´","ÓñÖéÏîÁ´","ÂÌËÉÊ¯ÏîÁ´","Ë®¾§ÏîÁ´","¿×È¸Ê¯ÏîÁ´","ÕäÖéÏîÁ´","×êÊ¯ÏîÁ´"},
-		{"ÂÌËÉÊ¯»¤Éí·û","Éºº÷»¤Éí·û","Ã¨ÑÛ»¤Éí·û","»¢¾¦»¤Éí·û","Ë®¾§»¤Éí·û","çúçê»¤Éí·û","°×ôä´ä»¤Éí·û","ºìôä´ä»¤Éí·û","×Ïôä´ä»¤Éí·û","ÂÌôä´ä»¤Éí·û"}
+		{"§ång H¹ng Liªn","Ng©n H¹ng Liªn","Kim H¹ng Liªn","B¹ch Kim H¹ng Liªn","Ngäc Ch©u H¹ng Liªn","Lôc Tïng Th¹ch H¹ng Liªn","Thñy Tinh H¹ng Liªn ","Khæng T­íc Th¹ch H¹ng Liªn","Tr©n Ch©u H¹ng Liªn","Toµn Th¹ch H¹ng Liªn"},
+		{"Lôc Tïng Th¹ch Hé Th©n phï ","San H« Hé Th©n phï ","Miªu Nh·n Hé Th©n phï ","Hæ T×nh Hé Th©n phï ","Thñy Tinh Hé Th©n phï ","Hæ Ph¸ch Hé Th©n phï ","B¹ch PhØ Thóy Hé Th©n phï ","Hång PhØ Thóy Hé Th©n phï ","Tö PhØ Thóy Hé Th©n phï ","Lôc PhØ Thóy Hé Th©n phï "}
 	}
 
 MAXGIVENUM = 20  --¿ÉÒÔ¸øÀñÎïµÄ×î´óÉÏÏŞ
@@ -185,11 +185,11 @@ TF_BONUS_F = 12
 
 
 function main()
-	Talk(1, "GiveUIForThing", "ºÏ³É½äÖ¸£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>20<color>¸ö¼¦ÄêÉñÃØÀñÎïºÍÒ»¼şÀ¶É«µÄ<color=yellow>ÎäÆ÷×°±¸<color>£¬¿ÉÒÔºÏ³É³öÓëÆäÏàÓ¦µÈ¼¶¡¢ÎåĞĞÊôĞÔµÄÊ×ÊÎ¡£·ÅÈëµÄ¼¦ÄêÉñÃØÀñÎïµÄÇ±ÖÊÔ½¸ß£¬½äÖ¸µÄÊôĞÔ¾ÍÔ½ºÃ¡£<enter>¶Ò»»·½·¨£ºÎäÆ÷»»½äÖ¸£»¶¥´÷»òĞ¬×Ó»»Ñü×¹£»ÒÂ·ş»òÑü´ø»»¾±´ø¡£")
+	Talk(1, "GiveUIForThing", "Hîp thµnh nhÉn: Mçi lÇn bá tèi ®a vµo <color=yellow>20<color> lÔ vËt n¨m DËu vµ mét mãn <color=yellow>vò khİ<color> mµu xanh, cã thÓ hîp thµnh ra ®¼ng cÊp t­¬ng øng, trang søc thuéc tİnh ngò hµnh. Ta cµng bá nhiÒu lÔ vËt n¨m DËu vµo thuéc tİnh cña nhÉn cµng cao.<enter>C¸ch thøc ®æi: Vò khİ ®æi nhÉn; kh¨n ®éi hoÆc giµy ®æi ®ai th¾t; y phôc hoÆc yªu ®¸i ®æi d©y chuyÒn")
 end
 
 function GiveUIForThing()
-	GiveItemUI("Ê×ÊÎºÏ³É½çÃæ","ÔÚÏÂÃæµÄÎïÆ·À¸Àï·ÅÈë×î¶à20¸ö¼¦ÄêÉñÃØÀñÎïºÍÒ»¼şÎäÆ÷×°±¸¡£", "ConvertThing", "onCancel" );
+	GiveItemUI("Giao diÖn hîp thµnh trang søc","Thanh c«ng cô phİa d­íi ®Æt vµo nhiÒu nhÊt 20 lÔ vËt n¨m dËu vµ mét vò khİ.", "ConvertThing", "onCancel" );
 end
 
 function ConvertThing(nCount)
@@ -198,24 +198,24 @@ function ConvertThing(nCount)
 	local wnum = 0
 	local thindex = 0
 	if(nCount == 0) then
-		Talk(1,"GiveUIForThing","<#>É¶¶¼²»¸ø£¬ÄãÏë¸ÉÉ¶Ñ½¡£")
+		Talk(1,"GiveUIForThing","<#> C¸i g× còng kh«ng ®­a, ng­¬i muèn lµm g× ®©y!")
 		return nil
 	end
 	for i=1,nCount do
 		itemIdx = GetGiveItemUnit( i )
 		g, d, p, l, f = GetItemProp(itemIdx)
 		if((g ~= 4 or (d < 508 or d > 518)) and (g ~= 0 or (d~=0 and d~=1 and d ~= 2 and d ~= 5 and d ~= 6 and d ~= 7 ))) then --´íÎóµÀ¾ß  --and d~=2 and d~=5 and d~=6 and d~=7
-			Talk(1,"GiveUIForThing","<#>Äã¸øµÄÊÇÏºÃ×¶«Î÷Ñ½£¬Õ¦¿´²»¶®à¿£¿")
+			Talk(1,"GiveUIForThing","<#> Ng­¬i ®­a cho ta c¸i qu¸i g× thÕ nµy?")
 			return nil
 		end
 		if(g == 0 ) then -- ÎäÆ÷×°±¸
 		magictype = GetItemMagicAttrib(itemIdx, 1)
 			if (not magictype) then
-				Talk(1, "GiveUIForThing", "<#>Äã¸øÎÒµÄ±ØĞëÊÇÒ»¼şÓĞÀ¶É«ÊôĞÔµÄÎäÆ÷×°±¸¡£")
+				Talk(1, "GiveUIForThing", "<#> Ng­¬i ®­a ta mét vò khİ ph¶i cã thuéc tİnh mµu xanh. ")
 				return
 			end
 		if (magictype == 0 ) then
-			Talk(1, "GiveUIForThing", "<#>Äã¸øÎÒµÄ±ØĞëÊÇÒ»¼şÓĞÀ¶É«ÊôĞÔµÄÎäÆ÷×°±¸¡£")
+			Talk(1, "GiveUIForThing", "<#> Ng­¬i ®­a ta mét vò khİ ph¶i cã thuéc tİnh mµu xanh. ")
 			return
 		end	
 			wnum = wnum + 1
@@ -225,11 +225,11 @@ function ConvertThing(nCount)
 		end
 	end
 	if (wnum > 1) then	--Ö»ÄÜ·ÅÒ»¼ş×°±¸
-		Talk(1, "GiveUIForThing", "<#>ÕâÃ´¶à×°±¸£¬ÎÒ²»ÊÇÀ¬»øÍ°°¡£¬Ïû»¯²»ÁËÕâÃ´¶à¡­¡­")
+		Talk(1, "GiveUIForThing", "<#> NhiÒu trang bŞ qu¸ sao ta lµm kŞp ®©y?……")
 		return nil
 	end	
 	if (wnum < 1) then
-		Talk(1, "GiveUIForThing", "<#>Õâ¸ö¡­¡­ÄãÊ²Ã´ÎäÆ÷×°±¸¶¼²»·Å£¬ÏëÒª¶Ò»»³öÊ×ÊÎÀ´£¿")
+		Talk(1, "GiveUIForThing", "<#> Vò khİ g× còng kh«ng ®Æt vµo sao ®æi trang søc ®©y?")
 		return
 	end
 	gg, dd = GetItemProp(thindex)

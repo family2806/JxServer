@@ -234,13 +234,13 @@ function main()
 	local Npcindex = GetLastDiagNpc() 					  --»ñµÃ×îºó¶Ô»°npcµÄindex
 	local TureParam = GetNpcParam(Npcindex,NPC_PARAM_ID)  --»ñµÃÔÚ¸Ã¶Ô»°npcÉíÉÏ´æ´¢µÄÈÎÎñ±äÁ¿
 	if (  messenger_middletime() == 10 ) then --Íæ¼ÒÔÚµØÍ¼ÖĞµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æğ! "..name.."! ÄãµÄĞÅÊ¹ÈÎÎñÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	elseif ( TureParam ~= Uworld181 ) then
-		Msg2Player("¶Ô²»Æğ£¬ÄãÎ´ÏÂµÃ¿´ÏäÈË£¬²»ÄÜ´ò¿ªÏä×Ó!")
+		Msg2Player("Xin lçi! ng­¬i ch­a h¹ ®­îc ng­êi gi÷ r­¬ng, kh«ng thÓ më r­¬ng ra!")
 		return
 	else		
-		Msg2Player("ÄãÒÑ³É¹¦´ò¿ª±¦Ïä.")
+		Msg2Player("B¹n ®· thµnh c«ng më chiÕc r­¬ng ra.")
 		messenger_turego()
 		
 	end

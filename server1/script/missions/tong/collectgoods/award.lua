@@ -17,7 +17,7 @@ tabExp = {
 1000000
 };
 
-collg_tabRate = {--Ğ¡¸£Ôµ ÏÉ²İÂ¶ Ëæ»úPKÍè ÖĞ¸£Ôµ 4¼¶Ğş¾§ ´ó¸£Ôµ 5¼¶Ğş¾§ Ëæ»úË®¾§ ÈÎÎñ¾íÖá 6¼¶Ğş¾§ 7¼¶Ğş¾§ 8¼¶Ğş¾§
+collg_tabRate = {--Ğ¡¸£Ôµ Tiªn Th¶o Lé Ëæ»úPKÍè ÖĞ¸£Ôµ 4¼¶Ğş¾§ ´ó¸£Ôµ 5¼¶Ğş¾§ Ëæ»úThñy tinh ÈÎÎñ¾íÖá 6¼¶Ğş¾§ 7¼¶Ğş¾§ 8¼¶Ğş¾§
 	{0, 0, 0, 0, 0, 0.27, 0.2755, 0.12, 0.2, 0.1, 0.03, 0.0045},	--µÚÒ»Ãû
 	{0, 0, 0, 0, 0.2, 0.172, 0.2, 0.1, 0.2, 0.1, 0.025, 0.003},	--
 	{0, 0, 0, 0.061, 0.2, 0.137, 0.2, 0.1, 0.2, 0.08, 0.02, 0.002},	--
@@ -32,27 +32,27 @@ collg_tabRate = {--Ğ¡¸£Ôµ ÏÉ²İÂ¶ Ëæ»úPKÍè ÖĞ¸£Ôµ 4¼¶Ğş¾§ ´ó¸£Ôµ 5¼¶Ğş¾§ Ëæ»úË®¾§
 
 --ÎïÆ·ÖÖÀà
 tab_goods = {
-	{122, 0, "¸£ÔµÂ¶(Ğ¡) "},
-	{71, 0, "ÏÉ²İÂ¶ "},
-	{"PK Íè"},
-	{123, 0, "¸£ÔµÂ¶(ÖĞ) "},
-	{147, 4, "Ğş¾§4¼¶"},
-	{124, 0, "¸£ÔµÂ¶(´ó) "},
-	{147, 5, "Ğş¾§5¼¶"},
-	{"Ë®¾§"},
-	{"ÈÎÎñÃØÍ¼ "},
-	{147, 6, "Ğş¾§6¼¶"},
-	{147, 7, "Ğş¾§7¼¶"},
-	{147, 8, "Ğş¾§8¼¶"},
+	{122, 0, "Phóc Duyªn (tiÓu) "},
+	{71, 0, "Tiªn Th¶o Lé "},
+	{"PK hoµn"},
+	{123, 0, "Phóc Duyªn (trung) "},
+	{147, 4, "HuyÒn Tinh cÊp 4"},
+	{124, 0, "Phóc Duyªn (®¹i) "},
+	{147, 5, "HuyÒn Tinh cÊp 5"},
+	{"Thñy tinh"},
+	{"MËt ®å nhiÖm vô "},
+	{147, 6, "HuyÒn Tinh cÊp 6"},
+	{147, 7, "HuyÒn Tinh cÊp 7"},
+	{147, 8, "HuyÒn Tinh cÊp 8"},
 }
 
 
 function collg_about()
-	Say("Ã¿´Î»î¶¯¾ÙĞĞ <color=red>15<color>·ÖÖÓ¡£ÆäÖĞÓĞ<color=red>5<color> 5·ÖÖÓ×¼±¸¡£±¨Ãû²Î¼Óºó£¬Íæ¼Ò½«±»ËÍµ½×¼±¸ÇøÓò¡£»î¶¯¿ªÊ¼Ê±£¬ÇøÓòÄÚ»á³öÏÖ»õÎï´ü£¬Íæ¼ÒÖ»ĞèÒª¼ñÆğÕâĞ©»õÎï´ü£¬µ«ÊÇĞèÒªĞ¡ĞÄÄÇĞ©±¬Õ¨µÄ³æ×Ó£¬Í»È»³öÏÖ·Éµ½ÈËÉíÉÏ±¬Õ¨¡£", 1, "ÏÂÒ»Ò³ /collg_about_next");
+	Say("Mét ®ît ho¹t ®éng diÔn ra trong <color=red>15<color> phót. Trong ®ã cã <color=red>5<color> phót chuÈn bŞ. Sau khi b¸o danh tham gia, ng­êi ch¬i sÏ ®­îc ®­a ®Õn khu vùc chuÈn bŞ. Khi ho¹t ®éng b¾t ®Çu th× trong khu vùc sÏ xuÊt hiÖn 'Tói hµng hãa', ng­êi ch¬i chØ cÇn nhÆt c¸c 'Tói hµng hãa' nµy; nh­ng cÇn ph¶i cÈn thËn nh÷ng con 's©u næ' ngÉu nhiªn xuÊt hiÖn b¸m vµo th©n ng­êi vµ ph¸t næ.", 1, "Trang kÕ /collg_about_next");
 end;
 
 function collg_about_next()
-	Say("Èç¹ûÍæ¼Ò±»À¥³æÕ¨ÖĞ£¬»õÎï´ü¾Í»áµôÂä£¬Í¬Ê±ÔÎÑ£30Ãë¡£ÔÚÔÎÑ£Ê±¼ä£¬½«²»±»±¬Õ¨³æ½ø¹¥¡£Èç¹û±»±¬Õ¨³æÌùÔÚÉíÉÏ£¬¾ÍÄÜÌí¼ÓÈÓ×ª¼¼ÄÜ£¬¿ÉÒÔÓÃ¸Ã¼¼ÄÜ½«³æ×ÓÈÓÏòËûÈË¡£»î¶¯½áÊøºó£¬'<color=yellow>»î¶¯·»×Ü¹Ü<color>' ½«¸ù¾İ»õÎï´üÅÅÃûÊıÁ¿·¢½±Àø.", 0);
+	Say("NÕu nh­ ng­êi ch¬i bŞ s©u ph¸t næ th× nh÷ng 'Tói hµng hãa' sÏ bŞ r¬i ra ë gÇn ®ã, ®ång thêi bŞ cho¸ng trong 30 gi©y. Trong thêi gian bŞ cho¸ng sÏ kh«ng bŞ 's©u næ' tÊn c«ng. Khi bŞ s©u næ b¸m vµo th× sÏ cã thªm kü n¨ng 'nĞm chuyÒn', cã thÓ dïng kü n¨ng nµy ®Ó nĞm s©u vµo ng­êi ch¬i kh¸c. Sau khi ho¹t ®éng kÕt thóc, '<color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color>' sÏ c¨n cø vµo b¶ng xÕp h¹ng sè l­îng 'Tói hµng hãa' ®Ó ph¸t th­ëng.", 0);
 end;
 
 function collg_aword()
@@ -66,12 +66,12 @@ function collg_aword()
 	SetTask(COLLG_COUNT_ONETIME, 0);
 	SetTask(COLLG_TK_RANK, 0);
 	if (nCount == 0 or nRank == 0) then
-		Say("»î¶¯·»×Ü¹Ü: ÄãÏëÁì½±°¡£¬¿ìÈ¥ÕÒ»õÎï´üÏÈ°É£¬Èç¹ûÃ»ÓĞ¾ÍÀ´ÕÒÎÒ£¬Ò²ÊÇÀË·ÑÊ±¼ä.", 1, "°´ÕÕ»ÓÊÖ¹æ¶¨·É³ö/oncancel");
+		Say("Tæng qu¶n Ho¹t ®éng ph­êng: Ng­¬i muèn nhËn th­ëng ­, h·y mau ®i t×m tói hµng hãa ®·, nÕu kh«ng cã th× t×m ta còng lµ phİ thêi gian mµ th«i.", 1, "Theo có phÊt tay bay ra/oncancel");
 		SetTaskTemp(193, 0);
 		return
 	end;
 	
-	Say("»î¶¯·»×Ü¹Ü: ×öµÄºÜºÃ£¬ÄãÕÒµ½ <color=yellow>"..nCount.."<color> »õÎï´ü£¬ÅÅÃûµÚ<color=yellow>"..nRank.."<color>, ÕâÊÇ¸øÄãµÄ½±Àø£¬ÇëÊÕÏÂ.", 1, "ÁìÈ¡½±Àø./oncancel");
+	Say("Tæng qu¶n Ho¹t ®éng ph­êng: Lµm rÊt tèt, ng­¬i t×m ®­îc <color=yellow>"..nCount.."<color> tói hµng hãa, xÕp h¹ng thø <color=yellow>"..nRank.."<color>, ®©y lµ phÇn th­ëng dµnh cho ng­¬i, xin h·y nhËn lÊy.", 1, "NhËn lÊy lÔ vËt./oncancel");
 	collg_giveaward(nRank);
 	SetTaskTemp(193, 0);
 end;
@@ -85,8 +85,8 @@ end;
 function collg_festival_addpkwan()--¼ÓPKÍè
     local itemidx = random(1, 10);
     AddItem(6, 0, itemidx, 1, 0, 0, 0);
-    tab_pkwan_name = {"³¤ÃüÍè", "¼ÓÅÜÍè", "´óÁ¦Íè", "¸ßÉÁÍè", "¸ßÖĞÍè", "·ÉËÙÍè", "±ù·ÀÍè", "À×·ÀÍè", "»ğ·ÀÍè", "¶¾·ÀÍè"};
-    Msg2Player("Äã»ñµÃÒ»¸ö"..tab_pkwan_name[itemidx]);
+    tab_pkwan_name = {"Tr­êng MÖnh hoµn", "Gia Bµo hoµn", "§¹i Lùc hoµn", "Cao ThiÓm hoµn", "Cao Trung hoµn", "Phi Tèc hoµn", "B¨ng Phßng hoµn", "L«i Phßng hoµn", "Háa Phßng hoµn", "§éc Phßng hoµn"};
+    Msg2Player("B¹n nhËn ®­îc mét"..tab_pkwan_name[itemidx]);
 end;
 
 function collg_goodsaward(nRank)
@@ -97,7 +97,7 @@ function collg_goodsaward(nRank)
 		return
 	end;
 	
-	if (nGoodsType == 8) then	--Ëæ»úÒ»¸öË®¾§
+	if (nGoodsType == 8) then	--Ëæ»úÒ»¸öThñy tinh
 		collg_givecrystal();
 		return
 	end;
@@ -107,15 +107,15 @@ function collg_goodsaward(nRank)
 		return
 	end;
 	AddItem(6, 1, tab_goods[nGoodsType][1], tab_goods[nGoodsType][2], 0, 0, 0);
-	local strsay = "Äã»ñµÃÒ»¸ö"..tab_goods[nGoodsType][3];
+	local strsay = "B¹n nhËn ®­îc mét"..tab_goods[nGoodsType][3];
 	Msg2Player(strsay);
 end;
 
 function collg_givecrystal()
 	local nIdx = random(1, 3);
-	local tab_Crystal = {{238, "À¶Ë®¾§"}, {239, "×ÏË®¾§"}, {240, "ÂÌË®¾§"}};
+	local tab_Crystal = {{238, "Lam Thñy Tinh"}, {239, "Tö Thñy Tinh"}, {240, "Lôc Thñy Tinh"}};
 	AddItem(4, tab_Crystal[nIdx][1], 0, 0, 0, 0, 0);
-	Msg2Player("Äã»ñµÃ <color=yellow>"..tab_Crystal[nIdx][2].."<color>.");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>"..tab_Crystal[nIdx][2].."<color>.");
 end;
 
 function collg_getgoodtype(nRank)
@@ -141,8 +141,8 @@ function collg_giveTaskBook()
 	SetItemMagicLevel(nRandomItemIndex, 1, nRandomTaskID);
 	-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	SyncItem(nRandomItemIndex);	
-	Msg2Player("Äã»ñµÃÒ»¸ö <color=green>ÈÎÎñ²ácolor>!");
-	WriteTaskLog("»ñµÃÒ»¸öÈÎÎñÃØ¼®£¬ºÅÂëÎª "..nRandomTaskID);
+	Msg2Player("B¹n nhËn ®­îc mét <color=green>quyÓn nhiÖm vô<color>!");
+	WriteTaskLog("NhËn ®­îc 1 mËt tŞch nhiÖm vô, m· sè lµ:"..nRandomTaskID);
 	return nRandomTaskID;
 end;
 
@@ -151,7 +151,7 @@ end;
 function WriteTaskLog(strMain)
 	-- Èç¹ûÊÇ¿ÕÖµÔò²»Ğ´Èë
 	if strMain==nil then return end;
-	WriteLog("[2006Äê°ï»áÎïÆ·ÊÕ¼¯»î¶¯]"..GetLocalDate(" [%y Äê %m ÔÂ %d ÈÕ %H Ê±%M ·Ö]").." [ÃÜÂë "..GetAccount().."] [ÈËÎï:"..GetName().."]:"..strMain);
+	WriteLog("[Ho¹t ®éng thu thËp vËt phÈm bang héi n¨m 2006]"..GetLocalDate(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]:"..strMain);
 end;
 
 function oncancel()	--È¡Ïû

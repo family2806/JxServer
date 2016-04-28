@@ -77,7 +77,7 @@ function JoinCamp(Camp)
 	--ÔÚµÚ¶şMissionÄÚ¼Óµ±Ç°Íæ¼Ò
 	LeaveTeam()
 	if (GetMSPlayerCount(2,Camp) >= MAX_MEMBER_COUNT) then
-		Say("Õâ·½ÏÖÒÑÂúÔ±, ²»ÄÜ¼ÓÈë!",0)
+		Say("Phe nµy hiÖn ®· ®ñ ng­êi, kh«ng thÓ gia nhËp!",0)
 		return
 	end;
 	AddMSPlayer(2, Camp);
@@ -115,15 +115,15 @@ function JoinCamp(Camp)
 	--ÉèÖÃÏÂ´ÎËÀÍöµÄÖØÉúµã
 	if (Camp == 1) then
 		SetTempRevPos(W, CS_OuterPos[2] * 32, CS_OuterPos[3] * 32);
-		str = GetName().."<#> ¼ÓÈë»Æ·½, ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(2,1);
+		str = GetName().."<#> gia nhËp phe Vµng, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(2,1);
 		SetPos(CS_CampPos1[2], CS_CampPos1[3])
 	elseif (Camp == 2) then
 		SetTempRevPos(W, CS_OuterPos[2] * 32, CS_OuterPos[3] * 32);
-		str = GetName().."<#> ¼ÓÈë×Ï·½, ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(2,2);
+		str = GetName().."<#> gia nhËp phe Tİm, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(2,2);
 		SetPos(CS_CampPos2[2], CS_CampPos2[3])
 	elseif (Camp == 4) then
 		SetTempRevPos(GetTaskTemp(300), GetTaskTemp(301) * 32, GetTaskTemp(302)* 32);
-		str = GetName().."<#> ¼ÓÈëÕ½¶·, ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(2,4);
+		str = GetName().."<#> gia nhËp chiÕn ®Êu, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(2,4);
 		SetPos(CS_CampPos4[2], CS_CampPos4[3])
 		SetDeathScript("\\script\\missions\\hsbattle\\hsbattledeath.lua");
 	end;

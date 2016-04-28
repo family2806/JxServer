@@ -21,25 +21,25 @@ function main()
 end
 function game_spreader()
 	if (SWITCH_SPREADER ~= 1) then
-		Talk(1, "", "<color=green>Í¨¸æ<color>: ¸Ã¹¦ÄÜ²»ÄÜ´ò¿ª!");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: chøc n¨ng nµy ch­a ®­îc më, xin xem th«ng b¸o cña trang web!");
 		return 0;
 	end
 	local szOp = 
 	{
-		"ÊäÈëcd-key ¼¤»îÕËºÅ/gsp_input_cdkey",
-		"»ñµÃ½±Àø! /gsp_phase_prize",
+		"NhËp cd-key kİch ho¹t tµi kho¶n/gsp_input_cdkey",
+		"NhËn ®­îc phÇn th­ëng! /gsp_phase_prize",
 		-- "ÁìÈ¡»Æ½ğÊ¦Í½¿¨/gsp_accept_goldcard",
-		"Ïà¹Ø¹«¸æ.../gsp_about",
-		"Åâ³¥¸øÕ¼³Ç°ï»á/about_castellan_remedy",
-		"¸øÈËÎïÈ¡Ãû/about_rename_role",
-		"¸ø°ï»áÈ¡Ãû/about_rename_tong",
-		"µ±×ªÏòĞÂµÄ·şÎñÆ÷Ê±£¬Íæ¼Ò¸üÃû/rename_role_tranfer",
-		"Ë³±ãÂ·¹ı/gsp_cancel",
-		"ÊÕ»ØÒÑÊ§È¥µÄ»Æ½ğ×°±¸!/restore_golditem",
+		"Liªn quan Th«ng c¸o.../gsp_about",
+		"Båi th­êng cho bang héi ®ang chiÕm thµnh/about_castellan_remedy",
+		"§Æt l¹i tªn cho nh©n vËt/about_rename_role",
+		"§Æt l¹i tªn cho bang héi/about_rename_tong",
+		"Ng­êi ch¬i ®æi tªn nh©n vËt khi chuyÓn sang Server míi/rename_role_tranfer",
+		"Nh©n tiÖn ghĞ qua th«i/gsp_cancel",
+		"NhËn l¹i trang bŞ Hoµng Kim ®· mÊt!/restore_golditem",
 	};
 	
 	if (SYSCFG_REGION_VERSION	== SC_REGION_VER_CN) then -- ´óÂ½°æ±¾
-		Say("»¶Ó­½øÈë<color=green>Í¨¸æ<color>, ÓĞÊ²Ã´ĞèÒª°ïÖúµÄÂğ?", 7,
+		Say("Hoan nghªnh vµo <color=green>Th«ng c¸o<color>, cã g× cÇn gióp ®ì?", 7,
 			szOp[1],
 			szOp[2],
 			szOp[3],
@@ -48,12 +48,12 @@ function game_spreader()
 			szOp[6],
 			szOp[8]);
 	elseif (SYSCFG_REGION_VERSION	== SC_REGION_VER_VN) then -- Ô½ÄÏ°æ±¾
-		Say("ÓĞÊ²Ã´ĞèÒª°ïÖúµÄÂğ?", 3,
+		Say("Xin hái cã thÓ gióp g× cho quı kh¸ch?", 3,
 			szOp[7],
 			szOp[9],
 			szOp[8]);
 	else
-		Say("ÓĞÊ²Ã´ĞèÒª°ïÖúµÄÂğ?", 1,
+		Say("Xin hái cã thÓ gióp g× cho quı kh¸ch?", 1,
 			szOp[8]);	
 	end
 end
@@ -64,26 +64,26 @@ function gsp_input_cdkey()
 	
 	--if (nValue == GSP_ACCOUNT_TYPE_NEWPLAYER or nValue == GSP_ACCOUNT_TYPE_SPREADERSYS) then
 	if (nValue == GSP_ACCOUNT_TYPE_NEWPLAYER) then
-		Msg2Player("ÄãÎ´ÁìÈ¡´ÙÏú»î¶¯µÄ½±Àø£¬ÏÖÔÚËÍÄã.");
+		Msg2Player("Ban ch­a l·nh gi¶i th­ëng gi¶i th­ëng cña ho¹t ®éng khuyÕn m·i! B©y giê tÆng b¹n.");
 		gsp_newaccount_gift_core();
 		nValue = nValue + 1; -- ´Ë²½¿É×ö¿É²»×ö
 	end
 	
 	if (nValue == GSP_ACCOUNT_TYPE_CDKEY) then
-		szError = "¸ÃÕËºÅÒÑ¼¤»î£¬²»ÓÃÊäÈëcd-key. µ«ÊÇ£¬Äã¿ÉÄÜÁì²»µ½»Æ½ğÊ¦Í½¿¨£¬ÇëÁªÏµVinagame."
+		szError = "Tµi kho¶n nµy ®· kİch ho¹t, kh«ng cÇn nhËp cd-key. Nh­ng b¹n cã thÓ kh«ng nhËn ®­îc thÎ S­ ®å Hoµng Kim, xin liªn hÖ víi Vinagame."
 		Talk(1, "", "<color=green>Th«ng c¸o<color>:"..szError);
 		gsp_writeLog(szError);
 		return -1;
 	end
 	
 	if (nValue == GSP_ACCOUNT_TYPE_CDKEY_PAY) then
-		szError = "¸ÃÕËºÅÒÑ¼¤»î£¬²»ÓÃÊäÈëcd-key. Ğ»Ğ»ÄãµÄÖ§³Ö"
-		Talk(1, "", "<color=green>Í¨¸æ<color>:"..szError);
+		szError = "Tµi khoµn nµy ®· kİch ho¹t, kh«ng cÇn nhËp cd-key. C¸m ¬n b¹n ®· ñng hé!"
+		Talk(1, "", "<color=green>Th«ng c¸o<color>:"..szError);
 		-- gsp_writeLog(szError);
 		return -1;
 	end
 	
-	AskClientForString("gsp_on_cdkey_input", "", 1, 20, "ÇëÊäÈëcd-key:");
+	AskClientForString("gsp_on_cdkey_input", "", 1, 20, "Xin nhËp cd-key:");
 end
 
 function gsp_on_cdkey_input(szCDKey)
@@ -91,7 +91,7 @@ function gsp_on_cdkey_input(szCDKey)
 end
 
 function gsp_about()
-	Talk(1, "", "<color=green>Í¨¸æ<color>, Çë¿´ÕıÊ½ÍøÒ³.");
+	Talk(1, "", "<color=green>Th«ng c¸o<color>, xin xem trang web chİnh thøc.");
 end
 
 function gsp_cancel()
@@ -101,7 +101,7 @@ end
 function gsp_phase_prize()
 	local nValue = GetTask(GSP_TASKID_ROLEREINFO);
 	if (GetByte(nValue, GSP_TASKID_TAG_BYTE_ROLETYPE) ~= GSP_TASKID_ROLETYPE_CDKEY) then
-		Talk(1, "", "<color=green>Í¨¸æ<color>: ÄãÎ´Ê¹ÓÃ cd-key ¼¤»î¸ÃÕËºÅ£¬²»ÄÜÁì½±¡£ÏêÇéÇë¿´ÍøÒ³ÉÏµÄĞÅÏ¢.");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n ch­a sö dông cd-key kİch ho¹t tµi kho¶n nµy, kh«ng thÓ l·nh th­ëng. Mäi chi tiÕt xin xem trªn trang web.");
 		return 0;
 	end
 	
@@ -111,7 +111,7 @@ function gsp_phase_prize()
 	local nBit = 0;
 	-----------------
 	if (nLevel < 30) then
-		Talk(1, "", "<color=green>Í¨¸æ<color>: Ä¿Ç°ÄãµÄµÈ¼¶Îª"..GetLevel().."¼¶£¬Î´Áì½±.<enter>µ±Äã´ïµ½30, 40, 50, 80 ¼¶ºóµ½ÕâÁì½±¡£¼ÓÓÍ! <enter><enter><color=green>ËµÃ÷<color>: ÔÊĞíÊ¹ÓÃ<color=yellow>»Æ½ğÊ¦Í½¿¨<color>.");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: HiÖn ®¼ng cÊp cña b¹n lµ "..GetLevel().."cÊp, ch­a l·nh gi¶i th­ëng.<enter>Khi b¹n ®Õn cÊp 30, 40, 50, 80 h·y ®Õn nhËn gi¶i th­ëng! Cè lªn! <enter><enter><color=green>H­íng dÉn<color>: Cho phĞp b¹n sö dông <color=yellow>Hoµng Kim S­ ®å thiÕp<color>.");
 		return 0;
 	end
 	if (nLevel >= 30 and GetBit(nValue, GSP_TASKID_TAG_BIT_30BONUS) == 0) then
@@ -147,9 +147,9 @@ function gsp_phase_prize()
 		nValue = SetBit(nValue, nBit, 1); -- ÉèÖÃÁìÈ¡±ê¼Ç
 		print("Value:"..nValue)
 		SetTask(GSP_TASKID_ROLEREINFO, nValue);
-		Talk(1, "", "<color=green>Í¨¸æ<color>: Äã»ñµÃ"..nPrizeLevel.."±¾½×¶ÎµÄ½±Àø£¬ÔÙÅ¬Á¦µãÅ¶");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n nhËn ®­îc"..nPrizeLevel.."phÇn th­ëng cña giai ®o¹n nµy! Cè g¾ng nç lùc thªm nhĞ!");
 	else
-		Talk(1, "", "<color=green>Í¨¸æ<color>: ÄãÒÑÁì½±£¬¼ÓÓÍÅ¶!");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n ®· l·nh gi¶i th­ëng, h·y cè g¾ng!");
 	end
 end
 
@@ -158,11 +158,11 @@ function gsp_cdkey_verify_result(nResult)
 
 	local szMsg = 
 	{
-		"µ±·¢Éú´íÎóÊ±£¬ÇëÁªÏµGM!",
-		"cd-key ÎŞĞ§£¬ÇëÊäÈë¶ÔµÄcd-key!",
-		"cd-key ÕıÈ·£¬ÕËºÅÒÑ¼¤»î£¬¹§Ï²½øÈëÍ¨¸æ!",
-		"Ê§°Ü£ºÕËºÅÒÑÊ¹ÓÃ10¸öĞ¡Ê±£¬²»ÄÜÔÙµÇÂ¼!",
-		"Ê§°Ü£º¸ÃÕËºÅÒÑ¼¤»î£¬²»ÄÜÔÙµÇÂ¼ÁË!"
+		"Khi ph¸t sinh lçi, xin h·y liªn hÖ víi GM!",
+		"cd-key v« hiÖu, xin nhËp ®óng cd-key!",
+		"cd-key chİnh x¸c, tµi kho¶n ®· kİch ho¹t! Chµo mõng vµo Th«ng c¸o!",
+		"ThÊt b¹i: Tµi kho¶n ®· sö dông h¬n 10 giê, kh«ng thÓ ®¨ng nhËp vµo l¹i!",
+		"ThÊt b¹i: Tµi kho¶n nµy ®· kİch ho¹t, kh«ng thÓ ®¨ng nhËp n÷a!"
 	};
 	local nSel = 1;
 	if (nResult == GSP_CDKEY_E_CDKEYERROR) then
@@ -177,7 +177,7 @@ function gsp_cdkey_verify_result(nResult)
 
 	gsp_writeLog(szMsg[nSel].." result: "..nResult);
 	Msg2Player(szMsg[nSel]);
-	Talk(1, "", " [<color=green>Í¨¸æ<color>]"..szMsg[nSel]);
+	Talk(1, "", " [<color=green>Th«ng c¸o<color>]"..szMsg[nSel]);
 
 	if (nResult == GSP_CDKEY_ACTION_SUCCESS) then
 		gsp_config_for_join();
@@ -210,9 +210,9 @@ function gsp_accept_goldcard()
 	AddItem(6, 1, 441, 1, 0, 0); -- »Æ½ğÊ¦Í½¿¨
 	SetTask(TKID_GOLD_APPRENTICE, 1); -- ±ê¼Ç½ÇÉ«Îª»Æ½ğÍ½µÜ
 	
-	local szMsg = "Äã»ñµÃ <color=yellow>Ê¦Í½»Æ½ğ¿¨®å<color>! ÓÃËüÀ´°İÊ¦£¬ÄãºÍÊ¦¸µ¶¼»á»ñµÃºÜ¶à½±Àø!"; 
+	local szMsg = "B¹n nhËn ®­îc <color=yellow>ThÎ Hoµng Kim S­ ®å<color>! Dïng nã ®Ó b¸i s­, b¹n vµ s­ phô ®Òu sÏ nhËn ®­îc nhiÒu phÇn th­ëng!"; 
 	Msg2Player(szMsg);
-	Talk(1, "", "<color=green>Í¨¸æ<color>:"..szMsg);
+	Talk(1, "", "<color=green>Th«ng c¸o<color>:"..szMsg);
 	-- gsp_writeLog("»ñµÃ»Æ½ğÊ¦Í½¿¨");
 end
 
@@ -240,12 +240,12 @@ function gsp_prize_skills90()
 				AddMagic(SKILLS_90[faction+1][i][1],SKILLS_90[faction+1][i][2])
 			end
 		end
-		Msg2Player("¹§Ï²ÄãÒÑ³¬¹ı <color=green>Í¨¸æµÄÌôÕ½<color>, ¿ÉÒÔÁìÎò90¼¶¼¼ÄÜ ")
-		AddGlobalNews("´ó¼ÒÒ»Æğ×£ºØ"..GetName().."Ë³ÀûÍ¨¸æÍ¨¸æµÄÌôÕ½£¬¿ÉÒÔÁìÎò±¾ÃÅµÄ90¼¶¼¼ÄÜ.")
+		Msg2Player("Chóc mõng b¹n ®· v­ît qua thö th¸ch cña <color=green>Th«ng c¸o<color>, cã thÓ l·nh ngé kü n¨ng cÊp 90 ")
+		AddGlobalNews("Mäi ng­êi cïng nhau chóc mõng"..GetName().."ThuËn lîi th«ng qua thö th¸ch cña Th«ng c¸o cã thÓ l·nh ngé kü n¨ng cÊp 90 cña bæn m«n.")
 		return 1;
 	end
-	Msg2Player("ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÁìÎò90¼¶¼¼ÄÜ!")
-	Talk(1, "", "ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÁìÎò90¼¶¼¼ÄÜ!");
+	Msg2Player("B¹n ch­a nhËp m«n! Kh«ng thÓ l·nh ngé ®­îc kü n¨ng cÊp 90!")
+	Talk(1, "", "B¹n ch­a nhËp m«n! Kh«ng thÓ l·nh ngé ®­îc kü n¨ng cÊp 90!");
 	return 0;
 end
 
@@ -267,10 +267,10 @@ end
 -- Ô­Õ¼³Ç°ï»á²¹³¥
 function about_castellan_remedy()
 	if (check_castellan_remedy() == 1) then
-		Say("<#> ÓÉÓÚ·¢ÉúÕÏ°­£¬ËùÒÔÏµÍ³´¦Àí´íÎóÄãµÄÈ¨ÏŞ¡£ÎÒÃÇ¼°Ê±Åâ³¥£¬ÄãÏÖÔÚÏëÁìÊ²Ã´Åâ³¥?",
+		Say("<#> Do cã ph¸t sinh trôc trÆc nªn hÖ thèng ®· xö lı sai quyÒn h¹n cña b¹n! Chóng t«i kËp tøc båi th­êng! B¹n cã muèn nhËn båi th­êng ngay b©y giê kh«ng?",
 			2,
-			"<#> ÎÒÏëÁìÅâ³¥/take_castellan_remedy",
-			"<#> ÉÔºò»ØÀ´Áì/cancel");
+			"<#> Ta muèn nhËn båi th­êng/take_castellan_remedy",
+			"<#> LÇn sau ®Õn nhËn/cancel");
 	else
 		deny()
 	end
@@ -278,10 +278,10 @@ end
 
 -- ÁìÈ¡Ô­Õ¼³Ç°ï»á²¹³¥
 function take_castellan_remedy()
-	Say("<#> Ã¿¸öÕ¼³Ç°ï»á»ñµÃÅâ³¥½±Àø£º60¸öÉñÃØ´óºì°ü(ÓÉ°ïÖúÁìÈ¡) ºÍ500000000 Á½(Ö±½Ó·ÅÈë°ï»áÒø¿â) . ÇëÈ·ÈÏ×°±¸ÉÏ»¹ÓĞ¿ÕÎ»£¬ÄãÏëÏÖÔÚÁìÂğ?",
+	Say("<#> Mçi Bang héi chiÕm thµnh nhËn ®­îc phÇn th­ëng båi th­êng: 60 c¸i thÇn bİ ®¹i hång bao (Do bang chñ nhËn lÊy) vµ 500000000 l­îng (Trùc tiÕp ®­a vµo ng©n quü Bang héi) . Xin h·y x¸c nhËn cßn kho¶ng trèng trªn hµnh trang, b¹n muèn nhËn ngay b©y giê chø?",
 		2,
-		"<#> ÎÒÏëÏÖÔÚÁì/take_castellan_remedy2",
-		"<#> ÉÔºòÔÙÀ´Áì/cancel")
+		"<#> Ta muèn nhËn ngay/take_castellan_remedy2",
+		"<#> LÇn sau ®Õn nhËn/cancel")
 end
 
 function take_castellan_remedy2()
@@ -291,15 +291,15 @@ function take_castellan_remedy2()
 		end
 		local now = date("%Y-%m-%d %H:%M:%S")
 		local name = GetName()
-		WriteLog(now .. " Åâ³¥¸øÕ¼³Ç°ï»á" .. name .. "»ñµÃ60¸öÉñÃØ´óÀñ°ü")
-		Msg2Player("<#> Äã»ñµÃ»ñµÃ60¸öÉñÃØ´óÀñ°ü")
+		WriteLog(now .. " Båi th­êng cho bang héi ®ang chiÕm thµnh" .. name .. "nhËn ®­îc 60 thÇn bİ ®¹i hång bao")
+		Msg2Player("<#> B¹n nhËn ®­îc 60 c¸i thÇn bİ ®¹i hång bao")
 
 		tong, res = GetTong()
 		if (res == 1 and tong ~= "") then
 			local money = 500000000
 			AddTongMoney(tong, money)
-			WriteLog(now .. " Åâ³¥¸øÕ¼³Ç°ï»á" .. name .. "Ä¿Ç°°ï»á" .. tong .. "»ñµÃ60¸öÉñÃØ´óÀñ°ü")
-			Msg2Player("<#> ÄãµÄ°ï»á»ñµÃ" .. money .. " Á½")
+			WriteLog(now .. " Båi th­êng cho bang héi ®ang chiÕm thµnh" .. name .. "Bang héi hiÖn t¹i" .. tong .. "nhËn ®­îc 60 thÇn bİ ®¹i hång bao")
+			Msg2Player("<#> Bang héi cña b¹n nhËn ®­îc" .. money .. " l­îng")
 		end
 		clear_castellan_remedy()
 	end
@@ -307,25 +307,25 @@ end
 
 -- ÖØÃûÍæ¼Ò¸ü¸Ä½ÇÉ«Ãû¶Ô»°
 function about_rename_role()
-	local strInfo = "<#> ÄúºÃ£¬ÓÉÓÚÄãµÄÃû×ÖÓëÆäËûÍæ¼ÒµÄÃû×ÖÏàÍ¬£¬ËùÒÔÏµÍ³ÒÑ°ïÄú¸ÄÃû£¬Äã¿ÉÒÔĞŞ¸ÄÖ®Ç°µÄÃû×Ö£¬¿ÉÒÔ¼ì²éÄÇ¸öÃû×Ö¿ÉÒÔÓÃÂğ£¿×¢Òâ£¬ÄãÖ»ÓĞÎ¨Ò»µÄÒ»´Î»ú»á¸ÄÃû£¬ÇëĞ¡ĞÄ.";
-	local strError= "<#> ¶Ô²»Æğ£¬Äã²»ÄÜ½øĞĞ´Î²Ù×÷¡£( Ö»ÄÜ¸ü¸ÄÈËÎïÃû×Ö£¬°ï»áÃû×Ö£¬Õ¼³Ç°ï»á°ïÖ÷Ãû×Ö) . ÇëÁªÏµGMÁË½âÏêÇé";
+	local strInfo = "<#> Chµo b¹n! V× tªn nh©n vËt cña b¹n vµ ng­êi ch¬i kh¸c gièng nhau, cho nªn hÖ thèng ®· gióp b¹n ®æi tªn, b¹n cã thÓ söa tªn nh©n vËt cña b¹n tr­íc ®©y, cã thÓ kiÓm tra xem tªn ®ã cã dïng ®­îc kh«ng. Chó ı! B¹n chØ cã 1 c¬ héi duy nhÊt ®Ó ®æi tªn, xin h·y cÈn thËn tõng b­íc.";
+	local strError= "<#> Xin lçi! B¹n kh«ng thÓ tiÕn hµnh thao t¸c nµy. ( ChØ cã thÓ thay ®æi tªn Nh©n vËt, tªn Bang héi, tªn bang chñ cña bang héi chiÕm thµnh) . Xin liªn hÖ víi GM ®Ó biÕt thªnm chi tiÕt";
 	func_online_rename_role(strInfo, strError);
 end
 
 function rename_role_tranfer()
-	local strInfo = "<#>ÄãÖ»ÓĞÎ¨Ò»µÄÒ»´Î¸ÄÃû»ú»á£¬¿ÉÒÔÏÈ¿´À´Ñ¡Ôñ¡£ÔÚ¾ö¶¨Ö®Ç°£¬Çë×ĞÏ¸¿´ĞÅÏ¢!";
-	local strError= "<#> Äã²»ÄÜÖ´ĞĞ¸Ã²Ù×÷¡£Ö»ÓĞ×ªÏòĞÂµÄ·şÎñÆ÷µÄÈË²ÅÄÜ½øĞĞ¡£ÇëÁªÏµ·şÎñ²¿ÃÅÁË½âÏêÇé!";
+	local strInfo = "<#>B¹n chØ cã duy nhÊt 1 c¬ héi ®Ó ®æi tªn nh©n vËt. Cã thÓ xem tr­íc ®Ó lùa chän. Xin xem kü c¸c th«ng tin tr­íc khi quyÕt ®Şnh!";
+	local strError= "<#> B¹n kh«ng thÓ thùc hiÖn thao t¸c nµy! ChØ ng­êi ®ang chuyÓn Server míi cã thÓ tiÕnh hµnh. Xin liªn hÖ víi bé phËn phôc vô ®Ó biÕt thªm chi tiÕt!";
 	func_online_rename_role(strInfo, strError);
 end
 
 -- ÖØÃû°ï»á¸ü¸Ä°ï»áÃû
 function about_rename_tong()
 	if (check_renametong() == 1) then
-		Say("<#> ÄúºÃ£¬ÓÉÓÚÄãµÄÃû×ÖÓëÆäËûÍæ¼ÒµÄÃû×ÖÏàÍ¬£¬ËùÒÔÏµÍ³ÒÑ°ïÄú¸ÄÃû£¬Äã¿ÉÒÔĞŞ¸ÄÖ®Ç°µÄÃû×Ö£¬¿ÉÒÔ¼ì²éÄÇ¸öÃû×Ö¿ÉÒÔÓÃÂğ£¿×¢Òâ£¬ÄãÖ»ÓĞÎ¨Ò»µÄÒ»´Î»ú»á¸ÄÃû£¬ÇëĞ¡ĞÄ.",
+		Say("<#> Chµo b¹n! V× tªn nh©n vËt cña b¹n vµ ng­êi ch¬i kh¸c gièng nhau, cho nªn hÖ thèng ®· gióp b¹n ®æi tªn, b¹n cã thÓ söa tªn nh©n vËt cña b¹n tr­íc ®©y, cã thÓ kiÓm tra xem tªn ®ã cã dïng ®­îc kh«ng. Chó ı! B¹n chØ cã 1 c¬ héi duy nhÊt ®Ó ®æi tªn, xin h·y cÈn thËn tõng b­íc.",
 			3,
-			"<#> ²éÑ¯°ï»áÃûÊÇ·ñ¿ÉÓÃ/query_tongname",
-			"<#>¸ü¸Ä×Ô¼ºËùÔÚ°ï»áµÄ°ï»áÃû/change_tongname",
-			"<#>ÎÒ»¹ÊÇÏÂ´ÎÔÙÀ´¸ü¸Ä°É/cancel")
+			"<#> KiÓm tra tªn Bang héi cßn sö dông ®­îc kh«ng?/query_tongname",
+			"<#> Söa ®æi tªn Bang héi cña m×nh/change_tongname",
+			"<#> §Ó lÇn sau ta thay ®æi vËy/cancel")
 			else
 		deny()
 	end
@@ -333,7 +333,7 @@ end
 
 -- ²éÑ¯°ï»áÃû
 function query_tongname()
-	AskClientForString("on_query_tongname", "", 1, 20, "<#> ÇëÊäÈëÒª²éÑ¯µÄ°ï»áÃû");
+	AskClientForString("on_query_tongname", "", 1, 20, "<#> Xin nhËp tªn Bang héi muèn t×m hiÓu");
 end
 
 function on_query_tongname(new_tong)
@@ -344,10 +344,10 @@ end
 
 -- ¸ü¸Ä°ï»áÃû
 function change_tongname()
-	Say("<#> ¾ßÌå²½Öè£ºÔÚÓëNPCµÄ¶Ô»°ÖĞÊäÈëÒª¸ü¸ÄµÄ°ï»áÃûºó£¬Èç°ï»áÃû¸ü¸Ä³É¹¦£¬ÏµÍ³»á¸øÓë¸ü¸Ä³É¹¦ÌáÊ¾£¬²¢ÔÚÏµÍ³ÏÂ´ÎÎ¬»¤ºó£¬¸ü¸ÄÄúËùÔÚ°ï»áµÄ°ï»áÃû¡£Èç¹û¸ü¸ÄÊ§°Ü£¬ÔòÇëÄúÖØĞÂ½øĞĞÉÏÊöµÄ²½Öè¡£Èç¹û³öÏÖÆäËûÒì³£Çé¿ö£¬ÇëÓë¿Í·şÈËÔ±ÁªÏµ¡£", 
+	Say("<#> C¸c b­íc cô thÓ: §èi tho¹i víi NPC, nhËp tªn bang héi cÇn thay ®æi vµo, b¹n sÏ tù ®éng rêi m¹ng. Sau 3 phót ®¨ng nhËp l¹i, nÕu tªn bang héi ®· thay ®æi th× ®­îc xem ®æi tªn thµnh c«ng; nÕu ch­a thay ®æi, mêi b¹n thùc hiÖn l¹i c¸c b­íc trªn. NÕu xuÊt hiÖn mét sè hiÖn t­îng l¹ xin liªn hÖ GM gi¶i quyÕt.", 
 		2,
-		"<#>¿ªÊ¼¸ü¸Ä°ï»áÃû/change_tongname2",
-		"<#>ÎÒÔÙ¿¼ÂÇÒ»ÏÂ/cancel");
+		"<#> B¾t ®Çu thay ®æi tªn Bang héi/change_tongname2",
+		"<#> §Ó ta suy nghÜ l¹i/cancel");
 end
 
 function change_tongname2()
@@ -356,12 +356,12 @@ end
 
 function on_change_tongname(new_tong)
 	if (GetTongMaster() ~= GetName()) then
-		Talk(1, "", "<#>Ö»ÓĞ°ïÖ÷²ÅÄÜ¸ü¸Ä°ï»áÃû")
+		Talk(1, "", "<#> ChØ cã bang chñ míi cã thÓ thay ®æi tªn Bang héi")
 	elseif (check_renametong() == 1) then
 		old_tong, res = GetTong()
 		if (res == 1 and old_tong ~= "") then
 			if (old_tong == new_tong) then
-				Say("<#>²»ÄÜĞŞ¸Ä³ÉÏàÍ¬µÄ°ï»áÃû", 1, "<#>ÖªµÀÁË/cancel")
+				Say("<#> Kh«ng thÓ thay ®æi tªn Bang héi gièng nhau", 1, "<#> BiÕt råi!/cancel")
 			else
 				RenameTong(old_tong, new_tong)
 			end
@@ -370,7 +370,7 @@ function on_change_tongname(new_tong)
 end
 
 function deny()
-	Say("<#> ¶Ô²»Æğ£¬Äã²»ÄÜ½øĞĞ¸Ã²Ù×÷. ( Ö»ÄÜ¸Ä±äÈËÎïÃû³Æ£¬°ï»áÃû³Æ£¬°ïÖ÷Ãû³Æ) .ÇëÁªÏµGMÁË½âÏêÇé",
+	Say("<#> Xin lçi! B¹n kh«ng thÓ tiÕn hµnh thao t¸c nµy. ( ChØ cã thÓ thay ®æi tªn Nh©n vËt, tªn Bang héi, tªn bang chñ cña bang héi chiÕm thµnh) . Xin liªn hÖ víi GM ®Ó biÕt thªnm chi tiÕt",
 		1,
-		"<#> ÖªµÀÁË!/cancel")
+		"<#> BiÕt råi!/cancel")
 end

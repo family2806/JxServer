@@ -6,7 +6,7 @@ Include("\\script\\event\\zhongqiu2007\\head.lua")
 function main(sel)
 	local ndate = tonumber(GetLocalDate("%y%m%d%H%M"))
 	if ndate > 0710312400 then
-		Say("Á«×ÓÔÂ±ıÒÑ¹ıÆÚ.",0)
+		Say("B¸nh Trung Thu h¹t sen nµy ®· qu¸ h¹n sö dông.",0)
 		return 0
 	end
 	if check_level() == 0 then
@@ -19,7 +19,7 @@ function main(sel)
 	end
 	local ncurexp = GetTask(TSK_ZHONGQIU2007)
 	if ncurexp >= NZHONGQIU2007_MAX then
-		Say("§i´ÓÖĞÇïÔÂ±ıÁìÈ¡µÄ¾­ÑéÖµÒÑ³¬¹ıÉÏÏŞ.",0)
+		Say("§iÓm kinh nghiÖm nhËn ®­îc tõ b¸nh Trung Thu ®· v­ît møc giíi h¹n.",0)
 		return 1
 	end
 	local nexp = 1000000
@@ -28,6 +28,6 @@ function main(sel)
 	end
 	SetTask(TSK_ZHONGQIU2007,(ncurexp+nexp))
 	AddOwnExp(nexp)
-	Msg2Player(format("»ñµÃ<color=yellow>%s<color> ¾­Ñé",nexp))
+	Msg2Player(format("NhËn ®­îc <color=yellow>%s<color> ®iÓm kinh nghiÖm",nexp))
 	WriteLog(format("[zhongqiu2007_lianzi]\t Date:%s\t Account:%s\t Name:%s\t GetExp:%s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),nexp));
 end

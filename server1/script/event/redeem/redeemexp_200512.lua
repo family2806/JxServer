@@ -29,19 +29,19 @@ local nDay   = tonumber(date("%d"));
 
 	-- ÅĞ¶ÏÊÇ·ñ³å¿¨
 	if IsCharged()==0 then
-		Say("Õæ²»ºÃÒâË¼£¡Õâ¸ö²¹³¥»î¶¯Ö»ÓĞ <color=yellow>³äÖµÍæ¼Ò<color>²Å¿ÉÒÔ²Î¼Ó!", 0);
+		Say("ThËt xin lçi! Ho¹t ®éng båi th­êng nµy chØ cã ng­êi ch¬i <color=yellow>n¹p thÎ<color> míi ®­îc tham gia!", 0);
 		return
 	end;
 	
 	-- ÅĞ¶ÏµÈ¼¶ÊÇ·ñ´óÓÚ 50 ¼¶
 	if GetLevel()<50 then
-		Say("Õæ²»ºÃÒâË¼£¡Õâ¸ö²¹³¥»î¶¯Ö»ÓĞ <color=yellow>50¼¶ÒÔÉÏµÄÍæ¼Ò<color> ²Å¿ÉÒÔ²Î¼Ó!", 0);
+		Say("ThËt xin lçi! Ho¹t ®éng båi th­êng nµy chØ cã ng­êi ch¬i <color=yellow>®¼ng cÊp tõ 50 trë lªn<color> míi ®­îc tham gia!", 0);
 		return
 	end;
 	
 	-- ÅĞ¶ÏÊÇ·ñÒÑ¾­ÁìÈ¡¹ıÁË
 	if GetTask(ID_2005EXPISPAY)~=0 then
-		Say("¶î£¡Ã»¼Ç´íµÄ»°ÄãÒÑ¾­Áì¹ı²¹³¥¾­ÑéÁË£¬²»ÒªÕâÃ´Ì°ĞÄÄØ!", 0);
+		Say("Uhm! Ta nhí kh«ng lÇm ng­¬i ®· nhËn qua kinh nghiÖm båi th­êng råi, ®õng tham lam nh­ vËy!", 0);
 		return
 	end;
 	
@@ -50,7 +50,7 @@ local nDay   = tonumber(date("%d"));
 		compensateExp();
 		return
 	else
-		Say("Õæ²»ºÃÒâË¼£¡Õâ´Î²¹³¥»î¶¯ÊÇ´Ó<color=yellow>23/12/2005<color>¿ªÊ¼µ½<color=yellow>31/12/2005<color>, ÏÖÔÚ<color=yellow>¼º½áÊø<color>, Äã»ØÈ¥°É!", 0);
+		Say("ThËt xin lçi! Ho¹t ®éng båi th­êng lÇn nµy lµ tõ <color=yellow>23/12/2005<color> b¾t ®Çu ®Õn <color=yellow>31/12/2005<color>, hiÖn nay <color=yellow>®· kÕt thóc<color>, ng­¬i h·y vÒ ®i!", 0);
 		return	
 	end;
 
@@ -66,11 +66,11 @@ local nExp = getRedeemeExp();
 
 	addPlayerExp(nExp);
 	
-	Say("Õâ´Î²¹³¥»î¶¯ÄãµÃµ½: <color=yellow>"..nExp.."<color> ¾­Ñé!", 0);
+	Say("Ho¹t ®ång båi th­êng lÇn nµy cña b¹n nhËn ®­îc: <color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm!", 0);
 	
-	Msg2Player("Õâ´Î²¹³¥»î¶¯ÄãµÃµ½:<color=yellow>"..nExp.."<color> ¾­Ñé!");
+	Msg2Player("Ho¹t ®éng båi th­êng lÇn nµy cña b¹n nhËn ®­îc:<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm!");
 	
-	WriteTaskLog("¾­Ñé²¹³¥»î¶¯ÖĞµÃµ½"..nExp.." ¾­Ñé!");
+	WriteTaskLog("Trong ho¹t ®éng båi th­êng kinh nghiÖm nhËn ®­îc"..nExp.." ®iÓm kinh nghiÖm!");
 
 end;
 
@@ -107,5 +107,5 @@ function WriteTaskLog(strMain)
 	-- Èç¹ûÊÇ¿ÕÖµÔò²»Ğ´Èë
 	if strMain==nil then return end;
 
-	WriteLog(" [²¹³¥¾­Ñé¼ÇÂ¼]"..date(" [%y Äê %m ÔÂ %d ÈÕ  %H Ê±%M ·Ö]").." [ÃÜÂë£º"..GetAccount().."] [ÈËÎï:"..GetName().."]"..strMain);
+	WriteLog(" [Kû lôc båi th­êng kinh nghiÖm]"..date(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]"..strMain);
 end;

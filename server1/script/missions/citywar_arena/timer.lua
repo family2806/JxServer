@@ -15,8 +15,8 @@ function OnTimer()
 		ReportMemberState(V);
 	elseif (timestate == 2) then --¿ªÕ½ÁË
 		ReportBattle(V);
-	elseif (timestate == 3) then  --Õ½¶·½áÊøÁË
-		Msg2MSAll(MISSIONID, "Õ½¶·½áÊø");
+	elseif (timestate == 3) then  --ChiÕn dŞch kÕt thóc ÁË
+		Msg2MSAll(MISSIONID, "ChiÕn dŞch kÕt thóc ");
 		StopMissionTimer(MISSIONID, 16);
 		StopMissionTimer(MISSIONID, 17);
 	end;
@@ -25,30 +25,30 @@ end;
 function ReportMemberState(V)
 	--ÔÚ±¨ÃûÆÚ¼ä£¬ÏµÍ³¶¨ÆÚÍ¨ÖªÍæ¼Òµ±Ç°µÄ±¨ÃûÇé¿ö
 	if (V == GO_TIME) then
-		Msg2MSAll(MSSIONID, "ÈËÊıÒÑ¹»£¬±ÈÈüÕıÊ½¿ªÊ¼");
-		msgstr = format("°ï»á %s ºÍ%s ÒÑ¿ªÊ¼±ÈÈü: ÏÖÔÚË«·½ÈËÊıÊÇ£º %d - %d.", GetMissionS(1), GetMissionS(2), GetMSPlayerCount(MISSIONID, 1), GetMSPlayerCount(MISSIONID, 2));
+		Msg2MSAll(MSSIONID, "Sè ng­êi vµo trong ®· ®ñ, cuéc thi ®Êu chİnh thøc b¾t ®Çu ");
+		msgstr = format("Bang héi %s vµ %s ®· b¾t ®Çu thi ®Êu: Sè ng­êi hai bªn hiÖn t¹i lµ: %d - %d.", GetMissionS(1), GetMissionS(2), GetMSPlayerCount(MISSIONID, 1), GetMSPlayerCount(MISSIONID, 2));
 		WriteLog(msgstr)
 		RunMission(MISSIONID);
 		return
 	end;
 		RestTime = (GO_TIME - V) * 20;
 		RestMin, RestSec = GetMinAndSec(RestTime);
-		local str1 = "½øÈëÈü³¡Ê±¼ä<#> »¹ÓĞ "..RestMin.."<#> ·Ö, ÌôÕ½¶ÓÇëÁ¢¿ÌÈë³¡."
-		str1 = "ÌôÕ½³ÇÕó<#> ÕıÔÚÈë³¡½×¶Î£¬Ë«·½¸Ï¿ìÈë³¡¡£Ë«·½ÈËÊı "..GetMSPlayerCount(MISSIONID, 1).."<#>:"..GetMSPlayerCount(MISSIONID, 2).."<#>. Èë³¡Ê±¼ä»¹ÓĞ: "..RestMin.."<#> ·Ö"..RestSec.."<#>Ãë";
+		local str1 = "Thêi gian vµo ®Êu tr­êng <#> cßn "..RestMin.."<#> phót, ®éi khiªu chiÕn xin lËp tøc vµo ®Êu tr­êng."
+		str1 = "TrËn khiªu chiÕn thµnh <#> ®ang trong giai ®o¹n vµo ®Êu tr­êng, hai bªn nhanh chãng vµo ®Êu tr­êng. Sè ng­êi hai bªn "..GetMSPlayerCount(MISSIONID, 1).."<#>:"..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian vµo ®Êu tr­êng cßn: "..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
 		Msg2MSAll(MISSIONID, str1);	
 end;
 
 function ReportBattle(V)
 --Õ½¶·½øĞĞ¹ı³ÌÖĞ£¬ÏµÍ³¶¨ÆÚÍ¨Öª¸÷·½µÄÕóÍöÇé¿ö
 	if (GetMSPlayerCount(MISSIONID, 1) <= 0 ) then 
-		Msg2MSAll(MISSIONID, "<#>.±ÈÈü½áÊø"..GetMissionS(2).."<#> È¡µÃ×îÖÕÊ¤Àû!");
+		Msg2MSAll(MISSIONID, "<#>. Thi ®Êu kÕt thóc,"..GetMissionS(2).."<#> giµnh ®­îc th¾ng lîi chung cuéc!");
 		WinBonus(2)
 		CloseMission(MISSIONID);
 		return
 	end;
 	
 	if (GetMSPlayerCount(MISSIONID, 2) <= 0 ) then 
-		Msg2MSAll(MISSIONID, "<#>.±ÈÈü½áÊø"..GetMissionS(1).."<#> È¡µÃ×îÖÕÊ¤Àû!");
+		Msg2MSAll(MISSIONID, "<#>. Thi ®Êu kÕt thóc,"..GetMissionS(1).."<#> giµnh ®­îc th¾ng lîi chung cuéc!");
 		WinBonus(1)
 		CloseMission(MISSIONID);
 		return
@@ -56,6 +56,6 @@ function ReportBattle(V)
 
 	gametime = (floor(GetMSRestTime(MISSIONID,17)/18));
 	RestMin, RestSec = GetMinAndSec(gametime);
-	str1 = "±ÈÈü½×¶Î<#>:ÏÖÔÚË«·½ÈËÊı£º»Æ·½"..GetMSPlayerCount(MISSIONID, 1).."<#>,×Ï·½"..GetMSPlayerCount(MISSIONID, 2).."<#>. Ê£ÓàÊ±¼ä"..RestMin.."<#>·Ö"..RestSec.."<#>Ãë ";
+	str1 = "Giai ®o¹n thi ®Êu <#>: Sè ng­êi hai bªn hiÖn t¹i: phe Vµng"..GetMSPlayerCount(MISSIONID, 1).."<#>, bªn mµu Tİm"..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian cßn d­ "..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
 	Msg2MSAll(MISSIONID, str1);
 end;

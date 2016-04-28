@@ -4,7 +4,7 @@
 function OnDeath()
 	if (GetTask(9) == 50*256+127) and (HaveItem(10) == 0) then
 		AddEventItem(10)
-		AddNote("´ò°Ü±ù¶´ÖĞµÄ¹ÖÈË£¬ÄÃµ½ËûÍ·ÉÏµÄÒ»´éÍ··¢ ")
-		Msg2Player("´ò°Ü±ù¶´ÖĞµÄ¹ÖÈË£¬ÄÃµ½ËûÍ·ÉÏµÄÒ»´éÍ··¢ ")
+		AddNote("§¸nh b¹i ®­îc qu¸i nh©n trong b¨ng ®éng vµ lÊy ®­îc n¾m tãc trªn ®Çu cña h¾n ")
+		Msg2Player("§¸nh b¹i ®­îc qu¸i nh©n trong b¨ng ®éng vµ lÊy ®­îc n¾m tãc trªn ®Çu cña h¾n ")
 	end
 end;

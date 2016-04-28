@@ -7,31 +7,31 @@
 function main()
 	UTask_world40 = GetTask(68)
 	if ((UTask_world40 == 3) or (UTask_world40 == 4)) then
-		Talk(1,"sele_buy","ÓĞÎåÏã¶¹¸¯Âğ?")
+		Talk(1,"sele_buy","Cã ®Ëu hò Ngò H­¬ng kh«ng?")
 	else
 		i = random(0,1)
 		if (i==0) then
-			Talk(1,"","ÖìÏÉÕòµÄµÚÒ»ÌØ²ú¾ÍÊÇ±¾µêµÄÎåÏã¶¹¸¯.")
+			Talk(1,"","§Ö nhÊt ®Æc s¶n ë Chu Tiªn trÊn nµy chİnh lµ ®Ëu hò Ngò H­¬ng cña tiÓu qu¸n.")
 		else
-			Talk(1,"","Çë¿Í¹Ù½ø×ø.")
+			Talk(1,"","Mêi kh¸ch quan vµo trong.")
 		end
 	end
 end;
 
 function sele_buy()
-	Say("Õâ¸öÊÇÖìÏÉÕòµÄÌØ²ú£¬µ±È»ÓĞ£¬µ«ÊÇ£¬¼Û¸ñÓĞµã¹ó£¬100Á½°×Òø.",2,"Âò/yes","Ì«¹óÁË /no")
+	Say("§©y lµ ®Æc s¶n ë Chu Tiªn trÊn, ®­¬ng nhiªn lµ cã nh­ng gi¸ h¬i m¾c,100 l­îng b¹c.",2,"Mua/yes","§¾t qu¸. /no")
 end;
 
 function yes()
 	if(GetCash() >= 100)then
-		Talk(1,"","¿ÉÒÔ£¬Ò»·İÎåÏã¶¹¸¯!")
+		Talk(1,"","§­îc! Mét phÇn ®Ëu hò Ngò H­¬ng!")
 		Pay(100);
 		AddEventItem(187);
-		Msg2Player("Äã»ñµÃÒ»·İÎåÏã¶¹¸¯");
-		AddNote("Âòµ½Ò»·İÎåÏã¶¹¸¯ ")
+		Msg2Player("B¹n nhËn ®­îc mét phÇn ®Ëu phô Ngò H­¬ng ");
+		AddNote("Mua ®­îc mét phÇn ®Ëu phô Ngò H­¬ng ")
 --		SetTask(68,4);
 	else
-		Talk(1,"","±¾¹İ²»×ö¿÷±¾ÉúÒâ£¬Ê²Ã´Ê±ºò¹»Ç®ÁËÔÙÀ´°É.")
+		Talk(1,"","Bæn qu¸n kh«ng mua b¸n lç vèn ®©u, khi nµo ®ñ tiÒn h·y quay l¹i.")
 	end
 end;
 

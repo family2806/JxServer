@@ -61,11 +61,11 @@ function tbKillBossMatch_ready:_CheckMission()
 	local nPlayerCount = GetMSPlayerCount(self.nMissionId, 0)
 	print(nMissionState)
 	if nMissionState ~= 1 then
-		Msg2Player("<color=yellow>Ä¿Ç°²»ÊÇ±¨ÃûÊ±¼ä<color>")
+		Msg2Player("<color=yellow>HiÖn t¹i kh«ng ph¶i lµ thêi gian b¸o danh<color>")
 		return
 	end
 	if self.nMaxPlayerCount and nPlayerCount > self.nMaxPlayerCount then
-		Msg2Player("²Î¼Ó»î¶¯µÄÈËÊıÒÑ¹»£¬ÇëµÈÏÂÒ»ÂÖ°É!")
+		Msg2Player("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!")
 		return 
 	end
 	return 1
@@ -126,7 +126,7 @@ function tbKillBossMatch_ready:OnTimer()
 	
 	
 	if nTimerCount < self.nReadyTime then
-		local szMsg	= format("×¼±¸Ê±¼ä»¹ÓĞ <color=yellow>%d<color> Ãë", self.nReadyTime - nTimerCount)
+		local szMsg	= format("Thêi gian chuÈn bŞ cßn <color=yellow>%d<color> gi©y", self.nReadyTime - nTimerCount)
 		if mod(nTimerCount, 10) == 0 then
 			Msg2MSAll(self.nMissionId, szMsg);
 		end
@@ -186,7 +186,7 @@ end
 
 function tbKillBossMatch_ready:OnClose()		
 	SetMissionV(self.tbMissionV.MISSION_STATE, 3)
-	Msg2MSAll(self.nMisssionId, "²»ÄÜÒÆ¶¯µ½ÆäËûµØÍ¼.")
+	Msg2MSAll(self.nMisssionId, "Kh«ng ®­îc phĞp di chuyÓn ®Õn b¶n ®å kh¸c.")
 	self:KickAllPlayer()
 end
 
@@ -217,11 +217,11 @@ end
 function tbKillBossMatch_ready:IsPlayerEligible()
 	
 	if PlayerFunLib:CheckIsTransLife("") ~= 1 and PlayerFunLib:CheckLevel(self.nMinLevel, "", ">=") ~= 1 then
-		Msg2Player(format("ĞèÒª %d ¼¶ÒÔÉÏ»òÕßÈËÎïÒÑ×ªÉú²ÅÄÜ²Î¼Ó»î¶¯", self.nMinLevel))
+		Msg2Player(format("CÊp %d trë lªn hoÆc nh©n vËt ®· chuyÓn sinh míi cã thÓ tham gia ho¹t ®éng", self.nMinLevel))
 		return 
 	end
 	
-	if PlayerFunLib:IsCharged("ĞèÒª³äÖµ²ÅÄÜ²Î¼Ó") ~= 1 then
+	if PlayerFunLib:IsCharged("Ph¶i nép thÎ míi cã thÓ tham gia") ~= 1 then
 		return 
 	end
 	
@@ -229,7 +229,7 @@ function tbKillBossMatch_ready:IsPlayerEligible()
 	
 	if PlayerFunLib:GetTaskDailyCount(self.TSK_nCountPerDay) >= 1 + PlayerFunLib:GetTaskDailyCount(self.TSK_IsUsePerDay) then
 	
-		Msg2Player("Ã¿ÌìÃ¿¸öÈËÎïÖ»ÄÜ²Î¼ÓÒ»´ÎÆ½°²¼¾»î¶¯")
+		Msg2Player("Mçi ngµy mçi nh©n vËt chØ ®­îc tham gia 1 lÇn ho¹t ®éng mïa an lµnh")
 		return
 	end
 	

@@ -13,20 +13,20 @@ function main()
 	end
 	if tbMaiTree:checkCondition() == 1 then
 		tbProgressBar.tbConfig[1].nTime = 5
-		tbProgressBar.tbConfig[1].szTitle = "ÕıÔÚ¹ÒÌû..."
-		tbProgressBar:OpenByConfig(1, tbMaiTree.hangCard, {tbMaiTree}, Msg2Player, {"¹ÒÌûÊ§°Ü."})
+		tbProgressBar.tbConfig[1].szTitle = "§ang treo thiÖp..."
+		tbProgressBar:OpenByConfig(1, tbMaiTree.hangCard, {tbMaiTree}, Msg2Player, {"Treo thiÖp thÊt b¹i."})
 		--tbMaiTree:hangCard()
 	end
 end
 
 function tbMaiTree:checkCondition()
 	if tbVNG_LY2011:checkCondition() ~= 1 then
-		Talk(1, "", "Äã²»×ãÌõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ")
+		Talk(1, "", "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm! Yªu cÇu cÊp ®é trªn 50 vµ ®·  n¹p thÎ.")
 		return 0
 	end
 	local nAvailableCount = self:getDailyAvailableCount(tbVNG_LY2011.nStartDay)
 	if nAvailableCount <= 0 then
-		Talk(1, "", "ºÃÏñ½ñÌìÎÒ¹ÒµÄÌûºÜ¶àÁË£¬Ã÷ÌìÔÙÀ´°É.")
+		Talk(1, "", "H×nh nh­ h«m nay ta ®·  treo thiÖp nhiÒu råi, mai quay l¹i vËy.")
 		return 0
 	end
 	if nAvailableCount == 1 then
@@ -34,17 +34,17 @@ function tbMaiTree:checkCondition()
 		local nTimePeriod = nCurTime - self:getTaskDailyTime()
 		if nTimePeriod	<= 30 then
 			local nRemainTime = 30 - nTimePeriod
-			Talk(1, "", format("2´Î¹ÒÌûÊ±¼ä¼ä¸ôÎª<color=red>30<color> ·ÖÖÓ. <color=red>%d<color> ·Öºó»ØÀ´.", nRemainTime))
+			Talk(1, "", format("Thêi gian gi÷a 2 lÇn treo thiÖp c¸ch nhau <color=red>30<color> phót. <color=red>%d<color> phót n÷a h·y quay l¹i.", nRemainTime))
 			return 0		
 		end
 		if CalcItemCount(-1, 6, 1, 30090, -1) < 1 then
-			Talk(1, "", "ºÃÏñÎÒÍü¼Ç´ø´ºÌûÁË£¬ÕæÊÇ½¡Íü ")
+			Talk(1, "", "H×nh nh­ ta quªn mang theo thiÖp xu©n, thËt lµ ®·ng  trİ.")
 			return 0
 		end
 		return 1
 	else if nAvailableCount == 2 then
 		if CalcItemCount(-1, 6, 1, 30090, -1) < 1 then
-			Talk(1, "", "ºÃÏñÎÒÍü¼Ç´ø´ºÌûÁË£¬ÕæÊÇ½¡Íü")
+			Talk(1, "", "H×nh nh­ ta quªn mang theo thiÖp xu©n, thËt lµ ®·ng trİ.")
 			return 0
 		end
 		return 1
@@ -65,7 +65,7 @@ function tbMaiTree:hangCard()
 			self:addTaskCount(1)
 			local nCurTime = tonumber(GetLocalDate("%H%M"))
 			self:setTaskDailyTime(nCurTime)
-			tbAwardTemplet:GiveAwardByList(tbExp, "[VNG][Lunar Year 2011][¹Ò´ºÌû»î¶¯]")
+			tbAwardTemplet:GiveAwardByList(tbExp, "[VNG][Lunar Year 2011][Ho¹t ®éng treo thiÖp xu©n]")
 		end	
 		
 end

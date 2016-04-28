@@ -5,12 +5,12 @@ Include("\\script\\global\\baijuwanhead.lua")
 function main(itemindex)
 	SetTaskTemp(AEXP_TEMPOFFLINETASKID, itemindex)
 	str=
-	{	"<#>1 ¿ÅÌØ±ğ¼¼ÄÜ´ó°×¾ÔÍè£¬Ê¹ÓÃºó½«»ñµÃ<color=red>8Ğ¡Ê±<color> Î¯ÍĞ¡£ÊÇÒ»°ã¼¼ÄÜ°×¾ÔÍèµÄÁ½±¶Ğ§¹û.",
-		"<#>Ê¹ÓÃÌØ±ğ¼¼ÄÜ°×¾ÔÍè /use",
-		"<#> ÈÃÎÒÏëÏë!/cancel",
-		"<#> ¿´¿´ÎÒÊ£ÓàµÄ¹Ò»úÊ±¼ä/get_left_time",
-		"<#> Ñ¡ÔñÀëÏß¹Ò»ú¼¼ÄÜ/#selectofflineskill('cancel')",
-		"<#> ½éÉÜ¹Ò»úÍæ·¨µÄÏ¸½Ú/help"
+	{	"<#>1 viªn §¹i B¹ch C©u Hoµn kü n¨ng ®Æc biÖt, sau khi sö dông sÏ nhËn ®­îc <color=red>8 giê<color> ñy th¸c. HiÖu qu¶ gÊp ®«i so víi B¹ch C©u Hoµn kü n¨ng th­êng.",
+		"<#>Sö dông B¹ch C©u Hoµn kü n¨ng ®Æc biÖt /use",
+		"<#> §Ó ta suy nghÜ l¹i!/cancel",
+		"<#> Tra xem thêi gian treo m¸y cßn l¹i cña ta/get_left_time",
+		"<#> Chän kü n¨ng rêi m¹ng vÉn treo m¸y/#selectofflineskill('cancel')",
+		"<#> Giíi thiÖu chi tiÕt vÒ c¸ch ch¬i treo m¸y/help"
 	};
 	Say(str[1], 4,str[2],str[3],str[4],str[5]);
 	return 1
@@ -25,7 +25,7 @@ function use()
 
 	if ((sparetime + AEXP_SPECIALSKILLCHANGE) > AEXP_MAXTIME) then
 		local hours, minutes = getFrame2MinAndSec(sparetime);
-		Say("ÄúµÄÀëÏß¹Ò»úÊ£ÓàÊ±¼äÎª<color=red>"..hours.."<color>gi?color=red>"..minutes.."<color> ·ÖÖÓ¡£¼¼ÄÜÎ¯ÍĞÀÛ¼ÆÊ±¼ä²»ÄÜ³¬¹ı<color=red>10000 Ğ¡Ê±color>.", 0);
+		Say("Thêi gian rêi m¹ng vÉn treo m¸y cßn l¹i cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót. Thêi gian tİch lòy ñy th¸c kü n¨ng kh«ng ®­îc v­ît qu¸ <color=red>10000 giê<color>.", 0);
     else	
 		itemindex = GetTaskTemp(AEXP_TEMPOFFLINETASKID);
 		if (IsMyItem(itemindex) ~= 1) then
@@ -38,10 +38,10 @@ function use()
 			ntotaltime = sparetime + AEXP_SPECIALSKILLCHANGE;
 			SetTask(AEXP_SPECIAL_SKILL_TASKID, ntotaltime);
 			local hours, minutes = getFrame2MinAndSec(ntotaltime);
-			Say("Ê¹ÓÃ³É¹¦£¬ÄúµÄÀëÏß¹Ò»úÊ±¼äÎª<color=red>"..hours.."<color>Ğ¡Ê±<color=red>"..minutes.."<color> ·ÖÖÓ",0);
+			Say("Thµnh c«ng sö dông, thêi gian rêi m¹ng vÉn treo m¸y cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót",0);
 			writeUseBaiJulog("skillofflineitem_special", hours, minutes);
 		else
-			Say("Ã»ÓĞÌØ±ğ¼¼ÄÜ°×¾ÔÍè£¬¿ÉÒÔÊ¹ÓÃ", 0);	
+			Say("Kh«ng cã B¹ch C©u Hoµn kü n¨ng ®Æc biÖt, cã thÓ sö dông ", 0);	
 		end
 	end
 end

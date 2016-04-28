@@ -13,8 +13,8 @@ CS_CampPos = {	{209, 1620, 3202},	--×ÏÉ«
 				{209, 1598, 3216}   --¹ÛÕ½ÕßµÄÎ»ÖÃ°×É«
 			 }; 
 CS_CamperPos = {
-				{1599, 3202, "ÕÅÈı"},
-				{1608, 3211, "ÀîËÄ"},
+				{1599, 3202, "Tr­¬ng Tam"},
+				{1608, 3211, "Lı T­"},
 }
 FRAME2TIME = 18;
 --ÓÎÏ·µÄ×î´óÈËÊı
@@ -54,9 +54,9 @@ function LeaveGame()
 	camp = GetCamp();--»Ö¸´Ô­Ê¼ÕóÓª
 	SetFightState(0)
 	if (GetCurCamp() == 2) then
-		LeaveChannel(PlayerIndex, "¼×·½¶àÈËÀŞÌ¨");
+		LeaveChannel(PlayerIndex, "L«i ®µi Gi¸p");
 	elseif (GetCurCamp() == 3) then
-		LeaveChannel(PlayerIndex, "ÒÒ·½¶àÈËÀŞÌ¨");
+		LeaveChannel(PlayerIndex, "L«i ®µi Êt");
 	end;
 	SetTaskTemp(200,0);
 	SetPunish(1)--ÉèÖÃPK³Í·£
@@ -118,15 +118,15 @@ function JoinCamp(Camp)
 
 	if (Camp == 1) then
 		NewWorld(CS_CampPos[1][1], CS_CampPos[1][2], CS_CampPos[1][3])
-		EnterChannel(PlayerIndex, "¼×·½¶àÈËÀŞÌ¨");
+		EnterChannel(PlayerIndex, "L«i ®µi Gi¸p");
 	elseif (Camp == 2) then
 		NewWorld(CS_CampPos[2][1], CS_CampPos[2][2], CS_CampPos[2][3])
-		EnterChannel(PlayerIndex, "ÒÒ·½¶àÈËÀŞÌ¨");
+		EnterChannel(PlayerIndex, "L«i ®µi Êt");
 	else 
 		NewWorld(CS_CampPos[3][1], CS_CampPos[3][2], CS_CampPos[3][3])
 	end;
 
-	str = GetName().."<#> ÒÑ½øÈë±ÈÈü³¡."
+	str = GetName().." ®· tiÕn vµo ®Êu tr­êng."
 	Msg2MSAll(BW_MISSIONID, str);
 end;
 
@@ -156,7 +156,7 @@ function bw_state_joined_in(Camp)
 	if (Camp == 0) then
 		SetPKFlag(0)
 		ChangeOwnFeature(0, 0, -1, -1, -1, -1, -1)
-		Msg2Player("ÏµÍ³: Äã´¦ÓÚÒşÉí×´Ì¬.");
+		Msg2Player("Träng tµi: Tr¹ng th¸i ®· ®­îc Èn");
 	else
 		SetPKFlag(1)
 	end;
@@ -201,7 +201,7 @@ function OnShowKey()
 	local szCaptainName = {};
 	local szCaptainName = bw_getcaptains();
 	if (GetMissionV(MS_MAXMEMBERCOUNT) <= 1) then
-		Say("ÄãµÇ¼ÇµÄÀŞÌ¨±ÈÈüÊÇµ¥´ò£¬²»ÓÃÖªµÀÉÏ³¡±ÈÈüµÄºÅÊı£¬Äã¿ÉÒÔÖ±½ÓÈ¥±ÈÈü.",0);
+		Say("Ng­êi ®· ghi danh tham gia l«i ®µi, kh«ng cÇn biÕt sè lÇn tham gia, vÉn cã thÓ trùc tiÕp thi ®Êu.",0);
 		SubWorld = OldSubWorld;
 		return
 	end
@@ -214,9 +214,9 @@ function OnShowKey()
 		key = GetMissionV(MS_TEAMKEY[2]);
 	end
 	if (key == 0) then
-		Say("²»ºÃÒâË¼£¬Äã²»ÔÚÕâ´Î±ÈÈü¿¼ºÅÖĞ£¬ÎÒ²»ÄÜËµÉÏ³¡±ÈÈüµÄË³ĞòºÅ.",0)
+		Say("C¸c h¹ kh«ng ë s©n thi ®Êu trung, ta kh«ng thÓ nãi ra sè thø tù thi ®Êu.",0)
 	else
-		Say("ÄãµÄĞòºÅÊÇ<color=yellow> ["..key.."]<color><#>, ¸Ï¿ì¸æËß²Î¼Ó±ÈÈüµÄ³ÉÔ±£¬¶ÓÔ±Ö»ÓĞÊäÈëÕıÈ·µÄĞòºÅ²Å¿ÉÒÔ½øÈë±ÈÈü¡£Ğ»Ğ»!", 0);
+		Say("Sè thø tù lµ <color=yellow> ["..key.."]<color><#>, Nhanh lªn, h·y nãi cho c¸c thµnh viªn trong ®éi, thµnh viªn cã sè thø tù chİnh x¸c míi cã thÓ vµo thi ®Êu", 0);
 	end
 	SubWorld = OldSubWorld;
 end

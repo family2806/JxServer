@@ -1,5 +1,5 @@
 EVENT_LOG_TITLE		= "Event_NewYear"
-ITEM_SEED		= {szName="ÖÖ×Ó ",tbProp={6,1,3107,1,0,0},nExpiredTime=20120201,}
+ITEM_SEED		= {szName="H¹t ",tbProp={6,1,3107,1,0,0},nExpiredTime=20120201,}
 TSK_REDBAG_DAILY		= 1
 MAX_REDBAG_DAILY		= 20
 TSK_USED_WUGUOBAIYINPAN		= 2

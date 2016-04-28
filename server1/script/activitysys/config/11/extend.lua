@@ -35,7 +35,7 @@ function pActivity:UseNewUniform()
 	
 	self:AddTask(%nIdx_USED_NEW_UNIFORM_COUNT,1)
 	
-	tbAwardTemplet:Give(%tbNewUniformAward, 1, {%EVENT_LOG_TITLE, "Ê¹ÓÃÐÂÒÂÁì"})
+	tbAwardTemplet:Give(%tbNewUniformAward, 1, {%EVENT_LOG_TITLE, "SuDungChiecAoLinhMoi"})
 
 	
 end
@@ -45,8 +45,8 @@ function pActivity:NewUniformExtraAward()
 	local nUsedCount = self:GetTask(%nIdx_USED_NEW_UNIFORM_COUNT)
 
 	if %tbNewUniformExtraAward[nUsedCount] then
-		local szAction = format("Ê¹ÓÃÐÂÒÂÁì%dLan", nUsedCount)
-		local szMsg = format("ÄãÒÑÊ¹ÓÃ %s%d ´Î, ÊÕµ½³¬¶î½±Àø.",%tbITEM_NEW_UNIFORM.szName, nUsedCount)
+		local szAction = format("SuDungChiecAoLinhMoi%dLan", nUsedCount)
+		local szMsg = format("Ng­¬i ®· sö dông %s%d lÇn, nhËn ®­îc phÇn th­ëng v­ît møc.",%tbITEM_NEW_UNIFORM.szName, nUsedCount)
 		Msg2Player(szMsg)
 		tbAwardTemplet:Give(%tbNewUniformExtraAward[nUsedCount], 1, {%EVENT_LOG_TITLE, szAction})
 	end
@@ -61,7 +61,7 @@ function pActivity:UsePatchedUniform()
 	
 	local nUsedCount = self:GetTask(%nIdx_USED_PATCHED_UNIFORM_COUNT)
 	if %tbPatchedUniformLog[nUsedCount] then
-		local szAction = format("Ê¹ÓÃ%d ´Î ÒÑ¸ÄÒÂÁì", nUsedCount)
+		local szAction = format("SuDung%dLanAoLinhDaSua", nUsedCount)
 		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, szAction)
 	end
 	
@@ -71,7 +71,7 @@ function pActivity:UseJade()
 	self:AddTask(%nIdx_MAX_NEW_UNIFORM_CAN_USE, %nJADE_INCREASE_MAX_COUNT)
 	self:AddTask(%nIdx_USED_JADE_COUNT,1)
 	
-	local szMsg = format("ÄãÒÑÊ¹ÓÃ%s Ôö¼ÓÏÞÖÆ %d ´Î.", %tbITEM_NEW_UNIFORM.szName, %nJADE_INCREASE_MAX_COUNT)
+	local szMsg = format("Ng­¬i sö dông %s t¨ng thªm giíi h¹n %d lÇn.", %tbITEM_NEW_UNIFORM.szName, %nJADE_INCREASE_MAX_COUNT)
 	Msg2Player(szMsg)
 	
 end
@@ -90,9 +90,9 @@ function pActivity:InitFormula()
 	}
 	local tbGold = 
 	{
-		[1] = {szName="ÒøÁ½", nJxb=30000, nCount=1},
-		[2] = {szName="ÒøÁ½", nJxb=60000, nCount=1},
-		[3] = {szName="ÒøÁ½", nJxb=100000, nCount=1},
+		[1] = {szName="Ng©n l­îng", nJxb=30000, nCount=1},
+		[2] = {szName="Ng©n l­îng", nJxb=60000, nCount=1},
+		[3] = {szName="Ng©n l­îng", nJxb=100000, nCount=1},
 	}
 	local nFactor = getn(tbGold)
 	
@@ -114,7 +114,7 @@ function pActivity:InitFormula()
 				%self:AddTaskDaily(pCompose.nTaskIdx, nCount)
 			end
 			
-			local pCompose = tbActivityCompose:new(tbFormula, "»»ÂÌÉ«²¼ÁÏ", INVENTORY_ROOM.room_equipment)
+			local pCompose = tbActivityCompose:new(tbFormula, "DoiManhVaiMauXanhLa", INVENTORY_ROOM.room_equipment)
 			
 			tinsert(self.tbCompose, (i - 1)*nFactor + j, pCompose)
 		end
@@ -123,32 +123,32 @@ function pActivity:InitFormula()
 end
 
 function pActivity:SelectMaterialDlg(nGoldSelect)
-	local szTitle = format("ÇëÑ¡Ôñ»»<color=green>%s<color> ²ÄÁÏ", %tbITEM_GREEN_CLOTH.szName)
+	local szTitle = format("Xin h·y lùa chän ®æi<color=green>%s<color> nguyªn liÖu", %tbITEM_GREEN_CLOTH.szName)
 	local tbOpt = 
 	{
 		[1] = {%tbITEM_CLOTH.szName, self.Exchange, {self, nGoldSelect, 1}},
 		[2] = {%tbITEM_BUTTONHOLE.szName, self.Exchange, {self, nGoldSelect, 2}},
 		[3] = {%tbITEM_TATTERED_UNIFORM.szName, self.Exchange, {self, nGoldSelect, 3}},
-		[4] = {"·µ»Ø", self.SelectGoldDlg, {self}},
+		[4] = {"Trë l¹i", self.SelectGoldDlg, {self}},
 		
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
 function pActivity:SelectGoldDlg()
-	local szTitle = format("ÇëÑ¡Ôñ·½·¨<color=green>%s<color> »»:\n", %tbITEM_GREEN_CLOTH.szName)
+	local szTitle = format("Xin h·y lùa chän c¸ch <color=green>%s<color> ®æi:\n", %tbITEM_GREEN_CLOTH.szName)
 	local tbText = {}
-	local szGold = "%d ÍòÁ½"
-	local szOptText = "¸ñÊ½%d\t"
+	local szGold = "%d v¹n l­îng"
+	local szOptText = "C¸ch thøc%d\t"
 	for i=1,3 do
 		if i < 3 then
-			tbText[i] = format("Ã¿ÈÕ×î¶à»»%d ´Î", %nMAX_COMPOSE_COUNT[i])
+			tbText[i] = format("Mçi ngµy nhiÒu nhÊt ®æi%d lÇn", %nMAX_COMPOSE_COUNT[i])
 		else
-			tbText[i] = "²»ÏÞÖÆ»»µÄ´ÎÊý"
+			tbText[i] = "Kh«ng giíi h¹n sè lÇn ®æi"
 		end
 		tbText[i] = format(szGold.."(%s)",%tbGOLD_COUNT[i]/10000, tbText[i])
 		
-		szTitle = format("%s ¸ñÊ½d\t ²ÄÁÏ+%s;\n", szTitle, i, tbText[i])
+		szTitle = format("%s c¸ch thøc%d\t nguyªn liÖu +%s;\n", szTitle, i, tbText[i])
 
 	end
 
@@ -157,7 +157,7 @@ function pActivity:SelectGoldDlg()
 		[1] = {format(szOptText..szGold, 1, %tbGOLD_COUNT[1]/10000), self.SelectMaterialDlg, {self, 1}},
 		[2] = {format(szOptText..szGold, 2, %tbGOLD_COUNT[2]/10000), self.SelectMaterialDlg, {self, 2}},
 		[3] = {format(szOptText..szGold, 3, %tbGOLD_COUNT[3]/10000), self.SelectMaterialDlg, {self, 3}},
-		[4] = {"ÍË³ö", cancel},
+		[4] = {"Rêi khái", cancel},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -176,7 +176,7 @@ function pActivity:Exchange(nGoldSelect, nMaterialSelect)
 	end
 
 	if nMaxCount <= 0 then
-		local szText = format("ÄãÍ¨¹ý»»µÄÐÎÊ½<color=green>%s<color> ÊýÁ¿ÒÑ´ïÏÞÖÆÊý£¬ÇëÊÔÊÔÆäËû·½·¨.", %tbITEM_GREEN_CLOTH.szName)
+		local szText = format("Ng­¬i th«ng qua h×nh thøc ®æi<color=green>%s<color> sè l­îng ®· ®¹t ®Õn giíi h¹n, xin h·y thö c¸ch kh¸c.", %tbITEM_GREEN_CLOTH.szName)
 		Say(szText)
 		return
 	end
@@ -186,14 +186,14 @@ end
 
 function pActivity:UseNewUniformExp()	
 	self:AddTask(%nIdx_USED_NEW_UNIFORM_COUNT,1)	
-	tbAwardTemplet:Give(%tbNewUniformAwardExp, 1, {%EVENT_LOG_TITLE, "Ê¹ÓÃÐÂÒÂÁì(Exp)"})	
+	tbAwardTemplet:Give(%tbNewUniformAwardExp, 1, {%EVENT_LOG_TITLE, "SuDungChiecAoLinhMoi(Exp)"})	
 end
 
 function pActivity:NewUniformExpExtraAward()	
 	local nUsedCount = self:GetTask(%nIdx_USED_NEW_UNIFORM_COUNT)
 	if %tbNewUniformExtraAward[nUsedCount] then
 		local szAction = format("SuDungChiecAoLinhMoi(Exp)%dLan", nUsedCount)
-		local szMsg = format("ÄãÒÑ¾­Ê¹ÓÃ%s%d´Î£¬ÊÕµ½³¬¶îµÄ½±Àø.",%tbITEM_NEW_UNIFORM_EXP.szName, nUsedCount)
+		local szMsg = format("Ng­¬i ®· sö dông %s%d lÇn, nhËn ®­îc phÇn th­ëng v­ît møc.",%tbITEM_NEW_UNIFORM_EXP.szName, nUsedCount)
 		Msg2Player(szMsg)
 		tbAwardTemplet:Give(%tbNewUniformExtraAward[nUsedCount], 1, {%EVENT_LOG_TITLE, szAction})
 	end	

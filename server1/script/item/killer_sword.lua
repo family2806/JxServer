@@ -10,14 +10,14 @@ end
 function main( nItemIdx )
 	local nowDate = tonumber(date("%Y%m%d%H%M%S"));
 	if(nowDate >= 20051006080000) then
-		Msg2Player("»Æ½ğBossÈÎÄãCall»î¶¯ÒÑ½áÊø");
+		Msg2Player("Ho¹t ®éng Boss hoµng Kim ®· kÕt thóc!");
 		return 1
 	end	
 	if LABORDAYSWITCH then
 		local _, _, _, nLevel, nSeries = GetItemProp( nItemIdx );
 		return 	CallBoss( nLevel, nSeries )
 	else 
-		Msg2Player("»Æ½ğBossÈÎÄãCall»î¶¯ÒÑ½áÊø");
+		Msg2Player("Ho¹t ®éng Boss hoµng Kim ®· kÕt thóc!");
 		return 1
 	end	
 end
@@ -25,6 +25,6 @@ end
 function GetDesc( nItemIdx )
 	local strDesc = "";
 	local _, _, _, nLevel, nSeries = GetItemProp( nItemIdx );
-	strDesc = "<enter>"..strDesc.."ÎåĞĞÊôĞÔ£º"..toSeries( nSeries ).."\n";
+	strDesc = "<enter>"..strDesc.."Thuéc tİnh ngò hµnh:"..toSeries( nSeries ).."\n";
 	return strDesc;
 end

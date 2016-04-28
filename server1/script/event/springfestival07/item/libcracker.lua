@@ -2,16 +2,16 @@ Include([[\script\event\springfestival07\head.lua]]);
 
 function main()
 	if (sf07_isrightuser() ~= 1) then
-		Say("<color=yellow>Ö»ÓĞ50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò<color>²Å¿ÉÒÔÊ¹ÓÃ±¬Öñ.",0);
+		Say("<color=yellow>ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ<color> míi cã thÓ sö dông ph¸o.",0);
 		return 1;
 	end;
 	
 	if (sf07_isgoodsactive() == 0) then
-		Say("´ËÎïÆ·Ö»ÄÜÔÚ´º½ÚÊ¹ÓÃ.", 0);
+		Say("VËt phÈm nµy chØ sö dông trong dŞp TÕt.", 0);
 		return 1;
 	end;
 	if (CalcFreeItemCellCount() < FREECELLCOUNT) then
-		Say("ÇëÏÈÕûÀí±³°ü!", 0);
+		Say("Xin h·y s¾p xÕp l¹i hµnh trang tr­íc ®·!", 0);
 		return 1;
 	end;
 	
@@ -20,19 +20,19 @@ function main()
 	if (nExp > nRemained) then
 		nExp = nRemained;
 	end;
-	local str = "ÄãÒÑ´ò¿ª<color=yellow>"..GOODSNAME.."<color>?";
+	local str = "B¹n ®· më mét <color=yellow>"..GOODSNAME.."<color>?";
 	if (nExp <= 0) then
-		Say("ÄãµÃµ½<color=yellow>"..EXP_MAXIMUM.."<color> ¾­Ñé, ²»ÄÜÔÙÊ¹ÓÃ±¬ÖñÁË!", 0);
+		Say("B¹n nhËn ®­îc<color=yellow>"..EXP_MAXIMUM.."<color> ®iÓm kinh nghiÖm, kh«ng thÓ sö dông ph¸o n÷a!", 0);
 		return 1;
 	end;
 	AddOwnExp(nExp);
-	str = str.."ÄãµÃµ½<color=yellow>"..nExp.."<color> ¾­Ñé.";
+	str = str.."B¹n nhËn ®­îc<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm.";
 	SetTask(TASKID_TOTALEXP, GetTask(TASKID_TOTALEXP) + nExp);
 	
 	if (TAB_GOODS and getn(TAB_GOODS) > 0) then
 		for i = 1, getn(TAB_GOODS) do
 			AddItem(TAB_GOODS[i][2], TAB_GOODS[i][3], TAB_GOODS[i][4], TAB_GOODS[i][5],0,0,0);
-			str = str.."ÄãµÃµ½1 <color=yellow>"..TAB_GOODS[i][1].."<color>.";
+			str = str.."NhËn ®­îc 1 <color=yellow>"..TAB_GOODS[i][1].."<color>.";
 		end;
 	end;
 	CastSkill(764, 3);

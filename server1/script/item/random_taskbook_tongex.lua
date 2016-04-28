@@ -27,7 +27,7 @@ IncludeLib("PARTNER");
 -- ¶ÁÈëÈÎÎñÏµÍ³Í·ÎÄ¼ş£¬°üº¬Ëæ»úÈÎÎñ
 Include("\\script\\task\\system\\task_main.lua");
 
-strPublic       = "<color=green>ÈÎÎñÁîÅÆ<color>£º";
+strPublic       = "<color=green>LÖnh bµi nhiÖm vô<color>:";
 
 local TSK_UseCountPerDay = 2589;
 
@@ -44,7 +44,7 @@ function main(nIndex)
 	if (GetProductRegion() == "cn") then
 		-- ÅĞ¶ÏÊÇ·ñÕÙ»½³öÍ¬°é
 		if partnerindex==0 or partnerstate==0 then
-		Msg2Player(strPublic.."<color=yellow>ÄãÃ»ÓĞÕÙ»½Í¬°éÎŞ·¨¶ÁÈ¡ÈÎÎñÁîÅÆÀïÃæµÄÄÚÈİÅ¶£¡<color>");
+		Msg2Player(strPublic.."<color=yellow>Ch­a gäi ra b¹n ®ång hµnh, kh«ng thÓ ®äc ®­îc néi dung trong lÖnh bµi!<color>");
 			return 1;
 		end;
 	end;
@@ -64,17 +64,17 @@ function main(nIndex)
 	
 	if mod(nUseState, 256) >= nPerDayUseCount then
 		
-		Talk(1, "", format("Ã¿ÌìÃ¿ÈËÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ· %d´Î.", nPerDayUseCount))
+		Talk(1, "", format("Mçi ngµy mçi ng­êi ch¬i chØ ®­îc sö dông vËt phÈm nµy %d lÇn.", nPerDayUseCount))
 		return 1
 		
 	end
 	
 	
 	if nTaskState>0 and nTaskState<3 then
-		Say("<color=green>ÈÎÎñÁîÅÆ<color>£ºÄúµ±Ç°ÓĞ»¹Î´Íê³ÉµÄËæ»úÈÎÎñ£¬ÄãÈ·¶¨Òª½ÓÊÜĞÂµÄÈÎÎñÂğ£¿",
+		Say("<color=green>LÖnh bµi nhiÖm vô<color>: HiÖn t¹i cã nhiÖm vô ngÉu nhiªn ch­a hoµn thµnh, vÉn muèn tiÕp nhËn nhiÖm vô míi sao?",
 			2,
-			"ÊÇµÄ£¬ÎÒÒª·ÅÆúÖ®Ç°µÄËæ»úÈÎÎñ/#_confirmRandomBookTask("..nIndex..")",
-			"²»ÁË£¬»¹ÊÇµÈµÈ°É/OnTaskWait");
+			"§óng vËy, ta muèn hñy bá nhiÖm vô tr­íc ®©y/#_confirmRandomBookTask("..nIndex..")",
+			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnTaskWait");
 		return 1;
 	else
 		

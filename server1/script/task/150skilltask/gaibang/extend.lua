@@ -42,21 +42,21 @@ function pTask:Talk(szMsg)
 end
 
 local _OnBreak = function(nNpcIndex)
-	Msg2Player("ƒ„÷Œ…À÷–∂œ")
+	Msg2Player("Trﬁ th≠¨ng cÒa ng≠¨i bﬁ Æ¯t Æoπn")
 end
 
 local _GetAward = function(nNpcIndex, dwNpcID, nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	if nNpcIndex == nil then
-		Msg2Player("ƒ„÷Œ…À ß∞‹.")
+		Msg2Player("Trﬁ th≠¨ng cÒa ng≠¨i th t bπi.")
 		return 0
 	end
 	
 	if nNpcIndex <= 0 or GetNpcId(nNpcIndex) ~= dwNpcID then
-		Msg2Player("ƒ„µƒ÷Œ¡∆ ß∞‹.")
+		Msg2Player("Trﬁ th≠¨ng cÒa ng≠¨i th t bπi.")
 		return 0
 	end	
 	
-	Msg2Player("÷Œ¡∆ÕÍ≥…!")
+	Msg2Player("Trﬁ li÷u hoµn t t!")
 	G_TASK:ExecEx(szTaskName, nGotoDetailId, nAddStepNum, nTaskId)
 end 
 
@@ -64,6 +64,6 @@ end
 function pTask:Treat(nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	local nNpcIndex = GetLastDiagNpc()
 	local dwNpcIndex = GetNpcId(nNpcIndex)
-	Msg2Player("ø™ º÷Œ¡∆")
+	Msg2Player("Bæt Æ«u trﬁ li÷u")
 	tbProgressBar:OpenByConfig(9, %_GetAward, {nNpcIndex, dwNpcIndex, nAddStepNum, nTaskId, szTaskName, nGotoDetailId}, %_OnBreak, {nNpcIndex})
 end

@@ -14,12 +14,12 @@ function main()
 	if (nCityID >= 1 and nCityID <= 7) then
 		TongName, MasterName = GetCityOwner(nCityID);
 		if (MasterName == GetName()) then
-			Say("ÈÎÖ°Ì«ÊØ£¬ÄãÏëÒªÐÂÔö¸³Ë°Âð?", 2, "Òª/ManageCity", "²»ÓÃ, ÎÒÖ»Ïë¿´³ÇÊÐµÄÍ¨ÐÅ? /SayCityStatus");
+			Say("Lµm chøc Th¸i Thó, b¹n cã muèn thiÕt ®Æt thuÕ míi kh«ng?", 2, "Muèn/ManageCity", "Kh«ng, ta chØ muèn xem th«ng tin cña thµnh thÞ. /SayCityStatus");
 		else
 			SayCityStatus();
 		end;
 	else
-		Say("ÇøÓòÃ»ÓÐ¹ÜÀí", 0);
+		Say("Khu vùc kh«ng cã qu¶n lý. ", 0);
 	end;
 end;
 

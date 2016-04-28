@@ -84,7 +84,7 @@ function JoinCamp(Camp)
 	--ÔÚµÚ¶şMissionÄÚ¼Óµ±Ç°Íæ¼Ò
 	LeaveTeam()
 	if (GetMSPlayerCount(MISSIONID,Camp) >= MAX_MEMBER_COUNT) then
-		Say("Õâ·½ÏÖÔÚÈËÒÑÂú£¬²»ÄÜ¼ÓÈë!",0)
+		Say("Phe nµy hiÖn ®· ®ñ ng­êi, kh«ng thÓ gia nhËp!",0)
 		return
 	end;
 	
@@ -127,15 +127,15 @@ function JoinCamp(Camp)
 	--ÉèÖÃÏÂ´ÎËÀÍöµÄÖØÉúµã
 	if (Camp == 1) then
 		SetTempRevPos(W, CS_OuterPos[2] * 32, CS_OuterPos[3] * 32);
-		str = GetName().."<#> ¼ÓÈë»Æ·½£¬ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(MISSIONID,1);
+		str = GetName().."<#> gia nhËp phe Vµng, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(MISSIONID,1);
 		SetPos(CS_CampPos1[2], CS_CampPos1[3])
 	elseif (Camp == 2) then
 		SetTempRevPos(W, CS_OuterPos[2] * 32, CS_OuterPos[3] * 32);
-		str = GetName().."<#> ¼ÓÈë×Ï·½£¬ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(MISSIONID,2);
+		str = GetName().."<#> gia nhËp phe Tİm, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(MISSIONID,2);
 		SetPos(CS_CampPos2[2], CS_CampPos2[3])
 	elseif (Camp == 6) then
 		SetTempRevPos(GetTask(300), GetTask(301) * 32, GetTask(302)* 32);
-		str = GetName().."<#>²Î¼Ó¾üÕ½£¬ÏÖÔÚÈËÊıÊÇ"..GetMSPlayerCount(MISSIONID,6);
+		str = GetName().."<#> tham gia quan chiÕn, nh©n sè hiÖn t¹i lµ"..GetMSPlayerCount(MISSIONID,6);
 		SetPos(CS_CampPos0[2], CS_CampPos0[3])
 	end;
 	

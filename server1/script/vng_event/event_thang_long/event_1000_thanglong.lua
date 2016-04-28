@@ -13,13 +13,13 @@ EventThangLong.TaskGetAwardInTime =2740
 
 EventThangLong.tbAwardServer = 
 {
-	[1] = {1,10,{szName = "§i¾­ÑéÖµ", nExp = 5000000}},	
-	[2] = {11,20,{szName = "§i¾­ÑéÖµ", nExp = 8000000}},	
-	[3] = {21,30,{szName = "§i¾­ÑéÖµ", nExp = 10000000}},	
-	[4] = {31,40,{szName = "§i¾­ÑéÖµ", nExp = 15000000}},	
-	[5] = {41,50,{szName = "§i¾­ÑéÖµ", nExp = 20000000}},	
-	[6] = {51,60,{szName = "§i¾­ÑéÖµ", nExp = 30000000}},	
-	[7] = {61,10e5,{szName = "§i¾­ÑéÖµ", nExp = 50000000}},	
+	[1] = {1,10,{szName = "§iÓm kinh nghiÖm", nExp = 5000000}},	
+	[2] = {11,20,{szName = "§iÓm kinh nghiÖm", nExp = 8000000}},	
+	[3] = {21,30,{szName = "§iÓm kinh nghiÖm", nExp = 10000000}},	
+	[4] = {31,40,{szName = "§iÓm kinh nghiÖm", nExp = 15000000}},	
+	[5] = {41,50,{szName = "§iÓm kinh nghiÖm", nExp = 20000000}},	
+	[6] = {51,60,{szName = "§iÓm kinh nghiÖm", nExp = 30000000}},	
+	[7] = {61,10e5,{szName = "§iÓm kinh nghiÖm", nExp = 50000000}},	
 }
 
 function EventThangLong:IsActive()
@@ -34,16 +34,16 @@ end
 function EventThangLong:ShowDialog()
 	local nHour = tonumber(GetLocalDate("%H%M"))
 	local tbOpt = {}
-	local str = "Çì×£1000ÄêÉıÁú-ºÓÄÚ½ÚÈÕ"
+	local str = "Chóc mõng ®¹i lÔ 1000 n¨m Th¨ng Long - Hµ Néi"
 	if (nHour >= 1200 and nHour <= 1400) then
-		tinsert(tbOpt, "ÎÒÏëÁìÈ¡1000ÄêÉıÁú½±Àø/#EventThangLong:GetAward(1)")
+		tinsert(tbOpt, "Ta muèn nhËn phÇn th­ëng 1000 n¨m Th¨ng Long/#EventThangLong:GetAward(1)")
 	end
 	
 	if (nHour >= 2000 and nHour <= 2200) then
-		tinsert(tbOpt, "ÎÒÏëÁìÈ¡1000ÄêÉıÁú½±Àø/#EventThangLong:GetAward(2)")
+		tinsert(tbOpt, "Ta muèn nhËn phÇn th­ëng 1000 n¨m Th¨ng Long/#EventThangLong:GetAward(2)")
 	end
-	tinsert(tbOpt, "ÎÒÏë½»10¸ö¹¦×´Áî/#EventThangLong:GiveItem()")
-	tinsert(tbOpt, "ÎÒÏë¿´ÒÑ½»¹¦×´ÁîÊıÁ¿/#EventThangLong:ViewTotalDragonItem()")
+	tinsert(tbOpt, "Ta muèn giao nép 10 C«ng Tr¹ng LÖnh/#EventThangLong:GiveItem()")
+	tinsert(tbOpt, "Ta muèn xem sè l­îng C«ng Tr¹ng LÖnh ®· giao nép/#EventThangLong:ViewTotalDragonItem()")
 	tinsert(tbOpt, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpt ) == 0 ) then
 		Say(str, 0);
@@ -55,20 +55,20 @@ end
 function EventThangLong:GiveItem()
 	PlayerFunLib:AddTaskDaily(self.TaskDailyGiveItem,1)
 	if (CalcEquiproomItemCount(6,1,30048,-1) < 10) then
-		Say("´óÏÀ´øµÄ²»×ã<color=yellow>¹¦×´Áî<color>!",0)
+		Say("§¹i hiÖp mang theo kh«ng ®ñ <color=yellow>C«ng Tr¹ng LÖnh<color>!",0)
 		return 
 	end
 	
 	if (ConsumeEquiproomItem(10, 6, 1, 30048, -1)) then
 		--SetTask(self.TaskCountGiveItem, GetTask(self.TaskCountGiveItem)+1)
 		self:AddTotalDragonItem()
-		tbAwardTemplet:GiveAwardByList({szName ="§i¾­ÑéÖµ", nExp = 500000}, "Award exp give ¹¦×´Áî")
+		tbAwardTemplet:GiveAwardByList({szName ="§iÓm kinh nghiÖm", nExp = 500000}, "Award exp give Cong Trang Lenh")
 		Msg2Player(self:GetNotify())
 		
 		local  nTotalScore = loadsavevalue(self.FILE_PATH)
 		if (nTotalScore > 0 and mod(nTotalScore, 1000) == 0)  then
-			tbAwardTemplet:GiveAwardByList({szName ="§i¾­ÑéÖµ", nExp = 10000000}, "Award special exp give ¹¦×´Áî")
-			Say( "ÄãÊÇµÚ...¸öÍê³ÉÈÎÎñµÄÈË ".. floor(nTotalScore/1000) ..", ÁìÈ¡ÌØ±ğ½±Àø" , 0 )	
+			tbAwardTemplet:GiveAwardByList({szName ="§iÓm kinh nghiÖm", nExp = 10000000}, "Award special exp give Cong Trang Lenh")
+			Say( "B¹n lµ ng­êi hoµn thµnh nhiÖm vô thø ".. floor(nTotalScore/1000) ..", nhËn ®­îc phÇn th­ëng ®Æc biÖt" , 0 )	
 		end
 	end
 end
@@ -83,7 +83,7 @@ function EventThangLong:ViewTotalDragonItem()
 	local nTotalScore = loadsavevalue(self.FILE_PATH)
 	--local nPlayerScore =GetTask(self.TaskCountGiveItem)
 	local szServerScore = self:GetNotify()
-	--local szShowResult = "\´óÏÀÒÑ½»¹¦×´ÁîµÄ×ÜÊıÁ¿Îª <color=yellow>" .. nPlayerScore .. "<color>." .. "/n/t" .. szServerScore
+	--local szShowResult = "\tTæng sè l­îng C«ng Tr¹ng LÖnh mµ ®¹i hiÖp ®· giao nép lµ: <color=yellow>" .. nPlayerScore .. "<color>." .. "/n/t" .. szServerScore
 	Say( szServerScore , 0 )	
 end
 
@@ -91,39 +91,39 @@ function EventThangLong:GetNotify()
 	local nTotalScore = loadsavevalue(self.FILE_PATH)
 	local nCountFinishQuest = floor(nTotalScore/1000)
 	local nCurCountQuest = mod(nTotalScore,1000)
-	local szMsg = "½£ÏÀserver ®·<color=yellow> " .. nCountFinishQuest .. "<color> ´ÎÍê³ÉÇì×£1000ÄêÉıÁú-ºÓÄÚÈÎÎñ£¬Ä¿Ç°ÒÑÍê³É <color=yellow>" .. nCurCountQuest ..  "<color> ÈÎÎñ"
+	local szMsg = "Toµn server ®·<color=yellow> " .. nCountFinishQuest .. "<color> lÇn hoµn thµnh nhiÖm vô chµo mõng 1.000 n¨m Th¨ng Long - Hµ Néi, hiÖn t¹i ®· hoµn thµnh thªm <color=yellow>" .. nCurCountQuest ..  "<color> nhiÖm vô."
 	return szMsg
 end
 
 function EventThangLong:GetAward(nTime)
 	if (PlayerFunLib:GetTaskDailyCount(self.TaskDailyGiveItem) < 1) then
-		Say( "½ñÌì´óÏÀÎ´½»¹¦×´Áî" , 0 )
+		Say( "H«m nay ®¹i hiÖp ch­a giao nép C«ng Tr¹ng LÖnh" , 0 )
 		return	
 	end
 	
 	
 	if (GetTask(2735) < 3) then
-		Say( "½ñÌì´óÏÀÎ´Íê³É3¸ö¿ª±¦ÏäÈÎÎñ!" , 0 )
+		Say( "H«m nay ®¹i hiÖp ch­a hoµn thµnh 3 nhiÖm vô më b¶o r­¬ng!" , 0 )
 		return	
 	end
 	
 	
 	local tbScoreIndex = self:GetPlayerAwardTable()
 	if (tbScoreIndex == nil) then
-		Say( "´óÏÀËù½»¹¦×´ÁîÊıÁ¿²»¹»" , 0 )	
+		Say( "§¹i hiÖp kh«ng ®ñ sè lÇn giao nép C«ng Tr¹ng LÖnh" , 0 )	
 		return
 	end
 	
 	if (nTime == 1) then
 		if (PlayerFunLib:GetTaskDailyCount(self.TaskGetAwardInTime) >= 1) then
-			Say( "´óÏÀÒÑÁì´Ë´Î½±Àø!" , 0 )	
+			Say( "§¹i hiÖp ®· nhËn phÇn th­ëng ®ît nµy!" , 0 )	
 			return
 		end
 		PlayerFunLib:AddTaskDaily(self.TaskGetAwardInTime,1)
 		tbAwardTemplet:GiveAwardByList(tbScoreIndex, "Award Server give dragon")
 	else
 		if (PlayerFunLib:GetTaskDailyCount(self.TaskGetAwardInTime) >= 2) then
-			Say( "´óÏÀÒÑÁì´Ë´Î½±Àø!" , 0 )	
+			Say( "§¹i hiÖp ®· nhËn phÇn th­ëng ®ît nµy!" , 0 )	
 			return
 		end
 		PlayerFunLib:AddTaskDaily(self.TaskGetAwardInTime,2)

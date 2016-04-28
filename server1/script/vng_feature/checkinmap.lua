@@ -2,7 +2,7 @@ Include("\\script\\activitysys\\playerfunlib.lua")
 function PlayerFunLib:VnCheckInCity (strFail)
 	local strMessage
 	if not strFail or strFail == "default" then
-		strMessage = "¸Ã²Ù×÷Ä¿Ç°²»ÄÜÖ´ĞĞ£¬Çë»Ø³ÇÊĞ»òÕß´åÕòºóÔÙÊÔ."
+		strMessage = "Thao t¸c nµy kh«ng thÓ thùc hiÖn t¹i ®©y! Xin h·y vÒ c¸c thµnh thŞ vµ th«n trÊn råi thö l¹i."
 	else
 	 strMessage = strFail
 	end

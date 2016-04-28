@@ -26,63 +26,63 @@ Include("\\script\\lib\\awardtemplet.lua")
 --}
 
 local tbDropItem = {
-	[1]={{szName="×ÏòþÖ®±¦ (Ã±×Ó)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={1,0,0,0,0,0}, },},
-	[2]={{szName="×ÏòþÖ®±¦ (ÒÂ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={5,0,0,0,0,0}, },},
-	[3]={{szName="×ÏòþÖ®±¦ (ÏîÁ´)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={0,0,0,0,0,0}, },},
-	[4]={{szName="×ÏòþÖ®±¦ (ÓñÅå)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={8,0,0,0,0,0}, },},
-	[5]={{szName="×ÏòþÖ®±¦ (Ð¬)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={7,0,0,0,0,0}, },},
-	[6]={{szName="×ÏòþÖ®±¦ (ÊÖÌ×)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={3,0,0,0,0,0}, },},
-	[7]={{szName="×ÏòþÖ®±¦ (ÉÏ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=5,tbParam={2,0,0,0,0,0}, },},
-	[8]={{szName="×ÏòþÖ®±¦ (ÏÂ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=5,tbParam={9,0,0,0,0,0}, },},
-	[9]={{szName="×ÏòþÖ®±¦ (±³´ø)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={4,0,0,0,0,0}, },},
-	[10]={{szName="×ÏòþÖ®±¦ (ÎäÆ÷)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=3,tbParam={6,0,0,0,0,0}, },},
-	[11]={{szName="À¶Ë®¾§",tbProp={4,238,1,1,0,0},nCount=1,nRate=80},},
-	[12]={{szName="ÂÌË®¾§",tbProp={4,240,1,1,0,0},nCount=1,nRate=80},},
-	[13]={{szName="×ÏË®¾§",tbProp={4,239,1,1,0,0},nCount=1,nRate=80},},
-	[14]={{szName="ÐÉºì±¦Ê¯",tbProp={4,353,1,1,0,0},nCount=1,nRate=80},},
-	[15]={{szName="ÌØ±ðÏÉ²ÝÂ¶",tbProp={6,1,1181,1,0,0},nCount=1,nRate=60},},
-	[16]={{szName="»Æ½ðÓ¡(Ç¿»¯)",tbProp={0,3210},nCount=1,nRate=5,nQuality = 1,nExpiredTime=10080,},},
-	[17]={{szName="»Æ½ðÓ¡(Èõ»¯)",tbProp={0,3220},nCount=1,nRate=5,nQuality = 1,nExpiredTime=10080,},},
-	[18]={{szName="°×»¢¿øÍ¼Æ×",tbProp={6,1,3173,1,0,0},nCount=1,nRate=1},},
-	[19]={{szName="°×»¢ÒÂÍ¼Æ×",tbProp={6,1,3174,1,0,0},nCount=1,nRate=1},},
-	[20]={{szName="°×»¢Ð¬Í¼Æ×",tbProp={6,1,3175,1,0,0},nCount=1,nRate=1},},
-	[21]={{szName="°×»¢Ñü´øÍ¼Æ×",tbProp={6,1,3176,1,0,0},nCount=1,nRate=1},},
-	[22]={{szName="°×»¢»¤ÍóÍ¼Æ×",tbProp={6,1,3177,1,0,0},nCount=1,nRate=1},},
-	[23]={{szName="°×»¢ÏîÁ´Í¼Æ×",tbProp={6,1,3178,1,0,0},nCount=1,nRate=1},},
-	[24]={{szName="°×»¢ÅåÍ¼Æ×",tbProp={6,1,3179,1,0,0},nCount=1,nRate=1},},
-	[25]={{szName="°×»¢ÉÏ½äÍ¼Æ×",tbProp={6,1,3180,1,0,0},nCount=1,nRate=1},},
-	[26]={{szName="°×»¢ÉÏÏÂ½äÍ¼Æ×",tbProp={6,1,3181,1,0,0},nCount=1,nRate=1},},
-	[27]={{szName="°×»¢ÎäÆ÷Í¼Æ×",tbProp={6,1,3182,1,0,0},nCount=1,nRate=0.5},},
-	[28]={{szName="°×»¢Áî",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.3},},
-	[29]={{szName="½ðÎÚ¿øÍ¼Æ×",tbProp={6,1,2982,1,0,0},nCount=1,nRate=4},},
-	[30]={{szName="½ðÎÚÒÂÍ¼Æ×",tbProp={6,1,2983,1,0,0},nCount=1,nRate=6},},
-	[31]={{szName="½ðÎÚÐ¬Í¼Æ×",tbProp={6,1,2984,1,0,0},nCount=1,nRate=2},},
-	[32]={{szName="½ðÎÚÑü´øÍ¼Æ×",tbProp={6,1,2985,1,0,0},nCount=1,nRate=2},},
-	[33]={{szName="½ðÎÚ»¤ÍóÍ¼Æ×",tbProp={6,1,2986,1,0,0},nCount=1,nRate=2},},
-	[34]={{szName="½ðÎÚÏîÁ´Í¼Æ×",tbProp={6,1,2987,1,0,0},nCount=1,nRate=6},},
-	[35]={{szName="½ðÎÚÅåÍ¼Æ×",tbProp={6,1,2988,1,0,0},nCount=1,nRate=5},},
-	[36]={{szName="½ðÎÚÉÏ½äÍ¼Æ×",tbProp={6,1,2989,1,0,0},nCount=1,nRate=3},},
-	[37]={{szName="½ðÎÚÏÂ½äÍ¼Æ×",tbProp={6,1,2990,1,0,0},nCount=1,nRate=3},},
-	[38]={{szName="½ðÎÚÆ÷½äÍ¼Æ×",tbProp={6,1,2991,1,0,0},nCount=1,nRate=2},},
-	[39]={{szName="½ðÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1,nRate=1.8},},
-	[40]={{szName="½ðÎÚ½ðÅÆ",tbProp={6,1,3001,1,0,0},nCount=1,nRate=1},},
-	[41]={{szName="Ó¢ÐÛÌû",tbProp={6,1,1604,1,0,0},nCount=1,nRate=70,nExpiredTime=10080},},
-	[42]={{szName="½ðÎÚ¿ø±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.9, },},
-	[43]={{szName="½ðÎÚÒÂ±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={6,0,0,0,0,0},nRate=0.9, },},
-	[44]={{szName="½ðÎÚÐ¬±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.8, },},
-	[45]={{szName="½ðÎÚÑü´ø±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.8, },},
-	[46]={{szName="½ðÎÚ»¤Íó±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.8, },},
-	[47]={{szName="½ðÎÚÏîÁ´±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={1,0,0,0,0,0},nRate=0.9, },},
-	[48]={{szName="½ðÎÚÅå±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={9,0,0,0,0,0},nRate=0.8, },},
-	[49]={{szName="½ðÎÚÉÏ½ä±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.6, },},
-	[50]={{szName="½ðÎÚÏÂ½ä±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={10,0,0,0,0,0},nRate=0.6, },},
-	[51]={{szName="½ðÎÚÎäÆ÷±¦Ïä",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={7,0,0,0,0,0},nRate=0.4, },},
+	[1]={{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={1,0,0,0,0,0}, },},
+	[2]={{szName="Tö M·ng Chi B¶o (¸o)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={5,0,0,0,0,0}, },},
+	[3]={{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={0,0,0,0,0,0}, },},
+	[4]={{szName="Tö M·ng Chi B¶o (Ngäc Béi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={8,0,0,0,0,0}, },},
+	[5]={{szName="Tö M·ng Chi B¶o (GiÇy)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={7,0,0,0,0,0}, },},
+	[6]={{szName="Tö M·ng Chi B¶o (Bao Tay)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={3,0,0,0,0,0}, },},
+	[7]={{szName="Tö M·ng Chi B¶o (NhÉn Trªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=5,tbParam={2,0,0,0,0,0}, },},
+	[8]={{szName="Tö M·ng Chi B¶o (NhÉn D­íi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=5,tbParam={9,0,0,0,0,0}, },},
+	[9]={{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=8,tbParam={4,0,0,0,0,0}, },},
+	[10]={{szName="Tö M·ng Chi B¶o (Vò KhÝ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=3,tbParam={6,0,0,0,0,0}, },},
+	[11]={{szName="Lam Thñy Tinh",tbProp={4,238,1,1,0,0},nCount=1,nRate=80},},
+	[12]={{szName="Lôc Thñy Tinh",tbProp={4,240,1,1,0,0},nCount=1,nRate=80},},
+	[13]={{szName="Tö Thñy Tinh",tbProp={4,239,1,1,0,0},nCount=1,nRate=80},},
+	[14]={{szName="Tinh Hång B¶o Th¹ch",tbProp={4,353,1,1,0,0},nCount=1,nRate=80},},
+	[15]={{szName="Tiªn Th¶o Lé ®Æc biÖt",tbProp={6,1,1181,1,0,0},nCount=1,nRate=60},},
+	[16]={{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3210},nCount=1,nRate=5,nQuality = 1,nExpiredTime=10080,},},
+	[17]={{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3220},nCount=1,nRate=5,nQuality = 1,nExpiredTime=10080,},},
+	[18]={{szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,3173,1,0,0},nCount=1,nRate=1},},
+	[19]={{szName="§å Phæ B¹ch Hæ Y",tbProp={6,1,3174,1,0,0},nCount=1,nRate=1},},
+	[20]={{szName="§å Phæ B¹ch Hæ Hµi",tbProp={6,1,3175,1,0,0},nCount=1,nRate=1},},
+	[21]={{szName="§å Phæ B¹ch Hæ Yªu §¸i",tbProp={6,1,3176,1,0,0},nCount=1,nRate=1},},
+	[22]={{szName="§å Phæ B¹ch Hæ Hé UyÓn",tbProp={6,1,3177,1,0,0},nCount=1,nRate=1},},
+	[23]={{szName="§å Phæ B¹ch Hæ H¹ng Liªn",tbProp={6,1,3178,1,0,0},nCount=1,nRate=1},},
+	[24]={{szName="§å Phæ B¹ch Hæ Béi",tbProp={6,1,3179,1,0,0},nCount=1,nRate=1},},
+	[25]={{szName="§å Phæ B¹ch Hæ Th­îng Giíi",tbProp={6,1,3180,1,0,0},nCount=1,nRate=1},},
+	[26]={{szName="B¹ch Hæ §å Phæ H¹ Giíi",tbProp={6,1,3181,1,0,0},nCount=1,nRate=1},},
+	[27]={{szName="§å Phæ B¹ch Hæ Vò KhÝ",tbProp={6,1,3182,1,0,0},nCount=1,nRate=0.5},},
+	[28]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.3},},
+	[29]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=4},},
+	[30]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=6},},
+	[31]={{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=2},},
+	[32]={{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=2},},
+	[33]={{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=2},},
+	[34]={{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=6},},
+	[35]={{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=5},},
+	[36]={{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=3},},
+	[37]={{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=3},},
+	[38]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=2},},
+	[39]={{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=1.8},},
+	[40]={{szName="Kim ¤ Kim Bµi",tbProp={6,1,3001,1,0,0},nCount=1,nRate=1},},
+	[41]={{szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,nRate=70,nExpiredTime=10080},},
+	[42]={{szName="B¶o R­¬ng Kim ¤ Kh«i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate=0.9, },},
+	[43]={{szName="B¶o R­¬ng Kim ¤ Y",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={6,0,0,0,0,0},nRate=0.9, },},
+	[44]={{szName="B¶o R­¬ng Kim ¤ Hµi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={8,0,0,0,0,0},nRate=0.8, },},
+	[45]={{szName="B¶o R­¬ng Kim ¤ Yªu §¸i",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={5,0,0,0,0,0},nRate=0.8, },},
+	[46]={{szName="B¶o R­¬ng Kim ¤ Hé UyÓn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={4,0,0,0,0,0},nRate=0.8, },},
+	[47]={{szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={1,0,0,0,0,0},nRate=0.9, },},
+	[48]={{szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={9,0,0,0,0,0},nRate=0.8, },},
+	[49]={{szName="B¶o R­¬ng Kim ¤ Th­îng Giíi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={3,0,0,0,0,0},nRate=0.6, },},
+	[50]={{szName="B¶o R­¬ng Kim ¤ H¹ Giíi",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={10,0,0,0,0,0},nRate=0.6, },},
+	[51]={{szName="B¶o R­¬ng Kim ¤ Vò KhÝ",tbProp={6,1,30190,1,0,0},nCount=1,tbParam={7,0,0,0,0,0},nRate=0.4, },},
 }
 local tbNpcInfo = 
 {
-	[1] = {1873,"ÕÅÐû",},		
-	[2] = {1874,"½ðÊÀÁÁ",},		
-	[3] = {1875,"Ä½ÈÝ¶Ë",},		
+	[1] = {1873,"Tr­¬ng Tuyªn",},		
+	[2] = {1874,"Kim ThÝ L­îng",},		
+	[3] = {1875,"Mé Dung Toµn",},		
 }
 
 function checkNpc(nNpcIndex)
@@ -114,7 +114,7 @@ function addNews(nNpcIndex, nPlayerIndex)
 	if NpcName2Replace then
 		szNpcName = NpcName2Replace(szNpcName)
 	end
-	local szNews = format("´óÏÀ <color=yellow>%s<color> ÔÚ <color=yellow>%s<color>ÒÑ³É¹¦ÏûÃð<color=yellow>%s<color>!", szName, SubWorldName(SubWorld),szNpcName)
+	local szNews = format("§¹i hiÖp <color=yellow>%s<color> t¹i <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng <color=yellow>%s<color>!", szName, SubWorldName(SubWorld),szNpcName)
 	AddGlobalNews(szNews)
 end
 
@@ -128,9 +128,9 @@ function goldbossdeath(nNpcIndex, nPlayerIndex)
 	--¶Ò»»½±Æ· - Modified by DinhHQ - 20111009
 	local tbItemAward = 
 	{
-		[1873] = {szName="ÌìÁéµ¤",tbProp={6,1,3022,1,0,0},nCount = 20, nExpiredTime = 7 * 24 * 60},
-		[1874] = {szName="ÌìÁéµ¤",tbProp={6,1,3022,1,0,0},nCount = 20, nExpiredTime = 7 * 24 * 60},
-		[1875] = {szName="ÌìÁéµ¤",tbProp={6,1,3022,1,0,0},nCount = 30, nExpiredTime = 7 * 24 * 60},
+		[1873] = {szName="Thiªn Linh §¬n",tbProp={6,1,3022,1,0,0},nCount = 20, nExpiredTime = 7 * 24 * 60},
+		[1874] = {szName="Thiªn Linh §¬n",tbProp={6,1,3022,1,0,0},nCount = 20, nExpiredTime = 7 * 24 * 60},
+		[1875] = {szName="Thiªn Linh §¬n",tbProp={6,1,3022,1,0,0},nCount = 30, nExpiredTime = 7 * 24 * 60},
 	}
 	--¶ªÆú½±Æ·ÌìÖ®Ïä - Modified by DinhHQ - 20111009
 --	local tbOtherAward = 
@@ -146,7 +146,7 @@ function goldbossdeath(nNpcIndex, nPlayerIndex)
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,tbItemAward[nKind],format("killed_%s",szNpcName))
-	--¶ªÆú½±Æ·ÌìÖ®±¦Ïä - Modified by DinhHQ - 20111009
+	--¶ªÆú½±Æ·R­¬ng Thiªn Chi - Modified by DinhHQ - 20111009
 --	local nRate = random(1,10000) / 100
 --	if nRate <= tbOtherAward[nKind][1] then
 --		local tbTeam = getPlayerTeam()
@@ -159,23 +159,23 @@ function goldbossdeath(nNpcIndex, nPlayerIndex)
 	--tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tbEquiptAward[nKind],format("killed_%s",szNpcName))
 	--PhÇn th­ëng exp
 	local tbAwardExp = {
-		["Killer"] = {nExp = 20e6, szName = "§i¾­Ñé"},
-		["Around"] = {nExp = 10e6, szName = "§i¾­Ñé"},
+		["Killer"] = {nExp = 20e6, szName = "§iÓm kinh nghiÖm"},
+		["Around"] = {nExp = 10e6, szName = "§iÓm kinh nghiÖm"},
 	}
 	nOldPlayer = PlayerIndex	
 	local nTeamSize = GetTeamSize();	
 	if (nTeamSize > 1) then
 		for i=1,nTeamSize do
 			PlayerIndex = GetTeamMember(i)
-			tbAwardTemplet:Give(tbAwardExp["Killer"], 1, {"DCPhanThuongBoss", "¸øÏûÃðµÄ×é¶Óexp½±Æ·"..szNpcName})
+			tbAwardTemplet:Give(tbAwardExp["Killer"], 1, {"DCPhanThuongBoss", "PhÇn th­ëng exp cho tæ ®éi tiªu diÖt "..szNpcName})
 		end
 	else		
-		tbAwardTemplet:Give(tbAwardExp["Killer"], 1, {"DCPhanThuongBoss", "¸øÏûÃðµÄ¸öÈËexp½±Æ·"..szNpcName})
+		tbAwardTemplet:Give(tbAwardExp["Killer"], 1, {"DCPhanThuongBoss", "PhÇn th­ëng exp cho ng­êi tiªu diÖt "..szNpcName})
 	end
 	local tbRoundPlayer, nCount = GetNpcAroundPlayerList(nNpcIndex, 20);	
 	for i=1,nCount do	
 		PlayerIndex = tbRoundPlayer[i]
-		tbAwardTemplet:Give(tbAwardExp["Around"], 1, {"DCPhanThuongBoss", "¸øÕ¾µÄ×î½üµÄexp½±Æ·"..szNpcName})
+		tbAwardTemplet:Give(tbAwardExp["Around"], 1, {"DCPhanThuongBoss", "PhÇn th­ëng exp cho ng­êi ®øng gÇn "..szNpcName})
 	end
 	PlayerIndex = nOldPlayer
 end
@@ -197,7 +197,7 @@ end
 function addTianzhibaoxiang(nCount, nNpcIndex, tbTeam)
 	local tbTianzhibaoxiang = 
 	{
-		szName = "ÌìÖ®±¦Ïä", 
+		szName = "R­¬ng Thiªn Chi", 
 		nLevel = 95,
 		nNpcId = 1876,
 		nIsboss = 0,
@@ -215,7 +215,7 @@ function addTianzhibaoxiang(nCount, nNpcIndex, tbTeam)
 	
 	local nRow = 6
 	local nOffset = 3 * 32
-	-- ÖÐ¼äÔ¤ÁôÒ»¸öÎ»ÖÃ·ÅÖÃÌìÁéµ¤£¬ËùÒÔÔÚ¼ÆËã¿ÉÏÔÊ¾ÐÐÊýÊ±£¬ÔÚ×ÜÊýÉÏÐèÒª+1
+	-- ÖÐ¼äÔ¤ÁôÒ»¸öÎ»ÖÃ·ÅÖÃThiªn Linh §¬n£¬ËùÒÔÔÚ¼ÆËã¿ÉÏÔÊ¾ÐÐÊýÊ±£¬ÔÚ×ÜÊýÉÏÐèÒª+1
 	local nClow = floor(nCount / nRow) + 1
 	local nMidRow = floor(nRow / 2)
 	local nMidClow = floor(nClow / 2)
@@ -226,7 +226,7 @@ function addTianzhibaoxiang(nCount, nNpcIndex, tbTeam)
 	for j=1, nClow do
 		for i=1, nRow do
 			if nCount > 0 then
-				-- ÖÐÐÄÎ»ÖÃÏÔÊ¾ÌìÁéµ¤£¬²»·ÅÖÃ±¦Ïä
+				-- ÖÐÐÄÎ»ÖÃÏÔÊ¾Thiªn Linh §¬n£¬²»·ÅÖÃ±¦Ïä
 				if j ~= nMidClow or i ~= nMidRow then
 					local x = nStartX + i * nOffset
 					local y = nStartY + j * nOffset

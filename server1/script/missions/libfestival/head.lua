@@ -11,7 +11,7 @@ function festival_log(str)
 		return 
 	end;
 	
-	WriteLog("["..FESTIVAL_SHREWMOUSE.."»î¶¯]"..GetLocalDate(" [%y Äê %m ÔÂ %d ÈÕ  %H Ê±%M ·Ö]").." [ÃÜÂë"..GetAccount().."] [ÈËÎï:"..GetName().."]"..str);
+	WriteLog("["..FESTIVAL_SHREWMOUSE.."Ho¹t ®éng]"..GetLocalDate(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]"..str);
 end;
 
 --ÓÎÏ·½áÊø

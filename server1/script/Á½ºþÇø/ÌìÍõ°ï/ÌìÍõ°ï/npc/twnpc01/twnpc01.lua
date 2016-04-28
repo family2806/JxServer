@@ -10,7 +10,7 @@ function main()
 	UTask_tw = GetTask(3)
 	Uworld38 = GetByte(GetTask(38),1)
 	if (Uworld38 == 0) and (GetFaction() ~= "tianwang") and (GetLevel() >= 10) then			-- ¼ÇÃûµÜ×ÓÈÎÎñÆô¶¯
-		Say("ÏëÒª³ÉÎª±¾°ïµÄÕıÊ½µÜ×ÓÒªÒ»Í¬µÖËÎ¿¹½ğ£¬±¾×ùµ±È»ÎŞÌõ¼ş»¶Ó­£¬Ö»ĞèÒªÄã´øÀ´Ò»ºø¾Æ¸øÖÚĞÖµÜºÈ¹²Í¬Çì×£¾Í¿ÉÒÔ¿´³ÉÄãÒÑ¾­ÈëÃÅÁË", 2, "½ÓÊÜÈÎÎñ/Uworld38_get_yes", "ËãÁË/no")
+		Say("Muèn trë thµnh ®Ö tö chİnh thøc cña bæn bang ph¶i cïng nhau ra søc kh¸ng Tèng chèng Kim, bän ta ®­¬ng nhiªn lµ hoan nghªnh v« ®iÖu kiÖn, chØ cÇn ng­¬i®em mét vß r­îu vÒ cho mäi ng­êi cïng uèng, cïng chóc mõng, coi nh­ ng­¬i®· ®­îc nhËp m«n", 2, "TiÕp nhËn nhiÖm vô /Uworld38_get_yes", "VËy th«i ®i/no")
 	elseif (Uworld38 == 80) and (HaveItem(90) == 1) then					-- ÓĞÅîÀ³´º£¬ÈÎÎñÍê³É
 		Uworld38_prise()
 --	elseif (UTask_tw == 5*256+80) then		-- ÎªÌìÍõÈÎÎñ±äÁ¿±»ÒâÍâ¸Ä±äÈİ´í
@@ -20,33 +20,33 @@ function main()
 --			SetTask(3,0)
 --		end
 	elseif (Uworld38 >= 20) and (Uworld38 < 127) then		-- ÈëÃÅÈÎÎñ½øĞĞÖĞ
-		Talk(1,"","Ã¿´ÎÖ»ÒªÏëµ½Òª°ÑÅîÀ³´º¾Æ¸øÕâÈº¾Æ¹íÎÒ¾ÍĞÄÌÛ")
+		Talk(1,"","Mçi lÇn nghÜ ®Õn r­îu 'Bång lai xu©n' lµ con s©u r­îu trong ng­êi ta l¹i b¾t ®Çu cÊu xĞ ")
 	elseif (GetFaction() == "tianwang") then   				--ÒÑ¾­ÈëÃÅ£¬ÉĞÎ´³öÊ¦
-		Talk(1,"","ºÃĞÖµÜ£¡ÓĞ¿ÕÎÒÃÇÒ»ÆğºÈÒ»±­!")
+		Talk(1,"","H¶o huynh ®Ö! Cã r¶nh chóng ta cïng uèng vµi ly!")
 	elseif (UTask_tw ==70*256) then 					--±¾ÃÅ³öÊ¦£¬·ÇÃÅÅÉÄÚ×´Ì¬
-		Talk(2,"","Ã»¹ØÏµ£¬Ã¿¸öÈË¶¼ºÈ","ÎÒ¸ç¸ç,,, Äã×îºóÊÇºÈ×íÁË»¹ÊÇÉÏ´ÎµÄ¾Æ»¹Ã»ÓĞĞÑ°¡? ")
+		Talk(2,"","Kh«ng sao c¶, mäi ng­êi cïng uèng nµo ","Anh ta,,, rèt cuéc ®· say hay lµ lÇn tr­íc cßn ch­a tØnh chø? ")
 	else
-		Talk(1,"","ÌıËµ¾Æ¹İÔÚ<color=Red>°ÍÁêÏØ<color>Âô×ÅÒ»ÖÖ½Ğ<color=Red>ÅîÀ³´º<color>,Õâ¹ûÕæÊÇºÃ¾Æ£¬Ö»ÏëÏÖÔÚ¾ÍºÈ!")
+		Talk(1,"","Nghe nãi qu¸n r­îc ë <color=Red>Ba L¨ng huyÖn<color> cã b¸n mét lo¹i r­îu gäi lµ <color=Red>Bång Lai Xu©n<color>,®©y qu¶ lµ lo¹i r­îu tiªn phÈm, chØ nghÜ ®Õn lµ muèn uèng ngay!")
 	end
 end
 
 function Uworld38_get_yes()
-	Talk(1,"","ÌıËµ¾Æ¹İÔÚ<color=Red>°ÍÁêÏØ<color>Âô×ÅÒ»ÖÖ½Ğ<color=Red>ÅîÀ³´º<color>,Õâ¹ûÕæÊÇºÃ¾Æ£¬Ö»ÏëÏÖÔÚ¾ÍºÈ!")
+	Talk(1,"","Nghe nãi qu¸n r­îc ë <color=Red>Ba L¨ng huyÖn<color> cã b¸n mét lo¹i r­îu gäi lµ <color=Red>Bång Lai Xu©n<color>,®©y qu¶ lµ lo¹i r­îu tiªn phÈm, chØ nghÜ ®Õn lµ muèn uèng ngay!")
 	Uworld38 = SetByte(GetTask(38),1,20)
 	SetTask(38,Uworld38)
-	AddNote("ÔÚÄÏ±ßµÄË®Õ¯ÃÅ¿Ú¼ûËïË¼åã<color=red>½ÓµÜ×Ó¼ÇÃûÈÎÎñ<color>, µ½°ÍÁêÏØÂòÅîÀ³´º¾Æ'. ")
-	Msg2Player("ÔÚÄÏ±ßµÄË®Õ¯ÃÅ¿Ú¼ûËïË¼åã½ÓµÜ×Ó¼ÇÃûÈÎÎñµ½°ÍÁêÏØÂòÅîÀ³´º¾Æ'. ")
+	AddNote("T¹i cöa vµo Thuû tr¹i ë phİa Nam gÆp T«n §¹o LÜnh, nhËn<color=red>nhiÖm vô Kı danh ®Ö tö<color>, ®Õn huyÖn Ba L¨ng mua r­îu'Liªn Lai Xu©n'. ")
+	Msg2Player("T¹i cöa vµo Thuû tr¹i ë phİa Nam gÆp T«n §¹o LÜnh, nhËn nhiÖm vô Kı danh ®Ö tö, ®Õn huyÖn Ba L¨ng mua r­îu'Liªn Lai Xu©n'. ")
 end;
 
 function Uworld38_prise()
-	Talk(1,"","ÅîÀ³´º£¡¹ûÕæÊÇºÃ¾Æ£¡²Å´ò¿ª¾ÍÎÅµ½ÕâÖÖÏãÎ¶£¡¿´ÄãÒ²ÊÇÓĞÆøÆÇµÄÈË£¬Ã¿¸öÈË¶¼Á÷Âä½­ºş!")
+	Talk(1,"","Bång Lai Xu©n! Qu¶ thËt lµ h¶o töu! Võa më n¾p ra ®· ngöi thÊy mïi th¬m ngµo ng¹t! Xem ra ng­¬icòng lµ mét ng­êi cã khİ ph¸ch, mäi ng­êi cïng nhau l­u l¹c giang hå nµo!")
 	DelItem(90)
 	Uworld38 = SetByte(GetTask(38),1,127)
 	SetTask(38,Uworld38)
 	i = ReturnRepute(15,19,2)		-- È±Ê¡ÉùÍû£¬×î´óÎŞËğºÄµÈ¼¶£¬Ã¿¼¶µİ¼õ
 	AddRepute(i)
-	AddNote("»Øµ½ÌìÍõµº£¬´ø×ÅÅîÀ³´º½»¸øËïµÀÁìÍê³É¼ÇÃûµÜ×ÓÈÎÎñ")
-	Msg2Player("»Øµ½ÌìÍõµº£¬´ø×ÅÅîÀ³´º½»¸øËïµÀÁìÍê³É¼ÇÃûµÜ×ÓÈÎÎñ£¬ÄãµÄÃûÍûÔö¼Ó. "..i.."µã.")
+	AddNote("VÒ ®Õn Thiªn V­¬ng ®¶o, ®em Liªn Lai Xu©n giao cho T«n §¹o LÜnh, hoµn thµnh nhiÖm vô Kı danh ®Ö tö. ")
+	Msg2Player("VÒ ®Õn Thiªn V­¬ng ®¶o, ®em Liªn Lai Xu©n giao cho T«n §¹o LÜnh, hoµn thµnh nhiÖm vô Kı danh ®Ö tö, Danh väng cña b¹n t¨ng thªm. "..i.."®iÓm.")
 end;
 
 function no()

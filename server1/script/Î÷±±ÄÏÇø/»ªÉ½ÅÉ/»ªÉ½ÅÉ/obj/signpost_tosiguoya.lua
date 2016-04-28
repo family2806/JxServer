@@ -1,7 +1,7 @@
---»ªÉ½ÅÉÍ¨ÍùË¼¹ıÑÂµÄÂ·±ê
+--»ªÉ½ÅÉ§i T­ Qu¸ NhaiµÄÂ·±ê
 
 function main(sel)
 
-	Say("Í¨ÍùË¼¹ıÑÂ", 0)
+	Say("§i T­ Qu¸ Nhai", 0)
 
 end;

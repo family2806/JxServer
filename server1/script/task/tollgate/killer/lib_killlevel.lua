@@ -37,7 +37,7 @@ function SetMemberTask(myTaskNumber,myOrgValue,myTaskValue,fnCallback, series)
 			tongaward_killer()
 			nt_setTask(myTaskNumber,myTaskValue);
 			--Just the boss killer receive activity point - Modified By DinhHQ - 20120412
---			if myOrgValue >= 141 and myOrgValue <= 160 then --É±ËÀÆÕÍ¨90¼¶ºÍ¸ß¼¶É±ÊÖÈÎÎñµÄboss¼Ó»îÔ¾¶È
+--			if myOrgValue >= 141 and myOrgValue <= 160 then --É±ËÀÆÕÍ¨90¼¶ºÍ¸ß¼¶ÉC©y BótÖÈÎÎñµÄboss¼Ó»îÔ¾¶È
 --				DynamicExecuteByPlayer(PlayerIndex, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "shashourenwu")
 --			end
 			
@@ -60,7 +60,7 @@ function SetMemberTask(myTaskNumber,myOrgValue,myTaskValue,fnCallback, series)
 				nt_setTask(myTaskNumber,myTaskValue)
 				myChangeMember = myChangeMember + 1
 				--Just the boss killer receive activity point - Modified By DinhHQ - 20120412
---				if myOrgValue >= 141 and myOrgValue <= 160 then --É±ËÀÆÕÍ¨90¼¶ºÍ¸ß¼¶É±ÊÖÈÎÎñµÄboss¼Ó»îÔ¾¶È
+--				if myOrgValue >= 141 and myOrgValue <= 160 then --É±ËÀÆÕÍ¨90¼¶ºÍ¸ß¼¶ÉC©y BótÖÈÎÎñµÄboss¼Ó»îÔ¾¶È
 --					DynamicExecuteByPlayer(PlayerIndex, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "shashourenwu")
 --				end
 				
@@ -79,38 +79,38 @@ function add_shashouling(nvalue, series)
 	if ( nvalue >= 1 ) and ( nvalue<= 20  ) then
 		AddOwnExp(15000)
 		AddItem(6,1,399,20,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 20¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 20")
 	elseif ( nvalue >= 21 ) and ( nvalue<= 40  ) then
 		AddOwnExp(20000)
 		AddItem(6,1,399,30,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 30¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 30")
 	elseif ( nvalue >= 41 ) and ( nvalue<= 60  ) then
 		AddOwnExp(30000)
 		AddItem(6,1,399,40,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 40¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 40")
 	elseif ( nvalue >= 61 ) and ( nvalue<= 80  ) then
 		AddOwnExp(50000)
 		AddItem(6,1,399,50,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 50¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 50")
 	elseif ( nvalue >= 81 ) and ( nvalue<= 100  ) then
 		AddOwnExp(60000)
 		AddItem(6,1,399,60,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 60¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 60")
 	elseif ( nvalue >= 101 ) and ( nvalue<= 120  ) then
 		AddOwnExp(80000)
 		AddItem(6,1,399,70,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 70¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 70")
 	elseif ( nvalue >= 121 ) and ( nvalue<= 140  ) then
 		AddOwnExp(100000)
 		AddItem(6,1,399,80,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 80¼¶")
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 80")
 	elseif ( nvalue >= 141 ) and ( nvalue<= 160  ) then
 		AddOwnExp(140000)
 		--Ö»ÓÐ×ö90¼¶ÉÏµÄ ²ÅÓÐ¿ÉÄÜÑ§Ï°120¼¶¼¼ÄÜ
 		AddExp_Skill_Extend(140000);
 		AddItem(6,1,399,90,series,0)
-		Msg2Player("Äã»ñµÃÒ»¸öÉ±ÊÖÁî 90¼¶")
-		tbAwardTemplet:GiveAwardByList({{szName = "É±ÊÖÃØ±¦", tbProp = {6,1,2347,1,1,0}, nRate = 50}}, format("Get %s", "É±ÊÖÃØ±¦"), 1)
+		Msg2Player("B¹n nhËn ®­îc 1 s¸t thñ lÖnh cÊp 90")
+		tbAwardTemplet:GiveAwardByList({{szName = "S¸t Thñ BÝ B¶o", tbProp = {6,1,2347,1,1,0}, nRate = 50}}, format("Get %s", "S¸t Thñ BÝ B¶o"), 1)
 		jiefangri_award()	
 	end
 end
@@ -123,9 +123,9 @@ function jiefangri_award()
 	end
 
 	local tbItem = {
-		[1]={szName="Õ½¹¦Ñ«ÕÂ",tbProp={6,1,2823,1,0,0},nExpiredTime=20110523},
-		[2]={szName="±Ê",tbProp={6,1,2825,1,0,0},nExpiredTime=20110523},
-		[3]={szName="»ÕÕÂ",tbProp={6,1,2826,1,0,0},nExpiredTime=20110523},
+		[1]={szName="Huy Ch­¬ng ChiÕn C«ng",tbProp={6,1,2823,1,0,0},nExpiredTime=20110523},
+		[2]={szName="C©y Bót",tbProp={6,1,2825,1,0,0},nExpiredTime=20110523},
+		[3]={szName="Phï HiÖu",tbProp={6,1,2826,1,0,0},nExpiredTime=20110523},
 	}
 	
 	local tbshashou = {

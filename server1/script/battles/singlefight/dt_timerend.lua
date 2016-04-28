@@ -10,7 +10,7 @@ function OnTimer()
 		return
 	end;
 	
-	local str = "<#>µ¥ÌôÊ±¼ä½áÊø£¬½ğ·½"..GetMissionS(1).."<#> Óë ËÎ·½"..GetMissionS(2).."<#>´ò³ÉÆ½ÊÖ£¡"
+	local str = "<#> Thêi gian ®¬n ®Êu kÕt thóc, phe Kim"..GetMissionS(1).."<#> vµ phe Tèng"..GetMissionS(2).."<#> hßa nhau!"
 	
 	Msg2MSAll(MISSIONID, str);
 	SubWorld = orgworld

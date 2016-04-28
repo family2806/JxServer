@@ -10,10 +10,10 @@ function racegame_SignUp_main(nStep)
 	if nStep == 1 then
 		tbSay = 
 		{
-			"<dec><npc>´Ó2008-06-11ÈÕµ½2008-7-13ÈÕ24Ê±£¬ÎäÁÖÃËÖ÷½«ÔÚ¸÷³ÇÊĞ¾ÙĞĞËÄ¼¶±ÈÈü£¬Í·30¸öµ½´ïÖÕµã²¢Óë³¡µØÀÏ°å¶Ô»°µÄÈË½«»ñµÃÓÅºñµÄ½±Àø£¬ÄãÏë²Î¼ÓÕâ¸ö»î¶¯Âğ?",
-			"Ç§ÄêÒ»Óö£¬ÎÒ²»»á´í¹ıµÄ!/#racegame_SignUp_main(2)",
-			"ÁË½â»î¶¯ĞÅÏ¢/#racegame_SignUp_main(3)",
-			"ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºó¾ÍÀ´./OnCancel",	
+			"<dec><npc> Trong thêi gian tõ 11-06-2008 ®Õn 24:00 13-07-2008, Vâ l©m minh chñ sÏ tæ chøc Cuéc ®ua 4 mïa ë c¸c thµnh thŞ. 30 ng­êi ®Çu tiªn ch¹y vÒ ®İch vµ nãi chuyÖn víi ¤ng chñ tr­êng ®ua sÏ nhËn ®­îc phÇn th­ëng hËu hØ, ng­¬i cã muèn tham gia ho¹t ®éng nµy kh«ng?",
+			"Ta sÏ kh«ng bá qua ngµn n¨m cã mét nµy!/#racegame_SignUp_main(2)",
+			"T×m hiÓu th«ng tin ho¹t ®éng/#racegame_SignUp_main(3)",
+			"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",	
 		}
 	elseif nStep == 2 then
 		local nReadyMissionState = gb_GetTask(racegame_tbMission.G_TSK_NAME, racegame_tbMission.ReadyMissionState)
@@ -26,7 +26,7 @@ function racegame_SignUp_main(nStep)
 --		end
 		
 		if GetLevel() < racegame_tbReadyMission.nLevelLimit then
-			Say(format("µÈ¼¶²»¹»%s,²»ÄÜ²Î¼Ó»î¶¯.", racegame_tbReadyMission.nLevelLimit), 0 )
+			Say(format("§¼ng cÊp kh«ng ®ñ %s, kh«ng thÓ tham gia ho¹t ®éng.", racegame_tbReadyMission.nLevelLimit), 0 )
 			return 
 		end
 		
@@ -40,23 +40,23 @@ function racegame_SignUp_main(nStep)
 		elseif (nReadyMissionState == 0 and nMissionState ~= 0) or nReadyMissionState == 3 then
 			tbSay = 
 			{
-				"´óÏÀÒÑ¾­À´ÍíÁË£¬±ÈÈüÒÑ¾­¿ªÊ¼ÁË. Ã¿ÖÜµÄ±ÈÈüÊ±¼ä: <enter>ÖÜÒ»µ½ÖÜÎå£¬ÔçÉÏ10:00µ½11:00,ÏÂÎç22:00µ½23:00<enter>ËÄÔÂÈıÊ®ÈÕÖÜÁùºÍÎåÔÂÒ»ÈÕ; ÔçÉÏ 02:00µ½03:00,ÔçÉÏ10:00µ½11:00, ÏÂÎç14:00µ½15:00,ÍíÉÏ22:00µ½ 23:00<enter>ĞÇÆÚÌì, ÔçÉÏ10:00 µ½ 11:00, ÖĞÎç14:00 µ½15:00, ÍíÉÏ22:00µ½23:00.",
-				"ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºó¾ÍÀ´./OnCancel",	
+				"§¹i hiÖp ®· trÔ mÊt råi, cuéc ®ua ®· b¾t ®Çu. Thêi gian thi ®Êu mçi tuÇn: <enter>Thø 2 ®Õn thø 6, s¸ng 10:00 ®Õn 11:00, chiÒu 22:00 ®Õn 23:00<enter>Thø 7; ngµy 30 th¸ng 4 vµ 01 th¸ng 5, r¹ng s¸ng 02:00 ®Õn 03:00, s¸ng 10:00 ®Õn 11:00, chiÒu 14:00 ®Õn 15:00, tèi 22:00 ®Õn 23:00<enter>Chñ nhËt, s¸ng 10:00 ®Õn 11:00, tr­a 14:00 ®Õn 15:00, tèi 22:00 ®Õn 23:00.",
+				"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",	
 			}
 			tbSay[1] = "<dec><npc>"..tbSay[1]
 		elseif nReadyMissionState == 0 and nMissionState == 0 then
 			tbSay = 
 			{
-				"±ÈÈü»¹Ã»¿ªÊ¼.Ã¿ÖÜµÄ±ÈÈüÊ±¼ä:<enter>ÖÜÒ»µ½ÖÜÎå£¬ÔçÉÏ10:00µ½11:00,ÏÂÎç22:00µ½23:00<enter>ËÄÔÂÈıÊ®ÈÕÖÜÁùºÍÎåÔÂÒ»ÈÕ; ÔçÉÏ 02:00µ½03:00,ÔçÉÏ10:00µ½11:00, ÏÂÎç14:00µ½15:00,ÍíÉÏ22:00µ½ 23:00<enter>ĞÇÆÚÌì, ÔçÉÏ10:00 µ½ 11:00, ÖĞÎç14:00 µ½15:00, ÍíÉÏ22:00µ½23:00.",
-				"ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºó¾ÍÀ´./OnCancel",
+				"Cuéc ®ua vÉn ch­a b¾t ®Çu. Thêi gian thi ®Êu mçi tuÇn:<enter>Thø 2 ®Õn thø 6, s¸ng 10:00 ®Õn 11:00, chiÒu 22:00 ®Õn 23:00<enter>Thø 7; ngµy 30 th¸ng 4 vµ 01 th¸ng 5, r¹ng s¸ng 02:00 ®Õn 03:00, s¸ng 10:00 ®Õn 11:00, chiÒu 14:00 ®Õn 15:00, tèi 22:00 ®Õn 23:00<enter>Chñ nhËt, s¸ng 10:00 ®Õn 11:00, tr­a 14:00 ®Õn 15:00, tèi 22:00 ®Õn 23:00.",
+				"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",
 			}
 			tbSay[1] = "<dec><npc>"..tbSay[1]
 		end
 	elseif nStep == 3 then
 		tbSay = 
 		{
-			"<dec><npc>Ã¿³¡±ÈÈü15·ÖÖÓ£¬ÆäÖĞÓĞ1·ÖÖÓ×¼±¸.±¨Ãû²Î¼Óºó£¬Íæ¼Ò½«»á±»ËÍµ½×¼±¸Çø¡£±ÈÈü¿ªÊ¼ºó£¬ ¸÷Ñ¡ÊÖ¾¡¿ìÅÜ»ØÄ¿µÄµØ¡£ÔÚ±ÈÈü¹ı³ÌÖĞ£¬»á³öÏÖ¸÷ÖÖÓĞÓÃµÄµÀ¾ß£¬ÓÃÕâĞ©µÀ¾ß¿ÉÒÔ°ïÖú×Ô¼ºÔö¼Ó±¼ÅÜËÙ¶È»òÕßÊ¹ÆäËûÈË¼õËÙ¡£Í·30¸öµ½´ïÖÕµã²¢Óë³¡µØÀÏ°å¶Ô»°µÄÈË½«»ñµÃÓÅºñµÄ½±Àø",
-			"ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºó¾ÍÀ´./OnCancel",	
+			"<dec><npc>Mçi cuéc ®ua diÔn ra trong 15 phót, trong ®ã cã 1 phót ®Ó chuÈn bŞ. Sau khi b¸o danh tham gia, ng­êi ch¬i sÏ ®­îc ®­a ®Õn khu vùc chuÈn bŞ. Sau khi cuéc tranh tµi b¾t ®Çu, c¸c tuyÓn thñ ph¶i ra søc ch¹y thËt nhanh vÒ ®İch. Trong qu¸ tr×nh ®ua, trªn ®­êng ®ua sÏ xuÊt hiÖn c¸c ®¹o cô hç trî, sö dông ®¹o cô nµy cã thÓ gióp t¨ng tèc ®é ch¹y cña b¶n th©n hoÆc lµm gi¶m tèc ®é cña ng­êi kh¸c. 30 ng­êi ®Çu tiªn vÒ ®İch vµ nãi chuyÖn víi ¤ng chñ ®­êng ®ua sÏ nhËn ®­îc phÇn th­ëng cã gi¸ trŞ.",
+			"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",	
 		}
 		
 	end
@@ -78,15 +78,15 @@ function racegame_Award_main()
 	local nRankCount = racegame_tbMission:GetMissionV(racegame_tbMission.tbMissionV.RANK_COUNTER)
 	nRankCount = nRankCount + 1
 	racegame_tbMission:SetMissionV(racegame_tbMission.tbMissionV.RANK_COUNTER, nRankCount)
-	local szMsg = format("¹ş¹ş,ÔÚÕâ³¡±ÈÈü´óÏÀÅÅÃû  <color=yellow>%d<color>.",  nRankCount)
+	local szMsg = format("Ha ha, ®¹i hiÖp trong cuéc ®ua nµy ®­îc xÕp h¹ng <color=yellow>%d<color>.",  nRankCount)
 	
-	Msg2MSAll(racegame_tbMission.nMissionId, format("<color=yellow>%s<color> ÔÚÕâ³¡±ÈÈüÅÅÃû  <color=yellow>%d<color>.",GetName(),  nRankCount))
+	Msg2MSAll(racegame_tbMission.nMissionId, format("<color=yellow>%s<color> trong cuéc ®ua nµy ®­îc xÕp h¹ng <color=yellow>%d<color>.",GetName(),  nRankCount))
 	Msg2Player(szMsg)
 	if nRankCount >= 1 and nRankCount <= 10 then
 		AddOwnExp(2000000)
 		if random(1,100) <=50 then
 			AddItem(4, 239, 1, 1, 0, 0)
-			Msg2Player("»ñµÃÒ»¿é×ÏË®¾§")
+			Msg2Player("NhËn ®­îc 1 Tö Thñy Tinh")
 		end
 	elseif nRankCount >= 11 and nRankCount <= 20 then
 		AddOwnExp(1000000)

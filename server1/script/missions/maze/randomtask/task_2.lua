@@ -1,6 +1,6 @@
--- 2.	ÓĞ8¸öÖù×Ó£¬Öù×ÓÇ°ÃæÓĞ1¸öÊØ»¤µÄîÚÁú¸ßÊÖ£¬îÚÁú¸ßÊÖµÄ¼¼ÄÜÊ¹µÃÍæ¼ÒÎŞ·¨¿ªÆôÖù×Ó¡£
+-- 2.	ÓĞ8¸öTrô Tö£¬Trô TöÇ°ÃæÓĞ1¸öÊØ»¤µÄîÚÁú¸ßÊÖ£¬îÚÁú¸ßÊÖµÄ¼¼ÄÜÊ¹µÃÍæ¼ÒÎŞ·¨¿ªÆôTrô Tö¡£
 -- îÚÁú¸ßÊÖÖ»ÄÜÓÉÎåĞĞ¿ËËûµÄÍæ¼Ò´ò×îºóÒ»»÷´òËÀ²Å²»»áÖØÉú£¬·ñÔò»á²»¶ÏÖØÉú£¬Ã¿´ÎÖØÉú¹ÖµÄÎåĞĞ¶¼»áËæ»úÒ»´Î¡£
--- ÒªÇó¿ªÆô8¸öÖù×Ó²ÅÄÜ¹ı¹Ø¡£
+-- ÒªÇó¿ªÆô8¸öTrô Tö²ÅÄÜ¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -10,7 +10,7 @@ IL("NPCINFO")
 
 pTask = Task:New(2)
 pTask.m_NpcCount 	= 8
-pTask.m_PillarId 	= 1653	-- Öù×Ó
+pTask.m_PillarId 	= 1653	-- Trô Tö
 pTask.m_GuardId 	= 1796	-- îÚÁú¸ßÊÖ
 
 function pTask:OnStart()
@@ -20,7 +20,7 @@ function pTask:OnStart()
 	local pos_pillar = self.m_Pos.t2_pillar
 	local pos_guard = self.m_Pos.t2_guard
 	for i = 1, self.m_NpcCount do
-		local nPillarIndex = DlgNpcManager:AddNpc("Öù×Ó", self.m_PillarId, self:GetMapId(), pos_pillar[i].x, pos_pillar[i].y, self, i)
+		local nPillarIndex = DlgNpcManager:AddNpc("Trô Tö", self.m_PillarId, self:GetMapId(), pos_pillar[i].x, pos_pillar[i].y, self, i)
 		if (nPillarIndex <= 0) then
 			self:LogError("TASK2: failed to create pillar")
 		else
@@ -31,7 +31,7 @@ function pTask:OnStart()
 			tb.Index = i
 			self.m_Pillars[i] = tb
 		end
-		local nGuardIndex = FightNpcManager:AddNpc("ÓñÁú¸ßÊÖ", self.m_GuardId, self:GetMapId(), pos_guard[i].x, pos_guard[i].y, self, i, 1, 1)
+		local nGuardIndex = FightNpcManager:AddNpc("Ngäc Long Cao Thñ", self.m_GuardId, self:GetMapId(), pos_guard[i].x, pos_guard[i].y, self, i, 1, 1)
 		if (nGuardIndex <= 0) then
 			self:LogError("TASK2: failed to create guard")
 		end
@@ -40,7 +40,7 @@ function pTask:OnStart()
 end
 
 function pTask:OnDestroy()
-	-- É¾³ıÖù×Ó
+	-- É¾³ıTrô Tö
 	if (self.m_Pillars) then
 		for i = 1, getn(self.m_Pillars) do
 			local tb = self.m_Pillars[i]
@@ -75,15 +75,15 @@ function pTask:Say(player, nIndex)
 		return
 	end
 	if (tb.Status == 1) then
-		player:Say("Öù×ÓÒÑ´ò¿ª")
+		player:Say("Trô nµy ®· ®­îc më råi")
 		return
 	end
-	local nBarId = ProgressBarList:Open("ÕıÔÚ´ò¿ª", player, 3, self, tb)
+	local nBarId = ProgressBarList:Open("§ang më", player, 3, self, tb)
 	tinsert(tb.Bars, nBarId)
 end
 
 function pTask:OnProgressbarTimeout(nId, tb)
-	self:BroadCast("³É¹¦´ò¿ª.")
+	self:BroadCast("Më thµnh c«ng.")
 	for i = 1, getn(tb.Bars) do
 		if (tb.Bars[i] == nId) then
 			tb.Bars[i] = 0
@@ -104,7 +104,7 @@ function pTask:OnProgressbarTimeout(nId, tb)
 end
 
 function pTask:OnProgressbarBreak(nId, tb)
-	self:BroadCast("´ò¿ªÊ§°Ü.")
+	self:BroadCast("Më thÊt b¹i.")
 	for i = 1, getn(tb.Bars) do
 		if (tb.Bars[i] == nId) then
 			tb.Bars[i] = 0
@@ -131,7 +131,7 @@ function pTask:OnDeath(nKilledIndex, pKillerPlayer, nIndex)
 	end
 	if (not pKillerPlayer or self:CheckKiller(nNpcIndex, pKillerPlayer) == 0) then
 		local pt = self:GetPosition().t2_guard[nIndex]
-		local nGuardIndex = FightNpcManager:AddNpc("ÓñÁú¸ßÊÖ", self.m_GuardId, self:GetMapId(), pt.x, pt.y, self, nIndex, 1, 1)
+		local nGuardIndex = FightNpcManager:AddNpc("Ngäc Long Cao Thñ", self.m_GuardId, self:GetMapId(), pt.x, pt.y, self, nIndex, 1, 1)
 		self.m_Guards[nIndex] = nGuardIndex
 	else
 		self.m_Guards[nIndex] = 0

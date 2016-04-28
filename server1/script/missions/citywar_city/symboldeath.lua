@@ -1,7 +1,7 @@
 Include("\\script\\missions\\citywar_city\\head.lua");
 -------------------------------------------------------------------------
 function OnDeath(DeathNpc)
-	WriteLog(GetLoop()..":Ê¯ÖùËðº¦:"..DeathNpc);
+	WriteLog(GetLoop()..":Th¹ch trô tæn h¹i:"..DeathNpc);
 	State = GetMissionV(MS_STATE) ;
 	if (State ~= 2) then
 		return
@@ -20,7 +20,7 @@ function OnDeath(DeathNpc)
 		svalue = 1
 	end;
 
-	msgstr = format("¹¥³ÇÕ½³¡ÉÏÀ´µÄÇé±¨: %s ÒÑÈ¡µÃ¿ØÖÆÈ¨ %s",GetGamerName(svalue),StonePos[SymbolId].Name);
+	msgstr = format("Tin b¸o tõ c«ng thµnh chiÕn tr­êng: %s ®· giµnh ®­îc quyÒn khèng chÕ %s",GetGamerName(svalue),StonePos[SymbolId].Name);
 
 	SetMissionV(MS_SYMBOLBEGIN + SymbolId - 1, svalue);
 	nWinCount = CheckWin();
@@ -37,7 +37,7 @@ function OnDeath(DeathNpc)
 	else
 		nNpcId = AddNpc(STONENPCID2, STONELEVEL1 + svalue - 1, SubWorld, StonePos[SymbolId].x, StonePos[SymbolId].y, 1, GetGamerName(svalue)..StonePos[SymbolId].Name, 1);
 	end;
-	WriteLog("Ôö¼ÓÒ»¿ÃÐÂÊ¯Öù"..nNpcId);
+	WriteLog("T¨ng thªm cét ®¸ míi"..nNpcId);
 	
 	scriptname = format("\\script\\missions\\citywar_city\\symboldeath%d.lua", SymbolId);
 	SetNpcDeathScript(nNpcId, scriptname);

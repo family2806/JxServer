@@ -43,7 +43,7 @@ function pTask:OnTime(nIndex)
 end
 
 function pTask:OnHintTime()
-	self:RoomBroadCast(format("ÒÑ»÷É± %d ÓñÁú¸ßÊÖ", self.m_KillCount))
+	self:RoomBroadCast(format("§· kÝch s¸t %d Ngäc Long Cao Thñ", self.m_KillCount))
 end
 
 function pTask:OnGameTime()
@@ -58,7 +58,7 @@ function pTask:OnGameTime()
 	local mapid = self:GetMapId()
 	local pos = self:GetPosition().t22_monster
 	for i = 1, 5 do
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁú¸ßÊÖ", 1695, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long Cao Thñ", 1695, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
 		tinsert(self.m_Monsters, nNpcIndex)
 	end
 end

@@ -16,12 +16,12 @@ if (GetMissionV(5) >= (MAX_S_COUNT / 2) and GetMissionV(6) >= (MAX_J_COUNT / 2))
 	end;
 
 	AddEventItem(195);
-	Msg2Player("Äú»ñµÃÁËÔÀÍõ½£!");
+	Msg2Player("B¹n nhËn ®­îc Nh¹c V­¬ng KiÕm!");
 end;
 
 
-str1 = "<#>ËÎ½ğÕ½ÒÛ½á¹û:ËÎÈË"..GetName().."<#>É±µôÁË½ğ·½´ó½«£¬ËÎ·½»ñµÃÊ¤Àû!";
-str = "<#>Ì«ºÃÁË£¡["..GetName().."<#>]É±ËÀÁË½ğ½«£¬ÎÒÃÇËÎÈËÓ®ÁËÕâ³¡Õ½¶·!½«Ê¿ÃÇ»¶ºôÑ½£¡";
+str1 = "<#>KÕt qu¶ phe Kim: binh sÜ "..GetName().."<#> tiªu diÖt t­íng phe Kim, phe Tèng giµnh chiÕn th¾ng!";
+str = "<#>Chóc mõng ["..GetName().."<#>] ®· tiªu diÖt phe Kim, gióp chóng ta th¾ng tr¹n nµy!";
 Msg2MSAll(1, str1);
 Msg2MSGroup(1, str, 1);
 resultstr = WinBonus(1,2);

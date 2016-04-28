@@ -37,7 +37,7 @@ function InitControlHelpDec()
 			end;
 		end;
 		if (count ~= 0) then
-			TB_CONTROLHELP_DEC[szControlName][HELP_DEC][count + 1] = "<color=yellow>如果您想再次浏览帮助，请点击帮会界面右上角的<pic=139>，选择该选项即可。";
+			TB_CONTROLHELP_DEC[szControlName][HELP_DEC][count + 1] = "<color=yellow>N誹 mu鑞 xem hng d蒼 l莕 n鱝, ?g鉩 ph秈 tr猲 c馻 bi觰 tng bang h閕, h穣 nh蕄 v祇 <pic=139>, l鵤 ch鋘 m鬰 n祔 l?頲.";
 		end;
 	end;
 --	print("Load ControlHelp Over!!");

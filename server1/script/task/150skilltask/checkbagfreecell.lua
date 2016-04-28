@@ -10,7 +10,7 @@ function _TaskDetail:Exec(tbParam)
 		return 1
 	else
 		if szFailMsg == nil then
-			szFailMsg = format("±³°üÐèÒª <color=yellow>%d<color> ¿Õ¼ä.", nCount)
+			szFailMsg = format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.", nCount)
 		end
 		lib:ShowMessage(szFailMsg)
 	end

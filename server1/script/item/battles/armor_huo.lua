@@ -5,7 +5,7 @@ Include("\\script\\item\\battles\\addmarshalpoint.lua")
 function add473()
 		level = random(1,7);
 		AddSkillState(473, level, 0, 1080 )	--Ôö¼ÓÍæ¼ÒÆÕ·À
-		Msg2Player("<#>Äã»ñµÃÁË<color=0xB5FDD7>1·ÖÖÓµÄÆÕ·À£ºÔö¼Ó"..(level*10).."<#>£¥")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> t¨ng phßng phæ trong 1 phót"..(level*10).."<#> %")	
 end
 
 Tab={add473}

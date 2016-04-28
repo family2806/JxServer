@@ -177,9 +177,9 @@ function GetPlayerSex()
 local mySex -- ÓÃÒÔÏÔÊ¾ÈËÎïĞÔ±ğµÄ×Ö·û
 
 	if (GetSex() == 0) then
-		mySex = "¹«×Ó";
+		mySex = "C«ng Tö";
 	elseif (GetSex() == 1) then
-		mySex = "Å®ÏÀ";
+		mySex = "N÷ HiÖp";
 	end
 	
 	return mySex;

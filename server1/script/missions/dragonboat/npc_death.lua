@@ -14,7 +14,7 @@ function award_player(player, exp, objects)
 	if (exp ~= 0) then
 		local point = exp * 10000;
 		AddOwnExp(point);
-		Msg2Player("<#> Äã»ñµÃ" .. point .. "¾­ÑéÖµ.");
+		Msg2Player("<#> B¹n nhËn ®­îc " .. point .. "®iÓm kinh nghiÖm.");
 	end
 	
 	-- ½±ÀøÎïÆ·
@@ -27,7 +27,7 @@ function award_player(player, exp, objects)
 			sum = sum + obj[1];
 			if (num <= sum) then
 				AddItem(obj[2], obj[3], obj[4], obj[5], obj[6], obj[7]);
-				Msg2Player("<#> Äã»ñµÃ" .. obj[8] .. "!");
+				Msg2Player("<#> B¹n nhËn ®­îc " .. obj[8] .. "!");
 				break;
 			end
 		end
@@ -105,7 +105,7 @@ function success()
 	end
 
 	-- Í¨¸æ
-	broadcast(GetMissionS(VARS_TEAM_NAME) .. "¶ÓÎéÊ¤Àû´³¹Ø£¬ÒÑÊ¹ÓÃ" .. floor(time / 60) .. "·ÖÖÓ" .. mod(time, 60) .. "Ãë! Ö®Ç°®ã"..laddertime.." Ãë");
+	broadcast(GetMissionS(VARS_TEAM_NAME) .. "§éi ngò th¾ng lîi qua ¶i, ®· sö dông" .. floor(time / 60) .. "phót" .. mod(time, 60) .. "gi©y! Tr­íc ®ã"..laddertime.." gi©y");
 	
 	-- Ìß»Ø±¨Ãûµã
 	kickout();
@@ -115,7 +115,7 @@ end
 function finish(index)
 	-- Í¨¸æ
 	local batch = GetMissionV(VARV_NPC_BATCH);
-	Msg2MSAll(MISSION_MATCH, GetMissionS(VARS_TEAM_NAME) .. "¶ÓÎéÒÑÈ«²¿ÏûÃð" .. batch .. "¹Ö!");
+	Msg2MSAll(MISSION_MATCH, GetMissionS(VARS_TEAM_NAME) .. "§éi ngò ®· tiªu diÖt toµn bé " .. batch .. "®¸m qu¸i!");
 	
 	-- ½±Àø
 	award(batch, index);

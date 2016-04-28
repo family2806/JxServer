@@ -14,10 +14,10 @@ function main()
 	tbTrainSkill150:ResetDailyTask()
 --	SetTaskTemp(1,0)		-- ¸´Î»£¬±ÜÃâÈÎºÎ¸ÉÈÅ
 	if (Uworld42 == 40) then					-- Ğ¡¶ùÊ§×ÙÈÎÎñ
-		Talk(12,"","ÎÒÀ´ÕÒÊ§×ÙµÄĞ¡º¢! ","°¢ÃÖÍÓ·ğ£¬ÎÒÊÇÇå°×Ö®ÈË£¬²»¶®£¬²»¶®. ","Ï£Íû´óÊ¦´È±¯£¬Ëµ¸øÎÒÌı!","ÄÇÄêÎÒ±»Öğ³öÊ¦ÃÅ£¬·½ÕÉÓĞ´È±¯Âğ","²»¶®´óÊ¦ÎªºÎÊÂ¶ø±»Öğ³öÊ¦ÃÅ? ","ÄãÎÊÄÇÃ´¶à¸ÉÂï£¿¹ş¹ş¹ş£¬ÀÏñÄ²»½öÒªºÍÄãËµÎªÊ²Ã´±»Öğ³öÊ¦ÃÅ£¬»¹Òª¸æËßÄãÊ§×ÙĞ¡º¢µÄÊÂ","¹ş¹ş£¬Ô­À´ºÍÉĞ·¸½äÁË","°¢ÃÖÍÓ·ğ£¬ÉÆÔÕÉÆÔÕ!","¾ÆÈâÒÑ³Ô¹ı£¬ĞÄ²»Ïò·ğÁË. ","¹ş¹ş£¬ºÃ¡£ÄãÓëÎÒÓĞÔµ£¬ÎÒ¸æËßÄã!","´óÊ¦£¬Ê®¸öÈËµÄÃü²»ÊÇ¿ªÍæĞ¦µÄ","ºÃ£¬ÄãÈ¥ÕÒÒ»¸öÈË½ĞÁú×·Îè£¬Ö»ÓĞËû²ÅÖªµÀÄÇ¸öÈËÔÚÄÄÀï")
+		Talk(12,"","V?danh ®¹i s? Ta ®Õn t×m ®øa b?mÊt tİch ?§¹i L? B?§¹o Nh©n giíi thiÖu ta ®Õn! ","A di ®µ phËt! L·o T¹p Mao nµy l?ng­êi trong s¹ch. Kh«ng biÕt! Kh«ng biÕt. ","Mong ®¹i s?t?bi b?qua, nãi cho t¹i h?biÕt!","N¨m x­a l·o n¹p b?trôc xuÊt khái s?m«n,Ph­¬ng Tr­îng H?t¨ng c?t?bi kh«ng","Kh«ng biÕt ®¹i s?b?trôc xuÊt v?l?do g? ","ThËt k?l? Ng­¬i hái nhiÒu lµm gi?Ha! Ha! L·o n¹p kh«ng nh÷ng nãi cho ng­¬i biÕt l?do trôc xuÊt, m?cßn s?tiÕt l?v?chuyÖn mÊt tİch cña ®øa b?","Ha! Ha! Th?ra hßa th­îng ®· ph¹m giíi","Nãi nh?th«i! A di ®µ phËt! ThiÖn tai thiÖn tai!","R­îu thŞt ®· nÕm qua, t©m kh«ng h­íng PhËt t?n÷a. Tham mét chót kh«ng ph¶i l?c¸i sai qu?lín. ","Ha! Ha! Tèt! Ng­¬i hîp víi ta ®Êy! Ta nãi cho ng­¬i biÕt! K?thùc ®øa b?¨n c¾p ®ã kh«ng ph¶i l?ng­êi xÊu g? ch¼ng qua n?muèn lµm mét viÖc rÊt quan träng, ch?m­în mét chót sau ®ã s?tr?","§¹i s? M­êi m¹ng ng­êi kh«ng ph¶i l?®å vËt, nãi m­în l?sao?","§­îc! Ng­¬i ®i t×m mét ng­êi tªn l?Long Truy V? N¨m x­a h¾n, ta, Ph?T¹p Mao, th»ng b?¨n c¾p hîp l¹i thµnh 'V?L©m T?K?. Ch?c?h¾n míi biÕt ng­êi kia hiÖn thêi ?®©u")
 		SetTask(42,50)
-		AddNote("Ê§×ÙĞ¡º¢ÈÎÎñ£ºÈ¥ÕÒÁú×·Îè£¬Ñ¯ÎÊÊ§×ÙĞ¡º¢µÄÏûÏ¢. ")
-		Msg2Player("Ê§×ÙĞ¡º¢ÈÎÎñ£ºÈ¥ÕÒÁú×·Îè£¬Ñ¯ÎÊÊ§×ÙĞ¡º¢µÄÏûÏ¢. ")
+		AddNote("NhiÖm v?®øa b?mÊt tİch: §i t×m Long Truy v?hái tin tøc v?®øa b?mÊt tİch. ")
+		Msg2Player("NhiÖm v?®øa b?mÊt tİch: §i t×m Long Truy v?hái tin tøc v?®øa b?mÊt tİch. ")
 --	elseif (GetLevel() >= 50) then				-- and (GetCamp() == 4) then		-- ÔÊĞíÏ´µã£¨²»ÔÙÏŞÖÆºìÃûÏ´µã£©
 --		if (Uworld137 > 20) and (Uworld137 <= 30) then			-- 2004-06-11¼¼ÄÜ¸üĞÂ¸øÒ»´ÎÃâ·ÑÏ´µã£¨²»°üÀ¨°×Ãû£©
 --			Say("ÊÍÃ÷£º¿´ÔÚÄãÒ²ÊÇÀÏ½­ºşµÄ·İÉÏ£¬Ã»ÓĞË®¾§ÎÒÒ²¸øÄãÖØÉè¼¼ÄÜ1´Î£¬Òª²»Òª°ÑÎÕÕâ¸ö»ú»á£¿",2,"ºÃ£¬ÎÒÒªÖØÉè¼¼ÄÜ/rollback_0611","ÎÒ»¹ÊÇ³ÙµãÔÙÀ´°É/no")
@@ -36,17 +36,17 @@ function main()
 --		end
 	else		
 		-- È±Ê¡¶Ô»°£¨½âÊÍÏ´µã¸Ä±ä£©
-		local szTitle = "ÊÍÃ÷£ºÏÖÔÚÖ»ÒªÕÒËæ±ãÄÄ¸ö³ÇÊĞµÄ³µ·ò£¬¶¼¿ÉÒÔËÍÄãÈ¥¡°Ï´Ëèµº¡±£¬±ÈÆ¶É®Ï´Ëè¸ü¼Ó·½±ã¡£"
-		szTitle = szTitle .. "²»¹ıÎÒÕâ±ß¿ÉÒÔËÍÄãÃÇÈ¥<color=yellow>ÎŞÃûÃØ¾µ<color>£¬ÔÚÄÇÀï¿ÉÒÔÓÃ¾­ÑéÀ´»»È¡Ä³Ğ©¼¼ÄÜµÄÊìÁ·¶È¡£"
+		local szTitle = " thİch minh  b©y giê chØ cÇn t×m tïy tiÖn thµnh thŞ nµo ®İch phu xe , còng cã thÓ ®­a ng­¬i ®i “ tÈy tñy ®¶o ” , so bÇn t¨ng tÈy tñy cµng thªm ph­¬ng tiÖn . "
+		szTitle = szTitle .. " bÊt qu¸ ta bªn nµy cã thÓ ®­a c¸c ng­¬i ®i <color=yellow> v« danh bİ kİnh <color> , ë n¬i nµo cã thÓ dïng kinh nghiÖm ®Ó ®æi lÊy mét İt kü n¨ng ®İch ®é thuÇn thôc . "
 		
 		local tbOpt = {}
 		--- Ôö¼ÓÎïÆ·ËÍ150ĞŞÁ¶Öµ -- Modified By NgaVN - 20121207
-		tinsert(tbOpt, {"½»ÎïÆ·", tbTrainSkill150.LoadItem, {tbTrainSkill150}})
+		tinsert(tbOpt, {"Nép vËt phÈm Tu ch©n yÕu quyÕt", tbTrainSkill150.LoadItem, {tbTrainSkill150}})
 		-- ½øÈ¥Ö®Ç°ĞèÒªÅĞ¶Ï ÊÇ·ñ¾ßÓĞ150¼¶¼¼ÄÜ£¬·ñÔò²»ËÍ
 		
 		-- ËÍÎÒÈ¥ÎŞÃûÃØ¾³- - Modified By NgaVN - 20121207
-		tinsert(tbOpt, {"ËÍÎÒÈ¥ÎŞÃûÃØ¾µ", toWumingmijin})	
-		tinsert(tbOpt, {"ÎÒÔÙ¿¼ÂÇÏÂ", no})
+		tinsert(tbOpt, {"§­a ta ®i v« danh bİ kİnh ", toWumingmijin})	
+		tinsert(tbOpt, {"Ta suy nghÜ thªm h¹ ", no})
 		
 		CreateNewSayEx(szTitle, tbOpt)
 		
@@ -77,7 +77,7 @@ function toWumingmijin()
 	if bResult == 1 then
 		NewWorld(967,1634, 3231)
 	else
-		Talk(1,"","Ñ§µ½150¼¼ÄÜºóÔÙÈ¥ÎŞÃûÃØ¾³!")
+		Talk(1,"","§îi sau khi häc ®­îc k?n¨ng 150 rßi h·y ®i V?Danh MËt C¶nh!")
 	end
 end
 
@@ -86,7 +86,7 @@ function rollback_0611()		-- Îª(2004-06-11)Éè¼ÆµÄÃâ·ÑÏ´µã
 		SetTaskTemp(1,1024)		-- ´Ë´ÎÏ´µãÔöÁ¿Îª1024
 		rollback_prise()
 	else
-		Talk(1,"","ÄãĞĞ×ß½­ºşÕâÃ´¾Ã£¬100000 Á½¶¼Ã»ÓĞÂğ?")
+		Talk(1,"","Ng­¬i hµnh tÈu giang h?l©u nh?vËy, ch?100000 ng©n l­îng còng kh«ng c?sao?")
 	end
 end
 
@@ -95,7 +95,7 @@ function rollback_1212()		-- Îª(2003-12-12)Éè¼ÆµÄÃâ·ÑÏ´µã£¨ÒÑÈ¡Ïû£©
 		SetTaskTemp(1,1)		-- ´Ë´ÎÏ´µãÔöÁ¿Îª1
 		rollback_prise()
 	else
-		Talk(1,"","ÕâµãÇ®¶¼Ã»ÓĞ£¬ÔõÃ´ĞĞ×ß½­ºş?!")
+		Talk(1,"","T?tiÒn ®ã còng kh«ng c? lµm sao b«n ba giang h?")
 	end
 end
 
@@ -111,34 +111,34 @@ function found_jewel_yes()		-- ÕÒµ½±¦Ê¯£¬»»»Ø¼¼ÄÜµã
 			for i = 1,j239 do DelItemEx(239) end
 			for i = 1,j240 do DelItemEx(240) end
 			AddMagicPoint(3)		-- ²¹»ØÏ´µã¿Û³ıµÄ3µã¡£
-			Talk(1,"KickOutSelf","ºÃÁË£¬ÄãÏÖÔÚĞİÏ¢Ò»ÏÂ£¬»Ö¸´Ò»ÏÂ!")
+			Talk(1,"KickOutSelf","Xong råi! Tr­íc m¾t ng­¬i nªn ngåi tŞnh d­ìng mét chót lÊy l¹i søc!")
 		elseif (j238+j239+j240 > 3) then
-			Say("Äã¸øÎÒ3¿ÅË®¾§ÏÈ£¬ÎÒ²ÅÄÜ°ïÄã!",1,"ÄÇÎÒÉÔºò»ØÀ´/rollback_no")
+			Say("Ng­¬i h·y ®­a ta 3 viªn Thñy tinh tr­íc, ta míi c?th?gióp ng­¬i ®­îc!",1,"VËy ®Ó ta ®i cÊt bít ®å, råi quay l¹i gÆp ®¹i s? /rollback_no")
 		else
-			Talk(1,"","Äã²»¹»3¿ÅË®¾§")
+			Talk(1,"","Ng­¬i r?rµng kh«ng c?®ñ 3 viªn Thñy tinh")
 		end
 	else
-		Talk(1,"","ºÃÁË£¬ÄãÏÖÔÚĞİÏ¢Ò»ÏÂ£¬»Ö¸´Ò»ÏÂ!")
+		Talk(1,"","Xong råi! Tr­íc m¾t ng­¬i nªn ngåi tŞnh d­ìng mét chót lÊy l¹i søc!")
 	end
 end
 
 function rollback_get()
-	Say("ºÃÁË£¬ÎÒºÜÀÛ¡£Äã¸øÎÒ´·´·±³!",2,"ÕâÊÇÊ®ÍòÁ½£¬Çë´óÊ¦ÊÕÏÂ. /pay_yes","ÄÇËãÁË/rollback_no")
+	Say("Xong råi! Ta mÖt qu? Ng­¬i ®Êm l­ng cho ta chót ®i!",2,"§©y l?10 v¹n l­îng, xin ®¹i s?nhËn cho. /pay_yes","VËy th«i ®i/rollback_no")
 end;
 
 function rollback_no()
-	Talk(1,"","ÕıµÈÄã´ó¼İ¹âÁÙ£¬¾ÍÊÕµ½Ê®ÍòÁ½£¬¹ş¹ş!. ")
+	Talk(1,"","§ang mong ch?®¹i gi?quang l©m, th?®­îc 10 v¹n l­îng, Ha! Ha! Ha!. ")
 end;
 
 function pay_yes()					-- ³õ´ÎÏ´µã£¬ÊÇÓÃµÄ±¦Ê¯£¨²»¿Û¼¼ÄÜ£©
 	if (GetCash() >= 100000) then
 		if (GetByte(GetTask(13),2) == 0) then		-- ÈôÓÃ¹ıË®¾§¾Í²»ÔÙÔÊĞíÓÃË®¾§Ï´µã
-			Say("ÄãÏÈ¸øÎÒ3¿ÅË®¾§£¬ÎÒ²ÅÄÜ°ïÄã!",3,"ÎÒÓĞ3¿Å /pay_jewel","ÎÒÃ»ÓĞ£¬¾­ÂöÊÜÉË£¬ÊÜ²»ÁËÁË. /jewel_none","ÄÇÎÒ¾ÍÍíµã°ïÄã /rollback_no")
+			Say("Ng­¬i h·y ®­a ta 3 viªn Thñy tinh tr­íc, ta míi c?th?gióp ng­¬i ®­îc!",3,"Ta c?ba h¹t /pay_jewel","Ta kh«ng viªn ®¸ qu?®ã, kinh m¹ch b?th­¬ng còng kh«ng chŞu nçi n÷a råi. /jewel_none","VËy th?ta s?thay g©n ®æi cèt muén mét chót /rollback_no")
 		else
 			jewel_none()
 		end
 	else
-		Talk(1,"","ÕâÊÇÄãµÄ³ÏÒâÂğ£¿Äã»ØÈ¥°É! ")
+		Talk(1,"","§©y l?thµnh ?cña ng­¬i sao?Nh?th?th?ng­¬i quay v?®i! ")
 	end
 end
 
@@ -148,11 +148,11 @@ function pay_jewel()
 	j240 = GetItemCountEx(240)
 	if (j238+j239+j240 == 3) then
 		SetTaskTemp(1,257)		-- ¼Ç×¡ÊÇÓÃ±¦Ê¯Ï´µÄµã£¨Ï´µã±äÁ¿ÖµÎª257£¬·Ç1£©
-		Talk(2,"rollback_prise","ºÃÁË£¬ÄãÏÖÔÚĞİÏ¢Ò»ÏÂ£¬»Ö¸´Ò»ÏÂ!","ÏÖÔÚ×øÔÚÎÒÇ°Ãæ")
+		Talk(2,"rollback_prise","Xong råi! Tr­íc m¾t ng­¬i nªn ngåi tŞnh d­ìng mét chót lÊy l¹i søc!","B©y gi?h·y ngåi tr­íc mÆt ta")
 	elseif (j238 + j239 + j240 > 3) then
-		Say("ÄãÏÈ¸øÎÒ3¿ÅË®¾§£¬ÎÒ²ÅÄÜ°ïÄã!",1,"ÄÇÎÒÉÔºò»ØÀ´/rollback_no")
+		Say("Ng­¬i h·y ®­a ta 3 viªn Thñy tinh tr­íc, ta míi c?th?gióp ng­¬i ®­îc!",1,"VËy ®Ó ta ®i cÊt bít ®å, råi quay l¹i gÆp ®¹i s? /rollback_no")
 	else
-		Talk(1,"","ÄãÃ÷Ã÷Ã»ÓĞ3¿ÅË®¾§")
+		Talk(1,"","Ng­¬i r?rµng kh«ng c?®ñ 3 viªn Thñy tinh")
 	end
 end
 
@@ -163,28 +163,28 @@ function NEWpay_yes()		-- µÚ¶ş´Î£¨¼°ÒÔºó£©Ï´µãÊ±µ÷ÓÃ£¬Ö±½Ó¼ì²éÇ®ºÍ±¦Ê¯£¬²»ÔÙ¼ÇÂ¼
 		j240 = GetItemCountEx(240)
 		if (j238+j239+j240 == 3) then
 			SetTaskTemp(1,10)		-- ÒÑ¾­¿ªÊ¼Ï´µãÁ÷³Ì
-			Talk(2,"rollback_prise","ºÃÁË£¬ÄãÏÖÔÚĞİÏ¢Ò»ÏÂ£¬»Ö¸´Ò»ÏÂ!","ÏÖÔÚ×øÔÚÎÒÇ°Ãæ")
+			Talk(2,"rollback_prise","Xong råi! Tr­íc m¾t ng­¬i nªn ngåi tŞnh d­ìng mét chót lÊy l¹i søc!","B©y gi?h·y ngåi tr­íc mÆt ta")
 		elseif (j238 + j239 + j240 > 3) then
-			Say("ÄãÏÈ¸øÎÒ3¿ÅË®¾§£¬ÎÒ²ÅÄÜ°ïÄã!",1,"ÄÇÎÒÉÔºò»ØÀ´/rollback_no")
+			Say("Ng­¬i h·y ®­a ta 3 viªn Thñy tinh tr­íc, ta míi c?th?gióp ng­¬i ®­îc!",1,"VËy ®Ó ta ®i cÊt bít ®å, råi quay l¹i gÆp ®¹i s? /rollback_no")
 		else
-			Talk(1,"","ÄãÃ÷Ã÷Ã»ÓĞ3¿ÅË®¾§")
+			Talk(1,"","Ng­¬i r?rµng kh«ng c?®ñ 3 viªn Thñy tinh")
 		end
 	else
-		Talk(1,"","100000 Á½¶¼Ã»ÓĞ£¬ÎÒÔõÃ´°ïÄã?")
+		Talk(1,"","Ch?100000 ng©n l­îng còng kh«ng c? lµm sao ta gióp ng­¬i ®­îc?")
 	end
 end
 
 function jewel_none()
 --	SetTask(13,GetTask(13) + 1)
 	SetTaskTemp(1,1)		-- ¼Ç×¡ÊÇÓÃ¼¼ÄÜµãÊıÏ´µÄµã£¨Ï´µã±äÁ¿ÖµÎª1£¬·Ç257£©
-	Talk(2,"rollback_prise","ºÃÁË£¬ÄãÏÖÔÚĞİÏ¢Ò»ÏÂ£¬»Ö¸´Ò»ÏÂ!","ÏÖÔÚ×øÔÚÎÒÇ°Ãæ")
+	Talk(2,"rollback_prise","Xong råi! Tr­íc m¾t ng­¬i nªn ngåi tŞnh d­ìng mét chót lÊy l¹i søc!","B©y gi?h·y ngåi tr­íc mÆt ta")
 end
 
 function rollback_cancel()		-- ÒÑ·ÅÆúµÄÎŞÓÃº¯Êı
 	i = GetTaskTemp(1)
 	if (i > 0) then		-- Èç¹ûÒÑ¾­¿ªÊ¼Á÷³Ì£¬·µ»¹10WÁ½Òø×Ó
-		Talk(1,"","ÎÒ»¹ÄãÇ®!")
-		Msg2Player("»¹Ç®¸øÄã. ")
+		Talk(1,"","Ta tr?l¹i tiÒn cho ng­¬i ®©y!")
+		Msg2Player("Thİch Minh tr?l¹i 10 v¹n l­îng cho b¹n. ")
 	end
 end
 
@@ -214,7 +214,7 @@ function rollback_prise()
 	elseif (addon == 1) then		-- ³õ´ÎÏ´µã£¬ÓÃµÄÊÇ¼¼ÄÜ
 		SetTask(13,1)	-- Ï´µã±äÁ¿µÄ¸Ä±äÎªÔ­±¾Öµ¼ÓÉÏ´Ë´ÎÔö¼ÓÖµ
 	else
-		Talk(1,"","Ï´Ëè×´Ì¬ÓĞµÄ´íÎó£¬ÇëÁªÏµGM½â¾ö!")
+		Talk(1,"","T×nh tr¹ng TÈy tñy c?chót sai sãt! Xin lËp tøc liªn h?víi GM ®Ó ®­îc x?l?")
 		return 0
 	end
 	Pay(100000)
@@ -236,11 +236,11 @@ function rollback_prise()
 	if (i ~= -1) then AddMagic(210,i) end			-- Èç¹ûÑ§¹ıÇá¹¦Ôò¼Ó»ØÔ­ÓĞµÈ¼¶
 	if (j ~= -1) then AddMagic(400,j) end			-- Èç¹ûÑ§¹ı¡°½Ù¸»¼ÃÆ¶¡±Í¬Ñù´¦Àí
 	if (UTask13 == 254) or (UTask_13 == 510) then		-- ÒÑ¾­Ã»ÓĞÏ´µã»ú»áÁË£¬ÌáĞÑÒ»ÏÂÍæ¼Ò
-		Msg2Player("ÓÃ3¿ÅË®¾§½øĞĞ¼¼ÄÜÏ´Ëè£¬Äã¸Ã»Ø¼ÒĞİÏ¢Ò»ÏÂ!")
-		Say("ÄãÏ´ËèÌ«¶à´ÎÁË£¬¾­ÂöÂÒÁË£¬ÏÖÔÚ <color=red>²»ÄÜÏ´ËèÁË<color> !",1,"ÎÒÖªµÀÁË. /KickOutSelf")
+		Msg2Player("Dïng 3 viªn Thñy Tinh tiÕn hµnh tÈy ®iÓm k?n¨ng. B¹n nªn v?nh?ngh?mét l¸t!")
+		Say("Ng­¬i ®· TÈy tñy qu?nhiÒu lÇn, kinh m¹ch lo¹n hÕt. B©y gi?<color=red>kh«ng th?tÈy tñy<color> ®­îc n÷a!",1,"Ta biÕt råi!, ta s?ch?? /KickOutSelf")
 	else
-		Msg2Player("ÒÑÏ´ËèÍê¼¼ÄÜµã£¬Äã¿ÉÒÔ½øĞĞÖØĞÂ·ÖÅä!")
-		Say("ÒÑÏ´ËèÍê¼¼ÄÜµã£¬Äã¿ÉÒÔ½øĞĞÖØĞÂ·ÖÅä!",1,"ºÃ. /KickOutSelf")
+		Msg2Player("§· tÈy xong ®iÓm k?n¨ng! B¹n c?th?tiÕn hµnh ph©n phèi l¹i!")
+		Say("§· tÈy xong ®iÓm k?n¨ng! B¹n c?th?tiÕn hµnh ph©n phèi l¹i!",1,"§­îc. /KickOutSelf")
 	end
 --	KickOutSelf()
 end;

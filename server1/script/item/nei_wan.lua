@@ -2,11 +2,11 @@
 -- ÎåÖÖÍèÈç¹ûÖØ¸´³Ô£¬Ö®Ç°³Ô¹ıµÄÍèµÄ¹¦Ğ§½«ÏûÊ§£¬Ö»±£Áô×îºó³ÔµÄÍèµÄ¹¦Ğ§
 -- Fanghao_Wu 2004.9.13
 
-aryWan = {	{"<#>ÄÚÆÕÍè", 453},
-			{"<#>ÄÚ¶¾Íè", 454},
-			{"<#>ÄÚ±ùÍè", 455},
-			{"<#>ÄÚ»ğÍè", 456},
-			{"<#>ÄÚµçÍè", 457} };
+aryWan = {	{"<#> Néi Phæ hoµn", 453},
+			{"<#> Néi §éc hoµn", 454},
+			{"<#> Néi B¨ng hoµn", 455},
+			{"<#> Néi Háa hoµn", 456},
+			{"<#> Néi §iÖn hoµn", 457} };
 			
 function EatNei_Wan( eatIndex, level, statetype, time )
 	local nCount = getn( aryWan );
@@ -14,10 +14,10 @@ function EatNei_Wan( eatIndex, level, statetype, time )
 		if( i ~= eatIndex ) then
 			local nLeftTime = AddSkillState( aryWan[i][2], 1, 1, 0 );
 			if( nLeftTime > 0 ) then
-				Msg2Player( aryWan[i][1].."<#>¹¦Ğ§ÒÑÏûÊ§" );
+				Msg2Player( aryWan[i][1].."<#> HÕt c«ng hiÖu" );
 			end
 		end
 	end
 	AddSkillState( aryWan[eatIndex][2], level, statetype, time );
-	Msg2Player( "<#>Äã³ÔÏÂÁË"..aryWan[eatIndex][1] );
+	Msg2Player( "<#> B¹n ®· sö dông"..aryWan[eatIndex][1] );
 end

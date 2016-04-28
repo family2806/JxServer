@@ -6,17 +6,17 @@ STONG_TAKEOUT_LIMIT = 46000
 function BaoxiangCompose(nItemIdx)
 	local nCount = GetItemMagicLevel(nItemIdx, 1);
 	local tbSay = {};
-	tbSay[1] = format("Ä¿Ç°¾«Á¶±¦Ïä´¢´æÓÐ: <color=green>%d<color> ¾«Á¶Ê¯", nCount);
+	tbSay[1] = format("HiÖn t¹i hån th¹ch chøa: <color=green>%d<color> tinh lùc", nCount);
 	if(nBind == 0) then
-		tbSay[1] = tbSay[1] .. format("Ä¿Ç°Äã¿ÉÒÔÈ¡ <color=green>%d<color> ¾«Á¶±¦Ïä¾«Á¶Ê¯", max(nCount-STONG_TAKEOUT_LIMIT, 0));
+		tbSay[1] = tbSay[1] .. format("HiÖn t¹i c¸c h¹ cã thÓ rót ®­îc <color=green>%d<color> tinh lùc tõ h«n th¹ch", max(nCount-STONG_TAKEOUT_LIMIT, 0));
 	end
 	
-	tinsert(tbSay, format("´¢´æ %s/#PutIn('%s', %d)","¾«Á¶Ê¯","¾«Á¶Ê¯", nItemIdx));
+	tinsert(tbSay, format("Chøa %s/#PutIn('%s', %d)","¾«Á¦","¾«Á¦", nItemIdx));
 --	if (nBind == 0 and max(nCount-STONG_TAKEOUT_LIMIT, 0) > 0) then
---		tinsert(tbSay, format("ÎüÈ¡%s/#TakeOut('%s', %d)","¾«Á¶Ê¯","¾«Á¶Ê¯", nItemIdx));
+--		tinsert(tbSay, format("ÎüÈ¡%s/#TakeOut('%s', %d)","¾«Á¦","¾«Á¦", nItemIdx));
 --	end
 	
-	tinsert(tbSay, "ÈÃÎÒ×ÐÏ¸ÏëÏë/OnExit");
+	tinsert(tbSay, "§Ó ta suy nghÜ kü l¹i xem/OnExit");
 	CreateTaskSay(tbSay);
 	return 1;
 end
@@ -24,20 +24,20 @@ end
 function PutIn(szItem, nItemIdx)
 	local tbItemList = 
 	{
-		["¾«Á¶Ê¯"] =  
+		["¾«Á¦"] =  
 		{
 			tbFormula = 
 			{
 				
-				szComposeTitle = format("¾«Á¶±¦Ïä \t ´æÓÐ %s", "¾«Á¶Ê¯"),
-				szFailMsg = "ÄãµÄ¾«Á¶Ê¯²»×ã ®ñ!",
+				szComposeTitle = format("Hån th¹ch \t chøa %s", "¾«Á¦"),
+				szFailMsg = "ÄãµÄ¾«Á¦²»×ã ®ñ!",
 				nWidth = 1,
 				nHeight = 1,
 				nFreeItemCellLimit = 0,
 				tbMaterial = 
 				{
 					{
-						szName = "¾«Á¶Ê¯", 
+						szName = "¾«Á¦", 
 						pGetCount = function () 
 										return GetEnergy() 
 									end, 
@@ -67,7 +67,7 @@ function PutIn(szItem, nItemIdx)
 	if (tbItem) then
 		tbItem.tbFormula.nItemIndex = nItemIdx;
 		tbItem.tbFormula.tbMaterial[1].nItemIndex = nItemIdx;
-		local tbComPos = tbActivityCompose:new(tbItem.tbFormula, format("¾«Á¶±¦Ïä´æÓÐ [%s]", szItem));
+		local tbComPos = tbActivityCompose:new(tbItem.tbFormula, format("Hån th¹ch chøa [%s]", szItem));
 		tbComPos:ComposeDailog(1);
 	end
 end
@@ -75,19 +75,19 @@ end
 function TakeOut(szItem, nItemIdx)
 	local tbItemList = 
 	{
-		["¾«Á¶Ê¯"] =  
+		["¾«Á¦"] =  
 		{
 			tbFormula = 
 			{
 				
-				szComposeTitle = format("¾«Á¶±¦Ïä\tÈ¡ %s", "¾«Á¶Ê¯"),
+				szComposeTitle = format("Hån th¹ch\tRót %s", "¾«Á¦"),
 				nWidth = 1,
 				nHeight = 1,
 				nFreeItemCellLimit = 0,
 				tbMaterial = 
 				{
 					{
-						szName = "¿ÉÒÔÈ¡³öµÄ¾«Á¶Ê¯ÊýÁ¿", 
+						szName = "¿ÉÒÔÈ¡³öµÄ¾«Á¦ÊýÁ¿", 
 						pGetCount = function (self) 
 										if (self.nItemIndex ~= nil and type(self.nItemIndex) == "number" and self.nItemIndex > 0) then
 											local nBind = GetItemBindState(self.nItemIndex);
@@ -100,7 +100,7 @@ function TakeOut(szItem, nItemIdx)
 						nCount = 1,
 						pConsume = function (self, nConsumeCount)
 										if ((GetEnergy()+nConsumeCount)>2000000000) then
-											Talk(1, "", "¾«Á¶Ê¯ÖµÒÑ³¬¹ýÉÏÏÞ£¬²»ÄÜÔÙÈ¡ÁË");
+											Talk(1, "", "¾«Á¦ÖµÒÑ³¬¹ýÉÏÏÞ£¬²»ÄÜÔÙÈ¡ÁË");
 											return nil;
 										end
 										if (self.nItemIndex ~= nil and type(self.nItemIndex) == "number" and self.nItemIndex > 0 and AddEnergy(nConsumeCount) == 1) then
@@ -129,7 +129,7 @@ function TakeOut(szItem, nItemIdx)
 	if (tbItem) then
 		tbItem.tbFormula.nItemIndex = nItemIdx;
 		tbItem.tbFormula.tbMaterial[1].nItemIndex = nItemIdx;
-		local tbComPos = tbActivityCompose:new(tbItem.tbFormula, format("´Ó¾«Á¶±¦ÏäÈ¡µÃ [%s]", szItem));
+		local tbComPos = tbActivityCompose:new(tbItem.tbFormula, format("Tõ hån th¹ch rót ®­îc [%s]", szItem));
 		tbComPos:ComposeDailog(1);
 	end
 end

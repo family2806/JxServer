@@ -6,20 +6,20 @@ YueGeRoom = {}
 YueGeRoom.nMapId = 969
 YueGeRoom.tbNpcList = {
 	[0] = {
-		szName = "ÔÂ¸èµºÖ÷", 
+		szName = "NguyÖt Ca §¶o Chñ", 
 		nLevel = 95,
 		nNpcId = 1849,
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegemigu\\yuegedaozhu.lua",
 	},
 	[1] = {
-		szName = "ÔÂ¸èµºÖ÷", 
+		szName = "NguyÖt Ca §¶o Chñ", 
 		nLevel = 95,
 		nNpcId = 1850,
 		nIsboss = 1,
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegemigu\\daozhudeath.lua",
 	},
 	[2] = {
-		szName = "ÔÂ¸èµºÖ÷", 
+		szName = "NguyÖt Ca §¶o Chñ", 
 		nLevel = 95,
 		nNpcId = 1851,
 		nIsboss = 1,
@@ -27,7 +27,7 @@ YueGeRoom.tbNpcList = {
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegemigu\\daozhudeath.lua",
 	},
 	[3] = {
-		szName = "ÔÂ¸èµºÖ÷", 
+		szName = "NguyÖt Ca §¶o Chñ", 
 		nLevel = 95,
 		nNpcId = 1852,
 		nIsboss = 1,
@@ -36,7 +36,7 @@ YueGeRoom.tbNpcList = {
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegemigu\\daozhudeath.lua",
 	},
 	[4] = {
-		szName = "ÔÂ¸èµºÖ÷", 
+		szName = "NguyÖt Ca §¶o Chñ", 
 		nLevel = 95,
 		nNpcId = 1849,
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegemigu\\yuegedaozhu.lua",
@@ -104,7 +104,7 @@ function YueGeRoom:_TaskStepAdd()
 	local nTaskValue = CallPlayerFunction(nPlayerIndex, GetTask, TSK_LV150_SKILL)
   CallPlayerFunction(nPlayerIndex, SetTask, TSK_LV150_SKILL, nTaskValue+1*100)
   CallPlayerFunction(nPlayerIndex, SyncTaskValue, TSK_LV150_SKILL)
-	CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>¼ÌĞøµ½ÔÂ¸èµº£¬ÓëµºÖ÷¶Ô»°£¬²»¹Ü¶àÎ£ÏÕ<color>")
+	CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>TiÕp tôc ®i ®Õn NguyÖt Ca §¶o, ®èi tho¹i víi §¶o Chñ, bÊt chÊp mäi hiÓm nguy <color>")
 end 
 
 function YueGeRoom:ChangeNpc(nNpcIndex, nIsDeath)
@@ -144,7 +144,7 @@ function YueGeRoom:Init(szPlayerName, nRoomId, tbNpcPos)
 	local nNewNpcIndex = self:CallNpcEx(tbNpc, self.nMapId, self.tbNpcPos[1], self.tbNpcPos[2])
 	self:RecordNpcId(nNewNpcIndex)
 	local nPlayerIndex = SearchPlayer(self.szPlayerName)
-	CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>Äã¿ÉÒÔÁôÔÚÔÂ¸èÃÜ¹È15·ÖÖÓ£¬Çë´óÏÀ×¥½ôÊ±¼ä! <color>")
+	CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>Ng­¬i cã thÓ l­u l¹i NguyÖt Ca MËt Cèc 15 phót, xin ®¹i hiÖp h·y n¾m b¾t thêi gian! <color>")
 end
 
 function YueGeRoom:OnTime()
@@ -153,10 +153,10 @@ function YueGeRoom:OnTime()
 	if self.nStayTime <= 0 then
 		self.nTimerId = nil
 		CallPlayerFunction(nPlayerIndex, NewWorld, 968, 1566, 2836)
-		CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>Ê±¼äÒÑÓÃÍê£¬ÄãĞèÒªÀë¿ªÔÂ¸èÃÜ¹È<color>")
+		CallPlayerFunction(nPlayerIndex, Msg2Player, "<color=yellow>Thêi gian ®· hÕt, ng­¬i bŞ buéc ph¶i rêi khái NguyÖt Ca MËt Cèc <color>")
 		return 0
 	end
-	CallPlayerFunction(nPlayerIndex, Msg2Player, format("Äã»¹¿ÉÒÔÁôÔÚÔÂ¸èÃÜ¹È<color=yellow>%d ·ÖÖÓ<color>", self.nStayTime))
+	CallPlayerFunction(nPlayerIndex, Msg2Player, format("Ng­¬i vÉn cã thÓ l­u l¹i NguyÖt Ca MËt Cèc <color=yellow>%d phót <color>", self.nStayTime))
 	return 1
 end
 

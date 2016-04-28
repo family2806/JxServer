@@ -20,15 +20,15 @@ function main()
 	local tbDialog =
 	{
 		--"½ÓÊÜÈÎÎñ/ture_gettask",
-		"¿ªÊ¼ÈÎÎñ /ture_try_starttask",
-		"½ÓÈÎÎñ/ture_continuetask",
-	  	"Àë¿ªÇøÓò/ture_movecity",
-	  	"ÉÔºó»ØÀ´ /no",
+		"B¾t ®Çu nhiÖm vô /ture_try_starttask",
+		"TiÕp tôc nhiÖm vô/ture_continuetask",
+	  	"Rêi khái khu vùc/ture_movecity",
+	  	"L¸t n÷a quay l¹i /no",
 	}
 --	if (tbBirthday0905:IsActDate() == 1) then
 --		tinsert(tbDialog, 3, "ÔÚÇ§±¦¿âµØÍ¼µÄÈÎÎñ/birthday0905_ture");
 --	end
-	 Describe(DescLink_YiGuan..":´ÓÎÒÕâ¿ªÊ¼¸ø´ó¼Ò·Ö¹¤¾ßÌåÈÎÎñ£¬¼ÓÓÍÅ¶¡£ÓÉ¶Ó³¤¿ªÊ¼ÈÎÎñµÄ×é¶Ó½«¸üÈİÒ×Íê³ÉÈÎÎñ¡£ÏÖÔÚÄãÏë×öÊ²Ã´£¿",getn(tbDialog), unpack(tbDialog))
+	 Describe(DescLink_YiGuan..": Tõ chæ cña ta ®©y b¾t ®Çu ph©n c«ng nhiÖm vô cô thÓ cho ng­¬i, cè lªn nhĞ. Tæ ®éi do ®éi tr­ëng b¾t ®Çu nhiÖm vô th× cµng dÔ hoµn thµnh nhiÖm vô h¬n. B©y giê ng­¬i muèn lµm g× ®©y ?",getn(tbDialog), unpack(tbDialog))
 end
 
 --function ture_gettask()
@@ -75,7 +75,7 @@ function ture_try_starttask()
 		--×Ô¼º¿ªÊ¼ÈÎÎñ
 		local nTeamSize = GetTeamSize();
 		if nTeamSize > 1 and IsCaptain() ~= 1 then
-			Describe(DescLink_YiGuan..": Äã²»ÊÇ¶Ó³¤£¬²»ÄÜ¿ªÊ¼ÈÎÎñ ",1,"½áÊø¶Ô»°/no")
+			Describe(DescLink_YiGuan..": Ng­¬i kh«ng ph¶i ®éi tr­ëng, kh«ng thÓ b¾t ®Çu nhiÖm vô.",1,"½áÊø¶Ô»°/no")
 			return
 		end
 		
@@ -101,18 +101,18 @@ function ture_try_starttask()
     		end
     	end
     	
-    	WriteLog(format("Account:%s[Name:%s] ¿ªÊ¼ĞÅÊ¹ÈÎÎñ£¬×é¶ÓÈËÊıÎª [%d]",
+    	WriteLog(format("Account:%s[Name:%s] b¾t ®Çu nhiÖm vô Tİn Sø, nh©n sè tæ ®éi lµ [%d]",
 			GetAccount(),
 			GetName(),
 			nTeamSize
 			)
 		);
 	elseif ( nt_getTask(1203) == 20 or nt_getTask(1203) == 21 ) then
-		Describe(DescLink_YiGuan..": ÄãÒÑ¿ªÊ¼ÈÎÎñ£¬²»ĞèÒªÔÙ¿ªÊ¼ÁË.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· b¾t ®µu nhiÖm vô, kh«ng cÇn ph¶i l¹i b¾t ®Çu n÷a.",1,"½áÊø¶Ô»°/no")
 	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
-		Describe(DescLink_YiGuan..": ÈÎÎñÒÑÍê³É£¬ÔõÃ´»¹ĞèÒª¿ªÊ¼ÄØ£¿¿ìµãÀë¿ªÕâÀï°É.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, sao l¹i ph¶i b¾t ®Çu n÷a ? Nhanh ch©n rêi khái ®©y ®i.",1,"½áÊø¶Ô»°/no")
 	elseif ( nt_getTask(1203) == 0 ) then
-		Describe(DescLink_YiGuan..": ÄãÒÑÍê³ÉĞÅÊ¹ÈÎÎñÁË£¬¿ìµãÀë¿ªÕâÀï°É!",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· hoµn thµnh nhiÖm vô Tİn sø råi! Nhanh ch©n rêi khái ®©y ®i!",1,"½áÊø¶Ô»°/no")
 	end
 end
 
@@ -121,7 +121,7 @@ function ture_real_starttask_one(nTaskCode)
 	ture_real_starttask(nTaskCode)
 	
 	local szMsg,nCount = get_task_string(nTaskCode)
-	szMsg = format("Äã¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñ£¬¿ì×¥×¡Ê±»ú´ò¿ª5¸ö±¦ÏäÍê³ÉÈÎÎñ£¬Çë×¢Òâ°´ÖÈĞò´ò¿ª<color=yellow>%s<color>", szMsg)
+	szMsg = format("Ng­¬i b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, h·y n¾m b¾t thêi gian ®i më 5 B¶o R­¬ng hoµn thµnh nhiÖm vô ®i, h·y chó ı më ®óng thø tù: <color=yellow>%s<color>", szMsg)
 	Msg2Player(szMsg)
 end
 
@@ -133,21 +133,21 @@ function ture_real_starttask_member(nTaskCode)
     		ture_real_starttask(nTaskCode)
     		
     		local szMsg,nCount = get_task_string(nTaskCode)
-    		szMsg = format("ÄãµÄ¶Ó³¤ÒÑ¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñÁË, Çë×¥×¡Ê±»úµ½µØÍ¼®å <color=yellow> Ìì±£¿â <color> ´ò¿ª5¸ö±¦ÏäÍê³ÉÈÎÎñ£¬Çë×¢Òâ°´ÖÈĞò´ò¿ª<color=yellow>%s<color>", szMsg)
+    		szMsg = format("§éi tr­ëng cña ng­¬i ®· b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, h·y n¾m b¾t thêi gian ®Õn b¶n ®å <color=yellow> Thiªn B¶o Khè<color> më B¶o R­¬ng hoµn thµnh nhiÖm vô ®I, h·y chó ı më r­¬ng ®óng thø tù: <color=yellow>%s<color>", szMsg)
     		Msg2Player(szMsg)
     		return
     	elseif ( nt_getTask(1203) == 20 or nt_getTask(1203) == 21 ) then
-    		Msg2Player("ÄãµÄ¶Ó³¤ÒÑ¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñÁË, ÄãµÄÈÎÎñÓë¶ÓÎéµÄ²»Í¬£¬Òª×Ô¼ºÍê³ÉÅ¶¡£" )
+    		Msg2Player("§éi tr­ëng cña ng­¬i ®· b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, nhiÖm vô cña ng­¬i kh«ng gièng víi ®éi ngò, h·y tù m×nh hoµn thµnh nhĞ" )
     	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
-    		Msg2Player("ÄãµÄ¶Ó³¤ÒÑ¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñÁË, ÄãµÄÈÎÎñÒÑÍê³É£¬Óë¶ÓÎéµÄ²»Í¬£¬¿ìÀë¿ª¶ÓÎéÈ¥½»ÈÎÎñ")
+    		Msg2Player("§éi tr­ëng cña ng­¬i ®· b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, nhiÖm vô cña ng­¬I ®· hoµn thµnh, kh«ng gièng víi ®éi ngò, h·y rêi ®éi ®i giao nhiÖm vô ®i")
     	elseif ( nt_getTask(1203) == 0 ) then
-    		Msg2Player("ÄãµÄ¶Ó³¤ÒÑ¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñÁË, Äã»¹Î´½Ó¸ÃÈÎÎñ£¬ÇëÀë¿ª¶ÓÎé°É")
+    		Msg2Player("§éi tr­ëng cña ng­¬i ®· b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, ng­¬I vÉn ch­a tiÕp nhËn nhiÖm vô nµy, h·y rêi khái ®éi ngò ®i")
     	end
     else
-    	Msg2Player("ÄãµÄ¶Ó³¤ÒÑ¿ªÊ¼Ìì±£¿âËÍĞÅÈÎÎñÁË, Äã²»ÔÚµØÍ¼®å<color=yellow>Ìì±£¿â<color>, Çë×Ô¼ºÍê³É")
+    	Msg2Player("§éi tr­ëng cña ng­¬i ®· b¾t ®Çu nhiÖm vô Thiªn B¶o Khè §­a Tin, ng­¬i kh«ng ë b¶n ®å<color=yellow>Thiªn B¶o Khè<color>, xin h·y tù m×nh hoµn thµnh")
 	end
 	
-	Msg2Team(format("<color=yellow>%s<color>ÈÎÎñ½ø¶ÈÓë¶ÓÎé²»Í¬", GetName()))
+	Msg2Team(format("<color=yellow>%s<color>TiÕn ®é nhiÖm vô kh«ng gièng víi ®éi ngò", GetName()))
 end
 
 function ture_real_starttask(nTaskCode)
@@ -183,7 +183,7 @@ function ture_movecity()
 			if ( nt_getTask(1204) == citygo[i][2] ) then
 				SetLogoutRV(0);
 				NewWorld(citygo[i][7], citygo[i][8], citygo[i][9])
-				Msg2Player("Ìì±£¿âæäÕ¾"..name.."´óÈËµ½"..citygo[i][4].."æäÕ¾!")
+				Msg2Player("DŞch tr¹m Thiªn  B¶o khu"..name.."§¹i nh©n ®Õn"..citygo[i][4].."DŞch tr¹m!")
 			end
 		end	
 	elseif ( nt_getTask(1203) == 10 ) or ( nt_getTask(1203) == 0 ) or ( nt_getTask(1203) == 20) or ( nt_getTask(1203) == 21 ) then
@@ -194,15 +194,15 @@ end
 
 function birthday0905_ture()
 	tbBirthday0905.tbTask:reset_task();
-	Say("æä¹Ù: ´Ó19/06/2009 µ½ 19/07/2009 24Ê±,Èç¹û´óÏÀÄÜ´©¹ıÏÂÃæÆäÖĞµÄÒ»¸öÌôÕ½£¬´óÏÀ½«»ñµÃ4¸ö±¦ÎïÖĞµÄÒ»¸ö£¬ÊÇÌì²Ğµ¶¡£´óÏÀÏë²Î¼ÓÌôÕ½Âğ?", 8, 
-		"½ÓÈÎÎñ´ò¿ª100¸ö±¦Ïä./#birthday0905_settask_message(4)",
-		"½ÓÈÎÎñÏûÃğÒ»¸öµÁÔô./#birthday0905_settask_message(5)",
-		"½ÓÈÎÎñÑ°ÕÒÒ»¸öÊ§ÂäÉÙÅ®./#birthday0905_settask_message(6)",
-		"ÎÒÒÑÍê³ÉÈÎÎñ´ò¿ª100¸ö±¦Ïä./#birthday0905_gettask_message(4)",
-		"ÎÒÒÑÍê³ÉÈÎÎñÏûÃğÒ»¸öµÁÔô./#birthday0905_gettask_message(5)",
-		"ÎÒÒÑÍê³ÉÈÎÎñÑ°ÕÒÒ»¸öÊ§ÂäÉÙÅ®./#birthday0905_gettask_message(6)",
-		"ÎÒÏë·ÅÆúÄ¿Ç°ÈÎÎñ/birthday0905_cancel_message",
-		"ÎÒÓĞ¼±ÊÂ£¬ÉÔºò»ØÀ´./no");
+	Say("DŞch Quan: Tõ ngµy 19/06/2009 ®Õn 24h ngµy 19/07/2009 , nÕu ®¹i hiÖp cã thÓ v­ît qua ®­îc mét trong nh÷ng thö th¸ch sau ®©y th× ®¹i hiÖp sÏ nhËn ®­îc mét trong bèn tİn vËt v« cïng quı gi¸ lµ “Thiªn Tµn §ao”. §¹i hiÖp cã b»ng lßng tham gia thö th¸ch kh«ng?", 8, 
+		"NhËn nhiÖm vô Më 100 b¶o r­¬ng./#birthday0905_settask_message(4)",
+		"NhËn nhiÖm vô Tiªu diÖt 1 §¹o tÆc./#birthday0905_settask_message(5)",
+		"NhËn nhiÖm vô T×m 1 ThiÕu n÷ bŞ thÊt l¹c./#birthday0905_settask_message(6)",
+		"Ta ®· hoµn thµnh nhiÖm vô Më 100 b¶o r­¬ng./#birthday0905_gettask_message(4)",
+		"Ta ®· hoµn thµnh nhiÖm vô Tiªu diÖt 1 §¹o tÆc./#birthday0905_gettask_message(5)",
+		"Ta ®· hoµn thµnh nhiÖm vô T×m 1 ThiÕu n÷ bŞ thÊt l¹c./#birthday0905_gettask_message(6)",
+		"Ta muèn hñy nhiÖm vô hiÖn t¹i/birthday0905_cancel_message",
+		"Ta cã chuyÖn gÊp, sÏ quay l¹i sau./no");
 end
 
 function no()
@@ -210,16 +210,16 @@ end
 
 function ture_continuetask()
 	if ( nt_getTask(1203) == 10 ) then
-		Describe(DescLink_YiGuan..": ÄãµÄÈÎÎñ»¹Î´¿ªÊ¼£¬²»ÄÜ¼ÌĞøÈÎÎñ",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i vÉn ch­a b¾t ®Çu, kh«ng thÓ tiÕp tôc nhiÖm vô.",1,"½áÊø¶Ô»°/no")
 	elseif ( nt_getTask(1203) == 20 ) then
-		Describe(DescLink_YiGuan..": ÄãµÄÈÎÎñÒÑ¾­¿ªÊ¼£¬¿ìµãÈ¥´ò¿ª5¸ö±¦Ïä°É.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· b¾t ®Çu, h·y nhanh chãng ®i më 5 B¶o R­¬ng ®i.",1,"½áÊø¶Ô»°/no")
 	elseif ( nt_getTask(1203) == 21 ) then
 		ture_real_starttask(nt_getTask(1201))
-		Msg2Player("ÄãµÄÈÎÎñ¿ÉÒÔ¼ÌĞø")
+		Msg2Player("NhiÖm vô cña ng­¬i cã thÓ tiÕp tôc")
 	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
-		Describe(DescLink_YiGuan..": ÄãµÄÈÎÎñÒÑÍê³É£¬²»ĞèÒª¼ÌĞøÁË.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, kh«ng cÇn ph¶i tiÕp tôc n÷a.",1,"½áÊø¶Ô»°/no")
 	elseif ( nt_getTask(1203) == 0 ) then
-		Describe(DescLink_YiGuan..": ÄãµÄÈÎÎñÒÑÊ§°Ü£¬¿ìµãÀë¿ªÕâÀï°É.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· thÊt b¹i, nhanh chãng rêi khái ®©y.",1,"½áÊø¶Ô»°/no")
 	end
 end
 

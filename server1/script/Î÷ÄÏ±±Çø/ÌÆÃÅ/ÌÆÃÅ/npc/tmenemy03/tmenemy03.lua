@@ -8,29 +8,29 @@ function OnDeath()
 	if (Uworld37 == 60) then
 		i = random(0,7)
 		if (i == 0) then
-			Talk(1,"","Õı¶«ÎªÀ×")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Õı¶«ÎªÀ×")
+			Talk(1,"","Chİnh §«ng lµ L«i ")
+			Msg2Player("Cã ®­îc khÈu quyÕt: Chİnh §«ng Vi L«i ")
 		elseif (i == 1) then
-			Talk(1,"","ÕıÄÏÎª»ğ")
-			Msg2Player("µÃµ½¿Ú¾÷¡°ÕıÄÏÎª»ğ")
+			Talk(1,"","Chİnh Nam lµ Háa")
+			Msg2Player("Cã ®­îc khÈu quyÕt  Chİnh Nam Vi Háa ")
 		elseif (i == 2) then 
-			Talk(1,"","ÕıÎ÷ÎªÕÓ")
-			Msg2Player("µÃµ½¿Ú¾÷¡°ÕıÎ÷ÎªÕÓ")
+			Talk(1,"","Chİnh T©y lµ méc")
+			Msg2Player("Cã ®­îc khÈu quyÕt  Chİnh T©y Vi ChiÓu ")
 		elseif (i == 3) then 
-			Talk(1,"","Õı±±ÎªË®")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Õı±±ÎªË®")
+			Talk(1,"","Chİnh B¾c lµ n­íc")
+			Msg2Player("Cã ®­îc khÈu quyÕt  Chİnh B¾c Vi Thuû ")
 		elseif (i == 4) then 
-			Talk(1,"","¶«ÄÏÎª·ç")
-			Msg2Player("µÃµ½¿Ú¾÷¡°¶«ÄÏÎª·ç")
+			Talk(1,"","§«ng Nam lµ giã ")
+			Msg2Player("Cã ®­îc khÈu quyÕt  §«ng Nam Vi Phong ")
 		elseif (i == 5) then 
-			Talk(1,"","¶«±±ÎªÉ½")
-			Msg2Player("µÃµ½¿Ú¾÷¡°¶«±±ÎªÉ½")
+			Talk(1,"","§«ng B¾c lµ nói")
+			Msg2Player("Cã ®­îc khÈu quyÕt  §«ng B¾c Vi s¬n  ")
 		elseif (i == 6) then 
-			Talk(1,"","Î÷ÄÏÎªµØ")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Î÷ÄÏÎªµØ")
+			Talk(1,"","T©y Nam lµ ®Êt")
+			Msg2Player("Cã ®­îc khÈu quyÕt: T©y Nam Vi §Şa ")
 		else
-			Talk(1,"","Î÷±±ÎªÌì")
-			Msg2Player("µÃµ½¿Ú¾÷¡°Î÷±±ÎªÌì")
+			Talk(1,"","T©y B¾c lµ trêi")
+			Msg2Player("Cã ®­îc khÈu quyÕt  T©y B¾c Vi Thiªn ")
 		end
 	end
 end;

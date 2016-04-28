@@ -1,4 +1,4 @@
--- BOSS¹Å¾øÉ±£¬Ã¿¸ô1·ÖÖÓ¾Í»á¶¨Éí15ÃëÒ»¸öÍæ¼ÒÊ¹Ö®²»ÄÜ·¢ÕĞ²»ÄÜ³ÔÒ©£¬¶øÇÒ»á³ÖĞøÃ¿Ãë500ÉËº¦£¬É±ËÀBOSSºó¹ı¹Ø
+-- BOSSCæ TuyÖt S¸t£¬Ã¿¸ô1·ÖÖÓ¾Í»á¶¨Éí15ÃëÒ»¸öÍæ¼ÒÊ¹Ö®²»ÄÜ·¢ÕĞ²»ÄÜ³ÔÒ©£¬¶øÇÒ»á³ÖĞøÃ¿Ãë500ÉËº¦£¬É±ËÀBOSSºó¹ı¹Ø
 
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -8,7 +8,7 @@ pTask = Task:New(41)
 
 function pTask:OnStart()
 	local pos = self.m_Pos.gujuesha
-	self.m_NpcIndex = FightNpcManager:AddNpc("¹Å¾øÉ±", 1671, self.m_Maze.m_MapId, pos.x, pos.y, self, nil, 1, 1)
+	self.m_NpcIndex = FightNpcManager:AddNpc("Cæ TuyÖt S¸t", 1671, self.m_Maze.m_MapId, pos.x, pos.y, self, nil, 1, 1)
 end
 
 function pTask:OnClose()

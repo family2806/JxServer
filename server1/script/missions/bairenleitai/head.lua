@@ -108,77 +108,77 @@ tbNpcFile = {
 tbNpcTypeList = {--npcµÄÀàĞÍ
 	[1] = {
 			nNpcId = 1786,
-			szName = "ÌìÍõ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Thiªn V­¬ng B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 0,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[2] = {
 			nNpcId = 1787,
-			szName = "ÉÙÁÖ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ ThiÕu L©m B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 0,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[3] = {
 			nNpcId = 1788,
-			szName = "Îå¶¾¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Ngò §éc B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 1,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[4] = {
 			nNpcId = 1789,
-			szName = "ÌÆÃÅ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ §­êng M«n B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 1,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[5] = {
 			nNpcId = 1790,
-			szName = "¶ëÃ¼¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Nga Mi B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 2,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[6] = {
 			nNpcId = 1791,
-			szName = "´äÑÌ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Thóy Yªn B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 2,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[7] = {
 			nNpcId = 1792,
-			szName = "ÌìÈÌ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Thiªn NhÉn B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 3,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[8] = {
 			nNpcId = 1793,
-			szName = "Ø¤°ï¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ C¸i Bang B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 3,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[9] = {
 			nNpcId = 1794,
-			szName = "Îäµ±¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ Vâ §ang B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 4,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[10] = {
 			nNpcId = 1795,
-			szName = "À¥ÂØ¸ßÊÖ°ÙÈËÀŞÌ¨",
+			szName = "Cao thñ C«n L«n B¸ch Nh©n L«i §µi",
 			nLevel = 90,
 			nSeries = 4,
 			nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 	},
 	[11] = {
 			nNpcId = 1571,
-			szName = "¹ÄÊÖ",
+			szName = "Cæ Thñ",
 			nLevel = 90,
 			szScriptPath = tbNpcFile.szBeautyNpc,
 			nTime = 15*60,

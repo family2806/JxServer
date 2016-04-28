@@ -2,7 +2,7 @@
 Include("\\script\\lib\\awardtemplet.lua")
 local tbItem = 
 {
-	["6,1,1781"] = {szName="»ØÌìÔÙÔì½õÄÒ", tbProp={1, 8, 0, 4, 0, 0},tbParam={60}},
+	["6,1,1781"] = {szName="CÈm nang t¸i t¹o lÔ bao", tbProp={1, 8, 0, 4, 0, 0},tbParam={60}},
 }
 	
 
@@ -10,12 +10,12 @@ function main(nItemIndex)
 	local nCount = GetItemParam(nItemIndex, 1);
 	
 	if nCount == 0 then
-		Say("ÒÑ¾­È¡ÍêÀïÃæµÄÒ©Æ·ÁË£¬¿ÉÒÔ¶ªµôÁË¡£", 0)
+		Say("§· rót hÕt toµn bé thuèc trong ®ã råi, cã thÓ vøt ®i.", 0)
 		return 0
 	end
 	
 	SetTaskTemp(114, nItemIndex)
-	AskClientForNumber("huitianjinlang_getpotion", 0,nCount, "ÇëÊäÈëÈ¡³öµÄ¸öÊı")
+	AskClientForNumber("huitianjinlang_getpotion", 0,nCount, "Sè l­îng rót")
 	
 	return 1
 end
@@ -44,7 +44,7 @@ function huitianjinlang_getpotion(nPickCount)
 		
 		
 		%tbItem[szItemId].nCount = nPickCount
-		if tbAwardTemplet:GiveAwardByList(%tbItem[szItemId], "»ØÌìÔÙÔì½õÄÒ") == 1 then
+		if tbAwardTemplet:GiveAwardByList(%tbItem[szItemId], "CÈm nang t¸i t¹o lÔ bao") == 1 then
 			nCount = nCount - nPickCount
 			if nCount <= 0 then
 				RemoveItemByIndex(nItemIndex)
@@ -54,12 +54,12 @@ function huitianjinlang_getpotion(nPickCount)
 			end
 		end
 	else
-		print("ÎïÆ·²»ÔÚÉíÉÏÁË¡£")
+		print("VËt phÈm kh«ng ë trªn ng­êi")
 	end
 end
 
 function GetDesc(nItemIndex)
 	local nCount= GetItemParam(nItemIndex, 1);
 
-	return format("Ê£Óà¸öÊı£º <color=yellow>%d<color>", nCount)
+	return format("Cßn d­: <color=yellow>%d<color>", nCount)
 end

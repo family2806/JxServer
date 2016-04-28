@@ -5,17 +5,17 @@ function main(sel)
 i = random(0,2)
 
 if (i == 0) then
-Say("ÒüÉñËã£ºĞ¡Ğ¡°ËØÔÅÌ£¬ÔÚÎÒÊÖÖĞ×ª£¬½ñÉú¸£»öÊÂ£¬ÌıÎÒËãÒ»Ëã¡£",0)
+Say("C¸i b¸t qu¸i nµy ®ang xoay chuyÓn trong tay ta, phóc sù c¶ ®êi, nghe ta ®o¸n!",0)
 return
 end;
 
 if (i == 1) then
-Say("ÒüÉñËã£ºÄãÌìÉúÀÍÂµÃü£¬ÓÖÌ«¹ıĞÔÇéÓÃÊÂ£¬ËùÒÔ×¢¶¨ËÄ´¦±¼²¨£¬´ìÕÛÁ¬Á¬£¬µ«Ò²²»±Ø»ÒĞÄ£¬ÎÒËÍÄãÒ»¾ä»°£¬ÊØµÃÔÆ¿ª¼ûÔÂÃ÷£¬ÎŞĞÄ²åÁøÁø³ÉÒñ¡£",0)
+Say("Ng­¬i hiÖn giê c«ng danh vÉn ch­a ®¹t, nh­ng ngµy ®ã kh«ng cßn xa! QuÎ ®· nãi râ! Trong vßng mét n¨m n÷a ng­¬i sÏ lµm ®­îc mét chuyÖn kinh ®éng giang hå! ",0)
 return
 end;
 
 if (i == 2) then
-Say("ÒüÉñËã£ºĞë¼Ç×¡£¬ÃüÀïÓĞÊ±ÖÕĞèÓĞ£¬ÃüÀïÎŞÊ±ÄªÇ¿Çó£¬Ì«¹ıÖ´×ÅÓë³ÕÃÔ£¬ÖñÀº´òË®Ò»³¡¿Õ¡£",0)
+Say("CÇn ph¶i nhí: 'mÖnh lı h÷u thêi chung nhu h÷u, mÖnh lı v« thêi m¹c c­êng cÇu, th¸i qu¸ chÊp tr­íc d÷ si mª, tróc lam ®¶ thñy nhÊt tr­êng kh«ng'.",0)
 end;
 
 

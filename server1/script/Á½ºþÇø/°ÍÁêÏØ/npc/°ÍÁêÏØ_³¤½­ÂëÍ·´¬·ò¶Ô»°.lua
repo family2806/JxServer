@@ -9,16 +9,16 @@ Include("\\Script\\Global\\station.lua");
 function main(sel)
 
 if (GetLevel() >= 5) then		--µÈ¼¶´ïµ½5¼¶
-	Say("´¬·ò£ºÎÒÓĞ¸öÍâºÅ½Ğ×ö¡°ÀËÀï°×Ìõ¡±£¬ËµÆğÓÎË®µÄ¹¦·ò£¬È«°ÍÁêÏØÎÒÈÏÁËµÚ¶ş£¬¾ÍÃ»ÈË¸ÒÈÏµÚÒ»£¡ËùÒÔ×øÎÒµÄ´¬Äã±£¹Ü·ÅĞÄ£¬ÄãÒªÈ¥ÄÄ¸öÂëÍ·Ñ½£¿", 2, "×ø´¬/WharfFun", "²»×ø/OnCancel");
+	Say("Ta cã biÖt hiÖu lµ 'L·ng Lı B¹ch §iÒu', ba ®êi ®iÒu sèng dùa vµo s«ng n­íc! Kh¾p Ba L¨ng HuyÖn nµy kh«ng cã ai lµ ®èi thñ! Kh¸ch quan muèn ®i ®©u? ", 2, "Ngåi ThuyÒn/WharfFun", "Kh«ng ngåi/OnCancel");
 else		
-	Say("´¬·ò£º¶Ô²»Æğ£¬Ã»µ½Îå¼¶µÄĞÂÊÖ²»ÄÜ×ø´¬³ö´å¡£", 0)
+	Say("§¹t Level 10 råi h·y ®Õn gÆp ta.", 0)
 end
 
 end;
 
 ---------------------------------------------------------------
 function  OnCancel()
-   Say("´¬·ò£ºÃ»Òø×Ó¿É×ø²»ÁË´¬£¡",0)
+   Say("Kh«ng tiÒn kh«ng thÓ ngåi thuyÒn.",0)
 end;
 
 ------------------------------------------------

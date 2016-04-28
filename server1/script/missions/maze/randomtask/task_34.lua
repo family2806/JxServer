@@ -1,5 +1,5 @@
 -- 34.	ËÄ¸öÖù×Ó£¬Ã¿¸öÖù×ÓÖÜÎ§ÓĞ4¸öĞ¡¹Ö£¬Öù×ÓÖÜÎ§µÄĞ¡¹ÖîÚÁúµÜ×ÓÉ±ËÀºó¿ÉÒÔ¿ªÖù×Ó£¨3Ãë½ø¶ÈÌõ£©£¬Öù×ÓµÄÃû×ÖÊÇÒ»¸ö×Ö£¬
--- 4¸öÖù×ÓµÄÃû×Ö¼ÓÆğÀ´ÊÇÒ»¸ö´ÊÓï£¬Òª°´ÕÕË³Ğò¿ªÆô²ÅÄÜ¹ı¹Ø£¬·ñÔò¾Í»áÕĞ³öºÜÄÑ´òµÄBOSSÁõ¿¥£¬´òËÀBOSS»òÕß°´Ë³Ğò¿ªÖù×Ó¹ı¹Ø
+-- 4¸öÖù×ÓµÄÃû×Ö¼ÓKhëiÀ´ÊÇÒ»¸ö´ÊÓï£¬Òª°´ÕÕË³Ğò¿ªÆô²ÅÄÜ¹ı¹Ø£¬·ñÔò¾Í»áÕĞ³öºÜÄÑ´òµÄBOSSÁõ¿¥£¬´òËÀBOSS»òÕß°´Ë³Ğò¿ªÖù×Ó¹ı¹Ø
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -10,10 +10,10 @@ Include("\\script\\global\\playerlist.lua")
 pTask = Task:New(34)
 
 tbTASK34_IDIOM = {
-	{"½£", "ÏÀ", "Çé", "Ôµ"},
-	{"·ç", "ÔÆ", "ÔÙ", "Æğ"},
-	{"½­", "ºş", "ºÀ", "½Ü"},
-	{"½í", "àş", "Ó¢", "ĞÛ"},
+	{"KiÕm ", "<<Î´·­Òë>>", "<<Î´·­Òë>>", "<<Î´·­Òë>>"},
+	{"Phong ", "V©n", "t¸i ", "Khëi"},
+	{"Giang", "Hå", "Hµo", "kiÖt "},
+	{"C©n", "qu¾c ", "Anh", "<<Î´·­Òë>>"},
 }
 
 function pTask:OnStart()
@@ -30,7 +30,7 @@ function pTask:OnStart()
 	end
 	self.m_Monsters = {}
 	for i = 1, 16 do
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúµÜ×Ó", 1654, mapid, pos_monster[i].x, pos_monster[i].y, self, i, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long §Ö Tö", 1654, mapid, pos_monster[i].x, pos_monster[i].y, self, i, 1, 1)
 		tinsert(self.m_Monsters, nNpcIndex)
 	end
 	self.m_BarId = 0
@@ -65,7 +65,7 @@ function pTask:Say(player, nIndex)
 	if (self.m_BarId > 0) then
 		return
 	end
-	self.m_BarId = ProgressBarList:Open("´ò¿ª", player, 3, self, nIndex)
+	self.m_BarId = ProgressBarList:Open("§ang më", player, 3, self, nIndex)
 end
 
 function pTask:OnDeath(nKilledIndex, pPlayer, nIndex)
@@ -88,7 +88,7 @@ function pTask:OnProgressbarTimeout(nId, nIndex)
 	elseif (self.m_BossIndex == 0) then
 		local mapid = self:GetMapId()
 		local pos = self:GetPosition().t34_boss
-		self.m_BossIndex = FightNpcManager:AddNpc("Áõ¿¡", 1655, mapid, pos.x, pos.y, self, 0, 1, 1)
+		self.m_BossIndex = FightNpcManager:AddNpc("L­u TuÊn", 1655, mapid, pos.x, pos.y, self, 0, 1, 1)
 	end
 end
 

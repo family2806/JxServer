@@ -4,7 +4,7 @@ TASKTMPID_MEDAL_ANSWER = 155;		--ÁÙÊ±ÈÎÎñ±äÁ¿ID of µ±Ç°»á»°Íæ¼ÒËùÑ¡½±ÅÆÊýÄ¿½á¹û 
 --TASKID_MEDAL_ANSWER = 2004;			--ÈÎÎñ±äÁ¿ID of ¡£¡£¡£ (test)
 METALCHOOSE_ID = 1000;
 
-aryszMedalRank = { "½ðÅÆ", "ÒøÅÆ", "Í­ÅÆ" };
+aryszMedalRank = { " kim bµi ", "Ng©n bµi ", "§ång bµi " };
 
 function onMedalmain()	
 	SetTaskTemp( TASKTMPID_MEDAL_ANSWER, 0 );
@@ -18,11 +18,11 @@ function showMedalRange()
 	local szMedalRank = aryszMedalRank[ GetTaskTemp( TASKTMPID_MEDAL_RANK ) ];
 		
 	for i = 1, nRangeCount do
-		aryszRange[ i ] = ( i - 1 ) * 10 .. "-".. ( i - 1 ) * 10 + 9 .. "Ã¶/onRangeSelect";
+		aryszRange[ i ] = ( i - 1 ) * 10 .. "-".. ( i - 1 ) * 10 + 9 .. "mai/onRangeSelect";
 	end
-	aryszRange[ nRangeCount + 1 ] = "ÍË³ö/onCancel";	
+	aryszRange[ nRangeCount + 1 ] = "Hñy/onCancel";	
 	
-	Say( szMedalRank.."Êý·¶Î§:", nRangeCount + 1, aryszRange );
+	Say( szMedalRank.."§Õn:", nRangeCount + 1, aryszRange );
 end
 
 function onRangeSelect( nSel )
@@ -30,12 +30,12 @@ function onRangeSelect( nSel )
 	local nMedalRank = GetTaskTemp( TASKTMPID_MEDAL_RANK );
 	
 	for i = 1, 10 do
-		aryszNumber[i] = ( nSel * 10 + i - 1 ).."Ã¶/onNumberSelect";
+		aryszNumber[i] = ( nSel * 10 + i - 1 ).."mai/onNumberSelect";
 	end
-	aryszNumber[ 11 ] = "·µ»Ø/showMedalRange";
+	aryszNumber[ 11 ] = " trë vÒ /showMedalRange";
 	
 	SetTaskTemp( TASKTMPID_MEDAL_RANGE, nSel );
-	Say( aryszMedalRank[ nMedalRank ].."Êý:", 11, aryszNumber );
+	Say( aryszMedalRank[ nMedalRank ].." ®Õm :", 11, aryszNumber );
 end
 
 function onNumberSelect( nSel )
@@ -55,15 +55,15 @@ end
 
 function confirm()
 	local nRankCount = getn( aryszMedalRank );
-	local szConfirmInfo = "ÄãÑ¡ÔñÁË";
+	local szConfirmInfo = " ng­¬i lùa chän ";
 	local nMedalAnswer = GetTaskTemp( TASKTMPID_MEDAL_ANSWER );
 	
 	for i = 1, nRankCount do
-		szConfirmInfo = szConfirmInfo..GetByte( nMedalAnswer, i ).."Ã¶"..aryszMedalRank[i];
+		szConfirmInfo = szConfirmInfo..GetByte( nMedalAnswer, i ).." mai "..aryszMedalRank[i];
 	end
-	szConfirmInfo = szConfirmInfo..",¹ºÂò²ÊÆ±£¿";
+	szConfirmInfo = szConfirmInfo..", mua vÐ sè ? ";
 	
-	Say( szConfirmInfo, 2, "È·¶¨/onSubmit", "È¡Ïû/onCancel" );
+	Say( szConfirmInfo, 2, "X¸c ®Þnh /onSubmit", "Hñy bá /onCancel" );
 end
 
 function onSubmit()
@@ -77,10 +77,10 @@ function onSubmit()
 			SyncItem(nItem)
 		else
 			Earn(5000);
-			Say("¶Ô²»Æð£¬¸ÃÀà²ÊÆ±Ä¿Ç°ÒÑÎÞ·¨ÔÙ¹ºÂòÁË¡£", 0)
+			Say("ThËt xin lçi , nªn lo¹i vÐ sè tr­íc m¾t ®· mÊt ph¸p n÷a mua . ", 0)
 		end;
 	else
-		Say("¶Ô²»Æð£¬Äã±ØÐëÖ§¸¶5000Á½¹ºÂò²ÊÆ±£¡", 0)
+		Say("ThËt xin lçi , ng­¬i nhÊt ®Þnh ph¶i tr¶ 5000 hai mua vÐ sè ", 0)
 	end
 end
 

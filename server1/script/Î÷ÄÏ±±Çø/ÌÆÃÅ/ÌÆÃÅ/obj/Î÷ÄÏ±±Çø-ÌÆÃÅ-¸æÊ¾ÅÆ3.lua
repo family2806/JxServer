@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("ÎŞĞÄÓÄ¹È", 0);
+Say("V« T©m Cèc", 0);
 
 end;

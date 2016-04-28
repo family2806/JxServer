@@ -12,26 +12,26 @@ function tbBeatTiger:OnUse(nItemIndex)
 	-- »î¶¯½áÊø
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	if  nDate >= self.nFlowerDisappearDate then
-		Msg2Player("Á«»¨»á±ä¸ÉÒòÎª´æÔÚÊ±¼äÌ«³¤");
+		Msg2Player("Hoa sen c¹n bŞ h­ v× thêi gian tån t¹i qu¸ l©u");
 		return 0;
 	end
 	
 	-- µÈ¼¶²»¹»
 	if GetLevel() < self.nLimit_Level then
-		CreateTaskSay({"¸÷Î»µÄµÈ¼¶²»¹»!",  "¿ÉÒÔ!/Cancel",});
+		CreateTaskSay({"§¼ng cÊp cña c¸c h¹ kh«ng ®ñ!",  "§­îc!/Cancel",});
 		return 1;
 	end 
 	
 	-- Ã»ÓĞ³äÖµ
 	if GetExtPoint(0) <= 0  then
-		CreateTaskSay({"Ö»ÓĞ³äÖµÍæ¼Ò²Å¿ÉÒÔÊ¹ÓÃ!",  "¿ÉÒÔ!/Cancel",});
+		CreateTaskSay({"ChØ cã ng­êi ch¬i nép thÎ míi cã thÓ sö dông!",  "§­îc!/Cancel",});
 		return 1;	
 	end
 	
 	-- ³¬¹ıÊ¹ÓÃÏŞÖÆ
 	local nUseCount = self.tbTaskGroup:GetTask(self.nTaskID_UseCount);
 	if nUseCount >= self.nLimit_UseCount then
-		CreateTaskSay({"³¬¹ı»î¶¯×¼ĞíµÄ¾­ÑéÁìÈ¡½çÏŞ",  "¿ÉÒÔ!/Cancel",});
+		CreateTaskSay({"V­ît qu¸ giíi h¹n nhËn ®­îc kinh nghiÖm cho phĞp cña ho¹t ®éng",  "§­îc!/Cancel",});
 		return 1;		
 	end
 	
@@ -40,6 +40,6 @@ function tbBeatTiger:OnUse(nItemIndex)
 	
 	-- ·¢·Å¾­Ñé
 	local tbAwardItem = {nExp = self.nLimit_ExpAward};
-	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Ê¹ÓÃ¸ÉÁ«»¨");
+	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Sö dông hoa sen c¹n");
 	return 0;
 end

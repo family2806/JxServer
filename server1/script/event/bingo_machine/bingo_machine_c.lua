@@ -9,9 +9,9 @@ Include("\\script\\script_protocol\\protocol_def_c.lua")
 
 function BingoMachine:RecvResult(nResult, nRefiningCount, nType, nLevel)
 	if nResult == ROTATE_ERROR_STATUS then
-		Msg2Player("Äú»¹Î´ÁìÉÍ²»ÄÜ½»±£Ö¤½ð")
+		Msg2Player("Ng­¬i vÉn ch­a lÜnh th­ëng kh«ng thÓ ®Æt c­îc")
 	elseif nResult == ROTATE_ERROR_PRINING then
-		Msg2Player("ÄúµÄ»ìÔªÁéÂ¶²»¹»")
+		Msg2Player("Hçn Nguyªn Linh Lé cña ng­¬i kh«ng ®ñ")
 	end
 	ResultAwardInfo(nResult, nRefiningCount, nType, nLevel);
 end

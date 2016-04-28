@@ -3,7 +3,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "ServerStart",
-	szName = "¿ªÍ·",
+	szName = "Sù khëi ®Çu",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -20,26 +20,26 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "ClickNpc",
-	szName = "²ÆÉñ¶Ô»°",
+	szName = "§èi tho¹i thÇn tµi",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"²ÆÉñ"},
+	tbMessageParam = {"ThÇn Tµi"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"¿´´Ë´ÎÈü³Ì",3} },
-		{"AddDialogOpt",	{"¿´ÉÏ´ÎÐÒÔËºÅ",4} },
-		{"AddDialogOpt",	{"Áì½±",5} },
-		{"SetDialogTitle",	{"<npc>¸»¹ó½õÄÒ"} },
+		{"AddDialogOpt",	{"Xem vßng thi nµy",3} },
+		{"AddDialogOpt",	{"Xem con sè may m¾n lÇn tr­íc",4} },
+		{"AddDialogOpt",	{"NhËn l·nh phÇn th­ëng",5} },
+		{"SetDialogTitle",	{"<npc>Phó Quý CÈm H¹p"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "nil",
-	szName = "¿´´Ë´ÎÈü³Ì",
+	szName = "Xem vßng thi nµy",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -56,7 +56,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "nil",
-	szName = "¿´ÉÏ´ÎÐÒÔËºÅ",
+	szName = "Xem con sè may m¾n lÇn tr­íc",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -73,7 +73,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "nil",
-	szName = "Áì½±",
+	szName = "NhËn l·nh phÇn th­ëng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

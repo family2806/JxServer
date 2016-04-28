@@ -16,7 +16,7 @@ function PickUp(nItemIndex, nPlayerIndex)
 		naddrate = naddrate + tb_JXAN_RESOURCERATE[i][3];
 		if (naddrate >= nrand) then
 			AddItem(tb_JXAN_RESOURCERATE[i][1][1],tb_JXAN_RESOURCERATE[i][1][2],tb_JXAN_RESOURCERATE[i][1][3],1,1,1);
-			Msg2Player("你获得了一个"..tb_JXAN_RESOURCERATE[i][2]);
+			Msg2Player("B筺 nh薾 頲 m閠"..tb_JXAN_RESOURCERATE[i][2]);
 			break
 		end;
 	end;
@@ -26,7 +26,7 @@ function IsPickable(nItemIndex, nPlayerIndex)
 	--活动期结束拾取物品不再有效
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"));
 	if (nCurDate > JXANNIVERSARY3_ENDDATE) then
-		Say("本次活动已经结束，谢谢您的参与！", 0);
+		Say("Ho箃 ng l莕 n祔  k誸 th骳!", 0);
 		return 1;
 	end;
 

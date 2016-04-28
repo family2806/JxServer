@@ -34,7 +34,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"ËÎ½ð1000"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"TongKim1000"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -52,7 +52,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,30,EVENT_LOG_TITLE,"ËÎ½ð3000"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,30,EVENT_LOG_TITLE,"TongKim3000"} },
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -69,7 +69,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"´©¹ý°¯¿Ú17"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"VuotAi17"} },
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -86,7 +86,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"´©¹ý°¯¿Ú28"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"VuotAi28"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -104,7 +104,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"ÏûÃðË®ÔôÍ·Áì"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -122,7 +122,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,20,EVENT_LOG_TITLE,"ÏûÃðË®ÔôÍ·Áì"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -139,7 +139,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,15,EVENT_LOG_TITLE,"Ñ×µÛ´³¹Ø6"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,15,EVENT_LOG_TITLE,"VuotAiViemDe6"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -157,7 +157,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,30,EVENT_LOG_TITLE,"ÏûÃðÊÀ½çBoss"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,30,EVENT_LOG_TITLE,"TieuDietBossTheGioi"} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
@@ -175,7 +175,7 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,3,EVENT_LOG_TITLE,"ÏûÃðÉ±ÊÖBoss"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,3,EVENT_LOG_TITLE,"TieuDietBossSatThu"} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
@@ -185,17 +185,17 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	szName = "ClickNpc_QiuYun",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÇïÔÆ"},
+	tbMessageParam = {"Thu V©n"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"½éÉÜ»î¶¯",23} },
-		{"AddDialogOpt",	{"ºÏ³Éºì»¨·ï",12} },
-		{"AddDialogOpt",	{"ºÏ³É°×»¨·ï",13} },
-		{"AddDialogOpt",	{"ºÏ³É×Ï»¨·ï",14} },
-		{"SetDialogTitle",	{"<npc>3/5/2012 µ½ 24:00/31/52012,  ¸÷Î»´óÏÀ¿ÉÒÔµ½ÎÒµÄµØ·½Ê¹ÓÃÖÖ×Ó£¬Ôö³¤Ò©´ü£¬Ë®Æ¿£¬ÓÐÉ«ÎïÆ·À´ºÏ³É¸÷ÖÖ»¨·ïÀ´»»È¡½±Æ·."} },
+		{"AddDialogOpt",	{"Giíi thiÖu ho¹t ®éng",23} },
+		{"AddDialogOpt",	{"Hîp thµnh Hoa Ph­îng §á",12} },
+		{"AddDialogOpt",	{"Hîp thµnh Hoa Ph­îng Tr¾ng",13} },
+		{"AddDialogOpt",	{"Hîp thµnh Hoa Ph­îng TÝm",14} },
+		{"SetDialogTitle",	{"<npc>3/5/2012 ®Õn 24:00/31/52012, c¸c ch­ vÞ ®¹i hiÖp cã thÓ ®Õn chç cña t«i sö dông H¹t MÇm, Tói Thuèc T¨ng Tr­ëng, B×nh N­íc, PhÈm Mµu S¾c ®Ó hîp thµnh c¸c lo¹i Hoa Ph­îng ®Ó ®æi lÊy phÇn th­ëng."} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -300,7 +300,7 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"lib:CheckDay",	{20120503, 20120601, szOUT_OF_DATE} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"×°±¸×îÉÙÊ£Ò»¸ö¿ÕÎ»"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang Ýt nhÊt cßn 1 chç trèng"} },
 		{"ThisActivity:CheckTask",	{TSK_2_FLOWER_COUNT,N_MAX_2_FLOWER,szCANT_USE,"<"} },
 	},
 	tbActition = 
@@ -321,7 +321,7 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:AddDialogNpc",	{"ÇïÔÆ",1907,{{11,3182,4951}}} },
+		{"NpcFunLib:AddDialogNpc",	{"Thu V©n",1907,{{11,3182,4951}}} },
 	},
 }
 tbConfig[19] = --Ò»¸öÏ¸½Ú
@@ -331,13 +331,13 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	szName = "ClickNpc_LingFan",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÉÌµê"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÂòÔö³¤Ò©´ü",20} },
+		{"AddDialogOpt",	{"Mua Tói Thuèc T¨ng Tr­ëng",20} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
@@ -347,11 +347,11 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 	szName = "Buy_NongYao",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ôö³¤Ò©´ü",1,1,1,0.02},
+	tbMessageParam = {"Tói Thuèc T¨ng Tr­ëng",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"×°±¸×îÉÙÊ£Ò»¸ö¿ÕÎ»"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang Ýt nhÊt cßn 1 chç trèng"} },
 		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=10000},1} },
 	},
 	tbActition = 
@@ -371,7 +371,7 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"lib:CheckDay",	{20120503, 20120601, szOUT_OF_DATE} },
-		{"PlayerFunLib:CheckFreeBagCell",	{2,"×°±¸¿ÕÎ»²»×ã£¬ÇëÅÅºÃ×îÉÙÊ£Á½¸ö¿ÕÎ»"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{2,"Kh«ng gian hµnh trang kh«ng ®ñ chç trèng, xin h·y s¾p xÕp l¹i Ýt nhÊt cßn hai chç trèng trong hµnh trang"} },
 	},
 	tbActition = 
 	{
@@ -390,7 +390,7 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"lib:CheckDay",	{20120503, 20120601, szOUT_OF_DATE} },
-		{"PlayerFunLib:CheckFreeBagCell",	{2,"×°±¸¿ÕÎ»²»×ã£¬ÇëÅÅºÃ×îÉÙÊ£Á½¸ö¿ÕÎ»"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{2,"Kh«ng gian hµnh trang kh«ng ®ñ chç trèng, xin h·y s¾p xÕp l¹i Ýt nhÊt cßn hai chç trèng trong hµnh trang"} },
 	},
 	tbActition = 
 	{
@@ -404,7 +404,7 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	szName = "nil",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>ÖÖ×Ó¿ÉÒÔÔÚÄª¸ß¿ß¡¢³¤°×É½ÄÏ¡¢³¤°×É½±±¡¢É³Ä®1¡¢É³Ä®2¡¢É³Ä®3¡¢ÂãÀÇ¶´ÕÒµ½£¬Ôö³¤Ò©´ü¿ÉÒÔÔÚÉÌµêÀïÕÒµ½£¬Ë®Æ¿¿ÉÒÔÍ¨¹ý²Î¼ÓËÎ½ð¡¢´³¹Ø¡¢·çÁê¶È¡¢Ñ×µÛ¡¢»Æ½ðBoss¡¢É±ÊÖBoss¡£ÓÐÉ«ÎïÆ·ÔÚÆæÕä¸ó£¬´óÏÀÕÒÂúÕâËÄ¼þÎïÆ·£¬¿ÉÒÔµ½ÎÒµÄµØ·½ºÏ³É¸÷ÖÖÓÐÉ«»¨·ïÀ´»»È¡·á¸»µÄ½±Æ·¡£",0},
+	tbMessageParam = {"<npc>H¹t MÇm cã thÓ t×m thÊy t¹i M¹c Cao QuËt, Tr­êng B¹ch S¬n Nam, Tr­êng B¹ch S¬n B¾c, Sa M¹c 1, Sa M¹c 2, Sa M¹c 3, Kháa Lang §éng, Tói Thuèc T¨ng Tr­ëng cã thÓ t×m thÊy t¹i Hµng Rong, B×nh N­íc cã thÓ th«ng qua tham gia Tèng Kim, V­ît ¶i, Phong L¨ng §é, Viªm §Õ, Boss Hoµng Kim, Boss S¸t Thñ. PhÈm Mµu S¾c cã t¹i Kú Tr©n C¸c, khi ®¹i hiÖp t×m ®ñ 4 lo¹i vËt phÈm nµy cã thÓ ®Õn chç cña ta ®©y hîp thµnh c¸c lo¹i Hoa Ph­îng s¾c mµu ®Ó ®æi phÇn th­ëng phong phó",0},
 	tbCondition = 
 	{
 	},

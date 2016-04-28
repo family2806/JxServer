@@ -25,7 +25,7 @@ function main()
 	SetTask(300, M);
 	SetTask(301, X);
 	SetTask(302, Y);
-	Say("ÄãÏë½øÈëÈü³¡ÌôÕ½Âğ?", 9, "¶·³¡1/EnterBattle", "¶·³¡2 /EnterBattle", "¶·³¡3 /EnterBattle", "¶·³¡4 /EnterBattle", "¶·³¡5 /EnterBattle", "¶·³¡6 /EnterBattle", "¶·³¡7 /EnterBattle", "¶·³¡8 /EnterBattle","²»È¥/OnCancel");
+	Say("Ng­¬i muèn vµo ®Êu tr­êng khiªu chiÕn µ?", 9, "§Êu tr­êng 1 /EnterBattle", "§Êu tr­êng 2 /EnterBattle", "§Êu tr­êng 3 /EnterBattle", "§Êu tr­êng 4 /EnterBattle", "§Êu tr­êng 5 /EnterBattle", "§Êu tr­êng 6 /EnterBattle", "§Êu tr­êng 7 /EnterBattle", "§Êu tr­êng 8 /EnterBattle","Kh«ng ®i n÷a/OnCancel");
 end;
 
 function EnterBattle(nBattleId)
@@ -34,7 +34,7 @@ function EnterBattle(nBattleId)
 end;
 
 function OnHelp()
-	Talk(8, "",   "°ï»áÀŞÌ¨ÊÇ½­ºşÉÏ¸ö°ï»áÖ®¼äÇĞ´èÎäÒÕµÄµØ·½£¡ÕâÊÇÒ»¸ö¹«Æ½¾ºÕùµÄÎèÌ¨", "ÏëÒª²Î¼Ó°ï»áÀŞÌ¨£¬ÒªÏÈÀ´ÏòÎÒÉêÇë£¡ÉêÇëÈËÓ¦¸ÃÊÇ±ÈÈü°ï»áµÄ°ïÖ÷£¡", "×é¶ÓÖ®ºóË«·½¶Ó³¤ÒªÀ´±¨Ãû¡£Ë«·½°ïÖ÷Ã¿ÈËÒª½»IÇ§ÍòÁ½¶¨½ğ¡£", "½»ÁË¶¨½ğÖ®ºó£¬±ÈÈüÉêÇë¾ÍÍê³ÉÁË¡£ÔÚ2¸ö°à»á±ÈÈüÆÚ¼ä²»ÄÜ±¨Ãû", "ÉêÇë³É¹¦£¬Ë«·½¶ÓÔ±ÓĞ10·ÖÖÓ¼ÓÈë±ÈÈü¡£Ö®ºó±ÈÈü½«ÕıÊ½¿ªÊ¼!","Ê¤¸º½«¼ÆÈëË«·½µÄ±ÈÈü»ı·Ö¡£Ã¿Î»°ï»á³ÉÔ±½«¶Ô·½´òÖØÉËµÄ½«ÓĞ3¸ö»ı·Ö£¬¶Ô·½±»¿Û³ı1¸ö»ı·Ö", "±ÈÈü½áÊø£¬»ı·Ö¸ßµÄ°ï»á½«È¡µÃÊ¤Àû£¡", "´ËÍâ£¬±ÈÈüÖĞÓĞÒ»±ßÃ»ÓĞ³ÉÔ±ÔÙ±ÈÈüÔòÊ¤ÀûÊôÓÚÁíÍâÒ»±ß" ,"Ê¤ÀûµÄ°ï»á½«¿ÉÒÔÊÕ»ØÒÑ½ÉÄÉµÄ1Ç§ÍòÁ½£¬´ËÍâ£¬»¹¿ÉÒÔµÃµ½800ÍòÁ½µÄ½±ÀøºÍ1Íò2Ç§µã°ï»á¾­Ñé¡£Ê§°ÜµÄ°ï»á²»ÄÜÁì»ØÒÑ½ÉÄÉµÄ·ÑÓÃ£¬»¹Òª¿Û³ı1Íò4Ç§µã°ï»á¾­Ñé");
+	Talk(8, "",   "L«i ®µi bang héi lµ n¬i häc hái vâ nghÖ gi÷a c¸c bang héi trªn giang hå! §©y sÏ lµ n¬i thi ®Êu c«ng b»ng", "Muèn tham gia L«i ®µi bang héi, tr­íc hÕt ph¶i gÆp ta ®Ó xin phĞp! Ng­êi xin phĞp ph¶i lµ bang chñ cña bang héi thi ®Êu!", "Sau khi tæ ®éi, ®éi tr­ëng 2 bªn sÏ ®Õn b¸o danh. Bang chñ hai bªn  mçi ng­êi ph¶i ®Æt c­îc thi ®Êu 1000 v¹n l­îng. ", "Sau khi ®Æt c­îc xong, xin phĞp thi ®Êu ®· hoµn thµnh. Trong lóc cã 2 bang héi kh¸c ®ang thi ®Êu, kh«ng cho phĞp b¸o danh", "Xin phĞp thµnh c«ng xong, thµnh viªn cña hai bang héi cã10 phót gia nhËp ®Êu tr­êng. Sau ®ã thi ®Êu sÏ chİnh thøc b¾t ®Çu!","Th¾ng b¹i phô thuéc vµo ®iÓm tİch lòy thi ®Êu cña hai bªn. Mçi thµnh viªn bang héi lµm träng th­¬ng ®èi ph­¬ng sÏ ®­îc 3 ®iÓm, ®èi ph­¬ng bŞ trõ 1 ®iÓm", "KÕt thóc thi ®Êu, bang héi nµo tİch lòy ®iÓm cao h¬n sÏ giµnh th¾ng lîi!", "Ngoµi ra, trong lóc thi ®Êu mét bªn nµo kh«ng cßn thµnh viªn nµo ë l¹i ®Êu tr­êng th× th¾ng lîi sÏ thuéc vÒ bªn kia. " ,"Bang héi chiÕn th¾ng cã thÓ thu håi 1000 v¹n l­îng ®· ®ãng, ngoµi ra cßn ®­îc 800 v¹n l­îng tiÒn th­ëng vµ 12.000 ®iÓm kinh nghiÖm bang héi. Bang héi thua cuéc sÏ kh«ng lÊy l¹i ®­îc tiÒn ®· ®ãng, mµ cßn bŞ trõ 14.000 ®iÓm kinh nghiÖm bang héi");
 end;
 
 function OnCancel()

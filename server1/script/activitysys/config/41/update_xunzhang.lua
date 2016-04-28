@@ -6,26 +6,26 @@ Include("\\script\\lib\\log.lua")
 Include("\\script\\lib\\progressbar.lua")
 
 tbMaterial_Medal = {
-	[1]={szName="1¼¶»ÕºÅ",tbProp={6,1,3133,1,0,0},nExpiredTime=20120501,nCount=2,},
-	[2]={szName="2¼¶»ÕºÅ",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,nCount=1,},
+	[1]={szName="Huy HiÖu cÊp 1",tbProp={6,1,3133,1,0,0},nExpiredTime=20120501,nCount=2,},
+	[2]={szName="Huy HiÖu cÊp 2",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,nCount=1,},
 	}
-tbMaterial_Shijin = {szName="Ê¯½ð",tbProp={6,1,3136,1,0,0},nExpiredTime=20120501,nCount=1,}
+tbMaterial_Shijin = {szName="Th¹ch Kim",tbProp={6,1,3136,1,0,0},nExpiredTime=20120501,nCount=1,}
 	
 tbProduct = {
-	[1] = {szName=" 2¼¶»ÕºÅ",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,},
-	[2] = {szName=" 3¼¶»ÕºÅ",tbProp={6,1,3135,1,0,0},nExpiredTime=20120501,}
+	[1] = {szName="Huy HiÖu cÊp 2",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,},
+	[2] = {szName="Huy HiÖu cÊp 3",tbProp={6,1,3135,1,0,0},nExpiredTime=20120501,}
 	}
 
 tbMedalLevelUpRate = {50,35 }	
 
 tbMedalLog = {
 	[1] = {
-		szSuccess = "Éý¼¶³É¹¦2¼¶»ÕºÅ",
-		szFail = "Éý¼¶Ê§°Ü2¼¶»ÕºÅ",
+		szSuccess = "NangcapThanhCongHuyHieuCap2",
+		szFail = "NangcapThatBaiHuyHieuCap2",
 		},
 	[2] = {
-		szSuccess = "Éý¼¶³É¹¦3¼¶»ÕºÅ",
-		szFail = "Éý¼¶Ê§°Ü3¼¶»ÕºÅ",
+		szSuccess = "NangcapThanhCongHuyHieuCap3",
+		szFail = "NangcapThatBaiHuyHieuCap3",
 		},
 	}
 
@@ -40,12 +40,12 @@ function tbUpdateXunZhang:ComposeDailog()
 	local tbMaterial = self.tbFormula.tbMaterial
 	local tbProduct = self.tbFormula.tbProduct
 	
-	local szComposeTitle = self.tbFormula.szComposeTitle or format("»» %s", tbProduct.szName)
+	local szComposeTitle = self.tbFormula.szComposeTitle or format("§æi %s", tbProduct.szName)
 	
-	local szMsg = format("%s ÒªÇó: <enter>%s", szComposeTitle ,self:GetMaterialList(tbMaterial))
+	local szMsg = format("%s yªu cÇu: <enter>%s", szComposeTitle ,self:GetMaterialList(tbMaterial))
 	local tbOpt = {}
-	tbOpt[1] = {"È·ÈÏ", self.OpenProgressBar, {self}}
-	tbOpt[2] = {"·ÅÆú"}
+	tbOpt[1] = {"X¸c nhËn", self.OpenProgressBar, {self}}
+	tbOpt[2] = {"Hñy bá "}
 	CreateNewSayEx(szMsg, tbOpt)
 	
 end
@@ -55,7 +55,7 @@ function tbUpdateXunZhang:OpenProgressBar()
 	local tbMaterial	= self.tbFormula.tbMaterial
 	local nComposeCount = 1
 	if self:CheckMaterial(tbMaterial, nComposeCount) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÔ­ÁÏ²»×ãÁË!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
@@ -95,26 +95,26 @@ function tbUpdateXunZhang:Compose()
 	nFreeItemCellLimit = ceil(nFreeItemCellLimit * nComposeCount)
 	
 	if self.tbFormula.nWidth ~= 0 and self.tbFormula.nHeight ~= 0 and CountFreeRoomByWH(self.tbFormula.nWidth, self.tbFormula.nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("ÎªÁËÈ·±£´óÏÀµÄ²Æ²ú°²È«£¬ÇëÁô¿Õ%d %dx%d ×°±¸", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
 		return 0
 	end
 	if self:CheckMaterial(tbMaterial, nComposeCount) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀËù´øÔ­ÁÏ²»×ãÁË!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
 	if self:ConsumeMaterial(tbMaterial, nComposeCount, self.szLogTitle) ~= 1 then
-		Msg2Player("ÖÆÔìÊ§°Ü£¬Ê§È¥Ò»Ð©Ô­ÁÏ.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	local bSuccess = self:CanCompose()
 	if bSuccess == 0 then
 		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, self.tbFormula.tbLog.szFail)
-		Msg2Player("ÕæÒÅº¶£¬Éý¼¶Ê§°Ü")
+		Msg2Player("ThËt ®¸ng tiÕc, n©ng cÊp thÊt b¹i")
 		return 0
 	else
 		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, self.tbFormula.tbLog.szSuccess)
-		Msg2Player("¹§Ï²£¬Éý¼¶³É¹¦")
+		Msg2Player("Chóc mõng, n©ng cÊp thµnh c«ng")
 	end
 	
 	if type(tbProduct) == "table" then

@@ -3,9 +3,9 @@
 
 function main(sel)
 	if (GetCurCamp() == 2) then
-		Say("²»ÅÂÎşÉüµÄ±ø²ÅÊÇºÃ±ø£¬³öÃÅ´òÕÌÒª±£ÖØÉíÌå£¬ÂòµãÒ©Âğ£¿", 2, "ÂòÒ©/yes", "²»Âò/no")
+		Say("Tham gia trËn chiÕn h·y tù ch¨m sãc b¶n th©n, mua thuèc kh«ng?", 2, "Mua thuèc/yes", "Kh«ng mua/no")
 	else
-		Talk(1,"","ÄÄÀ´µÄ¼éÏ¸£¡ÎÀ±ø¿ì°Ñ´ËÈËÄÃÏÂ£¡")
+		Talk(1,"","Gi¸n ®iÖp ®©y ­? VÖ binh ®©u råi!")
 	end
 end;
 

@@ -10,6 +10,6 @@ function main()
 			return 0
 		end
 	end
-	Msg2Player("²»ÄÜÔÚ´ËÊ¹ÓÃ¸ÃÎïÆ·.")
+	Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
 	return 1
 end

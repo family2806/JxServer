@@ -8,9 +8,9 @@ function tmnpc13_Default()
 UTask_tm = GetTask(2);
 
 if (UTask_tm == 56) then  
-	Say("ÈıÊ¦ĞÖ¿ÉÄÜÈ¥ÁË<color=Red>ÏìË®¶´<color>, ÌıËµËûÔÚÄÇÀïÓĞĞ©ÅóÓÑ.", 0)
+	Say("Tam s­ huynh cã thÓ ®i <color=Red>H­ëng Thñy ®éng<color>, nghe nãi cã vµi ng­êi b¹n cña huynh ë ®ã.", 0)
 else
-	Say("ÎÒ¸¸Ä¸ÔçÊÅ£¬ÊÇ¾Ë¾Ë°ÑÎÒÑø´óµÄ£¬ËûÊÇÎÒ×îÇ×µÄÈË.", 0)
+	Say("Cha mÑ ta mÊt sím, nhê ng­êi cËu nu«i nÊng nªn ng­êi, cËu lµ ng­êi th©n thuéc nhÊt cña ta.", 0)
 end
 
 end;

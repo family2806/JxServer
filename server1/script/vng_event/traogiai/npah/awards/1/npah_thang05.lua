@@ -5,7 +5,7 @@ Include("\\script\\vng_event\\traogiai\\NPAH\\vng_ToolAward.lua")
 tbCurSeason = tbAwardClass:New()
 tbCurSeason.nStartDate = 201106130000
 tbCurSeason.nEndDate = 201106200000
-tbCurSeason.strName = "ÁìÈ¡5ÔÂÒ»·½Ó¢ºÀ½±Àø"
+tbCurSeason.strName = "NhËn th­ëng NhÊt Ph­¬ng Anh Hµo th¸ng 5"
 tbCurSeason.nID = 1
 tbCurSeason.tbAccList = {
 	["calocxu50"]= {[1]={{ nAwardID = 1, nCount = 1},{ nAwardID = 10, nCount = 8},},},
@@ -150,17 +150,17 @@ tbCurSeason.tbAccList = {
 	["nguyennhuquynh"]= {[1]={{ nAwardID = 10, nCount = 20},},},	
 }
 tbCurSeason.tbPrizeList = {
-	[1] = {szName="×Ïòþ¿øÍ¼Æ×",tbProp={6,1,2714,1,0,0},nCount=1},
-	[2] = 	{szName="×ÏòþÒÂÍ¼Æ×",tbProp={6,1,2715,1,0,0},nCount=1},
-	[3] = {szName="×ÏòþÐ¬Í¼Æ×",tbProp={6,1,2716,1,0,0},nCount=1},
-	[4] = {szName="×ÏòþÑü´øÍ¼Æ×",tbProp={6,1,2717,1,0,0},nCount=1},
-	[5] = {szName="×Ïòþ»¤ÍóÍ¼Æ×",tbProp={6,1,2718,1,0,0},nCount=1},
-	[6] = {szName="×ÏÃ§ÓñÅåÍ¼Æ×",tbProp={6,1,2720,1,0,0},nCount=1},
-	[7] = {szName="×ÏòþÉÏ½äÖ¸Í¼Æ×",tbProp={6,1,2721,1,0,0},nCount=1},
-	[8] = {szName="×ÏòþÏÂ½äÖ¸Í¼Æ×",tbProp={6,1,2722,1,0,0},nCount=1},
-	[9] = {szName="×ÏòþÆ÷ÐµÍ¼Æ×",tbProp={6,1,2723,1,0,0},nCount=1},
-	[10] = {szName="ºì°ü¾ãÀÖ²¿",tbProp={6,1,30032,1,0,0},nCount=1, nExpiredTime= 43200},
-	[11] = {szName="¾«Á¶Ê¯Öµ",nVngEnergy = 1,nCount=1},
+	[1] = {szName="§å Phæ Tö M·ng Kh«i",tbProp={6,1,2714,1,0,0},nCount=1},
+	[2] = 	{szName="§å Phæ Tö M·ng Y",tbProp={6,1,2715,1,0,0},nCount=1},
+	[3] = {szName="§å Phæ Tö M·ng Hµi",tbProp={6,1,2716,1,0,0},nCount=1},
+	[4] = {szName="§å Phæ Tö M·ng Yªu §¸i",tbProp={6,1,2717,1,0,0},nCount=1},
+	[5] = {szName="§å Phæ Tö M·ng Hé UyÓn",tbProp={6,1,2718,1,0,0},nCount=1},
+	[6] = {szName="§å Phæ Tö M·ng Béi",tbProp={6,1,2720,1,0,0},nCount=1},
+	[7] = {szName="§å Phæ Tö M·ng Th­îng Giíi ChØ",tbProp={6,1,2721,1,0,0},nCount=1},
+	[8] = {szName="§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp={6,1,2722,1,0,0},nCount=1},
+	[9] = {szName="§å Phæ Tö M·ng KhÝ Giíi",tbProp={6,1,2723,1,0,0},nCount=1},
+	[10] = {szName="Hång Bao C©u L¹c Bé",tbProp={6,1,30032,1,0,0},nCount=1, nExpiredTime= 43200},
+	[11] = {szName="§iÓm tinh lùc",nVngEnergy = 1,nCount=1},
 }
 tbCurSeason.tbFreeBagRequire = {
 	[1] = 1,

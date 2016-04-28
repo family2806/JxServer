@@ -26,13 +26,13 @@ function GetDesc(nItem)
 	local n_param = tonumber(GetItemParam( nItem, 1 ))
 	local tbItemName = 
 	{
-		[1] = "×ÏÃ§Í¼Æ×",
-		[2] = "×ÏÃ§½äÖ¸Í¼Æ×",
-		[3] = "×ÏÃ§ÏîÁ´",
-		[4] = "×ÏÃ§ÉÏ½äÖ¸",
-		[5] = "×ÏÃ§ÏÂ½äÖ¸",
-		[6] = "×ÏÃ§Æ÷Ğµ",
+		[1] = "§å phæ Tö M·ng",
+		[2] = "§å phæ Tö M·ng Giíi ChØ",
+		[3] = "Tö M·ng H¹ng Liªn",
+		[4] = "Tö M·ng Th­îng Giíi ChØ",
+		[5] = "Tö M·ng H¹ Giíi ChØ",
+		[6] = "Tö M·ng Khİ Giíi",
 	}
-	szDesc = szDesc..format("\nÉñÃØ´¢Îï±¦Ïä: <color=yellow>%s<color>", tbItemName[n_param]);
+	szDesc = szDesc..format("\nB¶o r­¬ng thÇn bİ chøa vËt phÈm: <color=yellow>%s<color>", tbItemName[n_param]);
 	return szDesc;
 end

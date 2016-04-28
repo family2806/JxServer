@@ -41,43 +41,43 @@ VALENTINE2009_NPC_STEP_WATER_END	= 4			-- ½áÊø½½Ë®
 VALENTINE2009_NPC_STEP_C			= 5			-- ÐÎÌ¬C
 VALENTINE2009_NPC_STEP_D			= 6			-- ÐÎÌ¬D
 
-VALENTINE2009_ITEM_ZHONGZI		= {6, 1, 1927, 1, 0, 0}		-- ÇéÈËÖÖ×Ó
-VALENTINE2009_ITEM_TIANXIAN		= {6, 1, 1928, 1, 0, 0}		-- ÌìÏÉË®
-VALENTINE2009_ITEM_ROSE			= {6, 0, 20  , 1, 0, 0}		-- Ãµ¹å»¨
+VALENTINE2009_ITEM_ZHONGZI		= {6, 1, 1927, 1, 0, 0}		-- C©y t×nh nh©n
+VALENTINE2009_ITEM_TIANXIAN		= {6, 1, 1928, 1, 0, 0}		-- Thiªn Tiªn Thñy
+VALENTINE2009_ITEM_ROSE			= {6, 0, 20  , 1, 0, 0}		-- Hoa Hång
 VALENTINE2009_NPC_ID 			= {1252, 1253, 1254, 1255} 	-- NPCµÄID
 VALENTINE2009_AREA 				= {11,1,37,176,162,78,80,174,121,153,101,99,100,20,53,54,175,55} -- »î¶¯¿ª·ÅµÄµØÍ¼
 
 VALENTINE2009_TALK_MAIN = 
 {
-	"<color=green>20:00µ½21:00<color> ´Ó13-02-2009 µ½15-02-2009, ¸÷Î»ÎäÁÖÈËÊ¿Ã¿Ìì×î¶à¿ÉÁìÈ¡<color=green>9<color> ÇéÈËÖÖ×Ó»òÌìÏÉË®£¬¸÷Î»ÒªÁìÈ¡Âð?",
-	"ÎÒÒªÁìÇéÈËÖÖ×Ó.",
-	"ÎÒÒªÁìÌìÏÉË®.",
-	"ÎÒÖ»ÊÇÂ·¹ý.",
+	"<color=green>20:00 ®Õn 21:00<color> mçi ngµy tõ 13-02-2009 ®Õn 15-02-2009, c¸c vÞ vâ l©m nh©n sü nhËn nhiÒu nhÊt <color=green>9<color> h¹t gièng t×nh yªu hoÆc Thiªn Tiªn Thñy, c¸c h¹ cã muèn nhËn kh«ng?",
+	"Ta muèn nhËn h¹t c©y t×nh nh©n.",
+	"Ta muèn nhËn Thiªn Tiªn Thñy.",
+	"Ta chØ tiÖn ®­êng ®Õn ch¬i.",
 }
 
 VALENTINE2009_TALK_GOODS = 
 {
-	"ÇéÈËÖÖ×Ó",
-	"ÌìÏÉË®",
-	"Ãµ¹å»¨",
+	"C©y t×nh nh©n",
+	"Thiªn Tiªn Thñy",
+	"Hoa Hång",
 }
 
-VALENTINE2009_TALK_TREENAME			= "ÇéÈËÖÖ×Ó"
-VALENTINE2009_TALK_PLANT			= "ÖÖ³ö1¿ÃÇéÈËÊ÷"
-VALENTINE2009_TALK_WATER			= "½½Ë®³É¹¦"
+VALENTINE2009_TALK_TREENAME			= "C©y t×nh nh©n"
+VALENTINE2009_TALK_PLANT			= "Trång ®­îc 1 C©y T×nh Nh©n"
+VALENTINE2009_TALK_WATER			= "T­íi n­íc thµnh c«ng"
 
-VALENTINE2009_TALK_ERROR_ANSWER 	= "ÖªµÀÁË. "
-VALENTINE2009_TALK_ERROR_SEX		= "ÏÀ¿ÍÖ»ÄÜÁìÇéÈËÖÖ×Ó£¬Å®ÏÀÖ»ÄÜÁìÌìÏÉË®£¬²»ÒªÁì´íÁË£¡"
-VALENTINE2009_TALK_ERROR_LEVEL		= "Ö»ÓÐ50¼¶ÒÔÉÏµÄÍæ¼Ò²Å¿ÉÒÔ²Î¼Ó»î¶¯£¬ÔÙ¼Ó°Ñ¾¢!"
-VALENTINE2009_TALK_ERROR_PAY		= "Ö»ÓÐ³äÖµÍæ¼Ò²Å¿ÉÒÔ²Î¼Ó»î¶¯."
-VALENTINE2009_TALK_ERROR_MAXNUM		= "Ã¿Ìì×î¶àÖ»ÄÜÁìÈ¡9´Î£¬ÇëÃ÷Ìì¼ÌÐøÀ´Áì½±."
-VALENTINE2009_TALK_ERROR_DATE		= "Ö»ÄÜÔÚ13-02-2009µ½15-02-2009Õâ¶ÎÊ±¼ä²Å¿ÉÒÔÁìÈ¡½±Àø."
-VALENTINE2009_TALK_ERROR_TIME		= "Ö»ÓÐ20:00µ½21:00²Å¿ÉÒÔÁìÈ¡"
-VALENTINE2009_TALK_ERROR_NOTMAN		= "Ö»ÓÐÉÙÏÀ²Å¿ÉÒÔÊ¹ÓÃÇéÈËÖÖ×Ó!"
-VALENTINE2009_TALK_ERROR_DIE		= "ÇéÈËÊ÷¿ÝÎ®ÁË."
-VALENTINE2009_TALK_ERROR_MAXUSE		= "Ã¿ÌìÖ»ÄÜÊ¹ÓÃ9´Î£¬Ã÷ÌìÔÙ¼ÌÐø°É."
-VALENTINE2009_TALK_ERROR_TEAM		= "Ö»ÓÐÄÐÅ®×é¶ÓµÄ²Å¿ÉÒÔÊ¹ÓÃ!"
-VALENTINE2009_TALK_ERROR_AREA 		= "Ö»ÄÜÔÚ´åÕòºÍ³ÇÊÐÖÖÊ÷£¡"
-VALENTINE2009_TALK_ERROR_FIGHT		= "Õ½¶·×´Ì¬ÏÂ²»ÄÜÖÖÊ÷!"
-VALENTINE2009_TALK_ERROR_ARID		= "ÌìÏÉË®Æ¿Ã»ÓÐË®ÁË!"
-VALENTINE2009_TALK_ERROR_NOWATER	= "ÄãµÄ±³°üÀï»¹Ã»ÓÐÌìÏÉË®£¬Çë¼ì²é±³°ü£¡"
+VALENTINE2009_TALK_ERROR_ANSWER 	= "Ta ®· biÕt råi. "
+VALENTINE2009_TALK_ERROR_SEX		= "ÏÀ¿ÍÖ»ÄÜÁìC©y t×nh nh©n£¬Å®ÏÀÖ»ÄÜÁìThiªn Tiªn Thñy£¬²»ÒªÁì´íÁË£¡"
+VALENTINE2009_TALK_ERROR_LEVEL		= "ChØ cã ng­êi ch¬i cÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng, xin h·y cè g¾ng h¬n n÷a!"
+VALENTINE2009_TALK_ERROR_PAY		= "ChØ cã ng­êi ch¬i ®· nép thÎ míi cã thÓ tham dù ho¹t ®éng."
+VALENTINE2009_TALK_ERROR_MAXNUM		= "Mçi ngµy chØ nhËn nhiÒu nhÊt 9 lÇn, xin h·y ®îi ngµy mai råi nhËn tiÕp."
+VALENTINE2009_TALK_ERROR_DATE		= "ChØ cã thÓ nhËn ë thêi ®iÓm ho¹t ®éng tõ 13-02-2009 ®Õn 15-02-2009."
+VALENTINE2009_TALK_ERROR_TIME		= "ChØ cã thÓ nhËn tõ 20:00 ®Õn 21:00"
+VALENTINE2009_TALK_ERROR_NOTMAN		= "Ö»ÓÐÉÙÏÀ²Å¿ÉÒÔÊ¹ÓÃC©y t×nh nh©n!"
+VALENTINE2009_TALK_ERROR_DIE		= "C©y t×nh nh©n nµy ®· ë tr¹ng th¸i kh« hÐo råi."
+VALENTINE2009_TALK_ERROR_MAXUSE		= "Mçi ngµy chØ cã thÓ sö dông 9 lÇn, xin mêi ®îi ngµy mai råi h·y tiÕp tôc."
+VALENTINE2009_TALK_ERROR_TEAM		= "ChØ cã 1 tæ ®éi gåm nh©n vËt nam vµ n÷ míi cã thÓ sö dông!"
+VALENTINE2009_TALK_ERROR_AREA 		= "ChØ trång c©y ®­îc ë t¹i th«n trÊn vµ thµnh thÞ!"
+VALENTINE2009_TALK_ERROR_FIGHT		= "Kh«ng thÓ trång c©y ë tr¹ng th¸i chiÕn ®Êu!"
+VALENTINE2009_TALK_ERROR_ARID		= "B×nh Thiªn Tiªn Thñy ®· c¹n n­íc råi!"
+VALENTINE2009_TALK_ERROR_NOWATER	= "Hµnh trang cña ng­¬i vÉn ch­a cã Thiªn Tiªn Thñy, xin h·y kiÓm tra l¹i nhÐ!"

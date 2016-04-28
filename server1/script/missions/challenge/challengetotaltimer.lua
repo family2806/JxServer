@@ -11,14 +11,14 @@ Rest1 = GetMSPlayerCount(MISSIONID, 1);
 Rest2 = GetMSPlayerCount(MISSIONID, 2);
 
 if (Rest1 > Rest2) then 
-	Msg2MSAll(MISSIONID, "±ÈÈüÊ±¼äµ½£¡¾ÝÍ³¼ÆÏÖÔÚ»Æ·½Ê¤! ");
+	Msg2MSAll(MISSIONID, "HÕt thêi gian thi ®Êu! Theo thèng kª hiÖn t¹i phe Vµng th¾ng! ");
 elseif (Rest2 > Rest1) then 
-	Msg2MSAll(MISSIONID, "±ÈÈüÊ±¼äµ½£¡¾ÝÍ³¼ÆÏÖÔÚ×Ï·½Ê¤!");
+	Msg2MSAll(MISSIONID, "HÕt thêi gian thi ®Êu! Theo thèng kª hiÖn t¹i phe TÝm th¾ng! ");
 else
 	if (GetTotalLevel() == 1) then
-		Msg2MSAll(MISSIONID, "±ÈÈüÊ±¼äµ½£¡¾ÝÍ³¼ÆÏÖÔÚ»Æ·½Ê¤! ");
+		Msg2MSAll(MISSIONID, "HÕt thêi gian thi ®Êu! Theo thèng kª hiÖn t¹i phe Vµng th¾ng! ");
 	else
-		Msg2MSAll(MISSIONID, "±ÈÈüÊ±¼äµ½£¡¾ÝÍ³¼ÆÏÖÔÚ×Ï·½Ê¤!");
+		Msg2MSAll(MISSIONID, "HÕt thêi gian thi ®Êu! Theo thèng kª hiÖn t¹i phe TÝm th¾ng! ");
 	end;
 end;
 

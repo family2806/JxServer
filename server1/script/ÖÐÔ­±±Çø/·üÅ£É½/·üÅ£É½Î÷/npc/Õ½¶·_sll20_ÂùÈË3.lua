@@ -8,10 +8,10 @@ function OnDeath()
 		UTask_sl = SetBit(UTask_sl,3,1)
 		if (UTask_sl == 20*256+64+31) then		--Èç¹û¹»(bin(10000 + 01000 + 00100 + 00010 + 00001))
 			SetTask(7,20*256+128)
-			AddNote("Îå¸öÂùÈË±»Äã½ÌÑµµÃĞÄ·ş¿Ú·ş£¬³ĞÅµ½ñºóĞŞĞÄÑøĞÔ£¬²»ÔÚºú×÷·ÇÎªÁË. ")
-			Msg2Player("Îå¸öÂùÈË±»Äã½ÌÑµµÃĞÄ·ş¿Ú·ş£¬³ĞÅµ½ñºóĞŞĞÄÑøĞÔ£¬²»ÔÚºú×÷·ÇÎªÁË. ")
+			AddNote("N¨m g· ngç ng­îc bŞ b¹n gi¸o huÊn ®· t©m phôc khÈu phôc, høa tõ nay tu t©m söa tİnh, kh«ng d¸m léng hµnh n÷a. ")
+			Msg2Player("N¨m g· ngç ng­îc bŞ b¹n gi¸o huÊn ®· t©m phôc khÈu phôc, høa tõ nay tu t©m söa tİnh, kh«ng d¸m léng hµnh n÷a. ")
 		else
-			Msg2Player("Äã´ò°ÉÒ»¸öÂùÈË. ")
+			Msg2Player("B¹n ®¸nh b¹i mét g· ngç ng­îc. ")
 			SetTask(7,UTask_sl)
 		end
 	end

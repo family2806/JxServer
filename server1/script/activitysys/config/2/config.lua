@@ -7,16 +7,16 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	szName = "click big xmas tree",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ê¥µ®´óËÉ"},
+	tbMessageParam = {"§¹i Tïng Gi¸ng Sinh"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"½éÉÜÊ¥µ®»î¶¯",5} },
-		{"AddDialogOpt",	{"ÁìÈ¡Ê¥µ®Ê÷",2} },
-		{"AddDialogOpt",	{"ÁìÈ¡Ê¥µ®Íà",3} },
-		{"AddDialogOpt",	{"»»³É½±Æ·",4} },
+		{"AddDialogOpt",	{"Giíi thiÖu ho¹t ®éng Gi¸ng Sinh",5} },
+		{"AddDialogOpt",	{"NhËn C©y Th«ng Gi¸ng Sinh",2} },
+		{"AddDialogOpt",	{"NhËn TÊt Gi¸ng Sinh",3} },
+		{"AddDialogOpt",	{"§æi thµnh phÇn th­ëng",4} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -29,7 +29,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSKI_TREE_LIMIT,MAX_GET_TREE_LIMIT,"½ñÌìÄãÒÑ¾­ÁìÈ¡Ê¥µ®Ê÷ÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_TREE_LIMIT,MAX_GET_TREE_LIMIT,"H«m nay ng­¬i ®· nhËn C©y Th«ng Gi¸ng Sinh råi, ngµy mai h·y quay l¹i.","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -48,7 +48,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSKI_STOCKING_LIMIT,MAX_GET_STOCKING_LIMIT,"½ñÌìÄãÒÑ¾­ÁìÈ¡Ê¥µ®ÍàÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_STOCKING_LIMIT,MAX_GET_STOCKING_LIMIT,"H«m nay ng­¬i ®· nhËn TÊt Gi¸ng Sinh råi, ngµy mai h·y quay l¹i.","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -64,10 +64,10 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	szName = "get award",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"»ıÀúµÆ",1,1,1,0.02},
+	tbMessageParam = {"Tİch LŞch ®¬n",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ê¥µ®Ã±",ITEM_XMAS_HAT,1} },
+		{"AddOneMaterial",	{"Nãn gi¸ng sinh",ITEM_XMAS_HAT,1} },
 	},
 	tbActition = 
 	{
@@ -81,7 +81,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	szName = "event introduction",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"´Ó2011Äê12ÔÂ1ÈÕ0:00µ½2011Äê12ÔÂ31ÈÕ24:00£¬150¼¶ÒÔÉÏµÄ´óÏÀ£¨ÖØÉú²»ÊÜ¼¶±ğÏŞÖÆ£©¿ÉÒÔ²Î¼Ó»î¶¯£¬´óÏÀ¿ÉÒÔµ½ÁÖ°²(198,184),·ïÏé (198,199),ãê¾© (213,195), ´óÀí (202,198), ÏåÑô(198,201),³É¶¼(392,316) µÄÊ¥µ®´óËÉÁìÈ¡Ê¥µ®Ê÷ºÍÊ¥µ®Íà£¬´óÏÀ¿ÉÒÔÔÚ³ÇÄÚµã»÷Êó±êÓÒ¼üÊ¹ÓÃÊ¥µ®Ê÷µÀ¾ß£¬ÊÕµ½Ò»¿ÅÊ¥µ®Ê÷£¬´óÏÀ¿ÉÒÔÊ¹ÓÃÊ¥µ®¹û£¬Ê¥µ®µÆÁı£¬Ê¥µ®ÖÓ,Ê¥µ®ĞÇĞÇÀ´×°ÊÎÊ¥µ®Ê÷£¬À´½ÓÊÕ½±Æ·£¬Ê¥µ®¹û£¬Ê¥µ®µÆÁı£¬Ê¥µ®¹û£¬Ê¥µ®ÖÓ£¬Ê¥µ®ĞÇĞÇ¿ÉÒÔ´òÔÚ³¤°×É½ÄÏ£¬ÂãÀÇ¶´£¬µÚ3²ãÉ³Ä®£¬Äª¸ß¿ß£¬½ø¾Õ¶´ÂäÏÂµÄ¹ÖÎï¡£Ã¿Ìì19:00- 23:00, ´óÏÀ¿ÉÒÔ´ø×ÅÊ¥µ®Íàµ½³¤°×É½£¨ÏåÑô¡ªÉñÃØÉÌÈËÁøÒÒ¡ª³¤°×¶¥£©ÊÕ¼¯Ê¥µ®ÀñÎï£¬ÀñÎï»á·Ç³£ÓĞÎüÒıÁ¦Å¶£¡ÓÈÆäÊÇÔÚÆæÕä¸óÓĞ»î¶¯µÄÊ±¼äÀï£¬»¹ÓĞÊ¥µ®Ã±ÎïÆ·£¬´óÏÀ¿ÉÒÔ´ø×ÅÊ¥µ®Ã±µ½Ê¥µ®´óËÉ»»È¡Ç¬À¤»ıÀúµÆ£¬´ËµÆÍşÁ¦ÎŞË«£¬¿ÉÒÔÓÃËüÀ´´ò°Ü¶öÀÇ×óÊ·£¬ËüÒş²ØÔÚ¶öÀÇ¹È¡£´óÏÀ¿ÉÒÔÍ¨¹ı¸÷³ÇÇøµÄ³µ·òµ½´ï¶öÀÇ¹È£¬´ò°Ü¶öÀÇ×óÊ·¿ÉÒÔÊÕµ½·Ç³£·á¸»µÄ½±Æ·¡£",0},
+	tbMessageParam = {"Vµo lóc 0:00 ngµy 1 th¸ng 12 n¨m 2011 ®Õn 24:00 ngµy 31 th¸ng 12 n¨m 2011, nh÷ng ®¹i hiÖp cÊp 150 trë lªn ( trïng sinh kh«ng giíi h¹n cÊp ®é) cã thÓ tham gia ho¹t ®éng, ®¹i hiÖp cã thÓ ®Õn §¹i Tïng Gi¸ng Sinh t¹i L©m An (198,184), Ph­îng T­êng (198,199), BiÖn Kinh (213,195), §¹i Lı (202,198), T­¬ng D­¬ng (198,201), Thµnh §«(392,316) nhËn C©y Th«ng Gi¸ng Sinh vµ TÊt Gi¸ng Sinh, ®¹i hiÖp cã thÓ ë trong thµnh nhÊn chuét ph¶i ®Ó sö dông ®¹o cô C©y Th«ng Gi¸ng Sinh, nhËn ®­îc mét C©y Th«ng Gi¸ng Sinh, ®¹i hiÖp cã thÓ sö dông Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, Kño Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh ®Ó trang trİ cho C©y Th«ng Gi¸ng Sinh, ®Ó nhËn ®­îc phÇn th­ëng, Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, Qu¶ Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh cã thÓ ®¸nh qu¸i r¬i ra t¹i Tr­êng B¹ch S¬n Nam, Kháa Lang §éng, Sa M¹c TÇng 3, M¹c Cao QuËt, TiÕn Cóc §éng. Mçi ngµy vµo lóc 19:00 - 23:00, ®¹i hiÖp cã thÓ mang theo TÊt Gi¸ng Sinh ®Õn §Ønh Tr­êng B¹ch ( T­¬ng D­¬ng-ThÇn Bİ Th­¬ng Nh©n LiÔu Êt-§Ønh Tr­êng B¹ch) ®Ó thu thËp LÔ VËt Gi¸ng Sinh, lÔ vËt sÏ v« cïng hÊp dÉn ®Êy! §Æc biÖt trong thêi gian diÔn ra ho¹t ®éng trong Kú Tr©n C¸c cßn cã vËt phÈm Mò Gi¸ng Sinh, ®¹i hiÖp cã thÓ mang theo Mò Gi¸ng Sinh ®i ®Õn §¹i Tïng Gi¸ng Sinh ®æi lÊy Cµn Kh«n Tİch LŞch §¬n, Cµn Kh«n Tİch LŞch §¬n nµy cã uy lùc v« song, cã thÓ sö dông nã ®Ó ®¸no b¹i ¸c Lang T¶ Sø, ¸c Lang T¶ Sø Èn nÊp trong ¸c Lang Cèc, ®¹i hiÖp cã thÓ th«ng qua Xa Phu t¹i c¸c thµnh thŞ ®Ó ®i vµo ¸c Lang Cèc, ®¸nh b¹i ¸c Lang T¶ Sø cã thÓ nhËn ®­îc phÇn th­ëng v« cïng phong phó .",0},
 	tbCondition = 
 	{
 	},
@@ -102,7 +102,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:AddDialogNpc",	{"Ê¥µ®´óËÉ",XMAS_BIG_TREE_ID,XMAS_BIG_TREE_POS} },
+		{"NpcFunLib:AddDialogNpc",	{"§¹i Tïng Gi¸ng Sinh",XMAS_BIG_TREE_ID,XMAS_BIG_TREE_POS} },
 		{"ThisActivity:CreateAmbienceNpc",	{nil} },
 	},
 }
@@ -117,9 +117,9 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"ThisActivity:CheckTaskbyTime",	{TSKI_USE_TREE_TIME,60} },
-		{"PlayerFunLib:IsFightState",	{0, "Ö»¿ÉÔÚ·ÇÕ½¶·ÇøÓòÊ¹ÓÃ."} },
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "Ö»¿ÉÒÔÔÚ¸÷´ó³ÇÊĞÒÔ¼°ĞÂÊÖ´åÊ¹ÓÃ."} },
-		{"PlayerFunLib:CheckTaskDaily",	{2915,6,"Ê¹ÓÃÎïÆ·´ïµ½Ã¿ÈÕÉÏÏŞ.","<"} },
+		{"PlayerFunLib:IsFightState",	{0, "ChØ cã thÓ sö dông t¹i nh÷ng khu vùc phi chiÕn ®Êu."} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thŞ vµ c¸c t©n thñ th«n."} },
+		{"PlayerFunLib:CheckTaskDaily",	{2915,6,"Sö dông vËt phÈm ®¹t giíi h¹n ngµy.","<"} },
 	},
 	tbActition = 
 	{
@@ -138,8 +138,8 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,2739,-1,-1,-1},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"×°±¸²»×ã®ñ"} },
-		{"ThisActivity:CheckTaskDaily",	{TSKI_PILIDAN_EXP_LIMIT,MAX_PILIDAN_EXP_LIMIT,"Ê¹ÓÃÎïÆ·´ïµ½Ã¿ÈÕÉÏÏŞ","<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh«ng ®ñ"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_PILIDAN_EXP_LIMIT,MAX_PILIDAN_EXP_LIMIT,"Sö dông vËt phÈm ®¹t giíi h¹n ngµy.","<"} },
 		{"ELangGuWorld:UseItemKillNpc",	{nil} },
 	},
 	tbActition = 

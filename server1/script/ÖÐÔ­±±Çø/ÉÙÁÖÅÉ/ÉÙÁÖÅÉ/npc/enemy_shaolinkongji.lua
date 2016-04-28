@@ -10,13 +10,13 @@ Include("\\script\\task\\newtask\\master\\lib_setmembertask.lua")
 function OnDeath()
 Uworld1002 = nt_getTask(1002)
 	if (Uworld1002 == 280 ) then
-		Talk(1,"Uworld1002_give","°¢ÃÖÍÓ·ğ£¬ÕâÀïµÄÉñÆ÷£¬Ê©Ö÷ÄÃÈ¥°É.")
+		Talk(1,"Uworld1002_give","A Di §µ PhËt, ThÇn Khİ ë ®©y, Thİ chñ lÊy ®i.")
 	end
 end
 
 function zhongtask5()
 	AddOwnExp(600000)
-	Msg2Player("Äã»ñµÃÁ½²¿ÁúÆ÷£¬»ØÈ¥ÕÒ¸µÄÏ±ù.")
+	Msg2Player("B¹n nhËn ®­îc hai bé Long Khİ, h·y quay vÒ t×m Phã Nam B¨ng.")
 
 end
 

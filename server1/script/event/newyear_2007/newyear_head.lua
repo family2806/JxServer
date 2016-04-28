@@ -37,8 +37,8 @@ function ny07_entrance()
 		return
 	end;
 	Say("µ±½ñÎäÁÖ£¬ÈË½Ü±²³ö£¬¸÷´óÃÅÅÉíÂ¾«Í¼Ç¿¡£µ±´ËÂÒÊÀ£¬¸÷Î»ÈÔÎªÎäÁÖÃË¾¡ĞÄ½ßÁ¦¡£Ç¡·ê¼Ñ½Ú£¬¶À¹ÂÃËÖ÷ÌØÎª¸÷Î»ÏÀÊ¿ÏÀÅ®ËÍÉÏ½ÚÈÕºØÀñ£¬×£ºÏ¼Ò°²¿µ£¬ÍòÊÂÈçÒâ£¡", 4,
-	"ÁìÈ¡Ã¿ÈÕ¾­Ñé/ny07_getexp",
-	"ÁìÈ¡Ã¿ÈÕÃØ¼®ÈÎÎñ/ny07_getTaskBook",
+	"NhËn phÇn th­ëng ®iÓm kinh nghiÖm mçi ngµy/ny07_getexp",
+	"NhËn mËt tŞch nhiÖm vô mçi ngµy/ny07_getTaskBook",
 	"ÁìÈ¡Ã¿ÈÕµÄÈÙÓşÁîÅÆ/ny07_getmedal",
 	"Rêi khái/no"
 	);
@@ -46,20 +46,20 @@ end;
 
 
 ny07_tab_medal = {
-{"»Æ½ğÈÙÓşÁîÅÆ",	1	,1254	},
-{"°×ÒøÈÙÓşÁîÅÆ",	10	,1255	},
-{"ÇàÍ­ÈÙÓşÁîÅÆ",	30	,1256	},
-{"ÈÙÓşÁîÅÆ",	259	,1294	},
-{"º®ÌúÈÙÓşÁîÅÆ",	700	,1257	},
+{"LÖnh bµi vinh dù Hoµng Kim",	1	,1254	},
+{"LÖnh bµi vinh dù B¹ch Ng©n",	10	,1255	},
+{"LÖnh bµi vinh dù Thanh ®ång",	30	,1256	},
+{"LÖnh bµi vinh dù",	259	,1294	},
+{"LÖnh bµi vinh dù Hµn thiÕt",	700	,1257	},
 };
 function ny07_getmedal()
 	if (GetLevel() < 120) then
-		Say("<color=yellow>120¼¶<color>ÒÔÉÏµÄÍæ¼Ò²ÅÄÜÁìÈ¡ÎäÁÖÈÙÓşÁî¡£", 0);
+		Say("<color=yellow>120¼¶<color>ÒÔÉÏµÄÍæ¼Ò²ÅÄÜÁìÈ¡ÎäÁÖÎäÁÖÈÙÓşÁî¡£", 0);
 		return
 	end;
 	
 	if (ny07_isactive()==0) then
-		Say("Ôªµ©ÒÑ¾­¹ıÁË!", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 	
@@ -86,7 +86,7 @@ function ny07_getmedal()
 			SetSpecItemParam(nidx, 3, 1);
 			SetSpecItemParam(nidx, 4, 31);
 			SyncItem(nidx);
-			local str = "ÄãµÃµ½ <color=yellow>"..ny07_tab_medal[i][1].."<color>£¬¸ÃÁîÅÆµÄÓĞĞ§Ê±¼ä½ØÖÁ<color=yellow>2007Äê1ÔÂ31ÈÕ<color>¡£"
+			local str = "B¹n nhËn ®­îc <color=yellow>"..ny07_tab_medal[i][1].."<color>£¬¸ÃÁîÅÆµÄÓĞĞ§Ê±¼ä½ØÖÁ<color=yellow>2007Äê1ÔÂ31ÈÕ<color>¡£"
 			Msg2Player(str);
 			Say(str, 0);
 			break;
@@ -119,9 +119,9 @@ end;
 
 -- Ñ¯ÎÊÍæ¼ÒÊÇ·ñÁìÈ¡¾­Ñé
 function ny07_getexp()
-	Say("´Ó<color=yellow>20-12-2005µ½01-01-2006<color>, Ã¿ÌìÉÏÍø¶¼¿ÉÒÔÁìÈ¡ÎäÁÖÃËÖ÷·¢·ÅµÄ¾­Ñé.<color=yellow>ÔÚÕâ3ÌìÄÚ¿ÉÒÔÁì1´Î<color>, µ«Á½´ÎÁìÈ¡¾­ÑéÖ®¼äÏà¸ôĞèÒª<color=yellow>ÔÚÏß³¬¹ıÒ»Ğ¡Ê±<color>. ÄãÒªÁìÂğ?",2,
-		"ÊÇµÄ! ÎÒÒªÁìÈ¡!/ny07_getexp_next",
-		"¹ı»á°É/no"
+	Say("Trong kho¶ng thêi gian tõ <color=yellow>20-12-2005 ®Õn 01-01-2006<color>, mçi ngµy lªn m¹ng ®Òu nhËn ®­îc ®iÓm kinh nghiÖm do Vâ l©m minh chñ tÆng.<color=yellow>Trong vßng 3 ngµy nµy cã thÓ nhËn 1 lÇn <color>, nh­ng 2 lÇn nhËn ph¶i c¸ch nhau <color=yellow>trªn mét giê trªn m¹ng<color>. Ng­¬i ®ång ı nhËn kh«ng?",2,
+		"§­îc råi! Ta muèn nhËn l·nh!/ny07_getexp_next",
+		"Th«i ®Ó l¸t ®i/no"
 	);
 end;
 
@@ -140,7 +140,7 @@ function ny07_getexp_next()
 	local nExp = ny07_aryExp[nIndex];
 	-- Èç¹ûÈÕÆÚ²»¶Ô£¬Ö±½Ó·µ»Ø
 	if ny07_isactive()==0 then
-		Say("Ôªµ©ÒÑ¾­¹ıÁË!", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 	
@@ -150,13 +150,13 @@ function ny07_getexp_next()
 		else
 			ny07_addPlayerExpForLimit(nExp, 0); -- ²»ÏŞÖÆ
 		end;
-		Msg2Player("ÄãÔÚÔªµ©»î¶¯ÖĞµÃµ½µÄ½±Àø:<color=yellow>"..nExp.."<color>¾­Ñé!");
+		Msg2Player("B¹n nhËn ®­îc phÇn th­ëng trong ho¹t ®éng Nguyªn §¸n:<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm!");
 		
 		-- ¼ÇÂ¼ÁìÈ¡¾­ÑéµÄÏà¹ØÊı¾İ
 		local nTime       = GetGameTime();
 		SetTask(ID_MOREEXP_ONLINETIME_NY07, nTime);
 		SetTask(ID_MOREEXP_DATE_NY07, nDate);
-		WriteTaskLog("ÁìÈ¡Ã¿ÈÕ¾­Ñé:"..nExp);
+		WriteTaskLog("nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm mçi ngµy:"..nExp);
 	else
 		Say("ÄãÏÖÔÚµÄÌõ¼ş²»ÄÜ¹»ÁìÈ¡Ã¿ÈÕµÄ¾­Ñé£¬ÔÚ1ÔÂ1ÈÕÖÁ1ÔÂ3ÈÕÆÚ¼ä£¬Ã¿ÈÕÉÏÏß¶¼»á»ñµÃ¶À¹ÂÃËÖ÷ÔùËÍµÄ´óÅú¾­Ñé¡£<color=yellow>ÕâÈıÌìÖ®ÄÚÃ¿ÌìÄÜÁìÒ»´Î<color>£¬µ«Á½´ÎÁìÈ¡¾­ÑéÖ®¼äÏà¸ôĞèÒª<color=yellow>ÔÚÏß³¬¹ı1Ğ¡Ê±<color>Å¶£¡", 0);
 		return
@@ -167,7 +167,7 @@ end;
 -- ÈÎÎñÏµÍ³µÄĞ´Èë LOG ¹ı³Ì
 function WriteTaskLog(strMain)
 	if strMain==nil then return end;	-- Èç¹ûÊÇ¿ÕÖµÔò²»Ğ´Èë
-	WriteLog("[2007ÄêÔªµ©»î¶¯]"..date(" [%y Äê %m ÔÂ %d ÈÕ  %H Ê±%M ·Ö]").." [ÃÜÂë:"..GetAccount().."] [ÈËÎï:"..GetName().."]"..strMain);
+	WriteLog("[2007ÄêÔªµ©»î¶¯]"..date(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]"..strMain);
 end;
 
 -- µÃµ½ÈÎÎñ¾íÖá
@@ -176,18 +176,18 @@ function ny07_getTaskBook()
 	local nDate  = tonumber(GetLocalDate("%Y%m%d"));
 	-- Èç¹ûÈÕÆÚ²»¶Ô£¬Ö±½Ó·µ»Ø
 	if ny07_isactive()==0 then
-		Say("Ôªµ©ÒÑ¾­¹ıÁË!", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 	
 	-- Èç¹ûµÈ¼¶Î´´ïµ½ 80 ¼¶
 	if GetLevel()<80 then
-		Say("Ö»ÓĞ80¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò²Å¿ÉÒÔÁìÈ¡Õâ¸öÃØ¼®ÈÎÎñ!", 0);
+		Say("ChØ cã ng­êi ch¬i tõ cÊp 80 trë lªn míi cã thÓ nhËn ®­îc mËt tŞch nhiÖm vô nµy!", 0);
 		return
 	end;
 	
 	if (GetTask(ID_GETTASKBOOK_DATE_NY07) == nDate) then
-		Say("½ñÌìÄãÒÑ¾­ÁìÈ¡¹ıÃØ¼®ÈÎÎñÁË!", 0);
+		Say("H«m nay b¹n ®· nhËn mét mËt tŞch nhiÖm vô råi!", 0);
 		return
 	end;
 
@@ -199,8 +199,8 @@ function ny07_getTaskBook()
 	nRandomItemIndex = AddItem(6, 2, 2, 0, 1, 0, 0);
 	SetItemMagicLevel(nRandomItemIndex, 1, nRandomTaskID);
 	SyncItem(nRandomItemIndex);		-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
-	Msg2Player("ÄãµÃµ½ <color=green>Å¼È»ÈÎÎñ!<color>");
-	WriteTaskLog("µÃµ½1¸öÃØ¼®ÈÎÎñ£¬ÃÜÂëÊÇ"..nRandomTaskID);
+	Msg2Player("B¹n nhËn ®ù¬c <color=green>nhiÖm vô ngÉu nhiªn!<color>");
+	WriteTaskLog("NhËn ®­îc 1 mËt tŞch nhiÖm vô, m· sè lµ:"..nRandomTaskID);
 end;
 
 

@@ -39,29 +39,29 @@ end
 
 function tbTop10:MainDialog()
 	if self.CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³ÕıÔÚ½øĞĞÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	local tbOpt = {}
 	local pEventType = EventSys:GetType("AddNpcOption")
 	if self.CheckDay() == 1 then
-		tinsert(tbOpt, {"ÎÒÏëµÇ¼Ç", tbTop10.Regist, {tbTop10}})
-		tinsert(tbOpt, {"ÎÒÏë¸üĞÂĞÅÏ¢", tbTop10.UpdateInfo, {tbTop10}})
+		tinsert(tbOpt, {"Ta muèn ®¨ng kı", tbTop10.Regist, {tbTop10}})
+		tinsert(tbOpt, {"Ta muèn cËp nhËt th«ng tin", tbTop10.UpdateInfo, {tbTop10}})
 	end	
-	tinsert(tbOpt, {"¿´Ê®´ó¸ßÊÖÃûµ¥", tbTop10.ShowTopList, {tbTop10}})
-	tinsert(tbOpt, {"·ÅÆú "})
-	CreateNewSayEx("ÎÒ¸ºÔğ½ÓÊÕµÇ¼ÇÊ®´ó¸ßÊÖ£¬ÄãÏëµÇ¼ÇÂğ?", tbOpt)
+	tinsert(tbOpt, {"Xem danh s¸ch ThËp §¹i Cao Thñ", tbTop10.ShowTopList, {tbTop10}})
+	tinsert(tbOpt, {"Hñy bá "})
+	CreateNewSayEx("Ta phô tr¸ch viÖc tiÕp nhËn ®¨ng kı thËp ®¹i cao thñ, ng­¬i cã muèn ®¨ng kı kh«ng?", tbOpt)
 end
 
 --=======================Subcribers===========================
 
 function tbTop10:Regist()
 	if self.CheckDay() == 0 then
-		Talk(1, "", "µÇ¼ÇÒÑ¹ıÆÚ ")
+		Talk(1, "", "§· hÕt h¹n ®¨ng kı.")
 		return
 	end
 	if self.CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³ÕıÔÚ½øĞĞÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	
@@ -70,12 +70,12 @@ function tbTop10:Regist()
 	end
 	local nTransLifeCount = ST_GetTransLifeCount()
 	if nTransLifeCount < 3 then
-		Talk(1, "", "ÄãĞŞÁ¶µÄ³Ì¶È²»¹»£¬Çë»ØÈ¥ÔÙÁ·Ï°.")
+		Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
 		return
 	end
 	local strName = GetName()
 	if self.tbSubcribers[strName] then
-		Talk(1, "", "ÄãÒÑµÇ¼ÇÁË£¬²»ĞèÒªÔÙµÇ¼ÇÁË£¬Çë¸üĞÂĞÅÏ¢.")
+		Talk(1, "", "Ng­¬i ®· ®¨ng kı råi, kh«ng cÇn ®¨ng kı n÷a. Xin h·y cËp nhËt th«ng tin.")
 		return
 	end
 	self.tbSubcribers[strName] = {}
@@ -84,23 +84,23 @@ function tbTop10:Regist()
 		local nlevel, _ = zhuansheng_get_gre(i);
 		tinsert(tbSubcriber, nlevel)		
 	end
-	--Ä¿Ç°Ë®Æ½
+	--HiÖn t¹iË®Æ½
 	tinsert(tbSubcriber, GetLevel())
-	--Ä¿Ç°¾­Ñé
+	--HiÖn t¹i¾­Ñé
 	tinsert(tbSubcriber, GetExp()/1e9)
 	tinsert(tbSubcriber, GetExpPercent())
 	if self:Subcribers2File() == 1 then
-		Say("µÇ¼Ç³É¹¦£¬Çë¼ì²éÃûµ¥.", 1, "¹Ø±Õ/OnCancel")
+		Say("§¨ng kı thµnh c«ng, xin h·y kiÓm tra l¹i danh s¸ch.", 1, "§ãng/OnCancel")
 	end
 end
 
 function tbTop10:UpdateInfo()
 	if self.CheckDay() == 0 then
-		Talk(1, "", "¸üĞÂĞÅÏ¢ÒÑ¹ıÆÚ.")
+		Talk(1, "", "§· hÕt h¹n cËp nhËt th«ng tin.")
 		return
 	end
 	if self.CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³ÕıÔÚ½øĞĞÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	
@@ -109,33 +109,33 @@ function tbTop10:UpdateInfo()
 	end
 	local strName = GetName()
 	if (not self.tbSubcribers[strName]) then
-		Talk(1, "", "ÄãÒÀÈ»Î´µÇ¼Ç£¬²»ÄÜ¸üĞÂĞÅÏ¢ .")
+		Talk(1, "", "Ng­¬i vÉn ch­a ®¨ng kı, kh«ng thÓ cËp nhËt th«ng tin.")
 		return
 	end
 	
 	--Ã¿ÌìÖ»ÄÜ¸üĞÂÒ»´Î 
 	local nTaskDayCount = PlayerFunLib:GetTaskDailyCount(self.nTaskDayLimit)
 	if nTaskDayCount == 1 then
-		Talk(1, "", "Ã¿ÌìÖ»ÄÜ¸üĞÂÒ»´Î£¬Ã¿ÌìÔÙÀ´°É.")
+		Talk(1, "", "Mçi ngµy chØ ®­îc cËp nhËt th«ng tin 1 lÇn, ngµy mai råi h·y quay l¹i.")
 		return
 	end
 	
 	local nTransLifeCount = ST_GetTransLifeCount()
 	if nTransLifeCount < 3 then
-		Talk(1, "", "ÄãĞŞÁ¶µÄ³Ì¶È²»¹»£¬Çë»ØÈ¥ÔÙÁ·Ï°.")
+		Talk(1, "", "Møc ®é tu luyÖn cña ng­¬i ch­a ®ñ, h·y quay vÒ rÌn luyÖn thªm ®i.")
 		return
 	end
 		
 	local tbSubcriber = self.tbSubcribers[strName]
 
-	--Ä¿Ç°Ë®Æ½
+	--HiÖn t¹iË®Æ½
 	tbSubcriber[self.nCUR_LVL] = GetLevel()
-	--Ä¿Ç°¾­Ñé
+	--HiÖn t¹i¾­Ñé
 	tbSubcriber[self.nCUR_EXP] = GetExp()/1e9
 	tbSubcriber[self.nCUR_EXP_PERCENT] = GetExpPercent()
 	if self:Subcribers2File() == 1 then
 		PlayerFunLib:AddTaskDaily(self.nTaskDayLimit, 1)
-		Say("¸üĞÂĞÅÏ¢³É¹¦£¬Çë¼ì²éÃûµ¥.", 1, "¹Ø±Õ/OnCancel")
+		Say("CËp nhËt th«ng tin thµnh c«ng, sau <color=red>10h s¸ng chñ nhËt<color> s¸ng  xin h·y kiÓm tra l¹i danh s¸ch.", 1, "§ãng/OnCancel")
 	end
 end
 
@@ -156,32 +156,32 @@ end
 
 function tbTop10:ShowList()	
 	if not self.tbSubcribers then
-		CreateNewSayEx("Ä¿Ç°Ã»ÓĞÅÅĞĞ",{{"¹Ø±Õ",OnCancel}})
+		CreateNewSayEx("HiÖn ch­a cã danh s¸ch ®¨ng kı",{{"§ãng",OnCancel}})
 		return
 	end
 	
 	local nCounter = 0
-	local strTittle = format("%-6s%-16s%-6s%-6s%-6s%s\n", "ĞòºÅ", "Ãû×Ö", "ÖØÉú1", "ÖØÉú2", "ÖØÉú3", "Ä¿Ç°")
+	local strTittle = format("%-6s%-16s%-6s%-6s%-6s%s\n", "STT", "Tªn", "TS1", "TS2", "TS3", "HiÖn t¹i")
 	for key, val in self.tbSubcribers do
 		nCounter = nCounter + 1
 		strTittle = strTittle..format("<color=yellow>%-6d%-16s%-6d%-6d%-6d%d<color>\n", nCounter, key, val[1], val[2], val[3], val[4])
 	end
-	CreateNewSayEx(strTittle,{{"¹Ø±Õ",OnCancel}})
+	CreateNewSayEx(strTittle,{{"§ãng",OnCancel}})
 end
 
 --=======================Top list===========================
 
 function tbTop10:ShowTopList()
 	if self.CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³ÕıÔÚ½øĞĞÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	if not self.tbTopList or getn(self.tbTopList) <= 0 then
-		CreateNewSayEx("Ä¿Ç°Ã»ÓĞÅÅĞĞ",{{"¹Ø±Õ",OnCancel}})
+		CreateNewSayEx("HiÖn ch­a cã danh s¸ch ®¨ng kı",{{"§ãng",OnCancel}})
 		return
 	end
-	local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "Ê®´ó¸ßÊÖÃûµ¥","\t\t\t\t\t\tÍ³¼ÆÊ±¼ä:", self.tbTopList[1][5])
-	strTittle = strTittle..format("%-5s%-17s%-12s%-10s%-8s\n", "µÈ¼¶", "Ãû×Ö", "ÖØÉú", "Ä¿Ç°", "Exp(¾­Ñé")
+	local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "Danh s¸ch ThËp §¹i Cao Thñ","\t\t\t\t\t\tThêi gian tæng kÕt:", self.tbTopList[1][5])
+	strTittle = strTittle..format("%-5s%-17s%-12s%-10s%-8s\n", "H¹ng", "Tªn", "Trïng Sinh", "HiÖn t¹i", "Exp(Tû)")
 	local strTittle_TS = ""
 	local strName = ""
 	local strCurLVL = ""
@@ -196,15 +196,15 @@ function tbTop10:ShowTopList()
 			strTittle = strTittle..format("<color=yellow>%-5s%-17s%-12s%-10s%-8.04f<color>\n", nRank, strName, strTittle_TS, strCurLVL,self.tbTopList[nRank][4])
 		end
 	end
-	CreateNewSayEx(strTittle,{{"¹Ø±Õ",OnCancel}})
+	CreateNewSayEx(strTittle,{{"§ãng",OnCancel}})
 end
 
 --°´ÕÕ¾­ÑéµÇ¼ÇÃûµ¥ÅÅÃûÀ´ÕÒ10¸ö¾­ÑéÅÅÃû×î¸ßµÄÈË
---±£ÁôÊ®´ó¸ßÊÖÃûµ¥½øÈëÔ¤·ÀÎÄ¼ş¼Ğ
+--±£ÁôDanh s¸ch ThËp §¹i Cao Thñ½øÈëÔ¤·ÀÎÄ¼ş¼Ğ
 function tbTop10:UpdateTopList()
 	nLamAnMapID = SubWorldID2Idx(176)
 	if nLamAnMapID < 0 then
-		print("\nMap ÁÙ°²Ã»ÓĞÔÚ¸Ã·şÎñÆ÷ÉÏ")
+		print("\n B¶n ®å L©m An kh«ng cã trªn server nµy")
 		return
 	end
 	self.tbTopList = {}
@@ -258,9 +258,9 @@ function tbTop10:TopListFromFile()
 end
 
 --=======================Top list===========================
---Load µÈ¼¶Ãûµ¥ÒÔ¼°Ê®´ó½øÈëtable
+--Load H¹ngÃûµ¥ÒÔ¼°Ê®´ó½øÈëtable
 function LoadFromFile()
-	--load µÈ¼¶Ãûµ¥
+	--load H¹ngÃûµ¥
 	if not tbTop10.tbSubcribers then
 		tbTop10.tbSubcribers = {}
 	end

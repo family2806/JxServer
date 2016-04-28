@@ -44,16 +44,16 @@ function messenger_wagoner()
 --		end
 	if ( Uworld1203 ~= 0 ) then
 		if ( Uworld1203 == 10 or Uworld1203 == 20 or Uworld1203 == 21 ) then
-			Say("Ïë½øÈë¸ÃÇøÓòÂğ?",2,"Ïë/messenger_storewagoner","²»Ïë/no")
+			Say("Cã muèn vµo khu vùc kh«ng?",2,"Muèn/messenger_storewagoner","Kh«ng muèn/no")
 		elseif ( Uworld1203 == 30 ) then
 			for i=1,getn(citygo) do   --±í¸ñÓ¦¸ÃÓĞËù²»Í¬£¿£¿
 				if ( Uworld1204 == citygo[i][2]) then   --£¿£¿
-					Msg2Player("¶Ô²»Æğ£¬ÄãµÄĞÅÊ¹ÈÎÎñÒÑÍê³É£¬µ«ÊÇ»¹Î´½»»Ø£¬ÇëÄã½»»ØÈÎÎñ "..citygo[i][4].."ÔÚæäÕ¾½»ÈÎÎñ") --£¿£¿
+					Msg2Player("Xin lçi! NhiÖm vô Tİn Sø cña b¹n ®· hoµn thµnh nh­ng ch­a giao tr¶, mêi b¹n ®i giao tr¶ nhiÖm vô."..citygo[i][4].."Giao nhiÖm vô ë DŞch tr¹m") --£¿£¿
 				end
 			end
 		end
 	else
-		Msg2Player("¶Ô²»Æğ£¬ÄãÒÀÈ»»¹Î´»ñµÃËÍĞÅÈÎÎñ£¬ÇëÏÈÈ¥ÕÒæä¹Ù½ÓÈÎÎñ®·")
+		Msg2Player("Xin l­îng thø, ng­¬i vÉn ch­a nhËn ®­îc nhiÖm vô §­a Tin, h·y t×m DŞch Quan nhËn nhiÖm vô tr­íc ®·")
 	end
 end
 

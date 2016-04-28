@@ -5,7 +5,7 @@ tbhuashanqunzhan_H_Data =
 	tbTimer				= {{93,18*60}},	
 	nMapId				= 865,
 	szPlayerDeathScript	= "\\script\\missions\\huashanqunzhan\\high_grade\\playerdeath.lua",
-	szMatchName			= "华山大战 (高级)"
+	szMatchName			= "Hoa S琻 Чi Chi課 (Cao c蕄)"
 }
 
 

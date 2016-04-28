@@ -14,21 +14,21 @@ TabFile_Load( "\\settings\\task\\tollgate\\messenger\\messenger_tollprize.txt" ,
 ------ĞÅÊ¹ÈÎÎñ·çÖ®Æï¶¨µãÉ±¹Ö±í¸ñ--------------
 --Ğ¡µØÍ¼×ø±êx£¬y£¬ÈËÎïÃû×Ö£¨60-79¼¶£©,
 killfly3 ={
-{184,189,"¼ÑÂÉĞ°Õë",1},
-{181,183,"´ó´È",2},
-{197,179,"´ó¾ü",3},
-{197,172,"´ó¿â",4},
-{198,163,"¼ÑÂÉÁ¢",5},
-{190,160,"¼ÑÂÉÄÜ",6},
-{164,162,"ÍêÑÕÆÆ¾ü",7},
-{164,172,"ÍêÑÕÃü",8},
-{178,190,"´óÄù",9},
-{178,187,"¼ÑÂÉ¿Í",10},
-{169,190,"ÍêÑÕ·ö±ø",11},
-{172,193,"¼ÑÂÉÂí±¼",12},
-{165,191,"´óöÄ",13},
-{178,178,"¼ÑÂÉ²¿",14},
-{186,183,"´ó¿Û",15},
+{184,189,"Gia LuËt Tµ Ch©m",1},
+{181,183,"§¹i Tõ ",2},
+{197,179,"§¹i Qu©n",3},
+{197,172,"§¹i Khè ",4},
+{198,163,"Gia LuËt LËp",5},
+{190,160,"Gia LuËt N¨ng",6},
+{164,162,"Hoµn Nhan Ph¸ Qu©n",7},
+{164,172,"Hoµn Nhan MÖnh",8},
+{178,190,"§¹i NhiÕp",9},
+{178,187,"Gia LuËt Kh¸ch",10},
+{169,190,"Hoµn Nhan Phu Binh",11},
+{172,193,"Gia LuËt M· B«n",12},
+{165,191,"§¹i Cï ",13},
+{178,178,"Gia LuËt Bé ",14},
+{186,183,"§¹i KhÊu",15},
 }
 
 -----ĞÅÊ¹ÈÎÎñ·çÖ®ÆïbossËÀÍöºóÔö¼Ó¹ÖÎïµÄ±í¸ñ----
@@ -198,10 +198,10 @@ FLYBOSS_MESSENGEREXP=tonumber( TabFile_GetCell( "tollprize" ,4 ,"boss_jifen"))  
 function main()
 	local name = GetName()
 	if (  messenger_middletime() == 10 ) then --Íæ¼ÒÔÚµØÍ¼ÖĞµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æğ! "..name.."! Ö´ĞĞĞÅÊ¹ÈÎÎñµÄÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
-		Talk(1,"messenger_gogogo","ÄãÒÑ´ïµ½Ä¿±ê.")
+		Talk(1,"messenger_gogogo","B¹n ®· ®¹t ®­îc tiªu chİ nµy.")
 	end
 end
 

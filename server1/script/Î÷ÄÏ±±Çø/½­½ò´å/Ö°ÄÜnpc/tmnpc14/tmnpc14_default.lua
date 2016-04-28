@@ -5,7 +5,7 @@
 
 function tmnpc14_Default()
 
-Say("ÎÒÎŞ¶ùÎŞÅ®£¬Ö»ÓĞÒ»¸öÍâÉû£¬ÔÚÌÆÃÅÑ§ÒÕ", 0)
+Say("Ta kh«ng cã con c¸i, chØ cã 1 ®øa ch¸u ngo¹i ®ang häc vâ t¹i §­êng M«n ", 0)
 
 end;
 

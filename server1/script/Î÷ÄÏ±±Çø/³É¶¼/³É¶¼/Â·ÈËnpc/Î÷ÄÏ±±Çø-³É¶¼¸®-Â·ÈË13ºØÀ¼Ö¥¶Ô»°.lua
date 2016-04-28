@@ -6,6 +6,6 @@ function main(sel)
 	if ( Uworld1051 ~= 0 ) then
 		branch_helanzhi()
 	else
-Say("ºØÀ¼Ö¥£ºÎÒÄĞÈËÔÚ³ÇÃÅµ±²î£¬Ò»Õ¾¾ÍÒ»ÕûÈÕ£¬Ì«ĞÁ¿àÁË£¬ÎÒÒª×öµãºÃ²Ë¸øËû²¹²¹Éí×Ó¡£",0)
+Say("Chång ta ë Thµnh §« lµm sai ®Çu, rÊt cùc khæ! Ta ph¶i mét vµi mãn ngon cho huynh Êy ®Ó båi bæ søc khoÎ.",0)
 	end
 end;

@@ -5,6 +5,6 @@ if allbrother_0801_CheckIsDialog(198) == 1 then
 		allbrother_0801_FindNpcTaskDialog(198)
 		return 0;
 	end
-Say("Â³ÀÏºÍ¸ğÀÏ¶şÈËÕûÄê¶¼Ïñº¢×ÓÒ»ÑùÏà»¥¶·!",0)
+Say("Hai c¸i l·o Lç vµ l·o C¸t ®ã quanh n¨m cø ®Êu ®¸ víi nhua nh­ trÎ con!",0)
 
 end;

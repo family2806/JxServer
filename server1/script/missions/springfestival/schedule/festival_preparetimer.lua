@@ -20,10 +20,10 @@ function OnTimer()
 		return
 	elseif (0 == mod(nNewsValue, 2)) then
 		if (nRemain > 0) then
-			Msg2MSAll(FE_PREPAREMISSIONID, "还剩"..nRemain.."分钟开始比赛!");
+			Msg2MSAll(FE_PREPAREMISSIONID, "c遪"..nRemain.."ph髏 b総 u Thi u!");
 		end;
 	elseif (9 == nNewsValue) then
-        Msg2MSAll(FE_PREPAREMISSIONID, "还有30分钟才能开始!");
+        Msg2MSAll(FE_PREPAREMISSIONID, "C遪 30 ph髏 n鱝 b総 u!");
 	end;
 end;
 

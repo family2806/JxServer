@@ -2,44 +2,44 @@ Include([[\script\event\springfestival07\item\libcracker.lua]]);
 
 function main_entrance()
 	if (sf07_isactive() == 0) then
-		Say("»î¶¯ÆÚ¼ä (02/02/2007µ½06/03/2007), ÎÒ»á°ïÖúÄãÃÇ×ö±¬Öñ.", 0);
+		Say("Trong thêi gian ho¹t ®éng (02/02/2007 ®Õn 06/03/2007), ta sÏ gióp mäi ng­êi lµm ph¸o.", 0);
 		return 1;
 	end;
 	if (sf07_isrightuser() ~= 1) then
-		Say("<color=yellow>Ö»ÓĞ50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò<color>²Å¿ÉÒÔ²Î¼ÓÔªµ©»î¶¯", 0);
+		Say("<color=yellow>ChØ cã ng­êi ch¬i n¹p thÎ trªn cÊp 50<color> míi cã thÓ tham gia ho¹t ®éng TÕt Nguyªn §¸n", 0);
 		return
 	end;
-	Say("ÎÒ½«°ïÖúÄãÃÇ×ö±¬ÖñÓ­½ÓÈÈÄÖµÄĞÂÄê. ÄãÏë×öÄÄÖÖ±¬ÖñÄØ?", 7,
-	"ÎÒÏë×öÖĞºÅ±¬Öñ/#confirm_make(1)",
-	"ÎÒÏë×ö´óºÅ±¬Öñ/#confirm_make(3)",
-	"ÎÒÏë×öĞ¡ºÅ±ŞÅÚ/#confirm_make(2)",
-	"ÎÒÏë×öÖĞºÅ±ŞÅÚ/#confirm_make(4)",
-	"ÎÒÏë×ö´óºÅ±ŞÅÚ/#confirm_make(5)",
-	"ÎÒÏëÁË½â³ıÏ¦È¼ÅÚ»î¶¯/detail",
-	"ÎÒÒ»»á»ØÀ´!/no"
+	Say("Ta sÏ gióp mäi ng­êi lµm ph¸o ®Ó ®ãn n¨m míi rén r·. Quı kh¸ch muèn lµm lo¹i ph¸o nµo?", 7,
+	"Ta muèn lµm Ph¸o trung/#confirm_make(1)",
+	"Ta muèn lµm Ph¸o ®¹i/#confirm_make(3)",
+	"Ta muèn lµm phong ph¸o tiÓu/#confirm_make(2)",
+	"Ta muèn lµm phong ph¸o trung/#confirm_make(4)",
+	"Ta muèn lµm phong ph¸o ®¹i/#confirm_make(5)",
+	"Ta muèn t×m hiÓu ho¹t ®éng §èt ph¸o giao thõa/detail",
+	"Ta sÏ quay l¹i sau!/no"
 	);
 end;
 
 function detail()
-	Describe("»î¶¯ÆÚ¼ä£¬Íæ¼ÒÁ·¹¦¿ÉÄÜ»áÅ¼È»µÃµ½Ñ¹Ëê°ü£¬ÀïÃæÓĞ¸÷ÖÖ±¬Öñ¡£ÎÒ¿ÉÒÔ°ïÖúÃ¿¸öÈË×öÈÎÒâÒ»ÖÖ±¬Öñ¡£µ«Ò²»áÓĞÊ§°ÜµÄÊ±ºò£¡Îû£¡Îû£¡Èç¹û³É¹¦ÁË¾Í»áÊÇÌØ±ğ±ŞÅÚ£¬Ê§°ÜÁË¾Í»áÊ§È¥ÆÕÍ¨±ŞÅÚ!±¬ÖñÖÖÀà²»Í¬Ğ§¹ûÒ²²»Í¬. (·­µ½ÉÏÒ»Ò³)/main_entrance");
+	Describe("Trong thêi gian ho¹t ®éng, ng­êi ch¬i luyÖn c«ng cã thÓ ngÉu nhiªn nhËn ®­îc Bao l× x×, bªn trong chøa c¸c lo¹i ph¸o. Ta cã thÓ gióp mäi ng­êi lµm bÊt cø lo¹i ph¸o nµo. Nh­ng còng cã lóc thÊt b¹i! Hi! Hi! NÕu thµnh c«ng sÏ thµnh Phong ph¸o ®Æc biÖt. NÕu thÊt b¹i sÏ mÊt ®i Phong ph¸o th­êng. Chñng lo¹i ph¸o kh¸c nhau hiÖu qu¶ còng kh¸c nhau.");
 end;
 
 tab_Content = {
-	{"ÖĞºÅ±¬Öñ", "3¿ÅĞ¡±¬Öñ", 50, {1352, "ÖĞºÅ±¬Öñ"}, {1, 1351, "Ğ¡±¬Öñ"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«ËğÊ§1¿ÅĞ¡±¬Öñ"},
-	{"Ğ¡ºÅ±¬Öñ", "10¿ÅĞ¡±¬Öñ, 2¿ÅÖĞºÅ±¬ÖñºÍ1000Á½.", 20, {1354, "Ğ¡ºÅÌØ±ğ±ŞÅÚ"}, {0, 1357, "ÆÕÍ¨Ğ¡ºÅ±ŞÅÚ"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½1ÆÕÍ¨Ğ¡ºÅ±ŞÅÚ. Èç¹û³É¹¦ÁË, ½«µÃµ½1Ğ¡ºÅÌØ±ğ±ŞÅÚ"},
-	{"´óºÅ±¬Öñ", "3¿ÅÖĞºÅ±¬Öñ", 50, {1353, "´óºÅ±¬Öñ"}, {1, 1352, "ÖĞºÅ±¬Öñ"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«Ê§È¥1¿ÅÖĞºÅ±¬Öñ"},
-	{"ÖĞºÅ±ŞÅÚ", "10¿ÅÖĞºÅ±¬Öñ, 2¿Å´ó±¬ÖñºÍ3000Á½.", 20, {1355, "ÖĞºÅÌØ±ğ±ŞÅÚ"}, {0, 1358, "ÖĞºÅÆÕÍ¨±ŞÅÚ"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«½«µÃµ½ÖĞºÅÆÕÍ¨±ŞÅÚ. Èç¹û³É¹¦ÁË, ½«µÃµ½ÖĞºÅÌØ±ğ±ŞÅÚ"},
-	{"´óºÅ±ŞÅÚ", "100¿Å´ó±¬Öñ5000Á½.", 15, {1356, "´óºÅÌØ±ğ±ŞÅÚ"}, {0, 1359, "ÆÕÍ¨´óºÅ±ŞÅÚ"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½ÆÕÍ¨´óºÅ±ŞÅÚ. Èç¹û³É¹¦ÁË, ½«µÃµ½´óºÅÌØ±ğ±ŞÅÚ"},
+	{"Ph¸o trung", "3 viªn ph¸o tiÓu", 50, {1352, "Ph¸o trung"}, {1, 1351, "Ph¸o tiÓu"}, "NÕu lµm thÊt b¹i, quı kh¸ch sÏ mÊt ®i 1 viªn ph¸o tiÓu"},
+	{"Phong ph¸o tiÓu", "10 viªn ph¸o tiÓu, 2 viªn ph¸o trung vµ 1000 l­îng.", 20, {1354, "phong ph¸o tiÓu ®Æc biÖt"}, {0, 1357, "phong ph¸o tiÓu th­êng"}, "NÕu lµm thÊt b¹i, quı kh¸ch sÏ nhËn ®­îc 1 Phong ph¸o tiÓu th­êng. NÕu thµnh c«ng, sÏ nhËn ®­îc 1 Phong ph¸o tiÓu ®Æc biÖt"},
+	{"Ph¸o ®¹i", "3 viªn ph¸o trung", 50, {1353, "Ph¸o ®¹i"}, {1, 1352, "Ph¸o trung"}, "NÕu lµm thÊt b¹i, quı kh¸ch sÏ mÊt ®i 1 viªn ph¸o trung"},
+	{"Phong ph¸o trung", "10 viªn ph¸o trung, 2 viªn ph¸o ®¹i vµ 3000 l­îng.", 20, {1355, "Phong ph¸o trung ®Æc biÖt"}, {0, 1358, "Phong ph¸o trung th­êng"}, "NÕu lµm thÊt b¹i, quı kh¸ch sÏ nhËn ®­îc Phong ph¸o trung th­êng. NÕu thµnh c«ng, sÏ nhËn ®­îc Phong ph¸o trung ®Æc biÖt"},
+	{"Phong ph¸o ®¹i", "100 viªn ph¸o ®¹i vµ 5000 l­îng.", 15, {1356, "Phong ph¸o ®¹i ®Æc biÖt"}, {0, 1359, "Phong ph¸o ®¹i th­êng"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½Phong ph¸o ®¹i th­êng. Èç¹û³É¹¦ÁË, ½«µÃµ½Phong ph¸o ®¹i ®Æc biÖt"},
 };
 function confirm_make(nIndex)
-	Say("ÒªÖÆ×÷1 <color=yellow>"..tab_Content[nIndex][1].."<color>ĞèÒªÓĞ<color=yellow>"..tab_Content[nIndex][2].."<color>. µ«²»Ò»¶¨ÄÜ³É¹¦£¡ "..tab_Content[nIndex][6].."×öÂğ?", 2, "ÎÒÏë×ö/#make_crackers("..nIndex..")", "ÎÒ»¹Ã»×¼±¸ºÃ!/no");
+	Say("Muèn chÕ t¹o 1 <color=yellow>"..tab_Content[nIndex][1].."<color> cÇn cã <color=yellow>"..tab_Content[nIndex][2].."<color>. Nh­ng ch­a ch¾c thµnh c«ng ®©u nhĞ! "..tab_Content[nIndex][6].."Lµm chø?", 2, "Ta muèn lµm /#make_crackers("..nIndex..")", "Ta ch­a s½n sµng!/no");
 end;
 
 tab_material = {
-{1351, "Ğ¡±¬Öñ"},
-{1352, "ÖĞºÅ±¬Öñ"},
-{1353, "´ó±¬Öñ"},
-{-1, " Á½"},
+{1351, "Ph¸o tiÓu"},
+{1352, "Ph¸o trung"},
+{1353, "Ph¸o ®¹i"},
+{-1, " l­îng"},
 };
 tab_Count = {
 {3, 0, 0, 0},
@@ -50,7 +50,7 @@ tab_Count = {
 }
 function make_crackers(nIndex)
 	if (CalcFreeItemCellCount() < 2) then
-		Say("ÇëÏÈÕûÀí±³°ü!", 0);
+		Say("Xin h·y s¾p xÕp l¹i hµnh trang tr­íc ®·!", 0);
 		return 1;
 	end;
 	
@@ -67,7 +67,7 @@ function make_crackers(nIndex)
 	end;
 	
 	if (nSucc == 0) then
-		Say("¿Í¹Ù²ÄÁÏ²»¹»£¡´ı»áÔÙÀ´°É£¡", 1, "Å¶£¡ÎÒÈ¥±¸ÆëÁËÔÙÀ´!/no");
+		Say("Kh¸ch quan ch­a ®ñ vËt liÖu! Xin quay l¹i sau nhĞ!", 1, "å! Ta ®i chuÈn bŞ thªm!/no");
 		return
 	end;
 	
@@ -78,20 +78,20 @@ function make_crackers(nIndex)
 	if (nSeed <= tab_Content[nIndex][3]) then	-- ³É¹¦ÁË
 		delmaterial(nIndex);
 		AddItem(6, 1, tab_Content[nIndex][4][1], 1,0,0,0);
-		str = "³É¹¦ÁË!ÕâÊÇ<color=yellow>"..tab_Content[nIndex][4][2].."<color>.";
-		Say(str.." ÇëÁìÈ¡!", 0);
+		str = "Thµnh c«ng råi! §©y lµ <color=yellow>"..tab_Content[nIndex][4][2].."<color>.";
+		Say(str.." Xin nhËn lÊy!", 0);
 		Msg2Player(str);
 	else
 		if (tab_Content[nIndex][5][1] == 1) then
 			ConsumeEquiproomItem(1, 6, 1, tab_Content[nIndex][5][2], -1);
-			str = "Õæµ¹Ã¹!ÄãËğÊ§1 <color=yellow>"..tab_Content[nIndex][5][3].."<color>.";
+			str = "Kh«ng may råi! Quı kh¸ch ®· mÊt 1 <color=yellow>"..tab_Content[nIndex][5][3].."<color>.";
 			Say(str, 0);
 			Msg2Player(str);
 		else
 			delmaterial(nIndex);
 			AddItem(6, 1, tab_Content[nIndex][5][2], 1,0,0,0);
-			str = "Õæµ¹Ã¹!Õâ´ÎÖ»µÃµ½1 <color=yellow>"..tab_Content[nIndex][5][3].."<color>."
-			Say(str.."ÇëÁìÈ¡!", 0);
+			str = "Kh«ng may råi! LÇn nµy chØ nhËn ®­îc 1 <color=yellow>"..tab_Content[nIndex][5][3].."<color>."
+			Say(str.." Xin nhËn lÊy!", 0);
 			Msg2Player(str);
 		end;
 	end;

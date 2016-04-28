@@ -1,5 +1,5 @@
 Include("\\script\\task\\150skilltask\\g_task.lua")
 
 function main()
-	G_TASK:OnMessage("ÔÂ¸èµº", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage("NguyÖt Ca §¶o", tbDailog, "DialogWithNpc")
 end

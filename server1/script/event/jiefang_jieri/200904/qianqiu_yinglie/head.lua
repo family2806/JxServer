@@ -106,7 +106,7 @@ function TB_QIANQIU_YINGLIE0904:sorter_award(game_level)
 		for i = 1, 3 do 
 			if tbPlayer[i] and tbPlayer[i] > 0 then
 				PlayerIndex = tbPlayer[i];
-				Msg2Player(format("ÅÅÃû: µÚ %d", i));
+				Msg2Player(format("B¶ng xÕp h¹ng ®iÓm: ®øng thø %d", i));
 				self:add_rank_award(i);
 			end
 		end
@@ -117,7 +117,7 @@ function TB_QIANQIU_YINGLIE0904:sorter_award(game_level)
 		for i = 1, 3 do
 			if tbPlayer[i] and tbPlayer[i] > 0 then
 				PlayerIndex = tbPlayer[i];
-				Msg2Player(format("Á¬Õ¶ÅÅÃû: µÚ %d", i));
+				Msg2Player(format("B¶ng xÕp h¹ng liªn tr¶m: ®øng thø %d", i));
 				self:add_rank_award(i);
 			end
 		end
@@ -128,7 +128,7 @@ function TB_QIANQIU_YINGLIE0904:sorter_award(game_level)
 		for i = 1, 3 do
 			if tbPlayer[i] and tbPlayer[i] > 0 then
 				PlayerIndex = tbPlayer[i];
-				Msg2Player(format("PKÅÅÃû:µÚ %d", i));
+				Msg2Player(format("B¶ng xÕp h¹ng PK: ®øng thø %d", i));
 				self:add_rank_award(i);
 			end
 		end
@@ -140,7 +140,7 @@ function TB_QIANQIU_YINGLIE0904:sorter_award(game_level)
 			for i = 1, 3 do
 				if tbPlayer[i] and tbPlayer[i] > 0 then
 					PlayerIndex = tbPlayer[i];
-					Msg2Player(format("ÍÀÉ±NPCÅÅÃû£ºµÚ %d", i));
+					Msg2Player(format("B¶ng xÕp h¹ng giÕt NPC: ®øng thø %d", i));
 					self:add_rank_award(2);
 				end
 			end
@@ -157,14 +157,14 @@ function TB_QIANQIU_YINGLIE0904:add_rank_award(nrank)
 	
 	if (nrank == 1) then
 		if CalcFreeItemCellCount()== 0 then
-			Msg2Player("±³°ü¿Õ¼ä¿ÉÄÜ²»×ã£¬²»ÄÜÁìÈ¡´ó½«¾üÃæ¾ß");
+			Msg2Player("Kho¶ng trèng hµnh trang kh«ng ®ñ, kh«ng thÓ nhËn mÆt n¹ ®¹i t­íng qu©n");
 		else
 			local n_itemidx = AddItem(0,11,446,1,1,0);
 			if (n_itemidx > 0) then
 				--ITEM_SetLeftUsageTime(n_itemidx, 60);
 				--ITEM_SetExpiredTime(n_itemidx, self.ItemEnd);
 				SyncItem(n_itemidx);
-				Msg2Player(format("µÃµ½ %d %s", 1, "´ó½«¾üÃæ¾ß"));
+				Msg2Player(format("NhËn ®­îc %d %s", 1, "MÆt n¹ §¹i T­íng qu©n"));
 			end
 		end
 	end
@@ -184,9 +184,9 @@ function TB_QIANQIU_YINGLIE0904:add_rank_award(nrank)
 	end
 	
 	if nLiBaoCount == 3 then
-		Msg2Player(format("µÃµ½  %d %s", nLiBaoCount, "ËÎ½ðÀñ°ü"));
+		Msg2Player(format("NhËn ®­îc %d %s", nLiBaoCount, "Tèng Kim lÔ bao"));
 	else
-		Msg2Player(format("ÓÉÓÚ±³°ü¿Õ¼ä²»×ã, Ö»ÄÜÁìÈ¡ %d %s", nLiBaoCount, "ËÎ½ðÀñ°ü"));
+		Msg2Player(format("Do v× chç trèng hµnh trang kh«ng ®ñ, chØ nhËn ®­îc %d %s", nLiBaoCount, "Tèng Kim lÔ bao"));
 	end
 end
 
@@ -194,7 +194,7 @@ end
 function TB_QIANQIU_YINGLIE0904:add_end_award(tb_player, b_win)
 	local game_level = BT_GetGameData(GAME_LEVEL);
 	local nExpiredDate = FormatTime2Date(7 * 24 * 60 *60 + GetCurServerTime());
-	local tb_award = {tbProp = {6,1,2005,1,1,0}, szName = "ËÎ½ðÀñ°ü",  nCount = 1+b_win, nExpiredTime = nExpiredDate};
+	local tb_award = {tbProp = {6,1,2005,1,1,0}, szName = "Tèng Kim lÔ bao",  nCount = 1+b_win, nExpiredTime = nExpiredDate};
 	 
 	if (game_level == 3) then
 		local old_player = PlayerIndex;
@@ -204,7 +204,7 @@ function TB_QIANQIU_YINGLIE0904:add_end_award(tb_player, b_win)
 			
 			if (player_total_point >= 6000 and self:check_right() == 1) then
 				tbAwardTemplet:GiveAwardByList(tb_award);
-				Msg2Player(format("ÓÉÓÚËÎ½ðµãÔÚ6000ÒÔÉÏ£¬Òò´Ë¿ÉÒÔÁìÈ¡ %dËÎ½ðÀñ°ü", tb_award.nCount))
+				Msg2Player(format("Do v× ®iÓm tèng kim trªn 6000, nªn sÏ ®­îc th­ëng %d Tèng Kim lÔ bao", tb_award.nCount))
 			end
 		end
 		PlayerIndex = old_player;
@@ -240,13 +240,13 @@ function TB_QIANQIU_YINGLIE0904:add_lucky_award(tb_player)
 		if BT_GetData(PL_TOTALPOINT) >= 3000 then
 			
 			if CalcFreeItemCellCount()== 0 then
-				 Msg2Player("±³°ü¿Õ¼ä¿ÉÄÜ²»×ã£¬²»ÄÜÁìÈ¡ÔªË§Ãæ¾ß");
+				 Msg2Player("Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ nhËn ®­îc mÆt n¹ nguyªn so¸i");
 			else
 				nLuckyCount=nLuckyCount+1;
 				local n_itemidx = AddItem(0,11,447,1,1,0);
 				if (n_itemidx > 0) then
 					SyncItem(n_itemidx);
-					Msg2Player(format("µÃµ½ %d %s", 1, "ÔªË§Ãæ¾ß"));
+					Msg2Player(format("NhËn ®­îc %d %s", 1, "MÆt n¹ Nguyªn so¸i"));
 				end
 			end
 		end

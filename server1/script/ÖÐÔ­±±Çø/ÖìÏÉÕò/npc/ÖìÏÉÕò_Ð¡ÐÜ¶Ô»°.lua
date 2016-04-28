@@ -7,16 +7,16 @@
 function main()
 	UTask_world40 = GetTask(68)
 	if (UTask_world40 == 1) then
-		Talk(2,"","Ğ¡ĞÖµÜ£¬¿´µ½Ë«Ë«½ã½ãµÄ½äÖ¸ÁËÂğ?","ÎÒ¿´µ½ÄãÕòÎ÷±ßµÄÆòØ¤¼ñµ½Ò»¸ö½äÖ¸£¬²»¶®ÊÇ²»ÊÇË«Ë«½ã½ãµÄ?")
-		AddNote("Ë«Ë«¹ÃÄïµÄ½äÖ¸¿ÉÄÜ±»ÆòØ¤ÄÃ×ßÁË. ")
+		Talk(2,"","TiÓu huynh ®Ö, cã thÊy chiÕc nhÉn cña Song Song tû tû kh«ng?","Ta thÊy ng­êi ¨n mµy phİa T©y trÊn nhÆt ®­îc mét chiÕc nhÉn, kh«ng biÕt cã ph¶i cña Song Song tû tû kh«ng?")
+		AddNote("ChiÕc nhÉn cña Song Song c« n­¬ng cã thÓ ®· bŞ ng­êi ¨n mµy lÊy ®i. ")
 		SetTask(68,2)
-		Msg2Player("Ë«Ë«¹ÃÄïµÄ½äÖ¸¿ÉÄÜ±»ÆòØ¤ÄÃ×ßÁË. ")
+		Msg2Player("ChiÕc nhÉn cña Song Song c« n­¬ng cã thÓ ®· bŞ ng­êi ¨n mµy lÊy ®i. ")
 	else
 		i = random(0,1)
 		if (i == 0) then
-			Talk(1,"","Ë«Ë«½ã½ã¶ÔÎÒºÜºÃ.")
+			Talk(1,"","Song Song tû tû rÊt tèt víi ta.")
 		else
-			Talk(1,"","¸Ğ¾õÕòÎ÷±ßµÄÆòØ¤ÓĞµãÆæ¹Ö.")
+			Talk(1,"","a c¶m thÊy ng­êi ¨n mµy ë phİa T©y trÊn cã c¸i g× ®ã h¬i kú qu¸i.")
 		end
 	end
 end;

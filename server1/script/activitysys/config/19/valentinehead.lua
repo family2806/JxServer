@@ -31,40 +31,40 @@ ACTIVITY_MAP = {1,11,37,176,162,78,80, 174,121,153,101,99,100,20,53}
 NPC_DATA = {}
 
 ACTIVITY_TREE_NAME_XIANGSI = {
-											"ÏàË¼Ê÷Ñ¿",
-											"Ð¡ÏàË¼Ê÷",
-											"ÏàË¼Ê÷¿ª»¨",
-											"ÏàË¼Ê÷½áÂúÏàË¼¶¹",
+											"MÇm C©y T­¬ng T­",
+											"C©y T­¬ng T­ Nhá",
+											"C©y T­¬ng T­ Në Hoa",
+											"C©y T­¬ng T­ në ®Çy §Ëu T­¬ng T­",
 											}
 ACTIVITY_TREE_TALK_XIANGSI			= {
-											"ºì¶¹ÉúÄÏ¹ú£¬´ºÀ´·¢¼¸Ö¦",
-											"Ô¸¾ý¶à²Éß¢,´ËÎï×îÏàË¼",
-											"ÇéÈËÔ¹Ò££¬¾¹Ï¦ÆðÏàË¼",
-											"³¤ÏàË¼£¬³¤ÏàË¼£¬ÈôÎÊÏàË¼ÉõÁËÆÚ£¬³ý·ÇÏà¼ûÊ±.",
-											"³¤ÏàË¼£¬³¤ÏàË¼£¬Óû°ÑÏàË¼ËµËÆË­£¬Ç³ÇéÈË²»Öª.",
-											"³¤ÏàË¼Ùâ³¤ÏàÒä£¬¶ÌÏàË¼ÙâÎÞÇî¼«.",
+											"Hång §Ëu Sinh Nam Quèc, Xu©n Lai Ph¸t Kû Chi",
+											"NguyÖn Qu©n §a Th¸i HiÖt, Thö VËt Tèi T­¬ng T­.",
+											"T×nh Nh©n O¸n Dao, C¶nh TÞch Khëi T­¬ng T­.",
+											"Tr­êng T­¬ng T­, Tr­êng T­¬ng T­, Nh­îc VÊn T­¬ng T­ ThËm LiÔu Kú, Trõ Phi T­¬ng KiÕn Thêi.",
+											"Tr­êng T­ng T­, Tr­êng T­¬ng T­, Dôc B¶ T­¬ng T­ ThuyÕt T­ Thïy, ThiÓn T×nh Nh©n BÊt Tri.",
+											"Tr­êng T­¬ng T­ HÒ Tr­êng T­¬ng ¦c, §o¶n T­¬ng T­ HÒ V« Cïng Cùc.",
 										  }
 ACTIVITY_TREE_NAME_ROSE =	{
-											"Ãµ¹å»¨ÄÛÑ¿",
-											"Ð¡Ãµ¹åÊ÷",
-											"Ãµ¹åÊ÷Î´¿ª»¨",
-											"Ãµ¹åÊ÷¿ªÂú»¨",
+											"MÇm hoa hång",
+											"C©y Hoa Hång Non",
+											"C©y hoa hång ch­a træ hoa",
+											"C©y hoa hång në ®Çy hoa",
 											}
 ACTIVITY_TREE_TALK_ROSE			= {
-											"¾ýÐÄËÆÎÒÐÄ",
-											"Ö´×ÓÖ®ÊÖ Óë×Ó½ÔÀÏ.",
-											"´ËÇéÎÞ¼Æ¿ÉÏû³ý£¬²ÅÏÂÃ¼Í·£¬È´ÉÏÐÄÍ·.",
-											"ÎÒÓûÓë¾ýÏàÖª",
-											"Ô¸ÌìÏÂÓÐÇéÈËÖÕ³É¾ìÊô.",
+											"Qu©n T©m Tù Ng· T©m",
+											"ChÊp Tö Chi Thñ, D÷ Tö Giai L·o.",
+											"Thö T×nh V« KÕ Tiªu Trõ,Tµi H¹ Mao §Çu, Kh­íc Th­îng T©m §Çu.",
+											"Ng· NguyÖn D÷ Qu©n T­¬ng Tri",
+											"NguyÖn Thiªn H¹ H÷u T×nh Nh©n Chung Thµnh Tr­íc Thuéc.",
 										  }
 ACTIVITY_TREE_NAME_QINGREN =	{
-											"ÇéÈËÊ÷Ñ¿",
-											"ÇéÈËÊ÷ÕýÔÚÉú³¤",
-											"ÇéÈËÊ÷ÕýÔÚÉú³¤",
-											"ÇéÈËÊ÷",
+											"MÇm C©y T×nh Nh©n",
+											"C©y T×nh Nh©n ®ang sinh tr­ëng",
+											"C©y T×nh Nh©n ®ang sinh tr­ëng",
+											"C©y t×nh nh©n",
 											}
 										  
-ACTIVITY_TREE_TASK_NAME	= {"½½Ë®", "Ê©·Ê", "¼ôÖ¦", "³ý³æ",}
+ACTIVITY_TREE_TASK_NAME	= {"T­íi n­íc", "Bãn ph©n", "C¾t cá d¹i", "B¾t s©u",}
 
 
 function AddMeiGuiOrXiangSiTree(tb, nNpcIndex)
@@ -257,13 +257,13 @@ function IsInValentine()
 	if ACTIVITY_STARTTIME <= nDate and nDate <= ACTIVITY_ENDTIME then
 		return 1
 	end
-	Msg2Player("²»ÊÇ»î¶¯Ê±ÆÚ£¬µÀ¾ßÎÞÐ§")
+	Msg2Player("Kh«ng ph¶i trong thêi gian diÔn ra ho¹t ®éng, ®¹o cô kh«ng cã hiÖu lùc")
 	return 0
 end
 
 function CheckValentineLevel()
 	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
-		Msg2Player("µÈ¼¶²»¹»!")
+		Msg2Player("§¼ng cÊp kh«ng ®ñ!")
 		return 0
 	end
 	return 1
@@ -280,7 +280,7 @@ end
 function CheckPlantConditionMeiGui()
 	local nTeamSize = GetTeamSize()
 	if nTeamSize ~= 2 then
-		lib:ShowMessage("ÐèÒª2¸öÈË×é¶Ó²ÅÄÜÖÖÃµ¹åÖÖ×Ó")
+		lib:ShowMessage("CÇn ph¶i cã 2 ng­êi tæ ®éi míi cã thÎ trång H¹t Gièng Hoa hång")
 		return 0
 	end
 	
@@ -290,7 +290,7 @@ function CheckPlantConditionMeiGui()
 	local nPlayer1Sex = DynamicExecuteByPlayer(nPlayer1Index, "", "GetSex")
 	local nPlayer2Sex = DynamicExecuteByPlayer(nPlayer2Index, "", "GetSex")
 	if (nPlayer1Sex + nPlayer2Sex ~= 1) or (nPlayer1Sex * nPlayer2Sex ~= 0) then
-		lib:ShowMessage("ÐèÒªÄÐÅ®×é¶Ó²ÅÄÜÖÖÃµ¹åÖÖ×Ó")
+		lib:ShowMessage("CÇn ph¶i nam n÷ tæ ®éi víi nhau míi cã thÓ trång H¹t Gièng Hoa Hång")
 		return 0
 	end
 	
@@ -304,7 +304,7 @@ function CheckPlantConditionMeiGui()
 		end
 	end
 	if nIsInMap == 0 then
-		lib:ShowMessage("ÐèÒªÔÚÆß´ó³ÇÇø¼°°Ë´óÐÂÊÖ´åÒÔÍâÖÖÃµ¹åÖÖ×Ó")
+		lib:ShowMessage("CÇn ph¶i trång H¹t Gièng hoa Hång ë ngoµi ThÊt §¹i Thµnh ThÞ vµ B¸t §¹i T©n Thñ Th«n")
 		return 0
 	end
 
@@ -318,20 +318,20 @@ function CheckPlantConditionMeiGui()
 	
 	local nFlag1 = CallPlayerFunction(nPlayer1Index, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
  	if nFlag1 ~= 1 then
-		lib:ShowMessage("ÇëÈ·ÈÏÓÐÔµÈËÓëÄã¶¼ÓÐºìÏßºóÈ¥ÖÖÃµ¹åÖÖ×Ó!")
+		lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn trång H¹t Gièng Hoa Hång!")
 		return 0
 	end
 	
 	local nFlag2 = CallPlayerFunction(nPlayer2Index, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
  	if nFlag2 ~= 1 then
-		lib:ShowMessage("ÇëÈ·ÈÏÓÐÔµÈËÓëÄã¶¼ÓÐºìÏßºóÈ¥ÖÖÃµ¹åÖÖ×Ó!")
+		lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn trång H¹t Gièng Hoa Hång!")
 		return 0
 	end
 
 	local nPlayer1ValentineNumber = DynamicExecuteByPlayer(nPlayer1Index, "", "pActivity.TaskGroup:GetTask", TASK_VALENTINENUMBER)
 	local nPlayer2ValentineNumber = DynamicExecuteByPlayer(nPlayer2Index, "", "pActivity.TaskGroup:GetTask", TASK_VALENTINENUMBER)
 	if NumberIsEven(nPlayer1ValentineNumber + nPlayer2ValentineNumber) ~= 1 then
-		lib:ShowMessage("2ÈËµÄÒöÔµÊýÐèÊÇÕûÊý»òÕßÊÇÄãµÄÊÀÓÑ!")
+		lib:ShowMessage("Sè Nh©n Duyªn cña 2 ng­êi ph¶i lµ sè cÆp ch½n hoÆc lµ b¹n ®êi cña ng­¬i !")
 		return 0
 	end
 	
@@ -348,7 +348,7 @@ function CheckPlantConditionXiangSi()
 		end
 	end
 	
-	lib:ShowMessage("ÐèÒªÔÚÆß´ó³ÇÊÐ¼°°Ë´óÐÂÊÖ´åÒÔÍâÖÖÏàË¼¶¹")
+	lib:ShowMessage("CÇn ph¶i trång §Ëu T­¬ng T­ ë ngoµi ThÊt §¹i Thµnh ThÞ vµ B¸t §¹i T©n Thñ Th«n")
 	return 0
 end
 
@@ -361,6 +361,6 @@ function CheckPlantConditionQingRen()
 		end
 	end
 	
-	lib:ShowMessage("ÐèÒªÔÚÆß´ó³ÇÊÐ¼°°Ë´óÐÂÊÖ´åÒÔÍâ²ÅÄÜÖÖÇéÈËÊ÷ÖÖ")
+	lib:ShowMessage("CÇn ph¶i sö dông ë ngoµi ThÊt §¹i Thµnh ThÞ vµ B¸t §¹i T©n Thñ Th«n míi cã thÓ trång H¹t C©y T×nh Nh©n")
 	return 0
 end

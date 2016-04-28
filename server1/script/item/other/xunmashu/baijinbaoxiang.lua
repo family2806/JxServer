@@ -6,7 +6,7 @@ IncludeLib("FILESYS")
 IL("LEAGUE")
 local _ShowMsg2All = function(nItemIndex)
 	local szItemName = GetItemName(nItemIndex)
-	local szMsg = format("¸ßÊÖ<color=green>%s<color> ÒÑ»ñµÃ<color=green>%s<color>.¹§Ï²!", GetName(), szItemName)
+	local szMsg = format("Cao thñ <color=green>%s<color> ®· thu ®­îc <color=green>%s<color>.Xin ®­îc chóc mõng!", GetName(), szItemName)
 	AddGlobalNews(szMsg)
 	LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", szMsg, "", "")
 end
@@ -21,7 +21,7 @@ local _AddCurExp = function(self, nItemCount, szLogTitle)
 	
 	if nRemainExp < nExp then
 		nExp = nRemainExp
-		Msg2Player(format("ÒÑ´ï×î¸ß¾­Ñé£¬´Ë´ÎÖ»»ñµÃ%d ¾­Ñé.", nExp))
+		Msg2Player(format("§· ®¹t ®Õn kinh nghiÖm cao nhÊt, lÇn nµy chØ thu ®­îc %d kinh nghiÖm.", nExp))
 	end
 	if nExp > 0 then
 		tbAwardTemplet:GiveAwardByList({nExp = nExp}, szLogTitle)
@@ -103,27 +103,27 @@ function main(nItemIndex)
 	end
 	
 	if GetItemParam(nItemIndex, 1) ~= 0 and GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
-		Talk(1,"", "¸ÃÎïÆ·ÒÑ¹ýÆÚ")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 		return 0
 	end
 	
 	local bRet, szFailMsg = tbXunMaShu0903:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(1, "", szFailMsg.."²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·.")
+		Talk(1, "", szFailMsg.."Kh«ng ®­îc sö dông vËt phÈm nµy.")
 		return 1
 	end
 	
 	
 	if CalcFreeItemCellCount() < 10 then
-		Talk(1, "", format("×°±¸×îÉÙÐèÒª %d ¿ÕÎ».", 10))
+		Talk(1, "", format("Hµnh trang cÇn Ýt nhÊt %d « trèng.", 10))
 		return 1
 	end
 	
 	
-	local szItemGroupName = format("%s v?%s", "»Æ½ð±¦Ïä", "°×½ð±¦Ïä")
+	local szItemGroupName = format("%s vµ %s", "Hoµng Kim B¶o r­¬ng", "B¶o r­¬ng B¹ch Kim")
 	if tbXunMaShu0903.tbTask:CheckExpFromOther() ~= 1 then
-		Msg2Player(format("Í¨¹ýÊ¹ÓÃ%s ×î¶àÖ»ÄÜ»ñµÃ%u ¾­Ñé¡£ÄúÒÑ´ïµ½×î¸ß¾­Ñé£¬²»ÄÜÔÙ»ñµÃÁË.", szItemGroupName, tbXunMaShu0903.tbTask.nMaxExpFromOther * 1e6) )
+		Msg2Player(format("Th«ng qua sö dông %s nhiÒu nhÊt chØ cã thÓ thu ®­îc %u kinh nghiÖm. Ng­¬i ®· ®¹t kinh nghiÖm cao nhÊt, kh«ng thÓ thu thªm kinh nghiÖm n÷a.", szItemGroupName, tbXunMaShu0903.tbTask.nMaxExpFromOther * 1e6) )
 	else
 		tbAwardTemplet:GiveAwardByList(%tbExpAward, "use bai jin bao xiang")	
 	end

@@ -12,7 +12,7 @@ Include("\\script\\event\\birthday_jieri\\200905\\class.lua");
 function main()
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
 	if 20090619 > nCurDate or nCurDate > 20090727 then	
-		Talk(1, "", "»î¶¯ÒÑ½áÊø.");
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.");
 		return 0;
 	end
 	
@@ -22,10 +22,10 @@ function main()
 	
 	if (tbBirthday0905.tbTask:get_task(tbBirthday0905.tbTask.tsk_zhuhe_maxexp) == tbBirthday0905.tbTask.nmaxexpfromzhuhe) then
 		tbBirthday0905.tbTask:add_zhuhe_maxexp();
-		Msg2Player("Éı¼¶»ñµÃ[ĞÂÅÌ¹Å]ºÍ[ĞÂÅÌÆÚ]ÏŞÖÆ¾­ÑéÎª3000000000 Exp")
+		Msg2Player("N©ng cÊp thu ®­îc giíi h¹n kinh nghiÖm cña hai vËt phÈm [T©n B¶n Cæ] vµ [T©n B¶n Kú] lµ 3000000000 Exp")
 	else
 		
-		Talk(1, "", "²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·.");
+		Talk(1, "", "Kh«ng ®­îc sö dông vËt phÈm nµy.");
 		return 1;
 		
 	end

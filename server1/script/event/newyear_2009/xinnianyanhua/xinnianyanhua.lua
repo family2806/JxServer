@@ -7,49 +7,49 @@ yanhua_gbtask	= "newyear0901";
 
 tb_yanhua_specialreward	=
 {
-	{szName	= "ÉñÃØ¿óÊ¯", 		tbProp = {6, 1, 398, 1, 0, 0}},
-	{szName = "ÉñÃØ¿óÊ¯", 		tbProp = {6, 1, 398, 1, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯",	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "6¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 6, 0, 0}},
-	{szName = "7¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 7, 0, 0}},
-	{szName = "7¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 7, 0, 0}},
-	{szName = "7¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 7, 0, 0}},
-	{szName = "7¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 7, 0, 0}},
-	{szName = "7¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 7, 0, 0}},
-	{szName = "8¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 8, 0, 0}},
-	{szName = "8¼¶Ðþ¾§¿óÊ¯", 	tbProp = {6, 1, 147, 8, 0, 0}},
-	{szName = "ÎäÁÖÃØ¼®", 		tbProp = {6, 1, 26, 1, 0, 0}},
-	{szName = "ÎäÁÖÃØ¼®", 		tbProp = {6, 1, 26, 1, 0, 0}},
-	{szName = "Ï´Ë®¾§", 		tbProp = {6, 1, 22, 1, 0, 0}},
-	{szName = "Ï´Ë®¾§", 		tbProp = {6, 1, 22, 1, 0, 0}},
-	{szName="°²°î±ù¾§ÏîÁ´",	nQuality=1,	tbProp={0, 164}},
-	{szName="°²°î¼¦ÑªÊ¯½äÖ¸", nQuality=1, tbProp={0, 167}},
-	{szName="°²°î¾Õ»¨Ê¯Ö¸»·", nQuality=1, tbProp={0, 165}},
-	{szName="°²°î¾Õ»¨Ê¯Ö¸»·", nQuality=1, tbProp={0, 165}},
-	{szName="ÈáÇé½íàþÄÞÉÑ", 	nQuality=1, tbProp={0, 190}},
-	{szName="×ÏË®¾§", 			tbProp={4, 239, 1, 1, 0, 0}},
-	{szName="×ÏË®¾§", 			tbProp={4, 239, 1, 1, 0, 0}},
-	{szName="×ÏË®¾§", 			tbProp={4, 239, 1, 1, 0, 0}},
-	{szName="×ÏË®¾§", 			tbProp={4, 239, 1, 1, 0, 0}},
-	{szName="×ÏË®¾§", 			tbProp={4, 239, 1, 1, 0, 0}},
-	{szName="À¶Ë®¾§", 			tbProp={4, 238, 1, 1, 0, 0}},
-	{szName="À¶Ë®¾§", 			tbProp={4, 238, 1, 1, 0, 0}},
-	{szName="À¶Ë®¾§", 			tbProp={4, 238, 1, 1, 0, 0}},
-	{szName="À¶Ë®¾§", 			tbProp={4, 238, 1, 1, 0, 0}},
-	{szName="À¶Ë®¾§", 			tbProp={4, 238, 1, 1, 0, 0}},
-	{szName="ÂÌË®¾§", 			tbProp={4, 240, 1, 1, 0, 0}},
-	{szName="ÂÌË®¾§", 			tbProp={4, 240, 1, 1, 0, 0}},
-	{szName="ÂÌË®¾§", 			tbProp={4, 240, 1, 1, 0, 0}},
-	{szName="ÂÌË®¾§", 			tbProp={4, 240, 1, 1, 0, 0}},
-	{szName="ÂÌË®¾§", 			tbProp={4, 240, 1, 1, 0, 0}},
+	{szName	= "ThÇn bÝ kho¸ng th¹ch", 		tbProp = {6, 1, 398, 1, 0, 0}},
+	{szName = "ThÇn bÝ kho¸ng th¹ch", 		tbProp = {6, 1, 398, 1, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6",	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 	tbProp = {6, 1, 147, 6, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 7", 	tbProp = {6, 1, 147, 7, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 7", 	tbProp = {6, 1, 147, 7, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 7", 	tbProp = {6, 1, 147, 7, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 7", 	tbProp = {6, 1, 147, 7, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 7", 	tbProp = {6, 1, 147, 7, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 8", 	tbProp = {6, 1, 147, 8, 0, 0}},
+	{szName = "HuyÒn Tinh Kho¸ng Th¹ch cÊp 8", 	tbProp = {6, 1, 147, 8, 0, 0}},
+	{szName = "Vâ L©m MËt TÞch", 		tbProp = {6, 1, 26, 1, 0, 0}},
+	{szName = "Vâ L©m MËt TÞch", 		tbProp = {6, 1, 26, 1, 0, 0}},
+	{szName = "TÈy Tñy Kinh", 		tbProp = {6, 1, 22, 1, 0, 0}},
+	{szName = "TÈy Tñy Kinh", 		tbProp = {6, 1, 22, 1, 0, 0}},
+	{szName="An Bang B¨ng Tinh Th¹ch H¹ng Liªn",	nQuality=1,	tbProp={0, 164}},
+	{szName="An Bang Kª HuyÕt Th¹ch Giíi ChØ ", nQuality=1, tbProp={0, 167}},
+	{szName="An Bang Cóc Hoa Th¹ch ChØ hoµn", nQuality=1, tbProp={0, 165}},
+	{szName="An Bang Cóc Hoa Th¹ch ChØ hoµn", nQuality=1, tbProp={0, 165}},
+	{szName="Nhu T×nh C©n Quèc Nghª Th­êng", 	nQuality=1, tbProp={0, 190}},
+	{szName="Tö Thñy Tinh", 			tbProp={4, 239, 1, 1, 0, 0}},
+	{szName="Tö Thñy Tinh", 			tbProp={4, 239, 1, 1, 0, 0}},
+	{szName="Tö Thñy Tinh", 			tbProp={4, 239, 1, 1, 0, 0}},
+	{szName="Tö Thñy Tinh", 			tbProp={4, 239, 1, 1, 0, 0}},
+	{szName="Tö Thñy Tinh", 			tbProp={4, 239, 1, 1, 0, 0}},
+	{szName="Lam Thñy Tinh", 			tbProp={4, 238, 1, 1, 0, 0}},
+	{szName="Lam Thñy Tinh", 			tbProp={4, 238, 1, 1, 0, 0}},
+	{szName="Lam Thñy Tinh", 			tbProp={4, 238, 1, 1, 0, 0}},
+	{szName="Lam Thñy Tinh", 			tbProp={4, 238, 1, 1, 0, 0}},
+	{szName="Lam Thñy Tinh", 			tbProp={4, 238, 1, 1, 0, 0}},
+	{szName="Lôc Thñy Tinh", 			tbProp={4, 240, 1, 1, 0, 0}},
+	{szName="Lôc Thñy Tinh", 			tbProp={4, 240, 1, 1, 0, 0}},
+	{szName="Lôc Thñy Tinh", 			tbProp={4, 240, 1, 1, 0, 0}},
+	{szName="Lôc Thñy Tinh", 			tbProp={4, 240, 1, 1, 0, 0}},
+	{szName="Lôc Thñy Tinh", 			tbProp={4, 240, 1, 1, 0, 0}},
 	{nExp = 20000000},
 	{nExp = 20000000},
 	{nExp = 10000000},
@@ -82,52 +82,52 @@ function newyear0901_yanhua_dialogmain(nItemIndex, szDescLink)
 	
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
-	local tbTalk = {"<dec>"..szDescLink.."»î¶¯ÆÚ¼äÍæ¼ÒËÍÎÒÒ»¸ö·¢²Æºì°ü¾Í¿ÉÒÔµÃµ½1¸öÑÌ»¨£¬Í¬Ê±ÓÐ»ú»áµÃµ½Ò»·ÝÌØ±ðÀñÎï¡£×¢Òâ£ºÃ¿ÌìÖ»ÄÜÊ¹ÓÃ1¸ö·¢²Æºì°ü£¬ÌØ±ð½±ÀøÖ»ÄÜÔÚ21:00ºóÁìÈ¡.",
-		"ÔùËÍ·¢²Æºì°ü/newyear0901_give_facaihongbao",
-		"ÁìÈ¡ÌØ±ð½±Àø/newyear0901_get_specialaward",
-		"ÎÒÖ»ÊÇÂ·¹ý./OnCancel"};
+	local tbTalk = {"<dec>"..szDescLink.."Trong thêi gian ho¹t ®éng ng­êi ch¬i tÆng ta 1 Ph¸t Tµi Hång Bao th× sÏ cã thÓ nhËn ®­îc 1 Ph¸o Hoa ®ång thêi cã c¬ héi nhËn ®­îc phÇn quµ ®Æc biÖt. Chó ý: mçi ngµy chØ cã thÓ sö dông 1 Ph¸t Tµi Hång Bao, nh÷ng phÇn th­ëng ®Æc biÖt chØ  nhËn ®­îc sau 21:00.",
+		"TÆng Ph¸t Tµi Hång Bao/newyear0901_give_facaihongbao",
+		"NhËn phÇn th­ëng ®Æc biÖt/newyear0901_get_specialaward",
+		"Ta chØ tiÖn ®­êng ®Õn ch¬i./OnCancel"};
 	CreateTaskSay(tbTalk);
 end
 
 function newyear0901_give_facaihongbao()
 	if (GetLevel() < 50 or GetExtPoint(0) < 1) then
-		Say("´óÏÀÎ´¹»50¼¶»òÕßÉÐÎ´³äÖµ£¬Òò´Ë²»ÄÜ²Î¼Ó»î¶¯", 0);
+		Say("§¹i hiÖp vÉn ch­a ®ñ cÊp 50 hoÆc vÉn ch­a nép thÎ, v× vËy kh«ng thÓ tham gia ho¹t ®éng", 0);
 		return
 	end
 	
 	local n_dateD = tonumber(GetLocalDate("%Y%m%d"));
 	if (GetTask(newyear0901_TSK_GetYanhuaDate) == n_dateD) then
-		Say("´óÏÀ½ñÌìÒÑ¾­½»¹ý·¢²Æºì°ü²¢ÇÒÒ²ÒÑÁìÈ¡ºØ´ºÑÌ»¨ÁË.", 0);
+		Say("§¹i hiÖp h«m nay ®· nép Ph¸t Tµi Hång Bao vµ ®· nhËn qua Ph¸o Hoa Mõng Xu©n råi.", 0);
 		return
 	end
 	
 	local n_dateH	= tonumber(GetLocalDate("%H"));
 	if (n_dateH >= 21) then
-		Say("½ñÌìÁìÈ¡ºØ´ºÑÌ»¨µÄÊ±¼äÒÑ¾­¹ýÁË£¬ÇëµÈµ½Ã÷Ìì°É.", 0);
+		Say("Thêi gian nhËn Ph¸o Hoa Mõng Xu©n cña h«m nay ®· qua råi, xin mêi ®îi ngµy mai.", 0);
 		return
 	end
 	
 	if (CalcFreeItemCellCount() < 1) then
-		Say("´óÏÀ±³°ü¿Õ¼ä²»¹»!",0);
+		Say("Hµnh trang cña ®¹i hiÖp kh«ng ®ñ chç trèng!",0);
 		return
 	end
 	
 	local nCount = CalcItemCount(3, 6, 1, 1893, -1); -- ·µ»Ø gdpµÀ¾ßµÄ¸öÊý
 	if (nCount <= 0) then
-		Say("´óÏÀµÄ±³°üÀï»¹Ã»ÓÐ·¢²Æºì°ü!", 0);
+		Say("Trªn hµnh trang ®¹i hiÖp vÉn ch­a cã Ph¸t Tµi Hång Bao!", 0);
 		return 
 	end
 	
 	local bP = ConsumeItem(3, 1, 6, 1, 1893, -1); --  ·µ»Ø1¿Û³ý³É¹¦£¬·µ»Ø0Ê§°Ü£¬nCountÎªÖ¸¶¨¿Û³ýµÄÊýÁ¿ 
 	if (bP <= 0) then
-		print("¿Û³ý·¢²Æºì°üÊ§°Ü!");
+		print("Trõ Ph¸t Tµi Hång Bao thÊt b¹i!");
 		return
 	end
 	
 	local n_itemid = AddItem(6, 1, 1929, 1, 0, 0);
 	ITEM_SetExpiredTime(n_itemid, 20090216);
 	SyncItem(n_itemid);
-	Say("¹§Ï²´óÏÀµÃµ½1¸öºØ´ºÑÌ»¨.", 0);
+	Say("Chóc mõng ®¹i hiÖp nhËn ®­îc 1 Ph¸o Hoa Mõng Xu©n.", 0);
 	
 	AddOwnExp(1000000);
 	n_dateD	= tonumber(GetLocalDate("%Y%m%d"));
@@ -139,22 +139,22 @@ function newyear0901_get_specialaward()
 	local n_dateD	= tonumber(GetLocalDate("%Y%m%d"));
 	local n_dateH	= tonumber(GetLocalDate("%H"));
 	if (n_dateH < 21) then
-		Say("ÏÖÔÚ²»ÊÇÁì½±Ê±¼ä£¬´ý»áÔÙÀ´°É.", 0);
+		Say("B©y giê kh«ng ph¶i lµ thêi gian nhËn th­ëng, xin mêi h·y quay l¹i sau.", 0);
 		return
 	end
 	
 	if (GetTask(newyear0901_TSK_GetYanhuaDate) ~= n_dateD) then
-		Say("½ñÌì´óÏÀ»¹Ã»ÓÐ½»·¢²Æºì°ü¸øÎÒ£¬ËùÒÔÃ»ÓÐ»ú»áÁì½±.", 0);
+		Say("H«m nay ®¹i hiÖp vÉn ch­a nép Ph¸t Tµi Hång Bao cho ta, nªn sÏ kh«ng cã c¬ héi nhËn th­ëng.", 0);
 		return
 	end
 	
 	if (GetTask(newyear0901_TSK_GetSpAwardDate)	== n_dateD)	then
-		Say("´óÏÀÒÑ¾­²ÎÓëÁË½ñÌìµÄÌØ±ðÁì½±.", 0);
+		Say("§¹i hiÖp ®· tham dù lÜnh phÇn th­ëng ®Æc biÖt cña h«m nay råi.", 0);
 		return
 	end
 	
 	if (gb_GetTask(yanhua_gbtask, 3) >= 60) then
-		Say("½ñÌìµÄÌØ±ð½±ÀøÒÑ¾­·¢·ÅÍêÁË£¬µÈµ½Ã÷ÌìÔÙÀ´°É.", 0);
+		Say("PhÇn quµ ®Æc biÖt h«m nay ®· ph¸t hÕt råi, xin mêi h·y chê ngµy mai.", 0);
 		return
 	end
 	
@@ -165,12 +165,12 @@ function newyear0901_get_specialaward()
 		tbAwardTemplet:GiveAwardByList(tb_award, "newyear0901_yanhua_specialaward");
 		gb_SetTask(yanhua_gbtask, 3, gb_GetTask(yanhua_gbtask, 3) + 1);
 		if (tb_award.nExp) then
-			Say(format("´óÏÀµÃµ½ %d¾­Ñé.", tb_award.nExp));
+			Say(format("§¹i hiÖp thu ®­îc %d kinh nghiÖm.", tb_award.nExp));
 		else
-			Say(format("¹§Ï²´óÏÀµÃµ½ %s", tb_award.szName));
+			Say(format("Chóc mõng ®¹i hiÖp nhËn ®­îc %s", tb_award.szName));
 		end
 	else
-		Say("Õæ¿ÉÏ§£¬´óÏÀÃ»ÓÐµÃµ½½ñÌìµÄÌØ±ð½±Àø£¬¼ÌÐøÅ¬Á¦°É£¡", 0);
+		Say("ThËt ®¸ng tiÕc, ®¹i hiÖp ®· kh«ng nhËn ®­îc phÇn th­ëng ®Æc biÖt cña ngµy h«m nay, h·y cè g¾ng thªm n÷a nhÐ!", 0);
 	end
 end
 

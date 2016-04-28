@@ -2,12 +2,12 @@ if not GREATNIGHT_HUANGZHIZHANG  then
 GREATNIGHT_HUANGZHIZHANG = 1
 
 Include("\\script\\lib\\gb_taskfuncs.lua")
-GN_EVENTNAME = "»ÍÖ®ÕÂ»î¶¯"
+GN_EVENTNAME = "Ho¹t ®éng Hoµng chi ch­¬ng"
 TB_HUANGZHIZHANG_EVENT = {
-		"ËÎ½ğÕ½³¡",
-		"ĞÅÊ¹ÈÎÎñ",
-		"ÌôÕ½Ê±¼ä",
-		"Ò°ÛÅÈÎÎñ",
+		"ChiÕn tr­êng Tèng Kim",
+		"NhiÖm vô Tİn Sø ",
+		"Th¸ch thøc thêi gian",
+		"Chuçi nhiÖm vô D· TÈu",
 		--"Í¬°é¾çÇéÈÎÎñĞŞÁ¶Æª£¬Í¬°éĞŞÁ¶ÈÎÎñ",
 	}
 GN_HUANG_EVENTID = 1
@@ -53,14 +53,14 @@ function huang_event_hint()
 	local swith, eventid, awardtimes = greatnight_huang_event()
 	if (swith == 1) then
 		return format("%s%s%s%s%s",
-				"»ÍÖ®ÕÂ»î¶¯´Ó <color=yellow>21h00 µ½23h00<color> Ã¿Íí. ÔÚ´ËÊ±¼ä¶Î²Î¼ÓÒ»¸öÒªÇó»î¶¯, ´óÏÀ¿ÉÁìÈ¡Ë«±¶½±Àø <enter>½ñÈÕµÄÒªÇó»î¶¯ÊÇ<enter>",
-				"ËÎ½ğ´óÕ½ <enter>",
-				"ÌôÕ½Ê±¼ä gian <enter>",
-				"Ò°ÛÅÈÎÎñ <enter>",
-				"Ã¿Íí<color=yellow>8µã<color>,Íæ¼Ò¿ÉÒÔµ½Àñ¹Ù´¦ÁË½â»î¶¯Ï¸½Ú. ²»Òª´íÊ§ÁìÈ¡¶À¹ÂÃËÖ÷ÀñÎïµÄ»ú»á")
+				"Ho¹t ®éng Hoµng chi ch­¬ng diÔn ra vµo <color=yellow>21h00 ®Õn 23h00<color> mçi tèi. Trong kho¶ng thêi gian nµy, ®¹i hiÖp sÏ ®­îc nh©n ®«i phÇn th­ëng khi tham gia mét ho¹t ®éng yªu cÇu. <enter>Ho¹t ®éng yªu cÇu ngµy h«m nay lµ: <enter>",
+				"Tèng Kim ®¹i chiÕn <enter>",
+				"Th¸ch thøc thêi gian <enter>",
+				"Chuçi nhiÖm vô D· TÈu <enter>",
+				"Mçi<color=yellow>8 giê tèi <color>, ng­êi ch¬i cã thÓ ®Õn LÔ quan ®Ó t×m hiÓu chi tiÕt ho¹t ®éng.§õng bá lì c¬ héi nhËn quµ cña §éc C« Minh Chñ.")
 		
 	else
-		return format("¡®»ÍÖ®ÕÂ¡¯»î¶¯µÄÊ±¼äÊÇ<color=yellow>21h00µ½23h00<color> Ã¿Íí. ½ñÍí»î¶¯ÊÇ£º <enter><color=yellow>%s<color><enter><enter>¸÷Î»´óÏÀ¸Ï¿ì±¨Ãû²Î¼Ó.",
+		return format("Thêi gian ho¹t ®éng 'Hoµng chi ch­¬ng' lµ <color=yellow>21h00 ®Õn 23h00<color> hµng ®ªm. Ho¹t ®éng ®ªm nay lµ:  <enter><color=yellow>%s<color><enter><enter>C¸c vŞ ®¹i hiÖp h·y nhanh ch©n b¸o danh tham gia.",
 					TB_HUANGZHIZHANG_EVENT[eventid])
 	end
 end
@@ -68,7 +68,7 @@ end
 function huang_event_name()
 	local swith, eventid, awardtimes = greatnight_huang_event()
 	if (swith == 1) then
-		return "»¹²»ÖªµÀ"
+		return "Ch­a biÕt"
 	else
 		return TB_HUANGZHIZHANG_EVENT[eventid]
 	end
@@ -76,24 +76,24 @@ end
 
 function huang_event_msg()
 	local name = huang_event_name()
-	return format("½ñÍíµÄ¡®»ÍÖ®ÕÂ»î¶¯¡¯½«ÓÚ21h00¿ªÊ¼,ÁìÈ¡Ë«±¶½±ÀøµÄÏà¹Ø»î¶¯ÊÇ£º<color=yellow>%s<color>",name)
+	return format("Ho¹t ®éng Hoµng chi ch­¬ng sÏ diÔn ra lóc 21h00 ®ªm nay, ho¹t ®éng nh©n ®«i phÇn th­ëng liªn quan lµ: <color=yellow>%s<color>",name)
 end
 
 function seed_birth_city()
-	local MapStr = "ÑïÖİ¶«ÃÅ";
-	if (1 == gb_GetTask("»Ô»ÍÖÖ×Ó", 1)) then
-		MapStr = "´óÀí±±ÃÅ";
+	local MapStr = "§«ng m«n D­¬ng Ch©u";
+	if (1 == gb_GetTask("h¹t Huy Hoµng", 1)) then
+		MapStr = "B¾c m«n §¹i Lı ";
 	end;
-	return format("½ñÌìÖĞÎç12h00½«¿ªÊ¼»ÔÖ®ÕÂµÄ»î¶¯, »Æ½ğÖ®¹û½«³öÏÖÔÚ<color=yellow>%s<color>",MapStr)
+	return format("12h00 tr­a nay sÏ b¾t ®Çu ho¹t ®éng Huy chi ch­¬ng, qu¶ Hoµng Kim sÏ xuÊt hiÖn t¹i <color=yellow>%s<color>",MapStr)
 end
 
 if EVENTS_TB then 
 EVENTS_TB[getn(EVENTS_TB)+1] = {	--»ÔÖ®ÕÂ
-			name = "»Ô»Í",
+			name = "Huy Hoµng",
 			describe = seed_birth_city
 		}
-EVENTS_TB[getn(EVENTS_TB)+1] = {	--»ÍÖ®ÕÂ
-			name = "»ÍÖ®ÕÂ",
+EVENTS_TB[getn(EVENTS_TB)+1] = {	--Hoµng chi ch­¬ng
+			name = "Hoµng chi ch­¬ng",
 			describe = huang_event_msg
 		}
 end

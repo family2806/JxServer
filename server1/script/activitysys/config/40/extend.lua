@@ -82,7 +82,7 @@ end
 
 function pActivity:GetOnLineAward()
 	if ST_GetTransLifeCount() < 2 and GetLevel() < 120 then	
-		Say("µÈ¼¶²»×ã120, ´ïµ½ÁËÀ´¼ûÎÒ!")
+		Say("CÊp ch­a ®ñ 120, ®¹t h·y tíi gÆp ta!")
 		return
 	end		
 	local nDate = self:GetTask(%TSK_LAST_ONLINEDATE)
@@ -105,29 +105,29 @@ function pActivity:GetOnLineAward()
 	end
 	nCount = nHour	
 	if nCount <= 0 then
-		Msg2Player("ÉÏ´ÎÁìÈ¡Ê±¼ä¼ä¸ô£¬ÄãµÄÉÏÍøÊ±¼ä²»×ã1Ğ¡Ê±£¬²»ÄÜÁìÈ¡")
+		Msg2Player("Kho¶ng c¸ch nhËn lÇn tr­íc, thêi gian trªn m¹ng cña ng­¬i ch­a ®ñ 1 giê, kh«ng thÓ nhËn")
 		return 
 	end
 	local nMaxCount = %MAX_DAILY_LUCK_BELT -  self:GetTaskDaily(%TSK_DAILY_LUCK_BELT)
 	nMaxCount = min(nMaxCount, nCount)
 	if nMaxCount <= 0 then
-		Msg2Player("½ñÌìÄã²»ÄÜÁìÁË£¬Ã÷ÌìÔÙÀ´°É.")
+		Msg2Player("H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.")
 		return 
 	end
 	if PlayerFunLib:CheckFreeBagCell(1,"default") ~= 1 then
-		Msg2Player("ÄãµÄ×°±¸²»×ã£¬°²ÅÅºÃÔÙÀ´¼ûÎÒ!")
+		Msg2Player("Hµnh trang cña ng­êi kh«ng ®ñ, s¾p xÕp l¹i h·y gÆp ta!")
 		return
 	end
 	self:SetTask(%TSK_LAST_ONLINEDATE, nNowDate)
 	self:SetTask(%TSK_LAST_ONLINETIME, nCurrentOnLineTime)
 	self:AddTaskDaily(%TSK_DAILY_LUCK_BELT, nMaxCount)	
-	PlayerFunLib:GetItem(%ITEM_LUCY_BELT, nMaxCount, %EVENT_LOG_TITLE, "ÁìĞÒÔË´ü")
+	PlayerFunLib:GetItem(%ITEM_LUCY_BELT, nMaxCount, %EVENT_LOG_TITLE, "NhanTuiMayMan")
 --	self:UpdateLastLoginTime()
 --	local nLastDate = self:GetTask(%TSK_LAST_ONLINEDATE)
 --	local nLastTime = self:GetTask(%TSK_LAST_ONLINETIME)
 --	local nCurrDate, nCurrTime = self:GetCurrentTime()
 --	if nLastTime > %NUM_ONLINE_END_TIME then
---		Say("Ã¿Ìì´Ó9Ê±µ½17Ê±Á¬ĞøÔÚÏß³¬¹ı1¸öĞ¡Ê±²ÅÄÜÁì½±")
+--		Say("Mçi ngµy tõ 9 giê ®Õn 17 giê oline liªn tôc cø qua 1 tiÕng ®ång hå míi cã thÓ nhËn th­ëng")
 --		return
 --	end
 --	
@@ -141,7 +141,7 @@ function pActivity:GetOnLineAward()
 --	end
 --	
 --	if nHour < 1 then
---		Say("Ã¿Ìì´Ó9Ê±µ½17Ê±Á¬ĞøÔÚÏß³¬¹ı1¸öĞ¡Ê±²ÅÄÜÁì½±")
+--		Say("Mçi ngµy tõ 9 giê ®Õn 17 giê oline liªn tôc cø qua 1 tiÕng ®ång hå míi cã thÓ nhËn th­ëng")
 --		return 
 --	end 
 --	
@@ -149,7 +149,7 @@ function pActivity:GetOnLineAward()
 --	local nCount = min(nHour, (%MAX_DAILY_LUCK_BELT - nGetCount))
 --	
 --	if nCount < 1 then
---		Say("½ñÌìÄã²»ÄÜÁìÁË£¬Ã÷ÌìÔÙÀ´°É.")
+--		Say("H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.")
 --		return
 --	end
 --	
@@ -158,7 +158,7 @@ function pActivity:GetOnLineAward()
 --	self:SetTask(%TSK_LAST_ONLINEDATE, nLastDate)
 --	self:SetTask(%TSK_LAST_ONLINETIME, nLastTime)
 --	self:AddTaskDaily(%TSK_DAILY_LUCK_BELT, nCount)
---	PlayerFunLib:GetItem(%ITEM_LUCY_BELT, nCount, %EVENT_LOG_TITLE, "ÁìĞÒÔË´ü")
+--	PlayerFunLib:GetItem(%ITEM_LUCY_BELT, nCount, %EVENT_LOG_TITLE, "NhanTuiMayMan")
 	
 end
 
@@ -204,7 +204,7 @@ end
 function pActivity:UseCorbeil()
 	local tbAward = %tbAward_Ext["Corbeil"]
 	local nCount = self:GetTask(%TSK_CORBEIL)
-	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "Ê¹ÓÃÓÀ¾ÃÃµ¹åÀ¶"})
+	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "SuDungGioHoaHongVinhCuu"})
 	
 	local tbItemLog = %tbItemOtherAward["Corbeil"]
 	if tbItemLog[nCount + 1] then

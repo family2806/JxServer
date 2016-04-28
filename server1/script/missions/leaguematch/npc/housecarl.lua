@@ -5,12 +5,12 @@ Include( "\\script\\missions\\leaguematch\\npc\\head.lua" )
 
 function main()
 	local mm = ceil(( WLLS_TIMER_PREP_TOTAL - GetGlbValue(GLB_WLLS_TIME)) * WLLS_TIMER_PREP_FREQ / 60 )
-	local tb_option = wlls_add_option({"ÈÃÎÒ×¼±¸ÏÈ®·!/wlls_want2leave"}, "¼ÌĞøÁªÈü")
-	Say("»á³¡ÊÌÎÀ£º¿ªÊ¼ÁªÈüÊ±¼ä»¹Ê£"..mm.."·ÖÖÓ£¬Äã×¼±¸ºÃÁËÂğ?", getn(tb_option), tb_option)
+	local tb_option = wlls_add_option({"Rêi khái!/wlls_want2leave"}, "Kh«ng cÇn")
+	Say("Cßn "..mm.." phót n÷a sÏ b¾t ®Çu, ng­¬i muèn rêi khái?", getn(tb_option), tb_option)
 end
 
 function wlls_want2leave()
-	Say("»á³¡ÊÌÎÀ£ºÄãÒ»¶¨ÏëÀë¿ª£¿×¼±¸ÁªÈüÁË£¬²»Òª´í¹ıÁªÈüÊ±¼ä!", 2, "ÎÒÏëÀë¿ªÕâÀï!/wlls_sure2leave", "ÎÒÏëÁôÔÚÕâÀïÁªÈü!/OnCancel")
+	Say("Ng­¬i ch¾c ch¾n muèn rêi khái kh«ng ?", 2, "Ta muèn ra khái ®©y!/wlls_sure2leave", "Kh«ng cã g×!/OnCancel")
 end
 
 function wlls_sure2leave()

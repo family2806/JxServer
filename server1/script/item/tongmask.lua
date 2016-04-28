@@ -6,15 +6,15 @@ end
 function  main(nItem)
 	local _Name, nTongID = GetTongName()
 	if(nTongID == 0) then
-		Msg2Player("Äã²»ÔÚ°ï»áÖĞ£¬ÎŞ·¨Ê¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("Kh«ng ë trong bang héi, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 	local figure = TONGM_GetFigure(nTongID, GetName())
 	if (figure == TONG_MASTER or figure == TONG_ELDER)then
-		Say("<#>°ï»áÃæ¾ß¿ÉÒÔ°Ñ°ï»áÈ«ÌåÔÚÏß³ÉÔ±±ä³ÉÍ¬Ò»Ä£Ñù3¸öĞ¡Ê±£¬ÒªÊ¹ÓÃÂğ£¿", 2, "àÅ£¬ÎÒÃÇÒªÍ³Ò»×°°ç/#yes("..nItem..")", "ÏÈ²»Ê¹ÓÃ/no");
+		Say("<#>MÆt n¹ bang héi cã thÓ gióp cho toµn thÓ thµnh viªn c¶i trang gièng nhau trong vßng 3 giê, cã muèn sö dông kh«ng?", 2, "Tæ ®éi ta sÏ c¶i trang gièng nhau./#yes("..nItem..")", "T¹m thêi kh«ng/no");
 		return 1
 	else
-		Msg2Player("Äã¼È·Ç°ïÖ÷ÓÖ·Ç³¤ÀÏ£¬ÎŞ·¨Ê¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("ChØ cã bang chñ hoÆc tr­ëng l·o míi cã thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 end
@@ -22,12 +22,12 @@ end
 function yes(nItem)
 	local a,b = GetTongName();
 	if(b == 0) then
-		Msg2Player("Äã²»ÔÚ°ï»áÖĞ£¬ÎŞ·¨Ê¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("Kh«ng ë trong bang héi, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 	local figure = TONGM_GetFigure(b, GetName())
 	if (figure ~= TONG_MASTER and figure ~= TONG_ELDER)then
-		Msg2Player("Äã¼È·Ç°ïÖ÷ÓÖ·Ç³¤ÀÏ£¬ÎŞ·¨Ê¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("ChØ cã bang chñ hoÆc tr­ëng l·o míi cã thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end	
 	local name = GetName();
@@ -36,7 +36,7 @@ function yes(nItem)
 		return
 	end
 	TONG_ChangeAllMemberFeature(b,nfeature,194400)
-	Msg2Tong(b, name.."Ê¹ÓÃÁË°ï»áÃæ¾ß£¬ÔÚÏß°ï»á³ÉÔ±±ä³ÉÁËÍ¬Ò»Ä£Ñù£¬³ÖĞø3Ğ¡Ê±");
+	Msg2Tong(b, name.."Sö dông mÆt n¹ bang héi, thµnh viªn trªn m¹ng c¶i trang gièng nhau, kĞo dµi trong 3 giê.");
 end
 
 function GetDesc(nItem)

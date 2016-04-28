@@ -8268,7 +8268,7 @@ tbJiaoShi2009.tbHuaDeng =
 
 function tbJiaoShi2009:AddHuaDeng()
 	for i=1, getn(self.tbHuaDeng) do
-		ClearMapNpcWithName(self.tbHuaDeng[i].nMapId, "»¨µÆ")
+		ClearMapNpcWithName(self.tbHuaDeng[i].nMapId, "Hoa ®¨ng")
 	end
 	
 	for i=1, getn(self.tbHuaDeng) do
@@ -8276,7 +8276,7 @@ function tbJiaoShi2009:AddHuaDeng()
 		local nPos = getn(self.tbHuaDeng[i].tbPos)
 		for j=1,200 do
 			local nIdx = random(1,nPos - j + 1)
-			local nNpcIdx = AddNpc(1077, 1, SId, self.tbHuaDeng[i].tbPos[nIdx][1] * 32, self.tbHuaDeng[i].tbPos[nIdx][2] * 32, 1, "»¨µÆ");
+			local nNpcIdx = AddNpc(1077, 1, SId, self.tbHuaDeng[i].tbPos[nIdx][1] * 32, self.tbHuaDeng[i].tbPos[nIdx][2] * 32, 1, "Hoa ®¨ng");
 			if nNpcIdx > 0 then
 				SetNpcScript(nNpcIdx, "\\script\\event\\jiaoshi_jieri\\200910\\huadeng.lua")
 			end

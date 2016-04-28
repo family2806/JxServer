@@ -131,7 +131,7 @@ WorthAnalyse = inherit(LError,{
 		if(not worth) then worth = 0 end
 		--´ËÔËËãÉæ¼°È¡µ¹Êý£¬ËùÒÔ²»ÄÜÐ¡Êý,0±»ÌØÊâ´¦Àí
 		if(worth>0 and worth < 1) then
-			self:__notify(1000,"¼ÛÖµÁ¿²»ÄÜÎªÐ¡Êý¡£")
+			self:__notify(1000,"gi¸ trÞ biÕn l­îng kh«ng thÓ lµ sè thËp ph©n")
 			return nil
 		end
 		if(not self.__worth) then
@@ -269,7 +269,7 @@ WorthAnalyse = inherit(LError,{
 --==================================================--
 	getFromBase = function(self)
 		if(not self.__baseP) then
-			self:__notify(300,"»ù±¾¸ÅÂÊ±í²»´æÔÚ¡£")
+			self:__notify(300,"B¶ng x¸c xuÊt c¬ b¶n kh«ng tån t¹i..")
 			return nil
 		end
 		local rnd = random()
@@ -280,7 +280,7 @@ WorthAnalyse = inherit(LError,{
 				return i
 			end
 		end
-		self:__notify(500,"ÎÞ·¨Ñ¡³öºÏÊÊÏîÄ¿¡£")
+		self:__notify(500,"Kh«ng thÓ chän ra h¹ng môc thÝch hîp.")
 		return nil
 	end,
 
@@ -316,7 +316,7 @@ WorthAnalyse = inherit(LError,{
 				return i
 			end
 		end
-		self:__notify(500,"ÎÞ·¨Ñ¡³öºÏÊÊÏîÄ¿¡£")
+		self:__notify(500,"Kh«ng thÓ chän ra h¹ng môc thÝch hîp.")
 		return nil
 	end,
 

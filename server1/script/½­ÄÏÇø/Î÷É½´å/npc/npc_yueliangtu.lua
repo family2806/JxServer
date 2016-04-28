@@ -2,6 +2,6 @@
 -- ÀîĞÀ 2005-01-25
 
 function main()
-	Say("çùçù²»ÖªµÀÔõÃ´ÁË£¬ºÃÏñÓĞÊ²Ã´ÊÂÇéÒª·¢Éú.",0)
+	Say("Kú Kú lóc nµy kh«ng biÕt lµm sao ®ã, h×nh nh­ cã chuyÖn g× th× ph¶i.",0)
 end;
 

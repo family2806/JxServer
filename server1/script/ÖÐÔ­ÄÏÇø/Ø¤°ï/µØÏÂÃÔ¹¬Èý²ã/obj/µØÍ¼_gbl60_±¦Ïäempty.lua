@@ -3,8 +3,8 @@
 
 function main()
 	if (GetTask(8) == 60*256+10) then
-		Talk(2,"","´ò¿ªÏä×Ó.","ÄãÊ§Íû£¬ÒòÎªÏä×Ó¿Õ¿ÕµÄ.")
+		Talk(2,"","Më b¶o r­¬ng ra.","B¹n thÊt väng v× chiÕc r­¬ng nµy trèng rçng.")
 	else
-		Talk(1,"","±¦ÏäËøÁË")
+		Talk(1,"","B¶o r­¬ng nµy ®· khãa råi")
 	end
 end;

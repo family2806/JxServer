@@ -3,7 +3,7 @@ function OnTimer()
 	local timer_1 = GetMissionV( MS_TIME_1 ) + 1
 	SetMissionV( MS_TIME_1, timer_1 )
 	if ( timer_1 == UP_A_TIME ) then
-		Msg2MSAll( MISSIONID, "<color=yellow>ÎäÁÖĞÂĞãÁªÈü×¼±¸½×¶ÎÒÑ½áÊø£¬ÕıÊ½±ÈÈü¿ªÊ¼." );
+		Msg2MSAll( MISSIONID, "<color=yellow>Thêi gian chuÈn bŞ thi ®Êu m«n ph¸i kiÖt xuÊt ®· kÕt thóc, thi ®Êu chİnh thøc b¾t ®Çu." );
 print("match start!!!!**************************************************************start")
 		SetMissionV( MS_STATE, 2 );
 		RunMission( MISSIONID )
@@ -12,9 +12,9 @@ print("match start!!!!**********************************************************
 		RestMin = floor( gametime / 60 );
 		RestSec = mod( gametime,60 );
 		if ( RestMin == 0 ) then
-			Msg2MSAll( MISSIONID, "<#> Õ½¶·½×¶Î£ºÃÅÅÉÎäÁÖĞÂĞãÁªÈüÊ±¼ä»¹Ê£"..RestSec.."<#> Ãë." );
+			Msg2MSAll( MISSIONID, "<#> Giai ®o¹n chiÕn ®Êu: Thêi gian thi ®Êu kiÖt xuÊt m«n ph¸i cßn l¹i"..RestSec.."<#> gi©y." );
 		elseif (RestSec == 0) then
-			Msg2MSAll( MISSIONID, "<#> Õ½¶·½×¶Î£ºÃÅÅÉÎäÁÖĞÂĞãÁªÈüÊ±¼ä»¹Ê£"..RestMin.."<#> ·Ö." );
+			Msg2MSAll( MISSIONID, "<#> Giai ®o¹n chiÕn ®Êu: Thêi gian thi ®Êu kiÖt xuÊt m«n ph¸i cßn l¹i"..RestMin.."<#> phót." );
 		end;
 	end
 end

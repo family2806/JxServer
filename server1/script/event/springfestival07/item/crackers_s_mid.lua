@@ -1,8 +1,8 @@
 Include([[\script\event\springfestival07\item\libcracker.lua]]);
 
-GOODSNAME = "中号特别鞭炮";
+GOODSNAME = "Phong ph竜 trung c bi謙";
 FREECELLCOUNT = 1;
 EXPVALUE = 120;
 TAB_GOODS = {
-{"5级玄晶矿石", 6, 1, 147, 5}
+{"Huy襫 Tinh Kho竛g Th筩h c蕄 5", 6, 1, 147, 5}
 };

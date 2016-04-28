@@ -3,55 +3,55 @@ IncludeLib("RELAYLADDER")
 Include("\\script\\lib\\awardtemplet.lua");
 tbDenggaoItemAward =
 {
-	[1]		= {szName = "Ê³Îï°ü",		tbProp = {3, 6, 1, 2018, -1},	nScore = 10},
-	[2]		= {szName = "Ë®Æ¿", 		tbProp = {3, 6, 1, 2019, -1},	nScore = 30},
-	[3]		= {szName = "¸öÈËÓÃÆ·´ü", 	tbProp = {3, 6, 1, 2016, -1},	nScore = 260},
-	[4]		= {szName = "Ò½Ò©°ü", 		tbProp = {3, 6, 1, 2017, -1},	nScore = 60},
+	[1]		= {szName = "Tói thøc ¨n",		tbProp = {3, 6, 1, 2018, -1},	nScore = 10},
+	[2]		= {szName = "B×nh n­íc", 		tbProp = {3, 6, 1, 2019, -1},	nScore = 30},
+	[3]		= {szName = "Tói vËt dông c¸ nh©n", 	tbProp = {3, 6, 1, 2016, -1},	nScore = 260},
+	[4]		= {szName = "Tói Y TÕ", 		tbProp = {3, 6, 1, 2017, -1},	nScore = 60},
 };
 
 tbDenggaoScore =
 {
-	[1]	= {500, 	2000000,	"×£ºØ£¡ÄãÒÑµ½´ï500mµÄ¸ß¶È£¬Ç°Â·Æéá«¼èÏÕ£¬¼ÓÓÍ£¡"},
-	[2]	= {1000, 	3000000,	"×£ºØ£¡ÄãÒÑµ½´ï1000mµÄ¸ß¶È£¬Ç°Â·Æéá«¼èÏÕ£¬¼ÓÓÍ£¡"},
-	[3]	= {1500, 	5000000,	"×£ºØ£¡ÄãÒÑµ½´ï1500mµÄ¸ß¶È£¬Ç°Â·Æéá«¼èÏÕ£¬¼ÓÓÍ£¡"},
-	[4]	= {2000, 	10000000,	"×£ºØ£¡ÄãÒÑµ½´ï2000mµÄ¸ß¶È£¬Ç°Â·Æéá«¼èÏÕ£¬¼ÓÓÍ£¡"},
-	[5]	= {2200, 	15000000,	"ÒÑµ½ÕıÎç, ĞİÏ¢Ò»ÏÂ°É. ´ÓÕâ»ØÈ¥ÎÒÃÇÒª·­Ô½ºÜ¶à¸ü¸ßµÄÉ½·å."},
-	[6]	= {2800, 	20000000,	"ÌìºÚÁË£¬´îÕÊÅñĞİÏ¢ÏÂ°É£¬½ñÍíÎÒÃÇ½«Ò»ÆğÉú»ğ³ª¸è!"},
-	[7]	= {2900, 	20000000,	"¾­¹ıÒ»Ò¹µÄĞİÏ¢ÄãµÄÌåÁ¦Ò»¶¨¶¼»Ö¸´ÁË. »¹µÈÊ²Ã´ÄØ£¬¼ÓËÙÒ»Í¬µÇ¶¥·¬Î÷°î·å."},
-	[8]	= {3000, 	20000000,	"¼ÓÓÍ.ÎÒÃÇÒÑ¾­¿´µ½·¬Î÷°î·å¶¥ÁË!"},
-	[9]	= {3143, 	30000000,	"¹§Ï²£¡ÄãÒÑ¾­µÇ¶¥·¬Î÷°î·åÁË!"},
+	[1]	= {500, 	2000000,	"Xin chóc mõng! B¹n ®· ®¹t ®Õn ®é cao 500m, con ®­êng phİa tr­íc sÏ rÊt cheo leo vµ hiÓm trë, h·y cè lªn nhĞ!"},
+	[2]	= {1000, 	3000000,	"Xin chóc mõng! B¹n ®· ®¹t ®Õn ®é cao 1000m, con ®­êng phİa tr­íc sÏ rÊt cheo leo vµ hiÓm trë, h·y cè lªn nhĞ!"},
+	[3]	= {1500, 	5000000,	"Xin chóc mõng! B¹n ®· ®¹t ®Õn ®é cao 1500m, con ®­êng phİa tr­íc sÏ rÊt cheo leo vµ hiÓm trë, h·y cè lªn nhĞ!"},
+	[4]	= {2000, 	10000000,	"Xin chóc mõng! B¹n ®· ®¹t ®Õn ®é cao 2000m, con ®­êng phİa tr­íc sÏ rÊt cheo leo vµ hiÓm trë, h·y cè lªn nhĞ!"},
+	[5]	= {2200, 	15000000,	"MÆt trêi ®· ®øng bãng, h·y dõng ch©n 1 l¸t. Tõ ®©y trë ®i, chóng ta sÏ ph¶i v­ît qua rÊt nhiÒu ngän nói cao h¬n"},
+	[6]	= {2800, 	20000000,	"Trêi ®· tèi råi, h·y dùng lÒu ®Ó nghÜ ng¬i, ®ªm nay chóng ta sÏ cïng ®èt löa vµ ca h¸t!"},
+	[7]	= {2900, 	20000000,	"Ch¾c h¼n søc kháe cña b¹n ®· håi phôc sau 1 ®ªm ngon giÊc. Cßn chÇn chê g× n÷a, h·y t¨ng tèc thËt nhanh ®Ó cïng lªn ®Ønh Fansipan nµo"},
+	[8]	= {3000, 	20000000,	"Cè g¾ng lªn nµo. Chóng ta ®· nh×n thÊy ®Ønh Fansipan råi!"},
+	[9]	= {3143, 	30000000,	"Chóc mõng! B¹n ®· chinh phôc ®Ønh FanXiPan råi!"},
 };
 
 tbTop10Award	=
 {
 	[1]	=
 	{
-		[1]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}}, 
-		[2]	= {szName = "ĞşÕæµ¤",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
-		[3]	= {szName = "ÉñÃØ¿óÊ¯", tbProp = {6, 1, 398, 1, 0, 0}},
+		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}}, 
+		[2]	= {szName = "HuyÒn Ch©n §¬n",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
+		[3]	= {szName = "HuyÒn Ch©n §¬n", tbProp = {6, 1, 398, 1, 0, 0}},
 	},
 	[2]	=
 	{
-		[1]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}}, 
-		[2]	= {szName = "ÉñÃØ¿óÊ¯",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
+		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}}, 
+		[2]	= {szName = "HuyÒn Ch©n §¬n",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
 	},
 	[3]	=
 	{
-		[1]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-		[3]	= {szName = "ÉñÃØ¿óÊ¯", tbProp = {6, 1, 398, 1, 0, 0}},
+		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+		[3]	= {szName = "HuyÒn Ch©n §¬n", tbProp = {6, 1, 398, 1, 0, 0}},
 	},
-	[4]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[5]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[6]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[7]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[8]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[9]	= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
-	[10]= {szName = "ÌìÉ½Ñ©Á«", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[4]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[5]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[6]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[7]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[8]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[9]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
+	[10]= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
 };
 
 function item_exchange_score()
 	if (GetLevel() < 50 or GetExtPoint(0) < 1) then
-		Say("´óÏÀÎ´´ï50¼¶»òÎ´³äÖµ£¬Òò´Ë²»ÄÜ²Î¼Ó»î¶¯", 0);
+		Say("§¹i hiÖp vÉn ch­a ®ñ cÊp 50 hoÆc vÉn ch­a nép thÎ, v× vËy kh«ng thÓ tham gia ho¹t ®éng", 0);
 		return
 	end
 	local ndate = tonumber(GetLocalDate("%m%d"));
@@ -63,27 +63,27 @@ function item_exchange_score()
 	for i = 1, getn(tbDenggaoItemAward) do
 		tinsert(tbDialog, format("%s/#useitem(%d)", tbDenggaoItemAward[i].szName, i));
 	end
-	tinsert(tbDialog, getn(tbDialog)+1, "ÎÒÖ»ÊÇË³Â·À´Íæ./OnCancel");
-	Say("ÇëÑ¡Òª¶Ò»»µÄÎïÆ·", getn(tbDialog), unpack(tbDialog));
+	tinsert(tbDialog, getn(tbDialog)+1, "Ta chØ tiÖn ®­êng ®Õn ch¬i./OnCancel");
+	Say("Xin mêi chän vËt phÈm muèn ®æi", getn(tbDialog), unpack(tbDialog));
 end
 
 function useitem(nIdx)
 	local nCount = CalcItemCount(unpack(tbDenggaoItemAward[nIdx].tbProp));	-- ±³°üÖĞµÄµ±Ç°ÎïÆ·ÊıÁ¿
 	
 	if (nCount == 0) then
-		Say(format("±³°üÀïÃ»ÓĞ ?%s!", tbDenggaoItemAward[nIdx].szName), 0);
+		Say(format("Trong hµnh trang kh«ng cã %s!", tbDenggaoItemAward[nIdx].szName), 0);
 		return
 	end
 	
 	if (GetTask(jf0904_TSK_denggao_totscore) >= 3143) then
 		SetTask(jf0904_TSK_denggao_totscore, 3143);
-		Say("´óÏÀµÄ»ıÀÛÖµÒÑ´ï×î¸ß½çÏŞ£¬ÏÈ¶Ò»»½±Àø°É.", 0);
+		Say("§iÓm tİch lòy cña ®¹i hiÖp ®· ®Õn giíi h¹n cao nhÊt, h·y ®æi phÇn th­ëng tr­íc ®i ®·.", 0);
 		return
 	end
 	
 	local nCurScore = GetTask(jf0904_TSK_denggao_curscore);
 	if (nCurScore + tbDenggaoItemAward[nIdx].nScore > 500) then
-		Say(format("Ã¿ÈËÃ¿Ìì´Ó»î¶¯ÖĞÖ»ÄÜ»ñµÃ500»ıÀÛµã£¬½ñÌìÒÑ»ñµÃ %dµã£¬²»ÄÜÔÙÊ¹ÓÃ %s", nCurScore, tbDenggaoItemAward[nIdx].szName));
+		Say(format("Mçi ng­êi mçi ngµy chØ ®­îc  500 ®iÓm tİch lòy tõ ho¹t ®éng, h«m nay ®· thu ®­îc %d ®iÓm, kh«ng thÓ sö dông thªm %s", nCurScore, tbDenggaoItemAward[nIdx].szName));
 		return
 	end
 	
@@ -91,7 +91,7 @@ function useitem(nIdx)
 		nCount = floor((500 - nCurScore) / tbDenggaoItemAward[nIdx].nScore);
 	end
 	SetTaskTemp(114, nIdx);
-	AskClientForNumber("exchangeitem", 0, nCount, "ÌîÈëÒª¶Ò»»µÄÊı×Ö")
+	AskClientForNumber("exchangeitem", 0, nCount, "NhËp sè cÇn ®æi")
 end
 
 function exchangeitem (nCount)
@@ -104,33 +104,33 @@ function exchangeitem (nCount)
 		n_Count = floor((500 - nCurScore) / tbDenggaoItemAward[nIdx].nScore);
 	end
 	if (nCount > n_Count) then
-		Msg2Player("ÊäÈëÊı×ÖÓĞÎó!", 0);
+		Msg2Player("NhËp sè sai!", 0);
 		return
 	end
 	
 	local bP = ConsumeItem(tbProp[1], nCount, tbProp[2], tbProp[3], tbProp[4], tbProp[5]); --  ·µ»Ø1¿Û³ı³É¹¦£¬·µ»Ø0Ê§°Ü£¬nCountÎªÖ¸¶¨¿Û³ıµÄÊıÁ¿
 	if (bP <= 0) then
-		print(format("¿Û³ı %s Ê§°Ü!", tbDenggaoItemAward[nIdx].szName));
+		print(format("Trõ %s thÊt b¹i!", tbDenggaoItemAward[nIdx].szName));
 		return
 	end
 	
 	local nAddedScore = nCount * tbDenggaoItemAward[nIdx].nScore;
 	SetTask(jf0904_TSK_denggao_curscore, GetTask(jf0904_TSK_denggao_curscore) + nAddedScore);	-- Ã¿ÌìµÄ»ı·ÖÒª¼Ó¸öµ±Ç°µÄ·ÖÊı
-	Say(format("¶Ò»»³É¹¦ %d %s, ½ñÌìµÄ»ıÀÛÖµÊÇ %d.", nCount, tbDenggaoItemAward[nIdx].szName, GetTask(jf0904_TSK_denggao_curscore)), 0);
+	Say(format("§æi thµnh c«ng %d %s, ®iÓm tİch lòy h«m nay lµ %d.", nCount, tbDenggaoItemAward[nIdx].szName, GetTask(jf0904_TSK_denggao_curscore)), 0);
 	SetTask(jf0904_TSK_denggao_totscore, GetTask(jf0904_TSK_denggao_totscore) + nAddedScore);
 	if (GetTask(jf0904_TSK_denggao_totscore) >= 3143) then
 		SetTask(jf0904_TSK_denggao_totscore, 3143);
-		Say("»ıÀÛÖµÒÑ´ï×î¸ß½çÏŞ£¬Ö®Ç°ÏÈ°Ñ»ıÀÛÖµ¶Ò»»³É½±Àø.", 0);
+		Say("§iÓm tİch lòy ®· ®¹t ®Õn giíi h¹n cao nhÊt, tr­íc tiªn h·y ®æi ®iÓm thµnh phÇn th­ëng ®i ®·.", 0);
 	end
 end
 
 function view_score()
-	Say(format("ÏÖÔÚ»ıÀÛÖµÊÇ %d,´óÏÀÒª¶Ò»»½±ÀøÂğ?", GetTask(jf0904_TSK_denggao_totscore)), 2, "Ïë/turn_score_2_exp", "ÎÒÖ»ÊÇÎÊÎÊ/OnCancel");
+	Say(format("§iÓm tİch lòy hiÖn thêi lµ %d, ®¹i hiÖp cã muèn ®æi phÇn th­ëng kh«ng?", GetTask(jf0904_TSK_denggao_totscore)), 2, "Muèn/turn_score_2_exp", "Ta chØ hái qua cho biÕt/OnCancel");
 end
 
 function turn_score_2_exp()
 	if (GetTask(jf0904_TSK_denggao_totscore) < tbDenggaoScore[GetTask(jf0904_TSK_denggao_nidx)][1]) then
-		Say("ÏÖÔÚ´óÏÀÎŞ·¨¶Ò»»½±Àø.", 0);
+		Say("HiÖn t¹i ®¹i hiÖp kh«ng thÓ ®æi thµnh phÇn th­ëng ®­îc.", 0);
 		return
 	end
 	
@@ -164,18 +164,18 @@ function view_top10_player()
 	for i = 1, 10 do
 		RoleName = Ladder_GetLadderInfo(10262, i);
 		if (RoleName == "" and i == 1) then
-			Say("ÅÅĞĞ±íÔİÊ±Ã»ÓĞÏûÏ¢!", 0);
+			Say("B¶ng xÕp h¹ng t¹m thêi ch­a cã th«ng tin!", 0);
 			return
 		end
-		tinsert(tbRoleName, getn(tbRoleName)+1, "ÖÖÀà"..i.."µÈ¼¶: \t"..RoleName.."/OnCancel");
+		tinsert(tbRoleName, getn(tbRoleName)+1, "h¹ng thø "..i.."Thø h¹ng: \t"..RoleName.."/OnCancel");
 	end
-	tinsert(tbRoleName, getn(tbRoleName)+1, "ÎÒÖ»ÊÇÀ´¿´¿´!/OnCancel");
-	Say("ÅÅĞĞ±í:", getn(tbRoleName), unpack(tbRoleName));
+	tinsert(tbRoleName, getn(tbRoleName)+1, "Ta chØ ®Õn xem!/OnCancel");
+	Say("B¶ng xÕp h¹ng:", getn(tbRoleName), unpack(tbRoleName));
 end
 
 function get_award()
 	if CalcFreeItemCellCount() < 3 then
-		Say("Îª±£Ö¤ÎïÆ·°²È«£¬Çë¸ø±³°üÁô³ö¿Õ¼ä£¨3¸ö¿Õ¸ñ£©", 0);
+		Say("§Ó b¶o ®¶m an toµn cho vËt phÈm, xin mêi ®Ó hµnh trang cßn thõa 3 « trèng", 0);
 		return
 	end
 	local nrank = 0;
@@ -187,19 +187,19 @@ function get_award()
 		end
 	end
 	if (nrank <= 0 or nrank > 10) then
-		Say("´óÏÀ»¹Î´½øÈëÅÅĞĞ°ñÒò´Ë²»ÄÜÁì½±", 0);
+		Say("§¹i hiÖp vÉn ch­a vµo b¶ng xÕp h¹ng nªn kh«ng thÓ nhËn th­ëng ®­îc", 0);
 		return
 	end
 	if(GetTask(jf0904_TSK_denggao_getaward) == 0) then
-		tbAwardTemplet:GiveAwardByList(tbTop10Award[nrank], "Ç°10ÃûÁìÈ¡µÇ¶¥·¬Î÷°î·åµÄ½±Àø");
-		Say(format("¹§Ï²ÄãÊÇ³É¹¦µÇ¶¥·¬Î÷°î·åµÄµÚ %dÈË!", nrank),0);
-		AddGlobalNews(format("¹§Ï² %sÊÇ³É¹¦µÇ¶¥·¬Î÷°î·åµÄµÚ %dÈË!", GetName(), nrank));
+		tbAwardTemplet:GiveAwardByList(tbTop10Award[nrank], "NhËn th­ëng top 10 chinh phôc ®Ønh FanXiPan");
+		Say(format("Chóc mõng ®¹i hiÖp lµ ng­êi thø %d chinh phôc ®Ønh FanXiPan!  §©y lµ phÇn th­ëng cña ng­¬i xin h·y nhËn lÊy!", nrank),0);
+		AddGlobalNews(format("Chóc mõng %s lµ ng­êi thø %d chinh phôc ®Ønh FanXiPan!", GetName(), nrank));
 		SetTask(jf0904_TSK_denggao_getaward, 1);
 	else
-		Say("ÄãÒÑ³É¹¦µÇ¶¥", 0);
+		Say("Ng­¬i ®· nhËn phÇn th­ëng nµy råi", 0);
 	end
 end
 
 function about_denggao()
-	Say("Àñ¹Ù: µÇ¶¥FanXiPan·å»î¶¯´Ó28-04-2009µ½31-05-2009,24:00. »î¶¯ÆÚ¼ä£¬¸÷Î»´óÏÀ¿ÉÒÔµ½»ÆÁ¬ÀÑÀÑ´¦(390/317)µÇ¼ÇµÇ¶¥·¬Î÷°î·å.", 0);
+	Say("LÔ Quan: Ho¹t ®éng chinh phôc FanXiPan diÔn ra tõ 28-04-2009 ®Õn 24:00 31-05-2009. Trong thêi gian ho¹t ®éng, c¸c vŞ ®¹i hiÖp cã thÓ ®Õn Hoµng Liªn L·o L·o (390/317) ®¨ng kı chinh phôc ®Ønh FanXiPan.", 0);
 end

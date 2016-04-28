@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Talk(3, "", "¹À¼ÛÏÈÉú£º¹À¼ÛÕâÒ»ÐÐÑ§ÎÊ¿É´óÁË£¬±íÃæÉÏÊÇ°´Îï¹À¼Û£¬ÆäÊµÊÇ¿´ÈË¹À¼Û¡£", "Èç¹ûÊÇÄÇÐ©Çî¹íÀ´µ±¶«Î÷£¬ÄÇÃ´¼ÛÇ®¾¡¹ÜÍùÏÂÑ¹£¬ÔÙµÍËûÒ²»áµ±¡£", "Èç¹ûÊÇÄÇÐ©Ò»Ê±ÊÖ½ôµÄÓÐÇ®ÈË£¬ÄÇ¼Û¸ñ¾Í²»ÄÜÌ«µÍ£¬¶à½»Ò»¸öÅóÓÑ¶àÒ»ÌõÂ·£¬·çË®ÂÖÁ÷×ª£¬ÒÔºó¼ûÃæÒ²ºÃ°ìÊÂÂï¡£");
+Talk(3, "", " §Þnh gi¸ còng lµ mét m«n häc! Bªn ngoµi chØ lµ nh×n vËt mµ ®Þnh gi¸ nh­ng thùc chÊt lµ nh×n ng­êi ®Þnh gi¸!", "NÕu lµ bän d©n nghÌo ®ã ®Õn cÇm ®å, dï cã h¹ gi¸ c¸ch mÊy nã còng chÞu cÇm!", "NÕu lµ kÎ cã tiÒn nhÊt thêi tóng thiÕu, ®õng ra gi¸ qu¸ thÊp! Thªm mét ng­êi b¹n lµ thªm mét con ®­êng. §­êng ®êi xoay chuyÓn cßn cã ngµy gÆp l¹i!");
 
 end;
 

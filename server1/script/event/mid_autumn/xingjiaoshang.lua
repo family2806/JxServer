@@ -14,12 +14,12 @@ function exchange_talk(type1, type2, count)
 	local itemcount = GetGlbValue(GBL_VAR_MOONCAKE_MARTERIAL_COUNT)
 	if (itemcount == 0) then
 		-- ²ÄÁÏÒÑ¾­¶Ò»»ÍêÁË
-		Say("<#> Õâ´Î " .. item1[1] .. "<#> ÒÑ¾­»»ÍêÁË£¡ÏÂ´ÎÔÙÀ´°É", 1, "<#> ºÃµÄ!/cancel")
+		Say("<#> LÇn nµy " .. item1[1] .. "<#> ®· ®æi hÕt råi! LÇn sau quay l¹i nhe1", 1, "<#> §­îc!/cancel")
 	else
-		local caption = "<#> ¶Ò»» 1 " .. item1[1] .. "<#> ĞèÒªÓĞ" .. count .. "<#> " .. item2[1] .. ". ÄãÈ·¶¨Òª»»Âğ£¿"
+		local caption = "<#> §æi 1 " .. item1[1] .. "<#> cÇn cã " .. count .. "<#> " .. item2[1] .. ". Ng­¬i x¸c ®Şnh ®æi chø?"
 		local options = {
-			"<#> ¿ÉÒÔ! ¾ÍÕâÑù°É!/" .. format("#exchange(%d,%d,%d)", type1, type2, count),
-			"<#> ²»ĞĞ£¡µÈÎÒÏÈÏëÏë!/cancel"
+			"<#> §­îc! Cø nh­ vËy ®i!/" .. format("#exchange(%d,%d,%d)", type1, type2, count),
+			"<#> Kh«ng! §Ó ta nghÜ l¹i ®·!/cancel"
 		}
 		Say(caption, getn(options), options)
 	end
@@ -32,7 +32,7 @@ function exchange(type1, type2, count)
 	local itemcount = GetGlbValue(GBL_VAR_MOONCAKE_MARTERIAL_COUNT)
 	if (itemcount == 0) then
 		-- ²ÄÁÏÒÑ¾­¶Ò»»ÍêÁË
-		Talk(1, "", "<#>Õæ²»ºÃÒâË¼!ÎÒµÄ¶«Î÷ÂòÍêÁË£¡´ı»áÔÙÀ´°É£¡")
+		Talk(1, "", "<#> ThËt ng¹i qu¸! Hµng cña ta ®· b¸n hÕt råi! Quay l¹i sau nhĞ!")
 	else
 		local exchtime = GetGlbValue(GBL_VAR_MOONCAKE_EXCHANGETIME)	-- ±¾´Î¶Ò»»µÄÊ±¼ä
 		local lasttime = GetTask(VARV_MOONCAKE_EXCHANGETIME)		-- ÉÏ´Î¶Ò»»µÄÊ±¼ä
@@ -45,10 +45,10 @@ function exchange(type1, type2, count)
 			-- ´ïµ½ÁË¶Ò»»´ÎÊıÏŞÖÆ
 			-- DEBUG
 			print(format("exchcount:%d, limitcount:%d", exchcount, tbl_exchange_limitcount[type1]))
-			Talk(1, "", "<#> Õæ²»ºÃÒâË¼£¡ÎÒÒÑ¾­Âò¹»¶«Î÷ÁË£¬Ö»ÒªĞèÒªÊ²Ã´ÔÙÀ´.") 			
+			Talk(1, "", "<#> ThËt ng¹i qu¸! Ta ®· mua ®ñ c¸c vËt liÖu råi, sau nµy cÇn g× ta sÏ ghĞ l¹i.") 			
 		elseif (CalcEquiproomItemCount(item2[2], item2[3], 1, -1) < count) then
 			-- ÓÃÀ´¶Ò»»µÄÎïÆ·ÊıÁ¿²»¹»
-			Talk(1, "", "<#> Äã´øµÄÖÆ×÷ÔÂ±ı²ÄÁÏÒÀ¾É²»¹»")
+			Talk(1, "", "<#> Nguyªn liÖu lµm b¸nh ng­¬i ®em ®Õn vÉn ch­a ®ñ ")
 		else
 			SetTask(VARV_MOONCAKE_EXCHANGETIME, exchtime)
 			SetTask(VARV_MOONCAKE_EXCHANGECOUNT, exchcount + 1)
@@ -62,7 +62,7 @@ function exchange(type1, type2, count)
 			ConsumeEquiproomItem(count, item2[2], item2[3], 1, -1)
 			AddEventItem(item1[3])
 			SetGlbValue(GBL_VAR_MOONCAKE_MARTERIAL_COUNT, itemcount - 1)
-			Msg2Player("<#>ÄãµÃµ½1 <color=yellow>" .. item1[1] .. "<color>")
+			Msg2Player("<#> B¹n nhËn ®­îc 1 <color=yellow>" .. item1[1] .. "<color>")
 		end
 	end
 end
@@ -83,11 +83,11 @@ end
 function ExchangeTalk()
 	local material_type = GetGlbValue(GBL_VAR_MOONCAKE_MARTERIAL_TYPE)
 	local material_name = tbl_material[material_type][1]
-	local caption = "<#> ÎÒÖÜÓÎ¸÷µØÂòÁË²»ÉÙÆæÕä±¦Îï£¬Õâ´ÎÎÒ´øµ½ÕâÀ´ÁË<color=red>" ..
+	local caption = "<#> Ta chu du c¸c n¬i mua ®­îc kh«ng İt kú tr©n b¶o vËt, lÇn nµy ta mang ®Õn ®©y <color=red>" ..
 		material_name .. 
-		"<#> <color>, µ«ÊÇÓĞÑù¶«Î÷ÎÒ»¹Ã»ÓĞÂòµ½£¬Èç¹ûÄãÓĞ" ..
+		"<#> <color>, nh­ng thø ta cÇn vÉn ch­a mua ®­îc, nÕu nh­ ng­¬i cã " ..
 		material_name .. 
-		"<#>ÎÒÃÇ¿ÉÒÔ½»»»<color=red>" ..
+		"<#> chóng ta cã thÓ trao ®æi <color=red>" ..
 		GetLeftCount(material_type) ..
 		"<color>."
 	local exchanges = GetExchangeList(material_type)
@@ -98,10 +98,10 @@ function ExchangeTalk()
 		local obj_count = exchanges[index][2]
 		local obj_name = tbl_material[obj_type][1]
 		local func = format("#exchange_talk(%d,%d,%d)", material_type, obj_type, obj_count)
-		options[index] = "<#> ÎÒÏëÓÃ " .. obj_name .. "<#> À´½»»»/" .. func
+		options[index] = "<#> Ta muèn dïng " .. obj_name .. "<#> ®Ó trao ®æi/" .. func
 		index = index + 1
 	end
-	options[index] = "<#> ²»£¡µÈÎÒÏëÏë!/cancel"
+	options[index] = "<#> Kh«ng! §Ó ta nghÜ l¹i ®·!/cancel"
 	
 	Say(caption, getn(options), options)		
 end
@@ -119,11 +119,11 @@ function OnTimer()
 	-- DEBUG
 	print(format("material type:%d", type))
 	local itemname = tbl_material[type][1]
-	local news = "<#> ĞĞ½ÅÉÌÈË" ..
+	local news = "<#> Nghe nãi ë " ..
 		tbl_cities[city] ..
-		"<#> ÓĞ¸öĞĞ½ÅÉÌÈË´ø×ÅºÜ¶àÉÏºÃµÄÎïÆ·" ..
+		"<#> cã Hµnh C­íc th­¬ng nh©n mang theo rÊt nhiÒu phÈm vËt th­îng h¹ng" ..
 		itemname ..
-		"<#>, ÂôÍêËû¾Í×ßÁË!"
+		"<#>, nh­ng b¸n hÕt lµ «ng ta ®i ngay!"
 	-- DEBUG
 	print(news)
 	AddGlobalNews(news)
@@ -149,7 +149,7 @@ function main()
 	local mapid = GetGlbValue(GBL_VAR_MOONCAKE_CITY)
 	if (mapid ~= SubWorldIdx2ID(SubWorld) or exchanging ~= 1) then
 		-- »¹Ã»¿ªÊ¼¶Ò»»ÔÂ±ı²ÄÁÏ
-		Talk(1, "", "<#> ÚÀ!½ñÄêÉúÒâÌ«ÄÑ×öÁË£¡²»ÖªÎªºÎÎÒµÄºÏ×÷»ï°éÏÖÔÚÒ²»¹Ã»ÓĞ½»»õ!")
+		Talk(1, "", "<#> Çy! N¨m nay khã lµm ¨n qu¸! B¹n hµng cña ta kh«ng biÕt sao giê nµy vÉn ch­a giao hµng tíi!")
 	else
 		ExchangeTalk()
 	end

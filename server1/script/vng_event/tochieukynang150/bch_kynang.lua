@@ -3,13 +3,13 @@
 --function main(nItemIndex)
 ----	if tbTrainSkill150:checkLevelSkill() ~= 1 then
 ----		if (tbTrainSkill150:CheckValueTask() ~= 1) then
-----			Msg2Player("´óÏÀĞèÒª½É30´Î¾­ÑéÖµÀ´ÁìÈ¡ĞŞÁ¶Öµ²ÅÄÜÊ¹ÓÃ¸ÃÎïÆ·");
+----			Msg2Player("§¹i hiÖp ph¶i dïng 30 lÇn nép ®iÓm kinh nghiÖm lÊy ®iÓm tu luyÖn th× míi cã thÓ sö dông vËt phÈm nµy");
 ----			return 1
 ----		end
 ----	end	
---	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbTrainSkill150.tbBIT_BCH_USE, 20, "Ã¿¸öÈËÎïÖ»ÄÜ×î¶àÊ¹ÓÃ20´Î", "~=") ~= 1 then
+--	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbTrainSkill150.tbBIT_BCH_USE, 20, "Mçi nh©n vËt chØ ®­îc sö dông tèi ®a 20 lÇn", "~=") ~= 1 then
 --		return 1
 --	end
 --	tbVNG_BitTask_Lib:addTask(tbTrainSkill150.tbBIT_BCH_USE, 1);
---	Msg2Player("¹§Ï²´óÏÀ³É¹¦»»È¡Ò»´Î150¼¼ÄÜ¾­ÑéÖµ.");
+--	Msg2Player("Chóc mõng §¹i HiÖp nhËn thµnh c«ng 1 lÇn ®æi ®iÓm tu luyÖn kÜ n¨ng 150.");
 --end

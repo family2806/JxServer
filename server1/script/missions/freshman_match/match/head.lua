@@ -10,9 +10,9 @@ MS_ROUND = 3
 
 function GameOver()
 	local mapname = checkmap(1)
-	resultstr = "½ñÌì "..GetMissionV(3).."ĞÇÆÚ¼¸"..mapname.."ÎäÁÖĞÂĞãÁªÈü½áÊø."
+	resultstr = "H«m nay "..GetMissionV(3).."thø mÊy"..mapname.."Cuéc thi m«n ph¸i kiÖt xuÊt ®· kÕt thóc."
 	Msg2MSAll(MISSIONID, resultstr)
-	resultstr = date("%m ÔÂ%d ÈÕ, %H:%M, ")..resultstr
+	resultstr = date("%m th¸ng%d ngµy, %H:%M, ")..resultstr
 	WriteLog(resultstr)
 	local tbPlayer = {};
 	idx = 0;
@@ -48,8 +48,8 @@ function GameOver()
 	 		PlayerIndex = tbPlayer[i]
 	 	end
 	 	PlayerIndex = tbPlayer[i]
-	 	Msg2Player("±¾ÂÖ±ÈÈü½áÊø£¬ÄãºÍ¶ÔÊÖ<color=blue>"..eny_name.." <color>´òÆ½£¬»ñµÃÒ»·Ö")
-	 	WriteLog("Íæ¼Ò ["..org_name.."]Óë¶ÔÊÖ ["..eny_name.."]²»·ÖÊ¤¸º£¬Ä¿Ç°³É¼¨Îª£ºÊ¤"..nt_gettask(CP_TASKID_WIN)..", Êä"..nt_gettask(CP_TASKID_LOSE)..", ºÍ"..nt_gettask(CP_TASKID_TIE)..", ¾öÈü"..nt_gettask(CP_TASKID_POINT))
+	 	Msg2Player("Vßng ®Êu nµy ®· kÕt thóc, b¹n vµ ®èi ®èi thñ <color=blue>"..eny_name.." <color>hßa, ®¹t ®­îc 1 ®iÓm")
+	 	WriteLog("Ng­êi ch¬i ["..org_name.."]vµ ®èi thñ ["..eny_name.."]bÊt ph©n th¾ng b¹i, thµnh tİch hiÖn t¹i lµ: th¾ng"..nt_gettask(CP_TASKID_WIN)..", thua"..nt_gettask(CP_TASKID_LOSE)..", hßa"..nt_gettask(CP_TASKID_TIE)..", chung cuéc"..nt_gettask(CP_TASKID_POINT))
 		WL_clear_pl_state()
 		AddAword(GetLevel(), 30)
 		nt_settask(CP_TASKID_FLAG, 1)

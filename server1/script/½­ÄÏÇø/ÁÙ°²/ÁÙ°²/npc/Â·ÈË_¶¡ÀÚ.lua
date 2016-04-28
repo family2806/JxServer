@@ -15,6 +15,6 @@ function main()
 	if rewindProcess_003_04:doTaskEntity()~=0 then return end;
 
 
-	Talk(1,"","¶¡Ô±Íâ£º½ğÈË¶¼ÊÇĞ©ÓĞÓÂÎŞÄ±µÄÂùÒÄÖ®±²£¬ÄÄÀïÊÇÎÒÃÇ´óËÎµÄ¶ÔÊÖ£¿ÔÛÃÇºÎ±Øè½ÈËÓÇÌì£¬×Ô¼ºÏÅ×Ô¼º£¿ÓĞ»ÊÉÏÔÚÕâÀï£¬ÎÒ¾Í²»ĞÅÄÇĞ©½ğÈËÄÜ´òµ½ÁÙ°²À´£¡")
+	Talk(1,"","Lò ng­êi Kim chØ lµ mét ®¸m man di mäi rî, h÷u dòng v« m­u. Lµm sao chóng cã thÓ lµm ®èi thñ cña §¹i Tèng? ViÖc g× chóng ta cø ph¶i khinh sî chóng, tù hï däa m×nh? §· cã Hoµng Th­îng ë ®©y, ta tin t­ëng bän ng­êi Kim kia sÏ kh«ng thÓ tÊn c«ng ®Õn L©m An nµy. ")
 
 end;

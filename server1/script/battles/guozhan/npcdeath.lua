@@ -82,10 +82,10 @@ function OnDeath( nNpcIndex )
 		
 		bt_addtotalpoint(BONUS_BOSS_DOWN_PLAYER)--加分
 		mar_addmissionpoint(BONUS_BOSS_DOWN_TEAM)--加分
-		Msg2Player("您获得"..BONUS_BOSS_DOWN_PLAYER.."积累点!")
+		Msg2Player("B筺 nh薾 頲 "..BONUS_BOSS_DOWN_PLAYER.." 甶觤 t輈h l騳!")
 		
 		if (GetCurCamp() == 1) then
-			Msg2MSAll(MISSIONID, "<color=yellow> 宋金公告：宋金"..GetName().." 已经杀死金方元帅!!!")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: T鑞g qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe Kim!!!")
 			
 			if(GetMissionV(MS_MARSHALDEATH) == 2 ) then 
 				SetMissionV(MS_MARSHALDEATH, 0)--设置胜负
@@ -94,7 +94,7 @@ function OnDeath( nNpcIndex )
 			end			
 					
 		else
-			Msg2MSAll(MISSIONID, "<color=yellow> 宋金公告：金军 "..GetName().." 已经杀死宋方元帅!!!")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: Kim qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe T鑞g!!!")
 			
 			if(GetMissionV(MS_MARSHALDEATH) == 1 ) then 
 				SetMissionV(MS_MARSHALDEATH, 0)--设置胜负

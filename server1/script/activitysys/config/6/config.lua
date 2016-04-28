@@ -8,7 +8,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "FinishSongJin",
-	szName = "Ê¤ËÎ½ğÒ»·½",
+	szName = "Bªn th¾ng tèng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {1,3},
@@ -27,7 +27,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "FinishSongJin",
-	szName = "ÊäËÎ½ğÒ»·½",
+	szName = "Bªn thua tèng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"-1",3},
@@ -46,7 +46,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "FinishSongJin",
-	szName = "ÓëËÎ½ğ´òÆ½Ò»·½",
+	szName = "Bªn hßa tèng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {0,3},
@@ -65,7 +65,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "nil",
-	szName = "ÉèÖÃËÎ½ğ´ÎÊı",
+	szName = "§Æt sè lÇn Tèng Kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

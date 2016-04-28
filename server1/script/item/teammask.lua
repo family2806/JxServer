@@ -1,11 +1,11 @@
 function  main(nItem)
-	Say("<#>¶ÓÎéÃæ¾ß¿ÉÒÔ°Ñ¶ÓÎéÈ«Ìå³ÉÔ±±ä³ÉÍ¬Ò»Ä£Ñù2¸öĞ¡Ê±£¬ÒªÊ¹ÓÃÂğ£¿", 2, "àÅ£¬ÎÒÃÇÒªÍ³Ò»×°°ç/#yes("..nItem..")", "ÏÈ²»Ê¹ÓÃ/no");
+	Say("<#>MÆt n¹ tæ ®éi gióp cho tÊt c¶ thµnh viªn trong ®éi trë nªn gièng nhau trong 2 giê, muèn sö dông kh«ng?", 2, "Tæ ®éi ta sÏ c¶i trang gièng nhau./#yes("..nItem..")", "T¹m thêi kh«ng/no");
 	return 1
 end
 
 function yes(nItem)
 	if(GetTeamSize() <= 0) then
-		Msg2Player("Äã²»ÔÚ¶ÓÎéÖĞ£¬ÎŞ·¨Ê¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("Kh«ng cã trong ®éi ngò, kh«ng thÓ sö dông ®¹o cô nµy");
 		return 1
 	end
 	local teamid = GetTeam();
@@ -15,7 +15,7 @@ function yes(nItem)
 		return
 	end	
 	ChangeTeamFeature(teamid, nfeature, 129600);
-	Msg2Team(name.."Ê¹ÓÃÁË¶ÓÎéÃæ¾ß£¬¶ÓÔ±±ä³ÉÁËÍ¬Ò»Ä£Ñù£¬³ÖĞø2Ğ¡Ê±");
+	Msg2Team(name.."Sö dông mÆt n¹ ®éi ngò, ®éi viªn c¶i trang gièng nhau, kĞo dµi trong 2 giê.");
 end
 
 function GetDesc(nItem)

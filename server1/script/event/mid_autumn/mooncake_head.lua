@@ -35,33 +35,33 @@ STAT_MAX				= 8		-- ×î´ó×´Ì¬
 TYPE_MIN				= 1		-- ×îÐ¡Àà±ð
 TYPE_SHIJIN				= 1		-- Ê²½õÔÂ±ý
 TYPE_GUOREN				= 2		-- ¹ûÈÊÔÂ±ý
-TYPE_DANHUANGLIANRONG	= 3		-- µ°»ÆÁ«ÈØÔÂ±ý
-TYPE_DANHUANGDOUSHA		= 4		-- µ°»Æ¶¹É³ÔÂ±ý
-TYPE_LIANRONG			= 5		-- Á«ÈØÔÂ±ý
-TYPE_DOUSHA				= 6 	-- ¶¹É³ÔÂ±ý
+TYPE_DANHUANGLIANRONG	= 3		-- µ°»ÆBét sen ÔÂ±ý
+TYPE_DANHUANGDOUSHA		= 4		-- µ°»Æ§Ëu xanhÔÂ±ý
+TYPE_LIANRONG			= 5		-- Bét sen ÔÂ±ý
+TYPE_DOUSHA				= 6 	-- §Ëu xanhÔÂ±ý
 TYPE_MAX				= 6		-- ×î´óÀà±ð
 
 -- Æß´ó³ÇÊÐ
 tbl_cities = {
-    [1] = "·ïÏè",
-    [11] = "³É¶¼",
-    [37] = "ãê¾©",
-    [78] = "ÏåÑô",
-    [80] = "ÑïÖÝ",
-    [162] = "´óÀí",
-    [176] = "ÁÙ°²", 
+    [1] = "Ph­îng T­êng",
+    [11] = "Thµnh §«",
+    [37] = "BiÖn Kinh",
+    [78] = "T­¬ng D­¬ng",
+    [80] = "D­¬ng Ch©u",
+    [162] = "§¹i Lý",
+    [176] = "L©m An", 
 };
 
 -- ²ÄÁÏÃû×Ö
 tbl_material = {
-    {"µ° ",		4,	522},
-    {"ÐÓÈÊ ",	4,	525},
-    {"»¨Éú ",	4,	526},
-    {"Ò¬Ë¿",	4,	527},
-    {"Ãæ·Û",	4,	520},
-    {"É°ÌÇ",	4,	521},
-    {"Á«ÈØ",	4,	523},
-    {"¶¹É³",	4,	524},
+    {"Trøng ",		4,	522},
+    {"H¹nh nh©n ",	4,	525},
+    {"§Ëu phéng ",	4,	526},
+    {"C¬m dõa",	4,	527},
+    {"Bét m× ",	4,	520},
+    {"§­êng c¸t",	4,	521},
+    {"Bét sen ",	4,	523},
+    {"§Ëu xanh",	4,	524},
 };
 
 -- ¶Ò»»´ÎÊýÏÞÖÆ
@@ -69,27 +69,27 @@ tbl_exchange_limitcount = {
 	10,		-- µ°
 	4,		-- ÐÓÈÊ
 	2,		-- »¨Éú
-	1,		-- Ò¬Ë¿
+	1,		-- C¬m dõa
 };
 
 -- ¶Ò»»±í
 tbl_exchange = {
-   	--µ°	ÐÓÈÊ	»¨Éú	Ò¬Ë¿
+   	--µ°	ÐÓÈÊ	»¨Éú	C¬m dõa
 	{0,		1,		2,		24},	-- µ°¶Ò»»ÆäËûÎïÆ·
 	{0,		0,		2,		16},	-- ÐÓÈÊ¶Ò»»ÆäËûÎïÆ·
 	{0,		0,		0, 		8},		-- »¨Éú¶Ò»»ÆäËûÎïÆ·
-	{0,		0,		0,		0},		-- Ò¬Ë¿¶Ò»»ÆäËûÎïÆ·
-	{50,	75,		150,	1500},	-- Ãæ·Û¶Ò»»ÆäËûÎïÆ·
-	{50,	75,		150,	1500},	-- É°ÌÇ¶Ò»»ÆäËûÎïÆ·
-	{6,		8,		16,		160},	-- Á«ÈØ¶Ò»»ÆäËûÎïÆ·
-	{6,		8,		16,		160},	-- ¶¹É³¶Ò»»ÆäËûÎïÆ·
+	{0,		0,		0,		0},		-- C¬m dõa¶Ò»»ÆäËûÎïÆ·
+	{50,	75,		150,	1500},	-- Bét m× ¶Ò»»ÆäËûÎïÆ·
+	{50,	75,		150,	1500},	-- §­êng c¸t¶Ò»»ÆäËûÎïÆ·
+	{6,		8,		16,		160},	-- Bét sen ¶Ò»»ÆäËûÎïÆ·
+	{6,		8,		16,		160},	-- §Ëu xanh¶Ò»»ÆäËûÎïÆ·
 };
 
 -- Í¨Öª
 tbl_notice = {
-	[STAT_HUOMIAN_FINISH] = "<#> ÄãµÄÔÂ±ýÒÑ¾­<color=yellow>ºÍÃæÍê³É<color>, ¸Ï¿ìÄÃ!",		-- ºÍÃæÍê³É
-	[STAT_BAOXIAN_FINISH] = "<#> ÄãµÄÔÂ±ýÒÑ¾­ <color=yellow>°üÏÚÍê³É<color>,¸Ï¿ìÄÃ!",		-- °üÏÚÍê³É
-	[STAT_HONGKAO_FINISH] = "<#> ÄãµÄÔÂ±ýÒÑ¾­ <color=yellow>°üÏÚÍê³É<color>, ¸Ï¿ìÄÃ!",	-- ºæ¿¾Íê³É
+	[STAT_HUOMIAN_FINISH] = "<#> B¸nh cña ng­¬i ®· <color=yellow>nhµo bét xong<color>, mau ®Õn lÊy!",		-- ºÍÃæÍê³É
+	[STAT_BAOXIAN_FINISH] = "<#> B¸nh cña ng­¬i ®· <color=yellow>lµm xong nh©n b¸nh<color>, mau ®Õn lÊy!",		-- °üÏÚÍê³É
+	[STAT_HONGKAO_FINISH] = "<#> B¸nh cña ng­¬i ®· <color=yellow>n­íng xong <color>, mau ®Õn lÊy!",	-- ºæ¿¾Íê³É
 };
 
 -- »ñÈ¡¿É¶Ò»»Ä³ÖÖ²ÄÁÏµÄ²ÄÁÏÊýÁ¿ÁÐ±í

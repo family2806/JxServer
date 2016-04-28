@@ -3,7 +3,7 @@
 Include("\\script\\task\\newtask\\education\\jiaoyutasknpc.lua")
 Include("\\script\\task\\newtask\\newtask_head.lua")
 function main()
-		Say("µ½ÁËÁúÃÅÕò¾ÍÒªÂòµãÒ©Ô¤·ÀÍ·ÌÛÄÔÈÈ!", 3, "½»Ò×/yes","ÎÒÀ´Áì³õ¼¶ÈÎÎñ/yboss", "²»½»Ò×/no")
+		Say("§· ®Õn Long M«n trÊn nµy th× nªn mua İt th­¬ng d­îc ®Ó phßng tr¸i giã trë trêi!", 3, "Giao dŞch/yes","Ta ®Õn nhËn nhiÖm vô S¬ nhËp/yboss", "Kh«ng giao dŞch/no")
 end;
 
 function yes()

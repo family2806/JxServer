@@ -21,14 +21,14 @@ end
 function zhengbranch3()
 	AddOwnExp(260000)
 	AddExp_Skill_Extend(260000)
-	Msg2Player("Äã·Å¹ıÁËÓåÏæ½ò£¬ÈÎÎñÍê³É¡£¿ÉÒÔ»ØÈ¥ÕÒ°ÁÔÆ×ÚÁË¡£")
-	Talk(1,"",name..":ÓåÏæ½ò£¬½ñÌìÎÒ²»É±Äã£¬Ö®ËùÒÔµÃ×ïÓĞ²»µÃÒÑµÄ¿àÖÔ¡£Ï£ÍûÄãÄÜ¶ã²ØÆğÀ´£¬¾¡Á¿²»ÒªÏÖÉí¡£")
+	Msg2Player("B¹n tha cho Du S­¬ng T©n, hoµn thµnh nhiÖm vô. Quay vÒ t×m Ng¹o V©n T«ng.")
+	Talk(1,"",name..":Du S­¬ng T©n, h«m nay ta kh«ng giÕt ng­¬i. Hy väng ng­¬i h·y trèn thËt xa ®õng bao giê lã diÖn n÷a.")
 end
 
 function zhengbranch4()
 	AddOwnExp(260000)
 	AddExp_Skill_Extend(260000)
-	Msg2Player("Äã¸ÉµôÁËÓåÏæ½ò£¬ÈÎÎñÍê³É¡£¿ÉÒÔ»ØÈ¥ÏòÁøÄÏÔÆ¸´ÃüÁË¡£")
-	Talk(1,"",name..":ÓåÏæ½ò£¬°²ĞÄÈ¥°É¡£")
+	Msg2Player("B¹n ®· khuÊt phôc Du S­¬ng T©n, hoµn thµnh nhiÖm vô. Quay vÒ gÆp LiÔu Nam V©n phôc mÖnh.")
+	Talk(1,"",name..":Du S­¬ng T©n, h·y ®i ®i.")
 end
 

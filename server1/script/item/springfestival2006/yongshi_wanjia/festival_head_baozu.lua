@@ -20,7 +20,7 @@ function main()
 	local pidx = get_most_close_nianshou(SF_MISSIONID);
 	if (-1 == pidx) then
 	    PlayerIdex = nOldPlayer;
-	    Msg2Player("<#>ÄãµÄÖÜÎ§Ã»ÓĞÄêÊŞ£¬»¹ÊÇ²»ÒªÂÒÓÃ°É£¡");
+	    Msg2Player("<#> Xung quanh b¹n kh«ng cã Qu¸i thó, ®õng nªn sö dông hoang phİ!");
 	    return 1;
 	end;
 	
@@ -30,7 +30,7 @@ function main()
 	CastSkill(SKILLTYPE, SKILLLEVEL, -1, nNPCIdx);
 	
 	PlayerIdex = nOldPlayer;
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>");
+	Msg2Player("<#> B¹n ®· sö dông mét <color=0xB5FDD7>"..SKILLNAME.."<color>");
 end;
 
 

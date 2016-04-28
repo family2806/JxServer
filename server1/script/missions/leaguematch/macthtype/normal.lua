@@ -7,12 +7,12 @@ end
 -- ½±Àø¹æÔò£¬½±Æ·±í
 function tmp_help_award(tbData, nLevel)
 	local tbAward	= tbData.award_rank[nLevel]
-	local str = "    1. ÀÛ¼Æ½±Àø: Ê¤·½»ñµÃ"..(5*nLevel).."µã, ºÍ"..(2*nLevel).." µã, ¸º·½: 0 µã. Ã¿³¡±ÈÈü½«Ôö¼Ó<color=red>µã¾­Ñé½±<color>. Ê¤¸º¶¼ÓĞÏàÓ¦½±Àø\n"
-		.."    2. ÅÅÃû½±Àø: ±ÈÈü½áÊøºó£¬°´ÕÕÕ½¶Ó³É¼¨£¬ÅÅĞĞ<color=red> ´Ó1µ½"..tbAward[getn(tbAward)][1].."<color>, ³ÉÔ±¿ÉÒÔ»ñµÃÅÅÃû½±Àø(ÈÙÓşÖµ .\n"
-		.."    <t>ÅÅÃû½±Àø: \n"
-		.."   ÅÅÃû    ½±Àø"
+	local str = " 1. mÖt mái kÕ t­ëng th­ëng : th¾ng ph­¬ng ®¹t ®­îc "..(5*nLevel).." ®iÓm , cïng "..(2*nLevel).." ®iÓm , bŞ/cha/chŞu ph­¬ng : 0 ®iÓm . mçi cuéc tranh tµi ®em gia t¨ng <color=red> chót kinh nghiÖm t­ëng <color>. th¾ng b¹i ®Òu cã t­¬ng øng t­ëng th­ëng \n"
+		.." 2. ®øng hµng t­ëng th­ëng : sau khi cuéc tranh tµi kÕt thóc , dùa theo chiÕn ®éi thµnh tİch , ®øng hµng thø <color=red> tõ 1 ®Õn "..tbAward[getn(tbAward)][1].."<color>, thµnh viªn cã thÓ ®¹t ®­îc ®øng hµng t­ëng th­ëng ( vinh dù trŞ gi¸ .\n"
+		.." <t> ®øng hµng t­ëng th­ëng : \n"
+		.." ®øng hµng t­ëng th­ëng "
 	if (tbData.max_member ~= 1) then
-		str	= str.."(Õ½¶Ó³ÉÔ±)"
+		str	= str.."( chiÕn ®éi thµnh viªn )"
 	end
 
 	local nLastRank	= 1
@@ -24,7 +24,7 @@ function tmp_help_award(tbData, nLevel)
 		else
 			szRank	= nLastRank.."-"..nRank
 		end
-		str = str.."\n"..strfill_left(format("    ´Î %s ", szRank), 16)..tbAward[nAward][2].."ÈÙÓşÖµ"
+		str = str.."\n"..strfill_left(format(" lÇn %s ", szRank), 16)..tbAward[nAward][2].." vinh dù trŞ gi¸ "
 		nLastRank	= nRank + 1
 	end
 
@@ -33,34 +33,34 @@ end
 
 -- °ïÖúÎÄ×Ö
 -- ¸ñÊ½1£º
---	{"ÏîÄ¿Ãû³Æ", "°ïÖúÄÚÈİ", 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
+--	{" bé m«n tªn ", "Trî gióp néi dung ", 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
 --	ÏŞ¶¨£º1¡¢Ö»Õë¶Ôµ¥ÈËÀàĞÍ£»2¡¢Ö»Õë¶Ô¶àÈË£»nil¡¢È«²¿£¨ÏÂÍ¬£©
 -- ¸ñÊ½2£º
---	{"ÏîÄ¿Ãû³Æ", function(·µ»Ø°ïÖúÄÚÈİµÄº¯Êı), 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
+--	{" bé m«n tªn ", function(·µ»ØTrî gióp néi dung µÄº¯Êı), 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
 -- ¸ñÊ½3£º
 --	{
---		"ÏîÄ¿Ãû³Æ",
+--		" bé m«n tªn ",
 --		{
---			"ĞÂĞãÈü°ïÖúÄÚÈİ",
---			"¸ß¼¶Èü°ïÖúÄÚÈİ",
+--			" t©n tó cuéc so tµi trî gióp néi dung ",
+--			" cao cÊp cuéc so tµi trî gióp néi dung ",
 --		},
 --		1/2(ÏŞ¶¨£¬¿ÉÑ¡)
 --	},
 tmp_help = {
 	{
-		"<t>½éÉÜ",
+		"<t> giíi thiÖu ",
 		{
-			"    ´Ë´ÎĞÂĞãÁªÈüÎª <color=red><s><color>, ²Î¼ÓÈËµÄµÈ¼¶ĞèÒª´Ó <color=red>80-119<color>. Íæ¼ÒÈ¥¼û<color=red>ĞÂĞãÊ¹Õß<color>±¨Ãû³ÉÁ¢Õ½¶Ó£¬È»ºó½øÈëĞÂĞãÁªÈü»á³¡½øĞĞ±ÈÈü",
-			"    ´Ë´ÎÎäÁÖÁªÈüÎª <color=red><s><color>, ²Î¼ÓÈËµÄµÈ¼¶ĞèÒª´Ó <color=red>120<color>. È¥¼û<color=red>ÁªÈüÊ¹Õß<color>, ±¨Ãû³ÉÁ¢Õ½¶Ó£¬È»ºó½øÈëÎäÁÖÁªÈü»á³¡½øĞĞ±ÈÈü",
+			" lÇn nµy t©n tó liªn cuéc so tµi v× <color=red><s><color>, tham gia ng­êi cÊp bËc cÇn tõ <color=red>80-119<color>. nhµ ch¬i ®i gÆp <color=red> t©n tó sø gi¶ <color> ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo t©n tó liªn cuéc so tµi héi tr­êng tiÕn hµnh tranh tµi ",
+			" lÇn nµy vâ l©m liªn cuéc so tµi v× <color=red><s><color>, tham gia ng­êi cÊp bËc cÇn tõ <color=red>120<color>. ®i gÆp <color=red> liªn cuéc so tµi sø gi¶ <color>, ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo vâ l©m liªn cuéc so tµi héi tr­êng tiÕn hµnh tranh tµi ",
 		}
 	},
-	{"±¨Ãû²Î¼Ó±ÈÈü³ÌĞò", "    ÔÚ±ÈÈü½×¶Î£¬Íæ¼Ò¿ÉÒÔ±¨Ãû²Î¼ÓÈÎºÎĞÎÊ½µÄ±ÈÈü", 1},
-	{"±¨Ãû²Î¼Ó±ÈÈü³ÌĞò", "±¨Ãû²Î¼Ó <s>, ĞèÒª³ÉÁ¢Õ½¶Ó¡£Íæ¼Ò¿ÉÒÔÑ¡Ôñ×Ô¼ºµÄÕ½¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó¡£¶Ó³¤ÓëËûÈË×é¶Óºó£¬½«Óë¹ÙÔ±¶Ô»° <t>, Ñ¡Ôñ <color=red>Õ½¶Ó <t> Á¢¼´ĞÎ³ÉÕ½¶Ó¡£³ÉÔ±ÊıÁ¿×î¶àÎª <color=red><d> ÈË<color><e>.", 2},
-	{"Àë¿ª±ÈÈü¶Ó ", "    ÔÚ <color=red>ÀëĞİÏ¢½×¶Î´óÔ¼<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÍÑÀëÕ½¶Ó. ÔÚ±ÈÈü½×¶Î£¬Èç¹ûÄãµÄÕ½¶Ó<color=red>Î´µ½±ÈÈüÊ±ºò<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÀë¿ªÕ½¶Ó, Èç¹ûÒÑ¾­±ÈÈüÁË¾Í²»ÄÜÀë¿ª. <color=yellow>Àë¿ªÕ½¶Óºó£¬¾Í²»ÄÜÁìÅÅÃû½±Àø<color>. <color=yellow>Àë¿ªÕ½¶Óºó£¬½«²»ÄÜ·µ»Ø±ÈÈü<color>.", 1},
-	{"Àë¿ª±ÈÈü¶Ó ", "    ÔÚ<color=red>ÀëĞİÏ¢½×¶Î´óÔ¼<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÍÑÀëÕ½¶Ó. ÔÚ±ÈÈü½×¶Î£¬Èç¹ûÄãµÄÕ½¶Ó<color=red>Î´µ½±ÈÈüÊ±ºò<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÀë¿ªÕ½¶Ó, Èç¹ûÒÑ¾­±ÈÈüÁË¾Í²»ÄÜÀë¿ª. <color=yellow>Àë¿ªÕ½¶Óºó£¬¾Í²»ÄÜÁìÅÅÃû½±Àø<color>. Èç¹û¶Ó³¤Àë¿ªÕ½¶Ó£¬Ôò¶Ó³¤È¨Àû½«×ª½»¸øÆäËûÈË. <color=yellow>Èç¹ûÕ½¶ÓÃ»ÈËÁË£¬½«×Ô¶¯½âÉ¢<color>.Ã¿´ÎÁªÈü½áÊø£¬ÄÄ¸öÕ½¶Ó²»·ûºÏÏÂ´Î±ÈÈü¾Í×Ô¶¯±»½âÉ¢", 2},
-	{"±ÈÈü³¡´Î", "Ã¿ÖÜ´ÓÖÜÒ»µ½ÖÜËÄ£¬´Ó <color=red>18: 00- 19: 00<color> ¿ªÒµ±ÈÈü<color=yellow>4 ³¡<color>. ÓàÏÂ3Ìì´Ó <color=red>18: 00-19: 00<color> ºÍ <color=red>21: 00-22: 00<color> ¿ÉÒÔ±ÈÈü <color=yellow>8 ³¡<color>. Õû¸ö±ÈÈü½×¶Î<color=red>(Ã¿ÔÂ´Ó8-28)<color> ËùÓĞ±ÈÈü<color=yellow>108 ³¡<color>. ²Î¼ÓÕ½¶Ó×î¶à²Î¼Ó<color=red>48 ³¡<color> "},
-	{"±ÈÈüÁ÷³Ì", "  Õ½¶Ó¶ÓÔ±È¥ºÍ<t> ¶Ô»°½øÈë»á³¡ <t>, È»ºó¼ÌĞøºÍ»á³¡¹ÙÔ±¶Ô»°£¬¾Í»á±»´øÈë×°±¸ÇøÓò¡£µ½±ÈÈüÊ±¼ä£¬²Î¼Ó¶ÓÔ±½«×Ô¶¯±»ËÍÈËÈü³¡. <color=red>¿ÉÒÔ×ÔÓÉÑ¡ÔñÎäÆ÷ºÍ×°±¸<color>."},
-	{"±ÈÈü¹æÔò",	-- µ¥ÈË
+	{"Ghi danh tham gia tranh tµi tr×nh tù ", " ë tranh tµi giai ®o¹n , nhµ ch¬i cã thÓ ghi danh tham gia bÊt kú h×nh thøc ®İch tranh tµi ", 1},
+	{"Ghi danh tham gia tranh tµi tr×nh tù ", "Ghi danh tham gia <s>, cÇn thµnh lËp chiÕn ®éi . nhµ ch¬i cã thÓ lùa chän m×nh chiÕn ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c . ®éi tr­ëng cïng h¾n ng­êi häp thµnh ®éi sau , ®em cïng quan viªn ®èi tho¹i <t>, lùa chän <color=red> chiÕn ®éi <t> lËp tøc t¹o thµnh chiÕn ®éi . thµnh viªn sè l­îng nhiÒu nhÊt v× <color=red><d> ng­êi <color><e>.", 2},
+	{"Rêi ®i tranh tµi ®éi ", " ë <color=red> c¸ch nghØ ng¬i giai ®o¹n ­íc chõng <color>, nhµ ch¬i cã thÓ tù ®i tho¸t khái chiÕn ®éi . ë tranh tµi giai ®o¹n , nÕu nh­ ng­¬i chiÕn ®éi <color=red> ch­a tíi tranh tµi thêi ®iÓm <color>, nhµ ch¬i cã thÓ tù ®i rêi ®i chiÕn ®éi , nÕu nh­ ®· so tµi th× kh«ng thÓ rêi ®i . <color=yellow> rêi ®i chiÕn ®éi sau , th× kh«ng thÓ dÉn ®øng hµng t­ëng th­ëng <color>. <color=yellow> rêi ®i chiÕn ®éi sau , ®em kh«ng thÓ trë vÒ tranh tµi <color>.", 1},
+	{"Rêi ®i tranh tµi ®éi ", " ë <color=red> c¸ch nghØ ng¬i giai ®o¹n ­íc chõng <color>, nhµ ch¬i cã thÓ tù ®i tho¸t khái chiÕn ®éi . ë tranh tµi giai ®o¹n , nÕu nh­ ng­¬i chiÕn ®éi <color=red> ch­a tíi tranh tµi thêi ®iÓm <color>, nhµ ch¬i cã thÓ tù ®i rêi ®i chiÕn ®éi , nÕu nh­ ®· so tµi th× kh«ng thÓ rêi ®i . <color=yellow> rêi ®i chiÕn ®éi sau , th× kh«ng thÓ dÉn ®øng hµng t­ëng th­ëng <color>. nÕu nh­ ®éi tr­ëng rêi ®i chiÕn ®éi , lµ ®éi tr­ëng quyÒn lîi ®em chuyÓn giao cho nh÷ng ng­êi kh¸c . <color=yellow> nÕu nh­ chiÕn ®éi kh«ng ai liÔu , ®em tù ®éng gi¶i t¸n <color>. mçi lÇn liªn cuéc so tµi kÕt thóc , c¸i nµo chiÕn ®éi kh«ng phï hîp lÇn sau tranh tµi liÒn tù ®éng bŞ gi¶i t¸n ", 2},
+	{"§Êu tr­êng lÇn ", "Mçi tuÇn tõ thø hai ®Õn thø n¨m , tõ <color=red>18: 00- 19: 00<color> khai tr­¬ng tranh tµi <color=yellow>4 trµng <color>. cßn sãt l¹i 3 ngµy tõ <color=red>18: 00-19: 00<color> cïng <color=red>21: 00-22: 00<color> cã thÓ tranh tµi <color=yellow>8 trµng <color>. toµn bé tranh tµi giai ®o¹n <color=red>( mçi th¸ng tõ 8-28)<color> tÊt c¶ tranh tµi <color=yellow>108 trµng <color>. tham gia chiÕn ®éi nhiÒu nhÊt tham gia <color=red>48 trµng <color> "},
+	{"Tranh tµi l­u tr×nh ", "ChiÕn ®éi ®éi viªn ®i cïng <t> ®èi tho¹i tiÕn vµo héi tr­êng <t>, tiÕp theo sau ®ã cïng héi tr­êng quan viªn ®èi tho¹i , còng sÏ bŞ mang vµo trang bŞ khu vùc . ®Õn tranh tµi thêi gian , tham gia ®éi viªn ®em tù ®éng bŞ ®­a ng­êi cuéc so tµi trµng . <color=red> cã thÓ tù do lùa chän vò khİ cïng trang bŞ <color>."},
+	{"Tranh tµi quy t¾c ",	-- µ¥ÈË
 [[    1. ÔÚ±ÈÈüÊ±¼ä, ´ò°Ü¶ÔÊÖÁ¢¼´»ñÊ¤
     2. ÔÚ±ÈÈüÊ±¼ä <color=red>Èç¹ûÒ»±ß²»Ê£Ò»¸ö³ÉÔ±ÁË¾ÍÊÇ¸º·½<color> Á¢¼´±»´¦Àí
     3. Èç¹û½áÊø±ÈÈü£¬2±ß³ÉÔ±¶¼ÊÇÒ»ÑùµÄ£¬ÏµÍ³½«»áÅĞ¶ÏÄÇ±ß±»´òÖĞµÄ´ÎÊı×îÉÙÎª»ñÊ¤·½£¬Èç¹û»¹ÊÇÒ»ÑùµÄ£¬¾ÍÊÇºÍ¡£
@@ -70,7 +70,7 @@ tmp_help = {
     7. <color=red>½ø³¡10Ãëºó¿ªÊ¼±ÈÈü<color>; ±ÈÈüÊ±¼äÎª14·Ö50Ãë 
     8. 2³¡±ÈÈüĞİÏ¢¼ä¸ô <color=red>10 ·ÖÖÓ<color>. <color=red>×¼±¸Ê±¼ä<color> 5 ·ÖÖÓ
 ]], 1},
-	{"±ÈÈü¹æÔò",	-- ¶àÈË
+	{"Tranh tµi quy t¾c ",	-- ¶àÈË
 [[    1. ÔÚ±ÈÈüÊ±¼ä <color=red>ÄÄ±ßÈ«²¿ËÀÍöcolor> ¾ÍÎª¸º·½, ±ÈÈü½áÊø
     2. ÔÚ±ÈÈüÊ±¼ä <color=red>Èç¹ûÒ»±ß²»Ê£Ò»¸ö³ÉÔ±ÁË¾ÍÊÇ¸º·½<color> Á¢¼´±»´¦Àí
     3. ±ÈÈüÊ±¼ä½áÊø <color=red>ÄÄ±ßÊ£ÓàµÄ³ÉÔ±×î¶àÎªÊ¤·½<color>. Èç¹û <color=red>2·½ÈËÊıÒ»Ñù<color> Ôò±»´òÖĞ×îÉÙµÄÒ»·½È¡Ê¤¡£·ñÔòÎªºÍ¡£
@@ -80,8 +80,8 @@ tmp_help = {
     7. <color=red>½ø³¡10Ãëºó¿ªÊ¼±ÈÈü<color>; ±ÈÈüÊ±¼äÎª14·Ö50Ãë
     8. Ã¿³¡±ÈÈü×¼±¸Ê±¼äÎª <color=red>5 ·ÖÖÓ<color>
 ]], 2},
-	{"»÷ÖĞ´ÎÊı",
-[[»÷ÖĞ´ÎÊı£º¾ÍÊÇ±»¶Ô·½ÓÃ´¸×Ó£¬¶¾£¬»òÕß±»´òÖĞÊÜÉË´ÎÊı
+	{"§¸nh tróng sè lÇn ",
+[[§¸nh tróng sè lÇn £º¾ÍÊÇ±»¶Ô·½ÓÃ´¸×Ó£¬¶¾£¬»òÕß±»´òÖĞÊÜÉË´ÎÊı
 
 ¼ÆËã±»´òÖĞ´ÎÊı¹æÔò
     1. Ã¿³¡±»¶Ô·½´òÖĞ£¬ÑªÁ¿¼õÉÙ
@@ -91,17 +91,17 @@ tmp_help = {
     5. Èç¹ûÒòÎªÊ¹ÓÃ¼¼ÄÜµ¼ÖÂÑªÁ¿¼õÉÙ¾Í²»±»¼ÆÈë±»´òÖĞ´ÎÊıÄÚ
 ]]
 	},
-	{"±¨Ãû¹æÔò", "     <color=red>§i±ÈÈü»ı·Ö <t><color>ÓÃÓÚ×÷ÎªÅÅĞĞÒÀ¾İ <t>. ½áÊø±ÈÈü<color=red><pw><color>µã, ºÍ<color=red><pt><color> µã; ¸º·½ <color=red>0<color> µã. Ã¿´Î<t>½áÊø£¬¸ù¾İ<color=red>Õ½¶Ó×Ü»ı·Ö<color>ÅÅÃû. Èç¹û»ı·ÖÒ»Ñù£¬½«¸ù¾İ<color=yellow>Ê¤Àû±ÈÀı<color> ÅÅĞĞ¡£Èç¹ûÊ¤Àû±ÈÀıÒ»Ñù£¬½«¸ù¾İ<color=green> Ã¿¸öÕ½¶Ó±ÈÈü×ÜÊ±¼ä<color> ÅÅĞĞ¡£±ÈÈü½×¶Î<t> ºó£¬»ı·Ö½«ÖØĞÂ¼ÆËã"},
-	{"ÁË½â¸ü¶àÏêÇé", tmp_help_award},
+	{"Ghi danh quy t¾c ", " <color=red> tranh tµi tİch ph©n <t><color> dïng cho lµm ®øng hµng thø y c­ <t>. kÕt thóc tranh tµi <color=red><pw><color> ®iÓm , cïng <color=red><pt><color> ®iÓm ; bŞ/cha/chŞu ph­¬ng <color=red>0<color> ®iÓm . mçi lÇn <t> kÕt thóc , c¨n cø <color=red> chiÕn ®éi tæng tİch ph©n <color> ®øng hµng . nÕu nh­ tİch ph©n mét d¹ng , ®em c¨n cø <color=yellow> th¾ng lîi tû lÖ <color> ®øng hµng thø . nÕu nh­ th¾ng lîi tû lÖ mét d¹ng , ®em c¨n cø <color=green> mçi chiÕn ®éi tranh tµi tæng thêi gian <color> ®øng hµng thø . tranh tµi giai ®o¹n <t> sau , tİch ph©n ®em lÇn n÷a tİnh to¸n "},
+	{"HiÓu râ nhiÒu h¬n t­êng t×nh ", tmp_help_award},
 }
 
 tmp_main = {	--officerÖ÷¶Ô»°
-	"½­ºş·ç²¨ÂÒÆğ£¬µ«ÊÇ£¬·ñ¼«Ì©À´¡£µ±Ò»¸öĞÂĞãÓ¢ĞÛ³öÏÖµÄÊ±ºò£¬Ò²ÊÇÒ»¸öĞÂµÄÀúÊ·±»ÔØÈëÊ·²á¡£Ë­»áÊÇÍ¬Ò»ÌìÏÂµÄĞÂÓ¢ĞÛÄØ?",
-	"ÎªÁË±ÜÃâÓ¢ĞÛºÀ½ÜÔÙÒ»´Î·×Õù£¬¶À¹ÂÃËÖ÷¾ÙĞĞÁË±ÈÈüÀ´ÕÒ³öÈË²Å£¬·şÎñ¹ú¼Ò",
+	" giang hå phong ba lo¹n khëi , nh­ng lµ , hay kh«ng v« cïng th¸i lai . khi mét t©n tó anh hïng xuÊt hiÖn thêi ®iÓm , còng lµ mét míi lŞch sö bŞ t¸i nhËp sö s¸ch . ng­êi nµo sÏ lµ cïng mét ngµy h¹ ®İch míi anh hïng ®©y ?",
+	" v× ®Ó tr¸nh cho anh hïng hµo kiÖt l¹i mét lÇn n÷a ph©n tranh , ®éc c« minh chñ cö hµnh tranh tµi ®Õn t×m ra nh©n tµi , phôc vô quèc gia ",
 }
 
-tmp_creat = "    ½¨Á¢Õ½¶Ó²Î¼Óºó<s>, Äã¿ÉÒÔ <color=red>×Ô¼º×ö¶Ó³¤<color><enter>"
-	.."   ½¨Á¢Õ½¶Óºó£¬ÎŞÂÛºÎÊ±£¬Äã¶¼¿ÉÒÔÇëËûÈË²Î¼Ó»òÕß¼ÓÈëÆäËû¶Ó¡£Ã¿¸öÕ½¶Ó×î¶àÖ»ÄÜ<d> ÈË (°üÀ¨¶Ó³¤). <color=red>Èç¹ûÎ´µ½±ÈÈüÊ±ºò<color> Ò² <color=red>Î´Èü¹ıÈÎºÎ³¡´Î<color>, Äã¿ÉÒÔËæÒâÀë¿ªÕ½¶Ó¡£ÄãÈ·¶¨½¨Á¢×Ô¼ºµÄÕ½¶ÓÂğ£¿"
+tmp_creat = " thµnh lËp chiÕn ®éi tham gia sau <s>, ng­¬i cã thÓ <color=red> m×nh lµm ®éi tr­ëng <color><enter>"
+	.." thµnh lËp chiÕn ®éi sau , v« luËn khi nµo , ng­¬i còng cã thÓ xin/mêi ng­êi kh¸c tham gia hoÆc lµ gia nhËp nh÷ng kh¸c ®éi . mçi chiÕn ®éi nhiÒu nhÊt chØ cã thÓ <d> ng­êi ( bao gåm ®éi tr­ëng ). <color=red> nÕu nh­ ch­a tíi tranh tµi thêi ®iÓm <color> còng <color=red> kh«ng t¸i qu¸ bÊt kú trµng lÇn <color>, ng­¬i cã thÓ tïy ı rêi ®i chiÕn ®éi . ng­¬i x¸c ®Şnh thµnh lËp m×nh chiÕn ®éi sao ? "
 
 --====Functions====
 --·µ»Øµ±Ç°½ÇÉ«¿ÉÒÔ²Î¼ÓµÄ±ÈÈüÀàĞÍ£¬nilÎª²»ÄÜ²ÎÈü
@@ -113,7 +113,7 @@ end
 --¼ì²éµ±Ç°½ÇÉ«ÊÇ·ñ¿ÉÒÔ¼ÓÈëÖ¸¶¨µÄÕ½¶Ó
 function tmp_check_addmem(n_capidx, n_lid, n_mtype)
 	if (n_mtype ~= wlls_player_type()) then
-	 	return "¶Ô²»Æğ£¬¶ÓÖĞ¶ÓÔ±:"..GetName().." ºÍ <color=red>±ÈÈüÀàĞÍ<color> ²»·ûºÏ£¬ËùÒÔ£¬²»ÄÜ½øÈëÄãµÄÕ½¶Ó!"
+	 	return " thËt xin lçi , ®éi trung ®éi viªn :"..GetName().." cïng <color=red> tranh tµi lo¹i h×nh <color> kh«ng phï hîp , cho nªn , kh«ng thÓ vµo ng­¬i chiÕn ®éi !"
 	end
 end
 

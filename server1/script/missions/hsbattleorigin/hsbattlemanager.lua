@@ -20,26 +20,26 @@ function main()
 	SetTask(302, 3592);
 	idx = SubWorldID2Idx(MapTab[1][1]);
 	if (idx == -1) then 
-		Say("Ä¿Ç°»¹Ã»ÓĞÈË±¨ÃûÀŞÌ¨µ¥Ìô¡£ÒåÊ¿ÏëÊÔÊÔÂğ?",0)
+		Say("HiÖn giê vÉn ch­a cã ai b¸o danh L«i ®µi ®¬n ®Êu! NghÜa sÜ cã muèn thö tµi kh«ng?",0)
 		return
 	end
 	
 	OldSubWorld = SubWorld;
 	SubWorld = idx;
 	if (GetMissionV(1) ~= 1) then 
-		Say("Ä¿Ç°»¹Ã»ÓĞÈË±¨ÃûÀŞÌ¨µ¥Ìô¡£ÒåÊ¿ÏëÊÔÊÔÂğ?",0)
+		Say("HiÖn giê vÉn ch­a cã ai b¸o danh L«i ®µi ®¬n ®Êu! NghÜa sÜ cã muèn thö tµi kh«ng?",0)
 		return
 	end;
 	
 	SubWorld = OldSubWorld;
 
-	Say("Ä¿Ç°»¹Ã»ÓĞÈË±¨ÃûÀŞÌ¨µ¥Ìô£¬Ö»ĞèÒª60¼¶ÒÔÉÏ£¬¸¶10000 ±¨Ãû·ÑÓÃ¾Í¿ÉÒÔÊÔÁË!", 2, "ºÃ£¬ÎÒÏëÊÔÊÔ¸÷Î»ºÀ½ÜµÄ²ÅÒÕ. /JoinHS", "²»²Î¼Ó/OnCancel");
+	Say("HiÖn giê vÉn ch­a cã ai b¸o danh L«i ®µi ®¬n ®Êu! ChØ cÇn cÊp 60 trë lªn, ®ãng 10000 phİ b¸o danh lµ cã thÓ thö tµi!", 2, "§­îc, Ta muèn th­ëng thøc tµi nghÖ cña c¸c vŞ hµo kiÖt Êy. /JoinHS", "Kh«ng tham gia /OnCancel");
 end;
 
 function JoinHS()
 	LeaveTeam();
 	if (CheckCondition() == 0) then
-		Say("Äã²»×ãµÈ¼¶»òÕß´øµÄÇ®²»¹»£¬»òÕß²»ÊÇ½­ºşÖĞÈË£¬²»ÄÜÉÏ»ªÉ½¾ø¶¥", 0);
+		Say("B¹n ch­a ®ñ ®¼ng cÊp hoÆc kh«ng mang ®ñ tiÒn hoÆc kh«ng ph¶i lµ ng­êi trong giang hå, kh«ng thÓ lªn Hoa S¬n tuyÖt ®Ønh", 0);
 		return
 	end;
 	

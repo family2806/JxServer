@@ -1,5 +1,5 @@
 function GetDesc(nItem)
-	return "<color=blue>\n°Ñ´ËÁî½»¸øÑïÖİµÄ<color=green>ÉÍÉÆÊ¹<color>[<color=red>223 ,198<color=blue>]£¬Ëı»áÎªÄãµÄ°ïÅÉËùÕ¼ÁìµÄ³ÇÊĞ¼ÇÒ»¼ş¹¦¼¨<color>"
+	return "<color=blue>\n §em lÖnh bµi nµy giao cho D­¬ng Ch©u<color=green> Th­ëng ThiÖn Sø <color> [<color=red>223, 198<color=blue>], c« ta sÏ gióp bang ph¸i b¹n ghi nhí mét c«ng tr¹ng chiÕm thµnh thŞ<color>"
 end
 
 function main(nItem)

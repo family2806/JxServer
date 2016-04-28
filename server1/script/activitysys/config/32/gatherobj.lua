@@ -21,7 +21,7 @@ local _GetGatherObj = function(nNpcIndex, dwNpcId)
 		return 0;
 	end
 	
-	tbAwardTemplet:GiveAwardByList({szName=tbTask.szGatherName,tbProp={tbTask.tbItem[1], tbTask.tbItem[2],tbTask.tbItem[3],1,0,0}, nBindState=-2, nExpiredTime=60}, format("√ø»’ ’ºØ»ŒŒÒ%s",tbTask.szGatherName));
+	tbAwardTemplet:GiveAwardByList({szName=tbTask.szGatherName,tbProp={tbTask.tbItem[1], tbTask.tbItem[2],tbTask.tbItem[3],1,0,0}, nBindState=-2, nExpiredTime=60}, format("Nhi÷m vÙ thu thÀp hµng ngµy%s",tbTask.szGatherName));
 	
 	KillNpcWithIdx(nNpcIndex, PIdx2NpcIdx(PlayerIndex));
 end

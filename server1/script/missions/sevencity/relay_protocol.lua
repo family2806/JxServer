@@ -74,15 +74,15 @@ function RelayProtocol:SyncViceroy(param, result)
 	local msg = nil
 	local city = MAP_INFO[mapid].CityName
 	if (flag == 1 and tong ~= "") then
-		msg = format("∞Ôª·<color=red>%s<color> “—æ≠’º¡Ï≥…π¶ <color=red>%s<color> !",
+		msg = format("Bang hÈi <color=red>%s<color> Æ∑ chi’m l‹nh thµnh c´ng <color=red>%s<color> !",
 					tong,
 					city)
 	elseif (tong ~= "") then
-		msg = format("<color=red>%s<color>  ÿ≥«≥…π¶£¨ºÃ–¯’º¡Ï <color=red>%s<color>!",
+		msg = format("<color=red>%s<color> thÒ thµnh thµnh c´ng, ti’p tÙc chi’m l‹nh <color=red>%s<color>!",
 					tong,
 					city)
 	else
-		msg = format("<color=red>%s<color> Œﬁ»À’º¡Ï.", city)
+		msg = format("<color=red>%s<color> kh´ng ng≠Íi chi’m l‹nh.", city)
 	end
 	AddGlobalCountNews(msg, 3)
 end

@@ -32,14 +32,14 @@ function ReportMemberState(V)
 	local str1;
 
 	if (RestMin > 0) and (RestSec == 0) then
-		str1 = "ÉÏÀÞÌ¨±ÈÈüÊ±¼ä<#> »¹ÓÐ: <color=yellow>"..RestMin.."<color><#> ·Ö£¬Çë¾¡¿ìÈë³¡."
+		str1 = "Th­îng l«i ®µi, thêi gian b¾t ®Çu thi ®Êu cßn: <color=yellow>"..RestMin.."<color> phót xin h·y chuÈn bÞ."
 		Msg2MSAll(BW_MISSIONID, str1);
 		if ((GO_TIME - V) == 3) then 
-			str1 = GetMissionS(CITYID).."ÉÏÀÞÌ¨±ÈÈüÊ±¼ä<#> Ö»»¹ÓÐ<color=yellow>1<color> ·Ö, Çë¾¡¿ìÈë³¡."
+			str1 = GetMissionS(CITYID).."Th­îng l«i ®µi, thêi gian b¾t ®Çu thi ®Êu chØ cßn <color=yellow>1<color> phót xin h·y chuÈn bÞ s½n sµng."
 			--AddGlobalCountNews(str1)
 		end
 	elseif (RestMin == 0) then
-		str1 = "ÉÏÀÞÌ¨±ÈÈüÊ±³¤<#> »¹ÓÐ: <color=yellow>" ..RestSec.. "<color><#>·Ö."
+		str1 = "Th­îng l«i ®µi tranh tµi cßn: <color=yellow>" ..RestSec.. "<color> gi©y."
 		Msg2MSAll(BW_MISSIONID, str1);
 	end;
 	return str1;
@@ -65,7 +65,7 @@ function bw_noticecaptainkey(str1)
 			szName = GetMissionS(MSS_CAPTAIN[i]);
 			nKey = GetMissionV(MS_TEAMKEY[i]);
 			nCount = GetMissionV(MS_MAXMEMBERCOUNT);
-			str = "¸÷ÏÂÊôÓÚÕ½¶Ó<color=yellow> "..GetMissionS(CITYID).."<color> <#>ÊôÓÚ¶Ó<color=yellow> "..nCount.."<color>±ÈÈüºÍ<color=yellow> "..nCount.."<color>, <#> Èë³¡ÐòºÅ<color=yellow> ["..nKey.."]<color>.¸æËß×Ô¼ºµÄ¶ÓÓÑÈë³¡.";
+			str = "C¸c thµnh viªn <color=yellow> "..GetMissionS(CITYID).."<color> cña ®éi<color=yellow> "..nCount.."<color>thi ®Êu víi<color=yellow> "..nCount.."<color>, vµo l«i ®µi sè<color=yellow> ["..nKey.."]<color>.Xin h·y dÉn ®éi vµo l«i ®µi.";
 			Msg2Player(str);
 		end
 	end;
@@ -77,7 +77,7 @@ function bw_begin_compete()
 	local nGroup1PlayerCount = GetMSPlayerCount(BW_MISSIONID, 1);
 	local nGroup2PlayerCount = GetMSPlayerCount(BW_MISSIONID, 2);
 	if (nGroup1PlayerCount <= 0  and nGroup2PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."<#> ÀÞÌ¨±ÈÈüÊ±¼äµ½ÁË£¬¶Ó<color=yellow>"..szCaptainName[1].."<#> <color> ºÍ¶Ó<color=yellow>"..szCaptainName[2].."<#> <color>Èë³¡Ê±¼ä²»¶Ô£¬È¡Ïû±ÈÈü";
+		str1 = GetMissionS(CITYID).." L«i ®µi tranh tµi ®· ®Õn giê, ®éi<color=yellow>"..szCaptainName[1].." <color> cïng ®éi<color=yellow>"..szCaptainName[2].." <color>®· kh«ng vµo l«i ®µi ®óng giê, hñy bá thi ®Êu";
 		Msg2MSAll(BW_MISSIONID,str1)
 		--AddGlobalCountNews(str1);
 		SetMissionV(MS_STATE,3);
@@ -86,7 +86,7 @@ function bw_begin_compete()
 	end;
 
 	if (nGroup1PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."<#>ÀÞÌ¨±ÈÈüÊ±¼äµ½ÁË£¬¶Ó<color=yellow>"..szCaptainName[1].."<#> <color>Èë³¡Ê±¼ä²»¶Ô£¬¶Ó<color=yellow>"..szCaptainName[2].."<#> <color>¿ÉÒÔÊÓÎªÊ¤Àû!"
+		str1 = GetMissionS(CITYID).."L«i ®µi tranh tµi ®· ®Õn giê, ®éi<color=yellow>"..szCaptainName[1].." <color>vµo l«i ®µi kh«ng ®óng giê, ®éi<color=yellow>"..szCaptainName[2].." <color>®­îc xem lµ chiÕn th¾ng!"
 		Msg2MSAll(BW_MISSIONID, str1);
 		--AddGlobalCountNews(str1);
 		bw_branchtask_win(2);
@@ -95,7 +95,7 @@ function bw_begin_compete()
 	end;
 
 	if (nGroup2PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."<#>ÀÞÌ¨±ÈÈüÊ±¼äµ½ÁË£¬¶Ó<color=yellow>"..szCaptainName[2].."<#> <color>Èë³¡Ê±¼ä²»¶Ô£¬¶Ó<color=yellow>"..szCaptainName[1].."<#> <color>¿ÉÒÔÊÓÎªÊ¤Àû!";
+		str1 = GetMissionS(CITYID).."L«i ®µi tranh tµi ®· ®Õn giê, ®éi<color=yellow>"..szCaptainName[2].." <color>vµo l«i ®µi kh«ng ®óng giê, ®éi<color=yellow>"..szCaptainName[1].." <color>®­îc xem lµ chiÕn th¾ng!";
 		Msg2MSAll(BW_MISSIONID, str1);
 		--AddGlobalCountNews(str1);
 		bw_branchtask_win(1);
@@ -103,8 +103,8 @@ function bw_begin_compete()
 		return
 	end;
 		
-	Msg2MSAll(BW_MISSIONID, "Èë³¡Ê±¼äÖÐ¶Ï£¬±ÈÈüÕýÊ½¿ªÊ¼!");
-	str = GetMissionS(CITYID).."ÀÞÌ¨<#> <color=yellow>"..szCaptainName[1].."<color> <#>ºÍcolor=yellow>"..szCaptainName[2].."<color> <#>Èë³¡Ê±¼äÖÐ¶Ï£¬±ÈÈüÕýÊ½¿ªÊ¼!";
+	Msg2MSAll(BW_MISSIONID, "§· vµo l«i ®µi, tranh tµi chÝnh thøc b¾t ®©u!");
+	str = GetMissionS(CITYID).."L«i ®µi <color=yellow>"..szCaptainName[1].."<color> cïng<color=yellow>"..szCaptainName[2].."<color> §· vµo l«i ®µi, tranh tµi chÝnh thøc b¾t ®©u!";
 	--AddGlobalCountNews(str);
 	RunMission(BW_MISSIONID);
 	return
@@ -116,11 +116,11 @@ function ReportBattle(V)
 	RestMin = floor(gametime / 60);
 	RestSec = mod(gametime,60);
 	if (RestMin == 0) then
-		Msg2MSAll(BW_MISSIONID, "ÀÞÌ¨±ÈÈü½×¶Î<#>: Ë«·½±ÈÈü¡£Ê±¼ä»¹ÓÐ<color=yellow>"..RestSec.."<color><#> Ãë.");
+		Msg2MSAll(BW_MISSIONID, "Thêi gian l«i ®µi: Thêi gian cßn<color=yellow>"..RestSec.."<color> gi©y.");
 	elseif (RestSec == 0) then
-		Msg2MSAll(BW_MISSIONID, "ÀÞÌ¨±ÈÈü½×¶Î<#>:Ë«·½±ÈÈü¡£Ê±¼ä»¹ÓÐ<color=yellow>"..RestMin.."<color><#> ·Ö.");
+		Msg2MSAll(BW_MISSIONID, "Thêi gian l«i ®µi:Thêi gian cßn<color=yellow>"..RestMin.."<color> phót.");
 	else
-		Msg2MSAll(BW_MISSIONID, "ÀÞÌ¨±ÈÈü½×¶Î<#>:Ë«·½±ÈÈü¡£Ê±¼ä»¹ÓÐ<color=yellow>"..RestMin.."<color><#> ·Ö<color=yellow>"..RestSec.."<color><#> Ãë.");
+		Msg2MSAll(BW_MISSIONID, "Thêi gian l«i ®µi:Thêi gian cßn<color=yellow>"..RestMin.."<color> phót<color=yellow>"..RestSec.."<color> gi©y.");
 	end;
 end;
 
@@ -128,19 +128,19 @@ function bw_checkwinner()
 	local nGroup1PlayerCount = GetMSPlayerCount(BW_MISSIONID, 1);
 	local nGroup2PlayerCount = GetMSPlayerCount(BW_MISSIONID, 2);
 	if (nGroup1PlayerCount <= 0 ) and (nGroup2PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."Ë«·½Í¬Ê±Àë¿ªÈü³¡<#>, ¶Ó <color=yellow>"..szCaptainName[1].."<color> <#> ºÍ<color=yellow>"..szCaptainName[2].."<color> <#> ´òÆ½!";
+		str1 = GetMissionS(CITYID).." Hai bªn ®ång thêi rêi l«i ®µi, ®éi <color=yellow>"..szCaptainName[1].."<color> cïng <color=yellow>"..szCaptainName[2].."<color>  ´ngang tµi ngang søc";
 		bw_all_gone(str1)
 		return
 	end;
 
 	if (nGroup1PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."ÀÞÌ¨½á¹û<#>, ¶Ó <color=yellow>"..szCaptainName[2].."<color> <#>´ò°ÜÁË¶Ó<color=yellow>"..szCaptainName[1].."<color> <#>, È¡µÃ×îÖÕÊ¤Àû!"
+		str1 = GetMissionS(CITYID).." KÕt qu¶ l«i ®µi, ®éi <color=yellow>"..szCaptainName[2].."<color>  ®¸nh b¹i ®éi<color=yellow>"..szCaptainName[1].."<color> , giµnh ®­îc th¾ng lîi cuèi cïng!"
 		bw_all_gone(str1)
 		return
 	end;
 	
 	if (nGroup2PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."ÀÞÌ¨½á¹û<#>, ¶Ó <color=yellow>"..szCaptainName[1].."<color> <#> ´ò°Ü¶Ó<color=yellow>"..szCaptainName[2].."<color> <#>, È¡µÃ×îÖÕÊ¤Àû!"
+		str1 = GetMissionS(CITYID).." KÕt qu¶ l«i ®µi, ®éi <color=yellow>"..szCaptainName[1].."<color>  ®¸nh b¹i ®éi<color=yellow>"..szCaptainName[2].."<color> , giµnh ®­îc th¾ng lîi cuèi cïng!"
 		bw_all_gone(str1)
 		return
 	end;

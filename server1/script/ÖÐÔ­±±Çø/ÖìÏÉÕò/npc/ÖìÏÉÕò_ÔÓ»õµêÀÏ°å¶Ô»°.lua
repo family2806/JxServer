@@ -5,7 +5,7 @@ Include("\\script\\global\\global_zahuodian.lua");
 
 function main(sel)
 	local buttons = store_sel_village_extend();
-		Say("Ö»ÓĞ¿Í¹ÙÏë£¬ÕâÀïÃ»ÓĞÊ²Ã´ÊÇÂò²»µ½µÄ",getn(buttons), buttons);
+		Say("ChØ cÇn kh¸ch gia muèn, ë ®©y kh«ng thø g× lµ kh«ng cã.",getn(buttons), buttons);
 end;
 
 

@@ -249,16 +249,16 @@ tbBetInfo.tbNormalAward =
 {
 	-- §iµ÷Õû¸»¹ó½õºĞ - Created by AnhHH  20110919
 	{nExp_tl = 20000000},
---	{szName="½ğÅÆ", tbProp={6,1,1481,1,0,0}, nExpiredTime = 10080},
+--	{szName="Kim Bµi", tbProp={6,1,1481,1,0,0}, nExpiredTime = 10080},
 }
 tbBetInfo.tbSpecAward =
 {
 	-- §iµ÷Õû¸»¹ó½õºĞ - Created by AnhHH  20110919
 	{nExp_tl = 200000000},
-	{szName="ĞÒÔË´ü", tbProp={6,1,30111,1,0,0}, nExpiredTime = 1380},
---	{szName="ÓñÅÆ", tbProp={6,1,1482,1,0,0}, nExpiredTime = 10080},
---	{szName="Ò»¼ÍÇ¬À¤·û", tbProp={6,1,2126,1,0,0}, nExpiredTime = 43200},
---	{szName="ÉñĞĞËéÆ¬", tbProp={6,1,2410,1,0,0}, nCount=18, nExpiredTime = 20100823},
+	{szName="Tói May M¾n", tbProp={6,1,30111,1,0,0}, nExpiredTime = 1380},
+--	{szName="Ngäc Bµi", tbProp={6,1,1482,1,0,0}, nExpiredTime = 10080},
+--	{szName="NhÊt Kû Cµn Kh«n Phï", tbProp={6,1,2126,1,0,0}, nExpiredTime = 43200},
+--	{szName="ThÇn Hµnh To¸i PhiÕn", tbProp={6,1,2410,1,0,0}, nCount=18, nExpiredTime = 20100823},
 }
 
 function tbBetInfo:IsActive()
@@ -378,12 +378,12 @@ function tbBetInfo:Bet(nValue)
 	end
 	
 	if (nValue < 10 or nValue > 99) then
-		Talk(1,"","Ö»ÄÜÈÏ¿ÉÊı×Ö10µ½99.");
+		Talk(1,"","ChØ ®­îc phĞp nhËp tõ sè 10 ®Õn 99.");
 		return 0;
 	end
 	
 	if ConsumeEquiproomItem(1, 6, 1, 2402, -1) ~= 1 then
-		Talk(1,"","¶î, ÎÒÔõÃ´Ã»¿´¼ûÄãÄÃ×Å½õºĞ°¡£¬¼ì²éÒ»ÏÂ¿´¿´.");
+		Talk(1,"","ña, sao ta kh«ng thÊy ng­¬i cÇm cÈm h¹p nhØ, kiÓm tra l¹i thö xem.");
 		return 0;
 	end
 		
@@ -394,7 +394,7 @@ function tbBetInfo:Bet(nValue)
 	RemoteExecute("\\script\\event\\expansion\\201006\\fuguijinhe\\fuguijinhe.lua", "AddBetCount", 0);
 	
 	PlayerFunLib:AddExp(6000000,0,format("fuguijinhe\tbet number%d",nValue));
-	Msg2Player(format("ÒÑÑ¡Ôñ <color=green>%d<color> Í¬Ê±ÁìÈ¡%d ¾­Ñé",nValue,6000000))
+	Msg2Player(format("§· chän <color=green>%d<color> ®ång thêi nhËn ®­îc %d kinh nghiÖm",nValue,6000000))
 	
 	return 1;
 end
@@ -407,18 +407,18 @@ function tbBetInfo:UseJinhe()
 	local nCount = tbJinhe_tsk:GetCurBetCount();
 
 	if (nCount >= 20) then
-		Talk(1, "", format("Ã¿¸öÈËÎïÃ¿¸ö½×¶ÎÖ»ÄÜÊ¹ÓÃ %d ´Î.",20));
+		Talk(1, "", format("Mçi nh©n vËt mçi ®ît ho¹t ®éng chØ ®­îc sö dông %d lÇn.",20));
 		return 0;
 	end
 	
-	g_AskClientNumberEx(10, 99, "ÊäÈëÊı×Ö10-99", {self.Bet, {self}} );
+	g_AskClientNumberEx(10, 99, "NhËp sè 10-99", {self.Bet, {self}} );
 	
 	-- ÔÚÊäÈëÊı×ÖÍ¶×¢ÒÔºóÔÚÉ¾³ıÎïÆ·
 	return 0;
 end
 
 function tbBetInfo:AddNpc()
-	local npcidx = AddNpc(455, 1, SubWorldID2Idx(37), 1762 * 32, 3049 * 32, 1, "ÈË²Å");
+	local npcidx = AddNpc(455, 1, SubWorldID2Idx(37), 1762 * 32, 3049 * 32, 1, "ThÇn Tµi");
 	SetNpcScript(npcidx, "\\script\\activitysys\\npcdailog.lua");
 end
 
@@ -461,9 +461,9 @@ function tbBetInfo:GetAwardCount()
 end
 
 function tbBetInfo:CurBetInfo_dlg()
-	local szTitle =  format("<npc>´Ë¸ö½×¶Î²âÊÔÓĞcolor=green>%d<color> ´ÎÑ¡Ôñ, ¸÷Î»´óÏÀÒÑ¾­Ñ¡Ôñ<color=green>%d<color> ´Î <enter><color=green>%s<color>", self.nTotalBet, tbJinhe_tsk:GetCurBetCount(), self:GetCurBetNumInfo());
+	local szTitle =  format("<npc>§ît thi nµy cã <color=green>%d<color> lÇn chän, c¸c h¹ ®· chän <color=green>%d<color> lÇn sè <enter><color=green>%s<color>", self.nTotalBet, tbJinhe_tsk:GetCurBetCount(), self:GetCurBetNumInfo());
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÎÒÖªµÀÁË. "})
+	tinsert(tbOpt, {"Ta ®· biÕt råi. "})
 	CreateNewSayEx(szTitle, tbOpt);
 end
 
@@ -472,12 +472,12 @@ function tbBetInfo:LastBetInfo_dlg()
 	local szTitle = "";
 	
 	if (getn(self.tbNormalNum) == 0 or getn(self.tbSpecNum) == 0)  then
-		szTitle = "ÏÖÔÚ»¹Ã»ÓĞĞÒÔËÊı×Ö";
+		szTitle = "HiÖn t¹i vÉn ch­a cã sè may m¾n";
 	else
-		szTitle =  format("<npc>ÉÏ´ÎµÄĞÒÔËÊı×ÖÊÇ<enter>³£Êı: <color=green>%s<color><enter>ÌØ±ğµÄÊı×Ö: <color=green>%s<color><enter>ÄãÑ¡ÁËÊı×Ö:<color=green>%s<color><enter>ÒÑÑ¡ÖĞ<color=red>%d<color> ÆÕÍ¨Êı, <color=red>%d<color> ÌØ±ğÊı<enter>¿ÉÒÔÁìÈ¡<color=red>%d<color> ÆÕÍ¨½±Àø, <color=red>%d<color> ÌØ±ğ½±Àø", self:GetNormalNumInfo(), self:GetSpecNumInfo(), self:GetLastBetNumInfo(), nNorm, nSpec, max(min(nNorm,20) - tbJinhe_tsk:GetNormalAwardCount(),0), max(min(nSpec, 1) - tbJinhe_tsk:GetSpecAwardCount(),0));
+		szTitle =  format("<npc>Sè may m¾n lÇn tr­íc<enter>Sè th­êng: <color=green>%s<color><enter>Sè ®Æc biÖt: <color=green>%s<color><enter>Ng­¬i ®· chän sè: <color=green>%s<color><enter>§· chän tróng <color=red>%d<color> sè phæ th«ng, <color=red>%d<color> sè ®Æc biÖt<enter>Cã thÓ nhËn <color=red>%d<color> phÇn th­ëng phæ th«ng, <color=red>%d<color> phÇn th­ëng ®Æc biÖt", self:GetNormalNumInfo(), self:GetSpecNumInfo(), self:GetLastBetNumInfo(), nNorm, nSpec, max(min(nNorm,20) - tbJinhe_tsk:GetNormalAwardCount(),0), max(min(nSpec, 1) - tbJinhe_tsk:GetSpecAwardCount(),0));
 	end
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÎÒÖªµÀÁË. "})
+	tinsert(tbOpt, {"Ta ®· biÕt råi. "})
 	CreateNewSayEx(szTitle, tbOpt);
 end
 
@@ -486,16 +486,16 @@ function tbBetInfo:GetAward_dlg()
 	local szTitle = "";
 	
 	if (getn(self.tbNormalNum) == 0 or getn(self.tbSpecNum) == 0)  then
-		szTitle = "ÏÖÔÚ»¹Ã»ÓĞĞÒÔËÊı×Ö";
+		szTitle = "HiÖn t¹i vÉn ch­a cã sè may m¾n";
 	else
-		szTitle =  format("<npc>ÉÏ´ÎµÄĞÒÔËÊı×Ö<enter>³£Êı: <color=green>%s<color><enter>ÌØ±ğÊı: <color=green>%s<color><enter>ÄãÒÑÑ¡ÔñÊı×Ö<color=green>%s<color><enter>ÒÑÑ¡ÖĞ<color=red>%d<color>ÆÕÍ¨Êı, <color=red>%d<color>ÌØ±ğÊı<enter>¿ÉÒÔÁìÈ¡<color=red>%d<color> ÆÕÍ¨½±Àø, <color=red>%d<color> ÆÕÍ¨½±Àø", self:GetNormalNumInfo(), self:GetSpecNumInfo(), self:GetLastBetNumInfo(), nNorm, nSpec, max(min(nNorm,20) - tbJinhe_tsk:GetNormalAwardCount(), 0), max(min(nSpec, 1) - tbJinhe_tsk:GetSpecAwardCount(),0));
+		szTitle =  format("<npc>Sè may m¾n lÇn tr­íc<enter>Sè th­êng: <color=green>%s<color><enter>Sè ®Æc biÖt: <color=green>%s<color><enter>Ng­¬i ®· chän sè: <color=green>%s<color><enter>§· chän tróng <color=red>%d<color> sè phæ th«ng, <color=red>%d<color> sè ®Æc biÖt<enter>Cã thÓ nhËn <color=red>%d<color> phÇn th­ëng phæ th«ng, <color=red>%d<color> phÇn th­ëng ®Æc biÖt", self:GetNormalNumInfo(), self:GetSpecNumInfo(), self:GetLastBetNumInfo(), nNorm, nSpec, max(min(nNorm,20) - tbJinhe_tsk:GetNormalAwardCount(), 0), max(min(nSpec, 1) - tbJinhe_tsk:GetSpecAwardCount(),0));
 	end
 	
 	local tbOpt = 
 		{
-			{"ÁìÈ¡ÆÕÍ¨½±Àø", tbBetInfo.GetNormalAward, {tbBetInfo}},
-			{"ÁìÈ¡ÌØ±ğ½±Àø", tbBetInfo.GetSpecAward, {tbBetInfo}},
-			{"ÈÃÎÒÏëÒ»Ïë"}
+			{"NhËn phÇn th­ëng phæ th«ng", tbBetInfo.GetNormalAward, {tbBetInfo}},
+			{"NhËn phÇn th­ëng ®Æc biÖt", tbBetInfo.GetSpecAward, {tbBetInfo}},
+			{"§Ó ta suy nghÜ l¹i"}
 		}
 	CreateNewSayEx(szTitle, tbOpt);
 end
@@ -503,12 +503,12 @@ end
 function tbBetInfo:GetNormalAward()
 	local nNorm, nSpec = self:GetAwardCount();
 	if ((nNorm - tbJinhe_tsk:GetNormalAwardCount()) <= 0) then
-		Talk(1, "", "ÄãµÄÁì½±»ú»áÓÃÍêÁË");
+		Talk(1, "", "Ng­¬i ®· hÕt c¬ héi nhËn th­ëng");
 		return
 	end
 	
 	if (tbJinhe_tsk:GetNormalAwardCount() >= 20) then
-		Talk(1, "", format("Ã¿¸öÈËÎïÃ¿¸ö½×¶Î×î¶àÖ»¿ÉÒÔÁìÈ¡ %d½±Àø",20));
+		Talk(1, "", format("Mçi mét ®ît mçi nh©n vËt nhiÒu nhÊt chØ nhËn ®­îc %d lÇn th­ëng",20));
 		return
 	end
 	
@@ -516,25 +516,25 @@ function tbBetInfo:GetNormalAward()
 		return
 	end
 	
-	tbAwardTemplet:Give(self.tbNormalAward, 1, {"FuGuiJinHe", format("%s\t%s","¸»¹ó»î¶¯","ÆÕÍ¨½±Àø")});
+	tbAwardTemplet:Give(self.tbNormalAward, 1, {"FuGuiJinHe", format("%s\t%s","Ho¹t ®éng phó quı","PhÇn th­ëng phæ th«ng")});
 	tbJinhe_tsk:AddNormalAwardCount(1);
 end
 
 function tbBetInfo:GetSpecAward()
 	local nNorm, nSpec = self:GetAwardCount();
 	if ((nSpec - tbJinhe_tsk:GetSpecAwardCount()) <= 0) then
-		Talk(1, "", "ÄãµÄÁì½±»ú»áÓÃÍêÁË");
+		Talk(1, "", "Ng­¬i ®· hÕt c¬ héi nhËn th­ëng");
 		return
 	end
 	
 	if (tbJinhe_tsk:GetSpecAwardCount() >= 1) then
-		Talk(1, "", format("Ã¿¸öÈËÎïÃ¿¸ö½×¶Î×î¶àÖ»¿ÉÒÔÁìÈ¡ %d´Î½±Àø",1));
+		Talk(1, "", format("Mçi mét ®ît mçi nh©n vËt nhiÒu nhÊt chØ nhËn ®­îc %d lÇn th­ëng",1));
 		return
 	end
 	
 	-- §iµ÷Õû¸»¹ó½õºĞ - Created by AnhHH  20110919
 --	if (tbJinhe_tsk:GetTotalSpecAwardCount() >= 12) then
---		Talk(1, "", format("»î¶¯ÆÚ¼ä£¬Ã¿¸öÈËÎï×î¶àÖ»¿ÉÁìÈ¡ %d´Î½±Àø",12));
+--		Talk(1, "", format("Trong thêi gian ho¹t ®éng mçi nh©n vËt nhiÒu nhÊt chØ ®­îc nhËn %d lÇn th­ëng",12));
 --		return
 --	end
 	
@@ -542,7 +542,7 @@ function tbBetInfo:GetSpecAward()
 		return
 	end
 	
-	tbAwardTemplet:Give(self.tbSpecAward, 1,{"FuGuiJinHe", format("%s\t%s","¸»¹ó»î¶¯","ÌØ±ğ½±Àø")});
+	tbAwardTemplet:Give(self.tbSpecAward, 1,{"FuGuiJinHe", format("%s\t%s","Ho¹t ®éng phó quı","PhÇn th­ëng ®Æc biÖt")});
 	tbJinhe_tsk:AddSpecAwardCount(1);
 	
 	-- §iµ÷Õû¸»¹ó½õºĞ - Created by AnhHH  20110919

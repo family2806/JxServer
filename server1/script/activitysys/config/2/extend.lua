@@ -65,7 +65,7 @@ function pActivity:AddGift(nCount)
 	if nMapIndex < 0 then
 		return
 	end
-	local szNpcName = "Ê¥µ®ÀñÎï"
+	local szNpcName = "LÔ VËt Gi¸ng Sinh"
 	ClearMapNpcWithName(%GIFT_MAPID, szNpcName)
 	for i=1, nCount do
 		local j = random(1, getn(%GIFT_POS))
@@ -98,7 +98,7 @@ function pActivity:CheckTaskbyTime(nTSKI_ID,nCoolDown)
 	if nTime <= nCurTime - nCoolDown then
 		return 1
 	else
-		local szMsg = format("»¹ÓÐ%d Ãë¿ÉÒÔÊ¹ÓÃ", nTime + nCoolDown - nCurTime)
+		local szMsg = format("Cßn %d gi©y míi cã thÓ sö dông", nTime + nCoolDown - nCurTime)
 		Talk(1, "", szMsg)
 	end
 end

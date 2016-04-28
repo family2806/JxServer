@@ -406,12 +406,12 @@ SKILLS={
 		autorescueskill={{{1,721*256 + 1},{20,721*256 + 20},{21,721*256 + 21}},{{1,-1},{20,-1}},{{1,20*18*256 + 15},{15,20*18*256 + 60},{20,20*18*256 + 65},{21,20*18*256 + 65}}},
 		skill_desc=
 			function(level)
-				return "ÉúÃüµÍÓÚ25%µÄË²¼äÓĞ<color=orange>"..floor(Link(level,SKILLS.kunlun120.autorescueskill[3]) - 20*18*256).."%<color>µÄ¸ÅÂÊ´¥·¢Á½ÒÇÕæÆø\n"..
-				"ÕæÆø¿ÉµÖÓùÄÚÁ¦×î´óÖµ<color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[1]) / 100)..
-				"±¶<color>µÄÉËº¦£¬×î¶à³ÖĞø<color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[2]) / 18).."Ãë<color>\n"..
-				"²¢ÌáÉıÒÆ¶¯ËÙ¶È<color=orange>"..floor((Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[1]))).."%<color>£¬³ÖĞø<color=orange>"
-				..floor(Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[2]) / 18).."Ãë<color>\n"..
-				"ÕæÆø·¢³öºó<color=orange>"..floor((Link(level,SKILLS.kunlun120.autorescueskill[3]) / (18*256))).."Ãë<color>ÄÚ²»»áÔÙ´Î´¥·¢"
+				return "Khi sinh lùc thÊp h¬n 25% cã x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.kunlun120.autorescueskill[3]) - 20*18*256).."%<color> ph¸t chiªu L­ìng Nghi Ch©n Khİ \n"..
+				"Ch©n khİ chèng l¹i s¸t th­¬ng gÊp <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[1]) / 100)..
+				" lÇn<color> møc néi lùc trong <color=orange>"..floor(Link(level,SKILLS.kunlun120mofadun.staticmagicshield_p[2]) / 18).." gi©y<color>\n"..
+				" vµ t¨ng <color=orange>"..floor((Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[1]))).."%<color> tèc ®é di chuyÓn trong <color=orange>"
+				..floor(Link(level,SKILLS.kunlun120jiasu.fastwalkrun_p[2]) / 18).." gi©y<color>\n"..
+				"Trong vßng <color=orange>"..floor((Link(level,SKILLS.kunlun120.autorescueskill[3]) / (18*256))).." gi©y<color> sau míi cã thÓ thi triÓn tiÕp"
 			end,	
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},

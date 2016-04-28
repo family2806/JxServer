@@ -3,18 +3,18 @@ Include("\\script\\item\\shengdan_jieri\\200811\\head.lua");
 
 tb_greenbox_item	=
 {
-	[1]	= {szName="Ê¥µ®À¯Öò",	tbProp={6, 1, 1843, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
-	[2]	= {szName="Ê¥µ®ÖÓ",	tbProp={6, 1, 1844, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
-	[3]	= {szName="Ê¥µ®Íà",		tbProp={6, 1, 1845, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
-	[4]	= {szName="Ê¥µ®Ìû",		tbProp={6, 1, 1846, 1, 0, 0},	nRate = 25,	nExpiredTime = 20090105},
+	[1]	= {szName="NÕn Gi¸ng Sinh",	tbProp={6, 1, 1843, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
+	[2]	= {szName="Chu«ng Gi¸ng Sinh",	tbProp={6, 1, 1844, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
+	[3]	= {szName="Ví Gi¸ng Sinh",		tbProp={6, 1, 1845, 1, 0, 0},	nRate = 25, nExpiredTime = 20090105},
+	[4]	= {szName="ThiÖp Gi¸ng Sinh",		tbProp={6, 1, 1846, 1, 0, 0},	nRate = 25,	nExpiredTime = 20090105},
 };
 
 function main()
 	if (CalcFreeItemCellCount() < 1) then
-		Msg2Player("´óÏÀµÄ×°±¸²»×ã¿ÕÎ»");
+		Msg2Player("Hµnh trang cña ®¹i hiÖp kh«ng ®ñ chç trèng!");
 		return 1;
 	end
-	tbAwardTemplet:GiveAwardByList(tb_greenbox_item, "2008Ê¥µ®»î¶¯-ÂÌÀñÎïºÐ");
+	tbAwardTemplet:GiveAwardByList(tb_greenbox_item, "Ho¹t ®éng gi¸ng sinh 2008_Hép Quµ Xanh");
 end
 
 

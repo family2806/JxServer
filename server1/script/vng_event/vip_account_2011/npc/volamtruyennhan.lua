@@ -37,51 +37,51 @@ function tbVNG_VipAcc2011_VLTN:addDialog(tbDialog)
 		return
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu) == 1 or tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung) == 1 or tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai) == 1) then
-		tinsert(tbDialog, "¡Ï»Á“‚¿Ò∞¸/#tbVNG_VipAcc2011_VLTN:main()");
-		--tbDialog:AddOptEntry("¡Ï»Á“‚¿Ò∞¸", tbVNG_VipAcc2011_VLTN.main, {tbVNG_VipAcc2011_VLTN})
+		tinsert(tbDialog, "NhÀn nh≠ ˝ l‘ bao/#tbVNG_VipAcc2011_VLTN:main()");
+		--tbDialog:AddOptEntry("NhÀn nh≠ ˝ l‘ bao", tbVNG_VipAcc2011_VLTN.main, {tbVNG_VipAcc2011_VLTN})
 	end
 end
 
 function tbVNG_VipAcc2011_VLTN:main()
 	local tbMainDialog = tbVNG_Vip_NpcHead:CreateDialog()
-	tbMainDialog.szTitleMsg = "–¬ƒÍ∞≤øµ!"
+	tbMainDialog.szTitleMsg = "N®m mÌi an khang!"
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu2) == 0) then
-	--	tbMainDialog:AddOptEntry("¡Ï»Á“‚¿Ò∞¸-–°", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "tieu"})
+	--	tbMainDialog:AddOptEntry("NhÀn nh≠ ˝ l‘ bao ti”u", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "tieu"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung2) == 0) then
-	--	tbMainDialog:AddOptEntry("¡Ï»Á“‚¿Ò∞¸-÷–", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "trung"})
+	--	tbMainDialog:AddOptEntry("NhÀn nh≠ ˝ l‘ bao trung", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "trung"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai2) == 0) then
-		tbMainDialog:AddOptEntry("¡Ï»Á“‚¿Ò∞¸-¥Û", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "dai"})
+		tbMainDialog:AddOptEntry("NhÀn nh≠ ˝ l‘ bao Æπi", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "dai"})
 	end
 	tbMainDialog:Show()
 end
 
 function tbVNG_VipAcc2011_VLTN:GetAward(strItemType)
 	if (CalcFreeItemCellCount() < 10) then
-		Talk(1, "", "Œ™±£Œ¿≤∆≤˙£¨«Î¡Ùœ¬10∏ˆø’Œª∫Û≤≈ƒ‹ π”√∏√ŒÔ∆∑!")
+		Talk(1, "", "ß” b∂o v÷ tµi s∂n, xin vui lﬂng chıa 10 ´ trËng trong hµnh trang rÂi mÌi sˆ dÙng vÀt ph»m nµy!")
 		return
 	end
 	local tbAward = {}
 	tbVNG_BitTask_Lib:setBitTask(self.tbTaskInfo, 0)
 	if strItemType == "tieu" then
 		if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu2) == 0 and tbExtPointLib:SetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu2, 1) == 1) then
-			tbAward = {szName="»Á“‚¿Ò∞¸(–°)",tbProp={6,1,30092,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}			
-			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][‘⁄Œ‰¡÷¥´»ÀNPC¥¶¡Ï»°»Á“‚¿Ò∞¸ ]")
+			tbAward = {szName="Nh≠ ˝ L‘ Bao(Ti”u)",tbProp={6,1,30092,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}			
+			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][NhÀn nh≠ ˝ l‘ bao tπi NPC V‚ L©m Truy“n Nh©n]")
 			return
 		end
 	end
 	if strItemType == "trung" then
 		if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung2) == 0 and tbExtPointLib:SetBitValue(self.nExtPointID, self.nBit_NYLB_Trung2, 1) == 1) then
-			tbAward = {szName="»Á“‚¿Ò∞¸(÷–)",tbProp={6,1,30093,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}
-			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][‘⁄Œ‰¡÷¥´»ÀNPC¥¶¡Ï»°»Á“‚¿Ò∞¸]")
+			tbAward = {szName="Nh≠ ˝ L‘ Bao(Trung)",tbProp={6,1,30093,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}
+			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][NhÀn nh≠ ˝ l‘ bao tπi NPC V‚ L©m Truy“n Nh©n]")
 			return
 		end
 	end
 	if strItemType == "dai" then
 		if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai2) == 0 and tbExtPointLib:SetBitValue(self.nExtPointID, self.nBit_NYLB_Dai2, 1) == 1) then
-			tbAward = {szName="»Á“‚¿Ò∞¸(¥Û)",tbProp={6,1,30094,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}
-			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][‘⁄Œ‰¡÷¥´»ÀNPC¥¶¡Ï»°»Á“‚¿Ò∞¸]")
+			tbAward = {szName="Nh≠ ˝ L‘ Bao(ßπi)",tbProp={6,1,30094,1,0,0},nCount=1,nExpiredTime=10080,nBindState = -2}
+			tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][NhÀn nh≠ ˝ l‘ bao tπi NPC V‚ L©m Truy“n Nh©n]")
 			return
 		end
 	end	

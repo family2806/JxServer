@@ -9,12 +9,12 @@ function main(sel)
 i = random(0,1)
 
 if (i == 0) then
-Say("·¶¶ş´º£ºµËÉ©×ÓÎİÀïÌ«À§ÄÑÁË£¬ÎÒµÈÏÂ¸øËıÃÇ¼ÒËÍÒ»´ü´óÃ×È¥£¬ÏÈ¾È¾È¼±¡£",0)
+Say("Nhµ §Æng tÈu qu¸ khã kh¨n! §îi l¸t n÷a ta sÏ cho bµ mét bao g¹o, nhanh lªn!",0)
 return
 end;
 
 if (i == 1) then
-Say("·¶¶ş´º£º´ó¼Ò¶¼ÊÇ½Ö·»£¬»¥Ïà°ïÃ¦ÊÇÓ¦¸ÃµÄ¡£",0)
+Say("Mäi ng­êi ®Òu lµ t×nh lµng nghÜa xãm, gióp ®ì nhau lµ chuyÖn ph¶i lµm!",0)
 end;
 
 end;

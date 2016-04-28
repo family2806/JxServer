@@ -1,9 +1,9 @@
 function main()
 	local eattime = GetTask(1502)
 	local eatexp = GetTask(1501)
-	local eatmsg = {"<#>Äã³ÔÁËÌ«¶àµÄôÕ×Ó£¬ÒÑ¾­²»ÄÜ¼ÌĞø³ÔÁË£¡",
-		"<#>Äã¾õµÃºÜ±¥£¬ÒªµÈÒ»¶ÎÊ±¼ä²Å¿ÉÒÔ³ÔôÕ×Ó£¡",
-		"<#>Äã³ÔÁË×ã¹»¶àµÄôÕ×Ó£¬ÕâÒÑ¾­ÊÇ×îºóÒ»¸ö£¡"
+	local eatmsg = {"<#> B¹n ®· ¨n qu¸ nhiÒu B¸nh ch­ng, kh«ng thÓ tiÕp tôc ¨n n÷a!",
+		"<#> B¹n c¶m thÊy rÊt no, ®îi mét thêi gian míi cã thÓ dïng B¸nh ch­ng ®­îc!",
+		"<#> B¹n ®· ¨n ®ñ sè B¸nh ch­ng, ®©y ®· lµ c¸i b¸nh cuèi cïng råi!"
 		}
 	local randomexp = {50000, 100000, 250000}
 	if(eatexp > 20000000)  then   --Ê¹ÓÃ¾­Ñé´óÓÚ20,000,000£¬²»ÄÜÔÙ³Ô

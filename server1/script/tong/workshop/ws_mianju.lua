@@ -6,15 +6,15 @@ aLevelContributionCoef = {}
 aLevelCoinShop = {}
 aLevelContributionShop = {}
 WEIZHUANG_LEVEL = 5	--Î±×°Ãæ¾ßµÈ¼¶ÒªÇó
-TEAMMASK_LEVEL = 3	--¶ÓÎéÃæ¾ßÖÆ×÷µÈ¼¶ÒªÇó
-TONGMASK_LEVEL = 7	--°ï»áÃæ¾ßÖÆ×÷µÈ¼¶ÒªÇó
+TEAMMASK_LEVEL = 3	--ChÕ t¹o mÆt n¹ ®éi ngòµÈ¼¶ÒªÇó
+TONGMASK_LEVEL = 7	--ChÕ t¹o mÆt n¹ bang héiµÈ¼¶ÒªÇó
 aPriceTeamMask = {}	--¶ÓÎéÃæ¾ßÑù×Ó¶ÔÓ¦µÄ¼Û¸ñ
 aPriceTongMask = {} --°ï»áÃæ¾ßÑù×Ó¶ÔÓ¦µÄ¼Û¸ñ
 PRICEMASK_WEIZHUANG = 1000
 function LoadLevelData()
 	local b1 = TabFile_Load("\\settings\\tong\\workshop\\mianju_level_data.txt", "mianjuLevelData")
 	if b1~=1 then
-		print("¼ÓÔØÃæ¾ß×÷·»ÅäÖÃÎÄ¼şÊ§°Ü£¡")
+		print("§äc tÖp config vÒ t¸c ph­êng mÆt n¹ thÊt b¹i!")
 		return
 	end
 	local nRowCount = TabFile_GetRowCount("mianjuLevelData")
@@ -31,7 +31,7 @@ function LoadLevelData()
 	if MODEL_RELAY ~= 1 then
 		b1 = TabFile_Load("\\settings\\item\\feature_data.txt", "FeatureData")
 		if b1~=1 then
-			print("¼ÓÔØfeature_dataÅäÖÃÎÄ¼şÊ§°Ü£¡")
+			print("§äc tÖp config feature_data thÊt b¹i!")
 			return
 		end
 		nRowCount = TabFile_GetRowCount("FeatureData")
@@ -47,173 +47,173 @@ LoadLevelData()
 if MODEL_GAMESERVER == 1 or MODEL_RELAY == 1 then
 --------------------Èç¹û·Ç¿Í»§¶Ë---------------------------
 function ws_main(nTongID, nWorkshopID)
-	if SVR_CheckUse(nTongID, nWorkshopID, "Ãæ¾ß·»×Ü¹Ü") ~= 1 then
+	if SVR_CheckUse(nTongID, nWorkshopID, "Tæng qu¶n DŞ dung ph­êng") ~= 1 then
 		return 0
 	end
-	Say("<#>Ãæ¾ß·»×Ü¹Ü£º¿´ÎÒÆßÊ®¶ş±ä£¡Ö»ÓĞÏë²»µ½£¬Ã»ÓĞ±ä²»ÁË¡£\n¸÷Ê½Ãæ¾ß£¬Ó¦ÓĞ¾¡ÓĞ£¬À´¿´¿´ÂŞ£¡", 3, "¿´¿´ÓĞÊ²Ã´»õ/#use_g_1_ok("..nTongID..","..nWorkshopID..")", 
-		"ÌØÊâÃæ¾ß/#SpecialMask("..nTongID..","..nWorkshopID..")", "²»ÓÃÁË/cancel");
+	Say("<#>Tæng qu¶n DŞ dung ph­êng: Xem 72 phĞp biÕn hãa cña ta! ChØ cã nghÜ kh«ng tíi chø kh«ng cã viÖc biÕn kh«ng thµnh. \n c¸c lo¹i mÆt n¹, lo¹i g× còng cã, xem thö cho biÕt!", 3, "Ta muèn xem thö /#use_g_1_ok("..nTongID..","..nWorkshopID..")", 
+		"MÆt n¹ ®Æc biÖt/#SpecialMask("..nTongID..","..nWorkshopID..")", "Kh«ng cÇn ®©u/cancel");
 	return 1;
 end
 
 function use_g_1_ok(nTongID, nWorkshopID)
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) < 100) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬½ñÌìµÄÃæ¾ßÒÑ¾­Âô¹âÁË£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: ThËt ®¸ng tiÕc, h«m nay mÆt n¹ ®· ph©n ph¸t hÕt råi, ngµy mai h·y ®Õn vËy!", 0)
 		return 0;
 	end
 	TWS_ApplyUse(nTongID, nWorkshopID);
 end
 
 function SpecialMask(nTongID, nWorkshopID)
-	Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÄãÒªÖÆ×÷Ê²Ã´Ãæ¾ß£¿", 4, "Î±×°Ãæ¾ß/#Mask_WeiZhuang("..nTongID..","..nWorkshopID..")",
-		"¶ÓÎéÃæ¾ß/#Mask_Team("..nTongID..","..nWorkshopID..")", "°ï»áÃæ¾ß/#Mask_Tong("..nTongID..","..nWorkshopID..")",
-		"²»ÓÃÁË/cancel")
+	Say("<#>Tæng qu¶n DŞ dung ph­êng: Ng­¬i muèn lµm lo¹i mÆt n¹ nµo?", 4, "MÆt n¹ ngôy trang/#Mask_WeiZhuang("..nTongID..","..nWorkshopID..")",
+		"MÆt n¹ Tæ ®éi/#Mask_Team("..nTongID..","..nWorkshopID..")", "MÆt n¹ Bang héi/#Mask_Tong("..nTongID..","..nWorkshopID..")",
+		"Kh«ng cÇn ®©u/cancel")
 end
 
 function Mask_WeiZhuang(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (nLevel < WEIZHUANG_LEVEL)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º×°±¸Î±×°Ãæ¾ß¿ÉÒÔ»ñµÃÎ±×°¼¼ÄÜ£¬¶Ô´÷ÓĞÃæ¾ßµÄÍæ¼ÒÊ¹ÓÃ´Ë¼¼ÄÜ¿ÉÒÔÎ±×°³ÉËûµÄÑù×Ó¡£²»¹ıÒªÊ¹ÓÃµÈ¼¶´ïµ½<color=red>"..WEIZHUANG_LEVEL.."<color>¼¶µÄÃæ¾ß·»²ÅÓĞÖÆ×÷Î±×°Ãæ¾ßµÄ¹¤ÒÕ£¬ÏÖÔÚÉĞÎ´´ïµ½",
-			1, "¿´À´Ö»ºÃÈÕºóÔÙÀ´/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ngôy trang sÏ mang l¹i kü n¨ng ngôy trang, gióp cho ng­êi ®eo nã sÏ ngôy trang thµnh h×nh t­îng dŞ dung cña ng­êi ch¬i kh¸c. Nh­ng khi ®¼ng cÊp cña DŞ dung ph­êng ®¹t ®Õn cÊp <color=red>"..WEIZHUANG_LEVEL.."<color> míi cã thÓ chÕ t¸c lo¹i mÆt n¹ nµy, hiÖn tai vÉn ch­a ®ñ cÊp ",
+			1, "Lóc kh¸c ta quay l¹i vËy./cancel")
 		return
 	end
-	Say("Ãæ¾ß·»×Ü¹Ü£º×°±¸Î±×°Ãæ¾ß¿ÉÒÔ»ñµÃÎ±×°¼¼ÄÜ£¬¶Ô´÷ÓĞÃæ¾ßµÄÍæ¼ÒÊ¹ÓÃ´Ë¼¼ÄÜ¿ÉÒÔÎ±×°³ÉËûµÄÑù×Ó¡£ÖÆ×÷Î±×°Ãæ¾ßµÃ»¨·Ñ<color=yellow>"..PRICEMASK_WEIZHUANG.."<color>¹±Ï×¶È£¬ÄãĞèÒªÂğ£¿",
-			2, "ÊÇµÄ£¬ÀÍ·³×Ü¹ÜÁË/#GetMask1("..nTongID..","..nWorkshopID..")", "ÎÒÖ»ÊÇËæ±ãÎÊÎÊ/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ngôy trang sÏ mang l¹i kü n¨ng ngôy trang, gióp cho ng­êi ®eo nã sÏ ngôy trang thµnh h×nh t­îng dŞ dung cña ng­êi ch¬i kh¸c. ChÕ t¸c mÆt n¹ ngôy trang cÇn sö dông <color=yellow>"..PRICEMASK_WEIZHUANG.."<color> ®iÓm cèng hiÕn, cã ®ång ı kh«ng?",
+			2, "Mäi sù nhê tæng qu¶n vËy/#GetMask1("..nTongID..","..nWorkshopID..")", "Ta chØ hái qua cho biÕt/cancel")
 end
 
 function GetMask1(nTongID, nWorkshopID)
 	if (GetContribution() < PRICEMASK_WEIZHUANG)then
-		Say("Ãæ¾ß·»×Ü¹Ü£ºÄãµÄ¹±Ï×¶È²»¹»ÄØ£¬ÔÙ¶àÎª°ï»á×öĞ©ÊÂÇé°É",1,"¾¹È»²»¹»°¡/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y ra søc v× bang héi ®·.",1,"Kh«ng ®ñ sao/cancel")
 		return
 	end	
 	AddContribution(-PRICEMASK_WEIZHUANG)
-	Say("Ãæ¾ß·»×Ü¹Ü£ºÎ±×°Ãæ¾ßµÄÏŞÊ±Ê±¼äÎª24¸öĞ¡Ê±£¬¿ÉÒÔÊ¹ÓÃ10´ÎÎ±×°¼¼ÄÜ¡£àÅ£¬Ëµ×ö¾Í×öºÃÁË£¬¹¤ÒÕºÜ´¿Êì°É",1,
-			"¶àĞ»À²£¬ÎÒÕâ¾ÍÊÔÊÔÈ¥/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ngôy trang cã thêi gian sö dông lµ 24 giê, cã thÓ ngôy trang ®­îc 10 lÇn.",1,
+			"Xin ®a t¹, ta ®i thö ngay ®©y/cancel")
 	AddItem(0,11,366,1,0,0)		
-	Msg2Player("Äã»ñµÃÁËÒ»¸öÎ±×°Ãæ¾ß")
+	Msg2Player("B¹n nhËn ®­îc mét mÆt n¹ ngôy trang")
 end
 
 function Mask_Team(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (nLevel < TEAMMASK_LEVEL)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º¶ÓÎéÃæ¾ß¿ÉÒÔÓÉ¶Ó³¤ºÍ¶ÓÔ±ÓÒ¼üµã»÷Ê¹ÓÃ£¬Ê¹ÓÃºó¶ÓÎé³ÉÔ±¶¼±ä³ÉÍ¬Ò»Ä£ÑùÒ»¶ÎÊ±¼ä¡£²»¹ıÒªÊ¹ÓÃµÈ¼¶´ïµ½<color=red>"..TEAMMASK_LEVEL.."<color>¼¶µÄÃæ¾ß·»²ÅÓĞÖÆ×÷¶ÓÎéÃæ¾ßµÄ¹¤ÒÕ£¬ÏÖÔÚÉĞÎ´´ïµ½",
-			1, "¿´À´Ö»ºÃÈÕºóÔÙÀ´/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ®éi tr­ëng cã thÓ do ®éi tr­ëng hoÆc thµnh viªn trong ®éi sö dông. Sau khi sö dông th× tÊt c¶ c¸c thµnh viªn sÏ gièng hÖt nhau trong mét kho¶ng thêi gian. Cã ®iÒu ®¼ng cÊp DŞ dung ph­êng ®¹t cÊp <color=red>"..TEAMMASK_LEVEL.."<color> míi cã thÓ chÕ t¸c lo¹i mÆt n¹ nµy, hiÖn vÉn ch­a ®ñ cÊp",
+			1, "Lóc kh¸c ta quay l¹i vËy./cancel")
 		return
 	end
-	Say("Ãæ¾ß·»×Ü¹Ü£º¶ÓÎéÃæ¾ß¿ÉÒÔÓÉ¶Ó³¤ºÍ¶ÓÔ±ÓÒ¼üµã»÷Ê¹ÓÃ£¬Ê¹ÓÃºó¶ÓÎé³ÉÔ±¶¼±ä³ÉÍ¬Ò»Ä£ÑùÒ»¶ÎÊ±¼ä¡£ÖÆ×÷¶ÓÎéÃæ¾ßµÃ»¨·ÑÒ»¶¨µÄ¹±Ï×¶È£¬»¹µÃ·ÅÈëÒ»¸öÃæ¾ß·»²ú³öµÄÃæ¾ß×öÄ£¾ß£¬×÷³öµÄ¶ÓÎéÃæ¾ß¾ÍÊÇ·ÅÈëÃæ¾ßµÄÑù×Ó£¬ÄãĞèÒªÂğ£¿",
-			2, "ÊÇµÄ£¬ÀÍ·³×Ü¹ÜÁË/#GetMask2("..nTongID..","..nWorkshopID..")", "ÎÒÖ»ÊÇËæ±ãÎÊÎÊ/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ®éi tr­ëng cã thÓ do ®éi tr­ëng hoÆc thµnh viªn trong ®éi sö dông. Sau khi sö dông th× tÊt c¶ c¸c thµnh viªn sÏ gièng hÖt nhau trong mét kho¶ng thêi gian. ChÕ t¸c lo¹i mÆt n¹ nµy cÇn sö dông mét İt ®iÓm cèng hiÕn vµ 1 lo¹i mÆt n¹ bang héi ®Ó lµm mÉu, cã ®ång ı kh«ng?",
+			2, "Mäi sù nhê tæng qu¶n vËy/#GetMask2("..nTongID..","..nWorkshopID..")", "Ta chØ hái qua cho biÕt/cancel")
 end
 
 function Mask_Tong(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (nLevel < TONGMASK_LEVEL)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º°ï»áÃæ¾ß¿ÉÒÔÓÉ°ïÖ÷ºÍ³¤ÀÏÓÒ¼üµã»÷Ê¹ÓÃ£¬Ê¹ÓÃºó°ï»á³ÉÔ±¶¼±ä³ÉÍ¬Ò»Ä£ÑùÒ»¶ÎÊ±¼ä¡£²»¹ıÒªÊ¹ÓÃµÈ¼¶´ïµ½<color=red>"..TONGMASK_LEVEL.."<color>¼¶µÄÃæ¾ß·»²ÅÓĞÖÆ×÷°ï»áÃæ¾ßµÄ¹¤ÒÕ£¬ÏÖÔÚÉĞÎ´´ïµ½¡£",
-			1, "¿´À´Ö»ºÃÈÕºóÔÙÀ´/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ bang héi cã thÓ do bang chñ hoÆc tr­ëng l·o sö dông. Sau khi sö dông th× tÊt c¶ c¸c thµnh viªn sÏ gièng hÖt nhau trong mét kho¶ng thêi gian. Cã ®iÒu ®¼ng cÊp DŞ dung ph­êng ®¹t cÊp <color=red> "..TONGMASK_LEVEL.."<color>míi cã thÓ chÕ t¸c lo¹i mÆt n¹ nµy, hiÖn vÉn ch­a ®ñ cÊp.",
+			1, "Lóc kh¸c ta quay l¹i vËy./cancel")
 		return
 	end
 	local nFigure = TONGM_GetFigure(nTongID, GetName())
 	if (nFigure ~= TONG_MASTER and nFigure ~= TONG_ELDER)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º°ïÀïµÄ¹æ¾ØÊÇÖ»ÓĞ°ïÖ÷ºÍ³¤ÀÏÃÇ²ÅÄÜÀ´ÈÃÎÒÖÆ×÷°ï»áÃæ¾ß£¬ÄãµÄÉí·İ»¹²»¹»ÄØ¡£", 1, 
-			"ºß£¬ÎÒÒ²»áÓĞÄÇÒ»ÌìµÄ/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Bang qui chØ cho phĞp bang chñ vµ tr­ëng l·o ®Ó ta chÕ t¸c lo¹i mÆt n¹ nµy, ng­¬i th× kh«ng thÓ…", 1, 
+			"ThËt lµ tiÕc qu¸/cancel")
 		return
 	end
-	Say("Ãæ¾ß·»×Ü¹Ü£º°ï»áÃæ¾ß¿ÉÒÔÓÉ°ïÖ÷ºÍ³¤ÀÏÓÒ¼üµã»÷Ê¹ÓÃ£¬Ê¹ÓÃºó°ï»á³ÉÔ±¶¼±ä³ÉÍ¬Ò»Ä£ÑùÒ»¶ÎÊ±¼ä¡£ÖÆ×÷°ï»áÃæ¾ßµÃ»¨·ÑÒ»¶¨µÄ¹±Ï×¶È£¬»¹µÃ·ÅÈëÒ»¸öÃæ¾ß·»²ú³öµÄÃæ¾ß×öÄ£¾ß£¬×÷³öµÄ°ï»áÃæ¾ß¾ÍÊÇ·ÅÈëÃæ¾ßµÄÑù×Ó£¬ÄãĞèÒªÂğ£¿",
-			2, "ÊÇµÄ£¬ÀÍ·³×Ü¹ÜÁË/#GetMask3("..nTongID..","..nWorkshopID..")", "ÎÒÖ»ÊÇËæ±ãÎÊÎÊ/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ bang héi cã thÓ do bang chñ hoÆc tr­ëng l·o sö dông. Sau khi sö dông th× tÊt c¶ c¸c thµnh viªn sÏ gièng hÖt nhau trong mét kho¶ng thêi gian.  ChÕ t¸c lo¹i mÆt n¹ nµy cÇn sö dông mét İt ®iÓm cèng hiÕn vµ 1 lo¹i mÆt n¹ bang héi ®Ó lµm mÉu, cã ®ång ı kh«ng?",
+			2, "Mäi sù nhê tæng qu¶n vËy/#GetMask3("..nTongID..","..nWorkshopID..")", "Ta chØ hái qua cho biÕt/cancel")
 end
 
 --¶ÓÎéÃæ¾ß
 function GetMask2(nTongID, nWorkshopID)
-	GiveItemUI("¶ÓÎéÃæ¾ßÖÆ×÷","Ãæ¾ß·»×Ü¹Ü£ºÇë·ÅÈëÒ»¸öÆÕÍ¨Ãæ¾ß×÷ÎªÄ£¾ß£¬ÖÆ×÷³É¹¦Ä£¾ß»áÏûºÄµô", "MakeMask2", "onCancel" );
+	GiveItemUI("ChÕ t¹o mÆt n¹ ®éi ngò","Tæng qu¶n DŞ dung ph­êng: H·y bá vµo mét lo¹i mÆt n¹ th­êng ®Ó lµm mÉu, chÕ t¹o thµnh c«ng sÏ mÊt ®i vËt mÉu nµy.", "MakeMask2", "onCancel" );
 end
 
 --°ï»áÃæ¾ß
 function GetMask3(nTongID, nWorkshopID)
-	GiveItemUI("°ï»áÃæ¾ßÖÆ×÷","Ãæ¾ß·»×Ü¹Ü£ºÇë·ÅÈëÒ»¸öÆÕÍ¨Ãæ¾ß×÷ÎªÄ£¾ß£¬ÖÆ×÷³É¹¦Ä£¾ß»áÏûºÄµô", "MakeMask3", "onCancel" );
+	GiveItemUI("ChÕ t¹o mÆt n¹ bang héi","Tæng qu¶n DŞ dung ph­êng: H·y bá vµo mét lo¹i mÆt n¹ th­êng ®Ó lµm mÉu, chÕ t¹o thµnh c«ng sÏ mÊt ®i vËt mÉu nµy.", "MakeMask3", "onCancel" );
 end
 
 --¶ÓÎéÃæ¾ß
 function MakeMask2(nCount)		
 	if(nCount <= 0) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÉ¶¶¼²»¸ø°³£¬ÄãÏë¸ÉÉ¶Ñ½£¿", 1, "ºÇºÇ£¬ÎÒÍü¸øÄãÁË/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: Kh«ng cã nguyªn liÖu kh«ng thÓ chÕ t¸c!", 1, "Ha ha, ®ét nhiªn ta quªn mÊt./cancel")
 		return
 	end	
 	if(nCount > 1) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÄãÖ»Òª·ÅÒ»¸öÃæ¾ß×÷Ä£¾ß¾ÍĞĞÁË£¬·ÅÕâÃ´¶à¶«Î÷¸ÉÉ¶£¿", 1, "ºÇºÇ£¬ÖªµÀÁË/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: Ng­¬i chØ cÇn bá vµo 1 mÆt n¹ lµ ®­îc råi, bá vµo nhiÒu thÕ ®Ó lµm g×?", 1, "õm, ta biÕt råi/cancel")
 		return
 	end		
 	local itemIdx = GetGiveItemUnit( 1 )
 	local g,d,_ = GetItemProp(itemIdx)
 	if(g ~= 0 or d ~= 11) then --´íÎóµÀ¾ß
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÄã...Äã¸øÎÒµÄÊÇÃæ¾ßÂğ£¬ÎÒÃ»ÓĞÑÛ»¨°É£¿",1,"Å¶£¬¸ø´í¶«Î÷ÁË£¬ÄÇÄã»¹¸øÎÒ°É/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: §©y lµ mÆt n¹ ®ã sao, ta kh«ng hoa m¾t chø?",1,"¤i, ta ®­a nhÇm råi, tr¶ l¹i cho ta./cancel")
 		return nil
 	end
 	local nFeature = GetMaskFeature(itemIdx)
 	if (not nFeature) then
-		Say("Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬Äã·ÅÈëµÄÃæ¾ß²»·ûºÏÒªÇó", 1, "Å¶£¬ÄÇÎÒ»»Ò»¸ö°É/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Kh«ng ®­îc råi, mÆt n¹ nµy kh«ng thÓ dïng ®­îc.", 1, "Ta ®æi mét c¸i vËy./cancel")
 		return
 	end
 	local nPrice = aPriceTeamMask[nFeature]
 	if (not nPrice)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬²»ÄÜÒÔ´ËÄ£¾ßÖÆ×÷¶ÓÎéÃæ¾ß", 1, "Å¶£¬ÄÇÎÒ»»Ò»¸ö°É/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Kh«ng ®­îc råi, kh«ng thÓ dïng mÆt n¹ nµy lµm mÉu ®Ó chÕ t¹o mÆt n¹ ®éi ngò.", 1, "Ta ®æi mét c¸i vËy./cancel")
 		return
 	end	
-	Say("Ãæ¾ß·»×Ü¹Ü£ºÒÔ´ËÄ£¾ßÖÆ×÷µÄ¶ÓÎéÃæ¾ßÒªÏûºÄ¹±Ï×¶È<color=yellow>"..nPrice.."<color>µã£¬Èç¹ûÄãÈ·ÊµĞèÒª£¬ÎÒ¿É¾ÍÒªÒ»Õ¹ÊÖÒÕÁË",
-		2, "ÓĞÀÍ×Ü¹ÜÁË/#TeamMaskMake("..nFeature..","..nPrice..","..itemIdx..")", "ÓĞĞ©¹óÄØ£¬ÎÒÔÙÏëÏë°É/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: Dïng mÆt n¹ mÉu nµy ®Ó chÕ t¹o mÆt n¹ ®éi ngò cÇn tiªu phİ <color=yellow>"..nPrice.."<color> ®iÓm cèng hiÕn, nÕu ng­¬i ®ång ı th× ta sÏ ®éng thñ vËy.",
+		2, "Lµm phiÒn tæng qu¶n råi./#TeamMaskMake("..nFeature..","..nPrice..","..itemIdx..")", "§Ó ta suy nghÜ l¹i./cancel")
 end
 
 --°ï»áÃæ¾ß
 function MakeMask3(nCount)		
 	if(nCount <= 0) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÉ¶¶¼²»¸ø°³£¬ÄãÏë¸ÉÉ¶Ñ½£¿",1, "ºÇºÇ£¬ÎÒÍü¸øÄãÁË/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: Kh«ng cã nguyªn liÖu kh«ng thÓ chÕ t¸c!",1, "Ha ha, ®ét nhiªn ta quªn mÊt./cancel")
 		return
 	end	
 	if(nCount > 1) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÄãÖ»Òª·ÅÒ»¸öÃæ¾ß×÷Ä£¾ß¾ÍĞĞÁË£¬·ÅÕâÃ´¶à¶«Î÷¸ÉÉ¶£¿",1, "ºÇºÇ£¬ÖªµÀÁË/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: Ng­¬i chØ cÇn bá vµo 1 mÆt n¹ lµ ®­îc råi, bá vµo nhiÒu thÕ ®Ó lµm g×?",1, "õm, ta biÕt råi/cancel")
 		return
 	end		
 	local itemIdx = GetGiveItemUnit( 1 )
 	local g,d,_ = GetItemProp(itemIdx)
 	if(g ~= 0 or d ~= 11) then --´íÎóµÀ¾ß
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÄã...Äã¸øÎÒµÄÊÇÃæ¾ßÂğ£¬ÎÒÃ»ÓĞÑÛ»¨°É£¿",1,"Å¶£¬¸ø´í¶«Î÷ÁË£¬ÄÇÄã»¹¸øÎÒ°É/cancel")
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: §©y lµ mÆt n¹ ®ã sao, ta kh«ng hoa m¾t chø?",1,"¤i, ta ®­a nhÇm råi, tr¶ l¹i cho ta./cancel")
 		return nil
 	end
 	local nFeature = GetMaskFeature(itemIdx)
 	if (not nFeature) then
-		Say("Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬Äã·ÅÈëµÄÃæ¾ß²»·ûºÏÒªÇó", 1, "Å¶£¬ÄÇÎÒ»»Ò»¸ö°É/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Kh«ng ®­îc råi, mÆt n¹ nµy kh«ng thÓ dïng ®­îc.", 1, "Ta ®æi mét c¸i vËy./cancel")
 		return
 	end
 	local nPrice = aPriceTongMask[nFeature]
 	if (not nPrice)then
-		Say("Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬²»ÄÜÒÔ´ËÄ£¾ßÖÆ×÷°ï»áÃæ¾ß", 1, "Å¶£¬ÄÇÎÒ»»Ò»¸ö°É/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Kh«ng ®­îc råi, kh«ng thÓ dïng mÆt n¹ nµy lµm mÉu ®Ó chÕ t¹o mÆt n¹ bang héi.", 1, "Ta ®æi mét c¸i vËy./cancel")
 		return
 	end	
-	Say("Ãæ¾ß·»×Ü¹Ü£ºÒÔ´ËÄ£¾ßÖÆ×÷µÄ°ï»áÃæ¾ßĞèÒªÏûºÄ°ï»á½¨Éè»ù½ğ<color=yellow>"..nPrice.."<color>µã£¬Èç¹ûÄãÈ·ÊµĞèÒª£¬ÎÒ¿É¾ÍÒªÒ»Õ¹ÊÖÒÕÁË",
-		2, "ÓĞÀÍ×Ü¹ÜÁË/#TongMaskMake("..nFeature..","..nPrice..","..itemIdx..")", "ÓĞĞ©¹óÄØ£¬ÎÒÔÙÏëÏë°É/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: Dïng mÆt n¹ mÉu nµy ®Ó chÕ t¹o mÆt n¹ ®éi ngò sÏ tiªu phİ ng©n s¸ch kiÕn thiÕt<color=yellow> "..nPrice.."<color> ®iÓm cèng hiÕn, nÕu ng­¬i ®ång ı th× ta sÏ ®éng thñ vËy.",
+		2, "Lµm phiÒn tæng qu¶n råi./#TongMaskMake("..nFeature..","..nPrice..","..itemIdx..")", "§Ó ta suy nghÜ l¹i./cancel")
 end
 
 function TeamMaskMake(nFeature, nPrice, nItemIdx)
 	if (GetContribution() < nPrice)then
-		Say("Ãæ¾ß·»×Ü¹Ü£ºÒÔÕâÖÖÃæ¾ßÎªÄ£¾ßÖÆ×÷¶ÓÎéÃæ¾ßĞèÒª<color=yellow>"..nPrice.."<color>µã¹±Ï×¶È¡£ÄãµÄ¹±Ï×¶È»¹²»¹»ÄØ£¬ÔÙ¶àÎª°ï»á×öĞ©ÊÂÇé°É",
-			1,"¾¹È»²»¹»°¡/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Dïng mÆt n¹ nµy lµm mÉu cho mÆt n¹ ®éi ngò cÇn sö dông <color=yellow>"..nPrice.."<color> ®iÓm cèng hiÕn. §iÓm cèng hiÕn cña ng­¬i kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·.",
+			1,"Kh«ng ®ñ sao/cancel")
 		return
 	end
 	--ÔÙ´Î¼ì²éitem
 	local g,d,_ = GetItemProp(nItemIdx)
 	if(g ~= 0 or d ~= 11) then --´íÎóµÀ¾ß
-		Msg2Player("ß×£¿ÄãµÄÄ£¾ßÄØ£¿:W")
+		Msg2Player("MÆt n¹ mÉu cña ng­¬i ®©u?:W")
 		return
 	end
 	--É¾³ıÔ­ÁÏ
 	if (RemoveItemByIndex(nItemIdx) ~= 1)then
-		Msg2Player("ß×£¿ÄãµÄÄ£¾ßÄØ£¿:W")
+		Msg2Player("MÆt n¹ mÉu cña ng­¬i ®©u?:W")
 		return
 	end	
-	Say("Ãæ¾ß·»×Ü¹Ü£º¶ÓÎéÃæ¾ß¿ÉÒÔ°Ñ¶ÓÎéÈ«Ìå³ÉÔ±±ä³ÉÍ¬Ò»Ä£Ñù2¸öĞ¡Ê±¡£àÅ£¬Ëµ×ö¾Í×öºÃÁË£¬¹¤ÒÕºÜ´¿Êì°É",
-		1, "¶àĞ»À²£¬ÎÒÕâ¾ÍÊÔÊÔÈ¥/cancel")		
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ ®éi ngò cã thÓ gióp cho tÊt c¶ thµnh viªn trong ®éi gièng nhau trong vßng 2 giê.",
+		1, "Xin ®a t¹, ta ®i thö ngay ®©y/cancel")		
 	local nIdx = AddItem(6,1,1108,1,0,0)
 	SetSpecItemParam(nIdx, 1, nFeature)
 	SyncItem(nIdx)
 	AddContribution(-nPrice)
-	Msg2Player("Äã»ñµÃÁËÒ»¸ö¶ÓÎéÃæ¾ß")
+	Msg2Player("NhËn ®­îc mét mÆt n¹ ®éi ngò")
 end
 
 function TongMaskMake(nFeature, nPrice, nItemIdx)
@@ -222,29 +222,29 @@ function TongMaskMake(nFeature, nPrice, nItemIdx)
 		return
 	end
 	if (TONG_GetBuildFund(nTongID) < nPrice)then
-		Say("Ãæ¾ß·»×Ü¹Ü£ºÒÔÕâÖÖÃæ¾ßÎªÄ£¾ßÖÆ×÷°ï»áÃæ¾ßĞèÒª<color=yellow>"..nPrice.."<color>µã°ï»á½¨Éè»ù½ğ¡£¹ó°ïµÄ½¨Éè»ù½ğ²»×ã£¡",
-			1,"¾¹È»²»¹»°¡/cancel")
+		Say("Tæng qu¶n DŞ dung ph­êng: Dïng mÆt n¹ nµy lµm mÉu cho mÆt n¹ bang héi cÇn sö dông <color=yellow><color=yellow>"..nPrice.."<color> ®iÓm ng©n s¸ch kiÕn thiÕt. Ng©n s¸ch kiÕn thiÕt kh«ng ®ñ!",
+			1,"Kh«ng ®ñ sao/cancel")
 		return
 	end
 	--ÔÙ´Î¼ì²éitem
 	local g,d,_ = GetItemProp(nItemIdx)
 	if(g ~= 0 or d ~= 11) then --´íÎóµÀ¾ß
-		Msg2Player("ß×£¿ÄãµÄÄ£¾ßÄØ£¿:W")
+		Msg2Player("MÆt n¹ mÉu cña ng­¬i ®©u?:W")
 		return
 	end
 	--É¾³ıÔ­ÁÏ
 	if (RemoveItemByIndex(nItemIdx) ~= 1)then
-		Msg2Player("ß×£¿ÄãµÄÄ£¾ßÄØ£¿:W")
+		Msg2Player("MÆt n¹ mÉu cña ng­¬i ®©u?:W")
 		return
 	end		
-	Say("Ãæ¾ß·»×Ü¹Ü£º°ï»áÃæ¾ß¿ÉÒÔ°Ñ°ï»áÈ«ÌåÔÚÏß³ÉÔ±±ä³ÉÍ¬Ò»Ä£Ñù3¸öĞ¡Ê±¡£àÅ£¬Ëµ×ö¾Í×öºÃÁË£¬¹¤ÒÕºÜ´¿Êì°É",
-		1, "¶àĞ»À²£¬ÎÒÕâ¾ÍÊÔÊÔÈ¥/cancel")
+	Say("Tæng qu¶n DŞ dung ph­êng: MÆt n¹ bang héi cã thÓ gióp cho tÊt c¶ bang chóng gièng nhau trong vßng 3 giê.",
+		1, "Xin ®a t¹, ta ®i thö ngay ®©y/cancel")
 	local nIdx = AddItem(6,1,1109,1,0,0)
 	if (nIdx <= 0) then return end
 	SetSpecItemParam(nIdx, 1, nFeature)
 	SyncItem(nIdx)
 	TONG_ApplyAddBuildFund(nTongID, -nPrice)
-	local szMsg = GetName().." »¨·ÑÁË"..nPrice.."Íò°ï»á½¨Éè»ù½ğ£¬ÖÆ×÷ÁËÒ»¸ö°ï»áÃæ¾ß"
+	local szMsg = GetName().." tiªu hao "..nPrice.." v¹n ng©n s¸ch kiÕn thiÕt bang ®Ó chÕ t¹o mÆt n¹ bang h«i."
 	Msg2Tong(nTongID, szMsg)
 	TONG_ApplyAddEventRecord(nTongID, szMsg)
 end
@@ -278,7 +278,7 @@ end
 
 function use_buy_1(nTongID, nWorkshopID)
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) <= 0) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬½ñÌìµÄÃæ¾ßÒÑ¾­Âô¹âÁË£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: ThËt ®¸ng tiÕc, h«m nay mÆt n¹ ®· ph©n ph¸t hÕt råi, ngµy mai h·y ®Õn vËy!", 0)
 		return
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -288,7 +288,7 @@ end
 
 function use_buy_2(nTongID, nWorkshopID)
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) <= 0) then
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬½ñÌìµÄÃæ¾ßÒÑ¾­Âô¹âÁË£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: ThËt ®¸ng tiÕc, h«m nay mÆt n¹ ®· ph©n ph¸t hÕt råi, ngµy mai h·y ®Õn vËy!", 0)
 		return
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -298,10 +298,10 @@ end
 
 function BuyCallBack1(nItemIdx, nPrice, nTongID, nWorkshopID)
 	local nValue = TWS_GetDayOutput(nTongID, nWorkshopID)
-	_dbgMsg("Ê£ÓàÊä³öÊı*100: "..nValue)
+	_dbgMsg("Sè nhËp vµo cßn l¹i *100: "..nValue)
 	if (nValue <= 0)then
 		CloseShop()
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬½ñÌìµÄÃæ¾ßÒÑ¾­Âô¹âÁË£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: ThËt ®¸ng tiÕc, h«m nay mÆt n¹ ®· ph©n ph¸t hÕt råi, ngµy mai h·y ®Õn vËy!", 0)
 		return 0
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -309,11 +309,11 @@ function BuyCallBack1(nItemIdx, nPrice, nTongID, nWorkshopID)
 	local nContribution = (nPrice - floor(aLevelScale[nLevel]/100*nPrice))*200*aLevelContributionCoef[nLevel]/100
 	if (GetContribution() < nContribution)then
 		CloseShop()
-		Msg2Player(format("¹±Ï×¶È²»×ã£¬ĞèÒª%dµã¹±Ï×¶È£¡", nContribution))
+		Msg2Player(format("§iÓm cèng hiÕn kh«ng ®ñ, cÇn ph¶i cã %d ®iÓm cèng hiÕn!", nContribution))
 		return 0
 	end
 	AddContribution(-nContribution)
-	Msg2Player(format("ÄãÓÉÓÚ´òÕÛÏû·ÑÏûºÄÁË%dµã¹±Ï×¶È£¡", nContribution))
+	Msg2Player(format("§­îc ­u ®·i nªn chØ tiªu hao %d ®iÓm cèng hiÕn!", nContribution))
 	TWS_ApplyAddDayOutput(nTongID, nWorkshopID, -100)
 	TONG_ApplyAddTaskValue(nTongID, TONGTSK_WEEK_WSCONSUME, nContribution)
 	return 1
@@ -323,7 +323,7 @@ function BuyCallBack2(nItemIdx, nPrice, nTongID, nWorkshopID)
 	local nValue = TWS_GetDayOutput(nTongID, nWorkshopID)
 	if (nValue <= 0)then
 		CloseShop()
-		Say("<#>Ãæ¾ß·»×Ü¹Ü£º¶Ô²»Æğ£¬½ñÌìµÄÃæ¾ßÒÑ¾­Âô¹âÁË£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng qu¶n DŞ dung ph­êng: ThËt ®¸ng tiÕc, h«m nay mÆt n¹ ®· ph©n ph¸t hÕt råi, ngµy mai h·y ®Õn vËy!", 0)
 		return 0
 	end
 	TWS_ApplyAddDayOutput(nTongID, nWorkshopID, -100)
@@ -332,10 +332,10 @@ function BuyCallBack2(nItemIdx, nPrice, nTongID, nWorkshopID)
 end
 
 function USE_G_2(nTongID, nWorkshopID)
-	Say("<#>Ãæ¾ß·»×Ü¹Ü£ºÒ»°ãµÄÃæ¾ßÊÇÔÛÃÇ°ï»á×ÔÖÆµÄ£¬ÓÃ¹±Ï×¶È¾Í¿ÉÒÔ»»È¡£»ÖÆ×÷¾«ÃÀµÄÃæ¾ßÊÇ·ÂÖÆÒ×ÈİÊõÊ¿ÊÖ·¨µÄ£¬ÒªÓÃÍ­Ç®¹ºÂò£¬²»¹ı»áÓĞÕÛ¿ÛÅ¶£¡", 2, 
+	Say("<#>Tæng qu¶n DŞ dung ph­êng: Nh÷ng mÆt n¹ phæ th«ng do bang ta chÕ t¹o cã thÓ dïng ®iÓm cèng hiÕn ®Ó ®æi.", 2, 
 		--"Í­Ç®¹ºÂò/#use_buy_1("..nTongID..","..nWorkshopID..")", 
-		"¹±Ï×¶È¹ºÂò/#use_buy_2("..nTongID..","..nWorkshopID..")", 
-		"²»ÂòÁË/cancel");
+		"Dïng ®iÓm cèng hiÕn ®Ó ®æi/#use_buy_2("..nTongID..","..nWorkshopID..")", 
+		"Kh«ng mua ®©u/cancel");
 end
 
 function cancel()
@@ -345,7 +345,7 @@ else
 -----------------Èç¹ûÊÇ¿Í»§¶Ë---------------
 function GET_DESC(nTongID, nWorkshopID, nType)
 	if (nTongID == 0) then
-		return "<color=water>Ã»ÓĞ°ï»á"
+		return "<color=water>Kh«ng cã bang héi"
 	end
 	local bOpen	--ÊÇ·ñ¿ªÆô
 	local bPause --ÊÇ·ñÔİÍ£
@@ -353,7 +353,7 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 	local nUseLevel --µ±Ç°Ê¹ÓÃµÈ¼¶
 	local nOpenFund --µ±Ç°¿ªÆôÏûºÄ
 	local nMaintainFund --µ±Ç°Î¬»¤ÏûºÄ
-	local szCoinMask = {"--","ÆÕÍ¨Ãæ¾ß","É±ÊÖBossÃæ¾ß","²¿·Ö´óBossÃæ¾ß","²¿·Ö´óBossÃæ¾ß","³ÉÄêÍ¬°éÃæ¾ß","ÇàÄêÍ¬°éÃæ¾ß","ÉÙÄêÍ¬°éÃæ¾ß","Ó¢ĞÛÃæ¾ß","²¿·Ö½ÚÈÕÃæ¾ß","²¿·Ö½ÚÈÕÃæ¾ß"} --µ±Ç°Í­Ç®ÄÜÂòµÄÃæ¾ßÖÖÀà
+	local szCoinMask = {"--","MÆt n¹ phæ th«ng","MÆt n¹ Boss s¸t thñ","MÆt n¹ Boss ®¹i Hoµng Kim","MÆt n¹ Boss ®¹i Hoµng Kim","MÆt n¹ trung niªn","MÆt n¹ thanh niªn","MÆt n¹ thiÕu niªn","MÆt n¹ anh hïng","MÆt n¹ ngµy xu©n","MÆt n¹ ngµy xu©n"} --µ±Ç°Í­Ç®ÄÜÂòµÄÃæ¾ßÖÖÀà
 	local nContriMask --µ±Ç°¹±Ï×¶ÈÄÜÂòµÃÃæ¾ßÖÖÀà
 	local nScale  --µ±Ç°¹ºÂòÃæ¾ßÓÅ»İ¶È
 	local dMaskCount	--µ±Ç°Ã¿ÈÕÃæ¾ß²ú³ö×ÜÁ¿Ìá¸ß
@@ -402,35 +402,35 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 	end	
 	if (nWorkshopID ~= 0)then
 		local state 
-		if bPause == 1 then state="<color=yellow>ÔİÍ£" elseif bOpen == 1 then state="<color=green>¿ªÆô" else state="<color=red>¹Ø±Õ" end
-		local szMsg = "×÷·»×´Ì¬£º"..state.."<color>\n"..
-			"×÷·»µÈ¼¶£º<color=gold>"..nCurLevel.."<color>¼¶\n"..
-			"µ±Ç°Ê¹ÓÃµÈ¼¶£º<color=gold>"..nUseLevel.."<color>¼¶\n"..
-			"Ãæ¾ßÈÕ²úÁ¿ÉÏÏŞÌá¸ß£º<color=gold>"..dMaskCount.."<color>±¶\n"..		
-			"¹ºÂòÃæ¾ßÓÅ»İ¶È£º<color=gold>"..nScale.."<color>ÕÛ\n"..
-			"Í­Ç®¹ºÂòÃæ¾ßÔö¼Ó£º<color=gold>"..szCoinMask[nUseLevel + 1].."<color>\n"..
-			"¹±Ï×¶È¹ºÂòÃæ¾ßÖÖÀà£º<color=gold>"..nContriMask.."<color>ÖÖ\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=gold>"..nMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=gold>"..nOpenFund.."Íò<color>\n"..
-			"Éı¼¶ËùĞè½¨Éè»ù½ğ£º<color=gold>"..nUpgradeCostFund.."Íò<color>\n"..
-			"<color=green>ÏÂÒ»Ê¹ÓÃµÈ¼¶<color>\n"..
-			"<color=water>Ãæ¾ßÈÕ²úÁ¿ÉÏÏŞÌá¸ß£º<color=Violet>"..dNextMaskCount.."<color>±¶\n"..		
-			"¹ºÂòÃæ¾ßÓÅ»İ¶È£º<color=Violet>"..nNextScale.."<color>ÕÛ\n"..
-			"Í­Ç®¹ºÂòÃæ¾ßÔö¼Ó£º<color=Violet>"..szNextCoinMask.."<color>\n"..
-			"¹±Ï×¶È¹ºÂòÃæ¾ßÖÖÀà£º<color=Violet>"..nNextContriMask.."<color>ÖÖ\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=Violet>"..nNextMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=Violet>"..nNextOpenFund.."Íò<color>\n"
+		if bPause == 1 then state="<color=yellow>T¹m ngõng" elseif bOpen == 1 then state="<color=green>Khai më" else state="<color=red>§ãng cöa" end
+		local szMsg = "Tr¹ng th¸i t¸c ph­êng: "..state.."<color>\n"..
+			"§¼ng cÊp t¸c ph­êng: <color=gold>"..nCurLevel.."<color>\n"..
+			"§¼ng cÊp sö dông hiÖn t¹i: <color=gold>"..nUseLevel.."<color>\n"..
+			"S¶n l­îng mÆt n¹ s¶n xuÊt hµng ngµy t¨ng lªn: <color=gold>"..dMaskCount.."<color> lÇn\n"..		
+			"§æi ®iÓm ­u ®·i mÆt n¹: <color=gold>"..nScale.."<color> phÇn tr¨m\n"..
+			"TiÒn ®ång mua mÆt n¹ t¨ng lªn: <color=gold>"..szCoinMask[nUseLevel + 1].."<color>\n"..
+			"Lo¹i mÆt n¹ dïng ®iÓm cèng hiÕn ®æi: <color=gold>"..nContriMask.."<color> lo¹i\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=gold>"..nMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=gold>"..nOpenFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ®Ó n©ng cÊp: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+			"<color=green>§¼ng cÊp sö dông kÕ tiÕp <color>\n"..
+			"<color=water>S¶n l­îng mÆt n¹ hµng ngµy t¨ng lªn: <color=Violet>"..dNextMaskCount.."<color> lÇn\n"..		
+			"§æi ®iÓm ­u ®·i mÆt n¹: <color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
+			"TiÒn ®ång mua mÆt n¹ t¨ng lªn: <color=Violet>"..szNextCoinMask.."<color>\n"..
+			"Lo¹i mÆt n¹ dïng ®iÓm cèng hiÕn ®æi: <color=Violet>"..nNextContriMask.."<color> lo¹i\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	else
-		local szMsg = "×÷·»×´Ì¬£º<color=water>Î´½¨Á¢<color>\n"..
-			"½¨Á¢ËùĞè½¨Éè»ù½ğ£º<color=gold>"..nUpgradeCostFund.."Íò<color>\n"..
-			"<color=green>ÏÂÒ»µÈ¼¶<color>\n"..
-			"<color=water>Ãæ¾ßÈÕ²úÁ¿ÉÏÏŞÌá¸ß£º<color=Violet>"..dNextMaskCount.."<color>±¶\n"..		
-			"¹ºÂòÃæ¾ßÓÅ»İ¶È£º<color=Violet>"..nNextScale.."<color>ÕÛ\n"..
-			"Í­Ç®¹ºÂòÃæ¾ßÔö¼Ó£º<color=Violet>"..szNextCoinMask.."<color>\n"..
-			"¹±Ï×¶È¹ºÂòÃæ¾ßÖÖÀà£º<color=Violet>"..nNextContriMask.."<color>ÖÖ\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=Violet>"..nNextMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=Violet>"..nNextOpenFund.."Íò<color>\n"
+		local szMsg = "Tr¹ng th¸i t¸c ph­êng: <color=water>Ch­a thµnh lËp<color>\n"..
+			"Ng©n s¸ch kiÕn thÕt cÇn ®Ó x©y dùng: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+			"<color=green>§¼ng cÊp kÕ tiÕp <color>\n"..
+			"<color=water>S¶n l­îng mÆt n¹ hµng ngµy t¨ng lªn: <color=Violet>"..dNextMaskCount.."<color> lÇn\n"..		
+			"§æi ®iÓm ­u ®·i mÆt n¹: <color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
+			"TiÒn ®ång mua mÆt n¹ t¨ng lªn: <color=Violet>"..szNextCoinMask.."<color>\n"..
+			"Lo¹i mÆt n¹ dïng ®iÓm cèng hiÕn ®æi: <color=Violet>"..nNextContriMask.."<color> lo¹i\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	end
 end

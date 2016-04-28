@@ -1,15 +1,15 @@
 --ÖĞÔ­ÄÏÇø ÑïÖİ¸® ÍñÄï
 
 function main(sel)
-	Say("ÂôºïÄêÀñ·ş£¬ºØ¿¨ÔÚÕâ!",2,"ÎÒÑ¡Ñ¡¿´. /yes","²»Âò/no")
+	Say("B¸n lÔ phôc tÕt n¨m khØ, thiÖp chóc tÕt ®©y!",2,"Ta chän xem. /yes","Kh«ng mua/no")
 end;
 
 function yes()
-	Say("Ó­´º·ş×°£¬ºØËêÅ®·ş×°£¬¼Û¸ñÎª88888 Á½!",3,"ÁìĞÂÒÂ·ş/male","ºØËêÒÂ·ş /female","²»Âò/no")
+	Say("Trang phôc nam ®ãn xu©n, trang phôc n÷ mõng tuæi, ®ång gi¸ lµ 88888 l­îng!",3,"NhËn ¸o míi /male","¸o mõng tuæi /female","Kh«ng mua/no")
 end;
 
 function no()
-	Say("²»ÂòÒ²Ã»ÊÂ! ĞÂÄê¿ìÀÖ",0)
+	Say("Kh«ng mua còng kh«ng sao! Chóc kh¸ch quan n¨m míi vui vÎ!",0)
 end;
 
 function male()
@@ -17,7 +17,7 @@ function male()
 		AddItem(0,2,28,7,0,0,0)
 		Pay(88888)
 	else
-		Say("ÄúµÄÇ®²»¹»£¬´ø¹»Ç®ºóÔÙÀ´!",0)
+		Say("TiÒn cña kh¸ch quan kh«ng ®ñ, lÊy ®ñ tiÒn råi h·y ®Õn mua!",0)
 	end
 end;
 
@@ -26,6 +26,6 @@ function female()
 		AddItem(0,2,28,8,0,0)
 		Pay(88888)
 	else
-		Say("ÄúµÄÇ®²»¹»£¬´ø¹»Ç®ºóÔÙÀ´!",0)
+		Say("TiÒn cña kh¸ch quan kh«ng ®ñ, lÊy ®ñ tiÒn råi h·y ®Õn mua!",0)
 	end
 end;

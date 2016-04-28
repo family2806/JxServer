@@ -7,16 +7,16 @@ Include("\\script\\vng_feature\\thuongnhanthanbi\\moruongfour\\openchestfour.lua
 
 function main()
 	local tab_Content = {
-		"½»Ò×/OnBuy", 
-		"½áÊø¶Ô»°/OnCancel", 
-		"Ç°Íù³¤°×É½¶¥/GotoHuanZhuan",
-		"¹ØÓÚ¸£Ôµ/OnAbout"
+		"Giao dŞch/OnBuy", 
+		"§i Tr­êng b¹ch s¬n /GotoHuanZhuan", 
+		"Liªn quan tíi phóc duyªn.../OnAbout",
+		"KÕt thóc ®èi tho¹i/OnCancel"
 	};
 	if (au06_is_inperiod() == 1) then
-		tinsert(tab_Content, "ÖĞÇï»î¶¯/au06_lpaw_entrance");
+		tinsert(tab_Content, "Trung thu ho¹t ®éng/au06_lpaw_entrance");
 	end;
 	--tinsert(tab_Content, "¿ªÏä 4/#tbChectfour:main()");
-	Say ( "¿Í¹ÙÏëÂòÊ²Ã´£¿±¾µê²»È±»õÅ¶!", getn(tab_Content), tab_Content);
+	Say ( "Kh¸ch quan muèn mua g×? Bæn trang hµng g× còng cã!", getn(tab_Content), tab_Content);
 end
 
 function OnBuy()
@@ -24,20 +24,20 @@ function OnBuy()
 end
 
 function OnAbout()
-	Talk( 3, "", "¸£ÔµµãÊı£ºÍ¨¹ıÀÛ»ıÔÚÏßÊ±¼äÀ´¶Ò»»µÄÒ»ÖÖĞéÄâµãÊı£¬¿ÉÒÔÓÃÀ´ÓëÏåÑôµÄÉñÃØÉÌÈËÁøÒÒ¶Ò»»¸÷ÖÖÌØÊâÎïÆ·¡£", "¸£Ôµ¶Ò»»£ºÀÛ»ıÁ½Ğ¡Ê±ÒÔÉÏÔÚÏßÊ±¼äºó£¬È¥¸÷´ó³ÇÊĞÕÒÎäÁÖÃË´«ÈË¼´¿É¶Ò»»¡£Ò»ÌìÄÚÈç¹ûÁ½´Î³É¹¦¶Ò»»¸£Ôµ£¬ÓĞ¶îÍâ½±Àø¡£ÀÛ»ıÔÚÏßÊ±¼ä4Ğ¡Ê±ÒÔÄÚ£¬Ã¿Ğ¡Ê±¶Ò»»1µã¸£Ôµ£¬4Ğ¡Ê±ÒÔÉÏ£¬Ç°4Ğ¡Ê±Ã¿Ğ¡Ê±¶Ò»»1µã£¬Ö®ºóÃ¿Á½Ğ¡Ê±¶Ò»»1µã¡£×é¶ÓÊ±£¬¶ÓÎéÖĞÈÎÒâÒ»¸ö³ÉÔ±¿ÉÒÔ°ïÈ«¶Ó¶ÓÔ±ÁìÈ¡¸£Ôµ¡£", "ÏŞÖÆÌõ¼ş£º×øÀÎÆÚ¼ä²»Ôö¼Ó¿É»»È¡¸£ÔµµÄÔÚÏßÊ±¼ä¡£" );
+	Talk( 3, "", "Phóc duyªn ®iÓm ®Õm: Th«ng qua tİch lòy thêi gian ch¬i, cã thÓ ®æi ®iÓm phóc duyªn. Cã thÓ tíi T­¬ng D­¬ng thÇn bİ th­¬ng nh©n LiÔu ?t ®æi c¸c lo¹i vËt phÈm ®Æc thï. ", " Phóc duyªn ®æi:tİch lòy hai giê online trë lªn , ®i c¸c ®¹i thµnh thŞ t×m vâ l©m minh chñ truyÒn nh©n lµ ®­îc ®æi . mét ngµy ®­îc ®æi 2 lÇn, tİch lòy ë tuyÕn thêi gian 4 giê trë lªn, mçi giê ®æi 1 ®iÓm phóc duyªn.", "H¹n chÕ ®iÒu kiÖn :Ngåi tï kh«ng ®­îc tİch lòy ®iÓm phóc duyªn." );
 end
 
 function au06_lpaw_entrance()
 	if (au06_IsPayed_player() == 0) then
-		Say("Ö»ÓĞ³äÖµÍæ¼Ò²ÅÄÜ²Î¼ÓÖĞÇï»î¶¯", 0);
+		Say("chØ cã sung trŞ gi¸ nhµ ch¬i míi cã thÓ tham gia trung thu ho¹t ®éng", 0);
 		return
 	end;
-	Say("Èç¹ûÄãÓĞ<color=yellow> 10 ÉÌ¼ÖÁîÅÆ<color> ÎÒ»á¸øÄã»»Ò»¸ö<color=yellow>·îÔÂ¹ûÈØ<color> ËÍ¼¼ÄÜÖµ»òÕß1 <color=yellow>¹±ÔÂÜ½ÈØ<color>ËÍÇ±ÄÜÖµ.", 3, "1¸öÉÌ¼ÖÁîÅÆ»»È¡½±Àø/#shangjialingpai(1)", "10¸öÉÌ¼ÖÁîÅÆ»»È¡½±Àø/#shangjialingpai(2)", "½áÊø¶Ô»°/oncancel");
+	Say("nÕu nh­ ng­¬i cã <color=yellow> 10 th­¬ng cæ lÖnh bµi <color> ta sÏ cho ng­¬i ®æi mét <color=yellow> phông ngô qu¶ dong <color> ®­a kü n¨ng trŞ gi¸ hoÆc lµ 1 <color=yellow> cèng ngô phï dung <color> ®­a tiÒm n¨ng trŞ gi¸", 3, "1 c¸ th­¬ng cæ lÖnh bµi ®æi lÊy t­ëng th­ëng/#shangjialingpai(1)", "10 c¸ th­¬ng cæ lÖnh bµi ®æi lÊy t­ëng th­ëng/#shangjialingpai(2)", "Kh«ng/oncancel");
 end;
 
 function shangjialingpai(nIndex)
 	if (CalcEquiproomItemCount(6, 1, 1252, -1) < 10) then
-		Say("ĞèÒª10¸öÉÌ¼ÖÁîÅÆ²ÅÄÜ»»È¡½±Àø£¡", 0);
+		Say("cÇn 10 c¸ th­¬ng cæ lÖnh bµi míi cã thÓ ®æi lÊy t­ëng th­ëng", 0);
 		return
 	end;
 	
@@ -47,17 +47,17 @@ function shangjialingpai(nIndex)
 	end
 	
 	--¸øÓè½±Àø
-	local str = "<color=yellow>·îÔÂ¹ûÈØ<color>";
+	local str = "<color=yellow>Phông ngô qu¶ dong<color>";
 	if (nIndex == 1) then -- Ôö¼ÓÒ»¸ö¼¼ÄÜµã
 		AddItem(6, 1, 127, 1, 0, 0, 0);
 	else -- Ôö¼Ó5¸öÇ±ÄÜµã
 		AddItem(6, 1, 128, 1, 0, 0, 0);
-		str = "<color=yellow>¹±ÔÂÜ½ÈØ<color>";
+		str = "<color=yellow>Cèng ngô phï dung<color>";
 	end;
 	
 	--¸øÓèÌáÊ¾
-	Say("ºÃ°¡£¡Çë½ÓÊÜÒ»µãÀñÎï!", 0);
-	Msg2Player("Äã´ïµ½"..str);
+	Say("Xin mêi nhËn mét chót lÔ vËt", 0);
+	Msg2Player("§¹t ®­îc"..str);
 end;
 
 function OnCancel()

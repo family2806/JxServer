@@ -1,7 +1,7 @@
 
 --¾üĞè¹Ù
 function main(sel)
-Say("ºóÓªÓÉÎÒ¸ºÔğ£¬ÄãĞèÒªÊ²Ã´°ïÖúÂğ£¿",2,"ÂòÒ©Æ·/salemedicine","²»ĞèÒª£¬Ğ»Ğ»!/cancel")
+Say("HËu doanh do ta phô tr¸ch! Ng­¬i cã cÇn gióp ®ì g× kh«ng?",2,"Mua d­îc phÈm/salemedicine","Kh«ng cÇn ®©u! C¶m ¬n!/cancel")
 end;
 
 function salemedicine(sel)

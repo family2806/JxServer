@@ -138,19 +138,19 @@ if (not CHRISMAS_HEAD) then
 		--½øĞĞ¼ÆÊı
 		local nTimes = GetTask(COLLG_TK_PLAYTIMES);
 		if (GetTask(COLLG_TK_PLAYTIMES) >= COLLG_MAXPLAYTIMES) then
-			Talk(1, "", "<color=yellow>»î¶¯·»×Ü¹Ü<color>: Ã¿ÌìÖ»ÄÜ²Î¼Ó5ÂÖÊÕ¼¯ÎïÆ·»î¶¯!");
+			Talk(1, "", "<color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color>: Mét ngµy chØ cã thÓ tham gia 5 ®ît ho¹t ®éng thu thËp vËt phÈm!");
 			return
 		end;
 		
 		local nPhase = gb_GetTask(COLLG_NAME, 1);
 		if (nPhase ~= 1) then
 			if (nPhase == 2) then
-				Talk(1, "", "ÕæÊÇ²»ºÃÒâË¼£¬ÒıÂ·ÈËÒÑ´øÒ»Ğ©ÏÀ¿Í×ßÁË£¬ÉÔºò²Å»ØÀ´£¬ÇëµÈÏÂÒ»´Î°É.");
-				Msg2Player("»î¶¯ÕıÔÚ½øĞĞ£¬ÇëµÈÏÂÒ»´Î°É.");
+				Talk(1, "", "ThËt ng¹i qu¸, ng­êi dÉn ®­êng võa ®­a mét sè hiÖp kh¸ch ®i råi, mét lóc sau míi quay vÒ, h·y ®îi ®ît sau vËy.");
+				Msg2Player("Ho¹t ®éng ®ang diÔn ra, h·y chê ®îi ®ît ho¹t ®éng sau.");
 				return
 			end;
-			Talk(1, "", "Ä¿Ç°ÓĞºÜ¶àĞèÒª×öµÄÖØÒªÊÂÇé£¬ÔÚ0h 00 µ½1h 00, 12h00 ¶ö14h00, 19h 00 ¶ñ 22h00»ØÀ´ÕÒÎÒ.");
-			Msg2Player("»î¶¯Î´¿ªÊ¼.");
+			Talk(1, "", "HiÖn t¹i ta cã nhiÒu viÖc quan träng ph¶i lµm, trong thêi gian 0h 00 ®Õn 1h 00, 12h00 ®Õn 14h00, 19h 00 ®Õn 22h00 h·y quay l¹i t×m ta.");
+			Msg2Player("Ho¹t ®éng vÉn ch­a b¾t ®Çu.");
 			return
 		end
 		

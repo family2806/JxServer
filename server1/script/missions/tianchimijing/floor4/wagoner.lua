@@ -11,10 +11,10 @@ function main()
 	end
 	
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>Ã¿ÌìÍêÑÕ¹ãÑô¶¼ÔÚÕâÁ·¹¦£¬Ëû·ÅÖÃÁËÒ»Ğ©´óµÄ±¦Îï£¬ÓûÍ¼¶«É½ÔÙÆğ£¬ÔÙ¶È¹¥ËÎ£¬Ğ¡ÏÀÄãÒ»¶¨Òª´ò°ÜËû¡£"
+	tbDailog.szTitleMsg = "<#><npc>Mçi ngµy Huµn Nhan Qu¶ng D­¬ng ®Òu luyÖn c«ng ë ®©y, «ng ta cÊt gi÷ mét sè l­¬ng lín kho b¸u, Dôc §å §«ng S¬n T¸i Khëi, T¸i §é C«ng Tèng, tiÓu hiÖp ng­¬i nhÊt ®Şnh ph¶i ®¸nh b¹i h¾n."
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)	
 	
-	tbDailog:AddOptEntry("ÕâÀïÌ«¿ÉÅÂÁË£¬ÎÒÏëÀë¿ªÕâ¸ö¹íµØ·½", OnLeave)
+	tbDailog:AddOptEntry("Chç nµy ®¸ng sî qu¸, ta muèn rêi khái n¬i quû qu¸i nµy", OnLeave)
 	tbDailog:Show()
 end
 

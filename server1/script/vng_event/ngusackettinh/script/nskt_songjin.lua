@@ -11,10 +11,10 @@ function tb_NSKT_SongJin:giveAward(nRank)
 	local szNote = ""
 	local nKTCount = 0
 	if (nRank == 3000) then
-		szNote =  "Event ÎåÉ«½á¾§_¸ß¼¶ËÎ½ð3000";
+		szNote =  "Event Ngò s¾c kÕt tinh_Tong kim cao cap 3000";
 		nKTCount = 15
 	else if (nRank == 1000)then
-			szNote =  "Event ÎåÉ«½á¾§_¸ß¼¶ËÎ½ð1000";
+			szNote =  "Event Ngò s¾c kÕt tinh_Tong kim cao cap 1000";
 			nKTCount = 10
 		end
 	end

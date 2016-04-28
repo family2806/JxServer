@@ -19,12 +19,12 @@ function main(nItemIndex)
 	local nTSKVTime		= GetTask(TSK_BeiDouChuanGong_NIANYUE);
 	local nCurTime		= GetCurServerTime()
 	if GetLevel() < 50 or IsCharged() ~= 1 then
-		Say("50¼¶ÒÔÉÏ³äÖµµÄÈËÎï²ÅÄÜÊ¹ÓÃ¸÷ÖÖÕæµ¤(°×Õæµ¤£¬ÑªÕæµ¤£¬ĞşÕæµ¤).", 0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông c¸c lo¹i ch©n ®an (b¹ch ch©n ®an, huyÕt ch©n ®an, huyÒn ch©n ®an).", 0)
 		return 1;
 	end
 	
 	if nContainExp <= 0 then
-		Say("Ê¹ÓÃ¸ÃÕæµ¤²»ÄÜ»ñµÃ¾­Ñé.", 0)
+		Say("Sö dông ch©n ®an nµy kh«ng thÓ nhËn ®­îc kinh nghiÖm.", 0)
 		return 0
 	end
 	
@@ -42,7 +42,7 @@ function main(nItemIndex)
 			nTime		= mod(nTime, 60*60)
 			local nMin	= floor(nTime / 60 )
 			local nSec	= mod(nTime, 60)
-			szTime 		= format("%d ÈÕ%d Ê±%d ·Ö%d Ãë©y", nDay, nHour, nMin, nSec);
+			szTime 		= format("%d ngµy %d giê %d phót %d gi©y", nDay, nHour, nMin, nSec);
 		end
 	end
 	
@@ -57,17 +57,17 @@ function main(nItemIndex)
 	local szTitle
 	local tbOpt
 	if nExp <= 0 then
-		szTitle	= format("ÄúºÃ<color=yellow>%s<color>, ´óÏÀÊ¹ÓÃ¸÷ÖÖÏÉµ¤»ñµÃµÄ×Ü¾­Ñé×î¶àÎª30ÒÚµã£¬ËùÒÔ²»ÄÜ¶àÊ¹ÓÃÏÉµ¤ÁË¡£ÇëµÈ <color=yellow>%s<color>È»ºóÖØÊÔ.",GetName(),szTime)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, ®¹i hiÖp sö dông c¸c lo¹i tiªn ®¬n vµ nhËn ®­îc tæng kinh nghiÖm cao nhÊt lµ 3 tû ®iÓm, v× vËy kh«ng thÓ sö dông thªm tiªn ®¬n ®­îc n÷a. H·y ®îi <color=yellow>%s<color> råi thö l¹i.",GetName(),szTime)
 		tbOpt = 
 		{
-			"È·ÈÏ/OnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 	else
-		szTitle	= format("ÄúºÃ <color=yellow>%s<color>, ´óÏÀÊ¹ÓÃ¸÷ÖÖÏÉµ¤»ñµÃ<color=yellow>%s<color> ¾­Ñé£¬»¹ÄÜ¶îÍâ»ñµÃ<color=yellow>%s<color> ¾­Ñé. <enter>¸ÃÏÉµ¤ÓĞ <color=yellow>%s<color> ¾­Ñé£¬Èç¹ûÊ¹ÓÃ¸ÃÏÉµ¤¿ÉÒÔ»ñµÃ<color=yellow>%s<color>¾­Ñé£¬¸óÏÂÏëÊ¹ÓÃÂğ£¿",GetName(), nTSKVExp, nRemnant, nContainExp, nExp)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, ®¹i hiÖp sö dông c¸c lo¹i tiªn ®¬n nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm, cßn cã thÓ nhËn ®­îc thªm <color=yellow>%s<color> kinh nghiÖm. <enter>Tiªn ®¬n nµy chøa <color=yellow>%s<color> kinh nghiÖm, nÕu sö dông lo¹i tiªn ®¬n nµy cã thÓ nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm, c¸c h¹ cã muèn sö dông kh«ng?",GetName(), nTSKVExp, nRemnant, nContainExp, nExp)
 		tbOpt = 
 		{
-			format("È·ÈÏ/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
-			"·ÅÆú/OnCancel"
+			format("X¸c nhËn/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
+			"Hñy bá /OnCancel"
 		}
 	end
 	Say(szTitle, getn(tbOpt), tbOpt);
@@ -82,13 +82,13 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 	local nTSKVTime	= GetTask(TSK_BeiDouChuanGong_NIANYUE);
 	local nCurTime	= tonumber(GetLocalDate("%Y%m"));
 	if GetLevel() < 50 or IsCharged() ~= 1 then
-		Say("50¼¶ÒÔÉÏ³äÖµ¿Í»§²ÅÄÜÊ¹ÓÃ¸÷ÖÖÏÉµ¤(°×Õæµ¤£¬ÑªÕæµ¤£¬ĞşÕæµ¤).", 0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông c¸c lo¹i ch©n ®an (b¹ch ch©n ®an, huyÕt ch©n ®an, huyÒn ch©n ®an).", 0)
 		return 1;
 	end
 	
 	
 	if nContainExp <= 0 then
-		Say("Ê¹ÓÃ¸ÃÕæµ¤²»ÄÜ»ñµÃ¾­Ñé.", 0)
+		Say("Sö dông ch©n ®an nµy kh«ng thÓ nhËn ®­îc kinh nghiÖm.", 0)
 		return 1
 	end
 	
@@ -107,7 +107,7 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 			nTime		= mod(nTime, 60*60)
 			local nMin	= floor(nTime / 60 )
 			local nSec	= mod(nTime, 60)
-			szTime 		= format("%d ÈÕ %d Ê±%d ·Ö %d Ãë©y", nDay, nHour, nMin, nSec);
+			szTime 		= format("%d ngµy %d giê %d phót %d gi©y", nDay, nHour, nMin, nSec);
 		end
 	end
 	
@@ -120,10 +120,10 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 	local szTitle
 	local tbOpt
 	if nExp <= 0 then
-		szTitle	= format("´«¹¦µ¤<color=yellow>%s<color>, ´óÏÀÊ¹ÓÃ¸÷ÖÖÏÉµ¤»ñµÃµÄ×Ü¾­Ñé×î¶àÎª30ÒÚµã£¬ËùÒÔ²»ÄÜ¶àÊ¹ÓÃÏÉµ¤ÁË¡£ÇëµÈ <color=yellow>%s<color>È»ºóÖØÊÔ.",GetName(), szTime)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, ®¹i hiÖp sö dông c¸c lo¹i tiªn ®¬n vµ nhËn ®­îc tæng kinh nghiÖm cao nhÊt lµ 3 tû ®iÓm, v× vËy kh«ng thÓ sö dông thªm tiªn ®¬n ®­îc n÷a. H·y ®îi <color=yellow>%s<color> råi thö l¹i.",GetName(), szTime)
 		tbOpt = 
 		{
-			"È·ÈÏ/OnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 		Say(szTitle, getn(tbOpt), tbOpt);
 	else
@@ -146,9 +146,9 @@ function GetDesc(nItem)
 	local itemgenre, detailtype, parttype = GetItemProp(nItem)
 	if (itemgenre == 6 and detailtype == 1 and parttype == 30003 or parttype == 30004) then	
 			local nVar = GetItemParam(nItem, 1);
-			return format("\nMang m?s?<color=yellow>%s<color>", nVar);
+			return format("\nMang m· sè <color=yellow>%s<color>", nVar);
 	end
 	local nContainExp = GetItemParam(nItem, 1);
 	nContainExp = nContainExp + GetItemParam(nItem, 2)*1e8;
-	return format("\º¬ÓĞ <color=yellow>%s<color> ¾­Ñé", nContainExp);
+	return format("\nChøa <color=yellow>%s<color> kinh nghiÖm", nContainExp);
 end

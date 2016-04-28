@@ -11,27 +11,27 @@ Include("\\script\\global\\itemhead.lua")
 function main()
 	UTask_world42=GetTask(70)
 	if (UTask_world42==0) then
-		Say("»îÔÚÊÀÉÏÃ»ÓĞºÃÊé¿´ÕæÊÇÎŞÁÄ£¬ÕòÄÏµÄÀÏ¸ğ¼ÒÓĞÒ»±¾ºÃÊé£¬µ«ÊÇÎÒÀ­²»ÏÂÀÏÁ³È¥½è", 2, "ÎÒÈ¥°ïÄã½è/yes", "Ïë¿´Êé¾ÍÒªÈ¥½è. /no")
+		Say("Sèng trªn ®êi, kh«ng cã s¸ch hay ®Ó xem th× thËt lµ buån ch¸n! L·o C¸t Gia ë phİa nam trÊn cã mét quyÓn s¸ch hay, nh­ng ta kh«ng thÓ mÆt dµy mµy dÆn ®Õn m­în h¾n ®­îc", 2, "Ta gióp «ng ®i m­în /yes", "Muèn xem s¸ch còng ph¶i ®i m­în. /no")
 	elseif (UTask_world42==2) then
-		Talk(1,"","ÕâÑùµÄ»°¾ÍÏÈĞ»Ğ»ÄãÁË£¬¸ğÀÏÍ·ÔÚÕòÉÏµÄÄÏ±ß.")
+		Talk(1,"","VËy th× c¶m t¹ ng­¬i tr­íc! C¸t l·o ®Çu ®ang ë phİa nam trÊn nµy.")
 	elseif (UTask_world42==4) then
-		Talk(2, "step2", "¸ğÀÏËµÏëÓÃÒÄ¼áÖ¾»»»üÉñÂ¼.","Õâ¸öÀÏºüÀê£¬ÏëÎªÄÑÎÒ£¡ºÃ°É£¬Âé·³Äã´øÈ¥¸øËû")
+		Talk(2, "step2", "C¸t Gia nãi muèn dïng 'Di Kiªn Chİ'®æi 'Kª ThÇn lôc'","L·o hå ly ®ã, muèn lµm khã ta ®©y! §­îc råi! PhiÒn ng­¬i mang ®­a cho h¾n.")
 	elseif ((UTask_world42 == 6) and (HaveItem(189) == 0)) then		-- Êé¶ªÁË
-		Talk(1,"","Ğ¡×Ó£¬¸ÒÕâÑù£¬ÎªÊ²Ã´ÄÃ×ÅÊé¾ÍÅÜ£¿")
+		Talk(1,"","B¹n trÎ! D¸m liÒu nh­ thÕ! T¹i sao l¹i nĞm s¸ch ë chç ta mµ bá ch¹y")
 		AddEventItem(189)
-		Msg2Player("µÃµ½ÒÄ¼áÖ¾")
+		Msg2Player("§­îc Di Kiªn Chİ ")
 	elseif ((UTask_world42==8) and  (HaveItem(188) == 1)) then
-		Talk(3, "WTask70_prise", "Â³´óÊå£¬ÕâÊÇÄãÒªµÄÊé.", "Ì«ºÃÁË","ÕâÊÇÅ£Æ¤Ñü´ø£¬ÎÒÓÃ²»×Å£¬ËÍ¸øÄã°É¡£")
+		Talk(3, "WTask70_prise", "Lç ®¹i gia! §©y lµ quyÓn s¸ch ngµi cÇn.", "ThÕ th× tèt qu¸.","§©y cã sîi Ng­u b× yªu ®¸i, ta kh«ng dïng, tÆng cho ng­¬i")
 	else
-		Talk(1,"","ÄêÇáÈË£¬»îÔÚÊÀÉÏÒª¶à¶ÁÊé£¬²»Òª³ÉÌìÄ¥µ¶Ä¥½£µÄ")
+		Talk(1,"","B¹n trÎ! Sèng trªn ®êi cÇn ph¶i ®äc nhiÒu s¸ch, kh«ng nªn suèt ngµy móa ®ao móa kiÕm")
 	end
 end;
 
 function yes()
-	Talk(1,"","ÕâÑùµÄ»°¾ÍÏÈĞ»Ğ»ÄãÁË£¬¸ğÀÏÍ·ÔÚÕòÉÏµÄÄÏ±ß.")
+	Talk(1,"","VËy th× c¶m t¹ ng­¬i tr­íc! C¸t l·o ®Çu ®ang ë phİa nam trÊn nµy.")
 	SetTask(70,2)
-	AddNote("½ÓÈÎÎñ°ïÖúÂ³ÀÏÍ·µ½ÕòÄÏÕÒ¸ğÀÏÍ·½èÊé. ")
-	Msg2Player("½ÓÈÎÎñ°ïÖúÂ³ÀÏÍ·µ½ÕòÄÏÕÒ¸ğÀÏÍ·½èÊé. ")
+	AddNote("NhËn nhiÖm vô gióp Lç gia ®Õn trÊn nam gÆp C¸t gia m­în s¸ch. ")
+	Msg2Player("NhËn nhiÖm vô gióp Lç gia ®Õn trÊn nam gÆp C¸t gia m­în s¸ch. ")
 end
 
 function no()
@@ -39,9 +39,9 @@ end
 
 function step2()
 	AddEventItem(189)
-	Msg2Player("µÃµ½ÒÄ¼áÖ¾")
+	Msg2Player("§­îc Di Kiªn Chİ ")
 	SetTask(70,6)
-	AddNote("´ÓÂ³ÀÏ´¦µÃµ½ÒÄ¼áÖ¾")
+	AddNote("Tõ chç Lç gia lÊy ®­îc Di Kiªn Chİ. ")
 end
 
 function WTask70_prise()
@@ -50,7 +50,7 @@ function WTask70_prise()
 	AddItem(0,6,0,1,random(0,4),GetLucky(), p1,p2,p3,p4,p5,p6)
 	SetTask(70,10)
 	AddRepute(5)		-- ¼ÓÉùÍû5µã
-	AddNote("°Ñ»üÉñÂ¼¸øÂ³Ò¯£¬Íê³ÉÈÎÎñ£¬µÃµ½Ò»ÌõÅ£Æ¤Ñü´ø©u. ")
-	Msg2Player("µÃµ½Ò»ÌõÅ£Æ¤Ñü´ø©u. ")
-	Msg2Player("ÄãµÄÉùÍûÔö¼Ó5µã")
+	AddNote("Mang Kª ThÇn Lôc ®­a cho Lç gia, hoµn thµnh nhiÖm vô, ®­îc mét miÕng th¾t l­ng da tr©u. ")
+	Msg2Player("NhËn ®­îc miÕng th¾t l­ng da tr©u. ")
+	Msg2Player("Danh väng cña b¹n t¨ng thªm 5 ®iÓm ")
 end

@@ -22,7 +22,7 @@ local myTaskValue = GetTask(1003)
 		return
 	end
 	
-	Say("¶ËÄ¾Çå£ºÃ»Ê²Ã´ÊÂµÄ»°¾Í²»ÒªÔÚÎÒÃæÇ°»ÎÀ´»ÎÈ¥µÄÁË¡£",0);
+	Say("§õng cã ®i qua ®i l¹i hoµi thÕ, lµm ta chãng mÆt qu¸!",0);
 	
 	return
 		

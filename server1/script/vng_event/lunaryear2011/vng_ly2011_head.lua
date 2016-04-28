@@ -22,7 +22,7 @@ function tbVNG_LY2011:addNpc()
 		{
 			--baker = 
 				{
-					strName = "Ô½ºÍ×ö±ýÊ¦",  
+					strName = "Thî b¸nh ViÖt Hµ",  
 					nID = 205,
 					strScript = "\\script\\vng_event\\LunarYear2011\\npc\\baker.lua",
 					tbPos = 
@@ -45,7 +45,7 @@ function tbVNG_LY2011:addNpc()
 				},
 			--factionTransport =
 				{
-					strName = "´«ËÍÃÅÅÉ",  
+					strName = "TruyÒn tèng m«n ph¸i",  
 					nID = 195,
 					strScript = "\\script\\vng_event\\LunarYear2011\\npc\\factiontransport.lua",
 					tbPos = 
@@ -62,7 +62,7 @@ function tbVNG_LY2011:addNpc()
 				},
 			--MaiTree = 
 				{
-					strName = "Ã·»¨Ê÷",  
+					strName = "C©y Mai",  
 					nID = 1334,
 					strScript = "\\script\\vng_event\\LunarYear2011\\npc\\maitree.lua",
 					tbPos = 
@@ -78,7 +78,7 @@ function tbVNG_LY2011:addNpc()
 				},	
 			--cardShop = 
 				{
-					strName = "Âô¿¨ÀÏÕß",  
+					strName = "¤ng l·o b¸n thiÖp",  
 					nID = 389,
 					strScript = "\\script\\vng_event\\LunarYear2011\\npc\\cardshop.lua",
 					tbPos = 
@@ -88,7 +88,7 @@ function tbVNG_LY2011:addNpc()
 				},
 			--Lares = 
 				{
-					strName = "Ôî¾ý",  
+					strName = "¤ng T¸o",  
 					nID = 391,
 					strScript = "\\script\\vng_event\\LunarYear2011\\npc\\lares.lua",
 					tbPos = 

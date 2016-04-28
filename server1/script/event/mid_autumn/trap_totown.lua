@@ -18,7 +18,7 @@ function main()
 	local task1569=GetTask(1569)
 	
 	if( task1569 ~= 0 ) then
-		Say("ÄãµÄÔÂ±ı»¹Ã»ÓĞ×öºÃ. Òª²»ÏÈÈ¥ÕÒ×öÔÂ±ıµÄÊ¦¸¸Ö®ºóÔÚÀë¿ª°É!",2,"²»Òª×èÖ¹ÎÒ! ÎÒÒª×ß!/back_town","ÈÃÎÒÏëÒ»Ïë!/back_mingyue");
+		Say("B¸nh cña ng­¬i vÉn ch­a hoµn thµnh. Hay lµ h·y ®i t×m Thî b¸nh tr­íc ®i råi rêi khái ®©y sau!",2,"§õng c¶n! Ta ph¶i ®i ®©y!/back_town","§Ó ta suy nghÜ l¹i ®·!/back_mingyue");
 		return
 	end
 	for i=1,nCount do

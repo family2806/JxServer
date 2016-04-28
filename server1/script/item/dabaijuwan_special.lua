@@ -8,11 +8,11 @@ Include("\\script\\global\\baijuwanhead.lua")
 function main(itemindex)
 	SetTaskTemp(AEXP_TEMPOFFLINETASKID, itemindex)
 	str=
-	{	"<#>Ò»¿ÅÌØĞ§´ó°×¾ÔÍè£¬Ê¹ÓÃºó¿É»ñµÃ<color=red>80Ğ¡Ê±<color>µÄÀëÏßÍĞ¹ÜÊ±¼ä¡£ÔÚ´ËÆÚ¼ä»ñµÃµÄÍĞ¹Ü¾­ÑéÊÇÆÕÍ¨°×¾ÔÍèĞ§¹ûµÄ2±¶¡£",
-		"<#>Ê¹ÓÃÌØĞ§´ó°×¾ÔÍè/confirmlevel",
-		"<#>ÎÒÔÙ¿¼ÂÇ¿¼ÂÇ/cancel",
-		"<#>²éÑ¯ÎÒÊ£ÓàµÄÀëÏßÍĞ¹ÜÊ±¼ä/get_left_time",
-		"<#>¹ØÓÚÀëÏßÍĞ¹ÜµÄÏêÏ¸½éÉÜ/help"
+	{	"<#>Mét viªn ®¹i b¹ch c©u hoµn ®Æc biÖt, sau khi sö dông ®­îc <color=red>8 tiÕng<color> ñy th¸c rêi m¹ng. D­íi cÊp 130 thu ®­îc kinh nghiÖm gÊp 2 lÇn b¹ch c©u hoµn th­êng, cÊp 130 trë lªn thu ®­îc kinh nghiÖm gÊp 4 lÇn.",
+		"<#>Sö dông B¹ch C©u Hoµn ®Æc biÖt/confirmlevel",
+		"<#> §Ó ta suy nghÜ l¹i!/cancel",
+		"<#> Tra xem thêi gian treo m¸y cßn l¹i cña ta/get_left_time",
+		"<#> Giíi thiÖu chi tiÕt vÒ c¸ch ch¬i treo m¸y/help"
 	};
 	Say(str[1], 4,str[2],str[3],str[4],str[5]);
 	return 1
@@ -21,10 +21,10 @@ end
 --ÅĞ¶ÏµÈ¼¶ÔÙ´ÎÈ·ÈÏ
 function confirmlevel()
 	str=
-	{	"<#>ÒòÎªÄãµÄµÈ¼¶µÍÓÚ<color=red>50¼¶<color>£¬ËùÒÔÔÚÀëÏßÍĞ¹Ü×´Ì¬ÄÚ£¬Äã¿ÉÒÔ½øĞĞ°ÚÌ¯½»Ò×£¬µ«²»»á»ñµÃ<color=red>¾­ÑéÖµ<color>¡£ÄãÈ·¶¨ÒªÊ¹ÓÃÌØĞ§´ó°×¾ÔÍèÂğ£¿",
-		"<#>È·¶¨/use",
-		"<#>ÎÒÔÙ¿¼ÂÇ¿¼ÂÇ/cancel",
-		"<#>ÒòÎªÄã²»ÊÇ³äÖµÓÃ»§£¬ËùÒÔ²»ÄÜÊ¹ÓÃÀëÏßÍĞ¹Ü¹¦ÄÜ¡£ÇëÄã³äÖµºóÔÙÊ¹ÓÃ¸ÃÎïÆ·¡£"
+	{	"<#>§¼ng cÊp cña b¹n thÊp h¬n <color=red>50<color>. V× thÕ, ë tr¹ng th¸i ñy th¸c trªn m¹ng, b¹n cã thÓ tiÕn hµnh bµy b¸n giao dŞch vµ nhËn ®iÓm phóc duyªn, nh­ng kh«ng thÓ nhËn ®­îc <color=red>®iÓm kinh nghiÖm<color>. B¹n thËt sù muèn sö dông B¹ch C©u Hoµn ®Æc biÖt kh«ng#¿",
+		"<#> Sö dông/use",
+		"<#> §Ó ta suy nghÜ l¹i!/cancel",
+		"<#> V× b¹n kh«ng ph¶i lµ kh¸ch hµng n¹p thÎ, nªn kh«ng thÓ sö dông chøc n¨ng rêi m¹ng. Vui lßng n¹p thÎ råi sö dông vËt phÈm nµy!"
 	};
 
     -- ³ä¿¨ÓÃ»§²ÅÄÜÊ¹ÓÃ´ó°×¾ÔÍè
@@ -51,7 +51,7 @@ function use()
 	--showtime = floor(sparetime / (FRAME2TIME * 60));		--¸øÓÃ»§ÌáÊ¾ÏÔÊ¾µ½·ÖÖÓ
 	if ((sparetime + AEXP_SPECIALCHANGE) > AEXP_MAXTIME) then
 		local hours, minutes = getFrame2MinAndSec(sparetime);
-		Say("ÄãÄ¿Ç°µÄÌØĞ§´ó°×¾ÔÍèÀëÏß¾­ÑéÍĞ¹ÜÊ£ÓàÊ±¼äÎª <color=red>"..hours.."<color>Ğ¡Ê±<color=red>"..minutes.."<color>·ÖÖÓ£¬¶øÄãµÄÀëÏß¾­ÑéÍĞ¹ÜÊ±¼äÀÛ¼Æ²»¿ÉÒÔ³¬¹ı<color=red>10000Ğ¡Ê±<color>£¬ÇëÄã¹ıÒ»¶ÎÊ±¼äÔÙÊ¹ÓÃÌØĞ§´ó°×¾ÔÍè¡£", 0);
+		Say("Thêi gian ñy th¸c kinh nghiÖm rêi m¹ng cßn l¹i lµ: <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót. Thêi gian ñy th¸c kinh nghiÖm tİch lòy kh«ng ®­îc v­ît qu¸ <color=red>10000 giê<color>.", 0);
 	else	
 		itemindex = GetTaskTemp(AEXP_TEMPOFFLINETASKID);
 		if (IsMyItem(itemindex) ~= 1) then
@@ -72,10 +72,10 @@ function use()
 			ntotaltime = sparetime + AEXP_SPECIALCHANGE;
 			SetTask(AEXP_SPECIAL_TIME_TASKID, ntotaltime);
 			local hours, minutes = getFrame2MinAndSec(ntotaltime);
-			Say("Ê¹ÓÃ³É¹¦£¬ÄãÊ£ÓàµÄÌØĞ§´ó°×¾ÔÍèÀëÏßÍĞ¹ÜÊ±¼äÎª <color=red>"..hours.."<color>Ğ¡Ê±<color=red>"..minutes.."<color>·ÖÖÓ",0);
+			Say("Sö dông thµnh c«ng! Thêi gian ñy th¸c rêi mang B¹ch C©u Hoµn ®Æc biÖt cßn l¹i lµ: <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót",0);
 			writeUseBaiJulog("offlineitem_special", hours, minutes);
 		else
-			Say("Ã»ÓĞÌØĞ§´ó°×¾ÔÍè¿ÉÒÔÊ¹ÓÃ", 0);	
+			Say("Kh«ng cã B¹ch C©u Hoµn ®Æc biÖt, cã thÓ sö dông ", 0);	
 		end
 	end
 end

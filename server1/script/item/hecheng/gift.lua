@@ -132,7 +132,7 @@ function ComputeWorth(nCount)
 	local maxCount = 0	--ÀñÎïµÄ×ÜÊı
 	
 	if(nCount == 0) then
-		Talk(1, "GiveUIForGift", "<#>É¶¶¼²»¸ø£¬ÄãÏë¸ÉÉ¶Ñ½¡£")
+		Talk(1, "GiveUIForGift", "<#> C¸i g× còng kh«ng ®­a, ng­¬i muèn lµm g× ®©y!")
 		return nil
 	end
 	for i=1,nCount do
@@ -140,7 +140,7 @@ function ComputeWorth(nCount)
 		local g,d,_ = GetItemProp(itemIdx)
 
 		if(g ~= 4 or d<468 or (d >486 and d < 508) or d > 518) then --´íÎóµÀ¾ß
-			Talk(1,"GiveUIForGift","<#>Äã¸øµÄÊÇÏºÃ×¶«Î÷Ñ½£¬Õ¦¿´²»¶®à¿£¿")
+			Talk(1,"GiveUIForGift","<#> Ng­¬i ®­a cho ta c¸i qu¸i g× thÕ nµy?")
 			return nil
 		end
 		if(d > 467 and d < 487) then -- ±ù¾§
@@ -149,7 +149,7 @@ function ComputeWorth(nCount)
 			function checkGiftCount(idx,count)  --¼ì²âÉñÃØµÀ¾ßµÄÊıÁ¿
 				local num = GetItemStackCount(idx)
 				if(count + num > MAXGIVENUM) then -- ÊıÁ¿Ì«¶à
-					Talk(1, "GiveUIForGift", "<#>Äã¸øµÄ¶«Î÷Ì«¶à£¬¿´²»Çå°¡¡£")
+					Talk(1, "GiveUIForGift", "<#> §å ng­¬i cho nhiÒu qu¸, nh×n kh«ng râ g× hÕt!")
 					return nil
 				end
 				return num
@@ -159,7 +159,7 @@ function ComputeWorth(nCount)
 				return nil
 			else
 				if (d == 518) then
-					Say("Äã·ÅÈëµÄ¼¦ÄêÉñÃØÀñÎïÖĞÓĞ10¼¶µÄ¼¦ÄêÉñÃØÀñÎï£¬Õâ¿ÉÄÜ»áµ¼ÖÂºÏ³ÉÊ§°Ü£¬Òª²»ÒªÖØĞÂºÏ³É£¿", 2, "ºÃµÄ£¬ÖØĞÂºÏ³É/GiveUIForGift", "ËãÁË£¬ÏÂ´Î°É/onCancel")
+					Say("LÔ vËt n¨m DËu b¹n ®Æt vµo trong cã LÔ vËt n¨m DËu (cÊp 10) , nh­ thÕ sÏ ¶nh h­ëng hîp thµnh thÊt b¹i, cã cÇn hîp thµnh l¹i kh«ng?", 2, "§­îc, hîp thµnh l¹i ®i!/GiveUIForGift", "Kh«ng cÇn!/onCancel")
 					return nil
 				end
 				maxCount = maxCount + num
@@ -173,7 +173,7 @@ function ComputeWorth(nCount)
 		return -1
 	end
 	if(worth ==0) then
-		Talk(1, "GiveUIForGift", "<#>¶Ô²»Æğ£¬ÖÁÉÙĞèÒªÒ»¸ö¼¦ÄêÉñÃØÀñÎï¡£")
+		Talk(1, "GiveUIForGift", "<#> Xin lçi! İt nhÊt cÇn mét LÔ vËt n¨m DËu.")
 		return nil
 	end
 
@@ -195,7 +195,7 @@ end
 --	ÎŞ
 --==================================================--
 function GiveUIForGift()
-	GiveItemUI("¼¦ÄêÉñÃØÀñÎïºÏ³É","Äã×î¶à·ÅÈë20¸ö¼¦ÄêÉñÃØÀñÎïºÍ¶à¸öÊ¥µ®»î¶¯Ê±Ê£ÏÂµÄ±ù¾§¡£", "GiftLevelUp", "onCancel" );
+	GiveItemUI("Hîp thµnh LÔ vËt n¨m DËu ","B¹n cã thÓ ®Æt nhiÒu nhÊt lµ 20 c¸i LÔ vËt n¨m DËu vµ B¨ng Tinh trong ho¹t ®éng gi¸ng sinh cßn d­ l¹i.", "GiftLevelUp", "onCancel" );
 end
 
 --========º¯Êı¶¨Òå==================================--
@@ -222,23 +222,23 @@ function GiftLevelUp(nCount)
 	end
 	if(worth < 0) then
 		--ÉæÏÓË¢Ë®¾§£¬¿ÛµôËùÓĞÎïÆ·£¬²¢¼ÇÂ¼ÈÕÖ¾
-		WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-					"ÔÚºÏ³ÉÉñÃØÀñÎïµÄÊ±ºò£¬Ê¹ÓÃÁË³¬¹ı5000Íò¼ÛÖµÁ¿µÄ±ù¾§£¬ÉæÏÓË¢±ù¾§£¬ÏêÏ¸¼ì²éºó£¬¿¼ÂÇ¶³½á¸ÃÕÊºÅ¡£")
+		WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+					"Trong lóc hîp thµnh lÔ VËt n¨m DËu, ph¸t hiÖn ra ®· sö dông Thñy Tinh v­ît qu¸ 5000 v¹n. KiÕn nghŞ nªn khãa ngay Account nµy")
 		if(GetTask(TID_CLONECRYSTAL) > 3) then
-			WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-					"ÒÑ¾­µÚ"..GetTask(TID_CLONECRYSTAL).."´ÎÊ¹ÓÃ¼ÛÖµÁ¿µÄ³¬±ê±ù¾§£¬Æä¸´ÖÆ±ù¾§µÄ¿ÉÄÜĞÔ·Ç³£´ó£¬½¨Òé¼ÓÈëºÚÃûµ¥")
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+					"§· sö dông"..GetTask(TID_CLONECRYSTAL).."lÇn, Thñy Tinh nµy cã nhiÒu kh¶ n¨ng lµ phi ph¸p. Xin GM h·y chó ı!")
 		end
 		--Ëµ¾äÉñÃ´»°ÄØ£¿ÃÔ»óÒ»ÏÂ
-		Talk(1,"","<#>ß×£¬Ê§°ÜÁË£¬Õ¦»ØÊÂ°¡£¿ÕâÕ¦¡¢Õ¦ÕûÑ½¡­¡­")
+		Talk(1,"","<#> Hõ! ChuyÖn g× vËy, thÊt b¹i råi µh? Sao k× vËy nÌ…… ")
 		return
 	end
 	local idx = Convert:giftLevelup(worth)
 	if(not idx) then  --Ê§°Ü£¬Ã»ÓĞÑ¡³öÈÎºÎ¶«Î÷
-		Talk(1,"","<#>ß×£¬Ê§°ÜÁË£¬Õ¦»ØÊÂ°¡£¿ÕâÕ¦¡¢Õ¦ÕûÑ½¡­¡­")
+		Talk(1,"","<#> Hõ! ChuyÖn g× vËy, thÊt b¹i råi µh? Sao k× vËy nÌ…… ")
 		return
 	end
 	if (idx == 1) then
-		Talk(1,"","<#>ß×£¬Ê§°ÜÁË£¬Õ¦»ØÊÂ°¡£¿ÕâÕ¦¡¢Õ¦ÕûÑ½¡­¡­")
+		Talk(1,"","<#> Hõ! ChuyÖn g× vËy, thÊt b¹i råi µh? Sao k× vËy nÌ…… ")
 		return
 	end
 
@@ -247,17 +247,17 @@ function GiftLevelUp(nCount)
 					tonumber(Convert.__gifttabfile:getCell(TF_GIFT_P3,idx)),
 					tonumber(Convert.__gifttabfile:getCell(TF_GIFT_P4,idx)),
 					0,0,0,0,0,0,0,0)
-	WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-					"£¬ÓÃÁË"..worth.."¼ÛÖµÁ¿µÄÉñÃØÀñÎï£¬ºÏ³ÉµÃµ½"..
-					Convert.__gifttabfile:getCell(TF_GIFT_WORTH,idx).."¼ÛÖµÁ¿µÄÉñÃØÀñÎï£¬ÏµÍ³µÃµ½"..
-					tostring(worth-Convert.__gifttabfile:getCell(TF_GIFT_WORTH,idx)).."Ê£Óà¼ÛÖµÁ¿¡£")
-	Talk(1, "","<#>ÄãºÏ³É³öÁËÒ»¸öÇ±ÖÊÎª"..Convert.__gifttabfile:getCell(TF_GIFT_CRYPTIC,idx).."µÄ¼¦ÄêÉñÃØÀñÎï")
-	Msg2Player("Äã»ñµÃÁËÒ»¸ö¼¦ÄêÉñÃØÀñÎï")
+	WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+					", sö dông"..worth.."§ñ sè ThÇn bİ lÔ vËt, hîp thµnh"..
+					Convert.__gifttabfile:getCell(TF_GIFT_WORTH,idx).."Gi¸ trŞ l­îng thÇn bİ lÔ vËt, hÖ thèng nhËn ®­îc "..
+					tostring(worth-Convert.__gifttabfile:getCell(TF_GIFT_WORTH,idx)).."Gi¸ trŞ cßn thõa l¹i.")
+	Talk(1, "","<#> Hîp thµnh ra mét tiÒm chÊt"..Convert.__gifttabfile:getCell(TF_GIFT_CRYPTIC,idx).."LÔ vËt n¨m DËu")
+	Msg2Player("B¹n nhËn ®­îc mét LÔ vËt n¨m DËu")
 	return
 end
 
 function main()
-	Talk(1, "GiveUIForGift", "ºÏ³É¼¦ÄêÉñÃØÀñÎï£ºÖ»ÄÜ·ÅÈë×î¶à20¸ö<color=yellow>¼¦ÄêÉñÃØÀñÎï<color>£¬¾Í¿ÉÄÜºÏ³É¸ü¸ß¼¶µÄ¼¦ÄêÉñÃØÀñÎï¡£Èç¹ûÄãÓĞÊ¥µ®»î¶¯Ê±Ê£ÏÂµÄ<color=yellow>±ù¾§<color>Ò²¿ÉÒÔ·ÅÈëÀ´Ìá¸ßºÏ³ÉµÄ¼¸ÂÊ¡£")
+	Talk(1, "GiveUIForGift", "Hîp thµnh LÔ vËt n¨m DËu: §Æt nhiÒu nhÊt lµ 20 c¸i <color=yellow>LÔ vËt n¨m DËu<color>, th× cã kh¶ n¨ng hîp thµnh ®­îc LÔ vËt n¨m dËu cao cÊp h¬n. NÕu b¹n cßn d­ <color=yellow>B¨ng Tinh<color> trong dŞp lÔ gi¸ng sinh còng cã thÓ bá vµo ®Ó t¨ng x¸c xuÊt cao h¬n. ")
 end
 
 function onCancel()

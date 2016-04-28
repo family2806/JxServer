@@ -328,7 +328,7 @@ aryLimitRegion = {
 --		{1743, 2995},
 --	},	
 --	
---	-- ÄÏÔÀÕò
+--	-- Nam ÔÀÕò
 --	[54]={
 --		{1590, 3092},
 --		{1639, 3142},
@@ -434,14 +434,14 @@ function StallCheckPermitRegion()
 	if offlineCheckPermitRegion() == 1 then
 		return 1
 	else
-		Talk(1, "", "²»ÄÜÔÚ´ËÇøÓò°ÚÌ¯")
+		Talk(1, "", "Kh«ng thÓ bµy b¸n t¹i khu vùc nµy")
 	end
 end
 
 -- »ñµÃÒ»¸öÎ»ÖÃÏà¶ÔÓÚÍæ¼ÒÎ»ÖÃµÄ´óÌå·½Î»
 function getDirection(posOrigin, posTarget)
 	
-	local tbStr = {"Î÷ÄÏ", "ÄÏ", "¶«ÄÏ", "¶«", "¶«±±", "±±", "Î÷±±", "Î÷"};
+	local tbStr = {"T©y nam ", "Nam ", "§«ng nam ", "§«ng ", "§«ng b¾c ", "B¾c ", "T©y b¾c ", "T©y "};
 
 	
 	local nX	= posOrigin[2] - posTarget[2];

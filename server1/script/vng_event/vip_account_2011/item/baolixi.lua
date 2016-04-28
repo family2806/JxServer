@@ -15,7 +15,7 @@ tbVNG_VipAcc_BaoLiXi.tbTaskInfo =
 
 function main(nItemIdx)
 	if tbVNG_VipAcc_BaoLiXi:isActive() ~= 1 then
-		Msg2Player("ÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 	local nResult, szErrorMessage = tbVNG_VipAcc_BaoLiXi:useItem()
@@ -38,7 +38,7 @@ function tbVNG_VipAcc_BaoLiXi:isActive()
 end
 function tbVNG_VipAcc_BaoLiXi:useItem()
 	if tbVNG_BitTask_Lib:isMaxBitTaskValue(self.tbTaskInfo) == 1 then
-		return 0, "Ã¿ÈËÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ·Ò»´Î."
+		return 0, "Mçi nh©n vËt chØ ®­îc sö dông vËt phÈm nµy mét lÇn."
 	end
 	tbVNG_BitTask_Lib:addTask(self.tbTaskInfo, 1)
 	tbVNG_VipAcc_Peach:addNpc()

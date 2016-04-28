@@ -17,7 +17,7 @@ function temple_killbugbear()
 	if ( Uworld1213 ~= 0 ) then       --判断是否双倍经验时间
 		if  ( GetGameTime() - Uworld1213 >= 1200 ) then
 			nt_setTask(1213,0)
-			Msg2Player("你的增加双倍时间已结束!")
+			Msg2Player("Th阨 gian t╪g g蕄 i 甶觤 kinh nghi謒 c馻 b筺  k誸 th骳!")
 		else
 			AddOwnExp(TEMBUGBEAR_EXP)    --给予一倍的经验
 		end
@@ -28,7 +28,7 @@ function temple_killbugbear()
 	end
 	
 	if ( Uworld1214+1 >= 20 ) then
-		Msg2Player("你已完成刀妖临终前的心愿，获得他留下的财产.")
+		Msg2Player("B筺  ho祅 th祅h t﹎ nguy謓 o Y猽 trc l骳 l﹎ chung, nh薾 頲 t礽 s秐 c馻 anh ta  l筰.")
 		if ( SubWorldIdx2ID( nMapIndex ) == 390 ) then
 			AddOwnExp(50000)
 			nt_setTask(1205,nt_getTask(1205)+16)

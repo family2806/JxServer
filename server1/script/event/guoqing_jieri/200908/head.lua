@@ -35,15 +35,15 @@ end
 function tbGuoqing0908:IsPlayerEligible()
 	if ST_IsTransLife() ~= 1 then
 		if self.nMinLevel and GetLevel() < self.nMinLevel then
-		return nil, format("≤ªπª %dº∂", self.nMinLevel)
+		return nil, format("Kh´ng ÆÒ c p %d", self.nMinLevel)
 		end
 	end
 	if self.nMaxLevel and GetLevel() > self.nMaxLevel then
-		return nil, format("“—æ≠π˝¡À %dº∂", self.nMaxLevel)
+		return nil, format("ß∑ v≠Ót qu∏ c p %d", self.nMaxLevel)
 	end
 
 	if self.bIsCharged and self.bIsCharged == 1 and IsCharged() ~= 1 then
-			return nil, "¥Ûœ¿…–Œ¥≥‰÷µ£°"
+			return nil, "ßπi hi÷p v…n ch≠a nπp thŒ µ!"
 		end
 	return 1
 end

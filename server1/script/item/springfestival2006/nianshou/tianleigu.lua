@@ -1,6 +1,6 @@
 ITEMTYPE = 2; --¹«¹²µÀ¾ß
-szItem = "ÌìÀ×¹Æ"
-szEffect = "Ñ£ÔÎ5Ãë";
+szItem = "Thiªn L«i Cæ "
+szEffect = "bÞ cho¸ng trong 5 gi©y";
 nSkillId = 673;
 nSkillLevel = 20;
 nTime = 5;

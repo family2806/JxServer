@@ -1,4 +1,4 @@
--- 32.	ÔÚ·¿¼äÁ½¶Ë³öÏÖÁ½¸öBOSS£ºÀè¼ûºâºÍÎÄâù£¬±ØĞëÒª2¸öBOSS 5ÃëÄÚÍ¬Ê±´òËÀ²ÅĞĞ£¬²»Í¬Ê±´òËÀ»á²»¶ÏÖØÉú
+-- 32.	ÔÚ·¿¼äÁ½¶Ë³öÏÖÁ½¸öBOSS£ºÀè¼ûºâºÍV¨n Di£¬±ØĞëÒª2¸öBOSS 5ÃëÄÚÍ¬Ê±´òËÀ²ÅĞĞ£¬²»Í¬Ê±´òËÀ»á²»¶ÏÖØÉú
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -31,12 +31,12 @@ end
 
 function pTask:CallBoy()
 	local pos = self:GetPosition().t32_boy
-	self.m_BoyIndex = FightNpcManager:AddNpc("Àè½¨ºê", self.m_BoyId, self:GetMapId(), pos.x, pos.y, self, 1, 1, 1)
+	self.m_BoyIndex = FightNpcManager:AddNpc("Lª KiÕn Hoµnh", self.m_BoyId, self:GetMapId(), pos.x, pos.y, self, 1, 1, 1)
 end
 
 function pTask:CallGirl()
 	local pos = self:GetPosition().t32_girl
-	self.m_GirlIndex = FightNpcManager:AddNpc("ÎÄâù", self.m_GirlId, self:GetMapId(), pos.x, pos.y, self, 2, 1, 1)
+	self.m_GirlIndex = FightNpcManager:AddNpc("V¨n Di", self.m_GirlId, self:GetMapId(), pos.x, pos.y, self, 2, 1, 1)
 end
 
 function pTask:OnDeath(nKilledIndex, pPlayer, nIndex)

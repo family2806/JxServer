@@ -5,7 +5,7 @@ if not tbVNG_NLY2011_Itemhead then
 end
 tbVNG_NLY2011_Itemhead.tbItems = 
 	{
-		["ĞÂÄê¿¨"] = 
+		["ThiÖp n¨m míi"] = 
 			{
 				tbTaskInfo =
 					{
@@ -15,9 +15,9 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 100
 					},
 				tbExp = {nExp = 3e6},
-				strName = "ĞÂÄê¿¨"
+				strName = "ThiÖp n¨m míi"
 			},
-		["½ÚÈÕ±ı"] = 
+		["B¸nh tĞt"] = 
 			{
 				tbTaskInfo =
 					{
@@ -27,9 +27,9 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 1000
 					},
 				tbExp = {nExp = 5e5},
-				strName = "½ÚÈÕ±ı"
+				strName = "B¸nh tĞt"
 			},
-		["ôÕ×Ó"] = 
+		["B¸nh ch­ng"] = 
 			{
 				tbTaskInfo =
 					{
@@ -39,16 +39,16 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 3000
 					},
 				tbExp = {nExp = 1e6},
-				strName = "ôÕ×Ó",
+				strName = "B¸nh ch­ng",
 				tbItemAward =
 					{
 						[1] = 
 							{
-								{szName="ĞÂÄê¿¨",tbProp={6,1,30088,1,0,0},nCount=1,nRate=50,nExpiredTime=20110220},
+								{szName="ThiÖp n¨m míi",tbProp={6,1,30088,1,0,0},nCount=1,nRate=50,nExpiredTime=20110220},
 							},
 					}
 			},
-		["ÌØ±ğôÕ×Ó"] = 
+		["ÌØ±ğB¸nh ch­ng"] = 
 			{
 				tbTaskInfo =
 					{
@@ -58,10 +58,10 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 6000
 					},
 --				tbExp = {nExp = 20e6},
-				strName = "ÌØ±ğôÕ×Ó",
+				strName = "ÌØ±ğB¸nh ch­ng",
 				tbItemAward =
 					{
-						{szName="ĞÂÄê¿¨",tbProp={6,1,30088,1,0,0},nCount=1,nExpiredTime=20110220},
+						{szName="ThiÖp n¨m míi",tbProp={6,1,30088,1,0,0},nCount=1,nExpiredTime=20110220},
 					}
 			},
 	}
@@ -106,25 +106,25 @@ end
 
 function tbVNG_NLY2011_Itemhead:useItem(strItemName)
 	if tbVNG_LY2011:checkCondition() ~= 1 then
-		return 0, "Äã²»¹»Ìõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ "
+		return 0, "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm! Yªu cÇu cÊp ®é trªn 50 vµ ®·  n¹p thÎ."
 	end
 	local tbItem = self.tbItems[strItemName]
 	if self:isMaxItemUse(tbItem.tbTaskInfo) == 1 then
-		return 0, "´óÏÀÒÑ´ïµ½¸ÃÎïÆ·µÄ×î´óÊ¹ÓÃ!"
+		return 0, "§¹i hiÖp ®·  ®¹t tèi ®a sö dông vËt phÈm nµy!"
 	end
-	if strItemName == "banhchungdacbiet" then
+	if strItemName == "B¸nh ch­ngdacbiet" then
 		if self:CheckBag(2) ~= 1 then
-			return 0, "ÎªÈ·±£²Æ²ú°²È«£¬ÇëÁôÏÂ2¸ö×°±¸¿ÕÎ»ºó²ÅÄÜÊ¹ÓÃ¸ÃÎïÆ·!"
+			return 0, "§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa 2 « trèng trong hµnh trang råi míi sö dông vËt phÈm nµy!"
 		end
-		return self:banhchungdacbiet()
+		return self:B¸nh ch­ngdacbiet()
 	end
 	self:addTask(tbItem.tbTaskInfo, 1)
 	if tbItem.tbExp then 
-		local strLog = format("[VNG][Lunar Year 2011][Ê¹ÓÃ¾­Ñé½±Àø%s]", tbItem.strName)
+		local strLog = format("[VNG][Lunar Year 2011][PhÇn th­ëng exp sö dông %s]", tbItem.strName)
 		tbAwardTemplet:GiveAwardByList(tbItem.tbExp, strLog)
 	end
 	if tbItem.tbItemAward then
-		local strLog2 = format("[VNG][Lunar Year 2011][Ê¹ÓÃÎïÆ·½±Àø %s]", tbItem.strName)
+		local strLog2 = format("[VNG][Lunar Year 2011][PhÇn th­ëng item sö dông %s]", tbItem.strName)
 		for i =1, getn(tbItem.tbItemAward) do
 			tbAwardTemplet:GiveAwardByList(tbItem.tbItemAward[i], strLog2)
 		end
@@ -132,8 +132,8 @@ function tbVNG_NLY2011_Itemhead:useItem(strItemName)
 	return 1
 end
 
-function tbVNG_NLY2011_Itemhead:banhchungdacbiet()
-	local tbItem = self.tbItems["banhchungdacbiet"]
+function tbVNG_NLY2011_Itemhead:B¸nh ch­ngdacbiet()
+	local tbItem = self.tbItems["B¸nh ch­ngdacbiet"]
 	--Tao bang phan thuong kinh nghiem
 	local tbExp = {
 							{n_Exp =5e6, n_Rate = 20},
@@ -169,10 +169,10 @@ function tbVNG_NLY2011_Itemhead:banhchungdacbiet()
 			}
 	end
 	if (tbExpAward)then
-		tbAwardTemplet:GiveAwardByList(tbExpAward, "[VNG][Lunar Year 2011][ÌØ±ğôÕ×ÓÊ¹ÓÃ¾­Ñé½±Àø]");	
+		tbAwardTemplet:GiveAwardByList(tbExpAward, "[VNG][Lunar Year 2011][ÌØ±ğB¸nh ch­ngÊ¹ÓÃ¾­Ñé½±Àø]");	
 	end
 	if tbItem.tbItemAward then
-		local strLog2 = format("[VNG][Lunar Year 2011][Ê¹ÓÃĞÂÄê¿¨½±Àø %s]", tbItem.strName)
+		local strLog2 = format("[VNG][Lunar Year 2011][Ê¹ÓÃThiÖp n¨m míi½±Àø %s]", tbItem.strName)
 		for i =1, getn(tbItem.tbItemAward) do
 			tbAwardTemplet:GiveAwardByList(tbItem.tbItemAward[i], strLog2)
 		end
@@ -180,60 +180,60 @@ function tbVNG_NLY2011_Itemhead:banhchungdacbiet()
 	
 	local tbItemAward = 
 		{
-			{szName="ÌØĞ§°×¾ÔÍè",tbProp={6,1,1157,1,0,0},nCount=1,nRate=3},
-			{szName="Ìì¾§°×¾ÔÍè",tbProp={6,1,2183,1,0,0},nCount=1,nRate=2},
-			{szName="Óñ¹Ş",tbProp={6,1,2311,1,0,0},nCount=1,nRate=3,nExpiredTime=43200},
-			{szName="ÍòÄÜ»Ô»Í¹û",tbProp={6,1,2271,1,0,0},nCount=1,nRate=4,nExpiredTime=43200},
-			{szName="¸öÈË¹±Ï×Öµ1", 
+			{szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=3},
+			{szName="Thiªn tinh b¹ch c©u hoµn",tbProp={6,1,2183,1,0,0},nCount=1,nRate=2},
+			{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=3,nExpiredTime=43200},
+			{szName="V¹n Niªn Huy Hoµng qu¶",tbProp={6,1,2271,1,0,0},nCount=1,nRate=4,nExpiredTime=43200},
+			{szName="§iÓm cèng hiÕn c¸ nh©n 1", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
 					%tbVNG_NLY2011_Itemhead:addContribution(50000)
 				end,
 				nRate = 10
 			},
-			{szName="§i¸öÈË¹±Ï×Öµ2", 
+			{szName="§iÓm cèng hiÕn c¸ nh©n 2", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
 					%tbVNG_NLY2011_Itemhead:addContribution(100000)
 				end,
 				nRate = 5
 			},
-			{szName="§i¸öÈË¹±Ï×Öµ3", 
+			{szName="§iÓm cèng hiÕn c¸ nh©n 3", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
 					%tbVNG_NLY2011_Itemhead:addContribution(200000)
 				end,
 				nRate = 2
 			},
-				{szName="§i¸öÈË¹±Ï×Öµ4", 
+				{szName="§iÓm cèng hiÕn c¸ nh©n 4", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
 					%tbVNG_NLY2011_Itemhead:addContribution(500000)
 				end,
 				nRate = 1
 			},
-			{szName="º£ÁúÖé",tbProp={6,1,2115,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
-			{szName="ÁúÑªÍè",tbProp={6,1,2117,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
-			{szName="ÉñĞĞ·û",tbProp={6,1,1266,1,0,0},nCount=1,nRate=1.5,nExpiredTime=14400},
-			{szName="»ØÌìÔÙÔì½õÄÒ",tbProp={6,1,1781,1,0,0},nCount=1,nRate=2,tbParam={60}},
-			{szName="Ä®±±´«ËÍÁî",tbProp={6,1,1448,1,0,0},nCount=1,nRate=2},
-			{szName="É±ÊÖïµÀñºĞ",tbProp={6,1,2339,1,0,0},nCount=1,nRate=2},
-			{szName="°ËÕä¸£ÔÂÀ¯Öò",tbProp={6,1,1817,1,0,0},nCount=1,nRate=5},
-			{szName="ĞşÌì½õÄÒ",tbProp={6,1,2355,1,0,0},nCount=1,nRate=3},
-			{szName="ÌìÁúÁî",tbProp={6,1,2256,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
-			{szName="ËÄº£åĞÒ£µ¤ÀñºĞ",tbProp={6,1,2398,1,0,0},nCount=1,nRate=2},
-			{szName="ÎåÖŞÁè¿Õµ¤ÀñºĞ",tbProp={6,1,2399,1,0,0},nCount=1,nRate=2},
-			{szName="¾ÅÌìÔÆÓÎµ¤ÀñºĞ",tbProp={6,1,2400,1,0,0},nCount=1,nRate=2},
-			{szName="°ÙÄêÆßĞÇ²İ",tbProp={6,1,1674,1,0,0},nCount=1,nRate=0.5},
-			{szName="Ç§ÄêÆßĞÇ²İ",tbProp={6,1,1675,1,0,0},nCount=1,nRate=0.3},
-			{szName="ÍòÄêÎå²Ê»¨",tbProp={6,1,2265,1,0,0},nCount=1,nRate=0.2},
-			{szName="±±¶·´«¹¦Êõ",tbProp={6,1,1672,1,0,0},nCount=1,nRate=0.2},
-			{szName="ÔªË§Ãæ¾ß",tbProp={0,11,447,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
-			{szName="ÌìÉ½Ñ©Á«",tbProp={6,1,1431,1,0,0},nCount=1,nRate=0.2},
-			{szName="ÌØĞ§ÏÉ²İÂ¶",tbProp={6,1,1181,1,0,0},nCount=1,nRate=4},
-			{szName="´óÁ¦ÍèÀñ°ü",tbProp={6,1,2517,1,0,0},nCount=1,nRate=5},
-			{szName="·ÉËÙÍèÀñ°ü",tbProp={6,1,2520,1,0,0},nCount=1,nRate=5},
-			{szName="Ò»¼ÍÇ¬À¤·û",tbProp={6,1,2126,1,0,0},nCount=1,nRate=0.2},
-			{szName="»Æ½ğÖ®¹û",tbProp={6,1,907,1,0,0},nCount=1,nRate=1,nExpiredTime=10080},
-			{szName="ÎåĞĞÆæÊ¯",tbProp={6,1,2125,1,0,0},nCount=1,nRate=24.9},
+			{szName="H¶i long ch©u",tbProp={6,1,2115,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
+			{szName="Long HuyÕt Hoµn",tbProp={6,1,2117,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
+			{szName="ThÇn Hµnh Phï",tbProp={6,1,1266,1,0,0},nCount=1,nRate=1.5,nExpiredTime=14400},
+			{szName="CÈm nang thay ®æi trêi ®Êt",tbProp={6,1,1781,1,0,0},nCount=1,nRate=2,tbParam={60}},
+			{szName="M¹c B¾c TruyÒn Tèng LÖnh",tbProp={6,1,1448,1,0,0},nCount=1,nRate=2},
+			{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=2},
+			{szName="NÕn B¸t tr©n phóc nguyÖt",tbProp={6,1,1817,1,0,0},nCount=1,nRate=5},
+			{szName="HuyÒn Thiªn CÈm Nang",tbProp={6,1,2355,1,0,0},nCount=1,nRate=3},
+			{szName="Thiªn Long LÖnh",tbProp={6,1,2256,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
+			{szName="Tø H¶i Tiªu Diªu §¬n LÔ Hép",tbProp={6,1,2398,1,0,0},nCount=1,nRate=2},
+			{szName="Ngò Ch©u L¨ng Kh«ng §¬n LÔ Hép",tbProp={6,1,2399,1,0,0},nCount=1,nRate=2},
+			{szName="Cöu Thiªn V©n Du §¬n LÔ Hép",tbProp={6,1,2400,1,0,0},nCount=1,nRate=2},
+			{szName="B¸ch niªn thÊt tinh th¶o",tbProp={6,1,1674,1,0,0},nCount=1,nRate=0.5},
+			{szName="Thiªn niªn thÊt tinh th¶o",tbProp={6,1,1675,1,0,0},nCount=1,nRate=0.3},
+			{szName="V¹n Niªn Ngò Th¸i Hoa",tbProp={6,1,2265,1,0,0},nCount=1,nRate=0.2},
+			{szName="B¾c §Èu truyÒn c«ng thuËt",tbProp={6,1,1672,1,0,0},nCount=1,nRate=0.2},
+			{szName="MÆt n¹ Nguyªn so¸i",tbProp={0,11,447,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+			{szName="Thiªn S¬n TuyÕt Liªn",tbProp={6,1,1431,1,0,0},nCount=1,nRate=0.2},
+			{szName="Tiªn Th¶o Lé ®Æc biÖt",tbProp={6,1,1181,1,0,0},nCount=1,nRate=4},
+			{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=5},
+			{szName="Phi tèc hoµn lÔ bao",tbProp={6,1,2520,1,0,0},nCount=1,nRate=5},
+			{szName="NhÊt Kû Cµn Kh«n Phï",tbProp={6,1,2126,1,0,0},nCount=1,nRate=0.2},
+			{szName="Qu¶ Hoµng Kim",tbProp={6,1,907,1,0,0},nCount=1,nRate=1,nExpiredTime=10080},
+			{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=24.9},
 		}
-	tbAwardTemplet:GiveAwardByList(tbItemAward, "[VNG][Lunar Year 2011][ÌØ±ğôÕ×ÓÊ¹ÓÃitem½±Àø ]");	
+	tbAwardTemplet:GiveAwardByList(tbItemAward, "[VNG][Lunar Year 2011][ÌØ±ğB¸nh ch­ngÊ¹ÓÃitem½±Àø ]");	
 	return 1
 end
 function tbVNG_NLY2011_Itemhead:CheckBag(nCellCount)
@@ -252,6 +252,6 @@ function tbVNG_NLY2011_Itemhead:addContribution(nValue)
 		return
 	end
 	AddContribution(nValue)
-	Msg2Player(format("Äã»ñµÃ %d ¸öÈË¹±Ï×Öµ", nValue))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][Lunar Year 2011][ÌØ±ğôÕ×ÓÊ¹ÓÃÎïÆ·½±Àø]"..GetAccount().."\t"..GetName().."\t".."»ñµÃ¸öÈË¹±Ï×ÖµÊıÁ¿"..nValue)
+	Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm cèng hiÕn c¸ nh©n", nValue))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][Lunar Year 2011][ÌØ±ğB¸nh ch­ngÊ¹ÓÃÎïÆ·½±Àø]"..GetAccount().."\t"..GetName().."\t".."NhËn ®iÓm cèng hiÕn c¸ nh©n sè l­îng "..nValue)
 end

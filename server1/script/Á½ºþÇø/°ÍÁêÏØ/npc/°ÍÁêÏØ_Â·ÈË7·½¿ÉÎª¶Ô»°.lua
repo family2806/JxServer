@@ -9,17 +9,17 @@ function main(sel)
 i = random(0,2)
 
 if (i == 0) then
-Say("·½¿ÉÎª£ºÎÒÃÇ°ÍÁêÏØÊÇ¸öĞ¡µØ·½,µ«ÀÏ°ÙĞÕµÄÈÕ×Ó¹ıµÃµ¹Ò²°²ÀÖ¡£",0)
+Say("Ba L¨ng huyÖn cña chóng ta lµ mét vïng ®Êt nhá. Nh­ng cuéc sèng mäi ng­êi kh¸ an b×nh.",0)
 return
 end;
 
 if (i == 1) then
-Say("·½¿ÉÎª£ºÌìÍõ°ï¾ÍÊÇÎÒÃÇµÄÇàÌì,Èç¹ûÃ»ÓĞËûÃÇÌæÌìĞĞµÀ,ÄÇĞ©Ì°¹ÙÎÛÀô»¹²»ÖªÒªÔõÃ´Ñ¹Õ¥ÎÒÃÇÀÏ°ÙĞÕÄØ!",0)
+Say("·Thiªn V­¬ng Bang chİnh lµ cøu c¸nh cña chóng ta. NÕu kh«ng cã hä thÕ thiªn hµnh ®¹o th× chóng ta h¼n ®· bŞ bän tham quan nhòng nhiÔu ræi.",0)
 return
 end;
 
 if (i == 2) then
-Say("·½¿ÉÎª£ºÔÚÀÏ°ÙĞÕÑÛÀï,ÌìÍõ°ïÀï¸ö¸ö¶¼ÊÇ´óÓ¢ĞÛ,ÕæºÃºº!ÎÒÃÇÕâÀïÄêÇáĞ¡»ï×Ó¶¼Ïë¼ÓÈëÌìÍõ°ïÄØ!",0)
+Say("Trong m¾t cña b¸ t¸nh. Thiªn V­¬ng Bang ®iÒu lµ nh÷ng vŞ anh hïng h¶o h¸n. ThiÕu niªn trong vïng ®iÒu muèn gia nhËp Thiªn V­¬ng Bang.",0)
 end;
 
 end;

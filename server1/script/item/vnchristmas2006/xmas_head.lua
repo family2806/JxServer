@@ -10,12 +10,12 @@ TB_SNOWMAN_ID = {
 
 function snowman_green()
 	AddSkillState(440, 1, 1, 32400);
-	Msg2Player("您在30分钟获得双倍经验.");
+	Msg2Player("B筺 頲 nh﹏ i kinh nghi謒 trong 30 ph髏.");
 end;
 
 function snowman_red()
 	AddSkillState(440, 1, 1, 64800);
-	Msg2Player("您在60分钟获得双倍经验.");
+	Msg2Player("B筺 頲 nh﹏ i kinh nghi謒 trong 60 ph髏.");
 end;
 
 function snowman_normal()
@@ -24,14 +24,14 @@ function snowman_normal()
 	
 	if (nMemCount == 0 ) then
 		AddSkillState(440, 1, 1, 64800);
-		Msg2Player("您在60分钟获得双倍经验.");
+		Msg2Player("B筺 頲 nh﹏ i kinh nghi謒 trong 60 ph髏.");
 		return 0
 	end
 
 	for i = 1, nMemCount do
 		PlayerIndex = GetTeamMember( i );
 		AddSkillState(440, 1, 1, 64800);
-		Msg2Player("您在60分钟获得双倍经验.");
+		Msg2Player("B筺 頲 nh﹏ i kinh nghi謒 trong 60 ph髏.");
 	end;
 	
 	PlayerIndex = nPreservedPlayerIndex;

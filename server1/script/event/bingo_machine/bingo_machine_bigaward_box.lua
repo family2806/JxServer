@@ -6,11 +6,11 @@ Include("\\script\\lib\\common.lua")
 
 local tbItem = 
 {
-	["6,1,3060"] = {szName="»ìÔªÁéÂ¶", tbProp={6,1,2312,1,0,0}},
+	["6,1,3060"] = {szName="Hçn Nguyªn Linh Lé", tbProp={6,1,2312,1,0,0}},
 }
 
 local _GetItem = function (nCount)
-	AskClientForNumber("refining_box_getpotion", 0, nCount, "ÇëÊäÈëÒªÄÃ³öµÄÊıÁ¿")
+	AskClientForNumber("refining_box_getpotion", 0, nCount, "Xin mêi nhËp sè cÇn rót")
 end
 
 local _OpenBox = function (nPlayerIndex, szName, nCount)
@@ -26,7 +26,7 @@ function main(nItemIndex)
 	local nCount = GetItemParam(nItemIndex, 1);
 	
 	if nCount == 0 then
-		Say("ÒÑÁìÈ¡ÀïÃæËùÓĞµÄ»ìÔªÁéÂ¶£¬¿ÉÒÔÈ¡Ïû.", 0)
+		Say("§· nhËn hÕt Hçn Nguyªn Linh Lé bªn trong, cã thÓ hñy ®i.", 0)
 		return 0
 	end
 	
@@ -34,7 +34,7 @@ function main(nItemIndex)
 	if GetFightState() == 1 then
 		tbProgressBar:OpenByConfig(12, %_OpenBox, {PlayerIndex, GetName(), nCount})
 	else
-		AskClientForNumber("refining_box_getpotion", 0,nCount, "ÇëÊäÈëÒªÄÃ×ßµÄÊıÁ¿")
+		AskClientForNumber("refining_box_getpotion", 0,nCount, "Xin mêi nhËp sè cÇn rót")
 	end
 	
 	return 1
@@ -66,7 +66,7 @@ function refining_box_getpotion(nPickCount)
 		local tbPotion = clone(%tbItem[szItemId]);
 		tbPotion.nCount = nPickCount;
 		tbPotion.nBindState = nBindState;
-		if tbAwardTemplet:GiveAwardByList(tbPotion, "»ìÔªÁéÂ¶") == 1 then
+		if tbAwardTemplet:GiveAwardByList(tbPotion, "Hçn Nguyªn Linh Lé") == 1 then
 			nCount = nCount - nPickCount
 			if nCount <= 0 then
 				RemoveItemByIndex(nItemIndex)
@@ -77,12 +77,12 @@ function refining_box_getpotion(nPickCount)
 			end
 		end
 	else
-		print("ÎïÆ·²»ÔÚÈËÎïÉíÉÏ")
+		print("VËt phÈm kh«ng ë trªn ng­êi")
 	end
 end
 
 function GetDesc(nItemIndex)
 	local nCount= GetItemParam(nItemIndex, 1);
 
-	return format("»¹Ê£:<color=yellow>%d<color>", nCount)
+	return format("Cßn d­:  <color=yellow>%d<color>", nCount)
 end

@@ -20,25 +20,25 @@ local curCamp = nt_getCamp()
 			if ( curCamp == 0 ) then
 				AddItem(0,10,2,1,1,1)  --Ôö¼Ó20¼¶Âí
 				AddGoldItem(0,184) --Ôö¼ÓÒ»Ë«20ÅÜµÄĞ¬×Ó
-				Msg2Player("Äã»ñµÃÁËÒ»Æ¥20¼¶µÄ¿¥ÂíºÍÒ»Ë«ÅÜËÙĞ¬×Ó¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 con tuÊn m· cÊp 20 vµ 1 ®«i giµy tèc ®é")
 			end
 				nt_setTask(1001,60)
 		elseif ( Uworld1001 == 120 ) then
 			if ( curCamp == 0 ) then
 				AddGoldItem(0,177)  --Ôö¼ÓÀ¶Ã±×Ó
-				Msg2Player("Äã»ñµÃÁËÒ»¶¥¾«ÖÆµÄÃ±×Ó¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 chiÕc mò.")
 			end
 				nt_setTask(1001,130)
 		elseif ( Uworld1001 == 190 ) then
 			if ( curCamp == 0 ) then
 				ClearMagicPoint()  --Ôö¼Ó40¼¶Ê±Ï´µãµÄ¹¦ÄÜ
-				Msg2Player("Äã»ñµÃÁËÒ»´ÎÃâ·ÑÏ´¼¼ÄÜµãµÄ»ú»á¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 c¬ héi tÈy ®iÓm kü n¨ng miÔn phİ ")
 			end
 				nt_setTask(1001,200)
 		elseif ( Uworld1001 == 260 ) then
 			if ( curCamp == 0 ) then
 				AddItem(6,1,71,1,1,1)  --Ôö¼ÓÒ»¸öÏÉ²İÂ¶
-				Msg2Player("Äã»ñµÃÁËÒ»¸öÕä¹óµÄÏÉ²İÂ¶¡£")	
+				Msg2Player("B¹n nhËn ®­îc 1 b×nh Tiªn Th¶o Lé ")	
 			end	
 				nt_setTask(1001,270)
 		elseif ( Uworld1001 == 320 )  or ( Uworld1002 == 310 ) or ( Uworld1003 == 430 ) then  
@@ -69,8 +69,8 @@ local curCamp = nt_getCamp()
 					elseif ( Uworld1003 == 430 ) then
 						nt_setTask(1003,1000)
 					end
-					Msg2Player("Äã»ñµÃÁËÒ»¼ş¾øÊÀµÄ±¦Æ÷¡£")	
-					WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."ÔÚ×öÖ÷ÏßÈÎÎñÊ±µÃµ½ÁË»Æ½ğ×°±¸Ò»¼ş.")	
+					Msg2Player("B¹n nhËn ®­îc 1 mãn b¶o khİ ")	
+					WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."NhËn ®­îc 1 bé trang bŞ Hoµng Kim sau khi hoµn thµnh nhiÖm vô chİnh tuyÕn")	
 		end
 end
 
@@ -84,25 +84,25 @@ local curCamp = nt_getCamp()
 			if ( curCamp == 1 ) then
 				AddItem(0,10,2,1,1,1)  --Ôö¼Ó20¼¶Âí
 				AddGoldItem(0,184) --Ôö¼ÓÒ»Ë«20ÅÜµÄĞ¬×Ó
-				Msg2Player("Äã»ñµÃÁËÒ»Æ¥20¼¶µÄ¿¥ÂíºÍÒ»Ë«ÅÜËÙĞ¬×Ó¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 con tuÊn m· cÊp 20 vµ 1 ®«i giµy tèc ®é")
 			end
 			nt_setTask(1002,60)
 		elseif ( Uworld1002 == 100 ) then
 			if ( curCamp == 1 ) then
 				AddGoldItem(0,177)  --Ôö¼ÓÀ¶Ã±×Ó
-				Msg2Player("Äã»ñµÃÁËÒ»¶¥¾«ÖÆµÄÃ±×Ó¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 chiÕc mò.")
 			end
 			nt_setTask(1002,110)
 		elseif ( Uworld1002 == 170 )  then
 			if ( curCamp == 1 ) then
 				ClearMagicPoint()  --Ôö¼Ó40¼¶Ê±Ï´µãµÄ¹¦ÄÜ
-				Msg2Player("Äã»ñµÃÁËÒ»´ÎÃâ·ÑÏ´¼¼ÄÜµãµÄ»ú»á¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 c¬ héi tÈy ®iÓm kü n¨ng miÔn phİ ")
 			end
 			nt_setTask(1002,180)
 		elseif  ( Uworld1002 == 230 ) then
 			if ( curCamp == 1 ) then
 				AddItem(6,1,71,1,1,1)  --Ôö¼ÓÒ»¸öÏÉ²İÂ¶
-				Msg2Player("Äã»ñµÃÁËÒ»¸öÕä¹óµÄÏÉ²İÂ¶¡£")
+				Msg2Player("B¹n nhËn ®­îc 1 b×nh Tiªn Th¶o Lé ")
 			end
 			nt_setTask(1002,240)		
 		end

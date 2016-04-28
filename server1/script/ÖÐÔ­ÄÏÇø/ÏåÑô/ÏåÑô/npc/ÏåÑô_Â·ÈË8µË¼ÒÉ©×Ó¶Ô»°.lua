@@ -6,22 +6,22 @@
 function main(sel)
 	UTask_wd = GetTask(5);
 	if (UTask_wd == 50*256+50) then 
-		Talk(3, "select", "µË¼ÒÉ©×Ó£ºÎİÀïÒÑ¾­¿ì½Ò²»¿ª¹øÁË£¬Ğ¡ØóÌìÌì½Ğ¶ö£¬ÎÒÕâ¸ö×öÄïµÄ¼ûÁËÕæÊÇĞÄÌÛ¡£", "Íæ¼Ò£º´óÉ©£¬ÕâÀïÓĞÒ»ÍòÁ½Òø×Ó£¬Äã¿ìÄÃ×Å£¬Ö»ÒªÓĞÎÒÃÇÎäµ±µÜ×ÓÔÚ£¬ÄãÃÇÒÔºó¾Í²»»áÔÙ°¤¶öÊÜ¶³ÁË£¡", "µË¼ÒÉ©×Ó£º°¥Ñ½£¬ÎÒÕæÊÇÓöµ½»îÆĞÈøÀ²£¬ÎÒ²»ÊÇÔÚ×öÃÎ°É£¿ÏÖÔÚ»¹ÓĞÕâÑùµÄºÃÈË£¡")
+		Talk(3, "select", "Nhµ ta kh«ng cßn g× ®Ó ¨n, nh×n con nhá lu«n miªng kªu ®ãi, lµm mÑ ta thËt rÊt ®au lßng!", "§¹i tÈu, ta ®©y cã 1 v¹n l­îng. TÈu mau nhËn ®i! ChØ cÇn cã ®Ö tö Vâ §ang ta ®©y, c¸c ng­êi sî kh«ng ph¶i chŞu ®ãi l¹nh n÷a!", "¸i da,ta qu¶ lµ gÆp ®­îc bå t¸t sèng råi! Ta ®ang tØnh hay m¬ B©y giê cßn cã ng­êi tèt vËy sao?")
 	elseif (UTask_wd > 50*256+50) then
-		Talk(1,"","µË¼ÒÉ©×Ó£ºÎäµ±É½ÉÏµÄÄÇĞ©´óÏÀÕæÊÇÎÒÃÇÇî¿àÈË¼ÒµÄ¾ÈÃü»îÆĞÈø°¡£¬Òª²»ÊÇËûÃÇ³£³£½Ó¼Ã£¬ÎÒÃÇÄ¸×ÓÔç¾Í¶öËÀÁË£¡")
+		Talk(1,"","C¸c ®¹i hiÖp trªn Vâ §ang s¬n thËt lµ bå t¸t sèng cøu m¹ng bän ng­êi cïng kh?ta! NÕu h?kh«ng th­êng gióp ®ì, m?con ta ch¾c ®· chÕt ®ãi mÊt råi!")
 	else
-		Talk(1,"","µË¼ÒÉ©×Ó£ºÎİÀïÒÑ¾­¿ì½Ò²»¿ª¹øÁË£¬Ğ¡ØóÌìÌì½Ğ¶ö£¬ÎÒÕâ¸ö×öÄïµÄ¼ûÁËÕæÊÇĞÄÌÛ¡£")
+		Talk(1,"","Nhµ ta kh«ng cßn g× ®Ó ¨n, nh×n con nhá lu«n miªng kªu ®ãi, lµm mÑ ta thËt rÊt ®au lßng!")
 	end
 end;
 
 function select()
 	if (GetCash() >= 10000) then
 		Pay(10000)
-	Msg2Player("½«Ç¿µÁ´ò½ÙµÄÒ»ÍòÁ½Òø×ÓÈ«²¿ËÍ¸øÁËµË¼ÒÉ©×Ó¡£")
+	Msg2Player("§em toµn b?mét v¹n l¹ng b¹c c­íp ®­îc trao cho con d©u §Æng gia ")
 		SetTask(5, 50*256+80)
-		AddNote("½«Ç¿µÁ´ò½ÙµÄÒ»ÍòÁ½Òø×ÓÈ«²¿ËÍ¸øÁËµË¼ÒÉ©×Ó ")
+		AddNote("§em toµn b?mét v¹n l¹ng b¹c c­íp ®­îc trao cho con d©u §Æng gia ")
 	else
-		Talk(1,"","Íæ¼Ò£ºÔã¸â£¬ÄÇÒ»ÍòÁ½Òø×Ó±»ÎÒÓÃÁË£¬Õâ¿ÉÈçºÎÊÇºÃ£¿ÎÒµÃÔÙÈ¥³ïµãÒø×Ó")
-		AddNote("ÒøÁ½²»¹»£¬È¥×¬Ç®ÏÈ. ")
+		Talk(1,"","ThËt t? 1 v¹n l­îng ®ã ta ®· dïng mÊt råi, th?nµy th?lµm sao míi ph¶i ®©y?Ta ph¶i ®i kiÕm chót ng©n l­îng!")
+		AddNote("Ng©n l­îng kh«ng ®ñ, ®i kiÕm tiÒn tr­íc. ")
 	end
 end;

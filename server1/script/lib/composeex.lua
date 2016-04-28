@@ -36,7 +36,7 @@ INVENTORY_ROOM.room_distill		= 11	--¿óÊ¯ÌáÈ¡½çÃæ
 INVENTORY_ROOM.room_enchase		= 12	--ÏâÇ¶½çÃæ
 INVENTORY_ROOM.room_atlas		= 13	--»Æ½ðÍ¼Æ×
 INVENTORY_ROOM.room_partnerbag	= 14	-- Í¬°é±³°üÀ¸
-INVENTORY_ROOM.room_num			= 15	-- ¿Õ¼äÊýÁ¿	
+INVENTORY_ROOM.room_num			= 15	-- ¿Õ¼äSè l­îng	
 
 
 
@@ -52,7 +52,7 @@ function tbActivityCompose:_init(tbFormula, szLogTitle, nRoomType)
 
 	self.tbFormula = tbFormula
 	self.nRoomType = nRoomType or INVENTORY_ROOM.room_equipment
-	self.szLogTitle = szLogTitle or "Ä¬ÈÏºÏ³É"
+	self.szLogTitle = szLogTitle or "MÆc ®inh hîp thµnh"
 	
 end
 
@@ -260,7 +260,7 @@ function tbActivityCompose:ConsumeMaterial(tbMaterial, nConsumeCount, szLogTitle
 			if Pay(nConsumeJxb) == 0 then
 				return 0;
 			else
-				Msg2Player(format("ÐèÒª <color=yellow>%d<color> l­îng", nConsumeJxb))
+				Msg2Player(format("CÇn <color=yellow>%d<color> l­îng", nConsumeJxb))
 				self:ConsumeLog("Jxb "..nConsumeCount.." * "..tbItem.nJxb * tbItem.nCount, szLogTitle)
 			end
 		elseif tbItem.nTaskId then
@@ -269,7 +269,7 @@ function tbActivityCompose:ConsumeMaterial(tbMaterial, nConsumeCount, szLogTitle
 				return 0;
 			else
 				SetTask(tbItem.nTaskId, GetTask(tbItem.nTaskId) - nConsumeValue)
-				Msg2Player(format("ÖÆÔì<color=yellow>%d <color>%s", nConsumeValue, tbItem.szName))
+				Msg2Player(format("Chi tr¶ <color=yellow>%d <color>%s", nConsumeValue, tbItem.szName))
 				self:ConsumeLog("nTask "..nConsumeCount.." * "..tbItem.nCount, szLogTitle)
 			end
 		elseif tbItem.pConsume then
@@ -288,7 +288,7 @@ end
 --²ÎÊý£º²ÄÁÏËµÃ÷±í
 --·µ»Ø£ºÇé¿öÐÅÏ¢µÄ×Ö·û´®
 function tbActivityCompose:GetMaterialList(tbMaterial)
-	local szList = format("%-20s  %s","ÎïÆ· ","ÊýÁ¿")
+	local szList = format("%-20s  %s","vËt phÈm ","Sè l­îng")
 	local _, tbCount, tbMaxCount = self:CheckMaterial(tbMaterial, 1)
 	local i;
 	for i=1,getn(tbMaterial) do
@@ -299,7 +299,7 @@ function tbActivityCompose:GetMaterialList(tbMaterial)
 			szColor = "<color=red>"
 		end
 		if tbItem.nJxb then
-			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,"ÒøÁ½", szColor, tbCount[i], tbMaterial[i].nJxb * tbMaterial[i].nCount)
+			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,"Ng©n l­îng", szColor, tbCount[i], tbMaterial[i].nJxb * tbMaterial[i].nCount)
 		elseif tbItem.szName and tbItem.nCount then
 			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,tbMaterial[i].szName, szColor, tbCount[i], tbMaterial[i].nCount)
 		end
@@ -331,19 +331,19 @@ function tbActivityCompose:Compose(nComposeCount)
 	nFreeItemCellLimit = ceil(nFreeItemCellLimit * nComposeCount)
 	
 	if self.tbFormula.nWidth ~= 0 and self.tbFormula.nHeight ~= 0 and CountFreeRoomByWH(self.tbFormula.nWidth, self.tbFormula.nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("ÎªÈ·±£´óÏÀµÄ²Æ²ú°²È«£¬ÇëÁôÏÂ%d %dx%d×°±¸", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
 		return 0
 	end
 	
 	if self:CheckMaterial(tbMaterial, nComposeCount) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÔ­ÁÏ²»×ãÁË!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
 
 	if self:ConsumeMaterial(tbMaterial, nComposeCount, self.szLogTitle) ~= 1 then
 		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
-		Msg2Player("ÖÆÔìÊ§°Ü£¬Ê§È¥Ò»Ð©Ô­ÁÏ.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	if type(tbProduct) == "table" then
@@ -378,7 +378,7 @@ end
 
 function tbActivityCompose:GiveUIOk(nCount)
 	if nCount < getn(self.tbFormula.tbMaterial) then
-		return Talk(1, "", self.tbFormula.szFailMsg or "<color=red>´óÏÀËù´øÔ­ÁÏ²»¹»ÁË!<color>")
+		return Talk(1, "", self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>")
 	end
 	
 	self:Compose(1)
@@ -398,14 +398,14 @@ function tbActivityCompose:ComposeDailog(bIsAskNumber,nMaxCount)
 	
 	local szComposeTitle = self.tbFormula.szComposeTitle or format("§æi %s", tbProduct.szName)
 	
-	local szMsg = format("%s ÒªÇó: <enter>%s", szComposeTitle ,self:GetMaterialList(tbMaterial))
+	local szMsg = format("%s yªu cÇu: <enter>%s", szComposeTitle ,self:GetMaterialList(tbMaterial))
 	local tbOpt = {}
 	if bIsAskNumber == 1 then
-		tbOpt[1] = {"È·ÈÏ", self.AskNumber, {self, nMaxCount}}
+		tbOpt[1] = {"X¸c nhËn", self.AskNumber, {self, nMaxCount}}
 	else
-		tbOpt[1] = {"È·ÈÏ", self.Compose, {self, 1}}
+		tbOpt[1] = {"X¸c nhËn", self.Compose, {self, 1}}
 	end
-	tbOpt[2] = {"·ÅÆú"}
+	tbOpt[2] = {"Hñy bá "}
 	CreateNewSayEx(szMsg, tbOpt)
 end
 
@@ -426,11 +426,11 @@ function tbActivityCompose:AskNumber(nMaxCount)
 	end
 
 	if nMaxCount < 1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÔ­ÁÏ²»¹»ÁË!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 	else
 		
-		g_AskClientNumberEx(1, nMaxCount, "ÇëÊäÈëºÅÂë", {self.ComposeCountComfirm, {self,nMaxCount}} )
+		g_AskClientNumberEx(1, nMaxCount, "Xin mêi nhËp sè", {self.ComposeCountComfirm, {self,nMaxCount}} )
 	end
 end
 
@@ -438,7 +438,7 @@ function tbActivityCompose:ComposeCountComfirm(nMaxCount, nCount)
 --	print("nCount = " .. nCount)
 --	print("nMaxCount = " .. nMaxCount)
 	if nCount > nMaxCount then
-		Say(format("ÄãÊäÈëµÄºÏ³ÉÊýÁ¿³¬¹ýÁË<color=red>%d<color>, ÇëÔÙÊäÈë", nMaxCount))
+		Say(format("Ng­¬i nhËp sè l­îng hîp thµnh ®· v­ît qu¸<color=red>%d<color>, xin h·y nhËp l¹i", nMaxCount))
 		return 0
 	end
 	

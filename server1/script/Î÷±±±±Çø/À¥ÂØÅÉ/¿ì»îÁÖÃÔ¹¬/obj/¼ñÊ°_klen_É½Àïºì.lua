@@ -4,6 +4,6 @@
 function main()
 	SetPropState()
 	AddEventItem(117)
-	Msg2Player("ÕÒµ½É½Àïºì. ")
-	AddNote("ÕÒµ½É½Àïºì. ")
+	Msg2Player("T×m thÊy ®­îc s¬n Lı Hång. ")
+	AddNote("T×m thÊy ®­îc s¬n Lı Hång. ")
 end;

@@ -61,9 +61,9 @@ function YDBZ_fun_award_ydmibao(camp, nnpcway)
 	for nj = 1, 10 do
 		idx , pidx = GetNextPlayer(YDBZ_MISSION_MATCH, idx,camp );
 		if (pidx > 0 and nCount >= 1) then
-			local sMsg = format("´³¹ØµÚ%d",nnpcway)
+			local sMsg = format("V­ît qua ¶i thø %d",nnpcway)
 			G_ACTIVITY:OnMessage("YDBZguoguan", pidx, nnpcway);
-			-- ¹ý¹Ø2,4,6,8,10 ½«»ñµÃ1¸öÑ×µÛ±¦Ïä®Õ - Modified - by AnhHH 20110724
+			-- ¹ý¹Ø2,4,6,8,10 ½«»ñµÃ1c¸iÑ×µÛ±¦Ïä®Õ - Modified - by AnhHH 20110724
 			if (mod(nnpcway,2) == 0) then
 				CallPlayerFunction(pidx,YDBZ_fun_award_byCount, nCount, sMsg)
 			end
@@ -94,21 +94,21 @@ function YDBZ_fun_award_exp(camp,ns)
 					local szdstr = ""
 					if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
 						 nexp = YDBZ_AWARD_EXP * 2 
-						 szdstr = "<color=yellow>[ÓÐÐ§Ñ×µÛÁî]<color>"
+						 szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 					end
 					nexp = YDBZ_checkdoubleexp(nexp)
 					AddOwnExp(nexp)
-					Msg2Player(format("%s ¹§Ï²´³¹ýÒ»¹Ø£¬»ñµÃ<color=yellow>%s<color> ¾­Ñé",szdstr,nexp))
+					Msg2Player(format("%s chóc mõng v­ît ¶i thø nhÊt, thu ®­îc <color=yellow>%s<color> kinh nghiÖm",szdstr,nexp))
 				elseif ns == 2 then
 					local nexp = YDBZ_Faninl_AWARD_EXP
 					local szdstr = ""
 					if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
 						 nexp = YDBZ_Faninl_AWARD_EXP * 2 
-						 szdstr = "<color=yellow>[ÓÐÐ§Ñ×µÛÁî]<color>"
+						 szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 					end
 					nexp = YDBZ_checkdoubleexp(nexp)
 					AddOwnExp(nexp)
-					Msg2Player(format("%s ¹§Ï²×é¶Ó³É¹¦É±ËÀÒ»¸öÓÐÅ­ÆøµÄboss »ñµÃ<color=yellow>%s<color> ¾­Ñé",szdstr,nexp))					
+					Msg2Player(format("%s chóc mõng tæ ®éi ®· giÕt thµnh c«ng 1 boss cã né khÝ, thu ®­îc <color=yellow>%s<color> kinh nghiÖm",szdstr,nexp))					
 				end
 		end
 		if (idx == 0) then
@@ -150,7 +150,7 @@ function YDBZ_savepaihang(camp)
 end
 
 -- todo
--- ½«40¸öÑ×µÛÃØ±¦Ëæ»ú·ÖÅä£¬·¢¸ø¶ÓÎéÀïµÄÈË
+-- ½«40c¸iÑ×µÛÃØ±¦Ëæ»ú·ÖÅä£¬·¢¸ø¶ÓÎéÀïµÄÈË
 function YDBZ_award_finalboss_ex(camp, nTotalCount)
 	local nNum = {}
 	local nSize = GetMSPlayerCount(YDBZ_MISSION_MATCH, camp)
@@ -162,12 +162,12 @@ function YDBZ_award_finalboss_ex(camp, nTotalCount)
 		local p = random(1,nSize)
 		nNum[p] = nNum[p] + 1
 	end
-	print("¶ÓÎéÈËÊý =" .. nSize)
+	print("Nh©n Sè ®éi ngò =" .. nSize)
 	local idx, pidx
 	for nj = 1, nSize do
 		idx , pidx = GetNextPlayer(YDBZ_MISSION_MATCH, idx, camp );
 		if (pidx > 0 and nNum[nj] >= 1) then
-			local szMsg = format("´³¹ý×îºó¹Ø")
+			local szMsg = format("V­ît qua ¶i cuèi cïng")
 			print(format("pidx = %d, nNum[nj] = %d", pidx, nNum[nj]))
 			CallPlayerFunction(pidx,YDBZ_fun_award_byCount, nNum[nj], szMsg)
 		end
@@ -194,7 +194,7 @@ function YDBZ_award_finalboss(camp)
 			tbAwardTemplet:Give(tbAward, 1, {"YDBZ", szLogTitle})
 			nexp = YDBZ_checkdoubleexp(20e6)
 			AddOwnExp(nexp)
-			Msg2Player(format("<color=yellow>¹§Ï²Íê³ÉÑ×µÛ´³¹Ø, »ñµÃ<color>%s ¾­Ñé<color=yellow>.<color>",nexp))
+			Msg2Player(format("<color=yellow>Chóc mõng hoµn thµnh v­ît ¶i viªm ®Õ, thu ®­îc <color>%s kinh nghiÖm<color=yellow>.<color>",nexp))
 		end
 		if (idx == 0) then
 			break;
@@ -225,7 +225,7 @@ function YDBZ_award_finalboss(camp)
 --							end
 --							for nx =1 ,ndoubel do
 --								local nidx = AddItem(ny[3][1], ny[3][2], ny[3][3], ny[3][4], ny[3][5], ny[3][6]);
---								YDBZ_sdl_writeLog("´©¹ýÑ×µÛ±¦²Ø¹Ø¿Ú",format("´³¹ØÊ±»ñµÃ1 %s",GetItemName(nidx)))
+--								YDBZ_sdl_writeLog("V­ît ¶i b¶o tµng viªm ®Õ",format("Lóc v­ît ¶i thu ®­îc 1 %s",GetItemName(nidx)))
 --							end
 --							ncount = ncount + ndoubel
 --							--tbawarditem[nx]={}
@@ -239,9 +239,9 @@ function YDBZ_award_finalboss(camp)
 --					end
 --					
 --				end
---				local szstr = ", <color=yellow> »ñµÃ<color>"
+--				local szstr = ", <color=yellow> thu ®­îc <color>"
 --				for nx,ny in tbawarditem do
---					szstr = szstr .. ny[2] .."¸ö"..ny[1]
+--					szstr = szstr .. ny[2] .."c¸i"..ny[1]
 --					if nx ~= getn(tbawarditem) then
 --						szstr = szstr .."<color=yellow>, <color>" 
 --					end
@@ -250,12 +250,12 @@ function YDBZ_award_finalboss(camp)
 --				local szdstr = ""
 --				if YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,1) == 1 then
 --							nexp = YDBZ_KILLLASTBOSS_EXP * 2 
---							szdstr = "<color=yellow>[ÓÐÐ§Ñ×µÛÁî]<color>"
+--							szdstr = "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 --				end
 		--		nexp = YDBZ_checkdoubleexp(nexp)
 --				AddOwnExp(nexp)
---				Msg2Player(format("%s<color=yellow>¹§Ï²Íê³ÉÑ×µÛ´³¹Ø, »ñµÃ<color>%s ¾­Ñé %s<color=yellow>.<color>",szdstr,nexp,szstr))
---				Msg2Player(format("¹§Ï²¸÷Î»´óÏÀ³É¹¦´³¹ØÑ×µÛ, <color=yellow>30 Ãë<color>ºó½«ÍÆ³ö±¦²ØµØÍ¼."))
+--				Msg2Player(format("%s<color=yellow>chóc mõng hoµn thµnh v­ît ¶i viªm ®Õ, thu ®­îc <color>%s kinh nghiÖm %s<color=yellow>.<color>",szdstr,nexp,szstr))
+--				Msg2Player(format("Chóc mõng c¸c vÞ ®¹i hiÖp v­ît ¶i Viªm §Õ thµnh c«ng, <color=yellow>30 gi©y<color> sau sÏ ®Èy ra khái b¶n ®å b¶o tµng."))
 --		end
 --		if (idx == 0) then
 --			break;
@@ -264,10 +264,10 @@ function YDBZ_award_finalboss(camp)
 	SetMissionV(YDBZ_STATE_SIGN,4)
 	local pname = GetMissionS(camp)
 	local nmapid = SubWorldIdx2ID(SubWorld)
-	broadcast(format("¹§Ï²×é¶Ó %s ÒÑ³É¹¦´³¹ØÑ×µÛ, »ñµÃÎÞ±È·áºñ½±Àø",pname))
+	broadcast(format("Chóc mõng tæ ®éi %s ®· v­ît ¶i viªm ®Õ thµnh c«ng, thu ®­îc phÇn th­ëng v« cïng quý gi¸.",pname))
 	local ntime = YDBZ_savepaihang(camp)
 	--print(pname,nplaynum,nmapid,camp,ntime)
-	local szstr = format("[´³¹ØÑ×µÛ±¦²Ø] Ê±¼ä%s, Õ½¶Ó%s »¹Ê£ÈËÊý%s, µØÍ¼ºÅÊý %s, ÕóÓªÎª%s É±×îºóboss£¬Ê£ÓàÊ±¼ä%s Ãë",GetLocalDate("%y-%m-%d %H:%M:%S"),pname,nplaynum,nmapid,camp,ntime) 
+	local szstr = format("[V­ît ¶i b¶o tµng viªm ®Õ] thêi gian %s, chiÕn ®éi %s cßn l¹i sè ng­êi %s, sè hiÖu b¶n ®å %s, trËn doanh lµ %s giÕt BOSS cuèi, d­ thêi gian %s gi©y",GetLocalDate("%y-%m-%d %H:%M:%S"),pname,nplaynum,nmapid,camp,ntime) 
 	WriteLog(szstr)
 --	PlayerIndex = oldplayer
 	StopMissionTimer(YDBZ_MISSION_MATCH, YDBZ_TIMER_MATCH);	
@@ -278,7 +278,7 @@ end
 --1	1 -10 AÐ¡¹ØÐ¡Boss
 --1 11-20 BÐ¡¹ØÐ¡Boss
 --1 21-30 CÐ¡¹ØÐ¡Boss
---1 40		 Õù¶áµØ10¸öboss
+--1 40		 Õù¶áµØ10c¸iboss
 --1 50		 ×îÖÕ´óboss
 --2 1-10		 A¸÷Ð¡¹ØÐ¡¹Ö
 --2 11-20		 B¸÷Ð¡¹ØÐ¡¹Ö
@@ -327,7 +327,7 @@ function OnDeath(index)
 				SetMissionV(YDBZ_NPC_WAY[nteam],npcway)
 			if npcway == 10 then
 				if GetMissionV(YDNZ_STATE_SIGN) ~= 0 then
-					Msg2MSAll(YDBZ_MISSION_MATCH,"ÒÑ½øÈëÕù¶á½×¶Î£¬´óÃÅÒÑ¹Ø.")
+					Msg2MSAll(YDBZ_MISSION_MATCH,"§· b­íc vßa giai ®o¹n tranh ®o¹t, cöa ¶i ®· ®ãng.")
 					return 
 					end
 				end
@@ -339,9 +339,9 @@ function OnDeath(index)
 			YDBZ_fun_award_ydmibao(nteam,npcway)	-- 2011.03.23 Ñ×µÛµ÷Õû
 			YDBZ_award(index,2,PlayerIndex)
 			local teamname = GetMissionS(YDBZ_TEAM_NAME[nteam])
-			local szstr = format("<color=yellow>%s<color>ÒÑ³É¹¦´³¹Ø<color=yellow>´Î%s<color>.",teamname,npcway)
+			local szstr = format("<color=yellow>%s<color>®· thµnh c«ng v­ît ¶i <color=yellow>thø %s<color>.",teamname,npcway)
 			if npcway == 10 then
-				szstr = szstr .. "½øÈëÉ½¶´×îÉî´¦."	
+				szstr = szstr .. "TiÕn vµo n¬i s©u nhÊt cña s¬n ®éng."	
 				else				
 					local file = YDBZ_map_posfiles[1][nteam][npcway+1]
 					YDBZ_add_npc(file,nteam,npcway+1,1)
@@ -353,14 +353,14 @@ function OnDeath(index)
 				SetMissionV(YDBZ_NPC_COUNT[nteam], nCount-1) 
 			end
 			
-	elseif nband == 40 then							--Õù¶áµØ10¸öboss
+	elseif nband == 40 then							--Õù¶áµØ10c¸iboss
 			npccount = GetMissionV(YDBZ_NPC_BOSS_COUNT)
 			local nteam = GetCurCamp()
 			SetMissionV(YDBZ_NPC_BOSS_COUNT,npccount-1)
 			YDBZ_award(index,3,PlayerIndex)
 			YDBZ_fun_award_exp(nteam,2)
 			if npccount-1 == 0 then
-				Msg2MSAll(YDBZ_MISSION_MATCH,"Ñ×µÛ±¦²Ø´³¹ØÒÑ½øÈë<color=yellow>Õù¶á½×¶Î<color>, <color=yellow>10 Ãë<color> ºó½«ÕÙ»½ËùÓÐ×é¶Ó³ÉÔ±½øÈëÕù¶áµØÍ¼£¬Ö»ÓÐ<color=yellow>1 ×é¶Ó<color> ²ÅÄÜÕÙ»½×îºóµÄboss.")
+				Msg2MSAll(YDBZ_MISSION_MATCH,"V­ît ¶i b¶o tµng viªm ®Õ ®· tiÕn vµo <color=yellow>giai ®o¹n tranh ®o¹t<color>, <color=yellow>10 gi©y<color> sau sÏ triÖu gäi tÊt c¶ thµnh viªn trong tæ ®éi vµo b¶n ®å tranh ®o¹t, chØ cßn <color=yellow>1 tæ ®éi<color> míi cã thÓ triÖu gäi BOSS cuèi.")
 				SetMissionV(YDBZ_STATE_SIGN,1)
 				for i=1,3 do 
 					local trapfile = YDBZ_mapfile_trap[i][4].."trap10.txt"

@@ -1,12 +1,12 @@
---2¿ÅÐÇºì±¦Ê¯+2¿ÅÂÌË®¾§+2¿Å×ÏË®¾§+2¿ÅÀ¶Ë®¾§+1¸öÌúÅ£ÀÉÑÀÅå
+--2¿ÅTinh Hång B¶o Th¹ch+2¿ÅLôc Thñy Tinh+2¿ÅTö Thñy Tinh+2¿ÅLam Thñy Tinh+1¸öThiÕt Ng­u Lang Nha Béi
 Include ("\\script\\lib\\common.lua")
 jiefang_0804_BossDrop = 
 {
-	{szName="ÐÇºì±¦Ê¯", tbProp={4, 353, 1, 1, 0, 0}, nCount = 2},
-	{szName="ÂÌË®¾§", tbProp={4, 240, 1, 1, 0, 0}, nCount = 2},
-	{szName="×ÏË®¾§", tbProp={4, 239, 1, 1, 0, 0}, nCount = 2},
-	{szName="À¶Ë®¾§", tbProp={4, 238, 1, 1, 0, 0}, nCount = 2},
-	{szName="ÌúÅ£ÀÉÑÀÅå", tbProp={6, 1, 1733, 1, 0, 0}},
+	{szName="Tinh Hång B¶o Th¹ch", tbProp={4, 353, 1, 1, 0, 0}, nCount = 2},
+	{szName="Lôc Thñy Tinh", tbProp={4, 240, 1, 1, 0, 0}, nCount = 2},
+	{szName="Tö Thñy Tinh", tbProp={4, 239, 1, 1, 0, 0}, nCount = 2},
+	{szName="Lam Thñy Tinh", tbProp={4, 238, 1, 1, 0, 0}, nCount = 2},
+	{szName="ThiÕt Ng­u Lang Nha Béi", tbProp={6, 1, 1733, 1, 0, 0}},
 
 }
 
@@ -39,6 +39,6 @@ end
 
 function OnDeath(nNpcIndex)
 	for i = 1, getn(jiefang_0804_BossDrop) do
-		jiefang_0804_NpcDropItem(nNpcIndex, jiefang_0804_BossDrop[i], "ÌúÅ£´óÍõµÄÎïÆ·")
+		jiefang_0804_NpcDropItem(nNpcIndex, jiefang_0804_BossDrop[i], "VËt phÈm cña ThiÕt ng­u ®¹i v­¬ng")
 	end
 end

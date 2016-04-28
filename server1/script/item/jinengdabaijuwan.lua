@@ -5,12 +5,12 @@ Include("\\script\\global\\baijuwanhead.lua")
 function main(itemindex)
 	SetTaskTemp(AEXP_TEMPOFFLINETASKID, itemindex)
 	str=
-	{	"<#>Ò»¿Å¼¼ÄÜ´ó°×¾ÔÍè£¬Ê¹ÓÃºó¿É»ñµÃ<color=red>8Ğ¡Ê±<color>µÄÀëÏßÍĞ¹ÜÊ±¼ä¡£",
-		"<#>Ê¹ÓÃ¼¼ÄÜ´ó°×¾ÔÍè/use",
-		"<#>ÎÒÔÙ¿¼ÂÇ¿¼ÂÇ/cancel",
-		"<#>²éÑ¯ÎÒÊ£ÓàµÄÀëÏßÍĞ¹ÜÊ±¼ä/get_left_time",
-		"<#>Ñ¡ÔñÀëÏßÍĞ¹Ü¼¼ÄÜ/#selectofflineskill('cancel')",
-		"<#>¹ØÓÚÀëÏßÍĞ¹ÜµÄÏêÏ¸½éÉÜ/help"
+	{	"<#>§¹i B¹ch C©u Hoµn kü n¨ng. Sö dông sÏ nhËn ®­îc <color=red>8 giê<color> ñy th¸c. HiÖu qu¶ sö dông gÉp r­ìi so víi B¹ch C©u Hoµn kü n¨ng th­êng.",
+		"<#> Sö dông §¹i B¹ch C©u hoµn (kü n¨ng) /use",
+		"<#> §Ó ta suy nghÜ l¹i!/cancel",
+		"<#> Tra xem thêi gian treo m¸y cßn l¹i cña ta/get_left_time",
+		"<#> Chän kü n¨ng rêi m¹ng vÉn treo m¸y/#selectofflineskill('cancel')",
+		"<#> Giíi thiÖu chi tiÕt vÒ c¸ch ch¬i treo m¸y/help"
 	};
 	Say(str[1], 4,str[2],str[3],str[4],str[5]);
 	return 1
@@ -25,7 +25,7 @@ function use()
 
 	if ((sparetime + AEXP_SKILLCHANGE) > AEXP_MAXTIME) then
 		local hours, minutes = getFrame2MinAndSec(sparetime);
-		Say("ÄãÄ¿Ç°µÄÀëÏß¼¼ÄÜÍĞ¹ÜÊ£ÓàÊ±¼äÎª <color=red>"..hours.."<color>Ğ¡Ê±<color=red>"..minutes.."<color>·ÖÖÓ£¬¶øÄãµÄÀëÏß¼¼ÄÜÍĞ¹ÜÊ±¼äÀÛ¼Æ²»¿ÉÒÔ³¬¹ı<color=red>10000Ğ¡Ê±<color>£¬ÇëÄã¹ıÒ»¶ÎÊ±¼äÔÙÊ¹ÓÃ¼¼ÄÜ´ó°×¾ÔÍè¡£", 0);
+		Say("Thêi gian rêi m¹ng vÉn treo m¸y cßn l¹i cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color>phót, thèng kª thêi gian rêi m¹ng vÉn treo m¸y cña b¹n kh«ng ®­îc v­ît qu¸ <color=red>10000giê<color>, mét thêi gian sau mêi b¹n sö dông l¹i §¹i B¹ch C©u hoµn (kü n¨ng) .", 0);
     else	
 		itemindex = GetTaskTemp(AEXP_TEMPOFFLINETASKID);
 		if (IsMyItem(itemindex) ~= 1) then
@@ -38,10 +38,10 @@ function use()
 			ntotaltime = sparetime + AEXP_SKILLCHANGE;
 			SetTask(AEXP_SKILL_TIME_TASKID, ntotaltime);
 			local hours, minutes = getFrame2MinAndSec(ntotaltime);
-			Say("Ê¹ÓÃ³É¹¦£¬ÄãÊ£ÓàµÄÀëÏß¼¼ÄÜÍĞ¹ÜÊ±¼äÎª <color=red>"..hours.."<color>Ğ¡Ê±<color=red>"..minutes.."<color>·ÖÖÓ",0);
+			Say("Thµnh c«ng sö dông, thêi gian rêi m¹ng vÉn treo m¸y cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót",0);
 			writeUseBaiJulog("skillofflineitem_normal", hours, minutes);
 		else
-			Say("Ã»ÓĞ¼¼ÄÜ´ó°×¾ÔÍè¿ÉÒÔÊ¹ÓÃ", 0);	
+			Say("Kh«ng cã §¹i B¹ch C©u hoµn (kü n¨ng) cã thÓ sö dông", 0);	
 		end
 	end
 end

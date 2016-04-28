@@ -6,7 +6,7 @@ Include("\\script\\missions\\dragonboat\\include.lua")
 
 -- Æô¶¯±ÈÈü¶¨Ê±Æ÷
 function start_match_timer()
-	-- 10·ÖÖÓºóÆô¶¯±ÈÈüÈÎÎñ
+	-- 10phótºóÆô¶¯±ÈÈüÈÎÎñ
 	StartMissionTimer(MISSION_MATCH, TIMER_MATCH, LIMIT_SIGNUP * 18);
 end
 
@@ -30,7 +30,7 @@ function start_signup()
 	SetMissionS(VARS_TEAM_NAME, "");
 	-- Í¨¸æÁúÖÛ±ÈÈü±¨Ãû¿ªÊ¼
 	local min = floor(LIMIT_SIGNUP / 60);
-	broadcast("<#> ¶ËÎç½ÚÈüÁúÖÛ±ÈÈü¿ªÊ¼±¨Ãû£¬Çë´ó¼Ò¿ìµ½Àñ¹Ù´¦±¨Ãû£¬Ğ¡×éÓÉ¶Ó³¤±¨Ãû£¬±¨ÃûÊ±¼äÎª" .. min .. "·ÖÖÓ");
+	broadcast("<#> Ho¹t ®éng ®ua thuyÒn rång TÕt §oan Ngä ®· b¾t ®Çu b¸o danh. Mêi mäi ng­êi nhanh ch©n ®Õn LÔ quan b¸o danh, ®éi nhãm do ®éi tr­ëng b¸o danh, thêi gian b¸o danh lµ " .. min .. "phót");
 end
 
 function InitMission()
@@ -60,7 +60,7 @@ function OnLeave(index)
 	SetTask(1505, 0)
 	DisabledUseTownP(0)
 	
-	str = GetName().."Àë¿ªÁúÖÛ"
+	str = GetName().."Rêi khái thuyÒn rång nµy"
 	Msg2MSAll(MISSION_MATCH,str);
 	
 	PlayerIndex = old_index;
@@ -79,7 +79,7 @@ function JoinMission(RoleIndex, camp)
 	SetFightState(1);
 	SetLogoutRV(1);
 	SetPunish(0);
-	str = GetName().."¼ÓÈë¸ÃÁúÖÛ"
+	str = GetName().."Thªm vµo thuyÒn rång nµy"
 	local sf_mapid = SubWorldIdx2ID(SubWorld)
 	NewWorld(sf_mapid, BOAT_POSX,BOAT_POSY);
 	SetCreateTeam(0);

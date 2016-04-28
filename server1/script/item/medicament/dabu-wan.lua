@@ -7,7 +7,7 @@ end
 function main(itemIdx)
 	local mapid,_,_ = GetWorldPos()
 	if(checkSJMaps(mapid)) then
-		Msg2Player("ËÎ½ğÕ½³¡ÄÚ²»ÄÜ·şÓÃ´ó²¹Íè¡£")
+		Msg2Player("Trong chiÕn tr­êng Tèng Kim kh«ng thÓ sö dông §¹i B¶o hoµn.")
 		return 1
 	end
 	local _,_,detail = GetItemProp(itemIdx)
@@ -89,58 +89,58 @@ end
 function GetDesc(itemIdx)
 	local _,_,detail = GetItemProp(itemIdx)
 	if(detail == 218) then --¹¥ËÙÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦ÏµÎä¹¦¹¥»÷ËÙ¶È£ºÔö¼Ó30%\nÄÚ¹¦ÏµÎä¹¦¹¥»÷ËÙ¶È£ºÔö¼Ó30%<color>"
+		return "<color=blue>Trong 3 phót:\n Tèc ®é xuÊt chiªu ngo¹i c«ng: t¨ng 30%\n Tèc ®é xuÊt chiªunéi c«ng: T¨ng 30%<color>"
 	end
 	if(detail == 219) then --ÅÜËÙÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÒÆ¶¯ËÙ¶È£ºÔö¼Ó30%<color>"
+		return "<color=blue>Trong 3 phót:\n Tèc ®é di chuyÓn: T¨ng 30%<color>"
 	end
 	if(detail == 220) then --ÆÕ·ÀÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÆÕ·À£ºÔö¼Ó40%<color>"
+		return "<color=blue>Trong 3 phót:\n Phßng vËt lı: T¨ng 40%<color>"
 	end
 	if(detail == 221) then --¶¾·ÀÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\n¶¾·À£ºÔö¼Ó40%<color>"
+		return "<color=blue>Trong 3 phót:\n Kh¸ng ®éc: T¨ng 40%<color>"
 	end
 	if(detail == 222) then --±ù·ÀÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\n±ù·À£ºÔö¼Ó40%<color>"
+		return "<color=blue>Trong 3 phót:\n Kh¸ng b¨ng: T¨ng 40%<color>"
 	end
 	if(detail == 223) then --»ğ·ÀÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\n»ğ·À£ºÔö¼Ó40%<color>"
+		return "<color=blue>Trong 3 phót:\n Kh¸ng háa: T¨ng 40%<color>"
 	end
 	if(detail == 224) then --À×·ÀÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÀ×·À£ºÔö¼Ó40%<color>"
+		return "<color=blue>Trong 3 phót:\n Kh¸ng l«i: T¨ng 40%<color>"
 	end
 	if(detail == 225) then --¼õÉËÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÊÜÉË¶¯×÷Ê±¼ä£º¼õÉÙ40%<color>"
+		return "<color=blue>Trong 3 phót:\n Thêi gian bŞ th­¬ng: Gi¶m 40%<color>"
 	end
 	if(detail == 226) then --¼õÔÎÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÑ£ÔÎÊ±¼ä£º¼õÉÙ40%<color>"
+		return "<color=blue>Trong 3 phót:\n Thêi gian cho¸ng: Gi¶m 40%<color>"
 	end
 	if(detail == 227) then --¼õ¶¾Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÖĞ¶¾Ê±¼ä£º¼õÉÙ40%<color>"
+		return "<color=blue>Trong 3 phót:\n Thêi gian tróng ®éc: Gi¶m 40%<color>"
 	end
 	if(detail == 228) then --¼õ±ùÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\n³Ù»ºÊ±¼ä£º¼õÉÙ40%<color>"
+		return "<color=blue>Trong 3 phót:\n Thêi gian lµm chËm: Gi¶m 40%<color>"
 	end
 	if(detail == 229) then --ÆÕ¹¥Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦ÏµÆÕ¹¥ÉËº¦£ºÔö¼Ó200%\nÄÚ¹¦ÏµÆÕ¹¥ÉËº¦£ºÔö¼Ó100µã<color>"
+		return "<color=blue>Trong 3 phót:\n S¸t th­¬ng vËt lı hÖ ngo¹i c«ng: T¨ng 200%\n S¸t th­¬ng vËt lı hÖ néi c«ng: T¨ng 100 ®iÓm<color>"
 	end
 	if(detail == 230) then --¶¾¹¥Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦Ïµ¶¾¹¥ÉËº¦£ºÔö¼Ó10µã/´Î\nÄÚ¹¦Ïµ¶¾¹¥ÉËº¦£ºÔö¼Ó10µã/´Î<color>"
+		return "<color=blue>Trong 3 phót:\n §éc s¸t hÖ ngo¹i c«ng: T¨ng 10 ®iÓm/lÇn\n §éc s¸t hÖ néi c«ng: T¨ng 10 ®iÓm/lÇn<color>"
 	end
 	if(detail == 231) then --±ù¹¥Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦Ïµ±ù¹¥ÉËº¦£ºÔö¼Ó100µã\nÄÚ¹¦Ïµ±ù¹¥ÉËº¦£ºÔö¼Ó100µã<color>"
+		return "<color=blue>Trong 3 phót:\n B¨ng s¸t hÖ ngo¹i c«ng: T¨ng 100 ®iÓm\n B¨ng s¸t hÖ néi c«ng: T¨ng 100 ®iÓm<color>"
 	end
 	if(detail == 232) then --»ğ¹¥Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦Ïµ»ğ¹¥ÉËº¦£ºÔö¼Ó100µã\nÄÚ¹¦Ïµ»ğ¹¥ÉËº¦£ºÔö¼Ó100µã<color>"
+		return "<color=blue>Trong 3 phót:\n Háa s¸t hÖ ngo¹i c«ng: T¨ng 100 ®iÓm\n Háa s¸t hÖ néi c«ng: T¨ng 100 ®iÓm<color>"
 	end
 	if(detail == 233) then --À×¹¥Íè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÍâ¹¦ÏµÀ×¹¥ÉËº¦£ºÔö¼Ó100µã\nÄÚ¹¦ÏµÀ×¹¥ÉËº¦£ºÔö¼Ó100µã<color>"
+		return "<color=blue>Trong 3 phót:\n L«i s¸t ngo¹i c«ng: T¨ng 100 ®iÓm\n L«i s¸t néi c«ng: T¨ng 100 ®iÓm<color>"
 	end
 	if(detail == 234) then --³¤ÃüÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÉúÃüÉÏÏŞ£ºÔö¼Ó1000µã<color>"
+		return "<color=blue>Trong 3 phót:\n Sinh lùc lín nhÊt: T¨ng 1000 ®iÓm<color>"
 	end
 	if(detail == 235) then --³¤ÄÚÍè
-		return "<color=blue>3·ÖÖÓÄÚ£º\nÄÚÁ¦ÉÏÏŞ£ºÔö¼Ó1000µã<color>"
+		return "<color=blue>Trong 3 phót:\n Néi lùc lín nhÊt: T¨ng 1000 ®iÓm<color>"
 	end
 
 end

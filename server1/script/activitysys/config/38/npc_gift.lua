@@ -20,7 +20,7 @@ local _limit = function()
 end
 
 local _OnBreak = function()
-	Msg2Player(" ’ºØ±ªº‰∂œ.")
+	Msg2Player("Thu thÀp Æ∑ bﬁ gi∏n Æoπn.")
 end
 
 

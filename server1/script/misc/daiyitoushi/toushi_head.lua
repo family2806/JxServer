@@ -72,21 +72,21 @@ TB_TOUSHI_MENPAIXINWU		= {6, 1, 1670}				-- ÃÅÅÉÐÅÎïIDKey
 TB_TOUSHI_YANGYINGXINWU		= {6, 1, 1671}				-- ÑîçøÐÅÎïIDKey
 TB_TOUSHI_ZHENPAILINGDAN	= {6, 1, 1704, 1, 0, 0}		-- ÕòÅÉÁéµ¤
 TB_TOUSHI_ZHENPAILINGYAO	= {6, 1, 1705, 1, 0, 0}		-- ÕòÅÉÁéÒ©
-TB_TOUSHI_HIERARCH			= {"ÕÆÃÅ", "½ÌÖ÷", "°ïÖ÷"};	-- ¸÷ÃÅÅÉ¶ÔÕÆÃÅµÄ²»Í¬³Æºô
+TB_TOUSHI_HIERARCH			= {"Ch­ëng m«n", "Gi¸o chñ", "Bang chñ "};	-- ¸÷ÃÅÅÉ¶ÔCh­ëng m«nµÄ²»Í¬³Æºô
 TB_TOUSHI_ERR_MSG			= 							-- ´íÎóÌáÊ¾ÐÅÏ¢
 	{
-		[TOUSHI_UNKNOWN]		= "<dec><npc>²»ÄÜÕâÃ´×ö.",
-		[TOUSHI_LVLERR]			= "<dec><npc>Ä¿Ç°Äã»¹²»¹»{120¼¶}, ¿ìÈ¥¶àÁ·Ï°°É!",
-		[TOUSHI_FLAGERR]		= "<dec><npc>Ïë¼ÓÈë±¾°ï£¬ÄãµÄÕÆÃÅÍ¬ÒâÁËÂð?",
-		[TOUSHI_LGERR]			= "<dec><npc>Ïë¼ÓÈë±¾°ï£¬ÐèÒª{½âÉ¢ÁªÈüÕ½¶Ó¹ØÏµ}.",
-		[TOUSHI_EQUIPERR]		= "<dec><npc>Ïë¼ÓÈë±¾°ï£¬ÐèÒª°ÑÄãÉíÉÏµÄ×°±¸¶¼Ð¶Íê!",
-		[TOUSHI_REDOERR]		= "<dec><npc><sex> ÒÑ¾­³É¹¦×ªµ½ÐÂÃÅÅÉÁË.",
-		[TOUSHI_EQFACTERR]		= "<dec><npc>Ê¦¸µÔÊÐíÄãÏÂÉ½ÕÒÐÂµÄÎäÑ§Ö®Â·£¬Ò²Ï£ÍûÄãÓÐÒ»ÌìÄÜÐÛ°ÔÌìÏÂ",
-		[TOUSHI_MALEERR]		= "<dec><npc> <sex> ÒÑÕÒµ½ÕâÀï£¬Ò»¶¨Ò²ÖªµÀÕÆÃÅµÄËùÓÐÊÂÇé¡£µ«ÊÇ£¬Äã²»·ûºÏ¼ÓÈëÃÅÅÉ.",
-		[TOUSHI_TWFEMALEERR]	= "<dec><npc>ÄãÒÀÈ»Ã»ÓÐ±¾°ïÖ÷µÄÐÅÎï£¬²»ÄÜ¼ÓÈëÃÅÅÉ.",
-		[TOUSHI_NOFACTERR]		= "<dec><npc>ÕæÊÇÆæ¹Ö£¬ÎÒÈÏ²»³öÄãÐÞÁ¶µÄÊÇÄÄÃÅÎä¹¦",
-		[TOUSHI_NOFREEBAG]		= "<dec><npc>×°±¸²»×ã£¬ÇëÕûÀíºóÔÙÀ´°É.",
-		[TOUSHI_TIMEERR]		= format("<dec><npc>×ªÃÅÅÉºó<color=green>%d<color> ÐÂµÄÒ»Ìì¿ÉÒÔ¼ÌÐø×ª.", TOUSHI_COLDDOWN_TIME/(24*60*60)),
+		[TOUSHI_UNKNOWN]		= "<dec><npc>Kh«ng thÓ lµm nh­ vËy ®­îc.",
+		[TOUSHI_LVLERR]			= "<dec><npc>HiÖn t¹i ng­¬i vÉn ch­a ®ñ {cÊp 120}, h·y ®i rÌn luyÖn thªm ®i!",
+		[TOUSHI_FLAGERR]		= "<dec><npc>Muèn gia nhËp bæn bang, ch­ëng m«n cña ng­¬i ®· ®ång ý ch­a?",
+		[TOUSHI_LGERR]			= "<dec><npc>Muèn gia nhËp bæn bang, cÇn ph¶i {gi¶i t¸n quan hÖ chiÕn ®éi liªn ®Êu}.",
+		[TOUSHI_EQUIPERR]		= "<dec><npc>Muèn gia nhËp bæn bang, cÇn ph¶i cëi hÕt trang bÞ trªn ng­êi xuèng!",
+		[TOUSHI_REDOERR]		= "<dec><npc><sex> ®· chuyÓn thµnh c«ng sang m«n ph¸i míi.",
+		[TOUSHI_EQFACTERR]		= "<dec><npc>S­ phô cho phÐp ng­¬i xuèng nói t×m con ®­êng vâ häc míi, vµ còng hi väng ng­¬i cã ngµy hïng b¸ thiªn h¹",
+		[TOUSHI_MALEERR]		= "<dec><npc>VÞ <sex> ®· t×m ®Êy ®Õn ®©y, ch¾c còng ®· biÕt tÊt c¶ sù viÖc tõ ch­ëng m«n mµ ®Õn. Nh­ng mµ ng­¬i kh«ng phï hîp gia nhËp víi m«n ph¸i.",
+		[TOUSHI_TWFEMALEERR]	= "<dec><npc>Ng­¬i vÉn ch­a cã tÝn vËt cña bæn bang chñ, kh«ng thÓ gia nhËp ®­îc m«n ph¸i.",
+		[TOUSHI_NOFACTERR]		= "<dec><npc>ThËt lµ kú l¹! Ta nhËn kh«ng ra ng­¬i tu luyÖn vâ c«ng thuéc m«n ph¸i nµo?",
+		[TOUSHI_NOFREEBAG]		= "<dec><npc>Hµnh trang kh«ng ®ñ, h·y s¾p xÕp råi quay l¹i nhÐ.",
+		[TOUSHI_TIMEERR]		= format("<dec><npc>Sau khi chuyÓn m«n ph¸i <color=green>%d<color> ngµy míi cã thÓ tiÕp tôc chuyÓn.", TOUSHI_COLDDOWN_TIME/(24*60*60)),
 	}
 
 TB_TOUSHI_ERR_MSG[TOUSHI_FEMALEERR] = TB_TOUSHI_ERR_MSG[TOUSHI_MALEERR];
@@ -112,9 +112,9 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											8,		-- ÉÙÁÖÈ­·¨[8]
-											4,		-- ÉÙÁÖ¹÷·¨[4]£¨10¼¶£©
-											6,		-- ÉÙÁÖµ¶·¨[6]£¨10¼¶£©
+											8,		-- ÉÙÁÖQuyÒn ph¸p[8]
+											4,		-- ÉÙÁÖC«n ph¸p[4]£¨10¼¶£©
+											6,		-- ÉÙÁÖ§ao ph¸p[6]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -141,9 +141,9 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{318, 1, "È­·¨"},	-- ´ïÄ¦¶É½­[318]			Ìí¼ÓÊìÁ·¶È¼¼ÄÜ ÖÁÉÙÌí¼ÓÎª1¼¶
-											{319, 1, "¹÷·¨"},	-- ºáÉ¨Ç§¾ü[319]£¨90¼¶£©
-											{321, 1, "µ¶·¨"},	-- ÎÞÏàÕ¶  [321]£¨90¼¶£©
+											{318, 1, "QuyÒn ph¸p"},	-- ´ïÄ¦¶É½­[318]			Ìí¼ÓÊìÁ·¶È¼¼ÄÜ ÖÁÉÙÌí¼ÓÎª1¼¶
+											{319, 1, "C«n ph¸p"},	-- ºáÉ¨Ç§¾ü[319]£¨90¼¶£©
+											{321, 1, "§ao ph¸p"},	-- ÎÞÏàÕ¶  [321]£¨90¼¶£©
 										},
 										
 							[120]	=	{
@@ -151,12 +151,12 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1055, 1, "È­·¨"},	-- ´óÁ¦½ð¸ÕÕÆ[318]			Ìí¼ÓÊìÁ·¶È¼¼ÄÜ ÖÁÉÙÌí¼ÓÎª1¼¶
-											{1056, 1, "¹÷·¨"},	-- Î¤ÍÓÏ×èÆ[319]£¨90¼¶£©
-											{1057, 1, "µ¶·¨"},	-- Èþ½ä¹éìø[321]£¨90¼¶£©
+											{1055, 1, "QuyÒn ph¸p"},	-- ´óÁ¦½ð¸ÕÕÆ[318]			Ìí¼ÓÊìÁ·¶È¼¼ÄÜ ÖÁÉÙÌí¼ÓÎª1¼¶
+											{1056, 1, "C«n ph¸p"},	-- Î¤ÍÓÏ×èÆ[319]£¨90¼¶£©
+											{1057, 1, "§ao ph¸p"},	-- Èþ½ä¹éìø[321]£¨90¼¶£©
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÉÙÁÖÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay %s gia nhËp m«n ph¸i ThiÕu L©m, sau nµy nhê c¸c huynh chØ gi¸o!",
 		},	
 		
 		{-- ÌìÍõ
@@ -172,9 +172,9 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											26,		-- ÌìÍõ´¸·¨[26]£¨10¼¶£©
-											23,		-- ÌìÍõÇ¹·¨[23]£¨10¼¶£©
-											24,		-- ÌìÍõµ¶·¨[24]£¨10¼¶£©
+											26,		-- ÌìÍõChïy ph¸p[26]£¨10¼¶£©
+											23,		-- ÌìÍõTh­¬ng ph¸p[23]£¨10¼¶£©
+											24,		-- ÌìÍõ§ao ph¸p[24]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -203,9 +203,9 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{322, 1, "µ¶·¨"},	-- ÆÆÌìÕ¶  £¨90¼¶£©
-											{323, 1, "Ç¹·¨"},	-- ×·ÐÇÖðÔÂ£¨90¼¶£©
-											{325, 1, "´¸·¨"},	-- ×··ç¾÷  £¨90¼¶£©
+											{322, 1, "§ao ph¸p"},	-- ÆÆÌìÕ¶  £¨90¼¶£©
+											{323, 1, "Th­¬ng ph¸p"},	-- ×·ÐÇÖðÔÂ£¨90¼¶£©
+											{325, 1, "Chïy ph¸p"},	-- ×··ç¾÷  £¨90¼¶£©
 										},
 										
 							[120]	=	{
@@ -213,12 +213,12 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1058, 1, "µ¶·¨"},	-- ºÀÐÛÕ¶
-											{1060, 1, "Ç¹·¨"},	-- °ÔÍõöÉ½ð
-											{1059, 1, "´¸·¨"},	-- ×Ýºá°Ë»Ä
+											{1058, 1, "§ao ph¸p"},	-- ºÀÐÛÕ¶
+											{1060, 1, "Th­¬ng ph¸p"},	-- °ÔÍõöÉ½ð
+											{1059, 1, "Chïy ph¸p"},	-- ×Ýºá°Ë»Ä
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÌìÍõÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay %s gia nhËp Thiªn V­¬ng, nhê c¸c s­ huynh chØ gi¸o!",
 		},
 		
 		{-- ÌÆÃÅ
@@ -256,16 +256,16 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[70]	=	{
-											249,	-- Ð¡Àî·Éµ¶[249]£¨60¼¶£©
+											249,	-- Ð¡ÀîPhi §ao[249]£¨60¼¶£©
 											48,		-- ÐÄÑÛ  [48 ]£¨ÕòÅÉ£©
 											58,		-- ÌìÂÞµØÍø[58 ]£¨60¼¶£©
 											341,	-- É¢»¨ïÚ  [341]£¨60¼¶£©
 										},
 										
 							[90]	=	{
-											{339, 1, "·Éµ¶"},	-- Éã»êÔÂÓ°[339]£¨90¼¶£©
-											{302, 1, "åó¼ý"},	-- ±©ÓêÀæ»¨[302]£¨90¼¶£©
-											{342, 1, "·ÉïÚ"},	-- ¾Å¹¬·ÉÐÇ[342]£¨90¼¶£©
+											{339, 1, "Phi §ao"},	-- Éã»êÔÂÓ°[339]£¨90¼¶£©
+											{302, 1, "Ná tiÔn"},	-- ±©ÓêÀæ»¨[302]£¨90¼¶£©
+											{342, 1, "Phi Tiªu"},	-- ¾Å¹¬·ÉÐÇ[342]£¨90¼¶£©
 											351,	-- ÂÒ»·»÷  [351]£¨90¼¶£©
 										},
 										
@@ -274,13 +274,13 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1069, 1, "·Éµ¶"},	-- ÎÞÓ°´©
-											{1070, 1, "åó¼ý"},	-- ÌúÁ«ËÄÉ±
-											{1071, 1, "·ÉïÚ"},	-- Ç¬À¤Ò»ÖÀ
+											{1069, 1, "Phi §ao"},	-- ÎÞÓ°´©
+											{1070, 1, "Ná tiÔn"},	-- ÌúÁ«ËÄÉ±
+											{1071, 1, "Phi Tiªu"},	-- Ç¬À¤Ò»ÖÀ
 											1110,	-- Åùö¨ÂÒ»·»÷
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÌÆÃÅÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp §­êng m«n, c¶m phiÒn c¸c s­ huynh s­ tû chØ gi¸o!",
 		},
 		
 		{-- Îå¶¾
@@ -295,8 +295,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											62,		-- Îå¶¾ÕÆ·¨[62]£¨10¼¶£©
-											60,		-- Îå¶¾µ¶·¨[60]£¨10¼¶£©
+											62,		-- Îå¶¾Ch­ëng ph¸p[62]£¨10¼¶£©
+											60,		-- Îå¶¾§ao ph¸p[60]£¨10¼¶£©
 											67,		-- ¾ÅÌì¿ñÀ×[67]£¨10¼¶£©
 										},
 										
@@ -329,8 +329,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{353, 1, "ÕÆ·¨"},	-- Òõ·çÊ´¹Ç[353]£¨90¼¶£©
-											{355, 1, "µ¶·¨"},	-- ÐþÒõÕ¶  [355]£¨90¼¶£©
+											{353, 1, "Ch­ëng ph¸p"},	-- Òõ·çÊ´¹Ç[353]£¨90¼¶£©
+											{355, 1, "§ao ph¸p"},	-- ÐþÒõÕ¶  [355]£¨90¼¶£©
 											390,	-- [390]£¨90¼¶£©
 										},
 										
@@ -339,11 +339,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1066, 1, "ÕÆ·¨"},	-- ÐÎÏú¹ÇÁ¢
-											{1067, 1, "µ¶·¨"},	-- ÓÄ»êÊÉÓ°
+											{1066, 1, "Ch­ëng ph¸p"},	-- ÐÎÏú¹ÇÁ¢
+											{1067, 1, "§ao ph¸p"},	-- ÓÄ»êÊÉÓ°
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÎå¶¾ÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp m«n Ngò §éc gi¸o, c¶m phiÒn c¸c s­ huynh s­ tû chØ gi¸o!",
 		},
 		
 		{-- ¶ëÃ¼
@@ -358,8 +358,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											77,		-- ¶ëáÒ½£·¨[77]£¨10¼¶£©
-											79,		-- ¶ëáÒÕÆ·¨[79]£¨10¼¶£©
+											77,		-- ¶ëáÒKiÕm ph¸p[77]£¨10¼¶£©
+											79,		-- ¶ëáÒCh­ëng ph¸p[79]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -388,8 +388,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{328, 1, "½£·¨"},	-- Èý¶ëö«Ñ©[328]£¨90¼¶£©
-											{380, 1, "ÕÆ·¨"},	-- ·çËªËéÓ°[380]£¨90¼¶£©
+											{328, 1, "KiÕm ph¸p"},	-- Èý¶ëö«Ñ©[328]£¨90¼¶£©
+											{380, 1, "Ch­ëng ph¸p"},	-- ·çËªËéÓ°[380]£¨90¼¶£©
 											332,	-- ÆÕ¶ÉÖÚÉú[332]£¨90¼¶£©
 										},
 										
@@ -398,12 +398,12 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1061, 1, "½£·¨"},	-- ½£»¨Íì¾§
-											{1062, 1, "ÕÆ·¨"},	-- ±ùÓêçó¾§
-											{1114, 1, "°ïÖú"},	-- ÓñÈªÐÄ¾­
+											{1061, 1, "KiÕm ph¸p"},	-- ½£»¨Íì¾§
+											{1062, 1, "Ch­ëng ph¸p"},	-- ±ùÓêçó¾§
+											{1114, 1, "Hç trî "},	-- ÓñÈªÐÄ¾­
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈë¶ëÃ¼ÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp Nga My ph¸i, c¶m phiÒn c¸c s­ tû chØ gi¸o",
 		},
 		
 		{-- ´äÑÌ
@@ -418,8 +418,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											95,		-- ´äÑÌµ¶·¨[95 ]£¨10¼¶£©
-											97,		-- ´äÑÌË«µ¶[97 ]£¨10¼¶£©
+											95,		-- ´äÑÌ§ao ph¸p[95 ]£¨10¼¶£©
+											97,		-- ´äÑÌSong ®ao[97 ]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -446,8 +446,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{336, 1, "µ¶·¨"},	-- ±ù×ÙÎÞÓ°[336]£¨90¼¶£©
-											{337, 1, "Ë«µ¶"},	-- ±ùÐÄÏÉ×Ó[337]£¨90¼¶£©
+											{336, 1, "§ao ph¸p"},	-- ±ù×ÙÎÞÓ°[336]£¨90¼¶£©
+											{337, 1, "Song ®ao"},	-- ±ùÐÄÏÉ×Ó[337]£¨90¼¶£©
 										},
 										
 							[120]	=	{
@@ -455,11 +455,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1063, 1, "µ¶·¨"},	-- ±ùÈ¸Ô½Ö¦
-											{1065, 1, "Ë«µ¶"},	-- Ë®Ó³ÂüÐã
+											{1063, 1, "§ao ph¸p"},	-- ±ùÈ¸Ô½Ö¦
+											{1065, 1, "Song ®ao"},	-- Ë®Ó³ÂüÐã
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈë´äÑÌÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp Thóy Yªn m«n, c¶m phiÒn c¸c s­ tû chØ gi¸o!",
 		},
 		
 		{-- Ø¤°ï
@@ -474,8 +474,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											116,	-- Ø¤°ïÕÆ·¨[116]£¨10¼¶£©
-											115,	-- Ø¤°ï°ô·¨[115]£¨10¼¶£©
+											116,	-- Ø¤°ïCh­ëng ph¸p[116]£¨10¼¶£©
+											115,	-- Ø¤°ïBæng ph¸p[115]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -502,8 +502,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{357, 1, "ÕÆ·¨"},	-- ·ÉÁúÔÚÌì[357]£¨90¼¶£©
-											{359, 1, "°ô·¨"},	-- ÌìÏÂÎÞ¹·[359]£¨90¼¶£©
+											{357, 1, "Ch­ëng ph¸p"},	-- ·ÉÁúÔÚÌì[357]£¨90¼¶£©
+											{359, 1, "Bæng ph¸p"},	-- ÌìÏÂÎÞ¹·[359]£¨90¼¶£©
 										},
 										
 							[120]	=	{
@@ -511,11 +511,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1073, 1, "ÕÆ·¨"},	-- Ê±³ËÁùÁú
-											{1074, 1, "°ô·¨"},	-- °ôåÄÂÓµØ
+											{1073, 1, "Ch­ëng ph¸p"},	-- Ê±³ËÁùÁú
+											{1074, 1, "Bæng ph¸p"},	-- °ôåÄÂÓµØ
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëØ¤°ïÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp C¸i Bang, c¶m phiÒn c¸c tiÒn bèi chØ gi¸o!",
 		},
 		
 		{-- ÌìÈÌ
@@ -531,7 +531,7 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										
 							[20]	=	{
 											132,	-- ÌìÈÌÃ¬·¨[132]£¨10¼¶£©
-											131,	-- ÌìÈÌµ¶·¨[131]£¨10¼¶£©
+											131,	-- ÌìÈÌ§ao ph¸p[131]£¨10¼¶£©
 											136,	-- »ð·ÙÁ«»ª[136]£¨10¼¶£©
 										},
 										
@@ -560,8 +560,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{361, 1, "Ç¹·¨"},	-- ÔÆÁú»÷  [361]£¨90¼¶£©
-											{362, 1, "µ¶·¨"},	-- ÌìÍâÁ÷ÐÇ[362]£¨90¼¶£©
+											{361, 1, "Th­¬ng ph¸p"},	-- ÔÆÁú»÷  [361]£¨90¼¶£©
+											{362, 1, "§ao ph¸p"},	-- ÌìÍâÁ÷ÐÇ[362]£¨90¼¶£©
 											391,	-- [391]£¨90¼¶£©
 										},
 										
@@ -570,11 +570,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1075, 1, "Ç¹·¨"},	-- ½­º£Å­À½
-											{1076, 1, "µ¶·¨"},	-- ¼²»ðÁÇÔ­
+											{1075, 1, "Th­¬ng ph¸p"},	-- ½­º£Å­À½
+											{1076, 1, "§ao ph¸p"},	-- ¼²»ðÁÇÔ­
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÌìÈÌÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp Thiªn NhÉn gi¸o, b¸i kiÕn c¸c s­ huynh s­ tû!",
 		},
 		
 		{-- Îäµ±
@@ -589,8 +589,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											152,	-- Îäµ±È­·¨[152]£¨10¼¶£©
-											151,	-- Îäµ±½£·¨[151]£¨10¼¶£©
+											152,	-- Îäµ±QuyÒn ph¸p[152]£¨10¼¶£©
+											151,	-- Îäµ±KiÕm ph¸p[151]£¨10¼¶£©
 										},
 										
 							[30]	=	{
@@ -617,8 +617,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{365, 1, "È­·¨"},	-- ÌìµØÎÞ¼«[365]£¨90¼¶£©
-											{368, 1, "½£·¨"},	-- ÈË½£ºÏÒ»[368]£¨90¼¶£©
+											{365, 1, "QuyÒn ph¸p"},	-- ÌìµØÎÞ¼«[365]£¨90¼¶£©
+											{368, 1, "KiÕm ph¸p"},	-- ÈË½£ºÏÒ»[368]£¨90¼¶£©
 										},
 										
 							[120]	=	{
@@ -626,11 +626,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1078, 1, "È­·¨"},	-- Ôì»¯Ì«Çå
-											{1079, 1, "½£·¨"},	-- ½£´¹ÐÇºÓ
+											{1078, 1, "QuyÒn ph¸p"},	-- Ôì»¯Ì«Çå
+											{1079, 1, "KiÕm ph¸p"},	-- ½£´¹ÐÇºÓ
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÎäµ±ÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp Vâ §ang ph¸i, tham kiÕn c¸c s­ huynh s­ tû!",
 		},
 		
 		{-- À¥ÂØ
@@ -645,8 +645,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[20]	=	{
-											167,	-- À¥ÂØµ¶·¨[167]£¨10¼¶£©
-											168,	-- À¥ÂØ½£·¨[168]£¨10¼¶£©
+											167,	-- À¥ÂØ§ao ph¸p[167]£¨10¼¶£©
+											168,	-- À¥ÂØKiÕm ph¸p[168]£¨10¼¶£©
 											392,	-- ²ø×Ö¾÷[392]£¨10¼¶£©
 											171,	-- Çå·ç·û  [171]£¨10¼¶£©
 										},
@@ -679,8 +679,8 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[90]	=	{
-											{372, 1, "µ¶·¨"},	-- °ÁÑ©Ð¥·ç[372]£¨90¼¶£©
-											{375, 1, "½£·¨"},	-- À×¶¯¾ÅÌì[375]£¨90¼¶£©
+											{372, 1, "§ao ph¸p"},	-- °ÁÑ©Ð¥·ç[372]£¨90¼¶£©
+											{375, 1, "KiÕm ph¸p"},	-- À×¶¯¾ÅÌì[375]£¨90¼¶£©
 											394,	-- [394]£¨90¼¶£©
 										},
 										
@@ -689,11 +689,11 @@ TB_DAIYITOUSHI_FACTS = 					-- ¸÷ÃÅÅÉ ¼¼ÄÜ ³ÆºÅµÈ
 										},
 										
 							[150]	=	{
-											{1080, 1, "µ¶·¨"},	-- ¾ÅÌìî¸·ç
-											{1081, 1, "½£·¨"},	-- ÌìÀ×ÕðÔÀ
+											{1080, 1, "§ao ph¸p"},	-- ¾ÅÌìî¸·ç
+											{1081, 1, "KiÕm ph¸p"},	-- ÌìÀ×ÕðÔÀ
 										},
 						},
-			szMsg = "´Ó¼´ÈÕÆð%s ¼ÓÈëÀ¥ÂØÃÅÅÉ£¬ÈÕºó»¹Çë¸÷Î»Ê¦ÐÖ¶à¶àÖ¸½Ì!",
+			szMsg = "KÓ tõ h«m nay, %s gia nhËp C«n L«n ph¸i, b¸i kiÕn c¸c vÞ ®¹o huynh!",
 		},
 
 	}

@@ -1,4 +1,4 @@
--- Îå¶¾ Â·ÈËNPC ¶¾ÏÉ×Ó°×Ó¨Ó¨ 20¼¶ÈÎÎñ
+-- Ngò §éc Â·ÈËNPC ¶¾ÏÉ×ÓNgò §éc 20¼¶ÈÎÎñ
 -- by£ºDan_Deng(2003-08-05)
 
 Include("\\script\\task\\150skilltask\\g_task.lua")
@@ -13,9 +13,9 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>¾ÍÊÇÓĞÒ»Ğ©´À»õ²»ÖªËÀ»î£¬ÄÑµÀÏò±¾ÏÉ×ÓÕâÃ´ÄêÇáÆ¯ÁÁÒ²ÓĞ´íÂğ?"
-	G_TASK:OnMessage("Îå¶¾", tbDailog, "DialogWithNpc")
-	tbDailog:AddOptEntry("ÎÒÀ´ÕÒÄãÓĞ±ğµÄÊÂÇé", main2)
+	tbDailog.szTitleMsg = "<npc>Lu«n lu«n cã kÎ ngu ngèc kh«ng biÕt sèng chÕt lµ g×, kh«ng lÏ trÎ ®Ñp nh­ bæn tiªn tö ta ®©y l¹i lµ mét ®iÒu sai tr¸i hay sao?"
+	G_TASK:OnMessage("Ngò §éc", tbDailog, "DialogWithNpc")
+	tbDailog:AddOptEntry("Ta ®Õn t×m «ng cã viÖc kh¸c", main2)
 	tbDailog:Show() 
 end
 
@@ -23,22 +23,22 @@ function main2()
 	UTask_wu = GetTask(10)
 	Uworld50 = GetTask(50)
 	if (Uworld50 == 20) then			-- µãĞÑĞìÖĞÔ­ÈÎÎñ
-		Talk(6,"Uworld50_20","°×¹ÃÄï! ×Ô¹ÅÕıĞ°²»Á½Á¢,Ğì´óÔÀÏ£Íû¹ÃÄï¿ÉÒÔÀë¿ªĞìÖĞÔ­","Àë¿ªËûµÄ»°ÎÒ»î×Å»¹ÓĞÊ²Ã´ÒâÒå?ÎªÁËºÍËûÄÜ¹»³¤ÏàØËÊØÎÒÒÑ¾­¸ÄÁËºÜ¶àÁË£¬ÎªÊ²Ã´ÄãÃÇ¶¼¿´²»µ½ÄØ£¿","ÄãÕæÒªÎ¥¿¹Áî×ğµÄ¾ö¶¨Âğ?","ÎÒÖ»ÏëÔçÈÕºÍÖĞÔ­´ó¸ç³ÉÇ×£¬Ö®ºó±ãÍË³ö½­ºş×¨ĞÄÕÕ¹ËÀÏ¹«º¢×Ó£¬²»ÔÙ¹ıÎÊÂÒÊÀÖ®ÊÂ£¬ÕâÑùÓĞÊ²Ã´×ïÄØ?","ÕæÊÇÕâÑùÂğ£¿","²ÔÌìÔÚÉÏ£¬ÈçĞ¡Å®ÓĞ°ë¾äĞéÑÔ¾ÍÌì´òÀ×Åü¶øËÀ£¬Ğ¡Å®ºÁÎŞÔ¹ÑÔ")
+		Talk(6,"Uworld50_20","B¹ch c« n­¬ng! X­a nay ch¸nh tµ ®Òu kh«ng dung hîp, Tõ §¹i Nh¹c hy väng c« sÏ rêi xa Tõ Trung Nguyªn ","Rêi xa anh Êy th× ta sèng cßn ı nghÜa g×? Còng v× muèn ®­îc suèt ®êi sèng bªn c¹nh anh Êy mµ ta ®· thay ®æi rÊt nhiÒu, t¹i sao c¸c ng­êi kh«ng nh×n thÊy ®­îc nh÷ng ®iÒu nµy?","C« thËt sù lµ muèn kh¸ng l¹i sù quyÕt ®Şnh cña lÖnh t«n sao?","Ta chØ muèn sím ®­îc thµnh th©n víi Trung Nguyªn ®¹i ca, sau ®ã sÏ rót lui khái giang hå chuyªn t©m nu«i chång nu«i con, kh«ng mµng g× ®Õn thÕ sù lo¹n l¹c n÷a. Nh­ vËy th× cã g× nªn téi chø?","Cã thËt sù nh­ vËy kh«ng","Trêi xanh chøng gi¸m, nÕu nh­ tiÓu n÷ cã nöa lêi gi¶ dèi, xin h·y næi sÊm sĞt ®¸nh chÕt t­¬i ngay. TiÓu n÷ kh«ng hÒ o¸n tr¸ch")
 	elseif (GetSeries() == 1) and (GetFaction() == "wudu") then
 		if (UTask_wu == 20*256+10) then
 			i = GetItemCount(85)				-- ÈËÍ·
 			if (i >= 7) then
-				Talk(1,"L20_prise","ÏÉ×Ó£¬ÊôÏÂÒÑ¾­°ÑÂŞÏöÆß¹íµÄÄÔ´ü¸øÄãËÍÀ´ÁË")
+				Talk(1,"L20_prise","Tiªn tö! Thuéc h¹ ®· mang 7 c¸i ®Çu cña 'La Tiªu S¬n ThÊt Quû 'vÒ ®©y råi ")
 			else
-				Talk(1,"","Äã²»ÊÇÈ¥ÂŞÏöÉ½ÁËÔõÃ´»¹ÓĞÁ³ÔÚÕâ?")
+				Talk(1,"","Ch¼ng ph¶i lµ ng­¬i ®· ®i La Tiªu s¬n råi ­? T¹i sao vÉn cßn cã mÆt ë ®©y?")
 			end
 		elseif ((UTask_wu == 20*256) and (GetLevel() >= 20)) then		--20¼¶ÈÎÎñ
-			Talk(4,"L20_get","Î¹£¬ĞÂÀ´µÄ£¡¶®²»¶®¹æ¾Ø°¡¡£ÕâÃ´¾ÃÁË£¬ÔõÃ´»¹Ã»ÓĞ½»ÉÏ¡°ÈËÍ·×´¡±À´Ñ½","Ê²Ã´ÈËÍ·×´£¿","¾ÍÊÇÓë±¾½ÌÎªµĞµÄÈËµÄÄÔ´ü ","ÊôÏÂÓŞ¶Û£¬»¹ÇëÏÉ×Ó¶à¼ÓÖ¸µã")
+			Talk(4,"L20_get","Çy! Võa míi ®Õn! Cã nhí quy t¾c kh«ng vËy? §· l©u qu¸ råi, t¹i sao vÉn ch­a giao 'Nh©n §Çu Tr¸ng' ra ®©y","Nh©n §Çu Tr¸ng lµ c¸i g×?","§ã lµ nh÷ng c¸i ®Çu bän nghŞch ph¶n víi Ngò §éc Gi¸o ","Thuéc h¹ ngu ®Çn! Xin tiªn tö chØ d¹y thªm lÇn n÷a")
 		else							-- ³£¹æ¶Ô»°
-			Skill150Dialog("¾ÍÊÇÓĞÒ»Ğ©´À»õ²»ÖªËÀ»î£¬ÄÑµÀÏò±¾ÏÉ×ÓÕâÃ´ÄêÇáÆ¯ÁÁÒ²ÓĞ´íÂğ?")
+			Skill150Dialog("Lu«n lu«n cã kÎ ngu ngèc kh«ng biÕt sèng chÕt lµ g×, kh«ng lÏ trÎ ®Ñp nh­ bæn tiªn tö ta ®©y l¹i lµ mét ®iÒu sai tr¸i hay sao?")
 		end
 	else
-		Skill150Dialog("ÄÇĞ©ÄĞÈË²»Çë×ÔÀ´£¬¶ÔËûÃÇºÃÒ»µã¾ÍÒ»¸ö¶ş¸öµÄ×Ô¼ºÎªÎÒÂôÃü.")
+		Skill150Dialog("§èi víi bæn tiÓu th­ mµ nãi, c¸i lo¹i gäi lµ nam nh©n th× kh«ng mêi hä hä còng dÉn x¸c ®Õn, ®èi xö tèt víi hä mét chót, th× mét tªn hai tªn ®ang b¸n m¹ng cho ta ®ã th«i.")
 	end
 end;
 
@@ -50,28 +50,28 @@ function Skill150Dialog(szTitle)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
 	tbDailog.szTitleMsg = format("<npc>%s", szTitle)
-	G_TASK:OnMessage("°×Ó¨Ó¨", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage("Ngò §éc", tbDailog, "DialogWithNpc")
 	tbDailog:Show()
 end
 
 
 function L20_get()
-	Say("ÂŞÏöÆß¹íÒ»Ö±´¹ÏÑ±¾ÏÉ×ÓµÄÃÀÉ«£¬ÕæÊÇñ®¸òó¡Ïë³ÔÌì¶ìÈâ£¡ÄãÉÏÒ»ÌËÂŞÏöÉ½£¬°ÑËûÃÇ¸øÎÒÉ±ÁË",2,"ÊÇ£¡ÊôÏÂÕâ¾ÍÈ¥È¡ËûÃÇÈËÍ·. /L20_get_yes","ÊôÏÂÎä¹¦Ì«²î£¬¿ÖÅÂ. /L20_get_no")
+	Say("C¸i bän La Tiªu S¬n ®ã rÊt thÌm kh¸t s¾c ®Ñp cña tiªn tö nµy! Hõ! Cãc thèi mµ ®ßi ¨n thŞt thiªn nga! Ng­¬i h·y chŞu khã lªn La Tiªu S¬n lÇn n÷a, giÕt s¹ch hÕt bän chóng cho ta",2,"D¹! Thuéc h¹ sÏ lËp tøc ®i lÊy ®Çu bän chóng. /L20_get_yes","Thuéc h¹ vâ c«ng kĞm cái, e r»ng. /L20_get_no")
 end;
 
 function L20_get_yes()
-	Talk(1, "", "ÄÇÎÒ¾ÍÔÚÕâ¶ùµÈÄãµÄºÃÏûÏ¢ÂŞ")
+	Talk(1, "", "VËy th× ta sÏ ®îi ®Ó nghe tin tèt cña ng­¬i nhĞ!")
 	SetTask(10,20*256+10)
-	AddNote("Îª°×Ó¨Ó¨µ½ÂŞÏöÉ½É±ÂŞÏüÆß¹í")
-	Msg2Player("Îª°×Ó¨Ó¨µ½ÂŞÏöÉ½É±ÂŞÏüÆß¹í")
+	AddNote("V× B¹ch Doanh Doanh, ®Õn La Tiªu s¬n ®Ô giÕt La Tiªu ThÊt Quû ")
+	Msg2Player("V× B¹ch Doanh Doanh, ®Õn La Tiªu s¬n ®Ô giÕt La Tiªu ThÊt Quû ")
 end;
 
 function L20_get_no()
-	Talk(1,"","ÎÒ¾ÍÖªµÀÄãÊÇ¸öµ¨Ğ¡¹í£¬ÕæÃ»ÓÃ!")
+	Talk(1,"","Ta ®· vèn biÕt ng­¬i chØ lµ mét tªn tiÓu quû nh¸t gan. ThËt lµ thø v« dông!")
 end;
 
 function L20_prise()
-	Talk(1,"","¿©¿©¿©¿©£¬ÕæºÃÍæ£¬ÄãºÜÓĞ±¾ÊÂÂï£¬ºÃ£¬±¾ÏÉ×Ó×÷±££¬ÉıÄãÎª´ßÃüÊ¹Õß")
+	Talk(1,"","Hahaha! ThËt vui qu¸! Ng­¬i thËt rÊt cã b¶n lÜnh! §­îc! Tiªn tö ta gi÷ lêi th¨ng ng­¬i lµ Th«i MÖnh Sø Gi¶ ")
 	i = GetItemCount(85)				-- ÈËÍ·
 	for j = 1,i do DelItem(85) end
 	SetTask(10,30*256)
@@ -79,11 +79,11 @@ function L20_prise()
 --	AddMagic(70)
 --	AddMagic(66)
 	add_wu(30)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã»ñµÃ´ßÃüÊ¹ÕßµÄ³ÆºÅ£¬Ñ§µÄÎä¹¦³àÑ×Ê´Ìì£¬ÔÓÄÑÒ©¾­")
-	AddNote("Îª°×Ó¨Ó¨È¥É±ÂŞÏüÆß¹í£¬±»·âÎª£º´ßÃüÊ¹Õß")
+	Msg2Player("Chóc mõng B¹n! §· ®­îc th¨ng lµ Ngò §éc Gi¸o Th«i mÖnh sø gi¶ SÏ ®­îc häc vâ c«ng: Xİch DiÖm Thùc Thiªn, T¹p Nan D­îc Kinh ")
+	AddNote("V× B¹ch Doanh Doanh, ®i giÕt La Tiªu s¬n thÊt quû, ®­îc th¨ng lµ: Th«i MÖnh Sø Gi¶ ")
 end;
 
 function Uworld50_20()
 	SetTask(50,30)
-	Msg2Player("ÌıÁË°×Ó¨Ó¨µÄ»°ÄãºÜ¸Ğ¶¯Ò²ÉËĞÄ£¬µ«ÊÇ²»ÖªµÀÔõÃ´°ì")
+	Msg2Player("Nghe nh÷ng lêi cña B¹ch Doanh Doanh, b¹n còng c¶m thÊy ®ång c¶m, th­¬ng xãt, nh­ng kh«ng biÕt lµm c¸ch nµo ®Ó gióp ®ì ")
 end

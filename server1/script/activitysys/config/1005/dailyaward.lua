@@ -14,29 +14,29 @@ PhongVanLenhBai2011.tbAwardDaily1 =
 {
 	[1]  =
 	{
-		{szName = "É±ÊÖïµ( 90¼¶)", tbProp = {6, 1, 400, 90,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ó¢ĞÛÌû", tbProp = {6, 1, 1604,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÌìÁúÁî", tbProp = {6, 1, 2256,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Ô»Í¹û(¸ß) ", tbProp = {6, 1, 906,1,0,0}, nCount = 3, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ËÎ½ğ·ÉËÙÍè", tbProp = {6, 1, 190,1,0,0}, nCount = 50, nExpiredTime = 43200, nBindState = -2},
-		{szName = "ÁîÅÆ", tbProp = {6, 1, 157,1,0,0}, nCount = 50, nExpiredTime = 43200, nBindState = -2},
+		{szName = "S¸t thñ gi¶n (cÊp 90)", tbProp = {6, 1, 400, 90,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Anh Hïng ThiÕp", tbProp = {6, 1, 1604,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Thiªn Long LÖnh", tbProp = {6, 1, 2256,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Qu¶ Huy Hoµng (cao) ", tbProp = {6, 1, 906,1,0,0}, nCount = 3, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Tèng Kim Phi Tèc hoµn", tbProp = {6, 1, 190,1,0,0}, nCount = 50, nExpiredTime = 43200, nBindState = -2},
+		{szName = "LÖnh bµi ", tbProp = {6, 1, 157,1,0,0}, nCount = 50, nExpiredTime = 43200, nBindState = -2},
 	},
 	[2] =
 	{
-		{szName = "ÒøÁ½", nJxb =1000000, nRate = 34, nCount = 1},
-		{szName = "ÒøÁ½", nJxb =2000000, nRate = 33, nCount = 1},
-		{szName = "ÒøÁ½", nJxb =3000000, nRate = 33, nCount = 1},
+		{szName = "Ng©n L­îng", nJxb =1000000, nRate = 34, nCount = 1},
+		{szName = "Ng©n L­îng", nJxb =2000000, nRate = 33, nCount = 1},
+		{szName = "Ng©n L­îng", nJxb =3000000, nRate = 33, nCount = 1},
 	},
 	[3] =
 	{
-		{szName = "ÏÉ²İÂ¶", tbProp = {6,1,71,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
-		{szName = "ÌØ±ğÏÉ²İÂ¶", tbProp = {6,1,1181,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
+		{szName = "Tiªn Th¶o Lé ", tbProp = {6,1,71,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
+		{szName = "Tiªn Th¶o Lé ®Æc biÖt", tbProp = {6,1,1181,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
 	},
 	[4] =
 	{
-		{szName = "°ÙÄêÕäÂ¶", tbProp = {6,1,2266,1,0,0}, nCount = 1, nRate =34, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ç§ÄêÕäÂ¶", tbProp = {6,1,2267,1,0,0}, nCount = 1, nRate =33, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÍòÄêÕäÂ¶",tbProp = {6,1,2268,1,0,0}, nCount = 1, nRate =33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¸ch Niªn Tr©n Lé", tbProp = {6,1,2266,1,0,0}, nCount = 1, nRate =34, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Thiªn Niªn Tr©n Lé", tbProp = {6,1,2267,1,0,0}, nCount = 1, nRate =33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "V¹n Niªn Tr©n Lé",tbProp = {6,1,2268,1,0,0}, nCount = 1, nRate =33, nExpiredTime = 10080, nBindState = -2},
 	},
 }
 
@@ -44,18 +44,18 @@ PhongVanLenhBai2011.tbAwardDaily2 =
 {
 	[1] =
 	{
-		{szName = "¸»¹ó½õÄÒ", tbProp = {6, 1, 2402,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Óñ¹Ş", tbProp = {6, 1, 2311,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÁîÅÆ", tbProp = {6, 2, 1020,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2, CallBack = function (nItemIndex) SetItemMagicLevel(nItemIndex, 1, random(211,216)) end},
-		{szName = "Ä¾ÈËÁîÅÆ", tbProp = {6, 1, 2969,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Phó Quı CÈm H¹p", tbProp = {6, 1, 2402,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Ngäc Qu¸n", tbProp = {6, 1, 2311,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "LÖnh bµi ", tbProp = {6, 2, 1020,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2, CallBack = function (nItemIndex) SetItemMagicLevel(nItemIndex, 1, random(211,216)) end},
+		{szName = "Méc nh©n", tbProp = {6, 1, 2969,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2},
 	},
 	[2] =
 	{
-		{szName = "ÁúÑªÍè", tbProp = {6,1,2117,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
-		{szName = "º£ÁúÖé×Ó", tbProp = {6,1,2115,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ë®ÔôÁîÅÆ", tbProp = {6,1,2745,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ìì±¦¿âÁî", tbProp = {6,1,2813,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ñ×µÛÁî", tbProp = {6,1,1617,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Long HuyÕt Hoµn", tbProp = {6,1,2117,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "H¶i Long Ch©u", tbProp = {6,1,2115,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "LÖnh Bµi Thñy TÆc", tbProp = {6,1,2745,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Thiªn B¶o Khè LÖnh", tbProp = {6,1,2813,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Viªm §Õ LÖnh", tbProp = {6,1,1617,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
 	},
 }
 
@@ -63,68 +63,68 @@ PhongVanLenhBai2011.tbWeekendAward =
 {
 	[1] =
 	{
-		{szName = "»Æ½ğÓ¡3¼¶ (Ç¿»¯)", tbProp = {0,3207}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Æ½ğÓ¡4¼¶ (Ç¿»¯)", tbProp = {0,3208}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Æ½ğÓ¡5¼¶ (Ç¿»¯)", tbProp = {0,3209}, nRate = 16, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Æ½ğÓ¡3¼¶(Èõ»¯)", tbProp = {0,3217}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Æ½ğÓ¡4¼¶(Èõ»¯)", tbProp = {0,3218}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»Æ½ğÓ¡5¼¶(Èõ»¯)", tbProp = {0,3219}, nRate = 16, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 3 (C­êng hãa)", tbProp = {0,3207}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 4 (C­êng hãa)", tbProp = {0,3208}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 5 (C­êng hãa)", tbProp = {0,3209}, nRate = 16, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 3 (Nh­îc hãa)", tbProp = {0,3217}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 4 (Nh­îc hãa)", tbProp = {0,3218}, nRate = 17, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hoµng Kim Ên CÊp 5 (Nh­îc hãa)", tbProp = {0,3219}, nRate = 16, nQuality = 1, nExpiredTime = 10080, nBindState = -2},
 	},
 	[2] =
 	{
-		{szName = "»Æ½ğÖ®¹û", tbProp = {6, 1,907,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "»ìÔªÁéÂ¶", tbProp = {6, 1,2312,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "É½ºÓÉçğ¢µØÍ¼(1000¿é)", tbProp = {6, 1,2514,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÔªË§Ãæ¾ß", tbProp = {0, 11,447,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Qu¶ Hoµng Kim", tbProp = {6, 1,907,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Hçn Nguyªn Linh Lé", tbProp = {6, 1,2312,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "M¶nh b¶n ®å s¬n hµ x· t¾c (1000 m¶nh)", tbProp = {6, 1,2514,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "MÆt n¹ Nguyªn so¸i", tbProp = {0, 11,447,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
 	},
 	[3] =
 	{
-		{szName = "°×¾ÔÍè", tbProp = {6, 1, 74, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 34, nBindState = -2},
-		{szName = "´ó°×¾ÔÍè", tbProp = {6, 1, 130, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
-		{szName = "ÌØ±ğ°×¾ÔÍè", tbProp = {6, 1, 1157, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
+		{szName = "B¹ch C©u hoµn", tbProp = {6, 1, 74, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 34, nBindState = -2},
+		{szName = "§¹i B¹ch C©u hoµn", tbProp = {6, 1, 130, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
+		{szName = "B¹ch C©u Hoµn ®Æc biÖt", tbProp = {6, 1, 1157, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
 	},
 	[4] =
 	{
-		{szName = "°×¾ÔÍè¼¼ÄÜ", tbProp = {6, 1, 1372,1,0,0}, nRate = 34, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "´ó°×¾ÔÍè(¼¼ÄÜ) ", tbProp = {6, 1, 977,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "°×¾ÔÍèÌØ±ğ¼¼ÄÜ", tbProp = {6, 1, 1182,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¹ch C©u Hoµn kü n¨ng", tbProp = {6, 1, 1372,1,0,0}, nRate = 34, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "§¹i B¹ch C©u hoµn(¼¼ÄÜ) ", tbProp = {6, 1, 977,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¹ch C©u Hoµn kü n¨ng ®Æc biÖt", tbProp = {6, 1, 1182,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
 	},
 	[5] =
 	{
-		{szName = "ËÄº£åĞÒ£µ¤ÀñºĞ", tbProp = {6, 1, 2398,1,0,0}, nCount = 1, nRate = 34, nExpiredTime = 10080, nBindState = -2},
-		{szName = "¾ÅÌìÔÆÓÎµ¤ÀñºĞ", tbProp = {6, 1, 2400,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÎåÖŞÁè¿Õµ¤ÀñºĞ", tbProp = {6, 1, 2399,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Tø H¶i Tiªu Diªu §¬n LÔ Hép", tbProp = {6, 1, 2398,1,0,0}, nCount = 1, nRate = 34, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Cöu Thiªn V©n Du §¬n LÔ Hép", tbProp = {6, 1, 2400,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Ngò Ch©u L¨ng Kh«ng §¬n LÔ Hép", tbProp = {6, 1, 2399,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
 	},
 	[6] =
 	{
-		{szName = "°ÙÄê»Ô»Í¹û",tbProp = {6, 1, 2269,1,0,0}, nCount = 1, nRate = 34, nExpiredTime = 10080, nBindState = -2},
-		{szName = "Ç§Äê»Ô»Í¹û", tbProp = {6, 1, 2270,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
-		{szName = "ÍòÄÜ»Ô»Í¹û", tbProp = {6, 1, 2271,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¸ch Niªn Huy Hoµng qu¶",tbProp = {6, 1, 2269,1,0,0}, nCount = 1, nRate = 34, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Thiªn Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2270,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
+		{szName = "V¹n Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2271,1,0,0}, nCount = 1, nRate = 33, nExpiredTime = 10080, nBindState = -2},
 
 	},
 } 
 
 function PhongVanLenhBai2011:ShowDialogDaily()
-	--¼ì²éÊäÈë·çÔÆÁîÅÆcodeÂë 
+	--¼ì²éÊäÈë·çÔÆLÖnh bµi codeÂë 
 	if tbPVLB_Check:IsNewPlayer() ~= 1 then
-		Talk(1, "", "¸óÏÂ²»×ãÌõ¼ş²Î¼Ó»î¶¯.")
+		Talk(1, "", "C¸c h¹ kh«ng ®ñ ®iÒu kiÖn tham gia ch­¬ng tr×nh.")
 		return
 	end
 	local nDay = tonumber(date("%w"))
 	local nTime =tonumber(GetLocalDate("%H%M"))
-	local szTitle = "Ã¿ÈÕ½±Àø"
+	local szTitle = "PhÇn th­ëng hµng ngµy"
 	local tbOpt = {}
 	
 	if (nTime >= 0 and nTime <= 1400) then
-		tinsert(tbOpt,  "Ã¿ÈÕ½±Àø/#PhongVanLenhBai2011:GetDailyAwardTimes1()")
+		tinsert(tbOpt,  "NhËn phÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes1()")
 	else
-		tinsert(tbOpt,  "Ã¿ÈÕ½±Àø/#PhongVanLenhBai2011:GetDailyAwardTimes2()")
+		tinsert(tbOpt,  "NhËn phÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes2()")
 	end
 	
 	if (nDay == 5 or nDay == 6 or nDay == 0) then
-		tinsert(tbOpt,  "ÖÜÄ©Áì½±Àø/#PhongVanLenhBai2011:GetWeekendAward()")
+		tinsert(tbOpt,  "NhËn phÇn th­ëng cuèi tuÇn/#PhongVanLenhBai2011:GetWeekendAward()")
 	end
-	tinsert(tbOpt,  "²»ĞèÒªÊ²Ã´/#PhongVanLenhBai2011:Cancel()")
+	tinsert(tbOpt,  "Kh«ng cÇn g×/#PhongVanLenhBai2011:Cancel()")
 	
 	Say(szTitle, getn(tbOpt), tbOpt)
 end
@@ -133,51 +133,51 @@ function PhongVanLenhBai2011:GetDailyAwardTimes1()
 	if PlayerFunLib:VnCheckInCity () ~= 1 then
 		return
 	end
-	if (PlayerFunLib:CheckTransLifeCount(2,"ĞèÒªÊÇµÚ¶ş´Î×ªÉúÈËÎï²ÅÄÜ»ñµÃ¸Ã½±Àø","==") ~= 1) then
+	if (PlayerFunLib:CheckTransLifeCount(2,"Ph¶i lµ nh©n vËt chuyÓn sinh lÇn 2 míi nhËn ®­îc phÇn th­ëng nµy","==") ~= 1) then
 		return
 	end
 	
-	 if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_AWARD_TIMES1, 1, "½ñÌì´óÏÀÒÑ¾­Áì¸Ã½±ÁË£¬Ã÷ÌìÔÙÀ´°É", "<") ~= 1)then
+	 if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_AWARD_TIMES1, 1, "H«m nay ®¹i hiÖp ®· nhËn phÇn th­ëng nµy råi, ngµy mai quay l¹i nhĞ!", "<") ~= 1)then
 	 	return
 	 end
 	 
 	local nGetAwardTimes = GetTask(self.TASK_COUNT_DAILY_AWARD_TIMES1)
 	if (nGetAwardTimes >= 60) then
-		Talk(1, "", "¸Ã½±Àø×î¶àÖ»ÄÜÁìÈ¡60´Î!")
+		Talk(1, "", "PhÇn th­ëng nµy chØ nhËn ®­îc tèi ®a 60 lÇn!")
 		return
 	end
 	
 	if CalcFreeItemCellCount() < 59 then
-		Talk(1, "", "´óÏÀµÄ×°±¸²»×ã59¸ö¿ÕÎ»!")
+		Talk(1, "", "Hµnh trang §¹i hiÖp kh«ng ®ñ 59 « trèng!")
 		return
 	end
 	
 	PlayerFunLib:AddTaskDaily(self.TASK_DAILY_AWARD_TIMES1, 1)
 	SetTask(self.TASK_COUNT_DAILY_AWARD_TIMES1, nGetAwardTimes + 1)
-	tbAwardTemplet:Give(self.tbAwardDaily1, 1, {"PhongVanLenhBai2011", "ÁìµÚÒ»´ÎÃ¿ÈÕ½±Àø"})
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "ÁìµÚÒ»´ÎÃ¿ÈÕ½±Àø", "N/A", 1)
+	tbAwardTemplet:Give(self.tbAwardDaily1, 1, {"PhongVanLenhBai2011", "NhanThuongHangNgayLan1"})
+	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "NhanThuongHangNgayLan1", "N/A", 1)
 end
 
 function PhongVanLenhBai2011:GetDailyAwardTimes2()
 	if PlayerFunLib:VnCheckInCity () ~= 1 then
 		return
 	end
-	if (PlayerFunLib:CheckTransLifeCount(2,"ĞèÒªÊÇµÚ¶ş´Î×ªÉúÈËÎï²ÅÄÜ»ñµÃ¸Ã½±Àø","==") ~= 1) then
+	if (PlayerFunLib:CheckTransLifeCount(2,"Ph¶i lµ nh©n vËt chuyÓn sinh lÇn 2 míi nhËn ®­îc phÇn th­ëng nµy","==") ~= 1) then
 		return
 	end
 	
-	 if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_AWARD_TIMES2, 1, "½ñÌì´óÏÀÒÑ¾­Áì¸Ã½±ÁË£¬Ã÷ÌìÔÙÀ´°É", "<") ~= 1)then
+	 if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_AWARD_TIMES2, 1, "H«m nay ®¹i hiÖp ®· nhËn phÇn th­ëng nµy råi, ngµy mai quay l¹i nhĞ!", "<") ~= 1)then
 	 	return
 	 end
 	 
 	local nGetAwardTimes = GetTask(self.TASK_COUNT_DAILY_AWARD_TIMES2)
 	if (nGetAwardTimes >= 60) then
-		Talk(1, "", "¸Ã½±Àø×î¶àÖ»ÄÜÁìÈ¡60´Î!")
+		Talk(1, "", "PhÇn th­ëng nµy chØ nhËn ®­îc tèi ®a 60 lÇn!")
 		return
 	end
 	
 	if CalcFreeItemCellCount() < 59 then
-		Talk(1, "", "´óÏÀµÄ×°±¸²»×ã59¸ö¿ÕÎ»!")
+		Talk(1, "", "Hµnh trang §¹i hiÖp kh«ng ®ñ 59 « trèng!")
 		return
 	end
 	
@@ -187,41 +187,41 @@ function PhongVanLenhBai2011:GetDailyAwardTimes2()
 	local _ , nTongID = GetTongName()
 	if (nTongID > 0) then
 		AddContribution(2000)
-		Msg2Player("Äú»ñµÃ2000°ï»á¹±Ï×µã")
---		WriteLog(date("%Y%m%d %H%M%S").."\t".."PhongVanLenhBai2011"..GetAccount().."\t"..GetName().."\t".."»ñµÃ2000°ï»á¹±Ï×µã")
-		tbLog:PlayerActionLog("PhongVanLenhBai", "Ã¿ÈÕÁì½±µÚ¶ş´Î", "2000°ï»á¹±Ï×µã")
+		Msg2Player("B¹n nhËn ®­îc 2000 ®iÓm cèng hiÕn bang héi")
+--		WriteLog(date("%Y%m%d %H%M%S").."\t".."PhongVanLenhBai2011"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng ®­îc 2000 ®iÓm cèng hiÕn bang héi")
+		tbLog:PlayerActionLog("PhongVanLenhBai", "NhanThuongHangNgayLan2", "2000 ®iÓm cèng hiÕn bang héi")
 	end
 	
 	tbAwardTemplet:Give(self.tbAwardDaily2, 1, {"PhongVanLenhBai2011", "NhanThuongHangNgayLan2"})
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "Ã¿ÈÕÁì½±µÚ¶ş´Î", "N/A", 1)
+	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "NhanThuongHangNgayLan2", "N/A", 1)
 end
 
 function PhongVanLenhBai2011:GetWeekendAward()
 	if PlayerFunLib:VnCheckInCity () ~= 1 then
 		return
 	end
-	if (PlayerFunLib:CheckTransLifeCount(2,"ĞèÒªÊÇµÚ¶ş´Î×ªÉúÈËÎï²ÅÄÜ»ñµÃ¸Ã½±Àø","==") ~= 1) then
+	if (PlayerFunLib:CheckTransLifeCount(2,"Ph¶i lµ nh©n vËt chuyÓn sinh lÇn 2 míi nhËn ®­îc phÇn th­ëng nµy","==") ~= 1) then
 		return
 	end
 	
-	if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_WEEKEND_AWARD, 1, "½ñÌì´óÏÀÒÑ¾­Áì¸Ã½±ÁË£¬Ã÷ÌìÔÙÀ´°É", "<") ~= 1)then
+	if (PlayerFunLib:CheckTaskDaily(self.TASK_DAILY_WEEKEND_AWARD, 1, "H«m nay ®¹i hiÖp ®· nhËn phÇn th­ëng nµy råi, ngµy mai quay l¹i nhĞ!", "<") ~= 1)then
 	 	return
 	 end
 	
 	local nGetAwardTimes = GetTask(self.TASK_COUNT_WEEKEND_AWARD)
 	if (nGetAwardTimes >= 60) then
-		Talk(1, "", "¸Ã½±Àø×î¶àÖ»ÄÜÁìÈ¡60´Î!")
+		Talk(1, "", "PhÇn th­ëng nµy chØ nhËn ®­îc tèi ®a 60 lÇn!")
 		return
 	end
 	
 	if CalcFreeItemCellCount() < 59 then
-		Talk(1, "", "´óÏÀµÄ×°±¸²»×ã59¸ö¿ÕÎ»!")
+		Talk(1, "", "Hµnh trang §¹i hiÖp kh«ng ®ñ 59 « trèng!")
 		return
 	end
 	
 	PlayerFunLib:AddTaskDaily(self.TASK_DAILY_WEEKEND_AWARD, 1)
 	SetTask(self.TASK_COUNT_WEEKEND_AWARD, nGetAwardTimes + 1)
-	tbAwardTemplet:Give(self.tbWeekendAward, 1, {"PhongVanLenhBai", "ÁìÈ¡ÖÜÄ©½±Àø"})
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "ÁìÈ¡ÖÜÄ©½±Àø", "N/A", 1)
+	tbAwardTemplet:Give(self.tbWeekendAward, 1, {"PhongVanLenhBai", "NhanThuongCuoiTuan"})
+	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "NhanThuongCuoiTuan", "N/A", 1)
 end
 

@@ -10,7 +10,7 @@ end;
 
 npccount = GetTask(SJKILLNPC) + 1;
 SetTask(SJKILLNPC, npccount);
-str1 = "<#>ÄãÄ¿Ç°¹²É±µĞNpcÊıÁ¿ÔöÎª"..npccount;
+str1 = "<#>Tæng sè Npc ®· tiªu diÖt t¨ng lªn "..npccount;
 Msg2Player(str1);
 
 nCount = GetMissionV(MS_J_NPCDEATH) + 1;

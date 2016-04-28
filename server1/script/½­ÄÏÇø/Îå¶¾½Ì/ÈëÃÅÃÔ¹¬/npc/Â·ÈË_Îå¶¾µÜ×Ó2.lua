@@ -9,15 +9,15 @@ function main()
 		if (HaveItem(227) == 1) and (HaveItem(223) == 1) and (HaveItem(224) == 1) and (HaveItem(225) == 1) and (HaveItem(226) == 1) then
 			enroll_prise()
 		else
-			Talk(1,"","Á·¹¦Ê±¼ä²»¹»£¬ÄãÔõÃ´ÓÖÀ´Õâ?")
+			Talk(1,"","Thêi gian luyÖn c«ng vÉn ch­a ®ñ, t¹i sao ng­¬i l¹i ra ®©y?")
 		end
 	else							-- ³£¹æ¶Ô»°
-		Talk(1,"","Îå¶¾¶´ÀïºÜÎ£ÏÕ£¬Äã²»ÒªÂÒ×ß")
+		Talk(1,"","Trong ®éng Ngò §éc rÊt nguy hiÓm, ng­¬i chí cã ®i l¹i lung tung ")
 	end
 end;
 
 function enroll_prise()
-	Talk(1,"","Îå¸ù¿×È¸Ã«ÒÑ¾­¹»ÁË. Ì«ºÃÁË!ÄãÒÑÕıÊ½³ÉÎª±¾ÃÅ¼ÇÃûµÜ×Ó")
+	Talk(1,"","N¨m Khæng t­íc vò ®· gom ®ñ. Hay l¾m! VËy lµ ng­¬i ®· chİnh thøc trë thµnh ®Ö tö kı danh cña bæn m«n råi")
 	DelItem(227)
 	DelItem(223)
 	DelItem(224)
@@ -27,6 +27,6 @@ function enroll_prise()
 	AddRepute(i)
 	Uworld37 = SetByte(GetTask(37),2,127)
 	SetTask(37,Uworld37)
-	AddNote("Íê³ÉÎå¶¾¶´Á·¹¦ÈÎÎñ¡£ÕıÊ½³ÉÎª<color=red>¼ÇÃûµÜ×Ó<color>±¾ÃÅ. ")
-	Msg2Player("Íê³ÉÎå¶¾¶´Á·¹¦ÈÎÎñ, ÕıÊ½³ÉÎª±¾ÃÅ¼ÇÃûµÜ×Ó. ")
+	AddNote("Hoµn thµnh nhiÖm vô luyÖn c«ng ë Ngò §éc ®éng, Chİnh thøc trë thµnh <color=red>Kı Danh ®Ö tö<color> cña bæn m«n. ")
+	Msg2Player("Hoµn thµnh nhiÖm vô luyÖn c«ng ë Ngò §éc ®éng, Chİnh thøc trë thµnh Kı Danh ®Ö tö cña bæn m«n. ")
 end;

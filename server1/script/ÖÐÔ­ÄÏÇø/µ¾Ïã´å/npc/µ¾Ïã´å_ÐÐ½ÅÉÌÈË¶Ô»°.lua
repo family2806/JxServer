@@ -7,20 +7,20 @@
 function main()
 	UTask_world38=GetTask(66)
 	if (UTask_world38 == 2) then
-		Say("ÏëÂò÷êÏãÂğ£¿ÎÒÓĞÕı×ÚÃûÒ©£¬Ö»Òª200Á½! ", 2 ,"Âò/yes","²»Âò/no")
+		Say("Muèn mua x¹ h­¬ng kh«ng? Ta cã thuèc danh tiÕng chİnh t«ng ®©y, chØ cÇn 200 l­îng th«i! ", 2 ,"Mua/yes","Kh«ng mua/no")
 	else	
-		Talk(1,"","×÷ÎªĞĞ½ÅÉÌÈË£¬×ßÄÏ´³±±£¬ÕæÊÇ²»Ò×£¬¿´ÎÒÊÖÖĞµÄ»õÎï£¬ºÜÄÑÅªµ½ºÃ»õ!")
+		Talk(1,"","Lµm Hµnh c­íc Th­¬ng nh©n tõ nam ra b¾c thËt kh«ng dÔ, xem nh÷ng hµng ho¸ trong tay ta ®©y, khã cã thÓ kiÕm ®­îc hµng tèt h¬n!")
 	end
 end;
 
 function yes()
 	if (GetCash()<200) then
-		Talk(1,"","µÈÄãÓĞÇ®ÁËÀ´ÕÒÎÒ!")
+		Talk(1,"","§îi ng­¬i cã tiÒn råi h·y ®Õn t×m ta!")
 	else
 		Pay(200)
 		AddEventItem(142)
-		Msg2Player("´ÓĞĞ½ÅÉÌÈË´¦Âòµ½÷êÏã. ")
-		AddNote("´ÓĞĞ½ÅÉÌÈË´¦Âòµ½÷êÏã. ")
+		Msg2Player("Tõ chç Hµnh tÈu th­¬ng nh©n mua ®­îc X¹ H­¬ng. ")
+		AddNote("Tõ chç Hµnh tÈu th­¬ng nh©n mua ®­îc X¹ H­¬ng. ")
 	end
 end
 

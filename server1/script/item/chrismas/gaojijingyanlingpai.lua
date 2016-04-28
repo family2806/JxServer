@@ -10,5 +10,5 @@ function main()
 		SetTask(TAB_ACTION[tabidx][7][2], GetCurServerTime() + 30)
 	end;
 	
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>¸ß¼¶¾­ÑéÁîÅÆ<color>£¬30ÃëÄÚ»ñµÃ¾­ÑéÎªÔ­À´µÄ4±¶¡£")
+	Msg2Player("<#> B¹n sö dông 1 <color=0xB5FDD7>LÖnh bµi ®iÓm kinh nghiÖm cao cÊp<color>, trong 30 gi©y ®iÓm kinh nghiÖm nhËn ®­îc gÊp 4 lÇn.")
 end;

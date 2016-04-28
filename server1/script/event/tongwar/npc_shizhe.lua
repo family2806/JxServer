@@ -28,19 +28,19 @@ function main()
 			tongwar_create()
 			tongwar_cityrank();
 		end;
-		CreateTaskSay({"<dec><npc>ÌìÏÂµÚÒ»°ïÕ½¶ÓµÇ¼Ç»î¶¯ÕıÔÚ½øĞĞ£¬ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÂğ? ",
-					"¿´³ÉÔ±Ãûµ¥/onetong_showlistmem",
-					"±¨Ãû²Î¼ÓÌìÏÂµÚÒ»°ï/onetong_signupmem",
-					"ÉÏ½»ÎïÆ·Ö§Ô®ËÎ½ğ/#GiveSupportItem:OpenUI()",
-					"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>Ho¹t ®éng ®¨ng kı chiÕn ®éi Thiªn H¹ §Ö NhÊt Bang ®ang tiÕn hµnh, ng­¬i t×m ta cã viÖc g×: ",
+					"Xem danh s¸ch thµnh viªn/onetong_showlistmem",
+					"B¸o danh tham gia Thiªn H¹ §Ö NhÊt Bang/onetong_signupmem",
+					"Giao nép vËt phÈm hæ trî Tèng Kim/#GiveSupportItem:OpenUI()",
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 		
 	elseif (nDate >= ONETONG_START_TITLE and nDate <= ONETONG_ENDLE_TITLE) then
 		
-		CreateTaskSay({format("<dec><npc>ÎÒÊÇ¸ºÔğËÍ³ÆºÅ%s ¸ø°ï»á%s. ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÂğ?", "¸ß¼¶µÚÒ»°ï", %SZTONGNAME_ONETONG ),
-					format("ÎÒÊÇ°ïµÄ³ÉÔ±%s./onetong_awardtitle", %SZTONGNAME_ONETONG),
-					"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({format("<dec><npc>T¹i h¹ phô tr¸ch tÆng danh hiÖu %s cho bang %s. Ng­¬i t×m ta cã viÖc g×?", "Cao CÊp §Ö NhÊt Bang", %SZTONGNAME_ONETONG ),
+					format("Ta lµ thµnh viªn cña bang %s./onetong_awardtitle", %SZTONGNAME_ONETONG),
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 	else
-		CreateTaskSay({format("<dec><npc>ÄúºÃ %s!", GetName()), "½áÊø¶Ô»°/OnCancel" });
+		CreateTaskSay({format("<dec><npc>Chµo %s!", GetName()), "KÕt thóc ®èi tho¹i/OnCancel" });
 	end;
 	
 end;
@@ -48,13 +48,13 @@ end;
 function onetong_showlistmem()
 	local n_lid = tongwar_check_ownerright(1);
 	if (FALSE(n_lid)) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
 	local szLeagueName = LG_GetLeagueInfo(n_lid);
 	if (szLeagueName ~= _TONGWAR_ARRRANK[1][1]) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
@@ -63,12 +63,12 @@ function onetong_showlistmem()
 	end;
 	
 	if (_TB_ONETONG_MEMLIST[1] == 0) then
-		CreateTaskSay({"<dec><npc>Ä¿Ç°Ãûµ¥ÉÏÃ»ÓĞ³ÉÔ±.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>HiÖn kh«ng cã thµnh viªn nµo trong danh s¸ch.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 1;
 	end;
 	
 	local tbOpp = onetong_selfinfo2next(0);
-	tinsert(tbOpp, 1, "<dec><npc>³ÉÔ±Ãûµ¥: ")
+	tinsert(tbOpp, 1, "<dec><npc>Danh s¸ch thµnh viªn: ")
 	CreateTaskSay(tbOpp);
 	
 end;
@@ -104,9 +104,9 @@ function OnCancel()
 end;
 
 function onetong_managemem(szmem, npos)
-	CreateTaskSay({format("<dec><npc>³ÉÔ±Ïë¿´: <enter>%s", szmem), 
-			format("È¡Ïû³ÉÔ±/#onetong_delonemem([[%s]], %d)",szmem, npos),
-			"½áÊø¶Ô»°/OnCancel"		});
+	CreateTaskSay({format("<dec><npc>Thµnh viªn muèn xem: <enter>%s", szmem), 
+			format("Lo¹i bá thµnh viªn/#onetong_delonemem([[%s]], %d)",szmem, npos),
+			"KÕt thóc ®èi tho¹i/OnCancel"		});
 end;
 
 function onetong_delonemem(szmem, npos)
@@ -114,9 +114,9 @@ function onetong_delonemem(szmem, npos)
 	if (FALSE(n_lid)) then
 		return
 	end;
-	CreateTaskSay({format("<dec><npc>È·ÈÏÏëÈ¡Ïû³ÉÔ±:<enter>%s",szmem),
-			format("Í¬Òâ/#onetong_suredelmem([[%s]], %d)",szmem, npos),
-			"·ÅÆú/OnCancel"});
+	CreateTaskSay({format("<dec><npc>X¸c nhËn muèn lo¹i bá thµnh viªn:<enter>%s",szmem),
+			format("§ång ı!/#onetong_suredelmem([[%s]], %d)",szmem, npos),
+			"Hñy bá /OnCancel"});
 end;
 
 function onetong_suredelmem(szmem, npos)
@@ -126,7 +126,7 @@ function onetong_suredelmem(szmem, npos)
 		return
 	end;
 	if (LG_GetMemberTask(ONETONG_LGTYPE, SZONETONG_LGNAME, szmem, 1) == 1) then
-		CreateTaskSay({"<dec><npc>ÌìÏÂµÚÒ»°ï°ïÖ÷²»ÄÜ´ÓÃûµ¥ÖĞÒÆ³ı.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>Bang chñ Thiªn H¹ §Ö NhÊt Bang kh«ng thÓ bŞ lo¹i khái danh s¸ch.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end;
 	
@@ -136,13 +136,13 @@ function onetong_suredelmem(szmem, npos)
 	
 	local n_lid = tongwar_check_ownerright(1);
 	if (FALSE(n_lid)) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
 	local szLeagueName = LG_GetLeagueInfo(n_lid);
 	if (szLeagueName ~= _TONGWAR_ARRRANK[1][1]) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
@@ -161,7 +161,7 @@ function onetong_suredelmem(szmem, npos)
 	if (_TB_ONETONG_MEMLIST[1] == 0) then
 		_TB_ONETONG_MEMLIST[1] = -1;
 	end;
-	CreateTaskSay({format("<dec><npc>ÒÑÈ¡Ïû³ÉÔ±:<enter>%s", szmem), "½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({format("<dec><npc>§· lo¹i bá thµnh viªn:<enter>%s", szmem), "KÕt thóc ®èi tho¹i/OnCancel"});
 end;
 
 function onetong_selfinfo2next( num )
@@ -171,7 +171,7 @@ function onetong_selfinfo2next( num )
 		for i = num+1, num+10 do
 			opp[ getn(opp) + 1 ] = format("%s/#onetong_managemem([[%s]],%d)", _TB_ONETONG_MEMLIST[2][i],_TB_ONETONG_MEMLIST[2][i], i);
 		end
-		opp[getn(opp)+1] = format("Trang k? /#onetong_selfinfo2next(%d)", (num+10));
+		opp[getn(opp)+1] = format("Trang kÕ /#onetong_selfinfo2next(%d)", (num+10));
 	else
 		--for i = num+1, getn( _TB_ONETONG_MEMLIST[2] ) do
 		for i = num+1, _TB_ONETONG_MEMLIST[2].n do
@@ -183,20 +183,20 @@ function onetong_selfinfo2next( num )
 	if( num == 0 ) then
 		return opp;
 	end;
-	tinsert(opp, 1, "<dec><npc>³ÉÔ±Ãûµ¥: ");
+	tinsert(opp, 1, "<dec><npc>Danh s¸ch thµnh viªn: ");
 	CreateTaskSay(opp);
 end
 
 function onetong_signupmem()
 	local n_lid = tongwar_check_ownerright(1);
 	if (FALSE(n_lid)) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
 	local szLeagueName = LG_GetLeagueInfo(n_lid);
 	if (szLeagueName ~= _TONGWAR_ARRRANK[1][1]) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞµÚ11´ÎÎäÁÖµÚÒ»°ï°ïÖ÷²ÅÄÜÖ´ĞĞ¸Ã²Ù×÷.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ Vâ L©m §Ö NhÊt Bang lÇn 11 míi cã thÓ thùc hiÖn thao t¸c nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
@@ -208,15 +208,15 @@ function onetong_signupmem()
 	local n_size = GetTeamSize();
 	
 	if (n_size < 2) then
-		CreateTaskSay({"<dec><npc>ÇëÓëÖ®Ç°µÄ³ÉÔ±×é¶ÓºóÔÙ±¨Ãû²Î¼Ó.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>H·y tæ ®éi víi thµnh viªn tr­íc råi míi b¸o danh tham gia.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	elseif (n_size > 2) then
-		CreateTaskSay({"<dec><npc>Ã¿´Î±¨ÃûĞèÒªÓëÒ»¸ö³ÉÔ±×é¶Ó.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>Mçi lÇn b¸o danh cÇn tæ ®éi víi 1 thµnh viªn.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end;
 	
 	if (IsCaptain() == 0) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞ¶Ó³¤²ÅÄÜ½øĞĞ±¨Ãû.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã ®éi tr­ëng míi cã thÓ tiÕn hµnh b¸o danh.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
@@ -226,7 +226,7 @@ function onetong_signupmem()
 		nCurMemCnt = _TB_ONETONG_MEMLIST[1];
 	end;
 	if (nCurMemCnt >= ONETONG_MAX_SIGNMEM) then
-		CreateTaskSay({"<dec><npc>ÌìÏÂµÚÒ»°ï³ÉÔ±Ãûµ¥ÒÑ¹º£¬²»ÄÜ¼ÌĞø±¨ÃûÁË.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>Danh s¸ch thµnh viªn Thiªn H¹ §Ö NhÊt Bang ®· ®ñ sè, kh«ng thÓ tiÕp tôc b¸o danh.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end;
 	
@@ -250,12 +250,12 @@ function onetong_signupmem()
 	PlayerIndex = oldPlayer;
 	if (bp == 1) then
 		if (nfact ~= -1) then
-			CreateTaskSay({format("<dec><npc>ÄãÈ·ÈÏÏë±¨Ãû¸ø<color=yellow>%s<color>Âğ?",szmemname), format("ÎÒÍ¬Òâ#onetong_addmemlist([[%s]])", szmemname),"½áÊø¶Ô»°/OnCancel"});
+			CreateTaskSay({format("<dec><npc>Ng­¬i x¸c nhËn muèn b¸o danh cho <color=yellow>%s<color> kh«ng?",szmemname), format("Ta ®ång ı/#onetong_addmemlist([[%s]])", szmemname),"KÕt thóc ®èi tho¹i/OnCancel"});
 		else
-			CreateTaskSay({"<dec><npc>°××Ö³ÉÔ±²»ÄÜ²Î¼Ó±¨Ãû!", "½áÊø¶Ô»°/OnCancel"});
+			CreateTaskSay({"<dec><npc>Thµnh viªn ch÷ tr¾ng kh«ng thÓ b¸o danh tham gia!", "KÕt thóc ®èi tho¹i/OnCancel"});
 		end;
 	else
-		CreateTaskSay({format("<dec><npc>Íæ¼Ò<color=yellow>%s<color> Ä¿Ç°ÒÑÓĞÃû×ÖÔÚÃûµ¥ÉÏ!",szmemname), "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({format("<dec><npc>Ng­êi ch¬i <color=yellow>%s<color> hiÖn ®· cã tªn trong danh s¸ch!",szmemname), "KÕt thóc ®èi tho¹i/OnCancel"});
 	end;
 end;
 
@@ -263,7 +263,7 @@ function onetong_addmemlist(szmemname)
 	--Fix bug member disconnect while registrering - Modified by DinhHQ - 20110520
 	local nPIndex = SearchPlayer(szmemname)
 	if nPIndex <= 0 then
-		CreateTaskSay({format("<dec><npc>Íæ¼Ò <color=yellow>%s<color> ±¨ÃûÊ§°Ü.", szmemname), "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({format("<dec><npc>Ng­êi ch¬i <color=yellow>%s<color> b¸o danh thÊt b¹i.", szmemname), "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	
@@ -271,14 +271,14 @@ function onetong_addmemlist(szmemname)
 		
 		nPIndex = SearchPlayer(szmemname)
 		if nPIndex <= 0 then
-		CreateTaskSay({format("<dec><npc>Íæ¼Ò<color=yellow>%s<color> ±¨ÃûÊ§°Ü.", szmemname), "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({format("<dec><npc>Ng­êi ch¬i <color=yellow>%s<color> b¸o danh thÊt b¹i.", szmemname), "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 		
 		local ret = onetong_applyaddmem(ONETONG_LGTYPE, SZONETONG_LGNAME, szmemname);
 		if (ret == 1 and onetong_addacclist(szmemname) == 1) then
-			CreateTaskSay({format("<dec><npc>Íæ¼Ò<color=yellow>%s<color> ±¨Ãû³É¹¦!", szmemname), "½áÊø¶Ô»°/OnCancel"});
-			Msg2Team(format("Íæ¼Ò <color=yellow>%s<color> ±¨Ãû³É¹¦!", szmemname))
+			CreateTaskSay({format("<dec><npc>Ng­êi ch¬i <color=yellow>%s<color> b¸o danh thµnh c«ng!", szmemname), "KÕt thóc ®èi tho¹i/OnCancel"});
+			Msg2Team(format("Ng­êi ch¬i <color=yellow>%s<color> b¸o danh thµnh c«ng!", szmemname))
 			_TB_ONETONG_MEMLIST[1] = _TB_ONETONG_MEMLIST[1] + 1;
 			--_TB_ONETONG_MEMLIST[2][getn(_TB_ONETONG_MEMLIST[2]) + 1] = szmemname;
 			tinsert(_TB_ONETONG_MEMLIST[2], szmemname);
@@ -291,7 +291,7 @@ function onetong_addmemlist(szmemname)
 					szmemname
 					));
 		else
-			CreateTaskSay({format("<dec><npc>Íæ¼Ò<color=yellow>%s<color> ±¨ÃûÊ§°Ü.", szmemname), "½áÊø¶Ô»°/OnCancel"});
+			CreateTaskSay({format("<dec><npc>Ng­êi ch¬i <color=yellow>%s<color> b¸o danh thÊt b¹i.", szmemname), "KÕt thóc ®èi tho¹i/OnCancel"});
 		end;
 	end;
 end;
@@ -339,7 +339,7 @@ function onetong_awardtitle()
 	local n_titletype = Title_GetTitleInfo(n_title);
 	
 	if((nTongID == 0 or nTongID == -1) or szTongName ~= %SZTONGNAME_ONETONG or n_titletype == 1 or GetJoinTongTime() < 10080) then
-		CreateTaskSay({"<dec><npc>".."¸óÏÂ²»·ûºÏÌõ¼şÁì½±", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."C¸c h¹ kh«ng phï hîp ®iÒu kiÖn lÜnh th­ëng", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	
@@ -349,7 +349,7 @@ function onetong_awardtitle()
 	
 	local sz_title = Title_GetTitleName(n_title);
 	
-	CreateTaskSay({"<dec><npc>".."¹§Ï²£¬¸óÏÂºÜÖµµÃÎÒÇÕÅå.", "½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({"<dec><npc>".."Chóc mõng, t¹i h¹ rÊt ®¸ng ®­îc ta kİnh phôc.", "KÕt thóc ®èi tho¹i/OnCancel"});
 	
-	Msg2Player(format("¹§Ï²Äú»ñµÃ³ÆºÅ<color=yellow>%s<color>", sz_title));
+	Msg2Player(format("Chóc mõng b¹n ®· nhËn ®­îc danh hiÖu <color=yellow>%s<color>", sz_title));
 end

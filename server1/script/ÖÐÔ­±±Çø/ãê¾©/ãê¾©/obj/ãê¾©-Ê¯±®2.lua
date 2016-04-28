@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("ÁúÍ¤ºş",  0);
+Say("Long §×nh Hå ",  0);
 
 end;

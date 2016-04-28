@@ -110,7 +110,7 @@ function BingoMachine:OnRotate(nOdds)
 	if bFirstTime == 1 then
 		local nCoin = ODDS2COIN[nOdds][2] * INPOOLPENCENT
 
-		if nCount < ODDS2COIN[nOdds][2] or Gambler:PayCoin(ODDS2COIN[nOdds][2]) ~= 1 then -- ¿Û³ý»ìÔªÁéÂ¶
+		if nCount < ODDS2COIN[nOdds][2] or Gambler:PayCoin(ODDS2COIN[nOdds][2]) ~= 1 then -- ¿Û³ýHçn Nguyªn Linh Lé
 			self:SendResult(ROTATE_ERROR_PRINING, nCount, 0, 0)
 			return 
 		else
@@ -259,15 +259,15 @@ function BingoMachine:OnGetAward(nSelType)
 	  	tbAward.nExpiredTime = tbBingoMachineAward[nFinalType][1][nFinalLevel].nExpiredTime
 	  end
 		PlayerFunLib:GetItem(tbAward,nCount,"","")
-		strAwardDesc = nCount .. "¸ö" .. tbBingoMachineAward[nFinalType][1][nFinalLevel].szName
+		strAwardDesc = nCount .. "c¸i" .. tbBingoMachineAward[nFinalType][1][nFinalLevel].szName
 		strAward = "Equip\t" .. nCount .. "x" .. tbBingoMachineAward[nFinalType][1][nFinalLevel].szName
 	  if nFinalType == 5 then -- ±¦Ïä
 			local _,nTongID = GetTongName()
 			if (nTongID ~= 0)then
-				Msg2Tong(nTongID, format("°ï»á³ÉÔ± %s ·çÔÆ±¦µä¿ÉÒÔÁìÈ¡Ò»¸ö³äÂú±¦ÎïµÄ±¦Ïä!", GetName()))
+				Msg2Tong(nTongID, format("Thµnh viªn bang héi %s Phong V©n B¶o §iÖn nhËn ®­îc mét b¶o r­¬ng ®ùng ®Çy b¶o vËt!", GetName()))
 			end			
 		end
-	else  -- »ìÔªÁéÂ¶
+	else  -- Hçn Nguyªn Linh Lé
 		local nCount = tbBingoMachineAward[nFinalType][2][nFinalLevel] * ODDS2COIN[nOdds][1]
 		local nFreeItemCellLimit = ceil(nCount / 200)
 		if nCoin > 0 then
@@ -278,9 +278,9 @@ function BingoMachine:OnGetAward(nSelType)
 			self:SendGetAwardResult(S2C_GET_AWARD_ERR_NO_SPACE, 0)
 			return
 		end
-		local tbAward = {szName = "»ìÔªÁéÂ¶", tbProp = {6,1,2312,1,0,0}}
+		local tbAward = {szName = "Hçn Nguyªn Linh Lé", tbProp = {6,1,2312,1,0,0}}
 		PlayerFunLib:GetItem(tbAward, nCount, "", "")
-		strAwardDesc = nCount ..  "»ìÔªÁéÂ¶"
+		strAwardDesc = nCount ..  "Hçn Nguyªn Linh Lé"
 		strAward = "Refining\t" .. nCount
 	end
 
@@ -291,9 +291,9 @@ function BingoMachine:OnGetAward(nSelType)
 		local nItemIndex = AddItem(6,1,3060,1,0,0);	
 		SetSpecItemParam(nItemIndex, 1, nCoin)
 		SyncItem(nItemIndex)	
-		Say(format("ÄúµÃµ½Ò»¸öÀñ°ü×°×Å %d  »ìÔªÁéÂ¶!", nCoin), 0);			
-		AddGlobalNews(format("Íæ¼Ò:  <color=green>%s<color> µÃµ½ %d ·çÔÆ±¦µä²É½ð³ØÖÐµÄ»ìÔªÁéÂ¶!!!", GetName(), nCoin))
-		Msg2SubWorld(format("Íæ¼Ò:  <color=green>%s<color> µÃµ½ %d ·çÔÆ±¦µä²É½ð³ØÖÐµÄ»ìÔªÁéÂ¶!!!", GetName(), nCoin))
+		Say(format("Ng­¬i nhËn ®­îc 1 LÔ Bao chøa %d Hçn Nguyªn Linh Lé!", nCoin), 0);			
+		AddGlobalNews(format("Ng­êi ch¬i:  <color=green>%s<color> nhËn ®­îc %d Hçn Nguyªn Linh Lé trong Th¸i Kim Tr× cña Phong V©n B¶o §iÖn !!!", GetName(), nCoin))
+		Msg2SubWorld(format("Ng­êi ch¬i:  <color=green>%s<color> nhËn ®­îc %d Hçn Nguyªn Linh Lé trong Th¸i Kim Tr× cña Phong V©n B¶o §iÖn !!!", GetName(), nCoin))
 	end
 	Gambler:SetBigAward(0)
 	Gambler:SetState(STATE_NORMAL)
@@ -329,4 +329,4 @@ function OpenBingoMachine()
 	ScriptProtocol:SendData("emSCRIPT_PROTOCOL_BINGO_OPENWINDOW", handle)
 	OB_Release(handle)
 end
-pEventType:Reg("L?Quan", "·çÔÆ±¦µä", OpenBingoMachine, {})
+pEventType:Reg("LÔ Quan", "Phong V©n B¶o §iÖn", OpenBingoMachine, {})

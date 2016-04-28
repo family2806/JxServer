@@ -1,6 +1,6 @@
 tbclass_newyear2008_zongbing = {}
 tbclassname = tbclass_newyear2008_zongbing
-tbclassname.TITLE = "ôÕ×Ó"
+tbclassname.TITLE = "B¸nh ch­ng"
 tbclassname.LIMIT_LEVEL = 50
 tbclassname.tbdate = {}
 tbclassname.tbdate.nstart = 802020000
@@ -11,48 +11,48 @@ tbclassname.mareial =
 		ntask = 1872,
 		tbitem = {
 			{
-				G=6,D=1,P=1662,szname="ÉÏµÈôÕ×Ó",nexp=2000000,
+				G=6,D=1,P=1662,szname="B¸nh ch­ng th­îng h¹ng",nexp=2000000,
 				tbrandomitem =
 				{
 					ntotalprop = 100,
 					tbitem = 
 					{
-						{G=6,D=1,P=72,LV=1,szname="ÌìÉ½±¦Â¶",prob=14.89},
-						{G=6,D=1,P=125,LV=1,szname="¹ğ»¨¾Æ",prob=16.0},
-						{G=0,D=11,P=201,LV=1,szname="µØ¹«Í·Ãæ¾ß",prob=10.90},
-						{G=6,D=1,P=1482,LV=1,szname="ÓñÅÆ",prob=0.01	},
-						{G=6,D=1,P=1481,LV=1,szname="½ğÅÆ"	 ,prob=0.05	},
-						{G=6,D=1,P=1480,LV=1,szname="ÒøÅÆ"	 ,prob=5.00	},
-						{G=6,D=1,P=147,LV=3,szname="3¼¶Ğş¾§¿óÊ¯"	 ,prob=22.0	},			
-						{G=6,D=1,P=147,LV=4,szname="4¼¶Ğş¾§¿óÊ¯",prob=16.0},
-						{G=6,D=1,P=147,LV=5,szname="5¼¶Ğş¾§¿óÊ¯",prob=2.0},
-						{G=6,D=1,P=147,LV=6,szname="6¼¶Ğş¾§¿óÊ¯",prob=1.0},
-						{G=6,D=1,P=147,LV=7,szname="7¼¶Ğş¾§¿óÊ¯",prob=0.10	},
-						{G=6,D=1,P=147,LV=8,szname="8¼¶Ğş¾§¿óÊ¯"	 ,prob=0.05	},
-						{G=6,D=1,P=71,LV=1,szname="ÏÉ²İÂ¶"	 ,prob=11.00	},
-						{G=6,D=1,P=1181,LV=1,szname="ÌØ±ğÏÉ²İÂ¶"	 ,prob=1.0	},					
+						{G=6,D=1,P=72,LV=1,szname="Thiªn s¬n  B¶o Lé ",prob=14.89},
+						{G=6,D=1,P=125,LV=1,szname="QuÕ Hoa Töu",prob=16.0},
+						{G=0,D=11,P=201,LV=1,szname="MÆt n¹ - §Çu «ng ®Şa",prob=10.90},
+						{G=6,D=1,P=1482,LV=1,szname="Ngäc Bµi",prob=0.01	},
+						{G=6,D=1,P=1481,LV=1,szname="Kim Bµi"	 ,prob=0.05	},
+						{G=6,D=1,P=1480,LV=1,szname="Ng©n Bµi"	 ,prob=5.00	},
+						{G=6,D=1,P=147,LV=3,szname="HuyÒn tinh kho¸ng th¹ch cÊp 3"	 ,prob=22.0	},			
+						{G=6,D=1,P=147,LV=4,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 4",prob=16.0},
+						{G=6,D=1,P=147,LV=5,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 5",prob=2.0},
+						{G=6,D=1,P=147,LV=6,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 6",prob=1.0},
+						{G=6,D=1,P=147,LV=7,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 7",prob=0.10	},
+						{G=6,D=1,P=147,LV=8,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 8"	 ,prob=0.05	},
+						{G=6,D=1,P=71,LV=1,szname="Tiªn Th¶o Lé "	 ,prob=11.00	},
+						{G=6,D=1,P=1181,LV=1,szname="Tiªn Th¶o Lé ®Æc biÖt"	 ,prob=1.0	},					
 					}
 				} 
 			},
-			{G=6,D=1,P=1663,szname="ºÃµÈôÕ×Ó",nexp=1500000,
+			{G=6,D=1,P=1663,szname="B¸nh ch­ng h¶o h¹ng",nexp=1500000,
 				tbrandomitem =
 				{
 					ntotalprop = 100,
 					tbitem = 
 					{
-						{G=6,D=1,P=124,LV=1,szname="¸£ÔµÂ¶£¨´ó) ",prob=19.5},
-						{G=6,D=1,P=72,LV=1,szname="ÌìÉ½±¦Â¶",prob=15.0},
-						{G=6,D=1,P=73,LV=1,szname="°Ù¹ûÂ¶",prob=14.0},
-						{G=6,D=1,P=71,LV=1,szname="ÏÉ²İÂ¶",prob=7.0	},
-						{G=6,D=1,P=125,LV=1,szname="¹ğ»¨¾Æ"	 ,prob=17.0	},
-						{G=0,D=11,P=201,LV=1,szname="µØ¹«Í·Ãæ¾ß"	 ,prob=15.0	},
-						{G=6,D=1,P=147,LV=3,szname="3¼¶Ğş¾§¿óÊ¯"	 ,prob=7.0	},		
-						{G=6,D=1,P=147,LV=4,szname="4¼¶Ğş¾§¿óÊ¯"	 ,prob=5.0	},		
-						{G=6,D=1,P=147,LV=5,szname="5¼¶Ğş¾§¿óÊ¯"	 ,prob=0.5	},						
+						{G=6,D=1,P=124,LV=1,szname="Phóc Duyªn Lé (§¹i) ",prob=19.5},
+						{G=6,D=1,P=72,LV=1,szname="Thiªn s¬n  B¶o Lé ",prob=15.0},
+						{G=6,D=1,P=73,LV=1,szname="B¸ch Qu¶ Lé ",prob=14.0},
+						{G=6,D=1,P=71,LV=1,szname="Tiªn Th¶o Lé ",prob=7.0	},
+						{G=6,D=1,P=125,LV=1,szname="QuÕ Hoa Töu"	 ,prob=17.0	},
+						{G=0,D=11,P=201,LV=1,szname="MÆt n¹ - §Çu «ng ®Şa"	 ,prob=15.0	},
+						{G=6,D=1,P=147,LV=3,szname="HuyÒn tinh kho¸ng th¹ch cÊp 3"	 ,prob=7.0	},		
+						{G=6,D=1,P=147,LV=4,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 4"	 ,prob=5.0	},		
+						{G=6,D=1,P=147,LV=5,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 5"	 ,prob=0.5	},						
 					}
 				}
 			},
-			{G=6,D=1,P=1664,szname="Ò»°ãôÕ×Ó",nexp=500000},
+			{G=6,D=1,P=1664,szname="B¸nh ch­ng th­êng",nexp=500000},
 		},	
 }
 
@@ -62,7 +62,7 @@ function main(sel)
 	local szkey = format("%s,%s,%s",prop[1],prop[2],prop[3])
 	local tbitem = tbclassname:selectitem(szkey)
 	if tbitem == nil then
-		Say("ÎïÆ·´íÎó£¬ÇëÁªÏµ¹ÜÀíÔ±",0)
+		Say("VËt phÈm sai, xin liªn hÖ víi ng­êi qu¶n lı.",0)
 		return 1
 	end
 	if tbclassname:check() == 0 then
@@ -83,7 +83,7 @@ function tbclassname:getradomitem(tbitem)
 				nsum = nsum + (nitem.prob*tbclass.ntotalprop)
 				if nsum >= p then
 					AddItem(nitem.G,nitem.D,nitem.P,nitem.LV,0,0)
-					local szstr = format("¹§Ï²Äã»ñµÃ1<color=yellow>%s<color>",nitem.szname)
+					local szstr = format("Chóc mõng b¹n nhËn ®­îc 1 <color=yellow>%s<color>",nitem.szname)
 					Msg2Player(szstr)
 					self:sdl_writelog(self.TITLE,szstr)
 					return
@@ -96,7 +96,7 @@ function tbclassname:useitem(naddexp)
 	if nexp + naddexp > self.mareial.nexpmax then
 		nexpn = self.mareial.nexpmax - nexp
 	end
-	local szstr = format("¹§Ï²Äã»ñµÃ<color=yellow>%s<color> ¾­Ñé.",nexpn)
+	local szstr = format("Chóc mõng b¹n nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm.",nexpn)
 	AddOwnExp(nexpn)
 	SetTask(self.mareial.ntask,nexp+nexpn)
 	Msg2Player(szstr)
@@ -113,23 +113,23 @@ function tbclassname:selectitem(szkey)
 end
 function tbclassname:check()
 	if self:check_date() == 0 then
-		Say("ôÕ×ÓÒÑ¹ıÆÚ£¬²»ÄÜÊ¹ÓÃ.",0)
+		Say("B¸nh ch­ng ®· qu¸ h¹n, kh«ng thÓ sö dông.",0)
 		return 2
 	end
 	if self:check_level() == 0 then
-		Say("µÈ¼¶²»×ã50¼¶£¬²»ÄÜÊ¹ÓÃ.",0)
+		Say("§¼ng cÊp ch­a ®¹t 50 kh«ng thÓ thùc dông.",0)
 		return 0
 	end
 	if self:check_pay() == 0 then
-		Say("Äã»¹Î´³äÖµ£¬²»ÄÜÊ¹ÓÃ.",0)
+		Say("B¹n vÉn ch­a n¹p thÎ, kh«ng thÓ sö dông.",0)
 		return 0
 	end
 	if self:check_exp() == 0 then
-		Say("×öôÕ×Ó»î¶¯£¬ÄúÒÑ´ïµ½×î¸ß¾­ÑéÖµ£¬²»ÄÜÔÙÊ¹ÓÃÁË.",0)
+		Say("Ho¹t ®éng lµm b¸nh ch­ng, b¹n ®· ®¹t ®iÓm kinh nghiÖm tèi ®a, kh«ng thÓ sö dông n÷a.",0)
 		return 0
 	end
 	if CalcFreeItemCellCount() < 1 then
-		Say("¿ÕÎ»²»×ã£¬Çë°²ÅÅÒ»ÏÂ×°±¸.",0)
+		Say("Kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.",0)
 		return 0
 	end
 	return 1

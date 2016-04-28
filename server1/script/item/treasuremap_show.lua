@@ -25,7 +25,7 @@ function GetItemDescription(name, magiclevel1, magiclevel2, magiclevel3, magicle
 local nRow = magiclevel1;
 
 	if magiclevel2==0 then
-		return "<enter>Ò»ÕÅ»­ÓĞÉ½Ë®µØÂöµÈÎ»ÖÃµÄÍ¼Æ¬£¬´«ÎÅ´ËÍ¼±êÊ¶ÁËÉñÃØ±¦²ØµÄËùÔÚµØ¡£<enter>È»¶ø¿´ÉÏÈ¥ÒÑ¾­ÆÆ¾É²»¿°£¬ËÆºõÖ»ÓĞ<color=green>ÁúÈª´å<color>µÄÀÏÈË<color=green>¸µÀ×Êé<color>·½ÄÜ½â¶Á´ËÍ¼¡£<enter>";
+		return "<enter>Mét bøc ®Şa ®å, h×nh nh­ h­íng dÉn ®­êng ®Õn kho b¸u.<enter> Tuy nhiªn ®· qu¸ cò kh«ng thÓ xem ®­îc, chØ cßn c¸ch ®Õn <color=green>Long TuyÒn Th«n<color> t×m <color=green>Phã L«i Th­<color> nhê gióp ®ì";
 	else
 		return showTreasureText(nRow)
 	end;
@@ -38,8 +38,8 @@ function showTreasureText(nRow)
 local strInfo = tabTreaPos:getCell("Text", nRow);
 local picPath = tabTreaPos:getCell("Pic", nRow);
 
-	return "<enter>Ò»ÕÅ»­ÓĞÉ½Ë®µØÂöµÈÎ»ÖÃµÄÍ¼Æ¬£¬´«ÎÅ´ËÍ¼±êÊ¶ÁËÉñÃØ±¦²ØµÄËùÔÚµØ¡£<enter><enter>"..
-		   "Í¼ÉÏÒşÒşÔ¼Ô¼ÏÔÊ¾³öÕâÀïÊÇ<color=green>"..strInfo.."<color><enter><enter>"..
-		   "<color=yellow>µ¥»÷ÓÒ¼ü¼´¿É¿ªÊ¼ÍÚ¾ò<color><enter>";
+	return "<enter>Mét bøc ®Şa ®å, h×nh nh­ h­íng dÉn ®­êng ®Õn kho b¸u.<enter><enter>"..
+		   "Trªn tranh Èn Èn hiÖn hiÖn ra n¬i ®©y lµ<color=green>"..strInfo.."<color><enter><enter>"..
+		   "<color=yellow>NhÊn chuét ph¶i cã thÓ b¾t ®Çu ®µo<color><enter>";
 
 end;

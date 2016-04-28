@@ -56,7 +56,7 @@ function OnMagicAttrib(nCallState, nTargetNpcIndex, nLauncherNpcIndex)
 	local _,_, nMapIndex = GetNpcPos(nTargetNpcIndex)
 	
 	
-	Msg2Map(SubWorldIdx2ID(nMapIndex), format("%s±»Îå²ÊÁúÖëÍÂ³öµÄÖ©ÖëË¿²ø×¡ÁË£¬¸Ï½ô°ÑÖëÍø´òµô£¬·ñÔò15Ãëºó%s¾Í»áÖĞ¶¾ËÀµô¡£", szName, szName))
+	Msg2Map(SubWorldIdx2ID(nMapIndex), format("%s bŞ Ngò S¾c Long Thï nh¶ ra t¬ ®éc quÊn quanh, nhanh chãng ®¸nh tan nã, nÕu kh«ng 15 gi©y sau sÏ bŞ tróng ®éc mµ chÕt.", szName, szName))
 end
 
 function OnTimer(nNpcIndex)

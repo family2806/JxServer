@@ -47,9 +47,9 @@ function OnLeave(RoleIndex)
 	PlayerIndex = RoleIndex;
 
 	if (GetMissionV(MS_STATE) ~=2 and GetCurCamp() ~= 1 and GetCurCamp()~=2 ) then 
-		str2 = GetName().."<#> Àë¿ªÈü³¡.";
+		str2 = GetName().."<#> Rêi khái ®Êu tr­êng.";
 	else
-		str2 = GetName().."<#> Àë¿ªÈü³¡."..GetMissionV(GetCurCamp()).."<#> ¿Û³ýÒ»¸ö»ý·Ö";
+		str2 = GetName().."<#> Rêi khái ®Êu tr­êng."..GetMissionV(GetCurCamp()).."<#> Trõ mét ®iÓm tÝch lòy";
 		SetMissionV(MS_TONG1VALUE + GetCurCamp() - 1, GetMissionV(MS_TONG1VALUE + GetCurCamp() - 1) - 1);
 	end;
 

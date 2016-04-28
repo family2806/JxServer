@@ -55,7 +55,7 @@ function Process(TreeIdx, Table)
 	DelTree(TreeIdx)
 	for Name, Step in Table.MemberState do
 		if (Table.Step ~= Step) then
-			BroadCast(Table, "Ê¥µ®Ê÷ÏûÊ§ÁË")
+			BroadCast(Table, "C©y gi¸ng sinh ®· biÕn mÊt")
 			WriteLog(format("[%s]Tree[%d] timeout: Step(%d), Captain(%s), MemberCount(%d)",
 				LOG_HEAD,
 				TreeIdx,
@@ -138,10 +138,10 @@ function Award(TreeIdx, Table)
 	local Name = GetName()
 	local Step = Table.MemberState[Name]
 	if (Step == nil) then
-		Say("ÕÒµ½×Ô¼ºµÄÊ¥µ®Ê÷Áì½±!")
+		Say("H·y t×m c©y gi¸ng sinh cña m×nh ®Ó lÜnh th­ëng!")
 		return
 	elseif (Step == Table.Step) then
-		Say("´óÏÀÒÑ¾­Áì¹ı½±ÁË!")
+		Say("§¹i hiÖp ®· nhËn th­ëng råi!")
 		return
 	end
 	local IsCaptain = 0
@@ -152,9 +152,9 @@ function Award(TreeIdx, Table)
 	AddOwnExp(Exp)
 	Table.MemberState[Name] = Table.Step
 	
-	Msg2Player(format("×é¶ÓÓĞ %dÈË, ´óÏÀµÃµ½ %u¾­Ñé", Table.MemberCount, Exp))
+	Msg2Player(format("Tæ ®éi cã %d ng­êi, ®¹i hiÖp nhËn %u ®iÓm kinh nghiÖm", Table.MemberCount, Exp))
 	WriteLog(format("[%s]Tree[%d]: %s get exp(%d)", LOG_HEAD, TreeIdx, Name, Exp))
-	Say(format("¹§Ï²´óÏÀµÃµ½½±Àø <color=red>%d<color> ¾­Ñé.", Exp))
+	Say(format("Chóc mõng ®¹i hiÖp ®· nhËn ®­îc phÇn th­ëng <color=red>%d<color> kinh nghiÖm.", Exp))
 end
 
 -- ¼ÆËãÁì½±¾­Ñé
@@ -181,58 +181,58 @@ ProcTable = {
 		OnTimeout = Process,					-- ¶¨Ê±Æ÷µ½ÆÚ´¥·¢µÄº¯Êı
 		Dialog = DecorateTree,					-- ÓëNPC¶Ô»°Ñ¡Ïî´¥·¢µÄº¯Êı
 		Timeout = 60,							-- ¶¨Ê±Æ÷Ê±¼ä£¨ÃëÊı£©
-		DlgMsg = "³ÉÔ± %sÒÑ³É¹¦°ÑÆ»¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ.",	-- ²Ù×÷Íê³ÉÌáÊ¾
-		ErrMsg = "ÒÑ°ÑÆ»¹û¹ÒÔÚÊ÷ÉÏÁË.",			-- ²Ù×÷Ê§°ÜÌáÊ¾
-		Hint = "Çë°ÑÆ»¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ!",			-- ½×¶Î¿ªÊ¼Ê±µÄÌáÊ¾
-		Option = "Çë°ÑÆ»¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ!",		-- ¶Ô»°Ñ¡Ïî,
+		DlgMsg = "Thµnh viªn %s ®· treo t¸o thµnh c«ng lªn c©y gi¸ng sinh.",	-- ²Ù×÷Íê³ÉÌáÊ¾
+		ErrMsg = "§· treo t¸o lªn c©y råi.",			-- ²Ù×÷Ê§°ÜÌáÊ¾
+		Hint = "Xin mêi treo t¸o lªn c©y gi¸ng sinh!",			-- ½×¶Î¿ªÊ¼Ê±µÄÌáÊ¾
+		Option = "Xin mêi treo t¸o lªn c©y gi¸ng sinh!",		-- ¶Ô»°Ñ¡Ïî,
 		NpcId = 1490,							-- ¹âÍºÍºµÄÊ¥µ®Ê÷
 		},
 	[2] = {
 		OnTimeout = Process,
 		Dialog = DecorateTree,
 		Timeout = 60,
-		DlgMsg = "³ÉÔ± %sÒÑ³É¹¦°ÑµÆ¹ÒÔÚÊ¥µ®Ê÷ÉÏ.",
-		ErrMsg = "ÒÑ°Ñ¹âÇò¹ÒÔÚÊ÷ÉÏÁË",
-		Hint = "Çë°Ñ¹âÇò¹ÒÔÚÊ¥µ®Ê÷ÉÏ!",
-		Option = "Çë°Ñ¹âÇò¹ÒÔÚÊ¥µ®Ê÷ÉÏ!",
+		DlgMsg = "Thµnh viªn %s ®· treo ®Ìn thµnh c«ng lªn c©y gi¸ng sinh.",
+		ErrMsg = "§· treo ®Ìn lªn c©y råi",
+		Hint = "Xin mêi treo ®Ìn lªn c©y gi¸ng sinh!",
+		Option = "Xin mêi treo ®Ìn lªn c©y gi¸ng sinh!",
 		NpcId = 1491,	-- ¹ÒÉÏÆ»¹ûµÄÊ¥µ®Ê÷
 		},
 	[3] = {
 		OnTimeout = Process,
 		Dialog = DecorateTree,
 		Timeout = 60,
-		DlgMsg = "³ÉÔ± %sÒÑ³É¹¦°ÑÌÇ¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ.",
-		ErrMsg = "ÒÑ°ÑÌÇ¹û¹ÒÔÚÊ÷ÉÏÁË",
-		Hint = "Çë°ÑÌÇ¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ",
-		Option = "Çë°ÑÌÇ¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ",
+		DlgMsg = "Thµnh viªn %s ®· treo kÑo thµnh c«ng lªn c©y gi¸ng sinh.",
+		ErrMsg = "§· treo kÑo lªn c©y råi",
+		Hint = "Xin mêi treo kÑo lªn c©y gi¸ng sinh",
+		Option = "Xin mêi treo kÑo lªn c©y gi¸ng sinh",
 		NpcId = 1492,	-- ¹ÒÉÏ¹âÇòµÄÃµ¹åÊ÷
 		},
 	[4] = {
 		OnTimeout = Process,
 		Dialog = DecorateTree,
 		Timeout = 60,
-		DlgMsg = "³ÉÔ± %sÒÑ³É¹¦°ÑÖÓ¹ÒÔÚÊ¥µ®Ê÷ÉÏ.",
-		ErrMsg = "ÒÑ°ÑÖÓ¹ÒÔÚÊ÷ÉÏÁË.",
-		Hint = "Çë°ÑÖÓÔÚÊ¥µ®Ê÷ÉÏ.",
-		Option = "Çë°ÑÖÓÔÚÊ¥µ®Ê÷ÉÏ.",
+		DlgMsg = "Thµnh viªn %s ®· treo chu«ng thµnh c«ng lªn c©y gi¸ng sinh.",
+		ErrMsg = "§· treo chu«ng lªn c©y råi.",
+		Hint = "Xin mêi treo chu«ng lªn c©y gi¸ng sinh.",
+		Option = "Xin mêi treo chu«ng lªn c©y gi¸ng sinh.",
 		NpcId = 1493,	-- ¹ÒÉÏÌÇ¹ûµÄÃµ¹åÊ÷
 		},
 	[5] = {
 		OnTimeout = Process,
 		Dialog = DecorateTree,
 		Timeout = 60,
-		DlgMsg = "³ÉÔ± %sÒÑ³É¹¦°ÑĞÇĞÇ¹ÒÔÚÊ¥µ®Ê÷ÉÏ.",
-		ErrMsg = "ÒÑ°ÑĞÇĞÇ¹ÒÔÚÊ÷ÉÏÁË",
-		Hint = "Çë°ÑĞÇĞÇÔÚÊ¥µ®Ê÷ÉÏ!",
-		Option = "Çë°ÑĞÇĞÇÔÚÊ¥µ®Ê÷ÉÏ!",
+		DlgMsg = "Thµnh viªn %s ®· treo ng«i sao thµnh c«ng lªn c©y gi¸ng sinh.",
+		ErrMsg = "§· treo ng«i sao lªn c©y råi",
+		Hint = "Xin mêi treo ng«i sao lªn c©y gi¸ng sinh!",
+		Option = "Xin mêi treo ng«i sao lªn c©y gi¸ng sinh!",
 		NpcId = 1494,	-- ¹ÒÉÏÖÓµÄÃµ¹åÊ÷I
 		},
 	[6] = {
 		OnTimeout = Wait,	
 		Dialog = Award,
 		Timeout = 300,
-		Hint = "×£ºØ¸÷Î»´óÏÀ£¬ÎÒÃÇÒÑ¾­ÓĞ1¿ÃìÅÀöÎÂÜ°µÄÊ¥µ®Ê÷ÁË!",
-		Option = "ÎÒÒªÁì½±",
+		Hint = "Chóc mõng c¸c ®¹i hiÖp, chóng ta ®· cã 1 c©y gi¸ng sinh thËt léng lÉy vµ Êm ¸p!",
+		Option = "Ta muèn nhËn th­ëng",
 		NpcId = 1495,	-- ¹ÒÉÏĞÇĞÇµÄÃµ¹åÊ÷
 		},
 	[7] = {
@@ -291,7 +291,7 @@ end
 function CheckCommonCondition(Err)
 	-- ÒªÇóÊÇ³äÖµÍæ¼Ò
 	if (IsCharged() == 0) then
-		Err.Msg = format("³ÉÔ± %s²»¹»×Ê¸ñ²Î¼Ó»î¶¯.", GetName())
+		Err.Msg = format("Thµnh viªn %s ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng.", GetName())
 		return 0
 	end
 	-- Î´×ªÉú£º>=150¼¶£»ÒÑ×ªÉú£º>=90¼¶
@@ -300,7 +300,7 @@ function CheckCommonCondition(Err)
 		ReqLevel = 150
 	end
 	if (GetLevel() < ReqLevel) then
-		Err.Msg = format("³ÉÔ± %s²»¹»×Ê¸ñ²Î¼Ó»î¶¯.", GetName())
+		Err.Msg = format("Thµnh viªn %s ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng.", GetName())
 		return 0
 	end
 	return 1
@@ -311,13 +311,13 @@ function CheckPlantCondition(CurrDate, Err)
 	-- Ö»ÄÜ¶Ó³¤ÖÖÊ÷
 	local TeamId = GetTeam()
 	if (TeamId == nil or IsCaptain() == 0) then
-		Err.Msg = "¶Ó³¤²Å¿ÉÒÔ×°ÊÎÊ¥µ®Ê÷!"
+		Err.Msg = "Ph¶i lµ ®éi tr­ëng míi cã thÓ trang trİ c©y gi¸ng sinh!"
 		return 0
 	end
 	-- ¼ì²éÖÖÊ÷´ÎÊıÏŞÖÆ
 	local TaskDate, PlantCount = DecodeTask(PlayerFunLib:GetActivityTask(TASK_PLANTDATE))
 	if (TaskDate == CurrDate and PlantCount >= LIMIT_PLANTCOUNT) then
-		Err.Msg = format("Ã¿ÌìÖ»ÄÜÖÖ %d ¿ÃÊ¥µ®Ê÷!", LIMIT_PLANTCOUNT)
+		Err.Msg = format("Mét ngµy chØ cã thÓ trång %d c©y gi¸ng sinh!", LIMIT_PLANTCOUNT)
 		return 0
 	end
 	return 1
@@ -330,7 +330,7 @@ function CheckJoinCondition(CurrDate, Err)
 	if (Task ~= 0) then
 		local TaskDate, JoinCount = DecodeTask(Task)
 		if (CurrDate == TaskDate and JoinCount >= LIMIT_JOINCOUNT) then
-			Err.Msg = format("%s ÒÑ²Î¼Ó¹»®ñ %d ´Î.", GetName(), LIMIT_JOINCOUNT)
+			Err.Msg = format("%s ®· tham gia ®ñ %d lÇn.", GetName(), LIMIT_JOINCOUNT)
 			return 0
 		end
 	end
@@ -360,7 +360,7 @@ end
 function CheckCondition()
 	-- ĞÂÊÖ´å·ÇÕ½¶·Çø
 	if (InNewbieCity() == 0 or GetFightState() == 1) then
-		Msg2Player("Ö»ÓĞĞÂÊÖ´åºÍ³ÇÊĞ¿ÉÒÔÊ¹ÓÃ.")
+		Msg2Player("ChØ cã thÓ ë t©n thñ th«n vµ thµnh thŞ sö dông.")
 		return 0
 	end
 	local CurrDate = mod(tonumber(GetLocalDate("%Y%m%d")), 100000)
@@ -416,8 +416,8 @@ function PlantTree()
 	PlayerIndex = CurrentPlayerIdx
 	TreeTable[TreeIdx] = Table
 	AddTimer(ProcTable[1].Timeout * GAME_FPS, "OnTime", TreeIdx)
-	BroadCast(Table, format("%s ÒÑ½øĞĞÖÖÊ¥µ®Ê÷ÁË£¬¸Ï¿ì×°ÊÎ°É£¡", Name))
-	BroadCast(Table, "Çë°ÑÆ»¹û¹ÒÔÚÊ¥µ®Ê÷ÉÏ!")
+	BroadCast(Table, format("%s ®· tiÕn hµnh trång C©y gi¸ng sinh, h·y nhanh chãng tiÕn hµnh trang trİ!", Name))
+	BroadCast(Table, "Xin mêi treo t¸o lªn c©y gi¸ng sinh!")
 	WriteLog(format("[%s]%s plant Tree[%d]", LOG_HEAD, Name, TreeIdx))
 	return 1
 end
@@ -446,7 +446,7 @@ function Dlg2Tree()
 	if (Table == nil) then
 		WriteLog(format("[%s]Dlg2Tree: Tree[%d] is nil", LOG_HEAD, TreeIdx))
 	elseif (InMemberList(GetName(), Table) == 0) then
-		Say("ÇëÕÒµ½×Ô¼ºµÄÊ¥µ®Ê÷")
+		Say("Xin mêi t×m ®Õn c©y gi¸ng sinh cña m×nh")
 	else
 		ProcTable[Table.Step].Dialog(TreeIdx, Table)
 	end
@@ -460,13 +460,13 @@ function TreeDialog()
 		WriteLog(Msg)
 		return
 	end
-	local Caption = "ÕâÊÇÒ»¿ÃìÅÀöÎÂÜ°µÄÊ¥µ®Ê÷."
+	local Caption = "§©y lµ mét c©y gi¸ng sinh thËt léng lÉy vµ Êm ¸p."
 	local Option = ProcTable[Table.Step].Option
 	if (Option ~= nil) then
 		Say(Caption,
 			2,
 			format("%s/%s", Option, "Dlg2Tree"),
-			"ÎÒÏë¿´¿´/Cancel")
+			"Ta muèn xem thö /Cancel")
 	else
 		Say(Caption)
 	end

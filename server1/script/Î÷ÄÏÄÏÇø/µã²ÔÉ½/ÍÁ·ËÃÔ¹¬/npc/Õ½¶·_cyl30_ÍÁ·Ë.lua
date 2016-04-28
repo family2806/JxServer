@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_cy = GetTask(6)
 	if (UTask_cy == 30*256+20) and (random(0,100) < 50) then				-- 30¼¶ÈÎÎñÖÐ£¬50%»úÂÊ
 		SetTask(6,30*256+30)
-		AddNote("¾È³öÏãÉ½ÍÁ·ËÊÖÖÐµÄ¶Î»ªÅ©µÄÖ¶Å®. ")
-		Msg2Player("¾È³öÏãÉ½ÍÁ·ËÊÖÖÐµÄ¶Î»ªÅ©µÄÖ¶Å®. ")
+		AddNote("§· cøu ch¸u g¸i cña §o¹n Hoa N«ng tõ tay tªn thæ phØ ë §iÓm H­¬ng s¬n. ")
+		Msg2Player("§· cøu ch¸u g¸i cña §o¹n Hoa N«ng tõ tay tªn thæ phØ ë §iÓm H­¬ng s¬n. ")
 	end
 end;

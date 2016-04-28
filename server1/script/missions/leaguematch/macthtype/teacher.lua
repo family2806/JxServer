@@ -1,14 +1,14 @@
 Include("\\script\\missions\\leaguematch\\tb_head.lua")
---==============Ê¦Í½Ë«ÈËÈüÏà¹ØÊı¾İ===============
+--============== thÇy trß hai ng­êi cuéc so tµi Ïà¹ØÊı¾İ===============
 
 if (not tmp_process_data) then
 	return
 end
 
---È«²¿Ê¦Í½Ë«ÈËÈüÏà¹ØÊı¾İ
+--È«²¿ thÇy trß hai ng­êi cuéc so tµi Ïà¹ØÊı¾İ
 WLLS_DATA = {
 	
-	name = "Ê¦Í½Ë«ÈËÈü",
+	name = " thÇy trß hai ng­êi cuéc so tµi ",
 	
 	--µØÍ¼ĞÅÏ¢
 	match_type = {
@@ -72,22 +72,22 @@ WLLS_DATA = {
 	
 	--°ïÖúÎÄ×Ö£¨Ö÷ÒªµÄ°ïÖúÎÄ×ÖÔÚnormal.luaÖĞ£¬ÕâÀïÖ»Ğ´ÌØÒìµÄ²¿·Ö£©
 	help_msg = {
-		["½éÉÜÎäÁÖĞÂĞãÁªÈü"]	=
+		[" giíi thiÖu vâ l©m t©n tó liªn cuéc so tµi "]	=
 			{
-				"    ±¾´ÎÁªÈüÎª <color=red>Ê¦Í½Ë«ÈËÈü<color>. Íæ¼ÒÈ¥¼û <color=red>½Ü³öÊ¹Õß<color> ±¨Ãû³ÉÁ¢Õ½¶Ó, È»ºó½øÈë½Ü³öÁ¬¶·»á³¡½øĞĞÁªÈü. ¶Ó³¤(Ê¦¸µµÈ¼¶ĞèÒª 80- 119, ¶ÓÔ±(Í½µÜ) 50- 90",
-				"    ±¾´ÎÁªÈüÎª<color=red>Ê¦Í½Ë«ÈËÈü<color>. Íæ¼ÒÈ¥¼û <color=red>½Ü³öÊ¹Õß<color> ±¨Ãû³ÉÁ¢Õ½¶Ó, È»ºó½øÈë½Ü³öÁ¬¶·»á³¡½øĞĞÁªÈü. ¶Ó³¤(Ê¦¸µµÈ¼¶ĞèÒª120 ÒÔÉÏ, ¶ÓÔ±(Í½µÜ) 50- 90",
+				" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. nhµ ch¬i ®i gÆp <color=red> kiÖt xuÊt sø gi¶ <color> ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo kiÖt xuÊt ngay c¶ ®Êu héi tr­êng tiÕn hµnh liªn cuéc so tµi . ®éi tr­ëng ( s­ phã cÊp bËc cÇn 80- 119, ®éi viªn ( ®å ®Ö ) 50- 90",
+				" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. nhµ ch¬i ®i gÆp <color=red> kiÖt xuÊt sø gi¶ <color> ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo kiÖt xuÊt ngay c¶ ®Êu héi tr­êng tiÕn hµnh liªn cuéc so tµi . ®éi tr­ëng ( s­ phã cÊp bËc cÇn 120 trë lªn , ®éi viªn ( ®å ®Ö ) 50- 90",
 			},
-		["³ÉÁ¢ÁªÈü¹ı³Ì"]	= "    Íæ¼Ò¿ÉÒÔ×Ô¼º½¨Á¢Õ½¶Ó»òÕß¼ÓÈëÆäËûÕ½¶Ó¡£¶Ó³¤ĞèÒªÊÇÎ´³öÊ¦Í½µÜ¡£¶Ó³¤È¥¼û<s> ±¨ÃûÁªÈü",
-		["Àë¿ªÁªÈü¶Ó"]	= "    ÔÚ <color=red>ÀëĞİÏ¢½×¶Î´óÔ¼<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÍÑÀëÕ½¶Ó¡£ÔÚÁªÈü½×¶Î£¬Èç¹ûÄãµÄÕ½¶Ó<color=red>Î´µ½ÁªÈüÊ±ºò<color>, Íæ¼Ò¿ÉÒÔ×ÔĞĞÀë¿ªÕ½¶Ó£¬Èç¹ûÒÑ¾­ÁªÈüÁË¾Í²»ÄÜÀë¿ª. <color=yellow>Àë¿ªÕ½¶Óºó£¬¾Í²»ÄÜÁìÅÅÃû½±<color>. Èç¹û¶Ó³¤Àë¿ª¶Ó£¬Õ½¶Ó¾Í»á±»½âÉ¢. <color=yellow>Èç¹ûÕ½¶ÓÃ»ÓĞÈËÁË£¬¾Í×Ô¶¯½âÉ¢<color>. Ã¿´ÎÁ¬¶·½áÊø£¬ÄÄ¸öÕ½¶Ó²»·ûºÏÏÂ´ÎÁªÈü¾Í×Ô¶¯±»½âÉ¢",
+		[" thµnh lËp liªn t¸i qu¸ tr×nh "]	= " nhµ ch¬i cã thÓ m×nh thµnh lËp chiÕn ®éi hoÆc lµ gia nhËp nh÷ng chiÕn ®éi kh¸c . ®éi tr­ëng cÇn lµ kh«ng xuÊt s­ ®å ®Ö . ®éi tr­ëng ®i gÆp <s> ghi danh liªn cuéc so tµi ",
+		[" rêi ®i liªn cuéc so tµi ®éi "]	= " ë <color=red> c¸ch nghØ ng¬i giai ®o¹n ­íc chõng <color>, nhµ ch¬i cã thÓ tù ®i tho¸t khái chiÕn ®éi . ë liªn cuéc so tµi giai ®o¹n , nÕu nh­ ng­¬i chiÕn ®éi <color=red> ch­a tíi liªn cuéc so tµi thêi ®iÓm <color>, nhµ ch¬i cã thÓ tù ®i rêi ®i chiÕn ®éi , nÕu nh­ ®· liªn cuéc so tµi liÔu th× kh«ng thÓ rêi ®i . <color=yellow> rêi ®i chiÕn ®éi sau , th× kh«ng thÓ dÉn ®øng hµng t­ëng <color>. nÕu nh­ ®éi tr­ëng rêi ®i ®éi , chiÕn ®éi còng sÏ bŞ gi¶i t¸n . <color=yellow> nÕu nh­ chiÕn ®éi kh«ng cã ai liÔu , liÒn tù ®éng gi¶i t¸n <color>. mçi lÇn ngay c¶ ®Êu kÕt thóc , c¸i nµo chiÕn ®éi kh«ng phï hîp lÇn sau liªn cuéc so tµi liÒn tù ®éng bŞ gi¶i t¸n ",
 	},
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		"±¾´ÎÁªÈüÎª<color=red>Ê¦Í½Ë«ÈËÈü<color>. ",
-		"±¾´ÎÁªÈüÎª<color=red>Ê¦Í½Ë«ÈËÈü<color>. ",
+		" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
+		" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
 	},
 	
-	text_creat = "    ÔÚ½¨Á¢Õ½¶Ó²Î¼ÓÊ¦Í½Ë«ÈËÈüºó£¬Äã¿ÉÒÔ<color=red>×Ô¼ºÊÇ¶Ó³¤<color>.Èç¹ûÓĞÊ¦¸µ£¬¾ÍÒªÓÉ<color=red> Ê¦¸µ×ö¶Ó³¤<color>.<enter>"
-		.."    <color=red>Èç¹ûÎ´µ½ÁªÈüÊ±¼ä<color> ÒÔ¼° <color=red>Î´±È¹ıÈÎºÎÒ»³¡<color>, Äã¿ÉÒÔÀë¿ªÕ½¶Ó¡£Èç¹ûÊ¦¸µÀë¿ªÕ½¶Ó£¬ÄÇ¸ö¶ÓÁ¢¼´±»½âÉ¢¡£ÄãÈ·¶¨½¨Á¢Õ½¶ÓÁËÂğ?",
+	text_creat = " ®ang x©y lËp chiÕn ®éi tham gia thÇy trß hai ng­êi cuéc so tµi sau , ng­¬i cã thÓ <color=red> m×nh lµ ®éi tr­ëng <color>. nÕu nh­ cã s­ phã , sÏ ph¶i tõ <color=red> s­ phã lµm ®éi tr­ëng <color>.<enter>"
+		.." <color=red> nÕu nh­ ch­a tíi liªn cuéc so tµi thêi gian <color> cïng víi <color=red> kh«ng so qua bÊt kú mét cuéc <color>, ng­¬i cã thÓ rêi ®i chiÕn ®éi . nÕu nh­ s­ phã rêi ®i chiÕn ®éi , c¸i ®ã ®éi lËp tøc bŞ gi¶i t¸n . ng­¬i x¸c ®Şnh thµnh lËp chiÕn ®éi liÔu sao ?",
 	
 	--====Functions====
 	--ÎÒµÄÕ½¶Ó
@@ -95,9 +95,9 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter>    ´Ë´Î"..str_des.."µ± <color=red>Ê¦Í½ÁªÈü<color>, Äã¿ÉÒÔÑ¡Ôñ½¨Á¢Õ½¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó. ¶Ó³¤¼ÓÈë¶ÓÔ±ĞèÊÇÎ´³öÊ¦µÜ×Ó¡£¶Ó³¤ºÍÍ½µÜ×é¶ÓÍêºó£¬ÒÔ¼° "..str_des.."Óë¹ÙÔ±¶Ô»°£¬Ñ¡ÔñÁªÈü¶ÓÎé"..str_des.."Ñ¡Ôñ¶ÓÓÑ¼ÓÈë¾ÍĞĞ¡£³ÉÔ±ÊıÁ¿×î¶àÎª<color=red>2 ÈË<color>",
-				"ÎÒÏë½¨Á¢"..str_des.."¶Ó/wlls_want2create",
-				"ÎÒÖ»ÊÇ¿´¿´/OnCancel")
+			wlls_descript("<enter> lÇn nµy "..str_des.." khi <color=red> thÇy trß liªn cuéc so tµi <color>, ng­¬i cã thÓ lùa chän thµnh lËp chiÕn ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c . ®éi tr­ëng gia nhËp ®éi viªn cÇn lµ kh«ng xuÊt s­ ®Ö tö . ®éi tr­ëng cïng ®å ®Ö häp thµnh ®éi hoµn hËu , cïng víi "..str_des.." cïng quan viªn ®èi tho¹i , lùa chän liªn cuéc so tµi ®éi ngò "..str_des.." lùa chän ®éi h÷u gia nhËp lµ ®­îc . thµnh viªn sè l­îng nhiÒu nhÊt v× <color=red>2 ng­êi <color>",
+				" ta muèn thµnh lËp "..str_des.." ®éi /wlls_want2create",
+				" ta ch¼ng qua lµ xem mét chót /OnCancel")
 			return
 		end
 	
@@ -105,24 +105,24 @@ WLLS_DATA = {
 		local n_mytype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		local n_level, n_group = wlls_getcityinfo()
 		local n_next = GetGlbValue(GLB_WLLS_NEXT)
-		local str = "<enter>ÄãµÄÕ½¶ÓÄ¿Ç°Îª <color=yellow>"..str_lgname.."<color><enter>"
-		.. "Õ½¶Ó¶Ó³¤:"..join(wlls_get_mems(n_lid), "Õ½¶Ó³ÉÔ±:") .. "<enter>"
+		local str = "<enter> ng­¬i chiÕn ®éi tr­íc m¾t v× <color=yellow>"..str_lgname.."<color><enter>"
+		.. " chiÕn ®éi ®éi tr­ëng :"..join(wlls_get_mems(n_lid), "ChiÕn ®éi thµnh viªn :") .. "<enter>"
 		if (n_mytype ~= n_next) then
-			str = str .. "<enter>   <color=yellow>×¢Òâ£ºÏÂ¼¾ÁªÈüÏŞÖÆÎª <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, Èç¹ûÏëÁªÈü£¬Çë½¨Á¢ĞÂµÄÕ½¶Ó.<color><enter>"
+			str = str .. "<enter> <color=yellow> chó ı  h¹ quı liªn cuéc so tµi h¹n chÕ v× <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, nÕu nh­ muèn liªn cuéc so tµi , xin/mêi thµnh lËp míi chiÕn ®éi .<color><enter>"
 		end
 		local tb_option = {}
 		if (n_job == 1 and n_mytype == n_next) then
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡<color=red> ¼ÓÈëÆäËû¶Ó<color> »òÕß <color=red>Àë¿ªÁªÈü¶Ó<color>.<enter><enter>"..
-			"³ÉÁ¢Õ½¶Ó²½Öè: ÔÚ<color=red>ĞİÏ¢Ê±¼äºÍÁªÈüÊ±¼ä<color>, ¶¼¿ÉÒÔÓëÆäËûÍæ¼Ò×é¶Ó, <color=red>ÒìĞÔ<color>, Ñ¡ÔñÍ¬Ò»ÈÃÍ¬¶Ó¼ÓÈë±¾¶Ó. <enter>"..
-			"Àë¿ªÁªÈü: ÔÚ<color=red>ĞİÏ¢Ê±¼ä<color>,Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬ÔÚÁªÈüÊ±¼äÈç¹ûÄãµÄ²»ÊÇ¶Ó<color=red> Î´¼ÓÈëÉÏÆÚÁªÈü<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬Èç¹ûÒÑ²Î¼Ó¾Í²»ÄÜÀë¿ª¡£¶Ó³¤×Ê¸ñ½«±»×ª½»¸øÆäËû¶ÓÔ± <color=yellow>Èç¹ûÃ»ÓĞ³ÉÔ±£¬Õ½¶Ó½«±»½âÉ¢<color>."
-			tb_option[getn(tb_option)+1] = "ÈÃÎÒµÄ¶ÓÓÑ¼ÓÈëÁªÈü¶ÓÎé/wlls_want2addmember"
+			str = str.."<enter> ng­¬i cã thÓ chän <color=red> gia nhËp nh÷ng kh¸c ®éi <color> hoÆc lµ <color=red> rêi ®i liªn cuéc so tµi ®éi <color>.<enter><enter>"..
+			" thµnh lËp chiÕn ®éi b­íc : ë <color=red> thêi gian nghØ ng¬i cïng liªn cuéc so tµi thêi gian <color>, còng cã thÓ thay v× h¾n nhµ ch¬i häp thµnh ®éi , <color=red> kh¸c ph¸i <color>, lùa chän cïng ®Ó cho cïng ®éi gia nhËp vèn ®éi . <enter>"..
+			" rêi ®i liªn cuéc so tµi : ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ ng­¬i kh«ng ph¶i lµ ®éi <color=red> kh«ng gia nhËp th­îng kú liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ ®· tham gia th× kh«ng thÓ rêi ®i . ®éi tr­ëng t­ c¸ch ®em bŞ chuyÓn giao cho nh÷ng ®éi viªn kh¸c <color=yellow> nÕu nh­ kh«ng cã thµnh viªn , chiÕn ®éi ®em bŞ gi¶i t¸n <color>."
+			tb_option[getn(tb_option)+1] = "Thªm thµnh viªn vµo ®éi/wlls_want2addmember"
 		else
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡ÔñÀë¿ª¶Ó.<enter><enter>"..
-			"Àë¶Ó£ºÔÚ <color=red>ĞİÏ¢Ê±¼ä<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬ÔÚÁªÈüÊ±¼äÈç¹û×Ô¼ºµÄÁªÈü¶Ó<color=red>Î´¼ÓÈëÉÏ´ÎÁªÈü<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬Èç¹û¼ÓÈëÁªÈü¾Í²»ÄÜÀë¿ª."
+			str = str.."<enter> ng­¬i cã thÓ lùa chän rêi ®i ®éi .<enter><enter>"..
+			" c¸ch ®éi  ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ m×nh ®İch liªn cuéc so tµi ®éi <color=red> kh«ng gia nhËp lÇn tr­íc liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ gia nhËp liªn cuéc so tµi th× kh«ng thÓ rêi ®i ."
 		end
-		tb_option[getn(tb_option)+1] = "Àë¶Ó/wlls_want2leaveleague"
-		tb_option[getn(tb_option)+1] = "¿´¶ÓÎéÕ½¼¨/wlls_query_mylg"
-		tb_option[getn(tb_option)+1] = "ÎÒÖ»ÊÇÂ·¹ı/OnCancel"
+		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
+		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "Ta chØ ®i ngang qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
 	
@@ -134,16 +134,16 @@ WLLS_DATA = {
 		local n_num = GetTask(1403)	--TKID_APPRENTICE_COUNT = 1403 --ÊÕÍ½µÜ×ÜÊı
 		PlayerIndex = n_oldidx
 		if (FALSE(n_lid) or n_num <= 0) then	
-			return "¶Ô²»Æğ! ÄãÎ´ÊÕµÜ×Ó£¬²»ÄÜÓëÆäËû¶ÓÔ±½¨Á¢×é¶Ó."
+			return " thËt xin lçi ! ng­¬i kh«ng thu ®Ö tö , kh«ng thÓ thay v× h¾n ®éi viªn thµnh lËp häp thµnh ®éi ."
 		end
 		if (n_lid ~= LG_GetLeagueObjByRole(1, GetName())) then
-			return "¶Ô²»Æğ! "..GetName().."²»ÊÇÄãµÄµÜ×Ó£¬²»ÄÜ¼ÓÈëÄãµÄÁªÈü¶Ó."
+			return " thËt xin lçi ! "..GetName().." kh«ng ph¶i lµ ®Ö tö cña ng­¬i , kh«ng thÓ gia nhËp ng­¬i liªn cuéc so tµi ®éi ."
 		end
 		if (GetLevel() > 90) then
-			return "¶Ô²»Æğ! "..GetName().."³¬¹ı90¼¶£¬²»ÄÜ×÷ÎªÍ½µÜ¼ÓÈëÁªÈü¶Ó."
+			return " thËt xin lçi ! "..GetName().." v­ît qua 90 cÊp , kh«ng thÓ lµm ®å ®Ö gia nhËp liªn cuéc so tµi ®éi ."
 		end
 		if (GetLevel() < 50) then
-			return "¶Ô²»Æğ! "..GetName().."²»¹»50£¬²»ÄÜ¼ÓÈëÁªÈü¶Ó."
+			return " thËt xin lçi ! "..GetName().." kh«ng ®ñ 50 , kh«ng thÓ gia nhËp liªn cuéc so tµi ®éi ."
 		end
 	end,
 	

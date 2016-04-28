@@ -1,13 +1,13 @@
---还魂丹礼包
+--Ho祅 H錸 Кn礼包
 
 Include("\\script\\lib\\awardtemplet.lua")
 
-local tbItem = {szName="还魂丹",tbProp={6,1,2837,1,0,0},}
+local tbItem = {szName="Ho祅 H錸 Кn",tbProp={6,1,2837,1,0,0},}
 
 function main(nIndexItem)
 	
 	if CountFreeRoomByWH(1, 1, 1) < 1 then
-		Say(format("为了保证大侠的财产安全, 请整理出 %d %dx%d 背包空间", 1, 1, 1))
+		Say(format("в b秓 m t礽 s秐 c馻 i hi謕, xin h穣  tr鑞g %d %dx%d h祅h trang", 1, 1, 1))
 		return 1
 	end
 --Fix item with them same expired time cannot be stacked - Modified by Dinh HQ - 20110427

@@ -11,8 +11,8 @@ function main(sel)
 	local ndate = tonumber(GetLocalDate("%y%m%d%H%M"))
 	if ndate > 0709220000 and ndate < 0710312400 then
 		SetTaskTemp(TSK_TEMP,2)
-		Describe("¹ùÔ±Íâ£ºÖĞÇïµ½ÁË£¬ĞèÒªÊÕ¼¯¹»6 <color=red>¿éÏÉÓğ»­ËéÆ¬<color>ºÏ³ÉÒ»·ùÍêÕûµÄ»­´øÀ´¸øÎÒ£¬ÎÒ½«ËÍÄãÒ»¸ö <color=red>·îÔÂ¹ûÈØ<color>.",2,"»»·îÔÂ¹ûÈØÔÂ±ı/makeItemUI","Ë³±ãÂ·¹ı/NoChoice")
+		Describe("Qu¸ch viªn ngo¹i: Trung thu ®· ®Õn, chØ cÇn thu thËp ®ñ 6 <color=red>m¶nh tranh Tiªn Vò<color> ®Ó hîp thµnh 1 bøc tranh hoµn chØnh mang ®Õn cho ta, ta sÏ tÆng l¹i ®¹i hiÖp 1 b¸nh <color=red>Phông NguyÖt Qu¶ Dung<color>.",2,"§æi b¸nh Phông NguyÖt Qu¶ Dung/makeItemUI","Nh©n tiÖn ghĞ qua th«i/NoChoice")
 	else
-		Describe("ÎÒÒÑ½«È«²¿¼Ò²ú¾èÏ×¸ø³¯Í¢ÁË£¬¹ú¼ÒÓĞÄÑ£¬Æ¥·òÓĞÔğ¡£ÎÒÖ»ÊÇ¹±Ï×ÇøÇøÖ®Á¦£¬ÓëÉ³³¡ÉÏµ¹ÏÂµÄÕ½Ê¿Ïà±È£¬¸ù±¾²»ËãÊ²Ã´¡£",1,"ÖªµÀÁË/NoChoice")
+		Describe("Ta ®· ®em toµn bé gia s¶n quyªn gãp cho triÒu ®×nh. N­íc nhµ gÆp n¹n, mäi ng­êi d©n ®Ò cã tr¸ch nhiÖm. Ta chØ gãp chøc søc män nµy mµ cã x¸ g×! So víi c¸c chiÕn sÜ ng· xuèng trªn sa tr­êng, chót ®ãng gãp nhá nhÆt nµy nµo cã ®¸ng chi!",1,"BiÕt råi/NoChoice")
 	end
 end;

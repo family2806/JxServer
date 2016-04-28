@@ -74,7 +74,7 @@ function OnLeave(index)
 	local pos_y = GetMissionV(YDBZ_SIGNUP_POSY); 
 
 	local nteams = YDBZ_sdl_getTaskByte(YDBZ_ITEM_YANDILING,2)
-	local szstr = format("<color=yellow>%s<color> Àë¿ªÑ×µÛ±¦²ØµØÍ¼.",GetName())
+	local szstr = format("<color=yellow>%s<color> rêi khái b¶n ®å b¶o tµng viªm ®Õ.",GetName())
 
 	SetTempRevPos(world,pos_x*32,pos_y*32)
 	Msg2MSAll(YDBZ_MISSION_MATCH,str);
@@ -85,7 +85,7 @@ function OnLeave(index)
 	if GetMSPlayerCount(YDBZ_MISSION_MATCH,nteams) == 0 then
 		local pname = GetMissionS(YDBZ_TEAM_NAME[nteams])
 		--broadcast(format("%sµÄ¶ÓÎé£¬ÔÚÑ×µÛ±¦²ØÖÐ²»Ð¡ÐÄÈ«²¿ÕóÍöÁË¡£",nteams))
-		Msg2MSAll(YDBZ_MISSION_MATCH,format("×é¶ÓÈ«²¿ÈË<color=yellow>%s<color> ÔÚÑ×µÛ±¦²ØÖÐÕóÍöÁË®Õ.",pname))
+		Msg2MSAll(YDBZ_MISSION_MATCH,format("Toµn bé ng­êi trong tæ ®éi <color=yellow>%s<color> ®· tö trËn trong b¶o tµng viªm ®Õ.",pname))
 		SetMissionS(YDBZ_TEAM_NAME[nteams],"")
 		local nteamscount = GetMissionV(YDBZ_TEAM_COUNT)
 		--print(nteamscount,SubWorld)
@@ -101,7 +101,7 @@ function OnLeave(index)
 		local y = 3563 * 32 
 
 		YDBZ_add_final_npc(SubWorld,x,y)
-		Msg2MSAll(YDBZ_MISSION_MATCH,"<color=yellow>ÁºÃ¼¶ù<color> ÔÚÑ×µÛ±¦²Ø×îÉî´¦ÒÑ±»ÕÙ»½³ö")
+		Msg2MSAll(YDBZ_MISSION_MATCH,"<color=yellow>L­¬ng Mi Nhi<color> t¹i n¬i s©u th¼m nhÊt cña b¶o tµng Viªm §Õ ®· ®­îc gäi ra")
 		SetMissionV(YDBZ_STATE_SIGN,3)
 	end
 

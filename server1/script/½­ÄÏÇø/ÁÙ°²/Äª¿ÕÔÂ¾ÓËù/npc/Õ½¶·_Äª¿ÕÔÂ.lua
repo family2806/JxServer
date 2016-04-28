@@ -6,7 +6,7 @@ Include("\\script\\global\\repute_head.lua")
 function OnDeath(sel)
 	Uworld43 = GetTask(43)
 	if (Uworld43 == 100) then
-		Msg2Player("ÔÚºÍÄª¿ÕÔÂµÄÕ½¶·ÖĞÄãÎä¹¦ÓĞ½ø²½¡£ÉúÃüÉí·¨Ã¿²ã¼ÓÒ»µã.")
+		Msg2Player("Vâ nghÖ cña b¹n trong trËn ®Êu víi M¹c Kh«ng NguyÖt ®· cã tiÕn triÓn kh¸ h¬n. Søc m¹nh, th©n ph¸p mçi thø t¨ng 1 ®iÓm.")
 		Talk(4,"U43_prise", 10869, 10870, 10871, 10872)
 	end
 end;
@@ -26,6 +26,6 @@ function U43_prise()
 	SetTask(88,Task88)			-- ¼ÇÂ¼ÈÎÎñµÃÍâ¹¦µã×ÜÊı
 	i = ReturnRepute(30,80,5)		-- È±Ê¡ÉùÍû£¬×î´óÎŞËğºÄµÈ¼¶£¬Ã¿¼¶µİ¼õ
 	AddRepute(i)		-- ¼ÓÉùÍû
-	Msg2Player("ÏûÃğ²É»¨ÔôÈÎÎñ: »÷É±Äª¿ÕÔÂ£¬ÈÎÎñÍê³É¡£ÉùÍûÌá¸ß"..i.."µã.")
-	AddNote("ÏûÃğ²É»¨ÔôÈÎÎñ: »÷É±Äª¿ÕÔÂ, ÈÎÎñÍê³É.")
+	Msg2Player("NhiÖm vô tiªu diÖt ®¹o tÆc h¸i hoa: GiÕt chÕt M¹c Kh«ng NguyÖt, nhiÖm vô hoµn thµnh. §iÓm danh väng ®­îc t¨ng lªn"..i.."®iÓm.")
+	AddNote("NhiÖm vô tiªu diÖt ®¹o tÆc h¸i hoa: GiÕt chÕt M¹c Kh«ng NguyÖt, nhiÖm vô hoµn thµnh.")
 end

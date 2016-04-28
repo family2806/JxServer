@@ -33,11 +33,11 @@ end
 function shengdan0811_tbXiaoDaoZeiAct:UseXueHuaDanGao(nItemIndex)
 	self:ResetTask()
 	if GetLevel() < self.nMinUseLevelLimit or IsCharged() ~= 1 then
-		Talk(1,"", "50¼¶ÒÔÉÏ³äÖµÍæ¼Ò²Å¿É²Î¼Ó.")
+		Talk(1,"", "Ng­êi ch¬i ph¶i cÊp 50 trë lªn vµ ®· nép thÎ míi cã thÓ tham gia.")
 		return 1
 	end
 	if GetItemParam(nItemIndex, 1) ~= 0 and GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
-		Talk(1,"", "´ËÎïÆ·ÒÑ¹ıÆÚ")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 		return 0
 	end
 	local nCurDate = tonumber(GetLocalDate("%y%m%d"))
@@ -49,11 +49,11 @@ function shengdan0811_tbXiaoDaoZeiAct:UseXueHuaDanGao(nItemIndex)
 		SetTask(self.TSK_USE_STATE, nUseState)
 	end
 	if mod(nUseState, 256) >= self.nUseLimitDaily then
-		Talk(1,"", format("Ã¿¸öÍæ¼ÒÃ¿ÌìÖ»ÄÜÊ¹ÓÃ´ËÎïÆ· %d ´Î.", self.nUseLimitDaily))
+		Talk(1,"", format("Mçi ngµy mçi ng­êi ch¬i chØ ®­îc sö dông vËt phÈm nµy %d lÇn.", self.nUseLimitDaily))
 		return 1
 	end
 	if nCurUseExp >= self.nUseExpLimit then
-		Talk(1,"", format("Ã¿¸öÈËÎïÊ¹ÓÃ[Ñ©»¨µ°¸â]×î¶àÖ»ÄÜµÃµ½ %d ¾­Ñé.", self.nUseExpLimit))
+		Talk(1,"", format("Mçi nh©n vËt sö dông [B¸nh Kem  B«ng TuyÕt] chØ thu ®­îc tèi ®a %d kinh nghiÖm.", self.nUseExpLimit))
 		return 1
 	end
 	local tbAward = {nExp = 15e6}
@@ -83,15 +83,15 @@ function shengdan0811_tbXiaoDaoZeiAct:GetServerAwardState()
 	local nThiefDeathTime =  gb_GetTask(self.GB_TSKG_ACTNAME, self.GB_TSK_THIEF_DEATH_TIME)
 
 	if nTimeHM < self.nBossAppearTime or nTimeHM >= self.nGetAwardEndTime then
-		return 0,"Áì½±Ê±¼ä»¹Î´µ½¡£Çë¸÷Î»´ı»áÔÙÀ´¡£."
+		return 0,"Thêi gian nhËn th­ëng vÉn ch­a ®Õn. Xin mêi c¸c h¹ h·y quay l¹i sau."
 	end
 	
 	if nThiefState == 1 or tonumber(FormatTime2String("%y%m%d", nThiefDeathTime)) ~= nCurDate then
-		return 0,"ÏÖÔÚ»¹Ã»ÓĞĞ¡µÁÔôµÄÏûÏ¢£¬Òò´Ë²»ÄÜÁì½±¡£."
+		return 0,"HiÖn nay vÉn ch­a cã tin tøc g× vÒ TiÓu §¹o TÆc v× vËy kh«ng thÓ nhËn th­ëng ®­îc."
 	elseif nThiefState == 2 then
 		return 1
 	elseif nThiefState == 3 then
-		return 0, "Áì½±Ê±¼ä»¹Î´µ½¡£Çë¸÷Î»´ı»áÔÙÀ´."
+		return 0, "Thêi gian nhËn th­ëng vÉn ch­a ®Õn. Xin mêi c¸c h¹ h·y quay l¹i sau."
 	end
 end
 
@@ -104,11 +104,11 @@ function shengdan0811_tbXiaoDaoZeiAct:GetPlayerAwardState()
 	local nThiefDeathTime =  gb_GetTask(self.GB_TSKG_ACTNAME, self.GB_TSK_THIEF_DEATH_TIME)
 
 	if nPlayerLoginTime >= nThiefDeathTime then
-		return 0,"¸÷Î»ÔÚÖ®Ç°ÏûÃğĞ¡µÁÔôµÄÊ±ºòÃ»ÓĞÂ¶Ãæ£¬Òò´Ë²»ÄÜÁì½±."
+		return 0,"C¸c h¹ kh«ng cã mÆt t¹i tr­íc thêi ®iÓm TiÓu §¹o TÆc bŞ tiªu diÖt v× vËy kh«ng thÓ nhËn th­ëng ®­îc."
 	end
 	
 	if GetLevel() < self.nMinLevelLimit then
-		return 0, format("µÈ¼¶µÍÓÚ %d¼¶²»ÄÜÁì½±.", self.nMinLevelLimit)
+		return 0, format("§¼ng cÊp d­íi %d kh«ng thÓ nhËn ®­îc th­ëng.", self.nMinLevelLimit)
 	end
 	
 	local nGetAwardState = GetTask(self.TSK_GETAWARD_STATE)		
@@ -120,7 +120,7 @@ function shengdan0811_tbXiaoDaoZeiAct:GetPlayerAwardState()
 	end
 	
 	if mod(nGetAwardState, 256) >= 1 then
-		return 0, "½ñÈÕ´óÏÀÒÑÁì¹ı½±ÁË!"
+		return 0, "H«m nay ®¹i hiÖp ®· nhËn th­ëng råi!"
 	end
 	
 	return 1
@@ -143,7 +143,7 @@ end
 function shengdan0811_tbXiaoDaoZeiAct:LiGuanDailog()
 	self:ResetTask()
 	if not self:IsActDay() then
-		return Talk(1,"", "²»ÔÚ»î¶¯ÆÚ¼ä.")
+		return Talk(1,"", "Kh«ng thuéc trong thêi gian ho¹t ®éng.")
 	end
 	local nCurDate = tonumber(GetLocalDate("%y%m%d"))
 	local nState, szMsg = self:GetServerAwardState()
@@ -157,7 +157,7 @@ function shengdan0811_tbXiaoDaoZeiAct:LiGuanDailog()
 		return Talk(1,"",szMsg)
 	end
 	
-	local tbItem = {szName="Ñ©»¨µ°¸â", tbProp={6, 1, 1839, 1, 0, 0}}
+	local tbItem = {szName="B¸nh Kem B«ng TuyÕt", tbProp={6, 1, 1839, 1, 0, 0}}
 	
 	tbItem.nExpiredTime = 60 * 24 - tonumber(GetLocalDate("%H")) * 60 - tonumber(GetLocalDate("%M"))
 	

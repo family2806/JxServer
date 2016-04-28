@@ -6,73 +6,73 @@ Include("\\script\\lib\\basic.lua")
 
 TB_SnowMan = {
 	-- 1.[³É¹¦]Ñ©ÈËÃû 2.[³É¹¦]Ñ©ÈËID 3.[³É¹¦]¼¸ÂÊ 4.[Ê§°Ü]Ñ©ÈËÃû 5.[Ê§°Ü]Ñ©ÈËID 6.[Ê§°Ü]¼¸ÂÊ 7,½ğÇ® 8,»»È¡ÀñÆ·Ãû 9,»»È¡ÀñÆ·ID
-	{"Î§À¶Î§½íµÄÑ©ÈË(ÌØ±ğ)",  1319,   60,   "Î§À¶Î§½íµÄÑ©ÈË(ÆÕÍ¨)",    1322,  40,	1000,	"ÄÏ¹Ï±ı", 1325},
-	{"Î§ºìÎ§½íµÄÑ©ÈË(ÌØ±ğ)",  1320,   60,   "Î§ºìÎ§½íµÄÑ©ÈË(ÆÕÍ¨)",    1323,  40,	3000,	"Ñ©¸â",	1326},
-	{"ÌØ±ğÑ©ÈË",  					1321,   80,   					 "ÆÕÍ¨Ñ©ÈË",    1324,  20,	5000,			"»ğ¼¦", 1327},
+	{"Ng­êi tuyÕt choµng kh¨n xanh (®Æc biÖt)",  1319,   60,   "Ng­êi tuyÕt choµng kh¨n xanh (th­êng)",    1322,  40,	1000,	"B¸nh bİ ®á", 1325},
+	{"Ng­êi tuyÕt choµng kh¨n ®á (®Æc biÖt)",  1320,   60,   "Ng­êi tuyÕt choµng kh¨n ®á (th­êng)",    1323,  40,	3000,	"B¸nh kem",	1326},
+	{"Ng­êi tuyÕt ®Æc biÖt",  					1321,   80,   					 "Ng­êi tuyÕt th­êng",    1324,  20,	5000,			"Gµ l«i", 1327},
 }
 
 TB_Material = {
  --1.ÎïÆ·Ãû	2.ÊıÁ¿
  [1319] ={
-	["6,1,1312"] = {"Ñ©»¨",			10	},
-	["6,1,1313"] =	{"ºúÂÜ²·",		1	},
-	["6,1,1314"] =	{"ËÉÖ¦",	2	},
-	["6,1,1315"] =	{"Ê¥µ®Ã±",		1	},
-	["6,1,1316"] =	{"À¶Î§½í",	1	},
+	["6,1,1312"] = {"Hoa TuyÕt ",			10	},
+	["6,1,1313"] =	{"Cµ rèt",		1	},
+	["6,1,1314"] =	{"Cµnh th«ng",	2	},
+	["6,1,1315"] =	{"Nãn gi¸ng sinh",		1	},
+	["6,1,1316"] =	{"Kh¨n choµng xanh",	1	},
 	},
  [1320] ={
-	["6,1,1312"] = {"Ñ©»¨",			10	},
-	["6,1,1313"] =	{"ºúÂÜ²·",		1	},
-	["6,1,1314"] =	{"ËÉÖ¦",	2	},
-	["6,1,1315"] =	{"Ê¥µ®Ã±",		1	},
-	["6,1,1317"] =	{"À¶Î§½í",	1	},
+	["6,1,1312"] = {"Hoa TuyÕt ",			10	},
+	["6,1,1313"] =	{"Cµ rèt",		1	},
+	["6,1,1314"] =	{"Cµnh th«ng",	2	},
+	["6,1,1315"] =	{"Nãn gi¸ng sinh",		1	},
+	["6,1,1317"] =	{"Kh¨n choµng xanh",	1	},
 	},
  [1321] ={
-	["6,1,1312"] = {"Ñ©»¨",			10	},
-	["6,1,1313"] =	{"ºúÂÜ²·",		1	},
-	["6,1,1314"] =	{"ËÉÖ¦",	2	},
-	["6,1,1315"] =	{"Ê¥µ®Ã±",		1	},
-	["6,1,1318"] =	{"À¶Î§½í",		1	},
+	["6,1,1312"] = {"Hoa TuyÕt ",			10	},
+	["6,1,1313"] =	{"Cµ rèt",		1	},
+	["6,1,1314"] =	{"Cµnh th«ng",	2	},
+	["6,1,1315"] =	{"Nãn gi¸ng sinh",		1	},
+	["6,1,1318"] =	{"Kh¨n choµng xanh",		1	},
 	},
 }
 
 TB_Message = {
 	-- ÖÆ×÷ÃèÊö
-	"¶ÑÎ§À¶Î§½íµÄÑ©ÈË (ÌØ±ğ) ĞèÒª 10 ¶ÑÑ©, 1 ºúÂÜ²·, 2 ËÉÖ¦, 1 Ã±×Ó, 1 À¶Î§½í ºÍ1000Á½.",
-	"¶ÑÎ§ºìÎ§½íµÄÑ©ÈË (ÌØ±ğ) ĞèÒª 10 ¶ÑÑ©, 1 ºúÂÜ²·, 2 ËÉÖ¦, 1 Ã±×Ó, 1 À¶Î§½í ºÍ3000Á½.",
-	"¶ÑÑ©ÈË (ÌØ±ğ)  ĞèÒª 10 ¶ÑÑ©, 1 ºúÂÜ²·, 2 ËÉÖ¦, 1 Ã±×Ó, 1 ËÉÊ÷ ºÍ5000Á½.",
+	"¶ÑÎ§Kh¨n choµng xanhµÄÑ©ÈË (ÌØ±ğ) ĞèÒª 10 ¶ÑÑ©, 1 Cµ rèt, 2 Cµnh th«ng, 1 Ã±×Ó, 1 Kh¨n choµng xanh ºÍ1000Á½.",
+	"¶ÑÎ§ºìÎ§½íµÄÑ©ÈË (ÌØ±ğ) ĞèÒª 10 ¶ÑÑ©, 1 Cµ rèt, 2 Cµnh th«ng, 1 Ã±×Ó, 1 Kh¨n choµng xanh ºÍ3000Á½.",
+	"Lµm ng­êi tuyÕt (ÌØ±ğ)  ĞèÒª 10 ¶ÑÑ©, 1 Cµ rèt, 2 Cµnh th«ng, 1 Ã±×Ó, 1 ËÉÊ÷ ºÍ5000Á½.",
 }
 
 GiftMsg = {
 	-- »»È¡ÀñÎïÃèÊö
-	"»»ÄÏ¹Ï±ıÒªÒ»¸öÎ§×ÅºìÎ§½íµÄÑ©ÈË (ÌØ±ğ)",
-	"»»Ñ©¸âÒªÒ»¸öÎ§×ÅÀ¶Î§½íµÄÑ©ÈË (ÌØ±ğ)",
-	"»»»ğ¼¦ĞèÒªÒ»¸öÌØ±ğÑ©ÈË",
+	"»»B¸nh bİ ®áÒªÒ»¸öÎ§×ÅºìÎ§½íµÄÑ©ÈË (ÌØ±ğ)",
+	"»»B¸nh kemÒªÒ»¸öÎ§×ÅKh¨n choµng xanhµÄÑ©ÈË (ÌØ±ğ)",
+	"»»Gµ l«iĞèÒªÒ»¸öNg­êi tuyÕt ®Æc biÖt",
 }
 
 TSKTMP_ITEM_NUMC = 20;
 
 function xmas_entry()
 	aryDescribe = {
-		"<dec><npc>»»Ê¥µ®ÀñÎï",
-		"¶ÑÑ©ÈË/want_snowman",
-		"»»ÀñÎï/want_gift",
-		"ÎÒÓĞÊÂÇé£¬±ğµÄÊ±ºòÔÙÀ´/cancel",
+		"<dec><npc>§æi quµ gi¸ng sinh",
+		"Lµm ng­êi tuyÕt/want_snowman",
+		"§æi quµ/want_gift",
+		"Ta cã viÖc, khi kh¸c quay l¹i/cancel",
 		}
 	CreateTaskSay(aryDescribe)
 end
 	
 function want_snowman()
 	if (isXmasTime() == 0) then
-		CreateTaskSay({"<dec><npc>»î¶¯½áÊøÁË.", "ÖªµÀÁË/cancel"});
+		CreateTaskSay({"<dec><npc>Ho¹t ®éng ®· kÕt thóc.", "Ta biÕt råi/cancel"});
 		return 
 	end;
 	aryDescribe = {
-		"<dec><npc>ÓĞºÜ¶àÖÖÑ©ÈË£¬Ã¿ÖÖµÄ²ÄÁÏ¶¼²»Ò»Ñù£¬ÄãÏë×öÄÄÖÖ?",
-		"×öÎ§×ÅºìÎ§½íµÄÑ©ÈË (ÌØ±ğ)/#do_snowman(1)",
-		"×öÎ§×ÅÀ¶Î§½íµÄÑ©ÈË (ÌØ±ğ)/#do_snowman(2)",
-		"×öÌØ±ğÑ©ÈË/#do_snowman(3)",
-		"ÎÒÓĞÊÂÇé£¬±ğµÄÊ±ºòÔÙÀ´/cancel",
+		"<dec><npc>Cã nhiÒu lo¹i ng­êi tuyÕt, nguyªn liÖu mçi lo¹i sÏ kh¸c nhau, ng­¬i muèn lµm lo¹i nµo?",
+		"T¹o ng­êi tuyÕt choµng kh¨n xanh (®Æc biÖt)/#do_snowman(1)",
+		"×öÎ§×ÅKh¨n choµng xanhµÄÑ©ÈË (ÌØ±ğ)/#do_snowman(2)",
+		"×öNg­êi tuyÕt ®Æc biÖt/#do_snowman(3)",
+		"Ta cã viÖc, khi kh¸c quay l¹i/cancel",
 	}
 	CreateTaskSay(aryDescribe)
 end
@@ -80,7 +80,7 @@ end
 function do_snowman(snown)
 	SetTaskTemp(TSKTMP_ITEM_NUMC, snown);
 	aryDescribe = TB_Message[snown]
-	GiveItemUI("¶ÑÑ©ÈË",aryDescribe,"do_snow_process","cancel",1)
+	GiveItemUI("Lµm ng­êi tuyÕt",aryDescribe,"do_snow_process","cancel",1)
 end
 
 function do_snow_process(nItemCount)
@@ -104,34 +104,34 @@ function do_snow_process(nItemCount)
 		
 		if(GetCash() < TB_SnowMan[nItemNumC][7]) then
 			aryDescribe = {
-				"<dec><npc>¶ÑÑ©ÈËĞèÒªÓĞ"..TB_SnowMan[nItemNumC][7].."Ç®£¬ÄãÉíÉÏµÄÇ®²»¹»",
-				"ÖªµÀÁË/cancel"
+				"<dec><npc>Lµm ng­êi tuyÕtĞèÒªÓĞ"..TB_SnowMan[nItemNumC][7].."tiÒn , tiÒn trªn ng­êi ng­¬i kh«ng ®ñ",
+				"Ta biÕt råi/cancel"
 				}
 			CreateTaskSay(aryDescribe)
 			return
 		end
 		
 		if (TB_Material[nItemPart][szItemKey] == nil) then
-				CreateTaskSay(	{	"<dec><npc>"..TB_Message[nItemNumC]..", Õâ¸ö"..GetItemName(nCurItemIdx)..",ÎÒ²»ĞèÒªÕâ¸öÄãÄÃ»ØÈ¥°É",
-												"ÎÒÖØ×ö!/#do_snowman("..nItemNumC..")",
-												"ÎÒÒ»»á»ØÀ´./cancel"	}	);
+				CreateTaskSay(	{	"<dec><npc>"..TB_Message[nItemNumC]..", c¸i nµy"..GetItemName(nCurItemIdx)..", ta kh«ng cÇn c¸i nµy, ng­¬i h·y nhËn l¹i ®i",
+												"§Ó ta lµm l¹i!/#do_snowman("..nItemNumC..")",
+												"Ta sÏ quay l¹i sau./cancel"	}	);
 				return
 		end
 		tb_enhanceitem_count[szItemKey][1] = tb_enhanceitem_count[szItemKey][1] + GetItemStackCount(nCurItemIdx);
 		tb_enhanceitem_count[szItemKey][2] = nCurItemName;
 		if(tb_enhanceitem_count[szItemKey][1] > TB_Material[nItemPart][szItemKey][2] ) then
-				CreateTaskSay(	{	"<dec><npc>"..TB_Message[nItemNumC]..", ÎÒÒª²»ÁËÕâÃ´¶à<color=yellow>"..nCurItemName.."<color>Çë°ÑÓÃ²»µ½µÄ·Å³öÈ¥.",
-													"ÎÒÖØ×ö!/#do_snowman("..nItemNumC..")",
-													"ÎÒÒ»»á»ØÀ´./cancel"	}	);
+				CreateTaskSay(	{	"<dec><npc>"..TB_Message[nItemNumC]..", nh­ng ta kh«ng cÇn nhiÒu ®Õn thÕ <color=yellow>"..nCurItemName.."<color>Vui lßng bá nh÷ng mãn kh«ng cÇn thiÕt ra ngoµi.",
+													"§Ó ta lµm l¹i!/#do_snowman("..nItemNumC..")",
+													"Ta sÏ quay l¹i sau./cancel"	}	);
 				return
 		end
 	end
 	
 	for szkey, tb_item in TB_Material[nItemPart] do
 			if (tb_enhanceitem_count[szkey][1] ~= TB_Material[nItemPart][szkey][2]) then
-				CreateTaskSay( { "<dec><npc>ÄãÍü¼Ç·ÅÔ­ÁÏÁË <color=yellow>"..tb_enhanceitem_count[szkey][2].."<color>²»¹»¡£Ô­ÁÏ²»¹»£¬ÎÒ×ö²»ÁË.",
-			"ÎÒÖØ×ö!/#do_snowman("..nItemNumC..")",
-			"ÎÒÒ»»á»ØÀ´./cancel"	}	);
+				CreateTaskSay( { "<dec><npc> Ng­¬i quªn bá nguyªn liÖu vµo råi <color=yellow>"..tb_enhanceitem_count[szkey][2].."<color> kh«ng ®ñ. Kh«ng ®ñ nguyªn liÖu, ta kh«ng lµm ®­îc.",
+			"§Ó ta lµm l¹i!/#do_snowman("..nItemNumC..")",
+			"Ta sÏ quay l¹i sau./cancel"	}	);
 				return
 			end
 	end
@@ -140,7 +140,7 @@ function do_snow_process(nItemCount)
 	for i=1, nItemCount do
 		local nIdx = GetGiveItemUnit(i)
 		if (RemoveItemByIndex(nIdx) ~= 1) then
-			WriteLog("[¶ÑÑ©ÈË]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t É¾³ıÎïÆ·Ê§°Ü\t"..GetItemName(GetGiveItemUnit(i)));
+			WriteLog("[Lµm ng­êi tuyÕt]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Xãa vËt phÈm thÊt b¹i\t"..GetItemName(GetGiveItemUnit(i)));
 			return
 		end
 	end
@@ -151,26 +151,26 @@ function do_snow_process(nItemCount)
 	 PItem = random() * 100;
 	if(PItem < TB_SnowMan[nItemNumC][3]) then
 	 
-		str = "ÖÆ×÷³É¹¦<color=yellow>"..TB_SnowMan[nItemNumC][1].."<color>!"
+		str = "ChÕ t¹o thµnh c«ng <color=yellow>"..TB_SnowMan[nItemNumC][1].."<color>!"
 		AddItem(6,1,TB_SnowMan[nItemNumC][2],1,0,0)
 	else
-		str = "ÖÆ×÷³É¹¦<color=yellow>"..TB_SnowMan[nItemNumC][4].."<color>!"
+		str = "ChÕ t¹o thµnh c«ng <color=yellow>"..TB_SnowMan[nItemNumC][4].."<color>!"
 		AddItem(6,1,TB_SnowMan[nItemNumC][5],1,0,0)
 	end
 	Msg2Player(str)
-	WriteLog("[¶ÑÑ©ÈË]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t"..str);
+	WriteLog("[Lµm ng­êi tuyÕt]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t"..str);
 end
 
 function want_gift()
 	if (isXmasTime() == 0) then
-		CreateTaskSay({"<dec><npc>»î¶¯½áÊøÁË.", "ÖªµÀÁË/cancel"});
+		CreateTaskSay({"<dec><npc>Ho¹t ®éng ®· kÕt thóc.", "Ta biÕt råi/cancel"});
 		return 
 	end;
-	aryDescribe = {"<dec><npc>¶Ò»»ÈçÏÂÏàÓ¦µÄÀñÎï:\n Ïµ×ÅÀ¶Î§½íµÄÑ©ÈË---ÄÏ¹Ï±ı\n Ïµ×ÅºìÎ§½íµÄÑ©ÈË---Ñ©¸â\n ÌØ±ğÑ©ÈË---»ğ¼¦ \n Ñ¡Ôñ¶Ò»»ÀñÎï",
-								 "ÄÏ¹Ï±ı/#do_gift(1)",
-								 "Ñ©¸â/#do_gift(2)",
-								 "»ğ¼¦/#do_gift(3)",
-								 "ÔİÊ±²»ĞèÒª/cancel",
+	aryDescribe = {"<dec><npc>¶Ò»»ÈçÏÂÏàÓ¦µÄÀñÎï:\n Ïµ×ÅKh¨n choµng xanhµÄÑ©ÈË---B¸nh bİ ®á\n Ïµ×ÅºìÎ§½íµÄÑ©ÈË---B¸nh kem\n Ng­êi tuyÕt ®Æc biÖt---Gµ l«i \n Ñ¡Ôñ¶Ò»»ÀñÎï",
+								 "B¸nh bİ ®á/#do_gift(1)",
+								 "B¸nh kem/#do_gift(2)",
+								 "Gµ l«i/#do_gift(3)",
+								 "T¹m thêi kh«ng ®æi/cancel",
 		}
 		CreateTaskSay(aryDescribe)
 end
@@ -178,13 +178,13 @@ end
 function do_gift(ngift)
 		local Gcount = CalcEquiproomItemCount(6,1,TB_SnowMan[ngift][2],1)
 		if(Gcount == 0) then
-			Talk(1,"","ÄãÉíÉÏÃ»ÓĞ"..TB_SnowMan[ngift][1]..". ²»ÄÜ¶Ò»»ÀñÎï"..TB_SnowMan[ngift][8]..".")
+			Talk(1,"","Trªn ng­êi ng­¬i kh«ng cã"..TB_SnowMan[ngift][1]..". Kh«ng thÓ ®æi quµ"..TB_SnowMan[ngift][8]..".")
 		else  
 			ConsumeEquiproomItem(1,6,1,TB_SnowMan[ngift][2],1)
 			AddItem(6,1,TB_SnowMan[ngift][9],1,0,0)
-			Msg = "Äã³É¹¦¶Ò»»"..TB_SnowMan[ngift][8]
+			Msg = "B¹n ®· ®æi thµnh c«ng"..TB_SnowMan[ngift][8]
 			Msg2Player(Msg)
-			WriteLog("[¶ÑÑ©ÈË]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t exchange "..GetItemName(GetGiveItemUnit(i)).." for "..TB_SnowMan[ngift][8]);
+			WriteLog("[Lµm ng­êi tuyÕt]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t exchange "..GetItemName(GetGiveItemUnit(i)).." for "..TB_SnowMan[ngift][8]);
 		end
 end
 

@@ -1,7 +1,7 @@
 --ÖĞÔ­±±Çø ãê¾©¸® ¾Æ±£¶Ô»°
 
 function main(sel)
-Say("¾Æ±££ºÉÏ´ÎÓĞ¸öÊéÉúÔÚÔÛÃÇÕâ¶ùºÈ×íÁË¾Æ£¬½«½ğÈËÂîÁË¸ö¹·ÑªÅçÍ·£¬²»ÏëµÚ¶şÌì¾Í¸ø×¥½øÁË¼àÀÎ£¬ÔÛÃÇ¾Æ¹İÒ²Á¬´ø×Å±»·âÃÅÁËÈıÌì£¬ËùÒÔÀÏ°åÁ¢ÁË¹æ¾Ø£¬²»×¼À´ºÈ¾ÆµÄÈËÌ¸ÂÛ¹úÊÂ¡£", 0);
+Say("LÇn tr­íc cã mét th­ sinh ®Õn bæn qu¸n uèng r­îu say, ®· chöi m¾ng bän ng­êi Kim. H«m sau ®· bŞ b¾t giam. Bæn tiÖm còng bŞ liªn lôy, ph¶i ®ãng cöa ®Õn ba ngµy. V× vËy «ng chñ ®· cã quy ®Şnh lµ kh«ng cho ai uèng r­îu ë ®©y ®­îc nãi chuyÖn quèc sù.", 0);
 end;
 
 

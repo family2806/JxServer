@@ -22,16 +22,16 @@ local myGolden = {168,169,170,171,172,173,174,175,176}
 		AddOwnExp(80000)
 		AddGoldItem(0,177)  --Ôö¼ÓÀ¶Ã±×Ó
 
-		myAwardText1 = "80000 µã¾­ÑéÖµ"
-		myAwardText2 = "Ò»¶¥¾«ÖÆµÄÃ±×Ó"
+		myAwardText1 = "80.000 ®iÓm kinh nghiÖm"
+		myAwardText2 = "B¹n nhËn ®­îc 1 kh«i m·o"
 		
 	elseif (myTaskLevel==3) then -- Èç¹ûÊÇ 40 ¼¶ÈÎÎñ
 
 		AddOwnExp(280000)	
 		ClearMagicPoint()  --Ôö¼Ó40¼¶Ê±Ï´µãµÄ¹¦ÄÜ
 		
-		myAwardText1 = "150000 µã¾­ÑéÖµ"
-		myAwardText2 = "Ò»´ÎÃâ·ÑÏ´¼¼ÄÜµãµÄ»ú»á"
+		myAwardText1 = "150.000 ®iÓm kinh nghiÖm"
+		myAwardText2 = "1 lÇn tÈy ®iÓm kü n¨ng miÔn phİ "
 				
 	elseif (myTaskLevel==4) then -- Èç¹ûÊÇ 50 ¼¶ÈÎÎñ
 		
@@ -45,8 +45,8 @@ local myGolden = {168,169,170,171,172,173,174,175,176}
 			AddItem(6,1,73,1,1,1,0)  -- °×¹û
 		end;
 
-		myAwardText1 = "350000 µã¾­ÑéÖµ"
-		myAwardText2 = "Ò»¸öÏÉ²İÂ¶"
+		myAwardText1 = "350.000 ®iÓm kinh nghiÖm"
+		myAwardText2 = "1 phÇn th­ëng"
 				
 	elseif (myTaskLevel==5) then -- Èç¹ûÊÇ 60 ¼¶ÈÎÎñ
 
@@ -54,8 +54,8 @@ local myGolden = {168,169,170,171,172,173,174,175,176}
 		i = random(1,getn(myGolden))
 		AddGoldItem(0,myGolden[i])
 		
-		myAwardText1 = "800000 µã¾­ÑéÖµ"
-		myAwardText2 = "Ò»¼ş¾øÊÀµÄ±¦Æ÷"
+		myAwardText1 = "800.000 ®iÓm kinh nghiÖm"
+		myAwardText2 = "1 bé B¶o khİ tuyÖt thÕ "
 		
 	end
 	

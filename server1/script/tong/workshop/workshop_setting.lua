@@ -11,7 +11,7 @@ function LoadWorkshopSetting()	--ÔØÈëÅäÖÃ
 	local b2 = TabFile_Load("\\settings\\tong\\workshop\\workshop_level_data.txt", "WorkshopLevelData")
 	local b3 = TabFile_Load("\\settings\\tong\\workshop\\workshops.txt", "WorkshopTypeData")
 	if b2~=1 or b3~=1 then
-		print("¼ÓÔØ×÷·»ÅäÖÃÎÄ¼şÊ§°Ü£¡")
+		print("§äc tÖp config t¸c ph­êng thÊt b¹i!")
 		if b2 == 1 then TabFile_UnLoad("WorkshopLevelData") end
 		if b3 == 1 then TabFile_UnLoad("WorkshopTypeData") end
 		return
@@ -87,7 +87,7 @@ end
 function wsGetUpgradeCostFund(nTongID, eType, nCurLevel) --»ñÈ¡ÉıÏÂ¼¶ËùĞè½¨Éè»ù½ğ
 	local nRet = tonumber(aWorkshopLevelData[nCurLevel]["UPGRADE_FUND"]*aWorkshopTypeData[eType]["COEFFICIENT"])
 	if (nRet == nil) then
-		print("»ñÈ¡Éı¼¶½¨Éè»ù½ğÊ±³ö´í£¡")
+		print("GÆp lçi khi n©ng cÊp ng©n s¸ch kiÕn thiÕt!")
 		return INVALID_VALUE
 	end
 	return floor(nRet)
@@ -103,7 +103,7 @@ function wsGetMaintainCost(nTongID, eType, nCurLevel, bOpen) --»ñÈ¡ÈÕ³£Î¬»¤·ÑÓÃ
 		nRet = calcCloseDailyFund(nRet)
 	end
 	if (nRet == nil) then
-		print("»ñÈ¡ÈÕ³£Î¬»¤·ÑÓÃÊ±³ö´í£¡")
+		print("GÆp lçi khi b¶o tr× chi phİ hµng ngµy!")
 		return INVALID_VALUE
 	end
 	return floor(nRet)
@@ -119,7 +119,7 @@ function wsGetPerMaintainCost(nTongID, eType, nCurLevel, bOpen) --»ñÈ¡µ¥ÈËÈÕ³£Î¬
 		nRet = calcCloseDailyFund(nRet)
 	end
 	if (nRet == nil) then
-		print("»ñÈ¡ÈÕ³£Î¬»¤·ÑÓÃÊ±³ö´í£¡")
+		print("GÆp lçi khi b¶o tr× chi phİ hµng ngµy!")
 		return INVALID_VALUE
 	end
 	return floor(nRet/nMembers)
@@ -132,7 +132,7 @@ function wsGetClose2OpenMaintainCost(nTongID, eType, nCurLevel) --»ñÈ¡¿ª¹Øµ¥ÈËÎ¬
 	local coefType = tonumber(aWorkshopTypeData[eType]["COEFFICIENT"]) --½¨ÉèÏµÊı£¨×÷·»ÖÖÀàĞŞÕı£©
 	local nRet = calcDailyFund(nBaseFund, nMembers, coefType, coefMember)
 	if (nRet == nil) then
-		print("»ñÈ¡ÈÕ³£Î¬»¤·ÑÓÃÊ±³ö´í£¡")
+		print("GÆp lçi khi b¶o tr× chi phİ hµng ngµy!")
 		return INVALID_VALUE
 	end
 	nRet = nRet - calcCloseDailyFund(nRet)
@@ -142,7 +142,7 @@ end
 function wsGetOpenCost(nTongID, eType, nCurLevel)	--»ñÈ¡¿ªÆôÏûºÄ
 	local nRet = tonumber(aWorkshopLevelData[nCurLevel]["OPEN_FUND"]*aWorkshopTypeData[eType]["COEFFICIENT"])
 	if (nRet == nil) then
-		print("»ñÈ¡¿ªÆôÏûºÄÊ±³ö´í£¡")
+		print("GÆp lçi khi nhËn ®­îc tiªu hao do kİch ho¹t!")
 		return INVALID_VALUE
 	end
 	return floor(nRet)

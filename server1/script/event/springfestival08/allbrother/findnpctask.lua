@@ -6,10 +6,10 @@ Include("\\script\\event\\springfestival08\\allbrother\\taskhead.lua")
 function allbrother_0801_FindNpcTaskDialog(nTaskId)
 	local nTaskState	= GetTask(TSK_allbrother_0801_TaskState)
 	if nTaskState == 0 then
-		Say("ÄãºÃÏñ»¹Ã»ÓĞ½ÓÊÜ±±¶·ÃÅµÄÈÎÎñ.", 0)
+		Say("B¹n d­êng nh­ vÉn ch­a tiÕp nhËn nhiÖm vô cña B¾c §Èu M«n.", 0)
 	end
 	if nTaskState > 1073741824 then
-		Say("¸Ï¿ìÈ¥¼û±±¶·ÀÏÈË¸´Ãü.", 0)
+		Say("H·y mau ®Õn gÆp B¾c §Èu L·o Nh©n phôc mÖnh.", 0)
 	end
 	if nTaskId == nTaskState then
 		allbrother_0801_CompleteTask()

@@ -5,21 +5,21 @@ MAX_FACTION_TICKET = 5
 --0ÉÙÁÖ£¬1ÌìÍõ£¬2ÌÆÃÅ£¬3Îå¶¾£¬4¶ëáÒ£¬5´äÑÌ£¬6Ø¤°ï£¬7ÌìÈÌ£¬8Îäµ±£¬9À¥ÂØ£¬-1°×Ãû
 TAB_TICKETINFO = 
 {
-{"ÉÙÁÖÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,407,1}, 11},
-{"ÌìÍõÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,408,1}, 12},
-{"ÌÆÃÅÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,409,1}, 13},
-{"Îå¶¾ÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,410,1}, 14},
-{"¶ëÃ¼ÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,411,1}, 15},
-{"´äÑÌÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,412,1}, 16},
-{"Ø¤°ïÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,413,1}, 17},
-{"ÌìÈÌÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,414,1}, 18},
-{"Îäµ±ÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,415,1}, 19},
-{"À¥ÂØÃÅÅÉ±ÈÈü", MAX_FACTION_TICKET, "±ÈÈüÃÅÅÉÃûµ¥", 1, "wl_get", {6,1,416,1}, 20},
+{"Thi ®Êu m«n ph¸i ThiÕu L©m", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,407,1}, 11},
+{"Thi ®Êu m«n ph¸i Thiªn V­¬ng", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,408,1}, 12},
+{"Thi ®Êu m«n ph¸i §­êng M«n", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,409,1}, 13},
+{"Thi ®Êu m«n ph¸i Ngò §éc", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,410,1}, 14},
+{"Thi ®Êu m«n ph¸i Nga My", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,411,1}, 15},
+{"Thi ®Êu m«n ph¸i Thóy Yªn", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,412,1}, 16},
+{"Thi ®Êu m«n ph¸i C¸i Bang", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,413,1}, 17},
+{"Thi ®Êu m«n ph¸i Thiªn NhÉn", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,414,1}, 18},
+{"Thi ®Êu m«n ph¸i Vâ §ang", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,415,1}, 19},
+{"Thi ®Êu m«n ph¸i C«n L«n", MAX_FACTION_TICKET, "Danh s¸ch m«n ph¸i thi ®Êu", 1, "wl_get", {6,1,416,1}, 20},
 
-{"Ë«¶·", 5, "Song ®Êu", 2, "wl_getdoubleticket", {6,1,417,1}, 21},
-{"ÎåĞĞ¶·", 3, "ÎåĞĞ¶·", 10, "wl_getfiveticket",{6,1,418,1}, 22},
-{"Ê®È«¶·", 2, "Ê®È«¶·", 20, "wl_gettenticket",{6,1,419,1}, 23},
-{"Ê®Áù¶·", 2, "Ê®Áù¶·", 32, "wl_getsixteenticket",{6,1,420,1}, 24},
+{"Song ®Êu", 5, "Song ®Êu", 2, "wl_getdoubleticket", {6,1,417,1}, 21},
+{"Ngò hµnh ®Êu", 3, "Ngò hµnh ®Êu", 10, "wl_getfiveticket",{6,1,418,1}, 22},
+{"ThËp toµn ®Êu", 2, "ThËp toµn ®Êu", 20, "wl_gettenticket",{6,1,419,1}, 23},
+{"ThËp lôc ®Êu", 2, "ThËp lôc ®Êu", 32, "wl_getsixteenticket",{6,1,420,1}, 24},
 };
 
 
@@ -40,7 +40,7 @@ TK_WL_TICKET_SIXTEEN = TK_WL_TICKET_TEN + 1;
 
 MAX_TICKETCOUNT = 1
 function ticket()
-	Say("  ±¾¹Ù¿ÉÒÔ°ïÊ²Ã´?", 2, "ÎÒÏëÁìÈ¡½ñÈÕ¶·³¡µÄÆ±/wl_gettickets", "²»ĞèÒª/OnCancel")
+	Say("   Bæn quan cã thÓ gióp ®­îc g× ®©y?", 2, "Ta muèn nhËn vĞ vµo ®Êu tr­êng/wl_gettickets", "Kh«ng cÇn/OnCancel")
 end
 
 function wl_gettickets()
@@ -48,13 +48,13 @@ function wl_gettickets()
 		return
 	end
 	local tickettab ={};
-	tickettab[1] = "½ñÈÕÃÅÅÉ¶·³¡µÄÆ±/wl_getfactionsticket";
+	tickettab[1] = "VĞ vµo ®Êu tr­êng m«n ph¸i/wl_getfactionsticket";
 	for i = 1, getn(TAB_TICKETINFO) - 10  do 
 		tickettab[ getn( tickettab ) + 1 ] = TAB_TICKETINFO[10 + i  ][1].."/"..TAB_TICKETINFO[10 + i ][5]
 	end
 	
-	tickettab[getn(tickettab)+ 1] = "ÎÒÏëÏë/OnCancel"--"»ñÈ¡±ÈÈüÈë³¡È¯ÓĞÊ²Ã´ÓÃ´¦/wl_tickethelp";
-	Say("ÄúÏëÁìÈ¡ÄÇ¸öÃÅÅÉµÄ±ÈÈüÈë³¡È¯?", getn(tickettab), tickettab);
+	tickettab[getn(tickettab)+ 1] = "Ta suy nghÜ mét chót/OnCancel"--"»ñÈ¡±ÈÈüÈë³¡È¯ÓĞÊ²Ã´ÓÃ´¦/wl_tickethelp";
+	Say("Ng­¬i cÇn vĞ vµo lo¹i h×nh thi ®Êu nµo?", getn(tickettab), tickettab);
 end
 
 --»ñÈ¡Ê®¸öÃÅÅÉµÄÄ³¸öÃÅÆ±×ÜÈë¿Úº¯Êı
@@ -63,8 +63,8 @@ function wl_getfactionsticket()
 	for i = 1, 10 do 
 		tabticket[i] = TAB_TICKETINFO[i][1].."/#wl_getticket("..i..")"
 	end
-	tabticket[getn(tabticket)+ 1] = "ÈÃÎÒÏëÏë!/OnCancel";
-	Say(" ÄúÏëÁìÈ¡ÄÇ¸öÃÅÅÉµÄ±ÈÈüÈë³¡È¯?", getn(tabticket), tabticket);
+	tabticket[getn(tabticket)+ 1] = "Cho ta suy nghÜ chót!/OnCancel";
+	Say("   Ng­¬i muèn nhËn ®­îc vĞ vµo thi ®Êu cña m«n ph¸i nµo?", getn(tabticket), tabticket);
 end
 
 --»ñÈ¡Ä³¸öÃÅÅÉµÄÃÅÆ±
@@ -77,18 +77,18 @@ function wl_getticket( matchtype)
 	
 	local lid = 0;
 	if (matchtype <= 10) then
-		lid = LG_GetLeagueObj(matchtype + 10, GetTong().."±ÈÈüÃÅÅÉÃûµ¥"..matchtype.."_"..	TAB_TICKETINFO[1][2])
+		lid = LG_GetLeagueObj(matchtype + 10, GetTong().."Danh s¸ch m«n ph¸i thi ®Êu"..matchtype.."_"..	TAB_TICKETINFO[1][2])
 	else
 		lid = LG_GetLeagueObj(matchtype + 10, GetTong()..TAB_TICKETINFO[matchtype][3]..TAB_TICKETINFO[matchtype][2])
 	end
 	if (lid > 0) then
-		Say("¶Ô²»Æğ£¬²Î¼Ó¸Ã±ÈÈüµÄÈËÊıÒÑ¹º£¬²»ÄÜÁìÈ¡²Î¼Ó×Ê¸ñÁË¡£ÏêÏ¸Çé¿ö¿ÉÒÔ¿´ÇøÓò±¨ÃûÈËÊıÃûµ¥.", 0);
+		Say("Xin lçi! Sè ng­êi tham gia môc thi ®Êu nµy ®· ®ñ, kh«ng thÓ nhËn t­ c¸ch tham gia n÷a! Chi tiÕt cã thÓ xem danh s¸ch sè ng­êi ®· b¸o danh cña khu vùc.", 0);
 		return
 	end
 	
 	local usedcount = GetTask(TK_WL_TICKET_FACTION1 + matchtype - 1)
 	if (usedcount >= TAB_TICKETINFO[matchtype][2]) then
-		Say("¶Ô²»Æğ!".."¸ÃÏî×î´óµÄ²Î¼Ó×Ê¸ñÆ±ÊıÎª"..TAB_TICKETINFO[matchtype][2]..", ÄúÒÑÁìÈ¡¸ÃÏî²ÎÈü×Ê¸ñÆ±ÁË¡£²»ÄÜÔÙÁìÈ¡ÁË!",0)
+		Say("Xin lçi!".."Sè l­îng phiÕu t­ c¸ch tham gia lín nhÊt cña môc nµy lµ "..TAB_TICKETINFO[matchtype][2]..", b¹n ®· nhËn xong phiÕu t­ c¸ch tham gia môc thi ®Êu nµy! Kh«ng thÓ nhËn n÷a!",0)
 		return
 	end
 --	local usedcount = GetTask(TK_WL_TICKET_FACTION1 + matchtype - 1)
@@ -99,12 +99,12 @@ function wl_getticket( matchtype)
 	
 	local tabticketinfo = {};
 	for i = 1, TAB_TICKETINFO[matchtype][2] - usedcount do 
-		tabticketinfo[i] = "ÎÒÏëÏÈÁì"..i.."´ò¿ª/#wl_suregetticket("..matchtype..","..i..")"
+		tabticketinfo[i] = "Ta muèn l·nh tr­íc"..i.."Më /#wl_suregetticket("..matchtype..","..i..")"
 	end
-	tabticketinfo[getn(tabticketinfo)+ 1] = "ÎÒÏëÒ»Ïë/OnCancel"
+	tabticketinfo[getn(tabticketinfo)+ 1] = "Ta suy nghÜ mét chót/OnCancel"
 --	tabticketinfo[1]= "ÎÒÒªÏÈÁì"..MAX_TICKETCOUNT.."ÕÅ/#wl_suregetticket("..matchtype..","..MAX_TICKETCOUNT..")"
 --	tabticketinfo[getn(tabticketinfo)+1] = "ÎÒÏÂ´ÎÔÙÁì°É/OnCancel";
-	Say("ÄúÄ¿Ç°»¹ÓĞ"..(TAB_TICKETINFO[matchtype][2] - usedcount).."´ò¿ª"..TAB_TICKETINFO[matchtype][1].."²ÎÈü×Ê¸ñÆ±£¬ÄúÏëÏÖÔÚÁìÂğ£¿", getn(tabticketinfo), tabticketinfo)
+	Say("Ng­¬i hiÖn cßn"..(TAB_TICKETINFO[matchtype][2] - usedcount).."Më "..TAB_TICKETINFO[matchtype][1].."phiÕu t­ c¸ch tham gia, ng­¬i muèn nhËn b©y giê kh«ng?", getn(tabticketinfo), tabticketinfo)
 --	Say("ÎäÁÖ´ó»á¹ÙÔ±£ºÄã¿ÉÒÔÁìÈ¡<color=yellow> "..MAX_TICKETCOUNT.." <color>ÕÅ"..TAB_TICKETINFO[matchtype][1].."×Ê¸ñÆ±£¬ÄãÒªÏÖÔÚÁìÈ¡Âğ£¿", getn(tabticketinfo), tabticketinfo)
 end
 
@@ -112,7 +112,7 @@ end
 function wl_suregetticket(matchtype, count)
 	local usedcount = GetTask(TK_WL_TICKET_FACTION1 + matchtype - 1)
 	if (usedcount >= TAB_TICKETINFO[matchtype][2]) then
-		Say("¶Ô²»Æğ!".."¸ÃÏîÈüÄãÄÜÁìÈ¡µÄ×î´ó×Ê¸ñÆ±ÊıÁ¿ÊÇ"..TAB_TICKETINFO[matchtype][2]..", ÄúÒÑÁìÈ¡¸ÃÏî²ÎÈü×Ê¸ñÆ±ÁË¡£²»ÄÜÔÙÁìÈ¡ÁË!",0)
+		Say("Xin lçi!".."Sè l­îng phiÕu t­ c¸ch tham gia lín nhÊt cña môc nµy lµ "..TAB_TICKETINFO[matchtype][2]..", b¹n ®· nhËn xong phiÕu t­ c¸ch tham gia môc thi ®Êu nµy! Kh«ng thÓ nhËn n÷a!",0)
 		return
 	end
 --	if (usedcount >= MAX_TICKETCOUNT) then
@@ -159,13 +159,13 @@ function wl_checkzoneleader( matchtype )
 	local openmon, openday = wl_getmatchopenday(1)
 	if ( (openmon >= mon and openday > day) or hour < 18 ) then
 		if (GetTongFigure() ~= TONG_MASTER and GetTongFigure() ~= TONG_ELDER) then
-			Say("ĞèÊÇÇøÓò°ïÖ÷»òÕß³¤ÀÏ²ÅĞĞ!", 0)
+			Say("Ph¶i lµ Bang chñ hoÆc Tr­ëng l·o cña khu vùc míi ®­îc!", 0)
 			return 0
 		end
 
 		local zoneid = wl_zonename2zoneid(GetTong());
 		if (zoneid == 0) then
-			Say("¶Ô²»Æğ£¬ĞèÊÇ±ÈÈüÇøÓòµÄ°ïÖ÷²ÅÄÜÁìÈ¡!",0)
+			Say("Xin lçi! Ph¶i lµ Bang chñ cña khu vùc thi ®Êu míi cã thÓ nhËn ®­îc!",0)
 			return 0
 		end
 		return 1
@@ -191,11 +191,11 @@ function wl_checkzoneleader( matchtype )
 		
 			return 1
 		else
-			Say("½ñÌìÎª¿ªÈü"..TAB_TICKETINFO[matchtype][3]..", Äú²»ÄÜÁìÈ¡¸Ã±ÈÈüµÄÈë³¡È¯.", 0)
+			Say("H«m nay ch­a më thi ®Êu cña"..TAB_TICKETINFO[matchtype][3]..", ng­¬i kh«ng thÓ nhËn vĞ vµo lo¹i thi ®Êu nµy.", 0)
 			return 0
 		end
 	end
-	Say("ÏÖÔÚ²»ÊÇÁìÈ¡±ÈÈüÆ±Ê±¼ä!", 0)
+	Say("B©y giê kh«ng ph¶i lµ thêi gian l·nh phiÕu thi ®Êu!", 0)
 	return 0
 end
 

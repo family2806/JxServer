@@ -7,6 +7,6 @@ function CheckCondition()
 			return 1;
 		end;
  	end;
- 	Say("Äã²»×ãµÈ¼¶»òÕß´øµÄÇ®²»¹»£¬²»ÄÜÉÏ»ªÉ½¾ø¶¥", 0);
+ 	Say("B¹n ch­a ®ñ ®¼ng cÊp hoÆc kh«ng mang ®ñ tiÒn, kh«ng thÓ lªn Hoa S¬n tuyÖt ®Ønh", 0);
  	return 0;
 end;

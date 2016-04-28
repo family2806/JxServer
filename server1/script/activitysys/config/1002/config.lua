@@ -20,7 +20,7 @@ tbConfig[2] = --ËÎ½ð2000µã
 {
 	nId = 2,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ð2000µã",
+	szName = "Tèng kim cao cÊp 2000 ®iÓm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,"3"},
@@ -30,14 +30,14 @@ tbConfig[2] = --ËÎ½ð2000µã
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_Ñ©ÐÇÐÇ\tËÎ½ð2000"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_NgoiSaoTuyet\tTongKim2000"} },
 	},
 }
 tbConfig[3] =
 {
 	nId = 3,
 	szMessageType = "Chuanguan",
-	szName = "´³¹ý17¹Ø",
+	szName = "V­ît qua ¶i 17",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"17"},
@@ -46,14 +46,14 @@ tbConfig[3] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\t´³¹ý17¹Ø"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_NgoiSaoTuyet\tVuotAi17"} },
 	},
 }
 tbConfig[4] =
 {
 	nId = 4,
 	szMessageType = "Chuanguan",
-	szName = "´³¹Ø28",
+	szName = "V­ît qua ¶i 28",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"28"},
@@ -62,14 +62,14 @@ tbConfig[4] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\t´³¹Ø28"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_NgoiSaoTuyet\tVuotAi28"} },
 	},
 }
 tbConfig[5] = 
 {
 	nId = 5,
 	szMessageType = "FinishFengLingDu",
-	szName = "Íê³É·çÁê¶É",
+	szName = "Hoµn thµnh Phong L¨ng §é",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -78,14 +78,14 @@ tbConfig[5] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_Ñ©ÐÇÐÇ\tÍê³É·çÁê¶É"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_NgoiSaoTuyet\tHoanThanhPLD"} },
 	},
 }
 tbConfig[6] = --É±ÊÖboss
 {
 	nId = 6,
 	szMessageType = "NpcOnDeath",
-	szName = "90¼¶É±ÊÖÈÎÎñ",
+	szName = "NhiÖm vô s¸t thñ cÊp 90",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -95,14 +95,14 @@ tbConfig[6] = --É±ÊÖboss
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},3,"Event_Ñ©ÐÇÐÇ\tÏûÃðÉ±ÊÖBOSS"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},3,"Event_NgoiSaoTuyet\tTieuDietBossS¸tThñ"} },
 	},
 }
 tbConfig[7] = --ËÎ½ð1000µã
 {
 	nId = 7,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ð1000µã",
+	szName = "Tèng kim cao cÊp 1000 ®iÓm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,"3"},
@@ -114,21 +114,21 @@ tbConfig[7] = --ËÎ½ð1000µã
 	tbActition = 
 	{
 		--{"PlayerFunLib:AddTaskDaily",	{nTSK_DAILY_TK_Áì_±ù_Ê¯,4} },
-		--{"PlayerFunLib:GetItem",	{{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime, nBindState = -2},4,"Event_Ñ©ÐÇÐÇ\tËÎ½ðÁìÈ¡±ùÊ¯"} },
+		--{"PlayerFunLib:GetItem",	{{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime, nBindState = -2},4,"Event_NgoiSaoTuyet\tTongKimNhanBangThach"} },
 	},
 }
-tbConfig[8] = --Ê¹ÓÃÑ©±ùÊ¯ÀñºÐ
+tbConfig[8] = --Sö dông TuyÕt B¨ng Th¹ch LÔ Hép
 {
 	nId = 8,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÑ©±ùÊ¯ÀñºÐ",
+	szName = "Sö dông TuyÕt B¨ng Th¹ch LÔ Hép",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30120,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckFreeBagCell",	{2,"default"} },
-		{"PlayerFunLib:CheckTaskDaily",	{nTSK_DAILY_SU_DUNG_BANG_THACH_LE_HOP,15,"½ñÌìÒÑÊ¹ÓÃ15¸öÑ©±ùÊ¯ÀñºÐ£¬Ã÷Ìì¼ÌÐøÊ¹ÓÃÅ¶.","<"} },
+		{"PlayerFunLib:CheckTaskDaily",	{nTSK_DAILY_SU_DUNG_BANG_THACH_LE_HOP,15,"H«m nay ®· sö dông 15 TuyÕt B¨ng Th¹ch LÔ Hép, mai h·y sö dông tiÕp.","<"} },
 	},
 	tbActition = 
 	{
@@ -142,268 +142,268 @@ tbConfig[9] = --´óÀÏÊ¦¶Ô»°
 {
 	nId = 9,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷Ìì¾«ÀÏÈË",
+	szName = "BÊm vµo Thiªn Tinh L·o Nh©n",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ìì¾«ÀÏÈË"},
+	tbMessageParam = {"Thiªn Tinh L·o Nh©n"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"ÄúºÃ£¬ÄúÏëÒªÎÒÉý¼¶Ñ©±ù¾§Âð?"} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§1¼¶", 11} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§2¼¶", 12} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§3¼¶", 13} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§4¼¶", 14} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§5¼¶", 15} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§6¼¶", 16} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§7¼¶", 17} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§8¼¶", 18} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§9¼¶", 19} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§10¼¶", 20} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§11¼¶", 21} },
-		{"AddDialogOpt",	{"Éý¼¶Ñ©±ù¾§12¼¶", 22} },	
+		{"SetDialogTitle",	{"Xin chµo, c¸c muèn ta th¨ng cÊp TuyÕt B¨ng Tinh kh«ng?"} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 1", 11} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 2", 12} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 3", 13} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 4", 14} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 5", 15} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 6", 16} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 7", 17} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 8", 18} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 9", 19} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 10", 20} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 11", 21} },
+		{"AddDialogOpt",	{"Th¨ng cÊp TuyÕt B¨ng Tinh cÊp 12", 22} },	
 	},
 }
 tbConfig[10] =
 {
 	nId = 10,
 	szMessageType = "CreateDialog",
-	szName = "Éý¼¶Ñ©±ù¾§",
+	szName = "Th¨ng cÊp TuyÕt B¨ng Tinh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>ÇëÑ¡ÔñµÈ¼¶"},
+	tbMessageParam = {"<npc>Xin h·y chän ®¼ng cÊp"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{		
---		{"AddDialogOpt",	{"Ñ©±ù¾§1¼¶", 11} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§2¼¶", 12} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§3¼¶", 13} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§4¼¶", 14} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§5¼¶", 15} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§6¼¶", 16} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§7¼¶", 17} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§8¼¶", 18} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§9¼¶", 19} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§10¼¶", 20} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§11¼¶", 21} },
---		{"AddDialogOpt",	{"Ñ©±ù¾§12¼¶", 22} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 1", 11} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 2", 12} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 3", 13} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 4", 14} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 5", 15} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 6", 16} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 7", 17} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 8", 18} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 9", 19} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 10", 20} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 11", 21} },
+--		{"AddDialogOpt",	{"TuyÕt B¨ng Tinh cÊp 12", 22} },
 	},
 }
 ----ºÏ³ÉÔ­ÁÏ
-tbConfig[11] = --ºÏ³É1¼¶ÐÇÐÇ
+tbConfig[11] = --GhÐp sao cÊp 1
 {
 	nId = 11,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É1¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[1¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 1]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[0]¼¶",{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [0]",{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{1} },
 	},
 }
-tbConfig[12] = --ºÏ³É2¼¶ÐÇÐÇ
+tbConfig[12] = --GhÐp sao cÊp 2
 {
 	nId = 12,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É2¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[2¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 2]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[1]¼¶",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [1]",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{2} },
 	},
 }
-tbConfig[13] = --ºÏ³É3¼¶ÐÇÐÇ
+tbConfig[13] = --GhÐp sao cÊp 3
 {
 	nId = 13,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É3¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 3",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[3]¼¶",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 3]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[2]¼¶",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [2]",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{3} },
 	},
 }
-tbConfig[14] = --ºÏ³É4¼¶ÐÇÐÇ
+tbConfig[14] = --GhÐp sao cÊp 4
 {
 	nId = 14,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É4¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 4",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[4¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 4]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[3]¼¶",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [3]",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{4} },
 	},
 }
-tbConfig[15] = --ºÏ³É5¼¶ÐÇÐÇ
+tbConfig[15] = --GhÐp sao cÊp 5
 {
 	nId = 15,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É5¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 5",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[5¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 5]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[4]¼¶",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [4]",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{5} },
 	},
 }
-tbConfig[16] = --ºÏ³É6¼¶ÐÇÐÇ
+tbConfig[16] = --GhÐp sao cÊp 6
 {
 	nId = 16,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É6¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 6",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[6¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 6]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[5]¼¶",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [5]",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{6} },
 	},
 }
-tbConfig[17] = --ºÏ³É7¼¶ÐÇÐÇ
+tbConfig[17] = --GhÐp sao cÊp 7
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É7¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 7",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[7¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 7]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[6]¼¶",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [6]",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{7} },
 	},
 }
-tbConfig[18] = --ºÏ³É8¼¶ÐÇÐÇ
+tbConfig[18] = --GhÐp sao cÊp 8
 {
 	nId = 18,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É8¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 8",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[8¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 8]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[7]¼¶",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [7]",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{8} },
 	},
 }
-tbConfig[19] = --ºÏ³É9¼¶ÐÇÐÇ
+tbConfig[19] = --GhÐp sao cÊp 9
 {
 	nId = 19,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É9¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 9",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[9¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 9]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[8]¼¶",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [8]",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{9} },
 	},
 }
-tbConfig[20] = --ºÏ³É10¼¶ÐÇÐÇ
+tbConfig[20] = --GhÐp sao cÊp 10
 {
 	nId = 20,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É10¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 10",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[10¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 10]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[9]¼¶",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [9]",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{10} },
 	},
 }
-tbConfig[21] = --ºÏ³É11¼¶ÐÇÐÇ
+tbConfig[21] = --GhÐp sao cÊp 11
 {
 	nId = 21,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É11¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 11",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[11¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 11]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[10]¼¶",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [10]",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:UpgradeStar",	{11} },
 	},
 }
-tbConfig[22] = --ºÏ³É12¼¶ÐÇÐÇ
+tbConfig[22] = --GhÐp sao cÊp 12
 {
 	nId = 22,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É12¼¶ÐÇÐÇ",
+	szName = "GhÐp sao cÊp 12",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[12¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 12]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[11]¼¶",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
-		{"AddOneMaterial",	{"Ñ©±ùÊ¯",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [11]",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Th¹ch",{tbProp={6,1,30119,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
@@ -411,243 +411,243 @@ tbConfig[22] = --ºÏ³É12¼¶ÐÇÐÇ
 	},
 }
 
-tbConfig[23] = --Ð¡Í¯×Ó¶Ô»°
+tbConfig[23] = --TiÓu §ång Tö¶Ô»°
 {
 	nId = 23,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷Ð¡Í¯×Ó",
+	szName = "BÊm vµo TiÓu §ång Tö",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ð¡Í¯×Ó"},
+	tbMessageParam = {"TiÓu §ång Tö"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"ÄúºÃ£¬´óÏÀÐèÒªÊ²Ã´?"} },
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[1¼¶]",24} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[2¼¶]",25} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[3¼¶]",26} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[4¼¶]",27} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[5¼¶]",28} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[6¼¶]",29} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[7¼¶]",30} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[8¼¶]",31} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[9¼¶]",32} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[10¼¶]",33} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[11¼¶]",34} },	
-		{"AddDialogOpt",	{"ËÍÑ©±ù¾§[12¼¶]",35} },	
+		{"SetDialogTitle",	{"Xin chµo, ®¹i hiÖp cÇn g×?"} },
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 1]",24} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 2]",25} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 3]",26} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 4]",27} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 5]",28} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 6]",29} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 7]",30} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 8]",31} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 9]",32} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 10]",33} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 11]",34} },	
+		{"AddDialogOpt",	{"TÆng TuyÕt B¨ng Tinh [CÊp 12]",35} },	
 	},
 }
-tbConfig[24] = --ËÍÑ©±ù¾§1¼¶
+tbConfig[24] = --ËÍTuyÕt B¨ng Tinh cÊp 1
 {
 	nId = 24,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ 1",
+	szName = "TÆng sao cÊp 1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[1¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 1]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[1]¼¶",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [1]",{tbProp={6,1,30118,1,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{1} },
 	},
 }
-tbConfig[25] = --ËÍÑ©±ù¾§2¼¶
+tbConfig[25] = --ËÍTuyÕt B¨ng Tinh cÊp 2
 {
 	nId = 25,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ 2",
+	szName = "TÆng sao cÊp 2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[2¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 2]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[2]¼¶",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [2]",{tbProp={6,1,30118,2,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{2} },
 	},
 }
-tbConfig[26] = --ËÍÑ©±ù¾§3¼¶
+tbConfig[26] = --ËÍTuyÕt B¨ng Tinh cÊp 3
 {
 	nId = 26,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ3",
+	szName = "TÆng sao cÊp 3",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[3¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 3]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[3]¼¶",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [3]",{tbProp={6,1,30118,3,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{3} },
 	},
 }
-tbConfig[27] = --ËÍÑ©±ù¾§4¼¶
+tbConfig[27] = --ËÍTuyÕt B¨ng Tinh cÊp 4
 {
 	nId = 27,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ4",
+	szName = "TÆng sao cÊp 4",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[4¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 4]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[4]¼¶",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [4]",{tbProp={6,1,30118,4,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{4} },
 	},
 }
-tbConfig[28] = --ËÍÑ©±ù¾§5¼¶
+tbConfig[28] = --ËÍTuyÕt B¨ng Tinh cÊp 5
 {
 	nId = 28,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ5",
+	szName = "TÆng sao cÊp 5",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[5¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 5]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[5]¼¶",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [5]",{tbProp={6,1,30118,5,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{5} },
 	},
 }
-tbConfig[29] = --ËÍÑ©±ù¾§6¼¶
+tbConfig[29] = --ËÍTuyÕt B¨ng Tinh cÊp 6
 {
 	nId = 29,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ6",
+	szName = "TÆng sao cÊp 6",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[6¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 6]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[6]¼¶",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [6]",{tbProp={6,1,30118,6,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{6} },
 	},
 }
-tbConfig[30] = --ËÍÑ©±ù¾§7¼¶
+tbConfig[30] = --ËÍTuyÕt B¨ng Tinh cÊp 7
 {
 	nId = 30,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ7",
+	szName = "TÆng sao cÊp 7",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[7¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 7]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[7]¼¶",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [7]",{tbProp={6,1,30118,7,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{7} },
 	},
 }
-tbConfig[31] = --ËÍÑ©±ù¾§8¼¶
+tbConfig[31] = --ËÍTuyÕt B¨ng Tinh cÊp 8
 {
 	nId = 31,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ8",
+	szName = "TÆng sao cÊp 8",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[8¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 8]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[8]¼¶",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [8]",{tbProp={6,1,30118,8,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{8} },
 	},
 }
-tbConfig[32] = --ËÍÑ©±ù¾§9¼¶
+tbConfig[32] = --ËÍTuyÕt B¨ng Tinh cÊp 9
 {
 	nId = 32,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ9",
+	szName = "TÆng sao cÊp 9",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[ 9¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 9]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[9]¼¶",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [9]",{tbProp={6,1,30118,9,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{9} },
 	},
 }
-tbConfig[33] = --ËÍÑ©±ù¾§10¼¶
+tbConfig[33] = --ËÍTuyÕt B¨ng Tinh cÊp 10
 {
 	nId = 33,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ10",
+	szName = "TÆng sao cÊp 10",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[10¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 10]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[10]¼¶",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [10]",{tbProp={6,1,30118,10,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{10} },
 	},
 }
-tbConfig[34] = --ËÍÑ©±ù¾§11¼¶
+tbConfig[34] = --ËÍTuyÕt B¨ng Tinh cÊp 11
 {
 	nId = 34,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ 11",
+	szName = "TÆng sao cÊp 11",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[ 11¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 11]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[11]¼¶",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [11]",{tbProp={6,1,30118,11,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{11} },
 	},
 }
-tbConfig[35] = --ËÍÑ©±ù¾§12¼¶
+tbConfig[35] = --ËÍTuyÕt B¨ng Tinh cÊp 12
 {
 	nId = 35,
 	szMessageType = "CreateCompose",
-	szName = "ËÍÐÇÐÇ12",
+	szName = "TÆng sao cÊp 12",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Ñ©±ù¾§[12¼¶]",1,1,1,0.02},
+	tbMessageParam = {"<npc>TuyÕt B¨ng Tinh [CÊp 12]",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ñ©±ù¾§[12]¼¶",{tbProp={6,1,30118,12,0,0},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"TuyÕt B¨ng Tinh CÊp [12]",{tbProp={6,1,30118,12,0,0},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:GiveStar",	{12} },
 	},
 }
-tbConfig[36] = --Ê¹ÓÃÄ¾Ïä
+tbConfig[36] = --Sö dông r­¬ng gç
 {
 	nId = 36,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÄ¾Ïä",
+	szName = "Sö dông r­¬ng gç",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30121,1,0,0},}},

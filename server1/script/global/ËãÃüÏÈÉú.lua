@@ -1,50 +1,50 @@
 -- ËãÃüÏÈÉú.lua ¿´ÉùÍûÖµµÄËãÃüÏÈÉú
 -- By Dan_Deng(2003-11-11)
 
-sexhead = {"ÉÙÏÀ","Å®ÏÀ"}
+sexhead = {"Nam","N÷ "}
 
 Include("\\script\\global\\repute_head.lua")
 
 function main()
 	if (GetSex() == 0) then			-- ÄĞÅ®ÓÃ²»Í¬µÄ¶Ô»°
-		Say("ÕÅÌú×ì£ºÕâÎ»ÉÙÏÀÆøÓî²»·²£¬Ïë²»ÏëÖªµÀÉÙÏÀÄúµÄ½õĞåÇ°³Ì£¿Ö»Òª500Á½Òø×Ó¡£",2,"ºÃ£¬¸øÎÒËãÒ»Ëã/view_repute_yes","²»ÓÃÁË/no")
+		Say("VŞ thiÕu hiÖp nµy khİ ph¸ch bÊt phµm!  Cã muèn biÕt t­¬ng lai s¸ng l¹n cña m×nh kh«ng? ChØ cÇn 5000 l­îng! ",2,"§­îc, ®Ó ta xem thö/view_repute_yes","Kh«ng cÇn ®©u/no")
 	else
-		Say("ÕÅÌú×ì£ºÕâÎ»¹ÃÄïÃ²ÃÀÈç»¨£¬Ïë²»Ïë¿´¿´×Ô¼ºµÄÃÀºÃÎ´À´ÄØ£¿Ö»Òª500Á½Òø×Ó¡£",2,"ºÃ£¬¸øÎÒËãÒ»Ëã/view_repute_yes","²»ÓÃÁË/no")
+		Say("VŞ n÷ hiÖp nµy khİ ph¸ch bÊt phµm!  Cã muèn biÕt t­¬ng lai s¸ng l¹n cña m×nh kh«ng? ChØ cÇn 5000 l­îng!",2,"§­îc, ®Ó ta xem thö/view_repute_yes","Kh«ng cÇn ®©u/no")
 	end
 end
 
 function view_repute_yes()
 	if (GetCash() < 500) then
-		Talk(1,"","ÕÅÌú×ì£ºÓÖÊÇÒ»¸öÃ»Ç®µÄ£¬°×·ÑÁË°ëÌì¿ÚË®¡£")		
+		Talk(1,"","L¹i mét ng­êi kh«ng cã tiÒn n÷a, lµm phİ mÊt nöa ngµy trêi")		
 		return 0
 	end
 	Pay(500)
 	repute_exp = GetRepute()
 	repute_lvl = GetReputeLevel(repute_exp)
 	if (repute_lvl == -1) then			-- ³ö´íÊ±
-		Talk(1,"","ÕÅÌú×ì£º×Ô¹ÅÓ¢½Ü¶à¿àÄÑ£¬ÏÖÔÚÄãÕıÊÜ¶òÁéÖ®À§£¬ÖÂÊ¹ÄãµÄ½­ºşÉùÍû³öÏÖÁË´íÎó¡£ÇëÈ¥ÕÒÌìÉñ´Í¸£°É¡£")
+		Talk(1,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi")
 	elseif (repute_lvl == 0) then
-		Talk(2,"","ÕÅÌú×ì£º½ğÁúÆñÊÇ³ØÖĞÎï£¬ÄãÏÖÔÚËäÈ»Ò»½é²¼ÒÂ£¬½­ºşÈËËù²»Ê¶£¬µ«¼ÙÒÔÊ±ÈÕ£¬±Ø½«ÓĞ¾ªÌì¶¯µØÖ®ÄÜ¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>Æ½Ãñ°ÙĞÕ<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.." Giang hå coi ng­¬i lµ <color=red>Míi t¸i xuÊt giang hå<color>.")
 	elseif (repute_lvl == 1) then
-		Talk(2,"","ÕÅÌú×ì£ºÉñÁúÕ§ÏÖÈËÊÀ¼ä£¬ÄãËäÈ»³õ³öÃ©Â®£¬µ«±Ø½«Ñ¸ËÙÜ¥Æğ£¬ÓĞÊ¶Ö®Ê¿½«»áºÜ¿ì×¢Òâµ½ÄãµÄÁ¦Á¿¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>³õ³ö½­ºş<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>S¬ nhËp giang hå<color>.")
 	elseif (repute_lvl == 2) then
-		Talk(2,"","ÕÅÌú×ì£º³û·ïĞÄÓĞºèğÀÖ¾£¬ËäÈ»ÔÚ½­ºşÖĞÄã»¹Ö»ÊÇÎŞÃûĞ¡±²£¬µ«³¬Ô½·²±²¶ÔÄã¶øÑÔÖ»ÊÇ´¥ÊÖ¿É¼°Ö®ÊÂ¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>ÎŞÃûĞ¡±²<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>V« Danh tiÓu bèi<color>.")
 	elseif (repute_lvl == 3) then
-		Talk(2,"","ÕÅÌú×ì£ºÇ±ĞŞÊ®ÔØÎŞÈËÎÊ£¬ÔÚ½­ºşÖĞÄãÈÔÈ»Ä¬Ä¬ÎŞÎÅ£¬µ«Ç±ÖÊÒÑ¾­±íÂ¶ÎŞÒÅ£¬Ò»·É³åÌìÖ»ÊÇ³ÙÔçÖ®ÊÂ¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>Ä¬Ä¬ÎŞÎÅ<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>MÆc MÆc v« v¨n<color>.")
 	elseif (repute_lvl == 4) then
-		Talk(2,"","ÕÅÌú×ì£º¾­ÀúÁËÖÚ¶àÄ¥Á·Ö®ºóµÄÄã£¬ÒÑ¾­ÔÚÖÚÈËÖ®Ç°³õ³õÏÔÂ¶·æÃ¢£¬½­ºşÈºÏÀÒÑ¿ªÊ¼×¢Òâµ½ÄãµÄÜ¥Æğ¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>³õÏÔ·æÃ¢<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>S¬ HiÓn phong mang<color>.")
 	elseif (repute_lvl == 5) then
-		Talk(2,"","ÕÅÌú×ì£ºÄãÒÑ¾­¶É¹ıÁË×î¼èÄÑÀ§¿àµÄ½×¶Î£¬ÄãµÄÃûÆø¿ªÊ¼Ó°Ïìµ½ÖÜÎ§µÄÈËÃÇ£¬¸ü¶àµÄÈË·¢ÏÖÁËÄãµÄÄÜÁ¦¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>Ğ¡ÓĞÃûÆø<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>TiÓu Höu danh khİ<color>.")
 	elseif (repute_lvl == 6) then
-		Talk(2,"","ÕÅÌú×ì£ºÄãµÄÜ¥ÆğÕıÔÚ±»Ô½À´Ô½¶àµÄÈËÖØÊÓ£¬½­ºşÖĞÄãµÄÃûÍ·ÒÑ¾­Ô½À´Ô½ÏìÁÁ£¬ÈËÃÇ¿ªÊ¼ÕæĞÄÊµÒâµØ¶ÔÄãËµ¡°ÈçÀ×¹á¶ú¡±¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>ÃûÍ·ÏìÁÁ<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>Danh §Çu h­ëng l­îng<color>.")
 	elseif (repute_lvl == 7) then
-		Talk(2,"","ÕÅÌú×ì£ºÄãÒÑ³ÉÎª´ó¶àÊıÈËÑÛÖĞµÄ¸ßÊÖ£¬ÄãËùÓµÓĞµÄ²»Ë×ÊµÁ¦Ê¹ÄãµÄÃûÍ·ÍşÕòÒ»·½¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>ÍşÕòÒ»·½<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>Uy TrÊn nhÊt ph­¬ng<color>.")
 	elseif (repute_lvl == 8) then
-		Talk(2,"","ÕÅÌú×ì£º°ÁÊÓÈºĞÛµÄÇ¿Õß¿ÉÒÔÖ÷Ô×ËûÈËµÄÉúËÀ¡£¶øÄã£¬ÔÚ²»Ğ¸Å¬Á¦ºÍ¼è¿à·Ü¶·Ö®ÏÂ£¬ÒÑ¾­³ÉÎªÁËÕâÑùµÄÇ¿Õß¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>°ÁÊÓÈºĞÛ<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>Ng¹o ThŞ quÇn hïng<color>.")
 	elseif (repute_lvl == 9) then
-		Talk(2,"","ÕÅÌú×ì£ºÄãµÄÉùÍûÈçÈÕÖĞÌì£¬½­ºşÎªÖ®¾°Ñö£¬×ğÄãÎªÒ»´ú×ÚÊ¦£¬ÎäÁÖ´óÏÀ¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>Ò»´ú×ÚÊ¦<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>NhÊt §¹i t«ng s­<color>.")
 	else
-		Talk(2,"","ÕÅÌú×ì£ºÉíÎª½­ºşÖĞµÄ´«ËµÈËÎï£¬½­ºşºó½øµÄ·Ü¶·Ä¿±ê£¬¶øÄãÈ´ÈçÉñÁú¼ûÊ×²»¼ûÎ²Ò»°ãËæĞÔ¶øÎª¡£","ÕÅÌú×ì£ºÄãÏÖÔÚµÄ½­ºşÉùÍûÊÇ"..repute_exp.."£¬½­ºşÈËÊÓÄãÎª<color=red>Ğ¦°Á½­ºş<color>¡£")
+		Talk(2,"","ThÇn long gi¶ lµm ng­êi trÇn gian.MÆc dï hiÖn giê ng­¬i ®ang long ®ong, nh­ng sÏ ph¸t triÓn rÊt nhanh. Ng­êi tinh ı sÏ ph¸t hiÖn ra ng­¬i lµ mét thiªn tµi","Danh väng giang hå cña ng­¬i hiÖn t¹i lµ"..repute_exp.."Giang hå coi ng­¬i lµ<color=red>TiÕu Ng¹o giang hå<color>.")
 	end
 end
 

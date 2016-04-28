@@ -2,5 +2,5 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\lib\\awardtype\\simple.lua")
 VngEnergyType = SimpleType:new("nVngEnergy")
 VngEnergyType.pFun = AddEnergy
-VngEnergyType.szMsgFormat = "获得 %d 精炼石值"
+VngEnergyType.szMsgFormat = "Nh薾 頲 %d 甶觤 tinh l鵦"
 VngEnergyType:Reg()

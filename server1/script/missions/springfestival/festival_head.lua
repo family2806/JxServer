@@ -66,11 +66,11 @@ if (not __FESTIVAL_HEAD__) then
 	MS_FE_PREPARENEWSVALUE = 5; --×¼±¸³¡¼ÆÊ±±äÁ¿
 	MS_FE_GAMECOUNT = 6;    --  ¼ÇÂ¼Ò»³¡¿ªÊ¼µÄÓÎÏ·µÄ¸öÊý
 	--³£Á¿²¿·Ö£»
-	FESTIVAL_SHREWMOUSE = "´º¼¾»î¶¯";
-	FE_ANIMALNAME = "¹ÖÊÞ";
-	FE_MOUSENAME = "Ê§×ÙÐ¡º¢"; --Ê¥µ®¾«ÁéµÄÃû×Ö
-	FE_GIFTNAME = "ÁôÏÂµÄÀñÎï";       --ÀñÎïNPCµÄÃû×Ö
-	FE_SIGNNPCNAME = "<color=yellow>ÑÃÃÅ²îÒÛ<color>:";    --±¨ÃûÊ¥µ®ÀÏÈËµÄÃû×Ö
+	FESTIVAL_SHREWMOUSE = "Ho¹t ®éng ngµy Xu©n";
+	FE_ANIMALNAME = "Qu¸i thó ";
+	FE_MOUSENAME = "®øa trÎ mÊt tÝch"; --Ê¥µ®¾«ÁéµÄÃû×Ö
+	FE_GIFTNAME = "LÔ vËt ®Ó l¹i";       --ÀñÎïNPCµÄÃû×Ö
+	FE_SIGNNPCNAME = "<color=yellow>Nha m«n sai dÞch<color>:";    --±¨ÃûÊ¥µ®ÀÏÈËµÄÃû×Ö
 	FE_MAPPOINTFLORDER = "springfestival2006";
 	FE_NIGHT_BEGINTIME = 1900;
 	FE_NIGHT_ENDTIME = 2300;
@@ -136,12 +136,12 @@ if (not __FESTIVAL_HEAD__) then
 		--½øÐÐ¼ÆÊý
 		local nTimes = GetTask(TK_FE_PLAYTIMES);
 		if (nTimes >= FE_MAXPLAYTIMES) then
-			Talk(1, "", FE_SIGNNPCNAME.."½ñÌìÄãÒÑÀ´5´ÎÁË£¬Òª²»ÐÝÏ¢Ò»ÏÂ°É!");
+			Talk(1, "", FE_SIGNNPCNAME.."H«m nay ng­¬i ®· ®Õn 5 lÇn råi, hay lµ nghÜ mÖt chót ®i!");
 			return
 		end;
 		
 		if (GetLevel() < FE_LEVELLIMIT) then
-			Talk(1, "", FE_SIGNNPCNAME.."ÄãµÄµÈ¼¶¹ýµÍ£¬ÎÒ²»ÏëÄãÓÐÎ£ÏÕ£¬µÈµ½50¼¶ºóÔÙÀ´°É.");
+			Talk(1, "", FE_SIGNNPCNAME.."§¼ng cÊp cña ng­¬i qu¸ thÊp, ta kh«ng muèn ng­¬i gÆp nguy hiÓm, chê ®Õn cÊp 50 råi quay l¹i.");
 			return
 		end;
 		
@@ -155,10 +155,10 @@ if (not __FESTIVAL_HEAD__) then
 				    bOn = 1;
 			end;
 			if (bOn == 0) then
-				Talk(1, "", FE_SIGNNPCNAME.."ÎÒÃÇÕý×¼±¸¶Ô¸¶¹ÖÊÞµÄ¼Æ»®£¬»î¶¯½«´Ó12:00 µ½14:00, ÍíÉÏ19:00 µ½ 23:00, ÎçÒ¹1:00 µ½3:00, µ½Ê±ÒªÀ´Å¶!");
+				Talk(1, "", FE_SIGNNPCNAME.."Chóng ta ®ang chuÈn bÞ kÕ ho¹ch ®èi phã Qu¸i thó, ho¹t ®éng sÏ diÔn ra vµo buæi tr­a 12:00 ®Õn 14:00, buæi tèi tõ 19:00 ®Õn 23:00, ban ®ªm tõ 1:00 ®Õn 3:00, ®Õn lóc ®ã h·y quay l¹i!");
 				return
 			else
-				Talk(1, "", FE_SIGNNPCNAME.."ÄãÒ²ÏëÈ¥´ò¹ÖÎï°¡£¿ÒýÂ·µÄÈËÒÑ¾­×ßÁË£¬ÔÚ0 ·Ö, 15 ·Ö, 30 ·Ö, 45·Ö ½«»ØÀ´.");
+				Talk(1, "", FE_SIGNNPCNAME.."Ng­¬i còng muèn ®i ®¸nh Qu¸i thó µ? Nh­ng ng­êi dÉn ®­êng ®· ®i råi, vµo lóc 0 phót, 15 phót, 30 phót, 45phót sÏ quay l¹i.");
 				return
 			end;
 		end;
@@ -342,17 +342,17 @@ if (not __FESTIVAL_HEAD__) then
 	function itemuseplacecheck(nType)   --nType :1¡ª¡ª¹«¹²µÀ¾ß£»2¡ª¡ªÄêÊÞ×¨ÓÃµÀ¾ß£»3¡ª¡ªÆÕÍ¨Íæ¼Ò×¨ÒµµÀ¾ß
 	    local ww, xx, yy = GetWorldPos();
 	    if (FE_MAPID[2] ~= ww) then
-    	    Talk(1, "", "¸ÃÎïÆ·Ö»ÓÃÓÚ´º¼¾»î¶¯.");
+    	    Talk(1, "", "VËt phÈm nµy chØ dïng trong ho¹t ®éng ngµy Xu©n.");
 	        return 0;
 	    end;
 	    
 	    if (GetTask(TK_FE_GROUPID) <= FE_SMALLMAPCOUNT and 2 == nType) then
-    	    Talk(1, "", "Ö»ÓÐ´ò¹ÖÍæ¼Ò²ÅÄÜÊ¹ÓÃ¸ÃÃæ¾ß");
+    	    Talk(1, "", "ChØ cã ng­êi ch¬i Qu¸i thó míi cã thÓ sö dông MÆt n¹ nµy");
 	        return 0;
 	    end;
 	    
 	    if (GetTask(TK_FE_GROUPID) > FE_SMALLMAPCOUNT and 3 == nType) then
-    	    Talk(1, "", "Ö»ÓÐÒ»°ãÍæ¼Ò²ÅÄÜÊ¹ÓÃ¸ÃÎïÆ·.");
+    	    Talk(1, "", "ChØ cã ng­êi ch¬i b×nh th­êng míi sö dông ®­îc vËt phÈm nµy.");
 	        return 0;
 	    end;
 	    

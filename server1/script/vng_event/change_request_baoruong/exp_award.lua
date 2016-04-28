@@ -5,55 +5,55 @@ tbvng_ChestExpAward.MAX_EXP_PER_DAY = 50
 tbvng_ChestExpAward.TSK_DAY = 2744
 --tbvng_ChestExpAward.TSK_EXP = 2742
 tbvng_ChestExpAward.tbBitTask = {
-	["ËÎ½ðÃØ±¦"] = {
+	["Tèng Kim BÝ B¶o"] = {
 		nTaskID = 2705,
 		nStartBit = 1,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["´³¹Ø±¦Ïä"] = {
+	["B¶o r­¬ng v­ît ¶i"] = {
 		nTaskID = 2705,
 		nStartBit = 8,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["Ë®Ôô±¦Ïä"] = {
+	["B¶o R­¬ng Thñy TÆc"] = {
 		nTaskID = 2705,
 		nStartBit = 15,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["ÐÅÊ¹±¦Ïä"] = {
+	["TÝn Sø B¶o R­¬ng"] = {
 		nTaskID = 2705,
 		nStartBit = 22,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["Ñ×µÛÃØ±¦"] = {
+	["Viªm §Õ BÝ B¶o"] = {
 		nTaskID = 2706,
 		nStartBit = 1,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["ÎÀÖ÷Àñ°ü"] = {
+	["VÖ Trô LÔ Bao"] = {
 		nTaskID = 2706,
 		nStartBit = 8,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["¹¥³ÇÀñ°ü(ÐÂ)"] = {
+	["C«ng Thµnh LÔ Bao (míi)"] = {
 		nTaskID = 2706,
 		nStartBit = 15,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["Ìì³ØÃØ±¦"] = {
+	["Thiªn Tr× BÝ B¶o"] = {
 		nTaskID = 3080,
 		nStartBit = 1,
 		nBitCount = 7,
 		nMaxValue = 50,
 	},
-	["½£Ú£±¦Ïä"] = {
+	["B¶o R­¬ng KiÕm Gia"] = {
 		nTaskID = 3080,
 		nStartBit = 9,
 		nBitCount = 7,
@@ -74,7 +74,7 @@ function tbvng_ChestExpAward:ExpAward(nValue, strItemName)
 		end
 	else
 		if %tbVNG_BitTask_Lib:isMaxBitTaskValue(tbBitTSK_Exp) == 1 then
-			Msg2Player(format("½ñÌìÒÑÁì¹» <color=yellow>%d <color>°ÙÍò¾­Ñé, ²»ÄÜÔÙÁìÁË.", self.MAX_EXP_PER_DAY))
+			Msg2Player(format("H«m nay ®· nhËn ®ñ <color=yellow>%d <color>triÖu kinh nghiÖm, kh«ng thÓ nhËn thªm.", self.MAX_EXP_PER_DAY))
 			return
 		end
 	end
@@ -87,15 +87,15 @@ function tbvng_ChestExpAward:ExpAward(nValue, strItemName)
 	local nNextValue = nTskExpValue + nValue/1e6
 	%tbVNG_BitTask_Lib:setBitTask(tbBitTSK_Exp, nNextValue)
 	AddOwnExp(nValue)
-	Msg2Player(format("ÄãÒÑ»ñµÃ %d ²»µþ¼Ó¾­ÑéÖµ", nValue))
+	Msg2Player(format("B¹n ®· nhËn ®­îc %d ®iÓm kinh nghiÖm kh«ng thÓ céng dån", nValue))
 	local strTongName, nResult = GetTong()
 	if nResult == 0 then
-		strTongName = "²»"
+		strTongName = "Kh«ng"
 	end
 	local nMapID, _, _ = GetWorldPos()
 	local strItemProp = nValue.." exp"
 	local nDaylyExp = %tbVNG_BitTask_Lib:getBitTask(tbBitTSK_Exp) * 1e6
-	local strExtraInfo = "µ±ÈÕÒÑÁì¾­Ñé: "..nDaylyExp
-	local strLog = GetLocalDate("%Y-%m-%d %H:%M:%S").."\t".."Ê¹ÓÃ "..strItemName.."\t"..GetAccount().."\t"..GetName().."\t"..GetLevel().."\t"..ST_GetTransLifeCount().."\t".."ÁìÈ¡¾­Ñé".."\t".."¾­Ñé".."\t"..strItemProp.."\t".."1".."\t"..strTongName.."\t"..nMapID.."\t"..strExtraInfo
+	local strExtraInfo = "Kinh nghiÖm ®· nhËn trong ngµy: "..nDaylyExp
+	local strLog = GetLocalDate("%Y-%m-%d %H:%M:%S").."\t".."Sö dông "..strItemName.."\t"..GetAccount().."\t"..GetName().."\t"..GetLevel().."\t"..ST_GetTransLifeCount().."\t".."NhËn kinh nghiÖm".."\t".."Kinh nghiÖm".."\t"..strItemProp.."\t".."1".."\t"..strTongName.."\t"..nMapID.."\t"..strExtraInfo
 	WriteLog(strLog);	
 end

@@ -79,36 +79,36 @@ function AddLenhBaiBH()
 	SetItemBindState(nRandomItemIndex, -2);
 	SyncItem(nRandomItemIndex);
 	local strItem = GetItemName(nRandomItemIndex)
-	Msg2Player("Äã»ñµÃ "..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."Áìµ½Ã¿ÈÕ½±Àø"..strItem)
+	Msg2Player("B¹n nhËn ®­îc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 end
 
 function CheckCondition2GetBonusFirstWeek14()
 	if (GetTask(Task_Total_BonusFirstWeek14) >= 20) then
-		Talk(1, "", "0h-14h½±Àø×î¶àÖ»ÄÜÁì20´Î.");
+		Talk(1, "", "PhÇn th­ëng 0h-14h chØ nhËn ®­îc tèi ®a 20 lÇn.");
 		return 0
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetBonusFirstWeek14) ~= 1) then
-		Talk(1, "", "0h-14h½±ÀøÃ¿ÈÕÖ»ÄÜÁìÈ¡1´Î!");
+		Talk(1, "", "PhÇn th­ëng tõ 0h-14h mçi ngµy chØ nhËn 1 lÇn !");
 		return 0
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return 0
 	end
 	return 1
 end
 function CheckCondition2GetBonusFirstWeek24()
 	if (GetTask(Task_Total_BonusFirstWeek24) >= 20) then
-		Talk(1, "", "14h - 24hµÄ½±Àø×î¶àÖ»ÄÜÁì20´Î.");
+		Talk(1, "", "PhÇn th­ëng tõ 14h - 24h chØ nhËn ®­îc tèi ®a 20 lÇn.");
 		return 0
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetBonusFirstWeek24) ~= 1) then
-		Talk(1, "", "14h - 24hµÄ½±ÀøÃ¿ÈÕÖ»ÄÜÁìÒ»´Î !");
+		Talk(1, "", "PhÇn th­ëng tõ 14h - 24h mçi ngµy chØ nhËn 1 lÇn !");
 		return 0
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return 0
 	end
 	return 1
@@ -116,30 +116,30 @@ end
 
 function CheckCondition2GetBonusEndWeek14()
 	if (GetTask(Task_Total_BonusEndWeek14) >= 15) then
-		Talk(1, "", "ÖÜÄ©3Ìì´Ó0h - 14h×î¶àÖ»ÄÜÁì15´Î.");
+		Talk(1, "", "PhÇn th­ëng 0h - 14h cña 3 ngµy cuèi tuÇn chØ nhËn ®­îc tèi ®a 15 lÇn.");
 		return 0
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetBonusEndWeek14) ~= 1) then
-		Talk(1, "", "ÖÜÄ©3Ìì´Ó0h - 14hÃ¿ÈÕÖ»ÄÜÁìÒ»´Î !");
+		Talk(1, "", "PhÇn th­ëng 0h - 14h cña 3 ngµy cuèi tuÇn mçi ngµy chØ nhËn 1 lÇn !");
 		return 0
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return 0
 	end
 	return 1
 end
 function CheckCondition2GetBonusEndWeek24()
 	if (GetTask(Task_Total_BonusEndWeek24) >= 15) then
-		Talk(1, "", "ÖÜÄ©3ÈÕ14h - 24h ×î¶àÖ»ÄÜÁì15´Î.");
+		Talk(1, "", "PhÇn th­ëng 14h - 24h cña 3 ngµy cuèi tuÇn chØ nhËn ®­îc tèi ®a 15 lÇn.");
 		return 0
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetBonusEndWeek24) ~= 1) then
-		Talk(1, "", "ÖÜÄ©3ÈÕ14h - 24h Ã¿ÈÕÖ»ÄÜÁìÒ»´Î !");
+		Talk(1, "", "PhÇn th­ëng 14h - 24h cña 3 ngµy cuèi tuÇn mçi ngµy chØ nhËn 1 lÇn !");
 		return 0
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return 0
 	end
 	return 1

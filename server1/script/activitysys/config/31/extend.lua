@@ -7,33 +7,33 @@ function pActivity:UseBlueBox()
 	local tbAward
 	tbAward = 
 	{
-		[1]={szName="ÏÊÄÌ",tbProp={6,1,2851,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
-		[2]={szName="ÌÇ¾«",tbProp={6,1,2852,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
-		[3]={szName="Ãæ·Û",tbProp={6,1,2853,1,0,0},nRate = 20.0,nExpiredTime=20110630,},
+		[1]={szName="S÷a T­¬i",tbProp={6,1,2851,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
+		[2]={szName="§­êng tinh",tbProp={6,1,2852,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
+		[3]={szName="Bét m× ",tbProp={6,1,2853,1,0,0},nRate = 20.0,nExpiredTime=20110630,},
 	}
-	tbAwardTemplet:Give(tbAward, 1, {"ÎäÁÖ´«ÆæÉúÈÕ", "SuDungHopQua(Xanh)"})
+	tbAwardTemplet:Give(tbAward, 1, {"SinhNhatVoLamTruyenKy", "SuDungHopQua(Xanh)"})
 end
 
 function pActivity:UseRedBox()
 	local tbAward
 	tbAward = 
 	{
-		[1]={szName="ÇÉ¿ËÁ¦",tbProp={6,1,2854,1,0,0},nRate = 30,nExpiredTime=20110630,},
-		[2]={szName="»ÆÓÍ",tbProp={6,1,2855,1,0,0},nRate = 40,nExpiredTime=20110630,},
-		[3]={szName="±ùä¿ÁÜ",tbProp={6,1,2856,1,0,0},nRate = 30,nExpiredTime=20110630,},
+		[1]={szName="SoCoLa",tbProp={6,1,2854,1,0,0},nRate = 30,nExpiredTime=20110630,},
+		[2]={szName="B¬",tbProp={6,1,2855,1,0,0},nRate = 40,nExpiredTime=20110630,},
+		[3]={szName="Kem",tbProp={6,1,2856,1,0,0},nRate = 30,nExpiredTime=20110630,},
 	}
-	tbAwardTemplet:Give(tbAward, 1, {"ÎäÁÖ´«ÆæÉúÈÕ", "SuDungHopQua(Do)"})
+	tbAwardTemplet:Give(tbAward, 1, {"SinhNhatVoLamTruyenKy", "SuDungHopQua(Do)"})
 end
 
 function pActivity:GetCake(nCount)
 	local tbAward
 	tbAward = 
 	{
-		[1]={szName="Ğ¡ÉúÈÕµ°¸â",tbProp={6,1,2860,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
-		[2]={szName="´óÉúÈÕµ°¸â",tbProp={6,1,2861,1,0,0},nRate = 60.0,nExpiredTime=20110630,},
+		[1]={szName="B¸nh Sinh NhËt nhá",tbProp={6,1,2860,1,0,0},nRate = 40.0,nExpiredTime=20110630,},
+		[2]={szName="B¸nh Sinh NhËt Lín",tbProp={6,1,2861,1,0,0},nRate = 60.0,nExpiredTime=20110630,},
 	}
 	for i = 1, nCount do
-		tbAwardTemplet:Give(tbAward, 1, {"ÎäÁÖ´«ÆæÉúÈÕ", "ºÏ³ÉÉúÈÕµ°¸â"})
+		tbAwardTemplet:Give(tbAward, 1, {"SinhNhatVoLamTruyenKy", "HopThanhBanhSinhNhat"})
 	end
 end
 
@@ -42,14 +42,14 @@ function pActivity:GetRabbit()
 	local rcur=random(1,rtotal)
 	local szLuaFile = "\\script\\activitysys\\config\\31\\whiterabbit.lua"
 	if (rcur > rtotal/2) then 
-		--Éú³ÉÍÃ×Ó
+		--Éú³ÉThá 
 		local x ,y, worldindex = GetPos()
 		local nW, nX, nY =GetWorldPos()
-		local nNpcIndex = AddNpc(1799, 1, worldindex, x + 5, y + 5, "ÍÃ×Ó")
+		local nNpcIndex = AddNpc(1799, 1, worldindex, x + 5, y + 5, "Thá ")
 		SetNpcScript(nNpcIndex, szLuaFile)	
 		SetNpcTimer(nNpcIndex, 60*18)
 		self.tbNpc[nNpcIndex] = GetName()
-		%tbLog:PlayerActionLog("SinhNhatVoLamTruyenKy","ÍÃ×Ó³öÏÖ",  nW, nX, nY)
+		%tbLog:PlayerActionLog("SinhNhatVoLamTruyenKy","ThoXuatHien",  nW, nX, nY)
 	end
 	
 end
@@ -57,59 +57,59 @@ end
 function pActivity:UseNaiYouBing()
 	print(TSKG_NaiYouBing)
 	if(self:CheckTask(1, 500,"","==") == 1) then
-		PlayerFunLib:AddExp(5000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃ±ùä¿ÁÜ±ı500´Î")
+		PlayerFunLib:AddExp(5000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem500Lan")
 	elseif (self:CheckTask(1, 1000,"","==") == 1) then
-		PlayerFunLib:AddExp(10000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃ±ùä¿ÁÜ±ı1000´Î")
+		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem1000Lan")
 	end
-	PlayerFunLib:AddExp(1000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃ±ùä¿ÁÜ±ı")
+	PlayerFunLib:AddExp(1000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem")
 end
 
 function pActivity:UseXiaoDanGao()
 	--print(TKSG_XiaoDanGao)
 	if(self:CheckTask(2, 20,"","==") == 1) then
-		PlayerFunLib:AddExp(2000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)20´Î")
+		PlayerFunLib:AddExp(2000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)20Lan")
 	elseif (self:CheckTask(2, 40,"","==") == 1) then
-		PlayerFunLib:AddExp(4000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)40´Î")
+		PlayerFunLib:AddExp(4000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)40Lan")
 	elseif (self:CheckTask(2, 60,"","==") == 1) then
-		PlayerFunLib:AddExp(6000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)60´Î")
+		PlayerFunLib:AddExp(6000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)60Lan")
 	elseif (self:CheckTask(2, 100,"","==") == 1) then
-		PlayerFunLib:AddExp(10000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)100´Î")
+		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)100Lan")
 	elseif (self:CheckTask(2, 200,"","==") == 1) then
-		PlayerFunLib:AddExp(15000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)200´Î")
+		PlayerFunLib:AddExp(15000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)200Lan")
 	elseif (self:CheckTask(2, 300,"","==") == 1) then
-		PlayerFunLib:AddExp(20000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)300´Î")
+		PlayerFunLib:AddExp(20000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)300Lan")
 	elseif (self:CheckTask(2, 400,"","==") == 1) then
-		PlayerFunLib:AddExp(20000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)400´Î")
+		PlayerFunLib:AddExp(20000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)400Lan")
 	elseif (self:CheckTask(2, 500,"","==") == 1) then
-		PlayerFunLib:AddExp(20000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)500´Î")
+		PlayerFunLib:AddExp(20000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)500Lan")
 	end
-	PlayerFunLib:AddExp(4000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(Ğ¡)")
-	self:Vn_GetItemAward("PhanThuongItemÊ¹ÓÃÉúÈÕµ°¸â(Ğ¡)")
+	PlayerFunLib:AddExp(4000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Nho)")
+	self:Vn_GetItemAward("PhanThuongItemSuDungBanhSinhNhat(Nho)")
 end
 	
 function pActivity:UseDaDanGao()
 
 --	if(self:CheckTaskDaily(3, 10,"","==") == 1) then
---		PlayerFunLib:AddExp(10000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(´ó)10´Î")
+--		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Lon)10Lan")
 --	end
-	PlayerFunLib:AddExp(8000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÉúÈÕµ°¸â(´ó)")
-	self:Vn_GetItemAward("PhanThuongItemÊ¹ÓÃÉúÈÕµ°¸â(´ó)")
+	PlayerFunLib:AddExp(8000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhat(Lon)")
+	self:Vn_GetItemAward("PhanThuongItemSuDungBanhSinhNhat(Lon)")
 end
 
 function pActivity:UseTeBieDanGao()
 
 	if (self:CheckTask(4, 100,"","==") == 1) then
-		PlayerFunLib:AddExp(10000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÌØ±ğÉúÈÕµ°¸â100´Î")
+		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhatDacBiet100Lan")
 	elseif (self:CheckTask(4, 200,"","==") == 1) then
-		PlayerFunLib:AddExp(20000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÌØ±ğÉúÈÕµ°¸â200´Î")
+		PlayerFunLib:AddExp(20000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhatDacBiet200Lan")
 	elseif (self:CheckTask(4, 300,"","==") == 1) then
-		PlayerFunLib:AddExp(30000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÌØ±ğÉúÈÕµ°¸â300´Î")
+		PlayerFunLib:AddExp(30000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhatDacBiet300Lan")
 	elseif (self:CheckTask(4, 400,"","==") == 1) then
-		PlayerFunLib:AddExp(40000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÌØ±ğÉúÈÕµ°¸â400´Î")
+		PlayerFunLib:AddExp(40000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhatDacBiet400Lan")
 	end
-	PlayerFunLib:AddExp(15000000,1,"ÎäÁÖ´«ÆæÉúÈÕ","Ê¹ÓÃÌØ±ğÉúÈÕµ°¸â")
+	PlayerFunLib:AddExp(15000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhSinhNhatDacBiet")
 	
-	self:Vn_GetItemAward("PhanThuongItemÊ¹ÓÃÌØ±ğÉúÈÕµ°¸â")	
+	self:Vn_GetItemAward("PhanThuongItemSuDungBanhSinhNhatDacBiet")	
 end
 
 --Ìí¼Ó»î¶¯NPC
@@ -120,14 +120,14 @@ function pActivity:AddInitNpc()
 	}
 	local tbNpc = {
 		[1] = {
-			szName = "ÉúÈÕµ°¸â", 
+			szName = "B¸nh Sinh NhËt", 
 			nLevel = 95,
 			nNpcId = 1797,
 			nIsboss = 0,
 			szScriptPath = "\\script\\activitysys\\npcdailog.lua",
 			},
 		[2] = {
-			szName = "´óÈËÍÅ", 
+			szName = "§oµn §¹i Nh©n", 
 			nLevel = 95,
 			nNpcId = 1798,
 			nIsboss = 0,
@@ -182,12 +182,12 @@ function pActivity:GetFanYu()
 	local nDate = tonumber(GetLocalDate("%Y12%d"))
 	print(nDate)
 	
-	PlayerFunLib:GetItem({tbProp={0,10,7,1,0,0},nExpiredTime=nDate,},1,"ÎäÁÖ´«ÆæÉúÈÕ","»»ÍÃÃ«ÎïÆ·»ñÈ¡·­Óğ")
+	PlayerFunLib:GetItem({tbProp={0,10,7,1,0,0},nExpiredTime=nDate,},1,"SinhNhatVoLamTruyenKy","DoiVatPhamLongThoLayPhienVu")
 end
 
 function pActivity:GiveRedBox(nCount, strMaiDian, strActionLog)
 	
-	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,}, nCount, "ÎäÁÖ´«ÆæÉúÈÕ", strActionLog)
+	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,}, nCount, "SinhNhatVoLamTruyenKy", strActionLog)
 	AddStatData(strMaiDian, 1)
 end
 	
@@ -195,50 +195,50 @@ end
 function pActivity:Vn_GetItemAward(strActionLog)
 	local tbItemAward = 
 		{
-			{szName="×ÏÃ§¿øÍ¼Æ×",tbProp={6,1,2714,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§ÒÂÍ¼Æ×",tbProp={6,1,2715,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§Ñü´øÍ¼Æ×",tbProp={6,1,2717,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§»¤ÍóÍ¼Æ×",tbProp={6,1,2718,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§ÅåÍ¼Æ×",tbProp={6,1,2720,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§Ğ¬Í¼Æ×",tbProp={6,1,2716,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§ÏîÁ´Í¼Æ×",tbProp={6,1,2719,1,0,0},nCount=1,nRate=0.15},
-			{szName="×ÏÃ§ÉÏ½äÍ¼Æ×",tbProp={6,1,2721,1,0,0},nCount=1,nRate=0.15},
-			{szName="×ÏÃ§ÏÂ½äÍ¼Æ×",tbProp={6,1,2722,1,0,0},nCount=1,nRate=0.15},
-			{szName="×ÏÃ§Æ÷ĞµÍ¼Æ×",tbProp={6,1,2723,1,0,0},nCount=1,nRate=0.15},
-			{szName="ĞşÔ³Áî",tbProp={6,1,2351,1,0,0},nCount=1,nRate=0.3},
-			{szName="×ÏÃ§Áî",tbProp={6,1,2350,1,0,0},nCount=1,nRate=0.150},
-			{szName="ĞĞÏÀÁî",tbProp={6,1,2566,1,0,0},nCount=3,nRate=2},
-			{szName="Ë®ÔôÁîÅÆ",tbProp={6,1,2745,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
-			{szName="»Æ½ğÖ®¹û",tbProp={6,1,907,1,0,0},nCount=1,nRate=1,nExpiredTime=10080},
-			{szName="·ÉËÙÍèÀñ°ü",tbProp={6,1,2520,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="´óÁ¦ÍèÀñ°ü",tbProp={6,1,2517,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="É±ÊÖïµÀñ°ü",tbProp={6,1,2339,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
-			{szName="ËÎ½ğÕĞ±øÀñ°ü",tbProp={6,1,30084,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="Ä®±±´«ËÍÁî",tbProp={6,1,1448,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="º£ÁúÖé",tbProp={6,1,2115,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="ĞşÌì½õÄÒ",tbProp={6,1,2355,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="ÌØ±ğÏÉ²İÂ¶",tbProp={6,1,1181,1,0,0},nCount=1,nRate=2.185},
-			{szName="°ÙÄêÕäÂ¶",tbProp={6,1,2266,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
-			{szName="Ç§ÄêÕäÂ¶",tbProp={6,1,2267,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="ÍòÄêÕäÂ¶",tbProp={6,1,2268,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
-			{szName="ÎåĞĞÆæÊ¯",tbProp={6,1,2125,1,0,0},nCount=1,nRate=25},
-			{szName="ÁúÑªÍè",tbProp={6,1,2117,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
-			{szName="Ìì¾«°×¾ÔÍè",tbProp={6,1,2183,1,0,0},nCount=1,nRate=1},
-			{szName="ÌØ±ğ°×¾ÔÍè",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1},
-			{szName="»ØÌìÔÙÔìÀñ°ü",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1},
-			{szName="Óñ¹Ş",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1},
-			{szName="³ÊÏéºì°ü",tbProp={6,1,2104,1,0,0},nCount=1,nRate=0.17},
-			{szName="°²¿µºì°ü",tbProp={6,1,2105,1,0,0},nCount=1,nRate=0.15},
-			{szName = "§i¾­ÑéÖµ", nExp=4000000,nRate=19.045},
-			{szName = "  ¾­ÑéÖµ", nExp=6000000,nRate=16},
-			{szName = "§i¾­ÑéÖµ", nExp=8000000,nRate=10},
-			{szName = "§i¾­ÑéÖµ", nExp=10000000,nRate=3},
-			{szName="×Ï½ğÕæµ¤",tbProp={6,1,2263,1,0,0},nCount=1,nRate=0.15,tbParam={2000000000}},
-			{szName="ĞşÕæµ¤",tbProp={6,1,1678,1,0,0},nCount=1,nRate=0.15,tbParam={1500000000}},
-			{szName="ÑªÕæµ¤",tbProp={6,1,1677,1,0,0},nCount=1,nRate=0.15,tbParam={1000000000}},
-			{szName="°×Õæµ¤",tbProp={6,1,1676,1,0,0},nCount=1,nRate=0.15,tbParam={500000000}},
+			{szName="§å Phæ Tö M·ng Kh«i",tbProp={6,1,2714,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng Y",tbProp={6,1,2715,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng Yªu §¸i",tbProp={6,1,2717,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng Hé UyÓn",tbProp={6,1,2718,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng Béi",tbProp={6,1,2720,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng Hµi",tbProp={6,1,2716,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Tö M·ng H¹ng Liªn",tbProp={6,1,2719,1,0,0},nCount=1,nRate=0.15},
+			{szName="§å Phæ Tö M·ng Th­îng Giíi ChØ",tbProp={6,1,2721,1,0,0},nCount=1,nRate=0.15},
+			{szName="§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp={6,1,2722,1,0,0},nCount=1,nRate=0.15},
+			{szName="§å Phæ Tö M·ng Khİ Giíi",tbProp={6,1,2723,1,0,0},nCount=1,nRate=0.15},
+			{szName="HuyÒn Viªn LÖnh",tbProp={6,1,2351,1,0,0},nCount=1,nRate=0.3},
+			{szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1,nRate=0.150},
+			{szName="Hµnh HiÖp LÖnh",tbProp={6,1,2566,1,0,0},nCount=3,nRate=2},
+			{szName="LÖnh Bµi Thñy TÆc",tbProp={6,1,2745,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
+			{szName="Qu¶ Hoµng Kim",tbProp={6,1,907,1,0,0},nCount=1,nRate=1,nExpiredTime=10080},
+			{szName="Phi tèc hoµn lÔ bao",tbProp={6,1,2520,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
+			{szName="Tèng Kim Chiªu Binh LÔ Bao",tbProp={6,1,30084,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="M¹c B¾c TruyÒn Tèng LÖnh",tbProp={6,1,1448,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="H¶i long ch©u",tbProp={6,1,2115,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="HuyÒn Thiªn CÈm Nang",tbProp={6,1,2355,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="Tiªn Th¶o Lé ®Æc biÖt",tbProp={6,1,1181,1,0,0},nCount=1,nRate=2.185},
+			{szName="B¸ch Niªn Tr©n Lé",tbProp={6,1,2266,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
+			{szName="Thiªn Niªn Tr©n Lé",tbProp={6,1,2267,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="V¹n Niªn Tr©n Lé",tbProp={6,1,2268,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
+			{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=25},
+			{szName="Long HuyÕt Hoµn",tbProp={6,1,2117,1,0,0},nCount=1,nRate=1.5,nExpiredTime=20160},
+			{szName="Thiªn tinh b¹ch c©u hoµn",tbProp={6,1,2183,1,0,0},nCount=1,nRate=1},
+			{szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1},
+			{szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1},
+			{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1},
+			{szName="Hång bao Sum vÇy",tbProp={6,1,2104,1,0,0},nCount=1,nRate=0.17},
+			{szName="Hång bao An khang",tbProp={6,1,2105,1,0,0},nCount=1,nRate=0.15},
+			{szName = "§iÓm Kinh NghiÖm", nExp=4000000,nRate=19.045},
+			{szName = "§iÓm Kinh NghiÖm", nExp=6000000,nRate=16},
+			{szName = "§iÓm Kinh NghiÖm", nExp=8000000,nRate=10},
+			{szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=3},
+			{szName="Tö Kim Ch©n §¬n",tbProp={6,1,2263,1,0,0},nCount=1,nRate=0.15,tbParam={2000000000}},
+			{szName="HuyÒn Ch©n §¬n",tbProp={6,1,1678,1,0,0},nCount=1,nRate=0.15,tbParam={1500000000}},
+			{szName="HuyÕt Ch©n §¬n",tbProp={6,1,1677,1,0,0},nCount=1,nRate=0.15,tbParam={1000000000}},
+			{szName="B¹ch Ch©n §¬n",tbProp={6,1,1676,1,0,0},nCount=1,nRate=0.15,tbParam={500000000}},
 		}
-	tbAwardTemplet:Give(tbItemAward, 1, {"ÎäÁÖ´«ÆæÉúÈÕ", strActionLog})
+	tbAwardTemplet:Give(tbItemAward, 1, {"SinhNhatVoLamTruyenKy", strActionLog})
 end
 
 function pActivity:Vn_CheckPLDTime()
@@ -272,7 +272,7 @@ function pActivity:Vn_AwardOnSJMatchCount()
 		nAwardCount = 20
 		strAction = "HoanThanhTranTKThuHai"
 	end
-	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,},nAwardCount,"ÎäÁÖ´«ÆæÉúÈÕ",strAction)
+	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,},nAwardCount,"SinhNhatVoLamTruyenKy",strAction)
 end
 
 function pActivity:Vn_AwardOnCOTMatchCount()
@@ -285,13 +285,13 @@ function pActivity:Vn_AwardOnCOTMatchCount()
 	local strAction = ""
 	if nCOTDailyMatchCount == 1 then
 		nAwardCount = 5
-		strAction = "Íê³ÉµÚÒ»´Î´³¹Ø"
+		strAction = "HoanThanhVuotAiLan1"
 	elseif nCOTDailyMatchCount == 2 then
 		nAwardCount = 10
-		strAction = "Íê³ÉµÚ¶ş´Î´³¹Ø"
+		strAction = "HoanThanhVuotAiLan2"
 	elseif nCOTDailyMatchCount == 3 then
 		nAwardCount = 15
-		strAction = "Íê³ÉµÚÈı´Î´³¹Ø"
+		strAction = "HoanThanhVuotAiLan3"
 	end
-	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,},nAwardCount,"ÎäÁÖ´«ÆæÉúÈÕ",strAction)
+	PlayerFunLib:GetItem({tbProp={6,1,2863,1,0,0},nExpiredTime=20110630,},nAwardCount,"SinhNhatVoLamTruyenKy",strAction)
 end

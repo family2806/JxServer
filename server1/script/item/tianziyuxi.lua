@@ -28,7 +28,7 @@ function tbItemTianZiYuXi:init()
 	self.nParticualType				= 2059 -- ÎïÆ·ÀàĞÍ
 	self.TempTask_HasYuXi			= 252  -- ÁÙÊ±ÈÎÎñ±äÁ¿£¬¼ÇÂ¼ÊÇ·ñÓµÓĞÓñçô
 	self.szDescLink					= "<link=image[0,0]:\\spr\\item\\tianziyuxi.spr><link>"
-	self.szMsg						= self.szDescLink.."Ìì×ÓÓñçô£¬¹ú¼Ò±¦Îï"
+	self.szMsg						= self.szDescLink.."Thiªn Tö ngäc tû, vËt b¸u quèc gia"
 	self.tbForbidWord 				= {"<item=", "<link=", "<pic=", "<color=", "<bclr=", "<enter"}
 end
 tbItemTianZiYuXi:init();
@@ -71,7 +71,7 @@ function tbItemTianZiYuXi:OnUse(nItemIndex)
 	local nDayCount		= GetItemParam(nItemIndex, self.ParamID_DayCount);		-- µ±Ìì»¹¿ÉÒÔÊ¹ÓÃµÄ´ÎÊı
 	
 	if (GetCamp() == 0 or GetCurCamp == 0) then
-		Say("²»ÄÜÊ¹ÓÃÓñçô.")
+		Say("Nh©n vËt ch÷ tr¾ng kh«ng thÓ sö dông ngäc tû.")
 		return 1;
 	end
 	
@@ -90,20 +90,20 @@ function tbItemTianZiYuXi:OnUse(nItemIndex)
 	
 	-- ×Ü´ÎÊı³¬¹ıÏŞÖÆ
 	if nTotalCount <= 0 then
-		tinsert(tbOpt, "ÓñçôÒÑ»ë×Ç£¬ÅÂÊÇ²»ÄÜÔÙ·¢³öĞÒÔËÖ®¹âÁË/OnCancel")
+		tinsert(tbOpt, "Ngäc tû ®· vÉn ®ôc, sÏ kh«ng bao giê ph¸t ra ¸nh s¸ng may m¾n n÷a/OnCancel")
 		Describe(self.szMsg, getn(tbOpt), tbOpt);
 		return 1;
 	end
 	
 	-- µ±Ìì´ÎÊı³¬¹ıÏŞÖÆ
 	if nDayCount <= 0 then
-		tinsert(tbOpt, "ÓñçôÒÑÓĞ¹âÃ¢£¬µ«ÊÇ£¬ÒÀÈ»Ã»ÓĞÊ²Ã´·´Ó¦/OnCancel")
+		tinsert(tbOpt, "Ngäc tû ®· lãe lªn ¸nh s¸ng, nh­ng mµ vÉn kh«ng tİ ph¶n øng nµo/OnCancel")
 		Describe(self.szMsg, getn(tbOpt), tbOpt);
 		return 1;
 	end
 	
 	-- ¿ÉÒÔÊ¹ÓÃ
-	AskClientForString("SendMsg2AllServer", "", self.nMinMsgLen, self.nMaxMsgLen, "ÏëÔõÑù¸æÊ¾°ÙĞÕ?");
+	AskClientForString("SendMsg2AllServer", "", self.nMinMsgLen, self.nMaxMsgLen, "Muèn c¸o thŞ b¸ch tİnh ra sao?");
 	return 1;
 end
 
@@ -114,7 +114,7 @@ function tbItemTianZiYuXi:SendMsg2AllServer(szMsg)
 	local nItemIndex 	= FindSpecItemParam2(self.nDetailType, self.nParticualType, 0, 0);
 	
 	if (ST_CheckTextFilter(szMsg) ~= 1) then
-		tinsert(tbOpt, "Ú¯ÊéÓĞĞ©´Ê²»Í×£¬ÇëÌì×ÓÌáĞÑ./OnCancel")
+		tinsert(tbOpt, "Néi dung chiÕu th­ cã mét sè tõ kh«ng æn, xin Thiªn Tö h·y c©n nh¾c./OnCancel")
 		Describe(self.szMsg, getn(tbOpt), tbOpt);
 		return
 	end
@@ -122,14 +122,14 @@ function tbItemTianZiYuXi:SendMsg2AllServer(szMsg)
 	for i = 1, getn(self.tbForbidWord) do
 		local bp = strfind(szMsg, self.tbForbidWord[i])
 		if (bp ~= nil) then
-			tinsert(tbOpt, "Ú¯ÊéÓĞĞ©´Ê²»Í×£¬ÇëÌì×ÓÌáĞÑ./OnCancel")
+			tinsert(tbOpt, "Néi dung chiÕu th­ cã mét sè tõ kh«ng æn, xin Thiªn Tö h·y c©n nh¾c./OnCancel")
 			Describe(self.szMsg, getn(tbOpt), tbOpt);
 			return
 		end
 	end
 	
 	if (nItemIndex <= 0) then
-		tinsert(tbOpt, "ÓµÓĞÌì×ÓÓñçô²ÅÄÜ´«´ïÚ¯Êé/OnCancel")
+		tinsert(tbOpt, "Së h÷u Thiªn Tö Ngäc Tû míi ®­îc phĞp ban truyÒn chiÕu th­/OnCancel")
 		Describe(self.szMsg, getn(tbOpt), tbOpt);
 		return
 	end
@@ -139,14 +139,14 @@ function tbItemTianZiYuXi:SendMsg2AllServer(szMsg)
 	local nDayCount		= GetItemParam(nItemIndex, self.ParamID_DayCount) - 1;		-- µ±Ìì»¹¿ÉÒÔÊ¹ÓÃµÄ´ÎÊı
 	SetSpecItemParam(nItemIndex, self.ParamID_TotalCount, nTotalCount);
 	SetSpecItemParam(nItemIndex, self.ParamID_DayCount, nDayCount);
-	Msg2Player(format("¿´À´£¬½ñÌì»¹ÄÜÊ¹ÓÃ %d ´Î£¬×Ü¹²»¹ÄÜÊ¹ÓÃ%d ´Î", nDayCount, nTotalCount));
+	Msg2Player(format("Xem ra h«m nay cßn ®­îc sö dông %d lÇn, tæng céng cßn ®­îc sö dông %d lÇn", nDayCount, nTotalCount));
 	
 	-- ·¢²¼ÏûÏ¢
-	AddLocalNews(format("ÕÑ¸æÌìÏÂ: %s", szMsg));
-	AddLocalNews(format("ÕÑ¸æÌìÏÂ: %s", szMsg));
-	AddLocalNews(format("ÕÑ¸æÌìÏÂ: %s", szMsg));
+	AddLocalNews(format("Chiªu c¸o thiªn h¹: %s", szMsg));
+	AddLocalNews(format("Chiªu c¸o thiªn h¹: %s", szMsg));
+	AddLocalNews(format("Chiªu c¸o thiªn h¹: %s", szMsg));
 	LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", format("ÕÑ¸æÌìÏÂ:%s", szMsg), "", "");
-	tinsert(tbOpt, "ÓñçôÍ»È»·¢³öÒ»µÀºÀ¹âÏòÍâËÄÉä./OnCancel")
+	tinsert(tbOpt, "Ngäc tû ®ét nhiªn ph¸t ra mét ¸nh hµo quang táa ra bèn ph­¬ng./OnCancel")
 	Describe(self.szMsg, getn(tbOpt), tbOpt);
 	return
 end
@@ -160,7 +160,7 @@ function tbItemTianZiYuXi:LoginMsg()
 	end
 	
 	SetTaskTemp(self.TempTask_HasYuXi, 1);	-- ±ê¼ÇÎªÓµÓĞÓñçô
-	local szMsg = format("½­ºşÏà´«£º%s´ø´«¹úÓñçôÉÏÍø.", GetName());
+	local szMsg = format("Giang hå t­¬ng truyÒn: %s mang ngäc tû truyÒn quèc lªn m¹ng.", GetName());
 	
 	if (GetCamp() == 0 or GetCurCamp == 0) then
 		return 
@@ -194,7 +194,7 @@ function tbItemTianZiYuXi:ChangeMapMsg()
 		return
 	end
 	
-	local szMsg = format("½­ºşÏà´«: %s ´øÓñçôµ½ %s.", GetName(), SubWorldName(SubWorld));
+	local szMsg = format("Giang hå t­¬ng truyÒn: %s ®em ngäc tû ®Õn %s.", GetName(), SubWorldName(SubWorld));
 	LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", szMsg, "", "");
 	
 end
@@ -209,7 +209,7 @@ function tbItemTianZiYuXi:PickUp( nItemIndex, nPlayerIndex )
 	NW_OwnSeal(GetName());					-- ¼ÇÂ¼ÓñçôµÄÓµÓĞÕß
 	
 	
-	local szMsg = format("½­ºşÏà´«£º %s ¼ñµ½´«¹úÓñçô", GetName());
+	local szMsg = format("Giang hå t­¬ng truyÒn: %s nhÆt ®­îc truyÒn quèc ngäc tû", GetName());
 	LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", szMsg, "", "");
 	
 	PlayerIndex = oldPlyIdx;
@@ -268,13 +268,13 @@ function IsPickable( nItemIndex, nPlayerIndex )
 	
 	local free = CalcFreeItemCellCount()
 	if (free == 0) then
-		Say("±³°ü¿Õ¼ä²»×ã£¬ÇëÕûÀí±³°üºóÔÙÊ°È¡¡£")
+		Say("Hµnh trang kh«ng ®ñ chç trèng, xin mêi s¾p xÕp l¹i!")
 		PlayerIndex = oldPlyIdx;
 		return 0;
 	end
 	
 	if (GetCamp() == 0 or GetCurCamp == 0) then
-		Say("°×Ãû²»ÄÜÊ°È¡Óñçô¡£")
+		Say("Nh©n vËt ch÷ tr¾ng kh«ng thÓ nhÆt ngäc tû.")
 		PlayerIndex = oldPlyIdx;
 		return 0;
 	end

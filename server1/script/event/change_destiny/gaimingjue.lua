@@ -13,7 +13,7 @@ function tbChangeDestiny:onUse(nItemIndex)
 --	end
 	
 	if self:canJoin() ~= 1 then
-		Say("Ö»ÓĞ160µ½179¼¶µÄÍæ¼Ò²Å¿ÉÒÔÊ¹ÓÃ×ªÉúÒ»´Î!", 0 );
+		Say("ChØ cã ng­êi ch¬i chuyÓn sinh lÇn 1 cã cÊp 160 ®Õn 179 míi cã thÓ sö dông!", 0 );
 		return 1;
 	end
 	
@@ -21,12 +21,12 @@ function tbChangeDestiny:onUse(nItemIndex)
 	local nHasUsed	= self:getTask(self.nTask_GaiMing_HasUsed);
 	
 	if nHasAward ~= 1 then
-		Say("´ËÎïÀ´Àú²»Ã÷, Äã×îºÃ²»ÒªÊ¹ÓÃ.", 0 );
+		Say("VËt nµy lai lŞch kh«ng râ rµng, tèt nhÊt lµ ng­¬i ®õng nªn sö dông.", 0 );
 		return 1;
 	end
 	
 	if nHasUsed ~= 0 then
-		Say("´ËÎïÀ´Àú²»Ã÷, Ê¹ÓÃ¶àÁË½«»áÓĞËğÉíÌå.", 0 );
+		Say("VËt phÈm nµy tiÒm lùc rÊt m¹nh, dïng nhiÒu sÏ kh«ng tèt cho søc kháe.", 0 );
 		return 1;
 	end
 	
@@ -39,7 +39,7 @@ function tbChangeDestiny:onUse(nItemIndex)
 	local szMsg = format("[ChangeDestiny]Eat GaiMingJue: %s Use GaiMingJue and add skill from %d to %d.",GetName(), nOldSkill, nNewSkill);
 	WriteLog(szMsg);
 	
-	Say(format("ÄúÒÑÊ¹ÓÃÄæÌì¸ÄÃü¾÷, ¼¼ÄÜµãÓÉ  %dÌáÉıµ½ÁË %d.", nOldSkill, nNewSkill), 0);
+	Say(format("§¹i hiÖp ®· sö dông nghŞch thiªn c¶i mÖnh quyÕt, ®iÓm kü n¨ng ®­îc t¨ng thªm tõ %d ®Õn %d.", nOldSkill, nNewSkill), 0);
 	return 0;
 end
 

@@ -1,7 +1,7 @@
 --ÖĞÔ­ÄÏÇø ÏåÑô¸® ¿ÍÕ»ÀÏ°å¶Ô»°
 
 function main(sel)
-Say("¿ÍÕ»ÀÏ°å£º×ÜËãÀ´ÁË¸ö¿ÍÈË£¡Òª×¡µêÂğ£¿", 0);
+Say("Cuèi cïng còng cã mét kh¸ch quan! Kh¸ch quan muèn trä µ?", 0);
 end;
 
 

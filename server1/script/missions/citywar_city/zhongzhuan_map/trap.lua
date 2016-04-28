@@ -16,7 +16,7 @@ function main()
 	
 	SubWorld = idx;
 	if (GetMissionV(MS_STATE) == 0) then 
-		Say("ÎÒ·½ÏÖÔÚÕı×¼±¸ÉÏÕ½³¡! Çë´ó¼ÒÑø¾«ĞîÈñ¡¢ÉÔ°²ÎğÔê!", 0);
+		Say("Phe ta hiÖn ®ang tËp hîp chuÈn bŞ vµo ®Êu tr­êng! Xin mäi ng­êi h·y b×nh tÜnh, chuÈn bŞ tinh thÇn!", 0);
 		SubWorld = SubWorldOld;
 		return
 	end
@@ -55,7 +55,7 @@ function CheckAndJoin(Camp)
 			JoinCamp(Camp, 1);
 		else
 			if (JoinWithCard(Camp, 0) == 0) then 
-				Say("Äã¼ÓÈë°ï»áµÄÊ±¼äÌ«¶Ì£¬²»ÄÜ²Î¼ÓÕ½¶·!", 0);
+				Say("Thêi gian b¹n gia nhËp bang héi qu¸ ng¾n, kh«ng thÓ tham gia chiÕn ®Êu!", 0);
 			end;
 		end;
 	else
@@ -86,7 +86,7 @@ function JoinWithCard(Camp, UI)
 			Camp = 1;
 		else
 			if (UI == 1) then
-				Say("ÄãÃ»ÓĞÁîÅÆÔõÃ´ÄÜ½øÈ¥ÄØ!×ß×ß!", 0);
+				Say("Ng­¬i kh«ng cã lÖnh bµi lµm sao vµo ®­îc! §i ®i!", 0);
 			end
 
 			SetPos(OuterPos[1][2], OuterPos[1][3])
@@ -97,7 +97,7 @@ function JoinWithCard(Camp, UI)
 		life = floor(life / 1440);
 		if (life > 5) then
 			DelItemEx(CardItemID);
-			Say(format("Õâ¸öÁîÅÆ´Ó %dÈÕÆğÊ§Ğ§, ²»ÄÜÊ¹ÓÃ", life), 0);
+			Say(format("LÖnh bµi nµy tõ %d ngµy tr­íc ®· hÕt h¹n, kh«ng thÓ dïng ®­îc", life), 0);
 			SetPos(OuterPos[1][2], OuterPos[1][3])
 		else
 			DelItemEx(CardItemID);

@@ -1,20 +1,20 @@
 function main()
-	Say("<#>Õ½¶·ÇøÓò×Ü¹Ü£ºÎªÁËÄÚ²¿°ï»áºÍÓëÆäËû°ï»á±ÈÎä£¬ÎÒ¿ÉÒÔ°ïÄãÃÇ¸Ä±ä°ïÅÉ£¬µ«ÊÇ£¬µ±Àë¿ªÕ½¶·ÇøÓò£¬¾Í²»ÄÜ»Ö¸´Ô­À´µÄÑù×ÓÁË£¬ÄãÏëÔİÊ±¸ü»»°ïÅÉÂğ£¿" ,5, "Õı·½/camp1", "×óÅÉ·½/camp2", "ÖĞÁ¢·½/camp3", "»Ö¸´³É¿ªÊ¼ÅÉ·½/retorecamp", "ÎÒ»¹²»Ïë»»./cancel");
+	Say("<#>Tæng qu¶n khu vùc chiÕn ®Êu: §Ó néi bé bang héi vµ c¸c bang héi tû thİ vâ nghÖ víi nhau, ta cã thÓ gióp mäi ng­êi thay ®æi phe ph¸i, nh­ng khi ra khái khu chiÕn ®Êu th× sÏ kh«i phôc l¹i nh­ cò, ng­¬i muèn t¹m thêi ®æi phe ph¸i kh«ng." ,5, "Phe Chİnh/camp1", "Phe Tµ ph¸i/camp2", "Phe Trung lËp/camp3", "Kh«i phôc l¹i phe ph¸i ban ®Çu/retorecamp", "Ta vÉn ch­a muèn ®æi./cancel");
 end
 
 function camp1()
 	SetCurCamp(1);
-	Msg2Player("ÔİÊ±»»³ÉÕıÅÉ.");
+	Msg2Player("T¹m thêi ®æi sang chİnh ph¸i.");
 end
 
 function camp2()
 	SetCurCamp(2);
-	Msg2Player("ÔİÊ±»»³É×óÅÉ.");
+	Msg2Player("T¹m thêi ®æi sang tµ ph¸i.");
 end
 
 function camp3()
 	SetCurCamp(3);
-	Msg2Player("ÔİÊ±»»³ÉÖĞÁ¢.");
+	Msg2Player("T¹m thêi ®æi sang trung lËp.");
 end
 
 function retorecamp()

@@ -19,7 +19,7 @@ Step1 = Step:New()
 function Step1:Start(task)
 	local nMapId = task:GetMapId()
 	local tbPos = task:GetPosition()
-	self.nNpcIndex = FightNpcManager:AddNpc("Îå²ÊÁúÖé", 1631, nMapId, tbPos.boss.x, tbPos.boss.y, self, 1, 1, 1)
+	self.nNpcIndex = FightNpcManager:AddNpc("Ngò Th¸i Long Thï", 1631, nMapId, tbPos.boss.x, tbPos.boss.y, self, 1, 1, 1)
 	self.pTask = task
 	-- self.pTask.nTimerId = TimerList:AddTimer(self, 30*18)
 end
@@ -37,7 +37,7 @@ function Step1:OnDeath()
 end
 
 function Step1:OnPlayerDeath(player)
-	self.pTask:BroadCast(format("ÒòÎª²»¼°Ê±´òÉ¢ÖëË¿£¬%sÖĞ¶¾ËÀÍö.", player:GetName()))
+	self.pTask:BroadCast(format("V× kh«ng kŞp thêi ®¸nh tan Thï Ti, %s tróng ®éc tö vong.", player:GetName()))
 end
 
 function Step1:Destroy()

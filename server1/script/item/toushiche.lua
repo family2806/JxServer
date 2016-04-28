@@ -12,26 +12,26 @@ W,X,Y = GetWorldPos();
 nSubWorldID = SubWorldIdx2ID();
 
 if (nSubWorldID ~= CityWarID) then 
-	Msg2Player("Äã²»ÄÜÔÚÕâ¸öµØ·½Ê¹ÓÃ»ëÊ¯ÁÑ£¡")
+	Msg2Player("B¹n kh«ng thÓ sö dông Hçn Th¹ch LiÖt t¹i ®©y ")
 	return 1;
 end
 
 if (GetCurCamp() ~= 2) then 
-	Msg2Player("Ö»ÓĞ¹¥³ÇÒ»·½²ÅÄÜÊ¹ÓÃ»ëÊ¯ÁÑ£¡")
+	Msg2Player("ChØ cã phe C«ng Thµnh míi ®­îc sö dông Hçn Th¹ch LiÖt ")
 	return 1
 end;
 
 PosId = GetNearstPos(X*32,Y*32, TscPos);
 
 if (PosId == 0) then 
-	Say("ÄãËùÔÚÎ»ÖÃÀë»ëÊ¯ÁÑ·ÅÖÃÎ»ÖÃÌ«Ô¶£¬ÎŞ·¨Ê¹ÓÃ£¡",0)
+	Say("B¹n ®øng c¸ch Hçn Th¹ch LiÖt qu¸ xa, kh«ng thÓ sö dông! ",0)
 	return 1
 end;
 
 DoorId = floor( (PosId - 1) / g_nMaxTscPerDoor ) + 1;
 
 if (GetMissionV(MS_DOORBEGIN + DoorId - 1)  ~= 0 and (mod(PosId, 3) == 2) ) then 
-	Msg2Player("ÄãËù´¦Î»ÖÃÇ°·½µÄ³ÇÃÅ»¹Î´¹¥Ïİ,Õâ¸öÎ»ÖÃµ±Ç°ÎŞ·¨Ê¹ÓÃ»ëÊ¯ÁÑ!")
+	Msg2Player("Thµnh m«n ngay phİa tr­íc m¨t ng­¬i vÉn ch­a bŞ c«ng ph¸, vŞ trİ nµy ®­¬ng nhiªn lµ kh«ng thÓ dïng ®­îc Hçn Th¹ch LiÖt ")
 	return 1
 end;
 
@@ -41,13 +41,13 @@ if (GetMissionV(MSBegin + PosId - 1) == 0) then
 		SetNpcCurCamp(ToolIndex, 2);
 		SetNpcDeathScript(ToolIndex, "\\script\\missions\\citywar_city\\tooldeath.lua");
 		SetMissionV(MSBegin + PosId -1, ToolIndex); 
-		Msg2MSAll(MISSIONID, GetName().."·ÅÖÃÁËÒ»Ì¨»ëÊ¯ÁÑ£¬Ğ­Öú¹¥³Ç¡£");
+		Msg2MSAll(MISSIONID, GetName().."Bè trİ thªm mét c¸i Hçn Th¹ch LiÖt, hç trî C«ng Thµnh ");
 		SetMangonelParam(ToolIndex, TscPos[PosId][3], TscPos[PosId][4], 200);
 		WriteLog(GetLoop()..GetName()..":AddHSL"..ToolIndex)
 		return 0
 	end;
 else
-	Msg2Player("Äãµ±Ç°Ëù´¦Î»ÖÃ¶ÔÓ¦µÄ»ëÊ¯ÁÑÒÑ´æÔÚ£¬ÔİÊ±²»¿ÉÔÙ´Î·ÅÖÃ¡£");
+	Msg2Player("§èi diÖn víi b¹n ®· ®­îc bè trİ mét c¸i Hçn Th¹ch LiÖt, t¹m thêi kh«ng thÓ bè trİ thªm n÷a ");
 	return 1
 end;
 

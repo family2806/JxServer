@@ -11,8 +11,8 @@ NPC_PARAM_MAPID = 1
 NPC_PARAM_COLLECTED = 2
 PLANT_LIST = 
 {
-	["yellow"] = {nNpcId = 1930, nLevel = 1, szName = "ª∆µæ", szScriptPath = "\\script\\missions\\caiji\\plant.lua"},
-	["green"] = {nNpcId = 1931, nLevel = 1, szName = "«‡µæ", szScriptPath = "\\script\\missions\\caiji\\plant.lua"},
+	["yellow"] = {nNpcId = 1930, nLevel = 1, szName = "LÛa Vµng", szScriptPath = "\\script\\missions\\caiji\\plant.lua"},
+	["green"] = {nNpcId = 1931, nLevel = 1, szName = "LÛa Xanh", szScriptPath = "\\script\\missions\\caiji\\plant.lua"},
 }
 
 NPCID2PLANTTYPE = 
@@ -23,14 +23,14 @@ NPCID2PLANTTYPE =
 
 ITEM_PLANT = 
 {
-	["yellow"] = {szName = "ª∆µæ", tbProp={6,1,3200,1,0,0}, nExpiredTime = 20120701},
-	["green"] = {szName = "«‡µæ", tbProp={6,1,3199,1,0,0},nExpiredTime = 20120701},
+	["yellow"] = {szName = "LÛa Vµng", tbProp={6,1,3200,1,0,0}, nExpiredTime = 20120701},
+	["green"] = {szName = "LÛa Xanh", tbProp={6,1,3199,1,0,0},nExpiredTime = 20120701},
 }
 
 ITEM_TOOL = 
 {
-	["nomal"] = {szName = "Ã˙¡≠µ∂", tbProp={6,1,3197,1,0,0}},
-	["platinum"] = {szName = "“¯¡≠µ∂", tbProp={6,1,3198,1,0,0}}
+	["nomal"] = {szName = "L≠Ïi Li“m Sæt", tbProp={6,1,3197,1,0,0}},
+	["platinum"] = {szName = "L≠Ïi Li“m Bπc", tbProp={6,1,3198,1,0,0}}
 }
 
 

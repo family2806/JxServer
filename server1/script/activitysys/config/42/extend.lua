@@ -15,10 +15,10 @@ function pActivity:AddTrebleExpTime(TSK_TREBLEEXP_TIME, TSK_HANDIN_LIULINGDAN)
 	local nCurTime = GetCurServerTime()
 	local nNewTime = max(nCurTime, nLastTime)+20*60
 	self:SetTask(TSK_TREBLEEXP_TIME, nNewTime)
-	Msg2Player("上交刘灵丹成功，通过枫树您获得3倍经验.")
+	Msg2Player("Giao n閜 L璾 Linh Кn th祅h c玭g, th玭g qua C﹜ Phng ngi nh薾 頲 nh﹏ 3 kinh nghi謒.")
 	self:WriteLog("SuDungLuuLinhDon")
 	if self:CheckTaskDaily(TSK_HANDIN_LIULINGDAN,3,"","==") == 1 then
-		self:WriteLog("使用刘灵丹3次")
+		self:WriteLog("SuDungLuuLinhDon3Lan")
 	end
 end
 
@@ -35,11 +35,11 @@ MayTree.nNormalRate = 1
 MayTree.nExRate = 3
 MayTree.nLevelLimit = 150
 MayTree.nMsgIntervalTime = 60
-MayTree.szMsgIntervalWarning = "通过枫树，今天您领取的经验已达上限"
+MayTree.szMsgIntervalWarning = "Th玭g qua C﹜ Phng h玬 nay ngi nh薾 kinh nghi謒  t n gi韎 h筺"
 MayTree.tbNpcTypeList = {
 	["C﹜ Phng"] = {
 		nNpcId = 1924,
-		szName = "枫树",
+		szName = "C﹜ Phng",
 		nLevel = 90,
 		nTime = 15,
 		szPosPath = "\\settings\\activitysys\\42\\npcpos.txt",

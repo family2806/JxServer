@@ -14,12 +14,12 @@ function main(nItemIndex)
 	nContainExp = nContainExp + GetItemParam(nItemIndex, 2)*1e8;
 	
 	if ST_GetTransLifeCount() <= 0  then
-		Say("Ö»ÓĞÖØÉúµÄÈËÎï²ÅÄÜÊ¹ÓÃ×Ï½ğÕæµ¤", 0)
+		Say("ChØ cã nh©n vËt ®· trïng sinh míi cã thÓ sö dông Tö Kim Ch©n §¬n", 0)
 		return 1;
 	end
 	
 	if nContainExp <= 0 then
-		Say("Ê¹ÓÃ¸Ã×Ï½ğÕæµ¤²»ÄÜ»ñµÃ¾­Ñé.", 0)
+		Say("Sö dông ch©n ®an nµy kh«ng thÓ nhËn ®­îc kinh nghiÖm.", 0)
 		return 0;
 	end
 	
@@ -37,24 +37,24 @@ function main(nItemIndex)
 		local nMin	= floor(nTime / 60 );
 		local nSec	= mod(nTime, 60);
 			
-		szMsg_ZiJin = format("<color=yellow>%d ÈÕ %d Ê±%d·Ö%d Ãë<color>",nDay,nHour,nMin,nSec);
+		szMsg_ZiJin = format("<color=yellow>%d ngµy %d giê %d phót %d gi©y<color>",nDay,nHour,nMin,nSec);
 	end
 		
 	local szTitle;
 	local tbOpt;
 	
 	if szMsg_ZiJin ~= nil then
-		szTitle	= format("ÄúºÃ <color=yellow>%s<color>, ÔÚ60ÌìÄÚÖ»ÄÜÊ¹ÓÃ1´Î×Ê½ğÕæµ¤£¬´óÏÀ¶àµÈ%sÈ»ºóÔÙÖØÊÔ.",GetName(),szMsg_ZiJin)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, trong thêi gian 60 ngµy chØ ®­îc sö dông 1 lÇn Tö Kim Ch©n §¬n, ®¹i hiÖp ®îi thªm %s råi h·y thö l¹i.",GetName(),szMsg_ZiJin)
 		tbOpt = 
 		{
-			"È·ÈÏ/OnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 	else
-		szTitle	= format("ÄúºÃ <color=yellow>%s<color>, Ê¹ÓÃ¸ÃÏÉµ¤¿ÉÒÔ»ñµÃ<color=yellow>%s<color>¾­Ñé¡£È·ÈÏÏëÊ¹ÓÃ?",GetName(), nContainExp)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, sö dông tiªn ®¬n nµy cã thÓ nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm. X¸c nhËn muèn sö dông?",GetName(), nContainExp)
 		tbOpt = 
 		{
-			format("È·ÈÏ/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
-			"·ÅÆú/OnCancel"
+			format("X¸c nhËn/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
+			"Hñy bá /OnCancel"
 		}
 	end
 	Say(szTitle, getn(tbOpt), tbOpt);
@@ -67,12 +67,12 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 	nContainExp = nContainExp + GetItemParam(nItemIndex, 2)*1e8;
 	
 	if ST_GetTransLifeCount() <= 0  then
-		Say("Ö»ÓĞÖØÉúµÄÈË²ÅÄÜÊ¹ÓÃ×Ï½ğÕæµ¤", 0)
+		Say("ChØ cã nh©n vËt ®· trïng sinh míi cã thÓ sö dông Tö Kim Ch©n §¬n", 0)
 		return 1;
 	end
 	
 	if nContainExp <= 0 then
-		Say("Ê¹ÓÃ¸ÃÕæµ¤²»ÄÜ»ñµÃ¾­Ñé.", 0)
+		Say("Sö dông ch©n ®an nµy kh«ng thÓ nhËn ®­îc kinh nghiÖm.", 0)
 		return 0;
 	end
 	
@@ -90,21 +90,21 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 		local nMin	= floor(nTime / 60 );
 		local nSec	= mod(nTime, 60);
 			
-		szMsg_ZiJin = format("<color=yellow>%d Ìì %dÊ±%d ·Ö%d Ãë<color>",nDay,nHour,nMin,nSec);
+		szMsg_ZiJin = format("<color=yellow>%d ngµy %d giê %d phót %d gi©y<color>",nDay,nHour,nMin,nSec);
 	end	
 	
 	
 	if szMsg_ZiJin ~= nil then
-		local szTitle = format("ÄúºÃ <color=yellow>%s<color>, ÔÚ60ÌìÄÚÖ»ÄÜÊ¹ÓÃ1´Î×Ê½ğÕæµ¤£¬´óÏÀ¶àµÈ%sÈ»ºóÔÙÖØÊÔ",GetName(),szMsg_ZiJin)
+		local szTitle = format("Xin chµo <color=yellow>%s<color>, trong thêi gian 60 ngµy chØ ®­îc sö dông 1 lÇn Tö Kim Ch©n §¬n, ®¹i hiÖp ®îi thªm %s råi h·y thö l¹i.",GetName(),szMsg_ZiJin)
 		local tbOpt = 
 		{
-			"È·ÈÏ/OnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 		Say(szTitle, getn(tbOpt), tbOpt);
 	else
 		if RemoveItemByIndex(nItemIndex) == 1 then
 			
-			tbAwardTemplet:GiveAwardByList({nExp_tl = nContainExp;}, format("%s Ê¹ÓÃ×Ï½ğÕæµ¤", GetName()));
+			tbAwardTemplet:GiveAwardByList({nExp_tl = nContainExp;}, format("%s sö dông Tö Kim Ch©n §¬n", GetName()));
 			SetTask(TSK_BeiDouChuanGong_USEDTIME_ZIJIN, GetCurServerTime());
 			AddSkillState( 509, 1, 0, 180);
 			
@@ -119,5 +119,5 @@ end
 function GetDesc(nItem)
 	local nContainExp = GetItemParam(nItem, 1);
 	nContainExp = nContainExp + GetItemParam(nItem, 2)*1e8;
-	return format("\nº¬ÓĞ <color=yellow>%s<color> ¾­Ñé", nContainExp);
+	return format("\nChøa <color=yellow>%s<color> kinh nghiÖm", nContainExp);
 end

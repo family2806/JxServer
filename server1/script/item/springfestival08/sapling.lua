@@ -25,28 +25,28 @@ function main(nItemIndex)
 	local n_item_date = tonumber(FormatTime2String("%Y%m%d%H%M",ITEM_GetExpiredTime(nItemIndex)));
 	local n_cur_date = tonumber(GetLocalDate("%Y%m%d%H%M"));
 	if n_cur_date > n_item_date then		
-		Msg2Player("ÎïÆ·ÒÑ¹ıÆÚ£¬²»ÄÜÊ¹ÓÃÁË.")
+		Msg2Player("VËt phÈm ®· qu¸ h¹n, kh«ng thÓ sö dông.")
 		return 1;
 	end
 	
 	if (GetTask(nTSK_USE_COUNT_LIMIT) >= nUSE_COUNT_LIMIT) then
-		Talk(1, "", "ÖÖÊ÷´ïµ½½çÏŞ£¬²»ÄÜÔÙÖÖÁË!")
+		Talk(1, "", "Trång c©y ®¹t ®Õn giíi h¹n, kh«ng thÓ trång thªm!")
 		return 1
 	end
 	
 	if not sapling_checkmap() then
-		Msg2Player("Ö»ÄÜÔÚĞÂÊÖ´åºÍ³ÇÊĞÊ¹ÓÃ")
+		Msg2Player("ChØ cã thÓ sö dông ë t©n thñ th«n vµ thµnh thŞ.")
 		return 1
 	end
 	
 	if offlineCheckPermitRegion() == 0 then
-		Msg2Player("×îºÃ²»ÒªÔÚÈË¶àµÄµØ·½ÖÖ.")
+		Msg2Player("Tèt nhÊt kh«ng nªn trång c©y gÇn khu vùc ®«ng ng­êi.")
 		return 1;
 	end
 	
 	SetTask(nTSK_USE_COUNT_LIMIT, GetTask(nTSK_USE_COUNT_LIMIT) + 1)
 	local _, nX, nY = GetWorldPos();
-	if (plantTree_0801(1, SubWorld, nX*32, nY*32, format("Ê÷ %s",GetName()), FileName2Id(GetName()), GetRoleCreateTimeData() ) == 0) then
+	if (plantTree_0801(1, SubWorld, nX*32, nY*32, format("C©y cña %s",GetName()), FileName2Id(GetName()), GetRoleCreateTimeData() ) == 0) then
 		return 1;
 	end;
 	return 0
@@ -61,16 +61,16 @@ do return end
 	local nTSKV				= GetTask(TSK_sapling_UseCountLimit)
 	
 	if nData_E <= nDateYmd then
-		Msg2Player("¸ÃÎïÆ·ÒÑ¹ıÆÚ£¬²»ÄÜÊ¹ÓÃ.", 0)
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n, kh«ng thÓ sö dông.", 0)
 		return 0;
 	end
 	if not sapling_checkmap() then
-		Msg2Player("Ö»¿ÉÒÔÔÚ¸÷´åÕòµÄ·ÇÕ½¶·ÇøÓòÊ¹ÓÃ.")
+		Msg2Player("ChØ cã thÓ sö dông ë khu vùc phi chiÕn ®Êu cña c¸c th«n trÊn.")
 		return 1
 	end
 	
 	if offlineCheckPermitRegion() == 0 then
-		Msg2Player("×îºÃ²»ÒªÔÚÈË¶àµÄµØ·½ÖÖ.")
+		Msg2Player("Tèt nhÊt kh«ng nªn trång c©y gÇn khu vùc ®«ng ng­êi.")
 		return 1;
 	end
 	
@@ -78,14 +78,14 @@ do return end
 		nTSKV = nDate * 256 --ÇåÁã²¢¸üĞÂÊ±¼ä
 	end
 	if mod(nTSKV,256) >= nUseCountLimit then --´ÎÊı
-		Say(format("Äú½ñÌìÒÑÖÖ<color=yellow>%d<color> ¿ÃÊ÷, Ã÷Ìì¼ÌĞøÖÖÅ¶", nUseCountLimit), 0)
+		Say(format("B¹n h«m nay ®· trång <color=yellow>%d<color> c©y, ngµy mai h·y trång tiÕp nhĞ!", nUseCountLimit), 0)
 		return 1;
 	end
 	
 	--²úÉú
 	local _, nX, nY = GetWorldPos();
 	--local nNpcIdx = AddNpc(711, 1, SubWorld, (nX-1)*32, (nY-1)*32, 1, format("%sµÄÊ÷",GetName()));
-	if (plantTree_0801(1, SubWorld, (nX+random(-2,2))*32, (nY+random(-2,2))*32, format("Ê÷%s",GetName()), FileName2Id(GetName()), GetRoleCreateTimeData() ) == 0) then
+	if (plantTree_0801(1, SubWorld, (nX+random(-2,2))*32, (nY+random(-2,2))*32, format("C©y cña %s",GetName()), FileName2Id(GetName()), GetRoleCreateTimeData() ) == 0) then
 		return 1;
 	end;
 	

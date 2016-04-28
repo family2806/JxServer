@@ -28,7 +28,7 @@ function main()
 			if (pidx > 0 and pidx ~= OldPlayer) then	--Ñ¡Ôñ³ýÍæ¼ÒÍâµÄËùÓÐ¶ÔÊÖ£»
 				PlayerIndex = pidx;
 				AddSkillState(SKILLTYPE, SKILLLEVEL2, SKILLLEVEL3, SKILLLEVEL41 * SKILLLEVEL42);
-			Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>Ê¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..ITEMNAME.."<color>£¬"..ITEMDFFECT)
+			Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color> sö dông <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT)
 			end;
 			
 			if (0 == idx) then
@@ -36,7 +36,7 @@ function main()
 			end;
 		end;
 		PlayerIndex = OldPlayer;
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..ITEMNAME.."<color>£¬"..ITEMDFFECT);
+	Msg2Player("<#> B¹n ®· sö dông mét <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT);
 		return 0;
 	end;
 	------²éÑ¯ÐÂ±í
@@ -54,18 +54,18 @@ function main()
 			idx, pidx = GetNextPlayer(tbRace.nMissionId, idx, nGroupId);
 			if (pidx > 0 and pidx ~= PlayerIndex) then
 				doFunByPlayer(pidx , AddSkillState, SKILLTYPE, SKILLLEVEL2, SKILLLEVEL3, SKILLLEVEL41 * SKILLLEVEL42);
-				doFunByPlayer(pidx, Msg2Player, "<#><color=0xB5FDD7>"..GetName().."<color> Ê¹ÓÃ<color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT)
+				doFunByPlayer(pidx, Msg2Player, "<#><color=0xB5FDD7>"..GetName().."<color> sö dông <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT)
 			end;
 			
 			if (idx == 0) then
 				break;
 			end;
 		end
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..ITEMNAME.."<color>£¬"..ITEMDFFECT);
+	Msg2Player("<#> B¹n ®· sö dông mét <color=0xB5FDD7>"..ITEMNAME.."<color>?"..ITEMDFFECT);
 		return 0;
 	end
 	
 	--×îºó¶¼²»ÄÜÊ¹ÓÃ
-	Talk(1, "", "´ËµØÍ¼²»ÄÜÊ¹ÓÃ.");
+	Talk(1, "", "§¹o cô nµy kh«ng dïng ®­îc ë khu vùc nµy.");
 	return 1
 end;

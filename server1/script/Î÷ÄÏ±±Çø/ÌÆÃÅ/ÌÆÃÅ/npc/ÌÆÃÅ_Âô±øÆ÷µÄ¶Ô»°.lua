@@ -4,9 +4,9 @@
 function main(sel)
 	Uworld37 = GetByte(GetTask(37),1)
 	if (GetFaction() == "tangmen") or (Uworld37 == 127) then
-		Say("ÌÆÈ±£ºÕâĞ©±øÈĞ¶¼ÊÇ±¾ÃÅ°µÆ÷·¿ºÍ»ğÆ÷·¿´òÔìµÄ£¬ÔÚ±ğ´¦¿É²»¶à¼û°¡¡£", 2, "½»Ò×/yes", "²»½»Ò×/no")
+		Say("Nh÷ng binh khİ nµy ®Òu do 'Phßng ¸m khİ' vµ 'Phßng háa khİ' bæn m«n ta chÕ t¹o, kh«ng ë n¬i nµo cã!", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 	else
-		Talk(1,"","ÃÅÖ÷ÓĞÁî£¬±¾ÃÅ±øÆ÷²»µÃÂô¸øÍâÈË!")
+		Talk(1,"","M«n chñ cã lÖnh, binh khİ cña bæn m«n kh«ng thÓ b¸n cho ng­êi ngoµi!")
 	end
 end;
 

@@ -1,7 +1,7 @@
 Include("\\script\\battles\\battleinfo.lua")
 --¾üĞè¹Ù
 function main(sel)
-Say("ºóÓªÓÉÎÒ¸ºÔğ£¡ÄãĞèÒªÊ²Ã´°ïÖúÂğ?",3,"ÂòÒ©Æ·/salemedicine","ÁË½âËÎ½ğ´óÕ½µÄ¹æÔò/help_sjbattle","²»ĞèÒª!Ğ»Ğ»!/cancel")
+Say("HËu doanh do ta phô tr¸ch! Ng­¬i cã cÇn gióp ®ì g× kh«ng?",3,"Mua d­îc phÈm/salemedicine","T×m hiÓu quy t¾c Tèng Kim ®¹i chiÕn/help_sjbattle","Kh«ng cÇn ®©u! C¶m ¬n!/cancel")
 end;
 
 function salemedicine(sel)

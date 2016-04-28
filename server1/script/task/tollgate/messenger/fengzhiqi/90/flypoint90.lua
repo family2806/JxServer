@@ -18,21 +18,21 @@ FLYPOINT_MESSENGEREXP= tonumber( TabFile_GetCell( "tollprize" ,4 ,"dingdian_jife
 ------ĞÅÊ¹ÈÎÎñ·çÖ®Æï¶¨µãÉ±¹Ö±í¸ñ--------------
 --Ğ¡µØÍ¼×ø±êx£¬y£¬ÈËÎïÃû×Ö£¨60-79¼¶£©,
 killfly ={
-{193,194,"¼ÑÂÉĞ°Õë",1},
-{181,183,"´ó´È",2},
-{197,179,"´ó¾ü",3},
-{197,172,"´ó¿â",4},
-{198,163,"¼ÑÂÉÁ¢",5},
-{190,160,"¼ÑÂÉÄÜ",6},
-{164,162,"ÍêÑÕÆÆ¾ü",7},
-{164,172,"ÍêÑÕÃü",8},
-{178,190,"´óÄù",9},
-{178,187,"¼ÑÂÉ¿Í",10},
-{169,190,"ÍêÑÕ·ö±ø",11},
-{172,193,"¼ÑÂÉÂí±¼",12},
-{165,191,"´óöÄ",13},
-{178,2851,"¼ÑÂÉ²¿",14},
-{186,183,"´ó¿Û",15},
+{193,194,"Gia LuËt Tµ Ch©m",1},
+{181,183,"§¹i Tõ ",2},
+{197,179,"§¹i Qu©n",3},
+{197,172,"§¹i Khè ",4},
+{198,163,"Gia LuËt LËp",5},
+{190,160,"Gia LuËt N¨ng",6},
+{164,162,"Hoµn Nhan Ph¸ Qu©n",7},
+{164,172,"Hoµn Nhan MÖnh",8},
+{178,190,"§¹i NiÕt",9},
+{178,187,"Gia LuËt Kh¸ch",10},
+{169,190,"Hoµn Nhan Phu Binh",11},
+{172,193,"Gia LuËt M· B«n",12},
+{165,191,"§¹i Cï ",13},
+{178,2851,"Gia LuËt Bé ",14},
+{186,183,"§¹i KhÊu",15},
 }
 
 
@@ -42,13 +42,13 @@ function OnDeath(nNpcIndex)
 	local FLY_npcidex = GetNpcParam(nNpcIndex,1)
 	
 	if (  messenger_middletime() == 10 ) then --Íæ¼ÒÔÚµØÍ¼ÖĞµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æğ! "..name.."! ÄãµÄĞÅÊ¹ÈÎÎñÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	elseif ( Uworld1214 == 0 ) then  --Ã»ÓĞ¶¨µãÉ±¹ÖµÄÈÎÎñ
-		Msg2Player("´ËÈËÒÑ±»ËûÈËÂò¶Ï£¬Äã´òËûÒ²²»ÄÜ»ñµÃ½±Àø.")
+		Msg2Player("Tªn nµy ®· bŞ ng­êi ta ®· ng­êi ta mua ®øt råi, ng­¬i ®¸nh h¾n còng kh«ng ®­îc phÇn th­ëng.")
 		return
 	elseif ( FLY_npcidex ~= killfly[Uworld1214][4]) then
-		Msg2Player("´ËÈË²»ÊÇĞÅÖĞÏëÄãÈ¥ÕÒµÄÈËÂğ£¿È·¶¨ÊÇ²»ÊÇ½ğ¹·µÄÈË!")
+		Msg2Player("Tªn nµy kh«ng ph¶i lµ ng­êi trong th­ muèn ng­¬i ®i t×m sao? X¸c ®Şnh râ cã ph¶i lµ ng­êi cña Kim CÈu!")
 	else
 		messenger_killpoint()
 	end

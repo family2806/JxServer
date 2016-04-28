@@ -8,14 +8,14 @@ Include("\\script\\missions\\autohang\\function.lua")
 
 function main(sel)
 	if (GetLevel() >= 50) then
-		Say("´¬·ò£ºÎÒÕâ´¬¿É²»ÊÇÑ°³£µÄ´¬£¬Ô×Ïà´ó³¼ÃÇ¶¼ÔØ¹ı£¬ÄãÒª×ø´¬Ò²ĞĞ£¬µ«ÊÇµÃÏÈ¸¶¶©½ğ£¬Ê¡µÃµ½Ê±ÀµÕÊ£¬¿´ÄêÒ»Ò²²»ÏäÓĞÇ®ÈËµÄÑù×Ó£¬¾ÍÏÈ¸¶Ê®Á½¶©½ğ°É£¡", 3, "×ø´¬/WharfFun", "²»×ø/OnCancel", "<#>ÌÒ»¨µº["..AEXP_TICKET.."<#>Á½]/go_thd");
+		Say("ThuyÒn cña ta kh«ng ph¶i tÇm th­êng! Tõng chë qua ®¹i thÇn tÓ t­íng cña triÒu ®×nh! Muèn ®i ®©u ph¶i ®Æt tr­íc!", 3, "Ngåi thuyÒn/WharfFun", "Kh«ng ngåi/OnCancel", "<#>ÌÒ»¨µº["..AEXP_TICKET.."<#>Á½]/go_thd");
 	else
-		Say("´¬·ò£ºÎÒÕâ´¬¿É²»ÊÇÑ°³£µÄ´¬£¬Ô×Ïà´ó³¼ÃÇ¶¼ÔØ¹ı£¬ÄãÒª×ø´¬Ò²ĞĞ£¬µ«ÊÇµÃÏÈ¸¶¶©½ğ£¬Ê¡µÃµ½Ê±ÀµÕÊ£¬¿´ÄêÒ»Ò²²»ÏäÓĞÇ®ÈËµÄÑù×Ó£¬¾ÍÏÈ¸¶Ê®Á½¶©½ğ°É£¡", 2, "×ø´¬/WharfFun", "²»×ø/OnCancel")
+		Say("ThuyÒn cña ta kh«ng ph¶i tÇm th­êng! Tõng chë qua ®¹i thÇn tÓ t­íng cña triÒu ®×nh! Muèn ®i ®©u ph¶i ®Æt tr­íc!", 2, "Ngåi thuyÒn/WharfFun", "Kh«ng ngåi/OnCancel")
 	end
 end;
 
 function  OnCancel()
-   Talk(1,"","´¬·ò£ºÃ»Òø×Ó¿É×ø²»ÁË´¬£¡")
+   Talk(1,"","Kh«ng tiÒn kh«ng thÓ ngåi thuyÒn! ")
 end;
 
 function go_thd()
@@ -23,6 +23,6 @@ function go_thd()
 	-- if (nRet == 1) then
 	--	Msg2Player("´¬·ò£º×î½üÈ¥ÌÒ»¨µºµÄÈË¿ÉÕæ¶à¡£ºÃ°É£¬Äã×øºÃà¶£¡")
 	if (nRet == -1) then
-		Talk(1,"","<#>È¥ÌÒ»¨µº"..AEXP_TICKET.."<#>ÒøÁ½£¬Äã×°¹»ÁËÂğ?")
+		Talk(1,"","<#> Phµ ®i §µo Hoa ®¶o"..AEXP_TICKET.."<#> ng©n l­îng, ng­¬i tr¶ næi kh«ng?")
 	end
 end

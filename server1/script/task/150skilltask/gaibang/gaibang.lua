@@ -3,78 +3,78 @@
 tbConfig = {}
 tbMissionDialog = {}
 tbMissionDialog[0] = {
-	"ºÎÈËÎÒ£º ÎÒØ¤°ïµÄ4Äê´ó»áÈÕÓÖµ½ÁË£¬Õâ´Î£¬ÄãÏëÌôÕ½ÎÒµÄØ¤°ï¾²Ò½Âğ?",
-	"Íæ¼Ò: ÌìÏÂ¼äÈÎºÎÌôÕ½ÎÒØ¤°ïµÜ×Ó¶¼²»ÅÂ½ÓÊÜ£¬Çë°ïÖ÷Ö¸½Ì.",
-	"ºÎÈËÎÒ£º½üÄêÀ´Ø¤°ï¾²Ò½¾¡ĞÄ¿¹½ğ£¬ÉùÃû½¥½¥Ô¶²¥£¬±¾½ÌÄÚÒ»Ğ©Î×Ò½µÜ×Ó²»·ş£¬Òò´Ë½ñÌìµÄØ¤°ï´ó»áÎÒÏëÈÃÄãºÍØ¤°ïÎ×Ò½±ÈÊÔ,",
-	"ºÎÈËÎÒ£ºÕâ´Î±ÈÊÔÊ®·ÖÖØÒª£¬Äã±ØĞëÒª×ÔÎÒÅ¬Á¦Ò»·¬¡£±ÊÊÔ¹²ÓĞ3ÂÖ£¬¹æÔòÏ¸½Ú´«¹¦³¤ÀÏÒ²¾ÍÊÇÕâ´Î´ó»áµÄÖ÷ÊÂÈËÎºÁËÎÌ»á¸ø´ó¼Ò½²Ã÷°×£¬Ö®Ç°ÄãµÃÏÈµ½Èü³¡×¼±¸Ò»ÏÂ.",
+	"Hµ Nh©n Ng·: ngµy ®¹i héi 4 n¨m cña C¸i Bang ta l¹i ®Õn råi, lÇn nµy, ng­¬i cã mong muèn khiªu chiÕn víi C¸i B¹ng TÜnh Y cña ta kh«ng?",
+	"Ng­êi ch¬i: trong thiªn h¹ cã trËn khiªu chiÕn nµo mµ ®Ö tö c¸i bang ta kh«ng d¸m nhËn chø, bang chñ ng­êi nhanh chãng chØ b¶o.",
+	"Hµ Nh©n Ng·: mÊy n¨m gÇn ®©y C¸i Bang TÜnh Y tËn lùc chèng Kim, danh tiÕng ngµy cµng ®­îc vang xa, nh÷ng ®Ö tö ¤ Y trong bæn gi¸o c¶m thÊy lßng kh«ng phôc, cho nªn ®¹i héi C¸i Bang cña ngµy h«m nay ta muèn ng­¬i tû thİ víi C¸i Bang ¤ Y,",
+	"Hµ Nh©n Ng·: lÇn tû thİ nµy v« cïng träng ®¹i, ng­¬i ph¶i tù m×nh cè g¾ng mét phen. Tû thİ tæng céng cã 3 ¶i, chi tiÕt vÒ quy t¾c tr­ëng l·o truyÒn c«ng Ngôy L·o ¤ng còng lµ ng­êi chñ sù cho ®¹i héi lÇn nµy «ng ta sÏ nãi cho c¸c ng­¬i biÕt râ, tr­íc tiªn ng­¬i h·y ®Õn ®Êu tr­êng ®Ó chuÈn bŞ ®i.",
 }
 
 tbMissionDialog[1] = {
-	"ÎºÁËÎÌ: ½ñÄêØ¤°ïÎ×Ò½ºÍ¾»Ò½±ÈÎäÓĞ3ÖØÕÏ°­£¬Èç¹û¶¼Ê¤ÁË2¹Ø£¬ÄÇÃ´Ö®ºóÊ£ÏÂµÄÊÇÒ»Í¬µÄÊ¤ÀûÕß.",
-	"ÎºÁËÎÌ: ²ÎÈüÕßÕıÊÇÄãºÍÎ×Ò½µÜ×ÓÃÏ¾§¡£µÚÒ»¹Ø£¬ÄãºÍËû¹«Æ½±ÈÎä¡£µ¶½£ÎŞÑÛ£¬ÇëĞ¡ĞÄ."
+	"Ngôy LiÔu ¤ng: ®¹i héi tû vâ gi÷a ¤ Y vµ TÜnh Y cña ph¸i C¸i Bang n¨m nay ®­îc chia ra 3 ¶i, nÕu nh­ ®Òu th¾ng c¶ 2 ¶i, th× ng­êi cßn l¹i sau cïng lµ ng­êi th¾ng lîi.",
+	"Ngôy LiÔu ¤ng: Ng­êi tham gia chİnh lµ ng­¬i vµ ¤ Y ®Ö tö M¹nh Tinh. ¶i thø nhÊt , ng­¬i vµ h¾n tû vâ c«ng b»ng. ®ao kiÕm kh«ng cã m¾t,  xin hai vŞ cÈn thËn."
 }
 
 tbMissionDialog[2] = {
-	"ÎºÁËÎÌ: µÚÒ»Õ½ÄãÊ¤ÁË£¬½ÓÏÂÀ´µÄ»á¸üÄÑ£¬ÄãºÍÃÏ¾§ÒªÒ»ÆğÔ½¹ıÎÒÃÇØ¤°ïµÄ´ò¹·Õó·¨",
-	"Íæ¼Ò: : ´ò¹·Õó·¨?",
-	"ÎºÁËÎÌ: ´ò¹·Õó·¨ÊÇÎÒÃÇØ¤°ïÓÃÀ´¶Ô¸¶ÎäÁÖ¸ßÊÖµÄ£¬ÚÀ£¬Õâ´ÎÓÃÀ´¶Ô¸¶×Ô¼ºÈËÒ²ÊÇÍò²»µÃÒÑ°¡.",
-	"ÎºÁËÎÌ: »¹ÓĞÕâ´ÎÖ÷µ¼´ò¹·Õó·¨µÄÊÇÖ´·¨³¤ÀÏÃÏ²ÔÀË¡£ÄãÒªĞ¡ĞÄ.",
+	"Ngôy LiÔu ¤ng: TrËn thø nhÊt ng­¬i ®· th¾ng, nh­ng trËn tiÕp theo sÏ khã kh¨n h¬n nhiÒu, ng­¬i vµ M¹nh Tinh cïng nhau v­ît qua §· CÈu TrËn Ph¸p cña C¸i Bang ta",
+	"Ng­êi ch¬i: : §· CÈu TrËn Ph¸p?",
+	"Ngôy LiÔu ¤ng: §· CÈu TrËn Ph¸p lµ C¸i Bang chóng ta dïng ®Ó ®èi phã víi c¸c cao thñ vâ l©m, hÇy , lÇn nµy l¹i dïng ®Ó ®èi phã víi ng­êi cña m×nh, còng lµ v¹n bÊt d¾c dÜ mµ th«i.",
+	"Ngôy LiÔu ¤ng: H¬n n÷a chñ ®¹o cña §· CÈu TrËn nµy lµ chÊp ph¸p tr­ëng l·o M¹nh Th­¬ng Lang. Ng­¬i ph¶i cÈn thËn ®Êy.",
 }
 
 tbMissionDialog[3] = {
-	"ÎºÁËÎÌ: ºÃºÃ£¬ÄãÕæ²»´í£¬ÆÆÕóºÜ¿ì£¬ÃÏ¾§»¹ÔÚÕóÀï£¬Ò»¸öÈËÔÚÕóÀï¿ÖÅÂĞ×¶à¼ªÉÙ.",
-	"Íæ¼Ò: Ê²Ã´£¬ÄÑµÀ²»ÊÇÒ»¸öÈËÆÆÕó¾Í·Ö³öÊ¤¸ºÁËÂğ?",
-	"ÎºÁËÎÌ: ¹ş¹ş£¬ÄãÒÔÎª´ò¹·Õó·¨ÊÇÊ²Ã´¡£µ±È»ÊÇÃ¿¸öÈËÒ»ÁÙÕó¾Í³¢µ½ÁËËüµÄÀ÷º¦¡£",
-	"Íæ¼Ò: µÈÎÒ»ØÈ¥°ïÖúËû.",
-	"ÎºÁËÎÌ: Î¹£¬ÄãÓÖÒª½ø´ò¹·Õó·¨×öÊ²Ã´£¬ÕâÑùµÄ»°ÄãÖ®Ç°µÄ³É¼¨¶¼²»ËãÊıÁË£¬ºÎ±ØÕâÑù×öÄØ£¿",
-	"Íæ¼Ò: ¼ûËÀ²»¾ÈÍ÷ÎªÈË!",
+	"Ngôy L·o ¤ng: tèt tèt, kh¸ khen cho ng­¬i, ph¸ trËn rÊt nhanh, cã ®iÒu M¹nh Tinh vÉn cßn ë trong trËn ®ã, y mét m×nh ë trong trËn, chØ sî ……lµnh İt d÷ nhiÒu.",
+	"Ng­êi ch¬i: c¸i g×, ch¼ng lÏ kh«ng ph¶i mét ng­êi ph¸ trËn, th× ®· lµ ph©n chia th¾ng b¹i hay sao?",
+	"Ngôy L·o ¤ng: ha ha, ng­¬i nghÜ §· CÈu TrËn Ph¸p lµ c¸i g× chø. §­¬ng nhiªn lµ mçi ng­êi mét khi ®· l©m trËn th× ph¶i nÕm mïi lîi h¹i cña nã.",
+	"Ng­êi ch¬i: ®Ó ta quay l¹i gióp huynh Êy.",
+	"Ngôy L·o ¤ng: hÇy, ng­¬i l¹i ®i vµo ®¸nh trËn ph¸p §· CÈu sao, nh­ vËy th× thµnh tİch tr­íc ®ã cña ng­¬i sÏ bŞ phÕ bá hÕt, hµ tÊt ph¶i lµm nh­ vËy chø?",
+	"Ng­êi ch¬i: thÊy chÕt kh«ng cøu, uæng tù vi nh©n!",
 }
 
 tbMissionDialog[4] = {
-	"ÃÏ¾§: ÄãÊÇ»ØÀ´³°Ğ¦ÎÒµÄ°É?",
-	"Íæ¼Ò: ÊÇ´óÕÉ·òÓĞ±ØÒªÕâÑùËµÂğ£¬ÎÒÀ´ÎªÄãÁÆÉË£¬ÖúÄãÆÆÕó.",
+	"M¹nh Tinh: ng­¬i quay l¹i ®©y ®Ó chÕ giÔu ta sao?",
+	"Ng­êi ch¬i: lµ bËc ®¹i tr­îng phu khi nãi cã cÇn ph¶i nh­ vËy kh«ng, ®Ó ta liÖu th­¬ng cho huynh, gióp huynh ph¸ trËn.",
 }
 
 tbMissionDialog[5] = {
-	"ÎºÁËÎÌ: Ïë²»µ½×îºóÄãÃÇ¶¼ÆÆÕóÁË£¬³öºõÎÒµÄÒâÁÏ£¬ÕâÑùÒâÍâµÄ½á¾ÖÎÒÒ²²»ÖªµÀÔõÃ´ÅĞ¶¨£¬ÄãÃÇ»¹ÊÇÈ¥ÕÒ°ïÖ÷×ĞÏ¸ÎÊÎÊ¿´ÔõÃ´°ì°É.",
+	"Ngôy LiÔu ¤ng: kh«ng ngê c¸c ng­¬i cuèi cïng còng cïng lóc ph¸ trËn qua ¶i, n»m ngoµi dù tİnh cña ta, chuyÖn ®· no­ vËy ta còng kh«ng biÕt ph¶i quyÕt ®o¸n lµm sao, hay lµ c¸c ng­¬i ®i t×m bang chñ hái cho kü cµng xem sao.",
 }
 
 tbMissionDialog[6] = {
-	"ºÎÈËÎÒ£ºÎÒ¹ûÕæÃ»ÓĞ¿´´íÈË£¬Äã²»½öÎä¹¦¸ßÇ¿£¬µÀ¹ÇÒ²ºÜºÃ£¬ÓĞµãÏñÎÒ!",
-	"ºÎÈËÎÒ£ºÒªÖªµÀÈç¹ûÔÚÕóÖĞ²»Ïà»¥°ïÖú£¬ÉõÖÁÎªÁËÊ¤Àû»¥Ïà²ĞÉ±£¬ÕâÑùµÄ»°ÔõÃ´»áÊÇÎÒµÄµÜ×ÓÄØ!ºÃ£¬·Ç³£ºÃ£¡",
-	"Íæ¼Ò: ÕâÑùµÄ»°½á¹ûÊÇÔõÃ´ÑùµÄÄØ£¿¾ÍËãÊÇ´òºÍ°É£¬ÎÒÃÇØ¤°ïÒ»Ïò½²ÒåÆø£¬ºÎ±ØÒªÔÚ¾«Ò½ºÍÎ×Ò½Ö®¼äÕùÄØ?",
-	"ºÎÈËÎÒ£ºÕâÑù²»ĞĞ£¬µÚÈı³¡Ò»¶¨Òª±È£¬¸÷Î»ĞÖµÜ£¬°Ñ¾ÆÌ§ÉÏÀ´!",
-	"Íæ¼Ò: ÄÃ¾Æ×öÊ²Ã´?",
-	"ºÎÈËÎÒ£º ÄãÃÇÁ½¸öË­ÄÜ¹»°ÑÎÒºÈ×í¾ÍËãÓ®",
-	"Íæ¼Ò£º Ò²ºÃ£¡ÆäËûµÄÎÒ¿ÉÒÔ²»Õù£¬µ«ÊÇºÈ¾ÆÎÒ¾Í²»Ç«ÈÃÁË£¡¹ş¹ş.",
-	"ºÎÈËÎÒ£ºÂúÉÏÂúÉÏ£¡±ÈÎäÆÆÕóÒ²²»ÈçºÈ¾ÆÀ´µÃ³©¿ì£¡Ò²²»ÖªÄÇ¸öĞ¡áÌ×Ó¸øÎÒÁËÒ»¿éÁîÅÆ£¬ÀÏ×ÓÎÒÕâ²ÅÕâÃ´ÎŞÁÄ.",
-        "Íæ¼Ò: ÁîÅÆ?",
-	"ºÎÈËÎÒ£º¹ş¹ş£¡ÔõÃ´ÁË£¿ÄãĞèÒªÂğ£¿°ÑÎÒºÈ×íÁË£¬ÁîÅÆÎÒ¾Í¸øÄã¡£",
-	"Íæ¼Ò: °ïÖ÷´ó¸ÅºÈ×íÁË£¬ÎÒÈ¥¿´¿´.",
+	"Hµ Nh©n Ng·: qu¶ nhiªn ta kh«ng nh×n nhÇm ng­êi, vâ c«ng cña ng­¬i kh«ng nh÷ng cao c­êng, mµ cèt ®¹o còng rÊt tèt, cã vµi phÇn lµ phong c¸ch cña ta!",
+	"Hµ Nh©n Ng·: Ng­¬i nªn biÕt, nÕu nh­ ë trong trËn ng­¬i kh«ng gióp ®ì ®ång m«n, thËm chİ v× tranh giµnh th¾ng lîi mµ tµn s¸t lÉn nhau, nh­ vËy th× ®©u cßn lµ ®Ö tö cña ta n÷a! Tèt, rÊt tèt!",
+	"Ng­êi ch¬i: ……nh­ vËy th× kÕt qu¶ nªn ph¸n quyÕt nh­ thÕ nµo ®©y? chi b»ng ph¸n hßa ®i, C¸i bang cña chóng ta vèn dÜ lÊy nghÜa khİ lµm träng, hµ tÊt ph¶i cã sù tranh giµnh gi÷a TÜnh Y vµ ¤ Y c¬ chø?",
+	"Hµ Nh©n Ng·: nh­ vËy th× kh«ng ®­îc, trËn thø 3 nµy nhÊt ®Şnh ph¶i tû thİ, c¸c huynh ®Ö, lÊy r­îu cho ta nhanh lªn!",
+	"Ng­êi ch¬i: lÊy r­îu lµm g× nhØ?",
+	"Hµ Nh©n Ng·: hai ng­êi c¸c ng­¬i, ai cã thÓ uèng mµ lµm cho ta say th× ng­êi ®ã sÏ th¾ng.",
+	"Ng­êi ch¬i: ……còng ®­îc! C¸c chuyÖn kh¸c ta kh«ng cÇn tranh chÊp, nh­ng uèng r­îu th× ta kh«ng cã chŞu nh­êng ®©u! ha ha",
+	"Hµ Nh©n Ng·: rãt tiÕp…rãt tiÕp ®i! khµ khµ! Tû vâ ph¸ trËn ®Òu s¶ng kho¸i kh«ng b»ng uèng r­îu! Kh«ng biÕt tªn ranh nµo ®­a cho ta mét c¸i lÖnh bµi, l·o tö ta ®©y míi ch¸n nh­ thÕ nµy.",
+        "Ng­êi ch¬i: LÖnh bµi?",
+	"Hµ Nh©n Ng·: ha ha, sao hö, ng­¬i cÇn nã kh«ng, uèng cho ta say ®i , ùc…ù, lªnh bµi  ta sÏ ®­a cho ng­¬i…ùc ùc ù äe",
+	"Ng­êi ch¬i: bang chñ ngµi ®· say råi ®ã, ta ®i xem cã chuyÖn g× ®©y.",
 }
 
 tbConfig.tbNpcPos = {
-	{nNpcId = 1863, nMapId = 115, nPosX = 195*8*32, nPosY = 207*16*32, nLevel = 95, szName = "ÃÏ¾§:",
+	{nNpcId = 1863, nMapId = 115, nPosX = 195*8*32, nPosY = 207*16*32, nLevel = 95, szName = "M¹nh tinh:",
 		szScriptPath = "\\script\\task\\150skilltask\\gaibang\\mengxing.lua",},
-	{nNpcId = 1834, nMapId = 115, nPosX = 179*8*32, nPosY = 204*16*32, nLevel = 95, szName = "ÃÏ¾§:", bNoRevive = 0, nIsboss = 1,},
-	{nNpcId = 1835, nMapId = 115, nPosX = 195*8*32, nPosY = 212*16*32, nLevel = 95, szName = "ÃÏ²ÔÀË", bNoRevive = 0, nIsboss = 1,},
-	{nNpcId = 1804, nMapId = 115, nPosX = 195*8*32, nPosY = 208*16*32, nLevel = 95, szName = "»¤ÕóµÜ×Ó", bNoRevive = 0,},
-	{nNpcId = 1805, nMapId = 115, nPosX = 195*8*32, nPosY = 206*16*32, nLevel = 95, szName = "»¤ÕóµÜ×Ó", bNoRevive = 0,},
-	{nNpcId = 1806, nMapId = 115, nPosX = 194*8*32, nPosY = 207*16*32, nLevel = 95, szName = "»¤ÕóµÜ×Ó", bNoRevive = 0,},
-	{nNpcId = 1804, nMapId = 115, nPosX = 196*8*32, nPosY = 207*16*32, nLevel = 95, szName = "»¤ÕóµÜ×Ó", bNoRevive = 0,},
-	{nNpcId = 1805, nMapId = 115, nPosX = 195*8*32, nPosY = 207*16*32, nLevel = 95, szName = "»¤ÕóµÜ×Ó", bNoRevive = 0,},
+	{nNpcId = 1834, nMapId = 115, nPosX = 179*8*32, nPosY = 204*16*32, nLevel = 95, szName = "M¹nh tinh:", bNoRevive = 0, nIsboss = 1,},
+	{nNpcId = 1835, nMapId = 115, nPosX = 195*8*32, nPosY = 212*16*32, nLevel = 95, szName = "M¹nh Th­¬ng L­¬ng", bNoRevive = 0, nIsboss = 1,},
+	{nNpcId = 1804, nMapId = 115, nPosX = 195*8*32, nPosY = 208*16*32, nLevel = 95, szName = "Hé TrËn §Ö Tö", bNoRevive = 0,},
+	{nNpcId = 1805, nMapId = 115, nPosX = 195*8*32, nPosY = 206*16*32, nLevel = 95, szName = "Hé TrËn §Ö Tö", bNoRevive = 0,},
+	{nNpcId = 1806, nMapId = 115, nPosX = 194*8*32, nPosY = 207*16*32, nLevel = 95, szName = "Hé TrËn §Ö Tö", bNoRevive = 0,},
+	{nNpcId = 1804, nMapId = 115, nPosX = 196*8*32, nPosY = 207*16*32, nLevel = 95, szName = "Hé TrËn §Ö Tö", bNoRevive = 0,},
+	{nNpcId = 1805, nMapId = 115, nPosX = 195*8*32, nPosY = 207*16*32, nLevel = 95, szName = "Hé TrËn §Ö Tö", bNoRevive = 0,},
 }
 
 tbConfig[0] = {
 	m_nCurStepId = 0,
 	tbMessage = {
-		{"DialogWithNpc", {"ºÎÈËÎÒ£º"}},
+		{"DialogWithNpc", {"Hµ Nh©n Ng· "}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {1, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {1, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -85,7 +85,7 @@ tbConfig[1] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 0, "Ø¤°ï", -1}},
+		{"PlotDialogue", {1, 2885, 0, "C¸i Bang", -1}},
 	},
 }
 
@@ -93,13 +93,13 @@ tbConfig[1] = {
 tbConfig[2] = {
 	m_nCurStepId = 1,
 	tbMessage = {
-		{"DialogWithNpc", {"ÎºÁËÎÌ"}},
+		{"DialogWithNpc", {"Ngôy LiÔu ¤ng"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {3, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {3, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
  }
  
@@ -110,20 +110,20 @@ tbConfig[3] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 1, "Ø¤°ï", -1}},
+		{"PlotDialogue", {1, 2885, 1, "C¸i Bang", -1}},
 	},
  }
 
 tbConfig[4] = {
 	m_nCurStepId = 2, 
 	tbMessage = {
-		{"KillNpc", {"ÃÏ¾§:"}},
+		{"KillNpc", {"M¹nh tinh:"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"ThisTask:Talk", {"´ò°ÜÁËÃÏ¾§"}},
+		{"ThisTask:Talk", {"§· b¹i M¹nh Tinh"}},
 		{"GotoNextMessageStep", {1, 2885}},
 	},
 }
@@ -131,13 +131,13 @@ tbConfig[4] = {
 tbConfig[5] = {
 	m_nCurStepId = 3,
 	tbMessage = {
-		{"DialogWithNpc", {"ÎºÁËÎÌ"}},
+		{"DialogWithNpc", {"Ngôy LiÔu ¤ng"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {6, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {6, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -149,20 +149,20 @@ tbConfig[6] = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 2, "Ø¤°ï", -1}},
+		{"PlotDialogue", {1, 2885, 2, "C¸i Bang", -1}},
 	},
 }
 
 tbConfig[7] = {
 	m_nCurStepId = 4,
 	tbMessage = {
-		{"KillNpc", {"ÃÏ²ÔÀË"}},
+		{"KillNpc", {"M¹nh Th­¬ng L­¬ng"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"ThisTask:Talk", {"´ò°ÜÁËÃÏ²ÔÀË"}},
+		{"ThisTask:Talk", {"§· b¹i M¹nh Th­¬ng L­¬ng"}},
 		{"GotoNextMessageStep", {1, 2885}},
 	},
 }
@@ -170,13 +170,13 @@ tbConfig[7] = {
 tbConfig[8] = {
 	m_nCurStepId = 5,
 	tbMessage = {
-		{"DialogWithNpc", {"ÎºÁËÎÌ"}},
+		{"DialogWithNpc", {"Ngôy LiÔu ¤ng"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {9, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {9, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -187,20 +187,20 @@ tbConfig[9] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 3, "Ø¤°ï", -1}},
+		{"PlotDialogue", {1, 2885, 3, "C¸i Bang", -1}},
 	},
 }
 
 tbConfig[10] = {
 	m_nCurStepId = 6,
 	tbMessage = {
-		{"DialogWithNpc", {"ÃÏ¾§:"}},
+		{"DialogWithNpc", {"M¹nh tinh:"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {11, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {11, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -211,7 +211,7 @@ tbConfig[11] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"PlotDialogue", {-1, -1, 4, "Ø¤°ï", 12}},
+		{"PlotDialogue", {-1, -1, 4, "C¸i Bang", 12}},
 	},
 }
 
@@ -222,20 +222,20 @@ tbConfig[12] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"ThisTask:Treat", {1, 2885, "Ø¤°ï", -1}},
+		{"ThisTask:Treat", {1, 2885, "C¸i Bang", -1}},
 	},
 }
 
 tbConfig[13] = {
 	m_nCurStepId = 7,
 	tbMessage = {
-		{"DialogWithNpc", {"ÎºÁËÎÌ"}},
+		{"DialogWithNpc", {"Ngôy LiÔu ¤ng"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {14, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {14, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -247,19 +247,19 @@ tbConfig[14] = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"PlotDialogue", {1, 2885, 5, "Ø¤°ï", -1}},
+		{"PlotDialogue", {1, 2885, 5, "C¸i Bang", -1}},
 	},
 }
 tbConfig[15] = {
 	m_nCurStepId = 8,
 	tbMessage = {
-		{"DialogWithNpc", {"ºÎÈËÎÒ£º"}},
+		{"DialogWithNpc", {"Hµ Nh©n Ng· "}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"AddDialog", {16, "150¼¶¼¼ÄÜÈÎÎñ"}},
+		{"AddDialog", {16, "NhiÖm vô kü n¨ng cÊp 150"}},
 	},
 }
 
@@ -269,10 +269,10 @@ tbConfig[16] = {
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
-		{"CheckBagFreeCell", {1, "ÄãµÄ±³°üÖÁÉÙÒªÓĞ1¸ñ¿Õ¼ä"}},
+		{"CheckBagFreeCell", {1, "CÇn cã İt nhÊt mét « trèng trong hµnh trang"}},
 	},
 	tbAction = {
-		{"PlotDialogue", {-1, -1, 6, "Ø¤°ï", 17}},
+		{"PlotDialogue", {-1, -1, 6, "C¸i Bang", 17}},
 	},
 }
 
@@ -281,7 +281,7 @@ tbConfig[17] = {
 	tbMessage = {
 	},
 	tbCondition = {
-		{"CheckBagFreeCell", {1, "ÄãµÄ±³°üÖÁÉÙÒªÓĞ1¸ñ¿Õ¼ä"}}
+		{"CheckBagFreeCell", {1, "CÇn cã İt nhÊt mét « trèng trong hµnh trang"}}
 	},
 	tbAction = {
 		{"GetMissionItem", {{{tbProp = {6,1,2908,1,0,0,}, nBindState = -2,},}}},

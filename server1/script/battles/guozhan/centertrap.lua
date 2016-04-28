@@ -7,11 +7,11 @@ function main()
 		if(GetCurCamp() == 1) then
 			SetPos(GetMissionV(MS_HOMEIN_X1), GetMissionV(MS_HOMEIN_Y1))
 			SetFightState(0)
-			Say("现在还未开战, 不得离开大营! ", 0)
+			Say("Hi謓 v蒼 ch璦 khai chi課, kh玭g 頲 ph衟 r阨 Чi Doanh! ", 0)
 		elseif (GetCurCamp() == 2) then
 			SetPos(GetMissionV(MS_HOMEIN_X2), GetMissionV(MS_HOMEIN_Y2))
 			SetFightState(0)
-			Say("现在还未开战, 不得离开大营! ", 0)
+			Say("Hi謓 v蒼 ch璦 khai chi課, kh玭g 頲 ph衟 r阨 Чi Doanh! ", 0)
 		end;
 	else
 		SetFightState(1)

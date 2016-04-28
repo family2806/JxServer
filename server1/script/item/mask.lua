@@ -24,7 +24,7 @@ function CanEquip(nParticular)
 	if (nParticular == 446 or nParticular == 450 or nParticular == 454 or nParticular == 455) then
 		
 		if (IsCharged() ~= 1 or GetLevel() < 50) then
-			Say("Ö»ÓÐ50¼¶ÒÔÉÏ³äÖµµÄÍæ¼Ò²ÅÄÜÊ¹ÓÃ.", 0)
+			Say("ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông.", 0)
 			return 0;
 		end		
 --		local ndate = tonumber(GetLocalDate("%m%d"));
@@ -52,7 +52,7 @@ function CanEquip(nParticular)
 	if (nParticular == 447) then
 		
 		if (IsCharged() ~= 1) then
-			Say("Ö»ÓÐ50¼¶ÒÔÉÏ³äÖµµÄÍæ¼Ò²ÅÄÜÊ¹ÓÃ.", 0)
+			Say("ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ sö dông.", 0)
 			return 0;
 		end
 		

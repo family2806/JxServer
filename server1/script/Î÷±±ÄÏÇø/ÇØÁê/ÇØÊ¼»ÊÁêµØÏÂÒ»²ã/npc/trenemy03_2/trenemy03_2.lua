@@ -7,7 +7,7 @@ function OnDeath()
 	UTask_tr = GetTask(4)
 	if (UTask_tr == 30*256+20) and (HaveItem(60) == 0) then
 		AddEventItem(60)
-		Msg2Player("得到蓝水晶. ")
-		AddNote("秦陵地下, 打败宝玉小偷, 得到鸽血红宝石. ")
+		Msg2Player("Л頲 Lam Th駓 Tinh. ")
+		AddNote("T筰 T莕 L╪g a, nh b筰 t猲 tr閙 B秓 Ng鋍, 頲 B秓 Th筩h C竝 Huy誸 H錸g. ")
 	end
 end;	

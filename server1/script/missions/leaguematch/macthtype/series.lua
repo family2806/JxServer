@@ -1,5 +1,5 @@
 Include("\\script\\missions\\leaguematch\\tb_head.lua")
---==============Í¬ÏµË«ÈËÈüÏà¹ØÊı¾İ===============
+--============== cïng hÖ hai ng­êi cuéc so tµi Ïà¹ØÊı¾İ===============
 
 -- LLG_ALLINONE_TODO_20070802
 
@@ -7,70 +7,70 @@ if (not tmp_process_data) then
 	return
 end
 
---È«²¿Í¬ÏµË«ÈËÈüÏà¹ØÊı¾İ
+--È«²¿ cïng hÖ hai ng­êi cuéc so tµi Ïà¹ØÊı¾İ
 local nTmpLadderBase	= 10238
 WLLS_DATA = {
 	
-	name = "Í¬ÏµË«ÈËÈü",
+	name = " cïng hÖ hai ng­êi cuéc so tµi ",
 	
 	--µØÍ¼ĞÅÏ¢
 	match_type = {
 		{
-			name = "½ğÏµ",
+			name = " kim hÖ ",
 			level = 1,
 			ladder = nTmpLadderBase,
 			map = {{396, 560, 397, ""}},
 		},
 		{
-			name = "Ä¾Ïµ",
+			name = " méc hÖ ",
 			level = 1,
 			ladder = nTmpLadderBase + 1,
 			map = {{398, 561, 399, ""}},
 		},
 		{
-			name = "Ë®Ïµ",
+			name = " thñy hÖ ",
 			level = 1,
 			ladder = nTmpLadderBase + 2,
 			map = {{400, 562, 401, ""}},
 		},
 		{
-			name = "»ğÏµ",
+			name = " háa hÖ ",
 			level = 1,
 			ladder = nTmpLadderBase + 3,
 			map = {{402, 563, 403, ""}},
 		},
 		{
-			name = "ÍÁÏµ",
+			name = " thæ hÖ ",
 			level = 1,
 			ladder = nTmpLadderBase + 4,
 			map = {{404, 564, 405, ""}},
 		},
 		{
-			name = "½ğÏµ",
+			name = " kim hÖ ",
 			level = 2,
 			ladder = nTmpLadderBase + 5,
 			map = {{540, 570, 541, ""}},
 		},
 		{
-			name = "Ä¾Ïµ",
+			name = " méc hÖ ",
 			level = 2,
 			ladder = nTmpLadderBase + 6,
 			map = {{542, 571, 543, ""}},
 		},
 		{
-			name = "Ë®Ïµ",
+			name = " thñy hÖ ",
 			level = 2,
 			ladder = nTmpLadderBase + 7,
 			map = {{544, 572, 545, ""}},
 		},
 		{
-			name = "»ğÏµ",
+			name = " háa hÖ ",
 			level = 2,
 			ladder = nTmpLadderBase + 8,
 			map = {{546, 573, 547, ""}},
 		},
 		{
-			name = "ÍÁÏµ",
+			name = " thæ hÖ ",
 			level = 2,
 			ladder = nTmpLadderBase + 9,
 			map = {{548, 574, 549, ""}},
@@ -106,11 +106,11 @@ WLLS_DATA = {
 	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		"±¾´Î±ÈÈüÎªÍ¬ÏµË«ÈËÈü",
-		"±¾´Î±ÈÈüÎªÍ¬ÏµË«ÈËÈü",
+		" lÇn nµy tranh tµi v× cïng hÖ hai ng­êi cuéc so tµi ",
+		" lÇn nµy tranh tµi v× cïng hÖ hai ng­êi cuéc so tµi ",
 	},
 	
-	addmem_ex	= ", ĞèÒªÊÇÍæ¼Ò<color=red>Í¬Ïµ<color> Ò»Æğ",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
+	addmem_ex	= ", cÇn lµ nhµ ch¬i <color=red> cïng hÖ <color> cïng nhau ",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
 
 	--====Functions====
 	--·µ»Øµ±Ç°½ÇÉ«¿ÉÒÔ²Î¼ÓµÄ±ÈÈüÀàĞÍ£¬nilÎª²»ÄÜ²ÎÈü
@@ -132,9 +132,9 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter>  ´Ë´Î"..str_des.." Îª<color=red>Í¬ÏµË«ÈËÈü<color>. Äã¿ÉÒÔÑ¡Ôñ½¨Á¢×é¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó£¬È»ºó£¬¶Ó³¤È¥Óë "..str_des.."¹ÙÔ±¶Ô»°£¬Ñ¡Ôñ±ÈÈü¶Ó"..str_des.."Ã¿¸öÕ½¶Ó³ÉÔ±Îª <color=red>2 ÈË<color> ĞèÒªÊÇÍ¬Ïµ",
-				"ÎÒÏë½¨Á¢"..str_des.."×é¶Ó/wlls_want2create",
-				"ÎÒÖ»¿´¿´/OnCancel")
+			wlls_descript("<enter> lÇn nµy "..str_des.." v× <color=red> cïng hÖ hai ng­êi cuéc so tµi <color>. ng­¬i cã thÓ lùa chän thµnh lËp häp thµnh ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c , sau ®ã , ®éi tr­ëng ®i cïng "..str_des.." quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi "..str_des.." mçi chiÕn ®éi thµnh viªn v× <color=red>2 ng­êi <color> cÇn lµ cïng hÖ ",
+				" ta muèn thµnh lËp "..str_des.." häp thµnh ®éi /wlls_want2create",
+				" ta chØ nh×n mét chót /OnCancel")
 			return
 		end
 	
@@ -142,31 +142,31 @@ WLLS_DATA = {
 		local n_mytype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		local n_level, n_group = wlls_getcityinfo()
 		local n_next = GetGlbValue(GLB_WLLS_NEXT)
-		local str = "<enter>Ä¿Ç°ÄãµÄÕ½¶ÓÎª<color=yellow>"..str_lgname.."<color><enter>"
-		.. "Õ½¶Ó¶Ó³¤:"..join(wlls_get_mems(n_lid), "Õ½¶Ó³ÉÔ±:") .. "<enter>"
+		local str = "<enter> tr­íc m¾t ng­¬i chiÕn ®éi v× <color=yellow>"..str_lgname.."<color><enter>"
+		.. " chiÕn ®éi ®éi tr­ëng :"..join(wlls_get_mems(n_lid), "ChiÕn ®éi thµnh viªn :") .. "<enter>"
 		if (n_mytype ~= n_next) then
-			str = str .. "<enter>   <color=yellow>×¢Òâ£ºÏÂÆÚ±ÈÈüÏŞÖÆÎª<color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, Èç¹ûÏëÏÂÆÚ±ÈÈü£¬Çë½¨Á¢ĞÂµÄÕ½¶Ó.<color><enter>"
+			str = str .. "<enter> <color=yellow> chó ı  h¹ kú tranh tµi h¹n chÕ v× <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, nÕu nh­ muèn h¹ kú tranh tµi , xin/mêi thµnh lËp míi chiÕn ®éi .<color><enter>"
 		end
 		local tb_option = {}
 		if (n_job == 1 and n_mytype == n_next) then
-			str = str.."<enter>Äã¿ÉÒÔÑ¡Ôñ<color=red>¼ÓÈëÆäËü¶ÓÎé<color>»òÕß<color=red>Àë¿ª±ÈÈü<color>.<enter><enter>"..
-			"³ÉÁ¢Õ½¶Ó²½Öè: ÔÚ<color=red>ĞİÏ¢Ê±¼äºÍ±ÈÈüÊ±¼ä<color>, ¶¼¿ÉÒÔÓëÆäËûÍæ¼Ò×é¶Ó, <color=red>ÒìĞÔ<color>, Ñ¡ÔñÍ¬Ò»ÈÃÍ¬¶Ó¼ÓÈë±¾¶Ó. <enter>"..
-			"Àë¿ª±ÈÈü: ÔÚ<color=red>ĞİÏ¢Ê±¼ä<color>,Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬ÔÚ±ÈÈüÊ±¼äÈç¹ûÄãµÄ²»ÊÇ¶Ó<color=red> Î´¼ÓÈëÉÏÆÚ±ÈÈü<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬Èç¹ûÒÑ²Î¼Ó¾Í²»ÄÜÀë¿ª¡£¶Ó³¤×Ê¸ñ½«±»×ª½»¸øÆäËû¶ÓÔ± <color=yellow>Èç¹ûÃ»ÓĞ³ÉÔ±£¬Õ½¶Ó½«±»½âÉ¢<color>."
-			tb_option[getn(tb_option)+1] = "ÈÃÎÒµÄ¶ÓÓÑ¼ÓÈë±ÈÈü¶ÓÎé/wlls_want2addmember"
+			str = str.."<enter> ng­¬i cã thÓ lùa chän <color=red> gia nhËp kú tha ®éi ngò <color> hoÆc lµ <color=red> rêi ®i tranh tµi <color>.<enter><enter>"..
+			" thµnh lËp chiÕn ®éi b­íc : ë <color=red> thêi gian nghØ ng¬i cïng tranh tµi thêi gian <color>, còng cã thÓ thay v× h¾n nhµ ch¬i häp thµnh ®éi , <color=red> kh¸c ph¸i <color>, lùa chän cïng ®Ó cho cïng ®éi gia nhËp vèn ®éi . <enter>"..
+			" rêi ®i tranh tµi : ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , ë tranh tµi thêi gian nÕu nh­ ng­¬i kh«ng ph¶i lµ ®éi <color=red> kh«ng gia nhËp th­îng kú tranh tµi <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , nÕu nh­ ®· tham gia th× kh«ng thÓ rêi ®i . ®éi tr­ëng t­ c¸ch ®em bŞ chuyÓn giao cho nh÷ng ®éi viªn kh¸c <color=yellow> nÕu nh­ kh«ng cã thµnh viªn , chiÕn ®éi ®em bŞ gi¶i t¸n <color>."
+			tb_option[getn(tb_option)+1] = "Thªm thµnh viªn vµo ®éi/wlls_want2addmember"
 		else
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡ÔñÀë¿ª¶Ó.<enter><enter>"..
-			"Àë¶Ó£ºÔÚ <color=red>ĞİÏ¢Ê±¼ä<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬ÔÚ±ÈÈüÊ±¼äÈç¹û×Ô¼ºµÄ±ÈÈü¶Ó<color=red>Î´¼ÓÈëÉÏ´Î±ÈÈü<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬Èç¹û¼ÓÈë±ÈÈü¾Í²»ÄÜÀë¿ª."
+			str = str.."<enter> ng­¬i cã thÓ lùa chän rêi ®i ®éi .<enter><enter>"..
+			" c¸ch ®éi  ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , ë tranh tµi thêi gian nÕu nh­ m×nh ®İch tranh tµi ®éi <color=red> kh«ng gia nhËp lÇn tr­íc tranh tµi <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , nÕu nh­ gia nhËp tranh tµi th× kh«ng thÓ rêi ®i ."
 		end
-		tb_option[getn(tb_option)+1] = "Àë¶Ó/wlls_want2leaveleague"
-		tb_option[getn(tb_option)+1] = "¿´¶ÓÎéÕ½¼¨/wlls_query_mylg"
-		tb_option[getn(tb_option)+1] = "ÎÒÖ»ÊÇÂ·¹ı/OnCancel"
+		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
+		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "Ta chØ ®i ngang qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
 	
 	--¼ì²éµ±Ç°½ÇÉ«ÊÇ·ñ¿ÉÒÔ¼ÓÈëÖ¸¶¨µÄÕ½¶Ó
 	check_addmem = function(nCapIdx, nLGID, nMType)
 		if (nMType ~= wlls_player_type()) then
-		 	return wlls_npcname().."¶Ô²»Æğ£¬¶ÓÄÚ³ÉÔ±:"..GetName().."<color=red>µÈ¼¶<color> »òÕß <color=red>ÎåĞĞ<color>Á½¶Ó²»ºÏÀí£¬²»ÄÜ³ÉÁ¢Õ½¶Ó!"
+		 	return wlls_npcname().." thËt xin lçi , ®éi bªn trong thµnh viªn :"..GetName().."<color=red> cÊp bËc <color> hoÆc lµ <color=red> ngò hµnh <color> hai ®éi kh«ng hîp lı , kh«ng thÓ thµnh lËp chiÕn ®éi !"
 		end
 	end,
 }	--WLLS_DATA

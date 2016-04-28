@@ -8,12 +8,12 @@ if allbrother_0801_CheckIsDialog(186) == 1 then
 i = random(0,1)
 
 if (i == 0) then
-Talk(2, "", "ËÎ¾ÙÈË£ºÄãÏşµÃ²»£¿ÕâÍû½­Â¥ÊÇÎªÁË¼ÍÄîÒ»´ú²ÅÅ®Ñ¦ÌÎ¶ø½¨µÄ£¬Ïà´«Ñ¦ÌÎÔøÔÚ´Ë¼³È¡¾®Ë®£¬ÊÖÖÆÊ«Ç©£¬ÁôÏÂÁËĞí¶àÓÄÔ¹¶¯ÈËµÄÊ«¾ä¡£", "Ñ¦ÌÎÒ»Éú°®Öñ£¬ÈËÃÇ±ãÔÚËÄÖÜ±éÖ²¼ÑÖñ£¬·ïÎ²É­É­£¬ÁúÒ÷Ï¸Ï¸£¬ËÄ¼¾²Ô´ä£¬ÇéÈ¤ÎŞÇî£¬áäáàÆä¼ä£¬Ê¹ÈËË×Äî¶ÙÏû¡£")
+Talk(2, "", "Ng­¬i kh«ng biÕt h¶? §©y chİnh lµ Väng Giang lÇu ®Ó kû niÖm mét ®êi tµi n÷ HuyÕt §µo mµ x©y nªn, truyÒn thuyÕt kÓ r»ng ®· c« tõng lÊy n­íc giÕng ë ®©y, tù tay ®Ò th¬, ®· l­u l¹i nh÷ng c©u th¬ buån lµm ®éng lßng ng­êi.", "HuyÕt §µo lóc sèng rÊt yªu thİch tróc, nªn quanh ®©y mäi ng­êi tr«ng rÊt nhiÒu tróc, ph­îng vÜ th©m th©m, long ng©m tÕ tÕ, tø quı th­¬ng thóy,t ×nh høng v« cïng, th­êng d­¬ng kú gi¸n, khiÕn nhiÒu ng­êi truyÒn tông.")
 return
 end;
 
 if (i == 1) then
-Say("ËÎ¾ÙÈË£ºµÇÍû½­Â¥¶øÔ¶Ì÷£¬ÈØ³ÇĞãÃ²£¬½õ½­´ºÉ«£¬¾¡ÊÕÑÛµ×£¬ÈÃÈËĞÄĞØÎªÖ®Ò»³©¡£",0)
+Say("Lªn Väng Giang LÇu mµ nh×n ra xa, dung thµnh tó m¹o, cÈm giang xu©n s¾c, thu vµo tÇm m¾t, khiÕn cho lßng ng­êi tho¶ thİch.",0)
 end;
 
 end;

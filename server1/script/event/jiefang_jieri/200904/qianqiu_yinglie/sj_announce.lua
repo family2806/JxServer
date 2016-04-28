@@ -29,11 +29,11 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 --				end
 --			end
 			
-			-- 连斩排名
+			-- Top li猲 tr秏
 			tbPlayer = {};
 			battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_SER);
-			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("连斩排名", 30));
-			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("连斩", 6));
+			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("Top li猲 tr秏", 30));
+			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("Li猲 tr秏", 6));
 			for i = 1, 5 do
 				if tbPlayer[i] and tbPlayer[i] > 0 then
 					PlayerIndex = tbPlayer[i];
@@ -47,7 +47,7 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 			-- PK玩家排名
 			tbPlayer = {};
 			battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_PK);
-			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("PK排名", 30));
+			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("TOP PK", 30));
 			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("PK", 6));
 			for i = 1, 5 do 
 				if tbPlayer[i] and tbPlayer[i] > 0 then
@@ -59,11 +59,11 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 				end
 			end
 			
-			-- 屠杀NPC排名 仅元帅保卫模式
+			-- 屠TOP NPC 仅元帅保卫模式
 			if (MISSIONID == 16) then
 				tbPlayer = {};
 				battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_NPC);
-				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("杀NPC排名", 30));
+				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("TOP NPC", 30));
 				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("NPC", 6));
 				for i = 1, 5 do 
 					if tbPlayer[i] and tbPlayer[i] > 0 then

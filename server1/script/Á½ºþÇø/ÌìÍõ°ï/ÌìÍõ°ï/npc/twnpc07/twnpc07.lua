@@ -8,32 +8,32 @@ function main()
 	if (UTask_tw == 40*256+50) then
 		UTask_tw40sub = GetTask(14)
 		if (UTask_tw40sub == 1) then
-			Talk(3, "", "ÎÒ×î°®³ÔÂ±¼¦µ°ÁË£¬¿ÉÊÇÎÒ¼ÒÌ«Çî£¬Âò²»Æğ¼¦µ°", "Ğ¡ÅóÓÑ£¬ÎÒÕâÀïÓĞÈı¸ö¼¦µ°£¬ËÍ¸øÄã°É", "ºÃ£¡¼ÇµÃÒªÊØÅµÑÔ°¡¡£")
-			AddNote("Í¬Òâ°Ñ¼¦µ°¸øË®Éú£¬Ë®Éú°ïÃ¦×¥³æ")
-			Msg2Player("Í¬Òâ°Ñ¼¦µ°¸øË®Éú£¬Ë®Éú°ïÃ¦×¥³æ")
+			Talk(3, "", "Ta thİch nhÊt lµ ¨n trøng luéc, nh­ng v× nhµ nghÌo, kh«ng thÓ mua trøng ®­îc", "TiÓu b»ng h÷u! Ng­¬i gióp ta ®µo giun ta sÏ cho ng­¬i trøng luéc, ®­îc kh«ng?", "§­îc! Nhí ph¶i gi÷ lêi høa nhĞ!")
+			AddNote("§ång ı cho Thuû Sinh mÊy qu¶ trøng, ®æi l¹i Thuû Sinh gióp ®µo trïng ")
+			Msg2Player("§ång ı cho Thuû Sinh mÊy qu¶ trøng, ®æi l¹i Thuû Sinh gióp ®µo trïng ")
 			SetTask(14, 3)
 		elseif (UTask_tw40sub == 7) and (HaveItem(149) == 1) then	-- ×ÓÈÎÎñÍê³É
-			Talk(3, "", "ÎÒÒÑ¾­×¥µ½òÇò¾ÁË£¬¿ÉÒÔ¸øÎÒ¼¦µ°ÁËÂğ", "Ğ¡ÅóÓÑ£¡Õâ3¸ö¼¦µ°¸øÄã!", "¶àĞ»´ó¸ç!ÕâÀïÓĞ5ÌõòÇò¾!")
+			Talk(3, "", "Ta ®· ®µo ®­îc giun råi, cã thÓ cho ta trøng ®­îc ch­a?", "TiÓu b»ng h÷u! 3 qu¶ trøng cho ng­¬i nµy!", "C¶m ¬n ®¹i ca! Trong ®©y cã n¨m con giun ®Ö ®µo ®­îc!")
 			DelItem(149)
 			AddEventItem(150)
-			Msg2Player("µÃµ½5ÌõòÇò¾ ")
+			Msg2Player("NhËn ®­îc n¨m con giun ®Êt ")
 			SetTask(14, 9)
-			AddNote("¸øË®Éú¼¦µ°µÃµ½5ÌõòÇò¾")
+			AddNote("Cho Thuû Sinh trøng, lÊy ®­îc 5 con trïng ")
 		elseif (UTask_tw40sub == 0) then
-			Talk(1, "", "ÎÒ×î°®³ÔÂ±¼¦µ°ÁË£¬¿ÉÊÇÎÒ¼ÒÌ«Çî£¬Âò²»Æğ¼¦µ°")
+			Talk(1, "", "Ta thİch nhÊt lµ ¨n trøng luéc, nh­ng v× nhµ nghÌo, kh«ng thÓ mua trøng ®­îc")
 		elseif (UTask_tw40sub == 9) and (HaveItem(150) == 0) then
 			AddEventItem(150)
-			Talk(2,"","Ğ¡ÅóÓÑ£¡ÎÒ²»Ğ¡ĞÄÅª¶ªÁËòÇò¾£¬ÄãÄÜ²»ÄÜ°ïÎÒÔÙ×¥¼¸Ö»?","»¹ºÃ£¬ÎÒµÃ¿ÕÓÖ×¥ÁË5Ö»òÇò¾£¬ËÍ¸øÄã!")
+			Talk(2,"","TiÓu b»ng h÷u! Ta kh«ng cÈn thËn nªn ®· lµm mÊt nh÷ng con giun råi, ng­¬i cã thÓ gióp ta ®µo l¹i mÊy con ®­îc kh«ng?","Còng may, ®Ö r¶nh rçi nªn ®· ®µo thªm ®­îc 5 con, tÆng cho huynh!")
 		elseif (UTask_tw40sub >= 9) then
-			Talk(1, "", "Ğ»Ğ»´ó¸ç¸øÎÒ¼¦µ°")
+			Talk(1, "", "C¶m ¬n huynh ®· tÆng trøng")
 		else
-			Talk(1,"","ÕâÀïÓĞ¼¸ÌõòÇò¾Äã¾Í¸øÎÒ¼¸¸ö¼¦µ°ºÃÂğ?")
+			Talk(1,"","Trong nµy cã mÊy con giun ta võa ®µo ®­îc. Huynh cã thÓ tÆng ta mÊy qu¶ trøng ®ã kh«ng?")
 		end
 	else
 		if (random(0,1) == 0) then
-			Talk(1,"","ÎÒ³¤´óÁËÒÔºóÒ²ÒªÏñÑîÊåÊå¡¢Íõ²®²®ËûÃÇÄÇÑù×öÈËÈË¾´ÖØµÄ´óÓ¢ĞÛ")
+			Talk(1,"","Sau nµy ®Ö lín lªn còng muèn gièng D­¬ng thóc thóc, V­¬ng b¸ b¸. C¸c vŞ ®Òu lµ nh÷ng ®¹i anh hïng ®­îc mäi ng­êi kİnh träng")
 		else
-			Talk(1,"","×òÌìÎÒÇóÑîÊåÊå½ÌÎÒ¹¦·ò£¬¿ÉÊÇËûËµÎÒ»¹Ğ¡£¬ÎÒÊ²Ã´Ê±ºò²ÅÄÜ³¤´óÄØ?")
+			Talk(1,"","H«m qua ®Ö cã ®i cÇu xin D­¬ng thóc thóc d¹y vâ c«ng cho ®Ö, nh­ng thóc Êy kh«ng ®ång ı, nãi lµ ®Ö cßn qu¸ nhá, ®Ö kh«ng biÕt khi nµo ®Ö míi cã thÓ lín ®­îc chø ")
 		end
 	end
 end;

@@ -5,8 +5,8 @@ Include("\\script\\vng_event\\traogiai\\NPAH\\vng_ToolAward.lua")
 tbCurSeason = tbAwardClass:New()
 tbCurSeason.nStartDate = 201108250000
 tbCurSeason.nEndDate = 201109042400
-tbCurSeason.strName = "ÁìÈ¡¾ãÀÖ²¿Ö÷ÈÎ²¿½±Àø"
-tbCurSeason.strNPC = "Õ½ÐÄ×ðÕß"
+tbCurSeason.strName = "NhËn th­ëng Ban Chñ NhiÖm CLB"
+tbCurSeason.strNPC = "ChiÕn T©m T«n Gi¶"
 tbCurSeason.nID = 4
 tbCurSeason.tbAccList = {	
 	["batigolvnam010"]={[1]={{nAwardID=1,nCount=10},},},
@@ -43,7 +43,7 @@ tbCurSeason.tbAccList = {
 	["myanh1"]={[1]={{nAwardID=1,nCount=5},},},
 }
 tbCurSeason.tbPrizeList = {	
-	[1] = {szName="ºì°ü¾ãÀÖ²¿",tbProp={6,1,30032,1,0,0},nCount=1, nExpiredTime=10080},
+	[1] = {szName="Hång Bao C©u L¹c Bé",tbProp={6,1,30032,1,0,0},nCount=1, nExpiredTime=10080},
 }
 --tbCurSeason.tbFreeBagRequire = {
 --	[1] = 0,

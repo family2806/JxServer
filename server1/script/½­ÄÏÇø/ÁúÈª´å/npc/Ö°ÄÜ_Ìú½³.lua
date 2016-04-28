@@ -4,28 +4,28 @@
 Include("\\script\\global\\global_tiejiang.lua")
 Include("\\Script\\Global\\TimerHead.lua")
 
-TIEJIANG_DIALOG = "<dec><npc>ÏëÂòÊ²Ã´±øÆ÷? ÕâÀïµÄÎäÆ÷ºÜÓĞÃû£¬²»ĞÅµÄ»°Äã¿ÉÒÔÈ¥ÎÊÎÊÁúÈª»Ê¼ÒµÄÇåÃûÊÔÊÔ!"
+TIEJIANG_DIALOG = "<dec><npc>Muèn mua lo¹i binh khİ nµo? T¹i ®©y rÊt næi tiÕng vÒ vò khİ, kh«ng tin ng­¬i ®i hái thanh danh cña Long TuyÒn Hoµng Gia thö xem!"
 
 function main(sel)
 	UTask_world19 = GetTask(19)
 	if(UTask_world19 == 2) then
 		if (HaveItem(229) == 1) then
-			tiejiang_village("<dec><npc>Õâ°Ñµ¶Ëğ»ÙµÃºÜÑÏÖØ£¬Òª»¨²»ÉÙÇ®À´ĞŞÀíÄØ.Òª120Á½", "½»ĞŞµ¶Ç®/W19_repair")
+			tiejiang_village("<dec><npc>C©y ®ao nµy h­ háng nÆng nÒ, ph¶i bá kh«ng İt tiÒn ®Ó s öa nã. TiÒn tu söa 120 ng©n l­îng.", "§­a tiÒn söa ®ao/W19_repair")
 		else
-			Talk(2,"","ÒªĞŞµ¶Âğ? ´øÀ´¸øÎÒ¿´¿´°É","ËãÁË! ÎÒµÄµ¶ÍüÔÚÅí·Å´¦ÁË! ÎÒ»á»ØÀ´ÄÃµÄ")
+			Talk(2,"","Muèn söa c©y ®ao? Xin h·y ®­a cho ta xem thö ","Th«i råi! C©y ®ao cña ta ®· bá quªn ë chç Bµnh Phãng! Ta sÏ quay vÒ ®Ó lÊy nã ")
 		end
 	elseif (UTask_world19 == 4) then
-		tiejiang_village("<dec><npc>´óÏÀµÄµ¶ÕıÔÚĞŞ, ÇëµÈÏÂ"..GetRestSec(7).."<#>Ò»»áÔÙÀ´ÄÃ.")
+		tiejiang_village("<dec><npc>C©y ®ao cña ®¹i hiÖp ®ang söa, xin mêi ®îi mét l¸t n÷a"..GetRestSec(7).."<#> Gi©y råi l¹i lÊy.")
 	elseif (UTask_world19 == 6) then
-		Talk(2,"","ÄãµÄµ¶ÒÑ¾­ĞŞºÃÁË","ÕæºÃ! Ğ»Ğ»!")
+		Talk(2,"","§ao cña ng­êi ®· söa xong råi","Tèt l¾m! C¶m ¬n!")
 		SetTask(19,8)
 		AddEventItem(230)
-		AddNote("ÄÃ±¦µ¶»¹¸øÅí·Å.")
-		Msg2Player("ÄÃ±¦µ¶»¹¸øÅí·Å.")
+		AddNote("LÊy l¹i c©y b¶o ®ao tr¶ cho Bµnh Phãng.")
+		Msg2Player("LÊy l¹i c©y b¶o ®ao tr¶ cho Bµnh Phãng.")
 	elseif (UTask_world19 == 8) and (HaveItem(230) == 0) then
-		Talk(1,"","Äã°Ñµ¶ÍüÔÚÎÒÕâÀïÁË")
+		Talk(1,"","Ng­¬i ®· bá quªn c©y ®ao ë chç ta")
 		AddEventItem(230)
-		Msg2Player("ÎÒÀ´ÄÃÍüÔÚÌú½³´¦µÄµ½.")
+		Msg2Player("Ta lÊy l¹i c©y b¶o ®ao ®· ®Ó quªn ë chç thî rÌn.")
 	else
 		tiejiang_village();
 	end
@@ -33,18 +33,18 @@ end;
 
 function W19_repair()
 	if (GetTimerId() > 0) then		-- ÁíÓĞ¼ÆÊ±Æ÷ÔÚÔËĞĞÖĞ
-		Talk(1,"","ÄãÕıÔÚ½øĞĞÕâÑù½ô¼±µÄÈÎÎñ£¬»¹ÂÒÅÜ?")
+		Talk(1,"","Ng­¬i ®ang mang nhiÖm vô cÊp b¸ch nh­ thÕ, mµ cßn ch¹y lung tung µ?")
 	else
 		if (GetCash() < 120) then
-			Talk(1,"","ÄãÇ®Ã»´ø¹»")
+			Talk(1,"","Ng­¬i ®­a ch­a ®ñ tiÒn")
 		else
-			Talk(1,"","¿ÉÒÔ!ÎÒ2Ğ¡Ê±ºóÀ´ÄÃ")
+			Talk(1,"","§­îc! Hai giê sau ng­¬i ®Õn ®Ó lÊy ®ao")
 			Pay(120)
 			SetTask(19,4)
 			DelItem(229)
 			SetTimer(2 * CTime * FramePerSec, 7)
-			AddNote("°Ñ±¦µ¶½»¸øÌú½³ĞŞÀí, 2Ğ¡Ê±Ö®ºóÀ´ÄÃ.")
-			Msg2Player("°Ñ±¦µ¶½»¸øÌú½³ĞŞÀí, 2Ğ¡Ê±Ö®ºóÀ´ÄÃ.")
+			AddNote("Giao b¶o ®ao cho thî rÌn söa, hai giê sau l¹i lÊy.")
+			Msg2Player("Giao b¶o ®ao cho thî rÌn söa, hai giê sau l¹i lÊy.")
 		end
 	end
 end;

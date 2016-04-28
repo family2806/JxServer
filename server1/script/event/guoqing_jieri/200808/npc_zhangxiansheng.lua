@@ -18,7 +18,7 @@ function main()
 	
 	-- ²»ÔÚ»î¶¯ÆÚ¼äÄÚ
 	if (zxmp_200808_checkdate() ~= 1) then
-		CreateTaskSay({format("<dec><npc>Chµo %s!", GetName()), "¶Ô»°½áÊø/OnCancel"});
+		CreateTaskSay({format("<dec><npc>Chµo %s!", GetName()), "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 
 	end
 	
@@ -26,18 +26,18 @@ function main()
 	
 	for i = 1, getn(TB_ZHUIXUNMIPU_COMPLIST) do
 		if (TB_ZHUIXUNMIPU_COMPLIST[i].n_type == 1) then
-			sz_msg = sz_msg.."<enter>"..TB_ZHUIXUNMIPU_COMPLIST[i].sz_name.." "..TB_ZHUIXUNMIPU_COMPLIST[i].n_count.."¸ö";
+			sz_msg = sz_msg.."<enter>"..TB_ZHUIXUNMIPU_COMPLIST[i].sz_name.." "..TB_ZHUIXUNMIPU_COMPLIST[i].n_count.."c¸i";
 		elseif (TB_ZHUIXUNMIPU_COMPLIST[i].n_type == 4) then
-			sz_msg = sz_msg.."<enter>"..TB_ZHUIXUNMIPU_COMPLIST[i].sz_name.." "..TB_ZHUIXUNMIPU_COMPLIST[i].n_money.." Á½";
+			sz_msg = sz_msg.."<enter>"..TB_ZHUIXUNMIPU_COMPLIST[i].sz_name.." "..TB_ZHUIXUNMIPU_COMPLIST[i].n_money.." l­îng";
 		else
 			print("ZXMP TB_ZHUIXUNMIPU_COMPLIST Invalid");
 			return 0;
 		end
 	end
 	
-	CreateTaskSay({format("<dec><npc>ºÏ³ÉÑøÉúÃØÆ×Òª×¼±¸£º<enter>%s<enter>, Èç¹û²ÄÁÏ²»¹»ÎÒÎÞ·¨°ïÄã.", sz_msg), 
-					format("ºÏ³É %s/zxmp_compound", "ÑøÉúÃØÆ×"), 
-					"¶Ô»°½áÊø/OnCancel"});
+	CreateTaskSay({format("<dec><npc>Hîp thµnh D­ìng sinh bÝ phæ cÇn ph¶i chuÈn bÞ: <enter>%s<enter>, nÕu kh«ng ®ñ nguyªn liÖu th× ta kh«ng thÓ gióp ng­¬i.", sz_msg), 
+					format("Hîp thµnh %s/zxmp_compound", "D­ìng sinh bÝ phæ"), 
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 end
 
 function OnCancel()
@@ -57,7 +57,7 @@ function zxmp_compound()
 			local n_curcnt = CalcItemCount(3, ng, nd, np, nl);
 			
 			if (n_curcnt < n_count) then
-				CreateTaskSay({format("<dec><npc>%s ´øµÄ²»¹»®ñ %d, ÔÙ¼ì²éÒ»ÏÂ.", sz_name, n_count), "¶Ô»°½áÊø/OnCancel"});
+				CreateTaskSay({format("<dec><npc>%s mang trªn ng­êi kh«ng ®ñ %d, h·y kiÓm tra l¹i.", sz_name, n_count), "KÕt thóc ®èi tho¹i/OnCancel"});
 				return
 			end
 			
@@ -66,7 +66,7 @@ function zxmp_compound()
 			local n_curmon = GetCash();
 			
 			if (n_curmon < n_money) then
-				CreateTaskSay({format("<dec><npc>ÄãÉíÉÏ´øµÄÇ®²»¹»£¬ÔÙ¼ì²éÒ»ÏÂ.", n_money), "¶Ô»°½áÊø/OnCancel"});
+				CreateTaskSay({format("<dec><npc>TiÒn mang trªn ng­êi kh«ng ®ñ, h·y kiÓm tra l¹i.", n_money), "KÕt thóc ®èi tho¹i/OnCancel"});
 				return
 			end
 		else
@@ -106,5 +106,5 @@ function zxmp_compound()
 	local nItemIdx = AddItem(6, 1, 1791, 1, 1, 0);
 	-- tbAwardTemplet:ITEM_SetExpiredTime(nItemIdx, 20080827);
 	-- SyncItem(nItemIdx);
-	Msg2Player(format("µÃµ½ %s", "ÑøÉúÃØÆ×"));
+	Msg2Player(format("NhËn ®­îc %s", "D­ìng sinh bÝ phæ"));
 end

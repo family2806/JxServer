@@ -8,13 +8,13 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "NpcOnDeath",
-	szName = "BigBoss ËÀÍö",
+	szName = "BigBoss tö vong",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"NpcFunLib:CheckName",	{"¶À¹ÂÌì·å"} },
+		{"NpcFunLib:CheckName",	{"§éc C« Thiªn Phong"} },
 	},
 	tbActition = 
 	{
@@ -25,14 +25,14 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "nil",
-	szName = "[¶À¹ÂÌì·å]È«²¿serverµÄ½±Àø",
+	szName = "PhÇn th­ëng toµn server cña [§éc C« Thiªn Phong]",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"lib:CheckTimeAndWeekDay",	{2000,2100,"0,1,2,3,4,5,6","ÏÖÔÚ²»ÊÇÁì½±Ê±¼ä"} },
-		{"PlayerFunLib:CheckLevel",	{90,format("¼¶%d ÒÔÉÏ²ÅÄÜÁì½±!",90),">="} },
+		{"lib:CheckTimeAndWeekDay",	{2000,2100,"0,1,2,3,4,5,6","HiÖn t¹i kh«ng ph¶i lµ thêi gian lÜnh th­ëng"} },
+		{"PlayerFunLib:CheckLevel",	{90,format("CÊp %d trë lªn míi cã thÓ nhËn th­ëng!",90),">="} },
 	},
 	tbActition = 
 	{
@@ -43,16 +43,16 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷½øÈëÀñ¹Ù",
+	szName = "BÊm vµo LÔ Quan",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Àñ¹Ù"},
+	tbMessageParam = {"LÔ Quan"},
 	tbCondition = 
 	{
 		{"NpcFunLib:IsInCity",	{nil} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"[¶À¹ÂÌì·å]È«²¿serverµÄ½±Àø",2} },
+		{"AddDialogOpt",	{"PhÇn th­ëng toµn server cña [§éc C« Thiªn Phong]",2} },
 	},
 }

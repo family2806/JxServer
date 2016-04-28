@@ -17,7 +17,7 @@ function ScriptItemClass:Use(nItemIndex, nCurDate)
 	
 	
 	if self.DateRange:CheckDate(nCurDate) ~= 1 then
-		Talk(1, "", "此物品已过期")
+		Talk(1, "", "V藅 ph萴 n祔  h誸 h筺")
 		return 1
 	end
 	

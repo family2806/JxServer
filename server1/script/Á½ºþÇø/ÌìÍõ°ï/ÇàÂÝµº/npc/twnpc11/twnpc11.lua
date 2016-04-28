@@ -6,9 +6,9 @@
 function main()
 
 if (GetFaction() == "tianwang") then					--Èç¹ûÍæ¼ÒÊÇÌìÍõ°ïµÜ×Ó£¬×ø´¬²»ÊÕÇ®
-	Say("ÄãÊÇÌìÍõ°ïµÄµÜ×Ó×ø´¬Ãâ·Ñ", 2, "×ğÁî!/yes", "²» /no")
+	Say("Huynh ®Ö cña Thiªn V­¬ng bang th× ®i thuyÒn miÔn phİ!", 2, "Tu©n lÖnh!/yes", "Kh«ng /no")
 else	
-	Say("ÄÇÀïÊ®·ÖÎ£ÏÕ£¡Èç¹û¿Í¹ÙÏëÈ¥µÄ»°Òª¼ÓÒ»µãÇ®!", 2, "×ø/yes1", "²»×ø/no")
+	Say("N¬i ®ã hiÓm nguy l¾m! NÕu kh¸ch quan muèn ®i xin cho thªm İt tiÒn!", 2, "to¹ /yes1", "Kh«ng ngåi/no")
 --	Talk(1,"","ÌìÍõ°ïÖÚ£ºÄã²»ÊÇ±¾°ïµÜ×Ó£¬ÔõÃ´»ìµ½±¾°ï½ûµØÀ´µÄ£¿£¡")
 end;
 
@@ -27,7 +27,7 @@ if (GetCash() >= 500) then						--²Î¿¼Öµ
 	NewWorld(59, 1425, 3472)					--»ØÌìÍõµº
 	SetFightState(0)						--×ª»»Îª·ÇÕ½¶·×´Ì¬
 else
-	Say("Ã»Ç®¾Í¸Ï¿ì×ß!", 0)		
+	Say("Kh«ng tiÒn mµ ®ßi ®i lung tung!", 0)		
 end;
 end;
 

@@ -4,5 +4,5 @@ CurStation = 4;
 Include("\\script\\global\\station.lua")
 
 function main(sel)
-	CityStationCommon("车夫：要坐车去哪里？ ");
+	CityStationCommon("Mu鑞 ng錳 xe 甶 u ");
 end;

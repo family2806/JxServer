@@ -30,19 +30,19 @@ local tbAwardList =
 function tbJILIWanJia0908:UseHongBao(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate >= 20090923 then
-		Talk(1, "" ,"»î¶¯½áÊø.")
+		Talk(1, "" ,"Ho¹t ®éng ®· kÕt thóc.")
 		return 0
 	end
 	
 	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
-		Talk(1, "", "Î´ÖØÉúµÄÒªÓĞ150¼¶»òÖØÉúµÄ²Å¿ÉÒÔÓÃ.")
+		Talk(1, "", "Ch­a trïng sinh ph¶i cÊp 150 hoÆc trïng sinh råi míi cã thÓ dïng ®­îc.")
 		return 1
 	end
 	
 	local _, _, nP = GetItemProp(nItemIndex)
 	
 	if self.tbTask:GetUseItemState(nP - 2101 + 1) == 1 then
-		Talk(1, "", "Ã¿¸öÈËÖ»ÄÜÊ¹ÓÃÕâ¸öÎïÆ·1´Î")
+		Talk(1, "", "Mçi ng­êi chØ cã thÓ sö dông 1 vËt phÈm nµy")
 		return 1
 	end
 	
@@ -59,7 +59,7 @@ function tbJILIWanJia0908:UseTuanYuanHongBao(nItemIndex)
 
 	
 	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
-		Talk(1, "", "Î´ÖØÉúµÄÒªÓĞ150¼¶»òÖØÉúµÄ²Å¿ÉÒÔ.")
+		Talk(1, "", "Ch­a trïng sinh ph¶i cÊp 150 hoÆc trïng sinh råi míi cã thÓ dïng ®­îc.")
 		return 1
 	end
 	
@@ -73,8 +73,8 @@ function tbJILIWanJia0908:UseTuanYuanHongBao(nItemIndex)
 		nDspTime		= mod(nDspTime, 60*60)
 		local nMin	= floor(nDspTime / 60 )
 		local nSec	= mod(nDspTime, 60)
-		szTime 		= format("%d ÈÕ %dÊ± %d·Ö  %dÃë©y", nDay, nHour, nMin, nSec);
-		Talk(1, "", format("Òª»» %s ²Å¿ÉÒÔÊ¹ÓÃ.", szTime))
+		szTime 		= format("%d ngµy %d giê %d phót %d gi©y", nDay, nHour, nMin, nSec);
+		Talk(1, "", format("CÇn ®îi %s míi sö dông ®­îc.", szTime))
 		return 1
 	end
 	
@@ -92,7 +92,7 @@ function tbJILIWanJia0908:UseAnKanHongBao(nItemIndex)
 
 	
 	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
-		Talk(1, "", "Î´ÖØÉúµÄÒªÓĞ150¼¶»òÖØÉúµÄ²Å¿ÉÒÔ.")
+		Talk(1, "", "Ch­a trïng sinh ph¶i cÊp 150 hoÆc trïng sinh råi míi cã thÓ dïng ®­îc.")
 		return 1
 	end
 	
@@ -106,8 +106,8 @@ function tbJILIWanJia0908:UseAnKanHongBao(nItemIndex)
 		nDspTime		= mod(nDspTime, 60*60)
 		local nMin	= floor(nDspTime / 60 )
 		local nSec	= mod(nDspTime, 60)
-		szTime 		= format("%d ÈÕ %d Ê±%d ·Ö %d Ãë©y", nDay, nHour, nMin, nSec);
-		Talk(1, "", format("Òª»» %s ²Å¿ÉÒÔÊ¹ÓÃ.", szTime))
+		szTime 		= format("%d ngµy %d giê %d phót %d gi©y", nDay, nHour, nMin, nSec);
+		Talk(1, "", format("CÇn ®îi %s míi sö dông ®­îc.", szTime))
 		return 1
 	end
 	

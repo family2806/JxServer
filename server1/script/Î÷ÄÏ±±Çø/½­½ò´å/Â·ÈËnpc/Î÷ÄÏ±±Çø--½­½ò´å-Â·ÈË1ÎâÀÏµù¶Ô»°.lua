@@ -6,27 +6,27 @@
 function main(sel)
 	UTask_world21 = GetTask(49);
 	if ((UTask_world21 == 0) and (GetLevel() >= 3)) then		-- ÈÎÎñÆô¶¯
-		Say("¿È£¬¿È£¬ÎÒÕâ¿ÈËÔ¾ÍÊÇÖ¹²»×¡£¬°¦£¬Ò²²»ÖªµÀºìÃ·Ê²Ã´Ê±ºò»ØÀ´£¬ÊÇÊ±ºò¸ÃÈ¥Ò©·¿×¥Ò©ÁË£¬¿È¿È¿È", 2, "°ïÃ¦/yes", "²»°ïÃ¦/no")
+		Say("Ta cø ho m·i kh«ng ngít. Kh«ng biÕt khi nµo Hång Mai míi trë vÒ, tíi lóc ph¶i ®Õn D­îc ®iÕm hèt thuèc th«i…KhÆc...khÆc", 2, "Gióp /yes", "Kh«ng gióp /no")
 	elseif (UTask_world21 == 1) then
 		if (HaveItem(179) == 1) then		--ÅĞ¶ÏÍæ¼ÒÊÇ·ñÄÃµ½Ò©
-			Talk(1,"","§aĞ»Ğ»£¬¸ÏÃ÷¶ù£¬ÎÒ½ĞºìÃ·¸øÄã×öË«Ğ¬!")
+			Talk(1,"","§a t¹ hiÖp kh¸ch! Mét ngµy nµo ®ã, ta b¶o Hång Mai lµm cho ng­¬i 1 ®«i giµy!")
 			DelItem(179)		--É¾µôÍæ¼ÒÉíÉÏµÄÒ©
 			SetTask(49, 3)
-			AddNote("°ïÀÏÎâÄÃ»Ø10¸ö´¨±´Íè£¬ÎâºìÃ·ËÍÒ»Ë«Ğ¬Ğ»¶÷")
-			Msg2Player("°ïÀÏÎâÄÃ»Ø10¸ö´¨±´Íè£¬ÎâºìÃ·ËÍÒ»Ë«Ğ¬Ğ»¶÷")
+			AddNote("§· thay l·o Ng« lÊy vÒ 10 viªn Xuyªn Bèi Hoµn, Ng« Hång Mai sÏ tÆng cho mét ®«i giµy ®Ó t¹ ¬n ")
+			Msg2Player("§· thay l·o Ng« lÊy vÒ 10 viªn Xuyªn Bèi Hoµn, Ng« Hång Mai sÏ tÆng cho mét ®«i giµy ®Ó t¹ ¬n ")
 		else
-			Talk(1,"","Äã¿ÉÒÔÈ¥Ò©µêÀÉÖĞÄÇÀïÎÊÎÊ£¬¾Í´ÓÕâÀïÍùÎ÷×ß£¬Ã»¼¸²½¾Íµ½ÁË£¬¿È¿È¡­¡­¼ÇºÃÁËÊÇÊ®¿Å´¨±´Íè£¬Âé·³ÄãÁË!")
+			Talk(1,"","Ng­¬i cã thÓ ®Õn d­îc phßng hái xem. Tõ ®©y ®i vÒ h­íng T©y vµi b­íc lµ tíi råi! …khÆc…khÆc…H·y nhí lµ 10 viªn Xuyªn Bèi hoµn, phiÒn ng­¬i gióp ta!")
 		end
 	else				-- ·ÇÈÎÎñ¶Ô»°
-		Talk(1,"","ÎâÀÏµù£ºÎÒºÍÀÏÌ«ÆÅµÄÉíÌå¶¼²»ºÃ£¬¹ëÅ®ÎªÁËÕÕ¹ËÎÒÃÇ£¬µ½ÏÖÔÚ»¹Ã»ÓĞÕÒÆÅ¼Ò£¬ÎÒÃÇ×öµùÄïµÄÕæÊÇ¶Ô²»×¡ËıÑ½£¡")
+		Talk(1,"","Søc kháe ta vµ bµ nhµ ®Òu kh«ng kháe, khuª n÷ v× ch¨m sãc vî chång ta mµ vÉn ch­a lÊy chång, bËc lµm cha mÑ nh­ ta thËt kh«ng ph¶i víi con g¸i m×nh!")
 	end
 end;
 
 function yes()
-	Talk(1,"","ÎâÀÏµù£ºÄã¿ÉÒÔÈ¥Ò©µêÀÉÖĞÄÇÀïÎÊÎÊ£¬¾Í´ÓÕâÀïÍùÎ÷×ß£¬Ã»¼¸²½¾Íµ½ÁË£¬¿È¿È¡­¡­¼ÇºÃÁËÊÇÊ®¿Å´¨±´Íè£¬Âé·³ÄãÁË¡£")
+	Talk(1,"","Ng­¬i cã thÓ ®Õn d­îc phßng hái xem. Tõ ®©y ®i vÒ h­íng T©y vµi b­íc lµ tíi råi! …khÆc…khÆc…H·y nhí lµ 10 viªn Xuyªn Bèi hoµn, phiÒn ng­¬i gióp ta!")
 	SetTask(49, 1)
-	AddNote("½ÓÈÎÎñ£¬°ïÎâÀÏÒ¯È¥Ò©µêÄÃÒ©")
-	Msg2Player("½ÓÈÎÎñ£¬°ïÎâÀÏÒ¯È¥Ò©µêÄÃÒ©")
+	AddNote("NhËn nhiÖm vô thay Ng« l·o gia ®Õn tiÖm thuèc lÊy thuèc ")
+	Msg2Player("NhËn nhiÖm vô thay Ng« l·o gia ®Õn tiÖm thuèc lÊy thuèc ")
 end;
 
 function no()

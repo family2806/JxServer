@@ -2,25 +2,25 @@
 
 Include("\\script\\missions\\freshman_match\\tryout\\head.lua")
 function main()
-	Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±: ´Ó2005Äê6ÔÂ1ÈÕµ½2005Äê6ÔÂ10ÈÕ, Ã¿Ìì20:µ½ 23:00½«¾ÙĞĞ<color=yellow>ÎäÁÖĞÂĞãÁªÈüÁªÈü<color>. ±¾³¡±ÈÈüÄ¿µÄÊÇ¸øĞÂÊÖ£¨50¼¶µ½89¼¶£©´´ÔìÓëÍ¬ÃÅ½»Á÷µÄ»ú»á£¬Ìá¸ßĞÂÊÖµÄÎäÒÕ£¬¿ìÈ¥²Î¼Ó°É!", 1, "Í¬Òâ /want_bid_option")
+	Say("ThŞ vÖ héi tr­êng: Tõ 1 th¸ng 6 n¨m 2005 ®Õn 10 th¸ng 6 n¨m 2005, mçi ngµy 20:00 ®Õn 23:00 sÏ tæ chøc <color=yellow>liªn ®Êu Vâ l©m kiÖt xuÊt<color>. Cuéc thi nµy nh»m môc ®İch t¹o c¬ héi cho c¸c T©n Thñ giang hå (cÊp 50 ®Õn cÊp 89) giao l­u häc hái kinh nghiÖm víi c¸c ®ång m«n, n©ng cao kü n¨ng cña T©n Thñ, mau ®Õn tham gia ®i!", 1, "§ång ı!/want_enrol_option")
 end
 
 function want_enrol_option()
 	if (validateDate(CP_UPTO_TRYOUT, CP_END_TRYOUT)) then
 		local optiontab = {
-				"²Î¼ÓÎäÁÖĞÂĞãÁªÈü /want_enrol",
-				"ÎäÁÖĞÂĞãÁªÈü³É¼¨!/look_sort",
-				"ÎäÁÖĞÂĞãÁªÈü°ïÖú/help_freshmanmatch",
-				"ÎÒÉÔºòÔÙÀ´!/OnCancel"
+				"Tham gia thi ®Êu m«n ph¸i kiÖt xuÊt Vâ l©m/want_enrol",
+				"KiÓm tra thµnh tİch thi ®Êu kiÖt xuÊt!/look_sort",
+				"Hç trî thi ®Êu Vâ l©m kiÖt xuÊt/help_freshmanmatch",
+				"Ta sÏ quay l¹i sau!/OnCancel"
 				}
-		Say("Ïë²Î¼ÓÎäÁÖĞÂĞãÁªÈüÂğ?", getn(optiontab), optiontab)
+		Say("Muèn tham gia thi ®Êu Vâ l©m kiÖt xuÊt m«n ph¸i ­?", getn(optiontab), optiontab)
 	elseif(tonumber(date("%y%m%d%H")) >= CP_END_TRYOUT) then
-		Say("ÎäÁÖĞÂĞãÁªÈüÒÑ½áÊø£¬ÅÅÃûÇ°ÎåµÄ¿ÉÒÔµ½ÁÙ°²¼ûÎäÁÖĞÂĞãÁªÈü¹ÙÔ±(182, 202) ÁìÈ¡³ÆºÅ.", 0)
+		Say("Thi ®Êu Vâ l©m kiÖt xuÊt m«n ph¸i ®· kÕt thóc, 5 ng­êi ®øng ®Çu cña c¸c m«n ph¸i cã thÓ ®Õn L©m An gÆp Sø gi¶ kiÖt xuÊt (203, 202) nhËn danh hiÖu.", 0)
 	else
 		nHour = mod(CP_UPTO_TRYOUT, 100)
 		nDay = floor(mod(CP_UPTO_TRYOUT, 10000) / 100)
 		nMonth = floor(mod(CP_UPTO_TRYOUT, 1000000) / 10000)
-		Say( "ÎäÁÖĞÂĞãÁªÈü½«¿ªÊ¼´Ó"..date( "%Y" ).."Äê"..nMonth.."ÔÂ "..nDay.."ÈÕ "..nHour.."ÕıÊ½¿ªÊ¼£¬Çë¼ÌĞø¹Ø×¢!", 0 )
+		Say( "Vâ l©m m«n ph¸i kiÖt xuÊt sÏ b¾t ®Çu tõ "..date( "%Y" ).."n¨m"..nMonth.."nguyÖt "..nDay.."nhËt "..nHour.."chİnh thøc b¾t ®Çu xin tiÕp tôc chó ı theo dâi!", 0 )
 	end
 end
 
@@ -28,12 +28,12 @@ function want_enrol()
 	if ( nt_gettask( CP_TASKID_REGIST ) ~= CP_UPTO_TRYOUT ) then
 	
 		if (GetLevel() >= 90  ) then
-			Say("90¼¶ÒÔÉÏ²»ÄÜ²Î¼Ó±ÈÈü.", 0)
+			Say("§¼ng cÊp tõ 90 trë lªn kh«ng ®­îc tham gia thi ®Êu.", 0)
 			return
 		end
 		
 		if ( GetLevel() < 50 ) then
-			Say( "ÄãµÄµÈ¼¶²»¹»50¼¶ÒªÇó£¬²»ÄÜ±¨Ãû±ÈÈü!", 0 )
+			Say( "§¼ng cÊp cña b¹n ch­a ®¹t yªu cÇu (cÊp 50) kh«ng ®­îc b¸o danh tham gia!", 0 )
 			return
 		end
 		
@@ -41,24 +41,24 @@ function want_enrol()
 	local nHour = mod( CP_UPTO_TRYOUT, 100 )
 	local opentime = TRYOUT_TIMER_2 / 60 / 60 / FRAME2TIME
 	if (GetMissionV( MS_STATE ) == 0) then
-		local talkstr = "ÎäÁÖĞÂĞãÁªÈüÃ¿Ìì´Ó"..nHour..":00 Ê±"..opentime..", ÏÖÔÚÊÇ"..date( "%H:%M" )..", ÉÔºò»ØÀ´°É!"
+		local talkstr = "Thi ®Êu kiÖn xuÊt mçi ngµy tõ "..nHour..":00 giê "..opentime..", b©y giê lµ "..date( "%H:%M" )..", h·y quay l¹i sau!"
 		Say(talkstr, 0)
 		return
 	elseif (GetMissionV(MS_STATE) == 2) then
-		local talkstr = "ÎäÁÖĞÂĞãÁªÈüÕıÔÚ½øĞĞ£¬ÇëµÈÏÂÒ»³¡!"
+		local talkstr = "Vßng thi ®Êu kiÖt xuÊt ®ang ®­îc tiÕn hµnh, xin chê hiÖp sau!"
 		Say(talkstr, 0)
 		return
 	end
 		
-	Say("ÎäÁÖĞÂĞãÁªÈüÃ¿Ìì´Ó"..nHour..":00 Ê±"..opentime..", ±¨ÃûÊ±¼äÎª5·ÖÖÓ£¬±ÈÈüÊ±¼äÎª15·ÖÖÓ£¬´ó¼Ò¶¼¿ÉÒÔ²Î¼Ó."..CP_MAXROUND.."±ÈÈü¡£±¨Ãû½øÈë×¼±¸±ÈÈüÇøÓòºó£¬Äã¿ÉÒÔÀë¿ª»òÕßµÈµ½±ÈÈüÊ±¼ä¡£.", 2, "ÎÒÏë²Î¼Ó±ÈÈü!/sure_enrol_1", "ÈÃÎÒ¿´¿´/OnCancel")
+	Say("Thi ®Êu kiÖn xuÊt mçi ngµy tõ "..nHour..":00 giê "..opentime..", thêi gian b¸o danh lµ 5 phót, thêi gian thi ®Êu lµ 15 phót, mäi ng­êi ®Òu cã thÓ tham gia."..CP_MAXROUND.."vßng thi ®Êu. Sau khi b¸o danh vµo khu vùc chuÈn bŞ thi ®Êu, b¹n cã thÓ rêi khái hoÆc chê ®Õn lóc thi ®Êu.", 2, "Ta muèn tham gia thi ®Êu kiÖt xuÊt!/sure_enrol_1", "§Ó ta xem l¹i/OnCancel")
 end
 
 function sure_enrol_1()
-	Say("¸ù¾İÎäÁÖÃËÖ÷µÄºÅÁî£¬ÔÚ±ÈÈüÖĞÑÏ½ûÊ¹ÓÃPKÒ©£¬ÄãÒª¿´¿´ÄãÉíÉÏÓĞÃ»ÓĞÕâ¸öÒ©£¬·ñÔò½«»á±»Í£Èü¡£ÎÒ½«É¾³ıÄãµÄÒì³£PK×´Ì¬¡£ <color=red>½øÈëÈü³¡Ê±£¬ÄãĞèÒª¿´×°±¸µÄÏûºÄ¶È¡£½øÈë¶·³¡ºó£¬ÑÏ½ûÒÆ¶¯ÎïÆ·¡£Äã¼ì²éÒ»ÏÂ¿´¿´×°±¸¹»ÁËÂğ?",2, "ÎÒÒÑ×¼±¸ºÃÁË!/sure_enrol_2", "ÎÒÉÔºò»ØÀ´!/OnCancel")
+	Say("Theo hiÖu lÖnh cña Vâ l©m Minh chñ, trong thi ®Êu Vâ l©m kiÖt xuÊt nghiªm cÊm sö dông thuèc PK, b¹n ph¶i xem trªn ng­êi cã thø thuèc Êy tr­íc khi tham gia, nÕu kh«ng sÏ bŞ ®×nh chØ thi ®Êu. Ta sÏ xãa ®i tr¹ng th¸i dŞ th­êng PK cña ng­¬i. <color=red>Lóc vµo tr­êng ®Êu, ng­¬i ph¶i xem ®é hao mßn cña trang bŞ. Sau khi vµo tr­êng ®Êu, nghiªm cÊm di chuyÓn vËt phÈm. Ng­¬i h·y kiÓm tra l¹i vËt phÈm trong hµnh trang ®· ®Çy ch­a?",2, "Ta ®· s½n sµng!/sure_enrol_2", "Ta sÏ quay l¹i sau!/OnCancel")
 end
 
 function sure_enrol_2()
-	Say("»á³¡¹ÙÔ±:<color=red>½øÈë×¼±¸ÇøÓòºÍ±ÈÈüÇøÓò£¬Íæ¼Ò²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇ£¬¿ÉÒÔÊ¹ÓÃÎïÆ·¡£Äã¿ì¼ì²éÒ»ÏÂµÀ¾ßÀ¸ÉÏµÄÎïÆ·¹»ÁËÂğ?",2,"È·ÈÏ/sure_enrol", "ÎÒ»¹Î´×¼±¸ºÃ!/OnCancel")
+	Say("Quan viªn héi tr­êng:<color=red>Vµo khu vùc chuÈn bŞ vµ khu vùc thi ®Êu, ng­êi ch¬i kh«ng thÓ di chuyÓn vËt phÈm trong hµnh trang nh­ng vÉn cã thÓ sö dông vËt phÈm trong thanh c«ng cô vµ hµnh trang. Ng­¬i h·y kiÓm tra l¹i vËt phÈm trong thanh c«ng cô ®· ®Çy hay ch­a?",2,"X¸c nhËn/sure_enrol", "Ta ch­a s½n sµng!/OnCancel")
 end
 
 function sure_enrol()
@@ -91,23 +91,23 @@ function sure_enrol()
 		end
 	end
 	if(forbiditem_con > 0 or forbiditem_key > 0) then
-		Say("ÄãÕæÊÇµ¨´ó£¬¸Ò²»Ìı´ÓÎäÁÖÃËÖ÷µÄÃüÁî£¬ÉÃ×Ô´ø½ûÒ©½øÈë£¬¿ìÀë¿ªÕâÀï!", 0)
+		Say("Ng­¬i thËt to gan! D¸m kh«ng tu©n lÖnh cña Vâ L©m Minh Chñ, tù ı ®em d­îc phÈm cÊm vµo, mau rêi khái ®©y!", 0)
 		return
 	end
 	
 	if (keyitem[1] == 0 and keyitem[2] == 0 and keyitem[3] == 0) then
-		Say("Ä¿Ç°ÄãµÄ¹¤¾ßÀ¸ÉÏº£Ã»ÓĞÎïÆ·£¬ÇëÑ¡ÔñÎïÆ··ÅÈëÕıÈ·Î»ÖÃ!<color=red> ½øÈëÈü³¡ºó£¬¾¡ÔÚÒÆ¶¯ÎïÆ·£¬ÇëÈ·ÈÏ¹¤¾ßÀ¸ÉÏµÄÎïÆ·¶¼ÕûÀíºÃÁËÂğ?", 0)
+		Say("B¶ng c«ng cô cña b¹n hiÖn giê kh«ng cã ®Ó d­îc phÈm vµo, b¹n h·y chän d­îc phÈm ®Æt vµo ®óng vŞ trİ m×nh dïng ®i!<color=red> Sau khi ®· vµo tr­êng ®Êu cÊm di chuyÓn vËt phÈm, xin h·y x¸c nhËn vËt phÈm trong b¶ng c«ng cô ®· ®­îc s¾p xÕp xong!", 0)
 		return 
 	end
 	
 	if (nt_gettask(CP_TASKID_REGIST) ~= CP_UPTO_TRYOUT) then
-		local talkstr = "Äã²ÅÊÇµÚÒ»´Î²Î¼Ó°¡£¿Ïë²Î¼ÓÂğ?"
-		Say(talkstr, 2, "ÎÒÏë²Î¼Ó!/pay_enrol_money", "ÈÃÎÒ¿´¿´/OnCancel")
+		local talkstr = "Ng­¬i míi lÇn ®Çu tham gia Vâ l©m kiÖt xuÊt? Cã muèn tham gia kh«ng?"
+		Say(talkstr, 2, "Ta muèn tham gia!/pay_enrol_money", "§Ó ta xem l¹i/OnCancel")
 		return
 	end
 	
 	join_tryout()
-	Msg2Player("½øÈë±ÈÈüÇøÓòºó£¬²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇ¿ÉÒÔÊ¹ÓÃÎïÆ·");
+	Msg2Player("Sau khi vµo khu vùc thi ®Êu, kh«ng thÓ di chuyÓn vËt phÈm trong hµnh trang nh­ng vÉn cã thÓ sö dông vËt phÈm trong hµnh trang vµ thanh c«ng cô.");
 end
 
 function pay_enrol_money()
@@ -129,9 +129,9 @@ function look_sort()
 	end
 	
 	if (nt_gettask(CP_TASKID_ROUND) == 0) then
-		Say("Ä¿Ç°Äã»¹Î´ÓĞÈÎºÎ³¡´ÎµÄ±ÈÈü!", 0)
+		Say("HiÖn B¹n vÉn ch­a thi ®Êu trËn nµo!", 0)
 	else
-		Say("ÎäÁÖĞÂĞãÁªÈüÔÊĞíÃ¿¸öÈË×î¶à²Î¼Ó"..CP_MAXROUND.."´Î£¬ÏÖÔÚÄãÒÑ²Î¼ÓÁË<color=yellow>"..nt_gettask(CP_TASKID_ROUND).."<color> ´Î£¬½±ÀøÎª"..nt_gettask(CP_TASKID_POINT)..", Ê¤"..nt_gettask(CP_TASKID_WIN).."t³¡, Êä"..nt_gettask(CP_TASKID_LOSE).."³¡, ºÍ"..nt_gettask(CP_TASKID_TIE).."³¡.", 0)
+		Say("Thi ®Êu Vâ l©m kiÖt xuÊt cho phĞp mçi ng­êi tham gia nhiÒu nhÊt"..CP_MAXROUND.."lÇn. HiÖn t¹i b¹n ®· tham gia <color=yellow>"..nt_gettask(CP_TASKID_ROUND).."<color> lÇn thi ®Êu, ®iÓm th­ëng lµ:"..nt_gettask(CP_TASKID_POINT)..", th¾ng"..nt_gettask(CP_TASKID_WIN).."trËn, thua"..nt_gettask(CP_TASKID_LOSE).."trËn, hßa"..nt_gettask(CP_TASKID_TIE).."trËn.", 0)
 	end
 end
 

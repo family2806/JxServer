@@ -16,15 +16,15 @@ Poster_E5_BIT_Code = 10											--acc co code hay ko
 OneDayTime = 60 * 24
 tbItem =
 {
-	{szName = "æ≠—È÷µ", nExp_tl = 200000000},
-	{szName = "œ…≤›¬∂", tbProp={6,1,71,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 10},
-	{szName = "ƒæ»À", tbProp={6,1,1085,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 30},
-	{szName = "∞Ôª·»ŒŒÒ¡Ó≈∆", tbProp={6,2,1020,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 60},
-	{szName = "¡˙—™ÕË", tbProp={6,1,2117,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
-	{szName = "ÃÏ¡˙¡Ó", tbProp={6,1,2256,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
-	{szName = "∫£¡˙÷È", tbProp={6,1,2115,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
-	{szName = "‘™Àß√Êæﬂ", tbProp={0,11,447,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 3},
-	{szName = "—™’Ω¡Ó∆Ï", tbProp={6,1,2212,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 3},
+	{szName = "ßi”m kinh nghi÷m", nExp_tl = 200000000},
+	{szName = "Ti™n Th∂o LÈ", tbProp={6,1,71,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 10},
+	{szName = "MÈc nh©n", tbProp={6,1,1085,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 30},
+	{szName = "L÷nh bµi nhi÷m vÙ Bang hÈi", tbProp={6,2,1020,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 60},
+	{szName = "Long Huy’t Hoµn", tbProp={6,1,2117,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
+	{szName = "Thi™n Long L÷nh", tbProp={6,1,2256,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
+	{szName = "H∂i Long Ch©u", tbProp={6,1,2115,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 6},
+	{szName = "M∆t nπ Nguy™n So∏i", tbProp={0,11,447,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 3},
+	{szName = "Huy’t Chi’n L÷nh K˙", tbProp={6,1,2212,1,0,0}, nExpiredTime = 43200, nBindState = -2, nCount = 3},
 }
 
 function ShowAwardDialog()
@@ -42,15 +42,15 @@ function ShowAwardDialog()
 		
 		if (CheckExtPointBit(nBit, nExtp) == 0) then
 			if (tbItem[i].szName ~= nil) then
-				tinsert(tbOpt, "Œ“œÎ¡ÏΩ±" .. tbItem[i].szName .. "/#GetAward(" .. nBit .. "," .. nExtp .. "," .. i .. ")")
+				tinsert(tbOpt, "Ta muËn nhÀn ph«n th≠Îng " .. tbItem[i].szName .. "/#GetAward(" .. nBit .. "," .. nExtp .. "," .. i .. ")")
 			end
 		end
 	end
-	tinsert(tbOpt, "<#>¿Îø™/OnCancel")
+	tinsert(tbOpt, "<#>Tho∏t/OnCancel")
 	if (getn(tbOpt) >= 2) then
-		Say("¥Ûœ¿«Î—°‘ÒΩ±∆∑.", getn(tbOpt), tbOpt)
+		Say("ßπi hi÷p h∑y ch‰n ph«n th≠Îng muËn nhÀn.", getn(tbOpt), tbOpt)
 	else
-		Talk(1, "",  "¥Ûœ¿“—æ≠¡ÏπªΩ±∆∑‘ı√¥ªπ“™¡Ï∞°?")
+		Talk(1, "",  "ßπi hi÷p Æ∑ nhÀn ÆÒ ph«n th≠Îng rÂi mµ cﬂn muËn nhÀn n˜a µ?")
 	end
 end
 
@@ -94,19 +94,19 @@ end
 
 function CheckCondition()
 	if (CheckExtPointBit(Poster_E5_BIT_Code, ExtPointPoster5) == 0) then 
-		Talk(1, "", "¥Ûœ¿‘Ÿø¥“ªœ¬¡ÏΩ±Ãıº˛∞…!")
+		Talk(1, "", "ßπi hi÷p h∑y ki”m tra lπi Æi“u ki÷n nhÀn th≠Îng!")
 		return 0
 	end
 	
 	if (ST_GetTransLifeCount() < 1) then
 		if (GetLevel() < 130) then 
-			Talk(1, "", "130º∂“‘…œµƒ»ÀŒÔ≤≈ø…“‘¡ÏΩ±!")
+			Talk(1, "", "Nh©n vÀt Æºng c p 130 trÎ l™n mÌi c„ th” nhÀn th≠Îng!")
 			return 0
 		end
 	end
 	
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ±≥∞¸ø’º‰≤ªπª£®÷¡…Ÿ60∏Ò£©!.");
+		Talk(1, "", "Hµnh trang ßπi hi÷p kh´ng ÆÒ 60 ´ trËng!.");
 		return 0
 	end
 	return 1
@@ -135,8 +135,8 @@ function AddLenhBaiBH()
 	SetItemBindState(nRandomItemIndex, -2);
 	SyncItem(nRandomItemIndex);
 	local strItem = GetItemName(nRandomItemIndex)
-	Msg2Player("ƒ„µ√µΩ"..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".." Nhan thuong hoat dong Poster "..GetAccount().."\t"..GetName().."\t".."¡ÏΩ± Poster µ√µΩ "..strItem)
+	Msg2Player("Bπn nhÀn Æ≠Óc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".." Nhan thuong hoat dong Poster "..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Poster nhÀn Æ≠Óc "..strItem)
 end
 
 function AddMocNhan()
@@ -147,8 +147,8 @@ function AddMocNhan()
 		SetItemBindState(ndx, -2);
 		SyncItem(ndx)
 		local strItem = GetItemName(ndx)
-		Msg2Player("ƒ„µ√µΩ"..strItem)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".." Nhan thuong hoat dong Poster "..GetAccount().."\t"..GetName().."\t".."¡ÏΩ±Poster µ√µΩ "..strItem)
+		Msg2Player("Bπn nhÀn Æ≠Óc "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".." Nhan thuong hoat dong Poster "..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Poster nhÀn Æ≠Óc "..strItem)
 end
 
 function OnCancel()

@@ -11,7 +11,7 @@ function InitMission()
 		SetMissionS(i, "");
 	end;
 	
-	strGlbNews = "¹Ù¸®¿ªÊ¼ÈÃÈËÈ¥Çı¸Ï¹ÖÊŞ"..FE_ANIMALNAME..", ´ó¼Ò¿ìµ½ÑÃÃÅ²îÒÛÄÇÀï±¨Ãû²Î¼Ó.";
+	strGlbNews = "Quan phñ b¾t ®Çu cho ng­êi ®i ®uæi Qu¸i Thó "..FE_ANIMALNAME..", mäi ng­êi h·y ®Õn Nha m«n sai dŞch ë c¸c thµnh ®Ó b¸o danh tham gia.";
 	AddGlobalNews(strGlbNews);
 	gb_SetTask(FESTIVAL_SHREWMOUSE, 1, 1);
 	SetGlbValue(GLB_FE_PHASE, 1);	--¿ÉÒÔ¿ªÊ¼±¨ÃûÁË

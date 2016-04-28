@@ -8,37 +8,37 @@ function GetBonusThanhTich_main()
 	local nValuePoint	= GetExtPoint(NWP_EXTPOINT);
 	local nBit = GetBit(nValuePoint, NWP_E5_IsCode_BIT);
 	if (nBit ~= 1) then
-		Talk(1, "", "Çë¼ì²é²Î¼ÓÌõ¼ş.");
+		Talk(1, "", "Xin h·y kiÓm tra l¹i ®iÒu kiÖn tham gia.");
 		return
 	end
 	local tbOpp = {}
-	local str = "<#> Çë´óÏÀÑ¡Ôñ½±Àø";
-	local str2 = "<#> Äã²»ÊÇÁì¹ı½±ÀøÁËÂğ?";
+	local str = "<#> §¹i hiÖp xin h·y chän phÇn th­ëng";
+	local str2 = "<#> Kh«ng ph¶i ®¹i hiÖp ®· nhËn hÕt råi sao ?";
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich1) == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡µÚÒ»´ÎÖØÉúµÄ½±Àø/Bonus1");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng sau khi ®· trïng sinh lÇn 1/Bonus1");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich2) == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡µÚÒ»´ÎÖØÉúºóµÄ125¼¶½±Àø/Bonus2");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng cÊp 125 sau khi ®· trïng sinh lÇn 1/Bonus2");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich3) == 1 and IsNewAccount() == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡µÚÒ»´ÎÖØÉúºóµÄ130¼¶½±Àø/Bonus3");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng cÊp 130 sau khi ®· trïng sinh lÇn 1/Bonus3");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich4) == 1 and IsNewAccount() == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡µÚÒ»´ÎÖØÉúºóµÄ150¼¶½±Àø/Bonus4");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng cÊp 150 sau khi ®· trïng sinh lÇn 1/Bonus4");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich5) == 1 and IsNewAccount() == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡¼ÓÈë°ï»á½±Àø /Bonus5");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng ®· gia nhËp bang héi /Bonus5");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich6) == 1 and IsNewAccount() == 1 ) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡90¼¼ÄÜ´ïµ½20¼¶µÄ½±Àø/Bonus6");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng kÜ n¨ng 90 ®¹t 20 cÊp/Bonus6");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich7) == 1 and IsNewAccount() ==1 ) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡120¼¼ÄÜ´ïµ½20¼¶µÄ½±Àø/Bonus7");
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng kÜ n¨ng 120 ®¹t 20 cÊp/Bonus7");
 	end
 	if (CheckGetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich8) == 1 and IsNewAccount() == 1) then
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡´ïµ½500ÃûÍûÖµ½±Àø/Bonus8");
+			tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng ®¹t 500 ®iÓm danh väng/Bonus8");
 	end
-	tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str2, 0);
 		return
@@ -48,31 +48,31 @@ end
 
 function Bonus1()	
 		if (ST_GetTransLifeCount() ~= 1) then
-			Talk(1, "", "¸øµÚÒ»´ÎÖØÉúµÄÈËµÄ½±Àø");
+			Talk(1, "", "PhÇn th­ëng chØ dµnh cho nh÷ng ng­êi trïng sinh lÇn 1");
 			return
 		end
 		if (GetFaction() == "") then
-			Talk(1, "", "ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÁì½±!");
+			Talk(1, "", "Ng­¬i ch­a gia nhËp m«n ph¸i, kh«ng thÓ nhËn th­ëng !");
 			return
 		end
 		
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		ShowHKMP() -- Ğã³öHKMPÍæ¼Ò¿ÉÒÔ»ñµÃ
 end
 function Bonus2()
 		if (ST_GetTransLifeCount() ~= 1) then
-			Talk(1, "", "½±ÀøÖ»¸øÖØÉúÒ»´ÎµÄÈË");
+			Talk(1, "", "PhÇn th­ëng chØ dµnh cho ng­êi trïng sinh lÇn 1");
 			return
 		end
 		if (GetLevel() < 125) then
-			Talk(1, "", "¸óÏÂÒÀÈ»Î´´ï125¼¶Ìõ¼ş!");
+			Talk(1, "", "C¸c h¹ vÉn ch­a ®¹t ®iÒu kiÖn cÊp 125!");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich2, 1)
@@ -84,8 +84,8 @@ function Bonus2()
 				SetItemBindState(itemindx, -2);
 				SyncItem(itemindx)
 				local strItem = GetItemName(itemindx)
-				Msg2Player("Äã»ñµÃ"..strItem)
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+				Msg2Player("B¹n nhËn ®­îc "..strItem)
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 		end
 		--add 5 tay tuy kinh
 		for i=1,5 do
@@ -95,8 +95,8 @@ function Bonus2()
 				SetItemBindState(itemindx, -2);
 				SyncItem(itemindx)
 				local strItem = GetItemName(itemindx)
-				Msg2Player("Äã»ñµÃ"..strItem)
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+				Msg2Player("B¹n nhËn ®­îc "..strItem)
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 		end
 		--add item phung nguyet qua dung
 		local itemindx = AddItem(6,1,127,1,0,0)
@@ -105,8 +105,8 @@ function Bonus2()
 		SetItemBindState(itemindx, -2);
 		SyncItem(itemindx)
 		local strItem = GetItemName(itemindx)
-		Msg2Player("Äã»ñµÃ"..strItem)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+		Msg2Player("B¹n nhËn ®­îc "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 		-- add item ¹¨ÔÂÜ½ÈØ
 		local itemindx = AddItem(6,1,128,1,0,0)
 		nExpiredTime = OneDayTime * 7
@@ -114,44 +114,44 @@ function Bonus2()
 		SetItemBindState(itemindx, -2);
 		SyncItem(itemindx)
 		local strItem = GetItemName(itemindx)
-		Msg2Player("Äã»ñµÃ"..strItem)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+		Msg2Player("B¹n nhËn ®­îc "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 end
 
 function Bonus3()
 		if (ST_GetTransLifeCount() ~= 1) then
-			Talk(1, "", "½±ÀøÖ»¸øÖØÉúÒ»´ÎµÄÈË");
+			Talk(1, "", "PhÇn th­ëng chØ dµnh cho ng­êi trïng sinh lÇn 1");
 			return
 		end
 		if (GetLevel() < 130) then
-			Talk(1, "", "ÄãÎ´´ïµ½130¼¶Ìõ¼ş!");
+			Talk(1, "", "C¸c h¹ vÉn ch­a ®¹t ®iÒu kiÖn cÊp 130!");
 			return
 		end
 		if (GetFaction() == "") then
-			Talk(1, "", "ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÁì½±!");
+			Talk(1, "", "Ng­¬i ch­a gia nhËp m«n ph¸i, kh«ng thÓ nhËn th­ëng !");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		ShowBK2()-- Ğã³öBKÍæ¼Ò¿ÉÒÔ»ñµÃ
 end
 function Bonus4()
 		if (ST_GetTransLifeCount() ~= 1) then
-			Talk(1, "", "½±ÀøÖ»¸øÖØÉúÒ»´ÎµÄÈË");
+			Talk(1, "", "PhÇn th­ëng chØ dµnh cho ng­êi trïng sinh lÇn 1");
 			return
 		end
 		if (GetLevel() < 150) then
-			Talk(1, "", "Äã»¹Î´´ïµ½50¼¶Ìõ¼ş!");
+			Talk(1, "", "C¸c h¹ vÉn ch­a ®¹t ®iÒu kiÖn cÊp 150!");
 			return
 		end
 		if (GetFaction() == "") then
-			Talk(1, "", "ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÁì½±!");
+			Talk(1, "", "Ng­¬i ch­a gia nhËp m«n ph¸i, kh«ng thÓ nhËn th­ëng !");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		ShowBK5()
@@ -159,17 +159,17 @@ end
 function ShowBK2()
 		local strFaction = GetFaction()
 		if (tbItemHK[strFaction] == nil) then
-			Talk(1, "", "Äã»¹Î´¼ÓÈëÃÅÅÉ!");
+			Talk(1, "", "C¸c h¹ vÉn ch­a gia nhËp m«n ph¸i!");
 			return
 		end
 		local tbOpp = {}
-		local str = "<#> ÔÚ¸Ã½±ÀøÖĞ£¬ÎÒÔÊĞíÄãÑ¡ÔñÆäÖĞÒ»¸ö°×½ğ×°±¸£¬ÕâĞ©×°±¸ÒÑ±»Ç¿»¯+2";
+		local str = "<#> Trong phÇn th­ëng nµy ta cho phĞp ®¹i hiÖp chän 1 trong nh÷ng trang bŞ B¹ch Kim, C¸c trang bŞ nµy ®· ®­îc c­êng hãa  +2";
 		for i=1, getn(tbItemBK2[strFaction]) do
 			local strItemName = tbItemBK2[strFaction][i].szName
 			local nID =  tbItemBK2[strFaction][i].nID
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡".. strItemName.." /#GetBonusBK2(" .. nID .. ")");
+			tinsert(tbOpp,"Ta muèn nhËn".. strItemName.." /#GetBonusBK2(" .. nID .. ")");
 		end
-		tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+		tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 		if ( getn( tbOpp ) == 0 ) then
 			Say(str, 0);
 			return
@@ -179,17 +179,17 @@ end
 function ShowBK5()
 		local strFaction = GetFaction()
 		if (tbItemHK[strFaction] == nil) then
-			Talk(1, "", "Äã»¹Î´¼ÓÈëÃÅÅÉ!");
+			Talk(1, "", "C¸c h¹ vÉn ch­a gia nhËp m«n ph¸i!");
 			return
 		end
 		local tbOpp = {}
-		local str = "<#> ÔÚ¸Ã½±ÀøÖĞ£¬ÎÒÔÊĞíÄãÑ¡ÔñÆäÖĞÒ»¸ö°×½ğ×°±¸£¬ÕâĞ©×°±¸ÒÑ±»Ç¿»¯+5";
+		local str = "<#> Trong phÇn th­ëng nµy ta cho phĞp ®¹i hiÖp chän 1 trong nh÷ng trang bŞ B¹ch Kim, C¸c trang bŞ nµy ®· ®­îc c­êng hãa  +5";
 		for i=1, getn(tbItemBK5[strFaction]) do
 			local strItemName = tbItemBK5[strFaction][i].szName
 			local nID =  tbItemBK5[strFaction][i].nID
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡".. strItemName.." /#GetBonusBK5(" .. nID .. ")");
+			tinsert(tbOpp,"Ta muèn nhËn".. strItemName.." /#GetBonusBK5(" .. nID .. ")");
 		end
-		tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+		tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 		if ( getn( tbOpp ) == 0 ) then
 			Say(str, 0);
 			return
@@ -206,8 +206,8 @@ function GetBonusBK5(nID)
 		SetItemBindState(nItemIdx, -2);
 		SyncItem(nItemIdx)
 		local strItemName = GetItemName(nItemIdx)
-		Msg2Player("Äã»ñµÃ"..strItemName)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."BK5³É¼¨½±Àø»ñµÃ"..strItemName)
+		Msg2Player("B¹n nhËn ®­îc "..strItemName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch BK5 nhËn ®­îc "..strItemName)
 end
 
 function GetBonusBK2(nID)
@@ -220,23 +220,23 @@ function GetBonusBK2(nID)
 		SetItemBindState(nItemIdx, -2);
 		SyncItem(nItemIdx)
 		local strItemName = GetItemName(nItemIdx)
-		Msg2Player("Äã»ñµÃ"..strItemName)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."BK2³É¼¨½±Àø»ñµÃ"..strItemName)
+		Msg2Player("B¹n nhËn ®­îc "..strItemName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch BK2 nhËn ®­îc "..strItemName)
 end
 function ShowHKMP()
 	local strFaction = GetFaction()
 	if (tbItemHK[strFaction] == nil) then
-		Talk(1, "", "Äã»¹Î´¼ÓÈëÃÅÅÉ!");
+		Talk(1, "", "C¸c h¹ vÉn ch­a gia nhËp m«n ph¸i!");
 		return
 	end
 	local tbOpp = {}
-	local str = "<#> ÔÚ¸Ã½±ÀøÖĞ£¬ÎÒÔÊĞíÄãÑ¡ÔñÆäÖĞÒ»¸ö°×½ğ×°±¸£¬ÕâĞ©×°±¸ÒÑ±»Ç¿»¯";
+	local str = "<#> Trong phÇn th­ëng nµy ta cho phĞp ®¹i hiÖp chän 1 trong nh÷ng trang bŞ Hoµng Kim M«n Ph¸i vµ nh÷ng phÇn th­ëng cã gi¸ trŞ kh¸c";
 	for i=1, getn(tbItemHK[strFaction]) do
 		local strItemName = tbItemHK[strFaction][i].szName
 		local nID =  tbItemHK[strFaction][i].nID
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡".. strItemName.." /#GetBonusHK(" .. nID .. ")");
+		tinsert(tbOpp,"Ta muèn nhËn".. strItemName.." /#GetBonusHK(" .. nID .. ")");
 	end
-	tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
 		return
@@ -251,13 +251,13 @@ function GetBonusHK(nID)
 	SetItemBindState(nIndex, -2);
 	SyncItem(nIndex)
 	local strItemName = GetItemName(nIndex)
-	Msg2Player("Äã»ñµÃ"..strItemName)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."HKMP³É¼¨½±Àø»ñµÃ"..strItemName)
+	Msg2Player("B¹n nhËn ®­îc "..strItemName)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch HKMP nhËn ®­îc "..strItemName)
 	--thang cap 90 sau khi ®a trung sinh
 	if (GetLevel() < 90) then
 		LevelUp(90)
-		Msg2Player("Äã»ñµÃµÚÒ»´ÎÖØÉúÉı¼¶Îª90¼¶µÄ½±Àø")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃµÚÒ»´ÎÖØÉúÉı¼¶Îª90¼¶µÄ½±Àø")
+		Msg2Player("B¹n nhËn ®­îc th¨ng cÊp 90 sau trïng sinh lÇn 1")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc th¨ng cÊp 90 sau trïng sinh lÇn 1")
 	end
 	
 	-- add 5 vo lam mat tich
@@ -268,8 +268,8 @@ function GetBonusHK(nID)
 			SetItemBindState(itemindx, -2);
 			SyncItem(itemindx)
 			local strItemName = GetItemName(itemindx)
-			Msg2Player("Äã»ñµÃ"..strItemName)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItemName)
+			Msg2Player("B¹n nhËn ®­îc "..strItemName)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItemName)
 	end
 	--add 5 tay tuy kinh
 	for i=1,5 do
@@ -279,8 +279,8 @@ function GetBonusHK(nID)
 			SetItemBindState(itemindx, -2);
 			SyncItem(itemindx)
 			local strItemName = GetItemName(itemindx)
-			Msg2Player("Äã»ñµÃ"..strItemName)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItemName)
+			Msg2Player("B¹n nhËn ®­îc "..strItemName)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItemName)
 	end
 	--Add mat na quy anh
 	local itemindx = AddItem(0,11,455,1,0,0)
@@ -289,25 +289,25 @@ function GetBonusHK(nID)
 	SetItemBindState(itemindx, -2);
 	SyncItem(itemindx)
 	local strItemName = GetItemName(itemindx)
-	Msg2Player("Äã»ñµÃ"..strItemName)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItemName)
+	Msg2Player("B¹n nhËn ®­îc "..strItemName)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItemName)
 	-- add ngua bon tieu cap 10
 	local numindx = AddItem(0,10,6,10,0,0)
 	SetItemBindState(numindx, -2);
 	SyncItem(numindx)
 	local strItemName = GetItemName(numindx)
-	Msg2Player("Äã»ñµÃ"..strItemName)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItemName)
+	Msg2Player("B¹n nhËn ®­îc "..strItemName)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItemName)
 end
 
 function Bonus5()
 		local szTongName , nTongID = GetTongName()
 		if (nTongID < 1) then
-			Talk(1, "", "ÄãÎ´¼ÓÈë°ï»á!");
+			Talk(1, "", "Ng­¬i ch­a gia nhËp bang héi !");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich5, 1)
@@ -318,17 +318,17 @@ function Bonus5()
 			SetItemBindState(ndx, -2)
 			SyncItem(ndx);
 			local strItem = GetItemName(ndx)
-			Msg2Player("Äã»ñµÃ"..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 end
 
 function Bonus8()
 		if (GetRepute() < 500) then
-			Talk(1, "", "ÄãÎ´´ï500ÃûÍûÖµ");
+			Talk(1, "", "Ng­¬i ch­a ®¹t 500 ®iÓm danh väng");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich8, 1)
@@ -340,23 +340,23 @@ function Bonus8()
 			SetItemBindState(ndx, -2)
 			SyncItem(ndx);
 			local strItem = GetItemName(ndx)
-			Msg2Player("Äã»ñµÃ"..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 
 end
 
 function Bonus6()
 	local strFaction = GetFaction()
 	if (tbItemHK[strFaction] == nil) then
-		Talk(1, "", "Äã»¹Î´¼ÓÈëÃÅÅÉ!");
+		Talk(1, "", "C¸c h¹ vÉn ch­a gia nhËp m«n ph¸i!");
 		return
 	end
 	if (CheckIsSkill90() ~= 1) then
-		Talk(1, "", "Çë´óÏÀÁ·Ï°90¼¼ÄÜµ½20¼¶ºóÀ´Áì½± !");
+		Talk(1, "", "§¹i hiÖp h·y luyÖn mét Skill 90 lªn 20 cÊp råi h·y ®Õn nhËn th­ëng !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return
 	end
 	SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich6, 1)
@@ -367,30 +367,30 @@ function Bonus6()
 			SetItemBindState(ndx, -2)
 			SyncItem(ndx);
 			local strItem = GetItemName(ndx)
-			Msg2Player("Äã»ñµÃ"..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc "..strItem)
 end
 
 
 function Bonus7()
 	local strFaction = GetFaction()
 	if (tbItemHK[strFaction] == nil) then
-		Talk(1, "", "Äã»¹Î´¼ÓÈëÃÅÅÉ!");
+		Talk(1, "", "C¸c h¹ vÉn ch­a gia nhËp m«n ph¸i!");
 		return
 	end
 	if (CheckIsSkill120() ~= 1) then
-		Talk(1, "", "Çë´óÏÀÁ·Ï°120¼¼ÄÜµ½20¼¶ºóÀ´Áì½±!");
+		Talk(1, "", "§¹i hiÖp h·y luyÖn mét Skill 120 lªn 20 cÊp råi h·y ®Õn nhËn th­ëng !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 		return
 	end
 	SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich7, 1)
 	--M?r­¬ng chua do thu 1
 	OpenStoreBox(1)
-	Msg2Player("Äã»ñµÃ´ò¿ªµÚÒ»¸ö´¢ÎïÏä")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."³É¼¨½±Àø»ñµÃ´ò¿ªµÚÒ»¸ö´¢ÎïÏä")
+	Msg2Player("B¹n nhËn ®­îc më r­¬ng chøa ®å thø nhÊt")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."PhÇn th­ëng thµnh tİch nhËn ®­îc më r­¬ng chøa ®å thø nhÊt")
 end
 
 function CheckIsSkill90()

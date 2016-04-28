@@ -2,15 +2,15 @@
 -- ÉúÈÕ¿¨
 -- »ñµÃËæ»úÁùÕÅ¿¨
 
-szTitle="<#>ÇëÑ¡Ôñ×£¸£Óï£º"
+szTitle="<#> H·y chän c©u chóc:"
 Bless=
 {
-	"<#>ÓÖÒ»¸öÃÀºÃ¿ªÊ¼£¬Ô¸ÎÒ×£¸£´ø¸øÄã³É¹¦µÄÒ»Äê£¬ÉúÈÕ¿ìÀÖ¡£",
-	"<#>Èı¸öÉúÈÕ×£Ô¸£ºÒ»Ô¸ÉíÌå½¡¿µ¶şÔ¸ĞÒ¸£¿ìÀÖÈıÔ¸ÍòÊÂÈçÒâ¡£",
-	"<#>ÕªÒ»Æ¬Ñ©»¨´®³É½à°×µÄÊ÷¹Ò£¬ÎªÄãÉúÈÕ·îÏ×Ò»¶äÁÁÀöĞÄ»¨¡£",
-	"<#>ËÍÒ»·İÀñÎï±íÒ»ÇúĞÄÉù£ºÄêÄê³¤ĞÂÖªËêËê¸ü½ø²½ÉúÈÕ¿ìÀÖ¡£",
-	"<#>Ô¸ËùÓĞ¿ìÀÖ¡¢ĞÒ¸£¡¢ºÃÔËÓÀÔ¶Î§ÈÆÔÚÄãÉí±ß£¬ÉúÈÕ¿ìÀÖ¡£",
-	"<#>Ë¼ÄîÖĞÎÒÏëÆğÄãµÄÉúÈÕ£¬ÕæĞÄ×£¸£ÄãÓµÓĞÒ»¸ö¿ìÀÖµÄÉúÈÕ¡£",
+	"<#> Mét ngµy míi l¹i b¾t ®Çu, chóc b¹n n¨m míi ®Çy thµnh c«ng 'Chóc sinh nhËt vui vÎ'.",
+	"<#> NguyÖn chóc b¹n trong ®ªm sinh nhËt lu«n vui vÎ, h¹nh phóc bªn nh÷ng ng­êi b¹n yªu quı nhÊt.",
+	"<#> D©ng tÆng b¹n nh÷ng ®ãa hoa xinh ®Ñp nhÊt trong ngµy sinh nhËt.",
+	"<#> TÆng b¹n mãn quµ vµ chóc b¹n sinh nhËt vui vÎ, lu«n ®¹t thµnh c«ng trong con ®­êng häc tËp.",
+	"<#> NguyÖn nh÷ng ®iÒu tèt lµnh, may m¾n nhÊt ®Õn víi b¹n 'Chóc sinh nhËt vui vÎ'.",
+	"<#> BÊt chît nhí ra ngµy sinh nhËt cña b¹n, kh«ng biÕt nãi g× h¬n ngoµi lêi chóc ch©n t×nh nhÊt trong ngµy sinh nhËt cña b¹n.",
 }
 
 ITEM_TASK_TEMP=27
@@ -25,7 +25,7 @@ FuncBless={}
 
 function main(sel)
 	if (GetTaskTemp(UNIQUE_USE_TASK_TEMP) > 0) then
-		Msg2Player("ÄãÏÖÔÚÕıÔÚ½øĞĞÆäËû×£¸££¬ÇëÉÔºòÔÙÊÔ¡£");
+		Msg2Player("B¹n hiÖn ®ang ph¸t c©u chóc! Xin vui lßng ®îi mét l¸t!");
 		return 1
 	end
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 1);
@@ -36,7 +36,7 @@ function main(sel)
 	end
 
 	nSelectCount = nSelectCount + 1;
-	FuncBless[nSelectCount] = "È¡Ïû/QueryWiseManCancel"
+	FuncBless[nSelectCount] = "Hñy bá /QueryWiseManCancel"
 
 	Say(szTitle, getn(Bless), FuncBless);
 	SetTaskTemp(ITEM_TASK_TEMP,sel);
@@ -62,20 +62,20 @@ function BlessPlayerOnline(TargetName, nSelect, LifeMax, ManaMax, PKValue, Playe
 	if (ItemIdx > 0 and ItemGenre == ITEM_GENRE and DetailType == ITEM_DETAIL and ParticularType == ITEM_PARTI) then
 		if (RemoveItemByIndex(ItemIdx) == 1) then
 			local szMsg
-			szMsg = GetName().."<#>¶Ô"..TargetName.."<#>Ëµ£º"..Bless[nSelect + 1]
+			szMsg = GetName().."<#> nãi víi "..TargetName.."<#> "..Bless[nSelect + 1]
 			AddGlobalCountNews(szMsg,1);
 		else
-			Msg2Player("ÕÒ²»µ½¿¨Æ¬£¬ÇëÖØÊÔÒ»´Î¡£")
+			Msg2Player("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.")
 		end
 	else
-		Msg2Player("¿¨Æ¬Ê¹ÓÃÊ§°Ü£¬ÇëÖØÊÔÒ»´Î¡£")
+		Msg2Player("Sö dông thÎ thÊt b¹i, xin thö l¹i 1 lÇn.")
 	end
 	SetTaskTemp(ITEM_TASK_TEMP,0)
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 
 function BlessPlayerOffline(TargetName, nSelect)
-	Msg2Player("ÄãÏë×£¸£µÄÍæ¼ÒÏÖÔÚ²»ÔÚÏß£¬ÇëÉÔºòÔÙÊÔ¡£");
+	Msg2Player("Ng­êi mµ b¹n muèn chóc phóc hiÖn kh«ng cã trªn m¹ng! §îi lóc sau thö l¹i!.");
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 

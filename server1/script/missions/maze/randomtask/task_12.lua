@@ -1,5 +1,5 @@
--- ÓÐ½ðÄ¾Ë®»ðÍÁÎå×ð·ðÏñ£¨5¸öµØµãËæ»úÊôÐÔ£©£¬Òª°´ÕÕË³Ðò¿ªÆô£¨¶ÁÌõ3Ãë£©²ÅÄÜÕÙ»½³ö»á³öÏÖ·´µ¯µÄÊ®°ËÍ­ÈË£¨18¸ö£©£¬
--- Èç¹ûÓÐÒ»¸ö·ðÏñË³Ðò²»¶Ô¾ÍÒªÖØÐÂ´Ó½ð¿ªÊ¼¿ªÆô¡£»÷°ÜÊ®°ËÍ­ÈËºó³öÏÖBOSSÍ¯ÈÊ£¬»÷°ÜBOSSºó¹ý¹Ø¡£
+-- ÓÐKimMécThñy HáaThæ Îå×ð·ðÏñ£¨5¸öµØµãËæ»úÊôÐÔ£©£¬Òª°´ÕÕË³Ðò¿ªÆô£¨¶ÁÌõ3Ãë£©²ÅÄÜÕÙ»½³ö»á³öÏÖ·´µ¯µÄÊ®°ËÍ­ÈË£¨18¸ö£©£¬
+-- Èç¹ûÓÐÒ»¸ö·ðÏñË³Ðò²»¶Ô¾ÍÒªÖØÐÂ´ÓKim¿ªÊ¼¿ªÆô¡£»÷°ÜÊ®°ËÍ­ÈËºó³öÏÖBOSSÍ¯ÈÊ£¬»÷°ÜBOSSºó¹ý¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -7,10 +7,10 @@ Include("\\script\\missions\\maze\\progressbar.lua")
 Include("\\script\\lib\\player.lua")
 Include("\\script\\global\\playerlist.lua")
 
-tbTASK12_SERIESNAME = {"½ð", "Ä¾", "Ë®", "»ð", "ÍÁ"}
+tbTASK12_SERIESNAME = {"Kim", "Méc", "Thñy ", "Háa", "Thæ "}
 
 pTask = Task:New(12)
-pTask.m_Series = {0, 1, 2, 3, 4}	-- ·Ö±ðÎªÎåÐÐµÄID£º½ðÄ¾Ë®»ðÍÁ
+pTask.m_Series = {0, 1, 2, 3, 4}	-- ·Ö±ðÎªÎåÐÐµÄID£ºKimMécThñy HáaThæ 
 
 function pTask:OnStart()
 	self.m_Joss = {}
@@ -27,7 +27,7 @@ function pTask:OnStart()
 		local nIndex = random(1, getn(joss))
 		local tb = joss[nIndex]
 		tremove(joss, nIndex)
-		local name = format("·ðÏñ (%s)", tbTASK12_SERIESNAME[tb[2]])
+		local name = format("T­îng PhËt (%s)", tbTASK12_SERIESNAME[tb[2]])
 		local nNpcIndex = DlgNpcManager:AddNpc(name, tb[1], mapid, pos_joss[i].x, pos_joss[i].y, self, i)
 		local param = {}
 		param.Series = self.m_Series[tb[2]]
@@ -67,29 +67,29 @@ end
 
 function pTask:Say(player, nIndex)
 	if (self.m_BarId > 0) then
-		player:Say("»ú¹ØÕýÔÚ´ò¿ª£¬²»ÐèÒªÔÙ¿ªÁË")
+		player:Say("C¬ quan ®ang ®­îc më, kh«ng cÇn ph¶i më l¹i")
 		return
 	elseif (getn(self.m_Monsters) > 0) then
-		player:Say("»ú¹ØÒÑ´ò¿ª£¬²»ÐèÒªÔÙ¿ªÁË")
+		player:Say("C¬ quan ®· ®­îc më, kh«ng cÇn ph¶i më l¹i")
 		return
 	end
-	self.m_BarId = ProgressBarList:Open("ÕýÔÚ´ò¿ª", player, 3, self, nIndex)
+	self.m_BarId = ProgressBarList:Open("§ang më", player, 3, self, nIndex)
 end
 
 function pTask:OnProgressbarTimeout(nId, nIndex)
 	self.m_BarId = 0
 	local tb = self.m_Joss[nIndex]
 	if (tb.Series ~= self.m_Series[self.m_SeriesIndex]) then
-		self:BroadCast("´ò¿ªË³Ðò²»¶Ô£¬ÇëÖØÐÂ¿ª")
+		self:BroadCast("Më kh«ng ®óng thø tù, xin h·y më l¹i")
 		self.m_SeriesIndex = 1
 	else
-		self:BroadCast("ÕýÔÚ´ò¿ª.")
+		self:BroadCast("Më thµnh c«ng.")
 		self.m_SeriesIndex = self.m_SeriesIndex + 1
 		if (self.m_SeriesIndex > getn(self.m_Series)) then
 			local mapid = self:GetMapId()
 			local pos = self:GetPosition().t12_monster
 			for i = 1, 18 do
-				local nNpcIndex = FightNpcManager:AddNpc("Í¬ÈÊ", 1712, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
+				local nNpcIndex = FightNpcManager:AddNpc("§ång Nh©n", 1712, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
 				tinsert(self.m_Monsters, nNpcIndex)
 			end
 		end
@@ -112,7 +112,7 @@ function pTask:OnDeath(nKilledIndex, pPlayer, nIndex)
 		if (self.m_BossIndex > 0) then
 			FightNpcManager:DelNpc(self.m_BossIndex)
 		end
-		self.m_BossIndex = FightNpcManager:AddNpc("Í¬ÈÊ", 1713, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
+		self.m_BossIndex = FightNpcManager:AddNpc("§ång Nh©n", 1713, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
 	else
 		self.m_BossIndex = 0
 		self:Proceed()

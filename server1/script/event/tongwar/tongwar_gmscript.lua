@@ -9,7 +9,7 @@ function tongwar_gw_say(rolename, str, b_msg)
 		if b_msg then
 			Msg2Player(str)
 		else
-			Say("ÎäÁÖ´«ÈË"..str, 0)
+			Say("Vâ l©m truyÒn nh©n:"..str, 0)
 		end
 		PlayerIndex = n_old
 	end

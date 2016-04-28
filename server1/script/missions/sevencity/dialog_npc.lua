@@ -7,22 +7,22 @@ tbVngLimitTime = {}
 
 -- Include to call  ITEM_SetExpiredTime - Created by TinhPN - 20110425
 IncludeLib("ITEM")
--- ¹¥³ÇÕ½Àñ°ü½±Àø
+-- C«ng Thµnh LÔ Bao½±Àø
 AWARD_BOX = {
-	Name = "¹¥³ÇÕ½Àñ°ü",
+	Name = "C«ng Thµnh LÔ Bao",
 	ID = {6, 1, 2815, 1},
 	RemoteCall = "Protocol:ReduceBox",
 }
 
--- »ìÔªÁéÂ¶½±Àø
+-- Hçn Nguyªn Linh Lé½±Àø
 AWARD_DEW = {
-	Name = "»ìÔªÁéÂ¶",
+	Name = "Hçn Nguyªn Linh Lé",
 	ID = {6, 1, 2312, 1},
 	RemoteCall = "Protocol:ReduceDew",
 }
 
 AWARD_GUARD = {
-	Name = "ÎÀÖ÷Àñ°ü",
+	Name = "VÖ Trô LÔ Bao",
 	ID = {6, 1, 2814, 1},
 	RemoteCall = "Protocol:ReduceGuardAward",
 }
@@ -31,51 +31,51 @@ AWARD_GUARD = {
 QUERY_TABLE = {}
 
 function main()
-	Say("ÕâÊÇ¹¥³ÇÕ½ĞİÏ¢µÄµØ·½£¬ÄãÀ´ÓĞÊ²Ã´ÊÂ£¿",
+	Say("§©y lµ n¬i nghŞ sù c«ng thµnh chiÕn, ng­¬i ®Õn cã viÖc g×?",
 		6,
-		"ÎÒÀ´½»ÁîÅÆ/GiveTiaoZhanLing",
-		"ÎÒÏë¿´ÌôÕ½Èü¹«²¼°æµÄÈËÊı/ViewTiaoZhanLing",
-		"±¨Ãû²Î¼ÓÆß³Ç´óÕ½/dlg_signup",
-		"½øÆß³Ç´óÕ½Õ½³¡/dlg_enter",
-		"»ñµÃÆß³Ç´óÕ½½±Àø/dlg_query",
-		"²»ĞèÒªÊ²Ã´ÁË?/Cancel")
+		"Ta ®Õn giao lÖnh bµi/GiveTiaoZhanLing",
+		"Ta muèn xem sè l­îng khiªu chiÕn lÖnh cña bang/ViewTiaoZhanLing",
+		"B¸o danh tham gia thÊt thµnh ®¹i chiÕn/dlg_signup",
+		"Vµo chiÕn tr­êng thÊt thµnh ®¹i chiÕn/dlg_enter",
+		"NhËn phÇn th­ëng thÊt thµnh ®¹i chiÕn/dlg_query",
+		"Kh«ng muèn g× c¶ /Cancel")
 end
 
 function dlg_signup()
 	local state = BattleWorld.m_State
 	if (state == STATE_INIT) then
-		Say("Æß³Ç´óÕ½»¹Ã»¿ªÊ¼, ÇëÄÍĞÄµÈ´ı.")
+		Say("ThÊt ®¹i chiÕn vÉn ch­a b¾t ®Çu, xin h·y nhÉn n¹i chê ®îi.")
 	elseif (state == STATE_CLOSESIGNUP) then
-		Say("Æß³Ç´óÕ½µÄ±¨ÃûÊ±¼äÒÑ¾­½áÊø.")
+		Say("Thêi gian b¸o danh thÊt thµnh ®¹i chiÕn ®· hÕt.")
 	elseif (state == STATE_PREPARING) then
-		Say("Æß³Ç´óÕ½ÒÑ¾­½øÈë×¼±¸½×¶Î£¬ÏÖÔÚ²»ÄÜ±¨ÃûÁË")
+		Say("ThÊt thµnh ®¹i chiÕn ®· b¾t ®Çu giai ®o¹n chuÈn bŞ, hiÖn t¹i kh«ng thÓ b¸o danh")
 	elseif (state == STATE_STARTWAR) then
-		Say("Æß³Ç´óÕ½ÒÑ¾­¿ªÊ¼£¬²»ÄÜ±¨ÃûÁË.")
+		Say("ThÊt thµnh ®¹i chiÕn ®· b¾t ®Çu, kh«ng thÓ b¸o danh ®­îc.")
 	elseif (state == STATE_CLOSEWAR) then
-		Say("Æß³Ç´óÕ½½áÊø")
+		Say("ThÊt thµnh ®¹i chiÕn ®· kÕt thóc")
 	elseif (state == STATE_STARTSIGNUP) then
-		Say("Æß³Ç´óÕ½½øÈë±¨Ãû½×¶Î,ÖîÎ»°ïÖ÷´ú±íÕû°ï±¨Ãû²Î¼Ó£¬±¨Ãû·ÑÓÃ <color=red>2000ÍòÒøÁ½<color>ºÍ<color=red>2000ÌôÕ½Áî<color>. \nBang Õ¼³Ç´ó»á²»ĞèÒª±¨Ãû¾ÍÄÜÖ±½Ó½øÈë",
+		Say("ThÊt thµnh ®¹i chiÕn ®ang vµo giai ®o¹n b¸o danh, ch­ vŞ bang chñ h·y ®¹i diÖn bæn bang ®Ó b¸o danh tham gia, phİ b¸o danh <color=red>2000 v¹n ng©n l­îng<color> vµ<color=red> 2000 khiªu chiÕn lÖnh<color>. \nBang héi chiÕm thµnh kh«ng cÇn b¸o danh vµ cã thÓ trùc tiÕp vµo",
 			2,
-			"ÎÒÏë±¨Ãû²Î¼Ó/action_signup",
-			"ÈÃÎÒ¿¼ÂÇÒ»ÏÂ/Cancel")
+			"Ta muèn b¸o danh tham gia/action_signup",
+			"§Ó ta suy nghÜ l¹i/Cancel")
 	end
 end
 
 function dlg_enter()
 	local state = BattleWorld.m_State
 	if (state ~= STATE_PREPARING and state ~= STATE_STARTWAR) then
-		Say("ÏÖÔÚ²»ÄÜ½øÈëÕ½³¡, ÇëµÈÍ¨±¨.")
+		Say("HiÖn t¹i kh«ng thÓ tiÕn vµo chiÕn tr­êng, xin h·y ®îi th«ng b¸o.")
 	else
 		local srcid = SubWorldIdx2ID(SubWorld)
 		local dstid = BATTLE_LIST[srcid]
 		if (not dstid) then
 			WriteLog("[ERROR SEVENCITY]wrong entrance map: %d", srcid)
-			Say("Äã´ÓÄÄÀ´?Òªµ½ÄÄÈ¥?")
+			Say("Ng­¬i ®Õn tõ ®©u? Muèn ®i ®©u?")
 		else
-			Say("ÄãºÃ£¬²Î¼ÓÆß³Ç´óÕ½.",
+			Say("Chµo mõng tham gia thÊt thµnh ®¹i chiÕn.",
 				2,
-				format("½øÈë%s/#action_enter(%d)", MAP_INFO[dstid].Name, dstid),
-				"ÔİÊ±²»²Î¼Ó/Cancel")
+				format("TiÕn vµo %s/#action_enter(%d)", MAP_INFO[dstid].Name, dstid),
+				"T¹m thêi kh«ng tham gia/Cancel")
 		end
 	end
 end
@@ -85,7 +85,7 @@ function dlg_query()
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
 	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "ĞÇÆÚ<color=red>5<color>, ´Ó<color=red>21h45<color> µ½ <color=red>23h50<color> ²ÅÊÇ¿ª³¡Ê±¼ä, Çë´óÏÀÉÔºó»ØÀ´.")
+		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	
@@ -96,7 +96,7 @@ function dlg_query()
 		local nLastAwardTime = tbVngLimitTime[name]
 		local nRestTime =(nTime - nLastAwardTime)
 		if nRestTime < 60*2  then
-			Talk(1, "", format("Ã¿´ÎÁì½±ÒªÏà¸ô<color=red>2<color> ·ÖÖÓ. ÕâÎ»´óÏÀ<color=red>%d<color> ÃëºóÔÙÖØÊÔ.", (60*2 - nRestTime)))
+			Talk(1, "", format("Mçi lÇn nhËn th­ëng ph¶i c¸ch nhau <color=red>2<color> phót. VŞ §¹i hiÖp nµy <color=red>%d<color> gi©y n÷a h·y thö l¹i.", (60*2 - nRestTime)))
 			return
 		end	
 	end	
@@ -104,7 +104,7 @@ function dlg_query()
 	
 	local state = BattleWorld.m_State
 	if (state == STATE_PREPARING or state == STATE_STARTWAR) then
-		Say("ÇëÏÈÖØÊÓÕ½ÊÂÖ®ºóÔÙ¿¼ÂÇÁì½±Àø")
+		Say("Xin h·y coi träng viÖc chiÕn sù tr­íc råi míi nghÜ ®Õn viÖc nhËn phÇn th­ëng")
 	else
 		-- ·ÀÖ¹ÖØ¸´Áì½±
 		if (QUERY_TABLE[name] ~= nil) then
@@ -139,7 +139,7 @@ function action_enter(mapid)
 	else
 		local field = BattleWorld:FindField(mapid)
 		if (not field) then
-			player:Say("´ÓÀ´Ã»ÌıËµ¹ıÕâ¸öµØ·½")
+			player:Say("Ch­a tõng nghe qua cã n¬i nµy")
 			BattleWorld:Log(format("[ERROR SEVENCITY]field(%d) not found", mapid))
 		elseif (field:Login(player) == 0) then
 			BattleWorld:Log(format("[ERROR SEVENCITY]failed to login field(%d)", mapid))
@@ -163,28 +163,28 @@ function process_award(param, result)
 	end
 	local player = Player:New(index)
 	if (not info or GetName() ~= name) then
-		player:Say("Æß³Ç´óÕ½ÄãÒ²»¹Ã»ÓĞ½±Àø")
+		player:Say("Ng­¬i vÉn ch­a cã phÇn th­ëng thÊt thµnh ®¹i chiÕn")
 		return
 	end
 	if (info.BoxCount == 0 and info.GuardAwardCount == 0 and info.ExpAward == 0) then
-		player:Say("ÄãÒÑ¾­»ñµÃÕâ¸ö½±ÀøÁË.")
+		player:Say("Ng­¬i ®· nhËn qua phÇn th­ëng nµy råi.")
 		return
 	end
-	local caption = format("Äã»¹ÓĞ<color=red>%d<color>¹¥³ÇÀñ°ü, <color=red>%d<color>ÎÀÖ÷Àñ°üºÍ<color=red>%d<color>Î´Áì¾­Ñé½±Àø .",
+	local caption = format("Ng­¬i cßn cã<color=red>%d<color> C«ng Thµnh LÔ Bao, <color=red>%d<color> VÖ Trô LÔ Bao vµ <color=red>%d<color> phÇn th­ëng kinh nghiÖm ch­a nhËn.",
 						info.BoxCount,
 						info.GuardAwardCount,
 						info.ExpAward)
 	local options = {}
 	if (info.BoxCount > 0) and (GetName() == GetTongMaster())  then
-		tinsert(options, format("ÎÒÏë»ñµÃ¹¥³ÇÀñ°ü/#action_awardbox(%d)", info.BoxCount))
+		tinsert(options, format("Ta muèn nhËn C«ng Thµnh LÔ Bao/#action_awardbox(%d)", info.BoxCount))
 	end
 	if (info.GuardAwardCount > 0) then
-		tinsert(options, format("ÎÒÏë»ñµÃÎÀÖ÷Àñ°ü/#action_guardaward(%d)", info.GuardAwardCount))
+		tinsert(options, format("Ta muèn nhËn VÖ Trô LÔ Bao/#action_guardaward(%d)", info.GuardAwardCount))
 	end
 	if (info.ExpAward > 0) then
-		tinsert(options, format("ÎÒÏë»ñµÃ¾­Ñé½±Àø/#action_expaward(%d)", info.ExpAward))
+		tinsert(options, format("Ta muèn nhËn phÇn th­ëng kinh nghiÖm/#action_expaward(%d)", info.ExpAward))
 	end
-	tinsert(options, "ÏÂ´Î»ñµÃ/Cancel")
+	tinsert(options, "Lóc kh¸c nhËn/Cancel")
 	Say(caption, getn(options), options)
 end
 
@@ -193,7 +193,7 @@ function action_expaward(exp)
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
 	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "ĞÇÆÚ<color=red>5<color>, ´Ó<color=red>21h45<color> µ½ <color=red>23h50<color> ²ÅÊÇÁì½±Ê±¼ä, Çë´óÏÀÉÔºó¹éÀ´.")
+		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	StackExp(exp)
@@ -210,7 +210,7 @@ end
 
 function action_awardbox(count)
 	if GetName() ~= GetTongMaster() then
-		Talk(1, "", "Ö»ÓĞ°ïÖ÷²ÅÄÜÓĞÈ¨Áì½±")
+		Talk(1, "", "ChØ cã bang chñ míi cã quyÒn nhËn th­ëng")
 		return
 	end	
 	action_awarditem(count, AWARD_BOX, 50)
@@ -222,15 +222,15 @@ end
 
 function action_awarditem(count, award, max_count)
 --[DinhHQ]
---20110318:Fix bug Áì¹¥³ÇÕ½Àñ°ü	
+--20110318:Fix bug ÁìC«ng Thµnh LÔ Bao	
 	local nWeekDay = tonumber(GetLocalDate("%w"))
 	local nHour = tonumber(GetLocalDate("%H%M"))
 	if nWeekDay ~= 5  or nHour < 2145 or nHour > 2350 then
-		Talk(1, "", "ĞÇÆÚ<color=red>5<color>, ´Ó<color=red>21h45<color> ®Õµ½<color=red>23h50<color> ²ÅÊÇÁì½±Ê±¼ä,Çë´óÏÀÉÔºó¹éÀ´.")
+		Talk(1, "", "Thø <color=red>6<color>, tõ <color=red>21h45<color> ®Õn <color=red>23h50<color> míi lµ thêi gian nhËn th­ëng, xin ®¹i hiÖp h·y quay l¹i sau.")
 		return
 	end
 	if (CalcFreeItemCellCount() < 60) then
-		Say("×°±¸ÖÁÉÙÒªÓĞ<color=red>60<color>¿ÕÎ»²ÅÄÜÁì½±.")
+		Say("Hµnh trang İt nhÊt ph¶i cã <color=red>60<color> « trèng míi nhËn ®­îc phÇn th­ëng.")
 		return
 	end
 	local actual_count = 0
@@ -260,9 +260,9 @@ function action_awarditem(count, award, max_count)
 	RemoteExecute(REMOTE_SCRIPT, award.RemoteCall, buff.m_Handle)
 	buff:Destroy()
 	if (actual_count == count) then
-		Say(format("ÕâÊÇ<color=red>%d<color> <color=red>%s<color>, ÇëÁìÈ¡.", count, award.Name))
+		Say(format("§©y lµ <color=red>%d<color> <color=red>%s<color>, xin h·y nhËn lÊy.", count, award.Name))
 	else
-		Say(format("ÒÑ¾­ÁìÈ¡ <color=red>%d<color> <color=red>%s<color>, ÇëÕûÀí×°±¸ÁìÈ¡Ê£ÓàµÄÊıÁ¿ <color=red>%d<color> %s.",
+		Say(format("§· nhËn <color=red>%d<color> <color=red>%s<color>, xin h·y dän dÑp hµnh lı ®Ó nhËn sè cßn l¹i <color=red>%d<color> %s.",
 			actual_count,
 			award.Name,
 			count - actual_count,

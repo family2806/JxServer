@@ -1,7 +1,7 @@
---两湖区 巴陵县 西门石碑2
+--两湖区 Ba L╪g huy謓 西门石碑2
 
 function main(sel)
 
-Say("巴陵县",  0);
+Say("Ba L╪g huy謓",  0);
 
 end;

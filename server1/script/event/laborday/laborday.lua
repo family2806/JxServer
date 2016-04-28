@@ -10,101 +10,101 @@ BOSSNOWCOUNT = 0 --µ±Ç°ÕÙ»½µÄ»Æ½ðBossÊý
 ForbiddenMap = {44, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 326, 327, 328, 329, 330, 331, 334, 335, 337, 338, 339, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374}
 
 --»Æ½ðBoss	{ID,Name,Series}
-GoldenBoss = {{562, "µÀÇåÕæÈË", 4},
-			  {563, "Ò®ÂÉ±ÙÀë", 3},
-			  {564, "ÍêÑÕÑ©ÒÂ", 3},
-			  {565, "¶ËÄ¾î£", 3},
-			  {566, "¹Å°Ø", 0},
-			  {567, "ÖÓÁáÐã", 2},
-			  {568, "ºÎÁ¯Æ®", 2},
-			  {582, "À¶ÒÀÒÀ", 1},
-			  {583, "ÃÏ²ÔÀË", 3},
-			  {739, "Íõ×ô", 0},
-			  {740, "Ðþ¾õ´óÊ¦", 0},
-			  {741, "ÌÆ²»È¾", 1},
-			  {742, "°×Ó¨Ó¨", 1},
-			  {743, "ÇåÏþÊ¦Ì«", 2},
-			  {744, "æÌÐ¡Ù»", 2},
-			  {745, "ºÎÈËÎÒ", 3},
-			  {746, "µ¥Ë¼ÄÏ", 4},
-			  {747, "è¯çá×Ó", 4},
-			  {748, "º«ÃÉ", 1},
-			  {751, "´óÂí»¢",0}}
+GoldenBoss = {{562, "§¹o Thanh Ch©n Nh©n", 4},
+			  {563, "Gia LuËt TÞ Ly", 3},
+			  {564, "Hoµn Nhan TuyÕt Y", 3},
+			  {565, "§oan Méc DuÖ ", 3},
+			  {566, "Cæ B¸ch", 0},
+			  {567, "Chung Linh Tó ", 2},
+			  {568, "Hµ Linh Phiªu", 2},
+			  {582, "Lam Y Y", 1},
+			  {583, "M¹nh Th­¬ng L­¬ng", 3},
+			  {739, "V­¬ng T¸ ", 0},
+			  {740, "HuyÒn Gi¸c §¹i S­ ", 0},
+			  {741, "§­êng BÊt NhiÔm", 1},
+			  {742, "B¹ch Doanh Doanh", 1},
+			  {743, "Thanh HiÓu S­ Th¸i ", 2},
+			  {744, "Yªn HiÓu Tr¸i", 2},
+			  {745, "Hµ Nh©n Ng· ", 3},
+			  {746, "§¬n T­ Nam", 4},
+			  {747, "TuyÒn C¬ Tö ", 4},
+			  {748, "Hµn M«ng", 1},
+			  {751, "§¹i M· Hæ ",0}}
 
---´óÂí»¢Boss {ID,Name,Series}
-DamahuBoss = {{751, "´óÂí»¢",0},
-			  {752, "´óÂí»¢",0},
-			  {753, "´óÂí»¢",1},
-			  {754, "´óÂí»¢",1},
-			  {755, "´óÂí»¢",2},
-			  {756, "´óÂí»¢",2},
-			  {757, "´óÂí»¢",3},
-			  {758, "´óÂí»¢",3},
-			  {759, "´óÂí»¢",4},
-			  {760, "´óÂí»¢",4}}
+--§¹i M· Hæ Boss {ID,Name,Series}
+DamahuBoss = {{751, "§¹i M· Hæ ",0},
+			  {752, "§¹i M· Hæ ",0},
+			  {753, "§¹i M· Hæ ",1},
+			  {754, "§¹i M· Hæ ",1},
+			  {755, "§¹i M· Hæ ",2},
+			  {756, "§¹i M· Hæ ",2},
+			  {757, "§¹i M· Hæ ",3},
+			  {758, "§¹i M· Hæ ",3},
+			  {759, "§¹i M· Hæ ",4},
+			  {760, "§¹i M· Hæ ",4}}
 			  
 --Ð¡Boss	{ID,Name}
-NormalBoss = {{511, "ÕÅ×ÚÕý"},
-			  {513, "ÃîÈç"},
-			  {523, "ÁøÇàÇà"},
-			  {725, "Ë®ÔôÊ×Áì"}}
+NormalBoss = {{511, "Tr­¬ng T«ng ChÝnh"},
+			  {513, "DiÖu Nh­ "},
+			  {523, "LiÔu Thanh Thanh"},
+			  {725, "Thñy tÆc ®Çu lÜnh"}}
 			  
 --É±ÊÖÈÎÎñBoss	{ID,Name,Ãæ¾ß±àºÅ}
-MiniBoss = {{851, "²½Ïù³¾", 79},
-			{852, "ÇÇ¶¦Ìì", 80},
-			{853, "µóÒ×µ¶", 81},
-			{854, "Î÷ÃÅÎÞ½ä", 82},
-			{855, "ºòÆò½£", 83},
-			{856, "Ó¦Ð¥·ç", 84},
-			{857, "Ô¬ÄîÏ¦", 85},
-			{858, "èúÌìÃô", 86}}
+MiniBoss = {{851, "Bé Hiªu TrÇn", 79},
+			{852, "KiÒu §Ønh Thiªn", 80},
+			{853, "§iªu DÞch §ao", 81},
+			{854, "T©y M«n V« Giíi", 82},
+			{855, "HËu  KhÊt KiÕm", 83},
+			{856, "øng  Tiªu Phong", 84},
+			{857, "Viªn NiÖm TÞch", 85},
+			{858, "Trö Thiªn MÉn", 86}}
 
 --À¶¹Önpc	{ID,Name}	Í¬Ò»ÐÐ²»Í¬µÄid¶ÔÓ¦²»Í¬µÈ¼¶À¶¹ÖµÄdroprate
-GoldenNpc = {{859, 859, 859, 859, 860, 861, 862, 863, "°×»¢"},
-			 {864, 864, 864, 864, 865, 866, 867, 868, "ºÚÒ¶ºï"},
-			 {869, 869, 869, 869, 870, 871, 872, 873, "É½Ôô"},
-			 {874, 874, 874, 874, 875, 876, 877, 878, "Ë®Ôô"},
-			 {879, 879, 879, 879, 880, 881, 882, 883, "·ÉÉ³"},
-			 {884, 884, 884, 884, 885, 886, 887, 888, "ÀäÇ¹"},
-			 {889, 889, 889, 889, 890, 891, 892, 893, "ÒøÑÀ"},
-			 {894, 894, 894, 894, 895, 896, 897, 898, "³Ë·ç"},
-			 {899, 899, 899, 899, 900, 901, 902, 903, "ÃÉ¹ÅÎäÊ¿"},
-			 {904, 904, 904, 904, 905, 906, 907, 908, "Ëªµ¶"}}
+GoldenNpc = {{859, 859, 859, 859, 860, 861, 862, 863, "B¹ch hæ "},
+			 {864, 864, 864, 864, 865, 866, 867, 868, "H¾c DiÖp HÇu "},
+			 {869, 869, 869, 869, 870, 871, 872, 873, "S¬n TÆc "},
+			 {874, 874, 874, 874, 875, 876, 877, 878, "Thñy TÆc "},
+			 {879, 879, 879, 879, 880, 881, 882, 883, "Phi Sa "},
+			 {884, 884, 884, 884, 885, 886, 887, 888, "L·nh Th­¬ng"},
+			 {889, 889, 889, 889, 890, 891, 892, 893, "Ng©n Nha "},
+			 {894, 894, 894, 894, 895, 896, 897, 898, "Thõa Phong"},
+			 {899, 899, 899, 899, 900, 901, 902, 903, "M«ng Cæ Vâ sÜ "},
+			 {904, 904, 904, 904, 905, 906, 907, 908, "S­¬ng §ao"}}
 			 
 --ÆÕÍ¨npc	{ID,Name}
-NormalNpc = {{2, "»ªÄÏ»¢"},
-			 {37, "ºÚÒ¶ºï"},
-			 {169, "É½Ôô"},
-			 {674, "Ë®Ôô"},
-			 {703, "·ÉÉ³"},
-			 {708, "ÀäÇ¹"},
-			 {589, "ÒøÑÀ"},
-			 {713, "³Ë·ç"},
-			 {673, "ÃÉ¹ÅÎäÊ¿"},
-			 {598, "Ëªµ¶"}}
+NormalNpc = {{2, "B¹ch hæ "},
+			 {37, "H¾c DiÖp HÇu "},
+			 {169, "S¬n TÆc "},
+			 {674, "Thñy TÆc "},
+			 {703, "Phi Sa "},
+			 {708, "L·nh Th­¬ng"},
+			 {589, "Ng©n Nha "},
+			 {713, "Thõa Phong"},
+			 {673, "M«ng Cæ Vâ sÜ "},
+			 {598, "S­¬ng §ao"}}
 
 function CallBoss( Level, Series )
 	local W,X,Y = GetWorldPos();
 	local nMapId = W;
 	if ( GetFightState() == 0 ) then	--·ÇÕ½¶·Çø½ûÓÃ
-		Msg2Player("²»ÔÚÕ½¶·×´Ì¬²»ÄÜÊ¹ÓÃ");
+		Msg2Player("Kh«ng ë trong tr¹ng th¸i chiÕn ®Êu th× kh«ng thÓ sö dông");
 		return 1
 	end
 	for i = 249, 318 do	--Ï´ËèµºÉ½¶´
 		if ( i == nMapId ) then
-			Msg2Player("´Ë´¦²»ÄÜÊ¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end	
 	for i = 375, 415 do	--ÐÂÔöËÎ½ðÕ½³¡µØÍ¼ ËÍÐÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
 		if ( i == nMapId ) then
-			Msg2Player("´Ë´¦²»ÄÜÊ¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end	
 	for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
 		if( ForbiddenMap[i] == nMapId ) then
-			Msg2Player("´Ë´¦²»ÄÜÊ¹ÓÃ´ËÎïÆ·");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end
@@ -112,7 +112,7 @@ function CallBoss( Level, Series )
 	
 	if ( nNowDate == BOSSLASTDATE ) then	--Èç¹ûÉÏ´ÎÕÙ»½ÈÕÆÚÊÇµ±ÌìµÄ»°
 		if ( BOSSNOWCOUNT >= BOSSMAXCOUNT ) then	--´óÓÚÕÙ»½×î´óÊýÔò²»ÄÜÔÙÕÙ»½»Æ½ðBoss
-			print("ÄãÕÙ»½µÄ»Æ½ðBossÊýÒÑ³¬¹ýÏÞÖÆ.")
+			print("Sè Boss Hoµng Kim b¹n gäi ®· qu¸ giíi h¹n.")
 			nBossRate =  random( 101, 10000);
 		else
 			nBossRate = random( 1, 10000);
@@ -132,10 +132,10 @@ function CallBoss( Level, Series )
 		local GoldenBossId = GoldenBoss[i][1];
 		local GoldenBossName = GoldenBoss[i][2];
 		local GoldenBossSeries = GoldenBoss[i][3];
-		if( GoldenBossId == 748 ) then	--º«ÃÉÎåÐÐËæ»ú
+		if( GoldenBossId == 748 ) then	--Hµn M«ngÎåÐÐËæ»ú
 			GoldenBossSeries = random( 0, 4);
 		end
-		if( GoldenBossId == 751 ) then	--Ëæ»ú´óÂí»¢
+		if( GoldenBossId == 751 ) then	--Ëæ»ú§¹i M· Hæ 
 			i = random( 1, getn(DamahuBoss));
 			GoldenBossId = DamahuBoss[i][1];
 			GoldenBossName = DamahuBoss[i][2];
@@ -143,38 +143,38 @@ function CallBoss( Level, Series )
 		end
 		AddNpcEx( GoldenBossId, 95, GoldenBossSeries, SubWorldID2Idx(W), X * 32, (Y +  5)* 32, 1, GoldenBossName, 1 );
 		BOSSNOWCOUNT = BOSSNOWCOUNT + 1;	--µ±Ç°ÕÙ»½µÄ»Æ½ðBossÊý¼Ó1
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] ÕÙ»½»Æ½ðBoss:"..GoldenBossName);
-		Msg2Player("ÄãÕÙ»½³öÒ»¸ö»Æ½ðBoss:"..GoldenBossName);
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] gäi Boss Hoµng Kim:"..GoldenBossName);
+		Msg2Player("B¹n gäi Boss Hoµng Kim:"..GoldenBossName);
 	elseif ( nBossRate > 100 and nBossRate <= 300 ) then	--ÕÙ»½Ð¡Boss
 		local i = random( 1, getn(NormalBoss));
 		local NormalBossId = NormalBoss[i][1];
 		local NormalBossName = NormalBoss[i][2];
 		AddNpcEx( NormalBossId, 95, Series, SubWorldID2Idx(W), X * 32, (Y +  5) * 32, 1, NormalBossName, 1 );
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] ÕÙ»½Ð¡Boss:"..NormalBossName);
-		Msg2Player("ÄãÕÙ»½³öÒ»¸öÐ¡Boss:"..NormalBossName);
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] Gäi mét tiÓu boss:"..NormalBossName);
+		Msg2Player("B¹n gäi mét tiÓu Boss:"..NormalBossName);
 	elseif ( nBossRate > 300 and nBossRate <= 3000 ) then	--ÕÙ»½É±ÊÖBoss
 		local i = floor( Level - 20 ) / 10 + 1;	--¸ù¾ÝÉ±ÊÖïµµÄµÈ¼¶Ñ¡ÔñÕÙ»½µÄÉ±ÊÖBoss
 		local MiniBossId = MiniBoss[i][1];
 		local MiniBossName = MiniBoss[i][2];
 		local MaskId = MiniBoss[i][3];
 	 	AddNpcEx( MiniBossId, Level + 5, Series, SubWorldID2Idx(W), X * 32, (Y +  5) * 32, 1, MiniBossName, 1 );
-	 	Msg2Player("ÄãÕÙ»½³öÒ»¸öÉ±ÊÖBoss"..MiniBossName);
+	 	Msg2Player("B¹n gäi mét Boss s¸t thñ:"..MiniBossName);
 	 	AddItem( 0, 11, MaskId, 1, 0, 0 );	--¸ù¾ÝÕÙ³öµÄBoss¸øÍæ¼ÒÒ»¸öÃæ¾ß
-	 	Msg2Player("ÄãµÃµ½Ò»¸öÃæ¾ß");
+	 	Msg2Player("B¹n nhËn ®­îc mét MÆt n¹ ");
 	elseif ( nBossRate > 3000 and nBossRate <= 6000 ) then	--ÕÙ»½À¶¹Ö
 		local i =  random( 1, getn(GoldenNpc));		--Ëæ»úÑ¡Ò»¸öÀ¶¹Önpc
 		local j =  floor( Level - 20 ) / 10 + 1;	--¸ù¾ÝÉ±ÊÖïµµÄµÈ¼¶È¡¶ÔÓ¦droprateµÄÀ¶¹Ö
 		local GoldenNpcId = GoldenNpc[i][j];
 		local GoldenNpcName = GoldenNpc[i][9];
 		NPCINFO_AddBlueNpc( Series, GoldenNpcId, Level, SubWorldID2Idx(W), X * 32, (Y +  5) * 32, 1, GoldenNpcName, 15 );	--Ôö¼ÓÀ¶¹ÖµÄ½Å±¾£¬×îºóÒ»¸öÊýÊÇÀ¶¹ÖÄ£°æ
-		Msg2Player("ÄãÕÙ»½³öÒ»¸öÀ¶¹Ö:"..GoldenNpcName);
+		Msg2Player("B¹n gäi mét boss xanh:"..GoldenNpcName);
 	else	--ÕÙ»½ÆÕÍ¨¹Ö
 		local i = random( 1, getn(NormalNpc));
 		local NormalNpcId = NormalNpc[i][1];
 		local NormalNpcName = NormalNpc[i][2];
 		AddNpcEx( NormalNpcId, Level + 5, Series, SubWorldID2Idx(W), X* 32, (Y +  5) * 32, 1, NormalNpcName, 0 );
 		AddNpcEx( NormalNpcId, Level + 5, Series, SubWorldID2Idx(W), X * 32, (Y -  5) * 32, 1, NormalNpcName, 0 );
-		Msg2Player("ÄãÖ»ÄÜÕÙ»½Ò»Ð©ÆÕÍ¨¹Ö");
+		Msg2Player("B¹n chØ cã thÓ gäi mét sè qu¸i th«ng th­êng ");
 	end
 	return 0	
 end

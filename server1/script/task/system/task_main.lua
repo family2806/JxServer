@@ -28,7 +28,7 @@ Include("\\script\\task\\system\\task_debug.lua");
 Include("\\script\\task\\system\\task_string.lua");
 
 Include([[\script\tong\tong_award_head.lua]]);-- byÖ¾É½£¬°ï»áÖÜÄ¿±ê¹±Ï×¶È
--- ÇëÇó¿ªÊ¼Ò»¸öĞÂÈÎÎñ
+-- ÇëÇó¿ªÊ¼Ò»c¸iĞÂÈÎÎñ
 function ApplyTask(taskname)
 
 	-- ¼ì²éÈÎÎñÊÇ·ñÂú×ã¿ªÊ¼Ìõ¼ş
@@ -50,12 +50,12 @@ function OnCheckTaskStart(taskName)
 	
 	local nLevel = 0; -- µÈ¼¶ÅĞ¶ÏµÄÌõ¼ş»ñÈ¡
 	
-	CDebug:MessageOut("¿ªÊ¼¼ìË÷ "..taskName.." µÄÆğÊ¼Ìõ¼ş");
+	CDebug:MessageOut("B¾t ®Çu xem"..taskName.." ®iÒu kiÖn");
 		
 		-- Èç¹ûÈÎÎñ¸ù±¾²»ĞèÒªÌõ¼ş£¬ÔòÖ±½Ó¿ªÊ¼
 		if nRow==0 or nRow==nil then return 1; end;
 	
-		-- ¿ªÊ¼Ñ­»·±éÀúÕû¸öÈÎÎñÌõ¼ş±í
+		-- ¿ªÊ¼Ñ­»·±éÀúÕûc¸iÈÎÎñÌõ¼ş±í
 		for i=1, nRow do
 		
 			strType = TaskCondition(taskName, i, Condition.TaskType_Row);
@@ -65,7 +65,7 @@ function OnCheckTaskStart(taskName)
 			if strType==Condition.LevelMore then
 				nLevel = tonumber(strDesc);
 				if GetLevel()>nLevel then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞµÈ¼¶´óÓÚ£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn ®¼ng cÊp lín, th«ng qua");
 					nCheck = nCheck + 1;
 				end;
 			end;
@@ -74,7 +74,7 @@ function OnCheckTaskStart(taskName)
 			if strType==Condition.LevelLess then
 				nLevel = tonumber(strDesc);
 				if GetLevel()<nLevel then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞµÈ¼¶Ğ¡ÓÚ£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn ®¼ng cÊp nhá, th«ng qua");
 					nCheck = nCheck + 1;
 				end;
 			end;
@@ -83,7 +83,7 @@ function OnCheckTaskStart(taskName)
 			if strType==Condition.LevelEqual then
 				nLevel = tonumber(strDesc);
 				if GetLevel()==nLevel then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞµÈ¼¶µÈÓÚ£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn ®¼ng cÊp, th«ng qua");
 					nCheck = nCheck + 1;
 				end;
 			end;
@@ -91,7 +91,7 @@ function OnCheckTaskStart(taskName)
 			-- ÈÎÎñÊÇ·ñÒÑ¾­¿ªÊ¼µÄÌõ¼şÅĞ¶Ï
 			if strType==Condition.TaskStart then
 				if GetTaskStatus(strDesc)==1 then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞĞèÒª"..strDesc.."¿ªÊ¼£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn cã ®iÒu kiÖn"..strDesc.."B¾t ®Çu, th«ng qua");
 					nCheck = nCheck + 1;
 				end;
 			end;
@@ -99,7 +99,7 @@ function OnCheckTaskStart(taskName)
 			-- ÈÎÎñÊÇ·ñÒÑ¾­½áÊøµÄÌõ¼şÅĞ¶Ï
 			if strType==Condition.TaskEnd then
 				if GetTaskStatus(strDesc)==3 then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞĞèÒª"..strDesc.."½áÊø£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn cã ®iÒu kiÖn"..strDesc.."KÕt thóc, th«ng qua");
 					nCheck = nCheck + 1;
 				end;
 			end;
@@ -107,7 +107,7 @@ function OnCheckTaskStart(taskName)
 			--ÈÎÎñÊÇ·ñ¿ÉÒÔÖØ¸´¿ªÊ¼
 			if strType==Condition.CanRestart then
 				if tonumber(strDesc)==1 then
-					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞ¿ÉÒÔÖØ¸´¿ªÊ¼£¬Í¨¹ı");
+					CDebug:MessageOut(taskName.." §iÒu kiÖn b¾t ®Çu cña nhiÖm vô lµ cã thÓ b¾t ®Çu l¹i, th«ng qua");
 					SetTaskStatus(taskName, 0);
 					CloseTask(taskName);
 					nCheck = nCheck + 1;
@@ -116,7 +116,7 @@ function OnCheckTaskStart(taskName)
 			
 			-- Èç¹ûÊ²Ã´¶¼²»Ìî
 			if strType=="" then
-				CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞ¿ÕÏî£¬Ö±½ÓÍ¨¹ı¡£");
+				CDebug:MessageOut(taskName.." nhiÖm vô nµy ®­îc miÔn vËt phÈm, th«ng qua.");
 				nCheck = nCheck + 1;
 			end;
 	
@@ -124,14 +124,14 @@ function OnCheckTaskStart(taskName)
 		
 		-- Èç¹ûÈÎÎñÒÑ¾­¿ªÊ¼ÁË£¬ÄÇÔò²»ÄÜ·´¸´¿ªÊ¼
 		if GetTaskStatus(taskName)~=0 then
-			CDebug:MessageOut(taskName.." ÈÎÎñ±»¼ì²âµ½ÒÑ¾­¿ªÊ¼£¬²»ÄÜ·´¸´¿ªÊ¼");
+			CDebug:MessageOut(taskName.." nhiÖm vô nµy ®· b¾t ®Çu, kh«ng thÓ quay l¹i n÷a");
 			return 0;
 		end;
 		
 		-- Èç¹ûÈ«²¿Ìõ¼ş·ûºÏ£¬Ôò·µ»Ø 1
 		if nCheck==nRow then
-			CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÈ«²¿Í¨¹ı");
-			WriteTaskLog(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÍ¨¹ı£¬¿ÉÒÔ¿ªÊ¼ÈÎÎñ¡£");
+			CDebug:MessageOut(taskName.." nhiÖm vô nµy toµn bé ®­îc th«ng qua");
+			WriteTaskLog(taskName.." §iÒu kiÖn ®· ®¸p øng, cã thÓ b¾t ®Çu nhiÖm vô.");
 			return 1;
 		else
 			return nil;
@@ -155,7 +155,7 @@ function OnTaskStart(taskName)
 	
 	local nDelItemResult = 0;  -- É¾³ıËæ»úÈÎÎñ¾íÖáÎïÆ·µÄ·µ»ØÖµ
 	
-	local nEvent = GetTaskEventID(taskName); -- ÅĞ¶ÏÊÇÄÄÒ»¸öÊÂ¼şµÄ¿ªÊ¼
+	local nEvent = GetTaskEventID(taskName); -- ÅĞ¶ÏÊÇÄÄÒ»c¸iÊÂ¼şµÄ¿ªÊ¼
 	
 		-- Èç¹ûÊÇËæ»úÈÎÎñµÄ¿ªÊ¼
 		if nEvent==3 then
@@ -241,44 +241,44 @@ function OnTaskStart(taskName)
 			nKillEvent = TaskEntity(taskName, i, Entity.KillNpcName_Row);
 			nNpcItemRate = TaskEntity(taskName, i, Entity.DropItemRate_Row);
 			
-			-- Èç¹ûÊÇÊÕ¼¯ÎïÆ·ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»¸öÁÙÊ±±äÁ¿
+			-- Èç¹ûÊÇÊÕ¼¯ÎïÆ·ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»c¸iÁÙÊ±±äÁ¿
 			if strType==Entity.Collect then
-				CDebug:MessageOut(taskName.." ÈÎÎñÓĞÊÕ¼¯ÎïÆ·µÄÀàĞÍ£¬ĞèÒªÕ¼ÓÃÁÙÊ±±äÁ¿");	
+				CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn kiÕm lo¹i vËt phÈm, ph¶i giao n¹p kŞp lóc");	
 				SetTmpValue(taskName, TmpType.Collect, 0);
 			end;
 			
-			-- Èç¹ûÊÇÊÕ¼¯»Æ½ğ×°±¸ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»¸öÁÙÊ±±äÁ¿
+			-- Èç¹ûÊÇÊÕ¼¯»Æ½ğ×°±¸ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»c¸iÁÙÊ±±äÁ¿
 			if strType==Entity.CollectGoldItem then
-				CDebug:MessageOut(taskName.." ÈÎÎñÓĞÊÕ¼¯»Æ½ğ×°±¸µÄÀàĞÍ£¬ĞèÒªÕ¼ÓÃÁÙÊ±±äÁ¿");
+				CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn kiÕm trang bŞ hoµng kim, ph¶i giao n¹p kŞp lóc");
 				SetTmpValue(taskName, TmpType.Collect, 0);
 			end;
 			
-			-- Èç¹ûÊÇÊÕ¼¯¹ÖÎïµôÂäÎïÆ·ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»¸öÁÙÊ±±äÁ¿£¬±äÁ¿ÄÚÈİÎª¼ÆÊıÆ÷µÄ±àºÅ
+			-- Èç¹ûÊÇÊÕ¼¯¹ÖÎïµôÂäÎïÆ·ÈÎÎñ£¬ÔòÔ¤ÏÈÕ¼¾İÒ»c¸iÁÙÊ±±äÁ¿£¬±äÁ¿ÄÚÈİÎª¼ÆÊıÆ÷µÄ±àºÅ
 			if strType==Entity.CollectNpcItem then
-				CDebug:MessageOut(taskName.." ÈÎÎñÓĞÊÕ¼¯É±¹ÖµôÂäÎïÆ·µÄÀàĞÍ£¬ĞèÒªÕ¼ÓÃÁÙÊ±±äÁ¿");
+				CDebug:MessageOut(taskName.." NhiÖm vô yªu cÇu giÕt qu¸i thu thËp vËt phÈm, cÇn sö dông biÕn sè t¹m thêi");
 				SetTmpValue(taskName, TmpType.ItemNpc, tonumber(nKillEvent));
 				
-				CDebug:MessageOut(taskName.." ÈÎÎñÓĞÊÕ¼¯É±¹ÖµôÂäÎïÆ·µÄÀàĞÍ£¬ÉèÖÃÎïÆ·µôÂä¸ÅÂÊ£º"..nNpcItemRate);
+				CDebug:MessageOut(taskName.."NhiÖm vô yªu cÇu giÕt qu¸i thu thËp vËt phÈm, thiÕt lËp x¸c suÊt vËt phÈm:"..nNpcItemRate);
 				SetTmpValue(taskName, TmpType.ItemRate, tonumber(nNpcItemRate));
 				
 				nEventResult = AddPlayerEvent(tonumber(nKillEvent));
 				
 				if nEventResult==0 then
-					CDebug:MessageOut(taskName.."ÔÚ¿ªÆôÉ±¹Ö¼ÆÊıÆ÷Ê±³ö´í£¬±àºÅÎª£º"..nKillEvent);
+					CDebug:MessageOut(taskName.."Khëi ®éng bé ®Õm sè qu¸i bŞ giÕt ph¸t sinh lçi, id lµ:"..nKillEvent);
 				end;
 				
 			end;
 			
-			-- Èç¹ûÓĞÉ±¹Ö¼ÆÊıµÄ»°Ôò¿ªÆôÒ»¸ö¼ÆÊıÆ÷£¬²¢Ò²Õ¼ÓÃÒ»¸öÁÙÊ±±äÁ¿
+			-- Èç¹ûÓĞÉ±¹Ö¼ÆÊıµÄ»°Ôò¿ªÆôÒ»c¸i¼ÆÊıÆ÷£¬²¢Ò²Õ¼ÓÃÒ»c¸iÁÙÊ±±äÁ¿
 			if nKillEvent~="" and strType==Entity.KillNpc then
-				CDebug:MessageOut(taskName.." ÈÎÎñĞèÒª¿ªÆôÉ±¹Ö´¥·¢Æ÷£¬±àºÅÎª£º"..nKillEvent);
+				CDebug:MessageOut(taskName.." cÇn më chøc n¨ng s¸t qu¸i. Sè hiÖu lµ "..nKillEvent);
 				SetTmpValue(taskName, TmpType.KillNpc, 0);
 				AddPlayerEvent(tonumber(nKillEvent));
 			end;
 			
-			-- Èç¹ûÓĞÓë NPC ¶Ô»°µÄ»°ÔòÕ¼ÓÃÒ»¸öÁÙÊ±±äÁ¿
+			-- Èç¹ûÓĞÓë NPC ¶Ô»°µÄ»°ÔòÕ¼ÓÃÒ»c¸iÁÙÊ±±äÁ¿
 			if strType==Entity.TalkNpc then
-				CDebug:MessageOut(taskName.." ÈÎÎñÓĞÓë NPC ¶Ô»°µÄÀàĞÍ£¬ĞèÒªÕ¼ÓÃÁÙÊ±±äÁ¿");
+				CDebug:MessageOut(taskName.." nhiÖm vô nµy cÇn ®èi tho¹i víi NPC, ph¶i tiÕn hµnh kŞp thêi.");
 				SetTmpValue(taskName, TmpType.TalkNpc, 0);
 			end;
 			
@@ -287,12 +287,12 @@ function OnTaskStart(taskName)
 		-- Èç¹ûÈÎÎñ¿ªÊ¼ºóµÄ¶Ô»°²»Îª¿ÕµÄ»°ÔòËµÒ»¶Î»°
 		if TaskTalk(taskName, 1, 2)~="" then
 			CreateTaskSay({TaskTalk(taskName, 1, 2),
-						   "½áÊø¶Ô»°/OnTaskExit"}
+						   "KÕt thóc ®èi tho¹i/OnTaskExit"}
 						  );
 		end;
 		
 		-- ÌáÊ¾Íæ¼ÒÈÎÎñÒÑ¾­¿ªÊ¼
-		Msg2Player("Äã½ÓÊÜÁË<color=yellow>"..GetTaskText(taskName).."<color>");
+		Msg2Player("B¹n tiÕp nhËn<color=yellow>"..GetTaskText(taskName).."<color>");
 
 end;
 
@@ -341,11 +341,11 @@ function OnCheckTaskFinish(taskName, nType)
 	local nRightCheck = GetTaskFinishConditionNum(taskName);  -- Íê³ÉÈÎÎñËùĞèÒª´ï³ÉµÄÌõ¼şÁ¿
 	local nCheck = 0;
 	
-		CDebug:MessageOut(taskName.." ÈÎÎñĞèÒª´ï³ÉµÄÌõ¼ş¸öÊıÎª£º"..nRightCheck);
+		CDebug:MessageOut(taskName.." C¬ sè ®iÒu kiÖn nhiÖm vô cÇn ®¹t ®Õn lµ:"..nRightCheck);
 	
 		-- Èç¹ûÊÇ¶Ô»°´¥·¢Ìõ¼şÍê³É
 		if nType==1 and CheckTalkCanFinish(taskName)==1 then
-			CDebug:MessageOut(taskName.." ÈÎÎñµÄ¶Ô»°Ä¿±êÒÑ¾­´ï³É");
+			CDebug:MessageOut(taskName.." nhiÖm vô ®¹t ®Õn môc tiªu");
 			SetTmpValue(taskName, TmpType.TalkNpc, 1);
 		end;
 		
@@ -355,8 +355,8 @@ function OnCheckTaskFinish(taskName, nType)
 				-- Èç¹ûÊÇÓÉÉ±¹ÖµôÂäµÄÈÎÎñ´¥·¢£¬Ôòµ÷ÓÃÑ¡ÔñÎïÆ·
 				SelectCollectItemTask(taskName);
 			else
-				CDebug:MessageOut(taskName.." ÈÎÎñµÄÉ±¹Ö¼ÆÊıÄ¿±êÒÑ¾­´ï³É");
-				Msg2Player(GetTaskText(taskName).."µÄÉ±¹ÖÌõ¼şÒÑ¾­´ï³É");
+				CDebug:MessageOut(taskName.." nhiÖm vô giÕt qu¸i ®¹t ®Õn môc tiªu");
+				Msg2Player(GetTaskText(taskName).."®iÒu kiÖn giÕt qu¸i ®· ®¹t ®­îc");
 				SetTmpValue(taskName, TmpType.KillNpc, 1);
 			end;
 		end;
@@ -390,7 +390,7 @@ function OnCheckTaskFinish(taskName, nType)
 		
 		-- Èç¹ûÈ«²¿Ìõ¼ş·ûºÏ£¬Ôò·µ»Ø 1
 		if nCheck==nRightCheck then
-			CDebug:MessageOut(taskName.." ÈÎÎñµÄËùÓĞÄ¿±ê¶¼ÒÑ¾­´ï³É£¡");
+			CDebug:MessageOut(taskName.." Môc tiªu tÊt c¶ nhiÖm vô ®· ®¹t ®­îc!");
 			return 1;
 		else
 			return nil;
@@ -420,7 +420,7 @@ function OnTaskSay_Call(taskName, nState)
 	local nRow, nCol = TaskTalkMatrix(taskName);
 	local strInfo = ""; -- ÈÎÎñËµÃ÷×Ö¶Î
 	
-	local nIsGoods = 0; -- ÊÇ·ñÓĞÒªÌá½»ÎïÆ·
+	local nIsGoods = 0; -- ÊÇ·ñÓĞÒªGiao vËt phÈm
 	local i=0;
 	
 	local aryTaskSay = {};
@@ -440,7 +440,7 @@ function OnTaskSay_Call(taskName, nState)
 		-- ÈÎÎñ¿ªÊ¼Ê±µÄ¶Ô»°´¦Àí
 		if nState==0 then
 		
-			CDebug:MessageOut(taskName.." ÈÎÎñ¶Ô»°×´Ì¬Îª¿ªÊ¼Ê±");
+			CDebug:MessageOut(taskName.." §èi tho¹i khi nhiÖm vô b¾t ®Çu");
 			
 			strInfo = TaskTalk(taskName, 1, 6);
 			strTalk = TaskTalk(taskName, 1, 1);
@@ -448,7 +448,7 @@ function OnTaskSay_Call(taskName, nState)
 			-- Èç¹ûÈÎÎñ¿ªÊ¼¶Ô»°Ã»ÓĞµÄ»°Ö±½Ó¿ªÊ¼
 			if strTalk=="" then
 				CreateTaskSay({TaskTalk(taskName, 1, 2),
-							  "¹Ø±Õ/OnTaskExit"}
+							  "§ãng/OnTaskExit"}
 					          );
 				SelectTaskStart(TaskNo(taskName));
 				return
@@ -456,14 +456,14 @@ function OnTaskSay_Call(taskName, nState)
 			
 			if strInfo=="" then
 				CreateTaskSay({strTalk,
-							  "½ÓÊÜÈÎÎñ/#SelectTaskStart("..TaskNo(taskName)..")",
-							  "²»½ÓÊÜ/#OnTaskExit("..TaskNo(taskName)..")"}
+							  "TiÕp nhËn nhiÖm vô /#SelectTaskStart("..TaskNo(taskName)..")",
+							  "Kh«ng tiÕp nhËn/#OnTaskExit("..TaskNo(taskName)..")"}
 							  );
 			else
 				CreateTaskSay({strTalk,
-								"½ÓÊÜÈÎÎñ/#SelectTaskStart("..TaskNo(taskName)..")",
-								"²é¿´ÈÎÎñËµÃ÷/#ShowTaskInfo("..TaskNo(taskName)..")",
-								"²»½ÓÊÜ/#OnTaskExit("..TaskNo(taskName)..")"}
+								"TiÕp nhËn nhiÖm vô /#SelectTaskStart("..TaskNo(taskName)..")",
+								"Xem thuyÕt minh nhiÖm vô /#ShowTaskInfo("..TaskNo(taskName)..")",
+								"Kh«ng tiÕp nhËn/#OnTaskExit("..TaskNo(taskName)..")"}
 								);
 			end;
 			return
@@ -472,18 +472,18 @@ function OnTaskSay_Call(taskName, nState)
 		-- ÈÎÎñ½áÊøÌá½»Ê±µÄ¶Ô»°´¦Àí
 		if nState==1 then
 			
-			CDebug:MessageOut(taskName.." ÈÎÎñ¶Ô»°×´Ì¬ÎªÈÎÎñ½øĞĞÊ±");
+			CDebug:MessageOut(taskName.." §èi tho¹i khi tiÕn hµnh nhiÖm vô ");
 			
 			if nIsGoods==0 then
 				strTalk = TaskTalk(taskName, 1, 3);
 				if strTalk ~="" then
 					
 					aryTaskSay = {strTalk,
-								   "Íê³ÉÈÎÎñ/#SelectTaskFinish("..TaskNo(taskName)..")",
-								   "»¹Î´Íê³É/OnTaskExit"};
+								   "Hoµn thµnh nhiÖm vô /#SelectTaskFinish("..TaskNo(taskName)..")",
+								   "VÉn ch­a hoµn thµnh/OnTaskExit"};
 								   
 					if CheckTaskCanCancel(taskName)==1 then
-						tinsert(aryTaskSay, getn(aryTaskSay), "È¡ÏûÈÎÎñ/#CancelTaskConfirm("..TaskNo(taskName)..")");
+						tinsert(aryTaskSay, getn(aryTaskSay), "Hñy bá nhiÖm vô/#CancelTaskConfirm("..TaskNo(taskName)..")");
 					end;
 					
 					CreateTaskSay(aryTaskSay);
@@ -495,16 +495,16 @@ function OnTaskSay_Call(taskName, nState)
 			else
 				strTalk = TaskTalk(taskName, 1, 3);
 				if strTalk ~="" then
-					CDebug:MessageOut(taskName.." ÈÎÎñÓĞĞèÒªÌá½»µÄÎïÆ·£¬¿ªÊ¼µ¯³ö¸øÓè½çÃæ");
+					CDebug:MessageOut(taskName.." CÇn ph¶i giao vËt phÈm ®Ó hoµn thµnh nhiÖm vô! NhÊp vµo giao diÖn 'giao n¹p'");
 					-- ½«ÈÎÎñºÅ´¢´æÔÚÁÙÊ±±äÁ¿ÖĞ
 					SetTaskTemp(TASK_TEMP_ID, TaskNo(taskName));
 					
 					aryTaskSay = {strTalk,
-								  "Íê³ÉÈÎÎñ/OnShowGiveUI",
-								  "»¹Î´Íê³É/OnTaskExit"};
+								  "Hoµn thµnh nhiÖm vô /OnShowGiveUI",
+								  "VÉn ch­a hoµn thµnh/OnTaskExit"};
 
 					if CheckTaskCanCancel(taskName)==1 then
-						tinsert(aryTaskSay, getn(aryTaskSay), "È¡ÏûÈÎÎñ/#CancelTaskConfirm("..TaskNo(taskName)..")");
+						tinsert(aryTaskSay, getn(aryTaskSay), "Hñy bá nhiÖm vô/#CancelTaskConfirm("..TaskNo(taskName)..")");
 					end;			
 					
 					CreateTaskSay(aryTaskSay);
@@ -517,12 +517,12 @@ function OnTaskSay_Call(taskName, nState)
 		
 		-- ÈÎÎñ·¢½±Ê±µÄ¶Ô»°´¦Àí
 		if nState==2 then
-			CDebug:MessageOut(taskName.." ÈÎÎñ¶Ô»°×´Ì¬Îª·¢½±Ê±");
+			CDebug:MessageOut(taskName.." §èi tho¹i khi nhËn phÇn th­ëng trong nhiÖm vô ");
 			strTalk = TaskTalk(taskName, 1, 4);
 			if strTalk ~="" then
 				CreateTaskSay({strTalk,
-							   "ÁìÈ¡½±Àø/#SelectTaskAward("..TaskNo(taskName)..")",
-							   "ÔİÊ±²»Áì/OnTaskWait"}
+							   "NhËn l·nh phÇn th­ëng/#SelectTaskAward("..TaskNo(taskName)..")",
+							   "T¹m thêi ch­a lÊy/OnTaskWait"}
 							  );			
 			else
 				SelectTaskAward(TaskNo(taskName));
@@ -538,7 +538,7 @@ end;
 
 
 function OnShowGiveUI()
-	GiveItemUI("Ìá½»ÎïÆ·","Çë½«ÈÎÎñËùĞèµÄÎïÆ··Å½øÈ¥","OnCheckGoods","OnTaskExit");
+	GiveItemUI("Giao vËt phÈm","H·y ®Ó nh÷ng vËt phÈm cÇn thiÕt vµo","OnCheckGoods","OnTaskWait");
 end;
 
 
@@ -588,9 +588,9 @@ function OnCheckGoods(nCount)
 	
 	-- Èç¹ûÎïÆ·ÊıÁ¿ÓëÒªÕÒµÄÊıÁ¿²»·û£¬Ö±½Ó·µ»Ø
 	if nRealCount ~= nNeed then
-		CDebug:MessageOut(taskName.."ĞèÇóµÄÎïÆ·ÊıÁ¿Îª£º"..nNeed.." ·ÅÈëµÄ "..nRealCount.." ÓëÖ®²»·û£¡");
+		CDebug:MessageOut(taskName.."Sè vËt phÈm cÇn:"..nNeed.." ®Æt vµo"..nRealCount.." ®Æt vµo kh«ng phï hîp!");
 		SelectTaskFinish(TaskNo(taskName));
-		Say("Äã·ÅÈëµÄÎïÆ·ÊıÁ¿²»ÕıÈ·£¡", 0);
+		Say("Sè l­îng vËt phÈm b¹n ®Ó vµo kh«ng chİnh x¸c!", 0);
 		return
 	end;
 	
@@ -623,7 +623,7 @@ function OnCheckGoods(nCount)
 						 tostring(w_Detail)..","..
 						 tostring(w_Particular);
 			
-			-- Èç¹ûÃ»ÓĞÕâ¸ö MAP KEY Ôò³õÊ¼»¯
+			-- Èç¹ûÃ»ÓĞÕâc¸i MAP KEY Ôò³õÊ¼»¯
 			if aryNeed[tmpNeedKey] then
 				tinsert(aryNeed[tmpNeedKey], {w_Level, w_GoodsFive, w_GoodsNum, w_DelGoods, nRandomSeedRecord});
 			else
@@ -663,7 +663,7 @@ function OnCheckGoods(nCount)
 						SetTmpValue(taskName, 
 									TmpType.ItemSeed..aryNeed[tmpGetKey][j][5], 
 									nRandomSeed);
-						CDebug:MessageOut(taskName.." ÎïÆ· "..tmpGetKey.." ĞèÒª¼ÇÂ¼Ëæ»úÊı£º"..nRandomSeed);
+						CDebug:MessageOut(taskName.." vËt phÈm"..tmpGetKey.." Sè ngÉu nhiªn cÇn ghi l¹i:"..nRandomSeed);
 					end;
 					
 					aryNeed[tmpGetKey][j][3] = aryNeed[tmpGetKey][j][3] - nCheckCount;
@@ -680,7 +680,7 @@ function OnCheckGoods(nCount)
 			-- Çå¿Õ·ûºÏÌõ¼şµÄÊı×é
 			aryDelItem = {};
 			
-			Say("Äã·ÅÈëµÄÎïÆ·²»ÕıÈ·£¡", 0);
+			Say("VËt phÈm b¹n ®Ó vµo kh«ng chİnh x¸c!", 0);
 			return
 		end;
 		
@@ -690,20 +690,20 @@ function OnCheckGoods(nCount)
 	for i,j in aryNeed do
 		for k=1, getn(j) do
 			if j[k][3]~=0 then
-				Say("Äã·ÅÈëµÄÎïÆ·²»ÕıÈ·£¡", 0);
+				Say("VËt phÈm b¹n ®Ó vµo kh«ng chİnh x¸c!", 0);
 				return
 			end;
 		end;
 	end;
 		
-	-- ¼ÇÂ¼Ò»¹²ÓĞ¶àÉÙ¸öÎïÆ·ĞèÒªÉ¾³ı
+	-- ¼ÇÂ¼Ò»¹²ÓĞ¶àÉÙc¸iÎïÆ·ĞèÒªÉ¾³ı
 	SetTaskTemp(TASK_CHECKITEM_NUM, getn(aryDelItem));
 	
-	CDebug:MessageOut("¼ÇÂ¼ĞèÒªÉ¾³ıµÄÎïÆ·¸öÊı£º"..getn(aryDelItem));
+	CDebug:MessageOut("LiÖt kª nh÷ng vËt phÈm cÇn lo¹i bá:"..getn(aryDelItem));
 	
 	for i=1, getn(aryDelItem) do
 		SetTaskTemp(TASK_CHECKITEM_START + i - 1, aryDelItem[i]);
-		CDebug:MessageOut("ËùĞèÒªÉ¾³ıµÄË÷Òı£º"..aryDelItem[i]);
+		CDebug:MessageOut("CÇn ph¶i lo¹i bá:"..aryDelItem[i]);
 	end;
 
 	SetTmpValue(taskName, TmpType.Collect, 1);
@@ -724,14 +724,14 @@ function OnTaskNpcTalk(npcName, npcMap, taskName)
 	
 	local i=0;
 	
-	CDebug:MessageOut("ÅĞ¶Ï "..npcMap.." µØÍ¼ÀïµÄ "..npcName.." ÊÇ·ñÎª "..taskName.." µÄÈÎÎñ¶Ô»°ÈËÎï");
+	CDebug:MessageOut("Ph¸n ®o¸n"..npcMap.." trong b¶n ®å"..npcName.." cã ph¶i do"..taskName.." ®èi tho¹i víi nh©n vËt trong nhiÖm vô ");
 	
 		for i=1, nRow do
 		
 			strTalkNpcName = TaskEntity(taskName, i, Entity.TalkNpcName_Row);
 			strTalkNpcMap = TaskEntity(taskName, i, Entity.TalkNpcMap_Row);
 			
-			CDebug:MessageOut(taskName.." ĞèÇóµÄÈËÎïÎª£º"..strTalkNpcName.." ĞèÇóµÄµØÍ¼Îª£º"..strTalkNpcMap);
+			CDebug:MessageOut(taskName.." Nh©n vËt yªu cÇu:"..strTalkNpcName.." B¶n ®å khu vùc yªu cÇu:"..strTalkNpcMap);
 			
 			if strTalkNpcName==npcName and strTalkNpcMap==npcMap then
 				return 1;
@@ -745,7 +745,7 @@ end;
 
 -- ÈÎÎñ½áÊøÊ±µÄ´¦Àí
 function OnTaskFinish(taskName)
-	local nEvent = GetTaskEventID(taskName); -- ÅĞ¶ÏÊÇÄÄÒ»¸öÊÂ¼şµÄ¿ªÊ¼
+	local nEvent = GetTaskEventID(taskName); -- ÅĞ¶ÏÊÇÄÄÒ»c¸iÊÂ¼şµÄ¿ªÊ¼
 
 	-- »ñÈ¡É±¹ÖµôÂäÎïÆ·µÄÉ±¹ÖÊÂ¼ş
 	local nKillEventID = tonumber(GetTmpValue(taskName, TmpType.ItemNpc));
@@ -759,9 +759,9 @@ function OnTaskFinish(taskName)
 	local nResult = 0;  -- ÊÇ·ñÉ¾³ıÎïÆ·ÕıÈ·
 	local i=0;
 		
-		CDebug:MessageOut(taskName.."ÈÎÎñ½áÊøÊ±É¾³ıÎïÆ·£¬¹²ÓĞ£º"..nItem.."¸ö");
+		CDebug:MessageOut(taskName.."Lo¹i bá vËt phÈm khi kÕt thóc nhiÖm vô, gåm:"..nItem.."c¸i");
 		
-		-- Èç¹ûÒ»¸öÎïÆ·Ò²²»ĞèÒªÉ¾³ı£¬ÔòÖ±½Ó·µ»Ø
+		-- Èç¹ûÒ»c¸iÎïÆ·Ò²²»ĞèÒªÉ¾³ı£¬ÔòÖ±½Ó·µ»Ø
 		if nItem==0 then return end;
 	
 		-- É¾³ıÈÎÎñËùĞèÒªµÄÎïÆ·
@@ -776,7 +776,7 @@ function OnTaskFinish(taskName)
 			
 		end;
 		
-		-- ½«ËùĞèÎïÆ·¸öÊıµÄÁÙÊ±±äÁ¿¸øÇåÁË
+		-- ½«ËùĞèÎïÆ·c¸iÊıµÄÁÙÊ±±äÁ¿¸øÇåÁË
 		SetTaskTemp(TASK_CHECKITEM_NUM, 0);
 		
 		-- Èç¹ûÓĞÉ±¹Ö¼ÆÊıÆ÷Ôò½«ÆäÉ¾³ı
@@ -810,11 +810,11 @@ end;
 
 
 -- Ñ¡ÔñÍË³öºóµÄ´¦Àí
-function OnTaskExit(taskID)
+function OnTaskWait(taskID)
 	
 local nTaskID_Now = GetTask(ID_RANDOMTASK);
 
-local nEvent = 0; -- ÅĞ¶ÏÊÇÄÄÒ»¸öÊÂ¼şµÄÈ¡Ïû¹ı³Ì
+local nEvent = 0; -- ÅĞ¶ÏÊÇÄÄÒ»c¸iÊÂ¼şµÄÈ¡Ïû¹ı³Ì
 	
 	-- Èç¹û´«½øÀ´µÄ taskID ÊÇ¿ÕÖµ£¬Ôò±íÊ¾ÊÇ²»ĞèÒªÌØÊâ´¦ÀíµÄÈÎÎñµ÷ÓÃ
 	if taskID==nil or taskID==0 then return end;
@@ -840,7 +840,7 @@ local nEvent = 0; -- ÅĞ¶ÏÊÇÄÄÒ»¸öÊÂ¼şµÄÈ¡Ïû¹ı³Ì
 			end	
 		end
 		
-		Msg2Player("<color=yellow>ÄúÑ¡ÔñÁË²»½ÓÊÜÍ¬°é¸øÓèÄúµÄÈÎÎñ£¬ÄúµÄÍ¬°éÏÔµÃÓĞĞ©ÂÔÎ¢µÄ²»¸ßĞË¡£<color>");
+		Msg2Player("<color=yellow>§· lùa chän kh«ng tiÕp nhËn nhiÖm vô.<color>");
 		return
 	end;
 	

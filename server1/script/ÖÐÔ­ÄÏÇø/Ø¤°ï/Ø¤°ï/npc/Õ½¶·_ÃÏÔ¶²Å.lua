@@ -4,9 +4,9 @@
 function OnDeath()
 	UTask_gb = GetTask(8);
 	if (UTask_gb == 20*256+10) then			--´ø×Å20¼¶ÈÎÎñ
-		Talk(2,"","ÎÒ½ÌÑµÄãÊÇÎªÁËÌæ°ïÖĞĞÖµÜ³ö¿ÚÆø£¬ÒªÄã³¢³¢±»ÈË½ÌÑµµÄ×ÌÎ¶¡£Èç¹ûÄãÔÙ¸Òºú×÷·ÇÎª£¬ÎÒ¿É²»¹ÜÄãÊÇË­µÄÇ×Æİ£¬ÕÕ´ò²»Îó!","²»¸ÒÁË£¬ÎÒÔÙÒ²²»¸ÒÁË!")
+		Talk(2,"","Ta thay mÆt anh em trong bang gi¸o huÊn ng­¬i. Muèn ng­¬i ph¶i th­êng xuyªn nÕm ®­îc mïi vŞ cña sù gi¸o huÊn, nÕu nh­ ng­¬i vÉn cßn tiÕp tôc lµm cµn, ta sÏ kh«ng quan t©m ®Õn chuyÖn ng­¬i lµ th©n thİch cña ai, ®¸nh kh«ng th­¬ng tiÕc!","Ta sî råi! Sau nµy kh«ng d¸m n÷a!")
 		SetTask(8,20*256+20)
-		AddNote("ÒÑ½ÌÑµÃÏÔ¶²ÅÒ»³¡ ")
-		Msg2Player("ÒÑ½ÌÑµÃÏÔ¶²ÅÒ»³¡ ")
+		AddNote("§· gi¸o huÊn cho M¹nh ViÔn Tµi mét trËn nhí ®êi ")
+		Msg2Player("§· gi¸o huÊn cho M¹nh ViÔn Tµi mét trËn nhí ®êi ")
 	end
 end;

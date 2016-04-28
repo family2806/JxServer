@@ -1,7 +1,7 @@
 nItemExpiredTime = 20110901
 nRedRoseMaxCount = 2000
 nPromotionID = 8
-strTranLogFolder = "201108_Œ‰¿∂±®–¢ªÓ∂Ø/"
+strTranLogFolder = "201108_EventVuLanBaoHieu/"
 TSK_GIVE_CUU_TIEN_NGU_YEN_DAILY = 2913
 nGive_Cuu_Tien_Daily_Max_Count = 100
 tbGiveRedRoseBudLimit =

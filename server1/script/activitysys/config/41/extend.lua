@@ -75,13 +75,13 @@ function pActivity:GetOnLineAward()
 	end
 	nCount = nHour	
 	if nCount <= 0 then
-		Msg2Player("ÉÏ´ÎÁìÈ¡¼ä¸ô, ÔÚÏßÊ±¼ä²»×ãÒ»Ð¡Ê±£¬²»ÄÜÁìÈ¡")
+		Msg2Player("Kho¶ng c¸ch nhËn lÇn tr­íc, thêi gian trªn m¹ng cña ng­¬i ch­a ®ñ 1 giê, kh«ng thÓ nhËn")
 		return 
 	end
 	local nMaxCount = %MAX_DAILY_LOGIN_MEDAL -  PlayerFunLib:GetTaskDailyCount(%TSK_DAILY_LOGIN_MEDAL)
 	nMaxCount = min(nMaxCount, nCount)
 	if nMaxCount <= 0 then
-		Msg2Player("½ñÌìÄã²»ÄÜÔÙÁìÈ¡ÁË£¬Ã÷ÌìÔÙÀ´°É.")
+		Msg2Player("H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.")
 		return 
 	end
 	
@@ -173,7 +173,7 @@ function pActivity:GetTitle_2(nParam, ResultHandle)
 	if nPlayerIndex <= 0 then
 		return
 	end
-	local szMsg = format("Äã²»ÊÇ±¾ÖÜÖ÷Ë§£¬²»ÄÜÁìÈ¡%s¸Ã","ÃûºÅ")
+	local szMsg = format("Ng­¬i kh«ng ph¶i chñ so¸i cña tuÇn nµy, kh«ng thÓ nhËn %s nµy","danh hiÖu")
 	if nResult == 0 then
 		CallPlayerFunction(nPlayerIndex, Say, szMsg)
 		return 
@@ -198,7 +198,7 @@ function pActivity:GetTitle()
 
 	%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, "NhanDanhHieuChuSoai")
 	self:AddTaskDaily(%TSK_DAILY_GET_TITLE, 1)
-	Msg2Player("¹§Ï²´óÏÀ»ñµÃµÚÒ»Ö÷Ë§³ÆºÅ")
+	Msg2Player("Chóc mõng ®¹i hiÖp nhËn ®­îc danh hiÖu §Ö NhÊt Chñ So¸i")
 end
 
 function pActivity:GetZhuShuaiAward_1()
@@ -210,10 +210,10 @@ function pActivity:GetZhuShuaiAward_2(nParam, ResultHandle)
 	local nExp = 50000000
 	local nPlayerIndex,nResult,_ = self:IsZhuShuai(ResultHandle)
 	if nResult == 0 then
-		CallPlayerFunction(nPlayerIndex,Say,format("Äã²»ÊÇ±¾ÖÜÖ÷Ë§£¬²»ÄÜÁìÈ¡%s ¸Ã","½±Àø"))
+		CallPlayerFunction(nPlayerIndex,Say,format("Ng­¬i kh«ng ph¶i chñ so¸i cña tuÇn nµy, kh«ng thÓ nhËn %s nµy","PhÇn th­ëng"))
 		return 
 	end
-	CallPlayerFunction(nPlayerIndex, PlayerFunLib.AddExp, PlayerFunLib, nExp, 1, %EVENT_LOG_TITLE, "ÁìÈ¡Ö÷Ë§½±Àø")
+	CallPlayerFunction(nPlayerIndex, PlayerFunLib.AddExp, PlayerFunLib, nExp, 1, %EVENT_LOG_TITLE, "NhanPhanThuongChuSoai")
 	CallPlayerFunction(nPlayerIndex, self.AddTaskDaily, self, %TSK_DAILY_EXP_AWARD, 1)
 end
 
@@ -225,20 +225,20 @@ end
 function pActivity:DoActiveFunction(nParam)
 	local nJxb = 10000000
 	if GetCash() < nJxb then
-		Msg2Player(format("¼¤»î¸ÃÐÔÄÜÐèÒªÓÐ%d ÒøÁ½,Çë×ÐÏ¸×¼±¸ºÃÔÙÀ´",nJxb))
+		Msg2Player(format("KÝch ho¹t tÝnh n¨ng nµy cÇn ph¶i cã %d ng©n l­îng, h·y chuÈn bÞ kü råi quay l¹i",nJxb))
 		return
 	end
 	Pay(nJxb)
 	self:AddTaskDaily(%TSK_TB_DAILY_ACTIVE[nParam], 1)
 	self:AddTaskDaily(%TSK_DAILY_ACTIVE, 1)
 	%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, %tbActivLog[nParam])
-	Msg2Player("ÄúÒÑ³É¹¦¼¤»î¸ÃÐÔÄÜ")
+	Msg2Player("Ng­¬i ®· kÝch ho¹t tÝnh n¨ng nµy thµnh c«ng")
 end
 
 function pActivity:ActiveFunction_2(nParam, ResultHandle)
 	local nPlayerIndex, nResult, nParam = self:IsZhuShuai(ResultHandle)
 	if nResult ~= 1 then
-		CallPlayerFunction(nPlayerIndex,Say,"Äú²»ÊÇ±¾ÖÜÖ÷Ë§£¬²»ÄÜ¼¤»î¸ÃÐÔÄÜ")
+		CallPlayerFunction(nPlayerIndex,Say,"Ng­¬i kh«ng ph¶i chñ so¸i cña tuÇn nµy, kh«ng thÓ kÝch ho¹t tÝnh n¨ng nµy")
 		return
 	end
 	CallPlayerFunction(nPlayerIndex, self.DoActiveFunction, self, nParam)
@@ -302,7 +302,7 @@ function pActivity:QueryMark_2(nParam, ResultHandle)
 	
 	CallPlayerFunction(nPlayerIndex, self.IsClearMark, self)
 	local nPlayerMark = CallPlayerFunction(nPlayerIndex, self.GetTask, self, %TSK_MARK)
-	CallPlayerFunction(nPlayerIndex, Say, format("ÄúÄ¿Ç°µÄ³ÆºÅ»ý·ÖÎª%d, Ä¿Ç°×î¸ß»ý·ÖÎª%d", nPlayerMark, nMaxMark))
+	CallPlayerFunction(nPlayerIndex, Say, format("TÝch lòy danh hiÖu hiÖn t¹i cña c¸c h¹ lµ %d, ®iÓm tÝch lòy cao nhÊt hiÖn t¹i lµ %d", nPlayerMark, nMaxMark))
 end
 
 function pActivity:HandInMedal(nType, nCount)
@@ -317,7 +317,7 @@ function pActivity:HandInMedal(nType, nCount)
 			nTotalRate = nTotalRate + tbMark[i].nRate
 			if nRate <= nTotalRate then
 				self:AddTask(%TSK_MARK, tbMark[i].nMark)
-				Msg2Player(format("ÄúµÄ³ÆºÅºÍ»ý·ÖÒÑÔö¼Ó %d",tbMark[i].nMark))
+				Msg2Player(format("Danh hiÖu vµ tÝch lòy cña ng­¬i ®· t¨ng lªn %d",tbMark[i].nMark))
 				break
 			end
 		end
@@ -329,7 +329,7 @@ function pActivity:HandInMedal(nType, nCount)
 	
 	local nHandinCount = self:GetTaskDaily(%TSK_DAILY_MEDAL)
 	if nHandinCount == %MAX_DAILY_HANDIN_MEDAL then
-		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, "Ã¿ÌìÉÏ½»100»ÕºÅ")
+		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, "Nop100HuyHieuMoiNgay")
 	end
 end
 
@@ -354,7 +354,7 @@ function pActivity:PlayerSignUp(nType)
 	if nType == NUM_SONGJIN and self:CheckSongJinTime() == 0 then
 		bResult = 0
 	end
-	-- ÖÜÒ»£¬¶þ£¬ËÄ£¬ÁùµÄ21:00µãËÎ½ð²»ÄÜ¼¤»î´Ë½±Àø
+	-- ÖÜÒ»£¬¶þ£¬ËÄ£¬ÁùµÄ21:00µãËÎ½ð²»ÄÜ¼¤»î´ËPhÇn th­ëng
 	if bResult == 0 then
 		return
 	end

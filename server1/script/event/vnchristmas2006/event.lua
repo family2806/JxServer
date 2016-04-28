@@ -6,12 +6,12 @@ function takeMaskFree()
 	local nExtValue = GetExtPoint(4);
 	
 	if (nExtValue <= 0) then
-		Say("Äú²»¹»Ìõ¼þ»ñÔùÃæ¾ß ", 0);
+		Say("Quý kh¸ch ch­a ®ñ ®iÒu kiÖn nhËn quµ tÆng MÆt n¹! ", 0);
 		return
 	end;
 	PayExtPoint(4, 1);
 	local nMaskID = TB_XMASMASK[random(getn(TB_XMASMASK))];
 	local nItemIdx = AddItem(0,11, nMaskID, 1,0,0);
-	Say("ÕâÊÇÃæ¾ß"..GetItemName(nItemIdx)..". ¸ÐÐ»ÄúµÄÖ§³Ö", 0);
+	Say("§©y lµ mÆt n¹ "..GetItemName(nItemIdx)..". C¶m ¬n quý kh¸ch ®· ñng hé!", 0);
 	WriteLog("[XMAS-MASK]"..GetLocalDate("%Y-%m-%d %H:%M").." Name:"..GetName().." Account:"..GetAccount().." take a mask : "..GetItemName(nItemIdx));
 end;

@@ -7,19 +7,19 @@ function main()
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_ItemEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 	if zhongqiu0808_PlayerLimit() ~= 1 then
 		
-		Say("ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ", 0)
+		Say("Yªu cÇu ®¨ng cÊp ph¶i trªn 50 vµ ®· qua n¹p thÎ.", 0)
 		return 1
 	end
 	if GetTask(zhongqiu0808_TSK_mingyuejiu) == 1 then
-		Say("ÄúÒÑÊ¹ÓÃ¸ÃµÀ¾ßÁË.")
+		Say("B¹n ®· sö dông ®¹o cô nµy råi.")
 		return 1
 	end
 	
 	SetTask(zhongqiu0808_TSK_mingyuejiu, 1)
-	Msg2Player("Ê¹ÓÃÃ÷ÔÂ¾Æºó£¬½¨ÔÂÖĞÇïÔÂ±ıºÍÉÍÔÂÖĞÇïÔÂ±ıµÄ¾­ÑéÉÏÏŞ½«Ôöµ½30ÒÚ.")
+	Msg2Player("Sau khi sö dông Minh NguyÖt töu, møc giíi h¹n kinh nghiÖm tõ 2 lo¹i b¸nh Trung thu KiÕn NguyÖt vµ b¸nh Trung thu Th­ëng NguyÖt sÏ t¨ng lªn møc 3 tû ®iÓm.")
 end

@@ -1,5 +1,5 @@
 Include( "\\script\\missions\\leaguematch\\head.lua" )
-WLLS_FACTION_NAME	= {"ÉÙÁÖ ", "ÌìÍõ", "ÌÆÃÅ", "Îå¶¾", "¶ëÃ¼", "´äÑÌ", "Ø¤°ï", "ÌìÈÌ", "Îäµ±", "À¥ÂØ"}
+WLLS_FACTION_NAME	= {"ÉÙÁÖ ", "ÌìÍõ", "ÌÆÃÅ", "Îå¶¾", "¶ëÃ¼", "´äÑÌ", "Ø¤°ï", "ÌìÈÌ", "Îäµ±", "À¥¢Ø"}
 WLLS_FACTION_NAME[0] = "ÎŞÃÅÅÉ"
 WLLS_FILE_ENTERPOS = "\\settings\\maps\\championship\\champion_gmpos.txt"
 if (TabFile_Load(WLLS_FILE_ENTERPOS, "ENTERPOS") == 0) then
@@ -128,12 +128,12 @@ function wlls_addplayer_combat(tbLGs, nOrgCamp, nEmyCamp, nNewCamp, tbNewPos)
 		ST_StartDamageCounter()	--¿ªÊ¼¼ÆËãÉËº¦
 	end
 
-	local szMsg	= "<color=pink>Õ½ÊÂĞÅÏ¢£º¶ÔÊÖ[<color=yellow>"..tbLGs[nEmyCamp].szName.."<color>] Õ½¶ÓÓĞ<color=yellow>"..getn(tbLGs[nEmyCamp].tbPlayer).."<color> ÈË½øÈë±ÈÈü"
+	local szMsg	= "<color=pink>ChiÕn ®éi [<color=yellow>"..tbLGs[nEmyCamp].szName.."<color>] nhãm cã <color=yellow>"..getn(tbLGs[nEmyCamp].tbPlayer).."<color> ng­êi vµo ®Êu tr­êng."
 	Msg2MSGroup(WLLS_MSID_COMBAT, szMsg, nNewCamp)
-	szMsg	= "¶ÔÊÖĞÅÏ¢ÈçÏÂ: "
+	szMsg	= "Th«ng tin ®èi thñ: "
 	for _, nIdx in tbLGs[nEmyCamp].tbPlayer do
 		PlayerIndex = nIdx
-		szMsg	= szMsg..format("\n<color=white>%16s <color=green>%3d ¼¶<color=yellow>%s", GetName(), GetLevel(), GetLastAddFaction())
+		szMsg	= szMsg..format("\n<color=white>%16s <color=green>cÊp %3d ph¸i <color=yellow>%s", GetName(), GetLevel(), GetLastAddFaction())
 	end
 	Msg2MSGroup(WLLS_MSID_COMBAT, szMsg, nNewCamp)
 
@@ -156,7 +156,7 @@ function wlls_addtroop_combat( tb_vscamp , tbLGs )
 		
 	end
 	
-	Msg2MSAll(WLLS_MSID_COMBAT, "ÄãÒÑ½øÈë±ÈÈüÇøÓò£¬±ÈÈüÔÚ<color=yellow>"..(WLLS_TIMER_FIGHT_FREQ * WLLS_TIMER_FIGHT_PREP).."<color> ÃëºóÕıÊ½¿ªÊ¼")
+	Msg2MSAll(WLLS_MSID_COMBAT, "§· vµo khu vùc chuÈn bŞ, cßn <color=yellow>"..(WLLS_TIMER_FIGHT_FREQ * WLLS_TIMER_FIGHT_PREP).."<color> gi©y n÷a sÏ b¾t ®Çu")
 	
 	SubWorld	= nOldWorld
 end
@@ -174,7 +174,7 @@ function OnTimer()
 		SetGlbValue(GLB_WLLS_PHASE, 5)
 		SetGlbValue(GLB_WLLS_TIME, 0)
 		StartGlbMSTimer(WLLS_MSID_GLB, WLLS_TIMERID_COMBAT, WLLS_TIMER_FIGHT_FREQ*WLLS_FRAME2TIME)
-		Msg2SubWorld("±¨ÃûÎäÁÖĞÂĞãÁªÈüÒÑ½áÊø£¬±ÈÈüÕıÊ½¿ªÊ¼!")
+		Msg2SubWorld("Vâ l©m liªn ®Êu kÕt thóc ®¨ng kı, chİnh thøc b¾t ®Çu!")
 		
 		--´¦ÀíÃ¿¸ö×¼±¸³¡
 		for n_idx, nGroupIdx in tb_sub do
@@ -183,7 +183,7 @@ function OnTimer()
 			local tb_mstroop = wlls_get_ms_troop()
 			_M("getn(tb_mstroop)="..getn(tb_mstroop))
 			if (getn(tb_mstroop) < WLLS_MIN_TEAM) then
-				Msg2SubWorld("²ÎÈü¶ÓÎéÌ«ÉÙ, "..wlls_get_desc(3).."È¡Ïû¸Ã³¡±ÈÈü")
+				Msg2SubWorld("Qu¸ İt ®éi tham gia, "..wlls_get_desc(3).." hñy bá thi ®Êu")
 				tb_mstroop = {}
 			end
 			
@@ -240,7 +240,7 @@ function OnTimer()
 			-- 1·ÖÖÓÒ»´Î£¬Í¨Öªµ±Ç°Ê£ÓàÊ±¼ä
 			if (bReport) then
 				SubWorld = n_idx
-				Msg2MSAll(WLLS_MSID_SCHEDULE, "±ÈÈüÊ±¼ä»¹Ê£ <color=yellow>"..(n_timer*WLLS_TIMER_PREP_FREQ/60).."<color> ·Ö")
+				Msg2MSAll(WLLS_MSID_SCHEDULE, "Thêi gian chuÈn bŞ <color=yellow>"..(n_timer*WLLS_TIMER_PREP_FREQ/60).."<color> phót")
 			end
 		end
 		if (getn(tbGroup) > 0) then

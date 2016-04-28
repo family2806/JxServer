@@ -26,7 +26,7 @@ tbParam2EquipType = {
 function main(nItemIdx)
 	local n_param = tonumber(GetItemParam(nItemIdx, 1 ))
 	local tb = {nSpecificItem = tbParam2EquipType[n_param], nItem2Consume = nItemIdx}
-	tb.tbLog={"½ğÎÚÖ®±¦","Ê¹ÓÃ½ğÎÚÖ®±¦"}
+	tb.tbLog={"KimOChiBao","SuDungKimOChiBao"}
 	if n_param <= 0 then
 		return
 	elseif n_param >= 1 and n_param <= 11 then
@@ -43,28 +43,28 @@ function GetDesc(nItem)
 	local tbItemName = 
 	{
 		[0]= "",
-		[1] = "½ğÎÚÏîÁ´ - ×ÔÑ¡ÅÉÏµ",
-		[2] = "½ğÎÚ·¢¹Ú - ×ÔÑ¡ÅÉÏµ",		
-		[3] = "½ğÎÚÉÏ½äÖ¸ - ×ÔÑ¡ÅÉÏµ",
-		[4] = "½ğÎÚ»¤Íó - ×ÔÑ¡ÅÉÏµ",
-		[5] = "½ğÎÚÑü´ø- ×ÔÑ¡ÅÉÏµ",
-		[6] = "½ğÎÚ½ğîø - ×ÔÑ¡ÅÉÏµ",
-		[7] = "½øÈ¥Æ÷Ğµ - ×ÔÑ¡ÅÉÏµ",
-		[8] = "½ğÎÚĞ¬ - ×ÔÑ¡ÅÉÏµ",
-		[9] = "½ğÎÚÅå - ×ÔÑ¡ÅÉÏµ",
-		[10] = "½ğÎÚÏÂ½äÖ¸-×ÔÑ¡ÅÉÏµ",
-		[11] = "½ğÎÚ×°±¸ - ×ÔÑ¡ÅÉÏµ",
-		[12] = "½ğÎÚÏîÁ´ (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[13] = "½ğÎÚ·¢¹Ú (Max Option) - ×ÔÑ¡ÅÉÏµ",		
-		[14] = "½ğÎÚÉÏ½äÖ¸ (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[15] = "½ğÎÚ»¤Íó (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[16] = "½ğÎÚÑü´ø(Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[17] = "½ğÎÚ½ğîø (Max Option - ×ÔÑ¡ÅÉÏµ)",
-		[18] = "½ğÎÚÆ÷Ğµ (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[19] = "½ğÎÚĞ¬ (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[20] = "½ğÎÚÓñÅå (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[21] = "½ğÎÚÏÂ½äÖ¸ (Max Option) - ×ÔÑ¡ÅÉÏµ",
-		[22] = "½ğÎÚ×°±¸ (  Max Option) - ×ÔÑ¡ÅÉÏµ",
+		[1] = "Kim ¤ H¹ng Liªn - Tù chän hÖ ph¸i",
+		[2] = "Kim ¤ Ph¸t Qu¸n - Tù chän hÖ ph¸i",		
+		[3] = "Kim ¤ Th­îng Giíi ChØ - Tù chän hÖ ph¸i",
+		[4] = "Kim ¤ Hé UyÓn - Tù chän hÖ ph¸i",
+		[5] = "Kim ¤ Yªu §¸i - Tù chän hÖ ph¸i",
+		[6] = "Kim ¤ Kim Kh¶i - Tù chän hÖ ph¸i",
+		[7] = "Kim ¤ Khİ Giíi - Tù chän hÖ ph¸i",
+		[8] = "Kim ¤ Hµi - Tù chän hÖ ph¸i",
+		[9] = "Kim ¤ Ngäc Béi - Tù chän hÖ ph¸i",
+		[10] = "Kim ¤ H¹ Giíi ChØ - Tù chän hÖ ph¸i",
+		[11] = "Bé trang bŞ Kim ¤ - Tù chän hÖ ph¸i",
+		[12] = "Kim ¤ H¹ng Liªn (Max Option) - Tù chän hÖ ph¸i",
+		[13] = "Kim ¤ Ph¸t Qu¸n (Max Option) - Tù chän hÖ ph¸i",		
+		[14] = "Kim ¤ Th­îng Giíi ChØ (Max Option) - Tù chän hÖ ph¸i",
+		[15] = "Kim ¤ Hé UyÓn (Max Option) - Tù chän hÖ ph¸i",
+		[16] = "Kim ¤ Yªu §¸i (Max Option) - Tù chän hÖ ph¸i",
+		[17] = "Kim ¤ Kim Kh¶i (Max Option - Tù chän hÖ ph¸i)",
+		[18] = "Kim ¤ Khİ Giíi (Max Option) - Tù chän hÖ ph¸i",
+		[19] = "Kim ¤ Hµi (Max Option) - Tù chän hÖ ph¸i",
+		[20] = "Kim ¤ Ngäc Béi (Max Option) - Tù chän hÖ ph¸i",
+		[21] = "Kim ¤ H¹ Giíi ChØ (Max Option) - Tù chän hÖ ph¸i",
+		[22] = "Bé trang bŞ Kim ¤ (Max Option) - Tù chän hÖ ph¸i",
 	}
 	szDesc = szDesc..format("<color=yellow>%s<color>", tbItemName[n_param]);
 	return szDesc;

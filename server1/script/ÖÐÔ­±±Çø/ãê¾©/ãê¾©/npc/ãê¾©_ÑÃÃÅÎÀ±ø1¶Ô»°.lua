@@ -6,7 +6,7 @@
 
 --Í¨¼©ÏµÍ³×¨ÓÃÑùÀı½Å±¾(BlackBay.2003.12.30)
 
-FESTIVAL06_NPCNAME = "<color=yellow>ÑÃÃÅÎÀ±ø:<color>";
+FESTIVAL06_NPCNAME = "<color=yellow>VÖ binh Nha m«n:<color>";
 Include([[\script\global\Â·ÈË_ÑÃÃÅÎÀ±ø.lua]]);
 
 function main(sel)
@@ -16,7 +16,7 @@ end;
 function main_former()
 	--ÏÂÃæÕâ¸öÖ¸ÁîÏòÏµÍ³Ñ¯ÎÊµ±Ç°PlayerµÄÍ¨¼©Ïà¹Ø×´Ì¬ĞÅÏ¢
 	--²éÑ¯µÄ½á¹û·µ»ØÒÔºó£¬ÏµÍ³»Øµ÷²ÎÊıÖĞÖ¸¶¨µÄº¯ÊıÃû
-	Say("ÈÎºÎÈËÖ»ÒªËµ³ö¶Ô´ó½ğ¹ú²»¾´µÄÑÔ´Ç£¬¾ÍÁ¢¿Ì×¥ÆğÀ´! ", 0);
+	Say("BÊt cø ai bu«ng lêi bÊt kİnh víi §¹i Kim, lËp tøc b¾t ngay! ", 0);
 	--AskRelayForKillerStatus("KillerCallBack")
 end;
 
@@ -31,9 +31,9 @@ function KillerCallBack(RewardMoney, RewardTaskID, CancelMoney, CancelTaskID, Ow
 		GetTaskMoney(1, CancelTaskID)
 		Earn(CancelMoney)
 	elseif (OwnCount + MyTaskCount > 0) then
-		Say("ÄãÕæÊÇµ¨´ó£¬ÉÃ´³¹«ÌÃºÍÑÃÃÅµÄ×ïÃûÄãµ£µ±µÄÆğÂğ?", 4, "½¨Á¢×·ÄÃÈÎÎñ /CreateTask", "½Ó×·ÄÃÈÎÎñ /QueryTask", "¿´×Ô¼ºµÄÈÎÎñ/ModifyTask", "²»×öÊ²Ã´/DoNothing")
+		Say("Gan ng­¬i to thÕ ­? Téi danh x«ng vµo C«ng ®­êng vµ Nha m«n ng­¬i g¸nh næi kh«ng vËy?", 4, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask", "Xem l¹i nhiÖm vô cña m×nh /ModifyTask", "Kh«ng lµm g× c¶ /DoNothing")
 	else
-		Say("ÄãÕæÊÇµ¨´ó£¬ÉÃ´³¹«ÌÃºÍÑÃÃÅµÄ×ïÃûÄãµ£µ±µÄÆğÂğ?", 3, "½¨Á¢×·ÄÃÈÎÎñ/CreateTask", "½Ó×·ÄÃÈÎÎñ/QueryTask", "²»×öÊ²Ã´ /DoNothing")
+		Say("Gan ng­¬i to thÕ ­? Téi danh x«ng vµo C«ng ®­êng vµ Nha m«n ng­¬i g¸nh næi kh«ng vËy?", 3, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask", "Kh«ng lµm g× c¶ /DoNothing")
 	end
 end;
 
@@ -53,5 +53,5 @@ function ModifyTask()
 end;
 
 function DoNothing()
-	Say("ÈÎºÎÈËÖ»ÒªËµ³ö¶Ô´ó½ğ¹ú²»¾´µÄÑÔ´Ç£¬¾ÍÁ¢¿Ì×¥ÆğÀ´! ", 0)
+	Say("BÊt cø ai bu«ng lêi bÊt kİnh víi §¹i Kim, lËp tøc b¾t ngay! ", 0)
 end;

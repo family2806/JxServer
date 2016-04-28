@@ -5,5 +5,5 @@ CurStation = 15;
 Include("\\script\\global\\station.lua")
 
 function main(sel)
-	NewcomerStationCommon("车夫：要坐车么？");
+	NewcomerStationCommon("<#>Mu鑞 ng錳 xe");
 end;

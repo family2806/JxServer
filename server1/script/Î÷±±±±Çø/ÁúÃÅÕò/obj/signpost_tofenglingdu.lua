@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("Í¨Íù·çÁê¶É", 0)
+Say("§i Phong L¨ng §é", 0)
 
 end;

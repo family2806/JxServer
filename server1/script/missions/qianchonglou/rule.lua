@@ -113,7 +113,7 @@ function tbRule:AwardPoint(nNpcRank)
 	end
 	local nPoint = pNpcRank.nPoint
 	self.pChallenger:AddAwardPoint(nPoint)
-	Msg2Map(self.nMapId, format("%s »ñµÃ %d½±Àø", self.pChallenger.szName, nPoint))
+	Msg2Map(self.nMapId, format("%s nhËn ®­îc %d ®iÓm phÇn th­ëng", self.pChallenger.szName, nPoint))
 end
 
 function tbRule:UseGun(nGunRank, nX,  nY)
@@ -139,7 +139,7 @@ function tbRule:AddExtraPower(nNpcRank)
 	self.pChallenger.nExtraPower = self.pChallenger.nExtraPower + nPoint
 	if self.pChallenger.nExtraPower >= %EXTRA_POWER then
 		self.pChallenger:SetExtraGun()
-		Msg2Map(self.nMapId, "¹§Ï²¸óÏÂÒÑ»ñµÃÌØ±ğ±©Å­£¬ÇëÑ¡ÔñÄ¿±ê.")
+		Msg2Map(self.nMapId, "Chóc mõng c¸c h¹ ®· nhËn ®­îc b¹o né ®Æc biÖt, xin h·y lùa chän môc tiªu.")
 	end
 end
 

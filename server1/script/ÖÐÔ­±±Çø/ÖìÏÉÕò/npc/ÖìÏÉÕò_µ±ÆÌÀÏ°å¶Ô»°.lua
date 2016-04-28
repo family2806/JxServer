@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("¿Í¹ÙÏëµÖÑºÊ²Ã´?",0)
+Say("Kh¸ch quan muèn cÇm ®å g×?",0)
 
 end;

@@ -6,28 +6,28 @@ function main(sel)
 		 SetTaskTemp(111,GetTaskTemp(111)+1)
 
 		 if ( GetTaskTemp(111) > 3 ) then
-		 	Talk(1,"","ÌıËµÓĞÒ»Î»²»Öª´ÓÄÄ×ùËÂÃíÀ´µÄÊ¦Ì«·¨Á¦ÎŞ±ß£¬ÄãÈ¥ÎÊÎÊ¿´.")
+		 	Talk(1,"","Nghe nãi cã mét vŞ s­ th¸i kh«ng biÕt tõ miÕu nµo ®Õn, ph¸p lùc v« biªn ng­¬i ®i hái thö xem sao.")
 		 	SetTask(1256, 2);
 		 	return
 		 else
-		 	Talk(1,"","ÍêÁË£¬ÕæÍêÁË£¬Ó¦¸ÃÊÇ´ÓÎÒÕâÓĞÒ»Î»Ó¢ĞÛºÀ½Ü¿ÉÒÔ½øÈëĞ¡ÕòÂğ£¿Ïë²»µ½ÎÒ¸ç¸ç±»¼²²¡¶áÈ¥ÁËĞÔÃü£¬ÕæÊÇ¿ÉÏ§¡£ÚÀ£¬»¹ÊÇÈ¥ÎÊÎÊ±ğÈË°É.")
+		 	Talk(1,"","HÕt råi, hÕt thËt råi, ®¸ng lı ra ta cã thÓ g¶ cho mét vŞ anh hïng hµo kiÖt võa míi vµo trÊn nµy ë. Kh«ng ngê anh ta bŞ c¨n bÖnh dŞch c­íp mÊt m¹ng, ®¸ng tiÕc qu¸ ®i. Hõ......ta kh«ng râ ®Çu ®u«i thÕ nµo n÷a ng­¬i thö ®i hái ng­êi kh¸c xem sao.")
 		 	return
 		 end
 		 return
 	elseif ( GetTask(1256) == 2 ) then
-		Talk(1,"","ÌıËµÓĞÒ»Î»²»Öª´ÓÄÄ×ùËÂÃíÀ´µÄÊ¦Ì«·¨Á¦ÎŞ±ß£¬ÄãÈ¥ÎÊÎÊ¿´.")
+		Talk(1,"","Nghe nãi cã mét vŞ s­ th¸i kh«ng biÕt tõ miÕu nµo ®Õn, ph¸p lùc v« biªn ng­¬i ®i hái thö xem sao.")
 		return
 	end
 
 i = random(0,1)
 
 if (i == 0) then
-Say("¹ÈÖ®À¼£º¶À¹Â·òÈËÕæÓĞ¸£Æø£¬ÕÉ·òÊÇÒ»¸öÈËÈË¾°ÑöµÄ´óÓ¢ĞÛ£¬Õæ½ĞÈËÏÛÄ½¡£",0)
+Say("§éc C« phu nh©n thËt cã phóc, t­íng c«ng lµ mét ®¹i anh hïng,thËt khiÕn ta ng­ìng mé ",0)
 return
 end;
 
 if (i == 1) then
-Say("¹ÈÖ®À¼£ºÅ®ÈËÒ»±²×Ó×îÖØÒªµÄ¾ÍÊÇ²»Òª¼Ş´íÈË£¬ÎÒ½«À´Ò²Òª¼Ş¸øÒ»¸öÌú¹ÇÈáÇéµÄ´óÏÀ¡£",0)
+Say("Quan träng nhÊt cña mét ®êi con g¸i chİnh lµ kh«ng nªn g¶ nhÇm ng­êi. Sau nµy ta còng ph¶i lÊy mét §¹i hiÖp cã t×nh c¶m dŞu dµng",0)
 end;
 
 end;

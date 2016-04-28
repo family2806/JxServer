@@ -2,7 +2,7 @@
 -- By: li_xin(2005-01-18)
 
 function main()
-	Say("Ò©µêÀÏ°å£ºËäÈ»´ËµØÊÇ±±¼«£¬µ«ÊÇÒ²ÓĞÌìÈ»µÄÕäÏ¡Ò©²Ä£¬ÕâÎ»¿Í¹ÙÏëÂòÊ²Ã´?", 2, "½»Ò×/yes", "²»½»Ò×/no")
+	Say("¤ng chñ tiÖm thuèc: Tuy n¬i nµy lµ cùc B¾c nh­ng còng cã nh÷ng lo¹i d­îc quİ hiÕm do thiªn nhiªn ban tÆng, lÇn nµy ta ph¶i kiÕm l¹i chót ®Ønh, vŞ kh¸ch quan nµy anh muèn mua g×?", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 end;
 
 function yes()

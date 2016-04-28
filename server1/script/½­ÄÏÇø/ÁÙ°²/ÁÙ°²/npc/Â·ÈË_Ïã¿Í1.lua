@@ -3,8 +3,8 @@
 
 function main()
 	if (random(0,1) == 0) then
-		Talk(1,"","Ïã¿Í£ºÔÚÏÂÔÆÓÎËÄ·½£¬²Î·Ã¹ıĞí¶àµÄ¹ÅËÂÃûÉ²£¬ÁéÒşËÂÈ´±ğ¾ßÒ»ÖÂ¡£ÁéÒş£¬ÁéÒş£¬¹ûÈ»ÊÇÒ»´¦ÏÉÁéÒş¼£µÄËùÔÚ£¡")
+		Talk(1,"","H­¬ng kh¸ch  t¹i h¹ d¹o ch¬i tø ph­¬ng , tè phãng qu¸ rÊt nhiÒu cæ tù tªn s¸t , Linh Èn tù l¹i chí cô nhÊt trİ . linh Èn , linh Èn , qu¶ nhiªn lµ mét chç tiªn linh Èn tİch ®İch chç ë ")
 	else
-		Talk(1,"","ÏãñÌ£ºÁéÒşËÂËÄÖÜÑÒ·åá¿áÉ£¬ÁÖéĞ²Ô´ä£¬Ïª½§İÓ»Ø£¬¹ÅÖÓÇåÒô£¬ÎÅÖ®ÍüË×£¬ÕæÄËÒ»´ÔÁÖÏÉ¾³Ò²¡£")
+		Talk(1,"","H­¬ng kh¼ng  Linh Èn tù bèn phİa nham ngän nói tranh vanh , l©m viÖt th­¬ng thóy , khª gi¶n oanh trë vÒ , cæ chung thanh ©m , nghe thÊy chi quªn tôc , thËt/®óng lµ mét rõng rËm tiªn c¶nh còng . ")
 	end
 end;

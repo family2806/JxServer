@@ -50,9 +50,9 @@ FreedomTree2010 = {}
 FreedomTree2010.AWARD_SCORE = 304;
 FreedomTree2010.PLANT_TOOL = 
 {
-	["·ÊÁÏ°ü"] = {prop={6, 1, 2295}, scoreOp="*2"},
-	["Ë®Í°"] = {prop={6, 1, 2296}, scoreOp="+2"},
-	["³ı³æ¼Á"] = {prop={6, 1, 2297}, scoreOp="-2"},
+	["Tói Ph©n Bãn"] = {prop={6, 1, 2295}, scoreOp="*2"},
+	["Thïng N­íc"] = {prop={6, 1, 2296}, scoreOp="+2"},
+	["Thuèc Trõ S©u"] = {prop={6, 1, 2297}, scoreOp="-2"},
 }
 
 function FreedomTree2010:Timeout()
@@ -67,29 +67,29 @@ function FreedomTree2010:Dialog()
 	local szPlayer = GetName();
 	local tbSay = {};
 	if (szPlayer ~= self.m_Owner) then
-		tbSay[1] = format("<color=yellow>%s<color> ÖÖ <color=green>%s<color>. <color=red> Çì×£½â·ÅÈÕ!<color>",
+		tbSay[1] = format("<color=yellow>%s<color> trång <color=green>%s<color>. <color=red> Chµo mõng ngµy ®Êt n­íc ®­îc gi¶i phãng!<color>",
 											self.m_Owner, self.m_TreeType);
 	else
-		tbSay[1] = format("ÄãÒÑÖÖ<color=green>%s<color> ²¢ÇÒÒÑµÃµ½<color=green>%d<color> µã. µ±»ıÀÛÖµµ½<color=green>%d<color> ¾Í¿ÉÒÔÁì½±ÁË!",
+		tbSay[1] = format("Ng­¬i ®·  trång <color=green>%s<color> vµ ®· nhËn ®­îc <color=green>%d<color> ®iÓm. Khi nµo ®iÓm tİch lòy b»ng <color=green>%d<color> th× cã thÓ nhËn th­ëng ®­îc råi!",
 											self.m_TreeType, self.m_Score, self.AWARD_SCORE);
 		if (self.m_bAward == 0) then
 			if (self.m_Score ~= self.AWARD_SCORE) then
-				tinsert(tbSay, format("Ê©·Ê (ÏÖÔÚ»ıÀÛÖµ·­2·¬)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "·ÊÁÏ°ü"))
-				tinsert(tbSay, format("È÷Ë® (ÏÖÔÚ»ıÀÛÖµ¼Ó2´Î)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "Ë®Í°"))
-				tinsert(tbSay, format("³ı³æ(ÏÖÔÚ»ıÀÛÖµ¿Û³ı2´Î)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "³ı³æ¼Á"))
+				tinsert(tbSay, format("Bãn ph©n (§iÓm tİch lòy hiÖn t¹i gÊp 2 lÇn)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "Tói Ph©n Bãn"))
+				tinsert(tbSay, format("T­íi n­íc (§iÓm tİch lòy hiÖn t¹i céng 2 lÇn)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "Thïng N­íc"))
+				tinsert(tbSay, format("GiÕt s©u bä (§iÓm tİch lòy hiÖn t¹i trõ 2 lÇn)/#FreedomEvent2010:UsePlantTool(%d,'%s')",self.m_NpcIndex, "Thuèc Trõ S©u"))
 			else
-				tinsert(tbSay, format("ÎÒÏëÁì½±/#FreedomEvent2010:GetTreeAward(%d)",self.m_NpcIndex))
+				tinsert(tbSay, format("Ta muèn nhËn th­ëng/#FreedomEvent2010:GetTreeAward(%d)",self.m_NpcIndex))
 			end
 		end
 
 	end
 	
-	tinsert(tbSay, "Àë¿ª/OnExit");
+	tinsert(tbSay, "Rêi khái/OnExit");
 	CreateTaskSay(tbSay);
 end
 
 function FreedomTree2010:GetAward()
-		tbAwardTemplet:GiveAwardByList(self.m_tbAward, format("ÅàÓıĞÒ¸£ÄÛÑ¿»î¶¯\½±Àø %s", self.m_TreeType));
+		tbAwardTemplet:GiveAwardByList(self.m_tbAward, format("Ho¹t ®éng ­¬m mÇm hµnh phóc \tPhÇn th­ëng %s", self.m_TreeType));
 		self.m_bAward = 1;
 end
 
@@ -110,10 +110,10 @@ function FreedomTree2010:UsePlantTool(szTool)
 	if (tbTool) then
 		if ConsumeEquiproomItem(1,tbTool.prop[1], tbTool.prop[2], tbTool.prop[3], -1) == 1 then
 			self:SetScore(dostring(format("return %d%s", self.m_Score,tbTool.scoreOp)));
-			Talk(1, "", format("ÄãÒÑÖÖ <color=green>%s<color> ²¢ÒÑµÃµ½<color=green>%d<color> µã. µ±»ıÀÛÖµµ½<color=green>%d<color>¾Í¿ÉÒÔÁì½±ÁË!",
+			Talk(1, "", format("Ng­¬i ®·  trång <color=green>%s<color> vµ ®· nhËn ®­îc <color=green>%d<color> ®iÓm. Khi nµo ®iÓm tİch lòy b»ng <color=green>%d<color> th× cã thÓ nhËn th­ëng ®­îc råi!",
 											self.m_TreeType, self.m_Score, self.AWARD_SCORE));
 		else
-			Talk(1, "", format("´óÏÀºÃÏñÍü´øÁË <color=yellow>%s<color>!",szTool));
+			Talk(1, "", format("H×nh nh­ c¸c h¹ quªn ®em <color=yellow>%s<color>!",szTool));
 		end
 	end
 end
@@ -170,12 +170,12 @@ FreedomSeed2010.DAILY_TIME_LIMIT =
 
 FreedomSeed2010.TREE_TEMPLET = 
 {
-	{1552, "°²ÀÖÇ§Ëê"},
-	{1551, "ºÍÆ½Ç§Ëê"},
-	{1550, "¶ÀÁ¢Ç§Ëê"},
-	{1555, "×ÔÓÉÇ§Ëê"},
-	{1554, "ĞÒ¸£Ç§Ëê"},
-	{1553, "ĞËÍúÇ§Ëê"},
+	{1552, "Thiªn TuÕ An Lµnh"},
+	{1551, "Thiªn TuÕ Hßa B×nh"},
+	{1550, "Thiªn TuÕ §éc LËp"},
+	{1555, "Thiªn TuÕ Tù Do"},
+	{1554, "Thiªn TuÕ H¹nh Phóc"},
+	{1553, "Thiªn TuÕ ThŞnh V­îng"},
 }
 
 FreedomSeed2010.tbTreeRate = {
@@ -277,12 +277,12 @@ function FreedomSeed2010:CheckLimit()
 	end
 	
 	if (bInTime ~= 1) then
-		Talk(1, "","Ã¿Ìì»î¶¯´Ó13:00µ½16:00, 18:30µ½21:30.");
+		Talk(1, "","Ho¹t ®éng b¾t ®Çu vµo mçi ngµy tõ 13:00 ®Õn 16:00, 18:30 ®Õn 21:30.");
 		return 0;
 	end
 	
 	if (offlineCheckPermitRegion() ~= 1 or self:IsCityTongMap(SubWorldIdx2ID(SubWorld)) ~= 1 or GetFightState() ~= 0) then
-		Talk(1, "","²»ÄÜÔÚÕâÊ¹ÓÃ´ËÎïÆ·");
+		Talk(1, "","Kh«ng ®­îc sö dông vËt phÈm nµy t¹i ®©y");
 		return 0;
 	end
 	
@@ -292,12 +292,12 @@ function FreedomSeed2010:CheckLimit()
 			
 			if (nDailyUse < self.USE_DAILY_LIMIT) then
 				if (GetFightState() > 0) then
-					Talk(1, "", "·ÇÕ½¶·³ÇÊĞ´åÕòÇøÓò²Å¿ÉÒÔÊ¹ÓÃ");
+					Talk(1, "", "Khu vùc thµnh thŞ th«n trÊn phi chiÕn ®Êu míi cã thÓ sö dông");
 				else
 					return 1;
 				end
 			else
-				Talk(1, "", format("Ã¿ÌìÃ¿¸öÈÎÎñÖ»ÄÜÊ¹ÓÃ %d´Î", self.USE_DAILY_LIMIT));
+				Talk(1, "", format("Mçi ngµy mçi nh©n vËt chØ ®­îc sö dông %d lÇn", self.USE_DAILY_LIMIT));
 			end
 	end
 	
@@ -321,9 +321,9 @@ function FreedomSeed2010:CreateTree(szOwner)
 	else
 		if (nTreeType == 6) then
 			LG_ApplyDoScript(1, "", "", "\script\event\msg2allworld.lua", "battle_msg2allworld", 
-			format("¹§Ï² <color=yellow>%s<color> ÒÑÖÖ³ö<color=yellow>%s<color>",szOwner,self.TREE_TEMPLET[nTreeType][2]), "", "");
+			format("Chóc mõng <color=yellow>%s<color> ®· trång ®­îc <color=yellow>%s<color>",szOwner,self.TREE_TEMPLET[nTreeType][2]), "", "");
 		end
-		WriteLog(format("[ĞÒ¸£ÄÛÑ¿»î¶¯\tÊ¹ÓÃ %s]\t%s\t%s\t%s","Ç§ËêºË",GetAccount(),GetName(),self.TREE_TEMPLET[nTreeType][2]));
+		WriteLog(format("[Ho¹t ®éng ­¬m mÇm h¹nh phóc \tSö dông %s]\t%s\t%s\t%s","H¹t Thiªn TuÕ",GetAccount(),GetName(),self.TREE_TEMPLET[nTreeType][2]));
 		SetNpcScript(nNpcIdx, self.SCRIPT_TREEDLG)
 		local tbTree = clone(FreedomTree2010)
 		tbTree.m_TreeType = self.TREE_TEMPLET[nTreeType][2];

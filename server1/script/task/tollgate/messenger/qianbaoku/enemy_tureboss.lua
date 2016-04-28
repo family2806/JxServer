@@ -46,7 +46,7 @@ function messenger_turego()
     	if nTaskStatus == 30 then
     		--ÈÎÎñÍê³É
     		nt_setTask(1203,25)
-    		Talk(1, "", name.."´óÈË£¬ÄãµÄÈÎÎñÒÑ¾­Íê³É£¬Çë¿ìµãÀë¿ª¹ØÈ¥ÕÒÏôÕò.")
+    		Talk(1, "", name.."§¹i nh©n nhiÖm vô cña «ng ®· hoµn thµnh, h·y nhanh chãng ®i ra khái cöa ¶i t×m Tiªu TrÊn ®i.")
     		return 1
     	elseif nTaskStatus==20 then
     		--ÈÎÎñ¿ÉÒÔ¼ÌĞø
@@ -55,10 +55,10 @@ function messenger_turego()
     	else
     		--ÈÎÎñÊ§°Ü
     		losemessengertask()
-    		Talk(1, "", "¶Ô²»Æğ! "..name.."Äã´ò¿ªÏä×ÓÖÈĞò²»¶Ô£¬ÈÎÎñÊ§°Ü.")
+    		Talk(1, "", "Xin lçi! "..name.."§¹i nh©n, «ng më B¶o R­¬ng kh«ng ®óng thø tù, nhiÖm vô thÊt b¹i.")
     	end
     elseif nTask1203 == 25 then
-    	Talk(1, "", "ÄãµÄÈÎÎñÒÑ¾­Íê³É£¬Çë¿ìµãÈ¥ÕÒÏôÕò.")
+    	Talk(1, "", "NhiÖm vô cña ng­¬i ®· hoµn thµnh, xin h·y nhanh ch©n ®i t×m Tiªu TrÊn ®i.")
     end
 
 ------------------------------------------------------º¯ÊıÅĞ¶Ï--------------------------------------------

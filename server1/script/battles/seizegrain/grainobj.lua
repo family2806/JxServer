@@ -21,14 +21,14 @@ function main()
 	
 	-- Íæ¼ÒÒÑ¾­ÔÚÔËÁ¸Ê±£¬²»ÄÜÄÃÆßÁíÒ»´ü
 	if (BT_GetData(PL_PARAM3) ~= 0) then
-		Msg2Player("ÄúÕıÔÚÔËÒ»°üÁ¸Ê³,²»ÄÜÔÙ¶àÔËÆäËû°üÁË¡£");
+		Msg2Player("B¹n ®ang vËn chuyÓn mét bao l­¬ng, kh«ng thÓ mang thªm bao l­¬ng kh¸c?");
 		return
 	end
 	
 	-- ÎŞÂÛÄÄ·½ÒÅÁôµÄÁ¸Ê³°ü£¬¶¼¿ÉÒÔÔËËÍ¡ª¡ªµ±È»ÊÇÔË»Ø±¾·½´óÓª
 	BT_SetData(PL_PARAM3, 1);
 	
-	Msg2Player("ÄúÕıÔÚ¿¸Ò»°üÁ¸Ê³£¬¿ìµãÔËµ½±¾·½ÕóÓª.");
+	Msg2Player("B¹n ®ang v¸c mét bao l­¬ng, h·y mau chãng vËn chuyÓn ®Õn b¶n doanh phe m×nh.");
 	if (GetCurCamp() == 1) then
 		ChangeOwnFeature(0,0,1341);	-- ¸Ä±äÍæ¼ÒĞÎÏóÎªÔËÁ¸°üµÄÑù×Ó
 	else
@@ -37,11 +37,11 @@ function main()
 	
 	local W,X1,Y1 = GetWorldPos();
 	if (GetCurCamp() == 1) then
-		Msg2MSAll(MISSIONID, format("<color=0x00FFFF>Phe ËÎ<color=yellow>%s<color=0x00FFFF> ÔÚ <color=yellow>%d, %d<color=0x00FFFF> ¶áµÃÁ¸Ê³°ü, Õı·µ»Ø<color=yellow>±¾Óª",
+		Msg2MSAll(MISSIONID, format("<color=0x00FFFF>Phe Tèng<color=yellow>%s<color=0x00FFFF> t¹i <color=yellow>%d, %d<color=0x00FFFF> ®o¹t ®­îc Bao l­¬ng, ®ang quay vÒ <color=yellow>B¶n doanh",
 										GetName(),X1,Y1))
 		AddSkillState(460, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
 	else
-		Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>Phe Kim<color=yellow>%s<color=0x9BFF9B> t¹i <color=yellow>%d, %d<color=0x9BFF9B> ¶áµÃÁ¸Ê³°ü, Õı·µ»Ø<color=yellow>±¾Óª",
+		Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>Phe Kim<color=yellow>%s<color=0x9BFF9B> t¹i <color=yellow>%d, %d<color=0x9BFF9B> ®o¹t ®­îc Bao l­¬ng, ®ang quay vÒ <color=yellow>B¶n doanh",
 										GetName(),X1,Y1))
 		AddSkillState(461, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
 	end

@@ -1,19 +1,19 @@
 Include( "\\script\\missions\\leaguematch\\head.lua" )
 
 TB_WLLS_JOIN_SAY = {
-	"ÕâÎ»´óÏÀ£¬½øÈëÈü³¡µÄÊ±¼äÒÑ¹ı£¬ÏÂ´ÎÔÙÀ´°É!",
-	"´óÏÀ£¬Î´¼ÓÈëÕ½¶Ó£¬ÔõÃ´²Î¼Ó±ÈÈü?",
-	"Ã¿¸ö±ÈÈü³¡µØÖ»ÈİÄÉ400Õ½¶Ó£¬Ä¿Ç°ÒÑ¹»ÁË£¬ÄãÏÂ´ÎÔÙÀ´°É!",
-	"Õâ´ÎÁªÈü£¬¸óÏÂµÄÕ½¶Ó²Î¼Ó³¡ÊıÒÑ´ï×î¸ß£¬²»ÄÜÔÙ²Î¼ÓÁË!",
-	"¶Ô²»Æğ£¬ÄãÕ½¶ÓµÄ³ÉÔ±ºÍÄãÒ»Æğ½øÈë×¼±¸ÇøÓò£¬ÎªÁË±ÜÃâ·¢ÉúÒâÍâ£¬ÇëÔÙÊÔÒ»´Î!",
-	"ÈËÒÑ¹»¶àÁË£¬²»ÄÜ½øÈëÁË",
+	"Thêi gian vµo khu vùc ®· hÕt, lÇn sau h·y tíi sím h¬n!",
+	"Ch­a vµo ®éi, kh«ng thÓ vµo héi tr­êng",
+	"Mçi ®Şa ®iÓm chØ chøa tèi ®a ®­îc 400 ®éi!",
+	"Liªn ®Êu th¸ng nµy, ®éi b¹n ®· tham gia ®ñ sè trËn!",
+	"Xin lçi! Thµnh viªn trong ®éi cña b¹n ®· vµo khu vùc chuÈn bŞ, h·y thö l¹i",
+	"Sè ng­êi ®· ®ñ, kh«ng thÓ vµo",
 }
 
 TB_WLLS_PHASE_MSG = {
-	"ÎäÁÖÁªÈüºÍÎäÁÖĞÂĞãÁªÈüÕâ´¦ÓÚÔİÊ±ĞİÏ¢½×¶Î£¬¸÷Î»ÓÂÊ¿¿ÉÒÔÁìÈ¡ÅÅÃû½±Àø£¬¼°Õû¶Ù×Ô¼ºµÄÕ½¶Ó¡£´Ë´Î±ÈÈüµÄÏŞÖÆÎª%s",
-	"ÎäÁÖÁªÈüºÍÎäÁÖĞÂĞãÁªÈü¼´½«¿ªÊ¼£¬Çë¸÷Î»ÓÂÊ¿¼ì²é×Ô¼ºµÄÕ½¶Ó¡£´Ë´Î±ÈÈüµÄÏŞÖÆÎª?%s",
-	"ÎäÁÖÁªÈü½ñÌìÔİÊ±½áÊø ",	-- ²»Ò»¶¨ÊÇ½ñÌìÔÙÃ»ÓĞ±ÈÈüÁË
-	"ÎäÁÖĞÂĞãÁªÈü %d Õı´¦ÓÚ±¨Ãû½×¶Î£¬¸÷¶ÓÏë²Î¼Ó£¬Çë¿ìµãÀ´±¨Ãû!",
+	"Vâ l©m liªn ®Êu ®ang trong giai ®o¹n nghØ ng¬i, cã thÓ nhËn th­ëng theo tõng cÊp bËc. H¹n chÕ %s",
+	"Vâ l©m liªn ®Êu s¾p b¾t ®Çu, h·y kiÓm tra chiÕn ®éi. H¹n chÕ %s",
+	"Vâ l©m liªn ®Êu t¹m thêi kÕt thóc ",	-- ²»Ò»¶¨ÊÇ½ñÌìÔÙÃ»ÓĞ±ÈÈüÁË
+	"Vâ l©m liªn ®Êu %d chİnh thøc vµo giai ®o¹n b¸o danh, c¸c ®éi h·y mau ®¨ng kı!",
 }
 
 --ÏòÖ¸¶¨½ÇÉ«Ãû·¢ÏûÏ¢
@@ -26,7 +26,7 @@ function wlls_gw_say(rolename, str, b_msg, b_sync)
 			Msg2Player(str)
 		else
 			local str_npc = GetNpcName(GetLastDiagNpc())
-			if (str_npc ~= "ÁªÈüÊ¹Õß" and str_npc ~= "ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±" and str_npc ~= "»á³¡¹ÙÔ±") then str_npc = "ÎäÁÖ¹ÙÔ±" end
+			if (str_npc ~= " Sø gi¶ Vâ l©m liªn ®Êu" and str_npc ~= " vâ l©m t©n tó liªn cuéc so tµi quan viªn " and str_npc ~= " héi tr­êng quan viªn ") then str_npc = " vâ l©m quan viªn " end
 			Say(str_npc..":"..str, 0)
 		end
 		if b_sync then
@@ -127,7 +127,7 @@ function wlls_setphase(n_sid, n_type, n_phase, n_mid, n_next, tbOpen)
 					local nLevel	= wlls_get_level(nMType)
 					if (not FALSE(tbOpen[nLevel])) then	-- Ã»ÓĞ¹Ø±ÕµÄ»°
 						tbGroup[getn(tbGroup)+1]	= nGroupIdx
-						print("sever¿ªÆô×¼±¸"..wlls_get_desc(3).."sever")
+						print("sever liªn ®Êu chuÈn bŞ "..wlls_get_desc(3).."sever")
 						OpenMission(WLLS_MSID_SCHEDULE)
 					end
 				end
@@ -139,7 +139,7 @@ function wlls_setphase(n_sid, n_type, n_phase, n_mid, n_next, tbOpen)
 		end
 		SubWorld = n_oldsub
 	else
-		print("ÎäÁÖ´ó»áÕı´¦ÓÚ½×¶Î:"..n_phase.."("..n_mid..") ???")
+		print("§¹i héi vâ l©m ®ang ®øng ë giai ®o¹n :"..n_phase.."("..n_mid..") ???")
 	end
 end
 
@@ -168,7 +168,7 @@ function wlls_player_join(str_playername, n_mtype, n_group, n_mscamp)
 			for i = 1, getn(WLLS_FORBID_STATES) do
 				RemoveSkillState(WLLS_FORBID_STATES[i][2])
 			end
-			Msg2Player("½øÈë±ÈÈüÇøÓòºó£¬²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇ¿ÉÒÔÊ¹ÓÃ×°±¸ºÍ¹¤¾ßÀ¸ÀïµÄÎïÆ·");
+			Msg2Player("Khi vµo khu vùc chuÈn bŞ, vËt phÈm sÏ kh«ng thÓ di chuyÓn, nh­ng vÉn cã thÓ sö dông trong thanh c«ng cô");
 			SetRevPos(wlls_get_mapid(1, n_mtype, n_group), 1)	--ÖØÉúµãÔÚËùÔÚ±ÈÈü·şÎñÆ÷µÄ»á³¡
 			local n_mapid = wlls_get_mapid(2, n_mtype, n_group)
 			_M(n_mapid, "wlls_get_mapid", n_mtype, n_group)
@@ -182,7 +182,7 @@ end
 
 -- ·µ»ØÖ¸¶¨½±Æ·ĞÅÏ¢
 function wlls_get_awardinfo(n_type, n_level, n_award)
-	local str	= WLLS_LEVEL_DESC[n_level] .. " (" .. WLLS_TAB[n_type].name .. ")´Î"
+	local str	= WLLS_LEVEL_DESC[n_level] .. " (" .. WLLS_TAB[n_type].name .. ") lÇn"
 
 	local tb_award	= WLLS_TAB[n_type].award_rank[n_level]
 	
@@ -197,7 +197,7 @@ function wlls_get_awardinfo(n_type, n_level, n_award)
 	else
 		str	= str .. n_end
 	end
-	str	= str .. "½±Àø (" .. tb_award[n_award][3] .. ") "
+	str	= str .. " t­ëng th­ëng (" .. tb_award[n_award][3] .. ") "
 	
 	return str
 end
@@ -228,12 +228,12 @@ function wlls_awardinfo(b_Msg)
 	local n_sid		= GetByte(n_got, 1)
 	if (n_award == 0) then
 		if (n_sid == 0) then
-			str	= "Î´Áì¹ı"
+			str	= " kh«ng dÉn qu¸ "
 		else
-			str	= "Ãû´Î" .. n_sid .. "´Ë´ÎÁªÈü£¬Î´ÖªÄÚÈİ"
+			str	= " h¹ng " .. n_sid .. " lÇn nµy liªn cuéc so tµi , kh«ng biÕt néi dung "
 		end
 	else 
-		str	= "Ãû´Î " .. n_sid .. "´Ë´Î" .. wlls_get_awardinfo(n_type, n_level, n_award)
+		str	= " h¹ng " .. n_sid .. " lÇn nµy " .. wlls_get_awardinfo(n_type, n_level, n_award)
 	end
 
 	local n_awardex	= GetTask(WLLS_TASKID_AWARDEX)
@@ -270,6 +270,6 @@ function wlls_reload(bRelay)
 	if (bRelay) then
 		LG_ApplyDoScript(0, "", "", "\\script\\leaguematch\\joinmatch.lua", "ReloadAllScript", "" , "", "")
 	end
-	Msg2Player("WLLS file ÒÑ³¬ÏŞ"..date())
-	print("===============WLLS file ÒÑ³¬ÏŞ"..date())
+	Msg2Player("WLLS file ®· cùc kú h¹n "..date())
+	print("===============WLLS file ®· cùc kú h¹n "..date())
 end

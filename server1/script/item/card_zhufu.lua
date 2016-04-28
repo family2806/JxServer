@@ -4,8 +4,8 @@ ITEM_GENRE = 6
 ITEM_DETAIL = 1
 ITEM_PARTI = 2621
 function main()
-	if (gb_GetModule("¸£ÔµÑÌ»¨") == 1) then
-		Say("¸ÃºØ¿¨¿ÉÒÔÔÚÄãÏë×£¸£µÄÈËÖÜÎ§ÏÂÑ©»¨.", 2, "¿ªÊ¼×£¸£/want2fireworks", "·ÅÆú/OnCancel")
+	if (gb_GetModule("Phóc duyªn ph¸o hoa") == 1) then
+		Say("TÊm ThiÖp Chóc Mõng nµy cã thÓ r¬i tuyÕt hoa xung quanh ng­êi b¹n muèn chóc phóc.", 2, "B¾t ®Çu chóc phóc/want2fireworks", "Hñy bá /OnCancel")
 	end
 	return 1
 end
@@ -14,7 +14,7 @@ function OnCancel()
 end
 
 function want2fireworks()
-	AskClientForString("PlayerSelect", "", 1, 16, "ÇëÊäÈë¶Ô·½ĞÕÃû");
+	AskClientForString("PlayerSelect", "", 1, 16, "Xin nhËp tªn ®èi ph­¬ng");
 end
 
 function PlayerSelect(rolename)
@@ -22,7 +22,7 @@ function PlayerSelect(rolename)
 end
 
 function BlessPlayerOffline(TargetName)
-	Say("¶Ô²»Æğ! "..TargetName.."Ä¿Ç°Ã»ÓĞÔÚÏß.",0)
+	Say("Xin lçi! "..TargetName.."HiÖn t¹i kh«ng cã trªn m¹ng.",0)
 end;
 
 function BlessPlayerOnline(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, PlayerLevel, MapName, nPosX, nPosY, nSex, nWorldRank, nSubWorldID, nFightMode, bTargetProtect)
@@ -32,9 +32,9 @@ function BlessPlayerOnline(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Pl
 		local nposy = nPosY * 32
 		local szParam = TargetName.." "..nSubWorldID.." "..nPosX.." "..nPosY.." "..GetName()
 		LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "xuehua_bless_anywhere", szParam, "", "")
-		Msg2Player("ÄúµÄ×£¸£ÓïÒÑ¾­·¢ËÍ³É¹¦!")
+		Msg2Player("Lêi chóc phóc cña b¹n ®· gëi ®i thµnh c«ng!")
 	else
-		Say("ÕÒ²»µ½¿¨£¡ÇëÔÙÊÔÒ»´Î!.", 0)
+		Say("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.", 0)
 	end
 end
 

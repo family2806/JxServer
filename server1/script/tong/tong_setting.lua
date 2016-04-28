@@ -9,7 +9,7 @@ aTongLevelData = {}	--°ï»áµÈ¼¶²ÎÊı
 function LoadTongSetting()	--ÔØÈëÅäÖÃ
 	local b1 = TabFile_Load("\\settings\\tong\\tong_level_data.txt", "TongLevelData")
 	if b1~=1 then
-		print("¼ÓÔØ°ï»áÅäÖÃÎÄ¼şÊ§°Ü£¡")
+		print("§äc tÖp config bang héi thÊt b¹i!")
 		return
 	end
 	local nRowCount = TabFile_GetRowCount("TongLevelData")
@@ -31,18 +31,18 @@ LoadTongSetting()
 
 
 	TB_STUNTID_INFO = {
-	[1] = {stuntid = 1,name = "·ï»ËÓ¡", func = "stunt_fenghuang",},
-	[2] = {stuntid = 2,name = "¶ÍÎä»ê", func = "stunt_duanwuhun",},
-	[3] = {stuntid = 3,name = "ÎŞË«É±Õó", func = "stunt_wushuang",},
-	[4] = {stuntid = 4,name = "ÌÕÖìÇ®´ü", func = "stunt_moneybox",},
-	[5] = {stuntid = 5,name = "ÎäÉñ´Í¸£", func = "stunt_wushenbless",},--Ôİ¶¨
-	[6] = {stuntid = 6,name = "Áé²ÎÁ¦", func = "stunt_lingshenli",},
-	[7] = {stuntid = 7,name = "»Æ½ğÁî", func = "stunt_huangjinling",},
+	[1] = {stuntid = 1,name = "Phông Hoµng Ên", func = "stunt_fenghuang",},
+	[2] = {stuntid = 2,name = "LuyÖn vâ hån", func = "stunt_duanwuhun",},
+	[3] = {stuntid = 3,name = "V« Song S¸t TrËn", func = "stunt_wushuang",},
+	[4] = {stuntid = 4,name = "§µo Chu TiÒn", func = "stunt_moneybox",},
+	[5] = {stuntid = 5,name = "Vâ thÇn tø phóc", func = "stunt_wushenbless",},--Ôİ¶¨
+	[6] = {stuntid = 6,name = "Linh S©m Lùc", func = "stunt_lingshenli",},
+	[7] = {stuntid = 7,name = "Hoµng Kim LÖnh", func = "stunt_huangjinling",},
 	}
 	function LoadStuntData()
 		local b1 = TabFile_Load("\\settings\\tong\\tongstunt_setting.txt", "stuntData")
 		if b1~=1 then
-			print("¼ÓÔØÌØ¼¼ÅäÖÃÎÄ¼şÊ§°Ü£¡")
+			print("§äc tÖp config kü n¨ng ®Æc biÖt thÊt b¹i!")
 			return
 		end
 		local nRowCount = TabFile_GetRowCount("stuntData")
@@ -108,7 +108,7 @@ end
 function tongGetUpgradeWorkshopDemand(nTongID, nCurLevel) --»ñÈ¡Éı¼¶ËùĞè×÷·»Êı
 	local nRet = tonumber(aTongLevelData[nCurLevel]["UPGRADE_WORKSHOP_NUM"])
 	if (nRet == nil) then
-		print("»ñÈ¡Éı¼¶ËùĞè×÷·»ÊıÊ±³ö´í£¡")
+		print("GÆp lçi khi n©ng cÊp yªu cÇu vÒ sè l­îng t¸c ph­êng!")
 		return INVALID_VALUE
 	end
 	return nRet
@@ -117,7 +117,7 @@ end
 function tongGetUpgradeHighWorkshopsDemand(nTongID, nCurLevel) --»ñÈ¡Éı¼¶ËùĞè¸ß¼¶×÷·»Êı
 	local nRet = tonumber(aTongLevelData[nCurLevel]["UPGRADE_HI_WORKSHOP_NUM"])
 	if (nRet == nil) then
-		print("»ñÈ¡Éı¼¶ËùĞè¸ß¼¶×÷·»ÊıÊ±³ö´í£¡")
+		print("GÆp lçi khi n©ng cÊp yªu cÇu vÒ sè l­îng t¸c ph­êng cao cÊp!")
 		return INVALID_VALUE
 	end
 	return nRet
@@ -126,7 +126,7 @@ end
 function tongGetUpgradeHighWorkshopsLevel(nTongID, nCurLevel) --»ñÈ¡Éı¼¶ËùĞè¸ß¼¶×÷·»µÈ¼¶
 	local nRet = tonumber(aTongLevelData[nCurLevel]["UPGRADE_HI_WORKSHOP_LEVEL"])
 	if (nRet == nil) then
-		print("»ñÈ¡Éı¼¶ËùĞè¸ß¼¶×÷·»µÈ¼¶Ê±³ö´í£¡")
+		print("GÆp lçi khi n©ng cÊp yªu cÇu vÒ ®¼ng cÊp t¸c ph­êng!")
 		return INVALID_VALUE
 	end
 	return nRet
@@ -135,7 +135,7 @@ end
 function tongGetUpgradeCostFund(nTongID, nCurLevel)
 	local nRet = tonumber(aTongLevelData[nCurLevel]["UPGRADE_FUND"])
 	if (nRet == nil or nRet <= 0)then
-		print("»ñÈ¡Éı¼¶ËùĞè½¨Éè»ù½ğÊ±³ö´í£¡")
+		print("GÆp lçi khi n©ng cÊp yªu cÇu vÒ ng©n s¸ch kiÕn thÕt!")
 		return INVALID_VALUE
 	end
 	return nRet

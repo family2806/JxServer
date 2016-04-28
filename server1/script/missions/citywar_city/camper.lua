@@ -31,7 +31,7 @@ function GameOver()
 	
 	local PCount = getn(PTab);
 	
-	-- ½±ÀøËæ»ú5ÃûÍæ¼Ò»Ô»ÍÖ®¹ûÀñºĞ
+	-- ½±ÀøËæ»ú5ÃûÍæ¼ÒLÔ hép qu¶ huy hoµng
 	local tbRandPlayer = {};
 	local nRandCount = 0;
 	for i =1, PCount do
@@ -54,8 +54,8 @@ function GameOver()
 			if (nTopPlayerIdx > 0) then
 				PlayerIndex = nTopPlayerIdx;
 				AddOwnExp(CITYWAR_TOP10_EXP);
-				local szLog = format("%d¾­Ñé", CITYWAR_TOP10_EXP);
-				szLog = format("ÄãµÃµ½¹¥³ÇÕ½½±Àø%s", szLog);
+				local szLog = format("%d ®iÓm kinh nghiÖm", CITYWAR_TOP10_EXP);
+				szLog = format("B¹n nhËn ®­îc phÇn th­ëng C«ng thµnh chiÕn——%s", szLog);
 				Msg2Player(szLog);
 				WriteLog(format("[citywar_award]\t%s\tName:%s\tAccount:%s\t%s",
 							GetLocalDate("%Y-%m-%d_%H:%M"),
@@ -83,7 +83,7 @@ end;
 
 function citywar_awardplayer()
 	AddItem(6,1,1075,1,1,0);
-	local szLog = format("ÄãµÃµ½¹¥³ÇÕ½½±Àø%s","»Ô»ÍÖ®¹ûÀñºĞ")
+	local szLog = format("B¹n nhËn ®­îc phÇn th­ëng C«ng thµnh chiÕn——%s","LÔ hép qu¶ huy hoµng")
 	Msg2Player(szLog);
 	WriteLog(format("[citywar_award]\t%s\tName:%s\tAccount:%s\t%s",
 							GetLocalDate("%Y-%m-%d_%H:%M"),
@@ -100,24 +100,24 @@ function JoinCamp(Camp, Type)
 	if (Type == 1) then 
 		if (Camp == 1) then 
 			if (GetMSPlayerCount(MISSIONID,Camp) >= MAX_CAMP1COUNT) then
-				Say("ÏÖÔÚ²Î¼ÓÊØ³Ç°ï»áµÄÈËÊıÒÑ¾­¹»ÁË£¬ÔİÊ±²»ÄÜ¼ÓÈë!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end;
 		else 
 			if (GetMSPlayerCount(MISSIONID, Camp) >= MAX_CAMP2COUNT) then
-				Say("ÏÖÔÚ²Î¼ÓÊØ³Ç°ï»áµÄÈËÊıÒÑ¾­¹»ÁË£¬ÔİÊ±²»ÄÜ¼ÓÈë!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end
 		end;
 	else
 		if (Camp == 1) then 
 			if (GetMSPlayerCount(MISSIONID,Camp + 2 ) >= MAX_CAMP3COUNT) then
-				Say("ÏÖÔÚ²Î¼ÓÊØ³Ç°ï»áµÄÈËÊıÒÑ¾­¹»ÁË£¬ÔİÊ±²»ÄÜ¼ÓÈë!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end;
 		else 
 			if (GetMSPlayerCount(MISSIONID, Camp + 2) >= MAX_CAMP4COUNT) then
-				Say("ÏÖÔÚ²Î¼Ó°ïÖúÊØ³ÇµÄÒåÊ¿ÈËÊıÒÑ¾­¹»ÁË£¬ÔİÊ±²»ÄÜ¼ÓÈë!",0)
+				Say("HiÖn giê sè nghÜa sÜ gióp ®ì c«ng thµnh ®· ®Çy, t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end
 		end;

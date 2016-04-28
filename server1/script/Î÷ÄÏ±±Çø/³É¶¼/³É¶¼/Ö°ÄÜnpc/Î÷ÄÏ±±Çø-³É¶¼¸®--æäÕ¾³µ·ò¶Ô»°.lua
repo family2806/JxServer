@@ -5,5 +5,5 @@ Include("\\script\\global\\station.lua")
 --Include("\\script\\global\\skills_table.lua")
 
 function main(sel)
-	CityStationCommon("³µ·ò£º¸ñÀÏ×ÓµÄ£¬µÈÁËÒ»ÌìÒ²Ã»ÓĞ¼¸¸öÒª×ø³µµÄ£¬ÄãÍŞÒªÈ¥ÄÄÀï£¿");
+	CityStationCommon("ThËt ch¸n qu¸, ®îi c¶ ngµy råi mµ còng kh«ng cã ai ®i xe, tªn nhãc kia muèn ®i ®©u?");
 end;

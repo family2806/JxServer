@@ -3,7 +3,7 @@ TSK_Longxuewan_Date = 2641
 TSK_Longxuewan_Use	= 2642
 function main()
 --	if (GetLevel() < 90 or GetExtPoint(0) == 0) then
---		Say("Íæ¼ÒĞèÒª90¼¶ÒÔÉÏÇÒÒÑ³äÖµ²ÅÄÜÊ¹ÓÃ", 0);
+--		Say("Ng­êi ch¬i ph¶i cÊp 90 trë lªn vµ ®· nép thÎ míi sö dông ®­îc", 0);
 --		return 1
 --	end
 	
@@ -18,12 +18,12 @@ function main()
 	end
 		
 	if(GetTask(TSK_Longxuewan_Use) >= 2) then
-		Say("Ã¿ÌìÖ»ÄÜÊ¹ÓÃ2¸öÁúÑªÍè", 0);
+		Say("Mçi ngµy mçi ng­êi chØ ®­îc sö dung 2 Long HuyÕt Hoµn", 0);
 		return 1
 	end
 	
 
 	SetTask(1550, GetTask(1550) + 1);
 	SetTask(TSK_Longxuewan_Use, GetTask(TSK_Longxuewan_Use) + 1);
-	Say("¶à»ñµÃÒ»´Î²Î¼Ó»î¶¯µÄ»ú»á<ÌôÕ½Ê±¼ä>!", 0);
+	Say("Thu ®­îc thªm c¬ héi 1 lÇn tham gia ho¹t ®éng <th¸ch ®Êu thêi gian>!", 0);
 end

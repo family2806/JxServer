@@ -3,16 +3,16 @@ Include("\\script\\vng_lib\\bittask_lib.lua")
 Include("\\script\\lib\\objbuffer_head.lua")	
 local  _Message =  function (nItemIndex)
 	local handle = OB_Create()
-	local msg = format("<color=green>πßœ≤∏ﬂ ÷ <color=yellow>%s<color=green> Æ∑ “—ªÒµ√<color=yellow><%s><color=green> ¥”<color=yellow><…Ò√ÿœ‰◊” <color>" ,GetName(),GetItemName(nItemIndex))
+	local msg = format("<color=green>ChÛc mıng cao thÒ <color=yellow>%s<color=green> Æ∑ nhÀn Æ≠Óc <color=yellow><%s><color=green> tı <color=yellow><R≠¨ng Th«n B›><color>" ,GetName(),GetItemName(nItemIndex))
 	ObjBuffer:PushObject(handle, msg)
 	RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
 	OB_Release(handle)
 end
 function main(nIdx)
 	local tbAward = {
-		{szName="ΩŒ⁄¡Ó",tbProp={6,1,2349,1,0,0},nCount=1, nRate = 20, CallBack = %_Message},
-		{szName="æ≠—È÷µ", nExp_tl=1, nCount = 500000000, nRate = 55},
-		{szName="Õı’ﬂ√Êæﬂ",tbProp={0,11, 561,1,0,0},nCount=1, nExpiredTime = 20160, nRate = 25, CallBack = %_Message},
+		{szName="Kim § L÷nh",tbProp={6,1,2349,1,0,0},nCount=1, nRate = 20, CallBack = %_Message},
+		{szName="ßi”m Kinh Nghi÷m", nExp_tl=1, nCount = 500000000, nRate = 55},
+		{szName="M∆t nπ V≠¨ng Gi∂",tbProp={0,11, 561,1,0,0},nCount=1, nExpiredTime = 20160, nRate = 25, CallBack = %_Message},
 	}
 	local tbBitTask = {
 		nTaskID = 2912,
@@ -20,11 +20,11 @@ function main(nIdx)
 		nBitCount = 4,
 		nMaxValue = 2,
 	}
-	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBitTask, tbBitTask.nMaxValue, " π”√ŒÔ∆∑¥Ô…œœﬁ£¨≤ªƒ‹ π”√¡À<enter>", "<") ~= 1 then
+	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBitTask, tbBitTask.nMaxValue, "Sˆ dÙng vÀt ph»m Æ∑ Æπt Æ’n giÌi hπn, kh´ng th” sˆ <enter>dÙng th™m", "<") ~= 1 then
 		return 1
 	end
 	if CalcFreeItemCellCount() < 1 then
-		Talk(1, "", "«Î¡Ùœ¬◊Ó…Ÿ“ª∏ˆø’Œª∫Û≤≈ƒ‹¡ÏΩ±")
+		Talk(1, "", "Xin h∑y chıa ›t nh t 1 ´ trËng trong hµnh trang rÂi mÌi nhÀn th≠Îng")
 		return 1
 	end
 	tbVNG_BitTask_Lib:addTask(tbBitTask, 1)

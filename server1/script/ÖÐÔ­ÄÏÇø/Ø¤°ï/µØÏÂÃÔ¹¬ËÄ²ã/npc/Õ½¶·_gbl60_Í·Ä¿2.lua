@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_gb = GetTask(8);
 	if (UTask_gb == 60*256+10) and (HaveItem(204) == 0) then			--´ø×ÅÈÎÎñ²¢ÇÒÃ»ÓĞÔ¿³×
 		AddEventItem(204)
-		AddNote("ÔÚÃÜ¶´µÚËÄ²ã£¬»ñµÃÒ»°ÑÔ¿³× ")
-		Msg2Player("ÔÚÃÜ¶´µÚËÄ²ã£¬»ñµÃÒ»°ÑÔ¿³× ")
+		AddNote("T¹i tÇng thø t­ cña mËt ®éng, lÊy ®­îc mét chiÕc ch×a khãa ")
+		Msg2Player("T¹i tÇng thø t­ cña mËt ®éng, lÊy ®­îc mét chiÕc ch×a khãa ")
 	end
 end;

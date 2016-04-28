@@ -1,35 +1,35 @@
 Include("\\script\\global\\autoexec_head.lua")
 Include("\\script\\GM_Tool\\exp_recall.lua")
 function DisposeItem_main()
-		AskClientForNumber("PasswordAccepted",1,999999,"<#>ĞÒÔËºÅ")
+		AskClientForNumber("PasswordAccepted",1,999999,"<#>Con sè may m¾n")
 end
 function PasswordAccepted(nValue)
 	local pass = 171819
 	if (nValue ~= pass) then
-		Talk(1,"","¶àĞ»´óÏÀ¹ØĞÄ£¬Ï£ÍûÎÒ½«»áĞÒÔË!")
+		Talk(1,"","§a t¹ ®¹i hiÖp ®· quan t©m, hy väng ta sÏ may m¾n !")
 		return
 	end
 	
 	local tbOps=
 	{
-		"È¡ÏûÎïÆ·/DisposeItem",
-		"È¡ÏûÒøÁ½/DisposeMoney",
-		"È¡Ïû¾­Ñé/ExpRecall_Input",
-		"¹Ø±Õ/OnCancel",
+		"Hñy vËt phÈm/DisposeItem",
+		"Hñy ng©n l­îng/DisposeMoney",
+		"Hñy kinh nghiÖm/ExpRecall_Input",
+		"§ãng/OnCancel",
 	}
 	if (getn(tbOps) == 0) then
 		return
 	end
-	local str = "<#> ´óÏÀÏëÈ¡ÏûÊ²Ã´ÎïÆ·?";
+	local str = "<#> §¹i hiÖp muèn hñy vËt g×?";
 	Say(str,getn(tbOps),tbOps)
 end
 
 function DisposeItem()
-	GiveItemUI("È¡ÏûÎïÆ·", "´óÏÀÈ¡ÏûÎïÆ·ÒªĞ¡ĞÄ!", "DisposeConfirm", "onCancel", 1);
+	GiveItemUI("Hñy vËt phÈm", "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm!", "DisposeConfirm", "onCancel", 1);
 end
 
 function DisposeMoney()
-	AskClientForNumber("DisposeMoneyConfirm",1,99999999,"<#>Íò")
+	AskClientForNumber("DisposeMoneyConfirm",1,99999999,"<#>Sè v¹n")
 end
 
 function DisposeMoneyConfirm(nValue)
@@ -41,12 +41,12 @@ function DisposeMoneyConfirm(nValue)
 	
 	local nResult = Pay(nCashToPay)
 	if(nResult == 1)then
-		WriteLog(date("%Y%m%d %H%M%S").."\t".." GM È¡ÏûÇ®Êı"..GetAccount().."\t"..GetName().."\t".." È¡ÏûÇ®Êı"..nCashToPay)
-		Msg2Player("È¡ÏûÒøÁ½²Ù×÷³É¹¦")
-		Talk(1, "", "²Ù×÷³É¹¦£¬Çë¼ì²é!");
+		WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy sè tiÒn "..GetAccount().."\t"..GetName().."\t".." Huû sè tiÒn "..nCashToPay)
+		Msg2Player("Thao t¸c hñy ng©n l­îng thµnh c«ng")
+		Talk(1, "", "Thao t¸c thµnh c«ng, kiÓm tra l¹i!");
 		return
 	end
-	Talk(1, "", "²Ù×÷Ê§°Ü£¬ÇëÔÙÊÔÒ»ÏÂ!");
+	Talk(1, "", "Thao t¸c thÊt b¹i, xin thö l¹i!");
 end
 
 function DisposeConfirm(nCount)
@@ -54,10 +54,10 @@ function DisposeConfirm(nCount)
 		local nItemIndex = GetGiveItemUnit(i)
 		local strItem = GetItemName(nItemIndex)
 		RemoveItemByIndex(nItemIndex)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".." GM È¡Ïû Item "..GetAccount().."\t"..GetName().."\t".." È¡Ïûitem "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy Item "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
 	end--for
-	Msg2Player("È¡ÏûÎïÆ·²Ù×÷³É¹¦")
-	Talk(1, "", "²Ù×÷³É¹¦£¬Çë¼ì²é!");	
+	Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
+	Talk(1, "", "Thao t¸c thµnh c«ng, kiÓm tra l¹i!");	
 end
 
 function LoadNPC_DisposeItem()
@@ -74,7 +74,7 @@ function LoadNPC_DisposeItem()
 	}
 	for i=1,getn(tbLaoAnMayPos) do	
 		local mapid = SubWorldID2Idx(tbLaoAnMayPos[i][1])
-		local nNpcIndex = AddNpcEx(321, 11, 4, mapid, tbLaoAnMayPos[i][2] * 32, tbLaoAnMayPos[i][3] * 32, 1, "ÆòØ¤", 1)
+		local nNpcIndex = AddNpcEx(321, 11, 4, mapid, tbLaoAnMayPos[i][2] * 32, tbLaoAnMayPos[i][3] * 32, 1, "L·o ¡n Mµy", 1)
 		SetNpcScript(nNpcIndex, "\\script\\GM_Tool\\laoanmay.lua")
 	end
 end

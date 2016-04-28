@@ -11,21 +11,21 @@ Include("\\script\\missions\\basemission\\lib.lua");
 Include("\\script\\lib\\file.lua");
 
 local tbBD0905_haozhu_pos = {
-	{nMapID = 1, szMapName = "∑ÔœË∏Æ",szPosPath = "\\settings\\maps\\city_out\\1.txt"},
-	{nMapID = 11, szMapName = "≥…∂º∏Æ",szPosPath = "\\settings\\maps\\city_out\\11.txt"},
-	{nMapID = 37, szMapName = "„Íæ©∏Æ", szPosPath = "\\settings\\maps\\city_out\\37.txt"},
-	{nMapID = 78, szMapName = "œÂ—Ù∏Æ", szPosPath = "\\settings\\maps\\city_out\\78.txt"},
-	{nMapID = 80, szMapName = "—Ô÷›∏Æ", szPosPath = "\\settings\\maps\\city_out\\80.txt"},
-	{nMapID = 162, szMapName = "¥Û¿Ì", szPosPath = "\\settings\\maps\\city_out\\162.txt"},
-	{nMapID = 176, szMapName = "¡Ÿ∞≤∏Æ", szPosPath = "\\settings\\maps\\city_out\\176.txt"},
-	{nMapID = 174, szMapName = "¡˙»™¥Â", szPosPath = "\\settings\\maps\\village_out\\174.txt"},
-	{nMapID = 121, szMapName = "¡˙√≈’Ú", szPosPath = "\\settings\\maps\\village_out\\121.txt"},
-	{nMapID = 153, szMapName = " Øπƒ’Ú", szPosPath = "\\settings\\maps\\village_out\\153.txt"},
-	{nMapID = 101, szMapName = "µæœ„’Ú", szPosPath = "\\settings\\maps\\village_out\\101.txt"},
-	{nMapID = 99, szMapName = "”¿¿÷’Ú", szPosPath = "\\settings\\maps\\village_out\\99.txt"},
-	{nMapID = 100, szMapName = "÷Ïœ…’Ú", szPosPath = "\\settings\\maps\\village_out\\100.txt"},
-	{nMapID = 20, szMapName = "Ω≠ΩÚ¥Â", szPosPath = "\\settings\\maps\\village_out\\20.txt"},
-	{nMapID = 53, szMapName = "∞Õ¡Íœÿ", szPosPath = "\\settings\\maps\\village_out\\53.txt"},
+	{nMapID = 1, szMapName = "Ph≠Óng T≠Íng PhÒ ",szPosPath = "\\settings\\maps\\city_out\\1.txt"},
+	{nMapID = 11, szMapName = "Thµnh ß´ PhÒ ",szPosPath = "\\settings\\maps\\city_out\\11.txt"},
+	{nMapID = 37, szMapName = "Bi÷n Kinh PhÒ ", szPosPath = "\\settings\\maps\\city_out\\37.txt"},
+	{nMapID = 78, szMapName = "T≠¨ng D≠¨ng PhÒ ", szPosPath = "\\settings\\maps\\city_out\\78.txt"},
+	{nMapID = 80, szMapName = "D≠¨ng Ch©u PhÒ ", szPosPath = "\\settings\\maps\\city_out\\80.txt"},
+	{nMapID = 162, szMapName = "ßπi L˝", szPosPath = "\\settings\\maps\\city_out\\162.txt"},
+	{nMapID = 176, szMapName = "L©m An PhÒ ", szPosPath = "\\settings\\maps\\city_out\\176.txt"},
+	{nMapID = 174, szMapName = "Long Tuy“n th´n", szPosPath = "\\settings\\maps\\village_out\\174.txt"},
+	{nMapID = 121, szMapName = "Long M´n tr n", szPosPath = "\\settings\\maps\\village_out\\121.txt"},
+	{nMapID = 153, szMapName = "Thπch CÊ tr n", szPosPath = "\\settings\\maps\\village_out\\153.txt"},
+	{nMapID = 101, szMapName = "ßπo H≠¨ng th´n", szPosPath = "\\settings\\maps\\village_out\\101.txt"},
+	{nMapID = 99, szMapName = "V‹nh Lπc tr n", szPosPath = "\\settings\\maps\\village_out\\99.txt"},
+	{nMapID = 100, szMapName = "Chu Ti™n tr n", szPosPath = "\\settings\\maps\\village_out\\100.txt"},
+	{nMapID = 20, szMapName = "Giang T©n Th´n", szPosPath = "\\settings\\maps\\village_out\\20.txt"},
+	{nMapID = 53, szMapName = "Ba L®ng huy÷n", szPosPath = "\\settings\\maps\\village_out\\53.txt"},
 }
 
 -- ≤Œ ˝£∫À¢–¬µÿÕºID£¨À¢–¬∏ˆ ˝
@@ -35,7 +35,7 @@ function birthday0905_addnpc_haozhu(n_count)
 	
 	if (n_count > 0) then
 		
-		local tbNpc = {nNpcId = 1431, nLevel = 30, szName = "·˜¡‘≈÷∫¿÷Ì",nIsboss = 1,
+		local tbNpc = {nNpcId = 1431, nLevel = 30, szName = "Nh›m b–o ph◊",nIsboss = 1,
 						szDeathScript = "\\script\\event\\birthday_jieri\\200905\\panghaozhu\\haozhu_death.lua",
 						szScriptPath = "\\script\\event\\birthday_jieri\\200905\\panghaozhu\\haozhu_death.lua"};
 		
@@ -44,7 +44,7 @@ function birthday0905_addnpc_haozhu(n_count)
 			local n_mapid = %tbBD0905_haozhu_pos[i].nMapID;
 			local n_worldidx = SubWorldID2Idx(n_mapid);
 			if (n_worldidx >= 0) then
-				ClearMapNpcWithName(n_mapid, "·˜¡‘≈÷∫¿÷Ì");
+				ClearMapNpcWithName(n_mapid, "Nh›m b–o ph◊");
 			
 				for k = 1, n_count do
 					local nPosX, nPosY = GetRandomAData(%tbBD0905_haozhu_pos[i].szPosPath);

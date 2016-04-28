@@ -38,13 +38,13 @@ function main()
         --5,"¶Ò»»°×É«ÀñÆ·ºĞ/WLSZ_ExcWhiteBox","¶Ò»»À¶É«ÀñÆ·ºĞ/WLSZ_ExcBlueBox","¶Ò»»»ÆÉ«ÀñÆ·ºĞ/WLSZ_ExcYellowBox",
         --"ÏêÏ¸ËµÃ÷/WLSZ_ExcDetail","½áÊø¶Ô»°/WLSZ_End")
     if Act2Years2007_CheckInTime() == 1 then
-    		Describe("ÎäÁÖÊ¹Õß: ÈÈÁÒÇì×£¹úÇì½Ú. ÔÚ½ÓÏÂÀ´µÄÊ±¼äÀï <color=red>25-08-2007<color> µ½ <color=red>09-09-2007<color>, Íæ¼Ò¿ÉÒÔĞ¯´ø10¿Å <color=yellow>Ê¤ÀûÎå½ÇĞÇ<color> ºÍ <color=yellow>15ÍòÁ½<color> À´½»»»<color=yellow>¹úÇìÀñºĞ<color>.<color=yellow>¹úÇìÀñºĞÖĞ<color> ÓĞ¹úÇì»ÕÕÂºÍ°æÍ¼. Èç¹ûËÑ¼¯¹»12ÕÅ²»Í¬µÄ°æÍ¼½«ÓĞ»ú»á <color=yellow>´ò¿ªµÚ3¸öÏä×Ó<color>.",3,
-    				"ÎÒÏë¶Ò»»¹úÇìÀñºĞ/GuoQing_Give",
-    				"¶Ò»»¹úÇìÀñºĞµÄ·½·¨/guoQing_About",
-    				"Ã÷°×ÁË/no"
+    		Describe("Sø gi¶ vâ l©m: NhiÖt liÖt chóc mõng ngµy Quèc Kh¸nh. Trong kho¶ng thêi gian tõ <color=red>25-08-2007<color> ®Õn <color=red>09-09-2007<color>, ng­êi ch¬i cã thÓ ®em 10 <color=yellow>Ng«i sao chiÕn th¾ng<color> vµ <color=yellow>15 v¹n l­îng<color> ®Ó ®æi lÊy  <color=yellow>Hép quµ Quèc Kh¸nh<color>.<color=yellow>Bªn trong hép quµ Quèc Kh¸nh<color> cã chøa Huy ch­¬ng Quèc Kh¸nh vµ c¸c m¶nh b¶n ®å. NÕu thu thËp ®ñ 12 m¶nh b¶n ®å kh¸c nhau sÏ cã c¬ héi <color=yellow>më réng r­¬ng thø 3<color>.",3,
+    				"Ta muèn ®æi hép quµ Quèc Kh¸nh/GuoQing_Give",
+    				"C¸ch ®æi hép quµ Quèc Kh¸nh/guoQing_About",
+    				"BiÕt råi/no"
     			)
     else		
-        Say("ÎÒÕıÊÇÎäÁÖÊ¹Õß.",0)
+        Say("Ta chİnh lµ sø gi¶ vâ l©m.",0)
     end
 end
 --
@@ -54,47 +54,47 @@ end
 function WLSZ_ExcWhiteBox()
     local nRoseNumber = CalcEquiproomItemCount( 6,1,ACT2YEARS_YN_ROSE_ID, -1 )
     if nRoseNumber < 10 then
-        return Say("ĞèÒª10¶äºìÃµ¹å",0)
+        return Say("CÇn 10 hoa hång ®á",0)
     end
     ConsumeEquiproomItem( 10,6,1,ACT2YEARS_YN_ROSE_ID,-1 )
     AddItem(6,1,ACT2YEARS_YN_WHITEBOX_ID,1,0,0 )
-    Msg2Player("ÓÃ10¶äºìÃµ¹å»»°×É«ÀñºĞ")
-    Say("ÄãµÃµ½1¸ö <color=red>°×É«ÀñºĞ<color>, ÀïÃæÓĞÒ»Ğ©ÒâÏë²»µ½µÄÀñÎï.",2,"·µ»Ø/main","½áÊø¶Ô»°/WLSZ_End")
+    Msg2Player("§æi 10 hoa hång ®á lÊy hép quµ tr¾ng")
+    Say("B¹n nh©n ®­îc 1 <color=red>Hép quµ tr¾ng<color>, bªn trong cã nh÷ng mãn quµ bÊt ngê.",2,"Trë l¹i/main","½áÊø¶Ô»°/WLSZ_End")
 end
 --
 function WLSZ_ExcBlueBox()
     local nRoseNumber = CalcEquiproomItemCount( 6,1,ACT2YEARS_YN_ROSE_ID, -1 )
     local nBOWKNOTNumber = CalcEquiproomItemCount( 6,1,ACT2YEARS_YN_BOWKNOT_ID, -1 )
     if nRoseNumber < 10 or nBOWKNOTNumber < 1 then
-        return Say("ĞèÒª10¶äºìÃµ¹åºÍ1¸öºìºûµû½á.",0)
+        return Say("CÇn 10 hoa hång ®á vµ 1 n¬ ®á.",0)
     end
     ConsumeEquiproomItem( 10,6,1,ACT2YEARS_YN_ROSE_ID,-1 )
     ConsumeEquiproomItem( 1,6,1,ACT2YEARS_YN_BOWKNOT_ID,-1 )
     AddItem(6,1,ACT2YEARS_YN_BLUEBOX_ID,1,0,0 )
-    Msg2Player("ÓÃ10¶äºìÃµ¹åºÍ1¸öºìºûµû½á»»À¶É«ÀñºĞ.")
-    Say("ÄúµÃµ½1¸ö<color=red>À¶É«ÀñºĞ<color>, ÀïÃæÓĞÒ»Ğ©ÒâÏë²»µ½µÄÀñÎï.",2,"·µ»Ø/main","½áÊø¶Ô»°/WLSZ_End")
+    Msg2Player("§æi 10 hoa hång ®á vµ 1 n¬ ®á lÊy hép quµ xanh.")
+    Say("B¹n nh©n ®­îc 1 <color=red>Hép quµ xanh<color>, bªn trong cã nh÷ng mãn quµ bÊt ngê.",2,"Trë l¹i/main","½áÊø¶Ô»°/WLSZ_End")
 end
 --
 function WLSZ_ExcYellowBox()
     local nRoseNumber = CalcEquiproomItemCount( 6,1,ACT2YEARS_YN_ROSE_ID, -1 )
     local nCellPaperNumber = CalcEquiproomItemCount( 6,1,ACT2YEARS_YN_CELLPAPER_ID, -1 )
     if nRoseNumber < 10 or nCellPaperNumber < 1 then
-        return Say("ĞèÒª10¶äºìÃµ¹åºÍ1ÕÅ²£Á§Ö½.",0)
+        return Say("CÇn 10 hoa hång ®á vµ 1 giÊy gãi hoa.",0)
     end
     ConsumeEquiproomItem( 10,6,1,ACT2YEARS_YN_ROSE_ID,-1 )
     ConsumeEquiproomItem( 1,6,1,ACT2YEARS_YN_CELLPAPER_ID,-1 )
     AddItem(6,1,ACT2YEARS_YN_YELLOWBOX_ID,1,0,0 )
-    Msg2Player("ÓÃ10¶äºìÃµ¹åºÍ1ÕÅ²£Á§Ö½»»»ÆÉ«ÀñºĞ.")
-    Say("ÄúµÃµ½1¸ö <color=red>»ÆÉ«ÀñºĞ<color>, ÀïÃæÓĞÒ»Ğ©ÒâÏë²»µ½µÄÀñÎï.",2,"·µ»Ø/main","½áÊø¶Ô»°/WLSZ_End")
+    Msg2Player("§æi 10 hoa hång ®á vµ 1 giÊy gãi hoa lÊy Hép quµ vµng.")
+    Say("B¹n nh©n ®­îc 1 <color=red>Hép quµ vµng<color>, bªn trong cã nh÷ng mãn quµ bÊt ngê.",2,"Trë l¹i/main","½áÊø¶Ô»°/WLSZ_End")
 end
 --
 function WLSZ_ExcDetail()
-    Say("ÀñºĞ¶Ò»»¹æÔò:  <enter>°×É«ÀñºĞ: 10¶äºìÃµ¹åºÍ1¸öºìºûµû½á®á <enter> »ÆÉ«ÀñºĞ: 10 ¶äºìÃµ¹åºÍ1ÕÅ²£Á§Ö½.",2,"·µ»Ø/main","½áÊø¶Ô»°/WLSZ_End")
+    Say("Nguyªn t¾c ®æi hép quµ: <enter>Hép quµ tr¾ng: 10 hoa hång ®á <enter>Hép quµ xanh: 10 hoa hång ®á vµ 1 n¬ ®á <enter> Hép quµ vµng: 10 hoa hång ®á vµ 1 giÊy gãi hoa.",2,"Trë l¹i/main","½áÊø¶Ô»°/WLSZ_End")
 end
 
 --2007Ô½ÄÏ¹úÇì»î¶¯..
 function guoQing_About()
-	Describe("ÎäÁÖÊ¹Õß: ÔÚ½ÓÏÂÀ´µÄÊ±¼äÀï <color=red>25-08-2007<color> µ½ <color=red>09-09-2007<color>, Íæ¼Ò¿ÉÒÔ´ø10¿Å <color=yellow>Ê¤ÀûÎå½ÇĞÇ<color> ºÍ <color=yellow>15ÍòÁ½<color> ÓÃÓÚ½»»»ÄÃ1¸ö <color=yellow>¹úÇìÀñ°ü<color>. <color=yellow>Ê¤ÀûÎå½ÇĞÇ<color> ½«É¢ÂäÔÚ50¼¶ÒÔÉÏµÄÇøÓò. <color=yellow>¹úÇìÀñºĞÀï<color> ÓĞ¹úÇì»ÕÕÂºÍ°æÍ¼.Èç¹û¼¯Æë±àºÅ1µ½12µÄ°æÍ¼½«ÓĞ»ú»á<color=yellow>´ò¿ªµÚ3¸öÏä×Ó<color>.",1,"½áÊø¶Ô»°/WLSZ_End")
+	Describe("Sø gi¶ vâ l©m: Trong kho¶ng thêi gian tõ <color=red>25-08-2007<color> ®Õn <color=red>09-09-2007<color>, ng­êi ch¬i cã thÓ ®em 10 <color=yellow>Ng«i sao chiÕn th¾ng<color> vµ <color=yellow>15 v¹n l­îng<color> ®Ó ®æi lÊy 1 <color=yellow>Hép quµ Quèc Kh¸nh<color>. <color=yellow>Ng«i sao chiÕn th¾ng<color> sÏ r¬i ra ë c¸c khu vùc cÊp tõ 50 trë lªn. <color=yellow>Bªn trong hép quµ Quèc Kh¸nh<color> cã chøa Huy ch­¬ng Quèc Kh¸nh vµ c¸c m¶nh b¶n ®å. NÕu thu thËp ®ñ c¸c m¶nh b¶n ®å ®¸nh sè tõ 1 ®Õn 12  sÏ cã c¬ héi <color=yellow>më réng r­¬ng thø 3<color>.",1,"½áÊø¶Ô»°/WLSZ_End")
 end
 
 function GuoQing_Give()
@@ -107,21 +107,21 @@ function GuoQing_Give()
 	
 
 	if ( nOlddate == nDate and nCount >= 50) then
-			Say("ÎäÁÖÊ¹Õß: ÕæÒÅº¶, Ã¿¸öÈËÎïÃ¿Ìì×î¶àÖ»ÄÜ¶Ò»»50¸ö <color=yellow>¹úÇìÀñ°ü<color>, Ã÷ÌìÔÙÀ´°É.",0)
+			Say("Sø gi¶ vâ l©m: ThËt ®¸ng tiÕc, mçi nh©n vËt mçi ngµy chØ cã thÓ ®æi ®­îc tèi ®a 50 <color=yellow>hép quµ Quèc Kh¸nh<color>, ngµy mai h·y ®Õn ®æi nhĞ.",0)
 			return 1;
 	end
 	
 	if nGuoqingLiHe < 10 then
-		Say("ÎäÁÖÊ¹Õß: ÕæÒÅº¶, ²»¹»10¿ÅÊ¤ÀûÎå½ÇĞÇ, ²»ÄÜ¶Ò»»¹úÇìÀñ°ü.",0)
+		Say("Sø gi¶ vâ l©m: ThËt ®¸ng tiÕc, kh«ng ®ñ 10 Ng«i sao chiÕn th¾ng, kh«ng thÓ ®æi hép quµ Quèc Kh¸nh.",0)
 		return 
 	end
 	
 	if GetCash() < 150000 then
-		Say("ÎäÁÖÊ¹Õß: ÕæÒÅº¶, Ã»´ø¹»15ÍòÁ½, ²»ÄÜ¶Ò»»¹úÇìÀñ°ü.",0)
+		Say("Sø gi¶ vâ l©m: ThËt ®¸ng tiÕc, kh«ng mang ®ñ 15 v¹n l­îng, kh«ng thÓ ®æi hép quµ Quèc Kh¸nh.",0)
 		return
 	end
 	if ( CalcFreeItemCellCount() < 2 ) then
-		Say("¿ÕÎ»²»¹», ÇëÕûÀí±³°ü.",0);
+		Say("Kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.",0);
 		return
 	end
 	if ( nOlddate ~= nDate ) then
@@ -135,6 +135,6 @@ function GuoQing_Give()
 	SetTask(GUOQING_YN_TASK_DATE,SetByte(GetTask(GUOQING_YN_TASK_DATE),4,nCount+1))
 	ConsumeEquiproomItem( 10,6,1,GUOQING_YN_WUJIAOXING_ID,-1 )
  	local nidx = AddItem(6,1,GUOQING_YN_LiHe_ID,1,0,0 )
-	Msg2Player("×£ºØÄú»ñµÃ1¸ö<color=yellow>¹úÇìÀñºĞ<color>.")
+	Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 <color=yellow>Hép quµ Quèc Kh¸nh<color>.")
 	WriteLog(format("[WuLinShiZhe]Date:%s\t Account:%s\t Name:%s\t Effect:GetItem %s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),GetItemName(nidx)))
 end

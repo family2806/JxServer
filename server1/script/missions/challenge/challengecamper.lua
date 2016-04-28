@@ -12,18 +12,18 @@ function main()
 		V1 = GetMissionV(MS_NEWSVALUE);
 		RestTime = (GO_TIME - V1) * 20;
 		RestMin, RestSec = GetMinAndSec(RestTime);
-		str = "<#> Èü³¡´¦ÓÚ±¨Ãû½×¶Î£¬±¨ÃûÊ±¼ä»¹Ê£:"..RestMin.."<#>·Ö"..RestSec.."<#>Ãë";
+		str = "<#> Tr­êng ®Êu ®ang trong giai ®o¹n b¸o danh, thêi gian b¸o danh cßn l¹i:"..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
 		Msg2Player(str);
 	elseif(V == 2) then
 		gametime = (floor(GetMSRestTime(MISSIONID,11) / 18));
 		RestMin, RestSec = GetMinAndSec(gametime);
-		str = "<#>Èü³¡´¦ÓÚÕ½¶·½×¶Î£¬Õ½¶·Ê±¼ä»¹ÓĞ:"..RestMin.."<#>·Ö"..RestSec.."<#>Ãë";
+		str = "<#> Tr­êng ®Êu ®ang trong giai ®o¹n chiÕn ®Êu, thêi gian chiÕn ®Êu cßn l¹i:"..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
 		Msg2Player(str);
 	end
 	
 	--À©Õ¹µã6µÄÖµÈç¹ûÎª1£¬±íÊ¾¸Ã½ÇÉ«ÊôÓÚÕ½Çø¹ÜÀíÔ±¡£¿ÉÒÔÏòNpcÄÃÈë³¡µÀ¾ß
 	if (GetExtPoint(6) == 1 or GetCamp() == 6 ) then 
-		Say("ĞÖÌ¨ÊÇÕâÀïÕ½³¡µÄ¹ÜÀíÈË£¬ÎÒÓĞÊ²Ã´¿ÉÒÔ°ïÄãÂğ£¿", 7 ,  "ÄÃÆğ»Æ·½µÄÎäÆ÷/GetYellow", "ÄÃÆğ×Ï·½µÄÎäÆ÷/GetPurple" , "ÄÇÇëÄãÅÔ±ßµÄÎäÆ÷/GetWhite", "¶ªÆúÄãÉíÉÏµÄËùÓĞÎäÆ÷/ClearItems", "ÉÏÕ½³¡/GoWarCenter", "Àë¿ªÕ½³¡/LeaveCenter",  "ÎÒÏëÒ»Ïë/OnCancel");
+		Say("Huynh lµ ng­êi qu¶n lı chiÕn tr­êng ë ®©y? Ta cã thÓ gióp g× kh«ng?", 7 ,  "CÇm lÊy vò khİ cña phe vµng /GetYellow", "CÇm lÊy vò khİ cña phe tİm /GetPurple" , "CÇm lÊy vò khİ cña ng­êi bªn c¹nh /GetWhite", "Bá hÕt tÊt c¶ vò khİ trong ng­êi ra /ClearItems", "Vµo ®Êu tr­êng /GoWarCenter", "Rêi khái ®Êu tr­êng /LeaveCenter",  "§Ó ta nghÜ l¹i xem /OnCancel");
 		return
 	end;
 	
@@ -35,24 +35,24 @@ function main()
 		
 		--Èç¹ûÃ»ÓĞÈÎºÎµÄÈë³¡µÀ¾ßµÄ»°
 		if (HaveCamp1 == 0 and HaveCamp2 == 0 and HaveCamp3 == 0) then 
-			Say("ÄãÃ»ÓĞÈÎºÎÒ»ÖÖ'Ó¢ĞÛÁîÅÆ'£¬²»ÄÜ½øÈ¥!", 0)
+			Say("B¹n kh«ng cã bÊt cø 'Anh hïng lÖnh bµi' nµo, kh«ng thÓ vµo trong!", 0)
 			return
 		end;
 		if (GetTeamSize() == 0)  then
-			Say("Äã»¹Î´×é¶Ó£¬²»ÄÜ½øÈ¥!",0);
+			Say("B¹n ch­a lËp ®éi ngò, ch­a thÓ vµo trong!",0);
 			return
 		end;
 		
-		str1 = "<#> ÄãµÄ¶ÓÎéÓĞ"..GetTeamSize().."<#>ÈË! ÄãÏë¼ÓÈëÄÄ±ß?";
-		Say(str1 ,4, "ÎÒÏë¼ÓÈë»Æ·½/JoinYellow", "ÎÒÏë¼ÓÈë×Ï·½/JoinPurple", "ÎÒÏë½øÈ¥²Î¹Û/JoinWhite", "ÈÃÎÒÏëÒ»Ïë/OnCancle");
+		str1 = "<#> §éi cña ng­¬i cã"..GetTeamSize().."<#> ng­êi! Ng­¬i muèn gia nhËp phe nµo?";
+		Say(str1 ,4, "ta muèn gia nhËp vµo phe vµng /JoinYellow", "ta muèn gia nhËp vµo phe tİm /JoinPurple", "ta muèn vµo ®Ó tham quan /JoinWhite", "§Ó ta nghÜ l¹i xem /OnCancle");
 	
 	elseif (V == 2) then --¿ªÕ½½×¶Î
 		HaveCamp3 = HaveItem(348);
 		if (HaveCamp3 == 1) then
-			Say("ÄãÏÖÔÚÓĞÒ¶ÂÌÓ¢ĞÛÁî. ÏëÒª²ÎÕ½»¹ÊÇÀë¿ª?", 3, "µ½Èü³¡ÖĞĞÄ/GoWarCenter", "Àë¿ªÈü³¡/LeaveWar", "ÈÃÎÒÏëÒ»Ïë/OnCancel");
+			Say("B¹n hiÖn ®ang cã DiÖp Lôc Anh Hïng lÖnh. Muèn vµo tham chiÕn hay ra khái ®©y?", 3, "§Õn trung t©m cña ®Êu tr­êng /GoWarCenter", "Rêi khái khu vùc ®Êu tr­êng /LeaveWar", "§Ó ta nghÜ l¹i xem /OnCancel");
 		end;
 	elseif (V == 0) then
-		Say("Õâ´Î±¨ÃûÌôÕ½µÄÊ±¼ä»¹Ã»ÓĞµ½",0);
+		Say("Thêi gian b¸o danh trËn khiªu chiÕn lµn nµy vÇn ch­a ®Õn! ",0);
 	end;
 	
 end;
@@ -79,7 +79,7 @@ function JoinYellow()
 	if (HaveItem(350) >= 1) then
 		CheckAndJoinCamp(1)		
 	else
-		Say("ÄãÃ»ÓĞ°µ»ÆÓ¢ĞÛÁî£¬²»ÄÜ½øÈ¥!",0);
+		Say("B¹n kh«ng cã ¸m Hoµng Anh Hïng lÖnh, kh«ng thÓ vµo trong!",0);
 	end;
 end;
 
@@ -87,7 +87,7 @@ function JoinPurple()
 	if (HaveItem(347) >= 1) then
 		CheckAndJoinCamp(2)		
 	else
-		Say("ÄãÃ»ÓĞÑªºìÓ¢ĞÛÁî£¬²»ÄÜ½øÈ¥!",0);
+		Say("B¹n kh«ng cã HuyÕt Hång Anh Hïng lÖnh, kh«ng thÓ vµo trong!",0);
 	end;
 end;
 
@@ -95,7 +95,7 @@ function JoinWhite()
 	if (HaveItem(348) >= 1) then 
 		CheckAndJoinCamp(6)
 	else
-		Say("ÄãÃ»ÓĞÒ¶ÂÌÓ¢ĞÛÁî£¬²»ÄÜ½øÈ¥!", 0);
+		Say("B¹n kh«ng cã DiÖp Lôc Anh Hïng lÖnh, kh«ng thÓ vµo trong!", 0);
 	end;
 end;
 
@@ -132,19 +132,19 @@ end;
 function CheckAndJoinCamp(Camp)
 	
 	if (IsCaptain() == 0) then
-		Say("Äã»¹Ã»ÓĞ×é¶Ó»òÕß²»ÊÇ¶Ó³¤£¬²»ÄÜ½øÈë! ",0);
+		Say("B¹n ch­a lËp ®éi ngò hoÆc kh«ng ph¶i lµ ®éi tr­ëng, kh«ng thÓ vµo trong! ",0);
 		return
 	else
 		bHaveJoin = GetMissionV(MS_S_JOINED + Camp - 1);
 		if (bHaveJoin == 1) then 
-			Say("ÏÖÔÚÒÑ¾­ÓĞÁíÒ»¸ö¶ÓÊ¹ÓÃÍ¬Ò»¸öÑÕÉ«µÄÓ¢ĞÛÁî²ÎÕ½ÁË", 0);
+			Say("HiÖn ®· cã 1 ®éi kh¸c sö dông Anh Hïng lÖnh cïng mµu vµo tham chiÕn råi ", 0);
 		return
 		end;
 	end;
 				
 	Size = GetTeamSize();
 	if (Size > MAX_MEMBER_COUNT) then
-		Say("Äã¶ÓµÄÈËÊı³¬¹ıÏŞ¶¨£¬Çëµ÷ÕûÏÂÔÙ½øÈ¥!" , 0);
+		Say("Nh©n sè trong tæ cña b¹n v­ît h¬n h¹n ®Şnh, xin ®iÒu chØnh l¹i råi míi vµo thi ®Êu!" , 0);
 		return
 	else
 		OldPlayer = PlayerIndex;
@@ -158,7 +158,7 @@ function CheckAndJoinCamp(Camp)
 				W1,X,Y = GetWorldPos();
 				if (W1 ~= W) then 
 					PlayerIndex = OldPlayer
-					Say("Äã¶ÓÀïÏÖÔÚÓĞÒ»¸öÈË²»ÔÚ×¼±¸Çø£¬Çëµ÷ÕûÖ®ºóÔÙ½øÈ¥±ÈÈü!",0);
+					Say("Tæ cña b¹n hiÖn cã 1 ng­êi kh«ng ë trong khu vùc chuÈn bŞ, xin ®iÒu chØnh l¹i råi míi vµo thi ®Êu!",0);
 					return
 				end;
 			end
@@ -190,7 +190,7 @@ function JoinCampInTeam(Camp)
 	for i = 1, Size do
 		PlayerIndex = TeamTab[i];		
 		if (Camp ~= 6 and GetLevel() < 30) then 
-			Msg2MSAll(MISSIONID, GetName().."<#> Ã»ÓĞ³¬¹ı30¼¶£¬²»ÄÜ²Î¼Ó!");
+			Msg2MSAll(MISSIONID, GetName().."<#> ch­a h¬n cÊp 30, kh«ng thÓ tham gia!");
 		else
 			Joined = Joined + 1;
 			JoinCamp(Camp)

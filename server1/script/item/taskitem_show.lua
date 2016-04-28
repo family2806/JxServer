@@ -21,11 +21,11 @@ function GetItemDescription(name, magiclevel1, magiclevel2, magiclevel3, magicle
 
 local strDesc = "";
 
-	strDesc = strDesc.."<enter>ÈÎÎñÃèÊö£º<color=yellow>"..TaskId(magiclevel1, 1, TaskID_Table.TaskText_Row).."<color><enter><enter>";
+	strDesc = strDesc.."<enter>Miªu t¶ nhiÖm vô: <color=yellow>"..TaskId(magiclevel1, 1, TaskID_Table.TaskText_Row).."<color><enter><enter>";
 
 	strDesc = strDesc..CreateAwardText(TaskName(magiclevel1));
 
-	strDesc = strDesc.."<enter><color=yellow>ËµÃ÷£ºµ¥»÷ÓÒ¼ü¼´¿É»ñµÃ´ËÈÎÎñ<color><enter>";
+	strDesc = strDesc.."<enter><color=yellow>DiÔn gi¶i: nhÊp chuét ph¶i th× lËp tøc tiÕp nhËn nhiÖm vô nµy<color><enter>";
 	
 	return strDesc;
 
@@ -48,14 +48,14 @@ local strText = ""; -- ½±ÀøµÄËµÃ÷
 local nIsArray = 0; -- ÅĞ¶ÏÊÇ·ñÓĞÊı×é
 
 local strAwardNormal = {} -- ¹Ì¶¨·¢ÓèµÄ½±Àø
-local strAward = "ÈÎÎñÍê³ÉºóËùµÃ½±Àø£º<enter>"; -- ×îºó·µ»ØµÄ½±Àø×Ö¶Î
+local strAward = "Sau khi hoµn thµnh nhiÖm vô nhËn ®­îc phÇn th­ëng: <enter>"; -- ×îºó·µ»ØµÄ½±Àø×Ö¶Î
 
 local strType = "";
 
 	strType = TaskAward(taskName, 1, 1);
 
-	-- ¶ÔÓÚÈÎÎñ½±ÀøÀàĞÍÊÇ½±ÀøË÷ÒıµÄ´¦Àí
-	if strType=="½±ÀøË÷Òı" then
+	-- ¶ÔÓÚÈÎÎñ½±ÀøÀàĞÍÊÇhÖ thèng phÇn th­ëngµÄ´¦Àí
+	if strType=="hÖ thèng phÇn th­ëng" then
 		-- Ö±½ÓË÷Òıµ½ÈÎÎñÃû³Æ
 		taskName = TaskAward(taskName, 1, Award.AlliedAward_Row);
 		nRow, nCol = TaskAwardMatrix(taskName);
@@ -77,7 +77,7 @@ local strType = "";
 			
 			 rawset(aryAward[tonumber(strArray)],
 			 		getn(aryAward[tonumber(strArray)])+1,
-			 		"<color=green>"..strText.."<color>  "..strArrayRate.."% µÄ¸ÅÂÊ"
+			 		"<color=green>"..strText.."<color>  "..strArrayRate.."% c¬ héi"
 			 		);
 			 		
 			 nIsArray = 1;
@@ -93,12 +93,12 @@ local strType = "";
 	-- Èç¹û½±Àø±»¶¨ÒåÁËÊı×é£¬Ôòµ÷ÓÃÊı×é·¢½±º¯Êı
 	if nIsArray==1 then
 		for i=1, getn(aryAward) do
-			strAward = strAward.."<enter>µÚ"..i.."¸öËæ»ú½±Àø°ü£º<enter>";
+			strAward = strAward.."<enter>thø "..i.."phÇn th­ëng ngÉu nhiªn:<enter>";
 			strAward = strAward..CreateTextForArray(aryAward[i]);
 		end;
 	end;
 	
-	strAward = strAward.."<enter>¹Ì¶¨½±Àø£º<enter>";
+	strAward = strAward.."<enter>PhÇn th­ëng cè ®Şnh:<enter>";
 	
 	if getn(strAwardNormal)~=0 then
 	
@@ -107,7 +107,7 @@ local strType = "";
 		end;
 		
 	else
-		strAward = strAward.."<color=green>ÎŞ¹Ì¶¨½±Àø<color>";
+		strAward = strAward.."<color=green>PhÇn th­ëng kh«ng cè ®Şnh<color>";
 	end;
 	
 	return strAward;

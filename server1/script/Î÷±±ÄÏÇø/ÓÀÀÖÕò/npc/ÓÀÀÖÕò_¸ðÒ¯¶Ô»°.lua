@@ -7,27 +7,27 @@
 function main()
 	UTask_world42=GetTask(70)
 	if (UTask_world42==2) then
-		Talk(2, "step1", "ÎÒ¿ÉÒÔÏòÄã½èÊé¿´Ã´?","ºß£¬ÎÒ¿´ÄãÊÇ´å±±µÄÂ³ÀÏÍ·ÅÉÀ´µÄ°É¡£Ôç¾ÍºÍËûËµ¹ı£¬ÏëÒª½èÊé¾ÍµÃºÍÎÒ»»£¬ÈÃËûÓÃ¡¶ÒÄ¼áÖ¾¡·À´»»ÎÒµÄ¡¶»üÉñÂ¼¡·.")
+		Talk(2, "step1", "Ta cã thÓ m­în xem quyÓn s¸ch cña «ng chø?","Ch¾c lµ C¸t l·o ®Çu ë th«n B¾c nhê ng­¬i ®Õn ph¶i kh«ng? Tªn Êy muèn m­în s¸ch th× mang 'Di Kiªn Chİ' ®Õn ®©y trao ®æi víi 'Kª ThÇn lôc' cña ta.")
 	elseif ((UTask_world42==6) and (HaveItem(189) == 1)) then		-- »»Êé
-		Talk(2, "step3", "ÕâÊÇÄãÒªµÄÊé.", "Ì«ºÃÁË£¬Õâ¾ÍÊÇËûÏëÒªµÄÊé.")
+		Talk(2, "step3", "§©y lµ quyÓn s¸ch «ng cÇn.", "Hay qu¸! §©y lµ quyÓn s¸ch l·o Êy cÇn.")
 	elseif ((UTask_world == 8) and (HaveItem(188) == 0)) then		-- Êé¶ªÁË
-		Talk(1,"","Ğ¡×Ó£¬¾ÍÖªµÀÊÇÕâÑù£¬¸ÉÂïÄÃÁËÎÒµÄÊé¾ÍÅÜ")
+		Talk(1,"","B¹n trÎ! D¸m liÒu nh­ thÕ! T¹i sao l¹i nĞm s¸ch ë chç ta mµ bá ch¹y")
 		AddEventItem(188)
-		Msg2Player("µÃµ½»üÉñÂ¼")
+		Msg2Player("§­îc Kª ThÇn lôc ")
 	else
-		Talk(1,"","Ğ¡×Ó£¬×öÈË²»Ò»¶¨Òª¿´ÖØÇéÃæ£¬ÓĞµÄ¶«Î÷Ëµ³öÀ´¾Í²»ĞèÒªÇéÃæÁË!")
+		Talk(1,"","B¹n trÎ! Lµm ng­êi kh«ng nhÊt thiÕt xem träng sÜ diÖn, cã nhiÒu viÖc nãi ra th× kh«ng cÇn sÜ diÖn!")
 	end
 end;
 
 function step1()
 	SetTask(70,4)
-	AddNote("ÕÒµ½ÕòÄÏ¸ğ¼Ò£¬ËûÏëÂ³¼ÒÓÃÒÄ¼áÖ¾»»»üÉñÂ¼. ")
+	AddNote("T×m ®­îc C¸t gia trÊn nam, «ng Êy muèn Lç gia dïng Di Kiªn chİ ®æi Kª ThÇn lôc. ")
 end;
 
 function step3()
 DelItem(189)
 AddEventItem(188)
 SetTask(70,8)
-AddNote("ÔÚ¸ğ¼Ò£¬ÓÃÒÄ¼áÖ¾»»»üÉñÂ¼")
-Msg2Player("ÓÃÒÄ¼áÖ¾»»»üÉñÂ¼")
+AddNote("Tõ chç C¸t gia, dïng Di Kiªn Chİ ®æi Kª ThÇn lôc ")
+Msg2Player("Dïng Di Kiªn Chİ ®æi Kª ThÇn lôc ")
 end;

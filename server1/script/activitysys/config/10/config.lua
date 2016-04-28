@@ -7,13 +7,13 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	szName = "LingFanNPC_Click",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÉÌµê"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
---		{"AddDialogOpt",	{"»»ĞĞÏÀÁî½±Æ·",2} },
+--		{"AddDialogOpt",	{"§æi phÇn th­ëng Hµnh HiÖp LÖnh",2} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -23,17 +23,17 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "ChangXingXiaLing",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc><color=yellow> ĞĞÏÀÁî<color> ´ÓÓÎÏ·»î¶¯ÖĞ»ñµÃ£¬¿ÉÒÔÔÚÎÒÕâÀï»»È¡½±Æ·¡£"},
+	tbMessageParam = {"<npc><color=yellow> Hµnh HiÖp LÖnh <color> nhËn ®­îc tõ trong c¸c ho¹t ®éng cña trß ch¬i,cã thÓ ®ëi lÊy phÇn th­ëng t¹i chç cña ta ®©y."},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Çà¾ÔÁî",3} },
-		{"AddDialogOpt",	{"ÔÆÂ»Áî",4} },
-		{"AddDialogOpt",	{"²ÔÀÇÁî",5} },
-		{"AddDialogOpt",	{"ĞşÔ³Áî",6} },
-		{"AddDialogOpt",	{"ĞŞ·şÉñÓÎ",7} },
+		{"AddDialogOpt",	{"Thanh C©u LÖnh",3} },
+		{"AddDialogOpt",	{"V©n Léc LÖnh",4} },
+		{"AddDialogOpt",	{"Th­¬ng Lang LÖnh",5} },
+		{"AddDialogOpt",	{"HuyÒn Viªn LÖnh",6} },
+		{"AddDialogOpt",	{"Tu Phôc ThÇn Du",7} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -43,10 +43,10 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	szName = "XingXiaLing_QingJuLing",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Çà¾ÔÁî",1,1,1,1},
+	tbMessageParam = {"Thanh C©u LÖnh",1,1,1,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞĞÏÀÁî",{tbProp={6,1,2566,1,0,0},},10} },
+		{"AddOneMaterial",	{"Hµnh HiÖp LÖnh",{tbProp={6,1,2566,1,0,0},},10} },
 	},
 	tbActition = 
 	{
@@ -60,10 +60,10 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	szName = "XingXiaLing_YunLuLing",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÔÆÂ»Áî",1,1,1,1},
+	tbMessageParam = {"V©n Léc LÖnh",1,1,1,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞĞÏÀÁî",{tbProp={6,1,2566,1,0,0},},26} },
+		{"AddOneMaterial",	{"Hµnh HiÖp LÖnh",{tbProp={6,1,2566,1,0,0},},26} },
 	},
 	tbActition = 
 	{
@@ -77,10 +77,10 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	szName = "XingXiaLing_CangLangLing",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"²ÔÀÇÁî",1,1,1,1},
+	tbMessageParam = {"Th­¬ng Lang LÖnh",1,1,1,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞĞÏÀÁî",{tbProp={6,1,2566,1,0,0},},170} },
+		{"AddOneMaterial",	{"Hµnh HiÖp LÖnh",{tbProp={6,1,2566,1,0,0},},170} },
 	},
 	tbActition = 
 	{
@@ -94,10 +94,10 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	szName = "XingXiaLing_XuanYuanLing",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ĞşÔ³Áî",1,1,1,1},
+	tbMessageParam = {"HuyÒn Viªn LÖnh",1,1,1,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞĞÏÀÁî",{tbProp={6,1,2566,1,0,0},},600} },
+		{"AddOneMaterial",	{"Hµnh HiÖp LÖnh",{tbProp={6,1,2566,1,0,0},},600} },
 	},
 	tbActition = 
 	{
@@ -111,10 +111,10 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	szName = "XingXiaLing_XiuFuShenYou",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ĞŞ·şÉñÓÎ",1,1,1,1},
+	tbMessageParam = {"Tu Phôc ThÇn Du",1,1,1,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞĞÏÀÁî",{tbProp={6,1,2566,1,0,0},},1} },
+		{"AddOneMaterial",	{"Hµnh HiÖp LÖnh",{tbProp={6,1,2566,1,0,0},},1} },
 	},
 	tbActition = 
 	{

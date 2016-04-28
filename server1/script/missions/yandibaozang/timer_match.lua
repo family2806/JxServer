@@ -42,13 +42,13 @@ function YDBZ_start_match()
 		for i=2,teamsum do
 			szstr2 = szstr2 ..", ".. szstr[i]
 		end
-		local szstr = format("Õù¶áÑ×µÛ±¦²Ø¿ªÊ¼ÁË£¬Ä¿Ç°²Ë¼Û×é¶ÓÊýÎª: %s",szstr2)
+		local szstr = format("Tranh ®o¹t b¶o tµng Viªm §Õ b¾t ®Çu råi, hiÖn t¹i sè tæ ®éi tham gia: %s",szstr2)
 		Msg2MSAll(YDBZ_MISSION_MATCH,szstr)
 		YDBZ_close_missions(YDBZ_READY_MAP, YDBZ_READY_MISSION, YDBZ_READY_STATE);
 		YDBZ_create_all_npc()
 
 		StartMissionTimer(YDBZ_MISSION_MATCH, YDBZ_TIMER_MATCH, YDBZ_LIMIT_BOARDTIME * 18);
-		Msg2MSAll(YDBZ_MISSION_MATCH,format("ÀëÑ×µÛ±¦²Ø´³¹Ø¿ªÊ¼£¬»¹ÓÐ<color=yellow>%s ·Ö<color>.",floor(YDBZ_LIMIT_FINISH/60)))
+		Msg2MSAll(YDBZ_MISSION_MATCH,format("V­ît ¶i b¶o tµng viªm ®Õ b¾t ®Çu, cßn <color=yellow>%s phót<color>.",floor(YDBZ_LIMIT_FINISH/60)))
 	end
 	
 end
@@ -60,14 +60,14 @@ end
 
 function YDBZ_close_mission_match()
 	YDBZ_close_match_timer();
-	Msg2MSAll(YDBZ_MISSION_MATCH,"Ñ×µÛ±¦²Ø´³¹Ø½áÊø£¬ÇëÁôÒâÏÂ´Î¿ªÊ¼µÄÊ±¼ä.")
+	Msg2MSAll(YDBZ_MISSION_MATCH,"V­ît ¶i b¶o tµng viªm ®Õ kÕt thóc, h·y l­u ý thêi gian b¾t ®Çu cña ®ît sau.")
 	CloseMission(YDBZ_MISSION_MATCH)
 end
 
 function YDBZ_broad_limit_time()
 	local nstate = GetMissionV(YDBZ_VARV_STATE)
 	SetMissionV(YDBZ_VARV_STATE,(nstate+1))
-	local szstr = format("Ñ×µÛ±¦²Ø´³¹Ø»¹ÓÐ <color=yellow>%s ·Ö<color>.",floor(   (YDBZ_LIMIT_FINISH-  (nstate-3)*YDBZ_LIMIT_BOARDTIME)  /60) )
+	local szstr = format("V­ît ¶i b¶o tµng viªm ®Õ cßn <color=yellow>%s phót<color>.",floor(   (YDBZ_LIMIT_FINISH-  (nstate-3)*YDBZ_LIMIT_BOARDTIME)  /60) )
 	Msg2MSAll(YDBZ_MISSION_MATCH,szstr)
 end
 

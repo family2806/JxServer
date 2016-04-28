@@ -26,7 +26,7 @@ function OnTimer()
 		if (nTime > 0) then
 			local OldSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(SF_MAPID[2]);
-			Msg2MSAll(SF_MISSIONID, format("ªπ”– <color=yellow>%d<color> ∑÷÷”ªÓ∂ØΩ· ¯!",nTime));
+			Msg2MSAll(SF_MISSIONID, format("Cﬂn <color=yellow>%d<color> phÛt n˜a hoπt ÆÈng sœ k’t thÛc!",nTime));
 			SubWorld = OldSubWorld;
 		end;
 	end;
@@ -80,10 +80,10 @@ function groupsort(nGroupId, bSave, szAnimalName)
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
 			if (nGroupId > SF_SMALLMAPCOUNT) then
-			    szMsg = format("%s<enter> <color=green> ≈≈√˚ %d: %s, ◊•µΩ %d %s", 
+			    szMsg = format("%s<enter> <color=green> x’p hπng %d: %s, bæt Æ≠Óc %d %s", 
 							szMsg, i, GetName(), tabPlayer[i][2], SF_MOUSENAME);
 			else
-			    szMsg = format("%s<enter> <color=orange> ≈≈√˚ %d: %s, ¥Ú÷– %s %d ¥Œ", 
+			    szMsg = format("%s<enter> <color=orange> x’p hπng %d: %s, Æ∏nh trÛng %s %d l«n", 
 							szMsg, i, GetName(), SF_ANIMALNAME, tabPlayer[i][2]);
 			end;
 		end
@@ -99,9 +99,9 @@ function groupsort(nGroupId, bSave, szAnimalName)
 			Msg2Player(szMsg)
 		end
 		if (nGroupId > SF_SMALLMAPCOUNT) then
-		    Msg2Player(format("ƒø«∞ƒ„◊•µΩ <color=yellow>%d<color> %s, ≈≈√˚ <color=yellow>%d<color>.", GetTask(SF_COUNT_ONETIME), szAnimalName, i));
+		    Msg2Player(format("Hi÷n tπi bπn bæt Æ≠Óc <color=yellow>%d<color> %s, x’p hπng <color=yellow>%d<color>.", GetTask(SF_COUNT_ONETIME), szAnimalName, i));
 		else
-		    Msg2Player(format("ƒø«∞ƒ„¥Ú÷– %s <color=yellow>%d<color> ¥Œ£¨ƒø«∞≈≈√˚ <color=yellow>%d<color>.", szAnimalName, GetTask(SF_COUNT_ONETIME), i));
+		    Msg2Player(format("Hi÷n tπi bπn Æ∏nh trÛng %s <color=yellow>%d<color> l«n, hi÷n x’p hπng <color=yellow>%d<color>.", szAnimalName, GetTask(SF_COUNT_ONETIME), i));
 		end;
 	end;
 	

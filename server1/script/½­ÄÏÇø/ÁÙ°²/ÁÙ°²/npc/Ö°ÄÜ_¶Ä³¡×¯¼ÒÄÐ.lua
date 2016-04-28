@@ -2,5 +2,5 @@
 -- by£∫Dan_Deng(2003-09-16)
 
 function main()
-	Talk(1,"","—∫…Ÿµ√…Ÿ£¨—∫∂‡µ√∂‡£°“ªÀ≤º‰æÕ”–«Æ!")
+	Talk(1,"","ß∆t ›t Æ≠Óc ›t, Æ∆t nhi“u Æ≠Óc nhi“u! Giµu c„ chºng m y chËc Æ©y!")
 end;

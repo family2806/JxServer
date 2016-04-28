@@ -7,14 +7,14 @@ Include("\\script\\global\\station.lua")
 ---------------------------------------------------------------
 function main(sel)
 
-	Say("´¬·ò£ºÔÛÃÇ´¬·ò×æ×æ±²±²¶¼¿¿Õâ»ÆºÓÎªÉú£¬ÉúÔÚ»ÆºÓ±ß£¬Ò²ËÀÔÚ»ÆºÓ±ß£¬Õâ¾ÍÊÇÔÛÃÇ´¬·òµÄÃü£¡ÄãÒªÈ¥ÄÄ¶ù£¿", 2, "×ø´¬/WharfFun", "²»×ø/OnCancel");
+	Say("ThuyÒn phu chóng t«i chØ biÕt dùa vµo s«ng Hoµng Hµ ®Ó sèng. Sèng trªn s«ng Hoµng Hµ, chÕt bªn s«ng Hoµng Hµ, nã gièng nh­ tİnh m¹ng cña chóng t«i vËy. Ng­¬i cã lªn kh«ng? ", 2, "Ngåi thuyÒn/WharfFun", "Kh«ng ngåi/OnCancel");
 
 end;
 
 ---------------------------------------------------------------
 function  OnCancel()
 
-   Say("´¬·ò£ºÃ»Òø×Ó¿ÉÄÄÀïÒ²È¥²»ÁË£¡",0)
+   Say("Kh«ng tiÒn kh«ng thÓ lªn thuyÒn! ",0)
 
 end;
 

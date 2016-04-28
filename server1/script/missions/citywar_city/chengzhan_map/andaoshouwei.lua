@@ -1,6 +1,6 @@
 --°µµÀÊØÎÀ
 function main()
-	Say("ÕâÊÇÓÃÓÚÃØÃÜÀë³ÇÏ®»÷µĞ¾üµÄÃÜµÀ£¡ÄãÏëÊ¹ÓÃÕâ¸öÃÜµÀÂğ?", 2, "Ïë /OnGo", "²»Ïë /OnCancel");
+	Say("§©y lµ mËt ®¹o dïng ®Ó bİ mËt ra khái thµnh tËp kİch qu©n ®Şch! B¹n muèn dïng mËt ®¹o nµy kh«ng?", 2, "Muèn /OnGo", "Kh«ng muèn /OnCancel");
 end
 
 function OnGo()

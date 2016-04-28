@@ -5,16 +5,16 @@ function main(sel)
 	Uworld41 = GetTask(41)
 	if (GetByte(Uworld41,1) == 30) and (HaveItem(352) == 1) then		-- ÈÎÎñÖĞ£¬ÓĞ¡°»ú¹ØÔ¿³×¡±£¬ÈËÎ´¾È³ö
 		if (GetBit(Uworld41,12) == 0) then				-- »ú¹Øµ±Ç°Îª¹Ø±Õ
-			Say("»ú¹ØÏÖÔÚÊÇ¹Ø±ÕµÄ×´Ì¬£¬ÄãÒª°ÑËü´ò¿ªÂğ?",2,"´ò¿ª /Turn_On","¼ÌĞø±£³Ö¹Ø±Õ /Turn_Off")
+			Say("HiÖn giê c¬ quan ®· bŞ khãa, b¹n cã muèn më nã ra kh«ng?",2,"Më ra /Turn_On","Cø tiÕp tôc ®ãng cöa /Turn_Off")
 		else
-			Say("»ú¹ØÏÖÔÚÊÇ´ò¿ªµÄ×´Ì¬£¬ÄãÒª°ÑËü¹Ø±ÕÂğ£¿",2,"¼ÌĞø±£³Ö´ò¿ª/Turn_On","¹Ø±Õ/Turn_Off")
+			Say("HiÖn giê c¬ quan ®· më, b¹n cã muèn ®ãng nã l¹i kh«ng?",2,"TiÕp tôc më cöa /Turn_On","§ãng/Turn_Off")
 		end
 	end
 end
 
 function Turn_On()
 --	Talk(1,"","»ú¹Ø´ò¿ªÁË¡£")
-	Msg2Player("»ú¹Ø´ò¿ªÁË")
+	Msg2Player("C¬ quan ®· më ra")
 	Cur_Switchs = SetBit(GetTask(41),12,1)
 	SetTask(41,Cur_Switchs)
 	Check_Switch()
@@ -22,7 +22,7 @@ end
 
 function Turn_Off()
 --	Talk(1,"","»ú¹Ø¹Ø±ÕÁË¡£")
-	Msg2Player("»ú¹Ø¹Ø±ÕÁË")
+	Msg2Player("C¬ quan ®· khãa l¹i")
 	Cur_Switchs = SetBit(GetTask(41),12,0)
 	SetTask(41,Cur_Switchs)
 	Check_Switch()
@@ -35,9 +35,9 @@ function Check_Switch()
 		Uworld41 = SetByte(GetTask(41),1,100)
 		SetTask(41,Uworld41)
 		DelItem(352)						-- ³É¹¦ºóÔòÉ¾³ıÔ¿³×
-		Talk(1,"","½â³ı»ú¹Ø£¬Äã³É¹¦µØ¾È³öÁËĞ¡¾ê")
-		Msg2Player("ÄãÒÑ¾­½â³ıÁË»ú¹Ø£¬¾È³öĞ¡¾ê")
+		Talk(1,"","Më ®­îc c¬ quan! Cøu thµnh c«ng TiÓu Quyªn")
+		Msg2Player("B¹n më ®­îc c¬ quan, cøu thµnh c«ng TiÓu Quyªn ")
 	else
-		Msg2Player("µ«ÊÇÄã»Øµ½ºÚÀÎÊÔ×ÅÍÆÁËÍÆÃÅ£¬È´ÒÀÈ»ÎÆË¿²»¶¯")
+		Msg2Player("Nh­ng khi b¹n trë l¹i H¾c lao ®Èy c¸nh cöa th× nã vÉn kh«ng hÒ ®éng ®Ëy ")
 	end
 end

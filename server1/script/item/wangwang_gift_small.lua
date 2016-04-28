@@ -17,5 +17,5 @@ Include("\\script\\lib\\randomitem.lua");
 tabRandomItem = new(KTabFileEx, "\\settings\\event\\wangwanglibao\\gift_pack.txt", "tabRandomItem");
 
 function main()
-	openRandomItem(tabRandomItem, "ÍúÍú×ªÔË°ü");
+	openRandomItem(tabRandomItem, "Tói may m¾n");
 end;

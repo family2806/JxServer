@@ -2,5 +2,5 @@
 -- ÀîĞÀ 2005-01-26
 
 function main()
-	Say("ÕâÊÇË®¾§Æ»¹û£¡ÎÒ²»Ï²»¶Õâ¸öÆ»¹û¸ÉÂï»¹Òª¸æËß±ğÈËÖªµÀ",0)
+	Say("T¸o thñy tinh ®©y! T¸o nµy lµ….ua mµ t¹i sao ta ph¶i nãi cho ng­¬i biÕt chø?",0)
 end;

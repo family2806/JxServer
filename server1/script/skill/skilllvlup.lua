@@ -1,14 +1,14 @@
 SOSkillLevelUp={}
 MESSAGES={
-	"ÓÉÓÚÄã¡º%s¡»µÄ»ù´¡ĞŞÎªÌ«µÍ£¬ÏŞÖÆÁË¡º%s¡»µÄĞŞÁ¶¡£",
-	"ÓÉÓÚÄã¡º%s¡»µÄĞŞÎªÌ«µÍ£¬ÏŞÖÆÁË¡º%s¡»µÄÌáÉı¡£",
-	"Äã¡º%s¡»µÄĞŞÎªÒÑ¾­´ïµ½¶¥¼¶ÁË£¬ÎŞ·¨ÔÙµÃµ½¸ü¸ßµÄÌáÉı¡£"
+	"V× c¨n b¶n cña [%s] b¹n qu¸ thÊp, h¹n chÕ [%s] luyÖn cÊp.",
+	"V× c¨n b¶n cña [%s] b¹n qu¸ thÊp, h¹n chÕ [%s] t¨ng cÊp.",
+	" [%s] cña b¹n ®· ®Õn tèi ®a, kh«ng thÓ tiÕp tôc th¨ng cÊp ®­îc!"
 }
 
---¶ëáÒÆÕ¶ÉÖÚÉúÉı¼¶ÏŞÖÆ
+--¶ëáÒPhæ §é Chóng Sinh Éı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Pudu_zhongsheng()
-	local perSkills={{93,"´Èº½ÆÕ¶É"},{89,"ÃÎµû"},{86,"Á÷Ë®"},{92,"·ğĞÄ´ÈÓÓ"},{282,"ÇåÒôèó³ª"}}
-	local mainSkill = {332,"ÆÕ¶ÉÖÚÉú"}
+	local perSkills={{93,"Tõ Hµng Phæ D"},{89,"Méng §iÖp "},{86,"L­u Thñy "},{92,"PhËt T©m Tõ H÷u"},{282,"Thanh ¢m Ph¹n X­íng"}}
+	local mainSkill = {332,"Phæ §é Chóng Sinh "}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then
@@ -36,10 +36,10 @@ function SOSkillLevelUp.Pudu_zhongsheng()
 	return 1
 end
 
---ÌÆÃÅÂÒ»·»÷Éı¼¶ÏŞÖÆ
+--ÌÆÃÅLo¹n Hoµn KİchÉı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Luanhuan_ji()
-	local perSkills={{347,"µØÑæ»ğ"},{303,"¶¾´Ì¹Ç"},{343,"´©ĞÄ´Ì"},{345,"º®±ù´Ì"},{349,"À×»÷Êõ"}}
-	local mainSkill = {351,"ÂÒ»·»÷"}
+	local perSkills={{347,"§Şa DiÖm Háa "},{303,"§éc Thİch Cèt "},{343,"Xuyªn T©m Thİch "},{345,"Hµn B¨ng Thİch "},{349,"L«i Kİch ThuËt "}}
+	local mainSkill = {351,"Lo¹n Hoµn Kİch"}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then
@@ -67,10 +67,10 @@ function SOSkillLevelUp.Luanhuan_ji()
 	return 1
 end
 
---ÌÆÃÅÅùö¨ÂÒ»·»÷Éı¼¶ÏŞÖÆ
+--ÌÆÃÅTİch LŞch Lo¹n Hoµn KİchÉı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Pililuanhuan_ji()
-	local perSkills={{45,"Åùö¨µ¯"},{351,"ÂÒ»·»÷"}}
-	local mainSkill = {1110,"Åùö¨ÂÒ»·»÷"}
+	local perSkills={{45,"Tİch LŞch ®¬n"},{351,"Lo¹n Hoµn Kİch"}}
+	local mainSkill = {1110,"Tİch LŞch Lo¹n Hoµn Kİch"}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then
@@ -98,10 +98,10 @@ function SOSkillLevelUp.Pililuanhuan_ji()
 	return 1
 end
 
---Îå¶¾¶Ï½î¸¯¹ÇÉı¼¶ÏŞÖÆ
+--Îå¶¾§o¹n C©n Hñ Cèt Éı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Duanjin_fugu()
-	local perSkills={{67,"¾ÅÌì¿ñÀ×"},{70,"³àÑæÊ´Ìì"},{64,"±ùÀ¶Ğş¾§"},{356,"´©ÒÂÆÆ¼×"},{72,"´©ĞÄ¶¾´Ì"}}
-	local mainSkill = {390,"¶Ï½î¸¯¹Ç"}
+	local perSkills={{67,"Cöu Thiªn Cuång L«i "},{70,"Xİch DiÖm Thùc Thiªn"},{64,"B¨ng Lam HuyÒn Tinh"},{356,"Xuyªn Y Ph¸ Gi¸p "},{72,"Xuyªn T©m §éc Thİch"}}
+	local mainSkill = {390,"§o¹n C©n Hñ Cèt "}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then
@@ -129,10 +129,10 @@ function SOSkillLevelUp.Duanjin_fugu()
 	return 1
 end
 
---ÌìÈÌÉã»êÂÒĞÄÉı¼¶ÏŞÖÆ
+--ÌìÈÌNhiÕp Hån Lo¹n T©m Éı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Shehun_luanxin()
-	local perSkills={{136,"»ğ·ÙÁ«»ª"},{137,"»ÃÓ°·Éºü"},{140,"·ÉºèÎŞ¼£"},{364,"±¯ËÖÇå·ç"},{143,"À÷Ä§¶á»ê"}}
-	local mainSkill = {391,"Éã»êÂÒĞÄ"}
+	local perSkills={{136,"Háa PhÇn Liªn Hoa"},{137,"¶o ¶nh Phi Hå "},{140,"Phi Hång V« Tİch "},{364,"Bi T« Thanh Phong "},{143,"LŞch Ma §o¹t Hån"}}
+	local mainSkill = {391,"NhiÕp Hån Lo¹n T©m "}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then
@@ -160,10 +160,10 @@ function SOSkillLevelUp.Shehun_luanxin()
 	return 1
 end
 
---À¥ÂØ×íÏÉ´í¹ÇÉı¼¶ÏŞÖÆ
+--À¥ÂØTóy Tiªn T¸ CètÉı¼¶ÏŞÖÆ
 function SOSkillLevelUp.Zuixian_cuogu()
-	local perSkills={{392,"Êø¸¿Öä"},{174,"î¿°í·û"},{393,"±±Ú¤µ½º£"},{175,"ÆÛº®°ÁÑ©"},{90,"ÃÔ×Ù»ÃÓ°"}}
-	local mainSkill = {394,"×íÏÉ´í¹Ç"}
+	local perSkills={{392,"Thóc Ph­îc Chó "},{174,"Ki B¸n phï "},{393,"B¾c Minh §¸o H¶i"},{175,"Khi Hµn Ng¹o TuyÕt"},{90,"Mª Tung ¶o ¶nh"}}
+	local mainSkill = {394,"Tóy Tiªn T¸ Cèt"}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then

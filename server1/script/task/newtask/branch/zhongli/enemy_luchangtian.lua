@@ -17,6 +17,6 @@ end
 function Uworld1054_give()
 	AddOwnExp(15000)
 	AddExp_Skill_Extend(15000)
-	Msg2Player("Â·³¤ÌìÒÑ±»ÄãÇü·ş£¬ÈÎÎñÍê³É£¬Äã¿ÉÒÔ»ØÈ¥ÕÒ±¦¼¦¶Ä³¡.")
-	Talk(1,"","²»ÁÏÎÒÒ»Éú×İºá£¬×îºóÈ´°ÜÔÚÒ»¸öĞ¡×ÓÊÖÀï¡£ÕæÊÇ³ÜÈè!")
+	Msg2Player("Lé Tr­êng Thiªn ®· bŞ b¹n khuÊt phôc, nhiÖm vô hoµn thµnh, b¹n cã thÓ vÒ t×m B¶o kª sßng b¹c.")
+	Talk(1,"","Kh«ng ngê ta suèt ®êi ngang däc cuèi cïng l¹i bŞ b¹i d­íi tay mét tiÓu tö! Nhôc nh· thay!")
 end

@@ -3,9 +3,9 @@ Include("\\script\\misc\\eventsys\\type\\npc.lua")
 
 local tbFormula = 
 {
-	szName = "°×»¢½ðÅÆ",
-	tbMaterial = {{szName="ÐÐÏÀÁî",tbProp={6,1,2566,1,0,0},nCount = 1000,},},
-	tbProduct = {szName="°×»¢½ðÅÆ",tbProp={6,1,3183,1,0,0},},
+	szName = "B¹ch Hæ Kim Bµi",
+	tbMaterial = {{szName="Hµnh HiÖp LÖnh",tbProp={6,1,2566,1,0,0},nCount = 1000,},},
+	tbProduct = {szName="B¹ch Hæ Kim Bµi",tbProp={6,1,3183,1,0,0},},
 	nWidth = 1,
 	nHeight = 1,
 	nFreeItemCellLimit = 1,
@@ -14,17 +14,17 @@ local tbCompose_XinXiaLing2BaiHuJinPai = tbActivityCompose:new(tbFormula, "xingx
 
 
 --ÔÝÊ±¹Ø±ÕÖýÔì°×»¢×°±¸ÐÔÄÜ -Modified By DinhHQ - 20120511
---pEventType:Reg("Ð¡··", "Âò°×»¢½ðÅÆ", tbCompose_XinXiaLing2BaiHuJinPai.ComposeDailog, {tbCompose_XinXiaLing2BaiHuJinPai})
+--pEventType:Reg("Hµng rong", "Mua B¹ch Hæ Kim Bµi", tbCompose_XinXiaLing2BaiHuJinPai.ComposeDailog, {tbCompose_XinXiaLing2BaiHuJinPai})
 
---ÓÃ·çÔÆÊ¯»»°×»¢Áî - Modified By DinhHQ - 20120612
+--ÓÃ·çÔÆÊ¯»»B¹ch Hæ LÖnh - Modified By DinhHQ - 20120612
 local tbFormula2 = 
 {
-	szName = "°×»¢Áî",
-	tbMaterial = {{szName="·çÔÆÁî",tbProp={6,1,30224,1,0,0},nCount = 10,},},
-	tbProduct = {szName="°×»¢Áî",tbProp={6,1,2357,1,0,0},},
+	szName = "B¹ch Hæ LÖnh",
+	tbMaterial = {{szName="Phong V©n Th¹ch",tbProp={6,1,30224,1,0,0},nCount = 10,},},
+	tbProduct = {szName="B¹ch Hæ LÖnh",tbProp={6,1,2357,1,0,0},},
 	nWidth = 1,
 	nHeight = 1,
 	nFreeItemCellLimit = 1,
 }
 local tbCompose_PVT2BHL = tbActivityCompose:new(tbFormula2, "DungPhongVanThachDoiBachHoLenh")
-pEventType:Reg("Ð¡··", "¶Ò»»°×»¢Áî", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})
+pEventType:Reg("Hµng rong", "§æi B¹ch Hæ LÖnh", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})

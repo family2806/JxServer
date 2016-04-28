@@ -5,22 +5,22 @@ function main(sel)
 i = random(0,3)
 
 if (i == 0) then
-Say("²è²©Ê¿£º²èÄËÌìÏÂµÚÒ»ÑÅÆ·£¬Æ·²èÄËÌìÏÂµÚÒ»ÑÅÊÂ¡£ÈËÈË¶¼ÖªÆ·²èÓĞ½²¾¿£¬ÆäÊµÆã²èÒ²ÓĞ´óÑ§ÎÊ¡£",0)
+Say("Trµ lµ mét s¶n phÈm tao nh· trong thiªn h¹. Uèng trµ lµ mét chuyÖn tao nh· bËc nhÊt trong thiªn h¹. Ng­êi ng­êi ®Òu biÕt uèng trµ lµ mét nghÖ thuËt, c¸ch pha trµ còng lµ lo¹i häc vÊn uyªn th©m!",0)
 return
 end;
 
 if (i == 1) then
-Say("²è²©Ê¿£ºÆã²èÓĞÏÂÍ¶¡¢ÖĞÍ¶¡¢ÉÏÍ¶Ö®·Ö¡£¶¬¼¾ÏÂÍ¶£¬ÏÈ²èºóÌÀ£»´ºÇïÖĞÍ¶£¬ÌÀ°ëÏÂ²è£¬¸´ÒÔÌÀÂú£»ÏÄ¼¾ÉÏÍ¶£¬ÏÈÌÀºó²è¡£",0)
+Say("Pha trµ chia thµnh h¹ ®Çu, trung ®Çu, th­îng ®Çu, kh«ng ®¬n gi¶n nh­ mäi ng­êi t­ëng",0)
 return
 end;
 
 if (i == 2) then
-Say("²è²©Ê¿£ºÌÀÓĞÈı±æ£ºÒ»Ô»ĞÎ±æ£¬ÓĞÏºÄ¿¡¢Ğ·Ä¿¡¢ÓãÑÛ¡¢Á¬Öé¡¢Ó¿Èª£»¶şÔ»Éù±æ£¬ÓĞ³õÉù¡¢×ªÉù¡¢ÕñÉù¡¢ÖèÉù£»ÈıÔ»Æø±æ£¬ÓĞÇáÎí¡¢µ­ÑÌ¡¢ÄıÔÆ¡¢²¼Â¶¡£",0)
+Say("Trµ lµ mét s¶n phÈm tao nh· trong thiªn h¹. Uèng trµ lµ mét chuyÖn tao nh· bËc nhÊt trong thiªn h¹. Ng­êi ng­êi ®Òu biÕt uèng trµ lµ mét nghÖ thuËt, c¸ch pha trµ còng lµ lo¹i häc vÊn uyªn th©m!",0)
 return
 end;
 
 if (i == 3) then
-Say("²è²©Ê¿£ºÒû²èÓ¦ÒÔ¸âµã¹û¸¬µã²è£¬ºÃ±ÈÒû¾ÆÒªÓĞÏÂ¾Æ²Ë¡­¡­",0)
+Say("Uèng trµ chØ th­ëng thøc cïng b¸nh ngät tr¸i c©y, cßn uèng r­îu ph¶i cã chót ®å nhÊm!.....",0)
 end;
 
 end;

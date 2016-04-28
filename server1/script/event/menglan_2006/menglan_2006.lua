@@ -12,7 +12,7 @@ greatseed_configtab = {
 	{78, 3, 50, "\\settings\\maps\\menglan_2006\\ÏåÑôÎ÷ÃÅÄÏÃÅ.txt"},	--ÏåÑôÎ÷ÃÅ;
 };
 
-tab_NPCIdx = {{1126, "½ğÁ«»¨", 1770}, {1127, "Ä¾Á«»¨", 1771}, {1128, "Ë®Á«»¨", 1772}, {1129, "»ğÁ«»¨", 1773}, {1130, "ÍÁÁ«»¨", 1774}}
+tab_NPCIdx = {{1126, "Kim Liªn hoa ", 1770}, {1127, "Méc Liªn Hoa", 1771}, {1128, "Thñy Liªn Hoa", 1772}, {1129, "Háa Liªn Hoa", 1773}, {1130, "Thæ Liªn Hoa", 1774}}
 TK_LOTUS_ALL = 1775;
 
 SIMGER_LIMIT = 24;

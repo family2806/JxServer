@@ -8,14 +8,14 @@ function main(sel)
 		return 0
 	end;
 	if (GetLevel() < 50) then
-		Msg2Player("ÒÑ³äÖµ50¼¶ÒÔÉÏÍæ¼Ò²ÅÄÜÊ¹ÓÃ.");
+		Msg2Player("Ng­êi ch¬i cÊp 50 trë lªn ®· n¹p thÎ míi cã thÓ sö dông.");
 		return 1;
 	end;
 	
 	local nexp = GetTask(ZHANGONGHUA_EXP);
 	local addexp = 1500000;
 	if nexp >= 300000000 then
-		Talk(1,"","Äú»ñµÃµÄ¾­ÑéÒÑ¾­¹ıÉÏÏŞ£¬×î¶àÖ»ÄÜÁìÈ¡3ÒÚ¾­ÑéÖµ.");
+		Talk(1,"","Kinh nghiÖm b¹n nhËn ®­îc ®· qu¸ giíi h¹n, tèi ®a chØ nhËn ®­îc 300 triÖu ®iÓm kinh nghiÖm.");
 		return 1;
 	end
 	
@@ -27,7 +27,7 @@ function main(sel)
 	end
 	
 	AddOwnExp(addexp);
-	Msg2Player("ÄúÔö¼Ó "..addexp.."¾­ÑéÖµ.");
+	Msg2Player("B¹n t¨ng thªm "..addexp.."®iÓm kinh nghiÖm.");
 	WriteLog(format("[ZhanGongHua]\t Date:%s\t Account:%s\t Name:%s\t Effect:GetExp %s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),addexp));
 		
 end

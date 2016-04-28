@@ -1,7 +1,7 @@
 
 -- = ===================== ÎÄ¼şĞÅÏ¢ ======================
 
--- ½£ÏÀÇéÔµonline Ëæ»úÈÎÎñ²Ø±¦Í¼ÊµÌå´¦ÀíÎÄ¼ş
+-- ½£ÏÀÇéÔµonline Ëæ»úÈÎÎñTµng B¶o §åÊµÌå´¦ÀíÎÄ¼ş
 -- Edited by peres
 -- 2005/10/19 PM 14:22
 
@@ -54,7 +54,7 @@ ID_USETREAMAP_TIME = 1738;  -- ´¢´æÍæ¼ÒÍÚ±¦µÄ´ÎÊı
 --|         01         |
 --|     16  03  10     |
 --| 11   06   07   08  |
---| 09  04 Íæ¼Ò 05  12 |
+--| 09  04 Ng­êi ch¬i05  12 |
 --|     13  14  15     |
 --|         02         |
 --|____________________|
@@ -86,7 +86,7 @@ aryBossPos = {
 }
 
 
--- ²úÉúÒ»ÕÅ²Ø±¦Í¼
+-- ²úÉúÒ»ÕÅTµng B¶o §å
 function CreateTreasureMap()
 
 local nRow = SelectTreasurePos();
@@ -102,15 +102,15 @@ local nIndex = AddItem(6, 2, 3, 1, 0, 0, 0);
 	-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	SyncItem(nIndex)
 	
-	CDebug:MessageOut("²úÉúÁËÒ»ÕÅ²Ø±¦Í¼£¬È¡µ½µÄĞĞÊıÎª£º"..nRow);
+	CDebug:MessageOut("XuÊt hiÖn 1 m¶nh Tµng B¶o §å, sè l­îng nhËn ®­îc lµ "..nRow);
 	
-	-- ·µ»Ø²Ø±¦Í¼Ë÷Òı
+	-- ·µ»ØTµng B¶o §åË÷Òı
 	return nRow;
 
 end;
 
 
--- ÓÉÖ¸¶¨µÄĞĞÊı²úÉú²Ø±¦Í¼
+-- ÓÉÖ¸¶¨µÄĞĞÊı²úÉúTµng B¶o §å
 function CreateTreasureMapByRow(nRow)
 
 local nIndex = AddItem(6, 2, 3, 1, 0, 0, 0);
@@ -134,23 +134,23 @@ local nRandomItemIndex = AddItem(6, 2, 2, 0, 1, 0, 0);
 	-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	SyncItem(nRandomItemIndex);
 
-	Msg2Player("ÄúµÃµ½ÁË<color=green>ÈÎÎñ¾íÖáÒ»¸ö£¡<color>");
-	CDebug:MessageOut("ÈÎÎñ¸øÓè½±ÀøÎªÒ»¸öÈÎÎñ¾íÖá£¬ÆäË÷ÒıÎª£º"..nRandomItemIndex);
+	Msg2Player("B¹n nhËn ®ù¬c <color=green>nhiÖm vô ngÉu nhiªn!<color>");
+	CDebug:MessageOut("phÇn th­ëng cña nhiÖm vô lµ ngÉu nhiªn, tiÕp theo lµ:"..nRandomItemIndex);
 
 end;
 
 
--- Ñ¡ÔñÒ»¸ö²Ø±¦Í¼µÄÎ»ÖÃ
+-- Ñ¡ÔñÒ»¸öTµng B¶o §åµÄÎ»ÖÃ
 function SelectTreasurePos()
 
 local nRow = random(2, tabTreaPos:getRow());
-	CDebug:MessageOut("Ñ¡È¡µ½ÁËÒ»¸ö±¦²ØÎ»ÖÃµÄĞĞÊı£º"..nRow);
+	CDebug:MessageOut("Chän ®­îc vŞ trİ kho tµng "..nRow);
 	return nRow;
 
 end;
 
 
--- ¼ì²â²Ø±¦Í¼µÄÎ»ÖÃÊÇ·ñÕıÈ·
+-- ¼ì²âTµng B¶o §åµÄÎ»ÖÃÊÇ·ñÕıÈ·
 function MapCheckTreasurePos(nIndex)
 	
 local nRow = GetItemMagicLevel(nIndex, 1);
@@ -182,7 +182,7 @@ end;
 
 
 
--- Ê¹ÓÃÒ»ÕÅ²Ø±¦Í¼
+-- Ê¹ÓÃÒ»ÕÅTµng B¶o §å
 -- ·µ»ØÖµ£º1Îª·ûºÏµØµã¡¢0Îª²»·ûºÏ
 function UseTreasurePos(nIndex)
 
@@ -198,7 +198,7 @@ function UseTreasurePos(nIndex)
 end;
 
 
--- ÏÔÊ¾²Ø±¦Í¼µÄÏêÏ¸ĞÅÏ¢
+-- ÏÔÊ¾Tµng B¶o §åµÄÏêÏ¸ĞÅÏ¢
 function ShowTreasureMapInfo(nIndex)
 
 local nRow = GetItemMagicLevel(nIndex, 1);
@@ -208,25 +208,25 @@ local picPath = tabTreaPos:getCell("Pic", nRow);
 local picLink = "";
 
 	if nIndex==0 or nIndex==nil or nRow<1 or nRow==nil then
-		Say("¸µÀ×Êé£º°¦£¬ÄãÕâÕÅ²Ø±¦Í¼ÒÑ¾­²ĞÆÆµÃ²»³ÉÑù×ÓÁË£¬ÒªÎÒÕâÑÛ¾¦²»ºÃÊ¹µÄÀÏÍ·×ÓÔõÃ´¿´°¡£¿",0);
+		Say("Hõm, tÊm Tµng B¶o §å nµy ®· bŞ ph¸ råi, cÆp m¾t l·o giµ nµy lµm sao mµ ®äc ®­îc?",0);
 		return
 	else
-		picLink = "<link=image:"..picPath..">²Ø±¦Í¼µÄĞÅÏ¢£º<link>»¨ÁË´ó°Ñ´ó°ÑµÄÒø×Ó´òµãºó£¬ÄãÖÕÓÚÔÚ¸µÀ×ÊéµÄÖ¸µãÏÂÒÀÏ¡ÔÚÕâÕÅ²ĞÈ±²»È«µÄ²Ø±¦Í¼ÖĞ±æÈÏ³öÁË±¦²ØµÄ´óÖÂÎ»ÖÃ¡£Æ¾×ÅÄãÒÔÇ°·á¸»µÄÔÄÀúºÍÃôÈñµÄ¹Û²ìÁ¦£¬Äã·¢ÏÖÕâËÆºõÊÇ<color=yellow>"..strInfo.."<color>¡£";
+		picLink = "<link=image:"..picPath..">Th«ng tin vÒ Tµng B¶o §å:<link> Sau khi bá mét sè tiÒn lín, cuèi cïng b¹n còng ®· ®­îc Phã L«i Th­ chØ coh vŞ trİ kho b¸u<color=yellow>"..strInfo.."<color>.";
 	end;
 
-	Describe(picLink, 1, "½áÊø¶Ô»°/OnExit");
+	Describe(picLink, 1, "KÕt thóc ®èi tho¹i/OnExit");
 
 end;
 
 
--- ¼ì²é·ÅÈëµÄÎïÆ·ÊÇ·ñÎªÕæÕıµÄ²Ø±¦Í¼
+-- ¼ì²é·ÅÈëµÄÎïÆ·ÊÇ·ñÎªÕæÕıµÄTµng B¶o §å
 function CheckTreasureMap(nCount)
 
 local nGenre,nDetail,nParticular,nLevel,nGoodsFive,nLuck = 0,0,0,0,0,0;
 local nIndex = 0;
 
 	if nCount~=1 then
-		Say("¸µÀ×Êé£ºÄã¶¼ÈûÁËĞ©Ê²Ã´¶«Î÷¸øÎÒ°¡£¿ÎÒÖ»Òª<color=yellow>Ò»ÕÅ²Ø±¦Í¼<color>¾Í¹»ÁË£¡", 0);
+		Say("Ng­¬i giÊu g× ®ã? Ta chØ cÇn <color=yellow>1 tÊm Tµng B¶o §å<color> lµ ®ñ råi!", 0);
 		return
 	end;
 	
@@ -242,21 +242,21 @@ local nIndex = 0;
 			if Pay(300000)==1 then
 				SetItemMagicLevel(nIndex, 2, 1);
 				SyncItem(nIndex);
-				Msg2Player("<color=yellow>ÄãÖ§¸¶¸ø¸µÀ×ÊéÊ®ÍòÁ½Òø×Ó£¡<color>");
+				Msg2Player("<color=yellow>B¹n ®­a cho Phã L«i Th­ 30 v¹n l­îng!<color>");
 			else
-				Say("¸µÀ×Êé£º¹ş¹ş¡­¡­ÄêÇáÈË£¬Ç®Ã»´ø¹»²»Òª½ô£¬¿É²»ÄÜÃÉÎÒÕâÀÏÍ·×Ó°¡¡£Õâ¾øÊÀÕä±¦¿ÉÄÜ¾Í´ËÓëÄãÎŞÔµÁËÅ¶£¡",0);
+				Say("Haha…B¹n trÎ, kh«ng ®ñ tiÒn th× nãi lµm g×, ®õng t­ëng l·o giµ nµy ngu muéi. Ng­¬i vµ vËt kú tr©n dŞ b¶o tuyÖt thÕ nµy cã thÓ lµ v« duyªn råi.",0);
 				return
 			end;
 			
 		elseif GetItemMagicLevel(nIndex, 2)==1 then
-			Say("¸µÀ×Êé£ºÕâÕÅ²Ø±¦Í¼ÒÑ¾­¾­¹ıÎÒµÄ¼ø¶¨ÁË£¬ÄãÓ¦¸ÃÄÜ¿´µÃ¶®ÁË°É£¿»¹²»¶®µÄ»°¾ÍÔÙ×ĞÏ¸×ÁÄ¥×ÁÄ¥°É£¡", 0);
+			Say("TÊm Tµng B¶o §å nµy ®· qua kiÓm ®Şnh, ng­¬i xem cã hiÓu kh«ng? NÕu kh«ng hiÓu h·y t×m hiÓu kü l¹i!", 0);
 			return
 		end;
 		
 		ShowTreasureMapInfo(GetGiveItemUnit(1));
 		return
 	else
-		Say("¸µÀ×Êé£ºÄã¶¼ÈûÁËĞ©Ê²Ã´¶«Î÷¸øÎÒ°¡£¿ÎÒÖ»Òª<color=yellow>Ò»ÕÅ²Ø±¦Í¼<color>¾Í¹»ÁË£¡", 0);
+		Say("Ng­¬i giÊu g× ®ã? Ta chØ cÇn <color=yellow>1 tÊm Tµng B¶o §å<color> lµ ®ñ råi!", 0);
 		return
 	end;
 
@@ -271,7 +271,7 @@ local mapindex = SubWorldID2Idx(subworld);
 local mapname = SubWorldName(mapindex);
 
 local nType = SelectTreasureType();
-	CDebug:MessageOut("¿ªÊ¼ÍÚ±¦£¬Ñ¡È¡µ½µÄ±¦²ØÀàĞÍÎª£º"..nType);
+	CDebug:MessageOut("B¾t ®Çu ®µo t×m kho b¸u "..nType);
 
 	-- ÏÈËæ»úÅĞ¶ÏÊÇ·ñ²úÉú½ğÇ®£¬ÓĞ 45% µÄ¸ÅÂÊ
 	if random(1, 100)<=45 then
@@ -296,7 +296,7 @@ local nType = SelectTreasureType();
 	elseif nType==3 then   -- ÉñÃØÏä×Ó	--by ×Ó·ÇÓã 2008/02/22 È¥³ı±¦Ïä¸ÅÂÊ
 		
 		AddItem(6, 1, 902, 1, 0, 0, 0);
-		Msg2SubWorld("Íæ¼Ò <color=yellow>"..GetName().."<color> ÀûÓÃ²Ø±¦Í¼ÔÚ<color=green>"..mapname.."<color>ÍÚ±¦Ê±ÍÚµ½ÁËÒ»¸ö<color=green>¹Å¾ÉµÄ±¦Ïä<color>£¡");
+		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ÀûÓÃ²Ø±¦Í¼ÔÚ<color=green>"..mapname.."<color> ®· ®µo ®­îc 1 <color=green>B¶o r­¬ng cæ<color>£¡");
 		return 1;
 	
 	end;
@@ -335,7 +335,7 @@ local i=0;
 
 	for i=1, 25 do AddMoneyObj(random(5000, 12000)); end;
 	
-	Msg2Player("<color=yellow>ÄãÍÚµ½ÁËÒ»´ó¶Ñ½ğÇ®£¡<color>");
+	Msg2Player("<color=yellow>B¹n nhËn ®­îc mét ®èng tiÒn lín!<color>");
 
 end;
 
@@ -362,11 +362,11 @@ local mapname = SubWorldName(mapindex);
 
 	if (nGoods[2]==1) then
 		AddGoldItem(0, nGoods[3]);
-		Msg2Player("ÄãÍÚµ½ÁËÒ»¸ö<color=yellow>"..nGoods[1].."<color>£¡");
-		AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÀûÓÃ²Ø±¦Í¼ÔÚ"..mapname.."´¦ÍÚµ½ÁË»Æ½ğ×°±¸ "..nGoods[1].." Ò»¼ş£¡", 2);
+		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
+		AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÀûÓÃ²Ø±¦Í¼ÔÚ"..mapname.."lÊy ®­îc trang bŞ hoµng kim "..nGoods[1].."mét bé!", 2);
 	else
 		AddItem(nGoods[3],nGoods[4],nGoods[5],nGoods[6],nGoods[7],nGoods[8],0);
-		Msg2Player("ÄãÍÚµ½ÁËÒ»¸ö<color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
 		-- Msg2SubWorld("Íæ¼Ò<color=yellow>"..GetName().."<color>ÀûÓÃ²Ø±¦Í¼ÔÚ<color=yellow>"..mapname.."<color>´¦ÍÚµ½ÁË<color=yellow>"..nGoods[1].."<color>£¡");
 	end;
 
@@ -380,7 +380,7 @@ local nRow = tabTreaBoss:countArrayRate("Rate");  -- Ëæ»úÈ¡µÃÒ»¸ö BOSS µÄĞĞÊı
 
 	-- Èç¹ûÈ¡²»µ½ÕıÈ·µÄĞĞÊıÔò·µ»Ø
 	if nRow<1 or nRow==nil then
-		CDebug:MessageOut("²Ø±¦Í¼ CALL BOSS È¡µ½ÁËÒ»¸ö²»´æÔÚµÄĞĞÊı£¡");
+		CDebug:MessageOut("Tµng B¶o §å CALL BOSS: d·y sè kh«ng tån t¹i!");
 		return
 	end;
 
@@ -402,8 +402,8 @@ local aryOrg, aryDec = {},{};
 local i,j = 0,0;
 
 
-	-- ¶Ô¶á±¦ÔôµÄÌØÊâ´¦Àí
-	if strName=="¶á±¦Ôô" then
+	-- ¶Ô§o¹t B¶o TÆcµÄÌØÊâ´¦Àí
+	if strName=="§o¹t B¶o TÆc" then
 		for i,j in aryBossPos do
 			tinsert(aryOrg, i);
 		end;
@@ -438,7 +438,7 @@ local i,j = 0,0;
 							1);
 		end;
 					
-		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ÀûÓÃ²Ø±¦Í¼ÔÚÍÚ±¦Ê±Óöµ½ÁËÒ»Èº<color=green>"..strName.."<color>µÄ×èÄÓ£¡");
+		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> khi ÀûÓÃ²Ø±¦Í¼ÔÚ nhËn ®­îc mét<color=green>"..strName.."<color>");
 		return 1;
 	else
 
@@ -477,7 +477,7 @@ local nIsPublic = 0;
 	nIsPublic = tonumber(tabTreaOldBox:getCell("IsPublic", nRow));
 	
 	-- ¶ÔÓÚ°ÂÔË½ä×ÓµÄ¼ì²é
-	if nGoods[1]=="ÑÅµäÖ®»ê" or nGoods[1]=="±±¾©Ö®ÃÎ" then
+	if nGoods[1]=="V« Danh ChØ Hoµn" or nGoods[1]=="V« Danh Giíi ChØ " then
 		
 		-- ¼ì²éÔÚ 180 ÌìÀïÊÇ·ñ²úÉú¹ı°ÂÔË½ä×ÓÖĞµÄÈÎºÎÒ»¸ö
 		if CheckItemEnableData(nGoods[1], 180)==1 then
@@ -487,41 +487,41 @@ local nIsPublic = 0;
 			-- Ğ´Èë RELAY µ±Ç°µÄÏµÍ³ÃëÊı
 			WriteItemEnableData(nGoods[1]);
 			
-			WriteTaskLog("ÔÚ¿ªÆô±¦ÏäÊ±µÃµ½ÁËÒ»¸ö£º"..nGoods[1]);
+			WriteTaskLog("Më B¶o r­¬ng nhËn ®­îc mét:"..nGoods[1]);
 			
-			Msg2SubWorld("Íæ¼Ò <color=yellow>"..GetName().."<color> ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË <color=green>"..nGoods[1].."<color>£¡£¡£¡");
+			Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn <color=green>"..nGoods[1].."<color>£¡£¡£¡");
 			
-			AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË "..nGoods[1].." £¡£¡£¡£¡£¡", 5);
+			AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn"..nGoods[1].."!!!!!", 5);
 			
 			return
 		else
 			-- Èç¹ûÒÑ¾­²úÉú¹ıµÄ»°Ôò²¹³¥Ò»¸öÇüÔ­ôÕ×Ó
 			AddItem(6, 1, 68, 1, 1, 0, 0);
 			
-			Msg2SubWorld("Íæ¼Ò <color=yellow>"..GetName().."<color> ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË<color=green>ÇüÔ­ôÕ×Ó<color>£¡");
+			Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË<color=green>ÇüÔ­ôÕ×Ó<color>£¡");
 			
-			WriteTaskLog("ÔÚ¿ªÆô±¦ÏäÊ±Ëæ»úµ½ÁËÒ»¸ö£º"..nGoods[1].."£¬µ«ÊÇÒòÎªÈÕÆÚÏŞÖÆËùÒÔ²¹³¥ÎªÇüÔ­ôÕ×Ó£¡");
+			WriteTaskLog("Më B¶o r­¬ng ngÉu nhiªn nhËn ®­îc mét:"..nGoods[1]..", nh­ng do h¹n chÕ vÒ thêi gian nªn lÊy B¸nh ch­ng ®Ó ®Òn bï!");
 			return
 		end;
 		
 	end;
 	
-	if nGoods[1]=="²Ø±¦Í¼" then
+	if nGoods[1]=="Tµng B¶o §å" then
 		CreateTreasureMap();
-		Msg2Player("ÄãµÃµ½ÁËÒ»¸ö<color=yellow>²Ø±¦Í¼<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>Tµng B¶o §å<color>£¡");
 	elseif (nGoods[2]==1) then
 		AddGoldItem(0, nGoods[3]);
-		Msg2Player("ÄãµÃµ½ÁËÒ»¸ö<color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
 	elseif (nGoods[2]==0) then
 		AddItem(nGoods[3],nGoods[4],nGoods[5],nGoods[6],nGoods[7],nGoods[8],0);
-		Msg2Player("ÄãµÃµ½ÁËÒ»¸ö<color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
 	end;
 	
 	-- Ğ´Èë LOG
-	WriteTaskLog("ÔÚ¿ªÆô±¦ÏäÊ±µÃµ½ÁËÒ»¸ö£º"..nGoods[1]);
+	WriteTaskLog("Më B¶o r­¬ng nhËn ®­îc mét:"..nGoods[1]);
 	
 	if nIsPublic==1 then
-		AddGlobalCountNews("Íæ¼Ò "..GetName().." ´ò¿ª¹Å¾ÉµÄ±¦Ïäºó¾ªÏ²µØ·¢ÏÖÁË "..nGoods[1], 1);
+		AddGlobalCountNews("Ng­êi ch¬i"..GetName().." Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn"..nGoods[1], 1);
 	end;
 	
 end;
@@ -568,7 +568,7 @@ function WriteTaskLog(strMain)
 	-- Èç¹ûÊÇ¿ÕÖµÔò²»Ğ´Èë
 	if strMain==nil then return end;
 
-	WriteLog("[ÈÎÎñÏµÍ³¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."[ÕËºÅ£º"..GetAccount().."][½ÇÉ«£º"..GetName().."]"..strMain);
+	WriteLog(" [HÖ thèng nhiÖm vô]"..date(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."]"..strMain);
 end;
 
 

@@ -51,16 +51,16 @@ function OnGlobalNpcDeath(nNpcIndex, nAttackerIndex)
 		end
 		tbKillDailyTask:OnKillMonster(nNpcIndex)		
 		G_ACTIVITY:OnMessage("NpcOnDeath", nNpcIndex)
-		G_TASK:OnMessage("´äÑÌ", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("¶ëÃ¼", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("ÌÆÃÅ", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("Ø¤°ï", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("Îå¶¾", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("ÌìÈÌ", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("ÉÙÁÖ", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("Îäµ±", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("ÌìÍõ", nNpcIndex, "KillNpc")
-		G_TASK:OnMessage("À¥ÂØ", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Thóy Yªn", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Nga Mi", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("§­êng M«n", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("C¸i Bang", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Ngò §éc", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Thiªn NhÉn", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("ThiÕu L©m", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Vâ §ang", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("Thiªn V­¬ng", nNpcIndex, "KillNpc")
+		G_TASK:OnMessage("C«n L«n", nNpcIndex, "KillNpc")
 		DynamicExecute("\\script\\missions\\tianchimijing\\floor4\\bossdeath.lua", "OnDeath", nNpcIndex, PlayerIndex)
 		-- ´³¹Øµ÷Õû 2011.03.03
 		DynamicExecute("\\script\\missions\\challengeoftime\\chuangguang30.lua", "ChuangGuan30:OnNpcDeath", nNpcIndex, PlayerIndex)
@@ -69,7 +69,7 @@ function OnGlobalNpcDeath(nNpcIndex, nAttackerIndex)
 		
 		-- Á¶½ð»î¶¯µôÂä
 		if NpcFunLib:CheckBoatBoss(nNpcIndex) == 1 and tbRefiningIron:IsCarryOn() == 1 then
-			tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp={6,1, 2293, 1,0,0,},nExpiredTime=tbRefiningIron.nCloseDate,}, "Ë®ÔôÊ×ÁìÁ¶½ð»î¶¯µôÂä", 1)
+			tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp={6,1, 2293, 1,0,0,},nExpiredTime=tbRefiningIron.nCloseDate,}, "Thñy tÆc ®Çu lÜnh r¬i ë ho¹t ®éng luyÖn kim", 1)
 		end
 		
 		if (DynamicExecute("\\script\\event\\jiefang_jieri\\201004\\main.lua", "FreedomEvent2010:IsActive1") == 1) then

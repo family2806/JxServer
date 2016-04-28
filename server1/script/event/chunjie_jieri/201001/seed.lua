@@ -10,17 +10,17 @@ DATE_END	= 100329	-- »î¶¯½áÊøÈÕÆÚ
 
 function check_time(curr_date, curr_time)
 	if (curr_date < DATE_START) then
-		Say("ĞÂÄêÃ·Ê÷»î¶¯»¹Ã»¿ªÊ¼.")
+		Say("Ho¹t ®éng c©y mai ngµy tÕt vÉn ch­a b¾t ®Çu.")
 		return 0
 	elseif (curr_date >= DATE_END) then
-		Say("ĞÂÄêÃ·Ê÷»î¶¯ÒÑ¾­½áÊøÁË.")
+		Say("Ho¹t ®éng c©y mai ngµy tÕt ®· kÕt thóc råi.")
 		return 0
 	elseif (curr_time >= TIME_START1 and curr_time < TIME_END1) then
 		return 1
 	elseif (curr_time >= TIME_START2 and curr_time < TIME_END2) then
 		return 1
 	else
-		Say("ĞÂÄêÃ·Ê÷µÄ»î¶¯Ê±¼äÊÇÃ¿Ìì12:00-15:00ºÍ19:00-22:00")
+		Say("Thêi gian ho¹t ®éng c©y mai ngµy tÕt lµ mçi ngµy 12:00-15:00 vµ 19:00-22:00")
 		return 0
 	end
 end

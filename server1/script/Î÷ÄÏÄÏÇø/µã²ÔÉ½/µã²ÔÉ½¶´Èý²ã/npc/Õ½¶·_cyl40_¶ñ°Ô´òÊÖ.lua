@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_cy = GetTask(6)
 	if (UTask_cy == 40*256+20) and (HaveItem(198) == 0) and (random(0,100) < 30) then				-- 30%µÄ»úÂÊ³É¹¦
 		AddEventItem(198)
-		Msg2Player("ÄÃµ½ÒøÔ¿³× ")
-		AddNote("ÕÒ³öÒøÔ¿³×")
+		Msg2Player("LÊy ®­îc ch×a kho¸ B¹c ")
+		AddNote("T×m ®­îc ch×a kho¸ B¹c ")
 	end
 end;

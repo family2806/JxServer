@@ -6,6 +6,6 @@ function main()
 	if ndate >= 8030800 and ndate <= 8033124 then
 		funv_jieri_shenmi:xianhua()	---08¸¾Å®½Ú»î¶¯£¬08.4.1ºó¿ÉÉ¾³ı
 	else	
-		Talk(1,"","ÎÒ½ñÄêÒÑ¾­80ËêÁË£¬ÑÛ¾¦»¨£¬¶ú¶ä±³£¬ÑÀ³İÒ²µôÂäÍêÁË£¬³ÔºÈ²»ÈİÒ×ÁË.")
+		Talk(1,"","Ta n¨m nay ®· h¬n 80 tuæi råi, m¾t mê tai yÕu, r¨ng cá còng rông c¶ råi, ¨n uèng kh«ng dÔ dµng n÷a.")
 	end
 end;

@@ -122,19 +122,19 @@ end
 
 
 function tbTrainSkill150:LoadItem()
-	GiveItemUI("½»ÐÞÁ¶ÎïÆ·Òª¾÷","ÒªÇó£ºÃ¿´ÎÖ»½»3ÖÖÖÐµÄÒ»ÖÖÎïÆ·\ÐÞÁ¶ÃØ¾÷(´³¹Ø)\ÐÞÁ¶ÃØ¾÷(Ìì³ØÃØ¾³)" , "confirm_LoadItem", "onCancel", 1)
+	GiveItemUI("Nép vËt phÈm Tu ch©n yÕu quyÕt","Yªu cÇu: Mçi lÇn chØ nép 1 trong 3 lo¹i vËt phÈm\nTu ch©n yÕu quyÕt(v­ît ¶i)\nTu ch©n yÕu quyÕt(viªm ®Õ)\nTu ch©n yÕu quyÕt(thiªn tr× mËt c¶nh)" , "confirm_LoadItem", "onCancel", 1)
 end
 
 function confirm_LoadItem(nCount)
 	if nCount > 1 or nCount <= 0 then
-		Talk(1, "", "·ÅÈëÎïÆ·²»¶Ô£¬Çë¼ì²é")
-		Msg2Player("·ÅÈëÎïÆ·²»¶Ô£¬Çë¼ì²é")
+		Talk(1, "", "VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
+		Msg2Player("VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
 		return
 	end
 	
 	if tbTrainSkill150:CheckValueTask() == 1 then
-			Talk(1, "", "½ñÌìÄãµÄ´ÎÊýÒÑÓÃÍê£¬Ã÷ÌìÔÙÀ´°É")
-			Msg2Player("½ñÌìÄãµÄ´ÎÊýÒÑÓÃÍê£¬Ã÷ÌìÔÙÀ´°É")
+			Talk(1, "", "Sè lÇn h«m nay cña ng­¬i ®· hÕt, ngµy mai h·y l¹i ®©y nhÐ")
+			Msg2Player("Sè lÇn h«m nay cña ng­¬i ®· hÕt, ngµy mai h·y l¹i ®©y nhÐ")
 			return
 	end
 	
@@ -142,20 +142,20 @@ function confirm_LoadItem(nCount)
 	local nG,nD,nP,_,_=GetItemProp(nIdx)
 
 	if nG ~= 6 or nD ~= 1 or (nP ~= 30162 and nP ~= 30163 and nP ~= 30164) then
-			Talk(1, "", "·ÅÈëÎïÆ·²»¶Ô£¬Çë¼ì²é")
-			Msg2Player("·ÅÈëÎïÆ·²»¶Ô£¬Çë¼ì²é")
+			Talk(1, "", "VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
+			Msg2Player("VËt phÈm bá vµo kh«ng ®óng, xin h·y kiÓm tra l¹i")
 			return
 	end
 	
 	local nRet = tbTrainSkill150:GetValueTask(nP);
 	if  nRet == 0 then
-		Talk(1, "", "½ñÌìÄãµÄ´ÎÊýÒÑÓÃÍê£¬Ã÷ÌìÔÙÀ´°É")
-		Msg2Player("½ñÌìÄãµÄ´ÎÊýÒÑÓÃÍê£¬Ã÷ÌìÔÙÀ´°É")
+		Talk(1, "", "Sè lÇn h«m nay cña ng­¬i ®· hÕt, ngµy mai h·y l¹i ®©y nhÐ")
+		Msg2Player("Sè lÇn h«m nay cña ng­¬i ®· hÕt, ngµy mai h·y l¹i ®©y nhÐ")
 		return
 	end
 	if IsMyItem(nIdx) ~= 1 or RemoveItemByIndex(nIdx) ~= 1 then
 		return
 	end
 	tbVNG_BitTask_Lib:addTask(nRet, 1)
-	Msg2Player("¹§Ï²ÄãÒÑ³É¹¦½»²¢»ñµÃ5´Î150¼¼ÄÜÇÒ18¼¶ÒÔÏÂ»»ÐÞÁ¶Öµ")
+	Msg2Player("Chóc mõng b¹n ®· n¹p thµnh c«ng vµ nhËn ®­îc 5 lÇn ®æi ®iÓm tu luyÖn ®èi víi Skill 150 cã cÊp d­íi 18")
 end

@@ -2,20 +2,20 @@ Include("\\script\\battles\\battlehead.lua")
 BALANCE_MAMCOUNT = 5
 strbattleinfo=
 {
-	"¾üĞè¹Ù£ºËÎ½ğ´óÕ½ÓĞÒÔÏÂ¼¸ÖÖÄ£Ê½¹æÔò£¬ÄúÏëÒªÁË½â¡­¡­",
-	"ÄãÏëÁË½âÊ²Ã´ÄØ£¿",
-	"ËÎ½ğ´óÕ½Ïà¹ØµÀ¾ß/info_sjthing",
-	"ËÎ½ğ»ı·ÖµÄ»ñµÃ/info_adduppoint2",--°æµ÷ÓÃinfo_adduppoint2
-	"ÔõÑù²é¿´¼´Ê±Õ½±¨/info_reportface",
-	"ËÎ½ğÕ½³¡µÄ×¢ÒâÊÂÏî/info_note",
-	"ÎÒ¶¼ÖªµÀÁË£¬Ğ»Ğ»£¡/cancel",
-	"¼´Ê±Õ½±¨½çÃæËµÃ÷£ºÍæ¼Ò´¦ÓÚËÎ½ğÕ½³¡Ê±£¬¿ÉÒÔÊ¹ÓÃ¡«¼ü£¨tab¼üÉÏÃæµÄÄÇ¸ö¼ü£©´ò¿ªºÍ¹Ø±Õ¼´Ê±Õ½±¨½çÃæ£¬Íæ¼Ò¿ÉÒÔËæÊ±ÔÚÕâ¸ö½çÃæ¿´µ½×Ô¼ººÍÇ°10ÃûÍæ¼ÒµÄÏêÏ¸Õ½±¨¡£",--¼´Ê±Õ½±¨½çÃæ
+	"Tèng Kim cã nh÷ng h×nh thøc tham chiÕn sau, ng­¬i muèn t×m hiÓu……",
+	"Ng­¬i muèn hái g×?",
+	"C¸c ®¹o cô liªn quan/info_sjthing",
+	"§iÓm tİch lòy /info_adduppoint2",--°æµ÷ÓÃinfo_adduppoint2
+	"Lµm sao ®Ó theo dâi tin tøc chiÕn tr­êng/info_reportface",
+	"Nh÷ng ®iÓm cÇn chó ı./info_note",
+	"Ta ®· biÕt hÕt råi!/cancel",
+	"C¸ch xem tin tøc chiÕn sù: trong lóc tham chiÕn, cã thÓ dïng phİm ~ (phİm trªn phİm Tab) ®Ó bËt t¾t b¸o c¸o tãm t¾t, th«ng qua ®ã cã thÓ biÕt ®­îc thµnh tİch cña chİnh m×nh, vµ th«ng tin chiÕn tİch cña 10 ng­êi ch¬i cao nhÊt.",--¼´Ê±Õ½±¨½çÃæ
 --	"Íæ¼ÒËÎ½ğĞÅÏ¢½çÃæËµÃ÷£ºµã»÷F12¼ü£¬Íæ¼Ò¿ÉÒÔ¿´µ½×Ô¼ºÔÚËÎ½ğ´óÕ½ÖĞµÄÏêÏ¸Í³¼ÆĞÅÏ¢¡£µ±Ç°Õ½ÒÛĞÅÏ¢¡ª¡ªÍæ¼ÒÔÚµ±Ç°Õ½ÒÛÖÜÆÚÄÚµÄ¾ßÌå±íÏÖ£»ÀúÊ·ĞÅÏ¢¡ª¡ªÍæ¼ÒËù²Î¼ÓµÄËùÓĞÕ½ÒÛµÄÀÛ¼ÆĞÅÏ¢¡£<enter>Crtl+Êó±êÓÒ¼üµã»÷ÆäËûÍæ¼Ò£¬ÔÙÑ¡ÔñËÎ½ğĞÅÏ¢£¬¿ÉÒÔ²é¿´ÆäËûÍæ¼ÒµÄËÎ½ğ´óÕ½ĞÅÏ¢¡£"--Íæ¼ÒËÎ½ğĞÅÏ¢½çÃæ
 }
 
 
 function help_sjbattle()--Á½ÖÖ¶áÆì¹æÔò
-	Say(strbattleinfo[1],5,"¹Ì¶¨¶áÆìÄ£Ê½¹æÔò/info_fixation1","Ëæ»ú¶áÆìÄ£Ê½¹æÔò/info_random1","ÔªË§±£ÎÀÄ£Ê½¹æÔò/info_marshal","ËÎ½ğ´óÕ½ÆäËûÏà¹ØĞÅÏ¢/help_more","ÎÒÒÑ¾­ºÜÇå³şÁË£¬Ğ»Ğ»£¡/cancel")
+	Say(strbattleinfo[1],5,"Qui t¾c ®o¹t kú (cè ®Şnh) /info_fixation1","Qui t¾c ®o¹t kú (ngÉu nhiªn) /info_random1","Qui t¾c b¶o vÖ Nguyªn So¸i/info_marshal","Qui t¾c Tèng Kim §¹i ChiÕn/help_more","Ta hiÓu råi, c¶m ¬n!/cancel")
 end
 
 
@@ -24,167 +24,167 @@ function help_more()--ËÎ½ğ´óÕ½ÆäËûÏà¹ØĞÅÏ¢
 end
 
 function info_book()--ËÎ½ğÚ¯Êé
-	Say("ËÎ½ğÚ¯Êé£ºÊ¹ÓÃËÎ½ğÚ¯Êé¿ÉÒÔÖ±½Ó½øÈëËÎ½ğ´óÕ½±¨Ãûµã¡£Íæ¼Ò¿ÉÒÔÔÚÆß´ó³ÇÊĞµÄÔÓ»õµê¹ºÂò£¬¼Û¸ñ<color=yellow>5000<color>Á½¡£",2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say("Tèng Kim ChiÕu Th­: Sö dông sÏ ®­îc ®­a th¼ng ®Õn ®Şa ®iÓm b¸o danh. Cã thÓ mua t¹i tiÖm t¹p hãa trong c¸c thµnh, gi¸ <color=yellow>5000<color>l­îng",2,"T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 function info_flag()
-	Say("Æì±ê£ºËÎ½ğ´óÕ½¶áÆìÄ£Ê½±Ø±¸ÎïÆ·¡£³ÖÆìÍæ¼ÒÎ´µ½´ï²åÆìÄ¿µÄµØÊ±Ê¹ÓÃ»áÌáÊ¾Ä¿µÄµØ×ø±ê£¬Æì±ê²»»áÏûºÄ£»µ½´ïºóÊ¹ÓÃ±ã³É¹¦µÄ´ï³É¶áÆì£¬²¢ÇÒÏûºÄµôÆì±ê¡£Íæ¼ÒĞèÒªÔÚËÎ½ğÕ½³¡ÄÚµÄ¾üĞè¹Ù´¦¹ºÂò£¬¼Û¸ñ<color=yellow>5000<color>Á½¡£",2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢¡£/help_more","¶÷£¬ÎÒÖªµÀÁË¡£/cancel")
+	Say("Cê hiÖu: Sau khi di chuyÓn So¸i kú ®Õn ®İch, nhÊp vµo Cê hiÖu ®Ó c¾m cê. Lóc ®ang di chuyÓn cã thÓ nhÊp vµo Cê hiÖu ®Ó x¸c ®Şnh l¹i täa ®é. Mçi Cê hiÖu chØ dïng ®­îc 1 lÇn. Cã thÓ mua ë Qu©n Nhu Quan, gi¸ <color=yellow>5000<color>l­îng.",2,"T×m hiÓu c¸c th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 function info_sjthing()
-	Say("ËÎ½ğ´óÕ½Ïà¹ØµÀ¾ß£º",3,"Æì±ê/info_flag","ËÎ½ğÚ¯Êé/info_book","Ğ»Ğ»£¬ÎÒÖªµÀÁË¡£/cancel")
+	Say("§¹o cô Tèng Kim ®¹i chiÕn:",3,"Cê hiÖu /info_flag","Tèng Kim ChiÕu Th­ /info_book","Ta hiÓu råi!/cancel")
 end
 
 stradduppointhelp=
 {
 --	"»ı·ÖËµÃ÷£ºÍæ¼Ò»ñµÃµÄ»ı·Ö²»½öÈ¡¾öÓÚ×Ô¼ºÔÚÕ½³¡ÖĞµÄ¹¦¼¨£¬»¹È¡¾öÓÚÕ½ÓÑµÄ±íÏÖºÍË«·½µÄÈËÊı¡£Ã¿¸öÈË»ñµÃµÄ»ı·Ö¶¼»á·Ö³É¸ø×Ô¼ºµÄÕ½ÓÑÒ»²¿·Ö¡£",
-	"Íæ¼ÒÔÚËÎ½ğ´óÕ½ÖĞÉ±ËÀ¸÷¼¶±ğNPC¡¢PKÍæ¼Ò¡¢Á¬Õ¶¡¢»ñÈ¡±¦Îï¡¢Íê³É¶áÆì¡¢È¡µÃÕ½ÕùµÄÊ¤Àû¶¼½«»ñµÃÏàÓ¦µÄ»ı·Ö½±Àø¡£<enter>Íæ¼Ò¿ÉÒÔÔÚËÎ½ğ´óÕ½Î´¿ªÕ½Ê±£¬ÔÚËÎ½ğ´óÕ½±¨Ãûµã¾üĞè¹Ù´¦ÓÃ»ı·Ö¹ºÂòËÎ½ğ´óÕ½×¨ÓÃµÀ¾ß¡£ÕıÊ½¿ªÕ½ºó²»ÄÜ¹ºÂòËÎ½ğ×¨ÓÃÎïÆ·¡£",
-	"Ë«·½µÄÈËÊıÊÇÆ½ºâ»ı·ÖµÄÖØÒªÒòËØ£¬ÈËÊı¶àµÄÒ»·½»ñµÃµÄ»ı·Ö»á°´±ÈÀıË¥¼õ¡£Ò²¾ÍÊÇËµËäÈ»ÈËÊıÕ¼ÓÅ·½ÔÚÕ½³¡ÉÏ»áÓĞÒ»¶¨µÄÓÅÊÆ£¬µ«»ñµÃµÄ»ı·Ö¿ÉÄÜ»á±È½ÏµÍ¡£",
-	"ÓĞĞ§Á¬Õ¶»ı·Ö£ºÍæ¼ÒË«·½¹ÙÏÎÏà²îÈı¼¶ÒÔÄÚ¼ÆÈëÓĞĞ§Á¬Õ¶¡£Èı´ÎÓĞĞ§Á¬Õ¶¿ÉÒÔ»ñµÃÒ»¶¨µÄ»ı·Ö½±Àø¡£",
-	"Íæ¼ÒÔÚÕ½¶·¹ı³ÌÖĞ£¬¸ù¾İµ±Ç°»ñµÃµÄ»ı·Ö¶àÉÙÒ²¿ÉÒÔ»ñµÃ²»Í¬µÄÍ·ÏÎ¡£Íæ¼Ò½øÈëËÎ½ğÊ±£¬¹ÙÏÎÎªÊ¿±ø£¬»ı·Ö´ïµ½1000·Ö¹ÙÏÎÌáÉıÎªĞ£Î¾£¬»ı·Ö´ïµ½3000·Ö¹ÙÏÎÌáÉıÎªÍ³Áì£¬»ı·Ö´ïµ½6000·Ö¹ÙÏÎÌáÉıÎª¸±½«£¬»ı·Ö´ïµ½10000·Ö¹ÙÏÎÌáÉıÎª´ó½«¡£",
-	"Õ½¶·½áÊøºó£¬¸ù¾İÕ½³¡µÄÊ¤¸º£¬Íæ¼Ò»á»ñµÃ²»Í¬µÄ½±Àø¡£»ñÊ¤·½Ã¿ÈËÉùÍû¼Ó3µã£¬²¢ÇÒ»ñµÃËæ»úµÀ¾ßÒ»¼şºÍ1000µã¶îÍâ»ı·Ö½±Àø£»Õ½°Ü·½Ã¿ÈË»ñµÃ300µã»ı·Ö£»ÈôÕ½Æ½£¬Ë«·½Ã¿ÈË»ñµÃ500µã»ı·Ö¡£µ«»ı·Ö½±Àø»á¸ù¾İË«·½ÈËÊı¶àÉÙ¶øÓĞ¼Ó³É»òË¥¼õ¡£",
+	"Ng­êi ch¬i giÕt ®­îc c¸c lo¹i NPC kh¸c nhau (ph©n theo cÊp bËc) , hoÆc PK th¾ng qu©n ®Şch (lµ ng­êi ch¬i) , PK th¾ng liªn tiÕp, ®o¹t b¸u vËt, hoµn thµnh nhiÖm vô ®o¹t kú, phe giµnh ®­îc chiÕn th¾ng cuèi cïng sÏ ®­îc céng thªm ®iÓm tİch lòy. <enter>Khi ch­a khai chiÕn, cã thÓ dïng ®iÓm tİch lòy ®Ó mua c¸c ®¹o cô chuyªn dông. Sau khi khai chiÕn, kh«ng thÓ tiÕn hµnh giao dŞch. ",
+	"Qu©n sè lµ mét ­u thÕ trong chiÕn tr­êng, nh­ng th¾ng b¹i l¹i c¨n cø vµo ®iÓm tİch lòy.",
+	"Liªn tr¶m: Khi PK th¾ng qu©n ®Şch 3 lÇn liªn tiÕp (®èi ph­¬ng thÊp h¬n m×nh kh«ng qu¸ 3 cÊp) sÏ ®­îc tİnh thªm ®iÓm tİch lòy.",
+	"Khi vµo tham chiÕn, dùa theo tæng ®iÓm tİch lòy, trªn ®Çu ng­êi ch¬i sÏ xuÊt hiÖn t­íc hiÖu. ThÊp nhÊt lµ Binh sÜ; 1000 ®iÓm = HiÖu óy; 3000 ®iÓm = Thèng LÜnh; 6000 ®iÓm = Phã t­íng; 10 000 ®iÓm = §¹i T­íng.",
+	"Sau khi kÕt thóc, phe th¾ng mçi ng­êi t¨ng 3 ®iÓm danh väng vµ 1000 ®iÓm tİch lòy + 1 phÇn quµ ngÉu nhiªn; phe thua mçi ng­êi 300 ®iÓm. NÕu hßa nhau, mçi bªn ®­îc th­ëng 500 ®iÓm/ng­êi. §iÓm th­ëng cßn c¨n cø vµo lùc l­îng cña 2 bªn.Bªn nµo İt ng­êi ®iÓm th­ëng sÏ cao h¬n.",
 	
 }
 
 function info_adduppoint2()--»ı·Ö»ñµÃ
-	Say(stradduppointhelp[1],3,"ÏÂÒ»Ò³/info_adduppoint2_1","ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(stradduppointhelp[1],3,"Trang kÕ /info_adduppoint2_1","T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 function info_adduppoint2_1()
-	Say(stradduppointhelp[2],3,"ÏÂÒ»Ò³/info_adduppoint2_2","ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(stradduppointhelp[2],3,"Trang kÕ /info_adduppoint2_2","T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 function info_adduppoint2_2()
-	Say(stradduppointhelp[3],3,"ÏÂÒ»Ò³/info_adduppoint2_3","ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(stradduppointhelp[3],3,"Trang kÕ /info_adduppoint2_3","T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 function info_adduppoint2_3()
-	Say(stradduppointhelp[4],3,"ÏÂÒ»Ò³/info_adduppoint2_4","ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(stradduppointhelp[4],3,"Trang kÕ /info_adduppoint2_4","T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 function info_adduppoint2_4()
-	Say(stradduppointhelp[5],2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(stradduppointhelp[5],2,"T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 
 
 function info_reportface()--¼´Ê±Õ½±¨½çÃæ
-	Say(strbattleinfo[8],2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strbattleinfo[8],2,"T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 
 strinfo_note=
 {
-	"×¢ÒâÊÂÏî£ºÍæ¼Ò½øÈëËÎ½ğÕ½³¡Ê±£¬»á´¦ÓÚËÎ½ğË«·½µÄºóÓªÖĞ¡£Íæ¼Ò¿ÉÒÔ´ÓºóÓª½øÈë´óÓª£¬µ«ÔÚÕıÊ½¿ªÕ½Ç°²»ÄÜÀë¿ª´óÓª·¶Î§¡£ÕıÊ½¿ªÕ½ºó£¬Íæ¼Ò¿ÉÒÔ½øÈëÒ°ÍâÕ½³¡£¬Ò²¿ÉÒÔ´Ó´óÓª·µ»ØºóÓª£¬µ«²»ÄÜ½øÈëµĞ·½µÄºóÓª¡£",--ÔÚºóÓªµÄÍæ¼Ò²»»á¼ÇÈë»ı·ÖÍ³¼Æ¡£",
-	"µ±Íæ¼Ò¶áµÃË§Æì´¦ÓÚ³ÖÆì×´Ì¬Ê±£¬²»ÄÜ½øÈëºóÓª¹ºÂòÒ©Æ·ºÍ´ò¿ª´¢ÎïÏä¡£"--<enter>Òª×¢ÒâÔÚËÎ½ğ´óÕ½½áÊøÇ°5·ÖÖÓ£¬»á¹Ø±ÕËÎ½ğ´óÕ½Õ½³¡Èë¿ÚºÍÕ½³¡ÖĞµÄºóÓª³öÈë¿Ú¡£´¦ÓÚºóÓªµÄÍæ¼Ò¿ÉÒÔÏÂÏßÀë¿ªÕ½³¡£¬µ«ÊÇÀë¿ªÕ½³¡µÄÍæ¼Ò²»»á¼ÇÈë»ı·ÖÍ³¼Æ¡£",
+	"Chó ı: sau khi b¸o danh sÏ ®­îc ®­a vµo hËu doanh. Tõ ®ã cã thÓ ®Õn hËu doanh. Nh­ng tr­íc khi khai chiÕn kh«ng ®­îc rêi khái ®¹i doanh. Sau khi khai chiÕn cã thÓ tïy ı x«ng ra chiÕn tuyÕn, còng cã thÓ tïy ı quay l¹i hËu doanh. Nh­ng kh«ng thÓ x©m nhËp vµo hËu donah cña ®èi ph­¬ng.",--ÔÚºóÓªµÄÍæ¼Ò²»»á¼ÇÈë»ı·ÖÍ³¼Æ¡£",
+	"Khi ng­êi ch¬i ®ang ë trong tr¹ng th¸i gi÷ So¸i Kú, sÏ kh«ng thÓ ®i ng­îc l¹i hËu doanh mua d­îc hoÆc më r­¬ng"--<enter>Òª×¢ÒâÔÚËÎ½ğ´óÕ½½áÊøÇ°5·ÖÖÓ£¬»á¹Ø±ÕËÎ½ğ´óÕ½Õ½³¡Èë¿ÚºÍÕ½³¡ÖĞµÄºóÓª³öÈë¿Ú¡£´¦ÓÚºóÓªµÄÍæ¼Ò¿ÉÒÔÏÂÏßÀë¿ªÕ½³¡£¬µ«ÊÇÀë¿ªÕ½³¡µÄÍæ¼Ò²»»á¼ÇÈë»ı·ÖÍ³¼Æ¡£",
 }
 function info_note()
-	Say(strinfo_note[1],1,"ÏÂÒ»Ò³/info_note1")	
+	Say(strinfo_note[1],1,"Trang kÕ /info_note1")	
 end
 
 function info_note1()
-	Say(strinfo_note[2],2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_more","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strinfo_note[2],2,"T×m hiÓu th«ng tin kh¸c/help_more","Ta hiÓu råi!/cancel")
 end
 
 strfixationhelp=
 {
-	"¹Ì¶¨¶áÆìÄ£Ê½¹æÔò£ºËÎ½ğ´óÕ½¿ªÕ½Ê±£¬Ë«·½µÄµÚÒ»ÃæË§Æì£¨Îª¾ÙÆìÊ¿±øĞÎÏó£¬ÆìÉÏĞ´×Å¡°ËÎ¡±»ò¡°½ğ¡±µÄ´ó×Ö£©»áÔÚ¸÷×ÔµÄ´óÓª·¶Î§ÄÚ³öÏÖ¡£Íæ¼ÒĞèÒªµã»÷±¾·½µÄ¾ÙÆìÊ¿±ø£¬±äÉíÎª³ÖÆìÍæ¼Ò£¬Í¬Ê±»ñÖªÎ»ÓÚ¶Ô·½´óÓªÄÚµÄÄ¿µÄµØ×ø±ê£¬²¢ÔÚĞ¡µØÍ¼³öÏÖÖ¸Ê¾Ïß¡£",
-	"Íæ¼Ò´ËºóÒ²¿ÉÒÔÍ¨¹ıÊ¹ÓÃ<color=red>Æì±ê<color>È·ÈÏÄ¿µÄµØ×ø±ê¡£µ±¸ÃÍæ¼Ò³É¹¦µ½´ï¶Ô·½´óÓªÖĞµÄÄ¿µÄµØ£¬Ê¹ÓÃ<color=red>Æì±ê<color>±ã³É¹¦´ï³É¶áÆì¡£µ±³ÖÆìÍæ¼ÒÔÚÍ¾ÖĞ±»¶Ô·½É±ËÀ£¬Ë§Æì»áÍ£ÁôÔÚ¸ÃÍæ¼ÒËÀÍöµØµã£¬¶áÆì·½ÆäËûÍæ¼Ò¿ÉÒÔ¼ÌĞø¶áÆì¡£",
-	"µ±±¾·½Ë§Æì±»³É¹¦ËÍ´ï¶Ô·½´óÓª£¬Ôò»áÔÚ±¾·½´óÓª·¶Î§ÄÚÖØĞÂÉú³ÉÒ»ÃæĞÂµÄË§Æì¡£×îºóÅĞ¶¨Ê¤¸ºµÄÌõ¼ş¾ÍÊÇË«·½µÄ¶áÆìÊıÁ¿¡£"
+	"Ph­¬ng thøc ®o¹t cê cè ®Şnh: Sau khi khai chiÕn, song ph­¬ng sÏ ngÉu nhiªn xuÊt hiÖn 1 So¸i Kú (h×nh d¹ng binh sÜ cÇm cê) , trªn viÕt 1 ch÷ Tèng hoÆc Kim. NhÊp vµo So¸i Kú ng­êi ch¬i sÏ biÕn thµnh gièng nh­ NPC, ®ång thêi hÖ thèng sÏ th«ng b¸o täa ®é cÇn ®Õn (Cã thÓ xem täa ®é trªn b¶n ®å nhá!) ",
+	"Còng cã thÓ nhÊp vµo <color=red>Cê hiÖu<color> ®Ó xem täa ®é. Sau khi ®· ®Õn ®İch, nhÊp vµo <color=red>Cê hiÖu<color> ®Ó c¾m So¸i Kú.. NÕu trªn ®­êng ®i bŞ träng th­¬ng, cê sÏ ®­îc c¾m t¹i n¬i ®ã, ng­êi kh¸c cã thÓ tiÕp tôc chuyÓn cê vÒ ®İch.",
+	"Sau khi So¸i Kú ®· chuyÓn ®Õn ®İch, trong doanh tr¹i phe m×nh sÏ xuÊt hiÖn 1 So¸i Kú míi. Phe chuyÓn nhiÒu cê nhÊt sÏ giµnh th¾ng lîi chung cuéc"
 }
 function info_fixation1()--¹Ì¶¨¶áÆì¹æÔò1
-	Say(strfixationhelp[1],1,"ÏÂÒ»Ò³/info_fixation2")
+	Say(strfixationhelp[1],1,"Trang kÕ /info_fixation2")
 end
 
 function info_fixation2()--¹Ì¶¨¶áÆì¹æÔò2
-	Say(strfixationhelp[2],1,"ÏÂÒ»Ò³/info_fixation3")
+	Say(strfixationhelp[2],1,"Trang kÕ /info_fixation3")
 end
 
 function info_fixation3()
-	Say(strfixationhelp[3],2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_sjbattle","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strfixationhelp[3],2,"T×m hiÓu th«ng tin kh¸c/help_sjbattle","Ta hiÓu råi!/cancel")
 end
 
 
 strrandomhelp=
 {
-	"Ëæ»ú¶áÆìÄ£Ê½¹æÔò£ºËÎ½ğ´óÕ½¿ªÕ½Ê±£¬ÔÚ´óÓªºÍÒ°ÍâÕ½³¡£¬»áËæ»ú³öÏÖÈô¸ÉÃæË§Æì£¨Îª¾ÙÆìÊ¿±øĞÎÏó£¬ÆìÉÏĞ´×Å¡°Ë§¡±×Ö£©£¬Íæ¼Òµã»÷¸Ã¾ÙÆìÊ¿±ø£¬±äÉíÎª³ÖÆìÍæ¼Ò£¬Í¬Ê±»ñÖªÄ¿µÄµØ×ø±ê£¬²¢ÔÚĞ¡µØÍ¼³öÏÖÖ¸Ê¾Ïß¡£Íæ¼Ò´ËºóÒ²¿ÉÒÔÍ¨¹ıÊ¹ÓÃ<color=red>Æì±ê<color>È·ÈÏÄ¿µÄµØ×ø±ê¡£",
-	"µ±¸ÃÍæ¼Ò³É¹¦µ½´ïÄ¿µÄµØ£¬Ê¹ÓÃ<color=red>Æì±ê<color>±ã³É¹¦´ï³É¶áÆì¡£µ±³ÖÆìÍæ¼ÒÔÚÍ¾ÖĞ±»¶Ô·½É±ËÀ£¬Ë§Æì»áÍ£ÁôÔÚ¸ÃÍæ¼ÒËÀÍöµØµã£¬ÆäËûÍæ¼Ò¿ÉÒÔ¼ÌĞø¶áÆì¡£×îºóÅĞ¶¨Ê¤¸ºµÄÌõ¼ş¾ÍÊÇË«·½µÄ¶áÆìÊıÁ¿¡£",
+	"Ph­¬ng thøc ®o¹t cê ngÉu nhiªn: Sau khi khai chiÕn, trong ®¹i doanh vµ tiÒn tuyÕn sÏ ngÉu nhiªn xuÊt hiÖn So¸i Kú, (h×nh d¹ng binh sÜ cÇm cê) , trªn viÕt 1 ch÷ hoÆc Kim. NhÊp vµo So¸i Kú ng­êi ch¬i sÏ biÕn thµnh gièng nh­ NPC, ®ång thêi hÖ thèng sÏ th«ng b¸o täa ®é cÇn ®Õn (Cã thÓ xem täa ®é trªn b¶n ®å nhá!) . Còng cã thÓ nhÊp ph¶i vµo <color=red>Cê hiÖu<color> ®Ó xem täa ®é.",
+	"Sau khi ®· ®Õn ®İch,  nhÊp vµo <color=red>Cê hiÖu<color> ®Ó c¾m So¸i Kú. NÕu trªn ®­êng ®i bŞ träng th­¬ng, cê sÏ ®­îc c¾m t¹i n¬i ®ã, ng­êi kh¸c cã thÓ tiÕp tôc chuyÓn cê vÒ ®İch.",
 }
 function info_random1()--Ëæ»ú¶áÆì¹æÔò1
-	Say(strrandomhelp[1],1,"ÏÂÒ»Ò³/info_random2")
+	Say(strrandomhelp[1],1,"Trang kÕ /info_random2")
 end
 
 function info_random2()
-	Say(strrandomhelp[2],2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_sjbattle","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strrandomhelp[2],2,"T×m hiÓu th«ng tin kh¸c/help_sjbattle","Ta hiÓu råi!/cancel")
 end
 
-strmarshalhelp="ÔªË§±£ÎÀÄ£Ê½¹æÔò£ºËÎ½ğÕıÊ½¿ªÕ½ºó£¬ËÎ¡¢½ğË«·½Íæ¼Ò¼´¿É³åÏòÇ°ÏßÉ±µĞ¡£¿ªÕ½ºó°ëĞ¡Ê±×Ü»ı·ÖĞ¡µÄÒ»·½²úÉúÔªË§£¬ÁíÒ»·½µÄÔªË§ÓÚÊ®·ÖÖÓºó²úÉú£»Èô¿ªÕ½ºó°ëĞ¡Ê±Ë«·½×Ü»ı·ÖÏàµÈÔòÍ¬Ê±²úÉúË«·½ÔªË§¡£ÕâÊ±ºòµÄÄ¿±êÊÇ¶Ô·½µÄÔªË§£¬Ë­É±ËÀ¶Ô·½µÄÔªË§¼´¿É»ñµÃÕ½ÕùµÄÊ¤Àû¡£Èç¹ûÔÚÕ½ÒÛ½áÊøÃ»ÓĞÉ±ËÀ¶Ô·½µÄÔªË§£¬Ôò¸ù¾İË«·½×Ü»ı·ÖÅĞ¶ÏÊ¤¸º¡£"
+strmarshalhelp="Ph­¬ng thøc b¶o vÖ Nguyªn So¸i: Nöa giê sau khi khai chiÕn,  t¹i Doanh tr¹i phe İt ®iÓm tİch lòy nhÊt sÏ xuÊt hiÖn Nguyªn So¸i,  10 phót sau Nguyªn so¸i phe kia còng sÏ xuÊt hiÖn. NÕu ®iÓm tİch lòy b»ng nhau th× 2 Nguyªn So¸i sÏ cïng xuÊt hiÖn. Môc tiªu lóc nµy lµ tiªu diÖt Nguyªn So¸i phe ®Şch. KÕt thóc chiÕn trËn,  nÕu 2 Nguyªn so¸i vÉn cßn th× sÏ c¨n cø vµo ®iÓm tİch lòy cña 2 bªn ®Õn ph©n th¾ng b¹i."
 
 function info_marshal()
-	Say(strmarshalhelp, 2, "ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/help_sjbattle","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strmarshalhelp, 2, "T×m hiÓu th«ng tin kh¸c/help_sjbattle","Ta hiÓu råi!/cancel")
 end
 
 TIMELIST = "10:50,12:50,14:50,16:50,18:50,20:50,22:50"
 strbt_info=
 {
-	"ËÎ½ğ´óÕ½Õ½³¡Î»ÖÃ/bt_infoaddress",
-	"ËÎ½ğ´óÕ½¿ª·ÅÊ±¼ä/bt_infotime",
-	"ËÎ½ğ´óÕ½±¨ÃûÌõ¼ş/bt_infoneed",
-	"ËÎ½ğ´óÕ½±¨Ãû¹æÔò/bt_infobaomingrule",
-	"ËÎ½ğ´óÕ½±ØĞëÎïÆ·/bt_infoflag",
-	"ËÎ½ğ´óÕ½Ïà¹ØµÀ¾ß/bt_infothing",
-	"ËÎ½ğ´óÕ½±¨ÃûµãĞÂÔö¹¦ÄÜ/bt_infonew",
-	"ËÎ½ğ´óÕ½³¡Î»ÓÚÏåÑôÓëÖìÏÉÕòÖ®¼ä¡£²ÎÕ½Õß¿ÉÒÔ×ÔÓÉÑ¡ÔñÇ°ÍùËÎ½ğÕ½³¡µÄ2¸öÈë¿Úµã±¨Ãû£¬ËÎ·½Èë¿ÚµãÔÚÏåÑô±±Ãæ£¬½ğ·½Èë¿ÚµãÔÚÖìÏÉÕòµÄÄÏÃæ¡£",
-	format("ËÎ½ğÕ½³¡ÕıÊ½±¨ÃûÔÚ%s. ±¨ÃûÊ±¼äÎª%d ·ÖÖÓ, ÏµÍ³»áÁ¬ĞøÍ¨±¨. <enter>Õ½¶·Ê±¼äÎª%d ·ÖÖÓ, Ã¿%d ·ÖÖÓÏµÍ³»á¹«²¼Çé¿ö. Èç¹ûµ½ÁË±¨ÃûÊ±¼ä£¬²Î¼ÓÈËÊı»¹²»¹», Íæ¼ÒÒÀÈ»¿ÉÒÔ¼ÌĞø±¨Ãû.",TIMELIST, BAOMING_TIME, FIGHTING_TIME, ANNOUNCE_TIME),
+	"VŞ trİ chiÕn tr­êng/bt_infoaddress",
+	"Thêi gian khai chiÕn/bt_infotime",
+	"§iÒu kiÖn b¸o danh/bt_infoneed",
+	"Quy t¸c b¸o danh/bt_infobaomingrule",
+	"C¸c vËt phÈm cÇn thiÕt/bt_infoflag",
+	"C¸c ®¹o cô liªn quan/bt_infothing",
+	"C¸c chøc n¨ng míi khi b¸o danh?/bt_infonew",
+	"§iÓm b¸o danh phe Tèng n»m ë h­íng B¾c T­¬ng D­¬ng, cña phe Kim lµ ë h­íng Nam Chu Tiªn trÊn",
+	format("ChiÕn tr­êng Tèng Kim chİnh thøc b¸o danh lóc %s. Thêi gian b¸o danh lµ %d phót, hÖ thèng sÏ liªn tôc th«ng b¸o. <enter>Thêi gian chiÕn ®Êu lµ %d phót, cø mçi %d phót hÖ thèng sÏ c«ng b¸o t×nh h×nh. NÕu hÕt thêi gian b¸o danh sè ng­êi tham gia vÉn ch­a ®ñ, ng­êi ch¬i vÉn cã thÓ tiÕp tôc b¸o danh.",TIMELIST, BAOMING_TIME, FIGHTING_TIME, ANNOUNCE_TIME),
 --	"ËÎ½ğÕ½³¡½«ÓÚÃ¿Ìì11£º00¡¢13£º00¡¢15£º00¡¢17£º00¡¢19£º00¡¢21£º00¡¢23£º00×¼Ê±¿ª·Å±¨Ãû£¨ÏµÍ³¹ã²¥¹ö¶¯Í¨Öª£©£¬±¨ÃûÊ±¼äÎª30·ÖÖÓ¡£<enter>±¨Ãû½áÊøºóÕıÊ½¿ªÕ½£¬Õ½¶·Ê±¼äÎª60·ÖÖÓ£¬Ã¿20Ãë¹«²¼Ò»´ÎÕ½¿ö¡£±¨Ãû½áÊøºóÈô²ÎÕ½ÈËÊıÎ´´ïµ½ÉÏÏŞ£¬Ôò¿É¼ÌĞø±¨Ãû½øÈëÕ½³¡¡£",
-	"Íæ¼ÒĞè´ïµ½»ò³¬¹ı<color=yellow>40<color>¼¶²Å¿É±¨Ãû¡£±¨ÃûÊ±Ğè½»ÄÉ±¨Ãû·Ñ<color=yellow>3000<color>Á½¡£ËÎ½ğ´óÕ½·ÖÈı¸öµÈ¼¶£º³õ¼¶Õ½³¡£¬40¼¶¡«59¼¶£»ÖĞ¼¶Õ½³¡£¬60¼¶¡«89¼¶£»¸ß¼¶Õ½³¡£¬90¼¶ÒÔÉÏ¡£²»Í¬µÈ¼¶Íæ¼Ò»á½øÈëÏàÓ¦µÈ¼¶Õ½³¡¡£",
-	"±¨ÃûÈËÊıÉÏÏŞ£º<color=yellow>400<color>ÈË¡£Õ½ÒÛ¿ªÊ¼ºóÈô²ÎÕ½ÈËÊıÎ´´ïµ½ÉÏÏŞ£¬Ôò¿É¼ÌĞø±¨Ãû½øÈëÕ½³¡¡£µ«ÊÇ£¬Ò»·½Èç¹û³¬¹ıÁíÒ»·½<color=yellow>"..BALANCE_MAMCOUNT.."ÈË<color>£¬ÔòÍæ¼Ò²»ÄÜ¼ÌĞø±¨Ãû²Î¼Ó¸Ã·½£¬ĞëµÈÈËÊı²îĞ¡ÓÚ<color=yellow>"..BALANCE_MAMCOUNT.."ÈË<color>²Å¿É¼ÌĞø±¨Ãû¸Ã·½¡£",
-	"±¨Ãû¹æÔò£ºÔÚĞÂÒ»´ÎÕ½ÒÛÖÜÆÚ£¨Ò»´ÎÕ½ÒÛÀúÊ±Ò»ĞÇÆÚ£©¿ªÊ¼ºóÍæ¼ÒÉÏÒ»ÖÜÕ½ÒÛµÄ»ı·Ö±»ÇåÁã¡£±¨Ãû²Î¼Ó±¾´ÎÕ½¾Öºó²»ÄÜ¸ü»»ÕóÓª£¬ĞëµÈÏÂÒ»³¡Õ½¾Ö¿ªÊ¼ºó¿ÉÒÔÔÙ´ÎÑ¡Ôñ²Î¼ÓÕóÓª¡£",--±¨ÃûÊ±Íæ¼ÒĞèÒªÈ¨ºâË«·½ÈËÊıÒòËØ£¬ÏµÍ³»á×Ô¶¯¸ù¾İË«·½ÈËÊıµÄ¶àÉÙµ÷½Ú»ı·Ö¡£ÈËÊıÕ¼ÓÅ·½µÄ»ı·Ö½«ÓĞË¥¼õ£¬ÈËÊıÁÓÊÆ·½µÄ»ı·Ö½«ÓĞ¼Ó³É¡£",
-	"±¨ÃûµãĞÂÔö¹¦ÄÜ£º½øÈë±¨Ãûµãºó´óÕ½ÕıÊ½¿ªÊ¼ÒÔÇ°,Íæ¼Ò¿ÉÒÔÔÚËÎ½ğ±¨ÃûµãµÄ¾üĞè¹Ù´¦ÓÃËÎ½ğ»ı·Ö¹ºÂòËÎ½ğ×¨ÓÃµÀ¾ß¡£µ«ÊÇ£¬´óÕ½ÆÚ¼ä¾Í²»ÄÜÔÙ¹ºÂòÁË¡£",
+	"Ng­êi ch¬i ph¶i ®¹t ®Õn hoÆc cao h¬n cÊp <color=yellow>40<color> míi cã thÓ b¸o danh, phİ b¸o danh <color=yellow>100000<color> l­îng. Tèng kim ®¹i chiÕn ph©n ra lµm ba cÊp bËc: s¬ cÊp (cÊp 40~79), trung cÊp (cÊp 80~119), cao cÊp (cÊp 120 trë lªn).",
+	"Sè l­îng tèi ®a lµ: <color=yellow>400<color>ng­êi. HÕt thêi gian b¸o danh nÕu vÉn ch­a ®ñ nh©n sè vÉn cã thÓ b¸o danh, nh­ng nÕu mét phe nhiÒu h¬n phe kia <color=yellow>"..BALANCE_MAMCOUNT.."ng­êi<color>, th× sÏ kh«ng thÓ tham gia vµo phe ®ã, cÇn ph¶i İt h¬n phe kia<color=yellow>"..BALANCE_MAMCOUNT.."ng­êi<color> míi ®­îc nhËn thªm.",
+	"Qui t¾c b¸o danh: Thêi gian cña 1 chiÕn dŞch lµ 1 tuÇn. Mçi lÇn më 1 chiÕn dŞch míi, sè ®iÓm tİch lòy cña tuÇn tr­íc sÏ trë vÒ 0. Trän 1 chiÕn dŞch chØ ®­îc tham gia cho 1 phe, muèn thay ®æi, ph¶i ®îi ®Õn tuÇn sau.",--±¨ÃûÊ±Íæ¼ÒĞèÒªÈ¨ºâË«·½ÈËÊıÒòËØ£¬ÏµÍ³»á×Ô¶¯¸ù¾İË«·½ÈËÊıµÄ¶àÉÙµ÷½Ú»ı·Ö¡£ÈËÊıÕ¼ÓÅ·½µÄ»ı·Ö½«ÓĞË¥¼õ£¬ÈËÊıÁÓÊÆ·½µÄ»ı·Ö½«ÓĞ¼Ó³É¡£",
+	"Nh÷ng chøc n¨ng míi: tr­íc khi chİnh thøc khai chiÕn, cã thÓ dïng ®iÓm tİch lòy ®Õn Qu©n Nhu quan ®Ó mua c¸c ®¹o cô chuyªn dông. Sau khi khai chiÕn sÏ kh«ng thÓ mua",
 }
 function bt_onbattleinfo()
-	Say(strbattleinfo[2],9,"ËÎ½ğ´óÕ½ÏêÏ¸¹æÔò/bt_infohelprule",strbt_info[1],strbt_info[2],strbt_info[3],strbt_info[4],strbt_info[5],strbt_info[6],strbt_info[7],"ÎÒºÜÇå³şÁË£¬Ğ»Ğ»£¡/cancel")
+	Say(strbattleinfo[2],9,"Qui t¾c tham chiÕn/bt_infohelprule",strbt_info[1],strbt_info[2],strbt_info[3],strbt_info[4],strbt_info[5],strbt_info[6],strbt_info[7],"Ta hiÓu råi! C¶m ¬n!/cancel")
 end
 
 
 function bt_infoaddress()--ËÎ½ğ´óÕ½³¡Î»ÖÃ
-	Say(strbt_info[8],2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say(strbt_info[8],2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi!/cancel")
 end
 
 function bt_infotime()--ËÎ½ğÊ±¼ä
-	Say(strbt_info[9],2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒ¶¼ÖªµÀÁË/cancel")
+	Say(strbt_info[9],2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi/cancel")
 end
 
 function bt_infoneed()--±¨ÃûĞèÇó
-	Say(strbt_info[10],3,"ÏÂÒ»Ò³/bt_infoneed1","ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒ¶¼ÖªµÀÁË/cancel")
+	Say(strbt_info[10],3,"Trang kÕ /bt_infoneed1","T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi/cancel")
 end
 
 function bt_infoneed1()--±¨ÃûĞèÇó
-	Say(strbt_info[11],2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒ¶¼ÖªµÀÁË/cancel")
+	Say(strbt_info[11],2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi/cancel")
 end
 
 function bt_infobaomingrule()
-	Say(strbt_info[12],2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒ¶¼ÖªµÀÁË/cancel")
+	Say(strbt_info[12],2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi/cancel")
 end
 
 
 function bt_infonew()--±¨ÃûµãĞÂÔö¹¦ÄÜ
-	Say(strbt_info[13],2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒ¶¼ÖªµÀÁË/cancel")
+	Say(strbt_info[13],2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi/cancel")
 end
 
 function bt_infothing()--ËÎ½ğ´óÕ½µÀ¾ß
-	Say("ËÎ½ğ´óÕ½Ïà¹ØµÀ¾ß£º",3,"Æì±ê/bt_infoflag","ËÎ½ğÚ¯Êé/bt_infobook","Ğ»Ğ»£¬ÎÒÖªµÀÁË¡£/cancel")
+	Say("§¹o cô Tèng Kim ®¹i chiÕn:",3,"Cê hiÖu /bt_infoflag","Tèng Kim ChiÕu Th­ /bt_infobook","Ta hiÓu råi!/cancel")
 end
 
 function bt_infobook()--ËÎ½ğÚ¯Êé
-	Say("ËÎ½ğÚ¯Êé£ºÊ¹ÓÃËÎ½ğÚ¯Êé¿ÉÒÔÖ±½Ó½øÈëËÎ½ğ´óÕ½±¨Ãûµã¡£Íæ¼Ò¿ÉÒÔÔÚÆß´ó³ÇÊĞµÄÔÓ»õµê¹ºÂò£¬¼Û¸ñ<color=yellow>5000<color>Á½¡£",2,"ÁË½âÕ½ÒÛÆäËûĞÅÏ¢¡£/bt_onbattleinfo","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say("Tèng Kim ChiÕu Th­: Sö dông sÏ ®­îc ®­a th¼ng ®Õn ®Şa ®iÓm b¸o danh. Cã thÓ mua t¹i tiÖm t¹p hãa trong c¸c thµnh, gi¸ <color=yellow>5000<color>l­îng",2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi!/cancel")
 end
 
 function bt_infoflag()--Æì±ê
-	Say("Æì±ê£ºËÎ½ğ´óÕ½¶áÆìÄ£Ê½±Ø±¸ÎïÆ·¡£³ÖÆìÍæ¼ÒÎ´µ½´ï²åÆìÄ¿µÄµØÊ±Ê¹ÓÃ»áÌáÊ¾Ä¿µÄµØ×ø±ê£¬²»»áÏûºÄÆì±ê£»µ½´ïºóÊ¹ÓÃ±ã³É¹¦µÄ´ï³É¶áÆì£¬²¢ÇÒÏûºÄµôÆì±ê¡£Íæ¼ÒĞèÒªÔÚËÎ½ğÕ½³¡ÄÚµÄ¾üĞè¹Ù´¦¹ºÂòÆì±ê£¬¼Û¸ñ<color=yellow>5000<color>Á½¡£",2,"ÁË½âÆäËûÏêÏ¸ĞÅÏ¢/bt_onbattleinfo","¶÷£¬ÎÒÖªµÀÁË/cancel")
+	Say("Cê hiÖu: Sau khi di chuyÓn So¸i kú ®Õn ®İch, nhÊp vµo Cê hiÖu ®Ó c¾m cê. Lóc ®ang di chuyÓn cã thÓ nhÊp vµo Cê hiÖu ®Ó x¸c ®Şnh l¹i täa ®é. Mçi Cê hiÖu chØ dïng ®­îc 1 lÇn. Cã thÓ mua ë Qu©n Nhu Quan, gi¸ <color=yellow>5000<color>l­îng.",2,"T×m hiÓu th«ng tin kh¸c/bt_onbattleinfo","Ta hiÓu råi!/cancel")
 end
 
 function bt_infohelprule()--Á½ÖÖ¶áÆì¹æÔò
-	Say("ËÎ½ğ´óÕ½ÓĞÒÔÏÂ¼¸ÖÖÄ£Ê½¹æÔò£¬ÄúÏëÒªÁË½â¡­¡­",5,"¹Ì¶¨¶áÆìÄ£Ê½¹æÔò/info_fixation1","Ëæ»ú¶áÆìÄ£Ê½¹æÔò/info_random1","ÔªË§±£ÎÀÄ£Ê½¹æÔò/info_marshal","ËÎ½ğ´óÕ½ÆäËûÏà¹ØĞÅÏ¢/bt_onbattleinfo","ÎÒÒÑ¾­ºÜÇå³şÁË£¬Ğ»Ğ»£¡/cancel")
+	Say("Ng­¬i muèn t×m hiÓu quy t¾c nµo?",5,"Qui t¾c ®o¹t kú (cè ®Şnh) /info_fixation1","Qui t¾c ®o¹t kú (ngÉu nhiªn) /info_random1","Qui t¾c b¶o vÖ Nguyªn So¸i/info_marshal","Qui t¾c Tèng Kim §¹i ChiÕn/bt_onbattleinfo","Ta hiÓu råi, c¶m ¬n!/cancel")
 end
 
 function cancel()

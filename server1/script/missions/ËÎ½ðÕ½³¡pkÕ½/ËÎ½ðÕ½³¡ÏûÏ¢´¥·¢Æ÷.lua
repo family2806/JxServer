@@ -76,7 +76,7 @@ elseif (timestate == 2) then
 		end;
 	end;
 elseif (timestate == 3) then 
-	Msg2MSAll("Õ½ÒÛ½áÊø!");
+	Msg2MSAll("TrËn chiÕn cuèi cïng!");
 	StopMissionTimer(1,1);
 end;
 
@@ -87,13 +87,13 @@ function ReportMemberState(V)
 
 if (V == GO_TIME) then
 	if (GetMSPlayerCount(1,1) <= 10 or GetMSPlayerCount(1,2) <= 10) then
-		AddGlobalCountNews("ËÎ½ğÕ½³¡±¨ÃûÊ±¼äµ½£¬µ«Ä¿Ç°Ë«·½ÈËÊı²»·ûºÏÒªÇó£¬±¾´ÎÕ½¶·È¡Ïû£¡");
+		AddGlobalCountNews("Thêi gian ®¨ng kİ ChiÕn Tr­êng Tèng Kim ®· kÕt thóc, nh­ng sè l­îng binh sÜ hai phe kh«ng ®ñ, cuéc chiÕn nµy bŞ hñy bá!");
 		GiveBackBonus()
 		CloseMission(1)
 		return
 	else
-		AddGlobalCountNews("ËÎ½ğÕ½³¡±¨ÃûÊ±¼äµ½£¬ËÎ½ğÕ½¶·ÒÑÕıÊ½¿ªÊ¼ÁË!",3);
-		logstr = "<#>ËÎ½ğÕ½³¡ÕıÊ½¿ªÊ¼£¬Ë«·½²ÎÕ½ÈËÊıÎª"..GetMSPlayerCount(1,1).."<#>:"..GetMSPlayerCount(1,2);
+		AddGlobalCountNews("Thêi gian ®¨ng kİ ChiÕn Tr­êng Tèng Kim ®· kÕt thóc, trËn chiÕn chİnh thøc b¾t ®Çu!",3);
+		logstr = "ChiÕn Tr­êng Tèng Kim b¾t ®Çu, sè l­îng hai phe"..GetMSPlayerCount(1,1).."<#>:"..GetMSPlayerCount(1,2);
 		WriteLog(logstr)
 		Msg2MSAll(1, logstr)
 		RunMission(1);
@@ -104,7 +104,7 @@ end;
 if (mod(V, 18) == 0) then 
 	RestTime = (GO_TIME - V) * 1800 / GO_TIME;
 	RestMin, RestSec = GetMinAndSec(RestTime);
-	local str1 = "<#>ËÎ½ğ´óÕ½Õı½øÈë±¨Ãû½×¶Î£¬Óû²ÎÕ½ÕßÇë¾¡¿ìÔÚËÎ½ğÕ½³¡Á½Èë¿ÚÖ®Ò»±¨Ãû,±¨ÃûÊ£ÓàÊ±¼ä:"..RestMin.."<#>·Ö¡£²ÎÕ½Ìõ¼ş:µÈ¼¶²»Ğ¡ÓÚ40¼¶£¬±¨Ãû·Ñ3000Á½¡£";
+	local str1 = "ChiÕn tr­êng Tèng Kim ®ang b­íc vµo giai ®o¹n b¸o danh, c¸c nh©n sÜ h·y ®Õn T­¬ng D­¬ng hoÆc Chu TiÕn TrÊn ®Ó ®¨ng kİ tham gia trËn chiÕn, thêi gian cßn l¹i:"..RestMin.." phót.";
 	AddGlobalCountNews(str1, 2);
 end;
 
@@ -129,7 +129,7 @@ function ReportBattle(V)
 	s_result = floor(j_dpk * 1.5 + j_dnpc);
 	j_result = floor(s_dpk * 1.5 + s_dnpc);
 	
-	str1 = "<#>Õ½¶·½×¶Î:Ä¿Ç°ÉËÍöÇé¿ö:ËÎ¾ü"..s_death.."ÈË£¬»ı·Ö"..s_result.."<#>;½ğ±ø"..j_death.."<#>ÈË,»ı·Ö"..j_result.."<#>¡£Ê£ÓàÊ±¼ä:"..RestMin.."<#>·Ö"..RestSec.."<#>Ãë";
+	str1 = "<#>ChiÕn Tr­êng Tèng Kim: th­¬ng vong hiÖn t¹i: Tèng binh "..s_death.." ng­êi, thiÕu "..s_result.."<#>;Kim binh "..j_death.."<#>ng­êi, thiÕu"..j_result.."<#>Thêi gian cßn l¹i:"..RestMin.."<#>phót"..RestSec.."<#>gi©y";
 
 	Msg2MSAll(1, str1);
 

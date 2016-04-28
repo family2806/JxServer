@@ -7,6 +7,6 @@ function main(sel)
 	if ( Uworld1055 ~= 0 ) then
 		branch_aniu()
 	else
-Say("°¢Å££ºÈËËµÃ×Ö¬µÄÅ®ÍŞ×îÆ¯ÁÁ£¬Ò²²»ÖªÊÇÕæÊÇ¼Ù£¬°³Õ¦¾ÍÃ»ÅöÉÏÒ»¸ö°ë¸öÄØ£¿",0)
+Say("Ng­êi ta nãi N÷ Oa ®Ñp nhÊt, còng kh«ng biÕt lµ thËt hay gi¶ n÷a!",0)
 	end
 end;

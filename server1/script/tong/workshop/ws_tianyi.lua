@@ -12,7 +12,7 @@ aLevelRenWuPrice = {}
 function LoadLevelData()
 	local b1 = TabFile_Load("\\settings\\tong\\workshop\\tianyi_level_data.txt", "tianyiLevelData")
 	if b1~=1 then
-		print("¼ÓÔØÌìÒâ×÷·»ÅäÖÃÎÄ¼şÊ§°Ü£¡")
+		print("§äc tÖp config Thiªn ı ph­êng thÊt b¹i!")
 		return
 	end
 	local nRowCount = TabFile_GetRowCount("tianyiLevelData")
@@ -28,13 +28,13 @@ LoadLevelData()
 if MODEL_GAMESERVER == 1 or MODEL_RELAY == 1 then
 --------------------Èç¹û·Ç¿Í»§¶Ë---------------------------
 function ws_main(nTongID, nWorkshopID)
-	if SVR_CheckUse(nTongID, nWorkshopID, "ÌìÒâ·»×Ü¹Ü") ~= 1 then
+	if SVR_CheckUse(nTongID, nWorkshopID, "Tæng qu¶n Thiªn ı ph­êng") ~= 1 then
 		return 0
 	end
-	Say("<#>ÌìÒâ·»×Ü¹Ü£º¼ÊÓöÓÉÌìÒâ£¬ÃüÍ¾×Ô°ÑÎÕ£¬ÇĞ¼ÇÇĞ¼Ç£¡", 3, 
-		"ÁìÈ¡Ëæ»úÈÎÎñ/#use_g_1_ok".."("..nTongID..","..nWorkshopID..")",
-		"ÌØÊâÈÎÎñÁîÅÆ/#use_g_1_ok22".."("..nTongID..","..nWorkshopID..")",
-		"²»ÓÃÁË/cancel");
+	Say("<#>Tæng Qu¶n Thiªn ı Ph­êng:  TÕ ngé di thiªn ı, MÖnh ®å tù b¶ ¸c, thÕ kı , thÕ kı!", 3, 
+		"NhËn nhiÖm vô ngÉu nhiªn/#use_g_1_ok".."("..nTongID..","..nWorkshopID..")",
+		"LÖnh bµi nhiÖm vô ®Æc biÖt/#use_g_1_ok22".."("..nTongID..","..nWorkshopID..")",
+		"Kh«ng cÇn ®©u/cancel");
 	return 1;
 end
 
@@ -72,43 +72,43 @@ function use_g_1_ok(nTongID, nWorkshopID)
 	local nTime = tonumber(GetLocalDate("%H%M"))
 	if (nTime >= 1230 and nTime <= 2200) then
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
-	_dbgMsg("Ê£ÓàÁìÈ¡´ÎÊı*100: "..TWS_GetDayOutput(nTongID, nWorkshopID))
+	_dbgMsg("Sè lÇn nhËn cßn l¹i * 100: "..TWS_GetDayOutput(nTongID, nWorkshopID))
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) < 100) then
-		Say("<#>ÌìÒâ·»×Ü¹Ü£º½ñÌìµÄËæ»úÈÎÎñÒÑ·Ö·¢Íê±Ï£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
+		Say("<#>Tæng Qu¶n Thiªn ı Ph­êng:  NhiÖm vô ngÉu nhiªn h«m n·y ®· kÕt thóc, h«m sau l¹i ®Õn vËy!", 0)
 		return 0;
 			end
-			Say("<#>S? dông <color=yellow>"..aLevelRenWuPrice[nLevel].."<color> ¹±Ï×¶È¶Ò»»Ò»¸öÅ¼È»ÁîÅÆ£¬ÄãÍ¬ÒâÂğ?", 2,
-			"ÎÒÏë»»/#use_g_1_ok21".."("..nTongID..","..nWorkshopID..")",
-			"·ÅÆú /cancel")
+			Say("<#>Sö dông <color=yellow>"..aLevelRenWuPrice[nLevel].."<color> ®iÓm cèng hiÕn ®æi lÊy 1 lÖnh bµi ngÉu nhiªn, ng­¬i ®ång ı kh«ng?", 2,
+			"ta muèn ®æi/#use_g_1_ok21".."("..nTongID..","..nWorkshopID..")",
+			"Hñy bá /cancel")
 	else
-		Talk(1,"","ÁìÈ¡ÎïÆ·Ê±¼äÎªÃ¿ÈÕ12h30µ½22h!")
+		Talk(1,"","Thêi gian nhËn vËt phÈm lµ tõ 12h30 ®Õn 22h h»ng ngµy !")
 			return
 	end
-	Say("<#>ÄãĞèÒª»¨·Ñ<color=yellow>"..aLevelRenWuPrice[nLevel].."<color>µã¹±Ï×¶È»ñµÃÒ»¸öËæ»úÈÎÎñÁîÅÆ£¬È·¶¨Âğ£¿", 2,
-		"ÎÒÒª»»È¡/#use_g_1_ok21".."("..nTongID..","..nWorkshopID..")",
-		"È¡Ïû/cancel")
+	Say("<#>Ng­¬i ph¶i tèn phİ <color=yellow>"..aLevelRenWuPrice[nLevel].."<color>NhÊn ®iÓm cèng hiÕn nhËn ®­îc nhiÖm vu lÖnh bµi ngÉu nhiªn, ®ång ı kh«ng?", 2,
+		"ta muèn ®æi/#use_g_1_ok21".."("..nTongID..","..nWorkshopID..")",
+		"Hñy bá /cancel")
 end
 
 function use_g_1_ok22(nTongID, nWorkshopID)--ÁìÈ¡ÌØÊâÈÎÎñÁîÅÆ
 	nLevel = TWS_GetUseLevel(nTongID, nWorkshopID);
 	if (nLevel < 4) then
-		Say("ÌìÒâ·»×Ü¹Ü£ºÌìÒâ·»µÈ¼¶´ïµ½<color=yellow>4<color>¼¶Ê±²ÅÄÜ²ú³öÌØÊâÈÎÎñÁîÅÆ¡£ÄãÒª×öĞ©Ê²Ã´£¿", 2, "ÁË½âÌØÊâÈÎÎñÁîÅÆ/tong_tylp_aobut", "Àë¿ª/cancel");
+		Say("Tæng qu¶n Thiªn ı ph­êng: §¼ng cÊp Thiªn ı ph­êng ®¹t cÊp <color=yellow>4<color> míi cã thÓ chÕ t¹o lÖnh bµi nhiÖm vô ®Æc biÖt. Ng­¬i muèn lµm g×?", 2, "T×m hiÓu lÖnh bµi nhiÖm vô ®Æc biÖt/tong_tylp_aobut", "Rêi khái/cancel");
 		return
 	end;
-	Say("ÌìÒâ·»×Ü¹Ü£º×î½üÎÒÕâÀïÓĞĞ©ÌØ±ğµÄÈÎÎñ£¬²»µ«¿ÉÒÔÈÃÄãÔö¼Ó¾­Ñé£¬¶øÇÒ¿ÉÒÔÈÃÄãÏû³ıÒ»¶¨µÄPKÖµ£¬ÒªÊÔÊÔ¿´Âğ£¿", 7, 
-	"¹ØÓÚÌØÊâÈÎÎñÁîÅÆ/tong_tylp_aobut", 
-	"¹ºÂòÌØÊâÈÎÎñÁîÅÆ/#tong_tylp_tobuy("..nLevel..")",
-	"ÁË½âÎÒÁîÅÆÈÎÎñ½ø¶È/tong_tylp_knowabout",
-	"ÎÒÒª»»Ò»¸öÈÎÎñ/tong_tylp_turn",
-	"ÎÒÒÑ¾­µÃµ½×ã¹»µÄ¼öÊé/tong_tylp_award",
-	"È¡ÏûÈÎÎñ/tong_tylp_giveup",
-	"ÎÒÒªÀë¿ª/cancel");
+	Say("Tæng qu¶n Thiªn ı ph­êng: GÇn ®©y ta cã mét sè nhiÖm vô ®Æc biÖt cÇn gi¶i quyÕt, kh«ng nh÷ng gióp ng­¬i n©ng cao kinh nghiÖm, mµ cßn gi¶m ®­îc PK, ng­¬i muèn thö xem kh«ng?", 7, 
+	"T×m hiÓu LÖnh bµi nhiÖm vô ®Æc biÖt/tong_tylp_aobut", 
+	"§æi lÖnh bµi nhiÖm vô ®Æc biÖt/#tong_tylp_tobuy("..nLevel..")",
+	"Xem tiÕn ®é nhiÖm vô lÖnh bµi/tong_tylp_knowabout",
+	"Ta muèn ®æi nhiÖm vô/tong_tylp_turn",
+	"Ta nhËn ®­îc ®ñ Th­ tiÕn cö råi/tong_tylp_award",
+	"Hñy bá nhiÖm vô/tong_tylp_giveup",
+	"Ta muèn rêi khái!/cancel");
 end;
 
 function tong_tylp_turn()
 	local nLPLvl = get_lp_lvl();
 	if (0 == nLPLvl) then
-		Say("ÄãÄ¿Ç°Ã»ÓĞÌØÊâÁîÅÆÈÎÎñ¡£", 0);
+		Say("Ng­¬i ch­a nhËn nhiÖm vô lÖnh bµi.", 0);
 		return
 	end;
 	
@@ -116,7 +116,7 @@ function tong_tylp_turn()
 	nContri = GetContribution();
 	nConLimit = tab_buyLingPai_gxd[nLPLvl] / 10;
 	if (nContri < nConLimit) then
-		Say("×ª»»Ò»¸ö<color=yellow>"..nLPLvl.."¼¶<color>ÈÎÎñÁîÅÆĞèÒª<color=yellow>"..nConLimit.."µã<color>¹±Ï×¶È£¨Ô­ÁîÅÆ¼Û¸ñµÄÊ®·ÖÖ®Ò»£©£¬ÄãµÄ¹±Ï×¶È²»¹»¡£", 0);
+		Say("§æi 1 LÖnh bµi nhiÖm vô <color=yellow>cÊp "..nLPLvl.."<color> cÇn <color=yellow> "..nConLimit.." ®iÓm <color>cèng hiÕn (gi¸ lÖnh bµi chØ b»ng 10% gi¸ ban ®Çu), ®iÓm cèng hiÕn cña ng­¬i kh«ng ®ñ.", 0);
 		return
 	end;
 	rwlp_cleartask()	--Çå³ıÈÎÎñ±äÁ¿£»
@@ -142,11 +142,11 @@ function tong_tylp_turn()
 		end;
 	end;
 	AddContribution(-1 * nConLimit);
-	Msg2Player("ÄãÏûºÄÁË<color=yellow>"..nConLimit.."µã<color>¹±Ï×¶ÈÀ´»ñµÃÒ»¸öĞÂµÄ<color=yellow>"..nLPLvl.."¼¶ÈÎÎñÁîÅÆÈÎÎñ¡£");
+	Msg2Player("Sö dông <color=yellow>"..nConLimit.." ®iÓm <color> cèng hiÕn ®æi lÊy 1 lÖnh bµi nhiÖm vô cÊp <color=yellow>"..nLPLvl..".");
 	nt_SetTask(TASK_LP_ZONGGUANIDX, nWorkshopIdx);
 	nt_SetTask(TASK_LP_ZONGGUANLEVEL, nLevel);
 	nt_SetTask(TASK_LP_COUNT, nCount);
-	Say("ÄãÏûºÄÁË<color=yellow>"..nConLimit.."µã<color>¹±Ï×¶ÈÀ´»ñµÃÒ»¸öĞÂµÄ<color=yellow>"..nLPLvl.."¼¶<color>ÈÎÎñÁîÅÆÈÎÎñ¡£±¾°ïµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>×î½üĞÄĞ÷²»¼Ñ£¬Ô­±¾´òËãÉÏ¾©¸Ï¿¼£¬ÇóÈ¡Ò»¸ö¹¦Ãû¡£Ã»³ÉÏë¾©¹ÙÒªÇó£¬³öÊË¾Ù×ÓĞèÒªÓĞµ±µØÃûÊ¿µÄ¼öÊé¡£Ô½ÊÇÃûÍûÂú¾©Ê¦Ö®ÈË£¬¿¼È¡¹¦ÃûµÄ»ú»á¾ÍÔ½´ó¡£Âé·³ÄãÎªËûÈ¥ÕÒ<color=yellow>"..nCount.."Î» "..nLevel.."<color>¼¶ÒÔÉÏ²»Í¬°ï»áµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>£¬»ñµÃËûÃÇµÄ¼öÊé¡£", 1, "ºÃ£¬ÎÒÒ»¶¨¾¡Á¦¶øÎª/cancel")
+	Say("Sö dông <color=yellow>"..nConLimit.." ®iÓm <color> cèng hiÕn ®æi lÊy 1 lÖnh bµi nhiÖm vô cÊp <color=yellow>"..nLPLvl.."cÊp-<color>NhiÖm vô lÖnh bµi. <color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> d¹o nµy tinh thÇn kh«ng ®­îc tèt, muèn lªn kinh øng thİ nh­ng cÇn ph¶i thu thËp ®ñ Th­ tiÕn cö cña c¸c danh sü n¬i ®©y. PhiÒn ng­¬i ®i t×m gióp <color=yellow>"..nCount.." vŞ Ph­êng tæng qu¶n cÊp "..nLevel.."<color>CÊp trë lªn kh«ng cïng bang héi <color=yellow>"..tab_Workshop[nWorkshopIdx].."<color>,®Ó nhËn th­ tiÕn cö cña hä.", 1, "§­îc, ta sÏ cè g¾ng./cancel")
 end;
 
 function get_lp_lvl()
@@ -164,46 +164,46 @@ end;
 
 function tong_tylp_giveup()	--È¡ÏûÈÎÎñ
 	if (GetTask(TASK_LP_COUNT) == 0) then
-		Say("ÌìÒâ·»×Ü¹Ü£ººÇºÇ£¬Äã¸ù±¾Ã»ÓĞÌØÊâÈÎÎñÔÚÉí¡£ÓÖÌ¸ºÎÈ¡ÏûÄØ£¿", 0)
+		Say("Tæng qu¶n Thiªn ı ph­êng: Ng­¬i kh«ng cã nhiÖm vô g× th× sao mµ hñy bá ®­îc chø?", 0)
 		return
 	end;
 	nt_SetTask(TASK_LP_COUNT, 0);
 	rwlp_cleartask()	--Çå³ıÈÎÎñ±äÁ¿£»
-	Msg2Player("ÌìÒâ·»×Ü¹Ü£ºÄãÒÑ¾­È¡ÏûÁË<color=yellow>ÌØÊâÈÎÎñÁîÅÆ<color>ÈÎÎñ¡£")
+	Msg2Player("Tæng qu¶n Thiªn ı ph­êng: Ng­¬i ®· hñy bá nhiÖm vô <color=yellow>LÖnh bµi nhiÖm vô<color>.")
 end;
 
 function tong_tylp_tobuy(nLevel)--¹ºÂòÈÎÎñÁîÅÆ
 	if (1 == TONG_GetPauseState(nTongID, nWorkshopID)) then
-		Say("ÌìÒâ·»×Ü¹Ü£º¶Ô²»Æğ£¬ÄúËùÔÚ°ï»áµÄ×÷·»Ä¿Ç°´¦ÓÚÔİÍ£×´Ì¬¡£±ØĞë°ï»á½«Õ½±¸»ù½ğµÄÊıÄ¿Ôö¼Óµ½ÖÜÎ¬»¤Õ½±¸»ù½ğÒÔÉÏ£¬²ÅÄÜÔÚµ±ÈÕÍí24£º00ÖØĞÂ¿ªÆô×÷·»¡£", 0);
-		Msg2Player("×÷·»ÔİÍ££¬ÎŞ·¨»ñµÃÌØ²ú¡£");
+		Say("Tæng qu¶n Thiªn ı ph­êng: ThËt ®¸ng tiÕc, T¸c ph­êng ®ang t¹m ng­ng ho¹t ®éng. Bang héi cÇn ph¶i n¹p tiÒn vµo ng©n s¸ch chiÕn bŞ cho ®ñ sè b¶o tr× hµng tuÇn, vµ sau 12h ®ªm th× T¸c ph­êng míi cã thÓ ho¹t ®éng trë l¹i.", 0);
+		Msg2Player("T¸c ph­êng ®· t¹m ngõng ho¹t ®éng, kh«ng thÓ nhËn bang vËt.");
 		return
 	end;
 	
 	local tab_selete = {};
 	--§iµ÷ÕûÈÎÎñ pk - Modified by DinhHQ - 20110810
---	tinsert(tab_selete, "¶Ò»»Ò»¼¶ÁîÅÆ/#tong_tylp_buy( 1 )");
+--	tinsert(tab_selete, "§æi lÖnh bµi cÊp 1/#tong_tylp_buy( 1 )");
 --	if (nLevel >= 7) then
---		tinsert(tab_selete, "¶Ò»»2¼¶ÁîÅÆ/#tong_tylp_buy( 2 )")
+--		tinsert(tab_selete, "§æi lÖnh bµi cÊp 2/#tong_tylp_buy( 2 )")
 --	end
 	if (nLevel >= 9) then
-		tinsert(tab_selete, "¹ºÂò3¼¶ÁîÅÆ/#tong_tylp_buy( 3 )")
+		tinsert(tab_selete, "§æi lÖnh bµi cÊp 3/#tong_tylp_buy( 3 )")
 	end
 	
-	tinsert(tab_selete, "ÎÒÒªÀë¿ª/cancel");
-	Say("ÌìÒâ·»×Ü¹Ü£ºÁîÅÆÓÉÄÑ¶È´ÓµÍµ½¸ß·ÖÎª1¡«3¼¶ÁîÅÆ£¬1¼¶ÁîÅÆĞèÒª100µã¹±Ï×¶ÈÍê³Éºó¿ÉÒÔ»ñµÃ30Íò¾­ÑéÖµÒÔ¼°Ïû³ı2µãPKÖµ£¬2¼¶ÁîÅÆĞèÒª150µã¹±Ï×¶ÈÍê³Éºó¿ÉÒÔ»ñµÃ40Íò¾­ÑéÖµÒÔ¼°Ïû³ı5µãPKÖµ£¬3¼¶ÁîÅÆĞèÒª200µã¹±Ï×¶ÈÍê³Éºó¿ÉÒÔ»ñµÃ60Íò¾­ÑéÖµÒÔ¼°Ïû³ı10µãPKÖµ£¬ÄãÒª¹ºÂòÄÄÒ»ÖÖ£¿", getn(tab_selete), tab_selete);
+	tinsert(tab_selete, "Ta muèn rêi khái!/cancel");
+	Say("Tæng qu¶n Thiªn ı ph­êng: LÖnh bµi chia thµnh c¸c møc ®é tõ 1 ®Õn 3, lÖnh bµi cÊp 1 cÇn 100 ®iÓm cèng hiÕn, sau khi hoµn thµnh sÏ nhËn ®­îc 30 v¹n ®iÓm kinh nghiÖm vµ gi¶m ®i 2 PK; LÖnh bµi cÊp 2 cÇn 150 ®iÓm cèng hiÕn, sau khi hoµn thµnh sÏ nhËn ®­îc 40 v¹n ®iÓm kinh nghiÖm vµ gi¶m ®i 5 PK; LÖnh bµi cÊp 3 cÇn 200 ®iÓm cèng hiÕn, sau khi hoµn thµnh sÏ nhËn ®­îc 60 v¹n ®iÓm kinh nghiÖm vµ gi¶m ®i 10 PK. Ng­¬i ®ång ı ®æi kh«ng?", getn(tab_selete), tab_selete);
 end;
 
 function tong_tylp_knowabout()
 	if (GetTask(TASK_LP_COUNT) == 0) then	--Èç¹ûÃ»ÓĞ°ï»áÌØÊâÁîÅÆÈÎÎñ
-		Say("ÄãÄ¿Ç°Ã»ÓĞÌØÊâÁîÅÆÈÎÎñ¡£", 0);
+		Say("Ng­¬i ch­a nhËn nhiÖm vô lÖnh bµi.", 0);
 		return
 	end;
 	local nNeedCount = GetTask(TASK_LP_COUNT);
 	local nGetCount = rwlp_getjuanshucount();
 	if (nGetCount >= nNeedCount and nGetCount > 0) then
-		Say("ÄãÒÑ¾­ÊÕ¼¯ÁË×ã¹»¶àµÄ¼öÊé£¬¸Ï½ô»ØÈ¥¼ûÌìÒâ·»×Ü¹Ü°É¡£", 0);
+		Say("Th­ tiÕn cö ®· nhËn ®ñ råi, h·y mau ®i t×m Tæng qu¶n Thiªn ı ph­êng ®i.", 0);
 	end;
-	Say("Äã×Ü¹²ĞèÒªÔÚ²»Í¬µÄ<color=yellow>"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."·»<color>×Ü¹Ü´¦ÊÕ¼¯<color=yellow>"..nNeedCount.."·â<color>¼öÊé£¬ÄãÖ»ÁË<color=yellow>"..nGetCount.."·â<color>¼öÊé¡£ºÃºÃÅ¬Á¦Å¶£¡", 0);
+	Say("H·y ®Õn gÆp c¸c Ph­êng tæng qu¶n kh¸c nhau <color=yellow>"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."<color> ®Ó thu thËp ®ñ <color=yellow>"..nNeedCount.." bøc <color>Th­ tiÕn cö, ng­¬i chØ cã<color=yellow> "..nGetCount.." bøc<color> mµ th«i, h·y nç lùc h¬n!", 0);
 end;
 
 tab_buyLingPai_gxd = {100, 150, 200};
@@ -211,13 +211,13 @@ function tong_tylp_buy(nLPLvl1)--¹ºÂòÁîÅÆÊµÌå
 	local nLPLvl = tonumber(nLPLvl1);
 	local nAttr = GetContribution();
 	if (nAttr < tab_buyLingPai_gxd[nLPLvl]) then
-		Say("ÌìÒâ·»×Ü¹Ü£º¶Ô²»Æğ£¬ÄúµÄ¸öÈË¹±Ï×¶È²»×ã<color=yellow>"..tab_buyLingPai_gxd[nLPLvl].."<color>£¬ÎŞ·¨¹ºÂò¸ÃÌØ²ú£¬ÇëÅ¬Á¦ÕõÈ¡¸öÈË¹±Ï×¶È¡£", 0);
-		Msg2Player("¸öÈË¹±Ï×¶È²»×ã£¬ÎŞ·¨»ñµÃÌØ²ú¡£");
+		Say("Tæng qu¶n Thiªn ı ph­êng: ThËt ®¸ng tiÕc, ®iÓm cèng hiÕn kh«ng ®ñ <color=yellow>"..tab_buyLingPai_gxd[nLPLvl].."<color>,Kh«ng thÓ mua vËt phÈm nµy, xin h·y næ lùc lÊy ®iÓm cèng hiÕn.", 0);
+		Msg2Player("§iÓm cèng hiÕn c¸ nh©n kh«ng ®ñ, kh«ng thÓ ®æi lÊy bang vËt.");
 		return
 	end;
 	
 	if CalcFreeItemCellCount() < 2 then
-		Talk(1, "", "×°±¸ĞèÒª2¸ö¿ÕÎ».");
+		Talk(1, "", "Hµnh trang ph¶i cã hai « trèng.");
 		return 
 	end
 	
@@ -233,14 +233,14 @@ function tong_tylp_buy(nLPLvl1)--¹ºÂòÁîÅÆÊµÌå
 	SetSpecItemParam(nRandomItemIndex, 1, nLPLvl);	--½«ÁîÅÆµÈ¼¶¼ÇÂ¼
 	SyncItem(nRandomItemIndex); -- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	
-	Msg2Player("ÄãÏûºÄÁË"..tostring(tab_buyLingPai_gxd[nLPLvl]).."µã¹±Ï×¶È£¡");
-	Msg2Player("<color=green>ÄãµÃµ½ÁËÒ»¸ö"..nLPLvl.."¼¶ÌØÊâÈÎÎñÁîÅÆ£¡<color>");
+	Msg2Player("B¹n tiªu tèn "..tostring(tab_buyLingPai_gxd[nLPLvl]).." ®iÓm cèng hiÕn!");
+	Msg2Player("<color=green>B¹n nhËn ®­îc 1 lÖnh bµi cÊp "..nLPLvl.."!<color>");
 end;
 
 tab_LPAward = {[1] = {300000, 2}, [2] = {400000, 5}, [3] = {600000, 10}}
 function tong_tylp_award()
 	if (GetTask(TASK_LP_COUNT) == 0) then	--Èç¹ûÃ»ÓĞ°ï»áÌØÊâÁîÅÆÈÎÎñ
-		Say("ÄãÄ¿Ç°Ã»ÓĞÌØÊâÁîÅÆÈÎÎñ¡£", 0);
+		Say("Ng­¬i ch­a nhËn nhiÖm vô lÖnh bµi.", 0);
 		return
 	end;
 	
@@ -254,7 +254,7 @@ function tong_tylp_award()
 	local ncurday, ncurmon, ncuttimes = GetByte(nTsk_Times, 2), GetByte(nTsk_Times, 3), GetByte(nTsk_Times, 1);
 	
 	if (nPK == 0) then
-		Say("Ä¿Ç°ÄãÃ»ÓĞPK£¬²»ÄÜÍê³É¸ÃÈÎÎñ.", 0);
+		Say("HiÖn t¹i b¹n kh«ng cã PK, kh«ng thÓ hoµn thµnh nhiÖm vô nµy ®­îc.", 0);
 		return 0;
 	end
 	
@@ -269,7 +269,7 @@ function tong_tylp_award()
 	end
 	
 	if (ncuttimes >= DAILY_MAX_TIMES) then
-		Say(format("½ñÌìÄãÖ´ĞĞ¸ÃÈÎÎñ%d´ÎÁË£¬Ã÷ÌìÔÙÀ´°É .", DAILY_MAX_TIMES), 0);
+		Say(format("H«m nay b¹n thùc hiÖn nhiÖm vô nµy %d lÇn råi, ngµy mai h·y quay l¹i nhĞ.", DAILY_MAX_TIMES), 0);
 		return 0;
 	end
 	
@@ -278,10 +278,10 @@ function tong_tylp_award()
 		nTsk_Times = SetByte(nTsk_Times, 1, ncuttimes);
 		SetTask(TASK_LP_TIMESLIMIT, nTsk_Times);
 		
-		Say("ÌìÒâ·»×Ü¹Ü£ºÀÏ·ò¿´ÄãÄêÇáÓĞÎª°¡¡«£¬¿´¿´ÄãµÄPKÖµÓĞÃ»ÓĞ¼õÉÙ£¬ºÇºÇ¡«", 0);
+		Say("Tæng qu¶n Thiªn ı ph­êng: Ng­¬i h·y cßn trÎ, ®Ó ta xem t×nh tr¹ng PK cña ng­¬i thÕ nµo, ha ha!", 0);
 		--Çå¿ÕÈÎÎñ±äÁ¿
 		AddOwnExp(tab_LPAward[nLPLvl][1]);
-		Msg2Player("Äã»ñµÃÁË<color=yellow>"..tab_LPAward[nLPLvl][1].."<color>µã¾­ÑéµÄ½±Àø¡£");
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..tab_LPAward[nLPLvl][1].."<color> PhÇn th­ëng ®iÓm kinh nghiÖm.");
 --		local nDecCount = tab_LPAward[nLPLvl][2];
 		local nDecCount = PER_ASSIGNMENT_PK  
 		if (nDecCount > nPK) then
@@ -291,34 +291,34 @@ function tong_tylp_award()
 			--§iµ÷ÕûÈÎÎñpk - Modified by DinhHQ - 20110810
 			if (ncuttimes < 3) then
 				SetPK(nPK - nDecCount);
-			Msg2Player("ÄãµÄPKÖµ¼õÉÙÁË<color=yellow>"..nDecCount.."<color>µã¡£");
+			Msg2Player("PK ®· gi¶m <color=yellow>"..nDecCount.."<color> ®iÓm.");
 			end			
 		else
-			Msg2Player("ÄãµÄPKÖµ±äÎª<color=yellow>0µã<color>ÁË¡£");
+			Msg2Player("PK ®· gi¶m xuèng cßn <color=yellow>0<color>.");
 		end;
 		rwlp_cleartask()	--Çå³ıÈÎÎñ±äÁ¿£»
 	else
-		Say("ÌìÒâ·»×Ü¹Ü£ºÄãÒªÕÒµ½<color=yellow>"..nGoalCount.."<color>¸ö¼öÊé²ÅĞĞ,ÏÖÔÚÄãÒÑ¾­ÕÒµ½ÁË<color=yellow>"..nGetCount.."<color>¸ö", 0);
+		Say("Tæng qu¶n Thiªn ı ph­êng: Ng­¬i ph¶i t×m ®­îc <color=yellow>"..nGoalCount.."<color>Bøc th­ tiÕn cö míi ®­îc, hiÖn t¹i ®· t×m ®­îc <color=yellow>"..nGetCount.."<color>c¸i", 0);
 	end;
 end;
 
 function tong_tylp_aobut()--¹ØÓÚÌØÊâÁîÅÆ
-	Say("ÌìÒâ·»×Ü¹Ü£ºÕâ¸öÌØÊâÈÎÎñĞèÒª½ÓÊÜÈÎÎñÕß¸ù¾İÈÎÎñÒªÇóÑ°ÕÒµ½Ò»¶¨ÊıÁ¿µÄ°ï»á£¬ÕâĞ©°ï»áµÄ¹²Í¬µãÊÇÓµÓĞÈÎÎñÒªÇóµÄÄ³ÖÖ×÷·»£¬¶øÇÒ×÷·»µÈ¼¶Í¬Ê±´ï±ê¡£´ËÊ±Óë¸Ã×÷·»×Ü¹Ü¶Ô»°£¬Ëû¾Í»áÔùËÍ¸øÄãÒ»·â¼öÊé£¬Ã¿¸ö·ûºÏÒªÇóµÄ°ï»á£¬Æä×÷·»×Ü¹ÜÖ»ÄÜÔùËÍ¸øÄãÒ»·â¼öÊé¡£Ö»ÒªÊÕ¼¯ÂúÈÎÎñÒªÇóÊıÁ¿µÄ¼öÊé£¬»Ø×Ô¼º°ï»áÓëÎÒ¶Ô»°½»½ÓÈÎÎñ±ã¿É¡£", 0);
+	Say("Tæng qu¶n Thiªn ı ph­êng: NhiÖm vô lÖnh bµi yªu cÇu ph¶i t×m ®­îc mét sè bang héi mµ T¸c Ph­êng tháa m·n ®iÒu kiÖn, nãi chuyÖn víi Ph­êng tæng qu¶n cña hä, hä sÏ giao Th­ tiÕn cö cho ng­¬i. ChØ cÇn thu thËp ®ñ sè l­îng th­ yªu cÇu ®em vÒ cho ta th× cã thÓ hoµn thµnh nhiÖm vô.", 0);
 end;
 
 function use_g_1_ok21(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (GetContribution() < aLevelRenWuPrice[nLevel]) then
-		Say("<#>ÌìÒâ·»×Ü¹Ü£º¶Ô²»Æğ£¬ÄãµÄ¹±Ï×¶È²»×ã£¡", 0)
+		Say("<#>Tæng Qu¶n Thiªn ı Ph­êng:  xin l­îng thø, ®iÓm cèng hiÕn cña ng­¬i ch­a ®ñ!", 0)
 		return
 	end
 	if (GetTaskTemp(196) ~= 0)then
-		Say("<#>ÌìÒâ·»×Ü¹Ü£ºÄúÒªµÄ¶«Î÷»¹Ã»µ½»õ£¬ÇëÉÔµÈÆ¬¿Ì£¡", 0)
+		Say("<#>Tæng Qu¶n Thiªn ı Ph­êng: thø mµ ng­¬i cÇn vÉn ch­a cã, xin h·y ®éi mét l¸t nhĞ!", 0)
 		return
 	end
 	
 	if CalcFreeItemCellCount() < 2 then
-		Talk(1, "", "×°±¸ĞèÒª2¸ö¿ÕÎ».");
+		Talk(1, "", "Hµnh trang ph¶i cã hai « trèng.");
 		return 
 	end
 	
@@ -340,7 +340,7 @@ function USE_G_2(nTongID, nWorkshopID)
 		
 		AddContribution(-aLevelRenWuPrice[nLevel]);
 		
-		Msg2Player("ÄãÏûºÄÁË"..tostring(aLevelRenWuPrice[nLevel]).."µã¹±Ï×¶È£¡");
+		Msg2Player("B¹n tiªu tèn "..tostring(aLevelRenWuPrice[nLevel]).." ®iÓm cèng hiÕn!");
 		
 		nRandomItemIndex = AddItem(6, 2, 1020, 0, 1, 0, 0);
 		SetItemMagicLevel(nRandomItemIndex, 1, nRandomTaskID);
@@ -348,7 +348,7 @@ function USE_G_2(nTongID, nWorkshopID)
 		-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 		SyncItem(nRandomItemIndex);		
 				
-		Msg2Player("<color=green>ÄãµÃµ½ÁËÒ»¸öËæ»úÈÎÎñÁîÅÆ£¡<color>");
+		Msg2Player("<color=green>Ng­¬i ®· nhËn ®­îc 1 lÖnh bµi nhiÖm vô ngÉu nhiªn! <color>");
 	end;
 end
 
@@ -359,7 +359,7 @@ else
 -----------------Èç¹ûÊÇ¿Í»§¶Ë---------------
 function GET_DESC(nTongID, nWorkshopID, nType)
 	if (nTongID == 0) then
-		return "<color=water>Ã»ÓĞ°ï»á"	
+		return "<color=water>Kh«ng cã bang héi"	
 	end
 	local bOpen	--ÊÇ·ñ¿ªÆô
 	local bPause --ÊÇ·ñÔİÍ£
@@ -408,29 +408,29 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 	end
 	if (nWorkshopID ~= 0)then
 		local state 
-		if bPause == 1 then state="<color=yellow>ÔİÍ£" elseif bOpen == 1 then state="<color=green>¿ªÆô" else state="<color=red>¹Ø±Õ" end
-		local szMsg = "×÷·»×´Ì¬£º"..state.."<color>\n"..
-			"×÷·»µÈ¼¶£º<color=gold>"..nCurLevel.."<color>¼¶\n"..
-			"µ±Ç°Ê¹ÓÃµÈ¼¶£º<color=gold>"..nUseLevel.."<color>¼¶\n"..
-			"ÈÎÎñÁîÅÆÈÕ²ú³öÁ¿ÉÏÏŞÌá¸ß£º<color=gold>"..dTokenCount.."<color>±¶\n"..		
-			"»»È¡ÈÎÎñÁîÅÆËùĞè¹±Ï×¶È£º<color=gold>"..nPrice.."<color>\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=gold>"..nMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=gold>"..nOpenFund.."Íò<color>\n"..
-			"Éı¼¶ËùĞè½¨Éè»ù½ğ£º<color=gold>"..nUpgradeCostFund.."Íò<color>\n"..
-			"<color=green>ÏÂÒ»Ê¹ÓÃµÈ¼¶<color>\n"..
-			"<color=water>ÈÎÎñÁîÅÆÈÕ²ú³öÁ¿ÉÏÏŞÌá¸ß£º<color=Violet>"..dNextTokenCount.."<color>±¶\n"..	
-			"»»È¡ÈÎÎñÁîÅÆËùĞè¹±Ï×¶È£º<color=Violet>"..nNextPrice.."<color>\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=Violet>"..nNextMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=Violet>"..nNextOpenFund.."Íò<color>\n"
+		if bPause == 1 then state="<color=yellow>Dõng" elseif bOpen == 1 then state="<color=green>më " else state="<color=red>§ãng" end
+		local szMsg = "Tr¹ng th¸i t¸c ph­êng: "..state.."<color>\n"..
+			"§¼ng cÊp t¸c ph­êng: <color=gold>"..nCurLevel.."<color>CÊp\n"..
+			"§¼ng cÊp sö dông hiÖn t¹i: <color=gold>"..nUseLevel.."<color>CÊp\n"..
+			"Sè l­îng lÖnh bµi nhiÖm vô hµng ngµy t¨ng lªn: <color=gold>"..dTokenCount.."<color>LÇn\n"..		
+			"§iÓm cèng hiÕn cÇn ®Ó ®æi lÖnh bµi nhiÖm vô: <color=gold>"..nPrice.."<color>\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=gold>"..nMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=gold>"..nOpenFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ®Ó n©ng cÊp: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+			"<color=green>Sö dông ®¼ng cÊp tiÕp theo <color>\n"..
+			"<color=water>N©ng cao lÖnh bµi nhiÖm vô h»ng ngµy sè l­îng sinh ra ®¹t giíi h¹n: <color=Violet>"..dNextTokenCount.."<color>LÇn\n"..	
+			"§iÓm cèng hiÕn cÇn ®Ó ®æi lÖnh bµi nhiÖm vô: <color=Violet>"..nNextPrice.."<color>\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	else
-		local szMsg = "×÷·»×´Ì¬£º<color=water>Î´½¨Á¢<color>\n"..
-			"½¨Á¢ËùĞè½¨Éè»ù½ğ£º<color=gold>"..nUpgradeCostFund.."Íò<color>\n"..
-			"<color=green>ÏÂÒ»µÈ¼¶<color>\n"..
-			"<color=water>ÈÎÎñÁîÅÆÈÕ²ú³öÁ¿ÉÏÏŞÌá¸ß£º<color=Violet>"..dNextTokenCount.."<color>±¶\n"..	
-			"»»È¡ÈÎÎñÁîÅÆËùĞè¹±Ï×¶È£º<color=Violet>"..nNextPrice.."<color>\n"..
-			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ£º<color=Violet>"..nNextMaintainFund.."Íò<color>\n"..
-			"¿ªÆôËùĞè½¨Éè»ù½ğ£º<color=Violet>"..nNextOpenFund.."Íò<color>\n"
+		local szMsg = "Tr¹ng th¸i t¸c ph­êng: <color=water>Ch­a thµnh lËp<color>\n"..
+			"Ng©n s¸ch kiÕn thÕt cÇn ®Ó x©y dùng: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+			"<color=green>§¼ng cÊp tiÕp theo<color>\n"..
+			"<color=water>N©ng cao lÖnh bµi nhiÖm vô h»ng ngµy sè l­îng sinh ra ®¹t giíi h¹n: <color=Violet>"..dNextTokenCount.."<color>LÇn\n"..	
+			"§iÓm cèng hiÕn cÇn ®Ó ®æi lÖnh bµi nhiÖm vô: <color=Violet>"..nNextPrice.."<color>\n"..
+			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	end
 end

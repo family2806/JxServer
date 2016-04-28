@@ -1,14 +1,14 @@
 Include("\\script\\missions\\fengling_ferry\\fld_head.lua");
 Include("\\script\\event\\jiefang_jieri\\200904\\shuizei\\shuizei.lua");
 Include("\\script\\lib\\common.lua");
-local tbNpcname	= {"´¬·ò¼×", "´¬·òÒÒ", "´¬·ò±û"};
+local tbNpcname	= {"ThuyÒn phu Gi¸p", "ThuyÒn phu Êt", "ThuyÒn phu Bİnh"};
 
 function south_boatman_main(BOATID)
 	local MapId = boatMAPS[ BOATID ]
 	if (MapId > 0) then
 		local idx = SubWorldID2Idx(MapId)
 		if (idx < 0) then
-			Say("¶Ô²»Æğ£¬Ç°·½ÓĞÎ£ÏÕ£¬ÔİÊ±²»ÄÜÉÏ´¬!.",0)
+			Say("Xin lçi! Phİa tr­íc ®ang cã nguy hiÓm! T¹m thêi ch­a thÓ lªn thuyÒn!.",0)
 			local SignMapId = SubWorldIdx2ID(SubWorld);
 			print("ERROR !!!BoatMap[%d] and SignMap[%d] Must In Same Server!", MapId, SignMapId); 
 			return
@@ -27,16 +27,16 @@ function south_boatman_main(BOATID)
 			remaintime = 10 - nowtime
 			if (remaintime > 0) then
 				local nDate = tonumber(GetLocalDate("%Y%m%d"));
-				tbBoatmanDialog	= {format("ÉÏ´¬/#fld_wanttakeboat(%d)", BOATID), "ÉÔºò»ØÀ´/fld_cancel"};
+				tbBoatmanDialog	= {format("Lªn thuyÒn/#fld_wanttakeboat(%d)", BOATID), "L¸t n÷a sÏ quay l¹i/fld_cancel"};
 --				if (nDate >= jf0904_act_dateS) then
---					tinsert(tbBoatmanDialog, 2, "ÎÒÀ´²Î¼ÓÏûÃğË®Ôô»î¶¯'/join_shuizei_act");
+--					tinsert(tbBoatmanDialog, 2, "Ta ®Õn tham gia ho¹t ®éng 'Tiªu diÖt thñy tÆc'/join_shuizei_act");
 --				end
-				Say(format("%s: ÉÏ´¬ÕæÊÇÏ²»¶£¬»¹ÓĞ%d´¬¾Í¿ªÁË.", szNpcname, remaintime), getn(tbBoatmanDialog), unpack(tbBoatmanDialog));
+				Say(format("%s: Lªn thuyÒn thİch thËt ®ã! Cßn %d lµ thuyÒn b¾t ®Çu ch¹y råi.", szNpcname, remaintime), getn(tbBoatmanDialog), unpack(tbBoatmanDialog));
 			else
-				Say(format("%s: ÕæÊÇ²»ĞÒ£¬´¬ÒÑ³ö·¢£¬µÈÏÂÒ»ÌË°É", szNpcname), 0)
+				Say(format("%s: ThËt kh«ng may, thuyÒn ®· xuÊt ph¸t råi, ngåi ®îi chuyÕn sau vËy nhĞ.", szNpcname), 0)
 			end
 		else
-			Say(format("%s: ±¾ÌË´¬»¹Î´µ½£¬ÇëµÈÒ»ÏÂ»òÕßµ½ÄÇ±ß¿´¿´.", szNpcname), 0)
+			Say(format("%s: Thêi gian ®ît thuyÒn nµy vÉn ch­a ®Õn, h·y ®îi thªm tİ n÷a hoÆc ®i bÕn kh¸c thö xem.", szNpcname), 0)
 		end
 		SubWorld = orgworld
 	end

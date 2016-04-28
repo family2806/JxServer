@@ -1,4 +1,4 @@
---description: Îäµ±ÅÉÒ¶¼ÌÃÀ¡¡Îäµ±10¼¶ÈÎÎñ
+--description: Vâ §angÅÉÒ¶¼ÌÃÀ¡¡Vâ §ang10¼¶ÈÎÎñ
 --author: yuanlan	
 --date: 2003/5/14
 -- Update: Dan_Deng(2003-08-17)
@@ -20,52 +20,52 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	G_TASK:OnMessage("Îäµ±", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage("Vâ §ang", tbDailog, "DialogWithNpc")
 	if (UTask_wd == 10*256+20) then 
 		SetTask(5, 10*256+50)
-		AddNote("ÔÚÒ¶¼ÌÃÀ¡¡´¦Ñ§µ½µÀµÂ¾­")
-		Msg2Player("ÔÚÒ¶¼ÌÃÀ¡¡´¦Ñ§µ½µÀµÂ¾­")
-		tbDailog.szTitleMsg = "<npc>«§µÀµÂ¾­ÊÇ×æÊ¦ÀÏ×ÓĞ´µÄ£¬µÚÒ»¾íÓĞ37ÕÂ£¬ºóÃæÕÂ½Ú44ÕÂ"
+		AddNote("T¹i chç cña DiÖp TiÕp MÜ häc ®­îc §¹o §øc Kinh ")
+		Msg2Player("T¹i chç cña DiÖp TiÕp MÜ häc ®­îc §¹o §øc Kinh ")
+		tbDailog.szTitleMsg = "<npc>«§¹o §øc Kinh»Theo nh­ tæ s­ §¹o Gi¸o L·o Tö, quyÓn ®Çu tiªn cña §¹o Kinh cã 37 ch­¬ng, quyÓn sau §øc Kinh cã 44 ch­¬ng"
 		tbDailog:AddOptEntry("Ch­¬ng 1 ", ch1)
 		tbDailog:AddOptEntry("Ch­¬ng 25 ", ch2)
 		tbDailog:AddOptEntry("Ch­¬ng 33 ", ch3)
 		tbDailog:AddOptEntry("Ch­¬ng 41 ", ch4)
 		tbDailog:AddOptEntry("Ch­¬ng 42 ", ch5)
 	elseif (UTask_wd == 10*256+50) then 
-		tbDailog.szTitleMsg = "<npc> <µÀµÂ¾­>ÄÚÈİ²©´ó¾«Éî£¬²»ÊÇÔÚ¶ÌÊ±¼äÄÜÁìÎòµÄ£¬ÄãÏÈÊì¶ÁÇ°5ÕÂ°É."
+		tbDailog.szTitleMsg = "<npc>Néi dung cña <§¹o §øc Kinh> b¸t ®¹i tinh th©m, kh«ng ph¶i lµ cã thÓ lÜnh ngé trong mét kho¶ng thêi gian ng¾n, ng­¬i h·y häc thuéc 5 ch­¬ng tr­íc ®i."
 		tbDailog:AddOptEntry("Ch­¬ng 1 ", ch1)
 		tbDailog:AddOptEntry("Ch­¬ng 25 ", ch2)
 		tbDailog:AddOptEntry("Ch­¬ng 33 ", ch3)
 		tbDailog:AddOptEntry("Ch­¬ng 41 ", ch4)
 		tbDailog:AddOptEntry("Ch­¬ng 42 ", ch5)
 	elseif (UTask_wd < 10*256+20) and (GetFaction() == "wudang") then								--ÉĞÎ´½Ó10¼¶ÈÎÎñ
-		tbDailog.szTitleMsg = "<npc>²»¶®µÀµÂ¾­£¬ÔõÃ´ÄÜ³ÉÎªÎäµ±µÜ×Ó?"
+		tbDailog.szTitleMsg = "<npc>Kh«ng biÕt«§¹o §øc Kinh», sao trë thµnh ®Ö tö cña Vâ §ang?"
 	elseif (UTask_wd >= 20*256) and (GetFaction() == "wudang") then					--ÒÑ¾­Íê³É10¼¶ÈÎÎñ£¬ÉĞÎ´³öÊ¦
-		tbDailog.szTitleMsg = "<npc>½ñÌìÄãÑ§µÀµÂ¾­ÁËÂğ?"
+		tbDailog.szTitleMsg = "<npc>H«m nay ng­¬i ®· häc«§¹o §øc Kinh»ch­a?"
 	elseif (UTask_wd >= 70*256) then							--ÒÑ¾­³öÊ¦
-		tbDailog.szTitleMsg = "<npc>ÎÒºÍÄãÒ»ÑùÄêÇáµÄÊ±ºò£¬Ò²ÊÇÒ»¸öÇ¿×³µÄ´óÕÉ·ò£¬µ½½ñÌì²ÅÖªµÀÉ½¸ßµØºñ£¬ÄãËäÈ»ÊÇ±¾ÅÉ³öÊ¦µÜ×Ó£¬µ«ÊÇ£¬Ò²²»ÄÜĞ¡¿´ËûÈË."
+		tbDailog.szTitleMsg = "<npc>Khi ta cßn trÎ nh­ ng­¬i, còng lµ mét ®¹i tr­îng phu khoÎ m¹nh, ®Õn nay míi biÕt trêi cao ®Êt réng, ng­¬i tuy lµ ®Ö tö xuÊt s­ cña bæn ph¸i, nh­ng còngkh«ng ®­îc xem th­êng ng­êi kh¸c."
 	else
-		tbDailog.szTitleMsg = "<npc>«§ÀÏ×ÓµÄµÀµÂ¾­£¬µÚÒ»¾íÓĞ37ÕÂ£¬ºóÃæÕÂ½Ú44ÕÂ¡£Ò»Æğ5000×Ö£¬ÄÚÈİ²©´ó¾«Éî."
+		tbDailog.szTitleMsg = "<npc>«§¹o §øc Kinh»Theo nh­ tæ s­ §¹o Gi¸o L·o Tö, quyÓn ®Çu tiªn cña §¹o Kinh cã 37 ch­¬ng, quyÓn sau §øc Kinh cã 44 ch­¬ng. TÊt c¶ cã h¬n 5000 ch÷, no­ng néi dung th× b¸c ®¹i tinh th©m."
 	end
 	tbDailog:Show() 
 end;
 
 function ch1()
-	Talk(1,"","µÀ¿ÉµÀ£¬·Ç³£µÀ£¬Ãû¿ÉÃû£¬·Ç³£Ãû.")
+	Talk(1,"","§¹o kh¶ ®¹o, phi th­êng ®¹o, danh kh¶ danh, phi th­êng danh.")
 end;
 
 function ch2()
-	Talk(1,"","ÈË·¨µØ£¬µØ·¨Ìì£¬Ìì·¨µÀ£¬µÀ·¨×ÔÈ».")
+	Talk(1,"","Nh©n ph¸p ®i¹, ®Şa ph¸p thiªn, thiªn ph¸p ®¹o, ®¹o ph¸p tù nhiªn.")
 end;
 
 function ch3()
-	Talk(1,"","ÖªÈËÕßÖÇ£¬×ÔÖªÖ®Ã÷£¬Ê¤ÈËÕßÓĞÁ¦£¬×ÔÊ¤ÕßÇ¿.")
+	Talk(1,"","Trİ nh©n gi¶ trİ, tù trİ gi¶ minh, th¾ng nh©n gi¶ h÷u lùc, tù th¾ng gi¶ c­êng.")
 end;
 
 function ch4()
-	Talk(1,"","´ó·½ÎŞÓç£¬´óÆ÷Íí³É£¬´óÒôÏ£³É£¬´óÏóÎŞĞÎ.")
+	Talk(1,"","§¹i ph­¬ng v« ngung, ®¹i khİ v·n thµnh, ®¹i ©m hy thanh, ®¹i t­îng v« h×nh.")
 end;
 
 function ch5()
-	Talk(1,"","µÀÉúÒ»£¬Ò»Éú¶ş£¬¶şÉúÈı£¬ÈıÉúÍòÎï.")
+	Talk(1,"","§¹o sinh nhÊt, nhÊt sinh nhŞ, nhŞ sinh tam, tam sinh v¹n vËt.")
 end;

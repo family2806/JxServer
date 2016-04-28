@@ -1,7 +1,7 @@
 Include("\\script\\missions\\bw\\bwhead.lua");
 
 function main()
-	Say("ÄãÏëÒªÀë¿ª±ÈÈüÀŞÌ¨ÊÇ°É?",3,"ÊÇµÄ£¬ÎÒÀë¿ªÒ»ÏÂ!/yes","ÎÒÊÇ¶Ó³¤, ÏëÒªÖªµÀµÚ¼¸¸öÉÏ³¡±ÈÈü./OnShowKey","²»ĞèÒª/no")
+	Say("C¸c h¹ muèn rêi l«i ®µi ph¶i kh«ng?",3,"§óng vËy, ta muèn rêi khái ®©y!/yes","Ta lµ ®éi tr­ëng, ta muèn biÕt thø tù thi ®Êu./OnShowKey","Kh«ng cÇn/no")
 end;
 
 function yes()

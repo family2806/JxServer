@@ -19,7 +19,7 @@ function main()
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_ItemEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 --	if zhongqiu0808_PlayerLimit() ~= 1 then

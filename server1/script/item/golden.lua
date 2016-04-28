@@ -25,12 +25,12 @@ function GetDesc(nItem)
 	nEndDay = mod( floor( nTime/ 1000000 ), 100 );
 
 	if (nP5 ~= 1000) then
-		str  = format("<color=Blue> %dÔÂ%dÈÕ»Æ½ð²ÊÆ±\n±àºÅ:%d-%d", nEndMonth, nEndDay,nTime,nGlbId)
+		str  = format("<color=Blue>%dth¸ng%dngµy vÐ sè Hoµng Kim\nM· sè:%d-%d", nEndMonth, nEndDay,nTime,nGlbId)
 	else
-		str = format("<color=Yellow> ÑÅµäÊ¢»áÖÐ¹ú¶Ó½±ÅÆÊý¾º²Â»Æ½ð²ÊÆ±\n±àºÅ:%d-%d,¶Ò½±ÈÕÆÚ9ÔÂ1ÈÕ-9ÔÂ2ÈÕ22£º30 - 24£º00" ,nTime,nGlbId);
+		str = format("<color=Yellow> VÐ sè  ¸ vËn héi \n Sè thø tù: %d-%d, ngµy nhËn th­ëng tõ 22h30 ®Õn 24h00  ngµy 01-09 ®Õn 2-09" ,nTime,nGlbId);
 		return str
 	end
 
-	return str.."\n¶Ò½±Ê±¶Î£ºÑÅµäÊ¢»á»î¶¯ÆÚ¼äµÄ22:30 --- 24:00";
+	return str.."\nThêi gian ®æi th­ëng: Thêi gian ho¹t ®éng ¸ vËn héi tõ 22:30 ~ 24:00";
 	
 end

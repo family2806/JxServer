@@ -5,7 +5,7 @@ tbKillDailyTask = tbDailyTask:new()
 tbKillDailyTask.TSK_DAILY_TASK_COMPLETE_STATE = TSK_DAILY_TASK_COMPLETE_COUNT;
 tbKillDailyTask.nStateBit = 1;
 tbKillDailyTask.szConfigPath = "\\settings\\task\\dailytask\\killmonster.txt";
-tbKillDailyTask.szTaskName = "É±¹ÖÈÎÎñ";
+tbKillDailyTask.szTaskName = "NhiÖm vô S¸t qu¸i ";
 
 tbKillDailyTask.TSK_KILL_TASK_ID = TSK_KILL_TASK_ID;
 tbKillDailyTask.TSK_KILL_COUNT = TSK_KILL_COUNT;
@@ -33,7 +33,7 @@ end
 
 function tbKillDailyTask:CheckCanAccept()
 	if (self:_CheckCanAccept() ~= 1) then
-		Talk(1,"",format("ÄÇ°ï»µÈË½ñÌì½«²»»áÔÙÀ´ÁË£¬Ã÷Ìì¼ÌĞøÂé·³%s Äã°ïÖúÅ¶",GetSex() == 1 and "½ã½ã" or "¸ç¸ç"))
+		Talk(1,"",format("C¸i ®¸m ng­êi xÊu ®ã h«m nay sÏ kh«ng d¸m ®Õn n÷a ®©u, ngµy mai tiÕp tôc nhê %s ng­¬i gióp ®ì nhĞ.",GetSex() == 1 and "ChŞ " or "Ca Ca"))
 		return nil;
 	end
 	return 1;
@@ -47,7 +47,7 @@ function tbKillDailyTask:AcceptTask()
 	if (self:IsHaveTask() == 1) then
 		local tbTask = self:GetTaskData(GetTask(self.TSK_KILL_TASK_ID));
 		if (tbTask ~= nil) then
-			Talk(1,"",format("ÕâÎ» %s, ÆğÂëÄãÒ²°ïÎÒ¸Ï×ßÄÇ°ï¼Ò»ï<color=green>%d<color>¸ö<color=yellow>%s<color>²ÅÍê³ÉÈÎÎñ£¬Äã¿ìµãÈ¥<color=red>%s<color> ¼ÌĞø´ò°ÜËûÃÇ°É", GetSex() == 1 and "½ã½ã" or "¸ç¸ç",  tbTask.nKillCount, tbTask.szMonsterName, tbTask.szMapName));
+			Talk(1,"",format("VŞ nµy %s, İt nhÊt ng­¬i còng gióp ta ®uæi c¸i lò ng­êi ®ã ®i<color=green>%d<color>c¸i<color=yellow>%s<color> míi hoµn thµnh nhiÖm vô, ng­¬i nhanh chãng ®i<color=red>%s<color> tiÕp tôc ®¸nh b¹i hä ®i", GetSex() == 1 and "ChŞ " or "Ca Ca",  tbTask.nKillCount, tbTask.szMonsterName, tbTask.szMapName));
 		end
 		return nil;
 	end
@@ -63,9 +63,9 @@ function tbKillDailyTask:AcceptTask()
 	SetTask(self.TSK_KILL_TASK_ID, nId);
 	SetTask(self.TSK_KILL_COUNT, 0);
 	
-	Talk(1,"",format("ÌıÊåÊåºÍÉôÉôËµ<color=red>%s<color> µÄ<color=yellow>%s<color> ºÜĞ×¶ñ£¬ÕâÎ»%s,Äã¿ÉÒÔ°ïÎÒ´òÍËÄÇ°ï»µÈË®ã<color=green>%d<color> ¸ö<color=red>%s<color> ¿ÉÒÔÂğ?", tbTask.szMapName, tbTask.szMonsterName, GetSex() == 1 and "½ã½ã" or "¸ç¸ç",  tbTask.nKillCount, tbTask.szMonsterName));
+	Talk(1,"",format("Nghe Thóc Thóc vµ ThÈm ThÈm nãi r»ng<color=red>%s<color> cña <color=yellow>%s<color> rÊt hung d÷, vŞ nµy %s, ng­¬i cã thÓ gióp ta ®¸nh ®uæi c¸i ®¸m ng­êi xÊu ®ã<color=green>%d<color> c¸i<color=red>%s<color> ®­îc kh«ng?", tbTask.szMapName, tbTask.szMonsterName, GetSex() == 1 and "ChŞ " or "Ca Ca",  tbTask.nKillCount, tbTask.szMonsterName));
 
-	WriteLog(format("[%s]\t%s\t%s\t%s","Ã¿ÈÕÈÎÎñ",GetName(), GetAccount(),format("½Ó´ò¹ÖÈÎÎñ£º»÷É±%d con %s",tbTask.nKillCount, tbTask.szMonsterName)))
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("NhËn nhiÖm vô giÕt qu¸i: kİch s¸t %d con %s",tbTask.nKillCount, tbTask.szMonsterName)))
 
 	return 1;
 end
@@ -90,12 +90,12 @@ function tbKillDailyTask:CheckCompleteTask()
 	local tbTask = self:GetTaskData(nTskId);
 	
 	if (self:IsHaveTask() ~= 1 or tbTask == nil) then
-		Talk(1,"",format("ÕâÎ» %s, ÕÒÎÒÓĞÊ²Ã´ÊÂÂğ?", GetSex() == 1 and "½ã½ã" or "¸ç¸ç"));
+		Talk(1,"",format("VŞ nµy %s, t×m ta cã chuyÖn g× kh«ng?", GetSex() == 1 and "ChŞ " or "Ca Ca"));
 		return nil;
 	end
 	
 	if (tbTask.nKillCount > nCount) then
-		Talk(1,"",format("ÕâÎ»%s, ÆğÂëÄãÒ²°ïÎÒ¸Ï×ßÄÇ°ï¼Ò»ï<color=green>%d<color>¸ö<color=yellow>%s<color> ²ÅÄÜÍê³ÉÈÎÎñ£¬Äã¿ìÈ¥<color=red>%s<color>¼ÌĞø´ò°ÜËûÃÇ°É", GetSex() == 1 and "½ã½ã" or "¸ç¸ç",  tbTask.nKillCount, tbTask.szMonsterName, tbTask.szMapName));
+		Talk(1,"",format("VŞ nµy %s, İt nhÊt ng­¬i còng gióp ta ®uæi c¸i lò ng­êi ®ã ®i<color=green>%d<color>c¸i<color=yellow>%s<color> míi hoµn thµnh nhiÖm vô, ng­¬i nhanh chãng ®i<color=red>%s<color> tiÕp tôc ®¸nh b¹i hä ®i", GetSex() == 1 and "ChŞ " or "Ca Ca",  tbTask.nKillCount, tbTask.szMonsterName, tbTask.szMapName));
 		return nil;
 	end
 	
@@ -114,7 +114,7 @@ function tbKillDailyTask:CompleteTask()
 	
 	self:_CompleteTask();
 	
-	WriteLog(format("[%s]\t%s\t%s\t%s","Ã¿ÈÕÈÎÎñ",GetName(), GetAccount(),format("Íê³ÉÉ±¹ÖÈÎÎñ£º»÷É±%d con%s",tbTask.nKillCount, tbTask.szMonsterName)));
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Hoµn thµnh nhiÖm cô giĞt qu¸i: kİch s¸t%d con%s",tbTask.nKillCount, tbTask.szMonsterName)));
 	AddStatData("richangrenwu_shaguaicishu")
 	return 1;
 end

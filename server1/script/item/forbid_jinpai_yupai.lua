@@ -30,25 +30,25 @@ function ForbidMap()
 	
 	for i = 1, getn(tbBATTLEMAP) do --map ËÎ½ð
 		if ( nMapId == tbBATTLEMAP[i] ) then
-			Msg2Player("ÄúÏÖÔÚ²»ÄÜÊ¹ÓÃÎïÆ·");
+			Msg2Player("Lóc nµy b¹n kh«ng thÓ sö dông vËt phÈm nµy");
 			return 1;
 		end
 	end	
 	
 	for i = 1, getn(tbForbidMap) do 
 		if (nSubWorldID == tbForbidMap[i]) then
-			Msg2Player("¶Ô²»Æð£¡ÄúÏÖÔÚÔÚÌØ±ðÇøÓò£¬²»ÄÜÊ¹ÓÃÎïÆ·!");
+			Msg2Player("Xin lçi! B¹n hiÖn ë khu vùc ®Æc biÖt, kh«ng thÓ sö dông vËt phÈm!");
 			return 1
 		end
 	end
 	
 	if (nSubWorldID >= 375 and nSubWorldID <= 386) then --map ËÎ½ð
-		Msg2Player("¶Ô²»Æð£¡ÄúÏÖÔÚÔÚÌØ±ðÇøÓò£¬²»ÄÜÊ¹ÓÃÎïÆ·!");
+		Msg2Player("Xin lçi! B¹n hiÖn ë khu vùc ®Æc biÖt, kh«ng thÓ sö dông vËt phÈm!");
 		return 1
 	end
 	
 	if (nSubWorldID >= 416 and nSubWorldID <= 511) then --·çÁê¶É
-		Msg2Player("¶Ô²»Æð£¡ÄúÏÖÔÚÔÚÌØ±ðÇøÓò£¬²»ÄÜÊ¹ÓÃÎïÆ·!");
+		Msg2Player("Xin lçi! B¹n hiÖn ë khu vùc ®Æc biÖt, kh«ng thÓ sö dông vËt phÈm!");
 		return 1
 	end
 	

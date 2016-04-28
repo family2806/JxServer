@@ -9,12 +9,12 @@ Include("\\script\\lib\\awardtemplet.lua")
 local _Limit = function(nNpcIdx)
 	
 	if (0 == GetCamp()) then
-		Msg2Player("Äã»¹Î´¼ÓÈëÃÅÅÉ£¬²»ÄÜÊ°È¡¹ûÊµ.")
+		Msg2Player("B¹n ch­a gia nhËp m«n ph¸i, kh«ng thÓ h¸i qu¶.")
 		return
 	end
 
 	if (0 == GetFightState() or GetLife(0) <= 0 or GetProtectTime() > 0 ) then
-		Msg2Player("²»ÄÜÊ°È¡¹ûÊµ.")
+		Msg2Player("kh«ng thÓ h¸i qu¶.")
 		return
 	end
 	
@@ -30,7 +30,7 @@ local _Limit = function(nNpcIdx)
 	
 	if (nGetSeedLevel ~= 3) then -- Èç¹û¼¶±ğ²»¶Ô,²»ÄÜ½øĞĞÊ°È¡
 		--ÕâÀï¸æËßÍæ¼Ò¼¶±ğ²»¶Ô,²»ÄÜÊ°È¡
-		Msg2Player("´ËÀà¹ûÊµÖ»ÓĞ120¼¶ÒÔÉÏµÄÍæ¼Ò¿ÉÒÔÊ°È¡")
+		Msg2Player("Lo¹i qu¶ nµy ng­êi ch¬i ph¶i tõ cÊp 120 trë lªn míi cã thÓ h¸i ®­îc ")
 		return
 	end;
 	
@@ -51,18 +51,18 @@ local _GetFruit = function(nNpcIdx, dwNpcId)
 	
 	DelNpc(nNpcIdx)
 	
-	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,907,1,0,0,0}, nExpiredTime = 10080}, "»Ô»ÍÒ¹", 1);
+	tbAwardTemplet:GiveAwardByList({tbProp = {6,1,907,1,0,0,0}, nExpiredTime = 10080}, "§ªm Huy Hoµng", 1);
 	--Ôİ¹Ø±Õ»î¶¯ĞÔÄÜ- Modified by DinhHQ - 20110427
-	--tbAwardTemplet:GiveAwardByList({tbProp = {6,1,2804,1,0,0,0}}, "»Ô»ÍÒ¹", 30);
+	--tbAwardTemplet:GiveAwardByList({tbProp = {6,1,2804,1,0,0,0}}, "§ªm Huy Hoµng", 30);
 	
 	tongaward_goldenseed();-- byÖ¾É½£¬°ï»áÖÜÄ¿±ê¹±Ï×¶È
 	--Msg2Player("ÄãµÃµ½ÁËÒ»¸ö»Æ½ğÖ®¹û¡£");
-	AddGlobalNews(format("´óÏÀÊ°È¡ÁË %s »Æ½ğÖ®¹û!!!",GetName()));
+	AddGlobalNews(format("§¹i hiÖp %s ®· h¸i ®­îc qu¶ Hoµng Kim!!!",GetName()));
 end
 
 
 local _OnBreak = function()
-	Msg2Player("¶Ï¶ÏĞøĞøÊÕ¼¯")
+	Msg2Player("Thu thËp ®øt ®o¹n")
 end
 
 function main()

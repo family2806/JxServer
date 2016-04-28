@@ -7,10 +7,10 @@ function OnTimer()
 		SetMissionV( MS_A_TIME, GetMissionV( MS_A_TIME ) + 1 )
 		if ( GetMissionV( MS_A_TIME ) < RUN_A_TIME ) then
 			local mm = RUN_A_TIME - GetMissionV( MS_A_TIME )
-			Msg2MSAll( MISSIONID, "±®√˚ ±º‰ªπ £"..mm.."∑÷÷”" )
+			Msg2MSAll( MISSIONID, "ThÍi gian b∏o danh cﬂn"..mm.."phÛt" )
 		elseif (GetMissionV( MS_A_TIME ) > RUN_A_TIME ) then
 			local mm = UP_A_TIME - GetMissionV( MS_A_TIME )
-			Msg2MSAll( MISSIONID, "±æ¬÷±»»¸Ω· ¯ ±º‰ªπ”–"..mm.."∑÷÷”" )
+			Msg2MSAll( MISSIONID, "ThÍi gian k’t thÛc thi Æ u vﬂng nµy cﬂn"..mm.."phÛt" )
 		end
 	end
 	
@@ -19,18 +19,18 @@ function OnTimer()
 			org_mapid = SubWorldIdx2ID( SubWorld )
 			new_mapid = org_mapid + 1
 			if (SubWorldID2Idx( new_mapid ) < 0) then
-				print( "ANNOUNCE: √ª”–Œ‰¡÷–¬–„¡™»¸»¸≥°!!!!MAPID = "..new_mapid )
+				print( "ANNOUNCE: Kh´ng c„ Æ u tr≠Íng thi Æ u m´n ph∏i ki÷t xu t!!!!MAPID = "..new_mapid )
 				return
 			end
 			SetMissionV( MS_STATE, 2 )
 			if (GetMSPlayerCount(MISSIONID, 0) < CP_PLNUM_LIMT) then
-				Msg2MSAll(MISSIONID, "±»»¸ ±º‰“—µΩ£¨”…”⁄±æ¥Œ±»»¸»À ˝≤ªπªÆÒ"..CP_PLNUM_LIMT.."»À£¨‘›Õ£“ª¥Œ±»»¸.")
+				Msg2MSAll(MISSIONID, "ThÍi gian thi Æ u Æ∑ Æ’n, do sË ng≠Íi thi Æ u l«n nµy kh´ng ÆÒ"..CP_PLNUM_LIMT.."ng≠Íi, tπm dıng thi Æ u 1 l«n.")
 				cp_clearplstate()
-				WriteLog(date( "%Y-%m-%d,%H:%M," ).."≈≈√˚µ⁄ "..GetMissionV( MS_ROUND ).."±æ¥Œ±»»¸»À ˝≤ªπªÆÒ"..CP_PLNUM_LIMT..", ‘›Õ£“ª¥Œ°£√≈≈…= "..checkmap( 1 ) )
+				WriteLog(date( "%Y-%m-%d,%H:%M," ).."hπng th¯ "..GetMissionV( MS_ROUND ).."sË ng≠Íi thi Æ u ki÷t xu t l«n nµy kh´ng ÆÒ"..CP_PLNUM_LIMT..", tπm dıng 1 l«n. M´n ph∏i= "..checkmap( 1 ) )
 				return
 			end
 
-			Msg2MSAll( MISSIONID, "“—µΩ±»»¸ ±º‰£¨À˘”–—° ÷Ω¯»Î»¸≥°" )
+			Msg2MSAll( MISSIONID, "ß∑ Æ’n giÍ thi Æ u, t t c∂ tuy”n thÒ vµo tr≠Íng Æ u" )
 			round = GetMissionV( MS_ROUND )
 			SubWorld = SubWorldID2Idx( new_mapid )
 			OpenMission( MATCH_MS_ID )
@@ -49,7 +49,7 @@ function OnTimer()
 			return
 		end
 		if ( mod( GetMissionV( MS_A_TIME ), UP_A_TIME ) == 0 ) then
-			resultstr = "≈≈√˚µ⁄ "..GetMissionV( MS_ROUND ).."–«∆⁄º∏"..checkmap( 1 ).."Œ‰¡÷–¬–„¡™»¸∏’∏’Ω· ¯£¨±»»¸ø™ º±®√˚."
+			resultstr = "hπng th¯ "..GetMissionV( MS_ROUND ).."th¯ m y"..checkmap( 1 ).."Thi Æ u m´n ph∏i ki÷t xu t vıa k’t thÛc. Vﬂng thi Æ u Æ∑ bæt Æ«u b∏o danh."
 			AddGlobalNews( resultstr )
 			SetMissionV( MS_ROUND, GetMissionV( MS_ROUND ) + 1 )
 			SetMissionV( MS_A_TIME, 0 )

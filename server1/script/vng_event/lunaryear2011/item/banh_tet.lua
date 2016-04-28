@@ -2,7 +2,7 @@ Include("\\script\\vng_event\\LunarYear2011\\item\\head.lua")
 
 function main(itemidx)
 	if (tbVNG_NLY2011_Itemhead:isExpired(itemidx) == 1) then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯Ê§È¥.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 	local nResult, szErrorMessage = tbVNG_NLY2011_Itemhead:useItem("banhtet")

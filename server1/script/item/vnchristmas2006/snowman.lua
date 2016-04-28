@@ -3,7 +3,7 @@ Include([[\script\item\vnchristmas2006\xmas_head.lua]])
 function main(nItemIdx)
 	local nDate = tonumber(GetLocalDate("%Y%m%d%H"));
 	if (nDate >= 2007011524) then
-		Say("ÌìÆøÑ×ÈÈ£¬Ñ©ÈËÒÑ¾­»¯ÎªË®ÁË.", 0);
+		Say("Thêi tiÕt nãng bøc, ng­êi tuyÕt ®· bŞ tan thµnh n­íc.", 0);
 		return 0;
 	end;
 	
@@ -15,6 +15,6 @@ function main(nItemIdx)
 end;
 
 function GetDesc(nItemIdx)
-	local szDesc = "\nÊ¹ÓÃÊ±ÏŞ: <color=blue>2007Äê1ÔÂ31ÈÕ0Ê±<color>"
+	local szDesc = "\nThêi h¹n sö dông<color=blue>0 giê ngµy 31 th¸ng 1 n¨m 2007<color>"
 	return szDesc;
 end

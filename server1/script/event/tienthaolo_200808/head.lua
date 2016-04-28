@@ -14,7 +14,7 @@ function get_thaolo()
 	local nTimes = 0;
 	
 	if check_thaolo_date() == 0 then
-		Say("´Ë´Î»î¶¯ÒÑ½áÊø.",0)
+		Say("Ho¹t ®éng lÇn nµy ®· kÕt thóc.",0)
 		return 0
 	end	
 	
@@ -25,9 +25,9 @@ function get_thaolo()
 		nTimes = 0
 	end
 	
-	strTalk = "ÔÚ 10/08/2008 - 10/09/2008Ê±¼äÄÚ£¬ÅóÓÑ½«»ñÔù8¸öÌØÐ§ÏÉ²ÝÂ¶¡£ ÏÉ²ÝÂ¶½«ÔÚÅóÓÑÊÕµ½µÄ2Ð¡Ê±ÄÚ·¢»Ó×÷ÓÃ¡£ÅóÓÑ»¹Ê£"..nTimes.." ´Î¡£Èç¹ûÊ±¼äµ½»¹Ã»ÁìÍêÏÉ²ÝÂ¶£¬Äú½«²»ÄÜÁìÁË."
+	strTalk = "Trong thêi gian 10/08/2008 - 10/09/2008 b»ng h÷u sÏ ®­îc tÆng 8 Tiªn Th¶o Lé ®Æc biÖt. Tiªn Th¶o Lé sÏ ph¸t huy t¸c dông trong vßng 2 giê ngay sau khi b»ng h÷u nhËn ®­îc. B»ng h÷u cßn "..nTimes.." lÇn. NÕu hÕt thêi h¹n kh«ng nhËn hÕt Tiªn Th¶o Lé b»ng h÷u sÏ kh«ng nhËn ®­îc n÷a."
 	
-	Say(strTalk,2,"ÎÒÏëÁì/say_yes","»¹²»ÐèÒª/say_no")
+	Say(strTalk,2,"Ta muèn nhËn/say_yes","Ch­a cÇn/say_no")
 	
 end
 
@@ -37,12 +37,12 @@ function say_yes()
 		if nUsedTime >= 0 and nUsedTime < 8 then
 			AddSkillState(440, 1, 1, 64800 * 2);
 			SetTask(TTL_GOT_TIME, GetTask(TTL_GOT_TIME) +1)
-			Say("ÏÉ²ÝÂ¶¿ªÊ¼·¢»Ó×÷ÓÃ",0)
-			Msg2Player("Äú»ñµÃ2Ð¡Ê±ÄÚµÄÏÉ²ÝÂ¶×÷ÓÃ")
-			WriteLog("[ÏÉ²ÝÂ¶»î¶¯\t"..date().." \tName:"..GetName().."\tAccount:"..GetAccount().." »ñµÃÏÉ²ÝÂ¶")
+			Say("Tiªn Th¶o Lé b¾t ®Çu ph¸t huy t¸c dông",0)
+			Msg2Player("B¹n nhËn ®­îc t¸c dông Tiªn Th¶o Lé trong 2 giê.")
+			WriteLog("[Ho¹t ®éng Tiªn Th¶o Lé]\t"..date().." \tName:"..GetName().."\tAccount:"..GetAccount().." NhËn ®­îc Tiªn Th¶o Lé")
 		else
-			Say("ÄúÒÑÁì¹ºÏÉ²ÝÂ¶ÁË",0)
-			Msg2Player("ÄúÒÑÁì¹º8¸öÏÉ²ÝÂ¶")
+			Say("Ng­¬i ®· nhËn ®ñ Tiªn Th¶o Lé!",0)
+			Msg2Player("B¹n nhËn ®· nhËn ®ñ 8 Tiªn Th¶o Lé.")
 			return 0
 		end	
 	end

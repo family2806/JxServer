@@ -6,42 +6,42 @@ tbFormulaList =
 	{
 		tbMaterial = 
 		{
-			{szName="½ð¾Õ»¨", tbProp={6, 1, 1064, 1}, nCount = 1},
-			{szName="°×¾Õ»¨", tbProp={6, 1, 1065, 1}, nCount = 1},
-			{szName="×Ï¾Õ»¨", tbProp={6, 1, 1066, 1}, nCount = 1},
+			{szName="Hoa Cóc Vµng", tbProp={6, 1, 1064, 1}, nCount = 1},
+			{szName="Hoa Cóc Tr¾ng", tbProp={6, 1, 1065, 1}, nCount = 1},
+			{szName="Hoa Cóc TÝm", tbProp={6, 1, 1066, 1}, nCount = 1},
 			
 		},
 		tbProduct =
 		{
-			{szName="¹úÇì»¨È¦",  tbProp={6, 1, 30033, 1, 0, 0}, nExpiredTime = 20100920},
+			{szName="Vßng Hoa Quèc Kh¸nh",  tbProp={6, 1, 30033, 1, 0, 0}, nExpiredTime = 20100920},
 		},	
 	},
 	[2] =
 	{
 		tbMaterial = 
 		{
-			{szName="½ð¾Õ»¨", tbProp={6, 1, 1064, 1}, nCount = 1},
-			{szName="°×¾Õ»¨", tbProp={6, 1, 1065, 1}, nCount = 1},
-			{szName="×Ï¾Õ»¨", tbProp={6, 1, 1066, 1}, nCount = 1},
-			{szName="Ãµ¹å", tbProp={6, 1, 1438, 1}, nCount = 1},
+			{szName="Hoa Cóc Vµng", tbProp={6, 1, 1064, 1}, nCount = 1},
+			{szName="Hoa Cóc Tr¾ng", tbProp={6, 1, 1065, 1}, nCount = 1},
+			{szName="Hoa Cóc TÝm", tbProp={6, 1, 1066, 1}, nCount = 1},
+			{szName="Hoa Hång", tbProp={6, 1, 1438, 1}, nCount = 1},
 		},
 		tbProduct =
 		{
-			{szName="¶ÀÁ¢»¨È¦",  tbProp={6, 1, 30034, 1, 0, 0}, nExpiredTime = 20100920},
+			{szName="Vßng Hoa §éc LËp",  tbProp={6, 1, 30034, 1, 0, 0}, nExpiredTime = 20100920},
 		},	
 	},
 	[3] =
 	{
 		tbMaterial = 
 		{
-			{szName="½ð¾Õ»¨", tbProp={6, 1, 1064, 1}, nCount = 1},
-			{szName="°×¾Õ»¨", tbProp={6, 1, 1065, 1}, nCount = 1},
-			{szName="×Ï¾Õ»¨", tbProp={6, 1, 1066, 1}, nCount = 1},
-			{szName="Ãµ¹å", tbProp={6, 1, 1438, 1}, nCount = 1},
+			{szName="Hoa Cóc Vµng", tbProp={6, 1, 1064, 1}, nCount = 1},
+			{szName="Hoa Cóc Tr¾ng", tbProp={6, 1, 1065, 1}, nCount = 1},
+			{szName="Hoa Cóc TÝm", tbProp={6, 1, 1066, 1}, nCount = 1},
+			{szName="Hoa Hång", tbProp={6, 1, 1438, 1}, nCount = 1},
 		},
 		tbProduct =
 		{
-			{szName="×ÔÓÉ»¨È¦",  tbProp={6, 1, 30035, 1, 0, 0}, nExpiredTime = 20100920},
+			{szName="Vßng Hoa Tù Do",  tbProp={6, 1, 30035, 1, 0, 0}, nExpiredTime = 20100920},
 		},	
 	},
 }
@@ -50,10 +50,10 @@ tbFormulaList =
 function ExChangeItem_main()
 	
 	local tbOpp = {}
-	local str = "<#> ´óÏÀÏë»»ÄÄÖÖ½±Àø ?";
-	tinsert(tbOpp,"ÎÒÏë»»¹úÇì»¨È¦(1 ½ð¾Õ»¨ + 1 °×¾Õ»¨ + 1 ×Ï¾Õ»¨ + 2 Íò)/#DoExChangeItem(1)");
-	tinsert(tbOpp,"ÎÒÏë»»¶ÀÁ¢»¨È¦(1 ½ð¾Õ»¨ + 1 °×¾Õ»¨ + 1 ×Ï¾Õ»¨ + 1 ºìÃµ¹å)/#DoExChangeItem(2)");
-	tinsert(tbOpp,"ÎÒÏë»»×ÔÓÉ»¨È¦((1 ½ð¾Õ»¨ + 1 °×¾Õ»¨ + 1 ×Ï¾Õ»¨ + 1 ºìÃµ¹å)/#DoExChangeItem(3)");
+	local str = "<#> §¹i hiÖp muèn ®æi phÇn th­ëng nµo ?";
+	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa Quèc Kh¸nh(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 2 V¹n)/#DoExChangeItem(1)");
+	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa §éc LËp(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 Hoa Hång §á)/#DoExChangeItem(2)");
+	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa Tù Do((1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 Hoa Hång §á)/#DoExChangeItem(3)");
 	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
@@ -66,20 +66,20 @@ end
 
 function DoExChangeItem(numIndexExchange)
 	if (CheckMaterial(numIndexExchange)~=1) then
-		Talk(1, "", "²»¹»Ô­ÁÏ»»ÎïÆ·£¬Çë¼ì²é");
+		Talk(1, "", "Kh«ng ®ñ nguyªn liÖu ®æi vËt phÈm, xin ®¹i hiÖp kiÓm tra l¹i");
 		return
 	end
 	if CalcFreeItemCellCount() < 5 then
-		Talk(1, "", "×°±¸²»×ã5¿ÕÎ».");
+		Talk(1, "", "Hµnh trang kh«ng ®ñ 5 « trèng.");
 		return
 	end
 	if (numIndexExchange == 1) then
 		if (GetCash() < 20000 ) then
-			Talk(1, "", "»»¹úÇì»¨È¦ÐèÒª2 ÍòÁ½ !");
+			Talk(1, "", "§æi Vßng Hoa Quèc Kh¸nh cÇn 2 v¹n l­îng !");
 			return
 		end
 		if Pay(20000) ~= 1 then
-			Msg2Player("¿ÛÒøÁ½Ê§°Ü !")
+			Msg2Player("Trõ ng©n l­îng thÊt b¹i !")
 			return
 		end
 	end
@@ -96,7 +96,7 @@ function ConsumeMaterial(numtbMaterial)
 		local tbProp = tbItem.tbProp
 		local numItem = tbItem.nCount
 		if ConsumeEquiproomItem(numItem, tbProp[1], tbProp[2], tbProp[3], tbProp[4]) ~= 1 then
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."»»»¨È¦"..GetAccount().."\t"..GetName().."\t".."»»ÎïÆ·Ê§°Ü!")	
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."§æi Vßng Hoa"..GetAccount().."\t"..GetName().."\t".."§æi vËt phÈm thÊt b¹i !")	
 			return
 		end
 	end
@@ -127,8 +127,8 @@ function AddItemExchange(numtbMaterial)
 		ITEM_SetExpiredTime(nIndex, 20100919);
 		SyncItem(nIndex)
 		local strItem = GetItemName(nIndex)
-		Msg2Player("Äã»ñµÃ"..strItem)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."»»»¨È¦"..GetAccount().."\t"..GetName().."\t".."»»ÎïÆ· "..strItem)
+		Msg2Player("B¹n nhËn ®­îc "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."§æi Vßng Hoa"..GetAccount().."\t"..GetName().."\t".."§æi vËt phÈm  "..strItem)
 	end
 end
 

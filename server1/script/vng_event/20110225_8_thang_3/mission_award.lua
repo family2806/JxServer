@@ -13,15 +13,15 @@ function tbVNGWD2011_Mission:SongJinAward(nRank)
 	local szNote = ""
 	local nItemCount = 0
 	if (nRank == 3000) then
-		szNote =  "[VNG][8thang3][ËÎ½ð 3000]";
+		szNote =  "[VNG][8thang3][Tèng Kim 3000]";
 		nItemCount = 20
 	else if (nRank == 1000)then
-			szNote =  "[VNG][8thang3][ËÎ½ð1000]";
+			szNote =  "[VNG][8thang3][Tèng Kim 1000]";
 			nItemCount = 10
 		end
 	end
 	
-	local tbAward = {szName="Ãæ°ü",tbProp={6,1,30096,1,0,0},nExpiredTime=20110314}
+	local tbAward = {szName="B¸nh M×",tbProp={6,1,30096,1,0,0},nExpiredTime=20110314}
 	PlayerFunLib:GetItem(tbAward, nItemCount,  szNote)
 end
 
@@ -31,8 +31,8 @@ function tbVNGWD2011_Mission:COT_Award(nBatch)
 	end
 	
 	if (nBatch == 17) then
-		local szNote = "[VNG][8thang3][´³¹Ø17]"	
-		local tbAward = {szName="Ãæ°ü",tbProp={6,1,30096,1,0,0},nExpiredTime=20110314}
+		local szNote = "[VNG][8thang3][V­ît ¶i 17]"	
+		local tbAward = {szName="B¸nh M×",tbProp={6,1,30096,1,0,0},nExpiredTime=20110314}
 		PlayerFunLib:GetItem(tbAward, 10,  szNote)
 	end
 	

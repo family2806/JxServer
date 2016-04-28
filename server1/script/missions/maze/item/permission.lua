@@ -9,9 +9,9 @@ function main(nItemIndex)
 		return 1
 	end
 	if (player:GetLevel() < 120) then
-		player:Say("120¼¶ÒÔÉÏ²ÅÄÜÊ¹ÓÃÓñÁúÁîÅÆ.")
+		player:Say("CÊp 120 trë lªn míi cã thÓ sö dông Ngäc Long LÖnh Bµi.")
 	elseif (MazePermission:CheckPermission(player) == 1) then
-		player:Say("Ã¿Î»Íæ¼ÒÖ»ÄÜÊ¹ÓÃÓñÁúÁîÅÆÒ»´Î")
+		player:Say("Mçi ng­êi ch¬i chØ ®­îc sö dông Ngäc Long LÖnh Bµi mét lÇn")
 	else
 		MazePermission:Permit(player, nil)
 		AddStatDataCanEnterMazeCount(1)

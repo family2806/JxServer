@@ -4,34 +4,34 @@ MASKFREE_SWITH = 1;		--1:Open
 											--nil:Close
 
 TB_MASKFREE_1 = {
-	{"Ãæ¾ß- Âä¹â", 369},
-	{"Ãæ¾ß- ÒøÑ¿", 370},
-	{"Ãæ¾ß- Ëªµ¶", 371},
-	{"Ãæ¾ß- Àäµ¶", 372},
-	{"Ãæ¾ß- º®Ç¹", 373},
-	{"Ãæ¾ß- ±¼À×", 374},
-	{"Ãæ¾ß- ¶À²½", 375},
-	{"Ãæ¾ß- ½µ´¸", 376},
-	{"Ãæ¾ß- ³àÕÆ", 377},
-	{"Ãæ¾ß- ÀÉÙº", 378},
+	{"MÆt n¹ - L¹c Quang", 369},
+	{"MÆt n¹ - Ng©n Nha", 370},
+	{"MÆt n¹ - S­¬ng §ao", 371},
+	{"MÆt n¹ - L·nh §ao", 372},
+	{"MÆt n¹ - Hµn Th­¬ng", 373},
+	{"MÆt n¹ - B«n L«i", 374},
+	{"MÆt n¹ - §éc Bé ", 375},
+	{"MÆt n¹ - Gi¸ng Chïy", 376},
+	{"MÆt n¹ - XÝch Ch­ëng", 377},
+	{"MÆt n¹ - Lang Bæng", 378},
 	--{"",},
 }
 TB_MASKFREE_2 = {
-	{"Ãæ¾ß-ÕÅ×ÚÕý", 379},
-	{"Ãæ¾ß- ÁøÇàÇà", 380},
-	{"Ãæ¾ß- ÉÈ¿Í", 381},
+	{"MÆt n¹ - Tr­¬ng T«ng ChÝnh", 379},
+	{"MÆt n¹ - LiÔu Thanh Thanh", 380},
+	{"MÆt n¹ - PhiÕn Kh¸ch", 381},
 }
 
 TB_MASKFREE_3 = {
-	{"Ãæ¾ß- Ðþ¾õ´óÊ¦", 382},
-	{"Ãæ¾ß- ÁúÎå", 383},
+	{"MÆt n¹ - HuyÒn Gi¸c §¹i S­ ", 382},
+	{"MÆt n¹ - Long Ngò ", 383},
 }
 
 TB_MASKFREEINFO_BYBIT = {
 	--BIT		MASKTYPE					TABLE-MASK
-	[1] = {"5000 Ô½ÄÏ¶ÜµÄÃæ¾ß ", TB_MASKFREE_1},
-	[2] = {"20000 Ô½ÄÏ¶ÜµÄÃæ¾ß ", TB_MASKFREE_2},
-	[3] = {"60000 Ô½ÄÏ¶ÜµÄÃæ¾ß ", TB_MASKFREE_3},
+	[1] = {"MÆt n¹ lo¹i 5000 VND ", TB_MASKFREE_1},
+	[2] = {"MÆt n¹ lo¹i 20000 VND ", TB_MASKFREE_2},
+	[3] = {"MÆt n¹ lo¹i 60000 VND", TB_MASKFREE_3},
 --	[4] = {},
 --	[5] = {},
 --	[6] = {},
@@ -55,7 +55,7 @@ function takeMaskFree()
 	local nExtValue = GetExtPoint(6);
 	
 	if (nExtValue <= 0) then
-		Say("¿Í¹Ù²»¹»ÁìÈ¡ËÍÃæ¾ßÀñÎïµÄÌõ¼þ ", 0);
+		Say("Quý kh¸ch ch­a ®ñ ®iÒu kiÖn nhËn quµ tÆng MÆt n¹! ", 0);
 		return
 	end;
 	
@@ -65,9 +65,9 @@ function takeMaskFree()
 		end;
 	end;
 	
-	tinsert(aryMaskFree, "µÈÏÂ»ØÀ´ /no")
+	tinsert(aryMaskFree, "L¸t n÷a quay l¹i /no")
 	
-	Say("ÄãÏëÁìÄÄÖÖÃæ¾ß? ", getn(aryMaskFree), aryMaskFree);
+	Say("Quý kh¸ch muèn nhËn lo¹i mÆt n¹ nµo? ", getn(aryMaskFree), aryMaskFree);
 end;
 
 function sure2takeMaskFree(nbit)
@@ -77,7 +77,7 @@ function sure2takeMaskFree(nbit)
 	if (pay_extpoint_bit(6, nbit) == 1 and nItem > 0) then
 		local szname, np = unpack(tbMask[nItem]);
 		AddItem(0, 11, np, 1, 1, 1);
-		Say("ÕâÊÇÃæ¾ß"..szname..".¸ÐÐ»ÄãÖ§³Ö", 0);
+		Say("§©y lµ mÆt n¹ "..szname..". C¶m ¬n quý kh¸ch ®· ñng hé!", 0);
 		WriteLog("[MASKFREE]"..date().." Name:"..GetName().." Account:"..GetAccount().." take a mask : "..szname.." by bit:"..nbit);
 	else
 		print("ERROR!! PAY EXTPOINT6 FAIL! THE BIT:"..nbit)

@@ -11,10 +11,10 @@ function main(sel)
 		NewWorld(51, 1666, 3291)
 		SetFightState(1)						--Íæ¼Ò×ª»»³ÉÕ½¶·×´Ì¬
 	elseif (UTask_tr > 60*256) and (UTask_tr < 60*256+50) then
-		Talk(1,"","ÄãÃ»ÓĞ½«Îå°Ñ¶Ï½£¸øÍêÑÕºéÁÒ£¬²»ÄÜ½øÊ¥¶´.")
+		Talk(1,"","B¹n ch­a ®­a 5 thanh ®o¶n kiÕm cho Hoµn Nhan Hïng LiÖt, ch­a thÓ vµo Th¸nh ®éng.")
 		SetPos(1749, 3081)						--ÉèÖÃ×ß³öTrapµã
 	else
-		Talk(1,"","ÕâÊÇÌìÈÌ½ÌÊ¥¶´£¬½øÈ¥µÄÈË²»ÄÜ³öÀ´.")
+		Talk(1,"","§©y lµ Th¸nh ®éng Thiªn NhÉn gi¸o, nh÷ng ng­êi ®· vµo kh«ng thÓ trë ra.")
 		SetPos(1749, 3081)						--ÉèÖÃ×ß³öTrapµã
 	end
 end;

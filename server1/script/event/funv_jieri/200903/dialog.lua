@@ -7,7 +7,7 @@ local tbScoreClass = tbBaseClass:new()
 
 function tbScoreClass:_init(nCount)
 	self.nCount = nCount
-	self.szName = "»ıÀÛÖµ"
+	self.szName = "§iÓm tİch lòy"
 	
 end
 
@@ -29,21 +29,21 @@ end
 local _ReceiveNpcGife = function (nPoint, szLogTitle)
 	
 	if nPoint <= 0 then
-		Talk(1, "", "´óÏÀµÄÎïÆ·ÎŞ·¨¶Ò»»»ıÀÛÖµ")
+		Talk(1, "", "§¹i hiÖp bá vµo vËt ph¶m kh«ng ®æi ®­îc ®iÓm tİch lòy")
 		return
 	end
 	tbFunv0903.tbTask:AddScore(nPoint)
-	local szMsg = format("»ñµÃ %d »ıÀÛÖµ", nPoint)
+	local szMsg = format("Thu ®­îc %d ®iÓm tİch lòy", nPoint)
 	Msg2Player(szMsg)
 	WriteLog(format("[%s]\t%s\tAccount:%s\tName:%s\t%s.",szLogTitle,GetLocalDate("%Y-%m-%d %H:%M"), GetAccount(), GetName(), format("get score %d", nPoint) ))
 end
 
 local tbMaterial = 
 {
-	{szName="¿Úºì", tbProp={6, 1, 1960}, nScore = 8},
-	{szName="·¢¼Ğ", tbProp={6, 1, 1961}, nScore = 1},
-	{szName="¾µ×Ó", tbProp={6, 1, 1962}, nScore = 4},
-	{szName="Êá×Ó", tbProp={6, 1, 1963}, nScore = 2},
+	{szName="Thái Son", tbProp={6, 1, 1960}, nScore = 8},
+	{szName="KÑp Tãc", tbProp={6, 1, 1961}, nScore = 1},
+	{szName="G­¬ng", tbProp={6, 1, 1962}, nScore = 4},
+	{szName="L­îc", tbProp={6, 1, 1963}, nScore = 2},
 }
 
 
@@ -51,75 +51,75 @@ local tbScoreShop =
 {
 	[1] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(10),
 			{nJxb = 2e4}
 		},
-		tbProduct = {szName="½ğÏîÁ´", tbProp={6, 1, 1964, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
+		tbProduct = {szName="D©y chuyÒn", tbProp={6, 1, 1964, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
 	},
 	[2] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(10),
 			{nJxb = 2e4}
 		},
-		tbProduct = {szName="ÊÖïí", tbProp={6, 1, 1965, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
+		tbProduct = {szName="Thñ Tr¹c", tbProp={6, 1, 1965, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
 	},
 	[3] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(10),
 			{nJxb = 2e4}
 		},
-		tbProduct = {szName="¶ú»· ", tbProp={6, 1, 1966, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
+		tbProduct = {szName="Hoa tai ", tbProp={6, 1, 1966, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
 	},
 	[4] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(10),
 			{nJxb = 2e4}
 		},
-		tbProduct = {szName="½äÖ¸", tbProp={6, 1, 1967, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime},
+		tbProduct = {szName="NhÉn", tbProp={6, 1, 1967, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime},
 	},
 	[5] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(35),
 			{nJxb = 6e4}
 		},
-		tbProduct = {szName="Î§½í", tbProp={6, 1, 1968, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime},
+		tbProduct = {szName="Kh¨n Quµng Cæ", tbProp={6, 1, 1968, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime},
 	},
 	[6] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀµÄ»ıÀÛÖµ»òÒøÁ½²»×ã£¬ÎŞ·¨¶Ò»»´ËÎïÆ·.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "§¹i hiÖp vÉn ch­a ®ñ ®iÓm tİch lòy hoÆc ng©n l­îng ®Ó ®æi vËt phÈm nµy.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			tbScoreClass:new(35),
 			{nJxb = 6e4}
 		},
-		tbProduct = {szName="ÏãË®", tbProp={6, 1, 1969, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
+		tbProduct = {szName="N­íc Hoa", tbProp={6, 1, 1969, 1, 0, 0}, nExpiredTime = tbFunv0903.nItemExpiredTime}, 
 	},
 }
 
@@ -128,7 +128,7 @@ local tbScoreShop =
 function tbFunv0903:DialogMain(nItemIndex, szDescLink)
 	
 	if self:IsActDate() ~= 1 then
-		Talk(1, "", "»î¶¯ÒÑ½áÊø.")
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 		return
 	end
 	
@@ -139,15 +139,15 @@ function tbFunv0903:DialogMain(nItemIndex, szDescLink)
 	
 	local tbSay = 
 	{
-		"<dec>"..szDescLink.."06-03-2009£¬24:00µ½15-03-2009¾ÙĞĞ»¶¶È¹ú¼Ê38¸¾Å®½Ú»î¶¯. ÓĞĞèÒª°ïÖúµÄÂğ?",
-		format("ÎÒÀ´ÁìÈ¡½õÄÒÊÂ¼ş/#%s:GetJinnang(%d, [[%s]])", self.szClassName, nItemIndex, szDescLink),
+		"<dec>"..szDescLink.."Ho¹t ®éng chµo mõng ngµy Quèc TÕ Phô N÷ 8 th¸ng 3 n¨m nay diÔn ra trong kho¶ng thêi gian tõ 06-03-2009 ®Õn 24:00 ngµy 15-03-2009. Ng­¬i cÇn ta gióp viÖc g×?",
+		format("Ta ®Õn nhËn cÈm nang sù kiÖn/#%s:GetJinnang(%d, [[%s]])", self.szClassName, nItemIndex, szDescLink),
 		
-		format("´óÏÀÓĞ¶àÉÙ»ıÀÛÖµÁË?/#%s:CheckMyScore()", self.szClassName),
-		format("´óÏÀÒª¶Ò»»Ò»Ğ©/#%s:BuyItemByScore(%d, [[%s]])", self.szClassName, nItemIndex, szDescLink),
-		"½áÊø¶Ô»°/OnCancel"
+		format("T¹i h¹ ®· tİch lòy ®­îc bao nhiªu ®iÓm råi?/#%s:CheckMyScore()", self.szClassName),
+		format("T¹i h¹ cÇn ®æi mét vµi thø/#%s:BuyItemByScore(%d, [[%s]])", self.szClassName, nItemIndex, szDescLink),
+		"KÕt thóc ®èi tho¹i/OnCancel"
 	}
 	if nItemIndex == nil or nItemIndex == -1 then
-		tinsert(tbSay, 3, format("´óÏÀÏë¶Ò»»³ÉÆ· [»ıÀÛÖµ]/#%s:GiveNpcGift(%d)", self.szClassName, nItemIndex))
+		tinsert(tbSay, 3, format("T¹i h¹ muèn ®æi c¸c nguyªn liÖu thµnh [§iÓm Tİch lòy]/#%s:GiveNpcGift(%d)", self.szClassName, nItemIndex))
 	end
 	
 	CreateTaskSay(tbSay)
@@ -158,15 +158,15 @@ function tbFunv0903:GetJinnang()
 	local bRet, szFailMsg = self:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(2, "", szFailMsg, "ÄãÉĞÎ´´ïµ½ÁìÈ¡ÎïÆ·µÄÌõ¼ş")
+		Talk(2, "", szFailMsg, "Ng­¬i ch­a ®ñ ®iÒu kiÖn ®Ó nhËn vËt phÈm nµy")
 		return
 	end
 	
 	if self.tbTask:GetIsGetJinNang() ~= 0 then
-		Say("ÛªÇïË®: Äã²»ÊÇÒÑ¾­ÁìÈ¡¹ı´ËÎïÆ·ÁËÂï?",1, "Õæ²»ºÃÒâË¼£¡ÔÚÏÂÍü¼ÇÁË./OnCancel")
+		Say("LÖ Thu Thñy: Ng­¬i ®· nhËn vËt phÈm nµy råi mµ?",1, "ThËt ng¹i qu¸! T¹i h¹ quªn mÊt./OnCancel")
 		return 
 	end
-	local tbItem = {szName="½õÄÒÊÂ¼ş", tbProp={6, 1, 1833, 1, 0, 0}, nExpiredTime = self.nComposeEndDate, tbParam = {self.nComposeEndDate, 1000}}
+	local tbItem = {szName="CÈm nang sù kiÖn", tbProp={6, 1, 1833, 1, 0, 0}, nExpiredTime = self.nComposeEndDate, tbParam = {self.nComposeEndDate, 1000}}
 	
 	tbAwardTemplet:GiveAwardByList(tbItem, "get by Funv0903")
 	self.tbTask:SetIsGetJinNang(1)
@@ -177,9 +177,9 @@ function tbFunv0903:CheckMyScore()
 	local bRet, szFailMsg = self:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(2, "", szFailMsg, "ÄãµÄ»ıÀÛÖµ²»¹»")
+		Talk(2, "", szFailMsg, "Ng­¬i ch­a ®ñ ®iÒu kiÖn ®Ó tİch lòy ®iÓm")
 	else
-		Talk(1, "", format("ÄãµÄ»ıÀÛÖµÎª: %d", nScore))	
+		Talk(1, "", format("§iÓm tİch lòy cña ®¹i hiÖp: %d", nScore))	
 	end
 	
 end
@@ -305,7 +305,7 @@ end
 function tbFunv0903:GiveNpcGift(nItemIndex)
 	
 	if self:IsActDate() ~= 1 then
-		Talk(1, "", "»î¶¯ÒÑ½áÊø.")
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 		return
 	end
 	
@@ -316,8 +316,8 @@ function tbFunv0903:GiveNpcGift(nItemIndex)
 		return
 	end
 	
-	local szTitle = "¶Ò»»»ıÀÛÖµ"
-	local szMaterial = "°ÑÎïÆ··Åµ½ÏÂÃæ"
+	local szTitle = "§æi ®iÓm tİch lòy"
+	local szMaterial = "H·y bá nguyªn liÖu vµo « bªn d­íi"
 	
 	nItemIndex = nItemIndex or -1
 	if tbItemJingnianshijian then
@@ -338,7 +338,7 @@ end
 
 function tbFunv0903:BuyItemByScore(nItemIndex, szDescLink)
 	if self:IsActDate() ~= 1 then
-		Talk(1, "", "»î¶¯ÒÑ½áÊø.")
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 		return
 	end
 	
@@ -354,12 +354,12 @@ function tbFunv0903:BuyItemByScore(nItemIndex, szDescLink)
 	if not self.tbScoreShop then
 		self.tbScoreShop = tbComposeListForJinNang:new("tbFunv0903_Shop", %tbScoreShop)
 	end
-	local szTitle = "ÎÒÓĞºÜ¶à¸÷Î»¿ÉÒÔÁìÈ¡»òÊ¹ÓÃµÄÎïÆ·. ÄãÏëÒªÄÄ¸öÎïÆ·?"
+	local szTitle = "Ta ®ang cã rÊt nhiÒu vËt phÈm mµ c¸c chŞ em phô n÷ th­êng hay sö dông. Ng­¬i muèn chän vËt phÈm nµo?"
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
-	local tbSay = self.tbScoreShop:MakeOptByProductName("ÎÒÒª¶Ò»»", nItemIndex, szDescLink)
+	local tbSay = self.tbScoreShop:MakeOptByProductName("T¹i h¹ muèn ®æi", nItemIndex, szDescLink)
 	tinsert(tbSay, 1, "<dec>"..szDescLink..szTitle)
-	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay)
 end
 

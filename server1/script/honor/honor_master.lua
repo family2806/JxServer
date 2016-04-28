@@ -15,30 +15,30 @@ tbHonor_Sys_2009.nHonor_QuestChance_Task = 2600 -- 0 Ã»ÓĞ´ğÌâ»ú»áÁË, 1 ÓĞÒ»´Î´ğÌ
 
 tbHonor_Sys_2009.tbMasterContent = 
 {
-	strTalk1 = "<dec><npc>ÎÒÊÇÕâÀïµÄÌÃÖ÷£¬ÕâÀïÉèÓĞµ±´úÊ®´ó¸ßÊÖµÄµñËÜ¡£Äã¿ÉÒÔËæ±ã²Î¹Û£¬µ«ÊÇ£¬²»ÄÜÅª»µÀïÃæÈÎºÎ¶«Î÷¡£´ËÍâ£¬ÕâÀïÓĞ1¸öĞ¡ÈÎÎñ£¬ÄãÏë²Î¼ÓÂğ£¿",
-	strTalk2 = "<dec><npc>ÕâÀï½Ğ×öÃûÈËÌÃ£¬Ò²ÊÇ¸øÎäÁÖÖĞµÄ¸÷´ó¸ßÊÖ·âÃûºÅµÄµØ·½£¬Ö»ĞèÒªµÃµ½ÊÀ¼ä¹«ÈÏÎª¸ßÊÖ£¬ÕâÀï¾Í»áÓĞÒ»¸öÈÃÈËÃÎÏëµÄµñËÜ¡£",
-	strTalk3 = "<dec><npc>Õâ¸öÈÎÎñºÜ¼òµ¥£¬ÄãÈ¥¹Û²ìÄÇĞ©µñËÜÊÇË­£¬È»ºó»ØÀ´ÕÒÎÒ£¬ÎÒ½«ÎÊÒ»Ğ©ÎÊÌâ£¬»Ø´ğ¶ÔµÄ»°£¬½±Àø¾ÍÊôÓÚÄã¡£",
-	strTalk4 = "<dec><npc>Äã×ßÕâÃ´¿ì°¡£¿×¼±¸ºÃÁËÃ»ÓĞ?",
-	strTalk5 = "<dec><npc>½ñÌìÄãÓĞ<color=green>%d<color> »ú»á»Ø´ğÎÊÌâ <enter>ÔÚ½­ºşÅÅÃû°ñ<color=yellow>%s<color> µÚ¼¸¸öÈË<color=yellow>%d<color> ÊÇË­?",
-	strTalk6 = "<dec><npc>½ñÌìÒÑ¾­»Ø´ğ´ËÎÊÌâÁË£¬ÇëµÈÃ÷ÌìÔÙ¼ÌĞø°É.",
-	strTalk7 = "<dec><npc>×£ºØ´ğ°¸ÕıÈ·!",
-	strTalk8 = "<dec><npc>ÕæÒÅº¶£¡´ğ°¸²»¶Ô£¬Ã÷ÌìÔÙÀ´°É",
-	strTalk9 = "<dec><npc>¹§Ï²´óÏÀ²Â¶ÔÁË£¡µ«ÊÇ×°±¸²»×ã¿ÕÎ»£¬ÇëÁôÏÂ<color=green>3<color> ¿ÕÎ»£¬È»ºóÔÙÀ´ÁìÈ¡",
-	strSelect1 = "ÇëÎÊÕâÀïÊÇÄÄÀï?/#tbHonor_Sys_2009:master_introduce()",
-	strSelect2 = "ÎÒÏë½ÓÈÎÎñ?/#tbHonor_Sys_2009:master_quest()",
-	strSelect3 = "ÎÊÌâÕæÊÇ¼òµ¥£¬ÎÒÈ¥È¥¾Í»ØÀ´./#tbHonor_Sys_2009:accept_quest()",
-	strSelect4 = "ÎÒÈ¥È¥¾Í»ØÀ´/#tbHonor_Sys_2009:doing_quest()",
-	strReturn = "ÎÒ»¹ÓĞÒ»Ğ©ÎÊÌâĞèÒªÎÊ/#tbHonor_Sys_2009:master_main()",
-	strCancel1 = "½áÊø¶Ô»°/#tbHonor_Sys_2009:master_onCancel()",
-	strCancel2 = "ÏÖÔÚÎÒÓĞÒ»µãÃ¦£¬ÉÔºò»ØÀ´./#tbHonor_Sys_2009:master_onCancel()",
-	strCancel3 = "ÎÒ»¹ÓĞÒ»Ğ©ÆäËûÊÂÇé£¬ÉÔºò»ØÀ´./#tbHonor_Sys_2009:master_onCancel()",
-	strCancel4 = "ÎÒÒÀÈ»Î´×¼±¸ºÃ./#tbHonor_Sys_2009:master_onCancel()",
+	strTalk1 = "<dec><npc>Ta lµ ®­êng chñ ë ®©y, n¬i ®©y ®Æt nh÷ng bøc ®iªu kh¾c cña thËp ®¹i cao thñ ®­¬ng ®¹i. Ng­¬i cã thÓ tïy ı tham quan nh­ng kh«ng ®­îc lµm h­ háng bÊt cø thø g× trong ®ã. Ngoµi ra t¹i ®©y cã 1 nhiÖm vô nhá, ng­¬i cã muèn tham gia kh«ng?",
+	strTalk2 = "<dec><npc>N¬i ®©y ®­îc gäi lµ Danh Nh©n §­êng vµ còng lµ n¬i vinh danh c¸c ®¹i cao thñ trong vâ l©m, chØ cÇn ®­îc thÕ gian c«ng nhËn lµ cao thñ th× ë n¬i ®©y sÏ cã mét bøc t­îng mµ c¸c nh©n sü kh¸c ph¶i ao ­íc.",
+	strTalk3 = "<dec><npc>NhiÖm vô nµy rÊt ®¬n gi¶n, ng­¬i ®i quan s¸t nh÷ng bøc t­îng kia lµ ai råi quay trë vÒ ®©y t×m ta, ta sÏ hái mét sè c©u. Tr¶ lêi ®óng th× phÇn th­ëng sÏ thuéc vÒ ng­¬i!",
+	strTalk4 = "<dec><npc>Ng­¬i ®i nhanh thÕ? §· chuÈn bŞ xong ch­a?",
+	strTalk5 = "<dec><npc>H«m nay ng­¬i cã <color=green>%d<color> c¬ héi tr¶ lêi c©u hái <enter>Trong b¶ng xÕp h¹ng giang hå <color=yellow>%s<color> ng­êi thø<color=yellow>%d<color> lµ ai?",
+	strTalk6 = "<dec><npc>H«m nay ®· tr¶ lêi c©u hái nµy råi, xin ®îi ngµy mai h·y tiÕp tôc.",
+	strTalk7 = "<dec><npc>Chóc mõng c©u tr¶ lêi ®óng!",
+	strTalk8 = "<dec><npc>ThËt ®¸ng tiÕc! C©u tr¶ lêi kh«ng chİnh x¸c, ngµy mai h·y ®Õn l¹i nhĞ!",
+	strTalk9 = "<dec><npc>Chóc mõng ®¹i hiÖp ®· ®o¸n ®óng c©u hái! Nh­ng hµnh trang kh«ng ®ñ chç, xin mêi ®Ó thõa  <color=green>3<color> « trèng trong hµnh trang råi ®Õn nhËn l¹i nhĞ!",
+	strSelect1 = "Xin hái ®©y lµ n¬i nµo?/#tbHonor_Sys_2009:master_introduce()",
+	strSelect2 = "Ta muèn nhËn nhiÖm vô/#tbHonor_Sys_2009:master_quest()",
+	strSelect3 = "C©u hái thËt ®¬n gi¶n, ta ®i xong vÒ ngay./#tbHonor_Sys_2009:accept_quest()",
+	strSelect4 = "§· chuÈn bŞ xong/#tbHonor_Sys_2009:doing_quest()",
+	strReturn = "Ta cßn mét sè vÊn ®Ò cÇn hái/#tbHonor_Sys_2009:master_main()",
+	strCancel1 = "KÕt thóc ®èi tho¹i/#tbHonor_Sys_2009:master_onCancel()",
+	strCancel2 = "B©y giê ta cã chót viÖc bËn, sÏ quay l¹i sau./#tbHonor_Sys_2009:master_onCancel()",
+	strCancel3 = "Ta cßn mét sè viÖc kh¸c, sÏ quay l¹i sau./#tbHonor_Sys_2009:master_onCancel()",
+	strCancel4 = "Ta vÉn ch­a chuÈn bŞ xong./#tbHonor_Sys_2009:master_onCancel()",
 }
 
 tbHonor_Sys_2009.tb_reward = 
 {
     {
-        {szName = "ÏÉ²İÂ¶", tbProp={6, 1, 71, 1, 0, 0}, nCount = 3, nBindState = -2}
+        {szName = "Tiªn Th¶o Lé ", tbProp={6, 1, 71, 1, 0, 0}, nCount = 3, nBindState = -2}
     }
 }
 	

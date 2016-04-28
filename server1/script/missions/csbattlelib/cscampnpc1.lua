@@ -6,20 +6,20 @@ function main()
 	if (GetMissionV(1) == 1) then 
 			--Î´½øÈëÕ½³¡ÅÔ¹Û
 			if (GetTaskTemp(JOINSTATE) == 0) then
-				Say("ÄãÏë¼ÓÈë»Æ·½»¹ÊÇ×Ï·½?", 4, "ÎÒÏë¼ÓÈë»Æ·½ /ChooseCamp", "ÎÒÏë¼ÓÈë×Ï·½ /ChooseCamp", "ÎÒÏëÏÈ¹Û²ì, Ö®ºóÔÙËµ! /ChooseCamp", "ÎÒÏëÏë¿´/OnCancel");
+				Say("B¹n muèn tham gia phe Vµng hay phe Tİm?", 4, "ta muèn gia nhËp vµo phe vµng /ChooseCamp", "ta muèn gia nhËp vµo phe tİm /ChooseCamp", "Ta muèn quan s¸t tr­íc ®·, sÏ nãi chuyÖn sau! /ChooseCamp", "§Ó ta nghÜ l¹i xem /OnCancel");
 				return
 			--ÕıÔÚÅÔ¹Û
 			else
 				if (GetCurCamp() == 0) then 
-					Say("ÄãÏë¼ÓÈë»Æ·½»¹ÊÇ×Ï·½?", 4, "ÎÒÏë¼ÓÈë»Æ·½ /ChooseCamp", "ÎÒÏë¼ÓÈë×Ï·½ /ChooseCamp", "ÎÒÏëÒ»Ïë /OnCancel", "ÎÒÏëÀë¿ªÕ½³¡. /ChooseLeave");
+					Say("B¹n muèn tham gia phe Vµng hay phe Tİm?", 4, "ta muèn gia nhËp vµo phe vµng /ChooseCamp", "ta muèn gia nhËp vµo phe tİm /ChooseCamp", "§Ó ta nghÜ l¹i xem /OnCancel", "Ta muèn rêi khái chiÕn tr­êng. /ChooseLeave");
 					return
 				else
-					Say("ÄãÏëÀë¿ªÕ½³¡Âğ?", 2, "àÅ, ÊÇµÄ/ChooseLeave", "ÎÒ»¹Ã»´òÍê£¬»¹²»ÏëÀë¿ª. /OnCancel");	
+					Say("Ng­¬i muèn rêi khái chiÕn tr­êng ­?", 2, "V©ng, Ta muèn ra /ChooseLeave", "Ta vÉn ch­a ®¸nh xong, ch­a muèn ra. /OnCancel");	
 					return
 				end
 			end
 	else
-		Say("»¹Ã»ÓĞµ½Õ½¶·Ê±¼ä!",0);
+		Say("HiÖn vÉn ch­a ®Õn thêi gian chiÕn ®Êu!",0);
 		return
 	end;
 end;

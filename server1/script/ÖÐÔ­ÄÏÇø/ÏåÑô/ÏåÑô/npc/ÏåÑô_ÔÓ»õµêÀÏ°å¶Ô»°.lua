@@ -8,28 +8,28 @@ Include("\\script\\global\\global_zahuodian.lua");
 function main(sel)
 	UTask_wd = GetTask(5);
 	if (UTask_wd == 20*256+40) and (HaveItem(66) == 1) then
-		Talk(2, "", "Äã¿ÉÒÔ°ïÎÒĞŞ²¹Õâ¼şµÀÅÛÂğ?", "ÎÒ¶ù×ÓÉÏÎäµ±É½Õª²ÏÒ¶±»»ğÀÇ¶´ÀïµÄÀÇ<color=Red><color> ¸øµğ×ßÁË£¬Ë­¿ÉÒÔ°ïÎÒ¾È¾ÈËû?!","¾ÈÈË½ô¼±£¬ÎÒ°ïÄã´«´ï¸øÍ¬°û!")
+		Talk(2, "", "Nµy chñ gia, «ng cã thÓ gióp ta söa tÊm ®¹o bµo nµy?", "Con trai ta lªn Vâ §ang s¬n h¸i l¸ d©u t»m bŞ sãi hoang trong <color=Red>Háa Lang ®éng<color> ha ®i mÊt. Ai cã thÓ cøu ®­îc con ta?!","Cøu ng­êi lµ khÈn cÊp, ta göi l¹i ®¹o bµo chç «ng!")
 		SetTask(5, 20*256+50)
 		DelItem(66)
-		AddNote("ÔÚÏåÑôÕÒµ½ÔÓ»õÆÌÀÏ°å£¬ÖªµÀËıµÄ¶ù×Ó±»Ò°ÀÇ<color=red>»ğÀÇ¶´ÀïµÄ<color> ¸øµó×ß. ")
-		Msg2Player("ÔÚÏåÑôÕÒµ½ÔÓ»õÆÌÀÏ°å£¬ÖªµÀËıµÄ¶ù×Ó±»Ò°ÀÇ<color=red>»ğÀÇ¶´ÀïµÄ<color> ¸øµó×ß. ")
+		AddNote("T¹i T­¬ng D­¬ng ®· t×m thÊy «ng chñ tiÖm t¹p hãa, ®­îc biÕt con trai cña bµ ta ®· bŞ sãi hoang <color=red>trong ®éng Háa Lang<color> tha ®i mÊt. ")
+		Msg2Player("T¹i T­¬ng D­¬ng ®· t×m thÊy «ng chñ tiÖm t¹p hãa, ®­îc biÕt con trai cña bµ ta ®· bŞ sãi hoang <color=red>trong ®éng Háa Lang<color> tha ®i mÊt. ")
 	elseif (UTask_wd == 20*256+50) then
 		if (HaveItem(67) == 1) then
-			Talk(3,"","¿Í¹ÙÊÇ¾ÈÎÒ¶ù×ÓµÄ¶÷ÈË£¬ĞèÒªÊ²Ã´°ïÖú¾¡¹ÜËµ!","¿ÚÓï°ïÎÒĞŞ¸ÄÕâ¼şµÀÅÛÂğ?","Ã»ÎÊÌâ£¬ÎªÁË±¨´ğÄã¾ÈÃüÖ®¶÷£¬ÎÒ²»ÊÕÇ®!")
+			Talk(3,"","Kh¸ch quan lµ ©n nh©n cøu m¹ng cña con ta, cÇn ta gióp g× xin cø nãi!","Cã thÓ gióp ta söa tÊm ®¹o bµo nµy?","Kh«ng thµnh vÊn ®Ò! §Ó ®Òn ¬n cøu m¹ng con ta, ta kh«ng lÊy tiÒn c«ng söa ¸o!")
 			DelItem(67)
 			AddEventItem(68)
-			Msg2Player("ÒÂ·şÒÑĞŞºÃ. ")
+			Msg2Player("¸o ®· ®­îc v?xong. ")
 			SetTask(5, 20*256+80)
-			AddNote("ÔÓ»õÆÌÀÏ°åÓÃ²ÏË¿²¼ĞŞºÃÁËÒÂ·ş. ")
+			AddNote("¤ng chñ tiÖm t¹p hãa T­¬ng D­¬ng dïng lôa t¬ t»m ®Ó söa l¹i chiÕc ¸o. ")
 		else
-			Say("ÎÒ¶ù×ÓÉÏÎäµ±É½Õª²ÏÒ¶±»»ğÀÇ¶´ÀïµÄÀÇ<color=Red><color> ¸øµğ×ßÁË£¬Ë­¿ÉÒÔ°ïÎÒ¾È¾ÈËû?!", 2, "ÎÒÖ»ÏëÂòÒ»Ğ©¶«Î÷¶øÒÑ/yes", "ÎÒÖªµÀÁË. /no")
+			Say("Con trai ta lªn Vâ §ang s¬n h¸i l¸ d©u t»m bŞ sãi hoang trong <color=Red>Háa Lang ®éng<color> ha ®i mÊt. Ai cã thÓ cøu ®­îc con ta?!", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 		end
 	elseif (UTask_wd == 20*256+80) and (HaveItem(68) == 0) then		-- µÀ¾ß¶ªÁË
 		AddEventItem(68)
-		Talk(1,"","¢n ¶÷ÈË£¬ÄãÍü¼ÇµÀÅÛÁË!")
+		Talk(1,"","¢n nh©n, ng­êi quªn lÊy ®¹o bµo råi!")
 	else
 		local Buttons = store_sel_extend();
-		Say("ÔÓ»õµêÀÏ°å£ºÄú¼ÒÒªÂòµãÃ´ÊÂ£¿ÊÇ³ÔµÄ£¬´©µÄ£¬»¹ÊÇÓÃµÄ£¿", getn(Buttons), Buttons);
+		Say("Con trai ta lªn Vâ §ang s¬n h¸i l¸ d©u t»m bŞ sãi hoang trong <color=Red>Háa Lang ®éng<color> ha ®i mÊt. Ai cã thÓ cøu ®­îc con ta?!", getn(Buttons), Buttons);
 	end
 end;
 

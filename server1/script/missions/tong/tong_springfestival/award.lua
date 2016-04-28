@@ -16,7 +16,7 @@ function springfestival_aword(nTongID, nWorkshopID)
 	--»ñµÃ»î¶¯·»µÈ¼¶
 	local nLevel = TWS_GetLevel(nTongID, nWorkshopID);
 	if (nLevel < 1 or nLevel > 10) then
-		Say("ÄãµÄ°ï»á»¹Î´½¨Éè¸Ã×÷·».", 1, "ÎÒÖªµÀÁË!/festival06_Cancal")
+		Say("Bang héi cña b¹n ch­a x©y dùng T¸c Ph­êng nµy.", 1, "Ta biÕt råi!/festival06_Cancal")
 		return 0;
 	end;
 	
@@ -25,24 +25,24 @@ function springfestival_aword(nTongID, nWorkshopID)
     SetTask(SF_COUNT_ONETIME, 0);
     SetTask(SF_TK_RANK, 0);
     if (nGetCount <= 0 or nRank <= 0) then
-        Say("»î¶¯·»×Ü¹Ü:ºÃÏñÄã»¹Î´È¥´òÄêÊŞ£¬ÏëÁì½±£¬¿ìÈ¥´òÄêÊŞÏÈ°É.", 1, "µÈ×ÅÇÆ/festival06_Cancal");
+        Say("Tæng qu¶n Ho¹t ®éng ph­êng: Ng­¬i dõng nh­ vÉn ch­a ®i ®¸nh niªn thó, muèn nhËn th­ëng h·y ra søc ®¸nh ®uæi niªn thó tr­íc.", 1, "H·y chê xem/festival06_Cancal");
         SetTaskTemp(193, 0);
         return
     end;
-    local strniaoshou = "Ì«Î£ÏÕÁË£¬Äã¸Õ¸Õ±»¹ÖÊŞÇÖÈë£¬ĞÒÔËµÄÊÇ´ó¼ÒºÏÁ¦¸Ï×ßÁË¹ÖÎï¡£ÎªÁË¸ĞĞ»ÄãµÄÓÂ¸Ò£¬ÎÒÓĞÒ»µãĞÄÒâ£¬Çë½ÓÄÉ¡£";
-    local stryongshi = "×öµÄºÜºÃ£¬ÄãÒÑÓÃÅÚÕÌ´òÖĞÁËÄêÊŞ <color=yellow>"..nGetCount.."<color> ´Î£¬ÅÅÃûµÚ?<color=yellow>"..nRank.."<color>, ÕâÊÇ¸øÄãµÄÀñÆ·£¬ÄÃ×Å°É¡£";
+    local strniaoshou = "Nguy hiÓm qu¸! Ng­¬i míi bŞ Qu¸i thó nhËp vµo, may mµ mäi ng­êi h¬p søc l¹i ®uæi Qu¸i thó ®i råi! §Ó ®¸p t¹ lßng dòng c¶m cña ng­¬i, ta cã chót lßng thµnh xin nhËn cho!";
+    local stryongshi = "Lµm rÊt tèt, ng­¬i ®· dïng ph¸o nĞm tróng niªn thó <color=yellow>"..nGetCount.."<color> lÇn, xÕp h¹ng thø <color=yellow>"..nRank.."<color>, ®©y lµ phÇn th­ëng dµnh cho ng­¬i, h·y nhËn lÊy!";
     
     festival_addaward(nRank);
     local isDouble = festival_double(nLevel);--¿´¿´ÊÇ·ñ»ñµÃË«±¶
 	if (1 == isDouble) then
-		strniaoshou = "ÕæÊÇĞÒÔË£¬Äã»ñµÃ <color=red>Ë«±¶½±Àø<color>, "..strniaoshou;
-		stryongshi = "ÕæÊÇĞÒÔË£¬Äã»ñµÃ <color=red>Ë«±¶½±Àø<color>, "..stryongshi;
+		strniaoshou = "ThËt may m¾n, ng­¬i ®· nhËn ®­îc <color=red>phÇn th­ëng nh©n ®«i<color>, "..strniaoshou;
+		stryongshi = "ThËt may m¾n, ng­¬i ®· nhËn ®­îc <color=red>phÇn th­ëng nh©n ®«i<color>, "..stryongshi;
 		festival_addaward(nRank);--Ë«±¶½±Àø
 	end;
     if (GetTask(TK_GROUPID) > SF_SMALLMAPCOUNT) then
-        Say(strniaoshou, 1, "ÁìÈ¡ÀñÎï./festival06_Cancal");
+        Say(strniaoshou, 1, "NhËn lÊy lÔ vËt./festival06_Cancal");
     else
-        Say(stryongshi, 1, "ÁìÈ¡ÀñÎï./festival06_Cancal");
+        Say(stryongshi, 1, "NhËn lÊy lÔ vËt./festival06_Cancal");
     end;
     SetTaskTemp(193, 0);
 end;
@@ -89,16 +89,16 @@ festival_tabRate = {
 };
 
 festival_tab_Goods = {
-{"¸£ÔµÂ¶(Ğ¡) ",	1,	122	},
-{"¸£ÔµÂ¶ (ÖĞ) ",	1,	123	},
-{"¸£ÔµÂ¶(´ó) ",	1,	124	},
-{"Ğş¾§3¼¶",	3,	147	},
-{"ÏÉ²İÂ¶ ",	1,	71	},
-{"Ğş¾§4¼¶",	4,	147	},
-{"Ğş¾§5¼¶",	5,	147	},
-{"Ğş¾§6¼¶",	6,	147	},
-{"Ğş¾§7¼¶",	7,	147	},
-{"½ÚÈÕÅÚÕÌ",	1,	1345 },	--¸ÅÂÊµ÷Îª0£¬²»²ú³ö
+{"Phóc Duyªn Lé (TiÓu) ",	1,	122	},
+{"Phóc Duyªn Lé (Trung) ",	1,	123	},
+{"Phóc Duyªn Lé (§¹i) ",	1,	124	},
+{"HuyÒn tinh cÊp 3",	3,	147	},
+{"Tiªn Th¶o Lé ",	1,	71	},
+{"HuyÒn Tinh cÊp 4",	4,	147	},
+{"HuyÒn Tinh cÊp 5",	5,	147	},
+{"HuyÒn Tinh cÊp 6",	6,	147	},
+{"HuyÒn Tinh cÊp 7",	7,	147	},
+{"Ph¸o hoa ngµy TÕt",	1,	1345 },	--¸ÅÂÊµ÷Îª0£¬²»²ú³ö
 };
 function festival_addaward(nRank)
     if (nRank > getn(festival_tabExp)) then
@@ -125,7 +125,7 @@ function festival_goodsaward(nRank)
 	else
 		AddItem(6, 1, festival_tab_Goods[nGoodsType][3], festival_tab_Goods[nGoodsType][2], 0, 0, 0);
 	end;
-	Msg2Player("Äã»ñµÃ <color=yellow>"..festival_tab_Goods[nGoodsType][1].."<color>.");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>"..festival_tab_Goods[nGoodsType][1].."<color>.");
 end;
 
 function festival_getgoodtype(nRank, nGroup)
@@ -153,13 +153,13 @@ function festival_expaward(nRank)
     end;
     local nCount = festival_tabExp[nRank];
 	AddOwnExp(nCount);
-	Msg2Player("Äã»ñµÃ<color=yellow>"..nCount.."<color>¾­ÑéÖµ")
+	Msg2Player("B¹n nhËn ®­îc<color=yellow>"..nCount.."<color>®iÓm kinh nghiÖm")
 end;
 
 function festival_addpkwan()
     local itemidx = random(1, 10);
     AddItem(6, 0, itemidx, 1, 0, 0, 0);
-    tab_pkwan_name = {"³¤ÃüÍè", "¼ÓÅÜÍè", "´óÁ¦Íè", "¸ßÉÁÍè", "¸ßÖĞÍè", "·ÉËÙÍè", "±ù·ÀÍè", "À×·ÀÍè", "»ğ·ÀÍè", "¶¾·ÀÍè"};
+    tab_pkwan_name = {"Tr­êng MÖnh hoµn", "Gia Bµo hoµn", "§¹i Lùc hoµn", "Cao ThiÓm hoµn", "Cao Trung hoµn", "Phi Tèc hoµn", "B¨ng Phßng hoµn", "L«i Phßng hoµn", "Háa Phßng hoµn", "§éc Phßng hoµn"};
     return tab_pkwan_name[itemidx];
 end;
 

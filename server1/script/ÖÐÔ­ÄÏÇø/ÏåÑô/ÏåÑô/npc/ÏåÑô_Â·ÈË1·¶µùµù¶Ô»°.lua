@@ -5,17 +5,17 @@ function main(sel)
 i = random(0,2)
 
 if (i == 0) then
-Say("·¶µùµù£ºÎÒÀÏ°éÈıÊ®ÄêÇ°¾ÍÈ¥ÊÀÀ²£¬ÕâÈıÊ®ÄêÀ´£¬ÎÒÊÇÓÖµ±µùÀ´ÓÖµ±Âè£¬×ÜËãÀ­³¶´óÁËÒ»Ë«¶ùÅ®¡£",0)
+Say("30 n¨m tr­íc vî ta ®· qua ®êi.30 n¨m nay võa lµm cha võa lµm mÑ nu«i nÊng hai ®øa con ta nªn ng­êi!",0)
 return
 end;
 
 if (i == 1) then
-Say("·¶µùµù£ºÈç½ñÊÀµÀ²»ºÃ£¬±ø»ÄÂíÂÒ£¬ÎÒ³ÔÁËÒ»±²×Ó¿à£¬µ½Í·À´Ò²²»Çó±ğµÄ£¬Ö»Çó¶ùÅ®¶¼Æ½Æ½°²°²¡£",0)
+Say("Ngµy nay thãi ®êi nhiÔu nh­ìng, binh m· lo¹n l¹c.Ta ®· sèng c¶ ®êi ®au khæ, ta ch¼ng mong g× h¬n chØ mong c¸c con ta ®­îc b×nh an.",0)
 return
 end;
 
 if (i == 2) then
-Say("·¶µùµù£ºÎÒËµÃ´ÊÂ¶¼²»»áÈÃ´óÇ¿È¥²Î¾ü¡£",0)
+Say("Ta nãi chuyÖn nµy ra v× kh«ng muèn ®Ó §¹i C­êng tßng qu©n.",0)
 end;
 
 end;

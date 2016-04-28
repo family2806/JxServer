@@ -6,9 +6,9 @@
 
 function tmnpc13_UTask_54()
 
-Talk(7, "", "ÕÒÎÒÓĞÊ²Ã´¼±ÊÂÂğ?", "ÎåÊ¦ĞÖ£¬×òÍíÄãÓĞÈ¥¹ı°µÆ÷·¿Âğ?", "§CÓĞ°¡£¬ÎÒÊÇÈ¥×öÇå½àµÄ£¬´òÉ¨Íê¾ÍÀë¿ªÁË!", "ÄãÓĞ¼ûµ½ÈıÊ¦ĞÖÂğ?", "ËµÀ´Ææ¹Ö£¬ÎÒ×òÍíÔÚ°µÆ÷·¿µÄºóÃæ¿´¼ûÒ»¸öÈËºÜÏñÈıÊ¦ĞÖ£¬ÎÒ½ĞÁËËûÒ»Éù£¬ÄÄÖªËû¼±´Ò´Ò¾Í×ßÁË£¬ÎÒ»¹ÒÔÎªÎÒÈÏ´íÁËÈËÄØ!", "Äã¿ÉÖªÈıÊ¦ĞÖÏÖÔÚºÎ´¦?", "ÎÒÔçÉÏ³öÃÅµÄÊ±ºò£¬¿´¼ûËûÍù <color=Red>Çà³ÇÉ½<color>·½ÏòÈ¥ÁË£¬¿ÉÄÜÈ¥ÁË<color=Red>ÏìË®¶´<color>, ÌıËµËûÔÚÄÇÀïÓĞĞ©ÅóÓÑ.")
+Talk(7, "", "T×m ta cã viÖc gÊp g× kh«ng?", "Ngò s­ huynh, tèi qua huynh cã ®i qua phßng ¸m khİ kh«ng?", "§Cã, ta vµo dän dÑp, quĞt nhµ xong th× ®i ra!", "Huynh cã thÊy Tam S­ huynh kh«ng?", "Nãi ra thËt l¹! Tèi qua ta thÊy mét ng­êi rÊt gièng Tam s­ huynh phİa sau phßng ¸m khİ. Ta cã gäi 1 tiÕng. Nµo ngê huynh Êy véi v· bá ®i, ta cßn cho lµ m×nh nh×n lÇm!", "Huynh cã biÕt Tam s­ huynh b©y giê ë ®©u kh«ng?", "S¸ng nay khi ta ra ngoµi, tr«ng thÊy huynh Êy ®i vÒ h­íng <color=Red>Thanh Thµnh s¬n<color>, cã thÓ ®i <color=Red>H­ëng Thñy ®éng <color>, nghe nãi cã vµi ng­êi b¹n cña huynh Êy ë ®ã.")
 SetTask(2, 56);
-AddNote("ÔÚ½­½ò´åÕÒµ½ÌÆÔª£¬ÖªµÀÌÆºÌÈ¥ÁËÇà³ÇÉ½µÄÏìË®¶´")
+AddNote("ë Giang T©n th«n t×m ®­îc §­êng Nguyªn, biÕt ®­îc §­êng Hßa ®i ®Õn H­ëng Thuû ®éng cña Thanh Thµnh s¬n ")
 
 end;
 

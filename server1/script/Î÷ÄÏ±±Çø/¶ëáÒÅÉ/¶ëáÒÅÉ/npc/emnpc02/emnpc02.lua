@@ -12,22 +12,22 @@ function main()
 	UTask_cy = GetTask(6)
 	Uworld36 = GetByte(GetTask(36),1)
 	if (Uworld36 == 0)	and (GetLevel() >= 10) and (GetFaction() ~= "emei") then			-- ÈÎÎñÆô¶¯
-		Say("¶ëÃ¼É½ÄËÌìµØÁéĞãÖ®µØ£¬Ó¹Ë×Ö®±²ÊÇÎŞÔµ½ø¶ëáÒµÄ¡£ÄãÉÏÉ½ÊÇÎªÁËÓÎÍæ£¬»¹ÊÇÏë°İÊ¦Ñ§ÒÕ?", 2, "ÈÃÎÒ¿´¿´. /Uworld36_get_yes", "ÎÒÈÏÊä/no")
+		Say("Nga Mi s¬n lµ vïng ®Êt thiªng liªng mét câi cña Nga Mi, kh«ng ®ãn tiÕp kÎ phµm trÇn dung tôc.Ng­¬i cã høng thó x«ng vµo Liªn Hoµn quan sao?", 2, "§Ó ta thö xem. /Uworld36_get_yes", "Ta chÊp nhËn thua cuéc /no")
 	elseif (Uworld36 == 20) then 					--Íê³ÉµÚÒ»¹Ø
-		Talk(1,"","Äã¿ÉÒÔ¼ÌĞøÏÂÃæµÄ¿¼ÑéÁË£¬ÏÂÒ»Î»ÊÇÊ¦ÃÃ<color=Red>ÇØÒĞ·ç<color> ÔÚ<color=Red>Ó­¿ÍÊ¯<color>")
+		Talk(1,"","Ng­¬i cã thÓ tiÕp tôc thö th¸ch, vŞ tiÕp theo lµ S­ muéi <color=Red>TÇn û Phong<color> ë <color=Red>Nghªnh Kh¸ch Th¹ch<color>")
 --	elseif ((UTask_em > 5*256) and (UTask_em < 10*256)) then 					--ÉĞÎ´ÈëÃÅ£¨¿ÉÈ¡ÏûÈëÃÅÈÎÎñ£©
 --		Say("Ò¶±ùºÛ£ºÒªÏë¼ÓÈë±¾ÅÉ£¬±ØĞëÏÈÍ¨¹ı²èÇÙÊéµÄ¿¼Ñé£¬È»ºóÔÙ´³×êÌìÆÂµÃµ½°×ÓñÈçÒâ£¬Äã¶¼×öµ½ÁËÂğ£¿",2,"ÎÒ²»Ïë¼ÓÈë¶ëáÒÅÉÁË/enroll_cancel","¼ÌĞø½ÓÊÜ¿¼Ñé/no")
 	elseif (GetFaction() == "emei") then   				--ÒÑ¾­ÈëÃÅ£¬ÉĞÎ´³öÊ¦
-		Talk(1,"","Ê¦ÃÃ£¬Äã°®ºÈ²èÂğ?")
+		Talk(1,"","S­ muéi! Cã thİch uèng trµ kh«ng?")
 	else							--ÆäËü¶Ô»°
-		Talk(1,"","Ê¯ÄëÇá·ÉÉªÉª³¾£¬ÈéÏãÅë³ö½¨Ïª´º¡£ÊÀ¼ä¾øÆ·ÈËÄÑÊ¶£¬ÏĞ¶Ô²è¾­Òä¹ÅÈË ..")
+		Talk(1,"","Th¹ch chiÓn khinh phi s¾t s¾t trÇn; Nhò h­¬ng phanh xuÊt tiÕn khª xu©n; ThÕ gian tuyÖt phÈm nh©n nan thøc; Nhµn ®èi trµ kinh øc cè nh©n..")
 	end
 end;
 
 function Uworld36_get_yes()
-	AddNote("¼ûÒ¶±ùºÛ£¬½Ó½øÈëÁ¬»·¹ØÈÎÎñ")
-	Msg2Player("¼ûÒ¶±ùºÛ£¬½Ó½øÈëÁ¬»·¹ØÈÎÎñ")
-	Talk(3, "select", "ºÜºÃ£¬ÃÃÃÃĞèÒª¹ı<color=Red>4¹Ø<color>, ÎÒÕâÀïÊÇ<color=Red>µÚÒ»¹Ø<color>.", "ÎÒ°®ºÈ²è£¬¾ÍÏÈÇëÄãÒûÈı±­²è£¬Ö»ÒªÄãÄÜ»Ø´ğ³öÈı¸ö¹ØÓÚ²èµÄÎÊÌâ£¬¾Í¿ÉÒÔË³Àû¹ı¹Ø!.", "Èç¹ûÄã´ğ²»³öÀ´£¬¾ÍÇë´òÏû°İÊ¦µÄÄîÍ·°É£¬ÎÒÃÇ¶ëáÒÅÉ¿É²»ÊÕË×ÈË!")
+	AddNote("GÆp DiÖp B¨ng Ng©n, nhËn nhiÖm vô x«ng Liªn Hoµn Quan ")
+	Msg2Player("GÆp DiÖp B¨ng Ng©n, nhËn nhiÖm vô x«ng Liªn Hoµn Quan ")
+	Talk(3, "select", "Kh¸ l¾m! Muéi cÇn qua <color=Red>4 ¶i<color>, chç cña ta lµ <color=Red>¶i thø 1<color>.", "Ta rÊt thİch uèng trµ, nµo cïng ta uèng 3 ly! ChØ cÇn muéi cã thÓ tr¶ lêi 3 c©u hái vÓ trµ, lµ cã thÓ qua ¶i thuËn lîi!.", "NÕu kh«ng tr¶ lêi ®­îc, h·y quay vÒ ®i! Nga Mi S¬n kh«ng hoan nghªnh nh÷ng kÎ tÇm th­êng!")
 end;
 
 function no()
@@ -35,36 +35,36 @@ end;
 
 ------------------- ÈëÃÅÈÎÎñÎÊ´ğ -----------------------
 function select()
-	Msg2Player("ÓÃÍêµÚÒ»±­²è£¬»Ø´ğµÚÒ»¸öÎÊÌâ. ")
-	Say("µÚÒ»±­ÊÇÌú¹ÛÒô£¬ÄãÖªµÀÌú¹ÛÒôÊôÓÚÄÄÒ»ÖÖ²èÂğ?", 3, "ºì²è/False1", "ÂÌ²è/False1", "ÎÚÁú²è/True1");
+	Msg2Player("Dïng xong chĞn trµ thø nhÊt, tr¶ lêi c©u hái thø nhÊt. ")
+	Say("Ly thø nhÊt lµ ThiÕt Quan ¢m, muéi cã biÕt ThiÕt Quan ¢m thuéc lo¹i trµ nµo kh«ng?", 3, "Hång trµ /False1", "Lôc trµ /False1", "¤ Long trµ. /True1");
 end;
 
 function False1()
-	Say("²»¶Ô²»¶Ô£¬ÔÙ¸øÄãÒ»´Î»ú»á£¬ºÃºÃÏëÏë¡£", 3, "ºì²è/False1", "ÂÌ²è/False1", "ÎÚÁú²è/True1");
+	Say("Kh«ng ®óng råi! Cho muéi thªm 1 lÇn c¬ héi, suy nghÜ thËt kü nhĞ!.", 3, "Hång trµ /False1", "Lôc trµ /False1", "¤ Long trµ. /True1");
 end;
 
 function True1()
-	Msg2Player("ÓÃÍêµÚ2±­²è£¬»Ø´ğµÚ2¸öÎÊÌâ. ")
-	Say("²»´í£¬ÇëºÈµÚ¶ş±­²è£ºÕâ±­ÊÇ°Ù»¨²è£¬ÓÃÜÔÀò¡¢Ãµ¹å¡¢Ç¾Ş±¡¢Çï¾Õ¡¢èÙ×Ó¡¢Ä¾Ï¬µÈÅäºÍÂÌ²èµ÷ÖÃ¶ø³É£¬¼¯²èÏãÓë»¨ÏãÓÚÒ»Ìå¡£ÄãÖªµÀËüÊÇÓÃÊ²Ã´Ë®³åÅİµÄÂğ?", 3, "ÈıÔÂÌìµÄÓê/False2", "ÉîÉ½ÀïµÄÈª/False2", "Ã·»¨ÉÏµÄÑ©/True2");
+	Msg2Player("Dïng xong chĞn trµ thø 2, tr¶ lêi c©u hái thø 2. ")
+	Say("Kh¸ l¾m! Mêi uèng ly trµ thø 2: Ly nµy lµ B¸ch Hoa Trµ ®­îc phèi hîp víi lôc trµ vµ c¸c loµi hoa nhµi, hoa hång, t­êng vi, thu cóc, chi tö, méc tª...H­¬ng trµ hßa quyÖn víi h­¬ng hoa thµnh mét thÓ. Muéi cã biÕt dïng lo¹i n­íc g× ®Ó pha trµ kh«ng?", 3, "N­íc m­a th¸ng 3 /False2", "Suèi ë Th©m s¬n /False2", "TuyÕt trªn hoa mai /True2");
 end;
 
 function False2()
-	Say("´ğ´íÁË£¬ÔÙÊÔÊÔ¡£", 3, "ÈıÔÂÌìµÄÓê/False2", "ÉîÉ½ÀïµÄÈª/False2", "Ã·»¨ÉÏµÄÑ©/True2");
+	Say("Tr¶ lêi sai råi, h·y thö l¹i ®i!", 3, "N­íc m­a th¸ng 3 /False2", "Suèi ë Th©m s¬n /False2", "TuyÕt trªn hoa mai /True2");
 end;
 
 function True2()
-	Msg2Player("ÇëºÈ×îºóÒ»±­²è£¬È»ºó»Ø´ğµÚÈı¸öÎÊÌâ")
-	Say("¿´À´Äã»¹ÓĞµãÁéĞÔ¡£×îºóÒ»±­ÊÇºï¿ı²è£¬´Ë²èÉú³¤ÔÚÁÖÛÖÓÄÉîµÄÇÍ±ÚÉÏ£¬ÈËÎŞ·¨ÅÊÔ®²ÉÕª£¬Ö»ÄÜÒÀ¿¿ÑµÁ·ÓĞËØµÄºï×Ó²ÉÕª£¬¹ÊÃûºï¿ı£¬Ê®·ÖÏ¡ÓĞ£¬ÄËÊÇÂÌ²èÖĞµÄ¼«Æ·¡£ÄãÖªµÀºï¿ı²èµÄ²úµØÊÇÄÄÀïÂğ?", 3, "»ÕÖİÌ«Æ½/True3", "¶´Í¥¾ıÉ½/False3", "º¼ÖİÎ÷ºş//False3");
+	Msg2Player("Ng­¬i h·y uèng ly trµ cuèi cïng ®i råi tr¶ lêi c©u hái thø 3 ")
+	Say("Xem ra muéi còng cßn chót th«ng minh. Ly cuèi cïng lµ HÇu Kh«i Trµ, lo¹i trµ nµy mäc trªn nói cao chãt vãt rõng s©u nói th¼m.Con ng­êi kh«ng thÓ h¸i vÒ, chØ cã thÓ huÊn luyÖn loµi khØ lªn nói h¸i vÒ, tõ ®ã míi cã c©u chuyÖn lµ HÇu kh«i, víi mu«n vµn vÊt v¶ míi cã ®­îc lo¹i lôc trµ quı hiÕm. Muéi cã biÕt n¬i s¶n xuÊt HÇu Kh«i Trµ ë ®©u kh«ng?", 3, "Th¸i B×nh, Huy Ch©u /True3", "Nói §éng §×nh Qu©n /False3", "T©y Hå, Hµng Ch©u /False3");
 end;
 
 function False3()
-	Say("ÄãÊÇ²»ÊÇ¼Ç´íÁË£¬ÔÙÏëÏë¡£", 3, "»ÕÖİÌ«Æ½/True3", "¶´Í¥¾ıÉ½/False3", "º¼ÖİÎ÷ºş/False3");
+	Say("Cã ph¶i muéi nhí nhÇm ch¨ng? H·y nghÜ l¹i ®i!", 3, "Th¸i B×nh, Huy Ch©u /True3", "Nói §éng §×nh Qu©n /False3", "T©y Hå, Hµng Ch©u /False3");
 end;
 
 function True3()
-	Talk(1,"","Äã¿ÉÒÔ¼ÌĞøÏÂÃæµÄ¿¼ÑéÁË£¬ÏÂÒ»Î»ÊÇ<color=Red>ÇØÒĞ·ç<color>Ê¦ÃÃ£¬ËıÔÚ<color=Red>Ó­¿ÍÊ¯<color>¸½½ü")
+	Talk(1,"","Ng­¬i cã thÓ tiÕp tôc thö th¸ch, vŞ tiÕp theo lµ S­ muéi <color=Red>TÇn û Phong<color> ë <color=Red>Nghªnh Kh¸ch Th¹ch<color>")
 	Uworld36 = SetByte(GetTask(36),1,20)
 	SetTask(36, Uworld36)
-	AddNote("Äã´ğ¶Ô3¸öÎÊÌâ£¬Í¨¹ıµÚÒ»¹Ø. ")
-	Msg2Player("»Ø´ğ¶Ô3¸öÎÊÌâ£¬¾ÍËã¹ıÁËµÚÒ»¹Ø£¬È¥Ó­¿ÍÊ¯¼ûÊ¦ÃÃÇØÒĞ·ç½ÓÏÂÃæµÄ¿¼Ñé")
+	AddNote("B¹n tr¶ lêi chİnh x¸c 3 c©u hái vÒ trµ, qua ¶i thø nhÊt. ")
+	Msg2Player("Tr¶ lêi ®óng 3 c©u hái vÒ trµ coi nh­ ng­¬i ®· qua cöa ¶i thø nhÊt, h·y ®Õn ' Nghªnh Kh¸ch Th¹ch' gÆp s­ muéi TÇn û Phong ®Ó nhËn thö th¸ch tiÕp theo ")
 end;

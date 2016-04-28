@@ -5,17 +5,17 @@ tbQuest=
 {
 	tbQuest2=
 	{
-		{szQuestName = "¾öÕ½ËÎ½ğ", nId = 1},
-		{szQuestName = "Ñ°ÕÒË®Ôô", nId = 2},
-		{szQuestName = "Ìá¸ßÃûÍû", nId = 3},
-		{szQuestName = "ÏûÃğµ¶Ñı", nId = 4}
+		{szQuestName = "QuyÕt chiÕn Tèng Kim", nId = 1},
+		{szQuestName = "Truy t×m Thñy TÆc", nId = 2},
+		{szQuestName = "N©ng cÊp Danh Väng", nId = 3},
+		{szQuestName = "Tiªu diÖt §ao Yªu", nId = 4}
 	},
 	tbQuest3=
 	{
-		{szQuestName = "ÊÕ¼¯Ğş¾§", nId = 1},
-		{szQuestName = "ÊÕ¼¯ÃØÍ¼", nId = 2},
-		{szQuestName = "ÊÕ¼¯¸£Ôµ", nId = 3},
-		{szQuestName = "ÊÕ¼¯ÌôÕ½Áî", nId = 4}
+		{szQuestName = "Thu gom HuyÒn Tinh", nId = 1},
+		{szQuestName = "Thu gom MËt §å", nId = 2},
+		{szQuestName = "Thu gom Phóc Duyªn", nId = 3},
+		{szQuestName = "Thu gom Khiªu ChiÕn LÖnh", nId = 4}
 	}
 };
 function AcceptFirstQuest()
@@ -55,22 +55,22 @@ function QuestTongKim()
 	SetTask(Task_lag_TskID, 1)
 	local nCurScoreTK = GetTask(747)
 	SetTask(Task_SCore,nCurScoreTK)
-	Msg2Player("Çë´óÏÀÔö¼ÓËÎ½ğ»ı·Ö1000µã")
+	Msg2Player("§¹i hiÖp h·y t¨ng ®iÓm tİch lòy tèng Kim 1000 ®iÓm")
 end
 function QuestThuyTac()
 	SetTask(Task_lag_TskID, 2)
 	SetTask(Task_KillNPC, 0)
-	Msg2Player("Çë´óÏÀÏûÃğË®ÔôÍ·Áì")
+	Msg2Player("§¹i hiÖp h·y tiªu diÖt Thñy TÆc ®Çu lÜnh")
 end
 function QuestDanhVong()
 	SetTask(Task_lag_TskID, 3)
 	SetTask(Task_SCore, GetRepute())
-	Msg2Player("Çë´óÏÀÔö¼Ó50µãÃûÍûÖµ")
+	Msg2Player("§¹i hiÖp h·y t¨ng ®iÓm Danh Väng 50 ®iÓm")
 end
 function QuestDaoYeu()
 	SetTask(Task_lag_TskID, 4)
 	SetTask(Task_KillNPC, 0)
-	Msg2Player("Çë´óÏÀÏûÃğÎ÷ÉñÃíÄÚµÄ4¸öµ¶Ñı")
+	Msg2Player("§¹i hiÖp h·y tiªu diÖt 4 tªn §ao Yªu ë S¬n ThÇn MiÕu")
 end
 
 function FinishSecondQuest()
@@ -78,9 +78,9 @@ function FinishSecondQuest()
 			if (GetTask(747) >= GetTask(Task_SCore) + 1000) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 2)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³ÉµÚ¶şÁ¬»·ÈÎÎñ£¬´óÏÀ¿ÉÒÔ¼ÌĞø½ÓµÚÈıÁ¬»·ÈÎÎñ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô liªn hoµn thø 2, §¹i hiÖp cã thÓ nhËn tiÕp nhiÖm vô liªn hoµn thø 3")
 			else
-				Talk(1, "", "´óÏÀÎ´Íê³ÉÈÎÎñ !");
+				Talk(1, "", "§¹i hiÖp ch­a hoµn thµnh nhiÖm vô !");
 				return
 			end
 		end
@@ -88,9 +88,9 @@ function FinishSecondQuest()
 			if (GetTask(Task_KillNPC) == 1) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 2)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³ÉµÚ¶şÁ¬»·ÈÎÎñ£¬´óÏÀ¿ÉÒÔ¼ÌĞø½ÓµÚÈıÁ¬»·ÈÎÎñ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô liªn hoµn thø 2, §¹i hiÖp cã thÓ nhËn tiÕp nhiÖm vô liªn hoµn thø 3")
 			else
-				Talk(1, "", "´óÏÀÎ´Íê³ÉÈÎÎñ!");
+				Talk(1, "", "§¹i hiÖp ch­a hoµn thµnh nhiÖm vô !");
 				return
 			end
 		end
@@ -98,9 +98,9 @@ function FinishSecondQuest()
 			if (GetRepute() >= GetTask(Task_SCore)+50) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 2)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³ÉµÚ¶şÁ¬»·ÈÎÎñ£¬´óÏÀ¿ÉÒÔ¼ÌĞø½ÓµÚÈıÁ¬»·ÈÎÎñ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô liªn hoµn thø 2, §¹i hiÖp cã thÓ nhËn tiÕp nhiÖm vô liªn hoµn thø 3")
 			else
-				Talk(1, "", "´óÏÀÎ´Íê³ÉÈÎÎñ!");
+				Talk(1, "", "§¹i hiÖp ch­a hoµn thµnh nhiÖm vô !");
 				return
 			end
 		end
@@ -108,9 +108,9 @@ function FinishSecondQuest()
 			if (GetTask(Task_KillNPC) >= 4) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 2)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³ÉµÚ¶şÁ¬»·ÈÎÎñ£¬´óÏÀ¿ÉÒÔ¼ÌĞø½ÓµÚÈıÁ¬»·ÈÎÎñ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô liªn hoµn thø 2, §¹i hiÖp cã thÓ nhËn tiÕp nhiÖm vô liªn hoµn thø 3")
 			else
-				Talk(1, "", "´óÏÀÎ´Íê³ÉÈÎÎñ!");
+				Talk(1, "", "§¹i hiÖp ch­a hoµn thµnh nhiÖm vô !");
 				return
 			end
 		end
@@ -140,69 +140,69 @@ end
 
 function QuestHuyenTinh()
 		SetTask(Task_lag_TskID, 1)
-		Msg2Player("Çë´óÏÀÉÏ½»Ò»¸ö5¼¶Ğş¾§")
+		Msg2Player("§¹i hiÖp h·y giao nép 1 HuyÒn Tinh cÊp 5")
 end
 function QuestMatDo()
 		SetTask(Task_lag_TskID, 2)
-		Msg2Player("Çë´óÏÀÉÏ½»10¸öÉñÃØ¾íÖá")
+		Msg2Player("§¹i hiÖp h·y giao nép 10 MËt §å ThÇn Bİ")
 end
 function QuestPhucDuyen()
 		SetTask(Task_lag_TskID, 3)
-		Msg2Player("Çë´óÏÀÉÏ½»1¸ö¸£ÔµÂ¶£¨´ó£©)")
+		Msg2Player("§¹i hiÖp h·y giao nép 1 Phóc Duyªn Lé(lín)")
 end
 function QuestKCL()
 		SetTask(Task_lag_TskID, 4)
-		Msg2Player("Çë´óÏÀÉÏ½»2¸öÌôÕ½Áî")
+		Msg2Player("§¹i hiÖp h·y giao nép 2 Khiªu ChiÕn LÖnh")
 end
 
 function FinishThirdQuest()
 		--check cue Exp
 		local curexp = GetExp()
 		if (curexp < 0) then
-			Talk(1, "", "´óÏÀÕı´¦ÓÚ¾­ÑéÖµ¸ºÖµ£¬²»ÄÜÁì½±!.");
+			Talk(1, "", "§¹i hiÖp ®ang bŞ ©m ®iÓm kinh nghiÖm, kh«ng thÓ nhËn th­ëng !.");
 			return
 		end
-		GiveItemUI( "½»ÎïÆ·ÈÎÎñ", "ÎÒÒªµÄ¶«Î÷ÄãÕÒµ½ÁËÂğ", "yestask", "no" );
+		GiveItemUI( "NhiÖm vô giao vËt phÈm", "Nh÷ng thø ta cÇn ng­¬i t×m ®­îc ch­a", "yestask", "no" );
 end
 function yestask(nCount)
 		if (GetTask(Task_lag_TskID)==1) then
 			if (CheckIQuestItem(nCount,6,1,147,5,1)==1) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 3)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³É½ñÌìµÄÁ¬»·ÈÎÎñ! ¸óÏÂ»ñµÃ2000000000¾­ÑéÖµ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh chuçi nhiÖm vô liªn hoµn cña ngµy h«m nay! C¸c h¹ nhËn  2000000000 ®iÓm kinh nghiÖm")
 				--Bonus 20ÒÚ¿Éµş¼Ó¾­ÑéÖµ
 				tl_addPlayerExp(2000000000);
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."Íê³ÉÈÎÎñ»ñµÃ2000000000¾­ÑéÖµ")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."hoµn thµnh chuçi nhiÖm vô nhËn nhËn  2000000000 ®iÓm kinh nghiÖm")
 			end
 		end
 		if (GetTask(Task_lag_TskID)==2) then
 			if (CheckIQuestItem(nCount,6,1,196,0,10)==1) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 3)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³É½ñÌìµÄÁ¬»·ÈÎÎñ! ¸óÏÂ»ñµÃ2000000000¾­ÑéÖµ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh chuçi nhiÖm vô liªn hoµn cña ngµy h«m nay! C¸c h¹ nhËn  2000000000 ®iÓm kinh nghiÖm")
 				--Bonus 20ÒÚ¿Éµş¼Ó¾­ÑéÖµ
 				tl_addPlayerExp(2000000000);
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."Íê³ÉÈÎÎñ»ñµÃ2000000000¾­ÑéÖµ")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."hoµn thµnh chuçi nhiÖm vô nhËn nhËn  2000000000 ®iÓm kinh nghiÖm")
 			end
 		end
 		if (GetTask(Task_lag_TskID)==3) then
 			if (CheckIQuestItem(nCount,6,1,124,0,1)==1) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 3)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³É½ñÌìµÄÁ¬»·ÈÎÎñ! ¸óÏÂ»ñµÃ2000000000¾­ÑéÖµ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh chuçi nhiÖm vô liªn hoµn cña ngµy h«m nay! C¸c h¹ nhËn  2000000000 ®iÓm kinh nghiÖm")
 				--Bonus 20ÒÚ¿Éµş¼Ó¾­ÑéÖµ
 				tl_addPlayerExp(2000000000);
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."Íê³ÉÈÎÎñ»ñµÃ2000000000¾­ÑéÖµ")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."hoµn thµnh chuçi nhiÖm vô nhËn nhËn  2000000000 ®iÓm kinh nghiÖm")
 			end
 		end
 		if (GetTask(Task_lag_TskID)==4) then
 			if (CheckIQuestItem(nCount,6,1,1499,0,2)==1) then
 				SetTask(Task_lag_TskID, 0)
 				SetTask(Task_IsFinishQuest, 3)
-				Msg2Player("¹§Ï²´óÏÀÒÑÍê³É½ñÌìµÄÁ¬»·ÈÎÎñ! ¸óÏÂ»ñµÃ2000000000¾­ÑéÖµ")
+				Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh chuçi nhiÖm vô liªn hoµn cña ngµy h«m nay! C¸c h¹ nhËn  2000000000 ®iÓm kinh nghiÖm")
 				--Bonus 20ÒÚ¿Éµş¼Ó¾­ÑéÖµ
 				tl_addPlayerExp(2000000000);
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."Íê³ÉÈÎÎñ»ñµÃ2000000000¾­ÑéÖµ")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."hoµn thµnh chuçi nhiÖm vô nhËn nhËn  2000000000 ®iÓm kinh nghiÖm")
 			end
 		end
 			
@@ -213,13 +213,13 @@ function CheckIQuestItem(nCount,nG,nD,nP,nLevel,nItemNeedCount)
 			local nItemIdx = GetGiveItemUnit(i);
 			itemgenre, detailtype, parttype = GetItemProp(nItemIdx)
 			if (itemgenre ~= nG or detailtype ~= nD or parttype ~= nP or GetItemLevel(nItemIdx) < nLevel) then	
-				Talk(1, "", "Çë´óÏÀÕıÈ·ÉÏ½»ÎÒĞèÒªµÄÎïÆ·!");
+				Talk(1, "", "§¹i hiÖp xin h·y giao ®óng vËt phÈm ta cÇn !");
 				return 0
 			end--if
 			nItemCount = nItemCount + GetItemStackCount(nItemIdx)
 		end --for
 		if (nItemCount ~= nItemNeedCount) then
-			Talk(1, "", "Çë´óÏÀÕıÈ·ÉÏ½»ÎÒĞèÒªµÄÎïÆ·ÊıÁ¿!");
+			Talk(1, "", "§¹i hiÖp xin h·y giao ®óng sè l­îng vËt phÈm ta cÇn !");
 			return 0
 		end
 		for i = 1, nCount do
@@ -248,13 +248,13 @@ function ReviewQuest2()
 		if (nTskID == nil) then
 			return
 		elseif (nTskID == 1) then 
-			szShow = "Çë´óÏÀÔö¼ÓËÎ½ğ»ı·Ö1000µã"
+			szShow = "§¹i hiÖp h·y t¨ng ®iÓm tİch lòy tèng Kim 1000 ®iÓm"
 		elseif (nTskID == 2) then
-			szShow = "Çë´óÏÀÏûÃğË®ÔôÍ·Áì"
+			szShow = "§¹i hiÖp h·y tiªu diÖt Thñy TÆc ®Çu lÜnh"
 		elseif (nTskID == 3) then
-			szShow = "Çë´óÏÀÔö¼Ó50µãÃûÍûÖµ"
+			szShow = "§¹i hiÖp h·y t¨ng ®iÓm Danh Väng 50 ®iÓm"
 		elseif (nTskID == 4) then
-			szShow = "Çë´óÏÀÏûÃğÎ÷ÉñÃíÄÚµÄ4¸öµ¶Ñı"
+			szShow = "§¹i hiÖp h·y tiªu diÖt 4 tªn §ao Yªu ë S¬n ThÇn MiÕu"
 		end
 		Talk(1, "", szShow);
 end
@@ -265,13 +265,13 @@ function ReviewQuest3()
 		if (nTskID == nil) then
 			return
 		elseif (nTskID == 1) then 
-			szShow ="Çë´óÏÀÉÏ½»Ò»¸ö5¼¶Ğş¾§"
+			szShow ="§¹i hiÖp h·y giao nép 1 HuyÒn Tinh cÊp 5"
 		elseif (nTskID == 2) then
-			szShow = "Çë´óÏÀÉÏ½»10¸öÉñÃØ¾íÖá"
+			szShow = "§¹i hiÖp h·y giao nép 10 MËt §å ThÇn Bİ"
 		elseif (nTskID == 3) then
-			szShow = "Çë´óÏÀÉÏ½»1¸ö¸£ÔµÂ¶£¨´ó£©)"
+			szShow = "§¹i hiÖp h·y giao nép 1 Phóc Duyªn Lé(lín)"
 		elseif (nTskID == 4) then
-			szShow = "Çë´óÏÀÉÏ½»2¸öÌôÕ½Áî"
+			szShow = "§¹i hiÖp h·y giao nép 2 Khiªu ChiÕn LÖnh"
 		end
 		Talk(1, "", szShow);
 end

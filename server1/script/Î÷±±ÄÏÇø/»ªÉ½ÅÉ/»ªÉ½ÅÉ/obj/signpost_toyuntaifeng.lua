@@ -1,7 +1,7 @@
---华山派通往云台峰的路标
+--华山派 V﹏ Уi phong的路标
 
 function main(sel)
 
-	Say("通往云台峰", 0)
+	Say(" V﹏ Уi phong", 0)
 
 end;

@@ -24,22 +24,22 @@ end
 
 tbItem=
 {
-	{strSelect ="Ã±×Ó"},
-	{strSelect ="ÒÂ·ş"},
-	{strSelect ="Ñü´ø"},
-	{strSelect ="ÊÖÌ×"},
-	{strSelect ="Ñ¥×Ó"},
-	{strSelect ="µÚÒ»ÎäÆ÷"},
-	{strSelect ="µÚ¶şÎäÆ÷"}
+	{strSelect ="nãn"},
+	{strSelect ="¸o"},
+	{strSelect ="th¾t l­ng"},
+	{strSelect ="bao tay"},
+	{strSelect ="giÇy"},
+	{strSelect ="vò khİ thø nhÊt"},
+	{strSelect ="vò khİ thø hai"}
 };
 tbWeapon=
 {
-	{strName ="µ¶"},
-	{strName ="·Éµ¶"},
-	{strName ="·ÉïÚ"},
-	{strName ="½£"},
-	{strName ="Ç¹"},
-	{strName ="°ô"}
+	{strName ="§ao"},
+	{strName ="Phi §ao"},
+	{strName ="Phi Tiªu"},
+	{strName ="KiÕm"},
+	{strName ="Th­¬ng"},
+	{strName ="Bæng"}
 };
 
 
@@ -47,22 +47,22 @@ tbWeapon=
 function GetItemTim()
 		local tbSeries={}
 		if (CheckObject() < 1) then
-			Talk(1, "", "Çë¼ì²é²Î¼ÓÌõ¼ş.");
+			Talk(1, "", "Xin h·y kiÓm tra l¹i ®iÒu kiÖn tham gia.");
 			return
 		end
 		if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetItemBonusTim) ~= 1) then
-			Talk(1, "", "¸Ã½±ÀøÖ»ÄÜÁìÒ»´Î !");
+			Talk(1, "", "PhÇn th­ëng nµy chØ nhËn 1 lÇn !");
 			return
 		end
 		if CalcFreeItemCellCount() < 60 then
-			Talk(1, "", "×°±¸²»×ã60¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 60 « trèng.");
 			return
 		end
 		SelectItemTim(tbSeries)
 end
 function SelectItemTim(tbSeries)
 	local tbOpp = {}
-	local str = "<#>Çë´óÏÀÑ¡Ôñ×°±¸";
+	local str = "<#>§¹i hiÖp, xin h·y chän trang bŞ ";
 	local szTempSeries = ToStrNumb(tbSeries)
 	str = str .. ShowSelItem(tbSeries)
 		
@@ -70,7 +70,7 @@ function SelectItemTim(tbSeries)
 			local strFunc = tbItem[i].strSelect
 			tinsert(tbOpp,"ÎÒÏëÁìÈ¡×°±¸".. strFunc.." /#SelectSeries("..i.. ",".."\""..strFunc.."\"".."," .. szTempSeries .. ")");
 	end
-	tinsert(tbOpp, "<#>ÍË³ö/CancelSelectItem")
+	tinsert(tbOpp, "<#>Tho¸t/CancelSelectItem")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
 		return
@@ -85,7 +85,7 @@ function SelectSeries(nIndex, strFunc, tbSeries)
 				
 				if (tbSeries[i][1] == strFunc) then
 					do
-						Talk(1,"",format("´óÏÀÕıÔÚÑ¡Ôñ×°±¸%sÁË£¬»¹ÏëÔÙÑ¡Ôñ°¡!!!", strFunc))
+						Talk(1,"",format("§¹i hiÖp ®· chän trang bŞ %s råi mµ cßn muèn chän n÷a sao!!!", strFunc))
 						return
 					end
 				end
@@ -93,15 +93,15 @@ function SelectSeries(nIndex, strFunc, tbSeries)
 	end
 
 	local szTempSeries = ToStrNumb(tbSeries)
-	if (strFunc ~= "µÚÒ»ÎäÆ÷" and strFunc ~= "µÚ¶şÎäÆ÷") then
+	if (strFunc ~= "vò khİ thø nhÊt" and strFunc ~= "vò khİ thø hai") then
 		local tbOpp = {}
-		local str = "<#> ´óÏÀÑ¡ÔñÎåĞĞÊôĞÔ";
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡½ğÏµ×°±¸/#SelectItem(0,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡Ä¾Ïµ×°±¸/#SelectItem(1,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡Ë®Ïµ×°±¸/#SelectItem(2,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡»ğÏµ×°±¸/#SelectItem(3,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡ÍÁÏµ×°±¸/#SelectItem(4,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
-		tinsert(tbOpp, "<#>ÍË³ö/CancelSelectItem")
+		local str = "<#> §¹i hiÖp chän lùa thuéc tİnh ngò hµnh ";
+		tinsert(tbOpp,"ÎÒÏëÁìÈ¡KimÏµ×°±¸/#SelectItem(0,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
+		tinsert(tbOpp,"ÎÒÏëÁìÈ¡MécÏµ×°±¸/#SelectItem(1,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
+		tinsert(tbOpp,"ÎÒÏëÁìÈ¡ThñyÏµ×°±¸/#SelectItem(2,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
+		tinsert(tbOpp,"ÎÒÏëÁìÈ¡HáaÏµ×°±¸/#SelectItem(3,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
+		tinsert(tbOpp,"ÎÒÏëÁìÈ¡ThæÏµ×°±¸/#SelectItem(4,".."\""..strFunc.."\"".. "," .. szTempSeries ..")");
+		tinsert(tbOpp, "<#>Tho¸t/CancelSelectItem")
 		if ( getn( tbOpp ) == 0 ) then
 			Say(str, 0);
 			return
@@ -109,12 +109,12 @@ function SelectSeries(nIndex, strFunc, tbSeries)
 		Say( str, getn( tbOpp ), tbOpp )
 	else
 		local tbOpp = {}
-		local str = "<#> Çë´óÏÀÑ¡ÔñÎäÆ÷"
+		local str = "<#> §¹i hiÖp xin h·y chän vò khİ"
 		for i=1, getn(tbWeapon) do
 			local strItemName = tbWeapon[i].strName
 			tinsert(tbOpp,"ÎÒÑ¡: " .. strItemName.."/#SelectItem(0,".."\""..strItemName.."\"".. "," .. szTempSeries .. ")");
 		end
-		tinsert(tbOpp, "<#>ÍË³ö/CancelSelectItem")
+		tinsert(tbOpp, "<#>Tho¸t/CancelSelectItem")
 		if ( getn( tbOpp ) == 0 ) then
 			Say(str, 0);
 			return
@@ -129,7 +129,7 @@ function SelectItem(nSeries, strFunc, tbSeries)
 				
 				if (tbSeries[i][1] == strFunc) then
 					do
-						Talk(1,"",format("´óÏÀÕıÔÚÑ¡Ôñ×°±¸%sÁË£¬»¹ÏëÔÙÑ¡Ôñ°¡!!!", strFunc))
+						Talk(1,"",format("§¹i hiÖp ®· chän trang bŞ %s råi mµ cßn muèn chän n÷a sao!!!", strFunc))
 						return
 					end
 				end
@@ -148,7 +148,7 @@ function SelectItem(nSeries, strFunc, tbSeries)
 		
 		if (nCount > 2) then
 			do
-					Talk(1,"","´óÏÀÒÑÑ¡ÔñÁËÔÊĞíµÄÎäÆ÷ÊıÁ¿!!!")
+					Talk(1,"","§¹i hiÖp ®· chän qu¸ sè l­îng vò khİ cho phĞp!!!")
 					return
 			end
 		end
@@ -158,13 +158,13 @@ function SelectItem(nSeries, strFunc, tbSeries)
 			SelectItemTim(tbSeries)
 		else
 			--tbItem = clone(tbItem)
-			local strTitle = "<#>¸óÏÂÒÑ¸ø×°±¸Ñ¡ÔñÁËÎåĞĞ "
+			local strTitle = "<#>C¸c h¹ ®· chän ngò hµnh cho c¸c trang bŞ: "
 			--for strItemName,numSeries in tbSeries do
 			strTitle = strTitle .. ShowSelItem(tbSeries)
 			local szTempSeries = ToStrNumb(tbSeries)
 			Say(strTitle, 2,
-			"ÎÒÏëÁìÈ¡/#ConfirmGetItem(" .. szTempSeries .. ")",
-			"·ÅÆú /CancelSelectItem")
+			"Ta muèn nhËn/#ConfirmGetItem(" .. szTempSeries .. ")",
+			"Hñy bá /CancelSelectItem")
 		end
 end
 function ConfirmGetItem(tbSeries)
@@ -187,17 +187,17 @@ function Addweapon(tbSeries)
 		 for i = 1, getn(tbSeries) do
 					local strItemName = tbSeries[i][1]
 					local nItemIndex = nil
-					if (strItemName == "µ¶") then
+					if (strItemName == "§ao") then
 						nItemIndex = AddQualityItem(2,0,0,1,10,0,0,30,219,9,290,135,-1)				
-					elseif (strItemName == "·Éµ¶") then
+					elseif (strItemName == "Phi §ao") then
 						nItemIndex = AddQualityItem(2,0,1,1,10,0,0,30,219,9,290,140,-1)						
-					elseif (strItemName == "·ÉïÚ") then
+					elseif (strItemName == "Phi Tiªu") then
 						nItemIndex = AddQualityItem(2,0,1,0,10,0,0,30,219,9,290,140,-1)						
-					elseif (strItemName == "½£") then
+					elseif (strItemName == "KiÕm") then
 						nItemIndex = AddQualityItem(2,0,0,0,10,0,0,30,219,9,290,135,-1)					
-					elseif (strItemName == "Ç¹") then
+					elseif (strItemName == "Th­¬ng") then
 						nItemIndex = AddQualityItem(2,0,0,3,10,0,0,30,219,9,290,125,-1)					
-					elseif (strItemName == "°ô") then
+					elseif (strItemName == "Bæng") then
 						nItemIndex = AddQualityItem(2,0,0,2,10,0,0,30,219,9,290,135,-1)					
 					end
 				
@@ -205,8 +205,8 @@ function Addweapon(tbSeries)
 					SetItemBindState(nItemIndex, -2);
 					SyncItem(nItemIndex)
 					local strItem = GetItemName(nItemIndex)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."»ñµÃ×Ï"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."nhËn ®­îc Tİm"..strItem)
 				end
 		end--for
 end
@@ -218,17 +218,17 @@ function ShowSelItem(tbSeries)
 				local strItemName =  tbSeries[i][1]
 				local nSeries=""
 				if (numSeries == 0) then
-					nSeries = "½ğ"
+					nSeries = "Kim"
 				elseif(numSeries == 1) then
-					nSeries = "Ä¾"
+					nSeries = "Méc"
 				elseif(numSeries == 2) then
-					nSeries = "Ë®"
+					nSeries = "Thñy"
 				elseif(numSeries == 3) then
-					nSeries = "»ğ"
+					nSeries = "Háa"
 				else
-					nSeries = "ÍÁ"
+					nSeries = "Thæ"
 				end
-				szTem = szTem .. "\n<color=yellow>"..strItemName.."<color> Ïµ<color=red>"..nSeries.."<color>"
+				szTem = szTem .. "\n<color=yellow>"..strItemName.."<color> hÖ <color=red>"..nSeries.."<color>"
 	end
 	return szTem
 end

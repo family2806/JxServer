@@ -74,14 +74,14 @@ function OnLeave(index)
 						PlayerIndex = tbplayer[nj]
 						YDBZ_restore(PlayerIndex,YDBZ_READY_MISSION,nteams)
 						NewWorld(world, pos_x, pos_y);
-						Msg2Player(format("ÓÉÓÚ<color=yellow>%s<color> Àë¿ª½ø³öÑ×µÛ±¦²ØµÄ´óÃÅ, ×é¶ÓÈËÊıÉÙÓÚ%sÈË£¬½«²»ÄÜ²Î¼Ó»î¶¯£¬²¢½«±»ÍÆ³öÕâÀï",pyname,YDBZ_TEAM_COUNT_LIMIT))
+						Msg2Player(format("Do v× <color=yellow>%s<color> rêi khái cöa ra vµo b¶o tµng viªm ®Õ, tæ ®éi cã sè ng­êi İt h¬n %s ng­êi, sÏ kh«ng thÓ nµo tham gia ho¹t ®éng vµ sÏ ®Èy ra khái n¬i nµy",pyname,YDBZ_TEAM_COUNT_LIMIT))
 			end
 			PlayerIndex = index	
 			SetMissionV(YDBZ_READY_TEAM,GetMissionV(YDBZ_READY_TEAM)-1)
-			Msg2MSAll(YDBZ_READY_MISSION,format("ÍÅ¶Ó<color=blue>%s<color> Àë¿ª½øÈëÑ×µÛ±¦²ØµÄ´óÃÅ",szteamname))
+			Msg2MSAll(YDBZ_READY_MISSION,format("§éi <color=blue>%s<color> rêi khái cöa vµo b¶o tµng Viªm §Õ",szteamname))
 
 		else
-			local szstr = format("×é¶ÓÍæ¼Ò<color=yellow>%s<color> Àë¿ª½øÈëÑ×µÛ±¦²ØµÄ´óÃÅ",GetName())
+			local szstr = format("Ng­êi ch¬i cña tæ ®éi<color=yellow>%s<color> rêi khái cöa vµo b¶o tµng Viªm §Õ",GetName())
 			Msg2MSGroup(YDBZ_READY_MISSION,szstr,nteams)
 			--NewWorld(world, pos_x, pos_y);
 			Msg2Player(szstr)

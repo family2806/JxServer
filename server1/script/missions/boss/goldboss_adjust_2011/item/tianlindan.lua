@@ -16,7 +16,7 @@ function main()
 	local tbAward = {
 		{nExp_tl=1,nCount = 20000000,},
 		}
-	local szFailMsg = format("Ã¿ÌìÃ¿ÈËÖ»ÄÜÊ¹ÓÃ×î¶à %d ´Î, µÈÃ÷Ìì¼ÌĞøÊ¹ÓÃ",NDAILYTIME)	
+	local szFailMsg = format("Mçi ngµy mçi nh©n vËt chØ cã thÓ sö dông nhiÒu nhÊt %d lÇn, ®îi ngµy mai h·y sö dông tiÕp",NDAILYTIME)	
 	if PlayerFunLib:CheckTaskDaily(TSK_USED, NDAILYTIME, szFailMsg, "<") == 1 then
 		PlayerFunLib:AddTaskDaily(TSK_USED, 1) 
 		tbAwardTemplet:Give(tbAward, 1, {"goldbossadjust_2011", "use_tianlindan"} )

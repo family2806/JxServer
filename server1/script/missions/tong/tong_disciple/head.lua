@@ -59,7 +59,7 @@ if (not CHRISMAS_HEAD) then
 
 	MS_PREPARENEWSVALUE = 5; --×¼±¸³¡¼ÆÊ±±äÁ¿
 
-	DIS_MOUSENAME = "µÜ×Ó"; --Ê¥µ®¾«ÁéµÄÃû×Ö
+	DIS_MOUSENAME = "§Ö tö"; --Ê¥µ®¾«ÁéµÄÃû×Ö
 
 
 	--²¥ÈöÊ¥µ®¾«Áé
@@ -103,17 +103,17 @@ if (not CHRISMAS_HEAD) then
 		--½øÐÐ¼ÆÊý
 		local nTimes = GetTask(DIS_TK_PLAYTIMES);
 		if (GetTask(DIS_TK_PLAYTIMES) >= DIS_MAXPLAYTIMES) then
-			Talk(1, "", "<color=yellow>»î¶¯·»×Ü¹Ü<color>: Ã¿ÌìÖ»ÄÜ²Î¼Ó5´ÎµÜ×ÓÕÐÄ¼»î¶¯ ");
+			Talk(1, "", "<color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color>: Mét ngµy chØ cã thÓ tham gia 5 ®ît ho¹t ®éng Chiªu mé ®Ö tö!");
 			return
 		end;
 		
 		local nPhase = gb_GetTask(CHRISMAS_SHREWMOUSE, 1);
 		if (nPhase ~= 1) then
 			if (nPhase == 3) then
-				Talk(1, "", "»î¶¯·»×Ü¹Ü:  ÇëµÈÏÂ´Î¿ªÊ¼¡£±¨ÃûÊ±¼äÎª 0h, 3h, 6h£¬ 21h,µÄ15·Ö, 30·ÖºÍ45·ÖÖÓ.");
+				Talk(1, "", "Tæng qu¶n Ho¹t ®éng ph­êng:  H·y ®îi ®ît sau b¾t ®Çu. Thêi gian b¸o danh diÔn ra vµo 0h, 3h, 6h……21h, ë phót thø 15, 30 vµ 45.");
 				return
 			end;
-			Talk(1, "", "»î¶¯·»×Ü¹Ü: ÕÐÄ¼»î¶¯ÕýÔÚ½øÐÐ£¬±¨ÃûÊ±¼äÎª 0h, 3h, 6h£¬ 21h,µÄ15·Ö, 30·ÖºÍ45·ÖÖÓ.");
+			Talk(1, "", "Tæng qu¶n Ho¹t ®éng ph­êng:  Ho¹t ®éng chiªu mé ®Ö tö ®ang diÔn ra, h·y ®îi ®ît ho¹t ®éng sau. Thêi gian b¸o danh diÔn ra vµo 0h, 3h, 6h……21h, ë phót thø 15, 30 vµ 45.");
 			return
 		end
 

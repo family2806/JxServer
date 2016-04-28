@@ -6,10 +6,10 @@
 function OnDeath()
 	UTask_wd = GetTask(5);
 	if (UTask_wd == 20*256+50) and (HaveItem(67) == 0) then
-		Talk(2,"","ÒòÎªÎÒÄÃ×ÅÌì²Ï£¬²Å±»ºìÀÇÀ­µ½ÕâÀï£¬¶ªµô¾ÍĞĞÁË!","²»Òª¶ª£¬¸øÎÒ!")
+		Talk(2,"","Hu hu hu! V× ch¸u cÇm chiÕc Thiªn Tµm nµy míi bŞ Sãi ®á l«i ®Õn ®©y, qu¼ng ®i lµ xong th«i!","§õng vøt ®i! H·y ®­a cho ta!")
 		AddEventItem(67)
-		Msg2Player("¾ÈÁËÏåÑôÔÓ»õÆÌÀÏ°åµÄ¶ù×Ó£¬ËûËÍ¸øÄãÒ»¸öÌì²Ï. ")
+		Msg2Player("Cøu ®­îc con trai «ng ¤ng chñ tiÖm t¹p hãa T­¬ng D­¬ng, nã tÆng cho b¹n 1 c¸i Thiªn Tµm. ")
 --		SetTask(5, 26)
-		AddNote("´ò°Ü»ğÀÇ¶´ÀïµÄÀÇ£¬¾ÈÁËÏåÑôÔÓ»õÆÌÀÏ°åµÄ¶ù×Ó£¬»ñµÃÒ»¸öÌì²Ï. ")
+		AddNote("§¸nh b¹i sãi hoang trong Háa Lang ®éng, cøu ®­îc con trai «ng «ng chñ tiÖm t¹p hãa T­¬ng D­¬ng, cã 1 c¸i Thiªn Tµm. ")
 	end
 end;

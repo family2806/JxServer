@@ -51,49 +51,49 @@ local tbPaiMingAward =
 local tbAllPaiMingAward = 
 {
 	[1]={
-		[1]={szName="ÖÁ×ğÃØ±¦",tbProp={6,1,2375,1,0,0},nRate = 20.0,nCount = 3,},
-		[2]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 40.0,nCount = 4,},
+		[1]={szName="Chİ T«n Bİ B¶o",tbProp={6,1,2375,1,0,0},nRate = 20.0,nCount = 3,},
+		[2]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 40.0,nCount = 4,},
 		[3]={nJxb=1,nRate = 20.0,nCount = 30000000,},
 		[4]={nExp_tl=1,nRate = 20.0,nCount = 60000000,},
 	},
 	[2]={
-		[1]={szName="ÖÁ×ğÃØ±¦",tbProp={6,1,2375,1,0,0},nRate = 20.0,nCount = 2,},
-		[2]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 40.0,nCount = 3,},
+		[1]={szName="Chİ T«n Bİ B¶o",tbProp={6,1,2375,1,0,0},nRate = 20.0,nCount = 2,},
+		[2]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 40.0,nCount = 3,},
 		[3]={nJxb=1,nRate = 20.0,nCount = 24000000,},
 		[4]={nExp_tl=1,nRate = 20.0,nCount = 48000000,},
 	},
 	[3]={
 		[1]={
-			[1]={szName="ÖÁ×ğÃØ±¦",tbProp={6,1,2375,1,0,0},},
-			[2]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},},
+			[1]={szName="Chİ T«n Bİ B¶o",tbProp={6,1,2375,1,0,0},},
+			[2]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},},
 			nRate = 25.0,
 		},
-		[2]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 25.0,},
+		[2]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 25.0,},
 		[3]={nJxb=1,nRate = 25.0,nCount = 22000000,},
 		[4]={nExp_tl=1,nRate = 25.0,nCount = 44000000,},
 	},
 	[4]={
-		[1]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 33.0,nCount = 2,},
+		[1]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 33.0,nCount = 2,},
 		[2]={nJxb=1,nRate = 33.0,nCount = 18000000,},
 		[3]={nExp_tl=1,nRate = 34.0,nCount = 36000000,},
 	},
 	[5]={
-		[1]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 33.0,nCount = 2,},
+		[1]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 33.0,nCount = 2,},
 		[2]={nJxb=1,nRate = 33.0,nCount = 16000000,},
 		[3]={nExp_tl=1,nRate = 34.0,nCount = 32000000,},
 	},
 	[6]={
-		[1]={szName="ÖÁ×ğÃØ±¦",tbProp={6,1,2375,1,0,0},nRate = 33.0,},
+		[1]={szName="Chİ T«n Bİ B¶o",tbProp={6,1,2375,1,0,0},nRate = 33.0,},
 		[2]={nJxb=1,nRate = 33.0,nCount = 12000000,},
 		[3]={nExp_tl=1,nRate = 34.0,nCount = 24000000,},
 	},
 	[7]={
-		[1]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 33.0,},
+		[1]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 33.0,},
 		[2]={nJxb=1,nRate = 33.0,nCount = 10000000,},
 		[3]={nExp_tl=1,nRate = 34.0,nCount = 20000000,},
 	},
 	[8]={
-		[1]={szName="Ë®Ôô²Æ±¦",tbProp={6,1,2376,1,0,0},nRate = 33.0,},
+		[1]={szName="Tµi B¶o Thñy TÆc",tbProp={6,1,2376,1,0,0},nRate = 33.0,},
 		[2]={nJxb=1,nRate = 33.0,nCount = 8000000,},
 		[3]={nExp_tl=1,nRate = 34.0,nCount = 16000000,},
 	},
@@ -111,21 +111,21 @@ local szRemoteScript = "\\script\\event\\zhaojingling\\event.lua"
 
 function dialogmain()
 	local tbOpt = {}
-	local szTitleMsg = "<npc>ÄêÇáÈË£¬ÄãÏëÑµÁ·×Ô¼ºµÄ·´Ó¦ÄÜÁ¦Âğ£¿ÊÔÕÒµ½¸ü¶àµÄ<color=yellow> Ä¾ÈË <color> ½«»ñµÃ½±Àø"
-	local szTitleMsg = format("%s, Ã¿ÌìÄãÖ»ÓĞ<color=yellow>%d<color>´Î»ú»á¿ÉÒÔÃâ·Ñ²Î¼Ó£¬Å¬Á¦Á·Ï°Å¶", szTitleMsg, MAXGAMETIME)
-	tinsert(tbOpt, {"ÎÒÏëÊÔÊÔ¿´", onok})
-	tinsert(tbOpt, {"ÁìÈ¡½±Àø", getaward})
+	local szTitleMsg = "<npc>Chµng trai trÎ, ng­¬i muèn huÊn luyÖn n¨ng lùc ph¶n øng cña m×nh kh«ng? Thö t×m cµng nhiÒu <color=yellow> Méc Nh©n <color> nhĞ, sÏ nhËn ®­îc phÇn th­ëng"
+	local szTitleMsg = format("%s, mçi ngµy ng­¬i chØ cã <color=yellow>%d<color>lÇn c¬ héi cã thÓ tham gia miÔn phİ, cè g¾ng tËp luyÖn ®i nhĞ!", szTitleMsg, MAXGAMETIME)
+	tinsert(tbOpt, {"Ta muèn thö xem", onok})
+	tinsert(tbOpt, {"NhËn l·nh phÇn th­ëng", getaward})
 --	tinsert(tbOpt, {"²é¿´Ç°Ò»ÌìµÄÇ°Ê®Ãû", querytopten})
-	tinsert(tbOpt, {"¹ØÓÚÑµÁ·Ä¾ÈËÒ»ÊÂ", detail})	
-	tinsert(tbOpt, {"Ä¿Ç°ÎÒºÜÃ¦£¬ÉÔºò»ØÀ´.", oncancel})
+	tinsert(tbOpt, {"VÒ viÖc huÊn luyÖn Méc Nh©n", detail})	
+	tinsert(tbOpt, {"Ta hiÖn t¹i rÊt bËn, khi kh¸c sÏ quay l¹i.", oncancel})
 	CreateNewSayEx(szTitleMsg, tbOpt)
 end
 
 function onok()
 	local tbOpt = {}
-	tinsert(tbOpt, {"¿ÉÒÔ!", wantjoin})
-	tinsert(tbOpt, {"ÎÒÓĞ¼±ÊÂ£¬µÈÎÒÒ»ÏÂ", oncancel})
-	CreateNewSayEx("<npc>ÄãÈ¥ÄÇ±ß×¼±¸°É£¬µÈÒ»»á½«¿ªÊ¼×°±¸", tbOpt)
+	tinsert(tbOpt, {"§­îc!", wantjoin})
+	tinsert(tbOpt, {"Ta cã viÖc gÊp, h·y ®îi ta tİ", oncancel})
+	CreateNewSayEx("<npc>Ng­¬i qua bªn kia chuÈn bŞ ®i, ®îi mét l¸t sÏ b¾t ®Çu chuÈn bŞ", tbOpt)
 end
 
 function wantjoin()
@@ -137,30 +137,30 @@ end
 
 function detail()
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÎÒÖªµÀÁË!", oncancel})
-	CreateNewSayEx("<npc>ÑµÁ·Ä¾ÈËÒ»³¡ÊÇ<color=yellow>15<color> ·ÖÖÓ£¬ÆäÖĞ£¬<color=yellow>5<color> ·ÖÖÓ×¼±¸£¬±¨Ãû²Î¼Óºó£¬Äã½«»á±»´òµ½×¼±¸Çø£¬»î¶¯¿ªÊ¼ºó£¬Äã½«±»´ø½øÑ²Âß³µ£¬Èç¹ûÔÚÄÇÀïÄã¿´µ½ <color=yellow> Ä¾ÈË<color>Ö»ĞèÓÃÊó±ê<color=yellow> µã»÷×ó¼ü<color> µ½ÉÏÃæ¾ÍĞĞ£¬²»¹ı£¬Äã»á±»ËûÈËµ²×¡£¬´ËÊ±£¬Äã¿ÉÒÔÊ¹ÓÃµÀ¾ßÀ´Ó¦¸¶ÕâÖÖÇé¿ö£¬Ö»ĞèÒªÄãÕÒµ½ºÜ¶à <color=yellow> Ä¾ÈË<color> ½«»ñµÃÏàÓ¦µÄ½±Àø", tbOpt)
+	tinsert(tbOpt, {"Ta biÕt råi!", oncancel})
+	CreateNewSayEx("<npc>HuÊn luyÖn Méc Nh©n mét trËn lµ<color=yellow>15<color> phót, trong ®ã cã<color=yellow>5<color> phót chuÈn bŞ, sau khi b¸o danh tham gia ng­¬i sÏ ®­îc ®­a ®Õn b¶n ®å chuÈn bŞ, sau khi ho¹t ®éng b¾t ®Çu ng­¬i  sÏ ®­îc ®­a vµo ®Êu tr­êng huÊn luyÖn,nÕu nh­ ë ®ã ng­¬I nh×n thÊy <color=yellow> Méc Nh©n<color>chØ cÇn dïng chuét<color=yellow> click chuét tr¸i <color> lªn nã lµ ®­îc, tuy nhiªn ng­¬I sÏ bŞ ng­êi ch¬i kh¸c c¶n trë, trong lóc nµy ng­¬i cã thÓ sö dông ®¹o cô ®Ó øng phã víi t×nh h×nh nh­ vËy, chØ cÇn ng­¬I t×m ®­îc nhiÒu <color=yellow> Méc Nh©n<color> sÏ nhËn ®­îc phÇn th­ëng ®¸ng kÓ", tbOpt)
 end
 
 function oncancel()
 end
 
 function checkjoingame()
-	if PlayerFunLib:CheckTotalLevel(MINLEVEL, "125¼¶¼°125¼¶ÒÔÉÏ»òÕßÒÑÖØÉúµÄ×³Ê¿£¬²ÅÄÜ²Î¼ÓÄ¾ÈË»î¶¯", ">=") ~= 1 then
+	if PlayerFunLib:CheckTotalLevel(MINLEVEL, "CÊp 125 vµ cÊp 125 trë lªn hoÆc nh÷ng tr¸ng sü ®· trïng sinh míi ®­îc tham gia ho¹t ®éng Méc Nh©n nµy", ">=") ~= 1 then
 		return
 	end
 	local nCurHour = tonumber(GetLocalDate("%H"))
 	if nCurHour >= 0 and nCurHour < 12 then
-		Talk(1, "", "Ã¿Ìì12Ê±µ½24Ê±£¬¿ªÊ¼×¥Ä¾ÈË»î¶¯£¬Ä¿Ç°²»ÊÇ»î¶¯Ê±¼ä")
+		Talk(1, "", "Mçi ngµy vµo lóc 12:00 ®Õn 24:00 b¾t ®Çu ho¹t ®éng B¾t Méc Nh©n, hiÖn t¹i kh«ng ph¶i lµ thêi gian diÔn ra ho¹t ®éng")
 		return
 	end
 	local nTimes = GetTaskA(TSK_PLAYTIMES, TSK_DAYKEY)
 	if nTimes >= MAXGAMETIME then
-		Talk(1, "", "Ã¿ÌìÖ»ÄÜ²Î¼Ó3³¡£¬Ã÷ÌìÔÙÀ´°É¡£")
+		Talk(1, "", "Mçi ngµy chØ cã thÓ tham gia 3 trËn ®Êu, ngµy mai h·y ®Õn nhĞ")
 		return
 	end
 	
 	if GetTask(TSK_RANK) ~= 0 and GetTask(TSK_COUNT_ONETIME) > 0 then
-		Talk(1, "", "ĞèÒªÁìÈ¡×òÌì±ÈÈü³¡´ÎµÄ½±Àø²ÅÄÜ¼ÌĞø²Î¼Ó£¬¿ìÈ¥Áì½±°É¡£")
+		Talk(1, "", "CÇn ph¶i nhËn phÇn th­ëng cña trËn ngµy h«m qua míi tiÕp tôc tham gia ®­îc, nhanh ®i nhËn th­ëng ®i")
 		return
 	end
 
@@ -177,10 +177,10 @@ end
 
 function getaward()
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÁìÈ¡Ã¿³¡ÅÅÃû½±Àø", getonetimeaward})
+	tinsert(tbOpt, {"NhËn th­ëng xÕp h¹ng mçi trËn", getonetimeaward})
 	--Change request 14/7/2011 - Modified by DinhHQ - 20110714
---	tinsert(tbOpt, {"Ã¿Ìì×ÜÅÅÃû½±Àø", getallpaimingaward})
-	CreateNewSayEx("<npc>ÇëÁìÍêÖ®Ç°³¡´ÎµÄ½±Àøºó²ÅÄÜ¼ÌĞø²Î¼ÓÏÂÃæµÄ±ÈÈü", tbOpt)		
+--	tinsert(tbOpt, {"PhÇn th­ëng tæng xÕp h¹ng mçi ngµy", getallpaimingaward})
+	CreateNewSayEx("<npc>H·y nhËn hÕt phÇn th­ëng cña trËn tr­íc ®ã råi mãi cã thÓ tiÕp tôc tham gia trËn tiÕp theo", tbOpt)		
 end
 
 function checkbox()
@@ -190,7 +190,7 @@ function checkbox()
 	if CountFreeRoomByWH(nWidth, nHeight) >= nCount then
 		return 1
 	else
-		local szMsg = format("Îª±£»¤´óÏÀµÄ²Æ²ú£¬ÇëÁôÏÂ %d %dx%d ×°±¸¿ÕÎ»", nCount, nWidth, nHeight)
+		local szMsg = format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight)
 		Talk(1,"", szMsg)
 		return
 	end
@@ -200,25 +200,25 @@ function getonetimeaward()
 	local nRank = GetTask(TSK_RANK)
 	local nCount = GetTask(TSK_COUNT_ONETIME)
 	if nRank <= 0 or nRank > 10 then
-		Talk(1, "", "Ã»ÓĞÒªÁìµÄ½±Àø")
+		Talk(1, "", "Kh«ng cã phÇn th­ëng ®Ó nhËn")
 		return
 	end
 	if nCount <= 0 then
-		Talk(1, "", "Ã»ÓĞÒªÁìµÄ½±Àø")
+		Talk(1, "", "Kh«ng cã phÇn th­ëng ®Ó nhËn")
 		return		
 	end
 	
 	if checkbox() ~= 1 then
 		return
 	end
-	tbAwardTemplet:GiveAwardByList(%tbPaiMingAward[nRank], "ÁìÈ¡Ã¿ÖÜÃ¿ÈË»î¶¯ÅÅÃû½±Àø")
+	tbAwardTemplet:GiveAwardByList(%tbPaiMingAward[nRank], "NhËn th­ëng xÕp h¹ng mçi trËn ho¹t ®éng Méc Nh©n")
 	SetTask(TSK_RANK, 0)
 end
 
 function getallpaimingaward()
 	local nIsAward = GetTaskA(TSK_IS_AWARD, TSK_IS_AWARD_DAYKEY)
 	if nIsAward > 0 then
-		Talk(1, "", "×ÜÅÅÃû½±ÀøÒÑ¾­ÁìÁË")
+		Talk(1, "", "PhÇn th­ëng tæng xÕp h¹ng ®· nhËn råi")
 		return
 	end
 	local obj = ObjBuffer:New()
@@ -238,10 +238,10 @@ function receivepaiming(nParam, ResultHandle)
 	if nPaiMing ~= nil and nPaiMing <= 10 then
 		if dogetallpaimingaward(nPlayerIndex, nPaiMing) == 1 then
 			CallPlayerFunction(nPlayerIndex, AddTaskA, TSK_IS_AWARD, TSK_IS_AWARD_DAYKEY, 1)
-			CallPlayerFunction(nPlayerIndex, Msg2Player, format("ÁìÈ¡×ÜÅÅÃû½±Àø %s", nPaiMing))
+			CallPlayerFunction(nPlayerIndex, Msg2Player, format("NhËn th­ëng tæng xÕp h¹ng thø %s", nPaiMing))
 		end
 	else
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Ã»ÓĞÒªÁìµÄ½±Àø")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Kh«ng cã phÇn th­ëng ®Ó nhËn")
 	end
 end
 
@@ -249,7 +249,7 @@ function dogetallpaimingaward(nPlayerIndex, nPaiMing)
 	if CallPlayerFunction(nPlayerIndex, checkbox) ~= 1 then
 		return 
 	end 
-	CallPlayerFunction(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet, %tbAllPaiMingAward[nPaiMing], "ÁìÈ¡Ã¿ÌìÄ¾ÈË»î¶¯ÅÅÃû½±Àø")
+	CallPlayerFunction(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet, %tbAllPaiMingAward[nPaiMing], "NhËn phÇn th­ëng  xÕp h¹ng mçi ngµy ho¹t ®éng Méc Nh©n")
 	return 1
 end
 
@@ -270,20 +270,20 @@ function displaytopten(nParam, ResultHandle)
 	
 	local tbTopTen = ObjBuffer:PopObject(ResultHandle)
 	if tbTopTen == nil then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Ä¿Ç°»¹Ã»ÓĞÅÅÃû")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
 		return
 	end
 	local nCount = getn(tbTopTen)
 	if nCount == 0 then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Ä¿Ç°»¹Ã»ÓĞÅÅÃû")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "Tr­íc m¾t vÉn ch­a cã xÕp h¹ng")
 		return
 	end
-	local szMsg = format("%-32s%-10s\n", "Ãû×Ö", "·ÖÊı")
+	local szMsg = format("%-32s%-10s\n", "Tªn", "Sè ®iÓm")
 	for i=1, nCount do
 		local szTemp = format("%-32s%-10d\n", tbTopTen[i][1], tbTopTen[i][2])
 		szMsg = szMsg.. szTemp
 	end
-	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szMsg, {{"½áÊø¶Ô»°"}})
+	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szMsg, {{"KÕt thóc ®èi tho¹i"}})
 end
 
 

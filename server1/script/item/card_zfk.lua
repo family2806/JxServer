@@ -2,13 +2,13 @@
 -- ×£¸£¿¨
 -- »ñµÃËæ»úÁùÕÅ¿¨
 
-szTitle="<#>ÇëÑ¡Ôñ×£¸£Óï£º"
+szTitle="<#> H·y chän c©u chóc:"
 Bless=
 {
-	"<#>¼ÙÈçÓĞÒ»ÌìÄãÏë¿Ş,Çë´òµç»°¸øÎÒ.ÎÒ²»ÄÜ±£Ö¤ÄÜÊ¹ÄãĞ¦,µ«ÎÒÄÜÅãÄãÒ»Æğ¿Ş.",
-	"<#>µ«Ô¸´º·çÑóÒçÄã,¼ÒÈË¹ØĞÄÄã,°®Çé×ÌÈóÄã,ĞÒÔËÖ®ĞÇÓÀÔ¶ÕÕ×ÅÄã.",
-	"<#>Ğ»Ğ»Äã×ÜÊÇÔÚÎÒ×îÊ§ÂäµÄÊ±ºò³öÏÖ,ÓĞÄãÔÚÎÒÉí±ßÎÒºÜĞÒ¸£¡£",
-	"<#>ÊÇÄãµÄ³öÏÖ´ø¸øÁËÎÒÎŞÏŞµÄ¿ìÀÖ,Ô¸ÄãÃ¿Ò»Ìì¶¼¿ªĞÄ.",
+	"<#> Mét ngµy nµo ®ã nÕu b¹n thÊy buån t«i kh«ng thÓ lµm cho b¹n vui nh­ng İt ra cã thÓ khãc cïng b¹n.",
+	"<#> NguşÖn nh÷ng ®iÒu tèt lµnh, t×nh th­¬ng yªu mäi ng­êi, ng«i sao may m¾n lu«n lu«n dµnh cho b¹n.",
+	"<#> C¶m ¬n b¹n trong lóc trèng v¾ng ®Õn bªn t«i, h¹nh phóc biÕt bao!",
+	"<#> Sù xuÊt hiÖn cña b¹n lµ niÒm vui lín nhÊt trong ®êi t«i, chóc b¹n lu«n lu«n vui vÎ.",
 }
 
 ITEM_TASK_TEMP=24
@@ -23,7 +23,7 @@ FuncBless={}
 
 function main(sel)
 	if (GetTaskTemp(UNIQUE_USE_TASK_TEMP) > 0) then
-		Msg2Player("ÄãÏÖÔÚÕıÔÚ½øĞĞÆäËû×£¸££¬ÇëÉÔºòÔÙÊÔ¡£");
+		Msg2Player("B¹n hiÖn ®ang ph¸t c©u chóc! Xin vui lßng ®îi mét l¸t!");
 		return 1
 	end
 
@@ -35,7 +35,7 @@ function main(sel)
 	end
 
 	nSelectCount = nSelectCount + 1;
-	FuncBless[nSelectCount] = "È¡Ïû/QueryWiseManCancel"
+	FuncBless[nSelectCount] = "Hñy bá /QueryWiseManCancel"
 
 	Say(szTitle, nSelectCount, FuncBless);
 
@@ -62,20 +62,20 @@ function BlessPlayerOnline(TargetName, nSelect, LifeMax, ManaMax, PKValue, Playe
 	if (ItemIdx > 0 and ItemGenre == ITEM_GENRE and DetailType == ITEM_DETAIL and ParticularType == ITEM_PARTI) then
 		if (RemoveItemByIndex(ItemIdx) == 1) then
 			local szMsg
-			szMsg = GetName().."<#>¶Ô"..TargetName.."<#>Ëµ£º"..Bless[nSelect + 1]
+			szMsg = GetName().."<#> nãi víi "..TargetName.."<#> "..Bless[nSelect + 1]
 			AddGlobalCountNews(szMsg,1);
 		else
-			Msg2Player("ÕÒ²»µ½¿¨Æ¬£¬ÇëÖØÊÔÒ»´Î¡£")
+			Msg2Player("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.")
 		end
 	else
-		Msg2Player("¿¨Æ¬Ê¹ÓÃÊ§°Ü£¬ÇëÖØÊÔÒ»´Î¡£")
+		Msg2Player("Sö dông thÎ thÊt b¹i, xin thö l¹i 1 lÇn.")
 	end
 	SetTaskTemp(ITEM_TASK_TEMP,0)
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 
 function BlessPlayerOffline(TargetName, nSelect)
-	Msg2Player("ÄãÏë×£¸£µÄÍæ¼ÒÏÖÔÚ²»ÔÚÏß£¬ÇëÉÔºòÔÙÊÔ¡£");
+	Msg2Player("Ng­êi mµ b¹n muèn chóc phóc hiÖn kh«ng cã trªn m¹ng! §îi lóc sau thö l¹i!.");
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 

@@ -24,17 +24,17 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "CaiShenDialogue",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"²ÆÉñ"},
+	tbMessageParam = {"ThÇn Tµi"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		--{"AddDialogOpt",	{"ÂòÍ­Ô¿³×",6} },
---		{"AddDialogOpt",	{"¿´´Ë´ÎÈü³Ì",3} },
---		{"AddDialogOpt",	{"¿´ÉÏ´ÎÐÒÔËºÅ",4} },
---		{"AddDialogOpt",	{"Áì½±",5} },
---		{"SetDialogTitle",	{"<npc>¸»¹ó½õºÐ"} },
+		--{"AddDialogOpt",	{"Mua ch×a Khãa §ång",6} },
+--		{"AddDialogOpt",	{"Xem vßng thi nµy",3} },
+--		{"AddDialogOpt",	{"Xem con sè may m¾n lÇn tr­íc",4} },
+--		{"AddDialogOpt",	{"NhËn l·nh phÇn th­ëng",5} },
+--		{"SetDialogTitle",	{"<npc>Phó Quý CÈm H¹p"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -95,10 +95,10 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 --	szName = "Buy_TongYaoShi",
 --	nStartDate = nil,
 --	nEndDate  = nil,
---	tbMessageParam = {"Í­Ô¿³×",1,1,1,1},
+--	tbMessageParam = {"Ch×a khãa  §ång",1,1,1,1},
 --	tbCondition = 
 --	{
---		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=1,},100000} },
+--		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1,},100000} },
 --	},
 --	tbActition = 
 --	{
@@ -109,7 +109,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÐÒÔË´ü",
+	szName = "SuDungTuiMayMan",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30111,1,0,0},}},
@@ -119,6 +119,6 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"tbAwardTemplet:Give",	{tbLuckyBagAward,1,{"¸»¹ó½õºÐ","Ê¹ÓÃÐÒÔË´ü"}} },
+		{"tbAwardTemplet:Give",	{tbLuckyBagAward,1,{"PhuQuyCamHap","SuDungTuiMayMan"}} },
 	},
 }

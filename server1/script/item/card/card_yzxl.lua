@@ -35,12 +35,12 @@ function PickUp( nItemIndex, nPlayerIndex )
 	local myNum = GetByte(GetTask(TID_CARDNUMBER),GETBYTE)
 	local myLevel = GetLevel()
 	if(size < 2) then --
-		Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬µ«ÊÇæİÈ»Ò»ÉíµÄÄãÎŞ·¨¿ªÆô´Ë¿¨µÄÄÜÁ¦¡£")
+		Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, nh­ng kÎ c« ®¬n nh­ b¹n kh«ng thÓ më c«ng n¨ng cña thÎ nµy!")
 		PlayerIndex = oldPlyIdx
 		return 0
 	end
 	if(size > 2) then
-		Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬µ«ÊÇÕâÃ´¶àÈË£¬Äã²»ÖªµÀºÍË­²ÅÄÜ¿ªÆô´Ë¿¨µÄÄÜÁ¦¡£")
+		Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, nh­ng nhiÒu ng­êi thÕ, biÕt cïng ai ®Ó më c«ng n¨ng cña thÎ nµy!")
 		PlayerIndex = oldPlyIdx
 		return 0
 	end
@@ -56,7 +56,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 	otherLevel = GetLevel()
 	PlayerIndex = nPlayerIndex
 	if(otherSex == mySex) then
-		Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬µ«ÊÇÎŞ·¨ÓëÍ¬ĞÔÍæ¼Ò¿ªÆô´Ë¿¨µÄÄÜÁ¦¡£")
+		Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, nh­ng kh«ng thÓ më c«ng n¨ng cña thÎ cho hai b¹n cïng giíi!")
 		PlayerIndex = oldPlyIdx
 		return 0
 	end
@@ -64,11 +64,11 @@ function PickUp( nItemIndex, nPlayerIndex )
 		if(myNum == otherNum) then --ÓĞÇéÈË£¬¿¨µÄÊıÁ¿Ò»Ñù¡£
 			myNum = myNum + 1  --¿¨Æ¬ÊıÁ¿ÀÛ¼Ó
 			otherNum = myNum
-			Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬°ÑÄãºÍ"..otherName.."µÄÔµ·İÀ­µÃ¸ü½üÁË£¬µ½Ä¿Ç°ÎªÖ¹£¬Äã»ıÀÛÁË"..myNum.."ÕÅÓë×ÓÙÉÀÏ¿¨¡£")
+			Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, gióp cho duyªn phËn cña b¹n vµ     "..otherName.."thªm gÇn nhau h¬n. HiÖn nay, b¹n ®· tİch lòy"..myNum.."tÊm thiÖp giai l·o.")
 			AddOwnExp(myLevel * (20+0.1*myLevel)-10)
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 			PlayerIndex = otherIndex
-			Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬°ÑÄãÃÇµÄÔµ·İÀ­µÃ¸ü½üÁË£¬µ½Ä¿Ç°ÎªÖ¹£¬Äã»ıÀÛÁË"..otherNum.."ÕÅÓë×ÓÙÉÀÏ¿¨¡£")
+			Msg2Player(myName.."®­îc 1 tÊm ThiÖp giai l·o, gióp cho duyªn phËn cña c¸c b¹n thªm gÇn nhau h¬n. §Õn nay, b¹n ®· tİch lòy"..otherNum.."tÊm thiÖp giai l·o.")
 			AddOwnExp(otherLevel * (10+0.07*otherLevel))
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 			if(myNum > 98) then --´ïµ½99¸ö£¬Óë×ÓÙÉÀÏÀ²
@@ -76,12 +76,12 @@ function PickUp( nItemIndex, nPlayerIndex )
 				PlayerIndex = nPlayerIndex
 				AddSkillState(531,10,1,2*60*60*18)
 				AddSkillState(533,1,1,2*60*60*18)
-				Msg2Player("ÄãµÄÓë×ÓÙÉÀÏ¿¨ÒÑ¾­»ıÀÛÁË99¸ö£¬ÄãÓë"..otherName.."¹²Í¬¿ªÆôÁË´Ë¿¨µÄÄÜÁ¦¡£Äã»ñµÃÁË2¸öĞ¡Ê±µÄ¾­Ñé·­±¶¡£")
+				Msg2Player("B¹n ®· tİch lòy ®­îc 99 tÊm thiÖp giai l·o! B¹n vµ "..otherName.."cïng më c«ng n¨ng cña thiÖp nµy. B¹n nhËn ®­îc nh©n ®«i ®iÓm kinh nghiÖm trong 2 giê.")
 				SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 				PlayerIndex = otherIndex
 				AddSkillState(531,10,1,2*60*60*18)
 				AddSkillState(533,1,1,2*60*60*18)
-				Msg2Player("ÄãµÄÓë×ÓÙÉÀÏ¿¨ÒÑ¾­»ıÀÛÁË99¸ö£¬ÄãÓë"..myName.."¹²Í¬¿ªÆôÁË´Ë¿¨µÄÄÜÁ¦¡£Äã»ñµÃÁË2¸öĞ¡Ê±µÄ¾­Ñé·­±¶¡£")
+				Msg2Player("B¹n ®· tİch lòy ®­îc 99 tÊm thiÖp giai l·o! B¹n vµ "..myName.."cïng më c«ng n¨ng cña thiÖp nµy. B¹n nhËn ®­îc nh©n ®«i ®iÓm kinh nghiÖm trong 2 giê.")
 				SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 			end
 			PlayerIndex = oldPlyIdx
@@ -100,20 +100,20 @@ function PickUp( nItemIndex, nPlayerIndex )
 			end
 		end
 		PlayerIndex = nPlayerIndex
-		Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬Óë"..otherName.."µÄÔµ·İ¸ü½üÁË£¬ÄãÏÖÔÚ»ıÀÛÁË"..myNum.."ÕÅÓë×ÓÙÉÀÏ¿¨Æ¬¡£")
+		Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o! B¹n vµ "..otherName.."duyªn phËn thªm gÇn nhau h¬n. B¹n hiÖn ®· tİch lòy ®­îc"..myNum.."tÊm thiÖp giai l·o.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 		PlayerIndex = otherIndex
-		Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬ÓëÄãµÄÔµ·İ¸ü½üÁË£¬ÄãÏÖÔÚ»ıÀÛÁË"..otherNum.."ÕÅÓë×ÓÙÉÀÏ¿¨Æ¬¡£")
+		Msg2Player(myName.."®­îc 1 tÊm thiÖp giai l·o, gióp cho duyªn phËn cña c¸c b¹n thªm gÇn nhau h¬n. §Õn nay, b¹n ®· tİch lòy"..otherNum.."tÊm thiÖp giai l·o.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,otherNum)) --»ØĞ´ĞÅÏ¢
 		PlayerIndex = oldPlyIdx
 		return 0
 	end
 	--ÑéÖ¤Âë²»Í¬£¬»òÕß¶¼ÊÇ0
 	local code = GetValidateCode(nPlayerIndex)
-	Msg2Player("ÄãµÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬²¢ÇÒºÍ"..otherName.."¿ªÊ¼ÁËÇéÔµ¡£")
+	Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, ®ång thêi cïng "..otherName.."b¾t ®Çu b¾t ®Çu cuéc t×nh duyªn. ")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = otherIndex
-	Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬²¢ÇÒºÍÄã¿ªÊ¼ÁËÇéÔµ¡£")
+	Msg2Player(myName.."®­îc 1 tÊm ThiÖp Giai L·o, ®ång thêi cïng b¹n b¾t ®Çu cuéc t×nh duyªn.")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = oldPlyIdx
 	return 0

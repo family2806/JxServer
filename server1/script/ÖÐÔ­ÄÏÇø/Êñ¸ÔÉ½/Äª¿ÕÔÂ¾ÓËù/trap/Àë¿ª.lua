@@ -4,7 +4,7 @@
 function main()
 	Uworld43 = GetTask(43)
 	if (Uworld43 == 100) then
-		Talk(1,"","快滚，不要让我看到你! ")
+		Talk(1,"","C髏 mau! ng  ta g苝 l筰 th蕐 ngi ! ")
 	end
 	SetFightState(0)
 	NewWorld(176,1413,2991)

@@ -11,6 +11,6 @@ function main(nItemIndex)
 	for i=1,getn(tbSkill) do
 		AddSkillState(tbSkill[i], 1, 1, nTime)
 	end	
-	Msg2Player("ÄúÒÑÊ¹ÓÃ" .. "ÒõÑô»îÑªµ¤") 
+	Msg2Player("Ng­¬i ®· sö dông" .. "¢m D­¬ng Ho¹t HuyÕt §¬n") 
 	return 
 end

@@ -23,12 +23,12 @@ PLAYER_LIFE_COUNT = 5
 LadderId = 10269
 AreaName = 
 {
-	[1] = "¼½", [4] = "Ùð",  [7] = "Çà", 
-	[2] = "Ðì", [5] = "Ñï",  [8] = "¾£", 
-	[3] = "Ô¥", [6] = "Áº",  [9] = "Óº", 
+	[1] = "Kû", [4] = "DuyÖn",  [7] = "Thanh ", 
+	[2] = "Tõ", [5] = "D­¬ng",  [8] = "Kinh", 
+	[3] = "Dù", [6] = "l­¬ng ",  [9] = "Ung", 
 }
 
-DaTuShaClass = Dungeon:new_type("ÂÒÕ½¾ÅÖÝ¹È")
+DaTuShaClass = Dungeon:new_type("Lo¹n ChiÕn Cöu Ch©u Cèc")
 
 DaTuShaClass.Scores = {}
 DaTuShaClass.Rank = {}
@@ -52,7 +52,7 @@ function DaTuShaClass:_init()
 	
 	ClearMapObj(self.nMapId)
 	ClearMapNpcWithName(self.nMapId, " ")
-	ClearMapNpcWithName(self.nMapId, "¾ÅÖÝ¹ÈÍ³Áì")
+	ClearMapNpcWithName(self.nMapId, "Thèng lÜnh Cöu Ch©u Cèc")
 	
 	
 	local tmp = AreaClass:new("", self.nMapId, 51168, 103200, 55680, 110560)
@@ -61,7 +61,7 @@ function DaTuShaClass:_init()
    
 	
 	
-	local tbNpc = {szName = "¾ÅÖÝ¹ÈÍ³Áì", nNpcId = 1411, nLevel = 95, szScriptPath = "\\script\\missions\\datusha\\tongshuai_npc.lua"}
+	local tbNpc = {szName = "Thèng lÜnh Cöu Ch©u Cèc", nNpcId = 1411, nLevel = 95, szScriptPath = "\\script\\missions\\datusha\\tongshuai_npc.lua"}
 	local tbPoint = getndata("\\settings\\maps\\tianxingku\\buy.txt", 62);
 	for i=1, getn(tbPoint) do
 		basemission_CallNpc(tbNpc, self.nMapId, tbPoint[i][1], tbPoint[i][2])
@@ -81,7 +81,7 @@ function DaTuShaClass:OnTime(TIME)
 		self.nState = 1
 	elseif nTime >= PREPARE_TIME and nTime < TOTAL_TIME then
 		if self.nState == 1 then
-			Msg2Map(self.nMapId, "±ÈÎäÕýÊ½¿ªÊ¼£¡³å°¡!")
+			Msg2Map(self.nMapId, "B¸t ®Çu chÝnh thøc tû vâ! X«ng lªn nµo!")
 			self:BeginDatusha()
 		end
 		self.nState = 2
@@ -106,9 +106,9 @@ function DaTuShaClass:BeginDatusha()
 		local nPlayerIndex = SearchPlayer(szName)
 		if tbData and nPlayerIndex > 0 then
 			if self.nSurvivorCount < MIN_PLAYER_COUNT then				
-				CallPlayerFunction(nPlayerIndex, tbAwardTemplet.Give, tbAwardTemplet, {nExp_tl = 5e6}, 1, {"ÂÒÕ½¾ÅÖÝ¹È","°²Î¿½±"})
+				CallPlayerFunction(nPlayerIndex, tbAwardTemplet.Give, tbAwardTemplet, {nExp_tl = 5e6}, 1, {"Lo¹n ChiÕn Cöu Ch©u Cèc","PhÇn th­ëng an ñi"})
 				CallPlayerFunction(nPlayerIndex, NewWorld, unpack(tbData.tbSignUpPos))
-				CallPlayerFunction(nPlayerIndex, Msg2Player, "Çë¼ûÁÂ£¬ÓÉÓÚ±¨ÃûÈËÊýÌ«ÉÙÁË£¬Õâ´Î±ÈÈüÈ¡Ïû¡£")
+				CallPlayerFunction(nPlayerIndex, Msg2Player, "Xin l­îng thø, do nh©n sè b¸o danh qu¸ Ýt, cuéc thi lÇn nµy bÞ hñy bá.")
 			else
 				CallPlayerFunction(nPlayerIndex, SetFightState, 1)
 				DaTuShaClass.Scores[szName] = 0
@@ -120,10 +120,10 @@ end
 function DaTuShaClass:PrepareState(nTime)	
 	local nRemainTime = PREPARE_TIME - nTime
 	if mod(nTime, 60) == 0 and nRemainTime > 60 then
-		Msg2Map(self.nMapId, format("¾àÀë»î¶¯¿ªÊ¼»¹ÓÐ %dÃë, Çë¸÷Î»¸ßÊÖ×¼±¸.", nRemainTime))
+		Msg2Map(self.nMapId, format("Kho¶ng c¸ch b¾t ®Çu ho¹t ®éng cßn %d gi©y, xin c¸c ch­ vÞ cao thñ chuÈn bÞ.", nRemainTime))
 		return 60
 	elseif nRemainTime <= 10 or nRemainTime == 60 then
-		Msg2Map(self.nMapId, format("¾àÀë»î¶¯¿ªÊ¼»¹ÓÐ %dÃë, Çë¸÷Î»¸ßÊÖ×¼±¸", nRemainTime))	
+		Msg2Map(self.nMapId, format("Kho¶ng c¸ch b¾t ®Çu ho¹t ®éng cßn %d gi©y, xin c¸c ch­ vÞ cao thñ chuÈn bÞ.", nRemainTime))	
 		return 1
 	elseif nRemainTime < 60 then
 		return 1
@@ -159,9 +159,9 @@ function DaTuShaClass:ReportPersonInfo()
 		local pData = tbData[i][3]
 		local nPlayerIndex = SearchPlayer(szName)
 		if pData and nPlayerIndex > 0 then
-			CallPlayerFunction(nPlayerIndex, Msg2Player,format("»ý·Ö: %d", pData.nScores))
-			CallPlayerFunction(nPlayerIndex, Msg2Player,format("ÅÅÃû: µÚ%d", i ))
-			CallPlayerFunction(nPlayerIndex, Msg2Player,format("ÖØÉúÊýÁ¿»¹ÓÐ: %d", pData.nLife))
+			CallPlayerFunction(nPlayerIndex, Msg2Player,format("§iÓm tÝch lòy: %d", pData.nScores))
+			CallPlayerFunction(nPlayerIndex, Msg2Player,format("XÕp h¹ng: h¹ng thø %d", i ))
+			CallPlayerFunction(nPlayerIndex, Msg2Player,format("Sè lÇn phôc sinh cßn l¹i: %d", pData.nLife))
 		end
 		
 	end
@@ -183,8 +183,8 @@ end
 function DaTuShaClass:Forecast(nTime)	
 	local nAreaId = self.tbCloseSequence[self.nCloseAreaCount + 1]
 	if nAreaId and self.tbArea[nAreaId] then
-		local szMsg =format("<color=yellow>[%s]<color>Çø", self.tbArea[nAreaId].szName)
-		szMsg = format("%s ÅÅ<color=yellow>%d<color>Ãëºó½«¹Ø±Õ, Çë¸÷Î»Àë¿ª´ËÇøÓò!", szMsg, nTime)
+		local szMsg =format("<color=yellow>[%s]<color>Khu", self.tbArea[nAreaId].szName)
+		szMsg = format("%s s¾p<color=yellow>%d<color> gi©y sau sÏ ®ãng, xin c¸c ch­ vÞ rêi khái khu vùc nµy!", szMsg, nTime)
 		Msg2Map(self.nMapId, szMsg)
 	end	
 end
@@ -194,7 +194,7 @@ function DaTuShaClass:AreaClose()
 	local nAreaId = self.tbCloseSequence[self.nCloseAreaCount]
 	if self.tbArea[nAreaId] then
 		local szMsg =format("<color=yellow>[%s]<color>", self.tbArea[nAreaId].szName)
-		szMsg = format("%s ÇøÖØÀ´", szMsg, nTime)
+		szMsg = format("%s khu  ®ãng l¹i", szMsg, nTime)
 		Msg2Map(self.nMapId, szMsg)
 		self.tbArea[nAreaId]:ChangeState(1)
 	end
@@ -341,7 +341,7 @@ function DaTuShaClass:close()
 			local nPlayerIndex = SearchPlayer(szName)
 			if pData and nPlayerIndex > 0 then	
 				DaTuShaClass.LastMan.szName = szName
-				CallPlayerFunction(nPlayerIndex, Msg2Player, "×£´óÏÀ³ÉÎª×îÖÕµÄÓÂÊ¿.")
+				CallPlayerFunction(nPlayerIndex, Msg2Player, "Xin chóc mõng ®¹i hiÖp ®· trë thµnh dòng sü cuèi cïng.")
 			end
 		end
 	end
@@ -354,7 +354,7 @@ function DaTuShaClass:close()
 	end
 	ClearMapObj(self.nMapId)
 	ClearMapNpcWithName(self.nMapId, " ")
-	ClearMapNpcWithName(self.nMapId, "¾ÅÖÝ¹ÈÍ³Áì")
+	ClearMapNpcWithName(self.nMapId, "Thèng lÜnh Cöu Ch©u Cèc")
 	self:free()
 end
 

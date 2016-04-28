@@ -1,12 +1,12 @@
 Include("\\script\\lib\\gb_modulefuncs.lua")
 IncludeLib("LEAGUE")
 MAX_TJL_USE_COUNT = 5
-str_endmsg = "ÄãÊ¹ÓÃµÄÌì»úÁîÒÑ¾­´ïµ½Ê¹ÓÃÉÏÏŞ"..MAX_TJL_USE_COUNT.."´Î£¬Òò´Ë´Ó±³°üÖĞÈ¥³ı£¡";
+str_endmsg = "Thiªn C¬ LÖnh b¹n sö dông ®· ®¹t giíi h¹n tèi ®a lµ "..MAX_TJL_USE_COUNT.." lÇn, v× thÕ bŞ hñy bá khái hµnh trang!";
 
 function main(nItem)
 	local nUsedCount = GetItemParam(nItem, 1);
 
-	Msg2Player("ÄãÊ¹ÓÃÁËÌì»úÁî£¡ÔÚÒ»Ğ¡Ê±ÄÚÄã¿É»ñÖªËùÔÚµØÍ¼ËùÓĞ¹óÖØÎïÆ·µÄÊ°È¡ĞÅÏ¢.")
+	Msg2Player("B¹n ®· sö dông 1 Thiªn C¬ LÖnh! Trong vßng 1 giê, b¹n sÏ biÕt ®­îc tin tøc nhÆt vËt phÈm quı ë khu vùc m×nh ®ang ®øng.")
 	AddSkillState(707, 1, 1, 18*60*60);
 
 	nUsedCount = nUsedCount + 1
@@ -22,5 +22,5 @@ end
 
 function GetDesc(nItem)
 	local nUsedCount = GetItemParam(nItem, 1);
-	return "Ê£ÓàÊ¹ÓÃ´ÎÊı:" ..(MAX_TJL_USE_COUNT - nUsedCount).." / "..MAX_TJL_USE_COUNT
+	return "Sè lÇn sö dông cßn l¹i: " ..(MAX_TJL_USE_COUNT - nUsedCount).." / "..MAX_TJL_USE_COUNT
 end

@@ -22,15 +22,15 @@ function main()
 	end
 	
 	if ( GetLevel() < 20 ) then
-		Say("20¼¶ÒÔÏÂ²»ÄÜ²Î¼Ó´Ë»î¶¯.", 0)
+		Say("§¼ng cÊp thÊp h¬n 20, kh«ng thÓ tham gia ho¹t ®éng nµy.", 0)
 		return
 	end
 	
 	if ( GetTask(LANTERN_TSKID_WCNT) >= MX_LANTERN_COUNT ) then
-		Say("½ñÌìÄã²Â¶ÔÁË"..MX_LANTERN_COUNT.."ºÜ¶àµÆÃÕ! °Ñ»ú»áÁô¸ø±ğÈË°É!", 0)
+		Say("H«m nay b¹n ®· ®o¸n ®óng "..MX_LANTERN_COUNT.."nhiÒu c©u ®è råi! Nh­êng c¬ héi cho ng­êi kh¸c ®i!", 0)
 		return
 	end
-	show_riddle(0, "µÆÃÕÈçÏÂ: <enter>" )
+	show_riddle(0, "C©u ®è nh­ sau: <enter>" )
 	SetNpcParam(npcidx,4,0)
 	delnpcsafe(npcidx)	--delete npc
 end
@@ -99,13 +99,13 @@ tbl_awards = {
 	{15, nil},
 	{30, nil},
 	{50, nil},
-	{0, {"ÏÉ²İÂ¶", 6, 1, 71, 0}},
-	{0, {"¸£ÔµÂ¶£¨´ó£©", 6, 1, 124, 0}},
-	{0, {"¹ğ»¨¾Æ", 6, 1, 125, 1}},
-	{0, {"ÌìÉ½±¦Â¶", 6, 1, 72, 1}},
-	{0, {"À¶Ë®¾§", 238}},
-	{0, {"ÂÌË®¾§", 240}},		
-	{0, {"×ÏË®¾§", 239}},
+	{0, {"Tiªn Th¶o Lé ", 6, 1, 71, 0}},
+	{0, {"Phóc Duyªn Lé (§¹i) ", 6, 1, 124, 0}},
+	{0, {"QuÕ Hoa Töu", 6, 1, 125, 1}},
+	{0, {"Thiªn s¬n  B¶o Lé ", 6, 1, 72, 1}},
+	{0, {"Lam Thñy Tinh", 238}},
+	{0, {"Lôc Thñy Tinh", 240}},		
+	{0, {"Tö Thñy Tinh", 239}},
 };
 
 -- ·¢½±
@@ -114,7 +114,7 @@ local szLog = date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetNa
 	if (items[1] ~= 0) then
 		local exp = items[1] * 10000
 		AddOwnExp(exp)
-		Msg2Player("ÄãµÃµ½" .. exp .. "¾­Ñéµã.");
+		Msg2Player("B¹n ®¹t ®­îc" .. exp .. "®iÓm kinh nghiÖm.");
 		szLog = szLog.."get "..exp.." point experience;"
 	end
 	local attrs = items[2]
@@ -127,7 +127,7 @@ local szLog = date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetNa
 		elseif (count == 9) then
 			AddQualityItem(attrs[2], attrs[3], attrs[4], attrs[5], attrs[6], attrs[7], attrs[8], attrs[9])
 		end
-		Msg2Player("ÄãµÃµ½1¸ö" .. attrs[1] .. "!");
+		Msg2Player("B¹n nhËn ®­îc mét" .. attrs[1] .. "!");
 		szLog = szLog.."get "..attrs[1]..";"
 	end
 	WriteLog(szLog)
@@ -163,7 +163,7 @@ function show_riddle(count, caption)
 			end;
 		end
 		ReSort(options)
-		tinsert(options, "È¡Ïû/answer_cancel")
+		tinsert(options, "Hñy bá /answer_cancel")
 		Say(question, getn(options), options)
 	end
 end
@@ -191,18 +191,18 @@ function answer_ok(count)
 		local index = get_odds_award(tbl_odds, 100)
 		if (index >= 1) then
 			issue(tbl_awards[index])
-			Talk(1, "", "ÄãÁ¬Ğø´ğ¶ÔÁË3Ìâ£¡ÇëÁìÈ¡½±Àø!")
+			Talk(1, "", "Ng­¬i ®· ®¸p ®óng liªn tôc 3 c©u! Xin nhËn phÇn th­ëng!")
 			SetTask(LANTERN_TSKID_WCNT, GetTask(LANTERN_TSKID_WCNT) + 1)
 			DynamicExecuteByPlayer(PlayerIndex, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "huashandengmi")
 		end
 	else
-		show_riddle(count + 1, "Õæ³öÉ«£¡Çë¼ÌĞø£¡ <enter>")
+		show_riddle(count + 1, "ThËt xuÊt s¾c! Xin tiÕp tôc! <enter>")
 	end
 end
 
 -- µÆÃÕ»Ø´ğ´íÎó
 function answer_fail()
-	show_riddle(0, "´íÁË£¡Çë¼ÌĞø! <enter>")
+	show_riddle(0, "Sai råi! Xin tiÕp tôc! <enter>")
 end
 
 -- È¡ÏûµÆÃÕÎÊ´ğ 

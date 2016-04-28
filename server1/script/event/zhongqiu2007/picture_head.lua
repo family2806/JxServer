@@ -6,7 +6,7 @@
 TSK_TEMP = 51					--Àà±ğÁÙÊ±±äÁ¿
 function makeItemUI()
 	--Èç¹û¾­Ñé´ïµ½ÉÏÏŞ
-	GiveItemUI("½»Í¼", "ºÏ³É·½·¨£º°´ÕÕÎ»ÖÃ°²ÅÅ£¬ÒÔ×ó±ßµÄ¿ÕÎ»Îª×¼ºÏ³ÉÍ¼.", "pic_award", "oncancel");
+	GiveItemUI("Giao tranh", "C¸ch ghĞp: xÕp theo ®óng vŞ trİ, dïng « ®Çu tiªn bªn tr¸i lµm chuÈn ®Ó ghĞp tranh.", "pic_award", "oncancel");
 end;
 
 tab_boxcheck = 
@@ -20,7 +20,7 @@ function pic_award(nCount)
 	local idxItem = 0
 
 	if (nCount ~= 6) then
-		Describe("Ô±Íâ£ºÕâ·ùÍ¼°üÀ¨6¿é£¬Äã½ÌµÄ²»¹»", 1, "ÄÇÎÒ¸æ´Ç/oncancel");
+		Describe("Viªn ngo¹i: Bøc tranh gåm cã 6 m¶nh tranh, ng­¬i giao ch­a ®ñ sè.", 1, "VËy ta xin c¸o tõ./oncancel");
 		return
 	end
 	
@@ -42,7 +42,7 @@ function pic_award(nCount)
 		end
 	end
 	if (0 == nIndex) then
-		Describe("Ô±Íâ£ºÕâĞ©Í¼ËéÆ¬²»ÄÜºÏ³ÉÒ»·ùÍêÕûµÄÍ¼£¬ÇëÕÒµ½ÕıÈ·µÄËéÆ¬ÔÙÀ´ÕÒÎÒ.", 1, "ÄÇÎÒ¸æ´Ç/oncancel");
+		Describe("Viªn ngo¹i: Nh÷ng m¶nh tranh nµy kh«ng thÓ ghĞp thµnh 1 bøc tranh hoµn chØnh, h·y t×m ®óng c¸c m¶nh ghĞp råi h·y ®Õn t×m ta.", 1, "VËy ta xin c¸o tõ./oncancel");
 		return
 	end
 
@@ -67,7 +67,7 @@ function pic_award(nCount)
 	end;
 	
 	if (0 == bFull) then
-		Describe("Ô±Íâ£ºÕâĞ©Í¼ËéÆ¬²»ÄÜºÏ³ÉÒ»·ùÍêÕûµÄÍ¼£¬ÇëÕÒµ½ÕıÈ·µÄËéÆ¬ÔÙÀ´ÕÒÎÒ.", 1, "ÄÇÎÒ¸æ´Ç/oncancel");
+		Describe("Viªn ngo¹i: Nh÷ng m¶nh tranh nµy kh«ng thÓ ghĞp thµnh 1 bøc tranh hoµn chØnh, h·y t×m ®óng c¸c m¶nh ghĞp råi h·y ®Õn t×m ta.", 1, "VËy ta xin c¸o tõ./oncancel");
 		return
 	end
 	
@@ -79,7 +79,7 @@ function pic_award(nCount)
 	
 	--¸ø½±Àø
 	local nidx = AddItem(6,1,nitem,1,0,0)
-	Msg2Player(format("Äú»ñµÃ 1 <color=yellow>%s<color>",GetItemName(nidx)));
+	Msg2Player(format("B¹n nhËn ®­îc 1 <color=yellow>%s<color>",GetItemName(nidx)));
 	WriteLog(format("[zhongqiu2007_qiannenyuebing]\t Date:%s\t Account:%s\t Name:%s\t GetItem:%s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),GetItemName(nidx)));
 	SetTaskTemp(9,0)
 	SetTaskTemp(10,0)

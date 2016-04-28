@@ -11,22 +11,22 @@ function main()
 		if (GetBit(UTask_trsub01,3) == 0) then
 			UTask_trsub01 = SetBit(UTask_trsub01,3,1)
 			SetTask(21, UTask_trsub01)
-			AddNote("´ò¿ªµÚÈı¸ö»ú¹Ø")
-			Msg2Player("´ò¿ªµÚÈı²ãÀïµÄ±¦Ïä£¬´ò¿ªµÚÈı¸ö»ú¹Ø")
+			AddNote("Më ®­îc c¬ quan thø ba ")
+			Msg2Player("Më ®­îc B¶o r­¬ng ë tÇng thø ba. Më ®­îc c¬ quan thø ba ")
 			if (UTask_trsub01 == 7) then 			-- bin: 100 + 010 + 001
-				Talk(1,"","ÄãÒÑ´ò¿ªµÚÈı²ã»ú¹Ø£¬¾È³ö¹ØÔÚËşÀïµÄ·ïôâÈç ")
-				Msg2Player("ÄãÒÑ´ò¿ªµÚÈı²ã»ú¹Ø£¬¾È³ö¹ØÔÚËşÀïµÄ·ïôâÈç ")
+				Talk(1,"","B¹n ®· ph¸ ®­îc c¬ quan tÇng 3, cøu ®­îc Phông HÊp Nh­.")
+				Msg2Player("B¹n ®· ph¸ ®­îc c¬ quan tÇng 3, cøu ®­îc Phông HÊp Nh­.")
 				SetTask(4, 50*256+50)
-				AddNote("Èı²ã»ú¹ØÒÑÈ«²¿´ò¿ª£¬¾È³ö¹ØÔÚËşÀïµÄ·ïôâÈç")
+				AddNote("C¶ ba c¬ quan ®Òu ®· më, cøu ®­îc Phông HÊp Nh­ ")
 			end
 		else
-			Talk(1,"","»ú¹Ø±»´ò¿ª")
+			Talk(1,"","C¬ quan ®· më ra")
 		end
 	elseif (UTask_tr == 50*256+20) and (GetBit(UTask_trsub01,3) == 1) then
-		Talk(1,"","»ú¹Ø±»´ò¿ª")
+		Talk(1,"","C¬ quan ®· më ra")
 	elseif (UTask_tr == 50*256+50)  then
-		Talk(1,"","»ú¹Ø±»´ò¿ª")
+		Talk(1,"","C¬ quan ®· më ra")
 	else
-		Talk(1,"","Ã»ÓĞÔ¿³×¾Í²»ÄÜ´ò¿ª´Ë»ú¹Ø")
+		Talk(1,"","Kh«ng cã ch×a khãa th× kh«ng thÓ më ®­îc c¬ quan nµy ")
 	end
 end;

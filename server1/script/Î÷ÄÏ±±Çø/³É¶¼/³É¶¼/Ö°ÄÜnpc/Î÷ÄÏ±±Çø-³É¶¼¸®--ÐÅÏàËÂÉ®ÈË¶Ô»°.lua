@@ -5,12 +5,12 @@ function main(sel)
 i = random(0,1)
 
 if (i == 0) then
-Say("É®ÈË£º°¢ÃÖÍÓ·ğ£¡",0)
+Say("A Di §µ PhËt! ",0)
 return
 end;
 
 if (i == 1) then
-Say("É®ÈË£º±¾ËÂ´´½¨ÓÚËåì¾µÛ´óÒµÔªÄê£¬¾à½ñÒÑÓĞÎå°ÙÎåÊ®ÎåÄêÁË¡£", 0)
+Say("Tİn T­íng tù ®­îc x©y dùng trong nh÷ng n¨m ®¹i nghiÖp Tïy D¹ng §Õ, ®Õn nay ®· 555 n¨m", 0)
 end;
 
 end;

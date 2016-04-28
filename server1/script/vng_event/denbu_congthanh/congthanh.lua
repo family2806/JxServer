@@ -6,22 +6,22 @@ Include("\\script\\misc\\eventsys\\type\\npc.lua")
 
 function tbDenbuCT2011:ShowDialog()
 	if (tbDenbuCT2011:IsActive() ~= 1) then
-		Talk(1,"","»î¶¯ÒÑ½áÊø!")
+		Talk(1,"","Ho¹t ®éng ®· kÕt thóc!")
 		return
 	end
 	
-	local strTittle = "¹¥³Ç²¹³¥½±Àø£¬Èç¹û´óÏÀ²»¼ÓÈë°ï»á£¬½«²»ÄÜ»ñµÃ<color=red>ÌôÕ½Áî½±Àø<color>"
-	Describe(strTittle, 2, "ÎÒÏëÁì/#tbDenbuCT2011:GetAward()", "¹Ø±Õ/OnCancel")
+	local strTittle = "PhÇn th­ëng §Òn bï C«ng thµnh, nÕu §¹i HiÖp kh«ng gia nhËp Bang Héi sÏ kh«ng nhËn ®­îc <color=red>PhÇn th­ëng Khiªu ChiÕn LÖnh <color>"
+	Describe(strTittle, 2, "Ta muèn nhËn/#tbDenbuCT2011:GetAward()", "§ãng/OnCancel")
 end
 
 function tbDenbuCT2011:GetAward()
 	if not self.tbListaward[GetAccount()] then	
-		Talk(1, "", "´óÏÀÃ»ÓĞÔÚÁì½±Ãûµ¥ÄÚ")	
+		Talk(1, "", "§¹i HiÖp kh«ng cã trong danh s¸ch nhËn th­ëng lÇn nµy")	
 		return
 	end
 	
 	if (tbExtPointLib:GetBitValue(self.nExtpoint_Is_DBCT, self.nBit_Is_DBCT) == 1) then
-		Talk(1, "", "´óÏÀ²»ÊÇÒÑ¾­Áì½±ÁËÂğ?")
+		Talk(1, "", "Ch¼ng ph¶i ®¹i hiÖp ®·  nhËn th­ëng råi sao?")
 		return
 	end
 	
@@ -38,10 +38,10 @@ function tbDenbuCT2011:GetAward()
 		checkJoinLG(szTongName);
 		local nCurCount = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 		LG_ApplyAppendMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName, szTongName, LGTSK_TIAOZHANLING_COUNT, 2000, "", "");
-		Msg2Player("³É¹¦¸ø°ï»á½»2000ÌôÕ½Áî!")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."DenbuCT2011"..GetAccount().."\t"..GetName().."\t".."³É¹¦¸ø°ï»á½»2000ÌôÕ½Áî")
+		Msg2Player("§¹i hiÖp nép thµnh c«ng 2000 Khiªu ChiÕn LÖnh cho Bang Héi !")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."DenbuCT2011"..GetAccount().."\t"..GetName().."\t".."Nép thµnh c«ng 2000 KCL cho Bang Héi")
 	end
-	Msg2Player("¹§Ï²´óÏÀ³É¹¦ÁìÈ¡¹¥³Ç²¹³¥½±Àø.");
+	Msg2Player("Chóc mõng §¹i HiÖp nhËn thµnh c«ng phÇn th­ëng ®Òn bï C«ng Thµnh.");
 end
 
 function tbDenbuCT2011:IsActive()
@@ -68,5 +68,5 @@ end
 local pEventType = EventSys:GetType("AddNpcOption")
 
 if (tbDenbuCT2011:IsActive() ~= 0) then
-	nId = pEventType:Reg("L?Quan", "ÁìÈ¡¹¥³Ç²¹³¥", tbDenbuCT2011.ShowDialog,{tbDenbuCT2011})
+	nId = pEventType:Reg("LÔ Quan", "NhËn ®Òn bï C«ng Thµnh", tbDenbuCT2011.ShowDialog,{tbDenbuCT2011})
 end	

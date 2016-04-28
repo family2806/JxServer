@@ -1,5 +1,5 @@
 -- ÌìÁúËÂÍ¨ÍùÎŞÏà±¦Ëş
 
 function main()
-	Say("ËÂÄÚÉ®ÈËÕıÔÚ¾²ĞŞ£¬Äã×îºÃ²»ÒªËæ±ã½øÈëÎŞÏà±¦Ëş!",0);
+	Say("T¨ng nh©n trong tù ®ang tŞnh tu, tèt nhÊt ng­¬i ®õng nªn tïy tiÖn x«ng vµo V« T­íng B¶o Th¸p ®ã!",0);
 end

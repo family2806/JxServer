@@ -6,7 +6,7 @@ tbYanhuaNpc.tbData = {}
 function tbYanhuaNpc:Create(tbAward, tbFunLimit)
 	
 	if not(tbFunLimit.pfun()) then
-			Msg2Player("Ê¹ÓÃ¹ı¶àÑÌ»¨ÁË!")
+			Msg2Player("Sö dông qu¸ nhiÒu ph¸o hoa råi!")
 			return
 	end
 

@@ -23,12 +23,12 @@ function dialog_menu()
 	end
 	local tbOpt =
 	{
-		{"Á¬½Ó·şÎñÆ÷", across_server},
-		{"¼ì²éÁ¬½Ó·şÎñÆ÷ÒøÁ½", show_across_server_money},
-		{"Á¬½Ó·şÎñÆ÷¹±Ï×¶È", tbTripBattlePoint2Exp.DialogMain, {tbTripBattlePoint2Exp}},
-		{"½áÊø¶Ô»°"},
+		{"Liªn server", across_server},
+		{"KiÓm tra ng©n l­îng server liªn kÕt", show_across_server_money},
+		{"§iÓm cèng hiÕn server liªn kÕt", tbTripBattlePoint2Exp.DialogMain, {tbTripBattlePoint2Exp}},
+		{"KÕt thóc ®èi tho¹i"},
 	}
-	CreateNewSayEx("Ğş¾§ÓñÅå", tbOpt)
+	CreateNewSayEx("HuyÒn Kim Ngäc Bµi", tbOpt)
 end
 
 function across_server()
@@ -38,42 +38,42 @@ function across_server()
 		local szServerName = TripC_GetServerName(i)
 		tinsert(tbOpt, {szServerName, sign_up, {i}})
 	end
-	tinsert(tbOpt, {"·µ»Ø", dialog_menu})
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
-	CreateNewSayEx("ÄãÏëÈ¥ÄÄÀï?", tbOpt)
+	tinsert(tbOpt, {"Trë vÒ", dialog_menu})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
+	CreateNewSayEx("Ng­¬i muèn ®i tíi n¬i nµo?", tbOpt)
 end
 
 function show_across_server_money()
 	local tbOpt =
 	{
-		{"·µ»Ø", dialog_menu},
-		{"½áÊø¶Ô»°"},
+		{"Trë vÒ", dialog_menu},
+		{"KÕt thóc ®èi tho¹i"},
 	}
-	local szTitle = format("<color=yellow>%s<color>ÄãÓĞ <color=yellow>%d<color> Á¬½Ó·şÎñÆ÷ÒøÁ½, <color=yellow> ¸ÃÒøÁ½ÊıÊÇÄã¿ÉÒÔ´ÓÔ´Í··şÎñÆ÷´øµ½¹«¹²·şÎñÆ÷£¬Íê³ÉµÄ²»ÊÇ¹«¹²·şÎñÆ÷µÄÒøÁ½Êı¡£¹«¹²·şÎñÆ÷£¬Äã¿ÉÒÔÇ××Ôµ½¹«¹²·şÎñÆ÷¼ì²é¡£ <color>", GetName(), GetTask(TSK_TRIP_MONEY))
+	local szTitle = format("<color=yellow>%s<color>Ng­¬i cã <color=yellow>%d<color> ng©n l­îng server liªn kÕt, <color=yellow> sè ng©n l­îng nµy lµ ng­¬i cã thÓ ®em tõ server nguån ®Õn server c«ng céng, hoµn toµn kh«ng ph¶i sè ng©n l­îng cña server c«ng céng. Ng©n l­îng server c«ng céng ng­¬i cã thÓ ®İch th©n ®Õn server c«ng céng ®Ó kiÓm tra. <color>", GetName(), GetTask(TSK_TRIP_MONEY))
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
 function sign_up(nServerId)
 	local _, nValue = GetRoleEquipValue()
-	local szTitle = format("ÄãÄ¿Ç°µÄ±ø¼×ÊıÖµÎª%d, ÄãÏëÈ¥ËÎ½ğÁ¬½Ó·şÎñÆ÷µÄÄÄ¸ö¼¶±ğ? <enter>", nValue)
+	local szTitle = format("TrŞ sè binh gi¸p hiÖn t¹i cña ng­¬i lµ %d, Ng­¬i muèn ®i Tèng Kim Liªn Server cÊp ®é nµo? <enter>", nValue)
 	local tbOpt = {}
 	for i=1, getn(BattleManagerDef) do
 		local nMapId = BattleManagerDef[i][2]
 		local pManager = BattleManagerList[nMapId]
 		if pManager then
 			if pManager.nMinEqValue and pManager.nMaxEqValue then
-				szTitle = szTitle..format("%s ÒªÇó±ø¼×¼ÛÖµ (%d~%d)<enter>", pManager.szName, pManager.nMinEqValue, pManager.nMaxEqValue)
+				szTitle = szTitle..format("%s yªu cÇu gi¸ trŞ binh gi¸p(%d~%d)<enter>", pManager.szName, pManager.nMinEqValue, pManager.nMaxEqValue)
 			elseif pManager.nMinEqValue and not pManager.nMaxEqValue then
-				szTitle = szTitle..format("%s ÒªÇó±ø¼×¼ÛÖµ %d ÒÔÉÏ <enter>", pManager.szName, pManager.nMinEqValue)
+				szTitle = szTitle..format("%s yªu cÇu gi¸ trŞ binh gi¸p %d trë lªn<enter>", pManager.szName, pManager.nMinEqValue)
 			elseif pManager.nMaxEqValue and not pManager.nMinEqValue then
-				szTitle = szTitle..format("%s ÒªÇó±ø¼×¼ÛÖµ%d ÒÔÏÂ <enter>", pManager.szName, pManager.nMaxEqValue)
+				szTitle = szTitle..format("%s yªu cÇu gi¸ trŞ binh gi¸p%d trë xuèng<enter>", pManager.szName, pManager.nMaxEqValue)
 			else
-				szTitle = szTitle..format("%s kh«ng ÒªÇó±ø¼×¼ÛÖµ", pManager.szName)
+				szTitle = szTitle..format("%s kh«ng yªu cÇu gi¸ trŞ binh gi¸p", pManager.szName)
 			end
 			tinsert(tbOpt, {pManager.szName, select_mamager, {nMapId, nServerId}})
 		end
 	end
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
@@ -91,12 +91,12 @@ function select_mamager(nMapId, nServerId)
 			TripC_Apply(szServerName, 0, pManager.nMapId, 1541, 3178)
 		end
 	else
-		return  Talk(1, "", format("ÄãµÄ±ø¼×¼ÛÖµ(%d)²»·ûºÏÒªÇó", nValue))
+		return  Talk(1, "", format("Gi¸ trŞ binh gi¸p cña ng­¬i(%d)kh«ng phï hîp yªu cÇu", nValue))
 	end
 end
 
 function get_item()
-	tbAwardTemplet:Give({szName="Ğş¾§ÓñÅå",tbProp={6,1,3035,1,0,0},}, 1, {"TRIP", "get item"})
+	tbAwardTemplet:Give({szName="HuyÒn Kim Ngäc Bµi",tbProp={6,1,3035,1,0,0},}, 1, {"TRIP", "get item"})
 end
 
---EventSys:GetType("AddNpcOption"):Reg("³ÇÃÅÎÀ±ø","ÎÒÏëÁìÈ¡Ğş¾§ÓñÅå", get_item)
+--EventSys:GetType("AddNpcOption"):Reg("VÖ binh thµnh m«n","Ta muèn nhËn huyÒn Kim Ngäc Bµi", get_item)

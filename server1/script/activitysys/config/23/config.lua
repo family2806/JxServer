@@ -4,7 +4,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "FinishYesou",
-	szName = "Ò»ÌìÄÚÒÑÍê³É10¸öÒ°ÛÅÈÎÎñ",
+	szName = "Trong ngµy ®· hoµn thµnh 10 nhiÖm vô D· TÈu",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {10},
@@ -12,11 +12,11 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_YeSou,0,"","=="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Ò»ÌìÄÚÒÑÍê³ÉÊ®¸öÒ°ÛÅÈÎÎñ"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy ®· hoµn thµnh 10 nhiÖm vô D· TÈu"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_YeSou,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -25,7 +25,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "LeagueResult",
-	szName = "µ±ÈÕÓĞµÚÒ»³¡ÁªÈüÊ¤",
+	szName = "Trong ngµy cã trËn liªn ®Êu th¾ng ®Çu tiªn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {2,1},
@@ -33,11 +33,11 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_LeagueMatch,0,"","=="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"µ±ÈÕÓĞµÚÒ»³¡ÁªÈüÊ¤"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy cã trËn liªn ®Êu th¾ng ®Çu tiªn"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_LeagueMatch,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -46,7 +46,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "FinishSongJin",
-	szName = "µ±ÈÕµÚÒ»´ÎµÃµ½3000ËÎ½ğ»ı·Ö",
+	szName = "Trong ngµy lÇn ®Çu tiªn ®­îc 3000 ®iÓm tİch lòy Tèng Kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,"3"},
@@ -55,11 +55,11 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 		{"PlayerFunLib:CheckTask",	{"751",3000,"",">="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_SongJin,0,"","=="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"µ±ÈÕµÚÒ»´ÎµÃµ½3000ËÎ½ğ»ı·Ö"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy lÇn ®Çu tiªn ®­îc 3000 ®iÓm tİch lòy Tèng Kim"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_SongJin,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -68,7 +68,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "nil",
-	szName = "µ±ÈÕµÚÒ»´ÎÍê³ÉĞÅÊ¹·çÖ®Æì",
+	szName = "Trong ngµy lÇn ®Çu tiªn hoµn thµnh tİn sø Phong Chi Kú",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -83,7 +83,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "FinishFengLingDu",
-	szName = "µ±ÈÕµÚÒ»´ÎÍê³É·çÁê¶É",
+	szName = "Trong ngµy lÇn ®Çu tiªn hoµn thµnh Phong L¨ng §é",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -91,11 +91,11 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_FengLingDu,0,"","=="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"µ±ÈÕµÚÒ»´ÎÍê³É·çÁê¶É"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy lÇn ®Çu tiªn hoµn thµnh Phong L¨ng §é"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_FengLingDu,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -104,7 +104,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "NpcOnDeath",
-	szName = "µ±ÈÕÉ±ËÀ3¸öÀ¶¹ÖµÚÒ»´Î95¼¶",
+	szName = "Trong ngµy giÕt ®­îc 3 con qu¸i xanh ®Çu tiªn cÊp 95",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -114,11 +114,11 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 		{"NpcFunLib:CheckNpcLevel",	{"95"} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_LanGuai,3,"","<"} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},1,"µ±ÈÕÉ±ËÀ3¸öÀ¶¹ÖµÚÒ»´Î95¼¶"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},1,"Trong ngµy giÕt ®­îc 3 con qu¸i xanh ®Çu tiªn cÊp 95"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_LanGuai,1} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,1} },
 	},
@@ -127,7 +127,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "Chuanguan",
-	szName = "µ±ÈÕµÚÒ»´ÎÍê³É´³¹Ø1",
+	szName = "Trong ngµy hoµn thµnh 1 lÇn v­ît ¶i ®Çu tiªn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"28", 2},
@@ -135,11 +135,11 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_ChuangGuan,0,"","=="} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"µ±ÈÕµÚÒ»´ÎÍê³É´³¹Ø1"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Trong ngµy hoµn thµnh 1 lÇn v­ît ¶i ®Çu tiªn"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_ChuangGuan,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},
@@ -193,7 +193,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "FinishCangBaoTu",
-	szName = "µ±ÈÕ3´Î´³¹ıµÚÒ»¸ö²Ø±¦Í¼¹Ø",
+	szName = "Trong ngµy 3 lÇn v­ît ¶i Tµng B¶o §å ®Çu tiªn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -201,11 +201,11 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_CangBaoTu,3,"","<"} },
 		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,"","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},1,"µ±ÈÕ3´Î´³¹ıµÚÒ»¸ö²Ø±¦Í¼¹Ø"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},1,"Trong ngµy 3 lÇn v­ît ¶i Tµng B¶o §å ®Çu tiªn"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_CangBaoTu,1} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,1} },
 	},
@@ -229,35 +229,35 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "ClickNpc",
-	szName = "Ã¿ÌìÉÏÍøÁì½±",
+	szName = "Mçi ngµy lªn m¹ng lÜnh th­ëng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Àñ¹Ù"},
+	tbMessageParam = {"LÔ Quan"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		--{"AddDialogOpt",	{"ÁìĞĞÏÀÁî",14} },
+		--{"AddDialogOpt",	{"NhËn hµnh hiÖp lÖnh",14} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "nil",
-	szName = "ÁìĞĞÏÀÁî",
+	szName = "NhËn hµnh hiÖp lÖnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_GetEveryDay,0,"ÄãÒÑ¾­ÁìÁË!","=="} },
-		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,format("Ã¿Ìì×î¶àÖ»ÄÜÁì%dĞĞÏÀÆì£¬½ñÌìÄãÒÑ¾­Áì¹ºÁË£¬Ã÷ÌìÔÙÀ´°É", 25),"<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"ÄãµÄ×°±¸Ã»ÓĞ¿ÕÎ»ÁË£¬´Ë´Î½±Àø²»ÄÜ»ñµÃ"} },
+		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_GetEveryDay,0,"Ng­¬i ®· nhËn råi!","=="} },
+		{"PlayerFunLib:CheckTaskDaily",	{TaskVarIdx_XinXiaLinMax,25,format("Mçi ngµy chØ ®­îc nhËn nhiÒu nhÊt %d Hµnh hiÖp kú, h«m ng­¬i ®· nhËn ®ñ råi, ngµy mai l¹i ®Õn nhĞ.", 25),"<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang cña b¹n kh«ng cßn chç trèng, phÇn th­ëng lÇn nµy kh«ng nhËn ®­îc"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Ã¿ÌìÉÏÍøÁì½±"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2566,1,0,0},},2,"Mçi ngµy lªn m¹ng lÜnh th­ëng"} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_GetEveryDay,2} },
 		{"PlayerFunLib:AddTaskDaily",	{TaskVarIdx_XinXiaLinMax,2} },
 	},

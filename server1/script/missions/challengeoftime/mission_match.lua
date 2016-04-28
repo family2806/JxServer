@@ -54,7 +54,7 @@ function OnLeave(index)
 	SetTask(1505, 0)
 	DisabledUseTownP(0)
 	
-	Msg2MSAll(MISSION_MATCH, GetName().."Àë¿ªÈÎÎñÇøÓò");
+	Msg2MSAll(MISSION_MATCH, GetName().."Rêi khái khu vùc nhiÖm vô ");
 	
 	--Storm ¼Ó½±Àø·Ö
 	if storm_valid_game(2) then	--·ç±©ÌôÕ½Ã»ÓĞ½áÊø£¨Èç¹ûÊÇÍæ¼ÒÏÂÏß¸Ã¶Î´úÂë²»»áÆğ×÷ÓÃ£©
@@ -79,7 +79,7 @@ function JoinMission(RoleIndex, camp)
 	SetFightState(1);
 	SetLogoutRV(1);
 	SetPunish(0);
-	str = GetName().."²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ¡¯"
+	str = GetName().."Tham gia 'NhiÖm vô Th¸ch thøc thêi gian'"
 	local sf_mapid = SubWorldIdx2ID(SubWorld)
 	NewWorld(sf_mapid, BOAT_POSX, BOAT_POSY);
 	SetCreateTeam(0);

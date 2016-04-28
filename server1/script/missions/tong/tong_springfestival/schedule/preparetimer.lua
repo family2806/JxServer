@@ -21,10 +21,10 @@ function OnTimer()
 		return
 	elseif (0 == mod(nNewsValue, 2)) then
 		if (nRemain > 0) then
-			Msg2MSAll(SF_PREPAREMISSIONID, format("»î¶¯½«¿ªÊ¼£¬ÔÚ%d ·ÖÖÓºó!",nRemain));
+			Msg2MSAll(SF_PREPAREMISSIONID, format("Ho¹t ®éng sÏ b¾t ®Çu sau %d phót!",nRemain));
 		end;
 	elseif (9 == nNewsValue) then
-        Msg2MSAll(SF_PREPAREMISSIONID, "Ö»ÓÐ30Ãë»î¶¯½«¿ªÊ¼!");
+        Msg2MSAll(SF_PREPAREMISSIONID, "chØ cßn 30 gi©y n÷a ho¹t ®éng sÏ b¾t ®Çu!");
 	end;
 end;
 

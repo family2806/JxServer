@@ -8,68 +8,68 @@ if (not __H_ITEM_LIGUAN__) then
 Include([[\script\event\mid_autumn06\head.lua]]);
 
 tab_lg_award = {
-	{	"ÎäÁÖÃØ¼®",	125,	6,	1,	26, 1},
-	{	"Ï´Ë®¾§",	125,	6,	1,	22, 1},
-	{	"80¼¶Âí",	250,	0,	10,	2,	4},
-	{	"ÃÅÅÉ¼¼ÄÜÊé",	400,	-1},
-	{	"ÏÉ²İÂ¶ºÍ¸£ÔµÂ¶",	4550,	-1},
-	{	"°ËÕä¸£ÔÂÔÂ±ı",	4550,	6,	1,	126, 1},
+	{	"Vâ L©m MËt TŞch",	125,	6,	1,	26, 1},
+	{	"TÈy Tñy Kinh",	125,	6,	1,	22, 1},
+	{	"ngùa cÊp 80",	250,	0,	10,	2,	4},
+	{	"s¸ch kü n¨ng m«n ph¸i",	400,	-1},
+	{	"Tiªn Th¶o Lé vµ Phóc Duyªn Lé",	4550,	-1},
+	{	"b¸nh trung thu B¸t Tr©n Phóc NguyÖt",	4550,	6,	1,	126, 1},
 };
 
 tab_sbook_list =
 {	-- ¸ñÊ½£º{¼¼ÄÜID, ¼¼ÄÜÊéÃû³Æ}
-	{27, "'Ğä¼ıÊõ. ±©ÓêÀæ»¨' "},
-	{28, "'ÏİÚåÊõ. ÂÒ»¹»÷' "},
-	{33, "Ì«¼«È­Æ×. ¾í3 "},
-	{34, "Ì«¼«È­Æ×. ¾í2"},
-	{35, "'ÔÆÁú»÷. Ã¬ÅÉ' "},
-	{36, "'Á÷ĞÇ. µ¶ÅÉ' "},
-	{37, "'ÌìÍõ´¸·¨. ¾í1' "},
-	{38, "ÌìÍõÇ¹·¨- ¾í2 "},
-	{39, "ÌìÍõµ¶·¨ - ¾í3 "},
-	{40, "'´äÑÌµ¶·¨' "},
-	{41, "'´äÑÌË«µ¶' "},
-	{42, "'Ãğ½£ÃØ¼®' "},
-	{43, "'¶ëÃ¼·ğ¹âÕÆÃØóÅ' "},
-	{45, "'·Éµ¶Êõ. Ò¹»êÔÂÓ°' "},
-	{46, "'·ÉïÚÊõ. ¾Å¹¬·ÉĞÇ' "},
-	{47, "'Îå¶¾ÕÆ·¨. ¾í 1' "},
-	{48, "'Îå¶¾µ¶·¨. ¾í 2' "},
-	{49, "'Îå¶¾ÃğĞÄÊõ. ¾í 3' "},
-	{50, "'Óù·çÊõ' "},
-	{51, "'Ô¦À×Êõ' "},
-	{52, "'ÓùĞÄÊõ' "},
-	{53, "Ãğ»ê-ÉãÖä"},
-	{54, "'Ø¤°ïÕÆ·¨' "},
-	{55, "Ø¤°ï¹÷·¨"},
-	{56, "'ÉÙÁÖÈ­·¨. ¾í 1' "},
-	{57, "'ÉÙÁÖ¹÷·¨. ¾í 2' "},
-	{58, "'ÉÙÁÖµ¶·¨. ¾í 3' "},
-	{59, "'ÃØ¼®Í¼Æ×' "},
+	{27, "'Tô TiÔn thuËt. B¹o Vò Lª Hoa' "},
+	{28, "'H·m TÜnh thuËt. Lo¹n Hoµn Kİch' "},
+	{33, "Th¸i Cùc QuyÒn Phæ- QuyÓn 3 "},
+	{34, "'Th¸i Cùc KiÕm Phæ. QuyÓn 2' "},
+	{35, "'V©n Long Kİch. M©u ph¸p' "},
+	{36, "'L­u Tinh. §ao ph¸p' "},
+	{37, "'Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1' "},
+	{38, "Thiªn V­¬ng Th­¬ng ph¸p- QuyÓn 2 "},
+	{39, "Thiªn V­¬ng §ao ph¸p - QuyÓn 3 "},
+	{40, "'Thóy Yªn §ao ph¸p' "},
+	{41, "'Thóy Yªn Song ®ao' "},
+	{42, "'DiÖt KiÕm MËt TŞch' "},
+	{43, "'Nga Mi PhËt Quang Ch­ëng MËt TŞch' "},
+	{45, "'Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh' "},
+	{46, "'Phi Tiªu thuËt. Cöu Cung Phi Tinh' "},
+	{47, "'Ngò §éc Ch­ëng Ph¸p. QuyÓn 1' "},
+	{48, "'Ngò §éc §ao ph¸p. QuyÓn 2' "},
+	{49, "'Ngò §éc NhiÕp T©m thuËt. QuyÓn 3' "},
+	{50, "'Ngù Phong thuËt' "},
+	{51, "'Ngù L«i thuËt' "},
+	{52, "'Ngù T©m thuËt' "},
+	{53, "NhiÕp Hån - Tr­íc Chó "},
+	{54, "'C¸i Bang Ch­ëng Ph¸p' "},
+	{55, "C¸i Bang C«n Ph¸p "},
+	{56, "'ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1' "},
+	{57, "'ThiÕu L©m C«n ph¸p. QuyÓn 2' "},
+	{58, "'ThiÕu L©m §ao ph¸p. QuyÓn 3' "},
+	{59, "'Phæ §é MËt TŞch' "},
 }
 
 --Àñ¹Ù»»½±Æ·Èë¿Ú
 function au06_lg_award()
 	if (au06_is_inperiod() == 0) then --
-		Say("»î¶¯½áÊøÁË.", 0);
+		Say("Ho¹t ®éng ®· kÕt thóc.", 0);
 		return 1;
 	end;
 	
 	if (au06_IsPayed_player() == 0) then
-		Say("Ö»ÓĞ³äÖµÍæ¼Ò²Å¿ÉÒÔ²Î¼ÓÖĞÇï»î¶¯", 0);
+		Say("ChØ cã ng­êi ch¬i n¹p thÎ míi cã thÓ tham gia ho¹t ®éng Trung thu", 0);
 		return
 	end;
 	
 	local tab_Content = {
-		"ºÃÁË£¡ÎÒÓÃ10¸öÌØÖÆÎå²ÊµÆÁı»»ÄãµÄÀñÎï!/au06_shangjialingpai",
-		"Ö»ÊÇÀ´¿´¿´Äã!/oncancel"
+		"§­îc th«i! Ta ®æi 10 Lång ®Ìn kĞo qu©n ®Æc biÖt lÊy quµ cña «ng!/au06_shangjialingpai",
+		"ChØ ®Õn th¨m «ng chót th«i!/oncancel"
 	};
-	Say("ÖĞÇï¿ìÀÖ£¡ÄãÏëÓÃ10¸öÌØÖÆÎå²ÊµÆÁı»»ÎÒµÄÀñÎïÂğ?", getn(tab_Content), tab_Content);
+	Say("Trung thu vui vÎ! Ng­¬i cã muèn ®æi 10 Lång ®Ìn kĞo qu©n ®Æc biÖt lÊy quµ cña ta kh«ng?", getn(tab_Content), tab_Content);
 end;
 
 function au06_shangjialingpai()
 	if (CalcEquiproomItemCount(6, 1, 1234, -1) < 10) then
-		Say("ÕÒ¹» <color=yellow>10¸öÌØÖÆÎå²ÊµÆÁı<color> Ö®ºóµ½Õâ!", 0);
+		Say("T×m ®ñ <color=yellow>10 Lång ®Ìn kĞo qu©n ®Æc biÖt<color> råi h·y ®Õn ®©y!", 0);
 		return
 	end;
 	
@@ -95,7 +95,7 @@ function au06_shangjialingpai()
 	if (nIndex == 4) then -- Ôö¼Ó¼¼ÄÜÊé
 		local bIdx = random(1, getn(tab_sbook_list));
 		AddItem(6, 1, tab_sbook_list[bIdx][1], 1, 0, 0, 0);
-		szName = "¾í"..tab_sbook_list[bIdx][2];
+		szName = "quyÓn"..tab_sbook_list[bIdx][2];
 	elseif (nIndex == 5) then -- Ôö¼ÓÏÉ²İºÍ¸£Ôµ
 		AddItem(6, 1, 71, 1, 0, 0, 0);
 		AddItem(6, 1, 124, 1, 0, 0, 0);
@@ -106,8 +106,8 @@ function au06_shangjialingpai()
 	end;
 	
 	--¸øÓèÌáÊ¾
-	Say("ÓĞÁËÕâĞ©µÆÁıÖĞÇï¾Í¸ü¼Ó¿ªĞÄÁË£¡ËÍ¸øÄã£¡×£ÖĞÇï¿ìÀÖ£¡", 0);
-	Msg2Player("ÄãµÃµ½<color=yellow>"..szName.."<color>");
+	Say("Cã lång ®Ìn nµy Trung Thu cµng thªm vui! TÆng ng­¬i! Chóc trung thu vui vÎ!", 0);
+	Msg2Player("B¹n nhËn ®­îc<color=yellow>"..szName.."<color>");
 end
 
 end; --//end of __H_ITEM_LIGUAN__

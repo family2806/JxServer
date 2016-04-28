@@ -3,7 +3,7 @@
 
 function OnTimer()
 	StopTimer()
-	Msg2Player("取画眉草时间已到! ")
+	Msg2Player("Th阨 h筺 l蕐 Hoa Mi Th秓  n! ")
 	SetTask(5, 30*256+50)
 end;
 

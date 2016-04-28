@@ -39,7 +39,7 @@ end
 function BattleClass:InitChannel()
 	self.szChannel = {}
 	for k, v in CHANNEL_ID do
-		 local szId = format("µÚ %s³¡ %d", CAMP_NAME[k], self.nId)
+		 local szId = format("%s trËn thø %d", CAMP_NAME[k], self.nId)
 		self.szChannel[k] = szId
 		CreateChannel(szId, v)
 	end
@@ -131,12 +131,12 @@ function BattleClass:AskEnterMap(szName, nCamp)
 	if not self.pRule then
 		return
 	end
-	local szTitle = format("µÚ %d³¡ËÎ½ð¿ªÊ¼, ÏëÒª½øÈëÕ½³¡Âð", self.nId)
+	local szTitle = format("TrËn thø %d Tèng kim b¾t ®Çu, cã muèn ®i vµo chiÕn tr­êng kh«ng", self.nId)
 	local tbOpt = 
 	{
-		{"Ïë", self.EnterMap, {self, szName, nCamp}},
+		{"Muèn", self.EnterMap, {self, szName, nCamp}},
 		{"ÖØÐÂÑ¡Ôñ", DynamicExecuteByPlayer, {nPlayerIndex, "\\script\\missions\\battle\\protocol_gs.lua", "dialog", 1}},
-		{"Àë¿ª¶ÓÎé"},
+		{"Rêi khái ®éi ngò"},
 	}
 	 
 	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle, tbOpt)
@@ -206,13 +206,13 @@ function BattleClass:JoinWaiting(szName, nCamp)
 	-- ÕóÓª±¨ÃûÈËÊýÉÏÏÞÌáÊ¾
 	if (nCamp == CAMP_SONG and nCurSong >= CAMP_PLAYER_MAX_COUNT) or
 	 		(nCamp == CAMP_KIM and nCurKim >= CAMP_PLAYER_MAX_COUNT) then
-		Talk(1, "", format("ÕóÓª±¨ÃûÈËÊý×î¶àÎª ?%dÈË, Çë¼ÓÈë±ðµÄµØ·½»ò²Î¼Ó±ðµÄÕóÓª.", CAMP_PLAYER_MAX_COUNT))
+		Talk(1, "", format("Sè ng­êi trong trËn doanh ®¬n ®Êu dung n¹p nhiÒu nhÊt lµ %d ng­êi, mêi gia nhËp n¬i kh¸c hoÆc tham gia trËn kh¸c.", CAMP_PLAYER_MAX_COUNT))
 		return 
 	end
 	
 	if (nCamp == CAMP_SONG and nCurSong - nCurKim >= PLAYER_COUNT_DIFFERENCE) or
 			(nCamp == CAMP_KIM and nCurKim - nCurSong >= PLAYER_COUNT_DIFFERENCE) then
-		Talk(1, "", format("Õâ¸ö¾üÓªµÄ¾ü¶ÓÊýÌ«¶àÁË(Ïà²î²»ÄÜ³¬¹ý %dÈË), Äã¿ÉÒÔ¼ÓÈë±ðµÄ¾üÓª.", PLAYER_COUNT_DIFFERENCE))
+		Talk(1, "", format("Qu©n sè t¹i qu©n danh nµy ®· qu¸ nhiÒu ( chªnh lÖch nhau kh«ng ®­îc qu¸ %d ng­êi ), ng­¬i cã thÓ chän mét qu©n doanh kh¸c ®Ó gia nhËp.", PLAYER_COUNT_DIFFERENCE))
 		return 
 	end
 	
@@ -259,7 +259,7 @@ function BattleClass:Run()
 	if self.pRule then
 		return
 	end
-	local pDungeonType = DungeonType["ËÎ½ðÁ¬server"]
+	local pDungeonType = DungeonType["Tèng Kim liªn server"]
 	if not pDungeonType then
 		error("lost rule why?")
 		return
@@ -288,9 +288,9 @@ function BattleClass:OnClose()
 	local nWinCamp = self:Judge()
 	
 	if nWinCamp == 0 then
-		Msg2Map(self.pRule.nMapId, format("½á¹û»¯"))
+		Msg2Map(self.pRule.nMapId, format("KÕt qu¶ hßa"))
 	else
-		Msg2Map(self.pRule.nMapId, format("%s Ê¤Àû", CAMP_NAME[nWinCamp]))
+		Msg2Map(self.pRule.nMapId, format("%s th¾ng lîi", CAMP_NAME[nWinCamp]))
 	end
 	
 	for k, nCamp in {CAMP_SONG, CAMP_KIM} do
@@ -299,7 +299,7 @@ function BattleClass:OnClose()
 			local nPlayerIndex = SearchPlayer(szName)
 			self.pManager:PlayerLeaveQueue(szName)
 			if nPlayerIndex > 0 then
-				CallPlayerFunction(nPlayerIndex, Msg2Player, "ËÎ½ðÒÑ½áÊø£¬ÇëÖØÐÂÑ¡Ôñ¶ÓÎé")
+				CallPlayerFunction(nPlayerIndex, Msg2Player, "Tèng Kim ®· kÕt thóc, xin h·y chän l¹i ®éi ngò")
 			end		
 		end
 		for szName, pData in %Hash.pairs(self.tbPlaying[nCamp]) do
@@ -314,10 +314,10 @@ function BattleClass:OnClose()
 					else
 						nExtPoint = LOSE_POINT	
 					end
-					CallPlayerFunction(nPlayerIndex, Msg2Player, format("ÄãµÃµ½ %d Á¬½Óserver¹±Ï×.", nExtPoint))
+					CallPlayerFunction(nPlayerIndex, Msg2Player, format("Ng­¬i nhËn ®­îc %d ®iÓm cèng hiÕn liªn server.", nExtPoint))
 					CallPlayerFunction(nPlayerIndex, self.Data.AddTotalPoint, self.Data, szName, nExtPoint)
 				end
-				CallPlayerFunction(nPlayerIndex, Msg2Player, "ËÎ½ð½áÊø")
+				CallPlayerFunction(nPlayerIndex, Msg2Player, "Tèng Kim kÕt thóc")
 				self:LeaveMap(szName)
 			end
 		end

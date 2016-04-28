@@ -3,9 +3,9 @@ Include("\\script\\missions\\zhaojingling\\head.lua")
 Include("\\script\\global\\autoexec_head.lua")
 
 Game = GameTemplet:new()
-Game.szMapType = "找木人赛场"
+Game.szMapType = "u trng t譵 M閏 Nh﹏"
 Game.nGameState = 0 --比赛场的比赛状态，0表示还没开始，1表示比赛进行中
-Game.nMuRenCount = 10 --每个房间木人每15秒的刷新数量
+Game.nMuRenCount = 10 --每个房间M閏 Nh﹏每15秒的刷新数量
 
 Game.Player = 
 {
@@ -18,7 +18,7 @@ Game.tbNpcTypeList =
 	["muren"] = 
 	{
 		nNpcId = 1749,
-		szName = "木人",
+		szName = "M閏 Nh﹏",
 		nLevel = 95,
 		nTime = 10,
 		szScriptPath = "\\script\\missions\\zhaojingling\\game\\muren.lua"

@@ -9,26 +9,26 @@ function main(sel)
 	UTask_world23 = GetTask(23)
 	if (UTask_world23 == 3) then		-- ÈÎÎñÆô¶¯
 		if (GetSex() == 0) then
-			Say("ÔõÃ´ÁË£¿ÏëÎÒ¸ø°¢È«É¾³ıËûµÄÕËÄ¿°¡£¿ÄÇ²»ÄÑ£¬µ«ÊÇÄãÒª´øÇ®À´£¬300Á½£¬Ò»·ÖÒ²²»ÄÜÉÙ. ",2,"°ïËûÃÇ»¹Ç®/W23_pay_yes","²»¹ÜËûÃÇ /W23_pay_no")
+			Say("Sao h¶? Muèn ta xãa nî cho A Toµn µ? ChuyÖn ®ã kh«ng khã, nh­ng ng­¬i ph¶i mang tiÒn ®Õn, 300 l­îng kh«ng thiÕu mét xu. ",2,"Gióp hä tr¶ tiÒn /W23_pay_yes","MÆc kÖ hä /W23_pay_no")
 		else
-			Say("ÔõÃ´ÁË£¿ÏëÎÒ¸ø°¢È«É¾³ıËûµÄÕËÄ¿°¡£¿ÄÇ²»ÄÑ£¬µ«ÊÇÄãÒª´øÇ®À´£¬300Á½£¬Ò»·ÖÒ²²»ÄÜÉÙ. ",2,"°ïËûÃÇ»¹Ç®/W23_pay_yes","²»¹ÜËûÃÇ/W23_pay_no")
+			Say("Sao h¶? Muèn ta xãa nî cho A Toµn µ? ChuyÖn ®ã kh«ng khã, nh­ng ng­¬i ph¶i mang tiÒn ®Õn, 300 l­îng kh«ng thiÕu mét xu. ",2,"Gióp hä tr¶ tiÒn /W23_pay_yes","MÆc kÖ hä /W23_pay_no")
 		end
 	elseif (UTask_world23 >= 6) then
-		Talk(1,"","¿ÉÒÔÁË£¬ÒòÎªÄãÌæËûÃÇ»¹Ç®ÁË£¬ÎÒ²»»áÈÃÄã¶ªÁ³£¬²»È¥ÕÒËûÃÇËãÕËÁË.")
+		Talk(1,"","§­îc råi! V× ng­¬i ®· thay hä tr¶ tiÒn, ta sÏ ®Ó ng­¬i khái bŞ mÊt mÆt, kh«ng ®i t×m hä tİnh sæ n÷a.")
 	else				-- ·ÇÈÎÎñ¶Ô»°
-		Talk(1,"","Ç®Ç®Ç®£¬Ê²Ã´¶¼ÊÇÇ®£¬ÓĞÇ®¾ÍÊÇÀÏ×Ó£¬Ã»Ç®¾ÍÊÇËõÍ·ÎÚ¹ê. ")
+		Talk(1,"","TiÒn tiÒn tiÒn! Thêi buæi nµy c¸i g× còng lµ tiÒn. Cã tiÒn lµ l·o tö, kh«ng tiÒn lµ con rïa rôt ®Çu. ")
 	end
 end;
 
 function W23_pay_yes()
 	if (GetCash() >= 300) then
-		Talk(2,"","²»ÒªĞ¡¿´ËûÈË£¬ÕâÊÇ300Á½£¬ÄÃÈ¥! ","¹ş¹ş£¬ÓĞÇ®µ±È»ºÃËµ»°ÁË.")
+		Talk(2,"","§õng xem th­êng ng­êi kh¸c! §©y lµ 300 l­îng cÇm lÊy! "," Ha ha! Cã tiÒn tù nhiªn dÔ nãi chuyÖn.")
 		SetTask(23,6)
 		Pay(300)
-		AddNote("°¢ÂíºÍ°¢È«ÒÑ¾­»¹ÇåÕ®ÁË£¬¿ìÈ¥¸æËßËûÃÇÕâ¸öºÃÏûÏ¢. ")
-		Msg2Player("°¢ÂíºÍ°¢È«ÒÑ¾­»¹ÇåÕ®ÁË£¬¿ìÈ¥¸æËßËûÃÇÕâ¸öºÃÏûÏ¢. ")
+		AddNote("A M· vµ A Toµn ®· tr¶ hÕt nî råi, mau ®i b¸o c¸i tin tèt lµnh nµy cho hä ®i. ")
+		Msg2Player("A M· vµ A Toµn ®· tr¶ hÕt nî råi, mau ®i b¸o c¸i tin tèt lµnh nµy cho hä ®i. ")
 	else
-		Talk(1,""," µÈÎÒÈ¥ÄÃ300Á½®·! ")
+		Talk(1,""," §îi ta ®i lÊy 300 l­îng ®·! ")
 	end
 end
 

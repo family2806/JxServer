@@ -1,5 +1,5 @@
 function givemedicine()
-	Say("¹ş¹ş¹ş£¡Õæ²»Í÷ÎÒ½ÌÄã£¡ÈÃÎÒ¿´¿´ÄãÇëÎÒ³ÔÊ²Ã´¾Æ!",5, "Ï×ÏÉÁé¾Æ/givegod", "Ï×»¢¹Ç¾Æ/givetiger", "Ï×Â¹È×¾Æ/giveantler", "Ï×ÈË²Î¾Æ/givepanax", "Ê¦¸µ£¬Î¶µÀÔõÃ´Ñù£¿/no");
+	Say("Ha! Ha! Ha! Kh«ng uæng c«ng ta ®· d¹y dç ng­¬i! §Ó xem ng­¬i mêi ta uèng r­îu g× nµo!",5, "D©ng Tiªn Linh Töu/givegod", "D©ng Hæ Cèt töu/givetiger", "D©ng Léc Nhung töu/giveantler", "D©ng Nh©n S©m töu/givepanax", "S­ phô! Mïi vŞ thÕ nµo?/no");
 end
 
 function givegod()
@@ -8,15 +8,15 @@ function givegod()
 		if(i > 1) then
 			DelItemEx(947);	
 			AddItem(6,1,73,1,0,0);
-			Say("ºÃ¾Æ£¡ºÃ¾Æ£¡Õâ¸ö°Ù¹ûÂ¶ËÍ¸øÄã£¬Ğ»Ğ»ÄãËÍ¸øÎÒºÃ¾Æ£¡¹ş¹ş¹ş!",0);
-			Msg2Player("»ñµÃÒ»¸ö°Ù¹ûÂ¶");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..",ÈËÎï"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1¸ö°Ù¹ûÂ¶¡£");				
+			Say("H¶o töu! H¶o töu! B¸ch Qu¶ Lé nµy tÆng cho ng­¬i! C¶m ¬n ng­¬i ®· tÆng ta h¶o töu! Ha! Ha! Ha!",0);
+			Msg2Player("NhËn ®­îc 1 B¸ch Qu¶ Lé ");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1¸ö°Ù¹ûÂ¶¡£");				
 		else
 			DelItemEx(947);
-			Say("ÕâÆ¿¾ÆºÃÏñ»¹²»¹»¾Ã£¬»òĞíÎÒĞèÒª´ø»ØÈ¥ÔÙ·ÅÒ»Äê²ÅÄÜ·¢»ÓËüµÄÒ©ĞÔ",0);
+			Say("B×nh r­îc nµy h×nh nh­ cÊt ch­a ®ñ l©u. Cã lÏ ta ph¶i ®em vÒ ch«n thªm 1 n¨m n÷a míi ph¸t huy ®­îc d­îc tİnh",0);
 		end
 	else
-		Say("ÏÉÁé¾ÆÈ¥ÄÄÁË£¿ÏÉÁé¾ÆÈ¥ÄÄÁË£¿²»Òª¸æËßÎÒÄã°ÑËüºÈÍêÁË£¡", 0);
+		Say("Tiªn Linh töu ®©u? Tiªn Linh töu ®©u? §õng nãi lµ ng­¬i ®· lĞn uèng hÕt råi nhĞ!", 0);
 	end
 end
 
@@ -26,15 +26,15 @@ function givetiger()
 		if(i > 7) then
 			DelItemEx(948);	
 			AddItem(6,1,72,1,0,0);
-			Say("ºÃ¾Æ£¡ºÃ¾Æ£¡ÏÉÉ½±¦Â¶ËÍ¸øÄã£¡Ğ»Ğ»ÄãËÍÎÒºÃ¾Æ£¡¹ş¹ş¹ş!",0);
-			Msg2Player("Äú»ñµÃÒ»¸öÏÉÉ½±¦Â¶");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1¸öÌìÉ½ÓñÂ¶¡£");			
+			Say("H¶o töu! H¶o töu! Tiªn S¬n B¶o Lé nµy tÆng cho ng­¬i! C¶m ¬n ng­¬i ®· tÆng ta h¶o töu! Ha! Ha! Ha!",0);
+			Msg2Player("NhËn ®­îc 1 Tiªn S¬n B¶o Lé ");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1¸öÌìÉ½ÓñÂ¶¡£");			
 		else
 			DelItemEx(948);
-			Say("ÕâÆ¿¾ÆºÃÏñ»¹²»¹»¾Ã£¬»òĞíÎÒĞèÒª´ø»ØÈ¥ÔÙ·ÅÒ»Äê²ÅÄÜ·¢»ÓËüµÄÒ©ĞÔ",0);
+			Say("B×nh r­îc nµy h×nh nh­ cÊt ch­a ®ñ l©u. Cã lÏ ta ph¶i ®em vÒ ch«n thªm 1 n¨m n÷a míi ph¸t huy ®­îc d­îc tİnh",0);
 		end	
 	else
-		Say("»¢¹Ç¾ÆÈ¥ÄÄÁË£¿»¢¹Ç¾ÆÈ¥ÄÄÁË£¿²»Òª¸æËßÎÒÄã°ÑËüºÈÍêÁË", 0);
+		Say("Hæ Cèt töu ®©u? Hæ Cèt töu ®©u? §õng nãi lµ ng­¬i ®· lĞn uèng hÕt råi nhĞ!", 0);
 	end
 end
 
@@ -44,15 +44,15 @@ function giveantler()
 		if(i > 1) then
 			DelItemEx(949);	
 			AddItem(6,1,125,1,0,0);
-			Say("ºÃ¾Æ£¡ºÃ¾Æ£¡¹ğ»¨¾ÆËÍ¸øÄã£¡Ğ»Ğ»ÄãËÍÎÒºÃ¾Æ£¡¹ş¹ş¹ş!",0);
-			Msg2Player("»ñµÃÒ»Æ¿¹ğ»¨¾Æ");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..",ÈËÎï"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1Æ¿¹ğ»¨¾Æ¡£");			
+			Say("H¶o töu! H¶o töu! QuÕ hoa töu nµy tÆng cho ng­¬i! C¶m ¬n ng­¬i ®· tÆng ta h¶o töu! Ha! Ha! Ha!",0);
+			Msg2Player("NhËn ®­îc 1 b×nh QuÕ Hoa töu");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1Æ¿¹ğ»¨¾Æ¡£");			
 		else
 			DelItemEx(949);
-			Say("ÕâÆ¿¾ÆºÃÏñ»¹²»¹»¾Ã£¬»òĞíÎÒĞèÒª´ø»ØÈ¥ÔÙ·ÅÒ»Äê²ÅÄÜ·¢»ÓËüµÄÒ©ĞÔ",0);
+			Say("B×nh r­îc nµy h×nh nh­ cÊt ch­a ®ñ l©u. Cã lÏ ta ph¶i ®em vÒ ch«n thªm 1 n¨m n÷a míi ph¸t huy ®­îc d­îc tİnh",0);
 		end		
 	else
-		Say("Â¹È×¾ÆÈ¥ÄÄÁË£¿Â¹È×¾ÆÈ¥ÄÄÁË£¿²»Òª¸æËßÎÒÄã°ÑËüºÈÍêÁË", 0);
+		Say("Léc Nhung töu ®©u? Léc Nhung töu ®©u? §õng nãi lµ ng­¬i ®· lĞn uèng hÕt råi nhĞ!", 0);
 	end
 end
 
@@ -62,14 +62,14 @@ function givepanax()
 		if(i > 1) then
 			DelItemEx(950);	
 			AddItem(6,1,71,1,0,0);
-			Say("ºÃ¾Æ£¡ºÃ¾Æ£¡ÏÉ²İÂ¶ËÍ¸øÄã£¡Ğ»Ğ»ÄãËÍÎÒºÃ¾Æ£¡¹ş¹ş¹ş!",0);
-			Msg2Player("»ñµÃÒ»¸öÏÉ²İÂ¶");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1Æ¿ÏÉ²İÂ¶¡£");			
+			Say("H¶o töu! H¶o töu! Tiªn Th¶o Lé nµy tÆng cho ng­¬i! C¶m ¬n ng­¬i ®· tÆng ta h¶o töu! Ha! Ha! Ha!",0);
+			Msg2Player("NhËn ®­îc 1 Tiªn Th¶o Lé ");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÓÚ½ÌÊ¦½Ú»î¶¯µÃµ½1Æ¿ÏÉ²İÂ¶¡£");			
 		else
 			DelItemEx(950);
-			Say("ÕâÆ¿¾ÆºÃÏñ»¹²»¹»¾Ã£¬»òĞíÎÒĞèÒª´ø»ØÈ¥ÔÙ·ÅÒ»Äê²ÅÄÜ·¢»ÓËüµÄÒ©ĞÔ",0);
+			Say("B×nh r­îc nµy h×nh nh­ cÊt ch­a ®ñ l©u. Cã lÏ ta ph¶i ®em vÒ ch«n thªm 1 n¨m n÷a míi ph¸t huy ®­îc d­îc tİnh",0);
 		end	
 	else
-		Say("ÈË²Î¾ÆÈ¥ÄÄÁË£¿ÈË²Î¾ÆÈ¥ÄÄÁË£¿²»Òª¸æËßÎÒÄã°ÑËüºÈÍêÁË", 0);
+		Say("Nh©n S©m töu ®©u? Nh©n S©m töu ®©u? §õng nãi lµ ng­¬i ®· lĞn uèng hÕt råi nhĞ!", 0);
 	end
 end

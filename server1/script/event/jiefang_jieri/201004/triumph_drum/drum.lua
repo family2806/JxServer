@@ -15,46 +15,46 @@ function tbTriumphDrum:OnUse(nItemIndex)
 	
 	-- »î¶¯½áÊø
 	if tbTriumphDrum:IsCarryOn() ~= 1 then
-		Msg2Player("ÒòÎª°Ú·ÅÊ±¼ä¹ı³¤ËùÒÔ¿­Ğı¹Ä»µÁË");
+		Msg2Player("Trèng kh¶i hoµn bŞ h­ bëi v× l­u gi÷ qu¸ l©u");
 		return 0;
 	end
 	
 	-- µÈ¼¶²»¹»
 	if GetLevel() < self.nLimit_Level then
-		CreateTaskSay({"¸÷Î»µÄµÈ¼¶²»¹»£¡",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"§¼ng cÊp cña c¸c h¹ kh«ng ®ñ!",  "§­îc råi./Cancel",});
 		return 1;
 	end 
 	
 	-- Ã»ÓĞ°ï»á
 	local szTongName, nTongId = GetTongName();
 	if nTongId == 0 then
-		CreateTaskSay({"¸÷Î»»¹Î´¼ÓÈë°ï»á!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"C¸c h¹ vÉn ch­a gia nhËp bang héi!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
 	-- Ã»ÓĞÖ°Î»
 	local nFigure = GetTongFigure();
 	if nFigure ~= 0 and nFigure ~= 1 then
-		CreateTaskSay({"´óÏÀ²»ÊÇ°ïÖ÷»òÕß³¤ÀÏ!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"§¹i hiÖp kh«ng ph¶i lµ bang chñ hoÆc lµ tr­ëng l·o!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
 	-- Õ½¶·×´Ì¬
 	if GetFightState() == 1 then
-		CreateTaskSay({"ÇëÔÚ·ÇÕ½¶·ÇøÊ¹ÓÃ!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"Xin h·y sö dông t¹i khu vùc phi chiÕn ®Êu!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
 	-- ÏŞÖÆÇøÓò
 	if offlineCheckPermitRegion() ~= 1 then
-		CreateTaskSay({"ÇëÔÚÈËÉÙµÄµØÇøÊ¹ÓÃ!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"Xin h·y sö dông t¹i khu vùc İt ng­êi!",  "§­îc råi./Cancel",});
 		return 1;
 	end	
 	
 	-- ·ÇÊ¹ÓÃÊ±¼ä
 	local nTime = tonumber(GetLocalDate("%H%M"));
 	if nTime < self.nStartTime or nTime > self.nCloseTime then
-		CreateTaskSay({"ÇëÔÚ»î¶¯Ê±¼äÊ¹ÓÃ!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"Xinh h·y sö dông trong thêi gian ho¹t ®éng!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
@@ -69,7 +69,7 @@ function tbTriumphDrum:OnUse(nItemIndex)
 	end
 	
 	if nTask_BeUsed >= self.nLimit_DayUse then
-		CreateTaskSay({"ÒÑ¾­¹ıÁËÔÊĞíÊ¹ÓÃµÄ½çÏŞ",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"V­ît qu¸ giíi h¹n sö dông cho phĞp",  "§­îc råi./Cancel",});
 		return 1;		
 	end
 	

@@ -14,10 +14,10 @@
 --		nAmount	材料所需的数量
 --		tbProp	材料所需的属性
 --			tbProp = {nGenre, nDetailType, nParticular, nLevel, nSeries, nLuck}
---			6个元素同AddItem的6个参数，特殊的：
---				如果某个元素为nil，则表示不限制该属性
---				如果某个元素为"+n"，则表示该属性需要 >= n
---				如果某个元素为"-n"，则表示该属性需要 <= n
+--			6c竔元素同AddItem的6c竔参数，特殊的：
+--				如果某c竔元素为nil，则表示不限制该属性
+--				如果某c竔元素为"+n"，则表示该属性需要 >= n
+--				如果某c竔元素为"-n"，则表示该属性需要 <= n
 --		strName	是材料的名称（可选的，如果不填写，material_name函数无效）
 --
 --	如果 Material = {Material1, Material2, ……} 则表示需要 多种材料
@@ -52,7 +52,7 @@ function __checkprop(tb_needprop, tb_itemprop)
 	return 1
 end
 
---检查这一个物品是否是需要的，并减少需要数量
+--检查这一c竔物品是否是需要的，并减少需要数量
 function __checkone(tb_need, tb_needcount, tb_itemprop, tb_itemcount)
 	if (type(tb_needcount[1]) ==  "table") then
 		for i = 1, getn(tb_needcount) do
@@ -154,7 +154,7 @@ end
 function material_compose(tb_compose, str_title, str_text)
 	TB_PLCOMPOSE[PlayerIndex] = tb_compose
 	if (str_text == nil) then
-		str_text = "需要材料："..material_name(tb_compose[1])
+		str_text = "C莕 nguy猲 li謚:"..material_name(tb_compose[1])
 	end
 	GiveItemUI(totext(str_title), totext(str_text), "__compose")
 end
@@ -170,14 +170,14 @@ function material_name(tb_material, b_front)
 				if (b_front or b_f) then
 					str = str .. ", "
 				else
-					str = str .. " 和 "
+					str = str .. "H遖 "
 				end
 			end
 			str = str .. material_name(tb_material[i], b_f)
 		end
 		return str
 	else
-		return tb_material[1] .. "个" .. tb_material[3]
+		return tb_material[1] .. "c竔" .. tb_material[3]
 	end
 end
 

@@ -1,25 +1,25 @@
 Include("\\script\\lib\\gb_taskfuncs.lua")
 Include("\\script\\event\\great_night\\lantern\\create_lanterns.lua")
 Include("\\script\\event\\great_night\\huangzhizhang\\event.lua")
-DescLink_LiGuan = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>Àñ¹Ù:<link>"
+DescLink_LiGuan = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>LÔ quan:<link>"
 
 Great_Night_DiaStr = {
-	"»Ô»ÍÒ¹",
-	format("%s »ÔÖ®ÕÂÃ¿Ìì12h00¿ªÊ¼. ÎäÁÖÃËÖ÷½«¾¡ĞÄ²¥ÖÖ»Ô»ÍÖÖ×Ó. 5·ÖÖÓºó£¬¸÷Î»ÎäÁÖÈËÊ¿¿ÉÒÔÕª³ÉÊìµÄ»Ô»Í¹ûÊµ£¬³Ôºó¹¦Á¦»áÔö¼Ó.<enter>",DescLink_LiGuan),
+	"§ªm Huy Hoµng",
+	format("%s Huy chi ch­¬ng b¾t ®Çu lóc 12h00 mçi ngµy. Vâ L©m Minh Chñ sÏ tËn t©m gieo trång nh÷ng h¹t huy hoµng. Sau 5 phót, c¸c vŞ vâ l©m nh©n sü cã thÓ b¾t ®Çu h¸i nh÷ng qu¶ huy hoµng chİn nµy, ¨n vµo c«ng lùc sÏ t¨ng tiÕn.<enter>",DescLink_LiGuan),
 	
-	format("%s »ÔÖ®ÕÂÃ¿Íí<color=yellow>´Ó19h55µ½21h45<color>. ÔÚ´ËÆÚ¼ä£¬¸÷Î»´óÏÀ¿ÉÒÔ²Î¼Ó¸÷ÏîÁìÈ¡Ë«±¶½±ÀøµÄ»î¶¯. <enter> Ä¿Ç°ÓĞ¸÷Ïî»î¶¯:  <enter>%s<enter>%s<enter>%s<enter>. ¸÷Î»´óÏÀÔÚ<color=yellow>19h45<color> ¿ÉÒÔµ½Àñ¹Ù´¦Ñ¯ÎÊµ±ÌìÁìÈ¡Ë«±¶½±ÀøµÄ»î¶¯.",DescLink_LiGuan,"ËÎ½ğÕ½³¡","ÌôÕ½Ê±¼ä","Ò°ËÑÈÎÎñ"),
+	format("%s Hoµng chi ch­¬ng b¾t ®Çu mçi tèi <color=yellow>tõ 19h55 giê ®Õn 21h45 giê<color>. Trong kho¶ng thêi gian nµy, c¸c vŞ ®¹i hiÖp cã thÓ tham gia c¸c ho¹t ®éng ®Ó ®­îc nh©n ®«i phÇn th­ëng. <enter> Tr­íc m¾t gåm c¸c ho¹t ®éng:  <enter>%s<enter>%s<enter>%s<enter>. C¸c vŞ ®¹i hiÖp vµo lóc <color=yellow>19h45<color> cã thÓ ®Õn gÆp LÔ Quan ®Ó hái xem ho¹t ®éng nµo ®­îc nh©n ®«i phÇn th­ëng trong ngµy.",DescLink_LiGuan,"ChiÕn tr­êng Tèng Kim","Th¸ch thøc thêi gian","Chuçi nhiÖm vô D· TÈu"),
 	
-	"ÁË½â'»Ô»Í'»î¶¯/gn_huizhizhang",
-	"ÁË½â'»ÍÖ®ÕÂ'»î¶¯/gn_huangzhizhang",
-	"Ö»ÊÇ×ª×ª¿´£¡/OnCancel",
-	"·µ»Ø/onGreat_Night",
-	"Ã÷°×ÁË/OnCancel",
+	"T×m hiÓu ho¹t ®éng 'Huy hoµng'/gn_huizhizhang",
+	"T×m hiÓu ho¹t ®éng 'Hoµng chi ch­¬ng'/gn_huangzhizhang",
+	"ChØ lµ ®i d¹o ch¬i th«i!/OnCancel",
+	"Trë l¹i/onGreat_Night",
+	"HiÓu råi/OnCancel",
 }
 
 function onGreat_Night()
-	Describe(format("%s ÏÖÔÚÊÇ·çµ÷ÓêË³µÄ»î¶¯,ÎªÁË´ğĞ»¸÷Î»´óÏÀµÄ¹±Ï×£¬ÎäÁÖÃËÖ÷¶À¹Â½£×éÖ¯ÁË»î¶¯<color=yellow>'»Ô»ÍÒ¹'<color>. »î¶¯Ê±¼äÊÇÃ¿ÌìµÄ12h00. <enter><color=yellow>ÖĞÎç12h00 ½«½øĞĞ'»ÔÖ®ÕÂ'»î¶¯£¬½«»á³öÏÖ»Æ½ğÖ®¹ûµÄµØ·½ÊÇ£º%s<color><enter><color=yellow>½ñÌì19h45½«½øĞĞ¡®»ÍÖ®ÕÂ¡®»î¶¯£¬ÁìÈ¡Ë«±¶½±ÀøµÄ»î¶¯ÊÇ£º  %s<color><enter>",
+	Describe(format("%s Tr­íc m¾t lµ thêi gian m­a thuËn giã hßa, ®Ó ®¸p t¹ c«ng søc ®ãng gãp c¸c vŞ ®¹i hiÖp, Vâ l©m minh chñ §éc C« KiÕm ®· tæ chøc ho¹t ®éng <color=yellow>'§ªm huy hoµng'<color>. Thêi gian b¾t ®Çu ho¹t ®éng mçi ngµy lµ 12h00. <enter><color=yellow>12h00 tr­a nay sÏ diÔn ra ho¹t ®éng 'Huy chi ch­¬ng', nh÷ng n¬i sÏ xuÊt hiÖn qu¶ hoµng kim lµ:  %s<color><enter><color=yellow>19h45 h«m nay sÏ diÔn ra ho¹t ®éng 'Hoµng chi ch­¬ng', ho¹t ®éng nh©n ®«i phÇn th­ëng lµ: %s<color><enter>",
 				DescLink_LiGuan,
-				"Ä®±±²İÔ­",
+				"M¹c B¾c Th¶o Nguyªn",
 				huang_event_name()),
 	 3, 
 	Great_Night_DiaStr[4], 
@@ -93,12 +93,12 @@ tbLANTERN_ENTER_POS = {
 function gn_lanternjoin()
 	local area = gb_GetTask(GN_LANTERN_NAME_TSK, GN_LANTERN_TSK_MAP)
 	if (area == 0 or area == nil) then
-		Describe(DescLink_LiGuan.."²Â»¨µÆ×ÖÃÕ»î¶¯»¹Ã»¿ªÊ¼£¡Çë´ı»áÔÙÀ´£¡", 1, "ÖªµÀÁË!/OnCancel")
+		Describe(DescLink_LiGuan.."Ho¹t ®éng ®o¸n ch÷ 'Hoa §¨ng' vÉn ch­a b¾t ®Çu! Xin trë l¹i sau nhĞ!", 1, "Ta biÕt råi!/OnCancel")
 		return
 	end
 	for i = 1, getn(tbLANTERNS_NPC) do
 		if (area == tbLANTERNS_NPC[i][1]) then
-			Describe(DescLink_LiGuan.."½ñÒ¹¡®»¨µÆ¡¯»î¶¯½«×éÖ¯ÔÚ<color=yellow>"..tbLANTERNS_NPC[i][7].."<color>, Òª²»ÏÖÔÚ¾ÍÏÈÈ¥°É£¡", 2, "µ½²Â»¨µÆ×ÖÃÕµÄµØ·½/lantern_enter_lantern", "ÏÈÈÃÎÒÏëÒ»ÏÂ!/OnCancel")
+			Describe(DescLink_LiGuan.."tèi nay ho¹t ®éng 'Hoa §¨ng' sÏ tæ chøc t¹i <color=yellow>"..tbLANTERNS_NPC[i][7].."<color>, hay lµ b©y giê ®Õn ®ã tr­íc nhĞ!", 2, "§Õn khu vùc ®o¸n ch÷ hoa ®¨ng/lantern_enter_lantern", "§Ó ta suy nghÜ l¹i ®·!/OnCancel")
 		end
 	end
 end
@@ -106,13 +106,13 @@ end
 function lantern_enter_lantern()
 	local nNowTime = tonumber(GetLocalDate("%H%M"));
 	if (nNowTime < 1930 or nNowTime > 2001) then
-		Describe(DescLink_LiGuan.."²Â»¨µÆ×ÖÃÕ»î¶¯»¹Ã»¿ªÊ¼£¡Çë´ı»áÔÙÀ´£¡", 1, "ÖªµÀÁË!/OnCancel")
+		Describe(DescLink_LiGuan.."Ho¹t ®éng ®o¸n ch÷ 'Hoa §¨ng' vÉn ch­a b¾t ®Çu! Xin trë l¹i sau nhĞ!", 1, "Ta biÕt råi!/OnCancel")
 		return
 	end
 	
 	local area = gb_GetTask(GN_LANTERN_NAME_TSK, GN_LANTERN_TSK_MAP)
 	if (area == 0 or area == nil) then
-		Describe(DescLink_LiGuan.."²Â»¨µÆ×ÖÃÕ»î¶¯»¹Ã»¿ªÊ¼£¡Çë´ı»áÔÙÀ´£¡", 1, "ÖªµÀÁË!/OnCancel")
+		Describe(DescLink_LiGuan.."Ho¹t ®éng ®o¸n ch÷ 'Hoa §¨ng' vÉn ch­a b¾t ®Çu! Xin trë l¹i sau nhĞ!", 1, "Ta biÕt råi!/OnCancel")
 		return
 	end
 	local tb_enter_pos = tbLANTERN_ENTER_POS[area]

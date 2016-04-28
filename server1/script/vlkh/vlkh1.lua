@@ -58,12 +58,12 @@ tbVLKH1=
 
 function GetBonusVLKH1_main()
 	if (CheckUserName() ~= 1) then
-		Talk(1,"","ÄúÊ¹ÓÃµÄÕËºÅ²»¶Ô£¬Çë¼ì²é!")
+		Talk(1,"","§¹i hiÖp sö dông kh«ng ®óng tµi kho¶n, xin kiÓm tra l¹i !")
 		return
 	end
 	------------------------------------------------------------------------------------------------------------------------------------------------
 	local tbOpp = {}
-	local str = "<#> Çë´óÏÀÑ¡Ôñ½±Àø";
+	local str = "<#> §¹i hiÖp xin h·y chän phÇn th­ëng";
 	local strAccount = GetAccount()
 	for k= 1, getn(tbVLKH1) do
 		if (strAccount == tbVLKH1[k].szAccount) then
@@ -72,34 +72,34 @@ function GetBonusVLKH1_main()
 			local numHoaTiger = tbVLKH1[k].nHoaTiger
 			local numTKCD = tbVLKH1[k].nTKCD
 			local numCLBHB = tbVLKH1[k].nCLBHB
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numTLL .. " ²ÔÀÇÁî/#GetBonusTLL("..numTLL..")");
+			tinsert(tbOpp,"Ta muèn nhËn " .. numTLL .. " Th­¬ng Lang LÖnh/#GetBonusTLL("..numTLL..")");
 			
 			if (numKimTiger > 0 and numKimTiger <= 8) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numKimTiger .. " ½ğĞÇ°×»¢Íõ/#GetBonusKimTiger("..numKimTiger..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numKimTiger .. " Kim Tinh B¹ch Hæ V­¬ng/#GetBonusKimTiger("..numKimTiger..", 1)");
 			end
 			
 			if (numKimTiger > 8) then
 				local nGetKimTiger = numKimTiger - 8
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 8  ½ğĞÇ°×»¢Íõ/#GetBonusKimTiger(8,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetKimTiger .. " ½ğĞÇ°×»¢Íõ/#GetBonusKimTiger("..nGetKimTiger..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 8  Kim Tinh B¹ch Hæ V­¬ng/#GetBonusKimTiger(8,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetKimTiger .. " Kim Tinh B¹ch Hæ V­¬ng/#GetBonusKimTiger("..nGetKimTiger..", 2)");
 			end
 			
 			if (numHoaTiger > 0 and numHoaTiger <= 8) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numHoaTiger .. " »ğĞÇ°×»¢Íõ/#GetBonusHoaTiger("..numHoaTiger..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numHoaTiger .. " Háa Tinh Kim Hæ V­¬ng/#GetBonusHoaTiger("..numHoaTiger..", 1)");
 			end
 			if (numHoaTiger > 8) then
 				local nGetHoaTiger = numHoaTiger - 8
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 8  »ğĞÇ°×»¢Íõ/#GetBonusHoaTiger(8,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetHoaTiger .. " »ğĞÇ°×»¢Íõ/#GetBonusHoaTiger("..nGetHoaTiger..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 8  Háa Tinh Kim Hæ V­¬ng/#GetBonusHoaTiger(8,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetHoaTiger .. " Háa Tinh Kim Hæ V­¬ng/#GetBonusHoaTiger("..nGetHoaTiger..", 2)");
 			end
 			
 			
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numTKCD .. " ×Ï½ğÕæµ¤/#GetBonusTKCD("..numTKCD..")");
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numCLBHB .. " ¾ãÀÖ²¿ºì°ü/#GetBonusCLBHBVLKH1("..numCLBHB..")");
+			tinsert(tbOpp,"Ta muèn nhËn " .. numTKCD .. " Tö Kim Ch©n §an/#GetBonusTKCD("..numTKCD..")");
+			tinsert(tbOpp,"Ta muèn nhËn " .. numCLBHB .. " C©u L¹c Bé Hång Bao/#GetBonusCLBHBVLKH1("..numCLBHB..")");
 			break
 		end--ifman
 	end--for
-	tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
 		return

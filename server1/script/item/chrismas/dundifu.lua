@@ -13,7 +13,7 @@ function main()
 		local PosX, PosY = getadatatow(TAB_ACTION[tabidx][8], 8 + 8 * nMapId, 15 + 8 * nMapId);
 		SetPos(floor(PosX / 32), floor(PosY / 32));
 		
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>¶İµØ·û<color>£¬Ìøµ½µØÍ¼µÄÆäËûÎ»ÖÃ¡£");
+	Msg2Player("<#> B¹n sö dông 1 <color=0xB5FDD7>§én §Şa Phï<color>, nh¶y ®Õn vŞ trİ kh¸c trong b¶n ®å.");
 		SubWorld = OldSubWorld;
 		return 0;
 	end;
@@ -35,10 +35,10 @@ function main()
 		
 		local nRandId = random(1, getn(tbPosList))
 		SetPos(floor(tbPosList[nRandId][1]/ 32), floor(tbPosList[nRandId][2] / 32));
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>¶İµØ·û<color>£¬Ìøµ½µØÍ¼µÄÆäËûÎ»ÖÃ¡£");
+	Msg2Player("<#> B¹n sö dông 1 <color=0xB5FDD7>§én §Şa Phï<color>, nh¶y ®Õn vŞ trİ kh¸c trong b¶n ®å.");
 		return 0;
 	end
-	Talk(1, "", "´ËµØÍ¼²»ÄÜÊ¹ÓÃ¶İµØ·û.");
+	Talk(1, "", "§¹o cô nµy kh«ng dïng ®­îc ë khu vùc nµy.");
 	return 1
 	
 	

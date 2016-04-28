@@ -154,7 +154,7 @@ function tbKillBossMatch:OnTimer()
 	
 	
 	if nTimerCount < self.nLatencyTime then
-		local szMsg	= format("Ê±¼ä»¹ÓÐ <color=yellow>%d<color> Ãë.", self.nLatencyTime - nTimerCount)
+		local szMsg	= format("Thêi gian cßn <color=yellow>%d<color> gi©y.", self.nLatencyTime - nTimerCount)
 		if mod(nTimerCount, 10) == 0 then
 			Msg2MSAll(self.nMissionId, szMsg);
 		end
@@ -311,11 +311,11 @@ function tbKillBossMatch:_CheckMission()
 	local nMissionState = GetMissionV(self.tbMissionV.MISSION_STATE)
 	local nPlayerCount = GetMSPlayerCount(self.nMissionId, 0)
 	if nMissionState ~= 1 then
-		Msg2Player("<color=yellow>Ä¿Ç°²»ÊÇ±¨ÃûÊ±¼ä<color>")
+		Msg2Player("<color=yellow>HiÖn t¹i kh«ng ph¶i lµ thêi gian b¸o danh<color>")
 		return
 	end
 	if self.nMaxPlayerCount and nPlayerCount > self.nMaxPlayerCount then
-		Msg2Player("²Î¼Ó»î¶¯µÄÈËÊýÒÑ¹»ÁË£¬ÇëµÈÏÂÒ»ÂÖ°É!")
+		Msg2Player("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!")
 		return 
 	end
 	return 1

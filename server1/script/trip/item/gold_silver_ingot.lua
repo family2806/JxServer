@@ -27,10 +27,10 @@ function main(nItemIndex)
 	tbItem.tbProp = {nG, nD, nParticulType, -1, -1, 0}
 	local nCurJxb = GetTask(TSK_TRIP_MONEY) + nJxb
 	if nCurJxb > %nMaxMoney then
-		Talk(1, "", "Çë´óÏÀÔ­ÁÂ£¬Á¬½Ó·şÎñÆ÷´¢´æÒøÁ½³¬¹ı100.000ÍòÁ½¾Í¹ıÉÏÏŞ")
+		Talk(1, "", "Xin ®¹i hiÖp l­îng thø ng©n l­îng l­u tr÷ cña server liªn kÕt v­ît qu¸ 100.000 v¹n l­îng lµ qu¸ giíi h¹n")
 		return 1
 	end
 	SetTask(TSK_TRIP_MONEY, nCurJxb)
-	Msg2Player(format("ÄãÊ¹ÓÃÒ»¸ö%s »ñµÃ%d Á¬½Ó·şÎñÆ÷ÒøÁ½", szItemName, nJxb))
+	Msg2Player(format("Ng­¬i sö dông 1 c¸i %s nhËn ®­îc %d ng©n l­îng server liªn kÕt", szItemName, nJxb))
 	tbLog:PlayerAwardLog("Trip", format("use %s", szItemName), "TRIP_MONEY", "", nJxb)	
 end

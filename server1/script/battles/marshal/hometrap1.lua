@@ -13,7 +13,7 @@ function main()
 			else
 				RestTime =  GetGameTime() - BT_GetData(PL_LASTDEATHTIME) 
 				if ( RestTime < TIME_PLAYER_REV) then
-					Say((TIME_PLAYER_REV - RestTime) .. "ÃëÖ®ºó£¬Äú²ÅÄÜÀë¿ªºóÓª½øÈëÕ½³¡£¬½«Ê¿ÇëÉÔµÈ£¡", 0)
+					Say((TIME_PLAYER_REV - RestTime) .. " gi©y sau b¹n míi cã thÓ rêi khái hËu doanh! Xin ®îi chót n÷a!", 0)
 				else
 					file = GetMissionS(1)
 					x,y = bt_getadata(file)
@@ -27,7 +27,7 @@ function main()
 			file = GetMissionS(1)
 			x,y = bt_getadata(file)
 			SetPos(floor(x/32), floor(y/32))
-			Msg2Player("Ç°ÃæÇ¹êªÁÖÁÐ£¬½ä±¸É­ÑÏ£¬ÏëÀ´ÊÇÓÐÖØ±øÍÍÊØ£¬Äã»¹ÊÇ²»ÒªÓ²´³ÎªÃî£¡")
+			Msg2Player("PhÝa tr­íc s¬n cèc chËp trïng, ch¾c ch¾n cã phôc binh! B¹n kh«ng nªn tù tiÖn x«ng lªn!")
 			SetFightState(1)
 		end;
 end;

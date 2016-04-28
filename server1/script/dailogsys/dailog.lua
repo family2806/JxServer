@@ -18,7 +18,7 @@ end
 function DailogClass:_init(szNpcName)
 	self.szNpcName = szNpcName
 	self.tbOptionList = {}
-	self.szTitleMsg = "ÄúºÃ"
+	self.szTitleMsg = "Xin chµo"
 	self.szPreDailogName = ""
 end
 
@@ -59,9 +59,9 @@ function DailogClass:GetDailogOpt(nCurDate)
 	
 	if self.pPreDailog then
 		
-		tinsert(tbOpt, {"·µ»Ø", self.pPreDailog.Show, {self.pPreDailog}})
+		tinsert(tbOpt, {"Trë vÒ", self.pPreDailog.Show, {self.pPreDailog}})
 	end
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	return tbOpt
 end
 

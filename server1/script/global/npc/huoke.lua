@@ -47,7 +47,7 @@ function CallHuoKeInit()
 	
 	AddTimer(nNextTime * 18,  "CallHuoKeTime", 0)
 	
-	print(format("这以后秒或者心huoke%s",  FormatTime2String("%Y-%m-%d %H:%M:%S", GetCurServerTime() + nNextTime)))
+	print(format("Sau ch鮪g n祔 gi﹜ h穣 tim Ho綾 Kh綾 %s",  FormatTime2String("%Y-%m-%d %H:%M:%S", GetCurServerTime() + nNextTime)))
 end
 
 function CallHuoKeTime(nId, nParam)
@@ -70,7 +70,7 @@ function CallHuoKeBoss(nMapId, nPosX, nPosY)
 		nPosX = %tbBossPos[nIdx][2]
 		nPosY = %tbBossPos[nIdx][3]	
 	end
-	AddGlobalNews(format("Huoke出现在漠北草原(%d, %d)", nPosX/8, nPosY/16))
+	AddGlobalNews(format("Ho綾 Kh綾 xu蕋 hi謓 t筰 M筩 B綾 Th秓 Nguy猲 (%d, %d)", nPosX/8, nPosY/16))
 	
 	basemission_CallNpc(tbNpc, nMapId, nPosX * 32, nPosY * 32)
 end

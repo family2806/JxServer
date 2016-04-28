@@ -6,7 +6,7 @@ Include("\\script\\missions\\basemission\\lib.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 function checkfightstate()
 	if ( GetFightState() == 0 ) then	--·ÇÕ½¶·Çø½ûÓÃ
-		Msg2Player("²»ÔÚÕ½¶·×´Ì¬¾Í²»ÄÜÊ¹ÓÃ");
+		Msg2Player("Kh«ng ë trong tr¹ng th¸i chiÕn ®Êu th× kh«ng thÓ sö dông");
 		return 0
 	end
 	return 1
@@ -27,7 +27,7 @@ function checkmap()
 	end
 	
 	if nIsInMap == 0 then
-		lib:ShowMessage("ÐèÒªÔÚ¸÷´ó³ÇÊÐ¡¢ÐÂÊÖ´åÒÔÍâµÄµØ·½Ê¹ÓÃ")
+		lib:ShowMessage("CÇn ph¶i sö dông t¹i c¸c b¶n ®å ngoµi c¸c thµnh thi lín, t©n thñ th«n")
 		return 0
 	end
 	return 1
@@ -37,9 +37,9 @@ end
 function getbossinfo(nItemIdx)
 	local tbBossInfomation = {
 		-- bossid, bosslvl, bossname
-		[3083] = {1873,95,"ÕÅÐû",},		
-		[3084] = {1874,95,"½ðÊ©ÁÁ",},		
-		[3085] = {1875,95,"Ä½ÈÝÈ«",},		
+		[3083] = {1873,95,"Tr­¬ng Tuyªn",},		
+		[3084] = {1874,95,"Kim ThÝ L­îng",},		
+		[3085] = {1875,95,"Mé Dung Toµn",},		
 	}
 	local G,D,P = GetItemProp(nItemIdx)
 	local szBossname = tbBossInfomation[P][3]
@@ -59,7 +59,7 @@ function callboss(szBossname, nBossLevel, nBossId)
 		tbNpcParam = {nBossId,},
 	}
 	if basemission_CallNpc(tbGoldBoss, nMapId, nPosX * 32, nPosY * 32) then
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] ÓÃÁîÅÆ½Ð»Æ½ðBOSS: "..szBossname);
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] Dïng lÖnh bµi gäi Boss ®Ó gäi Boss Hoµng Kim: "..szBossname);
 		return 1
 	end
 	return 0
@@ -77,7 +77,7 @@ function main(nItemIdx)
 	local szBossname, nBossLevel, nBossId = getbossinfo(nItemIdx)
 	
 	if callboss(szBossname, nBossLevel, nBossId) ~= 1 then
-		Msg2Player("ÕÙ»ØBOSSÊ§°Ü£¬ÇëÖØÊÔ")
+		Msg2Player("TriÖu håi Boss thÊt b¹i, xin thö l¹i")
 		return 1
 	end
 	

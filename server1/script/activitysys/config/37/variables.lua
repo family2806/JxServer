@@ -1,9 +1,9 @@
 EVENT_LOG_TITLE		= "Event_Noel"
-ITEM_XMAS_BAG		= {szName="圣诞袜",tbProp={6,1,3076,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_STAR		= {szName="星星",tbProp={6,1,3081,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_CLOTHING		= {szName="圣诞衣服",tbProp={6,1,3074,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_HAT		= {szName="圣诞帽子",tbProp={6,1,3072,1,0,0},nExpiredTime=20120101,}
-ITEM_XMAS_TROUSERS		= {szName="圣诞裤子",tbProp={6,1,3075,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_BAG		= {szName="T骾 Gi竛g Sinh",tbProp={6,1,3076,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_STAR		= {szName="Ng玦 Sao",tbProp={6,1,3081,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_CLOTHING		= {szName="竜 gi竛g sinh",tbProp={6,1,3074,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_HAT		= {szName="N鉵 gi竛g sinh",tbProp={6,1,3072,1,0,0},nExpiredTime=20120101,}
+ITEM_XMAS_TROUSERS		= {szName="Qu莕 Gi竛g Sinh",tbProp={6,1,3075,1,0,0},nExpiredTime=20120101,}
 TSK_XMAS_GIFT_LIMIT		= 1
 --调整圣诞礼盒的使用限制- Modified by DinhHQ - 20111129
 MAX_USED_XMAS_GIFT_LIMIT		= 500

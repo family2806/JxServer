@@ -1,4 +1,4 @@
--- ³öÏÖÒ»¸öBOSS»ôÑ×Ñ×£¬Ëæ»ú3¸öµã»áÓĞÖù×Ó²»Í£µØÊÍ·ÅÌìÈÌ»ğÇ½¼¼ÄÜ£¬
+-- ³öÏÖÒ»¸öBOSSHo¾c Viªm Viªm£¬Ëæ»ú3¸öµã»áÓĞTrô Tö²»Í£µØÊÍ·ÅÌìÈÌ»ğÇ½¼¼ÄÜ£¬
 -- Èç¹ûÕ¾×Å²»¶¯»áÊÜºÜ´óÉËº¦£¬Òª²»¶ÏÒÆ¶¯¶ã±Ü»ğÇ½²Å¿ÉÒÔ±ÜÃâÉËº¦£¬»÷°ÜBOSSºó¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
@@ -13,13 +13,13 @@ function pTask:OnStart()
 	local mapid = self:GetMapId()
 	local pos_boss = self:GetPosition().t20_boss
 	local pos_pillar = self:GetPosition().t20_pillar
-	self.m_BossIndex = FightNpcManager:AddNpc("»ôÑ×Ñ×", 1722, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
+	self.m_BossIndex = FightNpcManager:AddNpc("Ho¾c Viªm Viªm", 1722, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
 	local nNpcIndex = FightNpcManager:GetNpcIndex(self.m_BossIndex)
 	SyncNpc(nNpcIndex)
-	NpcChat(nNpcIndex, "ÎÒÉÕ£¬ÎÒÉÕ£¬ÎÒÉÕ£¬ÉÕÉÕÉÕ¡£")
+	NpcChat(nNpcIndex, "Ta ®èt! ta ®èt! ta ®èt nµy! ®èt ®èt ®èt")
 	self.m_Pillars = {}
 	for i = 1, 3 do
-		local nNpcIndex = FightNpcManager:AddNpc("Öù×Ó", 1723, mapid, pos_pillar[i].x, pos_pillar[i].y, self, i, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Trô Tö", 1723, mapid, pos_pillar[i].x, pos_pillar[i].y, self, i, 1, 1)
 		tinsert(self.m_Pillars, nNpcIndex)
 	end
 end

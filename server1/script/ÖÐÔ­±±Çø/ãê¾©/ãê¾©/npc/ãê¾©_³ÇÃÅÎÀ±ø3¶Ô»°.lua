@@ -1,8 +1,8 @@
 --ÖĞÔ­±±Çø ãê¾©¸® ³ÇÃÅÎÀ±ø3¶Ô»°
 
 Include("\\script\\global\\map_helper.lua")
-npc_name = "<#>³ÇÃÅÎÀ±ø"
+npc_name = "<#> VÖ binh Thµnh m«n"
 
 function default_talk()
-	Talk(1,"",npc_name.."<#>: ÁÙ°²µÄ»¨»¨ÊÀ½ç³ÙÔç¶¼ÊÇÔÛÃÇ½ğÈËµÄ£¬¹ş¹ş¹ş¹ş£¡")
+	Talk(1,"",npc_name.."<#>: Thµnh ®« Hoa lÖ L©m An nµy sím muén g× còng thuéc vÒ Kim quèc chóng ta th«i! Ha! Ha! Ha!")
 end;

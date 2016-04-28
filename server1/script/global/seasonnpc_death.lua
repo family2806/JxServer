@@ -38,5 +38,5 @@ end;
 
 function addSeasonnpcExp()
 	AddOwnExp(50000);
-	Msg2Player("ÕÍ≥…“∞€≈»ŒŒÒªÒµ√<color=green>50000 æ≠—È÷µ<color>!");
+	Msg2Player("Hoµn thµnh nhi÷m vÙ D∑ T»u nhÀn Æ≠Óc <color=green>50000 Æi”m kinh nghi÷m<color>!");
 end;

@@ -15,7 +15,7 @@ function main(sel)
 		end
 
 	else
-		Say("É³Ä®ºÜÎ£ÏÕ£¡»ØÈ¥ÔÙÁ·¹¦È¥!",1,"»Øµ½¿ì»îÁÖ. /no")
+		Say("Sa m¹c thËt sù rÊt nguy hiÓm! Xin h·y quay vÒ rÌn luyÖn thªm!",1,"Quay l¹i rõng Kho¸i Ho¹t. /no")
 		SetPos(1716,3144)
 	end
 end;

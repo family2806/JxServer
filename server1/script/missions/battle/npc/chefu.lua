@@ -6,11 +6,11 @@ function main()
 		NewWorld(20,3546,6226)
 		return
 	end
-	local szTitle = "<npc>".."ÄãÏë·µ»ØÂğ?"
+	local szTitle = "<npc>".."Ng­¬i muèn trë vÒ kh«ng?"
 	local tbOpt = 
 	{
-		{"Ïë", TripS_Return, {}},
-		{"È¡Ïû"}
+		{"Muèn", TripS_Return, {}},
+		{"Hñy bá "}
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end

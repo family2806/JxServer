@@ -49,7 +49,7 @@ function main()	--¶Ô»°Èë¿Ú
 			local nCurTime = GetCurServerTime();
 			local nmyTime = GetNpcParam(nNpcIdx, PRM_PAN_TIME);
 			if (nmyTime > nCurTime) then
-				Msg2Player("±ýÄÃ³öÀ´ºóÇëµÈÒ»ÏÂ!");
+				Msg2Player("§ang lÊy b¸nh ra, xin ®îi trong gi©y l¸t!");
 				return 0;
 			end;
 --			if (GetSkillState(765) == 1) then		--ÕýÔÚÉÕ±ý×´Ì¬
@@ -61,17 +61,17 @@ function main()	--¶Ô»°Èë¿Ú
 					
 					local szmsg = "";
 					if (pure > 0) then
-						szmsg = format("<color=yellow>%d ¸ö<color> ÌØÌØÖÆÉÕ±ý, ",pure);
+						szmsg = format("<color=yellow>%d c¸i<color> B¸nh chay ®Æc biÖt, ",pure);
 					end;
 					if (norm > 0) then
-						szmsg = format("%s <color=yellow>%d ¸ö<color> ÆÕÍ¨ÉÕ±ý, ",szmsg, norm);
+						szmsg = format("%s <color=yellow>%d c¸i<color> B¸nh chay th­êng, ",szmsg, norm);
 					end;
 					if (bud > 0) then
-						szmsg = format("%s <color=yellow>%d ¸ö<color> ÉúÉÕ±ý, ",szmsg, bud);
+						szmsg = format("%s <color=yellow>%d c¸i<color> B¸nh chay ch­a chÝn, ",szmsg, bud);
 					end;
 					
 					szmsg = format(DEC_PAN_EVENT[5], szmsg);
-					Say(szmsg, 2, "ÄÃ±ý/#sure2pickpan("..nNpcIdx..")","Ò»»á»ØÀ´ /OnCancel");
+					Say(szmsg, 2, "LÊy b¸nh ra/#sure2pickpan("..nNpcIdx..")","L¸t n÷a quay l¹i /OnCancel");
 				elseif (nmyTime <= nCurTime) then
 					local nItem = 0;
 					if (pure > 0) then
@@ -92,7 +92,7 @@ function main()	--¶Ô»°Èë¿Ú
 						return 0;
 					end;
 					
-					Msg2Player("ÄãµÃµ½Ò»¸ö"..GetItemName(nItem));
+					Msg2Player("B¹n nhËn ®­îc mét"..GetItemName(nItem));
 					SetNpcParam(nNpcIdx, PRM_PAN_TIME, 0);
 				end;
 --			end;
@@ -100,10 +100,10 @@ function main()	--¶Ô»°Èë¿Ú
 		else									--³É³¤½×¶Î
 			if (task >= 1 and task <= 4) then		--ÓÐÒ»¸öÈÎÎñ
 				if (nstate == 0) then	--»¹Ã»½Ó
-					Say(DEC_PAN_EVENT[task], 1, "ÎÒÖªµÀÁË/#sure2pantaketask("..nNpcIdx..")");
+					Say(DEC_PAN_EVENT[task], 1, "Ta biÕt råi/#sure2pantaketask("..nNpcIdx..")");
 				elseif (nstate == 1) then	--½ÓÁË£¬Ã»×ö
 					local szOpp = format("%s/#sure2pandotask(%d)",DEC_PAN_STASK[task], nNpcIdx);
-					Say("", 2, szOpp, "µÈÒ»ÏÂOnCancel");
+					Say("", 2, szOpp, "H·y ®îi mét chót/OnCancel");
 				elseif (nstate == 2) then	--×öÍêÁË
 					Talk(1, "", DEC_PAN_OTHER[random(getn(DEC_PAN_OTHER))]);
 				end;
@@ -124,10 +124,10 @@ function sure2pickpan(nNpcIdx)
 	if (nparam4 > 0) then
 		--AddSkillState(765, 1, 1, 3*18);--SkillState(509)
 		SetNpcParam(nNpcIdx, PRM_PAN_TIME, GetCurServerTime()+3);
-		Msg2Player("µÈ3Ãëºó¿ÉÒÔ°Ñ±ýÄÃ³öÀ´.");
+		Msg2Player("§îi 3 gi©y sau míi cã thÓ vít b¸nh ra.");
 	else
 		Talk(1, "", DEC_PAN_OTHER[random(getn(DEC_PAN_OTHER))]);
-		Msg2Player("±ýÒÑ¾­È«²¿ÄÃ³ö!");
+		Msg2Player("B¸nh ®· vít ra hÕt råi!");
 	end;
 end;
 
@@ -142,7 +142,7 @@ function sure2pantaketask(nNpcIdx)
 		AddNpcSkillState(nNpcIdx, 662, 1,1, 0);	--Çå Ì¾ºÅ
 		AddNpcSkillState(nNpcIdx, 765, 1,1, 30*18);	--¼Ó ÎÊºÅ
 		SetNpcParam(nNpcIdx, PRM_PAN_TIME, GetCurServerTime()+TB_PAN_TASKTIME[task]);
-		Msg2Player(format("ÇëµÈ %sÃëÖ®ºó %s.", TB_PAN_TASKTIME[task], DEC_PAN_STASK[task]));
+		Msg2Player(format("Xin ®îi %s gi©y sau %s.", TB_PAN_TASKTIME[task], DEC_PAN_STASK[task]));
 	end;
 end;
 
@@ -161,9 +161,9 @@ function sure2pandotask(nNpcIdx)
 			SetNpcParam(nNpcIdx, PRM_PAN_EVENT, SetByte(GetNpcParam(nNpcIdx, PRM_PAN_EVENT), 4, 0));
 			SetNpcParam(nNpcIdx, PRM_PAN_TIME, 0);
 			AddNpcSkillState(nNpcIdx, 765,1, 1, 0);	--Çå ÎÊºÅ
-			Msg2Player("¶àÐ»"..DEC_PAN_STASK[task]);
+			Msg2Player("Xin ®a t¹"..DEC_PAN_STASK[task]);
 		elseif (GetSex() ~= nsex) then
-			local szmsg = format("Ö»ÓÐ %s¿ÉÒÔ %sÁË.", DEC_PAN_STASK[task], DEC_PAN_SZSEX[nsex]);
+			local szmsg = format("ChØ cã %s míi cã thÓ %s ®­îc.", DEC_PAN_STASK[task], DEC_PAN_SZSEX[nsex]);
 			Say(szmsg, 0);
 		end;
 	end;
@@ -183,8 +183,8 @@ function calcPANpoint(nNpcIdx, nvalue)
 		npoint = 5;
 	end;
 	local ncurpoint = GetNpcParam(nNpcIdx, PRM_PAN_POINT);
-	Msg2Team("Õâ´ÎµÄµÃ·Ö"..npoint);
-	Msg2Team("×ÜµÃ·Ö"..(ncurpoint+npoint));
+	Msg2Team("§iÓm sè lÇn nµy"..npoint);
+	Msg2Team("Tæng ®iÓm nhËn ®­îc"..(ncurpoint+npoint));
 	SetNpcParam(nNpcIdx, PRM_PAN_POINT, ncurpoint + npoint);
 end;
 

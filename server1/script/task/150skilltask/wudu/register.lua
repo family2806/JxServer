@@ -3,7 +3,7 @@ Include("\\script\\task\\150skilltask\\g_task.lua")
 Include("\\script\\task\\150skilltask\\wudu\\wudu.lua")
 --´ò¿ª150¼¼ÄÜÈÎÎñ - Modified By NgaVN - 20121207
 pTask = TaskClass:New()
-pTask.m_szTaskName = "Îå¶¾"
+pTask.m_szTaskName = "Ngò §éc"
 pTask.m_nTaskId = 5
 pTask.m_nBase = 1
 pTask.tbConfig = tbConfig

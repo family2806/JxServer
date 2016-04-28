@@ -6,34 +6,34 @@ local hongbao_tbFormulaList =
 {
 	[1] =
 	{
-		szFailMsg = "<color=red>Ö»ÓÃÕâĞ©Ô­ÁÏÊÇ²»ÄÜ¶Ò»»ĞËÍúÀñ°üµÄ£¬Äã»¹ÊÇÏÈÈ¥°ÑÔ­ÁÏÕÒ¹»°É.<color>",
+		szFailMsg = "<color=red>ChØ dïng mÊy nguyªn liÖu nµy th× kh«ng thÓ ®æi ®­îc ThŞnh V­îng Hång Bao ®­îc, ng­¬i h·y ®i t×m nguyªn liÖu ®ñ ®i ®·.<color>",
 		nFreeItemCellLimit = 0.01,
 		tbMaterial = 
 		{
-			{szName="¸£", tbProp={6, 1, 1912, 1, 0, 0}, nCount = 3},
-			{szName="Â»", tbProp={6, 1, 1913, 1, 0, 0}, nCount = 3},
-			{szName="ÊÙ", tbProp={6, 1, 1914, 1, 0, 0}, nCount = 3},
+			{szName="Phóc", tbProp={6, 1, 1912, 1, 0, 0}, nCount = 3},
+			{szName="Léc", tbProp={6, 1, 1913, 1, 0, 0}, nCount = 3},
+			{szName="Thä", tbProp={6, 1, 1914, 1, 0, 0}, nCount = 3},
 			{nJxb = 8e4}
 		},
 		tbProduct = 
 		{
-			szName="ĞËÍúºì°ü", tbProp={6, 1, 1892, 1, 0, 0}, nExpiredTime = 20090223,
+			szName="ThŞnh V­îng Hång Bao", tbProp={6, 1, 1892, 1, 0, 0}, nExpiredTime = 20090223,
 		},
 	},
 	[2] =
 	{
-		szFailMsg = "<color=red>Ö»ÓÃÕâĞ©Ô­ÁÏÊÇ²»ÄÜ¶Ò»»·¢²ÆÀñ°üµÄ£¬Äã»¹ÊÇÏÈÈ¥°ÑÔ­ÁÏÕÒ¹»°É!<color>",
+		szFailMsg = "<color=red>ChØ dïng mÊy nguyªn liÖu nµy th× kh«ng thÓ ®æi ®­îc Ph¸t Tµi Hång Bao, Ng­¬i h·y ®i t×m ®ñ nguyªn liÖu tr­íc ®i ®·!<color>",
 		nFreeItemCellLimit = 0.01,
 		tbMaterial = 
 		{
-			{szName="¸£", tbProp={6, 1, 1912, 1, 0, 0}, nCount = 2},
-			{szName="Â»", tbProp={6, 1, 1913, 1, 0, 0}, nCount = 2},
-			{szName="ÊÙ", tbProp={6, 1, 1914, 1, 0, 0}, nCount = 2},
-			{szName="ÂÌ±¦Öé",tbProp={6, 1, 1891, 1, 0, 0}, nCount = 1},
+			{szName="Phóc", tbProp={6, 1, 1912, 1, 0, 0}, nCount = 2},
+			{szName="Léc", tbProp={6, 1, 1913, 1, 0, 0}, nCount = 2},
+			{szName="Thä", tbProp={6, 1, 1914, 1, 0, 0}, nCount = 2},
+			{szName="Lôc B¶o Ch©u",tbProp={6, 1, 1891, 1, 0, 0}, nCount = 1},
 		},
 		tbProduct = 
 		{
-			szName="·¢²Æºì°ü", tbProp={6, 1, 1893, 1, 0, 0}, nExpiredTime = 20090223,
+			szName="Ph¸t Tµi Hång Bao", tbProp={6, 1, 1893, 1, 0, 0}, nExpiredTime = 20090223,
 		}
 	},
 }
@@ -41,7 +41,7 @@ local hongbao_tbFormulaList =
 function newyear0901_hongbao_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	
 	if (newyear0901_hongbao_IsActDate() ~= 1) then
-		return Talk(1, "", "»î¶¯½áÊøÁË.")
+		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 	end
 	
 	tbFormulaList = tbFormulaList or %hongbao_tbFormulaList
@@ -49,9 +49,9 @@ function newyear0901_hongbao_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
 	
-	local tbSay = newyear0901_hongbao_Compose:MakeOptByProductName("ÎÒÏë»»", nItemIndex, szDescLink);
-	tinsert(tbSay , 1, "<dec>"..szDescLink.."ºÃÔËÑ¹ËêÇ®°ü»î¶¯´Ó16-01-2009µ½15-02-2009. »î¶¯ÆÚ¼ä£¬ÒªµÃµ½¸£ºÍÊÙ×Ö¾ÍÒªÊÕ¼¯À¶±¦Ïä£»ÊÕ¼¯ºì±¦Ïä¿ÉÒÔµÃµ½Â»×Ö¡£´óÏÀ¿ÉÒÔÓÃÕâĞ©×Ö¶Ò»»ĞËÍúºì°üºÍ·¢²Æºì°üÀ´ÁìÈ¡¾­ÑéºÍ±ğµÄÓĞ¼ÛÖµµÄÎïÆ·.");
-	tinsert(tbSay , getn(tbSay)+1, "½áÊø¶Ô»°OnCancel");
+	local tbSay = newyear0901_hongbao_Compose:MakeOptByProductName("Ta muèn ®æi", nItemIndex, szDescLink);
+	tinsert(tbSay , 1, "<dec>"..szDescLink.."Ho¹t ®éng bao l× x× may m¾n diÔn ra tõ ngµy 16-01-2009 ®Õn 15-02-2009. Trong thêi gian ho¹t ®éng, ®¹i hiÖp thu thËp Lam B¶o R­¬ng ®Ó nhËn ®­îc ch÷ Phóc vµ Thä; thu thËp Hång B¶o R­¬ng ®Ó nhËn ch÷ Léc. §¹i hiÖp cã thÓ dïng c¸c ch÷ ®ã ®Ó ®èi lÊy ThŞnh V­îng Hång Bao vµ Ph¸t Tµi Hång Bao ®Ó nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ c¸c vËt phÈm cã gi¸ trŞ. §Æc biÖt khi sö dông Ph¸t Tµi Hång Bao sÏ thu ®­îc bé Ngò Qu¶ vµ cã thÓ ®æi nhiÒu phÇn th­ëng gi¸ trŞ kh¸c.");
+	tinsert(tbSay , getn(tbSay)+1, "KÕt thóc ®èi tho¹i/OnCancel");
 	CreateTaskSay(tbSay);
 end
 

@@ -5,7 +5,7 @@ end
 function main(nItem)
 	local nMapId, nX, nY = GetWorldPos()
 	if nMapId ~= 395 then
-		Msg2Player("¸ÃÎïÆ·Ö»ÄÜÔÚÇ§±£¿âµØÍ¼ÄÚÊ¹ÓÃ")
+		Msg2Player("VËt phÈm nµy chØ ®­îc sö dông trong b¶n ®å Thiªn B¶o Khè")
 		return 1
 	end
 	
@@ -15,13 +15,13 @@ function main(nItem)
 		local nNpcId = GetNpcSettingIdx(nNpcIndex)
 		if nNpcId == 849 then
 			local szNpcName = GetNpcName(nNpcIndex)
-			Msg2Player(szNpcName.."¿¹À×¼õÉÙ")
+			Msg2Player(szNpcName.."Kh¸ng l«i cña ®· gi¶m xuèng")
 			AddNpcSkillState(nNpcIndex, 1042, 1, 1, 18 * 60 * 60)
 		end
 	end
 	
-	Msg2Player("ÄãÊ¹ÓÃÒ»¸ö³¾ÍÁ·û")
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃ³·ÍÁ·û",
+	Msg2Player("Ng­¬i sö dông mét TriÖt Thæ Phï")
+	WriteLog(format("Account:%s[Name:%s] sö dông TriÖt Thæ Phï.",
 				GetAccount(),
 				GetName())
 			);

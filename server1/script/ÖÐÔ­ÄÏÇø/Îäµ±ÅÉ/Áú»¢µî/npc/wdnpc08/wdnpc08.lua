@@ -10,34 +10,34 @@ function main()
 	UTask_wd = GetTask(5)
 	if (GetFaction() == "wudang") and (GetSeries() == 4) then
 		if (UTask_wd == 50*256) and (GetLevel() >= 50) then		-- 50¼¶ÈÎÎñÆô¶¯
-			Say("±¾ÅÉµÜ×ÓÒÔÏÀÒåĞĞ×ßÌìÏÂ£¬ÉíÎªÎäµ±µÜ×Ó£¬ÀíÓ¦ÈÕĞĞÒ»ÉÆ¡£×î½üÔÚ<color=Red>ÌìĞÄ¶´<color> ³öÏÖÒ»ÈºµÁ·Ë£¬ÎªÊ×µÄ½Ğ<color=Red>Ìú¼¬<color>.ËûÃÇ×¨ÃÅÇÀ½ÙÀ´ÍùµÄÉÌÂÃ", 2, "Òå²»Èİ´Ç /L50_get_yes", "¿ÖÅÂºÜÄÑ½ÓÈÎÎñ/L50_get_no")
+			Say("§Ö tö bæn ph¸i lÊy nghÜa hiÖp hµnh tÈu thiªn h¹. Th©n lµ ®Ö tö Vâ §ang theo lı ph¶i lu«n lµm ®iÒu thiÖn. GÇn ®©y ë <color=Red>Thiªn T©m ®éng<color> xuÊt hiÖn 1 ®¸m ®¹o phØ ®øng ®Çu lµ <color=Red>ThiÕt C¸c<color>. Chóng chuyªn c­íp cña giÕt ng­êi", 2, "ViÖc nghÜa nªn lµm /L50_get_yes", "E r»ng khã cã thÓ nhËn nhiÖm vô /L50_get_no")
 		elseif (UTask_wd == 50*256+80) then 			-- 50¼¶ÈÎÎñÍê³É
-			Talk(2, "L50_prise", "µÜ×ÓÒÑ½«ËùµÃµÄÒøÁ½ÒªÈ«²¿¾è¸øÏåÑô³ÇµÄÇî¿àÀÏ°ÙĞÕ.", "×öµÃºÜºÃ£¬²»À¢Îª±¾ÅÉµÜ×Ó! ")
+			Talk(2, "L50_prise", "§Ö tö ®· ®em toµn bé sè tiÒn lÊy ®­îc cña bän thæ phØ ®­a cho d©n nghÌo.", "Lµm RÊt tèt! Xøng ®¸ng lµ ®Ö tö bæn ph¸i! ")
 		elseif (UTask_wd > 50*256) and (UTask_wd < 50*256+50) then					--50¼¶ÈÎÎñµÚÒ»½Ú£¬ÉĞÎ´Íê³É
-			Talk(1,"","ÍÁ·ËµÄ²ØÉíÖ®´¦ÔÚ<color=Red>ÌìĞÄ¶´<color>, ÎªÊ×µÄ½Ğ<color=Red>Ìú¼¬<color>. ¼ÇµÃ´øÈ«²¿<color=Red>ÒøÁ½<color> ¾è¸øÇî¿àµÄÈË<color=Red>ÏåÑô<color>. ")
+			Talk(1,"","N¬i Èn n¸u cña bän thæ phØ ®ã ë <color=Red>Thiªn T©m §éng<color>, tªn cÇm ®Çu lµ<color=Red>ThiÕt C¸c<color>. Nhí ®em toµn bé <color=Red>ng©n l­îng<color> tÆng cho d©n nghÌo ë <color=Red>T­¬ng D­¬ng<color>. ")
 		elseif (UTask_wd >= 50*256+50) and (UTask_wd < 60*256) then					--50¼¶ÈÎÎñµÚ¶ş½Ú£¬ÉĞÎ´Íê³É
-			AddNote("»Øµ½Îäµ±É½£¬È¥Áú»¢µîÕÒµ¥Ë¼ÄÏ£¬ÖªµÀÒª°ÑµÁ·Ë´¦ËùµÃÈ«²¿ÒøÁ½£¬¶¼ËÍ¸øÏåÑô³ÇÀï×îÇîµÄÊÇ×¡ÔÚ³Ç±±µÄµË¼ÒÉ©×Ó. ")
-			Msg2Player("°ÑµÁ·Ë´¦ËùµÃÈ«²¿ÒøÁ½£¬¶¼ËÍ¸øÏåÑô³ÇÀï×îÇîµÄÊÇ×¡ÔÚ³Ç±±µÄµË¼ÒÉ©×Ó. ")
-			Talk(1,"","ÌıËµÔÚ <color=Red>ÏåÑô<color> ×îÇîµÄÈËÊÇ<color=Red>µË¼ÒÉ©×Ó<color>, Äã´ø <color=Red>È«²¿ÒøÁ½<color> ËÍ¸øËı.")
+			AddNote("Trë l¹i Long Hæ ®iÖn gÆp §¬n T­ Nam, biÕt ®­îc ph¶i ®em toµn bé ng©n l­îng giao cho §Æng tÈu nghÌo nhÊt ë Thµnh b¾c. ")
+			Msg2Player("§em toµn bé ng©n l­îng tÆng cho §Æng tÈu nghÌo nhÊt ë thµnh B¾c. ")
+			Talk(1,"","Nghe nãi trong <color=Red>T­¬ng D­¬ng<color> ng­êi nghÌo nhÊt lµ <color=Red>chŞ d©u §Æng gia<color>, ng­¬i ®em <color=Red>toµn bé ng©n l­îng<color> lÊy ®­îc cña bän thæ phØ tÆng cho chŞ ta.")
 		else					--ÒÑ¾­Íê³É50¼¶ÈÎÎñ£¬ÉĞÎ´³öÊ¦
-			Talk(1,"","ÎÒÆ½ÉúÏ²»¶½»½ÓÓĞÇéÓĞÒåÖ®ÈË£¬´óÒ¯³ö½­ºş£¬ĞĞÏÀÕÌÒå.")
+			Talk(1,"","Ta b×nh sinh thİch nhÊt giao kÕt víi nh÷ng ng­êi cã t×nh cã nghÜa,®¹i gia ra giang hå,hµnh hiÖp tr­îng nghÜa.")
 		end
 	elseif (UTask_wd >= 70) then									--ÒÑ¾­³öÊ¦
-		Talk(1,"","ÈËÉú²»ÓÃÌ«ÉË¸Ğ£¬ÌìÏÂÖ®´ó£¬ÓĞÎÒÈİÉíÖ®´¦¡£Ï£ÍûÄã±£ÖØ! ")
+		Talk(1,"","ViÖc cña ®êi ng­êi, còng ®õng qu¸ th­¬ng c¶m, thiªn h¹ réng lín ®ñ chç ®Ó ta dung th©n. Hy väng ng­¬i b¶o träng! ")
 	else
-		Talk(1,"","ÌìÏÂ·×ÂÒ£¬»¢ÀÇºÏÈº£¬»öº¦ÊÀ¼ä£¬ÎÒÊÇÑ§ÎäÖ®ÈË£¬ÔõÄÜĞäÊÖÅÔ¹Û£¬ÔõÄÜÅäµÃÉÏÏÀÒå¶ş×Ö¡£")
+		Talk(1,"","Thiªn h¹ lo¹n l¹c, sãi hæ hîp quÇn, g©y häa thÕ nh©n, g©y ra ®¹i ho¹! Ta lµ ng­êi häc vâ, thÊy c¶nh nh­ vËy lµm sao cã thÓ ®øng nh×n, lµm sao xøng ®¸ng víi hai ch÷ ' hiÖp nghÜa'!")
 	end
 end;
 
 function L50_get_yes()
-	Talk(1,"","ºÜºÃ£¬µ«ÊÇ£¬²»ÒªÍü¼Ç°Ñ <color=Red>ÒøÁ½<color> ¾è¸ø×îÇîµÄ°ÙĞÕ<color=Red>ÏåÑô<color>.")
+	Talk(1,"","RÊt tèt! Nh­ng ®õng quªn ®em <color=Red>ng©n l­îng<color> lÊy ®­îc cho l·o b¸ t¸nh nghÌo khæ trong <color=Red>T­¬ng D­¬ng<color>.")
 	SetTask(5, 50*256+20)
-	AddNote("ÔÚÁú»¢µî¼ûµ½µ¥Ë¼ÄÏ£¬½ÓĞĞÉÆÈÎÎñ£¬È¥ÌìĞÄ·üÅ£É½ÎªÃñ³ıº¦. ")
-	Msg2Player("ÔÚÁú»¢µî¼ûµ½µ¥Ë¼ÄÏ£¬½ÓĞĞÉÆÈÎÎñ£¬È¥ÌìĞÄ·üÅ£É½ÎªÃñ³ıº¦. ")
+	AddNote("T¹i ®iÖn Long Hæ Vâ §ang ph¸i gÆp §¬n T­ Nam, nhËn nhiÖm vô hµnh thiÖn, ®i ®éng Thiªn T©m Phôc Ng­u s¬n v× d©n trõ h¹i. ")
+	Msg2Player("T¹i ®iÖn Long Hæ Vâ §ang ph¸i gÆp §¬n T­ Nam, nhËn nhiÖm vô hµnh thiÖn, ®i ®éng Thiªn T©m Phôc Ng­u s¬n v× d©n trõ h¹i. ")
 end;
 
 function L50_get_no()
-	Talk(1,"","ÎªÃñ³ı±©ÊÇÑ§ÎäÖ®ÈËµÄÔğÈÎ£¬ÎªÊ²Ã´ÄãÍÆ´Ç£¿")
+	Talk(1,"","Trõ b¹o cho d©n lµ tr¸ch nhiÖm cña ng­êi häc vâ, t¹i sao ng­¬i kh­íc tõ?")
 end;
 
 function L50_prise()
@@ -45,6 +45,6 @@ function L50_prise()
 	SetTask(5, 60*256)
 --	AddMagic(157)
 	add_wd(60)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²£¬Äã³ÉÎªÕÆ¾­µÀÈË£¬Ñ§µ½×øÍüÎŞÎÒ. ")
-	AddNote("»Øµ½Îäµ±ÅÉÁú»¢µî£¬¸´Ãüµ¥Ë¼ÄÏ£¬Íê³ÉÈÕĞĞÒ»ÉÆÈÎÎñ£¬³ÉÎªÕÆ¾­µÀÈË")
+	Msg2Player("Chóc mõng B¹n! B¹n ®· trë thµnh Ch­ëng Kinh §¹o Nh©n! Häc ®­îc vâ c«ng To¹ Väng V« Ng· cña Vâ §ang ph¸i. ")
+	AddNote("VÒ tíi ®iÖn Long Hæ Vâ §ang ph¸i, phôc mÖnh §¬n Tö Nam, hoµn thµnh nhiÖm vô NhËt hµnh nhÊt thiÖn. Trë thµnh Ch­ëng Kinh §¹o Nh©n. ")
 end;

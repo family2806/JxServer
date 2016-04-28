@@ -7,7 +7,7 @@ function OnDeath()
 	UTask_tm = GetTask(2);
 	if ((UTask_tm == 40*256+60) and (HaveItem(43) == 0)) then					--没有蟾蜍的皮
 		AddEventItem(43) 
-		Msg2Player("得到蟾蜍的皮")
-		AddNote("得到蟾蜍的皮")
+		Msg2Player("L蕐 頲 Da c鉩 ")
+		AddNote("L蕐 頲 Da c鉩 ")
 	end
 end;

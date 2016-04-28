@@ -43,7 +43,7 @@ function main()
 	tbNpc.tbNpcParam[TREE_TASKSCORE] = 0
 	tbNpc.tbNpcParam[TREE_TYPE] = XIANGSI
 	basemission_CallNpc(tbNpc)
-	Msg2Player("÷÷“ªø≈œ‡Àº∂π")
+	Msg2Player("TrÂng 1 ßÀu T≠¨ng T≠")
 	
 end
 

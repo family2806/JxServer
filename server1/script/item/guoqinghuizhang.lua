@@ -9,17 +9,17 @@ TASK_DATE_END = 07092324-- π”√Ωÿ÷¡ ±º‰
 function main(sel)
 	nDate = tonumber(GetLocalDate("%y%m%d%H"))
 	if TASK_DATE_END < nDate then
-		Talk(1,"","’Ê «“≈∫∂£¨∏√ŒÔ∆∑“—π˝ π”√∆⁄.")
+		Talk(1,"","ThÀt Æ∏ng ti’c, vÀt ph»m nµy Æ∑ qu∏ hπn sˆ dÙng.")
 		return 0
 	end
 	if GetLevel() < TASK_LEVEL then
-		Talk(1,"","÷ª”–50º∂“‘…œÕÊº“≤≈ƒ‹ π”√π˙«Ï—´’¬.")
+		Talk(1,"","Chÿ c„ ng≠Íi ch¨i c p tı 50 trÎ l™n mÌi c„ th” sˆ dÙng huy ch≠¨ng QuËc Kh∏nh.")
 		return 1
 	end
 	local nexp = GetTask(TASK_EXP);
 	local addexp = TASK_GET_EXP;
 	if nexp >= TASK_TOP_EXP then
-		Talk(1,"","÷ªƒ‹◊Ó∂‡ªÒµ√4“⁄æ≠—È÷µ!!!")
+		Talk(1,"","Chÿ c„ th” nhÀn Æ≠Óc tËi Æa 400 tri÷u Æi”m kinh nghi÷m!!!")
 		return 1
 	end
 	
@@ -31,7 +31,7 @@ function main(sel)
 	end
 	
 	AddOwnExp(addexp);
-	Msg2Player(format("ƒ˙ªÒµ√ %d æ≠—È÷µ.",addexp));
+	Msg2Player(format("Bπn nhÀn Æ≠Óc %d Æi”m kinh nghi÷m.",addexp));
 	WriteLog(format("[GuoQingHuiZhang]\t Date:%s\t Account:%s\t Name:%s\t Effect:GetExp %s",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),addexp));
 		
 end

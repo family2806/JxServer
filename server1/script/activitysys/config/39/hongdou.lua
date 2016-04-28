@@ -15,15 +15,15 @@ function main()
 		return 1
 	end 
 --By: NgaVN -- ÔÚÕû¸ö»î¶¯ÆÚ¼ä£¬Ê¹ÓÃÒìÏã»¨ºÍºì¶¹×î¶àÊ¹ÓÃ30ÎïÆ·		
-	if pActivity:CheckTaskDaily(TSK_AWARD_USE_TIME, 30, "Ê¹ÓÃÒìÏã»¨ºÍºì¶¹ÒÑ´ïÉÏÏŞ","<") ~= 1 then
+	if pActivity:CheckTaskDaily(TSK_AWARD_USE_TIME, 30, "Sö dông DŞ H­¬ng Hoa Hång vµ §Ëu Hång ®· ®¹t ®Õn giêi h¹n","<") ~= 1 then
 		return 1
 	end
 	pActivity:AddTaskDaily(TSK_AWARD_USE_TIME, 1)
 --By: NgaVN - 2.000.000 ¾­ÑéÖµ
 	local tbAward = {
-		--{szName="Ğş¾§",tbProp={6,1,147,1,0,0},nExpiredTime=20120301,},
+		--{szName="HuyÒn tinh",tbProp={6,1,147,1,0,0},nExpiredTime=20120301,},
 		--{nJxb = 1},
-		{szName = "§i¾­ÑéÖµ", nExp=2000000};
+		{szName = "§iÓm kinh nghiÖm", nExp=2000000};
 		}
 	
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, "use hongdouguo"})

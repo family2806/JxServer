@@ -8,15 +8,15 @@ function main()
 		mapid = CP_MAPTAB[ i ][ 1 ]
 		mapindex = SubWorldID2Idx( mapid )
 		if ( mapindex < 0 ) then
-			print( "ANNOUNCE: ÎäÁÖĞÂĞãÁªÈüÇøÓò"..CP_MAPTAB[i][3].."²»ÔÚ·şÎñÆ÷ÉÏ, ", mapid );
+			print( "ANNOUNCE: Khu v­c thi ®Êu kiÖt xuÊt"..CP_MAPTAB[i][3].."Kh«ng cã trªn sever, ", mapid );
 		else
 			SubWorld = mapindex
 			if( GetMissionV( MS_STATE ) > 0 ) then
 				return
 			end
 			OpenMission(MISSIONID)
-			str = date( "%mÔÂ%dÈÕ" ).."ÊôÓÚÎäÁÖ"..CP_MAPTAB[ i ][ 3 ].."ÎäÁÖĞÂĞãÁªÈüÒÑ¾­¿ªÊ¼£¬Íæ¼ÒÏë±¨Ãû²Î¼Ó±ÈÈüÇëµ½ÁÙ°²ÓëÎäÁÖĞÂĞãÁªÈü¹ÙÔ±¶Ô»°¡£±¨ÃûÌõ¼ş£ºµÈ¼¶´Ó50µ½90¼¶£¬²Î¼Ó±ÈÈü´ÎÊıÉÙÓÚ40´Î."
-			WriteLog(date( "%YÄê%mÔÂ%dÈÕ%HÊ±M·Ö:" ).."ÎäÁÖ "..CP_MAPTAB[ i ][ 3 ].."ÎäÁÖĞÂĞãÁªÈüÒÑ¾­¿ªÊ¼!" )
+			str = date( "%mth¸ng%dngµy" ).."cña Vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt m«n ph¸i ®· b¾t ®Çu, ng­êi ch¬i muèn b¸o danh tham gia thi ®Êu h·y ®Õn L©m An ®èi tho¹i víi Sø gi¶ kiÖt xuÊt. §iÒu kiÖn b¸o danh: §¼ng cÊp tõ cÊp 50 ®Õn cÊp 90, sè lÇn tham gia thi ®Êu İt h¬n 40."
+			WriteLog(date( "%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:" ).."Vâ L©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt m«n ph¸i ®· b¾t ®Çu!" )
 			AddGlobalCountNews( str, 1 )
 			SetMissionV( MS_STATE, 1 )
 			SetMissionV( MS_ROUND, 1 )

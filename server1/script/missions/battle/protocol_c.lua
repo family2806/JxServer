@@ -5,10 +5,10 @@ Include("\\script\\lib\\common.lua")
 
 STATE2STR = 
 {
-	[1] = "±¨ÃûÖÐ",
-	[2] = "×¼±¸ÖÐ",
-	[3] = "½øÐÐÖÐ",
-	[4] = "½áÊøÖÐ",
+	[1] = " Ghi Danh Trung ",
+	[2] = " ChuÈn BÞ Trung ",
+	[3] = " TiÕn Hµnh Trung ",
+	[4] = " KÕt Thóc Trung ",
 }
 
 function show_battle_select(tbInfo)
@@ -19,12 +19,12 @@ function show_battle_select(tbInfo)
 	for i=1, 4 do
 		local pInfo = tbInfo[i]
 		if pInfo then
-			local szId = strfill_center(format("µÚ%d³¡ËÎ½ð", pInfo.nId), 12)
+			local szId = strfill_center(format("Thø %d trµng tèng kim ", pInfo.nId), 12)
 			local szState = strfill_center(STATE2STR[pInfo.nState], 12)
-			local szCount1 = strfill_center(format("ËÎ%dÈË", pInfo.nCount1), 12)
-			local szWaiting1 = strfill_center(format("µÈ´ý%dÈË", pInfo.nWaiting1), 12)
-			local szCount2 = strfill_center(format("½ð%dÈË", pInfo.nCount2), 12)
-			local szWaiting2 = strfill_center(format("µÈ´ý%dÈË", pInfo.nWaiting2), 12)
+			local szCount1 = strfill_center(format("Tèng %d ng­êi ", pInfo.nCount1), 12)
+			local szWaiting1 = strfill_center(format("Chê ®îi %d ng­êi ", pInfo.nWaiting1), 12)
+			local szCount2 = strfill_center(format("Kim %d ng­êi ", pInfo.nCount2), 12)
+			local szWaiting2 = strfill_center(format("Chê ®îi %d ng­êi ", pInfo.nWaiting2), 12)
 			
 			local szInfo = format(" %s%s<enter> %s%s<enter> %s%s", 
 				szId, szState,

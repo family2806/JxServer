@@ -18,17 +18,17 @@ function pActivity:Init()
 end
 
 function pActivity:AcceptKillTask()
-	%tbLog:PlayerActionLog("TinhNangKey","½ÓÉòÉıÒÂÈÎÎñ")
+	%tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuThamThangY")
 	%tbKillDailyTask:AcceptTask();
 end
 
 function pActivity:AcceptTalkTask()
-	%tbLog:PlayerActionLog("TinhNangKey","½ÓÉòÉıÒÂÈÎÎñ")
+	%tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuThamThangY")
 	%tbTalkDailyTask:AcceptTask();
 end
 
 function pActivity:AcceptGatherTask()
-	%tbLog:PlayerActionLog("TinhNangKey","½ÓÉòÉıÒÂÈÎÎñ")
+	%tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuThamThangY")
 	%tbGatherDailyTask:AcceptTask();
 end
 
@@ -40,9 +40,9 @@ function pActivity:CompletKillTask()
 	if (%tbKillDailyTask:CompleteTask() == 1) then
 		--·çÔÆÁîÅÆ-¼ÇÂ¼ÎäÁÖÃËÖ÷ÈÎÎñÍê³É´ÎÊı- Modified by DinhHQ - 20110920
 		G_ACTIVITY:OnMessage("FinishVLMC_VNG", "KillTask");
-		--¸ü¸ÄÃ¿ÈÕÉ±¹ÖÈÎÎñ½±Àø- Modified By DinhHQ - 20110810
-		tbAwardTemplet:GiveAwardByList({nExp = 15000000}, format("Íê³ÉÃ¿ÈÕÈÎÎñ(%s) ÊÕµ½%d ¸ö%s", "É±¹ÖÈÎÎñ", 15000000, "¾­Ñé"));
-		Talk(1,"",format("%s,Äã¹ûÕæÊÇÎ»´óÏÀ£¬Õâ¸öÊÇÎÒËÍ¸øÄãµÄĞ¡ÀñÆ·£¬»¹Çë½ÓÊÜ£¬Ã÷ÌìÔÙ¼ûÅ¶", GetSex() == 1 and "½ã½ã" or "¸ç¸ç"));
+		--¸ü¸ÄÃ¿ÈÕNhiÖm vô S¸t qu¸i ½±Àø- Modified By DinhHQ - 20110810
+		tbAwardTemplet:GiveAwardByList({nExp = 15000000}, format("Hoµn thµnh nhiÖm vô hµng ngµy(%s) nhËn ®­îc %d c¸i %s", "NhiÖm vô S¸t qu¸i ", 15000000, "kinh nghiÖm "));
+		Talk(1,"",format("%s, Ng­¬i qu¶ lµ mét vŞ ®¹i hiÖp. §©y lµ mãn quµ nhá ta tÆng cho ng­¬i, mong h·y nhËn lÊy. Ngµy mai gÆp l¹i nhĞ.", GetSex() == 1 and "ChŞ " or "Ca Ca"));
 		
 	end
 end
@@ -55,9 +55,9 @@ function pActivity:CompletTalkTask()
 	if (%tbTalkDailyTask:CompleteTask() == 1) then
 		--·çÔÆÁîÅÆ-¼ÇÂ¼ÎäÁÖÃËÖ÷ÈÎÎñÍê³É´ÎÊı- Modified by DinhHQ - 20110920
 		G_ACTIVITY:OnMessage("FinishVLMC_VNG", "TalkTask");
-		--¸ü¸ÄÃ¿ÈÕ¶Ô»°ÈÎÎñ½±Àø- Modified By DinhHQ - 20110810
-		tbAwardTemplet:GiveAwardByList({nExp = 15000000}, format("Íê³ÉÃ¿ÈÕÈÎÎñ(%s) »ñµÃ%d¸ö%s", "¶Ô»°ÈÎÎñ", 15000000, "¾­Ñé"));
-		Talk(1,"",format("%s, Äã¹ûÕæÊÇÎ»´óÏÀ£¬Õâ¸öÊÇÎÒËÍ¸øÄãµÄĞ¡ÀñÆ·£¬»¹Çë½ÓÊÜ£¬Ã÷ÌìÔÙ¼ûÅ¶", GetSex() == 1 and "½ã½ã" or "¸ç¸ç"));
+		--¸ü¸ÄÃ¿ÈÕNhiÖm vô §èi tho¹i ½±Àø- Modified By DinhHQ - 20110810
+		tbAwardTemplet:GiveAwardByList({nExp = 15000000}, format("Hoµn thµnh nhiÖm vô hµng ngµy(%s) nhËn ®­îc %d c¸i %s", "NhiÖm vô §èi tho¹i ", 15000000, "kinh nghiÖm "));
+		Talk(1,"",format("%s, Ng­¬i qu¶ lµ mét vŞ ®¹i hiÖp. §©y lµ mãn quµ nhá ta tÆng cho ng­¬i, mong h·y nhËn lÊy. Ngµy mai gÆp l¹i nhĞ.", GetSex() == 1 and "ChŞ " or "Ca Ca"));
 		
 	end
 end
@@ -70,9 +70,9 @@ function pActivity:CompletGatherTask()
 	if (%tbGatherDailyTask:CompleteTask() == 1) then
 		--·çÔÆÁîÅÆ-¼ÇÂ¼ÎäÁÖÃËÖ÷ÈÎÎñÍê³É´ÎÊı- Modified by DinhHQ - 20110920
 		G_ACTIVITY:OnMessage("FinishVLMC_VNG", "GatherTask");
-		--¸ü¸ÄÃ¿ÈÕÊÕ¼¯ÈÎÎñ½±Àø- Modified By DinhHQ - 20110810
-		tbAwardTemplet:GiveAwardByList({nExp = 10000000}, format("Íê³ÉÃ¿ÈÕÈÎÎñ(%s) »ñµÃ%d¸ö%s", "ÊÕ¼¯ÈÎÎñ", 10000000, "¾­Ñé"));
-		Talk(1,"",format("%s, Äã¹ûÕæÊÇÎ»´óÏÀ£¬Õâ¸öÊÇÎÒËÍ¸øÄãµÄĞ¡ÀñÆ·£¬»¹Çë½ÓÊÜ£¬Ã÷ÌìÔÙ¼ûÅ¶", GetSex() == 1 and "½ã½ã" or "¸ç¸ç"));
+		--¸ü¸ÄÃ¿ÈÕNhiÖm vô thu thËp½±Àø- Modified By DinhHQ - 20110810
+		tbAwardTemplet:GiveAwardByList({nExp = 10000000}, format("Hoµn thµnh nhiÖm vô hµng ngµy(%s) nhËn ®­îc %d c¸i %s", "NhiÖm vô thu thËp", 10000000, "kinh nghiÖm "));
+		Talk(1,"",format("%s, Ng­¬i qu¶ lµ mét vŞ ®¹i hiÖp. §©y lµ mãn quµ nhá ta tÆng cho ng­¬i, mong h·y nhËn lÊy. Ngµy mai gÆp l¹i nhĞ.", GetSex() == 1 and "ChŞ " or "Ca Ca"));
 		
 	end
 end

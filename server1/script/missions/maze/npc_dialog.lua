@@ -14,18 +14,18 @@ LIMITS = {
 	FLAG_CHECKTIME = 1,
 }
 
--- ³µ·ò
+-- Xa phu
 NpcChefu = {
-	m_Caption = "Ïë×ø³µÈ¥ÄÄ£¿",
+	m_Caption = "Muèn ngåi xe ®i ®©u? ",
 	m_Options = {
-		"ÎÒÏëÈ¥·ïÏè",
-		"ÎÒÏëÈ¥³É¶¼",
-		"ÎÒÏëÈ¥´óÀí",
-		"ÎÒÏëÈ¥ãê¾©",
-		"ÎÒÏëÈ¥ÏåÑô",
-		"ÎÒÏëÈ¥ÑïÖİ",
-		"ÎÒÏëÈ¥ÁÙ°²",
-		"ÄÄ¶¼²»È¥"
+		"Ta muèn ®i Ph­îng T­êng",
+		"Ta muèn ®i Thµnh §«",
+		"Ta muèn ®i §¹i Lı",
+		"Ta muèn ®i BiÖn Kinh",
+		"Ta muèn ®i T­¬ng D­¬ng.",
+		"Ta muèn ®i D­¬ng Ch©u.",
+		"Ta muèn ®i L©m An",
+		"Kh«ng ®i ®©u c¶"
 	}
 }
 function NpcChefu:Say(player)
@@ -36,25 +36,25 @@ function NpcChefu:OnAnswer(player, sel)
 	if (sel > 0 and sel < 8) then
 		local mapid, x, y = GetStationPos(sel)
 		if (mapid ~= nil and NewWorld(mapid, x, y) == 1) then
-			player:Msg2Player("×øºÃÁËÂğ£¿ÎÒÃÇ×ß¡£ ")
+			player:Msg2Player("Ngåi yªn ch­a? Chóng ta ®i ")
 		end
 	end
 end
 
 -- ÖÜ¾ı
 NpcZhoujun = {
-	m_Caption = "¹§Ó­´óÏÀ£¬ÀÏ·òÊÇÌìÇ÷»¤½£Ê¹.",
+	m_Caption = "Cung nghªnh ®¹i hiÖp, l·o phu ta lµ Thiªn Xu Hé KiÕm Sø cña Ngäc Long S¬n Trang .",
 	m_Options = {
-		"ÎÒµ½ÕâÊÇÀ´Íê³ÉÓñÁúÓ¢ĞÛÌûÈÎÎñµÄ",
-		"ÎÒÀ´ÕâÁìÈ¡¿Õ°×µÄÓñÁúÃû½£Æ×",
-		"ÎÒÀ´ÁìÈ¡±¾ÓªÓñÁúÃû½£µÄÊÕ¼¯½±Àø",
-		"ÎÒÖ»ÊÇÀ´Íæ",
+		"Lµ ta ®Õn ®©y ®Ó hoµn thµnh nhiÖm vô vña Ngäc Long Anh hïng ThiÕp",
+		"Ta ®Õn ®Ó nhËn Ngäc Long Danh KiÕm Phæ cña Kh«ng B¹ch",
+		"Ta ®Õn ®Ó nhËn phÇn th­ëng thu thËp Ngäc Long Danh KiÕm cña th¸ng nµy",
+		"Ta chØ ®Õn ch¬i",
 	}
 }
 
 function NpcZhoujun:Say(player)
 	do
-		player:Say("¸Ã¹¦ÄÜÔİÊ±¹Ø±Õ.")
+		player:Say("Tİnh n¨ng nµy t¹m thêi ®ãng.")
 		return
 	end
 	return self.m_Caption, self.m_Options
@@ -64,41 +64,41 @@ function NpcZhoujun:OnAnswer(player, nIndex)
 	if (nIndex == 1) then
 		local nTask = player:GetTask(TASK_MAZEINVITATION)
 		if (nTask == 0) then
-			player:Say("ÇëÔ­ÁÂ£¬ÄãÎ´»ñµÃ¸ÃÈÎÎñ.")
+			player:Say("Xin l­îng thø, ng­¬i ch­a nhËn ®­îc nhiÖm vô nµy.")
 		elseif (nTask == 1) then
 			if (player:CalcFreeItemCellCount() == 0) then
-				player:Say("ÇëÕûÀí×°±¸ºóÔÙÀ´¼ûÎÒ.")
+				player:Say("Xin h·y s¾p xÕp l¹i hµnh trang sau nµy h·y ®Õn gÆp ta.")
 				return
 			end
 			player:Describe(
-				format("%s ´óÏÀ£¬ÀÏ·ò¾ÃÎÅÄãµÄ´óÃû£¬½ñÌìÏàÓö£¬ÕæÊÇÈËÖĞÁú·ï¡£Õâ´Î£¬ÓñÁúÉ½ÔÚÇëÄãÀ´ÓĞÊÂÉÌÁ¿£¬ÀÏ·ò½«´ÓÍ·µ½Î²¸æËßÄã. <enter> ÎÒµÄÉ½×¯Ö®Ç°ÌıÌØÌ½»Ø±¨£¬½ğ¹úÕıÔÚÄ±»®´óÊÂ£¬ËûÃÇÕıÔÚÄ±»®Ò»³¡¶ÔÎÒ¹úµÄ¾ªÌì´óÕ½¡£ÎªÁË¿¹»÷ËûÃÇµÄÒõÄ±£¬ÓñÁúÉ½ÔÚ¾ö¶¨Ñ¡ÅÉºÍÑµÁ·Ò»Ğ©¾øÊÀ¸ßÊÖÇ±ÈëµĞÈËµÄÄÚ¹¬£¬°µÉ±ËûÃÇµÄÊ×Áì¡£ÎÒÃÇµÄ×¯Ö÷ºÜÏ²»¶ÊÕ¼¯Ãû½££¬ÎªÁË·ÀÖ¹¶À¹ÂÇó°Ü£¬ËùÒÔ£¬°ÑÃû½£·ÅÔÚÁË½£Ú£¡£¶øÇÒ£¬Ñ¡ÅÉÁË¾«Ó¢ÎÀÊ¿±£»¤. <enter> ½ñÌìÒªÄ±´óÊÂ£¬±¾×¯Ô¸Òâ´ò¿ª½£Ú£ÈÃÎäÁÖÓ¢ĞÛ¼¯ºÍÔÚÒ»ÆğÁ·Ï°Îä¹¦£¬Í¬Ê±Ò²¹±Ï×±¾×¯µÄÉñ±øÀûÆ÷£¬ÕâĞ©±¦Îï½«ËÍ¸øÎäÁÖĞÂĞãµÄÓ¢ĞÛ¡£µ«ÊÇÒªÕÒµ½Ò»Î»ÕæÕıµÄ¸ßÊÖ¡£´óÏÀÕâ´ÎÀ´ÕâÀï£¬±¾×¯¸Ğµ½ÎŞ±ÈÈÙĞÒ¡£ÕâÊÇ±¾×¯µÄĞÅÎï<color=red> ÓñÁúÁîÅÆ <color>, ÓĞÕâ¸ö¼«Æ·ÔÚÊÖÉÏ£¬´óÏÀ¿ÉÒÔËæÊ±½øÈë½£Ú£¡£Ï£Íû´óÏÀ¿ÉÒÔÍ¨¹ıÑµÁ·£¬»ñµÃ¼«Æ·×°±¸£¬ÔçÍíÓĞÒ»ÌìÄÜ±¨Ğ§×æ¹ú¡£.", player:GetName()),
+				format("%s ®¹i hiÖp, l·o phu ta ®· nghe danh ngµi tõ l©u, h«m nay ®­îc t­¬ng ngé, qu¶ lµ nh©n trung long ph­îng. LÇn nµy Ngäc Long S¬n Trang mêi ngµi ®Õn ®©y lµ cã viÖc muèn th­¬ng l­îng, l·o phu sÏ kÓ ®Çu ®u«i c©u chuyÖn. <enter> S¬n Trang cña ta tr­íc ®©y cã nghe ®Æc th¸m b¸o l¹i, Kim Quèc ®ang ©m thÇm chuÈn bŞ mét ©m m­u to lín, hä dù tİnh mét ©m m­u ph¸t ®éng mét cuéc ®¹i chiÕn kinh thiªn ®èi víi v­¬ng triÒu cña ta . §Ó chèng l¹i ©m m­u cña hä, Ngäc Long S¬n Trang ®· quyÕt ®Şnh tuyÓn chän vµ huÊn luyÖn mét sè cao thñ tuyÖt ®Ønh vâ l©m trİ dòng song toµn, th©m nhËp vµo néi cung cña kÎ ®Şch ¸m s¸t thñ lÜnh cña hä. Trang chñ c¶u chóng t«i mét ®êi cña ngµi rÊt thİch thu thËp danh kiÕm, ®Ó ®Ò phßng §éc C« CÇu B¹i nªn ®· cÊt gi÷ danh kiÕm ë trong “KiÕm Gia”. H¬n n÷a ®·  tuyÓn chän no÷ng vÖ sü tinh anh . <enter> h«m nay lµ ®Ó m­u cÇu ®¹i sù, Bæn Trang chóng t«i nguyÖn lßng më cöa KiÕm Gia ®Ó cho nh÷ng anh hïng vâ l©m kh¾p n¬i héi tô cïng chung chİ h­íng rÌn luyÖn vâ c«ng v× n­íc b¸o ©n, ®ång thêi còng cèng hiÕn tÊt c¶ nh÷ng thÇn binh lîi khİ cña Bæn Trang, nh÷ng b¸u vËt ®ã sÏ d©ng tÆng cho nh÷ng anh hïng kiÖt xuÊt , nh­ng ®Ó t×m ra mét cao thñ ch©n chİnh th× thËt lµ vÜ ®¹i. §¹i hiÖp lÇn nµy ®Õn ®©y, Bæn Trang ta qu¶ lÊy lµm vinh h¹nh v« cïng. §©y lµ tİn vËt cña Bæn Trang<color=red> “Ngäc Long LÖnh Bµi” <color>, cã tİn vËt nµy trªn tay, ®¹i hiÖp cã thÓ ®i vµo KiÕm Gia bÊt cø lóc nµo. Mong r»ng ®¹i hiÖp cã thÓ qua viÖc huÊn luyÖn t¹i ®©y, nhËn ®­îc nh÷ng trang bŞ cùc phÈm, sím muén g× còng cã ngµy®Òn ©n b¸o quèc.", player:GetName()),
 				1,
-				"ÖªµÀÁË/Cancel")
+				"BiÕt råi/Cancel")
 			if (player:AddItem(6, 1, 2623, 1, 0, 0) > 0) then
 				player:SetTask(TASK_MAZEINVITATION, 2)
 			end
 		elseif (nTask == 2) then
-			player:Say("ÄãÒÑÍê³ÉÈÎÎñÁË£¬²»ĞèÒªÔÙ×öÁË")		
+			player:Say("Ng­¬i ®· hoµn thµnh nhiÖm vô nµy råi, kh«ng cÇn ph¶i lµm l¹i ®©u")		
 		end
 	elseif (nIndex ~= 4) then
-		player:Say("¸ÃĞÔÄÜÔİÊ±²»¿ª ")
+		player:Say("Tİnh n¨ng nµy t¹m thêi ch­a më.")
 	end
 end
 
--- ÁøÒ©Ê¦
+-- LiÔu D­îc S­
 NpcLiuyaoshi = {}
 function NpcLiuyaoshi:Say(player)
 	player:Sale(99, 1)
 end
 
--- Ğ¡ÖéÖé
+-- TiÓu Chu Chu.
 NpcXiaozhuzhu = {
-	m_Caption = "´óÏÀ£¬ÄúºÃ¡£ÎÒÊÇÒ»Î»Çã¹úÇã³ÇµÄÓñÁúÉ½×¯µÚÒ»ÃÀÈËĞ¡ÖéÖé£¬ÇëÎÊ´óÏÀÕÒÎÒÓĞÊ²Ã´ÊÂÂğ£¿",
+	m_Caption = "Chµo ®¹i hiÖp, ta lµ mét ng­êi con g¸i nghiªng n­íc nghiªng thµnh, tuyÕt nh­êng mµu da Ngäc Long S¬n Trang ®Ö nhÊt mü nh©n TiÓu Ch©u Ch©u, xin hái ®¹i hiÖp kiÕm ta cã chuyÖn g× xin chØ gi¸o?",
 	m_Options = {
-		"½éÉÜ½£Ú£¸±±¾",
-		"½£Ú£±¨Ãû",
-		--"¼ì²é½ñÌìÎÒ¿ÉÒÔ½øÈë½£Ú£µÄ´ÎÊı",
-		"ÎÒÖ»ÊÇÂ·¹ı",
+		"Giíi thiÖu vÒ Phã B¶n KiÕm Gia",
+		"B¸o danh vµo KiÕm Gia",
+		--"KiÓm tra sè lÇn h«m nay ta cã thÓ ®i vµo KiÕm Gia",
+		"Ta chØ ghĞ th¨m",
 	}
 }
 NpcXiaozhuzhu.tbTSK_JoinTotal = 3075
@@ -121,10 +121,10 @@ end
 function NpcXiaozhuzhu:CheckTeam(player)
 	local count = player:GetTeamSize()
 	if (count < LIMITS.MIN_TEAMSIZE) then
-		player:Say("120¼¶ÒÔÉÏ6-8ÈË×é¶Ó²ÅÄÜ½øÈ¥.")
+		player:Say("Tõ 6-8 ng­êi cÊp 120 trë lªn cïng nhau tæ ®éi míi ®­îc ®i vµo.")
 		return 0
 	elseif (self:CheckTime() == 0) then
-		player:Say("Ö»ÄÜÔÚ30·ÖÖÓÇ°±¨Ãû.")
+		player:Say("ChØ cã thÓ b¸o danh sau ®Çu mçi giê vµ tr­íc 30 phót.")
 		return 0
 	end
 	local mapid, _, _ = player:GetWorldPos()
@@ -134,24 +134,24 @@ function NpcXiaozhuzhu:CheckTeam(player)
 		if (not mate) then
 			return 0
 		elseif (mate:GetLevel() < LEVEL_MIN) then
-			player:Say(format("×é¶Ó³ÉÔ±<color=red>%s<color> µÈ¼¶²»¹».", mate:GetName()))
+			player:Say(format("Thµnh viªn tæ ®éi<color=red>%s<color> ®¼ng cÊp ch­a ®ñ.", mate:GetName()))
 			return 0
 		elseif(self:VnCheckNLPass(mate) == 0) then	--¼ì²éÓñÁúÁîÅÆ
-			player:Say(format("¶Ô²»Æğ,<color=red>%s<color> Ã»ÓĞÓñÁúÁîÅÆ¡£²»¹»Ìõ¼ş½øÈë½£Ú£½øĞĞÊÔÁ¶.", mate:GetName()))
+			player:Say(format("Xin thø lçi,<color=red>%s<color> kh«ng cã Ngäc Long LÖnh Bµi. Kh«ng ®ñ ®iÒu kiÖn ®i vµo KiÕm Gia tiÕn hµnh thİ luyÖn.", mate:GetName()))
 			return 0
 		elseif (self:VnGetJoinTotal(mate) == 0) then --¼ì²é´ÎÊı°É
-			player:Say(format("<color=red>%s<color>½ñÌì½øÈë½£Ú£ÊÔÁ¶µÄ´ÎÊıÒÑÓÃÍêÁË.", mate:GetName()))
+			player:Say(format("<color=red>%s<color>H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
 			return 0	
 --		elseif (MazePermission:CheckPermission(mate) == 0) then
---			player:Say(format("¶Ô²»Æğ,<color=red>%s<color> ²»¹»Ìõ¼ş½øÈë½£Ú£ÊÔÁ¶.", mate:GetName()))
+--			player:Say(format("Xin thø lçi,<color=red>%s<color> kh«ng ®ñ ®iÒu kiÖn ®i vµo KiÕm Gia tiÕn hµnh thİ luyÖn.", mate:GetName()))
 --			return 0
 --		elseif (MazePermission:QueryLeftCount(mate) == 0) then
---			player:Say(format("<color=red>%s<color>½ñÌì½øÈë½£Ú£ÊÔÁ¶µÄ´ÎÊıÒÑÓÃÍêÁË.", mate:GetName()))
+--			player:Say(format("<color=red>%s<color>H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
 --			return 0
 		else
 			local m, _, _ = mate:GetWorldPos()
 			if (m ~= mapid) then
-				player:Say("ÒªÇóËùÓĞ³ÉÔ±¶¼ÔÚ¸½½ü²ÅÄÜ½øÈë²Î¼Ó±¨Ãû.")
+				player:Say("Yªu cÇu tÊt c¶ ®éi viªn ®Òu ë gÇn ®©y th× míi cã thÓ tiÕn hµnh b¸o danh tham gia.")
 				return 0
 			end
 		end
@@ -175,9 +175,9 @@ function NpcXiaozhuzhu:Enter(player, maze)
 		maze:Join(mate)
 		if (not maze:Enter(mate)) then
 			maze:Log(format("[MAZE ERROR]player(%s) failed to enter maze(%d)", mate:GetName(), maze.m_Id))
-			player:Msg2Player(format("ÕæÊÇ¶Ô²»Æğ£¬×é¶Ó³ÉÔ±(%s)ÔİÊ±²»ÄÜ½øÈë½£Ú£.", mate:GetName()))
+			player:Msg2Player(format("ThËt sù xin lçi, thµnh viªn ®éi ngò [%s] t¹m thêi kh«ng thÓ ®I vµo KiÕm Gia.", mate:GetName()))
 		else
-			mate:Msg2Player("ÄãºÍÄãµÄ¶ÓÎéÒÑ½øÈë½£Ú££¬¿ªÊ¼ÑµÁ·.")
+			mate:Msg2Player("Ng­¬i vµ ®éi ngò cña ng­¬i ®· ®i vµo KiÕm Gia, b¾t ®Çu huÊn luyÖn.")
 			AddStatDataPlayerEnterMazeCount(1)
 			MazePermission:ReduceLeftCount(mate)
 		end
@@ -187,22 +187,22 @@ end
 function NpcXiaozhuzhu:OnAnswer(player, sel)
 	if (sel == 1) then
 		player:Describe(
-			"120¼¶ÒÔÉÏ6-8ÈË×é¶Ó£¬Ã¿Ğ¡Ê±µÄÇ°ÈıÊ®·ÖÖÓ¿ÉÒÔµ½ÎÒÕâÀï±¨Ãû£¬±¨Ãûºó½øÈë¸±±¾¡£½øÈë¸±±¾ºó£¬Äã½«»á±»×ªµ½½£Ú£µÄ·¿¼äÄÚ£¬Ö»ĞèÒªÍê³É·¿¼äÄÚµÄÈÎÎñ£¬ÄãºÍ×é¶Ó½«¼ÌĞø²Î¼Ó½ÓÏÂÀ´µÄ·¿¼ä£¬ÄÜ³É¹¦½øÈë×îºó·¿¼äµÄ¸ßÊÖ£¬¿ÉÒÔ¼ûµ½ÓñÁúÉ½×¯×¯Ö÷ºÍ»ñµÃ×îºóÊÔÁ¶×Ê¸ñ¡£Èç¹ûÔÚ½£Ú£·¢ÉúÊÂ¼şµÄ·¿¼äÄÚÕ½¶·ÊÜÖØÉË£¬Äã¿ÉÒÔµ½Íò»¨³ØÖÎÁÆ£¬ÖÎºÃºó¿ÉÒÔ·µ»Ø×é¶ÓÕıÔÚ½øĞĞÕ½¶·µÄ·¿¼ä¡£Ã¿ÈËÃ¿´Î²Î¼Ó½«ÓĞ3´Î»ú»á½øÈëÍò»¨³ØÁÆÉË¡£Ã¿´Î²Î¼Ó¸±±¾µÄ×î¶àÊ±¼äÎª30·ÖÖÓ¡£×£ÄãĞÒÔË¡£",
+			"Tæ ®éi tõ 6-8 ng­êi cÊp 120 trë lªn, vµo ®Çu mçi giê vµ tr­íc 30 phót cã thÓ ®Õn chç cña ta ®Ó b¸o danh, sau khi b¸o danh tiÕn vµo phã b¶n. Sau khi tiÕn vµo phã b¶n ng­¬i sÏ ®­îc chuyÓn ®Õn mét c¨n phßng trong KiÕm Gia, chØ cÇn hoµn thµnh sù kiÖn cña c¨n phßng nµy, ng­¬i vµ tæ ®éi cña ng­¬i sÏ tiÕp tôc tham gia vµo mét c¨n phßng tiÕp theo, nh÷ng cao thñ cã thÓ thµnh c«ng ®i vµo c¨n phßng cuèi cïng th× cã thÓ gÆp ®­îc trang chñ cña Ngäc Long S¬n Trang vµ nhËn ®­îc t­ c¸ch thİ luyÖn cuèi cïng. NÕu nh­ trong lóc chiÕn ®Êu ë trong c¨n phßng ph¸t sinh sù kiÖn cña KiÕm Gia mµ bŞ träng th­¬ng, ng­¬I cã thÓ ®Õn V¹n Hoa Tr× ®Ó trŞ th­¬ng, sau khi trŞ th­¬ng thµnh c«ng sÏ ®­îc quay trë l¹i trong c¨n phßng ®· tong ®­îc v­ît qua tr­íc ®ã, ®­¬ng nhiªn ng­¬i còng cã thÓ sö dông Phôc SŞnh Phï cã ë trªn Kú Tr©n C¸c ®Ó quay trë l¹i c¨n phßng mµ tæ ®éi ng­¬i ®ang chiÕn ®Êu ®Ó tiÕp tôc t¸c chiÕn. Mçi ng­êi mçi lÇn tham gia phã b¶n sÏ cã 3 lÇn c¬ héi ®i vµo vµo V¹n Hoa Tr× ®Ó trŞ th­¬ng. Mçi lÇn tham gia phã b¶n nhiÒu nhÊt lµ 30 phót. Chóc ng­¬i may m¾n",
 			1,
 			"BiÕt råi/Cancel")
 	elseif (sel == 2) then	
 		if (player:IsCaptain() == 0) then
-			player:Say("Ö»ÓĞ¶Ó³¤²ÅÄÜÒıµ¼¶ÓÎé½øÈë½£Ú£")
+			player:Say("ChØ cã ®éi tr­ëng míi cã thÓ dÉn d¾t ®éi ngò ®i vµo KiÕm Gia")
 			return
 		elseif (self:CheckTeam(player) == 0) then
 			return
 		elseif (MazeList:CheckCount() == 0) then
-			player:Say("´ò¿ªÃÔ¹¬µÄÊıÁ¿ÒÑ´ïÉÏÏŞ£¬ÇëÉÔºòÔÙÊÔ.")
+			player:Say("Sè l­¬ng më mª cung ®· ®Õn giíi h¹n, xin h·y thö l¹i sau.")
 			return
 		end
 		local maze = Maze:New()
 		if (not maze) then
-			player:Say("Äã²Î¼ÓÃÔ¹¬ÒÑ¹»ÁË£¬ÇëÉÔºòÔÙÊÔ.")
+			player:Say("Ng­êi tham gia mª cung ®· ®Çy, xin h·y thö l¹i sau.")
 			return
 		end
 		maze:SetCaptainName(player:GetName())
@@ -210,9 +210,9 @@ function NpcXiaozhuzhu:OnAnswer(player, sel)
 	elseif (sel == 3) then
 		local count = MazePermission:QueryLeftCount(player)
 		if (count <= 0) then
-			player:Say("½ñÌìÄã²»ÄÜ½øÈë½£Ú£ÊÔÁ¶ÁË.")
+			player:Say("H«m nay ng­¬i kh«ng thÓ ®i vµo KiÕm Gia tiÕn hµnh thİ luyÖn n÷a.")
 		else
-			player:Say(format("½ñÌì½øÈë½£Ú£µÄÀÛ¼Æ´ÎÊıÎª<color=red>%d<color> ´Î.", count))
+			player:Say(format("H«m nay tİch lòy sè lÇn ®i vµo KiÕm Gia lµ<color=red>%d<color> lÇn.", count))
 		end
 	end
 end
@@ -251,15 +251,15 @@ function NpcXiaozhuzhu:VnSetJoinTotal(mate)
 	PlayerIndex = nOldPlayer
 end
 function LoadNpc()
-	DlgNpcManager:AddNpc("Öì¾ü", 1614, 949, 49344, 102720, NpcZhoujun)
-	DlgNpcManager:AddNpc("ÌÆÓî", 1615, 949, 49408, 101408)
-	DlgNpcManager:AddNpc("Íõ±ø", 1616, 949, 49152, 101856)
-	DlgNpcManager:AddNpc("ÓÚ¾»", 1617, 949, 49536, 100576)
-	DlgNpcManager:AddNpc("ÕÅÕÑ", 1618, 949, 49760, 100576)
-	DlgNpcManager:AddNpc("¶­Ö¾", 1619, 949, 49760, 103488)
-	DlgNpcManager:AddNpc("Ğ¡ÖéÖé", 1620, 949, 50880, 100736, NpcXiaozhuzhu)
-	DlgNpcManager:AddNpc("ÁøÒ©Ê¦", 1621, 949, 50496, 100608, NpcLiuyaoshi)
-	DlgNpcManager:AddNpc("³µ·ò", 238, 949, 51264, 101984, NpcChefu)
+	DlgNpcManager:AddNpc("Chu Qu©n", 1614, 949, 49344, 102720, NpcZhoujun)
+	DlgNpcManager:AddNpc("§­êng Vò", 1615, 949, 49408, 101408)
+	DlgNpcManager:AddNpc("V­¬ng Binh", 1616, 949, 49152, 101856)
+	DlgNpcManager:AddNpc("Vu KhiÕt", 1617, 949, 49536, 100576)
+	DlgNpcManager:AddNpc("Tr­¬ng Chiªu", 1618, 949, 49760, 100576)
+	DlgNpcManager:AddNpc("§æng Chİ", 1619, 949, 49760, 103488)
+	DlgNpcManager:AddNpc("TiÓu Chu Chu.", 1620, 949, 50880, 100736, NpcXiaozhuzhu)
+	DlgNpcManager:AddNpc("LiÔu D­îc S­", 1621, 949, 50496, 100608, NpcLiuyaoshi)
+	DlgNpcManager:AddNpc("Xa phu", 238, 949, 51264, 101984, NpcChefu)
 end
 
 AutoFunctions:Add(LoadNpc)

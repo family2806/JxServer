@@ -27,17 +27,17 @@ function main(nItemIdx)
 			end;
 		end;
 		if (nb == 0) then
-			Msg2Player("½ÚÈÕÑÌ»¨¿ÉÒÔÔÚ7´ó³ÇÊĞ£¬8¸öĞÂÊÖ´åÒ»¼¶4¸ö·ç¾°ÇøÊ¹ÓÃ");
+			Msg2Player("Ph¸o hoa TÕt chØ cã thÓ ®èt t¹i 7 ®¹i thµnh thŞ, 8 t©n thñ th«n vµ 4 khu vùc ng¾m c¶nh");
 			return 1;
 		end;
 		SetTask(1593, nw1);
 		SetTask(1594, nx1);
 		SetTask(1595, ny1);
-		Msg2Player("ÄúÒÑµãÁËÒ»¸ö½ÚÈÕÑÌ»¨!");
+		Msg2Player("B¹n ®· ®èt mét ph¸o hoa TÕt!");
 		CastSkill(TB_XINNIANLIHUA_SKILL[random(1,2)],1);
 		TM_SetTimer(5 * 18,TIMER_XINNIANLIHUA,60,0);	-- ÏÂÏßÏûÊ§
 	else
-		Msg2Player("ÄúÒÑµã·Å½ÚÈÕÑÌ»¨£¬ÇëµÈÑÌ»¨ÉÕÍêºó²ÅÄÜ¼ÌĞø!");
+		Msg2Player("B¹n ®· ®èt mét ph¸o hoa TÕt, xin ®îi ph¸o hoa ch¸y hÕt míi cã thÓ tiÕp tôc!");
 		return 1;
 	end;
 end;

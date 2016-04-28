@@ -4,15 +4,15 @@ Include("\\script\\item\\shengdan_jieri\\200811\\head.lua");
 
 tb_redbox_item	= 
 {
-	{szName="Ê¥µ®ÐÇÐÇ",	tbProp={6, 1, 1847, 1, 0, 0}, nRate = 100, nExpiredTime = 20090105},
+	{szName="Ng«i Sao Gi¸ng Sinh",	tbProp={6, 1, 1847, 1, 0, 0}, nRate = 100, nExpiredTime = 20090105},
 };
 
 function main()
 	if (CalcFreeItemCellCount() < 1) then
-		Msg2Player("´óÏÀµÄ×°±¸²»×ã¿ÕÎ»!");
+		Msg2Player("Hµnh trang cña ®¹i hiÖp kh«ng ®ñ chç trèng!");
 		return 1;
 	end
-	tbAwardTemplet:GiveAwardByList(tb_redbox_item, "2008Ê¥µ®»î¶¯-ºìÉ«ÀñºÐ");
+	tbAwardTemplet:GiveAwardByList(tb_redbox_item, "Ho¹t ®éng gi¸ng sinh 2008_Hép Quµ §á");
 end
 
 function getredbox()
@@ -21,10 +21,10 @@ function getredbox()
 		
 		if (ndate < 20090105) then
 			if (CalcFreeItemCellCount() < 1) then
-				Msg2Player("´óÏÀµÄ×°±¸ÒÑÂú.");
+				Msg2Player("Hµnh trang cña ®¹i hiÖp ®· ®Çy.");
 			else
 				
-				local _tbItem = {szName="ºìÉ«ÀñºÐ", tbProp={6, 1, 1842, 1, 0, 0}, nExpiredTime = 20090105}
+				local _tbItem = {szName="Hép Quµ §á", tbProp={6, 1, 1842, 1, 0, 0}, nExpiredTime = 20090105}
 				
 				tbAwardTemplet:GiveAwardByList(_tbItem, "shengdan0811 tuoguan");
 			end

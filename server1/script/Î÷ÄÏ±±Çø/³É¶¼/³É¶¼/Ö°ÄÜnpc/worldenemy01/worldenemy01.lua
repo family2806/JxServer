@@ -8,10 +8,10 @@ function OnDeath()
 		if (Uworld11 < 10) then					-- µ½´ïÊ®Ö»ºó²»ÔÙ¼ÆÊý
 			Uworld11 = Uworld11 + 1
 			SetTask(11,Uworld11)
-			Msg2Player("ÎÒÒÑÉ±ËÀÒ»Ö»ÈÅÂÒ´åÃñµÄÒ°ÖíÁË£¬Ä¿Ç°Ò»ÆðÉ±ÁË"..(Uworld11 - 1).."Ö» ")
+			Msg2Player("Ta ®· giÕt chÕt 1 con heo rõng chuyªn quÊy nhiÔu d©n lµng, tr­íc m¾t tæng céng ®· giÕt chÕt "..(Uworld11 - 1).."Con ")
 		else
 			SetTask(11,100)
-			Msg2Player("ÎÒÒÑ¾­É±ÁË10Ö»Ò°Öí£¬¿ÉÒÔ»ØÈ¥¸´ÃüÁË")
+			Msg2Player("Ta ®· giÕt chÕt 10 con heo rõng, cã thÓ trë vÒ phôc mÖnh ®­îc råi ")
 		end
 	end
 end;

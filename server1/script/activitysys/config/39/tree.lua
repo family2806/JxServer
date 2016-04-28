@@ -5,7 +5,7 @@ Include("\\script\\lib\\progressbar.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
 
 local _OnBreak = function()
-	Msg2Player("ÊÕ¼¯¼ä¶Ï")
+	Msg2Player("Thu thËp ®øt ®o¹n")
 end
 
 local _GetAward = function(nNpcIdx, dwNpcId, nFlag)
@@ -13,7 +13,7 @@ local _GetAward = function(nNpcIdx, dwNpcId, nFlag)
 		return 0
 	end	
 	
-	if PlayerFunLib:CheckFreeBagCell(1,"×°±¸²»×ã") ~= 1 then
+	if PlayerFunLib:CheckFreeBagCell(1,"Hµnh trang kh«ng ®ñ") ~= 1 then
 		return 0
 	end
 	
@@ -24,16 +24,16 @@ local _GetAward = function(nNpcIdx, dwNpcId, nFlag)
 	local tbAward = {}
 	local szAction = "get"
 	if nFlag == 0 then
---By NgaVN: ÏãÃµ¹åºÍºì¶¹¹û»ñµÃÊ±ÊÇ±»ËøÎïÆ·.	
-		tbAward = {{szName = "D?H­¬ng Hoa Hång", tbProp = {6, 1, 3113, 1, 0, 0}, nBindState = -2, nExpiredTime = 20120301, nCount = nAwardCount,},}
-		szAction = format("%s %s",szAction, "ÒìÏãÃµ¹å")
+--By NgaVN: ÏãÃµ¹åºÍQu¶ §Ëu Hång»ñµÃÊ±ÊÇ±»ËøÎïÆ·.	
+		tbAward = {{szName = "DÞ H­¬ng Hoa Hång", tbProp = {6, 1, 3113, 1, 0, 0}, nBindState = -2, nExpiredTime = 20120301, nCount = nAwardCount,},}
+		szAction = format("%s %s",szAction, "DÞ H­¬ng Hoa Hång")
 	else
-		tbAward = {{szName = "Qu?§Ëu Hång", tbProp = {6, 1, 3114, 1, 0, 0}, nBindState = -2, nExpiredTime = 20120301, nCount = nAwardCount,},}
-		szAction = format("%s %s",szAction, "ºì¶¹¹û")
+		tbAward = {{szName = "Qu¶ §Ëu Hång", tbProp = {6, 1, 3114, 1, 0, 0}, nBindState = -2, nExpiredTime = 20120301, nCount = nAwardCount,},}
+		szAction = format("%s %s",szAction, "Qu¶ §Ëu Hång")
 	end
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, szAction})
 	AddNpcSkillState(nNpcIdx, 662,1, 1, 0)	-- ¹Ø±Õ¸ÐÌ¾ºÅ
-	Msg2Player("ÊÕ¼¯½áÊø!")
+	Msg2Player("Thu thËp kÕt thóc!")
 end 
 
 function CheckPlantTree(nNpcIndex)
@@ -52,13 +52,13 @@ function CheckPlantTree(nNpcIndex)
 	end
 	
 	local szCurPlayerName = GetName()
-	if szCurPlayerName ~= tbTreeInfo.szOwer and tbTreeInfo.szTreeType == "ºì¶¹" then
+	if szCurPlayerName ~= tbTreeInfo.szOwer and tbTreeInfo.szTreeType == "§Ëu Hång" then
 		tbValenTree:ShowRandomDialog(nNpcIndex)
 		return
-	elseif tbTreeInfo.szTreeType == "Ãµ¹åÖÖ×Ó" then
+	elseif tbTreeInfo.szTreeType == "H¹t Gièng Hoa Hång" then
 		local nTeamSize = GetTeamSize()
 		if nTeamSize < 2 then
-			Talk(1, "", "ÇëÄãµÄÓÐÔµÈË»òÕßÅäÅ¼Ò»Æð×é¶ÓÈ»ºóÀ´!")
+			Talk(1, "", "Xin h·y mêi ng­êi h÷u duyªn víi ng­¬i hoÆc phèi ngÉu cïng nhau tæ ®éi råi h·y ®Õn!")
 			return 
 		end
 		
@@ -99,10 +99,10 @@ function main()
 		if szCurPlayerName == tbTreeInfo.szOwer then
 			local nAward = GetNpcParam(nNpcIndex, ValenAct_TSK_AWARD)
 			if nAward == 1 then
-				Talk(1, "", "¸ÃÊ÷ÒÑ¾­Áì½±!")
+				Talk(1, "", "C©y nµy ®· ®­îc nhËn th­ëng!")
 				return
 			else
-			Msg2Player("¿ªÊ¼²ÉÕª")
+			Msg2Player("B¾t ®Çu thu ho¹ch")
 			local nFlag = 0
 			if tbTreeInfo.szWork == tbTreeInfo.szOwer then
 				nFlag = 1
@@ -110,7 +110,7 @@ function main()
 			tbProgressBar:OpenByConfig(1, %_GetAward, {nNpcIndex, GetNpcId(nNpcIndex), nFlag}, %_OnBreak)
 			end
 		else
-			Talk(1, "", "Äã²»ÊÇ¸ÃÊ÷µÄÖ÷ÈË!")
+			Talk(1, "", "Ng­¬i kh«ng ph¶i chñ nh©n cña c©y nµy!")
 		end
 		return
 	end
@@ -124,7 +124,7 @@ function main()
 		--nothing
 	elseif szCurPlayerName == tbTreeInfo.szOwer then
 		if 1 <= nTskState and nTskState <= 2 then
-			Talk(1, "", "ÇëÄãµÄÓÐÔµÈË»òÕßÅäÅ¼À´Íê³ÉÈÎÎñ")
+			Talk(1, "", "Xin h·y mêi ng­êi cã duyªn hoÆc phèi ngÉu cña ng­¬i ®Õn hoµn thµnh nhiÖm vô!")
 		else
 			tbValenTree:ShowRandomDialog(nNpcIndex)
 		end
@@ -136,7 +136,7 @@ function main()
 		AddNpcSkillState(nNpcIndex, 662,1, 1, 0) -- ¹Ø±Õ¸ÐÌ¾ºÅ
 		local nRandTime = random(5, 15)
 		local nTaskId = random(1, nTreeState+1)
-		local szInfo = format("ÇëÔÚ%sÊ±¼ä%s", nRandTime, ValenAct_Op[nTaskId])
+		local szInfo = format("Xin h·y t¹i %sgi©y sau%s", nRandTime, ValenAct_Op[nTaskId])
 		SetNpcParam(nNpcIndex, ValenAct_TSK_ID_AND_RANDOMTIME, nTaskId*100+nRandTime)
 		SetNpcParam(nNpcIndex, ValenAct_TSK_ACCTIME, GetCurServerTime())
 		SetNpcParam(nNpcIndex, ValenAct_TSK_STATE, nTskState+1)
@@ -146,11 +146,11 @@ function main()
 	elseif nTskState == 2 then
 		local nTaskInfo = GetNpcParam(nNpcIndex, ValenAct_TSK_ID_AND_RANDOMTIME)
 		local nRandTime, nTaskId = mod(nTaskInfo, 100), floor(nTaskInfo/100)
-		local szTitle = format("<npc>Ä¿Ç°%s?", ValenAct_Op[nTaskId])
+		local szTitle = format("<npc>hiÖn t¹i%s?", ValenAct_Op[nTaskId])
 		local nTskAccTime = GetNpcParam(nNpcIndex, ValenAct_TSK_ACCTIME)
 		local tbOpt = {}
-		tinsert(tbOpt, {"È·ÈÏ", ValenTaskSure, {nNpcIndex, GetNpcId(nNpcIndex), nRandTime, nTskAccTime}})
-		tinsert(tbOpt, {"ÎÒÕýÔÚÕâµÈ"})
+		tinsert(tbOpt, {"X¸c nhËn", ValenTaskSure, {nNpcIndex, GetNpcId(nNpcIndex), nRandTime, nTskAccTime}})
+		tinsert(tbOpt, {"Ta ®ang ®îi ®©y"})
 		CreateNewSayEx(szTitle, tbOpt)
 	else
 		tbValenTree:ShowRandomDialog(nNpcIndex)
@@ -198,7 +198,7 @@ end
 function ChangeValenTreeNpc(nOldNpcIndex, nFeatureId, nTreeState)
 	local tbTreeInfo = tbValenTree:GetTreeInfo(nOldNpcIndex)
 	local szPlayerName = tbTreeInfo.szOwer
-	local szNpcName = format("%s µÄ%s", ValenAct_tbConfig[tbTreeInfo.szTreeType].tbName[nTreeState], szPlayerName)
+	local szNpcName = format("%s cña %s", ValenAct_tbConfig[tbTreeInfo.szTreeType].tbName[nTreeState], szPlayerName)
 	local nX32, nY32, nMapIndex = GetNpcPos(nOldNpcIndex)
 	local nResultNpcIndex = nil
 	if nMapIndex and nMapIndex >= 0 then

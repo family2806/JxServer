@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("Œ‰µ±…Ω",  0);
+Say("V‚ ßang s¨n ",  0);
 
 end;

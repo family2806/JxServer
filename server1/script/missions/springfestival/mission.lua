@@ -1,6 +1,6 @@
 Include([[\script\missions\springfestival\head.lua]]);
 Include([[\script\missions\libfestival\mission.lua]]);
-STRGLOBALNEWS = "¸÷Î»Çı¸Ï30ËêÈËµÄÓ¢ĞÛ»ØÀ´ÁË.";
+STRGLOBALNEWS = "C¸c vŞ anh hïng ®uæi ¤ng ba m­¬i ®· quay vÒ råi.";
 
 function initmission_add()
 
@@ -33,7 +33,7 @@ function festival_getsz(tabMsg, nMsgCount, tabPlayer, nGroupId)
 	for i=1,nRankCount do
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1];
-		    tabMsg[i + nMsgCount] = "<color=orange>µÚ"..i.." "..GetName()..", ÕÒµ½"..CO_MOUSENAME..tabPlayer[i][2].."´Î";
+		    tabMsg[i + nMsgCount] = "<color=orange>thø "..i.." "..GetName()..", t×m ®­îc"..CO_MOUSENAME..tabPlayer[i][2].."lÇn";
 		end
 	end
 	nMsgCount = getn(tabMsg);
@@ -46,7 +46,7 @@ end;
 function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
     nCount = getn(tabPlayer);
     local i, j;
-    --ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
+    --ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃûlÇnµÄÏÈºó
 	for i = 1, nCount do
 		PlayerIndex = tabPlayer[i][1];
 		SetTask(TK_CO_RANK, i);
@@ -54,9 +54,9 @@ function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
 		    Msg2Player(tabMsg[j]);
 		end;
 		if (GetTask(TK_CO_GROUPID) > CO_SMALLMAPCOUNT) then
-   	    	Msg2Player("ÄãÕÒµ½"..CO_MOUSENAME.."µÚ<color=yellow>"..i.."<color> ´Î, ¿ÉÒÔµ½ <color=yellow>ÑÃÃÅ²îÒÛ<color> Áì½±!");
+   	    	Msg2Player("Ng­¬i t×m thÊy"..CO_MOUSENAME.."lÇn thø <color=yellow>"..i.."<color> lÇn, cã thÓ ®Õn <color=yellow>Sai dŞch Nha m«n<color> nhËn phÇn th­ëng!");
    	    else
-   	    	Msg2Player("Çı¸Ï30ËêÈËµÚ<color=yellow>"..i.."<color> ´Î, ¿ÉÒÔµ½ <color=yellow>ÑÃÃÅ²îÒÛ<color> Áì½±!");
+   	    	Msg2Player("®uæi ¤ng ba m­¬i lÇn thø <color=yellow>"..i.."<color> lÇn, cã thÓ ®Õn <color=yellow>Sai dŞch Nha m«n<color> nhËn phÇn th­ëng!");
    	    end;
 	end;
 end;

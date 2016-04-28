@@ -6,6 +6,6 @@
 function OnDeath()
 	UTask_tr = GetTask(4);
 	if (UTask_tr == 40*256+20) then	
-		Msg2Player("ÏûÃğĞÕÁÎµÄ´Ì¿Í")
+		Msg2Player("B¾n chÕt mét tªn hä Liªu kh¸c thÕ th©n ")
 	end
 end;

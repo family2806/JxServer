@@ -6,7 +6,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 function main(nItemIndex)
 	
 	if tbRefiningIron:IsCarryOn() ~= 1 then
-		Msg2Player("ÒòÎª°Ú·ÅÊ±¼ä¾ÃÁËº¬½ğºĞ»µÁË");
+		Msg2Player("Hµm Kim H¹p bŞ h­ bëi v× l­u gi÷ qu¸ l©u");
 		return 0;
 	end
 	
@@ -17,18 +17,18 @@ function main(nItemIndex)
 	end	
 	
 	if CalcFreeItemCellCount() < 2 then
-		CreateTaskSay({"ÇëÕûÀí±³°ü!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"Xin h·y s¾p xÕp l¹i hµnh trang!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
 	-- ÅĞ¶ÏÈÎÎñ±äÁ¿
 	if tbRefiningIron.tbTaskGroup:GetTask(tbRefiningIron.tbTaskLimit[nLevel][1]) >= tbRefiningIron.tbTaskLimit[nLevel][2] then
-		CreateTaskSay({"ÒÑ¾­³¬¹ıÁËÔÊĞíÊ¹ÓÃµÄÊıÁ¿!",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"§· v­ît qu¸ sè lÇn sö dông cho phĞp!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	tbRefiningIron.tbTaskGroup:AddTask(tbRefiningIron.tbTaskLimit[nLevel][1], 1);
 
 	-- ·¢½±Æ·
-	tbAwardTemplet:GiveAwardByList(tbRefiningIron.tbAward[nLevel], "×£ºØÔ½ÄÏ½â·Å»î¶¯£¬Ê¹ÓÃ¾«Á¶Ìú");
+	tbAwardTemplet:GiveAwardByList(tbRefiningIron.tbAward[nLevel], "Ho¹t ®éng mõng gi¶i phãng viÖt nam, sö dông thĞp tinh luyÖn");
 	return 0;
 end

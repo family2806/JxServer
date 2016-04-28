@@ -5,5 +5,5 @@ function main()
 	if (GetTask(97) < 1) then		-- Ö»ÓÐÒÔÇ°Ã»Âò¹ýÂí²ÅÐÐ
 		SetTask(97,1)
 	end
-	Talk(3,"","¹§Ï²ÏÀ¿Í³ÉÁ¢°ï»á£¬¿ìÈ¥ÊµÏÖ×Ô¼ºµÄ±§¸º°É!","µ«Ò²Òª¼Ç×¡Ò»µã£ºÄãÓÐÁìµ¼ÄÜÁ¦ºÍ½­ºþÍþÐÅ¡£ÔÚ3ÈÕÖ®ÄÚÒªÕÒµ½16¸öÓÐ¹²Í¬Ö¾ÏòµÄÈË°ïÖú¡£²»È»µÄ»°½­ºþÉÏ²»»á³ÐÈÏÄãµÄ°ï»á¡£Õâ3Ìì¿ÉÒÔ¿´×ö¿¼ÑéÆÚ'","ÄãµÄ°ï»á×îÉÙÓÐ16ÈËÖ®ºó£¬½­ºþÉÏ¾Í»á½øÐÐ¿¼Ñé¡£Èç¹û3ÌìÖ®ºó»¹²»¹»16ÈËµÄ»°½­ºþ¾Í²»»á³ÐÈÏÕâ¸ö°ï»á")
+	Talk(3,"","Chóc mõng hÞªp kh¸ch thµnh lËp bang héi, h·y thùc hiÖn hoµi b·o cña b¶n th©n ®i!","Nh­ng còng cÇn nh¾c thªm mét chót: Ng­¬i ph¶i cã n¨ng lùc l·nh ®¹o vµ uy tÝn giang hå. Trong vßng 3 ngµy ph¶i t×m ®­îc 16 ng­êi cïng chÝ h­íng gióp ®ì. NÕu kh«ng trªn giang hå sÏ kh«ng thõa nhËn bang héi cña ng­¬i. Thêi h¹n 3 ngµy cã thÓ xem lµ 'Thêi kú kh¶o nghiÖm'","Sau khi bang héi cña ng­¬i ®­îc Ýt nhÊt 16 ng­êi, trªn giang hå sÏ tiÕn hµnh kh¶o nghiÖm. NÕu sau 3 ngµy vÉn ch­a ®ñ 16 ng­êi th× giang hå vÉn ch­a thõa nhËn bang héi nµy")
 end

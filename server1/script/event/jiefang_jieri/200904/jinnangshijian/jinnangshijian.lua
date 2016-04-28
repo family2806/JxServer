@@ -4,23 +4,23 @@ function jf0904_getjinnangshijian()
 	jf0904_InitTaskctrl();
 	
 	if (GetTask(jf0904_TSK_jinnangsj) >= 1) then
-		Say("ÄãÒÑ¾­ÁìÈ¡ÁË½õÄÒÊÂ¼ş.", 0);
+		Say("Ng­¬i ®· nhËn vËt phÈm cÈm nang sù kiÖn råi mµ.", 0);
 		return
 	end
 	
 	if (CalcFreeItemCellCount() < 1) then
-		Say("Àñ¹Ù: ±³°ü¿Õ¼ä²»¹»£¬ÇëÕûÀí³ö¿ÕÎ»£¨×îÉÙ1¸ñ£©!", 0);
+		Say("LÔ Quan: Hµnh trang kh«ng ®ñ chç trèng, h·y ®Ó thõa İt nhÊt 1 chç trèng!", 0);
 		return
 	end
 	
 	if (GetLevel() < 50 or GetExtPoint(0) < 1) then
-		Say("´óÏÀµÄ¼¶±ğ²»¹»50¼¶»òÕßÎ´³äÖµÒò´ËÎŞ·¨ÁìÈ¡½õÄÒÊÂ¼ş.", 0);
+		Say("CÊp bËc cña ®¹i hiÖp kh«ng ®ñ 50 hoÆc ch­a n¹p thÎ nªn kh«ng thÓ nhËn ®­îc cÈm nang sù kiÖn.", 0);
 		return
 	end
 	
 	local nIndex = AddItem(6, 1, 1833, 1, 0, 0);
 	ITEM_SetExpiredTime(nIndex, jf0904_item_expiredtime);
 	SyncItem(nIndex);
-	Say("Àñ¹Ù: ÇëÁìÈ¡!", 0);
+	Say("LÔ Quan: Xin nhËn lÊy!", 0);
 	SetTask(jf0904_TSK_jinnangsj, 1);
 end

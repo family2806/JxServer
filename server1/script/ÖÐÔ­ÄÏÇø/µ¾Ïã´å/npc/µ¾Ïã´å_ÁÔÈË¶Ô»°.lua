@@ -6,20 +6,20 @@
 function main()
 	UTask_world38=GetTask(66)
 	if (UTask_world38==2) then
-		Say("ÎÒÃü²»´í£¬×î½üÉÏÉ½´òµ½Ò»Ö»ÃÍ»¢£¬»¢¹ÇÊÇ¹óÖØÒ©²Ä£¬ÎÒÏëÂò150Á½.", 2 ,"Âò/yes","²»Âò/no")
+		Say("Sè cña ta gÇn ®©y kh«ng tÖ, c¸ch ®©y kh«ng l©u lªn nói s¨n ®­îc 1 con m·nh hæ, x­¬ng con hæ nµy cã thÓ lµ d­îc liÖu quı, ta muèn 150 l­îng b¹c.", 2 ,"Mua/yes","Kh«ng mua/no")
 	else	
-		Say("ÔÚÕâÀï´òÁÔµÄÈË£¬ÎÒÊÇµÚ¶ş£¬¾ÍÃ»ÈËµÚÒ»! ",0)	
+		Say("Trong sè nh÷ng ng­êi ®i s¨n ë vïng nµy, ta x­ng thø hai kh«ng ai d¸m x­ng thø nhÊt! ",0)	
 	end
 end;
 
 function yes()
 	if (GetCash() < 150) then
-		Talk(1,"","µÈÓĞÇ®ÁË£¬ÄãÀ´ÕÒÎÒ!")
+		Talk(1,"","§îi cã tiÒn råi ng­¬i h·y ®Õn t×m ta!")
 	else
 		Pay(150)
 		AddEventItem(185)
-		Msg2Player("´ÓÁÔÈË´¦Âò»¢¹Ç")
-		AddNote("´ÓÁÔÈË´¦Âò»¢¹Ç")
+		Msg2Player("Tõ chç thî s¨n mua x­¬ng Hæ. ")
+		AddNote("Tõ chç thî s¨n mua x­¬ng Hæ. ")
 	end
 end;
 

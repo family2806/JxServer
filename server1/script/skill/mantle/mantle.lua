@@ -27,10 +27,10 @@ SKILLS=
 			function(nLevel)
 				
 				local nPercent = 20+(nLevel-1) * 5	
-				return format("ÉúÃüµÍÓÚ25%%µÄË²¼äÓĞ<color=orange>%d%%<color>µÄ¸ÅÂÊ×Ô¶¯Ê¹ÓÃ<color=orange>%d<color>¼¶[<color=orange>%s<color>]\n",
+				return format("Sinh lùc thÊp h¬n so víi thêi gian dŞch chuyÓn tøc thêi 25%% <color=orange>%d%%<color>cã sö dông x¸c suÊt tù ®éng<color=orange>%d<color>cÊp[<color=orange>%s<color>]\n",
 					nPercent,
 					nLevel,
-					"ÍêÈ«¸ñµ²")
+					"X¸c suÊt hãa gi¶I s¸t th­¬ng hoµn toµn")
 				 
 			end,	
 		
@@ -74,10 +74,10 @@ SKILLS=
 			function(nLevel)
 				
 				local nPercent = 20+(nLevel-1) * 5	
-				return format("ÉúÃüµÍÓÚ25%%µÄË²¼äÓĞ<color=orange>%d%%<color>µÄ¸ÅÂÊ×Ô¶¯Ê¹ÓÃ<color=orange>%d<color>¼¶[<color=orange>%s<color>]\n",
+				return format("Sinh lùc thÊp h¬n so víi thêi gian dŞch chuyÓn tøc thêi 25%% <color=orange>%d%%<color>cã sö dông x¸c suÊt tù ®éng<color=orange>%d<color>cÊp[<color=orange>%s<color>]\n",
 					nPercent,
 					nLevel,
-					"ÎŞÏŞË²ÒÆ")
+					"DŞch chuyÓn tøc thêi v« h¹n")
 				 
 			end,
 	},
@@ -103,10 +103,10 @@ SKILLS=
 		skill_desc = function(nLevel)
 				
 				local nPercent = 20+(nLevel-1) * 5	
-				return format("ÉúÃüµÍÓÚ25%%µÄË²¼äÓĞ<color=orange>%d%%<color>µÄ¸ÅÂÊ×Ô¶¯Ê¹ÓÃ<color=orange>%d<color>¼¶[<color=orange>%s<color>]\n",
+				return format("Sinh lùc thÊp h¬n so víi thêi gian dŞch chuyÓn tøc thêi 25%% <color=orange>%d%%<color>cã sö dông x¸c suÊt tù ®éng<color=orange>%d<color>cÊp[<color=orange>%s<color>]\n",
 					nPercent,
 					nLevel,
-					"¾ø¶ÔÖØ»÷")
+					"Träng kİch tuyÖt ®èi")
 				 
 			end,
 	},

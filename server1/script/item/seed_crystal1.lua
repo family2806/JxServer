@@ -1,5 +1,5 @@
 function main()
-	strTalk = "Ë®¾§ÖÖ×ÓÒÑ¾­·¢Ã¹ÁË£¬Õæ¿ÉÏ§¡£";
+	strTalk = "H¹t Thñy Tinh bŞ h­, ®¸ng tiÕc thËt!";
 	Msg2Player(strTalk);
 	Talk(1, "", strTalk);
 end

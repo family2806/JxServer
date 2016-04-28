@@ -32,42 +32,42 @@ tbVNG_Transport.tbPos =
 function tbVNG_Transport:Dialog(nCamp)
 	local tbSay = 
 		{
---			format("¹Ì¶¨Î»ÖÃ/#tbVNG_Transport:FixedPos(%d)", nCamp),
-			format("Å¼È»Î»ÖÃ/#tbVNG_Transport:RandomPos(%d)", nCamp),
+--			format("VŞ trİ cè ®Şnh/#tbVNG_Transport:FixedPos(%d)", nCamp),
+			format("VŞ trİ ngÉu nhiªn/#tbVNG_Transport:RandomPos(%d)", nCamp),
 		}
-	Say("ÇëÑ¡ÔñÎ»ÖÃ, ÎÒ½«ËÍÄãµ½ÄÇÀï", getn(tbSay), tbSay)
+	Say("H·y chän vŞ trİ, ta sÏ ®­a ng­¬i ®Õn ®ã", getn(tbSay), tbSay)
 end
 
 function tbVNG_Transport:FixedPos(nCamp)
 	local nWorld = GetWorldPos()
 	if tbVNG_Transport.tbPos[nCamp] == nil then
-		Msg2Player("·¢Éú´íÎó£¬²»ÄÜÈ·¶¨ÊÇËÎ»¹ÊÇ½ğ")
+		Msg2Player("§· cã lçi x¶y ra, kh«ng x¸c ®Şnh ®­îc Tèng hoÆc Kim")
 	end
 	if tbVNG_Transport.tbPos[nCamp][nWorld] == nil then
-		Msg2Player("µØÍ¼´íÎó®å")
+		Msg2Player("Sai b¶n ®å")
 	end
 	local tbPos = tbVNG_Transport.tbPos[nCamp][nWorld].tbFixedPos
 	if not tbPos then
-		Msg2Player("²»ÄÜÈ·¶¨×ø±ê£¬ÇëÖØÊÔ")
+		Msg2Player("Kh«ng x¸c ®Şnh ®­îc täa ®é, xin thö l¹i")
 	end
 	local tbDialog = {}
 	for i = 1, getn(tbPos) do
-		tinsert(tbDialog, format("V?tr?%d/#tbVNG_Transport:Transport(%d, %d)", i, tbPos[i][1], tbPos[i][2]))
+		tinsert(tbDialog, format("VŞ trİ %d/#tbVNG_Transport:Transport(%d, %d)", i, tbPos[i][1], tbPos[i][2]))
 	end
-	Say("ÇëÑ¡ÔñÎ»ÖÃ", getn(tbDialog), tbDialog)
+	Say("Xin chän vŞ trİ", getn(tbDialog), tbDialog)
 end
 
 function tbVNG_Transport:RandomPos(nCamp)
 	local nWorld = GetWorldPos()
 	if tbVNG_Transport.tbPos[nCamp] == nil then
-		Msg2Player("·¢ÉúÁË´íÎó£¬²»ÄÜÈ·¶¨ËÎ»¹ÊÇ½ğ")
+		Msg2Player("§· cã lçi x¶y ra, kh«ng x¸c ®Şnh ®­îc Tèng hoÆc Kim")
 	end
 	if tbVNG_Transport.tbPos[nCamp][nWorld] == nil then
-		Msg2Player("µØÍ¼´íÎó®å")
+		Msg2Player("Sai b¶n ®å")
 	end
 	local tbPos = tbVNG_Transport.tbPos[nCamp][nWorld].tbRandomPos
 	if not tbPos then
-		Msg2Player("²»ÄÜÈ·¶¨×ø±ê£¬ÇëÖØÊÔ")
+		Msg2Player("Kh«ng x¸c ®Şnh ®­îc täa ®é, xin thö l¹i")
 	end
 	local nIndex = random(1, getn(tbPos))
 	self:Transport(tbPos[nIndex][1], tbPos[nIndex][2])

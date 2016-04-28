@@ -85,7 +85,7 @@ G_ACTIVITY:UnRegisteItemScript(pItemScript.tbItem)
 local bTestCaseRet3 = TestItem(pItemScript.tbItem, -1)
 
 if bTestCaseRet1 == 1 and bTestCaseRet1 == 1 and bTestCaseRet3 == 1 then
-	print("ItemScript Test --------------- OK")
+	print("Chao mung ban den voi Jx Linux - Server khoi dong thanh cong - chuc ban choi game vui ve")
 else
-	print("ItemScript Test --------------- Fail", bTestCaseRet1, bTestCaseRet2, bTestCaseRet3)
+	print("Khoi dong server game bi loi", bTestCaseRet1, bTestCaseRet2, bTestCaseRet3)
 end

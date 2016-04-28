@@ -18,10 +18,10 @@
 function main(sel)
 firsttime = GetTask(139)
 num = GetTask(138)
-msg={	     "Äã³ÔÁËÌ«¶àµÄÊ²½õôÕ×Ó£¬ÒÑ¾­²»ÄÜ¼ÌĞø³ÔÁË£¡",
-	     "Äã»ñµÃ30000µã¾­ÑéÖµ£¡",
-	     "Äã¾õµÃºÜ±¥£¬ÒªµÈÒ»¶ÎÊ±¼ä²Å¿ÉÒÔ³ÔÊ²½õôÕ×Ó£¡",
-		 "Äã³ÔÁË×ã¹»¶àµÄôÕ×Ó£¬ÕâÒÑ¾­ÊÇ×îºóÒ»¸ö£¡"
+msg={	     "B¹n ®· ¨n rÊt nhiÒu b¸nh ch­ng, kh«ng thÓ ¨n thªm ®­îc n÷a ",
+	     "B¹n ®¹t ®­îc 30.000 ®iÓm kinh nghiÖm! ",
+	     "B¹n c¶m thÊy rÊt no, ph¶i ®îi thªm chót n÷a míi cã thÓ ¨n b¸nh ch­ng! ",
+		 "B¹n ®· ¨n rÊt nhiÒu b¸nh ch­ng, ®©y lµ c¸i cuèi cïng "
 	    }
 
 

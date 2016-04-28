@@ -25,7 +25,7 @@ function tbVNG_NPAH0211:AddDialog(tbDialog)
 	if self:isActive() ~= 1 then
 		return
 	end
-	tbDialog:AddOptEntry("ÁìÈ¡Ò»·½Ó¢ºÀ½±Àø",tbVNG_NPAH0211.main,{tbVNG_NPAH0211})
+	tbDialog:AddOptEntry("NhËn phÇn th­ëng NhÊt Ph­¬ng Anh Hµo",tbVNG_NPAH0211.main,{tbVNG_NPAH0211})
 end
 
 function tbVNG_NPAH0211:main()
@@ -44,13 +44,13 @@ function tbVNG_NPAH0211:main()
 	--§i¾«Á¶Ê¯Öµ
 	if tbAccount.nEnergy and tbAccount.nEnergy > 0 then
 		if tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_Energy) == 0 then
-			tbMainDialog:AddOptEntry("ÁìÈ¡¾«Á¶Ê¯Öµ",tbVNG_NPAH0211.GetEnergyAward,{tbVNG_NPAH0211, tbAccount.nEnergy})
+			tbMainDialog:AddOptEntry("PhÇn th­ëng ®iÓm tinh lùc",tbVNG_NPAH0211.GetEnergyAward,{tbVNG_NPAH0211, tbAccount.nEnergy})
 		end
 	end
 	--ºì°ü¾ãÀÖ²¿
 	if tbAccount.nClubBag and tbAccount.nClubBag > 0 then		
 		if tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_ClubBag) == 0 then
-			tbMainDialog:AddOptEntry("ÁìÈ¡¾ãÀÖ²¿ºì°ü",tbVNG_NPAH0211.GetAward,{tbVNG_NPAH0211, tbAccount.nClubBag})
+			tbMainDialog:AddOptEntry("PhÇn th­ëng Hång Bao C©u L¹c Bé",tbVNG_NPAH0211.GetAward,{tbVNG_NPAH0211, tbAccount.nClubBag})
 		end
 	end
 	
@@ -59,18 +59,18 @@ end
 
 function tbVNG_NPAH0211:GetAward(nCount)
 	if (CalcFreeItemCellCount() < nCount) then
-		Talk(1, "", format("ÎªÁË±£»¤ÄúµÄ²Æ²ú°²È«,ÇëÁô<color=red>%d<color> ¸ö¿Õ¸ñÖ®ºóÔÙÁìÈ¡½±Àø!", nCount))
+		Talk(1, "", format("§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa <color=red>%d<color> « trèng trong hµnh trang råi míi nhËn th­ëng!", nCount))
 		return
 	end
-	local tbAward = {szName="¾ãÀÖ²¿ºì°ü",tbProp={6,1,30032,1,0,0},nCount=nCount,nExpiredTime=43200},
+	local tbAward = {szName="Hång Bao C©u L¹c Bé",tbProp={6,1,30032,1,0,0},nCount=nCount,nExpiredTime=43200},
 
 	tbExtPointLib:SetBitValue(self.nExtPointID, self.nBit_ClubBag, 1)
-	local strLog = format("[VNG][PAH022011][½±Àø %s]", tbAward.szName)
+	local strLog = format("[VNG][PAH022011][PhÇn th­ëng %s]", tbAward.szName)
 	tbAwardTemplet:GiveAwardByList(tbAward, strLog)
 end
 
 function tbVNG_NPAH0211:GetEnergyAward(nCount)
 	tbExtPointLib:SetBitValue(self.nExtPointID, self.nBit_Energy, 1)
 	AddEnergy(nCount)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][PAH022011][¾«Á¶Ê¯Öµ½±Àø]\t"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡ %d ¾«Á¶Ê¯Öµ"..nCount)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][PAH022011][PhÇn th­ëng ®iÓm tinh lùc]\t"..GetAccount().."\t"..GetName().."\t".."nhËn %d ®iÓm tinh lùc"..nCount)
 end

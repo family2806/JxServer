@@ -4,12 +4,12 @@ Include("\\script\\missions\\basemission\\lib.lua")
 function main()
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= 20100329) then
-		Msg2Player("´ËÎïÆ·ÒÑ¹ıÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	
 	if (offlineCheckPermitRegion() ~= 1) then
-		Msg2Player("²»ÄÜÔÚÕâÊ¹ÓÃÕâ¸öÎïÆ·");
+		Msg2Player("Kh«ng ®­îc sö dông vËt phÈm nµy t¹i ®©y");
 		return 1;
 	end
 	

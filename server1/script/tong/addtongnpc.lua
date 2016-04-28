@@ -12,7 +12,7 @@ if (MODEL_GAMESERVER == 1) then
 	IncludeLib("FILESYS")
 	function LoadPosSetting()
 		if TabFile_Load("\\settings\\tong\\npcpos.txt", "table_npcpos") ~= 1 then
-			print("¼ÓÔØ°ï»ánpc×ø±êÅäÖÃÎÄ¼şÊ§°Ü£¡")
+			print("§äc tËp tin ®iÒu phè täa ®é npc thÊt b¹i!")
 			return
 		end
 		local nRowCount = TabFile_GetRowCount("table_npcpos")
@@ -52,13 +52,13 @@ aDynMapCopy = {
 }
 --¶¯Ì¬µØÍ¼Ä£°åÃû
 aDynMapCopyName = {
-	[587]="É½³Ç",
-	[588]="Ãç½®",
-	[589]="É³Ä®",
-	[590]="¾©Ê¦",
-	[591]="±ßÈû",
-	[593]="½­ÄÏ",
-	[594]="Ñ©Áë",				
+	[587]="S¬n Thµnh",
+	[588]="Miªu C­¬ng",
+	[589]="Sa M¹c",
+	[590]="Kinh S­",
+	[591]="Biªn ¶i",
+	[593]="Giang Nam",
+	[594]="TuyÕt LÜnh",				
 }
 
 aRevPos = {x=1660,y=3257}

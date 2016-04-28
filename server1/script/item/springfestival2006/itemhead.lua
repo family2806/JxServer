@@ -9,7 +9,7 @@ TAB_ACTION =
 --¼ì²éµÀ¾ßÊÇ·ñ¿ÉÒÔ±»Ê¹ÓÃ
 function itemmapcheck(tab)
 	if (tab == nil or type(tab) ~= "table") then
-		Talk(1, "", "Õâ¸öµÀ¾ßÔÚÕâ¸öµØÍ¼²»ÄÜÊ¹ÓÃ¡£");
+		Talk(1, "", "§¹o cô nµy kh«ng dïng ®­îc ë khu vùc nµy.");
 		return 0;
 	end;
     local ww, xx, yy = GetWorldPos();
@@ -18,7 +18,7 @@ function itemmapcheck(tab)
 	    	return i;
 	    end;
 	end;
-    Talk(1, "", "Õâ¸öµÀ¾ßÔÚÕâ¸öµØÍ¼²»ÄÜÊ¹ÓÃ¡£");
+    Talk(1, "", "§¹o cô nµy kh«ng dïng ®­îc ë khu vùc nµy.");
     return 0;
 end;
 

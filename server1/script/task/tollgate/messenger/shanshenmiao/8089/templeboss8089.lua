@@ -49,17 +49,17 @@ function OnDeath(NpcIndex)
 	if (GetTask(Task_IsQuest)==2 and GetTask(Task_lag_TskID)==4) then
 		if (GetTask(Task_KillNPC) < 5) then
 			SetTask(Task_KillNPC, GetTask(Task_KillNPC) + 1)
-			Msg2Player(format("´óÏÀÒÑÏûÃð%d µ¶Ñý", GetTask(Task_KillNPC)))
+			Msg2Player(format("§¹i hiÖp ®· tiªu diÖt ®­îc %d tªn §ao Yªu", GetTask(Task_KillNPC)))
 		else
-		Msg2Player("´óÏÀÒÑÍê³ÉÏûÃðµ¶ÑýÈÎÎñ£¬Çëµ½Õ½ÐÄ×ðÕß´¦Íê³ÉÈÎÎñ")
+		Msg2Player("§¹i hiÖp ®· hoµn thµnh nhiÖm vô tiªu diÖt §ao Yªu, H·y ®Õn ChiÕn t©m T«n Gi¶ hoµn thµnh nhiÖm vô")
 		end
 	end
 	
 	if (  messenger_middletime() == 10 ) then --Íæ¼ÒÔÚµØÍ¼ÖÐµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æð! "..name.."!ÄãµÄÐÅÊ¹ÈÎÎñÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô TÝn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
-		Msg2Player("ÄãÒÑÍê³ÉÏÂÑýµ¶.")
+		Msg2Player("B¹n thµnh c«ng h¹ tªn §ao Yªu.")
 		messenger_templego(NpcIndex)
 	end
 end

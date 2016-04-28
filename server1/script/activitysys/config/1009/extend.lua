@@ -8,48 +8,48 @@ Include("\\script\\lib\\log.lua")
 
 local tbItemOtherAward = {
 	["mutaibeo"] = {
-			[100] 	= "й╧сц100╥Грбц╠",
-			[200] 	= "й╧сц200╥Грбц╠",
-			[300] 	= "й╧сц300╥Грбц╠",
-			[400] 	= "й╧сц400╥Грбц╠",
-			[500] 	= "й╧сц500╥Грбц╠",
-			[600] 	= "й╧сц600╥Грбц╠",
-			[700] 	= "й╧сц700╥Грбц╠",
-			[800] 	= "й╧сц800╥Грбц╠",
-			[900] 	= "й╧сц900╥Грбц╠",
-			[1000] 	= "й╧сц1000╥Грбц╠",
-			[1100] 	= "й╧сц1100╥Грбц╠",
-			[1200] 	= "й╧сц1200╥Грбц╠",
-			[1300] 	= "й╧сц1300╥Грбц╠",
-			[1400] 	= "й╧сц1400╥Грбц╠",
-			[1500] 	= "й╧сц1500╥Грбц╠o",
-			[1600] 	= "й╧сц1600╥Грбц╠",
-			[1700] 	= "й╧сц1700╥Грбц╠",
-			[1800] 	= "й╧сц1800╥Грбц╠",
-			[1900] 	= "й╧сц1900╥Грбц╠",
-			[2000] 	= "й╧сц2000╥Грбц╠",
+			[100] 	= "SuDung100MuTaiBeo",
+			[200] 	= "SuDung200MuTaiBeo",
+			[300] 	= "SuDung300MuTaiBeo",
+			[400] 	= "SuDung400MuTaiBeo",
+			[500] 	= "SuDung500MuTaiBeo",
+			[600] 	= "SuDung600MuTaiBeo",
+			[700] 	= "SuDung700MuTaiBeo",
+			[800] 	= "SuDung800MuTaiBeo",
+			[900] 	= "SuDung900MuTaiBeo",
+			[1000] 	= "SuDung1000MuTaiBeo",
+			[1100] 	= "SuDung1100MuTaiBeo",
+			[1200] 	= "SuDung1200MuTaiBeo",
+			[1300] 	= "SuDung1300MuTaiBeo",
+			[1400] 	= "SuDung1400MuTaiBeo",
+			[1500] 	= "SuDung1500MuTaiBeo",
+			[1600] 	= "SuDung1600MuTaiBeo",
+			[1700] 	= "SuDung1700MuTaiBeo",
+			[1800] 	= "SuDung1800MuTaiBeo",
+			[1900] 	= "SuDung1900MuTaiBeo",
+			[2000] 	= "SuDung2000MuTaiBeo",
 	},		
 	["mutudo"] = {
-			[100] 	= "й╧сц100втсиц╠",
-			[200] 	= "й╧сц200втсиц╠",
-			[300] 	= "й╧сц300втсиц╠",
-			[400] 	= "й╧сц400втсиц╠",
-			[500] 	= "й╧сц500втсиц╠",
-			[600] 	= "й╧сц600втсиц╠",
-			[700] 	= "й╧сц700втсиц╠",
-			[800] 	= "й╧сц800втсиц╠",
-			[900] 	= "й╧сц900втсиц╠",
-			[1000] 	= "й╧сц1000втсиц╠",
-			[1100] 	= "й╧сц1100втсиц╠",
-			[1200] 	= "й╧сц1200втсиц╠",
-			[1300] 	= "й╧сц1300втсиц╠",
-			[1400] 	= "й╧сц1400втсиц╠",
-			[1500] 	= "й╧сц1500втсиц╠",
-			[1600] 	= "й╧сц1600втсиц╠",
-			[1700] 	= "й╧сц1700втсиц╠",
-			[1800] 	= "й╧сц1800втсиц╠",
-			[1900] 	= "й╧сц1900втсиц╠",
-			[2000] 	= "й╧сц2000втсиц╠",
+			[100] 	= "SuDung100MuTuDo",
+			[200] 	= "SuDung200MuTuDo",
+			[300] 	= "SuDung300MuTuDo",
+			[400] 	= "SuDung400MuTuDo",
+			[500] 	= "SuDung500MuTuDo",
+			[600] 	= "SuDung600MuTuDo",
+			[700] 	= "SuDung700MuTuDo",
+			[800] 	= "SuDung800MuTuDo",
+			[900] 	= "SuDung900MuTuDo",
+			[1000] 	= "SuDung1000MuTuDo",
+			[1100] 	= "SuDung1100MuTuDo",
+			[1200] 	= "SuDung1200MuTuDo",
+			[1300] 	= "SuDung1300MuTuDo",
+			[1400] 	= "SuDung1400MuTuDo",
+			[1500] 	= "SuDung1500MuTuDo",
+			[1600] 	= "SuDung1600MuTuDo",
+			[1700] 	= "SuDung1700MuTuDo",
+			[1800] 	= "SuDung1800MuTuDo",
+			[1900] 	= "SuDung1900MuTuDo",
+			[2000] 	= "SuDung2000MuTuDo",
 	},		
 }
 
@@ -62,7 +62,7 @@ function pActivity:UseHatDirt()
 	local tbAward = %tbAward_Ext["awardnomal"];
 	local nCount = tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_LIMIT_HAT_USING)
 	if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbBITTSK_LIMIT_HAT_USING) == 1 then
-		Msg2Player("й╧сцнОф╥ря╢Оиоочё╛╡╩дэтый╧сцак");
+		Msg2Player("SЖ dТng vкt phхm ╝╥ ╝╧t ╝уn giМi h╧n, kh╚ng thс sЖ dТng th╙m");
 		return
 	end
 	local tbItemLog = %tbItemOtherAward["mutaibeo"]
@@ -74,7 +74,7 @@ function pActivity:UseHatDirt()
 			tbAwardTemplet:Give(tbAward2000, 1 , {%EVENT_LOG_TITLE, tbItemLog[nCount + 1]} )
 		end
 	else
-		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "й╧сц╥Грбц╠"})
+		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "SuDungMuTaiBeo"})
 	end
 end
 
@@ -83,7 +83,7 @@ function pActivity:UseHatFreedom()
 	local tbAward = %tbAward_Ext["awardspecial"]
 	local nCount = tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_LIMIT_HAT_USING)
 	if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbBITTSK_LIMIT_HAT_USING) == 1 then
-		Msg2Player("й╧сцнОф╥ря╢Оиоочё╛╡╩дэтый╧сцак");
+		Msg2Player("SЖ dТng vкt phхm ╝╥ ╝╧t ╝уn giМi h╧n, kh╚ng thс sЖ dТng th╙m");
 		return
 	end
 	local tbItemLog = %tbItemOtherAward["mutudo"]
@@ -99,10 +99,10 @@ end
 --	local tbAward = %tbAward_Ext["awardnomal"];
 --	local nCount = tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_LIMIT_HAT_PEACE_USING)
 --	if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbBITTSK_LIMIT_HAT_PEACE_USING) == 1 then
---		Msg2Player("й╧сцнОф╥ря╢Оиоочё╛╡╩дэтый╧сцак");
+--		Msg2Player("SЖ dТng vкt phхm ╝╥ ╝╧t ╝уn giМi h╧n, kh╚ng thс sЖ dТng th╙m");
 --		return
 --	end
 --	%tbVNG_BitTask_Lib:addTask(%tbBITTSK_LIMIT_HAT_PEACE_USING, 1)	
---	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "й╧сц╨мф╫ц╠"})
+--	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "SuDungMuHoaBinh"})
 --end
 

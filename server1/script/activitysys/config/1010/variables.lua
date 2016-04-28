@@ -1,22 +1,22 @@
 EVENT_LOG_TITLE = "EventThang6"
-ITEM_FLOUR = {szName = "Ãæ·Û", tbProp = {6,1,30204,1,0,0},nExpiredTime=20120701}
-ITEM_BUTTER = {szName = "ÄÌÓÍ", tbProp = {6,1,30205,1,0,0},nExpiredTime=20120701}
-ITEM_MILK =  {szName = "Å£ÄÌ", tbProp = {6,1,30206,1,0,0},nExpiredTime=20120701}
+ITEM_FLOUR = {szName = "Bét M×", tbProp = {6,1,30204,1,0,0},nExpiredTime=20120701}
+ITEM_BUTTER = {szName = "B¬", tbProp = {6,1,30205,1,0,0},nExpiredTime=20120701}
+ITEM_MILK =  {szName = "S÷a", tbProp = {6,1,30206,1,0,0},nExpiredTime=20120701}
 ITEM_CHOCOLATE =  {szName = "Chocolate", tbProp = {6,1,30207,1,0,0},nExpiredTime=20120701}
-ITEM_FRUIT = {szName = "Ë®¹û", tbProp = {6,1,30208,1,0,0},nExpiredTime=20120701}
-ITEM_ROAD = {szName = "ÌÇ", tbProp = {6,1,30209,1,0,0},nExpiredTime=20120701}
-ITEM_OFTEN_CAKES = {szName = "Ò»°ã±ùä¿ÁÜ±ý", tbProp = {6,1,30210,1,0,0},nExpiredTime=20120701}
-ITEM_CHOCOLATE_CAKES = {szName = "ÇÉ¿ËÁ¦±ùä¿ÁÜ±ý", tbProp = {6,1,30211,1,0,0},nExpiredTime=20120701}
-ITEM_FRUIT_CAKES = {szName = "Ë®¹û±ùä¿ÁÜ±ý", tbProp = {6,1,30212,1,0,0},nExpiredTime=20120701}
-ITEM_BIRTHDAY_CAKE = {szName = "ÉúÈÕµ°¸â", tbProp = {6,1,30213,1,0,0},nExpiredTime=20120701}
-ITEM_CONTRIBUTION_BOX = {szName = "¹±Ï×Àñ°ü", tbProp = {6,1,30214,1,0,0},nExpiredTime=43200}
-ITEM_CONTRIBUTIONS_BOXS = {szName = "¹±Ï×´óÀñ°ü", tbProp = {6,1,30215,1,0,0},nExpiredTime=43200}
-ITEM_KIENTHIET_BOX = {szName = "½¨ÉèÀñ°ü", tbProp = {6,1,30216,1,0,0},nExpiredTime=43200}
-ITEMKIEN_KIENTHIET_BOXS = {szName = "½¨Éè´óÀñ°ü", tbProp = {6,1,30217,1,0,0},nExpiredTime=43200}
-ITEM_CAMPAIGN_BOX = {szName = "×¼±¸Àñ°ü", tbProp = {6,1,30218,1,0,0},nExpiredTime=43200}
-ITEM_CAMPAIGN_BOXS = {szName = "×¼±¸´óÀñ°ü", tbProp = {6,1,30219,1,0,0},nExpiredTime=43200} 
-ITEM_DROP_MOTER ={{szName="´ò¹ÖµôÃæ·Û",tbProp={6,1,30204,1,0,0},nExpiredTime=20120701,nRate=8},}
+ITEM_FRUIT = {szName = "Tr¸i c©y", tbProp = {6,1,30208,1,0,0},nExpiredTime=20120701}
+ITEM_ROAD = {szName = "§­êng", tbProp = {6,1,30209,1,0,0},nExpiredTime=20120701}
+ITEM_OFTEN_CAKES = {szName = "B¸nh kem th­êng", tbProp = {6,1,30210,1,0,0},nExpiredTime=20120701}
+ITEM_CHOCOLATE_CAKES = {szName = "B¸nh kem Chocolate", tbProp = {6,1,30211,1,0,0},nExpiredTime=20120701}
+ITEM_FRUIT_CAKES = {szName = "B¸nh kem tr¸i c©y", tbProp = {6,1,30212,1,0,0},nExpiredTime=20120701}
+ITEM_BIRTHDAY_CAKE = {szName = "B¸nh sinh nhËt", tbProp = {6,1,30213,1,0,0},nExpiredTime=20120701}
+ITEM_CONTRIBUTION_BOX = {szName = "Cèng hiÕn lÔ bao", tbProp = {6,1,30214,1,0,0},nExpiredTime=43200}
+ITEM_CONTRIBUTIONS_BOXS = {szName = "Cèng hiÕn ®¹i lÔ bao", tbProp = {6,1,30215,1,0,0},nExpiredTime=43200}
+ITEM_KIENTHIET_BOX = {szName = "KiÕm thiÕt lÔ bao", tbProp = {6,1,30216,1,0,0},nExpiredTime=43200}
+ITEMKIEN_KIENTHIET_BOXS = {szName = "KiÕn thiÕt ®¹i lÔ bao", tbProp = {6,1,30217,1,0,0},nExpiredTime=43200}
+ITEM_CAMPAIGN_BOX = {szName = "ChuÈn bÞ lÔ bao", tbProp = {6,1,30218,1,0,0},nExpiredTime=43200}
+ITEM_CAMPAIGN_BOXS = {szName = "ChuÈn bÞ ®¹i lÔ bao", tbProp = {6,1,30219,1,0,0},nExpiredTime=43200} 
+ITEM_DROP_MOTER ={{szName="§¸nh qu¸i rít Bét M×",tbProp={6,1,30204,1,0,0},nExpiredTime=20120701,nRate=8},}
 tbBITTSK_GET_EXP = {nTaskID = 2939,nStartBit = 1,nBitCount = 1,nMaxValue = 1} -- ÔÚÕû¸ö»î¶¯ÆÚ¼äÁìÈ¡EXPµãÊýÏÞÖÆ
-tbBITTSK_LIMIT_USE_OFTEN_CAKE = {nTaskID = 2939,nStartBit = 2,nBitCount = 11,nMaxValue = 1000} -- ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃÒ»°ã±ùä¿ÁÜ±ýÏÞÖÆ
-tbBITTSK_LIMIT_USE_CAKE = {nTaskID = 2940,nStartBit = 1,nBitCount = 11,nMaxValue = 1500} --ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃÇÉ¿ËÁ¦/Ë®¹û±ùä¿ÁÜ±ýµÄÏÞÖÆ
-tbBITTSK_LIMIT_USE_BIRTHDAY_CAKE = {nTaskID = 2940,nStartBit = 12,nBitCount = 8,nMaxValue = 200} -- ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃÉúÈÕµ°¸âµÄÏÞÖÆ
+tbBITTSK_LIMIT_USE_OFTEN_CAKE = {nTaskID = 2939,nStartBit = 2,nBitCount = 11,nMaxValue = 1000} -- ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃB¸nh kem th­êngÏÞÖÆ
+tbBITTSK_LIMIT_USE_CAKE = {nTaskID = 2940,nStartBit = 1,nBitCount = 11,nMaxValue = 1500} --ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃÇÉ¿ËÁ¦/B¸nh kem tr¸i c©yµÄÏÞÖÆ
+tbBITTSK_LIMIT_USE_BIRTHDAY_CAKE = {nTaskID = 2940,nStartBit = 12,nBitCount = 8,nMaxValue = 200} -- ÔÚÕû¸ö»î¶¯ÆÚ¼äÊ¹ÓÃB¸nh sinh nhËtµÄÏÞÖÆ

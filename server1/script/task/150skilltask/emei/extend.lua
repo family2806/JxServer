@@ -42,36 +42,36 @@ function pTask:Talk(szMsg)
 end
 
 local _OnBreak = function(nNpcIndex)
-	Msg2Player(" ’ºØ÷–∂œ")
+	Msg2Player("Thu thÀp Æ¯t Æoπn")
 end
 
 local _GetAward = function(nNpcIndex, dwNpcID, nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	if nNpcIndex == nil then
-		Msg2Player("ƒ„ ’ºØ ß∞‹.")
+		Msg2Player("Ng≠¨i thu thÀp th t bπi.")
 		return 0
 	end
 	
 	if nNpcIndex <= 0 or GetNpcId(nNpcIndex) ~= dwNpcID then
-		Msg2Player("ƒ„ ’ºØ ß∞‹.")
+		Msg2Player("Ng≠¨i thu thÀp th t bπi.")
 		return 0
 	end	
 	
 	if IsNpcHide(nNpcIndex) == 1 then
-		Msg2Player("ƒ„ ’ºØ ß∞‹.")
+		Msg2Player("Ng≠¨i thu thÀp th t bπi.")
 		return 0
 	end
 	
-	if PlayerFunLib:CheckFreeBagCell(1,"±≥∞¸ø’º‰≤ªπª") ~= 1 then
+	if PlayerFunLib:CheckFreeBagCell(1,"Hµnh trang kh´ng ÆÒ") ~= 1 then
 		return 0
 	end
 	
-	Msg2Player(" ’ºØΩ· ¯!")
+	Msg2Player("Thu thÀp k’t thÛc!")
 	
 	local tbAward = {}
 	tbAward = {
-		{szName = "’¥—©±˘¡´", tbProp = {6, 1, 2911, 1, 0, 0}, nBindState = -2,},
+		{szName = "Tri™m Tuy’t B®ng Li™n", tbProp = {6, 1, 2911, 1, 0, 0}, nBindState = -2,},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "150º∂ººƒ‹»ŒŒÒ≈…∂Î√º ’ºØµ√µΩµ¿æﬂ’¥—©±˘¡´")
+	tbAwardTemplet:GiveAwardByList(tbAward, "Nhi÷m vÙ k¸ n®ng c p 150 ph∏i Nga My thu thÀp nhÀn Æ≠Óc Æπo cÙ Tri™m Tuy’t B®ng Li™n")
 	G_TASK:ExecEx(szTaskName, nGotoDetailId, nAddStepNum, nTaskId)
 	HideNpc(nNpcIndex, 20 * 18)
 end 
@@ -80,6 +80,6 @@ function pTask:GetBingLian(nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	local nNpcIndex = GetLastDiagNpc()
 	local dwNpcIndex = GetNpcId(nNpcIndex)
 	
-	Msg2Player("ø™ º ’ªÒ")
+	Msg2Player("Bæt Æ«u thu hoπch")
 	tbProgressBar:OpenByConfig(2, %_GetAward, {nNpcIndex, dwNpcIndex, nAddStepNum, nTaskId, szTaskName, nGotoDetailId}, %_OnBreak, {nNpcIndex})
 end

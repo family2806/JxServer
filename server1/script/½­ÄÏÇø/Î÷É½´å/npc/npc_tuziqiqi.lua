@@ -2,6 +2,6 @@
 -- ÀîĞÀ 2005-01-25
 
 function main()
-	Talk(1,"","Íâ´«ÍÃ×ÓÌøÉÏÌøÏÂÊ²Ã´Ò²×ö²»ÁË")
+	Talk(1,"","Con thá ngoµi chuyÖn nh¶y lªn nh¶y xuèng ra th× ch¶ lµm g× ®­îc c¶!")
 end;
 

@@ -10,7 +10,7 @@ function _TaskDetail:Exec(tbParam)
 		local nCount = tbItem.nCount or 1
 		local nItemCount = CalcItemCount(3, tbItem.tbProp[1], tbItem.tbProp[2], tbItem.tbProp[3], -1)
 		if nItemCount < nCount then
-			Msg2Player("Ã»ÓÐµÀ¾ßÈÎÎñ")
+			Msg2Player("Kh«ng cã ®¹o cô nhiÖm vô")
 			return
 		end
 	end

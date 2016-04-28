@@ -11,14 +11,14 @@ if (not __H_MIDAUTUMN_AUTO_06__) then
 AU06_KIDNPCSCRIPT = "\\script\\event\\birthday_jieri\\200905\\npc\\npc_zhanxin_zunzhe.lua";
 
 au06_tab_kidnpc = {
-	{665,	20,		3545,	6196,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"}, --½­½ò
-	{665,	53,		1622,	3193,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"}, --°ÍÁê
-	{665,	101,	1673,	3179,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--µ¾Ïã´å
-	{665,	174,	1628,	3209,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--ÁúÈª´å
-	{665,	121,	1950,	4516,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--ÁúÃÅÕò
-	{665,	99,		1610,	3183,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--ÓÀÀÖÕò
-	{665,	100,	1628,	3188,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--ÖìÏÉÕò
-	{665,	153,	1603,	3234,	AU06_KIDNPCSCRIPT,	"Õ½ÐÄ×ðÕß"},--Ê¯¹ÄÕò
+	{665,	20,		3545,	6196,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"}, --½­½ò
+	{665,	53,		1622,	3193,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"}, --°ÍÁê
+	{665,	101,	1673,	3179,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--µ¾Ïã´å
+	{665,	174,	1628,	3209,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--ÁúÈª´å
+	{665,	121,	1950,	4516,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--ÁúÃÅÕò
+	{665,	99,		1610,	3183,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--ÓÀÀÖÕò
+	{665,	100,	1628,	3188,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--ÖìÏÉÕò
+	{665,	153,	1603,	3234,	AU06_KIDNPCSCRIPT,	"ChiÕn T©m T«n Gi¶"},--Ê¯¹ÄÕò
 }
 
 

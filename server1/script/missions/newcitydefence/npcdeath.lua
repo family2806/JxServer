@@ -38,10 +38,10 @@ function OnDeath( nNpcIndex )
 	end;
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 	local nAddZhanGong = tbKILLNPC_AWARD[rank]
 	local nAddShareZhanGong = tbKILLNPC_SHAREAWARD[rank]
@@ -74,7 +74,7 @@ function OnDeath( nNpcIndex )
 		if (state ~= 2) then
 			return
 		end;
-		Msg2MSAll(MISSIONID, format("<color=yellow>%s ¶Ô·½µÄÒÑ±»ÆÆ»µ!!!<color>",tbSOLDIER_NAME[6]))
+		Msg2MSAll(MISSIONID, format("<color=yellow>%s cña ®èi ph­¬ng ®· bÞ ph¸ hñy!!!<color>",tbSOLDIER_NAME[6]))
 		return
 	end
 	dropItem( nNpcIndex, rank, PlayerIndex );
@@ -87,7 +87,7 @@ function OnDeath( nNpcIndex )
 		count = count + GetMissionV(MS_MAXCOUNTNPC_1 + i - 1)
 	end
 	if ( (count <= 0 and GetMissionV(MS_BOSS5_DOWN) == 1) or GetMissionV(MS_MAXCOUNTNPC_5) <= 0) then
-		Msg2MSAll(MISSIONID, "<color=yellow>µÐ¾üÖ÷Ë§ÒÑ±»É±º¦!!!")
+		Msg2MSAll(MISSIONID, "<color=yellow>Chñ so¸i qu©n ®Þch ®· bÞ tiªu diÖt!!!")
 		SetMissionV(MS_CITYDEFENCE, 1)
 		CloseMission(MISSIONID)
 	end

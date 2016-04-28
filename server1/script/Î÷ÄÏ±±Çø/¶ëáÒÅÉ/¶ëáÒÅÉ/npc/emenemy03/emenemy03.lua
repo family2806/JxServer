@@ -7,13 +7,13 @@ function OnDeath()
 	UTask_em = GetTask(1)
 	if (UTask_em == 30*256+50) and (HaveItem(120) == 0) and (random(0,99) < 50) then
 		if (HaveItem(119) == 0) then			--Ã»ÓÐ¼¦ÍÈ
-			Msg2Player("ÕÒµ½»ðºü£¬µ«ÊÇÃ»ÓÐ¼¦ÍÈ£¬»ðºü²»¿Ï¸úÄ°ÉúÈË×ß")
+			Msg2Player("Ph¸t hiÖn ra Háa Hå, nh­ng kh«ng cã ®ïi gµ, Háa Hå kh«ng chÞu ®i theo ng­êi l¹. ")
 		else							--ÓÐ¼¦ÍÈ		
 			DelItem(119)
 			AddEventItem(120) 
-			Msg2Player("¾È³ö»ðºü")
+			Msg2Player("Cøu tho¸t Háa Hå ")
 --			SetTask(1, 38)
-			AddNote("ÔÚºóÉ½öùÓãºþ£¬´ò°ÜÉß£¬ÕÒµ½»ðºü£¬")
+			AddNote("T¹i hå c¸ sÊu ë hËu s¬n, ®¸nh b¹i r¾n mèi, t×m thÊy Háa Hå. ")
 		end			
 	end
 end;	

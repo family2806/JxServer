@@ -16,25 +16,25 @@ end
 
 function MergeSV_AddDialog(tbOpt)
 	if MergeSV_CheckTime() == 1 then
-		tbOpt:AddOptEntry("ÎÒÀ´ÁìÈ¡10000 ÌôÕ½Áî¸ø°ï»á", MergeSV_TongGetBonus);
+		tbOpt:AddOptEntry("Ta ®Õn nhËn 10000 Khiªu ChiÕn LÖnh cho Bang Héi", MergeSV_TongGetBonus);
 	end
 end
 
 
 function MergeSV_TongGetBonus()
 	if checkBangHuiLimit() == 0 then
-			Say("¶Ô²»Æğ£¬´óÏÀÎ´¼ÓÈëÈÎºÎ°ï»á",0);
+			Say("Xin lçi! §¹i hiÖp ch­a gia nhËp bang héi nµo c¶!",0);
 			return 0;
 	end
 	local szTongName, nTongID = GetTongName();
 	local figure = TONGM_GetFigure(nTongID, GetName())
 	if (figure ~= TONG_MASTER) then
-		Say("ÕæÒÅº¶£¬Ö»ÓĞ°ïÖú²ÅÄÜÁì½±.", 0)
+		Say("ThËt ®¸ng tiÕc, chØ cã bang chñ míi cã thÓ nhËn phÇn th­ëng.", 0)
 		return
 	end
 	local IsTongGetItem = TONG_GetTaskValue(nTongID, Task_TongGet_Award) 
 	if (IsTongGetItem ~= 0) then
-		Say("¸Ã½±ÀøÃ¿¸ö°ï»áÖ»ÄÜÁìÒ»´Î.", 0)
+		Say("PhÇn th­ëng nµy mçi bang héi chØ nhËn 1 lÇn.", 0)
 		return
 	end
 	checkCreatLG(szTongName);
@@ -42,6 +42,6 @@ function MergeSV_TongGetBonus()
 	TONG_ApplySetTaskValue(nTongID, Task_TongGet_Award, 1)
 	local nCurCount = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 	LG_ApplyAppendMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName, szTongName, LGTSK_TIAOZHANLING_COUNT, 10000, "", "");
-	Msg2Player("´óÏÀ³äÖµ³É¹¦10000 ÌôÕ½Áî¸ø°ï»á!")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Merge Server 201203"..GetAccount().."\t"..GetName().."\t".."³äÖµ³É¹¦10000 ÌôÕ½Áî¸ø°ï»á")
+	Msg2Player("§¹i hiÖp nép thµnh c«ng 10000 Khiªu ChiÕn LÖnh cho Bang Héi !")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Merge Server 201203"..GetAccount().."\t"..GetName().."\t".."Nép thµnh c«ng 10000 KCL cho Bang Héi")
 end

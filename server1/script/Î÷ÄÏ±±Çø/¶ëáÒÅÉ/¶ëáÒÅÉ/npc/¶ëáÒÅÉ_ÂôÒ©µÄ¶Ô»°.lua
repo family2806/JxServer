@@ -8,9 +8,9 @@ function main(sel)
 	end
 	Uworld36 = GetByte(GetTask(36),1)
 	if (GetFaction() == "emei") or (Uworld36 == 127) then
-		Say("Ãî½à£º¶ëÃ¼É½ÉÏµÄ²İÒ©¿É¶àÁË£¬±¾ÅÉµÜ×ÓÓÃÕâĞ©²İÒ©ÖÆ³ÉÁËĞí¶àÁÆÉËµÄÉñÒ©£¬Òª²»Òª¿´¿´£¿", 2, "½»Ò×/yes", "²»½»Ò×/no")
+		Say("th¶o d­îc trªn nói Nga Mi rÊt nhiÒu, ®Ö tö bæn ph¸i dïng nh÷ng lo¹i th¶o d­îc nµy ®Ó lµm ra nhiÒu thÇn d­îc trŞ th­¬ng. ", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 	else
-		Talk(1,"","ÕÆÃÅÓĞÁî£ºÃÅÅÉÒ©Æ·Ö»Âô¸øÍ¬ÃÅ½ãÃÃ!")
+		Talk(1,"","Ch­ëng m«n cã lÖnh: D­îc phÈm m«n ph¸i chØ b¸n cho tû muéi ®ång m«n!")
 	end
 end;
 

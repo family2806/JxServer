@@ -1,7 +1,7 @@
---两湖区 衡山派 上山路石碑
+--两湖区 Ho祅h S琻派 上山路石碑
 
 function main(sel)
 
-Say("衡山",  0);
+Say("Ho祅h S琻",  0);
 
 end;

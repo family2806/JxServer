@@ -1,6 +1,6 @@
 -- ====================== ÎÄ¼şĞÅÏ¢ ======================
 
--- ½£ÏÀÇéÔµÍøÂç°æÔ½ÄÏÊÕ·Ñ°æÒ» 2009ÄêĞÂÄê-ÊÙÉñ¶Ô»°
+-- ½£ÏÀÇéÔµÍøÂç°æÔ½ÄÏÊÕ·Ñ°æÒ» 2009ÄêĞÂÄê-Thä ThÇn¶Ô»°
 
 -- Edited by ×Ó·Çô~
 -- 2009/01/07 16:50
@@ -16,15 +16,15 @@ tbChunjie_Jieri_2009.szClassName = "tbChunjie_Jieri_2009";
 
 TB_CHUNJIE0901_FINDNPC = {
 	tbFuLuShouNpc	= {
-			{	nNpcId = 455, nLevel = 1, nMapId = 1, szName = "¸£Éñ", 
+			{	nNpcId = 455, nLevel = 1, nMapId = 1, szName = "Phóc ThÇn", 
 				tbPos = {{197,192}, {204,195}, {196,203}, {187,198}, {204,205}}, 
 				szScriptPath = "\\script\\event\\chunjie_jieri\\200901\\fulushou\\npc_fushen.lua"},
 				
-			{	nNpcId = 455, nLevel = 1, nMapId = 176, szName = "Â»Éñ", 
+			{	nNpcId = 455, nLevel = 1, nMapId = 176, szName = "Léc ThÇn", 
 				tbPos = {{179,211}, {174,201}, {184,192}, {207,189}, {203,202}}, 
 				szScriptPath = "\\script\\event\\chunjie_jieri\\200901\\fulushou\\npc_lushen.lua"},
 				
-			{	nNpcId = 455, nLevel = 1, nMapId = 37, szName = "ÊÙÉñ", 
+			{	nNpcId = 455, nLevel = 1, nMapId = 37, szName = "Thä ThÇn", 
 				tbPos = {{210,196}, {222,191}, {228,193}, {208,188}, {220,187}}, 
 				szScriptPath = "\\script\\event\\chunjie_jieri\\200901\\fulushou\\npc_shoushen.lua"},
 		},
@@ -113,7 +113,7 @@ function tbChunjie_Jieri_2009:fulushounpc_main()
 	local nSvrTimeId = tonumber(GetLocalDate("%y%m%d%H"));
 	
 	if (nSvrTimeId < 09011612 or nSvrTimeId > 09021520) then
-		CreateTaskSay({"<dec><npc>".."·²ÈËÃÇºÃ.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Xin chµo ng­êi phµm trÇn.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end
 	
@@ -121,7 +121,7 @@ function tbChunjie_Jieri_2009:fulushounpc_main()
 	local nTimeid = GetNpcParam(nNpcIndex, TB_CHUNJIE0901_FINDNPC.nNpcParam_ntimed);
 	--Msg2Player(nTimeid, nSvrTimeId)
 	if (nTimeid ~= nSvrTimeId) then
-		CreateTaskSay({"<dec><npc>".."»î¶¯ÒÑ½áÊø.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Ho¹t ®éng ®· kÕt thóc.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end
 	
@@ -136,22 +136,22 @@ function tbChunjie_Jieri_2009:fulushounpc_main()
 	--print(nMyTimeId, nMyStage, nnpc_nextid, nnpc_selfid)
 	
 	if (nMyTimeId ~= nTimeid) then
-		CreateTaskSay({"<dec><npc>".."ÎÒÒªÕÒÁ½Î»ÅóÓÑ, ÎÒÃÇÒ»ÆğÉÏÌìÍ¥È¥°İ¼ûÓñ»Ê.", 
-				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "ÎÒÒªÑ°ÕÒµÚÒ»Î»", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 1, nNpcIndex),
-				"<#> ÎÒÒ»»á¾Í»ØÀ´!/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."H·y t×m gióp 2 vŞ b»ng h÷u cña ta, chóng ta cÇn ph¶i lªn Thiªn §×nh ®Ó b¸i kiÕn Ngäc Hoµng.", 
+				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "Ta muèn t×m vŞ thø nhÊt", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 1, nNpcIndex),
+				"<#> L¸t n÷a ta sÏ quay l¹i!/OnCancel"});
 	elseif (nMyTimeId == nTimeid and nmy_nextid == nnpc_selfid and nMyStage == 1) then
-		CreateTaskSay({"<dec><npc>".."¸ĞĞ»´óÏÀµÄ´«ĞÅ, ÎÒÁ¢¿Ì¾ÍÈ¥!", 
-				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "ÎÒÒª¼ÌĞøÑ°ÕÒµÚ¶şÎ»", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 2, nNpcIndex),
-				"<#>ÎÒÒ»»á¾Í»ØÀ´!/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."C¸m ¬n ®¹i hiÖp ®· chuyÓn tin, ta sÏ ®Õn chç hä ngay!", 
+				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "Ta muèn tiÕp tôc t×m vŞ thø 2", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 2, nNpcIndex),
+				"<#> L¸t n÷a ta sÏ quay l¹i!/OnCancel"});
 	elseif (nMyTimeId == nTimeid and nmy_nextid == nnpc_selfid and nMyStage == 2) then
-		CreateTaskSay({"<dec><npc>".."¸ĞĞ»´óÏÀµÄ´«ĞÅ! ÎÒËÍÄãÒ»µãĞÂ´ºĞ¡ÀñÎï!", 
-				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "ÄÃµ½ÀñÎï", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 3, nNpcIndex),
-				"<#> ÎÒÒ»»á¾Í»ØÀ´!/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."C¸m ¬n ®¹i hiÖp ®· chuyÓn tin! Ta ban cho ng­¬i chót quµ män mõng n¨m míi!", 
+				format("%s/#%s:fulushounpc_start(%d, %d, %d, %d, %d)", "NhËn lÊy lÔ vËt", self.szClassName, nTimeid, nnpc_selfid, nnpc_nextid, 3, nNpcIndex),
+				"<#> L¸t n÷a ta sÏ quay l¹i!/OnCancel"});
 	elseif (nMyTimeId == nTimeid and nmy_nextid == nnpc_nextid and nMyStage == 3) then
-		CreateTaskSay({"<dec><npc>".."¸ĞĞ»´óÏÀµÄ´«ĞÅ, ÎÒÁ¢¿Ì¾ÍÈ¥!", 
-				"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."C¸m ¬n ®¹i hiÖp ®· chuyÓn tin, ta sÏ ®Õn chç hä ngay!", 
+				"KÕt thóc ®èi tho¹i/OnCancel"});
 	else
-		CreateTaskSay({"<dec><npc>".."·²ÈËÃÇºÃ.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Xin chµo ng­êi phµm trÇn.", "KÕt thóc ®èi tho¹i/OnCancel"});
 	end
 end
 
@@ -213,7 +213,7 @@ function tbChunjie_Jieri_2009:fulushounpc_start(ntimeid, nnpc_selfid, nnpc_nexti
 		local naddexp = nLevel * nLevel * coef;
 		local nmycurexp = self:fulushounpc_gettask(TB_CHUNJIE0901_FINDNPC.TSK_CHUNJIE2009_FLS_MAXEXP);
 		if (nmycurexp >= TB_CHUNJIE0901_FINDNPC.nMaxExp) then
-			Msg2Player("ÒÑ¾­ÁìÈ¡×î¸ß¾­Ñé.");
+			Msg2Player("§· nhËn kinh nghiÖm giíi h¹n cao nhÊt.");
 			return 0;
 		elseif (nmycurexp + naddexp >= TB_CHUNJIE0901_FINDNPC.nMaxExp) then
 			naddexp = TB_CHUNJIE0901_FINDNPC.nMaxExp - nmycurexp;
@@ -221,13 +221,13 @@ function tbChunjie_Jieri_2009:fulushounpc_start(ntimeid, nnpc_selfid, nnpc_nexti
 		
 		self:fulushounpc_settask(TB_CHUNJIE0901_FINDNPC.TSK_CHUNJIE2009_FLS_MAXEXP, nmycurexp + naddexp);
 		AddOwnExp(naddexp);
-		Msg2Player(format("µÃµ½ %d¾­Ñé.", naddexp));
+		Msg2Player(format("NhËn ®­îc kinh nghiÖm ——%d", naddexp));
 		
 		self:fulushounpc_settask(TB_CHUNJIE0901_FINDNPC.TSK_CHUNJIE2009_FLS_STAGE, nstage, 0);
 		
 		-- self:fulushounpc_settask(TB_CHUNJIE0901_FINDNPC.TSK_CHUNJIE2009_FLS_NTIMEID, ntimeid);
 	else
-		Msg2Player("ÁìÈ¡ÈÎÎñ²¢Ñ°ÕÒÆäËûÅóÓÑ.");
+		Msg2Player("NhËn nhiÖm vô vµ t×m nh÷ng vŞ b»ng h÷u kh¸c.");
 	end
 end
 

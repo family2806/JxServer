@@ -64,30 +64,30 @@ end
 
 function pActivity:SignUp()
 	if not self.nCurDungeonMapId then
-		return Talk(1, "", "±¾»î¶¯ÒÀÈ»Î´´ò¿ª£¬´ò¿ªÊ±¼ä´Ó16h µ½ 17h ÒÔ¼°20h µ½ 21h")
+		return Talk(1, "", "ho¹t ®éng nµy vÉn ch­a më, thêi gian më lµ tõ 16h ®Õn 17h vµ 20h ®Õn 21h")
 	end
 	local pDungeon = DungeonList[self.nCurDungeonMapId]
 	if pDungeon then
 		if pDungeon.szState ~= "ready" then
-			return Talk(1, "", "Ä¿Ç°²»ÊÇ±¨Ãû½×¶Î")
+			return Talk(1, "", "b©y giê kh«ng ph¶i lµ giai ®o¹n b¸o danh")
 		end
 		
 		if pDungeon:GetTotalMemberCount() >= 150 then
-			return Talk(1, "", "²Î¼ÓµÇ¼Ç³ÉÔ±ÊıÒÑ¹º£¬ÇëµÈÏÂÒ»´Î.")
+			return Talk(1, "", "Sè thµnh viªn ®¨ng kı tham gia ®· ®ñ, xin h·y ®îi l­ît sau.")
 		end
 		
 		if ST_IsTransLife() ~= 1  and GetLevel() < 150 then
-			return Talk(1, "", format("²»¹»µÇ¼Ç%d »òÕßÊÇÃ»ÓĞÖØÉú£¬²»ÄÜ²Î¼Ó¸Ã»î¶¯", 150))
+			return Talk(1, "", format("ch­a ®ñ cÊp %d hoÆc lµ ch­a trïng sinh kh«ng thÓ tham gia ho¹t ®éng nµy", 150))
 		end
 		local nBagUsedCount = PlayerFunLib:GetTaskDailyCount(VN_TSK_USE_BAG_DAILY)
 		if PlayerHandle:GetSignUpCount() >= MAX_SIGNUP_COUNT + nBagUsedCount then
-			return Talk(1, "", format("Ã¿Ìì×î¶àÖ»ÄÜ²Î¼Ó%d³¡", MAX_SIGNUP_COUNT + nBagUsedCount))
+			return Talk(1, "", format("mçi ngµy chØ cã thÓ tham gia nhiÒu nhÊt %d trËn", MAX_SIGNUP_COUNT + nBagUsedCount))
 		end
 		
 		local nRank = PlayerHandle:GetRank()
 		local nFlag = PlayerHandle:GetAwardFlag()
 		if nRank > 0 and nRank <= 10 and nFlag == 0 then
-			return Talk(1, "", "ÄãĞèÒªÏÈÁìÈ¡ÅÅÃû°ñÉÏµÄ½±Àø²ÅÄÜ²Î¼Ó")
+			return Talk(1, "", "ng­¬i ph¶i nhËn phÇn th­ëng b¶ng xÕp h¹ng tr­íc råi míi tham gia ®­îc")
 		end
 		
 		local pMember = pDungeon:NewMember()
@@ -95,7 +95,7 @@ function pActivity:SignUp()
 		
 		pMember:MoveTo(nMapId, nX, nY)
 	else
-		return Talk(1, "", "¸Ã»î¶¯»¹Î´´ò¿ª£¬´ò¿ªÊ±¼ä´Ó16hµ½17hÒÔ¼°20hµ½21h")
+		return Talk(1, "", "ho¹t ®éng nµy vÉn ch­a më, thêi gian më lµ tõ 16h ®Õn 17h vµ 20h ®Õn 21h")
 	end
 end
 
@@ -103,15 +103,15 @@ function pActivity:GetRankAward()
 	local nRank = PlayerHandle:GetRank()
 	local nFlag = PlayerHandle:GetAwardFlag()
 	if nFlag == 1 then
-		return Talk(1, "", "ÄãÒÑÁìÈ¡½±ÀøÁË")
+		return Talk(1, "", "Ng­¬i ®· nhËn phÇn th­ëng råi")
 	end
 	if nRank <= 0 then
-		return Talk(1, "", "ÄãÃ»ÓĞÅÅÃû£¬ËùÒÔ²»ÄÜÁì¸Ã½±Æ·")
+		return Talk(1, "", "ng­¬i kh«ng cã xÕp h¹ng nªn kh«ng thÓ nhËn phÇn th­ëng nµy")
 	end
 	
-	local szRankMsg = format("ÄãµÄÅÅÃûÊÇ%d", nRank)
+	local szRankMsg = format("xÕp h¹ng cña ng­¬i lµ %d", nRank)
 	if nRank > 10 then
-		return Talk(1, "", format("%s,%s", szRankMsg, "²»ÄÜÁìÈ¡½±Àø"))
+		return Talk(1, "", format("%s,%s", szRankMsg, "kh«ng thÓ nhËn phÇn th­ëng"))
 	end
 	local tbAward = RANK_AWARD[nRank]
 	if tbAward then

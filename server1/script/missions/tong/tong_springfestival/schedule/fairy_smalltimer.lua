@@ -31,11 +31,11 @@ function festival_affiche()
     local i;
     local nCount = SF_SMALLMAPCOUNT * 2;
     for i = 1, SF_SMALLMAPCOUNT do
-        Msg2MSGroup(SF_MISSIONID, format("ÐèÒªÊ¹ÓÃ<color=yellow>ÅÚÕÌ<color>? ?color=yellow>Êó¼Ð<color><color=yellow>ÉýÌìÅÚ<color> À´×·²¶%s!", SF_ANIMALNAME), i);
+        Msg2MSGroup(SF_MISSIONID, format("CÇn ph¶i sö dông “<color=yellow>Ph¸o hoa<color>”, “<color=yellow>Chuét chòi<color>”, “<color=yellow>Ph¸o th¨ng thiªn<color>” ®Ó truy ®uæi %s!", SF_ANIMALNAME), i);
     end;
     
     for i = SF_SMALLMAPCOUNT + 1, nCount do
-        Msg2MSGroup(SF_MISSIONID, format("Ä¿Ç°ÄãÊÇ %s, ÐèÒª×¥<color=yellow>%s<color> ²ÅÄÜÁì½±!", SF_ANIMALNAME, SF_MOUSENAME), i);
+        Msg2MSGroup(SF_MISSIONID, format("HiÖn t¹i b¹n lµ %s, cÇn ph¶i b¾t “<color=yellow>%s<color>” míi cã thÓ nhËn ®­îc phÇn th­ëng!", SF_ANIMALNAME, SF_MOUSENAME), i);
     end;
 end;
 

@@ -31,37 +31,37 @@ tabRate = {
 function main()
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	if (nDate < 20061222) then
-		Describe(DescLink_LiGuan.."Ê¥µ®½Ú¿ìÀÖ!", 1, "½áÊø¶Ô»°/oncancel");
+		Describe(DescLink_LiGuan.." lÔ gi¸ng sinh vui vÎ !", 1, "KÕt thóc ®èi tho¹i /oncancel");
 	else
-		Describe(DescLink_LiGuan.."¹ş¹ş£¡Ê¥µ®½Ú¿ìÀÖ£¡ÏëÖªµÀ½ñÄêÊ¥µ®½ÚÓĞÊ²Ã´»î¶¯Âğ?", 5, 
-			"ÌıËµÊ¥µ®ÀÏÈËµôÁËĞĞÀî/want_xmasevent",
-			"ÎÒÏëÔìÑ©ÈË./want_snowman",
-			"ÎÒÏëÓÃÑ©ÈË»»ÀñÆ·./want_gift",
-			"ÎÒÏëÁË½â»î¶¯ÄÚÈİ/xmas_about",
-			"ÎÒÏÖÔÚºÜÃ¦£¬ÉÔºò»ØÀ´./oncancel");
+		Describe(DescLink_LiGuan.." ha ha  lÔ gi¸ng sinh vui vÎ  muèn biÕt n¨m nay lÔ gi¸ng sinh cã c¸i g× ho¹t ®éng sao ?", 5, 
+			" nghe nãi «ng giµ n« en rít hµnh lı /want_xmasevent",
+			" ta muèn t¹o ng­êi tuyÕt ./want_snowman",
+			" ta muèn dïng ng­êi tuyÕt ®æi lÔ phÈm ./want_gift",
+			" ta muèn hiÓu râ ho¹t ®éng néi dung /xmas_about",
+			" ta b©y giê bÒ bén nhiÒu viÖc , chê mét chót trë l¹i ./oncancel");
 	end;
 end;
 
 function want_xmasevent()
 	if (isXmasTime() ~= 1) then
-		Describe(DescLink_LiGuan.."Ğ»Ğ»Äã£¬ÎÒÒÑ¾­ÕÒµ½ĞĞÀî°üÁË.",1, "½áÊø¶Ô»°/oncancel");
+		Describe(DescLink_LiGuan.." c¸m ¬n ng­¬i , ta ®· t×m ®­îc tói hµnh lı liÔu .",1, "KÕt thóc ®èi tho¹i /oncancel");
 		return 0;
 	end;
-	Describe(DescLink_LiGuan.."ÎÒ¸Õ¸ÕµôÁËÒ»¸öĞĞÀî°ü£¬ÀïÃæÓĞºÜ¶àÊ¥µ®ÀñÎï£¬Äã¿ÉÒÔ°ïÎÒÕÒ»ØÀ´Âğ?", 4,
-	"µ±È»¿ÉÒÔÀ²./onok",
-	"ÎÒÒÑ¾­ÕÒµ½ËûÃÇÁË./award",
-	"½áÊøÊ¥µ®»î¶¯./detail",
-	"ÏÖÔÚÎÒºÜÃ¦£¬ÓĞ¿ÕÔÙÁÄÅ¶./oncancel")
+	Describe(DescLink_LiGuan.." ta míi võa rít mét tói hµnh lı , bªn trong cã rÊt nhiÒu quµ gi¸ng sinh , ng­¬i cã thÓ gióp ta t×m trë vÒ sao ?", 4,
+	" dÜ nhiªn cã thÓ n÷a/råi ./onok",
+	" ta ®· t×m ®­îc bän hä ./award",
+	" kÕt thóc gi¸ng sinh ho¹t ®éng ./detail",
+	" b©y giê ta bÒ bén nhiÒu viÖc , cã r·nh rçi trß chuyÖn tiÕp nga ./oncancel")
 end;
 
 
 function onok()
 	if (50 > GetLevel()) then
-		strTalk = DescLink_LiGuan.."ÄãµÄÀúÁ·Ã»ÓĞ´ïµ½50¼¶£¬»¹²»ÄÜ²Î¼ÓÊ¥µ®»î¶¯¡£";
-		Describe(strTalk, 1, "½áÊø¶Ô»°/oncancel");
+		strTalk = DescLink_LiGuan.." ng­¬i lŞch l·m kh«ng cã ®¹t tíi 50 cÊp , vÉn kh«ng thÓ tham gia gi¸ng sinh ho¹t ®éng . ";
+		Describe(strTalk, 1, "KÕt thóc ®èi tho¹i /oncancel");
 		return
 	end;
-	Describe(DescLink_LiGuan.."Å¶£¬ÄÇÕæÊÇĞ»Ğ»ÁË£¬ÄãÏÈµ½ÄÇ±ß×¼±¸×¼±¸£¬ÎÒÒ»»á¾Í´øÄãµ½ËûÃÇ×ß¶ªµÄµØ·½¡£", 2, "ºÃµÄ¡£/wantjoin", "ÎÒÍ»È»ÓĞĞ©¼±ÊÂ£¬ÏÈµÈµÈ°É¡£/oncancel");
+	Describe(DescLink_LiGuan.." nga , vËy th× thËt lµ c¸m ¬n nhiÒu , ng­¬i tíi tr­íc bªn kia chuÈn bŞ mét chót , ta mét håi liÒn dÉn ng­¬i ®Õn bän hä ®i vøt ®Şa ph­¬ng . ", 2, "Tèt . /wantjoin", "Ta ®ét nhiªn cã chót viÖc gÊp , tr­íc hÕt chê mét chót ®i . /oncancel");
 end;
 
 function award()
@@ -70,16 +70,16 @@ function award()
 	SetTask(TK_COUNT_ONETIME, 0);
 	SetTask(TK_RANK, 0);
 	if (nCount == 0 or nRank == 0) then
-		Describe(DescLink_LiGuan.."ÄãºÃÏñÃ»ÓĞÕÒµ½ÈÎºÎµÄÊ¥µ®¾«Áé°É¡£", 1, "½áÊø¶Ô»°/oncancel");
+		Describe(DescLink_LiGuan.." ng­¬i thËt gièng nh­ kh«ng cã t×m ®­îc bÊt kú ®İch gi¸ng sinh tinh linh ®i . ", 1, "KÕt thóc ®èi tho¹i /oncancel");
 		return
 	end;
-	local strSay = format("ÄãÕæµÄÕÒµ½ËûÃÇÁË£¬ÊµÔÚÌ«ºÃÁË£¡ÎÒ¿´¿´£¬ÄãÒ»¹²ÕÒµ½ÁË%d¸ö<color=yellow>Ê¥µ®¾«Áé<color>£¬ÊÇÕÒµ½¾«ÁéµÚ%d¶àµÄÈË£¬À´À´£¬ÕâÊÇ¸øÄãµÄÀñÎï£¬ÊÕÏÂ°É£¬ºÇºÇºÇ~", nCount, nRank);
-	Describe(DescLink_LiGuan..strSay, 1, "ÊÕÏÂÀñÎï¡£/oncancel");
+	local strSay = format("Ng­¬i thËt t×m ®­îc bän hä , b©y giê thËt tèt qu¸  ta xem mét chót , ng­¬i tæng céng t×m ®­îc %d c¸ <color=yellow> gi¸ng sinh tinh linh <color> , lµ t×m ®Õn tinh linh thø %d nhiÒu ng­êi , tíi tíi , ®©y lµ lÔ vËt cho ng­¬i , nhËn lÊy ®i , a a a ~", nCount, nRank);
+	Describe(DescLink_LiGuan..strSay, 1, "NhËn lÊy lÔ vËt . /oncancel");
 	giveaward(nRank);
 end;
 
 function detail()
-	Describe(DescLink_LiGuan.."ÕÒ¾«Áé»î¶¯Ò»³¡Îª<color=yellow>15<color>·ÖÖÓ£¬ÆäÖĞÓĞ<color=yellow>5<color>·ÖÖÓ×¼±¸Ê±¼ä£¬ÔÚ±¨Ãû²Î¼ÓºóÄã»á±»´øµ½×¼±¸µØÍ¼£¬»î¶¯¿ªÊ¼ºóÄã»á±»´øµ½Ê¥µ®¾«Áé×ß¶ªµÄµØ·½£¬Èç¹ûÄãÔÚÄÇÀï¼ûµ½<color=yellow>Ê¥µ®¾«Áé<color>µÄ»°Ö»ÒªÓÃÊó±ê<color=yellow>×ó¼üµã»÷<color>Ëû¾Í¿ÉÒÔÁË£¬µ±È»Äã»òĞí»áÊÜµ½ÆäËûÍæ¼ÒµÄ×èÄÓ£¬ÕâÊ±ºòÄã¿ÉÒÔÓÃ»î¶¯µÀ¾ßÀ´Ó¦¸¶ÕâĞ©Çé¿ö£¬Ö»ÒªÄãÕÒµ½×ã¹»¶àµÄ<color=yellow>Ê¥µ®¾«Áé<color>ÄÇÃ´Ê¥µ®ÀÏÈË»á¸øÄã²»´íµÄÀñÎïÅ¶¡£", 1, "ÕæµÄÕâÃ´ÉñÆæ£¿ÎÒ¿´¿´¡£/oncancel");
+	Describe(DescLink_LiGuan.." t×m tinh linh ho¹t ®éng mét cuéc v× <color=yellow>15<color> phót , trong ®ã cã <color=yellow>5<color> phót chuÈn bŞ thêi gian , ë ghi danh tham gia sau ng­¬i sÏ bŞ mang tíi chuÈn bŞ b¶n ®å , ho¹t ®éng b¾t ®Çu sau ng­¬i sÏ bŞ mang tíi gi¸ng sinh tinh linh ®i vøt ®Şa ph­¬ng , nÕu nh­ ng­¬i ë ®©y n¬i ®ã thÊy <color=yellow> gi¸ng sinh tinh linh <color> lêi cña chØ cÇn dïng con chuét <color=yellow> bªn tr¸i kiÖn ®iÓm kİch <color> h¾n lµ ®­îc råi , dÜ nhiªn ng­¬i cã lÏ sÏ bŞ nh÷ng kh¸c nhµ ch¬i ®İch ng¨n trë , lóc nµy ng­¬i cã thÓ dïng ho¹t ®éng ®¹o cô tíi ®èi phã nh÷ng t×nh huèng nµy , chØ cÇn ng­¬i t×m ®­îc nhiÒu ®ñ ®İch <color=yellow> gi¸ng sinh tinh linh <color> nh­ vËy «ng giµ n« en sÏ cho ng­¬i tèt lÔ vËt nga . ", 1, "ThËt thÇn kú nh­ vËy ? ta xem mét chót . /oncancel");
 end;
 
 function giveaward(nRank)
@@ -95,19 +95,19 @@ function goodsaward(nRank)
 	local nGoodsType = getgoodtype(nRank);
 	if (nGoodsType == 1) then
 		AddItem(6, 1, 1008, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÁËÒ»¸ö»Æ½ğÖÖ×Ó"
+		local strsay = " ng­¬i thu ®­îc mét hoµng kim mÇm mãng "
 		Msg2Player(strsay);
 	elseif (nGoodsType == 2) then
 		AddItem(6, 1, 1007, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÁËÒ»¸öË®¾§ÖÖ×Ó"
+		local strsay = " ng­¬i thu ®­îc mét thñy tinh mÇm mãng "
 		Msg2Player(strsay);
 	elseif (nGoodsType == 3) then
 		AddItem(6, 1, 1006, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÁËÒ»¸öÃµ¹åÖÖ×Ó"
+		local strsay = " ng­¬i thu ®­îc mét hoa hång mÇm mãng "
 		Msg2Player(strsay);
 	elseif (nGoodsType == 4) then
 		AddItem(6, 1, 1005, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÁËÒ»¸öĞÒÔËÖÖ×Ó"
+		local strsay = " ng­¬i thu ®­îc mét may m¾n mÇm mãng "
 		Msg2Player(strsay);
 	end;
 end;
@@ -142,7 +142,7 @@ function wantjoin()
 end;
 
 function xmas_about()
-	Describe(DescLink_LiGuan.."ÔÚ»î¶¯Ê±¼äÄÚ£¬Íæ¼ÒĞèÒª´ò¹ÖÀ´ÊÕ¼¯ÀñºĞ£¬ÀïÃæ»áÓĞ<color=yellow>Ñ©»¨£¬ÇÑ×Ó£¬ËÉÖ¦£¬Ã±×Ó£¬ËÉÊ÷£¬Î§½í<color>, ÊÇÓÃÀ´ÖÆ×÷<color=yellow>ÌØ±ğÑ©ÈËµÄÔ­ÁÏ<color>. ÈË¹¤ÖÆ×÷Ê§°Ü£¬½«×÷³ö <color=yellow>Ò»°ãµÄÑ©ÈË<color>. È»ºó£¬¿ÉÒÔÓÃÑ©ÈËÀ´»»È¡ÀñÆ·.", 1, "ÎÒÖªµÀÁË/main");
+	Describe(DescLink_LiGuan.." ®ang ho¹t ®éng thêi gian bªn trong , nhµ ch¬i cÇn ®¸nh tr¸ch tíi thu tËp hép quµ , bªn trong sÏ cã <color=yellow> b«ng tuyÕt , gia tö , tïng chi , c¸i mò , tïng c©y , vi c©n <color>, lµ dïng tíi luyÖn chÕ <color=yellow> ®Æc biÖt ng­êi tuyÕt ®İch nguyªn liÖu <color>. nh©n c«ng luyÖn chÕ thÊt b¹i , ®em lµm ra <color=yellow> mét lo¹i ng­êi tuyÕt <color>. sau ®ã , cã thÓ dïng ng­êi tuyÕt ®Ó ®æi lÊy lÔ phÈm .", 1, "Ta biÕt /main");
 end;
 
 function oncancel()	--È¡Ïû

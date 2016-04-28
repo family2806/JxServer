@@ -7,7 +7,7 @@ function main(sel)
 	if ( Uworld1054 ~= 0 ) then
 		branch_leqingqiu()
 	else
-Say("ÀÖÇåÇï£ºÎÒÃ»ÓĞ±ğµÄ±¾ÊÂ£¬Ö»ÄÜ¿¿Âò¼¸·ù×Ö»­Ñø¼Òºı¿Ú£¬°¦£¡ÄÑ¹ÖÈËËµ£¬°ÙÎŞÒ»ÓÃÊÇÊéÉú°¡¡­¡­", 0);
+Say("Ta ch¶ng cã b¶n lÜnh g×, chØ biÕt dùa vµo tµi vÏ tranh mµ sèng qua ngµy", 0);
 	end
 end;
 

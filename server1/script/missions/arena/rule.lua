@@ -179,27 +179,27 @@ function tbRule:ProcResult()
 	if pMemberA.bDeath == 1 or pMemberB.bDeath == 1 then
 		if pMemberA.bDeath == pMemberB.bDeath then
 			self:SetResult(pMemberA, pMemberB, "DRAW")
-			Msg2Map(self.nMapId, "¡Ω±ﬂ∂º◊œ’Û.")			
+			Msg2Map(self.nMapId, "Hai b™n Æ“u tˆ trÀn.")			
 		elseif pMemberA.bDeath == 1 then
 			self:SetResult(pMemberA, pMemberB, "LOSE")
-			Msg2Map(self.nMapId, format("%s ¥Ú∞‹ %s", pMemberB.szName, pMemberA.szName))			
+			Msg2Map(self.nMapId, format("%s Æ∏nh bπi %s", pMemberB.szName, pMemberA.szName))			
 		else
 			self:SetResult(pMemberA, pMemberB, "VICTORY")
-			Msg2Map(self.nMapId, format("%s ¥Ú∞‹ %s", pMemberA.szName, pMemberB.szName))
+			Msg2Map(self.nMapId, format("%s Æ∏nh bπi %s", pMemberA.szName, pMemberB.szName))
 		end
 	else
-		Msg2Map(self.nMapId, format("%s …±…À¡¶ « %d", pMemberA.szName, pMemberB.nReceiveDamage))
-		Msg2Map(self.nMapId, format("%s …±…À¡¶ « %d", pMemberB.szName, pMemberA.nReceiveDamage))
+		Msg2Map(self.nMapId, format("%s l˘c s∏t th≠¨ng lµ %d", pMemberA.szName, pMemberB.nReceiveDamage))
+		Msg2Map(self.nMapId, format("%s l˘c s∏t th≠¨ng lµ %d", pMemberB.szName, pMemberA.nReceiveDamage))
 		
 		if pMemberA.nReceiveDamage == pMemberB.nReceiveDamage then
 			self:SetResult(pMemberA, pMemberB, "DRAW")
-			Msg2Map(self.nMapId, "À´∑ΩÃÂ¡¶≤ª∑÷ §∏∫")
+			Msg2Map(self.nMapId, "Th’ l˘c hai b™n b t ph©n thæng bπi")
 		elseif pMemberA.nReceiveDamage > pMemberB.nReceiveDamage then
 			self:SetResult(pMemberA, pMemberB, "LOSE")
-			Msg2Map(self.nMapId, format("%s  §¿˚", pMemberB.szName))
+			Msg2Map(self.nMapId, format("%s thæng lÓi", pMemberB.szName))
 		else
 			self:SetResult(pMemberA, pMemberB, "VICTORY")
-			Msg2Map(self.nMapId, format("%s  §¿˚", pMemberA.szName))
+			Msg2Map(self.nMapId, format("%s thæng lÓi", pMemberA.szName))
 		end
 	end
 	self:close()
@@ -246,7 +246,7 @@ function tbRule:StartBattle()
 	self.nState = "ready"
 	
 	DynamicExecute("\\script\\missions\\arena\\protocol.lua", "on_begin_battle", self.nMapId, self.tbMemberMap)
-	Msg2Map(self.nMapId, format(" %d√Î∫Û’˝ Ωø™ º", %READY_TIME))
+	Msg2Map(self.nMapId, format("Sau %d gi©y ch›nh th¯c bæt Æ«u", %READY_TIME))
 	self:AddTimer((%READY_TIME - %READY_COUNT_DOWN)* 18, self.OnTime, {self})
 end
 
@@ -265,7 +265,7 @@ end
 
 
 function tbRule:StartFight()
-	Msg2Map(self.nMapId, "∑◊’˘")
+	Msg2Map(self.nMapId, "Ph©n tranh ")
 	for szName, pMember in self.tbMemberMap do
 		if pMember then
 			local nPlayerIndex = SearchPlayer(szName)
@@ -283,12 +283,12 @@ function tbRule:OnTime()
 	if self.nState == "ready" then
 		self.nState = "ready_count_down"
 		self.nCountDown = %READY_COUNT_DOWN
-		Msg2Map(self.nMapId, format("◊º±∏ ±º‰ªπ”– %d√Î", self.nCountDown))
+		Msg2Map(self.nMapId, format("ThÍi gian chu»n bﬁ cﬂn lπi %d gi©y", self.nCountDown))
 		return 18
 	elseif self.nState == "ready_count_down" then
 		if self.nCountDown > 0 then
 			self.nCountDown = self.nCountDown - 1
-			Msg2Map(self.nMapId, format("◊º±∏ ±º‰ªπ”– %d√Î",self.nCountDown))
+			Msg2Map(self.nMapId, format("ThÍi gian chu»n bﬁ cﬂn lπi %d gi©y",self.nCountDown))
 		else
 			self.nState = "fight_count_down"
 			self.nCountDown = %FIGHT_COUNT_DOWN

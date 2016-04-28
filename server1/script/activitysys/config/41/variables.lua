@@ -1,7 +1,7 @@
-ITEM_MEDAL_1		= {szName="1级徽号",tbProp={6,1,3133,1,0,0},nExpiredTime=20120501,}
-ITEM_MEDAL_2		= {szName="2级徽号",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,}
-ITEM_MEDAL_3		= {szName="3级徽号",tbProp={6,1,3135,1,0,0},nExpiredTime=20120501,}
-ITEM_SHIJIN		= {szName="石金",tbProp={6,1,3136,1,0,0},nExpiredTime=20120501,}
+ITEM_MEDAL_1		= {szName="Huy Hi謚 c蕄 1",tbProp={6,1,3133,1,0,0},nExpiredTime=20120501,}
+ITEM_MEDAL_2		= {szName="Huy Hi謚 c蕄 2",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,}
+ITEM_MEDAL_3		= {szName="Huy Hi謚 c蕄 3",tbProp={6,1,3135,1,0,0},nExpiredTime=20120501,}
+ITEM_SHIJIN		= {szName="Th筩h Kim",tbProp={6,1,3136,1,0,0},nExpiredTime=20120501,}
 TSK_DAILY_MEDAL		= 1
 TSK_MARK		= 2
 TSK_DAILY_ACTIVE		= 3

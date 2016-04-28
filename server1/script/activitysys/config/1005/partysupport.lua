@@ -49,10 +49,10 @@ function tbPVLB_PtSpprt:Award(tbPlayers, strLog)
 	 
 	for i = 1, getn(tbPlayers) do
 		PlayerIndex = tbPlayers[i]
-		local tbExp = {szName = "ßiæ≠—È÷µ", nExp = nExpAward}
+		local tbExp = {szName = "ßi”m Kinh Nghi÷m", nExp = nExpAward}
 		tbAwardTemplet:Give(tbExp, 1, {"PhongVanLenhBai", strLog})
 		tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, strLog, nExpAward.." exp", 1)
-		Msg2Player(format("<color=green>æ≠—È÷µ<color><color=yellow>%d<color><color=green>–¬ ÷£¨ªÒµ√≤π≥‰Ω±¿¯: <color><color=yellow>%d æ≠—È÷µ.<color>", nNewPlayersCount, nExpAward))
+		Msg2Player(format("<color=green>TÊ ÆÈi c„ <color><color=yellow>%d<color><color=green> t©n thÒ, nhÀn Æ≠Óc ph«n th≠Îng bÊ sung: <color><color=yellow>%d Æi”m kinh nghi÷m.<color>", nNewPlayersCount, nExpAward))
 	end
 	PlayerIndex = nOldPlayer
 end

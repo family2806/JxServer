@@ -8,7 +8,7 @@ Include("\\script\\item\\heart_head.lua")
 
 GameTemplet = {}
 
-GameTemplet.szMapType = "ÕÒÄ¾ÈË" --¸Ä±äµØÍ¼±íÊ¾
+GameTemplet.szMapType = "T×m Méc Nh©n" --¸Ä±äµØÍ¼±íÊ¾
 
 GameTemplet.tbForbitItemType = --ÖØÔØ Î¥½ûµÀ¾ß
 {
@@ -23,18 +23,18 @@ GameTemplet.Player =
 
 GameTemplet.tbNpcTypeList = --npcµÄÀàĞÍ
 {
-	["ÕÒ¹ÖÎï"] = 
+	["Tªn qu¸i vËt"] = 
 	{
 		nNpcId = 1234,
-		szName = "ÕÒ¹ÖÎï",
+		szName = "Tªn qu¸i vËt",
 		nLevel = 90,
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szScriptPath = "\\script\\missions\\zhaojingling\\gametemplet\\npc_script.lua",--¸ù¾İÓÎÏ·ÄÚÈİ¶¨ÖÆµÄÄ³¸önpc½Å±¾,Ö÷ÒªÕë¶Ô¶Ô»°npc
 	},
-	["ÕÒ¹ÖÎï 2"] = 
+	["Tªn qu¸i vËt 2"] = 
 	{--ÁíÍâÒ»¸ö¹ÖÎï
 		nNpcId = 2354,
-		szName = "ÁíÒ»¸ö¹ÖÎïµÄÃû³Æ",
+		szName = "Tªn 1 qu¸i vËt kh¸c",
 		nLevel = 90,
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szScriptPath = "\\script\\missions\\zhaojingling\\gametemplet\\npc_script.lua",--¸ù¾İÓÎÏ·ÄÚÈİ¶¨ÖÆµÄÄ³¸önpc½Å±¾
@@ -42,7 +42,7 @@ GameTemplet.tbNpcTypeList = --npcµÄÀàĞÍ
 }
 GameTemplet.tbTrapList = 
 {
-	["Trap ±¨Ãû£¬ÓÃÓÚ³ÌĞòÔ±·Ö±ğ×Ô¼ºµÄ½ÇÉ«"] =
+	["Trap ®iÓm danh, dïng cho c¸c lËp tr×nh viªn ®Ó ph©n biÖt vai trß cña m×nh"] =
 	{
 		
 		szPosPath = "",--TrapµãµÄ×ø±êÎÄ¼ş

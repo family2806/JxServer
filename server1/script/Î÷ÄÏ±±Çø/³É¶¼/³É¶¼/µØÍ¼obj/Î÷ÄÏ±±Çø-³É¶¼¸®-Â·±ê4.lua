@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("通往青城山", 0)
+Say(" Thanh Th祅h s琻", 0)
 
 end;

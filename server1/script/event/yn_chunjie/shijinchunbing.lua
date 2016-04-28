@@ -3,7 +3,7 @@ TSK_XIANGJIAO = 1310
 function main()
 	local eatexp = GetTask(TSK_XIANGJIAO)
 	if (eatexp >= CHUNBING_MAX_EXP) then
-		Msg2Player("<#> ÄúÒÑ³Ô¹ı¶àµÄ±ıÁË£¬²»ÄÜÔÙ³ÔÁË!")
+		Msg2Player("<#> B¹n ®· ¨n qu¸ nhiÒu b¸nh råi! Kh«ng thÓ ¨n thªm ®­îc n÷a!")
 		return 1
 	end
 	
@@ -12,12 +12,12 @@ function main()
 		ran_exp = CHUNBING_MAX_EXP - eatexp
 	end
 	AddOwnExp(ran_exp)
-	Msg2Player("<#> Äú»ñµÃ "..ran_exp.."¾­ÑéÖµ.")
+	Msg2Player("<#> B¹n nhËn ®­îc "..ran_exp.."®iÓm kinh nghiÖm.")
 	SetTask(TSK_XIANGJIAO, eatexp + ran_exp)
 	
 	if(GetTask(TSK_XIANGJIAO) >= CHUNBING_MAX_EXP) then
-		Msg2Player("<#> ÄúÒÑ³Ô¹ı¶àµÄ±ıÁË£¬²»ÄÜÔÙ³ÔÁË!")
+		Msg2Player("<#> B¹n ®· ¨n qu¸ nhiÒu b¸nh råi! Kh«ng thÓ ¨n thªm ®­îc n÷a!")
 	else
-		Msg2Player("<#> Äú»¹¿ÉÒÔ¶à³Ô±ıÀ´²¹³ä"..(CHUNBING_MAX_EXP-GetTask(TSK_XIANGJIAO)).."¾­ÑéÖµ.")
+		Msg2Player("<#> B¹n cßn cã thÓ ¨n thªm b¸nh ®Ó bæ sung "..(CHUNBING_MAX_EXP-GetTask(TSK_XIANGJIAO)).."®iÓm kinh nghiÖm.")
 	end
 end

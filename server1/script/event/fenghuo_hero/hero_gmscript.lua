@@ -17,7 +17,7 @@ function gm_createjackstraw(nBeginTime, nGrowPhase)	--TASK GREATE SEED
 			local nNpcid = 1232;
 			local szCurScript = "\\script\\event\\fenghuo_hero\\jackstraw.lua";
 			if (nGrowPhase == 1) then
-				ClearMapNpcWithName(mapid, "µæ≤›»À");
+				ClearMapNpcWithName(mapid, "Ng≠Íi r¨m");
 				nNpcid = 1233;
 				szCurScript = "\\script\\event\\fenghuo_hero\\letter.lua";
 			end;

@@ -8,6 +8,6 @@ function main(sel)
 	if ( Uworld1050 ~= 0 ) then
 		branch_cenxiong()
 	else
-Say("á¯ĞÛ£º°³ÉúÔÚ·ïÏè£¬³¤ÔÚ·ïÏè£¬Ò²²»ÖªÍâÃæµÄÊÀ½çÊÇ¸öÉ¶Ñù¶ù£¬ºÃ´õÓĞÒ»ÌìÒª³öÈ¥¼ûÊ¶¼ûÊ¶¡£",0)
+Say("Chóng ta sinh ë Ph­îng T­êng, lín lªn còng ë Ph­îng T­êng, kh«ng biÕt ®Õn thÕ giíi bªn ngoµi ra sao, cã dŞp sÏ ®i ra ngoµi thö xem!",0)
 	end
 end;

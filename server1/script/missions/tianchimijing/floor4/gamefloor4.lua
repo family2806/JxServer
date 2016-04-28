@@ -2,7 +2,7 @@ Include("\\script\\missions\\tianchimijing\\floor_templet\\game.lua")
 
 GameFloor4 = Game:new()
 
-GameFloor4.szMapType = "Ìì³ØÃØ¾³4²ã"
+GameFloor4.szMapType = "Thiªn Tr× MËt C¶nh tÇng 4"
 
 GameFloor4.Player = 
 {
@@ -20,7 +20,7 @@ GameFloor4.tbNpcTypeList =
 	["boss"] = 
 	{
 		nNpcId = 1610,
-		szName = "ÍêÑÕ¹ãÑô",
+		szName = "Hoµng Nhan Qu¶ng D­¬ng",
 		nLevel = 95,
 		nIsboss = 1,
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor4\\boss.txt",
@@ -28,7 +28,7 @@ GameFloor4.tbNpcTypeList =
 	["drugstore"] = 
 	{
 		nNpcId = 203,
-		szName = "Ò©µêÀÏ°å",
+		szName = "Chñ d­îc ®iÕm",
 		nLevel = 95,
 		szScriptPath = "\\script\\missions\\tianchimijing\\floor2\\yaodian.lua",
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor4\\drugstore.txt",
@@ -36,7 +36,7 @@ GameFloor4.tbNpcTypeList =
 	["store"] = 
 	{
 		nNpcId = 625,
-		szName = "´¢ÎïÏä",
+		szName = "R­¬ng chøa ®å",
 		nLevel = 95,
 		szScriptPath = "\\script\\missions\\tianchimijing\\floor2\\chuwuxiang.lua",	
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor4\\store.txt",
@@ -44,7 +44,7 @@ GameFloor4.tbNpcTypeList =
 	["wagoner"] = 
 	{
 		nNpcId = 238,
-		szName = "Ìì³ØÃØ¾³µÚ4²ã½ÓÒýÈË",
+		szName = "Ng­êi chØ dÉn tÇng thø 4 Thiªn Tr× MËt C¶nh",
 		nLevel = 95,
 		szScriptPath = "\\script\\missions\\tianchimijing\\floor4\\wagoner.lua",	
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor4\\wagoner.txt",

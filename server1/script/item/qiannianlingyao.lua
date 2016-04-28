@@ -4,7 +4,7 @@ TSK_Lingyao_Date	= 2640
 
 function main()
 	if ((GetLevel() < 50 or GetExtPoint(0) == 0)and ST_IsTransLife() ~= 1) then
-		Say("50¼¶ÒÔÉÏÒÔ¼°³äÖµµÄ²ÅÄÜÊ¹ÓÃ", 0);
+		Say("CÊp 50 trë lªn vµ ®· nép thÎ míi sö dông ®­îc", 0);
 		return 1
 	end
 	
@@ -13,7 +13,7 @@ function main()
 		SetTask(TSK_Lingyao_Date, ndate);
 		AddOwnExp(20000000);
 	else
-		Say("Ã¿ÌìÖ»ÄÜÊ¹ÓÃ1¸öÇ§ÄêÁéÒ©", 0);
+		Say("Mét ngµy chØ cã thÓ sö dông ®­îc 1 Thiªn Niªn Linh D­îc", 0);
 		return 1
 	end
 	local nLastTime = FormatTime2Number(GetCurServerTime());

@@ -6,7 +6,7 @@ function main()
 	if (GetNpcExpRate() <= 100) then
 		AddSkillState(440, 1, 1, 32400);
 	else
-		Say("Ä¿Ç°ÊÇÏµÍ³Ë«±¶¾­ÑéÊ±¼ä£¬ÔÝÊ±ÎÞ·¨Ê¹ÓÃÃØÖÆÐÞÉí·û¡£", 0)
+		Say("HiÖn t¹i hÖ thèng ®ang cho nh©n ®«i kinh nghiÖm, t¹m thêi kh«ng thÓ sö dông Tu th©n phï.", 0)
 		return 1
 	end
 	return 0

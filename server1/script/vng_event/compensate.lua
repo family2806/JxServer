@@ -227,20 +227,20 @@ tbUserList =
 function Compensate_main()
 	local nIndex = CheckAccount()
 	if (nIndex < 1) then
-		Talk(1, "", "´óÏÀµÄÕËºÅ²»ÔÚ»ñÈ¡Í­Ç®µÄÃûµ¥ÄÚ!");
+		Talk(1, "", "Tµi kho¶n ®¹i hiÖp sö dông kh«ng n»m trong danh s¸ch nhËn l¹i TiÒn ®ång !");
 		return
 	end
 	
 	if (GetBitValue(nExPoint, nBit_GetTD) ~= 0) then
-		Talk(1, "", "´óÏÀÒÑÁì¸Ã½±ÁË£¬Çë¼ì²é!");
+		Talk(1, "", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi, xin kiÓm tra l¹i !");
 		return
 	end
 	if CalcFreeItemCellCount() < 50 then
-		Talk(1, "", "´óÏÀµÄ×°±¸²»×ã50¿ÕÎ».");
+		Talk(1, "", "Hµnh trang cña ®¹i hiÖp kh«ng ®ñ 50 « trèng.");
 		return
 	end
 	SetBitValue(nExPoint, nBit_GetTD, 1)
-	tbAwardTemplet:GiveAwardByList(tbUserList[nIndex], "Åâ³¥Í­Ç®");
+	tbAwardTemplet:GiveAwardByList(tbUserList[nIndex], "§Òn bï tiÒn ®ång");
 end
 
 function CheckAccount()--check account and server are true  ??

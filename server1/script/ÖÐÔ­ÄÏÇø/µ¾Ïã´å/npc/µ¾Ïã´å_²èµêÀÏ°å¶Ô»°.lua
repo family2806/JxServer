@@ -6,6 +6,6 @@ function main(sel)
 		return 0;
 	end
 
-Say("ºÈ²èÈÃÉíÌå½¡¿µ£¬¿Í¹ÙÏëºÈÒ»±­Âğ?",0)
+Say("Uèng trµ lµm cho th©n thÓ khoÎ m¹nh, kh¸ch quan muèn uèng 1 ly kh«ng?",0)
 
 end;

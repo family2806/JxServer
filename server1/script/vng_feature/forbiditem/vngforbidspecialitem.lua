@@ -4,14 +4,14 @@ tbVNGForbidItem.SEVEN_CITY = 2
 tbVNGForbidItem.VLDNB = 3
 tbVNGForbidItem.tbForbidItem = 
 	{
-		["ÉñĞĞ·û"] = {6, 1, 1266},
---		["ĞÄĞÄÏàÓ³·û"] = {6, 1, 18}, disable trong file forbitheart.txt
---		["»Ø³Ç·û (Ğ¡£© "] = {6, 1, 1082},
---		["»Ø³Ç·û(´ó) "] = {6, 1, 1083},
-		["ËÎ½ğÚ¯Êé "] = {6, 1, 155},
-		["Ä®±±´«ËÍÁî"] = {6, 1, 1448},
-		["Î¢É½µºÁîÅÆ"] = {6, 1, 2432},
-		["Î¢É½µºÁîÅÆÀñ°ü"] = {6, 1, 2525},
+		["ThÇn Hµnh Phï"] = {6, 1, 1266},
+--		["T©m T©m T­¬ng ¸nh phï"] = {6, 1, 18}, disable trong file forbitheart.txt
+--		["Håi thµnh phï (nhá) "] = {6, 1, 1082},
+--		["Håi thµnh phï (lín) "] = {6, 1, 1083},
+		["Tèng Kim Chiªu th­ "] = {6, 1, 155},
+		["M¹c B¾c TruyÒn Tèng LÖnh"] = {6, 1, 1448},
+		["LÖnh bµi Vi S¬n ®¶o"] = {6, 1, 2432},
+		["LÖnh bµi vi s¬n ®¶o lÔ bao"] = {6, 1, 2525},
 	}
 
 tbVNGForbidItem.tbMapSet = 
@@ -41,12 +41,12 @@ function tbVNGForbidItem:IsForbidMap(strItemName, tbMapSet)
 	for i = 1, getn(tbMapSet) do
 		tbTempMapSet = self.tbMapSet[tbMapSet[i]]
 		if not tbTempMapSet then
-			Msg2Player("²»ÄÜÈ·¶¨Ê¹ÓÃÎïÆ·µÄÏŞÖÆÇøÓò")
+			Msg2Player("Kh«ng x¸c ®Şnh ®­îc khu vùc giíi h¹n sö dông vËt phÈm")
 			return 1
 		end
 		for j = 1, getn(tbTempMapSet) do
 			if nW == tbTempMapSet[j] then
-				Msg2Player( format("Ä¿Ç°ÇøÓò²»ÔÊĞíÊ¹ÓÃ <color=yellow>%s",strItemName ))
+				Msg2Player( format("Khu vùc hiÖn t¹i kh«ng ®­îc phĞp sö dông <color=yellow>%s",strItemName ))
 				return 1
 			end
 		end

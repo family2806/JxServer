@@ -13,9 +13,9 @@ function func_online_rename_role(strInfo, strError)
 	if (check_renamerole() == 1) then
 		Say(strInfo,
 			3,
-			"<#> ÁË½â»¹ÄÜÊ¹ÓÃµÄÈËÎïÃû×Ö/query_rolename",
-			"<#> ¸ü¸Ä×Ô¼ºµÄÈËÎïÃû³Æ/change_rolename",
-			"<#> ÏÂ´ÎÎÒ¸Ä/cancel");
+			"<#> T×m hiÓu tªn nh©n vËt cßn sö dông ®­îc kh«ng/query_rolename",
+			"<#> Thay ®æi tªn nh©n vËt cña m×nh/change_rolename",
+			"<#> §Ó lÇn sau ta thay ®æi vËy/cancel");
 	else
 		deny(strError)
 	end
@@ -23,7 +23,7 @@ end
 
 -- ²éÑ¯½ÇÉ«Ãû
 function query_rolename()
-	AskClientForString("on_query_rolename", "", 1, 20, "<#> ÇëÊäÈëĞèÒªÁË½âµÄ");
+	AskClientForString("on_query_rolename", "", 1, 20, "<#> Xin nhËp tªn nh©n vËt cÇn t×m hiÓu");
 end
 
 function on_query_rolename(new_name)
@@ -32,25 +32,25 @@ end
 
 -- ÖØÃûÍæ¼Ò¸ü¸Ä½ÇÉ«Ãû
 function change_rolename()
-	Say("<#> ¾ßÌå²½Öè£ºÀë¿ª°ï»á£¬ÓëNPC¶Ô»°£¬ÊäÈëĞèÒª¸ü¸ÄµÄÈËÎïÃû×Ö£¬Äã½«×Ô¶¯ÀëÏß¡£3·ÖÖÓºóÔÙµÇÂ½£¬Èç¹ûÈËÎïÃû×ÖÒÑ¸Ä£¬¾ÍËãÊÇ¸ÄÃû³É¹¦£»Èç¹ûÃ»¸ü¸Ä£¬ÇëÄãÖ´ĞĞÒÔÉÏ²½Öè¡£Èç¹û³öÏÖÒ»Ğ©Ææ¹ÖÏÖÏó£¬ÇëÁªÏµGM½â¾ö.",
+	Say("<#> C¸c b­íc cô thÓ: §èi tho¹i víi NPC, nhËp tªn bang héi cÇn thay ®æi vµo, b¹n sÏ tù ®éng rêi m¹ng. Sau 3 phót ®¨ng nhËp l¹i, nÕu tªn bang héi ®· thay ®æi th× ®­îc xem ®æi tªn thµnh c«ng; nÕu ch­a thay ®æi, mêi b¹n thùc hiÖn l¹i c¸c b­íc trªn. NÕu xuÊt hiÖn mét sè hiÖn t­îng l¹ xin liªn hÖ GM gi¶i quyÕt.",
 		2,
-		"<#> ¿ªÊ¼¸üÃû/change_rolename2",
-		"<#> ÈÃÎÒÏëÏë/cancel")
+		"<#> B¾t ®Çu thay ®æi tªn nh©n vËt/change_rolename2",
+		"<#> §Ó ta suy nghÜ l¹i/cancel")
 end
 
 function change_rolename2()
 	local _, nTongId = GetTongName()
 	if (nTongId ~= 0) then
-		Msg2Player(" <color=green>´óÏÀÒÑÓĞ°ï»á£¬²»ÄÜ½øĞĞ¸Ã²Ù×÷!<color>")
+		Msg2Player(" <color=green>§¹i hiÖp ®· cã Bang Héi kh«ng thÓ tiÕn hµnh thao t¸c nµy!<color>")
 		return
 	end
-	AskClientForString("on_change_rolename", "", 1, 20, "<#> ÇëÊäÈëĞÂµÄÃû×Ö");
+	AskClientForString("on_change_rolename", "", 1, 20, "<#> Xin nhËp tªn nh©n vËt míi vµo");
 end
 
 function on_change_rolename(new_name)
 	if (check_renamerole() == 1) then
 		if (GetName() == new_name) then
-			Talk(1, "", "<#> Ïë¸ÄÊ²Ã´Ãû×Ö?")
+			Talk(1, "", "<#> B¹n muèn ®æi tªn g×?")
 		else
 			RenameRole(new_name);
 		end
@@ -62,9 +62,9 @@ function online_rename_tong(strInfo, strError)
 	if (check_renametong() == 1) then
 		Say(strInfo,
 			3,
-			"<#> ¼ì²é»¹ÄÜÊ¹ÓÃµÄ°ï»áÃû?/query_tongname",
-			"<#> ¸Ä±ä×Ô¼ºµÄ°ï»áÃû/change_tongname",
-			"<#> ÏÂ´ÎÎÒ¸Ä/cancel")
+			"<#> KiÓm tra tªn Bang héi cßn sö dông ®­îc kh«ng?/query_tongname",
+			"<#> Söa ®æi tªn Bang héi cña m×nh/change_tongname",
+			"<#> §Ó lÇn sau ta thay ®æi vËy/cancel")
 	else
 		deny(strError)
 	end
@@ -72,7 +72,7 @@ end
 
 -- ²éÑ¯°ï»áÃû
 function query_tongname()
-	AskClientForString("on_query_tongname", "", 1, 20, "<#> ÇëÊäÈëÏëÁË½âµÄ°ï»áÃû");
+	AskClientForString("on_query_tongname", "", 1, 20, "<#> Xin nhËp tªn Bang héi muèn t×m hiÓu");
 end
 
 function on_query_tongname(new_tong)
@@ -83,24 +83,24 @@ end
 
 -- ¸ü¸Ä°ï»áÃû
 function change_tongname()
-	Say("<#> ¾ßÌå²½Öè£ºÀë¿ª°ï»á£¬ÓëNPC¶Ô»°£¬ÊäÈëĞèÒª¸ü¸ÄµÄÈËÎïÃû×Ö£¬Äã½«×Ô¶¯ÀëÏß¡£3·ÖÖÓºóÔÙµÇÂ½£¬Èç¹ûÈËÎïÃû×ÖÒÑ¸Ä£¬¾ÍËãÊÇ¸ÄÃû³É¹¦£»Èç¹ûÃ»¸ü¸Ä£¬ÇëÄãÖ´ĞĞÒÔÉÏ²½Öè¡£Èç¹û³öÏÖÒ»Ğ©Ææ¹ÖÏÖÏó£¬ÇëÁªÏµGM½â¾ö.",
+	Say("<#> C¸c b­íc cô thÓ: §èi tho¹i víi NPC, nhËp tªn bang héi cÇn thay ®æi vµo, b¹n sÏ tù ®éng rêi m¹ng. Sau 3 phót ®¨ng nhËp l¹i, nÕu tªn bang héi ®· thay ®æi th× ®­îc xem ®æi tªn thµnh c«ng; nÕu ch­a thay ®æi, mêi b¹n thùc hiÖn l¹i c¸c b­íc trªn. NÕu xuÊt hiÖn mét sè hiÖn t­îng l¹ xin liªn hÖ GM gi¶i quyÕt.",
 		2,
-		"<#> ¿ªÊ¼¸üÃû/change_tongname2",
-		"<#> ÈÃÎÒÏëÏë/cancel");
+		"<#> B¾t ®Çu thay ®æi tªn Bang héi/change_tongname2",
+		"<#> §Ó ta suy nghÜ l¹i/cancel");
 end
 
 function change_tongname2()
-	AskClientForString("on_change_tongname", "", 1, 20, "<#> ÇëÊäÈëĞÂµÄ°ï»áÃû");
+	AskClientForString("on_change_tongname", "", 1, 20, "<#> Xin nhËp tªn Bang héi míi vµo");
 end
 
 function on_change_tongname(new_tong)
 	if (GetTongMaster() ~= GetName()) then
-		Talk(1, "", "<#> Ö»ÓĞ°ïÖ÷²ÅÄÜ¸Ä°ï»áÃû")
+		Talk(1, "", "<#> ChØ cã bang chñ míi cã thÓ thay ®æi tªn Bang héi")
 	elseif (check_renametong() == 1) then
 		old_tong, res = GetTong()
 		if (res == 1 and old_tong ~= "") then
 			if (old_tong == new_tong) then
-				Say("<#> ²»ÄÜ¸ÄÏàÍ¬µÄ°ï»áÃû", 1, "<#> ÖªµÀÁË!/cancel")
+				Say("<#> Kh«ng thÓ thay ®æi tªn Bang héi gièng nhau", 1, "<#> BiÕt råi!/cancel")
 			else
 				RenameTong(old_tong, new_tong)
 			end
@@ -111,5 +111,5 @@ end
 function deny(strError)
 	Say(strError,
 		1,
-		"<#> ÖªµÀÁË!/cancel")
+		"<#> BiÕt råi!/cancel")
 end

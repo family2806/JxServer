@@ -19,7 +19,7 @@ function OnTimer()
 		return
 	elseif (0 == mod(nNewsValue, 2)) then
 		if (nRemain > 0) then
-			Msg2MSAll(COLLG_PREPAREMISSIONID, "»¹Ê£"..nRemain.." ·ÖÖÓºó»î¶¯¿ªÊ¼!");
+			Msg2MSAll(COLLG_PREPAREMISSIONID, "cßn"..nRemain.." phót sau sÏ b¾t ®Çu ho¹t ®éng!");
 		end;
 	end;
 end;

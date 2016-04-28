@@ -18,7 +18,7 @@ function LadderFunLib:GetInfo(nLadderId, szColName1,szColName2,szColName3)
 	for i = 1, 10 do
 		local szName, nValue = Ladder_GetLadderInfo(nLadderId, i);
 		if (szName ~= nil and nValue ~= "") then
-			local szRank = format("µÈ¼¶ %d", i)
+			local szRank = format("H¹ng %d", i)
 			szMsg = szMsg..format("%s%s%s<enter>", strfill_center(szRank,6, " "), strfill_center(szName, 20, " "), strfill_center(nValue, 20, " "))		
 
 		end

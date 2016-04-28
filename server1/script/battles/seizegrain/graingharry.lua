@@ -33,7 +33,7 @@ function main()
 	if (ngharry_camp == GetCurCamp()) then	-- Í¬ÊôÕóÓªµÄ ¿ÉÒÔ°áÔË
 	-- Íæ¼ÒÒÑ¾­ÔÚÔËÁ¸Ê±£¬²»ÄÜÄÃÁíÒ»´ü
 		if (BT_GetData(PL_PARAM3) ~= 0) then
-			Msg2Player("ÄúÕıÔËÊäÒ»°üÁ¸Ê³, ²»ÄÜÔÙÔËÊäÆäËûÁ¸Ê³ÁË");
+			Msg2Player("B¹n ®ang vËn chuyÓn mét bao l­¬ng, kh«ng thÓ mang thªm bao l­¬ng kh¸c?");
 			return
 		end
 		-- ¼õÉÙÒ»¸öÁ¸³µÖĞÁ¸Ê³°üµÄÊıÁ¿
@@ -49,14 +49,14 @@ function main()
 		
 		BT_SetData(PL_PARAM3, 1);
 		
-		Msg2Player("ÄúÕıÔÚ¿¸Ò»°üÁ¸Ê³£¬¿ìµãÔËµ½<color=yellow>±¾Óª<color> ±¾·½.");
+		Msg2Player("B¹n ®ang v¸c mét bao l­¬ng, h·y mau chãng vËn chuyÓn ®Õn <color=yellow>B¶n doanh<color> phe m×nh.");
 		
 		if (n_player_camp == 1) then
-			Msg2MSAll(MISSIONID, format("<color=0x00FFFF>ËÎ·½<color=yellow>%s<color=0x00FFFF>ÔÚ<color=yellow>%d, %d<color=0x00FFFF> ¶áµÃÁ¸°ü£¬Õı·µ»Ø<color=yellow>±¾Óª",
+			Msg2MSAll(MISSIONID, format("<color=0x00FFFF>Phe Tèng<color=yellow>%s<color=0x00FFFF> t¹i <color=yellow>%d, %d<color=0x00FFFF> ®o¹t ®­îc Bao l­¬ng, ®ang quay vÒ <color=yellow>B¶n doanh",
 										GetName(),X1,Y1))
 			AddSkillState(460, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
 		else
-			Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>½ğ·½<color=yellow>%s<color=0x9BFF9B> ÔÚ <color=yellow>%d, %d<color=0x9BFF9B> ¶áµÃÁ¸°ü£¬Õı·µ»Ø<color=yellow>±¾Óª",
+			Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>Phe Kim<color=yellow>%s<color=0x9BFF9B> t¹i <color=yellow>%d, %d<color=0x9BFF9B> ®o¹t ®­îc Bao l­¬ng, ®ang quay vÒ <color=yellow>B¶n doanh",
 											GetName(),X1,Y1))
 			AddSkillState(461, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
 		end
@@ -74,16 +74,16 @@ function main()
 				AddNpcSkillState(n_new_npcidx, 705, 1,0, 10080)
 				
 				if (n_player_camp == 1) then
-					Msg2MSAll(MISSIONID, format("<color=0x00FFFF>ËÎ·½<color=yellow>%s<color=0x00FFFF> ÔÚ <color=yellow>%d, %d<color=0x00FFFF> ÒÑÉÕ»ÙÒ»Á¸³µ.",
+					Msg2MSAll(MISSIONID, format("<color=0x00FFFF>Phe Tèng <color=yellow>%s<color=0x00FFFF> t¹i <color=yellow>%d, %d<color=0x00FFFF> ®· thiªu hñy 1 Xe l­¬ng.",
 												GetName(),X1,Y1));
 				else
-					Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>½ğ·½ <color=yellow>%s<color=0x9BFF9B> ÔÚ <color=yellow>%d, %d<color=0x9BFF9B> ÒÑÉÕ»ÙÒ»Á¸³µ.",
+					Msg2MSAll(MISSIONID, format("<color=0x9BFF9B>Phe Kim <color=yellow>%s<color=0x9BFF9B> t¹i <color=yellow>%d, %d<color=0x9BFF9B> ®· thiªu hñy 1 Xe l­¬ng.",
 												GetName(),X1,Y1));
 				end
 			end
 			return 0;
 		else
-			Msg2Player("ĞèÒª<color=yellow>»ğÊ¯<color> ²ÅÄÜÉÕ»ÙÁ¸³µ.");
+			Msg2Player("CÇn cã <color=yellow>Háa th¹ch<color> míi cã thÓ thiªu hñy Xe l­¬ng.");
 		end
 	end
 	

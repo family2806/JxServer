@@ -15,7 +15,7 @@ local State = GetMissionV(1)
 
 --Î´¿ªÊ¼
 if (State == 0 ) then 
-	Say("ÎÒ´ó¾ü»¹Î´³ö·¢£¬ÇëÔİÊ±ĞİÏ¢µÈĞÅÏ¢!",0);
+	Say("Xin h·y nghØ ng¬i vµ chê th«ng b¸o!",0);
 --	NewWorld(44, 1585,3215)
 	NewWorld(100,1406,3486)
 	SetFightState(1)
@@ -41,7 +41,7 @@ end
 if (result == 2) then
 	--´Ë¾ä»°ÊÇµĞ·½Íæ¼ÒÓë¶Ô·½µÄ±¨ÃûNpcµÄ¶Ô»°
 	--±ÈÈç ÄãÃÇÕâĞ©ËÎ¹úµÄ²İÃñ!ÎÒÃÇ´ó½ğ¹ú½«Ê¿ÃÇ¸÷¸÷ÉÆÕ½ÖÇÓÂ,ÌúÆï×İºá......µÈ£¬ÓĞµÃÊÇÑÛÉ«¿´
-	Say("ÎÒÃÇ½ğ¹ú£¬Ë­¶¼æçÓÂÉÆÕ½£¬ÄãÃÇËÎ¹úÈËÔõÃ´ÄÜÅäµÃÉÏÊÇ¶ÔÊÖÄØ?!",0)
+	Say("Kim quèc chóng t«i, ai còng dòng c¶m vµ quyÕt liÖt, lµm thÕ nµo ng­êi cã thÓ xøng ®¸ng lµm ®èi thñ?!",0)
 end
 
 --±¨ÃûÊ±ÆÚ
@@ -52,9 +52,9 @@ if (State == 1 or State == 2) then
  		
  		if ( nGroup == 2 ) then 
  		--´Ë¾ä»°ÊÇ±¾·½ÒÑ±¨ÃûµÄÍæ¼ÒÓë±¨ÃûNpcµÄ¶Ô»°
-    		Say("ËÀÒ²ÒªÖÒ³ÏÓÚ´ó½ğ¹ú£¬¸÷Î»½ğ¹úÓÂÊ¿!",0)
+    		Say("Cã chÕt còng trung thµnh víi Kim quèc!",0)
   		else
-    		Say("ÎÒÃÇ½ğ¹ú£¬Ë­¶¼æçÓÂÉÆÕ½£¬ÄãÃÇËÎ¹úÈËÔõÃ´ÄÜÅäµÃÉÏÊÇ¶ÔÊÖÄØ?!",0);
+    		Say("Kim quèc chóng t«i, ai còng dòng c¶m vµ quyÕt liÖt, lµm thÕ nµo ng­êi cã thÓ xøng ®¸ng lµm ®èi thñ?!",0);
   		end
 	
 		return
@@ -63,18 +63,18 @@ end;
 
 if (State == 1) then
 	if (GetMSPlayerCount(1,2) >= MAX_J_COUNT) then
-		Say("ÎÒÃÇµÄ¾üÁ¦Ä¿Ç°ÒÑ¹»ÏûÃğËÎ¹ú£¬×³Ê¿ÇëµÈÏÂÒ»´Î°É!", 0)
+		Say("HiÖn t¹i qu©n lùc ®· ®ñ ®Ó tiªu diÖt qu©n Tèng, binh sÜ h·y vui lßng chê ®ît tiÕp theo!", 0)
 	return
 	end;
 	
 	--±ÈÈç,Ä¿Ç°ËÎ¹ú¹úÁ¦²»Õñ£¬ËÎ¹ú°ÙĞÕÉúÁéÍ¿Ì¿£¬ÎÒÃÇ´ó½ğ¹ú¡£¡£¡£¡£
-	Say("ËÎ³¯ÒÑµ½¿ì°ÜÍöµÄÊ±ºòÁË£¬¸÷Î»ÏëºÍÎÒÃÇÒ»ÆğÏíÊÜÈÙ»ª¸»¹óÂğ£¿Ö»ĞèÒª´ïµ½40¼¶ÒÔÉÏ£¬Ö§³Ö3000Á½¾ÍÄÜ³å·æÉ±µĞ!",2, "ÎÒ²Î¼Ó. /Yes", "ÈÃÎÒÏëÏë!/No");
+	Say("Tèng qu©n sÏ thua cuéc, chØ lµ vÊn ®Ò thêi gian, ng­êi cã muèn cïng ta h­ëng vinh quang?!",2, "T«i ®· tham dù. /Yes", "H·y ®Ó t«i nghÜ!/No");
 end;
 
 --½»Õ½Ê±ÆÚ
 if (State == 2) then 
 	--´ËÎªÔÚÕ½¶·ÕıÊ½´òÏìÖ®ºó£¬ÆäËüÎ´±¨ÃûÍæ¼ÒÓë±¨ÃûNpcµÄ¶Ô»°
-	Say("Ç°·½Õı·¢ÉúÕ½Õù£¬¸÷Î»ÏçÇ×ÇëÕÒ¶ã±ÜµÄµØ·½",0);
+	Say("B¹n vui lßng t×m mét n¬i ®Ó chèn tho¸t",0);
 	return 
 end;
 
@@ -86,7 +86,7 @@ if (GetMissionV(1) ~= 1) then
 end
 if (GetLevel() >= 40) then 
   if (Pay(MS_SIGN_MONEY) == 1) then
-  Msg2Player("»¶Ó­ÄãµÄ¼ÓÈë£¬½ğ¹úµÄÓÂÊ¿£¬¸Ï¿ì½øÈëÕ½³¡°É!");
+  Msg2Player("Chµo mõng b¹n tham gia chiÕn tr­êng!");
   V = GetMissionV(6);
   SetMissionV(6, V + 1);
   SJ_JoinJ();
@@ -97,10 +97,10 @@ if (GetLevel() >= 40) then
   end;
 end;
 
-Say("Äã²»¹»40¼¶»òÕßÃ»ÓĞ´ø¹»Ç®",0);
+Say("B¹n ch­a ®¹t cÊp 40 hoÆc kh«ng ®ñ tiÒn",0);
 end;
 
 function No()
-Say("¿ì»ØÈ¥ÏëÏë£¬Ê±¼ä²»¶àÁË!",0);
+Say("H·y suy nghØ l¹i ®i! thêi gian cã h¹n!",0);
 end;
 

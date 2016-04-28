@@ -18,21 +18,21 @@ TB_PAN_COOKIESPROP = {
 }
 TB_PAN_TASKTIME = {20, 20, 20, 20};
 
-DEC_PAN_SZSEX = {[0]="´óÏÀ",[1]="Å®ÏÀ"}
-DEC_PAN_STASK = {"ÌÔÏ´ÂÌ¶¹Æ¤","ºÍÃæ","°ÑÏÚ·ÅÈë±ýÀï","Ìí²ñ"};
+DEC_PAN_SZSEX = {[0]="§¹i hiÖp",[1]="N÷ hiÖp"}
+DEC_PAN_STASK = {"§·i vá ®Ëu xanh","nhµo bét","Bá nh©n vµo b¸nh","Thªm cñi"};
 DEC_PAN_EVENT = {
-"Ð¡»ï·ò: Å®ÏÀ, 20ÃëÖ®ºó²Å¿ÉÒÔÌÔÏ´ÂÌ¶¹Æ¤!",
-"Ð¡»ï·ò: ´óÏÀ, 20ÃëÖ®ºó²Å¿ÉÒÔºÍÃæ",
-"Ð¡»ï·ò: ¶þÎ», 20ÃëÖ®ºó²Å¿ÉÒÔ°ÑÏÚ·ÅÈë±ýÀï.",
-"Ð¡»ï·ò: ¶þÎ», 20ÃëÖ®ºó²Å¿ÉÒÔÌí²ñ",
-"Ð¡»ï·ò: ±ýÒÑ¾­ÊìÁË, ÀÌ³öÀ´°É.",
+"BÕp löa nhá: N÷ hiÖp, xin h·y ®îi 20 gi©y sau míi cã thÓ §·i vá ®Ëu xanh!",
+"BÕp löa nhá: §¹i hiÖp, xin h·y ®îi 20 gi©y sau míi cã thÓ Nhµo bét",
+"BÕp löa nhá: NhÞ vÞ, xin h·y ®îi 20 gi©y sau míi cã thÓ Bá nh©n vµo b¸nh.",
+"BÕp löa nhá: NhÞ vÞ, xin h·y ®îi 20 gi©y sau míi cã thÓ Thªm cñi",
+"BÕp löa nhá: B¸nh ®· chÝn råi, tæng céng cã %s  xin h·y vít ra.",
 };
 
 DEC_PAN_OTHER = {--µÈ´ýµã»÷Ê±¹øµÄ¶Ô°×.Ëæ»úÏÔÊ¾Ò»Ìõ
-"Ð¡»ï·ò: ÎÒÕýÔÚÉÕ!",
-"Ð¡»ï·ò: ÈÈ»¯ÁË!",
-"Ð¡»ï·ò: °¥Ñ½ÈÈËÀÁË",
-"Ð¡»ï·ò: Ë®·ÐÁË, ÕýÃ°×ÅÈÈÆøÄØ!",
+"BÕp löa nhá: Ta ®ang ch¸y ®©y!",
+"BÕp löa nhá: Nãng qu¸ ®i mÊt!",
+"BÕp löa nhá: ¤i th«i nãng qu¸!",
+"BÕp löa nhá: N­íc ®· s«i, ®ang bèc h¬i ®Êy!",
 };
 
 TB_XINNIANLIHUA_AREA = {174,121,153,101,99,100,20,53,1,11,37,78,80,162,176,2,21,167,193}

@@ -6,23 +6,23 @@ Include("\\script\\item\\skillbook.lua")
 function main(idxItem)
 	
 	if GetLastFactionNumber()==-1 then	
-		Msg2Player("<color=yellow>Äú»¹Ã»ÓĞ½øÈëÈÎºÎÃÅÅÉ£¬²»ÄÜÑ§Ï°´Ë¼¼ÄÜ£¡<color>");
+		Msg2Player("<color=yellow>Ch­a gia nhËp m«n ph¸i, kh«ng thÓ häc kü n¨ng nµy!<color>");
 		return 1;
 	end;
 	
 	if GetLevel()<120 then
-		Msg2Player("<color=yellow>ÄúµÄµÈ¼¶Ğ¡ÓÚ 120£¬²»ÄÜÑ§Ï°´Ë¼¼ÄÜ£¡<color>");
+		Msg2Player("<color=yellow>§¼ng cÊp ch­a ®ñ 120, kh«ng thÓ häc kü n¨ng nµy!<color>");
 		return 1;
 	end;
 	
 	if GetTask(LV120_SKILL_ID)>0 then
-		Msg2Player("<color=yellow>ÄúÒÑ¾­ÁìÎòÁË±¾ÃÅÅÉµÄ 120 ¼¶¼¼ÄÜ£¬²»ÄÜÔÙ´Ó´ËÊéÖĞ²ÎÍ¸Ê²Ã´¡£<color>");
+		Msg2Player("<color=yellow>§· lÜnh héi ®­îc kü n¨ng 120 råi, cßn muèn häc thªm n÷a sao?<color>");
 		return 1;
 	end;
 	
 	if (LearnSkillByBook(GetLastFactionNumber(), LV120SKILL_LIST) == 0) then
 		SetTask(LV120_SKILL_ID, LV120SKILL_LIST[GetLastFactionNumber()][1])
-		WriteLog("[120¼¼ÄÜÑ§Ï°¼ÇÂ¼]"..date("[%yÄê%mÔÂ%dÈÕ%HÊ±%M·Ö]").."[ÕËºÅ£º"..GetAccount().."][½ÇÉ«£º"..GetName().."] Ê¹ÓÃÁË 120 ¼¶¼¼ÄÜÊé£¬Ñ§µ½ÁË¼¼ÄÜ£º"..GetLastFactionNumber());
+		WriteLog("[Ghi l¹i viÖc häc kü n¨ng cÊp 120]"..date(" [%y n¨m %m th¸ng %d ngµy  %H giê %M phót]").." [mËt m·:"..GetAccount().."] [nh©n vËt:"..GetName().."] Sö dông s¸ch kü n¨ng cÊp 120, häc ®­îc kü n¨ng:"..GetLastFactionNumber());
 		return 0
 	end
 	return 1

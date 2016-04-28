@@ -6,19 +6,19 @@ tbNSKT_Crystal3Col = {}
 function main(itemidx)
 	--¼ì²éÊ¹ÓÃÎïÆ·Ìõ¼ş
 	if(tbNSKT_Crystal:checkCondition() == 0)then
-		Talk(1, "", "Äã²»¹»Ìõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó50¼¶ÒÔÉÏ³äÖµÓÃ»§")
+		Talk(1, "", "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm! Yªu cÇu cÊp ®é trªn 50 vµ ®·  n¹p thÎ.")
 		return 1
 	end
 	-- het event, ÎïÆ·Ê¹ÓÃµ½ÆÚ
 	if (tbNSKT_Crystal:isExpired(itemidx) == 1) then
-		Msg2Player("ÎïÆ·Ê¹ÓÃ¹ıÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 	-- su dung vat pham thanh cong, xoa item
 	if (tbNSKT_Crystal3Col:UseItem() == 1)then
 		return 0;	
 	else
-		Talk(1, "", "´óÏÀÒÑ×î´óÏŞ¶ÈÊ¹ÓÃ¸ÃÎïÆ·ÁË!")
+		Talk(1, "", "§¹i hiÖp ®·  ®¹t tèi ®a sö dông vËt phÈm nµy!")
 		return 1 -- ²»É¾³ıitem	
 	end
 end
@@ -62,7 +62,7 @@ function tbNSKT_Crystal3Col:UseItem()
 			return 1;
 		end
 		
-		tbNSKT_Crystal:giveAward(tbAward, "ÈıÉ«½á¾§¾­Ñé½±Àø");		
+		tbNSKT_Crystal:giveAward(tbAward, "PhÇn th­ëng EXP kÕt tinh tam s¾c");		
 		return 1;
 	end
 	return 0; --Ê¹ÓÃmax£¬²»ÄÜÊ¹ÓÃ£¬²»ÄÜÉ¾³ı

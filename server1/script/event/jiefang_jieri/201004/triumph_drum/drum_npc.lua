@@ -19,7 +19,7 @@ function tbDrumNpc:New(szTongName, nTongId)
 	local tb = clone(tbDrumNpc)
 	local w,x,y = GetWorldPos();
 	tb.Pos = {SubWorldID2Idx(w), x*32, y*32};
-	tb.NpcIndex = AddNpc(tbTriumphDrum.nNPCID, 1, tb.Pos[1], tb.Pos[2], tb.Pos[3], 0, format("¿­Ðý¹Ä <%s>",szTongName));
+	tb.NpcIndex = AddNpc(tbTriumphDrum.nNPCID, 1, tb.Pos[1], tb.Pos[2], tb.Pos[3], 0, format("Trèng kh¶i hoµn <%s>",szTongName));
 	tb.nTongId = nTongId;
 	tb.TimerCount = tbTriumphDrum.nTimerCount;
 	
@@ -61,7 +61,7 @@ function tbDrumNpc:OnTime()
 	local nGoodPlayerCount = getn(tbGoodPlayer);
 	local nGoodPlayerExp = tbTriumphDrum:GetExp(nGoodPlayerCount);
 	local tbAwardItem = {nExp = nGoodPlayerExp};
-	local szMsg = format("ÏÖÔÚÓÐ %d³ÉÔ±Õ¾ÔÚ¿­Ðý¹ÄÅÔ. ¿ÉÒÔµÃµ½ %d¾­Ñé.", nGoodPlayerCount, nGoodPlayerExp);
+	local szMsg = format("HiÖn t¹i cã %d thµnh viªn ®øng c¹nh trèng kh¶i hoµn. Cã thÓ nhËn ®­îc %d kinh nghiÖm.", nGoodPlayerCount, nGoodPlayerExp);
 	local nCurDay = tonumber(GetLocalDate("%Y%m%d"));
 	Msg2Tong(self.nTongId, szMsg);
 	
@@ -82,9 +82,9 @@ function tbDrumNpc:OnTime()
 		if nDailyAwardCount < tbTriumphDrum.nLimit_DayAward then
 			--tbTriumphDrum.tbTaskGroup:AddTask(tbTriumphDrum.nTaskID_AwardCount, 1);
 			PlayerFunLib:AddTaskDaily(tbTriumphDrum.nTaskID_DailyAwardLimit, 1)
-			tbAwardTemplet:GiveAwardByList(tbAwardItem, "¿­Ðý¹Ä½±Àø");
+			tbAwardTemplet:GiveAwardByList(tbAwardItem, "PhÇn th­ëng trèng kh¶i hoµn");
 		else
-			Msg2Player("½ñÌì¸÷Î»ÁìÈ¡µÄ½±ÀøÒÑ¾­³¬¹ýÁË¹æ¶¨ÊýÁ¿!");
+			Msg2Player("H«m nay c¸c h¹ ®· nhËn th­ëng v­ît qu¸ sè lÇn cho phÐp!");
 		end
 	end
 	

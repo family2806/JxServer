@@ -5,13 +5,13 @@ Include("\\script\\item\\battles\\addmarshalpoint.lua")
 function add483()
 		level = random(10,20);
 		AddSkillState(483, level, 0, 1080 )	--增加玩家内雷伤害
-		Msg2Player("<#>你获得了<color=0xB5FDD7>1分钟的内功系雷攻伤害：增加"..(level*10).."<#>点")	
+		Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7> L玦 s竧 n閕 c玭g trong 1 ph髏 t╪g:"..(level*10).."<#> 甶觤")	
 end
 
 function add499()
 		level = random(10,30);
 		AddSkillState(499, level, 0, 1080 )	--增加玩家外雷伤害
-		Msg2Player("<#>你获得了<color=0xB5FDD7>1分钟的外功系雷攻伤害：增加"..(level*10).."<#>点")	
+		Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7> L玦 s竧 ngo筰 c玭g trong 1 ph髏 t╪g:"..(level*10).."<#> 甶觤")	
 end
 
 Tab={add483,add499}

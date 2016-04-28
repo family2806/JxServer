@@ -7,8 +7,8 @@ if (not __H_CHAT_CITY_SMITH__) then
 
 function main(sel)
 	local tab_Content = {
-		"ÎÒÏëÂòÒ»Ğ©±øÆ÷/tj_default_chat",		--Ô­Ìú½³¹¦ÄÜÈë¿Ú
-		"È¡Ïû/oncancel",
+		"Ta muèn mua vµi mãn binh khİ/tj_default_chat",		--Ô­Ìú½³¹¦ÄÜÈë¿Ú
+		"§ãng/oncancel",
 	};
 	
 	-- Èç¹û»î¶¯Ê±¼ä,²åÈë»î¶¯¶Ô»°,ÒÔÏÂ¾ÙÀı
@@ -18,7 +18,7 @@ function main(sel)
 	
 	if (getn(tab_Content) > 2) then		--Èç¹ûÓĞ»î¶¯²åÈë¶Ô»°
 
-		Say("Ìú½³£º¿Í¹ÙÕÒÎÒÓĞÊ²Ã´ÊÂÂğ£¿", getn(tab_Content), tab_Content);
+		Say("Thî rÌn: Kh¸ch quan t×m ta cã viÖc g×", getn(tab_Content), tab_Content);
 
 	else					--Ã»ÓĞ»î¶¯Ö±½Ó½øÈëÔ­¶Ô»°
 

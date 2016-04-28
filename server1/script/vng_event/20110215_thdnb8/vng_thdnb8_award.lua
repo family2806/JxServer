@@ -11,42 +11,42 @@ tbAwardList =
 	{
 		["HBAK"] = 
 			{
-				tbAward = {szName="°²¿µºì°ü",tbProp={6,1,2105,1,0,0},nCount=0},
+				tbAward = {szName="Hång bao An khang",tbProp={6,1,2105,1,0,0},nCount=0},
 				tbBitPos = {1, 2},
 			},
 		["MatNaTK"] =
 			{
-				tbAward = {szName="Ãæ¾ß- Ó¢ÐÛÕ½³¡",tbProp={0,11,482,1,0,0},nCount=0,nExpiredTime=129600},
+				tbAward = {szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=0,nExpiredTime=129600},
 				tbBitPos = {3},
 			},
 		["QuaHK"] = 
 			{
-				tbAward = {szName="»Æ½ðÖ®¹û(100)",tbProp={6,1,30095,1,0,0},nCount=0},
+				tbAward = {szName="Qu¶ Hoµng Kim (100)",tbProp={6,1,30095,1,0,0},nCount=0},
 				tbBitPos = {4},
 			},
 		["HoangChanDon"] = 
 			{
-				tbAward = {szName="»ÆÕæµ¤",tbProp={6,1,2264,1,0,0},nCount=0},
+				tbAward = {szName="Hoµng Ch©n §¬n",tbProp={6,1,2264,1,0,0},nCount=0},
 				tbBitPos = {5, 6},
 			},
 		["HuyenChanDon"] = 
 			{
-				tbAward = {szName="ÐþÕæµ¤",tbProp={6,1,1678,1,0,0},nCount=0, tbParam={1500000000}},
+				tbAward = {szName="HuyÒn Ch©n §¬n",tbProp={6,1,1678,1,0,0},nCount=0, tbParam={1500000000}},
 				tbBitPos = {7, 8},
 			},
 		["TuKimChanDon"] = 
 			{
-				tbAward = {szName="×Ï½ðÕæµ¤",tbProp={6,1,2263,1,0,0},nCount=0, tbParam={2e9}},
+				tbAward = {szName="Tö Kim Ch©n §¬n",tbProp={6,1,2263,1,0,0},nCount=0, tbParam={2e9}},
 				tbBitPos = {9, 10},
 			},
 		["HongAnh"] = 
 			{
 				tbAward = 
 					{
-						{szName="[ÍêÃÀ]ºèÓ°Ö®ÉòÔ°Íí×í",tbProp={0,536},nCount=0,nQuality = 1},
-						{szName="[ÍêÃÀ]ºèÓ°Ö®¹Ò½£Î÷·½",tbProp={0,537},nCount=0,nQuality = 1},
-						{szName="[ÍêÃÀ]ºèÓ°Ö®ÜÙÞ£ÍüÈ´",tbProp={0,538},nCount=0,nQuality = 1},
-						{szName="[ÍêÃÀ]ºèÓ°Ö®ºìÐäÕÐ",tbProp={0,539},nCount=0,nQuality = 1},
+						{szName="[Hoµn Mü] Hång ¶nh TrÇm Viªn V·n Tóy",tbProp={0,536},nCount=0,nQuality = 1},
+						{szName="[Hoµn Mü] Hång ¶nh KiÕm Qua T©y Ph­¬ng",tbProp={0,537},nCount=0,nQuality = 1},
+						{szName="[Hoµn Mü] Hång ¶nh Môc Tóc T­¬ng Vong",tbProp={0,538},nCount=0,nQuality = 1},
+						{szName="[Hoµn Mü] Hång ¶nh Hång Tô Chiªu",tbProp={0,539},nCount=0,nQuality = 1},
 					},
 					tbBitPos = {11},
 			},
@@ -69,7 +69,7 @@ function tbVNG_THDNB8:AddDialog(tbDialog)
 	if self:isActive() ~= 1 then
 		return
 	end
-	tbDialog:AddOptEntry("ÁìÈ¡ÌìÏÂµÚÒ»°ï½±Àø 8",tbVNG_THDNB8.main,{tbVNG_THDNB8})
+	tbDialog:AddOptEntry("NhËn phÇn th­ëng Thiªn H¹ §Ö NhÊt Bang 8",tbVNG_THDNB8.main,{tbVNG_THDNB8})
 end
 
 function tbVNG_THDNB8:main()
@@ -84,21 +84,21 @@ function tbVNG_THDNB8:main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbMainDialog = DailogClass:new(szNpcName)
---	tbMainDialog.szTitleMsg = "Ñ¡Ôñ½±Àø"
+--	tbMainDialog.szTitleMsg = "Xin chän phÇn th­ëng"
 	if tbAccount.nHBAK > 0 then
 		local tbAward = tbAwardList["HBAK"]
 		local tbBitPos = tbAward.tbBitPos
 		if tbAccount.nHBAK > 60 then			
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then				
-				tbMainDialog:AddOptEntry("½±Àø [°²¿µºì°ü]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK",60, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Hång Bao An Khang]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK",60, tbBitPos[1]})
 			else 
 				if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[2]) == 0 then					
-					tbMainDialog:AddOptEntry("½±Àø [°²¿µºì°ü]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK", tbAccount.nHBAK - 60, tbBitPos[2]})
+					tbMainDialog:AddOptEntry("PhÇn th­ëng [Hång Bao An Khang]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK", tbAccount.nHBAK - 60, tbBitPos[2]})
 				end
 			end
 		else
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-				tbMainDialog:AddOptEntry("½±Àø [°²¿µºì°ü]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK", tbAccount.nHBAK, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Hång Bao An Khang]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HBAK", tbAccount.nHBAK, tbBitPos[1]})
 			end
 		end		
 	end
@@ -107,7 +107,7 @@ function tbVNG_THDNB8:main()
 		local tbAward = tbAwardList["MatNaTK"]
 		local tbBitPos = tbAward.tbBitPos
 		if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-			tbMainDialog:AddOptEntry("½±Àø [Ãæ¾ß- Ó¢ÐÛÕ½³¡]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "MatNaTK", tbAccount.nMatnaTK, tbBitPos[1]})
+			tbMainDialog:AddOptEntry("PhÇn th­ëng [MÆt n¹ - Anh hïng chiÕn tr­êng]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "MatNaTK", tbAccount.nMatnaTK, tbBitPos[1]})
 		end
 	end
 	--Qua Hoang Kim
@@ -115,7 +115,7 @@ function tbVNG_THDNB8:main()
 		local tbAward = tbAwardList["QuaHK"]
 		local tbBitPos = tbAward.tbBitPos
 		if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-			tbMainDialog:AddOptEntry("½±Àø [»Æ½ðÖ®¹û (100)]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "QuaHK",tbAccount.nQuaHK, tbBitPos[1]})
+			tbMainDialog:AddOptEntry("PhÇn th­ëng [Qu¶ Hoµng Kim (100)]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "QuaHK",tbAccount.nQuaHK, tbBitPos[1]})
 		end
 	end
 	--Hoang chan don
@@ -124,15 +124,15 @@ function tbVNG_THDNB8:main()
 		local tbBitPos = tbAward.tbBitPos
 		if tbAccount.nHoangChanDon > 60 then			
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then				
-				tbMainDialog:AddOptEntry("½±Àø [»ÆÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon",60, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Hoµng Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon",60, tbBitPos[1]})
 			else 
 				if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[2]) == 0 then					
-					tbMainDialog:AddOptEntry("½±Àø [»ÆÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon", tbAccount.nHoangChanDon - 60, tbBitPos[2]})
+					tbMainDialog:AddOptEntry("PhÇn th­ëng [Hoµng Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon", tbAccount.nHoangChanDon - 60, tbBitPos[2]})
 				end
 			end
 		else
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-				tbMainDialog:AddOptEntry("½±Àø [»ÆÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon", tbAccount.nHoangChanDon, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Hoµng Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HoangChanDon", tbAccount.nHoangChanDon, tbBitPos[1]})
 			end
 		end
 	end
@@ -142,15 +142,15 @@ function tbVNG_THDNB8:main()
 		local tbBitPos = tbAward.tbBitPos
 		if tbAccount.nHuyenChanDon > 60 then			
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then				
-				tbMainDialog:AddOptEntry("½±Àø [ÐþÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon",60, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [HuyÒn Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon",60, tbBitPos[1]})
 			else 
 				if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[2]) == 0 then					
-					tbMainDialog:AddOptEntry("½±Àø [ÐþÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon", tbAccount.nHuyenChanDon - 60, tbBitPos[2]})
+					tbMainDialog:AddOptEntry("PhÇn th­ëng [HuyÒn Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon", tbAccount.nHuyenChanDon - 60, tbBitPos[2]})
 				end
 			end
 		else
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-				tbMainDialog:AddOptEntry("½±Àø [ÐþÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon", tbAccount.nHuyenChanDon, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [HuyÒn Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "HuyenChanDon", tbAccount.nHuyenChanDon, tbBitPos[1]})
 			end
 		end
 	end
@@ -160,15 +160,15 @@ function tbVNG_THDNB8:main()
 		local tbBitPos = tbAward.tbBitPos
 		if tbAccount.nTuKimChanDon > 60 then			
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then				
-				tbMainDialog:AddOptEntry("½±Àø [×Ï½ðÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon",60, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Tö Kim Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon",60, tbBitPos[1]})
 			else 
 				if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[2]) == 0 then					
-					tbMainDialog:AddOptEntry("½±Àø [×Ï½ðÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon", tbAccount.nTuKimChanDon - 60, tbBitPos[2]})
+					tbMainDialog:AddOptEntry("PhÇn th­ëng [Tö Kim Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon", tbAccount.nTuKimChanDon - 60, tbBitPos[2]})
 				end
 			end
 		else
 			if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-				tbMainDialog:AddOptEntry("½±Àø [×Ï½ðÕæµ¤]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon", tbAccount.nTuKimChanDon, tbBitPos[1]})
+				tbMainDialog:AddOptEntry("PhÇn th­ëng [Tö Kim Ch©n §¬n]",tbVNG_THDNB8.GetAward,{tbVNG_THDNB8, "TuKimChanDon", tbAccount.nTuKimChanDon, tbBitPos[1]})
 			end
 		end
 	end
@@ -176,16 +176,16 @@ function tbVNG_THDNB8:main()
 		local tbAward = tbAwardList["HongAnh"]
 		local tbBitPos = tbAward.tbBitPos
 		if tbExtPointLib:GetBitValue(self.nExtPointID, tbBitPos[1]) == 0 then
-			tbMainDialog:AddOptEntry("½±Àø [ÍêÃÀºèÓ°]",tbVNG_THDNB8.GetGoldEquip,{tbVNG_THDNB8, "HongAnh", tbAccount.nHongAnhHoanMy, tbBitPos[1]})
+			tbMainDialog:AddOptEntry("PhÇn th­ëng [Hång ¶nh Hoµn Mü]",tbVNG_THDNB8.GetGoldEquip,{tbVNG_THDNB8, "HongAnh", tbAccount.nHongAnhHoanMy, tbBitPos[1]})
 		end
 	end
 	tbMainDialog:Show()
-	--tbMainDialog:AddOptEntry("ÁìÈ¡ÌìÏÂµÚÒ»°ïµÄ½±Àø 8",tbVNG_THDNB8.main,{tbVNG_THDNB8})
+	--tbMainDialog:AddOptEntry("NhËn phÇn th­ëng Thiªn H¹ §Ö NhÊt Bang 8",tbVNG_THDNB8.main,{tbVNG_THDNB8})
 end
 
 function tbVNG_THDNB8:GetAward(strType, nCount, nBitPos)
 	if (CalcFreeItemCellCount() < nCount) then
-		Talk(1, "", format("ÎªÁË±£»¤ÄúµÄ²Æ²ú°²È«, ÇëÁô <color=red>%d<color> ¸ö¿Õ¸ñÖ®ºóÔÙÁìÈ¡½±Àø!", nCount))
+		Talk(1, "", format("§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa <color=red>%d<color> « trèng trong hµnh trang råi míi nhËn th­ëng!", nCount))
 		return
 	end
 	local tbAwardType = tbAwardList[strType]
@@ -195,13 +195,13 @@ function tbVNG_THDNB8:GetAward(strType, nCount, nBitPos)
 	tbExtPointLib:SetBitValue(self.nExtPointID, nBitPos, 1)
 	local tbAward = tbAwardType.tbAward
 	tbAward.nCount = nCount
-	local strLog = format("[VNG][THDNB8][½±Àø %s]", tbAward.szName)
+	local strLog = format("[VNG][THDNB8][PhÇn th­ëng %s]", tbAward.szName)
 	tbAwardTemplet:GiveAwardByList(tbAward, strLog)
 end
 
 function tbVNG_THDNB8:GetGoldEquip(strType, nCount, nBitPos)
 	if (CalcFreeItemCellCount() < 60) then
-		Talk(1, "", "ÎªÁË±£»¤ÄúµÄ²Æ²ú°²È«, ÇëÁô <color=red>60<color> ¸ö¿Õ¸ñ×°±¸²ÛÖ®ºóÔÙÁìÈ¡½±Àø!" )
+		Talk(1, "", "§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa <color=red>60<color> « trèng trong hµnh trang råi míi nhËn th­ëng!" )
 		return
 	end
 	local tbAwardType = tbAwardList[strType]
@@ -213,6 +213,6 @@ function tbVNG_THDNB8:GetGoldEquip(strType, nCount, nBitPos)
 		local tbAward = tbAwardType.tbAward[i]
 		--if not tbAward then return end
 		tbAward.nCount = nCount
-		tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][THDNB8][ÁìÈ¡ÍêÃÀºèÓ°½±Àø]")
+		tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][THDNB8][PhÇn th­ëng Hång ¶nh Hoµn Mü]")
 	end	
 end

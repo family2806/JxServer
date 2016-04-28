@@ -16,7 +16,7 @@ function OnDeath(Launcher)
 		local LaunName = GetName();
 		nLaunGroupID = GetCurCamp();
 		if (nLaunGroupID == 2 or nLaunGroupID == 3) then
-			str  = GetMissionS(CITYID).."<#> ÀÞÌ¨±ÈÈüÉÏÓÐºÜ¶àÈË, <color=yellow>"..szCaptainName[nLaunGroupID - 1].."<color>¶Ó<color=yellow>"..LaunName.."<color><#>ÔÚ±ÈÈüÖÐ´ò°ÜÁË<color=yellow>"..szCaptainName[4 - nLaunGroupID].."<color> ¶Ó <color=yellow>"..DeathName.."<color><#>.";
+			str  = GetMissionS(CITYID).." L«i ®µi tranh tµi ®ang diÔn ra, <color=yellow>"..szCaptainName[nLaunGroupID - 1].."<color> §éi<color=yellow>"..LaunName.."<color> ë l«i ®µi trung ®¸nh b¹i<color=yellow>"..szCaptainName[4 - nLaunGroupID].."<color> ®éi<color=yellow>"..DeathName.."<color>.";
 			Msg2MSAll(BW_MISSIONID, str);
 		end
 	end;
@@ -39,14 +39,14 @@ function bw_all_death()
 	local nGroup1PlayerCount = GetMSPlayerCount(BW_MISSIONID, 1);
 	local nGroup2PlayerCount = GetMSPlayerCount(BW_MISSIONID, 2);
 	if (nGroup1PlayerCount <= 0 ) and (nGroup2PlayerCount <= 0 ) then 
-		str1 = GetMissionS(CITYID).."<#> ÔÚÀÞÌ¨±ÈÈüÖÐË«·½¶¼ËÀÁË,"..szCaptainName[1].."<color><#> ºÍ<color=yellow>"..szCaptainName[2].."<color><#> Æ½ÊÖ!";
+		str1 = GetMissionS(CITYID).."<#> Toµn bé ®ªu ®· chÕt,"..szCaptainName[1].."<color><#> cïng<color=yellow>"..szCaptainName[2].."<color><#> ngang tµi ngang søc!";
 		bw_death_close(str1)
 	elseif (nGroup2PlayerCount <= 0) then
-		str1 = GetMissionS(CITYID).."ÀÞÌ¨½á¹û<#>, ¶Ó<color=yellow>"..szCaptainName[1].."<color>´ò°Ü¶Ó<color=yellow>"..szCaptainName[2].."<color>, <#> <color=yellow>"..szCaptainName[1].."<color> È¡µÃ×îÖÕÊ¤Àû!";
+		str1 = GetMissionS(CITYID).."KÕt qu¶ l«i ®µi<#>, ®éi<color=yellow>"..szCaptainName[1].."<color>®¸nh b¹i ®éi<color=yellow>"..szCaptainName[2].."<color>, <#> <color=yellow>"..szCaptainName[1].."<color> giµnh ®­îc th¾ng lîi cuèi cïng!";
 		bw_branchtask_win(1);
 		bw_death_close(str1)
 	elseif (nGroup1PlayerCount <= 0) then 
-		str1 = GetMissionS(CITYID).."ÀÞÌ¨½á¹û<#>, ¶Ó <color=yellow>"..szCaptainName[2].."<color> ´ò°Ü¶Ó<color=yellow>"..szCaptainName[1].."<color>, <#> <color=yellow>"..szCaptainName[2].."<color>È¡µÃ×îÖÕÊ¤Àû!";
+		str1 = GetMissionS(CITYID).."KÕt qu¶ l«i ®µi<#>, ®éi <color=yellow>"..szCaptainName[2].."<color> ®¸nh b¹i ®éi<color=yellow>"..szCaptainName[1].."<color>, <#> <color=yellow>"..szCaptainName[2].."<color> giµnh ®­îc th¾ng lîi cuèi cïng!";
 		bw_branchtask_win(2);
 		bw_death_close(str1)
 	end;

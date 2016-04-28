@@ -1,5 +1,5 @@
--- 24.	·¿¼äÀï³öÏÖ3¸ö·Ö±ğ´ø·´µ¯¡¢ÎŞĞÎ¹Æ¡¢ÃÎµûµÄÖù×Ó£¬Öù×Ó¹â»·¸øĞ¡¹Ö¹²Ïí£¬Öù×Ó¿ÉÒÔ±»´òËÀ£¬Ñª±ÈĞ¡¹ÖÉÙ£¬
--- Öù×ÓÖÜÎ§ÊÇ20¸öîÚÁú¸ßÊÖ£¬ÖĞ¼äÊÇBOSSîÚÁúÉñÊŞ£¬É±ËÀËùÓĞĞ¡¹ÖºÍBOSS²ÅÄÜ¹ı¹Ø
+-- 24.	·¿¼äÀï³öÏÖ3¸ö·Ö±ğ´ø·´µ¯¡¢ÎŞĞÎ¹Æ¡¢ÃÎµûµÄTrô Tö£¬Trô Tö¹â»·¸øĞ¡¹Ö¹²Ïí£¬Trô Tö¿ÉÒÔ±»´òËÀ£¬Ñª±ÈĞ¡¹ÖÉÙ£¬
+-- Trô TöÖÜÎ§ÊÇ20¸öîÚÁú¸ßÊÖ£¬ÖĞ¼äÊÇBOSSîÚÁúÉñÊŞ£¬É±ËÀËùÓĞĞ¡¹ÖºÍBOSS²ÅÄÜ¹ı¹Ø
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -14,15 +14,15 @@ function pTask:OnStart()
 	local pos_boss = self:GetPosition().t24_boss
 	local pos_monster = self:GetPosition().t24_monster
 	local pos_pillar = self:GetPosition().t24_pillar
-	self.m_BossIndex = FightNpcManager:AddNpc("ÓñÁúÉñÉ®", 1727, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
+	self.m_BossIndex = FightNpcManager:AddNpc("Ngäc Long ThÇn T¨ng", 1727, mapid, pos_boss.x, pos_boss.y, self, 0, 1, 1)
 	self.m_Pillars = {}
 	for i = 1, 3 do
-		local nNpcIndex = FightNpcManager:AddNpc("Öù×Ó", 1723 + i, mapid, pos_pillar[i].x, pos_pillar[i].y, self, i, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Trô Tö", 1723 + i, mapid, pos_pillar[i].x, pos_pillar[i].y, self, i, 1, 1)
 		tinsert(self.m_Pillars, nNpcIndex)
 	end
 	self.m_Monsters = {}
 	for i = 1, 20 do
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁú¸ßÊÖ", 1695, mapid, pos_monster[i].x, pos_monster[i].y, self, i + 3, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long Cao Thñ", 1695, mapid, pos_monster[i].x, pos_monster[i].y, self, i + 3, 1, 1)
 		tinsert(self.m_Monsters, nNpcIndex)
 	end
 end

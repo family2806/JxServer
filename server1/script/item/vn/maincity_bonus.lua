@@ -4,5 +4,5 @@
 --2007-01-08 by ×Ó·ÇÓã
 function main(nItemIdx)
 	Earn(10000000);
-	WriteLog("[³ÇÖ÷Àñ°ü]/t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount().."»ñµÃ1000ÍòÁ½");
+	WriteLog("[Thµnh chñ LÔ bao]/t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount().." nhËn ®­îc 1000 v¹n l­îng");
 end;

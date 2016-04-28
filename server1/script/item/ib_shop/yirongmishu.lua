@@ -8,73 +8,73 @@ Include("\\script\\dailogsys\\dailogsay.lua")
 
 local tbMask = 
 {
-	{szName = "°×Ó¯Ó¯Ãæ¾ß", tbProp = {0,11,496,1,0,0}, nExpiredTime = 48*60},
-	{szName = "°×³Ç¿¤Ö÷Ãæ¾ß", tbProp = {0,11,497,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÖÓÁéÐãÃæ¾ß", tbProp = {0,11,498,1,0,0}, nExpiredTime = 48*60},
-	{szName = "¹Å°ØÃæ¾ß", tbProp = {0,11,499,1,0,0}, nExpiredTime = 48*60},
-	{szName = "µ¶Ë«·ïÃæ¾ß", tbProp = {0,11,500,1,0,0}, nExpiredTime = 48*60},
-	{szName = "µÀÇåÕæÈËÃæ¾ß", tbProp = {0,11,501,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÃîÈçÃæ¾ß", tbProp = {0,11,502,1,0,0}, nExpiredTime = 48*60},
-	{szName = "¶ËÄ¾î£Ãæ¾ß", tbProp = {0,11,503,1,0,0}, nExpiredTime = 48*60},
-	{szName = "¶«×ÓÃæ¾ß", tbProp = {0,11,504,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÌÆ²»È¾Ãæ¾ß", tbProp = {0,11,505,1,0,0}, nExpiredTime = 48*60},	-- 10
-	{szName = "ÌÆÉñÃæ¾ß", tbProp = {0,11,506,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÌÆÌìÐÄÃæ¾ß", tbProp = {0,11,507,1,0,0}, nExpiredTime = 48*60},
-	{szName = "¼ÒÂÉ±ÇÀïÃæ¾ß", tbProp = {0,11,508,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ºÎÁáïÚÃæ¾ß", tbProp = {0,11,509,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ºÎÈËÎÒÃæ¾ß", tbProp = {0,11,510,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÏÂ³ÇÃæ¾ß", tbProp = {0,11,511,1,0,0}, nExpiredTime = 48*60},
-	{szName = "°×ÖíÃæ¾ß", tbProp = {0,11,512,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Ã·»¨Â¹Ãæ¾ß", tbProp = {0,11,513,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Ðþ¾õ´óÊ¦Ãæ¾ß", tbProp = {0,11,514,1,0,0}, nExpiredTime = 48*60},
-	{szName = "À¶Áé¹«×ÓÃæ¾ß", tbProp = {0,11,515,1,0,0}, nExpiredTime = 48*60},	-- 20
-	{szName = "À¼ÒÀÒÀÃæ¾ß", tbProp = {0,11,516,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÁøÆ®°²Ãæ¾ß", tbProp = {0,11,517,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÁøÇàÇàÃæ¾ß", tbProp = {0,11,518,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÁúÊ®Èý¼ÒÃæ¾ß", tbProp = {0,11,519,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÃÏÉÌÁ¼Ãæ¾ß", tbProp = {0,11,520,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Ä½ÈÝ°²Ãæ¾ß", tbProp = {0,11,521,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÔÂÑþÑþÃæ¾ß", tbProp = {0,11,522,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Æ¬¿ÍÃæ¾ß", tbProp = {0,11,523,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÐÂÄêÏÀ¿Í", tbProp = {0,11,524,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÐÂÄêÏÀÅ®", tbProp = {0,11,525,1,0,0}, nExpiredTime = 48*60},	-- 30
-	{szName = "ÇàÄêº£ÌÄÃæ¾ß", tbProp = {0,11,526,1,0,0}, nExpiredTime = 48*60},
-	{szName = "³ÉÄêº£ÌÄÃæ¾ß", tbProp = {0,11,527,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÇàÄê»ðÈÌÃæ¾ß", tbProp = {0,11,528,1,0,0}, nExpiredTime = 48*60},
-	{szName = "³ÉÄê»ðÈÌÃæ¾ß", tbProp = {0,11,529,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÇàÄê½ð·áÃæ¾ß", tbProp = {0,11,530,1,0,0}, nExpiredTime = 48*60},
-	{szName = "³ÉÄê½ð·áÃæ¾ß", tbProp = {0,11,531,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÇàÄêÀ×½£Ãæ¾ß", tbProp = {0,11,532,1,0,0}, nExpiredTime = 48*60},
-	{szName = "³ÉÄêÀ×½£Ãæ¾ß", tbProp = {0,11,533,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÇàÄêÐ¦ËªÃæ¾ß", tbProp = {0,11,534,1,0,0}, nExpiredTime = 48*60},
-	{szName = "³ÉÄêÐ¦ËªÃæ¾ß", tbProp = {0,11,535,1,0,0}, nExpiredTime = 48*60},	-- 40
-	{szName = "Çå¾øÊ¦Ì«Ãæ¾ß", tbProp = {0,11,536,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÉÙÄêº£ÌÄÃæ¾ß", tbProp = {0,11,537,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÉÙÄê»ðÈÌÃæ¾ß", tbProp = {0,11,538,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÉÙÄê½ð·áÃæ¾ß", tbProp = {0,11,539,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÉÙÄêÀ×½£Ãæ¾ß", tbProp = {0,11,540,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÉÙÄêÐ¦ËªÃæ¾ß", tbProp = {0,11,541,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ËÕ´ÊÜ°Ãæ¾ß", tbProp = {0,11,542,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÕÅËïÕýÃæ¾ß", tbProp = {0,11,543,1,0,0}, nExpiredTime = 48*60},
-	{szName = "×ÏÏÀÃæ¾ß", tbProp = {0,11,544,1,0,0}, nExpiredTime = 48*60},
-	{szName = "È«»ú×ÓÃæ¾ß", tbProp = {0,11,545,1,0,0}, nExpiredTime = 48*60},		-- 50	
-	{szName = "ÑÇÖÞÏóÃæ¾ß", tbProp = {0,11,546,1,0,0}, nExpiredTime = 48*60},
-	{szName = "»ÆºÓÏóÃæ¾ß", tbProp = {0,11,547,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Íõ×ôÃæ¾ß", tbProp = {0,11,548,1,0,0}, nExpiredTime = 48*60},
-	{szName = "°²ÏþÕ®Ãæ¾ß", tbProp = {0,11,549,1,0,0}, nExpiredTime = 48*60},
-	{szName = "Ñà³¯Ãæ¾ß", tbProp = {0,11,550,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÕÕÒ»ÃáÃæ¾ß", tbProp = {0,11,551,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÃîÒ»Ãæ¾ß", tbProp = {0,11,552,1,0,0}, nExpiredTime = 48*60},
-	{szName = "¶ÎÄ¾ÀïÃæ¾ß", tbProp = {0,11,553,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÌÆºÆÃæ¾ß", tbProp = {0,11,554,1,0,0}, nExpiredTime = 48*60},
-	{szName = "æÏ¶ðÃæ¾ß", tbProp = {0,11,555,1,0,0}, nExpiredTime = 48*60},		-- 60	
-	{szName = "ÁèÏö×ÓÃæ¾ß", tbProp = {0,11,556,1,0,0}, nExpiredTime = 48*60},
-	{szName = "ÀöÕÛÃ·Ãæ¾ß", tbProp = {0,11,557,1,0,0}, nExpiredTime = 48*60},
-	{szName = "´ºÅ£Ãæ¾ß", tbProp = {0,11,558,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - B¹ch Doanh Doanh", tbProp = {0,11,496,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - B¹ch thµnh quËn chñ", tbProp = {0,11,497,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Chung Linh Tó ", tbProp = {0,11,498,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Cæ B¸ch", tbProp = {0,11,499,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §ao song phông", tbProp = {0,11,500,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §¹o Thanh Ch©n Nh©n", tbProp = {0,11,501,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - DiÖu Nh­ ", tbProp = {0,11,502,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §oan Méc DuÖ ", tbProp = {0,11,503,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §«ng tö", tbProp = {0,11,504,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §­êng BÊt NhiÔm", tbProp = {0,11,505,1,0,0}, nExpiredTime = 48*60},	-- 10
+	{szName = "MÆt n¹ - §­êng thÇn", tbProp = {0,11,506,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - §­êng Thiªn T©m", tbProp = {0,11,507,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Gia LuËt TÞ Ly", tbProp = {0,11,508,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Hµ Linh Phiªu", tbProp = {0,11,509,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Hµ Nh©n Ng· ", tbProp = {0,11,510,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - H¹ Thµnh", tbProp = {0,11,511,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Heo tr¾ng", tbProp = {0,11,512,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - H­¬u ®èm", tbProp = {0,11,513,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - HuyÒn Gi¸c §¹i S­ ", tbProp = {0,11,514,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Lam linh c«ng tö", tbProp = {0,11,515,1,0,0}, nExpiredTime = 48*60},	-- 20
+	{szName = "MÆt n¹ - Lam Y Y", tbProp = {0,11,516,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - LiÔu Phi Yªn", tbProp = {0,11,517,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - LiÔu Thanh Thanh", tbProp = {0,11,518,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Long thËp tam gia", tbProp = {0,11,519,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - M¹nh Th­¬ng L­¬ng", tbProp = {0,11,520,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Mé Dung YÕn", tbProp = {0,11,521,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - NguyÖt dao dao", tbProp = {0,11,522,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - PhiÕn Kh¸ch", tbProp = {0,11,523,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - T©n Niªn HiÖp Kh¸ch", tbProp = {0,11,524,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - T©n Niªn HiÖp N÷ ", tbProp = {0,11,525,1,0,0}, nExpiredTime = 48*60},	-- 30
+	{szName = "MÆt n¹ - Thanh Niªn H¶i §­êng", tbProp = {0,11,526,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thµnh Niªn H¶i §­êng", tbProp = {0,11,527,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thanh Niªn Háa NhËn", tbProp = {0,11,528,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thµnh Niªn Háa NhËn", tbProp = {0,11,529,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thanh Niªn Kim Phong", tbProp = {0,11,530,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thµnh Niªn Kim Phong", tbProp = {0,11,531,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thanh Niªn L«i KiÕm", tbProp = {0,11,532,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thµnh Niªn L«i KiÕm", tbProp = {0,11,533,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thanh Niªn TiÕu S­¬ng", tbProp = {0,11,534,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Thµnh Niªn TiÕu S­¬ng", tbProp = {0,11,535,1,0,0}, nExpiredTime = 48*60},	-- 40
+	{szName = "MÆt n¹ - Thanh TuyÖt S­ Th¸i", tbProp = {0,11,536,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - ThiÕu Niªn H¶i §­êng", tbProp = {0,11,537,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - ThiÕu Niªn Háa NhËn", tbProp = {0,11,538,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - ThiÕu Niªn Kim Phong", tbProp = {0,11,539,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - ThiÕu Niªn L«i KiÕm", tbProp = {0,11,540,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng", tbProp = {0,11,541,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - T« Tõ Hinh", tbProp = {0,11,542,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Tr­¬ng T«ng ChÝnh", tbProp = {0,11,543,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Tö hiÖp", tbProp = {0,11,544,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - TuyÒn C¬ Tö ", tbProp = {0,11,545,1,0,0}, nExpiredTime = 48*60},		-- 50	
+	{szName = "MÆt n¹ - Voi Ch©u ¸ ", tbProp = {0,11,546,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Voi Hoµng Hµ ", tbProp = {0,11,547,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - V­¬ng T¸ ", tbProp = {0,11,548,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - Yªn HiÓu Tr¸i", tbProp = {0,11,549,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ - YÕn triÖu", tbProp = {0,11,550,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ ChiÕu NhËt MiÖn", tbProp = {0,11,551,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ DiÖu NhÊt", tbProp = {0,11,552,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ §o¹n Méc Ly", tbProp = {0,11,553,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ §­êng H¹o", tbProp = {0,11,554,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ h»ng nga", tbProp = {0,11,555,1,0,0}, nExpiredTime = 48*60},		-- 60	
+	{szName = "MÆt n¹ L¨ng Tiªu Tö", tbProp = {0,11,556,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ LÖ ChiÕt Mai", tbProp = {0,11,557,1,0,0}, nExpiredTime = 48*60},
+	{szName = "MÆt n¹ Xu©n Ng­u", tbProp = {0,11,558,1,0,0}, nExpiredTime = 48*60},
 }
 
 function showMask(nIndex, nPlayerIndex, nItemIndex)
-	local szTitle = "ÇëÑ¡ÔñÄúÐèÒªµÄÃæ¾ß"
+	local szTitle = "Xin h·y lùa chän lo¹i mÆt n¹ mµ ng­¬i muèn"
 	local tbOpt = {}
 	local nMaskCount = getn(%tbMask)
 	local nShowIndex = 0
@@ -92,11 +92,11 @@ function showMask(nIndex, nPlayerIndex, nItemIndex)
 		nShowIndex = nShowIndex + 1	
 	end
 	
-	tinsert(tbOpt, {"ÉÏÒ»Ò³", showMask, {nIndex - nPerCount, nPlayerIndex, nItemIndex}})
+	tinsert(tbOpt, {"Trang tr­íc", showMask, {nIndex - nPerCount, nPlayerIndex, nItemIndex}})
 	if nShowIndex + 1 < nMaskCount then
-		tinsert(tbOpt, {"ÏÂÒ»Ò³", showMask, {nShowIndex, nPlayerIndex, nItemIndex}})
+		tinsert(tbOpt, {"Trang kÕ ", showMask, {nShowIndex, nPlayerIndex, nItemIndex}})
 	end
-	tinsert(tbOpt, {"Àë¿ª", cancel})
+	tinsert(tbOpt, {"Rêi khái", cancel})
 	
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -106,7 +106,7 @@ function queren(nIndex, nPlayerIndex, nItemIndex)
 	local nHeight = 1
 	local nCount = 1
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Say(format("ÎªÈ·±£´óÏÀµÄ²Æ²ú°²È«£¬ÇëÁôÏÂ %d %dx%d ×°±¸¿ÕÎ»", nCount, nWidth, nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight))
 		return 
 	end
 	
@@ -114,11 +114,11 @@ function queren(nIndex, nPlayerIndex, nItemIndex)
 		return 
 	end
 	if CallPlayerFunction(nPlayerIndex, RemoveItemByIndex, nItemIndex) ~= 1 then
-		WriteLog("·ÅÆúÒ×ÈÝÃØÊõÊ§°Ü")
+		WriteLog("Hñy bá DÞ Dung BÝ ThuËt thÊt b¹i")
 		return 
 	end
 	-- ÔùËÍÑ¡¶¨µÄÃæ¾ß
-	CallPlayerFunction(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet, %tbMask[nIndex], "Ê¹ÓÃÒ×ÈÝÃØÊõ", 1)
+	CallPlayerFunction(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet, %tbMask[nIndex], "Sö dông DÞ Dung BÝ ThuËt", 1)
 end
 
 function main(nItemIndex)

@@ -8,13 +8,13 @@ function OnDeath()
 			if (random(0,99) < 60) then
 				AddEventItem(143)
 				DelItem(142)
-				AddNote("×¥À´ÁËÑÛ¾µÍõòþÉß")
-				Msg2Player("ÄãÓÃ÷êÏãÀ´¿ØÖÆËü×îºóÒ²×¥µ½ÁË")
+				AddNote("B¾t lÊy Nh·n KÝnh v­¬ng M·ng Xµ ")
+				Msg2Player("B¹n l¹i dïng X¹ h­¬ng ®Ó khèng chÕ nã, vµ cuèi cïng còng ®· b¾t ®­îc ")
 			else
-				Msg2Player("ÄãÊÔÓÃ÷êÏãÀ´×¥ÑÛ¾µÍõòþÉß£¬µ«ÊÇ²»Ð¡ÐÄ±»ËûÌÓÅÜÁË")
+				Msg2Player("B¹n thö dïng X¹ h­¬ng ®Ó b¾t Nh·n KÝnh v­¬ng M·ng Xµ, vµ ®· kh«ng cÈn thËn ®Ó nã ch¹y tho¸t ")
 			end
 		else
-			Msg2Player("ÑÛ¾µÍõòþÉßµÄ¾ç¶¾²»ÄÜ½â£¬ÒªÊÇÃ»ÓÐ÷êÏã¿ËÖÆËüÊÇÎÞ·¨×¥×¡µÄ")
+			Msg2Player("KÞch ®éc cña Nh·n KÝnh v­¬ng M·ng Xµ kh«ng cã thø nµo s¸nh ®­îc. B¹n kh«ng cã thø X¹ h­¬ng ®Ó kh¾c chÕ nã th× v« ph­¬ng b¾t ®­îc nã ")
 		end
 	end
 end;

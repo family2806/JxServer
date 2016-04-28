@@ -38,10 +38,10 @@ if (PlayerIndex1 > 0) then
 			if (mod(serieskill_r, 3) == 0) then
 				if (deathcamp == 1) then
 						bt_addtotalpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 2))
-						Msg2Player("<color=yellow>Äã»ñµÃÈıÁ¬Õ¶»ı·Ö"..BT_GetTypeBonus(PL_MAXSERIESKILL, 2))
+						Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tİch lòy Liªn tr¶m "..BT_GetTypeBonus(PL_MAXSERIESKILL, 2))
 				else
 						bt_addtotalpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 1))
-						Msg2Player("<color=yellow>Äã»ñµÃÈıÁ¬Õ¶»ı·Ö"..BT_GetTypeBonus(PL_MAXSERIESKILL, 1))
+						Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tİch lòy Liªn tr¶m "..BT_GetTypeBonus(PL_MAXSERIESKILL, 1))
 				end
 			end
 		end
@@ -75,12 +75,12 @@ if (PlayerIndex1 > 0) then
 		BT_BroadSelf();
 		
 		if (GetCurCamp()  == 1) then
-			str  = "ËÎ·½"..launrankname..LaunName.." É±ËÀÁË½ğ·½"..rankname..DeathName.."£¬PKÈËÊıÔöÎª"..BT_GetData(PL_KILLPLAYER);
+			str  = "Phe Tèng"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Kim "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 		else
-			str  = "½ğ·½"..launrankname..LaunName.." É±ËÀÁËËÎ·½"..rankname..DeathName.."£¬PKÈËÊıÔöÎª"..BT_GetData(PL_KILLPLAYER);
+			str  = "Phe Kim"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Tèng "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 		end
 		
-		Msg2Player("<color=pink>¹§Ï²£ºÄãÉ±ËÀÁËµĞ·½:"..rankname..DeathName.." PKÈËÊıÔöÎª"..BT_GetData(PL_KILLPLAYER));
+		Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER));
 		Msg2MSAll(MISSIONID, str);
 	end
 	PlayerIndex = OrgPlayer;

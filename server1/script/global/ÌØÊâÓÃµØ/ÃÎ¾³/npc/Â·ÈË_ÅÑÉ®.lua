@@ -5,14 +5,14 @@ Include("\\script\\missions\\clearskill\\clearhole.lua");
 function main()
 	-- ·Ç·¨×´Ì¬
 	if (CSP_CheckValid() == 0) then
-		CSP_WriteLog("½øÈëÏ´Ëèµº²»Õı³£. ");
-		Say("GM: <color=red>Äã²»ÄÜ½øÏ´Ëèµº£¬ÒÑ±»ÏµÍ³¼ÇÂ¼£¬ÇëÈ¥ÕÒ·şÎñµÄÈËµ÷ÕûºÃ! <color> ", 1, "Àë¿ªÏ´Ëèµº/LeaveHere_yes")
+		CSP_WriteLog("TiÕn nhËp vµo §¶o TÈy Tñy mét c¸ch kh«ng b×nh th­êng. ");
+		Say("GM: <color=red>B¹n kh«ng thÓ vµo ®¶o TÈy Tñy, ®· bŞ hÖ thèng ghi nhí, xin h·y ®i t×m ng­êi phôc vô ®Ó chØnh lı l¹i! <color> ", 1, "Rêi khái ®¶o TÈy Tñy /LeaveHere_yes")
 		return -1;
 	end
 	
 	nLevel = GetLevel();
 	if (nLevel < CSP_NEEDLEVEL) then
-		Talk(1, "", "ÄãµÄµÈ¼¶»¹Î´´ïµ½"..CSP_NEEDLEVEL.."²»ÄÜÀë¿ªÏ´Ëèµº. ")
+		Talk(1, "", "CÊp cña ng­¬i vÉn ch­a ®¹t "..CSP_NEEDLEVEL.."Ch­a thÓ rêi khái ®¶o TÈy Tñy. ")
 		return -1;
 	end
 
@@ -20,59 +20,59 @@ function main()
 	if (nType == CSP_CTYPE_SKILL) then -- Ö»Ï´¼¼ÄÜµã
 		local tbOpt = 
 		{
-			"Ï´¼¼ÄÜµã/DoClearSkill",
-			"Ï´Ç±ÄÜµã/add_prop",
-			"²»Ï´/OnCancel",
-			"¹ØÓÚÏ´Ëè/Help",
-			"Àë¿ªÏ´Ëèµº /LeaveHere",
+			"TÈy ®iÓm kü n¨ng /DoClearSkill",
+			"T¨ng ®iÓm tiÒm n¨ng/add_prop",
+			"Kh«ng tÈy /OnCancel",
+			"VÒ viÖc TÈy Tñy /Help",
+			"Rêi khái ®¶o TÈy Tñy /LeaveHere",
 		}
-		Say("ÄãÖ»ÄÜÏ´ <color=blue> ¼¼ÄÜµã<color>. Í¬ÒâÏ´Âğ£¿", getn(tbOpt), tbOpt)
+		Say("ng­¬i chØ cã thÓ tÈy <color=blue> ®iÓm kü n¨ng<color>. Cã ®ång ı tÈy kh«ng? ", getn(tbOpt), tbOpt)
 	elseif (nType == CSP_CTYPE_PROP) then -- Ö»ÄÜÇ±ÄÜµã
 		local tbOpt = 
 		{
-			"Ï´Ç±ÄÜµã/DoClearProp",
-			"Ôö¼ÓÇ±ÄÜµã/add_prop",
-			"²»Ï´ /OnCancel",
-			"¹ØÓÚÏ´Ëè /Help",
-			"Àë¿ªÏ´Ëè /LeaveHere",
+			"TÈy ®iÓm tiÒm n¨ng/DoClearProp",
+			"T¨ng ®iÓm tiÒm n¨ng/add_prop",
+			"Kh«ng tÈy /OnCancel",
+			"VÒ viÖc TÈy Tñy /Help",
+			"Rêi khái ®¶o TÈy Tñy /LeaveHere",
 		}
-		Say("ÄãÖ»ÄÜÏ´<color=blue> Ç±ÄÜµã<color>. Í¬ÒâÏ´Âğ? ", getn(tbOpt), tbOpt)
+		Say("Ng­¬i chØ cã thÓ tÈy <color=blue> ®iÓm tiÒm n¨ng<color>. Cã ®ång ı tÈy kh«ng? ", getn(tbOpt), tbOpt)
 	else -- if (nType == CSP_NEEDJEWEL_ALL) then -- È«Ï´(nType¿ÉÄÜÊÇ0£¬»ò3)
 		local tbOpt = 
 		{
-			 "Ï´¼¼ÄÜµã/DoClearSkill",
-			 "Ï´Ç±ÄÜµã/DoClearProp", 
-			 "Ôö¼ÓÇ±ÄÜµã/add_prop", 
-			 "²»Ï´ /OnCancel", 
-			 "¹ØÓÚÏ´Ëè/Help", 
-			 "Àë¿ªÏ´Ëèµº/LeaveHere"
+			 "TÈy ®iÓm kü n¨ng /DoClearSkill",
+			 "TÈy ®iÓm tiÒm n¨ng/DoClearProp", 
+			 "T¨ng ®iÓm tiÒm n¨ng/add_prop", 
+			 "Kh«ng tÈy /OnCancel", 
+			 "VÒ viÖc TÈy Tñy /Help", 
+			 "Rêi khái ®¶o TÈy Tñy /LeaveHere"
 		}
-		Say("ÄãÍ¬ÒâÏ´ËèÂğ? ", getn(tbOpt),tbOpt)
+		Say("Ng­¬i cã ®ång ı tÈy tñy kh«ng? ", getn(tbOpt),tbOpt)
 	end;
 end
 
 function add_prop()
-	Say("ËµÃ÷£ºÄãÏë×Ô¼ºÊ²Ã´¼¼ÄÜÖµ?", 4,
-			"Ôö¼ÓÁ¦Á¿/add_prop_str",
-			"×Ô¼ºÉí·¨/add_prop_dex",
-			"×Ô¼ºÍâ¹¦/add_prop_vit",
-			"×Ô¼ºÄÚ¹¦/add_prop_eng")
+	Say("Thİch Minh: Ng­¬i muèn t¨ng ®iÓm kü n¨ng nµo?", 4,
+			"t¨ng søc m¹nh/add_prop_str",
+			"t¨ng Th©n Ph¸p/add_prop_dex",
+			"t¨ng Ngo¹i C«ng/add_prop_vit",
+			"T¨ng néi c«ng/add_prop_eng")
 end
 
 function add_prop_str()
-	AskClientForNumber("enter_str_num", 0, GetProp(), "ÇëÊäÈëÁ¦Á¿ÊıÖµ: ");
+	AskClientForNumber("enter_str_num", 0, GetProp(), "Xin h·y nhËp ®iÓm sè søc m¹nh: ");
 end
 
 function add_prop_dex()
-	AskClientForNumber("enter_dex_num", 0, GetProp(), "ÇëÊäÈëÉí·¨ÊıÖµ: ");
+	AskClientForNumber("enter_dex_num", 0, GetProp(), "Xin h·y nhËp ®iÓm sè th©n ph¸p: ");
 end
 
 function add_prop_vit()
-	AskClientForNumber("enter_vit_num", 0, GetProp(), "ÇëÊäÈëÍâ¹¦ÊıÖµ:");
+	AskClientForNumber("enter_vit_num", 0, GetProp(), "Xin h·y nhËp ®iÓm sè ngo¹i c«ng:");
 end
 
 function add_prop_eng()
-	AskClientForNumber("enter_eng_num", 0, GetProp(), "Ç×ÊäÈëÄÚ¹¦ÊıÖµ: ");
+	AskClientForNumber("enter_eng_num", 0, GetProp(), "Xin h·y nhËp ®iÓm sè néi c«ng: ");
 end
 
 function enter_str_num(n_key)
@@ -104,7 +104,7 @@ function enter_eng_num(n_key)
 end
 
 function DoClearSkill()
-	Say("ÄãÍ¬ÒâÏ´¼¼ÄÜÖµÂğ? ", 2, "Ï´¼¼ÄÜÖµ/DoClearSkillCore","²»Ï´/OnCancel")
+	Say("Ng­¬i ®ång ı TÈy ®iÓm kü n¨ng kh«ng? ", 2, "TÈy ®iÓm kü n¨ng /DoClearSkillCore","Kh«ng tÈy /OnCancel")
 end
 function DoClearSkillCore()
 --	if (Pay(100000) == 0) then
@@ -125,12 +125,12 @@ function DoClearSkillCore()
 	AddMagicPoint(rollback_point)
 	if (i ~= -1) then AddMagic(210,i) end			-- Èç¹ûÑ§¹ıÇá¹¦Ôò¼Ó»ØÔ­ÓĞµÈ¼¶
 	if (j ~= -1) then AddMagic(400,j) end			-- Èç¹ûÑ§¹ı¡°½Ù¸»¼ÃÆ¶¡±Í¬Ñù´¦Àí
-	Msg2Player("Ï´Ëè³É¹¦£¡ÄãÒÑ¾­¿ÉÒÔ·ÖÅäµãÁË"..rollback_point.."§i¼¼ÄÜµã¿ÉÒÔÖØĞÂ·ÖÅä. ")
-	Talk(1,"KickOutSelf","Ï´Ëè³É¹¦£¡ÄãÒÑ¾­¿ÉÒÔ·ÖÅäµãÁË"..rollback_point.."¼¼ÄÜµã¿ÉÒÔÖØĞÂ·ÖÅä. ")
+	Msg2Player("TÈy Tñy thµnh c«ng! ng­¬i ®· cã thÓ ph©n phèi ®iÓm "..rollback_point.."§iÓm kü n¨ng cã thÓ ph©n phèi l¹i. ")
+	Talk(1,"KickOutSelf","TÈy Tñy thµnh c«ng! ng­¬i ®· cã thÓ ph©n phèi ®iÓm "..rollback_point.."§iÓm kü n¨ng cã thÓ ph©n phèi l¹i. ")
 end;
 
 function DoClearProp()
-	Say("ÄãÍ¬ÒâÏ´Ç±ÄÜµãÂğ? ", 2, "Ï´Ç±ÄÜµã/DoClearPropCore", "²»Ï´/OnCancel")
+	Say("Ng­¬i ®ång ı tÈy ®iÓm tiÒm n¨ng kh«ng? ", 2, "TÈy ®iÓm tiÒm n¨ng/DoClearPropCore", "Kh«ng tÈy /OnCancel")
 end
 
 function DoClearPropCore()
@@ -153,23 +153,23 @@ end;
 function Help()
 	strHelp = 
 	{
-		"Ï´ËèÖ®ºó£¬Äã¿ÉÒÔµ½ÍâÃæ´òÄ¾ÈË£¬»òÕßÍÅÌåÒ»Æğ½øÈëÉ½¶´Êµ¼ùÕ½¶·£¬È»ºóÀë¿ªµº²ÅÄÜËãÊÇÍê³É. ",
-		"Ö»ĞèÒªÄã²»Àë¿ªµº£¬ÎÒ½«°ïÖúÄãÏ´Ëè?",
-		"ÍâÃæÓĞÄ¾×®(3000ÉúÁ¦) ;  É³°ü(10000ÉúÁ¦) ; Ä¾ÈË£¨30000 ÉúÁ¦) ÈÃÈËÊµ¼ùÏ´ËèĞ§¹û!",
-		"Èç¹ûÏë±ÈÈü£¬¿ÉÒÔ½øÉ½¶´£¬¾¡¹ÜÓĞÊ§°Ü£¬Ò²²»»áÓĞÊ²Ã´ËğÊ§",
-		"Èç¹ûÉ½¶´ÀïÃæ¾ÍºÜÕ­£¬×î¶àÒ²Ö»ÈİÄÉ20ÈË£¬ËùÒÔÈç¹ûÒÑ¾­¹»ÈËÁË¾Í²»ÓÃ½øÈëÁË. ",
-		"Èç¹ûÉ½¶´ÀïÃæ¾ÍºÜÕ­£¬×î¶àÒ²Ö»ÈİÄÉ20ÈË£¬ËùÒÔÈç¹ûÒÑ¾­¹»ÈËÁË¾Í²»ÓÃ½øÈëÁË. ",
-		"×îºó£¬Ê²Ã´Ê±ºò¸Ğ¾õ¼¼ÄÜµã¹»ÁË¾ÍÀ´ÕÒÎÒ£¬ÎÒ»á´øÄã·µ»ØÀÏµØ·½"
+		"Sau khi TÈy Tñy, ng­¬i cã thÓ ®i ra ngoµi ®Ó ®¸nh víi méc nh©n, hoÆc c¶ nhãm sÏ cïng ®i vµo s¬n ®éng ®Ó thùc nghiÖm chiÕn ®Êu, sau ®ã rêi khái ®¶o míi ®­îc xem lµ ®· hoµn thµnh. ",
+		"ChØ cÇn ng­¬i kh«ng rêi khái ®¶o, ta sÏ gióp ng­¬i tÈy tñy võa ı!",
+		"Ngoµi kia cã Cäc gç (3000 Sinh lùc) ;  Bao c¸t (10000 Sinh lùc) ; Méc nh©n 30000 Sinh lùc) ®Ó cho ng­¬i thö nghiÖm hiÖu qu¶ tÈy tñy!",
+		"NÕu muèn thi ®Êu cã thÓ vµo trong s¬n ®éng, cho dï cã thÊt b¹i th× còng kh«ng bŞ tæn thÊt g×. ",
+		"Nh­ng bªn trong s¬n ®éng th× l¹i rÊt nhá nhÑp, nhiÒu nhÊt còng chØ chøa ®­îc 20 ng­êi, cho nªn nÕu nh­ ®· cã ®ñ ng­êi th× ng­¬i kh«ng thÓ ®i vµo. ",
+		"Nh­ng bªn trong s¬n ®éng th× l¹i rÊt nhá nhÑp, nhiÒu nhÊt còng chØ chøa ®­îc 20 ng­êi, cho nªn nÕu nh­ ®· cã ®ñ ng­êi th× ng­¬i kh«ng thÓ ®i vµo. ",
+		"Cuèi cïng, khi nµo ng­¬i c¶m thÊy ®iÓm kü n¨ng ®· ®ñ h·y ®Õn t×m ta, ta sÏ ®­a ng­¬i trë vÒ chç cò "
 	}
 	Talk(7, "", strHelp[1], strHelp[2], strHelp[3], strHelp[4], strHelp[5], strHelp[6], strHelp[7]);
 end;
 
 function LeaveHere()
-	Say("ÄãÒÔÎªÒÑÏ´ËèÍêÁË°¡£¿ÓĞÏëÀë¿ªÂğ? ",2, "ÏëÀë¿ª/LeaveHere2", "ÈÎÎñÈÏÕæÏëÏë/OnCanCel")
+	Say("ng­¬i cho r»ng ®· TÈy Tñy xong råi ­? Cã muèn rêi khái kh«ng? ",2, "Muèn rêi khái /LeaveHere2", "§Ó ta suy nghÜ kü l¹i xem/OnCanCel")
 end
 
 function LeaveHere2()
-	Say("Àë¿ªÏ´Ëèµº£¬Èç¹ûÏë·µ»Ø½«ºÜÄÑ£¬ÄãÒÀÈ»¼á¾öÀë¿ª°¡£¿", 2, "ÎÒÕæµÄÏëÀë¿ªÕâ¸ö¹íµØ·½ /LeaveHere_yes", "ÎÒÒÀÈ»ÏëÁôÏÂ/OnCanCel")
+	Say("Rêi khái ®¶o TÈy Tñy, nÕu muèn trë l¹i sÏ rÊt khã. ng­¬i vÉn kiªn quyÕt rêi khái chø? ", 2, "ta thËt sù muèn rêi khái n¬i ma qu¸i nµy /LeaveHere_yes", "ta vÉn muèn ë l¹i /OnCanCel")
 end
 
 function LeaveHere_yes()

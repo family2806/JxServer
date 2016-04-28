@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(1,"","¿ª£¡ 5, 8, 13! ½»Ç®!")
+	Talk(1,"","Më! 5, 8, 13! Giao tiÒn!")
 end;

@@ -13,15 +13,15 @@ function tbVNG_LY2011Mission:SongJinAward(nRank)
 	local szNote = ""
 	local nItemCount = 0
 	if (nRank == 3000) then
-		szNote =  "[VNG][LunarYear2011][宋金  3000]";
+		szNote =  "[VNG][LunarYear2011][T鑞g Kim  3000]";
 		nItemCount = 8
 	else if (nRank == 1000)then
-			szNote =  "[VNG][LunarYear2011][宋金  1000]";
+			szNote =  "[VNG][LunarYear2011][T鑞g Kim  1000]";
 			nItemCount = 4
 		end
 	end
 	
-	local tbBanhChung = {szName="粽子",tbProp={6,1,30086,1,0,0},nExpiredTime=tbVNG_LY2011.nEndDay}
+	local tbBanhChung = {szName="B竛h Ch璶g",tbProp={6,1,30086,1,0,0},nExpiredTime=tbVNG_LY2011.nEndDay}
 	PlayerFunLib:GetItem(tbBanhChung, nItemCount,  szNote)
 end
 
@@ -32,7 +32,7 @@ function tbVNG_LY2011Mission:COT_Award(nBatch)
 	
 	if (nBatch == 17) then
 		local szNote = "[VNG][LunarYear2011][Vt 秈 17]"	
-		local tbBanhChung = {szName="粽子",tbProp={6,1,30086,1,0,0},nExpiredTime=tbVNG_LY2011.nEndDay}
+		local tbBanhChung = {szName="B竛h Ch璶g",tbProp={6,1,30086,1,0,0},nExpiredTime=tbVNG_LY2011.nEndDay}
 		PlayerFunLib:GetItem(tbBanhChung, 6,  szNote)
 	end
 	

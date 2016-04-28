@@ -25,7 +25,7 @@ function tbSevenCityWar_Theme:AddNpc(nCloseDate)
 		local nSubWorldIndex = SubWorldID2Idx(tbPos[1]);
 		
 		if nSubWorldIndex >= 0 then
-			local nNpcIndex = AddNpc(self.tbNpcBaoBao.nNpcId, 1, nSubWorldIndex, tbPos[2] * 32, tbPos[3] * 32, 0, "±¦±¦¸ç");
+			local nNpcIndex = AddNpc(self.tbNpcBaoBao.nNpcId, 1, nSubWorldIndex, tbPos[2] * 32, tbPos[3] * 32, 0, "B¶o B¶o Ca");
 			if nNpcIndex > 0 then
 				self.tbNpcBaoBao.tbNpcIndex[getn(self.tbNpcBaoBao.tbNpcIndex) + 1] = nNpcIndex;
 				SetNpcScript(nNpcIndex, "\\script\\activitysys\\npcdailog.lua");

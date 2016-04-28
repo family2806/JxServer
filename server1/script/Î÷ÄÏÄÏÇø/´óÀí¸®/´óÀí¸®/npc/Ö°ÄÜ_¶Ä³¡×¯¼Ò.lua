@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-Talk(2,"","·ÅÀ²£¬·ÅÀ²£¬·ÅÍêÊÕÊÖ¡£¿ª¡ª¡ª! ","ÊäÁË£¬¸øÇ®°É")
+Talk(2,"","§Æt ®i, ®Æt ®i! §Æt xong rót tay! Më---","Thua råi! §­a tiÒn ®i! ")
 end;

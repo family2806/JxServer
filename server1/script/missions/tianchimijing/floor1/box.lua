@@ -12,12 +12,12 @@ function GiveItem(nNpcIndex)
 	
 	local tbItemList = 
 	{
-		{szName="Ò»°ÑÉúÐâµÄµ¶",tbProp={6, 1, 2592, 1, 0, 0}, nExpiredTime = 30},
-		{szName="Ò»°Ñ¾ÉÇ¹",tbProp={6, 1, 2593, 1, 0, 0}, nExpiredTime = 30},
-		{szName="Ò»°Ñ¹Å½£",tbProp={6, 1, 2594, 1, 0, 0}, nExpiredTime = 30},
+		{szName="Mét c©y ®ao gØ",tbProp={6, 1, 2592, 1, 0, 0}, nExpiredTime = 30},
+		{szName="Mét C©y Th­¬ng Cò",tbProp={6, 1, 2593, 1, 0, 0}, nExpiredTime = 30},
+		{szName="Mét C©y KiÕm Cæ.",tbProp={6, 1, 2594, 1, 0, 0}, nExpiredTime = 30},
 	}
 	
 	local nId = random(1, getn(tbItemList))
-	tbAwardTemplet:GiveAwardByList(tbItemList[nId] , "´ÓµÀ¾ßÏä»ñµÃ");
+	tbAwardTemplet:GiveAwardByList(tbItemList[nId] , "NhËn ®­îc tõ trong r­¬ng ®¹o cô");
 	HideNpc(nNpcIndex, 180)
 end

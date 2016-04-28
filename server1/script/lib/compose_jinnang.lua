@@ -58,13 +58,13 @@ function tbComposeListForJinNang:ComposeByListId(nId, nItemIndex, szDescLink)
 	local tbMaterial = tbFormula.tbMaterial
 	local tbProduct = tbFormula.tbProduct
 	local szComposeTitle = tbFormula.szComposeTitle or format("§æi %s", tbProduct.szName)
-	local szMsg = format("<dec>%s%s ÐèÒª: <enter>%s", szDescLink, szComposeTitle ,tbCompose:GetMaterialList(tbMaterial))
+	local szMsg = format("<dec>%s%s cÇn: <enter>%s", szDescLink, szComposeTitle ,tbCompose:GetMaterialList(tbMaterial))
 	local szFunFormat = format("#%s:ConfirmCompose(%d,%d)", self.szClassName, nId, nItemIndex)
 	local tbSay = 
 	{
 		szMsg,
-		format("È·ÈÏ/%s", szFunFormat),
-		"·ÅÆú/OnCancel"
+		format("X¸c nhËn/%s", szFunFormat),
+		"Hñy bá /OnCancel"
 	}
 	CreateTaskSay(tbSay)
 end

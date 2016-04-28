@@ -6,11 +6,11 @@
 function main(sel)
 	UTask_tr = GetTask(4);
 	if (UTask_tr == 60*256+20) and (HaveItem(129) == 0) then
-		Talk(8, "select", "ÀÏ×ÓµÄÊÖÆøÔõÃ´ÕâÃ´±³£¬¶ÄÒ»ÅÌÊäÒ»ÅÌ£¡ÀÏ×ÓÒÑ¾­ÊäµÃÇã¼Òµ´²úÁË£¬Ö»Ê£ÏÂÕâ±úÒ»ÎÄ²»ÖµµÄ¶Ï½£!", "§o¶Ï½££¡ÀÏĞÖ£¬ÄãÕâ°Ñ¶Ï½£Âô²»Âô?", "Âô£¡µ±È»Âô£¡Äã±ğ¿´Õâ°Ñ½£Ä£Ñù²»ÆğÑÛ£¬ÆäÊµÓÃÀ´ÇĞÇĞ²Ë»¹ÊÇÂù²»´íµÄ£¡Äã¿ÉÕæÓĞÑÛ¹â°¡!", "ÄãÒª¶àÉÙÇ®?", "²»¹ó²»¹ó£¬²Å500Á½Òø×Ó!", "Ê²Ã´£¿Äã¼òÖ±ÊÇÔÚÇÃÕ©Âï?", "Äã¿´ÎÒÒÑ¾­ÇîµÃÉíÎŞ·ÖÎÄÁË£¬¾ÍËã°ï°ïÃ¦£¬ÈÃÎÒÓÃÕâÒ»°ÙÁ½È¥·­±¾Âï!", "ºÃ°É£¬Èç¹û²»ÊÇÎªÁËÍê³ÉÈÎÎñ£¬ÎÒ²Å²»ÉÏÄãµÄµ±ÄØ) ")
+		Talk(8, "select", "H«m tay ta thËt lµ xui xÎo! §Æt v¸n nµo thua v¸n ®ã! B©y giê bªn ng­êi chØ cßn c©y kiÕm cïn nµy th«i!", "§o¹n KiÕm! L·o huynh! C©y kiÕm nµy huynh cã b¸n kh«ng?", "B¸n! B¸n chø! Ng­oi thËt cã m¾t tinh t­êng ®ã! NhiÒu ng­êi hái råi mµ ta ch­a b¸n, v× hä kh«ng biÕt nh×n!", "CÇn bao nhiªu tiÒn?", "Kh«ng m¾c! ChØ cÇn 500 l­îng!", "Cã ®¸ng gi¸ vËy kh«ng?", "Ng­¬i xem ta ®· t¶ t¬i thÕ nµy råi! Th«i th× xem nh­ ng­¬i gióp ®ì kÎ khèn khã vËy!", "Th«i còng ®­îc! (Dï sao ta còng ®ang cÇn nã) ")
 	elseif (UTask_tr > 60*256+20) then 
-		Talk(1,"","ÎÒÃ»ÓĞÊ²Ã´¿ÉÒÔÂôÁË!")
+		Talk(1,"","Ta kh«ng cßn thø g× ®¸ng gi¸ ®Ó b¸n n÷a!")
 	else
-		Talk(1,"","¶ÄÍ½£ºÎÒÒÑ¾­ºÃ¼¸ÌìÃ»³ÔÃ»ºÈÁË£¬Êä¹âÁË¼Òµ±£¬»Øµ½¼ÒÀïÓÖ±»ÀÏÆÅ´òÁË³öÀ´¡£")
+		Talk(1,"","MÊy ngµy nay ta kh«ng cã g× vµo bông! LÇn nµy vÒ thÕ nµo còng bŞ con s­ tö ë nhµ xĞ x¸c!")
 	end
 end;
 
@@ -18,9 +18,9 @@ function select()
 	if (GetCash() >= 500) then
 		Pay(500)
 		AddEventItem(129)
-	Msg2Player("µÃµ½¶Ï½£¡°×ªÆÇ¡±¡£")
-		AddNote("µ½´ïãê¾©¶Ä³¡£¬»¨500Á½ÂòÁË°Ñ¶Ï½£ ")
+	Msg2Player("LÊy ®­îc ®o¶n kiÕm ChuyÓn Hån ")
+		AddNote("§i ®Õn sßng b¹c ë BiÖn Kinh, mua mét thanh ®o¶n kiÕm mÊt 500 l­îng ")
 	else
-		Talk(1,"","Ô­À´Ò²ÊÇ¸öÇî¹í£¬ÄÑµÀÏëÆ­ÎÒµÄ±¦½£²»³É")
+		Talk(1,"","Ch¶ lÏ ng­¬i còng nghÌo m¹t gièng ta vËy sao?")
 	end
 end;

@@ -93,7 +93,7 @@ end
 
 function tbDropTemplet:GiveAwardByList(nNpcIndex, nBelongerIndex, tbItem, szLogTitle, nAwardCount)
 	if not tbItem then --ÎïÆ·±íÎª¿Õ
-		self:Debug("ÎïÆ·±í¿Õ.")
+		self:Debug("B¶ng vËt phÈm trèng.")
 		return 0
 	end
 	nAwardCount = nAwardCount or 1
@@ -186,7 +186,7 @@ function tbDropTemplet:WriteLog(szLogTitle, szMsg)
 		
 		
 	else
-		self:Debug("ÎïÆ·µôÂäº¯Ã»ÓĞlog")
+		self:Debug("Hµm r¬i vËt phÈm kh«ng cã log")
 	end
 end
 

@@ -6,22 +6,22 @@ SZFILE = [[\settings\maps\]]..CO_MAPPOINTFLORDER..[[\player.txt]];
 function signin_add()
 	--½øĞĞ¼ÆÊı
 	if (GetTask(TK_CO_PLAYTIMES) >= CO_MAXPLAYTIMES) then
-		Say(CO_SIGNNPCNAME.."½ñÌìÄãÒÑ²Î¼Ó<color=yellow>"..CO_MAXPLAYTIMES.." ´Î<color> ÁË, »òĞíÄãÒ²ÀÛÁË£¬¸ÃÈ¥ĞİÏ¢ÁË!", 0);
+		Say(CO_SIGNNPCNAME.."H«m nay ng­¬i ®· tham gia <color=yellow>"..CO_MAXPLAYTIMES.." lÇn<color> råi, cã lÏ ng­¬i còng mÖt råi, nªn ®i nghØ ®i!", 0);
 		return 0;
 	end;
 
 	if (GetTask(TK_CO_TOTAL) >= 50) then
-		Say(CO_SIGNNPCNAME.."ÄãÒÑ²Î¼Ó½ÚÈÕ»î¶¯ <color=yellow>50 ´Î<color> ÁË, ¿´ÆğÀ´Ò²ÀÛÁË£¬ĞèÒªĞİÏ¢!", 0);
+		Say(CO_SIGNNPCNAME.."Ng­¬i ®· tham gia ho¹t ®éng TÕt <color=yellow>50 lÇn<color> råi, xem ra còng ®· mÖt, cÇn ph¶i nghØ ng¬i!", 0);
 		return 0;
 	end;
 	
 	if (GetLevel() < CO_LEVELLIMIT) then
-		Say(CO_SIGNNPCNAME.."ÄãµÄµÈ¼¶¹ıµÍ£¬ÎÒ²»ÏëÄãÃ°ÏÕ£¬Ê²Ã´Ê±ºò´ïµ½<color=yellow>"..CO_LEVELLIMIT.."<color> À´ÕÒÎÒ.", 0);
+		Say(CO_SIGNNPCNAME.."§¼ng cÊp cña ng­¬i qu¸ thÊp, ta kh«ng muèn ng­¬i m¹o hiÓm, khi nµo ®¹t ®Õn cÊp <color=yellow>"..CO_LEVELLIMIT.."<color> h·y ®Õn t×m ta.", 0);
 		return 0;
 	end;
 	
 	if (IsCharged() == 0) then
-		Say(CO_SIGNNPCNAME.."Ö»ÓĞ³äÖµÍæ¼Ò²ÅÄÜ²Î¼Ó½ÚÈÕ»î¶¯.", 0);
+		Say(CO_SIGNNPCNAME.."ChØ cã ng­êi ch¬i n¹p thÎ míi cã thÓ tham gia c¸c ho¹t ®éng TÕt.", 0);
 		return 0;
 	end;
 		
@@ -34,10 +34,10 @@ function signin_add()
 			    bOn = 1;
 		end;
 		if (bOn == 0) then
-			Talk(1, "", CO_SIGNNPCNAME.."30ËêÈË»î¶¯½«ÓÚÃ¿Ìì¾ÙĞĞ£¬Ê±¼äÎª<color=yellow>12: µ½ 14: 00 , 19: 00 µ½ 23: 00 £¬1: 00 µ½ 3: 00 <color>.´ó¼Ò¿ìÀ´²Î¼Ó°É.");
+			Talk(1, "", CO_SIGNNPCNAME.."Ho¹t ®éng ¤ng ba m­¬i sÏ diÔn ra mçi ngµy, trong kho¶ng thêi gian <color=yellow>12: 00 ®Õn 14: 00 tr­a, 19: 00 ®Õn 23: 00 tèi vµ 1: 00 ®Õn 3: 00 s¸ng<color>. Mäi ng­êi h·y mau chãng tham gia.");
 			return 0;
 		else
-			Talk(1, "", CO_SIGNNPCNAME.."ÄãÒ²Ïë²Î¼Ó'Çı¸Ï30ËêÈË'»î¶¯Âğ£¿ÒÅº¶µÄÊÇ£¬ÒıÂ·ÈËÒÑ¾­×ßÁË£¬Ëû½«ÓÚµÚ0·Ö, µÚ15·Ö, µÚ30·Ö£¬µÚ45·Öºó»ØÀ´");
+			Talk(1, "", CO_SIGNNPCNAME.."Ng­¬i còng muèn tham gia ho¹t ®éng '§uæi «ng ba m­¬i' sao? ChØ tiÕc hiÖn t¹i ng­êi dÉn ®­êng ®· ®i mÊt. H¾n sÏ quay vÒ vµo thêi ®iÓm phót thø 0, phót thø 15, phót thø 30 vµ phót thø 45 mçi giê.");
 			return 0;
 		end;
 	end;

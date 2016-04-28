@@ -14,7 +14,7 @@ local _AddCurExp = function(self, nItemCount, szLogTitle)
 	
 	if nRemainExp < nExp then
 		nExp = nRemainExp
-		Msg2Player(format("ÒÑ´ïµ½×î¸ß¾­Ñé£¬´Ë´ÎÖ»ÄÜ»ñµÃ%d ¾­Ñé.", nExp))
+		Msg2Player(format("§· ®¹t ®Õn kinh nghiÖm cao nhÊt, lÇn nµy chØ thu ®­îc %d kinh nghiÖm.", nExp))
 	end
 	if nExp > 0 then
 		tbAwardTemplet:GiveAwardByList({nExp = nExp}, szLogTitle)
@@ -32,21 +32,21 @@ local tbExpAward =
 
 function main(nItemIndex)
 	if GetItemParam(nItemIndex, 1) ~= 0 and GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
-		Talk(1,"", "¸ÃÎïÆ·ÒÑ¹ýÆÚ")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 		return 0
 	end
 	
 	local bRet, szFailMsg = tbXunMaShu0903:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(1, "", szFailMsg.."²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·.")
+		Talk(1, "", szFailMsg.."Kh«ng ®­îc sö dông vËt phÈm nµy.")
 		return 1
 	end
 	
 	
-	local szItemGroupName = format("%s v?%s", "»Æ½ð±¦Ïä", "°×½ð±¦Ïä")
+	local szItemGroupName = format("%s vµ %s", "Hoµng Kim B¶o r­¬ng", "B¶o r­¬ng B¹ch Kim")
 	if tbXunMaShu0903.tbTask:CheckExpFromOther() ~= 1 then
-		Talk(1, "", format("Ê¹ÓÃ%s ×î¶à¿ÉÒÔ»ñµÃ%u ¾­Ñé", szItemGroupName, tbXunMaShu0903.tbTask.nMaxExpFromOther * 1e6) )
+		Talk(1, "", format("Sö dông %s cã thÓ nhËn nhiÒu nhÊt %u kinh nghiÖm", szItemGroupName, tbXunMaShu0903.tbTask.nMaxExpFromOther * 1e6) )
 		return 1
 	end
 	

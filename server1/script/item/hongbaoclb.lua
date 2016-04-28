@@ -1,23 +1,23 @@
 Include("\\script\\lib\\awardtemplet.lua")
 
 tbItemAward = {
-	{szName = "×ÏÃ§Áá", tbProp = {6, 1, 2350, 1, 0, 0}, nRate = 0.01},	
-	{szName = "ĞşÔ³Áî", tbProp = {6, 1, 2351, 1, 0, 0}, nRate = 0.05},	
-	{szName = "²ÔÀÇÁî", tbProp = {6, 1, 2352, 1, 0, 0}, nRate = 1},	
-	{szName = "ÔÆÂ¹Áî", tbProp = {6, 1, 2353, 1, 0, 0}, nRate = 3},	
-	{szName = "»ìÔªÁéÂ¶", tbProp = {6, 1, 2312, 1, 0, 0}, nRate = 10},	
-	{szName = "´óÁ¦Íè", tbProp = {6, 0, 3, 1, 0, 0}, nRate = 5},	
-	{szName = "·ÉËÙÍè", tbProp = {6, 0, 6, 1, 0, 0}, nRate = 5},	
-	{szName = "»Æ½ğÖ®¹û", tbProp = {6, 1, 907, 1, 0, 0}, nRate = 10, nExpiredTime = 10080},	
-	{szName = "Ç§Äê»Æ½ğÖ®¹û", tbProp = {6, 1, 2270, 1, 0, 0}, nRate = 20},	
-	{szName = "ÍòÄê»Æ½ğÖ®¹û", tbProp = {6, 1, 2271, 1, 0, 0}, nRate = 7.94},	
-	{szName = "°ÙÄê»Æ½ğÖ®¹û", tbProp = {6, 1, 2269, 1, 0, 0}, nRate = 30},	
-	{szName = "ÉñÃØ¿óÊ¯", tbProp = {6, 1, 398, 1, 0, 0}, nRate = 1},	
-	{szName = "ĞşÕæµ¤", tbProp = {6, 1, 1678, 1, 0, 0}, nRate = 5, tbParam={15e8}},	
-	{szName = "×Ï½ğÕæµ¤", tbProp = {6, 1, 2263, 1, 0, 0}, nRate = 2, tbParam={20e8}},	
+	{szName = "Tö M·ng LÖnh", tbProp = {6, 1, 2350, 1, 0, 0}, nRate = 0.01},	
+	{szName = "HuyÒn Viªn LÖnh", tbProp = {6, 1, 2351, 1, 0, 0}, nRate = 0.05},	
+	{szName = "Th­¬ng Lang LÖnh", tbProp = {6, 1, 2352, 1, 0, 0}, nRate = 1},	
+	{szName = "V©n Léc LÖnh", tbProp = {6, 1, 2353, 1, 0, 0}, nRate = 3},	
+	{szName = "Hçn Nguyªn Linh Lé", tbProp = {6, 1, 2312, 1, 0, 0}, nRate = 10},	
+	{szName = "§¹i Lùc hoµn", tbProp = {6, 0, 3, 1, 0, 0}, nRate = 5},	
+	{szName = "Phi Tèc hoµn", tbProp = {6, 0, 6, 1, 0, 0}, nRate = 5},	
+	{szName = "Qu¶ Hoµng Kim", tbProp = {6, 1, 907, 1, 0, 0}, nRate = 10, nExpiredTime = 10080},	
+	{szName = "Thiªn Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2270, 1, 0, 0}, nRate = 20},	
+	{szName = "V¹n Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2271, 1, 0, 0}, nRate = 7.94},	
+	{szName = "B¸ch Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2269, 1, 0, 0}, nRate = 30},	
+	{szName = "ThÇn bİ kho¸ng th¹ch", tbProp = {6, 1, 398, 1, 0, 0}, nRate = 1},	
+	{szName = "HuyÒn Ch©n §¬n", tbProp = {6, 1, 1678, 1, 0, 0}, nRate = 5, tbParam={15e8}},	
+	{szName = "Tö Kim Ch©n §¬n", tbProp = {6, 1, 2263, 1, 0, 0}, nRate = 2, tbParam={20e8}},	
 }
 
-tbExpAward = {szName = "§i¾­ÑéÖµ", nExp_tl = 50000000}
+tbExpAward = {szName = "§iÓm kinh nghiÖm", nExp_tl = 50000000}
 
 TASK_USECOUNT = 2789
 TASK_MONTH = 2790
@@ -29,12 +29,12 @@ function main(nItemIndex)
 	local n_item_date = tonumber(FormatTime2String("%Y%m%d%H%M",ITEM_GetExpiredTime(nItemIndex)));
 	local n_cur_date = tonumber(GetLocalDate("%Y%m%d%H%M"));
 	if n_cur_date > n_item_date then
-		Msg2Player("¸ÃÎïÆ·¹ıÁËÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	
 	if CalcFreeItemCellCount() < 1 then
-		Talk(1, "", "´óÏÀµÄ×°±¸²»×ã1¸ö¿ÕÎ»!.");
+		Talk(1, "", "Hµnh trang §¹i hiÖp kh«ng ®ñ 1 « trèng!.");
 		return 1
 	end
 	
@@ -45,11 +45,11 @@ function main(nItemIndex)
 	
 	if (GetTask(TASK_USECOUNT) < 9) then
 		SetTask(TASK_USECOUNT, GetTask(TASK_USECOUNT)+1)
-		tbAwardTemplet:GiveAwardByList(tbExpAward , "»ñµÃºì°ü¾ãÀÖ²¿");
-		tbAwardTemplet:GiveAwardByList(tbItemAward , "»ñµÃºì°ü¾ãÀÖ²¿");
+		tbAwardTemplet:GiveAwardByList(tbExpAward , "NhËn th­ëng Hång Bao C©u L¹c Bé");
+		tbAwardTemplet:GiveAwardByList(tbItemAward , "NhËn th­ëng Hång Bao C©u L¹c Bé");
 		return 0
 	else
-		Msg2Player("ÎïÆ·×î¶àÖ»ÄÜÒ»¸öÔÂÊ¹ÓÃ9´Î!")
+		Msg2Player("VËt phÈm chØ cã thÓ sö dông tèi ®a 9 lÇn trong mét th¸ng!")
 		return 1
 	end
 	

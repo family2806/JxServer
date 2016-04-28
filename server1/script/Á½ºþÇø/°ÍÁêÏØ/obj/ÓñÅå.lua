@@ -10,8 +10,8 @@ function main()
 --if (UTask_em == 15) then 
 	SetPropState()
 	AddEventItem(182)
-	Msg2Player("ÕÒµ½×ÏÑÌÓñÅå¡£")
-	AddNote("ÕÒµ½×ÏÑÌÓñÅå¡£")
+	Msg2Player("T×m thÊy miÕng Tö Yªn Ngäc Béi.")
+	AddNote("T×m thÊy miÕng Tö Yªn Ngäc Béi.")
 --end
 
 end;

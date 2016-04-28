@@ -7,7 +7,7 @@ function AddEnterNpc()
 	local nX = tonumber(TabFile_GetCell(szConfigPath, 2, "TRAPX"))
 	local nY = tonumber(TabFile_GetCell(szConfigPath, 2, "TRAPY"))
 	local tbNpc = {
-		szName = "Ìì³ØÃØ¾³½ÓÒýÈË", 
+		szName = "Ng­êi tiÕp dÉn Thiªn Tr× MËt C¶nh", 
 		nLevel = 95,
 		nMapId = 934,
 		nPosX = nX,

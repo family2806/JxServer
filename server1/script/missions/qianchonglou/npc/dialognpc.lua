@@ -6,17 +6,17 @@ function signup()
 	if tbPlayerHandle:CheckDate() ~= 1 then
 		local nAwardPoint = tbPlayerHandle:GetAwardPoint(nPoint)
 		if nAwardPoint > 0 then
-			return Talk(1, "", "ÄãĞèÒªÏÈÁìÈ¡Ö®Ç°µÄ½±Àø²ÅÄÜ¼ÌĞø²Î¼Ó.")
+			return Talk(1, "", "Ng­¬i ph¶i nhËn phÇn th­ëng tr­íc ®ã míi tiÕp tôc tham gia ®­îc.")
 		end
 	end
 	if ST_IsTransLife() ~= 1  and GetLevel() < 120 then
-		return Talk(1, "", format("%d ¼¶ÒÔÏÂ²»ÄÜ²Î¼Ó¸Ã»î¶¯", 120))
+		return Talk(1, "", format("%d cÊp trë xuèng kh«ng thÓ tham gia ho¹t ®éng nµy", 120))
 	end
 	local pDungeonType = DungeonType["endless tower"]
 	local pChallenger = tbChallenger:new()
 	pChallenger:Update()
 	if pChallenger:GetPlayTime() <= 0 then
-		return Talk(1, "", "½ñÌìÄãµÄÊ±¼äÒÑÓÃÍê")
+		return Talk(1, "", "Thêi gian h«m nay cña c¸c h¹ ®· sö dông hÕt")
 	end
 	if pDungeonType then
 		local pDungeon = pDungeonType:new_dungeon(pDungeonType.TEMPLATE_MAP_ID, {pChallenger})
@@ -33,20 +33,20 @@ end
 function give_award()
 	local nAwardPoint = tbPlayerHandle:GetAwardPoint(nPoint)
 	if nAwardPoint <= 0 then
-		return Talk(1, "","§iÄãµÄ½±ÀøÖµ²»¹»ÓÃÀ´Áì½±")
+		return Talk(1, "","§iÓm phÇn th­ëng cña c¸c h¹ kh«ng ®ñ ®Ó sö dông phÇn th­ëng nµy")
 	end
-	Msg2Player(format("ÄãÒÑ»ñµÃ%d ½±ÀøÖµµÄ½±Àø.", nAwardPoint))
+	Msg2Player(format("Ng­¬i ®· nhËn %d phÇn th­ëng cña ®iÓm phÇn th­ëng.", nAwardPoint))
 	tbPlayerHandle:SetAwardPoint(0)
 end
 --¹Ø±ÕÌìÖØÂ¥¹¦ÄÜ- Modified By DinhHQ - 20120402
 function dialog()
 do return end
-	local szTitle = "´ò¿ª¸±±¾ºó£¬Ã¿¸öÍæ¼Ò½«»ñµÃÒ»µãµÄ»ù´¡·Ö£¬Ã¿´Î·¢³ö¹¥»÷½«ÏûºÄ»ù´¡·Ö¡£±©Å­²»ÏàÍ¬£¬ÏûºÄµÄ»ù´¡·ÖÒ²²»ÏàÍ¬£¬¿ÉÒÔÍ¨¹ıÊó±êµã»÷ÆÁÄ»×óÓÒÀ´¸ü»»±©Å­µÈ¼¶¡£±©Å­µÈ¼¶Ô½¸ß£¬»÷ÖĞ¹ÖÎïµÄ»ú»áÔ½´ó¡£´òÖĞ¹ÖÎïºó£¬½«»ñµÃ½±Àø£¬µ±»ù´¡·Ö·ÖÏûºÄÍêºó£¬Ò²¿ÉÒÔÓÃ½±Àø·ÖÀ´»»±©Å­¡£Ã¿´Î»÷ÖĞÒ»¶¨ÊıÁ¿µÄ¹ÖÎï£¬¶¼ÄÜ»ñµÃÏà¶ÔÓ¦µÄ±©Å­£¬¿ÉÒÔ´òÖĞÖÜÎ§ËùÓĞµÄµĞÈË¡£"
+	local szTitle = "Sau khi më phã b¶n, mçi ng­êi ch¬i sÏ nhËn ®­îc sè ®iÓm c¬ së nhÊt ®Şnh, mçi lÇn ph¸t ra c«ng kİch sÏ tiªu hao ®iÓm c¬ së. C¸c b¹o né kh«ng gièng nhau sÏ tiªu hao ®iÓm c¬ së kh«ng gièng nhau, cã thÓ th«ng qua viÖc nhÊn chuét vµo bªn ph¶i bªn tr¸i trªn mµn h×nh ®Ó ®æi ®¼ng cÊp b¹o né. §¼ng cÊp b¹o né cµng cao, th× tØ lÖ ®¸nh tróng qu¸i vËt cµng lín. Sau khi ®¸nh tróng qu¸i vËt sÏ nhËn ®­îc phÇn th­ëng, khi ®iÓm c¬ së bŞ tiªu hao hÕt, th× còng cã thÓ dïng ®iÓm phÇn th­ëng ®Ó ®æi b¹o né. Cø mçi lÇn ®¸nh tróng sè l­îng qu¸i vËt nhÊt ®Şnh, th× cã thÓ nhËn ®­îc l­îng b¹o né t­¬ng ®èi lín, cã thÓ ®¸nh tróng tÊt c¶ ®Şch nh©n trong ph¹m vi xung quanh."
 	local tbOpt = 
 	{
-		{"ÎÒÏë²Î¼Ó", signup},
-		{"Áì½±", give_award},
-		{"È¡Ïû"}
+		{"Ta muèn tham gia", signup},
+		{"NhËn l·nh phÇn th­ëng", give_award},
+		{"Hñy bá "}
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -54,4 +54,4 @@ end
 
 Include("\\script\\misc\\eventsys\\type\\npc.lua")
 
---pEventType:Reg("Ìáµã¹Ù»Ê³ÇË¾, "ÌìÖØÂ¥", dialog, {})
+--pEventType:Reg("Quan nh¾c nhë Hoµng Thµnh T­"ÌìÖØÂ¥"Thiªn Trïng L©u

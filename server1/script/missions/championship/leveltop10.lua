@@ -26,7 +26,7 @@ function OnCreateBest10List()
 			biwu_save(LEVELTOP10);
 		end
 	end
-	local strtalk = "×£ºØÎäÁÖ´ó»á10´óÎäÁÖĞÂĞã¸ßÊÖ"..tabname[1]..", "..tabname[2]..", "..tabname[3]..", "..tabname[4]..", "..tabname[5]..", "..tabname[6]..", "..tabname[7]..", "..tabname[8]..", "..tabname[9]..", "..tabname[10]
+	local strtalk = "Chóc mõng Vâ l©m ®¹i héi xuÊt hiÖn ThËp ®¹i cao thñ:"..tabname[1]..", "..tabname[2]..", "..tabname[3]..", "..tabname[4]..", "..tabname[5]..", "..tabname[6]..", "..tabname[7]..", "..tabname[8]..", "..tabname[9]..", "..tabname[10]
 	AddGlobalCountNews(strtalk, 3)
 	strtalk = date("%Y-%m-%d-%H:%M")..","..strtalk
 	WriteLog(strtalk)

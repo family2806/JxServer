@@ -25,8 +25,8 @@ GAME_DATA =
 
 CAMP_SONG = 1
 CAMP_KIM = 2
-CAMP_NAME = {[CAMP_SONG] = "ËÎ·½", [CAMP_KIM] = "½ð·½"}
-TITLE = {"<color=white>Ê¿±ø<color>", "<color=0xa0ff>Ð£Î¾<color>", "<color=0xff>Í³Áì<color>", "<color=yellow>¸±½«<color>", "<bclr=red>´ó½«<bclr><color>"}
+CAMP_NAME = {[CAMP_SONG] = "Phe Tèng", [CAMP_KIM] = "Phe Kim"}
+TITLE = {"<color=white>Binh SÜ<color>", "<color=0xa0ff>HiÖu óy<color>", "<color=0xff>Thèng LÜnh<color>", "<color=yellow>Phã T­íng<color>", "<bclr=red>§¹i T­íng<bclr><color>"}
 TITLE_EFFECT = 
 {
 	[CAMP_SONG] = {89,90,91,92,93},

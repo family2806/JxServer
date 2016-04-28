@@ -4,11 +4,11 @@ Include("\\script\\lib\\awardtype\\simple.lua")
 ExpType = SimpleType:new("nExp")
 ExpType.pFun = AddOwnExp
 --Fix Èç¹ûÊý×ÖÌ«´ó£¬ÏÔÊ¾¾Í»á³ö´í- Modified By DinhHQ - 20110926
-ExpType.szMsgFormat = "´ïµ½¾­Ñé²»ÄÜµþ¼Ó%s"
+ExpType.szMsgFormat = "§¹t ®­îc kinh nghiÖm kh«ng thÓ céng dån %s"
 ExpType:Reg()
 
 Exp_tlType = SimpleType:new("nExp_tl")
 Exp_tlType.pFun = tl_addPlayerExp
 --Fix Èç¹ûÊý×ÖÌ«´ó£¬ÏÔÊ¾¾Í»á³ö´í - Modified By DinhHQ - 20110926
-Exp_tlType.szMsgFormat = "»ñµÃµþ¼Ó¾­Ñé%s."
+Exp_tlType.szMsgFormat = "NhËn ®­îc ®iÓm kinh nghiÖm céng dån %s."
 Exp_tlType:Reg()

@@ -40,28 +40,28 @@ function tbVngVLNB2012:AddDialog(tbDialog)
 	if not self:IsActive() then
 		return
 	end
-	tinsert(tbDialog, "»ñµÃÎäÁÖÎå°ÔÔÂ¹ğ¹Ú/#tbVngVLNB2012:main()")
+	tinsert(tbDialog, "NhËn Vßng Hµo Quang Vâ L©m Ngò B¸/#tbVngVLNB2012:main()")
 end
 
 function tbVngVLNB2012:main()
 	if (self:IsActive() ~= 1) then
-		Talk(1,"","»î¶¯ÒÑ½áÊø!")
+		Talk(1,"","Ho¹t ®éng ®· kÕt thóc!")
 		return
 	end	
 	local bRet = self:CompareID(self.tbAccountID)
 	if bRet < 1 then
-		Talk(1,"","ÄúµÄÕËºÅ²»¶Ô£¬Çë¼ì²é!")
+		Talk(1,"","§¹i hiÖp sö dông kh«ng ®óng tµi kho¶n, xin kiÓm tra l¹i !")
 		return	
 	end
 	if PlayerFunLib:CheckTotalLevel(150, "default", ">=") ~= 1 then
 		return
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nExtPointBit) ~= 1) then
- 		Talk(1,"","¶Ô²»Æğ£¡ÄúÒÑÁìÈ¡¹ı½±Àø£¬²»ÄÜÖØ¸´ÁìÈ¡.")
+ 		Talk(1,"","Xin lçi! §¹i hiÖp ®· nhËn th­ëng råi, kh«ng thÓ nhËn thªm.")
  		return
  	end
 	if (GetExtPoint(self.nExtPointID) < 0) then
-		Talk(1,"","¶Ô²»Æğ£¡ÄúÏÖÔÚÎŞ·¨ÁìÈ¡½±Àø£¬ÇëÓë¹ÜÀíÈËÔ±ÁªÏµ")
+		Talk(1,"","§¹i hiÖp ch­a thÓ nhËn th­ëng lóc nµy,  xin h·y  liªn hÖ Bang Qu¶n TrŞ")
 		return
 	end	
 	 if (tbExtPointLib:SetBitValue(self.nExtPointID, self.nExtPointBit, 0) ~= 1) then
@@ -77,5 +77,5 @@ function tbVngVLNB2012:main()
 	Title_AddTitle(self.nTittleID, 2, nTime);
 	Title_ActiveTitle(self.nTittleID);
  	local sz_title = Title_GetTitleName(self.nTittleID);		
-	Msg2Player(format("¹§Ï²Äú»ñµÃ³ÆºÅ<color=yellow>%s<color>", sz_title));
+	Msg2Player(format("Chóc mõng b¹n ®· nhËn ®­îc danh hiÖu <color=yellow>%s<color>", sz_title));
 end

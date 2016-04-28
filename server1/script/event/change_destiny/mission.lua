@@ -20,7 +20,7 @@ function tbChangeDestiny:completeMission_Battle(tbPlayers)
 		
 		if (nBattlePoint >= 3000 and bCanJoin == 1 and nMissionStep == self.nStep_accepted) then
 			self:setMissionInfo(self.nMissionID_Battle, self.nStep_completed, nMissionDate);
-			Msg2Player("´óÏÀÒÑÍê³ÉÉñÅ©ÀÏÕßµÄËÎ½ğ3000ÀÛ»ı»ı·ÖÈÎÎñ")
+			Msg2Player("§¹i hiÖp ®· hoµn thµnh nhiÖm vô tİch lòy 3000 ®iÓm Tèng Kim cña ThÇn N«ng L·o Gia")
 		end
 	end
 	PlayerIndex = old_player;
@@ -47,7 +47,7 @@ function tbChangeDestiny:completeMission_NieShiChen(nNpcSettingIdx)
 			
 			if (bCanJoin == 1 and nMissionStep == self.nStep_accepted and nNpcSettingIdx == self.nLimit_NieShiChen) then
 				self:setMissionInfo(self.nMissionID_NieShiChen, self.nStep_completed, nMissionDate);
-				Msg2Player("´óÏÀÒÑÍê³ÉÉñÅ©ÀÏÕßµÄ´ò°ÜÄôß±³¾ÈÎÎñ.")
+				Msg2Player("§¹i hiÖp ®· hoµn thµnh nhiÖm vô ®¸nh b¹i NhiÕp Thİ TrÇn cña ThÇn N«ng L·o Gia.")
 			end
 		end
 		if (index == 0) then
@@ -72,7 +72,7 @@ function tbChangeDestiny:completeMission_WaterThief()
 	local nMissionStep, nMissionDate = self:getMissionInfo(self.nMissionID_WaterThief);
 	if (nMissionStep == self.nStep_accepted ) then
 		self:setMissionInfo(self.nMissionID_WaterThief, self.nStep_completed, nMissionDate);
-		Msg2Player("´óÏÀÒÑÍê³ÉÉñÅ©ÀÏÕßµÄ´ò°ÜË®ÔôÊ×ÁìÈÎÎñ")
+		Msg2Player("§¹i hiÖp ®· hoµn thµnh nhiÖm vô ®¸nh b¹i Thñy TÆc §Çu LÜnh cña ThÇn N«ng L·o Gia")
 	end
 end
 
@@ -105,7 +105,7 @@ function tbChangeDestiny:completeMission_Killer(tbPlayers)
 	end
 	
 	if nNextStep == self.nStep_completed then
-		Msg2Player("´óÏÀÒÑÍê³ÉÉñÅ©ÀÏÕßµÄ´ò°ÜËÄ´óÉ±ÊÖÈÎÎñ.")
+		Msg2Player("§¹i hiÖp ®· hoµn thµnh nhiÖm vô ®¸nh b¹i tø ®¹i s¸t thñ cña ThÇn N«ng L·o Gia.")
 	end
 	
 end

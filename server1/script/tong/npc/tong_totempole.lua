@@ -7,8 +7,8 @@ Include("\\script\\tong\\tong_setting.lua")
 IncludeLib("PARTNER");
 IncludeLib("ITEM");
 Include([[\script\lib\coordinate.lua]]);--Ö§³ÖÉè¶¨ÎÄ¼ş·ÃÎÊ
-LINK_TONG_TOTEMPOLE = "<link=image[0,0]:\\spr\\npcres\\building\\totempole_small.spr>°ï»áÍ¼ÌÚÖù: <link>"
-LINK_CITY_TOTEMPOLE = "<link=image[0,0]:\\spr\\npcres\\building\\totempole_small.spr>³ÇÊĞÍ¼ÌÚÖù: <link>"
+LINK_TONG_TOTEMPOLE = "<link=image[0,0]:\\spr\\npcres\\building\\totempole_small.spr>Cét biÓu t­îng bang: <link>"
+LINK_CITY_TOTEMPOLE = "<link=image[0,0]:\\spr\\npcres\\building\\totempole_small.spr>Cét biÓu t­îng thµnh thŞ: <link>"
 
 --°ï»áÍ¼ÌÚ
 function main()
@@ -16,22 +16,22 @@ function main()
 	
 	local aryDescribe = {}
 	if (nTongID == 0) then
-		totempole_dec("Äã»¹Ã»ÓĞ¼ÓÈë°ï»á£¬ÊÇÏëÀ´Õâ²Î¹ÛÂğ?")
+		totempole_dec("Ng­¬i ch­a gia nhËp bang, muèn ®Õn ®©y tham quan sao?")
 		return
 	end
 	
 	local nstuntID = TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ID)
 	if (SubWorldIdx2ID(SubWorld) ~= TONG_GetTongMap(nTongID)) then
-		totempole_dec("Õâ²»ÊÇ¹ó°ïµÄÁìµØ£¬Ö»ÊÇÀ´²Î¹ÛÒ»ÏÂ.")
+		totempole_dec("§©y kh«ng ph¶i lµ l·nh ®Şa cña quı bang, chØ lµ ®Õn tham quan th«i.")
 		return
 	elseif (nstuntID == 0) then
-			totempole_dec("°ï»á¼¼ÄÜ»¹Ã»ÓĞ¿ªÆô£¬²»ÄÜÊ¹ÓÃÍ¼ÌÚÖù£¬È¥¸æËß°ï»áÁìµ¼¿ªÆô¼¼ÄÜ")
+			totempole_dec("Kü n¨ng bang héi ch­a më, kh«ng thÓ sö dông Cét biÓu t­îng, h·y b¸o cho cÊp l·nh ®¹o bang khai më kü n¨ng")
 			return
 	elseif (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_PAUSE) == 0 or TONG_GetTaskValue(nTongID, TONGTSK_STUNT_PAUSE) == 1) then
-		totempole_dec("°ï»áÒÑ¾­¿ªÆôÎ¬ĞŞ¼¼ÄÜ£¬ÏÖÔÚ²»ÄÜÊ¹ÓÃÍ¼ÌÚÖù.")
+		totempole_dec("Bang héi ®· ®ãng b¶o tr× kü n¨ng, hiÖn t¹i kh«ng thÓ sö dông Cét biÓu t­îng.")
 		return
 	elseif (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ENABLED) == 0) then
-			totempole_dec("°ï»áµÄÕ½±¸×Ê½ğ²»¹»Î¬ĞŞÕâ¸ö¼¼ÄÜ£¬²»ÄÜÊ¹ÓÃ°ï»á¼¼ÄÜ!")
+			totempole_dec("TiÒn chiÕn bŞ bang héi kh«ng ®ñ ®Ó b¶o tr× kü n¨ng nµy, kh«ng thÓ sö dông kü n¨ng bang héi!")
 			return
 	end
 		--Ö´ĞĞ¶ÔÓ¦ÌØ¼¼
@@ -43,29 +43,29 @@ function IsTakeStunt(nTongID,nStuntRight,nstuntID)
 	local _Name, nTongID = GetTongName()
 	local aryDescribe = {}
 	if (nTongID == 0) then
-		totempole_dec("Äã»¹Ã»ÓĞ¼ÓÈë°ï»á£¬ÊÇÏëÀ´²Î¹ÛÂğ?")
+		totempole_dec("Ng­¬i ch­a gia nhËp bang, muèn ®Õn ®©y tham quan sao?")
 		return
 	end
 	if (nstuntID == nil or nstuntID ~= TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ID)) then
 		nstuntID = TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ID)
 	end
 	if (SubWorldIdx2ID(SubWorld) ~= TONG_GetTongMap(nTongID)) then
-		totempole_dec("Õâ²»ÊÇ¹ó°ïµÄÁìµØ£¬Ö»ÊÇÀ´²Î¹ÛÒ»ÏÂ.")
+		totempole_dec("§©y kh«ng ph¶i lµ l·nh ®Şa cña quı bang, chØ lµ ®Õn tham quan th«i.")
 		return
 	elseif (nstuntID == 0) then
-			totempole_dec("°ï»á¼¼ÄÜ»¹Ã»ÓĞ¿ªÆô£¬²»ÄÜÊ¹ÓÃÍ¼ÌÚÖù£¬È¥¸æËß°ï»áÁìµ¼¿ªÆô¼¼ÄÜ")
+			totempole_dec("Kü n¨ng bang héi ch­a më, kh«ng thÓ sö dông Cét biÓu t­îng, h·y b¸o cho cÊp l·nh ®¹o bang khai më kü n¨ng")
 			return
 	elseif (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_ENABLED) == 0) then
-			totempole_dec("°ï»áµÄÕ½±¸×Ê½ğ²»¹»Î¬ĞŞÕâ¸ö¼¼ÄÜ£¬²»ÄÜÊ¹ÓÃ°ï»á¼¼ÄÜ!")
+			totempole_dec("TiÒn chiÕn bŞ bang héi kh«ng ®ñ ®Ó b¶o tr× kü n¨ng nµy, kh«ng thÓ sö dông kü n¨ng bang héi!")
 			return
 	elseif (TONG_GetWeek(nTongID) > TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD)) then
-		totempole_dec("°ï»á¼¼ÄÜÒÑ¾­¹ıÁË±£ĞŞÆÚ£¬ÏÖÔÚ²»ÄÜ½ÓÊÜ£¬½ñÌìÎ¬ĞŞÖ®ºóÔÙÀ´ÊÔÊÔ.")
+		totempole_dec("Kü n¨ng bang héi ®· qu¸ thêi h¹n b¶o tr×, hiÖn th¹i kh«ng thÓ tiÕp nhËn, sau khi b¶o tr× ngµy h«m nay h·y ®Õn thö xem.")
 		return
 	end
 	
 	local nHour = tonumber(GetLocalDate("%H"))
 	if (nHour < 20 or nHour > 22) then
-		totempole_dec("Áì°ï»á¼¼ÄÜµÄÊ±¼äÊÇ20h00µ½22h00,°´Ê±È¥Áì.")
+		totempole_dec("Thêi gian nhËn kü n¨ng bang héi lµ 20h00 ®Õn 22h00, h·y canh giê mµ ®Õn nhËn.")
 		return
 	end
 	
@@ -76,28 +76,28 @@ function IsTakeStunt(nTongID,nStuntRight,nstuntID)
 			if (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT) > 0) then
 				return 1
 			else
-				totempole_dec("±¾ÖÜµÄ°ï»á¼¼ÄÜÒÑ¾­ÁìÍêÁË£¬ÏÂÖÜÔÙÀ´°É.")
+				totempole_dec("Kü n¨ng bang héi trong tuÇn nµy ®· nhËn hÕt, tuÇn sau h·y ®Õn.")
 			end
 		else
-			totempole_dec("Ö»ÓĞÁìµ¼²ã²Å¿ÉÒÔÁìÕâ¸ö°ï»á¼¼ÄÜ.")
+			totempole_dec("ChØ cã cÊp l·nh ®¹o míi cã thÓ nhËn kü n¨ng bang héi nµy.")
 		end
 		return
 	end
 	
 	if (GetTask(TASKID_STUNT_LASTWEEK) ==  TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) and GetTask(TASKID_STUNT_TAKED) >= TB_STUNTID_INFO[nstuntID].cntper) then
-		totempole_dec("ÕâÖÜÒÑ¾­ÁìÈ¡ÁË°ï»á¼¼ÄÜ£¬²»ÄÜÔÙÁìÁË.")
+		totempole_dec("TuÇn nµy ®· nhËn kü n¨ng bang héi råi, kh«ng thÓ nhËn n÷a.")
 		return
 	elseif (GetTask(TASKID_STUNT_LASTWEEK) ~= TONG_GetWeek(nTongID)) then
 		SetTask(TASKID_STUNT_TAKED, 0)
 	end
 	
 	if (GetTask(TASKID_STUNT_LASTDAY) == TONG_GetDay(nTongID)) then
-		totempole_dec("°ï»á¼¼ÄÜÃ¿ÌìÖ»ÄÜÁìÒ»´Î£¬Ã÷ÌìÔÙÀ´°É")
+		totempole_dec("Kü n¨ng bang héi mçi ngµy chØ cã thÓ nhËn 1 lÇn, ngµy mai hÕt ®Õn nhĞ.")
 		return
 	end
 	
 	if (TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT) <= 0) then
-		totempole_dec("½ñÌìÒÑ¾­Áì¹ı°ï»á¼¼ÄÜÁË£¬²»ÄÜÔÙÁìÁË.")
+		totempole_dec("H«m nay ®· nhËn kü n¨ng bang héi råi, kh«ng thÓ nhËn n÷a.")
 		return
 	end
 	
@@ -109,30 +109,30 @@ end
 function OnCancel()
 end
 
---°ï»áÌØ¼¼£º»Æ½ğÁî
+--°ï»áÌØ¼¼£º»ÆKimÁî
 function stunt_huangjinling(nTongID, nstuntID)
 
 	TB_STUNT_HUANGJINLING = TB_STUNTID_INFO[nstuntID]
 
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
 	totempole_dec(
-	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_HUANGJINLING.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_HUANGJINLING.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_HUANGJINLING.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_HUANGJINLING.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_HUANGJINLING.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ¡£½ñÌìÔÊĞíÁË"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/stunt_huangjinling1",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn. H«m nay cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+	"TiÕp nhËn kü n¨ng/stunt_huangjinling1",
+	"Rêi khái/OnCancel")
 end
 
 function stunt_huangjinling1()
 	local nFreeBag = CalcFreeItemCellCount()
 	if (nFreeBag < 5) then
-		Talk(1,"",format("±³°üĞèÒª<color=yellow>%d<color>¿Õ¼ä.",5))
+		Talk(1,"",format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.",5))
 		return
 	end
 	local _, nTongID = GetTongName()
@@ -145,9 +145,9 @@ function stunt_huangjinling1()
 		SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 		SetTask(TASKID_STUNT_LASTDAY, getRelativeDay(nTongID))
 		SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
-		totempole_dec("µÃµ½1¸ö<color=yellow>»Æ½ğÁî!<color>")
-		Msg2Tong(nTongID, GetName().."µÃµ½1¸ö»Æ½ğÁî")
-		TONG_ApplyAddEventRecord(nTongID, GetName().."µÃµ½1¸ö»Æ½ğÁî")
+		totempole_dec("NhËn ®­îc 1 <color=yellow>Hoµng Kim LÖnh!<color>")
+		Msg2Tong(nTongID, GetName().."nhËn 1 c¸i Hoµng Kim LÖnh")
+		TONG_ApplyAddEventRecord(nTongID, GetName().."nhËn 1 c¸i Hoµng Kim LÖnh")
 	end
 end
 
@@ -156,17 +156,17 @@ function stunt_lingshenli(nTongID, nstuntID)
 	TB_STUNT_LINGSHENLI = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
 	totempole_dec(
-	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_LINGSHENLI.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_LINGSHENLI.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_LINGSHENLI.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_LINGSHENLI.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_LINGSHENLI.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_LINGSHENLI.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/stunt_lingshenli1",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_LINGSHENLI.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+	"TiÕp nhËn kü n¨ng/stunt_lingshenli1",
+	"Rêi khái/OnCancel")
 	
 end
 
@@ -180,9 +180,9 @@ function stunt_lingshenli1()
 		SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 		SetTask(TASKID_STUNT_LASTDAY, getRelativeDay(nTongID))
 		SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
-		totempole_dec("Áìµ½Ò»¸ö <color=yellow>ÈË²ÎºĞ<color>, Á¢¼´¿ªÆôÁìÈ¡Ç§ÄêÈË²ÎµÄÁéÁ¦.")
+		totempole_dec("NhËn ®­îc mét <color=yellow>Hép nh©n s©m<color>, më ra lËp tøc nhËn ®­îc linh lùc cña nh©n s©m ngµn n¨m.")
 	else
-		Msg2Player("ÁìÁé²ÎÁ¦Ê§°Ü!")
+		Msg2Player("NhËn linh s©m lùc thÊt b¹i!")
 	end
 end
 
@@ -190,17 +190,17 @@ end
 function stunt_shiweiying(nTongID, nstuntID)
 	TB_STUNT_SHIWEIYING = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
-	totempole_dec(	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	totempole_dec(	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_SHIWEIYING.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_SHIWEIYING.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_SHIWEIYING.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_SHIWEIYING.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_SHIWEIYING.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_SHIWEIYING.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/stunt_shiweiying1",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_SHIWEIYING.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+	"TiÕp nhËn kü n¨ng/stunt_shiweiying1",
+	"Rêi khái/OnCancel")
 end
 
 function stunt_shiweiying1()
@@ -209,28 +209,28 @@ function stunt_shiweiying1()
 		return
 	end
 	if (PARTNER_Count() >= 5) then
-		totempole_dec("ËæĞĞÈËÊıÒÑ¾­³¬¹ıÏŞ¶¨ÁË£¬Ö»ÓĞ³ıÈ¥Ò»ÈË²Å¿ÉÒÔÁìÈ¡Õâ¸ö¼¼ÄÜ¡£µ«ÊÇ³ıÈ¥Ò»¸öÈËÌ«²ĞÈÌÁË£¬Äã»¹ÊÇºÃºÃÏëÏë.")
+		totempole_dec("Sè l­îng b¹n ®ång hµnh ®· ®¹t giíi h¹n, chØ cã xãa bá 1 b¹n ®ång hµnh míi cã thÓ nhËn kü n¨ng nµy. Nh­ng xãa bá 1 b¹n ®ång hµnh rÊt tµn nhÉn, ng­¬i h·y suy nghÜ cho kü.")
 		return
 	end
-	totempole_dec("ÎªÍ¬ĞĞµÄÈËÑ¡ÎåĞĞ.",
-	"½ğÏµ/stunt_shiweiying2",
-	"Ä¾Ïµ/stunt_shiweiying2",
-	"Ë®Ïµ/stunt_shiweiying2",
-	"»ğÏµ/stunt_shiweiying2",
-	"ÍÁÏµ/stunt_shiweiying2",
-	"ÎÒÏëÏë/OnCancel"	)
+	totempole_dec("Chän ngò hµnh cho b¹n ®ång hµnh.",
+	"hÖ Kim/stunt_shiweiying2",
+	"hÖ Méc/stunt_shiweiying2",
+	"hÖ Thñy/stunt_shiweiying2",
+	"hÖ Háa/stunt_shiweiying2",
+	"hÖ Thæ /stunt_shiweiying2",
+	"Ta muèn suy nghÜ l¹i/OnCancel"	)
 end
 
-TB_SERIES_NAME = {"½ğ", "Ä¾", "Ë®", "»ğ", "ÍÁ"}
-TB_CHARACTOR = {"ÓÂÃÍ","ÎÀÖ÷","Â³Ã§","Å³Èõ"}
+TB_SERIES_NAME = {"Kim", "Méc", "Thñy ", "Háa", "Thæ "}
+TB_CHARACTOR = {"Dòng M·nh","VÖ Chñ  ","L­u Mang ","Näa Nh­îc"}
 function stunt_shiweiying2(nSel)
 	SetTaskTemp(112, nSel)
-	totempole_dec("ÎªÍ¬ĞĞÈËÑ¡µÄÎåĞĞÊÇ "..TB_SERIES_NAME[nSel+1].." , ¼ÌĞøÑ¡ĞÔ¸ñ.",
+	totempole_dec("§· lùa chän ngò hµnh b¹n ®ång hµnh lµ hÖ "..TB_SERIES_NAME[nSel+1].." , h·y tiÕp tôc chän lùa tİnh c¸ch.",
 	TB_CHARACTOR[1].."/stunt_shiweiying3",
 	TB_CHARACTOR[2].."/stunt_shiweiying3",
 	TB_CHARACTOR[3].."/stunt_shiweiying3",
 	TB_CHARACTOR[4].."/stunt_shiweiying3",
-	"½áÊø¶Ô»°/OnCancel"	)
+	"KÕt thóc ®èi tho¹i/OnCancel"	)
 end
 
 function stunt_shiweiying3(nSel)
@@ -252,7 +252,7 @@ function stunt_shiweiying3(nSel)
 		partnerIndex = PARTNER_AddFightPartner(1, 4, ncharactor, random(5,10), random(5,10), random(5,10), random(5,10), random(5,10), random(5,10))
 	end
 	if (partnerIndex == -1) then
-		totempole_dec("½ÓÊÜÍ¬ĞĞÈËÔ±Ê§°Ü£¬ÔÙÊÔÒ»ÏÂ.")
+		totempole_dec("TiÕp nhËn b¹n ®ång hµnh thÊt b¹i, h·y thö l¹i sao.")
 		return
 	end
 	PARTNER_SetCurPartner(partnerIndex)
@@ -266,24 +266,24 @@ function stunt_shiweiying3(nSel)
 	SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 	SetTask(TASKID_STUNT_LASTDAY, getRelativeDay(nTongID))
 	SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
-	totempole_dec("µÃµ½Ò»¸ö<color=yellow>ÏµµÄÍ¬ĞĞÈË"..TB_SERIES_NAME[nseries+1].."<color>, ÀàĞÍ<color=yellow>"..TB_CHARACTOR[ncharactor].."<color>.")
+	totempole_dec("NhËn ®­îc 1 b¹n ®ång hµnh hÖ <color=yellow>"..TB_SERIES_NAME[nseries+1].."<color>, lo¹i h×nh <color=yellow>"..TB_CHARACTOR[ncharactor].."<color>.")
 end
 
 --ÌÕÖìÇ®´ü
 function stunt_moneybox(nTongID, nstuntID)
 	TB_STUNT_MONEYBOX = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
-	totempole_dec(	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	totempole_dec(	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_MONEYBOX.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_MONEYBOX.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_MONEYBOX.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_MONEYBOX.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_MONEYBOX.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_MONEYBOX.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/stunt_moneybox1",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_MONEYBOX.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+	"TiÕp nhËn kü n¨ng/stunt_moneybox1",
+	"Rêi khái/OnCancel")
 end
 
 function stunt_moneybox1()
@@ -298,7 +298,7 @@ function stunt_moneybox1()
 	SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 	SetTask(TASKID_STUNT_LASTDAY, getRelativeDay(nTongID))
 	SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
-	totempole_dec("ÄãµÃµ½1¸ö<color=yellow>ÌÕÖìÇ®<color>,2ÌìÄÚÓĞĞ§!")
+	totempole_dec("B¹n nhËn ®­îc 1 <color=yellow>§µo Chu TiÒn<color>, cã hiÖu qu¶ trong 2 ngµy!")
 
 end
 
@@ -306,25 +306,25 @@ end
 function stunt_wushuang(nTongID, nstuntID)
 	TB_STUNT_WSSZ = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
-	totempole_dec(	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	totempole_dec(	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_WSSZ.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_WSSZ.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_WSSZ.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_WSSZ.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_WSSZ.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/wsh_getwushuangshazhen",
-	"ÎŞË«É±ÕóÀàĞÍ/wsh_typewushuangshazhen",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn.", 
+	"TiÕp nhËn kü n¨ng/wsh_getwushuangshazhen",
+	"Lo¹i h×nh V« song s¸t trËn/wsh_typewushuangshazhen",
+	"Rêi khái/OnCancel")
 end
 
 --ÁìÈ¡ ÎŞË«É±Õó
 function wsh_getwushuangshazhen()
 	local nFreeBag = CalcFreeItemCellCount()
 	if (nFreeBag < 5) then
-		Talk(1,"",format("±³°üÒªÓĞ<color=yellow>%d<color>¿Õ¼ä.",5))
+		Talk(1,"",format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.",5))
 		return
 	end
 	
@@ -349,10 +349,10 @@ function wsh_getwushuangshazhen()
 	if (nItem > 0) then
 		SetSpecItemParam(nItem, 1, 3 * 60 * 6);
 		SyncItem(nItem)
-		totempole_dec("µÃµ½<color=yellow>ÎŞË«É±Õó<color>.")
-		Msg2Player("³É¹¦ÁìÈ¡1¸ö<color=yellow>ÎŞË«É±Õó<color>.");
-		Msg2Tong(nTongID, GetName().."Áì°ï»á¼¼ÄÜÎŞË«É±Õó")
-		TONG_ApplyAddEventRecord(nTongID, GetName().."Áì°ï»á¼¼ÄÜÎŞË«É±Õó")
+		totempole_dec("NhËn ®­îc <color=yellow>Vo song s¸t trËn<color>.")
+		Msg2Player("NhËn thµnh c«ng 1 <color=yellow>V« song s¸t trËn<color>.");
+		Msg2Tong(nTongID, GetName().."NhËn kü n¨ng bang héi V« song s¸t trËn")
+		TONG_ApplyAddEventRecord(nTongID, GetName().."NhËn kü n¨ng bang héi V« song s¸t trËn")
 	end;
 	
 	SetTaskTemp(193, 0);
@@ -368,14 +368,14 @@ MAPFILE = [[\settings\item\004\mask.txt]];
 function wsh_typewushuangshazhen()
 	local nMaskIdx;
 	local szMaskName;
-	local szContent = "¹ó°ïÎŞË«É±ÕóÏÖÔÚµÄÄ£ĞÍÊÇ:<color=yellow>"; 
+	local szContent = "khu«n mÉu v« song s¸t trËn cña quı bang hiÖn t¹i lµ: <color=yellow>"; 
 	local tab_mask = {};
 	
 	local _, nTongID = GetTongName()
 	local nFigure = TONGM_CheckRight(nTongID, GetName(), 2006);
 	if (nFigure ~= 1) then
 		SetTaskTemp(193, 0);
-		totempole_dec("<color=yellow>Ä£ĞÍ<color>ÎŞË«É±ÕóÖ»ÓĞ°ï»áÖĞÁìµ¼¼¶±ğµÄÈË²Å¿ÉÒÔ±ä»».");
+		totempole_dec("<color=yellow>khu«n mÉu<color> v« song s¸t trËn chØ cã cÊp l·nh ®¹o bang héi míi cã thÓ thay ®æi.");
 		return
 	end
 	
@@ -394,29 +394,29 @@ function wsh_typewushuangshazhen()
 		end;
 		szContent = szContent.."<color>.";
 	else
-		szContent = "¹ó°ïµÄÎŞË«É±Õó»¹Ã»ÓĞÈÎºÎÄ£ĞÍ";
+		szContent = "V« song s¸t trËn cña quı bang vÉn ch­a cã khu«n mÉu g×, ";
 	end;
 	
-	Say(szContent.."ÄãÒª½øĞĞÊ²Ã´²Ù×÷?", 3, 
-		"ÎÒÏë¼ÓÄ£ĞÍ/add_face", 
-		"ÎÒÏë¶ªÆúÄ£ĞÍ/removeface", 
-		"Àë¿ª/OnCancel");
+	Say(szContent.."Ng­¬i muèn tiÕn hµnh thao t¸c g×?", 3, 
+		"Ta muèn thªm vµo khu«n mÉu/add_face", 
+		"Ta muèn bá bít khu«n mÉu/removeface", 
+		"Rêi khái/OnCancel");
 end;
 
 function add_face()
 	local nFaceCount = getfacecount();
 	if (nFaceCount >= 10) then
-		Say("ÄãÑ¡ÁË10¸öÄ£ĞÍ£¬ÒªÏë¼ÓÈëĞÂµÄÄ£ĞÍ¾ÍÒª¶ªµô1¸ö£¬Òª¼ÌĞøÂğ?", 2, "ÎÒĞĞ¼ÓÈëĞÂÄ£ĞÍ./removeface", "ÎÒÏëÏë/no")
+		Say("B¹n ®· lùa chän 10 khu«n mÉu, nÕu muèn thªm khu«n mÉu míi cÇn ph¶i bá bít 1 khu«n mÉu, cã muèn tiÕp tôc kh«ng?", 2, "Ta muèn thªm vµo khu«n mÉu míi./removeface", "§Ó ta suy nghÜ l¹i/no")
 		return
 	end;
 	
 	--Ğ´Ò»¸ö·ÅÈë½çÃæ
-	GiveItemUI("·ÅÈëÒ»ÕÅÃæ¾ß", "ÒÑ¾­·ÅÈëÒ»ÕÅÃæ¾ß£¬µÈÎŞË«É±Õó·¢»Ó×÷ÓÃ¾Í»á±ä³ÉÏ£ÍûµÄÑù×Ó", "add_ui_confirm", "no");
+	GiveItemUI("H·y ®­a vµo 1 mÆt n¹", "ÒÑ¾­H·y ®­a vµo 1 mÆt n¹£¬µÈÎŞË«É±Õó·¢»Ó×÷ÓÃ¾Í»á±ä³ÉÏ£ÍûµÄÑù×Ó", "add_ui_confirm", "no");
 end;
 
 function add_ui_confirm(nCount)
 	if (nCount ~= 1) then
-		Say("·ÅÈëµÄÎïÆ·ÊıÁ¿²»¶Ô.", 0);
+		Say("Sè l­îng vËt phÈm bá vµo kh«ng ®óng.", 0);
 		return
 	end;
 	
@@ -424,22 +424,22 @@ function add_ui_confirm(nCount)
 	nItemGenre, nDetailType, nParticualrType = GetItemProp(nItemIdx);
 	
 	if (nItemGenre ~= 0 or nDetailType ~= 11) then
-		Say("·ÅÈëµÄÎïÆ·²»ÊÇÃæ¾ß", 0);
+		Say("VËt phÈm bá vµo kh«ng ph¶i lµ mÆt n¹.", 0);
 		return
 	end;
 	
 	if (nParticualrType == 366) then
-		Say("<color=yellow>Î±×°Ãæ¾ß<color>²»ÄÜ×öÎŞË«É±ÕóµÄÄ£ĞÍ.", 0);
+		Say("<color=yellow>MÆt n¹ ngôy trang<color> kh«ng thÓ lµm khu«n mÉu V« song s¸t trËn.", 0);
 		return
 	end;
 	
 	if (itemcheck(nParticualrType) == 0) then
-		Say("Õâ¸öÃæ¾ßÄ£ĞÍÒÑ¾­ÓĞÁË.", 0);
+		Say("khu«n mÉu mÆt n¹ nµy ®· cã råi.", 0);
 		return
 	end;
 	
 	addoneface(nParticualrType); --Ôö¼ÓÒ»¸öÍâĞÎ
-	Msg2Player("ÄãÒÑ¾­°ÑÎŞË«É±ÕóÄ£ĞÍ¼ÓÈë°ï»áÁË.");
+	Msg2Player("B¹n ®· thªm vµo khu«n mÉu V« song s¸t trËn cho bang héi.");
 end;
 
 function itemcheck(nParticualrType)
@@ -459,15 +459,15 @@ function removeface()
 		nMaskIdx = TONG_GetTaskValue(nTongID, TTK_FACE[i]);
 		if (nMaskIdx > 0) then
 			szMaskName = gettabfilestring(MAPFILE, (nMaskIdx + 2), 1);
-			tinsert(tab_sel, "È¡Ïû"..szMaskName.."×öÄ£ĞÍ/#deloneface("..i..")");
+			tinsert(tab_sel, "Hñy bá"..szMaskName.."T¹o khu«n/#deloneface("..i..")");
 		end;
 	end;
-	tinsert(tab_sel, "ÈÃÎÒºÃºÃÏëÏë/OnCancel");
+	tinsert(tab_sel, "§Ó ta suy nghÜ kü l¹i xem/OnCancel");
 	if (getn(tab_sel) <= 0) then
-		Say("»¹Ã»ÓĞÑ¡ÈÎºÎÒ»¸öÎŞË«É±Õó.", 0);
+		Say("Ch­a chän khu«n mÉu V« song s¸t trËn nµo.", 0);
 		return
 	end;
-	Say("ÏëÒªÈ¡ÏûÄÇ¸öÄ£ĞÍ?", getn(tab_sel), tab_sel);
+	Say("ÏëÒªHñy báÄÇ¸öÄ£ĞÍ?", getn(tab_sel), tab_sel);
 end;
 
 function getfacecount()
@@ -497,7 +497,7 @@ function deloneface(nIdx)
 		return
 	end;
 	TONG_ApplySetTaskValue(nTaskID, TTK_FACE[nIdx], 0);
-	Msg2Player("È¡Ïû1¸ö°ï»áµÄÎŞË«É±ÕóÄ£ĞÍ.");
+	Msg2Player("Hñy bá1¸ö°ï»áµÄÎŞË«É±ÕóÄ£ĞÍ.");
 end;
 -------------------------------------------------------------
 --¶ÍÎä»ê-----
@@ -505,17 +505,17 @@ REPAREATT = 40; --Ã¿´ÎÔö¼Ó¶àÉÙÄÍ¾Ã¶È
 function stunt_duanwuhun(nTongID, nstuntID)
 	TB_STUNT_DWH = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
-	totempole_dec(	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	totempole_dec(	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_DWH.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_DWH.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_DWH.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_DWH.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_DWH.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_DWH.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-		"¶ÔµÄ£¬ÓÃ¶ÍÎä»êÀ´¼Ó¹ÌÎäÆ÷/dwh_Enhance", 
-		"Ö®ºóÔÙËµ!/OnCancel");
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_DWH.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+		"§óng vËy, dïng LuyÖn vâ hån ®Ó gia cè vò khİ./dwh_Enhance", 
+		"Sau nµy h·y nãi!/OnCancel");
 end
 
 function dwh_Enhance()
@@ -529,16 +529,16 @@ function EnhanceRepair(nItemIdx)
 	local nQuality = GetItemQuality(nItemIdx)
 	
 	if nQuality == 4 then
-		Talk(1, "", "Õâ¸ö×°±¸²»ÄÜÇ¿»¯.")
+		Talk(1, "", "Trang bŞ nµy kh«ng thÓ c­êng hãa.")
 	end
 	local nRepairDur = nDur + REPAREATT;
 	if (nRepairDur > 255) then
 		nRepairDur = 255;
 	end;
 	
-	totempole_dec("<#>¼Ó¹ÌÕâ¸ö×°±¸¿ÉÒÔÌá¸ßÇ¿¶È£¬Ã¿´ÎÔö¼Ó<color=yellow>"..REPAREATT.."<color>µã,×î¸ßÇ¿¶ÈÊÇ<color=yellow>"..(255).."<color>µã, ÏÖÔÚ×°±¸µÄÇ¿¶ÈÊÇ<color=yellow>"..nDur.."<color>, ¼Ó¹ÌÖ®ºóÇ¿¶È½«ÊÇ<color=yellow>"..nRepairDur.."<color>, ÄãÏë¼Ó¹ÌÂğ?",
-		"¼Ó¹Ì/#Enhance_Repair("..nItemIdx..", "..nRepairDur..")", 
-		"²»±ØÁË/cancel")
+	totempole_dec("<#>Söa gia cè trang bŞ nµy cã thÓ n©ng cao ®é bÒn, mçi lÇn t¨ng thªm <color=yellow>"..REPAREATT.."<color> ®iÓm, ®é bÒn cao nhÊt lµ <color=yellow>"..(255).."<color> ®iÓm, ®é bÒn hiÖn t¹i cña trang bŞ lµ <color=yellow>"..nDur.."<color>, sau khi gia cè ®é bÒn sÏ lµ <color=yellow>"..nRepairDur.."<color>, ng­¬i muèn söa ch÷a kh«ng?",
+		"Söa ch÷a/#Enhance_Repair("..nItemIdx..", "..nRepairDur..")", 
+		"Kh«ng cÇn ®©u/cancel")
 end
 
 function Enhance_Repair(nItemIdx, nRepairDur)
@@ -549,7 +549,7 @@ function Enhance_Repair(nItemIdx, nRepairDur)
 	local nQuality = GetItemQuality(nItemIdx)
 	
 	if nQuality == 4 then
-		Talk(1, "", "Õâ¸ö×°±¸²»ÄÜÇ¿»¯.")
+		Talk(1, "", "Trang bŞ nµy kh«ng thÓ c­êng hãa.")
 	end
 
 	if (nItemIdx > 0) then
@@ -559,30 +559,30 @@ function Enhance_Repair(nItemIdx, nRepairDur)
 		SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
 		
 		EH_SetCurDurability(nItemIdx, nRepairDur);
-		Msg2Player("×°±¸±»¼Ó¹ÌÁË");
+		Msg2Player("Trang bŞ ®· ®­îc gia cè.");
 	end;
 end
 
 function stunt_fenghuang(nTongID, nstuntID)
 	TB_STUNT_FHY = TB_STUNTID_INFO[nstuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
-	totempole_dec(	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	totempole_dec(	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_FHY.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_FHY.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_FHY.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_FHY.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_FHY.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_FHY.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-		"ÕıÊÇ£¬ÎÒÏëÁì·ï»ËÓ¡/fhy_getfenghuangyin", 
-		"Ö®ºóÔÙËµ!/OnCancel");
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_FHY.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+		"§óng vËy, ta muèn nhËn Phông Hoµng Ên/fhy_getfenghuangyin", 
+		"Sau nµy h·y nãi!/OnCancel");
 end
 
 function fhy_getfenghuangyin()
 	local nFreeBag = CalcFreeItemCellCount()
 	if (nFreeBag < 5) then
-		Talk(1,"",format("±³°üĞèÒª<color=yellow>%d<color>¿Õ¼ä.",5))
+		Talk(1,"",format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.",5))
 		return
 	end
 	if (GetTaskTemp(193) == 1) then
@@ -602,8 +602,8 @@ function fhy_getfenghuangyin()
 	SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
 
 	AddItem(6, 1, 1105, 1, 0, 0, 0);
-	totempole_dec("ÄãµÃµ½1¸ö<color=yellow>·ï»ËÓ¡<color>.")
-	Msg2Player("³É¹¦ÁìÈ¡1¸ö<color=yellow>·ï»ËÓ¡<color>.");
+	totempole_dec("B¹n nhËn ®­îc 1 <color=yellow>Phông Hoµng Ên<color>.")
+	Msg2Player("NhËn thµnh c«ng 1<color=yellow>Phông Hoµng Ên<color>.");
 	
 	SetTaskTemp(193, 0);
 end;
@@ -615,7 +615,7 @@ function totempole_dec(szMsg, ...)
 		
 	szMsg = LINK_TONG_TOTEMPOLE..szMsg
 	if (getn(arg) == 0) then
-		Describe(szMsg, 1, "½áÊø¶Ô»°/OnCancel")
+		Describe(szMsg, 1, "KÕt thóc ®èi tho¹i/OnCancel")
 	else
 		Describe(szMsg, getn(arg), arg)
 	end
@@ -625,23 +625,23 @@ function stunt_wushenbless(nTongID, nStuntID)
 	TB_STUNT_WUSHENBLESS = TB_STUNTID_INFO[nStuntID]
 	local nlastDay = getRelativeDay(nTongID) - TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD) + 7
 	totempole_dec(
-	"<enter>ÏÖÔÚµÄ°ï»á¼¼ÄÜ: "..
+	"<enter>Kü n¨ng bang héi hiÖn t¹i: "..
 	"<enter><color=yellow>    "..TB_STUNT_WUSHENBLESS.name.."<color>"..
-	"<enter>½ÓÊÜ¼¼ÄÜÈ¨: "..
+	"<enter>QuyÒn tiÕp nhËn kü n¨ng: "..
 	"<enter><color=yellow>    "..TB_STUNT_RIGHT_DS[TB_STUNT_WUSHENBLESS.right].."<color>"..
-	"<enter>Î¬ĞŞÌØ¼¼·ÑÓÃ"..
-	"<enter><color=yellow>    "..(TB_STUNT_WUSHENBLESS.consume).."ÍòÕ½±¸·Ñ<color>"..
-	"<enter>ÌØ¼¼×÷ÓÃ:"..
+	"<enter>Chi phİ b¶o tr× ®Æc kü:"..
+	"<enter><color=yellow>    "..(TB_STUNT_WUSHENBLESS.consume).." v¹n tiÒn chiÕn  bŞ<color>"..
+	"<enter>T¸c dông cña kü n¨ng ®Æc biÖt:"..
 	"<enter><color=yellow>    "..TB_STUNT_WUSHENBLESS.describe.."<color>"..
-	"<enter>Õâ¸ö¼¼ÄÜµÄÊ±ÏŞÊÇ1ÖÜ£¬ÔÚ1ÖÜÖĞ×î¶àÔÊĞí½ÓÊÜ"..TB_STUNT_WUSHENBLESS.maxmem.."ÈËÀ´½ÓÊÜÕâ¸ö¼¼ÄÜ£¬Ã¿ÌìÃ¿ÈËÖ»ÄÜÁìÒ»´Î¡£½ñÌì»¹¿ÉÒÔÓĞ"..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).."ÈËÀ´Áì¼¼ÄÜ.", 
-	"½ÓÊÜ¼¼ÄÜ/stunt_wushenbless1",
-	"Àë¿ª/OnCancel")
+	"<enter>Thêi h¹n cña kü n¨ng nµy lµ 1 tuÇn, trong vßng 1 tuÇn cho phĞp nhËn tèi ®a "..TB_STUNT_WUSHENBLESS.maxmem.." ng­êi tiÕp nhËn kü n¨ng, mçi ngµy mét ng­êi chØ nhËn ®­îc 1 lÇn. H«m nay cßn cho phĞp "..TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MEMLIMIT).." ng­êi n÷a ®Õn nhËn kü n¨ng nµy.", 
+	"TiÕp nhËn kü n¨ng/stunt_wushenbless1",
+	"Rêi khái/OnCancel")
 end;
 
 function stunt_wushenbless1()
 	local nFreeBag = CalcFreeItemCellCount()
 	if (nFreeBag < 5) then
-		Talk(1,"",format("±³°üĞèÒª<color=yellow>%d<color>¿Õ¼ä.",5))
+		Talk(1,"",format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.",5))
 		return
 	end
 	local _, nTongID = GetTongName()
@@ -667,9 +667,9 @@ function stunt_wushenbless1()
 		SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 		SetTask(TASKID_STUNT_LASTDAY, getRelativeDay(nTongID))
 		SetTask(TASKID_STUNT_TAKED, GetTask(TASKID_STUNT_TAKED) + 1)
-		totempole_dec("µÃµ½<color=yellow>ÎäÉñ´Í¸£<color>, Ê¹ÓÃÖ®ºó½«µÃµ½2Ğ¡Ê±µÄË«±¶¹±Ï×Öµ(Ö»¶ÔËÎ½ğ»î¶¯£¬ĞÅÊ¹ÈÎÎñ£¬ÌôÕ½Ê±¼ä£¬ÎäÁÖÁ¬¶·£¬É±Ôô£¬»Ô»ÍÖ®Ò¹).")
+		totempole_dec("µÃµ½<color=yellow>ÎäÉñ´Í¸£<color>, Ê¹ÓÃÖ®ºó½«µÃµ½2Ğ¡Ê±µÄË«±¶¹±Ï×Öµ(Ö»¶ÔËÎKim»î¶¯£¬ĞÅÊ¹ÈÎÎñ£¬ÌôÕ½Ê±¼ä£¬ÎäÁÖÁ¬¶·£¬É±Ôô£¬»Ô»ÍÖ®Ò¹).")
 	else
-		Msg2Player("ÁìÈ¡ÎäÉñ´Í¸£Ê§°Ü!")
+		Msg2Player("NhËn Vâ thÇn tø phóc thÊt b¹i!")
 	end
 end;
 

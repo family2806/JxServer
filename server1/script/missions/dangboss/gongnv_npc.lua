@@ -29,11 +29,11 @@ function main()
 	tbVNGWD2011_GongNV:addDialog(tbDailog)
 
 	if tbTop10:IsActive() == 1 then
-		tbDailog:AddOptEntry(" Æ¥Û∏ﬂ ÷√˚µ•", tbTop10.MainDialog, {tbTop10})
+		tbDailog:AddOptEntry("Danh s∏ch thÀp Æπi cao thÒ", tbTop10.MainDialog, {tbTop10})
 	end	
 	--end [DinhHQ]
 	--EventSys:GetType("AddNpcOption"):OnEvent(szNpcName, tbDailog, nNpcIndex) --¬“’Ωæ≈÷›π»
-	tbDailog:AddOptEntry("∂∑”„ªÓ∂Ø", tbDangBossDailog.Main, {tbDangBossDailog})
+	tbDailog:AddOptEntry("Hoπt ÆÈng Æ u ng≠u", tbDangBossDailog.Main, {tbDangBossDailog})
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)
 	tbDailog:Show()
 

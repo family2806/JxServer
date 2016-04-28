@@ -15,12 +15,12 @@ function select_camp(nId)
 	if not pManager then
 		return
 	end
-	local szTitle = "ÄãÏëÒª¼ÓÈëÄÄ¸ö¾üÓª"
+	local szTitle = "Ng­¬i muèn vµo qu©n doanh nµo?"
 	local tbOpt = 
 	{
-		{"ËÎ·½", pManager.SignUp, {pManager, nId, CAMP_SONG}},
-		{"½ğ·½", pManager.SignUp, {pManager, nId, CAMP_KIM}},
-		{"½áÊø"}
+		{"Phe Tèng", pManager.SignUp, {pManager, nId, CAMP_SONG}},
+		{"Phe Kim", pManager.SignUp, {pManager, nId, CAMP_KIM}},
+		{"KÕt thóc"}
 	}
 	CreateNewSayEx(szTitle, tbOpt);
 end
@@ -45,7 +45,7 @@ function dialog(nCurRow)
 	local nMaxCount = getn(tbList)
 	
 	if nMaxCount == 0 then
-		return Talk(1, "", "ÏÖÔÚÃ»ÓĞËÎ½ğÕ½³¡")
+		return Talk(1, "", "HiÖn t¹i kh«ng cã trËn Tèng Kim nµo")
 	end
 	local tb = {}
 	if nCurRow <= 0 or nCurRow > nMaxCount then
@@ -76,5 +76,5 @@ function proc_protocol(nOperation, nValue)
 end
 
 	--Ôİ±ÕËÎ½ğserver - Modified by DinhHQ - 20111025
-	--pEventType:Reg("Ä¼±ø¹Ù", "ÎÒÏë±¨Ãû²Î¼Ó", dialog, {1})
+	--pEventType:Reg("Mé Binh Quan", "Ta muèn b¸o danh tham gia", dialog, {1})
 end

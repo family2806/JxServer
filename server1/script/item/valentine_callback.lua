@@ -15,10 +15,10 @@ function doBlessValentine(szParam)
 		AddSkillState(703, 1, 0, 1080 *30)	--2min
 		CastSkill(285, 1)
 		if (GetSex() == 0) then	--ÄĞ
-			Msg2Player("<#>ÄúµÄºÃÓÑ<color=yellow>"..rolename.."<color>ËÍÄúÒ»¿é<color=yellow>ĞÄÒâÇÉ¿ËÁ¦")
+			Msg2Player("<#> H¶o h÷u cña b¹n <color=yellow>"..rolename.."<color> tÆng cho b¹n mét miÕng <color=yellow>S« c« la t×nh yªu")
 			AddItem(6, 1, 1060, 1, 1, 1)
 		else
-			Msg2Player("<#>ÄúµÄºÃÓÑ<color=yellow>"..rolename.."<color>ËÍÄúÒ»¶ä<color=yellow>ÇéÅ¨Ãµ¹å»¨")
+			Msg2Player("<#> H¶o h÷u cña b¹n <color=yellow>"..rolename.."<color> tÆng cho b¹n mét ®ãa <color=yellow>Hoa Hång t×nh ı ")
 			AddItem(6, 1, 1059, 1, 1, 1)
 		end
 	end

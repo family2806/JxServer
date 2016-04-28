@@ -12,17 +12,17 @@ function OnTimer()
 
 	local lsf_level = BT_GetGameData(GAME_LEVEL)
 	if (lsf_level == 1) then
-		resultstr = "³õ¼¶ÇøÓò"
+		resultstr = "Khu vùc S¬ cÊp "
 	elseif (lsf_level == 2) then
-		resultstr = "ÖĞ¼¶ÇøÓò"
+		resultstr = "Khu vùc Trung cÊp "
 	elseif (lsf_level == 3) then
-		resultstr = "¸ß¼¶ÇøÓò "
+		resultstr = "Khu vùc Cao cÊp "
 	end
 	
 	if (t == RUNGAME_TIME) then --Èç¹ûµ½ÁËÕıÊ½¿ªÕ½Ê±¿Ì£¬ÔòÍ£Ö¹±¨Ãû£¬ÕıÊ½½øÈëÕ½¶·½×¶Î
 		RunMission(MISSIONID)
-		AddGlobalCountNews(resultstr.."ËÎ½ğÔËÁ¸Ä£Ê½±¨ÃûÊ±¼äÒÑµ½,Õ½¶·ÕıÊ½¿ªÊ¼!", 2);
-		Msg2MSAll(MISSIONID, "ËÎ½ğÕıÊ½¿ªÕ½£¡½«Ê¿ÃÇ£¡³å°¡!");
+		AddGlobalCountNews(resultstr.."Thêi gian b¸o danh cho Tèng Kim ph­¬ng thøc VËn l­¬ng ®· ®Õn, cuéc chiÕn chİnh thøc b¾t ®Çu!", 2);
+		Msg2MSAll(MISSIONID, "Tèng Kim chİnh thøc khai chiÕn! C¸c chiÕn sÜ! X«ng lªn!");
 		WriteLog("battle is entering fight state. now member count="..GetMSPlayerCount(MISSIONID, 1)..":"..GetMSPlayerCount(MISSIONID, 2))
 	end
 	local gamemode = GetMissionV(MS_FLAGMODE)
@@ -31,11 +31,11 @@ function OnTimer()
 		RestTime = (RUNGAME_TIME - t) * TIMER_1 / FRAME2TIME
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
-			str1 = resultstr.."<#>ËÎ½ğ´óÕ½ÔËÁ¸Ä£Ê½ÕıÔÚ±¨ÃûÖĞ£¬´ó¼Ò¸Ï½ôµ½ÏåÑô»òÕßÖìÏÉÕò±¨Ãû,»òÕß¿ÉÒÔÊ¹ÓÃËÎ½ğÚ¯Êé¼ÌĞøµ½ËÎ½ğÕ½³¡±¨Ãû´¦±¨Ãû, »¹Ê£Ê±¼äÎª"..RestMin.."·ÖÖÓ. ²Î¼ÓÌõ¼ş£º40¼¶ÒÔÉÏ.±¨Ãû·Ñ 3000Á½¡£¿ªÕ½ºó£¬Èç¹û×ÜÈËÊı²»×ã£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø±¨Ãû!";
-			str2 ="<#> ±¨ÃûÊ£ÓàÊ±¼äÎª"..RestMin.."·ÖÖÓ"
+			str1 = resultstr.."<#>Tèng Kim ®¹i chiÕn ph­¬ng thøc VËn l­¬ng ®ang trong thêi gian b¸o danh, mäi ng­êi h·y mau ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh, hoÆc cã thÓ dïng Tèng Kim chiªu th­ ®Ó trùc tiÕp ®Õn ®iÓm b¸o danh. Thêi gian khai chiÕn cßn l¹i lµ: 	"..RestMin.."phót. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40, phİ b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng sè ng­êi ch­a ®ñ vÉn cã thÓ tiÕp tôc b¸o danh!";
+			str2 ="<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"
 		else
-			str1 = resultstr.."<#>ËÎ½ğ´óÕ½ÔËÁ¸Ä£Ê½ÕıÔÚ±¨ÃûÖĞ£¬´ó¼Ò¸Ï½ôµ½ÏåÑô»òÕßÖìÏÉÕò±¨Ãû,»òÕß¿ÉÒÔÊ¹ÓÃËÎ½ğÚ¯Êé¼ÌĞøµ½ËÎ½ğÕ½³¡±¨Ãû´¦±¨Ãû, »¹Ê£Ê±¼äÎª"..RestMin.."·ÖÖÓ"..RestSec.."Ãë¡£²Î¼ÓÌõ¼ş£º40¼¶ÒÔÉÏ.±¨Ãû·Ñ 3000Á½¡£¿ªÕ½ºó£¬Èç¹û×ÜÈËÊı²»×ã£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø±¨Ãû!";
-			str2 = "<#> ±¨ÃûÊ£ÓàÊ±¼äÎª"..RestMin.."·ÖÖÓ"..RestSec.." Ãë"
+			str1 = resultstr.."<#>Tèng Kim ®¹i chiÕn ph­¬ng thøc VËn l­¬ng ®ang trong thêi gian b¸o danh, mäi ng­êi h·y mau ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh, hoÆc cã thÓ dïng Tèng Kim chiªu th­ ®Ó trùc tiÕp ®Õn ®iÓm b¸o danh. Thêi gian khai chiÕn cßn l¹i lµ: 	"..RestMin.."phót"..RestSec.."gi©y. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40, phİ b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng sè ng­êi ch­a ®ñ vÉn cã thÓ tiÕp tôc b¸o danh!";
+			str2 = "<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"..RestSec.." gi©y"
 		end
 		AddGlobalCountNews(str1, 2);
 		Msg2MSAll(MISSIONID,str2);		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
@@ -45,7 +45,7 @@ function OnTimer()
 		if (t == RUNGAME_TIME) then --ÕıÊ½¿ªÕ½µÄµÚÒ»´Î´¥·¢Ê±£¬²úÉúÕ½¶·NpcµÄÉú³É¹æÔòÊı¾İ
 			sf_buildfightnpcdata()
 		else
-			--Ã¿Ò»·ÖÖÓ²úÉúÒ»ÅúNpc£¬²¢ÇÒÍ¨¸æµ±Ç°ËÍÁ¸Ê³°üµÄÊıÁ¿
+			--Ã¿Ò»phót²úÉúÒ»ÅúNpc£¬²¢ÇÒÍ¨¸æµ±Ç°ËÍÁ¸Ê³°üµÄÊıÁ¿
 			if (t <= VANISHGAME_TIME and mod(t, 3) == 0 ) then
 				sf_callnpc(t - RUNGAME_TIME, VANISHGAME_TIME - RUNGAME_TIME)	-- ²úÉúÕ½¶·Npc				
 			end
@@ -53,7 +53,7 @@ function OnTimer()
 			bt_pop2signmap()	--½«ÔÚºóÓª£¨fight=0£©µÄÍæ¼ÒËÍ»Ø±¨Ãûµã
 			
 			if (mod(t, 3 ) == 0) then
-				msstr = format("¹«²¼£ºËÎ·½Óë½ğ·½ÔËÊäÁ¸°üµÄ±ÈÀıÎª<color=yellow>%d:%d",BT_GetGameData(GAME_CAMP1),BT_GetGameData(GAME_CAMP2));
+				msstr = format("C«ng bè: Tû lÖ Bao l­¬ng phe Tèng vµ phe Kim vËn chuyÓn ®­îc lµ <color=yellow>%d:%d",BT_GetGameData(GAME_CAMP1),BT_GetGameData(GAME_CAMP2));
 				Msg2MSAll(MISSIONID, msstr);
 			end
 		end
@@ -97,7 +97,7 @@ function sf_creategraingharry(n_branch)
 		
 			sf_addgharry(n_camp, srcx, srcy, 0);
 		end
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF>ĞÂÁ¸³µÒÑµ½£¬¿ì½ĞÈËÈ¥ÔËÁ¸.");
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF>Xe l­¬ng míi ®· ®Õn, h·y mau cho ng­êi ®i vËn l­¬ng.");
 	end
 	
 end

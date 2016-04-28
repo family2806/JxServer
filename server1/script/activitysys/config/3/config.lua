@@ -8,14 +8,14 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "nil",
-	szName = "Ñ¡ÔñÑ¡ËÍÍò±¦Ïä",
+	szName = "Chän dßng chän tÆng v¹n b¶o r­¬ng",
 	nStartDate = 200910150000,
 	nEndDate  = 200911020000,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
-		{"PlayerFunLib:CheckTaskDaily",	{2564,0,"Ã¿ÌìÖ»ÄÜÃâ·ÑÁìÈ¡1<color=yellow>Íò±¦Ïä<color> t?color=yellow>ÄÏº£ÆæÈË<color>","=="} },
+		{"PlayerFunLib:CheckTaskDaily",	{2564,0,"Mçi ngµy chØ ®­îc nhËn miÔn phİ 1 <color=yellow>v¹n b¶o r­¬ng<color> tõ<color=yellow>Nam H¶i Kú Nh©n<color>","=="} },
 		{"PlayerFunLib:CheckLevel",	{140,"default",">="} },
 	},
 	tbActition = 
@@ -28,14 +28,14 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ [Ãâ·ÑÍò±¦Ïä]",
+	szName = "Sö dông [V¹n b¶o r­¬ng miÔn phİ]",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"return {tbProp={6,1,2157,-1,-1,0},}"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckFreeBagCell",	{10,"default"} },
-		{"PlayerFunLib:CheckTaskDaily",	{2565,9,"Ã¿ÈÕ×î¶àÖ»ÄÜÊ¹ÓÃ9¸ö <color=yellow> Íò±¦Ïä<color>","<"} },
+		{"PlayerFunLib:CheckTaskDaily",	{2565,9,"Mçi ngµy chØ ®­îc sö dông tèi ®a 9 <color=yellow> v¹n b¶o r­¬ng<color>","<"} },
 	},
 	tbActition = 
 	{
@@ -47,14 +47,14 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ [ÊÕ·ÑÍò±¦Ïä]",
+	szName = "Sö dông [V¹n b¶o r­¬ng thu phİ]",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"return {tbProp={6,1,2158,-1,-1,0},}"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckFreeBagCell",	{10,"default"} },
-		{"PlayerFunLib:CheckTaskDaily",	{2565,9,"Ã¿Ìì×î¶àÖ»ÄÜÊ¹ÓÃ9¸ö<color=yellow> Íò±¦Ïä<color>","<"} },
+		{"PlayerFunLib:CheckTaskDaily",	{2565,9,"Mçi ngµy chØ ®­îc sö dông tèi ®a 9 <color=yellow> v¹n b¶o r­¬ng<color>","<"} },
 	},
 	tbActition = 
 	{
@@ -66,15 +66,15 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷½øÈëÄÏº£ÆæÈË",
+	szName = "BÊm vµo Nam H¶i Kú Nh©n",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ÄÏº£ÆæÈË"},
+	tbMessageParam = {"LÔ Quan"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ËÍÍò±¦Ïä",1} },
+		{"AddDialogOpt",	{"TÆng v¹n b¶o r­¬ng",1} },
 	},
 }

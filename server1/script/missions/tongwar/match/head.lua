@@ -80,17 +80,17 @@ function GameOver()
 	
 	if (GetMissionV(MS_MOSTDEATH) == 0) then
 		if (bonus_s > bonus_j ) then
-			resultstr = "ÎäÁÖµÚÒ»°ï "..GetMissionS(MS_S_CITYNAME_S).." ºÍ "..GetMissionS(MS_S_CITYNAME_J).." - Õ½ÊÂ½áÊø, Ë«·½´ïµ½µÄ×Ü·ÖÎª "..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_S).." »ñµÃÊ¤Àû!";
+			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_S).." giµnh ®­îc th¾ng lîi!";
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			sf_winbouns(GetMissionV(MS_TONGWAR_S), GetMissionV(MS_TONGWAR_J), bonus_s, bonus_j)
 		elseif (bonus_s < bonus_j) then
-			resultstr = "ÎäÁÖµÚÒ»°ï "..GetMissionS(MS_S_CITYNAME_S).." ºÍ"..GetMissionS(MS_S_CITYNAME_J).." - Õ½ÊÂ½áÊø, Ë«·½´ïµ½µÄ×Ü·ÖÎª"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_J).." »ñµÃÊ¤Àû!";
+			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_J).." giµnh ®­îc th¾ng lîi!";
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			sf_winbouns(GetMissionV(MS_TONGWAR_J), GetMissionV(MS_TONGWAR_S), bonus_j, bonus_s)
 		else
-			resultstr = "ÎäÁÖµÚÒ»°ï "..GetMissionS(MS_S_CITYNAME_S).." ºÍ"..GetMissionS(MS_S_CITYNAME_J).." - Õ½ÊÂ½áÊø, Ë«·½´ïµ½µÄ×Ü·ÖÎª"..bonus_s..":"..bonus_j.."ÒÑÆ½¾Ö";
+			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j.." ®· hßa nhau";
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			sf_winbouns(GetMissionV(MS_TONGWAR_S), GetMissionV(MS_TONGWAR_J), 0)
@@ -99,13 +99,13 @@ function GameOver()
 		AddGlobalNews(resultstr)
 
 	elseif (GetMissionV(MS_MOSTDEATH) == 1) then
-		resultstr = "ÎäÁÖµÚÒ»°ï"..GetMissionS(MS_S_CITYNAME_S).."´òÆ½"..GetMissionS(MS_S_CITYNAME_J).." - Õ½ÊÂ½áÊø."..GetMissionS(MS_S_CITYNAME_S).." »ñµÃÊ¤Àû!"
+		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_S).." giµnh ®­îc th¾ng lîi!"
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr)
 		sf_winbouns(GetMissionV(MS_TONGWAR_S), GetMissionV(MS_TONGWAR_J), bonus_s, bonus_j)
 		AddGlobalNews(resultstr) 
 	elseif (GetMissionV(MS_MOSTDEATH) == 2) then
-		resultstr = "ÎäÁÖµÚÒ»°ï"..GetMissionS(MS_S_CITYNAME_S).."´òÆ½"..GetMissionS(MS_S_CITYNAME_J).." - Õ½ÊÂ½áÊø."..GetMissionS(MS_S_CITYNAME_J).." »ñµÃÊ¤Àû!"
+		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_J).." giµnh ®­îc th¾ng lîi!"
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr)
 		sf_winbouns(GetMissionV(MS_TONGWAR_J), GetMissionV(MS_TONGWAR_S), bonus_j, bonus_s)
@@ -223,7 +223,7 @@ function but_pop2home( camp )
 			x,y = bt_getadata(npcfile)
 			SetPos(floor(x/32), floor(y/32))
 			SetFightState(1)
-			Msg2Player("<color=pink> Äã²»ÄÜÔÚºóÓªÁË")
+			Msg2Player("<color=pink> B¹n kh«ng thÓ ë l¹i hËu doanh ®­îc n÷a")
 		end
 	end
 
@@ -232,7 +232,7 @@ function but_pop2home( camp )
 			PlayerIndex = tbRMPlayer[ i ]
 			remain_time = TIME_PLAYER_STAY - ( GetGameTime() - tongwar_getdata( TONGWAR_RLTASK_LASTDTIME ) )
 			if( remain_time > 0) then
-				Msg2Player("<color=pink> Äã¿ÉÒÔÁôÔÚ "..remain_time.." Ãë")
+				Msg2Player("<color=pink> B¹n cßn cã thÓ ¬ l¹i "..remain_time.." gi©y")
 			end
 		end
 	end

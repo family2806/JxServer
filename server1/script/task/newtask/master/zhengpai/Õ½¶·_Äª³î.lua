@@ -13,7 +13,7 @@ end
 function newtask1()
 	AddOwnExp(20000)
 	AddExp_Skill_Extend(20000)
-	Msg2Player("Äª³îÈÃÄã»Ø³ÇËµ»°.")
-	Talk(1,"","Äª³î:±ğÒÔÎªÄãÕâ¼¸ÏÂÕæ°ÑÎÒ´òµ¹ÁË,²»ÖĞ¶¾µÄ»°,ÄãÄÄÊÇÎÒ¶ÔÊÖ.»Ø³ÇÀïËµ»°.")
+	Msg2Player("M¹c SÇu b¶o b¹n vÒ thµnh nãi chuyÖn")
+	Talk(1,"","§õng t­ëng ng­¬i ®¸nh ngÊt ®­îc ta, nÕu ta kh«ng tróng ®éc th× ng­¬i ®©u ph¶i lµ ®èi thñ. VÒ thµnh råi nãi chuyÖn!")
 end
 		

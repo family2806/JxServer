@@ -11,43 +11,43 @@ Include("\\script\\task\\newtask\\newtask_head.lua")
 function main()
 Uworld126 = nt_getTask(126)
 Uworld1002 = nt_getTask(1002)
-	Say(" ÈËÉúÔÚÊÀ£¬ÐèÒª¶®µÃÕäÏ§ÐÒ¸£.",3,"ÎÒÀ´×öÕýÏßÈÎÎñ/branch_branchliqiushui","ÎÒÀ´×ö90¼¶ÈÎÎñ/tasknpc_nity","²»ÎÊÁË!/no")
+	Say(" Ng­êi sèng trªn ®êi cÇn ph¶i biÕt tr©n träng h¹nh phóc.",3,"Ta ®Õn lµm nhiÖm vô chÝnh tuyÕn/branch_branchliqiushui","Ta ®Õn lµm nhiÖm vô cÊp 90/tasknpc_nity","Kh«ng hái n÷a!/no")
 end
 
 function tasknpc_nity()
 Uworld126 = nt_getTask(126)
 	if (Uworld126 == 10) and (HaveItem(391) == 1) then
-		Talk(4,"Uworld126_lose","ÛªÐ¡½ã£¬ÄãÓÐÐÅ","§o¶ÎË¼³ÉÒ²ÓÐºó»ÚµÄÒ»Ìì£¿Ì«ÍíÁË£¬ÎÒ²»ÔÙÏàÐÅÄÐÈËÁË.","¹ÃÄïºÎÐë¹ÌÖ´£¬Ë×ÓïËµ£¬Ê¿±ðÈýÈÕ¹ÎÄ¿Ïà´ý,ÄÑµÀ²»ÄÜ¸ø¶Î¹«×ÓÒ»¸ö»ú»áÂð£¿  ","¸øËû»ú»á£¿ËûÀë¿ªÎÒµÄÊ±ºò£¬ÓÐ¸øÎÒ»ú»áÂð£¿ÎÒ²»ÏëËµÁË£¬ÄãÃ»ÊÂ¾ÍÈ¥ÕÒÕÆÃÅ£¬ËýÏ²»¶ËµÕâÐ©.")
+		Talk(4,"Uworld126_lose","LÖ tiÓu th­! C« cã th­!","§oµn T­ Thµnh còng cã ngµy hèi hËn? Qu¸ trÔ råi! Ta ch¼ng cßn tin t­ëng vµo ®µn «ng n÷a.","C« n­¬ng hµ tÊt ph¶i cè chÊp, tôc ng÷ cã c©u 'SÜ biÖt tam nhËt, ®­¬ng qu¸t môc t­¬ng khan', lÏ n·o kh«ng thÓ cho §oµn c«ng tö mét c¬ héi sao?","Cho h¾n c¬ héi? Lóc h¾n rêi xa ta sao h¾n kh«ng cho ta mét c¬ héi kh«ng? Ta kh«ng muèn nãi n÷a, ng­¬i r¶nh rçi th× h·y ®i t×m Ch­ëng m«n, bµ ta thÝch nãi nh÷ng chuyÖn nµy.")
 	elseif (Uworld126 == 10) then			-- Ã»ÓÐÊéÐÅ
-		Talk(3,"","ÛªÐ¡½ã£¬ÄãÓÐÐÅ","Ê²Ã´ÐÅ?","°¡£¬ÎÒÁôÔÚ¶ÎË¼³ÉÄÇÀïÁË.")
+		Talk(3,"","LÖ tiÓu th­! C« cã th­!","Th­ g× vËy?","µ! Ta ®Ó quªn ë chç §oµn T­ Thµnh.")
 	elseif (Uworld126 == 30)then
-   	Talk(3,"Uworld126_cant","ÛªÐ¡½ã",".....","¿´À´Òª»ØÈ¥¼û¶Î¹«×ÓÕÒ°ì·¨²ÅÐÐ.")
+   	Talk(3,"Uworld126_cant","LÖ tiÓu th­!",".....","Xem ra ph¶i quay l¹i gÆp §oµn c«ng tö t×m biÖn ph¸p míi ®­îc.")
    elseif (Uworld126 == 60)then
-   	Talk(12,"Uworld126_beleive","ÛªÐ¡½ã£¬²»ºÃÁË! ","¼±Ê²Ã´£¬ÓÐÊ²Ã´ÊÂÂýÂýËµ.","¶Î¹«×Ó.","ËûÔõÃ´Ñù?","¶Î¹«×ÓÒòÎª±£ÎÀËý±»µÐÈË´ò³ÉÖØÉË£¬ÐÔÃüÎ£ÏÕ!","Äã²»ÓÃÐé¹¹ÁË£¬ÎÒ¾ø¶Ô²»»áÐÅÄã!","ÔÚÏÂÒÔ×Ô¼ºÔÚ½­ºþµÄÃûÉùµ£±££¬ÎÒ²»Æ­¹ÃÄï..","ÄÑµÀ?....Ë¼³É¡£¶àÄêÕâÑùÁË£¬ÄãºÎÐëÌæËûÈËÊÜ×ï£¬ÕâÐ©Äê£¬ÎÒµÄÐÔÇéÒ²±äÁË£¬ÓÐºÜ¶à³ðºÞ£¬ÄãÃ»ÓÐÎä¹¦£¬ÕæÊÇ¿àÁË×Ô¼º.","Èç¹ûÄÇÌìËýÔ­ÁÂËû¾Í²»»áÕâÑùÁË.","Õâ¼¸ÌìÎÒË¯²»×Å£¬ÐÄÀïÀÏÏë×ÅËû£¬ÏÖÔÚËûÔÚÄÄÀï?","´óÀí ","ÎÒ»áÂíÉÏµ½ÄÇÀï£¬ËùÓÐµÄ³ðºÞ¶¼ÒÑ½áÊø!")	
+   	Talk(12,"Uworld126_beleive","LÖ tiÓu th­! Kh«ng xong råi! ","Véi c¸i g×! Cã g× tõ tõ nãi.","§oµn c«ng tö….","H¾n thÕ nµo?","§oµn c«ng tö v× b¶o vÖ c« bÞ kÎ thï ®¸nh träng th­¬ng, tÝnh m¹ng ®ang nguy hiÓm!","Ng­¬i kh«ng cÇn bÞa ®Æt, ta quyÕt kh«ng tin ng­¬i ®©u!","T¹i h¹ lÊy danh tiÕng cña m×nh trªn giang hå ra b¶o ®¶m, ta kh«ng g¹t c« n­¬ng ®©u..","Ch¼ng lÏ.....T­ Thµnh. Qua nhiÒu n¨m nh­ thÕ råi ng­¬i hµ tÊt ph¶i thay ng­¬i kh¸c chÞu trËn, nh÷ng n¨m gÇn ®©y tÝnh t×nh ta ®· thay ®æi, ®· t¹o ra nhiÒu hËn thï, ng­¬i kh«ng cã vâ c«ng thËt lµ chuèc khæ vµo th©n.","NÕu ngµy Êy c« chÞu tha thø cho h¾n th× ®©u ®Õn nçi.","MÊy ngµy nµy ta kh«ng sao ngñ ®­îc, trong lßng lu«n nghØ vÒ y, b©y giê y ®ang ë ®©u?","§¹i Lý!","Ta sÏ ®Õn ®ã ngay, tÊt c¶ nh÷ng thï hËn ®· kÕt thóc!")	
    elseif (Uworld126 > 10) and (Uworld126 < 60) then				-- ÈÎÎñÖÐµÄÈ±Ê¡¶Ô»°
-   	Talk(1,"","ÎÒºÍË¼³ÉÃ»ÓÐÈÎºÎ¸ÉÁ¬£¬Äã²»ÓÃ¶àËµ! ")
+   	Talk(1,"","Ta vµ T­ Thµnh kh«ng liªn can g× nhau, ng­¬i ®õng l¾m lêi! ")
    else
-   	Talk(1,"","ÃÅÖ÷²»ÄÜÓëÌÆÒ»³½³ÉÇ×£¬ÕâÑù½«Î¥·´ÃÅ¹æ.....")
+   	Talk(1,"","M«n chñ kh«ng thÓ thµnh th©n víi §­êng NhÊt TrÇn, nh­ thÕ sÏ ph¹m m«n quy.....")
    end
 end
 
 function Uworld126_lose()
 	DelItem(391)
 	nt_setTask(126,20)
-	Msg2Player("¿´ÐÅÖ®ºó£¬ÛªÇïË®Ã»ÓÐÒ»µã¸Ð¶¯£¬Äã¾ö¶¨È¥ÕÒÒüº¬Òö°ïÖú®ì.")
-	AddNote("¿´ÐÅÖ®ºó£¬ÛªÇïË®Ã»ÓÐÒ»µã¸Ð¶¯£¬Äã¾ö¶¨È¥ÕÒÒüº¬Òö°ïÖú®ì.")
+	Msg2Player("Sau khi xem th­, LÖ Thu Thñy kh«ng chót xóc ®éng, b¹n quyÕt ®Þnh ®i t×m Do·n Hµm Yªn gióp ®ì.")
+	AddNote("Sau khi xem th­, LÖ Thu Thñy kh«ng chót xóc ®éng, b¹n quyÕt ®Þnh ®i t×m Do·n Hµm Yªn gióp ®ì.")
 end
 
 function Uworld126_cant()
 	nt_setTask(126,40)
-	Msg2Player("ÛªÇïË®²»ÌýÈ°¸æ£¬Äã¾ö¶¨»ØÈ¥ÕÒ¶ÎË¼³É.")
-	AddNote("ÛªÇïË®²»ÌýÈ°¸æ£¬Äã¾ö¶¨»ØÈ¥ÕÒ¶ÎË¼³É.")
+	Msg2Player("LÖ Thu Thñy kh«ng nghe lêi khuyªn, b¹n quyÕt ®Þnh trë vÒ t×m §oµn T­ Thµnh.")
+	AddNote("LÖ Thu Thñy kh«ng nghe lêi khuyªn, b¹n quyÕt ®Þnh trë vÒ t×m §oµn T­ Thµnh.")
 end
 
 function Uworld126_beleive()
 	nt_setTask(126,70)
-	Msg2Player("ÛªÇïË®ÐÄÀï»¹ÓÐ¶ÎË¼³É£¬¾ö¶¨È¥¼ûËû×îºóÒ»Ãæ£¬¼Æ»®³É¹¦.")
-	AddNote("ÛªÇïË®ÐÄÀï»¹ÓÐ¶ÎË¼³É£¬¾ö¶¨È¥¼ûËû×îºóÒ»Ãæ£¬¼Æ»®³É¹¦.")
+	Msg2Player("Trong lßng LÖ Thu Thñy vÉn cßn v­¬ng vÊn §oµn T­ Thµnh, quyÕt ®Þnh ®i gÆp mÆt h¾n lÇn cuèi! KÕ ho¹ch thµnh c«ng.")
+	AddNote("Trong lßng LÖ Thu Thñy vÉn cßn v­¬ng vÊn §oµn T­ Thµnh, quyÕt ®Þnh ®i gÆp mÆt h¾n lÇn cuèi! KÕ ho¹ch thµnh c«ng.")
 end
 
 function branch_branchliqiushui()

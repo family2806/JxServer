@@ -8,93 +8,93 @@ Include("\\script\\dailogsys\\dailogsay.lua")
 sbook_list =
 {	-- ¸ñÊ½£º{¼¼ÄÜID, ¼¼ÄÜµÈ¼¶, °ïÅÉID, ËùÐè¼¶±ð, ¼¼ÄÜÊéÃû³Æ, ¼¼ÄÜÃû³Æ}
 	[2959] = {	
-		{318, 1, 0, 90, "ÉÙÁÖÃØ¼®", "ÉÙÁÖÕÆ·¨-´ïÄ¦¶É½­"},
-		{319, 1, 0, 90, "ÉÙÁÖÃØ¼®", "ÉÙÁÖ¹÷·¨-ºáÉ¨Ç§¾ü"},
-		{321, 1, 0, 90, "ÉÙÁÖÃØ¼®", "ÉÙÁÖµ¶·¨-ÎÞÏàÕ¶"},
+		{318, 1, 0, 90, "ThiÕu L©m BÝ KÝp", "ThiÕu L©m Ch­ëng Ph¸p - §¹t Ma §é Giang"},
+		{319, 1, 0, 90, "ThiÕu L©m BÝ KÝp", "ThiÕu L©m C«n Ph¸p - Hoµnh T¶o Thiªn Qu©n"},
+		{321, 1, 0, 90, "ThiÕu L©m BÝ KÝp", "ThiÕu L©m §ao Ph¸p - V« T­íng Tr¶m"},
 	},
 	[2960] = {	
-		{322, 1, 1, 90, "ÌìÍõÃØ¼®", "ÌìÍõµ¶·¨-ÆÆÌìÕ¶"},
-		{323, 1, 1, 90, "ÌìÍõÃØ¼®", "ÌìÍõÇ¹·¨-×·ÐÇÖðÔÂ"},
-		{325, 1, 1, 90, "ÌìÍõÃØ¼®", "ÌìÍõ´¸·¨-×··ç¾÷"},
+		{322, 1, 1, 90, "Thiªn V­¬ng BÝ KÝp", "Thiªn V­¬ng §ao Ph¸p - Ph¸ Thiªn Tr¶m"},
+		{323, 1, 1, 90, "Thiªn V­¬ng BÝ KÝp", "Thiªn V­¬ng Th­¬ng Ph¸p - Truy Tinh Trôc NguyÖt"},
+		{325, 1, 1, 90, "Thiªn V­¬ng BÝ KÝp", "Thiªn V­¬ng Chïy Ph¸p - Truy Phong QuyÕt"},
 	},
 	[2961] = {	 
-		{339, 1, 2, 90, "ÌÆÃÅÃØ¼® ", "ÌÆÃÅ·Éµ¶-Éã»êÔÂÓ°"},
-		{302, 1, 2, 90, "ÌÆÃÅÃØ¼® ", "ÌÆÃÅÐä¼ý-±©ÓêÀæ»¨"},
-		{342, 1, 2, 90, "ÌÆÃÅÃØ¼® ", "ÌÆÃÅ·ÉïÚ-¾Å¹¬·ÉÐÇ"},
-		{351, 1, 2, 90, "ÌÆÃÅÃØ¼® ", "ÌÆÃÅº¬¾²-ÂÒ»¹»÷"},
+		{339, 1, 2, 90, "§­êng M«n BÝ KÝp ", "§­êng M«n Phi §ao - NhiÕp Hån NguyÖt ¶nh"},
+		{302, 1, 2, 90, "§­êng M«n BÝ KÝp ", "§­êng M«n Tô TiÔn - B¹o Vò Lª Hoa"},
+		{342, 1, 2, 90, "§­êng M«n BÝ KÝp ", "§­êng M«n Phi Tiªu - Cöu Cung Phi Tinh"},
+		{351, 1, 2, 90, "§­êng M«n BÝ KÝp ", "§­êng m«n H¶m TÜnh - Lo¹n Hoµn KÝch"},
 	},
 	[2962] = {	 
-		{353, 1, 3, 90, "Îå¶¾ÃØ¼®", "Îå¶¾ÕÆ·¨-Òõ·çÊ´¹Ç"},
-		{355, 1, 3, 90, "Îå¶¾ÃØ¼®", "Îå¶¾µ¶·¨-ÐþÒõÕ¶"},
-		{390, 1, 3, 90, "Îå¶¾ÃØ¼®", "Îå¶¾ÉãÐÄÊõ-¶Ï½î¸¯¹Ç"},
+		{353, 1, 3, 90, "Ngò §éc BÝ KÝp", "Ngò §éc Ch­ëng Ph¸p - ¢m Phong Thùc Cèt"},
+		{355, 1, 3, 90, "Ngò §éc BÝ KÝp", "Ngò §éc §ao Ph¸p - HuyÓn ¢m Tr¶m"},
+		{390, 1, 3, 90, "Ngò §éc BÝ KÝp", "Ngò §éc NhiÕp T©m ThuËt - §o¹n C©n Hñ Cèt"},
 	},
 	[2963] = {	 
-		{328, 1, 4, 90, "¶ëÃ¼ÃØ¼®", "¶ëÃ¼½£·¨-Èý¶ëÆëÑ©"},
-		{380, 1, 4, 90, "¶ëÃ¼ÃØ¼®", "¶ëÃ¼ÕÆ·¨-·çËªËéÓ°"},
-		{332, 1, 4, 90, "¶ëÃ¼ÃØ¼®h", "¶ëÃ¼ÆÕ¶É-ÆÕ¶ÉÖÚÉú"},
+		{328, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga My KiÕm Ph¸p - Tam Nga TÔ TuyÕt"},
+		{380, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga My Ch­ëng Ph¸p - Phong S­¬ng To¸i ¶nh"},
+		{332, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga Mi Phæ §é - Phæ §é Chóng Sinh"},
 	},
 	[2964] = {	 
-		{336, 1, 5, 90, "´äÑÌÃØ¼®", "´äÑÌµ¶·¨-±ùËÉÎÞÓ°"},
-		{337, 1, 5, 90, "´äÑÌÃØ¼®", "´äÑÌË«µ¶-±ùÐÄÏÉ×Ó"},
+		{336, 1, 5, 90, "Thóy Yªn BÝ KÝp", "Thóy Yªn §¹o Ph¸p - B¨ng Tung V« ¶no"},
+		{337, 1, 5, 90, "Thóy Yªn BÝ KÝp", "Thóy Yªn Song §ao - B¨ng T©m Tiªn Tö"},
 	},
 	[2965] = {	 
-		{357, 1, 6, 90, "Ø¤°ïÃØ¼®", "Ø¤°ïÕÆ·¨-·ÉÁúÔÚÌì"},
-		{359, 1, 6, 90, "Ø¤°ïÃØ¼®", "Ø¤°ï¹÷·¨-ÌìÏÂÎÞ¹·"},
+		{357, 1, 6, 90, "C¸i Bang BÝ KÝp", "C¸i Bang Ch­ëng Ph¸p - Phi Long T¹i Thiªn"},
+		{359, 1, 6, 90, "C¸i Bang BÝ KÝp", "C¸i Bang C«n Ph¸p - Thiªn H¹ V« CÈu"},
 	},
 	[2966] = {	 
-		{361, 1, 7, 90, "ÌìÈÌÃØ¼®", "ÌìÈÌÃ¬·¨-ÔÆÁú»÷"},
-		{362, 1, 7, 90, "ÌìÈÌÃØ¼®", "ÌìÈÌµ¶·¨-ÌìÍâÁ÷ÐÇ"},
-		{391, 1, 7, 90, "ÌìÈÌÃØ¼®", "ÌìÈÌÖäÊõ-Éã»êÂÒÐÄ"},
+		{361, 1, 7, 90, "Thiªn NhÉn BÝ KÝp", "Thiªn NhÉn M©u Ph¸p - V©n Long KÝch"},
+		{362, 1, 7, 90, "Thiªn NhÉn BÝ KÝp", "Thiªn NhÉn §ao Ph¸p - Thiªn Ngo¹i L­u Tinh"},
+		{391, 1, 7, 90, "Thiªn NhÉn BÝ KÝp", "Thiªn NhÉn Chó ThuËt - NhiÕp Hån Lo¹n T©m"},
 	},
 	[2967] = {	 
-		{365, 1, 8, 90, "Îäµ±ÃØ¼®", "Îäµ±ÕÆ·¨-°ÁÑ©Ïô·å"},
-		{368, 1, 8, 90, "Îäµ±ÃØ¼®", "Îäµ±½£·¨-ÈË½£ºÏÒ»"},
+		{365, 1, 8, 90, "Vâ §ang BÝ KÝp ", "Vâ §ang Ch­ëng Ph¸p - Thiªn §Þa V« Cùc"},
+		{368, 1, 8, 90, "Vâ §ang BÝ KÝp ", "Vâ §ang KiÕm Ph¸p - Nh©n KiÕm Hîp NhÊt"},
 	},
 	[2968] = {	 
-		{372, 1, 9, 90, "À¥ÂØÃØ¼®", "À¥ÂØÓù·ç-°ÁÑ©Ïô·å"},
-		{375, 1, 9, 90, "À¥ÂØÃØ¼®", "À¥ÂØÓùÁú-À×¶¯¾ÅÌì"},
-		{394, 1, 9, 90, "À¥ÂØÃØ¼®", "À¥ÂØÓùÐÄ-×íÏÉ´ò¹Ç"},
+		{372, 1, 9, 90, "C«n L«n BÝ KÝp", "C«n L«n Ngù Phong - Ng¹o TuyÕt Tiªu Phong"},
+		{375, 1, 9, 90, "C«n L«n BÝ KÝp", "C«n L«n Ngù L«i - L«i §éng Cöu Thiªn"},
+		{394, 1, 9, 90, "C«n L«n BÝ KÝp", "C«n L«n Ngù T©m - Tóy Tiªn T¸ Cèt"},
 	},
 }
 
 function LearnSkillByBook(index, list, nItemIndex, nPlayerIndex)
 
 	if(GetLastFactionNumber() ~= list[index][3]) then							-- ²»ÊÇÖ¸¶¨ÃÅÅÉ
-		Msg2Player("ÄúÄÃ×Å"..list[index][5].."ÑÐ¾¿°ëÌì£¬½á¹ûÒ²Áì»á²»µ½Ê²Ã´")
+		Msg2Player("B¹n cÇm lÊy "..list[index][5].."Nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng kh«ng lÜnh ngé ®­îc g× ")
 		return 1
 	end
 	if(GetLevel() < list[index][4]) then							-- µ«Î´µ½Ö¸¶¨¼¶±ð
-		Msg2Player("ÄúÄÃ×Å"..list[index][5].."ÑÐ¾¿°ëÌì£¬½á¹ûÁì»áÒ»µã. ")
+		Msg2Player("B¹n cÇm lÊy "..list[index][5].."Nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé rÊt Ýt. ")
 		return 1
 	end
 	if(HaveMagic(list[index][1]) ~= -1) then							-- ÒÑÑ§¹ý¸Ã¼¼ÄÜ
-		Msg2Player("ÄúÒÑÄÃ"..list[index][5].."ÑÐ¾¿À´ÑÐ¾¿È¥£¬µ«ÊÇÒ²Ã»Ñ§µ½Ê²Ã´®ã ")
+		Msg2Player("B¹n ®· cÇm "..list[index][5].."NghiÒn tíi ngÉm lui, nh­ng còng kh«ng häc ®­îc g× trong ®ã ")
 		return 1
 	end
 	
-	-- ÅÐ¶Ïµ±Ç°µÄÎïÆ·ÊÇ·ñÎªÉÙÁÖÃØ¼®£¬ÊÇÔòÏÈÉ¾³ý£¬ºóÔö¼Ó¼¼ÄÜ
+	-- ÅÐ¶Ïµ±Ç°µÄÎïÆ·ÊÇ·ñÎªThiÕu L©m BÝ KÝp£¬ÊÇÔòÏÈÉ¾³ý£¬ºóÔö¼Ó¼¼ÄÜ
 	if CallPlayerFunction(nPlayerIndex, IsMyItem, nItemIndex) ~= 1 then
 		return 
 	end
 	if CallPlayerFunction(nPlayerIndex, RemoveItemByIndex, nItemIndex) ~= 1 then
-		WriteLog("·ÅÆúÉÙÁÖÃØ¼®Ê§°Ü")
+		WriteLog("Hñy Bá BÝ KÝp thÊt b¹i")
 		return 
 	end
 	
 	AddMagic(list[index][1], list[index][2])										-- Ñ§»á¼¼ÄÜ
 
-	WriteLog(date("%H%M%S")..": ÕËºÅ:"..GetAccount()..", ÈËÎï:"..GetName()..", Ê¹ÓÃ: "..list[index][5].."ÒÑÑ§µ½: "..list[index][6]);
-	Msg2Player("ÒÑÑ§µ½¼¼ÄÜ"..list[index][6].."'. ")
+	WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", Sö dông: "..list[index][5].."§· häc ®­îc: "..list[index][6]);
+	Msg2Player("§· häc ®­îc kü n¨ng "..list[index][6].."'. ")
 	return 0
 end
 
 function selectskill(list, nItemIndex, nPlayerIndex)
-	local szTitle = "´óÏÀÏëÑ§ÄÄÖÖ¼¼ÄÜ"
+	local szTitle = "§¹i hiÖp muèn häc lo¹i kü n¨ng nµo"
 	local tbOpt = {}
 	for index,v in list do
 		tinsert(tbOpt, {v[6], LearnSkillByBook, {index, list, nItemIndex, PlayerIndex}})
 	end
-	tinsert(tbOpt, {"ÈÎÎñºÃºÃÏëÏë", cancel})
+	tinsert(tbOpt, {"§Ó ta suy nghÜ l¹i", cancel})
 	CreateNewSayEx(szTitle, tbOpt)
 end
 

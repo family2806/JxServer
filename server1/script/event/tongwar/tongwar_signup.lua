@@ -2,17 +2,17 @@
 function tongwar_want2signup()
 	local tongname, mytongid = GetTongName();
 	if (FALSE(tongname)) then
-		CreateTaskSay({"<dec><npc>Î´¼ÓÈë°ï»á£¬²»ÄÜ½øÈë×¼±¸ÇøÓò", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>Ch­a gia nhËp bang, kh«ng thÓ ®i vµo Khu vùc chuÈn bŞ!", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	local n_lid = LG_GetLeagueObjByRole(TONGWAR_LGTYPE, tongname)
 	if (FALSE(n_lid)) then
-		CreateTaskSay({"<dec><npc>Bang <color=red>"..tongname.."<color> ²»ÄÜÓëÕ¼³Ç°ï»áÁªÃË£¬²»ÄÜ½øÈë×¼±¸Õ½Çø", "½áÊø¶Ô»°/OnCancel"})
+		CreateTaskSay({"<dec><npc>Bang <color=red>"..tongname.."<color> kh«ng cã liªn minh víi c¸c bang héi chiÕm thµnh, kh«ng thÓ ®i vµo §Êu tr­êng chuÈn bŞ.", "KÕt thóc ®èi tho¹i/OnCancel"})
 		return
 	end
 	--VLDNB 10- ²Î¼ÓÌõ¼ş£ºÒÑ½øÈë°ï»áÒ»Ìì- Modified By DinhHQ - 20111013	
 	if (GetJoinTongTime() < 1440) then
-		Say("¼ÓÈë°ï»áÊ±¼ä²»¹»<color=red>1 Ìì<color>, ²»ÄÜ½øÈëÕ½Çø.", 0)
+		Say("Thêi gian gia nhËp bang ch­a ®ñ <color=red>1 ngµy<color>, kh«ng thÓ vµo ®Êu tr­êng.", 0)
 		return
 	end
 	--VLDNB 10 ¼ì²é¸÷ÖÖÔöÖµÃæ¾ßTK - Modified By DinhHQ - 20111013	
@@ -20,7 +20,7 @@ function tongwar_want2signup()
 	for i=1, getn(tbEquip) do
 		local nG, nD, nP = GetItemProp(tbEquip[i])
 		if nP == 447 or nP == 450 or nP == 482 then
-			CreateTaskSay({format("<dec><npc>²»ÄÜ´øÎïÆ·<color=red>[%s]<color>½øÕ½³¡!", GetItemName(tbEquip[i])), "½áÊø¶Ô»°/OnCancel"});
+			CreateTaskSay({format("<dec><npc>Kh«ng ®­îc phĞp mang vËt phÈm <color=red>[%s]<color> vµo ®Êu tr­êng!", GetItemName(tbEquip[i])), "KÕt thóc ®èi tho¹i/OnCancel"});
 			return
 		end
 	end
@@ -34,7 +34,7 @@ function tongwar_want2signup()
 	end;
 	
 	if (FALSE(matchmap) or GetGlbValue(850) ~= 1) then
-		CreateTaskSay({"<dec><npc>"..cityname.."Î´µ½½øÈëÕ½ÇøÊ±¼ä.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>"..cityname.."Ch­a ®Õn thêi ®iÓm vµo ®Êu tr­êng, h·y ®îi trong gi©y l¸t.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	if (FALSE(matchcamp)) then
@@ -46,7 +46,7 @@ function tongwar_want2signup()
 		print("error the city "..cityname.." matchmap"..matchcamp.." have no signmap")
 		return
 	end
-	Msg2Player("ÄúÒÑ½øÈë"..cityname.."×¼±¸Çø")
+	Msg2Player("B¹n ®· vµo"..cityname.." khu vùc chuÈn bŞ")
 	NewWorld(signmap, posx, posy)
 end
 

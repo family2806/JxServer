@@ -3,16 +3,16 @@ Include("\\script\\activitysys\\config\\24\\config.lua")
 
 pActivity.tbRankTitle = 
 {
-	[1] = "ÁèÔÆ",
-	[2] = "¾øÊÀ",
-	[3] = "ÆÆ¾ü",
-	[4] = "°ÁÑ©",
-	[5] = "¾ªÀ×",
-	[6] = "Óù·ç",
-	[7] = "Åú¹Ù",
-	[8] = "ÆüÉñ",
-	[9] = "¾´Ìì",
-	[10] = "ÎŞ¼«",
+	[1] = "L¨ng V©n",
+	[2] = "TuyÖt ThÕ",
+	[3] = "Ph¸ Qu©n",
+	[4] = "Ng¹o tuyÕt",
+	[5] = "Kinh L«i",
+	[6] = "Ngù Phong",
+	[7] = "PhÖ Quang",
+	[8] = "KhÊp ThÇn",
+	[9] = "K×nh Thiªn",
+	[10] = "V« Cùc",
 }
 function pActivity:IsOpen()
 	return nil;
@@ -25,9 +25,9 @@ function pActivity:CheckFortuneRank(nRank)
 		nCurRank < nRank) then
 	
 		if (type(self.tbRankTitle[nRank]) == "string") then
-			Talk(1,"",format("ÄãĞèÒª´ïµ½<color=red>%s<color> ²ÅÄÜÂòµ½¸ÃÎïÆ·", self.tbRankTitle[nRank]));
+			Talk(1,"",format("Ng­¬i cÇn ph¶i ®¹t ®Õn <color=red>%s<color> míi cã thÓ mua ®ùoc vËt phÈm nµy", self.tbRankTitle[nRank]));
 		else
-			Talk(1,"","ÄãÒÀÈ»²»ÄÜÂò¸ÃÎïÆ·");
+			Talk(1,"","Ng­¬i vÉn kh«ng thÓ mua vËt phÈm nµy");
 		end
 		return nil;
 	end

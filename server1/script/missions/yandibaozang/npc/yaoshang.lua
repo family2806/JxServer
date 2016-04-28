@@ -1,5 +1,5 @@
 function main()
-	Say("¹ş¹ş£¬¿´µ½ÄÇÃ´¶à¸ßÊÖ¾Û¼¯ÔÚÕâÀï£¬ÕæÊÇÈÃÈË¸Ğ¶¯¡£²»Â÷ÄãËµ£¬±¾µêµÄÒ©Æ·ÊÇ×î±ãÒËµÄ£¬ÏëÒªÊ²Ã´?", 2, "ÎÒÖ»À´¿´¿´!/want2sale", "²»Âò/OnCancel")
+	Say("Ha ha! ThÊy nhiÒu cao thñ tô tËp ë ®©y thËt khiÕn ng­êi c¶m ®éng! Kh«ng giÊu g× ng­¬i d­îc phÈm ë tiÖm ta lµ rÎ nhÊt, muèn mua thø g×?", 2, "Ta chØ ®Õn xem!/want2sale", "Kh«ng mua ®©u/OnCancel")
 end
 
 function OnCancel()

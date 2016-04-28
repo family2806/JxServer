@@ -1,5 +1,5 @@
 -- нВ╠╠догЬ	╩╙и╫еи	╩╙и╫еим╗мЫспкЫ╡╩н╙пЫ
 
 function main()
-	Say("╩╙и╫еи╣эвс╤╪оби╫кя╪╞хннЯакё╛дЦ╡╩р╙кФ╠ЦЁЕ╫Ь╡╩н╙пЫё╛╡╩х╩╣д╩╟╨СцФ╬мц╩спхннЯ©иртвЖак",0);
+	Say("╖ж tЖ Hoa S╛n ph╦i ╝рu h╧ s╛n thu thкp nhiжm vТ rЕi, ng╜Йi ╝Уng n╙n tОy tiжn x╚ng v╣o Bйt Vi Hi╙n, nуu kh╚ng vр sau kh╚ng cЦ nhiжm vТ!",0);
 end

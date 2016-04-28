@@ -2,34 +2,34 @@ Include("\\script\\misc\\vngpromotion\\ipbonus\\ipbonus_2_head.lua");
 
 function main(nItemIndex)
 	if GetItemParam(nItemIndex, 1) == 0 or GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
-		Talk(1,"", "¸ÃÎïÆ·ÒÑ¹ıÆÚ")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 		return 0
 	end
 	
 	if IsCharged() ~= 1 then 
-		Talk(1,"", "ÒÑ³äÖµÈËÎï²ÅÄÜÊ¹ÓÃ¸ÃÎïÆ·.")
+		Talk(1,"", "Nh©n vËt ®· n¹p thÎ míi cã thÓ sö dông vËt phÈm nµy.")
 		return 1
 	end
 	
 	if GetLevel() < 50 then
-		Talk(1,"", "µÈ¼¶²»×ã50£¬ÔÙÁ·Ï°°É")
+		Talk(1,"", "§¼ng cÊp kh«ng ®ñ 50, h·y rÌn luyÖn thªm")
 		return 1
 	end
 	
 	IpResetTask();
 	
 	if GetTask(TASKID_USE_TIMES) >= 6 then
-		Talk(1,"", "Ã¿ÈËÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ·×î¶àÎª6´Î")
+		Talk(1,"", "Mçi ngµy chØ cã thÓ sö dông vËt phÈm  tèi ®a 6 lÇn")
 		return 1
 	end
 		
 	if CalcFreeItemCellCount() < 2 then
-		Talk(1,"", format("×°±¸¿ÕÎ»²»×ã %d ¸ö£¬ÇëÖØĞÂ°²ÅÅ.", 2))
+		Talk(1,"", format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 2))
 		return 1
 	end
 	
 	if GetTask(TASKID_CUR_EXP) >= MAX_EXP then
-		Talk(1,"","ÄãÒÑ´ïµ½ÉÏÏŞ1500000000 ¾­ÑéÖµ£¬²»ÄÜÔÙ¼ÌĞøÊ¹ÓÃÁË.")
+		Talk(1,"","B¹n ®· ®¹t ®Õn giíi h¹n 1500000000 ®iÓm kinh nghiÖm, kh«ng thÓ tiÕp tôc sö dông.")
 		return 1
 	end
 		
@@ -41,5 +41,5 @@ function main(nItemIndex)
 	SetTask(TASKID_CUR_EXP, GetTask(TASKID_CUR_EXP) + nAddExp)
 	SetTask(TASKID_USE_TIMES, GetTask(TASKID_USE_TIMES) + 1)
 	AddOwnExp(nAddExp)
-	Msg2Player("Äú»ñµÃ "..nAddExp.." ¾­ÑéÖµ.")
+	Msg2Player("B¹n nhËn ®­îc "..nAddExp.." ®iÓm kinh nghiÖm.")
 end

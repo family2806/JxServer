@@ -8,24 +8,24 @@ function main(nItemIndex)
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_ItemEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 	if zhongqiu0808_PlayerLimit() ~= 1 then
 		
-		Say("±ØĞëÊÇ50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò", 0)
+		Say("Yªu cÇu ®¨ng cÊp ph¶i trªn 50 vµ ®· qua n¹p thÎ.", 0)
 		return 1
 	end
 	
 	if nCellFreeLimit ~= nil and  CalcFreeItemCellCount() < nCellFreeLimit then
-		Say(format("Îª±ÜÃâ²Æ²úËğÊ§£¬ÇëÈ·±£×°±¸»¹Ê£ %d ¿ÕÎ».", nCellFreeLimit),0)
+		Say(format("§Ó tr¸nh mÊt m¸t tµi s¶n, h·y b¶o ®¶m hµnh trang cßn ®ñ %d « trèng.", nCellFreeLimit),0)
 		return 1
 	end
 	
 	local nCurExp = GetTask(zhongqiu0808_TSK_ZhangGongExp)
 	
 	if nCurExp >= zhongqiu0808_TSKV_ZhangGongMaxExp then
-		Say(format("Ê¹ÓÃ¸ÃÎïÆ·ÒÑ´ïÉÏÏŞ%d¾­Ñé.", zhongqiu0808_TSKV_ZhangGongMaxExp), 0)
+		Say(format("Sö dông vËt phÈm nµy ®· ®¹t giíi h¹n %d kinh nghiÖm.", zhongqiu0808_TSKV_ZhangGongMaxExp), 0)
 		return 1
 	end
 	

@@ -8,28 +8,28 @@ local tbAwardList =
 	[1] = {nExp = 1000000},
 	[2] =
 	{
-		{szName="°²°î±ù¾§ÏîÁ´", nQuality=1, nRate=0.002, tbProp={0, 164}},
-		{szName="°²°î¼¦ÑªÊ¯½äÖ¸", nQuality=1, nRate=0.005, tbProp={0, 167}},
-		{szName="°²°î¾Õ»¨Ê¯Ö¸»·", nQuality=1, nRate=0.005, tbProp={0, 165}},
-		{szName="°²°îÌï»ÆÊ¯ÓñÅå", nQuality=1, nRate=0.01, tbProp={0, 166}},
-		{szName="¶¨¹úÎÚÉ³·¢¹Ú", nQuality=1, nRate=0.005, tbProp={0, 160}},
-		{szName="¶¨¹úÇàÉ´³¤ÉÀ", nQuality=1, nRate=0.008, tbProp={0, 159}},
-		{szName="¶¨¹úÒø²ÏÑü´ø", nQuality=1, nRate=0.2, tbProp={0, 163}},
-		{szName="¶¨¹ú³à¾îÈíÑ¥", nQuality=1, nRate=0.05, tbProp={0, 161}},
-		{szName="¶¨¹ú×ÏÌÙ»¤Íó", nQuality=1, nRate=0.2, tbProp={0, 162}},
-		{szName="ÈáÇé½íàşÄŞÉÑ", nQuality=1, nRate=0.002, tbProp={0, 190}},
-		{szName="ÈáÇé»ÛĞÄÓñÅå", nQuality=1, nRate=0.01, tbProp={0, 193}},
-		{szName="ÈáÇé·ïÒÇ½äÖ¸", nQuality=1, nRate=0.2, tbProp={0, 192}},
-		{szName="ÈáÇéÊçÅ®ÏîÁ´", nQuality=1, nRate=0.15, tbProp={0, 191}},
-		{szName="ÏÀ¹ÇÇéÒå½á", nQuality=1, nRate=0.01, tbProp={0, 189}},
-		{szName="ÏÀ¹ÇÌúÑªÉÀ", nQuality=1, nRate=0.1, tbProp={0, 186}},
-		{szName="ÏÀ¹Çµ¤ĞÄ½ä", nQuality=1, nRate=0.1, tbProp={0, 188}},
-		{szName="ÏÀ¹Ç¶àÇé»·", nQuality=1, nRate=0.5, tbProp={0, 187}},
-		{szName="3¼¶Ğş¾§¿óÊ¯", nRate=5, tbProp={6, 1, 147, 3, 0, 0}},
-		{szName="4¼¶Ğş¾§¿óÊ¯", nRate=3, tbProp={6, 1, 147, 4, 0, 0}},
-		{szName="5¼¶Ğş¾§¿óÊ¯", nRate=2, tbProp={6, 1, 147, 5, 0, 0}},
-		{szName="ÎäÁÖÃØ¼®", nRate=0.1, tbProp={6, 1, 26, 1, 0, 0}},
-		{szName="Ï´Ëè¾­", nRate=0.1, tbProp={6, 1, 22, 1, 0, 0}},
+		{szName="An Bang B¨ng Tinh Th¹ch H¹ng Liªn", nQuality=1, nRate=0.002, tbProp={0, 164}},
+		{szName="An Bang Kª HuyÕt Th¹ch Giíi ChØ ", nQuality=1, nRate=0.005, tbProp={0, 167}},
+		{szName="An Bang Cóc Hoa Th¹ch ChØ hoµn", nQuality=1, nRate=0.005, tbProp={0, 165}},
+		{szName="An Bang §iÒn Hoµng Th¹ch Ngäc Béi", nQuality=1, nRate=0.01, tbProp={0, 166}},
+		{szName="§Şnh Quèc ¤ Sa Ph¸t Qu¸n", nQuality=1, nRate=0.005, tbProp={0, 160}},
+		{szName="§Şnh Quèc Thanh Sa Tr­êng Sam", nQuality=1, nRate=0.008, tbProp={0, 159}},
+		{szName="§Şnh Quèc Ng©n Tµm Yªu ®¸i", nQuality=1, nRate=0.2, tbProp={0, 163}},
+		{szName="§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa", nQuality=1, nRate=0.05, tbProp={0, 161}},
+		{szName="§Şnh Quèc Tö §»ng Hé uyÓn", nQuality=1, nRate=0.2, tbProp={0, 162}},
+		{szName="Nhu T×nh C©n Quèc Nghª Th­êng", nQuality=1, nRate=0.002, tbProp={0, 190}},
+		{szName="Nhu T×nh  TuÖ T©m Ngäc Béi", nQuality=1, nRate=0.01, tbProp={0, 193}},
+		{szName="Nhu T×nh  Phông Nghi Giíi ChØ ", nQuality=1, nRate=0.2, tbProp={0, 192}},
+		{szName="Nhu T×nh Thôc N÷ H¹ng Liªn", nQuality=1, nRate=0.15, tbProp={0, 191}},
+		{szName="HiÖp Cèt T×nh ı KÕt", nQuality=1, nRate=0.01, tbProp={0, 189}},
+		{szName="HiÖp Cèt ThiÕt HuyÕt Sam", nQuality=1, nRate=0.1, tbProp={0, 186}},
+		{szName="HiÖp Cèt §an T©m Giíi", nQuality=1, nRate=0.1, tbProp={0, 188}},
+		{szName="HiÖp Cèt §a T×nh Hoµn", nQuality=1, nRate=0.5, tbProp={0, 187}},
+		{szName="HuyÒn tinh kho¸ng th¹ch cÊp 3", nRate=5, tbProp={6, 1, 147, 3, 0, 0}},
+		{szName="HuyÒn tinh kho¸ng th¹ch cÊp 4", nRate=3, tbProp={6, 1, 147, 4, 0, 0}},
+		{szName="HuyÒn tinh kho¸ng th¹ch cÊp 5", nRate=2, tbProp={6, 1, 147, 5, 0, 0}},
+		{szName="Vâ L©m MËt TŞch", nRate=0.1, tbProp={6, 1, 26, 1, 0, 0}},
+		{szName="TÈy Tñy Kinh", nRate=0.1, tbProp={6, 1, 22, 1, 0, 0}},
 	}
 }
 
@@ -37,16 +37,16 @@ function main(nItemIndex)
 	jiaoshi0810_ResetTask()
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate >= GetItemParam(nItemIndex, 1) then
-		Talk(1,"","¸ÃÎïÆ·ÒÑ¹ıÆÚ");
+		Talk(1,"","VËt phÈm nµy ®· hÕt h¹n");
 		return 0
 	end
 	if GetLevel() < 50 or IsCharged() == 0 then
-		Talk(1, "", "Ö»ÓĞ50¼¶ÒÔÉÏÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ¸ÃµÀ¾ß.")
+		Talk(1, "", "ChØ cã ng­êi ch¬i cÊp 50 trë lªn vµ ®· qua n¹p thÎ míi cã thÓ sö dông c«ng cô nµy.")
 		return 1
 	end
 	local nCurExp = GetTask(jiaoshi0810_TSK_ExpLimit)
 	if nCurExp >= jiaoshi0810_MaxExpLimit then
-		Talk(1, "", format("Ã¿¸öÈËÎïÊ¹ÓÃ¸ÃÎïÆ·×î¶àÖ»»ñµÃ%s ¾­Ñé.", jiaoshi0810_TransferDigit2CnNum(jiaoshi0810_MaxExpLimit)))
+		Talk(1, "", format("Mçi nh©n vËt sö dông vËt phÈm nµy nhiÒu nhÊt chØ thu ®­îc %s kinh nghiÖm.", jiaoshi0810_TransferDigit2CnNum(jiaoshi0810_MaxExpLimit)))
 		return 1;
 	end
 	tbAwardTemplet:GiveAwardByList(%tbAwardList, "use "..GetItemName(nItemIndex))

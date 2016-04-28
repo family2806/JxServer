@@ -8,136 +8,136 @@ function main(sel)
 		RestoreLife()		-- ±¾ÃÅÃâ·ÑÖÎÁÆ
 		RestoreMana()
 		RestoreStamina()
-		Say("ÔÚ±¾½ÌÒªÊÇÒ»Ìì²»Á·¹¦¾Í»î²»ÏÂÈ¥.Äãµ½ÕâÕÒÎÒÓĞÊ²Ã´ÊÂ?",4,"ÁË½â±¾½ÌÊÂÎñ/faction","ÁË½â¸÷Î»ĞÖ³¤/member","ÁË½âÈÎÎñ/task_get","²»ÎÊÁË!/nothing")
+		Say("Trong bæn gi¸o nµy, mçi ngµy nÕu kh«ng luyÖn c«ng th× kh«ng thÓ sèng ®­îc. Ng­¬i ®Õn ®©y t×m ta cã chuyÖn g×?",4,"T×m hiÓu ®iÓn cè bæn m«n/faction","T×m hiÓu c¸c vŞ t«n tr­ëng/member","T×m hiÓu nhiÖm vô /task_get","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 70*256) then				-- ±¾ÃÅ³öÊ¦
-		Say("´Ó±¾½Ì³öÈ¥µÄÈËºÜÉÙÓĞ»ØÀ´µÄ£¬ÄãÕâ´Î»ØÀ´ÓĞÊ²Ã´ÊÂÇé?",4,"»ØÒäÏÂ±¾ÃÅµÄÍùÊÂ/faction","¿´¿´ÒÔÇ°µÄµÀÓÑ/member","ÓĞÊ²Ã´ÎÒÄÜ°ïÖúµÄ/task_get","²»ÎÊÁË!/nothing")
+		Say("Ng­êi ®· xuÊt s­ tõ bæ gi¸o İt ai quay trë l¹i? Ng­¬i quay l¹i lÇn nµy cã chuyÖn g× vËy?",4,"¤n l¹i chuyÖn n¨m x­a bæn m«n/faction","Nh×n l¹i ®¹o h÷u n¨m x­a/member","Ta cßn cã thÓ gióp g× kh«ng/task_get","Kh«ng hái n÷a!/nothing")
 	elseif (player_faction ~= "") then			-- ·Ç±¾ÃÅ³öÊ¦¡¢ÆäËüÃÅÅÉ£¨ÃÅÅÉ²»Îª¿Õ¼´Ö¸·ÇĞÂÊÖ£©
-		Say("Äã¿ÉÒÔ´©¹ı³æ³æ¶¾Îï½øÈ¥¿´À´ÊÇÆæ²Å.±¾½Ì×ğÖØÓ¢²Å. »¶Ó­²Î¹Û!",3,"ÁË½â¹óÅÉ/faction","ÁË½â¸÷Î»µÀ³¤/member","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i cã thÓ xuyªn qua trïng trïng ®éc vËt ®Ó vµo ®­îc ®©y, xem nh­ lµ kú tµi. Bæn gi¸o t«n träng nh÷ng ng­êi anh tµi. Hoan nghªnh tham quan!",3,"T×m hiÓu quı ph¸i/faction","T×m hiÓu c¸c vŞ ®¹o tr­ëng/member","Kh«ng hái n÷a!/nothing")
 	else													-- ĞÂÊÖ
-		Say("ÄãÀ´°İ·Ã»¹ÊÇ°İÊ¦£¿Èç¹ûÑÛÇ°Ã»ÓĞÀñÎïµÄ»°ÎÒÊÇÃ»ÓĞĞËÈ¤µÄ¡£",4,"ÁË½â¹óÅÉ/faction","ÁË½â¸÷Î»µÀ³¤g/member","ÁË½âÈëÃÅÌõ¼ş/task_get","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i ®Õn ®Ó dß th¸m hay ®Ó b¸i s­? NÕu nh­ kh«ng cã lÔ vËt g× ra m¾t th× ta kh«ng cã høng thó. ",4,"T×m hiÓu quı ph¸i/faction","T×m hiÓu c¸c vŞ ®¹o tr­ëng/member","T×m hiÓu ®iÒu kiÖn nhËp m«n/task_get","Kh«ng hái n÷a!/nothing")
 	end
 end
 
 ----------------- ÃÅÅÉ½éÉÜ²¿·İ ----------------------------
 function faction()
-	Say("ÕâÑùÄãÏëÎÒ½éÉÜÃÅÅÉµÄÊ²Ã´?",5,"ÃÅÅÉÆğÔ´/F1","µØÀíÎ»ÖÃ/F2","½­ºşµØÎ»/F3","ÃÅÅÉÌØÉ«/F4","²»ÎÊÁË!/nothing")
+	Say("VËy th× ng­¬i muèn ta giíi thiÖu vÒ c¸i g× cña bæn m«n?",5,"Khëi nguyªn m«n ph¸i/F1","VŞ trİ ®Şa lı /F2","§Şa vŞ giang hå /F3","§Æc s¾c m«n ph¸i/F4","Kh«ng hái n÷a!/nothing")
 end
 
 function F1()
-	Say("±¾½ÌÊÇ½ü¼¸Äê³ÉÁ¢µÄµ«ÊÇ·¢Õ¹ºÜ¿ì. ÄÚ²¿×éÖ¯ÑÏÃÜ. ½ÌÖ÷ºÚÃæÀÉ¾ıÕıÊÇÎå¶¾½ÌµÄ´´Ê¼ÈË",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Bæn gi¸o chØ míi thµnh lËp vµi n¨m nay nh­ng ph¸t triÓn rÊt m¹nh. Néi bé tæ chøc nghiªm mËt. Gi¸o chñ H¾c DiÖn Lang Qu©n chİnh lµ ng­êi ®· s¸ng lËp nªn Ngò §éc Gi¸o",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function F2()
-	Say("±¾½ÌÖÜÎ§ÊÇ5×ùÁé·å, Ïë½øÈ¥Òª¾­¹ı³æ³æÊÔÁ¶. ",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Xung quanh bæn gi¸o lµ n¨m ngän §éc phong LÜnh, ai muèn vµo ®©y ph¶i qua trïng trïng thö th¸ch. ",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function F3()
-	Say("±¾½ÌµÄ×ÚÖ¼ÊÇ'ÀûÒæ¾ö¶¨µĞÓÑ',ÓĞÀû¾Í×ö, ²»¹ÜÊ²Ã´ÊÇ·ÇÕıĞ°¡£Îå¶¾½Ì»¹ÓĞÒ»Ìõ¾ÍÊÇ'µÃ×ïÎå¶¾½ÌµÄÈË½«ËÀÎŞÈ«Ê¬'.",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("T«n chØ cña Ngò §éc gi¸o lµ 'Lîi İch quyÕt ®Şnh b¹n thï', cã lîi míi lµm, kh«ng qu¶n bÊt kÓ chuyÖn thŞ phi chİnh tµ. Ngò §éc gi¸o cßn cã 1 ®iÒu lµ 'KÎ ®¾c téi víi Ngò §éc gi¸o, sÏ chÕt kh«ng toµn th©y'.",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function F4()
-	Say("±¾½ÌĞĞ×ÙÒşÃØ£¬À´È¥ÎŞ×Ù.Â·±ßµÄ²è¹İÀÏ°åÒ²¿ÉÄÜÊÇÎå¶¾µÄÃÅÍ½£¬Õ£ÑÛ¾Í°ÑÈËÉ±ÁË£¬ÏÂÊÖÎŞĞÎ¡£ÉõÖÁ¶ÔÍ¬ÃÅÒ²ÊÇÎŞÇéµÄ¡£½ÌÍ½Ö®¼äÒ²¿ÉÄÜ»áÏà»¥ÏÂ¶¾¡£ÖĞ¶¾Ö®ÈË»á±»¿´²»Æğ",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Bæn gi¸o hµnh tung Èn bİ,hµnh ®éng kh«ng ®Ó l¹i dÊu tİch. ¤ng chñ qu¸n trµ bªn ®­êng còng cã thÓ lµ m«n ®å cña ngò ®éc ph¸i cã thÓ giÕt ng­êi trong nh¸y m¾t, h¹ thñ v« t×nh. ThËm chİ nh÷ng ng­êi ®ång m«n víi nhau còng ®Òu lµ ng­êi v« t×nh. Gi¸o ®å víi nhau vÉn cã thÓ h¹ ®éc lÉn nhau. Ng­êi bŞ tróng ®éc sÏ bŞ xem lµ b¶n lÜnh kĞm câi",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 ----------------- ³ÉÔ±½éÉÜ²¿·İ ----------------------------
 function member()
-	Say("ÏëÒªÁË½â±¾½ÌµÄË­?",10,"½ÌÖ÷ºÚÃæÀÉ¾ı /M01","½ğÉßÏãÖ÷ÔÆ²»Ğ°/M02","³àĞ«ÏãÖ÷ÍÀÒì/M03","Ä«ÖëÏãÖ÷É£Öé/M04","Òøó¸ÏãÖ÷°×Ó¨Ó¨/M05","ÇàòÚÏãÖ÷ÌÀåö /M06","¶¾ÑÀ/M101","¶¾´Ì/M102","¶¾ĞÄ/M103","²»ÎÊÁË!/nothing")
+	Say("Muèn t×m hiÓu vŞ nµo cña bæn gi¸o?",10,"Gi¸o chñ H¾c DiÖn Lang Qu©n /M01","Kim Xµ H­¬ng Chñ V©n BÊt Tµ /M02","Xİch YÕt H­¬ng chñ §å DŞ /M03","MÆc Thï H­¬ng Chñ tang Chu /M04","Ng©n ThiÒm H­¬ng Chñ B¹ch Doanh Doanh /M05","Thanh Ng« H­¬ng Chñ Thang BËt /M06","§éc Nha /M101","§éc Thİch /M102","§éc T©m /M103","Kh«ng hái n÷a!/nothing")
 end
 
 function M01()
-	Say("½ÌÖ÷ºÚÃæÀÉ¾ı      Î»ÖÃ:×ÜÓª®é×ø±ê:  220/166<enter>ÊÇ¸öÀäµ­ÎŞÇéµÄÈË, ÌúÊ¯ĞÄ³¦,Ã»ÈË¿´¹ıËûĞ¦. Ö»¹ØĞÄÑĞ¾¿¸÷Àà¶¾Ò©,ÏëÓÃ¶¾Í³ÖÎÎäÁÖ.",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Gi¸o chñ H¾c DiÖn Lang Qu©n      VŞ trİ: Tæng tr¹i      Täa ®é:  220/166<enter>Lµ ng­êi l·nh ®¹m v« t×nh, lßng d¹ s¾t ®¸, ch­a ai thÊy h¾n c­êi. ChØ quan t©m nghiªn cøu chÕ t¹o c¸c lo¹i ®éc d­îc, muèn dïng ®éc ®Ó thèng trŞ Vâ l©m.",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M02()
-	Say("½ğÉßÏãÖ÷ÔÆ²»Ğ°     Î»ÖÃ:½ğÉßÕ¯      Î»ÖÃ:156/170<enter> ¾ÙÖ¹Ëµ»°ËÆÅ®ÈË£¬µ±ËûÒõâüâüµØĞ¦µÄÊ±ºò£¬¾ÍÊÇËûÒªÉ±ÈËµÄÊ±ºò¡£ÈÏÎªÌìµ×ÏÂ×îÓĞÀÖÈ¤µÄÊÂÇé¾ÍÊÇ¿´¼ûÒ»¸öÈËÒòÎªÖĞ¶¾¶øÍ´¿àÎŞ±ÈµÄÑù×Ó.",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Kim Xµ H­¬ng chñ V©n BÊt Tµ      VŞ trİ: Kim Xµ tr¹i      VŞ trİ:156/170<enter> Cö chØ nh­ nhi n÷, khi h¾n nh×n xuèng ®Êt c­êi lµ ®Õn lóc ph¶i giÕt ng­êi, thiªn h¹ chØ cã mét thó vui lµ thÊy ng­êi kh¸c ®au ®ín v× tróng ®éc.",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M03()
-	Say("³àĞ«ÏãÖ÷ÍÀÒì Î»ÖÃ:³àĞ«Õ¯      ×ø±ê: 169/184<enter> Ì°À·³ÉĞÔ£¬À¥ÂØÅÉè¯çá×Ó°µº¦Ê¦¸¸ÏÂµÄ¶¾¾ÍÊÇÓÃÇ®²Æ»ßÂ¸ËûÒÔºóµÃµ½µÄ",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Xİch YÕt H­¬ng chñ §å DŞ      VŞ trİ: Xİch YÕt tr¹i      Täa ®é: 169/184<enter> lµ kÎ tham lam h¸m lîi. TuyÒn C¬ Tö cña C«n L«n ph¸i®· dïng tiÒn hèi lé nhê h¾n h¹ ®éc ch­ëng m«n C«n L«n",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M04()
-	Say("Ä«ÖëÏãÖ÷É£Öé",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("MÆc Thï H­¬ng Chñ Tang Chu",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M05()
-	Say("Òøó¸ÏãÖ÷°×Ó¨Ó¨ Î»ÖÃ£ºÒøó¸Õ¯  ×ø±ê: 220/209<enter> ÃæÈçÌÒ»¨£¬ĞÄËÆÉßĞ«£¬Á³ÉÏÓÀÔ¶´ø×ÅÑıÃÄµÄĞ¦Èİ£¬µ«ÊÇÏÂÊÖÈ´±ÈË­¶¼ºİ£¬ÓëÀ¥ÂØÅÉÖìÈ±Ïà¹´½á£¬ÃÔ»óÎäµ±ÅÉĞìÖĞÔ­.",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Ng©n ThiÒm H­¬ng chñ B¹ch Doanh Doanh      VŞ trİ: Ng©n ThiÒm tr¹i  Täa ®é: 220/209<enter> MÆt nh­ hoa ®µo, t©m nh­ r¾n rÕt, khu«n mÆt lóc nµo còng në mét nô c­êi l¼ng l¬, nh­ng ra tay rÊt ®éc ¸c. CÊu kÕt víi Chu KhuyÕt C«n L«n ph¸i, muèn mª hoÆc  Tõ Trung Nguyªn cña Vâ §ang ph¸i.",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M06()
-	Say("ÇàòÚÏãÖ÷ÌÀåö Î»ÖÃ£ºÇàòÚÕ¯ ×ø±ê: 200/201<enter> ¶¾¶ñÎŞ³Ü£¬µ±Äêº¦ËÀÁË´äÑÌÃÅ¡°Ë®ÏÉÊ¹Õß¡±æÌÏşÙ»µÄÄ¸Ç×.",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Thanh Ng« Tr¹i Chñ Thang BËt      VŞ trİ: Thanh Ng« tr¹i      Täa ®é: 200/201<enter> §éc ¸c v« sØ, n¨m x­a h¹i chÕt mÑ cña Yªn HiÓu Tr¸i (Thóy Yªn m«n) .",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M101()
-	Say("¶¾ÑÀ      Î»ÖÃ      ×ø±ê: 182/194      ¸ºÔğ: ±øÆ÷½»Ò×",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("§éc Nha      VŞ trİ:      Täa ®é: 182/194      Phô tr¸ch: Giao dŞch binh khİ ",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M102()
-	Say("¶¾´Ì      Î»ÖÃ      ×ø±ê: 184/193      ¸ºÔğ: ×°±¸½»Ò×",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("§éc Thİch      VŞ trİ:      Täa ®é: 184/193      Phô tr¸ch: Giao dŞch trang bŞ ",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function M103()
-	Say("¶¾ĞÄ     Î»ÖÃ      ×ø±ê: 187/191      ¸ºÔğ: Ò©Æ·½»Ò×",2,"ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("§éc T©m      VŞ trİ:      Täa ®é: 187/191      Phô tr¸ch: Giao dŞch d­îc phÈm",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 ----------------- ÈÎÎñ½éÉÜ²¿·İ ----------------------------
 function task_get()
 	UTask_wu = GetTask(10)
 	if (UTask_wu < 10*256) then	-- Î´ÈëÃÅ
-		Say("ÄãÏÖÔÚ»¹Î´ÈëÃÅ¡£ÏëÒªÈëÃÅ, ¿ÉÒÔÈ¥±¾ÃÅµÜ×Ó½ÓÒıµÄÈÎºÎÒ»¸öĞÂÊÖ´å.",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_enroll","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ch­a nhËp m«n. Muèn nhËp m«n, cã thÓ ®Õn bÊt kú T©n Thñ Th«n ®Ö tö tiÕp dÉn cña bæn m«n.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_enroll","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 10*256) and (UTask_wu < 20*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÖ©ÖëºÍÅøËª",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L10","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô NhÒn nhÖn vµ Tİn Th¹ch",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L10","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 20*256) and (UTask_wu < 30*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÈËÍ·×´.",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L20","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Nh©n §Çu Tr¸ng.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L20","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 30*256) and (UTask_wu < 40*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÄ¾Ïã¶¦.",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L30","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Méc H­¬ng §Ønh.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L30","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 40*256) and (UTask_wu < 50*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÑÛ¾µÍõòşÉß",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L40","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Nh·n Kİnh V­¬ng M·ng Xµ.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L40","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 50*256) and (UTask_wu < 60*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÓñÉºº÷",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L50","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Ngäc San H«.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L50","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 60*256) and (UTask_wu < 70*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇ±Ü¶¾Öé.",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_L60","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Tİch §éc Chu.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_L60","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	elseif (UTask_wu >= 70*256) and (UTask_wu < 80*256) then
-		Say("ÄãÏÖÔÚ½ÓµÄÈÎÎñÊÇÖØ·µÊ¦ÃÅ.",4,"¼ÌĞøÁË½âÏÖÔÚµÄÈÎÎñ/T_return","ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i hiÖn ®ang tiÕp nhËn lµ nhiÖm vô Trïng ph¶n s­ m«n.",4,"TiÕp tôc t×m hiÓu nhiÖm vô hiÖn t¹i/T_return","T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	else
-		Say("Äã¿ÉÒÔ×ÔÓÉ½ø³öÃÅÅÉ,ÔİÊ±Ã»ÓĞĞÂÈÎÎñ.",3,"ÁË½â±ğµÄÈÎÎñ/T_all","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+		Say("Ng­¬i cã thÓ tù do ra vµo m«n ph¸i, t¹m thêi kh«ng cã nhiÖm vô míi.",3,"T×m hiÓu nh÷ng nhiÖm vô kh¸c/T_all","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 	end
 end
 
 function T_all()
-	Say("ÏëÁË½âÊ²Ã´ÈÎÎñ",10,"ÈëÃÅÈÎÎñ/T_enroll","Ö©ÖëºÍÅøËªÈÎÎñ/T_L10","ÈËÍ·×´ÈÎÎñ /T_L20","Ä¾Ïã¶¦ÈÎÎñ/T_L30","ÑÛ¾µÍõòşÉßÈÎÎñ/T_L40","ÓñÉºº÷ÈÎÎñ/T_L50","±Ü¶¾ÖéÈÎÎñ/T_L60","ÖØ·µÊ¦ÃÅÈÎÎñ/T_return","ÁË½âÆäËûÎÊÌâ/main","²»ÎÊÁË!/nothing")
+	Say("Muèn t×m hiÓu nhiÖm vô g×?",10,"NhiÖm vô nhËp m«n/T_enroll","NhiÖm vô NhÒn NhÖn vµ Tİn Th¹ch /T_L10","NhiÖm vô Nh©n §Çu Tr¸ng /T_L20","NhiÖm vô Méc H­¬ng §Ønh /T_L30","nhiÖm vô Nh·n Kİnh V­¬ng M·ng Xµ  /T_L40","NhiÖm vô Ngäc San H« /T_L50","NhiÖm vô Tõ §éc Chu  /T_L60","NhiÖm vô trïng ph¶n s­ m«n/T_return","T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 function T_enroll()
-	Talk(1,"t_all","Èç¹ûÈëÃÅÑ§ÒÕ£¬Ö»ĞèÒªÊôÓÚÄ¾ÏµºÍµ½10¼¶¡£µ½ÈÎºÎÒ»¸öĞÂÊÖ´å¼û±¾ÃÅ½ÓÒıµÜ×Ó¾Í¿ÉÒÔ¡£Ö®ºóÒÀ´ÎÍê³ÉÃÅÅÉµÄ5¸öÈÎÎñ¡£½«Ñ§»áÎä¹¦µÃµ½ÃûºÅ¡£Íê³É³öÊ¦ÈÎÎñÖ®ºó½«³ÉÒµ³öÊ¦")
+	Talk(1,"t_all","Muèn nhËp m«n häc nghÖ, chØ cÇn thuéc hÖ Méc vµ ®¹t ®Õn cÊp 10. §Õn bÊt kú T©n thñ th«n nµo ®Ó gÆp ®Ö tö tiÕp dÉn cña bæn m«n lµ ®­îc. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu. Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­ ")
 end
 
 function T_L10()
-	Talk(5,"t_all","ÈëÃÅÖ®ºóµÈ¼¶´ïµ½10¼¶£¬Äã¿ÉÒÔ½ÓÖ©ÖëºÍÅøËªµÄÈÎÎñ¡£Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ£¬Äã¿ÉÒÔµÃµ½¶á»êÉ¢ÈËµÄ³ÆºÅ£¬Ñ§µ½Îä¹¦Îå¶¾µ¶·¨£¬Îå¶¾ÕÆ·¨","1: µ½Ä«ÖëÕ¯Óöµ½É£Öé£¬×¥Ê®Ö»Ö©Öë£¬ÔÙÈ¥Âò10°üÅøËª¸øËıÁ·¹¦","2: µ½Ñãµ´É½ÉÏ×¥Ê®Ö»Ö©Öë","3£ºµ½ÁúÈª´åµÄÒ©µêÂòÊ®°üÅøËª","4£º»Øµ½Îå¶¾½ÌÄ«ÖëÕ¯½»¸øÉ£Öé£¬ÈÎÎñÍê³É")
+	Talk(5,"t_all","Sau khi nhËp m«n vµ ®¼ng cÊp ®· ®¹t ®Õn 10, ng­¬i cã thÓ tiÕp nhËn nhiÖm vô NhÒn nhÖn vµ Tİn th¹ch. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ §o¹t Hån T¶n Nh©n, häc ®­îc vâ c«ng Ngò §éc §ao ph¸p,Ngò §éc Ch­ëng Ph¸p","B­íc 1: §Õn MÆc Thï tr¹i gÆp Tang Chu, tiÕp nhËn nhiÖm vô, ®i b¾t 10 con NhÖn vµ mua 10 bao Tİn Th¹ch cho bµ ta luyÖn c«ng","B­íc 2: §Õn Nh¹n §·ng s¬n b¾t 10 con nhÖn","B­íc 3: §Õn D­îc ®iÕm ë Long TuyÒn th«n mua 10 bao Tİn Th¹ch","B­íc 4: Trë vÒ MÆc Thï tr¹i, giao NhÒn nhÖn vµ Tİn th¹ch cho Tang Chu. Hoµn thµnh nhiÖm vô.")
 end
 
 function T_L20()
-	Talk(4,"t_all","Íê³ÉÖ©ÖëºÍÅøËªÈÎÎñ²¢ÇÒ´ïµ½20¼¶¾Í¿ÉÒÔ½ÓÈËÍ·×´ÈÎÎñ¡£Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ£¬¿ÉÒÔ»ñµÃ´ßÃüÊ¹ÕßµÄ³ÆºÅ£¬Ñ§µ½Îä¹¦³àÑ×Ê´Ìì£¬ÔÓÄÑÒ©¾­","1: ÔÚÒøó¸Õ¯Óöµ½°×Ó¨Ó¨,½ÓÈÎÎñ£¬È¥É±ÂŞÏüÆß¹í£¬ÄÃ»Ø7¸öÈËÍ·!","2: À´µ½ÂŞÏöÉ½£¬´ò°ÜÂŞÏüÆß¹í","3: »Øµ½Òøó¸Õ¯ÕÒµ½°×Ó¨Ó¨¸´Ãü£¬Íê³ÉÈÎÎñ")
+	Talk(4,"t_all","Hoµn thµnh nhiÖm vô NhÒn nhÖn vµ Tİn th¹ch vµ ®¼ng cÊp ®¹t ®Õn 20,ng­¬i cã thÓ tiÕp nhËn nhiÖm vô Nh©n ®Çu tr¸ng. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ Th«i MÖnh Sø Gi¶, häc ®­îc vâ c«ng Xİch DiÖm thùc Thiªn, T¹p Nan D­îc Kinh","B­íc 1: §Õn Ng©n ThiÒm tr¹i gÆp B¹ch Doanh Doanh, tiÕp nhËn nhiÖm vô, ®i giÕt La Tiªu ThÊt Quû, lÊy vÒ 7 c¸i ®Çu!","B­íc 2: §Õn La Tiªu s¬n, ®¸nh b¹i La Tiªu ThÊt Quû ","B­íc 3: Trë vÒ Ng©n ThiÒm tr¹i, gÆp B¹ch Doanh Doanh phôc mÖnh, hoµn thµnh nhiÖm vô.")
 end
 
 function T_L30()
-	Talk(6,"t_all","Íê³ÉÈËÍ·×´ÈÎÎñ²¢ÇÒ´ïµ½30¼¶,¿ÉÒÔ½ÓÄ¾Ïã¶¦ÈÎÎñ. Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ, ¿ÉÒÔµÃµ½ºÚ°µÑÖÂŞµÄ³ÆºÅ, Ñ§µÃÎä¹¦ÓÄÚ¤÷¼÷Ã£¬ÎŞĞÎ¹Æ£¬°Ù¶¾´©ĞÄ£¬±ùÀ¶Ğş¾§","1: ÔÚ³àĞ«Õ¯¼ûµ½ÍÀÒì£¬½ÓÈÎÎñ£¬ÕÒµ½ÅÑÍ½ÄÃ»ØÄ¾Ïã¶¦.","2: µ½ÎäÒÄÉ½,´ò°ÜÅÑÍ½, ÄÃ»ØÄ¾Ïã¶¦.","3: ·µ»Ø³àÑªÕ¯, ÍÀÒì·¢ÏÖÄ¾Ïã¶¦ÊÇ¼ÙµÄ£¬ÒªÈ¥ÄÃ»ØÕæµÄÄ¾Ïã¶¦","4: »Øµ½ÎäÒÄÉ½,´ò°ÜÅÑÍ½Í·Ä¿,ÄÃ»ØÕæµÄÄ¾Ïã¶¦!","5: »Øµ½³àÑªÕ¯,°ÑÕæµÄÄ¾Ïã¶¦½»¸øÍÀÒì£¬Íê³ÉÈÎÎñ¡£")
+	Talk(6,"t_all","Hoµn thµnh nhiÖm vô Nh©n ®Çu tr¸ng vµ ®¼ng cÊp ®¹t ®Õn 30,ng­¬i cã thÓ tiÕp nhËn nhiÖm vô Méc H­¬ng §Ønh. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ H¾c Am Diªm La, häc ®­îc vâ c«ng U Minh Kh« L©u, V« H×nh §éc, B¸ch §éc Xuyªn T©m, B¨ng Lam HuyÒn Tinh","B­íc 1: §Õn Xİch YÕt tr¹i gÆp §å DŞ, tiÕp nhËn nhiÖm vô, ®i trõ ph¶n ®å lÊy l¹i Méc H­¬ng §Ønh.","B­íc 2: §Õn Vò Di s¬n, ®¸nh b¹i Ph¶n ®å, lÊy ®­îc Méc H­¬ng §Ønh.","B­íc 3: Trë vÒ Xİch YÕt tr¹i, §å DŞ ph¸t hŞªn Méc H­¬ng §Ønh lµ gi¶, cÇn ph¶i ®i lÊy l¹i Méc H­¬ng §Ønh thËt","B­íc 4: Trë l¹i Vò Di s¬n, ®¸nh b¹i ph¶n ®å §Çu Môc, lÊy ®­îc Méc H­¬ng §Ønh thËt!","B­íc 5: Trë l¹i Xİch YÕt tr¹i, giao Méc H­¬ng §Ønh thËt cho §å DŞ, hoµn thµnh nhiÖm vô.")
 end
 
 function T_L40()
-	Talk(5,"t_all","Íê³ÉÄ¾Ïã¶¦ÈÎÎñ²¢ÇÒµÈ¼¶´ïµ½40¼¶, Äã¿ÉÒÔ½ÓÑÛ¾µÍõòşÉßÈÎÎñ£¬Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ,ÄãµÃµ½·âºÅÎŞâúÂŞÉ², Ñ§µ½Îä¹¦Íò¹ÆÊ´ĞÄ, ´©ÒÂÆÆ¼×","1: ÔÚ½ğÉßÕ¯¼ûµ½ÔÆ²»Ğ°£¬½ÓÊÜÈÎÎñ£¬µ½½ğÉßÑªÌ¶×½Ò»Ö»ÑÛ¾µÍõòşÉß¸øÔÆ²»Ğ°","2: µ½½ğÉßÑªÌ¶Ö®Ç°Òªµ½Ò©µêÂò÷êÏã","3: ½øÈë½ğÉßÑªÌ¶£¬´ò°ÜÑÛ¾µÍõòşÉß","4: ·µ»Ø½ğÉßÕ¯, °ÑÑÛ¾µÍõòşÉß½»¸øÔÆ²»Ğ°£¬Íê³ÉÈÎÎñ")
+	Talk(5,"t_all","Hoµn thµnh nhiÖm vô Méc H­¬ng §Ønh vµ ®¼ng cÊp ®¹t ®Õn 40, ng­¬i cã thÓ tiÕp nhËn nhiÖm vô Nh·n Kİnh V­¬ng M·ng Xµ. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ V« §æng La S¸t, häc ®­îc vâ c«ng V¹n §éc Thùc T©m, Xuyªn Y Ph¸ Gi¸p","B­íc 1: §Õn Kim Xµ tr¹i gÆpV©n BÊt Tµ, tiÕp nhËn nhiÖm vô, ®Õn Kim Xµ HuyÕt Tr¹ch b¾t cho V©n BÊt Tµ 1 con Nh·n Kİnh V­¬ng M·ng Xµ.","B­íc 2: Tr­íc khi ®i vµo Kim Xµ HuyÕt Tr¹ch cÇn ®Õn D­îc ®iÕm mua X¹ H­¬ng","B­íc 3: vµo Kim Xµ HuyÕt Tr¹ch, ®¸nh b¹i Nh·n Kİnh V­¬ng M·ng Xµ ","B­íc 4: Trë vÒ Kim Xµ tr¹i, giao Nh·n Kİnh V­¬ng M·ng Xµ cho V©n BÊt Tµ, hoµn thµnh nhiÖm vô.")
 end
 
 function T_L50()
-	Talk(6,"t_all","Íê³ÉÑÛ¾µÍõòşÉßÈÎÎñÍ¬Ê±´ïµ½90¼¶, Äã¿ÉÒÔ½ÓÓñÉºº÷ÈÎÎñ£¬Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ,ÄãµÃµ½·âºÅ¹Æ¶¾×ğÕß£¬Ñ§µ½Îä¹¦´©ĞÄ¶¾´Ì","1: ÔÚÇàòÚÕ¯¼ûµ½ÌÀåö, ½ÓÊÜÈÎÎñ£¬¶á»ØÓñÉºº÷","2: µ½ÎäÒÄÉ½, ½øÈëÓñ»ª¶´, ´ò°ÜÁ÷¿Ü, µÃÖªÓñÉºº÷ÒÑ±»´øµ½ÄõÁú¶´","3: ¼ÌĞøÍùÄõÁú¶´£¬´ò°ÜÇ¿µÁ£¬ÄÃµ½ÓñÉºº÷","4: »Øµ½Îå¶¾½ÌÇàòÚÕ¯£¬½«ÓñÉºº÷½»¸øÌÀåö£¬ÈÎÎñÍê³É")
+	Talk(6,"t_all","Hoµn thµnh nhiÖm vô Nh·n Kİnh V­¬ng M·ng Xµ vµ ®¼ng cÊp ®¹t ®Õn 50, ng­¬i cã thÓ tiÕp nhËn nhiÖm vô Ngäc san h«. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ Co §éc T«n Gi¶, häc ®­îc vâ c«ng Xuyªn T©m §éc Thİch","B­íc 1: §Õn Thanh Ng« tr¹i gÆp Thang BËt, tiÕp nhËn nhiÖm vô, ®i ®o¹t l¹i Ngäc san h«.","B­íc 2: §Õn Vò Di s¬n, vµo Ngäc Hoa ®éng, ®¸nh b¹i L­u KhÊu, biÕt ®­îc Ngäc san h« ®· bŞ mang vµo NghiÖt Long ®éng","B­íc 3: TiÕp tôc vµo NghiÖt Long ®éng, ®¸nh b¹i c­êng ®¹o, lÊy ®­îc Ngäc san h«.","B­íc 4: Trë vÒ Thanh Ng« tr¹i, giao Ngäc san h« cho Thang BËt, hoµn thµnh nhiÖm vô.")
 end
 
 function T_L60()
-	Talk(5,"t_all","Íê³ÉÓñÉºº÷ÈÎÎñÍ¬Ê±´ïµ½50¼¶, Äã¿ÉÒÔ½Ó±Ü¶¾Öé. Í¨¹ıÍê³ÉÕâ¸öÈÎÎñ,ÄãµÃµ½·âºÅÓÄÚ¤¹íÊ¹£¬Ë³Àû³öÊ¦","1: È¥×ÜÕ¯ÕÒ½ÌÖ÷ºÚÃæÀÉ¾ı, ½ÓÊÜÈÎÎñ´ÓÑãµ´ÅÉÊÖÖĞ¶á»Ø±Ü¶¾Öé","2: µ½Ñãµ´É½£¬½øÈëÑò½Ç¶´´ò°ÜÎŞÊıÑãµ´ÅÉµÜ×Ó£¬×îÖÕÕÆÃÅÒ²×ø²»×¡½»ÊÖÁË","3: ´ò°ÜÑãµ´ÅÉÕÆÃÅ£¬ÄÃ»Ø±Ü¶¾Öé.","4: ·µ»Ø×ÜÕ¯£¬½»±Ü¶¾Öé¸øºÚÃæÀÉ¾ı£¬Íê³ÉÈÎÎñ")
+	Talk(5,"t_all","Hoµn thµnh nhiÖm vô Ngäc san h« vµ®¼ng cÊp ®¹t ®Õn 50, ng­¬i cã thÓ tiÕp nhËn nhiÖm vô Tİch §éc Chu. Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ U Minh Quû Sø, thuËn lîi xuÊt s­.","B­íc 1: §Õn Tæng tr¹i gÆp gi¸o chñ H¾c DiÖn Lang Qu©n, tiÕp nhËn nhiÖm vô, ®o¹t l¹i Tİch §éc Chu tõ tay Nh¹n §·ng ph¸i","B­íc 2: §Õn Nh¹n §·ng s¬n, vµo D­¬ng Gi¸c ®éng ®¸nh b¹i v« sè ®Ö tö Nh¹n §·ng ph¸i, cuèi cïng ch­ëng m«n cña chóng ph¶i lé diÖn","B­íc 3: §¸nh b¹i Ch­ëng m«n Nh¹n §·ng ph¸İ, lÊy l¹i Tİch §éc Chu.","B­íc 4: Trë vÒ Tæng tr¹i, giao Tİch §éc Chu cho H¾c DiÖn Lang Qu©n, hoµn thµnh nhiÖm vô.")
 end
 
 function T_return()
-	Talk(3,"t_all","Í¨¹ıÖØ·µÊ¦ÃÅ£¬Äã»ñµÃÓÄÚ¤¹íÍõµÄ³ÆºÅ£¬Ñ§µ½Îå¶¾Ææ¾­£¬Ììî¸µØÉ·£¬ÖÕ¼«ÇåÃ÷","1: ´ïµ½60¼¶Ö®ºó,µ½×ÜÕ¯¼ûºÚÃæÀÉ¾ı½ÌÖ÷, ÇëÖØ·µÎå¶¾½Ì","2: ËÍ¸øÃÅÅÉ50000Á½, ÖØ·µÎå¶¾½Ì")
+	Talk(3,"t_all","Th«ng qua trïng ph¶n s­ m«n, ng­¬i ®­îc phong lµ U Minh Quû V­¬ng, häc ®­îc tuyÖt häc trÊn ph¸i Ngò §éc Kú Kinh, vâ c«ng Thiªn C­¬ng §Şa S¸t, Chu C¸p Thanh Minh","B­íc 1: Sau khi ®¼ng cÊp ®¹t ®Õn cÊp 60, ®Õn Tæng tr¹i gÆp gi¸o chñ H¾c DiÖn Lang Qu©n, xin trïng ph¶n Ngò §éc gi¸o","B­íc 2: TÆng cho m«n ph¸i 50000 l­îng, trïng ph¶n Ngò §éc gi¸o")
 end
 
 ----------------- ½áÊø ---------------------------

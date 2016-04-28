@@ -2,18 +2,18 @@
 -- Ãµ¹å¿¨
 -- »ñµÃËæ»úÁùÕÅ¿¨
 
-szTitle="<#>ÇëÑ¡Ôñ×£¸£Óï£º"
+szTitle="<#> H·y chän c©u chóc:"
 Message=
 {
-	{"<#>ÄãÊÇ·ñÈçÎÒÒ»ÑùÏëÄã","<#>»¨ÂäÂú»³°µÏãÓ¯Ğä£¬Ö»ÏëÖªµÀÄãÊÇ·ñÈçÎÒÏëÄãÒ»ÑùÔÚÏëÎÒ¡£"},
-	{"<#>ÄãÊÇÎÒµÄÉúÃü","<#>µ±ÎÒËµÄãÊÇÎÒµÄÁé»êºÍÉúÃü£¬²»ÒªÑÈÒì£¬ÒòÎªÄãÊÇÎÒµÄÉúÃü¡£"},
-    {"<#>Ñ©Ò¹ÀïÌáµÆµÄÄã","<#>¼ûµ½ÄãÊ±£¬ÎÂÅ¯µÄ¸Ğ¾õÏñÔÚÑ©Ò¹Àïºö¼ûµÆ»ğÄã¾ÍÊÇÄÇÌáµÆµÄÈË¡£"},
-    {"<#>½ñÉúÓëÄã²»Æú²»Àë","<#>ÎÒÔÚ·ğÇ°ÇóÁËÎå°ÙÄê£¬Ô¸ÄÜ½á´Ë³¾Ôµ£¬ÓëÄã½ñÉúÏàÊØ²»Æú²»Àë¡£"},
-    {"<#>Ô¸ÄÜÓëÄãÇãĞÄÏàÓö","<#>±ğÒòÒ²Ğí»á¸Ä±ä£¬²»ËµÄÇ¾äÃÀÀöµÄÊÄÑÔ£¬Ô¸ÄÜÓëÄãÇêĞÄÏàÓö¡£"},
-    {"<#>ÄãÎÒÎÂÈáÏà´ı£¬²»¸ºÁ¼Ôµ","<#>²»¹ÜÏà°®Ê±¼ä»áÓĞ¶à¾Ã£¬ÅÎÄãÎÒ½ÔÄÜÎÂÈáÏà´ı£¬²»¸ºÁ¼Ôµ¡£"},
-    {"<#>³¤ÏàË¼","<#>Ìì³¤Â·Ô¶»ê·É¿à£¬ÃÎ»ê²»µ½¹ØÉ½ÄÑ£¬³¤ÏàË¼£¬´İĞÄ¸Î¡£"},
-    {"<#>ÎÒµÄ×ÏÇà±¦½£","<#>ÎÒµÄ×ÏÇà±¦½£·¢³öà½~à½µÄÑ¶ºÅ£¬Ô­À´ÎÒµÄÒâÖĞÈËÊÇÄã£¬»¹ÅÜ¡£"},
-    {"<#>Äã°ÑÎÒµÄĞÄÍµ×ß","<#>¹íÁé¾«¹ÖµÄÄã£¬°ÑÎÒµÄĞÄÍµ×ßÁË£¬ÈÃÎÒÄÔº£Àï¶¼ÊÇÄãµÄÉíÓ°¡£"},
+	{"<#> Ng­êi cã nhí ta nh­ ta nhí ng­êi kh«ng?","<#> BÊt cø lóc nµo ng­êi nhí ®Õn ta th× còng lµ lóc ta ®ang nhí ®Õn ng­êi!"},
+	{"<#> Ng­êi lµ lÏ sèng cña ta","<#> Khi ta nãi ng­êi lµ linh hån vµ lÏ sèng cña ta, xin ®õng kinh ng¹c, v× ng­êi kh«ng thÓ thiÕu trong cuéc ®êi ta."},
+    {"<#> Ng­êi ®· th¾p s¸ng ngän ®Ìn trong ®ªm tuyÕt r¬i","<#> Bëi khi thÊy ng­êi, c¶m gi¸c Êm ¸p nh­ trong ®ªm tèi bçng nh×n thÊy ngän háa ®¨ng. Chİnh ng­êi ®· th¾p lªn ngän löa Êm ¸p trong ®ªm!"},
+    {"<#> Kh«ng thÓ rêi xa ng­êi trong cuéc ®êi nµy.","<#> 500 n¨m ta ®· nguyÖn cÇu tr­íc ®øc PhËt, mong ­íc ®­îc kÕt duyªn trÇn, cïng ng­êi trän ®êi nµy m·i kh«ng rêi xa."},
+    {"<#> NguyÖn cïng ng­êi m·i m·i bªn nhau","<#> §õng nãi nh÷ng lêi ®­êng mËt, ®õng tÆng nhau nh÷ng mãn ®¸t tiÒn! C¸i em cÇn chİnh lµ tr¸i tim thËt lßng cña anh!"},
+    {"<#> Ng­êi vµ ta m·i kh¾ng khİt bªn nhau, xin ®õng phô rÉy mèi l­¬ng duyªn!","<#> MÆc cho thêi gian yªu nhau bao l©u, mong ng­êi lu«n ©u yÕm bªn ta, xin ®õng phô rÉy mèi l­¬ng duyªn!"},
+    {"<#> Tr­êng T­¬ng T­ ","<#> Thiªn tr­êng lé viÔn hån phi khæ, méng hån bÊt ®¸o quan s¬n nan. Tr­êng t­¬ng t­ xĞ n¸t t©m can."},
+    {"<#> Tö Thanh B¶o KiÕm cña ta","<#> Tö Thanh B¶o KiÕm cña ta ph¸t ra tİn hiÖu tu..tu. Hãa ra ı trung nh©n lµ ng­êi, cßn bá ®i ®©u?"},
+    {"<#> Ng­êi ®· c­íp mÊt hån ta","<#> Ng­êi sao c­íp mÊt hån ta ®Ó ngµy ®ªm ta mang m·i h×nh bãng ng­êi!"},
 }
 
 ITEM_TASK_TEMP=26
@@ -28,7 +28,7 @@ FuncBless={}
 
 function main(sel)
 	if (GetTaskTemp(UNIQUE_USE_TASK_TEMP) > 0) then
-		Msg2Player("ÄãÏÖÔÚÕıÔÚ½øĞĞÆäËû×£¸££¬ÇëÉÔºòÔÙÊÔ¡£");
+		Msg2Player("B¹n hiÖn ®ang ph¸t c©u chóc! Xin vui lßng ®îi mét l¸t!");
 		return 1
 	end
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 1);
@@ -39,7 +39,7 @@ function main(sel)
 	end
 
 	nSelectCount = nSelectCount + 1;
-	FuncBless[nSelectCount] = "È¡Ïû/QueryWiseManCancel"
+	FuncBless[nSelectCount] = "Hñy bá /QueryWiseManCancel"
 
 	Say(szTitle, getn(FuncBless), FuncBless);
 	SetTaskTemp(ITEM_TASK_TEMP,sel);
@@ -65,20 +65,20 @@ function BlessPlayerOnline(TargetName, nSelect, LifeMax, ManaMax, PKValue, Playe
 	if (ItemIdx > 0 and ItemGenre == ITEM_GENRE and DetailType == ITEM_DETAIL and ParticularType == ITEM_PARTI) then
 		if (RemoveItemByIndex(ItemIdx) == 1) then
 			local szMsg
-			szMsg = GetName().."<#>¶Ô"..TargetName.."<#>Ëµ£º"..Message[nSelect + 1][2]
+			szMsg = GetName().."<#> nãi víi "..TargetName.."<#> "..Message[nSelect + 1][2]
 			AddGlobalCountNews(szMsg,1);
 		else
-			Msg2Player("ÕÒ²»µ½¿¨Æ¬£¬ÇëÖØÊÔÒ»´Î¡£")
+			Msg2Player("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.")
 		end
 	else
-		Msg2Player("¿¨Æ¬Ê¹ÓÃÊ§°Ü£¬ÇëÖØÊÔÒ»´Î¡£")
+		Msg2Player("Sö dông thÎ thÊt b¹i, xin thö l¹i 1 lÇn.")
 	end
 	SetTaskTemp(ITEM_TASK_TEMP,0)
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 
 function BlessPlayerOffline(TargetName, nSelect)
-	Msg2Player("ÄãÏë×£¸£µÄÍæ¼ÒÏÖÔÚ²»ÔÚÏß£¬ÇëÉÔºòÔÙÊÔ¡£");
+	Msg2Player("Ng­êi mµ b¹n muèn chóc phóc hiÖn kh«ng cã trªn m¹ng! §îi lóc sau thö l¹i!.");
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 end
 

@@ -19,35 +19,35 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>´ó¼Ò¶¼½ĞôÕÉ©. "
-	G_TASK:OnMessage("ÌìÈÌ", tbDailog, "DialogWithNpc")
+	tbDailog.szTitleMsg = "<npc> TÊt c¶ mäi ng­êi gäi ta lµ Tèng TÈu . "
+	G_TASK:OnMessage("Ngµy nhÉn ", tbDailog, "DialogWithNpc")
 	tbDailog:Show()
 end
 
 function aboutluckyzongzi()
-	Talk(1,"","ËÕÈıÄï£ºĞÒÔËôÕ×ÓÊÇÎÒÓÃÁËÈıÄêÊ±¼ä²Å×ö³öÀ´µÄÒ»¸öĞÂµÄôÕ×ÓÆ·ÖÖ£¬³Ô¹ıÁË¿ÉÒÔÔö¼Ó30µãµÄĞÒÔËÖµ¡£²»¹ıÄ¿Ç°»¹ÓĞĞ¡Ğ¡È±Ïİ£¬Ö»ÄÜÔÚ³ÔôÕ×ÓµÄµØ·½·¢»Ó×÷ÓÃ£¬ÓĞĞËÈ¤µÄÅóÓÑ¿ÉÒÔÀ´ÊÔÒ»ÏÂ¡£")
+	Talk(1,"","T« ba mÑ  may m¾n tèng tö lµ ta dïng ba n¨m míi lµm ra tíi mét míi tèng tö phÈm lo¹i , ¨n råi cã thÓ gia t¨ng 30 ®iÓm ®İch may m¾n trŞ gi¸ . bÊt qu¸ tr­íc m¾t cßn cã nho nhá thiÕu sãt , chØ cã thÓ ë ¨n tèng tö ®İch ®Şa ph­¬ng ph¸t huy t¸c dông , cã høng thó ®İch b»ng h÷u cã thÓ tíi thö mét chót . ")
 end
 
 
 function listen()
-	Talk(1,"talk2","ËÕÈıÄï£ºÇüÔ­ÊÇÕ½¹ú³ş¹úµÄ´ó³¼¡£Ëû¾ÙÏÍÊÚÄÜ£¬µ«Óöµ½¹ó×å·´¶Ô£¬±»Á÷·ÅãäÏæÁ÷Óò¡£ËûÔÚÁ÷·ÅÖĞ£¬Ğ´ÏÂ¡¶ÀëÉ§¡·µÈÊ«Æª¡£ºó³ş¾©±»ÆÆ£¬ÇüÔ­ĞÄÏµ×æ¹ú£¬ÔÚÎåÔÂ³õÎåÕâÌìĞ´ÏÂ¾ø±Ê¡¶»³É³¡·ºó£¬±§Ê¯Í¶ãèÂŞ½­ÉíËÀ¡£")
+	Talk(1,"talk2","T« ba mÑ  khuÊt nguyªn lµ chiÕn quèc së quèc : n­íc Së ®İch ®¹i thÇn . h¾n gi¬ hiÒn thô cã thÓ , nh­ng gÆp ph¶i quı téc ph¶n ®èi , bŞ l­u ®µi nguyªn t­¬ng l­u vùc . h¾n ë l­u ®µi trung , viÕt xuèng  c¸ch tao  chê th¬ thiªn . sau së kinh bŞ ph¸ , khuÊt nguyªn t©m hÖ tæ quèc , ë th¸ng n¨m s¬ n¨m ngµy nµy viÕt xuèng tuyÖt bót  nghi ngê sa  sau , «m th¹ch ®Çu mŞch la giang bá m×nh . ")
 end;
 
 function talk2()
-	Talk(1,"talk3","ËÕÈıÄï£ºÇüÔ­ËÀºó£¬°ÙĞÕ°§Í´Òì³££¬·×·×Ó¿µ½ãèÂŞ½­±ßÈ¥Æ¾µõÇüÔ­¡£´ó¼ÒÄÃ³öÎªÇüÔ­×¼±¸µÄ·¹ÍÅµÈÊ³Îï¶ª½ø½­Àï£¬ÈÃÓãÁúÏºĞ·³Ô±¥ÁË£¬¾Í²»»áÈ¥Ò§ÇüÔ­µÄÉíÌåÁË¡£ÒòÎªÅÂ·¹ÍÅÎªòÔÁúËùÊ³£¬ÈËÃÇÏë³öÓÃé¬Ê÷Ò¶°ü·¹£¬Íâ²ø²ÊË¿£¬×ö³ÉôÕ×Ó¡£")
+	Talk(1,"talk3","T« ba mÑ  khuÊt nguyªn sau khi chÕt , d©n chóng ai ®au dŞ th­êng , rèi rİt vät tíi mŞch la bê s«ng ®i b»ng treo khuÊt nguyªn . mäi ng­êi lÊy ra v× khuÊt nguyªn chuÈn bŞ c¬m ®oµn chê thøc ¨n nĞm vµo giang trong , ®Ó cho c¸ long t«m gi¶i ¨n no , còng sÏ kh«ng ®i c¾n khuÊt nguyªn ®İch th©n thÓ . bëi v× sî c¬m ®oµn lµ giao long së thùc , mäi ng­êi nghÜ ra dïng luyÖn l¸ c©y tói c¬m , bªn ngoµi d©y d­a th¶i ti , lµm thµnh tèng tö . ")
 end;
 
 function talk3()
-	Talk(1,"","ËÕÈıÄï£ºÒÔºó£¬ÔÚÃ¿ÄêµÄÎåÔÂ³õÎå£¬¾ÍÓĞÁËÁúÖÛ¾º¶É¡¢³ÔôÕ×ÓµÄ·çË×£¬ÒÔ´ËÀ´¼ÍÄîÇüÔ­´ó·ò¡£Õâ¾ÍÊÇ¶ËÎç½ÚµÄÀ´Àú¡£")
+	Talk(1,"","T« ba mÑ  sau nµy , ë hµng n¨m ®İch th¸ng n¨m s¬ n¨m , th× cã long chu c¹nh ®é  ¨n tèng tö ®İch phong tôc , lÊy nµy tíi kû niÖm khuÊt nguyªn ®¹i phu . ®©y chİnh lµ tiÕt ®oan ngä ®İch lai lŞch . ")
 end
 
 function lucky()
 	if (GetExtPoint(6) >= 32768) then	
-		Talk(1,"","ËÕÈıÄï£ºÄã²»ÄÜÁìÈ¡ĞÒÔËÅ´Ã×£¡")
+		Talk(1,"","T« ba mÑ  ng­¬i kh«ng thÓ nhËn lÊy may m¾n nhu th­íc ")
 --		SetExtPoint(6,0)
-		WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."£¬ÁìÈ¡ĞÒÔËÅ´Ã×Ê§°Ü£¡×´Ì¬Òì³£¡£")
+		WriteLog(date("%H%M%S").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." , nhËn lÊy may m¾n nhu th­íc thÊt b¹i  tr¹ng th¸i dŞ th­êng . ")
 	else
-		Say("ËÕÈıÄï£ºÄãÒªÁìÈ¡¶àÉÙ¸öĞÒÔËÅ´Ã×£¿",3,"ÁìÈ¡Ê®¸öĞÒÔËÅ´Ã×/lucky10","ÁìÈ¡Ò»¸öĞÒÔËÅ´Ã×/lucky1","Ê²Ã´¶¼²»×ö/no")
+		Say("T« ba mÑ  ng­¬i mÊu chèt lÊy bao nhiªu c¸ may m¾n nhu th­íc ? ",3,"NhËn lÊy m­êi may m¾n nhu th­íc /lucky10","NhËn lÊy mét may m¾n nhu th­íc /lucky1","C¸i g× ®Òu kh«ng lµm /no")
 	end
 end
 
@@ -57,10 +57,10 @@ function lucky10()
 			AddEventItem(405)			
 			PayExtPoint(6,1)
 		end
-		Msg2Player("ÄãµÃµ½Ê®¸öĞÒÔËÅ´Ã×")
-		WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."£¬ÁìÈ¡ÁË10¸öĞÒÔËÅ´Ã×¡£")
+		Msg2Player("Ng­¬i lÊy ®­îc m­êi may m¾n nhu th­íc ")
+		WriteLog(date("%H%M%S").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." , nhËn lÊy 10 c¸ may m¾n nhu th­íc . ")
 	else
-		Talk(1,"","ËÕÈıÄï£ºÄã²»ÄÜÁìÈ¡ÕâÃ´¶àĞÒÔËÅ´Ã×£¡")
+		Talk(1,"","T« ba mÑ  ng­¬i kh«ng thÓ nhËn lÊy nhiÒu nh­ vËy may m¾n nhu th­íc ")
 	end
 end
 
@@ -68,25 +68,25 @@ function lucky1()
 	if (GetExtPoint(6) > 0) then
 		AddEventItem(405)
 		PayExtPoint(6,1)
-		Msg2Player("ÄãµÃµ½Ò»¸öĞÒÔËÅ´Ã×")
-		WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."£¬ÁìÈ¡ÁË1¸öĞÒÔËÅ´Ã×¡£")
+		Msg2Player("Ng­¬i lÊy ®­îc mét may m¾n nhu th­íc ")
+		WriteLog(date("%H%M%S").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." , nhËn lÊy 1 c¸ may m¾n nhu th­íc . ")
 	else
-		Talk(1,"","ËÕÈıÄï£ºÄã²»ÄÜÁìÈ¡ĞÒÔËÅ´Ã×£¡")
+		Talk(1,"","T« ba mÑ  ng­¬i kh«ng thÓ nhËn lÊy may m¾n nhu th­íc ")
 	end
 end
 
 function make()
 	i=GetCash()
 	if (i>=2000) then
-	  Say("ËÕÈıÄï£º¿Í¹Ù£¬×öÒ»¸öôÕ×ÓÒª2000Á½Òø×Ó£¬²»ÖªÄãÒª×öÊ²Ã´ôÕ×Ó£¿",7,"ºìÔæôÕ×Ó/yes1","°åÀõôÕ×Ó/yes2","ÖíÈâôÕ×Ó/yes3","Å£ÈâôÕ×Ó/yes4","Ê²½õôÕ×Ó/yes5","ĞÒÔËôÕ×Ó/luckyzongzi","Ê²Ã´¶¼²»×ö/no")
+	  Say("T« ba mÑ  kh¸ch quan , lµm mét tèng tö muèn 2000 l­îng b¹c , kh«ng biÕt ng­¬i muèn lµm g× tèng tö ? ",7,"Hång t¶o tèng tö /yes1","B¶n lËt tèng tö /yes2","ThŞt heo tèng tö /yes3","ThŞt bß tèng tö /yes4","ThËp cÈm tèng tö /yes5","May m¾n tèng tö /luckyzongzi","C¸i g× ®Òu kh«ng lµm /no")
 	else
-	  Talk(1,"","ËÕÈıÄï£º¿Í¹Ù£¬×öÒ»¸öôÕ×ÓÒª2000Á½Òø×Ó£¬ÄãµÄÇ®ºÃÏñ²»¹»£¬ÊÇ²»ÊÇÍü´øÔÚÉíÉÏÄØ")
+	  Talk(1,"","T« ba mÑ  kh¸ch quan , lµm mét tèng tö muèn 2000 l­îng b¹c , tiÒn cña ng­¬i gièng nh­ kh«ng ®ñ , cã ph¶i hay kh«ng quªn mang ë trªn ng­êi ®©y ")
 	end
 end;
 
 function luckyzongzi()
 	if ((GetItemCountEx(394)>=1) and (GetItemCountEx(395)>=1) and (GetItemCountEx(396)>=1) and (GetItemCountEx(405)>=1) and (GetItemCountEx(397)>=1) and (GetItemCountEx(398)>=1) and (GetItemCountEx(399)>=1)) then 
-		Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+		Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	  	DelItemEx(394)
 	  	DelItemEx(395)
 	  	DelItemEx(396)
@@ -95,17 +95,17 @@ function luckyzongzi()
 	  	DelItemEx(398)
 	  	DelItemEx(399)
 	  	AddItem(6,0,70,1,0,0,0)
-	  	Msg2Player("ÄãµÃµ½ĞÒÔËôÕ×Ó")
-		WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."£¬ÖÆ×÷ÁËÒ»Ö»ĞÒÔËôÕ×Ó¡£")
+	  	Msg2Player("Ng­¬i lÊy ®­îc may m¾n tèng tö ")
+		WriteLog(date("%H%M%S").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." , luyÖn chÕ liÔu mét con may m¾n tèng tö . ")
 		Pay(2000)
 	else
-	  	Talk(1,"","ËÕÈıÄï£º×öĞÒÔËôÕ×ÓĞèÒªºìÔæ¡¢°åÀõ¡¢µ¾Ã×¡¢ÖíÈâ¡¢ôÕÒ¶¡¢Å£Èâ¸÷Ò»·İºÍ<color=red>Ò»¸öĞÒÔËÅ´Ã×<color>£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  	Talk(1,"","T« ba mÑ  lµm may m¾n tèng tö cÇn hång t¶o  b¶n lËt  ®¹o mÔ  thŞt heo  tèng l¸  thŞt bß c¸c mét phÇn cïng <color=red> mét may m¾n nhu th­íc <color> , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
 function yes1()
 	if ((GetItemCountEx(394)>=2) and (GetItemCountEx(396)>=2) and (GetItemCountEx(397)>=2)) then
-	  Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+	  Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	  DelItemEx(394)
 	  DelItemEx(396)
 	  DelItemEx(397)
@@ -114,15 +114,15 @@ function yes1()
 	  DelItemEx(397)
 	  AddItem(1,7,0,1,0,0,0)
 	  Pay(2000)
-	  Msg2Player("ÄãµÃµ½ºìÔæôÕ×Ó")
+	  Msg2Player("Ng­¬i lÊy ®­îc hång t¶o tèng tö ")
 	else
-	  Talk(1,"","ËÕÈıÄï£º×öºìÔæôÕ×ÓĞèÒªºìÔæ¡¢µ¾Ã×ºÍôÕÒ¶¸÷Á½·İ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  Talk(1,"","T« ba mÑ  lµm hång t¶o tèng tö cÇn hång t¶o  ®¹o mÔ cïng tèng l¸ c¸c hai ph©n , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
 function yes2()
 	if ((GetItemCountEx(395)>=2) and (GetItemCountEx(396)>=2) and (GetItemCountEx(397)>=2)) then
-	  Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+	  Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	  DelItemEx(395)
 	  DelItemEx(396)
 	  DelItemEx(397)
@@ -131,15 +131,15 @@ function yes2()
 	  DelItemEx(397)
 	  AddItem(6,0,60,1,0,0,0)
 	  Pay(2000)
-	  Msg2Player("ÄãµÃµ½°åÀõôÕ×Ó")
+	  Msg2Player("Ng­¬i lÊy ®­îc b¶n lËt tèng tö ")
 	else
-	  Talk(1,"","ËÕÈıÄï£º×ö°åÀõôÕ×ÓĞèÒª°åÀõ¡¢µ¾Ã×ºÍôÕÒ¶¸÷Á½·İ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  Talk(1,"","T« ba mÑ  lµm b¶n lËt tèng tö cÇn b¶n lËt  ®¹o mÔ cïng tèng l¸ c¸c hai ph©n , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
 function yes3()
 	if ((GetItemCountEx(395)>=2) and (GetItemCountEx(396)>=2) and (GetItemCountEx(397)>=2) and (GetItemCountEx(398)>=2)) then 
-	  Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+	  Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	  DelItemEx(395)
 	  DelItemEx(396)
 	  DelItemEx(397)
@@ -150,16 +150,16 @@ function yes3()
 	  DelItemEx(398)
 	  AddItem(6,0,61,1,0,0,0)
 	  Pay(2000)
-	  Msg2Player("ÄãµÃµ½ÖíÈâôÕ×Ó")
+	  Msg2Player("Ng­¬i lÊy ®­îc thŞt heo tèng tö ")
 	else
-	  Talk(1,"","ËÕÈıÄï£º×öÖíÈâôÕ×ÓĞèÒª°åÀõ¡¢ÖíÈâ¡¢µ¾Ã×ºÍôÕÒ¶¸÷Á½·İ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  Talk(1,"","T« ba mÑ  lµm thŞt heo tèng tö cÇn b¶n lËt  thŞt heo  ®¹o mÔ cïng tèng l¸ c¸c hai ph©n , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
 
 function yes4()
 	if ((GetItemCountEx(394)>=2) and (GetItemCountEx(396)>=2) and (GetItemCountEx(397)>=2) and (GetItemCountEx(399)>=2)) then 
-	  Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+	  Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	  DelItemEx(394)
 	  DelItemEx(396)
 	  DelItemEx(397)
@@ -170,22 +170,22 @@ function yes4()
 	  DelItemEx(399)
 	  AddItem(6,0,62,1,0,0,0)
 	  Pay(2000)
-	  Msg2Player("ÄãµÃµ½Å£ÈâôÕ×Ó")
+	  Msg2Player("Ng­¬i lÊy ®­îc thŞt bß tèng tö ")
 	else
-	  Talk(1,"","ËÕÈıÄï£º×öÅ£ÈâôÕ×ÓĞèÒªÅ£Èâ¡¢ºìÔæ¡¢µ¾Ã×ºÍôÕÒ¶¸÷Á½·İ,ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  Talk(1,"","T« ba mÑ  lµm thŞt bß tèng tö cÇn thŞt bß  hång t¶o  ®¹o mÔ cïng tèng l¸ c¸c hai ph©n , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
 
 function yes5()
-	Say("ËÕÈıÄï£º²»Â÷¿Í¹ÙËµ£¬×öÊ²½õôÕ×ÓÊÇ×æ´«ÏÂÀ´µÄÃØ·½£¬ÎÒÒ²Ã»ÓĞ¶à´ó°ÑÎÕ£¬×öºÃÁËÊÇÄãÔËÆø£¬×ö²»ºÃÔãÌ£ÁË²ÄÁÏÄãÒ²±ğÔ¹ÎÒ£¬³É²»³É£¿",2,"ºÃ/yes6","²»ºÃ/no")
+	Say("T« ba mÑ  kh«ng dèi g¹t kh¸ch quan nãi , lµm thËp cÈm tèng tö lµ tæ truyÒn xuèng bİ truyÒn , ta còng kh«ng cã bao lín n¾m chÆc , lµm xong lµ ng­¬i vËn khİ , lµm kh«ng tèt tao ®¹p tµi liÖu ng­¬i còng ®õng o¸n ta , cã ®­îc hay kh«ng ? ",2,"H¶o /yes6","Kh«ng tèt /no")
 end;
 
 function yes6()
 	if ((GetItemCountEx(394)>=2) and (GetItemCountEx(395)>=2) and (GetItemCountEx(396)>=2) and (GetItemCountEx(397)>=2) and (GetItemCountEx(398)>=2) and (GetItemCountEx(399)>=2)) then 
 	  i=random(1,100)
 	  if (i<=30) then	
-	    Talk(1,"","ËÕÈıÄï£º×öºÃÁË£¬Äã¿´¿´£¬±£ÄãÂúÒâ¡£")
+	    Talk(1,"","T« ba mÑ  lµm xong , ng­¬i xem mét chót , b¶o ng­¬i hµi lßng . ")
 	    DelItemEx(394)
 	    DelItemEx(394)
 	    DelItemEx(395)
@@ -199,10 +199,10 @@ function yes6()
 	    DelItemEx(399)
 	    DelItemEx(399)
 	    AddItem(6,1,63,1,0,0,0)
-	    Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+	    Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 	    Pay(2000)
 	  else
-	    Talk(1,"","ËÕÈıÄï£º²»ºÃÒâË¼£¬ÕæµÄ×ö»µÁË¡£")
+	    Talk(1,"","T« ba mÑ  ng­îng ngïng , thËt lµm chuyÖn xÊu liÔu . ")
 	    DelItemEx(394)
 	    DelItemEx(394)
 	    DelItemEx(395)
@@ -218,7 +218,7 @@ function yes6()
 	    Pay(2000)
 	  end
 	else
-	  Talk(1,"","ËÕÈıÄï£º×öÊ²½õôÕ×ÓĞèÒªºìÔæ¡¢°åÀõ¡¢µ¾Ã×¡¢ÖíÈâ¡¢Å£ÈâºÍôÕÒ¶¸÷Á½·İ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  Talk(1,"","T« ba mÑ  lµm thËp cÈm tèng tö cÇn hång t¶o  b¶n lËt  ®¹o mÔ  thŞt heo  thŞt bß cïng tèng l¸ c¸c hai ph©n , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
@@ -238,9 +238,9 @@ function skill()
 	  elseif (GetItemCountEx(399) >= 1) then
 	  		SetTaskTemp(51,399)
 	  end
-	  Say("ËÕÈıÄï£ºÎÒ×æÉÏ¾ÍÊÇÎª»Ê¹¬×ö¹±Æ·ÓùôÕµÄ£¬×ö³öÀ´µÄôÕ×Ó¶¼ÊÇÈË¼äÏÉÎ¶£¬Ö»ÊÇÕâÊÖÒÕµ½ÎÒÕâ´úÊ§´«µÃ²î²»¶àÁË£¬Èç¹ûÄã¿ÏµÄ»°£¬ÎÒ¿ÉÒÔ°ÑÄãÊÖÖĞµÄÊ²½õôÕ×Óµ÷ÖÆ³É´«ËµÖĞµÄ¹±Æ·ÓùôÕ£¬Ö»ÊÕÄã1000Òø×Ó¡£²»ÖªÄãÒª¼Ó¹¤Ê²Ã´ôÕ×ÓÄØ£¿",6,"ÃÛ½¤Ê²½õôÕ×Ó/yes7","°Ë±¦Ê²½õôÕ×Ó/yes8","°Ù¹ûÊ²½õôÕ×Ó/yes9","Ë®¾§Ê²½õôÕ×Ó/yes10","ÇüÔ­Ê²½õôÕ×Ó/yes11","Ê²Ã´¶¼²»×ö/no")
+	  Say("T« ba mÑ  ta tæ th­îng chİnh lµ v× hoµng cung lµm cèng phÈm ngù tèng ®İch , lµm ®­îc tèng tö ®Òu lµ nh©n gian tiªn vŞ , ch¼ng qua lµ tay nghÒ nµy ®Õn ta ®©y thay mÆt thÊt truyÒn ph¶i kh«ng sai biÖt l¾m , nÕu nh­ ng­¬i chŞu lêi cña , ta cã thÓ ®em trong tay ng­¬i thËp cÈm tèng tö ®iÒu chÕ thµnh trong truyÒn thuyÕt ®İch cèng phÈm ngù tèng , chØ lÊy ng­¬i 1000 b¹c . kh«ng biÕt ng­¬i muèn gia c«ng c¸i g× tèng tö ®©y ? ",6,"MËt tiÔn thËp cÈm tèng tö /yes7","T¸m b¶o thËp cÈm tèng tö /yes8","Tr¨m qu¶ thËp cÈm tèng tö /yes9","Thñy tinh thËp cÈm tèng tö /yes10","KhuÊt nguyªn thËp cÈm tèng tö /yes11","C¸i g× ®Òu kh«ng lµm /no")
 	else
-	  Talk(1,"","ËÕÈıÄï£º¿Í¹Ù£¬¼Ó¹¤Ò»¸öôÕ×ÓÒª1000Á½Òø×Ó£¬ÄãµÄÇ®ºÃÏñ²»¹»£¬»¹ÊÇÏÂ´ÎÔÙÀ´°É¡£")
+	  Talk(1,"","T« ba mÑ  kh¸ch quan , gia c«ng mét tèng tö muèn 1000 l­îng b¹c , tiÒn cña ng­¬i gièng nh­ kh«ng ®ñ , cßn lµ lÇn sau trë l¹i ®i . ")
 	end
 end;
 
@@ -252,28 +252,28 @@ function yes7()
 			flag=1
 			temp=Shijin2mijian+10
 		end
-		Talk(1,"","ÇëÉÔµÈÆ¬¿Ì¡£")
+		Talk(1,"","Xin chê chèc l¸t . ")
 	    	DelItemEx(GetTaskTemp(51))
 	  	i=random(1,100)
 	  	if (i<=temp) then	
-	    		Talk(1,"","ËÕÈıÄï£º×æ´«µÄÊÖÒÕ¹ûÈ»Ã»´í£¬ÕæÈÃÎÒ×ö³öÀ´ÃÛ½¤Ê²½õôÕ×ÓÁË£¡")
+	    		Talk(1,"","T« ba mÑ  tæ truyÒn tay cña nghÖ qu¶ nhiªn kh«ng sai , thËt lµm cho ta lµm ®­îc mËt tiÔn thËp cÈm tèng tö liÔu ")
 	    		DelCommonItem(6,1,63)
 	    		AddItem(6,1,64,1,0,0,0)
 	    		Pay(1000)
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½ÃÛ½¤Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc mËt tiÔn thËp cÈm tèng tö ")
 	  	else
-	    		Talk(1,"","ËÕÈıÄï£ºÊ§°ÜÁË£¬ÕâÃ´ºÃµÄôÕ×Ó±¾À´¾Í²»ÊÇÈİÒ××ö³öÀ´µÄ£¬Ö»ÄÜ»¹¸øÄãÕâ¸öÊ²½õôÕ×ÓÁË¡£")
+	    		Talk(1,"","T« ba mÑ  thÊt b¹i , tèt nh­ vËy ®İch tèng tö vèn lµ kh«ng ph¶i lµ dÔ dµng lµm ®­îc , chØ cã thÓ tr¶ l¹i cho ng­¬i c¸i nµy thËp cÈm tèng tö liÔu . ")
 	    		Pay(1000)
-	    		Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
 	  	end
 	else
-	  	Talk(1,"","ËÕÈıÄï£º×öÃÛ½¤Ê²½õôÕ×ÓĞèÒªÒ»·İÊ²½õôÕ×ÓºÍÈÎÒâÒ»·İôÕ×Ó²ÄÁÏ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  	Talk(1,"","T« ba mÑ  lµm mËt tiÔn thËp cÈm tèng tö cÇn mét phÇn thËp cÈm tèng tö cïng tïy ı mét phÇn tèng tö tµi liÖu , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
@@ -285,30 +285,30 @@ function yes8()
 			flag=1
 			temp=Mijian2babao+20
 		end
-	  	Talk(1,"","ÇëÉÔµÈÆ¬¿Ì¡£")
+	  	Talk(1,"","Xin chê chèc l¸t . ")
 	    	DelItemEx(GetTaskTemp(51))
 	  	i=random(1,100)
 	  	if (i<=temp) then	
-	    		Talk(1,"","ËÕÈıÄï£º×æ´«µÄÊÖÒÕ¹ûÈ»Ã»´í£¬ÕæÈÃÎÒ×ö³öÀ´°Ë±¦Ê²½õôÕ×ÓÁË£¡")
+	    		Talk(1,"","T« ba mÑ  tæ truyÒn tay cña nghÖ qu¶ nhiªn kh«ng sai , thËt lµm cho ta lµm ®­îc t¸m b¶o thËp cÈm tèng tö liÔu ")
 	    		DelCommonItem(6,1,64)
 	    		AddItem(6,1,65,1,0,0,0)
 	    		Pay(1000)
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½°Ë±¦Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc t¸m b¶o thËp cÈm tèng tö ")
   	  	else
-	    		Talk(1,"","ËÕÈıÄï£ºÊ§°ÜÁË£¬ÕâÃ´ºÃµÄôÕ×Ó±¾À´¾Í²»ÊÇÈİÒ××ö³öÀ´µÄ£¬Ö»ÄÜ»¹¸øÄãÕâ¸öÊ²½õôÕ×ÓÁË¡£")
+	    		Talk(1,"","T« ba mÑ  thÊt b¹i , tèt nh­ vËy ®İch tèng tö vèn lµ kh«ng ph¶i lµ dÔ dµng lµm ®­îc , chØ cã thÓ tr¶ l¹i cho ng­¬i c¸i nµy thËp cÈm tèng tö liÔu . ")
 	    		DelCommonItem(6,1,64)
 	    		AddItem(6,1,63,1,0,0,0)
 	    		Pay(1000)
-	    		Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
   	  	end
 	else
-	  	Talk(1,"","ËÕÈıÄï£º×ö°Ë±¦Ê²½õôÕ×ÓĞèÒªÒ»·İÃÛ½¤Ê²½õôÕ×ÓºÍÈÎÒâÒ»·İôÕ×Ó²ÄÁÏ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  	Talk(1,"","T« ba mÑ  lµm t¸m b¶o thËp cÈm tèng tö cÇn mét phÇn mËt tiÔn thËp cÈm tèng tö cïng tïy ı mét phÇn tèng tö tµi liÖu , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
@@ -321,30 +321,30 @@ function yes9()
 			flag=1
 			temp=Babao2baiguo+10
 		end
-	  	Talk(1,"","ÇëÉÔµÈÆ¬¿Ì¡£")
+	  	Talk(1,"","Xin chê chèc l¸t . ")
 	    	DelItemEx(GetTaskTemp(51))
 	  	i=random(1,100)
 	  	if (i<=temp) then	
-	    		Talk(1,"","ËÕÈıÄï£º×æ´«µÄÊÖÒÕ¹ûÈ»Ã»´í£¬ÕæÈÃÎÒ×ö³öÀ´°Ù¹ûÊ²½õôÕ×ÓÁË£¡")
+	    		Talk(1,"","T« ba mÑ  tæ truyÒn tay cña nghÖ qu¶ nhiªn kh«ng sai , thËt lµm cho ta lµm ®­îc tr¨m qu¶ thËp cÈm tèng tö liÔu ")
 	    		DelCommonItem(6,1,65)
 	    		AddItem(6,1,66,1,0,0,0)
 	    		Pay(1000)
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½°Ù¹ûÊ²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc tr¨m qu¶ thËp cÈm tèng tö ")
 	  	else
-	    		Talk(1,"","ËÕÈıÄï£ºÊ§°ÜÁË£¬ÕâÃ´ºÃµÄôÕ×Ó±¾À´¾Í²»ÊÇÈİÒ××ö³öÀ´µÄ£¬Ö»ÄÜ»¹¸øÄãÕâ¸öÊ²½õôÕ×ÓÁË¡£")
+	    		Talk(1,"","T« ba mÑ  thÊt b¹i , tèt nh­ vËy ®İch tèng tö vèn lµ kh«ng ph¶i lµ dÔ dµng lµm ®­îc , chØ cã thÓ tr¶ l¹i cho ng­¬i c¸i nµy thËp cÈm tèng tö liÔu . ")
 	    		DelCommonItem(6,1,65)
 	    		AddItem(6,1,63,1,0,0,0)
 	    		Pay(1000)
-	    		Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
 	  	end
 	else
-	  	Talk(1,"","ËÕÈıÄï£º×ö°Ù¹ûÊ²½õôÕ×ÓĞèÒªÒ»·İ°Ë±¦Ê²½õôÕ×ÓºÍÈÎÒâÒ»·İôÕ×Ó²ÄÁÏ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  	Talk(1,"","T« ba mÑ  lµm tr¨m qu¶ thËp cÈm tèng tö cÇn mét phÇn t¸m b¶o thËp cÈm tèng tö cïng tïy ı mét phÇn tèng tö tµi liÖu , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
@@ -356,11 +356,11 @@ function yes10()
 			flag=1
 			temp=Baiguo2shuijing+5
 		end
-	  	Talk(1,"","ÇëÉÔµÈÆ¬¿Ì¡£")
+	  	Talk(1,"","Xin chê chèc l¸t . ")
 	    	DelItemEx(GetTaskTemp(51))
 	  	i=random(1,100)
 	  	if (i<=temp) then	
-	    		Talk(1,"","ËÕÈıÄï£º×æ´«µÄÊÖÒÕ¹ûÈ»Ã»´í£¬ÕæÈÃÎÒ×ö³öÀ´Ë®¾§Ê²½õôÕ×ÓÁË£¡")
+	    		Talk(1,"","T« ba mÑ  tæ truyÒn tay cña nghÖ qu¶ nhiªn kh«ng sai , thËt lµm cho ta lµm ®­îc thñy tinh thËp cÈm tèng tö liÔu ")
 	    		DelItemEx(398)
 	    		DelItemEx(399)
 	    		DelCommonItem(6,1,66)
@@ -369,19 +369,19 @@ function yes10()
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½Ë®¾§Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc thñy tinh thËp cÈm tèng tö ")
 	  	else
-	    		Talk(1,"","ËÕÈıÄï£ºÊ§°ÜÁË£¬ÕâÃ´ºÃµÄôÕ×Ó±¾À´¾Í²»ÊÇÈİÒ××ö³öÀ´µÄ£¬Ö»ÄÜ»¹¸øÄãÕâ¸öÊ²½õôÕ×ÓÁË¡£")
+	    		Talk(1,"","T« ba mÑ  thÊt b¹i , tèt nh­ vËy ®İch tèng tö vèn lµ kh«ng ph¶i lµ dÔ dµng lµm ®­îc , chØ cã thÓ tr¶ l¹i cho ng­¬i c¸i nµy thËp cÈm tèng tö liÔu . ")
 	    		DelCommonItem(6,1,66)
 	    		AddItem(6,1,63,1,0,0,0)
 	    		Pay(1000)
 	    		if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 	  	end
 	else
-	  	Talk(1,"","ËÕÈıÄï£º×öË®¾§Ê²½õôÕ×ÓĞèÒªÒ»·İ°Ù¹ûÊ²½õôÕ×ÓºÍÈÎÒâÒ»·İôÕ×Ó²ÄÁÏ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+	  	Talk(1,"","T« ba mÑ  lµm thñy tinh thËp cÈm tèng tö cÇn mét phÇn tr¨m qu¶ thËp cÈm tèng tö cïng tïy ı mét phÇn tèng tö tµi liÖu , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end;
 
@@ -395,11 +395,11 @@ function yes11()
 			flag = 1
 			temp = Shuijing2quyuan + 3
 		end
-		Talk(1,"","ÇëÉÔµÈÆ¬¿Ì¡£")
+		Talk(1,"","Xin chê chèc l¸t . ")
 	   	DelItemEx(GetTaskTemp(51)) 
 	  	i = random(1,100)
 	  	if (i<=temp) then	
-	   		Talk(1,"","ËÕÈıÄï£ºÕâÊÇ´«ËµÖĞµÄÇüÔ­Ê²½õôÕ×ÓÑ½£¬ÎÒÖÕÓÚÊµÏÖÁË×æÉÏµÄÃÎÏë°ÑËü×ö³öÀ´ÁË£¡")
+	   		Talk(1,"","T« ba mÑ  ®©y lµ trong truyÒn thuyÕt ®İch khuÊt nguyªn thËp cÈm tèng tö nha , ta rèt côc thùc hiÖn tæ th­îng ®İch ­íc m¬ ®em nã lµm ®­îc ")
 		        DelCommonItem(6,1,67)
 		        sel=AddItem(6,1,68,1,0,0,0)
 		        time=GetItemGenTime(sel)
@@ -408,29 +408,29 @@ function yes11()
 	   	 	if(flag) then
 	    			DelItemEx(404)
 	    		end
-	    		Msg2Player("ÄãµÃµ½ÇüÔ­Ê²½õôÕ×Ó")
+	    		Msg2Player("Ng­¬i lÊy ®­îc khuÊt nguyªn thËp cÈm tèng tö ")
 	    		n = GetGlbValue(1)+1
 	    		SetGlbValue(1,n)
-				WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName().."£¬ÖÆ×÷³É¹¦Ò»Ö»ÇüÔ­ôÕ×Ó£¡½ñÈÕÇüÔ­Ê²½õôÕ×ÓµÄ¸öÊıÎª"..n.."Ö»¡£")
-    			AddGlobalNews("ËÕÈıÄï£º¸æËß´ó¼ÒÒ»¸öºÃÏûÏ¢£¬´«ËµÖĞµÄÇüÔ­ôÕ×ÓÒÑ¾­±»Íæ¼Ò×ö³öÀ´ÁË£¬´ó¼Ò¼ÌĞøÅ¬Á¦°¡£¡")
+				WriteLog(date("%H%M%S").." tr­¬ng môc "..GetAccount().." , vai trß "..GetName().." , luyÖn chÕ thµnh c«ng mét con khuÊt nguyªn tèng tö  h«m nay khuÊt nguyªn thËp cÈm tèng tö ®İch c¸ ®Õm v× "..n.." chØ . ")
+    			AddGlobalNews("T« ba mÑ  nãi cho mäi ng­êi mét tin tøc tèt , trong truyÒn thuyÕt ®İch khuÊt nguyªn tèng tö ®· bŞ nhµ ch¬i lµm ®­îc , mäi ng­êi tiÕp tôc cè g¾ng a ")
 		else
-			Talk(1,"","ËÕÈıÄï£ºÊ§°ÜÁË£¬ÕâÃ´ºÃµÄôÕ×Ó±¾À´¾Í²»ÊÇÈİÒ××ö³öÀ´µÄ£¬Ö»ÄÜ»¹¸øÄãÕâ¸öÊ²½õôÕ×ÓÁË¡£")
+			Talk(1,"","T« ba mÑ  thÊt b¹i , tèt nh­ vËy ®İch tèng tö vèn lµ kh«ng ph¶i lµ dÔ dµng lµm ®­îc , chØ cã thÓ tr¶ l¹i cho ng­¬i c¸i nµy thËp cÈm tèng tö liÔu . ")
 			DelCommonItem(6,1,67)
 			AddItem(6,1,63,1,0,0,0)
 			Pay(1000)
 			if(flag) then
 	    			DelItemEx(404)
 	    		end
-			Msg2Player("ÄãµÃµ½Ê²½õôÕ×Ó")
+			Msg2Player("Ng­¬i lÊy ®­îc thËp cÈm tèng tö ")
 		end
 	else
-		Talk(1,"","ËÕÈıÄï£º×öÇüÔ­Ê²½õôÕ×ÓĞèÒªÒ»·İË®¾§Ê²½õôÕ×ÓºÍÈÎÒâÒ»·İôÕ×Ó²ÄÁÏ£¬ÄãµÄ²ÄÁÏºÃÏñ²»¹»°¡£¿")
+		Talk(1,"","T« ba mÑ  lµm khuÊt nguyªn thËp cÈm tèng tö cÇn mét phÇn thñy tinh thËp cÈm tèng tö cïng tïy ı mét phÇn tèng tö tµi liÖu , ng­¬i tµi liÖu gièng nh­ kh«ng ®ñ a ? ")
 	end
 end
 
 
 function quyuan()
-	Talk(1,"","ËÕÈıÄï£ºÇüÔ­ÃØ·½ÊÇÎÒ×æÉÏÁôÏÂÀ´µÄÊé¼®£¬ÀïÃæ¼ÇÔØÁË¼Ó¹¤Ê²½õôÕ×ÓµÄ²»¶ş·¨ÃÅ£¬¿ÉÏ§±»ÎÒÊ§ÂäÔÚ³ÇÃÅÍâÁË£¬ÄãÃÇ»òĞí¿ÉÒÔÈ¥ÕÒÕÒ¿´£¬Ó¦¸Ã»áÓĞÊÕ»ñµÄ¡£")
+	Talk(1,"","T« ba mÑ  khuÊt nguyªn bİ truyÒn lµ ta tæ th­îng l­u l¹i bé s¸ch , bªn trong ghi l¹i gia c«ng thËp cÈm tèng tö ®İch kh«ng hai ph¸p m«n , ®¸ng tiÕc bŞ ta mÊt m¸c ë cöa thµnh bªn ngoµi liÔu , c¸c ng­¬i cã lÏ cã thÓ ®i t×m t×m nh×n , sÏ ph¶i cã thu ho¹ch ®İch . ")
 end;
 
 function no()

@@ -8,27 +8,27 @@ function main()
 	UTask_wd60sub = GetByte(GetTask(17),2)
 	if (UTask_wd == 60*256+20) then
 		if (UTask_wd60sub == 0) then
-			Talk(1,"","±¦Ïä£º×î½ü <color=Red>ËÎ½ğ±øÆ÷ <color> ²»×ã®ñ, <color=Red>ÉËÍö<color> ²ÒÖØ£¬¿ìµ½<color=Red>ÏåÑô<color> ÕÒ <color=Red>¹¤½³ <color> Ñ°Çó°ïÖú ®ì.")
-			Msg2Player("×î½ü¿¹½ğ±øÆ÷²»¹», <color=Red>Ê¿±øÉËÍö²ÒÖØ<color>, ĞèÒªµ½ÏåÑôÕÒÌú½³°ïÃ¦. ")
+			Talk(1,"","B¶o r­¬ng: GÇn ®©y <color=Red>binh khİ<color> cña Tèng qu©n kh«ng ®ñ, <color=Red>th­¬ng vong<color> trÇm träng, h·y ®Õn <color=Red>T­¬ng D­¬ng<color> t×m <color=Red>thî rÌn <color> gióp ®ì.")
+			Msg2Player("GÇn ®©y khİ giíi chèng Kim kh«ng ®ñ, <color=Red>binh sÜ th­¬ng vong trÇm träng<color>, cÇn ®Õn thµnh T­¬ng D­¬ng nhê Thî rÌn gióp ®ì gi¶i quyÕt. ")
 			SetTask(17, SetByte(GetTask(17),2,2))
-			AddNote("±¦ÏäÉÏĞ´×Å£ºµ½ÏåÑôÕÒÌú½³Ñ°ÕÒ½â¾ö¿¹½ğ±øÆ÷²»×ãµÄ°ì·¨. ")
+			AddNote("L¸ bïa trªn b¶o r­¬ng ë Th¸i Tö nham viÕt: §Õn thµnh T­¬ng D­¬ng t×m Thî rÌn t×m c¸ch gi¶i quyÕt vÊn ®Ò søc m¹nh chèng qu©n Kim kh«ng ®ñ. ")
 		elseif (UTask_wd60sub > 0) and (UTask_wd60sub < 8) then
-			Talk(1,"","±¦Ïä£ºÓÉÓÚÈ±ÉÙ <color=Red>±øÆ÷<color>, ËÎ½ğÉËÍö²ÒÖØ")
-			Msg2Player("ÓÉÓÚÁ¦Á¿²»¹»£¬¿¹½ğÊ±Ôì³ÉÉËÍöºÜÄÑ±ÜÃâ... ")
+			Talk(1,"","B¶o r­¬ng: Do thiÕu <color=Red>khİ giíi<color>, Tèng qu©n th­¬ng tæn trÇm träng… ")
+			Msg2Player("Do søc m¹nh kh«ng ®ñ, t¹o nªn th­¬ng vong kh«ng tr¸nh khái khi chèng qu©n Kim... ")
 		elseif (UTask_wd60sub == 8) then
 			AddEventItem(70)
-			Say("¼°Ê±ÄÃµ½±øÆ÷£¬Ç°Ïß¹Ù±øÕ½¶·Á¦ÔöÇ¿¡£´ò¿ª±¦Ïä£¬»ñµÃÒ»²¿<color=Red>'ÉÏÇåÕæ¾­<color>.", 0)
-			Msg2Player("ĞèÒª²¹³ä±øÆ÷£¬½ğ±øÕ½¶·Á¦ºÜÇ¿¡£´ò¿ª±¦Ïä£¬»ñµÃÒ»²¿ÉÏÇåÕæ¾­. ")
+			Say("Cã binh khİ kŞp thêi, søc chiÕn ®Êu cña quan binh tiÒn tuyÕn t¨ng m¹nh! Më B¶o r­¬ng, lÊy ®­îc 1 quyÓn <color=Red>'Th­îng Thanh Ch©n Kinh'<color>.", 0)
+			Msg2Player("CÇn ph¶i bæ sung binh khİ gÊp, søc m¹nh chiÕn ®Êu cña quan binh nhµ Kim rÊt m¹nh. Më B¶o r­¬ng, cã ®­îc bé Th­îng Thanh Ch©n Kinh. ")
 			SetTask(17, SetByte(GetTask(17),2,10))
-			AddNote("´ò¿ª±¦Ïä£¬ÓĞ²¿ÉÏÇåÕæ¾­. ")
+			AddNote("Më B¶o r­¬ng, cã ®­îc bé Th­îng Thanh Ch©n Kinh. ")
 		elseif (UTask_wd60sub == 10) then
 			if (HaveItem(70) == 0) then
 				AddEventItem(70)
 			else
-				Talk(1,"","±¦ÏäÒÑ¿Õ")
+				Talk(1,"","B¶o r­¬ng ®· rçng")
 			end
 		end
 	else
-		Talk(1,"","Î´½ÓÈÎÎñ£¬Äã²»ÄÜ´ò¿ª±¦Ïä!")
+		Talk(1,"","Ch­a nhËn nhiÖm vô! B¹n kh«ng thÓ më B¶o r­¬ng nµy!")
 	end
 end;

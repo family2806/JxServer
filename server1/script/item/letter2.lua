@@ -13,7 +13,7 @@ local curCamp = nt_getCamp()
 	Uworld189 = nt_getTask(189)
 	local name = GetName()
 	if ( Uworld189 == 20 )  then
-		Describe("<link=image:\\spr\\item\\questkey\\taskobj091.spr>ÁúÎåµÄĞÅ<link><enter>"..name..",È¥ÖìÏÉÕòÕÒÔÆ¶ù£¬¹ØÓÚËıµÄÒ»ÇĞÄã¶¼»áÂıÂıÖªÏş£¬¿ÉÎÒ²»Ô¸¶àÌáÒ»×Ö£¬ÍûÄãÕäÖØ×Ô¼º¡£ÁúÎå¡£",1,"ÊÕÆğĞÅº¯/no")
+		Describe("<link=image:\\spr\\item\\questkey\\taskobj091.spr>Th­ cña Long Ngò<link><enter>"..name..", h·y ®Õn Chu Tiªn TrÊn t×m V©n Nhi! SÏ cã nhiÖm vô cho ng­¬i! Hµnh sù nªn thËn träng! Long ngò!",1,"NhËn hµm th­ /no")
 		nt_setTask(189,30)
 		if ( Uworld1003 < 10 ) then 
 			nt_setTask(1003,10) --Ğ°ÅÉÈÎÎñ¿ªÊ¼

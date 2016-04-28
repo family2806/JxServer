@@ -14,7 +14,7 @@ local _limit = function()
 end
 
 local _OnBreak = function()
-	Msg2Player(" ’ºØ±ªº‰∂œ.")
+	Msg2Player("Thu thÀp Æ∑ bﬁ gi∏n Æoπn.")
 end
 
 
@@ -48,7 +48,7 @@ end
 
 function givegrassaward()
 	tbAward = {
-		{szName="¬Ã≤›",tbProp={6,1,3124,1,0,0},nExpiredTime=20120401,},
+		{szName="C· Xanh",tbProp={6,1,3124,1,0,0},nExpiredTime=20120401,},
 	}
 	tbAwardTemplet:Give(tbAward, 1, {%EVENT_LOG_TITLE, "click_npc_named_grass"})
 end

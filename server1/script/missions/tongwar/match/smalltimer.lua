@@ -7,7 +7,7 @@ function OnTimer()
 
 	if (t == RUNGAME_TIME) then --Èç¹ûµ½ÁËÕıÊ½¿ªÕ½Ê±¿Ì£¬ÔòÍ£Ö¹±¨Ãû£¬ÕıÊ½½øÈëÕ½¶·½×¶Î
 		RunMission(MISSIONID)
-		AddGlobalNews("'ÎäÁÖµÚÒ»°ï '"..GetMissionS(MS_S_CITYNAME_S).." ºÍ"..GetMissionS(MS_S_CITYNAME_J).." - ±ÈÈü¿ªÊ¼.");
+		AddGlobalNews("'Vâ L©m §Ö NhÊt Bang'"..GetMissionS(MS_S_CITYNAME_S).." vµ"..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn b¾t ®Çu.");
 		WriteLog("tongwar is entering fight state.")
 	end
 
@@ -15,9 +15,9 @@ function OnTimer()
 		RestTime = (RUNGAME_TIME - t) * TIMER_1 / FRAME2TIME
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
-			str2 = "Àë¿ªÕ½Ê±¼ä»¹Ê£:"..RestMin.."·Ö"
+			str2 = "C¸ch thêi gian khai chiÕn chØ cßn:"..RestMin.."phót"
 		else
-			str2 = "Àë¿ªÕ½Ê±¼ä»¹Ê£:"..RestMin.."·Ö"..RestSec.." Ãë"
+			str2 = "C¸ch thêi gian khai chiÕn chØ cßn:"..RestMin.."phót"..RestSec.." gi©y"
 		end
 		Msg2MSAll(MISSIONID,str2);		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
 	end
@@ -40,18 +40,18 @@ function OnTimer()
 			end
 		end
 
-		--Ã¿Ò»·ÖÖÓÍ¨¸æµ±Ç°Ë«·½»ı·Ö£¬ºÍnpc
+		--Ã¿Ò»phótÖÓÍ¨¸æµ±Ç°Ë«·½»ıphót£¬ºÍnpc
 		if (mod(t, 3) == 0 ) then
-			msstr = "¹«²¼£ºÄ¿Ç°£¬ÁªÃË×Ü·Ö"..GetMissionS(MS_S_CITYNAME_S).."¼°ÁªÃË"..GetMissionS(MS_S_CITYNAME_J).." Îª<color=yellow>"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
+			msstr = "C«ng bè: HiÖn t¹i, tæng ®iÓm liªn minh"..GetMissionS(MS_S_CITYNAME_S).." vµ liªn minh"..GetMissionS(MS_S_CITYNAME_J).." lµ <color=yellow>"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
 			Msg2MSAll(MISSIONID, msstr)
 		end
 		if (mod(t, 30) == 0) then
 			RestTime = floor(GetMSRestTime(MISSIONID, 62) / 18)
 			RestMin, RestSec = GetMinAndSec(RestTime);
 			if (RestSec == 0) then
-				str2 = "±ÈÈüÊ£ÓàÊ±¼ä:"..RestMin.."·Ö"
+				str2 = "Thêi gian thi ®Êu cßn l¹i:"..RestMin.."phót"
 			else
-				str2 = "±ÈÈüÊ£ÓàÊ±¼ä:"..RestMin.."·Ö"..RestSec.." gi©y"
+				str2 = "Thêi gian thi ®Êu cßn l¹i:"..RestMin.."phót"..RestSec.." gi©y"
 			end
 			Msg2MSAll(MISSIONID,"<color=blue>"..str2.."<color>");		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
 		end

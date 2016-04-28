@@ -17,34 +17,34 @@ local faction_skill_list = {
 
 sbook_list =
 {	-- ¸ñÊ½£º{¼¼ÄÜID, ¼¼ÄÜµÈ¼¶, °ïÅÉID, ËùĞè¼¶±ğ, ¼¼ÄÜÊéÃû³Æ, ¼¼ÄÜÃû³Æ}
-	[27] = {302, 1, 2, 80, "'Ğä¼ıÊõ.±©ÓêÀæ»¨' ",	"±©ÓêÀæ»¨"},
-	[28] = {351, 0, 2, 80, "'Ïİ¾²Êõ.ÂÒ»¹»÷' ",	"ÂÒ»¹»÷"},
-	[33] = {365, 1, 8, 80, "Ì«¼«È­Æ×-¾í3 ",	"ÌìµØÎŞ¼«"},
-	[34] = {368, 1, 8, 80, "'Ì«¼«È­Æ×-¾í 2' ",	"ÈË½£ºÏÒ»"},
-	[35] = {361, 1, 7, 80, "'ÔÆÁú»÷.Ã¬·¨' ",		"ÔÆÁú»÷"},
-	[36] = {362, 1, 7, 80, "'Áõ¾§.µ¶·¨' ",		"ÌìÍâÁõ¾§"},
-	[37] = {325, 1, 1, 80, "'ÌìÍõ´¸·¨.¾í 1' ",	"×··ç¾÷ "},
-	[38] = {323, 1, 1, 80, "ÌìÍõÉÌ·¨-¾í 2 ", 	"×·ĞÇÖğÔÂ"},
-	[39] = {322, 1, 1, 80, "ÌìÍõµ¶·¨-¾í3 ",	"ÆÆÌìÕ¶"},
-	[40] = {336, 1, 5, 80, "'´äÑÌµ¶·¨' ",			"±ùËÉÎŞÓ°"},
-	[41] = {337, 1, 5, 80, "'´äÑÌË«µ¶' ",			"±ùĞÄÏÉ×Ó "},
-	[42] = {328, 1, 4, 80, "'Ãğ½£ÃØ¼®",			"Èı¶ëÆëÑ©"},
-	[43] = {380, 1, 4, 80, "'¶ëÃ¼·ğ¹âÕÆÃØ¼®' ",	"·çËªËéÓ°"},
-	[45] = {339, 1, 2, 80, "'·Éµ¶Êõ.Éã»êÔÂÓ°' ",	"Éã»êÔÂÓ°"},
-	[46] = {342, 1, 2, 80, "'·ÉïÚÊõ.¾Å¹¬·É¾§' ",	"¾Å¹¬·É¾§"},
-	[47] = {353, 1, 3, 80, "'Îå¶¾ÕÆ·¨.¾í1' ",	"¢m ÒõÑôÊ´¹Ç"},
-	[48] = {355, 1, 3, 80, "'Îå¶¾µ¶·¨.¾í2' ",	"ĞşÒõÕ¶ "},
-	[49] = {390, 0, 3, 80, "'Îå¶¾ÉãĞÄÊõ.¾í3' ",	"§o¶Ï½î¸¯¹Ç"},
-	[50] = {372, 1, 9, 80, "'Óù·çÊõ' ",			"°ÁÑ©Ïô·å"},
-	[51] = {375, 1, 9, 80, "'ÓùÀ×Êõ' ",			"À×¶¯¾ÅÌì"},
-	[52] = {394, 0, 9, 80, "'ÓùĞÄÊõ' ",			"×íÏÉ´ò¹Ç"},
-	[53] = {391, 0, 7, 80, "Éã»ê-×çÖä",		"Éã»êÂÒĞÄ"},
-	[54] = {357, 1, 6, 80, "'Ø¤°ïÕÆ·¨' ",			"·ÉÁúÔÚÌì"},
-	[55] = {359, 1, 6, 80, "Ø¤°ï¹÷·¨ ",			"ÌìÏÂÎŞ¹·"},
-	[56] = {318, 1, 0, 80, "'ÉÙÁÖÈ­·¨.¾í 1' ",	"´ïÄ¦¶É½­"},
-	[57] = {319, 1, 0, 80, "'ÉÙÁÖ¹÷·¨.¾í2' ",	"ºáÉ¨Ç§¾ü"},
-	[58] = {321, 1, 0, 80, "'ÉÙÁÖµ¶·¨.¾í3' ",	"ÎŞÏàÕ¶ "},
-	[59] = {332, 0, 4, 80, "'ÆÕ¶ÉÃØ¼®' ",			"ÆÕ¶ÈÖÚÉú"},
+	[27] = {302, 1, 2, 80, "'Tô TiÔn thuËt. B¹o Vò Lª Hoa' ",	"B¹o Vò Lª Hoa"},
+	[28] = {351, 0, 2, 80, "'H·m TÜnh thuËt. Lo¹n Hoµn Kİch' ",	"Lo¹n Hoµn Kİch"},
+	[33] = {365, 1, 8, 80, "Th¸i Cùc QuyÒn Phæ- QuyÓn 3 ",	"Thiªn §Şa V« Cùc "},
+	[34] = {368, 1, 8, 80, "'Th¸i Cùc KiÕm Phæ. QuyÓn 2' ",	"Nh©n KiÕm Hîp NhÊt  "},
+	[35] = {361, 1, 7, 80, "'V©n Long Kİch. M©u ph¸p' ",		"V©n Long Kİch"},
+	[36] = {362, 1, 7, 80, "'L­u Tinh. §ao ph¸p' ",		"Thiªn Ngo¹i L­u Tinh"},
+	[37] = {325, 1, 1, 80, "'Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1' ",	"Truy Phong QuyÕt "},
+	[38] = {323, 1, 1, 80, "Thiªn V­¬ng Th­¬ng ph¸p- QuyÓn 2 ", 	"Truy Tinh Trôc NguyÖt "},
+	[39] = {322, 1, 1, 80, "Thiªn V­¬ng §ao ph¸p - QuyÓn 3 ",	"Ph¸ Thiªn Tr¶m "},
+	[40] = {336, 1, 5, 80, "'Thóy Yªn §ao ph¸p' ",			"B¨ng Tung V« ¶nh "},
+	[41] = {337, 1, 5, 80, "'Thóy Yªn Song ®ao' ",			"B¨ng T©m Tiªn Tö  "},
+	[42] = {328, 1, 4, 80, "'DiÖt KiÕm MËt TŞch' ",			"Tam Nga TÒ TuyÕt "},
+	[43] = {380, 1, 4, 80, "'Nga Mi PhËt Quang Ch­ëng MËt TŞch' ",	"Phong S­¬ng To¸i ¶nh "},
+	[45] = {339, 1, 2, 80, "'Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh' ",	"NhiÕp Hån NguyÖt ¶nh"},
+	[46] = {342, 1, 2, 80, "'Phi Tiªu thuËt. Cöu Cung Phi Tinh' ",	"Cöu Cung Phi Tinh"},
+	[47] = {353, 1, 3, 80, "'Ngò §éc Ch­ëng Ph¸p. QuyÓn 1' ",	"¢m Phong Thùc Cèt "},
+	[48] = {355, 1, 3, 80, "'Ngò §éc §ao ph¸p. QuyÓn 2' ",	"HuyÒn ¢m Tr¶m "},
+	[49] = {390, 0, 3, 80, "'Ngò §éc NhiÕp T©m thuËt. QuyÓn 3' ",	"§o¹n C©n Hñ Cèt "},
+	[50] = {372, 1, 9, 80, "'Ngù Phong thuËt' ",			"Ng¹o TuyÕt Tiªu Phong "},
+	[51] = {375, 1, 9, 80, "'Ngù L«i thuËt' ",			"L«i ®éng Cöu Thiªn "},
+	[52] = {394, 0, 9, 80, "'Ngù T©m thuËt' ",			"Tóy Tiªn T¸ Cèt"},
+	[53] = {391, 0, 7, 80, "NhiÕp Hån - Tr­íc Chó ",		"NhiÕp Hån Lo¹n T©m "},
+	[54] = {357, 1, 6, 80, "'C¸i Bang Ch­ëng Ph¸p' ",			"Phi Long T¹i Thiªn "},
+	[55] = {359, 1, 6, 80, "C¸i Bang C«n Ph¸p ",			"Thiªn H¹ V« CÈu "},
+	[56] = {318, 1, 0, 80, "'ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1' ",	"§¹t Ma §é Giang"},
+	[57] = {319, 1, 0, 80, "'ThiÕu L©m C«n ph¸p. QuyÓn 2' ",	"Hoµnh T¶o Thiªn Qu©n"},
+	[58] = {321, 1, 0, 80, "'ThiÕu L©m §ao ph¸p. QuyÓn 3' ",	"V« T­íng Tr¶m "},
+	[59] = {332, 0, 4, 80, "'Phæ §é MËt TŞch' ",			"Phæ §é Chóng Sinh "},
 }
 
 function CheckIsCanGet150SkillTask()
@@ -90,23 +90,23 @@ function CheckIsCanGet150SkillTask()
 	end 
 	if nHave150SkillFlag == 0 then
 		if nHaveTSFlag ==1 and nHave90SkillFlag == 1 and nHave120SkillFlag == 1 and GetLevel() >= 150 then
-			Msg2Player("<color=yellow>ÏÖÔÚÄã¿ÉÒÔ½Ó150¼¶¼¼ÄÜÈÎÎñ<enter>")
+			Msg2Player("<color=yellow>B©y giê ng­¬i cã thÓ nhËn nhiÖm vô kü n¨ng cÊp 150 <enter>")
 		else
-			local szMsg = "ÄãÏë½Ó150¼¶¼¼ÄÜÈÎÎñĞèÒª"
+			local szMsg = "Ng­¬i muèn nhËn nhiÖm vô kü n¨ng 150 cÇn ph¶i"
 			local nFlag = 0
 			
 			if nHave90SkillFlag == 0 then
 				if nFlag == 1 then
 					szMsg = format("%s,", szMsg) 
 				end
-				szMsg = format("%s Ñ§µ½90¼¼ÄÜ", szMsg) 
+				szMsg = format("%s häc ®­îc kü n¨ng cÊp 90", szMsg) 
 				nFlag = 1
 			end
 			if nHave120SkillFlag == 0 then
 				if nFlag == 1 then
 					szMsg = format("%s,", szMsg) 
 				end
-				szMsg = format("%s Ñ§µ½120¼¶¼¼ÄÜ", szMsg) 
+				szMsg = format("%s häc ®­îc kü n¨ng cÊp 120", szMsg) 
 				nFlag = 1
 			end
 			
@@ -115,7 +115,7 @@ function CheckIsCanGet150SkillTask()
 				if nFlag == 1 then
 					szMsg = format("%s,", szMsg) 
 				end
-				szMsg = format("%s ÖØÉú2´ÎÒÔÉÏ", szMsg) 
+				szMsg = format("%s Trïng sinh 2 trë lªn", szMsg) 
 				nFlag = 1
 			end
 			
@@ -123,7 +123,7 @@ function CheckIsCanGet150SkillTask()
 				if nFlag == 1 then
 					szMsg = format("%s,", szMsg) 
 				end
-				szMsg = format("%s ´ïµ½150¼¶", szMsg) 
+				szMsg = format("%s ®¹t ®Õn cÊp 150", szMsg) 
 				nFlag = 1
 			end
 			szMsg = format("<color=yellow>%s<color>", szMsg)
@@ -135,15 +135,15 @@ end
 function LearnSkillByBook(index, list)
 
 	if(GetLastFactionNumber() ~= list[index][3]) then							-- ²»ÊÇÖ¸¶¨ÃÅÅÉ
-		Msg2Player("ÄãÄÃ×Å"..list[index][5].."ÑĞ¾¿°ëÌìÁË£¬½á¹û»¹ÊÇÊ²Ã´Ò²Ã»ÁìÎò")
+		Msg2Player("B¹n cÇm lÊy "..list[index][5].."Nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng kh«ng lÜnh ngé ®­îc g× ")
 		return 1
 	end
 	if(GetLevel() < list[index][4]) then							-- µ«Î´µ½Ö¸¶¨¼¶±ğ
-		Msg2Player("ÄãÄÃ×Å"..list[index][5].."ÑĞ¾¿°ëÌìÁË£¬½á¹ûÁì»áºÜÉÙ. ")
+		Msg2Player("B¹n cÇm lÊy "..list[index][5].."Nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé rÊt İt. ")
 		return 1
 	end
 	if(HaveMagic(list[index][1]) ~= -1) then							-- ÒÑÑ§¹ı¸Ã¼¼ÄÜ
-		Msg2Player("ÄãÒÑÄÃ "..list[index][5].."Ë¼À´ÏëÈ¥£¬µ«ÊÇÒ²Ã»ÓĞÑ§µ½Ê²Ã´®ã ")
+		Msg2Player("B¹n ®· cÇm "..list[index][5].."NghiÒn tíi ngÉm lui, nh­ng còng kh«ng häc ®­îc g× trong ®ã ")
 		return 1
 	end
 
@@ -151,8 +151,8 @@ function LearnSkillByBook(index, list)
 	
 	CheckIsCanGet150SkillTask()
 
-	WriteLog(date("%H%M%S")..": ÕËºÅ:"..GetAccount()..", ÈÎÎñ:"..GetName()..", Ê¹ÓÃ: "..list[index][5].."ÒÑÑ§µ½: "..list[index][6]);
-	Msg2Player("ÒÑÑ§µ½¼¼ÄÜ"..list[index][6].."'. ")
+	WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", Sö dông: "..list[index][5].."§· häc ®­îc: "..list[index][6]);
+	Msg2Player("§· häc ®­îc kü n¨ng "..list[index][6].."'. ")
 	return 0
 
 end

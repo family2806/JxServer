@@ -16,9 +16,9 @@ function OnTimer()
 	
 	if ( t == RUNGAME_TIME ) then	--¿ªÕ½Ê±¼äµ½£¬ÌáÊ¾ÊØ³Ç¿ªÊ¼£¬²¢Ë¢µÚÒ»Åú¹Ö
 		RunMission(MISSIONID)
-		AddGlobalNews("ÎÀ¹úÕ½ÕùÒÑ¿ªÊ¼, "..tbDEFENCE_ANNOUNCE[citycamp])
-		Msg2MSAll( MISSIONID, "<color=yellow>µÐ¾üÒÑ¿ªÊ¼¹¥³Ç£¬Îª±£ÎÀÎÒÃÇµÄ³Ç´ó¼Ò³å°¡!" )
-		cd_writelog(cityname.."¿ªÊ¼.\tÈËÊý\t"..GetMSPlayerCount(MISSIONID, 0))
+		AddGlobalNews("ChiÕn tranh vÖ quèc ®· b¾t ®Çu, "..tbDEFENCE_ANNOUNCE[citycamp])
+		Msg2MSAll( MISSIONID, "<color=yellow>Qu©n ®Þch ®· b¾t ®Çu c«ng thµnh, v× ®Ó b¶o vÖ thµnh chóng ta c¸c T­íng sÜ h·y x«ng lªn!" )
+		cd_writelog(cityname.."B¾t ®Çu.\tsè ng­êi\t"..GetMSPlayerCount(MISSIONID, 0))
 		cd_buildfightnpc()
 		return
 	end
@@ -28,30 +28,30 @@ function OnTimer()
 		local RestMin, RestSec = GetMinAndSec(RestTime);
 
 		if ( mod( t, 9 ) == 0 ) then
-			cd_sendmsg2msall()		--Ã¿¸ô10·ÖÖÓ£¬ÌáÊ¾µ±Ç°XXÀàÐÍ¹Ö£¬»¹ÓÐ¶àÉÙÒªÉ±
+			cd_sendmsg2msall()		--Ã¿¸ô10phótÖÓ£¬ÌáÊ¾µ±Ç°XXÀàÐÍ¹Ö£¬»¹ÓÐ¶àÉÙÒªÉ±
 		end
 		if ( mod(t, 15) == 0 ) then
-			cd_callnpc()			--Ã¿¸ô10·ÖÖÓ£¬¸ù¾ÝÇ°10·ÖÖÓµÄ±»É±ËÀµÄÆÕÍ¨¹ÖÊýÁ¿£¬ÔÙË¢ÐÂÒ»´Î
+			cd_callnpc()			--Ã¿¸ô10phótÖÓ£¬¸ù¾ÝÇ°10phótÖÓµÄ±»É±ËÀµÄÆÕÍ¨¹ÖÊýÁ¿£¬ÔÙË¢ÐÂÒ»´Î
 		end
 		if ( mod(t, 60) == 0 and RestMin ~= 0) then
 			cd_sendmsg2global()
 		end
-		if ( t < LASTREPORT_TIME ) then	--Ã¿¸ô5·ÖÖÓÌáÊ¾½áÊøÊ±¼ä£¬×îºó5·ÖÖÓÃ¿·ÖÖÓÌáÊ¾Ò»´Î
+		if ( t < LASTREPORT_TIME ) then	--Ã¿¸ô5phótÖÓÌáÊ¾½áÊøÊ±¼ä£¬×îºó5phótÖÓÃ¿phótÖÓÌáÊ¾Ò»´Î
 			if ( mod( t, 15 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "½áÊøÊØ³ÇÊ±¼ä<color=yellow>"..RestMin.."·Ö" )
+				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
 			end
 		else
 			if ( mod( t, 3 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "±¨ÃûÊ±¼ä»¹ÓÐ<color=yellow>"..RestMin.."·Ö" )
+				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
 			end
 		end
 	else
-		if ( mod( t, 18 ) == 0 ) then	--±¨ÃûÊ±¼äÖÐ£¬Ã»6·ÖÖÓÌáÊ¾±¨Ãû½áÊøÊ±¼ä£¬²¢·¢¹ö¶¯ÏûÏ¢
+		if ( mod( t, 18 ) == 0 ) then	--±¨ÃûÊ±¼äÖÐ£¬Ã»6phótÖÓÌáÊ¾±¨Ãû½áÊøÊ±¼ä£¬²¢·¢¹ö¶¯ÏûÏ¢
 			RestTime = (RUNGAME_TIME - t) * SMALL_TIME / FRAME2TIME;
 			RestMin, RestSec = GetMinAndSec(RestTime);
 			if ( RestMin > 0 ) then
-				Msg2MSAll( MISSIONID, "±¨ÃûÊ±¼ä»¹ÓÐ<color=yellow>"..RestMin.."·Ö" )
-				AddGlobalNews("Õ½Õù¿ªÊ¼½ÓÊÜ±¨Ãû£¬ÏëÒª²Î¼ÓÂð?"..tbDEFENCE_ANNOUNCE[citycamp].."Àë¿ªÕ½»¹ÓÐ"..RestMin.."·Ö")
+				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
+				AddGlobalNews("Cuéc chiÕn ®· b¾t ®Çu nhËn b¸o danh, cã muèn tham gia kh«ng?"..tbDEFENCE_ANNOUNCE[citycamp].."Thêi gian khai chiÕn cßn"..RestMin.."phót")
 			end
 		end
 	end
@@ -94,10 +94,10 @@ function cd_addcommonnpc( npccount_1, npccount_2, npccount_3, tbxypos, npcfile )
 	local count = 0
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 	
 	if ( npccount_1 > 0 ) then
@@ -142,29 +142,29 @@ function cd_sendmsg2msall()
 	local restnpc_4 = GetMissionV( MS_4THNPC_TCNT )
 	local restnpc_5 = GetMissionV( MS_5THNPC_TCNT )
 	
-	local szMsg = "ÊØ³ÇÕ½±¨:";
-	Msg2MSAll(MISSIONID, "²Î¼ÓÊØ³ÇµÄÔ®±øÖ®Ç°°üÀ¨<color=yellow>"..GetMSPlayerCount(MISSIONID, 0).."ÈË")
+	local szMsg = "ChiÕn b¸o thñ thµnh:";
+	Msg2MSAll(MISSIONID, "viÖn binh tham gia thñ thµnh lóc tr­íc gåm<color=yellow>"..GetMSPlayerCount(MISSIONID, 0).." ng­êi")
 	if ( restnpc_1 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."ÒªÔö¼Ó<color=yellow>"..tbSOLDIER_NAME[1].." "..restnpc_1.."<color>ÈË" )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[1].." "..restnpc_1.."<color>ng­êi " )
 	end
 	if ( restnpc_2 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."ÒªÔö¼Ó<color=yellow>"..tbSOLDIER_NAME[2].." "..restnpc_2.."<color>ÈË" )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[2].." "..restnpc_2.."<color>ng­êi " )
 	end
 	if ( restnpc_3 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."ÒªÔö¼Ó<color=yellow>"..tbSOLDIER_NAME[3].." "..restnpc_3.."<color>ÈË" )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[3].." "..restnpc_3.."<color>ng­êi " )
 	end
 	
 	if ( restnpc_1 == 0 and restnpc_2 == 0 and restnpc_3 == 0 ) then
 		if ( restnpc_4 ~= 0 ) then
-			Msg2MSAll( MISSIONID, szMsg.."ÒªÔö¼Ó<color=yellow>"..tbSOLDIER_NAME[4].." "..restnpc_4.."<color>ÈË" )
+			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[4].." "..restnpc_4.."<color>ng­êi " )
 		else
-			Msg2MSAll( MISSIONID, szMsg.."ÒªÔö¼Ó<color=yellow>"..tbSOLDIER_NAME[5].." "..restnpc_5.."<color>ÈË" )
+			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[5].." "..restnpc_5.."<color>ng­êi " )
 		end
 	end
 	cd_writelog(date("%m%d%H%M\t")..format("cßn l¹i %s %d\t%s %d\t%s %d\t%s %d\t%s %d",tbSOLDIER_NAME[1],restnpc_1,tbSOLDIER_NAME[2],restnpc_2,tbSOLDIER_NAME[3],restnpc_3,tbSOLDIER_NAME[4],restnpc_4,tbSOLDIER_NAME[5],restnpc_5))
 end
 
 function cd_sendmsg2global()
-	local szMsg = "ÎÀ¹ú·é»ðÁ¬³Ç"..GetMissionS(MS_S_CD_NAME).."Õ½ÕùÕý¼¤ÁÒµÄ½øÐÐ."..tbDEFENCE_ANNOUNCE[GetMissionV(MS_CITYCAMP)]
+	local szMsg = "VÖ quèc Phong Háa liªn thµnh"..GetMissionS(MS_S_CD_NAME).."ChiÕn tranh ®ang trong giai ®o¹n ¸c liÖt."..tbDEFENCE_ANNOUNCE[GetMissionV(MS_CITYCAMP)]
 	AddGlobalNews(szMsg)
 end

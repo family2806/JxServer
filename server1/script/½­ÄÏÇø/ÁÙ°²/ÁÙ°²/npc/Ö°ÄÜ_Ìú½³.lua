@@ -5,7 +5,7 @@
 Include("\\script\\global\\global_tiejiang.lua")
 
 
-TIEJIANG_DIALOG = "<dec><npc>Õâ¼äÌú½³ÆÌÊÇ´ÓÎÒ×æ¸¸ÄÇÒ»±²ÁôÏÂÀ´µÄ£¬ÒÑ¾­ÓĞĞ©ÄîÍ·ÁË£¬ÔÚÕâÁÙ°²³ÇÀïÒ²ÂÔÓĞ±¡Ãû£¬ÇëÎÊÒªÂòµãÊ²Ã´Ñ½£¿";
+TIEJIANG_DIALOG = "<dec><npc> c¨n nµy thî rÌn cöa hµng lµ tõ ta tæ phô kia ®ång løa l­u l¹i , ®· cã chót niÖm ®Çu , ë n¬i nµy tr­íc khi an trong thµnh còng h¬i cã máng tªn , xin hái muèn mua chót g× nha ? ";
 function main()
 	tiejiang_city(TIEJIANG_DIALOG);
 end;

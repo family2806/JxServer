@@ -11,8 +11,8 @@ function InitMission()
 	SetMissionV(BW_KEY, random(10000000)+1);
 	StartMissionTimer(BW_MISSIONID, BW_SMALLTIME_ID, TIMER_1);
 	StartMissionTimer(BW_MISSIONID, BW_TOTALTIME_ID, TIMER_2);
-	CreateChannel("甲方多人擂台", 11);
-	CreateChannel("乙方多人擂台", 11);
+	CreateChannel("L玦 i Gi竝", 11);
+	CreateChannel("L玦 i 蕋", 11);
 	
 	for i = 1, getn(CS_CamperPos) do
 		local nNpcIdx = AddNpc(332, 1, SubWorld, CS_CamperPos[i][1] * 32, CS_CamperPos[i][2] * 32, 1, CS_CamperPos[i][3]);
@@ -39,8 +39,8 @@ function EndMission()
 	GameOver();
 	StopMissionTimer(BW_MISSIONID, BW_SMALLTIME_ID);
 	StopMissionTimer(BW_MISSIONID, BW_TOTALTIME_ID);
-	DeleteChannel("甲方多人擂台");
-	DeleteChannel("乙方多人擂台");
+	DeleteChannel("L玦 i Gi竝");
+	DeleteChannel("L玦 i 蕋");
 	local subworldid = SubWorldIdx2ID(SubWorld)
 	ClearMapNpc(subworldid);
 end;
@@ -48,7 +48,7 @@ end;
 function OnLeave(RoleIndex)
 	PlayerIndex = RoleIndex;
 
-	str2 = GetName().."退出了战场。";
+	str2 = GetName().." R阨 kh醝 chi課 trng";
 	LeaveGame();
 	NewWorld(GetTask(BW_SIGNPOSWORLD), GetTask(BW_SIGNPOSX), GetTask(BW_SIGNPOSY));
 end;

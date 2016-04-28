@@ -15,8 +15,8 @@ function main(nItemIdx)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	
 	if (nDate > XMASCANDY2007_DATE) then		--Ê¹ÓÃÊ±¼äÅĞ¶Ï
-		Msg2Player("ÒÑ¹ıÊ¹ÓÃÆÚ£¬Èç¹û¼ÌĞøÊ¹ÓÃ»áÓĞÎ£º¦£¬ĞèÒª·ÅÆú");
-		Say("ÒÑ¹ıÊ¹ÓÃÆÚ£¬Èç¹û¼ÌĞøÊ¹ÓÃ»áÓĞÎ£º¦£¬ĞèÒª·ÅÆú", 0);
+		Msg2Player("§· qu¸ h¹n sö dông, nÕu tiÕp tôc sö dông sÏ g©y h¹i, cÇn ph¶i vøt bá!");
+		Say("§· qu¸ h¹n sö dông, nÕu tiÕp tôc sö dông sÏ g©y h¹i, cÇn ph¶i vøt bá!", 0);
 		WriteLog(format("[XMASCANDY2007]\t%s\t%s\t%s\t%s",
 						GetLocalDate("%Y%m%d %X"),
 						GetName(),
@@ -37,8 +37,8 @@ function main(nItemIdx)
 	if (tb_candy_exp[np]) then
 		local nCurExp = tb_candy_exp[np] + GetTask(TSK_XMASCANDY2007_EXP);
 		if (nCurExp >= XMASCANDY2007_EXPLM) then
-			Msg2Player("»ñµÃµÄ¾­ÑéÖµÒÑ´ï1ÒÚÉÏÏŞ£¬²»ÄÜÔÙÊ¹ÓÃÁË.");
-			Say("»ñµÃµÄ¾­ÑéÖµÒÑ´ï1ÒÚÉÏÏŞ£¬²»ÄÜÔÙÊ¹ÓÃÁË.");
+			Msg2Player("§iÓm kinh nghiÖm nhËn ®­îc ®· ®¹t giíi h¹n 100 triÖu ®iÓm, kh«ng thÓ sö dông n÷a.");
+			Say("§iÓm kinh nghiÖm nhËn ®­îc ®· ®¹t giíi h¹n 100 triÖu ®iÓm, kh«ng thÓ sö dông n÷a.");
 			return 1;
 		else
 			AddOwnExp(tb_candy_exp[np]);

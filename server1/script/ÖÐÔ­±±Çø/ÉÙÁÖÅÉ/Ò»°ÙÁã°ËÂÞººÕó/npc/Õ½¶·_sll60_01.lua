@@ -7,20 +7,20 @@ function OnDeath()
 		i = random(0,4)
 		if (i == 1) and (HaveItem(217) == 0) then
 			AddEventItem(217)
-			Msg2Player("Äã»ñµÃÄîÖé")
-			AddNote("Äã»ñµÃÄîÖé")
+			Msg2Player("B¹n nhËn ®­îc NiÖm Ch©u. ")
+			AddNote("B¹n nhËn ®­îc NiÖm Ch©u. ")
 		elseif (i == 2) and (HaveItem(215) == 0) then
 			AddEventItem(215)
-			Msg2Player("Äã»ñµÃìøÕÈ. ")
-			AddNote("Äã»ñµÃìøÕÈ. ")
+			Msg2Player("B¹n nhËn ®­îc ThiÒn tr­îng. ")
+			AddNote("B¹n nhËn ®­îc ThiÒn tr­îng. ")
 		elseif (i == 3) and (HaveItem(216) == 0) then
 			AddEventItem(216)
-			Msg2Player("Äã»ñµÃÄ¾Óã ")
-			AddNote("Äã»ñµÃÄ¾Óã")
+			Msg2Player("B¹n nhËn ®­îc Méc Ng­ ")
+			AddNote("B¹n nhËn ®­îc Méc Ng­ ")
 		elseif (i == 4) and (HaveItem(214) == 0) then
 			AddEventItem(214)
-			Msg2Player("Äã»ñµÃ²§ÓÛ. ")
-			AddNote("Äã»ñµÃ²§ÓÛ. ")
+			Msg2Player("B¹n nhËn ®­îc B¸t Vu. ")
+			AddNote("B¹n nhËn ®­îc B¸t Vu. ")
 		else			-- µÈÓÚ0Ê±£¬²»³öµÀ¾ß
 			return 0
 		end

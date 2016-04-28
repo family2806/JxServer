@@ -3,7 +3,7 @@ Include("\\script\\global\\global_zahuodian.lua");
 
 function main(sel)
 	local Buttons = store_sel_extend();
-	Say("ÔÓ»õµêÀÏ°åÄï£ºÔÛÃÇÑïÖİË®Â·Í¨áé£¬ÊÇÄÏ±±»õÎï¼¯É¢Ö®µØ£¬ËùÒÔÎÒÕâÀïµÄÉÌÆ·¼¯¶«Î÷ÄÏ±±Ö®´óÈ«£¬Ó¦ÓĞ¾¡ÓĞ£¬ÒªÂòµãÊ²Ã´£¿", getn(Buttons), Buttons);
+	Say("§­êng thñy D­¬ng Ch©u cña chóng ta th«ng ra bèn ng·, lµ n¬i cã ®ñ hµng hãa tõ Nam tíi B¾c, v× thÕ vËt phÈm chóng t«i cã ®ñ §«ng T©y Nam B¾c, thø g× còng cã, mua mét İt g× ®i?", getn(Buttons), Buttons);
 
 end;
 

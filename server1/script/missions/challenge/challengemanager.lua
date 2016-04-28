@@ -19,7 +19,7 @@ MapCount = getn(MapTab);
 
 function main()
 	if (GetCamp() == 0) then 
-		Say("Äã²»ÊÇ½­ºşÈËÊ¿£¬²»ÄÜ½øÈëÕ½Çø!",0);
+		Say("B¹n kh«ng ph¶i lµ ng­êi trong giang hå! Kh«ng thÓ vµo khi vùc chiÕn ®Êu!",0);
 		return
 	end;
 
@@ -27,7 +27,7 @@ function main()
 	SetTask(300, 80);
 	SetTask(301, 1908);
 	SetTask(302, 2844);
-	Say("»¶Ó­²Î¼Ó±ÈÈü£¡Ö»ÓĞÒÑ½ü±¨ÃûµÄÑ¡ÊÖ²Å¿ÉÒÔ½øÈëÎä³¡£¡ÄãÏëÒª½øÈ¥ÄÄ¸öÕ½Çø?", 4 , "µÚÒ»Õ½Çø/DoJoin", "µÚ¶şÕ½Çø/DoJoin", "µÚÈıÕ½Çø/DoJoin","ÎÒ²»ÊÇ²Î¼Ó±ÈÈüµÄÑ¡ÊÖ£¬ÎÒ²»½øÈ¥. /OnCancel");
+	Say("Hoan nghªnh tham gia thi ®Êu! ChØ cã nh÷ng tuyÓn thñ ®· b¸o danh míi ®­îc vµo vâ tr­êng! B¹n muèn vµo khu ®Êu nµo?", 4 , "Khu ®Êu thø nhÊt /DoJoin", "Khu ®Êu thø hai /DoJoin", "Khu ®Êu thø ba /DoJoin","Ta kh«ng ph¶i tuyÓn thñ tham gia thi ®Êu, ta kh«ng vµo. /OnCancel");
 end;
 
 function DoJoin(nSel)

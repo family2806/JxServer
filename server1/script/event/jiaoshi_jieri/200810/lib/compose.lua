@@ -65,14 +65,14 @@ function jiaoshi0810_ComposeClass:ConsumeMaterial(tbMaterial)
 			if Pay(tbItem.nJxb) == 0 then
 				return 0;
 			else
-				Msg2Player(format("ĞèÒª <color=yellow>%d<color> l­îng",tbItem.nJxb))
+				Msg2Player(format("CÇn <color=yellow>%d<color> l­îng",tbItem.nJxb))
 			end
 		end
 	end
 	return 1;
 end
 function jiaoshi0810_ComposeClass:GetMaterialList(tbMaterial)
-	local szList = format("%-20s  %s","ÎïÆ· ","ÊıÁ¿")
+	local szList = format("%-20s  %s","vËt phÈm ","Sè l­îng")
 	local _, tbCount, tbMaxCount = self:CheckMaterial(tbMaterial)
 	local i;
 	for i=1,getn(tbMaterial) do
@@ -85,7 +85,7 @@ function jiaoshi0810_ComposeClass:GetMaterialList(tbMaterial)
 		if tbItem.tbProp then
 			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,tbMaterial[i].szName, szColor, tbCount[i], tbMaterial[i].nCount)
 		elseif tbItem.nJxb then
-			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,"ÒøÁ½", szColor, tbCount[i], tbMaterial[i].nJxb)
+			szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,"Ng©n l­îng", szColor, tbCount[i], tbMaterial[i].nJxb)
 		end
 	end
 	return szList
@@ -102,11 +102,11 @@ function jiaoshi0810_ComposeClass:Compose(tbFormula, szLogTitle, pFun, ...)
 	
 	
 	if self:CheckMaterial(tbMaterial) ~=1 then
-		local szMsg = "<dec><color=red>Ëù´øÎïÆ·²»¹»®ñ<color>."
+		local szMsg = "<dec><color=red>Nguyªn liÖu mang theo kh«ng ®ñ<color>."
 		CreateTaskSay(
 			{
 				szMsg,
-				"Õæ²»ºÃÒâË¼£¬ÎÒÒ»»áÔÙ»ØÀ´./OnCancel",
+				"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",
 				
 			}
 		)
@@ -115,7 +115,7 @@ function jiaoshi0810_ComposeClass:Compose(tbFormula, szLogTitle, pFun, ...)
 
 	if self:ConsumeMaterial(tbMaterial) ~= 1 then
 		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
-		Msg2Player("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	if type(tbProduct) == "table" then

@@ -1,6 +1,6 @@
 --ฝฃอ๘ศýึÜฤ๊ป๎ถฏ
 --ถนษณสูฬา
---สนำรบ๓ป๑ตร300wพญั้
+--สนำรบ๓ป๑ตร300wkinh nghiึm 
 --ื๎ถเฟษป๑ตร1าฺ
 --ฯÞ 80ผถผฐาิษฯ ฒข ณๅึตอๆผาสนำร
 
@@ -8,9 +8,9 @@ Include("\\script\\event\\jxanniversary3\\head.lua");
 
 function main(nItemIndex)
 	str=
-	{	"<#>สณำราปธ๖ถนษณสูฬาฃฌฟษป๑ตร<color=red>"..tostring(JXANNIVERSARY3_ONCEEXP).."<color>ตฤพญั้ฃฌตซสวอจนýสณำรถนษณสูฬาตรตฝพญั้ตฤษฯฯÞสว<color=red>"..tostring(JXANNIVERSARY3_MAXOWNEXP).."<color>ฃฌถเสณี฿ฮÞะงกฃ",
-		"<#>สนำรถนษณสูฬา/#_UseDoushaShoutao("..nItemIndex..")",
-		"<#>ฮาิูฟผยวฟผยว/OnCancel",
+	{	"<#>กn m้t trธi ฎตo vนn thไ, cใ thำ nhหn ฎญ๎c <color=red>"..tostring(JXANNIVERSARY3_ONCEEXP).."<color> ฎiำm kinh nghiึm, ฎiำm kinh nghiึm t่i ฎa ฎนt ฎญ๎c lต <color=red>"..tostring(JXANNIVERSARY3_MAXOWNEXP).."<color>.",
+		"<#>S๖ d๔ng งตo vนn thไ/#_UseDoushaShoutao("..nItemIndex..")",
+		"<#> งำ ta suy nghÜ lนi!/OnCancel",
 	};
 	Say(str[1], 2, str[2], str[3]);
 	return 1;
@@ -22,7 +22,7 @@ function _UseDoushaShoutao(nItemIndex)
 	end;
 	
 	if (GetTask(TASKID_DOUSHASHOUTAO_EXP) >= JXANNIVERSARY3_MAXOWNEXP) then 
-		Msg2Player("ฤใาัพญสนำรมหฬซถเตฤถนษณสูฬาฃฌฒปฤÜิูอจนýสนำรถนษณสูฬาฬแษýพญั้กฃ");
+		Msg2Player("Bนn ฎท จn quธ nhiาu งตo vนn thไ, khซng thำ tiีp t๔c จn ฎำ tจng kinh nghiึm.");
 		return
 	end 
 	
@@ -34,12 +34,12 @@ function _UseDoushaShoutao(nItemIndex)
 			nAddExp = JXANNIVERSARY3_ONCEEXP;
 		end
 		
-		--ิ๖ผำพญั้
+		--ิ๖ผำkinh nghiึm 
 		SetTask(TASKID_DOUSHASHOUTAO_EXP, GetTask(TASKID_DOUSHASHOUTAO_EXP) + nAddExp);
 		AddOwnExp(nAddExp);
-		Msg2Player("ฤใสณำรมหาปธ๖ถนษณสูฬาฃฌป๑ตรมห"..JXANNIVERSARY3_ONCEEXP.."พญั้");
+		Msg2Player("กn m้t trธi ฎตo vนn thไ, nhหn ฎญ๎c "..JXANNIVERSARY3_ONCEEXP.."kinh nghiึm ");
 	else
-		Msg2Player("รปำะถนษณสูฬาฟษาิสนำรฃก");
+		Msg2Player("Khซng cใ งตo vนn thไ nตo!");
 	end
 end
 

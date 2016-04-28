@@ -77,7 +77,7 @@ function OnDeath( nNpcIndex )
 	
 	if (rank == 6) then
 		if (GetCurCamp() == 1) then
-			Msg2MSAll(MISSIONID, "<color=yellow>战役报告：宋兵"..GetName().."杀死了金方元帅！！！")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: T鑞g qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe Kim!!!")
 			
 			--by zero 2007-7-30 如果金方已胜 则选择平局
 			
@@ -87,14 +87,14 @@ function OnDeath( nNpcIndex )
 				bonuscff=floor(bonuscff*PLAYER_BASE_BONUS2)--取整数
 				bt_addtotalpoint(bonuscff)--加分
 				mar_addmissionpoint(bonuscff)--加分
-				Msg2Player("你得到"..bonuscff.."点的积分奖励！")
+				Msg2Player("B筺 nh薾 頲 "..bonuscff.." 甶觤 t輈h l騳!")
 			else
 				SetMissionV(MS_MARSHALDEATH, 1);
 				bonuscff,_=bonus_rate();-- 得到宋方比例
 				bonuscff=floor(bonuscff*PLAYER_BASE_BONUS1)
 				bt_addtotalpoint(bonuscff)
 				mar_addmissionpoint(bonuscff)
-				Msg2Player("你得到"..bonuscff.."点的积分奖励！")
+				Msg2Player("B筺 nh薾 頲 "..bonuscff.." 甶觤 t輈h l騳!")
 			end
 			
 			--end
@@ -102,7 +102,7 @@ function OnDeath( nNpcIndex )
 
 
 		else
-			Msg2MSAll(MISSIONID, "<color=yellow>战役报告：金兵"..GetName().."杀死了宋方元帅！！！")
+			Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: Kim qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe T鑞g!!!")
 			
 			--by zero 2007-7-30 如果宋方已胜 则选择平局
 			if(GetMissionV(MS_MARSHALDEATH) == 1 ) then 
@@ -111,14 +111,14 @@ function OnDeath( nNpcIndex )
 				bonuscff=floor(bonuscff*PLAYER_BASE_BONUS2)
 				bt_addtotalpoint(bonuscff)
 				mar_addmissionpoint(bonuscff)
-				Msg2Player("你得到"..bonuscff.."点的积分奖励！")
+				Msg2Player("B筺 nh薾 頲 "..bonuscff.." 甶觤 t輈h l騳!")
 			else
 				SetMissionV(MS_MARSHALDEATH, 2);
 				_,bonuscff=bonus_rate();--得到金方比例
 				bonuscff=floor(bonuscff*PLAYER_BASE_BONUS1)
 				bt_addtotalpoint(bonuscff)
 				mar_addmissionpoint(bonuscff)
-				Msg2Player("你得到"..bonuscff.."点的积分奖励！")
+				Msg2Player("B筺 nh薾 頲 "..bonuscff.." 甶觤 t輈h l騳!")
 			end
 			
 	   		--end

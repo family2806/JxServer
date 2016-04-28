@@ -14,19 +14,19 @@ function main()
 	
 	local tbDecOpp =
 	{
-		"<dec><npc>ÎÒÌØÒâ´ÓÎ÷Óò²»Ô¶ÍòÀïÀ´µ½ÖĞÔ­£¬ÌıËµÕâÀï³öÏÖÁË<color=yellow>À×Ôóæm<color>¡£ÎÒÔø¾­µÃµ½Ò»·İ¶ÍÔì×°±¸µÄÃØ¼®¿ÉÒÔÓÃÀ×Ôóæm½«ÌØ¶¨Ò»Ğ©<color=yellow>»Æ½ğ×°±¸<color>Éı¼¶Îª<color=yellow>°×½ğ×°±¸<color>¡£Ïë²»ÏëÊÔÊÔ¿´£¬Ö»ÒªÔÙ¸øÎÒ1000WÁ½Òø×Ó×öÎªÖÆ×÷·ÑÓÃ¾ÍĞÔ¡£",
+		"<dec><npc>Ta tõ T©y Vùc xa x«i ®Õn Trung Nguyªn ®Ó thu thËp Thñy Tinh, Kim Nguyªn B¶o vµ Ng©n phiÕu. Ta s½n sµng ®æi c¸c b¶o vËt ®Ó ®­îc nh÷ng thø ®ã! Kh¸ch quan cã g× ®æi kh«ng?",
 		
 		--Change request 04/06/2011,¹Ø±ÕÖıÔì°×½ğ×°±¸ - Modified by DinhHQ - 20110605
-		--"ÎÒÏëÉı¼¶°×½ğ×°±¸/upgrade_paltinaequip",
-		--"ÎÒÏë°Ñ»Æ½ğ×°±¸ÖıÔì³É°×½ğ×°±¸/upgrade_goldformplatina",
+		--"Ta muèn th¨ng cÊp cho trang bŞ B¹ch Kim nµy/upgrade_paltinaequip",
+		--"Ta muèn chÕ t¹o trang bŞ Hoµng Kim thµnh trang bŞ B¹ch Kim/upgrade_goldformplatina",
 		
-		--"ÎÒÏëÇëÄãÖØÖı°×½ğ×°±¸/recoin_platina_main",
-		--"<#>ÎÒÏë½«Õâ¼ş°×½ğ×°±¸Éı¼¶/get1",
-		--"<#>ÎÒÏë½«Õâ¼ş»Æ½ğ×°±¸´òÔì³É°×½ğ×°±¸/get2",
-		--"<#> ²ğ½â <×°±¸ËğºÄ>/deal_brokenequip",
-		--"ÎÒÏëÁË½â°×½ğ×°±¸²ğ½â/unweave_paltinaequip",
-		--"<#>°Ù±¦Ïä/BaiBaoXiang_Give_UI",
-		"<#>ÎÒÖ»ÊÇÀ´¿´¿´/no",
+		--"Ta muèn mêi/xin ng­¬i ®óc l¹i b¹ch kim trang bŞ/recoin_platina_main",
+		--"Trao ®æi §å phæ vò khİ/get1",
+		--"Mua Kú tr©n dŞ b¶o/get2",
+		--"Xö lı <trang bŞ tæn h¹i>/deal_brokenequip",
+		--"Ta muèn hiÓu râ b¹ch kim trang bŞ hãa gi¶i/unweave_paltinaequip",
+		--"Ta muèn ®æi b¶o r­¬ng/BaiBaoXiang_Give_UI",
+		"Ta xem thö tr­íc ®·!/no",
 		
 	};
 	local ndate = tonumber(GetLocalDate("%y%m%d%H"))

@@ -9,10 +9,10 @@ function OnDeath()
 		UTask_twtmp20 = SetBit(GetTaskTemp(10),1,1)
 		SetTaskTemp(10,UTask_twtmp20)
 		if (UTask_twtmp20 == 7) then		-- bin: 100 + 010
-			Msg2Player("´ò°ÜÍÁ·Ë£¬¸½½ü´åÃñËÍ³öÒ»Ãæ½õÆì×÷Îª¸ĞĞ». ")
+			Msg2Player("§¸nh b¹i thæ phØ, d©n chóng trong th«n phô cËn tÆng mét l¸ cê gÊm ®Ó t¹ ¬n. ")
 			AddEventItem(92) 
 --			SetTask(3, 28)
-			AddNote("ÔÚÎäÒÄÉ½°×Ë®¶´´ò°Ü3ÃûÃ°³äÌìÍõ°ïµÜ×ÓµÄÍÁ·Ë£¬µÃµ½¸½½ü´åÃñËÍµÄ½õÆì. ")
+			AddNote("T¹i B¹ch Thñy ®éng Vò L¨ng s¬n, ®¸nh b¹i 3 tªn cÇm ®©u b¨ng thæ phØ m¹o nhËn Thiªn V­¬ng bang, ®­îc d©n chóng phô cËn tÆng mét l¸ cê gÊm. ")
 		end
 	end
 end;

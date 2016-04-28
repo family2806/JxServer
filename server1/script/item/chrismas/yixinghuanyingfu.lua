@@ -32,8 +32,8 @@ function main()
 	end;
 	
 	PlayerIndex = OldPlayer;
-		tabPlayer[ getn(tabPlayer) + 1 ] = "È¡Ïû/giveback_yu"
-		Say("ÄãÒª¶ÔÄÄ¸ö¶ÔÊÖÊ¹ÓÃµÀ¾ß<color=0xB5FDD7>ÒÆĞÎ»»Ó°·û<color>£¿", getn(tabPlayer), tabPlayer);
+		tabPlayer[ getn(tabPlayer) + 1 ] = "Hñy bá /giveback_yu"
+		Say("B¹n muèn sö dông ®¹o cô <color=0xB5FDD7>Di H×nh Ho¸n ¶nh Phï<color> víi ®èi thñ nµo?", getn(tabPlayer), tabPlayer);
 end;
 
 function useyixing(szName)
@@ -50,11 +50,11 @@ function useyixing(szName)
 	PlayerIndex = OldPlayer;
 	local w1, x1, y1 = GetWorldPos();
 	SetPos(x, y);
-	Msg2Player("<#>Äã¶Ô<color=0xB5FDD7>"..szName.."<color>Ê¹ÓÃÁËÒ»ÕÅ<color=0xB5FDD7>ÒÆĞÎ»»Ó°·û<color>£¬ºÍËûÎ»ÖÃ½»»»¡£");
+	Msg2Player("<#> B¹n<color=0xB5FDD7>"..szName.."<color>sö dông 1 tÊm <color=0xB5FDD7>Di H×nh Ho¸n ¶nh Phï<color> víi ®èi thñ, ®æi vŞ trİ víi ®èi thñ.");
 	
 	PlayerIndex = pidx
 	SetPos(x1, y1);
-	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>¶ÔÄãÊ¹ÓÃÁËÒ»ÕÅ<color=0xB5FDD7>ÒÆĞÎ»»Ó°·û<color>£¬ºÍÄãÎ»ÖÃ½»»»¡£");
+	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color>§èi thñ sö dông 1 tÊm <color=0xB5FDD7>Di H×nh Ho¸n ¶nh Phï<color>, ®æi vŞ trİ víi b¹n.");
 	PlayerIndex = OldPlayer;
 end;
 

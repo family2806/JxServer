@@ -7,13 +7,13 @@ Include("\\script\\maps\\checkmap.lua");
 function main()
 	local pMapID, pMx, pMy = GetWorldPos();
 	if GetFightState()>=1 or (IsCityMap(pMapID)~=1 and IsFreshmanMap(pMapID)~=1 and pMapID ~= 175)  then
-		Msg2Player("<color=yellow>Ä®±±´«ËÍ²áÖ»ÄÜÔÚ³ÇÊĞ·ÇÕ½¶·ÇøÓò¡¢ĞÂÊÖ´åÒÔ¼°Î÷É½´åÊ¹ÓÃ<color>");
+		Msg2Player("<color=yellow>Cuén truyÒn tèng M¹c B¾c chØ cã thÓ sö dông t¹i khu vùc phi chiÕn ®Êu cña thµnh thŞ, t©n thñ th«n vµ t©y s¬n th«n<color>");
 		return 1;
 	end;
 	--DinhHQ
 	--20110407: ÔÚ´³¹Ø30²»¸øÊ¹ÓÃÄ®±±´«ËÍ
 	if pMapID == 957 then
-		Msg2Player("<color=yellow>Ä®±±´«ËÍ²áÖ»ÄÜÔÚ³ÇÊĞ·ÇÕ½¶·ÇøÓò¡¢ĞÂÊÖ´åÒÔ¼°Î÷É½´åÊ¹ÓÃ<color>");
+		Msg2Player("<color=yellow>Cuén truyÒn tèng M¹c B¾c chØ cã thÓ sö dông t¹i khu vùc phi chiÕn ®Êu cña thµnh thŞ, t©n thñ th«n vµ t©y s¬n th«n<color>");
 		return 1;
 	end
 	local tbPos = {

@@ -12,7 +12,7 @@ function main()
 --	elseif (Uworld137 == 30) then		-- ÒÑ¾­¸üĞÂ¹ı¼¼ÄÜ
 --		Talk(1,"","ÃÏĞÇÑş£ºÎä¹¦ÎÒÒÑ¾­Ö¸µãÄãÁË£¬Ï£ÍûÄãÊÖ½ÅÀûÂäĞ©£¬ÔçÈÕÊÂ³É¡£")
 --	else										-- ·ÇÌìÍõµÄ
-		Talk(1,"","ÎÒÃÏĞÇÑş´Ó²»³ÁÃÔÓÚÍõÖ÷Ö®Î»¡£ÎÒÊ¦ĞÖºÎ±ØÈÃÈË²éÕâÑù²éÎÒÄØ. ")
+		Talk(1,"","M¹nh Tinh Dao ta vèn ch¼ng ®am mª g× ng«i vŞ V­¬ng Chñ. S­ huynh cña ta hµ tÊt cø ph¶i cho ng­êi ®i theo dß xĞt ta nh­ vËy. ")
 --	end
 end
 
@@ -40,5 +40,5 @@ function skills_update()			-- ÏÈ¸ù¾İÈÎÎñµÈ¼¶É¾³ı¡¢ÖØĞÂ¼ÓÈë¼¼ÄÜ£¬È»ºó²¹»Ø¼¼ÄÜµã
 	MagicPoint_total = GetLevel() + GetByte(GetTask(86),2) + GetByte(GetTask(80),1) - GetMagicPoint() - 1
 	AddMagicPoint(MagicPoint_total)
 	SetTask(137,30)
-	Talk(1,"UpdateSkill","ÎÒÒÑ¾­°ÑÎä¹¦¶¼´«¸øÄãÁË£¡¼ÓÓÍÁ·Ï°£¡")
+	Talk(1,"UpdateSkill","Ta ®· truyÒn hÕt vâ c«ng cho ng­¬i råi! Cã g¾ng luyÖn tËp nhĞ!")
 end

@@ -7,19 +7,19 @@
 Include("\\script\\lib\\awardtemplet.lua")
 jiefang_0804_luckybox_Award = 
 {
-	{szName="Æì×ÓËéÆ¬1", tbProp={6, 1, 1735, 1, 0, 0}, nRate = 50},
-	{szName="Æì×ÓËéÆ¬2", tbProp={6, 1, 1736, 1, 0, 0}, nRate = 30},
-	{szName="Æì×ÓËéÆ¬3", tbProp={6, 1, 1737, 1, 0, 0}, nRate = 15},
-	{szName="Æì×ÓËéÆ¬4", tbProp={6, 1, 1738, 1, 0, 0}, nRate = 5},
+	{szName="M¶nh cê 1", tbProp={6, 1, 1735, 1, 0, 0}, nRate = 50},
+	{szName="M¶nh cê 2", tbProp={6, 1, 1736, 1, 0, 0}, nRate = 30},
+	{szName="M¶nh cê 3", tbProp={6, 1, 1737, 1, 0, 0}, nRate = 15},
+	{szName="M¶nh cê 4", tbProp={6, 1, 1738, 1, 0, 0}, nRate = 5},
 }
 function main()
 	if CalcFreeItemCellCount() < 1 then
-		Say("×°±¸´üÒÑÂú£¬ÇëÇåÀí×°±¸£¬È·±£ÎïÆ·°²È«.",0)
+		Say("Tói hµnh trang ®· ®Çy, h·y dän dÑp hµnh trang ®Ó b¶o ®¶m an toµn cho vËt phÈm.",0)
 		return 1;
 	end
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate > 20080518 then
-		Say("ÎïÆ·Ê¹ÓÃ¹ıÆÚ£¬×Ô¶¯ÏûÊ§.", 0);
+		Say("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.", 0);
 		return 0;
 	end 
 	tbAwardTemplet:GiveAwardByList(jiefang_0804_luckybox_Award, "use luckybox")

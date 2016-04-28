@@ -13,12 +13,12 @@ function main(nItemIndex)
 	end
 	local maze = MazeList:Find(player)
 	if (not maze) then
-		player:Say("Ö»ÄÜÔÚ½£Ú£ÃÔ¹¬Ê¹ÓÃ¸´Éú·û.")
+		player:Say("ChØ cã thÓ sö dông Phôc Sinh Phï trong KiÕm Gia Mª Cung.")
 		return 1
 	end
 	local rooms = maze:GetPlayingRoomList()
 	if (getn(rooms) == 0) then
-		player:Say("·¿ÄÚÃ»ÓĞÊÂÇéÔÚ½øĞĞ")
+		player:Say("Kh«ng cã sù kiÖn g× ®ang tiÕn hµnh lËp phßng")
 		return 1
 	end
 	local tb = {}
@@ -27,8 +27,8 @@ function main(nItemIndex)
 		local inf = TaskInfo:GetInfo(room.taskid)
 		tinsert(tb, format("%s/#enter_room(%d,%d)", inf.Name, room.row, room.col))
 	end
-	tinsert(tb, "½áÊø¶Ô»°/Cancel")
-	player:Say("ÇëÑ¡ÔñÄãÏë×ªÈ¥µÄ·¿¼ä.", getn(tb), tb)
+	tinsert(tb, "§Ó ta suy nghÜ l¹i/Cancel")
+	player:Say("Xin h·y chän phßng muèn ®­îc chuyÓn ®Õn.", getn(tb), tb)
 	return 1
 end
 
@@ -43,17 +43,17 @@ function enter_room(row, col)
 	end
 	local count = player:CalcEquiproomItemCount(ITEM_MAZEREVIVE[1], ITEM_MAZEREVIVE[2], ITEM_MAZEREVIVE[3], ITEM_MAZEREVIVE[4])
 	if (count == 0) then
-		player:Say("×°±¸ÀïÃ»ÓĞ¸´Éú·û ")
+		player:Say("Trong hµnh trang kh«ng cã Phôc Sinh Phï.")
 		return
 	end
 	local room = maze:FindRoomWithPlayer(player)
 	if (not room) then
 		maze:Enter(player, row, col)
 	elseif (room.m_Row == row and room.m_Col == col) then
-		player:Say("ÄãÒÑÑ¡ÔñÊÂ¼ş£¬ÒÑÓĞ·¿¼äÁË.")
+		player:Say("Ng­¬i ®· lùa chän sù kiÖn vµ ®· cã phßng.")
 		return
 	elseif (room.m_Open ~= 1) then
-		player:Say("ÎªÍê³É·¿ÄÚµÄÊÂ£¬²»ÄÜÊ¹ÓÃ¸´Éú·û")
+		player:Say("Ch­a hoµn thµnh sù kiÖn trong phßng kh«ng thÓ sö dông Phôc Sinh Phï.")
 		return
 	else
 		maze:Move(player, row, col)

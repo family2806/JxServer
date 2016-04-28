@@ -28,7 +28,7 @@ function EndMission()
 		end;
 	end;
 	festival_gameover(FE_MAPID[2], FE_MISSIONID);	--½«ËùÓĞÍæ¼ÒÇå³ı³öµØÍ¼
-	strGlbNews = "¸÷Î»ÏÀÊ¿È¥ÕÒ"..FE_MOUSENAME.." ®· ÒÑ·µ»Ø";
+	strGlbNews = "c¸c hiÖp sÜ ®i t×m"..FE_MOUSENAME.." ®· trë vÒ.";
 	AddGlobalNews(strGlbNews);
 	
 	ClearMapObj(FE_MAPID[2]);
@@ -41,7 +41,7 @@ function OnLeave()
 	SetLogoutRV(0);
 end
 
---ÅÅĞòº¯Êı(¸ù¾İµã»÷¸öÊıÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃû´Î)£»
+--ÅÅĞòº¯Êı(¸ù¾İµã»÷c¸iÊıÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃûlÇn)£»
 function groupsort(nGroupId)
 	local OldSubWorld = SubWorld;
 	SubWorld = SubWorldID2Idx(FE_MAPID[2]);
@@ -89,7 +89,7 @@ function festival_sort(nGroupId)
 	local j;
 	local temptab = {};
 	local nCount = getn(tabPlayer);
-	for i = 2, nCount do	--²ÉÓÃÒ»¸öÃ°ÅİÅÅĞò
+	for i = 2, nCount do	--²ÉÓÃÒ»c¸iÃ°ÅİÅÅĞò
 		for j = nCount, i, -1 do
 			if (tabPlayer[j][2] > tabPlayer[j - 1][2]) then	--²ÉÓÃ½µĞòÅÅĞò
 				temptab = tabPlayer[j];
@@ -111,9 +111,9 @@ function festival_getsz(tabMsg, nMsgCount, tabPlayer, nGroupId)
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1];
 			if (nGroupId > FE_SMALLMAPCOUNT) then
-			    tabMsg[i + nMsgCount] = "<color=green>´Î"..i.." "..GetName()..", ×¥µ½"..tabPlayer[i][2].."¸ö"..FE_MOUSENAME;
+			    tabMsg[i + nMsgCount] = "<color=green>thø "..i.." "..GetName()..", b¾t ®­îc"..tabPlayer[i][2].."c¸i"..FE_MOUSENAME;
 			else
-			    tabMsg[i + nMsgCount] = "<color=orange>´Î"..i.." "..GetName()..", ´òÖĞ"..FE_ANIMALNAME..tabPlayer[i][2].."´Î";
+			    tabMsg[i + nMsgCount] = "<color=orange>thø "..i.." "..GetName()..", ®¸nh tróng"..FE_ANIMALNAME..tabPlayer[i][2].."lÇn";
 			end;
 		end
 	end
@@ -127,7 +127,7 @@ end;
 function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
     nCount = getn(tabPlayer);
     local i, j;
-    --ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
+    --ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃûlÇnµÄÏÈºó
 	for i = 1, nCount do
 		PlayerIndex = tabPlayer[i][1];
 		SetTask(TK_FE_RANK, i);
@@ -135,9 +135,9 @@ function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
 		    Msg2Player(tabMsg[j]);
 		end;
 		if (GetTask(TK_FE_GROUPID) > FE_SMALLMAPCOUNT) then
-    		Msg2Player("ÄãÊÇµÚ <color=yellow>"..i.."<color> ÍÑÀë½øÈëÄãµÄ¹ÖÎï£¬¿ÉÒÔÈ¥¼û<color=yellow>ÑÃÃÅ²îÒÛ<color> ÁìÈ¡ÒâÍâ½±Àø");
+    		Msg2Player("B¹n lµ ng­êi thø <color=yellow>"..i.."<color> tho¸t khái Qu¸i thó nhËp vµo ng­êi, cã thÓ ®Õn gÆp <color=yellow>Sai dŞch Nha m«n<color> ®Ó nhËn quµ th­ëng bÊt ngê ");
     	else
-    	    Msg2Player("ÄãÊÇ´òÖĞ¹ÖÎïµÄµÚ<color=yellow>"..i.."<color> ´Î, ¿ÉÒÔÈ¥<color=yellow>ÑÃÃÅ²îÒÛ<color>Áì½±!");
+    	    Msg2Player("B¹n lµ ng­êi ®¸nh tróng Qu¸i thó <color=yellow>"..i.."<color> lÇn, cã thÓ ®Õn <color=yellow>Sai dŞch Nha m«n<color> nhËn phÇn th­ëng!");
     	end;
 	end;
 end;

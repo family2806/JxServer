@@ -3,34 +3,34 @@ if (not __JOURNEYER_OFFICER_FESTIVAL2006_H__) then
     Include([[\script\missions\springfestival\festival_head.lua]]);
     
     function festival2006()
-        Say(FESTIVAL06_NPCNAME.."×î½üÄêÊŞÓÖ³öÀ´ËÄ´¦º¦ÈËÁË£¬ÄêÊŞÕâÖÖ¶«Î÷»á¸½ÉíÔÚÈËÉíÉÏ£¬±»¸½ÉíµÄÈË»á±ä³É¹ÖÎïµÄÄ£Ñù²¢ÇÒ²»ÊÜ¿ØÖÆµØº¦ÈË£¬Ö»ÓĞÓÃ<color=yellow>±ŞÅÚ<color>²ÅÄÜ°ÑËü¸Ï×ß¡£×î½ü¹Ù¸®µÄÈËÊÖ¼¸ºõ¶¼È¥Ó¦¸¶ÄêÊŞÁË£¬µ«»¹ÊÇ²»¹»£¬ÎÒ¿´ÄãÒ²ÊÇÑ§ÎäÖ®ÈË£¬ÄÜ°ï¸öÃ¦Âğ£¿", 5, "Ã»ÎÊÌâ£¬ÎªÃñ³ıº¦ÉáÎÒÆäË­£¡/festival06_wantjoin", "ÎÒÒÑ¾­°ÑÄêÊŞ¸ÏÅÜÁË£¡/festival06_award", "¹ØÓÚ´òÄêÊŞ»î¶¯/festival06_knowabout", "´òÌıÏûÏ¢¡£/main_former", "ÎÒ×î½üÊµÔÚÃ¦µÃºÜ£¬ÄãÕÒ±ğÈË°É¡£/festival06_Cancal");
+        Say(FESTIVAL06_NPCNAME.." gÇn nhÊt n¨m thó l¹i ®i ra chung quanh h¹i ng­êi liÔu , n¨m thó lo¹i vËt nµy sÏ phô ®ang ë trªn th©n ng­êi , bŞ phô th©n ng­êi cña sÏ biÕn thµnh qu¸i vËt ®İch bé d¸ng h¬n n÷a kh«ng bŞ khèng chÕ h¹i ng­êi , chØ cã dïng <color=yellow> roi ph¸o <color> míi cã thÓ ®em nã ®uæi ®i . gÇn nhÊt quan phñ ng­êi cña tay c¬ hå còng ®i ®èi phã n¨m thó liÔu , nh­ng vÉn lµ kh«ng ®ñ , ta xem ng­¬i còng lµ häc vâ ng­êi , cã thÓ gióp chuyÖn sao ? ", 5, "Kh«ng thµnh vÊn ®Ò , v× d©n trõ h¹i bá ta kú ng­êi nµo /festival06_wantjoin", "Ta ®· ®em n¨m thó ®uæi ch¹y /festival06_award", " liªn quan tíi ®¸nh n¨m thó ho¹t ®éng /festival06_knowabout", "Hái th¨m tin tøc . /main_former", "Ta gÇn nhÊt b©y giê rÊt bËn rén , ng­¬i t×m ng­êi kh¸c ®i . /festival06_Cancal");
     end;
     
     function festival06_wantjoin()
-        Say(FESTIVAL06_NPCNAME.."ÄãÄÜ´ğÓ¦ÕæÊÇÌ«ºÃÁË£¬Òª×¢ÒâµÄÊÇ×î½üÒòÎªÄêÊŞÒıÆğµÄÉ§ÂÒ£¬Ğí¶àº¢×Ó×ß¶ªÁË£¬ÔÚÄêÊŞ³öÏÖµÄÊ±ºòÒª×¢Òâ²»ÒªÈÃÄêÊŞ°ÑËûÃÇ×¥×ßÁË£¬ËûÃÇ»áºÜ¸ĞĞ»ÄãµÄ¡£", 2, "ÎÒÖªµÀÁË£¬¿ì´øÎÒÈ¥ÄêÊŞ³öÃ»µÄµØ·½°É¡£/festival_joingame", "ÔÙµÈÒ»ÏÂ£¬ÎÒÈ¥×¼±¸×¼±¸¡£/festival06_Cancal");
+        Say(FESTIVAL06_NPCNAME.." ng­¬i cã thÓ ®¸p øng thËt lµ thËt tèt qu¸ , ph¶i chó ı chİnh lµ gÇn nhÊt bëi v× n¨m thó ®­a tíi tao lo¹n , rÊt nhiÒu hµi tö ®i mÊt , ë n¨m thó xuÊt hiÖn thêi ®iÓm ph¶i chó ı kh«ng nªn ®Ó cho n¨m thó ®em bän hä b¾t ®i , bän hä sÏ rÊt c¶m t¹ ng­¬i . ", 2, "Ta biÕt , mau dÉn ta ®i n¨m thó ra kh«ng cã ®Şa ph­¬ng ®i . /festival_joingame", "Chê thªm chót n÷a , ta ®i chuÈn bŞ mét chót . /festival06_Cancal");
     end;
     
     function festival06_award()
         local nGetCount = GetTask(TK_FE_COUNT_ONETIME);
         local nRank = GetTask(TK_FE_RANK);
         if (nGetCount <= 0 or nRank <= 0) then
-            Say(FESTIVAL06_NPCNAME.."ÄãºÃÏñ²¢Ã»ÓĞÈ¥Çı¸ÏÄêÊŞ°É£¬ÎÒÃÇµÄÌ½×ÓÒ»Ö±¿´×ÅÄØ£¬ÏëÒª½±ÉÍµÄ»°¾ÍÏÈÈ¥°ÑÄêÊŞ´òÅÜ°É¡£", 1, "½áÊø¶Ô»°¡£/festival06_Cancal");
+            Say(FESTIVAL06_NPCNAME.." ng­¬i thËt gièng nh­ còng kh«ng cã ®i xua ®uæi n¨m thó ®i , th¸m tö cña chóng ta vÉn nh×n ®©y , muèn t­ëng th­ëng lêi cña tr­íc hÕt ®i ®em n¨m thó ®uæi ch¹y ®i . ", 1, "KÕt thóc ®èi tho¹i . /festival06_Cancal");
             return
         end;
         festival06_addaward();
         if (GetTask(TK_FE_GROUPID) > FE_SMALLMAPCOUNT) then
-            Say(FESTIVAL06_NPCNAME.."¸Õ²ÅºÃÏÕ°¡£¬Äã¸Õ¸Õ±»ÄêÊŞ¸½ÉíÁË£¬»¹ºÃ´ó¼ÒºÏÁ¦°Ñ¸½ÔÚÄãÉíÉÏµÄÄêÊŞ¸ÏÅÜÁË£¬²»¹ıÄã¸ÒÈ¥Ãæ¶ÔÄêÊŞ¾ÍÒÑ¾­ºÜÁË²»ÆğÁË£¬ÕâÊÇÎÒµÄÒ»µãĞÄÒâ£¬ÄãÊÕÏÂ°É¡£", 1, "ÊÕÏÂÀñÎï¡£/festival06_Cancal");
+            Say(FESTIVAL06_NPCNAME.." míi võa råi nguy hiÓm thËt a , ng­¬i míi võa bŞ n¨m thó phô th©n liÔu , còng may mäi ng­êi hîp lùc ®em ghĞ vµo trªn ng­êi ng­¬i ®İch n¨m thó ®uæi ch¹y , bÊt qu¸ ng­¬i d¸m ®i ®èi mÆt n¨m thó còng ®· rÊt kh«ng dËy næi , ®©y lµ ta ®İch mét chót t©m ı , ng­¬i nhËn lÊy ®i . ", 1, "NhËn lÊy lÔ vËt . /festival06_Cancal");
         else
-            Say(FESTIVAL06_NPCNAME.."ÎÒÒÑ¾­´ÓÌ½×ÓÄÇÀïÌıËµÁË£¬¸ÉµÃºÃ£¡ÄãÔÚ¸Õ²ÅµÄÕ½¶·ÖĞÒ»¹²ÓÃ±ŞÅÚ»÷ÖĞÁËÄêÊŞ"..nGetCount.."´Î£¬ÊÇ»÷ÖĞÄêÊŞµÚ"..nRank.."¶àµÄÈË£¬ÕâÊÇ¸øÄãµÄ±¨³ê£¬ÄÃºÃÁË£¡", 1, "ÊÕÏÂÀñÎï¡£/festival06_Cancal");
+            Say(FESTIVAL06_NPCNAME.." ta ®· tõ th¸m tö n¬i ®ã nghe nãi , lµm rÊt kh¸  ng­¬i ë ®©y chiÕn ®Êu míi võa råi trung tæng céng dïng roi ph¸o ®¸nh tróng n¨m thó "..nGetCount.." lÇn , lµ ®¸nh tróng n¨m thó thø "..nRank.." nhiÒu ng­êi , ®©y lµ ®­a cho ng­¬i thï lao , cÇm ch¾c ", 1, "NhËn lÊy lÔ vËt . /festival06_Cancal");
         end;
     end;
     
     function festival06_knowabout()
-        Say(FESTIVAL06_NPCNAME.."ÕÒ´òÄêÊŞ»î¶¯Ò»³¡Îª<color=yellow>15<color>·ÖÖÓ£¬ÆäÖĞÓĞ<color=yellow>5<color>·ÖÖÓ×¼±¸Ê±¼ä£¬ÔÚ±¨Ãû²Î¼ÓºóÄã»á±»´øµ½×¼±¸µØÍ¼¡£»î¶¯¿ªÊ¼ºóÄã»á±»´øµ½ÄêÊŞ³öÃ»µÄµØ·½£¬ÔÚ»î¶¯¿ªÊ¼<color=yellow>15<color>ÃëºóÔÚ²Î¼Ó»î¶¯µÄÍæ¼Òµ±ÖĞ±ã»áÓĞ1~2ÃûÍæ¼Ò±»ÄêÊŞ¸½Éí£¬±ä³ÉÄêÊŞµÄÍæ¼ÒĞèÒªÈ¥×¥µØÍ¼ÖĞ³öÏÖµÄ¡°<color=yellow>×ß¶ªµÄº¢×Ó<color>¡±¡£", 2, "ÏÂÒ»Ò³/festival06_next", "½áÊø¶Ô»°¡£/festival06_Cancal");
+        Say(FESTIVAL06_NPCNAME.." muèn ¨n ®ßn n¨m thó ho¹t ®éng mét cuéc v× <color=yellow>15<color> phót , trong ®ã cã <color=yellow>5<color> phót chuÈn bŞ thêi gian , ë ghi danh tham gia sau ng­¬i sÏ bŞ mang tíi chuÈn bŞ b¶n ®å . ho¹t ®éng b¾t ®Çu sau ng­¬i sÏ bŞ mang tíi n¨m thó ra kh«ng cã ®Şa ph­¬ng , ®ang ho¹t ®éng b¾t ®Çu <color=yellow>15<color> gi©y sau ë tham gia ho¹t ®éng ®İch nhµ ch¬i trong sÏ gÆp cã 1~2 tªn nhµ ch¬i bŞ n¨m thó phô th©n , biÕn thµnh n¨m thó ®İch nhµ ch¬i cÇn ®i b¾t b¶n ®å trung xuÊt hiÖn “<color=yellow> ®i vøt hµi tö <color>” . ", 2, "Trang kÕ tiÕp /festival06_next", "KÕt thóc ®èi tho¹i . /festival06_Cancal");
     end;
     
     function festival06_next()
-        Say(FESTIVAL06_NPCNAME.."¶øÆäËûÍæ¼ÒĞèÒªÓÃ¡°<color=yellow>±ŞÅÚ<color>¡±Çı¸ÏÄêÊŞ£¬²¢×èÖ¹ÄêÊŞ°Ñº¢×Ó×¥×ß£¬Ò»³¡»î¶¯½áÊøºó¡°<color=yellow>ÑÃÃÅ²îÒÛ<color>¡±»á°´Íæ¼ÒÓÃ<color=yellow>±ŞÅÚ<color>»÷ÖĞÄêÊŞµÄÃû´ÎÀ´°ä·¢½±Àø¡£", 1, "ÎÒÖªµÀÁË¡£/festival06_Cancal");
+        Say(FESTIVAL06_NPCNAME.." mµ nh÷ng kh¸c nhµ ch¬i cÇn dïng “<color=yellow> roi ph¸o <color>” xua ®uæi n¨m thó , còng ng¨n c¶n n¨m thó ®em con b¾t ®i , mét cuéc ho¹t ®éng sau khi kÕt thóc “<color=yellow> nha m«n sai dŞch <color>” sÏ theo nh­ nhµ ch¬i dïng <color=yellow> roi ph¸o <color> ®¸nh tróng n¨m thó ®İch h¹ng tíi ban hµnh t­ëng th­ëng . ", 1, "Ta biÕt . /festival06_Cancal");
     end;
     
 tabExp = {
@@ -73,7 +73,7 @@ tabGoods = {
             local nSeed = random(1, 100);
             if (nSeed <= 2) then
                 AddItem(0, 11, 263, 1, 0, 0, 0);
-                Msg2Player("Äã»ñµÃÁËÒ»¸ö<color=yellow>ÄêÊŞÃæ¾ß<color>")
+                Msg2Player("Ng­¬i thu ®­îc mét <color=yellow> n¨m thó mÆt n¹ <color>")
             end;
         end;
     end;
@@ -84,34 +84,34 @@ tabGoods = {
     	local strsay = "";
     	if (nGoodsType == 1) then
     		AddItem(6, 1, 122, 1, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸öĞ¡¸£Ôµ"
+    		strsay = " ng­¬i thu ®­îc mét tiÓu Phóc duyÕn "
     	elseif (nGoodsType == 2) then
     		AddItem(6, 1, 71, 1, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸öÏÉ²İÂ¶"
+    		strsay = " ng­¬i thu ®­îc mét tiªn th¶o lé "
     	elseif (nGoodsType == 3) then
     		local szItemName = festival_addpkwan();
-    		strsay = "Äã»ñµÃÁËÒ»¸ö"..szItemName;
+    		strsay = " ng­¬i thu ®­îc mét "..szItemName;
     	elseif (nGoodsType == 4) then
     		AddItem(6, 1, 123, 1, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸öÖĞ¸£Ôµ"
+    		strsay = " ng­¬i thu ®­îc mét trung phóc duyªn "
     	elseif (nGoodsType == 5) then
     		AddItem(6, 1, 147, 4, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö4¼¶Ğş¾§"
+    		strsay = " ng­¬i thu ®­îc mét 4 cÊp huyÒn tinh "
     	elseif (nGoodsType == 6) then
     		AddItem(6, 1, 124, 1, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö´ó¸£Ôµ"
+    		strsay = " ng­¬i thu ®­îc mét ®¹i phóc duyªn "
     	elseif (nGoodsType == 7) then
     		AddItem(6, 1, 147, 5, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö5¼¶Ğş¾§"
+    		strsay = " ng­¬i thu ®­îc mét 5 cÊp huyÒn tinh "
     	elseif (nGoodsType == 8) then
     		AddItem(6, 1, 147, 6, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö6¼¶Ğş¾§"
+    		strsay = " ng­¬i thu ®­îc mét 6 cÊp huyÒn tinh "
     	elseif (nGoodsType == 9) then
     		AddItem(6, 1, 147, 7, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö7¼¶Ğş¾§"
+    		strsay = " ng­¬i thu ®­îc mét 7 cÊp huyÒn tinh "
     	elseif (nGoodsType == 10) then
     		AddItem(6, 1, 147, 8, 0, 0, 0);
-    		strsay = "Äã»ñµÃÁËÒ»¸ö8¼¶Ğş¾§"
+    		strsay = " ng­¬i thu ®­îc mét 8 cÊp huyÒn tinh "
     	end;
   		Msg2Player(strsay);
     end;
@@ -142,13 +142,13 @@ tabGoods = {
         end;
         local nCount = tabExp[nRank];
     	AddOwnExp(nCount);
-    	Msg2Player("Äã»ñµÃÁË<color=yellow>"..nCount.."<color>µã¾­Ñé")
+    	Msg2Player("Ng­¬i thu ®­îc <color=yellow>"..nCount.."<color> chót kinh nghiÖm ")
     end;
     
     function festival_addpkwan()
         local itemidx = random(1, 10);
         AddItem(6, 0, itemidx, 1, 0, 0, 0);
-        tab_pkwan_name = {"³¤ÃüÍè", "¼ÓÅÜÍè", "´óÁ¦Íè", "¸ßÉÁÍè", "¸ßÖĞÍè", "·ÉËÙÍè", "±ù·ÀÍè", "À×·ÀÍè", "»ğ·ÀÍè", "¶¾·ÀÍè"};
+        tab_pkwan_name = {"Tr­êng mÖnh hoµn ", "Thªm ch¹y hoµn ", "§¹i lùc hoµn ", "Cao nhanh chãng hoµn ", "Trung häc ®Ö nhŞ cÊp hoµn ", "Nhanh chãng hoµn ", "B¨ng phßng hoµn ", " l«i phßng hoµn ", " löa phßng hoµn ", "§éc phßng hoµn "};
         return tab_pkwan_name[itemidx];
     end;
     

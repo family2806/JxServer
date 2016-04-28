@@ -13,17 +13,17 @@ i = random(0,2)
 		branch_taokan()
 	else
 		if (i == 0) then
-Say("¹¨°¢Å££º³öÁË³Ç£¬Íù±±×ß£¬²»Ô¶¾ÍÊÇÎäµ±É½¡£",0)
+Say("Ra khái thµnh, ®i vÒ h­íng B¾c kh«ng xa chİnh lµ Vâ §ang s¬n.",0)
 		return
 		end;
 		
 		if (i == 1) then
-Say("¹¨°¢Å££ºÌıËµÎäµ±ÅÉµÄÕÆÃÅÊÇ¸öµÃµÀÕæÈË£¬²»ÏşµÃÊÇ²»ÊÇµÃµÀÁË¾ÍÄÜ¹»³¤Éú²»ÀÏ¡£",0)
+Say("Nghe nãi Ch­ëng m«n Vâ §ang Ph¸i lµ 1 ch©n nh©n ®¾c ®¹o. Kh«ng biÕt cã ph¶i sau khi ®¾c ®¹o sÏ ®­îc tr­êng sinh bÊt l·o?",0)
 		return
 		end;
 		
 		if (i == 2) then
-Say("¹¨°¢Å££ºÒª²»ÊÇÎİÀïÓĞ°ËÊ®ËêÀÏÄï£¬ÎÒÔç¾ÍÉÏÎäµ±É½°İÊ¦Ñ§ÒÕÈ¥ÁË¡£",0)
+Say("NÕu kh«ng ph¶i v× ta cßn mÑ giµ ®· 80 tuæi, ta ®· sím lªn Vâ §ang s¬n b¸i s­ häc vâ tõ l©u!",0)
 		end;
 	end
 end;

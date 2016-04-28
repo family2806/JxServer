@@ -50,7 +50,7 @@ function tbVNG_VipAcc_Peach:OnTime(nNpcIdx)
 			if tbAllPlayer[i] == nOwnerIdx then
 				PlayerIndex = nOwnerIdx
 				tbVNG_BitTask_Lib:addTask(self.tbTaskInfo, 1)
-				tbAwardTemplet:GiveAwardByList(self.tbAward, "[VNG][VipAcc2011][÷÷Ã“ ˜]")
+				tbAwardTemplet:GiveAwardByList(self.tbAward, "[VNG][VipAcc2011][TrÂng c©y Æµo]")
 				PlayerIndex = nOldPlayer
 				return self.nInterval, nNpcIdx
 			end

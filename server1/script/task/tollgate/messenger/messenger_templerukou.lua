@@ -13,14 +13,14 @@ Include("\\script\\lib\\common.lua");
 function main()
 	local tbDialog =
 	{
-		"¿ªÊ¼ÈÎÎñ /temple_starttask",
-	  	"Àë¿ªÇøÓò/temple_movecity",
-	  	"ÉÔºó»ØÀ´ /no",
+		"B¾t ®Çu nhiÖm vô /temple_starttask",
+	  	"Rêi khái khu vùc/temple_movecity",
+	  	"L¸t n÷a quay l¹i /no",
 	}
 	if (tbBirthday0905:IsActDate() == 1) then
-		tinsert(tbDialog, 3, "ÔÚÉ½ÉñÃíµØÍ¼ÉÏµÄÈÎÎñ /birthday0905_temple");
+		tinsert(tbDialog, 3, "NhiÖm vô t¹i b¶n ®å s¬n thÇn miÕu/birthday0905_temple");
 	end
-	 Describe(DescLink_YiGuan..": ÒÑ¿ªÊ¼¼ÆËã´³¹ØÊ±¼ä£¬¼ÓÓÍÅ¶£¡ÏÖÔÚÄãÏë×öÊ²Ã´?",getn(tbDialog), unpack(tbDialog))
+	 Describe(DescLink_YiGuan..": §· b¾t ®Çu tİnh thêi gian qua ¶i, cè g¾ng lªn! B©y giê b¹n muèn lµm g×?",getn(tbDialog), unpack(tbDialog))
 end
 
 function temple_starttask()
@@ -36,13 +36,13 @@ function temple_starttask()
 		SetPKFlag(0);        --ÉèÖÃÎªÁ·¹¦Ä£Ê½        
 		SetDeathScript("\\script\\task\\tollgate\\messenger\\playerdead_tollgate.lua");
 		SetPos(1340,3148);
-		Msg2Player("ÒÑ¿ªÊ¼¼ÆËã×öÈÎÎñÊ±¼ä ")
+		Msg2Player("§· b¾t ®Çu tİnh thêi gian lµm nhŞªm vô ")
 	elseif ( nt_getTask(1202) == 20 ) then
-		Describe(DescLink_YiGuan.."ÄãÒÑÍê³ÉÈÎÎñ£¬²»ĞèÒª¼ÌĞø½ÓÁË!",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan.."B¹n ®· hoµn thµnh nhiÖm vô, kh«ng cÇn tiÕp nhËn l¹i!",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1202) == 25 or nt_getTask(1202) == 30 ) then
-		Describe(DescLink_YiGuan..": ÄãÒÑÍê³ÉÈÎÎñ£¬ÔõÃ´»¹Ïë¼ÌĞø½ÓÈÎÎñ£¿¿ìµãÀë¿ªÕâ°É!",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· hoµn thµnh nhiÖm vô, sao cßn muèn tiÕp nhËn l¹i nhiÖm vô? Mau rêi khái ®©y ®i!",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1202) == 0 ) then
-		Describe(DescLink_YiGuan..": ÄãÒÑÍê³ÉĞÅÊ¹ÈÎÎñÁË£¬Çë¿ìµãÀë¿ª°É!",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· hoµn thµnh nhiÖm vô Tİn sø råi! Lµm ¬n biÕn cho khuÊt m¾t!",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -53,7 +53,7 @@ function temple_movecity()
 			if ( nt_getTask(1204) == citygo[i][2] ) then
 				SetLogoutRV(0);
 				NewWorld(citygo[i][7], citygo[i][8], citygo[i][9])
-				Msg2Player("É½ÉñÃíæäÕ¾¹§ËÍ"..name.."´óÈËµ½"..citygo[i][4].."æäÕ¾!")
+				Msg2Player("DŞch tr¹m miÕu S¬n thÇn cung tèng"..name.."§¹i nh©n ®Õn"..citygo[i][4].."DŞch tr¹m!")
 			end
 		end	
 	elseif ( nt_getTask(1202) == 10 ) or ( nt_getTask(1202) == 0 ) then
@@ -64,13 +64,13 @@ end
 
 function birthday0905_temple()
 	tbBirthday0905.tbTask:reset_task();
-	Say("æä¹Ù: ´Ó19/06/2009 µ½ 19/07/2009 24Ê±, Í¨¹ıÏÂÃæµÄÈÎÎñ¿ÉÒÔ»ñµÃÏÄÈÕ¹¬£¬´óÏÀÏë²Î¼ÓÂğ?", 6, 
-		"½ÓÏûÃğ2¸öµ¶ÑıÈÎÎñ./#birthday0905_settask_message(7)",
-		"½ÓÏûÃğ100¸öÉ½ÉñÃíµ¶ÊÖÈÎÎñ./#birthday0905_settask_message(8)",
-		"ÎÒÒÑÍê³ÉÏûÃğ2¸öµ¶ÑıÈÎÎñ./#birthday0905_gettask_message(7)",
-		"ÎÒÒÑÍê³ÉÏûÃğ100¸öÉ½ÉñÃíµ¶ÊÖÈÎÎñ./#birthday0905_gettask_message(8)",
-		"ÎÒÏë·ÅÆúÏÖÔÚµÄÈÎÎñ/birthday0905_cancel_message",
-		"ÎÒÓĞ¼±ÊÂ£¬ÉÔºò»ØÀ´./no");
+	Say("DŞch quan: Tõ  19/06/2009 ®Õn 24:00 19/07/2009, th«ng qua nh÷ng nhiÖm vô sau ®©y cã thÓ thu ®­îc h¹ nhËt cung. §¹i hiÖp cã muèn tham gia?", 6, 
+		"NhËn nhiÖm vô Tiªu diÖt 2 §ao Yªu./#birthday0905_settask_message(7)",
+		"NhËn nhiÖm vô Tiªu diÖt 100 §ao thñ S¬n ThÇn MiÕu./#birthday0905_settask_message(8)",
+		"Ta ®· hoµn thµnh nhiÖm vô Tiªu diÖt 2 §ao Yªu./#birthday0905_gettask_message(7)",
+		"Ta ®· hoµn thµnh nhiÖm vô Tiªu diÖt 100 §ao thñ S¬n ThÇn MiÕu./#birthday0905_gettask_message(8)",
+		"Ta muèn hñy nhiÖm vô hiÖn t¹i/birthday0905_cancel_message",
+		"Ta cã chuyÖn gÊp, sÏ quay l¹i sau./no");
 end
 
 function no()

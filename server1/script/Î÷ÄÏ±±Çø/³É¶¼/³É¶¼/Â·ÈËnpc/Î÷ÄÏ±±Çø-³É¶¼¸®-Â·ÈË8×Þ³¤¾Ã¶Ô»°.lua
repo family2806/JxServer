@@ -6,7 +6,7 @@ Uworld1058 = nt_getTask(1058)
 	if ( Uworld1058 ~= 0 ) then
 		branch_zouchangjiu()
 	else
-Say("×Ş³¤¾Ã£ºÔç¾ÍÌıËµÕâ´¨ÃÃ×ÓÊÇÒ»¸öÈüÒ»¸öµÄÆ¯ÁÁ£¬½ñÈÕÒ»¼û£¬¹ûÈ»ÊÇÃÀµÃºÜÄÄ£¬Òª²»ÊÇÎÒÔçÈ¢ÁËÀÏÆÅ¡­¡­",0)
+Say("Tõ l©u ®· nghe danh Xuyªn Muéi Tö lµ c« n­¬ng võa ®Ñp l¹i võa cã tµi, h«m nay ®­îc diÖn kiÕn qu¶ lµ líi ®ån kh«ng sai. NÕu nh­ mµ ta ch­a cã n­¬ng tö th×...",0)
 	end
 end;
 

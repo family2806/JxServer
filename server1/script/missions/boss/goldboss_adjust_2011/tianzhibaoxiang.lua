@@ -14,7 +14,7 @@ function main()
 	local dwNpcId = GetNpcId(nNpcIdx)
 	
 	if check(nNpcIdx, PlayerIndex) ~= 1 then
-		Msg2Player("Äã²»ÄÜÁìÈ¡±ğÈËµÄÎïÆ·")
+		Msg2Player("Ng­¬i kh«ng thÓ lÊy vËt phÈm cña ng­êi kh¸c")
 		return
 	end
 	--¿ªÆô½ø¶ÈÌõ
@@ -43,12 +43,12 @@ function OnTimer(nNpcIndex)
 end
 
 function onbreak()
-	Msg2Player("ÊÕ¼¯ÖĞ¶Ï")
+	Msg2Player("Thu thËp ®øt ®o¹n")
 end
 
 function getbox(nNpcIndex, dwNpcId)
 --	print("nNpcIndex = " .. nNpcIndex)
-	local tbAward = { {szName="Boss±¦Ïä",tbProp={6,1,3021,1,0,0},} }
+	local tbAward = { {szName="B¶o R­¬ng Boss",tbProp={6,1,3021,1,0,0},} }
 --	print("²É¼¯³É¹¦")
 	if nNpcIndex <= 0 or GetNpcId(nNpcIndex) ~= dwNpcId then
 		return 0

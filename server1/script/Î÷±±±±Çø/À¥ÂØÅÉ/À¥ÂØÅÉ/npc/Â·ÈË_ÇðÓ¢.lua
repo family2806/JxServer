@@ -8,20 +8,20 @@ function main()
 	end
 Uworld121 = GetTask(121)
 	if (Uworld121 == 40 ) and (HaveItem(376) == 1 ) then
-		Talk(7,"Uworld121_qiuying","ÇëÎÊÊÇÇğÓ¢Âğ?","Ë­ÕâÃ´´óµ¨¸ÒÖ±ºôÀÏ×ÓÃû×Ö?","ÎÒ·îºÎ¹ÃÄïÖ®ÁîÀ´Õâ","ÄºÑ©£¿Äã¿ìÀ´ÕâÀï×ø£¬ºÈµã²è³ÔµãµãĞÄ. ","²»±ØÁË£¬ÕâÀïÓĞÒ»Îï½»¸øÄã","ÕâÕıÊÇÄºÑ©³£´øÔÚÉí±ßµÄÊÖ¾î£¡ÄêÇáÈË£¬¶àĞ»","ºÎ¹ÃÄïËµÄã¿´µ½Õâ¿éÊÖ¾î¾Í»áÃ÷°×ÁË")
+		Talk(7,"Uworld121_qiuying","Xin hái cã ph¶i lµ Kh©u Anh?","Ai d¸m gäi th¼ng ®¹i danh cña l·o?","T¹i h¹ phông lÖnh cña Hµ c« n­¬ng ®Õn ®©y","Mé TuyÕt? Ng­êi b¹n kia qua ®©y ngåi, uèng İt trµ dïng İt ®iÓm t©m. ","Kh«ng cÇn ®©u! ë ®©y cã 1 vËt giao cho ng­¬i","§©y chİnh lµ kh¨n lôa Mé TuyÕt lu«n mang bªn m×nh! Ng­êi b¹n bÌ,®a t¹!","Hµ c« n­¬ng nãi r»ng ng­¬i nh×n thÊy kh¨n lôa nµy tù nhiªn sÏ hiÓu râ!")
 	elseif (Uworld121 == 40 ) and (HaveItem(376) == 0 ) then
-		Talk(1,"","ÄãÃ»ºÍÎÒ¿ªÍæĞ¦°É£¬¶«Î÷ÄØ?")
+		Talk(1,"","Ng­¬i kh«ng ®ang ®ïa víi ta chø? VËt g×®©u?")
 	elseif (Uworld121 >= 50) then
-		Talk(1,"","ÄºÑ©ºÍÄãËµÁËÊ²Ã´Ã»ÓĞ£¿ÎÒ´ó¸ÅÊ²Ã´Ê±ºò¿ÉÒÔ¼ûµ½Ëı?")
+		Talk(1,"","Mé TuyÕt cã nãi qua víi ng­¬i nh÷ng g× kh«ng? §¹i lo¹i nh­ bao giê th× ta cã thÓ gÆp nµng… ")
 	else
-		Talk(1,"","Ã»Ê²Ã´ÊÂ¾Í²»Òª´òÈÅÎÒÁË!")
+		Talk(1,"","Kh«ng cã viÖc g× th× ®øng cã ®Õn quÊy rÇy ta!")
 	end
 end
 
 function Uworld121_qiuying()
-	Talk(3,"","ºß...! ÑîºşÄÇ¸öÀÏ¼Ò»ïÅäÈÃÄºÑ©ÕâÑù°ïËûÂğ. µ«ÊÇÄºÑ©Ò²¸øÎÒ´øÁËÊÖ¾îÒªÎÒ°ïËû£¬ÄÇÒ»¶¨ÊÇÓĞÔ­ÒòµÄ!","ºÃÁË£¬ÄêÇáÈËÄãÌı×Å£¬ÎÒ½«°ÑÕâ´ÎÀ¥ÂØµÄ¼Æ»®¸æËßÄã","ÖªµÀÁË£¬¸æ´Ç")
+	Talk(3,"","Hmm...! C¸i l·o giµ D­¬ng Hå mµ xøng ®¸ng ®­îc Mé TuyÕt gióp ®ì nh­ thÕ sao. Nh­ng mµ Mé TuyÕt còng ®· ®­a kh¨n lôa cho ta, l¹i nhê ta gióp h¾n, tÊt nhiªn sÏ ph¶i cã nguyªn nh©n!","Th«i ®­îc ng­êi b¹n bÌ h·y nghe ®©y, ta sÏ nãi cho ng­¬i nghe kÕ ho¹ch lÇn nµy cña C«n L«n","Ta ®· hiÓu! C¸o tõ ")
 	DelItem(376)
-	Msg2Player("ÖªµÀÀ¥ÂØµÄ¼Æ»®»ØÈ¥±¨¸æ¸øÑîºş")
-	AddNote("ÖªµÀÀ¥ÂØµÄ¼Æ»®»ØÈ¥±¨¸æ¸øÑîºş")
+	Msg2Player("BiÕt ®­îc kÕ ho¹ch cña C«n L«n, quay vÒ b¸o c¸o D­¬ng Hå ")
+	AddNote("BiÕt ®­îc kÕ ho¹ch cña C«n L«n, quay vÒ b¸o c¸o D­¬ng Hå ")
 	SetTask(121,50) --ÉèÖÃÈÎÎñ±äÁ¿Îª50
 end

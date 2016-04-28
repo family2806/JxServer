@@ -2,9 +2,9 @@
 Include("\\script\\activitysys\\config\\1005\\check_func.lua")
 BOX_SIHAIXIAOYAO = {
 	ID = {6, 1, 2398, 1},
-	Name = "ËÄº£åÐÒ£µ¤ÀñºÐ",
+	Name = "Tø H¶i Tiªu Diªu §¬n LÔ Hép",
 	Pill = {
-		Name = "ËÄº£åÐÒ£µ¤",
+		Name = "Tø H¶i Tiªu Diªu §¬n",
 		ID = {6, 1, 2378, 1},
 		Count = 10,
 		},
@@ -12,9 +12,9 @@ BOX_SIHAIXIAOYAO = {
 
 BOX_WUZHOULINGKONG = {
 	ID = {6, 1, 2399, 1},
-	Name = "ÎåÖÞÁè¿Õµ¤ÀñºÐ",
+	Name = "Ngò Ch©u L¨ng Kh«ng §¬n LÔ Hép",
 	Pill = {
-		Name = "ÎåÖÞÁè¿Õµ¤",
+		Name = "Ngò Ch©u L¨ng Kh«ng §¬n",
 		ID = {6, 1, 2397, 1},
 		Count = 10,
 		},
@@ -22,9 +22,9 @@ BOX_WUZHOULINGKONG = {
 
 BOX_JIUTIANYUNYOU = {
 	ID = {6, 1, 2400, 1},
-	Name = "¾ÅÌìÔÆÓÎµ¤ÀñºÐ",
+	Name = "Cöu Thiªn V©n Du §¬n LÔ Hép",
 	Pill = {
-		Name = "¾ÅÌìÔÆÓÎµ¤",
+		Name = "Cöu Thiªn V©n Du §¬n",
 		ID = {6, 1, 2379, 1},
 		Count = 10,
 		},
@@ -36,7 +36,7 @@ function use(box)
 	end
 	local pill = box.Pill
 	if (CalcFreeItemCellCount() < 10) then
-		Say(format("×îÉÙÐèÒª10¸ö¿ÕÎ»À´´¢´æ<color=red>%s<color>.", pill.Name))
+		Say(format("CÇn Ýt nhÊt 10 « trèng ®Ó chøa <color=red>%s<color>.", pill.Name))
 		return 1
 	end
 	--·çÔÆÁîÅÆ-ÐÂÊÖÊ¹ÓÃ³öÎïÆ·Ëø- Modified By DinhHQ - 20110926
@@ -51,6 +51,6 @@ function use(box)
 		end
 	end
 	
-	Msg2Player(format("Äú»ñµÃ%d %s", pill.Count, pill.Name))
+	Msg2Player(format("B¹n nhËn ®­îc %d %s", pill.Count, pill.Name))
 	return 0
 end

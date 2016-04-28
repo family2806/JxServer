@@ -8,22 +8,22 @@ function main()
 	UTask_tm = GetTask(2)
 	if (UTask_tm == 60*256+60) then
 		if (HaveItem(49) == 0) then 
-			Say("Ò»ÍòÁ½Òø×Ó¡£", 2, "Òª/accept", "²»Òª/refuse")
+			Say("1 v¹n l­îng.", 2, "CÇn /accept", "Kh«ng cÇn /refuse")
 		else
-			Talk(1,"","ÄãÒÑ´ò¿ªÁËÁíÒ»¸ö±¦Ïä£¬²»ÄÜÔÙ¿ªÆô´Ë±¦Ïä!")
+			Talk(1,"","B¹n ®· më 1 r­¬ng kh¸c nªn kh«ng thÓ më l¹i r­¬ng nµy!")
 		end
 	elseif (UTask_tm == 60*256+70) then
-		Talk(1,"","±¦ÏäÒÑ¿Õ")
+		Talk(1,"","B¶o r­¬ng ®· rçng")
 	else
-		Talk(1,"","Äã´ò¿ª±¦Ïä£¬µ«ÊÇ£¬ËüºÃÏñÒÑ¾­ÉúĞâÁË!")
+		Talk(1,"","B¹n thö më r­¬ng b¸u, nh­ng h×nh nh­ nã ®· bŞ rØ sĞt!")
 	end
 end;
 
 function accept()
 	Earn(10000)
 	SetTask(2, 60*256+70)
-	AddNote("ÔÚÖñË¿¶´µÚÈı²ãµÄ±¦ÏäÀï»ñµÃÒ»ÍòÁ½Òø×Ó. ")
-	Msg2Player("»ñµÃÒ»ÍòÁ½Òø×Ó ")
+	AddNote("LÊy ®­îc mét v¹n l­îng trong r­¬ng b¸u t¹i tÇng thø 3 cña Tróc T¬ §éng. ")
+	Msg2Player("NhËn ®­îc mét v¹n l­îng b¹c ")
 end;
 
 function refuse()

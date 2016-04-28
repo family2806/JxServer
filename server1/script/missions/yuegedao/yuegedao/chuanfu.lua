@@ -9,8 +9,8 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>你想离开月歌岛吗?"
-	tbDailog:AddOptEntry("确认", leave_sure)
+	tbDailog.szTitleMsg = "<#><npc>Ngi mu鑞 r阨 kh醝 Nguy謙 Ca Фo kh玭g?"
+	tbDailog:AddOptEntry("X竎 nh薾", leave_sure)
 	tbDailog:Show() 
 end
 

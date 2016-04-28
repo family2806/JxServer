@@ -5,7 +5,7 @@ Include("\\script\\misc\\eventsys\\type\\npc.lua")
 
 --local nExchangeTaskId = 2906
 --local nExchangeTaskId_Date = 2907
-local tbXunJinYuPai = {szName = "Ðþ½ðÓñÅÆ", tbProp = {6, 1, 3035, 1, 0, 0},}
+local tbXunJinYuPai = {szName = "HuyÒn Kim Ngäc Bµi", tbProp = {6, 1, 3035, 1, 0, 0},}
 local POINT2EXP_RATE = 3000
 
 tbTripBattlePoint2Exp = {}
@@ -13,12 +13,12 @@ tbTripBattlePoint2Exp = {}
 
 
 function tbTripBattlePoint2Exp:DialogMain()
-	local szTitle = format("Á¬½Óserver¹±Ï×ºÍ¾­Ñé¶Ò»»µÄ±ÈÀýÊÇ:%d", %POINT2EXP_RATE)
+	local szTitle = format("TØ lÖ quy ®æi ®iÓm cèng hiÕn liªn server vµ kinh nghiÖm lµ 1:%d", %POINT2EXP_RATE)
 	local tbOpt =
 	{
-		{"¼ì²éÁ¬½Óserver¹±Ï×", self.QueryPoint,{self}},
-		{"¶Ò»»¾­Ñé", self.ToExp,{self}},
-		{"½áÊø¶Ô»°"},
+		{"KiÓm tra ®iÓm cèng hiÕn liªn server", self.QueryPoint,{self}},
+		{"§æi kinh nghiÖm", self.ToExp,{self}},
+		{"KÕt thóc ®èi tho¹i"},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -27,11 +27,11 @@ end
 function tbTripBattlePoint2Exp:QueryPoint()
 	local nTaskValue = GetTask(%TSK_TRIP_BATTLE_POINT)
 	local szName = GetName()
-	local szTitle = format("<npc><color=yellow>%s<color>Á¬½Óserver¹±Ï×ÊÇ<color=yellow>%d<color>", szName, nTaskValue)
+	local szTitle = format("<npc><color=yellow>%s<color>§iÓm cèng hiÕn liªn server cña ng­¬i lµ <color=yellow>%d<color>", szName, nTaskValue)
 	local tbOpt =
 	{
-		{"·µ»Ø", self.DialogMain, {self}},
-		{"ÖªµÀÁË!"},
+		{"Trë vÒ", self.DialogMain, {self}},
+		{"Ta biÕt råi!"},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -40,10 +40,10 @@ function tbTripBattlePoint2Exp:ToExp()
 	
 	local nMaxValue = GetTask(%TSK_TRIP_BATTLE_POINT)
 	if nMaxValue <= 0 then
-		return Talk(1, "", "±§Ç¸ÄãµÄÁ¬½Óserver¹±Ï×ÒÑ¾­¶Ò»»ÍêÁË")
+		return Talk(1, "", "Xin l­îng thø ®iÓm cèng hiÕn liªn server cña ng­¬i ®· ®­îc ®æi hÕt råi")
 	end
 	
-	g_AskClientNumberEx(0, nMaxValue, format("»¹Ê£ %d¿ÉÒÔ¶Ò»»", nMaxValue), {self.GetExp, {self}})
+	g_AskClientNumberEx(0, nMaxValue, format("Cßn d­ l¹i %d cã thÓ ®æi", nMaxValue), {self.GetExp, {self}})
 end
 
 function tbTripBattlePoint2Exp:GetExp(nValue)

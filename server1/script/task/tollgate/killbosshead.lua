@@ -3414,8 +3414,8 @@ function add_messengernpc(Tab4)
 end;
 
 ------------------------------------------------------- DescribÍ¼Æ¬ÃèÊö-----------------------------------------------------------
-DescLink_YiGuan = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>æä¹Ù<link>"
-DescLink_BaiYi = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>·çÆïÏò°×¼½<link>"
-DescLink_NaLanQingCheng = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>ÉñÃíÖ÷³ÖÄÉÀ¼Çã³Ç<link>"
-DescLink_XiaoZhen = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>ÓùÇ°´øµ¶»¤ÎÀÏôÕò.<link>"
-DescLink_BeiKunShaoNv = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>ÉÙÅ®±»×¥<link>"
+DescLink_YiGuan = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>DŞch quan<link>"
+DescLink_BaiYi = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>Phong Kş T­íng B¹ch Dùc<link>"
+DescLink_NaLanQingCheng = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>ThÇn MiÕu Chñ tr× N¹p Lan Thanh Thµnh<link>"
+DescLink_XiaoZhen = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>Ngù TiÒn §¸i §ao Hé VÖ Tiªu TrÊn.<link>"
+DescLink_BeiKunShaoNv = "<#><link=image[0,13]:\\spr\\npcres\\passerby\\passerby181\\passerby181_pst.spr>ThiÕu n÷ bŞ nhèt<link>"

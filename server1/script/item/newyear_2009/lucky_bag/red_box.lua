@@ -3,20 +3,20 @@ Include("\\script\\item\\newyear_2009\\head.lua");
 
 tb_redbox_item	=
 {
-	[1]	= {szName="Â»",	tbProp={6, 1, 1913, 1, 0, 0},	nRate = 100, nExpiredTime = newyear0901_item_expiredtime},
+	[1]	= {szName="Léc",	tbProp={6, 1, 1913, 1, 0, 0},	nRate = 100, nExpiredTime = newyear0901_item_expiredtime},
 };
 
 function main()
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= newyear0901_item_expiredtime) then
-		Msg2Player("¸ÃÎïÆ·ÒÑ¹ıÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	if (CalcFreeItemCellCount() < 6) then
-		Msg2Player("´óÏÀµÄ×°±¸²»×ã¿ÕÎ»!");
+		Msg2Player("Hµnh trang cña ®¹i hiÖp kh«ng ®ñ chç trèng!");
 		return 1;
 	end
-	tbAwardTemplet:GiveAwardByList(tb_redbox_item, "ºì±¦Ïä");
+	tbAwardTemplet:GiveAwardByList(tb_redbox_item, "Hång B¶o R­¬ng");
 end
 
 function IsPickable( nItemIndex, nPlayerIndex )

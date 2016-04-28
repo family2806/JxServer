@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(1,"","Ğ¡¶ş£¬À´Ò»Íë·Û£¬¼ÓÀ±! ")
+	Talk(1,"","TiÓu nhŞ! Cho mét t« bón, ph¶i cay nha! ")
 end;

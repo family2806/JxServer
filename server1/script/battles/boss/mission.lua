@@ -26,8 +26,8 @@ function InitMission()
 	BT_SetView(PL_GETITEM);
 	BT_SetView(PL_MAXSERIESKILL);--Á¬Õ¶´ÎÊı
 	
-	BT_SetGameData(GAME_CAMP1, 0) --ÉèÖÃµ±Ç°ËÎ·½ÈËÊı
-	BT_SetGameData(GAME_CAMP2, 0) --ÉèÖÃµ±Ç°½ğ·½ÈËÊı
+	BT_SetGameData(GAME_CAMP1, 0) --ÉèÖÃµ±Ç°Phe TèngÈËÊı
+	BT_SetGameData(GAME_CAMP2, 0) --ÉèÖÃµ±Ç°Phe KimÈËÊı
 
 	subworldid = SubWorldIdx2ID(SubWorld)
 	ClearMapNpc(subworldid);	
@@ -111,22 +111,22 @@ function InitMission()
 	--¾üÒ½µÄ°Ú·Å
 	doctorxy = GetIniFileData(mapfile, "Area_"..s_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "¾üĞè¹Ù(ËÎ)");
+	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "Qu©n Nhu quan (Tèng)");
 
 
 	doctorxy = GetIniFileData(mapfile, "Area_"..j_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "½ğ¹ú¾üĞè¹Ù");
+	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "Kim Quèc Qu©n nhu quan");
 	
 	--´«ËÍÔ±µÄ°Ú·Å
 	transportxy = GetIniFileData(mapfile, "Area_"..s_area, "transportxy");
 	x,y = bt_str2xydata(transportxy)
-	bt_add_a_diagnpc(FILE_TRANSPORT1, TNPC_TRANSPORT1, x * 32 ,y * 32 , "Õì²éËÎ¾üÇ°Ïß");
+	bt_add_a_diagnpc(FILE_TRANSPORT1, TNPC_TRANSPORT1, x * 32 ,y * 32 , "Trinh s¸t tiÒn tuyÕn Tèng qu©n");
 
 
 	transportxy = GetIniFileData(mapfile, "Area_"..j_area, "transportxy");
 	x,y = bt_str2xydata(transportxy)
-	bt_add_a_diagnpc(FILE_TRANSPORT2, TNPC_TRANSPORT2, x * 32, y * 32, "Õì²é½ğ¾üÇ°Ïß©n");
+	bt_add_a_diagnpc(FILE_TRANSPORT2, TNPC_TRANSPORT2, x * 32, y * 32, "Trinh s¸t tiÒn tuyÕn Kim qu©n");
 	
 	--Ë§ÆìµÄ°Ú·Å
 	symbolnpcfile = GetIniFileData(mapfile, "Area_"..s_area, "symbolnpc");
@@ -148,27 +148,27 @@ function InitMission()
 	
 	
 	StartMissionTimer(MISSIONID, 110, TIMER_2);
-	--Ëæ»úÄ£Ê½ĞèÒª´ò¿ªÃ¿X·ÖÖÓ´¥·¢Ò»´ÎµÄ´¥·¢Æ÷£¬ÒÔ²úÉúĞÂÆì
+	--Ëæ»úÄ£Ê½ĞèÒª´ò¿ªÃ¿Xphót´¥·¢Ò»´ÎµÄ´¥·¢Æ÷£¬ÒÔ²úÉúĞÂÆì
 	StartMissionTimer(MISSIONID, 109, TIMER_1);
 	
 	SetMissionV(MS_STATE, 1);--ÔÊĞí±¨ÃûÁË
 	
 	if (level == 1) then
-		lvlstr = "³õ¼¶ÇøÓò"
+		lvlstr = "Khu vùc S¬ cÊp "
 	elseif (level == 2) then
-		lvlstr = "ÖĞ¼¶ÇøÓò"
+		lvlstr = "Khu vùc Trung cÊp "
 	else
-		lvlstr = "¸ß¼¶ÇøÓò "
+		lvlstr = "Khu vùc Cao cÊp "
 	end
 	
 	RestMin, RestSec = GetMinAndSec(1800);
-	local str1 = lvlstr.."ËÎ½ğÕ½ÒÛÇéĞÎÏûÃğBOSSµÄĞÎÊ½ºÜ½ôÕÅ. ÏÖÔÚÕı´¦ÔÚ±¨Ãû½×¶Î£¬ÇëÎäÁÖÈËÊ¿¿ìµãµ½ÏåÑô»òÕßÖïÏÉÕò½øÈë»òÕßÊ¹ÓÃËÎ½ğÚ¯Êé½øÈë±¨Ãû´¦£¬±¨ÃûÊ±¼ä»¹ÓĞ:"..RestMin.."·ÖÖÓ"..RestSec.." Ãë.§i²Î¼ÓÌõ¼ş£ºµÇ¼Ç²»µÍÓÚ40¼¶,±¨Ãû·Ñ 100000 Á½";
+	local str1 = lvlstr.."T×nh h×nh chiÕn dŞch Tèng Kim h×nh thøc tiªu diÖt BOSS ®ang rÊt c¨ng th¼ng. HiÖn t¹i ®ang ë giai ®o¹n b¸o danh, xin mêi vâ l©m nh©n sü hay nhanh ch©n ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn TrÊn ®Ó tiÕn vµo hoÆc sö dông Tèng Kim chiªu th­ ®Ó tiÕn vµo n¬i b¸o danh, thêi gian b¸o danh cßn:"..RestMin.."phót"..RestSec.." gi©y. §iÒu kiÖn tham gia: CÊp kh«ng İt h¬n 40, phİ b¸o danh 100000 l­îng";
 	AddGlobalNews(str1);
-	CreateChannel("ËÎ·½"..szGAME_GAMELEVEL[level].."Õù¶áBOSS", 9)
-	CreateChannel("½ğ·½"..szGAME_GAMELEVEL[level].."Õù¶áBOSS", 10)
+	CreateChannel("Phe Tèng"..szGAME_GAMELEVEL[level].."Tranh ®o¹t BOSS", 9)
+	CreateChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Tranh ®o¹t BOSS", 10)
 
-	BT_SetMissionName("BOSSĞÎÊ½")
-	BT_SetMissionDesc("±³¾°: ¹«Ôª 1160, ½ğÖ÷ÍêÑÕÁÁ¾ö¶¨ÊµÊ©ÏûÃğ´óËÉµÄÆóÍ¼£¬¶øºó¶àÄêÕĞ±øÂòÂí.½ğ¹ú´ó¾üÆµÆµ½ø¹¥ÄÏ·½£¬Ä¿µÄÕıÊÇÏû³ıÏåÑôµÄÖØµã¡£ËÎ³¯ÔÚÏåÑô°Ú³öÁË·Ç³£ÑÏÃÜµÄÕóµØ·ÀÊØ.<enter><enter><color=yellow>BOSSĞÎÊ½£ºÕ½¾Ö½øĞĞÊ±£¬Ë«·½½«³öÏÖ´óĞ¡½«¾ü£¬É±µĞ·½½«¾üºÍÈ·±£±¾·½µÄÊ¤Àû£¬Èç¹û¸÷·½µÄ´óBOSS¶¼ËÀÍö£¬Ôò°´ÕÕÉ±ËÀĞ¡BOSSµÄÊıÁ¿ËãÊ¤Àû.<enter>Ä¿µÄ: ±£ÎÀ±¾·½µÄ½«¾ü¼°É±º¦µĞ·½½«¾ü.")
+	BT_SetMissionName("H×nh thøc BOSS")
+	BT_SetMissionDesc("Bèi c¶nh: C«ng nguyªn n¨m 1160, Kim chñ Hoµn Nhan L­îng quyÕt ®Şnh thùc hiªn m­u ®å tiªu diÖt tËn gèc ®¹i Tèng sau bao n¨m ra søc chiªu binh m·i m·. §¹i qu©n Kim quèc dån dËp tÊn c«ng vÒ phİa nam môc ®İch chİnh lµ xãa sæ träng ®iÓm T­¬ng D­¬ng. Nhµ Tèng ®· bµy ra mét trËn ®Şa phßng thñ hÕt søc nghiªm ngÆt ë T­¬ng D­¬ng.<enter><enter><color=yellow>H×nh thøc BOSS: lóc chiÕn côc tiÕn hµnh hai bªn sÏ xuÊt hiÖn c¸c t­íng qu©n lín nhá, giÕt t­íng qu©n phe ®Şch vµ b¶o ®¶m sù th¾ng lîi cho bªn m×nh, nÕu nh­ Boss ®¹i cña mçi bªn ®Òu chÕt th× sÏ tİnh theo bªn nµo giÕt sè boss nhá ®­îc th¾ng.<enter>Môc ®İch: B¶o vÖ t­íng qu©n bªn m×nh vµ giÕt t­íng qu©n phe ®Şch.")
 
 end
 
@@ -184,7 +184,7 @@ function RunMission()
  		if (pidx > 0) then
  			PlayerIndex = pidx;
  			BT_SetData( PL_LASTDEATHTIME, GetGameTime() )
- 			PutMessage("µĞ¾üÒÑ¿ªÊ¼ĞĞ¶¯£¡¸÷Î»Õ½Ê¿£¡³å°¡!")
+ 			PutMessage("§Şch qu©n ®· b¾t ®Çu hµnh ®éng! C¸c chiÕn sÜ! X«ng lªn!")
 		end
 		if (idx <= 0) then 
 			break
@@ -202,8 +202,8 @@ function EndMission()
 	
 	GameOver()
 	level = BT_GetGameData(GAME_LEVEL);
-	DeleteChannel("ËÎ·½"..szGAME_GAMELEVEL[level].."Õù¶á BOSS")
-	DeleteChannel("½ğ·½"..szGAME_GAMELEVEL[level].."Õù¶áBOSS")
+	DeleteChannel("Phe Tèng"..szGAME_GAMELEVEL[level].."Tranh ®o¹t BOSS")
+	DeleteChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Tranh ®o¹t BOSS")
 
 
 	SetGlbValue(GLB_BATTLESTATE, 0) --ÉèÖÃ¸ÃÈ«¾Ö±äÁ¿Îª1£¬±êÖ¾µ±Ç°·şÎñÆ÷Õı´¦ÓÚËÎ½ğÕ½ÒÛ½×¶Î£¬´ËÊ±ÏåÑô»òÖìÏÉÕòµÄ³ö¿Úµã×Ô¶¯ÉèÔÚËÎ½ğÕ½ÒÛµÄ±¨Ãûµã£¬·ñÔòÔòÉèÔÚÔ­ËÎ½ğÕ½³¡µØÍ¼

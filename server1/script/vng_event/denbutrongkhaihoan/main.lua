@@ -15,12 +15,12 @@ function tbVngDenBuTKH:AddDialog(tbDialog)
 	if self:IsActive() ~= 1 or tbVNG_BitTask_Lib:getBitTask(self.tbBitTask) == 1 then		
 		return
 	end
-	tinsert(tbDialog,  "ÁìÈ¡¿­Ğı¹Ä²¹³¥½±Àø/#tbVngDenBuTKH:MainDialog()")  	
+	tinsert(tbDialog,  "NhËn phÇn th­ëng ®Òn bï Trèng Kh¶i Hoµn/#tbVngDenBuTKH:MainDialog()")  	
 end
 
 function tbVngDenBuTKH:MainDialog()
-	local strTittle = "¿­Ğı¹Ä²¹³¥½±ÀøÒªÇó:\n\t<color=red>- 150¼¶ÒÔÉÏÈËÎï»òÕßÒÑÖØÉúÈÎÎñÃ»ÓĞµÈ¼¶ÏŞÖÆ\n\t- ÒÑ¼ÓÈë°ï»á.<color>"
-	Describe(strTittle, 2, "ÎÒÏëÁìÈ¡/#tbVngDenBuTKH:GetAward()", "¹Ø±Õ/OnCancel")	
+	local strTittle = "PhÇn th­ëng §Òn bï Trèng Kh¶i Hoµn yªu cÇu:\n\t<color=red>- Nh©n vËt ®¼ng cÊp trªn 150 hoÆc nh©n vËt ®· trïng sinh kh«ng giíi h¹n ®¼ng cÊp\n\t- §· gia nhËp bang héi.<color>"
+	Describe(strTittle, 2, "Ta muèn nhËn/#tbVngDenBuTKH:GetAward()", "§ãng/OnCancel")	
 end
 
 function tbVngDenBuTKH:IsActive()
@@ -33,19 +33,19 @@ end
 
 function tbVngDenBuTKH:GetAward()
 	if self:IsActive() ~= 1 then
-		Talk(1,"","ÒÑ¹ıÁì½±Ê±¼ä.")
+		Talk(1,"","§· qua thêi gian nhËn th­ëng.")
 		return
 	end
 	local szTongName, nTongID = GetTongName();	
 	if szTongName == nil or szTongName == "" then
-		Talk(1, "", "¸óÏÂÎ´¼ÓÈë°ï»á£¬²»ÄÜÁì½±!")
+		Talk(1, "", "C¸c h¹ ch­a gia nhËp bang héi kh«ng thÓ nhËn phÇn th­ëng nµy!")
 		return
 	end
 	if tbVNG_BitTask_Lib:getBitTask(self.tbBitTask) == 1 then
-		Talk(1, "", "¸óÏÂÒÑÁì½±ÁË")
+		Talk(1, "", "C¸c h¹ ®· nhËn phÇn th­ëng nµy råi")
 		return
 	end
 	tbVNG_BitTask_Lib:setBitTask(self.tbBitTask, 1)
-	local tbAward = {szName = "§i¾­ÑéÖµ", nExp = 240e6}
-	tbAwardTemplet:Give(tbAward, 1, {"Noel_2011","ÁìÈ¡¿­Ğı¹Ä²¹³¥½±Àø"});
+	local tbAward = {szName = "§iÓm kinh nghiÖm", nExp = 240e6}
+	tbAwardTemplet:Give(tbAward, 1, {"Noel_2011","NhanDenbuTrongKhaiHoan"});
 end

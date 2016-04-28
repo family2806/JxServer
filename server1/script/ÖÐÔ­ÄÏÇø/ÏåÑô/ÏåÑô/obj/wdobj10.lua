@@ -7,8 +7,8 @@ function main()
 
 SetPropState();
 AddEventItem(118);
-Msg2Player("ÄÃµ½ÁÁÒø¿ó. ");
-AddNote("ÔÚÏåÑô³ÇÍâÕÒµ½ÁÁÒø¿ó. ")
+Msg2Player("LÊy ®­îc Ng©n L­îng kho¸ng. ");
+AddNote("T×m thÊy Ng©n L­îng kho¸ng ë phİa t©y nam ngoµi thµnh T­¬ng D­¬ng. ")
 end;
 	   	
 

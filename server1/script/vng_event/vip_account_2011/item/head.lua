@@ -21,21 +21,21 @@ function tbVNG_VIPAcc_ItemHead:isExpired(nItemIdx)
 end
 function tbVNG_VIPAcc_ItemHead:useItem(strItemType)
 	if tbVNG_BitTask_Lib:getBitTask(self.tbTaskInfo) == 1 then
-		return 0, "Ã¿ÈËÃ¿ÖÜÖ»ÄÜÊ¹ÓÃÒ»´Î¸ÃÎïÆ·."
+		return 0, "Mçi nh©n vËt chØ ®­îc sö dông vËt phÈm nµy mçi tuÇn mét lÇn."
 	end
 	tbVNG_BitTask_Lib:setBitTask(self.tbTaskInfo, 1)
 	local tbAward = {}
 	local strItemName = ""
-	if(strItemType == "Ğ¡") then
+	if(strItemType == "tieu") then
 		tbAward = {nExp=200000000}
-		strItemName = "ÁìĞ¡Àñ°ü"
-	elseif (strItemType == "ÖĞ") then
+		strItemName = "Nh­ ı lÔ bao tiÓu"
+	elseif (strItemType == "trung") then
 		tbAward = {nExp=300000000}
-		strItemName = "ÁìÖĞÀñ°ü"
-	elseif (strItemType == "´ó") then
+		strItemName = "Nh­ ı lÔ bao trung"
+	elseif (strItemType == "dai") then
 		tbAward = {nExp=400000000}
-		strItemName = "Áì´óÀñ°ü"
+		strItemName = "Nh­ ı lÔ bao ®¹i"
 	end
-	tbAwardTemplet:GiveAwardByList(tbAward, format("[VNG][VipAcc2011][Ê¹ÓÃÎïÆ·¾­Ñé½±Àø%s]", strItemName))	
+	tbAwardTemplet:GiveAwardByList(tbAward, format("[VNG][VipAcc2011][PhÇn th­ëng kinh nghiÖm sö dông vËt phÈm %s]", strItemName))	
 	return 1
 end

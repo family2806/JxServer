@@ -40,7 +40,7 @@ function disciple_aword(nTongID, nWorkshopID)
 	--»ñµÃ»î¶¯·»µÈ¼¶
 	local nLevel = TWS_GetLevel(nTongID, nWorkshopID);
 	if (nLevel < 1 or nLevel > 10) then
-		Say("ÄãµÄ°ï»áÎ´½¨Á¢¸Ã×÷·».", 1, "ÎÒÖªµÀÁË!/oncancel")
+		Say("Bang héi cña b¹n ch­a x©y dùng T¸c Ph­êng nµy.", 1, "Ta biÕt råi!/oncancel")
 		return 0;
 	end;
 	
@@ -49,18 +49,18 @@ function disciple_aword(nTongID, nWorkshopID)
 	SetTask(DIS_COUNT_ONETIME, 0);
 	SetTask(DIS_TK_RANK, 0);
 	if (nCount == 0 or nRank == 0) then
-		Say("»î¶¯·»×Ü¹Ü£º ÄãºÃÏñÃ»´øÈÎºÎÕĞÄ¼µÜ×Óµ½Õâ.", 1, "°´ÕÕ»ÓÊÖ¹æ¶¨·É³ö./oncancel");
+		Say("Tæng qu¶n Ho¹t ®éng ph­êng: Ng­¬i d­êng nh­ kh«ng ®­a ®Ö tö chiªu mé nµo ®Õn ®©y.", 1, "Theo có phÊt tay bay ra/oncancel");
 		SetTaskTemp(193, 0);
 		return
 	end;
-	local strSay = format("ÕæÊÇÌ«ºÃÁË£¬ÄãÒÑÕĞÄ¼µ½ËùÓĞ%d <color=yellow> µÜ×Ó <color>, ÅÅÃûµÚ", nCount, nRank);
+	local strSay = format("ThËt hay qu¸, ng­¬i ®· chiªu mé ®­îc tÊt c¶ %d <color=yellow>®Ö tö<color>, xÕp h¹ng thø ", nCount, nRank);
 	local isDouble = dis_double(nLevel);--¿´¿´ÊÇ·ñ»ñµÃË«±¶
 	if (1 == isDouble) then
-		strSay = strSay.."ÕæÊÇĞÒÔË£¬ÄãÒÑ»ñµÃ<color=red>Ë«±¶½±Àø<color>, ";
+		strSay = strSay.."ThËt may m¾n, ng­¬i ®· nhËn ®­îc <color=red>phÇn th­ëng nh©n ®«i<color>, ";
 		giveaward(nRank);
 	end;
 	
-	Describe(strSay.."ÕâÊÇ¸øÄãµÄ½±Àø.", 1, "ÁìÈ¡ÀñÎï./oncancel");
+	Describe(strSay.."§©y lµ phÇn th­ëng dµnh cho ng­¬i.", 1, "NhËn lÊy lÔ vËt./oncancel");
 	giveaward(nRank);
 	SetTaskTemp(193, 0);
 end;
@@ -98,19 +98,19 @@ function goodsaward(nRank)
 	local nGoodsType = getgoodtype(nRank);
 	if (nGoodsType == 1) then
 		AddItem(6, 1, 1008, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÒ»»Æ½ğÖÖ×Ó"
+		local strsay = "B¹n nhËn ®­îc mét h¹t Hoµng Kim"
 		Msg2Player(strsay);
 	elseif (nGoodsType == 2) then
 		AddItem(6, 1, 1007, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÒ»¿ÅË®¾§ÖÖ×Ó"
+		local strsay = "B¹n nhËn ®­îc mét h¹t Thñy Tinh"
 		Msg2Player(strsay);
 	elseif (nGoodsType == 3) then
 		AddItem(6, 1, 1006, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÒ»¿ÅÃµ¹åÖÖ×Ó"
+		local strsay = "B¹n nhËn ®­îc mét h¹t Hoa hång"
 		Msg2Player(strsay);
 	elseif (nGoodsType == 4) then
 		AddItem(6, 1, 1005, 1, 0, 0, 0);
-		local strsay = "Äã»ñµÃÒ»¿ÅĞÒÔËÖÖ×Ó"
+		local strsay = "B¹n nhËn ®­îc mét h¹t May m¾n"
 		Msg2Player(strsay);
 	end;
 end;

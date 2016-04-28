@@ -162,13 +162,13 @@ map_series = {
 
 -- ºòÑ¡NPCµÄÃû×Ö
 map_npcname_candidates = {
-	"ºòÆò½£",
-	"µóÒ×µ¶",
-	"ÇÇ¶¦Ìì",
-	"ÈÎ²Ôñ·",
-	"²½Ïù³¾",
-	"ÎìĞçÈÖ",
-	"Ïî¸¡ÑÂ"
+	"HËu  KhÊt KiÕm",
+	"§iªu DŞch §ao",
+	"KiÒu §Ønh Thiªn",
+	"NhËm Th­¬ng Khung",
+	"Bé Hiªu TrÇn",
+	"MËu TuÊt Nhung",
+	"H¹ng Phï Nhai"
 };
 
 -- ¹ã²¥
@@ -489,7 +489,7 @@ function award_item(item, player_index)
 	elseif (getn(item) == 7) then
 		AddItem(item[2], item[3], item[4], item[5], item[6], item[7]);
 	end
-	Msg2Player("<#>ÄãµÃµ½" .. name .. "!");
+	Msg2Player("<#>B¹n ®¹t ®­îc" .. name .. "!");
 	
 	PlayerIndex = old_index;
 end

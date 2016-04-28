@@ -29,30 +29,30 @@ local tbChefu = {
 
 -- 24¸öÏà¹ØµÄnpc
 local tbShibeiNpc = {
-	{nNpcId = 1623, szName = "´óÁ¦½ğ¸ÕÕÆ±®", tbNpcParam = {1055},},
-	{nNpcId = 1623, szName = "Î¤ÍÓÏ×èÆ±®", tbNpcParam = {1056},},
-	{nNpcId = 1623, szName = "Èş½ä¹éìø±®", tbNpcParam = {1057},},
-	{nNpcId = 1623, szName = "×İºá°Ë·½±®", tbNpcParam = {1059},},
-	{nNpcId = 1623, szName = "°ÔÍõöÉ½ğ±®", tbNpcParam = {1060},},
-	{nNpcId = 1623, szName = "ºÀĞÛÕ¶±®", tbNpcParam = {1058},},
-	{nNpcId = 1623, szName = "ĞÎÏú¹ÇÁ¢±®", tbNpcParam = {1066},},
-	{nNpcId = 1623, szName = "ÓÄ»êÊÉÓ°±®", tbNpcParam = {1067},},
-	{nNpcId = 1623, szName = "ÎŞÓ°´©±®", tbNpcParam = {1069},},
-	{nNpcId = 1623, szName = "ÌúÁ«ËÄÉ±±®", tbNpcParam = {1070},},	-- 10
-	{nNpcId = 1623, szName = "Ç¬À¤Ò»ÖÀ±®", tbNpcParam = {1071},},
-	{nNpcId = 1623, szName = "½£»¨Íì¾§±®", tbNpcParam = {1061},},
-	{nNpcId = 1623, szName = "±ùÓêçó¾§±®", tbNpcParam = {1062},},
-	{nNpcId = 1623, szName = "ÓñÈªĞÄ¾­±®", tbNpcParam = {1114},},
-	{nNpcId = 1623, szName = "±ùÈ¸Ô½Ö¦", tbNpcParam = {1063},},
-	{nNpcId = 1623, szName = "Ë®Ó³ÂüĞã±®", tbNpcParam = {1065},},
-	{nNpcId = 1623, szName = "½­º£Å­À½±®", tbNpcParam = {1075},},
-	{nNpcId = 1623, szName = "¼²»ğÁÇÔ­±®", tbNpcParam = {1076},},
-	{nNpcId = 1623, szName = "°ôŞ’ÂÓµØ±®", tbNpcParam = {1074},},
-	{nNpcId = 1623, szName = "Ê±³ËÁùÁú±®", tbNpcParam = {1073},},	-- 20
-	{nNpcId = 1623, szName = "½£´¹ĞÇºÓ±®", tbNpcParam = {1079},},
-	{nNpcId = 1623, szName = "Ôì»¯Ì«Çå±®", tbNpcParam = {1078},},
-	{nNpcId = 1623, szName = "¾ÅÌìî¸·ç±®", tbNpcParam = {1080},},
-	{nNpcId = 1623, szName = "ÌìÀ×ÕğÔÀ±®", tbNpcParam = {1081},},
+	{nNpcId = 1623, szName = "§¹i Lùc Kim Cang Ch­ëng Bia", tbNpcParam = {1055},},
+	{nNpcId = 1623, szName = "Vi §µ hiÕn Xö Bia", tbNpcParam = {1056},},
+	{nNpcId = 1623, szName = "Tam Giíi Quy ThiÒn Bia", tbNpcParam = {1057},},
+	{nNpcId = 1623, szName = "Tung Hoµnh B¸t Hoang Bia", tbNpcParam = {1059},},
+	{nNpcId = 1623, szName = "B¸ V­¬ng T¹m Kim Bia", tbNpcParam = {1060},},
+	{nNpcId = 1623, szName = "Hµo Hïng Tr¶m Bia", tbNpcParam = {1058},},
+	{nNpcId = 1623, szName = "H×nh Tiªu Cèt LËp Bia", tbNpcParam = {1066},},
+	{nNpcId = 1623, szName = "U Hån PhÖ ¶nh Bia", tbNpcParam = {1067},},
+	{nNpcId = 1623, szName = "V« ¶nh Xuyªn Bia", tbNpcParam = {1069},},
+	{nNpcId = 1623, szName = "ThiÕt Liªn Tø S¸t Bia", tbNpcParam = {1070},},	-- 10
+	{nNpcId = 1623, szName = "Cµn Kh«n NhÊt TrŞch Bia", tbNpcParam = {1071},},
+	{nNpcId = 1623, szName = "KiÕm Hoa V·n Tinh Bia", tbNpcParam = {1061},},
+	{nNpcId = 1623, szName = "B¨ng Vò L¹c Tinh Bia", tbNpcParam = {1062},},
+	{nNpcId = 1623, szName = "Ngäc TuyÒn T©m Kinh Bia", tbNpcParam = {1114},},
+	{nNpcId = 1623, szName = "B¨ng T­íc Ho¹t Kú", tbNpcParam = {1063},},
+	{nNpcId = 1623, szName = "Thñy Anh Man Tó Bia", tbNpcParam = {1065},},
+	{nNpcId = 1623, szName = "Giang H¶i Né Lan Bia", tbNpcParam = {1075},},
+	{nNpcId = 1623, szName = "TËt Háa LiÖu Nguyªn Bia", tbNpcParam = {1076},},
+	{nNpcId = 1623, szName = "Bæng Huınh L­îc §Şa Bia", tbNpcParam = {1074},},
+	{nNpcId = 1623, szName = "Thêi ThÆng Lôc Long Bia", tbNpcParam = {1073},},	-- 20
+	{nNpcId = 1623, szName = "KiÕm Thïy Tinh Hµ Bia", tbNpcParam = {1079},},
+	{nNpcId = 1623, szName = "T¹o Hãa Th¸i Thanh Bia", tbNpcParam = {1078},},
+	{nNpcId = 1623, szName = "Cöu Thiªn C­¬ng Phong Bia", tbNpcParam = {1080},},
+	{nNpcId = 1623, szName = "Thiªn L«i ChÊn Nh¹c Bia", tbNpcParam = {1081},},
 	}	
 
 function addnpc(szfile, tbNpc)
@@ -128,7 +128,7 @@ function main()
 	local nSkillId = GetNpcParam(nNpcIdx, 1)
 	local nPlayerLevel = GetLevel()
 	if checkDailyTask(nSkillId) ~= 1 then
-		Msg2Player("½ñÌì´ÎÊıÓÃÍêÁË£¬Ã÷ÌìÔÙÀ´°É")
+		Msg2Player("Sè lÇn h«m nay cña ng­¬i ®· hÕt, ngµy mai h·y l¹i ®©y nhĞ")
 		return
 	end
 	preMsg2Player(nSkillId)
@@ -147,12 +147,12 @@ function playerexp2skillexp(nNpcIndex, dwNpcId, nSkillId)
 	local szSkillName = GetSkillName(nSkillId)
 --	print("nSkillId = " .. nSkillId)
 	if HaveMagic(nSkillId) == -1 then
-		Msg2Player("¶ÔÕâÖÖÎä¹¦Ã»ÓĞ¶·Ö¾£¬È¥±ğµÄµØ·½°É")
+		Msg2Player("§èi víi lo¹i vâ c«ng nµy hµo v« ®Çu tù, hay lµ ®i lÜnh ngé c¸i kh¸c ®i")
 		return
 	end
 	
 	if GetCurrentMagicLevel(nSkillId, 0) >= GetSkillMaxLevel(nSkillId) then
-		Msg2Player("ÏÖÔÚ¼¼ÄÜÒÑ´ï×î¸ß½çÏŞ£¬²»ÄÜÔÙ¼ÓÁË")
+		Msg2Player("Kü n¨ng hiÖn t¹i ®· ®¹t giíi h¹n cao nhÊt, kh«ng cÇn ph¶i t¨ng thªm n÷a")
 		return
 	end
 	
@@ -164,13 +164,13 @@ function playerexp2skillexp(nNpcIndex, dwNpcId, nSkillId)
 	local nlevelskill150 = tbTrainSkill150:CheckTS();
 	if (GetCurrentMagicLevel(nSkillId, 0) >= nlevelskill150 and nlevelskill150 > 0) then
 		if tbTrainSkill150:Check_UseItem(nSkillId) == 0 then
-			Msg2Player("ÏÖÔÚ¼¼ÄÜÒÑ´ï×î¸ß½çÏŞ£¬´óÏÀÖØÉúÀ´Éı¼¶")
+			Msg2Player("Kü n¨ng hiÖn t¹i ®· ®¹t giíi h¹n cao nhÊt, §¹i hiÖp h·y trïng sinh lªn ®Ó t¨ng thªm cÊp")
 			return
 		end
 	end
 	
 	if nNeedPlayerExp > nCurPlayerExp then
-		Msg2Player(format("ÁìÎòÒªÓĞ %d ¾­Ñé, ÄãÏÖÔÚµÄ¾­Ñé²»×ã", nNeedPlayerExp))
+		Msg2Player(format("L·nh ngé cÇn ph¶i cã %d kinh nghiÖm, kinh nghiÖm hiÖn t¹i cña ng­¬i kh«ng ®ñ", nNeedPlayerExp))
 		return 
 	end
 	
@@ -220,7 +220,7 @@ function playerexp2skillexp(nNpcIndex, dwNpcId, nSkillId)
 end
 
 function onbreak()
-	Msg2Player("ÄãµÄÁìÎò±»¼ä¶Ï.")
+	Msg2Player("L·nh ngé cña ng­¬i bŞ ®øt ®o¹n.")
 end
 
 function OnTimer(nNpcIndex)
@@ -255,9 +255,9 @@ function preMsg2Player(nSkillId)
 	local nPlayerLevel = GetLevel()
 	local szSkillName = GetSkillName(nSkillId)
 	if nPlayerLevel >= 200 then
-		Msg2Player(format("200¼¶ÈËÎï²»ÄÜÌá¸ß<color=yellow> %s <color> ĞŞÁ¶Öµ", szSkillName))
+		Msg2Player(format("Nh©n vËt cÊp 200 kh«ng thÓ n©ng cao <color=yellow> %s <color> ®é tu luyÖn", szSkillName))
 	else
-		Msg2Player(format("ÏûºÄ<color=yellow> %d <color> Ìá¸ß¾­Ñé¶ÔÓÚ<color=yellow> %s <color> ĞŞÁ¶¶È.",nNeedPlayerExp,szSkillName))
+		Msg2Player(format("Tiªu hao <color=yellow> %d <color> kinh nghiÖm n©ng cao ®èi víi <color=yellow> %s <color> ®é tu luyÖn.",nNeedPlayerExp,szSkillName))
 	end
 end
 
@@ -268,9 +268,9 @@ function postMsg2Player(nSkillId)
 	local nTotalExp = NADD_SKILLEXP_PER
 	
 	if nPlayerLevel == 200 then
-		Msg2Player(format("ÄãµÄ¼¼ÄÜ<color=yellow> %s <color> ĞŞÁ¶¶È¿ÉÒÔÌá¸ß %d",szSkillName, nTotalExp))
+		Msg2Player(format("Kü n¨ng cña ng­¬i <color=yellow> %s <color> ®é tu luyÖn ®­îc n©ng cao %d",szSkillName, nTotalExp))
 	else
-		Msg2Player(format("ÒÑÏûºÄ <color=yellow> %d <color> ¾­Ñé¸ø¼¼ÄÜ<color=yellow> %s <color> ĞŞÁ¶¶È¿ÉÒÔÌá¸ß<color=yellow> %d <color>",nNeedPlayerExp, szSkillName,nTotalExp))
+		Msg2Player(format("§· tiªu hao <color=yellow> %d <color> kinh nghiÖm ®Ó kü n¨ng <color=yellow> %s <color> ®ä tu luyÖn ®­îc n©ng cao <color=yellow> %d <color>",nNeedPlayerExp, szSkillName,nTotalExp))
 	end
 end
 

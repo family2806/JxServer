@@ -22,21 +22,21 @@ function main()
 --		end;
 --		
 --	else
-		Describe(DescLink_BuXingRenShi.."<#>: ÌÇºùÂ«±ãÒËÂôÁË! ÕâÎ»¿Í¹Ù¿´×ÅÃæÉú£¬²»ÊÇÎÒÃÇÎ÷É½´åµÄÈË°É£¡À´´®ÌÇºùÂ«°É£¡<enter>",
-		1,"ÂòÌÇºùÂ«/task001");
+		Describe(DescLink_BuXingRenShi.."<#>: Hå l« ngät rÎ ®©y! VŞ kh¸ch quan nµy nh×n l¹ mÆt nhØ? Ch¾c kh«ng ph¶i ng­êi th«n T©y S¬n chóng ta. Mua mét x©u hå l« ®i!<enter>",
+		1,"Mua kÑo hå l« /task001");
 --	end
 
 end;
 
 function task001()
 	local name = GetName()
-	Talk(1,"",name..": Õâ¸öÌÇºùÂ«ÕæºÃ³Ô!")
+	Talk(1,"",name..": X©u kÑo hå l« nµy ngon qu¸ ®i!")
 end;
 function task002()
 	local name = GetName()
-	Describe(DescLink_BuXingRenShi.."<#>:ÄãÀ´ÕÒÎÒÓĞÊ²Ã´ÊÂÂğ<enter>"
-				..name..format("<#>: ÎÒÌıËµÕâ¸½½üÓĞÈËÖªµÀÎ÷É½µºµÄÎ»ÖÃ¡£¿ÉÒÔÖ¸¸øÎÒÈ¥Î¢É½µºµÄ·½·¨Âğ<enter>²»ĞÑÈËÊ¿£ºÕâÆñÄÜÊÇ´åÀïºÜ¶àÈË¶¼ÖªµÀµÄ£¬¿´À´Õâ¸öÊÂÇéÒÑ¾­´«³ö½­ºşÁË¡£ÕâÊÇ¼¸°ÙÄêÇ°µÄÊÂÁË£¬´óÏÀÒªÊÕ¼¯¹» %ÉñÃØÃÜÍ¼¸øÎÒÎÒ²ÂÏëµÃÆğ<enter>", COUNT_SHENMI_JUANZHOU),
-				2,"ºÃµÄ£¬ÎÒÂíÉÏÈ¥ÕÒ/task003","ÎÒÃ»ÓĞĞËÈ¤/no")
+	Describe(DescLink_BuXingRenShi.."<#>: Ng­¬i t×m ta cã viÖc g× kh«ng vËy?<enter>"
+				..name..format("<#>: GÇn ®©y ta nghe nãi cã ng­¬i cã biÕt ®Õn vŞ trİ cña T©y S¬n §¶o. Cã thÓ chØ ta c¸ch ®i Vi S¬n §¶o ®­îc kh«ng?<enter>BÊt  TØnh Nh©n Sü: LÏ nµo ng­êi trong th«n nhiÒu ng­êi biÕt thÕ sao, xem ra chuyÖn nµy ®· bŞ lé ra ngoµi giang hå råi. ChØ cã ®iÒu ®©y lµ viÖc cña hµng chôc n¨m tr­íc, ®¹i hiÖp ph¶i thu thËp ®ñ %d mËt ®å thÇn bİ cho ta th× ta míi nhí l¹i ®­îc<enter>", COUNT_SHENMI_JUANZHOU),
+				2,"§­îc! Ta sÏ ®i t×m ngay/task003","Ta kh«ng høng thó tİ nµo/no")
 end;
 
 function	task003()
@@ -46,7 +46,7 @@ end;
 
 -- ÉñÃØ¾íÖá½»¸¶½çÃæ
 function	task004()
-GiveItemUI( "½»ÃÜÍ¼½»½ç", format("²»ĞÑÈËÊ¿£ºÄã·Å %dÉñÃØÃÜÍ¼ÔÚÏÂÃæµÄ¿Õ¸ñ¡£×¢Òâ£ºÈç¹û·ÅµÄ¶àÓÚ»òÕßÉÙÓÚ%dÉñÃØÃÜÍ¼ÎÒ½«²»½ÓÊÜ.", COUNT_SHENMI_JUANZHOU,COUNT_SHENMI_JUANZHOU), "juanzhou", "no" );
+GiveItemUI( "Giao diÖn giao MËt ®å", format("BÊt TØnh Nh©n Sü: Ng­¬i h·y bá %d mËt ®å thÇn bİ vµo « trèng bªn d­íi. Chó ı: NÕu nh­ bá nhiÒu hay İt h¬n sè l­îng %d mËt ®å thÇn bİ ta sÏ kh«ng nhËn ®©u.", COUNT_SHENMI_JUANZHOU,COUNT_SHENMI_JUANZHOU), "juanzhou", "no" );
 end;
 
 -- È·¶¨ÉñÃØ¾íÖáÊıÁ¿º¯Êı
@@ -67,15 +67,15 @@ function juanzhou(ncount)
 		end
 	end
 	if (y ~= ncount) then
-		Say("ÉñÃØÃÜÍ¼²»¹»,ÄãÔÙ¼ì²é¿´¿´!", 2, "°¡£¡Ô­À´ÊÇ·Å´íÁË£¬ÎÒÖØĞÂ·Å./task004", "ÎÒ¼ì²é¿´ÔõÃ´ÁË/no")
+		Say("MËt ®å thÇn bİ ch­a ®ñ, ng­¬i h·y kiÓm tra l¹i xem!", 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./task004", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount > COUNT_SHENMI_JUANZHOU) then
-		Say(format("ÎÒÖ»Òª %d ÉñÃØÃÜÍ¼£¬Äã²»ÓÃ¸øÎÒÕâÃ´.", COUNT_SHENMI_JUANZHOU), 2, "Å¶£¬Ô­À´ÊÇ·Å´íÁË£¬ÎÒÔÙÊÔÊÔ./task004", "ÎÒ¼ì²é¿´¿´ÊÇÔõÃ´ÁË/no")
+		Say(format("Ta chØ cÇn %d MËt §å ThÇn Bİ, ng­¬i ®õng ®­a cho ta nhiÒu nh­ vËy.", COUNT_SHENMI_JUANZHOU), 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./task004", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount < COUNT_SHENMI_JUANZHOU) then
-		Say("Äã¸øÎÒµÄÉñÃØÃÜÍ¼²»¹»£¬ÔÙ¼ì²é¿´¿´!", 2, "Å¶£¬Ô­À´ÊÇ·Å´íÁË£¬ÎÒÔÙÊÔÊÔ./task004", "ÎÒ¼ì²é¿´¿´ÊÇÔõÃ´ÁË/no")
+		Say("MËt ®å thÇn bİ ng­¬i giao cho ta kh«ng ®ñ th× ph¶i, kiÓm tra l¹i xem!", 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./task004", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount == COUNT_SHENMI_JUANZHOU) then
@@ -89,9 +89,9 @@ end;
 	
 function task005()
 	local name = GetName()
-	Describe(DescLink_BuXingRenShi..format("<#>: ÕæÏë²»µ½ÄãÒÑ¾­ÊÕ¼¯ÁË %d ÉñÃØÃÜÍ¼£¬ÎÒÒ»Ö±¶£ßÌÄã¸Ğ¾õÀ§ÄÑ¾Í·ÅÆú.Î÷É½µºÊ®·ÖÎ£ÏÕ£¬Äã²»È¥±È½ÏºÃ<enter>",COUNT_SHENMI_JUANZHOU)
-	..name..format("<#>:²»ÒªÎªÎÒµ£ĞÄ, ÎÒÒÑ¾­ÕÒµ½ %d ÉñÃØÃÜÍ¼ÁË, ÎÒÌÃÌÃ´óÕÉ·òÔõÃ´»á¾åÅÂÇøÇøÒ»¸öÎ¢É½µº¡£ÄãÖ»Òª¸æËßÎÒÔõÃ´È¥.<enter>²»ĞÑÈËÊ¿£ºÄã¿ÉÒÔÔÚÎÒÃÇ´åµÄÎ÷É½ÕÒĞ¡¶ş(214, 195)È»ºó¸æËßËûÊÇÎÒ¸æËßÄãÈ¥µÄ£¬Ëû¾Í»áÖªµÀÔõÃ´×öÁË¡£¼Ç×¡ÒªÇ§ÍòĞ¡ĞÄ <enter>",COUNT_SHENMI_JUANZHOU),
-	1,"½áÊø¶Ô»°/no")
+	Describe(DescLink_BuXingRenShi..format("<#>: ThËt kh«ng ngê ng­êi ®· thu thËp %d mËt ®å thÇn bİ, ta cø ®inh ninh lµ ng­¬i thÊy khã vµ bá ®i råi chø. T©y S¬n §¶o nguy hiÓm kh«n cïng, ng­¬i kh«ng ®i th× tèt h¬n.<enter>",COUNT_SHENMI_JUANZHOU)
+	..name..format("<#>: Ng­¬i ®õng lo l¾ng cho ta, ta ®· t×m ®ñ %d mËt ®å thÇn bİ råi, ta ®­êng ®­êng lµ mét ®¹i tr­îng phu sao l¹i ®i sî c¸i Vi S¬n §¶o bĞ tİ ®ã ®­îc. Ng­¬i cø chØ cho ta c¸ch ®i Vi S¬n §¶o ®i.<enter>BÊt TØnh Nh©n Sü: Xem ra ta kh«ng khuyªn gi¶i ®­îc ng­¬i. Ng­¬i cã thÓ t×m TiÓu NhŞ ë T©y S¬n (214, 195) trong th«n nµy vµ nãi h¾n lµ ta b¶o ng­êi ®i, h¾n sÏ biÕt nªn lµm thÕ nµo.  Nhí lµ ph¶i hÕt søc cÈn thËn nhĞ!<enter>",COUNT_SHENMI_JUANZHOU),
+	1,"KÕt thóc ®èi tho¹i/no")
 	end;
 
 function no()

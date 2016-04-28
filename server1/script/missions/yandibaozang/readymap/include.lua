@@ -61,7 +61,7 @@ function YDBZ_ready_kickout(group)
 	local players = {}
 	local i = 1
 	if group > 0 then 
-		Msg2MSGroup(YDBZ_READY_MISSION,"ÓÉÓÚ±¾´ÎÕù¶á±ÈÈüÌõ¼ş²»¹»£¬ËùÒÔ»îµÃ½áÊø¡£ÇëÁôÒâÏÂ´Î»î¶¯.",group)
+		Msg2MSGroup(YDBZ_READY_MISSION,"Do v× ®ît thi ®Êu tranh ®o¹t nµy kh«ng ®ñ ®iÒu kiÖn, nªn ho¹t ®éng sÏ  chÊm døt. H·y l­u ı lÇn ho¹t ®éng sau.",group)
 	end
 	while (1) do
 		index, player = GetNextPlayer(YDBZ_READY_MISSION, index, group);
@@ -92,7 +92,7 @@ end
 function YDBZ_ready_joinmap(RoleIndex)
 		local OldPlayerIndex = PlayerIndex
 		PlayerIndex = RoleIndex
-		str = "<color=yellow>"..GetName().."<color>½øÈëÑ×µÛ±¦²Ø´óÃÅµØÍ¼®Õ"
+		str = "<color=yellow>"..GetName().."<color>TiÕn vµo b¶n ®å cæng vµo b¶o tµng viªm ®Õ"
 		local nteams = GetTask(YDBZ_TEAMS_TASKID)
 		LeaveTeam()
 		AddMSPlayer(YDBZ_READY_MISSION, nteams)
@@ -133,7 +133,7 @@ function YDBZ_joinmap(RoleIndex,readymap,matchmap,camp)
 		--print(format("world:%s nteam:%s world:%s px:%s py%s",SubWorld,nteam,world,pos_x,pos_y))
 		--local szTeamName = GetMissionS(nteam)
 		--print("6")
-		str = "<color=yellow>"..GetName().."<color>½øÈëÑ×µÛ±¦²Ø´óÃÅµØÍ¼ ®Õ"
+		str = "<color=yellow>"..GetName().."<color>TiÕn vµo b¶n ®å b¶o tµng viªm ®Õ"
 		--print(str)
 		
 		--print(szTeamName)
@@ -150,14 +150,14 @@ function YDBZ_joinmap(RoleIndex,readymap,matchmap,camp)
 --			YDBZ_sdl_setTaskByte(YDBZ_ITEM_YANDILING,1,1)
 --			DelMSPlayer(YDBZ_READY_MISSION,RoleIndex,nteam)
 --	 		AddSkillState(461,1, 1,30*60*18,1)
---	 		Msg2Player(format("´óÏÀÓĞ <color=yellow>%s<color>, ¸ù¾İ¸ÃÁîÅÆ¿ÉÒÔ²Î¼ÓÒ»´Î´³¹Ø»î¶¯, Í¬Ê±»ñµÃË«±¶¾­ÑéºÍÑ×µÛÍ¼ÌÚ½±Àø.",YDBZ_LIMIT_DOUBEL_ITEM[3]))
+--	 		Msg2Player(format("§¹i hiÖp cã <color=yellow>%s<color>, c¨n cø vµo lÖnh bµi nµy cã thÓ tham gia 1 lÇn ho¹t ®éng v­ît ¶i, ®ång thêi thu ®­îc kinh nghiÖm nh©n ®«i vµ phÇn th­ëng Viªm §Õ ®å ®»ng.",YDBZ_LIMIT_DOUBEL_ITEM[3]))
 --	 		SetTask(YDBZ_ITEM_YANDILING_SUM,(GetTask(YDBZ_ITEM_YANDILING_SUM)+1))
 --	 	elseif numzimu > 0 then
 --			ConsumeItem(3,YDBZ_LIMIT_DOUBEL_ITEM[2],g,d,p,-1)
 --			YDBZ_sdl_setTaskByte(YDBZ_ITEM_YANDILING,1,1)
 --			DelMSPlayer(YDBZ_READY_MISSION,RoleIndex,nteam)
 --			AddSkillState(461,1, 1,30*60*18,1)
---			Msg2Player(format("´óÏÀÓĞ<color=yellow>%s<color>, ¸ù¾İ¸ÃÁîÅÆ¿ÉÒÔ²Î¼ÓÒ»´Î´³¹Ø»î¶¯, Í¬Ê±»ñµÃË«±¶¾­ÑéºÍÑ×µÛÍ¼ÌÚ½±Àø.",YDBZ_LIMIT_DOUBEL_ITEM[3]))
+--			Msg2Player(format("§¹i hiÖp cã <color=yellow>%s<color>, c¨n cø vµo lÖnh bµi nµy cã thÓ tham gia 1 lÇn ho¹t ®éng v­ît ¶i, ®ång thêi thu ®­îc kinh nghiÖm nh©n ®«i vµ phÇn th­ëng Viªm §Õ ®å ®»ng.",YDBZ_LIMIT_DOUBEL_ITEM[3]))
 --			SetTask(YDBZ_ITEM_YANDILING_SUM,(GetTask(YDBZ_ITEM_YANDILING_SUM)+1))
 --		else
 		-- ¸ü¸Ä±¨Ãû·½Ê½ - Modified - by AnhHH 20110725
@@ -177,7 +177,7 @@ function YDBZ_joinmap(RoleIndex,readymap,matchmap,camp)
 			
 			if ( (numzimu+numbeibao) < YDBZ_LIMIT_ITEM[2]) then
 				if ( (ndnumzimu+ndnumbeibao) < YDBZ_LIMIT_DOUBEL_ITEM[2]) then
-					Msg2Player("×°±¸²»¹»Ó¢ĞÛÌû»òÕßÑ×µÛÁî£¬²»ÄÜ²Î¼ÓÑ×µÛÕù¶á")
+					Msg2Player("Trªn hµnh trang kh«ng ®ñ Anh Hïng ThiÕp hoÆc Viªm §Õ LÖnh, kh«ng thÓ tham gia tranh ®o¹t Viªm §Õ")
 					YDBZ_restore(PlayerIndex,YDBZ_READY_MISSION,nteam);
 					NewWorld(world, pos_x, pos_y);
 					SetLogoutRV(0);
@@ -221,7 +221,7 @@ function YDBZ_joinmap(RoleIndex,readymap,matchmap,camp)
 				SetTask(YDBZ_ITEM_YANDILING_SUM,(GetTask(YDBZ_ITEM_YANDILING_SUM)+1))
 				tbLog:PlayerActionLog("TinhNangKey","BaoDanhViemDe_SDViemDeLenh")
 			else
-				Msg2Player("×°±¸²»¹»Ñ×µÛÁî£¬²»ÄÜ²Î¼ÓÑ×µÛÕù¶á")
+				Msg2Player("Trªn hµnh trang kh«ng ®ñ Viªm §Õ LÖnh, kh«ng thÓ tham gia tranh ®o¹t Viªm §Õ")
 				YDBZ_restore(PlayerIndex,YDBZ_READY_MISSION,nteam);
 				NewWorld(world, pos_x, pos_y);
 				SetLogoutRV(0);
@@ -404,7 +404,7 @@ function YDBZ_ready_start_missions(map,oldsubworld, mission ,readymission)
 									PlayerIndex = GetTeamMember(1)
 									SetMissionS(YDBZ_TEAM_NAME[curcamp],GetName())
 									--print(nplayernum,map[i],curcamp)
-									local szstr = format("[Ñ×µÛ±¦²Ø´³¹Ø] Ê±¼ä%s, Õ½¶Ó%s  ³ÉÔ±%s ÈË, ®­±»×ªÈëµØÍ¼?%s, ÕóÓªÎª%s",GetLocalDate("%y-%m-%d %H:%M:%S"),szteamname,nplayernum,map[i],curcamp) 
+									local szstr = format("[V­ît ¶i b¶o tµng viªm ®Õ] thêi gian %s, chiÕn ®éi %s  thµnh viªn %s ng­êi, ®­îc chuyÓn vµo b¶n ®å sè %s, trËn doanh lµ %s",GetLocalDate("%y-%m-%d %H:%M:%S"),szteamname,nplayernum,map[i],curcamp) 
 									--print(szstr)
 									WriteLog(szstr)
 								end

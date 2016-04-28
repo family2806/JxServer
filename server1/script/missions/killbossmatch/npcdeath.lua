@@ -6,12 +6,12 @@ function OnDeath(nNpcIndex)
 	
 	tbKillBossMatch:OnKillNpc(nNpcIndex, 0)
 	
-	local tbItem = {szName="Îå»¨ÓñÂ¶Íè", tbProp={1, 2, 0, 5, 0, 0}}
+	local tbItem = {szName="Ngò Hoa Ngäc Lé Hoµn", tbProp={1, 2, 0, 5, 0, 0}}
 	local tbAward = 
 	{
-		{szName="´ó½«¾üÃæ¾ß", tbProp={0, 11, 446, 1, 0, 0}, nRate = 2},
-		{szName="º£ÁúÖé", tbProp={6, 1, 2115, 1, 0, 0}, nRate = 2},
-		{szName="ÁúÑªÍè", tbProp={6, 1, 2117, 1, 0, 0}, nRate = 3},
+		{szName="MÆt n¹ §¹i T­íng qu©n", tbProp={0, 11, 446, 1, 0, 0}, nRate = 2},
+		{szName="H¶i long ch©u", tbProp={6, 1, 2115, 1, 0, 0}, nRate = 2},
+		{szName="Long HuyÕt Hoµn", tbProp={6, 1, 2117, 1, 0, 0}, nRate = 3},
 	}
 	
 	tbDropTemplet:GiveAwardByList(nNpcIndex, -1, tbItem, "KillBossMatch,npcdrop", 20)

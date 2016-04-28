@@ -42,7 +42,7 @@ function OnDeath(nNpcIndex)
 		end
 		if mod(nCurCombo, COMBO_COUNT) == 0 then
 			nScores = nScores + COMBO_EXT_SCORES
-			CallPlayerFunction(nKillerIndex, Msg2Player, "<color=yellow>你得到3个连斩点"..COMBO_EXT_SCORES)
+			CallPlayerFunction(nKillerIndex, Msg2Player, "<color=yellow>Ngi nh薾 頲 3 甶觤 li猲 tr秏"..COMBO_EXT_SCORES)
 		end
 	end
 	Data:AddPLData(szKiller, "TOTALPOINT", nScores)
@@ -50,7 +50,7 @@ function OnDeath(nNpcIndex)
 	Data:AddCampPoint(nKillerCamp, nScores)
 	local nCurRank = ScoringClass:CalcTitle(Data:GetPLData(szKiller, "TOTALPOINT"))
 	Data:SetPLData(szKiller, "CURRANK", nCurRank)
-	local szMsg = format("%s[%s]%s已打败%s[%s]%s",
+	local szMsg = format("%s[%s]%s nh b筰%s[%s]%s",
 		CAMP_NAME[nKillerCamp],
 		TITLE[nKillerRank],
 		szKiller,

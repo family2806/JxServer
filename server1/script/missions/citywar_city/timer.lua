@@ -13,12 +13,12 @@ function ReportBattle(V)
 --Õ½¶·½øĞĞ¹ı³ÌÖĞ£¬ÏµÍ³¶¨ÆÚÍ¨ÖªÊ¯±®µÄÇé¿ö
 	gametime = (floor(GetMSRestTime(MISSIONID,13) / 18));
 	RestMin, RestSec = GetMinAndSec(gametime);
-	str = format("ÏÖÔÚ %s ÏÖÔÚ´¦ÓÚ¼¤ÁÒÕù¶áµÄ½×¶Î! Ê±¼ä»¹Ê£ %d·Ö %d Ãë; ÏÖÔÚ %d ÁúÖùÒÑ¾­»Ö¸´ÊôĞÔ", GetGameCity(), RestMin, RestSec, MS_SYMBOLCOUNT);
+	str = format("HiÖn t¹i %s ®ang trong giai ®o¹n tranh ®o¹t quyÕt liÖt! Thêi gian cßn d­ %d phót %d gi©y; hiÖn t¹i %d Long trô ®· håi phôc thuéc tİnh", GetGameCity(), RestMin, RestSec, MS_SYMBOLCOUNT);
 	for i = 1, MS_SYMBOLCOUNT do 
 		if (GetMissionV(MS_SYMBOLBEGIN + i - 1)  == 1) then
-			str = str .. "·ÀÊØ·½"	;
+			str = str .. "Phe phßng thñ "	;
 		else 	
-			str = str .. "½ø¹¥·½";
+			str = str .. "Phe tÊn c«ng ";
 		end;
 	end;
 

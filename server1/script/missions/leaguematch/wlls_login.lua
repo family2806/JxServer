@@ -13,9 +13,9 @@ function wlls_login()
 			local n_wday = tonumber(GetLocalDate("%w"))
 			_M("n_wday="..n_wday)
 			if (n_wday == 0 or n_wday >= 5) then
-				Msg2Player("Ä¿Ç°Õı´¦ÓÚÎäÁÖÁªÈü½×¶Î£¬½ñÌì´Ó <color=yellow>18:00~19:00<color> ºÍ <color=yellow>21:00~22:00<color> ½øĞĞ<color=yellow>8<color> ³¡"..WLLS_LEVEL_DESC[n_level]..".")
+				Msg2Player("Vâ L©m liªn ®Êu ®ang diÔn ra, h«m nay b¾t ®Çu tõ <color=yellow>18:00~19:00<color> vµ <color=yellow>21:00~22:00<color> tiÕn hµnh <color=yellow>8<color> trËn "..WLLS_LEVEL_DESC[n_level]..".")
 			else
-				Msg2Player("Ä¿Ç°Õı´¦ÓÚÎäÁÖÁªÈü½×¶Î£¬½ñÌì´Ó <color=yellow>18:00~19:00<color> ½«½øĞĞ <color=yellow>4<color> ³¡"..WLLS_LEVEL_DESC[n_level]..".")
+				Msg2Player("Vâ L©m liªn ®Êu ®ang diÔn ra, h«m nay b¾t ®Çu tõ <color=yellow>18:00~19:00<color> tiÕn hµnh <color=yellow>4<color> trËn "..WLLS_LEVEL_DESC[n_level]..".")
 			end
 		else
 			local str = wlls_levelcheck()
@@ -37,7 +37,7 @@ function wlls_login()
 	else
 		local n_level = wlls_player_level()
 		if (n_level > 0) then
-			Msg2Player("ÎäÁÖÁªÈüÒÑ¾­Æô¶¯£¬Äã¿ÉÒÔµ½ÏàÓ¦¹ÙÔ±´¦±¨Ãû²ÎÈü¡£")
+			Msg2Player("<color=yellow>Vâ L©m liªn ®Êu ®· b¾t ®Çu, cã thÓ gÆp Quan Viªn ®Ó b¸o danh<color>")
 		end
 	end
 	wlls_sync_lginfo(n_lid)

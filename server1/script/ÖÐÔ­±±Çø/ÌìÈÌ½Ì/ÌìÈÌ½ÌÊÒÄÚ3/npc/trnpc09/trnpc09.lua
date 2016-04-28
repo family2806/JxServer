@@ -18,24 +18,24 @@ function main()
 	if tbVNG_LY2011:isActive() == 1 then
 		local tbSay = 
 			{
-				"ËÍ´º±ı/#tbMasterGift:getGift('tianren')",
-				"ÏëÇë½ÌÆäËûÊÂ/oldMain"
+				"TÆng b¸nh ngµy xu©n/#tbMasterGift:getGift('tianren')",
+				"Muèn thØnh gi¸o viÖc kh¸c/oldMain"
 			}
-		Say("ĞÂÄê°²¿µĞËÍú", getn(tbSay), tbSay)
+		Say("N¨m míi an khang thŞnh v­îng", getn(tbSay), tbSay)
 		return
 	end
 	oldMain()
 end
 function oldMain()
 	if (vt06_isactive() ~= 0) then
-		Say("ÕÒÎÒÓĞÊ²Ã´ÊÂ?", 2, "ÏëÇë½Ì´óÊ¦/oldentence", "Çì×£¶÷Ê¦½Ú£¬ÔÚÏÂÒÑÕÒ¹»¶÷Ê¦¿¨ºÍ¸ßÊÖ¿¨ /vt06_prizeenter");
+		Say("T×m ta cã viÖc g×?", 2, "Muèn thØnh gi¸o ®¹i s­!/oldentence", "Mõng lÔ ¢n S­, t¹i h¹ ®· t×m ®ñ “ThÎ ¢n S­” vµ “ThÎ Cao §å”./vt06_prizeenter");
 		return
 	end;
 	
 	if (GetLevel() >= 120 and GetTask(LV120_SKILL_STATE) ~= 19 and GetLastFactionNumber() == 7) then
-		Describe("ÕÒÎÒÓĞÊ²Ã´ÊÂ£¿ ", 2,
-			"Ñ§120¼¼ÄÜ./lvl120skill_learn",
-			"ÏëÇë½ÌÆäËûÊÂ/oldentence"
+		Describe("T×m ta cã viÖc g×?", 2,
+			"Häc kü n¨ng cÊp 120./lvl120skill_learn",
+			"Muèn thØnh gi¸o viÖc kh¸c/oldentence"
 			);
 		return
 	end;
@@ -49,47 +49,47 @@ function oldentence()
 
 	if (UTask_tr == 70*256) and (GetFaction() == "tianren") then			-- »ØÊ¦´íÎóĞŞÕı
 		SetFaction("")
-		Say("ÏµÍ³·¢ÏÖ´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("HÖ thèng ph¸t hiÖn sai sãt, ®· kŞp thêi håi phuc!",0)
 		return
 	elseif (UTask_tr == 70*256) and (GetTask(8) >= 5*256) and (GetTask(8) < 10*256) then		-- ÒÔÇ°½Ó¹ıÈëÃÅÈÎÎñµÄ
 		SetTask(8,0)
-		Say("ÏµÍ³·¢ÏÖ´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("HÖ thèng ph¸t hiÖn sai sãt, ®· kŞp thêi håi phuc!",0)
 		return
 	elseif (UTask_tr == 80*256) and (GetCamp() == 4) then			-- »ØÊ¦´íÎóĞŞÕı
 		SetTask(4,70*256)
-		Say("ÏµÍ³·¢ÏÖ´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("HÖ thèng ph¸t hiÖn sai sãt, ®· kŞp thêi håi phuc!",0)
 		return
-	elseif (UTask_tr == 80*256 and nFactID == 7 and GetCamp() == 2 and GetFaction() == "³õÈë½­ºş ") then
+	elseif (UTask_tr == 80*256 and nFactID == 7 and GetCamp() == 2 and GetFaction() == "Míi nhËp giang hå ") then
 		 local _, nTongID = GetTong();
 		 if (nTongID == 0) then
 			SetFaction("tianren");
-			Say("ÏµÍ³·¢ÏÖ´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+			Say("HÖ thèng ph¸t hiÖn sai sãt, ®· kŞp thêi håi phuc!",0)
 			return
 		end
-	elseif (UTask_tr == 70*256 and nFactID == 7 and GetCamp() ~= 4 and GetFaction() == "³õÈë½­ºş") then
+	elseif (UTask_tr == 70*256 and nFactID == 7 and GetCamp() ~= 4 and GetFaction() == "Míi nhËp giang hå ") then
 		 local _, nTongID = GetTong();
 		 if (nTongID == 0) then
 			SetFaction("");
 			SetCurCamp(GetCamp());
-			Say("ÏµÍ³·¢ÏÖ´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+			Say("HÖ thèng ph¸t hiÖn sai sãt, ®· kŞp thêi håi phuc!",0)
 			return
 		end
 	end
 
-	local tbDes = {"´øÒÕÍ¶Ê¦/#daiyitoushi_main(7)", "ÏëÇë½ÌÆäËûÊÂ/common_talk"};
+	local tbDes = {"§¸i nghÖ ®Çu s­/#daiyitoushi_main(7)", "Muèn thØnh gi¸o viÖc kh¸c/common_talk"};
 	
-	Say("×î½üÎÒºÜÃ¦£¬ÄãÀ´ÕâÓĞÊ²Ã´ÊÂ£¿", getn(tbDes), tbDes);
+	Say("GÇn ®©y ta cã rÊt nhiÒu viÖc gi¶i quyÕt, ng­¬i ®Õn ®©y cã viÖc g×.", getn(tbDes), tbDes);
 end
 
 function common_talk()
 	local UTask_tr = GetTask(4);
 	if (GetTask(39) == 10) and (GetBit(GetTask(40),4) == 0) then				-- ÊÀ½çÈÎÎñ£ºÎäÁÖÏò±³
-		Talk(1,"","¶À¹Â½£Ê§È¥ÀíÖÇ°¡£¿±¾½Ì±¾ÊÇ´ó½ğ¹ú½Ì£¬¶À¹Â½£ÅÉÈËÀ´ÎÊÀÏ¸¾´ËÊÂ¡£ºÃ£¬ÄãºÍ¶À¹Â½£Ëµ£¬ÄãÃÇÖ»ÊÇÒ»ÈºÎÚºÏÖ®ÖÚ£¬¸ÒÓë´ó½ğ·´¿¹£¬ÏÈ¿¼ÂÇºóÊÀÔÙËµ£¬¹ş¹ş¹ş!")
+		Talk(1,"","§éc C« KiÕm bŞ mÊt trİ µ? Bæn gi¸o vèn lµ §¹i Kim quèc gi¸o, §éc C« KiÕm ph¸i ng­¬i ®Õn hái l·o phu chuyÖn nµy. §­îc! Ng­¬i nãi l¹i víi §éc C« KiÕm r»ng: C¸c ng­êi chØ lµ lò qu©n « hîp, d¸m chèng víi ®¹i qu©n hïng m¹nh cña §¹i Kim, h·y lo chuyÖn hËu sù tr­íc råi h·y nãi! Ha ha ha!")
 		Uworld40 = SetBit(GetTask(40),4,1)
 		SetTask(40,Uworld40)
 	elseif (GetSeries() == 3) and (GetFaction() == "tianren") then
 		if (UTask_tr == 60*256) and (GetLevel() >= 50) then		-- ³öÊ¦ÈÎÎñÆô¶¯
-			Say("±¾½ÌÊ¥ÊéÄËÊÇÒ»¾í¼ÇÔØÓĞ½ğ¹ú¹ú½Ì¡ª¡ªÈøÂú½Ì¾­ÎÄµÄ<color=Red>ÑòÆ¤Êé<color>£¬Õâ¾íÑòÆ¤Êé±»ÉÏÈÎ½ÌÖ÷·â´æÔÚÁËºóÃæµÄ<color=Red>Ê¥¶´<color>Àï£¬¾İËµ·²ÊÇ´³ÈëÊ¥¶´Õß¶¼ÓĞÈ¥ÎŞ»Ø¡£ÄãÉíÎª±¾½ÌµÄ»¤½Ì·¨Íõ£¬ÓĞµ¨Á¿½øÈëÊ¥¶´È¡»ØÑòÆ¤ÊéÂğ£¿", 2, "ÊôÏÂÔğÎŞÅÔ´û /L60_get_yes", "ÊôÏÂ¿ÖÄÑµ±´Ë´óÈÎ/L60_get_no")
+			Say("Th¸nh th­ cña bæn gi¸o lµ cuèn s¸ch ghi râ vÒ quèc gi¸o cña §¹i Kim-- <color=Red>cuèn s¸ch da dª<color> cña T¸t M·n Gi¸o Kinh V¨n, cuèn s¸ch nµy ®­îc Gi¸o chñ cÊt giÊu t¹i <color=Red>Th¸nh §éng<color>, nghe nãi ai vµo Th¸nh §éng sÏ kh«ng cã ®­êng vÒ. Ng­¬i vèn lµ Hé Gi¸o Ph¸p V­¬ng cña bæn gi¸o, cã d¸m vµo Th¸nh §éng lÊy cuèn s¸ch ®ã kh«ng?", 2, "Thuéc h¹ tËn lùc thi hµnh /L60_get_yes", "Thuéc h¹ e r»ng kh«ng ®¶m nhiÖm næi/L60_get_no")
 		elseif (UTask_tr == 60*256+20) and (HaveItem(127) == 1 and HaveItem(128) == 1 and HaveItem(129) == 1 and HaveItem(130) == 1 and HaveItem(131) == 1) then 
 			DelItem(127)
 			DelItem(128)
@@ -98,30 +98,30 @@ function common_talk()
 			DelItem(131)
 			SetTask(28,0)		-- ½«×Ó±äÁ¿¸´Î»£¬Ê¥¶´ÖĞÔÙ¼ÌĞøÊ¹ÓÃ
 			SetTask(4,60*256+50)		-- ÄÃÆëÎå°Ñ¶Ï½£ºóÏÈÕÒÍêÑÕºéÁÒ²ÅÄÜ½øÊ¥¶´£¬¼ò»¯³ÌĞò´¦Àí¡£
-			AddNote("ÕÒµ½5°Ñ¶Ï½£ºó£¬»ØÌìÈÌ½Ì£¬½øÊ¥¶´. ")
-			Msg2Player("ÄãÒÑ¾­ÄÜ½øÈëÊ¥¶´")
-			Talk(1,"","ºÜºÃ£¬ÏÖÔÚÄã¿ÉÒÔ½øÊ¥¶´ÄÃÑòÆ¤¾í»ØÀ´.")
+			AddNote("Sau khi t×m ®ñ n¨m Thanh ®o¶n kiÕm, quay l¹i Thiªn NhÉn Gi¸o, ®­îc phĞp vµo Th¸nh §éng. ")
+			Msg2Player("B¹n ®· ®­îc phĞp vµo Th¸nh §éng ")
+			Talk(1,"","RÊt tèt! b©y giê ng­¬i cã thÓ vµo Th¸nh §éng lÊy cuèn s¸ch da dª mang vÒ ®©y.")
 		elseif (UTask_tr == 60*256+70) and (HaveItem(132) == 1) then		-- ³öÊ¦ÈÎÎñÍê³É
-			Talk(2, "L60_prise", "Õâ¹ûÈ»¾ÍÊÇ±¾½ÌµÄÊ¥Êé£¡ºÃ£¡ºÃ£¡ÀÏ·ò²»»á¿´´íÈË£¬ÒÔÄãÄ¿Ç°µÄÎä¹¦ºÍµ¨Ê¶£¬¼ÙÒÔÊ±ÈÕ£¬±Ø»áÓĞÒ»·¬¾ªÌì¶¯µØµÄ´ó×÷Îª£¡Ï£ÍûÄã³öÊ¦ÒÔºó£¬²»»á³ÉÎªÀÏ·òµÄµĞÈË£¡¹ş¹ş¹ş¹ş!", "¹§Ï²ÄãÒÕ³É³öÊ¦£¡ÄãÒÑ±»·âÎªÌìÈÌ½ÌµÄÈøÂú·¨Íõ£¬´Ó½ñÒÔºó¿ÉÒÔ×ÔÓÉĞĞ×ß½­ºşÀ²£¬Ï£ÍûÄãÄÜ´óÕ¹È­½Å£¬Ò»Õ¹ºèÍ¼!")
+			Talk(2, "L60_prise", "§©y qu¶ nhiªn lµ Th¸nh th­ cña bæn gi¸o! Tèt! Tèt! L·o phu ®· kh«ng nh×n lÇm ng­êi, víi tr×nh ®é vâ c«ng còng nh­ lßng cam ®¶m cña ng­¬i hiÖn giê, cã ngµy sÏ lµm nªn nh÷ng chuyÖn kinh thiªn ®éng ®Şa! Hy väng sau khi ng­¬i xuÊt s­, sÏ kh«ng trë thµnh kÎ thï cña l·o phu! Ha ha ha!", "Chóc mõng b¹n cã thÓ xuÊt s­! B¹n ®­îc phong lµ T¸t M·n Ph¸p S­ cña Thiªn NhÉn gi¸o, tõ nay vÒ sau cã thÓ tù do hµnh tÈu giang hå! Hy väng b¹n sÏ ph¸t huy n¨ng lùc, ph¸t triÓn tiÒn ®å!")
 		elseif (UTask_tr == 80*256) then						-- ÖØ·µºóµÄ×ÔÓÉ³öÈë
 			check_skill()
 		elseif (UTask_tr > 60*256) and (UTask_tr < 60*256+50) then					--ÒÑ¾­½Óµ½³öÊ¦ÈÎÎñ£¬ÉĞÎ´ÄÃµ½Îå°Ñ¶Ï½£
-			Talk(1,"","ÔÚ½øÈë<color=Red>Ê¥¶´<color>È¡»Ø<color=Red>ÑòÆ¤Êé<color>Ö®Ç°£¬Äã±ØĞëÏÈÕÒµ½Á÷ÂäÔÚ<color=Red>ãê¾©<color>³ÇÀïµÄ<color=Red>Îå°Ñ¶Ï½£<color> .")
+			Talk(1,"","Tr­íc khi vµo <color=Red>Th¸nh §éng<color> lÊy <color=Red>cuèn s¸ch da dª<color>, ng­¬i ph¶i ®Õn <color=Red>BiÖn Kinh<color> t×m <color=Red>n¨m thanh ®o¶n kiÕm<color> ®ang l­u l¹c.")
 		elseif (UTask_tr >= 60*256+50) and (UTask_tr <= 60*256+70) then					--ÒÑ¾­½Óµ½³öÊ¦ÈÎÎñ£¬ÉĞÎ´ÄÃµ½ÑòÆ¤Êé
-			Talk(1,"","<color=Red>ÑòÆ¤Êé<color>¾ÍÔÚºóÃæµÄ<color=Red>Ê¥¶´<color>Àï.")
+			Talk(1,"","<color=Red>cuèn s¸ch da dª<color> ë phİa sau trong <color=Red>Th¸nh §éng<color>.")
 		else
-			Talk(1,"","×Ô¹ÅÒÔÀ´£¬Î»¸ßÈ¨ÖØÕß¶àÎªÈËÖ÷Ëù¼É£¬µ±½ñÊ¥ÉÏËäÈ»¶ÔÀÏ·ò¶÷³èÓĞ¼Ó£¬µ«ÊÇ²Â¼ÉÖ®ĞÄ¿ÖÅÂ´ÓÎ´ÏûÊ§¹ı£¬·ñÔòÓÖÔõ»á°ÑÆß¹«Ö÷ÅÉµ½½ÌÖĞ×öÒ»¸öĞ¡Ğ¡µÄÌÃÖ÷ÄØ£¿°¦£¡°Õ£¡°Õ£¡°Õ£¡ÀÏ·òÖ»ÇóÎŞÀ¢ÓÚÌìµØÁ¼ĞÄ£¬¹Ü²»ÁËÄÇĞí¶à²÷ÑÔµÄ·Ì°ùÚ®»Ù!")
+			Talk(1,"","X­a nay, quyÒn cao chøc träng lu«n hÊp dÉn mäi ng­êi, n¨m x­a Th¸nh Th­îng tuy rÊt ©n sñng ta, nh­ng vÉn cã lßng ®è kş, nÕu kh«ng sao l¹i ph¸i ThÊt c«ng chóa ®Õn bæn gi¸o lµm mét §­êng chñ nhá nhoi nµy? ¤i! L·o phu kh«ng hÒ hæ thÑn l­¬ng t©m, nh­ng còng kh«ng qu¶n næi nh÷ng lêi phØ b¸ng dÌm pha!")
 		end
 --	elseif (GetTask(8) == 5*256+10) then		-- ×ªÃÅÅÉµ½Ø¤°ï
 --		Say("ÍêÑÕºéÁÒ£ºØ¤°ïÓë±¾°ïÊÄ²»Á½Á¢£¬Äã¾¹Ïë±³Æú±¾½Ì¸ÄÍ¶Ø¤°ï£¿Ğ¡ĞÄÎÒ·ÏÁËÄãµÄ¹¦·ò£¡",2,"¶Ô²»Æğ£¬µ«ÎáÒâÒÑ¾ö/defection_yes","ÎÒ»¹ÊÇ²»È¥ÁË/defection_no")
 	elseif (GetSeries() == 3) and (GetCamp() == 4) and (GetLevel() >= 60) and (UTask_tr == 70*256) and (GetTask(8) < 5*256) then		-- ÖØ·µÊ¦ÃÅÈÎÎñ
-		Talk(1,"return_sele","½ÌÖ÷£¬³öÊ¦ºóµÄÈË¿ÉÒÔ·µ»ØÃÅÅÉ¼ÌĞø·îÊÂÂğ?")
+		Talk(1,"return_sele","Th­a Gi¸o chñ, nh÷ng ng­êi xuÊt s­ råi cã thÓ quay trë l¹i m«n ph¸i tiÕp tôc phông sù kh«ng?")
 	elseif (GetCamp() == 4) and ((UTask_tr == 70*256+10) or (UTask_tr == 70*256+20)) then		-- ÖØ·µÊ¦ÃÅÈÎÎñÖĞ
-		Say("×¼±¸ºÃÎåÍòÁ½ÁËÂğ?",2,"×¼±¸ºÃÁË/return_complete","»¹Î´×¼±¸ºÃ/return_uncompleted")
+		Say("§· chuÈn bŞ ®ñ 5 v¹n l­îng ch­a?",2,"§· chuÈn bŞ xong/return_complete","VÉn ch­a chuÈn bŞ xong/return_uncompleted")
 	elseif (UTask_tr >= 70*256) then							--ÒÑ¾­³öÊ¦
-		Talk(1,"","µ½µ×ÊÇºóÉú¿ÉÎ·°¡£¡ÒÔÄãÄ¿Ç°µÄÎä¹¦ºÍµ¨Ê¶£¬¼ÙÒÔÊ±ÈÕ£¬±Ø»áÓĞÒ»·¬¾ªÌì¶¯µØµÄ´ó×÷Îª£¡Ï£ÍûÈÕºóÄãÎÒ²»»á³ÉÎªµĞÈË!")
+		Talk(1,"","ThËt lµ hËu sinh kh¶ óy! Víi tr×nh ®é vâ c«ng còng nh­ lßng cam ®¶m cña ng­¬i, sÏ cã ngµy lµm nªn nh÷ng chuyÖn kinh thiªn ®éng ®Şa! Hy väng sau khi ng­¬i xuÊt s­, sÏ kh«ng trë thµnh kÎ thï cña l·o phu!")
 	else
-		Talk(1,"","Ö»ÒªÊÇÇàÄê²Å¿¡Ïë¼ÓÈë±¾½Ì£¬±¾½Ì¶¼Ê®·Ö»¶Ó­.")
+		Talk(1,"","ChØ cÇn nh÷ng ai cã tµi, thËt lßng muèn gia nhËp bæn gi¸o, bæn gi¸o s½n sµng hoan nghªnh.")
 	end
 end;
 ---------------------- ¼¼ÄÜµ÷ÕûÏà¹Ø ------------------------
@@ -134,16 +134,16 @@ function check_skill()
 --		Msg2Player("ÄãÑ§»áÁËÕòÅÉ¾øÑ§ÌìÄ§½âÌå¡¢Îä¹¦ÍµÌì»»ÈÕ¡¢Ä§ÑæÆßÉ±¡£")
 --		Say("ÍêÑÕºêÁÒ£ºÎªÊ¦Õâ´Î±Õ¹Ø¿àË¼ÊıÈÕ£¬¸Ä½øÁË±¾ÃÅÎä¹¦£¬ÏÖÔÚ´«ÊÚÓÚÄã¡£ÄãÑ§ÍêºóÏÈ»ØÈ¥ºÃºÃĞİÏ¢Ò»·¬£¬ÒÔÃâÉËµ½¾­Âö¡£",1,"¶àĞ»Ê¦¸¸/KickOutSelf")
 --	else
-		Say("ÄãÏëÈ¥ÄÏ³¯´òÌ½ÏûÏ¢Âğ?",2,"¿ÉÒÔÊôÏÂÒ²ÏëÇÖÈë½­ºşÒ»ÅÉ. /goff_yes","ÊôÏÂ¸Ğ¾õÁ·Ï°²»¹»/no")
+		Say("Ng­¬i cã muèn ®i Nam triÒu th¨m dß t×nh h×nh?",2,"§­îc, thuéc h¹ còng ®ang muèn th©m nhËp giang hå mét phen. /goff_yes","Thuéc h¹ tù thÊy luyÖn tËp ch­a ®ñ /no")
 --	end
 end
 
 ----------------------- ÖØ·µÃÅÅÉÏà¹Ø --------------------
 function goff_yes()
-	Talk(1,"","ºÜºÃ£¬¼¼ÄÜ²»ÒªÂäÈëÄÏ³¯µÄÓÕ»ó. ")
+	Talk(1,"","Tèt! Nhí ®õng sa vµo nh÷ng c¸m dç cña Nam triÒu. ")
 	SetTask(4,70*256)
-	AddNote("Àë¿ªÌìÈÌ½Ì£¬¼ÌĞøĞĞ×ß½­ºş")
-	Msg2Player("ÄãÀë¿ªÌìÈÌ½Ì£¬¼ÌĞøĞĞ×ß½­ºş")
+	AddNote("Rêi khái Thiªn NhÉn Gi¸o, tiÕp tôc hµnh tÈu giang hå. ")
+	Msg2Player("Ban rêi khái Thiªn NhÉn Gi¸o, tiÕp tôc hµnh tÈu giang hå. ")
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
@@ -177,41 +177,41 @@ function defection_yes()			-- ×ªÅÉ£¬ÊÕ»ØÔ­ÃÅÅÉÎä¹¦¼¼ÄÜ
 	SetTask(4,75*256)				-- ÎªÔ­ÃÅÅÉ×÷¸ö±ê¼Ç
 	SetRank(71)
 	if (GetRepute() < 200) then
-		Msg2Player("ÒòÎªĞĞÎªÓëÃÅÅÉ²»ÖÒ£¬ÃûÍû¼õÉÙ"..GetRepute().."µã!")
+		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng "..GetRepute().."®iÓm!")
 		AddRepute(-1 * GetRepute())
 	else
-		Msg2Player("ÒòÎªĞĞÎªÓëÃÅÅÉ²»ÖÒ£¬ÃûÍû¼õÉÙ200µã! ")
+		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200 ®iÓm! ")
 		AddRepute(-200)
 	end
-	AddNote("·ÅÆúÌìÈÌ½ÌµÄ¼¼ÄÜºÍ³ÆºÅºó£¬ÏÖÔÚÄã¿ÉÒÔ¼ÓÈëØ¤°ïÁË. ")
-	Msg2Player("·ÅÆúÌìÈÌ½ÌµÄ¼¼ÄÜºÍ³ÆºÅºó£¬ÏÖÔÚÄã¿ÉÒÔ¼ÓÈëØ¤°ïÁË. ")
-	Talk(1,"KickOutSelf","¼ÈÈ»Èç´Ë£¬Çë·Ï³ıÎä¹¦£¬ÄãÏëÔõÃ´Ñù¶¼ĞĞ. ")
+	AddNote("Sau khi bá ®i c¸c kü n¨ng vµ danh hiÖu tr­ëng l·o cña Thiªn NhÉn Gi¸o, B©y giê b¹n cã thÓ gia nhËp C¸i Bang. ")
+	Msg2Player("Sau khi bá ®i c¸c kü n¨ng vµ danh hiÖu tr­ëng l·o cña Thiªn NhÉn Gi¸o, B©y giê b¹n cã thÓ gia nhËp C¸i Bang. ")
+	Talk(1,"KickOutSelf","§· thÕ, h·y phÕ bá vâ c«ng, ng­¬i thİch thÕ nµo sÏ nh­ thÕ ®ã. ")
 end
 
 function defection_no()
-	AddNote("Äã·ÅÆú¼ÓÈëØ¤°ï. ")
-	Msg2Player("Äã·ÅÆú¼ÓÈëØ¤°ï. ")
+	AddNote("B¹n tõ bá ı ®Şnh gia nhËp C¸i Bang. ")
+	Msg2Player("B¹n tõ bá ı ®Şnh gia nhËp C¸i Bang. ")
 	SetTask(8,1*256)			-- ÎªÆóÍ¼ÅÑÊ¦×ö¸ö±ê¼Ç£¬ÒÔ±¸½«À´²»Ê±Ö®Ğè
 end
 
 function return_sele()
-	Say("ÄãËµÏë·µ»Ø±¾½Ì?",2,"×ñÃü!/return_yes","²». /return_no")
+	Say("Ng­¬i nãi muèn quay l¹i bæn gi¸o ­?",2,"Tu©n lÖnh!/return_yes","Kh«ng. /return_no")
 end;
 
 function return_yes()
-	Talk(2,"","Ïëµ½±¾½Ì¼è¿àµÄ·¢Õ¹¹ı³Ì£¬±¾½Ì¹æ¶¨·µ»Ø±¾½ÌĞèÒª½»5ÍòÁ½ ","ºÃ£¬µÜ×ÓÒÑ´øÁË5ÍòÁ½.")
+	Talk(2,"","§Ó nhí ®Õn qu¸ tr×nh ph¸t triÓn tõ gian khæ cña bæn gi¸o, bæn gi¸o quy ®Şnh nh÷ng ®Ö tö ngao du giang hå nh­ ng­¬i muèn quay trë l¹i ph¶i giao nép 50000 l­îng. ","V©ng, ®Ö tö ®· ®em 5 v¹n l­îng ®Õn.")
 	SetTask(4,70*256+20)
-	AddNote("½»ÎåÍòÁ½·µ»ØÌìÈÌ½Ì. ")
-	Msg2Player("½»ÎåÍòÁ½·µ»ØÌìÈÌ½Ì. ")
+	AddNote("Giao nép 5 v¹n l­îng ®Ó quay l¹i Thiªn NhÉn Gi¸o. ")
+	Msg2Player("Giao nép 5 v¹n l­îng ®Ó quay l¹i Thiªn NhÉn Gi¸o. ")
 end;
 
 function return_no()
-	Talk(1,"","ÒÔºó·µ»ØÀ´·şÎñ±¾½Ì£¬ÏÖÔÚ»¹ÓĞÎ´×öÍêµÄÊÂ. ")
+	Talk(1,"","Sau nµy sÏ quay vÒ phôc vô bæn gi¸o, cßn b©y giê vÉn cßn chuyÖn t¹i h¹ ch­a lµm xong. ")
 end;
 
 function return_complete()
 	if(GetCash() >= 50000) then
-		Talk(1,"","ºÜºÃ£¬ÄãÒÑ³ÉÎª±¾½Ì¼ÇÃûµÜ×Ó£¬ÎÒ»áÏò±¾½ÌÊ¥½Ì³¤ÀÏÌá°ÎÄã£¬²»ÒªÈÃÎÒÊ§Íû.")
+		Talk(1,"","RÊt tèt! Ng­¬i ®· trë thµnh Kı danh ®Ö tö cña bæn gi¸o. Ta sÏ ®Ò cö ng­¬i víi Th¸nh Gi¸o Tr­ëng L·o cña bæn gi¸o, ®õng lµm ta thÊt väng.")
 		Pay(50000)
 		SetFaction("tianren")	
 		SetCamp(2)
@@ -223,43 +223,43 @@ function return_complete()
 --			AddMagic(148)
 --			AddMagic(150)
 		add_tr(70)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-		Msg2Player("ÄãÒÑÑ§µ½ÕòÅÉ¾øÑ§£ºÌìÄ§½âÌå£¬ÓÎÌì»»ÈÕ£¬Ä§ÑæÆßÉ±. ")
+		Msg2Player("B¹n ®· häc ®­îc trÊn ph¸i tuyÖt häc: Thiªn Ma Gi¶i ThÓ, Du Thiªn Ho¸n NhËt, Ma DiÖm ThÊt S¸t. ")
 --		end
-		AddNote("·µ»ØÌìÈÌ½Ì")
-		Msg2Player(GetName().."·µ»ØÌìÈÌ½Ì£¬±»·âÎªÊ¥½Ì³¤ÀÏ. ")
+		AddNote("Quay trë l¹i Thiªn NhÉn Gi¸o, l¹i ®øng vµo hµng ngò. ")
+		Msg2Player(GetName().."Quay trë l¹i Thiªn NhÉn Gi¸o, ®­îc phong lµm Th¸nh Gi¸o tr­ëng l·o. ")
 	else
-		Talk(2,"","ÔõÃ´ÁË£¿ÄãÖ»´øÕâÃ´¶àÒøÁ½?","¶Ô²»Æğ£¬ÈÃÎÒ¼ì²éÒ»ÏÂ.")
+		Talk(2,"","Sao? Ng­¬i chØ ®em bao nhiªu ng©n l­îng th«i sao?","Xin lçi! §Ó ta kiÓm tra l¹i.")
 	end
 end;
 
 function return_uncompleted()
-	Talk(1,"","¿ìµã!")
+	Talk(1,"","õ, nhanh lªn!")
 end;
 
 ----------------------- ³öÊ¦ÈÎÎñ ------------------------
 function L60_get_yes()
-	Talk(1,"","ÀÏ·ò¹ûÈ»Ã»ÓĞ¿´×ßÑÛ£¬Äãµ¹ÊÇÓĞĞ©µ¨Ê¶£¡²»¹ıÔÚ½øÈëÊ¥¶´Ö®Ç°£¬Äã±ØĞëÏÈÕÒµ½Á÷ÂäÔÚ<color=Red>ãê¾©<color>ÀïµÄ<color=Red>Îå°Ñ¶Ï½£<color> .")
+	Talk(1,"","L·o phu qu¶ kh«ng nh×n lÇm ng­êi, ng­¬i qu¶ cã lßng can ®¶m! Nh­ng tr­íc khi vµo Th¸nh ®éng, ph¶i t×m ®­îc <color=Red>5 thanh ®o¶n kiÕm<color> l­u l¹c ë <color=Red>BiÖn Kinh<color> cho ta.")
 	SetTask(4, 60*256+20)
-	AddNote("¼ûÍêÑÕºéÁÒ£¬½Ó³öÊ¦ÈÎÎñ£¬Ê×ÏÈÒªÈ¥ãê¾©ÕÒÎå°Ñ¶Ï½£. ")
-	Msg2Player("¼ûÍêÑÕºéÁÒ£¬½Ó³öÊ¦ÈÎÎñ£¬Ê×ÏÈÒªÈ¥ãê¾©ÕÒÎå°Ñ¶Ï½£. ")
+	AddNote("GÆp Gi¸o chñ Hoµn Nhan Hïng LiÖt, tiÕp nhËn nhiÖm vô xuÊt s­. Tr­íc tiªn ph¶i ®i BiÖn Kinh t×m 5 thanh ®o¶n kiÕm. ")
+	Msg2Player("GÆp Gi¸o chñ Hoµn Nhan Hïng LiÖt, tiÕp nhËn nhiÖm vô xuÊt s­. Tr­íc tiªn ph¶i ®i BiÖn Kinh t×m 5 thanh ®o¶n kiÕm. ")
 end;
 
 function L60_get_no()
-	Talk(1,""," ÄÑµÀÄã²»×¢ÖØÃûÉùÂğ?")
+	Talk(1,""," LÏ nµo ng­¬i kh«ng chó träng h­ danh sao?")
 end;
 
 function L60_prise()
 	DelItem(132)
 --	AddGlobalCountNews(GetName().."ÒÕ³É³öÊ¦£¬¸æ±ğ¸÷Î»½ÌÓÑÄÏÏÂ½­ºş¡£", 1)
-	Msg2SubWorld("ÌìÈÌ½ÌĞÅÍ½"..GetName().."³öÊ¦³É¹¦£¬¸æ±ğ¸÷Î»½ÌÓÑ·µ»ØÄÏ·½. ")
+	Msg2SubWorld("Tİn ®å Thiªn NhÉn Gi¸o "..GetName().."XuÊt s­ thµnh c«ng, c¸o biÖt ch­ vŞ gi¸o h÷u trë vÒ ph­¬ng Nam. ")
 	SetRank(71)
 	SetTask(28,0)		-- ½«×Ó±äÁ¿¸´Î»
 	SetTask(4, 70*256)
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
-	AddNote("·µ»ØÌìÈÌ½Ì£¬°ÑÑòÆ¤¾í¸øÍêÑÕºéÁÒ£¬Íê³É³öÊ¦ÈÎÎñ£¬ÉıÎªÈøÂú·¨Íõ ")
-	Msg2Player("¹§Ï²ÄãÒÕ³É³öÊ¦£¡ÄãÒÑ±»·âÎªÌìÈÌ½ÌµÄÈøÂú·¨Íõ£¬ÃûÍûÔö¼Ó120µã! ")
+	AddNote("Quay l¹i Thiªn NhÉn §¹i ®×nh, ®­a quyÓn s¸ch da dª cho Hoµn Nhan Hïng LiÖt, hoµn thµnh nhiÖm vô xuÊt s­. Th¨ng cÊp T¸t M·n Ph¸p S­. ")
+	Msg2Player("Chóc mõng B¹n! XuÊt s­ thµnh c«ng! §­îc phong lµ T¸t M·n Ph¸p S­! Danh väng t¨ng thªm 120 ®iÓm! ")
 	AddRepute(120)
 end;
 

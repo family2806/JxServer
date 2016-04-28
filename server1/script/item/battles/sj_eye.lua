@@ -5,7 +5,7 @@ Include("\\script\\item\\battles\\addmarshalpoint.lua")
 function add495()
 		level = random(10,20);
 		AddSkillState(495, level, 0, 1080 )	--玩家获得增加命中率
-		Msg2Player("<#>你获得了<color=0xB5FDD7>1分钟的攻击命中率：增加"..(level*10).."<#>％")	
+		Msg2Player("<#> B筺 nh薾 頲 <color=0xB5FDD7> t╪g s鴆 m筺h t蕁 c玭g trong 1 ph髏"..(level*10).."<#> %")	
 end
 
 Tab={add495}

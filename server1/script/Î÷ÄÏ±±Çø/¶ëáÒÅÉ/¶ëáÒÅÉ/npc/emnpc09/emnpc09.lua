@@ -15,19 +15,19 @@ function main()
 			if (HaveItem(120) == 1) then		-- ÈÎÎñÍê³É
 				L30_prise()
 			else
-				Talk(1,"","Âé·³Äãµ½<color=Red>ºóÉ½ºş±ß<color>ÕÒÕÒ¿´. »ğºü×î°®³Ô<color=Red>¼¦ÍÈ<color>£¬ÄãµÃÓÃ¼¦ÍÈÒıËü»ØÀ´£¬·ñÔòËü²»»áºÍÄ°ÉúÈË×ßµÄ.")
+				Talk(1,"","PhiÒn muéi ®Õn<color=Red>bê hå ë hËu s¬n<color>t×m xem. <color=Red>Háa hå<color>thİch ¨n<color=Red>®ïi gµ<color>nhÊt.H·y dïng ®ïi gµ ®Ó dô nã trë vÒ, nÕu kh«ng nã sÏ kh«ng ®i víi kÎ l¹ mÆt ®©u.")
 			end
 		elseif (UTask_em == 30*256) and (GetLevel() >= 30) then		-- 30¼¶ÈÎÎñÆô¶¯
-			Say("<color=Red>ÎÒÑøµÄ<color=Red>»ğºü<color>²»¼ûÁË£¬ÄãÄÜ°ïÎÒÕÒÕÒÂğ?", 2, "°ïÖúÑ°ÕÒ/L30_get_yes", "Ã»Ê±¼ä/L30_get_no")
+			Say("<color=Red>Háa hå<color> cña ta kh«ng thÊy n÷a, muéi cã thÓ gióp ta t×m kh«ng?", 2, "T×m gióp /L30_get_yes", "Kh«ng cßn thêi gian n÷a /L30_get_no")
 		elseif (UTask_em >= 40*256) then   							--ÒÑ¾­Íê³É30¼¶ÈÎÎñ£¬ÉĞÎ´³öÊ¦
-			Skill150Dialog("Ğ¡Ê¦ÃÃ£¬Ğ»Ğ»Äã°ïÎÒ!")
+			Skill150Dialog("TiÓu s­ muéi, c¸m ¬n muéi gióp ta!")
 		else
-			Skill150Dialog("»ğºüÑ½»ğºü£¬ÄãÅÜµ½ÄÄÀïÈ¥ÁË£¿¿ìµã³öÀ´°É!")
+			Skill150Dialog("Háa Hå ®©u, Háa Hå ng­¬i ë ®©u, ng­¬i ch¹y ®©u råi h¶? Nhanh ra ®©y mau!")
 		end
 	elseif (UTask_em == 70*256) then								--ÒÑ¾­³öÊ¦
-		Skill150Dialog("Ğ¡Ê¦ÃÃ£¬ÄãÒªÏÂÉ½ÁËÂğ£¿ÎÒºÍ»ğºü¶¼»áÏëÄãµÄ.")
+		Skill150Dialog("TiÓu s­ muéi ph¶i h¹ s¬n µ? Ta vµ háa hå sÏ rÊt nhí muéi.")
 	else
-		Skill150Dialog("ÎÒµÄ»ğºüÒÑ¾­Í¨ÁéÁË£¬²»¿ÉÄÜÊÇ²»Á¼µÄÈËÁË.")
+		Skill150Dialog("Háa Hå cña ta ®· th«ng linh råi, kh«ng thÓ nµo lµ ng­êi bÊt l­¬ng ®­îc.")
 	end
 end;
 
@@ -45,17 +45,17 @@ function Skill150Dialog(szTitle)
 end
 
 function L30_get_yes()
-	Talk(1,"","Âé·³Äãµ½<color=Red>ºóÉ½ºş±ß<color>ÕÒÕÒ¿´¡£<color=Red>»ğºü<color>×î°®³Ô<color=Red>¼¦ÍÈ<color>£¬ÄãµÃÓÃ¼¦ÍÈÒıËü»ØÀ´£¬·ñÔòËü²»»áºÍÄ°ÉúÈË×ßµÄ.")
+	Talk(1,"","Tèt l¾m! PhiÒn muéi ®Õn <color=Red>bê hå ë hËu s¬n<color> t×m xem. Háa hå thİch ¨n <color=Red>®ïi gµ<color>. H·y dïng ®ïi gµ ®Ó dô nã trë vÒ, nÕu kh«ng nã sÏ kh«ng ®i víi kÎ l¹ mÆt ®©u.")
 	SetTask(1, 30*256+50)
-	AddNote(" ÔÚ¶ëáÒÅÉºóÌÃ(242, 305) ¼ûÄÂÔÆ´È£¬½Ó<color=red>»ğºüÈÎÎñ<color>, È¥ºóÉ½ÕÒ»ğºü")
-	Msg2Player("½ÓÄÂÔÆ´È»ğºüÈÎÎñ£¬µ½ºóÉ½ÕÒ»ğºü")
+	AddNote("ë gÇn hËu ®­êng Nga Mi ph¸i (242, 305) gÆp Môc V©n T­, nhËn <color=red>nhiÖm vô Ho¶ Hå<color>, ®i ®Õn ph¸i sau nói Ng¹c Ng­ t×m Ho¶ Hå. ")
+	Msg2Player("TiÕp nhËn nhiÖm vô Ho¶ Hå cña Môc V©n T­, ®i ®Õn phİa sau nói Ng¹c Ng­ t×m Ho¶ Hå. ")
 end;
 
 function L30_get_no()
 end;
 
 function L30_prise()
-	Talk(1,"","»ğºü£¡ÄãÕâ¸öÌÔÆøµÄĞ¡¶«Î÷£¬ÏÂ´Î¿É²»×¼ÂÒÅÜÁË£¡Ğ»Ğ»Äã°ïÎÒÕÒ»Ø»ğºü!")
+	Talk(1,"","Háa hå µ! Muéi thËt lµ ®å tinh ranh, lÇn sau kh«ng ®Ó ng­¬i ch¹y lung tung n÷a! C¶m ¬n muéi ®· gióp ta!")
 	DelItem(120)
 	SetRank(16)
 	SetTask(1, 40*256)
@@ -63,6 +63,6 @@ function L30_prise()
 --	AddMagic(82)
 --	AddMagic(89)
 	add_em(40)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã±»·âÎª°×Á«ÏÉ×Ó")
-	AddNote("´ø»ğºü»ØÈ¥¸øÄÂÔÆ´È£¬Íê³É»ğºüÈÎÎñ£¬±»·âÎª°×Á«ÏÉ×Ó")
+	Msg2Player("Chóc mõng b¹n! §­îc phong lµ: B¹ch Liªn Tiªn Tö ")
+	AddNote("Mang Ho¶ Hå giao cho Môc V©n Tõ, hoµn thµnh nhiÖm vô Ho¶ Hå, ®­îc phong lµ: B¹ch Liªn Tiªn Tö ")
 end;	

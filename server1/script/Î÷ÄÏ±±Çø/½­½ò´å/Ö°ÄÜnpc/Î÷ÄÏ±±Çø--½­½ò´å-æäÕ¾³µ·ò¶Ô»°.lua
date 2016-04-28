@@ -6,5 +6,5 @@ Include("\\script\\global\\station.lua")
 --Include("\\script\\global\\skills_table.lua")
 
 function main(sel)
-	NewcomerStationCommon("车夫：要坐车去哪儿？");
+	NewcomerStationCommon("Mu鑞 ng錳 xe 甶 u?");
 end;

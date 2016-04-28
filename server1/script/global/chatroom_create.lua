@@ -2,7 +2,7 @@ MONEY_CREATECHATROOM = 50000
 
 function Checkup()
 	if (GetCash() < MONEY_CREATECHATROOM) then
-		Msg2Player("<#>±³°üÖÐ½ð¶î²»×ã <color=yellow>" .. MONEY_CREATECHATROOM.." Á½£¡<color>")
+		Msg2Player("<> trong tói ®eo l­ng sè tiÒn ch­a ®ñ <color=yellow>" .. MONEY_CREATECHATROOM.." hai <color>")
 		return 0
 	end
 	return 1

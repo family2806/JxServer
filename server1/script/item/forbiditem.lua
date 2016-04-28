@@ -47,7 +47,7 @@ end;
 function LoadItemType()
 	local b1 = TabFile_Load("\\settings\\item_type.txt", "ItemType");
 	if (b1 ~= 1) then
-		print("初始化物品类型文件失败！");
+		print("Kh雐 ng t謕 lo筰 h譶h v藅 ph萴 th蕋 b筰!");
 		return
 	end;
 	local nRowCount = TabFile_GetRowCount("ItemType");
@@ -68,7 +68,7 @@ LoadItemType()
 function LoadItemDetail()
 	local b1 = TabFile_Load("\\settings\\item_detail.txt", "ItemDetail");
 	if b1~=1 then
-		print("初始化物品分类文件失败！");
+		print("Kh雐 ng t謕 ph﹏ lo筰 v藅 ph萴 th蕋 b筰!");
 		return
 	end;
 	local nRowCount = TabFile_GetRowCount("ItemDetail");
@@ -98,7 +98,7 @@ LoadItemDetail()
 function LoadMapDetail()
 	local b1 = TabFile_Load("\\settings\\map_type.txt", "MapDetail");
 	if (b1 ~= 1) then
-		print("初始化地图分类文件失败！");
+		print("Kh雐 ng t謕 ph﹏ lo筰 map th蕋 b筰!");
 		return
 	end;
 	local nRowCount = TabFile_GetRowCount("MapDetail");

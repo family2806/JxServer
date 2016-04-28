@@ -19,7 +19,7 @@ function OnTimer()
 			RunMission(WLLS_MSID_COMBAT)
 		elseif (n_timer < WLLS_TIMER_FIGHT_PREP) then
 			local n_resttime = (WLLS_TIMER_FIGHT_PREP - n_timer)*WLLS_TIMER_FIGHT_FREQ
-			Msg2MSAll(WLLS_MSID_COMBAT, "◊º±∏Ω◊∂Œ£∫ƒ„ªπ £µƒ◊º±∏ ±º‰Œ™<color=yellow>"..n_resttime.."<color> √Î .")
+			Msg2MSAll(WLLS_MSID_COMBAT, "ThÍi gian chu»n bﬁ: Cﬂn lπi <color=yellow>"..n_resttime.."<color> gi©y.")
 		else
 			local n_resttime = WLLS_TIMER_FIGHT_TOTAL - n_timer
 			if (n_resttime <= 0) then --±»»¸Ω· ¯
@@ -30,24 +30,24 @@ function OnTimer()
 					local count_org = GetMSPlayerCount( WLLS_MSID_COMBAT, i )
 					local count_emy = GetMSPlayerCount( WLLS_MSID_COMBAT, i + 1 )
 					if (count_org > 0 or count_emy > 0) then --≤ª «À´∑Ω∂ºŒ™ø’
-						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>’Ω≥°’Ω ¬"..count_emy.." »À", i)
-						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>’Ω≥°’Ω ¬"..count_org.." »À", i + 1)
+						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>ßËi ph≠¨ng cﬂn "..count_emy.." ng≠Íi", i)
+						Msg2MSGroup(WLLS_MSID_COMBAT, "<color=pink>ßËi ph≠¨ng cﬂn "..count_org.." ng≠Íi", i + 1)
 					end
 				end
 				--±®∏Ê…À∫¶¡ø
 				local tb_camp	= wlls_get_ms_troop()
 				for i = 1, getn(tb_camp) do
 					local n_dmg = wlls_get_ms_damage(tb_camp[i])
-					Msg2MSGroup(WLLS_MSID_COMBAT, "Œ“∑Ωƒø«∞±ª¥Ú÷–: <color=yellow>"..n_dmg.."<color>", tb_camp[i])
+					Msg2MSGroup(WLLS_MSID_COMBAT, "ß∏nh trÛng mÙc ti™u: <color=yellow>"..n_dmg.."<color>", tb_camp[i])
 				end
 				--±»»¸ £”‡ ±º‰
 				n_resttime = n_resttime * WLLS_TIMER_FIGHT_FREQ;
 				local n_RestMin = floor( n_resttime / 60 );
 				local n_RestSec = mod( n_resttime,60 );
 				if (n_RestMin == 0) then
-					Msg2MSAll( WLLS_MSID_COMBAT, "’Ω∂∑Ω◊∂Œ£∫±»»¸ ±º‰ªπ £<color=yellow>"..n_RestSec.."<color> √Î." );
+					Msg2MSAll( WLLS_MSID_COMBAT, "Giai Æoπn chi’n Æ u: cﬂn <color=yellow>"..n_RestSec.."<color> gi©y" );
 				elseif (n_RestSec == 0) then
-					Msg2MSAll( WLLS_MSID_COMBAT, "’Ω∂∑Ω◊∂Œ£∫±»»¸ ±º‰ªπ £<color=yellow>"..n_RestMin.."<color> ∑÷÷”." );
+					Msg2MSAll( WLLS_MSID_COMBAT, "Giai Æoπn chi’n Æ u: cﬂn <color=yellow>"..n_RestMin.."<color> phÛt" );
 				end;
 			end
 		end

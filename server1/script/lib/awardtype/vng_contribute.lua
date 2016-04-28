@@ -7,5 +7,5 @@ VngEnergyType.pFun = function(nAmount)
 		AddContribution(nAmount)		
 	end
 end
-VngEnergyType.szMsgFormat = "获得 %d 帮会贡献点"
+VngEnergyType.szMsgFormat = "Nh薾 頲 %d 甶觤 c鑞g hi課 bang h閕"
 VngEnergyType:Reg()

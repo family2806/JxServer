@@ -24,20 +24,20 @@ function main()
 	local szNpcName = GetNpcName(nNpcIndex);
 	if NpcName2Replace then szNpcName = NpcName2Replace(szNpcName); end
 	local tbDailog = DailogClass:new(szNpcName);
-	tbDailog.szTitleMsg = "<#><npc>´óÏÀÑøÂíºÜ¶àÄê£¬Ö»¿´Ò»ÑÛ¾ÍÖªµÀºÃ²»ºÃ!"
+	tbDailog.szTitleMsg = "<#><npc>T¹i h¹ nu«i ngùa rÊt nhiÒu n¨m, chØ cÇn xem qua lµ biÕt tèt hay kh«ng!"
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex);
-	tbDailog:AddOptEntry("ÄÇÊ±ÊÇÄã½ĞÎÒ?", horse_get);
+	tbDailog:AddOptEntry("Lóc n·y ng­¬i gäi ta?", horse_get);
 
 	tbDailog:Show();
 end
 
 function horse_get()
-	Talk(4,"sele_color","Ó¢ĞÛÇëÁô²½. ","ĞÖÌ¨, ÓĞÊ²Ã´ÒªÖ¸½ÌµÄ","ÔÚÏÂÊÇÉò¾Ô©u, ÏÖÔÚÓĞÒ»Æ¥±¦Âí£¬¿ÉÒÔ·É×ßÇ§Àï. ÕâÎ»Ó¢ĞÛ·ç²É²»·², Ò»¶¨ÊÇ¸ßÊÖ¡£´óÏÀµÄ±¦Âí²»Ôø±»Æ¥·òÑ±·ş. ","ÈÃÎÒÊÔÊÔ¿´ÄãµÄ±¦Âí,,, ")
+	Talk(4,"sele_color","VŞ anh hïng nµy xin dõng b­íc ®·. ","Huynh ®µi, cã chuyÖn g× cÇn chØ gi¸o? ","T¹i h¹ lµ ThÉm C©u, hiÖn cã mét con ngùa quı, cã thÓ phi ®­îc ngµn dÆm. VŞ anh hïng ®©y phong th¸i bÊt phµm, nhÊt ®Şnh lµ 1 cao thñ. Ngùa quı cña t¹i h¹ kh«ng bao giê chŞu khuÊt phôc kÎ thÊt phu. ","§Ó ta xem thö ngùa quı cña huynh,,, ")
 end
 
 function sele_color()
-	Say("Ó¢ĞÛ¿´! ",6,"Õâ²»ÊÇÎÚÔÆÌ¤Ñ©Âğ!/buy_black","Õâ²»ÊÇ³àÍÃ±¦ÂíÂğ! /buy_red","Õâ²»ÊÇ¾øÓ°Âğ! /buy_cyan","Õâ²»ÊÇµÄÂ¬Âğ! /buy_yellow","Õâ²»ÊÇÕÕÒ¹ÓñÊ¨×ÓÂğ! /buy_white","ÕâÊÇÊ²Ã´Âí?ÎÒÑ§Ê¶ÓĞÏŞ/buy_none")
+	Say("Anh hïng h·y xem! ",6,"§©y kh«ng ph¶i lµ ¤ V©n §¹p TuyÕt sao! /buy_black","§©y kh«ng ph¶i lµ Xİch Thè B¶o M· sao! /buy_red","§©y kh«ng ph¶i lµ TuyÖt ¶nh sao! /buy_cyan","§©y kh«ng ph¶i lµ §İch L« sao! /buy_yellow","§©y ch¼ng ph¶i lµ ChiÕu D¹ Ngäc S­ Tö sao! /buy_white","§©y lµ ngùa g× vËy? T¹i h¹ hiÓu biÕt cßn kĞm /buy_none")
 end
 
 function buy_black()
@@ -61,16 +61,16 @@ function buy_white()
 end
 
 function buy_none()
-	Talk(1,"","Ò»°ïÖ®Ö÷£¬ÊÇÊ¦³¤¼¶µÄÈËÎï×îºóÔõÃ´Ò²²»ÖªµÀÕâ¸öÊÇÊ²Ã´Âí£¿Õæ²»ºÃÒâË¼£¬¿´À´Äã¿´´íÁË!")
+	Talk(1,"","NhÊt bang chi chñ, lµ mét nh©n vËt bËc thÇy lµm sao kh«ng biÕt ®©y rèt cuéc lµ ngùa g× chø? Thø lçi, xem ra t¹i h¹ ®· nh×n lÇm ng­êi!")
 end
 
 function the_buy(i)
 	SetTaskTemp(49,i)
 	x = GetTaskTemp(17)
 	if (x == 1000) then
-		Say("Ã»´í! ÄãÕæÊÇÓ¢ĞÛ. ÔÚÏÂ±¾À´²»ÏëÂôÕâÆ¥Âí, µ«ÏÖÔÚÕı¼±Ğè1000 Á½, ¿´Ó¢ĞÛÒ²ÕæµÄÏ²»¶ËüÒò´Ë¿ËÖÆ×¡ÄÚĞÄµÄ²»ÉáÂô¸øÓ¢ĞÛ, Ï£ÍûÓ¢ĞÛ¿ÉÒÔÉÆ´ıËü¡£",2,"ÎÒÒ»¶¨ºÃºÃ¶ÔËü/buy_yes","Ò»Ê±È¥ÄÄÕÒÕâÃ´¶àÇ®/buy_no")
+		Say("Kh«ng sai! Ng­êi qu¶ thËt lµ anh hïng. T¹i h¹ vèn ch¼ng muèn b¸n con ngùa nµy ®©u, nh­ng v× ®ang cÇn gÊp 1000 l­îng b¹c, v· l¹i nh×n thÊy anh hïng còng thËt sù thİch nã nªn nĞn lßng mµ b¸n nã cho anh hïng, mong r»ng anh hïng h·y th­¬ng yªu nu«i d­ìng nã ",2,"kh«ng sao ®©u, ta nhÊt ®Şnh sÏ ®èi xö tèt víi nã mµ /buy_yes","NhÊt thêi lµm sao t×m ra ®­îc sè tiÒn nµy /buy_no")
 	else
-		Say("Ã»´í! ÄãÕæÊÇÓ¢ĞÛ. ÔÚÏÂ±¾À´²»ÏëÂôÕâÆ¥Âí, µ«ÏÖÔÚÕı¼±Ğè1500 Á½, ¿´Ó¢ĞÛÒ²ÕæµÄÏ²»¶ËüÒò´Ë¿ËÖÆ×¡ÄÚĞÄµÄ²»ÉáÂô¸øÓ¢ĞÛ, Ï£ÍûÓ¢ĞÛ¿ÉÒÔÉÆ´ıËü",2,"ÎÒÒ»¶¨ºÃºÃ¶ÔËü/buy_yes","Ò»Ê±È¥ÄÄÕÒÕâÃ´¶àÇ®/buy_no")
+		Say("Kh«ng sai! Ng­êi qu¶ thËt lµ anh hïng. T¹i h¹ vèn ch¼ng muèn b¸n con ngùa nµy ®©u, nh­ng v× ®ang cÇn gÊp 1500 l­îng b¹c, v· l¹i nh×n thÊy anh hïng còng thËt sù thİch nã nªn nĞn lßng mµ b¸n nã cho anh hïng, mong r»ng anh hïng h·y th­¬ng yªu nu«i d­ìng nã ",2,"kh«ng sao ®©u, ta nhÊt ®Şnh sÏ ®èi xö tèt víi nã mµ /buy_yes","NhÊt thêi lµm sao t×m ra ®­îc sè tiÒn nµy /buy_no")
 	end
 end
 
@@ -83,12 +83,12 @@ function buy_yes()
 		end
 		Pay(x * 10000)
 		AddItem(0,10,5,i,0,0,0)
-		Talk(1,"","Âí¶ù°¡Âí¶ù! ´Ó½ñÍùºóÄã¾Í¸ú×ÅÕâÎ»Ó¢ĞÛÁË£¬Ò»¶¨ÒªÌı»°°¡!")
+		Talk(1,"","Ngùa ¬i ngùa! Tõ ®©y vÒ sau ng­¬i h·y ®i theo vŞ anh hïng nµy nhĞ, nhÊt ®Şnh ph¶i ngoan ngo·n ®ã!")
 	else
-		Talk(1,"","ÎÒÏÖÔÚÉíÉÏÒøÁ½²»¹»£¬ÄãÏÈÄÃ×ÅÕâĞ©Ç®!")
+		Talk(1,"","Ta hiÖn giê trong ng­êi kh«ng mang theo ®ñ ng©n l­îng, huynh t¹m thêi cÇm ®ì sè tiÒn nµy vËy!")
 	end
 end
 
 function buy_no()
-	Talk(1,"","ÄÑµÀÊÇÕâĞ©Ç®ÈÃÓ¢ĞÛÎªÄÑÁË")
+	Talk(1,"","Kh«ng lÏ sè tiÒn nµy l¹i lµm khã anh hïng sao")
 end

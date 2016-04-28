@@ -4,22 +4,22 @@
 function main()
 		UTask_gb = GetTask(8)
 	if ((UTask_gb >= 50*256+30) and (UTask_gb <60)) then		-- £¨µÚÈı´Î£©
-		Talk(3,"","²Ü¹«¹«ÓĞÁî£¬Ã»ÓĞÉí·İ²»µÃÈë¹¬!×ß¿ª!",":TÎÒÓĞÍ¨ĞĞÁîÅÆ","ÓĞÍ¨ĞĞÁîÅÆÒ²²»ÄÜ½ø! ")
+		Talk(3,"","Tµo c«ng c«ng cã lÖnh! Kh«ng cã phËn sù kh«ng ®­îc nhËp cung! §i ®i!",":Ta cã LÖnh bµi th«ng hµnh","Cã lÖnh bµi th«ng hµnh còng kh«ng ®­îc vµo! ")
 --		SetTask(8,50*256+40)
 	elseif (UTask_gb == 50*256+20) and (HaveItem(139) == 1) then	-- £¨µÚ¶ş´Î£©
-		Msg2Player("ÁîÅÆÑéÖ¤ÎŞÎó£¬½øÈë»Ê¹¬. ")
+		Msg2Player("KiÓm tra lÖnh bµi kh«ng sai, tiÕn vµo Hoµng cung. ")
 		NewWorld(177, 1569, 3169)
 	elseif (UTask_gb == 50*256+10) then		--´ø×Å50¼¶ÈÎÎñ£¨µÚÒ»²½£©
-		Talk(3,"","Õ¾×¡Õ¾×¡£¬ÄãÊÇ»îµÃ²»ÄÍ·³ÁË¸ÒÔÚÕâÂÒÅÜ! ","ÔÚÏÂÊÇØ¤°ïµÜ×Ó£¬ÓĞÒ»¼ş¼«ÆäÖØÒªµÄ¶«Î÷Òª½»¸ø»ÊÉÏ","»ÊÉÏ²»ÊÇÈÎºÎÈË¶¼¿ÉÒÔ¼ûµÄ¡£Ã»ÓĞÕÅ´óÈËÃÜÊ¹µÄÍ¨ĞĞÁîÅÆË­¶¼±ğÏë½ø")
+		Talk(3,"","§øng l¹i! §øng l¹i! Ng­¬i ch¸n sèng hay sau mµ ch¹y lung tung n¬i ®©y?","T¹i h¹ lµ ®Ö tö C¸i Bang, cã mét th­ cùc kú quan träng ph¶i d©ng cho Hoµng th­îng","Cã ph¶i ai còng ®­îc gÆp Hoµng th­îng ®©u? Kh«ng cã lÖnh bµi th«ng hµnh cña Khu mËt sø Tr­¬ng ®¹i nh©n, ai còng kh«ng ®­îc vµo! ")
 		SetTask(8,50*256+20)
 	else
 		i = random(0,2)
 		if (i == 0) then
-			Talk(1,"","»Ê¹¬ÎÀ±ø£ºÎ¹Î¹Î¹£¡Õö´óÄãµÄ¹·ÑÛ£¬¿´¿´ÕâÊÇÊ²Ã´µØ·½£¡ºÃ´óµ¨×Ó£¬¾¹¸ÒÔÚ»Ê¹¬Ç°ÃæÂÒ¹ä£¡")
+			Talk(1,"","§øng l¹i! §øng l¹i! Ng­¬i ch¸n sèng hay sau mµ ch¹y lung tung n¬i ®©y?")
 		elseif (i == 1) then
-			Talk(1,"","»Ê¹¬ÎÀ±ø£º»Ê¹¬½ûµØ£¬ÉÃ´³ÕßËÀ£¡")
+			Talk(1,"","§øng l¹i! §øng l¹i! Ng­¬i ch¸n sèng hay sau mµ ch¹y lung tung n¬i ®©y?")
 		else
-			Talk(1,"","»Ê¹¬ÎÀ±ø£ºÕ¾×¡£¡Äã²»ÒªÃüÁË£¬¾¹¸ÒÉÃ´³»Ê¹¬£¡")
+			Talk(1,"","Hoµng cung cÊm ®Şa! Mau ®i ®i! ")
 		end
 	end
 end;

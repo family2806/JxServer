@@ -7,7 +7,7 @@
 function OnTimer()
 
 StopTimer()						--结束计时
-Msg2Player("药做好了 ")
+Msg2Player("Thu鑓  l祄 xong r錳 ")
 SetTask(66, 4)
 
 end

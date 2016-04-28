@@ -8,7 +8,7 @@ function main()
 	if (UTask_tr == 20*256+50) and (HaveItem(126) == 0) then
 		SetPropState()
 		AddEventItem(126)
-		Msg2Player("找到丢失的小灰驴. ")
-		AddNote("找到丢失的小灰驴. ")
+		Msg2Player("T譵 頲 Ti觰 Kh玦 la. ")
+		AddNote("T譵 頲 Ti觰 Kh玦 la. ")
 	end
 end;	

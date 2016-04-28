@@ -1,4 +1,4 @@
--- ³öÏÖÒ»¸ö¶Ô»°NPC·ë¹â¹â£¬ÒªÇóËùÓĞ¶ÓÓÑ²ÂÊı×Ö£¨1-100£©£¬¿ÉÒÔÍ¬Ê±²Â£¬1-100ÖĞËæ»úÒ»¸öÊÇĞÒÔËÊı×Ö£¬²Â¶ÔÁË¹ı¹Ø²¢²Â¶ÔµÄÈËÓĞ½±Àø£¬Ëæ»úÒ»¸öÊÇµ¹Ã¹Êı×Ö£¨²»µÈÓÚĞÒÔËÊı×Ö£©£¬²ÂÖĞµ¹Ã¹Êı×ÖµÄ»á±»¶ªµ½Íò»¨³Ø£¬¼ÇÒ»´ÎËÀÍö´ÎÊı
+-- ³öÏÖÒ»¸ö¶Ô»°NPCPhïng Quang Quang£¬ÒªÇóËùÓĞ¶ÓÓÑ²ÂÊı×Ö£¨1-100£©£¬¿ÉÒÔÍ¬Ê±²Â£¬1-100ÖĞËæ»úÒ»¸öÊÇĞÒÔËÊı×Ö£¬²Â¶ÔÁË¹ı¹Ø²¢²Â¶ÔµÄÈËÓĞ½±Àø£¬Ëæ»úÒ»¸öÊÇµ¹Ã¹Êı×Ö£¨²»µÈÓÚĞÒÔËÊı×Ö£©£¬²ÂÖĞµ¹Ã¹Êı×ÖµÄ»á±»¶ªµ½Íò»¨³Ø£¬¼ÇÒ»´ÎËÀÍö´ÎÊı
 
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
@@ -10,7 +10,7 @@ pTask = Task:New(42)
 
 function pTask:OnStart()
 	local pos = self.m_Pos.gujuesha
-	self.m_NpcIndex = DlgNpcManager:AddNpc("·ë¹â¹â", 1656, self.m_Maze.m_MapId, pos.x, pos.y, self)
+	self.m_NpcIndex = DlgNpcManager:AddNpc("Phïng Quang Quang", 1656, self.m_Maze.m_MapId, pos.x, pos.y, self)
 	self.m_Players = {}
 	self.m_LuckNumber = random(1, 100)
 	self.m_LoseNumber = random(1, 100)
@@ -28,7 +28,7 @@ function pTask:OnClose()
 end
 
 function pTask:Say(player)
-	player:AskClientForNumber("guess_number", 1, 100, "Çë²ÂÒ»¸öÊı(1-100)")
+	player:AskClientForNumber("guess_number", 1, 100, "H·y ®o¸n mét con sè (1-100)")
 end
 
 function pTask:Guess(num, player)
@@ -37,7 +37,7 @@ function pTask:Guess(num, player)
 	elseif (num == self.m_LoseNumber) then
 		-- TODO: here
 	else
-		player:Say("Äã²ÂµÄÊı²»¶Ô.")
+		player:Say("Ng­¬i ®o¸n sè kh«ng ®óng.")
 	end
 end
 

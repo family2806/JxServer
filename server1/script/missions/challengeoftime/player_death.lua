@@ -16,17 +16,17 @@ function OnDeath(index)
 		-- ÊÇ·ñ¶Ó³¤ÕóÍö
 		local name = GetMissionS(VARS_TEAM_NAME);
 		if (name == GetName()) then
-			broadcast(name .. "¶ÓÎé¶Ó³¤ÕóÍö!");
+			broadcast(name .. " ®éi tr­ëng ®éi ngò tö vong!");
 		end
 		
 		-- ÊÇ·ñÈ«¾ü¸²Ãğ
 		if (count == 0) then
-			broadcast(name .. "È«¾ü¸²Ãğ!");
+			broadcast(name .. " toµn ®éi tö vong hÕt!");
 		end
 	end
 	DelMSPlayer(MISSION_MATCH, 1);
 	-- ÔÚmissionÄÚÍ¨¸æÍæ¼ÒËÀÍö
-	Msg2MSAll(MISSION_MATCH, GetName() .. "²»ĞÒÕóÍö!");	
+	Msg2MSAll(MISSION_MATCH, GetName() .. " kh«ng may t¹i trËn tö vong!");	
 	SetLogoutRV(0)	
 	NewWorld(11,3207,4978)
 	-- ´«ËÍ»Ø±¨ÃûµØµã

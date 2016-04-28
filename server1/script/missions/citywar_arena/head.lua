@@ -82,7 +82,7 @@ function JoinCamp(Camp)
 	SetFightState(0)
 	LeaveTeam()
 	if (GetMSPlayerCount(MISSIONID, Camp) >= MAX_MEMBER_COUNT) then
-		Say("Õâ·½ÏÖÔÚÈËÊıÒÑÂú£¬²»ÄÜ¼ÓÈë!",0)
+		Say("Phe nµy hiÖn ®· ®ñ ng­êi, kh«ng thÓ gia nhËp!",0)
 		return
 	end;
 	
@@ -115,11 +115,11 @@ function JoinCamp(Camp)
 	--ÉèÖÃÏÂ´ÎËÀÍöµÄÔİÊ±ÖØÉúµã
 	if (Camp == 1) then
 		SetTempRevPos(GetLeavePos());
-		str = GetName().."<#>ÒÑ½øÈë"..GetMissionS(1).."<#> 1·½£¬ÏÖÔÚ³ÉÔ±ÊıÊÇ"..GetMSPlayerCount(MISSIONID,1);
+		str = GetName().."<#> ®· vµo"..GetMissionS(1).."<#> 1 bªn, sè thµnh viªn hiÖn t¹i"..GetMSPlayerCount(MISSIONID,1);
 		SetPos(CampPos1[1], CampPos1[2])
 	elseif (Camp == 2) then
 		SetTempRevPos(GetLeavePos());
-		str = GetName().."<#>ÒÑ½øÈë"..GetMissionS(2).."<#> 1·½£¬ÏÖÔÚ³ÉÔ±ÊıÊÇ"..GetMSPlayerCount(MISSIONID,2);
+		str = GetName().."<#> ®· vµo"..GetMissionS(2).."<#> 1 bªn, sè thµnh viªn hiÖn t¹i"..GetMSPlayerCount(MISSIONID,2);
 		SetPos(CampPos2[1], CampPos2[2])
 	else 
 		return

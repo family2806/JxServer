@@ -4,45 +4,45 @@ tbConfig[1] = --¾ÛÁ¦ÄıÉñÉ¢
 {
 	nId = 1,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ¾ÛÁ¦ÄıÉñÉ¢",
+	szName = "SuDungTuLucNgungThanTan",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30142,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:VnCheckInCity", {"default"}},
-		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {tbBITTSK_TU_LUC_NGUNG_THAN_TAN_LIMIT_USE, 0, "Ã¿ÈËÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ·1´Î.", "=="}},	
+		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {tbBITTSK_TU_LUC_NGUNG_THAN_TAN_LIMIT_USE, 0, "Mçi nh©n vËt chØ ®­îc sö dông vËt phÈm nµy 1 lÇn.", "=="}},	
 	},
 	tbActition = 
 	{		
 		{"tbVNG_BitTask_Lib:setBitTask", {tbBITTSK_TU_LUC_NGUNG_THAN_TAN_LIMIT_USE, 1}},
-		{"PlayerFunLib:AddExp",	{500e6,0,"·çÔÆÁîÅÆ","Ê¹ÓÃ¾ÛÁ¦ÄıÉñÉ¢"} },
+		{"PlayerFunLib:AddExp",	{500e6,0,"PhongVanLenhBai","SuDungTuLucNgungThanTan"} },
 	},
 }
 tbConfig[2] = --¾ÛÁ¦ÄıÉñÍè
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ¾ÛÁ¦ÄıÉñÍè",
+	szName = "SuDungTuLucNgungThanHoan",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30143,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:VnCheckInCity", {"default"}},
-		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {tbBITTSK_TU_LUC_NGUNG_THAN_HOAN_LIMIT_USE, 0, "Ã¿ÈËÖ»ÄÜÓÃÒ»´Î¸ÃÎïÆ·.", "=="}},	
+		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {tbBITTSK_TU_LUC_NGUNG_THAN_HOAN_LIMIT_USE, 0, "Mçi nh©n vËt chØ ®­îc sö dông vËt phÈm nµy 1 lÇn.", "=="}},	
 	},
 	tbActition = 
 	{		
 		{"tbVNG_BitTask_Lib:setBitTask", {tbBITTSK_TU_LUC_NGUNG_THAN_HOAN_LIMIT_USE, 1}},
-		{"PlayerFunLib:AddExp",	{1000e6,0,"·çÔÆÁîÅÆ","Ê¹ÓÃ¾ÛÁ¦ÄıÉñÍè"} },
+		{"PlayerFunLib:AddExp",	{1000e6,0,"PhongVanLenhBai","SuDungTuLucNgungThanHoan"} },
 	},
 }
 tbConfig[3] =
 {
 	nId = 3,
 	szMessageType = "FinishYesou",
-	szName = "Íê³ÉÒ°ÛÅÈÎÎñ",
+	szName = "hoµn thµnh 1 nhiÖm vô D· TÈu",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {0},
@@ -60,7 +60,7 @@ tbConfig[4] = --É±ÊÖboss
 {
 	nId = 4,
 	szMessageType = "NpcOnDeath",
-	szName = "90¼¶É±ÊÖÈÎÎñ",
+	szName = "NhiÖm vô s¸t thñ cÊp 90",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -79,7 +79,7 @@ tbConfig[5] =
 {
 	nId = 5,
 	szMessageType = "FinishMail",
-	szName = "Íê³ÉĞÅÊ¹",
+	szName = "Hoµn thµnh tİn sø",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -97,7 +97,7 @@ tbConfig[6] = --ËÎ½ğ1000µã
 {
 	nId = 6,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ğ1000µã",
+	szName = "Tèng kim cao cÊp 1000 ®iÓm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {-2,"3"},
@@ -116,7 +116,7 @@ tbConfig[7] =
 {
 	nId = 7,
 	szMessageType = "Chuanguan",
-	szName = "Íê³É´³¹Ø20",
+	szName = "HoanThanhAi20",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"20"},
@@ -134,7 +134,7 @@ tbConfig[8] = --Ñ×µÛ®Õ
 {
 	nId = 8,
 	szMessageType = "YDBZguoguan",
-	szName = "Ñ×µÛ´³¹Ø6",
+	szName = "V­ît qua ¶i Viªm §Õ thø 6",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {6},
@@ -152,7 +152,7 @@ tbConfig[9] =
 {
 	nId = 9,
 	szMessageType = "FinishVLMC_VNG",
-	szName = "Íê³ÉÒ»¸öÎäÁÖÃËÖ÷ÈÎÎñ",
+	szName = "hoµn thµnh 1 nhiÖm vô Vâ L©m Minh Chñ",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -170,7 +170,7 @@ tbConfig[10] =
 {
 	nId = 10,
 	szMessageType = "FLD_Collect_Item_VNG",
-	szName = "Íê³ÉÒ»´ÎÊÕ¼¯¹¦×´ÁîÈÎÎñ",
+	szName = "hoµn thµnh 1 nhiÖm vô thu thËp c«ng tr¹ng lÖnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

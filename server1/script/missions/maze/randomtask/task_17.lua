@@ -1,6 +1,6 @@
--- 17.	³öÏÖ2¸öÒ»ÑùµÄNPC£¬Ò»¸ö½ÐÏàÉú×Ó£¬Ò»¸ö½ÐÏà¿Ë×Ó£¬µØÉÏ³öÏÖ5¸ö²»Í¬ÎåÐÐµÄµñÏñ£¬
--- ÏÈºÍÏàÉú×Ó¶Ô»°£¬Ëû»áËµÒ»¸öÎåÐÐºÍÒ»¸ö¶ÓÓÑµÄÃû×Ö£¬È»ºóÒªÕâ¸ö¶ÓÓÑÈ¥¿ªÆôÓëÕâ¸öÎåÐÐÏàÉúµÄµñÏñ£¬¿ª´íÕâ¸ö¶ÓÓÑ¾Í»áËÀµô¡£
--- È»ºóµ½Ïà¿Ë×Ó¶Ô»°£¬¿ªÆôÏà¿ËµÄÎåÐÐ¡£µñÏñ¿ªÆôÍêºó²»ÏûÊ§£¬2¸öNPCÒªÂÖÁ÷¶Ô»°£¬×Ü¹²ÕýÈ·¿ªÆô20´Î¹ý¹Ø¡£
+-- 17.	³öÏÖ2¸öÒ»ÑùµÄNPC£¬Ò»¸ö½ÐT­¬ng Sinh Tö£¬Ò»¸ö½ÐT­¬ng Kh¾c Tö£¬µØÉÏ³öÏÖ5¸ö²»Í¬ÎåÐÐµÄµñÏñ£¬
+-- ÏÈºÍT­¬ng Sinh Tö¶Ô»°£¬Ëû»áËµÒ»¸öÎåÐÐºÍÒ»¸ö¶ÓÓÑµÄÃû×Ö£¬È»ºóÒªÕâ¸ö¶ÓÓÑÈ¥¿ªÆôÓëÕâ¸öÎåÐÐÏàÉúµÄµñÏñ£¬¿ª´íÕâ¸ö¶ÓÓÑ¾Í»áËÀµô¡£
+-- È»ºóµ½T­¬ng Kh¾c Tö¶Ô»°£¬¿ªÆôÏà¿ËµÄÎåÐÐ¡£µñÏñ¿ªÆôÍêºó²»ÏûÊ§£¬2¸öNPCÒªÂÖÁ÷¶Ô»°£¬×Ü¹²ÕýÈ·¿ªÆô20´Î¹ý¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -12,28 +12,28 @@ pTask = Task:New(17)
 pTask.m_MaxFinishCount = 20
 
 tbTASK17_JOSS = {	-- TODO
-	{1647,	"§iµñÏñ( ½ð)"},
-	{1648,	"§iµñÏñ(Ä¾)"},
-	{1649,	"§iµñÏñ( Ë® )"},
-	{1650,	"§iµñÏñ( »ð)"},
-	{1651,	"§iµñÏñ( ÍÁ "},
+	{1647,	"§iªu T­îng ( Kim)"},
+	{1648,	"§iªu T­îng (Méc)"},
+	{1649,	"§iªu T­îng ( thñy )"},
+	{1650,	"§iªu T­îng ( Háa )"},
+	{1651,	"§iªu T­îng ( Thæ)"},
 }
 
 tbTASK17_SERIES = {0, 1, 2, 3, 4}
 
 tbTASK17_SERIESNAME = {
-	[0] = "½ð",
-	[1] = "Ä¾",
-	[2] = "Ë® ",
-	[3] = "»ð",
-	[4] = "ÍÁ",
+	[0] = "Kim",
+	[1] = "Méc",
+	[2] = "Thñy ",
+	[3] = "Háa",
+	[4] = "Thæ ",
 }
 
 function pTask:OnStart()
 	local mapid = self:GetMapId()
 	local pos = self:GetPosition()
-	self.m_AccrueIndex = DlgNpcManager:AddNpc("ÏàÉú×Ó", 1645, mapid, pos.t17_accrue.x, pos.t17_accrue.y, self, 1)
-	self.m_ConquerIndex = DlgNpcManager:AddNpc("Ïà¿Ë×Ó", 1646, mapid, pos.t17_conquer.x, pos.t17_conquer.y, self, 2)
+	self.m_AccrueIndex = DlgNpcManager:AddNpc("T­¬ng Sinh Tö", 1645, mapid, pos.t17_accrue.x, pos.t17_accrue.y, self, 1)
+	self.m_ConquerIndex = DlgNpcManager:AddNpc("T­¬ng Kh¾c Tö", 1646, mapid, pos.t17_conquer.x, pos.t17_conquer.y, self, 2)
 	self.m_Statuary = {}
 	self.m_TalkIndex = 1
 	self.m_AppointPlayer = nil
@@ -79,10 +79,10 @@ end
 
 function pTask:Say_Accrue(player, nIndex)
 	if (self.m_BarId > 0) then
-		player:Say("Çë´ò¿ªµñÏñºóÀ´¼ûÎÒ.")
+		player:Say("Xin h·y më §iªu T­îng ra råi l¹i gÆp ta.")
 		return
 	elseif (self.m_TalkIndex == 2) then
-		player:Say("Õâ³¡ÂÖµ½Ïà¿Ë×Ó³öÌâ£¬ÎÒÐÝÏ¢Ò»ÏÂ.")
+		player:Say("TrËn nµy ®Õn l­ît T­¬ng Kh¾c Tö xuÊt ®Ò, ta nghØ ng¬i mét l¸t.")
 		return
 	end
 	if (not self.m_AppointPlayer) then
@@ -90,17 +90,17 @@ function pTask:Say_Accrue(player, nIndex)
 		self.m_QuestionSeries = random(0, 4)
 		self.m_AppointSeries = GetAccrueSeries(self.m_QuestionSeries)
 	end
-	local msg = format("%s, Çë´ò¿ª %s ËùÓÐÎåÐÐµñÏñ", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
+	local msg = format("%s, Xin h·y më %s tÊt c¶ §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
 	player:Say(msg)
 	self:BroadCast(msg)
 end
 
 function pTask:Say_ConquerIndex(player, nIndex)
 	if (self.m_BarId > 0) then
-		player:Say("Çë´ò¿ªµñÏñºóÀ´¼ûÎÒ.")
+		player:Say("Xin h·y më §iªu T­îng ra råi l¹i gÆp ta.")
 		return
 	elseif (self.m_TalkIndex == 1) then
-		player:Say("Õâ³¡ÂÖµ½Ïà¿Ë×Ó³öÌâ£¬ÎÒÐÝÏ¢Ò»ÏÂ.")
+		player:Say("TrËn nµy ®Õn l­ît T­¬ng Kh¾c Tö xuÊt ®Ò, ta nghØ ng¬i mét l¸t.")
 		return
 	end
 	if (not self.m_AppointPlayer) then
@@ -108,7 +108,7 @@ function pTask:Say_ConquerIndex(player, nIndex)
 		self.m_QuestionSeries = random(0, 4)
 		self.m_AppointSeries = GetConquerSeries(self.m_QuestionSeries)
 	end
-	local msg = format("%s, Çë´ò¿ª %s ËùÓÐÎåÐÐµñÏñ", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
+	local msg = format("%s, Xin h·y më %s tÊt c¶ §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
 	player:Say(msg)
 	self:BroadCast(msg)
 end
@@ -117,13 +117,13 @@ function pTask:Say_Statuary(player, nIndex)
 	if (self.m_BarId > 0) then
 		return
 	end
-	self.m_BarId = ProgressBarList:Open("Çë´ò¿ª", player, 3, self, nIndex - 2)
+	self.m_BarId = ProgressBarList:Open("§ang më", player, 3, self, nIndex - 2)
 end
 
 function pTask:OnProgressbarTimeout(nId, nIndex, player)
 	self.m_BarId = 0
 	if (tbTASK17_SERIES[nIndex] == self.m_AppointSeries and self.m_AppointPlayer == player:GetName()) then
-		self:BroadCast("´ò¿ª³É¹¦.")
+		self:BroadCast("Më thµnh c«ng.")
 		self.m_FinishCount = self.m_FinishCount + 1
 		if (self.m_FinishCount >= self.m_MaxFinishCount) then
 			self:Proceed()
@@ -133,7 +133,7 @@ function pTask:OnProgressbarTimeout(nId, nIndex, player)
 			self.m_TalkIndex = 1
 		end
 	else
-		self:BroadCast("´ò¿ªÊ§°Ü.")
+		self:BroadCast("Më thÊt b¹i.")
 		self:KickPlayer(self.m_AppointPlayer)
 		self.m_AppointSeries = 0
 		self.m_TalkIndex = 1
@@ -142,6 +142,6 @@ function pTask:OnProgressbarTimeout(nId, nIndex, player)
 end
 
 function pTask:OnProgressbarBreak(nId, nIndex)
-	self:BroadCast("´ò¿ªÊ§°Ü.")
+	self:BroadCast("Më thÊt b¹i.")
 	self.m_BarId = 0
 end

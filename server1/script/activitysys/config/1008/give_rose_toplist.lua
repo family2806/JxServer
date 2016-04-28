@@ -9,8 +9,8 @@ tbTop10.tbAwardCheck = {0,0,0}
 tbTop10.nIDX_Account = 1
 tbTop10.nIDX_TotalCount = 2
 tbTop10.nIDX_LastUpdate = 3
-tbTop10.tbFileHeader = {"Name", "Account", "ÊıÁ¿", "×îºóÒ»´Î½»"}
-tbTop10.tbTopListFileHeader = {"Name", "Account", "ÊıÁ¿", "×îºóÒ»´Î½»"}
+tbTop10.tbFileHeader = {"Name", "Account", "Sè l­îng", "LÇn nép cuèi"}
+tbTop10.tbTopListFileHeader = {"Name", "Account", "Sè l­îng", "LÇn nép cuèi"}
 tbTop10.tbSubcribersPattern = {"*w", "*w", "*n", "*w"}
 tbTop10.tbToplistPattern = {"*w", "*w", "*n", "*w"}
 tbTop10.strFilePath = "vng_data/event_thang2_top10/"
@@ -59,11 +59,11 @@ end
 function tbTop10:GiveRose(strName, strAccount, nCount)
 	local nPhase = self:GetPhase()
 	if nPhase ~= 1 then
-		Talk(1, "", "Ä¿Ç°²»ÊÇ½»ÎïÆ·Ê±¼ä.")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i thêi gian nép vËt phÈm.")
 		return
 	end
 	if self:CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³Õı½øĞĞÅÅÃû£¬ÇëÉÔºò»ØÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	
@@ -74,7 +74,7 @@ function tbTop10:GiveRose(strName, strAccount, nCount)
 	self.tbSubcribers[strName] = {strAccount, nCount,strTime}
 		
 	if self:Subcribers2File() == 1 then
-		Say("³É¹¦ÉÏ½»Ãµ¹å", 1, "¹Ø±Õ/OnCancel")
+		Say("Nép thµnh c«ng Hoa Hång", 1, "§ãng/OnCancel")
 	end
 end
 
@@ -137,9 +137,9 @@ function tbTop10:UpdateTopList()
 	for key, val in self.tbSubcribers do		
 		tinsert(tbTemp, {key, val[self.nIDX_Account], val[self.nIDX_TotalCount], val[self.nIDX_LastUpdate]})
 	end
-	--ÔİÊ±°´ÒÑ½»ÎïÆ·ÊıÁ¿½µĞòÅÅÁĞtable
+	--ÔİÊ±°´ÒÑ½»ÎïÆ·Sè l­îng½µĞòÅÅÁĞtable
 	sort(tbTemp, function (a, b) return(a[3] > b[3]) end)
-	--Ñ¡Ôñ10¸öÊıÁ¿×î¸ßµÄÈË·Å½øÃûµ¥ÓÃÓÚ´æÈëÎÄ¼ş»òÕßÔÚnpcÏÔÊ¾
+	--Ñ¡Ôñ10¸öSè l­îng×î¸ßµÄÈË·Å½øÃûµ¥ÓÃÓÚ´æÈëÎÄ¼ş»òÕßÔÚnpcÏÔÊ¾
 	local nCount = 0
  	if getn(tbTemp) > 10 then
  		nCount = 10
@@ -179,16 +179,16 @@ end
 
 function tbTop10:ShowTopList()
 	if self:CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³ÕıÔÚ½øĞĞÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")
 		return
 	end
 	if not self.tbTopList or getn(self.tbTopList) <= 0 then
-		CreateNewSayEx("Ä¿Ç°Ã»ÓĞÅÅĞĞ°ñ",{{"¹Ø±Õ",OnCancel}})
+		CreateNewSayEx("HiÖn t¹i ch­a cã b¶ng xÕp h¹ng",{{"§ãng",OnCancel}})
 		return
 	end
-	--local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "ÉÏ½»ÊıÁ¿×î¶àµÄÊ®ÈËÃûµ¥", "\t\t\t\t\t\tÍ³¼ÆÊ±¼ä:", self.tbTopList[1][4])
-	local strTittle = "ÉÏ½»ÊıÁ¿×î¶àµÄÊ®ÈËÃûµ¥\n"
-	strTittle = strTittle..format("%-5s%-17s%-12s\n", "Ãû×Ö", "ÉÏ½»ÊıÁ¿", "×î½üÒ»´ÎÉÏ½»")	
+	--local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "Danh s¸ch 10 ng­êi cã sè l­îng nép nhiÒu nhÊt", "\t\t\t\t\t\tThêi gian tæng kÕt:", self.tbTopList[1][4])
+	local strTittle = "Danh s¸ch 10 ng­êi cã sè l­îng nép nhiÒu nhÊt\n"
+	strTittle = strTittle..format("%-5s%-17s%-12s\n", "Tªn", "Sè l­îng nép", "LÇn nép gÇn nhÊt")	
 	for nRank = 1, getn(self.tbTopList) do
 		strName = self.tbTopList[nRank][1]			
 		local strTotalCount  = self.tbTopList[nRank][3]	
@@ -199,7 +199,7 @@ function tbTop10:ShowTopList()
 			strTittle = strTittle..format("<color=yellow>%-5s%-17s%-12s<color>\n", nRank, strName, strTotalCount, strLastUpdate)
 		end
 	end
-	CreateNewSayEx(strTittle,{{"¹Ø±Õ",OnCancel}})
+	CreateNewSayEx(strTittle,{{"§ãng",OnCancel}})
 end
 --end top list
 function tbTop10:GetCurRank(strName, strAccount)
@@ -224,7 +224,7 @@ function tbTop10:GiveAward(nRank)
 	self.tbAwardCheck[nRank] = 1
 	local tbTemp = {}
 	--insert header cña file
-	tinsert(tbTemp, {"1µÈ½±Àø","2µÈ½±Àø","3µÈ½±Àø"})
+	tinsert(tbTemp, {"PhÇn th­ëng h¹ng 1","PhÇn th­ëng h¹ng 2","PhÇn th­ëng h¹ng 3"})
 	tinsert(tbTemp, self.tbAwardCheck)		
 	tbVngLib_File:Table2File(self.strFilePath, "rankawarded.txt", "w", tbTemp)	
 end

@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("通往成都府", 0)
+Say(" Th祅h Й", 0)
 
 end;

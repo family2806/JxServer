@@ -9,22 +9,22 @@ LOCK_MAP_SEQUENCE =		-- ´æ·Å½âËøÍ¼Ë³ĞòµÄÈ«¾ÖÈÎÎñ±äÁ¿
 	{2457, 2458, 2459, 2460, 2461, 2462},	-- µÚ¶şÖØËø½âËøÍ¼Ë³Ğò
 }
 
-DGJ_WULINMIJI	= {6, 1, 1120}	-- ²»Ì«Ñ°³£µÄÎäÁÖÃØ¼®
-COFFIN_MAP		= {6, 1, 1119}	-- ãê¾©¶«²¿ÊÂ·¢µãµØÍ¼
-COFFIN			= {6, 1, 1121}	-- ÉñÃØ¹×Ä¾
-LOCK_MAP1		= {6, 1, 1122}	-- ¹×Ä¾½âËøÍ¼ µÚÒ»ÖØËø
-LOCK_MAP2		= {6, 1, 1123}	-- ¹×Ä¾½âËøÍ¼ µÚ¶şÖØËø
-CADAVER			= {6, 1, 1124}	-- ÆæÒìËÀÊ¬
+DGJ_WULINMIJI	= {6, 1, 1120}	-- ²»Ì«Ñ°³£µÄVâ L©m MËt TŞch
+COFFIN_MAP		= {6, 1, 1119}	-- B¶n ®å n¬i ph¸t sinh sù viÖc xa phu BiÖn Kinh
+COFFIN			= {6, 1, 1121}	-- Quan tµi thÇn bİ
+LOCK_MAP1		= {6, 1, 1122}	-- B¶n ®å gi¶i táa quan tµi µÚÒ»ÖØËø
+LOCK_MAP2		= {6, 1, 1123}	-- B¶n ®å gi¶i táa quan tµi µÚ¶şÖØËø
+CADAVER			= {6, 1, 1124}	-- C­¬ng Thi
 LV120SKILLBOOK	= {6, 1, 1125}	-- 120¼¶¼¼ÄÜ¾÷Òª
 
 COFFIN_POSITION = {37, 1832, 3439, 6, 6}	-- ¹×²ÄËùÔÚÎ»ÖÃ{µØÍ¼, X×ø±ê, Y×ø±ê, XÎó²î, YÎó²î}
 
 LV120SKILL_NEW_NPC =	-- ĞÂ½¨NPCÁĞ±í
 {	-- ¸ñÊ½ {NpcId, MapId, X, Y, Name, Script},
-	{1203, 57, 1583, 3203, " ", "\\script\\task\\lv120skill\\npc\\ºâÉ½´óÌü_¶À¹Â½£µÄÎäÁÖÃØ¼®.lua"},
+	{1203, 57, 1583, 3203, " ", "\\script\\task\\lv120skill\\npc\\ºâÉ½´óÌü_§éc C« KiÕmµÄVâ L©m MËt TŞch.lua"},
 }
 
-ORG_WULIMIJI	= {6, 1, 26}		-- ÆÕÍ¨µÄÎäÁÖÃØ¼®
+ORG_WULIMIJI	= {6, 1, 26}		-- ÆÕÍ¨µÄVâ L©m MËt TŞch
 BANRUOXINJING	= {6, 1, 12}		-- °ãÈôĞÄ¾­
 XISUIJING		= {6, 1, 22}		-- Ï´Ëè¾­
 XINGHONGBAOSHI	= {4, 353, 1}		-- ĞÉºì±¦Ê¯
@@ -60,16 +60,16 @@ LOCK_MAP2_KEY =			-- µÚ¶şÖØËø´ğ°¸
 
 FACTION_TEXT = 			-- ÃÅÅÉÏà¹ØÎÄ±¾¶¨Òå
 {
-	[0] = {"<link=image[0,14]:\\spr\\npcres\\enemy\\enemy037\\enemy037_pst.spr>", "ĞşÈÊ·½ÕÉ", "·½ÕÉ"},	-- ÉÙÁÖ
-	[1] = {"<link=image[0,11]:\\spr\\npcres\\enemy\\enemy084\\enemy084_pst.spr>", "ÑîÓ¢", "°ïÖ÷"},		-- ÌìÍõ
-	[2] = {"<link=image[0,13]:\\spr\\npcres\\enemy\\enemy077\\enemy077_pst.spr>", "ÌÆ³ğ", "ÕÆÃÅ"},		-- ÌÆÃÅ
-	[3] = {"<link=image[0,12]:\\spr\\npcres\\enemy\\enemy091\\enemy091_pst.spr>", "ºÚÃæÀÉ¾ı", "½ÌÖ÷"},	-- Îå¶¾
-	[4] = {"<link=image[0,11]:\\spr\\npcres\\enemy\\enemy055\\enemy055_pst.spr>", "ÇåÏşÊ¦Ì«", "ÕÆÃÅ"},	-- ¶ëáÒ
-	[5] = {"<link=image[0,9]:\\spr\\npcres\\enemy\\enemy098\\enemy098_pst.spr>", "Òüº¬°²", "ÕÆÃÅ"},		-- ´äÑÌ
-	[6] = {"<link=image[0,19]:\\spr\\npcres\\enemy\\enemy071\\enemy071_pst.spr>", "ºÎÈËÎÒ", "°ïÖ÷"},	-- Ø¤°ï
-	[7] = {"<link=image[0,9]:\\spr\\npcres\\enemy\\enemy103\\enemy103_pst.spr>", "ÍêÑÕºéÁÒ", "½ÌÖ÷"},	-- ÌìÈÌ
-	[8] = {"<link=image[0,13]:\\spr\\npcres\\enemy\\enemy046\\enemy046_pst.spr>", "µÀÒ»ÕæÈË", "ÕÆÃÅ"},	-- Îäµ±
-	[9] = {"<link=image[0,22]:\\spr\\npcres\\enemy\\enemy065\\enemy065_pst.spr>", "È«»ú×Ó", "ÕÆÃÅ"},	-- À¥ÂØ
+	[0] = {"<link=image[0,14]:\\spr\\npcres\\enemy\\enemy037\\enemy037_pst.spr>", "HuyÒn nh©n ph­¬ng tr­îng", "Ph­¬ng tr­îng"},	-- ÉÙÁÖ
+	[1] = {"<link=image[0,11]:\\spr\\npcres\\enemy\\enemy084\\enemy084_pst.spr>", "D­¬ng Anh", "Bang chñ "},		-- ÌìÍõ
+	[2] = {"<link=image[0,13]:\\spr\\npcres\\enemy\\enemy077\\enemy077_pst.spr>", "§­êng Cõu", "Ch­ëng m«n"},		-- ÌÆÃÅ
+	[3] = {"<link=image[0,12]:\\spr\\npcres\\enemy\\enemy091\\enemy091_pst.spr>", "H¾c DiÖn Lang Qu©n", "Gi¸o chñ"},	-- Îå¶¾
+	[4] = {"<link=image[0,11]:\\spr\\npcres\\enemy\\enemy055\\enemy055_pst.spr>", "Thanh HiÓu S­ Th¸i ", "Ch­ëng m«n"},	-- ¶ëáÒ
+	[5] = {"<link=image[0,9]:\\spr\\npcres\\enemy\\enemy098\\enemy098_pst.spr>", "Do·n Hµm Yªn", "Ch­ëng m«n"},		-- ´äÑÌ
+	[6] = {"<link=image[0,19]:\\spr\\npcres\\enemy\\enemy071\\enemy071_pst.spr>", "Hµ Nh©n Ng· ", "Bang chñ "},	-- Ø¤°ï
+	[7] = {"<link=image[0,9]:\\spr\\npcres\\enemy\\enemy103\\enemy103_pst.spr>", "Hoµn Nhan Hoµnh LiÖt", "Gi¸o chñ"},	-- ÌìÈÌ
+	[8] = {"<link=image[0,13]:\\spr\\npcres\\enemy\\enemy046\\enemy046_pst.spr>", "§¹o NhÊt Ch©n Nh©n", "Ch­ëng m«n"},	-- Îäµ±
+	[9] = {"<link=image[0,22]:\\spr\\npcres\\enemy\\enemy065\\enemy065_pst.spr>", "TuyÒn C¬ Tö ", "Ch­ëng m«n"},	-- À¥ÂØ
 }
 
 FACTION_BOOK =			-- ÃÅÅÉ¼¼ÄÜÊé
@@ -88,42 +88,42 @@ FACTION_BOOK =			-- ÃÅÅÉ¼¼ÄÜÊé
 
 DIALOG_UI_TEXT =			-- ¶Ô»°UIÏÔÊ¾
 {
-	{"<link=image[0,10]:\\spr\\npcres\\enemy\\enemy111\\enemy111_pst.spr>", "¶À¹Â½£"},			-- 1 ¶À¹Â½£
-	{"<link=image[0,9]:\\spr\\npcres\\passerby\\passerby040\\passerby040s2.spr>", "ãê¾©³µ·ò"},	-- 2 ãê¾©³µ·ò
-	{"<link=image[0,9]:\\spr\\npcres\\passerby\\passerby072\\passerby072s1.spr>", "¼ÖÉñËã"},	-- 3 ¼ÖÉñËã
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_wulin.spr>", "ÎäÁÖÃØ¼®"},						-- 4 ²»Ñ°³£µÄÎäÁÖÃØ¼®
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\bianjing_southeast.spr>", "ãê¾©¶«²¿ÊÂ·¢µãµØÍ¼"},	-- 5 ãê¾©¶«²¿ÊÂ·¢µãµØÍ¼
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_coffin.spr>", "ÉñÃØ¹×Ä¾"},					-- 6 ÉñÃØ¹×Ä¾
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_lockinfo.spr>", "¹×Ä¾½âËøÍ¼"},				-- 7 ¹×Ä¾½âËøÍ¼
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_corpse.spr>", "ÆæÒìËÀÊ¬"},					-- 8 ÆæÒìËÀÊ¬£¨ÔË¹¦Ç°£©
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_corpse1.spr>", "ÆæÒìËÀÊ¬"},					-- 9 ÆæÒìËÀÊ¬£¨ÔË¹¦ºó£©
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_stunt.spr>", "120¼¼ÄÜ"},				-- 10 120¼¶¼¼ÄÜ¾öÒª
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-01.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},			-- 11-16 ¹×Ä¾½âËøÍ¼Ò» ËéÆ¬
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-02.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-03.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-04.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-05.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-06.spr>", "ËéÆ¬1¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-01.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},			-- 17-22 ¹×Ä¾½âËøÍ¼¶ş ËéÆ¬
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-02.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-03.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-04.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-05.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},
-	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-06.spr>", "ËéÆ¬2¹×Ä¾½âËøÍ¼"},
+	{"<link=image[0,10]:\\spr\\npcres\\enemy\\enemy111\\enemy111_pst.spr>", "§éc C« KiÕm"},			-- 1 §éc C« KiÕm
+	{"<link=image[0,9]:\\spr\\npcres\\passerby\\passerby040\\passerby040s2.spr>", "Xa phu BiÖn Kinh"},	-- 2 Xa phu BiÖn Kinh
+	{"<link=image[0,9]:\\spr\\npcres\\passerby\\passerby072\\passerby072s1.spr>", "Gi?ThÇn To¸n"},	-- 3 Gi?ThÇn To¸n
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_wulin.spr>", "Vâ L©m MËt TŞch"},						-- 4 ²»Ñ°³£µÄVâ L©m MËt TŞch
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\bianjing_southeast.spr>", "B¶n ®å n¬i ph¸t sinh sù viÖc xa phu BiÖn Kinh"},	-- 5 B¶n ®å n¬i ph¸t sinh sù viÖc xa phu BiÖn Kinh
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_coffin.spr>", "Quan tµi thÇn bİ"},					-- 6 Quan tµi thÇn bİ
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_lockinfo.spr>", "B¶n ®å gi¶i táa quan tµi"},				-- 7 B¶n ®å gi¶i táa quan tµi
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_corpse.spr>", "C­¬ng Thi"},					-- 8 C­¬ng Thi£¨ÔË¹¦Ç°£©
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_corpse1.spr>", "C­¬ng Thi"},					-- 9 C­¬ng Thi£¨ÔË¹¦ºó£©
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\task_stunt.spr>", "Kü n¨ng cÊp 120"},				-- 10 120¼¶¼¼ÄÜ¾öÒª
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-01.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},			-- 11-16 B¶n ®å gi¶i táa quan tµiÒ» ËéÆ¬
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-02.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-03.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-04.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-05.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø1-06.spr>", "M¶nh 1 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-01.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},			-- 17-22 B¶n ®å gi¶i táa quan tµi¶ş ËéÆ¬
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-02.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-03.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-04.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-05.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},
+	{"<link=image:\\spr\\Ui3\\120¼¶¼¼ÄÜÈÎÎñ\\»ú¹ØËø2-06.spr>", "M¶nh 2 b¶n ®å gi¶i táa quan tµi"},
 }
 
 LV120SKILL_LIST =			-- 120¼¶¼¼ÄÜÁĞ±í
 {
-	[0] = {709, 1, 0, 120, "120¼¼ÄÜ", "´ó³ËÈçÀ´Öä"},	-- ÉÙÁÖ
-	[1] = {708, 1, 1, 120, "120¼¼ÄÜ",	"µ½ĞéÌì"},		-- ÌìÍõ
-	[2] = {710, 1, 2, 120, "120¼¼ÄÜ",	"ÃÙÓ°×Ù"},		-- ÌÆÃÅ
-	[3] = {711, 1, 3, 120, "120¼¼ÄÜ",	"Îü¾§ÑÚ"},		-- Îå¶¾
-	[4] = {712, 1, 4, 120, "120¼¼ÄÜ",	"±ÕÔÂ·ğ³Ç"},	-- ¶ëáÒ
-	[5] = {713, 1, 5, 120, "120¼¼ÄÜ",	"Óù¾÷Òş"},		-- ´äÑÌ
-	[6] = {714, 1, 6, 120, "120¼¼ÄÜ",	"»ëÌìÆø¹¦"},	-- Ø¤°ï
-	[7] = {715, 1, 7, 120, "120¼¼ÄÜ",	"Ä§Òô·ÉÆÇ"},	-- ÌìÈÌ
-	[8] = {716, 1, 8, 120, "120¼¼ÄÜ",	"³öÓÙ²»È¾"},	-- Îäµ±
-	[9] = {717, 1, 9, 120, "120¼¼ÄÜ",	"Á½ÒÇÕæÆø"},	-- À¥ÂØ
+	[0] = {709, 1, 0, 120, "Kü n¨ng cÊp 120", "§¹i Thõa Nh­ Lai Chó"},	-- ÉÙÁÖ
+	[1] = {708, 1, 1, 120, "Kü n¨ng cÊp 120",	"§¶o H­ Thiªn"},		-- ÌìÍõ
+	[2] = {710, 1, 2, 120, "Kü n¨ng cÊp 120",	"Mª ¶nh Tung"},		-- ÌÆÃÅ
+	[3] = {711, 1, 3, 120, "Kü n¨ng cÊp 120",	"HÊp Tinh YÓm"},		-- Îå¶¾
+	[4] = {712, 1, 4, 120, "Kü n¨ng cÊp 120",	"BÕ NguyÖt PhÊt TrÇn"},	-- ¶ëáÒ
+	[5] = {713, 1, 5, 120, "Kü n¨ng cÊp 120",	"Ngù TuyÕt Èn"},		-- ´äÑÌ
+	[6] = {714, 1, 6, 120, "Kü n¨ng cÊp 120",	"Hçn Thiªn Khİ C«ng"},	-- Ø¤°ï
+	[7] = {715, 1, 7, 120, "Kü n¨ng cÊp 120",	"Ma ¢m PhÖ Ph¸ch"},	-- ÌìÈÌ
+	[8] = {716, 1, 8, 120, "Kü n¨ng cÊp 120",	"XuÊt ø BÊt NhiÔm"},	-- Îäµ±
+	[9] = {717, 1, 9, 120, "Kü n¨ng cÊp 120",	"L­ìng Nghi Ch©n Khİ"},	-- À¥ÂØ
 }
 
 g_DescTable = {}		-- È«¾ÖÁÙÊ±¶Ô»°×Ö·û´®Êı×é
@@ -152,14 +152,14 @@ function describe_basic(nSeq, idxTable, szCallback)		-- ¶Ô»°µİ¹éº¯Êı£¨ÄÚ²¿£©
 	local tDialog = g_DescTable[idxTable]
 	if (nSeq == getn(tDialog)) then
 		if (szCallback == "") then
-			Describe(tDialog[nSeq], 1, "½áÊø¶Ô»°/quit")
+			Describe(tDialog[nSeq], 1, "KÕt thóc ®èi tho¹i/quit")
 		else
-			Describe(tDialog[nSeq], 1, "¼ÌĞø¶Ô»° /"..szCallback)
+			Describe(tDialog[nSeq], 1, "TiÕp tôc ®èi tho¹i /"..szCallback)
 		end
 		g_DescTable[idxTable] = nil
 		return
 	end
-	Describe(tDialog[nSeq], 1, "¼ÌĞø¶Ô»° /#describe_basic("..(nSeq + 1)..", "..idxTable..", [["..szCallback.."]])")
+	Describe(tDialog[nSeq], 1, "TiÕp tôc ®èi tho¹i /#describe_basic("..(nSeq + 1)..", "..idxTable..", [["..szCallback.."]])")
 end
 
 function npc_string(nNpc, szDisplay, bFaction)			-- »ñµÃNPC¶ÔÍæ¼ÒËµ»°µÄ×Ö·û´®
@@ -227,52 +227,52 @@ end
 
 function display_clip(nLockMap, nSeq, szCall)	-- ÏÔÊ¾Ò»ÕÅËéÆ¬
 	local nIndex = 10 + 6 * (nLockMap - 1) + GetTask(LOCK_MAP_SEQUENCE[nLockMap][nSeq])
-	Describe(DIALOG_UI_TEXT[nIndex][1]..DIALOG_UI_TEXT[nIndex][2].."<link>", 2, "È·¶¨/"..szCall, "¹Ø±Õquit")
+	Describe(DIALOG_UI_TEXT[nIndex][1]..DIALOG_UI_TEXT[nIndex][2].."<link>", 2, "Trë l¹i/"..szCall, "§ãng/quit")
 end
 
-function lv120skill_report()					-- ÏòÕÆÃÅ±¨¸æÇé¿ö
+function lv120skill_report()					-- ÏòCh­ëng m«n±¨¸æÇé¿ö
 	local tDialog
 	local nFaction = GetLastFactionNumber()
 	local szCall = FACTION_TEXT[nFaction][3]
 	if (nFaction == 0) or (nFaction == 8) or (nFaction == 6) or (nFaction == 4) then	-- ÕıÅÉ
 		tDialog =
 		{
-			npc_string(nFaction, "°¥Ñ½£¬Ô­À´ÄãÒÑÖªµÀÁË¹ÊÊÂ¡£×î½ü½­ºşÍ»È»±ä¶¯£¬ÔÚËÎ¹ú£¬´ÓÍ·µ½Î²¶¼ÎÚÔÆÃÜ²¼£¬ÎÒÒ²Ïëµ½ÁËÕâ¼şÊÂ£¬µ«ÊÇÒòÎª"..szCall.." ²»ÄÜ×éÖ¯µ÷²é¸ÃÊÂ¡£È»ºó£¬Ò»Ğ©½­ºşÒşÊ¿ÖØ³ö½­ºş£¬µ÷²é¸ÃÊÂ¡£ËûÃÇ·¢ÏÖÃ¼Ä¿£¬Ò»ÌìÌìÏÔÂ¶³öÀ´£¬Ã¼Ä¿ÏÔÊ¾£¬°µÖ¸ÒõÄ±Îª£ºÌìÈÌ½Ì!", 1),
-			speak_string(nFaction, "¿´ÆğÀ´ÕæÏàÒÑÇå³şÁË£¬ÕæÊÇÌìÈÌÒõÄ±¡£Ö»ÓĞµ÷²é¸÷ÖÖ¶¯Îï·¢ÏÖ£¬ÔÚÊ¬ÌåÉÏÁôÏÂµÄÓ¡¼ÇÔÚ½­ºşÉÏÎ´³öÏÖ¹ı£¬´ËÍâ£¬³öÏÖºÜ¶àÒì³£òùòğ£¬ÕâÊÇ·ñÊÇĞÂµÄÌìÈÌĞ°Êõ?", 1),
-			npc_string(nFaction, "ÎªÁË±£ÎÀ´óËÎ£¬±£ÎÀÕıÒå£¬ÎÒ×¼±¸ÁË¶Ô¸¶´ËÊÂµÄ¶Ô²ß¡£ÎÒºÍÒ»Ğ©¸ßÊÖ±Õ¹Ø´´ÔìÁËÒ»ÕĞÉÏ³Ë¾øÑ§¡£ÄãÒ»¸öÈËÕÒµ½ºÜÖØÒªµÄÃ¼Ä¿£¬ÕæÊÇÖµµÃ±íÑï¡£ÎÒ¾ö¶¨´«ÓëÄãÉÏ³ËÎä¹¦£¬Ï£ÍûÄãÒÔºóÄÜÒÑÌìÏÂÎª¼ºÈÎ.", 1),
-			speak_string(nFaction, "¶àĞ» "..szCall.."×ñÑ­"..szCall.."½ÌÑµ.", 1),
-			npc_string(nFaction, "Ê±¼ä½ôÆÈ£¬ËùÒÔ¸ÃÎä¹¦Ö»ÄÜ´«ÊÚÒ»²¿·Ö£¬ÒÔºóÒªÅ¬Á¦ĞŞÁ¶¡£¸ÃÎä¹¦Ö»´«ÓëÄã£¬ÆäËûÃÅÅÉµÜ×Ó»¹²»ÖªµÀ¡£ÎªÁË·ÀÖ¹ÉúÊÂ£¬ÎÒÒÑ½«¿Ú¾÷Ğ´ºÃÁË£¬Äã×Ô¼ºÑĞ¾¿°É¡£°´ÄãÏÖÔÚµÄËØÖÊ£¬Äã»áºÜÈİÒ×Áì»áµÄ¡£¶ÔÁË£¬ÄãÈ¥×¼±¸<color=white> ±¾ÃÅËùÓĞ¼¼ÄÜ£¬×ö³ÉÒ»²á<color>.", 1),
-			speak_string(nFaction, "×ñÃü"..szCall.." µÜ×ÓÁ¢¼´¸´Ãü.", 1),
+			npc_string(nFaction, "¸i chµ, th× ra ng­¬i còng ®· biÕt ®­îc c¨n c¬ c©u chuyÖn råi! GÇn ®©y giang hå ®ét nhiªn biÕn ®æi mét c¸ch bÊt th­êng, sù sinh tån cña bæn m«n bao trïm mét ®¸m m©y u ¸m, vÊn ®Ò nµy ta còng ®· liÖu tr­íc, nh­ng v× th©n lµ"..szCall.."  kh«ng tiÖn tæ chøc ®iÒu tra viÖc nµy. Sau ®ã mét sè vŞ Èn sü giang hå cña bæn m«n lÇn l­ît t¸i xuÊt giang hå, ngÊm ngÇm ®iÒu tra sù viÖc nµy. Bän hä ph¸t hiÖn manh mèi cµng ngµy cµng lé râ h¬n, c¸c manh mèi nµy ®Òu ngÊm ngÇm ¸m chØ chñ m­u lµ: Thiªn NhÉn Gi¸o!", 1),
+			speak_string(nFaction, "Xem ra ch©n t­íng ®· lé râ hoµn toµn, ®İch thŞ ®©y lµ Thiªn NhÉn chñ m­u! ChØ cã ®iÒu c¸c lo¹i ®éng vËt ph¸t ®iªn vµ c¸c vÕt ®¸nh trªn x¸c chÕt ch­a xuÊt hiÖn trªn giang hå lÇn nµo, ngoµi ra xuÊt hiÖn rÊt nhiÒu con d¬i dŞ th­êng, ph¶i ch¨ng ®©y lµ lo¹i tµ thuËt míi cña Thiªn NhÉn?", 1),
+			npc_string(nFaction, "§Ó b¶o vÖ §¹i Tèng vµ b¶o vÖ chİnh nghÜa ta ®· chuÈn bŞ ®èi s¸ch cho viÖc nµy. Ta vµ mét sè cao thñ bÕ quan s¸ng chÕ ra mét chiªu thøc tuyÖt häc th­îng thõa. Ng­¬i th©n thÕ 1 m×nh mµ t×m ra ®­îc mét ®Çu mèi rÊt quan träng, thËt ®¸ng khen th­ëng. Nay ta quyÕt ®Şnh truyÒn ng­¬i mãn vâ c«ng th­îng thõa nµy, hi väng sau nµy ng­¬i lÊy nhiÖm vô cña thiªn h¹ sÏ lµ nhiÖm vô cña m×nh.", 1),
+			speak_string(nFaction, "§a t¹ "..szCall.."Tu©n theo"..szCall.."gi¸o huÊn.", 1),
+			npc_string(nFaction, "Do thêi gian gÊp g¸p, nªn c«ng lùc cña mãn vâ c«ng nµy chØ truyÒn cho ng­¬i mét phÇn, sau nµy dùa vµo cÇn cï siªng n¨ng cña ng­¬i mµ ph¸t triÓn mãn vâ c«ng nµy lªn.  Chiªu vâ c«ng nµy chØ truyÒn cho ng­¬i, nh÷ng ®Ö tö vµ c¸c m«n ph¸i kh¸c vÉn cßn ch­a ®­îc biÕt ®©u. §Ó tr¸nh tai v¸ch m¹ch dõng,  ta ®· viÕt tÊt c¶ nh÷ng khÈu quyÕt cÇn thiÕt råi, ng­¬i tù nghiªn cøu nhĞ. D­a vµo tè chÊt hiÖn t¹i cña ng­¬i sÏ rÊt dÔ dµng lÜnh ngé. µ ®óng råi,   ng­¬i ®i chuÈn bŞ <color=white> tÊt c¶ kü n¨ng cña bæn m«n thµnh 1 quyÓn<color>.", 1),
+			speak_string(nFaction, "Nghe"..szCall.." dÆn dß, ®Ö tö liÒn tøc tèc ®Õn ®©y phôc mÖnh.", 1),
 		}
 	elseif (nFaction == 2) or (nFaction == 1) or (nFaction == 5) then					-- ÖĞÁ¢
 		tDialog =
 		{
-			npc_string(nFaction, "°¥Ñ½£¬Ô­À´ÄãÒÑÖªµÀÁË¹ÊÊÂ¡£×î½ü½­ºşÍ»È»±ä¶¯£¬ÔÚËÎ¹ú£¬´ÓÍ·µ½Î²¶¼ÎÚÔÆÃÜ²¼£¬ÎÒÒ²Ïëµ½ÁËÕâ¼şÊÂ£¬µ«ÊÇÒòÎª"..szCall.." ²»ÄÜ×éÖ¯µ÷²é¸ÃÊÂ¡£È»ºó£¬Ò»Ğ©½­ºşÒşÊ¿ÖØ³ö½­ºş£¬µ÷²é¸ÃÊÂ¡£ËûÃÇ·¢ÏÖÃ¼Ä¿£¬Ò»ÌìÌìÏÔÂ¶³öÀ´£¬Ã¼Ä¿ÏÔÊ¾£¬°µÖ¸ÒõÄ±Îª£ºÌìÈÌ½Ì!", 1),
-			speak_string(nFaction, "¿´ÆğÀ´ÕæÏàÒÑÇå³şÁË£¬ÕæÊÇÌìÈÌÒõÄ±¡£Ö»ÓĞµ÷²é¸÷ÖÖ¶¯Îï·¢ÏÖ£¬ÔÚÊ¬ÌåÉÏÁôÏÂµÄÓ¡¼ÇÔÚ½­ºşÉÏÎ´³öÏÖ¹ı£¬´ËÍâ£¬³öÏÖºÜ¶àÒì³£òùòğ£¬ÕâÊÇ·ñÊÇĞÂµÄÌìÈÌĞ°Êõ?", 1),
-			npc_string(nFaction, "ÎªÁË·ÀÖ¹ÌìÈÌµÄÒõÄ±£¬ÎÒÒÑ½øĞĞÁË»ı¼«µÄ°µÖĞµ÷²é¡£ÎÒºÍÒ»Ğ©¸ßÊÖ±Õ¹Ø´´ÔìÁËÒ»ÕĞÉÏ³Ë¾øÑ§¡£ÄãÒ»¸öÈËÕÒµ½ºÜÖØÒªµÄÃ¼Ä¿£¬ÕæÊÇÖµµÃ±íÑï¡£ÎÒ¾ö¶¨´«ÓëÄãÉÏ³ËÎä¹¦£¬Ï£ÍûÄãÒÔºóÄÜÒÑÌìÏÂÎª¼ºÈÎ.", 1),
-			speak_string(nFaction, "¶àĞ» "..szCall.."×ñÑ­"..szCall.."½ÌÑµ.", 1),
-			npc_string(nFaction, "Ê±¼ä½ôÆÈ£¬ËùÒÔ¸ÃÎä¹¦Ö»ÄÜ´«ÊÚÒ»²¿·Ö£¬ÒÔºóÒªÅ¬Á¦ĞŞÁ¶¡£¸ÃÎä¹¦Ö»´«ÓëÄã£¬ÆäËûÃÅÅÉµÜ×Ó»¹²»ÖªµÀ¡£ÎªÁË·ÀÖ¹ÉúÊÂ£¬ÎÒÒÑ½«¿Ú¾÷Ğ´ºÃÁË£¬Äã×Ô¼ºÑĞ¾¿°É¡£°´ÄãÏÖÔÚµÄËØÖÊ£¬Äã»áºÜÈİÒ×Áì»áµÄ¡£¶ÔÁË£¬ÄãÈ¥×¼±¸<color=white> ±¾ÃÅËùÓĞ¼¼ÄÜ£¬×ö³ÉÒ»²á<color>.", 1),
-			speak_string(nFaction, "×ñÃü"..szCall.." µÜ×ÓÁ¢¼´¸´Ãü.", 1),
+			npc_string(nFaction, "¸i chµ, th× ra ng­¬i còng ®· biÕt ®­îc c¨n c¬ c©u chuyÖn råi! GÇn ®©y giang hå ®ét nhiªn biÕn ®æi mét c¸ch bÊt th­êng, sù sinh tån cña bæn m«n bao trïm mét ®¸m m©y u ¸m, vÊn ®Ò nµy ta còng ®· liÖu tr­íc, nh­ng v× th©n lµ"..szCall.."  kh«ng tiÖn tæ chøc ®iÒu tra viÖc nµy. Sau ®ã mét sè vŞ Èn sü giang hå cña bæn m«n lÇn l­ît t¸i xuÊt giang hå, ngÊm ngÇm ®iÒu tra sù viÖc nµy. Bän hä ph¸t hiÖn manh mèi cµng ngµy cµng lé râ h¬n, c¸c manh mèi nµy ®Òu ngÊm ngÇm ¸m chØ chñ m­u lµ: Thiªn NhÉn Gi¸o!", 1),
+			speak_string(nFaction, "Xem ra ch©n t­íng ®· lé râ hoµn toµn, ®İch thŞ ®©y lµ Thiªn NhÉn chñ m­u! ChØ cã ®iÒu c¸c lo¹i ®éng vËt ph¸t ®iªn vµ c¸c vÕt ®¸nh trªn x¸c chÕt ch­a xuÊt hiÖn trªn giang hå lÇn nµo, ngoµi ra xuÊt hiÖn rÊt nhiÒu con d¬i dŞ th­êng, ph¶i ch¨ng ®©y lµ lo¹i tµ thuËt míi cña Thiªn NhÉn?", 1),
+			npc_string(nFaction, "§Ó tr¸nh Thiªn NhÉn g©y bÊt lîi cho ta, ta ®· tiÕn hµnh tİch cùc ©m thÇm ®iÒu tra. Ta vµ mét sè cao thñ bÕ quan s¸ng chÕ ra mét chiªu thøc tuyÖt häc th­îng thõa. Ng­¬i th©n thÕ 1 m×nh mµ t×m ra ®­îc mét ®Çu mèi rÊt quan träng, thËt ®¸ng khen th­ëng. Nay ta quyÕt ®Şnh truyÒn ng­¬i mãn vâ c«ng th­îng thõa nµy, hi väng sau nµy ng­¬i gióp bæn m«n vinh danh thiªn h¹.", 1),
+			speak_string(nFaction, "§a t¹ "..szCall.."Tu©n theo"..szCall.."gi¸o huÊn.", 1),
+			npc_string(nFaction, "Do thêi gian gÊp g¸p, nªn c«ng lùc cña mãn vâ c«ng nµy chØ truyÒn cho ng­¬i mét phÇn, sau nµy dùa vµo cÇn cï siªng n¨ng cña ng­¬i mµ ph¸t triÓn mãn vâ c«ng nµy lªn.  Chiªu vâ c«ng nµy chØ truyÒn cho ng­¬i, nh÷ng ®Ö tö vµ c¸c m«n ph¸i kh¸c vÉn cßn ch­a ®­îc biÕt ®©u. §Ó tr¸nh tai v¸ch m¹ch dõng,  ta ®· viÕt tÊt c¶ nh÷ng khÈu quyÕt cÇn thiÕt råi, ng­¬i tù nghiªn cøu nhĞ. D­a vµo tè chÊt hiÖn t¹i cña ng­¬i sÏ rÊt dÔ dµng lÜnh ngé. µ ®óng råi,   ng­¬i ®i chuÈn bŞ <color=white> tÊt c¶ kü n¨ng cña bæn m«n thµnh 1 quyÓn<color>.", 1),
+			speak_string(nFaction, "Nghe"..szCall.." dÆn dß, ®Ö tö liÒn tøc tèc ®Õn ®©y phôc mÖnh.", 1),
 		}
 	elseif (nFaction == 3) or (nFaction == 9) then										-- Ğ°ÅÉ
 		tDialog =
 		{
-			npc_string(nFaction, "°¥Ñ½£¬Ô­À´ÄãÒÑÖªµÀÁË¹ÊÊÂ¡£×î½ü½­ºşÍ»È»±ä¶¯£¬ÔÚËÎ¹ú£¬´ÓÍ·µ½Î²¶¼ÎÚÔÆÃÜ²¼£¬ÎÒÒ²Ïëµ½ÁËÕâ¼şÊÂ£¬µ«ÊÇÒòÎª"..szCall.." ²»ÄÜ×éÖ¯µ÷²é¸ÃÊÂ¡£È»ºó£¬Ò»Ğ©½­ºşÒşÊ¿ÖØ³ö½­ºş£¬µ÷²é¸ÃÊÂ¡£ËûÃÇ·¢ÏÖÃ¼Ä¿£¬Ò»ÌìÌìÏÔÂ¶³öÀ´£¬Ã¼Ä¿ÏÔÊ¾£¬°µÖ¸ÒõÄ±Îª£ºÌìÈÌ½Ì!", 1),
-			speak_string(nFaction, "¿´ÆğÀ´ÕæÏàÒÑÇå³şÁË£¬ÕæÊÇÌìÈÌÒõÄ±¡£Ö»ÓĞµ÷²é¸÷ÖÖ¶¯Îï·¢ÏÖ£¬ÔÚÊ¬ÌåÉÏÁôÏÂµÄÓ¡¼ÇÔÚ½­ºşÉÏÎ´³öÏÖ¹ı£¬´ËÍâ£¬³öÏÖºÜ¶àÒì³£òùòğ£¬ÕâÊÇ·ñÊÇĞÂµÄÌìÈÌĞ°Êõ?", 1),
-			npc_string(nFaction, "±¾ÃÅÔõÃ´ÄÜÂäºóËûÈËÄØ£¿Òò´Ë£¬ÎÒÒÑ½øĞĞ°µÖĞµ÷²é£¬Í¬Ê±È·¶¨£º²»ÄÜÈÃÌìÈÌ¶ÔÎÒÃÇ²»Àû£¬ÀïÓĞÄã¸öÊ±»úÖÆÔìÌìÏÂ»ìÂÒ¡£ÎÒºÍÒ»Ğ©¸ßÊÖ±Õ¹Ø´´ÔìÁËÒ»ÕĞÉÏ³Ë¾øÑ§¡£ÄãÒ»¸öÈËÕÒµ½ºÜÖØÒªµÄÃ¼Ä¿£¬ÕæÊÇÖµµÃ±íÑï¡£"..szCall.."ÄÇÄê£¬ºÜ¶àÓĞµ¨Ê¶µÄÓ¢ĞÛ²ÅÄÜµ£ÈÎ£¬µ«ÊÇ£¬ÄãÒ»¸öÈËÕÒµ½ºÜÖØÒªµÄÃ¼Ä¿£¬ÕæÊÇÖµµÃ±íÑï¡£ÎÒ¾ö¶¨´«ÓëÄã¾øÑ§£¬ÒÔºó°ïÎÒÃûÑïÌìÏÂ", 1),
-			speak_string(nFaction, "¶àĞ» "..szCall.."×ñÑ­"..szCall.."½ÌÑµ.", 1),
-			npc_string(nFaction, "Ê±¼ä½ôÆÈ£¬ËùÒÔ¸ÃÎä¹¦Ö»ÄÜ´«ÊÚÒ»²¿·Ö£¬ÒÔºóÒªÅ¬Á¦ĞŞÁ¶¡£¸ÃÎä¹¦Ö»´«ÓëÄã£¬ÆäËûÃÅÅÉµÜ×Ó»¹²»ÖªµÀ¡£ÎªÁË·ÀÖ¹ÉúÊÂ£¬ÎÒÒÑ½«¿Ú¾÷Ğ´ºÃÁË£¬Äã×Ô¼ºÑĞ¾¿°É¡£°´ÄãÏÖÔÚµÄËØÖÊ£¬Äã»áºÜÈİÒ×Áì»áµÄ¡£¶ÔÁË£¬ÄãÈ¥×¼±¸<color=white> ±¾ÃÅËùÓĞ¼¼ÄÜ£¬×ö³ÉÒ»²á<color>.", 1),
-			speak_string(nFaction, "×ñÃü"..szCall.." µÜ×ÓÁ¢¼´¸´Ãü.", 1),
+			npc_string(nFaction, "¸i chµ, th× ra ng­¬i còng ®· biÕt ®­îc c¨n c¬ c©u chuyÖn råi! GÇn ®©y giang hå ®ét nhiªn biÕn ®æi mét c¸ch bÊt th­êng, sù sinh tån cña bæn m«n bao trïm mét ®¸m m©y u ¸m, vÊn ®Ò nµy ta còng ®· liÖu tr­íc, nh­ng v× th©n lµ"..szCall.."  kh«ng tiÖn tæ chøc ®iÒu tra viÖc nµy. Sau ®ã mét sè vŞ Èn sü giang hå cña bæn m«n lÇn l­ît t¸i xuÊt giang hå, ngÊm ngÇm ®iÒu tra sù viÖc nµy. Bän hä ph¸t hiÖn manh mèi cµng ngµy cµng lé râ h¬n, c¸c manh mèi nµy ®Òu ngÊm ngÇm ¸m chØ chñ m­u lµ: Thiªn NhÉn Gi¸o!", 1),
+			speak_string(nFaction, "Xem ra ch©n t­íng ®· lé râ hoµn toµn, ®İch thŞ ®©y lµ Thiªn NhÉn chñ m­u! ChØ cã ®iÒu c¸c lo¹i ®éng vËt ph¸t ®iªn vµ c¸c vÕt ®¸nh trªn x¸c chÕt ch­a xuÊt hiÖn trªn giang hå lÇn nµo, ngoµi ra xuÊt hiÖn rÊt nhiÒu con d¬i dŞ th­êng, ph¶i ch¨ng ®©y lµ lo¹i tµ thuËt míi cña Thiªn NhÉn?", 1),
+			npc_string(nFaction, "Bæn m«n lÏ nµo l¹i lµ ng­êi ®Õn sau? V× v©y ta ®· ngÊm ngÇm ®iÒu tra, ®ång thêi cã dù ®Şnh : kh«ng ®Ó cho Thiªn NhÉn g©y bÊt lîi víi ta, lîi dông thêi thÕ hçn lo¹n næi danh thiªn h¹, vµ lµm anh hïng thêi lo¹n, ha ha ha. Ta vµ mét sè cao thñ bÕ quan s¸ng chÕ ra mét chiªu thøc tuyÖt häc th­îng thõa. Ng­¬i ®¬n th­¬ng ®éc m· mµ ®iÒu tra ®­îc ngän nghµnh nh­ vËy, rÊt ®¸ng khen"..szCall.."N¨m ®ã rÊt nhiÒu anh hïng gan d¹ míi cã thÓ ®¶m ®­¬ng, nh­ng ng­¬i chØ mét th©n mét m×nh ®iÒu tra ®­îc manh mèi quan träng nh­ v¹y, thËt ®¸ng khen th­ëng. Ta quyÕt ®Şnh truyÒn mãn vâ c«ng tuyÖt häc l¹i cho ng­¬i, sau nµy gióp ta vang danh thiªn h¹ nhĞ.", 1),
+			speak_string(nFaction, "§a t¹ "..szCall.."Tu©n theo"..szCall.."gi¸o huÊn.", 1),
+			npc_string(nFaction, "Do thêi gian gÊp g¸p, nªn c«ng lùc cña mãn vâ c«ng nµy chØ truyÒn cho ng­¬i mét phÇn, sau nµy dùa vµo cÇn cï siªng n¨ng cña ng­¬i mµ ph¸t triÓn mãn vâ c«ng nµy lªn.  Chiªu vâ c«ng nµy chØ truyÒn cho ng­¬i, nh÷ng ®Ö tö vµ c¸c m«n ph¸i kh¸c vÉn cßn ch­a ®­îc biÕt ®©u. §Ó tr¸nh tai v¸ch m¹ch dõng,  ta ®· viÕt tÊt c¶ nh÷ng khÈu quyÕt cÇn thiÕt råi, ng­¬i tù nghiªn cøu nhĞ. D­a vµo tè chÊt hiÖn t¹i cña ng­¬i sÏ rÊt dÔ dµng lÜnh ngé. µ ®óng råi,   ng­¬i ®i chuÈn bŞ <color=white> tÊt c¶ kü n¨ng cña bæn m«n thµnh 1 quyÓn<color>.", 1),
+			speak_string(nFaction, "Nghe"..szCall.." dÆn dß, ®Ö tö liÒn tøc tèc ®Õn ®©y phôc mÖnh.", 1),
 		}
 	elseif (nFaction == 7) then															-- ÌìÈÌ
 		tDialog =
 		{
-			npc_string(nFaction, "ÕæÊÇ²»À¢ÎªÌìÈÌ½ÌµÜ×Ó£¬Ã»ÓĞÊ²Ã´ÄÜ¹ıµÃÁËÄãµÄÑÛ¾¦¡£×î½ü£¬½­ºşÍ»È»»ìÂÒ£¬ÕæÊÇÃ»ÓĞÏëµ½£¬ÕâÊÇÎÒÌìÈÌ½ÌÖÆÔì³öÀ´µÄÊÂ¶Ë£¬¹ş¹ş¡£ÄãÒÑ²Âµ½ÁË£¬ÎÒÒ²²»Â÷Äã¡£×î½ü£¬ÌìÈÌ½ÌÕÙ¼¯ÁËÒ»Ğ©ÎäÁÖ¸ßÊÖ£¬Á¶³ÉÁËÒ»ÖÖ¼«Ç¿µÄĞ°Êõ¡£·¢¿ñµÄ¶¯ÎïºÍÌÉÔÚ¹×²ÄÀïµÄÊ¬Ìå£¬¶¼ÊÇÎÒÃÇµÄ¹¦ÀÍ£¬Ò²±íÃ÷£¬ÎÒ´ó½ğ¹ú½«ÓĞÒ»´Î´òÕ÷·¥.", 1),
-			speak_string(nFaction, "½ÌÖ÷Ó¢Ã÷£¬ÎÒ½«Îª½ğ¹úÍ³Ò»ÌìÏÂµÄ´óÒµ¸°ÌÀµ¸»ğ", 1),
-			npc_string(nFaction, "Õâ´Î¶¯ÂÒºÜÑÏÃÜ£¬ĞÅÏ¢Ò²Ã»ÓĞ´«±é¸÷ÃÅÅÉ£¬ÓĞÈË¸Õ¸ÕÍ¸Â¶³öÏûÏ¢¾ÍËÀÁË¡£ÕâĞ©Ê¬Ìå¶¼ÊÇËÎ¹úÅÉµÄ¼äµı£¬Ò²ËãÊÇ¸øÎÒ×öµÄÊÔÑéÁË¡£ÎÒ×öÕâ¸ö£¬Ò²²»ÊÇÒªÄã±£ÃÜ£¬ÄãÊÇ±¾ÃÅµÄÈË¡£µ«ÊÇ£¬ÄãÊÇÓĞÓÂÓĞÄ±µÄÈË£¬¿ÉÒÔµ£ÈÎ´óÈÎ£¬¹ş¹ş¡£½ñÌìÎÒ´«¸øÄã¾øÑ§£¬²»Òª¹¼¸º½ğ¹ú¶ÔÄãµÄĞÅÈÎ¡£", 1),
-			speak_string(nFaction, "¶àĞ»"..szCall.."×ñÑ­"..szCall.."½ÌÑµ.", 1),
-			npc_string(nFaction, "Ê±¼ä½ôÆÈ£¬ËùÒÔ¸ÃÎä¹¦Ö»ÄÜ´«ÊÚÒ»²¿·Ö£¬ÒÔºóÒªÅ¬Á¦ĞŞÁ¶¡£¸ÃÎä¹¦Ö»´«ÓëÄã£¬ÆäËûÃÅÅÉµÜ×Ó»¹²»ÖªµÀ¡£ÎªÁË·ÀÖ¹ÉúÊÂ£¬ÎÒÒÑ½«¿Ú¾÷Ğ´ºÃÁË£¬Äã×Ô¼ºÑĞ¾¿°É¡£°´ÄãÏÖÔÚµÄËØÖÊ£¬Äã»áºÜÈİÒ×Áì»áµÄ¡£¶ÔÁË£¬ÄãÈ¥×¼±¸<color=white> ±¾ÃÅËùÓĞ¼¼ÄÜ£¬×ö³ÉÒ»²á<color>.", 1),
-			speak_string(nFaction, "×ñÃü"..szCall.." µÜ×ÓÁ¢¼´¸´Ãü.", 1),
+			npc_string(nFaction, "ThËt kh«ng hæ danh ®Ö tö cña Thiªn NhÉn Gi¸o, kh«ng cã c¸i g× qua ®­îc m¾t ng­¬i! Thêi gian gÇn ®©y giang hå bçng nhiªn ®¹i lo¹n, thËt kh«ng nghÜ tíi  ®©y lµ nh÷ng hµnh vi nµy cña Thiªn NhÉn Gi¸o ta g©y ra, ha ha. Ng­¬i ®· ®o¸n ®­îc th× ta còng kh«ng giÊu ng­¬i lµm g×.  GÇn ®©y Thiªn NhÉn Gi¸o ®· l«i kĞo kh«ng İt vâ l©m cao thñ ®· Èn danh, luyÖn thµnh 1 thuËt ©m tµ cùc m¹nh.  Nh÷ng ®éng vËt ph¸t cuång vµ nh÷ng thi thÓ dŞ th­êng n»m trong q uan tµi lµ thµnh qu¶ cña ta, vµ còng tá râ ®¹i Kim quèc cña chóng ta sÏ tiÕn hµnh mét cuéc chinh ph¹t.", 1),
+			speak_string(nFaction, "Gi¸o chñ anh minh, ta sÏ v× ®¹i nghiÖp cña kim quèc tËn t©m tËn lùc thèng nhÊt thiªn h¹.", 1),
+			npc_string(nFaction, "LÇn ho¹t ®éng nµy v« cïng kİn ®¸o, tin tøc nµy còng kh«ng lan truyÒn trong m«n ph¸i, cã ng­êi võa míi hĞ lé th«ng tin liÒn tøc th× chÕt lu«n. Nh÷ng x¸c chÕt ®ã lµ nh÷ng gi¸n ®iÖp ph¸i tõ Tèng quèc, võa vÆn ®Ó ta dïng lµm vËt thİ nghiÖm. Ta lµm cÈn thËn nh­ vËy nh­ng còng kh«ng chØ ng­¬i v¹ch trÇn sù viÖc, may mµ ng­¬i lµ ng­êi cña bæn m«n. Nh­ng mµ ng­¬i h÷u dòng h÷u m­u gan d¹ h¬n ng­êi cã thÓ giao ®­îc nhiÖm vô lín, ha ha. Nay ta truyÒn cho ng­¬i mãn tuyÖt häc nµy, vµ ®õng nªn phô sù tİn nhiÖm cña Kim Quèc!", 1),
+			speak_string(nFaction, "§a t¹ "..szCall.."Tu©n theo"..szCall.."gi¸o huÊn.", 1),
+			npc_string(nFaction, "Do thêi gian gÊp g¸p, nªn c«ng lùc cña mãn vâ c«ng nµy chØ truyÒn cho ng­¬i mét phÇn, sau nµy dùa vµo cÇn cï siªng n¨ng cña ng­¬i mµ ph¸t triÓn mãn vâ c«ng nµy lªn.  Chiªu vâ c«ng nµy chØ truyÒn cho ng­¬i, nh÷ng ®Ö tö vµ c¸c m«n ph¸i kh¸c vÉn cßn ch­a ®­îc biÕt ®©u. §Ó tr¸nh tai v¸ch m¹ch dõng,  ta ®· viÕt tÊt c¶ nh÷ng khÈu quyÕt cÇn thiÕt råi, ng­¬i tù nghiªn cøu nhĞ. D­a vµo tè chÊt hiÖn t¹i cña ng­¬i sÏ rÊt dÔ dµng lÜnh ngé. µ ®óng råi,   ng­¬i ®i chuÈn bŞ <color=white> tÊt c¶ kü n¨ng cña bæn m«n thµnh 1 quyÓn<color>.", 1),
+			speak_string(nFaction, "Nghe"..szCall.." dÆn dß, ®Ö tö liÒn tøc tèc ®Õn ®©y phôc mÖnh.", 1),
 		}
 	end
 	describe_talk(tDialog)
@@ -281,7 +281,7 @@ function lv120skill_report()					-- ÏòÕÆÃÅ±¨¸æÇé¿ö
 end
 
 function lv120skill_submit()				-- Ìá½»±¾ÅÉÈ«²¿¼¼ÄÜÊéUI
-	GiveItemUI("½»±¾ÃÅÈ«²¿¼¼ÄÜÊé", "°Ñ±¾ÃÅËùÓĞ¼¼ÄÜÊé·Å½øÈ¥¾ÍÄÜ»ñµÃ120¼¼ÄÜÃØ¼®.", "submit_skillbook", "quit")
+	GiveItemUI("Giao toµn bé s¸ch kü n¨ng cña bæn m«n", "Bá tÊt c¶ s¸ch kü n¨ng cña bæn m«n vµo th× thu ®­îc bİ quyÕt kü n¨ng cÊp 120.", "submit_skillbook", "quit")
 end
 
 function submit_skillbook(nCount)			-- Ìá½»±¾ÅÉÈ«²¿¼¼ÄÜÊé
@@ -315,24 +315,24 @@ function submit_skillbook(nCount)			-- Ìá½»±¾ÅÉÈ«²¿¼¼ÄÜÊé
 	if (getn(temp) == 0) then
 		local tDialog =
 		{
-			npc_string(nFaction, "°ìÊÂÁæÀşÓÖÓĞ²ÅµÄÈËÕæÊÇÄÑÇó°¡£¬ÎÒÒÑ¸øÄãÃØ¾÷ÁË£¬Äã×Ô¼ºÑĞ¾¿Ò»ÏÂ¾Í¿ÉÒÔÁìÎòÁË", 1),
-			speak_string(nFaction, "¶àĞ»"..szCall.."¶àĞ»Ö¸½Ì£¬ÏÖÔÚÎÒÈ¥ĞŞÁ¶ÁË.", 1),
-			self_string(10, "Ò»»á¶ù¹¤·ò£¬Äã¾ÍÑ§µ½ÁËÎäÁÖÉÏ³Ë¾ø¼¼"),
+			npc_string(nFaction, "ThËt kh«ng hæ danh nh©n tµi khã gÆp, hµnh sù thËt lµ lanh lÑ…..  Ta ®· ®­a cho ng­¬i bİ quyÕt råi ng­¬i tù ®i nghiªn cøu 1 lóc lµ cã thÓ lÜnh ngé 1 trong sè tuyÖt chiªu.", 1),
+			speak_string(nFaction, "§a t¹ "..szCall.."C¸m ¬n ®· chØ d¹y, b©y giê ta ®i tu luyÖn ®©y.", 1),
+			self_string(10, "Sau mét håi quanh co, ®¹i hiÖp ®· ®¹t ®­îc mét tuyÖt kü th­îng thõa trong vâ l©m……"),
 		}
 		describe_talk(tDialog)
 		for i = 1, getn(book) do
 			if (RemoveItemByIndex(book[i]) ~= 1) then		-- È¡×ßÍæ¼ÒÉíÉÏµÄ¼¼ÄÜÊé
-				WriteLog("120¼¶¼¼ÄÜ -½»±¾ÃÅËùÓĞ¼¼ÄÜÊé-- É¾³ıÒì³£¼¼ÄÜÊé.  Player ="..GetName().." Time = "..date("%y.%m.%d"))
-				Msg2Player("ÏµÍ³³ö´í£¬ÇëÁªÏµ·¢ĞĞÉÌ½â¾ö!")
+				WriteLog("NhiÖm vô kü n¨ng cÊp 120 - Göi cho bæn m«n ph¸i tÊt c¶ s¸ch kü n¨ng -- Xãa bá c¸c s¸ch kü n¨ng dŞ th­êng.  Player ="..GetName().." Time = "..date("%y.%m.%d"))
+				Msg2Player("HÖ thèng ph¸t sinh lçi, xin mêi liªn hÖ víi nhµ ph¸t hµnh ®Ó gi¶i quyÕt vÊn ®Ò nµy!")
 				return
 			end
 		end
 		idxBook = add_item(LV120SKILLBOOK)	-- »ñµÃ120¼¶¼¼ÄÜÊé
-		Msg2Player("Äã»ñµÃ1"..GetItemName(idxBook))
+		Msg2Player("Ng­¬i thu ®­îc 1"..GetItemName(idxBook))
 		SetTask(LV120_SKILL_STATE, 19)
 		SyncTaskValue(LV120_SKILL_STATE)
 	else
-		Describe("ĞèÒª·ÅÈëÒ»²¿ËùÓĞ¼¼ÄÜµÄÊé£¬¸ø"..szCall.." ®Ó×ö³É120¼¶ÉÏ³Ë¼¼ÄÜÊé ",2, "ÖØ×ö/lv120skill_submit", "¹Ø±Õ/quit")
+		Describe("CÇn ph¶i bá vµo 1 cuèn cã tÊt c¶ kü n¨ng, ®Ó cho"..szCall.." ®Ó lµm thµnh s¸ch tuyÖt kü th­îng thõa cÊp 120.",2, "Lµm l¹i/lv120skill_submit", "§ãng/quit")
 	end
 
 end
@@ -354,11 +354,11 @@ end
 function debug_item(Item)
 	if (calc_item(Item) < 1) then
 		if (CalcFreeItemCellCount() < 1) then
-			Msg2Player("ÔÚ120¼¶·¢Éú´íÎó£¬ÇëÖØĞÂÕûÀí×°±¸£¬³öÏÖÒ»¸ö¿ÕÎ»£¬Í¬Ê±ÇëÖØĞÂµÇÂ¼£¬ÏµÍ³¾Í¹é»¹´óÏÀÊ§È¥µÄ¶«Î÷.")
+			Msg2Player("Trong nhiÖm vô kü n¨ng cÊp 120 xuÊt hiÖn lçi, xin mêi dän dÑp l¹i hµnh trang, xuÊt hiÖn mét « trèng ®ång thêi xin mêi ®¨ng nhËp trë l¹i ®Ó hÖ thèng tr¶ l¹i ®å ®· mÊt cho ®¹i hiÖp.")
 			return
 		end
 		local idxItem = add_item(Item)
-		Msg2Player("´óÏÀ»ñµÃ¸Õ¸ÕÊ§È¥µÄ¶«Î÷"..GetItemName(idxItem)..", ÏÖÔÚ¿ÉÒÔ¼ÌĞø120¼¶ÈÎÎñ")
+		Msg2Player("§¹i hiÖp ®· thu ®­îc ®å võa mêi bŞ mÊt"..GetItemName(idxItem)..", b©y giê cã thÓ tiÕp tôc nhiÖm vô kü n¨ng 120.")
 	end
 end
 
@@ -368,37 +368,37 @@ end
 
 -- 120¼¶¼¼ÄÜÊé¶Ò»»
 function lvl120skill_learn()
-	Describe("ÓĞÊ²Ã´ÄÑ½âÂğ?",4,
-		"ÎÒÏë»»120¼¼ÄÜÊé/lvl120skill_getbook",
-		"ÔõÃ´ÄÜÑ§µ½120¼¼ÄÜ/lvl120skill_learninfo",
-		"Á·Ï°120¼¼ÄÜ·½·¨/lvl120skill_skillinfo",
-		"ÈÃÎÒÏëÏë/no");
+	Describe("Cã ®iÒu g× nan gi¶i kh«ng?",4,
+		"Ta muèn ®æi s¸ch kü n¨ng cÊp 120/lvl120skill_getbook",
+		"Lµm sao ®Ó häc ®­îc kü n¨ng cÊp 120/lvl120skill_learninfo",
+		"C¸ch luyÖn kü n¨ng cÊp 120/lvl120skill_skillinfo",
+		"§Ó ta suy nghÜ kü l¹i xem/no");
 end;
 
 function lvl120skill_skillinfo()
 	local szInfo = format("%s%s%s%s%s%s%s%s%s%s",
-			"<enter><color=green>1. ´ò¹Ö»ñµÃ <color>",
-			"<enter>Á·¼¶ÇøÓòµÄ¹ÖÎï£º´òÒ»°ãµÄ¹Ö£¬ÂÌboss£¬»Æ½ğboss;",
-			"<enter>»î¶¯ÖĞµÄ¹Ö£º´òÔÚµÚÒ»¹ØµÄ¹Ö£¬É±ÊÖboss;",
-			"<enter>ÈÎÎñÖĞµÄ¹Ö£º´òÔÚ»Æ½ğÈÎÎñÖĞµÄ¹Ö;",
-			"<enter>ËÎ½ğÕ½³¡£ºÊ¹ÓÃ»ı·Ö»»È¡¾­ÑéÖµ£¬µ«ÊÇ£¬²»ÄÜ³¬¹ıÃ¿ÈËÉÏÏŞ.", 
-			"<enter><color=green>2. Î¯ÍĞÈÎÎñ<color>",
-			"<enter>Ê¹ÓÃ°×¾ÔÍè¼¼ÄÜ£¬´ó°×¾ÔÍè¼¼ÄÜ£¬´ó°×¾ÔÍèÌØĞ§¼¼ÄÜ.",
-			"<enter>°×¾ÔÍè¼¼ÄÜ£ºÊ¹ÓÃºó½«Ìá¸ß120¼¼ÄÜµÄÁ·Ï°¶È£¬Ã¿Îå·ÖÖÓÁ·Ï°¶È½«Ôö¼ÓÒ»´Î.",
-			"<enter>´ó°×¾ÔÍè¼¼ÄÜ: Ğ§¹û±ÈÒ»°ã°×¾ÔÍè¼¼ÄÜÔö±¶£¬Ã¿Îå·ÖÖÓÁ·Ï°¶È½«Ôö¼ÓÒ»´Î",
-			"<enter>´ó°×¾ÔÍèÌØĞ§: Ğ§¹û±ÈÒ»°ã°×¾ÔÍè¼¼ÄÜÔö±¶£¬Ã¿Îå·ÖÖÓÁ·Ï°¶È½«Ôö¼ÓÒ»´Î;"
+			"<enter><color=green>1. §¸nh qu¸i nhËn ®­îc <color>",
+			"<enter>Qu¸i t¹i c¸c khu vùc luyÖn cÊp: ®¸nh qu¸i th­êng, boss xanh, boss Hoµng Kim;",
+			"<enter>Qu¸i trong ho¹t ®éng: ®¸nh qu¸i trong c¸c ho¹t ®éng 'V­ît ¶i thø nhÊt', 'Boss s¸t thñ';",
+			"<enter>Qu¸i trong nhiÖm vô: ®¸nh qu¸i trong c¸c nhiÖm vô Hoµng Kim;",
+			"<enter>ChiÕn tr­êng Tèng Kim: sö dông ®iÓm tİch lòy ®Ó ®æi ®iÓm kinh nghiÖm, tuy nhiªn kh«ng thÓ v­ît qua giíi h¹n qui ®Şnh mçi ngµy.", 
+			"<enter><color=green>2. Chøc n¨ng ñy th¸c<color>",
+			"<enter>Sö dông B¹ch C©u Hoµn kü n¨ng, §¹i B¹ch C©u Hoµn kü n¨ng, §¹i B¹ch C©u Hoµn kü n¨ng ®Æc biÖt.",
+			"<enter>B¹ch C©u Hoµn kü n¨ng: sau khi sö dông sÏ n©ng cao ®é rÌn luyÖn kü n¨ng 120, mçi 5 phót th× ®é rÌn luyÖn sÏ t¨ng mét lÇn;",
+			"<enter>§¹i B¹ch C©u Hoµn kü n¨ng: hiÖu qu¶ gÊp r­ìi B¹ch C©u Hoµn kü n¨ng th­êng, mçi 5 phót th× ®é rÌn luyÖn sÏ t¨ng mét lÇn;",
+			"<enter>§¹i B¹ch C©u hoµn kü n¨ng ®Æc biÖt: hiÖu qu¶ gÊp ®«i B¹ch C©u Hoµn kü n¨ng th­êng, mçi 5 phót th× ®é rÌn luyÖn sÏ t¨ng mét lÇn;"
 			);
 	Describe(szInfo,
 		2,
-		"·µ»Ø/lvl120skill_learn",
-		"½áÊø¶Ô»°/no")
+		"Trë vÒ/lvl120skill_learn",
+		"KÕt thóc ®èi tho¹i/no")
 end;
 
 function lvl120skill_learninfo()
-	Describe("´ïµ½120¼¶µÄ¸ßÊÖ£¬¿ÉÒÔµ½ÎÒÃÅÅÉ»»È¡120¼¼ÄÜÊé£¬Ê¹ÓÃÊéºó£¬½«Ñ§µ½120¼¼ÄÜ£¬Ã¿ÈËÖ»ÄÜ»»Ò»´Î<enter>»»È¡ÊéÒª×ñÊØ£ºÒ»±¾ÅÌÈôĞÄ¾­£¬Ò»±¾±¾ÃÅ90¼¼ÄÜÊé£¬Ò»¿ÅĞÉºì±¦Ê¯ºÍÒ»¿ÅË®¾§.", 
+	Describe("Nh÷ng cao thñ ®¹t cÊp 120 cã thÓ ®Õn m«n ph¸i cña m×nh ®Ó ®æi s¸ch kü n¨ng cÊp 120. Sau khi sö dông s¸ch sÏ häc ®­îc kü n¨ng cÊp 120, mçi nh©n vËt chØ cã thÓ ®æi mét lÇn. <enter>§Ó ®æi lÊy s¸ch cÇn ph¶i thu thËp ®ñ: 1 quyÓn Bµn Nh­îc T©m Kinh, 1 bé s¸ch kü n¨ng 90 cña m«n ph¸i m×nh, 1 viªn Tinh Hång B¶o Th¹ch vµ 1 viªn Thñy Tinh.", 
 		2,
-		"·µ»Ø/lvl120skill_learn",
-		"½áÊø¶Ô»°/no")
+		"Trë vÒ/lvl120skill_learn",
+		"KÕt thóc ®èi tho¹i/no")
 end;
 
 function lvl120skill_getbook()
@@ -407,21 +407,21 @@ function lvl120skill_getbook()
 	local nlevel = GetLevel();
 	local nfact = GetLastFactionNumber();
 	if (nstate == 19) then
-		Describe("ÕæÊÇÒÅº¶£¬ÄãÒÑÊ¹ÓÃ120¼¼ÄÜÁË",1 , "½áÊø¶Ô»°/no");
+		Describe("ThËt ®¸ng tiÕc, ng­¬i ®· ®æi s¸ch kü n¨ng 120 råi.",1 , "KÕt thóc ®èi tho¹i/no");
 	elseif (nlevel < 120) then
-		Describe("µÈ¼¶²»¹»120£¬²»ÄÜ»»Êé",1 , "½áÊø¶Ô»°/no");
+		Describe("§¼ng cÊp ch­a ®ñ 120, kh«ng ®ñ ®iÒu kiÖn ®æi s¸ch.",1 , "KÕt thóc ®èi tho¹i/no");
 	elseif (nfact < 0 or nfact > 9) then
-		Describe("ÄãÎ´¼ÓÈëÃÅÅÉ£¬²»¹»»»ÊéÌõ¼ş",1 , "½áÊø¶Ô»°/no");
+		Describe("Ng­¬i ch­a gia nhËp m«n ph¸i, kh«ng ®ñ ®iÒu kiÖn ®æi s¸ch.",1 , "KÕt thóc ®èi tho¹i/no");
 	else
 		if (lvl120skill_delallitem() == 1) then
 			SetTask(LV120_SKILL_STATE, 19);
 			add_item(LV120SKILLBOOK);
-			Msg2Player("»»120¼¼ÄÜÊé³É¹¦")
+			Msg2Player("§æi s¸ch kü n¨ng cÊp 120 thµnh c«ng!")
 			WriteLog(format("[LvL120Skill]\t%s\tName:%s\tAccount:%s\tget a lvl120skillbook",
 				GetLocalDate("%Y-%m-%d %X"),GetName(), GetAccount()))
 		else
-			Describe("ÕæÊÇÒÅº¶£¬´øµÄÎïÆ·²»ºÏÒªÇó£¬Çë¼ì²é!", 1,"½áÊø¶Ô»°/no");
-			Msg2Player("ĞèÒªÊÕ¼¯ÎïÆ·£ºÒ»±¾ÅÌÈôĞÄ¾­£¬Ò»±¾±¾ÃÅ90¼¼ÄÜÊé£¬Ò»¿ÅĞÉºì±¦Ê¯ºÍÒ»¿ÅË®¾§.");
+			Describe("ThËt ®¸ng tiÕc, vËt phÈm mang ®Õn kh«ng ®óng yªu cÇu, h·y kiÓm tra l¹i!", 1,"KÕt thóc ®èi tho¹i/no");
+			Msg2Player("VËt phÈm cÇn thu thËp: 1 quyÓn Bµn Nh­îc T©m Kinh, 1 bé s¸ch kü n¨ng 90 cña m«n ph¸i m×nh, 1 viªn Tinh Hång B¶o Th¹ch vµ 1 viªn Thñy Tinh.");
 		end;
 	end;
 end;

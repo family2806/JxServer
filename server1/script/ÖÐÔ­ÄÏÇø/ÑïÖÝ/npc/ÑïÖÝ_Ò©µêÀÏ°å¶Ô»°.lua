@@ -9,18 +9,18 @@ end
 function main()
 	UTask_wu = GetTask(10)
 	if (UTask_wu == 40*256+10) and (HaveItem(142) == 0) then 		--ÈÎÎñÖĞ
-		Say("½ñÌì÷êÏãµÄ¼Û¸ñÎª500Á½¶øÒÑ!",
+		Say("Gi¸ d­îc liÖu quı X¹ H­¬ng h«m nay lµ 500 l­îng th«i!",
 			4,
-			"Âòµ½÷êÏã/L40_buy_yes",
-			"½»Ò×/yes",
-			"ÎÒÏëÁ¶ÖÆ»ìÔªÁéÂ¶ /refine",
-			"²»½»Ò×/no")
+			"Mua ®­îc X¹ h­¬ng/L40_buy_yes",
+			"Giao dŞch/yes",
+			"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
+			"Kh«ng giao dŞch/no")
 	else
-		Say("Ò©µêÀÏ°å£º±¾µêµÄÒ©²Ä»õÕæ¼ÛÊµ£¬°üÖÎ°Ù²¡¡£",
+		Say("Chç t«i ®©y d­îc liÖu g× còng cã, cã bÖnh th× khái bÖnh, kh«ng bÖnh kháe ng­êi, b¸n thuèc ®óng gi¸ kh«ng lõa g¹t, ngµi mua mét İt chø?",
 			3,
-			"½»Ò×/yes",
-			"Á¶ÖÆ»ìÔªÁéÂ¶/refine",
-			"²»½»Ò×/no")
+			"Giao dŞch/yes",
+			"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
+			"Kh«ng giao dŞch/no")
 	end
 end;
 
@@ -28,10 +28,10 @@ function L40_buy_yes()
 	if (GetCash() >= 500) then
 		Pay(500)
 		AddEventItem(142)
-		AddNote("Âòµ½÷êÏã.")
-		Msg2Player("Âòµ½÷êÏã.")
+		AddNote("Mua ®­îc X¹ h­¬ng.")
+		Msg2Player("Mua ®­îc X¹ h­¬ng.")
 	else
-		Talk(1,"","Õâ¸ö¼Û¶¼Âò²»ÁË£¬¸øÎÒ³öÈ¥!")
+		Talk(1,"","Gi¸ vËy còng mua kh«ng næi, ®i ra cho ta lµm ¨n!")
 	end
 end;
 

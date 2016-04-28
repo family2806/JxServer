@@ -3,25 +3,25 @@ Include("\\script\\lib\\basic.lua")
 COIN_EXTPOINT = 3
 
 function takeCoin()
-	Say("ÔÚ25-09-2009 µ½ 24h 01-11-2009 ½«¾ÙĞĞÖĞÇï½Ú»áÓÅ»İ´ÙÏú»î¶¯¡£¿Í»§³äÖµ½«»á»ñÔùÍ­Ç®.",2,"¸øÎÒÁìÍ­Ç®/wantCoin"," ÎÒÖªµÀÁË/OnCancel")
+	Say("Trong thêi gian tõ 25-09-2009 ®Õn 24h 01-11-2009 sÏ diÔn ra ho¹t ®éng khuyÕn m·i mõng Trung Thu LÔ Héi. Quı kh¸ch n¹p thÎ sÏ ngÉu nhiªn ®­îc tÆng TiÒn ®ång vµo tµi kho¶n.",2,"Cho ta nhËn tiÒn ®ång/wantCoin","Ta biÕt råi/OnCancel")
 end;
 
 function wantCoin()
 	local nExtValue = GetExtPoint(COIN_EXTPOINT)
 	
 	if (nExtValue <= 0) then
-		Say("Çë¿Í»§³äÖµ£¬ÓĞ»ú»áÁìÈ¡Í­Ç®!",0)
+		Say("Xin mêi Quı kh¸ch n¹p thÎ ®Ó cã c¬ héi nhËn TiÒn ®ång!",0)
 		return
 	end
 	
-	Say("Ä¿Ç°¿Í»§×Ü¹²ÓĞ<color=yellow>"..nExtValue.."<color> Í­Ç®ÔÚÕËºÅÄÚ¡£È·ÈÏÈ¡Íê³öÀ´Âğ£¿",2,"¶ÔÁË£¬ÎÒÏëÈ¡¡£/sureCoin","Ä¿Ç°²»ĞèÒª/OnCancel")
+	Say("HiÖn t¹i Quı kh¸ch cã tæng céng <color=yellow>"..nExtValue.."<color> tiÒn ®ång trong tµi kho¶n. X¸c nhËn lÊy ra hÕt chø?",2,"§óng råi, ta muèn lÊy/sureCoin","HiÖn t¹i ta ch­a cÇn/OnCancel")
 end;
 
 function sureCoin()
 	local nExtValue = GetExtPoint(COIN_EXTPOINT)
 	
 	if (nExtValue <=0 ) then
-		Say("È¡Í­Ç®Ê±·¢Éú´íÎó£¬ÇëÁªÏµ¼¼Êõ²¿",0)
+		Say("Cã lçi x¶y ra khi rót tiÒn ®ång. Xin liªn hÖ bé phËn kü thuËt",0)
 		return
 	end
 	
@@ -30,7 +30,7 @@ function sureCoin()
 	if (nMod ~= 0) then nReal = nReal + 1 end
 	
 	if (CalcFreeItemCellCount() < nReal) then
-		Say("Ç®×¯ÀÏ°å£º×°±¸²»×ã¿ÕÎ»£¬ÇëÕûÀí×°±¸.",0)
+		Say("¤ng chñ TiÒn Trang: Hµnh trang kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.",0)
 		return
 	end
 	
@@ -49,8 +49,8 @@ function sureCoin()
 		end
 	end
 
-	Say("ÄãµÄÍ­Ç®ÔÚÕâÀï£¬ÇëÁìÈ¡¡£×£Äã¿ìÀÖ",0)
-	Msg2Player("Äã»ñµÃ"..nExtValue.."Í­Ç®")
+	Say("TiÒn ®ång cña Quı kh¸ch ®©y, xin h·y nhËn lÊy. Chóc Quı kh¸ch vui vÎ.",0)
+	Msg2Player("B¹n nhËn ®­îc "..nExtValue.." tiÒn ®ång")
 	WriteLog(format("[VNGPROMOTION]\tDate:%s\tAccount:%s\tName:%s\ttake:%s coin",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),nExtValue))
 end;
 

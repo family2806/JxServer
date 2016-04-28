@@ -14,11 +14,11 @@ function main()
 	EventSys:GetType("AddNpcOption"):OnEvent(szNpcName, tbDailog, nNpcIndex)
 	
 	
-	tbDailog.szTitleMsg = "<#><npc>¹§Ï²ÄãÔÚ13·ÖÖÓÄÚ´³¹ı29¹Ø, Òª¼ÌĞø´³¹ØÂğ?"
+	tbDailog.szTitleMsg = "<#><npc>Xin chóc mõng c¸c ch­ vŞ ®· v­ît qua ®­îc 29 cöa ¶i trong thêi gian 13 phót, Muèn tiÕp tôc V­ît ¶i chø!"
 	
-	tbDailog:AddOptEntry("¼ÌĞø´³¹Ø", gotonewworld); 
+	tbDailog:AddOptEntry("TiÕp tôc V­ît ¶i", gotonewworld); 
 	
-	tbDailog:AddOptEntry("Àë¿ª", leave); 	
+	tbDailog:AddOptEntry("Rêi khái", leave); 	
 	tbDailog:Show()
 end
 
@@ -36,17 +36,17 @@ end
 function gotonewworld()
 	local ndate = tonumber(GetLocalDate("%H"))
 	if ndate > 22 and ndate < 10 then
-		Say("´ËÊ±¶Î²»ÄÜ¼ÌĞø´³¹Ø", 0)
+		Say("Trong thêi gian nµy kh«ng thÓ tiÕn hµnh tiÕp tôc V­ît ¶i", 0)
 		leave()
 		return 
 	end
 	local nMinute = tonumber(GetLocalDate("%M"))
 	if nMinute >= 24 then
-		Talk(1, "", "Çë¼ûÁÂ£¬ÄãÒÑ³¬¹ı´«Í³Ê±¼ä") 
+		Talk(1, "", "Xin l­îng thø, Ng­¬i ®· v­ît qu¸ thêi gian truyÒn tèng") 
 		return
 	end
 	if GetMissionV(VARV_BOARD_TIMER) >= (CHUANGGUAN30_TIME_LIMIT + 60) then
-		Say("Çë¼ûÁÂ£¬ÄãÒÑ³¬¹ı´«Í³Ê±¼ä!",0)
+		Say("Xin l­îng thø, Ng­¬i ®· v­ît qu¸ thêi gian truyÒn tèng!",0)
 		return 
 	end
 	-- wangjingjun

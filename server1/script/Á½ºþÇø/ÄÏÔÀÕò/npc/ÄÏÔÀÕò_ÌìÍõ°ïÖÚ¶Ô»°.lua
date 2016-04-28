@@ -1,34 +1,34 @@
---Á½ºşÇø ÄÏÔÀÕò ÌìÍõ°ïÖÚ¶Ô»°
+--Á½ºşÇø ÄÏÔÀÕò tianwangÖÚ¶Ô»°
 
 function main(sel)
-Talk(3, "select", "ÌìÍõ°ïÖÚ£º±¾°ï°ïÖ÷ÑîçøÔÚ½­ºşÉÏºÕºÕÓĞÃû£¬±ğ¿´ËıÊÇ¸öÅ®×Ó£¬µ«ÊÇÎäÒÕ¸ßÇ¿£¬µ¨Ê¶¹ıÈË£¬²»ÈÃĞëÃ¼£¬°ïÀïµÄĞÖµÜÃÇ¶¼·şËı£¡", "±¾°ï°ïÖÚ±é²¼Á½ºş£¬ÈË¶àÊÆ´ó£¬ÌìÏÂÎŞÈË¸ÒĞ¡êïÔÛÃÇ£¡", "±¾°ï¼È¿¹½ğ±ø¡¢Ò²·´ËÎÍ¢£¬ĞÖµÜÃÇ¶¼ÊÇÆ¶¿à°ÙĞÕ³öÉí£¬´³µ´½­ºşÒ²Ö»ÊÇÎªÁËÓĞÌõ»îÂ·¡£ÄÄ¸ö»ÊµÛ×ø½­É½£¬¸úÔÛÃÇ¿ÉÃ»Ê²Ã´¹ØÏµ£¡");
+Talk(3, "select", "Bang chñ D­¬ng Anh vâ nghÖ cao c­êng, gan d¹ h¬n ng­êi, kh«ng kĞm g× tu mi nam tö!", "Bæn m«n quy luËt uy nghiªm, ng­êi ®«ng thÕ m¹nh! Kh«ng ai trong thiªn h¹ d¸m coi khinh!", "Bæn bang võa chèng Kim võa kh¸ng Tèng! Huynh ®Ö ®Òu xuÊt th©n lµ d©n nghÌo, phiªu b¹t giang hå lµ v× kÕ sinh nhai! Ai lµm vua bän ta ch¶ cÇn quan t©m");
 end;
 
 function select()
-Say("ÌìÍõ°ïÖÚ£ºÄãÏë¼ÓÈë±¾°ïÂğ£¿", 2, "¼ÓÈë/yes", "²»¼ÓÈë/no");
+Say("Cã muèn gia nhËp bæn gi¸o kh«ng?", 2, "Gia nhËp. /yes", "Kh«ng gia nhËp/no");
 end;
 
 
 function yes()
 if (GetSeries() ~= 0) then								--Èç¹ûÍæ¼Ò²»ÊôÓÚ½ğÏµ
-	Say("ÌìÍõ°ïÖÚ£ºÒÔÄãµÄ×ÊÖÊºÍ¸ù¹Ç²»ÊÊºÏĞŞÁ·±¾ÃÅÎä¹¦£¬ÎÒÃÇ²»ÏëÎóÈË×ÓµÜ£¬Äã»¹ÊÇÁíÍ¶Ã÷Ê¦°É£¡", 0)
+	Say("§Ö tö bæn bang toµn lµ anh hïng xuÊt chóng. KĞm câi nh­ ng­¬i kh«ng xøng ®¸ng vµo bæn bang!", 0)
 else
 	if (GetFaction() ~= "") then							--Èç¹ûÍæ¼ÒÒÑ¾­ÊôÓÚ½ğÏµµÄÄ³Ò»ÃÅÅÉ
-		Say("ÌìÍõ°ïÖÚ£ºÖ»ÓĞ²»ÊôÓÚÈÎºÎÃÅÅÉµÄÈË£¬²ÅÄÜ¼ÓÈë±¾°ï¡£", 0)
+		Say("Ch­a gia nhËp m«n ph¸i kh¸c míi cã thÓ gia nhËp bæn bang", 0)
 	else	
 		if (GetLevel() >= 10) then						--µÈ¼¶´ïµ½Ê®¼¶
 			if ( GetSex() == 1 ) then 					--Èç¹ûÍæ¼ÒĞÔ±ğÎªÅ®
-				Say("ÌìÍõ°ïÖÚ£º±¾°ï°ïÖÚ¶¼ÊÇĞ©´ÖºÀ´óºº£¬ÏñÄãÕâÑù½¿µÎµÎµÄ¹ÃÄï¿É²»ÊÊºÏ±¾°ï¡£", 0)
+				Say("Thiªn V­¬ng bang luyÖn tËp cùc khæ, yÕu ®uèi nh­ c« n­¬ng kh«ng thİch hîp ®©u!", 0)
 			else								-- Íæ¼ÒĞÔ±ğÎªÄĞ
-    				SetFaction("ÌìÍõ°ï")       				--Íæ¼Ò¼ÓÈëÌìÍõ°ï
+    				SetFaction("tianwang")       				--Íæ¼Ò¼ÓÈëtianwang
     				--NewWorld(59, 1425, 3472)				--°ÑÍæ¼Ò´«ËÍµ½ÃÅÅÉÈë¿Ú
 				--SetFightState(1)					--Íæ¼Ò×ª»»³ÉÕ½¶·×´Ì¬	
     				--SetRevPos(21)		  				--ÉèÖÃÖØÉúµã
     				--SetTask(3, 10)
-    				Say("»¶Ó­Äã¼ÓÈëÌìÍõ°ï£¡",0)  
+    				Say("Hoan Nghªnh b¹n gia nhËp Thiªn V­¬ng bang! ",0)  
 			end
 		else
-			Say("ÌìÍõ°ïÖÚ£ºÑ§ÎäÖ®µÀ£¬ÓûËÙÔò²»´ï¡£ÄãµÈ¼¶²»¹»£¬µÈĞŞÁ·µ½Ê®¼¶Ö®ºóÔÙÀ´ÕÒÎÒ°É£¡", 0)	
+			Say("C¨n b¶n cña ng­¬i cßn kĞm l¾m! H·y ®i luyÖn tËp thªm, bao giê ®Õn cÊp 10 l¹i ®Õn t×m ta!", 0)	
 		end
 	end
 end;			

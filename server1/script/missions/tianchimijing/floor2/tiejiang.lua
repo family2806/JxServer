@@ -3,11 +3,11 @@ Include("\\script\\dailogsys\\g_dialog.lua")
 Include("\\script\\global\\global_tiejiang.lua")
 
 function main()
-	local szTitle = "<#><npc> ÐèÒª½»Ò×Âð?"
+	local szTitle = "<#><npc> CÇn giao dÞch kh«ng?"
 	local tbOpt = {}
-	tinsert(tbOpt, {"½»Ò×", yes}) 
-	tinsert(tbOpt, {"¾«Á¶Ê¯ÉÌµê", energy_sale}) 
-	tinsert(tbOpt, {"Â·¹ý¶øÒÑ"}) 
+	tinsert(tbOpt, {"Giao dÞch", yes}) 
+	tinsert(tbOpt, {"Cöa hµng tinh luyÖn th¹ch", energy_sale}) 
+	tinsert(tbOpt, {"Nh©n tiÖn ghÐ qua th«i"}) 
 	CreateNewSayEx(szTitle, tbOpt);
 end
 

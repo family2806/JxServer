@@ -4,8 +4,8 @@ Include("\\script\\vng_event\\traogiai\\npah\\vng_toolaward.lua")
 tbCurSeason = tbAwardClass:New()
 tbCurSeason.nStartDate = 201111240000
 tbCurSeason.nEndDate = 201111302400
-tbCurSeason.strName = "ÁìÈ¡Î÷²¿Îå°Ô±ÈÈü½±Àø"
-tbCurSeason.strNPC = "Àñ¹Ù"
+tbCurSeason.strName = "NhËn th­ëng gi¶i ®Êu Ngò B¸ MiÒn T©y"
+tbCurSeason.strNPC = "LÔ Quan"
 tbCurSeason.nID = 6
 tbCurSeason.tbAccList = {		
 	["1997baotran"]={[1]={ {nAwardID=1,nCount=1}, {nAwardID=2,nCount=1}, {nAwardID=3,nCount=1}, {nAwardID=4,nCount=1}, },},
@@ -80,10 +80,10 @@ tbCurSeason.tbAccList = {
 	["xuanhien92"]={[1]={ {nAwardID=1,nCount=1}, {nAwardID=2,nCount=1}, {nAwardID=3,nCount=1}, },},
 }
 tbCurSeason.tbPrizeList = {	
-	[1] = {szName="ÑªÕæµ¤",tbProp={6,1,1677,1,0,0},nCount=1, tbParam={1000000000}},
-	[2] = {szName="ÐþÕæµ¤",tbProp={6,1,1678,1,0,0},nCount=1, tbParam={1500000000}},
-	[3] = {szName="×Ï½ðÕæµ¤",tbProp={6,1,2263,1,0,0},nCount=1, tbParam={2000000000}},
-	[4] = {szName="×ÏÃ§Áî",tbProp={6,1,2350,1,0,0},nCount=1},
+	[1] = {szName="HuyÕt Ch©n §¬n",tbProp={6,1,1677,1,0,0},nCount=1, tbParam={1000000000}},
+	[2] = {szName="HuyÒn Ch©n §¬n",tbProp={6,1,1678,1,0,0},nCount=1, tbParam={1500000000}},
+	[3] = {szName="Tö Kim Ch©n §¬n",tbProp={6,1,2263,1,0,0},nCount=1, tbParam={2000000000}},
+	[4] = {szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1},
 }
 --tbCurSeason.tbFreeBagRequire = {
 --	[1] = 0,

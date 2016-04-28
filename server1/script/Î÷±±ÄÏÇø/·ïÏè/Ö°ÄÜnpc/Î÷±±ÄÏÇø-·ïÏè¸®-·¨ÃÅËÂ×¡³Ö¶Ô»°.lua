@@ -5,17 +5,17 @@ function main(sel)
 i = random(0,2)
 
 if (i == 0) then
-Say("·¨ÃÅËÂ×¡³Ö£º±¾ËÂÊ¼½¨ÓÚ¶«ºº£¬ÖÁ±¾³¯ÒÑÓĞÊı°ÙÄêµÄÀúÊ·¡£",0)
+Say("Bæn tù x©y dùng vµo thêi §«ng H¸n, tİnh ®Õn nay ®· cã lŞch sö hµng tr¨m n¨m.",0)
 return
 end;
 
 if (i == 1) then
-Say("·¨ÃÅËÂ×¡³Ö£º·¨ÃÅ£¬ÒâÎªĞŞĞĞÕß±ØÈëÖ®ÃÅ¡£", 0)
+Say("Ph¸p M«n ı chØ c¸nh cöa mµ ng­êi tu hµnh ph¶i b­íc vµo.", 0)
 return
 end;
 
 if (i == 2) then
-Say("·¨ÃÅËÂ×¡³Ö£º±¾ËÂÒòËş¶ø½¨£¬·¨ÃÅËÂËşÓÖÃûÕæÉí±¦Ëş£¬ÒòÔáÓĞ·ğ×æÊÍåÈÄ²ÄáµÄÊÖÖ¸¹Ç¶øµÃÃû¡£", 0)
+Say("Bæn tù cã d¹ng h×nh th¸p, Ph¸p M«n Tù Th¸p lµ tªn chİnh cña B¶o Th¸p", 0)
 return
 end;
 

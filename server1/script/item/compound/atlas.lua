@@ -85,16 +85,16 @@ end
 
 --²éÑ¯»Æ½ğĞèÒªËéÆ¬ÊıÁ¿
 function QueryPiece()
-	GiveItemUI("¿´»Æ½ğËéÆ¬ÊıÁ¿.","·ÅÈëĞèÒª¿´µÄ»Æ½ğÍ¼Æ×!","getQueryPiece","OnCancel",1)
+	GiveItemUI("Xem sè l­îng m¶nh Hoµng Kim.","H·y ®Æt vµo ®å phæ Hoµng Kim cÇn xem!","getQueryPiece","OnCancel",1)
 end
 function getQueryPiece(nCount)
 	local arytalk = 
 	{
-		"¹¤½³£ºÖ»ÄÜ·ÅÈë»Æ½ğÍ¼Æ×£¬Äã·ÅÈëµÄÎïÆ·²»¶Ô!",
-		"·ÅÈë»Æ½ğÍ¼Æ×/QueryPiece",
-		"ÍË³ö/OnCancel",
-		"¹¤½³£º»Æ½ğÍ¼Æ× <color=yellow>%s<color> ¿ÉÒÔ·Ö³É <color=yellow>%s<color> ËéÆ¬.",
-		"¹¤½³£º·ÅÈëµÄÎïÆ·²»¶Ô»òÕß¸ÃÍ¼Æ×ÔİÊ±Ã»ÓĞËéÆ¬.",
+		"Thî rÌn: ChØ cã thÓ ®Æt vµo ®å phæ hoµng kim, vËt phÈm ng­¬i ®Æt vµo kh«ng ®óng!",
+		"§Æt vµo ®å phæ Hoµng Kim/QueryPiece",
+		"Tho¸t ra/OnCancel",
+		"Thî rÌn: §å phæ Hoµng Kim <color=yellow>%s<color> cã thÓ ph©n thµnh <color=yellow>%s<color> m¶nh.",
+		"Thî rÌn: VËt phÈm ®Æt vµo kh«ng ®óng hoÆc ®å phæ nµy t¹m thêi ch­a cã m¶nh nµo.",
 	}
 	if nCount ~= 1 then
 		Say(arytalk[1],2,arytalk[2],arytalk[3])
@@ -142,7 +142,7 @@ function verifySrcItems( arynNecessaryItemIdx, arynAlternativeItemIdx )
 		["4,1324,1"] = 8,	--"ÔÉÊ¯ËéÆ¬8"
 		["4,1325,1"] = 9,	--"ÔÉÊ¯ËéÆ¬9"
 	}
-	local arytalk = "¹¤½³£ºÎÒĞèÒª<color=yellow>ÌìÊ¯ËéÆ¬<color> ²ÅÄÜºÏ³É»Æ½ğËéÆ¬. <color=yellow>ÌìÊ¯ËéÆ¬<color> ²»Í¬½«ÖÆÔì³ö²»Í¬µÄ»Æ½ğËéÆ¬£¬Çë·Å<color=yellow>ÌìÊ¯ËéÆ¬<color> ½øÈ¥!"
+	local arytalk = "Thî rÌn: Ta cÇn <color=yellow>m¶nh thiªn th¹ch<color> míi cã thÓ hîp thµnh m¶nh Hoµng Kim. <color=yellow>M¶nh thiªn th¹ch<color> kh¸c nhau sÏ chÕ t¹o ra m¶nh Hoµng Kim kh¸c nhau, h·y ®Æt <color=yellow>m¶nh thiªn th¹ch<color> vµo!"
 	
 	local nAlternativeCount = getn( arynAlternativeItemIdx );
 	local bNoSign = 0
@@ -279,7 +279,7 @@ end
 function previewProb( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcItemValSum, aryDesItemInfo, arydDesItemVal )
 	do return end
 	local nSelDesItemIdx, arydDesItemProb, dDesItemProbSum = transItemVal_Atlas( nSrcItemValSum, arydDesItemVal );
-	CreateTaskSay( { format( "´Ë´Î»Æ½ğ×°±¸ºÏ³É³É¹¦±ÈÀıÎª<color=yellow>%05.2f%%", dDesItemProbSum * 100 ), "È·ÈÏ/onCancel" } );
+	CreateTaskSay( { format( "Tû lÖ hîp thµnh thµnh c«ng cña bé trang bŞ Hoµng Kim lÇn nµy lµ\n<color=yellow>%05.2f%%", dDesItemProbSum * 100 ), "X¸c nhËn/onCancel" } );
 end
 
 -- ÎïÆ·¼ÛÖµÁ¿¸ÅÂÊ×ªÒÆº¯Êı for Atlas
@@ -318,7 +318,7 @@ function funitem_calcItemValue(aryDesItemInfo)
 			arydDesItemVal = aryDesItemInfo[13]
 	end
 	if arydDesItemVal <= 0 then
-			Say("ÉñÃØ¹¤½³£º¶Ô²»Æğ£¡ÎÒÃ»ÓĞÏë³öÄãÒªµÄ»Æ½ğÎïÆ·.",0)
+			Say("Thî rÌn thÇn bİ: Xin lçi! Ta ch­a nghÜ ra c¸ch chÕ t¹o ®å Hoµng Kim ng­¬i cÇn.",0)
 			return -1;
 	end
 	return arydDesItemVal

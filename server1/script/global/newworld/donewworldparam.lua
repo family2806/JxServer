@@ -14,7 +14,7 @@ function PraseParam(szParam)
 		for i = 1,getn(aryFuns) do
 			local ExecFun = aryFuncStore[aryFuns[i]]
 			if (ExecFun == nil)then
-				print("Error: (NeÍòÍòorld:%d) Ã»ÓÐ¶¨Òåº¯Êý%s", SubWorld, aryFuns[i])
+				print("Error: (Ne v¹n v¹norld:  %d) Ch­a ®Þnh nghÜ hµm sè %s", SubWorld, aryFuns[i])
 			else
 				aryChangeWorldExec[SubWorld][i] =  ExecFun;			
 			end	

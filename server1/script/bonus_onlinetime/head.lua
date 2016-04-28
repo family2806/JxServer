@@ -4,10 +4,10 @@ Include("\\script\\lib\\awardtemplet.lua")
 BNCQ_End_Date = 20110220;	--½áÊø»î¶¯
 BNCQ_Start_Date = 20110127;
 BNCQ_OneDayTime = 60 * 24;
---BNCQ_OnlineAwardItem = "°ÙÄêÖì¹û"
+--BNCQ_OnlineAwardItem = "B¸ch niªn chu qu¶"
 
 
---tinhpn 20100724: °ÙÄêÖì¹û
+--tinhpn 20100724: B¸ch niªn chu qu¶
 BNCQ_TASKID_START_SERVERONLINE_TIME = 2778
 BNCQ_TASKID_GET_TIMES = 2779
 BNCQ_TASKID_ONLINE_TIME = 2780

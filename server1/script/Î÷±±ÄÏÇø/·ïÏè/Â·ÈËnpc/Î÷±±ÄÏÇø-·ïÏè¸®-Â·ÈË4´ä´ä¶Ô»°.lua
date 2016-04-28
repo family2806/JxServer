@@ -5,6 +5,6 @@ function main(sel)
 	if ndate >= 8030800 and ndate <= 8033124 then
 		funv_jieri_shenmi:xianhua()	---08¸¾Å®½Ú»î¶¯£¬08.4.1ºó¿ÉÉ¾³ı
 	else
-Say("´ä´ä£ºĞãÇÉ½ã½ãµÄÊÖ¿ÉÇÉÀ²£¬»á¼ôÄÇÃ´¶àÆ¯ÁÁµÄÖ½»¨£¬°³³¤´óºóÒ²ÒªÑ§¼ôÖ½¡£", 0)
+Say("Tay cña chŞ Tó X¶o thËt khĞo lĞo, biÕt c¾t nh÷ng c¸i hoa giÊy ®Ñp nh­ vËy. Sau nµy lín lªn em còng häc c¾t giÊy.", 0)
 	end
 end;

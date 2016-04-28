@@ -13,17 +13,17 @@ tbVngEventThang6Reward.tbAward =
 {
 	[1] = 
 		{
-			{szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {3}, nRate = 65,},
-			{szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {4}, nRate = 15,},
-			{szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {5}, nRate = 16,},
-			{szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {6}, nRate = 4,},
+			{szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {3}, nRate = 65,},
+			{szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {4}, nRate = 15,},
+			{szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {5}, nRate = 16,},
+			{szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {6}, nRate = 4,},
 		},
-	[2] = {szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {2}},
-	[3] = {szName="–“‘À±¶œ‰",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {1}},
+	[2] = {szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {2}},
+	[3] = {szName="B∂o r≠¨ng may mæn",tbProp={6,1,30110,1,0,0}, nExpiredTime = 1440, nBindState = -2, nCount=1, tbParam = {1}},
 }
 tbVngEventThang6Reward.tbLog = 
 {
-	"∞◊Ω± ±¶œ‰",
-	"≤ªÀ¿± ±¶œ‰",
-	"‘¬…Ò± ±¶œ‰",
+	"BaoRuongCayBachKim",
+	"BaoRuongCayBatTu",
+	"BaoRuongCayNguyetThan",
 }

@@ -4,7 +4,7 @@ Include("\\script\\activitysys\\functionlib.lua")
 
 function pActivity:CheckHongXian()
 	if PlayerFunLib:CheckItemInBag({tbProp={6,1,2696,1,0,0},},1,"") then
-		lib:ShowMessage("ÄúÒÑÓÐºìÏßÁË")
+		lib:ShowMessage("Ng­¬i ®· cã D©y Hång råi")
 		return
 	end
 	return 1
@@ -25,7 +25,7 @@ end
 
 function pActivity:GetValentineRandNumber(nTaskId)
 	local nValentineNumber = self.TaskGroup:GetTask(nTaskId, nValentineNumber)
-	lib:ShowMessage(format("ÄãµÄÒöÔµÊýÎª%d",nValentineNumber))
+	lib:ShowMessage(format("Sè Nh©n Duyªn cña ng­¬i lµ %d",nValentineNumber))
 end
 
 function pActivity:CheckValentineSeedTime(nTaskId, nValue, szFailMsg, szOption, nAddValue, nLimit, nTaskExId)
@@ -67,13 +67,13 @@ end
 function pActivity:CheckGetMeiGuiHuaZiCondition()
 	
 	if GetLevel() < 150 and ST_IsTransLife() ~= 1 then
-		Msg2Player("µÈ¼¶²»¹»®ñ!")
+		Msg2Player("§¼ng cÊp kh«ng ®ñ!")
 		return 
 	end
 	
 	local nTeamSize = GetTeamSize()
 	if nTeamSize ~= 2 then
-		Msg2Player("ÇëÎ¬³Ö2ÈËÒ»¶Ó")
+		Msg2Player("Xin h·y duy tr× 2 ng­êi cïng ®éi ngò")
 		return
 	end
 	
@@ -83,7 +83,7 @@ function pActivity:CheckGetMeiGuiHuaZiCondition()
 	local nPlayer1Sex = DynamicExecuteByPlayer(nPlayer1Idx, "", "GetSex")
 	local nPlayer2Sex = DynamicExecuteByPlayer(nPlayer2Idx, "", "GetSex")
 	if (nPlayer1Sex + nPlayer2Sex ~= 1) or (nPlayer1Sex * nPlayer2Sex ~= 0) then
-		lib:ShowMessage("ÐèÒªÄÐÅ®×é¶Ó²ÅÄÜÖÖÃµ¹åÖÖ×Ó")
+		lib:ShowMessage("CÇn ph¶i nam n÷ tæ ®éi víi nhau míi cã thÓ trång H¹t Gièng Hoa Hång")
 		return
 	end
 	
@@ -98,18 +98,18 @@ function pActivity:CheckGetMeiGuiHuaZiCondition()
 		local nFlag1 = CallPlayerFunction(nPlayer1Idx, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
 
 	 	if nFlag1 ~= 1 then
-			lib:ShowMessage("ÇëÈ·ÈÏÓÐÔµÈËÓëÄã¶¼ÓÐºìÏßºóÀ´ÁìÃµ¹åÖÖ×Ó!")
+			lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn nhËn H¹t Gièng Hoa Hång!")
 			return
 		end
 		
 		local nPlayer2Number = CallPlayerFunction(nPlayer2Idx, self.TaskGroup.GetTask, self.TaskGroup, 1) --self.TaskGroup:GetTask(1) 
 		local nFlag2 = CallPlayerFunction(nPlayer2Idx, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
 	 	if nFlag2 ~= 1 then
-			lib:ShowMessage("ÇëÈ·ÈÏÓÐÔµÈËÓëÄã¶¼ÓÐºìÏßºóÀ´ÁìÃµ¹åÖÖ×Ó!")
+			lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn nhËn H¹t Gièng Hoa Hång!")
 			return
 		end
 		if self:NumberIsEven(nPlayer1Number + nPlayer2Number) ~= 1 then
-			Msg2Player("ÇëÄúµÄÓÐÔµÈË»òÕßÅäÅ¼À´ÁìÃµ¹åÖÖ×Ó!")
+			Msg2Player("Xin h·y mêi ng­êi cã duyªn hoÆc phèi ngÉu cña ng­¬i ®Õn nhËn H¹t Gièng C©y Hoa Hång!")
 			return
 		end
 		return 1
@@ -146,7 +146,7 @@ function pActivity:GiveHongXian()
 		nMonth = 3
 	end
 	local nLimit = 20110000 + nMonth * 100 + nDay
-	PlayerFunLib:GetItem({tbProp={6,1,2696,1,0,0},nBindState = -2,nExpiredTime=nLimit,},1,"ÇéÈË½Ú»î¶¯ÁìºìÏß")
+	PlayerFunLib:GetItem({tbProp={6,1,2696,1,0,0},nBindState = -2,nExpiredTime=nLimit,},1,"Ho¹t ®éng LÔ T×nh Nh©n nhËn D©y Hång")
 end
 
 function pActivity:CheckQJYYTime()
@@ -154,6 +154,6 @@ function pActivity:CheckQJYYTime()
 	if 110213 <= nDate and nDate <= 110223 then
 		return 1
 	end
-	Msg2Player("²»ÊÇ»î¶¯Ê±¼ä£¬µÀ¾ßÃ»ÓÐ¼ÛÖµ!")
+	Msg2Player("Kh«ng ph¶i trong thêi gian diÔn ra ho¹t ®éng, ®¹o cô kh«ng cã gi¸ trÞ !")
 	return 
 end

@@ -1,6 +1,6 @@
 tbclass_newyear2008_yingchundai = {}
 tbclassname = tbclass_newyear2008_yingchundai
-tbclassname.TITLE = "Ó­´º´ü."
+tbclassname.TITLE = "Më tói mõng xu©n."
 tbclassname.tbdate = {}
 tbclassname.tbdate.nstart = 802020000
 tbclassname.tbdate.nend 	= 803022400
@@ -8,22 +8,22 @@ tbclassname.mareial =
 {
 	ntotalprob = 100,
 	tbitem = {
-			{G=6,D=1,P=1653,szname="Ò¶×Ó",prob=38.80},
-			{G=6,D=1,P=1654,szname="Å´Ã×",prob=29.10},
-			{G=6,D=1,P=1655,szname="ÂÌ¶¹",prob=19.40},
-			{G=6,D=1,P=1656,szname="ÖíÈâ",prob=9.70	},
-			{G=6,D=1,P=1657,szname="¸£"	 ,prob=1.00	},
-			{G=6,D=1,P=1658,szname="Â»"	 ,prob=1.00	},
-			{G=6,D=1,P=1659,szname="ÊÙ"	 ,prob=1.00	},
+			{G=6,D=1,P=1653,szname="L¸ b¸nh",prob=38.80},
+			{G=6,D=1,P=1654,szname="G¹o nÕp",prob=29.10},
+			{G=6,D=1,P=1655,szname="§Ëu xanh",prob=19.40},
+			{G=6,D=1,P=1656,szname="ThÞt heo ",prob=9.70	},
+			{G=6,D=1,P=1657,szname="Phóc"	 ,prob=1.00	},
+			{G=6,D=1,P=1658,szname="Léc"	 ,prob=1.00	},
+			{G=6,D=1,P=1659,szname="Thä"	 ,prob=1.00	},
 		},
 }
 function main(sel)
 	if tbclassname:checkdate() == 0 then
-		Say("Ó­´º´üÒÑ¹ýÆÚ£¬²»ÄÜ´ò¿ª",0)
+		Say("Tói mõng xu©n ®· hÕt h¹n, kh«ng thÓ më.",0)
 		return 0
 	end
 	if CalcFreeItemCellCount() < 1 then
-		Say("¿ÕÎ»²»×ã£¬Çë°²ÅÅÒ»ÏÂ×°±¸.",0)
+		Say("Kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.",0)
 		return 1
 	end
 	tbclassname:getitem()
@@ -37,7 +37,7 @@ function tbclassname:getitem()
 				nsum = nsum + (nitem.prob*tbclass.ntotalprob)
 				if nsum >= p then
 					AddItem(nitem.G,nitem.D,nitem.P,1,0,0)
-					local szstr = format("¹§Ï²Äã»ñµÃ1¸ö<color=yellow>%s<color>",nitem.szname)
+					local szstr = format("Chóc mõng b¹n nhËn ®­îc 1 <color=yellow>%s<color>",nitem.szname)
 					Msg2Player(szstr)
 					self:sdl_writelog(self.TITLE,szstr)
 					return

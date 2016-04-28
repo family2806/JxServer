@@ -7,12 +7,12 @@ function tbVLMC2011_Tittle:AddDialog(tbDialog)
 	if self:IsActive() ~= 1 then
 		return
 	end
-	tbDialog:AddOptEntry("ÁìÈ¡ÎäÁÖÃËÖ÷ºÀ¹âÈ¦", tbVLMC2011_Tittle.ShowDialog, {tbVLMC2011_Tittle})
+	tbDialog:AddOptEntry("NhËn vßng hµo quang Vâ L©m Minh Chñ", tbVLMC2011_Tittle.ShowDialog, {tbVLMC2011_Tittle})
 end
 
 function tbVLMC2011_Tittle:ShowDialog()
-	local strTittle = "ÎÒ¸´ÖÆ°ä·¢ÎäÁÖÃËÖ÷ºÍÊ®´ó¸ßÊÖºÀ¹âÈ¦£¬ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÂğ?"
-	Describe(strTittle, 2, "ÎÒÏëÁì½±/#tbVLMC2011_Tittle:GetTittle()", "§ãng/OnCancel")
+	local strTittle = "Ta phô tr¸ch trao th­ëng vßng hµo quang Vâ L©m Minh Chñ vµ ThËp ®¹i cao thñ, ng­¬i t×m ta cã viÖc g×?"
+	Describe(strTittle, 2, "Ta muèn nhËn th­ëng/#tbVLMC2011_Tittle:GetTittle()", "§ãng/OnCancel")
 end
 
 function tbVLMC2011_Tittle:IsActive()
@@ -32,7 +32,7 @@ end
 
 function tbVLMC2011_Tittle:GetTittle()	
 	if (tbExtPointLib:GetBitValue(self.nEXTPOINT_ID, self.nEXTPOINT_BIT) == 1) then
-		Talk(1, "", "´óÏÀ²»ÊÇÒÑ¾­Áì½±ÁËÂğ?")
+		Talk(1, "", "Ch¼ng ph¶i ®¹i hiÖp ®·  nhËn th­ëng råi sao?")
 		return
 	end
 	local nTittleType = self.tbAccount[GetAccount()]
@@ -57,7 +57,7 @@ function tbVLMC2011_Tittle:GetTittle()
 		end
 	end
 	local nTittleName = Title_GetTitleName(tbTittleSet.nTittleID)
-	Msg2Player(format("ÄãÁìÈ¡³ÆºÅ<color=green>%s<color> ³É¹¦",nTittleName ))
+	Msg2Player(format("B¹n ®· nhËn danh hiÖu <color=green>%s<color> thµnh c«ng",nTittleName ))
 	tbLog:PlayerActionLog("VLMC2011","NhanHaoQuang", "Tittle:  "..nTittleName)
 end
 

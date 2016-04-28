@@ -12,60 +12,60 @@ Include("\\script\\tagnewplayer\\func_quest180.lua");
 function NWP_main()
 do return end
 	if (IsCode()~=1) then
-		Talk(1, "", "´óÏÀ²»ÊôÓÚ°²°î»Æ½ğÁîÅÆµÄ¶ÔÏó! .");
+		Talk(1, "", "§¹i hiÖp kh«ng thuéc ®èi t­îng tham gia An Bang Hoµng Kim LÖnh bµi ! .");
 		return
 	end
 	local tbOpp = {}
 	--local nDay = tonumber(GetLocalDate("%Y%m%d"))
-	local str = "<#> Çë´óÏÀÑ¡Ôñ½±Àø";
+	local str = "<#> §¹i hiÖp xin h·y chän phÇn th­ëng";
 	if (CheckObject() == 1) then
 		if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel120) == 1) then
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡ÖØÉúºóÉı¼¶³É120¼¶µÄ½±Àø/GetLevel120"); --®· ÒÑÖØÉúÒ»´Î, Éı¼¶Îª120¼¶
+			tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng th¨ng ®¼ng cÊp 120 sau khi ®· trïng sinh/GetLevel120"); --®· ÒÑÖØÉúÒ»´Î, Éı¼¶Îª120¼¶
 		end
 	end
 	if (CheckObject() == 2) then
 		local IsQ, IsFQ = GetCurQuest()
 		if(IsQ == 0) then
-			tinsert(tbOpp,"ÎÒÏë½ÓµÚÒ»Á¬»·ÈÎÎñ/AcceptFirstQuest");
+			tinsert(tbOpp,"Ta muèn nhËn nhiÖm vô liªn hoµn thø nhÊt/AcceptFirstQuest");
 		end
 		
 		if (IsQ == 1) then
 			if (IsFQ == 0) then
-				tinsert(tbOpp,"ÎÒÏë¿´ÒÑ½ÓÈÎÎñ/ReviewCurQuest");
-				tinsert(tbOpp,"ÎÒÒÑÍê³ÉµÚÒ»Á¬»·ÈÎÎñ/FinishFirstQuest");
+				tinsert(tbOpp,"Ta muèn xem nhiÖm vô ®· nhËn/ReviewCurQuest");
+				tinsert(tbOpp,"Ta ®· hoµn thµnh nhiÖm vô liªn hoµn thø nhÊt/FinishFirstQuest");
 			elseif (IsFQ == 1) then
-				tinsert(tbOpp,"ÎÒÏë½ÓµÚ¶şÁ¬»·ÈÎÎñ/GetSecondQuest");
+				tinsert(tbOpp,"Ta muèn nhËn nhiÖm vô liªn hoµn thø hai/GetSecondQuest");
 			end		
 		end
 		
 		if (IsQ == 2) then
 			if (IsFQ == 1) then
-				tinsert(tbOpp,"ÎÒÏë¿´ÒÑ½ÓÈÎÎñ/ReviewCurQuest");
-				tinsert(tbOpp,"ÎÒÒÑÍê³ÉµÚ¶şÁ¬»·ÈÎÎñ/FinishSecondQuest");
+				tinsert(tbOpp,"Ta muèn xem nhiÖm vô ®· nhËn/ReviewCurQuest");
+				tinsert(tbOpp,"Ta ®· hoµn thµnh nhiÖm vô liªn hoµn thø hai/FinishSecondQuest");
 			elseif (IsFQ == 2) then
-				tinsert(tbOpp,"ÎÒÏë½ÓµÚÈıÁ¬»·ÈÎÎñ/GetThirdQuest");
+				tinsert(tbOpp,"Ta muèn nhËn nhiÖm vô liªn hoµn thø ba/GetThirdQuest");
 			end	
 		end
 		
 		if (IsQ == 3) then
 			if (IsFQ == 2) then
-				tinsert(tbOpp,"ÎÒÏë¿´ÒÑ½ÓÈÎÎñ/ReviewCurQuest");
-				tinsert(tbOpp,"ÎÒÒÑÍê³ÉµÚÈıÁ¬»·ÈÎÎñ/FinishThirdQuest");
+				tinsert(tbOpp,"Ta muèn xem nhiÖm vô ®· nhËn/ReviewCurQuest");
+				tinsert(tbOpp,"Ta ®· hoµn thµnh nhiÖm vô liªn hoµn thø ba/FinishThirdQuest");
 			end	
 		end
 		
 	end
 	if (CheckObject() == 3 and CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel165) == 1) then
-		tinsert(tbOpp,"ÎÒÏëÁìÈ¡Éı¼¶³É165¼¶µÄ½±Àø/GetLevel165");--Î´ÖØÉú£¬Éı¼¶165¼¶
+		tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng th¨ng ®¼ng cÊp 165/GetLevel165");--Î´ÖØÉú£¬Éı¼¶165¼¶
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetItemBonusTim) == 1) then
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡×Ï×°±¸½±Àø/GetItemTim");
+			tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng trang bŞ Tİm/GetItemTim");
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetItemBonusAnBang) == 1) then
-			tinsert(tbOpp,"ÎÒÏëÁìÈ¡°²°î×°±¸½±Àø/GetItemAnBang");
+			tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng trang bŞ An Bang/GetItemAnBang");
 	end
-	tinsert(tbOpp,"ÎÒÏëÁìÈ¡³É¼¨½±/GetBonusThanhTich_main");
-	tinsert(tbOpp,"ÎÒÏëÁìÈ¡Ã¿ÈÕ½±/BonusEveryDay");
+	tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng thµnh tİch/GetBonusThanhTich_main");
+	tinsert(tbOpp,"Ta muèn nhËn phÇn th­ëng h»ng ngµy/BonusEveryDay");
 	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);

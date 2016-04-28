@@ -5,16 +5,16 @@ Include("\\script\\lib\\pay.lua");
 
 function main()
 	if(tonumber(GetLocalDate("%Y%m%d"))>=20070728 and tonumber(GetLocalDate("%Y%m%d"))<=20070813) then
-		CreateTaskSay({"<dec><npc>»¶Ó­²Î¼Ó28-07-2007µ½24:00£¬13-08-2007¾ÙĞĞµÄ'ÕÙ»ØÃÍ½«¡¯»î¶¯. »î¶¯ÆÚ¼ä£¬90¼¶ÒÔÉÏ£¨º¬90¼¶£©µÄ³äÖµÍæ¼Ò¿ÉÒÔ²Î¼ÓÖÆÔì½ğÅÆ. ÔÚÊ×Ò³¿´ÄÚÈİÏ¸½Ú",
-			"ÎÒÏëÖÆÔìÄ¾ÅÆ/#lingpaizhizao_do(1)",
-			"ÎÒÏëÖÆÔìÍ­ÅÆ/#lingpaizhizao_do(2)",
-			"ÎÒÏëÖÆÔìÒøÅÆ/#lingpaizhizao_do(3)",
-			"ÎÒÏëÖÆÔì½ğÅÆ/#lingpaizhizao_do(4)",
-			"ÎÒÏëÖÆÔìÓñÅÆ/#lingpaizhizao_do(5)",
-			"ÖÆÔìÁîÅÆµÄ·½·¨/lingbaizhizao_content",
-			"È¡Ïû/OnCancel"});	
+		CreateTaskSay({"<dec><npc>Hoan nghªnh ®Õn víi ho¹t ®éng 'TriÖu Håi M·nh T­íng' diÔn ra tõ 28-07-2007 ®Õn 24:00 13-08-2007. Trong thêi gian ho¹t ®éng, ng­êi ch¬i cÊp 90 trë lªn (bao gåm cÊp 90) ®· n¹p thÎ cã thÓ tham gia chÕ t¹o lÖnh bµi. Xem néi dung chi tiÕt trªn trang chñ.",
+			"Ta muèn chÕ t¹o Méc Bµi/#lingpaizhizao_do(1)",
+			"Ta muèn chÕ t¹o §ång Bµi/#lingpaizhizao_do(2)",
+			"Ta muèn chÕ t¹o Ng©n Bµi/#lingpaizhizao_do(3)",
+			"Ta muèn chÕ t¹o Kim Bµi/#lingpaizhizao_do(4)",
+			"Ta muèn chÕ t¹o Ngäc Bµi/#lingpaizhizao_do(5)",
+			"C¸ch chÕ t¹o lÖnh bµi/lingbaizhizao_content",
+			"Hñy bá /OnCancel"});	
 	else
-		Say("'ÕÙ»ØÃÍ½«¡¯»î¶¯´Ó28-07-2007µ½24:00£¬13-08-2007½øĞĞ. 90¼¶ÒÔÉÏ£¨º¬90¼¶£©µÄ³äÖµÍæ¼Ò¿ÉÒÔ²Î¼ÓÖÆÔì½ğÅÆ.",0)
+		Say("Ho¹t ®éng 'TriÖu Håi M·nh T­íng' diÔn ra tõ 28-07-2007 ®Õn 24:00 13-08-2007. Trong thêi gian ho¹t ®éng, ng­êi ch¬i cÊp 90 trë lªn (bao gåm cÊp 90) ®· n¹p thÎ cã thÓ tham gia chÕ t¹o lÖnh bµi.",0)
 	end
 	
 end
@@ -23,29 +23,29 @@ end
 lingpai_id={1477,1478,1479,1480,1481}
 lingpai_success_rate={30,25,50,90,100};
 lingpai_pay={5000,10000,20000,30000,1000000};
-lingpai_name={"Ä¾ÅÆ","Í­ÅÆ","ÒøÅÆ","½ğÅÆ","ÓñÅÆ"};
+lingpai_name={"Méc Bµi","§ång Bµi","Ng©n Bµi","Kim Bµi","Ngäc Bµi"};
 function lingpaizhizao_do(lingpai_level)
 	if( IsCharged() == 0) then --³äÖµ
-		Say("Ö»ÓĞ90¼¶ÒÔÉÏ£¨º¬90¼¶£©µÄ³äÖµÍæ¼Ò²Å¿ÉÒÔ²Î¼ÓÖÆÔì½ğÅÆ.",0);
+		Say("ChØ cã ng­êi ch¬i cÊp 90 trë lªn (bao gåm cÊp 90) ®· n¹p thÎ míi cã thÓ tham gia chÕ t¹o lÖnh bµi.",0);
 		return 
 	end
 	if( GetLevel() <90) then --µÈ¼¶
-		Say("Äã»¹Ì«Ğ¡£¬²»¹»Á¦Á¿²Î¼ÓÕâÃ´Î£ÏÕµÄÈÎÎñ. µÈµ½90¼¶ÔÙÀ´ÕÒÎÒ!",0);
+		Say("Ng­¬i h·y cßn nhá l¾m, ch­a ®ñ søc ®Ó tham gia nhiÖm vô nguy hiÓm nµy. §¹t ®Õn cÊp 90 råi h·y ®Õn t×m ta!",0);
 		return 
 	end
 	
 	if( CalcFreeItemCellCount() < 1) then -- ¿Õ¼ä
-		Say("±³°üÒÑÂú£¬°ÑËüÕûÀíÕûÆë.",0);
+		Say("Hµnh trang ®· ®Çy, h·y s¾p xÕp l¹i cho ng¨n n¾p.",0);
 		return 
 	end
 	
 	if( CalcEquiproomItemCount(6,1,lingpai_id[lingpai_level],-1) < 5) then --²ÄÁÏ
-		Say("Ëù´øÔ­ÁÏ²»¹»!",0);
+		Say("Nguyªn liÖu mang theo kh«ng ®ñ!",0);
 		return 
 	end
 		
 	if( Pay(lingpai_pay[lingpai_level]) == 0) then  -- È¥µôÇ®
-			Say("Õæ¿ÉÏ§£¬Ëù´øÒøÁ½²»×ã!",0);
+			Say("ThËt ®¸ng tiÕc, ng©n l­îng mang theo kh«ng ®ñ!",0);
 		return 
 	end
 	
@@ -53,21 +53,21 @@ function lingpaizhizao_do(lingpai_level)
 	if(random(1,100)<=lingpai_success_rate[lingpai_level]) then --³É¹¦µÄ»°
 		ConsumeEquiproomItem(1,6,1,lingpai_id[lingpai_level],-1); --È¥µôÒ»¸ö²ÄÁÏ
 		AddItem(6,1,lingpai_id[lingpai_level]+1,1,0,0);
-		Say(format("¹§Ï²ÄãµÃµ½1 %s.",lingpai_name[lingpai_level]),0);
-		WriteLog(format("[ÕÙ»ØÃÍ½«]\t%s\tAccount:%s\tName:%s\t ÖÆÔì %s ³É¹¦",
+		Say(format("Chóc mõng b¹n ®· nhËn ®­îc 1 %s.",lingpai_name[lingpai_level]),0);
+		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t ChÕ t¹o %s thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
 			lingpai_name[lingpai_level]));
 	else
-		Say("Õæ¿ÉÏ§£¬ÖÆÔìÊ§°Ü£¬ºÄ·ÑÁËÔ­ÁÏºÍÒøÁ½!",0);
+		Say("ThËt ®¸ng tiÕc, chÕ t¹o thÊt b¹i, hao tæn nguyªn liÖu vµ ng©n l­îng!",0);
 	end
 end
 
 function lingbaizhizao_content()
-	CreateTaskSay({"<dec><npc><enter>ÖÆÔìÄ¾ÅÆĞèÒª5·İÎäÁÖÃÜ¼şºÍ5000Á½£¬Èç¹ûÖÆÔìÊ§°Ü½«ËğºÄ4·İÎäÁÖÃÜ¼şºÍ5000Á½.<enter><enter>ÖÆÔìÍ­ÅÆÒª5¸öÄ¾ÅÆºÍ1ÍòÁ½£¬Èç¹ûÖÆÔìÊ§°Ü½«ËğÊ§4¸öÄ¾ÅÆºÍ1ÍòÁ½.<enter><enter>ÖÆÔìÒøÅÆÒª5¸öÍ­ÅÆºÍ2ÍòÁ½£¬Èç¹ûÖÆÔìÊ§°Ü½«»áËğÊ§4¸öÍ­ÅÆºÍ2ÍòÁ½.<enter><enter>ÖÆÔì½ğÅÆÒª5¸öÒøÅÆºÍ3ÍòÁ½£¬Èç¹ûÊ§°ÜµÄ»°»áËğÊ§4¸öÒøÅÆºÍ3ÍòÁ½.<enter><enter>ÖÆÔìÓñÅÆÒª5¸ö½ğÅÆºÍ100ÍòÁ½. ÖÆÔìÓñÅÆµÄ³É¹¦ÂÊÊÇ100%.",
-		"·µ»Ø/main",
-		"ÖªµÀÁË/OnCancel"
+	CreateTaskSay({"<dec><npc><enter>§Ó chÕ t¹o Méc Bµi cÇn cã 5 Vâ L©m MËt Th­ vµ 5000 l­îng, nÕu chÕ t¹o thÊt b¹i sÏ tæn thÊt 4 Vâ L©m MËt Th­ vµ 5000 l­îng.<enter><enter>§Ó chÕ t¹o §ång Bµi cÇn cã 5 Méc Bµi vµ 1 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 Méc Bµi vµ 1 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Ng©n Bµi cÇn cã 5 §ång Bµi vµ 2 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 §ång Bµi vµ 2 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Kim Bµi cÇn cã 5 Ng©n Bµi vµ 3 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 Ng©n Bµi vµ 3 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Ngäc Bµi cÇn cã 5 Kim Bµi vµ 100 v¹n l­îng. ChÕ t¹o Ngäc Bµi cã x¸c suÊt thµnh c«ng lµ 100%.",
+		"Trë l¹i/main",
+		"BiÕt råi/OnCancel"
 		});
 end
 function OnCancel()

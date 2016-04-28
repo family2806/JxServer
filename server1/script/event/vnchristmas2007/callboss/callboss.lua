@@ -15,7 +15,7 @@ function xmars2007_callboss(nmapid)
 	xmas2007_callnpc(2,nmapidw,mappositem)	--ÕÙ»½°¢É½
 	mappositem[1] = mappos[1] - 1
 	xmas2007_callnpc(3,nmapidw,mappos)	--ÕÙ»½°¢ĞÛ
-	AddGlobalNews(format("[Ê¥µ®»î¶¯]ÉñÃØÊ¥µ®Ê÷ÓÉÁ½¸öÊ¥µ®ÌìÉñÊØ»¤ÒÑ¿ªÊ¼³öÏÖ£¬¿ìÈ¥ÕÒÕÒ[%s] ¿´, ´ò°ÜËûÃÇ½«»ñµÃÆæÕäÒì±¦.",tb_xmas_city[nmapidw]))
+	AddGlobalNews(format("[Ho¹t ®éng gi¸ng sinh] C©y gi¸ng sinh thÇn bİ do hai thiªn thÇn gi¸ng sinh canh gi÷ ®· b¾t ®Çu xuÊt hiÖn, h·y mau ®i t×m [%s] xem, ®¸nh b¹i hä sÏ nhËn ®­îc nh÷ng kú tr©n dŞ b¶o.",tb_xmas_city[nmapidw]))
 end
 
 function xmas2007_callnpc(ni,nmapidw,mappos)
@@ -29,7 +29,7 @@ function xmas2007_callnpc(ni,nmapidw,mappos)
 	end
 	local nidx = AddNpcEx(bossid,bosslv,bossseries,worldsub,mappos[1]*32,mappos[2]*32,1,bossname, 1) 
 	if nidx <= 0 then
-		print("ºô½ĞBoss»î¶¯Ê§°Ü")
+		print("Ho¹t ®éng gäi Boss thÊt b¹i")
 	end
 	return nidx
 end

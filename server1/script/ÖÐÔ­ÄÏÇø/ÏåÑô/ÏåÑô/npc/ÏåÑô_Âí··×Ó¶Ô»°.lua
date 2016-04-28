@@ -1,7 +1,7 @@
 --ÖÐÔ­ÄÏÇø ÏåÑô¸® Âí··×Ó¶Ô»°
 
 function main(sel)
-Say("Âí··×Ó£º¾ÍËãÊÇÇ§ÀïÂí£¬Ò²ÒªÓÐ²®ÀÖ²ÅÐÐ£¬¿ÉÏ§ÊÀÉÏÖ®ÈË¶àÒÔÃ²È¡Îï£¬Õæ¼Ù²»·Ö£¬ÊÇ·Ç²»Ã÷£¬¿ÉÐ¦°¡¿ÉÐ¦£¡", 2, "½»Ò×/yes", "²»½»Ò×/no");
+Say("Cho dï lµ Thiªn Lý M· còng cÇn ph¶i chän lùa míi ®­îc. TiÕc r»ng ®êi cã nhiÒu kÎ nh×n bÒ ngoµi mµ chän lùa. ThËt gi¶ bÊt ph©n, thÞ phi bÊt minh, thËt ®¸ng buån c­êi!", 2, "Giao dÞch/yes", "Kh«ng giao dÞch/no");
 
 end;
 

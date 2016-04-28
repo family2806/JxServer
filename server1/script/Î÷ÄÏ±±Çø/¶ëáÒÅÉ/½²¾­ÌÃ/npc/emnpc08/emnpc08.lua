@@ -14,20 +14,20 @@ function main()
 	UTask_em = GetTask(1);
 	if (GetSeries() == 2) and (GetFaction() == "emei") then
 		if (UTask_em == 20*256) and (GetLevel() >= 20) then		--½Óµ½20¼¶ÈÎÎñ
-			Say("×î½ü<color=Red>ºóÉ½É½¶´<color>³£ÓĞ<color=Red>ÃÍ»¢<color>³öÃ»£¬ÉËº¦ÁË²»ÉÙÉÏÉ½½øÏãµÄ°ÙĞÕ£¬ÎÒÃÇÉíÎª·ğÃÅ×ÓµÜ£¬ÔõÄÜÑÛ¿´ÃÍ»¢ÉËÈË¶øÖÃÖ®²»ÀíÄØ£¿ÄãÔ¸ÒâÈ¥ÊÕ·üÕâĞ©¶ñ»¢Âğ£¿", 2, "Ô¸Òâ/L20_get_yes", "ÓĞĞÄÎŞÁ¦/L20_get_no")
+			Say("GÇn ®©y ë <color=Red>HËu s¬n s¬n ®éng<color> th­êng cã <color=Red>M·nh Hæ<color> xuÊt hiÖn, h¹i chÕt v« sè b¸ t¸nh lªn nói d©ng h­¬ng. Ta th©n lµ ®Ö tö PhËt m«n sao co thÓ m¾t lÊp tai ng¬ nh×n M·nh Hæ s¸t h¹i d©n lµnh? Muéi cã thÓ ®i thu phôc hæ d÷ kh«ng?", 2, "§ång ı!/L20_get_yes", "Lùc bÊt tßng t©m /L20_get_no")
 		elseif (UTask_em == 20*256+80) then										--20¼¶ÈÎÎñ¹ı³ÌÖĞ
 			L20_prise()
 		elseif (UTask_em == 20*256+50) then
-			Talk(1,"","ÇÜÔôÏÈÇÜÍõ£¬ÄãÖ»ÒªÊÕ·üÁË<color=Red>»¢Íõ<color>£¬ÆäÓàµÄÃÍ»¢×ÔÈ»²»¸ÒÎª·Ç×÷´õ¡£»¢ĞÔÍçÁÓ£¬ÄãĞëµÃÊÕ·şËü<color=Red>Èı´Î<color>£¬Ëü²Å»áÕæÕı½µ·ş")
+			Talk(1,"","CÇm tÆc tiªn cÇm v­¬ng! Muéi chØ cÇn thu phôc ®­îc <color=Red>Hæ v­¬ng <color>. Nh÷ng con hæ cßn l¹i sÏ kh«ng d¸m t¸c qu¸i. Hæ vèn cøng ®Çu, muéi ph¶i thu phôc nã <color=Red>3 lÇn <color>, nã míi biÕt khuÊt phôc thËt sù.")
 		elseif (UTask_em >= 30*256) then   							--ÒÑ¾­Íê³É20¼¶ÈÎÎñ£¬ÉĞÎ´³öÊ¦
-			Skill150Dialog("ÄãÄÜ¹»ÉîÈë»¢Ñ¨£¬ÊÕ·üÃÍ»¢£¬Õæ²»À¢ÎªÎÒ¶ëáÒµÜ×Ó!")
+			Skill150Dialog("Muéi cã ®ñ b¶n lÜnh vµo hang Hæ thu phôc M·nh Hæ, thËt xøng danh lµ ®Ö tö Nga Mi!")
 		else
-			Skill150Dialog("ÎäÑ§Óë·ğÀí£¬Í¬ÑùĞèÒª²ÎÍ¸£¬ÊÀÉÏÖ®ÊÂ£¬Ö»ÒªÓÃĞÄ£¬±ãÄÜÓĞËù³É¾Í.")
+			Skill150Dialog("Vâ häc vµ PhËt lı ®Òu cÇn ph¶i thÊu râ, chuyÖn trªn ®êi chØ cÇn cã lßng ¾t sÏ ®­îc thµnh tùu.")
 		end
 	elseif (UTask_em >= 70*256) then										--ÒÑ¾­³öÊ¦
-		Skill150Dialog("ÒÔÄãµÄ»Û¸ù£¬½«À´±ØÓĞÒ»·¬³É¾Í£¬µ½Ê±¿É±ğÍüÁËÎÒÃÇÕâĞ©Ê¦½ã°¡!")
+		Skill150Dialog("Theo huÖ c¨n cña muéi, ¾t sÏ cã thµnh tùu, ®Õn lóc muéi ph¶i rêi xa tû muéi ta!")
 	else
-		Skill150Dialog("ÎäÑ§Óë·ğÀí£¬Í¬ÑùĞèÒª²ÎÍ¸£¬ÊÀÉÏÖ®ÊÂ£¬Ö»ÒªÓÃĞÄ£¬±ãÄÜÓĞËù³É¾Í.")
+		Skill150Dialog("Vâ häc vµ PhËt lı ®Òu cÇn ph¶i thÊu râ, chuyÖn trªn ®êi chØ cÇn cã lßng ¾t sÏ ®­îc thµnh tùu.")
 	end
 end;
 
@@ -40,26 +40,26 @@ function Skill150Dialog(szTitle)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
 	tbDailog.szTitleMsg = format("<npc>%s", szTitle)
-	G_TASK:OnMessage("¶ëÃ¼", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage("Nga Mi", tbDailog, "DialogWithNpc")
 	tbDailog:Show() 
 end
 
 function L20_get_yes()
-	Talk(1,"","ÇÜÔôÏÈÇÜÍõ£¬ÄãÖ»ÒªÊÕ·üÁË<color=Red>»¢Íõ<color>£¬ÆäÓàµÄÃÍ»¢×ÔÈ»²»¸ÒÎª·Ç×÷´õ¡£»¢ĞÔÍçÁÓ£¬ÄãĞëµÃÊÕ·şËü<color=Red>Èı´Î<color>£¬Ëü²Å»áÕæÕı½µ·ş")
+	Talk(1,"","CÇm tÆc tiªn cÇm v­¬ng! Muéi chØ cÇn thu phôc ®­îc <color=Red>Hæ v­¬ng <color>. Nh÷ng con hæ cßn l¹i sÏ kh«ng d¸m t¸c qu¸i. Hæ vèn cøng ®Çu, muéi ph¶i thu phôc nã <color=Red>3 lÇn <color>, nã míi biÕt khuÊt phôc thËt sù.")
 	SetTask(1, 20*256+50)
-	AddNote("ÔÚ½²¾­ÌÃ¼ûÄá¹ÃÃîÈç(240, 308) , ÊÕµ½ <color=red>½µ»¢ÈÎÎñ<color>, È¥ÃÍ»¢¶´ÊÕ¸´¶ñ»¢")
-	Msg2Player("ÔÚ½²¾­ÌÃ¼ûÄá¹ÃÃîÈç£¬ÊÕµ½È¥ÃÍ»¢¶´ÊÕ¸´¶ñ»¢ ")
+	AddNote("GÆp ni c« DiÖu Nh­ ë Gi¶ng Kinh ®­êng (240, 308) , nhËn <color=red>nhiÖm vô phôc hæ<color>, ®i lªn M·nh Hæ ®éng sau nói thu phôc hæ d÷. ")
+	Msg2Player("GÆp ni c« DiÖu Nh­ ë Gi¶ng Kinh ®­êng, nhËn nhiÖm vô phôc hæ, ®i lªn M·nh Hæ ®éng sau nói thu phôc hæ d÷. ")
 end;
 
 function L20_get_no()
 end;
 
 function L20_prise()
-	Talk(1,"","ÄãÄÜ¹»ÉîÈë»¢Ñ¨£¬ÊÕ·üÃÍ»¢£¬Õæ²»À¢ÎªÎÒ¶ëáÒµÜ×Ó!")
+	Talk(1,"","Muéi cã ®ñ b¶n lÜnh vµo hang Hæ thu phôc M·nh Hæ, thËt xøng danh lµ ®Ö tö Nga Mi!")
 	SetRank(15)
 	SetTask(1, 30*256)
 --	AddMagic(93)
 	add_em(30)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã³ÉÎª½õÒÂÄá")
-	AddNote("·µ»Ø¶ëáÒÅÉµÄ½²¾­ÌÃ£¬¸´ÃüÃëÈç£¬Íê³ÉÈÎÎñ£¬±»·âÎª½õÒÂÄá. ")
+	Msg2Player("Chóc mõng b¹n! §· ®­îc th¨ng lµm CÈm Y Ni! Häc ®­îc Tõ Hµng Phæ §é. ")
+	AddNote("Trë vÒ gi¶ng kinh ®­êng cña Nga Mi ph¸i, phôc mÖnh DiÖu Nh­, hoµn thµnh nhiÖm vô thu phôc m·nh hæ, ®­îc phong lµ: CÈm Y Ni. ")
 end;

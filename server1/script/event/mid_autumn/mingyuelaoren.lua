@@ -5,33 +5,33 @@
 
 
 tbCAKE2GIFT = {
-		[891] = { "<#> ¶¹É³ÔÂ±ı ", "<#> 1ÏÉ²İÂ¶",			{ 6, 1, 71, 1, 0, 0, 0 } },
-		[893] = { "<#> µ°»Æ¶¹É³ÔÂ±ı", "<#> 1¸£ÔµÂ¶(´ó) ",		{ 6, 1, 124, 1, 0, 0, 0 } },
-		[895] = { "<#> ¹ûÈÊÔÂ±ı", "<#> ÉñÃØºì°ü",			{ 6, 1, 402, 1, 0, 0, 0 } },
-		[896] = { "<#> Ê²½õÔÂ±ı ", "shijin_ex_goldequip()" }
+		[891] = { "<#> B¸nh trung thu nh©n ®Ëu ", "<#> 1 Tiªn Th¶o lé ",			{ 6, 1, 71, 1, 0, 0, 0 } },
+		[893] = { "<#> B¸nh Trung Thu §Ëu Trøng", "<#> 1 Phóc Duyªn lé (®¹i) ",		{ 6, 1, 124, 1, 0, 0, 0 } },
+		[895] = { "<#> B¸nh Trung thu H¹nh nh©n", "<#> ThÇn Bİ §¹i Hång Bao",			{ 6, 1, 402, 1, 0, 0, 0 } },
+		[896] = { "<#> B¸nh trung thu thËp cÈm ", "shijin_ex_goldequip()" }
 }
 
 tbSHIJIN2GOLDEQUIP = {
-		{ "<#> »Æ½ğÍ¼Æ×- ¶¨¹úÇàÉ´³¤ÉÀ", { 0, 159 }, 0.12 },
-		{ "<#> »Æ½ğÍ¼Æ×- ¶¨¹úÎÙÉ°·¢¹Ú", { 0, 160 }, 0.12 },
-		{ "<#> »Æ½ğÍ¼Æ×- ¶¨¹ú³à¾îÈíÑ¥", { 0, 161 }, 0.12 },
-		{ "<#> »Æ½ğÍ¼Æ×- ¶¨¹ú×ÏÌÙ»¤Íó", { 0, 162 }, 0.12 },
-		{ "<#> »Æ½ğÍ¼Æ×- ¶¨¹úÒø²ÏÑü´ø", { 0, 163 }, 0.12 },
-		{ "<#> »Æ½ğÍ¼Æ×- °²°î±ù¾§Ê¯ÏîÁ´", { 0, 164 }, 0.1 },
-		{ "<#> »Æ½ğÍ¼Æ×- °²°î¾Õ»¨Ê¯Ö¸»·", { 0, 165 }, 0.1 },
-		{ "<#> »Æ½ğÍ¼Æ×- °²°îÌï»ÆÊ¯ÓñÅå", { 0, 166 }, 0.1 },
-		{ "<#> »Æ½ğÍ¼Æ×- °²°î¼¦ÑªÊ¯½äÖ¸", { 0, 167 }, 0.1 },
+		{ "<#> §å phæ Hoµng Kim - §Şnh Quèc Thanh Sa Tr­êng Sam", { 0, 159 }, 0.12 },
+		{ "<#> §å phæ Hoµng Kim - §Şnh Quèc ¤ Sa Ph¸t Qu¸n", { 0, 160 }, 0.12 },
+		{ "<#> §å phæ Hoµng Kim - §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa", { 0, 161 }, 0.12 },
+		{ "<#> §å phæ Hoµng Kim - §Şnh Quèc Tö §»ng Hé uyÓn", { 0, 162 }, 0.12 },
+		{ "<#> §å phæ Hoµng Kim - §Şnh Quèc Ng©n Tµm Yªu ®¸i", { 0, 163 }, 0.12 },
+		{ "<#> §å phæ Hoµng Kim - An Bang B¨ng Tinh Th¹ch H¹ng Liªn", { 0, 164 }, 0.1 },
+		{ "<#> §å phæ Hoµng Kim - An Bang Cóc Hoa Th¹ch ChØ hoµn", { 0, 165 }, 0.1 },
+		{ "<#> §å phæ Hoµng Kim - An Bang §iÒn Hoµng Th¹ch Ngäc Béi", { 0, 166 }, 0.1 },
+		{ "<#> §å phæ Hoµng Kim - An Bang Kª HuyÕt Th¹ch Giíi ChØ ", { 0, 167 }, 0.1 },
 }
 
 function main()
 	local tbOpp = {
-				"<#> ÕâÊÇ¶¹É³ÔÂ±ı, ÇëÆ·³¢/#cake_ex_gift(891)",
-				"<#> ÕâÊÇµ°»Æ¶¹É³ÔÂ±ı, ÇëÆ·³¢/#cake_ex_gift(893)",
-				"<#> ÕâÊÇ¹ûÈÊÔÂ±ı, ÇëÆ·³¢/#cake_ex_gift(895)",
-				"<#> ÕâÊÇÊ²½õÔÂ±ı, ÇëÆ·³¢/#cake_ex_gift(896)",
-				"<#> Ã»Ê²Ã´£¡ÎÒÖ»ÊÇÌ½ÍûÀÏÈË¶øÒÑ!/OnCancel",
+				"<#> §©y lµ B¸nh trung thu nh©n ®Ëu, xin mêi dïng thö!/#cake_ex_gift(891)",
+				"<#> §©y lµ b¸nh trung thu ®Ëu trøng, xin mêi dïng thö!/#cake_ex_gift(893)",
+				"<#> §©y lµ B¸nh Trung thu H¹nh nh©n, xin mêi dïng thö!/#cake_ex_gift(895)",
+				"<#> §©y lµ b¸nh trung thu thËp cÈm, xin mêi dïng thö!/#cake_ex_gift(896)",
+				"<#> Kh«ng cã g×! Ta chØ ®Õn th¨m l·o th«i!/OnCancel",
 	}
-	Say("<#> ÕâÀïÊ¦¸µÃÇ×öÔÂ±ıµÄÊÖÒÕ¶¼ÊÇÉÏ³ËµÄ. Ã¿ÄêÎÒ¶¼µÈ×ÅÖĞÇïÄØ. ÄêÇáÈËÓĞ»°ÒªËµÂğ?", getn(tbOpp), tbOpp )
+	Say("<#> Tay nghÒ lµm b¸nh cña c¸c vŞ s­ phô ë ®©y ®Òu vµo h¹ng th­îng thõa. Mçi n¨m ta ®Òu tr«ng ®îi dŞp trung thu nµy. B¹n trÎ cã chuyÖn g× kh«ng?", getn(tbOpp), tbOpp )
 end
 
 function OnCancel()
@@ -40,10 +40,10 @@ end
 function cake_ex_gift(dtype)
 	local count = CalcEquiproomItemCount( 6, 1, dtype, -1 )
 	if ( count <= 0 ) then
-		Say("<#> ÄêÇáÈË£¡ÄãµÄÔÂ±ıÄØ£¿ÏëÏ·ÅªÀÏÈËÂğ?", 1, "<#> ¶Ô²»Æğ£¡ÎÒ´íÁË!/OnCancel" )
+		Say("<#> B¹n trÎ! B¸nh trung thu cña ng­¬i ®©u? §Şnh trªu chäc giµ nµy ­?", 1, "<#> Xin lçi! Ta sai råi!/OnCancel" )
 		return
 	end
-	Say("<#> °¡! ÒÔÇ°´ÓÎ´³Ô¹ıÕâÃ´ºÃ³ÔµÄÔÂ±ı£¡ÕâÊÇÒ»µã³ÏÒâ£¡ÓĞºÃ³ÔµÄÔÂ±ıÒª¼ÇµÃÄÃ»ØÀ´¸øÎÒÃÇ°¡£¡", 1, "ÁìÈ¡½±Àø!/#take_ex_gift("..dtype..")")
+	Say("<#> A! X­a giê ta ch­a bao giê ®­îc ¨n b¸nh ngon nh­ vÇy! §©y lµ chót thµnh ı! Cã b¸nh ngon nhí quay l¹i tÆng cho ta nhĞ!", 1, "NhËn lÔ phÈm!/#take_ex_gift("..dtype..")")
 
 end
 
@@ -53,13 +53,13 @@ function take_ex_gift(dtype)
 		print("delete item cake error dtype = "..dtype)
 		return
 	end
-	Msg2Player("<#> ÄãÊ§È¥ 1 "..tbCAKE2GIFT[dtype][1])
+	Msg2Player("<#> B¹n mÊt 1 "..tbCAKE2GIFT[dtype][1])
 	
 	if ( dtype == 896 ) then
 		shijin_ex_goldequip()
 	else
 		AddItem(tbCAKE2GIFT[dtype][3][1], tbCAKE2GIFT[dtype][3][2], tbCAKE2GIFT[dtype][3][3], tbCAKE2GIFT[dtype][3][4], tbCAKE2GIFT[dtype][3][5], tbCAKE2GIFT[dtype][3][6], tbCAKE2GIFT[dtype][3][7] )
-		Msg2Player("<#> ÄãµÃµ½ "..tbCAKE2GIFT[dtype][2])
+		Msg2Player("<#> B¹n nhËn ®­îc "..tbCAKE2GIFT[dtype][2])
 		WriteLog(date("%y-%m-%d,%H:%M,").."ACCOUNT:"..GetAccount()..",NAME:"..GetName()..", give "..tbCAKE2GIFT[dtype][1].." in exchange for "..tbCAKE2GIFT[dtype][2])
 	end
 end
@@ -78,7 +78,7 @@ function shijin_ex_goldequip()
 		sum = sum + tbSHIJIN2GOLDEQUIP[i][3] * 100
 		if( sum >= num ) then
 			AddGoldItem( tbSHIJIN2GOLDEQUIP[i][2][1], tbSHIJIN2GOLDEQUIP[i][2][2] )
-			Msg2Player("<#> ÄãµÃµ½ 1 b?"..tbSHIJIN2GOLDEQUIP[i][1])
+			Msg2Player("<#> B¹n nhËn ®­îc 1 bé "..tbSHIJIN2GOLDEQUIP[i][1])
 			WriteLog(date("%y-%m-%d,%H:%M,").."ACCOUNT:"..GetAccount()..",NAME:"..GetName()..", give "..tbCAKE2GIFT[896][1].." in exchange for "..tbSHIJIN2GOLDEQUIP[i][1])
 			break
 		end

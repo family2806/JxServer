@@ -1,21 +1,21 @@
 function brew()
-	Say("±¾µêµ÷ÖÆÒ©¾ÆÔ¶½üÎÅÃû£¬¿Í¹ÙÏëµ÷ÖÆÄÄÖÖÒ©¾Æ£¿", 6, "ÏÉÁé¾Æ/god", "»¢¹Ç¾Æ/tiger", "Â¹È×¾Æ/antler", "ÈË²Î¾Æ/panax", "ÎÒÏëÖªµÀµ÷ÖÆÒ©¾ÆµÄ·½·¨!/aboutbrewing", "ÎÒÒªÈ¥¶àÕÒÒ©ÁÏ/no");
+	Say("Kinh nghiÖm ®iÒu chÕ d­îc töu cña bæn tiÖm xa gÇn ®Òu biÕt tiÕng. Kh¸ch quan muèn ®iÒu chÕ lo¹i d­îc töu g×?", 6, "Tiªn Linh töu/god", "Hæ Cèt Töu/tiger", "Léc Nhung töu/antler", "Nh©n S©m töu/panax", "Ta muèn biÕt c¸ch thøc ®iÒu chÕ d­îc töu!/aboutbrewing", "Ta ph¶i ®i t×m thªm d­îc liÖu/no");
 end
 
 function god()
-	Say("ÏÉÁé¾ÆĞèÒªÓĞ3¸öÁéÖ¥²İ£¬¿Í¹ÙÒÑ¾­¹»Ò©ÁÏÁËÂğ?",2, "¹»ÁË£¡Ê¦¸µ¿ì¿ìÖ¤Ã÷¼Ò´«¾­Ñé°É!/godyes", "ÎÒĞèÒªÈ¥¶àÕÒÒ©ÁÏ/no");
+	Say("Tiªn Linh töu cÇn cã 3 Linh Chi th¶o. Kh¸ch quan ®· cã ®ñ d­îc liÖu ch­a?",2, "§ñ råi! S­ phô h·y chøng minh kinh nghiÖm gia truyÒn cña m×nh ®i!/godyes", "Ta ph¶i ®i t×m thªm d­îc liÖu/no");
 end
 
 function tiger()
-	Say("»¢¹ÇĞèÒªÒ»¸öÁéÖ¥²İºÍ3¸öÂ¹È×£¬¿Í¹ÙÒÑ¾­¹»Ò©ÁÏÁËÂğ?",2, "¹»ÁË£¡Ê¦¸µ¿ì¿ìÖ¤Ã÷¼Ò´«¾­Ñé°É!/tigeryes", "ÎÒĞèÒªÈ¥¶àÕÒÒ©ÁÏ/no");
+	Say("Hæ Cèt töu cÇn cã 1 Linh Chi th¶o vµ 3 Hæ cèt. Kh¸ch quan ®· cã ®ñ d­îc liÖu ch­a?",2, "§ñ råi! S­ phô h·y chøng minh kinh nghiÖm gia truyÒn cña m×nh ®i!/tigeryes", "Ta ph¶i ®i t×m thªm d­îc liÖu/no");
 end
 
 function antler()
-	Say("Â¹È×¾ÆĞèÒªÒ»¸öÁéÖ¥²İºÍ3¸öÂ¹È×.¿Í¹ÙÒÑ¾­¹»Ò©ÁÏÁËÂğ?",2, "¹»ÁË£¡Ê¦¸µ¿ì¿ìÖ¤Ã÷¼Ò´«¾­Ñé°É!/antleryes", "ÎÒĞèÒªÈ¥¶àÕÒÒ©ÁÏ/no");
+	Say("Léc Nhung töu cÇn cã 1 Linh Chi th¶o vµ 3 Léc Nhung. Kh¸ch quan ®· cã ®ñ d­îc liÖu ch­a?",2, "§ñ råi! S­ phô h·y chøng minh kinh nghiÖm gia truyÒn cña m×nh ®i!/antleryes", "Ta ph¶i ®i t×m thªm d­îc liÖu/no");
 end
 
 function panax()
-	Say("ÈË²Î¾ÆĞèÒªÒ»¸öÁéÖ¥²İºÍ3¸öÂ¹È×. ¿Í¹ÙÒÑ¾­¹»Ò©ÁÏÁËÂğ?",2, "¹»ÁË£¡Ê¦¸µ¿ì¿ìÖ¤Ã÷¼Ò´«¾­Ñé°É!/panaxyes", "ÎÒĞèÒªÈ¥¶àÕÒÒ©ÁÏ/no");
+	Say("Nh©n S©m töu cÇn cã 1 Linh Chi th¶o vµ 3 Nh©n S©m. Kh¸ch quan ®· cã ®ñ d­îc liÖu ch­a?",2, "§ñ råi! S­ phô h·y chøng minh kinh nghiÖm gia truyÒn cña m×nh ®i!/panaxyes", "Ta ph¶i ®i t×m thªm d­îc liÖu/no");
 end
 
 function godyes()
@@ -26,15 +26,15 @@ function godyes()
 				DelItemEx(943);			
 			end
 			AddEventItem(947);
-			Say("ÉÏµÈÁéÖ¥²İ¼ÓÉÏÎÒµÄ¼Ò´«¾­Ñé£¬¸ÃÏÉÁé¾ÆÃ»ÓĞË­ÄÜÖÆ³öÀ´!",0);
+			Say("Linh Chi th¶o th­îng h¹ng céng víi kinh nghiÖm gia truyÒn cña ta, Tiªn Linh töu nµy kh«ng ai cã thÓ chª ®­îc!",0);
 			Msg2Player("NhËn ®­îc 1 b×nh Tiªn Linh töu");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿ÏÉÁé¾Æ¡£");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿ÏÉÁé¾Æ¡£");
 		else
 			DelItemEx(943);
-			Say("ÓĞÒ»¸öÁéÖ¥Î´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);
+			Say("Cã 1 Linh chi ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);
 		end
 	else
-		Say("¿Í¹ÙÒÀÈ»Î´¹»Ò©ÁÏ£¬ÇëÔ­ÁÂÎÒ²»ÄÜ°ïÃ¦!",0);
+		Say("Kh¸ch quan vÉn ch­a ®ñ d­îc liÖu! Thø lçi ta kh«ng gióp ®­îc!",0);
 	end
 end
 
@@ -47,21 +47,21 @@ function tigeryes()
 			end
 			DelItemEx(943);	
 			AddEventItem(948);
-			Say("Linh ÁéÖ¥²İºÍÉÏµÈ»¢¹Ç¼ÓÉÏÎÒµÄ¼Ò´«¾­Ñé£¬¸Ã»¢¹Ç¾ÆÃ»ÓĞË­ÄÜÖÆ³öÀ´!",0);
-			Msg2Player("»ñµÃÒ»Æ¿»¢¹Ç¾Æ");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿»¢¹Ç¾Æ¡£");	
+			Say("Linh Chi th¶o vµ Hæ cèt th­îng h¹ng céng víi kinh nghiÖm gia truyÒn cña ta, Hæ Cèt töu nµy kh«ng ai cã thÓ chª ®­îc!",0);
+			Msg2Player("NhËn ®­îc 1 b×nh Hæ Cèt töu");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿»¢¹Ç¾Æ¡£");	
 		else
 			local k = random(1, 4);
 			if(k > 3) then
 				DelItemEx(943);
-				Say("ÓĞÒ»¸öÁéÖ¥Î´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);		
+				Say("Cã 1 Linh chi ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);		
 			else
 				DelItemEx(944);
-				Say("¸Ã»¢¹ÇÎ´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);
+				Say("Hæ cèt nµy ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);
 			end		
 		end					
 	else
-		Say("¿Í¹ÙÒÀÈ»Î´¹»Ò©ÁÏ£¬ÇëÔ­ÁÂÎÒ²»ÄÜ°ïÃ¦!",0);
+		Say("Kh¸ch quan vÉn ch­a ®ñ d­îc liÖu! Thø lçi ta kh«ng gióp ®­îc!",0);
 	end
 end
 
@@ -74,21 +74,21 @@ function antleryes()
 			end
 			DelItemEx(943);	
 			AddEventItem(949);
-			Say("ÁéÖ¥²İºÍÉÏµÈÂ¹È×¼ÓÉÏÎÒµÄ¼Ò´«¾­Ñé£¬¸ÃÂ¹È×¾ÆÃ»ÓĞË­ÄÜÖÆ³öÀ´!",0);
-			Msg2Player("»ñµÃÒ»Æ¿Â¹È×¾Æ");	
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿Â¹È×¾Æ¡£");	
+			Say("Linh Chi th¶o vµ Léc Nhung th­îng h¹ng céng víi kinh nghiÖm gia truyÒn cña ta, Léc Nhung töu nµy kh«ng ai cã thÓ chª ®­îc!",0);
+			Msg2Player("NhËn ®­îc 1 b×nh Léc Nhung töu");	
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿Â¹È×¾Æ¡£");	
 		else
 			local k = random(1, 4);
 			if(k > 3) then
 				DelItemEx(943);
-				Say("ÓĞÒ»¸öÁéÖ¥Î´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);		
+				Say("Cã 1 Linh chi ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);		
 			else
 				DelItemEx(945);
-				Say("ÓĞÒ»¸öÂ¹È×Î´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);
+				Say("Cã 1 Léc Nhung ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);
 			end		
 		end			
 	else
-		Say("¿Í¹ÙÒÀÈ»Î´¹»Ò©ÁÏ£¬ÇëÔ­ÁÂÎÒ²»ÄÜ°ïÃ¦!",0);
+		Say("Kh¸ch quan vÉn ch­a ®ñ d­îc liÖu! Thø lçi ta kh«ng gióp ®­îc!",0);
 	end
 end
 
@@ -101,24 +101,24 @@ function panaxyes()
 			end
 			DelItemEx(943);	
 			AddEventItem(950);
-			Say("ÁéÖ¥²İºÍÉÏµÈÈË²Î¼ÓÉÏÎÒµÄ¼Ò´«¾­Ñé£¬¸ÃÂ¹È×¾ÆÃ»ÓĞË­ÄÜÖÆ³öÀ´!",0);
-			Msg2Player("»ñµÃÒ»Æ¿ÈË²Î¾Æ");
-			WriteLog(date("%H%M%S")..": ÕËºÅ"..GetAccount()..", ÈËÎï"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿ÈË²Î¾Æ¡£");	
+			Say("Linh Chi th¶o vµ Nh©n s©m th­îng h¹ng céng víi kinh nghiÖm gia truyÒn cña ta, Nh©n S©m töu nµy kh«ng ai cã thÓ chª ®­îc!",0);
+			Msg2Player("NhËn ®­îc 1 b×nh Nh©n S©m töu");
+			WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName().."£¬ÄğÖÆ³öÁË1Æ¿ÈË²Î¾Æ¡£");	
 		else
 			local k = random(1, 4);
 			if(k > 3) then
 				DelItemEx(943);
-				Say("ÓĞÒ»¸öÁéÖ¥Î´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);		
+				Say("Cã 1 Linh chi ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);		
 			else
 				DelItemEx(946);
-				Say("ÓĞÒ»¸öÈË²ÎÎ´¹»Äê·İ£¬ÅäÒ©»áÖÊÁ¿²î¡£¿Í¹ÙÇëÅ¬Á¦ÕÒÆäËûµÄ°É£¬ÎÒÔÚÕâµÈ",0);
+				Say("Cã 1 Léc Nhung ch­a ®ñ tuæi, phèi d­îc sÏ kĞm chÊt l­îng. Kh¸ch quan h·y chŞu khã ®i t×m c¸i kh¸c ®i! Ta ë ®©y chê!",0);
 			end			
 		end
 	else
-		Say("¿Í¹ÙÒÀÈ»Î´¹»Ò©ÁÏ£¬ÇëÔ­ÁÂÎÒ²»ÄÜ°ïÃ¦!",0);
+		Say("Kh¸ch quan vÉn ch­a ®ñ d­îc liÖu! Thø lçi ta kh«ng gióp ®­îc!",0);
 	end
 end
 
 function aboutbrewing()
-	Say("±¾µêÖ»´æ·ÅÓĞ×ã¹»ÉÏµÈÒ©ÁÏµÄÒ©¾Æ. <enter>ÏÉÁé¾ÆĞèÒªÓĞ3¸öÁéÖ¥²İ.<enter>»¢¹Ç¾ÆĞèÒªÓĞ1¸öÁéÖ¥²İºÍ3¸ö»¢¹Ç.<enter>Â¹È×¾ÆĞèÒªÓĞÒ»¸öÁéÖ¥²İºÍ3¸öÂ¹È×.<enter>ÈË²Î¾ÆĞèÒªÓĞ1¸öÁéÖ¥²İºÍ3¸öÈË²Î.",0);
+	Say("Bæn tiÖm chØ cÊt D­îc töu khi ®· cã ®ñ c¸c d­îc liÖu th­îng thõa. <enter>Tiªn Linh töu cÇn cã 3 Linh Chi th¶o.<enter>Hæ Cèt töu cÇn cã 1 Linh Chi th¶o vµ 3 Hæ cèt.<enter>Léc Nhung töu cÇn cã 1 Linh Chi th¶o vµ 3 Léc Nhung.<enter>Nh©n S©m töu cÇn cã 1 Linh Chi th¶o vµ 3 Nh©n S©m.",0);
 end

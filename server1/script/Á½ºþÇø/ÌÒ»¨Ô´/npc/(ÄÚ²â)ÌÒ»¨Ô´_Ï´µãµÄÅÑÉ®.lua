@@ -3,7 +3,7 @@
 -- Update: Dan_Deng(2003-12-10)
 
 function main()
-	Say("ÄãÏëÏ´ËèÂğ!¿ÉÒÔ£¡ÏÈ¸øÎÒ´·´·±³£¡ÖªµÀÔõÃ´×öÂğ?",2,"ÕâÊÇ10ÍòÁ½£¬Çë´óÊ¦ÊÕÏÂ /pay_yes","ËãÁË°É/rollback_no")
+	Say("Ng­¬i muèn tÈy tòy ­? §­îc! L¹i ®Êm l­ng cho ta tr­íc ®i! Cã biÕt c¸ch lµm kh«ng vËy?",2,"§©y lµ 10 v¹n l­îng, xin ®¹i s­ nhËn cho. /pay_yes","VËy th«i ®i/rollback_no")
 end;
 
 function pay_yes()
@@ -20,14 +20,14 @@ function pay_yes()
 		if (i ~= -1) then AddMagic(210,i) end			-- Èç¹ûÑ§¹ıÇá¹¦Ôò¼Ó»ØÔ­ÓĞµÈ¼¶
 		if (j ~= -1) then AddMagic(400,j) end			-- Èç¹ûÑ§¹ı¡°½Ù¸»¼ÃÆ¶¡±Í¬Ñù´¦Àí
 		if (GetTask(13) > 256) then		-- ÊÇÓÃ±¦Ê¯Ï´µÄµã
-			Msg2Player("ÓÃ3¿ÅË®¾§Ï´¼¼ÄÜµã¡£ÄãÓ¦¸Ã»Ø¼ÒĞİÏ¢Ò»ÏÂ!")
-			Say("ÓÃ3¿ÅË®¾§Ï´¼¼ÄÜµã. µ«ÊÇ¼¼ÒªÏûºÄ3¸ö¼¼ÄÜµã.ÄãÓ¦¸Ã»Ø¼ÒĞİÏ¢Ò»ÏÂ.",1,"ºÃµÄ /KickOutSelf")
+			Msg2Player("Dïng 3 viªn Thñy Tinh tiÕn hµnh tÈy ®iÓm kü n¨ng. B¹n nªn vÒ nhµ nghØ mét l¸t!")
+			Say("Dïng 3 viªn Thñy Tinh tiÕn hµnh tÈy ®iÓm kü n¨ng. B¹n nªn vÒ nhµ nghØ mét l¸t!",1,"§­îc. /KickOutSelf")
 		else
-			Msg2Player("ÓÃ3¿ÅË®¾§Ï´¼¼ÄÜµã. µ«ÊÇ¼¼ÒªÏûºÄ3¸ö¼¼ÄÜµã.ÄãÓ¦¸Ã»Ø¼ÒĞİÏ¢Ò»ÏÂ!")
-			Say("ÓÃ3¿ÅË®¾§Ï´¼¼ÄÜµã. µ«ÊÇ¼¼ÒªÏûºÄ3¸ö¼¼ÄÜµã.ÄãÓ¦¸Ã»Ø¼ÒĞİÏ¢Ò»ÏÂ!",1,"ºÃµÄ /KickOutSelf")
+			Msg2Player("Dïng 3 viªn Thñy Tinh tiÕn hµnh tÈy ®iÓm kü n¨ng. Nh­ng ®iÓm kü n¨ng bŞ mÊt ®i 3 ®iÓm. B¹n nªn vÒ nhµ nghØ mét l¸t!")
+			Say("Dïng 3 viªn Thñy Tinh tiÕn hµnh tÈy ®iÓm kü n¨ng. Nh­ng ®iÓm kü n¨ng bŞ mÊt ®i 3 ®iÓm. B¹n nªn vÒ nhµ nghØ mét l¸t!",1,"§­îc. /KickOutSelf")
 		end
 	else
-		Talk(1,"","Õâ¾ÍÊÇÄãµÄ³ÏÒâÂğ£¿ÕâÑùµÄ»°Äã»¹ÊÇ»ØÈ¥°É! ")
+		Talk(1,"","§©y lµ thµnh ı cña ng­¬i sao?Nh­ thÕ th× ng­¬i quay vÒ ®i! ")
 	end
 end
 

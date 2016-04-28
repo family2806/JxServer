@@ -12,12 +12,12 @@ function OnTimer()
 	
 	if (nMapId == 208) then			-- Ö»ÓĞÔÚÀÎ·¿ÖĞ²ÅÔÊĞí¼õPKÖµ
 		if (PK_value > 1) then		-- ÉĞÎ´Ï´ÍêPKÖµ
-			Msg2Player("Í¨¹ı¾²ĞÄ»Ú¹ı£¬ÄãµÄ×ïÄõ¼õÇáÁË¡£")
+			Msg2Player("Th«ng qua tÜnh t©m hèi c·i , téi cña ng­¬i nghiÖt gi¶m bít . ")
 			SetPK(PK_value - 1)
 			SetTask(96,100 + (PK_value - 1));
 			SetTimer(12 * CTime * FramePerSec, 9)						--ÖØĞÂ¿ªÊ¼¼ÆÊ±£¨12¸öÊ±³½==120·ÖÖÓ£©
 		else							-- Ï´ÍêPKÁË
-			Msg2Player("ÔÚÉî¿Ì·´Ê¡×ÔÉí×ïĞĞÖ®ºó£¬ÄãÖÕÓÚÏ´ÇåÁË×Ô¼ºµÄ×ïÄõ¡£")
+			Msg2Player(" ë kh¾c s©u tØnh l¹i tù th©n téi sau , ng­¬i rèt côc röa s¹ch téi lçi cña m×nh . ")
 			SetPK(0)
 			SetTask(96,100)
 		end

@@ -45,7 +45,7 @@ function main()
 	tbNpc.tbNpcParam[TREE_TYPE] = MEIGUIHUAZI
 	basemission_CallNpc(tbNpc)
 		
-	Msg2Player("种一颗玫瑰种子")
+	Msg2Player("Tr錸g 1 H箃 Gi鑞g Hoa H錸g")
 	
 end
 

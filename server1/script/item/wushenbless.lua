@@ -7,12 +7,12 @@ function main(nItemIdx)
 	local nItemTime = GetItemParam(nItemIdx,1);
 	local nCurTime = GetCurServerTime();	--Ãë
 	if (nItemTime < nCurTime) then
-		Msg2Player("Õâ¸öÎïÆ·ÒÑ¹ıÁËÓĞĞ§ÆÚ£¬²»ÄÜÔÙÊ¹ÓÃÁË¡£");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n sö dông.");
 		return 0;
 	end;
 	local nEndTime = nCurTime + 2*60*60;
 	SetTask(2509, nEndTime);
-	Msg2Player("Äú»ñµÃ2¸öĞ¡Ê±ÔÚËÎ½ğ´óÕ½¡¢ĞÅÊ¹ÈÎÎñ¡¢Ê±¼äµÄÌôÕ½¡¢ÎäÁÖÁªÈü¡¢Ò°ÛÅÈÎÎñ¡¢»Ô»ÍÖ®Ò¹ÖĞËù»ñ¹±Ï×¶È·­±¶µÄ×´Ì¬¡£")
+	Msg2Player("Trong vßng 2 giê b¹n sÏ ®­îc nh©n ®«i phÇn th­ëng khi tham gia Tèng Kim, nhiÖm vô tİn sø, th¸ch thøc thêi gian, vâ l©m liªn ®Êu, nhiÖm vô D· TÈu, §ªm huy hoµng")
 end;
 
 function GetDesc(nItemIdx)
@@ -21,6 +21,6 @@ function GetDesc(nItemIdx)
 	local nMonth = GetItemParam(nItemIdx, 3);
 	local nDate = GetItemParam(nItemIdx, 4);
 
-	return "Ê¹ÓÃÆÚÏŞ£º<color=blue>"..nYear.."Äê"..nMonth.."ÔÂ"..nDate.."ÈÕ"
+	return "Thêi h¹n sö dông: <color=blue>"..nYear.."n¨m"..nMonth.."nguyÖt "..nDate.."nhËt "
 end
 

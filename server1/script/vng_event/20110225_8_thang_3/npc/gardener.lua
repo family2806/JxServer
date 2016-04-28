@@ -15,8 +15,8 @@ function tbVNGWD2011_gardener:MainDialog()
 		return
 	end
 	local tbMainDialog = tbVNGWD2011_NpcHead:CreateDialog()
-	tbMainDialog:AddOptEntry("ËÍÃæ°ü", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "ËÍÃæ°ü"})
-	tbMainDialog:AddOptEntry("»»Ãµ¹å»¨Êø", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "ºÏ³ÉÃµ¹å»¨Êø"})
-	tbMainDialog:AddOptEntry("Âò»¨Ïß", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "Âò»¨Ïß"})
+	tbMainDialog:AddOptEntry("TÆng b¸nh m×", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "TÆng b¸nh m×"})
+	tbMainDialog:AddOptEntry("§æi bã hoa hång", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "Hîp thµnh Bã Hoa Hång"})
+	tbMainDialog:AddOptEntry("Mua d©y cét hoa", tbVNGWD2011_NpcHead.ComposeItem, {tbVNGWD2011_NpcHead, "Mua d©y cét hoa"})
 	tbMainDialog:Show()			
 end

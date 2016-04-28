@@ -4,9 +4,9 @@
 
 function main()
 	if (GetSex() == 0) then
-		Talk(1,"","Äã¿ì¿ìÏÂÉ½£¬ºó·½ÒÀÈ»ÊÇÀ×¾÷µÄÂîÉù£º³ôĞ¡×Ó£¬Äã±ğÅÜ'! ")
+		Talk(1,"","B¹n mau chãng ®i xuèng nói, phİa sau vÉn vang lªn tiÕng chöi m¾ng cña L«i QuyÕt: 'TiÓu tö thèi! §õng cã ch¹y'! ")
 	else
-		Talk(1,"","Äã¿ì¿ìÏÂÉ½£¬ºó·½ÒÀÈ»ÊÇÀ×¾÷µÄÂîÉù£º³ôĞ¡×Ó£¬Äã±ğÅÜ'! ")
+		Talk(1,"","B¹n mau chãng ®i xuèng nói, phİa sau vÉn vang lªn tiÕng chöi m¾ng cña L«i QuyÕt: 'TiÓu tö thèi! §õng cã ch¹y'! ")
 	end
 	i = random(0,99)
 	if (i < 33) then

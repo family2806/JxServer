@@ -27,14 +27,14 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "nil",
-	szName = "ÅüÑª¹È",
+	szName = "Tİch HuyÕt Cèc",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -45,14 +45,14 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "nil",
-	szName = "¶ñÈË¹È",
+	szName = "¸c Nh©n Cèc",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -63,14 +63,14 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "nil",
-	szName = "Ê´¹ÇÑÂ",
+	szName = "Thùc Cèt Nhai",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ£¡",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -81,14 +81,14 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "nil",
-	szName = "ºÚÄ¾ÑÂ",
+	szName = "H¾c Méc Nhai",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -99,14 +99,14 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "nil",
-	szName = "Ìì¸½É½",
+	szName = "Thiªn Phô S¬n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -117,14 +117,14 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "nil",
-	szName = "ÅÌÁúÉ½",
+	szName = "Bµn Long S¬n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -135,14 +135,14 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "nil",
-	szName = "µØÄ¸É½",
+	szName = "§Şa MÉu S¬n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -153,14 +153,14 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 {
 	nId = 9,
 	szMessageType = "nil",
-	szName = "Íğ·ïÉ½",
+	szName = "UyÓn Phông S¬n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"µÈ¼¶¹ıµÍ£¬¿ÖÅÂ¶Ô´óÏÀÌ«Î£ÏÕ!",">="} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"¸óÏÂĞŞÁ¶µÄÊ±¼äÒÑÓÃÍê!",">"} },
+		{"PlayerFunLib:CheckLevel",	{130,"CÊp bËc qu¸ thÊp, e r»ng qu¸ nguy hiÓm víi ®¹i hiÖp!",">="} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,0,"Thêi gian tu luyÖn cña c¸c h¹ ®· hÕt!",">"} },
 	},
 	tbActition = 
 	{
@@ -171,82 +171,82 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 {
 	nId = 10,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ°×¹ÇÁî",
+	szName = "Sö dông B¹ch Cèt LÖnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"return {tbProp={6,1,2255,1,0,0},}"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"ĞèÊÇ³äÖµÍæ¼Ò¼°130¼¶ÒÔÉÏ²ÅÄÜÊ¹ÓÃ",">="} },
-		{"PlayerFunLib:IsCharged",	{"ĞèÊÇ³äÖµÍæ¼Ò¼°130¼¶ÒÔÉÏ²ÅÄÜÊ¹ÓÃ"} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,1020,"°×¹ÇĞŞÁ¶µÄÊ±¼ä×î¶àÖ»ÄÜ»ıÀÛ1080·ÖÖÓ!","<="} },
-		{"PlayerFunLib:CheckTaskDaily",	{TASK_ITEM_USED_A,3,"´ËµÀ¾ßÃ¿ÈÕÖ»ÄÜÊ¹ÓÃ3´Î!","<"} },
+		{"PlayerFunLib:CheckLevel",	{130,"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông",">="} },
+		{"PlayerFunLib:IsCharged",	{"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông"} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_A,1020,"Thêi gian tu luyÖn cña b¹ch cèt nhiÒu nhÊt chØ ®­îc tİch lòy 1080 phót!","<="} },
+		{"PlayerFunLib:CheckTaskDaily",	{TASK_ITEM_USED_A,3,"§¹o cô nµy mçi ngµy chØ ®­îc sö dông 3 lÇn!","<"} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:AddTaskDaily",	{TASK_ITEM_USED_A,1} },
 		{"dostring",	{"local nLeftTime = GetTask(2662); if  nLeftTime < 0 then nLeftTime = 60; else nLeftTime = nLeftTime + 60; end SetTask(2662, nLeftTime);"} },
-		{"dostring",	{"Msg2Player(format([[°×¹ÇĞŞÁ¶»ıÀÛµÄÊ±¼äÎª%d ·ÖÖÓ]], GetTask(2662)))"} },
+		{"dostring",	{"Msg2Player(format([[Thêi gian tİch lòy tu luyÖn cña b¹ch cèt lµ %d phót]], GetTask(2662)))"} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÌìÁúÁî",
+	szName = "Sö dông Thiªn Long LÖnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"return {tbProp={6,1,2256,1,0,0},}"},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckLevel",	{130,"ĞèÊÇ³äÖµÍæ¼Ò¼°130¼¶ÒÔÉÏ²ÅÄÜÊ¹ÓÃ",">="} },
-		{"PlayerFunLib:IsCharged",	{"ĞèÊÇ³äÖµÍæ¼Ò¼°130¼¶ÒÔÉÏ²ÅÄÜÊ¹ÓÃ"} },
-		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,1020,"°×¹ÇĞŞÁ¶µÄÊ±¼ä×î¶àÖ»ÄÜ»ıÀÛ1080·ÖÖÓ","<="} },
-		{"PlayerFunLib:CheckTaskDaily",	{TASK_ITEM_USED_B,3,"´ËµÀ¾ßÃ¿ÈÕÖ»ÄÜÊ¹ÓÃ3´Î!","<"} },
+		{"PlayerFunLib:CheckLevel",	{130,"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông",">="} },
+		{"PlayerFunLib:IsCharged",	{"Ph¶i lµ ng­êi ch¬i nép thÎ vµ cÊp 130 trë lªn míi cã thÓ sö dông"} },
+		{"PlayerFunLib:CheckTask",	{TASK_TIME_LEFT_B,1020,"Thêi gian tİch lòy tu luyÖn nhiÒu nhÊt cña thiªn long lµ 1080 phót","<="} },
+		{"PlayerFunLib:CheckTaskDaily",	{TASK_ITEM_USED_B,3,"§¹o cô nµy mçi ngµy chØ ®­îc sö dông 3 lÇn!","<"} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:AddTaskDaily",	{TASK_ITEM_USED_B,1} },
 		{"dostring",	{"local nLeftTime = GetTask(2663); if  nLeftTime < 0 then nLeftTime = 60; else nLeftTime = nLeftTime + 60; end SetTask(2663, nLeftTime);"} },
-		{"dostring",	{"Msg2Player(format([[ÌìÁúĞŞÁ¶»ıÀÛµÄÊ±¼äÎª%d ·ÖÖÓ]], GetTask(2663)))"} },
+		{"dostring",	{"Msg2Player(format([[Thêi gian tİch lòy tu luyÖn cña thiªn long lµ %d phót]], GetTask(2663)))"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
 {
 	nId = 12,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷³µ·ò",
+	szName = "BÊm vµo xa phu",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"³µ·ò"},
+	tbMessageParam = {"Xa phu"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
---		{"AddDialogOpt",	{"×ßµ½ĞÂµÄµØÍ¼",13} },
+--		{"AddDialogOpt",	{"§i ®Õn b¶n ®å míi",13} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "CreateDialog",
-	szName = "Ñ¡ÔñµØÍ¼®å",
+	szName = "Chän dßng chän b¶n ®å",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"¿Í¹ÙÏëÈ¥ÄÄ?"},
+	tbMessageParam = {"Kh¸ch quan muèn ®i ®©u?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÅüÑª¹È",2} },
-		{"AddDialogOpt",	{"¶ñÈË¹È",3} },
-		{"AddDialogOpt",	{"Ê´¹ÇÑÂ",4} },
-		{"AddDialogOpt",	{"ºÚÄ¾ÑÂ",5} },
-		{"AddDialogOpt",	{"Ìì¸½É½",6} },
-		{"AddDialogOpt",	{"ÅÌÁúÉ½",7} },
-		{"AddDialogOpt",	{"µØÄ¸É½",8} },
-		{"AddDialogOpt",	{"Íğ·ïÉ½",9} },
+		{"AddDialogOpt",	{"Tİch HuyÕt Cèc",2} },
+		{"AddDialogOpt",	{"¸c Nh©n Cèc",3} },
+		{"AddDialogOpt",	{"Thùc Cèt Nhai",4} },
+		{"AddDialogOpt",	{"H¾c Méc Nhai",5} },
+		{"AddDialogOpt",	{"Thiªn Phô S¬n",6} },
+		{"AddDialogOpt",	{"Bµn Long S¬n",7} },
+		{"AddDialogOpt",	{"§Şa MÉu S¬n",8} },
+		{"AddDialogOpt",	{"UyÓn Phông S¬n",9} },
 	},
 }

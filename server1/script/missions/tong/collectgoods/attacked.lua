@@ -25,6 +25,6 @@ function OnMagicAttrib(nCallState, nTargetNpcIndex, nLauncherNpcIndex)
 	SubWorld = nOldSubWorld;
 	collg_settobomber();
 	local nReMain = floor(GetMSRestTime(COLLG_MISSIONID, COLLG_RUNTIMERID) / 18);
-	Msg2Player("±¬Õ¨Ğ§¹ûÑÓ³¤<color=yellow>"..nReMain.."<color> ·ÖÖÓ£¬Çë¿ìµãÈÓ¸øËûÈË");
-	Msg2MSGroup(COLLG_MISSIONID, "ÅÚÕÌÓÉ <color=yellow>"..szName.."<color> ÈÓ½ø<color=yellow>"..GetName().."<color>, v?<color=yellow>"..nReMain.."<color> 3 ·ÖÖÓ£¬´ó¼ÒÒªÁôÒâ", GetTask(TK_GROUPID));
+	Msg2Player("HiÖu qu¶ næ kĞo dµi trong <color=yellow>"..nReMain.."<color> phót, h·y mau nĞm vµo ng­êi kh¸c");
+	Msg2MSGroup(COLLG_MISSIONID, "Ph¸o do <color=yellow>"..szName.."<color> nĞm vµo <color=yellow>"..GetName().."<color>, vµ <color=yellow>"..nReMain.."<color> 3 phót, mäi ng­êi h·y l­u ı.", GetTask(TK_GROUPID));
 end;

@@ -34,8 +34,8 @@ function GetDesc(nItem)
 	
 	local szDes = HUANGJIN_TUPU_DES[szKey][2];
 	if (not szDes) then
-		return "天石碎片"
+		return "M秐h thi猲 th筩h"
 	else
-		return format("%s<enter>%s", szDes, "天石碎片")
+		return format("%s<enter>%s", szDes, "M秐h thi猲 th筩h")
 	end;
 end;

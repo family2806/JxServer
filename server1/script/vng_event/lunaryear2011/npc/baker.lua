@@ -12,50 +12,50 @@ function main()
 end
 function tbBaker:main()
 	local tbMainDiag = tbNpcHead:createDialog()
-	tbMainDiag.szTitleMsg = "½ÚÈÕÕæÊÇÃ¦Âµ"
-	tbMainDiag:AddOptEntry("½éÉÜ»î¶¯", tbBaker.introduction, {tbBaker})
-	tbMainDiag:AddOptEntry("ÌØ±ğôÕ×Ó", tbBaker.composeItem, {tbBaker})
+	tbMainDiag.szTitleMsg = "Nh÷ng ngµy nµy thËt bËn rén"
+	tbMainDiag:AddOptEntry("Giíi thiÖu ho¹t ®éng", tbBaker.introduction, {tbBaker})
+	tbMainDiag:AddOptEntry("B¸nh ch­ng ®Æc biÖt", tbBaker.composeItem, {tbBaker})
 	tbMainDiag:Show()
 end
 function tbBaker:introduction()
 	local tbIntroDialog = tbNpcHead:createDialog()
-	tbIntroDialog.szTitleMsg = "´ó¼ÒË­¶¼Ã¦ÓÚ×¼±¸½ÚÈÕ£¬ÎªÊ²Ã´ÄãÕ¾ÔÚÕâÀï£¿¿ìÈ¥¿´Ö÷Ò³ÁË½âÏêÇé"
-	tbIntroDialog:AddOptEntry("·µ»Ø", tbBaker.main, {tbBaker})
+	tbIntroDialog.szTitleMsg = "Mäi ng­êi ai còng bËn rén chuÈn bŞ cho ba ngµy tÕt, sao ng­¬i cßn ®øng ®©y? H·y ghĞ th¨m trang chñ cña trß ch¬i ®Ó biÕt thªm chi tiÕt nhĞ!"
+	tbIntroDialog:AddOptEntry("Trë l¹i", tbBaker.main, {tbBaker})
 	tbIntroDialog:Show()
 end
 function tbBaker:composeItem()
 	local tbComposeDialog = tbNpcHead:createDialog()
-	tbComposeDialog.szTitleMsg = "Èç¹ûÓĞ×ã¹»µÄÔ­ÁÏ£¬ÎÒ½«°ïÄã×öÌØ±ğôÕ×Ó]"
-	tbComposeDialog:AddOptEntry("ÖÆ×÷", tbBaker.doCompose, {tbBaker})
-	tbComposeDialog:AddOptEntry("·µ»Ø", tbBaker.main, {tbBaker})
+	tbComposeDialog.szTitleMsg = "NÕu cã ®ñ nguyªn liÖu ta sÏ gióp ng­¬i lµm [B¸nh ch­ng ®Æc biÖt]"
+	tbComposeDialog:AddOptEntry("Lµm b¸nh", tbBaker.doCompose, {tbBaker})
+	tbComposeDialog:AddOptEntry("Trë l¹i", tbBaker.main, {tbBaker})
 	tbComposeDialog:Show()
 end
 
 function tbBaker:doCompose()
 	local tbItemCompose = 
 	{
-		["ÌØ±ğôÕ×Ó"] = 
+		["B¸nh ch­ng ®Æc biÖt"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("×ö±ıÓ­´º»î¶¯\t ºÏ³É %s", "ÌØ±ğôÕ×Ó"),
+						szComposeTitle = format("Ho¹t ®éng lµm b¸nh ®ãn xu©n\t Hîp thµnh %s", "B¸nh ch­ng ®Æc biÖt"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName = "ôÕ×Ó", tbProp = {6,1,30086,1,0,0}, nCount = 2},
-								{szName = "°ü±ıÖ½", tbProp = {6,1,30085,1,0,0}, nCount = 1},
+								{szName = "B¸nh ch­ng", tbProp = {6,1,30086,1,0,0}, nCount = 2},
+								{szName = "GiÊy gãi b¸nh", tbProp = {6,1,30085,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "ÌØ±ğôÕ×Ó", tbProp = {6,1,30089,1,0,0}, nExpiredTime = tbVNG_LY2011.nEndDay},
+						tbProduct = {szName = "B¸nh ch­ng ®Æc biÖt", tbProp = {6,1,30089,1,0,0}, nExpiredTime = tbVNG_LY2011.nEndDay},
 					},
 					pCompos = nil;
 			},
 	}
-	local tbItem = tbItemCompose["ÌØ±ğôÕ×Ó"]
+	local tbItem = tbItemCompose["B¸nh ch­ng ®Æc biÖt"]
 	if tbItem then
 		if (tbItem.pCompos == nil) then
-			tbItem.pCompos = tbActivityCompose:new(tbItem.tbFormula, format("ºÏ³É [%s]", "ÌØ±ğôÕ×Ó"));
+			tbItem.pCompos = tbActivityCompose:new(tbItem.tbFormula, format("Hîp thµnh [%s]", "B¸nh ch­ng ®Æc biÖt"));
 		end
 		tbItem.pCompos:ComposeDailog(1);
 	end

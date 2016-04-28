@@ -9,9 +9,9 @@ function main()
 
 	iRand = random(1,300)
 	if ( iRand < 100 ) then
-		Say("ÄãÔÚÊ¥µ®Ê÷ĞíÁËÒ»¸öÔ¸£¬Í»È»·¢ÏÖÊ÷ÉÏ¶àÁËÒ»¸öÉÁÉÁ·¢¹âµÄ¶«Î÷",2,"ÕæÓĞÒâË¼£¬ÎÒÀ´ÇÆÇÆ¿´/present","ÎÒ»¹ÊÇ×¨ĞÄĞíÔ¸°É/no")
+		Say("Ng­¬i ë ®©y c©y gi¸ng sinh cho phĞp mét nguyÖn , ®ét nhiªn ph¸t hiÖn trªn c©y nhiÒu mét chiÕu lÊp l¸nh ®İch ®å ",2,"ThËt biÕt ®iÒu , ta ®Õn xem nh×n nh×n /present","Ta cßn lµ chuyªn t©m høa nguyÖn ®i /no")
 	else
-		Say("Íæ¼Ò£ººÃÆ¯ÁÁµÄÊ¥µ®Ê÷Ñ½£¬ÔÚÕâÀïĞíµÄÔ¸Ò»¶¨ÄÜÊµÏÖ£¡",0)
+		Say("Nhµ ch¬i  thËt lµ ®Ñp ®İch c©y gi¸ng sinh nha , ë chç nµy cho phĞp ®İch nguyÖn nhÊt ®Şnh cã thÓ thùc hiÖn ",0)
 	end
 
 end
@@ -27,12 +27,12 @@ function present()
 	if ( nLastTime == 0 and mod( nHour , 100 ) ~= 0 and nMinute < 30 ) then
 		SetGlbValue(9,nHour - 1)
 		SetGlbValue(8,0)
-		AddLocalNews("* * *Ê¥µ®ÀÏÈËÓÖÔÚÊ¥µ®Ê÷ÉÏ·ÅÁËºÃ¶àÀñÎï£¬´ó¼Ò¿ìÈ¥¿´¿´Ñ½* * *")
+		AddLocalNews("* * * «ng giµ n« en l¹i ®ang c©y gi¸ng sinh th­îng th¶ thËt lµ nhiÒu lÔ vËt , mäi ng­êi mau ®i xem mét chót nha * * *")
 	elseif ( nLastTime ~= nHour and nMinute >= 30 ) then
 		SetGlbValue(9,nHour)
 		SetGlbValue(8,0)
 --		Msg2Player("New hour : ["..nHour.."o'clock] Reset")
-		AddLocalNews("* * *Ê¥µ®ÀÏÈËÓÖÔÚÊ¥µ®Ê÷ÉÏ·ÅÁËºÃ¶àÀñÎï£¬´ó¼Ò¿ìÈ¥¿´¿´Ñ½* * *")
+		AddLocalNews("* * * «ng giµ n« en l¹i ®ang c©y gi¸ng sinh th­îng th¶ thËt lµ nhiÒu lÔ vËt , mäi ng­êi mau ®i xem mét chót nha * * *")
 	end
 	nLastTime = GetGlbValue(9)
 	nQuantity = GetGlbValue(8)
@@ -42,9 +42,9 @@ function present()
 		SetTask(615,nLastTime)
 --		Msg2Player("AddItem 1,total = "..nQuantity + 1)
 	elseif ( Utask615 == nLastTime ) then
-		Say("²»ÒªÌ°ĞÄÅ¶£¬°Ñ»ú»áÈÃ¸øÆäËûÅóÓÑ°É",0)
+		Say("Kh«ng muèn lßng tham nga , ®em c¬ héi nh­êng cho nh÷ng b»ng h÷u kh¸c ®i ",0)
 	else
-		Say("ºÃ¶«Î÷Õ£ÑÛ¾Í±»ÇÀÍêÁË£¬ÇëÒ»¸öĞ¡Ê±ºóÔÙÀ´ÊÔÊÔÔËÆø°É",0)
+		Say("Thø tèt nh¸y m¾t liÒn bŞ c­íp xong råi , xin/mêi mét canh giê sau trë l¹i thö mét chót vËn khİ ®i ",0)
 --		SetTask(615,nHour)
 	end		
 
@@ -55,19 +55,19 @@ function onTake()
 	i = random(1,100000)
 	if ( i < 40000 ) then
 		AddItem(6,0,20,1,0,0,0)
-		Msg2Player("ÍÛ£¡ÊÇÒ»¶äÃµ¹å»¨Å¶£¬ÎÒÒª°ÑËüËÍ¸øÎÒ×î°®µÄÈË¡£")
+		Msg2Player("Oa  lµ mét ®ãa hoa hång nga , ta muèn ®em nã ®­a cho ta thİch nhÊt ng­êi cña . ")
 	elseif ( i < 85000 ) then
 		AddItem(6,0,11,1,0,0,0)
-		Msg2Player("ß×£¡ÊÇÒ»¸öÑÌ»¨Ò²£¬ÎÒÀ´·Å¸ø´ó¼Ò¿´°É¡£")
+		Msg2Player("Di  lµ mét ph¸o b«ng còng , ta tíi ®Ó cho mäi ng­êi xem ®i . ")
 	elseif ( i < 90000 ) then
 		AddItem(6,1,72,1,0,0,0)
-		Msg2Player("Å¶£¿ÊÇÒ»¸öÌìÉ½ÓñÂ¶ÄØ£¬µ«Ô¸ËüÄÜ¸øÎÒ´øÀ´ºÃÔË¡£")
+		Msg2Player("Nga ? lµ mét Thiªn S¬n ngäc lé ®©y , chØ mong nã cã thÓ cho ta mang ®Õn may m¾n . ")
 	elseif ( i < 95000 ) then
 		AddItem(6,1,73,1,0,0,0)
-		Msg2Player("¹ş£¡Ò»¸ö°Ù¹ûÂ¶£¬ÎÒÕıĞèÒªËüÄØ¡£")
+		Msg2Player("H¾c  mét tr¨m qu¶ lé , ta ®ang cÇn nã ®©y . ")
 	else
 		AddItem(6,1,125,1,0,0,0)
-		Msg2Player("°¡£¿Ò»¸ö¹ğ»¨¾ÆàŞ£¬ÎÒÒªÈ¥ÕÒÅóÓÑÒ»Æğ·ÖÏíÕâÃÀÎ¶µÄ¾Æ£¡")
+		Msg2Player("A ? mét hoa quÕ r­îu oh , ta muèn ®i t×m b»ng h÷u cïng nhau chia xÎ c¸i nµy mü vŞ ®İch r­îu ")
 	end
 
 end

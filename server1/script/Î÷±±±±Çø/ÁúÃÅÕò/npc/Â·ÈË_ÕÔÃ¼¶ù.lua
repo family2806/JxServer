@@ -4,15 +4,15 @@
 function main(sel)
 	UTask_world26 = GetTask(26)
 	if (UTask_world26 == 3) then		-- ÈÎÎñÖĞ
-		Talk(8,"W26_step2","Ã¼¶ù¹ÃÄï£¡ÓĞÈËÍĞÎÒÉÓ¿ÚĞÅ¸øÄã","Ê²Ã´¿ÚĞÅ","Ğ¤Ò×Ó°ËÀÁË.","Ê²Ã´?","Ğ¤Ò×Ó°ÒÑ¾­ËÀÁË.","²»¿ÉÄÜ...ÄãÆ­ÎÒ!ÎÒ²»ĞÅ!"," (×îºóÔõÃ´Ñù?) ","ÊÇË­¸æËßÄãµÄ?")
+		Talk(8,"W26_step2","Mi Nhi c« n­¬ng! Cã ng­êi nhê ta b¸o tin cho c« ","Tin g× vËy?","Tiªu DŞch ¶nh ®· chÕt.","C¸i g×?","Tiªu DŞch ¶nh ®· chÕt råi.","Kh«ng thÓ nµo...Ng­¬i g¹t ta! Ta kh«ng tin!"," (Rèt cuéc lµ thÕ nµo?) "," Lµ ai nãi víi ng­¬i?")
 	else				-- ·ÇÈÎÎñ¶Ô»°
-		Talk(1,"","ÎÒÃ¿Ìì¶¼ÔÚÕâµÈ£¬½á¹ûµÈµ½ÁËÊ²Ã´?")
+		Talk(1,"","Ta ngµy th¸ng ë ®©y chê mong, cuèi cïng th× ®îi ®Õn khi nµo ®©y?")
 	end
 end;
 
 function W26_step2()
-	Talk(1,"","ÎÒ£¬ÎÒ²»ÄÜËµ£¬¸æ´ÇÁË")
+	Talk(1,"","Ta …ta kh«ng thÓ nãi ®­îc! C¸o tõ!")
 	SetTask(26,6)
-	AddNote("ÉÓ¿ÚĞÅ¸øÕÔÃ¼¶ù£¬²»×ãÏë²»µ½Ëı·´Ó¦ÕâÃ´´ó£¬»¹ÊÇ»ØÈ¥ÎÊÎÊÆòØ¤. ")
-	Msg2Player("ÉÓ¿ÚĞÅ¸øÕÔÃ¼¶ù£¬²»×ãÏë²»µ½Ëı·´Ó¦ÕâÃ´´ó£¬»¹ÊÇ»ØÈ¥ÎÊÎÊÆòØ¤. ")
+	AddNote("Mang tin nµy nãi víi TriÖu Mi Nhi, kh«ng ngê ph¶n øng cña nµng ta m¹nh mÏ nh­ vËy. Hay lµ ta quay l¹i hái l·o ¨n mµy. ")
+	Msg2Player("Mang tin nµy nãi víi TriÖu Mi Nhi, kh«ng ngê ph¶n øng cña nµng ta m¹nh mÏ nh­ vËy. Hay lµ ta quay l¹i hái l·o ¨n mµy. ")
 end;

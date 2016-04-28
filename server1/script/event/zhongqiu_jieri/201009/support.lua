@@ -13,7 +13,7 @@ tb2010ZhongQiu.tbNpcSet =
 };
 tb2010ZhongQiu.tbNpcInfo = 
 {
-	["´óÁ¦ÊÌÎÀ"] = 
+	["§¹i Lùc ThŞ VÖ"] = 
 	{
 		nTempId   = 1579,
 		nTaskId   = tb2010ZhongQiu.nTask_XinXin,
@@ -22,78 +22,78 @@ tb2010ZhongQiu.tbNpcInfo =
 		tbDrop		= nil,
 	},
 	
-	["³£Ê¤ÊÌÎÀ"] = 
+	["Th­êng Th¾ng ThŞ VÖ"] = 
 	{
 		nTempId   = 1580,
 		nTaskId   = tb2010ZhongQiu.nTask_ZhuXin_YuanXin,
 		nMaxExp   = 6000000000,
 		nAwardExp = 3000000,
 		tbDrop		= {
-									{szName = "×ß£¬ÂíµÆÁı", tbProp = {6, 1, 2506, 1, 0, 0}, nExpiredTime = 20101018, },
+									{szName = "Lång ®Ìn kĞo qu©n", tbProp = {6, 1, 2506, 1, 0, 0}, nExpiredTime = 20101018, },
 									{
-										{szName = "¸»¹ó½õºĞ", 				nRate = 1,   tbProp = {6, 1, 2402, 1, 0, 0}, nExpiredTime = 20101018,},
-										{szName = "ÏÉ²İÂ¶", 					nRate = 5,   tbProp = {6, 1,   71, 1, 0, 0}, },
-										{szName = "¸£ÔµÂ¶(Ğ¡) ", 		nRate = 5,   tbProp = {6, 1,  122, 1, 0, 0}, },
-										{szName = "·ÉËÙÍè", 					nRate = 2,   tbProp = {6, 0,    6, 1, 0, 0}, },
-										{szName = "´óÁ¦Íè", 					nRate = 2,   tbProp = {6, 0,    3, 1, 0, 0}, },
-										{szName = "ÅÌÈôĞÄ¾­", 				nRate = 0.4, tbProp = {6, 1,   12, 1, 0, 0}, },
-										{szName = "ÌìÍõ´¸·¨.¾í1", 		nRate = 0.2, tbProp = {6, 1,   37, 1, 0, 0}, },
-										{szName = "ÌìÍõÇ¹·¨.¾í 2", 		nRate = 0.2, tbProp = {6, 1,   38, 1, 0, 0}, },
-										{szName = "ÌìÍõµ¶·¨.¾í3", 		nRate = 0.2, tbProp = {6, 1,   39, 1, 0, 0}, },
-										{szName = "ÉÙÁÖÈ­·¨ ¾í1", 		nRate = 0.2, tbProp = {6, 1,   56, 1, 0, 0}, },
-										{szName = "ÉÙÁÖ¹÷·¨ ¾í 2", 		nRate = 0.2, tbProp = {6, 1,   57, 1, 0, 0}, },										
-										{szName = "ÉÙÁÖ¹÷·¨ ¾í 3", 		nRate = 0.2, tbProp = {6, 1,   58, 1, 0, 0}, },										
-										{szName = "·Éµ¶Êõ.Éã»êÔÂÓ°", 	nRate = 0.2, tbProp = {6, 1,   45, 1, 0, 0}, },										
-										{szName = "·ÉïÚÊõ.¾Å¹¬·ÉĞÇ", 	nRate = 0.2, tbProp = {6, 1,   46, 1, 0, 0}, },										
-										{szName = "¾Û¼ıÊõ.±©ÓêÀæ»¨", 	nRate = 0.2, tbProp = {6, 1,   27, 1, 0, 0}, },
-										{szName = "º¯¾²Êõ.ÂÒ»¹»÷", 		nRate = 0.2, tbProp = {6, 1,   28, 1, 0, 0}, },										
-										{szName = "Îå¶¾ÕÆ·¨.¾í1", 	nRate = 0.2, tbProp = {6, 1,   47, 1, 0, 0}, },										
-										{szName = "Îå¶¾µ¶·¨.¾í2", 		nRate = 0.2, tbProp = {6, 1,   48, 1, 0, 0}, },
-										{szName = "Îå¶¾ÉãĞÄÊõ.¾í3", 	nRate = 0.2, tbProp = {6, 1,   49, 1, 0, 0}, },										
-										{szName = "Ãğ½£ÃØ¼®", 				nRate = 0.2, tbProp = {6, 1,   42, 1, 0, 0}, },
-										{szName = "¶ëÃ¼·ğ¹âÕÆÃØ¼®", 	nRate = 0.2, tbProp = {6, 1,   43, 1, 0, 0}, },										
-										{szName = "ÆÕ¶ÉÃØ¼®", 				nRate = 0.2, tbProp = {6, 1,   59, 1, 0, 0}, },
-										{szName = "´äÑÌµ¶·¨", 				nRate = 0.2, tbProp = {6, 1,   40, 1, 0, 0}, },
-										{szName = "´äÑÌË«µ¶", 				nRate = 0.2, tbProp = {6, 1,   41, 1, 0, 0}, },										
-										{szName = "Ø¤°ïÕÆ·¨", 				nRate = 0.2, tbProp = {6, 1,   54, 1, 0, 0}, },	
-										{szName = "Ø¤°ï¹÷·¨", 				nRate = 0.2, tbProp = {6, 1,   55, 1, 0, 0}, },
-										{szName = "ÔÆÁú»÷.Ã¬·¨", 			nRate = 0.2, tbProp = {6, 1,   35, 1, 0, 0}, },										
-										{szName = "Á÷ĞÇ.µ¶·¨", 				nRate = 0.2, tbProp = {6, 1,   36, 1, 0, 0}, },	
-										{szName = "Éã»ê.ÖäÊõ", 				nRate = 0.2, tbProp = {6, 1,   53, 1, 0, 0}, },
-										{szName = "Ì«¼«È­Æ×.¾í3", 		nRate = 0.2, tbProp = {6, 1,   33, 1, 0, 0}, },										
-										{szName = "Ì«¼«½£Æ×.¾í2", 		nRate = 0.2, tbProp = {6, 1,   34, 1, 0, 0}, },	
-										{szName = "Óù·çÊõ", 					nRate = 0.2, tbProp = {6, 1,   50, 1, 0, 0}, },		
-										{szName = "ÓùÀ×Êõ", 					nRate = 0.2, tbProp = {6, 1,   51, 1, 0, 0}, },		
-										{szName = "ÓùĞÄÊõ", 					nRate = 0.2, tbProp = {6, 1,   52, 1, 0, 0}, },		
-										{szName = "1 ÃûÍûÖµ", 					nRate = 28,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
+										{szName = "Phó Quı CÈm H¹p", 				nRate = 1,   tbProp = {6, 1, 2402, 1, 0, 0}, nExpiredTime = 20101018,},
+										{szName = "Tiªn Th¶o Lé ", 					nRate = 5,   tbProp = {6, 1,   71, 1, 0, 0}, },
+										{szName = "Phóc Duyªn Lé (TiÓu) ", 		nRate = 5,   tbProp = {6, 1,  122, 1, 0, 0}, },
+										{szName = "Phi Tèc hoµn", 					nRate = 2,   tbProp = {6, 0,    6, 1, 0, 0}, },
+										{szName = "§¹i Lùc hoµn", 					nRate = 2,   tbProp = {6, 0,    3, 1, 0, 0}, },
+										{szName = "Bµn Nh­îc T©m Kinh", 				nRate = 0.4, tbProp = {6, 1,   12, 1, 0, 0}, },
+										{szName = "Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1", 		nRate = 0.2, tbProp = {6, 1,   37, 1, 0, 0}, },
+										{szName = "Thiªn V­¬ng Th­¬ng ph¸p. QuyÓn 2", 		nRate = 0.2, tbProp = {6, 1,   38, 1, 0, 0}, },
+										{szName = "Thiªn V­¬ng §ao ph¸p.QuyÓn 3", 		nRate = 0.2, tbProp = {6, 1,   39, 1, 0, 0}, },
+										{szName = "ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1", 		nRate = 0.2, tbProp = {6, 1,   56, 1, 0, 0}, },
+										{szName = "ThiÕu L©m C«n ph¸p. QuyÓn 2", 		nRate = 0.2, tbProp = {6, 1,   57, 1, 0, 0}, },										
+										{szName = "ThiÕu L©m §ao ph¸p. QuyÓn 3", 		nRate = 0.2, tbProp = {6, 1,   58, 1, 0, 0}, },										
+										{szName = "Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh", 	nRate = 0.2, tbProp = {6, 1,   45, 1, 0, 0}, },										
+										{szName = "Phi Tiªu thuËt. Cöu Cung Phi Tinh", 	nRate = 0.2, tbProp = {6, 1,   46, 1, 0, 0}, },										
+										{szName = "Tô TiÔn thuËt. B¹o Vò Lª Hoa", 	nRate = 0.2, tbProp = {6, 1,   27, 1, 0, 0}, },
+										{szName = "H·m TÜnh thuËt.Lo¹n Hoµn Kİch", 		nRate = 0.2, tbProp = {6, 1,   28, 1, 0, 0}, },										
+										{szName = "Ngò §éc ch­ëng ph¸p (quyÓn 1)", 	nRate = 0.2, tbProp = {6, 1,   47, 1, 0, 0}, },										
+										{szName = "Ngò §éc §ao ph¸p. QuyÓn 2", 		nRate = 0.2, tbProp = {6, 1,   48, 1, 0, 0}, },
+										{szName = "Ngò §éc NhiÕp T©m thuËt. QuyÓn 3", 	nRate = 0.2, tbProp = {6, 1,   49, 1, 0, 0}, },										
+										{szName = "DiÖt KiÕm MËt TŞch", 				nRate = 0.2, tbProp = {6, 1,   42, 1, 0, 0}, },
+										{szName = "Nga Mi  PhËt Quang Ch­ëng MËt TŞch", 	nRate = 0.2, tbProp = {6, 1,   43, 1, 0, 0}, },										
+										{szName = "Phæ §é MËt TŞch", 				nRate = 0.2, tbProp = {6, 1,   59, 1, 0, 0}, },
+										{szName = "Thóy Yªn §ao ph¸p", 				nRate = 0.2, tbProp = {6, 1,   40, 1, 0, 0}, },
+										{szName = "Thóy Yªn Song ®ao", 				nRate = 0.2, tbProp = {6, 1,   41, 1, 0, 0}, },										
+										{szName = "C¸i Bang Ch­ëng Ph¸p", 				nRate = 0.2, tbProp = {6, 1,   54, 1, 0, 0}, },	
+										{szName = "C¸i Bang C«n ph¸p", 				nRate = 0.2, tbProp = {6, 1,   55, 1, 0, 0}, },
+										{szName = "V©n Long Kİch. M©u ph¸p", 			nRate = 0.2, tbProp = {6, 1,   35, 1, 0, 0}, },										
+										{szName = "L­u Tinh. §ao ph¸p", 				nRate = 0.2, tbProp = {6, 1,   36, 1, 0, 0}, },	
+										{szName = "NhiÕp Hån. Chó thuËt", 				nRate = 0.2, tbProp = {6, 1,   53, 1, 0, 0}, },
+										{szName = "Th¸i Cùc QuyÒn Phæ. QuyÓn 3", 		nRate = 0.2, tbProp = {6, 1,   33, 1, 0, 0}, },										
+										{szName = "Th¸i Cùc KiÕm Phæ. QuyÓn 2", 		nRate = 0.2, tbProp = {6, 1,   34, 1, 0, 0}, },	
+										{szName = "Ngù Phong thuËt", 					nRate = 0.2, tbProp = {6, 1,   50, 1, 0, 0}, },		
+										{szName = "Ngù L«i thuËt", 					nRate = 0.2, tbProp = {6, 1,   51, 1, 0, 0}, },		
+										{szName = "Ngù T©m thuËt", 					nRate = 0.2, tbProp = {6, 1,   52, 1, 0, 0}, },		
+										{szName = "1 ®iÓm danh väng", 					nRate = 28,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(1);	
-																															 	 Msg2Player("Ôö¼Ó 1 ÃûÍûÖµ");
-																															 	 WriteLog(format("%s Ôö¼Ó1 ÃûÍûÖµ", szLogTitle));
+																															 	 Msg2Player("T¨ng 1 ®iÓm danh väng");
+																															 	 WriteLog(format("%s t¨ng 1 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																												 			 end, },		
-										{szName = "2 ÃûÍûÖµ", 					nRate = 26,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
+										{szName = "2 ®iÓm danh väng", 					nRate = 26,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(2);	
-																															 	 Msg2Player("Ôö¼Ó2 ÃûÍûÖµ");
-																															 	 WriteLog(format("%s Ôö¼Ó2 ÃûÍûÖµ", szLogTitle));
+																															 	 Msg2Player("T¨ng 2 ®iÓm danh väng");
+																															 	 WriteLog(format("%s T¨ng 2 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																															 end, },	
-										{szName = "3 ÃûÍûÖµ", 					nRate = 25,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
+										{szName = "3 ®iÓm danh väng", 					nRate = 25,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(3);	
-																															 	 Msg2Player("Ôö¼Ó3 ÃûÍûÖµ");
-																															 	 WriteLog(format("%sÔö¼Ó3 ÃûÍûÖµ", szLogTitle));
+																															 	 Msg2Player("T¨ng 3 ®iÓm danh väng");
+																															 	 WriteLog(format("%sT¨ng 3 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																															 end, },																													 																												 									
 									},
 								},
 	},
 	
-	["½ğ¸ÕÊÌÎÀ"] = 
+	["Kim C­¬ng ThŞ VÖ"] = 
 	{
 		nTempId   = 1581,
 		nTaskId   = tb2010ZhongQiu.nTask_ZhuXin_YuanXin,
@@ -106,37 +106,37 @@ tb2010ZhongQiu.tbNpcInfo =
 									{20000000,  1, 100 },
 								},
 		tbDrop		= {
-									{szName = "×ßÂíµÆÁı", tbProp = {6, 1, 2506, 1, 0, 0}, nExpiredTime = 20101018, },
+									{szName = "Lång ®Ìn kĞo qu©n", tbProp = {6, 1, 2506, 1, 0, 0}, nExpiredTime = 20101018, },
 									{
-										{szName = "ĞşÔ³Áî", nRate = 0.3,   tbProp = {6, 1, 2351, 1, 0, 0}, },	
-										{szName = "²ÔÀÇÁî", nRate = 0.8,   tbProp = {6, 1, 2352, 1, 0, 0}, },	
-										{szName = "ÔÆÂ¹Áî", nRate = 1,   tbProp = {6, 1, 2353, 1, 0, 0}, },	
-										{szName = "»ìÔªÁéÂ¶", nRate = 9,   tbProp = {6, 1, 2312, 1, 0, 0}, },	
-										{szName = "ĞşÌì½õÄÒ", nRate = 2,   tbProp = {6, 1, 2355, 1, 0, 0}, },	
-										{szName = "ÁúÑªÍè", nRate = 2,   tbProp = {6, 1, 2117, 1, 0, 0}, },	
-										{szName = "·ÉËÙÍè", nRate = 2,   tbProp = {6, 0,    6, 1, 0, 0}, },	
-										{szName = "´óÁ¦Íè", nRate = 3,   tbProp = {6, 0,    3, 1, 0, 0}, },	
-										{szName = "ÌØĞ§ÏÉ²İÂ¶",nRate = 4,   tbProp = {6, 1, 1181, 1, 0, 0}, },	
-										{szName = "ÌôÕ½Àñ°ü", nRate = 8,tbProp = {6, 1, 2006, 1, 0, 0}, },	
-										{szName = "ÉñÃØ¿óÊ¯", nRate = 0.3,   tbProp = {6, 1,  398, 1, 0, 0}, },	
-										{szName = "¸»¹ó½õºĞ", nRate = 5,   tbProp = {6, 1, 2402, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "ÎåĞĞÆæÊ¯", nRate = 22.7,tbProp = {6, 1, 2125, 1, 0, 0}, },	
-										{szName = "ÉñÅ©Õæµ¤", nRate = 1,   tbProp = {6, 1, 2113, 1, 0, 0}, },	
-										{szName = "°ËÕä¸£ÔÂÀ¯Öò", nRate = 3,   tbProp = {6, 1, 1817, 1, 0, 0}, },	
-										{szName = "³É¶¼ÖĞÇïÔÂ±ı", nRate = 4,   tbProp = {6, 1, 2507, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "´óÀíÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2508, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "·ïÏèÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2509, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "ÏåÑôÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2510, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "ãê¾©ÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2511, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "ÁÙ°²ÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2512, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName = "ÑïÖİÖĞÇïÔÂ±ı", nRate = 4,  tbProp = {6, 1, 2513, 1, 0, 0}, nExpiredTime = 20101018,},	
-										{szName="100 ÍòÁ½", nRate = 2, nJxb = 1000000,},	
-										{szName="200 ÍòÁ½", nRate = 2,  nJxb = 2000000,},	
-										{szName="500 ÍòÁ½", nRate = 5,  nJxb = 5000000,},	
-										{szName="1000 ÍòÁ½", nRate = 0.2,  nJxb = 10000000,},	
-										{szName="»ØÌìÔÙÔì½õÄÒ", nRate = 1,  tbProp={6,1,1781,1,0,0},tbParam={60},},	
-										{szName="ÉñĞĞ·û", nRate = 0.2,  tbProp={6,1,1266,1,0,0}, nExpiredTime = 10080,},	
-										{szName="º£ÁúÖé", nRate = 2,  tbProp={6,1,2115,1,0,0},},	
+										{szName = "HuyÒn Viªn LÖnh", nRate = 0.3,   tbProp = {6, 1, 2351, 1, 0, 0}, },	
+										{szName = "Th­¬ng Lang LÖnh", nRate = 0.8,   tbProp = {6, 1, 2352, 1, 0, 0}, },	
+										{szName = "V©n Léc LÖnh", nRate = 1,   tbProp = {6, 1, 2353, 1, 0, 0}, },	
+										{szName = "Hçn Nguyªn Linh Lé", nRate = 9,   tbProp = {6, 1, 2312, 1, 0, 0}, },	
+										{szName = "HuyÒn Thiªn CÈm Nang", nRate = 2,   tbProp = {6, 1, 2355, 1, 0, 0}, },	
+										{szName = "Long HuyÕt Hoµn", nRate = 2,   tbProp = {6, 1, 2117, 1, 0, 0}, },	
+										{szName = "Phi Tèc hoµn", nRate = 2,   tbProp = {6, 0,    6, 1, 0, 0}, },	
+										{szName = "§¹i Lùc hoµn", nRate = 3,   tbProp = {6, 0,    3, 1, 0, 0}, },	
+										{szName = "Tiªn Th¶o Lé ®Æc biÖt",nRate = 4,   tbProp = {6, 1, 1181, 1, 0, 0}, },	
+										{szName = "Khiªu chiÕn LÔ bao", nRate = 8,tbProp = {6, 1, 2006, 1, 0, 0}, },	
+										{szName = "ThÇn bİ kho¸ng th¹ch", nRate = 0.3,   tbProp = {6, 1,  398, 1, 0, 0}, },	
+										{szName = "Phó Quı CÈm H¹p", nRate = 5,   tbProp = {6, 1, 2402, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "Ngò Hµnh Kú Th¹ch", nRate = 22.7,tbProp = {6, 1, 2125, 1, 0, 0}, },	
+										{szName = "ThÇn N«ng Ch©n §¬n", nRate = 1,   tbProp = {6, 1, 2113, 1, 0, 0}, },	
+										{szName = "NÕn B¸t tr©n phóc nguyÖt", nRate = 3,   tbProp = {6, 1, 1817, 1, 0, 0}, },	
+										{szName = "B¸nh Trung Thu Thµnh §«", nRate = 4,   tbProp = {6, 1, 2507, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu §¹i Lı", nRate = 4,  tbProp = {6, 1, 2508, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu Ph­îng T­êng", nRate = 4,  tbProp = {6, 1, 2509, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu T­¬ng D­¬ng", nRate = 4,  tbProp = {6, 1, 2510, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu BiÖn Kinh", nRate = 4,  tbProp = {6, 1, 2511, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu L©m An", nRate = 4,  tbProp = {6, 1, 2512, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName = "B¸nh Trung Thu D­¬ng Ch©u", nRate = 4,  tbProp = {6, 1, 2513, 1, 0, 0}, nExpiredTime = 20101018,},	
+										{szName="100 v¹n l­îng", nRate = 2, nJxb = 1000000,},	
+										{szName="200 v¹n l­îng", nRate = 2,  nJxb = 2000000,},	
+										{szName="500 v¹n l­îng", nRate = 5,  nJxb = 5000000,},	
+										{szName="1000 v¹n l­îng", nRate = 0.2,  nJxb = 10000000,},	
+										{szName="CÈm nang thay ®æi trêi ®Êt", nRate = 1,  tbProp={6,1,1781,1,0,0},tbParam={60},},	
+										{szName="ThÇn Hµnh Phï", nRate = 0.2,  tbProp={6,1,1266,1,0,0}, nExpiredTime = 10080,},	
+										{szName="H¶i Long Ch©u", nRate = 2,  tbProp={6,1,2115,1,0,0},},	
 									},
 								},
 	},
@@ -235,7 +235,7 @@ function tb2010ZhongQiu:AwardExp(nAwardExp, nTaskID, nMaxExp, szReason, szLog)
 	local nCurExp = TaskManager:GetTask(self.nTaskGroupId, nTaskID) * nUnit;
 	
 	if nCurExp >= nMaxExp then
-		Msg2Player("´ïµ½×î¸ß¾­Ñé£¬²»ÄÜÔÙÁìÈ¡ÁË!");
+		Msg2Player("§¹t ®Õn kinh nghiÖm cao nhÊt, kh«ng thÓ nhËn thªm kinh nghiÖm!");
 		return
 	end
 	
@@ -243,7 +243,7 @@ function tb2010ZhongQiu:AwardExp(nAwardExp, nTaskID, nMaxExp, szReason, szLog)
 	nCurExp = nCurExp + nAwardExp;
 	TaskManager:SetTask(self.nTaskGroupId, nTaskID, floor(nCurExp / nUnit));
 	
-	local szMsg = format("%s, ¸óÏÂ»ñµÃ%s/%s¾­Ñé!", szReason, tostring(nCurExp), tostring(nMaxExp));
+	local szMsg = format("%s, c¸c h¹ nhËn ®­îc %s/%s kinh nghiÖm!", szReason, tostring(nCurExp), tostring(nMaxExp));
 	Msg2Player(szMsg);
 end
 
@@ -311,7 +311,7 @@ function tb2010ZhongQiu:TaskNpcChangeShape(nShape)
 		local nSubWorldIdx = SubWorldID2Idx(tbPos[1]);
 
 		if nSubWorldIdx >= 0 then
-			local nNpcIdx = AddNpc(nNpcTempId, 90, nSubWorldIdx, tbPos[2]*32, tbPos[3]*32, 0, "æÏ¶ğ");
+			local nNpcIdx = AddNpc(nNpcTempId, 90, nSubWorldIdx, tbPos[2]*32, tbPos[3]*32, 0, "H»ng Nga");
 			if nNpcIdx > 0 then
 				SetNpcScript(nNpcIdx, "\\script\\activitysys\\npcdailog.lua");
 				tbNpcInfo[i].nNpcIndex = nNpcIdx;
@@ -341,11 +341,11 @@ function tb2010ZhongQiu:GiveItem2HengE_CallBack(szName, nCount)
 	local nOldPlayerIndex = PlayerIndex;	
 	PlayerIndex = nPlayerIndex;
 	
-	Msg2Player(format("´óÏÀÊÇµÚ%d¸ö½»×ßÂíµÆÁıµÄÈË.", nCount));
+	Msg2Player(format("§¹i hiÖp lµ ng­êi thø %d nép lång ®Ìn kĞo qu©n.", nCount));
 	
 	if mod(nCount, 1000) == 0 then
-		Msg2Player("¹§Ï²´óÏÀ»ñµÃ¶îÍâ½±Àø!")
-		tbAwardTemplet:GiveAwardByList({nExp = 5000000}, format("[ÖĞÇï»î¶¯][×ßÂíµÆÁı½±ÀøÔö¼Ó] µÚ%dÈË", nCount));	
+		Msg2Player("Chóc mõng ®¹i hiÖp nhËn ®­îc phÇn th­ëng t¨ng thªm!")
+		tbAwardTemplet:GiveAwardByList({nExp = 5000000}, format("[Ho¹t ®éng trung thu][Lång ®Ìn kĞo qu©n phÇn th­ëng t¨ng thªm] ng­êi thø %d", nCount));	
 	end
 	
 	PlayerIndex = nOldPlayerIndex;
@@ -354,7 +354,7 @@ end
 -- ÏÔÊ¾ÉÏ½»µÄµÆÁıÊıÄ¿
 function tb2010ZhongQiu:ShowGiveCount(nTaskID)
 	local nCurCount = TaskManager:GetTask(self.nTaskGroupId, nTaskID);
-	CreateTaskSay({format("<dec><npc>¸óÏÂÒÑ½» %d ×ßÂíµÆÁı!", nCurCount),  "¿ÉÒÔ!/Cancel",});
+	CreateTaskSay({format("<dec><npc>C¸c h¹ ®· nép %d Lång ®Ìn kĞo qu©n!", nCurCount),  "§­îc!/Cancel",});
 end
 
 -- ÉèÖÃÉÏ½»ÊıÄ¿
@@ -404,9 +404,9 @@ function FireworksOnTimeout(nIndex)
 	for i = 1, nPlayerCount do
 		PlayerIndex = tbAllPlayer[i];
 		if ST_IsTransLife() ~= 1 and GetLevel() < 50 then
-			Msg2Player("ĞèÒª50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯!");
+			Msg2Player("Ph¶i cÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng!");
 		else
-			tbAwardTemplet:GiveAwardByList({nExp = 1000000}, "[ÖĞÇï»î¶¯][ÑÌ»¨Áì¾­Ñé]");	
+			tbAwardTemplet:GiveAwardByList({nExp = 1000000}, "[Ho¹t ®éng trung thu][Ph¸o hoa nhËn kinh nghiÖm]");	
 		end
 	end	
 	

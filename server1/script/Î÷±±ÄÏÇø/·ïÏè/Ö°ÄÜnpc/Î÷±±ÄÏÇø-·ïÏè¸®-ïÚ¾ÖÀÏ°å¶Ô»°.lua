@@ -14,9 +14,9 @@ function main(sel)
 	else
 		i = random(0,1)
 		if (i == 0) then
-Say("ïÚ¾ÖÀÏ°å£º°³ÃÇË«Ó¥ïÚ¾ÖÔÚÎ÷±±Ò»´øµÄºÚ°×Á½µÀ¶¼ÓĞÅóÓÑ£¬ËùÒÔ±£ïÚ´ÓÎŞÉÁÊ§£¬Õâ¿¿µÄÈ«¶¼ÊÇ½­ºşÉÏÅóÓÑµÄÃæ×Ó£¡",0)
+Say("Song ¦ng tiªu côc chóng ta ë T©y B¾c, b¹n bÌ tèt xÊu ®Òu cã. V× vËy c«ng viÖc b¶o Tiªu kh«ng thÊt tho¸t, còng nhê vµo sù nÓ mÆt cña b¹n bÌ trªn giang hå ",0)
 		else
-Say("ïÚ¾ÖÀÏ°å£º°³ÃÇ³ÔïÚĞĞ·¹µÄÈË£¬³ıÁËÕæ¹¦·ò£¬È«¿¿ºÚ°×Á½µÀµÄÅóÓÑÃÇÉÍÁ³£¬Õâ¡®½»Çé¡¯¶ş×Ö£¬ÓĞÊ±±ÈÕæµ¶ÕæÇ¹µÄ¹¦·ò»¹Òª½ôĞ©¡£", 0)
+Say("Chóng ta lµ nh÷ng ng­êi b¶o Tiªu, ngoµi kh¶ n¨ng cßn ph¶i dùa vµo hai ch÷ 'giao t×nh' víi b»ng h÷u trªn giang hå. Cã lóc cßn hiÖu qu¶ h¬n rÊt nhiÒu", 0)
 		end;
 	end
 end

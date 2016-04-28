@@ -57,15 +57,15 @@ end
 function tbBirthday0905:IsPlayerEligible()
 	
 	if self.nMinLevel and (GetLevel() < self.nMinLevel and ST_IsTransLife() ~= 1) then
-		return nil, format("ÀÛ»ı²»¹» %d.", self.nMinLevel)
+		return nil, format("CÊp tİch lòy kh«ng ®ñ %d.", self.nMinLevel)
 	end
 	
 	if self.nMaxLevel and (GetLevel() > self.nMaxLevel and ST_IsTransLife() ~= 1) then
-		return nil, format("ÀÛ»ı³¬¹ı %d.", self.nMaxLevel)
+		return nil, format("CÊp tİch lòy v­ît qu¸ %d.", self.nMaxLevel)
 	end
 	
 	if self.bIsCharged and self.bIsCharged == 1 and IsCharged() ~= 1 then
-		return nil, "Äú»¹Î´Ìî×ÊÁÏ!"
+		return nil, "§¹i hiÖp vÉn ch­a n¹p thÎ µ!"
 	end
 	return 1
 end
@@ -87,14 +87,14 @@ function tbBirthday0905:buy_tougu()
 	local ndate = tonumber(GetLocalDate("%y%m%d%H%M"));
 	if (self:IsActDate()) then
 		if GetCash() < self.ntonggu_cost then
-			Say(format("½Ö±ßĞ¡··: Ç®²»¹», ÎÒĞèÒª %d Á½.", self.ntonggu_cost),0)
+			Say(format("B¸n rong: Hµng trang kh«ng ®ñ tiÒn, ta cÇn %d l­îng.", self.ntonggu_cost),0)
 			return
 		end
 		Pay(self.ntonggu_cost)
 		local n_itemidx = AddItem(6,1,2067,1,0,0);
 		ITEM_SetExpiredTime(n_itemidx, self.tbTask.item_expiredtime1);
 		SyncItem(n_itemidx);
-		local szstr = format("¹§Ï²ÄúµÃµ½ %s", "Í­¹Ä")
+		local szstr = format("Chóc mõng ®¹i hiÖp nhËn ®­îc %s", "§ång Cæ")
 		Msg2Player(szstr)
 		
 	end

@@ -2,7 +2,7 @@ Include("\\script\\missions\\citywar_city\\head.lua")
 Include("\\script\\missions\\citywar_city\\camper.lua");
 
 function InitMission()
-	WriteLog(GetLoop()..":±ÈÈü¿ªÊ¼")
+	WriteLog(GetLoop()..": b¾t ®Çu thi ®Êu")
 	ClearMapNpc(221);	--Çå³¡ÄÚnpc
 	--ClearMapObj(221);--Òª²»ÒªÇåÄØ£¿£¿
 	--ClearMapnpc ¾Í²»ÓÃDelNPcÁË°É
@@ -29,15 +29,15 @@ function InitMission()
 	NpcId2 = AddNpc(STONENPCID1, STONELEVEL1, SubWorld, StonePos[2].x, StonePos[2].y, 1, GetGamerName(1)..StonePos[2].Name, 1);
 	NpcId3 = AddNpc(STONENPCID1, STONELEVEL1, SubWorld, StonePos[3].x, StonePos[3].y, 1, GetGamerName(1)..StonePos[3].Name, 1);
 
-	WriteLog("Ôö¼ÓÊ¯Öù"..NpcId1);
-	WriteLog("Ôö¼ÓÊ¯Öù"..NpcId2);
-	WriteLog("Ôö¼ÓÊ¯Öù"..NpcId3);
+	WriteLog("Gia t¨ng th¹ch trô "..NpcId1);
+	WriteLog("Gia t¨ng th¹ch trô "..NpcId2);
+	WriteLog("Gia t¨ng th¹ch trô "..NpcId3);
 
 	SetNpcCurCamp(NpcId1, 1) ;
 	SetNpcCurCamp(NpcId2, 1) ;
 	SetNpcCurCamp(NpcId3, 1) ;
 	
-	WriteLog("°²×°Ô­±¾¹ÊÕÏ")
+	WriteLog("Cµi ®Æt b¶n gèc ®· chÕt")
 	SetNpcDeathScript(NpcId1, "\\script\\missions\\citywar_city\\symboldeath1.lua");
 	SetNpcDeathScript(NpcId2, "\\script\\missions\\citywar_city\\symboldeath2.lua");
 	SetNpcDeathScript(NpcId3, "\\script\\missions\\citywar_city\\symboldeath3.lua");
@@ -47,9 +47,9 @@ function InitMission()
 	DoorId2 = AddNpc(DOORNPCID, DOORLEVEL, SubWorld, DoorPos[2].x, DoorPos[2].y, 1, DoorPos[2].Name, 1);
 	DoorId3 = AddNpc(DOORNPCID, DOORLEVEL, SubWorld, DoorPos[3].x, DoorPos[3].y, 1, DoorPos[3].Name, 1);
 
-	WriteLog("Ôö¼Ó³ÇÃÅ"..DoorId1);
-	WriteLog("Ôö¼Ó³ÇÃÅ"..DoorId2)
-	WriteLog("Ôö¼Ó³ÇÃÅ"..DoorId3)
+	WriteLog("Gia t¨ng cæng thµnh"..DoorId1);
+	WriteLog("Gia t¨ng cæng thµnh"..DoorId2)
+	WriteLog("Gia t¨ng cæng thµnh"..DoorId3)
 	
 	SetNpcCurCamp(DoorId1, 1) ;
 	SetNpcCurCamp(DoorId2, 1) ;
@@ -68,17 +68,17 @@ function InitMission()
 		local nDoctIdx = AddNpc(DOCTORNPCID, 1, SubWorld, DoctorPos[i][1],DoctorPos[i][2], 1, DoctorPos[i][3]);
 		SetNpcScript(nDoctIdx, "\\script\\missions\\citywar_city\\chengzhan_map\\yaoshang.lua");
 	end;
-	--°µµÀÊØÎÀ
-	local nAndaoIdx = AddNpc(48, 1, SubWorld, 1597 * 32, 3470 * 32, 1, "°µµÀÊØÎÀ");
+	--§Þa ®¹o vÖ thñ
+	local nAndaoIdx = AddNpc(48, 1, SubWorld, 1597 * 32, 3470 * 32, 1, "§Þa ®¹o vÖ thñ");
 	SetNpcScript(nAndaoIdx, "\\script\\missions\\citywar_city\\chengzhan_map\\andaoshouwei.lua");
-	--´¢ÎïÏä
-	local nChuwuIdx = AddNpc(625, 1, SubWorld, 1534*32, 3240*32, 1, "´¢ÎïÏä");
+	--R­¬ng chøa ®å
+	local nChuwuIdx = AddNpc(625, 1, SubWorld, 1534*32, 3240*32, 1, "R­¬ng chøa ®å");
 	SetNpcScript(nChuwuIdx, "\\script\\missions\\citywar_city\\chengzhan_map\\chuwuxiang.lua");
-	nChuwuIdx = AddNpc(625, 1, SubWorld, 1882*32, 3582*32, 1, "´¢ÎïÏä");
+	nChuwuIdx = AddNpc(625, 1, SubWorld, 1882*32, 3582*32, 1, "R­¬ng chøa ®å");
 	SetNpcScript(nChuwuIdx, "\\script\\missions\\citywar_city\\chengzhan_map\\chuwuxiang.lua");
 	--¼ÓÔØNPC
 	
-	WriteLog("Çå³ýÕÏ°­");
+	WriteLog("Thanh trõ ch­íng ng¹i");
 	for i = 1, getn(ObstaclePos) do 
 		CreateObstacle(ObstaclePos[i][1], ObstaclePos[i][2]);
 	end;
@@ -87,7 +87,7 @@ function InitMission()
 	SetMissionS(1, Tong1);
 	SetMissionS(2, Tong2);
 
-	logstr = format("%s: %s³ÇÒÑ¾­´òÏì¹¥³ÇÕ½! ·ÀÊØ·½ÊÇ£º %s %s", date("%m%d-%H:%M"), GetGameCity(), Tong2, Tong1);
+	logstr = format("%s: %s thµnh ®· më c«ng thµnh chiÕn! Bªn phßng thñ lµ: %s %s", date("%m%d-%H:%M"), GetGameCity(), Tong2, Tong1);
 	WriteLog(logstr);
 	
 	--¼Æ·ÖÅÆÏÔÊ¾
@@ -96,7 +96,7 @@ function InitMission()
 	BT_SetView(PL_KILLPLAYER);--É±Íæ¼ÒÊýÄ¿
 	BT_SetView(PL_BEKILLED);--±¾Íæ¼Ò±»É±´ÎÊý
 	BT_SetView(PL_MAXSERIESKILL);--Á¬Õ¶´ÎÊý
-	BT_SetMissionName("¹¥³ÇÕ½");
+	BT_SetMissionName("C«ng Thµnh ChiÕn");
 	BT_SetGameData(GAME_BATTLEID, MISSIONID);--ÉèÖÃÕ½ÒÛµÄID£¬ÒÔmissionidÇø±ð
 	ResetBonus()
 	--¼Æ·ÖÅÆÏÔÊ¾
@@ -111,7 +111,7 @@ end;
 
 function RunMission()
 	SetMissionV(MS_STATE, 2)
-	str = format("%s ¹¥³ÇÕ½ÕýÊ½¿ªÊ¼!ÊØ³Ç·½ÊÇ£º%s, ÌôÕ½·½ÊÇ£º%s. Ë­»áÈ¡µÃ×îÖÕÊ¤Àû?", GetGameCity(), GetGamerName(1), GetGamerName(2));
+	str = format("%s c«ng thµnh chiÕn chÝnh thøc b¾t ®Çu! Bªn thñ thµnh lµ %s, bªn khiªu chiÕn lµ %s. Ai sÏ giµnh th¾ng lîi chung cuéc ®©y?", GetGameCity(), GetGamerName(1), GetGamerName(2));
 	AddGlobalNews(str);
 end;
 
@@ -176,7 +176,7 @@ end;
 function OnLeave(RoleIndex)
 	local oldPlayer = PlayerIndex;
 	PlayerIndex = RoleIndex;
-	str2 = GetName().."Àë¿ªÕ½³¡, ";
+	str2 = GetName().."Rêi khái chiÕn tr­êng, ";
 	SetFightState(0)
 	--SetLogoutRV(0);
 	SetCreateTeam(1);

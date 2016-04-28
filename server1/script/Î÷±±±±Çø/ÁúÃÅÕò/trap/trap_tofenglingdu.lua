@@ -7,6 +7,6 @@ function main(sel)
 		NewWorld(336, 1119, 3192);
 		AddTermini(224);
 	else
-		Talk(1,"","Ç°·½Î£ÏÕ£¡»¹ÊÇ»ØÈ¥Á·ÏÂ¹¦°É!")
+		Talk(1,"","Phİa tr­íc nguy hiÓm! Xin h·y quay vÒ rÌn luyÖn thªm!")
 	end
 end;

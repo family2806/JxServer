@@ -27,7 +27,7 @@ function ComputeAmuletWorth(nCount)
 	local wnum = 0
 
 	if(nCount == 0) then
-		Talk(1, "GiveUIForThing", "<#>É¶¶¼²»¸ø£¬ÄãÏë¸ÉÉ¶Ñ½¡£")
+		Talk(1, "GiveUIForThing", "<#> C¸i g× còng kh«ng ®­a, ng­¬i muèn lµm g× ®©y!")
 		return nil
 	end
 	for i=1, nCount do
@@ -35,13 +35,13 @@ function ComputeAmuletWorth(nCount)
 		local g, d, p, l, f = GetItemProp(itemIdx)
 
 		if((g ~= 4 or (d < 508 or d > 518)) and (g ~= 0 or (d~=2 and d~=6 ))) then --´íÎóµÀ¾ß  
-			Talk(1, "GiveUIForThing", "<#>Äã¸øµÄÊÇÏºÃ×¶«Î÷Ñ½£¬Õ¦¿´²»¶®à¿£¿")
+			Talk(1, "GiveUIForThing", "<#> Ng­¬i ®­a cho ta c¸i qu¸i g× thÕ nµy?")
 			return nil
 		end
 		if(g == 0) then -- ÎäÆ÷
 			wnum = wnum + 1
 			if (wnum > 1) then	--Ö»ÄÜ·ÅÒ»¼ş×°±¸
-				Talk(1, "GiveUIForThing", "<#>ÕâÃ´¶à×°±¸£¬ÎÒ²»ÊÇÀ¬»øÍ°°¡£¬Ïû»¯²»ÁËÕâÃ´¶à¡­¡­")
+				Talk(1, "GiveUIForThing", "<#> NhiÒu trang bŞ qu¸ sao ta lµm kŞp ®©y?……")
 				return nil
 			end
 			det = d
@@ -52,7 +52,7 @@ function ComputeAmuletWorth(nCount)
 			function checkGiftCount(idx,count)  --¼ì²âÉñÃØµÀ¾ßµÄÊıÁ¿
 				local num = GetItemStackCount(idx)
 				if(count + num > MAXGIVENUM) then -- ÊıÁ¿Ì«¶à
-					Talk(1,"GiveUIForThing", "<#>Äã¸øµÄ¶«Î÷Ì«¶à£¬¿´²»Çå°¡¡£")
+					Talk(1,"GiveUIForThing", "<#> §å ng­¬i cho nhiÒu qu¸, nh×n kh«ng râ g× hÕt!")
 					return nil
 				end
 				return num
@@ -73,11 +73,11 @@ function ComputeAmuletWorth(nCount)
 		end
 	end
 	if(worth ==0) then
-		Talk(1, "GiveUIForThing", "<#>¶Ô²»Æğ£¬ÖÁÉÙĞèÒªÒ»¸ö¼¦ÄêÉñÃØÀñÎï¡£")
+		Talk(1, "GiveUIForThing", "<#> Xin lçi! İt nhÊt cÇn mét LÔ vËt n¨m DËu.")
 		return nil
 	end
 	if (wnum == 0) then
-		Talk(1, "GiveUIForThing", "<#>¶Ô²»Æğ£¬±ØĞëÒªÒ»¼şÒÂ·ş£¨»òÑü´ø£©¡£")
+		Talk(1, "GiveUIForThing", "<#> Xin lçi! CÇn ph¶i cã mét y phôc (hoÆc th¾t l­ng) .")
 		return nil
 	end
 
@@ -105,7 +105,7 @@ function ConvertAmulet(nCount)
 	--ÒÑ¾­µÃµ½ºÏÀíµÄ¼ÛÖµÁ¿£¬É¾³ıËùÓĞÎïÆ·£¬Ñ¡Ôñ¶ÔÓ¦µÄ½±Àø
 	local idx = Convert:convertamulet(worth, five)
 	if(not idx) then --Ê§°Ü£¬Ã»ÓĞÑ¡³öÈÎºÎ¶«Î÷
-		Talk(1,"GiveUIForThing", "<#>ÔõÃ´»áÊ§°Ü°¡£¬²»¿ÉÄÜ£¡£¡ÕâÔõÃ´»ØÊÂ£¿ÖØÀ´¡¢ÖØÀ´¡­¡­")
+		Talk(1,"GiveUIForThing", "<#> Sao l¹i thÊt b¹i? Kh«ng thÓ nµo! Lµm l¹i ®i")
 		return
 	end
 
@@ -150,10 +150,10 @@ function PayAmulet(bonusIdx, det, par, level, five)
 						Convert.__amulettabfile:getCell(TF_BONUS_P6,bonusIdx),
 						Convert.__amulettabfile:getCell(TF_BONUS_P7,bonusIdx))
 	SetRandSeed(_nSeed)
-	WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-			"£¬¶Ò»»µÃµ½"..amuletmsg[par + 1][level].."£¬¼ÛÖµÁ¿Îª£º"..
+	WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+			", ®æi ®­îc"..amuletmsg[par + 1][level]..", gi¸ trŞ lµ:"..
 			Convert.__amulettabfile:getCell(TF_BONUS_WORTH,bonusIdx))
-	Talk(1, "", "<#>ÄãºÏ³É³öÁËÒ»¼ş"..amuletmsg[par + 1][level])
-	Msg2Player("Äã»ñµÃÒ»¼ş"..amuletmsg[par + 1][level])
+	Talk(1, "", "<#>B¹n hîp thµnh ®­îc 1 "..amuletmsg[par + 1][level])
+	Msg2Player("B¹n nhËn ®­îc 1 "..amuletmsg[par + 1][level])
 	return
 end

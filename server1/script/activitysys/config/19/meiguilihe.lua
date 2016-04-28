@@ -11,7 +11,7 @@ function main()
 		return 1
 	end
 	
-	if pActivity:CheckTask(MeiGuiLiHeAndXiangSiLiHeExpLimit,1000000000,"Í¨¹ıÃµ¹åÀñºĞÒÔ¼°ÏàË¼ÀñºĞ»ñµÃ×Ü¾­ÑéÒÑ´ïÉÏÏŞ","<") ~= 1 then
+	if pActivity:CheckTask(MeiGuiLiHeAndXiangSiLiHeExpLimit,1000000000,"Th«ng qua LÔ Hép Hoa Hång vµ LÔ Hép T­¬ng T­ nhËn ®ùîc tæng kinh nghiÖm ®· ®¹t ®Õn giíi h¹n","<") ~= 1 then
 		return 1
 	end
 	
@@ -19,7 +19,7 @@ function main()
 	{
 		{nExp_tl = 5000000},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "2011ÄêÇéÈË½Ú,´ò¿ªÇéÈËÀñºĞ")
+	tbAwardTemplet:GiveAwardByList(tbAward, "LÔ T×nh Nh©n n¨m 2011, më LÔ Hép T×nh Nh©n")
 	pActivity:AddTask(MeiGuiLiHeAndXiangSiLiHeExpLimit,5000000)
 	
 end

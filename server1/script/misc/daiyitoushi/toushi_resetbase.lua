@@ -90,8 +90,8 @@ function toushiResetBase()
 		AddVit(TB_TOUSHI_PLAYERBASE[nSeries].iouter - nCurVit);
 		AddEng(TB_TOUSHI_PLAYERBASE[nSeries].iinside - nCurEng);
 		
-		Msg2Player("´óÏÀµÄÑªÁ¿ºÍÄÚÁ¦×î¸ßÉÏÏŞÒÑ±»¸ü¸Ä£¬Çëµ÷ÕûÇ±ÄÜÖµ");
-		Say("´óÏÀµÄÑªÁ¿ºÍÄÚÁ¦×î¸ßÉÏÏŞÒÑ±»¸ü¸Ä£¬Çëµ÷ÕûÇ±ÄÜÖµ", 0);
+		Msg2Player("Giíi h¹n sinh lùc vµ néi lùc cao nhÊt cña ®¹i hiÖp ®· bŞ chØnh söa, xin h·y ®iÒu chØnh l¹i ®iÓm tiÒm n¨ng");
+		Say("Giíi h¹n sinh lùc vµ néi lùc cao nhÊt cña ®¹i hiÖp ®· bŞ chØnh söa, xin h·y ®iÒu chØnh l¹i ®iÓm tiÒm n¨ng", 0);
 		
 		local nCurLift	= GetLife();
 		local nCurMana	= GetMana();

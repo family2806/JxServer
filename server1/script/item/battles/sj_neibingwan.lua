@@ -2,5 +2,5 @@ Include( "\\script\\item\\checkmapid.lua" )
 
 function EatMedicine()
 	AddSkillState( 481, 10, 0, 3240);
-	Msg2Player("你吃了一个内冰丸");
+	Msg2Player("B筺 頲 1 vi猲 N閕 B╪g ho祅");
 end

@@ -39,10 +39,10 @@ tabKill = new(KTabFileEx, "\\settings\\task\\random\\rate_kill.txt", "KillTable"
 tabNext = new(KTabFileEx, "\\settings\\task\\random\\rate_nexttask.txt", "NextTable");
 
 stuTaskFile = {
-	["¶Ô»°ÈÎÎñ"] = tabTalk,
-	["ÊÕ¼¯ÈÎÎñ"] = tabColl,
-	["Õ¹Ê¾ÈÎÎñ"] = tabShow,
-	["É±¹ÖÈÎÎñ"] = tabKill,
+	["NhiÖm vô §èi tho¹i "] = tabTalk,
+	["NhiÖm vô thu thËp "] = tabColl,
+	["hiÓn thŞ nhiÖm vô "] = tabShow,
+	["NhiÖm vô S¸t qu¸i "] = tabKill,
 }
 
 -- ÈÎÎñ±äÁ¿¶¨Òå
@@ -92,7 +92,7 @@ local nTaskID_Wait = createRandomTask();
 		SyncTaskValue(ID_RANDOMTASK_WAIT);
 		
 		setRandomTaskState(1);
-		TaskTip("Äã½Óµ½ÁËÒ»¸öËæ»úÈÎÎñ");
+		TaskTip("B¹n nhËn ®­îc mét nhiÖm vô ngÉu nhiªn");
 		
 		-- ÉèÖÃÍ¬°éµÄÍ·¶¥ÏÔÊ¾×´Ì¬£¬50 Ãë
 		PARTNER_AddState(partnerindex, 662, 1, 50);
@@ -115,7 +115,7 @@ function createRandomTask()
 		-- ·µ»Ø¸ÃÈÎÎñµÄ ID
 		return nTaskID;
 	else
-		CDebug:MessageOut("»ñÈ¡Ëæ»úÈÎÎñÊ§°Ü£¬Çë¼ìÔÄÅäÖÃ¼°½Å±¾ÎÄ¼ş£¡");
+		CDebug:MessageOut("nhiÖm vô ngÉu nhiªn bŞ thÊt b¹i, h·y xem kü l¹i!");
 		return 0;
 	end;
 
@@ -128,7 +128,7 @@ function selectType()
 	local nLevel   = getTaskLevel();
 	local nRow     = tabMainType:countArrayRate("Rate"..nLevel);
 	local strType  = tabMainType:getCell("TaskType", nRow);
-	CDebug:MessageOut("Ëæ»úÈÎÎñ£ºÑ¡Ôñµ½ÁËÒ»¸öÈÎÎñÀàĞÍ£º"..strType);
+	CDebug:MessageOut("Lùa chän lo¹i nhiÖm vô:"..strType);
 	return strType;
 end;
 
@@ -139,7 +139,7 @@ function selectTask(strType)
 	local nLevel   = getTaskLevel();
 	local nRow     = stuTaskFile[strType]:countArrayRate("Rate"..nLevel);
 	local taskName = stuTaskFile[strType]:getCell("TaskName", nRow);
-	CDebug:MessageOut("Ëæ»úÈÎÎñ£ºÑ¡Ôñµ½ÁËÒ»¸ö¾ßÌåµÄÈÎÎñÃû³Æ£º"..taskName);
+	CDebug:MessageOut("Lùa chän tªn nhiÖm vô cô thÓ:"..taskName);
 	return taskName;
 end;
 

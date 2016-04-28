@@ -11,15 +11,15 @@ function want_playboat()
 	local startboat = 0
 	local blevel = 0
 	if (IsCaptain() ~= 1) then
-		Say("¶Ô²»Æğ£¡Ö»ÓĞ¶Ó³¤²ÅÓĞ×Ê¸ñ±¨Ãû²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ¡¯",0)
+		Say("Xin lçi! CÇn ph¶i lµ §éi tr­ëng míi cã t­ c¸ch b¸o danh tham gia 'NhiÖm vô Th¸ch thøc thêi gian'",0)
 		return
 	end
 	if (GetTeamSize() < 4) then
-		Say("¶Ô²»Æğ£¡²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ¡¯×îÉÙÒªÓĞ<color=red>4<color> ÈË!",0)
+		Say("Xin lçi! §éi tham gia 'NhiÖm vô Th¸ch thøc thêi gian' cÇn ph¶i cã İt nhÊt <color=red>4<color> ng­êi!",0)
 		return
 	end
 	if(GetLevel() < 50) then
-		Say("¶Ô²»Æğ£¡50¼¶ÒÔÏÂ²»ÄÜ²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ.",0);
+		Say("Xin lçi! §¼ng cÊp d­íi 50 kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.",0);
 		return
 	end
 	if (GetLevel() >= 90) then
@@ -30,8 +30,8 @@ function want_playboat()
 		PlayerIndex = GetTeamMember(i)
 		local bmbrlevel = 0
 		if(GetLevel() < 50) then
-			Say("¶Ô²»Æğ£¡50¼¶ÒÔÏÂ²»ÄÜ²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ.",0);
-			Msg2Team("¶Ô²»Æğ£¡ÄãµÄ¶ÓÎéÖĞÓĞÈËµÍÓÚ50¼¶£¬²»ÄÜ²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ.");
+			Say("Xin lçi! §¼ng cÊp d­íi 50 kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.",0);
+			Msg2Team("Xin lçi! Trong ®éi b¹n cã thµnh viªn d­íi cÊp 50, kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.");
 			return
 		end
 		if (GetLevel() >= 90) then
@@ -40,12 +40,12 @@ function want_playboat()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" ²»ºÃÒâË¼£¡Äã¶ÓÎéÖĞÓĞÈË³¬¹ı<color=red>90¼¶<color>,Çë¼ì²éºóÔÙ±¨Ãû!",0)
-				Msg2Team("Äã¶ÓÎéÖĞÓĞÈËÔÚ90¼¶ÒÔÉÏ£¬Çë¼ì²éÖ®ºóÔÙ±¨Ãû!");
+				Say(" Xin lçi! Trong ®éi b¹n cã thµnh viªn v­ît <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
 				return
 			else
-				Say("²»ºÃÒâË¼£¡Äã¶ÓÎéÖĞÓĞÈË³¬¹ı<color=red>90¼¶<color>, Çë¼ì²éºóÔÙ±¨Ãû!",0)
-				Msg2Team("Äã¶ÓÎéÖĞÓĞÈËÔÚ90¼¶ÒÔÉÏ£¬Çë¼ì²éÖ®ºóÔÙ±¨Ãû!");
+				Say("Xin lçi! Trong ®éi b¹n cã thµnh viªn ch­a ®¹t <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
 				return
 			end
 		end
@@ -70,21 +70,21 @@ function want_playboat()
 	--print("total"..totalboat.."free"..freeboat)
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "³õ¼¶ÌôÕ½Ê±¼äÈÎÎñ"
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp "
 	else
-		strlevel = "¸ß¼¶ÌôÕ½Ê±¼äÈÎÎñ"
+		strlevel = " 'NhiÖm vô Th¸ch thøc thêi gian' Cao cÊp "
 	end
 	
 	if (startboat == 1) then
 		if (freeboat == 0) then
-			Say("´ËÇøÓò"..strlevel.."ÒÑ¿ªÊ¼. Ã»ÓĞµØ·½ÁË",0)
+			Say("Khu vùc nµy"..strlevel.."®· b¾t ®Çu. Kh«ng cßn chç n÷a….",0)
 			return
 		else
-			Say("´ËÇøÓò"..strlevel.."ÈüÁúÖÛ±¨Ãû½×¶Î£¬»¹ÓĞ<color=red>"..freeboat.."<color>Ò»¿éÃâ·Ñ°æÍ¼£¬Ê±¼äÌôÕ½Òª½»<color=red>1 Íò<color> ÒøÁ½, ÄãÒª²Î¼ÓÂğ?",2, "ÊÇµÄ£¡ÎÒÏë´úÀíÎÒÃÇ¶Ó²Î¼Ó./dragon_join", "²»ĞèÒª/onCancel")
+			Say("Khu vùc nµy"..strlevel.."giai ®o¹n b¸o danh ®ua thuyÒn rång, vÉn cßn <color=red>"..freeboat.."<color>Mét b¶n ®å nhiÖm vô miÔn phİ, thêi gian khiªu chiÕn cÇn ph¶i giao <color=red>1 v¹n<color> ng©n l­îng, ng­¬i muèn tham gia kh«ng?",2, "Ph¶i! Ta muèn dÉn d¾t ®éi cña ta tham gia./dragon_join", "Kh«ng cÇn/onCancel")
 			return
 		end
 	else
-		Say("²»ºÃÒâË¼£¡´ËÇøÓò"..strlevel.."ÏÖÔÚÃ»ÓĞÌôÕ½Ê±¼äÈÎÎñ.±¨ÃûÔÚ<color=red>Ã¿¸öÕûµã<color>¿ªÊ¼£¬ÊÇ".. TIME_SIGNUP .."·Ö£¬Çë×¢ÒâÏµÍ³Í¨Öª.",0)
+		Say("Xin lçi! Khu vùc nµy"..strlevel.."HiÖn t¹i kh«ng cã nhiÖm vô khiªu chiÕn thêi gian ®Ó tham gia. B¸o danh vµo  <color=red>®óng mçi tiÕng ®ång hç<color> b¾t ®Çu, lµ".. TIME_SIGNUP .."phót, xin h·y l­u ı th«ng b¸o cña hÖ thèng.",0)
 		return
 	end
 	
@@ -99,25 +99,25 @@ function dragon_join()
 	end
 	if(GetTask(1551) == nNowDate) then
 		if (GetTask(1550) <= 0) then
-			Say("Äôs³¾: ½ñÌìµÄÌôÕ½ÈÎÎñÒÑ¾­Íê³ÉÁË£¬Ã÷ÌìÔÙÀ´°É.",0);
+			Say("NhiÕp Thİ TrÇn: H«m nay nhiÖm vô th¸ch ®Êu ®· lµm hÕt råi, ®îi ngµy mai h·y ®Õn l¹i.",0);
 			return
 		end
 	end
 	if (IsCaptain() ~= 1) then
-		Say("²»ºÃÒâË¼£¡Òª¶Ó³¤²ÅÓĞ×Ê¸ñ±¨Ãû²Î¼ÓÌôÕ½Ê±¼äÈÎÎñ",0)
+		Say("Xin lçi! CÇn ph¶i lµ §éi tr­ëng míi cã t­ c¸ch b¸o danh tham gia 'NhiÖm vô Th¸ch thøc thêi gian'",0)
 		return
 	end
 	if(GetLevel() < 50) then
-		Say("²»ºÃÒâË¼£¡50¼¶ÒÔÏÂ²»ÄÜ²Î¼ÓÌôÕ½Ê±¼äÈÎÎñ.",0);
+		Say("Xin lçi! §¼ng cÊp d­íi 50 kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.",0);
 		return
 	end
 	if (GetTeamSize() < 4) then
-		Say("²»ºÃÒâË¼£¡²Î¼ÓÌôÕ½Ê±¼äÈÎÎñ¡¯µÄ¶Ó×îÉÙÒªÓĞ<color=red>4<color> ÈË!",0)
+		Say("Xin lçi! §éi tham gia 'NhiÖm vô Th¸ch thøc thêi gian' cÇn ph¶i cã İt nhÊt <color=red>4<color> ng­êi!",0)
 		return
 	end
 	
 	if (GetCash() < 10000) then
-		Say("²Î¼ÓÌôÕ½Ê±¼äÈÎÎñÒª<color=red>1ÍòÁ½<color>. ×¼±¸¹»Ç®ÔÙÀ´°É!", 0)
+		Say("Tham gia nhiÖm vô “Th¸ch thøc thêi gian” cÇn <color=red>1v¹n l­îng<color>. ChuÈn bŞ ®ñ tiÒn råi h·y quay l¹i!", 0)
 		return
 	end
 	
@@ -129,14 +129,14 @@ function dragon_join()
 		local MemberNowDate = tonumber(GetLocalDate("%y%m%d"));
 		if(GetTask(1551) == MemberNowDate) then
 			if(GetTask(1550) <= 0) then
-				Say("Ã¿ÌìÖ»ÄÜ²Î¼Ó1´ÎÌôÕ½Ê±¼äÈÎÎñ¡£Äã¶Ó²Î¼ÓµÄ´ÎÊıÒÑ¾­¹»ÁË£¡Ã÷ÌìÔÙÀ´°É£¡",0);
-				Msg2Team("Ã¿ÌìÖ»ÄÜ²Î¼Ó1´ÎÌôÕ½Ê±¼äÈÎÎñ¡£Äã¶Ó²Î¼ÓµÄ´ÎÊıÒÑ¾­¹»ÁË£¡Ã÷ÌìÔÙÀ´°É£¡");
+				Say("NhiÖm vô Th¸ch thøc thêi gian mçi ngµy chØ ®­îc tham gia 1 lÇn. Sè lÇn tha gia cña tæ b¹n ®· ®ñ! Ngµy mai trë l¹i nhĞ!",0);
+				Msg2Team("NhiÖm vô Th¸ch thøc thêi gian mçi ngµy chØ ®­îc tham gia 1 lÇn. Sè lÇn tha gia cña tæ b¹n ®· ®ñ! Ngµy mai trë l¹i nhĞ!");
 				return
 			end
 		end
 		if(GetLevel() < 50) then
-			Say("²»ºÃÒâË¼£¡50¼¶ÒÔÏÂ²»ÄÜ²Î¼ÓÌôÕ½Ê±¼äÈÎÎñ.",0);
-			Msg2Team("²»ºÃÒâË¼£¡Äã¶ÓÎéÖĞÓĞÈËµÍÓÚ50¼¶£¬²»ÄÜ²Î¼Ó¡®ÌôÕ½Ê±¼äÈÎÎñ.");
+			Say("Xin lçi! §¼ng cÊp d­íi 50 kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.",0);
+			Msg2Team("Xin lçi! Trong ®éi b¹n cã thµnh viªn d­íi cÊp 50, kh«ng thÓ tham gia 'NhiÖm vô Th¸ch thøc thêi gian'.");
 			return
 		end
 		if (GetLevel() >= 90) then
@@ -145,12 +145,12 @@ function dragon_join()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" ²»ºÃÒâË¼£¡ÄãµÄ¶ÓÎéÖĞÓĞÈË³¬¹ı<color=red>90¼¶<color>, Çë¼ì²éºóÔÙ±¨Ãû!",0)
-				Msg2Team("ÄãµÄ¶ÓÎéÖĞÓĞÈËÔÚ90¼¶ÒÔÉÏ£¬Çë¼ì²éºóÔÙ±¨Ãû!");
+				Say(" Xin lçi! Trong ®éi b¹n cã thµnh viªn v­ît <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
 				return
 			else
-				Say("²»ºÃÒâË¼£¡ÄãµÄ¶ÓÎéÖĞÓĞÈË³¬¹ı<color=red>90¼¶<color>, Çë¼ì²éºóÔÙ±¨Ãû!",0)
-				Msg2Team("ÄãµÄ¶ÓÎéÖĞÓĞÈËÔÚ90¼¶ÒÔÉÏ£¬Çë¼ì²éºóÔÙ±¨Ãû!");
+				Say("Xin lçi! Trong ®éi b¹n cã thµnh viªn ch­a ®¹t <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
 				return
 			end
 		end
@@ -168,12 +168,12 @@ function dragon_join()
 			havesword = CalcEquiproomItemCount( 6, 1, 400, 90 )
 		end
 		if (havesword < 1 and blevel == 0) then
-			Say("Äôs³¾: Çë¼ûÁÂ£¬²Î¼Ó³õ¼¶ÌôÕ½Ê±¼äÈÎÎñµÄ³ÉÔ±ÒªÓĞÒ»¸ö²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë×¼±¸ºÃÖ®ºóÀ´¼ûÎÒ",0)
-			Msg2Team("ÄãµÄ×é¶ÓÖĞÓĞÈËÃ»ÓĞ²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë¼ì²éÖ®ºóÔÙ±¨Ãû²Î¼Ó!")
+			Say("NhiÕp Thİ ThÇn: Xin l­îng thø, tham gia nhiÖm vô khiªu chiÕn thêi gian s¬ cÊp mçi thµnh viªn cÇn ph¶i cã mét S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 trë xuèng, xin h·y chuÈn bŞ råi h·y ®Õn ®©y gÆp ta",0)
+			Msg2Team("Trong tæ ®éi cña ng­¬i cã ng­êi kh«ng cã S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 trë xuèng , xin  kiÓm tra l¹i råi h·y b¸o danh tham gia !")
 			return
 		elseif (havesword < 1 and blevel == 1) then
-			Say("Äôs³¾: Çë¼ûÁÂ£¬²Î¼Ó¸ß¼¶ÌôÕ½Ê±¼äÈÎÎñµÄ³ÉÔ±ÒªÓĞÒ»¸ö²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë×¼±¸ºÃÖ®ºóÀ´¼ûÎÒ",0)
-			Msg2Team("ÄãµÄ×é¶ÓÓĞÈËÃ»ÓĞ²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë¼ì²éÖ®ºóÔÙ±¨Ãû²Î¼Ó!")
+			Say("NhiÕp Thİ ThÇn: Xin l­îng thø, tham gia nhiÖm vô khiªu chiÕn thêi gian cao cÊp mçi thµnh viªn cÇn ph¶i cã mét S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 , xin h·y chuÈn bŞ råi h·y ®Õn ®©y gÆp ta",0)
+			Msg2Team("Trong tæ ®éi cña ng­¬i cã ng­êi kh«ng cã S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90, xin  kiÓm tra l¹i råi h·y b¸o danh tham gia !")
 			return
 		end
 	end
@@ -264,9 +264,9 @@ function dragon_join()
 	PlayerIndex = OldPlayer
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "³õ¼¶ÌôÕ½Ê±¼äÈÎÎñ"
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp "
 	else
-		strlevel = "¸ß¼¶ÌôÕ½Ê±¼äÈÎÎñ"
+		strlevel = " 'NhiÖm vô Th¸ch thøc thêi gian' Cao cÊp "
 	end
-	Say("²»ºÃÒâË¼£¡ÏÖÔÚÇøÓò <color=red>"..strlevel.."<color>ÒÑ¾­Ã»ÓĞÎ»ÖÃÁË. ÇëµÈÒ»ÏÂ!",0)
+	Say("Xin lçi! HiÖn t¹i khu vùc <color=red>"..strlevel.."<color>®· kh«ng cßn chç. Xin ®îi vßng sau!",0)
 end

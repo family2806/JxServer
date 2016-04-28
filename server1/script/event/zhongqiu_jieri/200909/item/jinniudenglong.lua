@@ -32,7 +32,7 @@ function main(nItemIndex)
 	end
 	local nExpLimit = tb[nTransLifeCount]
 	
-	if not PlayerFunLib:CheckTask(1925,nExpLimit,format("Ã¿ÈËÊ¹ÓÃ[½ğÅ£µÆÁı] ×î¶àÖ»ÄÜ»ñµÃ%u ¾­Ñé",nExpLimit*1e6 ),"<") then
+	if not PlayerFunLib:CheckTask(1925,nExpLimit,format("Mçi nh©n vËt sö dông [Lång ®Ìn kim ng­u] nhiÒu nhÊt chØ nhËn ®­îc %u kinh nghiÖm",nExpLimit*1e6 ),"<") then
 		return 1
 	end
 	PlayerFunLib:AddExp(50000000,0,"MidAutumn,UseGoldDragonLantern ")

@@ -12,7 +12,7 @@ function main()
 	local nWidth, nHeight, nCount = 1,1,2
 	--判断背包空间
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Talk(1, "", format("为保护大侠财产安全, 请整理出 %d %dx%d背包空间", nCount, nWidth, nHeight))
+		Talk(1, "", format("в b秓 m t礽 s秐 c馻 i hi謕, xin h穣  tr鑞g %d %dx%d h祅h trang", nCount, nWidth, nHeight))
 		return 1
 	end
 	

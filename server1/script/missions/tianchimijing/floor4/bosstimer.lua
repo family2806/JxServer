@@ -51,6 +51,6 @@ function GameFloor4:CallBoss()
 	local tbNpc = self.tbNpcTypeList
 	local tbBoss = tbNpc["boss"]
 	self:AddANpc("boss", tbBoss.szPosPath)
-	AddGlobalNews("ÍêÑÕ¹ãÑôÔÚÌì³ØÃØ¾³³öÀ´ÁËÂğ")
-	self:WriteLog(4, "BossÍêÑÕ¹ãÑôÔÚÌì³ØÃØ¾³³öÏÖ")
+	AddGlobalNews("Hoµng Nhan Qu¶ng D­¬ng ë tÇng 4 Thiªn Tr× MËt C¶nh ra ch­a")
+	self:WriteLog(4, "Boss Hoµng Nhan Qu¶ng D­¬ng ë tÇng 4 Thiªn Tr× MËt C¶nh xuÊt hiÖn")
 end

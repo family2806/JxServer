@@ -9,7 +9,7 @@ YueGeMiGuWorld.tbRoomCenterPos = {
 	{51040, 139424},
 }
 YueGeMiGuWorld.szRoomCenterPosFilePath = "\\settings\\maps\\yuegedao\\yuegemigu\\daozhu.txt"
-YueGeMiGuWorld.szMapType = "月歌刀" --改变地图表示
+YueGeMiGuWorld.szMapType = "Nguy謙 Ca Фo" --改变地图表示
 
 YueGeMiGuWorld.tbForbitItemType = --重载 违禁道具
 {

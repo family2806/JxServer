@@ -1,6 +1,6 @@
 -- ====================== Œƒº˛–≈œ¢ ======================
 
--- Ω£œ¿«È‘µÕ¯¬Á∞Ê“ª’Ú≈…¡Èµ§
+-- Ω£œ¿«È‘µÕ¯¬Á∞Ê“ªTr n ph∏i linh Æ¨n
 --  ≥”√∫Ûƒ‹Ã·…˝£±µ„ººƒ‹µ„
 -- ”Î’Ú≈…¡È“©π≤”√±‰¡ø£¨µ⁄“ª∏ˆByteº«¬º¡Èµ§ π”√¥Œ ˝£¨µ⁄∂˛∏ˆByteº«¬º¡È“© π”√¥Œ ˝
 
@@ -18,16 +18,16 @@ TSK_TOUSHI_COUNT			=	1883						-- °∞¥¯“’Õ∂ ¶°±◊™÷∞µƒ¥Œ ˝
 
 function main(nItemIdx)
 --	if (gb_GetModule("SWITH_DAIYITOUSHI") ~= 1) then
---		Say("∂‘≤ª∆£¨∏√π¶ƒ‹‘› ±±ªπÿ¡À£¨¥Úø™ ±º‰ª·‘⁄…‘∫ÚÕ®÷™", 0);
+--		Say("Xin lÁi, c´ng n®ng nµy tπm thÍi Æ∑ bﬁ Æ„ng, thÍi gian mÎ lπi sœ Æ˘oc th´ng b∏o sau ", 0);
 --		return 1;
 --	end
 	
 	local nValue	= GetTask(TSK_ZHENPAILINGDAN_USECNT);
 	local nTimes = GetByte(nValue, 1);
 	local str={
-		"—–æø“ªª·’Ú≈…¡Èµ§ªπ «≤ªª· π”√(Œ¥◊™√≈≈…≤ªƒ‹ π”√)",
-		"∏’∏’∫»ÕÍ’Ú≈…¡Èµ§∏–æı“ªπ…ªÓ¡¶‘⁄…ÌÃÂ¡˜∂Ø(‘ˆº”1∏ˆººƒ‹µ„)",
-		" ÷ƒ√’Ú≈…¡Èµ§∑¢œ÷À¸√ª”–π¶–ß¡À(“— π”√µΩ◊Ó∏ﬂ…œœﬁ¡À)"
+		"Nghi™n c¯u mÈt hÂi tr n ph∏i linh Æ¨n mµ v…n kh´ng bi’t c∏ch sˆ dÙng. (ch≠a chuy”n m´n ph∏i kh´ng th” sˆ dÙng)",
+		"Vıa mÌi uËng xong tr n ph∏i linh Æ¨n c∂m th y mÈt luÂng sinh l˘c chπy quanh ng≠Íi (T®ng 1 Æi”m k¸ n®ng)",
+		"Tay c«m l y tr n ph∏i linh Æ¨n mµ ph∏t hi÷n ra rªng n„ kh´ng cﬂn t∏c dÙng g◊ n˜a (Æ∑ sˆ dÙng Æ’n sË l«n giÌi hπn cao nh t)"
 		}
 	if(nTimes >= 15) then              	--  π”√¥Œ ˝“—¥ÔµΩ…œœﬁ
 		Msg2Player(str[3])
@@ -40,7 +40,7 @@ function main(nItemIdx)
 		SetTask(TSK_ZHENPAILINGDAN_USECNT, SetByte(nValue, 1, nTimes + 1));
 		Msg2Player(str[2]);
 		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tAdd MagicPoint 1 by ZhenPaiLingDan",
-						"’Ú≈…¡Èµ§",
+						"Tr n ph∏i linh Æ¨n",
 						GetLocalDate("%Y-%m-%d %X"),
 						GetName(), GetAccount()));
 		return 0;

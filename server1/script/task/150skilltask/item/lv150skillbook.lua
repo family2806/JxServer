@@ -30,12 +30,12 @@ function main()
 	local SBOOK_150SKILL_TASKSTATE = 14
 	local nFact = GetLastFactionNumber()
 	if nFact == -1 then	
-		Msg2Player("<color=yellow>ÄãÎ´¼ÓÈëÈÎºÎ°ïÅÉ£¬²»ÄÜÑ§¸ÃÒª¾÷! <color>");
+		Msg2Player("<color=yellow>Ng­¬i vÉn ch­a gia nhËp m«n ph¸i nµo, kh«ng thÓ häc yÕu quyÕt nµy! <color>");
 		return 1
 	end
 	
 	if GetLevel() < 150 then
-		Msg2Player("<color=yellow>ÄãµÄµÈ¼¶µÍÓÚ150£¬²»ÄÜÑ§Òª¾÷! <color>");
+		Msg2Player("<color=yellow>§¼ng cÊp cña ng­¬i thÊp h¬n 150, kh«ng thÓ häc yÕu quyÕt nµy! <color>");
 		return 1
 	end
 	
@@ -53,7 +53,7 @@ function main()
 			if nFlag == 1 then
 				szMsg = format("%s,", szMsg)
 			else
-				szMsg = "ÄãÒÑÑ§µ½"
+				szMsg = "Ng­¬i ®· häc råi"
 			end
 			szMsg = format("%s%s", szMsg, GetSkillName(nSkillId))
 			nFlag = 1
@@ -62,7 +62,7 @@ function main()
 	SetTask(TSK_LV150_SKILL, SBOOK_150SKILL_TASKSTATE*100+sbook_factstep_list[nFact])
 	if szMsg == "" then
 		--Fix ´íÎótext - Modified By DinhHQ - 20111025
-		szMsg = "ÄãÒÑÑĞ¾¿Áì»áµ½ÎäÑ§£¬ÏñÊÇ²»ÄÜ´ïµ½µÄÒ»²½ĞÂÍ»ÆÆ"
+		szMsg = "Ng­¬i ®· nghiªn cøu l·nh héi ®­îc vâ häc, lµ mét b­íc ®ét ph¸ míi t­ëng chõng nh­ kh«ng thÓ ®¹t ®­îc"
 		Msg2Player(szMsg)
 		return 1
 	end

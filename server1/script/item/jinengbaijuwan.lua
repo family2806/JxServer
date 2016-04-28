@@ -5,12 +5,12 @@ Include("\\script\\global\\baijuwanhead.lua")
 function main(itemindex)
 	SetTaskTemp(AEXP_TEMPOFFLINETASKID, itemindex)
 	str=
-	{	"<#>¼¼ÄÜ°×¾ÔÍè£¬Ê¹ÓÃ½«»ñµÃ<color=red>8 Ğ¡Ê±<color>Î¯ÍĞ.",
-		"<#>Ê¹ÓÃ¼¼ÄÜ°×¾ÔÍè/use",
-		"<#> ÈÎÎñÔÙÏëÏë!/cancel",
-		"<#> ¿´ÎÒµÄÊ£Óà¹Ò»úÊ±¼ä/get_left_time",
-		"<#> Ñ¡Ôñ¼¼ÄÜÀëÏßÒÀÈ»¹Ò»ú/#selectofflineskill('cancel')",
-		"<#> ½éÉÜ¹Ò»úÍæ·¨µÄÏ¸½Ú/help"
+	{	"<#>B¹ch C©u Hoµn kü n¨ng, sö dông sÏ nhËn ®­îc <color=red>8 giê<color> ñy th¸c.",
+		"<#>Sö dông B¹ch C©u Hoµn kü n¨ng /use",
+		"<#> §Ó ta suy nghÜ l¹i!/cancel",
+		"<#> Tra xem thêi gian treo m¸y cßn l¹i cña ta/get_left_time",
+		"<#> Chän kü n¨ng rêi m¹ng vÉn treo m¸y/#selectofflineskill('cancel')",
+		"<#> Giíi thiÖu chi tiÕt vÒ c¸ch ch¬i treo m¸y/help"
 	};
 	Say(str[1], 4,str[2],str[3],str[4],str[5]);
 	return 1
@@ -25,7 +25,7 @@ function use()
 
 	if ((sparetime + AEXP_SKILLCHANGE) > AEXP_MAXTIME) then
 		local hours, minutes = getFrame2MinAndSec(sparetime);
-		Say("ÄúµÄÀëÏß¹Ò»úÊ£ÓàÊ±¼äÎª<color=red>"..hours.."<color>gi?color=red>"..minutes.."<color> ·ÖÖÓ¡£¼¼ÄÜÎ¯ÍĞÀÛ¼ÆÊ±¼ä²»ÄÜ³¬¹ı<color=red>10000 Ğ¡Ê±color>.", 0);
+		Say("Thêi gian rêi m¹ng vÉn treo m¸y cßn l¹i cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót. Thêi gian tİch lòy ñy th¸c kü n¨ng kh«ng ®­îc v­ît qu¸ <color=red>10000 giê<color>.", 0);
     else	
 		itemindex = GetTaskTemp(AEXP_TEMPOFFLINETASKID);
 		if (IsMyItem(itemindex) ~= 1) then
@@ -38,10 +38,10 @@ function use()
 			ntotaltime = sparetime + AEXP_SKILLCHANGE;
 			SetTask(AEXP_SMALL_SKILL_TASKID, ntotaltime);
 			local hours, minutes = getFrame2MinAndSec(ntotaltime);
-			Say("³É¹¦Ê¹ÓÃ£¬ÄúµÄÀëÏß¹Ò»úÊ±¼äÎª<color=red>"..hours.."<color>gi?color=red>"..minutes.."<color> ·Ö",0);
+			Say("Thµnh c«ng sö dông, thêi gian rêi m¹ng vÉn treo m¸y cña b¹n lµ <color=red>"..hours.."<color>giê<color=red>"..minutes.."<color> phót",0);
 			writeUseBaiJulog("skillofflineitem_small", hours, minutes);
 		else
-			Say("Ã»ÓĞ¼¼ÄÜ°×¾ÔÍè£¬¿ÉÒÔÊ¹ÓÃ", 0);	
+			Say("Kh«ng cã B¹ch C©u Hoµn kü n¨ng, cã thÓ sö dông ", 0);	
 		end
 	end
 end

@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Talk(4, "", "àïàï£ºÎÒ×î»¶Ï²²ÂµÆÃÕÁË¡£", "¡°Ë®ÉÏÒ»¸öÁå£¬Ò¡Ò¡Ã»ÓÐÉù£¬×ÐÏ¸¿´Ò»¿´£¬ÂúÁ³´óÑÛ¾¦¡±£¬ÊÇÊ²Ã´ÄØ£¿¡ª¡ª°¡£¬¶ÔÁË£¡ÊÇÁ«Åî£¡", "¡°ÓÐÍ·Å£ÕæÆæ¹Ö£¬²»À­Àç²»³Ô²Ý£¬ËäËµËüÁ¦ÆøÐ¡£¬±³×ÅÎÝ×Óµ½´¦ÅÜ¡£¡±ÊÇÊ²Ã´ÄØ£¿¡ª¡ªÎÒ²Â³öÀ´ÁË£¡ÊÇÎÏÅ££¡", "¡°Ê¯Í·Ò»²ãÓÖÒ»²ã£¬È¦È¦Â·¶ù×ß²»Í££¬À×ÉùÂ¡Â¡ÎÞÉÁµç£¬Ö»¼û´óÑ©Âä·×·×¡£¡±ÊÇÊ²Ã´ÄØ£¿¡ª¡ªÄÑµÀÊÇ¡­¡­¶ÔÁË£¬ÊÇÊ¯Ä¥£¡");
+Talk(4, "", "Ch¸u thÝch nhÊt lµ ®o¸n c©u ®è ®Ìn!", "Trªn hå cã mét chiÕc chu«ng, l¾c l­ kh«ng cã tiÕng chu«ng, xem cÈn thËn mét chót, ®«i m¾t to lµ ch÷ g×? A! Lµ ch÷ Liªn'", "H«m nay thÇy gi¸o b¾t ta häc thuéc 100 c©u trong Tam Tù kinh! Thµ ®¸nh ta 100 roi cßn h¬n ….", "H«m nay thÇy gi¸o b¾t ta häc thuéc 100 c©u trong Tam Tù kinh! Thµ ®¸nh ta 100 roi cßn h¬n ….");
 
 end;
 

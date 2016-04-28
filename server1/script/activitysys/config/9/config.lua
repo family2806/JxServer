@@ -23,13 +23,13 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "NpcDetail",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Àñ¹ÙÌáÊ¾»Ê³ÇË¾"},
+	tbMessageParam = {"Quan nh¾c nhë Hoµng Thµnh T­"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"»Ê³ÇË¾ÀÞÌ¨",3} },
+		{"AddDialogOpt",	{"L«i §µi Hoµng Thµnh T­",3} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú

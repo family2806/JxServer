@@ -5,7 +5,7 @@
 ACT2YEAR_TWhiteBoxRan = {
     tRan = {1000},
     tItemID = { {6,1,1442}},
-    tItemName = {"º£Ãàµ°¸â"}
+    tItemName = {"B¸nh b«ng lan"}
 }
 --
 ACT2YEAR_TBlueBoxRan = {
@@ -20,8 +20,8 @@ ACT2YEAR_TBlueBoxRan = {
         {6,1,125},
         {6,1,1443},
     },
-    tItemName = {"ÌúÂÞºº","ÅÌÈíÐÄ¾­","¾§ºì±¦Ê¯","1¼¶Ðþ¾§¿óÊ¯","2¼¶Ðþ¾§¿óÊ¯","3¼¶Ðþ¾§¿óÊ¯",
-    "¹ð»¨¾Æ","±ù¼¤Áè±ý",}
+    tItemName = {"ThiÕt La H¸n","Bµn Nh­îc T©m Kinh","Tinh Hång B¶o Th¹ch","HuyÒn Tinh Kho¸ng Th¹ch cÊp 1","HuyÒn Tinh Kho¸ng Th¹ch cÊp 2","HuyÒn Tinh Kho¸ng Th¹ch cÊp 3",
+    "QuÕ Hoa Töu","B¸nh kem",}
 }
 --
 ACT2YEAR_TYellowBoxRan = {
@@ -62,17 +62,17 @@ ACT2YEAR_TYellowBoxRan = {
         {6,1,58},
         {6,1,59},
     },
-    tItemName = {"ÌúÂÞºº","2¼¶Ðþ¾§¿óÊ¯","3¼¶Ðþ¾§¿óÊ¯","4¼¶Ðþ¾§¿óÊ¯","×ÏË®¾§","ÌØ±ð±ù¼¤Áè±ý","Ðä¼ýÊõ. ±©ÓêÀæ»¨",
-    "ÏÝ¾²Êõ.ÂÒ»¹»÷","Ì«¼«È­Æ×.µÚÈý¾í","Ì«¼«½£Æ×.µÚ¶þ¾í","ÔÆÁú»÷. Ã¬·¨","Áõ¾§. µÀ·¨","ÌìÍõ´¸·¨. ¾í1",
-    "ÌìÍõÉÌ·¨.¾í2","ÌìÍõµÀ·¨.¾í3","´äÑÌµÀ·¨","´äÑÌË«µ¶","Ãð½£ÃØ¼®","¶ëÃ¼·ð¹âÕÆÃØ¼®","·Éµ¶Êõ. Éã»êÔÂÓ°",
-    "·ÉïÚÊõ.¾Å¹¬·É¾§","Îå¶¾ÕÆ·¨. ¾í1","Îå¶¾µÀ·¨.¾í2","Îå¶¾ÉãÐÄÊõ. ¾í3","Óù·çÊõ","ÓùÁúÊõ","ÓùÐÄÊõ",
-    "Éã»ê.ÖäÊõ","Ø¤°ïÕÆ·¨","Ø¤°ï¹÷·¨","ÉÙÁÖÈ­·¨.¾í1","ÉÙÁÖ¹÷·¨.¾í2","ÉÙÁÖµÀ·¨.¾í3","ÆÕ¶ÉÃØ¼®" }
+    tItemName = {"ThiÕt La H¸n","HuyÒn Tinh Kho¸ng Th¹ch cÊp 2","HuyÒn Tinh Kho¸ng Th¹ch cÊp 3","HuyÒn Tinh Kho¸ng Th¹ch cÊp 4","Tö Thñy Tinh","B¸nh kem ®Æc biÖt","Tô TiÔn thuËt. B¹o Vò Lª Hoa",
+    "H·m TÜnh thuËt.Lo¹n Hoµn KÝch","Th¸i Cùc QuyÒn Phæ. QuyÓn 3","Th¸i Cùc KiÕm Phæ. QuyÓn 2","V©n Long KÝch. M©u ph¸p","L­u Tinh. §ao ph¸p","Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1",
+    "Thiªn V­¬ng Th­¬ng ph¸p. QuyÓn 2","Thiªn V­¬ng §ao ph¸p.QuyÓn 3","Thóy Yªn §ao ph¸p","Thóy Yªn Song ®ao","DiÖt KiÕm MËt TÞch","Nga Mi  PhËt Quang Ch­ëng MËt TÞch","Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh",
+    "Phi Tiªu thuËt. Cöu Cung Phi Tinh","Ngò §éc Ch­ëng Ph¸p. QuyÓn 1","Ngò §éc §ao ph¸p. QuyÓn 2","Ngò §éc NhiÕp T©m thuËt. QuyÓn 3","Ngù Phong thuËt","Ngù L«i thuËt","Ngù T©m thuËt",
+    "NhiÕp Hån. Chó thuËt","C¸i Bang Ch­ëng Ph¸p","C¸i Bang C«n ph¸p","ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1","ThiÕu L©m C«n ph¸p. QuyÓn 2","ThiÕu L©m §ao ph¸p. QuyÓn 3","Phæ §é MËt TÞch" }
 }
 --
 function main(nItemIndex)
     local nDate = tonumber(GetLocalDate("%y%m%d"))
     if nDate > 70712 then
-        Say("ÎïÆ·ÒÑ¹ýÊ¹ÓÃÆÚ.",0)
+        Say("VËt phÈm ®· qu¸ h¹n sö dông.",0)
         return 0
     end
     local szItemName = GetItemName(nItemIndex)
@@ -87,7 +87,7 @@ function main(nItemIndex)
     end
     local nMedalItemGID, nMedalItemDID,nMedalItemPID,nItemLev,szMedalItemName = act2years2007_getgift(tRan)
     if nMedalItemGID == nil or nMedalItemDID == nil or nMedalItemPID  == nil  or szMedalItemName == nil then
-        Msg2Player("Ê¹ÓÃÊ§°Ü£¬ÇëÔÙÊÔÒ»´Î.")
+        Msg2Player("Sö dông thÊt b¹i, h·y thö l¹i lÇn n÷a.")
         return 1
     end
     --Èç¹û²»ÊÇÐþ¾§
@@ -95,7 +95,7 @@ function main(nItemIndex)
         nItemLev = 1
     end
     AddItem(nMedalItemGID,nMedalItemDID,nMedalItemPID,nItemLev,0,0)
-    Msg2Player(format("¹§Ï²Äú»ñµÃ1%s.",szMedalItemName))
+    Msg2Player(format("Chóc mõng b¹n nhËn ®­îc 1 %s.",szMedalItemName))
     return 0
 end
 --

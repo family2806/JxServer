@@ -3,7 +3,7 @@ Include("\\script\\missions\\zhaojingling\\head.lua")
 Include("\\script\\task\\task_addplayerexp.lua")
 
 PrepareGame = GameTemplet:new()
-PrepareGame.szMapType = "×¼±¸ÕÒÄ¾ÈË"
+PrepareGame.szMapType = "ChuÈn bÞ t×m Méc Nh©n"
 PrepareGame.nPlayerCount = 0
 PrepareGame.nExp = 1000000 --¸øÂÖ¿ÕµÄÍæ¼ÒµÄ¾­Ñé
 
@@ -18,7 +18,7 @@ PrepareGame.tbNpcTypeList =
 	["wagoner"] = 
 	{
 		nNpcId = 235,
-		szName = "³µ·ò¶·³¡×¼±¸",
+		szName = "Xa phu ®Êu tr­êng chuÈn bÞ",
 		nLevel = 95,
 		szScriptPath = "\\script\\missions\\zhaojingling\\prepare\\wagoner.lua",
 		szPosPath = "\\settings\\maps\\chrismas\\wagoner.txt",
@@ -130,7 +130,7 @@ function PrepareGame:DoGoToMap(tbPlayerName, nBeginId, nEndId, nMapId, nRoomInde
 					local nY = CallPlayerFunction(nPlayerIndex, GetTask, TSK_LEAVERPOSY)
 					CallPlayerFunction(nPlayerIndex, NewWorld, nOriMapId, nX, nY)
 					CallPlayerFunction(nPlayerIndex, tl_addPlayerExp, self.nExp)
-					CallPlayerFunction(nPlayerIndex, Msg2Player, format("±¾³¡ÄãÒÑ×öÍê£¬»ñµÃ %d ¾­ÑéÖµ", self.nExp))
+					CallPlayerFunction(nPlayerIndex, Msg2Player, format("TrËn nµy ng­¬i ®· ®­îc lµm s¹ch, nh¹n ®­îc %d ®iÓm kinh nghiÖm", self.nExp))
 				end
 			end
 		end

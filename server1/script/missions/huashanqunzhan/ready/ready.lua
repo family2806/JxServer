@@ -50,26 +50,26 @@ function huashanqunzhan_tbReady:OnPlayerJoin()
 	
 	if nMissionState ~=1 and nMissionState ~= 2 then
 		self:GotoSignUpPlace()
-		Msg2Player("±ÈÈüÎ´¿ªÊ¼.")
-		return Say("±ÈÈüÎ´¿ªÊ¼.", 0)
+		Msg2Player("TrËn ®Êu vÉn ch­a b¾t ®Çu.")
+		return Say("TrËn ®Êu vÉn ch­a b¾t ®Çu.", 0)
 	end 
 	
 	
 
 	if nPlayerCount >= self.nPlayerCountLimit then
 		self:GotoSignUpPlace()
-		Msg2Player("²Î¼Ó»î¶¯µÄÈËÊıÒÑ¹º£¬ÄãÏÂ´ÎÔÙ²Î¼Ó°É!")
-		return Say("²Î¼Ó»î¶¯µÄÈËÊıÒÑ¹º£¬ÄãÏÂ´ÎÔÙ²Î¼Ó°É!", 0)
+		Msg2Player("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!")
+		return Say("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!", 0)
 	end
 	
 	if GetLevel() < self.tbLevelLimit[1] then
 		self:GotoSignUpPlace()
-		Msg2Player(format("²»¹»µÈ¼¶ %s,²»ÄÜ²Î¼Ó¸Ã¼¶±ğÀŞÌ¨.", self.tbLevelLimit[1]))
-		return Say(format("²»¹»µÈ¼¶ %s,²»ÄÜ²Î¼Ó¸Ã¼¶±ğÀŞÌ¨.", self.tbLevelLimit[1]), 0)
+		Msg2Player(format("Ch­a ®ñ cÊp %s, kh«ng thÓ tham gia l«i ®µi cÊp bËc nµy.", self.tbLevelLimit[1]))
+		return Say(format("Ch­a ®ñ cÊp %s, kh«ng thÓ tham gia l«i ®µi cÊp bËc nµy.", self.tbLevelLimit[1]), 0)
 	elseif self.tbLevelLimit[2] and GetLevel() > self.tbLevelLimit[2] then
 		self:GotoSignUpPlace()
-		Msg2Player(format("ÄãÒÑ³¬¹ı¼¶±ğ %s,²»ÄÜ²Î¼Ó¸Ã¼¶±ğÀŞÌ¨.", self.tbLevelLimit[2]))
-		return Say(format("ÄãÒÑ³¬¹ı¼¶±ğ %s,²»ÄÜ²Î¼Ó¸Ã¼¶±ğÀŞÌ¨.", self.tbLevelLimit[2]), 0)
+		Msg2Player(format("B¹n ®· v­ît cÊp %s, kh«ng thÓ tham gia l«i ®µi cÊp bËc nµy.", self.tbLevelLimit[2]))
+		return Say(format("B¹n ®· v­ît cÊp %s, kh«ng thÓ tham gia l«i ®µi cÊp bËc nµy.", self.tbLevelLimit[2]), 0)
 	end
 	if GetCash() < self.nMoney then
 		self:GotoSignUpPlace()
@@ -136,7 +136,7 @@ function huashanqunzhan_tbReady:OnTimer()
 	
 	nTimerCount = nTimerCount + 1
 	SetMissionV(self.tbMissionV.SECOND_COUNTER, nTimerCount)
-	local szMsg = format("»¹ÓĞ <color=yellow>%d<color> ·ÖÖÓ±ÈÈü²Å¿ªÊ¼.", self.nLatencyTime - nTimerCount)
+	local szMsg = format("Cßn <color=yellow>%d<color> phót n÷a trËn ®Êu sÏ b¾t ®Çu.", self.nLatencyTime - nTimerCount)
 	
 	
 	if nTimerCount == self.nLatencyTime then
@@ -176,9 +176,9 @@ function huashanqunzhan_tbReady:OnClose()
 		if bIsOpen ~= 1 then
 			doFunByPlayer(tbPlayer[i], self.GotoSignUpPlace, self)
 			if nPlayerCount >= self.nMinPlayerCountLimit then
-				doFunByPlayer(tbPlayer[i], Msg2Player, "Ç°·½Â·²»Í¨£¬µÈÏÂÒ»³¡°É.")
+				doFunByPlayer(tbPlayer[i], Msg2Player, "§­êng ®i phİa tr­íc kh«ng th«ng, h·y ®îi cuéc ®ua sau.")
 			else
-				doFunByPlayer(tbPlayer[i], Msg2Player, format("²Î¼ÓÈËÊıÉÙÓÚ %d, ±ÈÈü²»ÄÜ¿ªÊ¼.",self.nMinPlayerCountLimit))
+				doFunByPlayer(tbPlayer[i], Msg2Player, format("Sè ng­êi tham gia İt h¬n %d, tr©n ®Êu kh«ng thÓ b¾t ®Çu.",self.nMinPlayerCountLimit))
 			end
 		else
 			local nX, nY = getadata("\\settings\\maps\\huashanqunzhan\\huashanjingji.txt")

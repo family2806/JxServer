@@ -10,7 +10,7 @@ function InitMission()
 		SetMissionS(i, "");
 	end;
 	
-	strGlbNews = "ÎäÁÖÃËÖ÷ÕıÕÙ¼¯¸÷ÈËÊ¿È¥ÕÒÎ÷ÏÄÉÌÈËµÄ»õÎï´ü»ØÀ´£¬´ó¼Ò¿ÉÒÔµ½»î¶¯·»×Ü¹Ü´¦±¨Ãû²Î¼Ó."
+	strGlbNews = "Vâ l©m minh chñ ®ang tËp trung c¸c nh©n sü tæ chøc ®i t×m tói hµng hãa cña T©y H¹ th­¬ng nh©n vÒ, mäi ng­êi cã thÓ ®Õn Tæng qu¶n Ho¹t ®éng ph­êng ®Ó b¸o danh tham gia."
 	AddGlobalNews(strGlbNews);
 	SetGlbValue(GLB_COLLG_PHASE, 1);	--¿ÉÒÔ¿ªÊ¼±¨ÃûÁË
 	gb_SetTask(COLLG_NAME, 1, 1);

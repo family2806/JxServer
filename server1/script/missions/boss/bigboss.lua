@@ -21,9 +21,9 @@ BigBoss.CallBackParam = {}
 
 BigBoss.tbGlobalReward = 
 {
-	{szName="½ñÌì21:00ËÎ½ðÕ½³¡, ½«ÓÐË«±¶»ýÀÛ", nRate=25, pFun=function() PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.SONGJIN_REWARD_BIT, 1); Msg2Player(format("´óÏÀµÃµ½½±Æ· <color=yellow>%s<color>","½ñÌì21:00ËÎ½ðÕ½³¡, ½«ÓÐË«±¶»ýÀÛ"))end},
-	{szName="½ñÌì21:00¹ý¹Ø, ½«ÓÐË«±¶»ýÀÛ", nRate=25, pFun=function() PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.CHUANGGUAN_REWARD_BIT, 1); Msg2Player(format("´óÏÀµÃµ½½±Æ·<color=yellow>%s<color>","½ñÌì21:00¹ý¹Ø, ½«ÓÐË«±¶»ýÀÛ"))end},
-	{szName="´ò¹Ö1Ð¡Ê±µÄË«±¶¾­Ñé", nRate=25, pFun=function() AddSkillState(967, 1, 1, 64800); PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.EXP_REWARD_BIT, 1); Msg2Player(format("´óÏÀµÃµ½½±Æ·<color=yellow>%s<color>","´ò¹Ö1Ð¡Ê±µÄË«±¶¾­Ñé"))end},
+	{szName="H«m nay trËn Tèng Kim 21:00, ®iÓm tÝch lòy sÏ ®­îc nh©n ®«i", nRate=25, pFun=function() PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.SONGJIN_REWARD_BIT, 1); Msg2Player(format("§¹i hiÖp nhËn ®­îc phÇn th­ëng <color=yellow>%s<color>","H«m nay trËn Tèng Kim 21:00, ®iÓm tÝch lòy sÏ ®­îc nh©n ®«i"))end},
+	{szName="H«m nay v­ît ¶i ®ît 21:00, ®iÓm kinh nghiÖm sÏ ®­îc nh©n ®«i", nRate=25, pFun=function() PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.CHUANGGUAN_REWARD_BIT, 1); Msg2Player(format("§¹i hiÖp nhËn ®­îc phÇn th­ëng <color=yellow>%s<color>","H«m nay v­ît ¶i ®ît 21:00, ®iÓm kinh nghiÖm sÏ ®­îc nh©n ®«i"))end},
+	{szName="Nh©n ®«i kinh nghiÖm khi ®¸nh qu¸i trong 1 giê", nRate=25, pFun=function() AddSkillState(967, 1, 1, 64800); PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.EXP_REWARD_BIT, 1); Msg2Player(format("§¹i hiÖp nhËn ®­îc phÇn th­ëng <color=yellow>%s<color>","Nh©n ®«i kinh nghiÖm khi ®¸nh qu¸i trong 1 giê"))end},
 	{nExp = 10000000, nRate=25},
 }
 
@@ -62,143 +62,143 @@ BigBoss.tbNormalDrop =
 --DC ½±Àø boss ¶À¹Â- Modified By DinhHQ - 20111010
 BigBoss.tbVngNewDropItem = {
 	[1] = {
-		[1]={{szName="×Ïòþ¿øÍ¼Æ×",tbProp={6,1,2714,1,0,0},nCount=1,nRate=13},},
-		[2]={{szName="×ÏòþÒÂÍ¼Æ×",tbProp={6,1,2715,1,0,0},nCount=1,nRate=13},},
-		[3]={{szName="×ÏòþÑü´øÍ¼Æ×",tbProp={6,1,2717,1,0,0},nCount=1,nRate=13},},
-		[4]={{szName="×Ïòþ»¤ÍóÍ¼Æ×",tbProp={6,1,2718,1,0,0},nCount=1,nRate=13},},
-		[5]={{szName="×ÏòþÏîÁ´Í¼Æ×",tbProp={6,1,2719,1,0,0},nCount=1,nRate=13},},
-		[6]={{szName="×ÏòþÅåÍ¼Æ×",tbProp={6,1,2720,1,0,0},nCount=1,nRate=13},},
-		[7]={{szName="×ÏòþÐ¬Í¼Æ×",tbProp={6,1,2716,1,0,0},nCount=1,nRate=13},},
-		[8]={{szName="×ÏòþÉÏ½äÍ¼Æ×",tbProp={6,1,2721,1,0,0},nCount=1,nRate=8},},
-		[9]={{szName="×ÏòþÏÂ½äÍ¼Æ×",tbProp={6,1,2722,1,0,0},nCount=1,nRate=8},},
-		[10]={{szName="×ÏòþÆ÷½äÍ¼Æ×",tbProp={6,1,2723,1,0,0},nCount=1,nRate=8},},
-		[11]={{szName="×ÏòþÁî",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10},},
-		[12]={{szName="ÈçÒâÔ¿³×",tbProp={6,1,2744,1,0,0},nCount=1,nRate=30},},
-		[13]={{szName="·ÉËÙÍèÀñ°ü",tbProp={6,1,2520,1,0,0},nCount=1,nRate=60},},
-		[14]={{szName="´óÁ¦ÍèÀñ°ü",tbProp={6,1,2517,1,0,0},nCount=1,nRate=60},},
-		[15]={{szName="Çà¾ÔÁî",tbProp={6,1,2369,1,0,0},nCount=1,nRate=15},},
-		[16]={{szName="ÔÆÂ¹Áî",tbProp={6,1,2353,1,0,0},nCount=1,nRate=20},},
-		[17]={{szName="×ÏË®¾§",tbProp={4,239,1,1,0,0},nCount=1,nRate=80},},
-		[18]={{szName="À¶Ë®¾§",tbProp={4,238,1,1,0,0},nCount=1,nRate=80},},
-		[19]={{szName="ÂÌË®¾§",tbProp={4,240,1,1,0,0},nCount=1,nRate=80},},
-		[20]={{szName="ÐÉºì±¦Ê¯",tbProp={4,353,1,1,0,0},nCount=1,nRate=80},},
-		[21]={{szName="ÌúÂÞºº",tbProp={6,1,23,1,0,0},nCount=2,nRate=80},},
-		[22]={{szName="ÌØ±ðÏÉ²ÝÂ¶",tbProp={6,1,1181,1,0,0},nCount=1,nRate=30},},
-		[23]={{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=25},},
-		[24]={{szName="»Æ½ðÓ¡(Ç¿»¯)",tbProp={0,3209},nCount=1,nRate=20,nQuality = 1,nExpiredTime=20160,},},
-		[25]={{szName="»Æ½ðÓ¡(Èõ»¯)",tbProp={0,3219},nCount=1,nRate=20,nQuality = 1,nExpiredTime=20160,},},
+		[1]={{szName="§å Phæ Tö M·ng Kh«i",tbProp={6,1,2714,1,0,0},nCount=1,nRate=13},},
+		[2]={{szName="§å Phæ Tö M·ng Y",tbProp={6,1,2715,1,0,0},nCount=1,nRate=13},},
+		[3]={{szName="§å Phæ Tö M·ng Yªu §¸i",tbProp={6,1,2717,1,0,0},nCount=1,nRate=13},},
+		[4]={{szName="§å Phæ Tö M·ng Hé UyÓn",tbProp={6,1,2718,1,0,0},nCount=1,nRate=13},},
+		[5]={{szName="§å Phæ Tö M·ng H¹ng Liªn",tbProp={6,1,2719,1,0,0},nCount=1,nRate=13},},
+		[6]={{szName="§å Phæ Tö M·ng Béi",tbProp={6,1,2720,1,0,0},nCount=1,nRate=13},},
+		[7]={{szName="§å Phæ Tö M·ng Hµi",tbProp={6,1,2716,1,0,0},nCount=1,nRate=13},},
+		[8]={{szName="§å Phæ Tö M·ng Th­îng Giíi ChØ",tbProp={6,1,2721,1,0,0},nCount=1,nRate=8},},
+		[9]={{szName="§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp={6,1,2722,1,0,0},nCount=1,nRate=8},},
+		[10]={{szName="§å Phæ Tö M·ng KhÝ Giíi",tbProp={6,1,2723,1,0,0},nCount=1,nRate=8},},
+		[11]={{szName="Tö M·ng LÖnh",tbProp={6,1,2350,1,0,0},nCount=1,nRate=10},},
+		[12]={{szName="Ch×a Khãa Nh­ ý",tbProp={6,1,2744,1,0,0},nCount=1,nRate=30},},
+		[13]={{szName="Phi tèc hoµn lÔ bao",tbProp={6,1,2520,1,0,0},nCount=1,nRate=60},},
+		[14]={{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=60},},
+		[15]={{szName="Thanh C©u LÖnh",tbProp={6,1,2369,1,0,0},nCount=1,nRate=15},},
+		[16]={{szName="V©n Léc LÖnh",tbProp={6,1,2353,1,0,0},nCount=1,nRate=20},},
+		[17]={{szName="Tö Thñy Tinh",tbProp={4,239,1,1,0,0},nCount=1,nRate=80},},
+		[18]={{szName="Lam Thñy Tinh",tbProp={4,238,1,1,0,0},nCount=1,nRate=80},},
+		[19]={{szName="Lôc Thñy Tinh",tbProp={4,240,1,1,0,0},nCount=1,nRate=80},},
+		[20]={{szName="Tinh Hång B¶o Th¹ch",tbProp={4,353,1,1,0,0},nCount=1,nRate=80},},
+		[21]={{szName="ThiÕt La H¸n",tbProp={6,1,23,1,0,0},nCount=2,nRate=80},},
+		[22]={{szName="Tiªn Th¶o Lé ®Æc biÖt",tbProp={6,1,1181,1,0,0},nCount=1,nRate=30},},
+		[23]={{szName="Hçn Nguyªn Linh Lé",tbProp={6,1,2312,1,0,0},nCount=1,nRate=25},},
+		[24]={{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3209},nCount=1,nRate=20,nQuality = 1,nExpiredTime=20160,},},
+		[25]={{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3219},nCount=1,nRate=20,nQuality = 1,nExpiredTime=20160,},},
 	},
 	[2] = {
-		{szName="×Ïòþ¿øÍ¼Æ×",tbProp={6,1,2714,1,0,0},nCount=1,nRate=12},
-		{szName="×ÏòþÒÂÍ¼Æ×",tbProp={6,1,2715,1,0,0},nCount=1,nRate=13},
-		{szName="×ÏòþÑü´øÍ¼Æ×",tbProp={6,1,2717,1,0,0},nCount=1,nRate=14},
-		{szName="×Ïòþ»¤ÍóÍ¼Æ×",tbProp={6,1,2718,1,0,0},nCount=1,nRate=12},		
-		{szName="×ÏòþÅåÍ¼Æ×",tbProp={6,1,2720,1,0,0},nCount=1,nRate=12},		
-		{szName="×ÏòþÐ¬Í¼Æ×",tbProp={6,1,2716,1,0,0},nCount=1,nRate=13},
-		{szName="×ÏòþÅåÍ¼Æ×",tbProp={6,1,2719,1,0,0},nCount=1,nRate=11},
-		{szName="×ÏòþÉÏ½äÍ¼Æ×",tbProp={6,1,2721,1,0,0},nCount=1,nRate=5},
-		{szName="×ÏòþÏÂ½äÍ¼Æ×",tbProp={6,1,2722,1,0,0},nCount=1,nRate=5},
-		{szName="×ÏòþÆ÷½äÍ¼Æ×",tbProp={6,1,2723,1,0,0},nCount=1,nRate=3},
+		{szName="§å Phæ Tö M·ng Kh«i",tbProp={6,1,2714,1,0,0},nCount=1,nRate=12},
+		{szName="§å Phæ Tö M·ng Y",tbProp={6,1,2715,1,0,0},nCount=1,nRate=13},
+		{szName="§å Phæ Tö M·ng Yªu §¸i",tbProp={6,1,2717,1,0,0},nCount=1,nRate=14},
+		{szName="§å Phæ Tö M·ng Hé UyÓn",tbProp={6,1,2718,1,0,0},nCount=1,nRate=12},		
+		{szName="§å Phæ Tö M·ng Béi",tbProp={6,1,2720,1,0,0},nCount=1,nRate=12},		
+		{szName="§å Phæ Tö M·ng Hµi",tbProp={6,1,2716,1,0,0},nCount=1,nRate=13},
+		{szName="§å Phæ Tö M·ng Béi",tbProp={6,1,2719,1,0,0},nCount=1,nRate=11},
+		{szName="§å Phæ Tö M·ng Th­îng Giíi ChØ",tbProp={6,1,2721,1,0,0},nCount=1,nRate=5},
+		{szName="§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp={6,1,2722,1,0,0},nCount=1,nRate=5},
+		{szName="§å Phæ Tö M·ng KhÝ Giíi",tbProp={6,1,2723,1,0,0},nCount=1,nRate=3},
 	},	
 	[3] = {
-		{szName="ÌìÁéµ¤",tbProp={6,1,3022,1,0,0},nCount = 30, nExpiredTime = 7 * 24 * 60},
+		{szName="Thiªn Linh §¬n",tbProp={6,1,3022,1,0,0},nCount = 30, nExpiredTime = 7 * 24 * 60},
 	},
 }
 
 BigBoss.tbVngNewDropEquip = 
 {
-	{szName="×ÏòþÎÞÏàÖéÁ´",tbProp={0,1825},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþËÄ¿Õ·ðÖé",tbProp={0,1835},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÇå¾»ÏîÁ´",tbProp={0,1845},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ³çÃ÷Á´",tbProp={0,1855},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ¶¨º£ÏîÁ´",tbProp={0,1865},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÐûÍþÏîÁ´",tbProp={0,1875},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ³ö³¾ÖéÁ´",tbProp={0,1885},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþãåÑ©ÖéÁ´",tbProp={0,1895},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÇàËªÖéÁ´",tbProp={0,1905},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÆöÏãÖéÁ´",tbProp={0,1915},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÊ´¹ÇÏîÁ´",tbProp={0,1925},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ´©ÐÄÏîÁ´",tbProp={0,1935},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÀÇÑÀÏîÁ´",tbProp={0,1945},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÇàÎíÏîÁ´",tbProp={0,1955},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ·çËªÏîÁ´",tbProp={0,1965},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÃÜÔÆÏîÁ´",tbProp={0,1975},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ»ðÔÆÏîÁ´",tbProp={0,1985},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÈÛ½ðÏîÈ¦",tbProp={0,1995},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÁÇÔ­ÏîÁ´",tbProp={0,2005},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÕæÔª·û",tbProp={0,2015},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÕæÎä·û",tbProp={0,2025},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×Ïòþ¶ÏË®ÏîÁ´",tbProp={0,2035},nCount=1,nRate=0.1,nQuality = 1,},
-	{szName="×ÏòþÕªÐÇ·û",tbProp={0,2045},nCount=1,nRate=0.09,nQuality = 1,},
-	{szName="×ÏòþÎÞÏàÉÏ½ä",tbProp={0,1827},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþËÄ¿ÕÉÏ½ä",tbProp={0,1837},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇå¾»ÉÏ½ä",tbProp={0,1847},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ³çÃ÷ÉÏ½ä",tbProp={0,1857},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ¶¨º£ÉÏ½ä",tbProp={0,1867},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÐûÍþÉÏ½ä",tbProp={0,1877},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ³ö³¾ÉÏ½ä",tbProp={0,1887},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþãåÑ©ÉÏ½ä",tbProp={0,1897},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇàËªÉÏ½ä",tbProp={0,1907},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÆöÏãÉÏ½ä",tbProp={0,1917},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÊ´¹ÇÉÏ½ä",tbProp={0,1927},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ´©ÐÄÉÏ½ä",tbProp={0,1937},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÀÇÑÀÉÏ½ä",tbProp={0,1947},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇàÎíÉÏ½ä",tbProp={0,1957},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ·çËªÉÏ½ä",tbProp={0,1967},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÃÜÔÆÉÏ½ä",tbProp={0,1977},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ»ðÔÆÉÏ½ä",tbProp={0,1987},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÈÛ½ðÉÏ½ä",tbProp={0,1997},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÁÇÔ­ÉÏ½ä",tbProp={0,2007},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕæÔªÉÏ½ä",tbProp={0,2017},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕæÎäÉÏ½ä",tbProp={0,2027},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ¶ÏË®ÉÏ½ä",tbProp={0,2037},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕªÐÇÉÏ½ä",tbProp={0,2047},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÎÞÏàÏÂ½ä",tbProp={0,1834},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþËÄ¿ÕÏÂ½ä",tbProp={0,1844},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇå¾»ÏÂ½ä",tbProp={0,1854},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ³çÃ÷ÏÂ½ä",tbProp={0,1864},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ¶¨º£ÏÂ½ä",tbProp={0,1874},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÐûÍþÏÂ½ä",tbProp={0,1884},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ³ö³¾ÏÂ½ä",tbProp={0,1894},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþãåÑ©ÏÂ½ä",tbProp={0,1904},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇàËªÏÂ½ä",tbProp={0,1914},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÆöÏãÏÂ½ä",tbProp={0,1924},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÊ´¹ÇÏÂ½ä",tbProp={0,1934},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ´©ÐÄÏÂ½ä",tbProp={0,1944},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÀÇÑÀÏÂ½ä",tbProp={0,1954},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÇàÎíÏÂ½ä",tbProp={0,1964},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ·çËªÏÂ½ä",tbProp={0,1974},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÃÜÔÆÏÂ½ä",tbProp={0,1984},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ»ðÔÆÏÂ½ä",tbProp={0,1994},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÈÛ½ðÏÂ½ä",tbProp={0,2004},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÁÇÔ­ÏÂ½ä",tbProp={0,2014},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕæÔªÏÂ½ä",tbProp={0,2024},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕæÎäÏÂ½ä",tbProp={0,2034},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×Ïòþ¶ÏË®ÏÂ½ä",tbProp={0,2044},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÕªÐÇÏÂ½ä",tbProp={0,2054},nCount=1,nRate=0.075,nQuality = 1,},
-	{szName="×ÏòþÎÞÏà²øÊÖ",tbProp={0,1831},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþËÄ¿ÕÉ®¹÷",tbProp={0,1841},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÇå¾»½äµ¶",tbProp={0,1851},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ³çÃ÷´¸",tbProp={0,1861},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ¶¨º£Ç¹",tbProp={0,1871},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÐûÍþ±¦µ¶",tbProp={0,1881},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ³ö³¾½£",tbProp={0,1891},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþãåÑ©²øÊÖ",tbProp={0,1901},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÇàËªµ¶",tbProp={0,1911},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÆöÏãÔ§Ñìµ¶",tbProp={0,1921},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÊ´¹Ç²øÊÖ",tbProp={0,1931},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ´©ÐÄµ¶",tbProp={0,1941},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÀÇÑÀ·Éµ¶",tbProp={0,1951},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÇàÎíÐä¼ý",tbProp={0,1961},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ·çËªïÚ",tbProp={0,1971},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÃÜÔÆ²øÊÖ",tbProp={0,1981},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ»ðÔÆÕÈ",tbProp={0,1991},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÈÛ½ðÇ¹",tbProp={0,2001},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÁÇÔ­µ¶",tbProp={0,2011},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÕæÔª½£",tbProp={0,2021},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÕæÎä½£",tbProp={0,2031},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×Ïòþ¶ÏË®µ¶",tbProp={0,2041},nCount=1,nRate=0.05,nQuality = 1,},
-	{szName="×ÏòþÕªÐÇ½£",tbProp={0,2051},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng V« T­¬ng Ch©u Liªn",tbProp={0,1825},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Tø Kh«ng PhËt Ch©u",tbProp={0,1835},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Thanh TÞnh H¹ng Liªn",tbProp={0,1845},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Sïng Minh Liªn",tbProp={0,1855},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng §Þnh H¶i H¹ng Liªn",tbProp={0,1865},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Tuyªn Uy H¹ng Liªn",tbProp={0,1875},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng XuÊt TrÇn Ch©u Liªn",tbProp={0,1885},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Méc TuyÕt Ch©u Liªn",tbProp={0,1895},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Thanh S­¬ng Ch©u Liªn",tbProp={0,1905},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng ThÕ H­¬ng Ch©u Liªn",tbProp={0,1915},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Thùc Cèt H¹ng Liªn",tbProp={0,1925},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Xuyªn T©m H¹ng Liªn",tbProp={0,1935},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Lang Nha H¹ng Liªn",tbProp={0,1945},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Thanh Vô H¹ng Liªn",tbProp={0,1955},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Phong S­¬ng H¹ng Liªn",tbProp={0,1965},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng MËt V©n H¹ng Liªn",tbProp={0,1975},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Háa V©n H¹ng Liªn",tbProp={0,1985},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Dung Kim H¹ng Khuyªn",tbProp={0,1995},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Liªu Nguyªn H¹ng Liªn",tbProp={0,2005},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Viªn Phï",tbProp={0,2015},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Vò Phï",tbProp={0,2025},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng §o¹n Thñy H¹ng Liªn",tbProp={0,2035},nCount=1,nRate=0.1,nQuality = 1,},
+	{szName="Tö M·ng TrÝch Tinh Phï",tbProp={0,2045},nCount=1,nRate=0.09,nQuality = 1,},
+	{szName="Tö M·ng V« T­¬ng Th­îng Giíi",tbProp={0,1827},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Tø Kh«ng Th­îng Giíi",tbProp={0,1837},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh TÞnh Th­îng Giíi",tbProp={0,1847},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Sïng Minh Th­îng Giíi",tbProp={0,1857},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng §Þnh H¶i Th­îng Giíi",tbProp={0,1867},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Tuyªn Uy Th­îng Giíi",tbProp={0,1877},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng XuÊt TrÇn Th­îng Giíi",tbProp={0,1887},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Méc TuyÕt Th­îng Giíi",tbProp={0,1897},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh S­¬ng Th­îng Giíi",tbProp={0,1907},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng ThÕ H­¬ng Th­îng Giíi",tbProp={0,1917},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thùc Cèt Th­îng Giíi",tbProp={0,1927},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Xuyªn T©m Th­îng Giíi",tbProp={0,1937},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Lang Nha Th­îng Giíi",tbProp={0,1947},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh Vô Th­îng Giíi",tbProp={0,1957},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Phong S­¬ng Th­îng Giíi",tbProp={0,1967},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng MËt V©n Th­îng Giíi",tbProp={0,1977},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Háa V©n Th­îng Giíi",tbProp={0,1987},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Dung Kim Th­îng Giíi",tbProp={0,1997},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Liªu Nguyªn Th­îng Giíi",tbProp={0,2007},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Viªn Th­îng Giíi",tbProp={0,2017},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Vò Th­îng Giíi",tbProp={0,2027},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng §o¹n Thñy Th­îng Giíi",tbProp={0,2037},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng TrÝch Tinh Th­îng Giíi",tbProp={0,2047},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng V« T­¬ng H¹ Giíi",tbProp={0,1834},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Tø Kh«ng H¹ Giíi",tbProp={0,1844},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh TÞnh H¹ Giíi",tbProp={0,1854},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Sïng Minh H¹ Giíi",tbProp={0,1864},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng §Þnh H¶i H¹ Giíi",tbProp={0,1874},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Tuyªn Uy H¹ Giíi",tbProp={0,1884},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng XuÊt TrÇn H¹ Giíi",tbProp={0,1894},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Méc TuyÕt H¹ Giíi",tbProp={0,1904},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh S­¬ng H¹ Giíi",tbProp={0,1914},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng ThÕ H­¬ng H¹ Giíi",tbProp={0,1924},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thùc Cèt H¹ Giíi",tbProp={0,1934},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Xuyªn T©m H¹ Giíi",tbProp={0,1944},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Lang Nha H¹ Giíi",tbProp={0,1954},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Thanh Vô H¹ Giíi",tbProp={0,1964},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Phong S­¬ng H¹ Giíi",tbProp={0,1974},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng MËt V©n H¹ Giíi",tbProp={0,1984},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Háa V©n H¹ Giíi",tbProp={0,1994},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Dung Kim H¹ Giíi",tbProp={0,2004},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Liªu Nguyªn H¹ Giíi",tbProp={0,2014},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Viªn H¹ Giíi",tbProp={0,2024},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Vò H¹ Giíi",tbProp={0,2034},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng §o¹n Thñy H¹ Giíi",tbProp={0,2044},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng TrÝch Tinh H¹ Giíi",tbProp={0,2054},nCount=1,nRate=0.075,nQuality = 1,},
+	{szName="Tö M·ng V« T­¬ng TriÒn Thñ",tbProp={0,1831},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Tø Kh«ng T¨ng C«n",tbProp={0,1841},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Thanh TÞnh Giíi §ao",tbProp={0,1851},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Sïng Minh Chïy",tbProp={0,1861},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng §Þnh H¶i Th­¬ng",tbProp={0,1871},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Tuyªn Uy B¶o §ao",tbProp={0,1881},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng XuÊt TrÇn KiÕm",tbProp={0,1891},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Méc TuyÕt TriÒn Thñ",tbProp={0,1901},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Thanh S­¬ng §ao",tbProp={0,1911},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng ThÕ H­¬ng Uyªn ¦¬ng §ao",tbProp={0,1921},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Thùc Cèt TriÒn Thñ",tbProp={0,1931},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Xuyªn T©m §ao",tbProp={0,1941},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Lang Nha Phi §ao",tbProp={0,1951},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Thanh Vô Tô TiÔn",tbProp={0,1961},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Phong S­¬ng Tiªu",tbProp={0,1971},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng MËt V©n TriÒn Thñ",tbProp={0,1981},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Háa V©n Tr­îng",tbProp={0,1991},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Dung Kim Th­¬ng",tbProp={0,2001},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Liªu Nguyªn §ao",tbProp={0,2011},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Viªn KiÕm",tbProp={0,2021},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng Ch©n Vò KiÕm",tbProp={0,2031},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng §o¹n Thñy §ao",tbProp={0,2041},nCount=1,nRate=0.05,nQuality = 1,},
+	{szName="Tö M·ng TrÝch Tinh KiÕm",tbProp={0,2051},nCount=1,nRate=0.05,nQuality = 1,},
 }	
 
 
@@ -266,12 +266,12 @@ function BigBossGlobalReward_CallBack(Param, ResultHandle)
 			IsBigBossDead = ObjBuffer:PopObject(ResultHandle);
 			if (IsBigBossDead == 1) then
 				PlayerFunLib:AddTaskDaily(BigBoss.TSK_BIGBOSS_REWARD, 0);	-- ÖØÖÃ±äÁ¿,ÒÔ·ÀÒâÍâ
-				if (PlayerFunLib:CheckTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.CAN_GET_REWARD_BIT, 1, "½ñÈÕ´óÏÀÒÑÁì½±!") == 1) then
+				if (PlayerFunLib:CheckTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.CAN_GET_REWARD_BIT, 1, "H«m nay ®¹i hiÖp ®· nhËn th­ëng råi!") == 1) then
 					PlayerFunLib:SetTaskBit(BigBoss.TSK_BIGBOSS_REWARD, BigBoss.CAN_GET_REWARD_BIT, 0);
 					tbAwardTemplet:GiveAwardByList(BigBoss.tbGlobalReward, format("[%s] big boss global reward",date("%Y%m%d")));
 				end
 			else
-				Talk(1, "", format("½ñÌì»¹Ã»ÓÐ´ò°Ü<color=red>%s<color>","¶À¹ÂÌì·å"));
+				Talk(1, "", format("H«m nay vÉn ch­a ®¸nh b¹i <color=red>%s<color>","§éc C« Thiªn Phong"));
 			end
 		end
 		--
@@ -293,28 +293,28 @@ function BigBoss:BigBossDeath(nNpcIndex)
 			if(doFunByPlayer(GetTeamMember(i), IsCaptain)==1)then
 				szName = doFunByPlayer(GetTeamMember(i), GetName);
 			end
-			doFunByPlayer(GetTeamMember(i), PlayerFunLib.AddExp, PlayerFunLib, 100000000, 0, format("%s ½±Æ·","¾­Ñé½±Àø¸ø¹¥»÷¶À¹ÂÌì·å×î¼¤ÁÒµÄÈË"));
+			doFunByPlayer(GetTeamMember(i), PlayerFunLib.AddExp, PlayerFunLib, 100000000, 0, format("%s phÇn th­ëng","¾­Ñé½±Àø¸ø¹¥»÷§éc C« Thiªn Phong×î¼¤ÁÒµÄÈË"));
 		end
 	else -- Ò»¸öÈË
 		szName = GetName();
-		PlayerFunLib:AddExp(100000000, 0, format("%s ½±Æ·","¾­Ñé½±Àø¸ø¹¥»÷¶À¹ÂÌì·å×î¼¤ÁÒµÄÈË"));
+		PlayerFunLib:AddExp(100000000, 0, format("%s phÇn th­ëng","¾­Ñé½±Àø¸ø¹¥»÷§éc C« Thiªn Phong×î¼¤ÁÒµÄÈË"));
 	end
 	
 	local tbRoundPlayer, nCount = GetNpcAroundPlayerList(nNpcIndex, 20);
 	
 	for i=1,nCount do
-		doFunByPlayer(tbRoundPlayer[i], PlayerFunLib.AddExp, PlayerFunLib, 50000000, 0, format("%s ½±Æ·","¾­Ñé½±Àø¸ø¹¥»÷¶À¹ÂÌì·å×î¼¤ÁÒµÄÈË"));
+		doFunByPlayer(tbRoundPlayer[i], PlayerFunLib.AddExp, PlayerFunLib, 50000000, 0, format("%s phÇn th­ëng","¾­Ñé½±Àø¸ø¹¥»÷§éc C« Thiªn Phong×î¼¤ÁÒµÄÈË"));
 	end
 	
-	--tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbKillerReward, format("%s µô","¶À¹ÂÌì·å"), 1);
+	--tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbKillerReward, format("%s rít","§éc C« Thiªn Phong"), 1);
 	
-	--tbDropTemplet:GiveAwardByList(nNpcIndex, -1, self.tbNormalDrop, format("%s µô","¶À¹ÂÌì·å"), 1);
+	--tbDropTemplet:GiveAwardByList(nNpcIndex, -1, self.tbNormalDrop, format("%s rít","§éc C« Thiªn Phong"), 1);
 	
 	--DC ½±Æ· - Modified By DinhHQ - 20111010
 	--item
-	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbVngNewDropItem, format("%s µô","¶À¹ÂÌì·å"), 1);
+	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbVngNewDropItem, format("%s rít","§éc C« Thiªn Phong"), 1);
 	--trang b?
-	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbVngNewDropEquip, format("%s µô","¶À¹ÂÌì·å"), 1);
+	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbVngNewDropEquip, format("%s rít","§éc C« Thiªn Phong"), 1);
 	
 	-- BOSS»÷É±Í³¼Æ
 	local nCount = GetTask(self.TSK_PLAYER_BOSSKILLED);
@@ -329,7 +329,7 @@ function BigBoss:BigBossDeath(nNpcIndex)
 		OB_Release(Handle)
 	end
 	
-	local szNews = format("×é¶Ó <color=yellow>%s<color> ÏûÃð³É¹¦<color=yellow>¶À¹ÂÌì·å<color>, ¸Ï¿ìµ½Àñ¹Ù´¦Áì½±!",szName);
+	local szNews = format("×é¶Ó <color=yellow>%s<color> ÏûÃð³É¹¦<color=yellow>§éc C« Thiªn Phong<color>, ¸Ï¿ìµ½Àñ¹Ù´¦Áì½±!",szName);
 	AddGlobalNews(szNews);
 	LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szNews , "", "");
 	

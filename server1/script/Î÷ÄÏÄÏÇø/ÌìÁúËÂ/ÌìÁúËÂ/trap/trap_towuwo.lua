@@ -1,5 +1,5 @@
 -- Î÷ÄÏÄÏÇø	ÌìÁúËÂÍ¨ÍùÎŞÎÒĞÄÕ«Trap
 
 function main(sel)
-	Say("ËÂÄÚÉ®ÈËÕıÔÚ¾²ĞŞ£¬Äã×îºÃ²»ÒªËæ±ã½øÈëÎŞÎÒĞÄÕ«!",0);
+	Say("T¨ng nh©n trong tù ®ang tŞnh tu, tèt nhÊt ng­¬i ®õng nªn tïy tiÖn x«ng vµo V« Ng· T©m Trai ®ã!",0);
 end

@@ -1,8 +1,8 @@
 function OnDeath(sel)
 	Uworld42 = GetTask(42)
 	if (Uworld42 == 70) then
-		Talk(8,"U42_prise","¹ş¹ş£¬ºÃĞ¡×Ó£¬Ã»Ïëµ½ÄãÒ²ÕâÃ´À÷º¦","Ç°±²¹ı½±ÁË!","ÈËÉúÈçÃÎ£¬ĞÑÀ´°É¡£Õâ¼¸¸öÄêÇáÈËÃ»ÓĞµÃ×ïÎÒµÄµØ·½£¬Äã´øËûÃÇ×ß°É!","§a¶àĞ»Ç°±²!","Ğ¡×Ó£¬¼ÇµÃÕäÏ§×Ô¼ºÓµÓĞµÄ£¬Ê§È¥ÁË£¬»ÚºŞ¶¼À´²»¼°ÁË£¬ÎÒÔÚÈ«¼ÒÓĞÄÑµÄÊ±ºò³ÁÃÔÎä¹¦£¬´ïµ½¾øÊÀÎä¹¦ÓÖÄÜÔõÑù£¿»¹²»ÈçºÍ×ÓËï¹ıÆ½·²µÄÈÕ×Ó.","ÔÚÏÂ¼Ç×¡ÁË","Õâ¼¸¸öĞ¡º¢ĞèÒª½Ìµ¼¡£ÎÒÆ½ÉúÑ§µÃºÜ¶àÁË£¬ÄãÒ²ÒªÑ§Ï°£¬×öºÜ¶àÉÆÊÂ£¬ËãÊÇ°ïÎÒ»ı¹¦µÂ.","¶àĞ»Ç°±²!")
-		Msg2Player("´ò°Ü²ÔÀË¿Í ")
+		Talk(8,"U42_prise","Ha ha! H¶o TiÓu tö, kh«ng ngê ng­¬i còng kh¸ qu¸.","TiÒn bèi qu¸ khen!","§êi ng­êi nh­ giÊc méng, nªn tØnh l¹i th«i. MÊy ®øa trÎ nµy kh«ng cã lçi g× víi ta, ng­¬i dÉn chóng ®i ®i!","§a t¹ TiÒn bèi!","TiÓu tö! H·y nhí ph¶i tr©n träng nh÷ng g× m×nh cã, mÊt råi cã hèi còng kh«ng kŞp, ta si mª luyÖn vâ ®Õn khi c¶ nhµ gÆp n¹n, ®¹t ®Õn tuyÖt ®Ønh th× sao chø? Chi b»ng b×nh ®¹m sèng qua ngµy vui cïng con ch¸u.","T¹i h¹ xin ghi nhí.","Nh÷ng ®øa trÎ cÇn ®­îc d¹y dç. Ta b×nh sinh ®· häc nhiÒu råi, ng­¬i còng nªn häc ®i, lµm nhiÒu viÖc thiÖn, xem nh­ thay l·o phu tİch mÊy phÇn c«ng ®øc.","§a t¹ TiÒn bèi!")
+		Msg2Player("§¸nh b¹i Th­¬ng L·ng kh¸ch ")
 		NewWorld(167,1400,2974)
 	end
 end;
@@ -18,7 +18,7 @@ function U42_prise()
 	
 	i = random(30,35)
 	AddRepute(i)
-	Msg2Player("ÁìÎò±¼À×£¬ÄãµÄÇ±ÄÜÔö¼Ó2µã")
-	Msg2Player("<#> Ê§×ÙĞ¡º¢ÈÎÎñ£º¾ÈÊ§×ÙĞ¡º¢£¬Íê³ÉÈÎÎñ¡£ÄãµÄÃûÍûÔö¼Ó "..i.."<#> µã.")
-	AddNote("Ê§×ÙĞ¡º¢ÈÎÎñ£º¾ÈÊ§×ÙĞ¡º¢£¬Íê³ÉÈÎÎñ¡£ÄãµÄÃûÍûÔö¼Ó  ")
+	Msg2Player("LÜnh ngé B«n L«i, tiÒm n¨ng cña b¹n t¨ng thªm 2 ®iÓm")
+	Msg2Player("<#> NhiÖm vô ®øa bĞ mÊt tİch: cøu ®øa bĞ mÊt tİch, hoµn thµnh nhiÖm vô. Danh väng cña b¹n t¨ng thªm "..i.."<#> ®iÓm.")
+	AddNote("NhiÖm vô ®øa bĞ mÊt tİch: t×m ®­îc ®øa bĞ, hoµn thµnh nhiÖm vô. Danh väng cña b¹n t¨ng thªm")
 end

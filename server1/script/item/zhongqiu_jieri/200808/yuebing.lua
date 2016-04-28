@@ -21,24 +21,24 @@ function main(nItemIndex)
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_ItemEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 	
 	if nCellFreeLimit ~= nil and  CalcFreeItemCellCount() < nCellFreeLimit then
-		Say(format("Îª±ÜÃâ²Æ²úËğÊ§£¬ÇëÈ·±£×°±¸»¹Ê£%d ¿ÕÎ».", nCellFreeLimit),0)
+		Say(format("§Ó tr¸nh mÊt m¸t tµi s¶n, h·y b¶o ®¶m hµnh trang cßn ®ñ %d « trèng.", nCellFreeLimit),0)
 		return 1
 	end
 	
 	if zhongqiu0808_PlayerLimit() ~= 1 then
 		
-		Say("ÒªÇóĞèÒª50¼¶ÒÔÉÏÇÒ³äÖµ", 0)
+		Say("Yªu cÇu ®¨ng cÊp ph¶i trªn 50 vµ ®· qua n¹p thÎ.", 0)
 		return 1
 	end
 	local nCurExp = GetTask(zhongqiu0808_TSK_jiansanyue)
 	
 	if nCurExp >= zhongqiu0808_TSKV_jiansanyue * (GetTask(zhongqiu0808_TSK_mingyuejiu) + 1) then
-		Say(format("Ê¹ÓÃ¸ÃÎïÆ·ÒÑ´ïÉÏÏŞ%u ¾­Ñé.", 1e6 * zhongqiu0808_TSKV_jiansanyue * (GetTask(zhongqiu0808_TSK_mingyuejiu) + 1) ), 0)
+		Say(format("Sö dông vËt phÈm nµy ®· ®¹t giíi h¹n %u kinh nghiÖm.", 1e6 * zhongqiu0808_TSKV_jiansanyue * (GetTask(zhongqiu0808_TSK_mingyuejiu) + 1) ), 0)
 		return 1
 	end
 	

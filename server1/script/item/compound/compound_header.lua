@@ -19,13 +19,13 @@ Include( "\\script\\item\\itemvalue\\itemvalue_header.lua" );
 -- ĞèÒª¼ÇÂ¼LogµÄÎïÆ·
 ITEM_TO_LOG =
 {
-	{ 4, 238, 1, "À¶Ë®¾§" },
-	{ 4, 239, 1, "×ÏË®¾§" },
-	{ 4, 240, 1, "ÂÌË®¾§" },
-	{ 6, 1, 122, "¸£ÔµÂ¶£¨Ğ¡£©" },
-	{ 6, 1, 123, "¸£ÔµÂ¶£¨ÖĞ£©" },
-	{ 6, 1, 124, "¸£ÔµÂ¶£¨´ó£©" },
-	{ 6, 1, 398, "ÉñÃØ¿óÊ¯" },
+	{ 4, 238, 1, "Lam Thñy Tinh" },
+	{ 4, 239, 1, "Tö Thñy Tinh" },
+	{ 4, 240, 1, "Lôc Thñy Tinh" },
+	{ 6, 1, 122, "Phóc Duyªn Lé (TiÓu) " },
+	{ 6, 1, 123, "Phóc Duyªn Lé (Trung) " },
+	{ 6, 1, 124, "Phóc Duyªn Lé (§¹i) " },
+	{ 6, 1, 398, "ThÇn bİ kho¸ng th¹ch" },
 }
 
 
@@ -60,7 +60,7 @@ GOLD_SUM_MAX_VAL		=	200000000000 / SUM_UNIT;	-- Ã¿ÈÕÔÊĞí[ºÏ³É]µÄ»Æ½ğ×°±¸¼ÛÖµÁ¿»ã
 -- ·µ»Ø£ºÉú³ÉµÄÎïÆ·Ë÷Òı, [ºÏ³É]½á¹û
 function Compound( arynNecessaryItemIdx, arynAlternativeItemIdx, bPreview )
 	if( isCompoundableToday() ~= 1 ) then
-		Say( "ÉñÃØÌú½³£ºÀÏ·ò±¾ÈÕÒÑ¾­½îÆ£Á¦¾¡ÁË£¬ÏÀÊ¿»¹ÊÇÃ÷ÈÕÔÙÀ´ÖıÔì×°±¸°É¡£", 0 );
+		Say( "Thî rÌn thÇn bİ: H«m nay l·o phu ®· qu¸ mÖt mái, ngµy mai hiÖp sÜ h·y ®Õn ®óc trang bŞ!", 0 );
 		return -1, RESULT_FAIL;
 	end
 	-- ³õÊ¼»¯Êı¾İ
@@ -126,7 +126,7 @@ function defFinalCompound( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcIte
 				local nGoldEqVal = GetGlbValue( GLBID_GOLD_VAL_SUM );
 				SetGlbValue( GLBID_GOLD_VAL_SUM, nGoldEqVal + nDesItemValCut );
 				if( nGoldEqVal + nDesItemValCut >= GOLD_SUM_MAX_VAL ) then
-					local strMsg = format( "[¾¯±¨] %s ½ñÈÕ[ºÏ³É]µÄ»Æ½ğ×°±¸µÄ¼ÛÖµ×ÜÁ¿£¨%0.2fE£©£¬ÒÑ³¬¹ı¼ÛÖµ×ÜÁ¿¾¯±¨ãĞÖµ£¨%0.2fE£©£¬¿ÉÄÜ³öÏÖË¢ÎïÆ·ÏÖÏó£¬Çë¾¡¿ìÁªÏµÑĞ·¢²¿£¡£¡£¡", date( "%Y-%m-%d %H:%M:%S" ), ( nGoldEqVal + nDesItemValCut ) * SUM_UNIT / 100000000, GOLD_SUM_MAX_VAL * SUM_UNIT / 100000000 );
+					local strMsg = format( " [C¶nh b¸o]%s Tæng gi¸ trŞ trang bŞ Hoµng Kim [ghĞp]h«m nay (%0.2fE) , ®· v­ît qu¸ møc c¶nh b¸o tæng gi¸ trŞ (%0.2fE) , cã thÓ xuÊt hiÖn hiÖn t­îng quĞt vËt phÈm, h·y liªn hÖ khÈn víi bé phËn nghiªn cøu!!!  ", date( "%Y-%m-%d %H:%M:%S" ), ( nGoldEqVal + nDesItemValCut ) * SUM_UNIT / 100000000, GOLD_SUM_MAX_VAL * SUM_UNIT / 100000000 );
 					print( strMsg );
 					WriteLog( strMsg );
 				end
@@ -136,7 +136,7 @@ function defFinalCompound( arynNecessaryItemIdx, arynAlternativeItemIdx, nSrcIte
 				local nCommonItemVal = GetGlbValue( GLBID_COMMON_VAL_SUM );
 				SetGlbValue( GLBID_COMMON_VAL_SUM, nCommonItemVal + nDesItemValCut );
 				if( nCommonItemVal + nDesItemValCut >= COMMON_SUM_MAX_VAL ) then
-				local strMsg = format( "[¾¯±¨] %s ½ñÈÕ[ºÏ³É]µÄ×ÏÉ«×°±¸Ïà¹ØÎïÆ·µÄ¼ÛÖµ×ÜÁ¿£¨%0.2fE£©£¬ÒÑ³¬¹ı¼ÛÖµ×ÜÁ¿¾¯±¨ãĞÖµ£¨%0.2fE£©£¬¿ÉÄÜ³öÏÖË¢ÎïÆ·ÏÖÏó£¬Çë¾¡¿ìÁªÏµÑĞ·¢²¿£¡£¡£¡", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
+				local strMsg = format( " [C¶nh b¸o]%s Tæng gi¸ trŞ vËt phÈm t­¬ng quan cña Trang bŞ HuyÒn Tinh [ghĞp]h«m nay (%0.2fE) , ®· v­ît qu¸ møc c¶nh b¸o tæng gi¸ trŞ (%0.2fE) , cã thÓ xuÊt hiÖn hiÖn t­îng quĞt vËt phÈm, h·y liªn hÖ khÈn víi bé phËn nghiªn cøu!!!  ", date( "%Y-%m-%d %H:%M:%S" ), ( nCommonItemVal + nDesItemValCut ) * SUM_UNIT / 100000000, COMMON_SUM_MAX_VAL * SUM_UNIT / 100000000 );
 					print( strMsg );
 					WriteLog( strMsg );
 				end

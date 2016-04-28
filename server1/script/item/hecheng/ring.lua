@@ -26,20 +26,20 @@ function ComputeRingWorth(nCount)
 	local maxCount = 0	--ÀñÎïµÄ×ÜÊı
 	local wnum = 0
 	if(nCount == 0) then
-		Talk(1,"GiveUIForThing","<#>É¶¶¼²»¸ø£¬ÄãÏë¸ÉÉ¶Ñ½¡£")
+		Talk(1,"GiveUIForThing","<#> C¸i g× còng kh«ng ®­a, ng­¬i muèn lµm g× ®©y!")
 		return nil
 	end
 	for i=1,nCount do
 		local itemIdx = GetGiveItemUnit( i )
 		local g, d, p, l, f = GetItemProp(itemIdx)
 		if((g ~= 4 or (d < 508 or d > 518)) and (g ~= 0 or (d~=0 and d~=1 ))) then --´íÎóµÀ¾ß  --and d~=2 and d~=5 and d~=6 and d~=7
-			Talk(1,"GiveUIForThing","<#>Äã¸øµÄÊÇÏºÃ×¶«Î÷Ñ½£¬Õ¦¿´²»¶®à¿£¿")
+			Talk(1,"GiveUIForThing","<#> Ng­¬i ®­a cho ta c¸i qu¸i g× thÕ nµy?")
 			return nil
 		end
 		if(g == 0) then -- ÎäÆ÷
 			wnum = wnum + 1
 			if (wnum > 1) then	--Ö»ÄÜ·ÅÒ»¼ş×°±¸
-				Talk(1, "GiveUIForThing", "<#>ÕâÃ´¶à×°±¸£¬ÎÒ²»ÊÇÀ¬»øÍ°°¡£¬Ïû»¯²»ÁËÕâÃ´¶à¡­¡­")
+				Talk(1, "GiveUIForThing", "<#> NhiÒu trang bŞ qu¸ sao ta lµm kŞp ®©y?……")
 				return nil
 			end
 			det = d
@@ -50,7 +50,7 @@ function ComputeRingWorth(nCount)
 			function checkGiftCount(idx,count)  --¼ì²âÉñÃØµÀ¾ßµÄÊıÁ¿
 				local num = GetItemStackCount(idx)
 				if(count + num > MAXGIVENUM) then -- ÊıÁ¿Ì«¶à
-					Talk(1,"GiveUIForRing","<#>Äã¸øµÄ¶«Î÷Ì«¶à£¬¿´²»Çå°¡¡­¡­")
+					Talk(1,"GiveUIForRing","<#> Ng­¬i ®­a nhiÒu thø nh­ vËy, nh×n thÊy cho¸ng……")
 					return nil
 				end
 				return num
@@ -70,11 +70,11 @@ function ComputeRingWorth(nCount)
 		end
 	end
 	if(worth ==0) then
-		Talk(1,"GiveUIForThing","<#>¶Ô²»Æğ£¬ÖÁÉÙĞèÒªÒ»¸ö¼¦ÄêÉñÃØÀñÎï¡£")
+		Talk(1,"GiveUIForThing","<#> Xin lçi! İt nhÊt cÇn mét LÔ vËt n¨m DËu.")
 		return nil
 	end
 	if (wnum == 0) then
-		Talk(1,"GiveUIForThing","<#>¶Ô²»Æğ£¬±ØĞëÒªÒ»¼şÎäÆ÷¡£")
+		Talk(1,"GiveUIForThing","<#> Xin lçi! CÇn ph¶i cã mét mãn vò khİ.")
 		return nil
 	end
 	return worth, det, par, lvl, five
@@ -101,7 +101,7 @@ function ConvertRing(nCount)
 	--ÒÑ¾­µÃµ½ºÏÀíµÄ¼ÛÖµÁ¿£¬É¾³ıËùÓĞÎïÆ·£¬Ñ¡Ôñ¶ÔÓ¦µÄ½±Àø
 	local idx = Convert:convertring(worth, five)
 	if(not idx) then --Ê§°Ü£¬Ã»ÓĞÑ¡³öÈÎºÎ¶«Î÷
-		Talk(1,"GiveUIForThing", "<#>ÔõÃ´»áÊ§°Ü°¡£¬²»¿ÉÄÜ£¡£¡ÕâÔõÃ´»ØÊÂ£¿ÖØÀ´¡¢ÖØÀ´¡­¡­")
+		Talk(1,"GiveUIForThing", "<#> Sao l¹i thÊt b¹i? Kh«ng thÓ nµo! Lµm l¹i ®i")
 		return
 	end
 		for i=1,nCount do  --¿Û³ıËùÓĞµÀ¾ß
@@ -137,10 +137,10 @@ function PayRing(ringIdx, level, five)
 						tonumber(Convert.__ringtabfile:getCell(TF_BONUS_P6,ringIdx)),
 						tonumber(Convert.__ringtabfile:getCell(TF_BONUS_P7,ringIdx)))
 
-	WriteLog(date("%H%M%S").."£ºÕËºÅ"..GetAccount().."£¬½ÇÉ«"..GetName()..
-			"£¬¶Ò»»µÃµ½"..ringmsg[level].."£¬¼ÛÖµÁ¿Îª£º"..
+	WriteLog(date("%H%M%S")..": Tµi kho¶n"..GetAccount()..", nh©n vËt"..GetName()..
+			", ®æi ®­îc"..ringmsg[level]..", gi¸ trŞ lµ:"..
 			Convert.__ringtabfile:getCell(TF_BONUS_WORTH,ringIdx))
-	Talk(1, "", "ÄãºÏ³É³öÁËÒ»Ã¶"..ringmsg[level])
-	Msg2Player("Äã»ñµÃÒ»Ã¶"..ringmsg[level])
+	Talk(1, "", "B¹n hîp thµnh ®­îc 1 "..ringmsg[level])
+	Msg2Player("B¹n nhËn ®­îc 1 "..ringmsg[level])
 	return
 end

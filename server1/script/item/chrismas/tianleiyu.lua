@@ -1,6 +1,6 @@
 ITEMTYPE = 1; --公共道具
-szItem = "天雷玉"
-szEffect = "眩晕3秒";
+szItem = "Thi猲 L玦 Ng鋍"
+szEffect = "Cho竛g 3 gi﹜";
 nSkillId = 673;
 nSkillLevel = 20;
 nTime = 3;

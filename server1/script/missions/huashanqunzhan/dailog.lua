@@ -21,63 +21,63 @@ function huashanqunzhan_SignUpMain(nStep)
 		if nState == 1 then
 			tbSay = 
 			{
-				format("<dec><npc>%s ÒÑ¿ªÊ¼±¨Ãû£¬±¨Ãû·ÑÎª10ÍòÁ½£¬´óÏÀÍ¬ÒâÂğ?",tbReadyMission.tbRef.szMatchName),
-				 "±¨Ãû²Î¼Ó/#huashanqunzhan_SignUpMain(2)",
+				format("<dec><npc>%s ®· b¾t ®Çu b¸o danh, phİ b¸o danh lµ 10 v¹n l­îng, ®¹i hiÖp cã ®ång ı kh«ng?",tbReadyMission.tbRef.szMatchName),
+				 "B¸o danh tham gia/#huashanqunzhan_SignUpMain(2)",
 			}
 		elseif nState == 0 or nState == -1 then
 			local tbWorld = 
 			{
 				{"-","-","-"},
-				{"ÈÕ", "³¡Êı", "Ê±¼ä"},
+				{"Ngµy", "Sè trËn", "Thêi gian"},
 				{"-","-","-"},
-				{"ĞÇÆÚÒ»µ½ĞÇÆÚÎå", "2", "10:00 - 10:45"},
+				{"Thø 2 ®Õn thø 6", "2", "10:00 - 10:45"},
 				{"","", "22:00 - 22:45"},
 				{"-","-","-"},
 				{"","","10:00 - 10:45"},
-				{"ÖÜÁùºÍÖÜÈÕ", "3", "15:00 - 15:45"},
+				{"Thø 7 vµ Chñ nhËt", "3", "15:00 - 15:45"},
 				{"","","22:00 - 22:45"},
 				{"-","-","-"},
 			}
-			local szMsg = nState == 0 and "±ÈÈü»¹Î´¿ªÊ¼." or "±ÈÈüÕıÔÚ½øĞĞ."
+			local szMsg = nState == 0 and "TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau." or "TrËn ®Êu ®ang ®­îc tiÕn hµnh."
 			tbSay = 
 			{
-				"<dec><npc>"..szMsg.."±ÈÈüÊ±¼äÈçÏÂ:<enter>"..huashanqunzhan_drawtable(tbWorld),
+				"<dec><npc>"..szMsg.."Thêi gian thi ®Êu nh­ sau:<enter>"..huashanqunzhan_drawtable(tbWorld),
 			}
 		elseif nState == -2 then
 			local tbMacthMission	= tbReadyMission.tbRef
 			
 			local szWinerName		= tbMacthMission:GetMissionS(tbMacthMission.tbMissionS.WINER_INDEX)
-			local szMsg				= (szWinerName and szWinerName ~= "")  and format("È¡Ê¤Õß: <color=yellow>%s<color>", szWinerName) or "±¾³¡Ã»ÓĞÈ¡Ê¤Õß"
+			local szMsg				= (szWinerName and szWinerName ~= "")  and format("Ng­êi chiÕn th¾ng: <color=yellow>%s<color>", szWinerName) or "TrËn nµy kh«ng cã Ng­êi chiÕn th¾ng"
 			
 			tbSay = 
 			{
-				format("<dec><npc>³¡ %s ®·ÒÑ·ÖÊ¤¸º, %s", tbMacthMission.szMatchName, szMsg),
+				format("<dec><npc>TrËn %s ®· ph©n th¾ng b¹i, %s", tbMacthMission.szMatchName, szMsg),
 				
 			}
 		elseif nState == nil then
 			tbSay = 
 			{
-				"<dec><npc>50¼¶ÒÔÉÏ³äÖµÍæ¼Ò²ÅÄÜ²Î¼Ó»ªÉ½´óÕ½¡£´Ó50µ½119¼¶¿ÉÒÔ²Î¼ÓÖĞ¼¶»ªÉ½´óÕ½£¬120¼¶ÒÔÉÏ¿ÉÒÔ²Î¼Ó¸ß¼¶»ªÉ½´óÕ½¡£Äã²»¹»µÈ¼¶²Î¼Ó.",
+				"<dec><npc>Ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ míi cã thÓ tham gia Hoa S¬n §¹i ChiÕn. CÊp tõ 50 ®Õn 119 cã thÓ tham gia Hoa S¬n §¹i ChiÕn trung cÊp; cÊp 120 trë lªn cã thÓ tham gia Hoa S¬n §¹i ChiÕn cao cÊp. Ng­¬i ch­a ®ñ ®¼ng cÊp ®Ó tham gia.",
 			}
 		end		
 	elseif nStep == 2 then
 		if GetCash() < tbReadyMission.nMoney then
-			return Say(format("±¨Ãû·ÑÎª%d Á½£¬ÄãÉíÉÏµÄÒøÁ½²»¹»®ñ.", tbReadyMission.nMoney), 0)
+			return Say(format("Phİ b¸o danh lµ %d l­îng, ng©n l­îng trªn ng­êi kh«ng ®ñ.", tbReadyMission.nMoney), 0)
 		end
 		
 		
 		if tbReadyMission == nil then
-			return Say("µÈ¼¶²»¹»50£¬²»ÄÜ²Î¼Ó±¨Ãû.", 0)
+			return Say("§¼ng cÊp ch­a ®ñ 50, kh«ng thÓ tham gia b¸o danh.", 0)
 		else
 			return huashanqunzhan_SignUpStep(tbReadyMission)
 		end
 	end
 	
 	if  huashanqunzhan_CheckGetAward(tbReadyMission.tbRef) then
-		tinsert(tbSay,2,"¸øÈ¡Ê¤ÕßµÄ½±Àø./huashanqunzhan_GetAward")
+		tinsert(tbSay,2,"PhÇn th­ëng cho ng­êi chiÕn th¾ng./huashanqunzhan_GetAward")
 	end
 	
-	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay)
 end
 
@@ -87,18 +87,18 @@ function huashanqunzhan_SignUpStep(tbMission)
 	if nState == 1 then
 		tbMission:GotoReadyPlace()
 	elseif nState == 0 then
-		Say("±ÈÈü»¹Î´¿ªÊ¼.", 0)
+		Say("TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau.", 0)
 	elseif nState == -1 then
-		Say("±ÈÈü»¹Î´¿ªÊ¼.", 0)
+		Say("TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau.", 0)
 	elseif nState == -2 then
 		
 		local tbMacthMission	= tbMission.tbRef
 		local szWinerName		= tbMacthMission:GetMissionS(tbMacthMission.tbMissionS.WINER_INDEX)
-		local szMsg				= szWinerName and format("È¡Ê¤Õß: <color=yellow>%s<color>", szWinerName) or "±¾³¡Ã»ÓĞÈ¡Ê¤Õß"
+		local szMsg				= szWinerName and format("Ng­êi chiÕn th¾ng: <color=yellow>%s<color>", szWinerName) or "TrËn nµy kh«ng cã Ng­êi chiÕn th¾ng"
 		local tbSay = 
 		{
-			format("<dec><npc>³¡ %s ®·ÒÑ·ÖÊ¤¸º, %s", tbMacthMission.szMatchName, szMsg),
-			"½áÊø¶Ô»°/OnCancel"
+			format("<dec><npc>TrËn %s ®· ph©n th¾ng b¹i, %s", tbMacthMission.szMatchName, szMsg),
+			"KÕt thóc ®èi tho¹i/OnCancel"
 		}
 		CreateTaskSay(tbSay)
 	end
@@ -107,22 +107,22 @@ end
 
 function huashanqunzhan_GetAward()
 	if CalcFreeItemCellCount() < 20 then
-		return Say("×°±¸´üÒÑÂú£¬ÇëÕûÀí×°±¸È·±£ÎïÆ·°²È«.",0)
+		return Say("Tói hµnh trang ®· ®Çy, h·y dän dÑp hµnh trang ®Ó b¶o ®¶m an toµn cho vËt phÈm.",0)
 	end
 	local tbAward = 
 	{
-		{szName="À¶Ë®¾§", tbProp={4, 238, 1, 1, 0, 0}, nCount = 2},
-		{szName="ÂÌË®¾§", tbProp={4, 240, 1, 1, 0, 0}, nCount = 2},
-		{szName="×ÏË®¾§", tbProp={4, 239, 1, 1, 0, 0}, nCount = 2},
-		{szName="ĞÉºì±¦Ê¯", tbProp={4, 353, 1, 1, 0, 0}, nCount = 12},
-		{szName="ÎäÁÖÃØ¼®", tbProp={6, 1, 26, 1, 0, 0}},
-		{szName="Ï´Ëè¾­", tbProp={6, 1, 22, 1, 0, 0}},
+		{szName="Lam Thñy Tinh", tbProp={4, 238, 1, 1, 0, 0}, nCount = 2},
+		{szName="Lôc Thñy Tinh", tbProp={4, 240, 1, 1, 0, 0}, nCount = 2},
+		{szName="Tö Thñy Tinh", tbProp={4, 239, 1, 1, 0, 0}, nCount = 2},
+		{szName="Tinh Hång B¶o Th¹ch", tbProp={4, 353, 1, 1, 0, 0}, nCount = 12},
+		{szName="Vâ L©m MËt TŞch", tbProp={6, 1, 26, 1, 0, 0}},
+		{szName="TÈy Tñy Kinh", tbProp={6, 1, 22, 1, 0, 0}},
 	}
 	local nCount = GetTask(huashanqunzhan.TSK_Winer)
 	
 	tinsert(tbAward, { nJxb = 90000 * nCount})
 	
-	tbAwardTemplet:GiveAwardByList(tbAward, "»ªÉ½ÀŞÌ¨´óÕ½")
+	tbAwardTemplet:GiveAwardByList(tbAward, "L«i §µi Hoa S¬n §¹i ChiÕn")
 	SetTask(huashanqunzhan.TSK_Winer, 0)
 end
 

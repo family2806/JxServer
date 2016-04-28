@@ -8,19 +8,19 @@
 function main(sel)
 	UTask_world37=GetTask(65)
 	if ((UTask_world37==0) and (GetLevel() >= 2)) then		-- ÒªÇóµÈ¼¶³¬¹ı2¼¶
-		Say("ÎÒ¼ÒÅ£Å£Ò»Ììµ½ÍíËµÒªÈ¥µ±´óÏÀ£¬ÏÖÔÚÓÖ²»ÖªµÀÅÜµ½ÄÄÈ¥ÁË£¬ÕæÊÇ¼±ËÀÈËÁËÎÒ¼ÒÅ£Å£Ò»Ììµ½ÍíËµÒªÈ¥µ±´óÏÀ£¬ÏÖÔÚÓÖ²»ÖªµÀÅÜµ½ÄÄÈ¥ÁË£¬ÕæÊÇ¼±ËÀÈËÁË",2,"´óÉ©±ğµ£ĞÄ£¬ÎÒ°ïÄãÕÒ/yes", "²»È¥ÕÒ/no")
+		Say("Th»ng Ng­u Ng­u nhµ ta cø thİch lµm ®¹i hiÖp, b©y giê l¹i kh«ng biÕt ®· ch¹y ®i ®©u råi… ",2,"§õng lo l¾ng, ta gióp tÈu t×m /yes", "T×m kh«ng ra /no")
 	elseif (UTask_world37==2) then
-		Talk(1,"","´óÉ©±ğµ£ĞÄ£¬ÎÒ°ïÄãÕÒ")
+		Talk(1,"","§õng lo l¾ng, ta gióp tÈu t×m nã!")
 	else
-		Talk(1,"","µ½´¦¶¼²»Ì«Æ½£¬º¢×ÓÓÖ²»Ìı»°£¬ÕæÊÇ²ÙĞÄ°¡!")
+		Talk(1,"","Kh¾p n¬i ngµy cµng kh«ng yªn b×nh, con ta l¹i kh«ng nghe lêi, thËt lµ buån lßng!")
 	end
 end;
 
 function yes()
-	Talk(1,"","ÄãÕæÊÇºÃÈË£¬¾ÍÂé·³Äã°ïÃ¦ÁË")
+	Talk(1,"","Ng­¬i thËt lµ ng­êi tèt, vËy th× lµm phiÒn gióp ta nhĞ!")
 	SetTask(65,2)
-	AddNote("½ÓÈÎÎñ£º°ïÅ£Å£ÂèÕÒº¢×Ó")
-	Msg2Player("½ÓÈÎÎñ£º°ïÅ£Å£ÂèÕÒº¢×Ó")
+	AddNote("NhËn nhiÖm vô: gióp mÑ Ng­u Ng­u t×m con trai ")
+	Msg2Player("NhËn nhiÖm vô: gióp mÑ Ng­u Ng­u t×m con trai ")
 end
 
 function no()

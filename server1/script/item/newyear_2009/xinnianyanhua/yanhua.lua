@@ -5,12 +5,12 @@ function main()
 	
 	local n_date	= tonumber(GetLocalDate("%Y%m%d"));
 	if (n_date >= 20090216) then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÆÚ.", 0);
+		Say("VËt phÈm nµy ®· qu¸ h¹n.", 0);
 		return 0;
 	end
 	
 	if (GetTask(newyear0901_TSK_GetExp_Yanhua) + 200 > 20000) then
-		Say("´óÏÀÒÑ´ïµ½×î¸ß¾­Ñé£¬Òò´Ë£¬²»ÄÜÔÙÊ¹ÓÃÓ­´ºÑÌ»¨ÁË.", 0);
+		Say("§¹i hiÖp ®· ®¹t ®Õn kinh nghiÖm cao nhÊt, v× vËy kh«ng thÓ sö dông thªm Ph¸o Hoa Mõng Xu©n.", 0);
 		return 1;
 	end
 	SetTask(newyear0901_TSK_GetExp_Yanhua, GetTask(newyear0901_TSK_GetExp_Yanhua) + 200);

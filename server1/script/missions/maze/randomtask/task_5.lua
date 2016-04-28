@@ -1,4 +1,4 @@
--- 5.	24¸ö±¦Ïä£¬½Ğ×ö½£Ú£ÃØ±¦£¬Ã¿´ò¿ª1¸ö¾Í»á³öÏÖ3¸ö»áÑ£ÔÎµÄ¹ÖÎïîÚÁúµÜ×Ó£¬°Ñ½£Ú£ÃØ±¦¿ªÍê°ÑîÚÁúµÜ×ÓÉ±Íêºó¹ı¹Ø¡£
+-- 5.	24¸ö±¦Ïä£¬½Ğ×öKiÕm Gia Bİ B¶o£¬Ã¿´ò¿ª1¸ö¾Í»á³öÏÖ3¸ö»áÑ£ÔÎµÄ¹ÖÎïîÚÁúµÜ×Ó£¬°ÑKiÕm Gia Bİ B¶o¿ªÍê°ÑîÚÁúµÜ×ÓÉ±Íêºó¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -15,7 +15,7 @@ function pTask:OnStart()
 	self.m_Monsters = {}
 	local pos = self:GetPosition().t5_box
 	for i = 1, self.m_BoxCount do
-		local nNpcIndex = DlgNpcManager:AddNpc("½£Ú£ÃØ±¦", 1698, self:GetMapId(), pos[i].x, pos[i].y, self, i)
+		local nNpcIndex = DlgNpcManager:AddNpc("KiÕm Gia Bİ B¶o", 1698, self:GetMapId(), pos[i].x, pos[i].y, self, i)
 		if (nNpcIndex <= 0) then
 			self:LogError("TASK5: failed to create box npc")
 		end
@@ -58,7 +58,7 @@ function pTask:Say(pPlayer, nIndex)
 	if (tb.NpcIndex == 0) then
 		return
 	end
-	local nId = ProgressBarList:Open("ÕıÔÚ´ò¿ª", pPlayer, 3, self, tb)
+	local nId = ProgressBarList:Open("§ang më", pPlayer, 3, self, tb)
 	if (nId <= 0) then
 		self:LogError("TASK5: failed to open progressbar")
 	end
@@ -79,13 +79,13 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 	if (tb.NpcIndex == 0) then
 		return
 	end
-	self:BroadCast("³É¹¦´ò¿ª.")
+	self:BroadCast("Më thµnh c«ng.")
 	local task5_npc_tb = {1654,1796}
 	local pos = self:GetPosition().t5_box
 	for i = 1, 3 do
 		local nIndex = getn(self.m_Monsters) + 1
 		local nNpcId = task5_npc_tb[random(1, getn(task5_npc_tb))]
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúµÜ×Ó", nNpcId, self:GetMapId(), pos[tb.Index].x, pos[tb.Index].y, self, nIndex, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long §Ö Tö", nNpcId, self:GetMapId(), pos[tb.Index].x, pos[tb.Index].y, self, nIndex, 1, 1)
 		if (nNpcIndex <= 0) then
 			self:LogError("TASK5: failed to create monster npc")
 		end
@@ -101,7 +101,7 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 end
 
 function pTask:OnProgressbarBreak(nId, tb)
-	self:BroadCast("´ò¿ªÊ§°Ü.")
+	self:BroadCast("Më thÊt b¹i.")
 	self:CleanTimer(nId, tb)
 end
 

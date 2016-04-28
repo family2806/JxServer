@@ -94,7 +94,7 @@ function tbMission:StartGame()
 	
 	if nMapIndex >= 0 then
 		if self:GetMissionV(self.tbMissionV.MISSION_STATE) ~= 0 then
-			self:Debug("…œ¥ŒŒ¥πÿ")
+			self:Debug("L«n tr≠Ìc v…n ch≠a tæt")
 			self:CloseGame()
 		end
 		doFunInWorld(nMapIndex, OpenMission, self.nMissionId)

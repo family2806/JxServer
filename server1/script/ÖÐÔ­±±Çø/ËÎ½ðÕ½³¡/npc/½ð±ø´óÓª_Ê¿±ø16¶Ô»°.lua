@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("Ê¿±ø£ºËÎÈËµÄ»ÊµÛÕæÊÇÃ»ÓÃ£¬ÎÒÃÇ½ğ±øÄÏÏÂ£¬Ò²ËãÊÇË³Ó¦ÌìÃü°É£¿¹ş¹ş£¡",0)
+Say("Hoµng ®Õ nhµ Tèng lµ kÎ v« dông, qu©n Kim ta Nam h¹, còng lµ thuËn víi mÖnh trêi, ha ha!",0)
 
 end;
 

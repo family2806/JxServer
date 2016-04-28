@@ -70,12 +70,12 @@ function Tree:Dialog()
 	end
 	
 	if nState < getn(self.STATE2FEATURE) then
-		Talk(1,"","Ä¿Ç°ÒÀÈ»»¹Î´ÄÜÊÕ»ñ£¬Çë¼ÌĞøµÈ´ı!")
+		Talk(1,"","HiÖn t¹i vÉn ch­a thu ho¹ch ®­îc, xin h·y kiªn nhÉn chê ®îi!")
 		return
 	end
 	
 	if nState > getn(self.STATE2FEATURE) then
-		Talk(1,"","´óÏÀÒÑÊÕ»ñÁË£¬Ê÷ÉÏÃ»ÓĞ¹ûÁË!")
+		Talk(1,"","§¹i hiÖp ®· thu ho¹ch råi, trªn c©y kh«ng cßn lo¹i qu¶ nµo n÷a!")
 		return
 	end
 	
@@ -94,7 +94,7 @@ function Tree:GetAward(nNpcIndex)
 end
 function Tree:CheckOwner(nNpcIndex, szOwner)
 	if format(self.szNameSuffix, szOwner) ~= GetNpcName(nNpcIndex) then
-		Talk(1, "", "Õâ²»ÊÇÄãÖÖµÄÊ÷.")
+		Talk(1, "", "§©y kh«ng ph¶i lµ c©y b¹n trång.")
 		return
 	end
 	return 1

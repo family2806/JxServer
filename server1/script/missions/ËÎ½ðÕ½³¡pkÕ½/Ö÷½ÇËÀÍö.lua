@@ -18,7 +18,7 @@ if (PlayerIndex1 > 0) then
 	pkcount = GetTask(SJKILLPK) + 1;
 	SetTask(SJKILLPK, pkcount);
 	SetTask(MS_TOTALPK, GetTask(MS_TOTALPK) + 1);
-	str  = "<#>½ğ±ø"..LaunName.."<#>ÖØÉËÁËËÎ¾ü"..DeathName.."<#>£¬PKÈËÊıÔöÎª"..pkcount;
+	str  = "<#>Tèng binh "..LaunName.."<#>®· ®¸nh träng th­¬ng Kim binh"..DeathName.."<#>chØ sè PK t¨ng lªn "..pkcount;
 	Msg2MSAll(1,str);
 	PlayerIndex = OrgPlayer;
 end;

@@ -17,7 +17,7 @@ local myCamp = nt_getCamp()
 		task_level20_00();
 		return
 	elseif (myTaskValue == 20) then
-		Say("»¹²»È¥£¿²Ì¹«¹«ÔÚÁÙ°²»Ê¹¬³ÇÃÅÅÔ±ß.",0);
+		Say("Cßn ch­a chiu ®i? Th¸i C«ng c«ng ë c¹nh thµnh m«n hoµng cung ë L©m An.",0);
 		return
 	elseif (myTaskValue == 50) then -- Óëãê¾©µÄ²Ì¹«¹«¶Ô»°½áÊø£¬µÃµ½ÌìÏãÓñÖ¬¸à
 		task_level30_01();
@@ -28,6 +28,6 @@ local myCamp = nt_getCamp()
 	end
 
 	
-	Say("¿´ÄãÀáÁ÷ÂúÃæ£¬ÎÒºÜã°âê£¬Èç¹ûÏÖÔÚÊÇÌ«Æ½Ê±´ú¸ÃÓĞ¶àºÃ!",0);
+	Say("Nh×n n­íc ch¶y d­íi cÇu khiÕn ta cø thÊy lßng m×nh b©ng khu©ng! Gi¸ nh­ hiÖn giê lµ thêi b×nh th× hay biÕt mÊy!",0);
 
 end

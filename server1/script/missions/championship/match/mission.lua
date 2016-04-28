@@ -61,7 +61,7 @@ function OnLeave(RoleIndex)
 	SetPKFlag(0)
 	org_name = GetName()
 	WriteLog("****************************************************************************")
-	WriteLog("ÕÊº“["..org_name.."]œ÷‘⁄≥…º® «£∫ §"..nt_gettask(CP_TASKID_WIN)..", ∞‹"..nt_gettask(CP_TASKID_LOSE)..", ∫Õ"..nt_gettask(CP_TASKID_TIE)..", ◊Ó÷’Ω·π˚"..nt_gettask(CP_TASKID_POINT))
+	WriteLog("Ng≠Íi ch¨i ["..org_name.."] thµnh t›ch hi÷n tπi lµ: thæng"..nt_gettask(CP_TASKID_WIN)..", thua"..nt_gettask(CP_TASKID_LOSE)..", hﬂa"..nt_gettask(CP_TASKID_TIE)..", chung cuÈc"..nt_gettask(CP_TASKID_POINT))
 	camp = GetCamp();
 	SetCurCamp(camp);
 	SetCreateTeam(1);
@@ -88,15 +88,15 @@ function OnLeave(RoleIndex)
 	nt_settask(CP_TASKID_POINT, nt_gettask(CP_TASKID_POINT) + 3)
 	Ladder_NewLadder(checkmap(2), GetName(), nt_gettask(CP_TASKID_POINT), 1)
 	nt_settask(CP_TASKID_WIN, nt_gettask(CP_TASKID_WIN) + 1)
-	Msg2Player("ƒ„“— §<color=green>"..org_name.."<color>, µ√3∑÷Ω±¿¯")
+	Msg2Player("Bπn Æ∑ thæng<color=green>"..org_name.."<color>, Æ≠Óc 3 Æi”m th≠Îng")
 	nt_settask(CP_TASKID_FLAG, 1)
-	WriteLog("ÕÊº“ ["..org_name.."]œ÷‘⁄µƒ≥…º® «£∫ §"..nt_gettask(CP_TASKID_WIN)..", ∞‹"..nt_gettask(CP_TASKID_LOSE)..", ∫Õ"..nt_gettask(CP_TASKID_TIE)..", chung cuÈc"..nt_gettask(CP_TASKID_POINT))
+	WriteLog("Ng≠Íi ch¨i ["..org_name.."] thµnh t›ch hi÷n tπi lµ: thæng"..nt_gettask(CP_TASKID_WIN)..", thua"..nt_gettask(CP_TASKID_LOSE)..", hﬂa"..nt_gettask(CP_TASKID_TIE)..", chung cuÈc"..nt_gettask(CP_TASKID_POINT))
 	AddAword(GetLevel(), 20, 2)
 	tryout_mapid = SubWorldIdx2ID(SubWorld) - 1
 	DelMSPlayer(MISSIONID, eny_index, eny_camp)
 	NewWorld(tryout_mapid, CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])
 	PlayerIndex = oldindex
-	Msg2SubWorld("—° ÷<color=cyan>"..eny_name.."<color>’Ω § <color=green>"..org_name.."<color> »°µ√ §¿˚")
-	WriteLog("—° ÷<color=cyan>"..eny_name.."<color>’Ω § <color=green>"..org_name.."<color> »°µ√ §¿˚")
+	Msg2SubWorld("tuy”n thÒ <color=cyan>"..eny_name.."<color> chi’n thæng <color=green>"..org_name.."<color> giµnh Æ≠Óc  thæng lÓi")
+	WriteLog("tuy”n thÒ <color=cyan>"..eny_name.."<color> chi’n thæng <color=green>"..org_name.."<color> giµnh Æ≠Óc  thæng lÓi")
 	WriteLog("****************************************************************************")
 end;

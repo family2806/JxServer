@@ -1,5 +1,5 @@
--- ÓĞ¸ö±ëº·µÄNPCÂ·±ëÀ¹Â·£¬ÒªÇóĞèÒª½ÉÄÉ50ÍòÒøÁ½£¬²»½»Ôò»áÕÙ»½³öÂ·±ëÊÖÏÂ£¬Òª´òËÀNPCºÍ30¸öĞ¡¹Ö²ÅÄÜ¹ı¹Ø¡£
--- Èç¹û½»ÁËÇ®Ôò»¹»áÒªÇóÉÏ½»Ä³¼şËæ»úÎïÆ·£¨ËÎ½ğÚ¯Êé¡¢Îå»¨ÓñÂ¶Íè¡¢ÌìÉ½ÓñÂ¶¡¢Ğş¾§3-8¼¶¡¢3ÖÖË®¾§¡¢¸÷ÖÖ1¼¶×°±¸£©£¬½»Ôò¹ı¹Ø£¬²»½»Ôò»á±ä³ÉÕ½¶·NPC£¬É±ËÀ²ÅÄÜ¹ı¹Ø¡£
+-- ÓĞ¸ö±ëº·µÄNPCLé B­uÀ¹Â·£¬ÒªÇóĞèÒª½ÉÄÉ50ÍòÒøÁ½£¬Kh«ng giao népÔò»áÕÙ»½³öThñ H¹ Lé B­u£¬Òª´òËÀNPCºÍ30¸öĞ¡¹Ö²ÅÄÜ¹ı¹Ø¡£
+-- Èç¹ûGiao népÁËÇ®Ôò»¹»áÒªÇóÉÏGiao népÄ³¼şËæ»úÎïÆ·£¨Tèng Kim ChiÕu Th­ ¡¢Ngò Hoa Ngäc Lé Hoµn¡¢ÌìÉ½ÓñÂ¶¡¢HuyÒn Tinh cÊp 3-8¡¢Mét trong 3 lo¹i Thñy Tinh¡¢Trang bŞ cÊp 1£©£¬Giao népÔò¹ı¹Ø£¬Kh«ng giao népÔò»á±ä³ÉÕ½¶·NPC£¬É±ËÀ²ÅÄÜ¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -11,17 +11,17 @@ pTask = Task:New(9)
 pTask.m_BossId = 1701
 pTask.m_MonsterId = 1702
 pTask.m_Items = {
-	"ËÎ½ğÚ¯Êé",
-	"Îå»¨ÓñÂ¶Íè",
-	"ÌìÉ½ÓñÂ¶ ",
-	"Ğş¾§3-8¼¶",
-	"3ÖÖË®¾§",
-	"¸÷ÖÖ1¼¶×°±¸"
+	"Tèng Kim ChiÕu Th­ ",
+	"Ngò Hoa Ngäc Lé Hoµn",
+	"Thiªn s¬n  B¶o Lé ",
+	"HuyÒn Tinh cÊp 3-8",
+	"Mét trong 3 lo¹i Thñy Tinh",
+	"Trang bŞ cÊp 1"
 }
 
 function pTask:OnStart()
 	local pos_boss = self:GetPosition().t9_boss
-	local nIndex = DlgNpcManager:AddNpc("Â·±ë", m_BossId, task:GetMapId(), pos_boss.x, pos_boss.y, self)
+	local nIndex = DlgNpcManager:AddNpc("Lé B­u", m_BossId, task:GetMapId(), pos_boss.x, pos_boss.y, self)
 	if (nNpcIndex <= 0) then
 		self:LogError("TASK9: failed to create dialog npc")
 		return
@@ -57,9 +57,9 @@ end
 
 function pTask:Say(player)
 	if (self.m_Step == 1) then
-		return "Çë½» <color=red> 50 Íò<color>Á½", {"½»", "²»½»", "ÈÃÎÒÏëÏë®·!"}
+		return "H·y giao nép <color=red> 50 v¹n <color> l­îng", {"Giao nép", "Kh«ng giao nép", "§Ó ta suy nghÜ l¹i ®·!"}
 	elseif (self.m_Step == 2) then
-		return format("Çë¸øÎÒ<color=red>%s<color>.", self.m_Items[self.m_Want]), {"¸ø ", "²»¸ø! ", "ÈÃÎÒÏëÏë®·!"}
+		return format("H·y cho ta<color=red>%s<color>.", self.m_Items[self.m_Want]), {"Cho ", "Kh«ng cho! ", "§Ó ta suy nghÜ l¹i ®·!"}
 	end
 end
 
@@ -67,7 +67,7 @@ function pTask:BossChange()
 	local pos_boss = self.m_Task:GetPosition().t9_boss
 	DlgNpcManager:DelNpc(self.m_DlgBossIndex)
 	self.m_DlgBossIndex = 0
-	self.m_FightBossIndex = FightNpcManager:AddNpc("Â·±ë", self.m_Task.m_BossId, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
+	self.m_FightBossIndex = FightNpcManager:AddNpc("Lé B­u", self.m_Task.m_BossId, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
 end
 
 function pTask:OnAnswer(player, sel)
@@ -86,13 +86,13 @@ function pTask:OnAnswer1(player, sel)
 			self.m_Step = 2
 			return self:Say(player)
 		else
-			player:Say("Î¹£¬Î¹£¬Ç®ÄØ?")
+			player:Say("Nµy nµy, tiÒn ®©u?")
 		end
 	elseif (sel == 2) then
 		self:BossChange()
 		self.m_Monsters = {}
 		for i = 1, 30 do
-			local nNpcIndex = FightNpcManager:AddNpc("Â·±ëÊÖÏÂ", self.m_Task.m_MonsterId, self:GetMapId(), pos_monster.x, pos_monster.y, self, i, 1, 1)
+			local nNpcIndex = FightNpcManager:AddNpc("Thñ H¹ Lé B­u", self.m_Task.m_MonsterId, self:GetMapId(), pos_monster.x, pos_monster.y, self, i, 1, 1)
 			tinsert(self.m_Monsters, nNpcIndex)
 		end
 	end
@@ -104,9 +104,9 @@ function pTask:OnAnswer2(player, sel)
 	elseif (sel == 1) then
 		local item =  self:FindItem(player)
 		if (not item) then
-			player:Say(format("ÄãÃ»ÓĞ color=red>%s<color>.", self.m_Items[self.m_Want]))
+			player:Say(format("Ng­¬i kh«ng cã<color=red>%s<color>.", self.m_Items[self.m_Want]))
 		elseif (self:DelItem(player, item) ~= 1) then
-			player:Say(format("Î¹, <color=red>%s<color> ÄãµÄÓĞÎÊÌâ®Ò.", self.m_Items[self.m_Want]))
+			player:Say(format("Nµy, <color=red>%s<color> cña ng­¬i cã vÊn ®Ò.", self.m_Items[self.m_Want]))
 		else
 			self:Proceed()
 		end

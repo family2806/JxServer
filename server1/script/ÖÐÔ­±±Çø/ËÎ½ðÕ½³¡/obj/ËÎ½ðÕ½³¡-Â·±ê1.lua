@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("宋金战场<——>汴京", 0)
+Say("Chi課 trng T鑞g Kim<---->Chu Ti猲 tr蕁", 0)
 
 end;

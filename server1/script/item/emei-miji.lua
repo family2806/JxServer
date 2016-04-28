@@ -8,10 +8,10 @@ function main(sel)
 	times = mod(GetTask(80),16)
 	party = GetLastAddFaction()
 	str={
-		"ÄãÄÃ×Å¡¶¶ëáÒÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÊ²Ã´Ò²Ã»ÓĞÁìÎòµ½¡£",
-		"ÄãÄÃ×Å¡¶¶ëáÒÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÁìÎòÉõÉÙ£¬Ã»Ê²Ã´Ğ§¹û¡£",
-		"ÄãÄÃ×Å¡¶¶ëáÒÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹û»ñµÃÁËÒ»Ğ©¹ØÓÚÎä¹¦µÄĞÄµÃ¡£",
-		"ÄãÒÑ¾­°Ñ¡¶¶ëáÒÃØ¼®¡·×êÑĞÍ¸³¹£¬´ÓÖĞÔÙÒ²µÃ²»µ½ÈÎºÎĞÄµÃ¡£"
+		"B¹n cÇm quyÓnNga Mi MËt TŞchnghiªn cøu ®· nöa ngµy, kÕt qu¶ kh«ng lÜnh ngé ®­îc g×. ",
+		"B¹n cÇm quyÓnNga Mi MËt TŞchnghiªn cøu ®· nöa ngµy, kÕt qu¶ lÜnh ngé chót İt. ",
+		"B¹n cÇm quyÓnNga Mi MËt TŞchnghiªn cøu ®· nöa ngµy, kÕt qu¶ ®¹t ®­îc mét vµi ®iÒu t©m ®¾c ",
+		"B¹n ®· ®äcNga Mi MËt TŞchrÊt kü, ngé ra ®­îc mét vµi ®iÒu t©m ®¾c. "
 		}
 	if(party ~= "emei") then     -- ²»ÊÇ¶ëáÒÅÉ 
 		Msg2Player(str[1])

@@ -10,24 +10,24 @@ function isValentine2007()
 end;
 
 function Valentine2007_main()
-	Say("ÔÂÀÏ£º²»Öª´ÓºÎÊ±Æğ£¬½­ĞÂ´åÓÖ¿ªÊ¼Ò»¹ÉÄÇÃ´ÌğÃÛµÄ¿ÕÆø¡£ÎªÇì×£Õâ¸öÌØ±ğµÄ½ÚÈÕ£¬ÀÏ·ò½«ËÍ¸ø¸÷Î»´óÏÀÒ»Ğ© <color=yellow>Ãµ¹åÖÖ×Ó<color>. ¸÷Î»¿ÉÒÔºÍÄÇ¸öÈËµ½É½ÇåË®ĞãÖ®µØ£¬×Ô¼ºÖÖ<color=yellow>Ãµ¹åÊ÷<color> ¸ø×Ô¼º.", 3,
-			"ºÃ£¬ÎÒÏëÁìÃµ¹åÖÖ×Ó/want_take_roseseed",
-			"ÎÒÏëÁË½âÇéÈË½Ú»î¶¯/about_valentine2007", 
-			"ÎÒÉÔºò»ØÀ´/no");
+	Say("NguyÖt L·o: Kh«ng biÕt tõ bao giê, Giang T©n Th«n l¹i b¾t ®Çu mét bÇu kh«ng khİ ngät ngµo ®Õn thÕ. §Ó chóc cho ngµy lÔ ®Æc biÖt nµy, l·o phu sÏ tÆng cho c¸c vŞ ®¹i hiÖp mét İt <color=yellow>H¹t hoa hång<color>. C¸c vŞ cã thÓ cïng 'ng­êi Êy' ®Õn nh÷ng n¬i s¬n thanh thñy tó, tù tay trång <color=yellow>c©y hoa hång<color> cho riªng m×nh.", 3,
+			"V©ng, ta muèn nhËn h¹t hoa hång/want_take_roseseed",
+			"Ta muèn t×m hiÓu ho¹t ®éng LÔ T×nh Nh©n/about_valentine2007", 
+			"Ta sÏ quay l¹i sau/no");
 end;
 
 function want_take_roseseed()
 	if (checkValentine2007Limit() ~= 1) then
-		Say("ÔÂÀÏ£ºÕæÊÇ²»ºÃÒâË¼£¬ÀÏ·òÖ»ËÍÃµ¹åÖÖ×Ó¸øÍæ¼Ò<color=yellow>80¼¶ÒÔÉÏÇÒ³äÖµ<color>.", 0);
+		Say("NguyÖt L·o: ThËt ng¹i qu¸, l·o phu chØ tÆng H¹t hoa hång cho nh÷ng ng­êi ch¬i <color=yellow>cÊp trªn 80 ®· n¹p thÎ<color>.", 0);
 		return 0;
 	end;
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	if (GetTask(TSK_VALENTINE_ROSE_DATE) ~= nDate) then
-		Say("ÔÂÀÏ: <color=yellow>´Ó13/02/2007 µ½15/02/20007<color>, 80¼¶ÒÔÉÏÇÒ³äÖµµÄÎäÁÖÈËÊ¿¿ÉÒÔÕÒÀÏ·òÁìÈ¡<color=yellow>1<color> Ãµ¹åÖÖ×Ó£¬ÄãÏëÁìÈ¡Âğ?", 2, 
-		"ÊÇµÄ£¬ÎÒÏëÁìÈ¡Ãµ¹åÖÖ×Ó/sure_task_roseseed",
-		"ÎÒÓĞÊÂÒª×ßÁË/no");
+		Say("NguyÖt L·o: <color=yellow>Tõ 13/02/2007 ®Õn hÕt 15/02/20007<color>, c¸c nh©n sü vâ l©m cÊp trªn 80 ®· n¹p thÎ míi cã thÓ t×m l·o phu ®Ó nhËn <color=yellow>1<color> h¹t hoa hång, b¹n muèn nhËn kh«ng?", 2, 
+		"V©ng, ta muèn nhËn h¹t hoa hång/sure_task_roseseed",
+		"Ta cã viÖc ph¶i ®i/no");
 	else
-		Say("ÔÂÀÏ£ºÃ¿ÌìÖ»ÄÜ»ñµÃ<color=yellow>1<color> Ãµ¹åÖÖ×Ó¡£½ñÌìÄã²»ÊÇÒÑ¾­Áì¹ıÁËÂğ?", 0);
+		Say("NguyÖt L·o: Mçi ngµy chØ cã thÓ nhËn ®­îc <color=yellow>1<color> h¹t hoa hång. H«m nay ch¼ng ph¶i ng­¬i ®· nhËn råi hay sao?", 0);
 	end;
 end;
 
@@ -37,14 +37,14 @@ function sure_task_roseseed()
 		if (GetTask(TSK_VALENTINE_ROSE_DATE) ~= nDate) then
 			AddItem(6,1,1361,1,0,0);
 			SetTask(TSK_VALENTINE_ROSE_DATE, nDate)
-			WriteLog(format("[L?Tinh Nh©n 2007]\t%sName:%s\tAccount:%s\t ÒÑÁì¹ı1¿ÅÃµ¹åÖÖ×Ó.", GetLocalDate("%Y-%m-%d %H:%M:%S"), GetName(), GetAccount()));
-			Say("ÔÂÀÏ£ºÃµ¹åÖÖ×ÓÔÚÕâ£¬Çë¿ìÈ¥ÕÒÄÇÒ»°ëÀ´ÖÖÃµ¹åÊ÷.", 0);
+			WriteLog(format("[LÔ Tinh Nh©n 2007]\t%sName:%s\tAccount:%s\t ®· nhËn 1 h¹t hoa hång.", GetLocalDate("%Y-%m-%d %H:%M:%S"), GetName(), GetAccount()));
+			Say("NguyÖt L·o: H¹t hoa hång ®©y, h·y mau t×m mét n÷a kia ®Ó trång c©y hoa hång ®i.", 0);
 		end;
 	end;
 end;
 
 function about_valentine2007()
-	Say("ÔÂÀÏ£ºÔÚ»î¶¯ÆÚ¼ä£¬80¼¶ÒÔÉÏ³äÖµÍæ¼ÒÃ¿Ìì¿ÉÒÔ»ñµÃÒ»¿ÅÃµ¹åÖÖ×Ó£¬ÓëÆäËûÅÉ±ğµÄÍæ¼Ò×é¶ÓÒ»ÆğÖÖ»¨¡£ÔÚÖÖµÄÊ±ºò£¬ÔÚÊ÷ÉÏ»á³öÏÖ±ê¼Ç£¬µã»÷Ãµ¹åÊ÷»ñÈ¡Ò»¸ö½½Ë®¡¢Ê©·Ê¡¢³ı²İ¡¢Çı³æÈÎÎñ£¬Èç¹ûÔÚ¹æ¶¨Ê±¼äÄÚÍê³ÉÈÎÎñ£¬²Ù×÷Ô½ÕıÈ·£¬Ãµ¹å»¨»á¸üÃÀÀö¡£¿ìÈ¥²Î¼Ó°É!", 0);
+	Say("NguyÖt L·o: Trong thêi gian ho¹t ®éng, ng­êi ch¬i cÊp trªn 80 ®· n¹p thÎ mçi ngµy cã thÓ nhËn ®­îc 1 h¹t hoa hång. Cïng tæ ®éi víi mét ng­êi ch¬i kh¸c ph¸i ®Ó cïng nhau trång hoa. Trong khi trång, trªn ngän c©y sÏ xuÊt hiÖn 'dÊu chÊm than', nhÊp vµo c©y hoa hång ®Ó nhËn ®­îc mét nhiÖm vô T­íi n­íc, Bãn ph©n, C¾t cá d¹i, DiÖt s©u bä. NÕu ®«i b¹n hoµn thµnh nhiÖm vô trªn trong thêi gian quy ®Şnh, thao t¸c cµng chİnh x¸c, hoa hång sÏ cµng rùc rì. H·y mau chãng tham gia!", 0);
 end;
 
 

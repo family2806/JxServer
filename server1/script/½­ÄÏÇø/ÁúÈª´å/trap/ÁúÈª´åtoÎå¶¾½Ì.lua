@@ -6,6 +6,6 @@ function main(sel)
 		SetFightState(1);
 		NewWorld(183, 1371, 3677);
 	else
-		Talk(1,"","«∞∑ΩŒ£œ’! «Îªÿ»•–ﬁ¡∂!")
+		Talk(1,"","Ph›a tr≠Ìc nguy hi”m! Xin h∑y quay v“ rÃn luy÷n th™m!")
 	end
 end;

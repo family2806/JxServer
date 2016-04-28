@@ -4,12 +4,12 @@ Include("\\script\\tong\\tong_header.lua")
 function main()
 	local _, nTongID = GetTongName();
 	if (nTongID == 0) then
-		Msg2Player("Õâ¸ö¿´ÉÏÈ¥ºÃÏñÊÇµ¾²İÈË(»¹Î´Èë°ï»áÎŞ·¨²Î¼Ó·é»ğÓ¢ĞÛÁî»î¶¯)");
+		Msg2Player("§©y h×nh nh­ lµ ng­êi r¬m (ch­a gia nhËp bang kh«ng thÓ tham gia ho¹t ®éng Phong Háa Anh Hïng LÖnh)");
 	else
 		if (TONG_GetTaskValue(nTongID, TONGTSK_HEROLING) < 120) then
-			Msg2Player("°ï»áµÄ·é»ğÓ¢ĞÛÁîÎ´»ıÀÛ¹»120¸ö£¬²»ÄÜ¼ì²éµ¾²İÈË.");
+			Msg2Player("Phong Háa Anh Hïng LÖnh cña bang héi tİch lòy kh«ng ®ñ 120 c¸i, kh«ng thÓ kiÓm tra ng­êi r¬m.");
 		else
-			Msg2Player("¼ì²éÍêµ¾²İÈË, ĞèÒª5·ÖÖÓ");
+			Msg2Player("KiÓm tra xong ng­êi r¬m, cÇn kho¶ng 5 phót");
 		end;
 	end;
 end;

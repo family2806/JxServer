@@ -3,10 +3,10 @@ function PickUp( nItemIndex, nPlayerIndex )
 	local size = GetTeamSize();
 	local mySex = GetSex();
 	if(size < 2) then
-		Msg2Player("¹Â¶ÀµÄÈËÊ°È¡Å¨ÇéÃµ¹å»¨Ã»ÓÐÐ§¹û¡£");
+		Msg2Player("Ng­êi c« ®¬n nhÆt hoa hång t×nh yªu kh«ng ®em l¹i hiÖu qu¶. ");
 		return 0;
 	elseif(size > 2) then
-		Msg2Player("Ö»ÓÐ1ÄÐ1Å®×é¶ÓÊ°È¡Å¨ÇéÃµ¹å»¨²ÅÓÐ½±Àø¡£");
+		Msg2Player("ChØ cã mét nam mét n÷ lËp ®éi nhÆt hoa hång t×nh yªu míi nhËn ®­îc phÇn th­ëng.");
 		return 0;
 	else
 		for i = 1, size do
@@ -17,7 +17,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 			end
 		end
 		PlayerIndex = oldPlyIdx;
-		Msg2Player("Ö»ÓÐ1ÄÐ1Å®×é¶ÓÊ°È¡Å¨ÇéÃµ¹å»¨²ÅÓÐ½±Àø¡£");
+		Msg2Player("ChØ cã mét nam mét n÷ lËp ®éi nhÆt hoa hång t×nh yªu míi nhËn ®­îc phÇn th­ëng.");
 		return 0;
 	end
 end
@@ -30,9 +30,9 @@ function GiveExp(oldPlyIdx,size)
 		if(GetTask(1562) >= 99 ) then
 			AddItem(6,1,833,1,0,0);
 			SetTask(1562, 0);
-			Msg2Player("ÄãÒÑÊ°È¡ÁË99¶äÅ¨ÇéÃµ¹å»¨£¬µÃµ½1¿é°®ÁµÇÉ¿ËÁ¦£¬Ê°È¡ÊýÇåÁã¡£");
+			Msg2Player("B¹n ®· nhÆt ®­îc 99 ®ãa hoa hång t×nh yªu, nhËn ®­îc mét S«c«la, sè l­îng nhÆt ®­îc trë vÒ 0.");
 		end		
-		Msg2Player("ÄãÒÑ¾­Ê°È¡ÁË"..GetTask(1562).."¶äÅ¨ÇéÃµ¹å»¨");
+		Msg2Player("B¹n ®· nhÆt ®­îc"..GetTask(1562).."®ãa hoa hång t×nh yªu");
 		local level = GetLevel();
 		local exp_level = floor(level / 10) + 1;
 		if(exp_level > 11) then

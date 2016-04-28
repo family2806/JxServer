@@ -3,7 +3,7 @@ Include("\\script\\lib\\compose_jinnang.lua")
 
 local tbCrystal = tbBaseClass:new()
 
-tbCrystal.szName = "Ë®¾§"
+tbCrystal.szName = "Thñy Tinh"
 function tbCrystal:_init(nCount)
 	
 	self.nCount = nCount
@@ -30,25 +30,25 @@ tbGuoqing0908.tbFormulaList =
 	{
 		tbMaterial = 
 		{
-			{szName="·çÒÂÃ±", tbProp={6, 1, 2097}, nCount = 5},
-			{szName="Ğş¾§¿óÊ¯(2¼¶)", tbProp={6, 1, 147, 2}},
+			{szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2097}, nCount = 5},
+			{szName="HuyÒn tinh kho¸ng th¹ch (cÊp 2)", tbProp={6, 1, 147, 2}},
 			{nJxb = 6e4},
 		},
-		tbProduct = {szName="·çÒÂÃ±", tbProp={6, 1, 2098, 1, 0, 0}, nExpiredTime = 20090914}
+		tbProduct = {szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2098, 1, 0, 0}, nExpiredTime = 20090914}
 		
 	},
 	[2] =
 	{
 		tbMaterial = 
 		{
-			{szName="ºÍÆ½Ã±", tbProp={6, 1, 2098}},
+			{szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2098}},
 			tbCrystal:new(1),
 		},
 		tbProduct = 
 		{
-			szName = "×ÔÓÉÃ±", 
-			[1] = {szName="×ÔÓÉÃ±", tbProp={6, 1, 2099, 1, 0, 0}, nExpiredTime = 20090914, nRate = 95},
-			[2] = {szName="ĞÒ¸£Ã±", tbProp={6, 1, 2100, 1, 0, 0}, nExpiredTime = 20090914, nRate = 5},
+			szName = "ChiÕc mò tù do", 
+			[1] = {szName="ChiÕc mò tù do", tbProp={6, 1, 2099, 1, 0, 0}, nExpiredTime = 20090914, nRate = 95},
+			[2] = {szName="ChiÕc mò h¹nh phóc", tbProp={6, 1, 2100, 1, 0, 0}, nExpiredTime = 20090914, nRate = 5},
 		}
 		
 	},
@@ -56,10 +56,10 @@ tbGuoqing0908.tbFormulaList =
 	{
 		tbMaterial = 
 		{
-			{szName="ºÍÆ½Ã±", tbProp={6, 1, 2098}},
+			{szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2098}},
 			tbCrystal:new(2),
 		},
-		tbProduct = {szName="ĞÒ¸£Ã±", tbProp={6, 1, 2100, 1, 0, 0}, nExpiredTime = 20090914},
+		tbProduct = {szName="ChiÕc mò h¹nh phóc", tbProp={6, 1, 2100, 1, 0, 0}, nExpiredTime = 20090914},
 
 		
 	},
@@ -70,37 +70,37 @@ tbGuoqing0908.ComposeList = tbComposeListForJinNang:new("tbGuoqing0908_compose",
 function tbGuoqing0908:ComposeDailogMain(nItemIndex, szDescLink)
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > self.nComposeEndDate then
-		return Talk(1, "" ,"»î¶¯½áÊøÁË.")
+		return Talk(1, "" ,"Ho¹t ®éng ®· kÕt thóc.")
 	end
 	
 		
-	local szTitle = "¸÷Î»ÒªÑ¡ÄÄÖÖ·½Ê½?"
+	local szTitle = "C¸c h¹ muèn chän ph­¬ng thøc nµo?"
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
 	local tbSay = self.ComposeList:MakeOptBytbMaterialList("", nItemIndex, szDescLink)
 	tinsert(tbSay, 1, "<dec>"..szDescLink..szTitle)
-	tinsert(tbSay, "¶Ô»°½áÊø/OnCancel")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay)	
 end
 
 function tbGuoqing0908:GetJinnang()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > self.nEndDate then
-		return Talk(1, "" ,"»î¶¯½áÊøÁË.")
+		return Talk(1, "" ,"Ho¹t ®éng ®· kÕt thóc.")
 	end
 	
 	local bRet, szFailMsg = self:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(2, "", szFailMsg, "ÄãÎ´´ïµ½ÁìÈ¡´ËÎïÆ·µÄÌõ¼ş")
+		Talk(2, "", szFailMsg, "Ng­¬i ch­a ®ñ ®iÒu kiÖn ®Ó nhËn vËt phÈm nµy")
 		return
 	end
 	
 	if self.tbTask:GetJinNangState() == 1 then
-		Say("L?Quan"..":".."ÎÒÃ»ÓĞ¼Ç´íµÄ»°ÄãÒÑ¾­Áì¹ıÁË°É?",1, "Õæ²»ºÃÒâË¼£¡ÔÚÏÂÍü¼ÇÁË./OnCancel")
+		Say("LÔ Quan"..":".."Ta nhí kh«ng nhÇm th× ng­¬i ®· nhËn råi?",1, "ThËt ng¹i qu¸! T¹i h¹ quªn mÊt./OnCancel")
 		return 
 	end
-	local tbItem = {szName="½õÄÒÊÂ¼ş", tbProp={6, 1, 1833, 1, 0, 0}, nExpiredTime = self.nComposeEndDate, tbParam = {self.nComposeEndDate, 1000}}
+	local tbItem = {szName="CÈm nang sù kiÖn", tbProp={6, 1, 1833, 1, 0, 0}, nExpiredTime = self.nComposeEndDate, tbParam = {self.nComposeEndDate, 1000}}
 	
 	tbAwardTemplet:GiveAwardByList(tbItem, "get by guoqin0908")
 	self.tbTask:SetJinNangState(1)

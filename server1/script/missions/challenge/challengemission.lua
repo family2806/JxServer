@@ -22,7 +22,7 @@ function RunMission()
  			PlayerIndex = pidx;
 			if (GetCurCamp() ~= 6) then
    				SetFightState(1);
-				PutMessage("Õ½³¡ÕıÊ½¿ªÊ¼£¬ËùÓĞĞĞ¶¯");
+				PutMessage("TrËn chiÕn chİnh thøc b¾t ®Çu, tÊt c¶ hµnh ®éng ");
    			end
  		end;
  	end;
@@ -39,7 +39,7 @@ end;
 
 function OnLeave(RoleIndex)
 	PlayerIndex = RoleIndex;
-	str2 = GetName().."Àë¿ªÕ½³¡, ";
+	str2 = GetName().."Rêi khái chiÕn tr­êng, ";
 	-- SetLogoutRV(0);  Íæ¼ÒµôÏßÒ²»á´ÓMissionÖĞOnLeave£¬Òò´Ë²»ÄÜÔÚ´Ëµ÷ÓÃSetLogoutRV(0)£¬±ØĞëÔÚ°ÑÍæ¼ÒNewWorld³öMissionµØÍ¼µÄµØ·½µ÷ÓÃ Fanghao_Wu 2006-3-21
 	SetCreateTeam(1);
 	SetDeathScript("");--ÉèÖÃËÀÍö½Å±¾Îª¿Õ

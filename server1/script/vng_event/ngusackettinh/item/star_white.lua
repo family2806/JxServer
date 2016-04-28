@@ -6,19 +6,19 @@ tbNSKT_star_white = {}
 function main(itemidx)
 	--¼ì²éÊ¹ÓÃÎïÆ·Ìõ¼ş
 	if(tbNSKT_Item_Star:checkCondition() == 0)then
-		Talk(1, "", "Äã²»¹»Ìõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó50¼¶ÒÔÉÏ³äÖµÓÃ»§")
+		Talk(1, "", "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm! Yªu cÇu cÊp ®é trªn 50 vµ ®·  n¹p thÎ.")
 		return 1
 	end
 	-- het event, ÎïÆ·Ê¹ÓÃµ½ÆÚ
 	if (tbNSKT_Item_Star:isExpired(itemidx) == 1) then
-		Msg2Player("ÎïÆ·Ê¹ÓÃ¹ıÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0; -- delete item
 	end
 	-- Ê¹ÓÃÎïÆ·³É¹¦£¬É¾³ıitem
 	if (tbNSKT_star_happiness:UseItem() == 1)then
 		return 0;	
 	else
-		Talk(1, "", "´óÏÀÒÑ×î´óÏŞ¶ÈÊ¹ÓÃ¸ÃÎïÆ·ÁË!")
+		Talk(1, "", "§¹i hiÖp ®·  ®¹t tèi ®a sö dông vËt phÈm nµy!")
 		return 1 -- ²»É¾³ı item	
 	end
 end
@@ -30,7 +30,7 @@ function tbNSKT_star_white:UseItem()
 			return 1;
 		end
 		local tbAwardExp = {nExp = 50e6} --50 trieu exp
-		tbNSKT_Item_Star:giveAward(tbAwardExp, "°×ĞÇĞÇ¾­Ñé½±Àø");
+		tbNSKT_Item_Star:giveAward(tbAwardExp, "PhÇn th­ëng EXP ng«i sao tr¾ng");
 		return 1;
 	end
 	return 0; --Ê¹ÓÃ max, ²»ÄÜÊ¹ÓÃ, ²»ÄÜÉ¾³ı

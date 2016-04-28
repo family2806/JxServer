@@ -42,6 +42,6 @@ function main(nItemIdx)
 	else
 		return 1;
 	end;
-	WriteLog("[ÀñÆ·³ÇÖ÷]/t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount().."»ñµÃ"..GetItemName(nNewIdx));
-	Msg2Player("Äú»ñµÃ<color=white>"..GetItemName(nNewIdx).."<color>");
+	WriteLog("[Thµnh chñ LÔ phÈm]/t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount().." NhËn ®­îc"..GetItemName(nNewIdx));
+	Msg2Player("B¹n nhËn ®­îc <color=white>"..GetItemName(nNewIdx).."<color>");
 end;

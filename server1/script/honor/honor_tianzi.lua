@@ -18,25 +18,25 @@ end
 
 tbHonor_Sys_2009.tbScoreTitle = 
 {
-    [1] = {nValue = -3000, strTitle = "»è¾ý"},
-    [2] = {nValue = -1001, strTitle = "Ó¹¾ý"},
-    [3] = {nValue = -101, strTitle = "ÎÞÎª"},
-    [4] = {nValue = 100, strTitle = "Çå¾»"},
-    [5] = {nValue = 1000, strTitle = "ÓÐÎª"},
-    [6] = {nValue = 3000, strTitle = "Ã÷¾ý"},
-    [7] = {nValue = 3000, strTitle = "Ê¥¾ý"},
+    [1] = {nValue = -3000, strTitle = "H«n qu©n"},
+    [2] = {nValue = -1001, strTitle = "Dung qu©n"},
+    [3] = {nValue = -101, strTitle = "V« vÞ"},
+    [4] = {nValue = 100, strTitle = "Thanh tÞnh"},
+    [5] = {nValue = 1000, strTitle = "H÷u vÞ"},
+    [6] = {nValue = 3000, strTitle = "Minh qu©n"},
+    [7] = {nValue = 3000, strTitle = "Th¸nh Qu©n"},
 }
 
 
 tbHonor_Sys_2009.tbCapital = 
 {
-    [0] = "ãê¾©",
-    [1] = "ÁÙ°²",
+    [0] = "BiÖn Kinh",
+    [1] = "L©m An",
 }
 
 function tbHonor_Sys_2009:page_gen(tb_pageinfo, str_parameter)
     local strContent;
-    local tbOption = {"Àë¿ª/#tbHonor_Sys_2009:tianzi_onCancel()",};
+    local tbOption = {"Rêi khái/#tbHonor_Sys_2009:tianzi_onCancel()",};
     local tbContent = {};
 	
 	for i = tb_pageinfo.from, tb_pageinfo.to do
@@ -52,29 +52,29 @@ function tbHonor_Sys_2009:page_gen(tb_pageinfo, str_parameter)
 	    local strCapital;
 	    
 	    if (i == 1) then
-	        strGeneration = "µ±½ñÊ¥ÉÏ";
+	        strGeneration = "§­¬ng kim th¸nh th­îng";
 	    else
-	        strGeneration = format("µÚ%d´úÌì×Ó", tb_pageinfo.total - i + 1);
+	        strGeneration = format("Thiªn tö ®êi thø %d", tb_pageinfo.total - i + 1);
 	    end
 	    
 	    if(tbTianzi.szEmperor == nil or tbTianzi.szEmperor == "") then
-            strEmperor = "ÎÞ";
-	        strTitle = "ÎÞ";
-	        strBeginTime = "<color=yellow>ÎÞ<color>";
-	        strEndTime = "<color=yellow>ÎÞ<color>";
-	        strTong = "ÎÞ";
-	        strScore = "ÎÞ"
+            strEmperor = "V« hÖ ";
+	        strTitle = "V« hÖ ";
+	        strBeginTime = "<color=yellow>V«<color>";
+	        strEndTime = "<color=yellow>V«<color>";
+	        strTong = "V« hÖ ";
+	        strScore = "V« hÖ "
 	        
-	        strCapital = "ÎÞ"
+	        strCapital = "V« hÖ "
 	    else
 	        strEmperor = tbTianzi.szEmperor;
 	        strTitle = tbTianzi.szTitle;
-	        strBeginTime = format("<color=green>%d<color> Äê <color=green>%02d<color> ÔÂ <color=green>%02d<color> ÈÕ", floor(tbTianzi.nBeginTime/10000), floor(mod(tbTianzi.nBeginTime,10000)/100), mod(tbTianzi.nBeginTime,100));
+	        strBeginTime = format("<color=green>%d<color> n¨m <color=green>%02d<color> th¸ng <color=green>%02d<color> ngµy", floor(tbTianzi.nBeginTime/10000), floor(mod(tbTianzi.nBeginTime,10000)/100), mod(tbTianzi.nBeginTime,100));
 
 	        if (tbTianzi.nEndTime == 0) then
-	            strEndTime = "<color=yellow>³ö´í<color>";
+	            strEndTime = "<color=yellow>V«<color>";
 	        else
-	            strEndTime = format("<color=green>%d<color> Äê <color=green>%02d<color> ÔÂ<color=green>%02d<color> ÈÕ", floor(tbTianzi.nEndTime/10000), floor(mod(tbTianzi.nEndTime,10000)/100), mod(tbTianzi.nEndTime,100));
+	            strEndTime = format("<color=green>%d<color> n¨m <color=green>%02d<color> th¸ng <color=green>%02d<color> ngµy", floor(tbTianzi.nEndTime/10000), floor(mod(tbTianzi.nEndTime,10000)/100), mod(tbTianzi.nEndTime,100));
 	        end
 
 	        strTong = tbTianzi.szTong;
@@ -94,27 +94,27 @@ function tbHonor_Sys_2009:page_gen(tb_pageinfo, str_parameter)
         }
         tbContent[getn(tbContent) + 1] = 
         {
-			format("¹úºÅ: <color=yellow>%s<color>", strTitle),
+			format("Quèc hiÖu: <color=yellow>%s<color>", strTitle),
         }
         tbContent[getn(tbContent) + 1] = 
         {
-            format("ÈÕÆÚ: %s", strBeginTime),
+            format("§¨ng quang: %s", strBeginTime),
         }   
         tbContent[getn(tbContent) + 1] = 
         {
-			format("°ï»á: <color=yellow>%s<color>", strTong),
+			format("Bang héi: <color=yellow>%s<color>", strTong),
         }      
         tbContent[getn(tbContent) + 1] = 
         {
-            format("ÍËÎ»: %s", strEndTime),
+            format("Tho¸i vÞ: %s", strEndTime),
         }
         tbContent[getn(tbContent) + 1] = 
         {
-            format("»Ê³Ç: <color=yellow>%s<color>", strCapital),
+            format("Hoµng thµnh: <color=yellow>%s<color>", strCapital),
         }
         tbContent[getn(tbContent) + 1] = 
         {
-            format("ÊÀÈËÆÀ¼Û: <color=yellow>%s<color>", strScore),
+            format("Ng­êi ®êi ®¸nh gi¸: <color=yellow>%s<color>", strScore),
         }
         tbContent[getn(tbContent) + 1] = 
         {

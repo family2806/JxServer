@@ -52,22 +52,22 @@ EPlayerLevelUp = {
 --==================================================--
 	GiveTask = function()
 		if not validateDate(DATESPLAYERLEVELUP,DATEEPLAYERLEVELUP) then
-			Talk(1,"","²»ºÃÒâË¼£¡»î¶¯Ê±¼äÒÑ½áÊø!")
+			Talk(1,"","Xin lçi! Thêi gian ho¹t ®éng ®· hÕt råi!")
 			return
 		end
 		local flag = GetTask(TKID_PLAYERLEVELUP)
 		if (flag == TKVAL_PLAYERLEVELUP_OPEN) then
-			Talk(1,"","ÊÇ²»ÊÇÒÑ¾­±¨Ãû²Î¼Ó'Á·¼¶»î¶¯'ÁËÂð?ÔõÃ´ÓÖÀ´ÁË£¿")
+			Talk(1,"","Cã ph¶i ng­¬i ®· b¸o danh tham gia 'Ho¹t ®éng luyÖn cÊp' kh«ng? Sao l¹i cßn ®Õn ®©y?")
 			return
 		end
 		local level = GetLevel()
 		if(	level > 49 and level < 71 ) then
 			SetTask(TKID_PLAYERLEVELUP,TKVAL_PLAYERLEVELUP_OPEN)
-			Talk(1,"","ÄãÒÑ¾­±¨Ãû²Î¼Ó'Á·¼¶»î¶¯'ÁË.¼ÓÓÍÁ·µ½80¼¶!")
-			Msg2Player("ÄãÒÑ½ÓÊÜÁ·¼¶ÈÎÎñ£¬¸Ï¿ìÈ¥Á·¹¦!")
+			Talk(1,"","Ng­¬i ®· b¸o danh tham gia ho¹t ®éng luyÖn cÊp. Cè g¾ng th¨ng cÊp ®Õn cÊp 80 ®i!")
+			Msg2Player("B¹n ®· tiÕp nhËn nhiÖm vô luyÖn cÊp, h·y mau ®i luyÖn c«ng!")
 			return
 		end
-		Talk(1,"","²»ºÃÒâË¼£¬ÄãµÄµÈ¼¶²»·ûºÏ²Î¼Ó¡®Á·¼¶»î¶¯¡¯µÄÒªÇó!")
+		Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n kh«ng phï hîp tham gia 'Ho¹t ®éng luyÖn cÊp'!")
 		return
 	end,
 --========º¯Êý¶¨Òå==================================--
@@ -97,7 +97,7 @@ EPlayerLevelUp = {
 	payDoubleExp = function()
 		AddSkillState(531,10,1,2*60*60*18)
 		AddSkillState(461,1, 1,2*60*60*18)
-		Msg2Player("¹§Ï²ÄãÔÚ¡®Á·¼¶»î¶¯¡¯ÖÐÉý¼¶ÁË£¬ÏµÍ³ËÍ¸øÄãÁË2Ð¡Ê±µÄË«±¶¾­Ñé.")
+		Msg2Player("Chóc mõng b¹n trong ch­¬ng tr×nh 'Ho¹t ®éng luyÖn cÊp' ®· ®­îc th¨ng cÊp, phÇn th­ëng hÖ thèng tÆng cho b¹n lµ t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê.")
 	end,
 	
 	payAdvSkills = function()
@@ -106,11 +106,11 @@ EPlayerLevelUp = {
 			for i=1,getn(SKILLS[faction+1]) do
 				AddMagic(SKILLS[faction+1][i][1],SKILLS[faction+1][i][2])
 			end
-			Msg2Player("¹§Ï²ÄãÔÚ´Ë´Î¡®Á·¼¶»î¶¯¡¯ÖÐ³É¹¦Íê³ÉÈÎÎñ£¬Í¬Ê±Ñ§»á90¼¶¼¼ÄÜ")
-			AddGlobalNews("´ó¼ÒÒ»Í¬×£ºØ"..GetName().."ÔÚ¡®Á·¼¶»î¶¯¡¯ÖÐ³É¹¦Íê³ÉÈÎÎñ£¬Í¬Ê±Ñ§»á90¼¶¼¼ÄÜ")
+			Msg2Player("Chóc mõng b¹n lÇn nµy t¹i 'Ho¹t ®éng luyÖn cÊp' thµnh c«ng hoµn thµnh nhiÖm vô, ®ång thêi häc ®­îc kü n¨ng cÊp 90")
+			AddGlobalNews("Mäi ng­êi cïng nhau chóc mõng"..GetName().."Trong ch­¬ng tr×nh 'Ho¹t ®éng luyÖn cÊp' ®· thµnh c«ng hoµn thµnh nhiÖm vô, ®ång thêi l·nh ngé ®­îc kü n¨ng cÊp 90")
 			return
 		end
-		Msg2Player("¹§Ï²ÄãÔÚ¡®Á·¼¶»î¶¯¡¯ÖÐ³É¹¦Íê³ÉÈÎÎñ")
+		Msg2Player("Chóc mõng b¹n trong ch­¬ng tr×nh 'Ho¹t ®éng luyÖn cÊp' thµnh c«ng hoµn thµnh nhiÖm vô.")
 	end,
 }
 
@@ -126,10 +126,10 @@ EPlayerLevelUp = {
 --ÓÃÀý£º
 --==================================================--
 function BTNPlayerLevelUp()
-	local msg = "»¶Ó­²Î¼Ó¡®Á·¼¶»î¶¯¡¯. 50µ½70¼¶Íæ¼Ò¶¼¿ÉÒÔ±¨Ãû²Î¼Ó£¬Ö»ÐèÔÚ»î¶¯ÆÚ¼äÉýµ½80¼¶¾Í¿ÉÒÔÁ¢¼´Ñ§Ï°90¼¶¼¼ÄÜ"
+	local msg = "Hoan nghªnh tham gia 'Ho¹t ®éng luyÖn cÊp'. Ng­êi ch¬i cÊp 50 ®Õn cÊp 70 ®Òu cã thÓ b¸o danh tham gia, chØ cÇn trong thêi gian ho¹t ®éng ®¼ng cÊp t¨ng ®Õn cÊp 80, th× lËp tøc häc ®­îc c¸c kü n¨ng cÊp 90"
 	local btns = {
-		"ÎÒÏë±¨Ãû²Î¼Ó/JoinPlayerLevelUp",
-		"ÎÒÏëÁË½â¸ü¶àÒ»µã/AboutPlayerLevelUp"
+		"Ta muèn b¸o danh tham gia/JoinPlayerLevelUp",
+		"Ta muèn t×m hiÓu râ h¬n/AboutPlayerLevelUp"
 	}
 	Describe(LIGUAN_TAG(msg),getn(btns),btns)
 end
@@ -155,10 +155,10 @@ end
 --	¹ØÓÚ³å»÷»î¶¯µÄ½éÉÜ
 --==================================================--
 function AboutPlayerLevelUp()
-	local msg = ": 50µ½70¼¶(°üÀ¨50¼¶ºÍ70¼¶) ¿ÉÒÔµ½Àñ¹Ù´¦±¨Ãû²Î¼Ó¡®Á·¼¶»î¶¯¡¯¡£Àñ¹Ù»áÖ¸ÒýÄã80¼¶ÈÎÎñµÄÄ¿±ê¡£ÔÚ±¨Ãû²Î¼ÓµÈ¼¶ÒÔºóÍæ¼ÒÃ¿´ÎÉý¼¶£¬¾Í¿ÉÒÔµÃµ½2Ð¡Ê±Ë«±¶¾­ÑéÖµ(ËÀºó½«Ê§È¥Ë«±¶Ð§¹û)£¬µ½ÁË80¼¶£¬´ïµ½Á·¼¶Ä¿±êÖ®ºó£¬Äã½«Ñ§Ï°90¼¶¼¼ÄÜ£¨¿Û³ý°×Ãû)."
+	local msg = ": §¼ng cÊp tõ 50 ®Õn 70 (Bao gåm c¶ cÊp 50 vµ 70) cã thÓ ®Õn LÔ Quan b¸o danh tham gia 'Ho¹t ®éng luyÖn cÊp'. LÔ Quan sÏ h­íng dÉn môc tiªu c¸c nhiÖm vô 80. Trong thêi gian b¸o danh tham gia ®¼ng cÊp ng­êi ch¬i mçi khi lªn mét cÊp, cã thÓ nhËn t¨ng ®«i ®iÓm kinh nghiÖm trong 2 giê (Sau khi chÕt, sÏ mÊt ®i hiÖu qu¶ nh©n ®«i) , ®Õn khi ®¹t ®¼ng cÊp 80, sau khi ®· ®¹t ®­îc môc tiªu luyÖn cÊp, ng­êi ch¬i sÏ häc ®­îc kü n¨ng cÊp 90 (Trõ tªn mµu tr¾ng ra) ."
 	local btns ={
-		"²Î¼Ó»î¶¯/BTNPlayerLevelUp",
-		"ÍË³ö/Quit",
+		"Trë l¹i/BTNPlayerLevelUp",
+		"§ãng/Quit",
 	}
 	Describe(LIGUAN_TAG(msg),getn(btns),btns)
 end

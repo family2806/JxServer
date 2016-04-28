@@ -47,7 +47,7 @@ function on_collection(nSettingIdx, szToolType, nMapId)
 	
 	local tbProp = tbTool.tbProp
 	if ConsumeEquiproomItem(1, tbProp[1], tbProp[2], tbProp[3], -1) ~= 1 then
-		return Talk(1, "", format("你没有带 %s", tbTool.szName))
+		return Talk(1, "", format("ngi ch璦 mang %s", tbTool.szName))
 	end
 	--给奖励  
 	
@@ -60,22 +60,22 @@ end
 
 
 local _OnBreak = function(nNpcIndex)
-	Msg2Player("收集中断")
+	Msg2Player("Thu th藀 t 畂筺")
 end
 
 local _GetAward = function(nNpcIndex, dwNpcID, szToolType)
 	if nNpcIndex == nil then
-		Msg2Player("你收集失败.")
+		Msg2Player("Ngi thu th藀 th蕋 b筰.")
 		return
 	end
 	
 	if nNpcIndex <= 0 or GetNpcId(nNpcIndex) ~= dwNpcID then
-		Msg2Player("你收集失败.")
+		Msg2Player("Ngi thu th藀 th蕋 b筰.")
 		return
 	end	
 	
 	if GetNpcParam(nNpcIndex, NPC_PARAM_COLLECTED) == 1 then
-		Msg2Player("你收集失败.")
+		Msg2Player("Ngi thu th藀 th蕋 b筰.")
 		return
 	end
 	local nMapId = GetNpcParam(nNpcIndex, NPC_PARAM_MAPID)
@@ -87,7 +87,7 @@ local _GetAward = function(nNpcIndex, dwNpcID, szToolType)
 	local nSettingIdx = GetNpcSettingIdx(nNpcIndex)
 	SetNpcParam(nNpcIndex, NPC_PARAM_COLLECTED, 1)
 	if CalcFreeItemCellCount() < 1 then
-		return Talk(1, "", "背包空间不够")
+		return Talk(1, "", "H祅h trang kh玭g ")
 	end
 	
 	on_collection(nSettingIdx, szToolType, nMapId)	
@@ -101,14 +101,14 @@ function main()
 	local nSettingIdx = GetNpcSettingIdx(nNpcIndex)
 	
 	if CalcFreeItemCellCount() < 1 then
-		return Talk(1, "", "背包空间不够")
+		return Talk(1, "", "H祅h trang kh玭g ")
 	end
 	
 	local szToolType, nProgressBarId  = get_progress()
 	if nProgressBarId then
 		tbProgressBar:OpenByConfig(nProgressBarId, %_GetAward, {nNpcIndex, dwNpcIndex, szToolType}, %_OnBreak, {nNpcIndex})
 	else
-		Talk(1, "", format("你没有带 %s 或 %s", "铁镰刀", "白金镰刀"))
+		Talk(1, "", format("ngi ch璦 mang %s ho芻 %s", "thi誸 li猰 產o", "b筩h kim li猰 產o"))
 	end
 	
 end

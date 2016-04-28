@@ -1,30 +1,30 @@
---Á½ºşÇø ÄÏÔÀÕò ÌìÈÌ½ÌÍ½¶Ô»°
+--Á½ºşÇø ÄÏÔÀÕò tianrenÍ½¶Ô»°
 
 function main(sel)
-Talk(2, "select", "ÌìÈÌ½ÌÍ½£º±¾½ÌĞÅ·î´ó½ğ¹úµÄ¹ú½ÌÈøÂú½Ì£¬½ÌÖ÷ÄËÊÇ¹úÊ¦ÍêÑÕºêÁÒ£¬ËûĞÔÇé¿ñ°Á£¬ÖÇÄ±¹ıÈË£¬¾ÍÁ¬´ó½ğ»ÊµÛ¶ÔËûÒ²ÀñÈÃÈı·Ö¡£", "±¾½Ì¸ßÊÖÎŞÊı£¬ÕĞÄ¼ÁË´óÅú½ğËÎÁ½¹úµÄ¸ßÊÖ£¬¿ÉÎ½²ØÁúÎÔ»¢¡£");
+Talk(2, "select", "Gi¸o chñ cña bæn gi¸o lµ Hoµn Nhan Hïng LiÖt. Danh chÊn thiªn h¹! Hoµng ®Õ Kim quèc còng ph¶i nh­êng 3 phÇn", "Cao thñ cña bæn gi¸o nhiÒu v« sè! Nh©n tµi ngäa hæ tµng long");
 end;
 
 function select()
-Say("ÌìÈÌ½ÌÍ½£ºÏë¼ÓÈë±¾½ÌÂğ£¿", 2, "¼ÓÈë/yes", "²»¼ÓÈë/no");
+Say("Cã muèn gia nhËp bæn gi¸o kh«ng?", 2, "Gia nhËp. /yes", "Kh«ng gia nhËp/no");
 end;
 
 
 function yes()
 if (GetSeries() ~= 3) then								--Èç¹ûÍæ¼Ò²»ÊôÓÚ»ğÏµ
-	Say("ÌìÈÌ½ÌÍ½£ºÄã²»ÊôÓÚ»ğÏµ£¬²»ÄÜ¼ÓÈë±¾ÃÅ¡£", 0)
+	Say("Ng­¬i kh«ng thuéc hÖ Háa, kh«ng thÓ gia nhËp bæn gi¸o!", 0)
 else
 	if (GetFaction() ~= "") then							--Èç¹ûÍæ¼ÒÒÑ¾­ÊôÓÚ»ğÏµµÄÄ³Ò»ÃÅÅÉ
-		Say("ÌìÈÌ½ÌÍ½£ºÖ»ÓĞ²»ÊôÓÚÈÎºÎÃÅÅÉµÄÈË£¬²ÅÄÜ¼ÓÈë±¾½Ì¡£", 0)
+		Say("Ch­a gia nhËp m«n ph¸i kh¸c míi cã thÓ gia nhËp bæn gi¸o", 0)
 	else
 		if (GetLevel() >= 10) then						--µÈ¼¶´ïµ½Ê®¼¶
-			SetFaction("ÌìÈÌ½Ì")      					--Íæ¼Ò¼ÓÈëÌìÈÌ½Ì
+			SetFaction("tianren")      					--Íæ¼Ò¼ÓÈëtianren
 			--NewWorld(45, x, y)						--°ÑÍæ¼Ò´«ËÍµ½ÃÅÅÉÈë¿Ú
 			--SetFightState(1)						--Íæ¼Ò×ª»»³ÉÕ½¶·×´Ì¬
 			--SetRevPos(ID)	 						--ÉèÖÃÖØÉúµã
 			--SetTask(4, 10)
-			Say("»¶Ó­Äã¼ÓÈëÌìÈÌ½Ì£¡",0)  
+			Say("Hoan Nghªnh b¹n gia nhËp Thiªn NhÉn gi¸o! ",0)  
 		else
-			Say("ÌìÈÌ½ÌÍ½£º±¾½ÌµÜ×Ó¶¼ÊÇ¾«Ó¢Ö®±²£¬ÏñÄãÕâÑùµÄĞÂÊÖ£¬±¾½ÌÊÇ²»ÊÕµÄ¡£", 0)
+			Say("§Ö tö bæn gi¸o toµn lµ anh hïng xuÊt chóng. KĞm câi nh­ ng­¬i kh«ng xøng ®¸ng vµo bæn gi¸o!", 0)
 		end		
 	end	
 end

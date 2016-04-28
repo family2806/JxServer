@@ -2,6 +2,6 @@
 
 function main(sel)
 
-	Say("É«·çÌìÁúìøËÂ ", 0)
+	Say("S¾c phong Thiªn Long ThiÒn Tù ", 0)
 
 end;

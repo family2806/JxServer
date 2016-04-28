@@ -9,126 +9,126 @@ end
 local nTmpLadderBase	= 10201
 WLLS_DATA = {
 	
-	name = "±ÈÈüÃÅÅÉÃûµ¥",
+	name = " Tranh tµi m«n ph¸i danh s¸ch ",
 	
 	--µØÍ¼ĞÅÏ¢
 	match_type = {
 		{
-			name = "ÉÙÁÖ",
+			name = " ThiÕu L©m ",
 			level = 1,
 			ladder = nTmpLadderBase,
 			map = {{396, 560, 397, ""}},
 		},
 		{
-			name = "ÌìÍõ",
+			name = " Thiªn v­¬ng ",
 			level = 1,
 			ladder = nTmpLadderBase + 1,
 			map = {{398, 561, 399, ""}},
 		},
 		{
-			name = "ÌÆÃÅ",
+			name = " §­êng m«n ",
 			level = 1,
 			ladder = nTmpLadderBase + 2,
 			map = {{400, 562, 401, ""}},
 		},
 		{
-			name = "Îå¶¾",
+			name = " Ngò ®éc ",
 			level = 1,
 			ladder = nTmpLadderBase + 3,
 			map = {{402, 563, 403, ""}},
 		},
 		{
-			name = "¶ëÃ¼",
+			name = " Nga Mi ",
 			level = 1,
 			ladder = nTmpLadderBase + 4,
 			map = {{404, 564, 405, ""}},
 		},
 		{
-			name = "´äÑÌ",
+			name = " thóy yªn ",
 			level = 1,
 			ladder = nTmpLadderBase + 5,
 			map = {{406, 565, 407, ""}},
 		},
 		{
-			name = "Ø¤°ï",
+			name = " C¸i Bang ",
 			level = 1,
 			ladder = nTmpLadderBase + 6,
 			map = {{408, 566, 409, ""}},
 		},
 		{
-			name = "ÌìÈÌ",
+			name = " thiªn nhÉn ",
 			level = 1,
 			ladder = nTmpLadderBase + 7,
 			map = {{410, 567, 411, ""}},
 		},
 		{
-			name = "Îäµ±",
+			name = " Vâ §ang ",
 			level = 1,
 			ladder = nTmpLadderBase + 8,
 			map = {{412, 568, 413, ""}},
 		},
 		{
-			name = "À¥ÂØ",
+			name = " C«n L«n ",
 			level = 1,
 			ladder = nTmpLadderBase + 9,
 			map = {{414, 569, 415, ""}},
 		},
 		{
-			name = "ÉÙÁÖ",
+			name = " ThiÕu L©m ",
 			level = 2,
 			ladder = nTmpLadderBase + 10,
 			map = {{540, 570, 541, ""}},
 		},
 		{
-			name = "ÌìÍõ",
+			name = " Thiªn v­¬ng ",
 			level = 2,
 			ladder = nTmpLadderBase + 11,
 			map = {{542, 571, 543, ""}},
 		},
 		{
-			name = "ÌÆÃÅ",
+			name = " §­êng m«n ",
 			level = 2,
 			ladder = nTmpLadderBase + 12,
 			map = {{544, 572, 545, ""}},
 		},
 		{
-			name = "Îå¶¾",
+			name = " Ngò ®éc ",
 			level = 2,
 			ladder = nTmpLadderBase + 13,
 			map = {{546, 573, 547, ""}},
 		},
 		{
-			name = "¶ëÃ¼",
+			name = " Nga Mi ",
 			level = 2,
 			ladder = nTmpLadderBase + 14,
 			map = {{548, 574, 549, ""}},
 		},
 		{
-			name = "´äÑÌ",
+			name = " thóy yªn ",
 			level = 2,
 			ladder = nTmpLadderBase + 15,
 			map = {{550, 575, 551, ""}},
 		},
 		{
-			name = "Ø¤°ï",
+			name = " C¸i Bang ",
 			level = 2,
 			ladder = nTmpLadderBase + 16,
 			map = {{552, 576, 553, ""}},
 		},
 		{
-			name = "ÌìÈÌ",
+			name = " thiªn nhÉn ",
 			level = 2,
 			ladder = nTmpLadderBase + 17,
 			map = {{554, 577, 555, ""}},
 		},
 		{
-			name = "Îäµ±",
+			name = " Vâ §ang ",
 			level = 2,
 			ladder = nTmpLadderBase + 18,
 			map = {{556, 578, 557, ""}},
 		},
 		{
-			name = "À¥ÂØ",
+			name = " C«n L«n ",
 			level = 2,
 			ladder = nTmpLadderBase + 19,
 			map = {{558, 579, 559, ""}},
@@ -162,8 +162,8 @@ WLLS_DATA = {
 	max_member = 1,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÊÇÃÅÅÉµ¥¶·£¬Ñ¡ÔñÃ¿¸öÃÅÅÉ×î½Ü³öµÄÈË",
-		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÊÇÃÅÅÉµ¥¶·£¬Ñ¡ÔñÃ¿¸öÃÅÅÉ×î½Ü³öµÄÈË",
+		" Vâ l©m liªn ®Êu ®¬n ®Êu m«n ph¸i, lùa chän m«n ph¸i cña ng­¬i. ",
+		" Vâ l©m liªn ®Êu ®¬n ®Êu m«n ph¸i, lùa chän m«n ph¸i cña ng­¬i. ",
 	},
 	
 	--====Functions====
@@ -175,7 +175,7 @@ WLLS_DATA = {
 		end
 		local n_fact = GetLastFactionNumber() + 1
 		if (n_fact <= 0) then
-			wlls_descript("<enter>  ÕâÊÇ¸÷ÃÅÅÉ¼äµÄ±ÈÈü£¬ÄãÎŞÃÅÎŞÅÉ²»ÄÜ²Î¼Ó.")
+			wlls_descript("<enter> ®©y lµ lóc c¸c m«n ph¸i tranh tµi, ng­¬i kh«ng m«n kh«ng ph¸i kh«ng thÓ tham gia .")
 			return nil
 		end
 		return (n_level - 1) * 10 + n_fact
@@ -186,22 +186,22 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter>  ´Ë´Î"..str_des.."ÒòÎª<color=red>ÃÅÅÉµ¥¶·<color>,Èç¹ûÄãµÚÒ»´Î²Î¼Ó±ÈÈü£¬ÏµÍ³½«ÎªÄã½¨Ò»¸öÕ½¶Ó.")
+			wlls_descript("<enter> lÇn nµy "..str_des.." bëi v× <color=red> m«n ph¸i ®an ®Êu <color>, nÕu nh­ ng­¬i lÇn ®Çu tiªn tham gia tranh tµi , hÖ thèng ®em v× ng­¬i x©y mét chiÕn ®éi .")
 			return
 		end
 	
 		local n_mytype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		local n_level, n_group = wlls_getcityinfo()
 		local n_next = GetGlbValue(GLB_WLLS_NEXT)
-		local str = "<enter>Ä¿Ç°ÄãµÄÕ½¶ÓÎª<color=yellow>"..str_lgname.."<color><enter>"
+		local str = "<enter> tr­íc m¾t ng­¬i chiÕn ®éi v× <color=yellow>"..str_lgname.."<color><enter>"
 		if (n_mytype ~= n_next) then
-			str = str .. "<enter>   <color=yellow>×¢Òâ£ºÏÂ¼¾±ÈÈüÏŞÖÆÎª<color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, Èç¹ûÏëÏÂ¼¾±ÈÈü£¬Çë½¨Á¢ĞÂµÄÕ½¶Ó.<color><enter>"
+			str = str .. "<enter> <color=yellow> chó ı  h¹ quı tranh tµi h¹n chÕ v× <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, nÕu nh­ muèn h¹ quı tranh tµi , xin/mêi thµnh lËp míi chiÕn ®éi .<color><enter>"
 		end
 		local tb_option = {}
-		str = str.."<enter>   ÔÚ<color=red>ĞİÏ¢Ê±¼äÄÚ<color> »òÕß <color=red>Î´¼ÓÈëÉÏÆÚ±ÈÈü<color>, Äã¿ÉÒÔÀë¿ªÕ½¶Ó£¬Õ½¶Ó½«×Ô¶¯½âÉ¢<color>."
-		tb_option[getn(tb_option)+1] = "Àë¿ª¶ÓÎé/wlls_want2leaveleague"
-		tb_option[getn(tb_option)+1] = "¿´¶ÓÎéÕ½¼¨/wlls_query_mylg"
-		tb_option[getn(tb_option)+1] = "ÎÒÖ»ÊÇÂ·¹ı/OnCancel"
+		str = str.."<enter> ë <color=red> thêi gian nghØ ng¬i bªn trong <color> hoÆc lµ <color=red> kh«ng gia nhËp th­îng kú tranh tµi <color>, ng­¬i cã thÓ rêi ®i chiÕn ®éi , chiÕn ®éi ®em tù ®éng gi¶i t¸n <color>."
+		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
+		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "Ta chØ ®i ngang qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
 	

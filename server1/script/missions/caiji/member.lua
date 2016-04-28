@@ -94,7 +94,7 @@ function Member:Consolation()
 	local nPlayerIndex = SearchPlayer(self.szName)
 	if nPlayerIndex > 0 then
 		CallPlayerFunction(nPlayerIndex, %tbAwardTemplet.Give, %tbAwardTemplet, {nExp_tl = 1000000}, 1, {"Event_Thang6", "consolation"})
-		CallPlayerFunction(nPlayerIndex, Msg2Player, "ÄãµÄÕâÒ»Çø¿Õ×Å£¬»¹²»ÄÜ²Î¼Ó±ÈÈü£¬ÇëµÈÏÂ")
+		CallPlayerFunction(nPlayerIndex, Msg2Player, "vßng nµy cña ng­¬i trèng, ch­a thÓ tham gia trËn ®Êu, xin chê vßng sau")
 	end
 end
 

@@ -68,7 +68,7 @@ end;
 function HundredArena:AddNpc()
 	local tbChefu = {
 		nNpcId = 393,
-		szName = "³µ·ò",
+		szName = "Xa phu",
 		nLevel = 1,
 		nMapId = self.nMapId,
 		nPosX = 56000,
@@ -79,7 +79,7 @@ function HundredArena:AddNpc()
 	
 	local tbChuwuxiang = {
 		nNpcId = 625,
-		szName = "´¢ÎïÏä",
+		szName = "R­¬ng chøa ®å",
 		nLevel = 1,
 		nMapId = self.nMapId,
 		nPosX = 55232,
@@ -90,7 +90,7 @@ function HundredArena:AddNpc()
 	
 	local tbYaodian = {
 		nNpcId = 389,
-		szName = "Ò©ÉÌ",
+		szName = "Chñ d­îc ®iÕm",
 		nLevel = 1,
 		nMapId = self.nMapId,
 		nPosX = 55936,
@@ -230,7 +230,7 @@ function HundredArena:OnEnterMap()
 	SetLogoutRV(1);
 	DisabledStall(1)	--°ÚÌ¯
 	SetFightState(0)
-	Msg2Player("ÇëÓÃÇá¹¦ÉÏÀŞÌ¨±ÈÎä");
+	Msg2Player("Xin h·y sö dông khinh c«ng ®Ó nh¶y lªn l«i ®µi tû vâ.");
 end
 
 function HundredArena:OnLeaveMap()
@@ -321,7 +321,7 @@ function HundredArena:OnTime()
 				local nX = GetTask(TSK_LEAVERPOSX);
 				local nY = GetTask(TSK_LEAVERPOSY);
 				
-				CallPlayerFunction(tb.nPlayerIndex, Msg2Player, "Ê±¼ä¹ıµÃÕæ¿ì£¬ÄãÊ²Ã´»î¶¯¶¼Ã»ÓĞ²Î¼Ó£¬ÇëÀë¿ª»Ê³ÇË¾ÀŞÌ¨");
+				CallPlayerFunction(tb.nPlayerIndex, Msg2Player, "Thêi gian tr«i qua l©u nh­ vËy ng­¬i kh«ng tham gia ho¹t ®éng g× c¶, mêi ng­¬I ra khái l«i ®µi Hoµng Thµnh T­");
 				CallPlayerFunction(tb.nPlayerIndex, NewWorld, nMapId,nX,nY);
 			end
 		end
@@ -340,7 +340,7 @@ function HundredArena:OnTime()
 --			nPlayerCount = nPlayerCount +1;
 --		end
 		
-		Msg2Map(self.nMapId,"<color=green>¹ÄÊÖ³öÏÖÁË´ó¼Ò¼Ó¿ì½Å²½! <color>");
+		Msg2Map(self.nMapId,"<color=green>Cæ Thñ ®· xuÊt hiÖn mäi ng­êi nhanh ch©n ®i t×m ®i! <color>");
 		WriteLog(format("BaiRenLeiTai\tCallNPC_GuShou:%d,%d,%d",
 						tbnpc.nMapId, tbnpc.nPosX, tbnpc.nPosY))
 	 	basemission_CallNpc(tbnpc)
@@ -364,7 +364,7 @@ function HundredArena:AddDoubleState(szPlayerName, nTimes)
 		self.tbPlayerList[szPlayerName].nLastServerTime = tonumber(GetCurServerTime()) + HA_MAXSTAYTIME;
 		
 		if (self.nDoubleCount <= 0) then
-			Talk(1, "", "ÎÒÀÛÁË£¬µÈÎÒĞİÏ¢Ò»ÏÂ°É");
+			Talk(1, "", "Ta mÖt råi, hay lµ ®Ó ta nghØ ng¬i mét l¸t nhĞ.");
 		else
 			
 			if (self.tbPlayerList[szPlayerName].nDoubleTime ~= nTimes) then
@@ -372,13 +372,13 @@ function HundredArena:AddDoubleState(szPlayerName, nTimes)
 				self.tbPlayerList[szPlayerName].nDouble = GetCurServerTime()+HA_DOUBLETIME;
 				self.tbPlayerList[szPlayerName].nDoubleTime = nTimes;
 				
-				Talk(1, "", "ÕâÑùÄãÃÇÌıÇå³şÁË°É");
+				Talk(1, "", "VËy ng­¬i ®· nghe râ råi nhĞ!");
 			else
-				Talk(1, "", "ÒÑ¾­¶Á¹«ÎÄ¸øÄãÃÇÌıÁË!");
+				Talk(1, "", "§· ®äc sí cho ng­¬i nghe råi ®Êy!");
 			end
 		end
 	else
-		Talk(1, "", "Äã²»¸ÃÔÚÕâ³öÏÖ.");
+		Talk(1, "", "Ng­¬i kh«ng nªn xuÊt hiÖn t¹i ®©y.");
 		-- self:LeaveHundredArena();
 	end
 	
@@ -389,7 +389,7 @@ function HundredArena:Close()
 		self.tbArenaList[i]:Destroy();
 	end
 	
-	Msg2Map(self.nMapId, "½ñÌì»Ê³ÇË¾ÀŞÌ¨½áÊøÁË!");
+	Msg2Map(self.nMapId, "L«i §µi Hoµng Thµnh T­ h«m nay kÕt thóc !");
 	for szname, tb in self.tbPlayerList do
 		tb.nArenaId = 0;
 		local nMapId = GetTask(TSK_LEAVERMAPID);
@@ -411,11 +411,11 @@ function HundredArena:IsOpen()
 		if (GetLevel() >= 120) then
 			return 1;
 		else
-			Talk(1, "", "<color=yellow>120¼¶ºÍ120¼¶ÒÔÉÏ<color>²Å¿ÉÒÔ²Î¼Ó.")
+			Talk(1, "", "<color=yellow>CÊp 120 vµ 120 trë lªn<color>míi cã thÓ tham gia.")
 		end
 		
 	else
-		Talk(1, "", "Ã¿Ìì¿ªÀŞÌ¨µÄÊ±¼äÊÇ<color=yellow>12:00 ~ 24:00<color>,´ı»áÔÙÀ´°É!")
+		Talk(1, "", "Thêi gian më L«i §µi mçi ngµy<color=yellow> vµo lóc 12:00 ~ 24:00<color>, xin h·y quay l¹i sau!")
 	end
 	return 0;
 end
@@ -439,7 +439,7 @@ function ArenaField:New(nArenaId)
 end
 
 function ArenaField:Destroy()
-	Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨ %d: ±ÈÈü½áÊø£¬µÈ´ı×ÅĞÂÓÂÊ¿³ÉÎªÀŞÖ÷£¡", self.nArenaId));
+	Msg2Map(HundredArena.nMapId, format("L«i §µi%d: Thi ®Êu kÕt thóc, ®îi dòng sü míi trë thµnh §µi Chñ!", self.nArenaId));
 	
 	if (self.nNpcIndex) then
 		DelNpc(self.nNpcIndex);
@@ -484,7 +484,7 @@ function HundredArena:InTrap(index)
 		SetTmpCamp(1);
 		SetCurCamp(4);
 		
-		Msg2Map(self.nMapId, format("ÀŞÌ¨%d: <color=yellow>%s<color>³ÉÎªÀŞÖ÷£¬ µÈ´ı±ğÈËÌôÕ½!", tb_arena.nArenaId, tb_arena.Master.szPlayerName));
+		Msg2Map(self.nMapId, format("L«i §µi%d: <color=yellow>%s<color> trë thµnh §µi Chñ, ®ang ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", tb_arena.nArenaId, tb_arena.Master.szPlayerName));
 		
 		tb_arena.TimerID = TimerList:AddTimer(tb_arena, tbTimerInfo.nApply, 1);
 		
@@ -516,17 +516,17 @@ function HundredArena:InTrap(index)
 		tb_arena.TimerID = TimerList:AddTimer(tb_arena, tbTimerInfo.nPrepare, 2);
 		tb_arena.nFightState = 2;
 		
-		Msg2Map(self.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÌôÕ½ÕßÊÇ<color=yellow>%s<color>, µÚ %d³¡¶Ô¿¹Ñ¸ËÙ¿ªÊ¼!", 
+		Msg2Map(self.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, ng­êi khiªu chiÕn lµ<color=yellow>%s<color>, l­ît thø %d trËn ®Êu nhanh chãng ®­îc b¾t ®Çu!", 
 			tb_arena.nArenaId, tb_arena.Master.szPlayerName, tb_arena.Visitor.szPlayerName, tb_arena.nGrade));
 		
-		Msg2Player("3Ãëºó±ÈÈü¿ªÊ¼!");
+		Msg2Player("Sau 3 gi©y b¾t ®Çu chiÕn ®Êu!");
 		
-		CallPlayerFunction(tb_arena.Master.nPlayerIndex, Msg2Player, "3ÃëÒÔºó±ÈÈü¿ªÊ¼!");
+		CallPlayerFunction(tb_arena.Master.nPlayerIndex, Msg2Player, "Sau 3 gi©y b¾t ®Çu chiÕn ®Êu!");
 		
 		WriteLog(format("BaiRenLeiTai\tAccount:%s\tName:%s\tBecome Visitor At ArenaField:%d,Master:%s",
 						player:GetAccount(), player:GetName(), tb_arena.nArenaId, tb_arena.Master.szPlayerName))
 	else
-		Msg2Player("ÀŞÌ¨ÒÑ¾­¿ªÊ¼±ÈÎä£¬ÇëµÈ×ÅË³Ğò±¨Ãû.");
+		Msg2Player("L«i §µi ®· tiÕn hµnh tû vâ, xin h·y ®îi l­ît b¸o danh sau.");
 		tb_arena:Leave(player);
 		return
 	end
@@ -553,7 +553,7 @@ function ArenaField:Leave(player)
 	HundredArena.tbPlayerList[player:GetName()].nRight = 0;
 	HundredArena.tbPlayerList[player:GetName()].nLastServerTime = tonumber(GetCurServerTime()) + HA_MAXSTAYTIME;
 	
-	player:Msg2Player("ÄãÒÑÀë¿ªÀŞÌ¨");
+	player:Msg2Player("Ng­¬i ®· rêi khái L«i §µi");
 end
 
 function ArenaField:Enter(player)
@@ -565,7 +565,7 @@ function ArenaField:Enter(player)
 	CallPlayerFunction(player.m_PlayerIndex, RestoreStamina);
 	HundredArena.tbPlayerList[player:GetName()].nLastServerTime = tonumber(GetCurServerTime()) + HA_MAXSTAYTIME;
 	
-	player:Msg2Player("ÄãÒÑ½øÈëÀŞÌ¨");
+	player:Msg2Player("Ng­¬i ®· vµo L«i §µi");
 end;
 
 function ArenaField:OnTime(nFightState)
@@ -577,11 +577,11 @@ function ArenaField:OnTime(nFightState)
 		-- ±íÊ¾Ã»ÓĞÌôÕ½·½£¬AddNpc
 		self:CallFightNpc();
 		
-		Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨ %d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>,Ã»ÓĞÈËÌôÕ½£¬ÏµÍ³Ö¸¶¨NPC²ÎÕ½!", 
+		Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>,kh«ng cã ng­êi khiªu chiÕn, hÖ thèng chØ ®Şnh NPC tham chiÕn!", 
 					self.nArenaId, self.Master.szPlayerName, self.nGrade));
 		self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nPrepare, 2);
 		
-		CallPlayerFunction(self.Master.nPlayerIndex, Msg2Player, "3ÃëÖ®ºó±ÈÈü¿ªÊ¼!");
+		CallPlayerFunction(self.Master.nPlayerIndex, Msg2Player, "Sau 3 gi©y b¾t ®Çu chiÕn ®Êu!");
 		self.nFightState = 2;
 		return 0
 	elseif (nFightState == 2) then		-- ×¼±¸Ê±¼ä½áÊø
@@ -604,7 +604,7 @@ function ArenaField:OnTime(nFightState)
 			HundredArena.tbPlayerList[self.Visitor.szPlayerName].nLastServerTime = tonumber(GetCurServerTime()) + HA_MAXSTAYTIME;
 		end
 		
-		Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÅÅÔÚ±ÈÈüµÚ %d¿ªÊ¼!", self.nArenaId, self.nGrade));
+		Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L­ît ®Êu thø %d b¾t ®Çu!", self.nArenaId, self.nGrade));
 		
 		self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nFight, 3);
 		
@@ -672,7 +672,7 @@ function ArenaField:IsMaxGrade(nGrade)
 	local n_mod_t = mod(n_last_grade, 10);
 	if (n_last_grade < 100) then
 		if (n_mod_t == 0 and self.Master and self.nArenaId == 1) then
-			local sz_msg = format("<color=yellow>%s<color>ÔÚ»Ê³ÇË¾ÀŞÌ¨ÒÑ¾­Á¬ĞøÕ½Ê¤ÁË<color=yellow>%d <color>ÌôÕ½Õß£¬Îä¹¦ÕæÊÇÉîºñ",
+			local sz_msg = format("<color=yellow>%s<color>§· liªn tôc chiÕn th¾ng t¹i L«i §µi Hoµng Thµnh T­<color=yellow>%d <color>ng­êi khiªu chiÕn, vâ c«ng th¹t lµ th©m hËu",
 								self.Master.szPlayerName, n_last_grade );
 			RemoteExc("\\script\\event\\msg2allworld.lua", "battle_msg2allworld", {sz_msg});
 		end
@@ -683,7 +683,7 @@ function ArenaField:IsMaxGrade(nGrade)
 		if (self.Master) then
 			
 			if (self.nArenaId == 1) then
-				local sz_msg = format("<color=yellow>%s<color>ÔÚ»Ê³ÇË¾ÀŞÌ¨ÒÑÁ¬ĞøÕ½Ê¤<color=yellow>%d<color>ÌôÕ½Õß£¬ÔÚ½­ºşÉÏÒÑ³ÉÎªÒ»¸ö´«Ëµ",
+				local sz_msg = format("<color=yellow>%s<color>Liªn tôc chiÕn th¾ng t¹i L«i §µi Hoµng Thµnh T­<color=yellow>%d<color>ng­êi khiªu chiÕn, ®· trë thµnh mét truyÒn thuyÕt ®ån ®¹i trªn giang hå.",
 								self.Master.szPlayerName, 100 );
 				
 				RemoteExc("\\script\\event\\msg2allworld.lua", "battle_msg2allworld", {sz_msg});
@@ -709,8 +709,8 @@ function ArenaField:TimeClose()
 		local n_visitor_damage = CallPlayerFunction(self.Visitor.nPlayerIndex, ST_GetDamageCounter);
 		
 		if (n_master_damage <= n_visitor_damage) then
-			local sz_msg = format("ÀŞÌ¨ %d: ±ÈÈü½áÊø£¡ÀŞÖ÷£º<color=yellow>%s<color>, ³ĞÊÜÉ±ÉËÁ¦:<color=yellow>"..n_master_damage.."<color>;"
-						.."ÌôÕ½Õß:<color=yellow>%s<color>, ³ĞÊÜÉ±ÉËÁ¦:<color=yellow>"..n_visitor_damage.."<color>.ÀŞÖ÷Ê¤Àû!",
+			local sz_msg = format("L« §µi%d: Thi ®Êu kÕt thóc! L«i Chñ:<color=yellow>%s<color>, chŞu lùc s¸t th­¬ng:<color=yellow>"..n_master_damage.."<color>;"
+						.."Ng­êi khiªu chiÕn:<color=yellow>%s<color>, chŞu lùc s¸t th­¬ng:<color=yellow>"..n_visitor_damage.."<color>.L«i chñ chiÕn th¾ng!",
 						self.nArenaId, self.Master.szPlayerName, self.Visitor.szPlayerName);
 			Msg2Map(HundredArena.nMapId, sz_msg);
 			
@@ -738,15 +738,15 @@ function ArenaField:TimeClose()
 			
 			self.Visitor = nil;	-- ÌôÕ½Õß
 			
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÅÅÔÚ±ÈÈüµÚ %d,µÈ±ğµÄÍæ¼ÒÌôÕ½!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
 			
 		else
-			local sz_msg = "ÀŞÌ¨%d: ±ÈÈü½áÊø£¡ÀŞÖ÷:<color=yellow>%s<color>, ³ĞÊÜÉ±ÉËÁ¦:<color=yellow>"..n_master_damage.."<color>;"
-							.."ÌôÕ½Õß:<color=yellow>%s<color>, ³ĞÊÜÉ±ÉËÁ¦:<color=yellow>"..n_visitor_damage.."<color>,ÌôÕ½ÕßÊ¤Àû!"
+			local sz_msg = "L« §µi%d: Thi ®Êu kÕt thóc! L«i Chñ:<color=yellow>%s<color>, chŞu lùc s¸t th­¬ng:<color=yellow>"..n_master_damage.."<color>;"
+							.."Ng­êi khiªu chiÕn:<color=yellow>%s<color>, chŞu lùc s¸t th­¬ng:<color=yellow>"..n_visitor_damage.."<color>,Ng­êi khiªu chiÕn th¾ng lîi!"
 			Msg2Map(HundredArena.nMapId, format(sz_msg, self.nArenaId, self.Master.szPlayerName, self.Visitor.szPlayerName));
 			
 			self.nGrade = 1;
@@ -773,10 +773,10 @@ function ArenaField:TimeClose()
 			CallPlayerFunction(self.Master.nPlayerIndex, SetFightState, 0);
 			CallPlayerFunction(self.Master.nPlayerIndex, SetPKFlag, 0);
 			
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: <color=yellow>%s<color>Õ½Ê¤<color=yellow>%s<color>, ³ÉÎªĞÂÀŞÖ÷!",
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: <color=yellow>%s<color>chiÕn th¾ng<color=yellow>%s<color>, trë thµnh L«i Chñ míi!",
 					self.nArenaId, self.Master.szPlayerName, szLoser));
 			
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÅÅÔÚ±ÈÈüµÚ%d£¬µÈ´ı±ğµÄÍæ¼ÒÌôÕ½!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -787,7 +787,7 @@ function ArenaField:TimeClose()
 		HundredArena.tbPlayerList[self.Master.szPlayerName].nRight = 0;
 		HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = 0;
 		
-		Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>, ±»NPC´ò°Ü!", 
+		Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ <color=yellow>, bŞ NPC ®¸nh b¹i!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 		
 		-- CallPlayerFunction(self.Master.nPlayerIndex, Msg2Player, format("µÚ%dÂÖÀŞÌ¨¿ªÊ¼£¬µÈ´ıÌôÕ½Õß¡£", self.nGrade))
@@ -802,7 +802,7 @@ end
 
 function ArenaField:NpcDeath()
 	self.nFightState = 4;
-	Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷<color=yellow>%s<color>Õ½Ê¤µÚ %d", self.nArenaId, self.Master.szPlayerName, self.nGrade));
+	Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ<color=yellow>%s<color> chiÕn th¾ng l­ît thø %d", self.nArenaId, self.Master.szPlayerName, self.nGrade));
 	
 	self:DelTimer();
 	self.nGrade = self.nGrade + 1;
@@ -819,7 +819,7 @@ function ArenaField:NpcDeath()
 	CallPlayerFunction(self.Master.nPlayerIndex, SetPKFlag, 0)
 	
 	HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = self.nGrade;
-	Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÅÅÔÚ±ÈÈüµÚ%d,µÈ±ğµÄÍæ¼ÒÀ´ÌôÕ½!", 
+	Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 	self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 	self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -831,7 +831,7 @@ function ArenaField:PlayerDeath(nType)
 	self:DelTimer();
 	if (nType == 1) then						-- ÀŞÖ÷Ê¤Àû
 		self.nGrade = self.nGrade + 1;
-		local szLoser = "ÎŞÏµ"
+		local szLoser = "V« hÖ "
 		if (self.Visitor) then
 			szLoser = self.Visitor.szPlayerName;
 			HundredArena.tbPlayerList[szLoser].nArenaId = 0;
@@ -844,7 +844,7 @@ function ArenaField:PlayerDeath(nType)
 		end
 		
 		if (self.Master) then
-			Msg2Map(HundredArena.nMapId,format("ÀŞÌ¨%d: ÌôÕ½Õß<color=yellow>%s<color>Àë¿ªÀŞÌ¨<color=yellow>%s<color>Ê¤ÀûÁË.", self.nArenaId, szLoser, self.Master.szPlayerName));
+			Msg2Map(HundredArena.nMapId,format("L«i §µi%d: ng­êi khiªu chiÕn<color=yellow>%s<color> rêi khái L«i §µi, L«i Chñ<color=yellow>%s<color> ®· chiÕn th¾ng.", self.nArenaId, szLoser, self.Master.szPlayerName));
 			
 			if (self:IsMaxGrade() == 1) then
 				return
@@ -858,7 +858,7 @@ function ArenaField:PlayerDeath(nType)
 			CallPlayerFunction(self.Master.nPlayerIndex, SetPKFlag, 0);
 			
 			HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = self.nGrade;
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÅÅÔÚ±ÈÈüµÚ%d£¬µÈ´ı±ğµÄÍæ¼ÒÌôÕ½!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -868,7 +868,7 @@ function ArenaField:PlayerDeath(nType)
 	elseif (nType == 2) then					-- ÀŞÖ÷Ê§°Ü
 		self.nGrade = 1;
 		
-		local szLoser = "ÎŞÏµ"
+		local szLoser = "V« hÖ "
 		if (self.Master) then
 			
 			local player = Player:New(self.Master.nPlayerIndex);
@@ -893,9 +893,9 @@ function ArenaField:PlayerDeath(nType)
 			HundredArena.tbPlayerList[self.Master.szPlayerName].nRight = 1;
 			HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = self.nGrade;
 			
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: <color=yellow>%s<color>Õ½Ê¤<color=yellow>%s<color>, ³ÉÎªĞÂÀŞÖ÷!",
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: <color=yellow>%s<color>chiÕn th¾ng<color=yellow>%s<color>, trë thµnh L«i Chñ míi!",
 					self.nArenaId, self.Master.szPlayerName, szLoser));
-			Msg2Map(HundredArena.nMapId, format("ÀŞÌ¨%d: ÀŞÖ÷ÊÇ<color=yellow>%s<color>, ÅÅÔÚ±ÈÈüµÚ%d£¬µÈ´ı±ğµÄÍæ¼ÒÌôÕ½!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË

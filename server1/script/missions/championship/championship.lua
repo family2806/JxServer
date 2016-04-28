@@ -8,15 +8,15 @@ function main()
 		mapid = CP_MAPTAB[i][1]
 		mapindex = SubWorldID2Idx(mapid)
 		if (mapindex < 0) then
-			print("ANNOUNCE: ÎäÁÖ´ó»á»á³¡"..CP_MAPTAB[i][3].."²»ÔÚsever, ", mapid);
+			print("ANNOUNCE: Héi tr­êng §¹i héi vâ l©m"..CP_MAPTAB[i][3].."Kh«ng cã trªn sever, ", mapid);
 		else
 			SubWorld = mapindex
 			if(GetMissionV(MS_STATE) > 0) then
 				return
 			end
 			OpenMission(MISSIONID)
-			str = date("%mÔÂ%dÈÕ").."ÎäÁÖ´ó»á"..CP_MAPTAB[i][3].."ÃÅÅÉÔ¤Ñ¡ÒÑ¿ªÊ¼£¬Çëµ½Î»ÓÚÁÙ°²µÄÎäÁÖ´ó»á»á³¡±¨Ãû±ÈÈü.±¨ÃûÌõ¼ş:µÈ¼¶´óÓÚ90¼¶£¬×îÉÙ²Î¼Ó20´Î. Ê×´Î±¨Ãû½»90ÍòÁ½."
-			WriteLog(date("%YÄê%mÔÂ%dÈÕ%Ê±%M·Ö:").."ÎäÁÖ´ó»á"..CP_MAPTAB[i][3].."ÃÅÅÉÔ¤Ñ¡±ÈÈü¼°¿ªÊ¼!")
+			str = date("%mth¸ng%dngµy").."§¹i héi vâ l©m"..CP_MAPTAB[i][3].."M«n ph¸i ®Êu dù tuyÓn ®· b¾t ®Çu, mêi ®Õn Héi tr­êng vâ l©m ®¹i héi ë L©m An b¸o danh thi ®Êu. §iÒu kiÖn b¸o danh: §¼ng cÊp lín h¬n cÊp 90, sè lÇn tham gia ph¶i İt h¬n 20 lÇn. LÇn ®Çu b¸o danh nép 10 v¹n l­îng."
+			WriteLog(date("%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:").."§¹i héi vâ l©m"..CP_MAPTAB[i][3].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!")
 			AddGlobalCountNews(str, 1)
 			SetMissionV(MS_STATE, 1)
 			SetMissionV(MS_ROUND, 1)

@@ -6,49 +6,49 @@ DWGOLDENLASTDATE = tonumber(date("%d")) --ÉÏÒ»´ÎÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸µÄÈÕÆÚ Ö»¼
 DWGOLDENMAXCOUNT = 2	--¶ËÎçÓÃ¾ŞĞÍÁúÖÛ»»¶¨¹ú°²°î¡¢ÏÀ¹ÇÈáÇé£¬Ã¿ÌìÃ¿Ì¨·şÎñÆ÷¿ÉÒÔ»»È¡µÄÊıÁ¿£¬Ã¿Ì¨gameserverµÄÉÏÏŞ£¬¹²16¸ö
 DWGOLDENNOWCOUNT = 0 --µ±Ç°ÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸Êı
 
-DWORELASTDATE = tonumber(date("%d")) --ÉÏÒ»´ÎÓÃÊŞĞÍÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯µÄÈÕÆÚ Ö»¼ÇÂ¼Ìì
-DWOREMAXCOUNT = 12	--¶ËÎçÓÃÊŞĞÍÁúÖÛ»»Ğş¾§¡¢ÉñÃØ¿óÊ¯£¬Ã¿ÌìÃ¿Ì¨·şÎñÆ÷¿ÉÒÔ»»È¡µÄÊıÁ¿£¬Ã¿Ì¨gameserverµÄÉÏÏŞ£¬¹²96¸ö
-DWORENOWCOUNT = 0 --µ±Ç°ÓÃÊŞĞÍÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯Êı
+DWORELASTDATE = tonumber(date("%d")) --ÉÏÒ»´ÎÓÃÊŞĞÍÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chµÄÈÕÆÚ Ö»¼ÇÂ¼Ìì
+DWOREMAXCOUNT = 12	--¶ËÎçÓÃÊŞĞÍÁúÖÛ»»Ğş¾§¡¢ThÇn bİ kho¸ng th¹ch£¬Ã¿ÌìÃ¿Ì¨·şÎñÆ÷¿ÉÒÔ»»È¡µÄÊıÁ¿£¬Ã¿Ì¨gameserverµÄÉÏÏŞ£¬¹²96¸ö
+DWORENOWCOUNT = 0 --µ±Ç°ÓÃÊŞĞÍÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊı
 
 AWARD_BIRDBOAT = {
-					{"ÏÉ²İÂ¶ ",{6,1,71,1,0,0},30},
-					{"×ÏË®¾§",{239},15},
-					{"À¶Ë®¾§",{238},15},		
-					{"ÂÌË®¾§",{240},15},
-					{"¾§ºì±¦Ê¯",{353},15},	
-					{"ÌìÉ½±¦Â¶ ",{6,1,72,1,0,0},10},	
+					{"Tiªn Th¶o Lé ",{6,1,71,1,0,0},30},
+					{"Tö Thñy Tinh",{239},15},
+					{"Lam Thñy Tinh",{238},15},		
+					{"Lôc Thñy Tinh",{240},15},
+					{"Tinh Hång B¶o Th¹ch",{353},15},	
+					{"Thiªn s¬n  B¶o Lé ",{6,1,72,1,0,0},10},	
 					}
 
 AWARD_BEASTBOAT = {
-					{"Ğş¾§5¼¶",{6,1,147,5,0,0},20},
-					{"Ğş¾§6¼¶",{6,1,147,6,0,0},43},
-					{"Ğş¾§7¼¶",{6,1,147,7,0,0},30},		
-					{"Ğş¾§8¼¶",{6,1,147,8,0,0},3},
-					{"ÉñÃØ¿óÊ¯",{6,1,398,1,0,0},4},
+					{"HuyÒn Tinh cÊp 5",{6,1,147,5,0,0},20},
+					{"HuyÒn Tinh cÊp 6",{6,1,147,6,0,0},43},
+					{"HuyÒn Tinh cÊp 7",{6,1,147,7,0,0},30},		
+					{"HuyÒn Tinh cÊp 8",{6,1,147,8,0,0},3},
+					{"ThÇn bİ kho¸ng th¹ch",{6,1,398,1,0,0},4},
 					}
 
 AWARD_HUGEBOAT = {
-					{"¶¨¹úÖ®ÇàÉ´³¤ÉÀ",{159},100},
-					{"¶¨¹úÖ®ÎÙÉ°·¢¹Ú",{160},51},
-					{"¶¨¹úÖ®³à¾îÈíÑ¥",{161},70},	
-					{"¶¨¹úÖ®×ÏÌÙ»¤Íó",{162},70},
-					{"¶¨¹úÖ®Òø²ÏÑü´ø",{163},70},
-					{"°²°îÖ®±ù¾§Ê¯ÏîÁ´",{164},51},
-					{"°²°îÖ®¾Õ»¨Ê¯Ö¸»·",{165},51},
-					{"°²°îÖ®Ìï»ÆÊ¯ÓñÅå",{166},51},
-					{"°²°îÖ®¼¦ÑªÊ¯½äÖ¸ ",{167},51},
-					{"ÏÀ¹ÇÖ®ÌúÑªÉÀ",{186},70},
-					{"ÏÀ¹ÇÖ®¶àÇé»·",{187},70},
-					{"ÏÀ¹ÇÖ®µ¤ĞÄ½ä",{188},70},
-					{"ÏÀ¹ÇÖ®ÇéÒâ½á",{189},20},
-					{"ÈáÇéÖ®½íàşÄŞÉÑ",{190},14},
-					{"ÈáÇéÖ®ÊçÅ®ÏîÁ´",{191},60},
-					{"ÈáÇéÖ®·ïÒÇ½äÖ¸",{192},80},
-					{"ÈáÇéÖ®»ÛĞÄÓñÅå",{193},51},
+					{"§Şnh Quèc Thanh Sa Tr­êng Sam",{159},100},
+					{"§Şnh Quèc ¤ Sa Ph¸t Qu¸n",{160},51},
+					{"§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa",{161},70},	
+					{"§Şnh Quèc Tö §»ng Hé uyÓn",{162},70},
+					{"§Şnh Quèc Ng©n Tµm Yªu ®¸i",{163},70},
+					{"An Bang B¨ng Tinh Th¹ch H¹ng Liªn",{164},51},
+					{"An Bang Cóc Hoa Th¹ch ChØ hoµn",{165},51},
+					{"An Bang §iÒn Hoµng Th¹ch Ngäc Béi",{166},51},
+					{"An Bang Kª HuyÕt Th¹ch Giíi ChØ ",{167},51},
+					{"HiÖp Cèt ThiÕt HuyÕt Sam",{186},70},
+					{"HiÖp Cèt §a T×nh Hoµn",{187},70},
+					{"HiÖp Cèt §an T©m Giíi",{188},70},
+					{"HiÖp Cèt T×nh ı KÕt",{189},20},
+					{"Nhu T×nh C©n Quèc Nghª Th­êng",{190},14},
+					{"Nhu T×nh Thôc N÷ H¹ng Liªn",{191},60},
+					{"Nhu T×nh  Phông Nghi Giíi ChØ ",{192},80},
+					{"Nhu T×nh  TuÖ T©m Ngäc Béi",{193},51},
 					}
 																									
 function dragonboat_main()
-	Say(" ¶ËÎç½Ú»î¶¯ÒÑ½áÊø£¬µ«ÊÇ´ó¼Ò»¹¿ÉÒÔÓÃÓàÏÂµÄÎïÆ·ºÏ³ÉÁúÖÛºÍ»»È¡ÀñÆ·¡£ÅÅÃûÇ°Ê®µÄÍæ¼Ò¿ìÀ´ÎÒÕâ»»»Æ½ğ×°±¸¡£.", 5,"ÖÆÔìÁúÖÛ/duanwu_convert","ÓÃÁúÖÛ»»È¡Áì½±/dragon_award","ÅÅÃûÇ°Ê®µÄÁìÈ¡»Æ½ğ×°±¸./dragon_golden","Ïà¹Ø»î¶¯/aboutboat", "²»ĞèÒª/OnCancel");
+	Say(" Ho¹t ®éng TÕt §oan Ngä ®· kÕt thóc nh­ng mäi ng­êi vÉn cã thÓ dïng nh÷ng vËt liÖu cßn l¹i ®Ó ghĞp thuyÒn rång vµ ®æi lÊy phÇn th­ëng. Ng­êi ch¬i trong 10 tªn ®øng ®Çu cña b¶ng xÕp h¹ng ®ua ThuyÒn rång cao vµ s¬ cÊp nhanh ch©n ®Õn chç ta ®æi Trang bŞ Hoµng Kim.", 5,"T¹o thuyÒn rång/duanwu_convert","Dïng thuyÒn rång ®æi phÇn th­ëng/dragon_award","10 tªn ®øng ®Çu b¶ng xÕp h¹ng ®ua thuyÒn rång nhËn Trang bŞ Hoµng Kim./dragon_golden","Ho¹t ®éng cã liªn quan/aboutboat", "Kh«ng cÇn/OnCancel");
 end
 
 function want_playboat()
@@ -59,11 +59,11 @@ function want_playboat()
 	local startboat = 0
 	local blevel = 0
 	if (IsCaptain() ~= 1) then
-		Say(" ¶Ô²»Æğ! ĞèÒª¶Ó³¤±¨Ãû²Î¼ÓÈüÁúÖÛ»î¶¯²ÅĞĞ.",0)
+		Say(" Xin lçi! CÇn ®éi tr­ëng b¸o danh tham gia ho¹t ®éng ®ua thuyÒn rång míi ®­îc.",0)
 		return
 	end
 	if (GetTeamSize() < 4) then
-		Say(" ¶Ô²»Æğ! ²Î¼ÓÈüÁúÖÛ»î¶¯¶ÓÎéÖÁÉÙĞèÒª <color=red>4<color> ÈË. Ä¿Ç°ÄúµÄ¶Ó²»¹»ÈË! ¿ìÈ¥ÕÒĞ©ÈËÀ´°É ",0)
+		Say(" Xin lçi! §éi thi ®Êu tham gia ho¹t ®éng ®ua thuyÒn rång cÇn İt nhÊt <color=red>4<color> ng­êi. HiÖn ®éi cña b¹n kh«ng ®ñ ng­êi! H·y ®i t×m thªm b»ng h÷u nhĞ!",0)
 		return
 	end
 	if (GetLevel() >= 90) then
@@ -79,10 +79,10 @@ function want_playboat()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" ¶Ô²»Æğ! ÔÚÄãµÄ¶ÓÎéÖĞÓĞÈËµÈ¼¶ <color=red>³¬¹ı90¼¶<color>, ²»ÄÜ²Î¼Ó±ÈÈü! ¼ì²éºóÔÙÀ´²Î¼Ó±¨Ãû! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra lai råi ®Õn b¸o danh tham gia! ",0)
 				return
 			else
-				Say(" ¶Ô²»Æğ! ÔÚÄãµÄ¶ÓÎéÖĞÓĞÈËµÈ¼¶ <color=red>²»×ã90¼¶<color>, ²»ÄÜ²Î¼Ó±ÈÈü! ¼ì²éºóÔÙÀ´²Î¼Ó±¨Ãû! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>ch­a ®Õn cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
 				return
 			end
 		end
@@ -107,21 +107,21 @@ function want_playboat()
 	print("total"..totalboat.."free"..freeboat)
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "³õ¼¶ÁúÖÛÈü"
+		strlevel = "thuyÒn rång cao cÊp"
 	else
-		strlevel = "¸ß¼¶ÁúÖÛÈü"
+		strlevel = "thuyÒn rång cao cÊp"
 	end
 	
 	if (startboat == 1) then
 		if (freeboat == 0) then
-			Say(" ¸ÃÇøÓòÕıÔÚ"..strlevel.."®· ¿ªÊ¼. Ã»ÓĞµØ·½ÁË ",0)
+			Say(" Khu vùc nµy ®ang trong"..strlevel.."®· b¾t ®Çu. Kh«ng cßn chç n÷a….",0)
 			return
 		else
-			Say(" ¸ÃÇøÓòÕıÔÚ"..strlevel.."ÈüÁúÖÛ±¨Ãû½×¶Î, »¹ÓĞ <color=red>"..freeboat.."<color>ÁúÖÛ»¹¿ÕµÄ. ²Î¼Ó±ÈÈüĞèÒª½» <color=red>5 Íò<color>Á½, ÄãÏë²Î¼ÓÂğ?",2, "ÊÇµÄ! ÎÒÏë´øÎÒµÄ¶Ó²Î¼Ó./dragon_join", "²»ĞèÒª/OnCancel")
+			Say(" Khu vùc nµy ®ang trong"..strlevel.."giai ®o¹n b¸o danh ®ua thuyÒn rång, vÉn cßn <color=red>"..freeboat.."<color>thuyÒn rång cßn trèng. Tham gia thi ®Êu cÇn nép <color=red>5 v¹n<color>l­îng, b¹n cã muèn tham gia?",2, "Ph¶i! Ta muèn dÉn d¾t ®éi cña ta tham gia./dragon_join", "Kh«ng cÇn/OnCancel")
 			return
 		end
 	else
-		Say(" ¶Ô²»Æğ! ¸ÃÇøÓò"..strlevel.."Ä¿Ç°Ã»ÓĞÈüÁúÖÛ±ÈÈü. ±¨Ãû <color=red>°´Ê±<color> ¿ªÊ¼. ±¨ÃûÊ±¼äÎª5·ÖÖÓ. Çë×¢ÒâÏµÍ³Í¨Öª!",0)
+		Say(" Xin lçi! Khu vùc nµy"..strlevel.."hiÖn ch­a më ho¹t ®éng ®ua thuyÒn rång nµo ®Ó tham gia. B¸o danh <color=red>®óng mçi giê<color> b¾t ®Çu. Thêi gian b¸o danh lµ 5 phót. Xin chó ı th«ng b¸o cña hÖ thèng!",0)
 		return
 	end
 	
@@ -133,17 +133,17 @@ function dragon_join()
 		blevel = 1
 	end
 	if (IsCaptain() ~= 1) then
-		Say(" ¶Ô²»Æğ! ĞèÒª¶Ó³¤±¨Ãû²Î¼ÓÈüÁúÖÛ»î¶¯²ÅĞĞ.",0)
+		Say(" Xin lçi! CÇn ®éi tr­ëng b¸o danh tham gia ho¹t ®éng ®ua thuyÒn rång míi ®­îc.",0)
 		return
 	end
 	if (GetTeamSize() < 1) then
-		Say(" ¶Ô²»Æğ! ²Î¼ÓÈüÁúÖÛ»î¶¯¶ÓÎéÖÁÉÙĞèÒª <color=red>4<color> ÈË. Ä¿Ç°ÄúµÄ¶Ó²»¹»ÈË! ¿ìÈ¥ÕÒĞ©ÈËÀ´°É",0)
+		Say(" Xin lçi! §éi thi ®Êu tham gia ho¹t ®éng ®ua thuyÒn rång cÇn İt nhÊt <color=red>4<color> ng­êi. HiÖn ®éi cña b¹n kh«ng ®ñ ng­êi! H·y ®i t×m thªm b»ng h÷u nhĞ!",0)
 		return
 	end
 	local bhaveboat = 0
-	local boatstr = "Ğ¡ÁúÖÛ "
+	local boatstr = "ThuyÒn Rång nhá "
 	if (blevel > 0) then
-		boatstr = "´«Í³ÁúÖÛ"
+		boatstr = "ThuyÒn Rång truyÒn thèng"
 	end
 	
 	if (blevel == 0) then
@@ -153,11 +153,11 @@ function dragon_join()
 	end
 	
 	if (GetCash() < 50000 or bhaveboat == 0 and blevel == 0) then
-		Say(" ¶Ô²»Æğ! ²Î¼ÓÈüÁúÖÛ±ÈÈüĞèÒª½»<color=red> 5 ÍòÁ½ ºÍ "..boatstr.."<color>²ÅĞĞ, ÄãµÄÇ®²»¹»»òÕßÃ»´øĞ¡ÁúÖÛ¡£×¼±¸ºÃÁËÔÙÀ´!.", 0)
+		Say(" Xin lçi! Tham gia thi ®Êu thuyÒn rång cÇn nép<color=red> 5 v¹n l­îng vµ "..boatstr.."<color>míi ®­îc, tiÒn cña b¹n kh«ng ®ñ hoÆc kh«ng mang theo thuyÒn rång nhá!ChuÈn bŞ ®ñ råi h·y ®Õn!.", 0)
 		return
 	end
 	if (GetCash() < 50000 or bhaveboat == 0 and blevel == 1) then
-		Say(" ¶Ô²»Æğ! ²Î¼ÓÈüÁúÖÛ±ÈÈüĞèÒª½»<color=red> 5 ÍòÁ½ ºÍ"..boatstr.."<color=red>²ÅĞĞ, ÄãµÄÇ®²»¹»»òÕßÃ»´ø´«Í³ÁúÖÛ! ×¼±¸ºÃÁËÔÙÀ´!", 0)
+		Say(" Xin lçi! Tham gia thi ®Êu thuyÒn rång cÇn nép<color=red> 5 v¹n l­îng vµ "..boatstr.."<color=red>míi ®­îc, tiÒn cña b¹n kh«ng ®ñ hoÆc kh«ng mang theo thuyÒn rång truyÒn thèng! ChuÈn bŞ ®ñ råi h·y ®Õn!", 0)
 		return
 	end
 	
@@ -172,10 +172,10 @@ function dragon_join()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" ¶Ô²»Æğ! ÔÚÄãµÄ¶ÓÎéÖĞÓĞÈËµÈ¼¶ <color=red>³¬¹ı90¼¶<color>, ²»ÄÜ²Î¼Ó±ÈÈü! ¼ì²éºóÔÙÀ´²Î¼Ó±¨Ãû! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra lai råi ®Õn b¸o danh tham gia! ",0)
 				return
 			else
-				Say(" ¶Ô²»Æğ! ÔÚÄãµÄ¶ÓÎéÖĞÓĞÈËµÈ¼¶ <color=red>²»×ã90¼¶<color>, ²»ÄÜ²Î¼Ó±ÈÈü! ¼ì²éºóÔÙÀ´²Î¼Ó±¨Ãû! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>ch­a ®Õn cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
 				return
 			end
 		end
@@ -204,7 +204,7 @@ function dragon_join()
 				SetMissionS(VARS_TEAM_NAME,GetName())
 				
 				-- DEBUG
-				print(format("%s ´Ó(%d, %d, %d) ºÍÎ»ÖÃ½øÈëÁúÖÛ", GetName(), w, x, y));
+				print(format("%s tõ (%d, %d, %d) vŞ trİ vµo thuyÒn rång", GetName(), w, x, y));
 
 				Pay(50000)
 				if (blevel == 0) then
@@ -226,20 +226,20 @@ function dragon_join()
 	PlayerIndex = OldPlayer
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "³õ¼¶ÁúÖÛÈü"
+		strlevel = "thuyÒn rång cao cÊp"
 	else
-		strlevel = "³õ¼¶ÁúÖÛÈü"
+		strlevel = "thuyÒn rång cao cÊp"
 	end
-	Say("¶Ô²»Æğ! Ä¿Ç°<color=red>"..strlevel.."<color> ®·ÒÑÃ»ÓĞ×ùÎ»¡£ÇëµÈÏÂÒ»ÂÖ!",0)
+	Say("Xin lçi! HiÖn t¹i<color=red>"..strlevel.."<color> ®· kh«ng cßn chç. Xin ®îi vßng sau!",0)
 end
 
 function dragon_award()
-	Say(" ÈüÁúÖÛ±ÈÈüÕıÔÚÈç»ğÈçİ±µØ½øĞĞ£¬ÀÏ·òÕıÔÚÊÕÁúÖÛ¡£ÄãÏëÓÃÄÄÖÖÁúÖÛ»»È¡½±Àø?",7,"Ğ¡ÁúÖÛ»»È¡¶¹É³ôÕ×Ó/dousha","´«Í³ÁúÖÛ»»È¡Ïã¹½ôÕ×Ó/xianggu","ÂíÍ·ÁúÖÛ»»È¡µ°»ÆôÕ×Ó/danhuang"," ÄñÍ·ÁúÖÛËæ»ú»»È¡ÏÉ²İÂ¶£¬Ë®¾§£¬±¦Ê¯£¬ÌìÉ½±¦Â¶/birdboat_award","ÊŞÍ·ÁúÖÛËæ»ú»»È¡ÉñÃØ¿óÊ¯£¬5-Ğş¾§¿óÊ¯8¼¶/beastboat_award","´óÁúÖÛËæ»ú»»È¡¶¨¹ú°²°î£¬Ò»Ì×ÈáÇéÏÀ¹Ç»Æ½ğ×°±¸/hugeboat_award","²»ĞèÒª!/OnCancel");
+	Say(" Cuéc ®ua thuyÒn rång ®ang s«i næi. L·o phu ®ang thu nhËn thuyÒn rång. B¹n muèn dïng lo¹i thuyÒn nµo ®Ó ®æi phÇn th­ëng?",7,"ThuyÒn rång nhá ®æi B¸nh ch­ng nh©n ®Ëu/dousha","ThuyÒn rång truyÒn thèng ®æi B¸nh ch­ng nh©n nÊm/xianggu","M· ®Çu thuyÒn rång ®æi B¸nh ch­ng nh©n trøng/danhuang"," ThuyÒn rång ®Çu phông ngÉu nhiªn ®æi lÊy Tiªn Th¶o lé, Thñy Tinh, B¶o Th¹ch, Thiªn S¬n B¶o Lé /birdboat_award","ThuyÒn rång h×nh thó ngÉu nhiªn ®æi lÊy Kho¸ng th¹ch thÇn bİ, 5-HuyÕn Tinh kho¸ng th¹ch cÊp 8/beastboat_award","ThuyÒn rång lo¹i lín ngÉu nhiªn ®æi lÊy §Şnh Quèc An Bang, 1 bé trang bŞ hoµng kim HiÖp Cèt Nhu T×nh/hugeboat_award","Kh«ng cÇn!/OnCancel");
 end
 
 function dragon_golden()
 	--Say("Àñ¹Ù£ºÁúÖÛ´óÈüÕıÔÚÈç»ğÈçİ±µÄ½øĞĞÖĞ£¬ÒªµÈµ½<color=red>»î¶¯½áÊø<color>ºó²ÅÄÜÀ´Áì½±Å¶¡£",0);
-	Say(" ÄãÏëÁìÈ¡Ê²Ã´±ÈÈü½±Àø?", 3, "³õ¼¶ÁúÖÛÈü/dragon_golden_low","§ua ¸ß¼¶ÁúÖÛÈü/dragon_golden_high","²»ĞèÒª!/OnCancel");
+	Say(" B¹n muèn nhËn phÇn th­ëng thi ®Êu nµo?", 3, "thuyÒn rång cao cÊp/dragon_golden_low","§ua thuyÒn rång cao cÊp/dragon_golden_high","Kh«ng cÇn!/OnCancel");
 end
 
 function dragon_golden_low()
@@ -247,11 +247,11 @@ function dragon_golden_low()
 		RoleName, Data = Ladder_GetLadderInfo(10141, i);
 		if( GetName() ==  RoleName) then
 			if(GetTask(1507) ~= 0) then
-				Say(" ÄãÒÑÁìÈ¡³õ¼¶ÁúÖÛÈüÅÅÃûÇ°Ê®½±Àø!",0);
+				Say(" ÄãÒÑÁìÈ¡thuyÒn rång cao cÊpÅÅÃûÇ°Ê®½±Àø!",0);
 				return 0
 			end			
 			if(CalcFreeItemCellCount() < 6) then
-				Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+				Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 				return 0
 			end
 			dragon_givegolden();
@@ -259,7 +259,7 @@ function dragon_golden_low()
 			return 1
 		end
 	end
-	Say(" Äã²»ÔÚ³õ¼¶ÁúÖÛÈüÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
+	Say(" Äã²»ÔÚthuyÒn rång cao cÊpÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
 end
 
 function dragon_golden_high()
@@ -267,11 +267,11 @@ function dragon_golden_high()
 		RoleName, Data = Ladder_GetLadderInfo(10142, i);
 		if( GetName() ==  RoleName) then
 			if(GetTask(1508) ~= 0) then
-				Say(" ÄãÒÑÁìÈ¡¼¶ÁúÖÛÈüÅÅÃûÇ°Ê®½±Àø!",0);
+				Say(" B¹n ®· l·nh phÇn th­ëng 10 tªn ®øng ®Çu trong b¶ng xÕp h¹ng thuyÒn rång cao cÊp!",0);
 				return 0
 			end			
 			if(CalcFreeItemCellCount() < 6) then
-				Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+				Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 				return 0
 			end
 			dragon_givegolden();
@@ -279,100 +279,100 @@ function dragon_golden_high()
 			return 1
 		end
 	end
-	Say(" ²»ÔÚ¸ß¼¶ÁúÖÛÈüÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
+	Say(" B¹n kh«ng n»m trong 10 tªn ®øng ®Çu b¶ng xÕp h¹ng ®ua thuyÒn rång cao cÊp, kh«ng thÓ l·nh th­ëng.",0);
 end
 
 function aboutboat()
-	Say(" ÄãÏëÁË½âÄÄÒ»Ïî?", 5,"ºÏ³ÉÁúÖÛµÄ¹«Ê½/aboutmaking","ÁúÖÛÈüÀúÊ·/abouthistory","Ïà¹Ø±¨Ãû/aboutjoin","×¢ÒâÏîÄ¿ /aboutnotice","ÎÒÖªµÀÁË!/OnCancel");
+	Say(" B¹n muèn t×m hiÓu môc nµo?", 5,"C«ng thøc ghĞp thuyÒn rång/aboutmaking","LŞch sö ®ua thuyÒn rång/abouthistory","Liªn quan b¸o danh/aboutjoin","H¹ng môc chó ı /aboutnotice","Ta ®· biÕt råi!/OnCancel");
 end
 
 function aboutmaking()
-	local a = "Ğ¡ÁúÖÛ= 1 ÁúÍ· + 1 ÁúÎ² + 1 ÁúÉí + 1 Áú¹Ç + 4 ½°+ 1 ·½ÏòÅÌ + 1 ¹Ä";
-	local b = "<enter>´«Í³ÁúÖÛ = 1 Ğ¡ÁúÖÛ+ 4 ½°";
-	local c = "<enter>ÂíÍ·ÁúÖÛ= 1 Ğ¡ÁúÖÛ+ 1 ´«Í³ÁúÖÛ + 1 ÁúÍ·";
-	local d = " ÄñÍ·ÁúÖÛ = 1 ÂíÍ·ÁúÖÛ + 1 ´«Í³ÁúÖÛ + 1 ÁúÍ·";
-	local e = "<enter>ÊŞÍ·ÁúÖÛ= 1 ÄñÍ·ÁúÖÛ + 1 ÂíÍ·ÁúÖÛ + 1 ÁúÍ·";
-	local f = "<enter>´óÁúÖÛ = 1 ÊŞÍ·ÁúÖÛ+ 1 ÄñÍ·ÁúÖÛ + 1 ÂíÍ·ÁúÖÛ";
+	local a = "ThuyÒn rång nhá = 1 ®Çu rång + 1 ®u«i rång + 1 th©n rång + 1s­ên rång + 4 m¸i chÌo + 1 b¸nh l¸i + 1 trèng";
+	local b = "<enter>ThuyÒn rång truyÒn thèng = 1 ThuyÒn rång nhá + 4 m¸i chÌo";
+	local c = "<enter>M· ®Çu thuyÒn rång = 1 ThuyÒn rång nhá + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
+	local d = " ThuyÒn rång ®Çu phông = 1 ThuyÒn rång ®Çu ngùa + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
+	local e = "<enter>ThuyÒn rång h×nh thó = 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa + 1 ®Çu rång";
+	local f = "<enter>ThuyÒn rång lo¹i lín = 1 ThuyÒn rång h×nh thó + 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa";
 	Talk(2,"",a..b..c,d..e..f);
 end
 
 function abouthistory()
-	Talk(1,"","´«Ëµ£¬ÇüÔ­ÌøºÓºó£¬µ±µØÈËÃÇÃÎ¼ûÇüÔ­ÉíĞÎÏûÊİ£¬¾ÍÓÃÖñÒ¶°ü·¹³ÉôÕ×Ó£¬·ÅÉÏÁúÖÛºóÍÆÏòºÓÄÚ£¬Ë®ÏÂµÄË®×å¿ªµ½ÊÇÁú£¬¾ÍÈÏÎªÊÇÁúÍõµÄ¶«Î÷£¬¾Í²»¸Ò³Ô£¬ËùÒÔ£¬¿ÉÒÔ¼À°İ¸øÇüÔ­ÓÃ¡£Õâ¾ÍÊÇÁúÖÛÈüºÍ³ÔôÕ×ÓµÄÔ­ÓÉ¡£");
+	Talk(1,"","TruyÒn thuyÕt nãi r»ng sau khi KhuÊt Nguyªn trÇm m×nh trªn s«ng MŞch La. Ng­êi bµ con th©n thuéc ë quª nhµ «ng n»m méng thÊy KhuÊt Nguyªn th©n h×nh tiÒu tôy bÌn dïng l¸ tróc gãi c¬m thµnh nh÷ng chiÕc b¸nh cã gãc (B¸nh ch­ng) , chÊt lªn thuyÒn rång råi ®Èy ra dßng s«ng ®Ó c¸c loµi thñy téc do Long Vuong cai qu¶n d­íi n­íc nh×n thÊy rång sÏ cho lµ ®å cña Long V­¬ng ®­a tíi sÏ kh«ng d¸m ¨n nªn cã thÓ cóng tÕ cho KhuÊt Nguyªn dïng. §©y chİnh lµ nguyªn do cã cuéc ®ua thuyÒn rång vµ tôc ¨n B¸nh ch­ng.");
 end
 
 function aboutjoin()
-	Talk(2,"","Íæ¼ÒÓÃ <color=red>Ğ¡ÁúÖÛºÍ´«Í³ÁúÖÛ<color> ×÷Îª<color=red>¶Ó³¤<color>, Áì×Å¸÷Î»¶ÓÓÑµ½<color=red>Àñ¹Ù´¦<color> ±¨Ãû²Î¼Ó³õ¼¶ºÍ¸ß¼¶ÁúÖÛÈü£¬Ã»Ğ¡Ê±¾ÙĞĞÒ»´Î,<color=red>µ½Ê± <color>Í¨Öª¿ªÊ¼½ÓÊÜ±¨Ãû¡£±¨ÃûÊ±¼äÎªÎå·ÖÖÓ.","³õ¼¶±ÈÈü×î¶àÔÊĞí <color=red>8<color> ¶ÓÎé²Î¼Ó£¬¶ÔÓ¦µÄÊÇ8ÕÅÁúÖÛµØÍ¼;¸ß¼¶±ÈÈü×î¶àÔÊĞí <color=red>16<color> ¶Ó²Î¼Ó£¬¶ÔÓ¦µÄÊÇ16ÕÅÁúÖÛµØÍ¼¡£Èç¹ûÔÚÀñ¹Ù´¦±¨ÃûÊıÁ¿¹»ÁË£¬ÇëÍæ¼Òµ½ÆäËû³ÇÊĞµÄÀñ¹Ù´¦±¨Ãû¡£");
+	Talk(2,"","Ng­êi ch¬i gi÷ <color=red>ThuyÒn rång nhá vµ ThuyÒn rång truyÒn thèng<color> lµm <color=red>®éi tr­ëng<color>, dÉn theo c¸c ®éi viªn ®Õn <color=red>LÔ quan<color> b¸o danh tham gia ®ua thuyÒn rång s¬ vµ cao cÊp, mçi giê tæ chøc 1 lÇn, <color=red>®óng giê <color> ®­a ra th«ng b¸o b¾t ®Çu tiÕp nhËn b¸o danh. Thêi gian b¸o danh lµ 5phót.","Thi ®Êu s¬ cÊp cho phĞp nhiÒu nhÊt <color=red>8<color> ®éi cïng tham gia ®èi øng víi 8 tÊm b¶n ®å thuyÒn rång;Thi ®Êu cao cÊp cho phĞp nhiÒu nhÊt <color=red>16<color> ®éi cïng tham gia ®èi øng víi 16 tÊm b¶n ®å thuyÒn rång. NÕu sè tªn b¸o danh LÔ quan ë thµnh thŞ nµo ®ã ®· ®Çy. Mêi ng­êi ch¬i ®Õn LÔ quan c¸c thµnh thŞ kh¸c b¸o danh.");
 end
 
 function aboutnotice()
-	Talk(3,"","±¨Ãû³É¹¦ºó£¬ËùÓĞ¶ÓÎé±»×ªÒÆµ½ÁúÖÛµØÍ¼¡£ÔÚµÈ±ÈÈüÊ±¼ä¿ªÊ¼Ê±£¬Íæ¼Ò<color=red>ËÀÍöµÄ<color> ¾Í»á±»ÅĞ¶¨ÎªÊ§È¥±ÈÈü×Ê¸ñ¡£Èç¹û¶Ó³¤ËÀÍöµÄ£¬ÓàÏÂ³ÉÔ±ÒÀÈ»¿ÉÒÔ¼ÌĞø±ÈÈüºÍÁì½±£¬µ«ÊÇ³É¼¨²»ÄÜ¼ÆÈëÅÅĞĞ°ñ¡£.","ÔÚ <color=red>2 ÖÜºó<color> ÁúÖÛÈü»î¶¯½áÊø<color=red> ³õ¼¶ºÍ¸ß¼¶±ÈÈüÅÅÃûÇ°Ê®µÄ¶ÓÎé<color> ¿ÉÒÔµ½Àñ¹Ù´¦ÁìÈ¡¶¨¹ú°²°î£¬1Ì×ÈáÇéÏÀ¹ÇËæ»ú»Æ½ğ×°±¸.","ÏëÁË½âÏêÏ¸ĞÅÏ¢£¬Çë¿´Ö÷Ò³£º www.volam.com.vn");
+	Talk(3,"","Sau khi b¸o danh thµnh c«ng, tÊt c¶ c¸c ®éi ®­îc chuyÓn ®Õn b¶n ®å thuyÒn rång. Trong lóc ®îi thêi gian thi ®Êu b¾t ®Çu, ng­êi ch¬i bŞ <color=red>rít m¹ng hoÆc bŞ h¹ gôc<color> th× ®­îc ph¸n ®Şnh mÊt ®i t­ c¸ch thi ®Êu. NÕu ®éi tr­ëng bŞ rít m¹ng hoÆc bŞ h¹ gôc, c¸c thµnh viªn cßn l¹i vÉn cã thÓ tiÕp tôc thi ®Êu vµ nhËn ®­îc phÇn th­ëng cña vßng ®Êu, nh­ng thµnh tİch kh«ng ®­îc ghi lªn b¶ng xÕp h¹ng.","Sau khi <color=red>2 tuÇn<color> ho¹t ®éng ®ua thuyÒn rång kÕt thóc, ®éi tr­ëng<color=red> 10 ®éi ®øng ®Çu b¶ng xÕp h¹ng cuéc ®ua thuyÒn rång s¬ vµ cao cÊp<color> cã thÓ ®Õn LÔ quan l·nh §Şnh Quèc An Bang, 1 bé trang bŞ hoµng kim ngÉu nhiªn HiÖp Cèt Nhu T×nh.","§Ó biÕt th«ng tin chi tiÕt xin xem trang chñ: www.volam.com.vn");
 end
 
 function dousha()
-	Say(" ³Ô¶¹É³ôÕ×ÓËæ»ú»ñµÃ <color=red>1 Íò, 2 Íò, 5 Íò¾­ÑéÖµ<color> »òÕß²Î¼Ó<color=red>³õ¼¶ÁúÖÛÈü<color>, ÄãÕæÏë»»Âğ?",2,"ÎÒÏë»»/dousha_yes","²»ĞèÒª!/OnCancel");
+	Say(" ³Ô¶¹É³ôÕ×ÓËæ»ú»ñµÃ <color=red>1 Íò, 2 Íò, 5 Íò¾­ÑéÖµ<color> »òÕß²Î¼Ó<color=red>thuyÒn rång cao cÊp<color>, ÄãÕæÏë»»Âğ?",2,"ta muèn ®æi/dousha_yes","Kh«ng cÇn!/OnCancel");
 end
 
 function dousha_yes()
 	if(CalcEquiproomItemCount(6,1,422,1) <= 0) then
-		Say(" ÄãÃ»ÓĞĞ¡ÁúÖÛ²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã thuyÒn rång nhá, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	DelCommonItem(6,1,422);
 	AddItem(6,1,435,1,0,0);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]:ÁìÒ»¸ö¶¹É³ôÕ×Ó");
-	Say(" Äã»ñµÃ¶¹É³ôÕ×Ó.",0);
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]:l·nh 1 c¸i B¸nh ch­ng nh©n ®Ëu");
+	Say(" B¹n nhËn ®­îc B¸nh ch­ng nh©n ®Ëu.",0);
 end
 
 function xianggu()
-	Say(" ¡n³ÔÏã¹½ôÕ×ÓËæ»ú»ñµÃ<color=red>5 Íò, 10 Íò, 25 Íò¾­ÑéÖµ<color>»òÕß²Î¼Ó<color=red>¸ß¼¶ÁúÖÛÈü<color>, ÄãÕæµÄÏë»»Âğ?",2,"ÎÒÏë»»/xianggu_yes","²»ĞèÒª!/OnCancel");
+	Say(" ¡n B¸nh ch­ng nh©n nÊm ngÉu nhiªn nhËn ®­îc <color=red>5 v¹n, 10 v¹n, 25 v¹n ®iÓm kinh nghiÖm<color>hoÆc tham gia<color=red>thuyÒn rång cao cÊp<color>, cã thËt b¹n muèn ®æi kh«ng?",2,"ta muèn ®æi/xianggu_yes","Kh«ng cÇn!/OnCancel");
 end
 
 function xianggu_yes()
 	if(CalcEquiproomItemCount(6,1,423,1) <= 0) then
-		Say(" ÄãÃ»ÓĞ<color=red>´«Í³ÁúÖÛ<color>,²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã <color=red>ThuyÒn rång truyÒn thèng<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	DelCommonItem(6,1,423);
 	AddItem(6,1,436,1,0,0);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: ÁìÒ»¸öÏã¹½ôÕ×Ó");	
-	Say(" Äã»ñµÃ1 ¸öÏã¹½ôÕ×Ó.",0);
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: l·nh 1 c¸i B¸nh ch­ng nh©n nÊm");	
+	Say(" B¹n nhËn ®­îc 1 c¸i B¸nh ch­ng nh©n nÊm.",0);
 end
 
 function danhuang()
-	Say(" ³Ôµ°»ÆôÕ×ÓËæ»ú»ñµÃ<color=red>15 Íò, 30 Íò, 75 Íò¾­ÑéÖµ<color>, ÄãÕæÏë»»Âğ?",2,"ÎÒÏë»»/danhuang_yes","²»ĞèÒª!/OnCancel");
+	Say(" ¡n B¸nh ch­ng nh©n trøng ngÉu nhiÖn nhËn ®­îc <color=red>15 v¹n, 30 v¹n, 75 v¹n ®iÓm kinh nghiÖm<color>, b¹n thËt sù muèn ®æi?",2,"ta muèn ®æi/danhuang_yes","Kh«ng cÇn!/OnCancel");
 end
 
 function danhuang_yes()
 	if(CalcEquiproomItemCount(6,1,424,1) <= 0) then
-		Say(" ÄãÃ»ÓĞ<color=red>ÂíÍ·ÁúÖÛ<color>,²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã <color=red>M· ®Çu thuyÒn rång<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	DelCommonItem(6,1,424);
 	AddItem(6,1,437,1,0,0);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]:ÁìÒ»¸öµ°»ÆôÕ×Ó");		
-	Say(" Äã»ñµÃ1 ¸öµ°»ÆôÕ×Ó.",0);
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]:l·nh 1 c¸i B¸nh ch­ng nh©n trøng");		
+	Say(" B¹n nhËn ®­îc1 c¸i B¸nh ch­ng nh©n trøng.",0);
 end
 
 function birdboat_award()
 	local awardpro = {}
 	if(CalcEquiproomItemCount(6,1,425,1) <= 0) then
-		Say(" ÄãÃ»ÓĞ<color=red>ÄñÍ·ÁúÖÛ<color>,²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã <color=red>ThuyÒn rång ®Çu phông<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	for i = 1, getn(AWARD_BIRDBOAT) do
@@ -385,31 +385,31 @@ function birdboat_award()
 		AddEventItem(AWARD_BIRDBOAT[numth][2][1])
 	end
 	DelCommonItem(6,1,425);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: ÁìÒ»¸ö"..AWARD_BIRDBOAT[numth][1]);		
-	Say(" Äã»ñµÃ1 ¸ö"..AWARD_BIRDBOAT[numth][1]..".",0);
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: l·nh 1 c¸i"..AWARD_BIRDBOAT[numth][1]);		
+	Say(" B¹n nhËn ®­îc 1 c¸i"..AWARD_BIRDBOAT[numth][1]..".",0);
 end
 
 function beastboat_award()
 	local awardpro = {};
 	if(CalcEquiproomItemCount(6,1,426,1) <= 0) then
-		Say(" ÄãÃ»ÓĞ<color=red>ÊŞÍ·ÁúÖÛcolor>,²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã <color=red>ThuyÒn rång h×nh thó<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	
 	local nNowDate = tonumber(date("%d"));	
-	if ( nNowDate == DWORELASTDATE ) then	--Èç¹ûÉÏ´ÎÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯ÊÇµ±ÌìµÄ»°
-		if ( DWORENOWCOUNT >= DWOREMAXCOUNT ) then	--´ïµ½ÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯×î´óÊı²»ÄÜÔÙ»»
-			print(" ½ñÌìÓÃÊŞÍ·ÁúÖÛ»»È¡Ğş¾§ºÍÉñÃØ¿óÊ¯ÒÑ³¬¹ıÊıÁ¿.")
-			Say(" ½ñÌìÓÃÊŞÍ·ÁúÖÛ»»È¡Ğş¾§ºÍÉñÃØ¿óÊ¯Ì«¶à¡£ÀÏ·òÃ»ÓĞ»õÁË¡£È¥ÆäËû³ÇÊĞ°É£¬Ã÷ÌìÔÙÀ´!",0);
+	if ( nNowDate == DWORELASTDATE ) then	--Èç¹ûÉÏ´ÎÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊÇµ±ÌìµÄ»°
+		if ( DWORENOWCOUNT >= DWOREMAXCOUNT ) then	--´ïµ½ÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹ch×î´óÊı²»ÄÜÔÙ»»
+			print(" H«m nay dïng thuyÒn rång h×nh thó ®æi huyÒn tinh vµ kho¸ng th¹ch thÇn bİ ®· v­ît møc.")
+			Say(" H«m nay dïng thuyÒn rång h×nh thó ®æi huyÒn tinh vµ kho¸ng th¹ch thÇn bİ qu¸ nhiÒu.L·o phu kh«ng cßn hµng n÷a. H·y thö ®i c¸c thµnh thŞ kh¸c hoÆc ngµy mai h·y ®Õn!",0);
 			return
 		end
-	else	--Èç¹ûÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯ÊıÈÕÆÚÓëµ±Ç°²»ÊÇÍ¬Ò»Ìì
+	else	--Èç¹ûÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊıÈÕÆÚÓëµ±Ç°²»ÊÇÍ¬Ò»Ìì
 		DWORELASTDATE = nNowDate;	--¸üĞÂ×î½üµÄÈÕÆÚ
-		DWORENOWCOUNT = 0;	--µ±Ç°ÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ÉñÃØ¿óÊ¯ÊıÖÃ0
+		DWORENOWCOUNT = 0;	--µ±Ç°ÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊıÖÃ0
 	end
 	
 	for i = 1, getn(AWARD_BEASTBOAT) do
@@ -423,26 +423,26 @@ function beastboat_award()
 	end
 	DWORENOWCOUNT = DWORENOWCOUNT + 1;
 	DelCommonItem(6,1,426);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: ÁìÒ»¸ö"..AWARD_BEASTBOAT[numth][1]);		
-	Say(" Äã»ñµÃ1 ¸ö"..AWARD_BEASTBOAT[numth][1]..".",0);	
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: l·nh 1 c¸i"..AWARD_BEASTBOAT[numth][1]);		
+	Say(" B¹n nhËn ®­îc 1 c¸i"..AWARD_BEASTBOAT[numth][1]..".",0);	
 end
 
 function hugeboat_award()
 	local awardpro = {};
 	if(CalcEquiproomItemCount(6,1,427,1) <= 0) then
-		Say(" ÄãÃ»ÓĞ<color=red>´óÁúÖÛ<color>,²»ÄÜ»»½±Àø!",0);
+		Say(" B¹n kh«ng cã <color=red>ThuyÒn rång lo¹i lín<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 6) then
-		Say(" ÄãµÄ×°±¸¿ÕÎ»²»¹». ÕûÀíºÃºóÔÙÀ´»»°É ",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
 		return
 	end
 	
 	local nNowDate = tonumber(date("%d"));	
 	if ( nNowDate == DWGOLDENLASTDATE ) then	--Èç¹ûÉÏ´ÎÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸ÊÇµ±ÌìµÄ»°
 		if ( DWGOLDENNOWCOUNT >= DWGOLDENMAXCOUNT ) then	--´ïµ½ÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸×î´óÊı²»ÄÜÔÙ»»
-			print(" ½ñÌìÓÃ´óÁúÖÛ»»È¡»Æ½ğ×°±¸Ì«¶à.")
-			Say(" ½ñÌìÓÃ´óÁúÖÛ»»È¡»Æ½ğ×°±¸Ì«¶à. È¥ÆäËû³ÇÊĞ°É£¬Ã÷ÌìÔÙÀ´!",0);
+			print(" H«m nay dïng thuyÒn rång lo¹i lín ®æi Trang bŞ hoµng kim ®· ®¹t møc.")
+			Say(" H«m nay dïng thuyÒn rång lo¹i lín ®æi Trang bŞ hoµng kim ®· qu¸ nhiÒu. L·o phu kh«ng cßn hµng n÷a. H·y ®i thµnh thŞ kh¸c thö xem, hoÆc ngµy mai h·y ®Õn!",0);
 			return
 		end
 	else	--Èç¹ûÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸ÈÕÆÚÓëµ±Ç°²»ÊÇÍ¬Ò»Ìì
@@ -461,8 +461,8 @@ function hugeboat_award()
 	end
 	DWGOLDENNOWCOUNT = DWGOLDENNOWCOUNT + 1;
 	DelCommonItem(6,1,427);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: ÁìÒ»¸ö"..AWARD_HUGEBOAT[numth][1]);		
-	Say(" Äã»ñµÃ1 ¸ö"..AWARD_HUGEBOAT[numth][1]..".",0);	
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: l·nh 1 c¸i"..AWARD_HUGEBOAT[numth][1]);		
+	Say(" B¹n nhËn ®­îc 1 c¸i"..AWARD_HUGEBOAT[numth][1]..".",0);	
 end
 
 function randomaward(aryProbability)
@@ -489,6 +489,6 @@ function dragon_givegolden()
 	end	
 	numth = randomaward(awardpro);
 	AddGoldItem(0,AWARD_HUGEBOAT[numth][2][1])
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: ÅÅÃûÇ°Ê®»ñµÃ1 ¸ö"..AWARD_HUGEBOAT[numth][1]);		
-	Say(" Äã»ñµÃ1 ¸ö"..AWARD_HUGEBOAT[numth][1]..".",0);	
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]: 10 tªn ®øng ®Çu trong b¶ng xÕp h¹ng thuyÒn rång nhËn ®­îc 1 c¸i"..AWARD_HUGEBOAT[numth][1]);		
+	Say(" B¹n nhËn ®­îc 1 c¸i"..AWARD_HUGEBOAT[numth][1]..".",0);	
 end	

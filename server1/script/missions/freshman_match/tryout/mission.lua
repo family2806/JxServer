@@ -24,9 +24,9 @@ function EndMission()
 		SetMissionV( i , 0 );
 	end;
 	if(tonumber(date("%y%m%d%H")) >= CP_END_TRYOUT) then
-		resultstr = "ÎäÁÖĞÂĞãÁªÈü½áÊø£¬Çë¸÷Î»Ñ¡ÊÖµ½ÁÙ°²¼ûÎäÁÖĞÂĞãÁªÈü¹ÙÔ±(182, 202) ¿´ÎäÁÖĞÂĞãÃûµ¥¡£ÅÅÃûÇ°ÎåµÄ¿ÉÒÔµ½ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±´¦(182, 202)Áì½±."
+		resultstr = "Thi ®Êu Vâ l©m kiÖt xuÊt ®· kÕt thóc, xin c¸c tuyÓn thñ ®Õn L©m An gÆp Sø gi¶ kiÖt xuÊt (203, 202) xem danh s¸ch kiÖt xuÊt. 5 ng­êi ®Çu cã thÓ ®Õn gÆp Sø gi¶ kiÖt xuÊt (203, 202) ®Ó l·nh th­ëng."
 	else
-		resultstr = "ÎäÁÖĞÂĞãÁªÈü½ñÈÕÌì½áÊø£¬²ÎÈüÑ¡ÊÖÇëÃ÷ÌìÔÙÕ½."
+		resultstr = "Ngµy thi ®Êu Vâ l©m kiÖt xuÊt h«m nay ®· kÕt thóc, tuyÓn thñ tham gia ngµy mai t¸i chiÕn."
 	end
 	AddGlobalNews(resultstr) 
 end;

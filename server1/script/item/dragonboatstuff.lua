@@ -1,16 +1,16 @@
 function main()
-	local a = "Ğ¡ÁúÖÛ = 1¸öÁúÍ·+1¸öÁúÎ²+1¸öÁúÉí+1¸öÁú¹Ç+4¸öéÖ½°+1¸ö¶æ+1¸ö¹Ä";
-	local b = "<enter>´«Í³ÁúÖÛ = 1¸öĞ¡ÁúÖÛ+4¸öéÖ½°";
-	local c = "<enter>ÂíÍ·ÁúÖÛ = 1¸öĞ¡ÁúÖÛ+1¸ö´«Í³ÁúÖÛ+1¸öÁúÍ·";
-	Say(a..b..c, 2, "ÏÂÒ»Ò³/nextpage", "¹Ø±Õ/no");
+	local a = "ThuyÒn rång nhá = 1 ®Çu rång + 1 ®u«i rång + 1 th©n rång + 1s­ên rång + 4 m¸i chÌo + 1 b¸nh l¸i + 1 trèng";
+	local b = "<enter>ThuyÒn rång truyÒn thèng = 1 ThuyÒn rång nhá + 4 m¸i chÌo";
+	local c = "<enter>M· ®Çu thuyÒn rång = 1 ThuyÒn rång nhá + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
+	Say(a..b..c, 2, "Trang kÕ /nextpage", "§ãng/no");
 	return 1;
 end
 
 function nextpage()
-	local d = "ÄñÍ·ÁúÖÛ = 1¸öÂíÍ·ÁúÖÛ1¸ö+1¸ö´«Í³ÁúÖÛ+1¸öÁúÍ·";
-	local e = "<enter>ÊŞĞÎÁúÖÛ = 1¸öÄñÍ·ÁúÖÛ+1¸öÂíÍ·ÁúÖÛ+1¸öÁúÍ·";
-	local f = "<enter>¾ŞĞÍÁúÖÛ = 1¸öÊŞĞÎÁúÖÛ+1¸öÄñÍ·ÁúÖÛ+1¸öÂíÍ·ÁúÖÛ";
-	Say(d..e..f, 2, "ÉÏÒ»Ò³/main", "¹Ø±Õ/no");
+	local d = " ThuyÒn rång ®Çu phông = 1 ThuyÒn rång ®Çu ngùa + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
+	local e = "<enter>ThuyÒn rång h×nh thó = 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa + 1 ®Çu rång";
+	local f = "<enter>ThuyÒn rång lo¹i lín = 1 ThuyÒn rång h×nh thó + 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa";
+	Say(d..e..f, 2, "Trang tr­íc/main", "§ãng/no");
 end
 
 function no()

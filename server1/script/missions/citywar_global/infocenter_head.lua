@@ -17,7 +17,7 @@ MapTab[7]= {219, 1633, 3292};
 MapTab[8]= {220, 1633, 3292};
 MapCount = getn(MapTab);
 
-LGTSK_QINGTONGDING_COUNT = 1;	--±¨Ãû¾ºÍ¶µÄ ÌôÕ½ÁîÊıÁ¿
+LGTSK_QINGTONGDING_COUNT = 1;	--±¨Ãû¾ºÍ¶µÄ ÌôÕ½ÁîSè l­îng
 LGTSK_CITYWAR_SIGNCOUNT = 2;	--µ±Ç°¾ºÍ¶µÄ´ÎÊı
 
 LEAGUETYPE_CITYWAR_SIGN = 508;
@@ -32,7 +32,7 @@ function OnCancel()
 end;
 
 function PreEnterGame()
-	--Èç¹ûÍæ¼ÒËùÔÚ°ï»áÕıÔÚ½øĞĞÀŞÌ¨Èü,Ôò×Ô¶¯½øÈë¸Ã³¡µØ
+	--Èç¹ûÍæ¼ÒËùÔÚBang héiÕıÔÚ½øĞĞÀŞÌ¨Èü,Ôò×Ô¶¯½øÈë¸Ã³¡µØ
 	TongName, result = GetTong()
 	if (TongName ~= "") then
 		for i = 0, 7 do
@@ -51,7 +51,7 @@ function PreEnterGame()
 end;
 
 function EnterGame()
-	ExtraArenaInfo = {"<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) ", "<#> (¿ÕµØ) "};
+	ExtraArenaInfo = {"<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) ", "<#> (Kho¶ng trèng) "};
 	for i = 0, 7 do
 		if (IsArenaBegin(i) == 1) then
 			Tong1, Tong2 = GetArenaBothSides(i);
@@ -59,7 +59,7 @@ function EnterGame()
 		end;
 	end;
 
-	Say("ÄãÏë½ø¹¥³ÇÕ½ÀŞÌ¨Ô¤Ñ¡ÈüÂğ??", 9, "<#> ÀŞÌ¨1"..ExtraArenaInfo[1].."/EnterBattle", "<#>ÀŞÌ¨2"..ExtraArenaInfo[2].."/EnterBattle", "<#>ÀŞÌ¨3"..ExtraArenaInfo[3].."/EnterBattle", "<#>ÀŞÌ¨4"..ExtraArenaInfo[4].."/EnterBattle", "<#>ÀŞÌ¨5"..ExtraArenaInfo[5].."/EnterBattle", "<#>ÀŞÌ¨6"..ExtraArenaInfo[6].."/EnterBattle", "<#>ÀŞÌ¨7"..ExtraArenaInfo[7].."/EnterBattle", "<#>ÀŞÌ¨8"..ExtraArenaInfo[8].."/EnterBattle","²»È¥ÁË/OnCancel");
+	Say("B¹n muèn vµo c«ng thµnh chiÕn dù tuyÓn thi ®Êu l«i ®µi kh«ng??", 9, "<#> L«i ®µi 1"..ExtraArenaInfo[1].."/EnterBattle", "<#> L«i ®µi 2"..ExtraArenaInfo[2].."/EnterBattle", "<#> L«i ®µi 3"..ExtraArenaInfo[3].."/EnterBattle", "<#> L«i ®µi 4"..ExtraArenaInfo[4].."/EnterBattle", "<#> L«i ®µi 5"..ExtraArenaInfo[5].."/EnterBattle", "<#> L«i ®µi 6"..ExtraArenaInfo[6].."/EnterBattle", "<#> L«i ®µi 7"..ExtraArenaInfo[7].."/EnterBattle", "<#> L«i ®µi 8"..ExtraArenaInfo[8].."/EnterBattle","Kh«ng ®i n÷a/OnCancel");
 end;
 
 function EnterBattle(nBattleId)
@@ -89,9 +89,9 @@ function SignupACity(sel)
 	CityID = sel + 1;
 	if (IsSigningUp(CityID) == 1) then
 		SetTaskTemp(15, CityID);
-		AskClientForNumber("SignUpFinal", 1000000, 99999999, "ÇëÊäÈëÍ¶±êµÄ½ğ¶î:");
+		AskClientForNumber("SignUpFinal", 1000000, 99999999, "Xin nhËp sè tiÒn ®Êu thÇu vµo:");
 	else
-		Say("<#><"..GetCityAreaName(CityID).."<#> >³Ç, ÀŞÌ¨±¨Ãû»¹Î´¿ªÊ¼", 0);
+		Say("<#><"..GetCityAreaName(CityID).."<#> >thµnh, b¸o danh trËn L«i ®µi ch­a b¾t ®Çu ", 0);
 	end;
 end;
 
@@ -106,9 +106,9 @@ function SignUpTheOne()
 
 	if (IsSigningUp(CityID) == 1) then
 		SetTaskTemp(15, CityID);
-		AskClientForNumber("SignUpFinal", 1000000, 99999999, "ÇëÊäÈëÍ¶±êµÄ½ğ¶î:");
+		AskClientForNumber("SignUpFinal", 1000000, 99999999, "Xin nhËp sè tiÒn ®Êu thÇu vµo:");
 	else
-		Say("<#><"..GetCityAreaName(CityID).."<#> >³Ç, ÀŞÌ¨±¨Ãû»¹Î´¿ªÊ¼", 0);
+		Say("<#><"..GetCityAreaName(CityID).."<#> >thµnh, b¸o danh trËn L«i ®µi ch­a b¾t ®Çu ", 0);
 	end;
 end;
 
@@ -122,7 +122,7 @@ end;
 function citywar_CheckVotes()
 	local nCityId = getSigningUpCity(1);
 	local tbVotes = citywar_tbLadder:GetInfo()
-	local szMsg = format("<dec><npc>ÏÂÃæÊÇ°ï»á²Î¼Ó¾ºÍ¶ÌôÕ½Áî<%s>: <enter>%s%s%s<enter>", GetCityAreaName(nCityId), strfill_center("STT",4, " "), strfill_center("°ï»á", 20, " "), strfill_center("ÊıÁ¿", 20, " "))
+	local szMsg = format("<dec><npc>Bªn d­íi lµ bang héi tham gia ®Êu gi¸ khiªu chiÕn lÖnh <%s>: <enter>%s%s%s<enter>", GetCityAreaName(nCityId), strfill_center("STT",4, " "), strfill_center("Bang héi", 20, " "), strfill_center("Sè l­îng", 20, " "))
 	local res = {}
 	for i = 1, getn(tbVotes) do
 		tinsert(res, strfill_center(i, 4, " "))
@@ -135,27 +135,27 @@ function citywar_CheckVotes()
 		AppendString(res[i])
 	end
 	szMsg = PopString()
-	TaskSayList(szMsg, "Ğ»Ğ»!ÎÒÃ÷°×ÁË./OnCancel")
+	TaskSayList(szMsg, "C¸m ¬n! Ta ®· râ råi./OnCancel")
 end
 --Èë¿Ú
 function ArenaMain()
 	local nCityId = getSigningUpCity(1);--GetArenaTargetCity()
 	if (tonumber(GetLocalDate("%H"))>= 18 and tonumber(GetLocalDate("%H")) < 19 and getSignUpState(nCityId) == 1) then
-		Say(format("ÏÖÔÚ¹¥³ÇÕ¼³Ç<%s>ÕıÔÚ±¨Ãû, ÄãÒªµÇ¼ÇÂğ?",GetCityAreaName(nCityId)), 7, "±¨Ãû¹¥³ÇÕ½/SignUpCityWar", "ÎÒÏë¿´¿´¹¥³ÇÕ½µÄ±¨ÃûÇé¿ö/ViewCityWarTong","ÎÒÏë¿´¿´°ï»áÌôÕ½ÁîµÄÊıÁ¿/ViewTiaoZhanLing","ÁË½â¹¥³ÇÕ½Çé¿ö/GameInfo", "ÉÌÒéÕ¼³ÇÁîÅÆ/TokenCard", "¹ºÂò¹¥³ÇÕ½¸¨ÖúÓÃ¾ß/AskDeal", "Ê²Ã´¶¼²»ĞèÒª/OnCancel");
+		Say(format("HiÖn t¹i c«ng thµnh chiÕn thµnh <%s> ®ang cho b¸o danh, ng­¬i muèn ®¨ng kı kh«ng?",GetCityAreaName(nCityId)), 7, "B¸o danh c«ng thµnh chiÕn/SignUpCityWar", "Ta muèn xem t×nh h×nh b¸o danh c«ng thµnh chiÕn/ViewCityWarTong","Ta muèn xem sè l­îng khiªu chiÕn lÖnh cña bang/ViewTiaoZhanLing","T×m hiÓu t×nh h×nh c«ng thµnh chiÕn/GameInfo", "Sù nghŞ Thµnh chiÕn lÖnh bµi/TokenCard", "Mua dông cô hç trî C«ng thµnh chiÕn/AskDeal", "Kh«ng muèn g× c¶ /OnCancel");
 	else
-		Say("ÕâÊÇÉÌÒé¹¥³ÇÕ½µÄµØ·½£¬ÄãÓĞÊ²Ã´ÊÂÂğ?",
+		Say("§©y lµ n¬i nghŞ sù c«ng thµnh chiÕn, ng­¬i ®Õn cã viÖc g×?",
 			7,
-			"ÎÒÀ´½»ÁîÅÆ/GiveTiaoZhanLing",
-			"¿´ÌôÕ½ÁîÍ¶±êÇé¿ö/citywar_CheckVotes" ,
-			"ÎÒÏë¿´¿´°ï»áÌôÕ½ÁîµÄÊıÁ¿/ViewTiaoZhanLing",
-			"ÁË½â¹¥³ÇÕ½Çé¿ö/GameInfo",
-			"ÉÌÒéÕ¼³ÇÁîÅÆ/TokenCard",
-			"¹ºÂò¹¥³ÇÕ½¸¨ÖúÓÃ¾ß/AskDeal",
-			"Ê²Ã´¶¼²»ĞèÒª/Cancel");
+			"Ta ®Õn giao lÖnh bµi/GiveTiaoZhanLing",
+			"Xem t×nh h×nh ®Êu gi¸ khiªu chiÕn lÖnh/citywar_CheckVotes" ,
+			"Ta muèn xem sè l­îng khiªu chiÕn lÖnh cña bang/ViewTiaoZhanLing",
+			"T×m hiÓu t×nh h×nh c«ng thµnh chiÕn/GameInfo",
+			"Sù nghŞ Thµnh chiÕn lÖnh bµi/TokenCard",
+			"Mua dông cô hç trî C«ng thµnh chiÕn/AskDeal",
+			"Kh«ng muèn g× c¶ /Cancel");
 	end;
 end;
 
---²é¿´ÒÑ¾­±¨Ãû²Î¼Ó¹¥³ÇÕ½µÄ°ï»á
+--²é¿´ÒÑ¾­±¨Ãû²Î¼Ó¹¥³ÇÕ½µÄBang héi
 function ViewCityWarTong()
 	local caption = nil
 	local nCityId = getSigningUpCity(1);
@@ -163,9 +163,9 @@ function ViewCityWarTong()
 	--LEAGUETYPE_CITYWAR_SIGN, cityid_to_lgname(nCityId),
 	local nlgcount = LG_GetMemberCount(nlgID)
 	if nlgcount == 0 then
-		caption = "<dec>ÏÖÔÚÃ»ÓĞ°ï»á±¨Ãû¹¥³Ç."	
+		caption = "<dec>HiÖn tai ch­a cã bang héi nµo b¸o danh c«ng thµnh."	
 	else
-		caption = "<dec>±¨Ãû¹¥³ÇÕ½µÄ°ï»á: \n"
+		caption = "<dec>Bang héi b¸o danh c«ng thµnh chiÕn: \n"
 		PushString(caption)
 		for nindex=0,nlgcount do
 			szTongName = LG_GetMemberInfo(nlgID,nindex)
@@ -175,14 +175,14 @@ function ViewCityWarTong()
 		end
 		caption = PopString()
 	end
-	local option = {"·µ»Ø/ArenaMain", "Àë¿ª/OnCancel"}
+	local option = {"Trë vÒ/ArenaMain", "Tho¸t ra/OnCancel"}
 	TaskSay(caption, option)
 end
 
 --½»ÄÉÌôÕ½Áî
 function GiveTiaoZhanLing()
 	if checkBangHuiLimit() == 0 then
-			Say("²»ºÃÒâË¼! Äã»¹Ã»ÓĞ¼ÓÈëÈÎºÎ°ïÅÉ£¡",0);
+			Say("Xin lçi! §¹i hiÖp ch­a gia nhËp bang héi nµo c¶!",0);
 			return 0;
 	end
 	local nDate = tonumber(tonumber(GetLocalDate("%y"))..tonumber(GetLocalDate("%m"))..tonumber(GetLocalDate("%d")));
@@ -190,7 +190,7 @@ function GiveTiaoZhanLing()
 	local nOlddate = tonumber(GetByte(nLibao,1)..GetByte(nLibao,2)..GetByte(nLibao,3));
 	local nCount = GetTask(TIAOZHANLING_TASK_COUNT);
 	if ( nOlddate == nDate and nCount >= 300) then
-			Say("Ã¿Ìì×î¶àÌá½»300¿éÁîÅÆ¡£½ñÌìÄãÒÑ¾­Ìá½»ÁË300¿éÁîÅÆ£¬Ã÷Ìì¼ÌĞø°É",0)
+			Say("Mçi ngµy giao n¹p tèi ®a 300 lÖnh bµi. H«m nay ng­¬i ®· giao 300 lÖnh bµi råi, ngµy mai h·y tiÕp tôc.",0)
 			return 0;
 	end
 	if ( nOlddate ~= nDate ) then
@@ -209,23 +209,23 @@ function GiveTiaoZhanLing()
 	local szTongName, nTongID = GetTongName();
 	local nsum = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 	if nsum >= 2000000000 then   --ÉÏÏŞ´ï20ÒÚÔò²»ÄÜÔÙÌá½»
-		Say("ÎäÁÖÁî×ÜÊıÒÑ´ïÉÏÏŞ¡£±ğµÄÊ±ºòÔÙÊÔÊÔ°É.",0)
+		Say("Tæng sè vâ l©m lÖnh ®· ®¹t giíi h¹n. Lóc kh¸c thö l¹i vËy.",0)
 		return 0;
 	end
-	--**Ìá½»ÌôÕ½Áî
-	GiveItemUI("Ìá½»ÌôÕ½Áî", "ÌôÕ½Áî¿ÉÒÔ¶Ò»» 20Íò¾­Ñé, °ï»áÓÃÀ´±¨Ãû¹¥³ÇÕ½.", "sure_GiveTiaoZhanLing", "OnCancel");
+	--**Giao nép khiªu chiÕn lÖnh
+	GiveItemUI("Giao nép khiªu chiÕn lÖnh", "Khiªu chiÕn lÖnh cã thÓ ®æi 50000 ®iÓm kinh nghiÖm, dïng ®Ó b¸o danh c«ng thµnh chiÕn cho bang héi.", "sure_GiveTiaoZhanLing", "OnCancel");
 end
 
 function sure_GiveTiaoZhanLing(nCount)
 	if nCount <= 0 then
-		Say("Õæ¿ÉÏ§, Äã»¹Ã»ÓĞ½»ÌôÕ½ÎïÆ·¸øÎÒ",2,"½»ÎïÆ·/GiveTiaoZhanLing","ÎÒÏëÒ»Ïë/OnCancel");
+		Say("ThËt ®¸ng tiÕc, ng­¬i ch­a giao vËt phÈm nhiÖm vô cho ta",2,"Giao l¹i vËt phÈm/GiveTiaoZhanLing","§Ó ta suy nghÜ l¹i/OnCancel");
 		return 0;
 	end
 	for i = 1, nCount do
 		local nItemidx = GetGiveItemUnit(i);
 		local g, d, p = GetItemProp(nItemidx);
 		if (g ~= nCityWar_Item_ID_G or d ~= nCityWar_Item_ID_D or p ~= nCityWar_Item_ID_P) then
-			Say("ÎÒ²»ÏëÒª±ğµÄ, Ö»Ğè´ø¸øÎÒ<color=yellow>ÌôÕ½Áî<color>¾Í¿ÉÒÔÁË.", 2,"½»ÎïÆ·/GiveTiaoZhanLing","ÎÒÏëÒ»Ïë/OnCancel");
+			Say("Ta kh«ng nhËn nh÷ng thø kh¸c, chØ cÇn ®­a ta <color=yellow>Khiªu chiÕn lÖnh<color> lµ ®­îc råi.", 2,"Giao l¹i vËt phÈm/GiveTiaoZhanLing","§Ó ta suy nghÜ l¹i/OnCancel");
 			return 0;
 		end;
 	end;
@@ -234,7 +234,7 @@ function sure_GiveTiaoZhanLing(nCount)
 	local nOlddate = tonumber(GetByte(nLibao,1)..GetByte(nLibao,2)..GetByte(nLibao,3));
 	local nCountall = GetTask(TIAOZHANLING_TASK_COUNT);
 	if ( nOlddate == nDate and nCountall+nCount > 300) then
-			Say(format("ÕæÒÅº¶, ½ñÌìÄãÒÑ¾­ÉÏ½» %dÌôÕ½Áî, Ö»ĞèÔÙÉÏ½» %d ÁîÅÆ¾Í¿ÉÒÔÁË.",nCountall,300-nCountall),0)
+			Say(format("ThËt ®¸ng tiÕc, h«m nay ng­¬i ®· nép vµo %d khiªu chiÕn lÖnh, chØ cÇn nép %d lÖnh bµi n÷a lµ ®­îc råi.",nCountall,300-nCountall),0)
 			return 0;
 	end
 	if ( nOlddate ~= nDate ) then
@@ -265,15 +265,15 @@ function sure_GiveTiaoZhanLing(nCount)
 	--Ôö¼Ó¾­Ñé,Ìá½»1¸öÔö¼Ó20Íò¾­Ñé
 	nAddExp = nCount * 200000
 	AddOwnExp(nAddExp)
-	Msg2Player(format("ÄãÒÑÉÏ½» %d ÌôÕ½Áî, µÃµ½ %d ¾­Ñé",nCount,nAddExp))
-	WriteLog(format("[¹¥³ÇÕ½_½»ÌôÕ½Áî]Date:%s Account:%s Name:%s Tong:%s Count:%d Exp:%d",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),szTongName,nCount,nAddExp))
+	Msg2Player(format("B¹n ®· nép vµo %d khiªu chiÕn lÖnh, nhËn ®­îc %d ®iÓm kinh nghiÖm",nCount,nAddExp))
+	WriteLog(format("[C«ng thµnh chiÕn_giao khiªu chiÕn lÖnh]Date:%s Account:%s Name:%s Tong:%s Count:%d Exp:%d",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName(),szTongName,nCount,nAddExp))
 end;
 
 --²éÑ¯ÌôÕ½Áî
 function ViewTiaoZhanLing()
 		local szTongName, nTongID = GetTongName();
 		if (nTongID == 0 or ( GetTongFigure() ~= TONG_MASTER and GetTongFigure() ~= TONG_ELDER)) then
-			Say("Õæ¿ÉÏ§, Ö»ÓĞ°ïÖúºÍ³¤ÀÏ²Å¿ÉÒÔ¿´ÌôÕ½ÁîµÄÊıÁ¿ĞÅÏ¢.", 0);
+			Say("ThËt ®¸ng tiÕc, chØ cã bang chñ vµ tr­ëng l·o míi cã thÓ xem th«ng tin sè l­îng Khiªu ChiÕn LÖnh.", 0);
 			return 0
 		end
 		--local szlgname = GetTongName();
@@ -291,12 +291,12 @@ function ViewTiaoZhanLing()
 		--local nCurCount = LG_GetMemberTask(nlid, LGTSK_TIAOZHANLING_COUNT)
 		local nCurCount = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 		
-		Say(format("¹ó°ïÒÑÉÏ½»ÁË<color=yellow>%d<color>ÌôÕ½Áî.",nCurCount),0)
+		Say(format("Quİ bang ®· nép vµo <color=yellow>%d<color> khiªu chiÕn lÖnh.",nCurCount),0)
 end
 
 --¹ØÓÚÁîÅÆµÄ´¦Àí start************************************************
 function TokenCard()
-	Say("ÌôÕ½ÁîÅÆÒªÁô¸øÏëÈ¥Ö§Ô®°ï»á¹¥ÊØ³ÇµÄÈË! ÇëÎÊÒ»ÏÂÒåÊ¿µÄÄ¿µÄÊÇÊ²Ã´?", 4, "ÂòÕ¼³ÇÁîÅÆ/BuyCard", "ÊØÁîÅÆ/CheckCard", "ÍË»ØÁîÅÆ/ReturnCard", "²»×öÊ²Ã´/OnCancel");
+	Say("Thµnh ChiÕn lÖnh bµi dµnh cho nh÷ng ng­êi muèn vµo chi viÖn cho bang héi c«ng thñ thµnh! Xin cho hái môc ®İch cña nghÜa sÜ?", 4, "Mua Thµnh chiÕn lÖnh bµi/BuyCard", "Thö lÖnh bµi/CheckCard", "Tr¶ l¹i lÖnh bµi/ReturnCard", "Kh«ng lµm g× c¶ /OnCancel");
 end;
 
 function BuyCard()
@@ -306,24 +306,24 @@ function BuyCard()
 			Tong1, Tong2 = GetCityWarBothSides(i);
 			if (Tong1 == TongName) then
 				SetTaskTemp(15, CardTab[i * 2 - 1]);
-				str_format = format("Ô­À´´óÏÀÊÇÌôÕ½³Ç %sµÄÈË, ÕæÀ÷º¦£¬ÕâÀïÓĞÂô¹¥³ÇÁîÅÆ£¬Õâ¸öÁîÅÆÓĞ±£Áô¹ó°ïÁªÃË5ÌìµÄĞ§Á¦£¬Ã¿¸öÁîÅÆÊÛ¼Û %sÁ½.",GetCityAreaName(i),CardPrice);
-				Say(str_format, 2, "ÂòÒ»µã/DealBuyCard", "ÔİÊ±²»ĞèÒª/OnCancel");
+				str_format = format("Th× ra ®¹i hiÖp lµ ng­êi khiªu chiÕn thµnh %s, lîi h¹i qu¸, ë ®©y cã b¸n lÖnh bµi c«ng thµnh cã hiÖu lùc trong 5 ngµy dµnh liªn minh cña quİ bang, mçi lÖnh bµi gi¸ %s l­îng.",GetCityAreaName(i),CardPrice);
+				Say(str_format, 2, "Mua mét İt/DealBuyCard", "T¹m thêi kh«ng cÇn/OnCancel");
 				return
 			elseif (Tong2 == TongName) then
 				SetTaskTemp(15, CardTab[i * 2]);
-				str_format = format("Ô­À´´óÏÀÊÇ %s³ÇµÄÌ«ÊØ, ÕâÀïÓĞÂôÊØ³ÇÁîÅÆ£¬Õâ¸öÁîÅÆÓĞ±£Áô¹ó°ïÁªÃË5ÌìµÄĞ§Á¦£¬Ã¿¸öÁîÅÆÊÛ¼Û %sÁ½.",GetCityAreaName(i),CardPrice);
-				Say(str_format, 2, "ÂòÒ»µã/DealBuyCard", "ÔİÊ±²»ĞèÒª/OnCancel");
+				str_format = format("Th× ra ®¹i hiÖp lµ th¸i thó thµnh %s, t¹i ®©y cã b¸n lÖnh bµi thñ thµnh cã hiÖu lùc 5 ngµy dµnh cho liªn minh cña quİ bang, mçi lÖnh bµi gi¸ %s l­îng.",GetCityAreaName(i),CardPrice);
+				Say(str_format, 2, "Mua mét İt/DealBuyCard", "T¹m thêi kh«ng cÇn/OnCancel");
 				return
 			end;
 		end;
-		Say("ÄãºÍ¹¥ÊØ³ÇµÄ°ïÅÉÃ»ÓĞ¹ØÏµ£¡²»ÄÜÊ¹ÓÃÕ¼³ÇÁîÅÆ!", 0);
+		Say("B¹n kh«ng cã quan hÖ g× víi c¸c bang ph¸i c«ng thñ thµnh! Kh«ng thÓ sö dông Thµnh chiÕn lÖnh bµi!", 0);
 	else
-		Say("Ö»ÓĞ°ïÖ÷²ÅÄÜÂòÕ¼³ÇÁîÅÆ", 0);
+		Say("ChØ cã bang chñ míi ®­îc mua Thµnh ChiÕn lÖnh bµi", 0);
 	end;
 end;
 
 function DealBuyCard(CardID)
-	AskClientForNumber("PayForCard", 1, 30, "ÄãÒª¶àÉÙ?");
+	AskClientForNumber("PayForCard", 1, 30, "B¹n cÇn bao nhiªu?");
 end;
 
 function PayForCard(count)
@@ -333,7 +333,7 @@ function PayForCard(count)
 			for i = 1,count do
 				AddEventItem(CardItemID);
 			end;
-			Say("ÇëÍ×ÉÆ±£´æ£¡Õâ¸öÁîÅÆÊÇÕ½³¡ÉÏÍ¬ÃËµÄ¼ûÖ¤£¡Çë×¢ÒâÁîÅÆµÄÊ±¼ä£¬Ö»ÓĞ5ÌìµÄĞ§Á¦£¬Èç¹û¹ıÆÚÁË¾Í²»ÄÜÊ¹ÓÃ£¬¿ÉÒÔµ½ÕâÍË»»ºÍÄÃ»Ø·ÑÓÃ", 0);
+			Say("Xin h·y gi÷ kü! LÖnh bµi nµy dïng ®Ó kiÓm chøng ®ång minh trªn chiÕn tr­êng! Xin chó ı thêi gian trªn lÖnh bµi, chØ cã hiÖu lùc 5 ngµy, nÕu qu¸ thêi gian sÏ kh«ng sö dông ®­îc,cã thÓ quay l¹i ®©y tr¶ l¹i vµ lÊy l¹i phİ ", 0);
 		end;
 	end;
 end;
@@ -349,17 +349,17 @@ function CheckCard()
 		end;
 	end;
 	if (count == 0) then
-		Say("ÄãÉíÉÏÃ»ÓĞÈÎºÎÁîÅÆ!", 0);
+		Say("B¹n kh«ng hÒ cã lÖnh bµi nµo trong ng­êi!", 0);
 	elseif (count > 1) then
-		Say("Äã´øÁËÌ«¶àµÄÕ¼³ÇÁîÅÆ£¬²»ÖªÄãÒªÑéÖ¤ÄÄ¿é£¡ÇëÖ»´øÒ»¿éÁîÅÆ¾ÍºÃ!", 0);
+		Say("B¹n mang qu¸ nhiÒu Thµnh ChiÕn lÖnh bµi, kh«ng biÕt b¹n muèn kiÓm chøng c¸i nµo! Xin chØ mang mét lÖnh bµi th«i!", 0);
 	elseif (CardItemID ~= 0) then
 		life = GetItemLife(CardItemID);
 		if (life < 0) then
-			Say("Õâ¿éÁîÅÆµÄÇé¿öÊÇ......", 0);
+			Say("T×nh tr¹ng tÊm lÖnh bµi nµy lµ.......", 0);
 		elseif (life < 7200) then
-			Say(format("ÕâĞ©¹¥³ÇÁîÅÆµÄÊıÁ¿ÒªÔÚ %s ÈÕÇ°·¢³ö, ÏÖÔÚÒÀ¾ÉÓĞĞ§Á¦.",floor(life/1440)), 0)
+			Say(format("Sè lÖnh bµi c«ng thµnh nµy ph¶i ®­îc ph¸t tr­íc %s ngµy, hiÖn vÉn cßn hiÖu lùc.",floor(life/1440)), 0)
 		else
-			Say(format("ÕâĞ©¹¥³ÇÁîÅÆµÄÊıÁ¿ÒªÔÚ %s ÈÕÇ°·¢³ö, ÏÖÔÚÒÑ¾­¹ıÆÚÁË, Ã»ÓĞÊ¹ÓÃĞ§Á¦.",floor(life/1440)), 0);
+			Say(format("Sè lÖnh bµi c«ng thµnh nµy ph¶i ®­îc ph¸t tr­íc %s ngµy, hiÖn ®· qu¸ h¹n, kh«ng cßn hiÖu lùc sö dông.",floor(life/1440)), 0);
 		end;
 	end;
 end;
@@ -370,10 +370,10 @@ function ReturnCard()
 		count = count + GetItemCountEx(CardTab[i]);
 	end;
 	if (count <= 0) then
-		Say("ÄãÉíÉÏÃ»ÓĞÈÎºÎÁîÅÆ!", 0);
+		Say("B¹n kh«ng hÒ cã lÖnh bµi nµo trong ng­êi!", 0);
 	else
-		str_format = format("¹¥³ÇÁîÅÆ¿ÉÒÔÓÃ %sÁ½»ØÊÕ, ÄãÍ¬ÒâÍË»¹Âğ?",count*ReturnCardPrice);
-		Say(str_format, 2, "ÎÒÏëÍË»¹/DealReturnCard", "²», ÎÒÖ»ÊÇÎÊÎÊ/OnCancel");
+		str_format = format("LÖnh bµi c«ng thµnh ®­îc thu l¹i víi gi¸ %s l­îng, ng­¬i ®ång ı tr¶ l¹i kh«ng?",count*ReturnCardPrice);
+		Say(str_format, 2, "ta muèn tr¶ l¹i /DealReturnCard", "Kh«ng, ta chØ hái chót th«i/OnCancel");
 	end;
 end;
 
@@ -394,7 +394,7 @@ end;
 
 --ÁË½â¹¥³ÇÕ½Çé¿ö start************************************************
 function GameInfo()
-Say("ÏëÒªÁË½âÄÄ¸ö³ÇÊĞ?", 9, GetCityAreaName(1).."/CityInfo", GetCityAreaName(2).."/CityInfo", GetCityAreaName(3).."/CityInfo", GetCityAreaName(4).."/CityInfo", GetCityAreaName(5).."/CityInfo", GetCityAreaName(6).."/CityInfo", GetCityAreaName(7).."/CityInfo", "Tr?v?ArenaMain", "²»ĞèÒª/OnCancel");
+Say("Muèn t×m hiÓu th«ng tin thµnh thŞ nµo?", 9, GetCityAreaName(1).."/CityInfo", GetCityAreaName(2).."/CityInfo", GetCityAreaName(3).."/CityInfo", GetCityAreaName(4).."/CityInfo", GetCityAreaName(5).."/CityInfo", GetCityAreaName(6).."/CityInfo", GetCityAreaName(7).."/CityInfo", "Trë vÒ/ArenaMain", "Kh«ng cÇn ®©u/OnCancel");
 end;
 
 --"Èü³Ì°²ÅÅ/ArenaInfo", 
@@ -405,11 +405,11 @@ function CityInfo(nSel)
 	if (nCityId < 1 or nCityId > 7) then 
 		return
 	end;
-	Say(format("ÏëÒªÁË½â¹¥³ÇÕ½ %sµÄÊ²Ã´ĞÅÏ¢?",GetCityAreaName(nCityId)), 4, 
-		"±¨ÃûÇé¿ö/RegisterInfo", 
-		"¹¥³ÇÕ½ÊÂ/CityWarInfo", 
-		"·µ»Ø/GameInfo", 
-		"²»ĞèÒª/OnCancel");
+	Say(format("Muèn t×m hiÓu th«ng tin g× vÒ c«ng thµnh chiÕn %s?",GetCityAreaName(nCityId)), 4, 
+		"T×nh h×nh b¸o danh/RegisterInfo", 
+		"C«ng thµnh chiÕn sù /CityWarInfo", 
+		"Trë vÒ/GameInfo", 
+		"Kh«ng cÇn ®©u/OnCancel");
 end;
 
 function RegisterInfo()
@@ -421,19 +421,19 @@ function RegisterInfo()
 	
 	local nHour = tonumber(GetLocalDate("%H"));
 	if (nHour<18 or nHour>=19) then
-		Say("ÏÖÔÚ²»ÊÇ¹¥³ÇÕ½µÄ±¨ÃûÊ±¼ä.", 2, "·µ»Ø/GameInfo", "²»ĞèÒª/OnCancel");
+		Say("HiÖn t¹i kh«ng ph¶i lµ thêi gian b¸o danh c«ng thµnh chiÕn.", 2, "Trë vÒ/GameInfo", "Kh«ng cÇn ®©u/OnCancel");
 		return 0;
 	end;
 	if (nCityId ~= getSigningUpCity(1) or getSignUpState(nCityId) ~= 1) then
-		Say(format("ÏÖÔÚ¹¥³ÇÕ½ <%s> ²»ÔÚ±¨Ãû½×¶Î.",GetCityAreaName(nCityId)), 2, "·µ»Ø/GameInfo", "²»ĞèÒª/OnCancel");
+		Say(format("HiÖn t¹i c«ng thµnh chiÕn <%s> kh«ng ë giai ®o¹n b¸o danh.",GetCityAreaName(nCityId)), 2, "Trë vÒ/GameInfo", "Kh«ng cÇn ®©u/OnCancel");
 		return 0;
 	end;
 	
 	local szElector = getCityWarElector(cityid_to_lgname(nCityId))--"<ÔİÎŞ>"
 	if (szElector == "" or szElector == nil) then
-		szElector = "<ÔİÊ±²»>";
+		szElector = "<T¹m thêi kh«ng>";
 	end;
-Say(format("¹¥³ÇÕ½<%s>ÕıÔÚ×¼±¸£¬²ÎÈü°ï»áÁîÅÆÅÅĞĞµÚÒ»ÊÇ: %s<color=red><enter>Èç¹ûÓĞ°ï»áµÄÁîÅÆÊıÁ¿ºÍµÚÒ»ÏàÍ¬£¬ÔòÓÉÏµÍ³Ëæ»úÑ¡³öÃ÷ÌìµÄ¹¥³Ç°ï.<color>",GetCityAreaName(nCityId),szElector), 2, "·µ»Ø/GameInfo", "²»ĞèÒª/OnCancel");
+Say(format("C«ng thµnh chiÕn <%s> ®ang ®­îc chuÈn bŞ, bang héi thi ®ua lÖnh bµi xÕp h¹ng thø nhÊt lµ : %s<color=red><enter>NÕu cã bang nµo cã sè l­îng lÖnh bµi b»ng víi bang xÕp thø 1, th× hÖ thèng sÏ ngÉu nhiªn chän ra bang c«ng thµnh cho ngµy mai.<color>",GetCityAreaName(nCityId),szElector), 2, "Trë vÒ/GameInfo", "Kh«ng cÇn ®©u/OnCancel");
 end;
 
 
@@ -493,19 +493,19 @@ function CityWarInfo()
 	if (nCityId < 1 or nCityId > 7) then 
 		return
 	end;
-	local str_format = format("¹¥³ÇÕ½ <%s> Ã÷Ìì: ",GetCityAreaName(nCityId));
+	local str_format = format("C«ng thµnh chiÕn <%s> ngµy mai: ",GetCityAreaName(nCityId));
 	local str1, str2 = GetCityWarBothSides(nCityId);
 	if (str1 ~= "" and str2 ~= "" ) then
 		if (nCityId == getSigningUpCity(2)) then
-			str_format = format("¹¥³ÇÕ½ <%s> ½ñÌì: ",GetCityAreaName(nCityId));
+			str_format = format("C«ng thµnh chiÕn <%s> h«m nay: ",GetCityAreaName(nCityId));
 			if (HaveBeginWar(nCityId) == 1) then 
-				str_format = format("ÑÛÏÂ <%s> ´¦ÓÚ¹¥³ÇÕ½½×¶Î: ",GetCityAreaName(nCityId));
+				str_format = format("Tr­íc m¾t <%s> ®ang ë giai ®o¹n c«ng thµnh chiÕn: ",GetCityAreaName(nCityId));
 			end;
 		end;
-		str_format = format("ÊØ·½%sÊÇ%s, ¹¥·½ÊÇ%s!",str_format,str2,str1);
-		Say(str_format , 2, "·µ»Ø/GameInfo", "²»ĞèÒª/OnCancel");
+		str_format = format("Phe thñ %s lµ %s, phe c«ng lµ %s!",str_format,str2,str1);
+		Say(str_format , 2, "Trë vÒ/GameInfo", "Kh«ng cÇn ®©u/OnCancel");
 	else
-		Say(format("ÑÛÏÂ %s »¹Ã»½øÈë¹¥³ÇÕ½½×¶Î!",GetCityAreaName(nCityId)) , 2, "·µ»Ø/GameInfo", "²»ĞèÒª/OnCancel");
+		Say(format("Tr­íc m¾t %s ch­a b­íc vµo giai ®o¹n c«ng thµnh chiÕn!",GetCityAreaName(nCityId)) , 2, "Trë vÒ/GameInfo", "Kh«ng cÇn ®©u/OnCancel");
 	end;
 end;
 
@@ -515,7 +515,7 @@ end;
 --ÁìÈ¡¹¥³ÇĞÅÎï start**************************************************
 	function checkIsTakeQingtongDing(szTongName, nTongID, nCityId)
 		if (nTongID == 0 or GetTongMaster()~= GetName()) then
-			Say("Ö»ÓĞ±¨Ãû¹¥³Ç°ï»áµÄ°ïÖ÷ºÍÔÚÁîÅÆ±ÈÈüÖĞÊ§°ÜµÄ°ï»á°ïÖ÷²Å¿ÉÒÔÁìĞÅÎï.", 0);
+			Say("ChØ cã bang chñ bang b¸o danh c«ng thµnh vµ bang thÊt b¹i trong cuéc thi thè lÖnh bµi míi cã thÓ nhËn l¹i tİn vËt.", 0);
 			return 0;
 		end;
 		if (nCityId < 1 or nCityId > 7) then
@@ -524,30 +524,30 @@ end;
 		
 		local nHour = tonumber(GetLocalDate("%H"));
 		if (nHour < 19) then
-			Say("ÁìÈ¡¹¥³ÇĞÅÎïµÄÊ±¼äÒÑ¾­½áÊøÁË, Ã¿ÌìÔÚ19h00µ½24h00Õâ¸öÊ±¶ÎÖĞ£¬Õù¶áÁîÅÆÊ§°ÜµÄ°ï»á¿ÉÒÔµ½ÎÒÕâÀïÀ´ÁìÈ¡ÌôÕ½Áî.", 0)
+			Say("Thêi gian nhËn l¹i tİn vËt c«ng thµnh chiÕn ®· hÕt, trong kho¶ng thêi gian tõ 19h00 ®Õn 24h00 mçi ngµy, bang héi tranh ®ua lÖnh bµi thÊt b¹i cã thÓ ®Õn chç ta ®Ó nhËn l¹i khiªu chiÕn lÖnh.", 0)
 			return 0;
 		end;
 		
 		if (getSignUpState(nCityId) == 1) then
-			Say(format("±¨Ãû²Î¼Ó %s³ÇÃ÷ÌìµÄÕù¶áÁîÅÆ»¹Ã»ÓĞ½áÊø£¬¿ÉÒÔ¼ÌĞø²Î¼Ó.",GetCityAreaName(nCityId)), 0);
+			Say(format("B¸o danh tham gia tranh ®ua lÖnh bµi thµnh %s cho ngµy mai vÉn ch­a kÕt thóc, h·y tiÕp tôc tham gia.",GetCityAreaName(nCityId)), 0);
 			return 0;
 		end;
 		
 		local szChallenger = GetCityWarBothSides(nCityId);
 		if (szChallenger == szTongName) then
-			Say(format("¹ó°ïÒÑ³ÉÎªÃ÷Ìì¹¥³Ç %sµÄ°ï»á,¹¥³ÇĞÅÎïÒÑ½»»¹¸øÌ«ÊØÁË.",GetCityAreaName(nCityId)), 0);
+			Say(format("Quİ bang ®· trë thµnh bang c«ng thµnh %s vµo ngµy mai, tİn vËt c«ng thµnh ta ®· giao l¹i cho th¸i thó råi.",GetCityAreaName(nCityId)), 0);
 			return 0;
 		end;
 		
 		local szChallenger = GetCityOwner(nCityId);
 		if (szChallenger == szTongName) then
-			Say(format("ÄãÊÇ %s³ÇµÄÌ«ÊØ, ²»Ó¦¸ÃÔÙ½ÓÊÜ¹¥³ÇĞÅÎïÁË.",GetCityAreaName(nCityId)), 0);
+			Say(format("Ng­¬i ®· lµ th¸i thó thµnh %s, kh«ng cÇn ph¶i nhËn tİn vËt c«ng thµnh n÷a.",GetCityAreaName(nCityId)), 0);
 			return 0;
 		end;
 		
 		local nlid = LG_GetLeagueObjByRole(LEAGUETYPE_CITYWAR_SIGN, szTongName);
 		if (FALSE(nlid)) then
-			Say("»¹Ã»ÓĞ±¨Ãû²Î¼ÓÃ÷ÌìµÄ¹¥³ÇÕ½£¬ÕâÀïÃ»ÓĞÄãµÄĞÅÎï.", 0);
+			Say("Ch­a b¸o danh tham gia c«ng thµnh chiÕn ngµy mai, ë ®©y kh«ng cã tİn vËt cña ng­¬i.", 0);
 			return 0;
 		end;
 		return 1;
@@ -566,9 +566,9 @@ function TakeQingtongDing()
 	local ncount = LG_GetMemberTask(LEAGUETYPE_CITYWAR_SIGN, cityid_to_lgname(nCityId), szTongName, LGTSK_QINGTONGDING_COUNT);
 	
 	if (ncount < 1) then
-		Say("±¨Ãû¹¥³ÇĞÅÎïÎÒÒÑ¾­¶¼»¹¸øÄãÁË.", 0);
+		Say("Tİn vËt b¸o danh c«ng thµnh ta ®· tr¶ l¹i hÕt cho ng­¬i råi.", 0);
 	else
-		Say(format("ÄãÓĞ%sÌôÕ½Áî, ÁìÁîÅÆÇ°ÇëÏÈÕûÀí±³°ü.",ncount), 3, "ÎÒÏëÁìÁî/#sure_takeQingtongDing("..ncount..")", "·µ»Ø/ArenaMain", "Ò»ÏÂ»ØÀ´/OnCancel");
+		Say(format("Ng­¬i cã %s khiªu chiÕn lÖnh, h·y s¾p xÕp l¹i hµnh trang tr­íc khi nhËn l¹i lÖnh bµi.",ncount), 3, "Ta muèn nhËn l·nh/#sure_takeQingtongDing("..ncount..")", "Trë vÒ/ArenaMain", "L¸t n÷a quay l¹i /OnCancel");
 	end;
 end;
 
@@ -578,19 +578,19 @@ function sure_takeQingtongDing(ncount)
 	if (checkIsTakeQingtongDing(szTongName, nTongID, nCityId) == 1) then
 		local nFree = CalcFreeItemCellCount();
 		if (nFree > 6) then
-			local szMsg = format("ÕâÊÇ<color=yellow>%s<color>ÄãµÄÌôÕ½Áî.",ncount);
+			local szMsg = format("§©y lµ <color=yellow>%s<color> khiªu chiÕn lÖnh cña ng­¬i.",ncount);
 			if (nFree < ncount) then
-				szMsg = format("ÄãÓĞ<color=yellow>%s<color>ÌôÕ½Áî, ÒòÎª±³°ü¿Õ¼ä²»×ã, ÎÒÍË»¹À´Ö®Ç°µÄ %s¿é. »¹ÓĞ<color=yellow>%s<color>Ã»ÓĞÁìÈ¡, ½ñÌì24h00 Ö®Ç°ÁìÈ¡!",ncount,nFree,(ncount - nFree));
+				szMsg = format("Ng­¬i cã <color=yellow>%s<color> khiªu chiÕn lÖnh, v× hµnh trang kh«ng ®ñ, ta tr¶ l¹i tr­íc %s c¸i. VÉn cßn <color=yellow>%s<color> c¸i ch­a nhËn, h·y nhËn tr­íc 24h00 ngµy h«m nay!",ncount,nFree,(ncount - nFree));
 				ncount = nFree;
 			end;
 			for i =1, ncount do
 				AddItem(nCityWar_Item_ID_G,nCityWar_Item_ID_D,nCityWar_Item_ID_P,1,1,1);--qingtongding
 			end;
 			LG_ApplyAppendMemberTask(LEAGUETYPE_CITYWAR_SIGN, cityid_to_lgname(nCityId), szTongName, LGTSK_QINGTONGDING_COUNT, -nFree);
-			WriteLog(format("[Õù¶á¹¥³ÇÁî]%s Name:%s Account:%s Tong:%s ³ÇÊĞ %s ÁìÈ¡ÌôÕ½Áî %s",date(),GetName(),GetAccount(),szTongName,cityid_to_lgname(nCityId),ncount));
+			WriteLog(format("[Tranh ®ua c«ng thµnh chiÕn]%s Name:%s Account:%s Tong:%s Thµnh thŞ: %s NhËn l¹i khiªu chiÕn lÖnh %s",date(),GetName(),GetAccount(),szTongName,cityid_to_lgname(nCityId),ncount));
 			Say(szMsg, 0);
 		else
-			Say("±³°ü¿Õ¼ä²»×ã. ×¢ÒâÒªÔÚ24h00Ö®Ç°µ½ÕâÁì»ØĞÅÎï, Èç¹û²»À´¾Í²»ÄÜÔÙÁìÈ¡ÁË.", 0);
+			Say("Hµnh trang kh«ng ®ñ chç trèng. Chó ı lµ tr­íc 24h00 ph¶i ®Õn nhËn l¹i tİn vËt, nÕu kh«ng sÏ kh«ng thÓ nhËn l¹i n÷a.", 0);
 		end;
 	end;
 end;
@@ -607,25 +607,25 @@ function SignUpCityWar()
 		return 0;
 	end;
 	
-	local szMsg = format("<dec>ÏÖÔÚÕı½øĞĞ %s³Ç±¨Ãû.",GetCityAreaName(nCityId));
+	local szMsg = format("<dec>HiÖn t¹i ®ang tiÕn hµnh b¸o danh thµnh %s.",GetCityAreaName(nCityId));
 	local szElector = getCityWarElector(cityid_to_lgname(nCityId))--"<ÔİÎŞ>"
 	
 	if (szElector == "" or szElector == nil) then
-		szElector = "<ÔİÊ±²»>";
+		szElector = "<T¹m thêi kh«ng>";
 	end;
 
 	local nlid = LG_GetLeagueObjByRole(LEAGUETYPE_CITYWAR_SIGN, szTongName);
 	
 	if (FALSE(nlid)) then
-		szMsg = szMsg.."Ö»ÒªÓĞ'ÌôÕ½Áî' ¾Í¿ÉÒÔ²Î¼ÓÕù¶á. Õù¶á¹æÔò: »¹Ã»ÓĞÕ¼³ÇµÄ18¼¶ÒÔÉÏ°ï»á¿ÉÒÔÊ¹ÓÃ'ÌôÕ½Áî'²Î¼Ó¾ºÕù. ¾ºÕùÊ±¼äÊÇÃ¿Ìì18h00µ½19h00. 19h00Ö®Ç°, µÃµ½ÌôÕ½Áî×î¶àµÄ°ï»áÓĞÈ¨²Î¼ÓÃ÷Ìì²Î¼Ó¹¥³ÇÕ½.<color=red><enter>Èç¹ûÓĞ°ï»áµÄÁîÅÆÊıÁ¿²¢ÁĞµÚÒ»µÄ»°ÏµÍ³½«Ëæ»ú³éÈ¡Ò»¸ö½øĞĞÃ÷ÌìµÄ¹¥³Ç.<color><enter>ÏÖÔÚÅÅÃûµÚÒ»µÄ°ï»áÊÇ£º"..szElector
+		szMsg = szMsg.."ChØ cÇn cã 'Khiªu chiÕn lÖnh' th× cã thÓ tham gia tranh ®ua. Qui t¾c tranh ®ua: Bang héi ch­a chiÕm thµnh cÊp 18 trë lªn cã thÓ sö dông 'Khiªu chiÕn lÖnh' ®Ó tham gia tranh ®ua. Thêi gian tranh ®ua lµ 18h00 ®Õn 19h00 mçi ngµy. Tr­íc 19h00, bang héi nµo ®Æt vµo sè l­îng khiªu chiÕn lÖnh nhiÒu nhÊt sÏ nhËn ®­îc quyÒn c«ng thµnh chiÕn ngµy mai.<color=red><enter>NÕu cã bang héi cã cïng sè lÖnh bµi víi bang xÕp thø 1 th× hÖ thèng sÏ ngÉu nhiªn chän ra mét bang c«ng thµnh cho ngµy mai.<color><enter>Bang héi hiÖn t¹i xÕp thø 1 lµ: "..szElector
 	else
 		
 		local nCount = LG_GetMemberTask(LEAGUETYPE_CITYWAR_SIGN, cityid_to_lgname(nCityId), szTongName, LGTSK_QINGTONGDING_COUNT);
 		
 		--print(LEAGUETYPE_CITYWAR_SIGN, cityid_to_lgname(nCityId), szTongName, LGTSK_QINGTONGDING_COUNT)
-		szMsg = format("%sÕù¶á¹æÔò: »¹Ã»ÓĞÕ¼³ÇµÄ18¼¶ÒÔÉÏ°ï»á¿ÉÒÔÊ¹ÓÃ'ÌôÕ½Áî'²Î¼Ó¾ºÕù. ¾ºÕùÊ±¼äÊÇÃ¿Ìì18h00µ½19h00. 19h00Ö®Ç°, µÃµ½ÌôÕ½Áî×î¶àµÄ°ï»áÓĞÈ¨²Î¼ÓÃ÷Ìì²Î¼Ó¹¥³ÇÕ½.<color=red><enter>Èç¹ûÓĞ°ï»áµÄÁîÅÆÊıÁ¿²¢ÁĞµÚÒ»µÄ»°ÏµÍ³½«Ëæ»ú³éÈ¡Ò»¸ö½øĞĞÃ÷ÌìµÄ¹¥³Ç.<color><enter>ÏÖÔÚÅÅÃûµÚÒ»µÄ°ï»áÊÇ£º%s<enter>¹ó°ïÕù¶á %sµÄÌôÕ½ÁîÊıÁ¿ÊÇ%s",szMsg,szElector,szTongName,nCount)
+		szMsg = format("%sQui t¾c tranh ®ua : Bang héi ch­a chiÕm thµnh cÊp 18 trë lªn cã thÓ sö dông 'Khiªu chiÕn lÖnh' ®Ó tham gia tranh ®ua. Thêi gian tranh ®ua lµ 18h00 ®Õn 19h00 mçi ngµy. Tr­íc 19h00, bang héi nµo ®Æt vµo sè l­îng khiªu chiÕn lÖnh nhiÒu nhÊt sÏ nhËn ®­îc quyÒn c«ng thµnh chiÕn ngµy mai.<color=red><enter>NÕu cã bang héi cã cïng sè lÖnh bµi víi bang xÕp thø 1 th× hÖ thèng sÏ ngÉu nhiªn chän ra mét bang c«ng thµnh cho ngµy mai.<color><enter>Bang héi hiÖn t¹i xÕp thø 1 lµ: %s<enter>Sè l­îng khiªu chiÕn lÖnh tranh ®ua %s cña quİ bang lµ: %s",szMsg,szElector,szTongName,nCount)
 	end;
-	TaskSayList(szMsg, "ÎÒÏë¾ºÕùÁîÅÆ/want_signupcitywar", "·µ»Ø/ArenaMain", "ÎÒÏëÒ»ÏÂ/OnCancel");
+	TaskSayList(szMsg, "Ta muèn tranh ®ua lÖnh bµi/want_signupcitywar", "Trë vÒ/ArenaMain", "§Ó ta suy nghÜ l¹i/OnCancel");
 end;
 
 function want_signupcitywar()
@@ -636,13 +636,13 @@ function want_signupcitywar()
 	
 	local nCurCount = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 	if nCurCount <= 0 then
-		Say("¹ó°ïÃ»ÓĞÌôÕ½Áî, ²»ÄÜÉÏ½», ÇëÊÕ¼¯ÁËÌôÕ½ÁîÒÔºóÔÙÀ´ÕÒÎÒ.",0)
+		Say("Quİ bang kh«ng cã khiªu chiÕn lÖnh, kh«ng thÓ giao nép, h·y thu thËp khiªu chiÕn lÖnh råi h·y ®Õn t×m ta.",0)
 		return 0
 	end
 	if nCurCount > 1000000 then
 		nCurCount = 1000000
 	end
-	AskClientForNumber("sure_signupcitywar", 0,nCurCount,"ÉÏ½»ÌôÕ½Áî")
+	AskClientForNumber("sure_signupcitywar", 0,nCurCount,"Giao nép khiªu chiÕn lÖnh")
 	--if (FALSE(nlid)) then
 		--if (GetCash() >= 10000000) then
 			--GiveItemUI("¹¥³ÇÕ½ĞÅÎï", "Çë½«¹¥³ÇÕ½ĞÅÎï¡ª¡ªÌôÕ½Áî·Å½øÈ¥°É¡£", "sure_signupcitywar", "OnCancel");
@@ -664,7 +664,7 @@ function sure_signupcitywar(nCount)
 	
 	local nCityId = getSigningUpCity(1);--GetArenaTargetCity()
 	if not (tonumber(GetLocalDate("%H"))>= 18 and tonumber(GetLocalDate("%H")) < 19 and getSignUpState(nCityId) == 1) then
-		Talk(1, "", "ÏÖÔÚ²»ÊÇ¹¥³ÇÕ½µÄ±¨ÃûÊ±¼ä.")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i lµ thêi gian b¸o danh c«ng thµnh chiÕn.")
 		return 1
 	end
 	
@@ -674,7 +674,7 @@ function sure_signupcitywar(nCount)
 	local szTongName, nTongID = GetTongName();
 	local nTongCurCount = LG_GetMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName,szTongName,LGTSK_TIAOZHANLING_COUNT)
 	if nCount > nTongCurCount or nCount > 1000000 then
-		Say("ÌôÕ½Áî²»¹», ²»ÄÜÉÏ½»,Çë¼ÌĞøÊÕ¼¯Ö®ºóÔÙÀ´.",0)
+		Say("Khiªu chiÕn lÖnh kh«ng ®ñ, kh«ng thÓ giao nép, xin h·y thu thËp tiÕp råi quay l¹i.",0)
 		return 1
 	end
 	local nCityId = getSigningUpCity(1);
@@ -700,30 +700,30 @@ function sure_signupcitywar(nCount)
 	
 	LG_ApplyAppendMemberTask(TIAOZHANLING_LGTYPE,TIAOZHANLING_LGName, szTongName, LGTSK_TIAOZHANLING_COUNT, -nCount, "", "");
 	
-	WriteLog(format("[Õù¶á¹¥³ÇÁî]%s Name:%s Account:%s TongName:%s ³ÇÊĞ %s Õù¶á¹¥³ÇÊıÁ¿: %s",date(),GetName(),GetAccount(),szTongName,cityid_to_lgname(nCityId),(nCount + nCurCount)));
+	WriteLog(format("[Tranh ®ua c«ng thµnh chiÕn]%s Name:%s Account:%s TongName:%s Thµnh thŞ: %s Sè l­îng tranh ®ua c«ng thµnh: %s",date(),GetName(),GetAccount(),szTongName,cityid_to_lgname(nCityId),(nCount + nCurCount)));
 	
 	local szFirstTong = checkFirstSignUpChallenger(cityid_to_lgname(nCityId), szTongName, nCount + nCurCount);
 	if (szFirstTong == szTongName) then
-		Say(format(" %s°ï»áÌôÕ½ÁîÅÆµÄÊıÁ¿ÏÖÔÚÊÇ£º<color=yellow>%s<color>¿é, ÔİÁĞµÚÒ», ¾¡¹ÜÈç´Ë£¬»¹ÊÇÒª¹Ø×¢Çé¿ö±ä»¯.",szTongName,(nCount + nCurCount)), 0);
+		Say(format("Sè l­îng khiªu chiÕn lÖnh bang %s hiÖn t¹i lµ: <color=yellow>%s<color> c¸i, t¹m thêi xÕp thø 1, tuy nhiªn, h·y lu«n theo dâi t×nh h×nh biÕn ®éng.",szTongName,(nCount + nCurCount)), 0);
 	else
-		Say(format(" %s°ï»áÌôÕ½ÁîÅÆµÄÊıÁ¿ÏÖÔÚÊÇ£º<color=yellow>%s<color>¿é. ÔİÁĞµÚÒ»µÄÊÇ%s,¹ó°ïĞè¼ÌĞøÅ¬Á¦.",szTongName,(nCount + nCurCount),szFirstTong), 0);
+		Say(format("Sè l­îng khiªu chiÕn lÖnh bang %s hiÖn t¹i lµ: <color=yellow>%s<color> c¸i. Bang héi xÕp thø 1 lµ %s, quİ bang h·y tiÕp tôc nç lùc.",szTongName,(nCount + nCurCount),szFirstTong), 0);
 	end;
 end;
 
 function checkSignUpCityWar(szTongName, nTongID, nCityId)
 	local nHour = tonumber(GetLocalDate("%H"));
 	if (nTongID == 0 or GetTongMaster() ~= GetName()) then
-		Say("Äã²»ÊÇ°ïÖ÷¡£ÔÚ18h00µ½19h00,Õâ¸öÊ±¶Î£¬ »¹Ã»ÓĞÕ¼³ÇµÄ18¼¶ÒÔÉÏµÄ°ï»á°ïÖ÷¿ÉÒÔ±¨Ãû²Î¼Ó½ñÌìÖ®ºóµÄ¹¥³ÇÕ½.", 0);
+		Say("Ng­¬i kh«ng ph¶i lµ bang chñ. Trong kho¶ng thêi gian tõ 18h00 ®Õn 19h00, bang chñ bang héi ch­a chiÕm thµnh cÊp 18 trë lªn cã thÓ ®Õn b¸o danh tham gia c«ng thµnh chiÕn cho ngµy h«m sau.", 0);
 	elseif (nHour < 18 or nHour >= 19) then
-		Say("ÏÖÔÚ²»ÊÇ¹¥³ÇÕ½µÄ±¨ÃûÊ±¼ä. Ã¿Ìì18h00µ½19h00, »¹Ã»ÓĞÕ¼³ÇµÄ18¼¶ÒÔÉÏµÄ°ï»á¿ÉÒÔµ½Õâ±¨Ãû²Î¼Ó½ñÌìÖ®ºóµÄ¹¥³ÇÕ½.", 0);
+		Say("HiÖn t¹i kh«ng ph¶i lµ thêi gian b¸o danh c«ng thµnh chiÕn. Mçi ngµy tõ 18h00 ®Õn 19h00, bang héi ch­a chiÕm thµnh cÊp 18 trë lªn cã thÓ ®Õn ®©y b¸o danh tham gia c«ng thµnh chiÕn cho ngµy h«m sau.", 0);
 	elseif (TONG_GetExpLevel(nTongID) < 18) then
-		Say("ÒªÇóÒª18¼¶ÒÔÉÏµÄ°ï»á²Å¿ÉÒÔ±¨Ãû½ñÌìÖ®ºóµÄ¹¥³ÇÕ½.", 0);
+		Say("§ßi hái ®¼ng cÊp bang héi ®¹t cÊp 18 trë lªn míi cã thÓ b¸o danh c«ng thµnh chiÕn cho ngµy h«m sau.", 0);
 	elseif (checkCityOwner(szTongName) ~= 0) then
-		Say("ÄãÊÇ³ÇÖ÷£¬²»±Ø±¨Ãû¹¥³Ç.", 0);
+		Say("Ng­¬i ®· lµ chñ thµnh, kh«ng cÇn ph¶i b¸o danh c«ng thµnh.", 0);
 	elseif (checkCItyChallenger(szTongName) ~= 0) then
-			Say(format("ÄãÒÑÊÇÌôÕ½·½ %s, ²»ÄÜÕù¶á½ñÌìµÄÁîÅÆ.",GetCityAreaName(checkCItyChallenger(szTongName))), 0);
+			Say(format("Ng­¬i ®· lµ phe khiªu chiÕn %s, kh«ng thÓ tranh ®ua lÖnh bµi trong ngµy h«m nay.",GetCityAreaName(checkCItyChallenger(szTongName))), 0);
 	elseif (getSignUpState(nCityId) ~= 1) then
-		Say("ÏÖÔÚ»¹Ã»ÓĞ¿ªÊ¼±¨Ãû¹¥³Ç£¬Ñø×ã¾«Éñ×¼±¸×Å", 0);
+		Say("HiÖn t¹i b¸o danh c«ng thµnh vÉn ch­a b¾t ®Çu, h·y chuÈn bŞ tinh thÇn s½n sµng", 0);
 	else
 		return 1;
 	end;

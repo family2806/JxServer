@@ -34,7 +34,7 @@ function fld_wanttakeboat(addr)
 
 	-- ¼ÓÈëĞÂÃÅÅÉÉÏ´¬ Modified - by AnhHH - 20110724
 	if (GetLastFactionNumber() == -1)then
-		Talk(1,"","´óÏÀÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÉÏ´¬")
+		Talk(1,"","§¹i hiÖp ch­a gia nhËp m«n ph¸i kh«ng thÓ lªn thuyÒn")
 		return
 	end
 	
@@ -46,24 +46,24 @@ function fld_wanttakeboat(addr)
 	end
 	local idx = SubWorldID2Idx(MapId)		
 	if (idx < 0) then
-		Say("¶Ô²»Æğ! Ç°·½ÓĞÎ£ÏÕ£¬ÔİÊ±²»ÄÜÉÏ´¬!.",0)
+		Say("Xin lçi! Phİa tr­íc ®ang cã nguy hiÓm! T¹m thêi ch­a thÓ lªn thuyÒn!.",0)
 		return
 	end
 	if (fld_haveroom() == 1) then
 		return
 	end
-	local sz_msg = "Ïë³Ë´¬µ½·çÁê¶É±±°¶£¬ĞèÒªÓĞ·çÁê¶ÉÁîÅÆ»òÕßÄãÒÑ¾­¸øÎÒ<color=red>200<color> ÉñÃØ¾íÖá£¬ÎÒ¾Í¸øÄãÉÏ´¬!";
+	local sz_msg = "Muèn ®ãn thuyÒn ®Õn bê B¾c Phong L¨ng §é ph¶i cã Phong L¨ng §é lÖnh bµi hoÆc ng­¬i ®­a ta <color=red>200<color> cuèn MËt ®å thÇn bİ, ta sÏ cho ng­¬i lªn thuyÒn!";
 	local str = {	
-		"ÎÒÓĞ·çÁê¶ÉÁîÅÆ/use_lingpai",
-		"ÎÒÊÕ¼¯ÁË200¾íÉñÃØ¾íÖá/use_juanzhou",
-		"ÈÃÎÒÏëÏë!/fld_cancel",
+		"Ta cã lÖnh bµi Phong L¨ng §é/use_lingpai",
+		"Ta ®· thu thËp ®ñ 200 cuèn MËt ®å thÇn bİ/use_juanzhou",
+		"§Ó ta suy nghÜ l¹i!/fld_cancel",
 			};		
 	--µ÷Õû·çÁê¶É·ÑÓÃÊ±¼ä - Modified by DinhHQ - 20110504
 	if (check_new_shuizeitask() == 1) then
-		sz_msg = format("ĞèÒªÓĞ %s ²ÅÄÜ²Î¼Ó·çÁê¶É±±°¶£¬Ë³Àû¶È¹ıºó½«ÓĞ½±Àø", "Ë®ÔôÁîÅÆ");
+		sz_msg = format("Mçi ngµy vµo lóc 10:00,14:00,16:00,18:00,20:00,cÇn ph¶i cã %s míi cã thÓ ®i tham gia Bê B¾c Phong L¨ng §é, sau khi thuËn lîi v­ît qua sÏ cã phÇn th­ëng", "LÖnh Bµi Thñy TÆc");
 		str = {	
-		format("ÎÒÓĞ%s/use_suizeilingpai", "Ë®ÔôÁîÅÆ"),
-		"ÈÃÎÒÏëÏë!/fld_cancel",
+		format("Ta cã %s/use_suizeilingpai", "LÖnh Bµi Thñy TÆc"),
+		"§Ó ta suy nghÜ l¹i!/fld_cancel",
 			};
 	end
 	
@@ -127,7 +127,7 @@ function fld_TakeBoat(plindex)
 	posy = floor(posy/32)
 	AddMSPlayer(MISSIONID,1)
 	NewWorld(boatmapid, posx, posy)
-	Msg2Player("»¹ÓĞ"..t.." ·ÖÖÓÀë¿ªÂëÍ·£¬µ½·çÁê¶É±±°¶")
+	Msg2Player("cßn"..t.." phót thuyÒn rêi bÕn, ®Õn bê B¾c Phong L¨ng §é")
 	DisabledUseTownP(1)	--ÏŞÖÆÆäÔÚ¶É´¬ÄÚÊ¹ÓÃ»Ø³Ç·û
 	SetRevPos(175,1);		--ÉèÖÃÖØÉúµãÔÚÎ÷É½´å
 	SetLogoutRV(1)
@@ -141,13 +141,13 @@ end
 function fld_haveroom()
 	if (GetMSPlayerCount(MISSIONID, 1) >= 100 ) then
 		if (BOATID == 1) then
-			Say("ÄãÀ´ÍíÁË! ´¬ÒÑ¾­ÂúÁË£¬µÈÏÂÒ»ÌË°É!", 0)
+			Say("Ng­¬i ®Õn trÔ råi! ThuyÒn ®· ®Çy råi, h·y chê chuyÕn sau ®i!", 0)
 			return 1
 		elseif (BOATID == 2) then
-			Say("ÄãÀ´ÍíÁË£¬ ´¬ÒÑ¾­ÂúÁË£¬µÈÏÂÒ»ÌË°É!", 0)
+			Say("Ng­¬i ®· ®Õn trÔ! ThuyÒn ®· ®Çy råi, h·y chê chuyÕn sau ®i!", 0)
 			return 1
 		elseif (BOATID == 3) then
-			Say("ÄãÀ´ÍíÁË£¬ ´¬ÒÑ¾­ÂúÁË£¬µÈÏÂÒ»ÌË°É!", 0)
+			Say("Ng­¬i ®· ®Õn trÔ! ThuyÒn ®· ®Çy råi, h·y chê chuyÕn sau ®i!", 0)
 			return 1
 		end
 	end
@@ -188,7 +188,7 @@ end
 
 -- ÉñÃØ¾íÖá½»¸¶½çÃæ
 function	use_juanzhou()	--Ê¹ÓÃÉñÃØ¾íÖá
-	GiveItemUI( "½»ÉñÃØ¾íÖá", "·Å200ÕÅÉñÃØ¾íÖáµ½ÏÂÃæµÄ¿Õ¸ñ£¬Òª×¢Òâ£¬Èç¹û¿Õ¸ñÄÚµÄÉñÃØ¾íÖáÉÙÓÚ»òÕß¶àÓà200£¬ÎÒ½«²»Òª.", "exchange_juanzhou", "no" );
+	GiveItemUI( "Giao MËt ®å thÇn bİ ", "§Æt 200 cuèn MËt ®å thÇn bİ vµo « phİa d­íi, b¹n ph¶i chó ı, nÕu MËt ®å thÇn bİ trong « İt h¬n hoÆc nhiÒu h¬n 200 cuèn ta sÏ kh«ng nhËn.", "exchange_juanzhou", "no" );
 end;
 
 -- È·¶¨ÉñÃØ¾íÖáÊıÁ¿º¯Êı
@@ -208,20 +208,20 @@ function exchange_juanzhou(ncount)
 		end
 	end
 	if (y ~= ncount) then
-		Say("ÉñÃØ¾íÖáºÃÏñ²»¶Ô£¬¼ì²é¿´¿´.", 2, "°¡£¬Ô­À´·Å´íÁË£¬ÎÒÖØÀ´./use_juanzhou", "ÈÃÎÒ¼ì²é¿´¿´/no")
+		Say("MËt ®å thÇn bİ h×nh nh­ kh«ng ®óng! H·y kiÓm tra l¹i xem.", 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./use_juanzhou", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount > 200) then
-		Say("ÎÒÖ»ĞèÒª200¸öÉñÃØ¾íÖá£¬Ê£ÓàµÄÄã´ø»ØÈ¥!", 2, "°¡£¬Ô­À´·Å´íÁË£¬ÎÒÖØÀ´./use_juanzhou", "ÈÃÎÒ¼ì²é¿´¿´/no")
+		Say("Ta chØ cÇn 200 cuèn MËt ®å thÇn bİ, cßn l¹i ng­¬i ®em vÒ ®i!", 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./use_juanzhou", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount < 200) then
-		Say("ÉñÃØ¾íÖá²»¹»£¬ÇëÖØÊÔ!", 2, "°¡£¬Ô­À´·Å´íÁË£¬ÎÒÖØÀ´./use_juanzhou", "ÈÃÎÒ¼ì²é¿´¿´/no")
+		Say("MËt ®å thÇn bİ ch­a ®ñ! H·y thö l¹i xem!", 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./use_juanzhou", "§Ó ta kiÓm tra xem sao/no")
 		return
 	end
 	if (scrollcount == 200) then
 		if (fld_TakeBoat(PlayerIndex) ~= 1) then
-			Say("Ê±¼ä²»µÈÈË£¬´¬ÒÑ¾­×ßÁË£¬ÏÂ´ÎÔÙÀ´°É!", 0)
+			Say("Thêi gian kh«ng ®îi ai c¶! ThuyÒn ®· ®i råi, lÇn sau ng­¬i h·y quay l¹i!", 0)
 			return
 		end
 		for i = 1, y do
@@ -231,14 +231,14 @@ function exchange_juanzhou(ncount)
 end;
 
 
--- ·çÁê¶ÉÁîÅÆ½»¸¶½çÃæ
-function	use_lingpai()	--Ê¹ÓÃ·çÁê¶ÉÁîÅÆ
-	GiveItemUI( format("½»·Ñ½çÃæ %s ÁîÅÆ", "·çÁê¶ÉÁîÅÆ"), format("ÓÃÒ»¸ö%s ·ÅÈëÏÂ·½¿Õ¸ñ¡£Èç¹ûÄãÂÒ·ÅÈë¶«Î÷£¬ÎÒ²»Ï¡º±", "·çÁê¶ÉÁîÅÆ"), "exchange_lingpai_1", "no" );
+-- LÖnh bµi Phong L¨ng §é½»¸¶½çÃæ
+function	use_lingpai()	--Ê¹ÓÃLÖnh bµi Phong L¨ng §é
+	GiveItemUI( format("Giao diÖn giao phİ %s LÖnh Bµi", "LÖnh bµi Phong L¨ng §é"), format("Dïng 1 c¸i %s ®Æt vµo « trèng phİa d­íi. N?u ng­¬i lÊy nh÷ng thø r¸c r­ëi kh¸c ®Æt vµo, ta sÏ kh«ng thÌm nhËn", "LÖnh bµi Phong L¨ng §é"), "exchange_lingpai_1", "no" );
 end;
 
 function use_suizeilingpai()
 --Modified By DinhHQ - 20110930
-	GiveItemUI( format("½»·Ñ½çÃæ%s ÁîÅÆ", "Ë®ÔôÁîÅÆ"), format("ÓÃÒ»¸ö%s ·ÅÈëÏÂ·½¿Õ¸ñ¡£Èç¹ûÄãÂÒ·ÅÈë¶«Î÷£¬ÎÒ²»Ï¡º±", "Ë®ÔôÁîÅÆ"), "exchange_lingpai_2", "no", 1 );
+	GiveItemUI( format("Giao diÖn giao phİ %s LÖnh Bµi", "LÖnh Bµi Thñy TÆc"), format("Dïng 1 c¸i %s ®Æt vµo « trèng phİa d­íi. N?u ng­¬i lÊy nh÷ng thø r¸c r­ëi kh¸c ®Æt vµo, ta sÏ kh«ng thÌm nhËn", "LÖnh Bµi Thñy TÆc"), "exchange_lingpai_2", "no", 1 );
 end
 
 function exchange_lingpai_1(ncount)
@@ -252,12 +252,12 @@ end
 -- È·¶¨
 function exchange_lingpai(ncount, ntype)
 	if (ncount == 0) then
-		Say("Ã»ÓĞÁîÅÆÏëÉÏ´¬°¡?", 0)
+		Say("Hõ! Kh«ng cã lÖnh bµi mµ muèn ngåi thuyÒn?", 0)
 		return
 	end
 	
 	if (ncount > 1) then
-		Say("ÎÒ²»ÊÇ¸æËßÄã²»ÒªÂÒ·ÅÂğ?", 0)
+		Say("Kh«ng ph¶i ta b¶o ng­¬i ®õng ®Æt lung tung hay sao?", 0)
 		return
 	end
 
@@ -265,7 +265,7 @@ function exchange_lingpai(ncount, ntype)
 	local nStackCount = GetItemStackCount(nItemIdx);
 	
 	if (nStackCount > 1) then
-		Say("ÄÏ°¶´¬·ò£ºÎÒÖ»ĞèÒªÒ»¸öÁîÅÆ£¬ÆäËûµÄÎÒ²»Òª", 0)
+		Say("ThuyÒn Phu Bê Nam:  Ta chØ cÇn mét c¸i LÖnh Bµi, nh÷ng thø kh¸c ta kh«ng cÇn", 0)
 		return
 	end
 	
@@ -273,18 +273,18 @@ function exchange_lingpai(ncount, ntype)
 	
 	if (ntype ==1) then
 		if (itemgenre ~= 4 or detailtype ~= 489) then
-			Say(format("ÄÏ°¶´¬·ò£ºÎÒÖ»ÊÇĞèÒªÒ»¸öÁîÅÆ£¬ÆäËû²»Òª", "·çÁê¶ÉÁîÅÆ"), 2, "°¡£¬Ô­À´·Å´íÁË£¬ÎÒÖØÀ´./use_lingpai", "ÈÃÎÒ¼ì²é¿´¿´/no")
+			Say(format("ThuyÒn Phu Bê Nam:  Ta chØ cÇn mét c¸i LÖnh Bµi, nh÷ng thø kh¸c ta kh«ng cÇn", "LÖnh bµi Phong L¨ng §é"), 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./use_lingpai", "§Ó ta kiÓm tra xem sao/no")
 			return
 		end
 	else
 		if (itemgenre ~= 6 or particular ~= 2745) then
-			Say(format("ÄÏ°¶´¬·ò£ºÎÒÖ»ÊÇĞèÒªÒ»¸öÁîÅÆ£¬ÆäËû²»Òª", "Ë®ÔôÁîÅÆ"), 2, "°¡£¬Ô­À´·Å´íÁË£¬ÎÒÖØÀ´./use_suizeilingpai", "ÈÃÎÒ¼ì²é¿´¿´/no")
+			Say(format("ThuyÒn Phu Bê Nam:  Ta chØ cÇn mét c¸i LÖnh Bµi, nh÷ng thø kh¸c ta kh«ng cÇn", "LÖnh Bµi Thñy TÆc"), 2, "µ! Th× ra ®Æt nhÇm ®Ó ta thö l¹i./use_suizeilingpai", "§Ó ta kiÓm tra xem sao/no")
 			return
 		end
 	end
 	
 	if (fld_TakeBoat(PlayerIndex) ~= 1) then
-		Say("Ê±¼ä²»µÈÈË£¬´¬ÒÑ¾­×ßÁË£¬ÏÂ´ÎÔÙÀ´°É!", 0)
+		Say("Thêi gian kh«ng ®îi ai c¶! ThuyÒn ®· ®i råi, lÇn sau ng­¬i h·y quay l¹i!", 0)
 		return
 	end
 	

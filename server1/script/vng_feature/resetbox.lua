@@ -13,17 +13,17 @@ function ResetBox:ShowDialog()
 	self:CheckExpiredDate()
 	
 	if (GetTask(self.TSK_TIME_ASSIGN) <= 0) then
-		tinsert(tbOpt ,"µÇ¼ÇÉ¾³ıpassÏä/#ResetBox:AssignResetBox()")
+		tinsert(tbOpt ,"§¨ng kı xãa pass r­¬ng/#ResetBox:AssignResetBox()")
 	end
 	if (GetTask(self.TSK_TIME_ASSIGN) > 0) then
 		if (self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7) == nCurDate) then
-			tinsert(tbOpt ,"È·ÈÏÉ¾³ıpassÏä/#ResetBox:ConfirmResetBox()")
+			tinsert(tbOpt ,"X¸c nhËn xãa pass r­¬ng/#ResetBox:ConfirmResetBox()")
 		end	
-		tinsert(tbOpt ,"¿´É¾³ıpassÏäÍê³ÉÊ±¼ä/#ResetBox:ShowTimeResetBox()")
-		tinsert(tbOpt, "·ÅÆúÉ¾³ıpassÏä/#ResetBox:CancelResetBox()")
+		tinsert(tbOpt ,"Xem thêi gian hoµn thµnh xãa pass r­¬ng/#ResetBox:ShowTimeResetBox()")
+		tinsert(tbOpt, "Hñy xãa pass r­¬ng/#ResetBox:CancelResetBox()")
 	end
-	tinsert(tbOpt, "ÍË³ö/nothing")
-	Say("´óÏÀÕÒÎÒÓĞÊ²Ã´ÊÂÂğ ", getn(tbOpt), tbOpt)	
+	tinsert(tbOpt, "Tho¸t/nothing")
+	Say("§¹i hiÖp t×m ta cã viÖc g×?", getn(tbOpt), tbOpt)	
 end
 
 function ResetBox:AssignResetBox()
@@ -31,27 +31,27 @@ function ResetBox:AssignResetBox()
 	SetTask(self.TSK_TIME_ASSIGN, nCurDate)
 	local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
 	local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
-	Talk(1, "", "passÏä½«É¾³ıÓÚ <color=yellow>" .. szDate  .. "<color>\n Èç¹û24Ğ¡Ê±ºó<color=yellow>" .. szDate .. " <color>´óÏÀÈ·ÈÏÔòµÇ¼ÇÉ¾³ıpassÏä½«±»É¾³ı")
-	self:WriteLogResetBox("Reset passÏä - µÇ¼Ç")
+	Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng kı xo¸ pass r­¬ng sÏ bŞ hñy bá!")
+	self:WriteLogResetBox("Reset Pass R­¬ng - §¨ng Kı")
 end
 
 function ResetBox:CancelResetBox()
 	SetTask(self.TSK_TIME_ASSIGN, 0)
-	Msg2Player("·ÅÆúÉ¾³ıpassÏä³É¹¦!")
-	self:WriteLogResetBox("Reset passÏä - ·ÅÆúµÇ¼Ç")
+	Msg2Player("Hñy bá xãa pass r­¬ng thµnh c«ng!")
+	self:WriteLogResetBox("Reset Pass R­¬ng - Hñy §¨ng Kı")
 end
 
 function ResetBox:ShowTimeResetBox()
 	local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
 	local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
-	Talk(1, "", "passÏä½«É¾³ıÓÚ <color=yellow>" .. szDate  .. "<color>\nÈç¹û24Ğ¡Ê±ºó<color=yellow>" .. szDate .. " <color>´óÏÀÈ·ÈÏÔòµÇ¼ÇÉ¾³ıpassÏä½«±»É¾³ı")
+	Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng kı xo¸ pass r­¬ng sÏ bŞ hñy bá!")
 end
 
 function ResetBox:ConfirmResetBox()
 	GMCancleBoxPassword()
-	Msg2Player("¿ªpassÏä³É¹¦!")
+	Msg2Player("§· më pass r­¬ng thµnh c«ng!")
 	SetTask(self.TSK_TIME_ASSIGN, 0)
-	self:WriteLogResetBox("Reset passÏä - ³É¹¦É¾³ıpassÏä")
+	self:WriteLogResetBox("Reset Pass R­¬ng - Thµnh C«ng Xãa Pass R­¬ng")
 end
 
 function ResetBox:CheckExpiredDate()
@@ -61,7 +61,7 @@ function ResetBox:CheckExpiredDate()
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
 	if (nCurDate == self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 8)) then
 		SetTask(self.TSK_TIME_ASSIGN, 0)
-		Msg2Player("ÄãÈ·¶¨É¾³ıÒÑ¹ıÆÚµÄpassÏä, ÇëÖØĞÂµÇ¼Ç!")
+		Msg2Player("Ngµy x¸c nhËn xo¸ pass r­¬ng ®· qu¸ h¹n, xin h·y ®¨ng kı l¹i!")
 	end
 end
 
@@ -70,7 +70,7 @@ function ResetBox:AnnounceResetBoxDate()
 	if (GetTask(self.TSK_TIME_ASSIGN) > 0) then
 		local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
 		local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
-		Talk(1, "", "passÏä½«É¾³ıÓÚ <color=yellow>" .. szDate  .. "<color>\nÈç¹û24Ğ¡Ê±ºó<color=yellow>" .. szDate .. " <color>´óÏÀÈ·ÈÏÔòµÇ¼ÇÉ¾³ıpassÏä½«±»É¾³ı ")
+		Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng kı xo¸ pass r­¬ng sÏ bŞ hñy bá!")
 	end
 end
 

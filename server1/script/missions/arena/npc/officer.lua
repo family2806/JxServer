@@ -6,35 +6,35 @@ IncludeLib("TITLE")
 
 local tbTitle2Id = 
 {
-	["¶À¹ÂÇó°Ü"] = 237,
-	["ÎäÁÖÖÁ×ğ"] = 238,
-	["Ò»´ú×ÚÊ¦"] = 239,
-	["¾øÊÀ¸ßÊÖ"] = 240,
-	["ÎÅÃû½­ºş"] = 241,
-	["ÏÀÃûÔ¶²¥"] = 242,
-	["ÎäÁÖĞÂĞã"] = 243,
-	["³õÈë½­ºş"] = 244,
-	["ÈëÃÅµÜ×Ó"] = 245,
+	["§éc C« CÇu B¹i"] = 237,
+	["Vâ L©m Chİ T«n"] = 238,
+	["NhÊt §¹i T«ng s­ "] = 239,
+	["TuyÖt ThÕ Cao Thñ"] = 240,
+	["Vang Danh Giang Hå"] = 241,
+	["HiÖp Danh ViÔn B¸"] = 242,
+	["Vâ L©m T©n Tó"] = 243,
+	["Míi nhËp giang hå "] = 244,
+	["NhËp M«n §Ö Tö"] = 245,
 }
 
 function want_get_title()
-	local szTitle = "´óÏÀÃ¿ÖÜ²Î¼Ó¹»20³¡¾º¼¼Õ½¾Í¿ÉÒÔµÃµ½¾º¼¼Õ½ÃûºÅ"	
+	local szTitle = "Nh÷ng ®¹i hiÖp mçi tuÇn tham gia ®Çy ®ñ 20 trËn C¶nh Kü Tr­êng cã thÓ nhËn danh hiÖu cña C¶nh Kü Tr­êng"	
 	local tbOpt = 
 	{
-		{"ÎÒÏëÁìÃûºÅ", get_title, {}},
+		{"Ta muèn nhËn Danh HiÖu", get_title, {}},
 
-		{"ÎÒÖ»ÊÇ¿´¿´"},
+		{"Ta chØ xem qua"},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
 function get_title()
 	if tbPlayer:GetTitleFlag() ~= 0 then
-		return Talk(1, "", "Ò»ÖÜÖ»ÁìÒ»´Î")
+		return Talk(1, "", "Mçi tuÇn chØ nhËn mét lÇn")
 	end
 	
 	if tbPlayer:GetCurCount() < tbPlayer.PER_WEEK_COUNT then
-		return Talk(1, "", format("Òª²Î¼Ó¹» %d³¡²Å¿ÉÒÔÁìÈ¡", tbPlayer.PER_WEEK_COUNT))
+		return Talk(1, "", format("CÇn ph¶i tham gia ®ñ %d trËn míi nhËn ®­îc", tbPlayer.PER_WEEK_COUNT))
 	end
 	
 	local szTitle = tbPlayer:GetTitle()
@@ -52,10 +52,10 @@ function get_title()
 end
 
 function show_introduction()
-	local szTitle = "¸÷Î»ºÃ£¡¾º¼¼³¡ÒÑ¾­ÔÚ½­ºşÖĞ¹ã·ºĞû´«ÁË<enter>±¨Ãû£ºµã»÷Êó±êÓÒ¼ü½øÈëÎ»ÓÚÖ÷Ò³ÃæÓÒÉÏ½ÇµÄ¾º¼¼³¡°æ¿é´ò¿ª±¨Ãû½çÃæ; <enter> ¾º¼¼³¡ÈÙÓş»ÕÕÂ: Ã¿ÔÂ·êÍ·20³¡¿ÉÒÔÁìÈ¡ÈÙÓş»ÕÕÂ, ´óÏÀ´ò¹»20³¡Ò²¿ÉÒÔÁìÈ¡ÆäËûÈÙÓş»ÕÕÂ; <enter>Õ½¶ÓµÈ¼¶: ¸ù¾İÄãÔÚÕ½¶ÓÖĞµÄ¸öÈË±íÏÖ»áÌá¸ß»ò½µµÍÄãµÄÕ½¶ÓµÈ¼¶; <enter> ÈÙÓş»ÕÕÂÉÌµê£ºÊ¹ÓÃÈÙÓş»ÕÕÂ¹ºÂò¸÷Àà¹óÖØµÀ¾ß"
+	local szTitle = "Chµo ®¹i hiÖp! C¶nh Kü Tr­êng ®· ®­îc c«ng bè réng r·i ®Õn c¸c hiÖp kh¸ch trong giang hå. <enter> b¸o danh: nhÊn chuét ph¶i vµo b¶n ®å C¶nh Kü Tr­êng trªn gãc  ph¶i cña giao diÖn chİnh më ra b¶ng giao diÖn b¸o danh; <enter> Huy Ch­¬ng Vinh Dù C¶nh Kü Tr­êng: mçi tuÇn cø 20 trËn ®Çu sÏ nhËn ®­îc Huy Ch­¬ng Vinh Dù , nh÷ng ®¹i hiÖp tham gia ®¸nh ®ñ 20 trËn cßn cã thÓ nhËn ®­îc Huy Ch­¬ng kh¸c; <enter> ®¼ng cÊp chiÕn ®éi: c¨n cø theo biÓu hiÖn cña ng­¬i trong chiÕn ®éi chiÕn ®Êu, cã thÓ n©ng cao hoÆc lµ h¹ thÊp ®¼ng cÊp chiÕn ®éi cña ng­¬i; <enter> Cöa Hµng Huy Ch­¬ng Vinh Dù: sö dông Huy Ch­¬ng Vinh Dù ®Ó mua c¸c lo¹i ®¹o cô quı gi¸."
 	local tbOpt = 
 	{
-		{"¿ÉÒÔ!", },
+		{"§­îc!", },
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end
@@ -65,7 +65,7 @@ function open_credits_shop()
 	if (IsFreshmanMap(nMapId) == 1 or IsCityMap(nMapId) == 1) and GetFightState() == 0 then
 		Sale(175, 16)
 	else
-		Msg2Player("Ö»ÄÜÔÚ³ÇÊĞºÍÅ©´åµÈ°²È«ÇøÓò¿ªÉÌµê.")
+		Msg2Player("ChØ cã thÓ më cöa hµng t¹i c¸c khu vùc an toµn nh­ thµnh thŞ vµ t©n thñ th«n.")
 	end
 end
 
@@ -73,16 +73,16 @@ end
 function main()
 	--¹Ø±Õ¾º¼¼³¡¼¼ÄÜ - Modified By NgaVN - 20120305
 	do	
-		Talk(1,"","¼¼ÄÜÔİ±Õ!")
+		Talk(1,"","Chøc n¨ng ®ang t¹m ®ãng !")
 		return
 	end	
-	local szTitle = "´óÏÀºÃ,±¾ÈËÊÇ¾º¼¼³¡¹ÙÔ±."	
+	local szTitle = "Chµo ®¹i hiÖp, bæn tù lµ Quan Viªn C¶nh Kü Tr­êng."	
 	local tbOpt = 
 	{
-		{"ÁìÈ¡±¾ÖÜ¾º¼¼³¡Õ½¶ÓÃûºÅ", want_get_title, {}},
-		{"¿ª¾º¼¼³¡ÈÙÓşÉÌµê", open_credits_shop, {}},
-		{"½éÉÜ¾º¼¼³¡ĞÔÄÜ", show_introduction, {}},
-		{"È¡Ïû"},
+		{"NhËn danh hiÖu chiÕn ®éi C¶nh Kü Tr­êng tuÇn nµy", want_get_title, {}},
+		{"Më cña hµng Vinh Dù C¶nh Kü Tr­êng", open_credits_shop, {}},
+		{"Giíi thiÖu vÒ tİnh n¨ng C¶nh Kü Tr­êng", show_introduction, {}},
+		{"Hñy bá "},
 	}
 	CreateNewSayEx(szTitle, tbOpt)
 end

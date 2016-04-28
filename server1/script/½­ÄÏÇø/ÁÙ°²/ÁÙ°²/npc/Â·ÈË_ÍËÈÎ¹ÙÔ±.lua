@@ -11,10 +11,10 @@ function main()
 	LastFactionNo = GetLastFactionNumber()
 	if (LastFactionNo < 0) then					-- Ã»ÓÐÃÅÅÉµÄ²»ÔÊÐí½øÐÐÐÞ¸´Á÷³Ì£¨°üÀ¨°×Ãû£©
 		if (GetFaction() ~= "") then
-			WriteLog("Íæ¼Ò' "..GetAccount().."'ÈËÎï'"..GetName().."': ÃÅÅÉ³öÏÖ´íÎó, ²»ÄÜÐÞÁ¶90¼¶¼¼ÄÜ")
-			Say("ÄãÊÇÄÄ¸öÃÅÅÉµÄÈË? ÎÒÔõÃ´Ô½¿´Ô½²»Ïñ",0)
+			WriteLog("Ng­êi ch¬i' "..GetAccount().."'nh©n vËt'"..GetName().."': m«n ph¸i xuÊt hiÖn lçi, kh«ng thÓ thôc luyÖn kÜ n¨ng cÊp 90")
+			Say("Ng­¬i lµ nguêi cña m«n ph¸i nµo ? Sao ta cµng nh×n l¹i cµng kh«ng gièng ",0)
 		else
-			Talk(1,"","TÎÒ¸Õ¸ÕÙ÷¸æ»ÊÉÏÒª¸æÀÏ»¹Ïç. ÎÒÒªÔÚÁÙ°²ÐÞÒ»¸öÔ°×Ó°²ÏíÍíÄê. ")
+			Talk(1,"","Ta võa míi tr×nh tÊu víi Hoµng th­îng c¸o l·o vui qóa Ta dù ®Þnh sÏ x©y mét khu hoa viªn ë L©m An ®Ó tËn h­ëng nh÷ng ngµy thanh nhµn cuèi ®êi. ")
 		end
 		return
 	end
@@ -27,7 +27,7 @@ function main()
 		n = MagicPoint_total - GetMagic_total
 		if (n > 0) then						--¡¡ÊµÓÐµãÊý<Ó¦ÓÐµãÊý£¬¼´¼¼ÄÜµã¶ªÊ§
 			SetTask(137,0)
-			Say("ÄêÇáÈË»ØÀ´! ²»Òª×Å¼±! ÕÒ¸ö°ì·¨ÅÅ³ýÓÇÉË. TÎÒÒÑ¾­°ÑÄã×ö´íµÄ¶¼¸ÄºÃÁË ",1,"ÖªµÀÁË/KickOutSelf")
+			Say("Chµng trai trÎ §õng cã nãng véi! H·y t×m c¸ch tiªu gi¶i nh÷ng ­u phiÒn ®ã ®i. Ta ®· gióp ng­¬i söa ch÷a nh÷ng sai lÇm ®ã råi ",1,"BiÕt råi/KickOutSelf")
 			return
 		end
 	end
@@ -37,16 +37,16 @@ function main()
 	k = floor(LastFactionNo/2)
 	if (GetTask(2) == 80*256) and (GetSeries() == 1) and (HaveMagic(302) == 0) then
 		AddMagic(302,1)				-- ÐÞ¸´³ÔÊéµÃµ½±©ÓêÀæ»¨¼¼ÄÜµÈ¼¶Îª0¼¶µÄ´íÎó
-		Say("ÄêÇáÈË²»ÒªÒòÎªÒ»¼þÊÂ¾ÍÆøÄÙ¡£·ñ¼«Ì©À´. Ê²Ã´ÊÂ¶¼ÊÇ¿ÉÒÔ½â¾öµÄ¡£¼ÓÓÍ¼ÓÓÍ! ",0)
+		Say("Chµng trai tr?®õng v?mét chuyÖn nh?nh?vËy m?buån rÇu. B?cùc th¸i lai. ChuyÖn g?råi còng c?th?gi¶i quyÕt ®­îc! C?lªn! C?lªn! Kh?kh? ",0)
 	elseif (GetTask(i) == 80*256) and (GetFaction() == faction_name[LastFactionNo+1]) and (GetSeries() == k) and (GetTask(j) == 245) then
 		SetTaskTemp(20,0)		-- Çå¿ÕÁÙÊ±±äÁ¿£¬×¼±¸Ê¹ÓÃ
 		repair90(i)			-- 90¼¶¼¼ÄÜÐÞ¸´
 		SetTask(j,255)			-- ÈÎÎñ×´Ì¬ÐÞ¸´
-		WriteLog("Íæ¼Ò' "..GetAccount().."'ÈËÎï'"..GetName().."': 90¼¶¼¼ÄÜÒÑ¾­¸ù¾ÝÃÅÅÉ"..i..", ÈÎÎñ "..j.." ÍêÈ«ÐÞ¸´! ")
-		Say("ÄêÇáÈË²»ÒªÒòÎªÒ»¼þÊÂ¾ÍÆøÄÙ¡£·ñ¼«Ì©À´. Ê²Ã´ÊÂ¶¼ÊÇ¿ÉÒÔ½â¾öµÄ¡£¼ÓÓÍ¼ÓÓÍ! ",0)
+		WriteLog("Ng­êi ch¬i' "..GetAccount().."'nh©n vËt'"..GetName().."': kÜ n¨ng cÊp 90 ®· c¨n cã theo m«n ph¸i"..i..", sÏ nhiÖm vô"..j.." hoµn thµnh s÷a ch÷a! ")
+		Say("Chµng trai tr?®õng v?mét chuyÖn nh?nh?vËy m?buån rÇu. B?cùc th¸i lai. ChuyÖn g?råi còng c?th?gi¶i quyÕt ®­îc! C?lªn! C?lªn! Kh?kh? ",0)
 		SetTaskTemp(20,0)		-- Çå¿ÕÁÙÊ±±äÁ¿£¬ÒÔ±¸ÏÂ´Î
 	else
-		Talk(1,"","ÍËÈÎ¹ÙÔ±£º±¾¹Ù¸Õ¸ÕÐ¶ÈÎ£¬ÃÉ»ÊÉÏ¶÷×¼£¬¸æÀÏ»¹Ïç£¬ÎÒ×¼±¸ÔÚÁÙ°²³Ç½¼½¨Ò»ËùÔ°×Ó£¬ºÃºÃÏí¼¸ÄêÇå¸£¡£")
+		Talk(1,""," §¶m nhiÖm quan viªn  Bæn quan míi võa tõ chøc , ngu dèt Hoµng th­îng ©n chuÈn , c¸o l·o vÒ quª , ta chuÈn bÞ ë tr­íc khi an ngo¹i « x©y mét khu nhµ v­ên , thËt tèt h­ëng mÊy n¨m thanh phóc . ")
 	end
 end;
 

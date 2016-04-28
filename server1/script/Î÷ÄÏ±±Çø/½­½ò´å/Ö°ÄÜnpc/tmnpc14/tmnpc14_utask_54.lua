@@ -6,7 +6,7 @@
 
 function tmnpc14_UTask_54()
 
-Say(" ¿È¿È¿È£¬¿È¿È¿È¡­¡­ÎÒÕâ¸öÍâÉûÕæÌùĞÄ°¡£¬ÎÒÒ»²¡£¬ËûÁ¢¿Ì¾ÍÀ´¿´ÎÒÁË!", 0)
+Say("….KhÆc…khÆc….§øa ch¸u nµy thËt hiÕu th¶o, ta võa l©m bÖnh, ®· lËp tøc tíi th¨m!", 0)
 
 end;
 

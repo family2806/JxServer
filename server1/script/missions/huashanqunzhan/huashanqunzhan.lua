@@ -14,7 +14,7 @@ local tbMissionData =
 	nLatencyTime		= 45,
 	nDuelTime			= 30,
 	szPlayerDeathScript	= "\\script\\missions\\huashanqunzhan\\playerdeath.lua",
-	szMatchName			= "»ªÉ½Õ½ÒÛ"
+	szMatchName			= "Hoa S¬n §¹i ChiÕn"
 }
 
 
@@ -86,8 +86,8 @@ function huashanqunzhan:OnPlayerJoin()
 	
 	if Pay(self.nMoney) == 0 then
 		self:GotoSignUpPlace()
-		Msg2Player("ÒøÁ½²»¹».")
-		return Say("ÒøÁ½²»¹».", 0)
+		Msg2Player("Kh«ng ®ñ ng©n l­îng.")
+		return Say("Kh«ng ®ñ ng©n l­îng.", 0)
 	end
 	SetMissionV(self.tbMissionV.PLAYER_COUNT, GetMissionV(self.tbMissionV.PLAYER_COUNT) + 1);
 	
@@ -129,7 +129,7 @@ function huashanqunzhan:OnPlayerJoin()
 	DisabledUseTownP(1);	--½ûÖ¹Ê¹ÓÃ»Ø³Ì£»
 	
 	local nTimerCount = GetMissionV(self.tbMissionV.SECOND_COUNTER)
-	local szMsg	= format("±ÈÈü¿ªÊ¼£¬Ê±¼ä»¹Ê£<color=yellow>%d<color> ·ÖÖÓ.", self.nDuelTime - nTimerCount)
+	local szMsg	= format("Thi ®Êu b¾t ®Çu, thêi gian cßn l¹i lµ <color=yellow>%d<color> phót.", self.nDuelTime - nTimerCount)
 	Msg2Player(szMsg)
 	return 1
 end
@@ -166,7 +166,7 @@ end
 
 function huashanqunzhan:OnClose()
 	
-	Msg2MSAll(self.nMissionId, "Ê¤°ÜÒÑ¶¨.")
+	Msg2MSAll(self.nMissionId, "Th¾ng b¹i ®· ph©n ®Þnh.")
 	SetMissionV(self.tbMissionV.MISSION_STATE, 2)
 	local nPlayerCount	= GetMSPlayerCount(self.nMissionId, 0)
 	local tbPlayer = {}
@@ -197,14 +197,14 @@ function huashanqunzhan:OnTimer()
 	nTimerCount = nTimerCount + 1
 	SetMissionV(self.tbMissionV.SECOND_COUNTER, nTimerCount)
 	local nPlayerCount = GetMSPlayerCount(self.nMissionId, 0)
-	local szMsg	= format("Ê£ÓàÊ±¼äÎª <color=yellow>%d<color> ·ÖÖÓ.", self.nDuelTime - nTimerCount)
+	local szMsg	= format("Thêi gian thi ®Êu cßn l¹i lµ <color=yellow>%d<color> phót.", self.nDuelTime - nTimerCount)
 	
 	
 	if nTimerCount >= self.nDuelTime or nPlayerCount <= 1 then
 		self:OnClose()		
 	else
 		Msg2MSAll(self.nMissionId, szMsg)
-		Msg2MSAll(self.nMissionId, format("Ê£ÓàÈËÊýÎª: %d",nPlayerCount))
+		Msg2MSAll(self.nMissionId, format("Sè ng­êi cßn l¹i: %d",nPlayerCount))
 	end
 	
 	if nTimerCount >= self.nLatencyTime then
@@ -243,9 +243,9 @@ function huashanqunzhan:Judge(tbPlayer)
 	local szWinerName = doFunByPlayer(tbPlayer[1],GetName)
 	local nCurTime = GetMissionV(self.tbMissionV.SECOND_COUNTER)
 	
-	local szMsg = format("ÄãÊÇ×îºóÊ¤Õß, ÔÚ<color=yellow>%d<color> ·ÖÖÓÄÚ¿ÉÒÔ½øÐÐÁì½±£¬Èç¹û¹ýÁËÊ±¼ä¾Í²»ÄÜÁìÁË.", self.nLatencyTime-nCurTime)
+	local szMsg = format("B¹n lµ ng­êi chiÕn th¾ng cuèi cïng, trong vßng <color=yellow>%d<color> phót cã thÓ tiÕn hµnh nhËn th­ëng, nÕu qu¸ thêi h¹n sÏ kh«ng nhËn ®­îc n÷a.", self.nLatencyTime-nCurTime)
 	SetMissionS(self.tbMissionS.WINER_INDEX, szWinerName)
-	AddGlobalNews(format("×îºóÊ¤Õß<color=red>%s<color>: <color=yellow>%s<color>.", self.szMatchName, szWinerName))
+	AddGlobalNews(format("Ng­êi chiÕn th¾ng cuèi cïng cña <color=red>%s<color>: <color=yellow>%s<color>.", self.szMatchName, szWinerName))
 	doFunByPlayer(tbPlayer[1], SetTask, self.TSK_Winer, GetMissionV(self.tbMissionV.PLAYER_COUNT))
 	doFunByPlayer(tbPlayer[1], Msg2Player, szMsg)
 end

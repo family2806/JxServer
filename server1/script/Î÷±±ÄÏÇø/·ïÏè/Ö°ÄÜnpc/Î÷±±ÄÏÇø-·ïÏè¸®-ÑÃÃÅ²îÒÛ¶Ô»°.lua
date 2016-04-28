@@ -16,7 +16,7 @@ function main_former()
 	--ÏÂÃæÕâ¸öÖ¸ÁîÏòÏµÍ³Ñ¯ÎÊµ±Ç°PlayerµÄÍ¨¼©Ïà¹Ø×´Ì¬ĞÅÏ¢
 	--²éÑ¯µÄ½á¹û·µ»ØÒÔºó£¬ÏµÍ³»Øµ÷²ÎÊıÖĞÖ¸¶¨µÄº¯ÊıÃû
 	--AskRelayForKillerStatus("KillerCallBack")
-	Say("×ß×ß×ß£¡²»ÒªÔÚÕâ×ßÀ´×ßÈ¥µÄ£¬ÕâÀï¿ÉÊÇÖØµØ", 0)
+	Say("§i! §i! §i! §õng cã ®i qua ®i l¹i n¬i ®©y! ë®©y lµ träng ®Şa", 0)
 end;
 
 --ÏÂÃæÕâ¸öº¯ÊıÊÇ²éÑ¯½á¹ûµÄ»Øµ÷º¯Êı£¬²ÎÊı¸öÊıºÍË³Ğò²»ÔÊĞí¸Ä±ä
@@ -30,9 +30,9 @@ function KillerCallBack(RewardMoney, RewardTaskID, CancelMoney, CancelTaskID, Ow
 		GetTaskMoney(1, CancelTaskID)
 		Earn(CancelMoney)
 	elseif (OwnCount + MyTaskCount > 0) then
-		Say("Äã³ÔÁËĞÛĞÄ±ª×Óµ¨ÁËÂğ£¿ÈÅÂÒÑÃÃÅ×ïÄãµ£µ±µÃÆğÂğ", 4, "½¨Á¢×½ÄÃÈÎÎñ/CreateTask", "½ÓÊÜ×½ÄÃÈÎÎñ/QueryTask", "¿´×Ô¼ºµÄÈÎÎñ/ModifyTask", "Ê²Ã´Ò²²»×ö/DoNothing")
+		Say("Ng­¬i ¨n gan hïm mËt gÊu råi h¶? Téi lµm n¸o ®éng nha m«n ng­¬i g¸nh næi kh«ng?", 4, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask", "Xem l¹i nhiÖm vô cña m×nh /ModifyTask", "Kh«ng lµm g× c¶ /DoNothing")
 	else
-		Say("Äã³ÔÁËĞÛĞÄ±ª×Óµ¨ÁËÂğ£¿ÈÅÂÒÑÃÃÅ×ïÄãµ£µ±µÃÆğÂğ?", 3, "½¨Á¢×½ÄÃÈÎÎñ/CreateTask", "½ÓÊÜ×½ÄÃÈÎÎñ/QueryTask","Ê²Ã´Ò²²»×ö/DoNothing")
+		Say("Ng­¬i ¨n gan hïm mËt gÊu råi h¶? Téi lµm n¸o ®éng nha m«n ng­¬i g¸nh næi kh«ng?", 3, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask","Kh«ng lµm g× c¶ /DoNothing")
 	end
 end;
 
@@ -52,5 +52,5 @@ function ModifyTask()
 end;
 
 function DoNothing()
-	Say("×ß×ß×ß£¡²»ÒªÔÚÕâ×ßÀ´×ßÈ¥µÄ£¬ÕâÀï¿ÉÊÇÖØµØ", 0)
+	Say("§i! §i! §i! §õng cã ®i qua ®i l¹i n¬i ®©y! ë®©y lµ träng ®Şa", 0)
 end;

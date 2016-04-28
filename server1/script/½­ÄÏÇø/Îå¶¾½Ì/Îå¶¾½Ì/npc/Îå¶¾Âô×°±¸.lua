@@ -4,9 +4,9 @@
 function main(sel)
 	Uworld37 = GetByte(GetTask(37),2)
 	if (GetFaction() == "wudu") or (Uworld37 == 127) then
-		Say("ÎÒÃÇ²»ÒªÌ«ÖØÊÓÕâ¸ö£¬×îºÃµÄ×°±¸ÕıÊÇÊ¹ÓÃÁé»î.", 2, "½»Ò×/yes", "²»½»Ò×/no")
+		Say("Chóng ta ®õng qu¸ quan träng vÒ nh÷ng thø nµy. Trang bŞ tèi th­îng nhÊt chİnh lµ sù øng phã linh ho¹t.", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 	else
-		Talk(1,"","½ÌÖ÷ÓĞÁî: ÃÅÅÉµÄ×°±¸²»ÄÜÂô¸øÍâÈË")
+		Talk(1,"","Gi¸o chñ cã lÖnh: trang bŞ cña m«n ph¸i kh«ng ®­îc b¸n cho ng­êi ngoµi")
 	end
 end;
 

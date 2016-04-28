@@ -8,7 +8,7 @@ tbConfig[1] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 1,
 	szMessageType = "ItemScript",
-	szName = " π”√Õ≠œ‰",
+	szName = "Sˆ dÙng r≠¨ng ÆÂng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2319,1,-1,0},}},
@@ -18,14 +18,14 @@ tbConfig[1] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{67,1," ‘¡∂Ã√"} },
+		{"PlayerFunLib:GetAward",	{67,1,"Th› Luy÷n ß≠Íng"} },
 	},
 }
 tbConfig[2] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = " π”√ƒæœ‰",
+	szName = "Sˆ dÙng r≠¨ng mÈc",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2318,1,-1,0},}},
@@ -35,14 +35,14 @@ tbConfig[2] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{66,1," ‘¡∂Ã√"} },
+		{"PlayerFunLib:GetAward",	{66,1,"Th› Luy÷n ß≠Íng"} },
 	},
 }
 tbConfig[3] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 3,
 	szMessageType = "ItemScript",
-	szName = " π”√“¯œ‰",
+	szName = "Sˆ dÙng r≠¨ng bπc",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2320,1,-1,0},}},
@@ -52,14 +52,14 @@ tbConfig[3] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{68,1," ‘¡∂Ã√"} },
+		{"PlayerFunLib:GetAward",	{68,1,"Th› Luy÷n ß≠Íng"} },
 	},
 }
 tbConfig[4] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 4,
 	szMessageType = "ItemScript",
-	szName = " π”√Ωœ‰",
+	szName = "Sˆ dÙng r≠¨ng hoµng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2321,1,-1,0},}},
@@ -69,14 +69,14 @@ tbConfig[4] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{69,1," ‘¡∂Ã√"} },
+		{"PlayerFunLib:GetAward",	{69,1,"Th› Luy÷n ß≠Íng"} },
 	},
 }
 tbConfig[5] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 5,
 	szMessageType = "ItemScript",
-	szName = " π”√∞◊Ωœ‰",
+	szName = "Sˆ dÙng r≠¨ng bπch kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2322,1,-1,0},}},
@@ -86,39 +86,39 @@ tbConfig[5] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{70,1," ‘¡∂Ã√"} },
+		{"PlayerFunLib:GetAward",	{70,1,"Th› Luy÷n ß≠Íng"} },
 	},
 }
 tbConfig[6] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 6,
 	szMessageType = "ClickNpc",
-	szName = "ª®µ∆Œ Ã‚",
+	szName = "C©u h·i hoa Æ®ng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ª®µ∆"},
+	tbMessageParam = {"Hoa Æ®ng"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"≤Œº”≤¬ª®µ∆",7} },
+		{"AddDialogOpt",	{"Tham gia Æo∏n Hoa Æ®ng",7} },
 	},
 }
 tbConfig[7] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 7,
 	szMessageType = "nil",
-	szName = "≤Œº”≤¬ª®µ∆",
+	szName = "Tham gia Æo∏n Hoa Æ®ng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{50,"÷ª”–50º∂(∞¸¿®50º∂)ªÚ’ﬂ“—◊™…˙»ÀŒÔ≤≈ƒ‹≤Œº”≤Œº”≤¬ª®µ∆",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"÷ª”–50º∂(∞¸¿®50º∂)ªÚ’ﬂ“—◊™…˙»ÀŒÔ≤≈ƒ‹≤Œº”Tham gia Æo∏n Hoa Æ®ng",">="} },
 	},
 	tbActition = 
 	{
-		{"tbRiddle:Show",	{"huadeng.txt",3,"","πßœ≤¥Ûœ¿¥∂‘Œ Ã‚","tbJiaoShi2009:Award","","tbJiaoShi2009:WrongAnswer",0} },
+		{"tbRiddle:Show",	{"huadeng.txt",3,"","ChÛc mıng Æπi hi÷p Æ∑ tr∂ lÍi ÆÛng c©u h·i","tbJiaoShi2009:Award","","tbJiaoShi2009:WrongAnswer",0} },
 	},
 }

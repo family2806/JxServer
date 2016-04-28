@@ -54,19 +54,19 @@ Bonus = {
 				local bonuFlag = special[i][1]
 				if(bonuFlag==BONUSFLAG_ITEM) then -- ·¢ÎïÆ·
 					AddItem(special[i][4],special[i][5],special[i][6],1,0,0,0,0)
-					WriteLog(date("%H%M%S").."£ºÕËºÅ£º"..GetAccount().."£¬½ÇÉ«£º"..GetName().."£¬»ñµÃ£º"..special[i][2])
+					WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", ®¹t ®­îc:"..special[i][2])
 					return special[i]
 				elseif(bonuFlag == BONUSFLAG_EXP) then --½±¾­Ñé
 					AddOwnExp(special[i][4])
-					WriteLog(date("%H%M%S").."£ºÕËºÅ£º"..GetAccount().."£¬½ÇÉ«£º"..GetName().."£¬»ñµÃ£º"..special[i][2])
+					WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", ®¹t ®­îc:"..special[i][2])
 					return special[i]
 				elseif(bonuFlag == BONUSFLAG_GOLDEN) then --»Æ½ð×°±¸
 					AddGoldItem(0,special[i][4])
-					WriteLog(date("%H%M%S").."£ºÕËºÅ£º"..GetAccount().."£¬½ÇÉ«£º"..GetName().."£¬»ñµÃ£º"..special[i][2])
+					WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", ®¹t ®­îc:"..special[i][2])
 					return special[i]
 				else
-					print("ÎªÖ¹½±Àø")
-					WriteLog(date("%H%M%S").."£ºÕËºÅ£º"..GetAccount().."£¬½ÇÉ«£º"..GetName().."£¬²»ÖªÊ²Ã´Ô­Òò£¬Ã»ÓÐ»ñµÃÈÎºÎ½±Àø¡£")
+					print(" phÇn th­ëng")
+					WriteLog(date("%H%M%S")..": Tµi kho¶n:"..GetAccount()..", nh©n vËt:"..GetName()..", kh«ng râ nguyªn nh©n, kh«ng thÓ nhËn ®­îc phÇn th­ëng.")
 					return nil
 				end
 			end

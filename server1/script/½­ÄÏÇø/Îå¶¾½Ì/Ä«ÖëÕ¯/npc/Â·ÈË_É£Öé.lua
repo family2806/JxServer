@@ -33,34 +33,34 @@ local myCamp = nt_getCamp()
 		if (UTask_wu == 10*256+10) then		--10¼¶ÈÎÎñ½øĞĞÖĞ
 			i = GetItemCount(86)
 			if (i >= 10) and (HaveItem(220) == 1) then
-				Talk(1,"L10_prise","É£Õ¯Ö÷£¬ÕâÊÇÄãÒªµÄÖ©ÖëºÍÅøËª")
+				Talk(1,"L10_prise","Tang tr¹i chñ! §©y lµ nhÒn nhÖn vµ tİn th¹ch mµ ng­êi cÇn")
 			else
-				Talk(1,"","¶¾Îï»¹²»¹»£¬ÔõÃ´ÕâÃ´Âı£¬¿ìµã!")
+				Talk(1,"","§å vËt vÉn ch­a cã ®ñ, t¹i sao l¹i chËm nh­ vËy? Mau lªn! Mau lªn!")
 			end
 		elseif ((UTask_wu == 10*256) and (GetLevel() >= 10)) then		--10¼¶ÈÎÎñ
-			Say("ÀÏÉíÁ·¹¦²ÄÁÏ²»×ãÁË£¬Äãµ½Ñãµ´É½ÉÏ¸øÎÒ×¥Ê®Ö»Ö©Öë£¬ÔÙÈ¥Âò10°üÅøËªÀ´",2,"×ñÃü!/L10_get_yes","ÔÚÏÂ»¹ÓĞÊÂÔÚÉí!/L10_get_no")
+			Say("VËt liÖu ®Ó cho ta luyÖn c«ng vÉn cßn thiÕu. Ng­¬i h·y ®i lªn Nh¹n §·ng s¬n b¾t thªm cho ta 10 con nhÖn vµ mua thªm 10 bao tİn th¹ch",2,"Tu©n lÖnh!/L10_get_yes","ThËt xin lçi! T¹i h¹ cßn cã chuyÖn ph¶i lµm!/L10_get_no")
 		else							-- ³£¹æ¶Ô»°
-			Talk(1,"","Ëû ×¥×ßÎÒ¶ù×ÓµÄÇé¾°»¹ÀúÀúÔÚÄ¿¡£ÈÃÎÒ×¥µ½ËûÎÒÒª³éÁËËûµÄ¹Ç£¬Ö®ºóÓÃËûµÄÉíÌåÀ´Á·Ö©Öë¶¾¡£ÎÒÒªÈÃËûÍ´¿à£¬ÇóÉú²»ÄÜ£¬ÇóËÀ²»µÃ!")
+			Talk(1,"","C¸i tªn b¾t cãc con cña ta vÉn cßn sèng sê sê. NÕu nh­ ta b¾t ®­îc h¾n th× ta sÏ phÕ hÕt x­¬ng cèt cña h¾n, sau ®ã dïng th©n thÓ cña h¾n ®Ó luyÖn 'Tri thï ®éc'. Ta sÏ lµm cho h¾n ®au ®ín, muèn chÕt kh«ng ®­îc, muèn sèng kh«ng xong!")
 		end
 	else
-		Talk(1,"","²»ÖªÎÒ¶ù×ÓÏÖÔÚÔõÃ´ÑùÁË£¬ÊÇ·ñÆ½°²ÎŞÊÂ¡£")
+		Talk(1,"","Kh«ng biÕt con trai ta b©y giê sao råi, cã ®­îc b×nh an v« sù kh«ng….")
 	end
 
 end;
 
 function L10_get_yes()
-	Talk(1, "", "¿ìÈ¥¿ì»Ø£¡ÎÒµÈ×ÅÒª!")
+	Talk(1, "", "Mau ®i mau vÒ! Ta ®ang cÇn dïng!")
 	SetTask(10,10*256+10)
-	AddNote("°ïÖúÉ£ÖéÕÒµ½10Ö»Ö©ÖëºÍ100°üÅøËª.")
-	Msg2Player("°ïÖúÉ£ÖéÕÒµ½10Ö»Ö©ÖëºÍ100°üÅøËª.")
+	AddNote("Gióp Tang Ch©u t×m 10 con nhÖn vµ 10 bao Tİn th¹ch.")
+	Msg2Player("Gióp Tang Ch©u t×m 10 con nhÖn vµ 10 bao Tİn th¹ch.")
 end;
 
 function L10_get_no()
-	Talk(1,"","ÕæÊÇµÄ! ÕæÊÇ²»¿ÉĞÅ!")
+	Talk(1,"","Hay l¾m! ThËt kh«ng thÓ tin ®­îc!")
 end;
 
 function L10_prise()
-	Talk(1,"","ºÜºÃ! Äã¿ì³öÈ¥!²»Òª·Á°­ÎÒÁ·¹¦!")
+	Talk(1,"","Tèt l¾m! Ng­¬i lui ra ®i! §õng cã ng¨n trë ta luyÖn c«ng!")
 	DelItem(220)
 	for i = 1, GetItemCount(86) do DelItem(86) end
 	SetTask(10,20*256)
@@ -69,6 +69,6 @@ function L10_prise()
 --	AddMagic(60)
 --	AddMagic(67)
 	add_wu(20)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã! Äã½úÉıÎª¶á»êÉ¢ÈË! Ñ§µÃÎä¹¦£ºÎå¶¾µ¶·¨¡¢Îå¶¾°ô·¨¡¢Îå¶¾ÕÆ·¨¡¢¾ÅÌì¹áÀ×.")
-	AddNote("°ïÖúÉ£ÖéÕÒµ½Ö©ÖëºÍÅøËª.±»·âÎª¶á»êÉ¢ÈË¡£")
+	Msg2Player("Chóc mõng b¹n! B¹n ®­îc th¨ng lµ §o¹t Hån T¶n Nh©n! Häc ®­îc vâ c«ng Ngò §éc Ch­ëng Ph¸p, Ngò §éc §ao Ph¸p, Cöu Thiªn Cuång L«i.")
+	AddNote("Gióp Tang Ch©u t×m con nhÖn vµ Tİn th¹ch. §­îc phong lµ §o¹t Hån T¶n Nh©n.")
 end;

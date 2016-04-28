@@ -1,7 +1,7 @@
---中原南区 扬州府 路标1：扬州->稻香村
+--中原南区 扬州府 路标1：扬州->Dng Ch﹗<---->Чo Hng th玭
 
 function main(sel)
 
-Say("稻香村", 0)
+Say("Dng Ch﹗<---->Чo Hng th玭", 0)
 
 end;

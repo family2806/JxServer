@@ -8,12 +8,12 @@ TSK_ACT2YEARS_EXP_MAX = 1919
 function main(nItemIndex)    
     local nDate = tonumber(GetLocalDate("%y%m%d"))
     if nDate > 70731 then
-        Say("¸Ã±ıÒÑ¹ıÆÚ£¬²»ÄÜÊ¹ÓÃÁË!",0)
+        Say("B¸nh nµy ®· qu¸ h¹n, kh«ng dïng ®­îc n÷a!",0)
         return 0
     end
     local nCurAddExp = GetTask(TSK_ACT2YEARS_EXP_MAX)
     if nCurAddExp >= 400000000 then
-        Say("ÒÑ´ï×î´óÏŞÖÆ£¬²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·ÁË.",0)
+        Say("§· ®¹t giíi h¹n tèi ®a, kh«ng thÓ sö dông vËt phÈm nµy n÷a.",0)
         return 1
     end
     local szItemName = GetItemName(nItemIndex)
@@ -32,7 +32,7 @@ function main(nItemIndex)
     
     RemoveItemByIndex(nItemIndex);    
     AddOwnExp( nExpNum )
-    WriteLog(format("[Ê¹ÓÃ %s]\t%s\tName:%s\tAccount:%s\t Ôö¼Ó %s ¾­ÑéÖµ.",szItemName,
+    WriteLog(format("[Sö dông %s]\t%s\tName:%s\tAccount:%s\t t¨ng %s ®iÓm kinh nghiÖm.",szItemName,
     GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),nExpNum));
     SetTask(TSK_ACT2YEARS_EXP_MAX,nCurAddExp+nExpNum)
     return 0

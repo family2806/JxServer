@@ -8,7 +8,7 @@ end
 --È«²¿»ìºÏË«ÈËÈüÏà¹ØÊı¾İ
 WLLS_DATA = {
 	
-	name = "ÄĞÅ®Ë«ÈËÈü",
+	name = "song ®Êu nam n÷",
 	
 	--µØÍ¼ĞÅÏ¢
 	match_type = {
@@ -71,11 +71,11 @@ WLLS_DATA = {
 	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		"±¾´ÎĞÂĞãÁªÈü½«Ê¿ÄĞÅ®Ë«ÈËÈüÄ£Ê½£¬´ó¼Ò¿ÉÒÔ×ÔÓÉ³ÉÁ¢Õ½¶Ó£¬Å¬Á¦Á·Ï°ÅäºÏ",
-		"±¾´ÎĞÂĞãÁªÈü½«Ê¿ÄĞÅ®Ë«ÈËÈüÄ£Ê½£¬´ó¼Ò¿ÉÒÔ×ÔÓÉ³ÉÁ¢Õ½¶Ó£¬Å¬Á¦Á·Ï°ÅäºÏ",
+		" lÇn nµy t©n tó liªn cuéc so tµi t­íng sÜ nam n÷ hai ng­êi cuéc so tµi m« thøc , mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi , cè g¾ng luyÖn tËp phèi hîp ",
+		" lÇn nµy t©n tó liªn cuéc so tµi t­íng sÜ nam n÷ hai ng­êi cuéc so tµi m« thøc , mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi , cè g¾ng luyÖn tËp phèi hîp ",
 	},
 	
-	addmem_ex	= ", ÒªÇó <color=red>ÄĞÅ®<color>",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
+	addmem_ex	= ", yªu cÇu <color=red> nam n÷ <color>",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
 
 	--====Functions====
 	
@@ -84,9 +84,9 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter>  ´Ë´Î"..str_des.." ²Î¼Ó <color=red>ÄĞÅ®Ë«ÈËÈü<color>.Äã¿ÉÒÔ×Ô¼º½¨Á¢Õ½¶Ó£¬Ò²¿ÉÒÔ²Î¼ÓËûÈËµÄÕ½¶Ó¡£ÔÚ¶Ó³¤ÓëËûÈË×é¶Óºó£¬½«"..str_des.."Óë¹ÙÔ±¶Ô»°£¬Ñ¡Ôñ±ÈÈü¶ÓÎé"..str_des.."Á¢¼´ĞÎ³ÉÕ½¶Ó¡£³ÉÔ±ÊıÁ¿×î¶àÎª<color=red>2 ÈË<color=red>, ĞèÒªÒìĞÔ.",
-				"ÎÒÏë½¨Á¢"..str_des.."¶Ó/wlls_want2create",
-				"ÎÒÖ»ÊÇ¿´¿´/OnCancel")
+			wlls_descript("<enter> lÇn nµy "..str_des.." tham gia <color=red> nam n÷ hai ng­êi cuéc so tµi <color>. ng­¬i cã thÓ m×nh thµnh lËp chiÕn ®éi , còng cã thÓ tham gia ng­êi kh¸c ®İch chiÕn ®éi . ë ®éi tr­ëng cïng h¾n ng­êi häp thµnh ®éi sau , ®em "..str_des.." cïng quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi ngò "..str_des.." lËp tøc t¹o thµnh chiÕn ®éi . thµnh viªn sè l­îng nhiÒu nhÊt v× <color=red>2 ng­êi <color=red>, cÇn kh¸c ph¸i .",
+				"Ta muèn t¹o "..str_des.." ®éi/wlls_want2create",
+				"Ta chØ ®i ngang qua/OnCancel")
 			return
 		end
 	
@@ -94,24 +94,24 @@ WLLS_DATA = {
 		local n_mytype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		local n_level, n_group = wlls_getcityinfo()
 		local n_next = GetGlbValue(GLB_WLLS_NEXT)
-		local str = "<enter>ÄãµÄÕ½¶ÓÄ¿Ç°Îª <color=yellow>"..str_lgname.."<color><enter>"
-		.. "Õ½¶Ó¶Ó³¤:"..join(wlls_get_mems(n_lid), "Õ½¶Ó³ÉÔ±:") .. "<enter>"
+		local str = "<enter> ng­¬i chiÕn ®éi tr­íc m¾t v× <color=yellow>"..str_lgname.."<color><enter>"
+		.. " chiÕn ®éi ®éi tr­ëng :"..join(wlls_get_mems(n_lid), "ChiÕn ®éi thµnh viªn :") .. "<enter>"
 		if (n_mytype ~= n_next) then
-			str = str .. "<enter>   <color=yellow>×¢Òâ£ºÏÂ¼¾±ÈÈüÏŞÖÆÎª <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, Èç¹ûÏë±ÈÈü£¬Çë½¨Á¢ĞÂµÄÕ½¶Ó.<color><enter>"
+			str = str .. "<enter> <color=yellow> chó ı  h¹ quı tranh tµi h¹n chÕ v× <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, nÕu nh­ muèn tranh tµi , xin/mêi thµnh lËp míi chiÕn ®éi .<color><enter>"
 		end
 		local tb_option = {}
 		if (n_job == 1 and n_mytype == n_next) then
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡<color=red> ¼ÓÈëÆäËû¶Ó<color> »òÕß <color=red>Àë¿ª±ÈÈü¶Ó<color>.<enter><enter>"..
-			"³ÉÁ¢Õ½¶Ó²½Öè: ÔÚ<color=red>ĞİÏ¢Ê±¼äºÍ±ÈÈüÊ±¼ä<color>, ¶¼¿ÉÒÔÓëÆäËûÍæ¼Ò×é¶Ó, <color=red>ÒìĞÔ<color>, Ñ¡ÔñÍ¬Ò»ÈÃÍ¬¶Ó¼ÓÈë±¾¶Ó. <enter>"..
-			"Àë¿ª±ÈÈü: ÔÚ<color=red>ĞİÏ¢Ê±¼ä<color>,Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬ÔÚ±ÈÈüÊ±¼äÈç¹ûÄãµÄ²»ÊÇ¶Ó<color=red> Î´¼ÓÈëÉÏÆÚ±ÈÈü<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬Èç¹ûÒÑ²Î¼Ó¾Í²»ÄÜÀë¿ª¡£¶Ó³¤×Ê¸ñ½«±»×ª½»¸øÆäËû¶ÓÔ± <color=yellow>Èç¹ûÃ»ÓĞ³ÉÔ±£¬Õ½¶Ó½«±»½âÉ¢<color>."
-			tb_option[getn(tb_option)+1] = "ÈÃÎÒµÄ¶ÓÓÑ¼ÓÈë±ÈÈü¶ÓÎé/wlls_want2addmember"
+			str = str.."<enter> ng­¬i cã thÓ chän <color=red> gia nhËp nh÷ng kh¸c ®éi <color> hoÆc lµ <color=red> rêi ®i tranh tµi ®éi <color>.<enter><enter>"..
+			" thµnh lËp chiÕn ®éi b­íc : ë <color=red> thêi gian nghØ ng¬i cïng tranh tµi thêi gian <color>, còng cã thÓ thay v× h¾n nhµ ch¬i häp thµnh ®éi , <color=red> kh¸c ph¸i <color>, lùa chän cïng ®Ó cho cïng ®éi gia nhËp vèn ®éi . <enter>"..
+			" rêi ®i tranh tµi : ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , ë tranh tµi thêi gian nÕu nh­ ng­¬i kh«ng ph¶i lµ ®éi <color=red> kh«ng gia nhËp th­îng kú tranh tµi <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , nÕu nh­ ®· tham gia th× kh«ng thÓ rêi ®i . ®éi tr­ëng t­ c¸ch ®em bŞ chuyÓn giao cho nh÷ng ®éi viªn kh¸c <color=yellow> nÕu nh­ kh«ng cã thµnh viªn , chiÕn ®éi ®em bŞ gi¶i t¸n <color>."
+			tb_option[getn(tb_option)+1] = "Thªm thµnh viªn vµo ®éi/wlls_want2addmember"
 		else
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡ÔñÀë¿ª¶Ó.<enter><enter>"..
-			"Àë¶Ó£ºÔÚ <color=red>ĞİÏ¢Ê±¼ä<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬ÔÚ±ÈÈüÊ±¼äÈç¹û×Ô¼ºµÄ±ÈÈü¶Ó<color=red>Î´¼ÓÈëÉÏ´Î±ÈÈü<color>, Äã¿ÉÒÔÀë¿ª±ÈÈü¶Ó£¬Èç¹û¼ÓÈë±ÈÈü¾Í²»ÄÜÀë¿ª."
+			str = str.."<enter> ng­¬i cã thÓ lùa chän rêi ®i ®éi .<enter><enter>"..
+			" c¸ch ®éi  ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , ë tranh tµi thêi gian nÕu nh­ m×nh ®İch tranh tµi ®éi <color=red> kh«ng gia nhËp lÇn tr­íc tranh tµi <color>, ng­¬i cã thÓ rêi ®i tranh tµi ®éi , nÕu nh­ gia nhËp tranh tµi th× kh«ng thÓ rêi ®i ."
 		end
-		tb_option[getn(tb_option)+1] = "Àë¶Ó/wlls_want2leaveleague"
-		tb_option[getn(tb_option)+1] = "¿´¶ÓÎéÕ½¼¨/wlls_query_mylg"
-		tb_option[getn(tb_option)+1] = "ÎÒÖ»ÊÇÂ·¹ı/OnCancel"
+		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
+		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "Ta chØ ®i ngang qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
 	
@@ -119,14 +119,14 @@ WLLS_DATA = {
 	check_addmem = function(nCapIdx, nLGID, nMType)
 		print(nMType, wlls_player_type())
 		if (nMType ~= wlls_player_type()) then
-		 	return "¶Ô²»Æğ£¬¶ÔÄÚ¶ÓÔ±:"..GetName().." ºÍ <color=red>²Î¼Ó±ÈÈüÀàĞÍ<color> ÄãµÄÕ½¶Ó²»·û£¬ËùÒÔ£¬²»ÄÜ½øÈëÄãµÄÕ½¶Ó!"
+		 	return " thËt xin lçi , ®èi víi bªn trong ®éi viªn :"..GetName().." cïng <color=red> tham gia tranh tµi lo¹i h×nh <color> ng­¬i chiÕn ®éi kh«ng hîp , cho nªn , kh«ng thÓ vµo ng­¬i chiÕn ®éi !"
 		end
 		local nOldIdx = PlayerIndex
 		PlayerIndex = nCapIdx
 		local nSex	= GetSex()
 		PlayerIndex = nOldIdx
 		if (nSex == GetSex()) then
-			return "±¾´Î±ÈÎä°´ÕÕÄĞÅ®ÄĞÅ®Ë«ÈËÈüÄ£Ê½£¬ÄãÒªÕÒÒ»¸öÒìĞÔ!"
+			return " lÇn nµy tû vâ dùa theo nam n÷ nam n÷ hai ng­êi cuéc so tµi m« thøc , ng­¬i muèn t×m mét kh¸c ph¸i !"
 		end
 	end,
 }	--WLLS_DATA

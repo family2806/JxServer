@@ -26,7 +26,7 @@ NPC_INFO =
 	{2, "depositobj", 625, "´¢ÎïÏä", "\\script\\battles\\openbox.lua"},
 }
 
-local Rule = Dungeon:new_type("ËÎ½ğÁ¬server")
+local Rule = Dungeon:new_type("Tèng Kim liªn server")
 
 function Rule:new_rule(pBattle)
 	
@@ -57,10 +57,10 @@ function Rule:_init(pBattle)
 	
 	local tbInfo = 
 	{
-		szBattleName = "ËÎ½ğÁ¬server",
-		szMissionName = "³ğÉ±ÑùÊ½",
-		szMissionDesc = "±³¾°: ¹«Ôª1100Äê£¬½ğÖ÷ÍêÑÕÁÁÏëÊµÏÖÃğËÎµÄÍ¼Ä±£¬¼¯ÖĞ´ó¾ü£¬ÏòÄÏ±Æ½ü£¬½ğ¾ü½¥½¥ÇÖÕ¼µ½ÄÏ·½£¬Õ¼ÁìÁËÏåÑô£¬Õ¹¿ªÁËÒ»³¡²Ğ¿áµÄÕ½Õù£¬±£ÎÀÏåÑô³Ç¼«Æä¼è¿à¡£<enter><enter><color=yellow>. Õ½¶··½·¨£ºÔÚÕ½³¡ÉÏ£¬µÃµ½ÅÑÍ½µÄÍæ¼Ò½«»áµÃµ½»ı·Ö¡£ÄÄ±ß»ı·Ö¸ßÔò»ñÊ¤¡£<enter>Õ½³¡ÉÏÃ»ÓĞNPCÕ½¶·.",
-		szMiniMap = format("µÚ %d³¡", pBattle.nId),
+		szBattleName = "Tèng Kim liªn server",
+		szMissionName = "D¹ng thøc Cõu s¸t",
+		szMissionDesc = "Bèi c¶nh: n¨m 1160 C«ng Nguyªn, Kim chñ Hoµng Nhan L­îng v× muèn thùc hiÖn m­u ®å giÖt Tèng, tËp trung ®¹i qu©n, tiÕn vÒ phİa Nam, qu©n Kim dÇn x©m chiÕm miÒn Nam, chiÕm lÜnh thµnh T­¬ng D­¬ng, më ra mét cuéc chiÕn tranh tµn khèc, b¶o vª thµnh T­¬ng D­¬ng v« cïng gian khæ. <enter><enter><color=yellow>. Ph­¬ng thøc chiÕn ®Êu: Trong chiÕn tr­êng, ng­êi ch¬i h¹ ®­îc nhiÒu kÎ dŞch sÏ ghi diÓm cho bªn ®ã.Bªn nµo ®iÓm cao h¬n lµ th¾ng. <enter> trong chiÕn tr­êng kh«ng cã NPC chiÕn ®Êu.",
+		szMiniMap = format("TrËn thø %d", pBattle.nId),
 	}	
 	pBattle.Data:SetGameInfo(tbInfo)
 	return 1
@@ -71,7 +71,7 @@ function Rule:Report()
 	if self.pBattle.nState == RUN_STATE then
 		local nSongPoint = self.pBattle.Data:GetCampPoint(CAMP_SONG)
 		local nKimPoint = self.pBattle.Data:GetCampPoint(CAMP_KIM)
-		Msg2Map(self.nMapId, format("ÏÖÔÚËÎµÄ»ı·ÖÊıÊÇ: %d,½ğµÄ»ı·ÖÊÇ: %d", nSongPoint, nKimPoint))
+		Msg2Map(self.nMapId, format("§iÓm sè hiÖn t¹i cña bªn Tèng: %d, §iÓm sè bªn Kim: %d", nSongPoint, nKimPoint))
 	end
 	
 	if self.nRestTime == 0 then
@@ -133,7 +133,7 @@ function Rule:NextState()
 	end
 	if self.pBattle.nState == PREPARE_STATE then
 		self.pBattle.nState = RUN_STATE
-		Msg2Map(self.nMapId, "Õ½¶·¿ªÊ¼")
+		Msg2Map(self.nMapId, "Cuéc chiÕn b¾t ®Çu")
 		return RUNNING_TIME * FRAME2TIME
 	elseif self.pBattle.nState == RUN_STATE then
 		self.pBattle.nState = OVER_STATE
@@ -176,7 +176,7 @@ function Rule:OnLeaveMap()
 	if self.pBattle then
 		local nCamp = self.pBattle:GetPlayerCamp(szName)
 		if nCamp then
-			LeaveChannel(PlayerIndex, format("%s³¡´Î%d", CAMP_NAME[nCamp], self.pBattle.nId))
+			LeaveChannel(PlayerIndex, format("%s trËn thø %d", CAMP_NAME[nCamp], self.pBattle.nId))
 		end
 		self.pBattle:QuitPlaying(szName)
 		local nMapId, nX, nY = unpack(self.pBattle.pManager.tbSignUpPos)
@@ -198,8 +198,8 @@ end
 
 function Rule:close()
 	ClearMapTrap(self.nMapId)
-	DeleteChannel(format("%s³¡´Î%d", CAMP_NAME[CAMP_SONG], self.pBattle.nId))
-	DeleteChannel(format("%s³¡´Î%d", CAMP_NAME[CAMP_KIM], self.pBattle.nId))
+	DeleteChannel(format("%s trËn thø %d", CAMP_NAME[CAMP_SONG], self.pBattle.nId))
+	DeleteChannel(format("%s trËn thø %d", CAMP_NAME[CAMP_KIM], self.pBattle.nId))
 	if self.pBattle then
 		self.pBattle:OnClose()
 	end

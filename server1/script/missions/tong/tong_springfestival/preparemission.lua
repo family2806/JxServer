@@ -10,7 +10,7 @@ function InitMission()
 		SetMissionS(i, "");
 	end;
 	
-	strGlbNews = format("Õâ¸ö¿şÀÜ¹Ù¸®ÕıÔÚË¯¾õ£¬ĞèÒªÂé·³¸÷Î»°ï»áÈËÊ¿È¥Çı¸Ï%s£¬ÄÄÎ»ÈËÊ¿Ïë°ïÃ¦¿ÉÒÔµ½×Ü»î¶¯·»±¨Ãû²Î¼Ó .",SF_ANIMALNAME);
+	strGlbNews = format("Tªn quan phñ bï nh×n ®ang say ngñ, ®µnh ph¶i nhê c¸c vŞ nh©n sü bang héi ®i ®¸nh ®uæi %s, nh©n sü nµo muèn gióp søc cã thÓ ®Õn Tæng qu¶n Ho¹t ®éng ph­êng ë khu vùc bang héi m×nh ®Ó b¸o danh tham gia.",SF_ANIMALNAME);
 	AddGlobalNews(strGlbNews);
 	SetGlbValue(GLB_SF_PHASE, 1);	--¿ÉÒÔ¿ªÊ¼±¨ÃûÁË
 	gb_SetTask(FESTIVAL_SHREWMOUSE, 1, 1);

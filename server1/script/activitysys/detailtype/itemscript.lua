@@ -26,7 +26,7 @@ end
 function _Detail:UseItem(nItemIndex)
 	local szMsg = format("%s\tAccount:%s\tName:%s\tItemName:%s", GetLocalDate("%Y-%m-%d %H:%M"), GetAccount(), GetName(), GetItemName(nItemIndex))
 	if self:IsExpired() == 1 then
-		Talk(1, "", "该物品已过期")
+		Talk(1, "", "V藅 ph萴 n祔  h誸 h筺")
 		--WriteLog(format("%s\t%s.","[活动物品使用过期]", szMsg) )
 		return 1
 	end

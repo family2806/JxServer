@@ -15,7 +15,7 @@ tbMapList =
 function main(itemidx)
 	-- §iµ÷Õû¸»¹ó½õºĞ - Created by AnhHH  20110919
 	if (IsCityMap() ~=1) then
-		Talk(1, "", "·ÇÕ½¶·Çø²Å¿ÉÒÔÊ¹ÓÃ")
+		Talk(1, "", "Khu vùc thµnh thŞ phi chiÕn ®Êu míi cã thÓ sö dông")
 		return 1
 	end
 

@@ -8,7 +8,7 @@ if not sltDungeon then
 end
 
 --¸±±¾Ä£°åĞÅÏ¢,Êı¾İ²»»á±ä,Ã¿¸ö¸±±¾¶¼Ò»Ñù
-sltDungeon.strDungeon = "ÊÔÁ¶ÌÃ";
+sltDungeon.strDungeon = "Thİ LuyÖn §­êng";
 sltDungeon.nMapTemplet = 925;
 sltDungeon.nTimerInterval = 10;
 sltDungeon.tbTrapPos = {51456,	102848};
@@ -61,7 +61,7 @@ sltDungeon.tbAwardList =
 		nMin = 100, 
 		tbAward=
 		{
-			{szName="°×½ğ±¦Ïä", tbProp={6,1,2322,1,0,0}, nBindState = -2},
+			{szName="B¶o r­¬ng B¹ch Kim", tbProp={6,1,2322,1,0,0}, nBindState = -2},
 		}
 	},
 	[2] = 
@@ -69,7 +69,7 @@ sltDungeon.tbAwardList =
 		nMin = 90, 
 		tbAward=
 		{
-			{szName="»Æ½ğ±¦ºĞ", tbProp={6,1,2321,1,0,0}, nBindState = -2},
+			{szName="Hoµng Kim B¶o H¹p", tbProp={6,1,2321,1,0,0}, nBindState = -2},
 		}
 	},
 	[3] = 
@@ -77,7 +77,7 @@ sltDungeon.tbAwardList =
 		nMin = 70, 
 		tbAward=
 		{
-			{szName="ÒøÖÊ±¦ºĞ", tbProp={6,1,2320,1,0,0}, nBindState = -2},
+			{szName="Ng©n ChÕ B¶o H¹p", tbProp={6,1,2320,1,0,0}, nBindState = -2},
 		}
 	},
 	[4] = 
@@ -85,7 +85,7 @@ sltDungeon.tbAwardList =
 		nMin = 50, 
 		tbAward=
 		{
-			{szName="Í­ÖÊ±¦ºĞ", tbProp={6,1,2319,1,0,0}, nBindState = -2},
+			{szName="§ång ChÕ B¶o H¹p", tbProp={6,1,2319,1,0,0}, nBindState = -2},
 		}
 	},
 	[5] = 
@@ -93,7 +93,7 @@ sltDungeon.tbAwardList =
 		nMin = 0, 
 		tbAward=
 		{
-			{szName="Ä¾ÖÊ±¦ºĞ", tbProp={6,1,2318,1,0,0}, nBindState = -2},
+			{szName="Méc ChÕ B¶o H¹p", tbProp={6,1,2318,1,0,0}, nBindState = -2},
 		}
 	},
 }
@@ -164,7 +164,7 @@ function sltDungeon:OnMonsterTimer(nInterval, nNpcIndex)
 					self.bBattleOver = 1;
 					for i=1,getn(self.tbMember) do
 						if (self.tbMember[i].bInDungeon == 1) then
-							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "´Ì¿ÍÔİÊ±±»¸óÏÂ°ÚÆ½ÁË£¬ÏÖÔÚ¿ÉÒÔµ½ÊÔÁ¶ÌÃ³¤ÀÏ´¦Áì½±.");
+							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "T¹m thêi ®ît thİch kh¸ch nµy ®· bŞ dÑp lo¹n bëi c¸c h¹, b©y giê cã thÓ ®Õn tr­ëng l·o Thİ LuyÖn §­êng ®Ó nhËn th­ëng.");
 						end
 					end
 				end
@@ -183,7 +183,7 @@ function sltDungeon:OnMonsterTimer(nInterval, nNpcIndex)
 end
 
 function sltDungeon:SpawnMonster(nInterval)
-	WriteLog(format("[%s] in [%s] dungeon(%0.f) spwan monster timer. total count %d. finish count %d.", self.strOwner, "ÊÔÁ¶ÌÃ", self.nDungeonId, self.nSpawnCount, self.nFinishCount));
+	WriteLog(format("[%s] in [%s] dungeon(%0.f) spwan monster timer. total count %d. finish count %d.", self.strOwner, "Thİ LuyÖn §­êng", self.nDungeonId, self.nSpawnCount, self.nFinishCount));
 
 	local nRetInterval = nInterval;
 	local nLevel = floor(self.nSpawnCount/10)+1;
@@ -207,16 +207,16 @@ function sltDungeon:SpawnMonster(nInterval)
 		--self.nMonsterOnStage = self.nMonsterOnStage + 1;
 		self.nSpawnCount = self.nSpawnCount + 1;
 		
-		local nNpcIdx = AddNpcEx(self.MONSTER_TEMPLETE[nLevel], 95, random(1,5), SubWorldID2Idx(self.nDungeonId),1651*32,3168*32, 1, "´Ì¿Í ", 0)
+		local nNpcIdx = AddNpcEx(self.MONSTER_TEMPLETE[nLevel], 95, random(1,5), SubWorldID2Idx(self.nDungeonId),1651*32,3168*32, 1, "Thİch Kh¸ch ", 0)
 		
 		-- Ìí¼ÓNPCÊ§°ÜÖØĞÂÌí¼Ó
 		if (nNpcIdx == nil or nNpcIdx <= 0) then
 			self.nSpawnCount = self.nSpawnCount - 1;
-			WriteLog(format("[%s] in [%s] dungeon(%0.f) spwan monster failed.", self.strOwner, "ÊÔÁ¶ÌÃ", self.nDungeonId));
+			WriteLog(format("[%s] in [%s] dungeon(%0.f) spwan monster failed.", self.strOwner, "Thİ LuyÖn §­êng", self.nDungeonId));
 			return self.SPAWN_INTERVAL;
 		end
 		
-		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) spwan monster(No.%d) npcidx=%d", GetLocalDate("%Y-%m-%d %H:%M:%S"), self.strOwner, "ÊÔÁ¶ÌÃ", self.nDungeonId, self.nSpawnCount, nNpcIdx));
+		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) spwan monster(No.%d) npcidx=%d", GetLocalDate("%Y-%m-%d %H:%M:%S"), self.strOwner, "Thİ LuyÖn §­êng", self.nDungeonId, self.nSpawnCount, nNpcIdx));
 
 		SetNpcScript(nNpcIdx, "\\script\\missions\\dungeon\\dungeons\\shiliantang\\chuangtangzei.lua");
 		SetNpcActiveRegion(nNpcIdx, 1);
@@ -239,7 +239,7 @@ function sltDungeon:SpawnMonster(nInterval)
 			nRetInterval = self.SPAWN_LEVEL_INTERVAL;
 			for i = 1, getn(self.tbMember) do
 				if (self.tbMember[i].bInDungeon == 1) then
-					doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("ÏÂÂÖ´Ì¿Í½«ÉÔºò³öÏÖ <color=green>%d<color> ",nRetInterval/18));
+					doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("§ît thİch kh¸ch tiÕp theo sÏ xuÊt hiÖn sau <color=green>%d<color> gi©y",nRetInterval/18));
 				end
 			end
 			return nRetInterval;
@@ -247,7 +247,7 @@ function sltDungeon:SpawnMonster(nInterval)
 			if (mod(self.nSpawnCount,10) == 1) then
 				for i = 1, getn(self.tbMember) do
 					if (self.tbMember[i].bInDungeon == 1) then
-						doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("µÚ ½ø¹¥ <color=green>%d<color>",nLevel));
+						doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("LÇn tÊn c«ng thø <color=green>%d<color>",nLevel));
 					end
 				end
 			end
@@ -265,7 +265,7 @@ function sltDungeon:OnEnterMap()
 	local strName = GetName();
 
 	if (self.strOwner ~= strName) then
-		Talk(1,"","Õß²»ÊÇ <color=red>ÊÔÁ¶ÌÃ<color> ÓÉ¸óÏÂ´ò¿ª");
+		Talk(1,"","§©y kh«ng ph¶i <color=red>Thİ LuyÖn §­êng<color> do c¸c h¹ më!");
 		return 0;
 	end
 	
@@ -283,7 +283,7 @@ function sltDungeon:OnEnterMap()
 			
 			if (self.tbMember[i].nCallTower == nil) then
 				self.tbMember[i].nCallTower = 1;
-				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("»ñµÃ<color=green>%d<color> ´ÎÃâ·ÑÕÙ»½¹­¼ıÊÖµÄ»ú»á", self.tbMember[i].nCallTower));
+				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("NhËn ®­îc <color=green>%d<color> lÇn c¬ héi miÔn phİ triÖu tËp cung tiÔn thñ.", self.tbMember[i].nCallTower));
 				RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddShooterCount",1});
 			end
 			
@@ -382,7 +382,7 @@ function sltDungeon:OnLeaveTrans()
 		nPosX = 3143;
 		nPosY = 5065;
 		WriteLog(format("[%s] cant find last position when [%s] enter the [%s]'s [%s] dungeon(id:[%0.f]).Transport to (11,3143,5065)", 
-				GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, self.strOwner or "", self.strDungeon or "ÊÔÁ¶ÌÃ", self.nDungeonId or 0));
+				GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, self.strOwner or "", self.strDungeon or "Thİ LuyÖn §­êng", self.nDungeonId or 0));
 	end
 	
 	NewWorld(nMapId, nPosX, nPosY);
@@ -419,7 +419,7 @@ function sltDungeon:OnDungeonOpen(tbDungeonData)
 		--self.nMonsterOnStage = 0;
 		
 		--Ìí¼Ó´«ËÍÊ¯±®
-		local nnpcidx = AddNpc(309, 1, SubWorldID2Idx(self.nDungeonId), self.tbTrapPos[1], self.tbTrapPos[2],1, "ÊÔÁ¶ÌÃ³¤ÀÏ");
+		local nnpcidx = AddNpc(309, 1, SubWorldID2Idx(self.nDungeonId), self.tbTrapPos[1], self.tbTrapPos[2],1, "Tr­ëng l·o Thİ LuyÖn §­êng");
 		SetNpcScript(nnpcidx, "\\script\\missions\\dungeon\\dungeons\\shiliantang\\zhanglao.lua");
 		
 		self.tbTimer = clone(tbTimerClass);
@@ -461,10 +461,10 @@ function sltDungeon:OnDungeonOpen(tbDungeonData)
 					end
 				end
 			end
-			Talk(1,"",format("ÉÏ´ÎÄã¹Ø±Õ¸±±¾²»Õı³££¬ÏÖÔÚÄã¼ÌĞø´ò¿ª."));
+			Talk(1,"",format("LÇn tr­íc ng­¬i ®ãng Phã B¶n kh«ng b×nh th­êng, b©y giê lµ ng­¬i tiÕp tôc më ."));
 		else
 			if ConsumeEquiproomItem(1, 6, 1, 2317, -1) ~= 1 then
-				Talk(1,"","±¾´ÎÑ¡Ôñ¼«ÆäÖØÒª£¬Çë³öÊ¾ÊÔÁ¶¿¨²ÅÄÜ²Î¼Ó");
+				Talk(1,"","LÇn tuyÓn chän nµy cùc kú quan träng, xin h·y xuÊt tr×nh thİ luyÖn thiÕp míi cã thÓ tham gia");
 				return 0;
 			end
 			AddStatData("shiliantiexiaohao_kaiqishiliantang", 1)	-- Êı¾İÂñµãµÚÒ»ÆÚ
@@ -487,7 +487,7 @@ function sltDungeon:OnTimer(nInterval)
 	if (self.bPrepareTime == 1 and (self.nTimerCount >= self.PREPARE_TIME or self.bSkipPrepare == 1)) then -- ÃëÎªµ¥Î»
 		for i=1,getn(self.tbMember) do
 			if (self.tbMember[i].bInDungeon == 1) then
-				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "ÊÔÁ¶¿ªÊ¼.");
+				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "Thİ luyÖn b¾t ®Çu.");
 			end
 		end
 		self.bPrepareTime = 0;
@@ -503,7 +503,7 @@ function sltDungeon:OnTimer(nInterval)
 	if (self.bPrepareTime == 1) then
 		for i=1,getn(self.tbMember) do
 			if (self.tbMember[i].bInDungeon == 1) then
-				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("ÊÔÁ¶½«ÔÚ%0.f Ãëºó¿ªÊ¼", self.PREPARE_TIME - self.nTimerCount));
+				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("Thİ luyÖn sÏ b¾t ®Çu sau %0.f gi©y", self.PREPARE_TIME - self.nTimerCount));
 			end
 		end	
 	else
@@ -513,7 +513,7 @@ function sltDungeon:OnTimer(nInterval)
 			for i=1,getn(self.tbMember) do
 				if (self.tbMember[i].bInDungeon == 1) then
 					if (self.nLifeTime < 300 and self.nLifeTime > 0) then --¿ìÒª¹Ø±ÕÍ¨Öª
-							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("µØÍ¼½«ÔÚ %0.f Ãëºó¹Ø±Õ.", self.nLifeTime));
+							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("B¶n ®å sÏ ®ãng sau %0.f gi©y.", self.nLifeTime));
 					end
 				end
 			end
@@ -559,11 +559,11 @@ function sltDungeon:CheckOwnerInDungeon()
 	local tbDungeon = tbDungeonManager:GetMineDungeon(self.strDungeon, 1);
 	local nMapId = SubWorldIdx2ID(SubWorld);
 	if (tbDungeon == nil) then
-		Talk(1,"","¸óÏÂ»¹Î´´ò¿ª <color=red>ÊÔÁ¶ÌÃ<color>!");
+		Talk(1,"","C¸c h¹ vÉn ch­a khai më <color=red>Thİ LuyÖn §­êng<color>!");
 		return nil;
 	end
 	if (nMapId ~= tbDungeon.nDungeonId) then
-		Talk(1,"","¸óÏÂ²»ÔÚ <color=red>ÊÔÁ¶ÌÃ<color>, »òÕß´ò¿ª color=red>ÊÔÁ¶ÌÃ<color> µÄÈË²»ÊÇ¸óÏÂ£¬²»ÄÜÊ¹ÓÃ¸Ã²Ù×÷!");
+		Talk(1,"","C¸c h¹ kh«ng ë trong <color=red>Thİ LuyÖn §­êng<color>, hoÆc ng­êi më<color=red>Thİ LuyÖn §­êng<color> kh«ng ph¶i lµ c¸c h¹, kh«ng thÓ dïng thao t¸c nµy!");
 		return nil;
 	end
 	return 1;
@@ -574,7 +574,7 @@ function sltDungeon:MonsterDead(nNpcIndex)
 		self.tbMember[i].nKillMonster = self.tbMember[i].nKillMonster + 1;
 		self.tbMember[i].nMedal = self.tbMember[i].nMedal + 1;
 		if (self.tbMember[i].bInDungeon == 1) then
-			doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("´òÍË <color=green>%d<color> ´Ì¿Í.", self.tbMember[i].nKillMonster));
+			doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, format("§Èy lïi ®­îc <color=green>%d<color> thİch kh¸ch.", self.tbMember[i].nKillMonster));
 		end
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddkillCount",1});
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddMedalCount",1});
@@ -590,7 +590,7 @@ function sltDungeon:MonsterDead(nNpcIndex)
 		self.bBattleOver = 1;
 		for i=1,getn(self.tbMember) do
 			if (self.tbMember[i].bInDungeon == 1) then
-				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "±¾ÂÖ´Ì¿Í±»´óÏÀ°ÚÆ½ÁË£¬ÏÖÔÚ¿ÉÒÔµ½³¤ÀÏ´¦Áì½±.");
+				doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "T¹m thêi ®ît thİch kh¸ch nµy ®· bŞ dÑp lo¹n bëi c¸c h¹, b©y giê cã thÓ ®Õn tr­ëng l·o Thİ LuyÖn §­êng ®Ó nhËn th­ëng.");
 			end
 		end
 	end
@@ -617,29 +617,29 @@ function sltDungeon:CallTower()
 		end
 		
 		if (bFound == 0) then
-			Talk(1,"","ÕâÀï²»ÄÜÕÒ»Ø¹­¼ıÊÖ ");
+			Talk(1,"","ë ®©y kh«ng thÓ triÖu tËp cung tiÔn thñ!");
 			return
 		end
 		
 		if (nNpcIdx ~= 0) then
-			Talk(1,"","ÕâÀïÒÑÓĞÒ»¸ö¹­¼ıÊÖÁË!");
+			Talk(1,"","ë ®©y ®· cã 1 cung tiÔn thñ råi!");
 			return
 		end
 		
 		if (tbMember == nil or tbMember.nCallTower <= 0) then
-			Talk(1,"","¸óÏÂÒÑ¾­Ê¹ÓÃÍêÕÙ»½¹­¼ıÊÖµÄ»ú»áÁË");
+			Talk(1,"","C¸c h¹ hÕt c¬ héi gäi cung tiÔn thñ!");
 			return
 		end
 				
-		nNpcIdx = AddNpcEx(sltDungeon.SHOOTER_TEMPLETE, 95, random(1,5), SubWorldID2Idx(mapId),tbDungeon.tbTower[nTowerIdx].tbPos[1]*32,tbDungeon.tbTower[nTowerIdx].tbPos[2]*32, 1, "¹­¼ıÊÖ", 0);
+		nNpcIdx = AddNpcEx(sltDungeon.SHOOTER_TEMPLETE, 95, random(1,5), SubWorldID2Idx(mapId),tbDungeon.tbTower[nTowerIdx].tbPos[1]*32,tbDungeon.tbTower[nTowerIdx].tbPos[2]*32, 1, "cung kş binh", 0);
 		if(nNpcIdx == nil or nNpcIdx <= 0) then
-			Talk(1,"","ÕÙ»½Ê§°Ü£¬ÇëÖØÊÔ!");
+			Talk(1,"","TriÖu håi thÊt b¹i, xin h·y thö l¹i!");
 			return
 		end
 		tbMember.nCallTower = tbMember.nCallTower - 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> »ú»áÕÙ»½¹­¼ıÊÖ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
 		tbDungeon.tbTower[nTowerIdx].nNpcIdx = nNpcIdx;
-		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) call tower. Left call chance %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "ÊÔÁ¶ÌÃ", tbDungeon.nDungeonId, tbMember.nCallTower));
+		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) call tower. Left call chance %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "Thİ LuyÖn §­êng", tbDungeon.nDungeonId, tbMember.nCallTower));
 		SetNpcActiveRegion(nNpcIdx, 1);
 	end
 end
@@ -665,28 +665,28 @@ function sltDungeon:CallBackTower()
 		end
 		
 		if (bFound == 0 or nNpcIdx == 0) then
-			Talk(1,"","×î½üÃ»ÓĞ¹­¼ıÊÖ¿ÉÒÔÕÙ»½!");
+			Talk(1,"","GÇn ®©y kh«ng cã cung tiÔn thñ cã thÓ triÖu tËp!");
 			return
 		end
 		
 		if (tbMember == nil) then
-			Talk(1,"","Äã²»ÄÜÕÙ»½¹­¼ıÊÖ");
+			Talk(1,"","Ng­¬i kh«ng thÓ triÖu tËp cung tiÔn thñ!");
 			return
 		end
 		
 		if (tbMember.nMedal < 2) then
-			Talk(1,"","Ä¿Ç°¸óÏÂ²»×ã2¸öÊÔÁ¶Ñ«ÕÂ!");
+			Talk(1,"","HiÖn nay c¸c h¹ kh«ng ®ñ 2 huy ch­¬ng thİ luyÖn!");
 			return
 		end
 		
 		tbMember.nMedal = tbMember.nMedal - 2;
 		tbMember.nCallTower = tbMember.nCallTower + 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> ÊÔÁ¶ÌÃÑ«ÕÂ.", tbMember.nMedal));
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½¹­¼ıÊÖ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
 
 		tbDungeon.tbTower[nTowerIdx].nNpcIdx = 0;
 		DelNpc(nNpcIdx);
-		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) call back tower. Left call chance %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "ÊÔÁ¶ÌÃ", tbDungeon.nDungeonId, tbMember.nCallTower));
+		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) call back tower. Left call chance %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "Thİ LuyÖn §­êng", tbDungeon.nDungeonId, tbMember.nCallTower));
 	end
 end
 
@@ -696,7 +696,7 @@ function sltDungeon:AddCallTowerChance(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nCallTower = tbMember.nCallTower + nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½¹­¼ıÊÖ", tbMember.nCallTower));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddShooterCount",nCount});
 		end
 	end
@@ -728,7 +728,7 @@ function sltDungeon:AddMedal(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nMedal = tbMember.nMedal + nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> ÊÔÁ¶ÌÃÑ«ÕÂ.", tbMember.nMedal));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddMedalCount",nCount});
 		end
 	end
@@ -740,7 +740,7 @@ function sltDungeon:AddKill(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nKillMonster = tbMember.nKillMonster + nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("´òÍËÁË <color=green>%d<color> ´Ì¿Í.", tbMember.nKillMonster));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("§Èy lïi ®­îc <color=green>%d<color> thİch kh¸ch.", tbMember.nKillMonster));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddkillCount",nCount});
 		end
 	end
@@ -752,7 +752,7 @@ function sltDungeon:SetKill(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nKillMonster = nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("´òÍËÁË <color=green>%d<color> ´Ì¿Í.", tbMember.nKillMonster));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("§Èy lïi ®­îc <color=green>%d<color> thİch kh¸ch.", tbMember.nKillMonster));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "SetkillCount",nCount});
 		end
 	end
@@ -775,28 +775,28 @@ function sltDungeon:BuyChance()
 
 	if (tbMember ~= nil) then	
 		if (tbMember.nMedal < 5) then
-			Talk(1,"","Ä¿Ç°¸óÏÂ²»×ã5¸öÊÔÁ¶Ñ«ÕÂ!");
+			Talk(1,"","HiÖn t¹i c¸c h¹ kh«ng ®ñ 5 huy ch­¬ng thİ luyÖn!");
 			return 0;
 		end
 		
 		local nEnergy = GetEnergy();
 		
 		if nEnergy == nil or nEnergy < 100 then
-			Talk(1,"",format("§i¾«Á¶Ê¯Öµ²»×ã®ñ %d!",100));
+			Talk(1,"",format("§iÓm tinh lùc kh«ng ®ñ %d!",100));
 			return 0;
 		end
 		
 		if (ReduceEnergy(100) ~= 1) then
-			Talk(1,"",format("§i¾«Á¶Ê¯Öµ²»×ã®ñ %d!",100));
+			Talk(1,"",format("§iÓm tinh lùc kh«ng ®ñ %d!",100));
 			return 0;
 		end
 		
-		WriteLog(format("[%s] [%s] in [%s] dungeon Consume %d Energy buy 1 shooter.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "ÊÔÁ¶ÌÃ", 100));
+		WriteLog(format("[%s] [%s] in [%s] dungeon Consume %d Energy buy 1 shooter.", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "Thİ LuyÖn §­êng", 100));
 		
 		tbMember.nMedal = tbMember.nMedal - 5;
 		tbMember.nCallTower = tbMember.nCallTower + 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> ÊÔÁ¶ÌÃÑ«ÕÂ.", tbMember.nMedal));
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½¹­¼ıÊÖ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddShooterCount",1});
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddMedalCount",-5});
 		return 1;
@@ -830,7 +830,7 @@ end
 
 function sltDungeon:GetAward()
 	if (self:IsBattleOver() ~= 1) then
-		Talk(1,"","¸÷ÂÖ½ø¹¥»¹Î´½áÊø£¬Ä¿Ç°²»ÄÜÁì½±!");
+		Talk(1,"","C¸c ®ît tÊn c«ng vÉn ch­a kÕt thóc, hiÖn t¹i kh«ng thÓ nhËn th­ëng!");
 		return 0;
 	end
 	
@@ -840,7 +840,7 @@ function sltDungeon:GetAward()
 	
 	if (tbMember ~= nil) then
 		if (tbMember.bAward == 1) then
-			Talk(1,"","ÄãÒÑÁì½±ÁË°¡ ");
+			Talk(1,"","Ng­¬i ®· nhËn th­ëng råi mµ.");
 			return 0;
 		end
 		
@@ -855,11 +855,11 @@ function sltDungeon:GetAward()
 		if (PlayerFunLib:CheckFreeBagCell(1, "default") == 1) then
 			for i=1,getn(self.tbAwardList) do
 				if (tbMember.nKillMonster >= self.tbAwardList[i].nMin) then
-					tbAwardTemplet:GiveAwardByList(self.tbAwardList[i].tbAward, "ÊÔÁ¶ÌÃ");
+					tbAwardTemplet:GiveAwardByList(self.tbAwardList[i].tbAward, "Thİ LuyÖn §­êng");
 					tbMember.bAward = 1;
 					tbDungeon.bCanClose = 1;
 					nCallChance = nCallChance + tbMember.nCallTower;
-					WriteLog(format("[%s] [%s] in [%s] dungeon get award. call shooter chance %d, kill monster %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "ÊÔÁ¶ÌÃ", nCallChance, tbMember.nKillMonster));
+					WriteLog(format("[%s] [%s] in [%s] dungeon get award. call shooter chance %d, kill monster %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "Thİ LuyÖn §­êng", nCallChance, tbMember.nKillMonster));
 					RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "SetAwardMark",{strName,1}});
 					return 1;
 				end

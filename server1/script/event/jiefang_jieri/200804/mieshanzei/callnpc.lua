@@ -1,7 +1,7 @@
 jiefang_0804_NpcList =
 {
 	{szName = "铁牛大王", nLevel = 95, nIsboss = 1, nNpcId = 1340, szDeathScript = "\\script\\event\\jiefang_jieri\\200804\\mieshanzei\\bossdeath.lua"},
-	{szName = "山贼头领", nLevel = 95, nIsboss = 1, nNpcId = 725},
+	{szName = "S琻 t芻 u l躰h", nLevel = 95, nIsboss = 1, nNpcId = 725},
 	
 }
 

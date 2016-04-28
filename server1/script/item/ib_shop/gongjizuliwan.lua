@@ -5,7 +5,7 @@
 -- ´´½¨Ê±¼ä£º2011-07-15 11:53:11
 
 function main(nItemIndex)
-	print("Ê¹ÓÃÁË")
+	print("Sö dông råi")
 	local nTime = 15 * 60 *18
 	local tbSkill = { 1120,261,258,260,}
 		
@@ -13,6 +13,6 @@ function main(nItemIndex)
 		AddSkillState(tbSkill[i], 1, 1, nTime)
 	end	
 	
-	Msg2Player("ÄúÒÑÊ¹ÓÃ" .. "»ý¹¦ÖúÁ¦Íè")
+	Msg2Player("Ng­¬i ®· sö dông" .. "KÝch C«ng Trî Lùc Hoµn")
 	return 0
 end

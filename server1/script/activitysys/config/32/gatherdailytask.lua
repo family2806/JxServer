@@ -5,7 +5,7 @@ tbGatherDailyTask = tbDailyTask:new()
 tbGatherDailyTask.TSK_DAILY_TASK_COMPLETE_STATE = TSK_DAILY_TASK_COMPLETE_COUNT;
 tbGatherDailyTask.nStateBit = 2;
 tbGatherDailyTask.szConfigPath = {"\\settings\\task\\dailytask\\gather.txt" ,"\\settings\\task\\dailytask\\gather_pos.txt"};
-tbGatherDailyTask.szTaskName = "ÊÕ¼¯ÈÎÎñ";
+tbGatherDailyTask.szTaskName = "NhiÖm vô thu thËp";
 tbGatherDailyTask.tbObjPos = {}
 tbGatherDailyTask.TSK_GATHER_TASK_ID = TSK_GATHER_TASK_ID;
 
@@ -65,7 +65,7 @@ end
 
 function tbGatherDailyTask:CheckCanAccept()
 	if (self:_CheckCanAccept() ~= 1) then
-		Talk(1,"",format("ÎÒÒÑ¾­ËÍ»¨¸øÊ¦²®ÁË£¬¸ĞĞ»%s ÄãµÄ°ïÖú®ì.",GetSex() == 1 and "½ã½ã" or "¸ç¸ç"))
+		Talk(1,"",format("Ta ®· tÆng hoa cho s­ b¸ råi, c¸m ¬n %s ng­¬i ®· gióp ®ì.",GetSex() == 1 and "ChŞ " or "Ca Ca"))
 		return nil;
 	end
 	return 1;
@@ -79,7 +79,7 @@ function tbGatherDailyTask:AcceptTask()
 	if (self:IsHaveTask() == 1) then
 		local tbTask = self:GetTaskData(GetTask(self.TSK_GATHER_TASK_ID));
 		if (tbTask ~= nil) then
-			Talk(1,"",format("ÕâÎ» %s, Äã°ïÎÒÊÕ¼¯¹»®ñ<color=green>%d<color> ÖÖ×Ó <color=yellow>%s<color> ÁËÂğ£¿Äã¿ìµãÈ¥<color=red>%s<color> ÊÕ¼¯°É£¬ÎÒÊ¦¸µµÄÉúÈÕ¿ìµ½ÁË.", GetSex() == 1 and "½ã½ã" or "¸ç¸ç",  tbTask.nGatherCount, tbTask.szGatherName, tbTask.szMapName));
+			Talk(1,"",format("VŞ nµy %s, ng­¬i gióp ta thu thËp ®ñ<color=green>%d<color> h¹t <color=yellow>%s<color> råi ch­a? ng­¬i nhanh ch©n ®i<color=red>%s<color> thu thËp ®i, ngµy sinh nhËt cña s­ phô ta s¾p ®Õn råi.", GetSex() == 1 and "ChŞ " or "Ca Ca",  tbTask.nGatherCount, tbTask.szGatherName, tbTask.szMapName));
 		end
 		return nil;
 	end
@@ -94,9 +94,9 @@ function tbGatherDailyTask:AcceptTask()
 	
 	SetTask(self.TSK_GATHER_TASK_ID, nId);
 	
-	Talk(1,"",format("ÕâÎ»%s, ÎÒÊ¦¸µËµ<color=yellow>%s<color> ÊÇÒ»ÖÖºÜÉñÆæµÄ»¨£¬ÎÒÏëÓÃÕâÖÖ»¨ËÍ¸øÎÒÊ¦¸µ×÷ÎªÀñÎï£¬Äã¿ÉÒÔ°ïÎÒµ½<color=red>%s<color>°ïÎÒ²ÉÕª<color=green>%d<color> ¿ÉÒÔÂğ", GetSex() == 1 and "½ã½ã" or "¸ç¸ç", tbTask.szGatherName, tbTask.szMapName, tbTask.nGatherCount));
+	Talk(1,"",format("VŞ nµy %s, s­ phô cña ta nãi r»ng<color=yellow>%s<color> lµ mét loµi hoa rÊt thÇn kú, ta muèn lÊy loµi hoa nµy tÆng cho s­ phô lµm lÔ vËt, ng­¬i cã thÓ gióp ta ®Õn<color=red>%s<color>gióp ta h¸i<color=green>%d<color> ®­îc kh«ng?", GetSex() == 1 and "ChŞ " or "Ca Ca", tbTask.szGatherName, tbTask.szMapName, tbTask.nGatherCount));
 
-	WriteLog(format("[%s]\t%s\t%s\t%s","Ã¿ÈÕÈÎÎñ",GetName(), GetAccount(),format("ÊÕ¼¯ÈÎÎñ£ºÊÕ¼¯ %d ¸ö%s",tbTask.nGatherCount,tbTask.szGatherName)))
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("NhËn nhiÖm vô thu thËp: thu thËp %d c¸i%s",tbTask.nGatherCount,tbTask.szGatherName)))
 
 	return 1;
 end
@@ -119,11 +119,11 @@ function tbGatherDailyTask:CheckCompleteTask()
 	local tbTask = self:GetTaskData(nTskId);
 	
 	if (self:IsHaveTask() ~= 1 or tbTask == nil) then
-		Talk(1,"",format("ÕâÎ»%s, ÕÒÎÒÓĞÊ²Ã´ÊÂÂğ?", GetSex() == 1 and "½ã½ã" or "¸ç¸ç"));
+		Talk(1,"",format("VŞ nµy %s, t×m ta cã chuyÖn g× kh«ng?", GetSex() == 1 and "ChŞ " or "Ca Ca"));
 		return nil;
 	end
 	
-	if (PlayerFunLib:CheckItemInBag(format("return {tbProp={%d,%d,%d,-1,-1,0},}",tbTask.tbItem[1],tbTask.tbItem[2],tbTask.tbItem[3]), tbTask.nGatherCount, format("ÕâÎ» %s, Äã»¹Î´°ïÎÒÕª¹»®ñ<color=green>%d<color> Ö§ <color=yellow>%s<color>, Äã¿ìÈ¥<color=red>%s<color>°ïÎÒÊÕ¼¯£¬ÎÒÊ¦¸µµÄÉúÈÕ¿ìµ½ÁË.", GetSex() == 1 and "½ã½ã" or "¸ç¸ç",  tbTask.nGatherCount, tbTask.szGatherName, tbTask.szMapName)) ~= 1) then
+	if (PlayerFunLib:CheckItemInBag(format("return {tbProp={%d,%d,%d,-1,-1,0},}",tbTask.tbItem[1],tbTask.tbItem[2],tbTask.tbItem[3]), tbTask.nGatherCount, format("VŞ nµy %s, ng­¬i vÉn ch­a gióp ta h¸i ®ñ<color=green>%d<color> c©y <color=yellow>%s<color>, ng­¬i nhanh ®i<color=red>%s<color>gióp ta thu thËp, sinh nhËt cña s­ phô ta s¾p ®Õn råi ®ã.", GetSex() == 1 and "ChŞ " or "Ca Ca",  tbTask.nGatherCount, tbTask.szGatherName, tbTask.szMapName)) ~= 1) then
 		return nil;
 	end
 		
@@ -142,7 +142,7 @@ function tbGatherDailyTask:CompleteTask()
 	SetTask(self.TSK_GATHER_TASK_ID, 0)
 	self:_CompleteTask();
 	
-	WriteLog(format("[%s]\t%s\t%s\t%s","Ã¿ÈÕÈÎÎñ",GetName(), GetAccount(),format("Íê³ÉÊÕ¼¯ÈÎÎñ£ºÊÕ¼¯%d ¸ö%s",tbTask.nGatherCount,tbTask.szGatherName)))
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Hoµn thµnh nhiÖm vô thu thËp: thu thËp%d c¸i%s",tbTask.nGatherCount,tbTask.szGatherName)))
 	AddStatData("richangrenwu_caijicishu")
 	return 1;
 end
@@ -158,7 +158,7 @@ function tbGatherDailyTask:CheckCanGather(G,D,P)
 		return nil;
 	end
 	
-	if (PlayerFunLib:CheckItemInPlayer(format("return {tbProp={%d,%d,%d,-1,-1,0}}",tbTask.tbItem[1],tbTask.tbItem[2],tbTask.tbItem[3]), tbTask.nGatherCount, "ÄúÒÑÊÕ¼¯¹»±ØĞëµÄµÀ¾ß!") ~= 1) then
+	if (PlayerFunLib:CheckItemInPlayer(format("return {tbProp={%d,%d,%d,-1,-1,0}}",tbTask.tbItem[1],tbTask.tbItem[2],tbTask.tbItem[3]), tbTask.nGatherCount, "Ng­¬i ®· thu thËp ®ñ ®¹o cô cÇn thiÕt!") ~= 1) then
 		return nil;
 	end
 	

@@ -1,7 +1,7 @@
---中原南区 稻香村 告示牌1
+--中原南区 Чo Hng th玭 告示牌1
 
 function main(sel)
 
-Say("稻香村",  0);
+Say("Чo Hng th玭",  0);
 
 end;

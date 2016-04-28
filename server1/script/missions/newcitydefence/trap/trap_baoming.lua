@@ -1,3 +1,3 @@
 function main()
-  Msg2Player("Ç°·½Õ½Õù¼¤ÁÒ£¬²»ÄÜËæ±ã½øÈë.")
+  Msg2Player("Phİa tr­íc chiÕn tranh kŞch liÖt, xem ra kh«ng nªn tù ı x«ng vµo.")
 end;

@@ -6,17 +6,17 @@ function main(sel)
 	party = GetLastAddFaction()
 	skill = HaveMagic(390) 
 	if(party ~= "wudu") then							-- ²»ÊÇÎå¶¾
-		Msg2Player("ÄãÄÃ×Å¡¶Îå¶¾ÉåĞÄÊõ¡¤¾íÈı¡·ÑĞ¾¿ÁË°ëÌì£¬½á¹ûÊ²Ã´Ò²Ã»ÁìÎòµ½¡£")
+		Msg2Player("B¹n nghiªn cøu Ngò §éc NhiÕp T©m ThuËt - QuyÓn 3 ®­îc nöa ngµy, nh­ng vÉn ch­a lÜnh ngé ®­îc g×. ")
 		return 1
 	elseif(GetLever < 80) then							-- ÊÇÎå¶¾µ«Î´µ½80¼¶
-		Msg2Player("ÄãÄÃ×Å¡¶Îå¶¾ÉåĞÄÊõ¡¤¾íÈı¡·×êÑĞÁË°ëÌì£¬½á¹ûÁìÎòÉõÉÙ£¬Ã»Ê²Ã´Ğ§¹û¡£")
+		Msg2Player("B¹n nghiªn cøu Ngò §éc NhiÕp T©m ThuËt - QuyÓn 3 ®­îc nöa ngµy, lÜnh ngé ®­îc rÊt İt. ")
 		return 1
 	elseif(skill ~= -1) then							-- ÒÑÑ§¹ı¸Ã¼¼ÄÜ
-		Msg2Player("ÄãÒÑ¾­°Ñ¡¶Îå¶¾ÉåĞÄÊõ¡¤¾íÈı¡·×êÑĞÍ¸³¹£¬´ÓÖĞÔÙÒ²Ñ§²»µ½ÈÎºÎ¶«Î÷¡£")
+		Msg2Player("B¹n ®· nghiªn cøu kü Ngò §éc NhiÕp T©m ThuËt - QuyÓn 3, nh­ng vÉn ch­a häc ®­îc g×. ")
 		return 1
 	else
 		AddMagic(390,0)										-- Ñ§»á¼¼ÄÜ
-		Msg2Player("Ñ§»áÁË¼¼ÄÜ¡°¶Ï½î¸¯¹Ç¡±¡£")
+		Msg2Player("Häc ®­îc kü n¨ng §o¹n C©n hñ Cèt. ")
 		return 0
 	end
 end

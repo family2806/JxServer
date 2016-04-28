@@ -9,30 +9,30 @@ IL("TONG")
 
 local tbItemOtherAward = {
 	["use50banhkem"] = {
-			[50] 		= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı50´Î",
+			[50] 		= "SuDung2LoaiBanhKem50Lan",
 	},
 	["banhsinhnhat"] = {
-			[50] 		= "Ê¹ÓÃÎäÁÖ´«ÆæÉúÈÕµ°¸â50´Î",
-			[100] 	= "Ê¹ÓÃÎäÁÖ´«ÆæÉúÈÕµ°¸â100´Î",
-			[150] 	= "Ê¹ÓÃÎäÁÖ´«ÆæÉúÈÕµ°¸â150´Î",
-			[200] 	= "Ê¹ÓÃÎäÁÖ´«ÆæÉúÈÕµ°¸â200´Î",
+			[50] 		= "SuDungBanhSinhNhatVLTK50Lan",
+			[100] 	= "SuDungBanhSinhNhatVLTK100Lan",
+			[150] 	= "SuDungBanhSinhNhatVLTK150Lan",
+			[200] 	= "SuDungBanhSinhNhatVLTK200Lan",
 	},
 	["banhkem"] = {
-			[100] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı100´Î",
-			[200] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı200´Î",
-			[300] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı300´Î",
-			[400] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı00´Î",
-			[500] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı500´Î",
-			[600] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı600 ´Î",
-			[700] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı700´Î",
-			[800] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı800´Î",
-			[900] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı900´Î",
-			[1000] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1000´Î",
-			[1100] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1100´Î",
-			[1200] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1200´Î",
-			[1300] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1300´Î",
-			[1400] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1400´Î",
-			[1500] 	= "Ê¹ÓÃ2ÖÖ±ùä¿ÁÜ±ı1500´Î",
+			[100] 	= "SuDung2LoaiBanhKem100Lan",
+			[200] 	= "SuDung2LoaiBanhKem200Lan",
+			[300] 	= "SuDung2LoaiBanhKem300Lan",
+			[400] 	= "SuDung2LoaiBanhKem400Lan",
+			[500] 	= "SuDung2LoaiBanhKem500Lan",
+			[600] 	= "SuDung2LoaiBanhKem600Lan",
+			[700] 	= "SuDung2LoaiBanhKem700Lan",
+			[800] 	= "SuDung2LoaiBanhKem800Lan",
+			[900] 	= "SuDung2LoaiBanhKem900Lan",
+			[1000] 	= "SuDung2LoaiBanhKem1000Lan",
+			[1100] 	= "SuDung2LoaiBanhKem1100Lan",
+			[1200] 	= "SuDung2LoaiBanhKem1200Lan",
+			[1300] 	= "SuDung2LoaiBanhKem1300Lan",
+			[1400] 	= "SuDung2LoaiBanhKem1400Lan",
+			[1500] 	= "SuDung2LoaiBanhKem1500Lan",
 	},		
 }
 function pActivity:AddInitNpc()
@@ -40,7 +40,7 @@ function pActivity:AddInitNpc()
 		[1] = {78,1579,3208,},
 	}
 	local tbNpc = {	
-			szName = "×ö±ıÊ¦", 
+			szName = "Thî Lµm B¸nh", 
 			nLevel = 95,
 			nNpcId = 1888,
 			nIsboss = 0,
@@ -61,13 +61,13 @@ function pActivity:CheckAwardExp(strFailMessage)
 		Talk(1, "", strFailMessage)
 		return nil
 end
---Ê¹ÓÃË®¹û±ùä¿ÁÜ±ıºÍÇÉ¿ËÁ¦±ùä¿ÁÜ±ıº¯
+--Ê¹ÓÃË®¹ûbanhkemºÍÇÉ¿ËÁ¦banhkemº¯
 function pActivity:UseCake(nTask,nLimit,nRes)
-	local tbLog = %tbItemOtherAward["±ùä¿ÁÜ±ı"]
+	local tbLog = %tbItemOtherAward["banhkem"]
 	local nCount = tbVNG_BitTask_Lib:getBitTask(nTask)
 	-- ½±Àø´ï1500
 	if(nCount == nLimit)then
-		tbAwardTemplet:Give(%tbAward_Ext["award1500"], 1 , {%EVENT_LOG_TITLE, "Ê¹ÓÃË®¹û±ùä¿ÁÜ±ıºÍÇÉ¿ËÁ¦±ùä¿ÁÜ±ı1500"})
+		tbAwardTemplet:Give(%tbAward_Ext["award1500"], 1 , {%EVENT_LOG_TITLE, "SuDungBanhKemChocolatehoacTraicaydat1500"})
 	end
 	--ÌØ±ğ½±Àø
 	if tbLog[nCount] then
@@ -75,7 +75,7 @@ function pActivity:UseCake(nTask,nLimit,nRes)
 	end
 	--µ±´ïµ½200Ê±µÄÅ¼È»½±Àø©y
 	if nRes == 1 then
-			local tbLog50 =  %tbItemOtherAward["use50banhkem"][nCount] or "Ê¹ÓÃ±ùä¿ÁÜ±ıµÄ·şÎñÆ÷½±Àø"
+			local tbLog50 =  %tbItemOtherAward["use50banhkem"][nCount] or "PhanThuongServersudungbanhkem"
 			tbAwardTemplet:Give(%tbAward_Ext["awardnomal"], 1 , {%EVENT_LOG_TITLE, tbLog50})
 	end
 end
@@ -85,10 +85,10 @@ function pActivity:UseCakeBirthday(nTask,nLimit)
 	local nCount = tbVNG_BitTask_Lib:getBitTask(nTask)
 	-- µ±´ïµ½200Ê±µÄÅ¼È»½±Àø
 	if(nCount == nLimit)then
-		tbAwardTemplet:Give(%tbAward_Ext["award200"], 1 , {%EVENT_LOG_TITLE, "Ê¹ÓÃÉúÈÕµ°¸â´ï200"})
+		tbAwardTemplet:Give(%tbAward_Ext["award200"], 1 , {%EVENT_LOG_TITLE, "SuDungBanhKemSinhNhatdatmoc200"})
 	end
-	--ÉúÈÕµ°¸âµÄ·şÎñÆ÷½±Àø
-	local tbLogAward =  %tbItemOtherAward["banhsinhnhat"][nCount] or "ÉúÈÕµ°¸âµÄ·şÎñÆ÷½±Àø"
+	--PhanThuongServersudungbanhkemsinhnhat
+	local tbLogAward =  %tbItemOtherAward["banhsinhnhat"][nCount] or "PhanThuongServersudungbanhkemsinhnhat"
 	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, tbLogAward} )
 end
 

@@ -10,7 +10,7 @@ HideNpc("ÄÏËÎ½«¾ü",1000000);
 HideNpc("½ğ¹ú´ó½«",1000000);
 
     RestMin, RestSec = GetMinAndSec(1800);
-local str1 = "<#>ËÎ½ğ´óÕ½Õı½øÈë±¨Ãû½×¶Î£¬Óû²ÎÕ½ÕßÇë¾¡¿ìÔÚËÎ½ğÕ½³¡Á½Èë¿ÚÖ®Ò»±¨Ãû,±¨ÃûÊ£ÓàÊ±¼ä:"..RestMin.."<#>·Ö"..RestSec.."<#>Ãë".."<#>¡£²ÎÕ½Ìõ¼ş:µÈ¼¶²»Ğ¡ÓÚ40¼¶£¬±¨Ãû·Ñ3000Á½¡£";
+local str1 = "<#>ChiÕn tr­êng Tèng Kim ®ang b­íc vµo giai ®o¹n b¸o danh, c¸c nh©n sÜ h·y ®Õn T­¬ng D­¬ng hoÆc Chu TiÕn TrÊn ®Ó ®¨ng kİ tham gia trËn chiÕn, thêi gian cßn l¹i:"..RestMin.."<#>¬hót"..RestSec.."<#>gi©y".."<#>§iÒu kiÖn tham gia: cÊp ®é lín h¬n 40, lÖ phİ ®¨ng kİ 3000 l­îng!";
     AddGlobalCountNews(str1, 1);
 end;
 
@@ -40,7 +40,7 @@ HideNpc("½ğ¹ú¾üÒ½",1000000);
     	end;
 
     	--´ËÊ±ÎªGM·¢²¼ÃüÁî£¬ÕıÊ½´òÏìÕ½¶·
-PutMessage("µĞ¾üÒÑ¾­¿ªÊ¼ĞĞ¶¯£¬½«Ê¿ÃÇ¸Ï¸°Ç°Ïß,·ÜÓÂÉ±µĞÑ½!");
+PutMessage("KÎ thï ®· ho¹t ®éng phİa tr­íc, h·y dòng c¶m tiªu diÖt bän chóng!");
     end;
     
     StartMissionTimer(1,5, TIMER_2);
@@ -59,7 +59,7 @@ end;
 
 function OnLeave(RoleIndex)
     PlayerIndex = RoleIndex;
-str2 = GetName().."ÍË³öÁËÕ½³¡";
+str2 = GetName().." rêi khái chiÕn tr­êng ";
     -- SetLogoutRV(0);  Íæ¼ÒµôÏßÒ²»á´ÓMissionÖĞOnLeave£¬Òò´Ë²»ÄÜÔÚ´Ëµ÷ÓÃSetLogoutRV(0)£¬±ØĞëÔÚ°ÑÍæ¼ÒNewWorld³öMissionµØÍ¼µÄµØ·½µ÷ÓÃ Fanghao_Wu 2006-3-21
     SetPKFlag(0)
     ForbidChangePK(0);

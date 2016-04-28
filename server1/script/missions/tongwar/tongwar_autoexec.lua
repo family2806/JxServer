@@ -34,7 +34,7 @@ local oldSubWorld = SubWorld
 		local sidx = SubWorldID2Idx(2);
 		if (sidx >= 0) then
 			SubWorld = sidx;
-			local npcidx = AddNpc(53, 1, sidx, 2608*32,3496*32, 1, "ÌìÏÂµÚÒ»°ïÊ¹Õß");
+			local npcidx = AddNpc(53, 1, sidx, 2608*32,3496*32, 1, "Sø gi¶ Thiªn H¹ §Ö NhÊt Bang");
 			if (npcidx > 0) then
 				SetNpcScript(npcidx, "\\script\\event\\tongwar\\npc_shizhe.lua");
 			end;

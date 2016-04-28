@@ -62,14 +62,14 @@ tbTONGWARMAP = {
 	TAB_RANKBONUS = {0, 1000, 3000, 6000,10000};
 	RANK_SKILL = 661;
 	TAB_RANKMSG = {
-	"Äã±»·âÎª <color=white>Ê¿±ø<color>!",
-	"Äã±»·âÎª<color=0xff>Ð£Î¾<color>! ÑªÁ¿Ôö¼Ó 20%",
-	"Äã±»·âÎª<color=0xff>Í³Áì<color>! ÑªÁ¿Ôö¼Ó 30%, ·ÀÊØÔö¼Ó 5%",
-	"Äã±»·âÎª<color=yellow>¸±½«<color>! ÑªÁ¿Ôö¼Ó 40%, ·ÀÊØÔö¼Ó 10% ",
-	"Äã±»·âÎª<color=yellow><bclr=red>´ó½«<bclr><color>! ÑªÁ¿Ôö¼Ó 50%, ·ÀÊØÔö¼Ó 15%.",
-	"Äã±»·âÎª<color=yellow>ÔªË§<color=>!"}
+	"B¹n ®­îc phong lµ <color=white>Binh SÜ<color>!",
+	"B¹n ®­îc phong lµ <color=0xff>HiÖu óy<color>! Sinh lùc t¨ng20%",
+	"B¹n ®­îc phong lµ <color=0xff>Thèng LÜnh<color>! Sinh lùc t¨ng 30%, phßng thñ t¨ng 5%",
+	"B¹n ®­îc phong lµ <color=yellow>Phã T­íng<color>! Sinh lùc t¨ng 40%, phßng thñ t¨ng 10% ",
+	"B¹n ®­îc phong lµ <color=yellow><bclr=red>§¹i T­íng<bclr><color>! Sinh lùc t¨ng 50%, phßng thñ t¨ng 15%.",
+	"B¹n ®­îc phong lµ <color=yellow>Nguyªn So¸i<color=>!"}
 	
-	tbRANKNAME={"<color=white>Ê¿±ø<color>", "<color=0xa0ff>Ð£Î¾<color>", "<color=0xff>Í³Áì<color>", "<color=yellow>¸±½«<color>", "<color=yellow><bclr=red>´ó½«<bclr><color>" , "<color=black>ÔªË§<color>"}
+	tbRANKNAME={"<color=white>Binh SÜ<color>", "<color=0xa0ff>HiÖu óy<color>", "<color=0xff>Thèng LÜnh<color>", "<color=yellow>Phã T­íng<color>", "<color=yellow><bclr=red>§¹i T­íng<bclr><color>" , "<color=black>Nguyªn So¸i<color>"}
 	
 	TITLE_BONUSRANK1 = 0		--³ÉÎªÏàÓ¦Í·ÏÎËùÐè»ý·ÖÖµ
 	TITLE_BONUSRANK2 = 10000

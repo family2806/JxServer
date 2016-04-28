@@ -18,7 +18,7 @@ function tbPAH122010_Head:addDialog(tbDialog)
 	if self:isActive() ~= 1 then
 		return
 	end
-	tbDialog:AddOptEntry("ÁìÈ¡12ÔÂ·½Ó¢ºÀ½±Àø",tbPAH122010_Head.main,{tbPAH122010_Head})
+	tbDialog:AddOptEntry("NhËn phÇn th­ëng Ph­¬ng Anh Hµo th¸ng 12",tbPAH122010_Head.main,{tbPAH122010_Head})
 end
 
 function tbPAH122010_Head:main()	
@@ -31,24 +31,24 @@ function tbPAH122010_Head:main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbMainDialog = DailogClass:new(szNpcName)
-	tbMainDialog.szTitleMsg = format("´Ë´Î±ÈÈüµÄ½±ÀøÎª<color=red>%d<color> [ºì°ü¾ãÀÖ²¿]´óÏÀÏëÂíÉÏÁìÂğ?", tbList[GetAccount()])
-	tbMainDialog:AddOptEntry("Áì", tbPAH122010_Head.getAward, {tbPAH122010_Head})
+	tbMainDialog.szTitleMsg = format("Gi¶i ®Êu lÇn nµy nhËn ®­îc phÇn th­ëng lµ <color=red>%d<color> [Hång Bao C©u L¹c Bé]. §¹i hiÖp cã muèn nhËn ngay kh«ng?", tbList[GetAccount()])
+	tbMainDialog:AddOptEntry("NhËn", tbPAH122010_Head.getAward, {tbPAH122010_Head})
 	tbMainDialog:Show()
 end
 
 function tbPAH122010_Head:getAward()
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBitPos) == 1) then
-		Talk(1, "", "´óÏÀ²»ÊÇÁì½±ÁËÂğ?²»ÒªÌ«Ì°ĞÄÁË¡£")
+		Talk(1, "", "Ch¼ng ph¶i ®¹i hiÖp ®·  nhËn th­ëng råi sao? §õng tham lam qu¸.")
 		return
 	end
 	local strAccount = GetAccount()
 	local nAwardCount = tbList[strAccount]
 	if (CalcFreeItemCellCount() < nAwardCount) then
-		Talk(1, "", format("ÎªÈ·±£²Æ²ú°²È«£¬Çë×îÉÙÁôÏÂ<color=red>%d<color> ×°±¸¿ÕÎ».", nAwardCount))
+		Talk(1, "", format("§Ó b¶o vÖ tµi s¶n vui lßng chõa İt nhÊt <color=red>%d<color> « trèng trong hµnh trang.", nAwardCount))
 		return
 	end
 	if (tbExtPointLib:SetBitValue(self.nExtPointID, self.nBitPos, 1) == 1)then
-		local tbAward = {szName="ºì°ü¾ãÀÖ²¿",tbProp={6,1,30032,1,0,0},nCount=nAwardCount,nExpiredTime = 43200}
-		tbAwardTemplet:GiveAwardByList(tbAward, "ÁìÈ¡12ÔÂ·½Ó¢ºÀ½±Àø")
+		local tbAward = {szName="Hång Bao C©u L¹c Bé",tbProp={6,1,30032,1,0,0},nCount=nAwardCount,nExpiredTime = 43200}
+		tbAwardTemplet:GiveAwardByList(tbAward, "NhËn phÇn th­ëng Ph­¬ng Anh Hµo th¸ng 12")
 	end
 end

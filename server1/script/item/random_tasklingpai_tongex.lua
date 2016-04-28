@@ -4,17 +4,17 @@ Include([[\script\tong\workshop\tongcolltask.lua]]);
 function main(nItem)
 	_, nTongID = GetTongName();
 	if (nTongID <= 0) then
-		Say("ÄãÄ¿Ç°²»ÔÚ<color=yellow>°ï»á<color>ÖĞ£¬ÎŞ·¨Ê¹ÓÃ°ï»áÌØÊâÈÎÎñÁîÅÆ¡£", 0);
-		Msg2Player("ÄãÄ¿Ç°²»ÔÚ<color=yellow>°ï»á<color>ÖĞ£¬ÎŞ·¨Ê¹ÓÃ°ï»áÌØÊâÈÎÎñÁîÅÆ¡£");
+		Say("Ch­a gia nhËp <color=yellow>bang ph¸i<color>, kh«ng thÓ sö dông lÖnh bµi nhiÖm vô ®Æc biÖt.", 0);
+		Msg2Player("Ch­a gia nhËp <color=yellow>bang ph¸i<color>, kh«ng thÓ sö dông lÖnh bµi nhiÖm vô ®Æc biÖt.");
 		return 1;
 	end;
 	local nCount = GetTask(TASK_LP_COUNT);
 	SetTask(TASK_LP_ITEMID, nItem); --»ñÈ¡ÁîÅÆµÈ¼¶
 	
 	if (nCount > 0) then
-		Say("<color=green>ÈÎÎñÁîÅÆ<color>£ºÄúµ±Ç°ÓĞ»¹Î´Íê³ÉµÄËæ»úÈÎÎñ£¬ÄãÈ·¶¨Òª½ÓÊÜĞÂµÄÈÎÎñÂğ£¿", 2,
-			"ÊÇµÄ£¬ÎÒÒª·ÅÆúÖ®Ç°µÄËæ»úÈÎÎñ/cancelformertask",
-			"²»ÁË£¬»¹ÊÇµÈµÈ°É/OnCancel");
+		Say("<color=green>LÖnh bµi nhiÖm vô<color>: HiÖn t¹i cã nhiÖm vô ngÉu nhiªn ch­a hoµn thµnh, vÉn muèn tiÕp nhËn nhiÖm vô míi sao?", 2,
+			"§óng vËy, ta muèn hñy bá nhiÖm vô tr­íc ®©y/cancelformertask",
+			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnCancel");
 		return 1;
 	else
 		wanttask()
@@ -26,15 +26,15 @@ end;
 function cancelformertask()
 	if (GetTask(TASK_LP_COUNT) ~= 0) then
 		rwlp_cleartask();
-		Say("ÄãÒÑ¾­È¡ÏûÁË<color=yellow>ÌØÊâÈÎÎñÁîÅÆ<color>ÈÎÎñ¡£", 0);
-		Msg2Player("ÄãÒÑ¾­È¡ÏûÁË<color=yellow>ÌØÊâÈÎÎñÁîÅÆ<color>ÈÎÎñ¡£");
+		Say("§· hñy bá nhiÖm vô <color=yellow>LÖnh bµi nhiÖm vô ®Æc biÖt<color>.", 0);
+		Msg2Player("§· hñy bá nhiÖm vô <color=yellow>LÖnh bµi nhiÖm vô ®Æc biÖt<color>.");
 	end;
 end;
 
 -- ½ÓÊÜÁîÅÆÈÎÎñ
 function wanttask()
 	if (GetTask(TASK_LP_COUNT) ~= 0) then
-		Say("ÄãÒÑ¾­ÓĞÒ»¸öÌØÊâÈÎÎñÁîÅÆÈÎÎñÁË£¬²»ÄÜ½ÓĞÂÈÎÎñÁË¡£", 0);
+		Say("HiÖn cã nhiÖm vô LÖnh bµi nhiÖm vô ®Æc biÖt, kh«ng thÓ tiÕp nhËn nhiÖm vô míi.", 0);
 		return
 	end;
 	
@@ -51,17 +51,17 @@ function wanttask()
 		nCount = GetItemParam(nItem, 5);
 	end;
 	
-	local szContent = "<color=yellow>"..nLevel.."<color>¼¶ÒÔÉÏ²»Í¬°ï»áµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>£¬";
+	local szContent = "<color=yellow>"..nLevel.."<color> trë lªn ë c¸c bang héi kh¸c nhau<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>, ";
 	if (nResult == 0) then
-		Say("±¾À´ĞèÒªÄãÈ¥Ôì·Ã¼¸Î»"..szContent.."µ«ÊÇºÜ¿ÉÏ§Ä¿Ç°ËùÓĞ°ï»áµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»<color>µÈ¼¶¶¼²»×ã£¬ËùÒÔ»¹ÊÇÇëÄãÏÂ´ÎÔÙÊÔÊÔ°É¡£", 0);
-		Msg2Player("ÔİÊ±Ã»ÓĞ×ã¹»¶àµÄ"..szContent.."ÇëÏÂ´ÎÔÙ³¢ÊÔ¡£");
+		Say("vèn muèn ng­¬i ®i t×m vµi vŞ "..szContent..", nh­ng tiÕc lµ ®¼ng cÊp <color=yellow>"..tab_Workshop[nWorkshopIdx].." ph­êng<color> cña c¸c bang héi ®Òu kh«ng ®ñ, lÇn sau ®Õn thö xem.", 0);
+		Msg2Player("T¹m thêi kh«ng cã ®ñ "..szContent..", lÇn sau ®Õn thö xem.");
 		return
 	end;
 	
-	szContent = "<color=yellow>"..nCount.."<color>Î»"..szContent;
-	Say("±¾°ïµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>×î½üĞÄĞ÷²»¼Ñ£¬Ô­±¾´òËãÉÏ¾©¸Ï¿¼£¬ÇóÈ¡Ò»¸ö¹¦Ãû¡£Ã»³ÉÏë¾©¹ÙÒªÇó£¬³öÊË¾Ù×ÓĞèÒªÓĞµ±µØÃûÊ¿µÄ¼öÊé¡£Ô½ÊÇÃûÍûÂú¾©Ê¦Ö®ÈË£¬¿¼È¡¹¦ÃûµÄ»ú»á¾ÍÔ½´ó¡£Âé·³ÄãÎªËûÈ¥ÕÒ"..szContent.."»ñµÃËûÃÇµÄ¼öÊé¡£", 2,
-	"ºÃ£¬ÎÒÒ»¶¨¾¡Á¦¶øÎª/#lp_confirm("..nLevel..","..nWorkshopIdx..","..nCount..", 1)",
-	"Õâ¸öÈÎÎñÌ«ÄÑÁË£¬ÎÒ²»×öÁË/#lp_confirm("..nLevel..","..nWorkshopIdx..","..nCount..", 0)");
+	szContent = "<color=yellow>"..nCount.."<color> vŞ"..szContent;
+	Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> d¹o nµy tinh thÇn kh«ng ®­îc tèt, muèn lªn kinh øng thİ nh­ng cÇn ph¶i thu thËp ®ñ Th­ tiÕn cö cña c¸c danh sü n¬i ®©y. PhiÒn ng­¬i ®i t×m gióp "..szContent.."Th­ tiÕn cö cña hä.", 2,
+	"§­îc, ta sÏ cè g¾ng./#lp_confirm("..nLevel..","..nWorkshopIdx..","..nCount..", 1)",
+	"NhiÖm vô nµy khã qu¸, ta kh«ng d¸m nhËn./#lp_confirm("..nLevel..","..nWorkshopIdx..","..nCount..", 0)");
 end;
 
 --³õÊ¼»¯Ò»¸öÈÎÎñ
@@ -101,15 +101,15 @@ function init_task()
 end;
 
 function lp_confirm(nLevel, nWorkshopIdx, nCount, bOK)
-	local szContent = "<color=yellow>"..nCount.."<color>Î»<color=yellow>"..nLevel.."<color>¼¶ÒÔÉÏ²»Í¬°ï»áµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>";
+	local szContent = "<color=yellow>"..nCount.."<color>vŞ <color=yellow>"..nLevel.."<color> trë lªn ë c¸c bang héi kh¸c nhau<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>";
 	
 	nt_SetTask(TASK_LP_ZONGGUANIDX, nWorkshopIdx);
 	nt_SetTask(TASK_LP_ZONGGUANLEVEL, nLevel);
 	
 	if (bOK == 1) then
-		Say("±¾°ïµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>×î½üĞÄĞ÷²»¼Ñ£¬Ô­±¾´òËãÉÏ¾©¸Ï¿¼£¬ÇóÈ¡Ò»¸ö¹¦Ãû¡£Ã»³ÉÏë¾©¹ÙÒªÇó£¬³öÊË¾Ù×ÓĞèÒªÓĞµ±µØÃûÊ¿µÄ¼öÊé¡£Ô½ÊÇÃûÍûÂú¾©Ê¦Ö®ÈË£¬¿¼È¡¹¦ÃûµÄ»ú»á¾ÍÔ½´ó¡£Âé·³ÄãÎªËûÈ¥ÕÒ"..szContent.."»ñµÃËûÃÇµÄ¼öÊé¡£", 1, "ÎÒÖªµÀÁË/lp_confirmtwo");
+		Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> d¹o nµy tinh thÇn kh«ng ®­îc tèt, muèn lªn kinh øng thİ nh­ng cÇn ph¶i thu thËp ®ñ Th­ tiÕn cö cña c¸c danh sü n¬i ®©y. PhiÒn ng­¬i ®i t×m gióp "..szContent.."Th­ tiÕn cö cña hä.", 1, "Ta biÕt råi!/lp_confirmtwo");
 	else
-		Say("±¾°ïµÄ<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>Ï£ÍûÄãÎªËûÈ¥ÕÒ"..szContent.."»ñµÃËûÃÇµÄ¼öÊé¡£ÄãÕæµÄÃ»ÓĞÊ±¼äÂğ£¿",2 ,"ÎÒ»¹ÊÇ½ÓÊÕÕâ¸öÈÎÎñ°É/lp_confirmtwo", "ÎÒÈ·Êµ²»Òª½ÓÊÕÕâ¸öÈÎÎñ/OnCancel");
+		Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> muèn ng­¬i t×m gióp "..szContent.."Th­ tiÕn cö, ng­¬i kh«ng cã thêi gian sao?",2 ,"Ta vÉn ch­a nhËn nhiÖm vô nµy./lp_confirmtwo", "Ta thËt sù kh«ng muèn nhËn nhiÖm vô nµy./OnCancel");
 	end;
 end;
 
@@ -127,5 +127,5 @@ function lp_confirmtwo()
 	end;
 
 	nt_SetTask(TASK_LP_COUNT, nCount);
-	Msg2Player("Äã½ÓÊÕÁËÈ¥Óë<color=yellow>"..nCount.."<color>¸ö<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»×Ü¹Ü<color>¶Ô»°£¬»ñµÃ¼öÊéµÄÈÎÎñ£¬<color=yellow>"..tab_Workshop[nWorkshopIdx].."·»<color>µÄµÈ¼¶±ØĞëÎª<color=yellow>"..nLevel.."<color>¼¶¡£");
+	Msg2Player("B¹n ®ång ı ®i gÆp <color=yellow>"..nCount.."<color> <color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> ®Ó nhËn nhiÖm vô Th­ tiÕn cö, ®¼ng cÊp <color=yellow>"..tab_Workshop[nWorkshopIdx].." ph­êng<color> cÇn ®¹t cÊp <color=yellow>"..nLevel.."<color>.");
 end;

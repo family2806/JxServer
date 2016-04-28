@@ -11,13 +11,13 @@ local AWARD_TABLE = tbAwardList["GiftAward"]
 local _limit = function()
 	local tbProp = ITEM_XMAS_STOCKING.tbProp
 	if CalcEquiproomItemCount(tbProp[1], tbProp[2], tbProp[3], tbProp[4]) <= 0 then
-		Talk(1, "", format("ÄãÃ»ÓÐÐ¯´ø%s.", ITEM_XMAS_STOCKING.szName))
+		Talk(1, "", format("Ng­¬i kh«ng mang theo %s.", ITEM_XMAS_STOCKING.szName))
 		return 1
 	end	
 end
 
 local _OnBreak = function()
-	Msg2Player("ÊÕ¼¯ÒÑ±»¼ä¶Ï.")
+	Msg2Player("Thu thËp ®· bÞ gi¸n ®o¹n.")
 end
 
 local _GetAward = function(nNpcIndex, dwNpcId)

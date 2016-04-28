@@ -14,7 +14,7 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>Ğ¡µË×Ó£ºÎÒÒÑ¾­³ÔÁËÒ»¸öÀñ°İµÄºìÊíÏ¡·¹£¬Èç¹ûÄÜ¹»³ÔÉÏÒ»¶Ù´óÃ×·¹£¬²»ÏşµÃÓĞ¼¸ºÃ¡£"
+	tbDailog.szTitleMsg = "<#><npc>TiÓu ®Æng tö: Ta ®· ¨n ch¸o víi khoai h¬n mét tuÇn råi. Gi¸ mµ ¨n ®­îc mét b÷a c¬m no nª nhØ?"
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog)
 	--µ¯³ö¶Ô»°¿ò

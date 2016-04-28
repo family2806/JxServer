@@ -314,15 +314,15 @@ SKILLS={
 		--missle_missrate={{{1,65},{15,20},{20,15},{21,14}}},
 		skill_desc=
 			function(level)
-				return "ÀäÈ´Ê±¼ä£º<color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercast_v[1]) / 18).."Ãë<color>\n"..
-				"ÆïÂíÊ©Õ¹ÀäÈ´Ê±¼ä£º<color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).."Ãë<color>\n"..
-				"ÒÔ<color=orange>"..floor(100 -Link(level,SKILLS.quntisuijizoudong.missle_missrate[1])).."%<color>µÄ¸ÅÂÊÊ¹×ÔÉíÒ»¶¨·¶Î§ÄÚ×î¶à"..
-				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).."¸öµĞÈË¿Ö¾å<color=orange>"..
-				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).."Ãë<color>\n"..
-				"ËÀÍöºóÓĞ<color=orange>"..floor(Link(level,SKILLS.tianren120.autodeathskill[3])).."%<color>µÄ¸ÅÂÊÊ¹×ÔÉíÒ»¶¨·¶Î§ÄÚ×î¶à"..
-				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).."¸öµĞÈË¿Ö¾å<color=orange>"..
-				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).."Ãë<color>\n"..
-				"¿Ö¾åµ¼ÖÂËæ»ú×ß¶¯¼°¹¥»÷²Ù×÷ÎŞĞ§\n"
+				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
+				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n"..
+				"X¸c suÊt <color=orange>"..floor(100 -Link(level,SKILLS.quntisuijizoudong.missle_missrate[1])).."%<color> khiÕn cho tèi ®a "..
+				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bŞ ho¶ng lo¹n trong <color=orange>"..
+				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
+				"Sau khi chÕt cã x¸c suÊt <color=orange>"..floor(Link(level,SKILLS.tianren120.autodeathskill[3])).."%<color> khiÕn cho tèi ®a "..
+				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bŞ ho¶ng lo¹n trong <color=orange>"..
+				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..
+				"Trong lóc ho¶ng lo¹n kh«ng thÓ tÊn c«ng vµ di chuyÓn \n"
 			end,
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},

@@ -4,30 +4,30 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "DailogOption",
-	szName = "ÎÒÏëÓÃÊ÷Ö¦»»È¡¾­Ñé",
+	szName = "Ta muèn dïng nh¸nh c©y ®æi lÊy kinh nghiÖm",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ñ©Ã·","",""},
+	tbMessageParam = {"TuyÕt mai","",""},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:ShowSubDailog",	{"shitouer1","¸óÏÂÏëÓÃÊ²Ã´À´»»£¿"} },
+		{"PlayerFunLib:ShowSubDailog",	{"shitouer1","C¸c h¹ muèn dïng c¸ch nµo ®Ó ®æi?"} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃg %s »»È¡¾­Ñé", "Ğ¡Ê÷Ö¦", 4000000),
+	szName = format("Sö dông %s ®æi thµnh %u kinh nghiÖm", "Nh¸nh c©y tiÓu", 4000000),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer1","»»¾­Ñé",0,0,0,"",0},
+	tbMessageParam = {"shitouer1","§æi kinh nghiÖm",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ğ¡Ê÷Ö¦","return {tbProp={6,1,2141,1,0,0},}",1} },
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦£¬ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»ÄÜµÃµ½300.000.000 ¾­Ñé","<"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y tiÓu","return {tbProp={6,1,2141,1,0,0},}",1} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
@@ -38,14 +38,14 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃ%s »»³É %u ¾­Ñé", "ÖĞÊ÷Ö¦", 6000000),
+	szName = format("Sö dông %s ®æi thµnh %u kinh nghiÖm", "Nh¸nh c©y trung", 6000000),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer1","»»¾­Ñé",0,0,0,"",0},
+	tbMessageParam = {"shitouer1","§æi kinh nghiÖm",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÖĞÊ÷Ö¦","return {tbProp={6,1,2142,1,0,0},}",1} },
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦, ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»ÄÜµÃ300.000.000 ¾­Ñé","<"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y trung","return {tbProp={6,1,2142,1,0,0},}",1} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
@@ -56,14 +56,14 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃ %s »»³É %u ¾­Ñé", "´óÊ÷Ö¦", 10000000),
+	szName = format("Sö dông %s ®æi thµnh %u kinh nghiÖm", "Nh¸nh c©y ®¹i", 10000000),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer1","»»¾­Ñé",0,0,0,"",0},
+	tbMessageParam = {"shitouer1","§æi kinh nghiÖm",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"´óÊ÷Ö¦","return {tbProp={6,1,2143,1,0,0},}",1} },
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦,ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»µÃ300.000.000 ¾­Ñé","<"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y ®¹i","return {tbProp={6,1,2143,1,0,0},}",1} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
@@ -74,30 +74,30 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "DailogOption",
-	szName = format("ÊÕµ½ %s", "×°ÊÎµã"),
+	szName = format("NhËn ®­îc %s", "®iÓm trang trİ"),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ñ©Ã·","",""},
+	tbMessageParam = {"TuyÕt mai","",""},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:ShowSubDailog",	{"shitouer2","¸óÏÂÏëÓÃÊ²Ã´À´»»È¡?"} },
+		{"PlayerFunLib:ShowSubDailog",	{"shitouer2","C¸c h¹ muèn dïng c¸ch nµo ®Ó ®æi?"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃ%s »» %d %s", "Ğ¡Ê÷Ö¦", 1, "×°ÊÎµã"),
+	szName = format("Sö dông %s ®æi %d %s", "Nh¸nh c©y tiÓu", 1, "®iÓm trang trİ"),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer2","»»×°ÊÎµã",0,0,0,"",0},
+	tbMessageParam = {"shitouer2","§æi ®iÓm trang trİ",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ğ¡Ê÷Ö¦","return {tbProp={6,1,2141,1,0,0},}",1} },
-		{"PlayerFunLib:IsHaveTong",	{"¸óÏÂ»¹Ã»ÓĞ°ï»á"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y tiÓu","return {tbProp={6,1,2141,1,0,0},}",1} },
+		{"PlayerFunLib:IsHaveTong",	{"C¸c h¹ vÉn ch­a cã bang héi"} },
 		{"tbZhongQiu200909:IsTimeAct",	{nil} },
 	},
 	tbActition = 
@@ -110,14 +110,14 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃ%s »»%d %s", "ÖĞÊ÷Ö¦", 2, "×°ÊÎµã"),
+	szName = format("Sö dông %s ®æi %d %s", "Nh¸nh c©y trung", 2, "®iÓm trang trİ"),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer2","»»×°ÊÎµã",0,0,0,"",0},
+	tbMessageParam = {"shitouer2","§æi ®iÓm trang trİ",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÖĞÊ÷Ö¦","return {tbProp={6,1,2142,1,0,0},}",1} },
-		{"PlayerFunLib:IsHaveTong",	{"¸óÏÂÒÀÈ»»¹Ã»ÓĞ°ï»á"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y trung","return {tbProp={6,1,2142,1,0,0},}",1} },
+		{"PlayerFunLib:IsHaveTong",	{"C¸c h¹ vÉn ch­a cã bang héi"} },
 		{"tbZhongQiu200909:IsTimeAct",	{nil} },
 	},
 	tbActition = 
@@ -130,14 +130,14 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "ComposeDailogOption",
-	szName = format("Ê¹ÓÃ%s »» %d %s", "´óÊ÷Ö¦", 3, "×°ÊÎµã"),
+	szName = format("Sö dông %s ®æi %d %s", "Nh¸nh c©y ®¹i", 3, "®iÓm trang trİ"),
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"shitouer2","»»×°ÊÎµã",0,0,0,"",0},
+	tbMessageParam = {"shitouer2","§æi ®iÓm trang trİ",0,0,0,"",0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"´óÊ÷Ö¦","return {tbProp={6,1,2143,1,0,0},}",1} },
-		{"PlayerFunLib:IsHaveTong",	{"¸óÏÂÒÀÈ»»¹Ã»ÓĞ°ï»á"} },
+		{"AddOneMaterial",	{"Nh¸nh c©y ®¹i","return {tbProp={6,1,2143,1,0,0},}",1} },
+		{"PlayerFunLib:IsHaveTong",	{"C¸c h¹ vÉn ch­a cã bang héi"} },
 		{"tbZhongQiu200909:IsTimeAct",	{nil} },
 	},
 	tbActition = 
@@ -150,29 +150,29 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 {
 	nId = 9,
 	szMessageType = "DailogOption",
-	szName = "¿´°ï»á×°ÊÎµã",
+	szName = "Xem ®iÓm trang trİ bang héi",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ñ©Ã·","",""},
+	tbMessageParam = {"TuyÕt mai","",""},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:ShowSubDailog",	{"shitouer3","´óÏÀÏë¿´Ê²Ã´£¿"} },
+		{"PlayerFunLib:ShowSubDailog",	{"shitouer3","§¹i hiÖp muèn xem c¸i g×?"} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
 {
 	nId = 10,
 	szMessageType = "DailogOption",
-	szName = "¿´±¾°ï×°ÊÎµãÇé¿ö",
+	szName = "Xem t×nh h×nh ®iÓm trang trİ cña bæn bang",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"shitouer3","",""},
 	tbCondition = 
 	{
-		{"PlayerFunLib:IsHaveTong",	{"¸óÏÂÒÀÈ»Ã»ÓĞ°ï»á"} },
+		{"PlayerFunLib:IsHaveTong",	{"C¸c h¹ vÉn ch­a cã bang héi"} },
 	},
 	tbActition = 
 	{
@@ -183,7 +183,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "DailogOption",
-	szName = "¿´°ï»á×°ÊÎµãÅÅĞĞ°ñÇé¿ö",
+	szName = "Xem ®iÓm trang trİ bang héiÅÅĞĞ°ñÇé¿ö",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"shitouer3","",""},
@@ -192,14 +192,14 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:ShowSubDailog",	{"shitouer3.1","Ñ¡¿´Ò»¸ö°ï»áÅÅĞĞ"} },
+		{"PlayerFunLib:ShowSubDailog",	{"shitouer3.1","Chän xem 1 bang xÕp h¹ng"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
 {
 	nId = 12,
 	szMessageType = "DailogOption",
-	szName = "Ã¿ÅúÅÅĞĞ°ñ",
+	szName = "B¶ng xÕp h¹ng mçi ®ît",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"shitouer3.1","",""},
@@ -215,7 +215,7 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "DailogOption",
-	szName = "ÖÜÅÅĞĞ°ñ",
+	szName = "B¶ng xÕp h¹ng tuÇn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"shitouer3.1","",""},
@@ -231,7 +231,7 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "DailogOption",
-	szName = "Õû¸ö»î¶¯µÄÅÅĞĞ°ñ",
+	szName = "B¶ng xÕp h¹ng suèt ho¹t ®éng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"shitouer3.1","",""},
@@ -247,13 +247,13 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "DailogOption",
-	szName = "ÁìÈ¡½±Æ·ÅÅĞĞ",
+	szName = "NhËn th­ëng xÕp h¹ng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ñ©Ã·","",""},
+	tbMessageParam = {"TuyÕt mai","",""},
 	tbCondition = 
 	{
-		{"PlayerFunLib:IsHaveTong",	{"¸óÏÂÒÀÈ»»¹Ã»ÓĞ°ï»á"} },
+		{"PlayerFunLib:IsHaveTong",	{"C¸c h¹ vÉn ch­a cã bang héi"} },
 	},
 	tbActition = 
 	{
@@ -264,10 +264,10 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 {
 	nId = 16,
 	szMessageType = "DailogOption",
-	szName = "§i×ßµ½¾­³£³öÏÖÊ¥µ®Ê÷µÄµØµã",
+	szName = "§i ®Õn ®Şa ®iÓm th­êng xuÊt hiÖn c©y gi¸ng sinh",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"³µ·ò","",""},
+	tbMessageParam = {"Xa phu","",""},
 	tbCondition = 
 	{
 	},
@@ -283,7 +283,7 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	szName = "ÉèÖÃÑ©Ã·±êÌâ",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Ñ©Ã·","<npc>".." ÎÒÕıĞèÒªÑ°ÕÒÃÀÀöµÄËÉÖ¦À´×°ÊÎÖÜÎ§µÄÊ¥µ®Ê÷£¬ÈÃËü¸ü¼ÓÂ¡ÖØ¡£´óÏÀ¿ÉÒÔ°ïÎÒÑ°ÕÒÍêÃÀµÄËÉÖ¦Âğ£¿?"},
+	tbMessageParam = {"TuyÕt mai","<npc>".."Ta ®ang cÇn t×m nh÷ng nh¸nh th«ng thËt ®Ñp ®Ó trang trİ cho nh÷ng C©y Gi¸ng Sinh quanh ®©y cµng thªm léng lÉy. §¹i hiÖp cã thÓ gióp ta t×m nh÷ng nh¸nh th«ng thËt tuyÖt vêi kh«ng?"},
 	tbCondition = 
 	{
 	},
@@ -295,17 +295,17 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 {
 	nId = 18,
 	szMessageType = "nil",
-	szName = "Ôö¼Ó¹¦µÂµã£¬Í¬Ê±Ôö¼Ó¾­Ñéµã",
+	szName = "T¨ng thªm ®iÓm c«ng ®øc ®ång thêi t¨ng ®iÓm kinh nghiÖm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦£¬ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»ÄÜµÃ300.000.000 ¾­Ñé","<"} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{4000000,0,"Ê÷Ö¦»»¾­Ñé"} },
+		{"PlayerFunLib:AddExp",	{4000000,0,"shuzhi huan jingyan"} },
 		{"PlayerFunLib:AddTask",	{2647,4} },
 	},
 }
@@ -313,17 +313,17 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 {
 	nId = 19,
 	szMessageType = "nil",
-	szName = "Ôö¼Ó¹¦µÂµã£¬Í¬Ê±Ôö¼Ó¾­Ñéµã",
+	szName = "T¨ng thªm ®iÓm c«ng ®øc ®ång thêi t¨ng ®iÓm kinh nghiÖm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦£¬ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»ÄÜµÃ300.000.000 ¾­Ñé","<"} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{6000000,0,"Ê÷Ö¦»»¾­Ñé"} },
+		{"PlayerFunLib:AddExp",	{6000000,0,"shuzhi huan jingyan"} },
 		{"PlayerFunLib:AddTask",	{2647,6} },
 	},
 }
@@ -331,17 +331,17 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 {
 	nId = 20,
 	szMessageType = "nil",
-	szName = "Ôö¼Ó¹¦µÂµã£¬Í¬Ê±Ôö¼Ó¾­Ñéµã",
+	szName = "T¨ng thªm ®iÓm c«ng ®øc ®ång thêi t¨ng ®iÓm kinh nghiÖm",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTask",	{2647,300,"Ê¹ÓÃĞ¡Ê÷Ö¦£¬ÖĞÊ÷Ö¦£¬´óÊ÷Ö¦£¬×î¶àÖ»ÄÜµÃ300.000.000 ¾­Ñé","<"} },
+		{"PlayerFunLib:CheckTask",	{2647,300,"Sö dông nh¸nh c©y tiÓu, nh¸nh c©y trung, nh¸nh c©y ®¹i nhiÒu nhÊt chØ ®­îc 300.000.000 kinh nghiÖm","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"Ê÷Ö¦»»¾­Ñé"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"shuzhi huan jingyan"} },
 		{"PlayerFunLib:AddTask",	{2647,10} },
 	},
 }

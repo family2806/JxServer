@@ -105,7 +105,7 @@ function battle_rank_award0808(nBattleLevel)
 	battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_Point)
 	for i=1, 20 do
 		if tbPlayer[i] and tbPlayer[i] > 0 then
-			Msg2MSAll(MISSIONID, format("<color=green>¿‡%d<color>: <color=yellow>%s<color>", i, doFunByPlayer(tbPlayer[i],GetName)))
+			Msg2MSAll(MISSIONID, format("<color=green>Hπng %d<color>: <color=yellow>%s<color>", i, doFunByPlayer(tbPlayer[i],GetName)))
 		end
 	end	
 	

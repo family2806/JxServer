@@ -9,7 +9,7 @@
 function main()
 	
 	if (CalcFreeItemCellCount() < 12)  then		--背包空间判断，必须预留12格
-		Say("请先再安排一下装备!");
+		Say("Xin h穣 s緋 x誴 l筰 h祅h trang trc !");
 		return 1;
 	end;
 	
@@ -17,12 +17,12 @@ function main()
 		AddEventItem(i);
 	end;
 	
-	Msg2Player("获得12块藏宝图.");
+	Msg2Player("Nh薾 頲 12 m秐h t祅g b秓 .");
 	
 	WriteLog(format("%s\t%s\tName:%s\tAccount:%s\t",
-				"锦盒",
+				"H閜 g蕀",
 				GetLocalDate("%Y-%m-%d %X"),
 				GetName(),
 				GetAccount(),
-				"获得12块藏宝图."));
+				"Nh薾 頲 12 m秐h t祅g b秓 ."));
 end;

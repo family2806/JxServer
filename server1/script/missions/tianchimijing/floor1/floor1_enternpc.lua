@@ -20,22 +20,22 @@ function main()
 		local nNpcIndex = GetLastDiagNpc()
 		local szNpcName = GetNpcName(nNpcIndex)
 		local tbDailog = DailogClass:new(szNpcName)
-		tbDailog.szTitleMsg = "<#><npc>ÕâÎ»Ğ¡ÏÀ£¬ÎÒ·¢ÏÖÔÚÕâ¸öË®Ì¶ÀïÓĞÒ»ÌõÃÜµÀ£¬ÔÚÃÜµÀÖĞ²¼ÖÃ×ÅºÜ¶à»ú¹ØÏİÚå£¬ĞèÒªÁ·Ï°Çá¹¦²ÅÄÜ¹ıÈ¥£¬ÌıËµÃÜµÀ×îºóÒ»¶ÎÓĞºÜ¶à±¦²Ø¡£"
+		tbDailog.szTitleMsg = "<#><npc>vŞ tiÓu hiÖp nµy, ta ph¸t hiÖn trong ®Çm n­íc nµy cã mét ®­êng mËt ®¹o, trong mËt ®¹o nµy bµy bè rÊt nhiÒu c¬ quan c¹m bÉy, cÇn ph¶i luyÖn tËp Khinh C«ng ®¹i hiÖp míi cã thÓ ®i qua ®­îc, nghe ®ån r»ng ë ®o¹n cuèi cña mËt ®¹o cã v« sè B¶o Tµng"
 		G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
-		tinsert(tbDailog, {"ÎÒÏëÔÙÁË½âÒ»ÏÂ", Realize})
-		tinsert(tbDailog, {"½áÊø¶Ô»°"})
+		tinsert(tbDailog, {"Ta muèn t×m hiÓu mét chót", Realize})
+		tinsert(tbDailog, {"KÕt thóc ®èi tho¹i"})
 		CreateNewSayEx(tbDailog.szTitleMsg, tbDailog)
 end
 
 function Realize()
 	local tbOpt = {}
-	local szTitle = "<#><npc>Õâ¸öÃÜµÀºÃÏñÃ»ÓĞ¾¡Í·£¬´ÓÕâÀï½øÈ¥µÄÈË£¬Ã»ÓĞÒ»¸öÄÜ³öÀ´£¬ÌıËµÕâ¸öÃÜµÀ²ØÓĞºÜ¶à½ğÈË£¬ËûÃÇºÜ²ĞÈÌ£¬ÉÙÏÀÄã×îºÃÊÇÕÒ¼¸¸öÈËÒ»Æğ½øÈë¡£."
-	tinsert(tbOpt, {"½øÈëÃÜµÀ", ReadyGo})
+	local szTitle = "<#><npc>Chç mËt ®¹o nµy h×nh nh­ kh«ng cã ®¸y, nh÷ng ng­êi tõ chç nµy ®i vµo tõ tr­íc ®Õn nay còng ch­a cã mét ai mµ ra ®­îc, nghe ®ån r»ng ë trong mËt ®¹o nµy Èn nÊp rÊt nhiÒu ng­êi Kim, bän hä rÊt lµ tµn ¸c, tiÓu hiÖp ng­¬i tèt nhÊt lµ t×m thªm vµi ng­êi cïng nhau tæ ®éi ®Ó ®i vµo."
+	tinsert(tbOpt, {"§i vµo mËt ®¹o", ReadyGo})
 	--Check team member condition - Modified By DinhHQ - 20120405
 	if GetTeamSize() >= 2 then
-		tinsert(tbOpt, {"¼ì²é×é¶ÓÌõ¼ş", VnCheckTeamCondition, {1, 1}})
+		tinsert(tbOpt, {"KiÓm tra ®iÒu kiÖn tæ ®éi", VnCheckTeamCondition, {1, 1}})
 	end
-	tinsert(tbOpt, {"Òª²»ËãÁË°É"})
+	tinsert(tbOpt, {"Hay lµ th«i  nhĞ"})
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
@@ -49,9 +49,9 @@ end
 
 function SingleEnter()
 	local tbOpt = {}
-	local szTitle = "<#><npc> ÉÙÏÀÄãÈ·¶¨Ò»¸öÈË´©Ô½ÃÜµÀ?"
-	tinsert(tbOpt, {"¶Ô.",SingleEnterSure})
-	tinsert(tbOpt, {"ÈÃÎÒÏëÏë"})
+	local szTitle = "<#><npc> ThiÕu hiÖp ng­¬i x¸c ®Şnh v­ît mËt ®¹o mét m×nh ­ ?"
+	tinsert(tbOpt, {"§óng råi.",SingleEnterSure})
+	tinsert(tbOpt, {"§Ó ta suy nghÜ ®·"})
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
@@ -65,8 +65,8 @@ end
 
 function DealWithNotCaption()
 	local tbOpt = {}
-	local szTitle = "<#><npc> ÉÙÏÀÄã²»ÊÇ¶Ó³¤£¬Òª²»Çë¶Ó³¤À´ÕâÀï°É"
-	tinsert(tbOpt, {"ºÃÁË."})
+	local szTitle = "<#><npc> ThiÕu hiÖp ng­¬I kh«ng ph¶i lµ ®éi tr­ëng, hay lµ mêi ®éi tr­ëng cña ng­¬i ®Õn ®©y nhĞ"
+	tinsert(tbOpt, {"§­îc råi."})
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
@@ -89,8 +89,8 @@ function DealWithIsCaption()
 	if bInSameMap ~= 0 then
 		TeamEnterSure()
 	else	
-		szTitle = "<#><npc> ÄãµÄ¶ÓÎéÀï»¹ÓĞÏÀÊ¿Ã»ÓĞ×°±¸ºÃ£¬ÇëÕÙ¼¯ËùÓĞÈËµ½ÎÒÕâÀïºó²ÅÄÜ½øÈë."
-		tinsert(tbOpt, {"ºÃ£¬ÎÒÂíÉÏÕÙ¼¯ËûÃÇÀ´ "})
+		szTitle = "<#><npc> HiÖp sü trong ®éi ngò cña ng­¬i cßn cã ng­êi ch­a chuÈn bŞ xong, xin h·y triÖu tËp tÊt c¶ mäi ng­êi ®Õn chç cña ta ®©y míi cã thÓ ®i vµo ®­îc."
+		tinsert(tbOpt, {"§­îc, ta triÖu tËp hä l¹i ngay b©y giê."})
 		CreateNewSayEx(szTitle, tbOpt)
 	end
 end
@@ -98,7 +98,7 @@ end
 function SingleEnterSure()
 	--Check enter pass - Modified By DinhHQ - 20120405
 	if not VnCheckPass(PlayerIndex) or not VnConsumePass(PlayerIndex) then
-		Talk(1, "", "Ö»ĞèÒª¸øÎÒÒ»¸ö<color=red>Ìì³ØÃÜÁî<color> ÎÒ½«Ö»¸øÄãÈë¿Ú.")
+		Talk(1, "", "ChØ cÇn giao cho ta 1 c¸i <color=red>Thiªn Tr× MËt LÖnh<color> ta sÏ chØ cho ng­¬i lèi vµo.")
 		return
 	end
 	local nTbSize = getn(tbEnterPosConfigPath)
@@ -157,7 +157,7 @@ function VnConsumePass(nPlayerIdx)
 end
 function VnCheckTeamCondition(bShowDialog1, bShowDialog2)
 	if IsCaptain() ~= 1 then
-		Talk(1, "", "Äã²»ÊÇ¶Ó³¤£¬²»ÄÜÖ´ĞĞ¸Ã²Ù×÷£¬Çë½Ğ¶Ó³¤À´Õâ!")
+		Talk(1, "", "Ng­¬i kh«ng ph¶i lµ ®éi tr­ëng kh«ng thÓ thùc hiÖn thao t¸c nµy, h·y kªu ®éi tr­ëng cña ng­¬i tíi ®©y!")
 		return
 	end
 	local tbDialog = {}
@@ -167,23 +167,23 @@ function VnCheckTeamCondition(bShowDialog1, bShowDialog2)
 		--Check enter pass
 		PlayerIndex = GetTeamMember(i)
 		if not VnCheckPass(PlayerIndex) then
-			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Ã»ÓĞÌì³ØÃÜÁî"))
+			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Kh«ng cã Thiªn Tr× MËt LÖnh"))
 		end	
 	end
 	PlayerIndex = nOldPlayer
 	if getn(tbDialog) > 0 then		
 		if bShowDialog1 then
-			local strTittle = "×é¶ÓÄ¿Ç°²»ÄÜ½øÈëÌì³ØÃØ¾³:"
+			local strTittle = "Tæ ®éi hiÖn t¹i kh«ng thÓ vµo Thiªn Tr× MËt C¶nh:"
 			for i = 1, getn(tbDialog) do
 				strTittle = strTittle.."\n"..tbDialog[i]
 			end
-			Describe(strTittle, 1, "¹Ø±Õ/OnCancel")
+			Describe(strTittle, 1, "§ãng/OnCancel")
 		end
 		return nil
 	else
 		if bShowDialog2 then
-			local strTittle = "×é¶ÓÄ¿Ç°¿ÉÒÔ½øÈëÌì³ØÃØ¾³"
-			Describe(strTittle, 1, "¹Ø±Õ/OnCancel")
+			local strTittle = "Tæ ®éi hiÖn t¹i cã thÓ vµo Thiªn Tr× MËt C¶nh"
+			Describe(strTittle, 1, "§ãng/OnCancel")
 		end
 		return 1
 	end

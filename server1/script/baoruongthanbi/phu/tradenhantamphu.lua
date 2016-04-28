@@ -1,5 +1,5 @@
 function TradeNhanTamPhu_main()
-	 AskClientForNumber("DoTaskYes_main",1,20,"<#>ÊäÈëĞèÒª¹ºÂòµÄÊıÁ¿")
+	 AskClientForNumber("DoTaskYes_main",1,20,"<#>NhËp sè l­îng cÇn mua")
 end
 
 function DoTaskYes_main(nCount)
@@ -8,11 +8,11 @@ function DoTaskYes_main(nCount)
 	end
 	local nSumMoney = nCount * 200000
 	if (CalcFreeItemCellCount() < nCount +2) then
-		Talk(1,"",format("×°±¸²»×ã %d ¿Õ¸ñ", nCount + 2))
+		Talk(1,"",format("Hµnh trang kh«ng ®ñ %d « trèng", nCount + 2))
 		return
 	end
 	if (GetCash() < nSumMoney ) then
-		Talk(1,"","²»×ãÒøÁ½, Çë´óÏÀÔÙ¼ì²éÒ»ÏÂ!")
+		Talk(1,"","Kh«ng ®ñ ng©n l­îng, Xin §¹i hiÖp kiÓm tra l¹i !")
 		return
 	end
 	if (Pay(nSumMoney)==1) then
@@ -20,10 +20,10 @@ function DoTaskYes_main(nCount)
 			local ItemIndex = AddItem(6,1,30040,1,0,0)
 			ITEM_SetExpiredTime(ItemIndex, 10080);
 			SyncItem(ItemIndex);
-			Msg2Player("ÄúÊÕµ½ÁËÈÊĞÄ·û")
+			Msg2Player("B¹n nhËn ®­îc  Nh©n T©m Phï")
 		end
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."ÉñÃØ±¦Ïä"..GetAccount().."\t"..GetName().."\t".."¹ºÂòÈÊĞÄ·ûÊıÁ¿"..nCount)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."B¶o R­¬ng ThÇn Bİ"..GetAccount().."\t"..GetName().."\t".."Mua Nh©nT©m Phï sè l­îng "..nCount)
 	else
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."ÉñÃØ±¦Ïä"..GetAccount().."\t"..GetName().."\t".."¹ºÂòÈÊĞÄ·ûÊ§°Ü£¬ÊıÁ¿ "..nCount)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."B¶o R­¬ng ThÇn Bİ"..GetAccount().."\t"..GetName().."\t".."Mua Nh©nT©m Phï ThÊt B¹i, sè l­îng "..nCount)
 	end
 end

@@ -5,35 +5,35 @@ function main(sel)
 	UTask_world22 = GetTask(22)
 	if (UTask_world22 == 0) then		-- ÈÎÎñÆô¶¯
 		if (GetSex() == 0) then
-			Say("¸ç¸ç£¬ÎÒ¸¸Ç×ÕıÔÚ´åÍâ½ÌÎä¹¦£¬Äã¿ÉÒÔ°ï´ø·¹¸øËûÂğ? ",2,"°ïËı´ø·¹. /W22_get_yes","Ã»¿Õ£¬ÕıÃ¦. /W22_get_no")
+			Say("Ca ca, cha cña muéi ®ang d¹y vâ nghÖ ë ngoµi th«n, huynh cã thÓ gióp mang c¬m cho «ng Êy kh«ng? ",2,"Gióp c« Êy mang c¬m. /W22_get_yes","Kh«ng r¶nh, ®ang bËn. /W22_get_no")
 		else
-			Say("½ã½ã£¬ÎÒ¸¸Ç×ÕıÔÚ´åÍâ½ÌÎä¹¦£¬Äã¿ÉÒÔ°ï´ø·¹¸øËûÂğ? ",2,"°ïËı´ø·¹. /W22_get_yes","Ã»¿Õ£¬ÕıÃ¦. /W22_get_no")
+			Say("Tû tû, cha cña muéi ®ang d¹y vâ nghÖ ë ngoµi th«n. Tû cã thÓ gióp mang c¬m cho «ng Êy kh«ng? ",2,"Gióp c« Êy mang c¬m. /W22_get_yes","Kh«ng r¶nh, ®ang bËn. /W22_get_no")
 		end
 	elseif (UTask_world22 == 5) then
 		if (HaveItem(233) == 0) then		-- µÀ¾ß¶ªÁË
 			AddEventItem(233)
 			if (GetSex() == 0) then
-				Talk(1,"","¸ç¸ç£¬Äã²»ÒªÍü¼Ç´ø·¹Å¶. ")
+				Talk(1,"","Ca ca, huynh ®õng quªn mang c¬m ®i nha. ")
 			else
-				Talk(1,"","½ã½ã£¬Äã²»ÒªÍü¼Ç´ø·¹Å¶. ")
+				Talk(1,"","Tû tû, tû ®õng quªn mang c¬m ®i nha. ")
 			end
 		else
 			if (GetSex() == 0) then
-				Talk(1,"","¸ç¸ç£¬¿ÉÒÔ¿ìµãÂğ£¿·¹¶¼Á¹ÁË. ")
+				Talk(1,"","Ca ca cã thÓ nhanh mét tİ ®­îc kh«ng, c¬m ®· nguéi l¹nh c¶ råi. ")
 			else
-				Talk(1,"","½ã½ã£¬¿ÉÒÔ¿ìµãÂğ£¿·¹¶¼Á¹ÁË. ")
+				Talk(1,"","Tû tû cã thÓ nhanh mét tİ ®­îc kh«ng, c¬m ®· nguéi l¹nh c¶ råi. ")
 			end
 		end
 	else				-- ·ÇÈÎÎñ¶Ô»°
-		Talk(1,"","ÎÒÄ¸Ç×ÒÑ¾­¸úÆäËûÄĞÈËÁË£¬ÎÒÓÉËûÊÕÑø£¬ËûµÄÇá¹¦Ò²ºÜºÃ£¬Ëû¾­³£ºÍ´åÍâÈËÁ·¹¦. ")
+		Talk(1,"","MÑ ta ®· ®i theo g· ®µn «ng kh¸c, ta ®­îc «ng ta nu«i d­ìng, khinh c«ng «ng rÊt giái, «ng cø lu«n luyÖn c«ng víi ng­êi ngoµi th«n. ")
 	end
 end;
 
 function W22_get_yes()
 	SetTask(22,5)
 	AddEventItem(233)
-	AddNote("½ÓÈÎÎñ£º°ïÖúÁøÒ¶¶ù´ø·¹¸ø´åÍâµÄÎäÊ¦. ")
-	Msg2Player("½ÓÈÎÎñ£º°ïÖúÁøÒ¶¶ù´ø·¹¸ø´åÍâµÄÎäÊ¦. ")
+	AddNote("NhËn nhiÖm vô: Gióp LiÔu DiÖp Nhi mang c¬m ra cho vâ s­ ë ngoµi th«n. ")
+	Msg2Player("NhËn nhiÖm vô: Gióp LiÔu DiÖp Nhi mang c¬m ra cho vâ s­ ë ngoµi th«n. ")
 end
 
 function W22_get_no()

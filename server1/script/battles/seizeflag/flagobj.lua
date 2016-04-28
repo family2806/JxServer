@@ -6,7 +6,7 @@ Include("\\script\\battles\\seizeflag\\head.lua")
 function main()
 npcidx = GetLastDiagNpc();
 
---¸ÃÆìÍ¬Ê±±»ÁíÒ»¸öÈËÄÃ×ßÁË£¬Ôò²»ÔÙ²Ù×÷
+--¸ÃÆìÍ¬Ê±±»ÁíÒ»¸öÈËÄÃ×ßÁË,Ôò²»ÔÙ²Ù×÷
 if (GetNpcParam(npcidx, 4) == 0 ) then
 	return
 end;
@@ -17,16 +17,16 @@ if (GetMissionV(MS_STATE) ~= 2) then
 	return 
 end;
 
---¹Ì¶¨Ä£Ê½Ê±£¬²»ÄÜÄÃµĞ·½µÄÆå
+--¹Ì¶¨Ä£Ê½Ê±,²»ÄÜÄÃµĞ·½µÄÆå
 if (GetMissionV(MS_FLAGMODE) == 1) then
 	if (GetNpcParam(npcidx, 3) ~= GetCurCamp()) then
-		Msg2Player("Äã±ØĞëÔËËÍ¼º·½µÄË§Æì£¡")
+		Msg2Player("B¹n chØ cã thÓ di chuyÓn So¸i Kú cña phe m×nh!")
 		return
 	end
 end
 
 	if (BT_GetData(PL_PARAM1) ~= 0 or BT_GetData(PL_PARAM2) ~= 0) then
-		Msg2Player("ÄãÒÑ¾­ÊÇÆìÊÖÁË£¬²»ÄÜÔÙ¶áÆäËüµÄÆì×Ó£¡");
+		Msg2Player("Trong tay cßn cê, kh«ng thÓ ®o¹t thªm cê kh¸c!");
 		return
 	end
 
@@ -39,17 +39,17 @@ end
 	BT_SetData(PL_PARAM2, y)
 
 
-	Msg2Player("Äã¶áµ½ÁËË§Æì£¬ĞèÒªÊ¹ÓÃÆì±ê½«Æì²åµ½<color=yellow>"..floor(x/(32*8)).."£¬"..floor(y/(32*16)));
+	Msg2Player("B¹n ®· ®o¹t So¸i Kú, h·y mau chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)));
 	W,X1,Y1 = GetWorldPos();
 	if (GetCurCamp() == 1) then
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF>ËÎ·½<color=yellow>"..GetName().."<color=0x00FFFF>ÔÚ<color=yellow>"..floor(X1/8).."£¬"..floor(Y1/16).."<color=0x00FFFF>Î»ÖÃ¶áÈ¡Ë§Æì£¬Ä¿Ç°ÕıÇ°Íù<color=yellow>"..floor(x/(32*8)).."£¬"..floor(y/(32*16)))
-		AddSkillState(460, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF> phe Tèng <color=yellow>"..GetName().."<color=0x00FFFF> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x00FFFF>®· ®o¹t ®­îc So¸i Kú, hiÖn ®ang chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
+		AddSkillState(460, 1, 0, 1000000 ) --ÑÕÉ«¹â»·,·Ö±çµĞÎÒ
 		AddSkillState(656,30,0,100000) --½µÍæ¼ÒµÄËÙ¶È
 		ST_SyncMiniMapObj(x, y);
 		sf_setflagplayer(1, PlayerIndex)
 	else
-		Msg2MSAll(MISSIONID, "<color=0x9BFF9B>½ğ·½<color=yellow>"..GetName().."<color=0x9BFF9B>ÔÚ<color=yellow>"..floor(X1/8).."£¬"..floor(Y1/16).."<color=0x9BFF9B>Î»ÖÃ¶áÈ¡Ë§Æì£¬Ä¿Ç°ÕıÇ°Íù<color=yellow>"..floor(x/(32*8)).."£¬"..floor(y/(32*16)))
-		AddSkillState(461, 1, 0, 1000000 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
+		Msg2MSAll(MISSIONID, "<color=0x9BFF9B> phe Kim <color=yellow>"..GetName().."<color=0x9BFF9B> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x9BFF9B> ®· ®o¹t ®­îc So¸i Kú, hiÖn ®ang chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
+		AddSkillState(461, 1, 0, 1000000 ) --ÑÕÉ«¹â»·,·Ö±çµĞÎÒ
 		AddSkillState(656,30,0,100000) --½µÍæ¼ÒµÄËÙ¶È
 		ST_SyncMiniMapObj(x, y);
 		sf_setflagplayer(2, PlayerIndex)

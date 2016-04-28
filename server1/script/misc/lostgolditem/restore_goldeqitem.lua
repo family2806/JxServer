@@ -61,13 +61,13 @@ RS_Init_Account_Name_Info();
 
 function rs_error_talk(nErr)
 	if (nErr == 1) then
-		Describe("¶Ô²»Æğ£¬Äã²»ÄÜÊ§È¥ÈÎºÎ×¼±¸!", 1, "½áÊø¶Ô»°/gsp_cancel");
+		Describe("Xin lçi! Quı kh¸ch kh«ng hÒ mÊt trang bŞ nµo!", 1, "KÕt thóc ®èi tho¹i/gsp_cancel");
 	elseif (nErr == 2) then
-		Describe("ÄãÁì»ØÁË×Ô¼ºµÄ»Æ½ğ×°±¸ÁË!", 1, "½áÊø¶Ô»°/gsp_cancel");
+		Describe("B¹n ®· nhËn l¹i trang bŞ Hoµng Kim cña m×nh råi!", 1, "KÕt thóc ®èi tho¹i/gsp_cancel");
 	elseif(nErr == 3) then
-		Describe("ÄãµÄ×°±¸²»×ã¿ÕÎ» <color=red>Ã»ÓĞ¿ÕÎ»ÁË<color>!", 1, "½áÊø¶Ô»°/gsp_cancel");
+		Describe("Hµnh trang cña b¹n kh«ng cßn chç trèng <color=red>kh«ng cßn chç trèng<color>!", 1, "KÕt thóc ®èi tho¹i/gsp_cancel");
 	elseif (nErr == 4) then
-		Describe("ÄãÁì»Ø×°±¸Óöµ½µãÀ§ÄÑ£¬ÇëÁªÏµ·şÎñ²¿°ïÖú½â¾ö!", 1, "½áÊø¶Ô»°/gsp_cancel");
+		Describe("ViÖc nhËn l¹i trang bŞ cña b¹n gÆp chót trôc trÆc, xin liªn hÖ víi bé phËn phôc vô ®Ó ®­îc gióp ®ì!", 1, "KÕt thóc ®èi tho¹i/gsp_cancel");
 	else
 		print("Error Talk!!");
 	end;
@@ -158,7 +158,7 @@ function restore_golditem()
 	end;	
 	
 	local szMsg = rs_getitem_msg(szRoelName);
-	Describe("ÄãÊ§È¥µÄ×°±¸°üÀ¨: <enter>"..szMsg.."<enter>b©yÏÖÔÚÊÕ»ØÂğ£¿<enter>Ê×ÏÈÇë<color=red>ÕûÀí×°±¸<color> À´ <color=red>Áô¹»¿ÕÎ»<color>·Å×°±¸", 2, "ÏÖÔÚÁìÂğ£¿/sure2restore_golditem", "ÉÔºò»ØÀ´/cancel");
+	Describe("Trang bŞ bŞ mÊt cña b¹n gåm: <enter>"..szMsg.."<enter>b©y giê nhËn l¹i chø? <enter>Tr­íc tiªn xin <color=red>s¾p xÕp l¹i hµnh trang<color> ®Ó <color=red>cã ®ñ chç trèng<color>chøa trang bŞ!", 2, "NhËn ngay b©y giê!/sure2restore_golditem", "L¸t n÷a quay l¹i /cancel");
 end;
 
 function sure2restore_golditem()
@@ -219,15 +219,15 @@ function sure2restore_golditem()
 	local szLog = "";
 	if (nAddCount == nItemCount) then
 		SetTask(RS_TASKID_ISTAKED, 1);
-		szMsg = "<enter>ÄãÒÑÁì¹»ÒÑÊ§È¥µÄ×°±¸ÁË!";
+		szMsg = "<enter>Quı kh¸ch ®· nhËn ®ñ hÕt trang bŞ bŞ mÊt!";
 		szLog = " Taked Over!!";
 	else
-		szMsg = "<enter>Äã»¹ÓĞ <color=red>"..(nItemCount - nAddCount).."<color>Ì××°±¸Î´Áì¡£Çë<color=red>ÕûÀí×°±¸<color> ÏÈ!";
+		szMsg = "<enter>Quı kh¸ch cßn <color=red>"..(nItemCount - nAddCount).."<color> bé trang bŞ ch­a nhËn. Xin <color=red>s¾p xÕp l¹i hµnh trang<color> tr­íc!";
 		szLog = " Leave "..(nItemCount - nAddCount).."";
 	end;
 	
 	if (nCount == (nAddCount - nGoldItemIdx)) then
-		Describe("ÇëÁìÈ¡ÒÑÊ§È¥µÄ×°±¸£¬Õæ³Ï¸ĞĞ»Äã"..szMsg, 1, "½áÊø¶Ô»°/gsp_cancel");
+		Describe("Xin nhËn l¹i trang bŞ ®· mÊt! Ch©n thµnh c¶m ¬n quı kh¸ch"..szMsg, 1, "KÕt thóc ®èi tho¹i/gsp_cancel");
 		WriteLog("[GoldEqItem Restore]\t"..date().."\tName:"..GetName().."\tAccount:"..GetAccount().."\t Taked LostGoldEqItem Count:"..(nAddCount)..szLog);
 	else
 		rs_error_talk(4);
@@ -269,12 +269,12 @@ function rs_Set_Bit_Extpoint(nExtP, nIndex)
 end;
 
 function rs_getitem_msg(szName)
-	local szMsg = "×Ü¹² "..getn(TB_ROLENAME_GOLDITEM_INFO[szName]).."Ì×";
+	local szMsg = "Tæng céng "..getn(TB_ROLENAME_GOLDITEM_INFO[szName]).."bé!";
 	local nGoldItemIdx = GetTask(RS_TASKID_ITEMINDEX);
 	if (nGoldItemIdx < 0  or nGoldItemIdx > getn(TB_ROLENAME_GOLDITEM_INFO[szName])) then
 		return
 	end;
-	szMsg = szMsg.."»¹Ê£ <color=yellow>"..(getn(TB_ROLENAME_GOLDITEM_INFO[szName]) - nGoldItemIdx).."<color> Ì×Î´Áì<enter>";
+	szMsg = szMsg.."vÉn cßn <color=yellow>"..(getn(TB_ROLENAME_GOLDITEM_INFO[szName]) - nGoldItemIdx).."<color> bé ch­a nhËn<enter>";
 	for i = (nGoldItemIdx + 1), getn(TB_ROLENAME_GOLDITEM_INFO[szName]) do
 		szMsg = szMsg.."<color=yellow>"..TB_ROLENAME_GOLDITEM_INFO[szName][i][1].."<color>,";
 	end;

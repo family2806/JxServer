@@ -26,7 +26,7 @@ function OnDeath(Npcindex)
 	set_team_task_temp181(turesureindex)
 	
 	if (  messenger_middletime() == 10 ) then --Íæ¼ÒÔÚµØÍ¼ÖĞµÄÊ±¼ä
-		Msg2Player("¶Ô²»Æğ! "..name.."! ÄãµÄĞÅÊ¹ÈÎÎñÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
 		turesure_killbugbear()
@@ -77,7 +77,7 @@ function real_set_task_temp181(turesureindex, nMapId, nPosX, nPosY)
 	local nSelfMapId, nSelfX, nSelfY = GetWorldPos()
 	if is_near(nMapId, nPosX, nPosY)==1 then
 		SetTaskTemp(181,turesureindex)
-		Msg2Player(format("Äã¿ÉÒÔ´ò¿ª±¦Ïä<color=yellow>%d ºÅ<color> Ç§±¦¿â ",turesureindex));
+		Msg2Player(format("Ng­¬i cã thÓ më B¶o R­¬ng <color=yellow>%d sè<color> Thiªn B¶o Khè",turesureindex));
 	end
 end
 

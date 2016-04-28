@@ -24,11 +24,11 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>ÕâÎ»Ó¢ĞÛ£¬ÕÒÎÒÓĞÊ²Ã´ÊÂÂğ?"
+	tbDailog.szTitleMsg = "<#><npc>VŞ anh hïng nµy. T×m ta cã viÖc g× kh«ng?"
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 
-	tbDailog:AddOptEntry("ÎÒÏë³öÈ¥",messenger_main);
+	tbDailog:AddOptEntry("Ta muèn ®i ra",messenger_main);
 	
 	--µ¯³ö¶Ô»°¿ò
 	tbDailog:Show()
@@ -39,14 +39,14 @@ function messenger_main()
 	local name = GetName()
 
 	if ( messenger_middletime() == 10 ) then
-		Msg2Player("¶Ô²»Æğ! "..name.."! ÄãµÄĞÅÊ¹ÈÎÎñµÄÊ±¼äÒÑÓÃÍê£¬ÈÎÎñÊ§°Ü!.")
+		Msg2Player("Xin lçi! "..name.."! B¹n ®· hÕt thêi gian thùc hiÖn nhiÖm vô Tİn sø! NhiÖm vô thÊt b¹i!.")
 		losemessengertask()
 	else
-		Describe(DescLink_XiaoZhen..":"..name..",ÊÇ²»ÊÇÄãÒÑ¾­Í¨¹ıÁËÇ§±¦¿âµÄ¿¼ÑéÁË£¿ĞèÒªÀë¿ª¹Ø¿¨Âğ?"
+		Describe(DescLink_XiaoZhen..":"..name..", cã ph¶i ng­¬i ®· th«ng qua kh¶o nghiÖm cña Thiªn B¶o Khè, cã cÇn ra khái ¶i kh«ng?"
 			,3
-			,"¶Ô£¬ÎÒÏëÀë¿ª/messenger_comeback"
-			,"ÎÒ»¹Î´Íê³É¿¼Ñé£¬ÎÒÏë³öÈ¥Ò»»á/messenger_icantdo"
-			,"²»ÊÇ£¬ÎÒ»¹Ïë¼ÌĞøÊÔÊÔ/no")	
+			,"§óng! Ta muèn rêi khái/messenger_comeback"
+			,"Ta ch­a hoµn thµnh kh¶o nghiÖm, ta muèn ®i ra mét chót/messenger_icantdo"
+			,"Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")	
 		
 --		if ( Uworld1206 == 0 ) then
 --			Describe(DescLink_XiaoZhen.."£º"..name.."£¬ÄãÊÇ²»ÊÇÒÑ¾­Í¨¹ıÁËÇ§±¦¿âµÄ¿¼Ñé£¬ĞèÒª³ö¹Ø£¿",3,"ÊÇµÄ£¬ÎÒÒª³ö¹Ø/messenger_comeback","ÎÒÃ»Íê³É¿¼Ñé£¬²»¹ıÎÒ²»Ïë¼ÌĞø×öÁË/messenger_icantdo","²»ÊÇ£¬ÎÒ»¹ÒªÔÙ´ô´ô/no")	
@@ -113,16 +113,16 @@ function messenger_comeback()
 		
 		SetPos(1414,3197);
 	else
-		Describe(DescLink_XiaoZhen..": ¶Ô²»Æğ£¬Ä¿Ç°Äã»¹Î´Íê³É´³¹ØÄ¿±ê£¬ÔÚÇ§±¦¿âµÄµØÍ¼ÉÏ£¬ÄãĞèÒª°´ÕÕÈÎÎñÖÈĞò´ò¿ª5¸ö±¦Ïä²ÅÄÜËãÊÇ¹ı¹ØÁË.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_XiaoZhen..": Xin l­îng thø, hiÖn t¹i ng­¬i vÉn ch­a hoµn thµnh môc tiªu cöa ¶i, ë trong b¶n ®å Thiªn B¶o Khè ng­¬i ph¶i dùa theo thø tù nhiÖm vô më ra 5 B¶o R­¬ng míi ®­îc xem lµ qua ¶i.",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
 function messenger_icantdo()
 	if nt_getTask(1203) ==25 then
-		Talk(1, "", "ÄãµÄÈÎÎñÒÑÍê³É£¬Òª²»ÎÒÖ±½ÓËÍÄã³ö¹Ø°É")
+		Talk(1, "", "NhiÖm vô cña ng­¬i ®· hoµn thµnh, hay lµ ta trùc tiÕp tiÔn ng­¬i ra khái ¶i nhĞ.")
 		messenger_comeback()
 	else
-		Describe(DescLink_XiaoZhen..": Äã¾ö¶¨³öÈ¥Âğ£¿ÈÎÎñÎ´Íê³ÉÒÀÈ»¿ÉÒÔ»ØÀ´£¬ÈÎºÎÊ±ºò¶¼ĞĞ!",2,"¶Ô£¬ÎÒÏëÀë¿ª/q_fallmessengertask","ÈÃÎÒÏëÏë/no")
+		Describe(DescLink_XiaoZhen..": Ng­¬i quyÕt ®Şnh rêi khái ­, nhiÖm vô ch­a hoµn thµnh ng­¬i vÉn cã thÓ quay l¹i bÊt cø lóc nµo!",2,"§óng! Ta muèn rêi khái/q_fallmessengertask","§Ó ta nghÜ l¹i xem sao/no")
 	end
 end
 

@@ -11,16 +11,16 @@ Include("\\script\\event\\xmas07_makesnowman\\head.lua")
 xmas2007_GiftBox_tbItemList =
 {
 	--Ãû³Æ,{ÎïÆ·Prop},¸ÅÂÊ%,
-	{"½ð±ù¾§",{6,1,1628,1,0,0},10},
-	{"Ä¾±ù¾§",{6,1,1629,1,0,0},15},
-	{"Ë®±ù¾§",{6,1,1630,1,0,0},20},
-	{"»ð±ù¾§",{6,1,1631,1,0,0},25},
-	{"ÍÁ±ù¾§",{6,1,1632,1,0,0},30},
+	{"Kim B¨ng Tinh",{6,1,1628,1,0,0},10},
+	{"Méc B¨ng Tinh",{6,1,1629,1,0,0},15},
+	{"Thñy B¨ng Tinh",{6,1,1630,1,0,0},20},
+	{"Háa B¨ng Tinh",{6,1,1631,1,0,0},25},
+	{"Thæ B¨ng Tinh",{6,1,1632,1,0,0},30},
 }
 
 function main()
 	if xmas07_makeSnowMan_isActPeriod() == 0 then
-		Msg2Player("ÎïÆ·ÒÑ¹ýÊ¹ÓÃÆÚ£¬½«ÏûÊ§.")
+		Msg2Player("VËt phÈm ®· qu¸ h¹n sö dông, sÏ bÞ mÊt ®i.")
 		return 0;
 	end
 	xmas2007_SnowManItem_GiveRandomItem(xmas2007_GiftBox_tbItemList);

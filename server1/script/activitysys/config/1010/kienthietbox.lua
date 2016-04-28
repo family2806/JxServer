@@ -13,17 +13,17 @@ function  main()
 	local nBuildFund = 5000
 	local _, nTongID = GetTongName()
 	if(nTongID == 0) then
-		Msg2Player("Î´¼ÓÈë°ï»á£¬²»ÄÜÊ¹ÓÃ¸ÃµÀ¾ß.");
+		Msg2Player("Ch­a gia nhËp bang héi, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 	local figure = TONGM_GetFigure(nTongID, GetName())
 	if (figure == TONG_MASTER)then
 		TONG_ApplyAddBuildFund(nTongID,nBuildFund)
-		Msg2Player(format("½»³É¹¦ %d½¨Éèµã", nBuildFund))
-		%tbLog:PlayerAwardLog("½¨ÉèÀñ°ü", "Ê¹ÓÃÎïÆ·»î¶¯5000½¨Éèµã")
+		Msg2Player(format("N¹p thµnh c«ng %d ®iÓm KiÕn thiÕt", nBuildFund))
+		%tbLog:PlayerAwardLog("KienThietLebao", "SuDungVatPhamNhanDuoc5000diemKienThiet")
 		return 0;
 	else
-		Msg2Player("²»ÊÇ°ïÖ÷£¬²»ÄÜÊ¹ÓÃ¸ÃµÀ¾ß.");
+		Msg2Player("Kh«ng ph¶i lµ bang chñ, kh«ng thÓ sö dông ®¹o cô nµy.");
 		return 1
 	end
 end

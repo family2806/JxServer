@@ -2,7 +2,7 @@ Include("\\script\\lib\\awardtemplet.lua")
 
 local tbAward = 
 {
-	{szName = "阴阳活血丹", tbProp = {6,1,2953,1,0,0}, nCount = 3},	
+	{szName = " Dng Ho箃 Huy誸 Кn", tbProp = {6,1,2953,1,0,0}, nCount = 3},	
 }
 
 
@@ -11,10 +11,10 @@ function main(nItemIndex)
 	local nHeight = 1
 	local nCount = 3
 	if CountFreeRoomByWH(nWidth, nHeight, nCount) < nCount then
-		Say(format("为保护大侠的财产，请留下%d %dx%d装备空位", nCount, nWidth, nHeight))
+		Say(format("в b秓 m t礽 s秐 c馻 i hi謕, xin h穣  tr鑞g %d %dx%d h祅h trang", nCount, nWidth, nHeight))
 		return 1
 	end
-	tbAwardTemplet:Give(%tbAward, 1, {"Giamgia_KTC", "使用活血丹礼包"});
+	tbAwardTemplet:Give(%tbAward, 1, {"Giamgia_KTC", "SudungHoatHuyetDonLeBao"});
 	
 	return 0
 end

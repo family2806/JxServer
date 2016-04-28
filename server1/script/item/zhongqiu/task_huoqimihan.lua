@@ -4,10 +4,10 @@
 -- CreateTime	:	2005-09-10 
 -- Desc			:	<#>»ğÆáÃÜº¯
 -------------------------------------------------------------------------
-DescLink_huoqimihan ="<#><link=image:\\spr\\item\\questkey\\taskobj075.spr>»ğÆáÃÜº¯<link>"
+DescLink_huoqimihan ="<#><link=image:\\spr\\item\\questkey\\taskobj075.spr>Háa TÊt MËt Hµm<link>"
 function main()
-	Describe(DescLink_huoqimihan.."<#><enter>ÏÄÇàÒÂÏÈÉú£º½üÀ´Ö÷ÉÏ´ß±ÆµÃÔ½À´Ô½½ô£¬¼Æ»®ÖĞÄÇ¸öĞĞ¶¯ÇëÎñ±ØÔÚ¾ÅÔÂÖĞÇïÖ®Ç°ÊµÊ©¡£ÓÉÓÚ¶À¹Â½£ºÅÕÙÌìÏÂÎäÁÖÖĞÈËÆë¾ÛÃ÷ÔÂÕò£¬Õâ¸ö¼Æ»®µÄÊµÏÖ»òĞí»á´øÀ´ÒâÏë²»µ½µÄºÃ´¦¡£µ½ÄÇÊ±£¬ÏÄÏÈÉúÒ»¼ÒµÄÈÙ»ªÒ²¾ÍÍÙÊÖ¿ÉµÃÁË¡£"
-	.."<enter>    º×¶¥ºìÒÑ×ÅÏÂÈËËÍÖÁ£¬ÄúÓ¦¸ÃÊÕµ½ÁË¡£¿¼ÂÇµ½ÌÆÈ±ÄË¾ø¶¥¸ßÊÖ£¬ÌÆÃÅÓÖ¾«ÉÃÓÃ¶¾£¬ÅäÖÃÕâ¸±Ò©²ÄµÄÈËÏÂÁËºÜ´óµÄ¹¦·ò£¬Æä¶¾ÎŞÉ«ÎŞÎ¶£¬ÖĞÕßÁ¢±Ğ¡£ÄúÎñ±ØÍ×ÉÆ±£¹Ü£¬Ò»¶¨Ò»¶¨²»ÄÜ±»ÈË·¢¾õ¡£Èç¹û¼Æ»®Ê§°Ü»òÕß·¢ÉúÒâÍâ£¬ÄÇÃ´ÄúÒ²¿ÉÒÔÓÃÕâÎ¶¶¾Ò©ÁË¶Ï×Ô¼º¡£ÄÇÑùµÄ»°£¬ÏàĞÅÄúµÄ¼ÒÈË»á±»ÎÒÃÇÕÕ¹ËµÃºÜºÃ¡£·ñÔò£¬Ò»ÇĞ¶¼²»¿ÉÖªÁË¡£ÍòÍûÕäÖØ¡£", 1, "½áÊø¶Ô»°/no")
+	Describe(DescLink_huoqimihan.."<#> <enter>Cø ®Õn mïa trung thu lµ §éc C« minh chñ tËp häp c¸c cao thñ vÒ Minh NguyÖt trÊn, võa th«ng b¸o tin tøc vâ l©m, võa tæ chøc héi thi lµm b¸nh."
+	.."<enter>  §éc d­îc cña §­êng M«n v« s¾c v« vŞ, tróng ph¶i chÕt ngay lËo tøc. Ng­¬i ph¶i hÕt søc cÈn thËn kh«ng ®­îc ®Ó lé th©n phËn cña m×nh. NÕu bŞ chóng ph¸t gi¸c, h·y uèng ngay viªn ®éc d­îc nµy, sÏ l©m vµo t×nh tr¹ng chÕt t¹m thêi. Tøc kh¾c sÏ cã ng­êi ®Õn cøu ng­¬i", 1, "KÕt thóc ®èi tho¹i/no")
 	return 1
 end
 

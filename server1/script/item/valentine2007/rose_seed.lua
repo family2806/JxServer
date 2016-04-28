@@ -2,18 +2,18 @@ Include("\\script\\event\\valentine2007\\head.lua");
 
 function main(nItemIdx)
 	if (checkValentine2007Date(20070223) ~= 1) then
-		Say("ÕâÃ¶Ãµ¹å»¨×Ñ´æ·ÅÊ±¼äÌ«³¤£¬ÒÑ¾­¿İÎ®ÁË¡£", 0);
+		Say("H¹t hoa hång nµy do ®Ó qu¸ l©u nªn ®· bŞ kh« hĞo.", 0);
 		return 0;
 	end;
 	
 	if (checkValentine2007Limit() ~= 1) then
-		Say("²»ºÃÒâË¼£¬Ö»ÓĞµÈ¼¶´ïµ½<color=yellow>80¼¶<color>ÒÔÉÏµÄÓÃ»§£¬²ÅÄÜÊ¹ÓÃÃµ¹å»¨×Ñ¡£", 0);
+		Say("ThËt ng¹i qu¸, chØ cã ng­êi ch¬i cÊp trªn 80 <color=yellow>®· n¹p thÎ<color> míi cã thÓ sö dông h¹t hoa hång.", 0);
 		return 1;
 	end;
 	
 	local nteam = GetTeamSize();
 	if (nteam ~= 2) then
-		Say("Ãµ¹å»¨×Ñ£ºÖ»ÓĞÄĞÅ®Á½¸öÈË×é¶Ó²ÅÄÜÅàÓıÎÒ¡£", 0);
+		Say("H¹t hoa hång: ChØ cã tæ ®éi 2 ng­êi nam n÷ míi cã thÓ vun trång hoa hång.", 0);
 		return 1;
 	end;
 	
@@ -26,7 +26,7 @@ function main(nItemIdx)
 		end;
 	end;
 	if (nb == 0) then
-		Msg2Player("ÔÔÖÖÃµ¹åÊ÷£¬ÇëÔÚÆß´ó³ÇÊĞ¡¢ĞÂÊÖ´åÒÔ¼°ËÄ´ó·ç¾°ÇøÄÚ¡£");
+		Msg2Player("Hoa hång chØ cã thÓ mäc t¹i c¸c thµnh thŞ, t©n thñ th«n vµ 4 khu vùc phong c¶nh.");
 		return 1;
 	end;
 	
@@ -53,11 +53,11 @@ function main(nItemIdx)
 	PlayerIndex = oldPlayer;
 	
 	if (bS ~= 2) then
-		Say("Ãµ¹å»¨×Ñ£ºÖ»ÓĞÄĞÅ®Á½¸öÈË×é¶Ó²ÅÄÜÅàÓıÎÒ¡£", 0);
+		Say("H¹t hoa hång: ChØ cã tæ ®éi 2 ng­êi nam n÷ míi cã thÓ vun trång hoa hång.", 0);
 		return 1;
 	end;
 	
-	sztreename = format("%sºÍ%sµÄÃµ¹åÊ÷", szname1, szname2);
+	sztreename = format("Hoa hång - %s vµ %s", szname1, szname2);
 	local _, nx, ny = GetWorldPos();
 	local nNpcIdx = AddNpc(TB_ROSETREE_NPCID[1], 1, SubWorld, (nx-1)*32, (ny-1)*32, 1, sztreename);
 	if (nNpcIdx > 0) then

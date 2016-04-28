@@ -8,6 +8,6 @@ function main()
 	if ( Uworld1050 ~= 0 ) then
 		branch_jiantou()
 	else
-		Talk(1,"","ÌıËµÎäÁÖ´«ÆæÓĞ»Æ½ğÈÎÎñ£¬»ªÉ½µÜ×ÓÒÑ¾­ÏÂÉ½×öÈÎÎñÁË£¬ÄãÒ»»áÒª»ØÀ´!");
+		Talk(1,"","Nghe nãi Vâ L©m TruyÒn Kú cã nhiÖm vô Hoµng Kim, §Ö tö Hoa S¬n ph¸i ®· xuèng nói lµm nhiÖm vô, sau nµy ng­¬i h·y quay l¹i!");
 	end
 end

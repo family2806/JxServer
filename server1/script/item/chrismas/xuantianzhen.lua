@@ -1,7 +1,7 @@
         --CastSkill(671,5)
 SKILLTYPE = 671;
 SKILLLEVEL = 5;
-SKILLNAME = "¬È±‘∫≈Ω«";
-SKILLDESCRIBE = "∏ΩΩ¸µƒ∂‘ ÷—£‘Œ5√Î°£";
+SKILLNAME = "Ma TÛy Hi÷u gi∏c";
+SKILLDESCRIBE = "Khi’n ÆËi ph≠¨ng bﬁ cho∏ng 5 gi©y.";
 
 Include([[\script\item\chrismas\head_zhen.lua]]);

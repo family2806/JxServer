@@ -101,7 +101,7 @@ function OnDeath(nNpcIndex)
 	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then 
 		local szPlayerName = ""
 		szPlayerName = GetName()
-		local szAction = format("%s ÒÑ¾­ÏûÃð%s", szPlayerName, GetNpcName(nNpcIndex))
+		local szAction = format("%s ®· tiªu diÖt %s", szPlayerName, GetNpcName(nNpcIndex))
 		
 		%tbLog:PlayerAwardLog(%EVENT_LOG_TITLE, szAction)		
 	end
@@ -109,7 +109,7 @@ function OnDeath(nNpcIndex)
 	local nTaskId = GetNpcParam(nNpcIndex, %NPC_PARAM_TASK_ID)
 	pActivity:TaskFailed(nTaskId, nNpcIndex)
 	
-	local tbAward = {[1]={szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},},}
+	local tbAward = {[1]={szName="Hçn Nguyªn Linh Lé",tbProp={6,1,2312,1,0,0},},}
 	
 	if (PlayerId and PlayerId > 0) and (PlayerIndex and PlayerIndex > 0) then 
 		tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, tbAward, "Carriage Drop Item", 1)

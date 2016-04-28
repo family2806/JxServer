@@ -21,13 +21,13 @@ tbBeatTiger =
 	nLimit_ExpAward = 20000000,			-- æ≠—ÈΩ±¿¯
 	nLimit_AwardTime = 300,				-- ¡ÏΩ± ±º‰œﬁ÷∆
 	
-	nNpc_Talk_ID = 309,					-- ¡Ùœ„ƒ£∞ÊID
-	nNpc_Talk_Pos = {37, 1576, 3255},	-- ¡Ùœ„Œª÷√
+	nNpc_Talk_ID = 309,					-- L≠u H≠¨ngƒ£∞ÊID
+	nNpc_Talk_Pos = {37, 1576, 3255},	-- L≠u H≠¨ngŒª÷√
 	nNpc_Tiger_ID = 1549,				-- ¿œª¢ID
 	nNpc_Tiger_Level = 90,				-- ¿œª¢µ»º∂
 	nNpc_Tiger_Pos = {37, 1570, 3269},	-- ¿œª¢Œª÷√
 	
-	nValue_NpcIndex_Talk = nil,			-- ¡Ùœ„µƒNpcIndex
+	nValue_NpcIndex_Talk = nil,			-- L≠u H≠¨ngµƒNpcIndex
 	nValue_NpcIndex_Tiger = nil,		-- ¿œª¢µƒNpcIndex
 	
 	nValue_tbPlayerInfo = 				-- ÕÊº“¥Úª¢«Èøˆ
@@ -86,10 +86,10 @@ function tbBeatTiger:AddNpc()
 		return
 	end
 	
-	self.nValue_NpcIndex_Talk = AddNpc(self.nNpc_Talk_ID, 1, SubWorldID2Idx(self.nNpc_Talk_Pos[1]), self.nNpc_Talk_Pos[2]*32, self.nNpc_Talk_Pos[3]*32, 0, "¡Ùœ„");
+	self.nValue_NpcIndex_Talk = AddNpc(self.nNpc_Talk_ID, 1, SubWorldID2Idx(self.nNpc_Talk_Pos[1]), self.nNpc_Talk_Pos[2]*32, self.nNpc_Talk_Pos[3]*32, 0, "L≠u H≠¨ng");
 	SetNpcScript(self.nValue_NpcIndex_Talk, "\\script\\event\\jiefang_jieri\\201004\\beat_tiger\\npc_talk.lua");
 	
-	self.nValue_NpcIndex_Tiger = AddNpc(self.nNpc_Tiger_ID, self.nNpc_Tiger_Level, SubWorldID2Idx(self.nNpc_Tiger_Pos[1]), self.nNpc_Tiger_Pos[2]*32, self.nNpc_Tiger_Pos[3]*32, 0, "…±—™¿œª¢", 1);
+	self.nValue_NpcIndex_Tiger = AddNpc(self.nNpc_Tiger_ID, self.nNpc_Tiger_Level, SubWorldID2Idx(self.nNpc_Tiger_Pos[1]), self.nNpc_Tiger_Pos[2]*32, self.nNpc_Tiger_Pos[3]*32, 0, "S∏t Huy’t L∑o HÊ", 1);
 	SetNpcDeathScript(self.nValue_NpcIndex_Tiger, "\\script\\event\\jiefang_jieri\\201004\\beat_tiger\\npc_tiger.lua");
 	
 	-- ∂® ±∆˜…Ë÷√Œ™œ¬∏ˆ’˚µ„

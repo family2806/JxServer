@@ -30,28 +30,28 @@ function YDBZ_show_roll_info(dwID)
 		PlayerIndex = value[5]
 		if GetName() == value[1] then	-- µ±È»Íæ¼ÒÈÔÈ»ÔÚÏß²ÅÏÔÊ¾Ïà¹ØÐÅÏ¢
 			--print(index)
-			local str = "<color=yellow>"..value[1].."<color>Ò¡¹É×Ó<color=yellow>"..value[2].." µã<color>."
+			local str = "<color=yellow>"..value[1].."<color>§æ xóc x¾c <color=yellow>"..value[2].." ®iÓm<color>."
 			if value[3] == 0 then
-				str = "<color=yellow>"..value[1].."<color> ·ÅÆú"
+				str = "<color=yellow>"..value[1].."<color> hñy bá"
 			elseif value[3] == 2 then
 				if value[4] == 1 then
 					if oldplayindex == value[5] and nSeries == 1 and ndouble == 1 then
 						if random(1,100) < 50 then
-							str = str .. "<color=yellow>[ÓÐÐ§Ñ×µÛÁî]<color>"
+							str = str .. "<color=yellow>[Viªm §Õ LÖnh cã hiÖu lùc]<color>"
 							ndsign = 1
 						else
-							str = str .. "<color=blue>[ÎÞÐ§Ñ×µÛÁî]<color>"
+							str = str .. "<color=blue>[Viªm ®Õ lÖnh mÊt hiÖu lùc]<color>"
 							
 						end
 						--¼ÇÂ¼log
 						if nGenre == 6 and nDetial == 1 and nPart == 1606 then
-							YDBZ_sdl_writeLog("Ñ×µÛ±¦²Ø´³¹Ø®Õ","ÔÚ´³¹Ø¹ý³ÌÖÐ»ñµÃ1¸öÑ×µÛÍ¼ÌÚ")
+							YDBZ_sdl_writeLog("V­ît ¶i b¶o tµng viªm ®Õ","Trong qu¸ tr×nh v­ît ¶i thu ®­îc 1 Viªm §Õ ®å ®»ng")
 						end	
 						if nGenre == 6 and nDetial == 1 and nPart == 1605 then
-							YDBZ_sdl_writeLog("Ñ×µÛ±¦²Ø´³¹Ø®Õ","ÔÚ´³¹ØÖÐ»ñµÃÒ»¸ö¼ÙÈË")
+							YDBZ_sdl_writeLog("V­ît ¶i b¶o tµng viªm ®Õ","Trong lóc v­ît ¶i thu ®­îc 1 h×nh ném")
 						end			
 					end
-					str = str..format(" -- »ñµÃ <color=yellow>%s<color>",szItem)
+					str = str..format(" -- nhÆt ®­îc <color=yellow>%s<color>",szItem)
 				end
 				bAllGiveUp = 0
 			end
@@ -63,14 +63,14 @@ function YDBZ_show_roll_info(dwID)
 					--ndix = AddItem(nGenre,nDetial,nPart,1,0,0)
 					--print(ndix)
 				end
-				YDBZ_sdl_writeLog("Ñ×µÛ±¦²Ø´³¹Ø®Õ",format("´³¹ØÊ±»ñµÃ1 %s",GetItemName(ndix)))
+				YDBZ_sdl_writeLog("V­ît ¶i b¶o tµng viªm ®Õ",format("Lóc v­ît ¶i thu ®­îc 1 %s",GetItemName(ndix)))
 			end
 		end
 	end
 	if bAllGiveUp == 1 then
-		Msg2Player("ËùÓÐÍæ¼Ò¶¼·ÅÆúÁË")
+		Msg2Player("TÊt c¶ ng­êi ch¬i ®Òu hñy bá råi")
 	elseif nSize ~= getn(t) then
-		Msg2Player("ÆäËûÍæ¼ÒÒòÎªÊ±¼äµ½¶øËã·ÅÆúÁË")
+		Msg2Player("Ng­êi ch¬i kh¸c v× qu¸ h¹n thêi gian, nªn tÝnh lµ hñy bá")
 	end
 end
 

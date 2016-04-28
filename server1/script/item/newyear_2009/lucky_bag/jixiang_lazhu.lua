@@ -4,7 +4,7 @@ Include("\\script\\item\\newyear_2009\\head.lua");
 function main()
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= newyear0901_lazhu_expiredtime) then
-		Msg2Player("¸ÃÎïÆ·ÒÑ¹ıÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	AddSkillState(440, 1, 1, 64800);

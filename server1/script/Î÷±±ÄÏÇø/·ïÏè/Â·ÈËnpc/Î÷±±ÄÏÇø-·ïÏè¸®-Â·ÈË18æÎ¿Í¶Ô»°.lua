@@ -2,9 +2,9 @@
 --Î÷±±ÄÏÇø ·ïÏè¸® »ªÉ½¾ø¶¥´«ËÍNPC 199,201
 function main(sel)
 	if(GetLevel() >= 60)then
-		Say("Ò»¿´Äã¾ÍÊÇ¾øÊÀ´óÏÀ.ÄãÊÇ´Ó»ªÉ½¶¥ÏÂÀ´µÄ°É£¿Ö»Òª500Á½£¬ÎÒ¾Í°ÑÈË´øµ½Õâ!",2,"ÕæµÄÂğ, È¥ÊÔÊÔ¿´! /yes","²»¹ØĞÄ£¬²»ÏëÈ¥. /no")
+		Say("Nh×n qua lµ biÕt ng­¬i lµ tuyÖt thÕ ®¹i hiÖp. Cã ph¶i ®Şnh ®Õn ®Ønh Hoa S¬n tû vâ ph¶i kh«ng? ChØ cÇn bá ra 500 l­îng, ta sÏ ®­a ng­¬i ®Õn tËn n¬i!",2,"Thó vŞ ®Êy, ®i xem thö! /yes","Kh«ng quan t©m, kh«ng muèn ®i. /no")
 	else
-		Say("æÎ¿Í£ºÕâÍò×ÏÔ°µÄÃÃ×Ó¿ÉÕæ²»´í°¡£¬ÈÃÈË»ØÎ¶ÎŞÇî£¬¿ÉÊÇÈç¹ûÎÒÔÙ²»»ØÈ¥£¬½ñÍí¾ÍÓÖÒª¹ò´êÒÂ°åÁË£¡",0)
+		Say("§Ønh Hoa S¬n phİa ®«ng cã mÊy tªn cø suèt ngµy chĞm giÕt,tranh giµnh thiªn h¹ ®Ö nhÊt g× ®ã. Bän ta ®­a c¸c ng­¬i ®Õn ®ã, thËt còng ch¼ng ph¶i lµ chuyÖn hay!",0)
 	end
 end;
 
@@ -13,10 +13,10 @@ function yes()
 		Pay(500);
 		NewWorld(2, 2600, 3600);		
 	else
-		Say("500Á½ÄÜ×öÊ²Ã´°¡?",0)
+		Say("500 l­îng mµ còng kh«ng cã lµm sao ®i?",0)
 	end
 end;
 
 function no()
-	Say("ÏÂÉ½ÒªÀ´ÕÒÎÒ°¡!",0)
+	Say("Lóc xuèng nói nhí t×m D­ Vâ nµy nhĞ!",0)
 end;

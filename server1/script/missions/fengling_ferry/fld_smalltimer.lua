@@ -7,7 +7,7 @@ function OnTimer()
 	local npcindex
 	if (t == ENDSIGN_TIME) then		--±®√˚ ±º‰Ω· ¯£¨ø™¥¨
 		RunMission(MISSIONID)
-		Msg2MSAll(MISSIONID, "¥¨ø™¡À£¨30∑÷÷”∫ÛΩµµΩ∑Á¡Í∂…±±∞∂.")
+		Msg2MSAll(MISSIONID, "Thuy“n Æi rÂi! 30 phÛt sau sœ Æ’n bÍ Bæc Phong L®ng ßÈ.")
 		
 		-- »’≥£»ŒŒÒÀ¢–¬∂‘ª∞NPC
 		%tbTalkDailyTask:AddTalkNpc(SubWorldIdx2ID(SubWorld), SubWorldIdx2ID(SubWorld));
@@ -19,46 +19,46 @@ function OnTimer()
 	
 	if (t < ENDSIGN_TIME and mod(t, 9) == 0) then
 		local bf_mint = 10 - GetMissionV(MS_TIMEACC_1MIN)
-		Msg2MSAll(MISSIONID, "ªπ £"..bf_mint.." ∑÷÷”¿Î∏€")
+		Msg2MSAll(MISSIONID, "cﬂn"..bf_mint.." phÛt rÍi b’n")
 	end
 	
 	if (t >= ENDSIGN_TIME and mod(t, 15) == 0) then
 		local mint = 39 - GetMissionV(MS_TIMEACC_1MIN)
-		Msg2MSAll(MISSIONID, "ªπ £"..mint.." ∑÷÷”∫ÛµΩ∑Á¡Í∂…±±∞∂")
+		Msg2MSAll(MISSIONID, "cﬂn"..mint.." phÛt sœ Æ’n bÍ Bæc Phong L®ng ßÈ")
 	end
 	
 	if (t == REPORT_TIME) then
 		local mint = 39 - GetMissionV(MS_TIMEACC_1MIN)
-		Msg2MSAll(MISSIONID, "ªπ £"..mint.." ∑÷÷”∫ÛµΩ∑Á¡Í∂…±±∞∂")
+		Msg2MSAll(MISSIONID, "cﬂn"..mint.." phÛt sœ Æ’n bÍ Bæc Phong L®ng ßÈ")
 	end
 	
 	if (t == UPBOSS_TIME) then		-- 15∑÷÷”
 		posx, posy = fld_getadata(npcthiefpos)
-		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ÀÆ‘ÙÕ∑¡Ï", 1)
+		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ThÒy t∆c Æ«u l‹nh", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "ÀÆ‘ÙÕ∑¡Ï“—≥ˆœ÷.")
+		Msg2MSAll(MISSIONID, "ThÒy t∆c Æ«u l‹nh Æ∑ xu t hi÷n.")
 	end
 	
 	if (t == UPBOSS_TIME2) then		-- 20∑÷÷”
 		posx, posy = fld_getadata(npcthiefpos)
-		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ÀÆ‘ÙÕ∑¡Ï", 1)
+		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ThÒy t∆c Æ«u l‹nh", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "ÀÆ‘ÙÕ∑¡Ï“—≥ˆœ÷.")
+		Msg2MSAll(MISSIONID, "ThÒy t∆c Æ«u l‹nh Æ∑ xu t hi÷n.")
 		
 		if (check_new_shuizeitask() == 1) then
 			for i = 1, 2 do
 				posx, posy = fld_getadata(npcthiefpos)
-				AddNpc(1692, 85, SubWorld, posx, posy, 1, "ÀÆ‘Ù¥ÛÕ∑¡Ï.", 1)
-				Msg2MSAll(MISSIONID, "ÀÆ‘Ù¥ÛÕ∑¡Ï ≥ˆœ÷¡À")
+				AddNpc(1692, 85, SubWorld, posx, posy, 1, "ThÒy T∆c ßπi ß«u L‹nh.", 1)
+				Msg2MSAll(MISSIONID, "ThÒy T∆c ßπi ß«u L‹nh xu t hi÷n rÂi")
 			end
 		end
 	end
 	
 	if (t == UPBOSS_TIME3) then
 		posx, posy = fld_getadata(npcthiefpos)
-		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ÀÆ‘ÙÕ∑¡Ï", 1)
+		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "ThÒy t∆c Æ«u l‹nh", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "ÀÆ‘ÙÕ∑¡Ï“—≥ˆœ÷.")
+		Msg2MSAll(MISSIONID, "ThÒy t∆c Æ«u l‹nh Æ∑ xu t hi÷n.")
 	end		
 	
 	-- ªÓ‘æ∂»

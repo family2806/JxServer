@@ -7,12 +7,12 @@ function main()
 	UTask_tw = GetTask(3)
 	if (UTask_tw == 60*256+20) and (HaveItem(101) == 1) then
 		DelItem(101)
-		Talk(2,"","ÌìÍõÒÅÊéÒÑ¾­±»½ğÈËÄÃ×ßÁË","µØÉÏÓĞÒ»Ğ©Ö¸ÏòÇàÂİµºµÄ±ê¼Ç£¬¿´À´É±ÊÖ¸ÕÀë¿ª²»¾Ã©u. ")
+		Talk(2,"","R­¬ng b¸u trèng kh«ng, 'Thiªn V­¬ng Di Th­' ®· bŞ ng­êi Kim lÊy ®i ","Trªn ®Êt cã mét sè dÊu ch©n h­íng vÒ S¬n §éng Thanh La §¶o, xem ra bän s¸t thñ rêi khái ch­a bao l©u. ")
 		SetTask(3, 60*256+40)
-		AddNote("´ò¿ªºş±±±ßµÄ±¦Ïä£¬²ÅÖªµÀÌìÍõÒÅÊé±»½ğ¹úÉ±ÊÖÄÃ×ßÁË. ")
+		AddNote("Më r­¬ng b¸u phİa B¾c hå, míi biÕt Thiªn V­¬ng Di Th­ ®· bŞ bän s¸t thñ ng­êi n­íc Kim lÊy ®i. ")
 	elseif (UTask_tw == 60*256+40) then
-		Talk(1,"","±¦ÏäÊÇ¿ÕµÄ. ")
+		Talk(1,"","R­¬ng b¸u trèng kh«ng. ")
 	else
-		Talk(1,"","Ã»ÓĞÔ¿³×£¬´ò²»¿ª±¦Ïä.")
+		Talk(1,"","Kh«ng cã ch×a khãa, kh«ng më ®­îc r­¬ng.")
 	end
 end;

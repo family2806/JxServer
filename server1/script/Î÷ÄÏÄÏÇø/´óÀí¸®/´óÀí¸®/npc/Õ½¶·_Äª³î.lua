@@ -6,13 +6,13 @@ Include("\\script\\task\\newtask\\master\\lib_setmembertask.lua")
 function OnDeath()
 Uworld1001 = nt_getTask(1001)
 	if (Uworld1001 == 30) then
-		Talk(1,"Uworld1001_give","²»ÒªÒÔÎªÄãÄÜ´òÔÎÎÒ£¬Èç¹ûÎÒ²»ÖĞ¶¾£¬ÄãÄÄÀïÊÇ¶ÔÊÖ£¬»Ø³ÇÔÙËµ!")
+		Talk(1,"Uworld1001_give","§õng t­ëng ng­¬i ®¸nh ngÊt ®­îc ta, nÕu ta kh«ng tróng ®éc th× ng­¬i ®©u ph¶i lµ ®èi thñ. VÒ thµnh råi nãi chuyÖn!")
 	end
 end
 
 function newtask1()
 	AddOwnExp(20000)
-	Msg2Player("Äª³îÈÃÄã»Ø³ÇÔÙËµ")
+	Msg2Player("M¹c SÇu b¶o b¹n vÒ thµnh nãi chuyÖn")
 
 end
 

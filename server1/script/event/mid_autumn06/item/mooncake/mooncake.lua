@@ -22,12 +22,12 @@ function main()
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	if (nDate < AU06_BEGINDATE or nDate >= 20061117 or 
 			gb_GetTask("midautumn2006_city_all", 1) ~= 0) then
-		Say("ÔÂ±ıÒÑ¾­¹ıÆÚÁË,ÎŞ·¨Ê¹ÓÃ.", 0);
+		Say("B¸nh Trung thu chØ ®­îc dïng tõ 30/9 ®Õn 16/11.B¸nh Trung thu chØ ®­îc dïng tõ 30/9 ®Õn 16/11.", 0);
 		return 1;
 	end;
 	
 	if (au06_IsPayed_player() == 0) then
-		Say("Ö»ÓĞ50¼¶ÒÔÉÏ³äÖµÍæ¼Ò²ÅÄÜÊ³ÓÃÖĞÇïÔÂ±ı¡£", 0);
+		Say("ChØ cã ng­êi ch¬i n¹p thÎ míi cã thÓ ¨n b¸nh trung thu", 0);
 		return 1;
 	end;
 	
@@ -44,7 +44,7 @@ function main()
 	
 	local nExp = GetTask(AU06_TK_EXP);
 	if (nExp >= EXP_AWARD_LIMIT) then
-		Say("Ã¿ÈËÍ¨¹ıÔÂ±ı×î¶à¿ÉÒÔ»ñµÃ<color=red>"..EXP_AWARD_LIMIT.."µã<color>¾­ÑéÖµ£¬Äã²»ÄÜÔÙÊ³ÓÃÁË¡£", 0);
+		Say("Mçi ng­êi chØ cã thÓ nhËn ®­îc <color=red>"..EXP_AWARD_LIMIT.."<color> ®iÓm kinh nghiÖm tõ b¸nh trung thu mµ th«i.", 0);
 		return 1;
 	end;
 	--¸øÓè½±Àø
@@ -52,7 +52,7 @@ function main()
 	AddOwnExp(tab_Exp[nIndex]);
 	
 	--¹«¸æÌáÊ¾
-	Msg2Player("Äã»ñµÃÁË<color=yellow>"..tab_Exp[nIndex].."<color>µã¾­Ñé¡£")
+	Msg2Player("B¹n nhËn ®­îc<color=yellow>"..tab_Exp[nIndex].."<color> ®iÓm kinh nghiÖm.")
 	return 0;
 end
 

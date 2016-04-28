@@ -541,9 +541,9 @@ SKILLS={
 		skill_param1_v={{{1,120},{15,360},{20,400},{21,405}}},
 		skill_desc=
 			function(level)
-				return "瞬移最大距离：<color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_param1_v[1])).."<color>\n"..
-				"冷却时间：<color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercast_v[1]) / 18).."秒<color>\n"..
-				"骑马施展冷却时间：<color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercastonhorse_v[1]) / 18).."秒<color>\n" 
+				return "Kho秐g c竎h di h譶h t鑙 產: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_param1_v[1])).."<color>\n"..
+				"Th阨 gian kh玦 ph鬰 chi猽 th鴆: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercast_v[1]) / 18).." gi﹜<color>\n"..
+				"Th阨 gian kh玦 ph鬰 chi猽 th鴆 tr猲 ng鵤: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercastonhorse_v[1]) / 18).." gi﹜<color>\n" 
 			end,
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},

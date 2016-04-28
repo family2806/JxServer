@@ -5,56 +5,56 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\vng_event\\change_request_baoruong\\exp_award.lua")
 
 tbAward = {
---	{szName = "×ÏòþÐ¬Í¼Æ×", 		tbProp = {6, 1, 2716, 1, 0, 0}, 	nRate = 0.12},
---	{szName = "×ÏòþÑü´øÍ¼Æ×", 		tbProp = {6, 1, 2717, 1, 0, 0}, 	nRate = 0.12},
---	{szName = "×Ïòþ»¤ÍóÍ¼Æ×", 		tbProp = {6, 1, 2718, 1, 0, 0}, 	nRate = 0.12},
---	{szName = "×ÏË®¾§¿óÊ¯", 			tbProp = {6, 1, 30040, 1, 0, 0}, 	nRate = 44},
---	{szName = "Á¶¾§Ê¯", 			tbProp = {6, 1, 2280, 1, 0, 0}, 	nRate = 27.34},
---	{szName = "Éñ¹ê²¹Ñªµ¤£¨Ð¡£©", 	tbProp = {6, 1, 2583, 1, 0, 0}, 	nRate = 18.3,	nCount = 10},
---	{szName = "Éñ¹ê²¹Ñªµ¤(ÖÐ)",	tbProp = {6, 1, 2582, 1, 0, 0},		nRate = 10,		nCount = 10},
+--	{szName = "§å Phæ Tö M·ng Hµi", 		tbProp = {6, 1, 2716, 1, 0, 0}, 	nRate = 0.12},
+--	{szName = "§å Phæ Tö M·ng Yªu §¸i", 		tbProp = {6, 1, 2717, 1, 0, 0}, 	nRate = 0.12},
+--	{szName = "§å Phæ Tö M·ng Hé UyÓn", 		tbProp = {6, 1, 2718, 1, 0, 0}, 	nRate = 0.12},
+--	{szName = "Tö Tinh Kho¸ng Th¹ch", 			tbProp = {6, 1, 30040, 1, 0, 0}, 	nRate = 44},
+--	{szName = "Tinh LuyÖn Th¹ch", 			tbProp = {6, 1, 2280, 1, 0, 0}, 	nRate = 27.34},
+--	{szName = "ThÇn Quy Bæ HuyÕt §¬n (tiÓu)", 	tbProp = {6, 1, 2583, 1, 0, 0}, 	nRate = 18.3,	nCount = 10},
+--	{szName = "ThÇn Quy Bæ HuyÕt §¬n (trung)",	tbProp = {6, 1, 2582, 1, 0, 0},		nRate = 10,		nCount = 10},
 
 --µ±Ê¹ÓÃ¸÷ÖÖ±¦ÏäÊ±Ã¿ÌìµÄ¾­ÑéÖµÉÏÏÞÊÇ5000Íò - Modified by DinhHQ - 20110428	
---	{szName="§i¾­ÑéÖµ", nExp=5000000, nRate=30},
---	{szName="§i¾­ÑéÖµ", nExp=10000000, nRate=20},
---	{szName="§i¾­ÑéÖµ", nExp=15000000, nRate=15},
---	{szName="§i¾­ÑéÖµ", nExp=20000000, nRate=10},
-	{szName="§i¾­ÑéÖµ 1", 
+--	{szName="§iÓm kinh nghiÖm", nExp=5000000, nRate=30},
+--	{szName="§iÓm kinh nghiÖm", nExp=10000000, nRate=20},
+--	{szName="§iÓm kinh nghiÖm", nExp=15000000, nRate=15},
+--	{szName="§iÓm kinh nghiÖm", nExp=20000000, nRate=10},
+	{szName="§iÓm kinh nghiÖm 1", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
-					%tbvng_ChestExpAward:ExpAward(5000000, "ÎÀÖ÷Àñ°ü")
+					%tbvng_ChestExpAward:ExpAward(5000000, "VÖ Trô LÔ Bao")
 				end,
 				nRate = 30,
 	},
-	{szName="§i¾­ÑéÖµ 2", 
+	{szName="§iÓm kinh nghiÖm 2", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
-					%tbvng_ChestExpAward:ExpAward(10000000, "ÎÀÖ÷Àñ°ü")
+					%tbvng_ChestExpAward:ExpAward(10000000, "VÖ Trô LÔ Bao")
 				end,
 				nRate = 20,
 	},
-	{szName="§i¾­ÑéÖµ 3", 
+	{szName="§iÓm kinh nghiÖm 3", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
-					%tbvng_ChestExpAward:ExpAward(15000000, "ÎÀÖ÷Àñ°ü")
+					%tbvng_ChestExpAward:ExpAward(15000000, "VÖ Trô LÔ Bao")
 				end,
 				nRate = 15,
 	},
-	{szName="§i¾­ÑéÖµ 4", 
+	{szName="§iÓm kinh nghiÖm 4", 
 				pFun = function (tbItem, nItemCount, szLogTitle)
-					%tbvng_ChestExpAward:ExpAward(20000000, "ÎÀÖ÷Àñ°ü")
+					%tbvng_ChestExpAward:ExpAward(20000000, "VÖ Trô LÔ Bao")
 				end,
 				nRate = 10,
 	},
 	
-	{szName="»ØÌìÔÙÔì½õÄÒ", tbProp={6,1,1781,1,0,0}, tbParam={60}, nRate=8},
-	{szName="ÌØÐ§ÏÉ²ÝÂ·", tbProp={6,1,1181,1,0,0}, nRate=7},
-	{szName="°ÙÄêÕäÂ¶", tbProp={6,1,2266,1,0,0}, nRate=5},
-	{szName="ÍòÄêÕäÂ¶", tbProp={6,1,2268,1,0,0}, nRate=2},
-	{szName="Ç§ÄêÕäÂ¶", tbProp={6,1,2267,1,0,0}, nRate=1},
-	{szName="ÉñÐÐ·û", tbProp={6,1,1266,1,0,0}, nRate=2, nExpiredTime=20160},
+	{szName="CÈm nang thay ®æi trêi ®Êt", tbProp={6,1,1781,1,0,0}, tbParam={60}, nRate=8},
+	{szName="Tiªn Th¶o Lé ®Æc biÖt", tbProp={6,1,1181,1,0,0}, nRate=7},
+	{szName="B¸ch Niªn Tr©n Lé", tbProp={6,1,2266,1,0,0}, nRate=5},
+	{szName="V¹n Niªn Tr©n Lé", tbProp={6,1,2268,1,0,0}, nRate=2},
+	{szName="Thiªn Niªn Tr©n Lé", tbProp={6,1,2267,1,0,0}, nRate=1},
+	{szName="ThÇn Hµnh Phï", tbProp={6,1,1266,1,0,0}, nRate=2, nExpiredTime=20160},
 
 }
 
 function main()
 	if (CalcFreeItemCellCount() < 1) then
-		Say("×°±¸ÖÁÉÙÒªÓÐ<color=red>1<color> ¿ÕÎ»²ÅÄÜÁì½±.")
+		Say("Hµnh trang Ýt nhÊt ph¶i cã <color=red>1<color> « trèng míi nhËn ®­îc phÇn th­ëng.")
 		return 1
 	end
 	tbAwardTemplet:Give(tbAward, 1, {"SEVENCITY", "UseGuardAward"})

@@ -4,32 +4,32 @@
 function main()
 	Uworld30 = GetByte(GetTask(30),2)
 	if (Uworld30 == 10) and (HaveItem(72) == 0) then		--ÈëÃÅÈÎÎñÖĞ²¢ÇÒÃ»ÓĞ¸ÃÎïÆ·
-		Say("ÒªÔõÃ´±íÑïÄØ ",4,"²Æ¸» /prise_1","¶ùËï. /prise_2","¹¦Ãû/prise_3","Àë¿ª/prise_exit")
+		Say("Ph¶i khen thÕ nµo ®©y?",4,"Tµi phóc /prise_1","Con ch¸u. /prise_2","c«ng danh /prise_3","Rêi khái/prise_exit")
 	else					--ÔÚÆÕÍ¨¶Ô»°ÖĞ¸øÒ»µãµãÈÎÎñÌáÊ¾¡£
 		i = random(0,2)
 		if (i == 0) then
-			Talk(1,"","Áø´óÒ¯£ºÈ«ÑïÖİ×îÓĞÇ®µÄ¾ÍÊÇÄÇĞ©ÑÎÉÌÁË£¡")
+			Talk(1,""," Sèng trªn ®êi, cÇn ph¶i cã lßng tõ t©m!")
 		elseif (i == 1) then
-			Talk(1,"","Áø´óÒ¯£ºÄã¿ÉÖªµÀÔÛÃÇÑïÖİ³Ç×îÆ¯ÁÁµÄµØ·½ÊÇÄÄÀï£¿²»ÊÇ¹ÙÀÏÒ¯µÄÕ¬µÚ£¬¶øÊÇÄÇĞ©ÑÎÉÌĞŞµÄÔ°×Ó£¡ÄÇĞ©Ô°ÁÖµÄ¾°É«¾Í¸ú»­ÀïÃæµÄÒ»Ñù£¬ÄãÏë¶¼Ïë²»µ½£¡")
+			Talk(1,"","Ha!Ha! Kh«ng sai! Kh«ng sai! Ta b×nh sinh mÆc dï kham khæ,nh­ng b©y giê th× khæ tËn cam lai,con ch¸u l¹i rÊt hiÕu thuËn. Ta ®· cã thÓ tù hµo víi tæ t«ng cña m×nh råi!")
 		else
-			Talk(1,"","ÎÒµÄÒ»Éú¾ÍÊÇÕâ¸öÃÎÏëÁË¡£¹ş¹ş£¬¿´ÆğÀ´ÎÒÊÇÊÀÉÏ×îĞÒ¸£µÄÈËÁË")
+			Talk(1,"","C¶ ®êi ta chØ ®eo ®uæi mét giÊc méng nµy th«i! Ha! Ha! Xem ra ta lµ ng­êi h¹nh phóc nhÊt trªn ®êi")
 		end
 	end
 end;
 
 function prise_1()
-	Talk(2,"","ÀÏÒ¯£¬¿´Äã¾ÍÖªµÀÄúÊÇ¸»¹óÖ®ÈË£¬¼Ò²ÆÍò¾í!","²»´í²»´í¡£ËäÈ»ÎÒ³ÔºÈ²»³î£¬µ«ÊÇ¼Ò¾³Ò»°ã£¬×î¿ªĞÄµÄÊÇ¶ùËïĞ¢Ë³")
+	Talk(2,"","L·o gia nµy, võa nh×n ®· biÕt ng­êi giµu cã, gia tµi v¹n quan!","Kh«ng sai kh«ng sai! Tuy ta ¨n mÆc kh«ng thiÕu, nh­ng gia c¶nh chØ b×nh th­êng, ®iÒu vui nhÊt lµ con ch¸u rÊt hiÕu thuËn")
 end;
 
 function prise_2()
-	Talk(4,"","ÀÏÒ¯£¬¿´Äú¾ÍÖªµÀÄúÊÇ¸»¹óÖ®ÈË£¬Ò»¶¨ÊÇ³öÉúÃû¼Ò","¹ş¹ş£¬²»´í£¬²»´í¡£ÎÒ²»³î³Ô´©£¬µ«ÊÇ£¬ÏÖÔÚ¿à¾¡¸ÊÀ´£¬¶ùËïĞ¢Ë³¡£ÎÒ¿ÉÒÔÔÚ×æ×ÚÃæÇ°×ÔºÀÁË¡£","ÀÏÒ¯£¬¿ÉÒÔ¸øÎÒÒ»¸ùÄúµÄºúĞëÂğ?","ÕæÊÇÆæ¹Ö£¬ÏëÒªÎÒµÄºúĞë×öÊ²Ã´£¿²»¹ÜÕâÃ´Ëµ£¬ÄãºÍÎÒÓĞÔµ£¬ĞĞ£¬ËÍÄã!")
+	Talk(4,"","L·o gia, võa nh×n ta ®· biÕt «ng lµ ng­êi giµu cã, nhÊt ®Şnh lµ dßng dâi danh gia","Ha!Ha! Kh«ng sai! Kh«ng sai! Ta b×nh sinh mÆc dï kham khæ, nh­ng b©y giê th× khæ tËn cam lai,con ch¸u l¹i rÊt hiÕu thuËn. Ta ®· cã thÓ tù hµo víi tæ t«ng cña m×nh råi!","L·o gia! cã thÓ cho ta 1 sîi r©u cña «ng kh«ng?","Th»ng nhá nµy thËt lµ kú qu¸i! Muèn xin mét sîi r©u cña ta ®Ó lµm g×? Nh­ng mµ dï sao th× ng­¬i còng cã duyªn víi ta ®ã! §­îc! Ta tÆng ng­¬i mét sîi r©u!")
 	AddEventItem(72)
-	Msg2Player("Äã»ñµÃÒ»¸ùºúĞë . ")
-	AddNote("Äã»ñµÃÒ»¸ùºúĞë ")
+	Msg2Player("Cã sîi r©u tõ chç l·o giµ. ")
+	AddNote("B¹n cã mét sîi r©u ")
 end;
 
 function prise_3()
-	Talk(2,"","ÕâÎ»ÀÏÒ¯£¬¿´Äú¾ÍÖªµÀÄúÑ§Ê¶Ô¨²©¡£","ÎÒÖ¾Æø²»¸ß£¬µ½ÏÖÔÚ»¹Ã»ÓĞ¹¦Ãû£¬Äã¹ı½±ÁË£¬ÎÒ²»ºÃÒâË¼!")
+	Talk(2,"","VŞ l·o gia nµy võa nh×n ®· biÕt häc thøc uyªn th©m! Thêi trai trÎ ®· häc qu¸ cao trung råi!","Ta vèn kh«ng mµng ch÷ nghÜa, tr­íc giê ch­a ®Ó m¾t ®Õn c«ng danh, ng­êi khen qu¸ lµm ta ng¹i!")
 end;
 
 function prise_exit()

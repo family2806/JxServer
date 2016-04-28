@@ -6,17 +6,17 @@ function main(nItemIdx)
 	local nDate = (GetItemParam(nItemIdx, 2)+2000) * 10000 + GetItemParam(nItemIdx, 3);
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"));
 	if (nCurDate > nDate) then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ!", 0);
+		Say("VËt phÈm nµy ®· qu¸ h¹n sö dông!", 0);
 		return 0;
 	else
 		if (GetTiredDegree() == 2) then
-			Say("Õı´¦ÓÚÆ£±¹×´Ì¬£¬²»ÄÜÊ¹ÓÃ¸ÃÎïÆ·.", 0);
+			Say("§ang ë tr¹ng th¸i mÖt mái, kh«ng thÓ sö dông vËt phÈm nµy.", 0);
 			return 1;
 		else
 			local nExp= GetItemParam(nItemIdx, 1) * 1000;
 			tl_addPlayerExp(nExp);
-			Msg2Player(format("Äú»ñµÃ%d¾­ÑéÖµ", nExp));
-			WriteLog(format("[ÀÛ¼ÆÒ°ÛÅ]\t%s\tName:%s\tAccount:%s\t »ñµÃ%d ¾­ÑéÖµ.",
+			Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm kinh nghiÖm", nExp));
+			WriteLog(format("[Tİch lòy D· TÈu]\t%s\tName:%s\tAccount:%s\t nhËn ®­îc %d ®iÓm kinh nghiÖm.",
 					GetLocalDate("%Y%m%d %X"),
 					GetName(),
 					GetAccount(),
@@ -34,5 +34,5 @@ function GetDesc(nItemIdx)
 	local nMonth = floor(nMMDD / 100);
 	local nDate = mod(nMMDD , 100);
 	
-	return format("§i¾­ÑéÖµ: %d<enter>Ê¹ÓÃÊ±¼ä: %d-%d-%d", nExp, nYear, nMonth,nDate);
+	return format("§iÓm kinh nghiÖm: %d<enter>Thêi h¹n sö dông: %d-%d-%d", nExp, nYear, nMonth,nDate);
 end;

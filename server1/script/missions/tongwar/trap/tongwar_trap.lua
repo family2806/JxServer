@@ -13,9 +13,9 @@ function main()
 	SubWorld = mapidx
 
 	if (GetMissionV(MS_STATE) == 0) then
-		Say("ÎäÁÖµÚÒ»°ï±ÈÈü»¹Î´¿ªÊ¼£¬ÇëµÈÒ»ÏÂ", 0)
+		Say("TrËn ®Êu Vâ L©m §Ö NhÊt Bang vÉn ch­a b¾t ®Çu, xin ®îi trong gi©y l¸t", 0)
 	elseif (GetMissionV(MS_STATE) == 1) then
-		Say("ÎÒ·½Ä¿Ç°ÕıÔÚ¼¯ºÏ×¼±¸½øÈëÕ½³¡£¬Çë´ó¼Ò°²¾²£¬×¼±¸ºÃ¾«Éñ!", 0)
+		Say("Phe ta hiÖn ®ang tËp hîp chuÈn bŞ vµo ®Êu tr­êng! Xin mäi ng­êi h·y b×nh tÜnh, chuÈn bŞ tinh thÇn!", 0)
 	elseif (GetMissionV(MS_STATE) == 2) then
 		if (tongwar_checkjoin(oldmapid)) then
 			SubWorld = oldSubWorld
@@ -44,7 +44,7 @@ function tongwar_checkjoin(mapid)
 			end
 			return tongwar_signup(camp)
 		else
-			Say("ÄãµÄÁªÃË×¼±¸Çø²»ÔÚÕâÀï, ¿ìÈ¥ÎäÁÖÃËÖ÷ÄÇÑ¡ÔñÕıÈ·µÄÇøÓò ", 0)
+			Say("Khu vùc chuÈn bŞ cho liªn minh cña ng­¬i kh«ng ph¶i ë ®©y, h·y chän l¹i chİnh x¸c khu vùc t¹i Vâ L©m Minh Chñ.", 0)
 		end
 	elseif(camp == 2) then
 		if (cityname == GetMissionS(MS_S_CITYNAME_J)) then
@@ -53,7 +53,7 @@ function tongwar_checkjoin(mapid)
 			end
 			return tongwar_signup(camp)
 		else
-			Say("ÄãµÄÁªÃË×¼±¸Çø²»ÔÚÕâÀï, ¿ìÈ¥ÎäÁÖÃËÖ÷ÄÇÑ¡ÔñÕıÈ·µÄÇøÓò", 0)
+			Say("Khu vùc chuÈn bŞ cho liªn minh cña ng­¬i kh«ng ph¶i ë ®©y, h·y chän l¹i chİnh x¸c khu vùc t¹i Vâ L©m Minh Chñ.", 0)
 		end
 	else
 		print("don't know the map"..mapid.." is which camp")
@@ -63,15 +63,15 @@ end
 function tongwar_signerror(camp, cityname)
 	--VLDNB 10 - ¸Ä±ä¼ÓÈë°ï»áµÄÊ±¼äÒªÇó- Modified by DinhHQ - 20111017
 	if (GetJoinTongTime() < 1440) then
-		Say("¼ÓÈë°ï»áÊ±¼äÎ´¹» <color=red>1 Ìì<color>, ²»ÄÜ½ø±ÈÈü³¡.", 0)
+		Say("Thêi gian gia nhËp bang ch­a ®ñ <color=red>1 ngµy<color>, kh«ng thÓ vµo ®Êu tr­êng.", 0)
 		return
 	end
 	if (tongwar_getdata(TONGWAR_RLTASK_NDEATH) >= tongwar_getdata(TONGWAR_RLTASK_MAXDEATH)) then
-		Say("ËÀÍö´ÎÊıÒÑ³¬¹ı"..tongwar_getdata(TONGWAR_RLTASK_MAXDEATH).." ´Î, ²»ÄÜ¼ÌĞø²Î¼Ó±ÈÈü!", 0)
+		Say("Sè lÇn tö vong ®· v­ît qu¸"..tongwar_getdata(TONGWAR_RLTASK_MAXDEATH).." lÇn, kh«ng thÓ tiÕp tôc tham gia thi ®Êu!", 0)
 		return
 	end
 	if (GetMSPlayerCount(MISSIONID, camp) >= MAX_MEMBERCOUNT) then
-		Say("Ä¿Ç° ["..cityname.."] ²Î¼ÓÈËÊı³¬¹ı"..MAX_MEMBERCOUNT.." ÈË, ÔİÊ±²»ÄÜ²Î¼Ó!", 0)
+		Say("Tr­íc m¾t ["..cityname.."] sè ng­êi tham gia ®· v­ît qu¸"..MAX_MEMBERCOUNT.." ng­êi, t¹m thêi kh«ng thÓ tham gia!", 0)
 		return
 	end
 	return 1
@@ -98,7 +98,7 @@ function tongwar_signup(camp)
 	--BT_SetData(PL_PARAM1,0)
 	--BT_SetData(PL_PARAM2,0)
 	--Msg2Player("±ÈÈü½øĞĞÖĞÀë³¡»òÏÂÏß£¬<color=yellow>µĞ·½ÕóÓª½«»ñµÃ75·Ö½±Àø")
-	Msg2Player("ÔÚÕ½¶·ÇøÓò£¬ÄÄ¸öÁªÃËµÄÈËÊı<color=yellow>ÉÙÓÚ5ÈË¾ÍËãÊäÁË")
+	Msg2Player("Trong khu vùc chiÕn ®Êu, qu©n sè liªn minh nµo <color=yellow>İt h¬n 5 ng­êi sÏ bŞ xö thua")
 	SetRevPos(GetPlayerRev())	--ÉèÖÃÖØÉúµãÎªÔ­À´³ÇÊĞµÄÖØÉúµã
 	NewWorld(sf_mapid, posx, posy);
 	tongwar_setdata(TONGWAR_RLTASK_KEYNUMBER, GetMissionV(MS_KEYNUMBER))

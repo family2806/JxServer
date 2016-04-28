@@ -163,7 +163,7 @@ end
 function FuYuan_Add( value )
 	local nResult = FuYuan_Set( FuYuan_Get() + value );
 	if(  nResult == 1 ) then
-		Msg2Player( "<#>您获得了"..value.."<#>点福缘" );
+		Msg2Player( "<> ng礽 thu 頲 "..value.."<> 甶觤 ph骳 duy猲 " );
 	end
 	return nResult;
 end
@@ -172,7 +172,7 @@ end
 function FuYuan_Reduce( value )
 	local nResult = FuYuan_Set( FuYuan_Get() - value );
 	if(  nResult == 1 ) then
-		Msg2Player( "<#>您消耗了"..value.."<#>点福缘" );
+		Msg2Player( "<> ng礽 ti猽 hao "..value.."<> 甶觤 ph骳 duy猲 " );
 	end
 	return nResult;
 end

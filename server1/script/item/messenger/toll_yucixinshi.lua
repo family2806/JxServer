@@ -9,15 +9,15 @@ Include("\\script\\task\\newtask\\newtask_head.lua")
 function main(itemindex)
 	local paramvalue = GetItemParam(itemindex, 1)
 	if ( paramvalue >= 5 ) then
-		Msg2Player("¶Ô²»Æğ£¬ÄãµÄÓù´ÍĞÅÊ¹½ğÅÆÒÑ¾­Ê¹ÓÃ¹ı5´ÎÁË£¬Ëü½«±»Ïú»Ù¡£")
+		Msg2Player("Xin lçi! Ngù Tø lÖnh bµi - vµng cña b¹n sö dông qu¸ 5 lÇn ®· bŞ hñy ho¹i.")
 	elseif ( nt_getTask(1206) < 5 ) then
-		Msg2Player("¶Ô²»Æğ£¬Äã»¹Ã»ÓĞÁìÈ¡µ½Óù´Í½ğÅÆĞÅÊ¹µÄ³ÆºÅ£¬ÎŞ·¨Ê¹ÓÃÓù´ÍĞÅÊ¹½ğÅÆ¡£ÇëÏÈÈ¥ÕÒæä¹ÙÉı¼¶³ÆºÅ£¬Ğ»Ğ»¡£")
+		Msg2Player("Xin lçi! B¹n ch­a nhËn ®­îc danh hiÖu Ngù Tø lÖnh bµi - vµng nªn kh«ng thÓ sö dông ®­îc. H·y ®Õn chç DŞch Quan nhËn danh hiÖu nµy, c¸m ¬n!")
 		return 1
 	else
 		if ( SetSpecItemParam(itemindex, 1, paramvalue+1) == 1 ) then
 			SyncItem(itemindex)
 			local Realvalue = 5 - GetItemParam(itemindex, 1)
-			Msg2Player("ÄãµÄÓù´ÍĞÅÊ¹½ğÅÆÊ¹ÓÃºó¿É»ñµÃÒ»Ğ¡Ê±µÄ30µã¸º¿¹¡£Ä¿Ç°»¹¿ÉÒÔÊ¹ÓÃ"..Realvalue.."´Î¡£")
+			Msg2Player("Ngù Tø lÖnh bµi - vµng cña b¹n sau khi sö dông phôc håi 30 ®iÓm ©m trong 1 giê. HiÖn t¹i cßn sö dông ®­îc"..Realvalue.." lÇn.")
 		end
 		
 		if ( GetSeries() == 0 ) then --½ğÏµÈËÎï±»»ğ¿Ë £¬631-635£¬½ğÄ¾Ë®»ğÍÁ
@@ -49,6 +49,6 @@ function GetDesc( nItem )
 	local Realvalue = 5 - nPayMonth1
 	
 	szDesc = ""
-	szDesc = szDesc..format( "ÄãµÄÓù´ÍĞÅÊ¹½ğÅÆÊ¹ÓÃºó¿É»ñµÃÒ»Ğ¡Ê±µÄ30µã¸º¿¹¡£Ä¿Ç°»¹¿ÉÒÔÊ¹ÓÃ"..Realvalue.."´Î¡£" );
+	szDesc = szDesc..format( "Ngù Tø lÖnh bµi - vµng cña b¹n sau khi sö dông phôc håi 30 ®iÓm ©m trong 1 giê. HiÖn t¹i cßn sö dông ®­îc"..Realvalue.." lÇn." );
 	return szDesc;
 end

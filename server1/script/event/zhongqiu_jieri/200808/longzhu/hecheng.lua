@@ -12,28 +12,28 @@ local tbFormula =
 	{
 		tbMaterial = 
 		{
-			{szName="ÎåÉ«ÁúÖé(½ğ)", tbProp={6, 1, 1807}},
-			{szName="ÎåÉ«ÁúÖé(Ä¾)", tbProp={6, 1, 1808}},
-			{szName="ÎåÉ«ÁúÖé (Ë®)", tbProp={6, 1, 1809}},
-			{szName="ÎåÉ«ÁúÖé (»ğ)", tbProp={6, 1, 1810}},
-			{szName="ÎåÉ«ÁúÖé (ÍÁ)", tbProp={6, 1, 1811}},
+			{szName="Ngò s¾c long ch©u (Kim)", tbProp={6, 1, 1807}},
+			{szName="Ngò s¾c long ch©u (Méc)", tbProp={6, 1, 1808}},
+			{szName="Ngò s¾c long ch©u (Thñy)", tbProp={6, 1, 1809}},
+			{szName="Ngò s¾c long ch©u (Háa)", tbProp={6, 1, 1810}},
+			{szName="Ngò s¾c long ch©u (Thæ)", tbProp={6, 1, 1811}},
 
 		},
 		nMoney = 0,
-		tbAward = 	{szName="·îÔÂ¹ûÈØ", tbProp={6, 1, 127, 1, 0, 0}},
+		tbAward = 	{szName="Phông NguyÖt Qu¶ Dung", tbProp={6, 1, 127, 1, 0, 0}},
 	},
 	[2] = 
 	{
 		tbMaterial = 
 		{
-			{szName="ÎåÉ«·ïÓğ(½ğ)", tbProp={6, 1, 1812}},
-			{szName="ÎåÉ«·ïÓğ(Ä¾)", tbProp={6, 1, 1813}},
-			{szName="ÎåÉ«·ïÓğ(Ë®)", tbProp={6, 1, 1814}},
-			{szName="ÎåÉ«·ïÓğ(»ğ)", tbProp={6, 1, 1815}},
-			{szName="ÎåÉ«·ïÓğ(ÍÁ)", tbProp={6, 1, 1816}},
+			{szName="Ngò s¾c phông vò (Kim)", tbProp={6, 1, 1812}},
+			{szName="Ngò s¾c phông vò (Méc)", tbProp={6, 1, 1813}},
+			{szName="Ngò s¾c phông vò (Thñy)", tbProp={6, 1, 1814}},
+			{szName="Ngò s¾c phông vò (Háa)", tbProp={6, 1, 1815}},
+			{szName="Ngò s¾c phông vò (Thæ)", tbProp={6, 1, 1816}},
 		},
 		nMoney = 0,
-		tbAward = {szName="¹¨ÔÂÜ½ÈØ", tbProp={6, 1, 128, 1, 0, 0}},
+		tbAward = {szName="Cèng NguyÖt Phï Dung", tbProp={6, 1, 128, 1, 0, 0}},
 	},
 }
 
@@ -41,10 +41,10 @@ function zhongqiu0808_longzhuhecheng_dialog()
 	
 	local tbSay = 
 	{
-		"<dec><npc>ÓĞÁ½ÖÖ±¦Îï£¬´óÏÀÏë»»Ê²Ã´£¿<enter>1:1 ÎåÉ«ÁúÖé»»·îÔÂ¹ûÈØ<enter>2:1 ÎåÉ«·ïÓğ»»¹¨ÔÂÜ½ÈØ.",
-		"ÎÒÏë»»·îÔÂ¹ûÈØ./#zhongqiu0808_longzhuhecheng_select(1)",
-		"ÎÒÏë»»¹¨ÔÂÜ½ÈØ./#zhongqiu0808_longzhuhecheng_select(2)",
-		"½áÊø¶Ô»°/OnCancel",
+		"<dec><npc>Cã hai lo¹i b¸u vËt, ®¹i hiÖp muèn ®æi g×?<enter>C¸ch 1: 1 bé 'Ngò s¾c long ch©u'  ®æi “Phông nguyÖt qu¶ dung'<enter>C¸ch 2: 1 bé 'Ngò s¾c phông vò' ®æi 'Cèng nguyÖt phï dung'.",
+		"T¹i h¹ muèn ®æi 'Phông nguyÖt qu¶ dung'./#zhongqiu0808_longzhuhecheng_select(1)",
+		"T¹i h¹ muèn ®æi 'Cèng nguyÖt phï dung'./#zhongqiu0808_longzhuhecheng_select(2)",
+		"KÕt thóc ®èi tho¹i/OnCancel",
 	}
 	CreateTaskSay(tbSay)
 end
@@ -53,13 +53,13 @@ end
 function zhongqiu0808_longzhuhecheng_select(nSelectId)
 	local tbRecipe = %tbFormula[nSelectId]
 	
-	local szMsg = format("<dec><npc>§æi <color=yellow>%s<color> ĞèÒª:<enter>%s",tbRecipe.tbAward.szName, zhongqiu0808_ComposeClass:GetMaterialList(tbRecipe.tbMaterial, tbRecipe.nMoney))
+	local szMsg = format("<dec><npc>§æi <color=yellow>%s<color> cÇn:<enter>%s",tbRecipe.tbAward.szName, zhongqiu0808_ComposeClass:GetMaterialList(tbRecipe.tbMaterial, tbRecipe.nMoney))
 	
 	CreateTaskSay(
 			{
 				szMsg,
-				format("È·ÈÏ»»/#zhongqiu0808_longzhuhecheng_comfirm(%d)", nSelectId),
-				"½áÊø¶Ô»°/OnCancel",
+				format("X¸c nhËn ®æi/#zhongqiu0808_longzhuhecheng_comfirm(%d)", nSelectId),
+				"KÕt thóc ®èi tho¹i/OnCancel",
 				
 			}
 		)
@@ -68,7 +68,7 @@ end
 function zhongqiu0808_longzhuhecheng_comfirm(nSelectId)
 	
 	local tbRecipe = %tbFormula[nSelectId]
-	zhongqiu0808_ComposeClass:Compose(tbRecipe.tbMaterial, tbRecipe.nMoney, tbRecipe.tbAward, "×öÖĞÇïÔÂ±ı»î¶¯")
+	zhongqiu0808_ComposeClass:Compose(tbRecipe.tbMaterial, tbRecipe.nMoney, tbRecipe.tbAward, "Ho¹t ®éng Lµm b¸nh trung thu")
 	
 end
 

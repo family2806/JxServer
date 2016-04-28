@@ -3,22 +3,22 @@ Include("\\script\\missions\\dungeon\\npcdialog.lua")
 Include("\\script\\dailogsys\\dailogsay.lua")
 
 local _CallTower = function()
-	tbDungeonManager:DoTempletFun("ÊÔÁ¶ÌÃ", "CallTower")
+	tbDungeonManager:DoTempletFun("Thİ LuyÖn §­êng", "CallTower")
 end
 
 local _CallBackTower = function()
-	tbDungeonManager:DoTempletFun("ÊÔÁ¶ÌÃ", "CallBackTower")
+	tbDungeonManager:DoTempletFun("Thİ LuyÖn §­êng", "CallBackTower")
 end
 
 function main()
-	local szTitle = "<color=yellow>ÕÙ»½·û <color> ÔÚÖ¸¶¨µØµã£¬¿ÉÒÔÕÙ»½<color=red>¹­¼ıÊÖ <color>, Ò²¿ÉÒÔÕÙ»½<color=red> ÆäËûÎ»ÖÃµÄ¹­¼ıÊÖ <color> ."
+	local szTitle = "<color=yellow>TriÖu tËp phï<color> nµy t¹i ®Şa ®iÓm chØ ®Şnh cã thÓ triÖu tËp<color=red>cung tiÔn thñ<color>, còng cã thÓ triÖu tËp <color=red> cung tiÔn thñ<color> t¹i vŞ trİ kh¸c."
 	
-	if tbDungeonManager:DoTempletFun("ÊÔÁ¶ÌÃ", "CheckOwnerInDungeon") then
+	if tbDungeonManager:DoTempletFun("Thİ LuyÖn §­êng", "CheckOwnerInDungeon") then
 		local tbOpt = 
 		{
-			{"ÔÚ´ËÕÙ»½¹­¼ıÊÖ", %_CallTower},
-			{"ÔÚÕâÀïÕÙ»½¹­¼ıÊÖ", %_CallBackTower},
-			{"È¡Ïû "}
+			{"T¹i ®©y triÖu tËp cung tiÔn thñ", %_CallTower},
+			{"TriÖu tËp cung tiÔn thñ vµo ®Şa ®iÓm nµy", %_CallBackTower},
+			{"Hñy bá "}
 		}
 		CreateNewSayEx(szTitle, tbOpt)
 	end

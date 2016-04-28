@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("通往快活林", 0)
+Say(" Kho竔 Ho箃 l﹎", 0)
 
 end;

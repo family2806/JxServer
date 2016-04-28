@@ -28,7 +28,7 @@ function tbZhongqiuDajibin:AddCount()
 	local nServerCount = gb_GetTask("ZhongqiuDajibin2009", 1)
 	LadderFunLib:UpdatePlayer(10266,2643)
 	gb_AppendTask("ZhongqiuDajibin2009", 1, 1)
-	Msg2Player(format("´óÏÀÒÑ½» %d, Õû¸ö·þÎñÆ÷ÒÑ½»%d.", nPlayerCount, nServerCount+1))
+	Msg2Player(format("§¹i hiÖp ®· nép %d, toµn server ®· nép %d.", nPlayerCount, nServerCount+1))
 end
 
 function tbZhongqiuDajibin:GetRank()
@@ -53,12 +53,12 @@ function tbZhongqiuDajibin:CheckLastAward()
 	local nRank = self:GetRank()
 	
 	if nPlayerCount < 0 then
-		Talk(1, "", "´óÏÀÒÂÁì¸Ã½±ÁË.")
+		Talk(1, "", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.")
 		return 
 	end
 	
 	if not nRank then
-		Talk(1, "", "´óÏÀ²»ÄÜÁì¸Ã½±ÁË.")
+		Talk(1, "", "§¹i hiÖp kh«ng thÓ nhËn phÇn th­ëng nµy.")
 		return 
 	end
 	local nIdex = 1
@@ -85,7 +85,7 @@ function tbZhongqiuDajibin:GetLianziCookie()
 	
 	local nPlayerFlag = PlayerFunLib:GetActivityTask(2654)
 	if nPlayerFlag < 0 then
-		Talk(1, "", "´óÏÀÒÑÁì¸Ã½±.")
+		Talk(1, "", "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.")
 		return 
 	end
 	
@@ -99,14 +99,14 @@ function tbZhongqiuDajibin:GetLianziCookie()
 	end
 	
 	if nPlayerFlag ~= 1 then
-		Talk(1, "", "´óÏÀ²»ÄÜÁì¸Ã½±.")
+		Talk(1, "", "§¹i hiÖp kh«ng thÓ nhËn phÇn th­ëng nµy.")
 		return 
 	end
 	local nItemCount = 2
 	if nCount <= 5000 then
 		nItemCount = 1
 	end
-	local tbItem = {szName = "Á«Åº±ý", tbProp={6,1,2159,1,0,0},nCount = nItemCount, nExpiredTime=20091123}
+	local tbItem = {szName = "B¸nh h¹t sen", tbProp={6,1,2159,1,0,0},nCount = nItemCount, nExpiredTime=20091123}
 	
 	tbAwardTemplet:GiveAwardByList(tbItem, "MidAutumn,GetLianzibing")
 	PlayerFunLib:SetActivityTask(2654, -nPlayerFlag)

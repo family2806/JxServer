@@ -1,7 +1,7 @@
 Include("\\script\\missions\\datusha\\datusha.lua")
 Include("\\script\\lib\\awardtemplet.lua")
 function main()
-	local tbEgg = {szName="五彩幸运蛋", tbProp={6, 1, 1714, 1, 0, 0}, nCount = 10, nExpiredTime = 30}
+	local tbEgg = {szName="Tr鴑g nhi襲 m祏 may m緉", tbProp={6, 1, 1714, 1, 0, 0}, nCount = 10, nExpiredTime = 30}
 	local pDungeon = DungeonList[MAP_ID]
 	if not pDungeon then
 		return
@@ -11,13 +11,13 @@ function main()
 		return
 	end
 	if CalcFreeItemCellCount() < 1 then
-		return Talk(1, "", "请整理背包")
+		return Talk(1, "", "Xin h穣 s緋 x誴 l筰 h祅h trang")
 	end
 	if not pData.bIsGetEgg then
-		tbAwardTemplet:Give(tbEgg, 1, {"乱战九州谷","领取幸运蛋"})
+		tbAwardTemplet:Give(tbEgg, 1, {"Lo筺 Chi課 C鰑 Ch﹗ C鑓","Nh薾 Tr鴑g May M緉"})
 		pData.bIsGetEgg = 1
 	else
-		Talk(1, "", "你已经领奖了")
+		Talk(1, "", "Ngi  nh薾 ph莕 thng r錳")
 	end	
 end
 

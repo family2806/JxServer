@@ -9,41 +9,41 @@ function main(sel)
 		UTask_trsub60 = GetByte(GetTask(28),3)
 		if (UTask_trsub60 == 0) then
 			DelItem(130)			--´¦ÀíÖØ½ÓÈÎÎñºó£¬Íæ¼Ò¼ñÆğÈÎÎñµÀ¾ßµÄÇé¿ö	
-			Say("¿´¼ûÎÒÃÇ¼ÒĞ¡º£ÁËÂğ£¿Ëû²»ÖªÓÖÒ°µ½Ê²Ã´µØ·½Íæ¶ùÈ¥ÁË£¬ÄãÄÜ°ïÎÒÕÒÕÒÂğ?", 2, "ºÃµÄ!/L60_sub3_yes", "ÎÒ»¹ÓĞ±ğµÄÊÂ. /L60_sub3_no")
+			Say("ThÊy TiÓu H¶i nhµ t«i kh«ng? Kh«ng biÕt nã l¹i ch¹y ®i ®©u ch¬i råi, ng­¬i cã thÓ gióp ta t×m nã ®­îc kh«ng?", 2, "§­îc!/L60_sub3_yes", "Ta cßn cã viÖc kh¸c. /L60_sub3_no")
 		elseif (UTask_trsub60 == 2) then
-			Talk(1,"","ÕÒµ½ÎÒÃÇ¼ÒĞ¡º£ÁËÂğ?")
+			Talk(1,"","T×m thÊy TiÓu H¶i nhµ t«i ch­a?")
 		elseif (UTask_trsub60 == 4) then
-			Talk(2, "", "Ğ¡º£ÔÚ¹ã³¡ÉÏÍæ¶ùÄØ£¬¹ı»á¶ù¾Í»ØÀ´ !", "Ì«Ğ»Ğ»ÄãÁË£¬ÎÒ¼ÒĞ¡º£³¤´óºóÒªÊÇÓĞÄãÒ»°ë¶®ÊÂ¾ÍºÃÁË£¡ÎÒÒ²Ã»Ê²Ã´±ğµÄºÃ¶«Î÷£¬Õâ°Ñ¶Ï½£ÊÇÎÒÃÇ¼ÒÓÃÀ´ÈûÇ½·ìµÄ£¬¿´ÄãÊÇÒ»¸öÏ°ÎäÖ®ÈË£¬¾ÍËÍ¸øÄã°É")
+			Talk(2, "", "TiÓu H¶i ®ang ch¬i ë qu·ng tr­êng, l¸t n÷a sÏ vÒ!", "C¸m ¬n ng­¬i! TiÓu H¶i nhµ ta sau nµy lín lªn chØ cÇn ®­îc ph©n n÷a nh­ ng­¬i lµ tèt råi! Ta tÆng còng kh«ng cã g× quı gi¸, chØ cã mét thanh kiÕm nµy vèn lµ vËt phßng th©n. ThÊy ng­¬i còng lµ mét ng­êi tËp vâ, xin tÆng thanh ®o¶n kiÕm nµy cho ng")
 			AddEventItem(130)
-			Msg2Player("µÃµ½¶Ï½£¡°È¥Ğ°¡± ")
+			Msg2Player("NhËn ®­îc thanh kiÕm Khø Tµ ")
 			SetTask(28, SetByte(GetTask(28),3,10))
-			AddNote("»Øµ½¶¬Ã·¼Ò£¬»ñµÃ¶Ï½£¡°È¥Ğ° ")
+			AddNote("VÒ ®Õn nhµ cña §«ng Mai, nhËn ®­îc thanh kiÕm Khø Tµ ")
 		elseif (UTask_trsub60 == 10) and (HaveItem(130) == 0) then
 			AddEventItem(130)
-			Msg2Player("¶Ï½£¡°È¥Ğ°")
-			Talk(1,"","´Ë½£ËäÈ»²»Öµ¼¸¸öÇ®£¬µ«ÊÇÊÇÎÒµÄÒ»µãĞÄÒâ£¬Äã²»ÒªÍÆ´Ç.")
+			Msg2Player("NhËn ®­îc thanh kiÕm Khø Tµ ")
+			Talk(1,"","Thanh kiÕm nµy mÆc dï kh«ng quı gi¸ g×, nh­ng lµ mét chót thµnh ı cña ta, ng­¬i ®õng tõ chèi n÷a.")
 		else
-			Talk(1,"","Ğ¡º£Ëûµù²»ÔÚ¼Ò£¬Õâº¢×ÓÓÖ²»Ìı»°£¬°¦! ")
+			Talk(1,"","Cha TiÓu H¶i kh«ng cã ë nhµ, ®øa con nµy l¹i kh«ng biÕt nghe lêi! ")
 		end
 	else
 		i = random(0,2)
 		if (i == 0) then
-			Talk(1,"","¶¬Ã·£º¿´¼ûÎÒÃÇ¼ÒĞ¡º£ÁËÂğ£¿Ëû²»ÖªÓÖÒ°µ½Ê²Ã´µØ·½Íæ¶ùÈ¥ÁË¡£")
+			Talk(1,"","ThÊy TiÓu H¶i nhµ t«i ®©u kh«ng? Kh«ng biÕt nã ch¹y ®i ®©u ch¬i råi!")
 		elseif (i == 1) then
-			Talk(1,"","¶¬Ã·£ºĞ¡º£Ëûµù²»ÔÚ¼Ò£¬ÀïÀïÍâÍâÈ«¿¿ÎÒ£¬Æ«Æ«Ëû»¹²»Ìı»°£¡")
+			Talk(1,"","Cha TiÓu H¶i kh«ng cã ë nhµ, mäi chuyÖn ®Òu do t«i qu¸n xuyÕn, vËy mµ nã l¹i kh«ng nghe lêi! ")
 		else
-			Talk(1,"","¶¬Ã·£ºÏÖÔÚÊ±¾Ö²»ºÃ£¬¹ıÈÕ×ÓÕæÄÑ°¡£¡")
+			Talk(1,"","ThÕ côc hiÖn giê kh«ng tèt! muèn sèng qua ngµy thËt khã!")
 		end;
 	end
 end;
 
 function L60_sub3_yes()
-	Talk(1,"","Ì«Âé·³ÄãÁË ! ")
+	Talk(1,"","PhiÒn ng­¬i qu¸! ")
 	SetTask(28, SetByte(GetTask(28),3,2))
-	AddNote("ÔÚ¶«±±ãê¾©Ò»¸ö¾ÓÃñÇøÓöµ½¶¬Ã·£¬°ïËıÕÒĞ¡º£")
-	Msg2Player("¶¬Ã·½ĞÄã°ïËıÈ¥ÕÒĞ¡º£ ")
+	AddNote("T×m gÆp §«ng Mai t¹i mét khu d©n c­ phİa §«ng B¾c BiÖn Kinh, gióp Nµng ta t×m TiÓu H¶i ")
+	Msg2Player("§«ng Mai nhê ng­¬i gióp c« Êy ®i t×m TiÓu H¶i vÒ ")
 end;
 
 function L60_sub3_no()
-	Talk(1,"","°¦£¡Õâº¢×ÓÕæÈÃÈË²ÙĞÄ°¡g! ")
+	Talk(1,"","Chao «i! §øa con nµy thËt khiÕn ng­êi ta ph¶i lo l¾ng! ")
 end;

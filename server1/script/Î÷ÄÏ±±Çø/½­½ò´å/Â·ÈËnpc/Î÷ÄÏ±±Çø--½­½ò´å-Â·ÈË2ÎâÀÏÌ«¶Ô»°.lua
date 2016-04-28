@@ -9,6 +9,6 @@ function main(sel)
 	if ( Uworld1051 ~= 0 ) then
 		branch_wulaotai()
 	else
-Say("ÎâÀÏÌ«£ºÎÒËäÈ»Ã»ÓĞ¶ù×Ó£¬¿ÉÊÇÑøÁË¸öĞ¢Ë³µÄºÃ¹ëÅ®£¬½Ö·»¶¼ËµÎÒÀÏÆÅ×ÓÓĞ¸£Æø¡£",0)
+Say("Tuy ta kh«ng cã con trai, nh­ng ®· cã mét ®øa con g¸i ngoan hiÒn hiÕu thuËn, ng­êi ta ®Òu nãi bµ nhµ ta cã phóc!",0)
 	end
 end;

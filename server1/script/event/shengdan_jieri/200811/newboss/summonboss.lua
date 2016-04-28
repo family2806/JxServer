@@ -1,23 +1,23 @@
 Include("\\script\\missions\\basemission\\lib.lua")
 local tbMap = 
 		{
-			{nId = 121, szName = "¡˙√≈’Ú", tbPos = { {251, 261}, {268, 293}	}},
-			{nId = 100, szName = "÷Ôœ…’Ú", tbPos = { {201, 211}, {219, 182}	}},
-			{nId = 101, szName = "µæœ„¥Â", tbPos = { {225, 185}, {190, 176} }},
-			{nId = 174, szName = "¡˙»™¥Â", tbPos = { {182, 189}, {193, 216} }},
-			{nId = 53, szName = "∞Õ¡Íœÿ", tbPos = { {220, 189}, {178, 204} }},
-			{nId = 20, szName = "Ω≠ΩÚ¥Â", tbPos = { {459, 365}, {452, 396} }},
-			{nId = 153, szName = " Øπƒ’Ú", tbPos = { {226, 218}, {184, 217}	}},
-			{nId = 99, szName = "”¿¿÷’Ú", tbPos = { {216, 182}, {185, 199} }},
+			{nId = 121, szName = "Long M´n tr n", tbPos = { {251, 261}, {268, 293}	}},
+			{nId = 100, szName = "Chu Ti™n tr n", tbPos = { {201, 211}, {219, 182}	}},
+			{nId = 101, szName = "ßπo H≠¨ng th´n", tbPos = { {225, 185}, {190, 176} }},
+			{nId = 174, szName = "Long Tuy“n th´n", tbPos = { {182, 189}, {193, 216} }},
+			{nId = 53, szName = "Ba L®ng huy÷n", tbPos = { {220, 189}, {178, 204} }},
+			{nId = 20, szName = "Giang T©n Th´n", tbPos = { {459, 365}, {452, 396} }},
+			{nId = 153, szName = "Thπch CÊ tr n", tbPos = { {226, 218}, {184, 217}	}},
+			{nId = 99, szName = "V‹nh Lπc tr n", tbPos = { {216, 182}, {185, 199} }},
 		}
 		
 function shengdan0811_SummonThief(nMapId, nPosX, nPosY)
 	local tbNpc = {
-			{nNpcId = 1386, nLevel = 95, szName = "¡È≈£", nIsboss = 1,nTime = 60*60*23, nSeries = 0},
-			{nNpcId = 1387, nLevel = 95, szName = "¡È≈£", nIsboss = 1,nTime = 60*60*23, nSeries = 1},
-			{nNpcId = 1388, nLevel = 95, szName = "¡È≈£", nIsboss = 1,nTime = 60*60*23, nSeries = 2},
-			{nNpcId = 1389, nLevel = 95, szName = "¡È≈£", nIsboss = 1,nTime = 60*60*23, nSeries = 3},
-			{nNpcId = 1390, nLevel = 95, szName = "¡È≈£", nIsboss = 1,nTime = 60*60*23, nSeries = 4},
+			{nNpcId = 1386, nLevel = 95, szName = "Linh Ng≠u", nIsboss = 1,nTime = 60*60*23, nSeries = 0},
+			{nNpcId = 1387, nLevel = 95, szName = "Linh Ng≠u", nIsboss = 1,nTime = 60*60*23, nSeries = 1},
+			{nNpcId = 1388, nLevel = 95, szName = "Linh Ng≠u", nIsboss = 1,nTime = 60*60*23, nSeries = 2},
+			{nNpcId = 1389, nLevel = 95, szName = "Linh Ng≠u", nIsboss = 1,nTime = 60*60*23, nSeries = 3},
+			{nNpcId = 1390, nLevel = 95, szName = "Linh Ng≠u", nIsboss = 1,nTime = 60*60*23, nSeries = 4},
 		}
 	
 	for i=1, getn(tbNpc) do

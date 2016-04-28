@@ -13,12 +13,12 @@ function main()
 	end
 	local tbDailog = DailogClass:new(szNpcName)
 	if floor(GetTask(2885)/100) == 12 then
-		tbDailog.szTitleMsg = "<#><npc>ÎÒÊÇÔÂ¸èµºÖ÷"
-		tbDailog:AddOptEntry("¿ªÊ¼¾ö¶·", beginfight, {nNpcIndex})
+		tbDailog.szTitleMsg = "<#><npc>Ta lµ NguyÖt Ca §¶o Chñ"
+		tbDailog:AddOptEntry("B¾t ®Çu quyÕt ®Êu", beginfight, {nNpcIndex})
 	else
-		tbDailog.szTitleMsg = "<#><npc>Äã´ò²»¹ıÎÒµÄ£¬¿ìÀë¿ª°É"
+		tbDailog.szTitleMsg = "<#><npc>Ng­¬i ®¸nh kh«ng th¾ng nçi ta ®©u, nhanh rêi khái ®©y ®i"
 	end
-	tbDailog:AddOptEntry("ÎÒÏëÀë¿ª!", leavemigu)
+	tbDailog:AddOptEntry("Ta muèn rêi khái!", leavemigu)
 	tbDailog:Show() 
 end
 

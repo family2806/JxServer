@@ -21,15 +21,15 @@ Include("\\script\\task\\newtask\\tasklink\\tasklink_head.lua")    --°üº¬Ò°ÛÅÈÎÎ
 function SuperPlayerAct2007()
     local tDiaStr = 
     {
-        "ÕË»§¿ÉÒÔÔÚ<color=green>01-06-2007<color>µ½<color=green>01-07-2007<color>ÆÚ¼äĞÂ½¨ ",
-        format("½«ÓĞ»ú»á²Î¼Ó'³¬¼¶Íæ¼Ò'»î¶¯. ÔÚ»î¶¯ÆÚ¼ä£¬µ±ĞÂÈËÎï(ÔÚĞÂ½¨ÕË»§ÖĞ)¼¶Êı´ïµ½<color=yellow>%s<color> ºÍÍê³É<color=yellow>",SUPERPLAYERACT_LevRequest),
-        format("%s<color> Ò°ÛÅÈÎÎñ(ÈÎÎñÁ´)½«¿ÉÒÔµ½¸÷´ó³ÇÊĞºÍĞÂÊÖ´åµÄÀñ¹Ù´¦ÁìÈ¡1¸ö<yellow=color>ÌìÉ½Ñ©Á«<color>.",	SUPERPLAYERACT_TaskTime)
+        "Tµi kho¶n ®­îc t¹o míi trong kho¶ng thêi gian tõ <color=green>01-06-2007<color> ®Õn <color=green>01-07-2007<color> ",
+        format("sÏ cã c¬ héi tham gia 'Ho¹t ®éng ng­êi ch¬i siªu cÊp'. Trong thêi gian ho¹t ®éng, khi nh©n vËt míi (trong tµi kho¶n míi t¹o) ®¹t ®Õn cÊp <color=yellow>%s<color> vµ hoµn thµnh <color=yellow>",SUPERPLAYERACT_LevRequest),
+        format("%s<color> nhiÖm vô D· TÈu (chuçi nhiÖm vô) sÏ cã thÓ ®Õn LÔ Quan t¹i c¸c thµnh thŞ vµ T©n thñ th«n ®Ó nhËn 1 <yellow=color>Thiªn S¬n TuyÕt Liªn<color>.",	SUPERPLAYERACT_TaskTime)
     }
    Say( format("%s%s%s",tDiaStr[1],tDiaStr[2],tDiaStr[3]),
    		3,
-   		"ÁìÈ¡ÌìÉ½Ñ©Á«/SuperPlayerAct_WinMedal",
-   		"ÌìÉ½Ñ©Á«ÊÇÊ²Ã´£¿/SuperPlayerAct_ItemDes",
-   		"½áÊø¶Ô»°/OnCancel")
+   		"NhËn Thiªn S¬n TuyÕt Liªn/SuperPlayerAct_WinMedal",
+   		"Thiªn S¬n TuyÕt Liªn lµ g×?/SuperPlayerAct_ItemDes",
+   		"KÕt thóc ®èi tho¹i/OnCancel")
 end
 --
 function SuperPlayerAct_WinMedal()
@@ -37,27 +37,27 @@ function SuperPlayerAct_WinMedal()
 	local nDay = tonumber(GetLocalDate("%Y%m%d"))
     local szMsg = "";
     if nDay < SUPERPLAYERACT_BIGENTIME and nDay > SUPERPLAYERACT_ENDTIME then
-        Msg2Player("ÕæÒÅº¶£¬»î¶¯Ê±¼ä½áÊøÁË.")
+        Msg2Player("ThËt ®¸ng tiÕc, thêi gian ho¹t ®éng ®· kÕt thóc.")
         return 0;
     end;
      
     if GetExtPoint(SUPERPLAYERACT_ExtPoint) ~= 1 then
-    	szMsg = "Õæ¿ÉÏ§£¬²»ÊÇĞÂ½¨ÕË»§£¬²»ÄÜ²Î¼Ó´Ë»î¶¯!";
+    	szMsg = "ThËt ®¸ng tiÕc, kh«ng ph¶i lµ tµi kho¶n míi t¹o, kh«ng thÓ tham gia ho¹t ®éng nµy!";
         Say(szMsg,
         	2,
-        	"·µ»Ø/main",
-        	"½áÊø¶Ô»°/OnCancel")
+        	"Trë l¹i/main",
+        	"KÕt thóc ®èi tho¹i/OnCancel")
         Msg2Player(szMsg)
         return 0
     end
     
     local nLev = GetLevel()
     if nLev < SUPERPLAYERACT_LevRequest then
-    	szMsg = format("Î´µ½ %s¼¶, µÈµ½ %s¼¶ÔÙÀ´ÕÒÎÒ.",SUPERPLAYERACT_LevRequest,SUPERPLAYERACT_LevRequest)
+    	szMsg = format("Ch­a ®ñ cÊp %s, h·y ®¹t ®Õn cÊp %s råi h·y ®Õn t×m ta.",SUPERPLAYERACT_LevRequest,SUPERPLAYERACT_LevRequest)
         Say(szMsg,
         	2,
-        	"·µ»Ø/main",
-        	"½áÊø¶Ô»°/OnCancel")
+        	"Trë l¹i/main",
+        	"KÕt thóc ®èi tho¹i/OnCancel")
         Msg2Player(szMsg)
         return 0
     end
@@ -66,29 +66,29 @@ function SuperPlayerAct_WinMedal()
     --local nTaskEDTime = tl_counttasklinknum(1)
     
     if nTaskEDTime < SUPERPLAYERACT_TaskTime then
-    	szMsg = format("Õæ¿ÉÏ§£¬Ã»ÓĞÍê³ÉÒ»¸ö %s Ò°ÛÅÈÎÎñÁ´, ²»ÄÜÁìÈ¡ÌìÉ½Ñ©Á«.",SUPERPLAYERACT_TaskTime)
-        Say(szMsg,2,"·µ»Ø/main","½áÊø¶Ô»°/OnCancel")
+    	szMsg = format("ThËt ®¸ng tiÕc, ch­a hoµn thµnh mét chuçi %s nhiÖm vô D· TÈu, kh«ng thÓ nhËn Thiªn S¬n TuyÕt Liªn.",SUPERPLAYERACT_TaskTime)
+        Say(szMsg,2,"Trë l¹i/main","KÕt thóc ®èi tho¹i/OnCancel")
         Msg2Player(szMsg)
         return 0
     end
     if  GetTask( TSK_SUPERPLAYERACT ) > 0 then
-        Say("Õæ¿ÉÏ§£¬´ËÈÎÎñÒÑ¾­Áì¹ı½±ÀøÁË.",2,"·µ»Ø/main","½áÊø¶Ô»°/OnCancel")
+        Say("ThËt ®¸ng tiÕc, nh©n vËt nµy ®· nhËn phÇn th­ëng råi.",2,"Trë l¹i/main","KÕt thóc ®èi tho¹i/OnCancel")
         return 0
     end
     local nItemIdx = AddItem( 6, 1, TSXL_ITEM_ID, 1, 0, 0 )
     if nItemIdx > 0 then
         SetTask( TSK_SUPERPLAYERACT, 1 )
-        Say("ÕâÊÇÌìÉ½Ñ©Á«£¡ÒªºÃºÃ±£´æ£¡!",0)
-        Msg2Player("ÄãµÃµ½1¸öÌìÉ½Ñ©Á«.")
-        WriteLog(format("[³¬¼¶Íæ¼Ò»î¶¯] \t%s\tName:%s\tAccount:%s\t µÃµ½1¸öÌìÉ½Ñ©Á«",
+        Say("Thiªn S¬n TuyÕt Liªn ®©y! H·y cÊt gi÷ cÈn thËn!",0)
+        Msg2Player("B¹n nhËn ®­îc 1 Thiªn S¬n TuyÕt Liªn.")
+        WriteLog(format("[Ho¹t ®éng ng­êi ch¬i siªu cÊp] \t%s\tName:%s\tAccount:%s\t nhËn ®­îc mét Thiªn S¬n TuyÕt Liªn",
 		GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount()));
     else
-        Say("±³°üÂúÁË£¬²»ÄÜÁìÈ¡ÎïÆ·!",2,"·µ»Ø/main","½áÊø¶Ô»°/OnCancel")
+        Say("Hµnh trang ®· ®Çy, kh«ng thÓ nhËn vËt phÈm!",2,"Trë l¹i/main","KÕt thóc ®èi tho¹i/OnCancel")
     end
 end
 --
 function SuperPlayerAct_ItemDes()
-    Say("ÌìÉ½Ñ©Á«: <enter>50µ½90¼¶ (°üÀ¨50ºÍ90¼¶)µÄÈËÊ¹ÓÃ½«»á¿ìËÙÌá¸ß×Ô¼ºµÄµÈ¼¶.",2,"·µ»Ø/SuperPlayerAct2007","½áÊø¶Ô»°/OnCancel")
+    Say("Thiªn S¬n TuyÕt Liªn: <enter>Nh©n vËt cÊp ®é tõ 50 ®Õn 90 (bao gåm cÊp 50 vµ 90) sö dông sÏ nhanh chãng n©ng cao ®¼ng cÊp cña m×nh.",2,"Trë l¹i/SuperPlayerAct2007","KÕt thóc ®èi tho¹i/OnCancel")
 end
 --
 function OnCancel()

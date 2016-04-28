@@ -21,22 +21,22 @@ IncludeLib("TASKSYS");
 -- ¶ÁÈëÈÎÎñÏµÍ³Í·ÎÄ¼ş£¬°üº¬Ëæ»úÈÎÎñ
 Include("\\script\\task\\system\\task_main.lua");
 
-strTitle        = "<color=green>ÈÎÎñ½õÄÒ<color>£º";
-strTitle_Normal = strTitle.."ÄúÏë²é¿´ÄÄ¸öÊÂ¼şÄØ£¿<enter>"
-strTitle_None   = strTitle.."Äúµ±Ç°Ã»ÓĞÈÎºÎÊÂ¼şÕıÔÚ½øĞĞ¡£";
-strPublic       = "<color=green>ÈÎÎñ½õÄÒ<color>£º"
+strTitle        = "<color=green>CÈm nang nhiÖm vô<color>:";
+strTitle_Normal = strTitle.."B¹n muèn xem nhiÖm vô nµo?<enter>"
+strTitle_None   = strTitle.."B¹n hiÖn ch­a lµm nhiÖm vô nµo.";
+strPublic       = "<color=green>CÈm nang nhiÖm vô<color>:"
 
 -- ½« main() ¸Ä³É main_back ¼´¿É½«Õû¸ö¹¤¾ß½ûÓÃ
 function main_back()
 
-Say(strTitle.."ÄúÏëÓÃÎ°´óµÄÅåÀ×Ë¹ËùÉú³ÉµÄÈÎÎñ½õÄÒ×öÊ²Ã´ÄØ£¿",7,
-	"²é¿´µ±Ç°ÎÒÕıÔÚ½øĞĞµÄÊÂ¼ş/ShowEventMain",
-	"ÊÖ¶¯¿ªÊ¼Ò»¸öÒÑ´æÔÚµÄÈÎÎñ/MenuStartTask",
-	"Ëæ»ú»ñÈ¡Ò»¸öÍ¬°éËæ»úÈÎÎñ/MenuGetRandomTask",
-	"µÃµ½Ò»¸öÈÎÎñËùĞèÒªµÄËùÓĞÎïÆ·/MenuGetTaskItem",
-	"½«Ò»¸öÈÎÎñ±ä³É»¹Ã»¿ªÊ¼/MenuSetTaskClearn",
-	"½«Ò»¸öÊÂ¼şËùÓĞÈÎÎñÇå¿Õ/MenuSetEventClearn",
-	"¹Ø±Õ/Task_Exit");
+Say(strTitle.."B¹n muèn lµm nhiÖm vô nµo trong cÈm nang nhiÖm vô nµy kh«ng?",7,
+	"Xem m×nh hiÖn ®ang lµm nhiÖm vô nµo./ShowEventMain",
+	"b»ng tay b¾t ®Çu mét nhiÖm vô ®· tån t¹i/MenuStartTask",
+	"NgÉu nhiªn nhËn ®­îc mét nhiÖm vô b¹n ®ång hµnh/MenuGetRandomTask",
+	"NhËn ®­îc mét nhiÖm vô cã tÊt c¶ vËt phÈm cÇn thiÕt/MenuGetTaskItem",
+	"SÏ trë vÒ tr¹ng th¸i ban ®Çu/MenuSetTaskClearn",
+	"SÏ xãa toµn bé c¸c nhiÖm vô /MenuSetEventClearn",
+	"§ãng/Task_Exit");
 
 return 1;
 
@@ -60,7 +60,7 @@ local aryTalkText = {strTitle_Normal};
 				TaskEvent(i, 1, 1).."/#ShowEventDetail("..i..")");
 	end;
 	
-	rawset(aryTalkText, getn(aryTalkText)+1, "¹Ø±Õ/OnTaskExit");
+	rawset(aryTalkText, getn(aryTalkText)+1, "§ãng/OnTaskExit");
 	
 	SelectSay(aryTalkText);
 	
@@ -73,7 +73,7 @@ end;
 function ShowEventDetail(nEventID)
 
 local aryTask = EnumEventTask(nEventID);
-local strMain = {strTitle.."ÒÔÏÂÊÇÄúÔÚ<color=yellow>"..TaskEvent(nEventID, 1, 1).."<color>µÄÏêÏ¸Çé¿ö£º<enter><enter>"} -- ÈÎÎñÁĞ±í×Ö·û´®
+local strMain = {strTitle.."D­íi ®©y lµ<color=yellow>"..TaskEvent(nEventID, 1, 1).."<color>T×nh tr¹ng chi tiÕt:<enter><enter>"} -- ÈÎÎñÁĞ±í×Ö·û´®
 
 local i=0;
 
@@ -82,9 +82,9 @@ local i=0;
 		strMain[1] = strMain[1]..GetTaskText(TaskName(aryTask[i]), 1, 3)..GetTaskStatusText(aryTask[i]).."<enter>";
 	end;
 	
-	rawset(strMain, getn(strMain)+1, "Çå¿Õ´ËÈÎÎñ/#_ClearnTaskState("..nEventID..")");
-	rawset(strMain, getn(strMain)+1, "·µ»ØÖ÷Ä¿Â¼/main");
-	rawset(strMain, getn(strMain)+1, "¹Ø±Õ/OnTaskExit");
+	rawset(strMain, getn(strMain)+1, "Xãa nhiÖm vô nµy/#_ClearnTaskState("..nEventID..")");
+	rawset(strMain, getn(strMain)+1, "Trë l¹i thanh menu chİnh/main");
+	rawset(strMain, getn(strMain)+1, "§ãng/OnTaskExit");
 	
 	SelectDescribe(strMain);
 
@@ -118,14 +118,14 @@ local aryTask = {};
 
 local nEvent = GetEventTaskCount(nEventID);
 
-	CDebug:MessageOut("»ñÈ¡ÊÂ¼ş£º"..nEventID.." µÄÈÎÎñ¸öÊıÎª£º"..nEvent);
+	CDebug:MessageOut("Cã ®­îc:"..nEventID.." sè nhiÖm vô lµ:"..nEvent);
 
 local i=0;
 
 	if nEvent==0 then return nil; end;
 	
 	for i=1, nEvent do
-		CDebug:MessageOut("ÕıÔÚ¼ÓÈëÈÎÎñÊı×é£º"..TaskNo(GetEventTask(nEventID, i)));
+		CDebug:MessageOut("§ang nhËp sè nhiÖm vô:"..TaskNo(GetEventTask(nEventID, i)));
 		rawset(aryTask,
 				getn(aryTask)+1,
 				TaskNo(GetEventTask(nEventID, i))
@@ -139,7 +139,7 @@ end;
 
 -- Ñ¡ÔñÊÖ¶¯¿ªÊ¼Ò»¸öÈÎÎñ
 function MenuStartTask()
-	AskClientForString("_StartTask", "", 1, 20, "ÊäÈëÈÎÎñ±àºÅ»òÃû³Æ£º");
+	AskClientForString("_StartTask", "", 1, 20, "NhËp sè thø tù hoÆc tªn nhiÖm vô:");
 end;
 
 
@@ -165,20 +165,20 @@ local partnerindex,partnerstate = PARTNER_GetCurPartner()       -- »ñµÃÕÙ»½³öÍ¬°
 local nResult = 0;
 
 	if partnerindex==0 or partnerstate==0 then
-		Msg2Player(strPublic.."<color=yellow>Ã»ÓĞÕÙ»½Í¬°é²»ÄÜ»ñÈ¡Ëæ»úÈÎÎñ£¡<color>");
+		Msg2Player(strPublic.."<color=yellow>Kh«ng cã gäi ®ång hµnh kh«ng nhËn ®­îc nhiÖm vô ngÉu nhiªn!<color>");
 		return
 	end;
 	
 	nResult = initRandomTask();
 		
 	if nResult==0 then
-		CDebug:MessageOut("Ëæ»úÈÎÎñÑ¡È¡µ½ÁËÓëÉÏÒ»¸öÈÎÎñÏàÍ¬µÄ ID£¡");
+		CDebug:MessageOut("Tïy theo nhiÖm vô b¹n sÏ chän sè ID t­¬ng øng!");
 	end;
 
 end;
 
 
--- »Øµ÷º¯Êı£¬Çå¿ÕÒ»¸öÊÂ¼şËùÓĞÈÎÎñµÄ×´Ì¬£¬°üÀ¨ÁÙÊ±±äÁ¿
+-- »Øµ÷º¯Êı£¬Çå¿ÕÒ»¸öÊÂ¼şËùÓĞTr¹ng th¸i nhiÖm vô £¬°üÀ¨ÁÙÊ±±äÁ¿
 function _ClearnTaskState(nEventID)
 
 local aryTask = EnumEventTask(nEventID);
@@ -186,12 +186,12 @@ local aryTask = EnumEventTask(nEventID);
 if aryTask==nil then return end;
 
 	for i=1, getn(aryTask) do
-		CDebug:MessageOut("ÕıÔÚÇå¿Õ"..TaskName(aryTask[i]).."ÈÎÎñµÄ×´Ì¬");
+		CDebug:MessageOut("§ang xãa"..TaskName(aryTask[i]).."Tr¹ng th¸i nhiÖm vô ");
 		SetTaskStatus(TaskName(aryTask[i]), 0);
 		CloseTask(TaskName(aryTask[i]));
 	end;
 
-	Say(strTitle.."ÄúÒÑ¾­Çå¿ÕÁË<color=yellow>"..TaskEvent(nEventID, 1, 1).."<color>ÏÂµÄËùÓĞ·ÖÖ§ÈÎÎñ", 0);
+	Say(strTitle.."B¹n ®· xãa hÕt<color=yellow>"..TaskEvent(nEventID, 1, 1).."<color>ph©n tİch toµn bé nhiÖm vô ", 0);
 
 end;
 
@@ -199,7 +199,7 @@ end;
 
 -- µÃµ½Ò»¸öÈÎÎñËùĞèÒªµÄËùÓĞÎïÆ·
 function MenuGetTaskItem()
-	AskClientForString("_GetTaskItem", "", 1, 20, "ÇëÊäÈëÈÎÎñÊı×Ö±àºÅ£º");
+	AskClientForString("_GetTaskItem", "", 1, 20, "Xin h·y nhËp mËt khÈu:");
 end;
 
 
@@ -226,7 +226,7 @@ local i,j,k=0,0,0;
 	if checkType>=1 then
 		aryOrgCollect = GetTaskCollectRow(taskName);
 	else
-		Say("¸ÃÈÎÎñÃ»ÓĞÊÕ¼¯ÎïÆ·µÄÄÚÈİ£¡", 0);
+		Say("NhiÖm vô ®ã kh«ng cÇn thu thËp vËt phÈm!", 0);
 		return
 	end;
 
@@ -276,28 +276,28 @@ end;
 
 -- ½«Ò»¸öÈÎÎñÉèÖÃ³É»¹Î´¿ªÊ¼µÄ×´Ì¬
 function MenuSetTaskClearn()
-	AskClientForString("_SetTaskClearn", "", 1, 20, "ÇëÊäÈëÈÎÎñÊı×Ö±àºÅ£º");
+	AskClientForString("_SetTaskClearn", "", 1, 20, "Xin h·y nhËp mËt khÈu:");
 end;
 
 
 function _SetTaskClearn(taskID, nIndex)
 
 	if TaskName(taskID)==0 or TaskName(taskID)==nil then
-		Say(strTitle.."ÄãÊÇ²»ÊÇºıÍ¿ÁË£¿Õâ¸öÈÎÎñºÅ²¢²»´æÔÚÅ¶£¡", 0);
+		Say(strTitle.."MËt khÈu nµy kh«ng ®óng!", 0);
 		return
 	end;
 
 	SetTaskStatus(TaskName(taskID), 0);
 	CloseTask(TaskName(taskID));
 	
-	Say(strTitle.."ÄúÒÑ¾­½«<color=yellow>"..TaskName(taskID).."<color>±ä³É»¹Ã»¿ªÊ¼µÄ×´Ì¬¡£", 0);
+	Say(strTitle.."B¹n nhËn ®­îc<color=yellow>"..TaskName(taskID).."<color>Trë vÒ tr¹ng th¸i ban ®Çu", 0);
 
 end;
 
 
 -- ½«Ò»¸öÊÂ¼şÀïËùÓĞµÄÈÎÎñ¶¼Çå¿Õ
 function MenuSetEventClearn()
-	AskClientForString("_SetEventClearn", "", 1, 20, "ÇëÊäÈëÊÂ¼şÊı×Ö±àºÅ£º");
+	AskClientForString("_SetEventClearn", "", 1, 20, "Xin h·y nhËp mËt khÈu:");
 end;
 
 
@@ -306,7 +306,7 @@ function _SetEventClearn(eventID, nIndex)
 local nEvent = GetEventTaskCount(eventID);
 
 	if nEvent==0 then
-		Say(strTitle.."ÄãÊÇ²»ÊÇºıÍ¿ÁË£¿Õâ¸öÊÂ¼ş±àºÅ²¢²»´æÔÚÅ¶£¡", 0);
+		Say(strTitle.."MËt khÈu nµy kh«ng ®óng!", 0);
 		return
 	end;
 
@@ -314,14 +314,14 @@ local nEvent = GetEventTaskCount(eventID);
 end;
 
 
--- ÓÃ×Ö·û´®±íÊ¾Ò»¸öÈÎÎñµÄ×´Ì¬
+-- ÓÃ×Ö·û´®±íÊ¾Ò»¸öTr¹ng th¸i nhiÖm vô 
 function GetTaskStatusText(nTaskID)
 
 local aryText = {
-	[0]=" - <color=red>Î´¿ªÊ¼<color>",
-	[1]=" - <color=green>Õı½øĞĞ<color>",
-	[2]=" - <color=yellow>ÒÑ¾­Íê³É<color>",
-	[3]=" - <color=yellow>ÒÑ¾­Áì½±<color>",
+	[0]=" - <color=red>ch­a b¾t ®Çu<color>",
+	[1]=" - <color=green>TiÕn hµnh<color>",
+	[2]=" - <color=yellow>§· hoµn thµnh<color>",
+	[3]=" - <color=yellow>§· nhËn quµ tÆng<color>",
 }
 
 	return aryText[GetTaskStatus(TaskName(nTaskID))];

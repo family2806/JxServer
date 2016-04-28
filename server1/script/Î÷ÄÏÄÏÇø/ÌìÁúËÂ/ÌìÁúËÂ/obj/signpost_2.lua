@@ -2,6 +2,6 @@
 
 function main(sel)
 
-	Say("ßi»•µ„≤‘…Ω", 0)
+	Say("ßi ßi”m Th≠¨ng s¨n", 0)
 
 end;

@@ -4,9 +4,9 @@
 function main(sel)
 	Uworld38 = GetByte(GetTask(38),1)
 	if (GetFaction() == "tianwang") or (Uworld38 == 127) then
-		Say("ÌìÍõ°ïÖÚ£º±¾°ïĞÖµÜÃÇÕûÈÕ¶«±¼Î÷ÅÜµÄ£¬×Ü²»ÄÜÃ»ÓĞÒ»Á½Ì×ºÃ×°±¸°É£¿", 2, "½»Ò×/yes", "²»½»Ò×/no")
+		Say("C¸c huynh ®Ö bæn bang c¶ ngµy ch¹y ®«ng ch¹y t©y kh«ng thÓ kh«ng cã mét bé trang bŞ tèt", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 	else
-		Talk(1,"","°ïÖ÷ÓĞÁî£º±¾°ï±øÆ÷Ö»Âô¸øÍ¬ÃÅĞÖµÜ")
+		Talk(1,"","Bang chñ cã lÖnh: trang bŞ cña bæn bang chØ b¸n cho huynh ®Ö ®ång m«n")
 	end
 end;
 

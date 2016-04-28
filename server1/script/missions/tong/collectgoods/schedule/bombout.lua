@@ -62,14 +62,14 @@ function bomb_out_pl(nOrder)--nOrder;µÚ¼¸´Î±»Õ¨µ½
     AddSkillState(673, 20, 0, 30 * 18);
     AddSkillState(309, 10, 0, 30 * 18); --²»ÊÜ¹¥»÷
     
-    local str = "±»À¥³æÕ¨ÖÐ, <color=yellow>ÔÎÑ£30Ãë <color>!";
+    local str = "BÞ s©u næ tróng, <color=yellow>chãng trong 30 gi©y<color>!";
     if (nCaseCount > 0) then
-    	str = str.."Ê§È¥ <color=yellow>"..nCaseCount.."<color> »õÎï´ü, Ä¿Ç°»¹ÓÐ<color=yellow>"..(nTotal - nCaseCount).."<color> »õÎï´ü";
+    	str = str.."MÊt ®i <color=yellow>"..nCaseCount.."<color> tói hµng hãa, hiÖn vÉn cßn <color=yellow>"..(nTotal - nCaseCount).."<color> tói hµng hãa";
     end;
     SubWorld = world
     Msg2Player(str);
-    local sstr = GetName().."±»±¬Õ¨³æ»÷ÔÎ30Ãë! Ê§È¥ "..nCaseCount.." »õÎï´ü."
-    Msg2MSGroup(COLLG_MISSIONID, "<color=yellow>"..GetName().."<color>±¬Õ¨³æ<color=yellow>»÷ÔÎ30Ãë<color>! Ê§È¥ <color=yellow>"..nCaseCount.."<color> »õÎï´ü.", GetTask(TK_GROUPID))
+    local sstr = GetName().."BÞ s©u næ lµm cho¸ng trong 30 gi©y! MÊt ®i "..nCaseCount.." tói hµng hãa."
+    Msg2MSGroup(COLLG_MISSIONID, "<color=yellow>"..GetName().."<color>BÞ s©u næ <color=yellow>lµm cho¸ng 30 gi©y<color>! MÊt ®i <color=yellow>"..nCaseCount.."<color> tói hµng hãa.", GetTask(TK_GROUPID))
 end;
 
 --Ëæ»úÑ¡È¡Õ¨µ¯ÈË

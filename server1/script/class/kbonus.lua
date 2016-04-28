@@ -125,7 +125,7 @@ KBonus = {
 			end
 			callPlayerFunction(playerIdx,AddItem,g,d,p,l,s,luck,p1,p2,p3,p4,p5,p6)
 			if(self[bonusIdx][CONST_ITEM_NAME]) then
-				sendMessage(playerIdx,"你得到了<color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color>的奖励。")
+				sendMessage(playerIdx,"B筺 nh薾 頲 <color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color> thng!")
 			end
 			local strmsg = self:convertBonusMsg(bonusIdx, playerIdx)
 			if(TRUE(self[bonusIdx][CONST_ITEM_COSTLY]) and self[bonusIdx][CONST_ITEM_MSG]) then
@@ -133,7 +133,7 @@ KBonus = {
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_LOG])) then
 				--这里写日志
-				WriteLog(date("%H%M%S")..":账号："..callPlayerFunction(playerIdx,GetAccount)..", 角色："..callPlayerFunction(playerIdx,GetName)..strmsg)
+				WriteLog(date("%H%M%S")..": T礽 kho秐"..callPlayerFunction(playerIdx,GetAccount)..", nh﹏ v藅"..callPlayerFunction(playerIdx,GetName)..strmsg)
 			end	
 			return self.ITEM
 		end
@@ -143,7 +143,7 @@ KBonus = {
 			end
 			callPlayerFunction(playerIdx,AddQualityItem,2,g,d,p,l,s,luck,p1,p2,p3,p4,p5,p6)
 			if(self[bonusIdx][CONST_ITEM_NAME]) then
-				sendMessage(playerIdx,"你得到了<color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color>的奖励。")
+				sendMessage(playerIdx,"B筺 nh薾 頲 <color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color> thng!")
 			end
 			local strmsg = self:convertBonusMsg(bonusIdx, playerIdx)
 			if(TRUE(self[bonusIdx][CONST_ITEM_COSTLY]) and self[bonusIdx][CONST_ITEM_MSG]) then
@@ -151,14 +151,14 @@ KBonus = {
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_LOG])) then
 				--这里写日志
-				WriteLog(date("%H%M%S")..":账号："..callPlayerFunction(playerIdx,GetAccount)..",角色："..callPlayerFunction(playerIdx,GetName)..strmsg)
+				WriteLog(date("%H%M%S")..": T礽 kho秐"..callPlayerFunction(playerIdx,GetAccount)..", nh﹏ v藅"..callPlayerFunction(playerIdx,GetName)..strmsg)
 			end	
 			return self.SOCKETEQU
 		end
 		if(btype == self.GOLDEN) then
 			callPlayerFunction(playerIdx,AddGoldItem,0,g)
 			if(self[bonusIdx][CONST_ITEM_NAME]) then
-				sendMessage(playerIdx,"你得到了<color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color>的奖励。")
+				sendMessage(playerIdx,"B筺 nh薾 頲 <color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color> thng!")
 			end
 			local strmsg = self:convertBonusMsg(bonusIdx, playerIdx)
 			if(TRUE(self[bonusIdx][CONST_ITEM_COSTLY]) and self[bonusIdx][CONST_ITEM_MSG]) then
@@ -166,14 +166,14 @@ KBonus = {
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_LOG])) then
 				--这里写日志
-				WriteLog(date("%H%M%S")..":账号："..callPlayerFunction(playerIdx,GetAccount)..",角色："..callPlayerFunction(playerIdx,GetName)..strmsg)
+				WriteLog(date("%H%M%S")..": T礽 kho秐"..callPlayerFunction(playerIdx,GetAccount)..", nh﹏ v藅"..callPlayerFunction(playerIdx,GetName)..strmsg)
 			end	
 			return self.GOLDEN
 		end
 		if(btype == self.MONEY) then
 			callPlayerFunction(playerIdx,Earn, g*scale)
 			if(self[bonusIdx][CONST_ITEM_NAME]) then
-				sendMessage(playerIdx,"你得到了<color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color>的奖励。")
+				sendMessage(playerIdx,"B筺 nh薾 頲 <color=white>"..self[bonusIdx][CONST_ITEM_NAME].."<color> thng!")
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_COSTLY]) and self[bonusIdx][CONST_ITEM_MSG]) then
 				local strmsg = self:convertBonusMsg(bonusIdx, playerIdx)
@@ -181,14 +181,14 @@ KBonus = {
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_LOG])) then
 				--这里写日志
-				WriteLog(date("%H%M%S")..":账号："..callPlayerFunction(playerIdx,GetAccount)..",角色："..callPlayerFunction(playerIdx,GetName)..strmsg)
+				WriteLog(date("%H%M%S")..": T礽 kho秐"..callPlayerFunction(playerIdx,GetAccount)..", nh﹏ v藅"..callPlayerFunction(playerIdx,GetName)..strmsg)
 			end	
 			return self.MONEY
 		end
 		if(btype == self.EXP) then
 			callPlayerFunction(playerIdx,AddOwnExp,g*scale)
 			if(self[bonusIdx][CONST_ITEM_NAME]) then
-				sendMessage(playerIdx,"你得到了<color=white>"..replace(self[bonusIdx][CONST_ITEM_NAME],"<name>",g*scale).."<color>的奖励。")
+				sendMessage(playerIdx,"B筺 nh薾 頲 <color=white>"..replace(self[bonusIdx][CONST_ITEM_NAME],"<name>",g*scale).."<color> thng!")
 			end
 			local strmsg = self:convertBonusMsg(bonusIdx, playerIdx)
 			if(TRUE(self[bonusIdx][CONST_ITEM_COSTLY]) and self[bonusIdx][CONST_ITEM_MSG]) then
@@ -196,7 +196,7 @@ KBonus = {
 			end
 			if(TRUE(self[bonusIdx][CONST_ITEM_LOG])) then
 				--这里写日志
-				WriteLog(date("%H%M%S")..":账号："..callPlayerFunction(playerIdx,GetAccount)..",角色："..callPlayerFunction(playerIdx,GetName)..strmsg)
+				WriteLog(date("%H%M%S")..": T礽 kho秐"..callPlayerFunction(playerIdx,GetAccount)..", nh﹏ v藅"..callPlayerFunction(playerIdx,GetName)..strmsg)
 			end	
 			return self.EXP
 		end

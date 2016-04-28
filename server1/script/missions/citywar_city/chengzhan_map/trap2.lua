@@ -3,7 +3,7 @@
 
 function main()
 	if (GetCurCamp() ~= 2) then 
-		Msg2Player("È¥²»ÁË£¬ÒªÈ¥µÄ»°µÄÒªµ½µÐ¾üµÄ·ü»÷´¦. ");
+		Msg2Player("Kh«ng thÓ ®i ®­îc, nÕu ®i sÏ ®Õn n¬i phôc kÝch cña ®Þch qu©n. ");
 	else
 		SetCurCamp(GetCamp())
 		SetFightState(0)

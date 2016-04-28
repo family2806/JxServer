@@ -2,17 +2,17 @@
 -- lixin 2005-9-7
 
 --ÎäÁÖÃË´«ÈË	
-WULINMENG_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>ÎäÁÖ´«ÈË<link>"
+WULINMENG_NPC = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>Vâ l©m truyÒn nh©n<link>"
 
 
 tab_city = {
-{1,520,1601,3269, "<#>·ïÏè¸®"},
-{11,521,1601,3269, "<#>³É¶¼¸®"},
-{37,522,1601,3269, "<#> ãê¾©¸®"},
-{78,523,1601,3269, "<#>ÏåÑô¸®"},
-{80,524,1601,3269, "<#>ÑïÖİ¸®"},
-{162,525,1601,3269, "<#>´óÀí¸®"},
-{176,526,1601,3269, "<#> ÁÙ°²¸®"},
+{1,520,1601,3269, "<#> Ph­îng T­êng phñ "},
+{11,521,1601,3269, "<#> Thµnh §« phñ "},
+{37,522,1601,3269, "<#> BiÖn Kinh phñ "},
+{78,523,1601,3269, "<#> T­¬ng D­¬ng phñ "},
+{80,524,1601,3269, "<#> D­¬ng Ch©u phñ "},
+{162,525,1601,3269, "<#> §¹i Lı phñ "},
+{176,526,1601,3269, "<#> L©m An phñ "},
 }
 
 startdate = 05091618
@@ -23,9 +23,9 @@ function mid_autumn_main()
 	local mid_sdate = floor(startdate / 100)
 	local mid_edate = floor(enddate / 100)
 	if ( nDay >= mid_sdate and nDay <= mid_edate ) then
-		Describe(WULINMENG_NPC.."<#> ½üÈÕ£¬°ÍÊñµØÇøµÄÌÆ¼Ò±¤ÓĞÒ»Ğ©ÓëÎäÁÖ²»ºÍµÄĞ¡¶¯×÷£¡¶À¹ÂÃËÖ÷ÒªÔÚÃ÷ÔÂÕò×éÖ¯Ò»´ÎÔÂ±ı´óÈüÌ½ÌıÌÆÃÅµÄĞéÊµ£¡¿´À´Õâ´ÎĞ×¶à¼ªÉÙ. ÓĞºÜ¶à¸ßÊÖ»á³öÏÖ . ¸÷Î»È¥²Î¼Ó¼Ç×¡Ò»¶¨ÒªÉ÷ÖØ!", 4, "<#> ÖªµÀÁË!, ´øÎÒÈ¥Ã÷ÔÂÕò°É./autumn_enter", "<#> ÎÒÏëÈ¥»¨µÆ´ó»á /lantern_enter", "<#> ÓëÖĞÇï»¥Öú»î¶¯ÓĞ¹Ø/autumn_help","<#> µÈÎÒÏëÒ»Ïë!/cancel");
+		Describe(WULINMENG_NPC.."<#> §­êng gia b¶o ë Ba Thôc gÇn ®©y ®· cã nh÷ng biÓu hiÖn trë mÆt víi Vâ l©m! §éc C« minh chñ muèn tæ chøc mét héi thi lµm b¸nh ë Minh NguyÖt trÊn nh»m t×m hiÓu thùc h­ cña §­êng m«n! Xem ra lÇn nµy lµnh İt d÷ nhiÒu. Cã nhiÒu cao thñ sÏ xuÊt hiÖn. C¸c ng­¬i ®Õn ®ã tham gia nhí ph¶i hÕt søc thËn träng!", 4, "<#> Ta biÕt råi!, ®­a ta ®Õn Minh NguyÖt trÊn nhĞ./autumn_enter", "<#> Ta muèn ®Õn chç ®¹i héi hoa ®¨ng /lantern_enter", "<#> Liªn quan vÒ ho¹t ®éng hç trî trung thu /autumn_help","<#> §Ó ta suy nghÜ l¹i!/cancel");
 	else
-		Describe(WULINMENG_NPC.."<#> ½üÈÕ£¬°ÍÊñµØÇøµÄÌÆ¼Ò±¤ÓĞÒ»Ğ©ÓëÎäÁÖ²»ºÍµÄĞ¡¶¯×÷£¡¶À¹ÂÃËÖ÷ÒªÔÚÃ÷ÔÂÕò×éÖ¯Ò»´ÎÔÂ±ı´óÈüÌ½ÌıÌÆÃÅµÄĞéÊµ£¡¿´À´Õâ´ÎĞ×¶à¼ªÉÙ. ÓĞºÜ¶à¸ßÊÖ»á³öÏÖ . ¸÷Î»È¥²Î¼Ó¼Ç×¡Ò»¶¨ÒªÉ÷ÖØ!", 2, "<#>ÖªµÀÁË!, ´øÎÒÈ¥Ã÷ÔÂÕò°É./autumn_enter", "<#>µÈÎÒÏëÒ»Ïë!/cancel");
+		Describe(WULINMENG_NPC.."<#> §­êng gia b¶o ë Ba Thôc gÇn ®©y ®· cã nh÷ng biÓu hiÖn trë mÆt víi Vâ l©m! §éc C« minh chñ muèn tæ chøc mét héi thi lµm b¸nh ë Minh NguyÖt trÊn nh»m t×m hiÓu thùc h­ cña §­êng m«n! Xem ra lÇn nµy lµnh İt d÷ nhiÒu. Cã nhiÒu cao thñ sÏ xuÊt hiÖn. C¸c ng­¬i ®Õn ®ã tham gia nhí ph¶i hÕt søc thËn träng!", 2, "<#> Ta biÕt råi!, ®­a ta ®Õn Minh NguyÖt trÊn nhĞ./autumn_enter", "<#> §Ó ta suy nghÜ l¹i!/cancel");
 	end
 end;
 
@@ -42,34 +42,34 @@ function autumn_enter()
 		end;
 	end;
 	if ( GetPlayerCount() >=700 or cityid <= 0 ) then
-		Describe(WULINMENG_NPC..tab_city[cityid][5].."<#>´ÓÕâµ½Ã÷ÔÂÕòºÜÎ£ÏÕ£¡»¹ÊÇ´Ó±ğµÄ³ÇÊĞ½øÈ¥°É£¡", 1, "<#> ÕâÑùÒ²¿ÉÒÔ! Ğ»Ğ»!/cancel");
+		Describe(WULINMENG_NPC..tab_city[cityid][5].."<#> Tõ ®Êy ®Õn Minh NguyÖt trÊn rÊt nguy hiÓm! Hay lµ ng­¬i d0i tõ thµnh thŞ kh¸c vµo ®ã nhĞ!", 1, "<#> VËy còng ®­îc! C¶m ¬n!/cancel");
 		return
 	end
 	NewWorld(tab_city[cityid][2],tab_city[cityid][3],tab_city[cityid][4]);
 	SetFightState(0);
 	if(nDate >= startdate and nDate <= enddate) then
-		Say("<#> ×éÖ¯»¨µÆ»áµÄµØ·½ÊÇ£º»ªÉ½£¬Çà³ÇÉ½£¬ÎäÒÄÉ½£¬µã²ÔÉ½ºÍÃ÷ÔÂÕò. Ã¿Ìì18:00-24:00¶¼ÓĞ, Äã¿ÉÒÔÈ¥ÉÍ»¨µÆ, ²Î¼Ó»î¶¯ºÍÁì½±.",0)
+		Say("<#> C¸c khu vùc tæ chøc héi Hoa §¨ng lµ: Hoa S¬n, Thanh Thµnh s¬n, Vò Di s¬n, §iÓm Th­¬ng s¬n vµ Minh NguyÖt trÊn.Tõ ngµy ®Õn ngµy, mçi ngµy tõ 18:00-24:00, b¹n cã thÓ ®Õn ®ã ng¾m hoa ®¨ng, th­ëng nguyÖt, tham gia c¸c ho¹t ®éng vµ nhËn th­ëng.",0)
 	end
 end
 
 function autumn_help()
-	Describe(WULINMENG_NPC.."<#>Õâ´ÎÖĞÇï»î¶¯°üÀ¨<color=red>Ã÷ÔÂÕò×öÔÂ±ı´óÈü<color>. ´Ó<color=red>9ÔÂ16ÈÕµ½9ÔÂ18ÈÕ£¬Ã¿Ìì18:00-24:00<color>,4¸÷ÇøÓò¶¼¾ÙĞĞ<color=red>»¨µÆ»á<color>. ÄãÏëµ½ÄÇ¸öµØ·½ÄØ?", 3, "<#> ÓëÖĞÇï'»¨µÆ'»î¶¯Ïà¹ØµÄ/huadeng_help","<#> ÓëÖÆ×÷ÖĞÇïÔÂ±ıÏà¹ØµÄ/yuebing_help","<#> ÎÒÖªµÀÁË/cancel");
+	Describe(WULINMENG_NPC.."<#> Ho¹t ®éng trung thu lÇn nµy bao gåm c¶ <color=red>thi lµm b¸nh t¹i Minh NguyÖt trÊn<color>. Tõ <color=red>Ngµy 16 th¸ng 9 ®Õn ngµy 18 th¸ng 9, mçi ngµy tõ 18:00-24:00<color>, c¶ 4 khu vùc ®Òu më héi <color=red>hoa ®¨ng<color>. Ng­¬i muèn ®Õn khu vùc nµo?", 3, "<#> Liªn quan vÒ Ho¹t ®éng 'Hoa §¨ng' Trung thu /huadeng_help","<#> Liªn quan ®Õn ho¹t ®éng lµm b¸nh trung thu /yuebing_help","<#> Ta ®· biÕt råi /cancel");
 end;
 
 function huadeng_help()
-	Describe(WULINMENG_NPC.."<#>´Ó<color=red>9ÔÂ16ÈÕµ½9ÔÂ18ÈÕ£¬Ã¿Ìì18:00-24:00 <color>, <color=yellow>Çà³ÇÉ½<color>, <color=yellow>ÎäÒÄÉ½<color>, <color=yellow>µã²ÔÉ½<color>, <color=yellow>»ªÉ½<color>¶¼ÓĞ»¨µÆ»á. ÄãÖ»Ğè<color=red>Á¬Ğø´ğ¶Ô3ÌâÃÕÓï<color>¾Í¿ÉÒÔÁì½±. Ã¿ÌìÖ»ÓĞ<color=red>100·İ½±Æ·<color>!",1,"<#> ÎÒÖªµÀÁË/cancel")
+	Describe(WULINMENG_NPC.."<#> Tõ <color=red>ngµy 16 th¸ng 9 ®Õn 18 th¸ng 9, mçi ngµy 18:00-24:00 <color>, <color=yellow>Thanh Thµnh s¬n<color>, <color=yellow>Vò Di s¬n<color>, <color=yellow>§iÓm Th­¬ng s¬n<color>, <color=yellow>Hoa S¬n<color> sÏ ®ång lo¹t më héi hoa ®¨ng. ChØ cÇn b¹n <color=red>liªn tôc ®¸p d®óng 3 c©u ®è<color> sÏ nhËn ®­îc phÇn th­ëng. Mçi ngµy chØ cã <color=red>100 phÇn th­ëng<color>!",1,"<#> Ta ®· biÕt råi /cancel")
 end
 
 function yuebing_help()
-	Describe(WULINMENG_NPC.."<#>16/9µ½30/9ÆÚ¼ä£¬Ã¿¸öÈË¶¼¿ÉÒÔ¸ú×ÅÎäÁÖ´«ÈË½øÈëÃ÷ÔÂÕò£¬Ö®ºóÑ°ÕÒ<color=red>ÔÂ±ıÊ¦¸µ<color>ÁË½âÖÆ×÷ÔÂ±ıµÄ¹æÔò. Í¬Ê±£¬Ã¿Ìì´Ó<color=red>9:00-24:00<color> ÔÚ7´ó³ÇÊĞ½«»áÓĞĞĞ½ÅÉÌÈË¶Ò»»×öÔÂ±ıÔ­ÁÏ!",1,"<#> ÏÂÒ»Ò³/yuebing_help2")
+	Describe(WULINMENG_NPC.."<#> Trong thêi gian tõ 16/9 ®Õn 30/9 mäi ng­êi cã thÓ nhê Vâ L©m TruyÒn Nh©n ®­a vµo Minh NguyÖt trÊn, sau ®ã t×m c¸c <color=red>Thî b¸nh<color> ®Ó t×m hiÓu quy t¾c lµm b¸nh. §ång thêi mçi ngµy tõ <color=red>9:00-24:00<color> t¹i 7 thµnh thŞ sÏ cã Hµnh C­íc th­¬ng nh©n trao ®æi c¸c nguyªn liÖu lµm b¸nh!",1,"<#> Trang kÕ /yuebing_help2")
 end
 
 function yuebing_help2()
-	Describe(WULINMENG_NPC.."<#> ×öÖĞÇïÔÂ±ıÓĞ3¸ö²½Öè: <color=red>'ºÍÃæ' <color>, <color=red>'°üÏÚ'<color>, <color=red>'¿¾ÔÂ±ı'<color>, Ã¿¸ö»·½Ú¶¼ÓĞ¹æ¶¨µÄÊ±¼ä£¬Íê³ÉÖ®ºóÒªÍ¨±¨¼ÌĞø½øĞĞÏÂÒ»¸ö»·½Ú£¬Èç¹û³¬Ê±½«Ê§°Ü. Èç¹û×ö³É¹¦ÁË <color=red>Ê²½õÔÂ±ı<color>, <color=red>ĞÓÈÊÔÂ±ı<color>, <color=red>µ°»Æ¶¹É³ÔÂ±ı<color>, <color=red>¶¹É³ÔÂ±ı<color> ¿ÉÒÔ´øµ½Ã÷ÔÂÕòÕÒ<color=red>Ã÷ÔÂÀÏÈË<color> ¶Ò½±!",1,"<#> ½áÊø¶Ô»°!/cancel")
+	Describe(WULINMENG_NPC.."<#> Lµm b¸nh trung thu gåm 3 b­íc: <color=red>'nhµo bét' <color>, <color=red>'lµm nh©n b¸nh'<color>, <color=red>'n­íng b¸nh'<color>, mçi kh©u cã mét thêi gian nhÊt ®Şnh, hoµn thµnh mçi kh©u b¹n sÏ ®­îc th«ng b¸o ®Õn b­íc kÕ tiÕp, nÕu v­ît qu¸ thêi gian, sÏ bŞ thÊt b¹i. NÕu b¹n lµm thµnh c«ng <color=red>B¸nh trung thu ThËp cÈm<color>, <color=red>B¸nh trung thu H¹nh nh©n<color>, <color=red>B¸nh trung thu ®Ëu trøng<color>, <color=red>B¸nh trung thu nh©n ®Ëu<color> cã thÓ mang ®Õn Minh NguyÖt trÊn t×m <color=red>Minh NguyÖt L·o nh©n<color> ®æi th­ëng!",1,"<#> KÕt thóc ®èi tho¹i!/cancel")
 end
 
 function lantern_enter()
-	Describe(WULINMENG_NPC.."<#> ÖĞÇï»¨µÆ´ó»áÔÚÇà³ÇÉ½£¬ÎäÒÄÉ½£¬µã²ÔÉ½£¬»ªÉ½µÈ4¸öµØ·½¾ÙĞĞ. ÄãÏ²»¶È¥ÄÄ?",5, "<#> Çà³ÇÉ½/#lantern_enter_lantern(21)", "<#> ÎäÒÄÉ½/#lantern_enter_lantern(193)", "<#> µã²ÔÉ½/#lantern_enter_lantern(167)", "<#> »ªÉ½/#lantern_enter_lantern(2)", "<#> ½áÊø¶Ô»°!/cancel")
+	Describe(WULINMENG_NPC.."<#> §¹i héi trung thu hoa ®¨ng ®­îc tæ chøc ë 4 khu vùc: Thanh Thµnh s¬n, Vò Di s¬n, §iÓm Th­¬ng s¬n, Hoa S¬n. Ng­¬i thİch ®Õn khu nµo?",5, "<#> Thanh Thµnh s¬n/#lantern_enter_lantern(21)", "<#> Vò Di s¬n/#lantern_enter_lantern(193)", "<#> §iÓm Th­¬ng s¬n/#lantern_enter_lantern(167)", "<#> Hoa S¬n/#lantern_enter_lantern(2)", "<#> KÕt thóc ®èi tho¹i!/cancel")
 end
 
 tbLANTERN_ENTER_POS = {

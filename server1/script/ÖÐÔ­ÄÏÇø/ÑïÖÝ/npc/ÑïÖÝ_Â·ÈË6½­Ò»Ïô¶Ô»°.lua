@@ -15,12 +15,12 @@ function main(sel)
 		i = random(0,1)
 
 			if (i == 0) then
-Say("½­Ò»Ïô£ºÈÎºÎ¹ÃÄï¶¼±È²»ÉÏËı£¬ÔÚÎÒµÄÑÛÖĞ£¬ÔÚÎÒµÄĞÄÀï£¬Ö»ÓĞËıÒ»¸ö¡£¿ÉÊÇÏşÕæÎªÊ²Ã´×Ü¶ÔÎÒ²»Àí²»²ÇÄØ£¿",0)
+Say("Kh«ng cã c« g¸i nµo s¸nh b»ng c« Êy, trong m¾t ta, chØ cã mét m×nh nµng. Nh­ng v× sao th× ta kh«ng gi¶i thİch ®­îc?",0)
 			return
 			end;
 			
 			if (i == 1) then
-Say("½­Ò»Ïô£ºÎÒËäÈ»Çî£¬¿ÉÊÇÎÒ¶ÔÏşÕæÊÇÕæĞÄÊµÒâµÄ¡£",0)
+Say("Ta tuy nghÌo, nh­ng ta ®èi víi HiÓu Ch©n lµ thËt lßng!",0)
 			end;
 			
 			

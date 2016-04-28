@@ -10,7 +10,7 @@ end
 OPTIONS = {}
 
 function main(sel)
-	Say("Ò©µêÀÏ°å£ºÎÒÕâ¶ùÊ²Ã´Ò©¶¼ÓĞ£¬ÑøÉí½¡ÌåµÄ¡¢ÖÎ²¡ÏûÔÖµÄ¡¢ÑÓÄêÒæÊÙµÄ¡¢²¹ÑªÌáÆøµÄ£¬ÄúÒªÂòÊ²Ã´Ò©£¿",
+	Say("TiÖm ta thuèc nµo còng cã, d­ìng th©n kiÖn thÓ, kĞo dµi tuæi thä, bæ m¸u İch khİ, ng­¬i muèn mua g×?",
 		getn(OPTIONS),
 		OPTIONS)
 end
@@ -20,8 +20,8 @@ function yes()
 end
 
 if TEACHERSWITCH then
-	tinsert(OPTIONS, "°ïÎÒ·ÅÒ©¾Æ/brew")
+	tinsert(OPTIONS, "Gióp ta cÊt d­îc töu/brew")
 end
-tinsert(OPTIONS, "½»Ò×/yes")
-tinsert(OPTIONS, "Á¶ÖÆ»ìÔªÁéÂ¶/refine")
-tinsert(OPTIONS, "²»½»Ò×/Cancel")
+tinsert(OPTIONS, "Giao dŞch/yes")
+tinsert(OPTIONS, "Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine")
+tinsert(OPTIONS, "Kh«ng giao dŞch/Cancel")

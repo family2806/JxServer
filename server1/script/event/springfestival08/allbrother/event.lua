@@ -9,14 +9,14 @@ Include("\\script\\lib\\pay.lua")
 Include("\\script\\lib\\log.lua")
 allbrother_0801_tbLingPai = 
 	{
-		{szName="ÌìÊàÁî", tbProp={6, 1, 1643, 1, 0, 0}, },
-		{szName="Ìì×êÁî", tbProp={6, 1, 1644, 1, 0, 0}, },
-		{szName="Ìì»úÁî", tbProp={6, 1, 1645, 1, 0, 0}, },
-		{szName="ÌìÈ¨Áî", tbProp={6, 1, 1646, 1, 0, 0}, },
-		{szName="ÓñºâÁî", tbProp={6, 1, 1647, 1, 0, 0}, },
-		{szName="¿ªÑôÁî", tbProp={6, 1, 1648, 1, 0, 0}, },
-		{szName="Ò¡¹âÁî", tbProp={6, 1, 1649, 1, 0, 0}, },
-		{szName="ÆßĞÇÁî", tbProp={6, 1, 1650, 1, 0, 0}, },
+		{szName="Thiªn Xu LÖnh", tbProp={6, 1, 1643, 1, 0, 0}, },
+		{szName="Thiªn Toµn LÖnh", tbProp={6, 1, 1644, 1, 0, 0}, },
+		{szName="Thiªn C¬ LÖnh", tbProp={6, 1, 1645, 1, 0, 0}, },
+		{szName="Thiªn QuyÒn LÖnh", tbProp={6, 1, 1646, 1, 0, 0}, },
+		{szName="Ngäc Hoµnh LÖnh", tbProp={6, 1, 1647, 1, 0, 0}, },
+		{szName="Khai D­¬ng LÖnh", tbProp={6, 1, 1648, 1, 0, 0}, },
+		{szName="Dao Quang LÖnh", tbProp={6, 1, 1649, 1, 0, 0}, },
+		{szName="ThÊt Tinh LÖnh", tbProp={6, 1, 1650, 1, 0, 0}, },
 	}
 
 function allbrother_0801_main()
@@ -24,19 +24,19 @@ function allbrother_0801_main()
 	
 	
 	if allbrother_0801_IsAct() ~= 1 then
-		Say(format("²»ºÃÒâË¼, <color=yellow>%s<color> »î¶¯ÒÑ½áÊø£¬¶àĞ»²Î¼Ó»î¶¯.",allbrother_0801_szActName), 0)
+		Say(format("Xin lçi, <color=yellow>%s<color> ho¹t ®éng ®· kÕt thóc, ®a t¹ ®· tham gia ho¹t ®éng.",allbrother_0801_szActName), 0)
 		return 0;
 	end
 	
-	local szTitle = "´ó¼ÒºÃ£¬ÔÚÏÂÊÇ±±¶·ÃÅµÄ´«ÈË£¬²»Öª¸÷Î»ÒªÊ²Ã´?";
+	local szTitle = "Xin chµo, t¹i h¹ lµ truyÒn nh©n cña B¾c §Èu M«n, ch¼ng hay c¸c h¹ cÇn g×?";
 	local tbOpt = 
 	{
-		"ÔÚÏÂºÍ¸÷Î»ĞÖµÜÏë½ÓÈÎÎñ./allbrother_0801_WantTask",
-		"ÔÚÏÂÒÑÍê³ÉÁËÇ°±²µÄÈÎÎñ./allbrother_0801_TaskPersonTaskAward",
-		"ÔÚÏÂºÍ¸÷Î»ĞÖµÜÒÑÍê³ÉÁËÇ°±²µÄÈÎÎñ./allbrother_0801_TeamTaskAward",
-		"Õæ²»ºÃÒâË¼£¬ÀÍ·³ÄúÔÙËµÒ»´ÎÈÎÎñ./allbrother_0801_QueryPersonTask",
-		"ÎÒÎŞ·¨Íê³ÉÕâ´Î¸öÈËÈÎÎñ./allbrother_0801_CancelTask",
-		"ÔÚÏÂ¸æ´Ç/OnCancel"
+		"T¹i h¹ vµ c¸c huynh ®Ö muèn tiÕp nhËn nhiÖm vô./allbrother_0801_WantTask",
+		"T¹i h¹ ®· hoµn thµnh nhiÖm vô cña tiÒn bèi./allbrother_0801_TaskPersonTaskAward",
+		"T¹i h¹ cïng c¸c huynh ®Ö ®· hoµn thµnh nhiÖm vô cña tiÒn bèi./allbrother_0801_TeamTaskAward",
+		"ThËt ¸y n¸y, phiÒn l·o nãi l¹i 1 lÇn n÷a nhiÖm vô./allbrother_0801_QueryPersonTask",
+		"T¹i h¹ kh«ng thÓ hoµn thµnh nhiÖm vô c¸ nh©n lÇn nµy./allbrother_0801_CancelTask",
+		"T¹i h¹ c¸o tõ./OnCancel"
 	}
 	Say(szTitle, getn(tbOpt), tbOpt)
 end
@@ -54,12 +54,12 @@ end
 function allbrother_0801_QueryPersonTask()
 	local nTaskState	= GetTask(TSK_allbrother_0801_TaskState)
 	if allbrother_0801_CheckTaskState() == 0 then
-		Say("¸÷Î»»¹Ã»ÓĞ½ÓÈÎÎñ", 0)
+		Say("C¸c h¹ vÉn ch­a nhËn nhiÖm vô.", 0)
 	else
 		if nTaskState > 1073741824 then
 			nTaskState = nTaskState - 1073741824
 		end
-		Say(format("ÏÖÔÚµÄÈÎÎñÊÇ %s", allbrother_0801_tbTaskList[nTaskState].szShow), 0)
+		Say(format("NhiÖm vô hiÖn t¹i lµ: %s", allbrother_0801_tbTaskList[nTaskState].szShow), 0)
 	end
 	
 end
@@ -69,16 +69,16 @@ function allbrother_0801_WantTask()
 	local nTeamSize = GetTeamSize()
 	local i
 	if IsCaptain() ~= 1 then
-		Say("´ËÊÂÂé·³¸÷Î»½Ì¶Ó³¤ºÍÎÒÒ»ÆğÉÌÌÖ.", 0)
+		Say("ViÖc nµy…… PhiÒn c¸c h¹ nhê ®éi tr­ëng cïng ta bµn chuyÖn.", 0)
 		return 0;
 	end
 	if nTeamSize < allbrother_0801_TeamSizeLimit then
-		Say(format("¶ÓÎéÈËÊı²»¹»£¬Çë¼ÌĞøÕĞÄ¼ <color=yellow>%d<color> ÈËÖ®ºóÔÙ»ØÀ´ÁìÈÎÎñ.", allbrother_0801_TeamSizeLimit-nTeamSize), 0)
+		Say(format("Sè thµnh viªn trong tæ ®éi kh«ng ®ñ, xin h·y chiªu mé thªm <color=yellow>%d<color> ng­êi n÷a råi quay l¹i ®©y ta giao cho nhiÖm vô.", allbrother_0801_TeamSizeLimit-nTeamSize), 0)
 		return 0;
 	end
 	for i=1,nTeamSize do
 		if not allbrother_0801_PlayerDo(GetTeamMember(i), allbrother_0801_islvl50) then
-			Say("ÄãµÄ¶ÓÎéÖĞÓĞÃ»µ½50¼¶»òÕßÃ»ÓĞ³äÖµµÄ£¬ÎŞ·¨½ÓÊÜÈÎÎñ¡£", 0)
+			Say("Tæ ®éi cña b¹n cã ng­êi ®¼ng cÊp ch­a ®¹t 50 hoÆc ch­a n¹p thÎ, kh«ng thÓ tiÕp nhËn nhiÖm vô.", 0)
 			return 
 		end
 	end
@@ -95,7 +95,7 @@ function allbrother_0801_WantTask()
 			allbrother_0801_PlayerDo(GetTeamMember(i), allbrother_0801_AcceptTask, nTaskId)
 		end
 	else
-		Say("ÄãµÄ¶ÓÎéÖĞÓĞÈËÃ»ÓĞÍê³ÉÈÎÎñ»òÕßÒÑ¾­×öÍêÈÎÎñÁË.", 0)
+		Say("Tæ ®éi cña b¹n cã ng­êi ch­a hoµn thµnh nhiÖm vô hoÆc ®· lµm hÕt nhiÖm vô råi .", 0)
 	end
 	tbLog:PlayerActionLog("TinhNangKey","NhanNhiemVuBacDau")
 end
@@ -111,7 +111,7 @@ function allbrother_0801_CheckTeamTaskState()
 	return nTeamSize-nCount;
 end
 
---¼ì²éÒ»¸öÈËµÄÈÎÎñ×´Ì¬ 0ÎªÃ»ÓĞÈÎÎñ£¬·ÇÁã´ú±í½ÓÊÜÁËÄÄÖÖÈÎÎñ£¬Èç¹ûÈÎÎñÒÑ¾­³¬Ê±£¬Ö´ĞĞÈ¡ÏûÈÎÎñ·µ»Ø0 Ã»ÓĞ½ÓÈÎÎñ
+--¼ì²éÒ»¸öÈËµÄÈÎÎñ×´Ì¬ 0ÎªÃ»ÓĞÈÎÎñ£¬·ÇÁã´ú±í½ÓÊÜÁËÄÄÖÖÈÎÎñ£¬Èç¹ûÈÎÎñÒÑ¾­³¬Ê±£¬Ö´ĞĞHñy bá nhiÖm vô.·µ»Ø0 Ã»ÓĞ½ÓÈÎÎñ
 function allbrother_0801_CheckTaskState()
 	local nTaskState	= GetTask(TSK_allbrother_0801_TaskState)
 	local nTaskLimit	= GetTask(TSK_allbrother_0801_TaskLimit)
@@ -126,17 +126,17 @@ function allbrother_0801_CheckTaskState()
 		if mod(nTaskLimit, 256) < TSKV_allbrother_0801_TaskLimit then --²¢ÇÒ½ñÌì»¹ÄÜ½Ó
 			return 0
 		else
-			Msg2Team(format("%s ½ñÌìÒÑ½ÓÊÜ %d´Î¸öÈËÈÎÎñ£¬Ã÷ÌìÔÙÀ´°É.", GetName(), TSKV_allbrother_0801_TaskLimit))
+			Msg2Team(format("%s H«m nay ®· tiÕp nhËn %d lÇn nhiÖm vô c¸ nh©n, h«m sau quay l¹i nhĞ.", GetName(), TSKV_allbrother_0801_TaskLimit))
 			return 1;
 		end
 	else --½ÓÁËÈÎÎñ£¬¿´ÊÇ·ñ³¬Ê±
 		if nTaskTime + TSKV_allbrother_0801_TaskTime <= GetCurServerTime() then --³¬Ê±
 			allbrother_0801_CancelTask()
-			Msg2Team(format("%s ³¬¹ı¹æ¶¨Ê±¼ä£¬ÈÎÎñ±»È¡Ïû.", GetName()))
-			Msg2Player(format("%s ³¬¹ı¹æ¶¨Ê±¼ä£¬ÈÎÎñ±»È¡Ïû.", GetName()))
+			Msg2Team(format("%s §· v­ît qu¸ thêi gian quy ®Şnh, nhiÖm vô bŞ hñy bá.", GetName()))
+			Msg2Player(format("%s §· v­ît qu¸ thêi gian quy ®Şnh, nhiÖm vô bŞ hñy bá.", GetName()))
 			return 0;
 		else --Ã»ÓĞ³¬Ê±£¬ËµÃ÷ÒÑ¾­½ÓÁËÈÎÎñ
-			Msg2Team(format("%sÒÑ½ÓÊÜ±±¶·ÀÏÈËµÄÈÎÎñ.", GetName()))
+			Msg2Team(format("%s §· tiÕp nhËn nhiÖm vô cña B¾c §Èu L·o Nh©n.", GetName()))
 			return 1;
 		end
 	end
@@ -148,26 +148,26 @@ function allbrother_0801_AcceptTask(nTaskId)
 	SetTask(TSK_allbrother_0801_TaskState, nTaskId)
 	SetTask(TSK_allbrother_0801_TaskLimit, GetTask(TSK_allbrother_0801_TaskLimit)+1)
 	SetTask(TSK_allbrother_0801_TaskTime, GetCurServerTime())
-	Msg2Player(format("ÁìÈ¡ÈÎÎñ %s", allbrother_0801_tbTaskList[nTaskId].szShow))
+	Msg2Player(format("NhËn ®­îc nhiÖm vô: %s", allbrother_0801_tbTaskList[nTaskId].szShow))
 end
 
 
 
---¶ÓÎéÈ¡ÏûÈÎÎñ 
+--¶ÓÎéHñy bá nhiÖm vô. 
 function allbrother_0801_TeamCancelTask()
 	local nTeamSize = GetTeamSize()
 	for i=1,nTeamSize do
 		allbrother_0801_PlayerDo(GetTeamMember(i), allbrother_0801_CancelTask)
 	end
 end
---¸öÈËÈ¡ÏûÈÎÎñ,ÈÎÎñ×´Ì¬ÉèÎª0
+--¸öÈËHñy bá nhiÖm vô.,ÈÎÎñ×´Ì¬ÉèÎª0
 function allbrother_0801_CancelTask()
 	if GetTask(TSK_allbrother_0801_TaskState) == 0 then
-		Say("ÄãÏÖÔÚ»¹Ã»ÓĞÈÎÎñÂğ£¿³¬¹ıÁË×öÈÎÎñµÄ¹æ¶¨Ê±¼ä¿´À´ÈÎÎñ±»È¡ÏûÁË.", 0)
+		Say("HiÖn t¹i, b¹n vÉn ch­a cã nhiÖm vô µ? V­ît qu¸ thêi gian quy ®Şnh lµm nhiÖm vô xem nh­ nhiÖm vô bŞ hñy bá.", 0)
 		return 0;
 	end
 	SetTask(TSK_allbrother_0801_TaskState, 0)
-	Msg2Player("È¡ÏûÈÎÎñ")
+	Msg2Player("Hñy bá nhiÖm vô.")
 end
 
 --ÊÇ·ñ50¼¶
@@ -175,7 +175,7 @@ function allbrother_0801_islvl50()
 	if GetLevel() >= 50 and IsCharged() == 1 then
 		return 1
 	else 
-		Msg2Team(format("%sµÈ¼¶Î´µ½50¼¶»òÕßÎ´³äÖµ",GetName()))
+		Msg2Team(format("%s §¼ng cÊp ch­a ®¹t 50 hoÆc ch­a n¹p thÎ.",GetName()))
 	end
 end
 
@@ -184,21 +184,21 @@ function allbrother_0801_TaskPersonTaskAward() --
 	local nTaskTime		= GetTask(TSK_allbrother_0801_TaskTime)
 	local nTaskId		= 0;
 	if nTaskState == 0 then
-		Say("ÎÒ»¹Ã»ÓĞ½ÓÊÜÈÎºÎÈÎÎñ.",0)
+		Say("B¹n vÉn ch­a tiÕp nhËn nhiÖm vô nµo c¶.",0)
 		return	
 	end
 	if nTaskState < 1073741824 then
 		if nTaskTime + TSKV_allbrother_0801_TaskTime <= GetCurServerTime() then --³¬Ê±
 			SetTask(TSK_allbrother_0801_TaskState, 0)
-			Say("²»ºÃÒâË¼£¡Ê±¼äºÜ¿ì¹ıÈ¥ÁËµ«ÊÇ»¹Ã»ÓĞÍê³É£¬ÈÎÎñÊ§°ÜÁË.", 0)
+			Say("Xin chia buån! Thêi gian tr«i qua thËt nhanh, vÉn ch­a hoµn thµnh, nhiÖm vô thÊt b¹i råi.", 0)
 			return
 		end
 		nTaskId = nTaskState
 		if allbrother_0801_tbTaskList[nTaskId].nTaskType == 0 then 
 			local tbAward = {0, allbrother_0801_TaskFindItemAward, 1}
-			springfestival08_lib_material_compose({allbrother_0801_tbTaskList[nTaskId].tbList, tbAward, "Íê³ÉÈÎÎñ", "ÈÎÎñÎïÆ·²»¶Ô»òÕßÊıÁ¿²»¹»¡£", "ÈÎÎñ³ö´í"}, "½»ÎïÆ·")
+			springfestival08_lib_material_compose({allbrother_0801_tbTaskList[nTaskId].tbList, tbAward, "Hoµn thµnh nhiÖm vô ", "VËt phÈm nhiÖm vô kh«ng ®óng hoÆc sè l­îng kh«ng ®ñ", "NhiÖm vô sai"}, "Giao vËt phÈm")
 		else
-			Say("ÒÀ¾ÉÃ»ÓĞÍê³ÉÈÎÎñ", 0)	
+			Say("NhiÖm vô vÉn ch­a hoµn thµnh", 0)	
 		end
 	else
 		allbrother_0801_TaskFindNpcAward();
@@ -232,14 +232,14 @@ function allbrother_0801_TaskFindNpcAward()
 	local nTaskTime		= GetTask(TSK_allbrother_0801_TaskTime)
 	local tbAward = 
 	{
-		{szName="¸£ÔµÂ¶(´ó) ", tbProp={6, 1, 124, 1, 0, 0}},
+		{szName="Phóc Duyªn Lé (§¹i) ", tbProp={6, 1, 124, 1, 0, 0}},
 		{nExp = nExpAward},
 	}
 	if (nTaskState > 1073741824) then --Ïàµ±ÓÚÅĞ¶Ï×î¸ßÎ»ÉèÖÃÊÇ·ñÎª1
 		SetTask(TSK_allbrother_0801_TaskState, 0)
 		--ÊÇ·ñ³¬Ê±
 		if nTaskTime + TSKV_allbrother_0801_TaskTime <= GetCurServerTime() then --³¬Ê±
-			Say("²»ºÃÒâË¼£¡Ê±¼äºÜ¿ì¹ıÈ¥ÁËµ«ÊÇ»¹Ã»ÓĞÍê³É£¬ÈÎÎñÊ§°ÜÁË.", 0)
+			Say("Xin chia buån! Thêi gian tr«i qua thËt nhanh, vÉn ch­a hoµn thµnh, nhiÖm vô thÊt b¹i råi.", 0)
 			return
 		end
 		--¸ø½±Àø
@@ -254,7 +254,7 @@ function allbrother_0801_TaskFindNpcAward()
 		springfestival08_lib_AddAward(allbrother_0801_tbLingPai[nCurRate], allbrother_0801_szActName)
 		return 1;
 	else
-		Say("ÄãºÃÏñ»¹Ã»ÓĞÍê³ÉÈÎÎñ.", 0)
+		Say("B¹n d­êng nh­ vÉn ch­a hoµn thµnh nhiÖm vô.", 0)
 	end
 end
 
@@ -263,21 +263,21 @@ end
 function allbrother_0801_TeamTaskAward()
 	local nTeamSize = GetTeamSize()
 	if IsCaptain() ~= 1 then
-		Say("Õâ¸öÊÂÇéÀÍ·³¸÷Î»Çë¶Ó³¤ºÍÎÒÉÌÁ¿.", 0)
+		Say("ViÖc nµy…… PhiÒn c¸c h¹ nhê ®éi tr­ëng cïng ta bµn chuyÖn.", 0)
 		return 0;
 	end
 	if nTeamSize < allbrother_0801_TeamSizeLimit then
-		Say("¶ÓÎéÈËÊı²»¹»£¬Çë¼ÌĞøÕĞÄ¼", 0)
+		Say("Huynh ®Ö trong tæ ®éi vÉn ch­a ®ñ, xin chiªu mé thªm nhĞ.", 0)
 		return
 	end
 	for i=1,nTeamSize do
 		if not allbrother_0801_PlayerDo(GetTeamMember(i), allbrother_0801_islvl50) then
-			Say("ÄãµÄ¶ÓÎéÖĞÓĞÃ»µ½50¼¶»òÕßÃ»ÓĞ³äÖµµÄ£¬ÎŞ·¨½ÓÊÜÈÎÎñ", 0)
+			Say("Tæ ®éi cña b¹n cã ng­êi ®¼ng cÊp ch­a ®¹t 50 hoÆc ch­a n¹p thÎ, kh«ng thÓ tiÕp nhËn nhiÖm vô.", 0)
 			return 
 		end
 	end
 	local tbAward = {0, allbrother_0801_TeamTaskAwardFun, 1}
-	springfestival08_lib_material_compose({allbrother_0801_tbLingPai, tbAward, "Íê³ÉÈÎÎñ", "ÈÎÎñÎïÆ·²»¶Ô»òÕßÊıÁ¿²»¹»", "ÈÎÎñ³ö´í"}, "½»ÎïÆ·", "8ÖÖ±±¶·ÃÅÁîÅÆ(ÌìÊàÁî£¬Ìì×êÁî£¬Ìì»úÁî£¬ÌìÈ¨Áî£¬ÓñºâÁî£¬¿ªÑôÁî£¬Ò¡¹âÁî£¬ÆßĞÇÁî)")
+	springfestival08_lib_material_compose({allbrother_0801_tbLingPai, tbAward, "Hoµn thµnh nhiÖm vô ", "VËt phÈm nhiÖm vô kh«ng ®óng hoÆc sè l­îng kh«ng ®ñ", "NhiÖm vô sai"}, "Giao vËt phÈm", "8 lo¹i lÖnh bµi B¾c §Èu M«n (Thiªn Xu LÖnh, Thiªn Toµn LÖnh, Thiªn C¬ LÖnh, Thiªn QuyÒn LÖnh, Ngäc Hoµnh LÖnh, Khai D­¬ng LÖnh, Dao Quang LÖnh, ThÊt Tinh LÖnh)")
 end
 
 --function allbrother_0801_CheckAllTeamTaskLimit()
@@ -299,7 +299,7 @@ function allbrother_0801_CheckTeamTaskLimit()
 	if mod(nTaskTeamLimit, 256) < TSKV_allbrother_0801_TaskTeamLimit then
 		return 1;
 	else
-		Msg2Player(format("%s ½ñÌìÒÑ¾­Íê³É %d ´Î¼¯ÌåÈÎÎñ, ÒÑ¾­´ïµ½×î´ó£¬ÎŞ·¨Áì½±.", GetName(), TSKV_allbrother_0801_TaskTeamLimit))
+		Msg2Player(format("%s H«m nay ®· hoµn thµnh %d lÇn nhiÖm vô tËp thÓ, ®· ®¹t ®Õn tèi ®a, kh«ng thÓ nhËn phÇn th­ëng.", GetName(), TSKV_allbrother_0801_TaskTeamLimit))
 		return 0;
 	end
 	return 0;
@@ -325,9 +325,9 @@ function allbrother_0801_TaskAwardFun()
 	local tbExp = {nExp = 8000000}
 	local tbItem = 
 	{
-		{szName="¸£ÔµÂ¶(´ó) ", tbProp={6, 1, 124, 1, 0, 0}, nRate = 20},
-		{szName="ÏÉ²İÂ¶", tbProp={6, 1, 71, 1, 0, 0}, nRate = 5},
-		{szName="×ÏË®¾§", tbProp={4, 239, 1, 0, 0, 0}, nRate = 1},
+		{szName="Phóc Duyªn Lé (§¹i) ", tbProp={6, 1, 124, 1, 0, 0}, nRate = 20},
+		{szName="Tiªn Th¶o Lé ", tbProp={6, 1, 71, 1, 0, 0}, nRate = 5},
+		{szName="Tö Thñy Tinh", tbProp={4, 239, 1, 0, 0, 0}, nRate = 1},
 	}
 	springfestival08_lib_AddAward(tbExp, allbrother_0801_szActName)
 	springfestival08_lib_GiveRandomAward(tbItem, allbrother_0801_szActName)

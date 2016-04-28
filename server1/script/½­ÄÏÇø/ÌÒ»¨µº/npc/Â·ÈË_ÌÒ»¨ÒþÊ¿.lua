@@ -19,14 +19,14 @@ function main()
 		-- Say("ÌÒ»¨ÒşÊ¿£ºÌÒ»¨µº³äÂú×ÅÁéÆø£¬ÊÇÁ·¹¦µÄ±¦µØ¡£ºÈÍë<color=red>À°°ËÖà<color>£¬ÇáÇáËÉËÉ¹¦Á¦×Ô¶¯ÌáÉı£¡Ò»Íë¿ÉÎ¬³Ö¹¦Ğ§Ò»Ğ¡Ê±¡£",3,"ºÃ£¬ÎÒºÈ/buy_yes","ÇëÎÊÒ»ÏÂÀ°°ËÖà¹¦Ğ§»¹ÓĞ¶àÉÙÊ±¼ä/check_time","ÏÂ´ÎÔÙËµ°É/OnCancel")
 	--end
 	
-	strNeedLevel = "ÌÒ»¨µºÓëÊÀ¸ô¾ø£¬Â·Í¾Î£ÏÕ£¬²»µ½<color=red> "..AEXP_NEEDLEVEL.."¼¶<color>¾ÍÏë½øÈ¥£¿»ØÈ¥Á·¹¦È¥!";
+	strNeedLevel = "§µo Hoa §¶o vµ c¸ch tuyÖt víi thÕ giíi bªn ngoµi, ®­êng ®i nguy hiÓm, kh«ng ®Õn<color=red> "..AEXP_NEEDLEVEL.."cÊp<color> mµ muèn vµo ®©y? VÒ luyÖn c«ng thªm ®i!";
 	-- Ãâ·ÑË«¾­Ñé
 	if (AEXP_IsFreeTimeDoubleExp() == 1) then-- Ãâ·ÑË«¾­ÑéÈÕ×Ó
 		nLevel = GetLevel();	
 		if (nLevel < AEXP_NEEDLEVEL) then
 			Say(strNeedLevel, 0);
 		else
-			Say("ÏÖÔÚÌÒ»¨µºÁéÆø¼«Ê¢£¬ÕâÊ±ºòÁ·¹¦²»ĞèÒªÀ°°ËÖà¡£µ«ÊÇºÈÁËÖàÒ²²»»áÏû³ıÊ±¼ä¡£½ñÌìÊÇÃÀºÃµÄÒ»Ìì¡£ÀÏ·òÒ²¸Ğ¾õÉñÇåÆøË¬¡£ºÃÁË£¡´óÏÀ²»±Ø»¨ÒøÁ½£¡»ú»áÉÙÓĞ£¬¸Ï¿ìÕùÈ¡Á·¹¦°É£¡", 0);
+			Say("HiÖn nay §µo Hoa ®¶o linh khİ rÊt m¹nh, lóc nµy luyÖn c«ng kh«ng cÇn ph¶i dïng ®Õn ch¸o L¹p B¸t. Nh÷ng b¸t ch¸o ®· uèng còng sÏ kh«ng bŞ trõ thêi gian. H«m nay qu¶ lµ mét ngµy ®Ñp trêi. L·o phu ®©y còng c¶m thÊy tinh thÇn phÊn chÊn. §­îc råi! §¹i hiÖp kh«ng cÇn tèn ng©n l­îng! C¬ héi hiÕm cã, h·y tranh thñ luyÖn c«ng ®i nhĞ!", 0);
 		end
 		
 		return 1;		
@@ -36,12 +36,12 @@ function main()
 	if (nLevel < AEXP_NEEDLEVEL) then
 		Say(strNeedLevel, 0);
 	else
-		Say("ÌÒ»¨µº³äÂúÁéÆø. ºÈÍë<color=red>À°°ËÖà<color> ¹¦Á¦»á´óÔö. Ò»ÍëÖà¹¦Ğ§ÓĞ1Ğ¡Ê±£¡",
+		Say("§µo Hoa ®¶o linh khİ sung m·n. Uèng thªm b¸t <color=red>ch¸o L¹p B¸t<color> sc«ng lùc sÏ t¨ng lªn rÊt nhiÒu. Mçi b¸t cã c«ng hiÖu trong 1 giê!",
 			4,
-			"ºÃµÄ! ÎÒºÈ! /buy_yes",
-			"ÇëÎÊ: Õâ¸öÖà,ºÈ¶à¾ÃÖ®ºó²Å»áÓĞ¹¦Ğ§? /check_time",
-			"ÎÒÏëÖÆ×÷»ìÔªÁéÂ¶/refine",
-			"ÏÂ´ÎÔÙËµ/OnCancel");
+			"§­îc! ta uèng! /buy_yes",
+			"Xin hái: Thø ch¸o nµy, uèng vµo bao l©u sau míi cã c«ng hiÖu? /check_time",
+			"Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine",
+			"LÇn sau sÏ nãi tiÕp /OnCancel");
 	end
 end
 
@@ -91,31 +91,31 @@ function check_time()
 
 	-- Ãâ·ÑË«¾­Ñé
 	if (AEXP_IsFreeTimeDoubleExp() == 1) then-- Ãâ·ÑË«¾­ÑéÈÕ×Ó
-		Say("ÏÖÔÚÌÒ»¨µºÁéÆøºÜÍú£¬ÕâÊ±ºòÁ·¹¦²»ĞèÒªÓÃµ½À°°ËÖà¡£µ«ÊÇºÈÁËÀ°°ËÖàÒ²²»»á»¨Ê±¼ä¡£»ú»á²»¶à¡£´óÏÀ¿ìÕùÈ¡Á·¹¦°É£¡", 0);
+		Say("HiÖn nay §µo Hoa ®¶o linh khİ rÊt m¹nh, lóc nµy luyÖn c«ng kh«ng cÇn ph¶i dïng ®Õn ch¸o L¹p B¸t. Nh÷ng b¸t ch¸o ®· uèng còng sÏ kh«ng bŞ trõ thêi gian. C¬ héi hiÕm cã. §¹i hiÖp h·y tranh thñ luyÖn c«ng ®i nhĞ!", 0);
 		return 1;
 	end
 	
 	nCurValue = GetTask(AEXP_TASKID);
 	
 	if (nCurValue == 0) then	-- ¿ÉÄÜ´ÓÎ´ºÈ¹ıÀ°°ËÖà
-		Say("ºÃÏñ<color=red>À°°ËÖà<color>Ã»ÓĞ×÷ÓÃ!ÔÙºÈÒ»Íë¿´¿´°É!", 0);
+		Say("H×nh nh­ <color=red>ch¸o L¹p B¸t<color> cña ng­¬i kh«ng cã t¸c dông! H·y mua thªm b¸t n÷a xem sao!", 0);
 		return 0;
 	end
 
 	nTemp = mod(nCurValue, AEXP_TIME_ONE);
-	nHours = (nCurValue - nTemp) / AEXP_TIME_ONE; -- ÒÑºÈµÄÍëÊı(Ğ¡Ê±Êı)
+	nHours = (nCurValue - nTemp) / AEXP_TIME_ONE; -- ÒÑºÈµÄÍëÊı(giê Êı)
 	nMinutes = nTemp * 60 / AEXP_TIME_ONE;
 
 	if (nHours == 0) and (nMinutes < AEXP_FREQ) then	-- ¹Ò»úÊ±¼ä²»×ã
-		Say("À°°ËÖàµÄ¹¦Ğ§Ã»ÓĞÁË£¡ÄãÖ»ÒªÔÙÂòÒ»µã¾Í¿ÉÒÔ¼ÌĞø·¢»ÓÁË!", 0);
-	elseif (nHours > 0) then				-- »¹ÓĞ1Ğ¡Ê±ÒÔÉÏ
-		Say("À°°ËÖàµÄ¹¦Ğ§¿ÉÒÔÎ¬³Ö<color=red> "..nHours.."<color>Ğ¡Ê±<color=red>"..nMinutes.."<color> ·Ö", 0);
+		Say("C«ng hiÖu cña ch¸o l¹p b¸t ®· hÕt! Ng­¬i cÇn ph¶i mua thªm mét İt n÷a míi cã thÓ tiÕp tôc ph¸t huy!", 0);
+	elseif (nHours > 0) then				-- »¹ÓĞ1giê ÒÔÉÏ
+		Say("C«ng hiÖu cña Ch¸o L¹p B¸t cßn cã thÓ duy tr×<color=red> "..nHours.."<color>giê<color=red>"..nMinutes.."<color> phót", 0);
 	else
-		Say("À°°ËÖàµÄ¹¦Ğ§¿ÉÒÔÎ¬³Ö<color=red> "..nMinutes.."<color> ·Ö", 0);
+		Say("C«ng hiÖu cña Ch¸o L¹p B¸t cßn cã thÓ duy tr×<color=red> "..nMinutes.."<color> phót", 0);
 	end
 end;
 
-g_arBuyNumber = {1, 2, 4, 8}; -- µ¥Î»£ºĞ¡Ê±
+g_arBuyNumber = {1, 2, 4, 8}; -- µ¥Î»£ºgiê 
 function buy_yes()
 	nLevel = GetLevel();
 	arBuyStr = {};
@@ -125,28 +125,28 @@ function buy_yes()
 		nNumber = g_arBuyNumber[i];
 		nMoney = AEXP_GetNeedMoney(nLevel, nNumber);
 		if (nMoney > 0) then
-			arBuyStr[i] = ""..nNumber.."Íë[ "..nMoney.." l­îng]".."/buy_deal";
+			arBuyStr[i] = ""..nNumber.."B¸t [ "..nMoney.." l­îng]".."/buy_deal";
 		end
 	end
 
-	arBuyStr[nCount + 1] = "ÎÒ»¹²»ÏëºÈ!/OnCancel"
-	Say("ÄãÏëºÈ¼¸Íë?", nCount+1, arBuyStr);
+	arBuyStr[nCount + 1] = "Ta ch­a muèn dïng ®Õn!/OnCancel"
+	Say("Ng­¬i muèn uèng mÊy b¸t?", nCount+1, arBuyStr);
 end;
 
 function buy_deal(nSel)
-	nNumber = g_arBuyNumber[nSel+1]; -- µ¥Î»£ºĞ¡Ê±
+	nNumber = g_arBuyNumber[nSel+1]; -- µ¥Î»£ºgiê 
 	
 	--ÍëÊı¼ì²é - start
 	nCurValue = GetTask(AEXP_TASKID);
-	temp = (AEXP_TIME_MAX - nCurValue) / AEXP_TIME_ONE; -- Ä¿Ç°¿ÉºÈµÄÍëÊı(Ğ¡Ê±Êı)
+	temp = (AEXP_TIME_MAX - nCurValue) / AEXP_TIME_ONE; -- Ä¿Ç°¿ÉºÈµÄÍëÊı(giê Êı)
 	nRemainNumber = floor(temp);
 	if (nRemainNumber <= 0) then
-		Msg2Player("ÄãÒÑ¾­ºÈÁË"..AEXP_HOUR_MAX.."ÍëÀ°°ËÖà, ¸Ğ¾õ×Ô¼ºÒÑ¾­ºÈ²»ÏÂÁË.¿ÉÄÜ1Ğ¡Ê±Ö®ºóÏû»¯ÁË²Å¿ÉÒÔºÈ¼¸Íë. ")
+		Msg2Player("B¹n ®· uèng"..AEXP_HOUR_MAX.."B¸t ch¸o L¹p B¸t, c¶m gi¸c tù m×nh còng kh«ng ¨n thªm ®­îc tİ nµo. Cã lÏ sau 1 thêi gian tiªu hãa míi cã thÓ ¨n mÊy b¸t. ")
 		return 0;
 	end
 
 	if (nNumber > nRemainNumber) then
-		Msg2Player("Äã¸Ğ¾õ×Ô¼º×î¶à¿ÉÒÔºÈ"..AEXP_HOUR_MAX.."ÍëÀ°°ËÖà,ÏÖÔÚºÈÍêÁË"..(AEXP_HOUR_MAX - nRemainNumber).."Íë. ")
+		Msg2Player("b¹n c¶m thÊy m×nh cã thÓ uèng tèi ®a"..AEXP_HOUR_MAX.."B¸t ch¸o L¹p B¸t, b©y giê ®· ¨n råi "..(AEXP_HOUR_MAX - nRemainNumber).."B¸t. ")
 		nNumber = nRemainNumber;
 	end
 	--ÍëÊı¼ì²é - end
@@ -160,16 +160,16 @@ function buy_deal(nSel)
 
 		-- ÍëÊı¼°Ê±¼äÌáÊ¾ - start
 		nTemp = mod(nValueTotal, AEXP_TIME_ONE);
-		nHours = (nValueTotal - nTemp) / AEXP_TIME_ONE; -- ÒÑºÈµÄÍëÊı(Ğ¡Ê±Êı)
+		nHours = (nValueTotal - nTemp) / AEXP_TIME_ONE; -- ÒÑºÈµÄÍëÊı(giê Êı)
 		nMinutes = nTemp * 60 / AEXP_TIME_ONE;
-		Msg2Player("ÄãÒÑ¾­ºÈÁË"..nNumber.."Æ¿À°°ËÖà. ¿ÉÒÔ×Ô¶¯Á·¹¦"..nHours.."Ğ¡Ê±"..nMinutes.."·Ö");
+		Msg2Player("B¹n ®· uèng"..nNumber.."b×nh ch¸o L¹p B¸t. Cã thÓ tù ®éng luyÖn c«ng"..nHours.."giê "..nMinutes.."phót");
 		-- ÍëÊı¼°Ê±¼äÌáÊ¾ - end
 				
 		if (nCurValue == 0) then -- ¿ÉÄÜÊÇµÚÒ»´ÎºÈ
-			Talk(1,"","À°°ËÖàÖ»ÔÚÌÒ»¨µºÉÏ²ÅÓĞ¹¦Ğ§! Èç¹ûºÈÀë¿ªÕâÀï»áÊ§È¥¹¦Ğ§")
+			Talk(1,"","Ch¸o L¹p B¸t chØ cã c«ng hiÖu trªn §µo Hoa ®¶o! NÕu uèng råi mµ rêi khái ®©y sÏ mÊt t¸c dông")
 		end
 	else
-		Talk(1,"","À°°ËÖàÊÇÒ»ÖÖÉñÆøµÄÒ©Æ·£¬²»ÄÜËÍ!´óÏÀÒª´ø"..nMoney.."Á½À´Âò!")
+		Talk(1,"","Ch¸o L¹p B¸t lµ mét d­îc phÈm thÇn kú, kh«ng thÓ tÆng! §¹i hiÖp h·y mang "..nMoney.." l­îng ®Õn ®Ó mua!")
 	end
 end;
 

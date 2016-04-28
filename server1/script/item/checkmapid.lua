@@ -13,7 +13,7 @@ function main(nItemIdx)
 		if ( nMapId == tbBATTLEMAP[i] ) then
 			
 			if BT_GetGameData(GAME_BATTLEID) == 2 then
-				Msg2Player("´ËµÀ¾ß²»ÄÜÔÚ¹úÕ½ËÎ½ğÕ½³¡ÄÚÊ¹ÓÃ");
+				Msg2Player("§¹o cô nµy kh«ng thÓ sö dông t¹i chiÕn tr­êng quèc chiÕn Tèng Kim");
 				return 1;
 			end
 			
@@ -34,6 +34,6 @@ function main(nItemIdx)
 			end
 		end
 	end
-	Msg2Player("´ËµÀ¾ßÖ»ÄÜÔÚËÎ½ğÕ½³¡ÄÚÊ¹ÓÃ");
+	Msg2Player("VËt phÈm nµy chØ cã thÓ sö dông ë ChiÕn tr­êng Tèng Kim");
 	return 1;
 end

@@ -12,7 +12,7 @@ function pActivity:AddInitNpc()
 		[3] = {162,1588,3145,},
 	}
 	local tbNpc = {	
-			szName = "Ê¥µ®ÀÏÈË", 
+			szName = "¤ng Giµ Noel", 
 			nLevel = 95,
 			nNpcId = 1880,
 			nIsboss = 0,
@@ -74,13 +74,13 @@ function pActivity:GiveXmasTrousers()
 	
 	nCount = nHour * 10
 	if nCount <= 0 then
-		Msg2Player("ÓëÉÏ´ÎÁìÈ¡Ïà¸ôÊ±¼ä,ÄãµÄÉÏÍøÊ±¼ä²»×ã1Ğ¡Ê±£¬²»ÄÜÁìÈ¡")
+		Msg2Player("Kho¶ng c¸ch nhËn lÇn tr­íc, thêi gian trªn m¹ng cña ng­¬i ch­a ®ñ 1 giê, kh«ng thÓ nhËn")
 		return 
 	end
 	local nMaxCount = 50 -  self:GetTaskDaily(TSK_XMAS_TROUSERS_DAILY)
 	nMaxCount = min(nMaxCount, nCount)
 	if nMaxCount <= 0 then
-		Msg2Player("½ñÌìÄã²»ÄÜÔÙÁìÈ¡ÁË£¬Ã÷ÌìÔÙÀ´°É.")
+		Msg2Player("H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.")
 		return 
 	end
 	
@@ -94,7 +94,7 @@ function pActivity:GiveXmasTrousers()
 
 	PlayerFunLib:GetItem(ITEM_XMAS_TROUSERS,nMaxCount, EVENT_LOG_TITLE, "GiveXmasTrousers")
 	--»î¶¯3 - modified by DinhHQ - 20111215
-	local tbPumpkinPie = {szName="ÄÏ¹Ï±ı",tbProp={6,1,30166,1,0,0},nExpiredTime=20120101,}
+	local tbPumpkinPie = {szName="B¸nh bİ ®á",tbProp={6,1,30166,1,0,0},nExpiredTime=20120101,}
 	PlayerFunLib:GetItem(tbPumpkinPie,floor(nMaxCount/10)*40, EVENT_LOG_TITLE, "GivePumpkinPie")
 	self:AddTaskDaily(TSK_XMAS_TROUSERS_DAILY, nMaxCount)
 end
@@ -105,30 +105,30 @@ function pActivity:CheckRandom(nSuccess, szFailLog)
 	if rcur <= nSuccess then
 		return 1
 	else
-		Msg2Player("ÕæÒÅº¶,´Ë´ÎºÏ³ÉÊ§°ÜÁË£¬ÇëÔÙÊÔÒ»´Î!")
+		Msg2Player("ThËt ®¸ng tiÕc, lÇn hîp thµnh nµy ®· thÊt b¹i, xin h·y thö l¹i!")
 		szFailLog = szFailLog or ""
 		%tbLog:PlayerActionLog(szFailLog, EVENT_LOG_TITLE)
 		return 0
 	end
 end
 
--- ºÏ³ÉÊ¥µ®ÀñºĞ
+-- ºÏ³ÉHép quµ gi¸ng sinh
 function pActivity:ComposeXmasGift(nCount)
 	for i=1,nCount do
 		local nSuccess = 70
 		if self:CheckRandom(nSuccess,"GhepHopQuaNoelThatBai") == 1 then
-			PlayerFunLib:GetItem({szName = "Ê¥µ®ÀñºĞ", tbProp={6,1,3080,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "³É¹¦ºÏ³ÉÊ¥µ®ÀñºĞ")
+			PlayerFunLib:GetItem({szName = "Hép quµ gi¸ng sinh", tbProp={6,1,3080,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepHopQuaNoelThanhCong")
 		end
 	end
 end
 
--- ºÏ³ÉÊ¥µ®ÀÏÈË£¨Ğ¡£©
+-- ºÏ³É¤ng Giµ Noel (nhá)
 function pActivity:ComposeXmasPerson_S(nCount)
 	for i=1,nCount do
 	--Change request Event Noel - Modified by DinhHQ - 20111129
 		local nSuccess = 70
-		if self:CheckRandom(nSuccess, "ºÏ³ÉÑ©ÈË£¨Ğ¡£©Ê§°Ü") == 1 then
-			PlayerFunLib:GetItem({szName = "Ê¥µ®ÀÏÈË£¨Ğ¡£©", tbProp={6,1,3077,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "ºÏ³ÉÑ©ÈË£¨Ğ¡£©³É¹¦")
+		if self:CheckRandom(nSuccess, "GhepNguoiTuyet(nho)ThatBai") == 1 then
+			PlayerFunLib:GetItem({szName = "¤ng Giµ Noel (nhá)", tbProp={6,1,3077,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepNguoiTuyet(nho)ThanhCong")
 		end
 	end
 end
@@ -148,8 +148,8 @@ function pActivity:UseXmasPerson_S()
 		[1]={nExp=2000000,},
 	}
 	local tbUseLog = {
-		[500] = "Ê¹ÓÃ500´ÎÑ©ÈË£¨Ğ¡£©",
-		[1000] = "Ê¹ÓÃ1000´ÎÑ©ÈË£¨Ğ¡£©",
+		[500] = "SuDung500LanNguoiTuyet(nho)",
+		[1000] = "SuDung1000LanNguoiTuyet(nho)",
 		}
 
 	self:GiveItemAward(tbAward, tbUseLog, "UseXmasPerson_S", TSK_XMAS_PERSON_S_LIMIT)
@@ -158,17 +158,17 @@ end
 function pActivity:UseXmasPerson_M()
 	local tbAward = 
 	{
-		[1]={szName="Ğş¾§¿óÊ¯",tbProp={6,1,147,1,0,0},},
+		[1]={szName="HuyÒn Tinh Kho¸ng Th¹ch ",tbProp={6,1,147,1,0,0},},
 		[2]={nExp_tl=1,},
 	}
 	local tbUseLog = {
-		[50] = "Ê¹ÓÃ50´ÎÑ©ÈË(ÖĞ)",
-		[100] = "Ê¹ÓÃ100´ÎÑ©ÈË(ÖĞ)",
-		[150] = "Ê¹ÓÃ150´ÎÑ©ÈË(ÖĞ)",
-		[200] = "Ê¹ÓÃ200´ÎÑ©ÈË(ÖĞ)",
+		[50] = "SuDung50LanNguoiTuyet(trung)",
+		[100] = "SuDung100LanNguoiTuyet(trung)",
+		[150] = "SuDung150LanNguoiTuyet(trung)",
+		[200] = "SuDung200LanNguoiTuyet(trung)",
 		}
 	
-	self:GiveItemAward(tbAward, tbUseLog,"Ê¹ÓÃÑ©ÈË(ÖĞ)ÁìÈ¡ÎïÆ·", TSK_XMAS_PERSON_M_LIMIT)
+	self:GiveItemAward(tbAward, tbUseLog,"SuDungNguoiTuyet(trung)NhanVatPham", TSK_XMAS_PERSON_M_LIMIT)
 end
 
 function pActivity:UseXmasPerson_L()
@@ -176,64 +176,64 @@ function pActivity:UseXmasPerson_L()
 	{
 		[1]={nExp=10e6,},
 		[2]={
-			{szName="½ğÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.04},
-			{szName="½ğÎÚ½ğÅÆ",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
-			{szName="½ğÎÚ¿øÍ¼Æ×",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚÒÂÍ¼Æ×",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚĞ¬Í¼Æ×",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚÑü´øÍ¼Æ×",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚ»¤ÍóÍ¼Æ×",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
-			{szName="½ğÎÚÏîÁ´Í¼Æ×",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚÅåÍ¼Æ×",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
-			{szName="½ğÎÚÉÏ½äÍ¼Æ×",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
-			{szName="½ğÎÚÏÂ½äÍ¼Æ×",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
-			{szName="½ğÎÚÆ÷ĞµÍ¼Æ×",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
-			{szName="½ğ»¨Ö®±¦",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.2},
-			{szName="ôä´äÖ®±¦",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.1},
-			{szName="·çÔÆÖ®±¦",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.02},
-			{szName="°²¿µºì°ü",tbProp={6,1,2105,1,0,0},nCount=1,nRate=0.1},
-			{szName="³ÊÏéºì°ü",tbProp={6,1,2104,1,0,0},nCount=1,nRate=0.1},
-			{szName="ËÎ½ğÕĞ±øÁî",tbProp={6,1,30083,1,0,0},nCount=2,nRate=2},
-			{szName="»ìÔªÁéÂ¶",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},
-			{szName="º£ÁúÖé",tbProp={6,1,2115,1,0,0},nCount=1,nRate=2},
-			{szName="»ØÌìÔÙÔìÀñ°ü",tbProp={6,1,2527,1,0,0},nCount=1,nRate=2},
-			{szName="»Æ½ğÓ¡(Ç¿)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
-			{szName="»Æ½ğÓ¡ (Èõ)",tbProp={0,3221},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
-			{szName="Ç¬À¤Ë«¾øÅå",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
-			{szName="´óÁ¦ÍèÀñ°ü",tbProp={6,1,2517,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
-			{szName="·ÉËÙÍèÀñ°ü",tbProp={6,1,2520,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
-			{szName="ÎåĞĞÆæÊ¯",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
-			{szName="É±ÊÖïµÀñ°ü",tbProp={6,1,2339,1,0,0},nCount=1,nRate=2},
-			{szName="Ç¬À¤Ôì»¯µ¤(´ó) ",tbProp={6,1,215,1,0,0},nCount=5,nRate=3},
-			{szName="×ÏÃ§Ö®±¦(Ã±×Ó)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={1,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÒÂ·ş)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={5,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÏîÁ´)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={0,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÓñÅå)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={8,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(Ğ¬)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={7,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÊÖÌ×)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={3,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÉÏ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={2,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÏÂ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={9,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(Ñü´ø)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={4,0,0,0,0,0}},
-			{szName="×ÏÃ§Ö®±¦(ÎäÆ÷)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={6,0,0,0,0,0}},
-			{szName = "§i¾­ÑéÖµ", nExp=8000000,nRate=35},
-			{szName = "§i¾­ÑéÖµ", nExp=10000000,nRate=16},
-			{szName = "§i¾­ÑéÖµ", nExp=15000000,nRate=6},
-			{szName = "§i¾­ÑéÖµ", nExp=20000000,nRate=1.37},
-			{szName = "§i¾­ÑéÖµ", nExp=50000000,nRate=0.5},
-			{szName = "§i¾­ÑéÖµ", nExp=100000000,nRate=0.5},
-			{szName = "§i¾­ÑéÖµ", nExp=200000000,nRate=0.01},
+			{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.04},
+			{szName="Kim ¤ Kim Bµi",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
+			{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
+			{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
+			{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
+			{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
+			{szName="§å Phæ Kim ¤ Khİ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
+			{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.2},
+			{szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.1},
+			{szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.02},
+			{szName="Hång bao An khang",tbProp={6,1,2105,1,0,0},nCount=1,nRate=0.1},
+			{szName="Hång bao Sum vÇy",tbProp={6,1,2104,1,0,0},nCount=1,nRate=0.1},
+			{szName="Tèng Kim Chiªu Binh LÖnh",tbProp={6,1,30083,1,0,0},nCount=2,nRate=2},
+			{szName="Hçn Nguyªn Linh Lé",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},
+			{szName="H¶i long ch©u",tbProp={6,1,2115,1,0,0},nCount=1,nRate=2},
+			{szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=2},
+			{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
+			{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
+			{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
+			{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
+			{szName="Phi tèc hoµn lÔ bao",tbProp={6,1,2520,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
+			{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
+			{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2339,1,0,0},nCount=1,nRate=2},
+			{szName="Cµn Kh«n T¹o Hãa §an (®¹i) ",tbProp={6,1,215,1,0,0},nCount=5,nRate=3},
+			{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={1,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (¸o)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={5,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={0,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (Ngäc Béi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={8,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (GiÇy)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={7,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (Bao Tay)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={3,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (NhÉn Trªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={2,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (NhÉn D­íi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={9,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={4,0,0,0,0,0}},
+			{szName="Tö M·ng Chi B¶o (Vò Khİ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={6,0,0,0,0,0}},
+			{szName = "§iÓm kinh nghiÖm", nExp=8000000,nRate=35},
+			{szName = "§iÓm kinh nghiÖm", nExp=10000000,nRate=16},
+			{szName = "§iÓm kinh nghiÖm", nExp=15000000,nRate=6},
+			{szName = "§iÓm kinh nghiÖm", nExp=20000000,nRate=1.37},
+			{szName = "§iÓm kinh nghiÖm", nExp=50000000,nRate=0.5},
+			{szName = "§iÓm kinh nghiÖm", nExp=100000000,nRate=0.5},
+			{szName = "§iÓm kinh nghiÖm", nExp=200000000,nRate=0.01},
 		},		
 	}
 	local tbUseLog = {
-		[50] = "Ê¹ÓÃg50´ÎÑ©ÈË(´ó)",
-		[100] = "Ê¹ÓÃ100´ÎÑ©ÈË(´ó)",
-		[200] = "Ê¹ÓÃ200´ÎÑ©ÈË(´ó)",
-		[300] = "Ê¹ÓÃ300´ÎÑ©ÈË(´ó)",
-		[400] = "Ê¹ÓÃ400´ÎÑ©ÈË(´ó)",
-		[500] = "Ê¹ÓÃ500´ÎÑ©ÈË(´ó)",
-		[600] = "Ê¹ÓÃ600´ÎÑ©ÈË(´ó)",
-		[700] = "Ê¹ÓÃ700´ÎÑ©ÈË(´ó)",
-		[800] = "Ê¹ÓÃ800´ÎÑ©ÈË(´ó)",	
+		[50] = "SuDung50LanNguoiTuyet(lon)",
+		[100] = "SuDung100LanNguoiTuyet(lon)",
+		[200] = "SuDung200LanNguoiTuyet(lon)",
+		[300] = "SuDung300LanNguoiTuyet(lon)",
+		[400] = "SuDung400LanNguoiTuyet(lon)",
+		[500] = "SuDung500LanNguoiTuyet(lon)",
+		[600] = "SuDung600LanNguoiTuyet(lon)",
+		[700] = "SuDung700LanNguoiTuyet(lon)",
+		[800] = "SuDung800LanNguoiTuyet(lon)",	
 		}
 	local tbExtAward = {
 		[50] = {nExp=20000000,},
@@ -272,7 +272,7 @@ function pActivity:UseXmasCake()
 		nExp=500000,
 	}
 	local tbUseLog = {
-		[1000] = "Ê¹ÓÃ1000Ê¥µ®±ı",
+		[1000] = "SuDung1000BanhGiangSinh",
 		}
 		
 	self:GiveItemAward(tbAward, tbUseLog, "UseXmasCake", TSK_XMAS_CAKE_LIMIT)	
@@ -292,7 +292,7 @@ end
 function pActivity:CheckTimeGetCompensation()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201112020900 or nNowDate >= 201112040000 then
-		Talk(1, "", "ÇëÔ­ÁÂ£¬Ä¿Ç°ÒÑ¹ıÁì½±Ê±¼ä")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
 		return nil
 	end
 	return 1
@@ -301,7 +301,7 @@ end
 function pActivity:CheckTimeGetFreeExp()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201112240000 or nNowDate >= 201112252400 then
-		Talk(1, "", "ÇëÔ­ÁÂ£¬Ä¿Ç°ÒÑ¹ıÁì½±Ê±¼ä")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
 		return nil
 	end
 	return 1
@@ -311,7 +311,7 @@ function pActivity:UseXmasPerson_Pink()
 	local nUsedCount = GetTask(2916)
 	local nCurCount = nUsedCount + 1
 	if nCurCount > 1500 then
-		Talk(1, "", "Ê¹ÓÃÎïÆ·´ïµ½ÉÏÏŞ£¬²»ÄÜÔÙÊ¹ÓÃÁË.")
+		Talk(1, "", "Sö dông vËt phÈm ®¹t giíi h¹n, kh«ng thÓ sö dông thªm.")
 		return nil
 	end
 	SetTask(2916, nCurCount)	
@@ -319,66 +319,66 @@ function pActivity:UseXmasPerson_Pink()
 		return nil
 	end
 	local tbExpAward = {
-		[1] = {szName = "§i¾­ÑéÖµ", nExp = 6e6},
+		[1] = {szName = "§iÓm kinh nghiÖm", nExp = 6e6},
 		[2] = {{szName="Ng«i Sao",tbProp={6,1,3081,1,0,0},nCount=1,nRate=40, nExpiredTime = 20120101},},
 	}
 	tbAwardTemplet:Give(tbExpAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	local tbBonusAward = {
-		[100] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 5e6}, "Ê¹ÓÃ100O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[200] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 10e6}, "Ê¹ÓÃ200O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[300] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 10e6}, "Ê¹ÓÃ300O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[400] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 20e6}, "Ê¹ÓÃ400O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[500] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 20e6}, "Ê¹ÓÃ500O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[600] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 20e6}, "Ê¹ÓÃ600O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[700] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 20e6}, "Ê¹ÓÃ700O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[800] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 30e6}, "Ê¹ÓÃ800O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[900] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 30e6}, "Ê¹ÓÃ900O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1000] = {{szName = "ÍõÕßÃæ¾ß", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "Ê¹ÓÃ1000O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1100] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 40e6}, "Ê¹ÓÃ1100O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1200] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 40e6}, "Ê¹ÓÃ1200O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1300] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 40e6}, "Ê¹ÓÃ1300O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1400] = {{szName = "§i²»µş¼Ó¾­ÑéÖµ", nExp = 50e6}, "Ê¹ÓÃ1400O¸öÊ¥µ®ÀÏÈË½±Àø"},
-		[1500] = {{szName="½ğÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1}, "Ê¹ÓÃ1500O¸öÊ¥µ®ÀÏÈË½±Àø"},
+		[100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 5e6}, "PhanThuongSuDung100OngGiaNoelHong"},
+		[200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung200OngGiaNoelHong"},
+		[300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung300OngGiaNoelHong"},
+		[400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung400OngGiaNoelHong"},
+		[500] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung500OngGiaNoelHong"},
+		[600] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung600OngGiaNoelHong"},
+		[700] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung700OngGiaNoelHong"},
+		[800] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung800OngGiaNoelHong"},
+		[900] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung900OngGiaNoelHong"},
+		[1000] = {{szName = "MÆt n¹ V­¬ng Gi¶", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "PhanThuongSuDung1000OngGiaNoelHong"},
+		[1100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1100OngGiaNoelHong"},
+		[1200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1200OngGiaNoelHong"},
+		[1300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1300OngGiaNoelHong"},
+		[1400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 50e6}, "PhanThuongSuDung1400OngGiaNoelHong"},
+		[1500] = {{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, "PhanThuongSuDung1500OngGiaNoelHong"},
 	}
 	if tbBonusAward[nCurCount] then
 		tbAwardTemplet:Give(tbBonusAward[nCurCount][1], 1 , {EVENT_LOG_TITLE, tbBonusAward[nCurCount][2]})
-		Msg2Player(format("×£ºØ¸óÏÂÊ¹ÓÃµ½%dÊ¥µ®ÀÏÈËÎïÆ·£¬»î¶¯½±Àø%s", nCurCount, tbBonusAward[nCurCount][1].szName))
+		Msg2Player(format("Chóc mõng c¸c h¹ sö dông ®Õn %d vËt phÈm ¤ng giµ Noel hång, nhËn ®­îc phÇn th­ëng %s", nCurCount, tbBonusAward[nCurCount][1].szName))
 	end
 	local tbItemAward = {
-		{szName="½ğÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.1},
-		{szName="½ğÎÚ½ğÅÆ",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
-		{szName="½ğÎÚ¿øÍ¼Æ×",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚÒÂÍ¼Æ×",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚĞ¬Í¼Æ×",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚÑü´øÍ¼Æ×",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚ»¤ÍóÍ¼Æ×",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
-		{szName="½ğÎÚÏîÁ´Í¼Æ×",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚÅåÍ¼Æ×",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
-		{szName="½ğÎÚÉÏ½äÍ¼Æ×",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
-		{szName="½ğÎÚÏÂ½äÍ¼Æ×",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
-		{szName="½ğÎÚÆ÷ĞµÍ¼Æ×",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
-		{szName="½ğ»¨Ö®±¦",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.3},
-		{szName="ôä´äÖ®±¦",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.2},
-		{szName="·çÔÆÖ®±¦",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.03},
-		{szName="Ó¢ĞÛÌû",tbProp={6,1,1604,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
-		{szName="ÌØ±ğ°×¾ÔÍè",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
-		{szName="»ı¹¦ÖúÁ¦Íè",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1.2},
-		{szName="Óñ¹Ş",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1.5},
-		{szName="·­Óğ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=259200},
-		{szName="·­Óğ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=129600},
-		{szName="ÒõÑô»îÑªµ¤",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1.2},
-		{szName="»ØÌìÔÙÔìÀñºĞ",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1.6},
-		{szName="»Æ½ğÓ¡(Ç¿»¯)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
-		{szName="»Æ½ğÓ¡ (Èõ»¯)",tbProp={0,3221},nCount=1,nRate=0.11,nQuality = 1,nExpiredTime=10080,},
-		{szName="Ç¬À¤Ë«¾øÅå",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
-		{szName="ÎåĞĞÆæÊ¯",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
-		{szName = "§i¾­ÑéÖµ", nExp=5000000,nRate=40},
-		{szName = "§i¾­ÑéÖµ", nExp=8000000,nRate=13},
-		{szName = "§i¾­ÑéÖµ", nExp=10000000,nRate=10},
-		{szName = "§i¾­ÑéÖµ", nExp=15000000,nRate=5},
-		{szName = "§i¾­ÑéÖµ", nExp=20000000,nRate=1},
-		{szName = "§i¾­ÑéÖµ", nExp=50000000,nRate=0.5},
-		{szName = "§i¾­ÑéÖµ", nExp=100000000,nRate=0.01},
+		{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.1},
+		{szName="Kim ¤ Kim Bµi",tbProp={6,1,3001,1,0,0},nCount=1,nRate=0.3},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=0.2},
+		{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=0.1},
+		{szName="§å Phæ Kim ¤ Khİ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=0.05},
+		{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=0.3},
+		{szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=0.2},
+		{szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=0.03},
+		{szName="Anh Hïng ThiÕp",tbProp={6,1,1604,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+		{szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+		{szName="Kİch C«ng Trî Lùc Hoµn",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1.2},
+		{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=1.5},
+		{szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=259200},
+		{szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1,nRate=0.1,nExpiredTime=129600},
+		{szName="¢m D­¬ng Ho¹t HuyÕt §¬n",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1.2},
+		{szName="Håi thiªn t¸i t¹o lÔ bao",tbProp={6,1,2527,1,0,0},nCount=1,nRate=1.6},
+		{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=10080,},
+		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.11,nQuality = 1,nExpiredTime=10080,},
+		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
+		{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
+		{szName = "§iÓm kinh nghiÖm", nExp=5000000,nRate=40},
+		{szName = "§iÓm kinh nghiÖm", nExp=8000000,nRate=13},
+		{szName = "§iÓm kinh nghiÖm", nExp=10000000,nRate=10},
+		{szName = "§iÓm kinh nghiÖm", nExp=15000000,nRate=5},
+		{szName = "§iÓm kinh nghiÖm", nExp=20000000,nRate=1},
+		{szName = "§iÓm kinh nghiÖm", nExp=50000000,nRate=0.5},
+		{szName = "§iÓm kinh nghiÖm", nExp=100000000,nRate=0.01},
 	}
 	tbAwardTemplet:Give(tbItemAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	

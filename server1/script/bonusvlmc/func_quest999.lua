@@ -14,7 +14,7 @@ function FinishQuest()
 	 VLMC:CompleteTask()
 	 SetTask(VLMC_Task_IsFinishQuest, 1)-- settask ÒÑÍê³ÉÈÎÎñ
 	 tl_addPlayerExp(20000000); -- add 20 tr EXP co cong don
-	 WriteLog(date("%Y%m%d %H%M%S").."\t".."VLMC"..GetAccount().."\t"..GetName().."\t".."Íê³ÉÈÎÎñÊÕ20000000»ı·Ö")
+	 WriteLog(date("%Y%m%d %H%M%S").."\t".."VLMC"..GetAccount().."\t"..GetName().."\t".."hoµn thµnh chuçi nhiÖm vô nhËn nhËn  20000000 ®iÓm kinh nghiÖm")
 end
 
 function ReviewQuest()

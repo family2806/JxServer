@@ -8,10 +8,10 @@ Include("\\script\\global\\¸÷ÅÉ½ÓÒıµÜ×Ó\\Çá¹¦_ÎäÊ¦Ä£°å.lua")
 function main(sel)
 	UTask_world20 = GetTask(44)		-- »¢×Ó°İÊ¦ÈÎÎñ
 	if (UTask_world20 == 10) then			-- »¢×Ó°İÊ¦ÈÎÎñ½øĞĞÖĞ
-		Talk(1,"","Å¶£¿»¢×ÓÏëÑ§Îä£¿ÕâĞ¡×ÓÆ½Ê±Í¦°®ÄÖµÄ£¬¿´ÆğÀ´×ÊÖÊ»¹²»´í£¬ºÃ£¬»ØÈ¥¾Í¸æËßËûµù£¬ÎÒÊÕ»¢×ÓÕâ¸öÍ½µÜÁË£¬ÏçÀïÏçÇ×µÄ£¬Ñ§·Ñ¾Í²»ÓÃÁË£¬¹ıÄê¹ı½ÚËÍ´®À°ÈâµÃÁË!")
+		Talk(1,"","ña? Hæ Tö muèn häc vâ µ? §øa trÎ nµy ngµy th­êng rÊt hiÕu ®éng, xem ra t­ chÊt kh«ng tåi. §­îc, vÒ nãi víi cha nã, ta thu Hæ Tö lµm ®å ®Ö. §Òu lµ ng­êi trong lµng c¶, ®õng tİnh tíi chuyÖn tiÒn nong! Mçi dŞp lÔ tÕt mang lªn x©u thŞt sÊy lµ ®­îc råi!")
 		SetTask(44, 20)
-		AddNote("ÎäÊ¦Í¬ÒâÃâ·Ñ½Ì»¢×ÓÎä¹¦£¬¿ì»ØÈ¥¸æËß»¢×ÓµùÕâ¸öÏûÏ¢")
-		Msg2Player("ÎäÊ¦Í¬ÒâÃâ·Ñ½Ì»¢×ÓÎä¹¦£¬¿ì»ØÈ¥¸æËß»¢×ÓµùÕâ¸öÏûÏ¢")
+		AddNote("Vâ s­ ®ång ı d¹y vâ miÔn phİ cho Hæ tö, mau vÒ b¸o tin nµy cho cha cña Hæ tö biÕt ")
+		Msg2Player("Vâ s­ ®ång ı d¹y vâ miÔn phİ cho Hæ tö, mau vÒ b¸o tin nµy cho cha cña Hæ tö biÕt ")
 	else
 		learn()
 	end

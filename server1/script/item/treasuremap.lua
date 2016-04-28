@@ -26,7 +26,7 @@ function main(nIndex)
 local nRow = GetItemMagicLevel(nIndex, 1);
 
 	if nRow==0 or nRow==nil then
-		Msg2Player("<color=Orange>ÕâÕÅ²Ø±¦Í¼ÒÑ¾­ÆÆ¾É²»¿°ÁË£¬Ã»ÈÎºÎÓÃÍ¾ÁË¡£<color>");
+		Msg2Player("<color=Orange>TÊm b¶n ®å kho b¸u nµy ®· cò r¸ch, kh«ng thÓ sö dông ®­îc n÷a.<color>");
 		return 1;
 	end;
 
@@ -39,13 +39,13 @@ local nResult = 0;
 local picLink = "";
 
 	if nMapState==0 then
-		Msg2Player("<color=Orange>Äã¶Ô×Å²Ø±¦Í¼ÔÚÕâÀï¶«ÍÚÎ÷Ôä£¬Ò»ÎŞËù»ñ¡­¡­»¹ÊÇÈ¥ÁúÈª´åÕÒ¸µÀ×ÊéÖ¸½ÌÖ¸½Ì°É£¡<color>");
+		Msg2Player("<color=Orange>B¹n dùa theo tÊm b¶n ®å kho b¸u nµy t×m kiÕm kh¾p vÉn kh«ng thu ho¹ch ®­îc g×, khuyªn b¹n nªn ®Õn Long TuyÒn Th«n t×m Phã L«i Th­ chØ gi¸o ®i!<color>");
 		return 1;
 	else
-		picLink = "<link=image:"..picPath..">²Ø±¦Í¼µÄĞÅÏ¢£º<link>»¨ÁË´ó°Ñ´ó°ÑµÄÒø×Ó´òµãºó£¬ÄãÖÕÓÚÔÚ¸µÀ×ÊéµÄÖ¸µãÏÂÒÀÏ¡ÔÚÕâÕÅ²ĞÈ±²»È«µÄ²Ø±¦Í¼ÖĞ±æÈÏ³öÁË±¦²ØµÄ´óÖÂÎ»ÖÃ¡£Æ¾×ÅÄãÒÔÇ°·á¸»µÄÔÄÀúºÍÃôÈñµÄ¹Û²ìÁ¦£¬Äã·¢ÏÖÕâËÆºõÊÇ<color=yellow>"..strInfo.."<color>¡£";
+		picLink = "<link=image:"..picPath..">Th«ng tin vÒ Tµng B¶o §å:<link> Sau khi bá mét sè tiÒn lín, cuèi cïng b¹n còng ®· ®­îc Phã L«i Th­ chØ coh vŞ trİ kho b¸u<color=yellow>"..strInfo.."<color>.";
 		Describe(picLink, 2,
-				 "¿ªÊ¼ÍÚ¾ò/#useTreasureMap("..nIndex..")",
-				 "¹Ø±Õ/OnExit");
+				 "b¾t ®Çu khai quËt/#useTreasureMap("..nIndex..")",
+				 "§ãng/OnExit");
 		return 1;
 	end;
 
@@ -68,15 +68,15 @@ local nDelResult = 0;
 			
 			return 1;
 		else
-			Msg2Player("<color=Orange>Äã¶Ô×Å²Ø±¦Í¼ÔÚÕâÀï¶«ÍÚÎ÷Ôä£¬Ò»ÎŞËù»ñ¡­¡­<color>");
+			Msg2Player("<color=Orange>Nh×n tÊm b¶n ®å kho b¸u ®µo qua ®µo l¹i ë ®©y vÉn kh«ng t×m ®­îc g×…...<color>");
 			return 1;	
 		end;
 		
 	elseif nResult==0 then
-		Msg2Player("<color=Orange>Äã¶Ô×Å²Ø±¦Í¼ÔÚÕâÀï¶«ÍÚÎ÷Ôä£¬Ò»ÎŞËù»ñ¡­¡­<color>");
+		Msg2Player("<color=Orange>Nh×n tÊm b¶n ®å kho b¸u ®µo qua ®µo l¹i ë ®©y vÉn kh«ng t×m ®­îc g×…...<color>");
 		return 1;
 	elseif nResult==2 then
-		Msg2Player("<color=yellow>Äã¶Ô²Ø±¦Í¼ËùÃè»æµÄ¶«Î÷Ò»Í·ÎíË®£¬ÕâÍ¼ÊÇÕæÊÇ¼Ù»¹ÊÇÈ¥<color><color=green>ÁúÈª´å<color><color=yellow>ÕÒ<color><color=green>¸µÀ×Êé<color><color=yellow>¼ø¶¨Ò»ÏÂ°É£¡<color>");
+		Msg2Player("Nh×n <color=yellow>h×nh vÏ<color> trªn <color=green>b¶n ®å kho b¸u<color> d­êng nh­ kh«ng hiÓu g×, cã thÓ ®Õn <color=yellow>Long TuyÒn Th«n<color> <color=green>t×m<color> <color=yellow>Phã L«i Th­<color> gi¸m ®Şnh xem sao!");
 		return 1;
 	end;
 		

@@ -61,13 +61,13 @@ arraycitytoglobalvalue =
 --³ÇÊĞË÷ÒıºÍ³ÇÊĞÃû³Æ¶ÔÓ¦±í
 arraycityindextoname =
 {
-	"·ïÏè",
-	"³É¶¼",
-	"´óÀí",
-	"ãê¾©",
-	"ÏåÑô",
-	"ÑïÖİ",
-	"ÁÙ°²",
+	" ph­îng t­êng ",
+	" thµnh ®« ",
+	" §¹i Lı ",
+	" biÖn kinh ",
+	" t­¬ng d­¬ng ",
+	" D­¬ng Ch©u ",
+	" L©m an ",
 };
 
 --ÀÛ¼Æ´óÓÚÄ³ÖµÊ±´æÅÌ

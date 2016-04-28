@@ -5,7 +5,7 @@ Include("\\script\\global\\login_head.lua")
 AnnounceNews = {
 	nStartDate = 201205030000,
 	nEndDate = 201205312400,	
-	strMsg = "<color=green>Ä¿Ç°ÕıÔÚ½øĞĞÎåÔÂÊÂ¼ş»î¶¯£¬ÏêÇéÇë½øÈëÖ÷Ò³volam.zing.vn¿´<color>", 
+	strMsg = "<color=green>HiÖn t¹i ®ang diÔn ra c¸c ho¹t ®éng cña event th¸ng 5, mäi chi tiÕt xem t¹i trang chñ volam.zing.vn<color>", 
 }
 
 function AnnounceNews:IsActive()

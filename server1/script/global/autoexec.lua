@@ -417,7 +417,7 @@ function main()
 			add_dialognpc(tab_zingplay_npc);
 		end
 		if(SubWorldID2Idx(11) >= 0) then
-			local npcidx = AddNpc(245, 1, SubWorldID2Idx(11), 390 * 8 * 32, 317 * 16 * 32, 1, "»ÆÁ¬ÀÑÀÑ");
+			local npcidx = AddNpc(245, 1, SubWorldID2Idx(11), 390 * 8 * 32, 317 * 16 * 32, 1, "Hoµng Liªn Bµ Ngo¹i");
 			SetNpcScript(npcidx, "\\script\\event\\jiefang_jieri\\200904\\denggao\\npc.lua");
 		end
 		add_dialognpc(au06_tab_kidnpc);

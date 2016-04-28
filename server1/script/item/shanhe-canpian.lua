@@ -7,11 +7,11 @@ function main(nItemIdx)
 		-- ¸øÍæ¼ÒÔö¼Ó100¸öÉ½ºÓÉçğ¢Í¼²ĞÆ¬
 		nWorldMaps = nWorldMaps + 100;
 		nt_setTask(1027,nWorldMaps);
-	Msg2Player("ÄúµÃµ½100¸öÉ½ºÓÉçğ¢Í¼²ĞÆ¬£¡ÄúÏÖÔÚ¹²ÓĞ "..nWorldMaps.." ÕÅÉçğ¢Í¼²ĞÆ¬¡£");
+	Msg2Player("B¹n nhËn ®­îc 100 m¶nh b¶n ®å S¬n Hµ X· T¾c! HiÖn t¹i b¹n cã tæng céng"..nWorldMaps.." m¶nh b¶n ®å S¬n Hµ X· T¾c.");
 	elseif (detail == 2514) then
 		-- ¸øÍæ¼ÒÔö¼Ó1000¸öÉ½ºÓÉçğ¢Í¼²ĞÆ¬
 		nWorldMaps = nWorldMaps + 1000;
 		nt_setTask(1027,nWorldMaps);
-	Msg2Player("ÄúµÃµ½1000¸öÉ½ºÓÉçğ¢Í¼²ĞÆ¬£¡ÄúÏÖÔÚ¹²ÓĞ "..nWorldMaps.." ÕÅÉçğ¢Í¼²ĞÆ¬¡£");
+	Msg2Player("§¹i hiÖp nhËn ®­îc 1000 m¶nh b¶n ®å s¬n hµ x· t¾c! Tæng céng cã "..nWorldMaps.." m¶nh b¶n ®å S¬n Hµ X· T¾c.");
 	end
 end

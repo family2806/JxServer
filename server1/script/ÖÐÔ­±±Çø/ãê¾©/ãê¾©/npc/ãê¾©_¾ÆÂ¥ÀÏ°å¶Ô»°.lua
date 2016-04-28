@@ -4,9 +4,9 @@
 function main(sel)
 	UTask_sl = GetTask(7)
 	if (UTask_sl == 50*256+20) and (HaveItem(123) == 0) then		-- 50¼¶ÈÎÎñ½øĞĞÖĞ
-		Say("µÚÒ»ÉÕ¼¦¾Æ£¬¾©³ÇµÚÒ»¾Æ£¬Ö»Òª500Á½!",2,"Âò/buy","²»Âò /no")
+		Say("§Ö nhÊt Thiªu Kª töu ®©y! Kinh thµnh ®Ö nhÊt töu ®©y! ChØ cã 500 l­îng th«i!",2,"Mua/buy","Kh«ng mµng /no")
 	else
-		Talk(1,"","¾ÆÂ¥ÀÏ°å£º¿Í¹ÙÒªºÈ¾ÆÃ´£¿ÒªºÈ¾Æ¿ÉÒÔ£¬²»¹ıÎÒµÃÊÂÏÈÉùÃ÷£¬ÎÒÕâ¶ù¿ªµÄÊÇ¾Æ¹İ£¬Ö»¹ÜºÈ¾Æ£¬ÄªÂÛ¹úÊÂ£¬ÒªÂÛ¹úÊÂÇëÁíÕÒ±ğµÄµØ¶ù£¬Ê¡µÃ¸øÎÒÕÒÂé·³£¡")
+		Talk(1,"","Kh¸ch quan muèn uèng r­îu ­? Uèng r­îu th× ®­îc, nh­ng ta nãi tr­íc, ®Õn ®©y chØ ®­îc uèng r­îu, kh«ng nãi chuyÖn quèc sù. NÕu nh­ muèn nãi chuyÖn quèc sù th× xin mêi ®Õn n¬i kh¸c! ")
 	end
 end;
 
@@ -14,10 +14,10 @@ function buy()
 	if (GetCash() >= 500) then
 		Pay(500)
 		AddEventItem(123)
-		Msg2Player("ÔÚ¾ÆÂ¥Âòµ½Ò»Ö»ÉÕ¼¦ ")
-		AddNote("ÔÚ¾ÆÂ¥Âòµ½Ò»Ö»ÉÕ¼¦ ")
+		Msg2Player("Mua ®­îc mét con gµ n­íng ë töu lÇu ")
+		AddNote("Mua ®­îc mét con gµ n­íng ë töu lÇu ")
 	else
-		Talk(1,"","¿Í¹Ù£¬ÁôÏÂ¼¦¡£Çë»Ø¼Ò´øÇ®À´Å¶®·! ")
+		Talk(1,"","Kh¸ch quan! Göi con gµ nµy ë ®©y! Xin h·y vÒ mang tiÒn ®Õn ®·! ")
 	end
 end
 

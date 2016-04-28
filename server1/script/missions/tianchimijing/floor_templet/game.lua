@@ -8,9 +8,9 @@ Include("\\script\\item\\heart_head.lua")
 
 Game = {}
 
-Game.szMapType = "Ìì³ØÃØ¾³µÚN²ã" --¸Ä±äµØÍ¼±íÊ¾
+Game.szMapType = "Thien Tr× Mª C¶nh tÇng thø N" --¸Ä±äµØÍ¼±íÊ¾
 
-Game.szMapType = "Ìì³ØÃØ¾³µÚN²ã" --¸Ä±äµØÍ¼±íÊ¾
+Game.szMapType = "Thien Tr× Mª C¶nh tÇng thø N" --¸Ä±äµØÍ¼±íÊ¾
 Game.tbForbitItemType = --ÖØÔØ Î¥½ûµÀ¾ß
 {
 	"PK",
@@ -22,18 +22,18 @@ Game.Player = {
 
 Game.tbNpcTypeList = --npcµÄÀàĞÍ
 {
-	["¹ÖÎïÃû³Æ"] = 
+	["Tªn qu¸i vËt"] = 
 	{
 		nNpcId = 1234,
-		szName = "¹ÖÎïÃû³Æ",
+		szName = "Tªn qu¸i vËt",
 		nLevel = 90,
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szScriptPath = "\\script\\missions\\tianchimijing\\npc_script.lua",--¸ù¾İÓÎÏ·ÄÚÈİ¶¨ÖÆµÄÄ³¸önpc½Å±¾,Ö÷ÒªÕë¶Ô¶Ô»°npc
 	},
-	["¹ÖÎïÃû³Æ 2"] = 
+	["Tªn qu¸i vËt 2"] = 
 	{--ÁíÍâÒ»¸ö¹ÖÎï
 		nNpcId = 2354,
-		szName = "ÁíÒ»¸ö¹ÖÎïµÄÃû×Ö",
+		szName = "Tªn 1 qu¸i vËt kh¸c",
 		nLevel = 90,
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szScriptPath = "\\script\\missions\\tianchimijing\\npc_script.lua",--¸ù¾İÓÎÏ·ÄÚÈİ¶¨ÖÆµÄÄ³¸önpc½Å±¾
@@ -41,7 +41,7 @@ Game.tbNpcTypeList = --npcµÄÀàĞÍ
 }
 Game.tbTrapList = 
 {
-	["Trap µãÃû£¬ÓÃÓÚ³ÌĞòÔ±·Ö±ğ×Ô¼ºµÄ½ÇÉ«"] =
+	["Trap ®iÓm danh, dïng cho c¸c lËp tr×nh viªn ®Ó ph©n biÖt vai trß cña m×nh"] =
 	{
 		
 		szPosPath = "",--TrapµãµÄ×ø±êÎÄ¼ş
@@ -204,15 +204,15 @@ function Game:Start()
 	
 	self:RegAll()
 	self:AddAllTrap()
-	self:AddANpc("¹Ö 1", "\\setting\\xxx.xx")
+	self:AddANpc("Qu¸i 1", "\\setting\\xxx.xx")
 end
 
 function Game:WritePlayerLog(nFloor, szMsg)
-	WriteLog(format("[%s] [%dt²ã]\t%s\tAccount:%s\tName:%s\t%s","Ìì³ØÃØ¾³", nFloor,GetLocalDate("%Y-%m-%d %H:%M"), GetAccount(), GetName(), szMsg))
+	WriteLog(format("[%s] [%dtÇng]\t%s\tAccount:%s\tName:%s\t%s","Thiªn Tr× MËt C¶nh", nFloor,GetLocalDate("%Y-%m-%d %H:%M"), GetAccount(), GetName(), szMsg))
 end
 
 function Game:WriteLog(nFloor, szMsg)
-	WriteLog(format("[%s][%dt²ã]\t%s\t\t\t%s.","Ìì³ØÃØ¾³", nFloor,GetLocalDate("%Y-%m-%d %H:%M"), szMsg))
+	WriteLog(format("[%s][%dtÇng]\t%s\t\t\t%s.","Thiªn Tr× MËt C¶nh", nFloor,GetLocalDate("%Y-%m-%d %H:%M"), szMsg))
 end
 
 --Game:AssociateMap(20)

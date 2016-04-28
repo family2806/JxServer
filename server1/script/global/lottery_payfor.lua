@@ -13,13 +13,13 @@ nMaxGoldLottery = 100000;		--Ã¿Ì¨GameServerÉÏ¿É·¢³öµÄ×î¶à»Æ½ğ²ÊÆ±Êı
 
 function onPayTicket()
 if (IsCharged() ~= 1 ) then
-	 Say("¶Ô²»Æğ£¬ÄúÉĞÎ´³äÖµ£¬ËùÒÔÎŞ·¨²Î¼ÓÑÅµäÊ¢»á²ÊÆ±»î¶¯¡£", 0)
+	 Say("ThËt xin lçi , ngµi ch­a sung trŞ gi¸ , cho nªn kh«ng c¸ch nµo tham gia nh· ®iÓn thŞnh héi vĞ sè ho¹t ®éng . ", 0)
 	return
 end
 nCount = GetPayTicketCount();
 
 if (nCount == 0 ) then
-	Say("¶Ô²»Æğ£¬ÏÖÔÚÃ»µ½¶Ò»»²ÊÆ±µÄÊ±¼ä£¬ÇëÄúÔÚ±±¾©Ê±¼äÔç³¿9µãµ½µ±ÈÕÍíÉÏ22µãÀ´¶Ò»»°É£¬Ğ»Ğ»¡£", 0) 
+	Say("ThËt xin lçi , b©y giê kh«ng tíi ®æi vĞ sè ®İch thêi gian , xin/mêi ngµi ë B¾c Kinh thêi gian s¸ng sím 9 ®iÓm ®Õn ngµy ®ã buæi tèi 22 ®iÓm tíi ®æi ®i , c¸m ¬n . ", 0) 
 	return
 end;
 
@@ -29,8 +29,8 @@ for i = 1, nCount + 1 do
 	Tab[i] = GetQuestionTip(GetPayTicket(i)).."/OPAsk";
 end;
 
-Tab[nCount + 1] = "²»¶Ò½±ÁË/Cancel";
-Say("ÄúÒª¶ÒÄÇÖÖÄÄÖÖ½±?", nCount + 1, Tab)
+Tab[nCount + 1] = "Kh«ng/Cancel";
+Say("Muèn ®æi g× ?", nCount + 1, Tab)
 end;
 
 function OPAsk(nSel)
@@ -39,14 +39,14 @@ function OPAsk(nSel)
 		nAnswer = GetQAnswer(nQuestion)
 		if (nAnswer > 0) then 
 			if (nQuestion ~= 1000) then 
-				str = format("¾º²Â:%s£¬½á¹û:%s ,½±½ğ:%d¡£ÄúÒª¶Ò½±Âğ?", GetQuestion(nQuestion), GetChoose(nQuestion, nAnswer), nBonus )
+				str = format("C¹nh ®o¸n :%s , kÕt qu¶ :%s , tiÒn th­ëng :%d . ngµi muèn ®æi t­ëng sao ?", GetQuestion(nQuestion), GetChoose(nQuestion, nAnswer), nBonus )
 			else
 				lGold = GetByte(nAnswer, 1);
 				lYing = GetByte(nAnswer,2);
 				lTong = GetByte(nAnswer,3);
-				str = format("¾º²Â:%s, ½á¹û:½ğÅÆ%d¿é¡¢ÒøÅÆ%d¿é¡¢Í­ÅÆ%d¿é, ½±½ğ:%d¡£ÄãÒª¶Ò½±Âğ?", GetQuestion(nQuestionI), lGold, lYing, lTong,nBonus)
+				str = format("C¹nh ®o¸n :%s, kÕt qu¶ : kim bµi %d khèi  ng©n bµi %d khèi  ®ång bµi %d khèi , tiÒn th­ëng :%d . ng­¬i muèn ®æi t­ëng sao ?", GetQuestion(nQuestionI), lGold, lYing, lTong,nBonus)
 			end
-			Say(str, 2, "¶Ò½±/OPOnPayFor", "²»¶Ò½±/Cancel");
+			Say(str, 2, "§æi t­ëng /OPOnPayFor", "Kh«ng ®æi t­ëng /Cancel");
 			SetTaskTemp(TEMP_QID, nQuestion)
 		end
 	end
@@ -58,14 +58,14 @@ function OPOnPayFor()
 	nTotal, nRight, nBonus = CheckTicket(75, nQuestion);
 	
 	if (nTotal == 0) then
-		Say("¶Ô²»Æğ£¬Äú¹ºÂòµÄ²ÊÆ±Ã»ÓĞ´ğ¶Ô£¬ÔÙ½ÓÔÙÀ÷£¬²»Òª·ÅÆúÅ¶£¬Ò²Ğí´ó½±¾ÍÔÚµÈ×ÅÄú£¬»Æ½ğ×°±¸ÄØ£¡", 0)
+		Say("ThËt xin lçi , ngµi mua vĞ sè kh«ng cã ®¸p ®èi víi , ®ãn thªm n÷a lÖ , kh«ng muèn bu«ng tha cho nga , cã lÏ ®¹i t­ëng ®ang ë chê ngµi , hoµng kim trang bŞ ®©y ", 0)
 	else
 		nTotalBonus = nBonus * nRight
 		local str = "";
 		if (nQuestion ~= 1000) then 
-			str = format("ÄúÒ»¹²ÓĞ%dÕÅÕâÀà½±Æ±,ÆäÖĞÖĞ½±µÄÓĞ%dÕÅ,µÃµ½µÄ×Ü½±½ğÎª%d,¹§Ï²Äú!Èç¹ûÄúÖĞ½±,ÎÒÃÇ»¹½«ÔùËÍ¸øÄú»Æ½ğ²ÊÆ±,Æ¾´Ë²ÊÆ±¿ÉÄÜ»á»ñµÃÒ»¼ş»Æ½ğ×°±¸Å¶¡£»Æ½ğ²ÊÆ±µÄ¿ª½±ÈÕÆÚ¾ÍÔÚ½ñÍíµÄ22µã30µ½24µã¡£", nTotal,nRight, nTotalBonus);
+			str = format("Ngµi tæng céng cã %d tê c¸i nµy lo¹i t­ëng phiÕu , trong ®ã trung t­ëng ®İch cã %d tê , lÊy ®­îc tæng tiÒn th­ëng v× %d, chóc mõng ngµi ! nÕu nh­ ngµi trung t­ëng , chóng ta cßn nghÜ tÆng cho ngµi hoµng kim vĞ sè , b»ng nµy vĞ sè cã thÓ sÏ ®¹t ®­îc mét mãn hoµng kim trang bŞ nga . hoµng kim vĞ sè ®İch khai t­ëng nhËt kú ®ang ë tèi nay ®İch 22 ®iÓm 30 ®Õn 24 ®iÓm . ", nTotal,nRight, nTotalBonus);
 		else
-			str = format("ÄúÒ»¹²ÓĞ%dÕÅÕâÀà½±Æ±,ÆäÖĞÖĞ½±µÄÓĞ%dÕÅ,µÃµ½µÄ×Ü½±½ğÎª%d,¹§Ï²Äú!Èç¹ûÄúÖĞ½±,ÎÒÃÇ»¹½«ÔùËÍ¸øÄú»Æ½ğ²ÊÆ±,Æ¾´Ë²ÊÆ±¿ÉÄÜ»á»ñµÃÒ»¼ş±¾´ÎÑÅµäÊ¢»áµÄ»Æ½ğ×°±¸´ó½±£¡£¡¿ª½±ÈÕÆÚÔÚ9ÔÂ1ÈÕ¡¢9ÔÂ2ÈÕÍí22µã30µ½24µã¡£", nTotal,nRight, nTotalBonus);
+			str = format("Ngµi tæng céng cã %d tê c¸i nµy lo¹i t­ëng phiÕu , trong ®ã trung t­ëng ®İch cã %d tê , lÊy ®­îc tæng tiÒn th­ëng v× %d, chóc mõng ngµi ! nÕu nh­ ngµi trung t­ëng , chóng ta cßn nghÜ tÆng cho ngµi hoµng kim vĞ sè , b»ng nµy vĞ sè cã thÓ sÏ ®¹t ®­îc mét mãn lÇn nµy nh· ®iÓn thŞnh héi ®İch hoµng kim trang bŞ ®¹i t­ëng  khai t­ëng nhËt kú ë 9 th¸ng 1 ngµy 9 th¸ng 2 ngµy v·n 22 ®iÓm 30 ®Õn 24 ®iÓm . ", nTotal,nRight, nTotalBonus);
 		end
 		
 		local logstr = format("[Lottery] Acc:%s Role:%s Q:%d QSum:%d QWin:%d Bonus:%d", GetAccount(), GetName(), nQuestion, nTotal, nRight, nTotalBonus )
@@ -86,7 +86,7 @@ function OPOnPayFor()
 			SetSpecItemParam(item, 5, nQuestion)
 			if (nQuestion == 1000) then 
 				SetSpecItemParam(item, 5, 1000)
-				UpdateSDBRecord("GoldLottery0901", LotteryId, LotteryTime, 0) --»Æ½ğ´ó½±¼ÇÂ¼Îª9ÔÂ1ÈÕµÄ²ÊÆ±
+				UpdateSDBRecord("GoldLottery0901", LotteryId, LotteryTime, 0) --»Æ½ğ´ó½±¼ÇÂ¼Îª9 th¸ng 1ÈÕµÄ²ÊÆ±
 			else
 				UpdateSDBRecord("GoldLottery"..date("%m%d"),LotteryId, LotteryTime, 0)
 			end
@@ -102,7 +102,7 @@ end;
 function onPayforGoldLottery()
 	local PayTab={};
 	if (tonumber(date("%m%d")) > 831 ) then 
-		Say("¶Ô²»Æğ£¬±¾´ÎÑÅµäÊ¢»áµÄÆÕÍ¨»Æ½ğ²ÊÆ±µÄ¶Ò½±»î¶¯ÒÑ¾­½áÊøÁË¡£",0)
+		Say("ThËt xin lçi , lÇn nµy nh· ®iÓn thŞnh héi ®İch b×nh th­êng hoµng kim vĞ sè ®İch ®æi t­ëng ho¹t ®éng ®· kÕt thóc . ",0)
 		return
 	end
 	
@@ -115,11 +115,11 @@ function onPayforGoldLottery()
 	for i = 1, nIntervalDay do 
 		nMonth = floor((FIRSTDAY + nIntervalDay - i) / 100)
 		nDay = mod(FIRSTDAY + nIntervalDay - i , 100)
-		PayTab[i] = nMonth.."ÔÂ"..nDay.."ÈÕ»Æ½ğ²ÊÆ±/doPayforGold"
+		PayTab[i] = nMonth.." th¸ng "..nDay.." ngµy hoµng kim vĞ sè /doPayforGold"
 	end;
 	PayTab[nIntervalDay + 1] = "²»ÓÃ¶Ò½±ÁË/Cancel";
-	Say("ÄãÒª¶Ò»»ÄÄÒ»ÌìµÄ»Æ½ğ²ÊÆ±´ó½±£¿", getn(PayTab), PayTab);
---	Say("±¾ÈÕÖĞ½±µÄ»Æ½ğ²ÊÆ±ºÅÎª["..GetGlbValue(GOLD_TIMESTEMP).."-"..GetGlbValue(GOLD_SERIES).."],»ñ½±Õß¿ÉµÃµ½Ëæ»úµÃµ½»Æ½ğ×°±¸Ò»¼ş£¡ÄãÒª¶Ò½±Âğ£¿", 2, "ºÃµÄ/doPayforGold", "²»ÓÃÁË/Cancel")
+	Say("Ng­¬i muèn ®æi mét ngµy kia ®İch hoµng kim vĞ sè ®¹i t­ëng ? ", getn(PayTab), PayTab);
+--	Say("Vèn ngµy trung t­ëng ®İch hoµng kim vĞ sè sè v× ["..GetGlbValue(GOLD_TIMESTEMP).."-"..GetGlbValue(GOLD_SERIES).."], lÊy ®­îc t­ëng ng­êi cã thÓ ph¶i ®Õn ngÉu nhiªn lÊy ®­îc hoµng kim trang bŞ mét mãn  ng­¬i muèn ®æi t­ëng sao ? ", 2, "Tèt /doPayforGold", "Kh«ng cÇn /Cancel")
 end
 
 function doPayforGold(nDay)
@@ -141,26 +141,26 @@ function doPayforGold(nDay)
 	dayGOLD_TIMESTEMP = GOLD_TIMESTEMP + nSel * 2;
 
 	if ( GetGlbValue(dayGOLD_TIMESTEMP) == 0 ) then 
-		Say("¶Ô²»Æğ£¬Ä¿Ç°¸ÃÈÕÆÚµÄ»Æ½ğ²ÊÆ±¿ÉÄÜÉĞÎ´¿ª³ö£¬ÇëÉÔºóÔÙ¶Ò½±£¬Ğ»Ğ»¡£", 0)
+		Say("ThËt xin lçi , tr­íc m¾t nªn nhËt kú ®İch hoµng kim vĞ sè cã thÓ ch­a l¸i/më ra , xin sau n÷a ®æi t­ëng , c¸m ¬n . ", 0)
 		return
 	end;
 
 	 nItem = FindSpecItemParam2(1, 76, GetGlbValue(dayGOLD_SERIES), GetGlbValue(dayGOLD_TIMESTEMP));
 	if (nItem > 0) then
 		if (RemoveItemByIndex(nItem) > 0) then 
-			Say("¹§Ï²Äã£¬ÄãµÄ»Æ½ğ²ÊÆ±ÖĞ½±ÁË£¬»ñµÃ»Æ½ğ×°±¸Ò»¼ş£¡", 0)
+			Say("Chóc mõng ng­¬i , ng­¬i hoµng kim vĞ sè trung t­ëng liÔu , ®¹t ®­îc hoµng kim trang bŞ mét mãn ", 0)
 			
 			nMonth = floor((FIRSTDAY + nSel)/100);
 			nDay = mod( (FIRSTDAY + nSel) , 100)
 
 			AddGoldItem(0, random(159,167))
-			Msg2Player("¹§Ï²Äã»ñµÃ»Æ½ğ×°±¸Ò»¼ş£¡")
+			Msg2Player("Chóc mõng ng­¬i ®¹t ®­îc hoµng kim trang bŞ mét mãn ")
 			WriteLog(GetAccount()..","..GetName().."ÖĞÁË"..FIRSTDAY+nSel.."»Æ½ğ²ÊÆ±´ó½±£¬»ñµÃ»Æ½ğ×°±¸Ò»¼ş¡£²ÊÆ±ID"..GetGlbValue(dayGOLD_TIMESTEMP).."-".. GetGlbValue(dayGOLD_SERIES))
-			msg = "¹§Ï²:Íæ¼Ò"..GetName().." ÖĞÁË"..nMonth.."ÔÂ"..nDay.."ÈÕµÄ»Æ½ğ²ÊÆ±´ó½±£¬»ñµÃ»Æ½ğ×°±¸Ò»¼ş£¡";
+			msg = " chóc mõng : nhµ ch¬i "..GetName().." trung liÔu "..nMonth.." th¸ng "..nDay.." ngµy ®İch hoµng kim vĞ sè ®¹i t­ëng , ®¹t ®­îc hoµng kim trang bŞ mét mãn ";
 			AddGlobalCountNews(msg, 1);
 		end
 	else
-		Say("¶Ô²»Æğ£¬ÖĞ½±ºÅÎª"..GetGlbValue(dayGOLD_TIMESTEMP).."-"..GetGlbValue(dayGOLD_SERIES).."£¬ÄãÉíÉÏ¿ª½±µÄ»Æ½ğ²ÊÆ±ÖĞÃ»ÓĞÆ¥ÅäµÄÖĞ½±ºÅÂë¡£", 0)
+		Say("ThËt xin lçi , trung t­ëng sè v× "..GetGlbValue(dayGOLD_TIMESTEMP).."-"..GetGlbValue(dayGOLD_SERIES).." , trªn ng­êi ng­¬i khai t­ëng ®İch hoµng kim vĞ sè trung kh«ng cã thÊt xøng ®İch trung t­ëng d·y sè . ", 0)
 	end
 end;
 
@@ -174,7 +174,7 @@ function doPayforGreateGold()
 	dayGOLD_TIMESTEMP = GOLD_TIMESTEMP + nIntervalDay * 2;
 
 	if ( GetGlbValue(dayGOLD_TIMESTEMP) == 0 ) then 
-		Say("¶Ô²»Æğ£¬Ä¿Ç°ÑÅµäÊ¢»á¾º²ÂÖĞ¹ú½±ÅÆÊıµÄ»Æ½ğ²ÊÆ±ÖĞ½±ºÅ¿ÉÄÜÉĞÎ´¿ª³ö£¬ÇëÉÔºóÔÙ¶Ò½±£¬Ğ»Ğ»¡£", 0)
+		Say("ThËt xin lçi , tr­íc m¾t nh· ®iÓn thŞnh héi c¹nh ®o¸n tróng n­íc t­ëng bµi ®Õm ®İch hoµng kim vĞ sè trung t­ëng sè cã thÓ ch­a l¸i/më ra , xin sau n÷a ®æi t­ëng , c¸m ¬n . ", 0)
 		return
 	end;
 
@@ -182,16 +182,16 @@ function doPayforGreateGold()
 	nItem = FindSpecItemParam2(1, 76, GetGlbValue(dayGOLD_SERIES), GetGlbValue(dayGOLD_TIMESTEMP));
 	if (nItem > 0) then
 		if (RemoveItemByIndex(nItem) > 0) then 
-			Say("ÈÈÁÒµØ¹§Ï²Äú£¬ÄúµÄ»Æ½ğ²ÊÆ±ÖĞ½±ÁË£¬ÖĞÁË°ÂÔËÏµÁĞ»î¶¯µÄ×î´ó½±£¡»ñµÃÑÅµäÖ®»ê¡¢±±¾©Ö®ÃÎ¸ß¼¶»Æ½ğ½äÖ¸Ò»¶Ô£¡", 0)
+			Say("NhiÖt liÖt ®Şa chóc mõng ngµi , ngµi ®İch hoµng kim vĞ sè trung t­ëng liÔu , trung liÔu ¸o vËn hÖ liÖt ho¹t ®éng ®İch lín nhÊt t­ëng  ®¹t ®­îc nh· ®iÓn chi hån  B¾c Kinh chi méng cao cÊp hoµng kim chiÕc nhÉn mét ®«i ", 0)
 			AddGoldItem(0, 141)
 			AddGoldItem(0, 142)
-			Msg2Player("Äú»ñµÃÑÅµäÖ®»ê¡¢±±¾©Ö®ÃÎÒ»¶Ô»Æ½ğ½äÖ¸£¡")
-			WriteLog(GetAccount()..","..GetName().."ÖĞÁË°ÂÔËÖĞ¹ú¶Ó½±ÅÆÊıµÄ»Æ½ğ²ÊÆ±´ó½±£¬»ñµÃ°ÂÔË½äÖ¸×°±¸Ò»Ì×¡£²ÊÆ±ID"..GetGlbValue(dayGOLD_TIMESTEMP).."-".. GetGlbValue(dayGOLD_SERIES))
-			msg = "ÈÈÁÒ¹§Ï²:Íæ¼Ò"..GetName().." ÖĞÁËÑÅµäÊ¢»áÖĞ¹ú¶Ó½±ÅÆÊı¾º²ÂµÄ»Æ½ğ´ó½±£¬»ñµÃÑÅµäÖ®»ê¡¢±±¾©Ö®ÃÎ¸ß¼¶»Æ½ğ½äÖ¸Ò»¶Ô£¡";
+			Msg2Player("Ngµi ®¹t ®­îc nh· ®iÓn chi hån  B¾c Kinh chi méng mét ®«i hoµng kim chiÕc nhÉn ")
+			WriteLog(GetAccount()..","..GetName().." trung liÔu ¸o vËn Trung quèc ®éi t­ëng bµi ®Õm ®İch hoµng kim vĞ sè ®¹i t­ëng , ®¹t ®­îc ¸o vËn chiÕc nhÉn trang bŞ mét bé . vĞ sè ID"..GetGlbValue(dayGOLD_TIMESTEMP).."-".. GetGlbValue(dayGOLD_SERIES))
+			msg = " nhiÖt liÖt chóc mõng : nhµ ch¬i "..GetName().." trung liÔu nh· ®iÓn thŞnh héi Trung quèc ®éi t­ëng bµi ®Õm c¹nh ®o¸n ®İch hoµng kim ®¹i t­ëng , ®¹t ®­îc nh· ®iÓn chi hån  B¾c Kinh chi méng cao cÊp hoµng kim chiÕc nhÉn mét ®«i ";
 			AddGlobalNews(msg);
 		end
 	else
-		Say("¶Ô²»Æğ£¬ÖĞ½±ºÅÎª"..GetGlbValue(dayGOLD_TIMESTEMP).."-"..GetGlbValue(dayGOLD_SERIES).."£¬ÄãÉíÉÏ¿ª½±µÄ»Æ½ğ²ÊÆ±ÖĞÃ»ÓĞÆ¥ÅäµÄÖĞ½±ºÅÂë¡£", 0)
+		Say("ThËt xin lçi , trung t­ëng sè v× "..GetGlbValue(dayGOLD_TIMESTEMP).."-"..GetGlbValue(dayGOLD_SERIES).." , trªn ng­êi ng­¬i khai t­ëng ®İch hoµng kim vĞ sè trung kh«ng cã thÊt xøng ®İch trung t­ëng d·y sè . ", 0)
 	end
 end;
 

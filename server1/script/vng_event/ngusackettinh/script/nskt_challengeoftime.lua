@@ -8,7 +8,7 @@ function tb_NSKT_ChallengeOfTime:giveAward()
 		return 0
 	end
 	
-	local szNote = "Event ÎåÉ«½á¾§-´³¹Ø17"	
+	local szNote = "Event Ngò s¾c kÕt tinh_V­ît qua ¶i 17"	
 	
 	local tbNSKTList = tbNSKT_head:getRandomKT(10)
 	if(getn(tbNSKTList) ~= 3) then				

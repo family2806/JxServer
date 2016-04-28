@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("µ½ÑïÖÝ¸® ", 0)
+Say("§Õn D­¬ng Ch©u phñ ", 0)
 
 end;

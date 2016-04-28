@@ -6,22 +6,22 @@ g_mapList = {235, 236, 237, 238, 239, 240, 241};
 function main()
 	-- Ãâ·ÑË«¾­Ñé
 	if (AEXP_IsFreeTimeDoubleExp() == 1) then-- Ãâ·ÑË«¾­ÑéÈÕ×Ó
-		Say("Õâ¸½½üÌÒ»¨µºµÄÁéÆøºÜÊ¢. ²»ÓÃÀ°°ËÖàÒ²¿ÉÒÔÁ·¹¦. ÕâÃ´ºÃµÄ»ú»á.ÒªÖªµÀ³ä·ÖÀûÓÃ. Èç¹ûÏë·´»ÚÒª¸¶1800Á½ÒøÁ½. ", 2, "»Ø³Ç/go_yes", "²»»Ø/no")		
+		Say("GÇn ®©y linh khİ cña §µo Hoa §¶o rÊt thŞnh. Kh«ng cÇn dïng ch¸o L¹p B¸t còng cã thÓ luyÖn c«ng. C¬ héi tèt thÕ nµy. CÇn ph¶i biÕt tËn dông. NÕu nh­ muèn trë vÒ ph¶i tr¶ 1800 ng©n l­îng. ", 2, "VÒ thµnh/go_yes", "Ch­a vÒ /no")		
 		return 1;
 	end
 	
 	nValue = GetTask(AEXP_TASKID);
 	if (nValue > AEXP_TIME_UPDATE) then -- ÈÔÓĞ¹Ò»úÊ±¼ä
-		Say("ÕâÎ»¿Í¹Ù! ¿´ÄãµÄÉñÆøÒ»¶¨ÊÇÓÃÁËÕâÀï´«ËµÖĞµÄÀ°°ËÖà¶Ô°É?ÌıËµÖ»ÓĞÌÒ»¨µºÉÏµÄÀ°°ËÖà²ÅÓĞ¹¦Ğ§. Ö»ÓĞÒ»Ğ¡Ê±£¬Òª¾¡Á¿Ê¹ÓÃ. NÕu nh?muèn v?thµnh th?ph¶i tr?1800 ng©n l­înÈç¹ûÒª»Ø³ÇĞèÒªÖ§¸¶1800Á½ÒøÁ½.", 2, "»Ø³Ç/go_yes", "²»»Ø/no")
+		Say("VŞ kh¸ch nµy! Xem thÇn khİ cña ng­êi nh­ vËy, nhÊt ®Şnh lµ ®· dïng thø ch¸o truyÒn thuyÕt L¹p B¸t ë ®©y råi ph¶i kh«ng? Nghe nãi ch¸o L¹p B¸t chØ cã ë §µo Hoa ®¶o nµy míi cã c«ng hiÖu. ChØ cã mét giê, cÇn ph¶i tËn dông. NÕu nh­ muèn vÒ thµnh th× ph¶i tr¶ 1800 ng©n l­îng.", 2, "VÒ thµnh/go_yes", "Ch­a vÒ /no")
 	else 
-		Say("ÕâÎ»¿Í¹Ù! ¿´ÄãµÄÉñÆøÒ»¶¨ÊÇÓÃÁËÕâÀï´«ËµÖĞµÄÀ°°ËÖà¶Ô°É?ÌıËµÖ»ÓĞÌÒ»¨µºÉÏµÄÀ°°ËÖà²ÅÓĞ¹¦Ğ§. Ö»ÓĞÒ»Ğ¡Ê±£¬Òª¾¡Á¿Ê¹ÓÃ. NÕu nh?muèn v?thµnh th?ph¶i tr?1800 ng©n l­înÈç¹ûÒª»Ø³ÇĞèÒªÖ§¸¶1800Á½ÒøÁ½.", 2, "»Ø³Ç/go_yes", "²»»Ø/no")
+		Say("VŞ kh¸ch nµy! Xem thÇn khİ cña ng­êi nh­ vËy, nhÊt ®Şnh lµ ®· dïng thø ch¸o truyÒn thuyÕt L¹p B¸t ë ®©y råi ph¶i kh«ng? Nghe nãi ch¸o L¹p B¸t chØ cã ë §µo Hoa ®¶o nµy míi cã c«ng hiÖu. ChØ cã mét giê, cÇn ph¶i tËn dông. NÕu nh­ muèn vÒ thµnh th× ph¶i tr¶ 1800 ng©n l­îng.", 2, "VÒ thµnh/go_yes", "Ch­a vÒ /no")
 	end
 end
 
 function go_yes()
 	if (GetCash() >= 1800) then
 		Pay(1800)
-		Msg2Player("×øÎÈÁË£¡ÎÒÃÇ»Ø³Ç")
+		Msg2Player("Ngåi ch¾c nhĞ! Chóng ta vÒ thµnh ")
 		SetAutoHangMapFlag(0) -- ÉèÖÃÍË³ö¹Ò»úµØÍ¼±ê¼Ç(·Å¿ªÔ­À´±»ÆÁ±ÎµÄ¹«ÁÄ¡¢»Ø³ÇµÈ¹¦ÄÜ)
 		
 		-- ¼ÇÂ¼Àë¿ªÊ±µÄÔÚÏßÊ±¼ä
@@ -31,7 +31,7 @@ function go_yes()
 		back_home();
 		SetFightState(1)
 	else
-		Talk(1,"","Òª»Ø³ÇµÄ»°¸¶1800Á½ÒøÁ½.¿ìÄÃÇ®À´")
+		Talk(1,"","Muèn vÒ thµnh ph¶i tr¶ 1800 ng©n l­îng. Mau lÊy tiÒn ra ®©y")
 	end
 end;
 
@@ -53,7 +53,7 @@ function back_home()
 	elseif (nSubWorldID == g_mapList[7]) then
 		NewWorld(1, 1528, 2733) -- ·ïÏè
 	else
-		Msg2Player("±©À×! ÄãÊÇ´ÓÄÄ¸ö³ÇÊĞÀ´ÌÒ»¨µºµÄ? ÇëÏòGM·´Ó¦!");
+		Msg2Player("B¸o lçi! B¹n ®· ®i tõ thµnh thŞ nµo ®Õn §µo Hoa ®¶o? Xin lËp tøc liªn hÖ víi GM ®Ó ph¶n ¶nh!");
 	end	
 end;
 

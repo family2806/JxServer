@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("长白山地界，长白山脚下. ", 0)
+Say("мa gi韎 n骾 Trng Th筩h, ch﹏ n骾 Trng B筩h. ", 0)
 
 end;

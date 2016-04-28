@@ -2,18 +2,18 @@
 -- lixin 2005-8-31
 
 zq_tab_award = {	--ÖĞÇïÀñÆ·ºĞ¿ÉÒÔ»ñµÃµÄÎïÆ·£¬¸ÅÂÊ£¬
-	{	"1¼¶Ãæ·Û",	0.43145	,	 528 ,	},
-	{	"2¼¶Ãæ·Û",	0.05	,	 529 ,	},
-	{	"3¼¶Ãæ·Û",	0.015	,	 530 ,	},
-	{	"4¼¶Ãæ·Û",	0.003	,	 531 ,	},
-	{	"5¼¶Ãæ·Û",	0.0005	,	 532 ,	},
-	{	"6¼¶Ãæ·Û",	0.00005	,	 533 ,	},
-	{	"1¼¶Á«ÈØ",	0.43145	,	 534 ,	},
-	{	"2¼¶Á«ÈØ",	0.05	,	 535 ,	},
-	{	"3¼¶Á«ÈØ",	0.015	,	 536 ,	},
-	{	"4¼¶Á«ÈØ",	0.003	,	 537 ,	},
-	{	"5¼¶Á«ÈØ",	0.0005	,	 538 ,	},
-	{	"6¼¶Á«ÈØ",	0.00005	,	 539 ,	},
+	{	"Bét m× cÊp 1",	0.43145	,	 528 ,	},
+	{	"Bét m× cÊp 2 ",	0.05	,	 529 ,	},
+	{	"Bét m× cÊp 3",	0.015	,	 530 ,	},
+	{	"Bét m× cÊp 4 ",	0.003	,	 531 ,	},
+	{	"Bét m× cÊp 5",	0.0005	,	 532 ,	},
+	{	"Bét m× cÊp 6",	0.00005	,	 533 ,	},
+	{	"Bét sen cÊp 1",	0.43145	,	 534 ,	},
+	{	"Bét sen cÊp 2 ",	0.05	,	 535 ,	},
+	{	"Bét sen cÊp 3 ",	0.015	,	 536 ,	},
+	{	"Bét sen cÊp 4 ",	0.003	,	 537 ,	},
+	{	"Bét sen cÊp 5 ",	0.0005	,	 538 ,	},
+	{	"Bét sen cÊp 6 ",	0.00005	,	 539 ,	},
 }
 
 function main()
@@ -33,7 +33,7 @@ end
 function zq_award( item )
 	local name = item[1]
 	AddEventItem( item[ 3 ] )
-	Msg2Player("¹§Ï²£¬Äã»ñµÃÁË1¸ö"..name)
-	Talk(1,"","Àñ¹Ù£º¹§Ï²Äã»ñµÃÁË<color=yellow>"..name.."<color>£¡")
-	WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName().."£¬´ÓÖĞÇïÀñÆ·ºĞÖĞµÃµ½  "..name)
+	Msg2Player("Chóc mõng, b¹n nhËn ®­îc 1 "..name)
+	Talk(1,"","LÔ Quan: Chóc mõng ng­¬i nhËn ®­îc <color=yellow>"..name.."<color>!")
+	WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", më hép quµ Trung Thu nhËn ®­îc "..name)
 end

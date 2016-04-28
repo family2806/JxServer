@@ -4,10 +4,10 @@ function main( nItemIdx )
 	local curzoneid = wl_zonename2zoneid(GetTong())
 	local zoneid =  ITEM_GetItemExParam(nItemIdx,1)
 	if ( zoneid ~= curzoneid or zoneid == 0 ) then
-		Say("ÕâÕÅÆ±ºÃÏñ²»ÊÇÄãËùÔÚÇø·şµÄ£¬Äã²»ÄÜÊ¹ÓÃ¡£", 0)
+		Say("TÊm phiÕu nµy h×nh nh­ kh«ng ph¶i khu vùc b¹n ®ang ë, kh«ng thÓ sö dông.", 0)
 		return 1
 	end
 	matchtype = ITEM_GetItemExParam(nItemIdx,2)
-	Say("ÄãÒª±¨Ãû²Î¼ÓÈüÂğ£¿", 2, "ÎÒÒª×é½¨ÎÒµÄ"..TAB_TICKETINFO[matchtype][1].."/#wl_createleague("..matchtype..")","²»£¬Ôİ½ø²»´òËã±¨Ãû£¬ÏÂ´Î°É/OnCancel")
+	Say("B¹n muèn b¸o danh tham gia thi ®Êu ­?", 2, "Ta muèn lËp nhãm "..TAB_TICKETINFO[matchtype][1].."/#wl_createleague("..matchtype..")","T¹m thêi kh«ng b¸o danh, ®Ó khi kh¸c vËy!/OnCancel")
 	return 1;
 end

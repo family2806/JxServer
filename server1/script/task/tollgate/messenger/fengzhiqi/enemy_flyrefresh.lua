@@ -18,7 +18,7 @@ function messenger_killrefresh()
 		if ( Uworld1213 ~= 0 ) then       --ÅĞ¶ÏÊÇ·ñË«±¶¾­ÑéÊ±¼ä
 			if  ( GetGameTime() - Uworld1213 >= 1200 ) then
 				nt_setTask(1213,0)
-				Msg2Player("ÄãµÄÔö¼ÓË«±¶¾­ÑéÖµµÄÊ±¼äÒÑ½áÊø!")
+				Msg2Player("Thêi gian t¨ng gÊp ®«i ®iÓm kinh nghiÖm cña b¹n ®· kÕt thóc!")
 			else
 				AddOwnExp(FLYREFRESH_EXP)    --¸øÓèÒ»±¶µÄ¾­Ñé
 			end
@@ -33,7 +33,7 @@ function messenger_killrefresh()
 			end
 						
 			nt_setTask(1215,0)
-			Msg2Player("ÄãÏëÏûÃğ½ğ¹ú»¢±ªÆïÂğ?")
+			Msg2Player("B¹n ®· tiªu diÖt Kim Quèc Hæ B¸o Kş.")
 		end
 		
 		SetTask2Team(tbBirthday0905.tbTask.tsk_msg_curtsk,tbBirthday0905.tbTask.tsk_msg_needcount, 2);

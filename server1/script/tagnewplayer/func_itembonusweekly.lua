@@ -1,15 +1,15 @@
 Include("\\script\\tagnewplayer\\func_check.lua");
 function BonusEveryDay()
 	if (CheckObject() < 1) then
-		Talk(1, "", "Çë¼ì²é²Î¼ÓÌõ¼ş.");
+		Talk(1, "", "Xin h·y kiÓm tra l¹i ®iÒu kiÖn tham gia.");
 		return
 	end
 	if (CheckDayOfWeek() == 1) then
 			local szTongName , nTongID = GetTongName()
 			if (nTongID < 1) then
-				Say("<#>  ÄãÎ´¼ÓÈë°ï»á. ½«²»ÄÜ»ñµÃÓë°ï»áÏà¹ØµÄ½±Àø", 2,
-				"ÎÒÏëÁì/GetBonusFirstWeek",
-				"·ÅÆú/Cancel")
+				Say("<#> Ng­¬i ch­a gia nhËp bang héi. SÏ kh«ng nhËn ®­îc mét sè phÇn th­ëng cã liªn quan tíi bang héi", 2,
+				"Ta muèn nhËn/GetBonusFirstWeek",
+				"Hñy bá /Cancel")
 			else
 				GetBonusFirstWeek()
 			end
@@ -17,9 +17,9 @@ function BonusEveryDay()
 	if (CheckDayOfWeek() == 2) then
 			local szTongName , nTongID = GetTongName()
 			if (nTongID < 1) then
-				Say("<#>  ÄãÎ´¼ÓÈë°ï»á. ½«²»ÄÜ»ñµÃÓë°ï»áÏà¹ØµÄ½±Àø", 2,
-				"ÎÒÏëÁì/GetBonusEndWeek",
-				"·ÅÆú/Cancel")
+				Say("<#> Ng­¬i ch­a gia nhËp bang héi. SÏ kh«ng nhËn ®­îc mét sè phÇn th­ëng cã liªn quan tíi bang héi", 2,
+				"Ta muèn nhËn/GetBonusEndWeek",
+				"Hñy bá /Cancel")
 			else
 				GetBonusEndWeek()
 			end
@@ -42,8 +42,8 @@ function GetBonusFirstWeek()
 			SetItemBindState(itemindx, -2);
 			SyncItem(itemindx)
 			local strItem = GetItemName(itemindx)
-			Msg2Player("Äã»ñµÃ "..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 		end
 		--Add bonus Bach cot lenh
 			local ndx = AddItem(6,1,2255,1,0,0)
@@ -52,8 +52,8 @@ function GetBonusFirstWeek()
 			SetItemBindState(ndx, -2)
 			SyncItem(ndx);
 			local strItem = GetItemName(ndx)
-			Msg2Player("Äã»ñµÃ "..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 		-- Add bonus Hai long chau
 			local nindx = AddItem(6,1,2115,1,0,0)
 			nExpiredTime = OneDayTime * 3
@@ -61,12 +61,12 @@ function GetBonusFirstWeek()
 			SetItemBindState(nindx, -2);
 			SyncItem(nindx)
 			local strItem = GetItemName(nindx)
-			Msg2Player("Äã»ñµÃ "..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 		-- Add 50 van luong
 			Earn(500000)
-			Msg2Player("Äã»ñµÃ 50 ÍòÁ½");
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ50 ÍòÁ½")
+			Msg2Player("B¹n nhËn ®­îc 50 v¹n l­îng");
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc 50 v¹n l­îng")
 		--Add random 3 loai BCH
 			AddRandomBCH()
 		
@@ -88,14 +88,14 @@ function GetBonusFirstWeek()
 			SetItemBindState(nindx, -2);
 			SyncItem(nindx)
 			local strItem = GetItemName(nindx)
-			Msg2Player("Äã»ñµÃ "..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 			-- Add 2000 diem cong hien BH
 			local szTongName , nTongID = GetTongName()
 			if (nTongID ~= 0) then
 				AddContribution(2000)
-				Msg2Player("Äã»ñµÃ 2000 °ï»á¹±Ï×Öµ");
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ2000 °ï»á¹±Ï×Öµ")
+				Msg2Player("B¹n nhËn ®­îc 2000 ®iÓm cèng hiÕn bang héi");
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc 2000 ®iÓm cèng hiÕn bang héi")
 			end
 			
 			--Add thien long lenh
@@ -105,8 +105,8 @@ function GetBonusFirstWeek()
 			SetItemBindState(ndx, -2);
 			SyncItem(ndx)
 			local strItem = GetItemName(ndx)
-			Msg2Player("Äã»ñµÃ "..strItem)
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+			Msg2Player("B¹n nhËn ®­îc "..strItem)
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 			-- add 10 item moc nhan
 			for i=1,10 do
 				local ndx = AddItem(6,1,1085,1,0,0)
@@ -115,8 +115,8 @@ function GetBonusFirstWeek()
 				SetItemBindState(ndx, -2);
 				SyncItem(ndx)
 				local strItem = GetItemName(ndx)
-				Msg2Player("Äã»ñµÃ "..strItem)
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+				Msg2Player("B¹n nhËn ®­îc "..strItem)
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 			end
 		
 	end--end of 24h
@@ -134,8 +134,8 @@ function GetBonusEndWeek()
 				AddRandomBCH()
 				--Add 100 van luong
 				Earn(1000000)
-				Msg2Player("´óÏÀ»ñµÃ 100 ÍòÁ½")
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ100 ÍòÁ½")
+				Msg2Player("§¹i hiÖp nhËn ®­îc 100 v¹n l­îng")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc 100 v¹n l­îng")
 				--Add 3 qua huy hoang
 				for i=1,3 do
 					local ndx = AddItem(6,1,906,1,0,0)
@@ -144,8 +144,8 @@ function GetBonusEndWeek()
 					SetItemBindState(ndx, -2);
 					SyncItem(ndx)
 					local strItem = GetItemName(ndx)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 				end
 				-- Add random tran lo
 				AddRandomNTL()
@@ -157,8 +157,8 @@ function GetBonusEndWeek()
 					SetItemBindState(ndx, -2);
 					SyncItem(ndx)
 					local strItem = GetItemName(ndx)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 				end
 				--Add 2 item Bach cot lenh
 				for i=1,2 do
@@ -168,8 +168,8 @@ function GetBonusEndWeek()
 					SetItemBindState(ndx, -2);
 					SyncItem(ndx)
 					local strItem = GetItemName(ndx)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 				end
 				--Add 2 item Hai long chau
 				for i=1,2 do
@@ -179,8 +179,8 @@ function GetBonusEndWeek()
 					SetItemBindState(ndx, -2);
 					SyncItem(ndx)
 					local strItem = GetItemName(ndx)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 				end	
 		end--end of 14h
 		
@@ -201,8 +201,8 @@ function GetBonusEndWeek()
 					SetItemBindState(ndx, -2);
 					SyncItem(ndx)
 					local strItem = GetItemName(ndx)
-					Msg2Player("Äã»ñµÃ "..strItem)
-					WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+					Msg2Player("B¹n nhËn ®­îc "..strItem)
+					WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 					-- add 2 item long huyet hoan
 					for i=1,2 do
 						local nindx = AddItem(6,1,2117,1,0,0)
@@ -211,15 +211,15 @@ function GetBonusEndWeek()
 						SetItemBindState(nindx, -2);
 						SyncItem(nindx)
 						local strItem = GetItemName(nindx)
-						Msg2Player("Äã»ñµÃ "..strItem)
-						WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+						Msg2Player("B¹n nhËn ®­îc "..strItem)
+						WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 					end
 					-- add 5000 diem cong hien BH
 						local szTongName , nTongID = GetTongName()
 						if (nTongID ~= 0) then
 							AddContribution(5000)
-							Msg2Player("Äã»ñµÃ 5000 °ï»á¹±Ï×Öµ");
-							WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ5000 °ï»á¹±Ï×Öµ")
+							Msg2Player("B¹n nhËn ®­îc 5000 ®iÓm cèng hiÕn bang héi");
+							WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc 5000 ®iÓm cèng hiÕn bang héi")
 						end
 					-- Add 2 item thien long lenh
 					for i=1,2 do
@@ -229,8 +229,8 @@ function GetBonusEndWeek()
 						SetItemBindState(ndx, -2);
 						SyncItem(ndx)
 						local strItem = GetItemName(ndx)
-						Msg2Player("Äã»ñµÃ "..strItem)
-						WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+						Msg2Player("B¹n nhËn ®­îc "..strItem)
+						WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 					end
 				-- add 20 moc nhan
 					for i=1,15 do
@@ -241,8 +241,8 @@ function GetBonusEndWeek()
 						SetItemBindState(ndx, -2);
 						SyncItem(ndx)
 						local strItem = GetItemName(ndx)
-						Msg2Player("Äã»ñµÃ "..strItem)
-						WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+						Msg2Player("B¹n nhËn ®­îc "..strItem)
+						WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 					end
 				-- add random 3 loai BCH KN
 					AddRandomBCHKN()	
@@ -266,8 +266,8 @@ function AddRandomBCH()
 	SetItemBindState(itemindx, -2);
 	SyncItem(itemindx)
 	local strItem = GetItemName(itemindx)
-	Msg2Player("Äã»ñµÃ "..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+	Msg2Player("B¹n nhËn ®­îc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 end
 
 function AddRandomBCHKN()
@@ -286,8 +286,8 @@ function AddRandomBCHKN()
 	SetItemBindState(itemindx, -2);
 	SyncItem(itemindx)
 	local strItem = GetItemName(itemindx)
-	Msg2Player("Äã»ñµÃ "..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+	Msg2Player("B¹n nhËn ®­îc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 end
 
 function AddRandomNTL()
@@ -306,8 +306,8 @@ function AddRandomNTL()
 	SetItemBindState(itemindx, -2);
 	SyncItem(itemindx)
 	local strItem = GetItemName(itemindx)
-	Msg2Player("Äã»ñµÃ "..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡Ã¿ÈÕ½±Àø»ñµÃ"..strItem)
+	Msg2Player("B¹n nhËn ®­îc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."NhËn th­ëng Daily nhËn ®­îc "..strItem)
 end
 
 

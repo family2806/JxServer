@@ -20,9 +20,9 @@ function main()
 local Buttons = store_sel_extend();
 	local nDate = tonumber(GetLocalDate("%Y%m%d%H"));
 	if (nDate >= 2006122200 and nDate <= 2007011424) then
-		tinsert(Buttons,1,"¹ºÂò¿¨Æ¬/BuyVnXasCard")
+		tinsert(Buttons,1,"Mua thÎ /BuyVnXasCard")
 	end;
-	Say("ÔÓ»õµêÀÏ°å£º±¾µêºÅ³ÆÄÏ±±ÔÓ»õ£¬¶«Î÷ÄÏ±±µÄÉÌÆ·Ò»Ó¦¾ãÈ«£¬¶«º£µÄÉºº÷Ê÷£¬¸ê±ÚµÄÂæÍÕÃ±£¬ÁëÄÏµÄ¿×È¸ôá£¬³¤°×É½µÄ×ÏõõÆ¤£¬²»¹ÜÊÇÄã¼û¹ıµÄ»¹ÊÇÃ»¼û¹ıµÄ£¬Ò²²»¹ÜÊÇÄãÏëµÃµ½µÄ»¹ÊÇÏë²»µ½µÄ£¬ÎÒÕâ¶ùÈ«ÓĞ¡£",
+	Say("Bæ tiÖm x­ng danh lµ t¹p hãa Nam B¾c. Hµng hãa ®«ng t©y ®iÒu cã ®ñ c¶. S¬n hå ë ®«ng h¶i, mò l¹c ®µ ë gobi.... BÊt kÓ ng­¬i ®· nh×n thÊy hay ch­a, ë ®©y ta ®iÒu cã c¶..",
 			getn(Buttons),
 			Buttons)
 end;

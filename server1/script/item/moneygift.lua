@@ -1,7 +1,7 @@
 function main(nItemIndex)
-	Say("¹úÇì¿ìÀÖ£¡Äú¿ÉÒÔ´ø¹ıÈ¥ÀñÆ·µ½¸÷´ó³ÇÊĞ¼ûÀñ¹Ù»»È¡ÒøÁ½¡£ÒªÇó50¼¶ÒÔÉÏ£¬Ãµ¹åÕËºÅÖ»ÄÜÓĞ3¸öÈË²Î¼Ó.", 2,
-	"·ÅÆú¸ÃÎïÆ·./#del_moneygift("..nItemIndex..")",
-	"·ÅÆú/OnCancel");
+	Say("Quèc Kh¸nh vui vÎ!B¹n cã thÓ ®em quµ Quèc Kh¸nh ®Õn c¸c thµnh thŞ gÆp lÔ quan ®Ó ®æi ng©n l­îng. Yªu cÇu ®¼ng cÊp trªn 50, mçi tµi kho¶n chØ ®­îc 3 nh©n vËt tham gia.", 2,
+	"Hñy bá vËt phÈm nµy./#del_moneygift("..nItemIndex..")",
+	"Hñy bá /OnCancel");
 	return 1;
 end;
 

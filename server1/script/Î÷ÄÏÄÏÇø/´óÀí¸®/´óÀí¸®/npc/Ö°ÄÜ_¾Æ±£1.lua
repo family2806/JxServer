@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(1,"","Ë×ÓïÓĞÔ»£º´óÀí·ç¾°ÌìÏÂµÚÒ»¡£´óÀí²»½ö·ç¾°ÃÀ£¬¾ÆÒ²ºÜÏã¡£¿Í¹ÙÏëÆ·³¢Ãû¾ÆÌğÇúÏãÂğ?")
+	Talk(1,"","Tôc ng÷ cã c©u ' Phong C¶nh §¹i Lı Phong NhÊt Thiªn H¹'. §¹i Lı kh«ng nh÷ng phong c¶nh ®Ñp, r­îu còng rÊt ngon. Kh¸ch quan cã muèn uèng thö danh töu '§iÒn Khóc H­¬ng' cña chóng ta kh«ng?")
 end;

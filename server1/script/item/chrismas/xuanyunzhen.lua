@@ -1,7 +1,7 @@
         --CastSkill(672,15)
 SKILLTYPE = 672;
 SKILLLEVEL = 15;
-SKILLNAME = "¼±¶³ºÅ½Ç"
-SKILLDESCRIBE = "Áî¸½½üµÄ¶ÔÊÖ¼õËÙ10Ãë¡£"
+SKILLNAME = "CÊp §«ng HiÖu gi¸c"
+SKILLDESCRIBE = "KhiÕn ®èi thñ xung quanh chËm 10 gi©y."
 
 Include([[\script\item\chrismas\head_zhen.lua]]);

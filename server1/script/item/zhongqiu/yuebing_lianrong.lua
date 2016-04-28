@@ -3,7 +3,7 @@ function main()
 	local tbEXP = {200000, 300000, 400000}
 	local eatexp = GetTask(1568)
 	if (eatexp >= MOONCAKE_MAX_EXP) then
-		Msg2Player("<#>ÄãÒÑ¾­³ÔÁËÌ«¶àÔÂ±ıÁË")
+		Msg2Player("<#> Ngµi ®· ¨n nhiÒu b¸nh trung thu råi!")
 		return 1
 	end
 	
@@ -15,9 +15,9 @@ function main()
 	AddOwnExp(mooncake_addexp)
 	SetTask(1568, eatexp + mooncake_addexp)
 	if(GetTask(1568) >= MOONCAKE_MAX_EXP) then
-		Msg2Player("<#>ÄãÒÑ¾­³ÔÁËÌ«¶àÔÂ±ıÁË")
+		Msg2Player("<#> Ngµi ®· ¨n nhiÒu b¸nh trung thu råi!")
 	else
-		Msg2Player( "<#>Äã»¹¿ÉÒÔÍ¨¹ıÊ³ÓÃÖĞÇïÔÂ±ı»ñµÃ<color=yellow>"..(MOONCAKE_MAX_EXP - GetTask(1568)).."<#><color>µã¾­Ñé" )
+		Msg2Player( "<#> B¹n cã thÓ th«ng qua viÖc ¨n b¸nh trung thu ®Ó nhËn<color=yellow>"..(MOONCAKE_MAX_EXP - GetTask(1568)).."<#> <color>®iÓm kinh nghiÖm" )
 	end
 	WriteLog(date("%y-%m-%d,%H:%M,").."ACCOUNT:"..GetAccount()..",NAME:"..GetName()..", use yuebing_lianrong, get "..mooncake_addexp.." experience")
 end

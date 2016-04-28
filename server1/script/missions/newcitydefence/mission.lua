@@ -22,10 +22,10 @@ function InitMission()
 	local citycamp = 0
 	if ( mapid == tbDEFENCE_MAPID[1] ) then
 		citycamp = 1;
-		cd_name = "ËÎ·½ÊØ³Ç"
+		cd_name = "Thñ thµnh phe Tèng"
 	elseif ( mapid == tbDEFENCE_MAPID[2] ) then
 		citycamp = 2;
-		cd_name = "½ð·½ÊØ³Ç"
+		cd_name = "Thñ thµnh phe Kim"
 	else
 		print("defencecity open map error mpaid == "..mapid)
 		return
@@ -92,13 +92,13 @@ function InitMission()
 
 	--°Ú·Å¶Ô»°ÀàÐÍNpc	
 	if (citycamp == 1) then
-		campname = "ËÎ¾ü";
+		campname = "Qu©n Tèng";
 		tnpc_doctor = TNPC_DOCTOR1
 		file_doctor = FILE_DOCTOR1
 		tnpc_symbol = TNPC_SYMBOL1
 
 	else
-		campname = "½ð¾ü";
+		campname = "Qu©n Kim";
 		tnpc_doctor = TNPC_DOCTOR2
 		file_doctor = FILE_DOCTOR2
 		tnpc_symbol = TNPC_SYMBOL2
@@ -108,11 +108,11 @@ function InitMission()
 	--¾üÒ½µÄ°Ú·Å --µÈÏÂ¸Ä¾üÒ½µÄ½Å±¾£¨×¢Òâ¾üÒ½µÄÏúÊÛ±àºÅ£©
 	doctorxy = GetIniFileData(mapfile, citysection, "doctornpc1");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(file_doctor, tnpc_doctor, x * 32 ,y * 32 , campname.."¾üÐè¹Ù");
+	bt_add_a_diagnpc(file_doctor, tnpc_doctor, x * 32 ,y * 32 , campname.."Qu©n Nhu quan");
 
 	doctorxy = GetIniFileData(mapfile, citysection, "doctornpc2");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(file_doctor, tnpc_doctor, x * 32 ,y * 32 , campname.."¾üÐè¹Ù");
+	bt_add_a_diagnpc(file_doctor, tnpc_doctor, x * 32 ,y * 32 , campname.."Qu©n Nhu quan");
 
 
 	
@@ -126,10 +126,10 @@ function InitMission()
 	bt_add_a_diagnpc( FILE_BOX, TNPC_DEPOSIT, x * 32,y * 32);
 
 	
-	--³µ·òµÄ°Ú·Å
+	--Xa phuµÄ°Ú·Å
 	chefuxy = GetIniFileData(mapfile, citysection, "chefu");
 	x,y = bt_str2xydata(chefuxy)
-	bt_add_a_diagnpc( FILE_CD_TRANSER, TNPC_CHEFU, x * 32,y * 32, campname.."³µ·ò");
+	bt_add_a_diagnpc( FILE_CD_TRANSER, TNPC_CHEFU, x * 32,y * 32, campname.."Xa phu");
 	
 
 	--Æô¶¯¶¨Ê±Æ÷
@@ -149,9 +149,9 @@ function InitMission()
 		CreateChannel(cd_name, 10)
 	end
 	RestMin, RestSec = GetMinAndSec(1800);
-	local szMsg = "ÎÀ¹ú·é»ðÁ¬³Ç"..cd_name.."»î¶¯¿ªÊ¼±¨Ãû, "..tbDEFENCE_ANNOUNCE[citycamp].."§i²ÎÕ½Ìõ¼þ£ºµÈ¼¶²»µÍÓÚ"..CD_LEVEL_LIMIT.."¼¶"
+	local szMsg = "VÖ quèc Phong Háa liªn thµnh"..cd_name.."Ho¹t ®éng ®· b¾t ®Çu nhËn b¸o danh, "..tbDEFENCE_ANNOUNCE[citycamp].."§iÒu kiÖn tham chiÕn: §¼ng cÊp kh«ng d­íi"..CD_LEVEL_LIMIT.."cÊp"
 	AddGlobalNews(szMsg)
-	WriteLog("ÎÀ¹ú·é»ðÁ¬³Ç"..cd_name.."\t±¨Ãû½×¶Î\t µØÍ¼d\t"..mapid.."\t Ê±¼ä\t"..date("%H:%M"))
+	WriteLog("VÖ quèc Phong Háa liªn thµnh"..cd_name.."\t vµo giai ®o¹n b¸o danh \t b¶n ®åi d\t"..mapid.."\t thêi gian \t"..date("%H:%M"))
 --	BT_SetGameData(2, MISSIONID)
 --	BT_SetType2Task(PL_TOTALPOINT, TSKID_PLAYER_ZHANGONG);
 --	BT_SetView(PL_TOTALPOINT);--ÏÔÊ¾ÓëÍ³¼Æ×Ü»ý·Ö

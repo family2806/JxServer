@@ -8,31 +8,31 @@ Include( "\\script\\missions\\freshman_match\\freshman_info.lua" )
 function transtoplace()
 
 	if (GetLastFactionNumber() == -1) then
-		Say("Œ‰¡÷√À÷˜”–¡Ó£∫÷ª”– Æ¥Û√≈≈…µƒ»À≤≈ƒ‹≤Œº”Œ‰¡÷¥Ûª·£¨ƒ„Œﬁ√≈Œﬁ≈…£¨≤ªƒ‹≤Œº”°£º”»Î Æ¥Û√≈≈…∫Û≤≈ƒ‹≤Œº”±»»¸!", 0)
+		Say("V‚ L©m Minh ChÒ c„ l÷nh: Chÿ c„ ng≠Íi cÒa ThÀp Æπi ph∏i Æ≠Óc tham gia ßπi hÈi v‚ l©m, ng≠¨i kh´ng m´n kh´ng ph∏i kh´ng th” tham gia. Sau khi gia nhÀp ThÀp Æπi ph∏i mÌi Æ≠Óc tham gia thi Æ u!", 0)
 		return
 	else
 		if(GetLastFactionNumber() == 0) then
 			NewWorld(CP_MAPTAB[1][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--…Ÿ¡÷
 		elseif (GetLastFactionNumber() == 1) then
-			NewWorld(CP_MAPTAB[2][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÃÏÕı
+			NewWorld(CP_MAPTAB[2][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Thi™n V≠¨ng
 		elseif (GetLastFactionNumber() == 2) then
-			NewWorld(CP_MAPTAB[3][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Ã∆√≈
+			NewWorld(CP_MAPTAB[3][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ß≠Íng M´n
 		elseif (GetLastFactionNumber() == 3) then
-			NewWorld(CP_MAPTAB[4][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ŒÂ∂æ
+			NewWorld(CP_MAPTAB[4][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--NgÚ ßÈc
 		elseif (GetLastFactionNumber() == 4) then
 			NewWorld(CP_MAPTAB[5][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--∂Î·“
 		elseif (GetLastFactionNumber() == 5) then
-			NewWorld(CP_MAPTAB[6][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--¥‰—Ã
+			NewWorld(CP_MAPTAB[6][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ThÛy Y™n
 		elseif (GetLastFactionNumber() == 6) then
-			NewWorld(CP_MAPTAB[7][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÿ§∞Ô
+			NewWorld(CP_MAPTAB[7][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--C∏i Bang
 		elseif (GetLastFactionNumber() == 7) then
-			NewWorld(CP_MAPTAB[8][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--ÃÏ»Ã
+			NewWorld(CP_MAPTAB[8][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Thi™n Nh…n
 		elseif (GetLastFactionNumber() == 8) then
-			NewWorld(CP_MAPTAB[9][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--Œ‰µ±
+			NewWorld(CP_MAPTAB[9][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--V‚ ßang
 		elseif (GetLastFactionNumber() == 9) then
-			NewWorld(CP_MAPTAB[10][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--¿•¬ÿ
+			NewWorld(CP_MAPTAB[10][1], CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])--C´n L´n
 		end
-		Msg2Player( "ƒ„“—Ω¯»ÎŒ‰¡÷–¬–„»¸≥°" )
+		Msg2Player( "Bπn Æ∑ vµo Æ u tr≠Íng V‚ l©m ki÷t xu t" )
 	end
 end
 
@@ -41,34 +41,34 @@ function checkmap(flag)
 	local mapid = SubWorldIdx2ID(SubWorld)
 	local ladder = 0
 	if (mapid == 397 or mapid == 396) then
-		mapname = "…Ÿ¡÷ "
+		mapname = "Thi’u L©m"
 		ladder = 10131
 	elseif (mapid == 399 or mapid == 398) then
-		mapname = "ÃÏÕı"
+		mapname = "Thi™n V≠¨ng"
 		ladder = 10132
 	elseif (mapid == 401 or mapid == 400) then
-		mapname = "Ã∆√≈"
+		mapname = "ß≠Íng M´n"
 		ladder = 10133
 	elseif (mapid == 403 or mapid == 402) then
-		mapname = "ŒÂ∂æ"
+		mapname = "NgÚ ßÈc"
 		ladder = 10134
 	elseif (mapid == 405 or mapid == 404) then
-		mapname = "∂Î√º " 
+		mapname = "Nga Mi" 
 		ladder = 10135
 	elseif (mapid == 407 or mapid == 406) then
-		mapname = "¥‰—Ã"
+		mapname = "ThÛy Y™n"
 		ladder = 10136
 	elseif (mapid == 409 or mapid == 408) then
-		mapname = "ÿ§∞Ô"
+		mapname = "C∏i Bang"
 		ladder = 10137
 	elseif (mapid == 411 or mapid == 410) then
-		mapname = "ÃÏ»Ã"
+		mapname = "Thi™n Nh…n"
 		ladder = 10138
 	elseif (mapid == 413 or mapid == 412) then
-		mapname = "Œ‰µ±"
+		mapname = "V‚ ßang"
 		ladder = 10139
 	elseif (mapid == 415 or mapid == 414) then
-		mapname = "¿•¬ÿ"
+		mapname = "C´n L´n"
 		ladder = 10140
 	end
 	if (flag == 1) then
@@ -115,7 +115,7 @@ function AddAword(level, result)
 	else
 		AddEventItem(CP_AWARD_ITEM[numth][2][2])
 	end
-	Msg2Player("ƒ„ªÒµ√“ª∏ˆ"..CP_AWARD_ITEM[numth][1])
+	Msg2Player("Bπn nhÀn Æ≠Óc mÈt"..CP_AWARD_ITEM[numth][1])
 end
 
 function randByProbability(aryProbability)

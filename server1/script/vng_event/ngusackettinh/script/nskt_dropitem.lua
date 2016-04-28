@@ -11,7 +11,7 @@ function tb_NSKT_DropItem:onNPCDeath(nNpcIndex)
 --		local tbNSKTList = tbNSKT_head:randomKT(12)
 --			if(getn(tbNSKTList) > 0)then
 --				for i = 1, getn(tbNSKTList) do
---					PlayerFunLib:GetItem({tbProp=tbNSKTList[i],nExpiredTime=tbNSKT_head.nEndDay,}, 1, "Event ÎåÉ«½á¾§_É±ÊÖ 90" )
+--					PlayerFunLib:GetItem({tbProp=tbNSKTList[i],nExpiredTime=tbNSKT_head.nEndDay,}, 1, "Event Ngò s¾c kÕt tinh_S¸t thñ cÊp 90" )
 --				end
 --			end
 		local tbNSKTList = tbNSKT_head:getRandomKT(12)
@@ -20,7 +20,7 @@ function tb_NSKT_DropItem:onNPCDeath(nNpcIndex)
 			end
 			for i = 1, getn(tbNSKTList) do
 				if(tbNSKTList[i].nCount > 0)then
-					PlayerFunLib:GetItem({tbProp = {6,1, tbNSKTList[i].nID, 1, 0, 0}, nExpiredTime = tbNSKT_head.nEndDay,}, tbNSKTList[i].nCount, "Event ÎåÉ«½á¾§_É±ÊÖ 90" )
+					PlayerFunLib:GetItem({tbProp = {6,1, tbNSKTList[i].nID, 1, 0, 0}, nExpiredTime = tbNSKT_head.nEndDay,}, tbNSKTList[i].nCount, "Event Ngò s¾c kÕt tinh_S¸t thñ cÊp 90" )
 				end
 			end
 		return 1;	
@@ -44,7 +44,7 @@ function tb_NSKT_DropItem:onNPCDeath(nNpcIndex)
 --			local tbNSKTList = tbNSKT_head:randomKT(10)
 --			if(getn(tbNSKTList) > 0)then
 --				for i = 1, getn(tbNSKTList) do
---					tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp=tbNSKTList[i], nExpiredTime=tbNSKT_head.nEndDay,}, "ÔÚÎåÉ«¾§Ê¯»î¶¯ÖĞÂäÏÂµÄË®ÔôÊ×Áì", 1)
+--					tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp=tbNSKTList[i], nExpiredTime=tbNSKT_head.nEndDay,}, "Thñy tÆc ®Çu lÜnh r¬i ë ho¹t ®éng ngò s¾c tinh th¹ch", 1)
 --				end
 --			end
 			local tbNSKTList = tbNSKT_head:getRandomKT(10)
@@ -53,7 +53,7 @@ function tb_NSKT_DropItem:onNPCDeath(nNpcIndex)
 			end
 			for i = 1, getn(tbNSKTList) do
 				if(tbNSKTList[i].nCount > 0)then
-					tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp = {6,1, tbNSKTList[i].nID, 1, 0, 0}, nExpiredTime=tbNSKT_head.nEndDay,}, "ÔÚÎåÉ«¾§Ê¯»î¶¯ÖĞÂäÏÂµÄË®ÔôÊ×Áì", tbNSKTList[i].nCount)
+					tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, {tbProp = {6,1, tbNSKTList[i].nID, 1, 0, 0}, nExpiredTime=tbNSKT_head.nEndDay,}, "Thñy tÆc ®Çu lÜnh r¬i ë ho¹t ®éng ngò s¾c tinh th¹ch", tbNSKTList[i].nCount)
 				end
 			end
 		return 1;

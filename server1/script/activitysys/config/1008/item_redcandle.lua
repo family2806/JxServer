@@ -15,10 +15,10 @@ tbVNG_RedCandle.nStartDate = 201202130000
 tbVNG_RedCandle.nEndDate = 201202232400
 function main(nItemIdx)
 	if tbVNG_RedCandle:IsActive() ~= 1 then
-		Talk(1, "", "¸ÃÎïÆ·Ö»ÄÜÔÚÕâ¸öÊ±¼äÄÚÊ¹ÓÃ£º2012Äê2ÔÂ13ÈÕ0Ê±µ½2012Äê2ÔÂ23ÈÕ24Ê±")
+		Talk(1, "", "VËt phÈm nµy chØ ®­îc sö dông trong kho¶ng thêi gian: 0h 13 th¸ng 02 n¨m 2012 ®Õn 24h ngµy 23 th¸ng 02 n¨m 2012")
 		return 1
 	end
-	if PlayerFunLib:CheckTaskDaily(tbVNG_RedCandle.nTask_DailyLimit, 5, "Ê¹ÓÃÎïÆ·´ïÉÏÏŞ£¬Ã÷Ìì¼ÌĞøÊ¹ÓÃ", "<") == nil then
+	if PlayerFunLib:CheckTaskDaily(tbVNG_RedCandle.nTask_DailyLimit, 5, "Sö dông vËt phÈm ®¹t giíi h¹n ngµy, mai råi h·y sö dông tiÕp", "<") == nil then
 		return 1
 	end
 	if PlayerFunLib:VnCheckInCity ("default") == nil then
@@ -28,7 +28,7 @@ function main(nItemIdx)
 		return 1
 	end
 	if GetCurServerTime() - GetTask(tbVNG_RedCandle.nTask_Limit_Candle_At_1Time) <= tbVNG_RedCandle.nEndTime then
-		Talk(1, "", "Ã¿ÈËÖ»ÄÜÔÚÒ»¸öÊ±¼äÊ¹ÓÃ1¸úºìÀ¯Öò.")
+		Talk(1, "", "Mçi nh©n vËt chØ ®­îc phĞp sö dông 1 vËt phÈm NÕn §á t¹i 1 thêi ®iÓm.")
 		return 1
 	end
 	if tbVNG_RedCandle:UseCandle() ~= 1 then
@@ -56,7 +56,7 @@ function tbVNG_RedCandle:UseCandle()
 	local nWorld, nX, nY =GetWorldPos()	
 	local nNameID = String2Id(GetName())
 	if self.tbPlayerList[nNameID] and self.tbPlayerList[nNameID].strPlayerName == GetName() then		
-		Talk(1, "", "Ã¿ÈËÖ»ÄÜÔÚÒ»¸öÊ±¼äÊ¹ÓÃ1¸úºìÀ¯Öò.")
+		Talk(1, "", "Mçi nh©n vËt chØ ®­îc phĞp sö dông 1 vËt phÈm NÕn §á t¹i 1 thêi ®iÓm.")
 		return 0
 	end
 	self.tbPlayerList[nNameID] = {}	
@@ -81,7 +81,7 @@ function tbVNG_RedCandle:OnTime(nNameID)
 		PlayerIndex = nPlayerIdx
 		local nWorld, nX, nY =GetWorldPos()
 		if nWorld ~= player.nMapID or GetFightState() ~= 0 then			
-			Msg2Player("¸ÃºìÀ¯ÖòÖ»ÄÜÔÚÄúÊ¹ÓÃµÄ³ÇÊĞ·ÇÕ½¶·ÇøÓòÓĞĞ§.")
+			Msg2Player("VËt phÈm nÕn ®á chØ cã t¸c dông trong khu vùc phi chiÕn ®Êu cña thµnh thŞ n¬i b¹n sö dông.")
 		else
 			tbAwardTemplet:Give(self.tbAward, 1,{"EventTinhNhan2012","SuDungNenDoNhanThuong"})
 		end		

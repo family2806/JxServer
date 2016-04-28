@@ -5,7 +5,7 @@ Include("\\script\\event\\guoqing_jieri\\200908\\head.lua")
 function tbGuoqing0908:UseCapHepin(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate >= 20090927 then
-		Talk(1, "" ,"»î¶¯½áÊøÁË.")
+		Talk(1, "" ,"Ho¹t ®éng ®· kÕt thóc.")
 		return 0
 	end
 	
@@ -18,11 +18,11 @@ function tbGuoqing0908:UseCapHepin(nItemIndex)
 	end
 	
 	if  CalcFreeItemCellCount() < 10 then
-		Talk(1,"", format("±³°ü¿Õ¼ä²»¹»®ñ%d¸ñ, ÏÈÕûÀíÒ»ÏÂ.", 10));
+		Talk(1,"", format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 10));
 		return 1
 	end
 	if not self.tbTask:CheckHepinCapExp() then
-		Talk(1, "", format("Ê¹ÓÃ´ËÎïÆ·Ö»ÄÜµÃµ½ %u¾­ÑéÖµ", self.tbTask.nMaxHepinCapExp))
+		Talk(1, "", format("Sö dông vËt phÈm nµy chØ cã thÓ thu ®­îc %u kinh nghiÖm", self.tbTask.nMaxHepinCapExp))
 		return 1
 	end
 	local _, _, nP = GetItemProp(nItemIndex)
@@ -52,7 +52,7 @@ local tbAwardList =
 function tbGuoqing0908:UseCapOther(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate >= 20090927  then
-		Talk(1, "" ,"»î¶¯½áÊøÁË.")
+		Talk(1, "" ,"Ho¹t ®éng ®· kÕt thóc.")
 		return 0
 	end
 	
@@ -64,17 +64,17 @@ function tbGuoqing0908:UseCapOther(nItemIndex)
 	end
 	
 	if  CalcFreeItemCellCount() < 10 then
-		Talk(1,"", format("±³°ü¿Õ¼ä²»¹»®ñ%d¸ñ, ÏÈÕûÀíÒ»ÏÂ.", 10));
+		Talk(1,"", format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 10));
 		return 1
 	end
 	if not self.tbTask:CheckOtherCapExp() then
-		Talk(1, "", format("Ê¹ÓÃ´ËÎïÆ·Ö»ÄÜµÃµ½ %u¾­ÑéÖµ", self.tbTask.nMaxOtherCapExp))
+		Talk(1, "", format("Sö dông vËt phÈm nµy chØ cã thÓ thu ®­îc %u kinh nghiÖm", self.tbTask.nMaxOtherCapExp))
 		return 1
 	end
 	
 	
 --	if not self.tbTask:CheckUseCount() then
---		Talk(1, "", format("´ËÎïÆ·×î¶àÖ»ÄÜÊ¹ÓÃ %d.", self.tbTask.nMaxUseCount))
+--		Talk(1, "", format("VËt phÈm nµy nhiÒu nhÊt chØ cã thÓ sö dông %d.", self.tbTask.nMaxUseCount))
 --		return 1
 --	end
 	local _, _, nP = GetItemProp(nItemIndex)

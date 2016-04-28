@@ -16,16 +16,16 @@ function zhongqiu0808_tuoguan(nSpecialD)
 		return 
 	end
 	
-	local tbItem = {szName="ÏÉÓğºĞ",tbProp={6, 1, 1795, 1, 0, 0}}
+	local tbItem = {szName="Hép Tiªn Vò",tbProp={6, 1, 1795, 1, 0, 0}}
 	
 	if ST_GetOffliveState() == 0 then
 		local nCount = CalcEquiproomItemCount(tbItem.tbProp[1], tbItem.tbProp[2], tbItem.tbProp[3], -1)
 	
 		if CalcFreeItemCellCount() >= 1 or (nCount > 0 and nCount < 50 )  then
 	
-			tbAwardTemplet:GiveAwardByList(tbItem, "Î¯ÍĞÊÕ¼¯»î¶¯")
+			tbAwardTemplet:GiveAwardByList(tbItem, "Ho¹t ®éng ñy th¸c thu thËp")
 		else
-			Msg2Player(format("ÄúµÄ×°±¸ÒÑÂú£¬²»ÄÜ»ñµÃ %s.", tbItem.szName))
+			Msg2Player(format("Hµnh trang cña b¹n ®· ®Çy, kh«ng thÓ nhËn %s.", tbItem.szName))
 		end
 	end
 end

@@ -5,239 +5,239 @@ Include("\\script\\task\\newtask\\branch\\branch_head.lua")
 
 function branch_songjinproblem()
 
-	Describe("ÏÂÃæÄã½«²ÎÓëµ½¹ØÓÚËÎ½ğÕ½ÕùµÄÎÊ´ğÖĞ¼äÀ´£¬Çë×öºÃ×¼±¸£¬Õâ¿ÉÄÜÊÇÒ»µÀ±È½Ï¼èÄÑµÄ¹Ø¿¨¡£ÄÇÃ´£¬ÎÒÃÇÊÇ·ñ¿ªÊ¼£¿<enter>",2,"¿ªÊ¼°É/branch_problemstart","ÎÒÔÙÏëÏë/no")
+	Describe("D­íi ®©y lµ c¸c c©u hái vÒ ChiÕn tr­êng Tèng Kim. H·y chuÈn bŞ tinh thÇn nhĞ! B¾t ®Çu ®­îc ch­a?<enter>",2,"B¾t ®Çu!/branch_problemstart","§Ó ta suy nghÜ kü l¹i xem/no")
 end
 
 function branch_problemstart()
-	Describe(DescLink_SongJinProblem.."1¡¢ÄÃµ½Ë§Æì±äÎª¾ÙÆìÊ¿±øºó£¬ÔõÑùÖªµÀÄ¿µÄµØ×ø±ê²¢³É¹¦¶áµÃË§Æì£¿<enter>"
-	.."A:¶áµ½Ë§Æìºó£¬¹«¸æÀ¸ÖĞ»á¸æËßÍæ¼ÒÄ¿µÄ×ø±ê£¬»òÕßËæÊ±Ê¹ÓÃÆì±êµÃÖªÄ¿µÄµØ×ø±ê£¬Æì±ê²»»áÏûºÄ£¬µ½´ïÄ¿µÄµØºóÔÙ´ÎÊ¹ÓÃÆì±ê±ã³É¹¦´ï³É¶áÆì£¬²¢ÇÒÏûºÄµôÆì±ê¡£<enter>" --y
-	.."B:¶áµ½Ë§Æìºó£¬¹«¸æÀ¸ÖĞ»á¸æËßÍæ¼ÒÄ¿µÄ×ø±ê£¬»òÕßËæÊ±Ê¹ÓÃÆì±êµÃÖªÄ¿µÄµØ×ø±ê£¬µ«Æì±ê»áÏûºÄ£¬µ½´ïÄ¿µÄµØºóÔÙ´ÎÊ¹ÓÃÆì±ê±ã³É¹¦´ï³É¶áÆì£¬Í¬Ñù»áÏûºÄµôÆì±ê¡£<enter>"
-	.."C:¶áµ½Ë§Æìºó£¬¹«¸æÀ¸ÖĞ»á¸æËßÍæ¼ÒÄ¿µÄ×ø±ê£¬»òÕßËæÊ±Ê¹ÓÃÆì±êµÃÖªÄ¿µÄµØ×ø±ê£¬µ½´ïÄ¿µÄµØºóÔÙ´ÎÊ¹ÓÃÆì±ê±ã³É¹¦´ï³É¶áÆì£¬Æì±êÎŞÂÛÔõÑùÊ¹ÓÃ¶¼²»»áÏûºÄ¡£<enter>"
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."1.Khi ®· biÕn thµnh NPC gi÷ cê, lµm sao ®Ó biÕt ®­îc täa ®é cÇn ®Õn vµ c¾m ®­îc So¸i kú?<enter>"
+	.."A: Sau khi ®o¹t ®­îc So¸i Kú, « th«ng b¸o sÏ b¸o täa ®é môc tiªu cÇn ®Õn, hoÆc tïy ı nhÊp vµo cê hiÖu ®Ó biÕt ®­îc täa ®é môc tiªu. Cê hiÖu sÏ kh«ng mÊt cho ®Õn khi ®Õn ®­îc môc tiªu, tiÕp tôc nhÊp vµo cê hiÖu ®Ó c¾m So¸i Kú vµ mÊt ®i Cê hiÖu.<enter>" --y
+	.."B: Sau khi ®o¹t ®­îc So¸i Kú, « th«ng b¸o sÏ b¸o täa ®é môc tiªu cÇn ®Õn, hoÆc tïy ı nhÊp vµo cê hiÖu ®Ó biÕt ®­îc täa ®é môc tiªu, nh­ng cê hiÖu sÏ mÊt ®i. Sau khi ®Õn ®­îc môc tiªu, tiÕp tôc nhÊp vµo cê hiÖu ®Ó c¾m So¸i Kú vµ mÊt ®i Cê hiÖu.<enter>"
+	.."C: Sau khi ®o¹t ®­îc So¸i Kú, « th«ng b¸o sÏ b¸o täa ®é môc tiªu cÇn ®Õn, hoÆc tïy ı nhÊp vµo cê hiÖu ®Ó biÕt ®­îc täa ®é môc tiªu. Sau khi ®Õn ®­îc môc tiªu, tiÕp tôc nhÊp vµo Cê hiÖu ®Ó c¾m So¸i Kú. Cê hiÖu bÊt luËn sö dông thÕ nµo còng kh«ng mÊt ®i.<en"
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem1a","B/branch_problem1b","C/branch_problem1c")
 end
 
 function branch_problem1a()
-		Describe(DescLink_SongJinProblem.."2¡¢ĞÂ°æËÎ½ğ´óÕ½µÄ¿ª·ÅÊ±¼äÊÇ¼¸Ê±£¿<enter>"
-	.."A:Ã¿ÌìµÄ12£º00¡¢24:00¿ª·Å±¨Ãû£¬±¨ÃûÊ±¼äÎª30·ÖÖÓ¡£±¨Ãû½áÊøºóÕıÊ½¿ªÕ½£¬Õ½¶·Ê±¼äÎª60·ÖÖÓ¡£<enter>"
-	.."B:Ã»ÓĞ¹Ì¶¨Ê±¼ä£¬ÓÉÏµÍ³¹ã²¥¹ö¶¯Í¨Öª¡£<enter>"
-	.."C:Ã¿ÌìµÄ13£º30¡¢19£º30¡¢21£º30¿ª·Å±¨Ãû£¬±¨ÃûÊ±¼äÎª30·ÖÖÓ¡£±¨Ãû½áÊøºóÕıÊ½¿ªÕ½£¬Õ½¶·Ê±¼äÎª60·ÖÖÓ¡£<enter>" --y
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+		Describe(DescLink_SongJinProblem.."2.Thêi gian b¾t ®Çu Tèng Kim ®¹i chiÕn cña phiªn b¶n míi lµ mÊy giê?<enter>"
+	.."A: B¾t ®Çu b¸o danh tõ 12:00 ®Õn 24:00  mçi ngµy. Thêi gian b¸o danh lµ 30 phót. Sau khi kÕt thóc b¸o danh sÏ chİnh thøc khai chiÕn, thêi gian chiÕn ®Êu lµ 60 phót <enter>"
+	.."B: Kh«ng cã thêi gian cè ®Şnh mµ sÏ do hÖ thèng th«ng b¸o.<enter>"
+	.."C: Mçi ngµy b¾t ®Çu b¸o danh vµo lóc 11h:00, 13h:00; 15h:00; 17h:00; 19h:00; 21h:00. Thêi gian b¸o danh lµ 30 phót. B¸o danh kÕt thóc chİnh thøc khai chiÕn. Thêi gian chiÕn ®Êu 60 phót.<enter>" --y
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem2a","B/branch_problem2b","C/branch_problem2c")
 	
 end
 
 function branch_problem1b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem1c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem2a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem2b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem2c()
-		Describe(DescLink_SongJinProblem.."3¡¢¼ÓÈëÕ½ÒÛºóÎÒÈçºÎÖªµÀµ±Ç°µÄÕ½¿ö£¿<enter>"
-	.."A:Íæ¼Ò¿ÉÒÔËæÊ±Ê¹ÓÃ¡«¼ü£¨tab¼üÉÏ·½µÄ°´¼ü£©´ò¿ªºÍ¹Ø±Õ¼´Ê±Õ½±¨½çÃæ£¬ÁË½âµ±Ç°Õ½¿ö¡£<enter>"--y
-	.."B:Íæ¼ÒÖ»ÄÜÍ¨¹ı×óÏÂ·½µÄ¹«¸æÖĞµÃÖªµ±Ç°µÄÕ½¿ö¡£<enter>"
-	.."C:Íæ¼Ò¿ÉÒÔÔÚºóÓªµÄ¾üĞè¹Ù´¦£¬Ñ¯ÎÊµ½µ±Ç°µÄÕ½¿ö¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+		Describe(DescLink_SongJinProblem.."3. Sau khi vµo khu vùc chiÕn ®Êu, lµm thÕ nµo ®Ó biÕt ®­îc t×nh h×nh chiÕn sù hiÖn t¹i? <enter>"
+	.."A:Ng­êi ch¬i cã thÓ tïy lóc sö dông phİm ~ ( phİm n»m trªn phİm tab) ®Ó ®ãng hoÆc më giao diÖn chiÕn b¸o, sÏ t×nh h×nh chiÕn cuéc hiÖn t¹i.<enter>"--y
+	.."B:Ng­êi ch¬i chØ cã thÓ biÕt ®­îc t×nh h×nh chiÕn sù trong « th«ng b¸o ë gãc tr¸i bªn d­íi <enter>"
+	.."C:Ng­êi ch¬i cã thÓ ®Õn Qu©n Nhu Quan ë hËu doanh ®Ó hái t×nh h×nh chiÕn sù<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem3a","B/branch_problem3b","C/branch_problem3c")
 end
 
 function branch_problem3a()
-	Describe(DescLink_SongJinProblem.."4¡¢±¨ÃûĞÂ°æËÎ½ğ´óÕ½ĞèÒªÊ²Ã´Ìõ¼ş£¿<enter>"
-	.."A:Ã»ÓĞµÈ¼¶ÒªÇó£¬Ö»Òª½»ÄÉ±¨Ãû·Ñ3000Á½½£ÏÀ±Ò£¬¾Í¿É²Î¼Ó¡£µ«ÊÇ£¬±¨Ãû½áÊøºó¾Í²»ÄÜ±¨Ãû½øÈë¡£<enter>"
-	.."B:Íæ¼ÒĞèÒª´ïµ½»ò³¬¹ı40¼¶£¬²¢½»ÄÉ±¨Ãû·Ñ3000Á½½£ÏÀ±Ò£¬¾Í¿É²Î¼Ó¡£±¨ÃûÊ±¼ä½áÊøºó£¬µ«±¨ÃûÈËÊıÎ´´ïÉÏÏŞ400ÈË£¬ÈÔ¿É±¨Ãû½øÈë¡£<enter>"--y
-	.."C:Íæ¼ÒĞèÒª´ïµ½»ò³¬¹ı40¼¶£¬²¢½»ÄÉ±¨Ãû·Ñ3000Á½½£ÏÀ±Ò£¬¾Í¿É²Î¼Ó¡£µ«ÊÇ£¬±¨Ãû½áÊøºó¾Í²»ÄÜ±¨Ãû½øÈë¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."4. B¸o danh Tèng Kim ®¹i chiÕn phiªn b¶n míi cÊn nh÷ng ®iÒu kiÖn g×? <enter>"
+	.."A: Kh«ng h¹n chÕ ®¼ng cÊp, chØ cÇn ®ãng phİ b¸o danh 3000 l­îng lµ cã thÓ tham gia. Sau khi b¸o danh kÕt thóc, kh«ng thÓ b¸o danh n÷a.<enter>"
+	.."B:Ng­êi ch¬i cÇn ®¹t ®­îc hoÆc v­ît qua cÊp 40 vµ ®ãng phİ b¸o danh 3000 l­îng lµ cã thÓ tham gia. Sau khi thêi gian b¸o danh kÕt thóc nh­ng sè ng­êi b¸o danh tham chiÕn ch­a ®Õn 400 ng­êi, vÉn cã thÓ tiÕp tôc b¸o danh tham gia.<enter>"--y
+	.."C:Ng­êi ch¬i cÇn®¹t ®­îc hoÆc v­ît qua cÊp 40 vµ ®ãng phİ b¸o danh 3000 l­îng lµ cã thÓ tham gia. Sau khi thêi gian b¸o danh kÕt thóc, kh«ng thÓ b¸o danh n÷a.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem4a","B/branch_problem4b","C/branch_problem4c")
 end
 
 function branch_problem3b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem3c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem4a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem4b()
-	Describe(DescLink_SongJinProblem.."5¡¢Íæ¼Ò¶áµÃË§Æì£¬±äÎª¾ÙÆìÊ¿±øºó¸÷ÏîÊôĞÔÖµÓĞÃ»ÓĞ¸Ä±ä£¿<enter>"
-	.."A:ÓĞ¡£Íæ¼ÒµÄ¸÷ÊôĞÔ¿¹ĞÔºÍ¹¥»÷Á¦¶¼ÓĞËùÔö¼Ó¡£<enter>"
-	.."B:Ã»ÓĞÊ²Ã´±ä»¯¡£<enter>"
-	.."C:ÓĞ¡£Íæ¼ÒµÄÅÜËÙ»áÓĞÏàÓ¦ÏÂ½µ£¬ÆäËûÊôĞÔÎŞ±ä»¯¡£<enter>" --y
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."5.Ng­êi ch¬i ®o¹t ®­îc So¸i Kú, biÕn thµnh qu©n cÇm cê, c¸c gi¸ trŞ thuéc tİnh cã thay ®æi kh«ng?<enter>"
+	.."A: Cã. C¸c thuéc tİnh cña ng­¬i ch¬i nh­ kh¸ng tİnh vµ lùc tÊn c«ng ®Òu ®­îc t¨ng.<enter>"
+	.."B: Kh«ng cã thay ®æi g×.<enter>"
+	.."C: Cã. Tèc ®é ch¹y cña ng­êi ch¬i sÏ bŞ gi¶m theo, c¸c thuéc tİnh kh¸c kh«ng thay ®æi.<enter>" --y
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem5a","B/branch_problem5b","C/branch_problem5c")
 end
 
 function branch_problem4c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem5a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem5b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem5c()
-	Describe(DescLink_SongJinProblem.."6¡¢ÎÒ½øÈëËÎ½ğ´óÕ½ºóµôÏßÁËÔõÃ´°ì£¿<enter>"
-	.."A:±¨ÃûÖ®ºóÖĞÍ¾ÏÂÏß»òÕ½ÕùÖĞÏÂÏßÖ®ºóÔÙÉÏÏß¿ÉÖ±½ÓÈ¥±¨Ãû´¦Í¨¹ı¶Ô»°½øÈë£¬²»±ØÔÙ´Î½»ÄÉ±¨Ãû·Ñ¡£<enter>"--y
-	.."B:±¨ÃûÖ®ºóÖĞÍ¾ÏÂÏß»òÕ½ÕùÖĞÏÂÏßÖ®ºóÔÙÉÏÏß¿ÉÖ±½ÓÈ¥±¨Ãû´¦Í¨¹ı¶Ô»°½øÈë£¬µ«ÊÇÒªÔÙ´Î½»ÄÉ±¨Ãû·Ñ¡£<enter>"
-	.."C:±¨ÃûÖ®ºóÖĞÍ¾ÏÂÏß»òÕ½ÕùÖĞÏÂÏßÖ®ºóÔÙÉÏÏß¶¼²»ÄÜÔÙ´Î½øÈë£¬Ö»ÄÜµÈÏÂÒ»´Î¿ª·ÅÊ±¼ä±¨Ãû½øÈë¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."6. Khi tham gia Tèng Kim ®¹i chiÕn, bŞ rít m¹ng ph¶i lµm thÕ nµo?<enter>"
+	.."A: Sau khi b¸o danh bŞ rít m¹ng gi÷a chõng hoÆc ®ang tham chiÕn bŞ rít m¹ng, vµo m¹ng l¹i cã thÓ trùc tiÕp ®i b¸o danh b»ng c¸ch ®èi tho¹i xin gia nhËp, kh«ng cÊn ph¶i ®ãng thªm phİ b¸o danh.<enter>"--y
+	.."B: Sau khi b¸o danh bŞ rít m¹ng gi÷a chõng hoÆc ®ang tham chiÕn bŞ rít m¹ng, vµo m¹ng l¹i cã thÓ trùc tiÕp ®èi tho¹i xin gia nhËp, nh­ng ph¶i ®ãng thªm phİ b¸o danh.<enter>"
+	.."C: Sau khi b¸o danh bŞ rít m¹ng gi÷a chõng hoÆc ®ang tham chiÕn bŞ rít m¹ng, vµo m¹ng l¹i kh«ng thÓ gia nhËp n÷a, chØ cã thÓ ®îi ttrËn sau.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem6a","B/branch_problem6b","C/branch_problem6c")
 end
 
 function branch_problem6a()
-	Describe(DescLink_SongJinProblem.."7¡¢ĞÂ°æËÎ½ğ´óÕ½ÓĞÃ»ÓĞËÀÍö³Í·££¿<enter>"
-	.."A:ÓĞÒ»¶¨ËÀÍö³Í·££¬»áËğÊ§Ò»¶¨µÄ¾­ÑéÖµ£¬ËÀÍöºó±»´«ËÍµ½Õ½³¡ºóÓª£¬¿ÉÒÔ¼ÌĞø³åÏòÕ½³¡¡£<enter>"
-	.."B:Ã»ÓĞÈÎºÎ³Í·££¬ËÀÍöÖ®ºó»á±»´«ËÍµ½Õ½³¡ºóÓª£¬Íæ¼Ò¿ÉÒÔ¼ÌĞø³åÏòÇ°·½¡£<enter>"--y
-	.."C:ÓĞËÀÍö³Í·££¬ËÀÍöºó²»ÄÜÔÙ½øÈëÕ½³¡£¬µ«²»»áËğÊ§¾­ÑéÖµºÍ½ğÇ®¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."7. Phiªn b¶n Tèng Kim míi cã tæn thÊt khi tö vong hay kh«ng?<enter>"
+	.."A: Cã tæn thÊt nhÊt ®Şnh khi tö vong, sÏ mÊt ®i mét sè ®iÓm kinh nghiÖm nhÊt ®Şnh, sau khi tö vong ®­îc chuyÓn ®Õn hËu doanh cña chiÕn tr­êng, cã thÓ tiÕp tôc x«ng lªn chiÕn tuyÕn.<enter>"
+	.."B: Kh«ng cã bÊt k× tæn thÊt nµo, sau khi tö vong ®­îc chuyÓn ®Õn hËu doanh chiÕn tr­êng, ng­êi ch¬i cã thÓ tiÕp tôc x«ng lªn chiÕn tuyÕn.<enter>"--y
+	.."C: Cã. Sau khi tö vong sÏ kh«ng thÓ gia nhËp chiÕn tr­êng nh­ng sÏ kh«ng mÊt ®iÓm kinh nghiÖm vµ tiÒn.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem7a","B/branch_problem7b","C/branch_problem7c")
 end
 
 function branch_problem6b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem6c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem7a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem7b()
-	Describe(DescLink_SongJinProblem.."8¡¢ËÎ½ğÕ½×¨ÓÃµÀ¾ßÄÜ²»ÄÜ¹ºÂò£¿<enter>"
-	.."A:¿ÉÒÔ¡£Íæ¼ÒÖ»ÄÜÔÚËÎ½ğÕ½Î´¿ªÕ½Ç°£¬ÔÚĞÂ°æËÎ½ğ´óÕ½±¨ÃûµãµÄ¾üĞè¹Ù´¦Ê¹ÓÃ»ñµÃµÄËÎ½ğ»ı·Ö¹ºÂò×¨ÓÃµÀ¾ß¡£<enter>"--y
-	.."B:¿ÉÒÔ¡£Íæ¼Ò¿ÉÒÔËæÊ±ÔÚĞÂ°æËÎ½ğ´óÕ½±¨ÃûµãµÄ¾üĞè¹Ù´¦¹ºÂòËÎ½ğ×¨ÓÃµÀ¾ß£¬ĞèÒª»¨·ÑÒ»¶¨µÄ½£ÏÀ±Ò¡£<enter>"
-	.."C:²»¿ÉÒÔ¡£Íæ¼ÒÖ»ÄÜÔÚĞÂ°æËÎ½ğÕ½³¡ÄÚÉ±NPCµÃµ½¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."8.Cã thÓ mua C«ng cô Tèng Kim chuyªn dïng kh«ng?<enter>"
+	.."A: Cã thÓ. Tr­íc khi khai chiÕn, ng­êi ch¬i cã thÓ  dïng ®iÓm tİch lòy ®Ó ®æi c«ng cô chuyªn dông t¹i Qu©n Nhu Quan.<enter>"--y
+	.."B: Cã thÓ. Ng­êi ch¬i  cã thÓ ®Õn Qu©n Nhu Quan bÊt cø lóc nµo ®Ó mua c«ng cô Tèng Kim chuyªn dïng, cÇn ph¶i tèn mét sè tiÒn nhÊt ®Şnh.<enter>"
+	.."C: Kh«ng thÓ. Ng­êi ch¬i chØ cã thÓ nhËn ®­îc khi h¹ gôc mét NPC  trong chiÕn tr­êng.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem8a","B/branch_problem8b","C/branch_problem8c")
 end
 
 function branch_problem7c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem8a()
-	Describe(DescLink_SongJinProblem.."9¡¢½øÈëÕ½³¡ºóÄÜ²»ÄÜ°ÚÌ¯ÂòÂôÎïÆ·£¿<enter>"
-	.."A:Íæ¼ÒÖ»ÄÜÔÚĞÂ°æËÎ½ğ´óÕ½µÄ±¨Ãûµã´¦°ÚÌ¯¡£<enter>"
-	.."B:Íæ¼ÒÔÚĞÂ°æËÎ½ğ´óÕ½µÄ±¨ÃûµãºÍÕ½³¡ÖĞ¶¼²»ÄÜ°ÚÌ¯¡£<enter>"
-	.."C:Íæ¼ÒÔÚĞÂ°æËÎ½ğ´óÕ½µÄ±¨ÃûµãºÍÕ½³¡ºóÓªÖĞ¶¼¿ÉÒÔ°ÚÌ¯¡£<enter>" --y
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."9. Sau khi gia nhËp chiÕn tr­êng cã thÓ bµy b¸n vËt phÈm kh«ng?<enter>"
+	.."A: Ng­êi ch¬i chØ cã thÓ bµy b¸n ë  ®iÓm b¸o danh Tèng Kim.<enter>"
+	.."B: Ng­êi ch¬i kh«ng thÓ bµy b¸n trong chiÕn tr­êng vµ ®iÓm b¸o danh Tèng Kim.<enter>"
+	.."C: Ng­êi ch¬i cã thÓ bµy b¸n trong chiÕn tr­êng vµ ®iÓm b¸o danh Tèng Kim.<enter>" --y
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem9a","B/branch_problem9b","C/branch_problem9c")	
 end
 
 function branch_problem8b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem8c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem9a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem9b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem9c()
-	Describe(DescLink_SongJinProblem.."10¡¢ÔÚËÎ½ğ´óÕ½ÖĞ£¬ÄÜ²»ÄÜËæÒâÑ¡ÔñÕóÓª£¿<enter>"
-	.."A:²»ĞĞ¡£Ò»ÃûÍæ¼ÒÒ»µ©±¨Ãû²Î¼ÓÒ»·½£¬ÒÔºóËùÓĞµÄÕ½ÒÛ¶¼±ØĞë²Î¼ÓÕâÒ»·½µÄÕóÓª¡£<enter>"
-	.."B:¿ÉÒÔ¡£Íæ¼Ò¿ÉÒÔÔÚÕâÒ»³¡²Î¼ÓÒ»·½£¬½ô½Ó×ÅµÄÏÂÒ»³¡¾Í²Î¼ÓµĞ·½ÕóÓª¡£<enter>"
-	.."C:²»ĞĞ¡£Ò»ÃûÍæ¼ÒÔÚÒ»¸öÕ½ÒÛÖÜÆÚÄÚÖ»ÄÜÑ¡Ôñ¼ÓÈëËÎ½ğÆäÖĞÒ»·½£¬²»ÄÜ¸ü»»ÕóÓª¡£<enter>" --y
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."10. Trong chiÕn tr­êng Tèng Kim, cã thÓ tïy ı ®æi phe ®­îc kh«ng? <enter>"
+	.."A: Kh«ng ®­îc. Ng­êi ch¬i  khi tham gia b¸o danh bªn nµo, sau nµy trong tÊt c¶ c¸c chiÕn dŞch ng­êi ch¬i nhÊt thiÕt ph¶i tham gia bªn ®ã.<enter>"
+	.."B: Kh«ng! Mçi ng­êi trong 1 lÇn chiÕn dŞch chØ cã thÓ tham gia 1 phe. <enter>"
+	.."C: §­îc! TrËn ®Çu tham gia phe nµy, trËn sau cã thÓ tham gia phe kia. <enter>" --y
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem10a","B/branch_problem10b","C/branch_problem10c")	
 end
 
 function branch_problem10a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem10b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem10c()
-	Describe(DescLink_SongJinProblem.."11¡¢ÈçºÎ±¼¸°ËÎ½ğÕ½³¡£¿<enter>"
-	.."A:´ÓÏåÑô³Ç¿ÉÒÔµ½ËÎ·½±¨Ãûµã£¬´ÓÖìÏÉÕò¿ÉÒÔµ½½ğ·½±¨Ãûµã¡£´ËÍâ£¬Ê¹ÓÃËÎ½ğÕ½Ú¯Êé¿ÉÒÔÖ±½Ó´«ËÍµ½ËÎ½ğ±¨Ãûµã¡£<enter>"--y
-	.."B:µ½Æß´ó³ÇÊĞµÄ³µ·ò´¦£¬½»ÄÉÒ»¶¨µÄ·ÑÓÃ¾Í¿ÉÒÔ×ø³µµ½´ïËÍ½ø±¨Ãûµã¡£<enter>"
-	.."C:µ½¸÷´ó³ÇÊĞµÄ³ÇÃÅÕÒÊØ³ÇÊ¿±ø£¬½»¸øÎåÇ§Ô²¾Í¿ÉÖ±½Ó´«ËÍµ½ËÎ½ğÕ½³¡¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."11. Lµm thÕ nµo ®Ó vµo chiÕn tr­êng Tèng Kim?<enter>"
+	.."A:  Cã thÓ ®Õn ®iÓm b¸o danh phe Tèng t¹i T­¬ng D­¬ng, ®iÓm b¸o danh phe Kim t¹i Chu Tiªn TrÊn hoÆc sö dông Tèng Kim Chiªu th­ ®Ó trùc tiÕp ®Õn ®iÓm b¸o danh.<enter>"--y
+	.."B: §Õn Xa phu tr¶ mét kho¶n tiÒn nhÊt ®Şnh ®Ó ®Õn ®iÓm b¸o danh.<enter>"
+	.."C: §Õn vÖ binh thµnh m«n nép 5000 l­îng ®Ó trùc tiÕp ®­a ®Õn chiÕn tr­êng Tèng Kim.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem11a","B/branch_problem11b","C/branch_problem11c")	
 end
 
 function branch_problem11a()
-	Describe(DescLink_SongJinProblem.."12¡¢ÈçºÎµÃµ½ËÎ½ğÕ½Ú¯Êé£¿<enter>"
-	.."A:¿ÉÒÔ´ò¹ÖµÃµ½¡£<enter>"
-	.."B:¿ÉÒÔÔÚ7´ó³ÇÊĞµÄÔÓ»õµêÂòµ½£¬Ã¿¸ö5000Á½½£ÏÀ±Ò¡£<enter>"--y
-	.."C:ĞèÒªÓÃÌØÊâÎïÆ·»»È¡¡£<enter>" 
-	.."Äã¾õµÃÉÏÃæÈı¸ö´ğ°¸£¬ÄÄ¸öÊÇÕıÈ·µÄÄØ£¿<enter>",
+	Describe(DescLink_SongJinProblem.."12. Lµm thÕ nµo cã ®­îc Tèng Kim Chiªu th­?<enter>"
+	.."A: §¸nh qu¸i vËt cã ®­îc.<enter>"
+	.."B: Cã thÓ ®Õn tiÖm t¹p hãa ®Ó mua, mçi c¸i 5000 l­îng.<enter>"--y
+	.."C: CÇn dïng vËt phÈm ®Æc biÖt ®Ó ®æi.<enter>" 
+	.."Trong 3 ®¸p ¸n bªn trªn, ®¸p ¸n nµo chİnh x¸c?<enter>",
 	3,"A/branch_problem12a","B/branch_problem12b","C/branch_problem12c")	
 end
 
 function branch_problem11b()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem11c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem12a()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
 function branch_problem12b()
-	Describe("¹§Ï²Äú£¬È«²¿»Ø´ğÕıÈ·£¬¹ı¹ØÀ­£¡",1,"½áÊø¶Ô»°/branch_problemend")
+	Describe("Chóc mõng b¹n ®· ®¸p chİnh x¸c! B¹n ®· qua ¶i!",1,"KÕt thóc ®èi tho¹i/branch_problemend")
 end
 
 function branch_problem12c()
-	Talk(1,"","¶Ô²»Æğ£¬Äú»Ø´ğ´íÁË£¬µ«Çë²»Òª·ÅÆú£¬¼ÌĞøÅ¬Á¦°É¡£")
+	Talk(1,"","Xin lçi! B¹n ®· tr¶ lêi sai! Thö l¹i nhĞ!")
 	return
 end
 
@@ -253,5 +253,5 @@ function branch_problemend()
 	elseif ( Uworld1061 == 50 ) then
 		nt_setTask(1061,60)
 	end
-	Msg2Player("ÄãÒÑË³Àû¹ı¹Ø£¬¿ÉÒÔ½øĞĞÏÂÃæµÄÈÎÎñÁË¡£")
+	Msg2Player("B¹n ®· qua ¶i thµnh c«ng! Cã thÓ nhËn nhiÖm vô tiÕp theo!")
 end

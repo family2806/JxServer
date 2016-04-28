@@ -6,7 +6,7 @@ function main(sel)
 	if ( Uworld1058 ~= 0 ) then
 		branch_shenfeng()
 	else
-Say("æÎ¿Í£º×Ô¹ÅÎÄÈË½Ô¶àÇé¡£ÌÆÈË¶ÅÄÁÓĞÊ«Ô»¡°Ê®ÄêÒ»¾õÑïÖİÃÎ£¬Ó®µÃÇàÂ¥±¡ĞÒÃû¡±£¬ÎÒÖ»²»¹ıĞ§·¨¹ÅÈË£¬ÒĞºìÙË´ä£¬²»¹¼¸ºÕâÇà´ººÃÊ±¹â°ÕÁË¡£",0)
+Say("§ç Môc nhµ §­êng cã c©u th¬ 'ThËp Niªn NhÊt Gi¸c D­¬ng Ch©u Méng, Doanh §¾c Thanh LÇu B¹c H¹nh Danh', hµ tÊt ph¶i chĞm giÕt lÉn nhau chø?",0)
 	end
 end;
 

@@ -125,16 +125,16 @@ function tbPlayer:CalcResult(nOpponentsRank, szResult)
 	self:SetRank(nRank)
 	local nDiffRank = nRank - nCurRank
 	if nDiffRank > 0 then
-		Msg2Player(format("ÄãµÄ¾º¼¼³¡¼¼ÄÜÌáÉı %d", nDiffRank))
+		Msg2Player(format("§¼ng cÊp C¶nh Kü Tr­êng cña ng­¬i t¨ng lªn %d", nDiffRank))
 	elseif nDiffRank < 0 then
-		Msg2Player(format("ÄãµÄ¾º¼¼³¡¼¼ÄÜ½µµÍ %d", -nDiffRank))
+		Msg2Player(format("§¼ng cÊp C¶nh Kü Tr­êng cña ng­¬i gi¶m xuèng %d", -nDiffRank))
 	end
 	
 	tbLog:PlayerAwardLog("[arena]", "add rank", "arena rank", "", nRank - nCurRank)
 	if self:GetCurCount() < self.PER_WEEK_COUNT then 
 		local nCredits = %tbCreditsFormula:Calc(szResult, nRank)
 		local nDiffCredits = self:AddCredits(nCredits)
-		Msg2Player(format("ÄãµÃµ½µÄ¾º¼¼³¡½±Æ·ÊÇ %d »ÕÕÂ", nDiffCredits))
+		Msg2Player(format("Ng­¬i nhËn ®­îc phÇn th­ëng C¶nh Kü Tr­êng lµ %d Huy Ch­¬ng", nDiffCredits))
 	end
 	self:AddCount(1, szResult)
 end
@@ -171,7 +171,7 @@ function tbPlayer:UpdatePerWeek()
 			local nRank = self:GetRank()
 			local nCredits = %tbCreditsFormula:CalcExtraCredits(nRank)
 			local nDiffCredits = tbPlayer:AddCredits(nCredits)
-			Msg2Player(format("ÄãµÃµ½µÄÆäËûÃ¿ÖÜ¾º¼¼³¡½±Æ·ÊÇ %d »ÕÕÂ", nDiffCredits))
+			Msg2Player(format("Ng­¬i nhËn ®­îc phÇn th­ëng kh¸c mçi tuÇn cña C¶nh Kü Tr­êng lµ %d Huy Ch­¬ng", nDiffCredits))
 		end
 		SetTask(self.TSK_GET_TITLE_FLAG, 0)
 		SetTask(self.TSK_CUR_COUNT, 0)

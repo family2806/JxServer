@@ -18,7 +18,7 @@ function main(nAreaId)
 			local nX, nY = pDungeon:GetRandomAPos(CAMP2AREA[nCamp], "homepos")
 			SetPos(floor(nX/32), floor(nY/32))
 			SetFightState(0)
-			Msg2Player("Ç°ÃæÉ½¹ÈÖØµş£¬¿Ï¶¨ÓĞ·ü±ø!Äã²»ÒªËæ±ãÉÏÇ°¡£")
+			Msg2Player("Phİa tr­íc s¬n cèc chËp trïng, ch¾c ch¾n cã phôc binh! B¹n kh«ng nªn tù tiÖn x«ng lªn!")
 		end
 	end
 end

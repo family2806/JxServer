@@ -11,180 +11,180 @@ WEEK_CARD_LOTTERY_ID_COUNT = 5;			-- ÖÜ¿¨»»È¡µÄ²ÊÆ±°üº¬µÄºÅÂëÊı
 
 
 --	½±Æ·ÉèÖÃ¸ñÊ½Îª£º	 {
---						"½±Æ·ÃèÊö",
+--						" phÇn th­ëng miªu t¶ ",
 --						{
 --							{ ºòÑ¡½±Æ·1Ãû³Æ, { ºòÑ¡½±Æ·1²ÎÊı }, ºòÑ¡½±Æ·1¸öÊı, ºòÑ¡½±Æ·1³éÖĞ¸ÅÊı },
 --							...
 --						}
 --					 }
---	µÚ1ÆÚ £¨2004.11.22 - 2004.11.28£©--------------------------------------------------------
+--	Thø 1ÆÚ £¨2004.11.22 - 2004.11.28£©--------------------------------------------------------
 --	FIRST_PRIZE_AWARD = {
---							"°²°îÖ®±ù¾§Ê¯ÏîÁ´1Ìõ",
---							{ { "°²°îÖ®±ù¾§Ê¯ÏîÁ´", { 4, 2549, 0, 164 }, 1, 1 }, }
+--							" an bang chi b¨ng tinh th¹ch gi©y chuyÒn 1 con ",
+--							{ { " an bang chi b¨ng tinh th¹ch gi©y chuyÒn ", { 4, 2549, 0, 164 }, 1, 1 }, }
 --						};
 --	SECOND_PRIZE_AWARD = {
---							"¡¶ÎäÁÖÃØ¼®¡·1±¾",
---							{ { "ÎäÁÖÃØ¼®", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 }, }
+--							" vâ l©m bİ tŞch 1 vèn ",
+--							{ { " vâ l©m bİ tŞch ", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 }, }
 --						 };
 --	OTHER_PRIZE_AWARD1 = {
---							"ÏÉ²İÂ¶10¸ö",
---							{ { "ÏÉ²İÂ¶", { 6, 1, 71, 1, 0, 0, 0 }, 10, 1 }, }
+--							" tiªn th¶o lé 10 c¸ ",
+--							{ { " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 10, 1 }, }
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---							"ÏÉ²İÂ¶2¸ö",
---							{ { "ÏÉ²İÂ¶", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 }, }
+--							" tiªn th¶o lé 2 c¸ ",
+--							{ { " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 }, }
 --						 };
---	µÚ2ÆÚ £¨2004.11.28 - 2004.12.05£©--------------------------------------------------------
+--	Thø 2ÆÚ £¨2004.11.28 - 2004.12.05£©--------------------------------------------------------
 --	FIRST_PRIZE_AWARD = {
---							"¶¨¹úÏµÁĞ»Æ½ğ×°±¸Ëæ»ú1¼ş",
+--							" ®Şnh n­íc hÖ liÖt hoµng kim trang bŞ ngÉu nhiªn 1 mãn ",
 --							{
---								{ "¶¨¹úÖ®ÇàÉ´³¤ÉÀ", { 0, 159 }, 1, 1 },
---								{ "¶¨¹úÖ®ÎÙÉ°·¢¹Ú", { 0, 160 }, 1, 1 },
---								{ "¶¨¹úÖ®³à¾îÈíÑ¥", { 0, 161 }, 1, 1 },
---								{ "¶¨¹úÖ®×ÏÌÙ»¤Íó", { 0, 162 }, 1, 1 },
---								{ "¶¨¹úÖ®Òø²ÏÑü´ø", { 0, 163 }, 1, 1 },
+--								{ " ®Şnh quèc chi lôa máng xanh tr­êng sam ", { 0, 159 }, 1, 1 },
+--								{ " ®Şnh quèc chi « sa ph¸t quan ", { 0, 160 }, 1, 1 },
+--								{ " ®Şnh quèc chi xİch quyªn mÒm ngoa ", { 0, 161 }, 1, 1 },
+--								{ " ®Şnh quèc chi tö ®»ng hé cæ tay ", { 0, 162 }, 1, 1 },
+--								{ " ®Şnh quèc chi ng©n tµm ®ai l­ng ", { 0, 163 }, 1, 1 },
 --							}
 --						};
 --	SECOND_PRIZE_AWARD = {
---							"¡¶ÎäÁÖÃØ¼®¡·1±¾",
+--							" vâ l©m bİ tŞch 1 vèn ",
 --							{
---								{ "ÎäÁÖÃØ¼®", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 },
+--								{ " vâ l©m bİ tŞch ", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 },
 --							}
 --						 };
 --	OTHER_PRIZE_AWARD1 = {
---							"Ë®¾§»òĞÉºì±¦Ê¯1¸ö",
+--							" thñy tinh hoÆc ®á th¾m b¶o th¹ch 1 c¸ ",
 --							{
---								{ "À¼Ë®¾§", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
---								{ "×ÏË®¾§", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
---								{ "ÂÌË®¾§", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
---								{ "ĞÉºì±¦Ê¯", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " lan thñy tinh ", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " tö thñy tinh ", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " n­íc biÕc tinh ", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " ®á th¾m b¶o th¹ch ", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
 --							}			
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---							"ÏÉ²İÂ¶2¸ö",
+--							" tiªn th¶o lé 2 c¸ ",
 --							{
---								{ "ÏÉ²İÂ¶", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
+--								{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
 --							}
 --						 };
---	µÚ3ÆÚ £¨2004.12.05 - 2004.12.12£©--------------------------------------------------------
+--	Thø 3ÆÚ £¨2004.12.05 - 2004.12.12£©--------------------------------------------------------
 --	FIRST_PRIZE_AWARD = {
---							"¼ÌÒµÖ®±¼À××êÁúÇ¹1°Ñ",
+--							" kÕ nghiÖp chi sÊm ®¸nh chui long sóng 1 ®em ",
 --							{
---								{ "¼ÌÒµÖ®±¼À××êÁúÇ¹", { 0, 21 }, 1, 1 },
+--								{ " kÕ nghiÖp chi sÊm ®¸nh chui long sóng ", { 0, 21 }, 1, 1 },
 --							}
 --						};
 --	SECOND_PRIZE_AWARD = {
---							"¶¨¹ú°²°î»Æ½ğ×°±¸1¼ş",
+--							" ®Şnh quèc an bang hoµng kim trang bŞ 1 mãn ",
 --							{
---								{ "¶¨¹úÖ®ÇàÉ´³¤ÉÀ", { 0, 159 }, 1, 10 },
---								{ "¶¨¹úÖ®ÎÙÉ°·¢¹Ú", { 0, 160 }, 1, 8 },
---								{ "¶¨¹úÖ®³à¾îÈíÑ¥", { 0, 161 }, 1, 14 },
---								{ "¶¨¹úÖ®×ÏÌÙ»¤Íó", { 0, 162 }, 1, 12 },
---								{ "¶¨¹úÖ®Òø²ÏÑü´ø", { 0, 163 }, 1, 14 },
---								{ "°²°îÖ®±ù¾§Ê¯ÏîÁ´", { 0, 164 }, 1, 8 },
---								{ "°²°îÖ®¾Õ»¨Ê¯Ö¸»·", { 0, 165 }, 1, 12 },
---								{ "°²°îÖ®Ìï»ÆÊ¯ÓñÅå", { 0, 166 }, 1, 12 },
---								{ "°²°îÖ®¼¦ÑªÊ¯½äÖ¸", { 0, 167 }, 1, 10 },
+--								{ " ®Şnh quèc chi lôa máng xanh tr­êng sam ", { 0, 159 }, 1, 10 },
+--								{ " ®Şnh quèc chi « sa ph¸t quan ", { 0, 160 }, 1, 8 },
+--								{ " ®Şnh quèc chi xİch quyªn mÒm ngoa ", { 0, 161 }, 1, 14 },
+--								{ " ®Şnh quèc chi tö ®»ng hé cæ tay ", { 0, 162 }, 1, 12 },
+--								{ " ®Şnh quèc chi ng©n tµm ®ai l­ng ", { 0, 163 }, 1, 14 },
+--								{ " an bang chi b¨ng tinh th¹ch gi©y chuyÒn ", { 0, 164 }, 1, 8 },
+--								{ " an bang chi hoa cóc th¹ch chiÕc nhÉn ", { 0, 165 }, 1, 12 },
+--								{ " an bang chi ®iÒn hoµng th¹ch ngäc béi ", { 0, 166 }, 1, 12 },
+--								{ " an bang chi m¸u gµ th¹ch chiÕc nhÉn ", { 0, 167 }, 1, 10 },
 --							}
 --					 };
 --	OTHER_PRIZE_AWARD1 = {
---							"Ë®¾§»òĞÉºì±¦Ê¯1¸ö",
+--							" thñy tinh hoÆc ®á th¾m b¶o th¹ch 1 c¸ ",
 --							{
---								{ "À¼Ë®¾§", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
---								{ "×ÏË®¾§", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
---							{ "ÂÌË®¾§", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
---								{ "ĞÉºì±¦Ê¯", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " lan thñy tinh ", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " tö thñy tinh ", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
+--							{ " n­íc biÕc tinh ", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
+--								{ " ®á th¾m b¶o th¹ch ", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
 --							}			
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---								"ÏÉ²İÂ¶2¸ö",
+--								" tiªn th¶o lé 2 c¸ ",
 --							{
---								{ "ÏÉ²İÂ¶", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
+--								{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
 --							}
 --						 };
 
 
---	µÚ5ÆÚ £¨2004.12.27 - 2005.01.02£©--------------------------------------------------------
+--	Thø 5ÆÚ £¨2004.12.27 - 2005.01.02£©--------------------------------------------------------
 --FIRST_PRIZE_AWARD = {
---						"¸÷ÃÅÅÉ´ó»Æ½ğ×°±¸Ëæ»úÒ»¼ş",
+--						" c¸c m«n ph¸i ®¹i hoµng kim trang bŞ ngÉu nhiªn mét mãn ",
 --						{
---							{ "Ä§»ÍÖ®°´³ö»¢ÏîÈ¦", { 0, 107 }, 1, 1 },
---							{ "¼°·áÖ®ÈıÇå·û", { 0, 122 }, 1, 1 },
---							{ "ÎŞ÷ÊÖ®Ï´ÏóÓñ¿Û", { 0, 39 }, 1, 1 },
---							{ "¶´²ìÖ®°×ÓñÇ¬À¤Åå", { 0, 144 }, 1, 1 },
---							{ "Í¬³ğÖ®½µÁúØ¤ÒÂ", { 0, 92 }, 1, 1 },
---							{ "ÓÄëÊÖ®Ä«ÖëÈíÂÄ", { 0, 60 }, 1, 1 },
+--							{ " ma hoµng chi theo nh­ ra hæ h¹ng vßng ", { 0, 107 }, 1, 1 },
+--							{ " cïng phong chi ba thanh phï ", { 0, 122 }, 1, 1 },
+--							{ " v« yÓm chi t¾m gièng ngäc trõ ", { 0, 39 }, 1, 1 },
+--							{ " ®éng s¸t chi b¹ch ngäc cµn kh«n béi ", { 0, 144 }, 1, 1 },
+--							{ " cïng thï chi hµng long c¸i y ", { 0, 92 }, 1, 1 },
+--							{ " u l«ng chi mùc chu mÒm lı ", { 0, 60 }, 1, 1 },
 --						}
 --					};
 --SECOND_PRIZE_AWARD = {
---						"¡¶ÎäÁÖÃØ¼®¡·1±¾",
+--						" vâ l©m bİ tŞch 1 vèn ",
 --						{
---							{ "ÎäÁÖÃØ¼®", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 },
+--							{ " vâ l©m bİ tŞch ", { 6, 1, 26, 1, 0, 0, 0 }, 1, 1 },
 --						}
 --					 };
 --OTHER_PRIZE_AWARD1 = {
---						"Ë®¾§»òĞÉºì±¦Ê¯1¸ö",
+--						" thñy tinh hoÆc ®á th¾m b¶o th¹ch 1 c¸ ",
 --						{
---							{ "À¼Ë®¾§", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
---							{ "×ÏË®¾§", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
---							{ "ÂÌË®¾§", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
---							{ "ĞÉºì±¦Ê¯", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
+--							{ " lan thñy tinh ", { 4, 238, 1, 1, 0, 0, 0 }, 1, 1 },
+--							{ " tö thñy tinh ", { 4, 239, 1, 1, 0, 0, 0 }, 1, 1 },
+--							{ " n­íc biÕc tinh ", { 4, 240, 1, 1, 0, 0, 0 }, 1, 1 },
+--							{ " ®á th¾m b¶o th¹ch ", { 4, 353, 1, 1, 0, 0, 0 }, 1, 1 },
 --						}			
 --					 };
 --OTHER_PRIZE_AWARD2 = {
---						"ÏÉ²İÂ¶3¸ö",
+--						" tiªn th¶o lé 3 c¸ ",
 --						{
---							{ "ÏÉ²İÂ¶", { 6, 1, 71, 1, 0, 0, 0 }, 3, 1 },
+--							{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 3, 1 },
 --						}
 --					 };
 					 
 
---µÚ6ÆÚ(2005.01.02 - 2005.01.09)
+--Thø 6ÆÚ(2005.01.02 - 2005.01.09)
 FIRST_PRIZE_AWARD = {
-						"°²°îÖ®±ù¾§Ê¯ÏîÁ´1Ìõ",
+						" an bang chi b¨ng tinh th¹ch gi©y chuyÒn 1 con ",
 						{ 
-							{ "°²°îÖ®±ù¾§Ê¯ÏîÁ´", { 0, 164 }, 1, 1 }, 
+							{ " an bang chi b¨ng tinh th¹ch gi©y chuyÒn ", { 0, 164 }, 1, 1 }, 
 						}
 					};
 SECOND_PRIZE_AWARD = {
-						"¡¶Ï´Ëè¾­¡·1±¾",
+						" TÈy Tñy Kinh 1 vèn ",
 						{
-							{ "Ï´Ëè¾­", { 6, 1, 22, 1, 0, 0, 0 }, 1, 1 },
+							{ " TÈy Tñy Kinh ", { 6, 1, 22, 1, 0, 0, 0 }, 1, 1 },
 						}
 					 };
 OTHER_PRIZE_AWARD1 = {
-						"´ó°×¾ÔÍè3¸ö",
+						" râ rµng c©u hoµn 3 c¸ ",
 						{
-							{ "´ó°×¾ÔÍè", { 6, 1, 130, 1, 0, 0, 0 }, 3, 1 },
+							{ " râ rµng c©u hoµn ", { 6, 1, 130, 1, 0, 0, 0 }, 3, 1 },
 						}			
 					 };
 OTHER_PRIZE_AWARD2 = {
-						"´ó°×¾ÔÍè1¸ö",
+						" râ rµng c©u hoµn 1 c¸ ",
 						{
-							{ "´ó°×¾ÔÍè", { 6, 1, 130, 1, 0, 0, 0 }, 1, 1 },
+							{ " râ rµng c©u hoµn ", { 6, 1, 130, 1, 0, 0, 0 }, 1, 1 },
 						}
 					 };
 
 -- ĞÒÔË²ÊÆ±²Ëµ¥Ïî
 function onLotteryGold()
-	Say( "Àñ¹Ù£ºÄúºÃ£¬ÎªÁË»Ø±¨Äú¶ÔÓÚÎÒÃÇµÄ´óÁ¦Ö§³Ö£¬½£Íø×Ô2004Äê11ÔÂ22ÈÕÆğÍÆ³öĞÒÔË²ÊÆ±»î¶¯¡£Í¨¹ıÃ¿¸öÖÜÈÕµÄ¿ª½±£¬Äú½«»ñµÃÎÒÃÇËÍ³öµÄ¸÷ÖÖ·áºñ½±Æ·¡£Èç¹ûÄúÓĞ²»Çå³şµÄµØ·½£¬¿ÉÒÔ²ÎÔÄ±¾²Ëµ¥ÖĞ¹ØÓÚĞÒÔË²ÊÆ±µÄÏêÏ¸½âÊÍ¡£", 5, "ÁìÈ¡ĞÒÔË²ÊÆ±/onLotteryGold_Gain", "ĞÒÔË²ÊÆ±¶Ò½±/onLotteryGold_Prize", "²éÑ¯ÖĞ½±ºÅÂë/onLotteryGold_QueryPrize", "¹ØÓÚĞÒÔË²ÊÆ±/onLotteryGold_About", "ÎÒÖ»ÊÇÀ´¹ä¹ä/onCancel" );
+	Say( " lÔ quan  ngµi kháe , v× håi b¸o ngµi ®èi víi chóng ta lùc m¹nh ñng hé , vâng kiÕm tù 2004 n¨m 11 th¸ng 22 ngµy khëi ®Èy ra may m¾n vĞ sè ho¹t ®éng . th«ng qua mçi chñ nhËt ®İch khai t­ëng , ngµi ®em ®¹t ®­îc chóng ta ®­a ra ®İch c¸c lo¹i phong phó phÇn th­ëng . nÕu nh­ ngµi kh«ng hÒ râ rµng ®Şa ph­¬ng , cã thÓ tè duyÖt vèn thùc ®¬n trung liªn quan tíi may m¾n vĞ sè ®İch gi¶i thİch cÆn kÏ . ", 5, "NhËn lÊy may m¾n vĞ sè /onLotteryGold_Gain", "May m¾n vĞ sè ®æi t­ëng /onLotteryGold_Prize", "TuÇn tra trung t­ëng d·y sè /onLotteryGold_QueryPrize", " liªn quan tíi may m¾n vĞ sè /onLotteryGold_About", "Ta ch¼ng qua lµ tíi ®i d¹o mét chót /onCancel" );
 end
 
 -- ·ÇÑïÖİµÄÀñ¹ÙµÄ¶Ô»°
 function onLotteryGoldEx()
-	Say( "Àñ¹Ù£ºÄúºÃ£¬ÎªÁË»Ø±¨Äú¶ÔÓÚÎÒÃÇµÄ´óÁ¦Ö§³Ö£¬½£Íø×Ô2004Äê11ÔÂ22ÈÕÆğÍÆ³öĞÒÔË²ÊÆ±»î¶¯¡£Í¨¹ıÃ¿¸öÖÜÈÕµÄ¿ª½±£¬Äú½«»ñµÃÎÒÃÇËÍ³öµÄ¸÷ÖÖ·áºñ½±Æ·£¬´Ë»î¶¯Ö»ÏŞÓÚÔÚ<color=red>ÑïÖİ<color>µÄÀñ¹Ù´¦½øĞĞ¡£",0);
+	Say( " lÔ quan  ngµi kháe , v× håi b¸o ngµi ®èi víi chóng ta lùc m¹nh ñng hé , vâng kiÕm tù 2004 n¨m 11 th¸ng 22 ngµy khëi ®Èy ra may m¾n vĞ sè ho¹t ®éng . th«ng qua mçi chñ nhËt ®İch khai t­ëng , ngµi ®em ®¹t ®­îc chóng ta ®­a ra ®İch c¸c lo¹i phong phó phÇn th­ëng , nµy ho¹t ®éng chØ giíi h¹n ë ë <color=red> D­¬ng Ch©u <color> ®İch lÔ quan chç tiÕn hµnh . ",0);
 end
 
 -- ÁìÈ¡ĞÒÔË²ÊÆ±
 function onLotteryGold_Gain()
 
-	Say( "Àñ¹Ù£º±¾ÆÚ²ÊÆ±ÉÔºò·¢ĞĞ£¬·¢ĞĞÊ±¼äÇëÄú¶à¶à¹Ø×¢¡£", 1, "ÎÒÖªµÀÁË£¬Ğ»Ğ»/main" );
+	Say( " lÔ quan  vèn kú vĞ sè chê mét chót ph¸t ®­îc , ph¸t ®­îc thêi gian xin/mêi ngµi nhiÒu h¬n chó ı . ", 1, "Ta biÕt , c¸m ¬n /main" );
 	do return end
 	
 	local nWeekDay = tonumber( date( "%w" ) );
 	local nHour = tonumber( date( "%H" ) );
 	if( nWeekDay == 0 and nHour >= 8 and nHour < 11 ) then
-		Say( "Àñ¹Ù£ººÜ±§Ç¸£¬Ã¿ÖÜÈÕ8£º00ÖÁ11£º00ÆÚ¼äËù³ä¿¨ÎŞ·¨»»È¡²ÊÆ±£¬»î¶¯Ï¸ÔòÇë²é¿´¡°¹ØÓÚĞÒÔË²ÊÆ±¡±£¬¶àĞ»ºÏ×÷¡£", 1, "ÎÒÖªµÀÁË£¬Ğ»Ğ»/onLotteryGold" );
+		Say( " lÔ quan  rÊt xin lçi , mçi tuÇn ngµy 800 tíi 1100 trong lóc së sung t¹p kh«ng c¸ch nµo ®æi lÊy vĞ sè , ho¹t ®éng tÕ lµ xin/mêi tra xĞt “ liªn quan tíi may m¾n vĞ sè ” , ®a t¹ hîp t¸c . ", 1, "Ta biÕt , c¸m ¬n /onLotteryGold" );
 		do return end
 	end
 	local nEPValue = GetExtPoint( EXTPOINT_LOTTERY_GOLD );
@@ -197,24 +197,24 @@ function onLotteryGold_Gain()
 	if( nEPValue >= WEEK_CARD_EXTPOINT_COST ) then
 		nMonthCardCount = floor( nEPValue / MONTH_CARD_EXTPOINT_COST );
 		nWeekCardCount = floor( mod( nEPValue, MONTH_CARD_EXTPOINT_COST ) / WEEK_CARD_EXTPOINT_COST );
-		szSayContent = "<#>Àñ¹Ù£ºÄú¿ÉÒÔÁìÈ¡";
+		szSayContent = "<> lÔ quan  ngµi cã thÓ nhËn lÊy ";
 		if( nMonthCardCount > 0 ) then
-			szSayContent = szSayContent.." <color=yellow>"..nMonthCardCount.."<#><color> ÕÅ10Ëæ»úºÅÂëµÄÌ×Æ±";
+			szSayContent = szSayContent.." <color=yellow>"..nMonthCardCount.."<><color> tê 10 ngÉu nhiªn d·y sè ®İch bé/vá phiÕu ";
 		end
 		if( nWeekCardCount > 0 ) then
 			if( nMonthCardCount > 0 ) then
-				szSayContent = szSayContent.."<#>ºÍ";
+				szSayContent = szSayContent.."<> cïng ";
 			end
-			szSayContent = szSayContent.." <color=yellow>"..nWeekCardCount.."<#><color> ÕÅ5Ëæ»úºÅÂëµÄÌ×Æ±";
+			szSayContent = szSayContent.." <color=yellow>"..nWeekCardCount.."<><color> tê 5 ngÉu nhiªn d·y sè ®İch bé/vá phiÕu ";
 		end
-		szSayContent = szSayContent.."<#>£¬ÇëÕûÀíºÃÄúµÄ±³°ü£¬È·±£ÓĞ×ã¹»µÄ¿Õ¼ä·ÅÖÃ²ÊÆ±£¬²»ÒªÈÃ±ğÈË¼ñÁË±ãÒËÅ¶¡£";
+		szSayContent = szSayContent.."<> , xin/mêi söa sang l¹i h¶o ngµi ®İch tói ®eo l­ng , b¶o ®¶m cã ®Çy ®ñ kh«ng gian ®Ó ®­a vĞ sè , kh«ng nªn ®Ó cho ng­êi kh¸c l­îm tiÖn nghi nga . ";
 		if( nMonthCardCount + nWeekCardCount > 10 ) then
-			Say( szSayContent, 4, "±³°ü¿Õ×ÅÄÄ£¬ÎÒÈ«²¿²ÊÆ±Ò»¿éÁìÁË°É/onLotteryGold_Gain_All", "±³°ü¿Õ¼ä²»ÊÇºÜ¹»£¬ÎÒÏÈÖ»Áì10ÕÅ²ÊÆ±°É/onLotteryGold_Gain_10", "±³°ü¿Õ¼ä²»ÊÇºÜ¹»£¬ÎÒÏÈÖ»Áì1ÕÅ²ÊÆ±°É/onLotteryGold_Gain_1", "ÎÒÔÙÕûÀíÒ»ÏÂ±³°ü°É/onCancel" );
+			Say( szSayContent, 4, "Tói ®eo l­ng trèng kh«ng kia , ta toµn bé vĞ sè mét khèi lÜnh ®i /onLotteryGold_Gain_All", "Tói ®eo l­ng kh«ng gian kh«ng ph¶i lµ rÊt ®ñ , ta tr­íc chØ dÉn 10 tê vĞ sè ®i /onLotteryGold_Gain_10", "Tói ®eo l­ng kh«ng gian kh«ng ph¶i lµ rÊt ®ñ , ta tr­íc chØ dÉn 1 tê vĞ sè ®i /onLotteryGold_Gain_1", "Ta n÷a söa sang mét chót tói ®eo l­ng ®i /onCancel" );
 		else
-			Say( szSayContent, 3, "±³°ü¿Õ×ÅÄÄ£¬ÎÒÈ«²¿²ÊÆ±Ò»¿éÁìÁË°É/onLotteryGold_Gain_All", "±³°ü¿Õ¼ä²»ÊÇºÜ¹»£¬ÎÒÏÈÖ»Áì1ÕÅ²ÊÆ±°É/onLotteryGold_Gain_1", "ÎÒÔÙÕûÀíÒ»ÏÂ±³°ü°É/onCancel" );
+			Say( szSayContent, 3, "Tói ®eo l­ng trèng kh«ng kia , ta toµn bé vĞ sè mét khèi lÜnh ®i /onLotteryGold_Gain_All", "Tói ®eo l­ng kh«ng gian kh«ng ph¶i lµ rÊt ®ñ , ta tr­íc chØ dÉn 1 tê vĞ sè ®i /onLotteryGold_Gain_1", "Ta n÷a söa sang mét chót tói ®eo l­ng ®i /onCancel" );
 		end
 	else
-		Say( "Àñ¹Ù£º¶Ô²»Æğ£¬Äú±¾ÖÜÉĞÎ´³ä¿¨»òÕßÄúÒÑÁìÈ¡ÁË±¾ÆÚµÄĞÒÔË²ÊÆ±£¬ÕâÏî¹ºÂò»î¶¯ÊÇÕë¶Ô³ä¿¨ÓÃ»§µÄÌØ±ğ½±ÀøÅ¶£¬ÄúÓĞ¿ÉÄÜ»áĞÒÔËµÄ»ñµÃ»Æ½ğ×°±¸£¬Äú×ĞÏ¸¿¼ÂÇ¿¼ÂÇÂï¡£", 0 );
+		Say( " lÔ quan  thËt xin lçi , ngµi vèn chu ch­a sung t¹p hoÆc lµ ngµi ®· nhËn lÊy vèn kú ®İch may m¾n vĞ sè , c¸i nµy h¹ng mua ho¹t ®éng lµ nh»m vµo sung t¹p dông hé ®İch ®Æc biÖt t­ëng th­ëng nga , ngµi cã thÓ sÏ may m¾n ®¹t ®­îc hoµng kim trang bŞ , ngµi cÈn thËn suy nghÜ mét chót sao . ", 0 );
 	end
 end
 
@@ -267,26 +267,26 @@ function onLotteryGold_Gain_Count( nLotteryCount )
 		end
 		
 		if( ( nMonthLotteryCount + nWeekLotteryCount ) > 0 ) then
-			szSayContent = "<#>Àñ¹Ù£ºÄúÒÑ¾­ÁìÈ¡ÁË";
+			szSayContent = "<> lÔ quan  ngµi ®· nhËn lÊy ";
 			if( nMonthLotteryCount > 0 ) then
-				szSayContent = szSayContent.." <color=yellow>"..nMonthLotteryCount.."<#><color> ÕÅ10Ëæ»úºÅÂëµÄÌ×Æ±";
+				szSayContent = szSayContent.." <color=yellow>"..nMonthLotteryCount.."<><color> tê 10 ngÉu nhiªn d·y sè ®İch bé/vá phiÕu ";
 			end
 			if( nWeekLotteryCount > 0 ) then
 				if( nMonthLotteryCount > 0 ) then
-					szSayContent = szSayContent.."<#>ºÍ";
+					szSayContent = szSayContent.."<> cïng ";
 				end
-				szSayContent = szSayContent.." <color=yellow>"..nWeekLotteryCount.."<#><color> ÕÅ5Ëæ»úºÅÂëµÄÌ×Æ±";
+				szSayContent = szSayContent.." <color=yellow>"..nWeekLotteryCount.."<><color> tê 5 ngÉu nhiªn d·y sè ®İch bé/vá phiÕu ";
 			end
-			szSayContent = szSayContent.."<#>£¬ÇëÔÚ±±¾©Ê±¼ä±¾ÖÜÈÕÔç³¿11£º00µ½ÏÂÖÜÈÕÔç³¿11£º00Ö®¼äÀ´¶Ò½±°É¡£";
+			szSayContent = szSayContent.."<> , xin/mêi ë B¾c Kinh thêi gian vèn chñ nhËt s¸ng sím 1100 khi ®Õn chñ nhËt s¸ng sím 1100 gi÷a tíi ®æi t­ëng ®i . ";
 			if( ( nMonthLotteryCount + nWeekLotteryCount ) < ( nMonthCardCount + nWeekCardCount ) ) then
-				szSayContent = szSayContent.."<#>Äú»¹ÓĞ¼¸ÕÅ²ÊÆ±ÔÚÎÒÕâ¶ù£¬²»ÒªÍüÁËÔÚ±¾ÖÜÈÕ8£º00Ç°À´Áì×ßÅ¶¡£";
+				szSayContent = szSayContent.."<> ngµi cßn cã mÊy tê vĞ sè ë ta ®©y mµ , chí quªn ë vèn chñ nhËt 800 tíi tr­íc dÉn ®i nga . ";
 			end
 			Say( szSayContent, 0 );
 			
-			Msg2Player( "<#>Äú»ñµÃÁË"..(nMonthLotteryCount+nWeekLotteryCount).."<#>ÕÅĞÒÔË²ÊÆ±" );
-			WriteLog( format( "[%s] %s(%s) ÁìÈ¡ÁË %dÕÅ10ºÅÂë²ÊÆ± %dÕÅ5ºÅÂë²ÊÆ±\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nMonthLotteryCount, nWeekLotteryCount ) );
+			Msg2Player( "<> ngµi thu ®­îc "..(nMonthLotteryCount+nWeekLotteryCount).."<>ÕÅĞÒÔË²ÊÆ±" );
+			WriteLog( format( "[%s] %s(%s) nhËn lÊy %d tê 10 d·y sè vĞ sè %d tê 5 d·y sè vĞ sè \r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nMonthLotteryCount, nWeekLotteryCount ) );
 		else
-			Say( "Àñ¹Ù£ºĞÒÔË²ÊÆ±ÔİÊ±ÎŞ·¨ÁìÈ¡£¬ÇëÉÔºòÔÙÊÔ£¬Ğ»Ğ»¡£", 0 );
+			Say( " lÔ quan  may m¾n vĞ sè t¹m thêi kh«ng c¸ch nµo nhËn lÊy , xin hËu thö l¹i , c¸m ¬n . ", 0 );
 		end
 	end
 end
@@ -294,14 +294,14 @@ end
 -- ĞÒÔË²ÊÆ±¶Ò½±
 function onLotteryGold_Prize()
 
-	Say("Àñ¹Ù£ºÉÏÒ»ÆÚ²ÊÆ±Ã»ÓĞ·¢ĞĞÅ¶£¬¾ßÌåµÄ·¢ĞĞÊ±¼ä»¹ÇëÄú¶àÁôÒâ¡£",0)
+	Say(" lÔ quan  th­îng ®ång thêi vĞ sè kh«ng cã ph¸t ®­îc nga , cô thÓ ph¸t ®­îc thêi gian kİnh xin ngµi ë l©u ı . ",0)
 	do return end
 	
 	local nPrizeIssueID = Lottery_GetLatestPrizeInfo( LOTTERY_GOLD_TYPENAME );
 	if( nPrizeIssueID > 0 ) then
-		Say( "<#><color=yellow>µÚ"..format( "%03d", nPrizeIssueID ).."<#>ÆÚĞÒÔË²ÊÆ±½±Æ·<color>£º\nÒ»µÈ½±£º"..FIRST_PRIZE_AWARD[1].."<#>\n¶şµÈ½±£º"..SECOND_PRIZE_AWARD[1].."<#>\n¼ÍÄî½±£º[´óÌ×Æ±]"..OTHER_PRIZE_AWARD1[1].."<#> [Ğ¡Ì×Æ±]"..OTHER_PRIZE_AWARD2[1].."<#>\n<color=red>×¢£ºÓÉÓÚ½±Æ·ÊıÁ¿½Ï¶à£¬ÔÚ¶Ò½±Ç°Çë×¢ÒâÕûÀí±³°ü£¬È·±£ÓĞ×ã¹»µÄ¿Õ¼ä·ÅÖÃ½±Æ·¡£½¨Òé²»ÒªÒ»´Î¶Ò»»¹ı¶à²ÊÆ±¡£<color>", 2, "Ã»ÎÊÌâ£¬±³°üÓĞ×ã¹»µÄ¿Õ¼ä/onLotteryGold_Prize_Check", "ÎÒÔÙÕûÀíÒ»ÏÂ±³°ü°É/onCancel"  );
+		Say( "<><color=yellow> thø "..format( "%03d", nPrizeIssueID ).."<> kú may m¾n vĞ sè phÇn th­ëng <color>\n nhÊt ®¼ng t­ëng "..FIRST_PRIZE_AWARD[1].."<>\n nhŞ ®¼ng t­ëng "..SECOND_PRIZE_AWARD[1].."<>\n kû niÖm t­ëng [ ®¹i bé/vá phiÕu ]"..OTHER_PRIZE_AWARD1[1].."<> [ tiÓu bé/vá phiÕu ]"..OTHER_PRIZE_AWARD2[1].."<>\n<color=red> chó  bëi v× phÇn th­ëng sè l­îng kh¸ nhiÒu , ë ®æi t­ëng tr­íc xin chó ı söa sang l¹i tói ®eo l­ng , b¶o ®¶m cã ®Çy ®ñ kh«ng gian ®Ó ®­a phÇn th­ëng . ®Ò nghŞ kh«ng muèn mét lÇn ®æi qu¸ nhiÒu vĞ sè . <color>", 2, "Kh«ng thµnh vÊn ®Ò , tói ®eo l­ng cã ®Çy ®ñ kh«ng gian /onLotteryGold_Prize_Check", "Ta n÷a söa sang mét chót tói ®eo l­ng ®i /onCancel"  );
 	else
-		Say( "ĞÒÔË²ÊÆ±ÉĞÎ´¿ª½±£¬ÇëÓÚ±¾ÖÜÈÕÔçÉÏ11£º00ºóÔÙÀ´°É£¬Ğ»Ğ»¡£", 1, "ÎÒÖªµÀÁË£¬Ğ»Ğ»/onLotteryGold" );		
+		Say( "May m¾n vĞ sè ch­a khai t­ëng , xin/mêi víi vèn chñ nhËt buæi s¸ng 1100 sau trë l¹i ®i , c¸m ¬n . ", 1, "Ta biÕt , c¸m ¬n /onLotteryGold" );		
 	end
 end
 
@@ -309,7 +309,7 @@ end
 function onLotteryGold_Prize_Check()
 	
 	local nPrizeIssueID = Lottery_GetLatestPrizeInfo( LOTTERY_GOLD_TYPENAME );
-	GiveItemUI( "µÚ"..format( "%03d", nPrizeIssueID ).."ÆÚĞÒÔË²ÊÆ±¶Ò½±", "Àñ¹Ù£ºÇë½«µ½´ï¶Ò½±Ê±¼äµÄ²ÊÆ±·Åµ½´Ë½çÃæÖĞ£¬ÎÒÃÇ½«°ÑÄú»ñµÃµÄ½±Æ·×Ô¶¯·ÅÈëÄúµÄÎïÆ·À¸¡£Èô²ÊÆ±ÒÑ¹ıÆÚ£¬ÔòÎŞ·¨¶Ò»»¡£<color=white>×¢£ºÓÉÓÚ½±Æ·ÊıÁ¿½Ï¶à£¬²»ÒªÒ»´Î¶Ò»»¹ı¶à²ÊÆ±£¬ÒÔ·À±³°ü¿Õ¼ä²»×ã£¬½±Æ·µôÂä¡£<color>", "onLotteryGold_Prize_Confirm", "onCancel" );
+	GiveItemUI( "Thø "..format( "%03d", nPrizeIssueID ).." kú may m¾n vĞ sè ®æi t­ëng ", " lÔ quan  xin/mêi ®em tíi ®æi t­ëng thêi gian vĞ sè th¶ vµo giíi nµy mÆt trung , chóng ta ®em ®em ngµi ®¹t ®­îc ®İch phÇn th­ëng tù ®éng bá vµo ngµi ®İch vËt phÈm lan . nÕu vĞ sè ®· qua kú , th× kh«ng ph¸p ®æi . <color=white> chó  bëi v× phÇn th­ëng sè l­îng kh¸ nhiÒu , kh«ng muèn mét lÇn ®æi qu¸ nhiÒu vĞ sè , ®Ó ngõa tói ®eo l­ng kh«ng gian ch­a ®ñ , phÇn th­ëng r¬i xuèng . <color>", "onLotteryGold_Prize_Confirm", "onCancel" );
 end
 
 -- ĞÒÔË²ÊÆ±¶Ò½±-²ÊÆ±¶Ò½±½çÃæ¡°È·¶¨¡±»Øµ÷º¯Êı
@@ -322,9 +322,9 @@ function onLotteryGold_Prize_Confirm( nCount )
 	local szHeOrShe;
 	
 	if( GetSex() == 1 ) then
-		szHeOrShe = "Ëı";
+		szHeOrShe = " nµng ";
 	else
-		szHeOrShe = "Ëû";
+		szHeOrShe = " h¾n ";
 	end
 	
 	for i = 1, nCount do
@@ -346,9 +346,9 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for k = 1, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3] do
 							addAward( FIRST_PRIZE_AWARD[2][nRandAwardIdx][2] );
 						end
-						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) ÁìÈ¡ÁËµÚ%dÆÚµÄÒ»µÈ½±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3], FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<#>Äú»ñµÃÁË"..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<#>¸ö"..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] );
-						AddGlobalNews( "<#>ÌØºÃÏûÏ¢£¬"..GetName().."<#>ÔÚÑïÖİµÄÀñ¹Ù´¦ËùÁìÈ¡µÄµÚ"..format("%03d", nLotteryIssueID).."<#>ÆÚĞÒÔË²ÊÆ±ÖĞµÃÒ»µÈ½±£¬»ñµÃ"..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1]..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<#>¼ş£¬ÈÃÎÒÃÇÖÔĞÄ×£¸£"..szHeOrShe.."<#>¡£ÎÒÃÇÆÚ´ıÄúµÄ²ÎÓë£¬Ğ»Ğ»¡£");
+						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) nhËn lÊy thø %d kú ®İch nhÊt ®¼ng t­ëng phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3], FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<> ngµi thu ®­îc "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] );
+						AddGlobalNews( "<> ®Æc tin tøc tèt , "..GetName().."<> ë D­¬ng Ch©u ®İch lÔ quan chç së nhËn lÊy ®İch thø "..format("%03d", nLotteryIssueID).."<> kú may m¾n vĞ sè trung ph¶i nhÊt ®¼ng t­ëng , ®¹t ®­îc "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1]..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> mãn , ®Ó cho chóng ta trung t©m chóc phóc "..szHeOrShe.."<> . chóng ta mong ®îi sù tham dù cña ngµi , c¸m ¬n . ");
 					end
 					for j = 1, nPrize2Count do
 						local aryProbability = {};
@@ -359,9 +359,9 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for k = 1, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3] do
 							addAward( SECOND_PRIZE_AWARD[2][nRandAwardIdx][2] );
 						end
-						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) ÁìÈ¡ÁËµÚ%dÆÚµÄ¶şµÈ½±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<#>Äú»ñµÃÁË"..SECOND_PRIZE_AWARD[2][nRandAwardIdx][3].."<#>¸ö"..SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] );
-						AddGlobalNews( format( "ÌØºÃÏûÏ¢£¬%sÔÚÑïÖİµÄÀñ¹Ù´¦ËùÁìÈ¡µÄµÚ%03dÆÚĞÒÔË²ÊÆ±ÖĞµÃ¶şµÈ½±£¬»ñµÃ%s%d¸ö£¬ÈÃÎÒÃÇÖÔĞÄ×£¸£%s¡£ÎÒÃÇÆÚ´ıÄúµÄ²ÎÓë£¬Ğ»Ğ»¡£", GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][1], SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], szHeOrShe ) );
+						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) nhËn lÊy thø %d kú ®İch nhŞ ®¼ng t­ëng phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<> ngµi thu ®­îc "..SECOND_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] );
+						AddGlobalNews( format( "§Æc tin tøc tèt , %s ë D­¬ng Ch©u ®İch lÔ quan chç së nhËn lÊy ®İch thø %03d kú may m¾n vĞ sè trung ph¶i nhŞ ®¼ng t­ëng , ®¹t ®­îc %s%d c¸ , ®Ó cho chóng ta trung t©m chóc phóc %s . chóng ta mong ®îi sù tham dù cña ngµi , c¸m ¬n . ", GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][1], SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], szHeOrShe ) );
 					end
 					nPrize1TotalCount = nPrize1TotalCount + nPrize1Count;
 					nPrize2TotalCount = nPrize2TotalCount + nPrize2Count;
@@ -375,8 +375,8 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for j = 1, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3] do
 							addAward( OTHER_PRIZE_AWARD1[2][nRandAwardIdx][2] );
 						end
-						WriteLog( format( "[%s] %s(%s) ÁìÈ¡ÁËµÚ%dÆÚµÄÈıµÈ½±´óÌ×Æ±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<#>Äú»ñµÃÁË"..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3].."<#>¸ö"..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] );
+						WriteLog( format( "[%s] %s(%s) nhËn lÊy thø %d kú ®İch tam ®¼ng t­ëng ®¹i bé/vá phiÕu phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<> ngµi thu ®­îc "..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] );
 					else
 						local aryProbability = {};
 						for k = 1, getn( OTHER_PRIZE_AWARD2[2] ) do
@@ -386,8 +386,8 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for j = 1, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3] do
 							addAward( OTHER_PRIZE_AWARD2[2][nRandAwardIdx][2] );
 						end
-						WriteLog( format( "[%s] %s(%s) ÁìÈ¡ÁËµÚ%dÆÚµÄÈıµÈ½±Ğ¡Ì×Æ±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<#>Äú»ñµÃÁË"..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3].."<#>¸ö"..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] );
+						WriteLog( format( "[%s] %s(%s) nhËn lÊy thø %d kú ®İch tam ®¼ng t­ëng tiÓu bé/vá phiÕu phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<> ngµi thu ®­îc "..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] );
 					end
 					nOtherPrizeTotalCount = nOtherPrizeTotalCount + 1;
 				end
@@ -395,20 +395,20 @@ function onLotteryGold_Prize_Confirm( nCount )
 		end
 	end
 	if( nLotteryItemCount > 0 ) then
-		local szPrizeResultContent = "Àñ¹Ù£º¹§Ï²Äú£¡ÔÚÄú¶Ò»»µÄ²ÊÆ±ÖĞ¿ªÖĞÁË<color=yellow>"
+		local szPrizeResultContent = " lÔ quan  chóc mõng ngµi  ë ngµi ®æi ®İch vĞ sè trung b¾n tróng liÔu <color=yellow>"
 		if( nPrize1TotalCount > 0 ) then
-			szPrizeResultContent = szPrizeResultContent.."<#> Ò»µÈ½±"..nPrize1TotalCount.."<#>¸ö";
+			szPrizeResultContent = szPrizeResultContent.."<> nhÊt ®¼ng t­ëng "..nPrize1TotalCount.."<> c¸ ";
 		end
 		if( nPrize2TotalCount > 0 ) then
-			szPrizeResultContent = szPrizeResultContent.."<#> ¶şµÈ½±"..nPrize2TotalCount.."<#>¸ö";
+			szPrizeResultContent = szPrizeResultContent.."<> nhŞ ®¼ng t­ëng "..nPrize2TotalCount.."<> c¸ ";
 		end
 		if( nOtherPrizeTotalCount > 0 ) then
-			szPrizeResultContent = szPrizeResultContent.."<#> ¼ÍÄî½±"..nOtherPrizeTotalCount.."<#>¸ö";
+			szPrizeResultContent = szPrizeResultContent.."<> kû niÖm t­ëng "..nOtherPrizeTotalCount.."<> c¸ ";
 		end
 		szPrizeResultContent = szPrizeResultContent.."<color>"
 		Say( szPrizeResultContent, 0 );
 	else
-		Say( "Çë¼ì²éÄú·ÅÖÃµÄÊÇÓĞĞ§¶Ò½±ÆÚÄÚµÄĞÒÔË²ÊÆ±", 3, "¸Õ²Å¸ã´íÁË£¬ÎÒÖØĞÂ·Å°É/onLotteryGold_Prize", "ÎÒÏë¿´Ò»ÏÂÖĞ½±²ÊÆ±ºÅÂë/onLotteryGold_QueryPrize", "ÎÒÃ»ÓĞÒª¶ÒµÄ²ÊÆ±ÁË£¬ÏÂ´ÎÔÙÀ´°É/onCancel" );
+		Say( "Xin/mêi kiÓm tra ngµi ®Ó ®­a chİnh lµ h÷u hiÖu ®æi t­ëng kú bªn trong ®İch may m¾n vĞ sè ", 3, "Míi võa råi lÇm , ta lÇn n÷a ®Ó ®i /onLotteryGold_Prize", "Ta muèn nh×n mét chót trung t­ëng vĞ sè d·y sè /onLotteryGold_QueryPrize", "Ta kh«ng cã muèn ®æi ®İch vĞ sè , lÇn sau trë l¹i ®i /onCancel" );
 	end
 end
 
@@ -416,7 +416,7 @@ end
 function onLotteryGold_QueryPrize()
 	
 
-	Say("Àñ¹Ù£ºÉÏÒ»ÆÚ²ÊÆ±Ã»ÓĞ·¢ĞĞÅ¶£¬¾ßÌåµÄ·¢ĞĞÊ±¼ä»¹ÇëÄú¶àÁôÒâ¡£",0)
+	Say(" lÔ quan  th­îng ®ång thêi vĞ sè kh«ng cã ph¸t ®­îc nga , cô thÓ ph¸t ®­îc thêi gian kİnh xin ngµi ë l©u ı . ",0)
 	do return end
 	
 	local szResultPrize1, szResultPrize2;
@@ -430,21 +430,21 @@ function onLotteryGold_QueryPrize()
 	if( nPrizeIssueID > 0 ) then
 		for i = 1, nPrize1Count do
 			if( aryaryszPrize1ID[i] == nil or tonumber( aryaryszPrize1ID[i] ) < 0 ) then
-				aryaryszPrize1ID[i] = " (¿Õ) ";
+				aryaryszPrize1ID[i] = " ( v« İch ) ";
 			end
 		end
 		for i = 1, nPrize2Count do
 			if( aryaryszPrize2ID[i] == nil or tonumber( aryaryszPrize2ID[i] ) < 0 ) then
-				aryaryszPrize2ID[i] = " (¿Õ) ";
+				aryaryszPrize2ID[i] = " ( v« İch ) ";
 			end
 		end
-		szResultPrize1 = "<#>ÉÏÆÚ(<color=red>µÚ"..format( "%03d", nPrizeIssueID ).."<#><color>)ÆÚĞÒÔË²ÊÆ±ÖĞ²ÊĞÅÏ¢\n";
-		szResultPrize1 = szResultPrize1.."<#><color=yellow>Ò»µÈ½±<color>ĞÒÔËºÅÂë£º\n<color=yellow>";
+		szResultPrize1 = "<> th­îng kú (<color=red> thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vĞ sè trung th¶i tin tøc \n";
+		szResultPrize1 = szResultPrize1.."<><color=yellow> nhÊt ®¼ng t­ëng <color> may m¾n d·y sè \n<color=yellow>";
 		for i = 1, nPrize1Count do
 			szResultPrize1 = szResultPrize1..aryaryszPrize1ID[i].." ";
 		end
-		szResultPrize2 = "<#>ÉÏÆÚ(<color=red>µÚ"..format( "%03d", nPrizeIssueID ).."<#><color>)ÆÚĞÒÔË²ÊÆ±ÖĞ²ÊĞÅÏ¢\n";
-		szResultPrize2 = szResultPrize2.."<#><color=yellow>¶şµÈ½±<color>ĞÒÔËºÅÂë£º\n<color=yellow>";
+		szResultPrize2 = "<> th­îng kú (<color=red> thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vĞ sè trung th¶i tin tøc \n";
+		szResultPrize2 = szResultPrize2.."<><color=yellow> nhŞ ®¼ng t­ëng <color> may m¾n d·y sè \n<color=yellow>";
 		for i = 1, nPrize2Count do
 			szResultPrize2 = szResultPrize2..aryaryszPrize2ID[i].." ";
 			if( mod( i, 7 ) == 0 ) then
@@ -453,13 +453,13 @@ function onLotteryGold_QueryPrize()
 		end
 		Talk( 2, "onLoteryGold", szResultPrize1, szResultPrize2 );
 	else
-		Say( "ĞÒÔË²ÊÆ±ÉĞÎ´¿ª½±£¬ÇëÓÚ<color=yellow>±¾ÖÜÈÕ11£º00<color>ºóÔÙÀ´²éÑ¯£¬Ğ»Ğ»¡£", 1, "ÎÒÖªµÀÁË£¬Ğ»Ğ»/onLotteryGold" );
+		Say( "May m¾n vĞ sè ch­a khai t­ëng , xin/mêi víi <color=yellow> vèn chñ nhËt 1100<color> sau trë l¹i tuÇn tra , c¸m ¬n . ", 1, "Ta biÕt , c¸m ¬n /onLotteryGold" );
 	end
 end
 
 -- ¹ØÓÚĞÒÔË²ÊÆ±
 function onLotteryGold_About()
-	Talk( 3, "", "Àñ¹Ù£ºĞÒÔË²ÊÆ±ÊÇÒÔÌ×Æ±µÄ·½Ê½ÔùËÍ¸øÄú£¬Ã¿³äÖµÒ»ÕÅ30Ôª³äÖµ¿¨»ñµÃ1ÕÅÌ×Æ±£¬Æ±ÄÚ°üº¬<color=yellow>10<color>¸öËæ»úºÅÂë¡£Ã¿³äÖµÒ»ÕÅ10Ôª³äÖµ¿¨»ñµÃ1ÕÅÌ×Æ±£¬Æ±ÄÚ°üº¬<color=yellow>5<color>¸öËæ»úºÅÂë¡£", "Àñ¹Ù£ºÔÊĞí³ä¿¨ÁìÈ¡²ÊÆ±µÄÊ±¼äÎª£ºÃ¿ÆÚ²ÊÆ±ÔÚ¸Ã²ÊÆ±·¢ĞĞµÄ<color=yellow>ÖÜÈÕÔç³¿11£º00ÖÁÏÂÖÜÈÕÔç³¿8£º00<color>ÁìÈ¡¡£<color=red>¶øÃ¿ÖÜÈÕµÄÔç³¿8£º00ÖÁ11£º00,Ëù³äµÄ¿¨²»ÄÜÁìÈ¡²ÊÆ±¡£<color>", "Àñ¹Ù£ºÔÚÖÜÈÕÔç³¿11£º00ÎÒÃÇ½«¹«¸æµ±ÆÚÖĞ½±ºÅÂë£¬ÄúÔÚ»ñµÃ²ÊÆ±ºó¿É¸ù¾İÆ±ÃæµÄ¶Ò½±Ê±¼äºÍ×Ô¼ºµÄËæ»úºÅÂëÀ´¶Ò»»½±Æ·¡£" );
+	Talk( 3, "", " lÔ quan  may m¾n vĞ sè nÇy ®©y bé/vá phiÕu ph­¬ng thøc tÆng cho ngµi , mçi sung trŞ gi¸ mét tê 30 nguyªn sung trŞ gi¸ t¹p ®¹t ®­îc 1 tê bé/vá phiÕu , phiÕu bªn trong bao hµm <color=yellow>10<color> c¸ ngÉu nhiªn d·y sè . mçi sung trŞ gi¸ mét tê 10 nguyªn sung trŞ gi¸ t¹p ®¹t ®­îc 1 tê bé/vá phiÕu , phiÕu bªn trong bao hµm <color=yellow>5<color> c¸ ngÉu nhiªn d·y sè . ", " lÔ quan  cho phĞp sung t¹p nhËn lÊy vĞ sè ®İch thêi gian lµ  mçi kú vĞ sè ë nªn vĞ sè ph¸t ®­îc <color=yellow> chñ nhËt s¸ng sím 1100 tíi cuèi tuÇn ngµy s¸ng sím 800<color> nhËn lÊy . <color=red> mµ mçi tuÇn ngµy ®İch s¸ng sím 800 tíi 1100, së sung ®İch t¹p kh«ng thÓ nhËn lÊy vĞ sè . <color>", " lÔ quan  ë chñ nhËt s¸ng sím 1100 chóng ta ®em th«ng b¸o khi kú trung t­ëng d·y sè , ngµi ë ®¹t ®­îc vĞ sè sau nh­ng c¨n cø phiÕu mÆt ®İch ®æi t­ëng thêi gian cïng m×nh ®İch ngÉu nhiªn d·y sè tíi ®æi phÇn th­ëng . " );
 end
 
 -- ±¾ÆÚ²ÊÆ±¿ª½±²¢Æô¶¯ĞÂÒ»ÆÚ²ÊÆ±£¨SystemTaskÃ¿Ìì¶¨Ê±µ÷ÓÃ£©
@@ -479,23 +479,23 @@ function onLotteryGold_UpdateIssue()
 		if( nPrizeIssueID > 0 ) then
 			for i = 1, nPrize1Count do
 				if( aryaryszPrize1ID[i] == nil or tonumber( aryaryszPrize1ID[i] ) < 0 ) then
-					aryaryszPrize1ID[i] = " (¿Õ) ";
+					aryaryszPrize1ID[i] = " ( v« İch ) ";
 				end
 			end
 			for i = 1, nPrize2Count do
 				if( aryaryszPrize2ID[i] == nil or tonumber( aryaryszPrize2ID[i] ) < 0 ) then
-					aryaryszPrize2ID[i] = " (¿Õ) ";
+					aryaryszPrize2ID[i] = " ( v« İch ) ";
 				end
 			end
-			local szNewsContent = "<#>ºÅÍâ£¡ºÅÍâ£¡µÚ"..format( "%03d", nPrizeIssueID ).."<#>ÆÚĞÒÔË²ÊÆ±¿ª½±À²£¡Ò»µÈ½±ĞÒÔËºÅÂëÊÇ ";
+			local szNewsContent = "<> sè bªn ngoµi  sè bªn ngoµi  thø "..format( "%03d", nPrizeIssueID ).."<> kú may m¾n vĞ sè khai t­ëng n÷a/råi  nhÊt ®¼ng t­ëng may m¾n m· sè lµ ";
 			for i = 1, nPrize1Count do
 				szNewsContent = szNewsContent..aryaryszPrize1ID[i].." ";
 			end
-			szNewsContent = szNewsContent.."<#>£¬¶şµÈ½±ĞÒÔËºÅÂëÊÇ ";
+			szNewsContent = szNewsContent.."<> , nhŞ ®¼ng t­ëng may m¾n m· sè lµ ";
 			for i = 1, nPrize2Count do
 				szNewsContent = szNewsContent..aryaryszPrize2ID[i].." ";
 			end
-			szNewsContent = szNewsContent.."<#>¡£±¾ÆÚÒ»µÈ½±µÃÖ÷½«»ñµÃ "..FIRST_PRIZE_AWARD[1].."<#> £¡ ¶şµÈ½±µÃÖ÷½«»ñµÃ  "..SECOND_PRIZE_AWARD[1].."<#> £¡ ´ó¼Ò¸Ï½ô²é¶ÔÒ»ÏÂ×Ô¼ºµÄ²ÊÆ±£¬²¢¼°Ê±µ½ÑïÖİÀñ¹Ù´¦ÁìÈ¡½±Æ·£¡";
+			szNewsContent = szNewsContent.."<> . vèn kú nhÊt ®¼ng t­ëng ph¶i chñ t­íng ®¹t ®­îc "..FIRST_PRIZE_AWARD[1].."<>  nhŞ ®¼ng t­ëng ph¶i chñ t­íng ®¹t ®­îc "..SECOND_PRIZE_AWARD[1].."<>  mäi ng­êi véi vµng tra ®èi víi m×nh mét chót ®İch vĞ sè , còng kŞp thêi ®Õn D­¬ng Ch©u lÔ quan chç nhËn lÊy phÇn th­ëng ";
 			AddGlobalCountNews( szNewsContent, 3 );
 		end
 	end

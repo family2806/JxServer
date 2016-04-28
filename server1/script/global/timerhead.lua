@@ -1,19 +1,19 @@
 -- TimerHead.lua
 -- By: Dan_Deng(2003-08-23) ¼ÆÊ±Æ÷Ïà¹Ø¹¤¾ß
 
-FramePerSec = 18			-- Ã¿ÃëÖ¡Êıµ±×÷³£Á¿´¦Àí
-CTime = 600					-- Ã¿¸öÊ±³½°´600Ãë£¨10·ÖÖÓ£©¼ÆËã
+FramePerSec = 18			-- Ã¿ gi©y Ö¡Êıµ±×÷³£Á¿´¦Àí
+CTime = 600					-- Ã¿ c¸ canh giê °´600 gi©y £¨10·ÖÖÓ£©¼ÆËã
 
-function GetRestSec(i)		-- Ö±½Ó·µ»Ø¼ÆÊ±Æ÷Ê£ÓàÃëÊı
+function GetRestSec(i)		-- Ö±½Ó·µ»Ø¼ÆÊ±Æ÷Ê£Óà gi©y Êı
 	return floor(GetRestTime(i) / FramePerSec)
 end;
 
-function GetRestCTime(i)			-- »ñÈ¡¼ÆÊ±Æ÷Ê£ÓàÊ±¼ä£¬´óÓÚÒ»¸öÊ±³½Ê±°´ÖĞ¹úÊ±¼ä×ª»»
+function GetRestCTime(i)			-- »ñÈ¡¼ÆÊ±Æ÷Ê£ÓàÊ±¼ä£¬´óÓÚÒ» c¸ canh giê Ê±°´ÖĞ¹úÊ±¼ä×ª»»
 	x = floor(GetRestTime(i) / FramePerSec)
-	if (x < CTime) then		-- ²»×ãÒ»¸öÊ±³½
-		y = x.."Ãë"
+	if (x < CTime) then		-- ²»×ãÒ» c¸ canh giê 
+		y = x.." gi©y "
 	else
-		y = floor(x / CTime).."¸öÊ±³½"
+		y = floor(x / CTime).." c¸ canh giê "
 	end
 	return y
 end;

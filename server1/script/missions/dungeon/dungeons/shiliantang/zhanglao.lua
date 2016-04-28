@@ -12,53 +12,53 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>´óÏÀÕæÊÇÓÎÀë£¬ÄãÓĞÊÔÁ¶¿¨ÔÚÉí£¬ÔÚ½­ºşÉÏ¿Ï¶¨ÊÇÒ»Î»ºÀ½Ü¡£Ò»»á¶ùºóÊÔÁ¶ÌÃ½«´ò¿ª£¬ÔÚµÈ´ıÖ®Óà£¬ÎÒ¸øÄã½âÊÍÒ»ÏÂÊÔÁ¶ÌÃµÄÒ»Ğ©¹æ¶¨¡£"
+	tbDailog.szTitleMsg = "<#><npc>VŞ ®¹i hiÖp thËt lµ ®a lÔ. §· cã trong ng­êi ®· cã thİ luyÖn thiÕp ch¾c h¼n ngoµi giang hå còng lµ mét vŞ anh hïng hµo kiÖt. Mét lóc n÷a thİ luyÖn ®­êng sÏ më, trong lóc chê ®îi ®Ó ta gi¶i thİch cho ng­¬i luËt ë trong thİ luyÖn ®­êng nµy."
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 	
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	
-	tbDailog:AddOptEntry("Çë³¤ÀÏÖ¸½Ì.",readRule);
+	tbDailog:AddOptEntry("Xin tr­ëng l·o chØ d¹y.",readRule);
 	
 	if (tbDungeon ~= nil and tbDungeon:IsBattleOver() ~= 1 and tbDungeon:IsPrepareTime() ~= 1) then
-		tbDailog:AddOptEntry("ÎÒÏë»»Ò»´ÎÕÙ»½¹­¼ıÊÖµÄ»ú»á",buyChance);
+		tbDailog:AddOptEntry("Ta muèn ®æi 1 c¬ héi triÖu tËp cung tiÔn thñ",buyChance);
 	end
 
-	tbDailog:AddOptEntry("À´ÁìÈ¡ÕÙ»½·û",getCallItem);
+	tbDailog:AddOptEntry("§Õn nhËn triÖu tËp phï",getCallItem);
 	
 	if (tbDungeon ~= nil and tbDungeon:IsBattleOver() ~= 1 and tbDungeon:IsPrepareTime() == 1) then
-		tbDailog:AddOptEntry("Ìø¹ı×¼±¸²½Öè",skipPrepareTime);
+		tbDailog:AddOptEntry("Bá qua b­íc chuÈn bŞ",skipPrepareTime);
 	end
 	
-	tbDailog:AddOptEntry("¿´´ËÂÖ³É¼¨",queryKillCount);
-	tbDailog:AddOptEntry("¿´»ñµÃ¶àÉÙÑ«ÕÂ",queryMedalCount);
+	tbDailog:AddOptEntry("Xem thµnh tİch cña ®ît nµy",queryKillCount);
+	tbDailog:AddOptEntry("Xem nhËn ®­îc bao nhiªu huy ch­¬ng",queryMedalCount);
 	
 	if (tbDungeon ~= nil and tbDungeon:IsBattleOver() == 1) then
-		tbDailog:AddOptEntry("ÎÒÀ´Áì½±",getAward);
+		tbDailog:AddOptEntry("Ta ®Õn nhËn phÇn th­ëng",getAward);
 	end
 
-	tbDailog:AddOptEntry("ÎÒÏëÀë¿ªÊÔÁ¶ÌÃ",leave);
+	tbDailog:AddOptEntry("Ta muèn rêi khái thİ luyÖn ®­êng",leave);
 	
 	--µ¯³ö¶Ô»°¿ò
 	tbDailog:Show()
 end
 
 function buyChance()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
 		tbDungeon:BuyChance();
 	end
 end
 
 function getAward()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
 		tbDungeon:GetAward();
 	end
 end
 
 function leave()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
 		tbDungeonManager:LeaveDungeon(tbDungeon.nDungeonId, PlayerIndex);
 	end
@@ -66,40 +66,40 @@ end
 
 function getCallItem()
 	if (CalcEquiproomItemCount(6,1,2315,-1) >= 1) then
-		Talk(1,"","ÄãÒÑÓĞÕÙ»½·ûÁË.");
+		Talk(1,"","Ng­¬i ®· cã triÖu tËp phï råi.");
 		return
 	end
 	
 	if (PlayerFunLib:CheckFreeBagCell(1, "default") == 1) then
-		PlayerFunLib:GetItem("return {tbProp={6,1,2315,1,0,0},}",1,"ÁìÈ¡ÊÔÁ¶ÌÃÕÙ»½·û")
+		PlayerFunLib:GetItem("return {tbProp={6,1,2315,1,0,0},}",1,"NhËn [Thİ LuyÖn §­êng triÖu tËp phï]")
 	end
 end
 
 function skipPrepareTime()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
 		tbDungeon:SkipPrepare();
 	end
 end
 
 function queryMedalCount()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
-		Talk(1,"",format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> ÊÔÁ¶ÌÃÑ«ÕÂ.", tbDungeon:GetMedal()));
+		Talk(1,"",format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbDungeon:GetMedal()));
 	end
 end
 
 function queryKillCount()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
-		Talk(1,"",format("ÄãÒÑ´òÍËÁË<color=green>%d<color> ´Ì¿Í", tbDungeon:GetKillCount()));
+		Talk(1,"",format("Ng­¬i ®· ®¸nh lïi ®­îc <color=green>%d<color> tªn thİch kh¸ch", tbDungeon:GetKillCount()));
 	end
 end
 
 function readRule()
-	local szTitle =  "<npc>´óÏÀ¿ÉÒÔÏÈ¿´¿´±¾ÌÆµÄ¹â¾°£¬Ò»»á¶ùºó½«³öÏÖÒ»Åú´Ì¿Í¡£ÄãµÄ¹¤×÷¾ÍÊÇµ÷±øÀ´·ÀÊØ¡£±¾ÌÆÓĞ10¸öÒş±Î»ú¹Ø£¬¸óÏÂÖ»ĞèÒª×ß½üÕÙ»½¹­¼ıÊÖµÄµØ·½Ñ°Çó°ïÖú¾ÍĞĞ£¬Ã¿´Î´ò¿ªÒ»¸ö»ú¹ØĞèÒª100µã¾«Á¶Ê¯ÖµºÍ5¸öÊÔÁ¶Ñ«ÕÂ¡£Äã»¹¿ÉÒÔµ÷µ½ÆäËûÎ»ÖÃÀ´·¢»Ó×÷ÓÃ£¬Ã¿´Îµ÷¶¯»¨·Ñ2¸öÑ«ÕÂ¡£¼¸ºõÃ¿¸öÀ´µÄ´Ì¿Í¶¼ÓĞÊÔÁ¶Ñ«ÕÂ£¬´ò°ÜËûÃÇÓĞ»ú»á»ñµÃ¡£100Ãû´Ì¿Í³öÏÖºó£¬´ò°ÜµÄÔ½¶à£¬½±ÀøÔ½·áºñ£¬ÀÏ·òÒ²½«×¼±¸¸ü¼Ó·áºñµÄ½±Àø¡£ <enter>´ò°Ü1-49¸ö´Ì¿Í»ñµÃÄ¾ÖÊ±¦ºĞ<enter>´ò°Ü50-69¸ö´Ì¿Í£¬»ñµÃÍ­ÖÊ±¦ºĞ<enter>´ò°Ü70-89¸ö´Ì¿Í£¬»ñµÃÒøÖÊ±¦ºĞ<enter>´ò°Ü90-99¸ö´Ì¿Í»ñµÃ»Æ½ğ±¦ºĞ<enter>´ò°Ü100¸öÒÔÉÏ´Ì¿Í¿ÉÒÔ»ñµÃĞşÌú±¦ºĞ<enter>¹ØÓÚ±¦ºĞÀïÓĞÊ²Ã´£¬¾ÍÒª¿´ÄãµÄÔËÆøÁË?®ã."
+	local szTitle =  "<npc>§¹i hiÖp cã thÓ xem tr­íc quang c¶nh cña bæn ®­êng, mét lóc n÷a sÏ xuÊt hiÖn hµng lo¹t thİch kh¸ch xuÊt hiÖn. ViÖc cña ng­¬i lµ ®iÒu binh ®Ó phßng thñ. Bæn ®­êng cã 10 n¬i Èn giÊu c¬ quan, c¸c h¹ chØ cÇn ®Õn gÇn n¬i cÇn gäi cung tiÔn thñ ®Ó gäi sù trî gióp, mçi lÇn më 1 c¬ quan cÇn 100 ®iÓm tinh lùc vµ 5 huy hiÖu thİ luyÖn. Ng­¬i vÉn cã thÓ ®iÒu phèi ®Õn vŞ trİ kh¸c ®Ó ph¸t huy hÕt t¸c dông, mçi lÇn ®iÒu phèi mÊt 2 huy ch­¬ng thİ luyÖn. HÇu hÕt mçi thİch kh¸ch ®Òu cã huy ch­¬ng thİ luyÖn, ®¸nh b¹i cã c¬ may nhËn ®­îc. Sau 100 tªn thİch kh¸ch xuÊt hiÖn vÒ sau, cµng ®¸nh b¹i cµng nhiÒu th× phÇn th­ëng cµng hÊp dÉn, l·o phu còng sÏ chuÈn bŞ phÇn th­ëng hÊp dÉn h¬n. <enter>§¶ b¹i 1-49 thİch kh¸ch nhËn ®­îc méc chÕ b¶o h¹p <enter>§¶ b¹i 50-69 thİch kh¸ch nhËn ®­îc ®ång chÕ b¶o h¹p <enter>§¶ b¹i 70-89 thİch kh¸c nhËn ®­îc ng©n chÕ b¶o h¹p <enter>§¶ b¹i 90-99 thİch kh¸ch nhËn ®­îc hoµng kim b¶o h¹p <enter>§¶ b¹i 100 thİch kh¸ch trë lªn cã thÓ nhËn ®­îc huyÒn thiÕt b¶o h¹p <enter>Cßn vÒ b¶o h¹p ch­a nh÷ng phÇn th­ëng g× th× xem vËn may cña c¸c h¹ ®ã."
 	local tbOpt = {}
-	tinsert(tbOpt, {"¶àĞ»³¤ÀÏÖ¸½Ì."})
+	tinsert(tbOpt, {"§a ta tr­ëng l·o chØ d¹y."})
 	CreateNewSayEx(szTitle, tbOpt);
 end
 

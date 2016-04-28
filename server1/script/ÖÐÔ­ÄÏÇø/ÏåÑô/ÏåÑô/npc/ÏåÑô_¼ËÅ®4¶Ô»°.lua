@@ -3,9 +3,9 @@
 function main(sel)
 
 if ( GetSex() == 0 ) then      -- Íæ¼ÒĞÔ±ğÎªÄĞ
-Say("¼ËÅ®£º¹«×Ó£¬ÄãÄªÒªÇÆ²»ÆğÎÒÃÇ¡£ÎÒÃÇÊÇÒòÎªÕâ±²×ÓÍ¶´íÁËÌ¥£¬ËùÒÔÖ»ÄÜ³ÔÕâÍëĞ¦Á³·¹¡£ÏÂ±²×ÓÈç¹ûÍ¶ÉúÒ»¸öºìÅÛ´ó½«¾ü£¬ÎÒÃÇÒ²±£¼ÒÎª¹úÈ¥¡£",0)
+Say("C«ng tö! Xin ®õng xem th­êng bän em. Bëi ®êi nµy bän em ®· ®Çu thai nhÇm, nªn ®µnh ph¶i ¨n b¸t c¬m b»ng tiÒn mua vui cña thiªn h¹. KiÕp sau nÕu ®­îc t¸i sinh, xin lµm 1 §¹i t­íng qu©n x«ng pha cøu n­íc!",0)
 else			       -- Íæ¼ÒĞÔ±ğÎªÅ®
-Say("¼ËÅ®£ºÕâÀï¿É²»ÊÇ¹ÃÄïØó¸ÃÀ´µÄµØ·½¡­¡­", 0)
+Say("N¬i ®©y kh«ng ph¶i lµ n¬i c« n­¬ng lui tíi...", 0)
 end;
 
 end;

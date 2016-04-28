@@ -10,7 +10,7 @@ function tbVNGWD2011_LeQuan:AddDialog(tbDialog)
 		return 
 	end
 	
-	tbDialog:AddOptEntry("Çì×£¹ú¼Ê¸¾Å®½Ú½±Àø",tbVNGWD2011_LeQuan.main,{tbVNGWD2011_LeQuan})
+	tbDialog:AddOptEntry("Quµ tÆng mõng ngµy Quèc TÕ Phô N÷",tbVNGWD2011_LeQuan.main,{tbVNGWD2011_LeQuan})
 end
 
 function tbVNGWD2011_LeQuan:main()
@@ -22,22 +22,22 @@ function tbVNGWD2011_LeQuan:main()
 	local tbMainDialog = DailogClass:new(szNpcName)
 	local nCurDay = tonumber(GetLocalDate("%Y%m%d"))
 	if GetTask(self.TSK_DAY_LIMIT) >= nCurDay then
-		tbMainDialog.szTitleMsg = "½ñÌì¸óÏÂÒÑ¾­Áì½±ÁË£¬Ã÷ÌìÔÙÀ´°É."
+		tbMainDialog.szTitleMsg = "H«m nay c¸c h¹ ®· nhËn quµ råi. Mai h·y ®Õn vËy."
 	else
-		tbMainDialog.szTitleMsg = "ÎªÇì×£¹ú¼Ê¸¾Å®½Ú£¬ÎÒÓĞÒ»Ğ©½±Àø¸øÎäÁÖÍ¬µÀ£¬Ã¿ÌìÀ´¼ûÎÒÁìÈ¡Å¶ "
-		tbMainDialog:AddOptEntry("ÁìÈ¡", tbVNGWD2011_LeQuan.GetAward, {tbVNGWD2011_LeQuan})
+		tbMainDialog.szTitleMsg = "§Ó chóc mõng ngµy Quèc TÕ Phô N÷, ta cã chót quµ tÆng cho Vâ L©m §ång §¹o, mçi ngµy h·y ®Õn gÆp ta ®Ó nhËn nhĞ!"
+		tbMainDialog:AddOptEntry("NhËn", tbVNGWD2011_LeQuan.GetAward, {tbVNGWD2011_LeQuan})
 	end		
 	tbMainDialog:Show()
 end
 
 function tbVNGWD2011_LeQuan:GetAward()
 	if (CalcFreeItemCellCount() < 10) then
-		Talk(1, "", format("Îª±£ÎÀ²Æ²ú£¬ÇëÁôÏÂ <color=red>%d<color> ×°±¸¿ÕÎ»ºó²ÅÄÜÁì½±!", 10))
+		Talk(1, "", format("§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa <color=red>%d<color> « trèng trong hµnh trang råi míi nhËn th­ëng!", 10))
 		return
 	end
 	local nCurDay = tonumber(GetLocalDate("%Y%m%d"))
 	SetTask(self.TSK_DAY_LIMIT, nCurDay)
 Msg2Player(GetTask(self.TSK_DAY_LIMIT))
-	local tbAward = {szName="Ãæ°ü",tbProp={6,1,30096,1,0,0},nCount=10,nExpiredTime=20110314}
-	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][ÔÚNPCÀñ¹Ù´¦ÁìÈ¡Ãæ°ü]")
+	local tbAward = {szName="B¸nh M×",tbProp={6,1,30096,1,0,0},nCount=10,nExpiredTime=20110314}
+	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][NhËn b¸nh m× t¹i NPC LÔ Quan]")
 end

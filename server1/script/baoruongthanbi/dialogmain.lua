@@ -8,12 +8,12 @@ function BRTB_Dialog_main()
 	
 	local tbOpp = {}
 	--local nDay = tonumber(GetLocalDate("%Y%m%d"))
-	local str = "<#> ²»¶®ÎÒÄÜ°ï´óÏÀÊ²Ã´ÄØ?";
+	local str = "<#> Kh«ng biÕt ta cã thÓ gióp g× cho ®¹i hiÖp ?";
 	
-	tinsert(tbOpp,"ÎÒµ½ÕâÏëÇëÈË´ò¿ªÉñÃØÏä/OpenBox_main");
-	tinsert(tbOpp,"ÎÒµ½ÕâÏëÇëÈË¼ø¶¨ÍòÄÜÔ¿³×/DefinitionKey_main");
-	tinsert(tbOpp,"ÎÒµ½ÕâÏëÇëÈËÉı¼¶ÍòÄÜÔ¿³×/KeyUpgrade_main");
-	tinsert(tbOpp, "<#>ÍË³ö/OnCancel")
+	tinsert(tbOpp,"Ta ®Õn nhê më R­¬ng ThÇn Bİ/OpenBox_main");
+	tinsert(tbOpp,"Ta ®Õn nhê gi¸m ®Şnh l¹i Ch×a Khãa V¹n N¨ng/DefinitionKey_main");
+	tinsert(tbOpp,"Ta ®Õn nhê n©ng cÊp Ch×a Khãa V¹n N¨ng/KeyUpgrade_main");
+	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
 		return

@@ -1,8 +1,8 @@
 tbCOT_Party = {}
-DescLink_NhiepThiTran = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>Äôß±³¾:<link>";
+DescLink_NhiepThiTran = "<#><link=image[147,167]:\\spr\\npcres\\enemy\\enemy154\\enemy154_pst.spr>NhiÕp Thİ TrÇn:<link>";
 function tbCOT_Party:CheckCondition()
 	if IsCaptain() ~= 1 then
-		Talk(1, "", "¶Ô²»Æğ£¬Ö»ÓĞ¶Ó³¤²ÅÓĞÈ¨¼ì²é×é¶ÓµÄ²Î¼ÓÌõ¼ş!")
+		Talk(1, "", "Xin lçi, chØ cã ®éi tr­ëng míi cã quyÒn kiÓm tra ®iÒu kiÖn tham gia cña tæ ®éi!")
 		return
 	end
 	local tbDialog = {}
@@ -13,31 +13,31 @@ function tbCOT_Party:CheckCondition()
 		PlayerIndex = GetTeamMember(i)
 		--¼ì²éÉ±ÊÖïµ
 		if self:CalcSword() < 1 then
-			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Ã»ÓĞÉ±ÊÖïµ"))
+			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Kh«ng cã S¸t Thñ Gi¶n"))
 		end
 	
 		--¼ì²éµ±ÈÕ´³¹Ø´ÎÊı
 		local nDailyTaskCount = self:GetDailyTaskCount()
 		if ( nDailyTaskCount >= 3) then
-			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "´³¹ØÒÑ¹º3´Î"))
+			tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "§· v­ît ¶i ®ñ 3 lÇn"))
 		else
 			local nLHHUse = self:GetLHHUseCount()
 			if (nDailyTaskCount == 1 and nLHHUse < 1) or (nDailyTaskCount == 2 and nLHHUse < 2) then
-				tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Î´Ê¹ÓÃÁúÑªÍè"))
+				tinsert(tbDialog, getn(tbDialog) + 1, format("<color=red>%s<color>: %s", GetName(), "Ch­a sö dông Long HuyÕt Hoµn"))
 			end
 		end
 		
 	end -- loop whole party
 	PlayerIndex = nOldPlayer
 	if getn(tbDialog) > 0 then
-		local strTittle = DescLink_NhiepThiTran.."×é¶ÓÄ¿Ç°²»ÄÜ²Î¼Ó\n ÌôÕ½:"
+		local strTittle = DescLink_NhiepThiTran.."Tæ ®éi hiÖn t¹i kh«ng thÓ tham gia\n khiªu chiÕn:"
 		for i = 1, getn(tbDialog) do
 			strTittle = strTittle.."\n"..tbDialog[i]
 		end
-		Describe(strTittle, 1, "¹Ø±Õ/OnCancel")
+		Describe(strTittle, 1, "§ãng/OnCancel")
 	else
-		local strTittle = DescLink_NhiepThiTran.."×é¶ÓÄ¿Ç°¿ÉÒÔ²Î¼ÓÌôÕ½"
-		Describe(strTittle, 1, "¹Ø±Õ/OnCancel")
+		local strTittle = DescLink_NhiepThiTran.."Tæ ®éi hiÖn t¹i cã thÓ tham gia khiªu chiÕn"
+		Describe(strTittle, 1, "§ãng/OnCancel")
 	end
 end
 
@@ -59,7 +59,7 @@ function tbCOT_Party:GetDailyTaskCount()
 	if (ndate ~= GetTask(1551)) then --µ±ÈÕÎ´È¥´³¹Ø
 			nResult = 0
 	else		
-		if ndate ~= GetTask(2641) then --Î´Ê¹ÓÃÁúÑªÍè
+		if ndate ~= GetTask(2641) then --Ch­a sö dông Long HuyÕt Hoµn
 			if GetTask(1550) <= 0 then --¿ÉÒÔ²Î¼ÓµÄ´³¹Ø´ÎÊı
 				nResult = nResult + 1
 			end

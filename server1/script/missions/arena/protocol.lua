@@ -9,22 +9,22 @@ Include("\\script\\global\\logout_head.lua")
 IncludeLib("SETTING")
 local tbAccMapList = 
 {
-	[1] = "·ïÏè",
-	[11] = "³É¶¼",
-	[37] = "ãê¾©",
-	[80] = "ÑïÖİ",
-	[78] = "ÏåÑô",
-	[162] = "´óÀí",
-	[176] = "ÁÙ°²",
-	[20] = "½­½ò´å",
-	[53] = "°ÍÁêÏØ",
-	[54] = "ÄÏÔÀÕò",
-	[99] = "ÓÀÀÖÕò",
-	[100] = "ÖïÏÉÕò",
-	[101] = "µ¾Ïã´å",
-	[121] = "ÁúÃÅÕò",
-	[153] = "Ê¯¹ÄÕò",
-	[174] = "ÁúÈª´å",
+	[1] = "Ph­îng T­êng",
+	[11] = "Thµnh §«",
+	[37] = "BiÖn Kinh",
+	[80] = "D­¬ng Ch©u",
+	[78] = "T­¬ng D­¬ng",
+	[162] = "§¹i Lı",
+	[176] = "L©m An",
+	[20] = "Giang T©n Th«n",
+	[53] = "Ba L¨ng huyÖn",
+	[54] = "Nam Nh¹c trÊn",
+	[99] = "VÜnh L¹c trÊn",
+	[100] = "Chu Tiªn trÊn",
+	[101] = "§¹o H­¬ng th«n",
+	[121] = "Long M«n trÊn",
+	[153] = "Th¹ch Cæ trÊn",
+	[174] = "Long TuyÒn th«n",
 }
 
 tinsert(TB_LOGOUT_FILEFUN, {"\\script\\missions\\arena\\protocol.lua",		"player_logout"})
@@ -52,7 +52,7 @@ function player_enter_map(ParamHandle, ResultHandle)
 	if nPlayerIndex > 0 then
 		local nCurMapId = CallPlayerFunction(nPlayerIndex, GetWorldPos )
 		if not CallPlayerFunction(nPlayerIndex, tbPlayer.CheckState, tbPlayer) or not %tbAccMapList[nCurMapId] then
-			CallPlayerFunction(nPlayerIndex, Msg2Player, "ÄãÏÖÔÚÔÚµÄ°æÍ¼ÎŞ·¨Í¨Íù¾º¼¼³¡")
+			CallPlayerFunction(nPlayerIndex, Msg2Player, "B¶n ®å hiÖn t¹i ng­¬i ®ang ®øng kh«ng thÓ ®i vµo c¶nh Kü Tr­êng")
 			player_cancel(szName)
 		else
 --			local tbOpt = 
@@ -93,7 +93,7 @@ function player_enter_map_confirm(nMapId, nTimeOut)
 	end
 	local nCurTime = GetCurServerTime()
 	if nTimeOut < nCurTime then
-		return Talk(1, "", "²Ù×÷³¬Ê±")
+		return Talk(1, "", "Thao t¸c nµy ®· v­ît qu¸ thêi gian")
 	end
 	
 	local nLastMapId, nX, nY = GetWorldPos()
@@ -131,7 +131,7 @@ function signup_callback(nParam, ParamHandle)
 	
 	local nPlayerIndex = SearchPlayer(szName)
 	if nPlayerIndex > 0 and not bFind then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "±¨Ãû³É¹¦¡£ÇëµÈ´ı£¬ÕıÔÚÑ°ÕÒ¶ÔÊÖ")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "B¸o danh thµnh c«ng. §ang t×m ®èi thñ, xin h·y ®îi …")
 	end
 end
 
@@ -140,7 +140,7 @@ function finded_oppoent(ParamHandle, ResultHandle)
 	local szName = ObjBuffer:PopObject(ParamHandle)
 	local nPlayerIndex = SearchPlayer(szName)
 	if nPlayerIndex > 0 then
-		CallPlayerFunction(nPlayerIndex, Msg2Player, "ÕÒµ½¶ÔÊÖ")
+		CallPlayerFunction(nPlayerIndex, Msg2Player, "T×m ®­îc ®èi thñ")
 	end
 end
 
@@ -148,7 +148,7 @@ function wait_map(ParamHandle, ResultHandle)
 	local szName = ObjBuffer:PopObject(ParamHandle)
 	local nPlayerIndex = SearchPlayer(szName)
 	if nPlayerIndex > 0 then
-		CallPlayerFunction(nPlayerIndex, Msg2Player, "ÕıÔÚ×¼±¸¾º¼¼³¡µÄ¶·³¡")
+		CallPlayerFunction(nPlayerIndex, Msg2Player, "§ang chuÈn bŞ ®Êu tr­êng cña C¶nh Kü Tr­êng…")
 	end
 end
 
@@ -156,7 +156,7 @@ function notify_oppoent_cancel(ParamHandle, ResultHandle)
 	local szName = ObjBuffer:PopObject(ParamHandle)
 	local nPlayerIndex = SearchPlayer(szName)
 	if nPlayerIndex > 0 then
-		CallPlayerFunction(nPlayerIndex, Msg2Player, "ÄãµÄ¶ÔÊÖÌÓÅÜÁË£¬ÏµÍ³ÕÒĞÂ¶ÔÊÖ")
+		CallPlayerFunction(nPlayerIndex, Msg2Player, "§èi thñ cña ng­¬i ®· bá trËn nµy, hÖ thèng ®ang t×m ®èi thñ míi…")
 	end
 end
 -------------------------------------------------------
@@ -199,21 +199,21 @@ function apply_signup()
 	do return end
 	local nMapId = GetWorldPos()
 	if not %tbAccMapList[nMapId] then
-		return Talk(1, "", "Ö»ÄÜÔÚĞÂÊÖ´å»ò³ÇÊĞ±¨Ãû")
+		return Talk(1, "", "ChØ cã thÓ b¸o danh t¹i t©n thñ th«n hoÆc thµnh thŞ.")
 	end
 
 	if ST_IsTransLife() ~= 1  and GetLevel() < 125 then
-		return Talk(1, "", "125¼¶ÒÔÉÏ²Å¿ÉÒÔ±¨Ãû.")
+		return Talk(1, "", "CÊp 125 trë lªn míi ®­îc b¸o danh.")
 	end
 
 	local _, nValue = GetRoleEquipValue()
 	if nValue < 400 then
-		return Talk(1, "", "±ø¼×¼ÛÖµÔÚ400ÒÔÉÏ²Å¿ÉÒÔ±¨Ãû.")
+		return Talk(1, "", "Gi¸ trŞ binh gi¸p 400 trë lªn míi ®­îc b¸o danh.")
 	end
 
 	local nMapId = GetWorldPos()
 	if not tbPlayer:CheckState() then
-		return Talk(1, "", "ÔÚÍĞ¹Ü»ò³öÊÛµÄ×´Ì¬ÏÂ²»ÄÜ±¨Ãû.")
+		return Talk(1, "", "Trong tr¹ng th¸i ñy th¸c hoÆc bµy b¸n kh«ng thÓ b¸o danh.")
 	end
 	
 	local nRank = tbPlayer:GetRank()

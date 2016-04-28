@@ -150,12 +150,12 @@ tbTHDNB7=
 
 function GetBonusTHDNB7_main()
 	if (CheckUser() ~= 1) then
-		Talk(1,"","´óÏÀÊ¹ÓÃÕË»§²»¶Ô£¬Çë¼ì²éÒ»ÏÂ!")
+		Talk(1,"","§¹i hiÖp sö dông kh«ng ®óng tµi kho¶n, xin kiÓm tra l¹i !")
 		return
 	end
 	------------------------------------------------------------------------------------------------------------------------------------------------
 	local tbOpp = {}
-	local str = "<#> ´óÏÀÇëÑ¡Ôñ½±Àø";
+	local str = "<#> §¹i hiÖp xin h·y chän phÇn th­ëng";
 	--local strServerName = GetServerName()
 	local strAccount = GetAccount()
 	for k= 1, getn(tbTHDNB7) do
@@ -167,47 +167,47 @@ function GetBonusTHDNB7_main()
 			local numCLBHB = tbTHDNB7[k].nCLBHB
 			local numTinhLuc = tbTHDNB7[k].nTinhLuc
 			if (numHuyenCD > 0 and numHuyenCD <= 60) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numHuyenCD .. " ĞşÕæµ¤/#GetBonusHuyenCD("..numHuyenCD..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numHuyenCD .. " HuyÒn Ch©n §an/#GetBonusHuyenCD("..numHuyenCD..", 1)");
 			end
 			if (numHuyenCD > 0 and numHuyenCD > 60) then
 				local nGetLHuyenCD = numHuyenCD - 60
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 60  ĞşÕæµ¤/#GetBonusHuyenCD(60,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetLHuyenCD .. " ĞşÕæµ¤/#GetBonusHuyenCD("..nGetLHuyenCD..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 60  HuyÒn Ch©n §an/#GetBonusHuyenCD(60,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetLHuyenCD .. " HuyÒn Ch©n §an/#GetBonusHuyenCD("..nGetLHuyenCD..", 2)");
 			end
 			if (numHoangCD > 0 and numHoangCD <= 60) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numHoangCD .. " »ÆÕæµ¤/#GetBonusHoangCD("..numHoangCD..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numHoangCD .. " Hoµng Ch©n §an/#GetBonusHoangCD("..numHoangCD..", 1)");
 			end
 			if (numHoangCD > 0 and numHoangCD > 60) then
 				local nGetLHoangCD = numHoangCD - 60
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 60  Hoang Ch©n §an/#GetBonusHoangCD(60, 1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetLHoangCD .. " »ÆÕæµ¤/#GetBonusHoangCD("..nGetLHoangCD..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 60  Hoang Ch©n §an/#GetBonusHoangCD(60, 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetLHoangCD .. " Hoµng Ch©n §an/#GetBonusHoangCD("..nGetLHoangCD..", 2)");
 			end
 			if (numHBAK > 0 and numHBAK <= 60) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numHBAK .. " °²¿µºì°ü/#GetBonusHBAK("..numHBAK..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numHBAK .. " Hång Bao An Khang/#GetBonusHBAK("..numHBAK..", 1)");
 			end
 			if (numHBAK > 0 and numHBAK > 60) then
 				local nGetLHBAK = numHBAK - 60
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 60  °²¿µºì°ü/#GetBonusHBAK(60,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetLHBAK .. " °²¿µºì°ü/#GetBonusHBAK("..nGetLHBAK..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 60  Hång Bao An Khang/#GetBonusHBAK(60,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetLHBAK .. " Hång Bao An Khang/#GetBonusHBAK("..nGetLHBAK..", 2)");
 			end
 			if (numBDLKT > 0 and numBDLKT <= 60) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numBDLKT .. " ±±¶·Á¶½ğÊõ/#GetBonusBDLKT("..numBDLKT..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numBDLKT .. " B¾c §Èu LuyÖn Kim ThuËt/#GetBonusBDLKT("..numBDLKT..", 1)");
 			end
 			if (numBDLKT > 0 and numBDLKT > 60) then
 				local nGetLBDLKT = numBDLKT - 60
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 60  ±±¶·Á¶½ğÊõ/#GetBonusBDLKT(60,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetLBDLKT .. " ±±¶·Á¶½ğÊõ/#GetBonusBDLKT("..nGetLBDLKT..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 60  B¾c §Èu LuyÖn Kim ThuËt/#GetBonusBDLKT(60,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetLBDLKT .. " B¾c §Èu LuyÖn Kim ThuËt/#GetBonusBDLKT("..nGetLBDLKT..", 2)");
 			end
 			if (numCLBHB > 0 and numCLBHB <= 60) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numCLBHB .. " ºì°ü¾ãÀÖ²¿/#GetBonusCLBHB("..numCLBHB..", 1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numCLBHB .. " C©u L¹c Bé Hång Bao/#GetBonusCLBHB("..numCLBHB..", 1)");
 			end
 			if (numCLBHB > 0 and numCLBHB > 60) then
 				local nGetLCLBHB = numCLBHB - 60
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ 60  ºì°ü¾ãÀÖ²¿/#GetBonusCLBHB(60,1)");
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. nGetLCLBHB .. " ºì°ü¾ãÀÖ²¿/#GetBonusCLBHB("..nGetLCLBHB..", 2)");
+				tinsert(tbOpp,"Ta muèn nhËn 60  C©u L¹c Bé Hång Bao/#GetBonusCLBHB(60,1)");
+				tinsert(tbOpp,"Ta muèn nhËn " .. nGetLCLBHB .. " C©u L¹c Bé Hång Bao/#GetBonusCLBHB("..nGetLCLBHB..", 2)");
 			end
 			if (numTinhLuc > 0) then
-				tinsert(tbOpp,"ÎÒÏëÁìÈ¡ " .. numTinhLuc .. " §i¾«Á¶Ê¯Öµ/#GetBonusTinhLuc("..numTinhLuc..")");
+				tinsert(tbOpp,"Ta muèn nhËn " .. numTinhLuc .. " §iÓm Tinh Lùc/#GetBonusTinhLuc("..numTinhLuc..")");
 			end
 			break
 		end--ifman

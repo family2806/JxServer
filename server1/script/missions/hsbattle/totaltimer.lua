@@ -11,21 +11,21 @@ Rest1 = GetMissionV(MS_TONG1VALUE);
 Rest2 = GetMissionV(MS_TONG2VALUE);
 
 if (Rest1 > Rest2) then 
-	Msg2MSAll(MISSIONID, "<#> 比赛结束,"..GetMissionS(1).."<#> 获得胜利!");
-	str = "<#> <#> 比赛时间结束!"..GetMissionS(1).."<#> 胜利了!"..GetMissionS(2).."!";
+	Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(1).."<#> th緉g 頲 tr薾 n祔!");
+	str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(1).."<#> Th緉g r錳!"..GetMissionS(2).."!";
 	WinBonus(1)
 elseif (Rest2 > Rest1) then 
-	Msg2MSAll(MISSIONID, "<#> 比赛结束,"..GetMissionS(2).."<#> 获得胜利!")
-	str = "<#> <#> 比赛时间结束!"..GetMissionS(2).."<#> 胜利了!"..GetMissionS(1).."<#>!";
+	Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(2).."<#> th緉g 頲 tr薾 n祔!")
+	str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(2).."<#> Th緉g r錳!"..GetMissionS(1).."<#>!";
 	WinBonus(2)
 else
 	if (GetTotalLevel() == 1) then
-		Msg2MSAll(MISSIONID, "<#> 比赛结束,"..GetMissionS(1).."<#> 获得胜利!")
-		str = "<#> <#> 比赛时间结束!"..GetMissionS(1).."<#> 胜利了!"..GetMissionS(2).."<#>!";
+		Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(1).."<#> th緉g 頲 tr薾 n祔!")
+		str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(1).."<#> Th緉g r錳!"..GetMissionS(2).."<#>!";
 		WinBonus(1)
 	else
-		Msg2MSAll(MISSIONID, "<#> 比赛结束,"..GetMissionS(2).."<#> 获得胜利!")
-		str = "<#> <#> 比赛时间结束!"..GetMissionS(2).."<#> 胜利了!"..GetMissionS(1).."<#>!";
+		Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(2).."<#> th緉g 頲 tr薾 n祔!")
+		str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(2).."<#> Th緉g r錳!"..GetMissionS(1).."<#>!";
 		WinBonus(2)
 	end;
 end;

@@ -5,9 +5,9 @@ Include("\\script\\activitysys\\config\\28\\boss_muke.lua")
 Include("\\script\\missions\\basemission\\lib.lua")
 
 tbPoolCount = {
-	[100] = {nCount = 0, szName = "ÖïÏÉÕò", nTotal = 0, },
-	[153] = {nCount = 0, szName = "Ê¯¹ÄÕò", nTotal = 0, },
-	[174] = {nCount = 0, szName = "ÁúÈª´å", nTotal = 0, },
+	[100] = {nCount = 0, szName = "Chu Tiªn trÊn", nTotal = 0, },
+	[153] = {nCount = 0, szName = "Th¹ch Cæ trÊn", nTotal = 0, },
+	[174] = {nCount = 0, szName = "Long TuyÒn th«n", nTotal = 0, },
 }
 tbBossPos =
 {
@@ -24,8 +24,8 @@ function pActivity:AddInitNpc()
 		{174,1622,3202,},
 	}
 	local tbFarmer = {
-		szName = "ÇÚÀÍÀÏÅ©", 
-		szTitle = "<npc>´ºÌìµ½ÁË£¬ÎÒÏëÔÚ´åÍâÔÙÖÖĞ©ÏÊ»¨",
+		szName = "L·o N«ng CÇn Cï", 
+		szTitle = "<npc>Mïa xu©n ®· ®Õn, ta muèn trång thªm mét İt hoa mµu ë ngoµi th«n chóng ta",
 		nLevel = 95,
 		nNpcId = 246,
 		nIsboss = 0,
@@ -48,7 +48,7 @@ function pActivity:AddInitNpc()
 		},
 	}
 	local tbEZeiNpc = {
-		szName = "¶ñÔô",
+		szName = "¸c TÆc",
 		nLevel = 95,
 		nNpcId = 1606,
 		nIsboss = 0,
@@ -72,7 +72,7 @@ function pActivity:AddInitNpc()
 		},
 	}
 	local tbFaMuZheNpc = {
-		szName = "´óÄ»Õß",
+		szName = "§¹i Môc Gi¶",
 		nLevel = 95,
 		nNpcId = 1602,
 		nIsboss = 0,
@@ -87,8 +87,8 @@ end
 
 --ÉÏ½»´òÂúË®µÄÄ¾Í°
 function pActivity:OnGetMuTong()
-	PlayerFunLib:GetItem({tbProp={6,1,2736,1,0,0},nBindState = -2,nExpiredTime=20110405,},1,"2011Ö²Ê÷½Ú£¬µÃµ½Ä¾Í°")
-	WriteLog(format("%s\tAccount:%s[Name:%s]µÃµ½1¸öË®Í°.",
+	PlayerFunLib:GetItem({tbProp={6,1,2736,1,0,0},nBindState = -2,nExpiredTime=20110405,},1,"TiÕt Trång C©y 2011, nhËn ®­îc Thïng Gç")
+	WriteLog(format("%s\tAccount:%s[Name:%s] nhËn 1 Thïng N­íc.",
 				GetLocalDate("%Y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName())
@@ -100,23 +100,23 @@ function pActivity:OnGiveMuTong()
 	
 	local nCount = 1 
 	if not nCount or 0==nCount then
-		print("ÄÃµÄË®Í°ÊıÁ¿²»¶Ô")
+		print("§­a sè Thïng N­íc kh«ng ®óng")
 		return
 	end
 	--print("OnGiveMuTong")
 	--print(nCount)
 	
-	if not PlayerFunLib:CheckItemInBag({tbProp={6,1,2737,1,0,0},},1,"¸Ï¿ì¸øÎÒ´òË®È¥") then
+	if not PlayerFunLib:CheckItemInBag({tbProp={6,1,2737,1,0,0},},1,"Nhanh ch©n ®i lÊy ®Çy n­íc cho ta") then
 		return
 	end
 	
 	PlayerFunLib:ConsumeEquiproomItem({tbProp={6, 1, 2737, 1, 0, 0},},1)
 	self:AddTaskDaily(%nTskIdx_DaylyGiveWater,nCount)
-	self:GiveAward("mutong", nCount, "½»×°ÂúË®µÄÍ°ÁìÈ¡½±Æ·")
+	self:GiveAward("mutong", nCount, "Giao Thïng N­íc §Çy nhËn phÇn th­ëng")
 	
 	local nTsk = self:GetTask(%nTskIdx_DaylyGiveWater)
 	local nDaylyCount = nTsk - floor(nTsk/256) * 256
-	WriteLog(format("%s\tAccount:%s[Name:%s] ½»[%d] ¸ö×°ÂúË®µÄÍ°£¬½ñÌì»¹ÒªÔö¼Ó[%d] ¸ö.",
+	WriteLog(format("%s\tAccount:%s[Name:%s] giao[%d] c¸i Thïng N­íc §Çy , h«m nay ®· céng thªm [%d] c¸i.",
 				GetLocalDate("%Y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName(),
@@ -137,14 +137,14 @@ end
 function pActivity:OnGiveLongYinShengShui(nCount)
 	
 	if not nCount or 0==nCount then
-		print("´øµÄÁúÒûÊ¥Ë®ÊıÁ¿²»¶Ô")
+		print("§­a sè Long ¢m Th¸nh Thñy kh«ng ®óng")
 		return
 	end
 
 	--print("OnGiveLongYinShengShui")
 	--print(nCount)
 	
-	self:GiveAward("longyinshengshui", nCount, "½»ÁúÒûÊ¥Ë®µÃµ½½±Æ·")
+	self:GiveAward("longyinshengshui", nCount, "Giao Long ¢m Th¸nh Thñy nhËn ®­îc phÇn th­ëng")
 
 	if self:CheckTask(%nTskIdx_GiveLongYinShengShuiExp,%nMaxExpFromLongYinShengShui,"","<") then	
 		local nAddExpBaseCount = %nPerExpFromLongYinShengShui * nCount
@@ -157,10 +157,10 @@ function pActivity:OnGiveLongYinShengShui(nCount)
 		
 		local nExp = nAddExpBaseCount * %nExpBaseFromLongYinShengShui
 		self:AddTask(%nTskIdx_GiveLongYinShengShuiExp, nAddExpBaseCount)
-		PlayerFunLib:AddExp(nExp, 1, "½»ÁúÒûÊ¥Ë®µÃµ½½±Æ·")
+		PlayerFunLib:AddExp(nExp, 1, "Giao Long ¢m Th¸nh Thñy nhËn ®­îc phÇn th­ëng")
 	end
 	if self:CheckTask(%nTskIdx_GiveLongYinShengShuiExp,%nMaxExpFromLongYinShengShui,"",">=") then
-		local szMsg = format("Äã½»ÁúÒûÊ¥Ë®µÃµ½µÄ¾­ÑéÒÑ´ïÉÏÏŞ")
+		local szMsg = format("Ng­¬i giao Long ¢m Th¸nh Thñy nhËn ®­îc kinh nghiÖm ®· ®Õn giíi h¹n")
 		Msg2Player(szMsg)
 	end
 	
@@ -169,7 +169,7 @@ function pActivity:OnGiveLongYinShengShui(nCount)
 	
 	self:AddTask(%nTskIdx_LastRecordDay, nCount)
 	local nTotalCount = self:GetTask(%nTskIdx_LastRecordDay)
-	WriteLog(format("%s\tAccount:%s[Name:%s] ½»[%d]ÁúÒûÊ¥Ë®£¬½ñÌìÒ»¹²Ôö¼ÓÁË[%d]¸ö.",
+	WriteLog(format("%s\tAccount:%s[Name:%s] giao[%d] c¸i Long ¢m Th¸nh Thñy , h«m nay ®· céng thªm [%d] c¸i.",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),
 			GetName(),
@@ -189,12 +189,12 @@ end
 function pActivity:CheckMuTong()
 	local nCount1 = CalcItemCount(-1, 6, 1, 2736, -1)
 	if nCount1 >= 1 then
-		Msg2Player("ÄãÒÑ¾­ÓĞÄ¾Í°ÁË£¬²»ÄÜÔÙÁìÈ¡ÁË")
+		Msg2Player("Ng­¬i ®· cã Thïng Gç råi, kh«ng ®­îc nhËn n÷a")
 		return 
 	end
 	local nCount2 = CalcItemCount(-1, 6, 1, 2737, -1)
 	if nCount2 >= 1 then
-		Msg2Player("ÄãÒÑ¾­ÓĞ×°ÂúË®µÄÍ°ÁË£¬Íê³ÉÈÎÎñºóÔÙÀ´Áì½±°É")
+		Msg2Player("Ng­¬i ®· cã Thïng N­íc §Çy råi , xin h·y hoµn thµnh nhiÖm vô råi h·y ®Õn nhËn th­ëng nhĞ")
 		return 
 	end
 	return 1
@@ -204,10 +204,10 @@ end
 function pActivity:CheckActivityTime()
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate < self.nStartDate/10000 then
-		Msg2Player("Ö²Ê÷½Ú»î¶¯»¹Ã»ÓĞ¿ªÊ¼")
+		Msg2Player("Ho¹t ®éng TiÕt Trång C©y vÉn ch­a b¾t ®Çu")
 		return
 	elseif nDate >= self.nEndDate/10000 then
-		Msg2Player("Ö²Ê÷½Ú»î¶¯ÒÑ¾­½áÊøÁË")
+		Msg2Player("Ho¹t ®éng TiÕt Trång C©y ®· kÕt thóc")
 		return
 	end
 	return 1
@@ -221,7 +221,7 @@ function pActivity:_AddLongYinShengShuiStat(nCount)
 		%tbPoolCount[nMapId].nTotal = %tbPoolCount[nMapId].nTotal + nCount
 	end
 	
-	--local szMsg = format("%s\t Í³¼ÆÁúÒûÊ¥Ë®:map%d(%s)=%d"
+	--local szMsg = format("%s\t thèng kª Long ¢m Th¸nh Thñy:map%d(%s)=%d"
 	--	,GetLocalDate("%Y-%m-%d %H:%M:%S")
 	--	,nMapId,%tbPoolCount[nMapId].szName, %tbPoolCount[nMapId].nTotal)
 	--print(szMsg)
@@ -233,10 +233,10 @@ function pActivity:_AddLongYinShengShuiStat(nCount)
 end
 
 function pActivity:_CallMuKeBoss(nMapId)
-	local szInfo = format("Ä¾¿Í³öÏÖÔÚ %s ´å×¯, ¿ìÈ¥´ò°ÜËû", %tbPoolCount[nMapId].szName)
+	local szInfo = format("Méc Kh¸ch xuÊt hiÖn t¹i %s th«ng trang, h·y nhanh ch©n ®i ®¸nh b¹i h¾n", %tbPoolCount[nMapId].szName)
 	local nPosId = random(1,2)
 	local tbNpc = {
-		szName = "Ä¾¿Í", 
+		szName = "Méc Kh¸ch", 
 		nLevel = 95,
 		nMapId = nMapId,
 		nPosX = %tbBossPos[nMapId][nPosId][1]*32,
@@ -250,7 +250,7 @@ function pActivity:_CallMuKeBoss(nMapId)
 	AddGlobalNews(szInfo)
 	AddGlobalNews(szInfo)
 	
-	local szMsg = format("%s\tmap%d(%s)ÍâÃæ(%d,%d) ³öÏÖboss [Ä¾¿Í], ´ËÇøÓòÒÑ¾­½»ÁË[%d]ÁúÒûÊ¥Ë®"
+	local szMsg = format("%s\tmap%d(%s) bªn ngoµi (%d,%d) xuÊt hiÖn boss [ Méc Kh¸ch ], khu vùc nµy ®· giao Long ¢m Th¸nh Thñy tæng sè l­îng lµ [%d]"
 		, GetLocalDate("%Y-%m-%d %H:%M:%S")
 		, nMapId, %tbPoolCount[nMapId].szName, tbNpc.nPosX, tbNpc.nPosY
 		, %tbPoolCount[nMapId].nTotal)

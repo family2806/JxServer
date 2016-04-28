@@ -21,7 +21,7 @@ function doXueHuaWorks(szParam)
 		PlayerIndex = 1
 	else
 		PlayerIndex = pidx
-		Msg2Player("Äú»ñµÃ<color=yellow>"..rolename.."<color>¸øÄãÒ»ÕÅºØ¿¨£¬×£ÄãÍòÊÂË³Àû£¬ºÏ¼Ò°²¿µ!")
+		Msg2Player("B¹n nhËn ®­îc <color=yellow>"..rolename.."<color>göi cho b¹n mét tÊm ThiÖp Chóc Mõng, chóc b¹n V¹n Sù ThuËn Lîi, Hîp Gia An Khang!")
 	end
 	for i = 1, getn(tbPos) do
 		CastSkill(681, 1, tbPos[i][1] * 32, tbPos[i][2] * 32)

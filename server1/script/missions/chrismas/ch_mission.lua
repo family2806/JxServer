@@ -11,7 +11,7 @@ function InitMission()
 	end;
 	
 	SetMissionV(MS_TIMERSTATE, 1);
-	SetMissionS(MSS_MOUSENAME, "Ê§ÂäµÄÀñÎï"); --Ë¢³ö¹ÖÎïµÄÃû×Ö
+	SetMissionS(MSS_MOUSENAME, "Bao quµ gi¸ng sinh"); --Ë¢³ö¹ÖÎïµÄÃû×Ö
 
 	local OldSubWorld = SubWorld;
 	SubWorld = SubWorldID2Idx(CH_MAPID[2]);
@@ -29,7 +29,7 @@ function EndMission()
 	end;
 	clearfairy();	--Çå³ı³¡µØÄÚËùÓĞµÄ¹Ö
 	gameover();	--½«ËùÓĞÍæ¼ÒÇå³ı³öµØÍ¼
-	strGlbNews = "¸÷Î»ÒÑ¾­·µ»ØÁË."
+	strGlbNews = "C¸c hiÖp kh¸ch ®· trë vÒ råi."
 	AddGlobalNews(strGlbNews);
 
 	StopMissionTimer(CH_MISSIONID, CH_SMALLTIMERID);
@@ -86,7 +86,7 @@ function groupsort(nGroupId)
 	for i=1,nRankCount do
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
-			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", ÕÒµ½"..tabPlayer[i][2].."ÀñÎï"
+			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", t×m ®­îc"..tabPlayer[i][2].."mãn quµ"
 		end
 	end
 	--ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
@@ -96,7 +96,7 @@ function groupsort(nGroupId)
 		if (szMsg ~= nil and szMsg ~= "") then
 			Msg2Player(szMsg)
 		end
-		Msg2Player("ÄãÅÅÃûµÚ<color=yellow>"..i.."<color>, ¿ÉÒÔÈ¥¼û <color=yellow>Ê¥µ®ÀÏÈË<color> Áì½±!");
+		Msg2Player("B¹n xÕp h¹ng thø <color=yellow>"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>¤ng giµ Noel<color> l·nh th­ëng!");
 	end;
 	
 	PlayerIndex = OldPlayer;

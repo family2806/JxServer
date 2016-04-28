@@ -13,9 +13,9 @@ Include( "\\script\\lib\\say.lua" )
 
 tbHonor_Sys_2009.tbLadderContent = 
 {
-	strTalk1 = "Äã¿´µ½<color=yellow>%s<color> ÔÚÊ¯±®ÉÏÕâÑùĞ´µÀ<enter> <enter>%s",
+	strTalk1 = "Ng­¬i nh×n thÊy <color=yellow>%s<color> ®­îc trªn bia ®¸ viÕt nh­ sau <enter> <enter>%s",
 	
-	strCancel = "Àë¿ª/#tbHonor_Sys_2009:ladder_onCancel()",
+	strCancel = "Rêi khái/#tbHonor_Sys_2009:ladder_onCancel()",
 }
 
 function main()
@@ -38,12 +38,12 @@ function tbHonor_Sys_2009:ladder_main(nNpcIdx)
     local tbContentTb =
 	{
 	    {
-			format("Ãû³Æ: <color=yellow>%s<color>",tbPlayer.strPlayerName), "", 
-			format("ÃÅÅÉ: <color=yellow>%s<color>",self.tbNPC_Template_List[tbPlayer.nClass].strName),
+			format("Danh x­ng: <color=yellow>%s<color>",tbPlayer.strPlayerName), "", 
+			format("M«n ph¸i: <color=yellow>%s<color>",self.tbNPC_Template_List[tbPlayer.nClass].strName),
 		},
 		{
 			format(tbLadder.content, tbPlayer.nValue),"",
-			format("ÅÅÃû: <color=green>%d<color>",nIdx),
+			format("XÕp h¹ng: <color=green>%d<color>",nIdx),
 		},
 	}
 	local var_width = {30,1,30}

@@ -11,28 +11,28 @@ function main()
 	UTask_em = GetTask(1);
 	if (UTask_em == 10*256+20) then					--½Óµ½10¼¶ÈÎÎñ
 		if (HaveItem(19) == 1) then
-			Talk(1,"","ÎÒµÈÄãµÄºÃÏûÏ¢! ")
+			Talk(1,"","Ta chê tin mõng cña muéi! ")
 		else
-			Talk(3, "L10_step1", "ÃîÒşÊ¦½ãÒÑ¾­°ÑÄãÃÇµÄÊÂÇé¸æËßÎÒÁË£¬ÎÒ»áÏë°ì·¨°ïÖúÄãÃÇÆÆ¾µÖØÔ²£¬ÄãÄÜ°ÑÁíÒ»°ë¾µ×Ó¸øÎÒÂğ? ", "ÄÇ¾Í°İÍĞÄãÁË£¬Äã´òËãÔõÃ´×ö?", "µ½³É¶¼ÕÒÌú½³ÊÔÊÔ£¬¿´¿´ÓĞÊ²Ã´°ì·¨?")
+			Talk(3, "L10_step1", "DiÖu Èn s­ tû ®· cho muéi biÕt chuyÖn cña ®¹i ca, ta sÏ nghÜ c¸ch gióp hµn g­¬ng l¹i. §¹i ca h·y ®­a nöa m¶nh g­¬ng kia ®­a cho ta ®­îc kh«ng? ", "VËy ta tr«ng chê vµo muéi, muéi dù ®Şnh lµm g×?", "Muéi ®Õn t×m Thî rÌn ë Thµnh §« xem cã c¸ch g× kh«ng?")
 		end
 	elseif (UTask_em == 10*256+60) then 					--Í­¾µÒÑ²¹ºÃ
-		Talk(2, "", "´ó¸ç£¬¿´£¡ÎÒÒÑ¾­°ÑÍ­¾µĞŞºÃÁË! ", "Ì«ºÃÁË£¬Äã¿ìÈ¥°ÑÍ­¾µ½»¸øÎÒÄï×Ó°É! ")
+		Talk(2, "", "§¹i ca! Xem ®i! Muéi ®· söa g­¬ng ®ång xong! ", "Tèt l¾m! H·y ®­a g­¬ng ®ång cho n­¬ng tö cña ta! ")
 	elseif (UTask_em == 10*256+70) and (HaveItem(20) == 1) then		--ÈÎÎñ×îºóÒ»²½
-		Talk(2, "", "´ó¸ç£¬ÃîÒşÊ¦½ãÍĞÎÒ°ÑÕâÃæĞŞ²¹ºÃµÄÍ­¾µ½»¸øÄã£¬ËıÒªÎÒÎÊÄãÔ¸²»Ô¸ÒâµÈËıÈıÄê£¬ÈıÄêºóËı¾Í»á»Øµ½ÄãµÄÉí±ß.", "Âé·³Äã¸æËßÎÒÄï×Ó£¬±ğËµÈıÄê£¬¾ÍÊÇÈıÊ®Äê£¬ÎÒÒ²»áµÈÏÂÈ¥µÄ")
+		Talk(2, "", "§¹i ca! DiÖu Èn s­ tû nhê muéi mang m¶nh g­¬ng nµy trao cho huynh. Nh¾n nhñ huynh cã b»ng lßng ®îi tû 3 n¨m kh«ng? 3 n¨m sau tû sÏ trë vÒ bªn huynh.", "PhiÒn ng­¬i nh¾n víi n­¬ng tö ta, dï ph¶i ®îi bao l©u ta còng ®îi nµng vÒ!")
 		DelItem(20)
 		SetTask(1, 10*256+80)
-		AddNote("°ÑÍ­¾µ½»¸øÃîÒşµÄÏà¹«£¬×ª´ïËûµÄĞÄÑª¸øÃîÒş")
-		Msg2Player("°ÑÍ­¾µ½»¸øÃîÒşµÄÏà¹«£¬×ª´ïËûµÄĞÄÑª¸øÃîÒş ")
+		AddNote("Mang g­¬ng ®ång giao cho t­íng c«ng cña DiÖu Èn vµ chuyÓn nh÷ng t©m huyÕt cña huynh Êy ®Õn DiÖu Èn s­ tû ")
+		Msg2Player("Mang g­¬ng ®ång giao cho t­íng c«ng cña DiÖu Èn vµ chuyÓn nh÷ng t©m huyÕt cña huynh Êy ®Õn DiÖu Èn s­ tû ")
 	elseif (UTask_em >= 10*256+80) then 					--ÈÎÎñÍê³ÉºóµÄ¶Ô»°
-		Talk(1,"","¶à¾ÃÎÒ¶¼µÈ")
+		Talk(1,"","Bao l©u ta còng ®îi nµng vÒ!")
 	else
-		Talk(1,"","ÎÒÃÇ·òÆŞÊ²Ã´Ê±ºò²ÅÄÜÏàÓö?")
+		Talk(1,"","Vî chång ta ®Õn bao giê míi ®­îc gÆp nhau?")
 	end
 end;
 
 function L10_step1()
 	AddEventItem(19)
 --	SetTask(1, 14)
-	AddNote("ÔÚÉ½½ÅÕÒµ½ÃîÒşµÄÏà¹«£¬»ñµÃÒ»°ëÍ­¾µ. ")
-	Msg2Player("ÔÚÉ½½ÅÕÒµ½ÃîÒşµÄÏà¹«£¬»ñµÃÒ»°ëÍ­¾µ. ")
+	AddNote("T×m ®­îc T­íng c«ng cña DiÖu Èn ë d­íi nói, vµ nhËn ®­îc nöa tÊm g­¬ng ®ång bªn ph¶i. ")
+	Msg2Player("T×m ®­îc T­íng c«ng cña DiÖu Èn ë d­íi nói, vµ nhËn ®­îc nöa tÊm g­¬ng ®ång bªn ph¶i. ")
 end;

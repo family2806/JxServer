@@ -43,7 +43,7 @@ function DailogOptionClass:OnSelect(bIsConfirm, nItemIndex)
 	end
 	
 	if self.szConfirmTips and self.szConfirmTips ~= "" and bIsConfirm ~= 1 then
-		return Say(self.szConfirmTips, 2,  self:GetEntry(nil, nil, "È·¶¨", 1, nItemIndex), "³·Ïú/OnCancel")
+		return Say(self.szConfirmTips, 2,  self:GetEntry(nil, nil, "X¸c nhËn", 1, nItemIndex), "Hñy bá /OnCancel")
 	end 
 	
 	for i=1, getn(pFunctionSet.tbActionList) do

@@ -7,53 +7,53 @@ tbNSKT_gongnv = {}
 function tbNSKT_gongnv:addDialog(tbDialog)
 	local nCurDay = tonumber(GetLocalDate("%Y%m%d"));
 	if ((nCurDay >= tbNSKT_head.nStartDay) and (nCurDay < tbNSKT_head.nItemExpiredTime)) then
-		tbDialog:AddOptEntry("Îå²Ê½á¾§»î¶¯",tbNSKT_gongnv.main,{tbNSKT_gongnv})
+		tbDialog:AddOptEntry("Ho¹t ®éng Ngò Th¸i KÕt Tinh",tbNSKT_gongnv.main,{tbNSKT_gongnv})
 	end			
 end
 
 function tbNSKT_gongnv:main()	
 	local tbMainDialog = 	self:createDiaglog()
-	tbMainDialog.szTitleMsg = "¶¬Ììµ½ÁË£¬ÎÒÈ´»¹Î´×¼±¸Ê²Ã´£¬Ä¿Ç°ÎÒÕýÐèÒªÒ»¿ÃËÉÊ÷À´×°ÊÎÊ¥µ®Ò¹£¬Èç¹ûÄã°ïÖúÎÒ£¬ÎÒ½«¸øÄãÀñÎï"
+	tbMainDialog.szTitleMsg = "Mïa ®«ng ®Õn råi mµ ta ch­a kÞp chuÈn bÞ g×, hiÖn ta ®ang cÇn mét c©y th«ng ®Ó trang hoµng ®ªm gi¸ng sinh, nÕu ng­¬i gióp ®­îc ta, ta sÏ cã mãn quµ dµnh cho ng­¬i"
 	if (tbNSKT_head:isActive() == 1)then
-		tbMainDialog:AddOptEntry("½éÉÜ»î¶¯", tbNSKT_gongnv.description, {tbNSKT_gongnv})
-		tbMainDialog:AddOptEntry("ºÏ³É½á¾§", tbNSKT_gongnv.crystalCompose, {tbNSKT_gongnv})
+		tbMainDialog:AddOptEntry("Giíi thiÖu ho¹t ®éng", tbNSKT_gongnv.description, {tbNSKT_gongnv})
+		tbMainDialog:AddOptEntry("Hîp thµnh kÕt tinh", tbNSKT_gongnv.crystalCompose, {tbNSKT_gongnv})
 	end	
-	tbMainDialog:AddOptEntry("ÐÒÔËÐÇ»î¶¯", tbNSKT_gongnv.luckyStarActivity, {tbNSKT_gongnv})
-	tbMainDialog:AddOptEntry("»»Âí·­Óð", tbNSKT_gongnv.horseAward, {tbNSKT_gongnv})
+	tbMainDialog:AddOptEntry("Ho¹t ®éng ng«i sao may m¾n", tbNSKT_gongnv.luckyStarActivity, {tbNSKT_gongnv})
+	tbMainDialog:AddOptEntry("§æi ngùa Phiªn Vò", tbNSKT_gongnv.horseAward, {tbNSKT_gongnv})
 	tbMainDialog:Show()			
 end
 
 function tbNSKT_gongnv:description()	
 	local tbDescDialog =	self:createDiaglog()
-	tbDescDialog.szTitleMsg = "Ê¥µ®¿ìµ½ÁË£¬´ó¼ÒÕýÃ¦ÓÚ×¼±¸£¬ÎªÊ²Ã´Äã»¹ÔÚÕâÀï£¿¿ìÈ¥Ö÷Ò³¿´¿´²Î¼ÓµÄÐÎÊ½°É"
-	tbDescDialog:AddOptEntry("·µ»Ø", tbNSKT_gongnv.main, {tbNSKT_gongnv})
+	tbDescDialog.szTitleMsg = "Gi¸ng sinh s¾p ®Õn råi, mäi ng­êi ®ang tÊt bËt chuÈn bÞ, sao c¸c h¹n cßn ë ®©y?. H·y  xem c¸ch thøc tham gia ë trang chñ nhÐ!"
+	tbDescDialog:AddOptEntry("Trë l¹i", tbNSKT_gongnv.main, {tbNSKT_gongnv})
 	tbDescDialog:Show()
 end
 
 function tbNSKT_gongnv:crystalCompose()
 	local tbComposeDialog =	self:createDiaglog()
-	tbComposeDialog.szTitleMsg = "½á¾§ºÜÆ¯ÁÁ£¬ºÃÏñ²ØÓÐºÜ¶à¾ªÏ²"
-	tbComposeDialog:AddOptEntry("ÈýÉ«½á¾§", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ÈýÉ«½á¾§"})
-	tbComposeDialog:AddOptEntry("ËÄÉ«½á¾§", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ËÄÉ«½á¾§"})
-	tbComposeDialog:AddOptEntry("ÎåÉ«½á¾§", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ÎåÉ«½á¾§"})
-	tbComposeDialog:AddOptEntry("·µ»Ø", tbNSKT_gongnv.main, {tbNSKT_gongnv})
+	tbComposeDialog.szTitleMsg = "KÕt tinh thËt ®Ñp, d­êng nh­ chóng còng Èn chøa nhiÒu bÊt ngê."
+	tbComposeDialog:AddOptEntry("Tam s¾c kÕt tinh", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"Tam s¾c kÕt tinh"})
+	tbComposeDialog:AddOptEntry("Tø s¾c kÕt tinh", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"Tø s¾c kÕt tinh"})
+	tbComposeDialog:AddOptEntry("Ngò s¾c kÕt tinh", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"Ngò s¾c kÕt tinh"})
+	tbComposeDialog:AddOptEntry("Trë l¹i", tbNSKT_gongnv.main, {tbNSKT_gongnv})
 	tbComposeDialog:Show()	
 end
 
 function tbNSKT_gongnv:luckyStarActivity()
 	local tbStarActDialog =	self:createDiaglog()
-	tbStarActDialog.szTitleMsg = "Ê¥µ®Ê÷ÕæÊÇÆ¯ÁÁ£¬ÄãËÍ¸øÎÒÂð?"
-	tbStarActDialog:AddOptEntry("ËÍ", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ÐÇÐÇ"})
-	tbStarActDialog:AddOptEntry("·µ»Ø", tbNSKT_gongnv.main, {tbNSKT_gongnv})
+	tbStarActDialog.szTitleMsg = "C©y th«ng gi¸ng sinh thËt ®Ñp, ng­¬i tÆng ta sao?"
+	tbStarActDialog:AddOptEntry("TÆng", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"Ng«i Sao"})
+	tbStarActDialog:AddOptEntry("Trë l¹i", tbNSKT_gongnv.main, {tbNSKT_gongnv})
 	tbStarActDialog:Show()	
 end
 
 function tbNSKT_gongnv:horseAward()
 	local tbHorseAwardDialog =	self:createDiaglog()
-	tbHorseAwardDialog.szTitleMsg = "ÓÐ2ÖÐ»»È¡·­Óð·½Ê½<enter>Ê¹ÓÃÆÚÏÞ6¸öÔÂµÄ·­Óð: <color=red>60<color> ÁîÅÆ<enter>ÎÞÊ¹ÓÃÆÚÏÞ·­Óð: <color=red>200<color> ÁîÅÆ"	
-	tbHorseAwardDialog:AddOptEntry("»»ÓÐÊ¹ÓÃÆÚÏÞ·­Óð", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"·­Óð"})
-	tbHorseAwardDialog:AddOptEntry("»»ÎÞÊ¹ÓÃÆÚÏÞ·­Óð", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ÎÞÊ¹ÓÃÆÚÏÞ·­Óð"})
-	tbHorseAwardDialog:AddOptEntry("·µ»Ø", tbNSKT_gongnv.main, {tbNSKT_gongnv})
+	tbHorseAwardDialog.szTitleMsg = "Cã 2 c¸ch ®æi Phiªn Vò:<enter>Phiªn Vò h¹n sö dông 6 th¸ng : <color=red>60<color> lÖnh bµi<enter>Phiªn Vò kh«ng h¹n sö dông: <color=red>200<color> lÖnh bµi"	
+	tbHorseAwardDialog:AddOptEntry("§æi Phiªn Vò cã h¹n sö dông", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"Phiªn Vò"})
+	tbHorseAwardDialog:AddOptEntry("»»ÎÞÊ¹ÓÃÆÚÏÞPhiªn Vò", tbNSKT_ItemCompose.compose, {tbNSKT_ItemCompose,"ÎÞÊ¹ÓÃÆÚÏÞPhiªn Vò"})
+	tbHorseAwardDialog:AddOptEntry("Trë l¹i", tbNSKT_gongnv.main, {tbNSKT_gongnv})
 	tbHorseAwardDialog:Show()		
 end
 

@@ -10,25 +10,25 @@ function  main(nItemIndex)
 	
 	
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	if (GetTask(Task_IsCurUse_VongHoa) ~= 0) then
-		Talk(1,"","ÄãÕıÔÚÊ¹ÓÃÎïÆ· !")
+		Talk(1,"","B¹n ®ang sö dông vËt phÈm !")
 		return 1
 	end
 	if (GetTask(Task_BeUse_VongHoa) >= nMaxEXP) then
-		Talk(1,"","Ê¹ÓÃ»¨È¦´ïµ½×î´ó¾­ÑéÖµ!")
+		Talk(1,"","Sö dông vßng hoa ®¹t tèi ®a ®iÓm kinh nghiÖm !")
 		return 1
 	end
 	if (GetLevel() < 50) then
-		Talk(1,"","µÈ¼¶µÍÓÚ50¼¶£¬²»ÄÜÊ¹ÓÃ !")
+		Talk(1,"","§¼ng cÊp nhá h¬n 50 kh«ng thÓ sö dông !")
 		return 1
 	end
 	if CalcFreeItemCellCount() < 5 then
-			Talk(1, "", "×°±¸²»×ã5¸ö¿ÕÎ».");
+			Talk(1, "", "Hµnh trang kh«ng ®ñ 5 « trèng.");
 			return 1
 	end
 	Create_main(nItemIndex)
-	--WriteLog(date("%Y%m%d %H%M%S").."\t".."ĞĞÏÀÆì"..GetAccount().."\t"..GetName().."\t".."Ê¹ÓÃĞĞÏÀÆì")	
+	--WriteLog(date("%Y%m%d %H%M%S").."\t".."Hµnh HiÖp Kú"..GetAccount().."\t"..GetName().."\t".."Ê¹ÓÃHµnh HiÖp Kú")	
 end

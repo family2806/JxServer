@@ -5,7 +5,7 @@ Include("\\script\\lib\\composelistclass.lua")
 IL("LEAGUE")
 	
 local _ComposeMsg = function ()
-	local szMsg = "ÕâÊÇ³ÉÆ·£¬×£¸÷Î»ºÃÔË."
+	local szMsg = "§©y lµ thµnh phÈm, chóc c¸c h¹ may m¾n."
 	Talk(1, "", szMsg)
 end
 
@@ -125,29 +125,29 @@ local tbFormulaList_Box =
 {
 	[1] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "ÔÚÏÂÏë¸÷Î»»¹È±Ê²Ã´¶«Î÷ÄØ?",
+		szComposeTitle =  "§æi",
+		szFailMsg = "T¹i h¹ nghÜ r»ng c¸c h¹ ®ang cßn thiÕu g× ®ã?",
 		nFreeItemCellLimit = 10,
 		tbMaterial = 
 		{
 			
-			{szName="ÉñÃØÃÜÍ¼", tbProp={6, 1, 196}, nCount = 10},
+			{szName="MËt ®å thÇn bÝ ", tbProp={6, 1, 196}, nCount = 10},
 			{nJxb = 3e4},
 		},
-		tbProduct = {szName="»Æ½ð±¦Ïä", tbProp={6, 1, 1985, 1, 0, 0}, nExpiredTime = tbXunMaShu0903.nItemExpiredTime, CallBack = _ComposeMsg}, 
+		tbProduct = {szName="Hoµng Kim B¶o r­¬ng", tbProp={6, 1, 1985, 1, 0, 0}, nExpiredTime = tbXunMaShu0903.nItemExpiredTime, CallBack = _ComposeMsg}, 
 	},
 	[2] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "ÔÚÏÂÏë¸÷Î»»¹È±Ê²Ã´¶«Î÷ÄØ?",
+		szComposeTitle =  "§æi",
+		szFailMsg = "T¹i h¹ nghÜ r»ng c¸c h¹ ®ang cßn thiÕu g× ®ã?",
 		nFreeItemCellLimit = 10,
 		tbMaterial = 
 		{
 			
-			{szName="ÉñÃØÃÜÍ¼", tbProp={6, 1, 196}, nCount = 10},
-			{szName="Ìì¾§Ê¯", tbProp={6, 1, 1988}},
+			{szName="MËt ®å thÇn bÝ ", tbProp={6, 1, 196}, nCount = 10},
+			{szName="Thiªn Tinh Th¹ch", tbProp={6, 1, 1988}},
 		},
-		tbProduct = {szName="°×½ð±¦Ïä", tbProp={6, 1, 1986, 1, 0, 0}, nExpiredTime = tbXunMaShu0903.nItemExpiredTime, CallBack = _ComposeMsg}, 
+		tbProduct = {szName="B¶o r­¬ng B¹ch Kim", tbProp={6, 1, 1986, 1, 0, 0}, nExpiredTime = tbXunMaShu0903.nItemExpiredTime, CallBack = _ComposeMsg}, 
 	},
 
 }
@@ -156,30 +156,30 @@ local tbFormulaList_Horse =
 {
 	[1] = 
 	{
-		szComposeTitle =  "¶Ò»»",
-		szFailMsg = "´óÏÀ·ÅÈëµÄÎïÆ·²»¶Ô»òÕßÊýÁ¿ÓÐÎó.",
+		szComposeTitle =  "§æi",
+		szFailMsg = "Lo¹i vËt phÈm c¸c h¹ bá vµo kh«ng ®óng hoÆc sai sè l­îng.",
 		nFreeItemCellLimit = 0,
 		tbMaterial = 
 		{
 			
-			tbItemInGiveUi:new({szName="·ÉÔÆ", tbProp={0, 10, 8}}),
-			tbItemInGiveUi:new({szName="±±¶·Ñ±ÂíÊõ", tbProp={6, 1, 1987}}),
+			tbItemInGiveUi:new({szName="Phi V©n", tbProp={0, 10, 8}}),
+			tbItemInGiveUi:new({szName="B¾c §Èu ThuÇn M· ThuËt", tbProp={6, 1, 1987}}),
 		},
 		tbProduct = 
 		{
-			szName = "Ñ±Âí",
-			[1] = {szName="ÕÕÒ¹ÓñÊ¨×Ó", tbProp={0, 10, 5, 5, 5, 0}, nRate = 13},
-			[2] = {szName="³àÍÃ", tbProp={0, 10, 5, 2, 5, 0}, nRate = 7},
-			[3] = {szName="µÄÂ¬", tbProp={0, 10, 5, 4, 5, 0}, nRate = 1.97},
-			[4] = {szName="ÎÚÔÆÌ¤Ñ©", tbProp={0, 10, 5, 1, 5, 0}, nRate = 4},
-			[5] = {szName="¾øÓ°", tbProp={0, 10, 5, 3, 5, 0}, nRate = 4},
+			szName = "ThuÇn M·",
+			[1] = {szName="ChiÕu D¹ Ngäc S­ Tö ", tbProp={0, 10, 5, 5, 5, 0}, nRate = 13},
+			[2] = {szName="XÝch Thè ", tbProp={0, 10, 5, 2, 5, 0}, nRate = 7},
+			[3] = {szName="§Ých L« ", tbProp={0, 10, 5, 4, 5, 0}, nRate = 1.97},
+			[4] = {szName="¤ V©n §¹p TuyÕt", tbProp={0, 10, 5, 1, 5, 0}, nRate = 4},
+			[5] = {szName="TuyÖt ¶nh", tbProp={0, 10, 5, 3, 5, 0}, nRate = 4},
 			[6] = 
 			{
 				nRate = 20,
-				[1] = {szName="±¼Ïü", tbProp={0, 10, 6, 1, 5, 0}},
+				[1] = {szName="B«n Tiªu", tbProp={0, 10, 6, 1, 5, 0}},
 				[2] = {
 					pFun = function()
-						local szMsg = format("¸ßÊÖ<color=green>%s<color>ÒÑ¾­Ñ±»¯ÁË°º¹óµÄÂí£¬×£ºØ²¢Õ°Ñö!", GetName())
+						local szMsg = format("Cao thñ <color=green>%s<color> ®· thuÇn hãa ®­îc ngùa quý, h·y chóc mõng vµ chiªm ng­ìng!", GetName())
 						AddGlobalNews(szMsg)
 						
 						LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", szMsg, "", "")
@@ -189,17 +189,17 @@ local tbFormulaList_Horse =
 			[7] =
 			{
 				nRate = 0.03,
-				[1] = {szName="·­Óð", tbProp={0, 10, 7, 1, 5, 0}},
+				[1] = {szName="Phiªn Vò ", tbProp={0, 10, 7, 1, 5, 0}},
 				[2] = {
 					pFun = function()
-						local szMsg = format("¸ßÊÖ<color=green>%s<color>ÒÑ¾­Ñ±»¯ÁË°º¹óµÄÂí£¬×£ºØ²¢Õ°Ñö!", GetName())
+						local szMsg = format("Cao thñ <color=green>%s<color> ®· thuÇn hãa ®­îc ngùa quý, h·y chóc mõng vµ chiªm ng­ìng!", GetName())
 						AddGlobalNews(szMsg)
 						
 						LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "colork_bless_anywhere", szMsg, "", "")
 					end
 				}
 			},
-			[8] = {szName="·ÉÔÆ", tbProp={0, 10, 8, 1, 5, 0}, nRate = 50,},
+			[8] = {szName="Phi V©n", tbProp={0, 10, 8, 1, 5, 0}, nRate = 50,},
 		}, 
 	},
 } 
@@ -220,7 +220,7 @@ local tbFormulaList_Horse =
 function tbXunMaShu0903:DialogMain_Box()
 	
 	if self:IsActDate() ~= 1 then
-		Talk(1, "", "»î¶¯½áÊøÁË.")
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 		return
 	end
 	
@@ -228,7 +228,7 @@ function tbXunMaShu0903:DialogMain_Box()
 	local bRet, szFailMsg = self:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(1, "", szFailMsg, "¸÷Î»Ã»ÓÐ×Ê¸ñ²Î¼Ó´Ë»î¶¯")
+		Talk(1, "", szFailMsg, "C¸c h¹ ch­a ®ñ ®iÒu kiÖn ®Ó tham gia ho¹t ®éng nµy")
 		return
 	end
 	
@@ -236,10 +236,10 @@ function tbXunMaShu0903:DialogMain_Box()
 	if not self.Compose_Box then
 		self.Compose_Box = tbComposeListClass:new("tbXunMaShu0903_ComposeBox", %tbFormulaList_Box)
 	end
-	local szTitle = "<dec><npc>".." ¸÷Î»Ïë¾«Á¶ÄÄ¸ö±¦ÏäÄØ?"
+	local szTitle = "<dec><npc>".." C¸c h¹ muèn tinh luyÖn b¶o r­¬ng nµo?"
 	
 	
-	local tbSay = self.Compose_Box:MakeOptByProductName("ÎÒÏë¾«Á¶³É")
+	local tbSay = self.Compose_Box:MakeOptByProductName("T¹i h¹ muèn tinh luyÖn thµnh ")
 	tinsert(tbSay, 1, szTitle)
 	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel")
 	CreateTaskSay(tbSay)
@@ -247,7 +247,7 @@ end
 
 function tbXunMaShu0903:DialogMain_Horse()
 	if self:IsActDate() ~= 1 then
-		Talk(1, "", "»î¶¯½áÊøÁË.")
+		Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.")
 		return
 	end
 	
@@ -255,7 +255,7 @@ function tbXunMaShu0903:DialogMain_Horse()
 	local bRet, szFailMsg = self:IsPlayerEligible() 
 	
 	if bRet ~= 1 then
-		Talk(1, "", szFailMsg, "¸÷Î»Ã»ÓÐ×Ê¸ñ²Î¼Ó´Ë»î¶¯")
+		Talk(1, "", szFailMsg, "C¸c h¹ ch­a ®ñ ®iÒu kiÖn ®Ó tham gia ho¹t ®éng nµy")
 		return
 	end
 	
@@ -278,7 +278,7 @@ end
 
 function tbXunMaShu0903__ProcessGiveUI(nCount)
 	if nCount ~= 2 then
-		return Talk(1, "", "·ÅÈëÊýÁ¿²»¹»")
+		return Talk(1, "", "Bá vµo sè l­îng kh«ng ®óng")
 	end
 	
 	tbComposeClass:Compose(%tbFormulaList_Horse[1], "tbXunMaShu0903 exchange horse", 1)
@@ -290,8 +290,8 @@ end
 function tbXunMaShu0903:ExchangeHorse()
 	
 	
-	local szTitle = "Ñ±Âí"
-	local szMaterial = "1·ÉÔÆºÍ1±±¶·Ñ±ÂíÊõ"
+	local szTitle = "ThuÇn M·"
+	local szMaterial = "1 Phi V©n vµ 1 B¾c §Èu ThuÇn M· ThuËt"
 	GiveItemUI(szTitle, szMaterial, "tbXunMaShu0903__ProcessGiveUI", "OnCancel")
 end
 

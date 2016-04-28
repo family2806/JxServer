@@ -5,9 +5,9 @@ function xmars2007_findgirl(ngirl,nmapid)
 		for nmid,szname in tb_xmas_city do
 			nSubWorld = SubWorldID2Idx(nmid)
 			if nSubWorld >= 0 then
-				ClearMapNpcWithName(nmid,"¶¬¶ù")
-				ClearMapNpcWithName(nmid,"°×¶ù")
-				ClearMapNpcWithName(nmid,"Ñ©¶ù")
+				ClearMapNpcWithName(nmid,"§«ng Nhi")
+				ClearMapNpcWithName(nmid,"B¹ch Nhi")
+				ClearMapNpcWithName(nmid,"TuyÕt Nhi")
 			end
 		end
 	end
@@ -35,7 +35,7 @@ function xmas2007_callgirl(ni,nmapidw,mappos)
 	--print(nmapidw,mappos[1],mappos[2])
 	local nidx = AddNpcEx(bossid,bosslv,bossseries,worldsub,mappos[1]*32,mappos[2]*32,1,bossname, 1) 
 	if nidx <= 0 then
-		print("Ñ°ÕÒÉñÃØÉÙÅ®»î¶¯Ê§°Ü")
+		print("Ho¹t ®éng truy t×m thiÕu n÷ thÇn bÝ thÊt b¹i")
 	else
 		SetNpcParam(nidx,1,ni)
 		SetNpcParam(nidx,2,0)

@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("Ìú½³Ñ§Í½£º²»ÊÇÎÒ´µÅ££¬Äã±ğ¿´ÎÒÊİÊİĞ¡Ğ¡£¬ÂÕÆğÌúÀÆÍ·À´£¬ÄÄ¸öÒ²±È²»ÎÒ£¡", 0);  		
+Say("§õng cã khinh th­êng ta èm yÕu nhĞ! Ta quay bóa ngay c¶ s­ phô thÊy cßn nÓ ®ã!", 0);  		
 
 end;
 

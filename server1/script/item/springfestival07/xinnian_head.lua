@@ -10,13 +10,13 @@ TSK_XINNIANNIANGAO_MAXEXP = 1588;
 
 function isTakeXinNianItem(nItemIdx)
 	if (GetLevel() < 80) then
-		Say("ÄúÐèÒª80¼¶ÒÔºó²ÅÄÜÊ¹ÓÃ!", 0);
+		Say("B¹n ph¶i sau cÊp 80 míi cã thÓ sö dông!", 0);
 		return 0;
 	end;
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	
 	if (nDate > 20070306) then
-		Say(GetItemName(nItemIdx).."ÒÑ¹ýÊ¹ÓÃÆÚ£¬Èç¹û¼ÌÐøÊ¹ÓÃ½«ÓÐº¦£¬ÐèÒª¶ªµô", 0);
+		Say(GetItemName(nItemIdx).."§· qu¸ h¹n sö dông, nÕu tiÕp tôc sö dông sÏ g©y h¹i, cÇn ph¶i vøt bá!", 0);
 		RemoveItemByIndex(nItemIdx);
 		return 0;
 	end;

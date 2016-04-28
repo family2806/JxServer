@@ -7,71 +7,71 @@ tbVNEquiptInfo =
 {
 	[1] = 
 		{
-			strType = "Çà¾Ô",
+			strType = "Thanh C©u",
 			nStartIndex = 905,
 		},
 	[2] =
 		{
-			strType = "ÔÆÂ¹",
+			strType = "V©n Léc",
 			nStartIndex = 1135,
 		},
 	[3] =
 		{
-			strType = "²ÔÀÇ",
+			strType = "Th­¬ng Lang",
 			nStartIndex = 1365,
 		},
 	[4] =
 		{
-			strType = "ÐþÔ³",
+			strType = "HuyÒn Viªn",
 			nStartIndex = 1595,
 		},
 	[5] =
 		{
-			strType = "×ÏÃ§",
+			strType = "Tö M·ng",
 			nStartIndex = 1825,
 		},
 	[6] =
 		{
-			strType = "½ðÎÚ",
+			strType = "Kim ¤",
 			nStartIndex = 2055,
 		},
 	[7] =
 		{
-			strType = "°×»¢",
+			strType = "B¹ch Hæ",
 			nStartIndex = 2285,
 		},
 	[8] =
 		{
-			strType = "½ðÎÚ (Max Option)",
+			strType = "Kim ¤ (Max Option)",
 			nStartIndex = 3235,
 		},
 }
---Ñ¡ÔñÖ÷µ¼½ø¹¥µÄÎäÆ÷
+--Ñ¡ÔñÖ÷µ¼½ø¹¥µÄVò KhÝ
 tbVNFactionBranch = 
 	{
-		"ÉÙÁÖÈ­·¨",
-		"ÉÙÁÖ¹÷·¨",
-		"ÉÙÁÖµ¶·¨",
-		"ÌìÍõ´¸·¨",
-		"ÌìÍõÇ¹·¨",
-		"ÌìÍõµ¶·¨",
-		"¶ëÃ¼½£·¨",
-		"¶ëÃ¼ÕÆ·¨",
-		"´äÑÌµ¶·¨",
-		"´äÑÌË«µ¶",
-		"Îå¶¾ÕÆ·¨",
-		"Îå¶¾µ¶·¨", --12
-		"ÌÆÃÅ·Éµ¶",
-		"ÌÆÃÅåó¼ý",
-		"ÌÆÃÅ·ÉïÚ",
-		"Ø¤°ïÕÆ·¨",
-		"Ø¤°ï¹÷·¨",
-		"ÌìÈÌÃ¬·¨",
-		"ÌìÈÌµ¶·¨",
-		"Îäµ±È­·¨",
-		"Îäµ±½£·¨",
-		"À¥ÂØµ¶·¨",
-		"À¥ÂØ½£·¨",
+		"ThiÕu L©m quyÒn ph¸p",
+		"ThiÕu L©m c«n ph¸p",
+		"ThiÕu L©m ®ao ph¸p",
+		"Thiªn V­¬ng chïy ph¸p",
+		"Thiªn V­¬ng th­¬ng ph¸p",
+		"Thiªn V­¬ng ®ao ph¸p",
+		"Nga Mi kiÕm ph¸p",
+		"Nga Mi ch­ëng ph¸p",
+		"Thóy Yªn ®ao ph¸p",
+		"Thóy Yªn song ®ao",
+		"Ngò §éc ch­ëng ph¸p",
+		"Ngò §éc ®ao ph¸p", --12
+		"§­êng M«n phi ®ao",
+		"§­êng M«n ná tiÔn",
+		"§­êng M«n phi tiªu",
+		"C¸i Bang ch­ëng ph¸p",
+		"C¸i Bang c«n ph¸p",
+		"Thiªn NhÉn m©u ph¸p",
+		"Thiªn NhÉn ®ao ph¸p",
+		"Vâ §ang quyÒn ph¸p",
+		"Vâ §ang kiÕm ph¸p",
+		"C«n L«n ®ao ph¸p",
+		"C«n L«n kiÕm ph¸p",
 	}
 	
 tbVNBranchGroupByFaction = {
@@ -102,30 +102,30 @@ tbVnItemPos = {
 }
 
 tbVnItemName = {
-	[1] = {"ÏîÁ´", 0},
-	[2] = {"¶¥Ã±", 1},
-	[3] = {"ÉÏ½äÖ¸", 2},
-	[4] = {"»¤Íó", 3},
-	[5] = {"Ñü´ø", 4},
-	[6] = {"ÒÂ·þ", 5},
-	[7] = {"ÎäÆ÷", 6},
-	[8] = {"Ð¬×Ó", 7},
-	[9] = {"ÓñÅå", 8},
-	[10] = {"ÏÂ½äÖ¸", 9},	
+	[1] = {"H¹ng Liªn", 0},
+	[2] = {"§Ønh M¹o", 1},
+	[3] = {"Th­îng Giíi ChØ", 2},
+	[4] = {"Hé UyÓn", 3},
+	[5] = {"Yªu §¸i", 4},
+	[6] = {"Y Phôc", 5},
+	[7] = {"Vò KhÝ", 6},
+	[8] = {"Hµi Tö", 7},
+	[9] = {"Ngäc Béi", 8},
+	[10] = {"H¹ Giíi ChØ", 9},	
 }
 
 tbVnItemName2 = 
 {
-	[0] = "ÏîÁ´",
-	[1] = "¶¥Ã±", 
-	[2] = "ÉÏ½äÖ¸",
-	[3] = "»¤Íó",
-	[4] = "Ñü´ø",
-	[5] = "ÒÂ·þ",
-	[6] = "ÎäÆ÷",
-	[7] = "Ð¬×Ó",
-	[8] = "ÓñÅå",
-	[9] = "ÏÂ½äÖ¸",
+	[0] = "H¹ng Liªn",
+	[1] = "§Ønh M¹o", 
+	[2] = "Th­îng Giíi ChØ",
+	[3] = "Hé UyÓn",
+	[4] = "Yªu §¸i",
+	[5] = "Y Phôc",
+	[6] = "Vò KhÝ",
+	[7] = "Hµi Tö",
+	[8] = "Ngäc Béi",
+	[9] = "H¹ Giíi ChØ",
 }
 
 tbVnFreeCellBag = {
@@ -145,16 +145,16 @@ tbVNGetGoldEquip = {}
 
 function tbVNGetGoldEquip:ShowEquipTypeDialog(tbItemProp)
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "ÇëÑ¡Ôñ×°±¸ÀàÐÍ "
+	tbDailog.szTitleMsg = "Xin chän lo¹i trang bÞ!"
 	for i = 1, getn(tbVNEquiptInfo) do
-		tbDailog:AddOptEntry("ÇëÑ¡Ôñ"..tbVNEquiptInfo[i].strType, self.ShowEquipBranchDialog, {self, i, tbItemProp})
+		tbDailog:AddOptEntry("Bé Trang BÞ "..tbVNEquiptInfo[i].strType, self.ShowEquipBranchDialog, {self, i, tbItemProp})
 	end
 	tbDailog:Show()	
 end
 
 function tbVNGetGoldEquip:ShowSpecItemDialog(nType, tbItemProp)
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "ÇëÑ¡Ôñ:"
+	tbDailog.szTitleMsg = "Xin chän mãn:"
 	for i = 1, getn(tbVnItemName) do
 		tbDailog:AddOptEntry(tbVnItemName[i][1], self.SelectSpecItem, {self, nType, tbItemProp, tbVnItemName[i][2]})
 	end
@@ -169,11 +169,11 @@ end
 
 function tbVNGetGoldEquip:ShowEquipBranchDialog(nType, tbItemProp)		
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "ÇëÑ¡ÔñÖ÷µ¼½ø¹¥ÀàÐÍ:"
+	tbDailog.szTitleMsg = "Xin chän hÖ tÊn c«ng chñ ®¹o:"
 	for nBranch = 1, 12 do
 		tbDailog:AddOptEntry(tbVNFactionBranch[nBranch], self.GetGoldEquip, {self, nType, nBranch, tbItemProp})
 	end
-	tbDailog:AddOptEntry("ÏÂÒ»Ò³", self.ShowEquipBranchDialog2, {self, nType, tbItemProp})
+	tbDailog:AddOptEntry("Trang kÕ", self.ShowEquipBranchDialog2, {self, nType, tbItemProp})
 	tbDailog:Show()	
 end
 
@@ -182,13 +182,13 @@ function tbVNGetGoldEquip:ShowEquipBranchDialog2(nType, tbItemProp)
 	for nBranch = 1, 11 do
 		tbDailog:AddOptEntry(tbVNFactionBranch[nBranch + 12], self.GetGoldEquip, {self, nType, nBranch + 12, tbItemProp})
 	end
-	tbDailog:AddOptEntry("·µ»Ø", self.ShowEquipBranchDialog, {self, nType, tbItemProp})
+	tbDailog:AddOptEntry("Quay l¹i", self.ShowEquipBranchDialog, {self, nType, tbItemProp})
 	tbDailog:Show()	
 end
 
 function tbVNGetGoldEquip:ShowEquipBranchByFaction(nType, tbItemProp, nFaction)		
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "ÇëÑ¡ÔñÖ÷µ¼½ø¹¥ÀàÐÍ:"
+	tbDailog.szTitleMsg = "Xin chän hÖ tÊn c«ng chñ ®¹o:"
 	local nCount = getn(tbVNBranchGroupByFaction[nFaction])
 	if not nCount then
 		return
@@ -217,12 +217,12 @@ function tbVNGetGoldEquip:GetGoldEquip(nType, nBranch, tbItemProp)
 	else
 		if nSpecificItem == tbVnItemPos.WHOLE_SET then
 			if CalcFreeItemCellCount() < 59 then
-				Talk(1, "", "ÇëÇå¿Õ×°±¸£¬È»ºóÁì½±.")
+				Talk(1, "", "Xin h·y dän trèng hµnh trang råi h·y nhËn th­ëng.")
 				return
 			end		
 		else
 			if CountFreeRoomByWH(tbVnFreeCellBag[nSpecificItem].nW, tbVnFreeCellBag[nSpecificItem].nH, 1) < 1 then
-				Talk(1, "", format("ÇëÁôÏÂ <color=red>%d x %d <color> ×°±¸¿ÕÎ»£¬È»ºóÁì½±.", tbVnFreeCellBag[nSpecificItem].nW, tbVnFreeCellBag[nSpecificItem].nH))
+				Talk(1, "", format("Xin h·y chõa <color=red>%d x %d <color>« trèng hµnh trang råi h·y nhËn th­ëng.", tbVnFreeCellBag[nSpecificItem].nW, tbVnFreeCellBag[nSpecificItem].nH))
 				return
 			end
 		end
@@ -285,16 +285,16 @@ function tbVNGetGoldEquip:GetGoldEquip(nType, nBranch, tbItemProp)
 end
 
 function tbVNGetGoldEquip:UpgradeEquip(tbParam)
-	g_GiveItemUI("»»×°±¸", "", {self.GiveUIOk, {self, tbParam}}, nil, tbParam.bAccessBindItem)
+	g_GiveItemUI("§æi trang bÞ", "", {self.GiveUIOk, {self, tbParam}}, nil, tbParam.bAccessBindItem)
 end
 
 function tbVNGetGoldEquip:GiveUIOk(tbParam, nCount)
 	if GetFightState() ~= 0 then
-		Talk(1, "", "¸Ã²Ù×÷Ö»ÄÜÔÚ·ÇÕ½¶·ÇøÓòÖ´ÐÐ")
+		Talk(1, "", "Thao t¸c nµy chØ thùc hiÖn ®­îc t¹i khu vùc phi chiÕn ®Êu")
 		return
 	end
 	if nCount <= 0 or nCount > 1 then
-		Talk(1, "", "Ã¿´ÎÖ»ÄÜ»»Ò»¸ö×°±¸")
+		Talk(1, "", "Mçi lÇn chØ ®­îc ®æi 1 trang bÞ")
 		return
 	end
 	local nItemIdx = GetGiveItemUnit(1)
@@ -304,7 +304,7 @@ function tbVNGetGoldEquip:GiveUIOk(tbParam, nCount)
 	local nItemSettingIdx = GetGlodEqIndex(nItemIdx)
 	--¼ì²é·ÅÈë×°±¸ÊÇ·ñ¶ÔÁË
 	if (nItemSettingIdx < tbVNEquiptInfo[tbParam.nOldType].nStartIndex) or (nItemSettingIdx > (tbVNEquiptInfo[tbParam.nOldType].nStartIndex + 229)) then
-		Talk(1, "", format("Ö»ÄÜ»»×°±¸ <color=red>%s<color>", tbVNEquiptInfo[tbParam.nOldType].strType))
+		Talk(1, "", format("ChØ ®­îc phÐp ®æi trang bÞ <color=red>%s<color>", tbVNEquiptInfo[tbParam.nOldType].strType))
 		return
 	end
 	--¼ì²é²»ÄÜ»»µÄitem
@@ -312,7 +312,7 @@ function tbVNGetGoldEquip:GiveUIOk(tbParam, nCount)
 		local nItemType = mod(nItemSettingIdx - tbVNEquiptInfo[tbParam.nOldType].nStartIndex, 10)		
 		for i = 1, getn(tbParam.tbExclude) do
 			if nItemType == tbParam.tbExclude[i] then
-				Talk(1, "", "²»ÄÜ»» "..tbVnItemName2[nItemType])
+				Talk(1, "", "Kh«ng ®­îc phÐp ®æi "..tbVnItemName2[nItemType])
 				return
 			end
 		end

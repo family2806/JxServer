@@ -23,18 +23,18 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "click npc named dazhushuai",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"´óÖ÷Ë§"},
+	tbMessageParam = {"§¹i Chñ So¸i"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÉÏ½»»ÕºÅ",3} },
-		{"AddDialogOpt",	{"ÁìÈ¡µÚÒ»Ö÷Ë§³ÆºÅ",4} },
-		{"AddDialogOpt",	{"ÁìÈ¡µÚÒ»Ö÷Ë§½±Àø",5} },
-		{"AddDialogOpt",	{"¼¤»îµÚÒ»Ö÷Ë§ĞÔÄÜ",6} },
-		{"AddDialogOpt",	{"¼ì²éÃûºÅ»ı·Ö",7} },
-		{"AddDialogOpt",	{"Éı¼¶»ÕºÅ",16} },
+		{"AddDialogOpt",	{"Nép Huy HiÖu",3} },
+		{"AddDialogOpt",	{"NhËn danh hiÖu §Ö NhÊt Chñ So¸i",4} },
+		{"AddDialogOpt",	{"NhËn phÇn th­ëng §Ö NhÊt Chñ So¸i",5} },
+		{"AddDialogOpt",	{"Kİch ho¹t tİnh n¨ng §Ö NhÊt Chñ So¸i",6} },
+		{"AddDialogOpt",	{"KiÓm tra ®iÓm tİch lòy danh hiÖu",7} },
+		{"AddDialogOpt",	{"N©ng cÊp Huy HiÖu",16} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -44,17 +44,17 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	szName = "handin medal total",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÄúºÃ",0},
+	tbMessageParam = {"Xin chµo",0},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_MEDAL,MAX_DAILY_HANDIN_MEDAL,"½ñÌìÄãÒÑÉÏ½»µÄÌ«¶àÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_MEDAL,MAX_DAILY_HANDIN_MEDAL,"H«m nay ng­¬i ®· giao nép qu¸ nhiÒu råi, ®îi ngµy mai quai l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÉÏ½»1¼¶»ÕºÅ",24} },
-		{"AddDialogOpt",	{"ÉÏ½»2¼¶»ÕºÅ",25} },
-		{"AddDialogOpt",	{"ÉÏ½»3¼¶»ÕºÅ",26} },
+		{"AddDialogOpt",	{"Giao nép Huy HiÖu cÊp 1",24} },
+		{"AddDialogOpt",	{"Giao nép Huy HiÖu cÊp 2",25} },
+		{"AddDialogOpt",	{"Giao nép Huy HiÖu cÊp 3",26} },
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -68,8 +68,8 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_GET_TITLE,1,"ÄúÒÑÁìÈ¡¸Ã³ÆºÅÁË","<"} },
-		{"lib:CheckTimeAndWeekDay",	{1000,2400,"4","´ÓÃ¿ÖÜĞÇÆÚÎå10:00µ½24:00h²ÅÄÜÁìÈ¡"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_GET_TITLE,1,"Ng­¬i ®· nhËn danh hiÖu nµy råi","<"} },
+		{"lib:CheckTimeAndWeekDay",	{1000,2400,"4","Tõ 10:00 ®Õn 24:00 thø 5 hµng tuÇn míi cã thÓ nhËn"} },
 	},
 	tbActition = 
 	{
@@ -87,7 +87,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_EXP_AWARD,1,"½ñÌìÄúÒÑÁìÈ¡¸Ã½±ÀøÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_EXP_AWARD,1,"H«m nay ng­¬i ®· nhËn phÇn th­ëng nµy, ®îi ngµy mai quay l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
@@ -105,13 +105,13 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"½ñÌì¸óÏÂµÄ¼¤»î´ÎÊıÒÑ¾­ÓÃÍê£¬µÈÃ÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"H«m nay sè lÇn kİch ho¹t cña c¸c h¹ ®· sö dung hÕt, ®îi ngµy mai quay l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"¼¤»î´³¹ØÁìÈ¡Ğ§¹û2±¶¾­Ñé",8} },
-		{"AddDialogOpt",	{"¼¤»îÑ×µÛÁìÈ¡Ğ§¹û2±¶¾­Ñé",9} },
-		{"AddDialogOpt",	{"¼¤»îËÎ½ğÁìÈ¡Ğ§¹û2±¶¾­Ñé",10} },
+		{"AddDialogOpt",	{"Kİch ho¹t V­ît ¶i nhËn hiÖu qu¶ nh©n 2 kinh nghiÖm",8} },
+		{"AddDialogOpt",	{"Kİch ho¹t Viªm §Õ nhËn hiÖu qu¶ nh©n 2 kinh nghiÖm",9} },
+		{"AddDialogOpt",	{"Kİch ho¹t Tèng Kim nhËn hiÖu qu¶ nh©n 2 ®iÓm tİch lòy",10} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -142,7 +142,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"½ñÌì¸óÏÂµÄ¼¤»î´ÎÊıÒÑ¾­ÓÃÍê£¬µÈÃ÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"H«m nay sè lÇn kİch ho¹t cña c¸c h¹ ®· sö dung hÕt, ®îi ngµy mai quay l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
@@ -160,7 +160,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"½ñÌì¸óÏÂµÄ¼¤»î´ÎÊıÒÑ¾­ÓÃÍê£¬µÈÃ÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"H«m nay sè lÇn kİch ho¹t cña c¸c h¹ ®· sö dung hÕt, ®îi ngµy mai quay l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
@@ -178,7 +178,7 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"½ñÌì¸óÏÂµÄ¼¤»î´ÎÊıÒÑ¾­ÓÃÍê£¬µÈÃ÷ÌìÔÙÀ´°É","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_ACTIVE,MAX_DAILY_ACTIVE,"H«m nay sè lÇn kİch ho¹t cña c¸c h¹ ®· sö dung hÕt, ®îi ngµy mai quay l¹i nhĞ","<"} },
 	},
 	tbActition = 
 	{
@@ -200,7 +200,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,10,EVENT_LOG_TITLE,"ËÎ½ğ3000Áì»ÕºÅ"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,10,EVENT_LOG_TITLE,"TongKim3000NhanHuyHieu"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -219,7 +219,7 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"ËÎ½ğ1000Áì»ÕºÅ"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"TongKim1000NhanHuyHieu"} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
@@ -236,7 +236,7 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"´³¹Ø17Áì»ÕºÅ"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"VuotAi17NhanHuyHieu"} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
@@ -253,7 +253,7 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"´³¹Ø28Áì»ÕºÅ"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,5,EVENT_LOG_TITLE,"VuotAi28NhanHuyHieu"} },
 	},
 }
 tbConfig[15] = --Ò»¸öÏ¸½Ú
@@ -270,7 +270,7 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,10,EVENT_LOG_TITLE,"Ñ×µÛ´³¹Ø6Áì»ÕºÅ"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEDAL_1,10,EVENT_LOG_TITLE,"VuotAiViemDe6NhanHuyHieu"} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -280,15 +280,15 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 	szName = "level up medal",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÄúºÃ",0},
+	tbMessageParam = {"Xin chµo",0},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Éı¼¶µ½2¼¶»ÕºÅ",17} },
-		{"AddDialogOpt",	{"Éı¼¶µ½3¼¶»ÕºÅ",18} },
+		{"AddDialogOpt",	{"N©ng cÊp lªn Huy HiÖu cÊp 2",17} },
+		{"AddDialogOpt",	{"N©ng cÊp lªn Huy HiÖu cÊp 3",18} },
 	},
 }
 tbConfig[17] = --Ò»¸öÏ¸½Ú
@@ -332,14 +332,14 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	szName = "click npc name lingfan",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÉÌ··"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÂòÊ¯½ğ",20} },
+		{"AddDialogOpt",	{"Mua Thî May",20} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
@@ -349,11 +349,11 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 	szName = "compose shijin",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"²Ã·ì",1,1,1,0.02,0,50},
+	tbMessageParam = {"Thî May",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=1},10000} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},10000} },
 	},
 	tbActition = 
 	{
@@ -367,13 +367,13 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	szName = "click npc named caifengshi",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"²Ã·ì"},
+	tbMessageParam = {"Thî May"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÔÚÏßÁì½±",22} },
+		{"AddDialogOpt",	{"NhËn phÇn th­ëng trùc tuyÕn",22} },
 	},
 }
 tbConfig[22] = --Ò»¸öÏ¸½Ú
@@ -387,7 +387,7 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{90,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_LOGIN_MEDAL,MAX_DAILY_LOGIN_MEDAL,"½ñÌìÄú²»ÄÜÁìÈ¡ÁË£¬Ã÷ÌìÔÙÀ´°É.","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_LOGIN_MEDAL,MAX_DAILY_LOGIN_MEDAL,"H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 

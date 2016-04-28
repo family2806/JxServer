@@ -20,7 +20,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 {
 	nId = 1,
 	szMessageType = "NpcOnDeath",
-	szName = "´ò¹ÖµôÂäÁ«Åº±ı",
+	szName = "§¸nh qu¸i rít b¸nh h¹t sen",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {nil},
@@ -39,7 +39,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "NpcOnDeath",
-	szName = "´ò¹ÖµôÂäÂÌ¶¹±ı",
+	szName = "§¸nh qu¸i rít b¸nh ®Ëu xanh",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {nil},
@@ -58,7 +58,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "NpcOnDeath",
-	szName = "´ò¹ÖµôÂäÓóÍ·",
+	szName = "§¸nh qu¸i rít b¸nh khoai m«n",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {nil},
@@ -76,7 +76,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ğ½áÊø£¬ËÍÅ´Ã×Èí¸â£¨Ê¤£©",
+	szName = "Tèng kim cao cÊp kÕt thóc tÆng b¸nh dÎo (th¾ng)",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {1,"3"},
@@ -87,14 +87,14 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[ÖĞÇï»î¶¯] [ËÎ½ğÉú²úÅ´Ã×Èí¸â]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[Ho¹t ®éng trung thu] [Tèng Kim s¶n sinh b¸nh dÎo]"} },
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ğ½áÊø£¬ËÍÅ´Ã×Èí¸â(ºÍ)",
+	szName = "Tèng kim cao cÊp kÕt thóc tÆng b¸nh dÎo (hßa)",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {0,"3"},
@@ -105,14 +105,14 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[ÖĞÇï»î¶¯] [ËÎ½ğÉú²úÅ´Ã×Èí¸â]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[Ho¹t ®éng trung thu] [Tèng Kim s¶n sinh b¸nh dÎo]"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "FinishSongJin",
-	szName = "¸ß¼¶ËÎ½ğ½áÊø£¬ËÍÅ´Ã×Èí¸â£¨Êä£©",
+	szName = "Tèng kim cao cÊp kÕt thóc tÆng b¸nh dÎo (thua)",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
 	tbMessageParam = {-1,"3"},
@@ -123,268 +123,268 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[ÖĞÇï»î¶¯] [ËÎ½ğÉú²úÅ´Ã×Èí¸â]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2499,1,0,0},nExpiredTime=20101011,},40,"[Ho¹t ®éng trung thu] [Tèng Kim s¶n sinh b¸nh dÎo]"} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "ClickNpc",
-	szName = "ÉÌµêÂôÈâÏÚ°ü",
+	szName = "Hµng rong b¸n b¸nh nh©n thŞt",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"ÉÌµê"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÂòÈâÏÚ°ü",8} },
+		{"AddDialogOpt",	{"Mua b¸nh nh©n thŞt",8} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "CreateCompose",
-	szName = "ÂòÈâÏÚ°ü",
+	szName = "Mua b¸nh nh©n thŞt",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"ÈâÏÚ°ü",1,1,1,0.02},
+	tbMessageParam = {"B¸nh nh©n thŞt",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"AddOneMaterial",	{"30000 l­îng",{nJxb=30000,},1} },
-		{"lib:CheckDay",	{20100920, 20101011, "»»È¡Ê±ÏŞÒÑ½áÊø"} },
+		{"lib:CheckDay",	{20100920, 20101011, "Thêi h¹n ®æi ®· kÕt thóc"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2500,1,0,0},nExpiredTime=20101011,},1,"[ÖĞÇï»î¶¯] [ÉÌ··ÂòÈâÏÚ°ü]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2500,1,0,0},nExpiredTime=20101011,},1,"[ho¹t ®éng trung thu] [hµng rong mua b¸nh nh©n thŞt]"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
 {
 	nId = 9,
 	szMessageType = "ClickNpc",
-	szName = "æÏ¶ğºÏ³É",
+	szName = "H»ng nga hîp thµnh",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"ºÏ³É"},
+	tbMessageParam = {"H»ng Nga"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ºÏ³ÉµÆÁı",10} },
+		{"AddDialogOpt",	{"Hîp thµnh lång ®Ìn",10} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
 {
 	nId = 10,
 	szMessageType = "CreateDialog",
-	szName = "ºÏ³É»®·ÖµÈ¼¶",
+	szName = "Hîp thµnh ph©n h¹ng",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"<npc>¸óÏÂÏëºÏ³ÉÄÄÖÖµÆÁı?"},
+	tbMessageParam = {"<npc>C¸c h¹ muèn hîp thµnh lo¹i lång ®Ìn nµo?"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ºûµûµÆÁı",11} },
-		{"AddDialogOpt",	{"ĞÇĞÇµÆ",12} },
-		{"AddDialogOpt",	{"³¤¹ÜµÆÁı",13} },
-		{"AddDialogOpt",	{"Ô²µÆÁı",14} },
+		{"AddDialogOpt",	{"Lång ®Ìn b­¬m b­ím",11} },
+		{"AddDialogOpt",	{"§Ìn ng«i sao",12} },
+		{"AddDialogOpt",	{"Lång ®Ìn èng",13} },
+		{"AddDialogOpt",	{"Lång ®Ìn trßn",14} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³ÉºûµûµÆÁı",
+	szName = "Hîp thµnh lång ®Ìn b­¬m b­ím",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"ºûµûµÆÁı",1,1,1,0.02},
+	tbMessageParam = {"Lång ®Ìn b­¬m b­ím",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Á«Åº±ı",{tbProp={6,1,2496,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÂÌ¶¹±ı",{tbProp={6,1,2497,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÓóÍ·±ı",{tbProp={6,1,2498,1,0,0},},1} },
-		{"lib:CheckDay",	{20100920, 20101011, "»»È¡Ê±ÏŞÒÑ½áÊø"} },
+		{"AddOneMaterial",	{"B¸nh H¹t Sen",{tbProp={6,1,2496,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh §Ëu Xanh",{tbProp={6,1,2497,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh Khoai M«n",{tbProp={6,1,2498,1,0,0},},1} },
+		{"lib:CheckDay",	{20100920, 20101011, "Thêi h¹n ®æi ®· kÕt thóc"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2502,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [ºÏ³ÉµÆÁı]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2502,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [Hîp thµnh lång ®Ìn]"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
 {
 	nId = 12,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³ÉĞÇĞÇµÆÁı",
+	szName = "Hîp thµnh lång ®Ìn ng«i sao",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"ĞÇĞÇµÆÁı",1,1,1,0.02},
+	tbMessageParam = {"§Ìn ng«i sao",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Á«Åº±ı",{tbProp={6,1,2496,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÂÌ¶¹±ı",{tbProp={6,1,2497,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÓóÍ·±ı",{tbProp={6,1,2498,1,0,0},},1} },
-		{"AddOneMaterial",	{"Å´Ã×Èí¸â",{tbProp={6,1,2499,1,0,0},},1} },
-		{"lib:CheckDay",	{20100920, 20101011, "»»È¡Ê±ÏŞÒÑ½áÊø"} },
+		{"AddOneMaterial",	{"B¸nh H¹t Sen",{tbProp={6,1,2496,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh §Ëu Xanh",{tbProp={6,1,2497,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh Khoai M«n",{tbProp={6,1,2498,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh dÎo",{tbProp={6,1,2499,1,0,0},},1} },
+		{"lib:CheckDay",	{20100920, 20101011, "Thêi h¹n ®æi ®· kÕt thóc"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2503,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [ºÏ³ÉµÆÁı]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2503,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [Hîp thµnh lång ®Ìn]"} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³É³¤¹ÜµÆÁı",
+	szName = "Hîp thµnh lång ®Ìn èng",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"³¤¹ÜµÆÁı",1,1,1,0.02},
+	tbMessageParam = {"Lång ®Ìn èng",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Á«Åº±ı",{tbProp={6,1,2496,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÂÌ¶¹±ı",{tbProp={6,1,2497,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÓóÍ·±ı",{tbProp={6,1,2498,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÈâÏÚ±ı",{tbProp={6,1,2500,1,0,0},},1} },
-		{"lib:CheckDay",	{20100920, 20101011, "»»È¡Ê±ÏŞÒÑ½áÊø"} },
+		{"AddOneMaterial",	{"B¸nh H¹t Sen",{tbProp={6,1,2496,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh §Ëu Xanh",{tbProp={6,1,2497,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh Khoai M«n",{tbProp={6,1,2498,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh nh©n thŞt",{tbProp={6,1,2500,1,0,0},},1} },
+		{"lib:CheckDay",	{20100920, 20101011, "Thêi h¹n ®æi ®· kÕt thóc"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2504,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [ºÏ³ÉµÆÁı]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2504,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [Hîp thµnh lång ®Ìn]"} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "CreateCompose",
-	szName = "ºÏ³ÉÔ²µÆÁı",
+	szName = "Hîp thµnh lång ®Ìn trßn",
 	nStartDate = 201009200000,
 	nEndDate  = 201010110000,
-	tbMessageParam = {"Ô²µÆÁı",1,1,1,0.02},
+	tbMessageParam = {"Lång ®Ìn trßn",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Á«Åº±ı",{tbProp={6,1,2496,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÂÌ¶¹±ı",{tbProp={6,1,2497,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÓóÍ·±ı",{tbProp={6,1,2498,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ê²½õ±ı",{tbProp={6,1,2501,1,0,0},},1} },
-		{"lib:CheckDay",	{20100920, 20101011, "»»È¡Ê±ÏŞÒÑ½áÊø"} },
+		{"AddOneMaterial",	{"B¸nh H¹t Sen",{tbProp={6,1,2496,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh §Ëu Xanh",{tbProp={6,1,2497,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh Khoai M«n",{tbProp={6,1,2498,1,0,0},},1} },
+		{"AddOneMaterial",	{"B¸nh thËp cÈm",{tbProp={6,1,2501,1,0,0},},1} },
+		{"lib:CheckDay",	{20100920, 20101011, "Thêi h¹n ®æi ®· kÕt thóc"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2505,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [ºÏ³ÉµÆÁı]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2505,1,0,0},nExpiredTime=20101018,},1,"[ÖĞÇï»î¶¯] [Hîp thµnh lång ®Ìn]"} },
 		{"PlayerFunLib:AddTask",	{nTask_Activi_Point,1} },
-		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Ôö¼ÓÒ»¸ö»î¶¯»ı·Ö"} },
+		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Gia t¨ng 1 ®iÓm tİch lòy sù kiÖn"} },
 	},
 }
 tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃºûµûµÆÁı",
+	szName = "Sö dông lång ®Ìn b­¬m b­ím",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2502,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","ÔÚ³ÇÊĞ»òÕßĞÂÊÖ´åÊ¹ÓÃ!"} },
-		{"PlayerFunLib:IsFightState",	{1,"ÔÚÕ½¶·ÇøÓòÊ¹ÓÃ!"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","Xin h·y sö dông t¹i thµnh thŞ hoÆc t©n thñ th«n!"} },
+		{"PlayerFunLib:IsFightState",	{1,"Xin h·y sö dông t¹i khu vùc chiÕn ®Êu!"} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
-		{"ThisActivity:CheckTask",	{nTask_HuDie,1000,"´ïµ½×î¸ß¾­Ñé£¬²»ÄÜÔÙ»ñÈ¡¾­Ñé!","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_HuDie,1000,"§¹t ®Õn kinh nghiÖm cao nhÊt, kh«ng thÓ nhËn thªm kinh nghiÖm!","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"tb2010ZhongQiu:AwardExp",	{1000000, nTask_HuDie, 1000000000, "Ê¹ÓÃºûµûµÆÁı", "[ÖĞÇï»î¶¯][Ê¹ÓÃºûµûµÆÁı]"} },
+		{"tb2010ZhongQiu:AwardExp",	{1000000, nTask_HuDie, 1000000000, "Sö dông lång ®Ìn b­¬m b­ím", "[ÖĞÇï»î¶¯][Sö dông lång ®Ìn b­¬m b­ím]"} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
 {
 	nId = 16,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃĞÇĞÇµÆÁı",
+	szName = "Ê¹ÓÃ§Ìn ng«i sao",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2503,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","ÇëÔÚ³ÇÊĞ»òÕßĞÂÊÖ´åÊ¹ÓÃ!"} },
-		{"PlayerFunLib:IsFightState",	{1,"ÇëÔÚÕ½¶·ÇøÓòÊ¹ÓÃ!"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","Xin h·y sö dông t¹i thµnh thŞ hoÆc t©n thñ th«n!"} },
+		{"PlayerFunLib:IsFightState",	{1,"Xin h·y sö dông t¹i khu vùc chiÕn ®Êu!"} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"tb2010ZhongQiu:AddNpc",	{"´óÁ¦ÊÌÎÀ"} },
+		{"tb2010ZhongQiu:AddNpc",	{"§¹i Lùc ThŞ VÖ"} },
 	},
 }
 tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ³¤¹ÜµÆÁı",
+	szName = "Sö dông lång ®Ìn èng",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2504,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","ÇëÔÚ³ÇÊĞ»òÕßĞÂÊÖ´åÊ¹ÓÃ!"} },
-		{"PlayerFunLib:IsFightState",	{1,"ÇëÔÚÕ½¶·ÇøÓòÊ¹ÓÃ!"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","Xin h·y sö dông t¹i thµnh thŞ hoÆc t©n thñ th«n!"} },
+		{"PlayerFunLib:IsFightState",	{1,"Xin h·y sö dông t¹i khu vùc chiÕn ®Êu!"} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"tb2010ZhongQiu:AddNpc",	{"³£Ê¤ÊÌÎÀ"} },
+		{"tb2010ZhongQiu:AddNpc",	{"Th­êng Th¾ng ThŞ VÖ"} },
 	},
 }
 tbConfig[18] = --Ò»¸öÏ¸½Ú
 {
 	nId = 18,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÔ²µÆÁı",
+	szName = "Sö dông Lång ®Ìn trßn",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2505,1,0,0},}},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","ÇëÔÚ³ÇÊĞ»òÕßĞÂÊÖ´åÊ¹ÓÃ!"} },
-		{"PlayerFunLib:IsFightState",	{1,"ÇëÔÚÕ½¶·ÇøÓòÊ¹ÓÃ!"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,176,162,78,80,174,121,153,101,99,100,20,53","Xin h·y sö dông t¹i thµnh thŞ hoÆc t©n thñ th«n!"} },
+		{"PlayerFunLib:IsFightState",	{1,"Xin h·y sö dông t¹i khu vùc chiÕn ®Êu!"} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"tb2010ZhongQiu:AddNpc",	{"½ğ¸ÕÎÀÊ¿"} },
+		{"tb2010ZhongQiu:AddNpc",	{"Kim C­¬ng ThŞ VÖ"} },
 	},
 }
 tbConfig[19] = --Ò»¸öÏ¸½Ú
 {
 	nId = 19,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ³É¶¼ÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu Thµnh §«",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2507,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_ChenDu,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_ChenDu,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃ³É¶¼ÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu Thµnh §«]"} },
 		{"ThisActivity:AddTask",	{nTask_ChenDu,1} },
 	},
 }
@@ -392,18 +392,18 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 {
 	nId = 20,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ´óÀíÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu §¹i Lı",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2508,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_DaLi,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_DaLi,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃ´óÀíÖĞÇï±ı"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu §¹i Lı]"} },
 		{"ThisActivity:AddTask",	{nTask_DaLi,1} },
 	},
 }
@@ -411,18 +411,18 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 {
 	nId = 21,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃ·ïÏèÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu Ph­îng T­êng",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2509,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_FengXiang,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_FengXiang,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃ·ïÏèÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu Ph­îng T­êng]"} },
 		{"ThisActivity:AddTask",	{nTask_FengXiang,1} },
 	},
 }
@@ -430,18 +430,18 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 {
 	nId = 22,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÏåÑôÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu T­¬ng D­¬ng",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2510,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_XiangYang,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_XiangYang,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃÏåÑôÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu T­¬ng D­¬ng]"} },
 		{"ThisActivity:AddTask",	{nTask_XiangYang,1} },
 	},
 }
@@ -449,18 +449,18 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 {
 	nId = 23,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃãê¾©ÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu BiÖn Kinh",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2511,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_BianJin,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_BianJin,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃãê¾©ÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu BiÖn Kinh]"} },
 		{"ThisActivity:AddTask",	{nTask_BianJin,1} },
 	},
 }
@@ -468,18 +468,18 @@ tbConfig[24] = --Ò»¸öÏ¸½Ú
 {
 	nId = 24,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÁÙ°²ÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu L©m An",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2512,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_LinAn,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_LinAn,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃÁÙ°²ÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu L©m An]"} },
 		{"ThisActivity:AddTask",	{nTask_LinAn,1} },
 	},
 }
@@ -487,18 +487,18 @@ tbConfig[25] = --Ò»¸öÏ¸½Ú
 {
 	nId = 25,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÑïÖİÖĞÇï±ı",
+	szName = "Sö dông B¸nh Trung Thu D­¬ng Ch©u",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {{tbProp={6,1,2513,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{nTask_YangZhou,20,"ÔÚ»î¶¯Ê±¼ä£¬Ã¿ÖÖ±ıÖ»ÄÜÊ¹ÓÃ20¸ö","<"} },
-		{"PlayerFunLib:CheckTotalLevel",	{50,"50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯",">="} },
+		{"ThisActivity:CheckTask",	{nTask_YangZhou,20,"Trong thêi gian ho¹t ®éng, mçi lo¹i b¸nh chØ ®­îc sö dông 20 c¸i","<"} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"CÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[ÖĞÇï»î¶¯][Ê¹ÓÃÑïÖİÖĞÇï±ı]"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[Ho¹t ®éng trung thu][Sö dông B¸nh Trung Thu D­¬ng Ch©u]"} },
 		{"ThisActivity:AddTask",	{nTask_YangZhou,1} },
 	},
 }
@@ -524,156 +524,156 @@ tbConfig[27] = --Ò»¸öÏ¸½Ú
 {
 	nId = 27,
 	szMessageType = "ClickNpc",
-	szName = "ÓëæÏ¶ğ¶Ô»°",
+	szName = "§èi tho¹i víi H»ng Nga",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
-	tbMessageParam = {"æÏ¶ğ"},
+	tbMessageParam = {"H»ng Nga"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"<npc>Trong thêi gian 0 gi?20/09/2010 ®Õn 0 gi?11/10/2010, ÔÚ2010Äê09ÔÂ20ÈÕÖÁ2010Äê10ÔÂ11ÈÕ£¬Í¬ĞĞ¿ÉÒÔÍ¨¹ı´ò¹Ö£¬ËÎ½ğ£¬ÉÌµê£¬ÆæÕä¸óÁìÈ¡¸÷ÖÖÖĞÇï±ı£¬Í¬Ê±Ò²¿ÉÒÔºÏ³É¸÷ÖÖµÆÁı¡£ÔÚ10ÔÂ18ÈÕÇ°Ê¹ÓÃµÆÁı£¬¿ÉÒÔÕÙ»ØÖĞÇïBOSS£¬´ò°Üºó½«ÊÕµ½·á¸»µÄ½±Àø£¬Í¬Ê±¿ÉÒÔÓÉ¼Æ»®ÊÕµ½À­¾üµÆÁı¡£½ÉÀ­¾üµÆÁı¸øæÏ¶ğ½ã½ã£¬½«ÊÕµ½¾­Ñé½±Àø£¬½É1000,2000,3000...½«ÊÕµ½±ÈÆ½³£¸ü¶àµÄ¾­Ñé¡£æÏ¶ğµÄ´ó¶È½«¸ù¾İÒÑ½ÉµÄÀ­¾üµÆÁıÊıÁ¿¾ö¶¨¡£Ã¿Ìì20µãÈç¹ûæÏ¶ğÔÚ×î´óµÄ×´Ì¬£¬½«³öÏÖ·ÅÑÌ»ğĞ§Ó¦£¬¸÷Î»Õ¾ÔÚÖÜÎ§µÄÍ¬ĞĞ¿ÉÒÔÊÕµ½¾­Ñé½±Àø¡£Ã¿Ìì20µã30·Ö£¬æÏ¶ğ½«»Øµ½×îĞ¡×´Ì¬£¬À­¾üµÆÊıÁ¿Ò²»Øµ½0.ÔÚ»î¶¯Ê±¼äÄÚ£¬Ã¿¸öÈË×î¶àÖ»ÄÜ½É1999¸ö¡£"} },
-		{"AddDialogOpt",	{"½ÉÀ­¾üµÆÁı",28} },
-		{"AddDialogOpt",	{"¼ì²éÒÑ½ÉÊıÁ¿",34} },
+		{"SetDialogTitle",	{"<npc>Trong thêi gian 0 giê 20/09/2010 ®Õn 0 giê 11/10/2010, ®ång ®¹o cã thÓ th«ng qua ®¸nh qu¸i, tèng kim, hµng rong, Kú Tr©n C¸c ®Ó nhËn ®­îc c¸c lo¹i b¸nh trung thu, ®ång thêi còng cã thÓ hîp thµnh c¸c lo¹i lång ®Ìn ë chŞ h»ng. Tr­íc 0 giê 18/10 sö dông lång ®Ìn cã thÓ triÖu håi BOSS trung thu, sau khi ®¸nh b¹i sÏ nhËn ®­îc c¸c phÇn th­ëng phong phó, ®ång thêi cã c¬ héi nhËn ®­îc lång ®Ìn kĞo qu©n. Nép lång ®Ìn kĞo quan cho chŞ h»ng sÏ nhËn ®­îc phÇn th­ëng kinh nghiÖm, lÇn nép 1000, 2000, 3000,... sÏ nhËn ®­îc kinh nghiÖm nhiÒu h¬n b×nh th­êng. §é lín cña h»ng nga sÏ tïy thuéc vµo sè l­îng lång ®Ìn kĞo qu©n ®· nép, mçi ngµy vµo lóc 20 giê nÕu nh­ H»ng Nga ë tr¹ng th¸i lín nhÊt sÏ xuÊt hiÖn hiÖu øng b¾n ph¸o hoa, c¸c ®ång ®¹o ®øng xung quanh ®ã cã thÓ nhËn ®­îc phÇn th­ëng kinh nghiÖm. Mçi ngµy 20 giê 30 phót, h»ng nga sÏ trë vÒ tr¹ng th¸i nhá nhÊt, sè l­îng ®Ìn kĞo qu©n còng vÒ 0. Trong thêi gian ho¹t ®éng mçi ng­êi nhiÒu nhÊt chØ ®­îc nép 1999 c¸i."} },
+		{"AddDialogOpt",	{"Nép lång ®Ìn kĞo qu©n",28} },
+		{"AddDialogOpt",	{"KiÓm tra sè l­îng ®· nép",34} },
 	},
 }
 tbConfig[28] = --Ò»¸öÏ¸½Ú
 {
 	nId = 28,
 	szMessageType = "CreateCompose",
-	szName = "½ÉÀ­¾üµÆÁı",
+	szName = "Nép lång ®Ìn kĞo qu©n",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
-	tbMessageParam = {"½ÉÀ­¾üµÆÁı",1,1,1,0.01},
+	tbMessageParam = {"Nép lång ®Ìn kĞo qu©n",1,1,1,0.01},
 	tbCondition = 
 	{
-		{"lib:CheckDay",	{20100920, 20101018, "»î¶¯ÒÑ½áÊø"} },
-		{"lib:CheckTime",	{{{000000,200000},{203000,240000}}, "²»ÊÇ»î¶¯Ê±¼ä"} },
-		{"AddOneMaterial",	{"À­¾üµÆÁı",{tbProp={6,1,2506,1,0,0},},1} },
+		{"lib:CheckDay",	{20100920, 20101018, "Ho¹t ®éng ®· kÕt thóc"} },
+		{"lib:CheckTime",	{{{000000,200000},{203000,240000}}, "Kh«ng ph¶i lµ thêi gian ho¹t ®éng"} },
+		{"AddOneMaterial",	{"Lång ®Ìn kĞo qu©n",{tbProp={6,1,2506,1,0,0},},1} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
-		{"ThisActivity:CheckTask",	{nTask_GiveCount,"1999 - <ComposeCount> ","ÔÚ»î¶¯Ê±¼äÄÚ£¬Ã¿ÈÕÖ»ÄÜ½É1999¸ö!","<="} },
+		{"ThisActivity:CheckTask",	{nTask_GiveCount,"1999 - <ComposeCount> ","Trong thêi gian ho¹t ®éng mçi ng­êi chØ ®­îc nép 1999 c¸i!","<="} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:AddTask",	{nTask_Activi_Point,1} },
-		{"PlayerFunLib:AddExp",	{500000,0,"[ÖĞÇï»î¶¯][½ÉÀ­¾üµÆÁı]"} },
+		{"PlayerFunLib:AddExp",	{500000,0,"[Ho¹t ®éng trung thu][Nép lång ®Ìn kĞo qu©n]"} },
 		{"tb2010ZhongQiu:GiveItem2HengE",	{nil} },
 		{"ThisActivity:AddTask",	{nTask_GiveCount,1} },
-		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Ôö¼ÓÒ»¸öÊÂ¼ş»ı·Ö"} },
+		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Gia t¨ng 1 ®iÓm tİch lòy sù kiÖn"} },
 	},
 }
 tbConfig[29] = --Ò»¸öÏ¸½Ú
 {
 	nId = 29,
 	szMessageType = "ClickNpc",
-	szName = "µã»÷Áú¶ù",
+	szName = "BÊm vµo long nhi",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"Ğ¡Áú"},
+	tbMessageParam = {"BĞ Long"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"»»¾ÈÃüÃæ¾ß",33} },
-		{"AddDialogOpt",	{"»»³¤¹¤Ãæ¾ß",35} },
-		{"AddDialogOpt",	{"»»¼áÓ²Ãæ¾ß",36} },
-		{"AddDialogOpt",	{"»»¹íÓ°Ãæ¾ß",30} },
-		{"AddDialogOpt",	{"»»»ØÌìÔÙÔì½õÄÒ",31} },
-		{"AddDialogOpt",	{"»»Ò»¼ÍÇ¬À¤·û",32} },
+		{"AddDialogOpt",	{"§æi mÆt n¹ cöu mÖnh",33} },
+		{"AddDialogOpt",	{"§æi mÆt n¹ tr­êng c«ng",35} },
+		{"AddDialogOpt",	{"§æi MÆt n¹ kiªn ng¹nh",36} },
+		{"AddDialogOpt",	{"§æi mÆt n¹ quû ¶nh",30} },
+		{"AddDialogOpt",	{"§æi håi thiªn t¸i t¹o cÈm nang",31} },
+		{"AddDialogOpt",	{"§æi nhÊt kû cµn kh«n phï",32} },
 	},
 }
 tbConfig[30] = --Ò»¸öÏ¸½Ú
 {
 	nId = 30,
 	szMessageType = "CreateCompose",
-	szName = "»»¹íÓ°Ãæ¾ß",
+	szName = "§æi mÆt n¹ quû ¶nh",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"¹íÓ°Ãæ¾ß",0,1,1,1},
+	tbMessageParam = {"MÆt n¹ quû ¶nh",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»È¡Ê±¼äÒÑ½áÊø"} },
-		{"AddOneMaterial",	{"ÎåĞĞÆæÊ¯",{tbProp={6,1,2125,1,0,0},},5} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} },
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},5} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={0,11,455,1,0,0},nExpiredTime=10080,},1,"[ÖĞÇï»î¶¯][»»¹íÓ°]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={0,11,455,1,0,0},nExpiredTime=10080,},1,"[Ho¹t ®éng trung thu][§æi quû ¶nh]"} },
 	},
 }
 tbConfig[31] = --Ò»¸öÏ¸½Ú
 {
 	nId = 31,
 	szMessageType = "CreateCompose",
-	szName = "»»»ØÌìÔÙÔì½õÄÒ",
+	szName = "§æi håi thiªn t¸i t¹o cÈm nang",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"»ØÌìÔÙÔì½õÄÒ",0,1,1,1},
+	tbMessageParam = {"CÈm nang thay ®æi trêi ®Êt",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»È¡Ê±ÏŞÒÑ½áÊø"} }
-		{"AddOneMaterial",	{"ÎåĞĞÆæÊ¯",{tbProp={6,1,2125,1,0,0},},3} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} }
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},3} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0},nExpiredTime=20160, tbParam={60}},1,"[ÖĞÇï»î¶¯][»»È¡»ØÌìÔÙÔì½õÄÒ]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0},nExpiredTime=20160, tbParam={60}},1,"[Ho¹t ®éng trung thu][§æi håi thiªn t¸i t¹o cÈm nang]"} },
 	},
 }
 tbConfig[32] = --Ò»¸öÏ¸½Ú
 {
 	nId = 32,
 	szMessageType = "CreateCompose",
-	szName = "»»Ò»¼ÍÇ¬À¤·û",
+	szName = "§æi nhÊt kû cµn kh«n phï",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"Ò»¼ÍÇ¬À¤·û",0,1,1,1},
+	tbMessageParam = {"Ngò Hµnh Kú Th¹ch",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»È¡Ê±ÏŞÒÑ¾­½áÊø"} }
-		{"AddOneMaterial",	{"Ò»¼ÍÇ¬À¤·û",{tbProp={6,1,2125,1,0,0},},300} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} }
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},300} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2126,1,0,0},nExpiredTime=20160,},1,"[ÖĞÇï»î¶¯][»»Ò»¼ÍÇ¬À¤·û"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2126,1,0,0},nExpiredTime=20160,},1,"[Ho¹t ®éng trung thu][§æi nhÊt kû cµn kh«n phï]"} },
 	},
 }
 tbConfig[33] = --Ò»¸öÏ¸½Ú
 {
 	nId = 33,
 	szMessageType = "CreateCompose",
-	szName = "»»¾ÈÃüÃæ¾ß",
+	szName = "§æi mÆt n¹ cöu mÖnh",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"¾ÈÃüÃæ¾ß",0,1,1,1},
+	tbMessageParam = {"MÆt n¹ cöu mÖnh",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»È¡Ê±ÏŞÒÑ¾­½áÊø"} }
-		{"AddOneMaterial",	{"ÎåĞĞÆæÊ¯",{tbProp={6,1,2125,1,0,0},},5} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} }
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},5} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={0,11,454,1,0,0},nExpiredTime=10080,},1,"[ÖĞÇï»î¶¯][»»¾ÈÃüÃæ¾ß]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={0,11,454,1,0,0},nExpiredTime=10080,},1,"[Ho¹t ®éng trung thu][§æi mÆt n¹ cöu mÖnh]"} },
 	},
 }
 tbConfig[34] = --Ò»¸öÏ¸½Ú
 {
 	nId = 34,
 	szMessageType = "nil",
-	szName = "¼ì²éÒÑ½ÉÀ­¾üµÆÁıÊıÁ¿",
+	szName = "KiÓm tra sè l­îng ®· nép Lång ®Ìn kĞo qu©n",
 	nStartDate = 201009200000,
 	nEndDate  = 201010180000,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"lib:CheckDay",	{20100920, 20101018, "»î¶¯ÒÑ½áÊø"} },
+		{"lib:CheckDay",	{20100920, 20101018, "Ho¹t ®éng ®· kÕt thóc"} },
 		{"lib:Include",	{"\\script\\event\\zhongqiu_jieri\\201009\\support.lua"} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
@@ -686,37 +686,37 @@ tbConfig[35] = --Ò»¸öÏ¸½Ú
 {
 	nId = 35,
 	szMessageType = "CreateCompose",
-	szName = "»»³¤¹¤Ãæ¾ß",
+	szName = "§æi mÆt n¹ tr­êng c«ng",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"³¤¹¤Ãæ¾ß",0,1,1,1},
+	tbMessageParam = {"MÆt n¹ tr­êng c«ng",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»³¤¹¤Ãæ¾ßÊ±ÏŞ"} }
-		{"AddOneMaterial",	{"ÎåĞĞÆæÊ¯",{tbProp={6,1,2125,1,0,0},},5} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} }
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},5} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={0,11,479,1,0,0},nExpiredTime=10080,},1,"[ÖĞÇï»î¶¯][»»³¤¹¤Ãæ¾ß]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={0,11,479,1,0,0},nExpiredTime=10080,},1,"[Ho¹t ®éng trung thu][§æi mÆt n¹ tr­êng c«ng]"} },
 	},
 }
 tbConfig[36] = --Ò»¸öÏ¸½Ú
 {
 	nId = 36,
 	szMessageType = "CreateCompose",
-	szName = "»»¼áÓ²Ãæ¾ß",
+	szName = "§æi MÆt n¹ kiªn ng¹nh",
 	nStartDate = 201011160000,
 	nEndDate  = 201012060000,
-	tbMessageParam = {"¼áÓ²Ãæ¾ß",0,1,1,1},
+	tbMessageParam = {"MÆt n¹ kiªn ng¹nh",0,1,1,1},
 	tbCondition = 
 	{
-		--{"lib:CheckDay",	{20101116, 20101206, "»»È¡Ê±ÏŞÒÑ½áÊø"} }
-		{"AddOneMaterial",	{"ÎåĞĞÆæÊ¯",{tbProp={6,1,2125,1,0,0},},20} },
+		--{"lib:CheckDay",	{20101116, 20101206, "Thêi h¹n ®æi ®· kÕt thóc"} }
+		{"AddOneMaterial",	{"Ngò Hµnh Kú Th¹ch",{tbProp={6,1,2125,1,0,0},},20} },
 		{"PlayerFunLib:CheckTotalLevel",	{50,"",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={0,11,480,1,0,0},nExpiredTime=10080,},1,"[ÖĞÇï»î¶¯][»»¼áÓ²Ãæ¾ß]"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={0,11,480,1,0,0},nExpiredTime=10080,},1,"[Ho¹t ®éng trung thu][§æi MÆt n¹ kiªn ng¹nh]"} },
 	},
 }

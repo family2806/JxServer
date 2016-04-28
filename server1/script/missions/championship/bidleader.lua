@@ -20,7 +20,7 @@ function OnCreateBidLeader()
 	if(Data > 0) then
 		biwu_setdata(BID_LEADER, "Leader_Name", "Name", RoleName);
 		biwu_save(BID_LEADER);
-		WriteLog(date("%Y-%m-%d-%H:%M")..", Íæ¼Ò ["..RoleName.."]³É¹¦ÕùÈ¡³ÉÎª´ËÇøÓòµÄ×ÜÁìµ¼.")
-		AddGlobalCountNews("×£ºØÍæ¼Ò"..RoleName.."³É¹¦ÕùÈ¡³ÉÎª´ËÇøÓòµÄ×ÜÁìµ¼", 3)
+		WriteLog(date("%Y-%m-%d-%H:%M")..", Ng­êi ch¬i ["..RoleName.."] Thµnh c«ng tranh cö trë thµnh tæng l·nh ®¹o cña khu vùc nµy.")
+		AddGlobalCountNews("Chóc mõng ng­êi ch¬i"..RoleName.." thµnh c«ng tranh cö trë thµnh tæng l·nh ®¹o cña khu vùc nµy", 3)
 	end
 end

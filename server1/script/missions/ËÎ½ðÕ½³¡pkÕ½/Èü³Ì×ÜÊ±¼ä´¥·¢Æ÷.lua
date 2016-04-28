@@ -8,7 +8,7 @@ end;
 
 --ÔÚ¹æ¶¨Ê±¼äÄÚ£¬Á½´ó¾ü¶ÓÎ´ÓÐÒ»·½É±ËÀµÐÖ÷½«£¬Ôò±ÈÈü½áÊø
 --±ÈÈç Ä³Ä³´ó½«:½«Ê¿ÃÇ!¾ÝÍ¨Ñ¶±øÍ¨±¨£¬µÐ¾üÕÒÀ´ÁËºó·½ÔöÔ®²¿¶Ó£¬ÎÒÃÇ´í¹ýÁË..»ú»á¡£ÏÖÔÚÍË±ø...µÈµÈ..
-Msg2MSAll(1, "ÌìÉ«ÒÑÍí£¬ÔÝÇÒÃù½ðÊÕ±ø£¡Áô´ýÃ÷ÈÕÔÙÕ½£¬²»É±µÐ½«ÊÄ²»»¹£¡");
+Msg2MSAll(1, "§· qu¸ muén, chóng ta h·y rót lui!");
 SetMissionV(MS_STATE,3);
 CloseMission(1);
 end;

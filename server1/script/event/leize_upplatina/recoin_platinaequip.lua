@@ -11,7 +11,7 @@ function LoadPlatinaCoinSettingTmp()
 	
 	local b1 = TabFile_Load("\\settings\\task\\equipex\\platina_def_tmp.txt", "PlatinaDataRecoinTmp")
 	if b1~=1 then
-		print("ÏÂÔØÉı¼¶°×½ğ×°±¸ĞÅÏ¢Ê§°Ü!")
+		print("T¶i tËp tin th¨ng cÊp trang bŞ B¹ch Kim thÊt b¹i!")
 		return
 	end
 	local nRowCount = TabFile_GetRowCount("PlatinaDataRecoinTmp", "EQUIPNAME")
@@ -34,20 +34,20 @@ function recoin_platina_main()
 	local aryDescribe = {};
 	reloadRecoinPlatinaDate();
 	if (nTodayString < RECOIN_PLATINA_DATE_RANGE[1] or nTodayString > RECOIN_PLATINA_DATE_RANGE[2]) then
-		aryDescribe = {"<dec><npc>ÖØÖı°×½ğ×°±¸»á´æÔÚÊ±¼ä, ±ÈÈç<color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[1]/10000).."Äê"..mod(floor(RECOIN_PLATINA_DATE_RANGE[1]/100),100).."ÔÂ"..mod(RECOIN_PLATINA_DATE_RANGE[1], 100).."ÈÕ"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."ÔÂ"..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).." ÈÕ<color> ÕæÆ¯ÁÁ. ½ñÌì²»ÊÇÊ²Ã´ºÃÈÕ×ÓËùÒÔ²»ÄÜÖıÔì.",
-			"Õæ¿ÉÏ§£¬µ¢ÎóÁËÊ±¼ä£¬±ğµÄÊ±ºòÔÙÀ´°É./no",};
+		aryDescribe = {"<dec><npc>Trïng luyÖn trang bŞ b¹ch kim sÏ tån t¹i víi thêi gian, nh­ <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[1]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[1]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[1], 100).." ngµy -"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).." ngµy <color> thËt lµ ®Ñp. H«m nay kh«ng tèt ngµy l¾m cho nªn sÏ kh«ng lµm ®­îc.",
+			"ThËt tiÕc qu¸, ®· trÔ giê råi, lóc kh¸c h·y quay l¹i./no",};
 	else
-		aryDescribe = {"<dec><npc>ÖØÖı°×½ğ×°±¸Ê±ĞèÒª{1¿é½ğÏ¬}, {1¿é8¼¶Ğş¾§¿óÊ¯}ºÍÒ»¶¨ÊıÁ¿µÄ{ ²¹ÌìÊ¯ËéÆ¬(ÖĞ)}. ²»ÔÙÊÇ»Æ½ğ×°±¸µÄÖØÖı£¬ĞèÒªµÄÌìÊ¯ÊÇ²»Ò»ÑùµÄ. ³ÃÔçËµËµ¿´ÏëÈÃÎÒ°ïÄã×öÊ²Ã´°É£¬µÈ  <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."Äê"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."ÔÂ"..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).."<color> ÄÜ²»ÄÜ°ïÄã¾Í²»ºÃËµÁË.", 
-		"ÖØÖıÕâ¼ş°×½ğ×°±¸ĞèÒª¶àÉÙ²¹ÌìÊ¯ËéÆ¬(ÖĞ)/want_recoinplatina_preview",
-		"ÎÒ´øÆëÁË²ÄÁÏÒªÖØÖıÕâÌ×°×½ğ×°±¸./want_recoinplatina",
-		"ÎÒÖ»ÊÇÀ´¿´¿´µÄ/no"}
+		aryDescribe = {"<dec><npc>Trïng luyÖn trang bŞ b¹ch kim cÇn {1 Kim Tª}, {1 huyÒn tinh kho¸ng th¹ch cÊp 8} vµ mét sè l­îng { m¶nh bæ thiªn th¹ch (trung)}. Trïng luyÖn kh«ng cïng lo¹i trang bŞ hoµng kim sÏ cÇn ®¸ thiªn th¹ch sÏ kh«ng gièng nhau. Tranh thñ vÉn cßn sím h·y göi cho ta lµm sím, ®îi  <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).."<color> kh«ng gióp ®­îc ng­¬i th× ®õng cã tr¸ch ta.", 
+		"Trïng luyÖn trang bŞ b¹ch kim nµy cÇn bao nhiªu m¶nh Bæ Thiªn Th¹ch (Trung)/want_recoinplatina_preview",
+		"Ta ®· mang ®ñ nguyªn liÖu ®Ó trïng luyÖn trang bŞ b¹ch kim nµy./want_recoinplatina",
+		"Ta chØ tiÖn ®­êng ghĞ ngang ®©y/no"}
 	end;
 	CreateTaskSay(aryDescribe);
 end;
 
 --Ô¤ÀÀµÄÆğÊ¼
 function want_recoinplatina_preview()
-	GiveItemUI("ÖØÖı°×½ğ×°±¸", "Çë½«ÒªÖØÖıµÄ°×½ğ×°±¸·Åµ½ÏÂÃæ. ÎÒ¿´¿´ĞèÒª¶àÉÙ²¹ÌìÊ¯ËéÆ¬(ÖĞ)", "do_recoinplatina_preview", "no", 1);
+	GiveItemUI("Trïng luyÖn trang bŞ b¹ch kim", "Xin mêi bá trang bŞ b¹ch kim cÇn trïng luyÖn vµo « bªn d­íi. Ta sÏ gióp ng­¬i xem thö cÇn bao nhiªu m¶nh Bæ Thiªn Th¹ch (Trung)", "do_recoinplatina_preview", "no", 1);
 end;
 
 function do_recoinplatina_preview(nCount)
@@ -56,9 +56,9 @@ function do_recoinplatina_preview(nCount)
 	end;
 	
 	if (nCount > 1) then	--Ò»´ÎÒ»¼ş£¬¸øÓÚÌáÊ¾
-		CreateTaskSay({"<dec><npc>Ò»´ÎÖ»ÄÜ¸øÎÒÒ»¼şÎïÆ·ÎÒ²Å¿ÉÒÔ°ïÄã¿´.",
-			"Õæ²»ºÃÒâË¼£¬ÎÒÖØĞÂÕûÀíÒ»ÏÂ/want_recoinplatina_preview",
-			"µÈÒ»ÏÂÔÙ»ØÀ´/no"});
+		CreateTaskSay({"<dec><npc>Mét lÇn chØ ®­a ta 1 vËt phÈm th× ta míi cã thÓ gióp ng­¬i xem ®­îc.",
+			"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina_preview",
+			"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 		return 0;
 	end;
 	
@@ -70,25 +70,25 @@ function do_recoinplatina_preview(nCount)
 		if (tbCurItemProp[1] == 0) then		--²»ÊÇÆÆËğµÄ×°±¸
 			local nCurPlatinaEqID = GetPlatinaEquipIndex(nItemIdx);
 			if (TB_PLATINARECOIN_INFO[nCurPlatinaEqID]) then
-				CreateTaskSay({format("<dec><npc>°×½ğ×°±¸ %s ĞèÒª {%d ¿é} ²¹ÌìÊ¯ËéÆ¬(ÖĞ) ºÍ1¿é½ğÏ¬ÒÔ¼°1¿é8¼¶Ğş¾§¿óÊ¯.",TB_PLATINARECOIN_INFO[nCurPlatinaEqID][1],TB_PLATINARECOIN_INFO[nCurPlatinaEqID][2]),
-					"Çë°ïÎÒÖØÖıÕâÌ×°×½ğ×°±¸/want_recoinplatina",
-					"µÈÎÒ×¼±¸ÍêÁË¾Í»áÀ´ÕÒÄã/no"});
+				CreateTaskSay({format("<dec><npc>Trang bŞ b¹ch kim %s  cÇn {%d m¶nh} bæ thiªn th¹ch (trung) vµ 1 Kim Tª víi 1 huyÒn tinh cÊp 8.",TB_PLATINARECOIN_INFO[nCurPlatinaEqID][1],TB_PLATINARECOIN_INFO[nCurPlatinaEqID][2]),
+					"Xin h·y gióp ta trïng luyÖn trang bŞ b¹ch kim nµy/want_recoinplatina",
+					"§îi ta chuÈn bŞ xong sÏ quay l¹i t×m ng­¬i/no"});
 			else
-				CreateTaskSay({format("<dec><npc>ÒÔÎÒÏÖÔÚµÄÄÜÁ¦²»ÄÜ°ïÄãÖØÖı{%s} ®­îc.",nCurItemName),
-				"ÄÇÃ´ÎÒÒª¶Ò»»/want_recoinplatina_preview",
-				"µÈÏÂÔÙ»ØÀ´/no"});
+				CreateTaskSay({format("<dec><npc>Víi n¨ng lùc hiÖn t¹i cña ta kh«ng thÓ gióp ng­¬i trïng luyÖn {%s} ®­îc.",nCurItemName),
+				"ThÕ th× ta sÏ ®æi/want_recoinplatina_preview",
+				"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 			end;
 			return 0;
 		end;
 	end;
-	CreateTaskSay({"<dec><npc>Äã²»ÊÇÒªÏëÖªµÀÖØÖı°×½ğÒª¶àÉÙ²¹ÌìÊ¯ËéÆ¬£¬²»´øÀ´¸øÎÒ¿´ÎÒÔõÃ´ÖªµÀÄØ£¿",
-		"Õæ²»ºÃÒâË¼£¬ÎÒÖØĞÂÕûÀíÏÂ±³°ü/want_recoinplatina_preview",
-		"µÈÏÂÔÙ»ØÀ´/no"});
+	CreateTaskSay({"<dec><npc>Kh«ng ph¶i ng­¬i muèn biÕt trïng luyÖn b¹ch kim cÇn bao nhiªu m¶nh bæ thiªn th¹ch, ng­¬i kh«ng ®­a cho ta trang bŞ b¹ch kim th× lµm sao xem nµo?",
+		"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina_preview",
+		"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 end;
 
 --ÖØÖıµÄÆğÊ¼
 function want_recoinplatina()
-	GiveItemUI("ÖØÖı°×½ğ×°±¸", "Çë½«ÖØÖı°×½ğ×°±¸µÄ±ØĞèÎïÆ··ÅÔÚÏÂÃæ(1¸ö½ğÏ¬£¬1¸ö8¼¶Ğş¾§Ê¯ºÍÒ»Ğ©ÊıÁ¿µÄ²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©)", "do_recoinplatina", "no", 1);
+	GiveItemUI("Trïng luyÖn trang bŞ b¹ch kim", "Xin mêi bá nh÷ng nguyªn liÖu cÇn thiÕt ®Ó trïng luyÖn trang bŞ b¹ch kim vµo « bªn d­íi (1 Kim Tª, 1 huyÒn tinh cÊp 8, vµ mét sè l­îng Bæ Thiªn Th¹ch (Trung))", "do_recoinplatina", "no", 1);
 end;
 
 function do_recoinplatina(nCount)
@@ -106,8 +106,8 @@ function do_recoinplatina(nCount)
 	local szMARKITEM_KEY = "6,1,1309";
 	local tb_material = {
 		--key = {ÊıÁ¿£¬Ãû³Æ£¬µÈ¼¶} 
-		["4,979,1"] = {1, "½ğÏ¬", -1},
-		["6,1,147"] = {1, "8¼¶Ğş¾§¿óÊ¯", 8},
+		["4,979,1"] = {1, "Kim Tª", -1},
+		["6,1,147"] = {1, "HuyÒn Tinh Kho¸ng Th¹ch cÊp 8", 8},
 		};
 	local tb_curmaterial = {};
 	for key, tb in tb_material do
@@ -123,17 +123,17 @@ function do_recoinplatina(nCount)
 		local nExpiredTime = ITEM_GetExpiredTime(nCurItemIdx);
 		if (nCurItemQuality == 4) then		--¸øÓÚµÄÊÇ°×½ğ×°±¸
 			if (nExpiredTime > 0) then -- ÓĞ±£ÖÊÆÚµÄ×°±¸£¬²»ÄÜ²ğ£¡
-				CreateTaskSay(	{	"<dec><npc>×°±¸ÓĞ<color=fire>Ê¹ÓÃÆÚÏŞ<color>, ²»ÄÜÖØÖı.",
-									"Õæ¶Ô²»Æğ£¬ÎÒÓÖ·Å´íÁË. ´ı»áÔÙ»ØÀ´/no"	}	);
+				CreateTaskSay(	{	"<dec><npc>Trang bŞ cã <color=fire>thêi h¹n sö dông<color>, kh«ng thÓ trïng luyÖn ®­îc.",
+									"ThËt lµ thø lçi, ta l¹i bá nhÇm n÷a råi. Mét lóc sau quay l¹i nhĞ/no"	}	);
 				return
 			end
 			if (tbCurItemProp[1] == 0) then		--²»ÊÇÆÆËğµÄ×°±¸
 				local nCurPlatinaEqID = GetPlatinaEquipIndex(nCurItemIdx);
 				if (TB_PLATINARECOIN_INFO[nCurPlatinaEqID]) then
 					if (nComposeEntryIdx ~= 0) then
-						CreateTaskSay({"<dec><npc>ÄãÏëÖØÖıÄÄÌ×°×½ğ×°±¸?",
-							"¹ş¹ş. ´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò./want_recoinplatina",
-							"Õæ²»ºÃÒâË¼£¬ÎÒÒ»»áÔÙÀ´./no"	});
+						CreateTaskSay({"<dec><npc>Ng­¬i rèt cuéc muèn trïng luyÖn trang bŞ b¹ch kim nµo ®©y?",
+							"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_recoinplatina",
+							"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	});
 									return 0;
 					else
 						nComposeEntryIdx = nCurPlatinaEqID;
@@ -142,9 +142,9 @@ function do_recoinplatina(nCount)
 						nItemBindState = GetItemBindState(nCurItemIdx)	--»ñÈ¡°ó¶¨×´Ì¬
 					end;
 				else
-					CreateTaskSay({format("<dec><npc>ÒÔÎÒÏÖÔÚµÄÄÜÁ¦²»ÄÜ°ïÄãÖØÖı{%s}.",nCurItemName),
-						"ÄÇÃ´ÎÒÒª¶Ò»»/want_recoinplatina_preview",
-						"µÈÏÂ»ØÀ´/no"});
+					CreateTaskSay({format("<dec><npc>Víi n¨ng lùc hiÖn t¹i cña ta kh«ng thÓ gióp ng­¬i trïng luyÖn {%s} ®­îc.",nCurItemName),
+						"ThÕ th× ta sÏ ®æi/want_recoinplatina_preview",
+						"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 					return 0;
 				end;
 			end;
@@ -153,17 +153,17 @@ function do_recoinplatina(nCount)
 			if (szItemKey == szMARKITEM_KEY) then	--²¹ÌìÊ¯ËéÆ¬
 				nMarkCount = nMarkCount + 1;
 			else
-				if (tb_material[szItemKey] == nil) then	--²»ÊÇ°ËĞş and ²»ÊÇ½ğÏ¬
-					CreateTaskSay({	"<dec><npc>{°×½ğ×°±¸}ºÍ{½ğÏ¬}, { 8¼°Ğş¾§¿óÊ¯}, { ²¹ÌìÊ¯ËéÆ¬ (ÖĞ)} ÊÇÎÒĞèÒªµÄÔ­ÁÏ. ±ğµÄÇëÔÙÊÕ¼¯À´.",
-						"¹ş¹ş. ´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÈÃÎÒÀ´·Å./want_recoinplatina",
-						"Õæ²»ºÃÒâË¼£¬ÎÒÒ»»áÔÙÀ´./no"	});
+				if (tb_material[szItemKey] == nil) then	--²»ÊÇ°ËĞş and ²»ÊÇKim Tª
+					CreateTaskSay({	"<dec><npc>Ngoµi {trang bŞ b¹ch kim} vµ {kim tª}, { huyÒn tinh cÊp 8}, { m¶nh bæ thiªn th¹ch (trung)} lµ nh÷ng nguyªn liÖu ta cÇn. Nh÷ng thø kh¸c xin h·y thu l¹i.",
+						"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_recoinplatina",
+						"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	});
 					return 0;
 				else
 					if (tb_material[szItemKey][3] ~= -1) then
 						if (tb_material[szItemKey][3] ~= tbCurItemProp[4]) then
-							CreateTaskSay({"<dec><npc>×°±¸µÈ¼¶"..nCurItemName.."ºÃÏñ²»¶Ô.",
-								"¹ş¹ş. ´óÏÀÒ²ÓĞ²»Ğ¡ĞÄµÄÊ±ºò£¬ÈÃÎÒÀ´·Å./want_recoinplatina",
-								"Õæ²»ºÃÒâË¼£¬ÎÒÒ»»áÔÙÀ´./no"	}	);
+							CreateTaskSay({"<dec><npc>§¼ng cÊp cña trang bŞ"..nCurItemName.." nµy d­êng nh­ kh«ng ®óng.",
+								"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_recoinplatina",
+								"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	}	);
 							return 0;
 						end;
 					end;
@@ -176,22 +176,22 @@ function do_recoinplatina(nCount)
 	
 	local szlog = ""
 	if (nComposeEntryIdx == 0) then		--¾¹È»²»¸ø°×½ğ×°±¸
-		CreateTaskSay({"<dec><npc>Äã²»ÊÇÒªÖØÖı°×½ğ×°±¸Âï£¬Äã²»°Ñ×¼±¸½»¸øÎÒÎÒÔõÃ´ÖØÖıµÃÁË.",
-			"Õæ¶Ô²»Æğ£¬ÎÒÔÙÕûÀíÏÂ/want_recoinplatina",
-			"µÈÏÂ»ØÀ´/no"});
+		CreateTaskSay({"<dec><npc>Kh«ng ph¶i ng­¬i muèn trïng luyÖn trang bŞ b¹ch kim sao, ng­¬i kh«ng giao cho ta trang bŞ lµm sao ta lµm ®­îc.",
+			"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina",
+			"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 		return 0;
 	end;
 	if (nMarkCount ~= TB_PLATINARECOIN_INFO[nComposeEntryIdx][2]) then
-		CreateTaskSay({format("<dec><npc>°×½ğ×°±¸ {%s} Òª (%d) ²¹ÌìÊ¯ËéÆ¬(ÖĞ).",TB_PLATINARECOIN_INFO[nComposeEntryIdx][1],TB_PLATINARECOIN_INFO[nComposeEntryIdx][2]),
-					"Õæ¶Ô²»Æğ£¬ÎÒÔÙÕûÀíÏÂ/want_recoinplatina",
-					"µÈÎÒ×¼±¸ÍêÁË¾Í»áÀ´ÕÒÄã/no"});
+		CreateTaskSay({format("<dec><npc>Trang bŞ b¹ch kim {%s} cÇn (%d) m¶nh bæ thiªn th¹ch (trung).",TB_PLATINARECOIN_INFO[nComposeEntryIdx][1],TB_PLATINARECOIN_INFO[nComposeEntryIdx][2]),
+					"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina",
+					"§îi ta chuÈn bŞ xong sÏ quay l¹i t×m ng­¬i/no"});
 		return 0;
 	end;
 	for key, tb in tb_material do
 		if (tb[1] ~= tb_curmaterial[key][1]) then
-			CreateTaskSay({format("<dec><npc>ÖØÖıÎÒĞèÒªµÄ°×½ğ×°±¸{%d} %s.", tb[1],tb[2]),
-					"Õæ¶Ô²»Æğ£¬ÎÒÔÙÕûÀíÏÂ/want_recoinplatina",
-					"µÈÎÒ×¼±¸ÍêÁË¾Í»áÀ´ÕÒÄã/no"});
+			CreateTaskSay({format("<dec><npc>Trïng luyÖn trang bŞ b¹ch kim ta cÇn {%d} %s.", tb[1],tb[2]),
+					"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina",
+					"§îi ta chuÈn bŞ xong sÏ quay l¹i t×m ng­¬i/no"});
 			return 0;
 		end;
 	end;
@@ -216,7 +216,7 @@ function do_recoinplatina(nCount)
 	-- É¾Ô­ÁÏ
 	for i = 1, nCount do
 		if (RemoveItemByIndex(GetGiveItemUnit(i)) ~= 1) then
-			WriteLog("[ÖØÖı°×½ğ×°±¸]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t É¾³ıÊ§°ÜÎïÆ·\t"..GetItemName(GetGiveItemUnit(i)));
+			WriteLog("[Trïng luyÖn trang bŞ b¹ch kim]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Xãa vËt phÈm thÊt b¹i\t"..GetItemName(GetGiveItemUnit(i)));
 			return 0;
 		end
 	end
@@ -224,7 +224,7 @@ function do_recoinplatina(nCount)
 	--ĞÂ¸ø¸ö°×½ğ×°±¸
 	local nNewItemIdx = AddPlatinaItem(0, nComposeEntryIdx);	--´ËÊ± ÊÇ0¼¶°×½ğ
 	if (nNewItemIdx <= 0) then
-		WriteLog("[ÖØÖı°×½ğ×°±¸]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\Ìí¼ÓÊ§°ÜµÄ°×½ğ»Æ½ğ×°±¸\t"..GetItemName(GetGiveItemUnit(i)));
+		WriteLog("[Trïng luyÖn trang bŞ b¹ch kim]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\tThªm trang bŞ b¹ch kim hoµng kim thÊt b¹i\t"..GetItemName(GetGiveItemUnit(i)));
 		return 0;
 	end;
 
@@ -241,14 +241,14 @@ function do_recoinplatina(nCount)
 --		LockItem(nNewItemIdx);
 --	end
 		
-	szlog = format("[ÖØÖı°×½ğ×°±¸]\t%s\tAccount:%s\tName:%s\ÖØÖı%s É¾³ıÔ­ÁÏ: 1¿é½ğÏ¬£¬1¿é8¼¶Ğş¾§¿óÊ¯£¬%d¿é²¹ÌìÊ¯ËéÆ¬", 
+	szlog = format("[Trïng luyÖn trang bŞ b¹ch kim]\t%s\tAccount:%s\tName:%s\tTrïng luyÖn %s xãa nguyªn liÖu: 1 Kim Tª, 1 huyÒn tinh cÊp 8, %d m¶nh bæ thiªn th¹ch", 
 				GetLocalDate("%Y-%m-%d %X"), GetAccount(), GetName(),
 				TB_PLATINARECOIN_INFO[nComposeEntryIdx][1], nMarkCount);
 	szBehindItemInfo = getItemInfo(nNewItemIdx);	--ÖØÖıºóµÄĞÅÏ¢
 	WriteLog(szlog);
-	writeRecoinLog("[ÖØÖı°×½ğ×°±¸Ö®Ç°µÄÊôĞÔ]", szBeforeItemInfo);
-	writeRecoinLog("[ÖØÖı°×½ğ×°±¸Ö®ºóµÄÊôĞÔ]", szBehindItemInfo);
-	Msg2Player("ÖØÖı³É¹¦<color=green>"..TB_PLATINARECOIN_INFO[nComposeEntryIdx][1]);
+	writeRecoinLog("[Thuéc tİnh tr­íc khi trïng luyÖn trang bŞ b¹ch kim]", szBeforeItemInfo);
+	writeRecoinLog("[Thuéc tinh sau khi trïng luyÖn trang bŞ b¹ch kim]", szBehindItemInfo);
+	Msg2Player("Trïng luyÖn thµnh c«ng——<color=green>"..TB_PLATINARECOIN_INFO[nComposeEntryIdx][1]);
 end;
 
 function reloadRecoinPlatinaDate()

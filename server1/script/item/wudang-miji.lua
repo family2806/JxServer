@@ -8,10 +8,10 @@ function main(sel)
 	times = mod(GetTask(80),16)
 	party = GetLastAddFaction()
 	str={
-		"ÄãÄÃ×Å¡¶Îäµ±ÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÊ²Ã´Ò²Ã»ÓĞÁìÎòµ½¡£",
-		"ÄãÄÃ×Å¡¶Îäµ±ÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹ûÁìÎòÉõÉÙ£¬Ã»Ê²Ã´Ğ§¹û¡£",
-		"ÄãÄÃ×Å¡¶Îäµ±ÃØ¼®¡·×êÑĞÁË°ëÌì£¬½á¹û»ñµÃÁËÒ»Ğ©¹ØÓÚÎä¹¦µÄĞÄµÃ¡£",
-		"ÄãÒÑ¾­°Ñ¡¶Îäµ±ÃØ¼®¡·×êÑĞÍ¸³¹£¬´ÓÖĞÔÙÒ²µÃ²»µ½ÈÎºÎĞÄµÃ¡£"
+		"B¹n cÇm quyÓn Vâ §ang MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ còng kh«ng lÜnh ngé ®­îc g×. ",
+		"B¹n cÇm quyÓn Vâ §ang MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé ®­îc chót İt. ",
+		"B¹n cÇm quyÓn Vâ §ang MËt TŞch nghiªn cøu c¶ nöa ngµy, kÕt qu¶ lÜnh ngé ®­îc chót İt. ",
+		"B¹n ®· nghiÒn ngÉm kü quyÓn Vâ §ang MËt TŞch, nh­ng kh«ng thu ®­îc ®iÒu g× t©m ®¾c "
 		}
 	if(party ~= "wudang") then     -- ²»ÊÇÎäµ±ÅÉ 
 		Msg2Player(str[1])

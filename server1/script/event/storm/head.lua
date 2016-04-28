@@ -117,7 +117,7 @@ function storm_anotherday()
 		if (lastday + 1 == nowday) then	--Ö»²îÒ»Ìì£¬¼ÇÂ¼×òÈÕ»ı·Ö
 			nt_settask(STORM_TASKID_DAY_LASTPOINT, GetTask(STORM_TASKID_DAY_POINT))
 			SetTask(STORM_TASKID_DAY_LASTAWARD, GetTask(STORM_TASKID_DAY_AWARD))
-			debug_out("Äã×òÌìµÄ»ı·ÖÊÇ"..GetTask(STORM_TASKID_DAY_LASTPOINT))	--temp
+			debug_out("Tİch lòy h«m qua cña b¹n lµ:"..GetTask(STORM_TASKID_DAY_LASTPOINT))	--temp
 		else
 			nt_settask(STORM_TASKID_DAY_LASTPOINT, 0)
 			SetTask(STORM_TASKID_DAY_LASTAWARD, 1)	--×òÌìÃ»ÓĞ²ÎÓë·ç±©»î¶¯£¬Ã»»ı·Ö£¬¾Íµ±ËûÁì¹ı½±ÁË£¿
@@ -142,7 +142,7 @@ function storm_anotherday()
 	if (nowweek ~= lastweek) then	--ÓĞ¿çÖÜ
 		if (lastweek + 1 == nowweek) then	--Ö»²îÒ»ÖÜ£¬¼ÇÂ¼ÉÏÖÜ»ı·Ö
 			nt_settask(STORM_TASKID_WEEK_LASTPOINT, GetTask(STORM_TASKID_WEEK_POINT))
-			debug_out("ÄãÉÏÖÜµÄ»ı·ÖÊÇ"..GetTask(STORM_TASKID_WEEK_LASTPOINT))	--temp
+			debug_out("Tİch lòy tuÇn tr­íc cña b¹n lµ:"..GetTask(STORM_TASKID_WEEK_LASTPOINT))	--temp
 		else
 			nt_settask(STORM_TASKID_WEEK_LASTPOINT, 0)
 		end
@@ -155,7 +155,7 @@ function storm_anotherday()
 	if (nowmonth ~= lastmonth) then	--ÓĞ¿çÔÂ
 		if (lastmonth + 1 == nowmonth) then	--Ö»²îÒ»ÔÂ£¬¼ÇÂ¼ÉÏÔÂ»ı·Ö
 			nt_settask(STORM_TASKID_MONTH_LASTPOINT, GetTask(STORM_TASKID_MONTH_POINT))
-			debug_out("ÄãÉÏÔÂµÄ»ı·ÖÊÇ"..GetTask(STORM_TASKID_MONTH_LASTPOINT))	--temp
+			debug_out("Tİch lòy th¸ng tr­íc cña b¹n lµ:"..GetTask(STORM_TASKID_MONTH_LASTPOINT))	--temp
 		else
 			nt_settask(STORM_TASKID_MONTH_LASTPOINT, 0)
 		end
@@ -207,9 +207,9 @@ function storm_end(gameid, silent)
 	nt_settask(TB_STORM_TASKID[gameid][STORM_TASKIDX_START], 0)
 
 	if (not silent) then
-		Say(storm_gamename(gameid, "red").."·ç±©ÌôÕ½ÒÑ½áÊø.ÏÖÓĞ·ç±©»ı·ÖÊÇ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT)), 0)
+		Say(storm_gamename(gameid, "red").."Khiªu chiÕn Phong Ba ®· kÕt thóc. §iÓm tİch lòy Phong Ba hiÖn cã lµ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT)), 0)
 	else
-		debug_out(storm_gamename(gameid).."·ç±©ÌôÕ½ÒÑ½áÊø.ÏÖÓĞ·ç±©»ı·ÖÊÇ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT)))
+		debug_out(storm_gamename(gameid).."Khiªu chiÕn Phong Ba ®· kÕt thóc. §iÓm tİch lòy Phong Ba hiÖn cã lµ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT)))
 	end
 	
 	return 1

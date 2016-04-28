@@ -8,11 +8,11 @@ function OnDeath()
 		if (UTask_cy == 50*256+32+7) then		--Èç¹û¹»(bin(100 + 010 + 001))
 			SetTask(6,50*256+32)
 			AddEventItem(5)
-			Msg2Player("´ò°ÜµÁÔô£¬¶á»Ø±»µÁ×ßµÄÓêÍ­¹ÛÒô")
-			AddNote("´ò°ÜµÁÔô£¬¶á»Ø±»µÁ×ßµÄÓêÍ­¹ÛÒô")
+			Msg2Player("§¸nh b¹i bän c­íp ®o¹t vÒ Vò ®ång Quan ¢m cña bän c­íp ")
+			AddNote("§¸nh b¹i bän c­íp ®o¹t vÒ Vò ®ång Quan ¢m cña bän c­íp ")
 		else
 			SetTask(6,UTask_cy)
-			Msg2Player("´ò°ÜµÁÔô£¬µ«ÊÇ£¬Ã»ÓĞÕÒµ½ÓêÍ­¹ÛÒô ")		--Òª²»ÒªÌáÊ¾Íæ¼Ò£¿
+			Msg2Player("§¸nh b¹i bän c­íp, nh­ng kh«ng t×m thÊy Vò §ång Quan ¢m ")		--Òª²»ÒªÌáÊ¾Íæ¼Ò£¿
 		end
 	end
 end;

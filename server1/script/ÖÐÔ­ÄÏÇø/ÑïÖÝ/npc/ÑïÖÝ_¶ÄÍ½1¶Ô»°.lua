@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("¶ÄÍ½£ºÀ±¿éÂèÂè£¡ÀÏ×ÓÓÖÊäÁË£¡", 0);
+Say("MÑ kiÕp! L·o tö l¹i thua n÷a råi!", 0);
 
 end;
 

@@ -9,56 +9,56 @@ Include("\\script\\activitysys\\config\\4\\award_ext.lua")
 --{szName="", tbProp={}, nExpiredTime=20120601,}
 local Items = 
 {
-	Seed = {szName="ÖÖ×Ó", tbProp={6,1,3157,1,0,0}, nExpiredTime=20120601,},
-	Chemicals = {szName="Ôö³¤Ò©´ü", tbProp={6,1,3158,1,0,0}, nExpiredTime=20120601,},
-	Water = {szName="Ë®Æ¿", tbProp={6,1,3159,1,0,0}, nExpiredTime=20120601,},
-	Pigment = {szName="ÓÐÉ«ÎïÆ·", tbProp={6,1,3160,1,0,0}, nExpiredTime=20120601,},
-	Red_Flower = {szName="ºì»¨·ï", tbProp={6,1,3161,1,0,0}, nExpiredTime=20120601,},
-	Purple_Flower = {szName="×Ï»¨·ï", tbProp={6,1,3162,1,0,0}, nExpiredTime=20120601,},
-	White_Flower = {szName="°×»¨·ï", tbProp={6,1,3163,1,0,0}, nExpiredTime=20120601,},
+	Seed = {szName="H¹t MÇm ", tbProp={6,1,3157,1,0,0}, nExpiredTime=20120601,},
+	Chemicals = {szName="Tói Thuèc T¨ng Tr­ëng", tbProp={6,1,3158,1,0,0}, nExpiredTime=20120601,},
+	Water = {szName="B×nh N­íc", tbProp={6,1,3159,1,0,0}, nExpiredTime=20120601,},
+	Pigment = {szName="PhÈm Mµu S¾c", tbProp={6,1,3160,1,0,0}, nExpiredTime=20120601,},
+	Red_Flower = {szName="Hoa Ph­îng §á", tbProp={6,1,3161,1,0,0}, nExpiredTime=20120601,},
+	Purple_Flower = {szName="Hoa Ph­îng TÝm", tbProp={6,1,3162,1,0,0}, nExpiredTime=20120601,},
+	White_Flower = {szName="Hoa Ph­îng Tr¾ng", tbProp={6,1,3163,1,0,0}, nExpiredTime=20120601,},
 }
 
 local Award_B = 
 {
-	{szName="Ç¬À¤Ë«¾øÅå",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.5,nExpiredTime=43200, CallBack = _Message},
-	{szName="½ðÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1,nRate=1, CallBack = _Message},
-	{szName="Ê¨òþÖ®±¦(Ã±×Ó)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={1,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦ (ÒÂ·þ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={5,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÏîÁ´)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={0,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÓñÅå)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={8,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(Ñ¥)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={7,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÊÖÌ×)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={3,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÉÏ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={2,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÏÂ½ä)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={9,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(Ñü´ø)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={4,0,0,0,0,0}},
-	{szName="Ê¨òþÖ®±¦(ÎäÆ÷£©",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={6,0,0,0,0,0}},
-	{szName="½ðÎÚ¿øÍ¼Æ×",tbProp={6,1,2982,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚÒÂÍ¼Æ×",tbProp={6,1,2983,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚÐ¬Í¼Æ×",tbProp={6,1,2984,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚÑü´øÍ¼Æ×",tbProp={6,1,2985,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚ»¤ÍóÍ¼Æ×",tbProp={6,1,2986,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚÏîÁ´Í¼Æ×",tbProp={6,1,2987,1,0,0},nCount=1,nRate=2},
-	{szName="½ðÎÚÅåÍ¼Æ×",tbProp={6,1,2988,1,0,0},nCount=1,nRate=2},
-	{szName="ÉÏ½äÍ¼Æ×",tbProp={6,1,2989,1,0,0},nCount=1,nRate=1},
-	{szName="ÏÂ½äÍ¼Æ×",tbProp={6,1,2990,1,0,0},nCount=1,nRate=1},
-	{szName="½ðÎÚÎäÆ÷Í¼Æ×",tbProp={6,1,2991,1,0,0},nCount=1,nRate=1},
-	{szName = "§i¾­ÑéÖµ", nExp=20000000,nRate=40.5},
-	{szName = "§i¾­ÑéÖµ", nExp=50000000,nRate=10},
-	{szName = "§i¾­ÑéÖµ", nExp=100000000,nRate=5},
-	{szName = "½ðÎÚ·¢¹Ú - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚ¿ø - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={6,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚÐ¬- ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={8,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚÑü´ø - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={5,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚ»¤Íó- ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={4,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚÏîÁ´ - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={1,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚÅå - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
-	{szName = "½ðÎÚÉÏ½ä- ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={3,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
-	{szName = "½ðÎÚÏÂ½äÖ¸- ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={10,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
-	{szName = "½ðÎÚÎäÆ÷ - ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={7,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
-	{szName="½ð»¨Ö®±¦",tbProp={6,1,3002,1,0,0},nCount=1,nRate=3.3},
-	{szName="ôä´äÖ®±¦",tbProp={6,1,3003,1,0,0},nCount=1,nRate=2},
-	{szName="·çÔÆÖ®±¦",tbProp={6,1,3004,1,0,0},nCount=1,nRate=1, CallBack = _Message},
-	{szName="ÍõÕßÃæ¾ß",tbProp={0,11,561,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
+	{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.5,nExpiredTime=43200, CallBack = _Message},
+	{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=1, CallBack = _Message},
+	{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={1,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (¸o)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={5,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={0,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (Ngäc Béi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={8,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (GiÇy)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={7,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (Bao Tay)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={3,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (NhÉn Trªn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={2,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (NhÉn D­íi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={9,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=2,tbParam={4,0,0,0,0,0}},
+	{szName="Tö M·ng Chi B¶o (Vò KhÝ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=1,tbParam={6,0,0,0,0,0}},
+	{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2982,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2983,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Hµi",tbProp={6,1,2984,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Yªu §¸i",tbProp={6,1,2985,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Hé UyÓn",tbProp={6,1,2986,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ H¹ng Liªn",tbProp={6,1,2987,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Béi",tbProp={6,1,2988,1,0,0},nCount=1,nRate=2},
+	{szName="§å Phæ Kim ¤ Th­îng Giíi",tbProp={6,1,2989,1,0,0},nCount=1,nRate=1},
+	{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2990,1,0,0},nCount=1,nRate=1},
+	{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2991,1,0,0},nCount=1,nRate=1},
+	{szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=40.5},
+	{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=10},
+	{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=5},
+	{szName = "Kim ¤ Ph¸t Qu¸n - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={2,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Kim Kh¶i - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={6,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Hµi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={8,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Yªu §¸i - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={5,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Hé UyÓn - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={4,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ H¹ng Liªn - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={1,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Ngäc Béi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={9,0,0,0,0,0}, nRate = 0.2, CallBack = _Message},
+	{szName = "Kim ¤ Th­îng Giíi ChØ - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={3,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
+	{szName = "Kim ¤ H¹ Giíi ChØ - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={10,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
+	{szName = "Kim ¤ KhÝ Giíi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={7,0,0,0,0,0}, nRate = 0.1, CallBack = _Message},
+	{szName="Kim Hoa Chi B¶o",tbProp={6,1,3002,1,0,0},nCount=1,nRate=3.3},
+	{szName="PhØ Thóy Chi B¶o",tbProp={6,1,3003,1,0,0},nCount=1,nRate=2},
+	{szName="Phong V©n Chi B¶o",tbProp={6,1,3004,1,0,0},nCount=1,nRate=1, CallBack = _Message},
+	{szName="MÆt n¹ V­¬ng Gi¶",tbProp={0,11,561,1,0,0},nCount=1,nRate=1,nExpiredTime=43200},
 }
 
 local SpecialAwardPoint = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000}
@@ -107,7 +107,7 @@ end
 function pActivity:CanUseWhiteFlower()
 	local nCount = self:GetTask(%TSK_2_FLOWER_COUNT)
 	if self:ReachSpecialPoint(%SpecialAwardPoint, nCount+1) or nCount == 1999 then
-		if PlayerFunLib:CheckFreeBagCell(1,"ÄãÏëÊÕµ½½±Æ·£¬×°±¸ÐèÒªÓÐÒ»¸ö¿ÕÎ»²ÅÄÜÊ¹ÓÃ´ËµÀ¾ß") then
+		if PlayerFunLib:CheckFreeBagCell(1,"Ng­¬i muèn nhËn ®­îc phÇn th­ëng, kh«ng gian hµnh trang cÇn ph¶i cã 1 chç trèng th× míi sö dông ®¹o cô nµy") then
 			return 1
 		end
 	else
@@ -129,9 +129,9 @@ function pActivity:Use2FlowerCommonAward(nCount)
 		bResult = nil
 	end
 	if nCount == %N_2_FLOWER_EXT_AWARD then
-		PlayerFunLib:GetItem({szName="Ç¬À¤Ë«¾øÅå",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200}, 1, %EVENT_LOG_TITLE, "SuDungHoaPhuongTim1000Lan")
+		PlayerFunLib:GetItem({szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200}, 1, %EVENT_LOG_TITLE, "SuDungHoaPhuongTim1000Lan")
 	elseif nCount == %N_MAX_2_FLOWER then
-		PlayerFunLib:GetItem({szName = "½ðÎÚÆ÷Ðµ- ×ÔÑ¡ÅÉÏµ", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={7,0,0,0,0,0}}, 1, %EVENT_LOG_TITLE, "SuDungHoaPhuongTim2000Lan")
+		PlayerFunLib:GetItem({szName = "Kim ¤ KhÝ Giíi - Tù chän hÖ ph¸i", tbProp={6,1,30180,1,0,0},nCount=1,tbParam={7,0,0,0,0,0}}, 1, %EVENT_LOG_TITLE, "SuDungHoaPhuongTim2000Lan")
 	end
 	self:Use2FlowerLog(nCount)	
 	return bResult

@@ -11,12 +11,12 @@ function OnTimer()
 		local count = GetMissionV(VARV_NPC_COUNT);
 		SetMissionV(VARV_BOARD_TIMER, time);
 		
-		local msg = "<#> “—æ≠Ω¯––±»»¸¡À!" .. floor(time / 60) 
-			.. "∑÷÷”£¨œ÷‘⁄ « "
+		local msg = "<#> ß∑ ti’n hµnh thi Æ u rÂi!" .. floor(time / 60) 
+			.. "phÛt, b©y giÍ lµ "
 			.. batch
-			.. "π÷ŒÔ£¨ªπ £ "
+			.. "Æ∏m qu∏i, cﬂn d≠ "
 			.. count
-			.. "π÷ŒÔ.";
+			.. "Con qu∏i.";
 		Msg2MSAll(MISSION_MATCH, msg);
 	end
 end

@@ -9,7 +9,7 @@ function PreparePlayer:OnEnterMap()
 		local nMapId = GetTask(TSK_LEAVERMAPID)
 		local nX = GetTask(TSK_LEAVERPOSX)
 		local nY = GetTask(TSK_LEAVERPOSY)
-		Msg2Player("±¾³¡ÈËÊıÒÑÂú£¬ÏÂ³¡ÔÙÀ´°É")
+		Msg2Player("Nh©n sè trËn nµy ®· ®Çy, trËn sau h·y ®Õn nhĞ")
 		NewWorld(nMapId, nX, nY)
 		return
 	end	

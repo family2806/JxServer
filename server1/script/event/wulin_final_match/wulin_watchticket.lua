@@ -17,16 +17,16 @@ end
 --ÎïÆ·	¸ÅÂÊ	magicscriptID
 TAB_LOTTERY_BONUS = 
 {
-{"ÎäÁÖ¹ÛÖÚÁî", 0, 443,1},
-{"¸£ÔµÂ¶ (´ó) ",0.05,124,1},
-{"¸£ÔµÂ¶ (ÖĞ) ",0.05,123,1},
-{"¸£ÔµÂ¶ (Ğ¡) ",0.05,122,1},
-{"ÏÉ²İÂ¶",0.1,71,1},
-{"ÌìÉ½±¦Â¶",0.1,72,1},
-{"°Ù¹ûÂ¶",0.1,73,1},
-{"ÑÌ»¨",0.15,11,0},
-{"Ãµ¹å»¨Óê",0.2,20,0},
-{"ĞÄĞÄÏàÓ¡·û",0.2,18,1},
+{"Vâ l©m quan chóng lÖnh", 0, 443,1},
+{"Phóc Duyªn (®¹i) ",0.05,124,1},
+{"Phóc Duyªn (trung) ",0.05,123,1},
+{"Phóc Duyªn (tiÓu) ",0.05,122,1},
+{"Tiªn Th¶o Lé ",0.1,71,1},
+{"Thiªn s¬n  B¶o Lé ",0.1,72,1},
+{"B¸ch Qu¶ Lé ",0.1,73,1},
+{"Ph¸o Hoa",0.15,11,0},
+{"Mai Kh«i Hoa Vò ",0.2,20,0},
+{"T©m T©m T­¬ng ¸nh phï ",0.2,18,1},
 };
 
 TAB_TICKETBUY =
@@ -105,13 +105,13 @@ function wulin_watchticketmain()
 	if (bCheckTicket1 == 1 or bCheckTicket2 == 1) then
 		local checktab = {};
 		if (bCheckTicket1 == 1) then
-			checktab[getn(checktab) + 1] = "21:00 ¿ªÎäÁÖ¹ÛÖÚÁî½±Æ·/#wulin_checkticket(1)";
+			checktab[getn(checktab) + 1] = "21:00 Më th­ëng vâ l©m quan chóng lÖnh/#wulin_checkticket(1)";
 		end
 		if (bCheckTicket2 == 1) then
-			checktab[getn(checktab) + 1] = "23:00 ¿ªÎäÁÖ¹ÛÖÚÁî½±Æ·/#wulin_checkticket(2)";
+			checktab[getn(checktab) + 1] = "23:00 Më th­ëng vâ l©m quan chóng lÖnh/#wulin_checkticket(2)";
 		end
-		checktab[getn(checktab) + 1] = "²»ĞèÒª!/OnCancel"
-		Say("ÄúÏÖÔÚÎ´ÁìÈ¡ÎäÁÖ¹ÛÖÚÁî½±Àø£¬ÄúÏëÁìÂğ?", getn(checktab), checktab)
+		checktab[getn(checktab) + 1] = "Kh«ng cÇn!/OnCancel"
+		Say("B¹n hiÖn t¹i ch­a nhËn phÇn th­ëng vâ l©m quan chóng lÖnh, b¹n cã muèn nhËn kh«ng?", getn(checktab), checktab)
 		return
 	end
 	
@@ -119,17 +119,17 @@ function wulin_watchticketmain()
 	if (nowhour == 20 or nowhour == 22) then
 		
 		if (IsCharged() == 0) then
-			Say("¶Ô²»Æğ£¬Ïë²Î¼Ó¸Ã»î¶¯ĞèÒª³äÖµ¡£Äú»¹Î´³äÖµ¡£¿ìµã°É£¡²»ÒªÊ§È¥»ú»á!", 0)
+			Say("Xin lçi! Muèn tham gia ho¹t ®éng nµy cÇn ph¶i n¹p thÎ! B¹n vÉn ch­a n¹p thÎ! Nhanh lªn ®i! §õng bá lì c¬ héi!", 0)
 			return 
 		end
 		
 		local buyidx = wulin_day2buytabidx(today)
 		if (buyidx == 0) then
-			Say("¶Ô²»Æğ£¬Ä¿Ç°²»ÏúÊÛÎäÁÖ¹ÛÖÚÁîÆ±£¬ÇëÉÔºòÔÙÀ´",0)
+			Say("Xin lçi! HiÖn ch­a b¸n vĞ sè Vâ L©m quan chóng lÖnh! H·y quay l¹i sau nhĞ!",0)
 			return 
 		end
 		if (GetTask(TV_LASTTIME_BUY) >= tonumber(nowdate)) then
-			Say("ÄúÒÑÂòÒ»ÕÅÎäÁÖ¹ÛÖÚÁîµÄÆ±ÁË£¬ÇëµÈ¿ª½±Å¶", 0)
+			Say("B¹n ®· mua mét tê vĞ sè cho ho¹t ®éng Vâ l©m quan chóng lÖnh! H·y ®îi më th­ëng nhĞ!", 0)
 			return 0
 		end
 		
@@ -147,30 +147,30 @@ function wulin_watchticketmain()
 			phase = 2
 		end
 
-		Say("Ö»ĞèÓÃ10Á½ÂòÒ»ÕÅÆ±£¨Ã¿¸ö½×¶ÎÖ»ÄÜÂòÒ»ÕÅ£©¡£Ã¿Ìì´Ó20:00-21:00 Ò»´ÎÒÔ¼°22:00-23:00 Ò»´Î",2, "¿ÉÒÔ!/#wulin_payfor_ticket("..phase..")", "²»ĞèÒª/OnCancel")
+		Say("ChØ cÇn dïng 10 l­îng mua 1 tê vĞ sè (mçi giai ®o¹n chØ ®­îc mua 1 tê) . Mçi ngµy tõ 20:00-21:00 mét lÇn vµ 22:00-23:00 mét lÇn",2, "§­îc!/#wulin_payfor_ticket("..phase..")", "Kh«ng cÇn/OnCancel")
 		return
 	else
-		Say("¶Ô²»Æğ£¬ÔçµãµÄÆ±´Ó20:00-21:00 ¼°22:00-23:00 ²ÅÂô! ÏÖÔÚ¿Í¹ÙÓĞÊ²Ã´ĞèÒª°ïÖúµÄÂğ?",2,"ÎÒÏëÁË½âÎäÁÖ¹ÛÖÚÁî»î¶¯/wulin_OnHelp", "²»ĞèÒª/OnCancel")
+		Say("Xin lçi! VĞ sèm tõ 20:00-21:00 vµ 22:00-23:00 míi b¸n! B©y giê kh¸ch quan cã viÖc g× cÇn gióp ®ì kh«ng?",2,"Ta muèn t×m hiÓu ho¹t ®éng Vâ l©m quan chóng lÖnh/wulin_OnHelp", "Kh«ng cÇn/OnCancel")
 		return
 	end
 
 end
 function wulin_OnHelp()
-	Say("Ã¿Ìì´Ó20:00-21:00 v?22:00-23:00, ËùÓĞ³äÖµÍæ¼Ò¶¼¿ÉÒÔµ½ÁÙ°²¼ûÎäÁÖ¹ÙÔ±£º³ä10ÍòÁ½¾Í¿ÉÒÔ²Î¼ÓÑ¡¾Ù",2,"ÏÂÒ»Ò³/wulin_OnHelp1","¹Ø±Õ/OnCancel")
+	Say("Mçi ngµy tõ 20:00-21:00 vµ 22:00-23:00, tÊt c¶ mäi ng­êi ch¬i ®· n¹p thÓ ®Õu cã thÓ ®Õn L©m An gÆp Vâ l©m Quan viªn: n¹p 10 v¹n l­îng la cã thÓ tham gia tuyÓn chän",2,"Trang kÕ /wulin_OnHelp1","§ãng/OnCancel")
 end
 
 function wulin_OnHelp1()
-	Say("Ã¿Ìì21:00 ¼°23:00, ÏµÍ³½«ÔùËÍ¸øÍæ¼Ò»ñµÃÆäÖĞÒ»¸öÖĞ½±£ºÏÉ²İÂ¶£¬ÌìÉ½±¦Â¶£¬°Ù¹ûÂ¶£¬¸£ÔµÂ¶£¬ÑÌ»¨£¬Ãµ¹å»¨Óê£¬ĞÄĞÄÏàÓ¡·û",2,"ÏÂÒ»Ò³/wulin_OnHelp2","¹Ø±Õ/OnCancel")
+	Say("Mçi ngµy vµo lóc 21:00 vµ 23:00, hÖ thèng sÏ tÆng cho ng­êi ch¬i tróng th­ëng mét trong: Tiªn Th¶o lé, Thiªn S¬n B¶o Lé, B¸ch Qu¶ Lé, Phóc Duyªn Lé, Ph¸o hoa, Mai Kh«i Hoa Vò, T©m T©m T­¬ng ¸nh Phï…",2,"Trang kÕ /wulin_OnHelp2","§ãng/OnCancel")
 end
 
 function wulin_OnHelp2()
-	Say("ÖĞ½±Íæ¼Ò£¬ÔÚÏÂÒ»ÈÕ20:00 Ç°Ğèµ½ÁÙ°²¼ûÎäÁÖ¹ÙÔ±ÁìÈ¡ÎäÁÖ¹ÛÖÚÁî£¬¹ıÆÚ½«²»ÄÜÁì¡£ÔÚµÚ¶şÌìµÄ24h:00 ĞèÒªÈ·ÈÏ¹ÛÖÚÁî×Ê¸ñ²ÅÄÜµÇÂ½±ÈÈü·şÎñÆ÷!",2,"ÏÂÒ»Ò³/wulin_OnHelp3","¹Ø±Õ/OnCancel")
+	Say("Ng­êi ch¬i tróng th­ëng, tr­íc 20:00 ngµy h«m sau ph¶i ®Õn L©m An gÆp Vâ l©m Quan viªn nhËn Vâ L©m quan chóng lÖnh, qu¸ thêi gian sÏ kh«ng thÓ nhËn. Tr­íc 24h:00 cña ngµy thø 2 cÇn ph¶i x¸c nhËn t­ c¸ch 'Quan chóng lÖnh' míi cã thÓ ®¨ng nhËp Servre thi ®Êu!",2,"Trang kÕ /wulin_OnHelp3","§ãng/OnCancel")
 end
 
 
 
 function wulin_OnHelp3()
-	Say("µÇÂ½±ÈÈü·şÎñÆ÷ºó£¬¿ÉÒÔµ½7´ó³ÇÊĞ¼ûÎäÁÖ¹ÙÔ±È·ÈÏ×Ê¸ñ¡£È»ºó½øÈë¶·³¡¿´±ÈÈü!",0)
+	Say("Sau khi ®¨ng nhËp Servre thi ®Êu, cã thÓ ®Õn gÆp Vâ l©m Quan viªn t¹i 7 thµnh thŞ ®Ó x¸c nhËn t­ c¸ch. Sau ®ã vµo ®Êu tr­êng xem thi ®Êu!",0)
 end;
 
 function OnCancel()
@@ -256,7 +256,7 @@ function wulin_checkticket(phase)
 	wulin_loadfile(file)
 	local bticketstart = tonumber(wulin_getdata(file, "TICKET", "IsBonusCreate"))
 	if (bticketstart == 0) then
-		Say("¶Ô²»Æğ£¬»¹Î´µ½¿ª½±Ê±¼ä£¬ÇëÉÔµÈÒ»ÏÂÅ¶", 0) 
+		Say("Xin lçi! VÉn ch­a ®Õn giê më th­ëng! H·y quay l¹i sau nhĞ!", 0) 
 		wulin_start_lottery(phase)
 		return 
 	end
@@ -280,15 +280,15 @@ function wulin_checkticket(phase)
 	local bonusid = tonumber(wulin_getdata(file, "TICKET", "Bonus"..ticketid))
 	if ( bonusid == 1) then
 		local itemidx = AddItem(6,1,TAB_LOTTERY_BONUS[1][3],1,0,0,0)
-		Msg2Player("¹§Ï²Äú»ñµÃ1 "..TAB_LOTTERY_BONUS[1][1].." ");
-		Say("¹§Ï²Äú»ñµÃ 1 "..TAB_LOTTERY_BONUS[1][1].." ",0)
+		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..TAB_LOTTERY_BONUS[1][1].." ");
+		Say("Chóc mõng b¹n nhËn ®­îc 1 "..TAB_LOTTERY_BONUS[1][1].." ",0)
 		local ticket_mon = floor(tonumber(ticketday) / 100)
 		local ticket_day = mod(tonumber(ticketday), 100)
 
 		SetSpecItemParam(itemidx, 1, ticket_mon)
 		SetSpecItemParam(itemidx, 2, ticket_day+1)
 		
-		local str = "¹§Ï²Íæ¼Ò»ñµÃ"..GetName().." »ñµÃ"..TAB_LOTTERY_BONUS[1][1].." "
+		local str = "Chóc mõng ng­êi ch¬i nhËn ®­îc "..GetName().." nhËn ®­îc"..TAB_LOTTERY_BONUS[1][1].." "
 		AddGlobalNews(str)
 		wulin_setdata(file, "TICKET", "Ticket"..ticketid, GetName().."_END")
 		wulin_save(file)
@@ -305,16 +305,16 @@ function wulin_checkticket(phase)
 				end
 			end
 			if (curbonus == 0) then
-				local msgstr = "¶Ô²»Æğ£¬Äú²»ÄÜ»ñµÃ´Ë´Î½±Àø¡£µ«ÊÇ£¬ÒÀÈ»»¹ÓĞºÜ¶à»ú»á¡£¼ÌĞø²Î¼ÓÅ¶"
+				local msgstr = "Xin lçi! B¹n kh«ng nhËn ®­îc phÇn th­ëng ®ît nµy! Nh­ng vÉn cßn nhiÒu c¬ héi! TiÕp tôc tham gia nhĞ!"
 				Say(msgstr,0)
 				Msg2Player(msgstr)
 				return
 			end
 			
 			AddItem(6,TAB_LOTTERY_BONUS[curbonus][4],TAB_LOTTERY_BONUS[curbonus][3],1,0,0,0)
-			local msgmsg = "¹§Ï²Äú»ñµÃ 1 "..TAB_LOTTERY_BONUS[curbonus][1].." "
+			local msgmsg = "Chóc mõng b¹n nhËn ®­îc 1 "..TAB_LOTTERY_BONUS[curbonus][1].." "
 			Msg2Player(msgmsg);
-			local str = "¹§Ï²"..GetName().."»ñµÃ1 "..TAB_LOTTERY_BONUS[curbonus][1].." "
+			local str = "Chóc mõng"..GetName().."nhËn ®­îc 1 "..TAB_LOTTERY_BONUS[curbonus][1].." "
 			Say(msgmsg, 0)
 			wulin_setdata(file, "TICKET", "Ticket"..ticketid, GetName().."_END")
 			wulin_setdata(file, "TICKET", "Bonus"..ticketid, curbonus)
@@ -329,7 +329,7 @@ function wulin_payfor_ticket(phase)
 		return
 	end
 	if (GetCash() < 100000) then
-		Say("ÄúµÄÒøÁ½²»¹»£¬ÇëÉÔºòÔÙÀ´¡£µ«ÊÇÒª×¥½ôÊ±¼äÅ¶!", 0) 
+		Say("Ng©n l­îng cña ng­¬i kh«ng ®ñ! H·y quay l¹i sau nhĞ! Nh­ng ph¶i tranh thñ thêi gian ®Êy!", 0) 
 		return
 	end
 	Pay(100000);
@@ -389,13 +389,13 @@ function wulin_BuyTicket()
 	local nowday = date("%m%d") 
 	local buyidx = wulin_day2buytabidx(nowday)
 	if (buyidx == 0) then
-		Say("¶Ô²»Æğ£¬ÄúÒÑÉêÇëÒ»´ÎÁË¡£ÏÖÔÚ²»ÄÜÉêÇëÁË!", 0)
+		Say("Xin lçi! B¹n ®· xin phĞp 1 lÇn råi! B©y giê kh«ng thÓ xin phĞp n÷a!", 0)
 		return 
 	end
 	
 	local nowdate = date("%m%d%H")
 	if (wulin_canbuyticket() == 1) then
-			Say("¶Ô²»Æğ£¬ÄúÒÑÉêÇëÒ»´ÎÁË¡£ÏÖÔÚ²»ÄÜÉêÇëÁË!", 0)
+			Say("Xin lçi! B¹n ®· xin phĞp 1 lÇn råi! B©y giê kh«ng thÓ xin phĞp n÷a!", 0)
 			return
 	end
 end
@@ -418,11 +418,11 @@ function wulin_sure_buyticket(no)
 		local buyidx = wulin_day2buytabidx(today)
 		
 		if (buyidx == 0) then
-			Say("¶Ô²»Æğ£¬Ä¿Ç°ÎªÂôÍêÀ²¹¤×÷Áî£¬ÉÔºòÔÙÀ´Å¶",0)
+			Say("Xin lçi! HiÖn ch­a b¸n vĞ sè Vâ L©m quan chóng lÖnh! H·y quay l¹i sau nhĞ!",0)
 			return 
 		end
 		if (GetTask(TV_LASTTIME_BUY) >= nowdate) then
-			Say("¶Ô²»Æğ£¬ÄúÒÑÉêÇëÒ»´ÎÁË¡£ÏÖÔÚ²»ÄÜÉêÇëÁË!", 0)
+			Say("Xin lçi! B¹n ®· xin phĞp 1 lÇn råi! B©y giê kh«ng thÓ xin phĞp n÷a!", 0)
 			return 0
 		end
 		
@@ -438,7 +438,7 @@ function wulin_sure_buyticket(no)
 			return
 		end
 	else
-		Say("¶Ô²»Æğ£¬»î¶¯Ã¿ÌìÖ»´Ó20:00-21:00 ÒÔ¼°22:00-23:00¿ªÊ¼. µ½Ê±ÔÙÀ´Å¶",0)
+		Say("Xin lçi! Ho¹t ®éng mçi ngµy chØ tõ 20:00-21:00 vµ 22:00-23:00. Giê ®ã h·y ®Õn nhĞ!",0)
 		return
 	end
 	
@@ -466,10 +466,10 @@ function wulin_sure_buyticket(no)
 	local msgstr = "";
 	if (no == 1) then
 		SetTask(TV_TICKET1, ticketcount)
-		msgstr = "ÄúÒÑ¹ºÎäÁÖ¹ÛÖÚÁî×Ê¸ñ¡£´ÎÈÕ21h:00 ºó¼°20h:00 Ç°¿ÉÒÔÀ´¼ûÎÒÁì½±!";	
+		msgstr = "Ng­¬i ®· ®ñ t­ c¸ch Vâ L©m quan chóng lÖnh. Sau 21h:00 vµ tr­íc 20h:00 ngµy h«m sau cã thÓ ®Õn gÆp ta ®Ó nhËn th­ëng! Ngoµi thêi gian ®ã v« hiÖu!";	
 	else
 		SetTask(TV_TICKET2, ticketcount)			
-		msgstr = "ÄúÒÑ¹ºÎäÁÖ¹ÛÖÚÁî×Ê¸ñ¡£´ÎÈÕ23h:00 ºó¼°20h:00 Ç°¿ÉÒÔÀ´¼ûÎÒÁì½±!";
+		msgstr = "Ng­¬i ®· ®ñ t­ c¸ch Vâ L©m quan chóng lÖnh. Sau 23h:00 vµ tr­íc 20h:00 ngµy h«m sau cã thÓ ®Õn gÆp ta ®Ó nhËn th­ëng! Ngoµi thêi gian ®ã v« hiÖu!";
 	end
 	SetTask(TV_LASTTIME_BUY, nowdate)
 	Msg2Player(msgstr)
@@ -519,9 +519,9 @@ function wulin_lottery_create(lotteryfile, lotteryno, count, maxticket)
 				wulin_setdata(lotteryfile, "TICKET", "Bonus"..m, lotteryno)
 				wulin_save(lotteryfile)
 				local Name = wulin_getdata(lotteryfile, "TICKET", "Ticket"..m)
-				WriteLog(date("%m%d%H%M").."ÒÑÓĞÖĞ½±½á¹û:"..lotteryno..",ÖĞ½±ÈË:"..Name)
+				WriteLog(date("%m%d%H%M").."§· cã kÕt qu¶ tróng th­ëng:"..lotteryno..", ng­êi tróng th­ëng:"..Name)
 				if (lotteryno == 1) then
-					local msgstr = " "..Name.." »ñµÃ"..TAB_LOTTERY_BONUS[1][1].."Çëµ½ÎäÁÖ¹ÙÔ±´¦Áì½±"
+					local msgstr = " "..Name.." nhËn ®­îc"..TAB_LOTTERY_BONUS[1][1].."Xin h·y ®Õn Vâ l©m Quan viªn nhËn th­ëng"
 					AddGlobalNews(msgstr);
 				end
 				bfind = 1

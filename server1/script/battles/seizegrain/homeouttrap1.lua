@@ -7,7 +7,7 @@ function main()
 	--Èç¹û´¦ÓÚ±¨Ãû½×¶ÎÊ±,Íæ¼Ò²»ÄÜ×ßµ½¶Ô·½µÄÁìµØÖĞÈ¥£¬ËùÒÔ»á½«Íæ¼ÒÈÓµ½´óÓªÄÚ
 	if(GetCurCamp() == 1) then
 		if (BT_GetData(PL_PARAM3) > 0) then
-			Msg2Player("ÄãÕıÔÚÔËÁ¸Ê³°ü,²»ÄÜ·µ»ØºóÓª?")
+			Msg2Player("B¹n ®ang vËn chuyÓn Bao l­¬ng, kh«ng thÓ quay vÒ HËu doanh?")
 			file = GetMissionS(1)
 			x,y = bt_getadata(file)
 			SetPos(floor(x/32), floor(y/32))
@@ -17,7 +17,7 @@ function main()
 			BT_SetData( PL_LASTDEATHTIME, GetGameTime() )
 		end
 	elseif (GetCurCamp() == 2) then
-		Msg2Player("Ç°·½É½ÂÍÖØµş,¿ÖÓĞ·ü±øÂñ·ü£¡Äú²»Ó¦¸ÃÃ°È»½øÈë!")
+		Msg2Player("Phİa tr­íc s¬n cèc chËp trïng, ch¾c ch¾n cã phôc binh! B¹n kh«ng nªn tù tiÖn x«ng lªn!")
 		SetFightState(1)
 	end;
 end;

@@ -9,34 +9,34 @@ function main()
 		if ((UTask_sl == 50*256+30) and (HaveItem(28) == 1)) then		-- 50¼¶ÈÎÎñ½øĞĞÖĞ
 			L50_prise()
 		elseif ((UTask_sl == 50*256) and (GetLevel() >= 50)) then		--50¼¶ÈÎÎñÆô¶¯
-			Talk(2,"L50_get","£º¡°¡¶Ò×¹Ç¾­¡·¡¢¡¶Ò×½î¾­¡·ºÍ¡¶Ï´Ëè¾­¡·²¢³Æ¡°ÉÙÁÖÈı¾­¡±£¬Ïà´«Îª´ïÄ¦×æÊ¦ËùÖø£¬¼ÇÔØÁË±¾ÅÉµÄÎäÑ§¾«´â¡£µ±Äê½ğ±øÄÏÏÂ£¬ÎªÃâÉÙÁÖ±¦óÅÂäÈëµĞÊÖ£¬»ÅÂÒÖ®ÖĞ£¬±¾×ùµÄµÜ×Ó³ÎÔ¶½«Èı¾­²ØÔÚÁËËÂºóµÄËÉÁÖÀï£¬Õ½»ğÖĞ£¬³ÎÔ¶ÎªÁË±£»¤²Ø¾­¸ó¶øËÀ£¬ÊÂºóÖÚµÜ×ÓÔÚËÉÁÖÖĞÖ»ÕÒµ½ÁË¡¶Ò×½î¾­¡·ºÍ¡¶Ï´Ëè¾­¡·£¬¶ø¡¶Ò×¹Ç¾­¡·È´ÔõÃ´Ò²ÕÒ²»×ÅÁË.")
+			Talk(2,"L50_get","DŞch Cèt Kinh, 'DŞch C©n kinh' vµ 'TÈy Tñy Kinh' ®­îc gäi lµ 'ThiÕu L©m Tam Kinh', t­¬ng truyÒn do §¹t Ma S­ Tæ viÕt, chİnh lµ tinh tóy vâ häc cña bæn ph¸i.")
 --		elseif (UTask_sl == 70*256+10) then			-- ÖØ·µÃÅÅÉÈÎÎñÍê³É
 --			Say("Ğş´È£ºÊ®¶¥É®Ã±ÄãÊÕ¼¯ÆëÁËÂğ£¿",2,"ÒÑ¾­×¼±¸ºÃÁË/return_completed","ÇëÔÙµÈÒ»¶ÎÊ±¼ä/return_sele_no")
 --		elseif (UTask_sl == 70) then			-- ÖØ·µÃÅÅÉÈÎÎñ
 --			Talk(1,"return_sele","Íæ¼Ò£ºÊ¦¸¸£¬ÎÒ³öÊ¦ÁË»¹¿ÉÒÔ½èÔÄ²Ø¾­¸óÖĞµÄÊé¼®Âğ£¿")
 		else							-- ³£¹æ¶Ô»°
-			Talk(1,"","±¾ËÂ±¦µä¹Å¼®ºÜ¶à£¬½ğ¹ú¿úÊÓÒÑ¾Ã .")
+			Talk(1,"","Cæ tŞch b¶o ®iÓn cña bæn tù rÊt nhiÒu, Kim quèc nhßm ngã ®· l©u.")
 		end
 	else
-		Talk(1,"","²Ø¾­¸ó»¹ÊÇ·¨ÌÃ£¬ÊÇ¸ßÉ®Ëµ¾­½²·¨µÄµØ·½£¬²Ø¾­¸óÓĞºÜ¶à·ğ¾­£¬ºÜ¶à¾ø°æÕäÆ·.")
+		Talk(1,"","Tµng Kinh C¸c cßn lµ ph¸p ®­êng, lµ n¬i c¸c cao t¨ng thuyÕt kinh gi¶ng ph¸p, Tµng Kinh C¸c cña bæn tù cã rÊt nhiÒu kinh PhËt, rÊt nhiÒu tuyÖt b¶n tr©n phÈm.")
 	end
 end;
 
 function L50_get()
-	Say("Èç¹ûÒ×¹Ç¾­ÕæµÄ±»ÎÒÃÇµÜ×ÓÅª¶ª£¬ÕæÊÇ¶ªÁ³ ",2,"°ïÖú/L50_get_yes","ÎÒ²»¹ØĞÄ !/L50_get_no")
+	Say("NÕu 'DŞch Cèt Kinh' thËt sù ®· bŞ ®Ö tö ta lµm mÊt, th× thËt hæ thÑn víi PhËt Tæ!",2,"T×m gióp /L50_get_yes","Ta kh«ng quan t©m!/L50_get_no")
 end
 
 function L50_get_yes()
 	SetTask(7,50*256+10)
-	AddNote("½ÓÉÙÁÖÑ°¾­ÈÎÎñ£ºÕÒµ½±»´æ·âµÄÒ×¹Ç¾­. ")
-	Msg2Player("½ÓÉÙÁÖÑ°¾­ÈÎÎñ£ºÕÒµ½±»´æ·âµÄÒ×¹Ç¾­. ")
+	AddNote("NhËn nhiÖm vô t×m kinh cña ThiÕu L©m: T×m l¹i quyÓn DŞch Cèt Kinh ®­îc Trõng ViÔn giÊu. ")
+	Msg2Player("NhËn nhiÖm vô t×m kinh cña ThiÕu L©m: T×m l¹i quyÓn DŞch Cèt Kinh ®­îc Trõng ViÔn giÊu. ")
 end;
 
 function L50_get_no()
 end;
 
 function L50_prise()
-	Talk(1,"","Õâ¸öÕæÊÇÒ×¹Ç¾­£¬ÕæÊÇÌ«ºÃÁË....")
+	Talk(1,"","§©y ®óng lµ 'DŞch Cèt Kinh'! Hay qu¸.....")
 	SetTask(7,60*256)
 	DelItem(28)
 	SetRank(6)
@@ -44,6 +44,6 @@ function L50_prise()
 --	AddMagic(11)
 --	AddMagic(19)
 	add_sl(60)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	AddNote("ÕÒµ½Ò×¹Ç¾­£¬Íê³ÉÈÎÎñ£¬Éı¼¶Îª·üÄ§ÌìÍõ. ")
-	Msg2Player("¹§Ï²ÄãÉı¼¶Îª·üÄ§ÌìÍõ£¬Ñ§µ½Áú×¦»¢×¦¹êÂÌºÏ£¬Äª¹şÎŞÁ¿. ")
+	AddNote("T×m ®­îc DŞch Cèt Kinh, hoµn thµnh nhiÖm vô t×m kinh. Th¨ng cÊp Phôc ma Thiªn V­¬ng. ")
+	Msg2Player("Chóc mõng b¹n! B¹n ®· th¨ng chøc Phôc ma Thiªn V­¬ng cña ThiÕu L©m ph¸i! Häc ®­îc vâ c«ng Long Tr¶o Hæ Tr¶o, Hoµnh Quy Lôc Hîp, Ma Ha V« L­îng. ")
 end;

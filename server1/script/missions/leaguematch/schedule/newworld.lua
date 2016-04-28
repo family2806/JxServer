@@ -9,7 +9,7 @@ function OnNewWorld(szParam)
 		return
 	end
 	if (GetGlbValue(GLB_WLLS_PHASE) ~= 4) then	--Ê±¼äÒÑ¹ı
-		Say("¶Ô²»Æğ£¬ÄãÀ´³ÙÁË£¬¸Õ¿ªÊ¼±ÈÈü£¬Òª²»ÎÒ´øÄã»ØÈ¥", 0)
+		Say("Xin lçi, b¹n ®· tíi muén, ta sÏ ®­a ng­¬i ra ngoµi", 0)
 		NewWorld(n_mapid, WLLS_MAPPOS_SIGN[1], WLLS_MAPPOS_SIGN[2])
 		return
 	end
@@ -39,8 +39,8 @@ function OnNewWorld(szParam)
 	
 	local mm = ceil(( WLLS_TIMER_PREP_TOTAL - GetGlbValue(GLB_WLLS_TIME)) * WLLS_TIMER_PREP_FREQ / 60 )
 	local str_des = wlls_get_desc(3)
-	Msg2Player("ÄãÒÑ½øÈë"..str_des.." ×¼±¸£¬±ÈÈüÔÚ<color=yellow>"..mm.."<color>·ÖÖÓºó¿ªÊ¼")
-	Msg2MSAll(WLLS_MSID_SCHEDULE, "<color=yellow>Õ½¶Ó["..str_lgname.."] "..GetName().."®·ÒÑ½øÈë"..str_des.."×¼±¸ÇøÓò")
+	Msg2Player("§· gia nhËp "..str_des..", liªn ®Êu sÏ b¾t ®Çu trong <color=yellow>"..mm.."<color> phót")
+	Msg2MSAll(WLLS_MSID_SCHEDULE, "<color=yellow>ChiÕn ®éi ["..str_lgname.."] cña "..GetName().." ®· vµo "..str_des.." khu vùc chuÈn bŞ")
 	OnNewWorldDefault(szParam)
 end
 

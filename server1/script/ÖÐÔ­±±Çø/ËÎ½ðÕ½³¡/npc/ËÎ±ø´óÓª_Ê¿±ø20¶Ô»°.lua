@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("士兵：朝廷的军饷总是不足，吃不饱肚子，叫我们怎么打仗！",0)
+Say("Qu﹏ lng c馻 tri襲 nh ╪ kh玭g  no, b秓 ch髇g ta l祄 sao nh gi芻!",0)
 
 end;
 

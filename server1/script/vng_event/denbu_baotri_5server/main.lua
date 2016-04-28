@@ -23,12 +23,12 @@ end
 
 function tbDenbuBT2011:GetAward()
 		if( self:IsActive() ~= 1) then
-			Talk(1,"","ªÓ∂Ø“—Ω· ¯!")
+			Talk(1,"","Hoπt ÆÈng Æ∑ k’t thÛc!")
 			return
 		end
 		
 		if (tbExtPointLib:GetBitValue(self.nExtpoint_Is_DBBT, self.nBit_Is_DB) ~= 0 ) then
- 			Talk(1,"","¥Ûœ¿“—¡ÏΩ±£¨≤ªƒ‹‘Ÿ¡Ï¡À.")
+ 			Talk(1,"","ßπi hi÷p Æ∑ nhÀn th≠Îng, kh´ng th” nhÀn th™m.")
  			return
  		end
  		
@@ -36,12 +36,12 @@ function tbDenbuBT2011:GetAward()
 	 		return
 	 	end
 	 	
-		 local tbAward = {	szName = "ßiæ≠—È÷µ", nExp=400000000	};
+		 local tbAward = {	szName = "ßi”m Kinh Nghi÷m", nExp=400000000	};
 		 	
  		tbAwardTemplet:Give(tbAward, 1,{"DenbuBT2011","NhanDenbuBaoTri27Server"})
 end
 
 local pEventType = EventSys:GetType("AddNpcOption")
 if (tbDenbuBT2011:IsActive() ~= 0) then
-	nId = pEventType:Reg("¿ÒπŸ", "¡Ï»°±£–ﬁ≤π≥•", tbDenbuBT2011.GetAward,{tbDenbuBT2011})
+	nId = pEventType:Reg("L‘ Quan", "NhÀn ß“n BÔ B∂o Tr◊", tbDenbuBT2011.GetAward,{tbDenbuBT2011})
 end	

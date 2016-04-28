@@ -6,7 +6,7 @@ function OnDeath()
 	UTask_sl40tmp = GetTaskTemp(44)
 	if (UTask_sl == 40*256+10) and (random(1,99) < 33) then
 		SetTask(7,40*256+20)
-		AddNote("ÄÃµ½¿Ú¾÷£º°´Ä¦Äá°ËÃÔºì. ")
-		Msg2Player("ÄÃµ½¿Ú¾÷£º°´Ä¦Äá°ËÃÔºì. ")
+		AddNote("LÊy ®­îc khÈu quyÕt: ¸n Ma Ni B¸t Mª Hång. ")
+		Msg2Player("LÊy ®­îc khÈu quyÕt: ¸n Ma Ni B¸t Mª Hång. ")
 	end
 end;

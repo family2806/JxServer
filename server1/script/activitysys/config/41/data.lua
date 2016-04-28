@@ -1,14 +1,14 @@
 
 tbActivityNpc = {	
 	[1] = {
-		szName = "´óÖ÷Ë§", 
+		szName = "§¹i Chñ So¸i", 
 		nLevel = 95,
 		nNpcId = 1890,
 		nIsboss = 0,
 		szScriptPath = "\\script\\activitysys\\npcdailog.lua",
 		},
 	[2] = {
-		szName = "²Ã·ì", 
+		szName = "Thî May", 
 		nLevel = 95,
 		nNpcId = 1891,
 		nIsboss = 0,

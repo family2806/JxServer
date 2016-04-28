@@ -11,9 +11,9 @@ KBook = {	--VarName Œ™±‰¡ø√˚£¨PageŒ™ Èµƒƒ⁄»›£¨ «“ª∏ˆtable
 		if(pageno > pageCount) then --µ±«∞“≥Œﬁ–ß
 			return nil
 		end
-		local str_NEXT = "œ¬“ª“≥/#%s:TurnTo(%s)"
-		local str_PREVIOUS = "…œ“ª“≥/#%s:TurnTo(%s)"
-		local str_CLOSE = "πÿ±’/#%s:Close()"
+		local str_NEXT = "Trang k’ /#%s:TurnTo(%s)"
+		local str_PREVIOUS = "Trang tr≠Ìc/#%s:TurnTo(%s)"
+		local str_CLOSE = "ß„ng/#%s:Close()"
 		
 		if(pageCount == 1 ) then  --÷ª”–“ª“≥
 			if(pageno == 1) then

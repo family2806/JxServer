@@ -12,34 +12,34 @@ function main()
 	if (GetLevel() >= 40) and (GetReputeLevel(GetRepute()) >= 5) then		-- ·ûºÏÈÎÎñÌõ¼ş
 		if (Uworld41 == 0) then					-- ÈÎÎñ²»ÄÜÖ±½Ó´ÓËï¶şÀÉ´¦Æô¶¯
 			if (random(0,1) == 0) then
-				Talk(1,"","Î¹!...")
+				Talk(1,"","¤i!...")
 			else
-				Talk(1,"","Ëï¶şÀÉ:............ ")
+				Talk(1,"","T«n NhŞ Lang:............ ")
 			end
 		elseif (Uworld41 == 5) then			-- ÈÎÎñÕıÊ½Æô¶¯
-			Talk(1,"U41_get","Ê²Ã´ÊÂÇéÈÃÄãÕâÃ´·³ÄÕ£¬ÅÔ±ßÄÇÎ»´óÉ©ÔõÃ´¿ŞµÃÄÇÃ´ÉËĞÄ°¡?")
+			Talk(1,"U41_get","ChuyÖn g× khiÕn huynh phiÒn n·o vËy? VŞ ®¹i tÈu bªn c¹nh huynh sao khãc th­¬ng t©m vËy?")
 		elseif (Uworld41 == 100) then			-- ÈÎÎñÍê³É
-			Talk(2,"U41_prise","¶àĞ»Ó¢ĞÛ£¬Ó¢ĞÛµÄ´ó¶÷´óµÂÃ»³İ²»Íü¡£ÕâÀïÊÇÒÔÇ°Ò»Î»ÉÙÁÖÉ®ÈËËÍÎÒµÄÁéÒ©£¬ËµÄÜÇ¿Éí½¡Ìå£¬·¢»Ó×ÔÉíÇ±ÄÜ¡£ÇëÓ¢ĞÛÍòÎğÍÆ´Ç!","¼ÈÈ»ÕâÑù£¬ÎÒ²»ÍÆ´Ç¾ÍÊÇ!")
+			Talk(2,"U41_prise","ThËt c¶m t¹ ©n nh©n! §¹i ©n ®¹i ®øc nµy ta sÏ kh«ng nbao giêcquªn! Trong nµy lµ linh d­îc cña mét vŞ s­ ThiÕu L©m ®· tÆng ta. Cã thÓ hç trî tiÒm n¨ng.Xin ®õng tõ chèi!","§· nh­ vËy, ta tõ chèi còng kh«ng ®­îc!")
 		elseif (Uworld41 == 255) then			-- ÈÎÎñÍê³Éºó
-			Talk(1,"","ÎÒ¾Í²»¸ÒÈÃĞ¡¾ê³öÃÅ£¬µ«ÕâÒ²²»ÊÇ³¤¾ÃÖ®¼Æ£¬Ö»ÄÜ¼Ş¸øËüÁË.")
+			Talk(1,"","Lóc nµy ta kh«ng d¸m cho TiÓu Quyªn ra khái nhµ, nh­ng cø nh­ vËy th× kh«ng lµ c¸ch l©u dµi. Cã lÏ ph¶i g¶ nã th«i.")
 		else											-- ÈÎÎñ½øĞĞÖĞ
-			Talk(1,"","×òÌìĞ¡¾ê±»¹ÅÑô¶´µÄ´óÍõÇÀÈ¥ÁË£¬ÒªÈÃËı×öÑ¹Õ¯·òÈË¡£ÏÖÔÚËµÊ²Ã´¶¼ÍíÁË.! ")
+			Talk(1,"","H«m qua, TiÓu Quyªn ®· bŞ §¹i v­¬ng cña Cæ ¢m §éng c­íp ®i, Ğp lµm ¸p tr¹i phu nh©n. B©y giê nãi kh«ng chõng th× mäi sù ®· qu¸ muén.! ")
 		end
 	else							-- ·ñÔò×ªÈ±Ê¡¶Ô»°
-		Talk(1,"","ÓĞÈËËµÎÒÃÇÁúÃÅÕòÈ«ÊÇÇ¿µÁ£¬ÕæÊÇÊ²Ã´¶¼²»ÖªµÀ£¡ÎÒ¸ÒËµ²»Òª2¡¢3ÄêÁúÃÅÕò¾Í»á³öÏÖ¸ö¶¥ÌìÁ¢µØµÄÈËÎï")
+		Talk(1,"","Cã ng­êi nãi Long M«n TrÊn chóng ta chØ tßan trém c­íp, ®óng lµ kh«ng biÕt g×! Ta d¸m cuéc lµ kh«ng qu¸ hai ba n¨m n÷a, Long M«n TrÊn sÏ xuÊt hiÖn mét nh©n vËt ®Ønh thiªn lËp ®Şa")
 	end
 end;
 
 function U41_get()
-	Say("°¦£¡ÎÒÃÇ¼ÒĞ¡¾êÇ°¼¸Ìì±»¹ÅÑôÕ¯µÄ´óÍõ¿´µ½£¬ËµÒªËı×öÊ²Ã´Ñ¹Õ¯·òÈË£¬×òÌì¾ÍÕæµÄÀ´°ÑËı¸øÇÀ×ßÁË",2,"¿¶¿®È¥¾ÈÈË/U41_get_yes","°²Î¿¼¸¾ä/U41_get_no")
+	Say("¤i! TiÓu Quyªn nhµ ta mÊy ngµy tr­íc bŞ §¹i v­¬ng Cæ ¢m Tr¹i ®Ó ı, nãi lµ muèn con bĞ lµm ¸p tr¹i phu nh©n g× ®ã. H«m qua ®· ®Õn c­íp ®i",2,"H¨ng h¸i ®i cøu ng­êi /U41_get_yes","An ñi vµi c©u cho xong /U41_get_no")
 end
 
 function U41_get_yes()
-	Talk(2,"","Ê²Ã´´óÍõ£¬¹âÌì»¯ÈÕÖ®ÏÂ¾¹¸ÒÇ¿ÇÀÃñÅ®£¡ÎÒÈ¥°ÑËı¾È»ØÀ´","¾Í¿¿´óÏÀÁË£¬¹ÅÑôÕ¯¾ÍÔÚ¹ÅÑô¶´Àï!")
+	Talk(2,"","§¹i V­¬ng g×? Gi÷a thanh thiªn b¹ch nhËt l¹i c­íp d©n n÷? Ta sÏ ®i cøu c« Êy vÒ!","Xin hiÖp kh¸ch gióp cho! Cæ ¢m Tr¹i n»m trong Cæ D­¬ng ®éng!")
 	Uworld41 = random(1,15)*256*256 + 10			-- µÚÈı×Ö½ÚÎª£¨¶ş½øÖÆµÄ0001 - 1111£©£¬µÚÒ»×Ö½ÚÎª10
 	SetTask(41,Uworld41)
-	Msg2Player("½ÓÈÎÎñ£¬°ÑĞ¡¾ê´Ó¹ÅÑôÕ¯´ø»ØÀ´. ")
-	AddNote("½ÓÈÎÎñ£¬°ÑĞ¡¾ê´Ó¹ÅÑôÕ¯´ø»ØÀ´. ")
+	Msg2Player("TiÕp nhËn nhiÖm vô, mang TiÓu Quyªn trë vÒ tõ Cæ ¢m Tr¹i. ")
+	AddNote("TiÕp nhËn nhiÖm vô, mang TiÓu Quyªn trë vÒ tõ Cæ ¢m Tr¹i. ")
 end
 
 function U41_prise()
@@ -53,13 +53,13 @@ function U41_prise()
 		Ubonus86 = 250
 	end
 	SetTask(86,Ubonus86)
-	AddNote("°ÑĞ¡¾ê¾Í»ØÀ´£¬ÈÎÎñÍê³É. ")
-	Msg2Player("<#> ÈÎÎñÍê³É£¬ÄãµÄÉùÍûÔö¼Ó "..add_repute.."<#> µã.")
-	Talk(1,"KickOutSelf","·şÏÂÁéÒ©£¬ÔË¹¦¡£Äã¸Ğ¾õÇ±ÄÜÔö¼ÓÒ»µã.")
+	AddNote("Cøu TiÓu Quyªn mang vÒ, nhiÖm vô hoµn thµnh. ")
+	Msg2Player("<#> NhiÖm vô hoµn thµnh, danh väng cña b¹n t¨ng thªm "..add_repute.."<#> ®iÓm.")
+	Talk(1,"KickOutSelf","Uèng xong linh d­îc, vËn c«ng nöa buæi. B¹n c¶m thÊy tiÒm n¨ng t¨ng thªm mét ®iÓm.")
 end
 
 function U41_get_no()
-	Talk(2,"","ÆñÓĞ´ËÀí£¡»¹ÓĞÃ»ÓĞÍõ·¨?","ÏÖÔÚ»¹ÓĞË­ËµÍõ·¨°¡?")
+	Talk(2,"","ThËt qu¸ ®¸ng! Bän giÆc c­íp nµy thËt ch¼ng xem v­¬ng ph¸p ra g× mµ!","Thêi buæi nµy cßn cã ai nãi v­¬ng ph¸p sao?")
 end
 
 function no()

@@ -8,7 +8,7 @@ tbBitTaskInfo = {
 	nMaxValue = 20,
 }
 function main(nItemIdx)
-	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBitTaskInfo, tbBitTaskInfo.nMaxValue, "Ê¹ÓÃÎïÆ·ÒÑ¹ıÉÏÏŞ£¬²»ÄÜÔÙÊ¹ÓÃÁË", "<") ~= 1 then
+	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbBitTaskInfo, tbBitTaskInfo.nMaxValue, "Sö dông vËt phÈm ®· ®¹t ®Õn giíi h¹n, kh«ng thÓ sö dông thªm", "<") ~= 1 then
 		return 1
 	end
 	tbVNG_BitTask_Lib:addTask(tbBitTaskInfo, 1)

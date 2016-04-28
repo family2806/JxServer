@@ -61,53 +61,53 @@ YDBZ_map_posfiles = {
 YDBZ_map_npc = {
 	-- 1
 	{
-		{nil, 1299, "ÃÅµÚÌìÍõ°ï", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1289, "¹ÅÌìÈ´", 95, 0, 1, 1, func_npc_getpos}
+		{nil, 1299, "M«n ®Ö Thiªn V­¬ng Bang", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1289, "Cæ Thiªn KhuyÕt", 95, 0, 1, 1, func_npc_getpos}
 	},
 	-- 2
 	{
-		{nil, 1300, " ÉÙÁÖµÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1290, "Ö¤Óï", 95, 0, 1, 1, func_npc_getpos}
+		{nil, 1300, "§Ö tö ThiÕu l©m", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1290, "Chøng Ng«n", 95, 0, 1, 1, func_npc_getpos}
 	},
 	-- 3
 	{
-		{nil, 1301, "Îå¶¾½ÌÍ½", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1291, "ÕÕÈÕÃá", 95, 1, 1, 1, func_npc_getpos}
+		{nil, 1301, "Ngò §éc gi¸o ®å", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1291, "ChiÕu NhËt MiÖn", 95, 1, 1, 1, func_npc_getpos}
 	},
 	-- 4
 	{
-		{nil, 1302, "ÌÆÃÅµÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1292, "ÌÆºÆ", 95, 1, 1, 1, func_npc_getpos}
+		{nil, 1302, "§­êng M«n gia ®inh", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1292, "§­êng H¹o", 95, 1, 1, 1, func_npc_getpos}
 	},
 	-- 5
 	{
-		{nil, 1303, "¶ëÃ¼µÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1293, "ÃîÒ»", 95, 2, 1, 1, func_npc_getpos}
+		{nil, 1303, "§Ö tö Nga My", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1293, "DiÖu NhÊt", 95, 2, 1, 1, func_npc_getpos}
 	},
 	-- 6
 	{
-		{nil, 1304, "´äÑÌµÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1294, "ÀèÕÜÃ·", 95, 2, 1, 1, func_npc_getpos}
+		{nil, 1304, "§Ö t?Thóy Yªn ", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1294, "LÖ ChiÕt Mai", 95, 2, 1, 1, func_npc_getpos}
 	},
 	-- 7
 	{
-		{nil, 1305, "ÌìÈÌ½ÌÍ½", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1295, "¶ËÄ¾Àë", 95, 3, 1, 1, func_npc_getpos}
+		{nil, 1305, "Thiªn NhÉn Gi¸o ®å", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1295, "§oan Méc Li", 95, 3, 1, 1, func_npc_getpos}
 	},
 	-- 8
 	{
-		{nil, 1306, "Ø¤°ïµÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1296, "°×ÀÇ", 95, 3, 1, 1, func_npc_getpos}
+		{nil, 1306, "§Ö tö C¸i Bang", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1296, "B¹ch Lang", 95, 3, 1, 1, func_npc_getpos}
 	},
 	-- 9
 	{
-		{nil, 1307, "Îäµ±µÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1297, "ÇØÏþÊé", 95, 4, 1, 1, func_npc_getpos}
+		{nil, 1307, "§Ö tö Vâ §ang", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1297, "TÇn HiÓu Th­", 95, 4, 1, 1, func_npc_getpos}
 	},
 	-- 10
 	{
-		{nil, 1308, "À¥ÂØµÜ×Ó", 95, -1, 0, 60, func_npc_getpos},
-		{nil, 1298, "ÁèÏö×Ó", 95, 4, 1, 1, func_npc_getpos}
+		{nil, 1308, "§Ö tö C«n L«n", 95, -1, 0, 60, func_npc_getpos},
+		{nil, 1298, "L¨ng Tiªu Tö", 95, 4, 1, 1, func_npc_getpos}
 	},
 };
 
@@ -116,35 +116,35 @@ YDBZ_map_npcBossEx =
 {
 	[1] = 
 	{
-		[3] = {nil, 1310, "¹ÅÌìÈ´(Å­)", 95, 0, 1, 1, func_npc_getpos},
-		[6] = {nil, 1312, "ÕÕÈÕÃá(Å­)",  95, 1, 1, 1, func_npc_getpos},
+		[3] = {nil, 1310, "Cæ Thiªn KhuyÕt (Né)", 95, 0, 1, 1, func_npc_getpos},
+		[6] = {nil, 1312, "ChiÕu NhËt MiÖn (Né)",  95, 1, 1, 1, func_npc_getpos},
 	},
 	[2] = 
 	{
-		[3] = {nil, 1317, "°×ÀÇ (Å­)",  95, 3, 1, 1, func_npc_getpos},
-		[6] = {nil, 1314, "ÃîÒ» (Å­)",  95, 2, 1, 1, func_npc_getpos},
+		[3] = {nil, 1317, "B¹ch Lang (Né)",  95, 3, 1, 1, func_npc_getpos},
+		[6] = {nil, 1314, "DiÖu NhÊt (Né)",  95, 2, 1, 1, func_npc_getpos},
 	},
 	[3] =
 	{
-		[3] = {nil, 1318, "ÇØÏþÊé(Å­)",  95, 4, 1, 1, func_npc_getpos},
-		[6] = {nil, 1319, "ÁèÏö×Ó(Å­)",  95, 4, 1, 1, func_npc_getpos},
+		[3] = {nil, 1318, "TÇn HiÓu Th­ (Né)",  95, 4, 1, 1, func_npc_getpos},
+		[6] = {nil, 1319, "L¨ng Tiªu Tö (Né)",  95, 4, 1, 1, func_npc_getpos},
 	},
 }
 
 YDBZ_map_npcYuanJun =
 {
-	{nil, 1338, "Ó¶±ø", 90, -1, 1, 5, func_npc_getpos},
+	{nil, 1338, "Dung Binh", 90, -1, 1, 5, func_npc_getpos},
 }
 --Î»ÖÃtable {x,y,nway} nway´ú±íÄÄ¹Ø,40-´ú±íÕù¶áµãboss
 YDBZ_map_npcboss = {
-	{nil, 1311, "ÕýÓï(Å­)",  95, 0, 1, 1, func_npc_getpos},
-	{nil, 1313, "ÌÆºÆ(Å­)",  95, 1, 1, 1, func_npc_getpos},
-	{nil, 1315, "ÀèÕÜÃ·(Å­)",  95, 2, 1, 1, func_npc_getpos},
-	{nil, 1316, "¶ËÄ¾Àë(Å­)",  95, 3, 1, 1, func_npc_getpos},
+	{nil, 1311, "ChÝnh Ng«n (Né)",  95, 0, 1, 1, func_npc_getpos},
+	{nil, 1313, "§­êng H¹o (Né)",  95, 1, 1, 1, func_npc_getpos},
+	{nil, 1315, "LÖ ChiÕt Mai (Né)",  95, 2, 1, 1, func_npc_getpos},
+	{nil, 1316, "§oan Méc Li (Né)",  95, 3, 1, 1, func_npc_getpos},
 }
 
 YDBZ_map_npcfinal = {
-	{nil, 1309, "ÁºÃ¼¶ù", 95, -1, 1, 1, func_npc_getpos},
+	{nil, 1309, "L­¬ng Mi Nhi", 95, -1, 1, 1, func_npc_getpos},
 }
 
 -- »ñÈ¡NPCµÄID

@@ -14,31 +14,31 @@ local tbExpAward =
 
 local tbBless = 
 {
-	"×ì´½ÉÏ×ÜÊÇÂ¶³öÇ×ÇĞµÄÎ¢Ğ¦£¬",
-	"×ÜÊÇ¿ìÀÖºÍĞÒ¸£",
-	"×ÜÊÇÓöµ½ºÜ¶àĞÒÔËºÍĞÒ¸£",
-	"ºÜÃÀÁË£¬Òª¸üÃÀ£¬ÈÃ»¨ÏÛÄ½£¬ÔÂÁÁ¼µ¶Ê",
-	"ÃÀºÃµÄ¶«Î÷×ÜÔÚÉí±ß",
-	"ÔÚÉú»îÖĞ×ÜÊÇÇ¿´óºÍ×ÔĞÅ",
-	"Ç°ĞĞµÄÂ·ÉÏ×ÜÊÇ¹âÃ÷¾ÍÏñÆÌÁËÃµ¹å»¨",
-	"ÈİÒ×Ô½¹ıÉú»îÖĞµÄÀ§ÄÑ",
-	"Ê±¼ä²»»áÍÊµôÈİÑÕ",
-	"×ÜÊÇ¸Ğµ½¿ìÀÖºÍÊæ·ş",
-	"¶ÔÉú»î³äÂúĞÅÄî",
-	"ÓÀÔ¶ÃÀÀö",
-	"ÓÀÔ¶Ïñ°Ù»¨Ò»ÑùÃÀÀö",
-	"Éú»îÔÚÅóÓÑºÍÇ×ÈËµÄ¸ĞÇéÖĞ",
-	"ÏàĞÅÊÂÒµ»á³É¹¦",
-	"ÓÀÔ¶ÃÀÀöºÍÓĞ÷ÈÁ¦",
-	"µøµ¹µÄÊ±ºò×ÜÄÜÕ¾ÆğÀ´£¬ÓÂ¸ÒÔ½¹ıÀ§ÄÑ",
-	"3ÔÂ8ºÅÕæÊÇ¿ìÀÖºÍ³äÂúÒâÒåµÄÒ»Ìì",
-	"ÔçÈÕÕÒµ½ÒÀ¿¿µÄµØ·½ÔÚÈËÉúÖĞ¼á¶¨µÄÇ°ĞĞ",
-	"È«¼Ò¿ìÀÖ¡¢ĞÒ¸£¡¢½¡¿µ",
+	"Nô c­êi th©n th­¬ng, trong v¾t, th¬ ng©y lu«n gi÷ m·i trªn m«i",
+	"Lu«n lu«n vui vÎ vµ h¹nh phóc",
+	"Lu«n gÆp nhiÒu may m¾n vµ h¹nh phóc",
+	"§· ®Ñp, ngµy cµng ®Ñp h¬n, khiÕn hoa ph¶i ghen, tr¨ng ph¶i thÑn",
+	"Nh÷ng ®iÒu tèt ®Ñp lu«n ®i kÒ bªn",
+	"Lu«n lu«n m¹nh mÏ, tù tin trong cuéc sèng",
+	"Con ®­êng ®i lu«n t­¬i th¾m nh­ ®­îc r¶i ®Çy hoa hång",
+	"DÔ dµng v­ît qua nh÷ng khã kh¨n trong cuéc sèng",
+	"Thêi gian sÏ kh«ng lµm phai mê nhan s¾c",
+	"Lu«n c¶m thÊy vui vÎ vµ tho¶i m¸i",
+	"Lu«n gi÷ v÷ng niÒm tin vµo cuéc sèng",
+	"Lu«n m·i xinh ®Ñp, dŞu dµng nh­ c« TÊm",
+	"Lu«n m·i ®Ñp nh­ ®ång cá víi ngµn hoa khoe s¾c",
+	"Lu«n ®­îc sèng trong t×nh c¶m cña b¹n bÌ vµ nh÷ng ng­êi th©n yªu",
+	"V÷ng tin vµ thµnh c«ng trong sù nghiÖp",
+	"M·i lu«n ®Ñp dŞu dµng vµ ®Çy quyÕn rò",
+	"Lu«n ®øng lªn mçi khi vÊp ng·, ®Çy ®ñ dòng khİ v­ît qua gian khã",
+	"Mét ngµy 8-3 thËt vui vµ nhiÒu ı nghÜa",
+	"Sím t×m ®­îc chç dùa ®Ó lu«n v÷ng b­íc trong ®­êng ®êi",
+	"C¶ gia ®×nh lu«n lu«n vui vÎ, h¹nh phóc, kháe m¹nh",
 }
 local _AddRoseCardExp = function (nItemIndex)
 	local nSex = GetSex()
 	if tbFunv0903.tbTask:CheckExpFromRose() ~= 1 then
-		Msg2Player(format("Ã¿ÈË×î¶àÖ»ÄÜ´ÓÃµ¹å¿¨ÖĞ»ñµÃ %u ¾­Ñé", tbFunv0903.tbTask.nMaxExpFromRose))	
+		Msg2Player(format("Mçi nh©n vËt chØ nhËn ®­îc tèi ®a %u kinh nghiÖm tõ thiÖp hoa hång", tbFunv0903.tbTask.nMaxExpFromRose))	
 	else
 		local tbExp = %tbExpAward[nSex]
 		tbAwardTemplet:GiveAwardByList(tbExp, "use "..GetItemName(nItemIndex))
@@ -50,17 +50,17 @@ end
 function main(nItemIndex)
 	
 	if GetItemParam(nItemIndex, 1) ~= 0 and GetItemParam(nItemIndex, 1) <= tonumber(GetLocalDate("%Y%m%d")) then
-		Talk(1,"", "¸ÃÎïÆ·ÒÑ¹ıÆÚ")
+		Talk(1,"", "VËt phÈm nµy ®· hÕt h¹n")
 		return 0
 	end
 	
 	local nTeamSize = GetTeamSize()
 	if GetSex() ~= 0 then
-		Talk(1, "", "¸ÃÎïÆ·Ö»ÓĞÄĞÈË²ÅÄÜÊ¹ÓÃ")
+		Talk(1, "", "VËt phÈm nµy chØ cã nh©n vËt nam míi sö dông ®­îc")
 		return 1
 	end
 	if nTeamSize ~= 2 then
-		Talk(1, "", "ĞèÒª1ÄĞ1Å®×é¶Ó²ÅÄÜÊ¹ÓÃ.")
+		Talk(1, "", "Ph¶i tæ ®éi 2 ng­êi 1 nam 1 n÷ míi sö dông ®­îc.")
 		return 1
 	end
 	local nSexFlag = 0
@@ -86,12 +86,12 @@ function main(nItemIndex)
 	end
 	
 	if nSexFlag ~= 1 then --2ÈË×é¶ÓµÄÇé¿öÏÂ£¬Í¬ĞÔ±ğÏà¼Ó±Ø¶¨Îª0+0=0»òÕß1+1=2£¬ÒìĞÍÎª0+1=1
-		Talk(1, "", "ĞèÒª1ÄĞ1Å®×é¶Ó²ÅÄÜÊ¹ÓÃ.")
+		Talk(1, "", "Ph¶i tæ ®éi 2 ng­êi 1 nam 1 n÷ míi sö dông ®­îc.")
 		return 1
 	end
 	local nColor = toColor(random(0,255), random(0,255), random(0,255)) 
 	local szBless = format("<color=%s>%s<color>", tostring(nColor), %tbBless[random(1, getn(%tbBless))])
-	local szMsg = format("<color=yellows>%s<color>×£<color=yellows>%s<color>: %s", szName_Male, szName_Female, szBless)
+	local szMsg = format("<color=yellows>%s<color>Chóc<color=yellows>%s<color>: %s", szName_Male, szName_Female, szBless)
 	AddGlobalNews(szMsg)
 	Msg2SubWorld(szMsg)
 	for i=1, nTeamSize do

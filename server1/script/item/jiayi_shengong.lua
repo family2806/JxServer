@@ -15,18 +15,18 @@ function main()
 	if (check_zhuansheng_level() == 1) then
 		
 		if (GetTask(TSK_ZHUANSHENG_FLAG) == 0) then
-			Msg2Player(format("ÒÑÑ§µÃ%s, ĞèÒªÑ§%s ²ÅÄÜ¹¦³ÉÃû¾Í.", "<±±¶·³¤ÉúÊõ-»ù´¡Æª>", "<±±¶·³¤ÉúÊõ-ĞÄ·¨Æª>"));
-			Say(format("ÒÑÑ§µÃ %s,  µ«ÊÇ£¬Îä¹¦ÒÀÈ»»¹Î´Éı¼¶£¬¿´ÆğÀ´ÕâÀï»¹ÓĞÃØÃÜÃ»ÓĞÆÆ½â %s<color=yellow> %s<color> ÊÔÁË½âÒ»ÏÂĞÅÏ¢.", 
-							"<±±¶·³¤ÉúÊõ-»ù´¡Æª>", "Ã÷ÔÂÕò", "±±¶·ÀÏÈË"), 0);
+			Msg2Player(format("§· häc ®­îc %s, vµ cÇn ph¶i häc %s míi cã thÓ c«ng thµnh danh to¹i ®­îc.", "<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>", "<B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn>"));
+			Say(format("§· häc ®­îc %s,  nh­ng vâ c«ng vÉn ch­a ®­îc n©ng cÊp, xem ra trong ®©y vÉn cã ®iÒu  bİ Èn vÉn ch­a kh¸m ph¸ ra. Cã thÓ ®Õn %s<color=yellow> %s<color> t×m hiÓu tin tøc thö xem.", 
+							"<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>", "Minh NguyÖt TrÊn", "B¾c §Èu L·o Nh©n"), 0);
 			
 			SetTask(TSK_ZHUANSHENG_FLAG,1);
 			
-			WriteLog(format("[ÖØÉúÈÎÎñ]\t%s\tName:%s\tAccount:%s\t Ñ§Ï°¼¶±ğ:%d, ÃÅÅÉ:%d",
+			WriteLog(format("[NhiÖm vô trïng sinh]\t%s\tName:%s\tAccount:%s\t CÊp bËc häc:%d, M«n ph¸i:%d",
 						GetLocalDate("%Y-%m-%d %X"),GetName(), GetAccount(),
 						GetLevel(), GetLastFactionNumber()));
 			return 0;
 		else
-			Msg2Player("ÒÑÑ§<±±¶·³¤ÉúÊõ-»ù´¡Æª> ÁË£¬Ö»ÄÜÔÙÑ§<±±¶·³¤ÉúÊõ-ĞÄ·¨Æª> ¾ÍÄÜ¹¦³ÉÃû¾ÍÁË.");
+			Msg2Player("§· häc <B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn> råi, chØ cÇn häc thªm <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> lµ cã thÓ c«ng thµnh danh to¹i ®­îc råi.");
 			return 1;
 		end
 	

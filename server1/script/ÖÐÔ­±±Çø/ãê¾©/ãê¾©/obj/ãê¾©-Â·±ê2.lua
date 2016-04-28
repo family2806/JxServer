@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("„Íæ©<°™°™>…Ÿ¡÷≈…", 0)
+Say("Bi÷n Kinh <----->Thi’u L©m ph∏i", 0)
 
 end;

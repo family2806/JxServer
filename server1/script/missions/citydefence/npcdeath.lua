@@ -64,16 +64,16 @@ function cd_callboss5down()
 	end
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "宋军"
+	local npcname = "Qu﹏ T鑞g"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "金军"
+		npcname = "Qu﹏ Kim"
 	end
 	cd_addgoldennpc(npcfile, tbTNPC_SOLDIER[npccamp][5], tbSOLDIER_LEVEL[5], npcname..tbSOLDIER_NAME[5], 1, npccamp, tbFILE_NPCDEATH[5])
 	cd_writelog(date("%m%d%H%M ")..format(" call yuanshuai = %d", filehigh))
 
 	SetMissionV( MS_BOSS5_DOWN, 1 )
-	Msg2MSAll( MISSIONID, npcname..tbSOLDIER_NAME[5].."已出现" )
+	Msg2MSAll( MISSIONID, npcname..tbSOLDIER_NAME[5].." xu蕋 hi謓" )
 end
 
 
@@ -87,17 +87,17 @@ function cd_callboss4down()
 	end
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "宋军"
+	local npcname = "Qu﹏ T鑞g"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "金军"
+		npcname = "Qu﹏ Kim"
 	end
 	local npcid = tbTNPC_SOLDIER[npccamp][4]
 	cd_addfightnpc(npcfile, 1, filehigh, npcid, tbSOLDIER_LEVEL[4], npcname..tbSOLDIER_NAME[4], 1, npccamp, tbFILE_NPCDEATH[4], 1)
 	cd_writelog(date("%m%d%H%M ")..format(" call zhujiang = %d", filehigh))
 
 	SetMissionV( MS_BOSS4_DOWN, 1 )
-	Msg2MSAll( MISSIONID, npcname..tbSOLDIER_NAME[4].."已出现" )
+	Msg2MSAll( MISSIONID, npcname..tbSOLDIER_NAME[4].." xu蕋 hi謓" )
 end
 
 function cd_addgoldennpc(npcfile, npcid, npclevel, npcname, boss, npccamp, deathscript)

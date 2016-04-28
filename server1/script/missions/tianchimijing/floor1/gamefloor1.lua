@@ -1,7 +1,7 @@
 Include("\\script\\missions\\tianchimijing\\floor_templet\\game.lua")
 
 GameFloor1 = Game:new()
-GameFloor1.szMapType = "Ìì³ØÃØ¾³µÚÒ»²ã" --¸Ä±äµØÍ¼±íÊ¾
+GameFloor1.szMapType = "TÇng 1 Thiªn Tr× MËt C¶nh" --¸Ä±äµØÍ¼±íÊ¾
 GameFloor1.tbForbitItemType = --ÖØÔØ Î¥½ûµÀ¾ß
 {
 	"TRANSFER","MATE"
@@ -16,74 +16,74 @@ GameFloor1.PlayerEnterTrapTime = {
 
 GameFloor1.tbNpcTypeList = --npcµÄÀàĞÍ
 {
-	["ÂÒ¹Ö"] = 
+	["Lo¹n Qu¸i"] = 
 	{
 		nNpcId = 1606,
-		szName = "Ê¿³¤",
+		szName = "SÜ Tr­ëng",
 		nLevel = 95,
 		bNoRevive = 0, --ÖØÉú
 		nIsboss = 0, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\monster1.txt"
 	},
-	["ÔÎÏİ¹Ö"] =
+	["Vùng HuyÔn Qu¸i"] =
 	{--ÁíÍâÒ»¸ö¹ÖÎï
 		nNpcId = 1608,
-		szName = "Îå³¤",
+		szName = "Ngò Tr­ëng",
 		nLevel = 95,
 		bNoRevive = 0, --ÖØÉú
 		nIsboss = 0, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\monster2.txt"
 	},	
-	["ºóÑö¹Ö"] = 
+	["HËu Ng­ìng Qu¸i"] = 
 	{--ÁíÍâÒ»¸ö¹ÖÎï
 		nNpcId = 1607,
-		szName = "°¢ÀîÏ²",
+		szName = "A Lı Hü",
 		nLevel = 95,
 		bNoRevive = 0, --ÖØÉú
 		nIsboss = 0, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\monster3.txt"
 	},	
-	["³Ù»º¹Ö"] = 
+	["Tr× Ho·n Qu¸i"] = 
 	{--ÁíÍâÒ»¸ö¹ÖÎï
 		nNpcId = 1609,
-		szName = "ºÃÊ¿",
+		szName = "SÜ Tèt",
 		nLevel = 95,
 		bNoRevive = 0, --ÖØÉú
 		nIsboss = 0, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
    	szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\monster4.txt"
 	},
-	["»ú¹Ø"] = 
+	["C¬ quan"] = 
 	{
 		nNpcId = 1605,
-		szName = "»ú¹Ø",
+		szName = "C¬ quan",
 		nLevel = 95,
 		bNoRevive = 0,
 		nIsboss = 1,
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\skillwood.txt"
 	},
-	["±øÆ÷Ïä"]= 
+	["R­¬ng Binh Khİ"]= 
 	{
 		nNpcId = 844,
-		szName = "±øÆ÷Ïä",
+		szName = "R­¬ng Binh Khİ",
 		nLevel = 95,
 		bNoRevive = 0,
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\propsbox.txt",
 		szScriptPath = "\\script\\missions\\tianchimijing\\floor1\\box.lua"
 	},
-	["ÏİÚå"] =
+	["C¹m bÉy"] =
 	{
 		nNpcId = 1611,
-		szName = "ÏİÚå",
+		szName = "C¹m bÉy",
 		nLevel = 95,
 		nSeries = random(0, 4),
 		bNoRevive = 0,
 		nIsboss = 1,
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\trapArea.txt"
 	},
-	["ÒşÊÀ¸ßÈË"] =
+	["¢n ThÕ Cao Nh©n"] =
 	{
 		nNpcId = 108,
-		szName = "ÒşÊÀ¸ßÈË",
+		szName = "¢n ThÕ Cao Nh©n",
 		nLevel = 95,
 		bNoRevive = 1,
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\master_hand.txt",
@@ -212,7 +212,7 @@ GameFloor1.tbTrapList =
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\G2front.txt",--TrapµãµÄ×ø±êÎÄ¼ş
 		szTrapFile = ""
 	},
-	["ÒşÊÀ¸ßÈËµÄ´«ËÍµã"] = 
+	["§iÓm truyÒn tèng cña ¢n ThÕ Cao Nh©n"] = 
 	{
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\masterhandtrap.txt",
 		szTrapFile = ""

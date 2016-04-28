@@ -11,21 +11,21 @@ Rest1 = GetMSPlayerCount(MISSIONID, 1);
 Rest2 = GetMSPlayerCount(MISSIONID, 2);
 
 if (Rest1 > Rest2) then 
-	Msg2MSAll(MISSIONID, "<#>战斗已结束,"..GetMissionS(1).."<#>获胜!");
-	str = "<#> <#>战斗时间已结束!"..GetMissionS(1).."<#>胜利!"..GetMissionS(2).."<#>!";
+	Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(1).."<#> th緉g 頲 tr薾 n祔!");
+	str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(1).."<#> Th緉g r錳!"..GetMissionS(2).."<#>!";
 	WinBonus(1)
 elseif (Rest2 > Rest1) then 
-	Msg2MSAll(MISSIONID, "<#>战斗已结束,"..GetMissionS(2).."<#>获胜!")
-	str = "<#> <#>战斗时间已结束!"..GetMissionS(2).."<#>胜利!"..GetMissionS(1).."<#>!";
+	Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(2).."<#> th緉g 頲 tr薾 n祔!")
+	str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(2).."<#> Th緉g r錳!"..GetMissionS(1).."<#>!";
 	WinBonus(2)
 else
 	if (GetTotalLevel() == 1) then
-		Msg2MSAll(MISSIONID, "<#>战斗已结束,"..GetMissionS(1).."<#>获胜!")
-		str = "<#> <#>战斗时间已结束!"..GetMissionS(1).."<#>胜利!"..GetMissionS(2).."<#>!";
+		Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(1).."<#> th緉g 頲 tr薾 n祔!")
+		str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(1).."<#> Th緉g r錳!"..GetMissionS(2).."<#>!";
 		WinBonus(1)
 	else
-		Msg2MSAll(MISSIONID, "<#>战斗已结束,"..GetMissionS(2).."<#>获胜!")
-		str = "<#> <#>战斗时间已结束!"..GetMissionS(2).."<#>胜利!"..GetMissionS(1).."<#>!";
+		Msg2MSAll(MISSIONID, "<#> Thi u  k誸 th骳,"..GetMissionS(2).."<#> th緉g 頲 tr薾 n祔!")
+		str = "<#> <#> Th阨 gian thi u  k誸 th骳!"..GetMissionS(2).."<#> Th緉g r錳!"..GetMissionS(1).."<#>!";
 		WinBonus(2)
 	end;
 end;

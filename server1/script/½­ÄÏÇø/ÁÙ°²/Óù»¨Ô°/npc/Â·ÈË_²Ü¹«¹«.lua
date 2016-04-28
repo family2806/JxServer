@@ -4,13 +4,13 @@
 function main()
 	UTask_gb = GetTask(8)
 	if (UTask_gb == 50*256+20) and (HaveItem(199) == 1) then		--´ø×Å50¼¶ÈÎÎñ
-		Talk(3,"","ÕâÎ»¹«¹«£¬ÎÒÏë°İ¼û»ÊÉÏ£¬ÓĞÒ»¼şÖØÒªµÄ¶«Î÷Òª½»¸øËû. ","»ÊÉÏÕıÔÚĞİÏ¢£¬Äã°Ñ¶«Î÷½»¸øÎÒ¾ÍĞĞÁË£¬ÎÒ»áÌæÄã×ª½»µÄ","ÕâÑù°¡.......","ÔõÃ´£¿ÄãĞÅ²»¹ıÎÒ£¿Ò²²»´òÌı´òÌıÎÒ²Ü¹«¹«ÊÇÊ²Ã´ÈË£¬»ÊÉÏÊÇÎÒ´ÓĞ¡´ø´óµÄ£¬ÄÑµÀÎÒ»¹»áÆ­Äã²»³É? ","VËy còng ®­îc!")
-		AddNote("°ÑÉ½ºÓÉçğ¢Í¼½»¸ø²Ü¹«¹«. ")
-		Msg2Player("°ÑÉ½ºÓÉçğ¢Í¼½»¸ø²Ü¹«¹«. ")
+		Talk(3,"","VŞ c«ng c«ng nµy! Ta muèn vµo gÆp Hoµng th­îng. Cã mét vËt quan träng muèn giao cho Hoµng th­îng. "," Hoµng th­îng hiÖn ®ang nghØ ng¬i. Cø giao vËt ®ã cho ta. Ta sÏ chuyÓn ®Õn cho Hoµng th­îng","µ…chuyÖn nµy… ","Sao h¶? Kh«ng tin t­ëng ta µ? Còng kh«ng chŞu hái tr­íc xem Tµo c«ng c«ng ta lµ ng­êi nh­ thÕ nµo. Hoµng th­îng tõ nhá ®Õn lín ®Òu do ta s¨n sãc. LÏ nµo ta l¹i ®i g¹t ng­¬i sao? ","VËy còng ®­îc!")
+		AddNote("Giao bøc ®Şa ®å cho Tµo c«ng c«ng. ")
+		Msg2Player("Giao bøc ®Şa ®å cho Tµo c«ng c«ng. ")
 		DelItem(199)
 		SetTask(8,50*256+30)
 		NewWorld(176, 1627, 3206)
 	else
-		Talk(1,"","°ÑÉ½ºÓÉçğ¢Í¼½»¸ø²Ü¹«¹«")
+		Talk(1,"","Ng­¬i lµ ai? Ai cho ng­¬i ®i vµo ®©y?")
 	end
 end;

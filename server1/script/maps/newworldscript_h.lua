@@ -18,10 +18,10 @@ do return end
 	if (bIn == 1) then
 		PARTNER_CallOutCurPartner(0)
 		PARTNER_SetCallOutSwitch(0)
-		Msg2Player("Í¬°éÕÙ»½¿ª¹Ø¹Ø±Õ£¡")
+		Msg2Player("T¾t/ gäi ®ång hµnh")
 	else
 		PARTNER_SetCallOutSwitch(1)	
-		Msg2Player("Í¬°éÕÙ»½¿ª¹Ø´ò¿ª£¡")
+		Msg2Player("T¾t/ gäi ®ång hµnh")
 	end
 end
 
@@ -165,7 +165,7 @@ function PK10_InPrison(bIn)
 	if (bIn == 1) then
 		if (GetPK() == 10) then
 			SetDeathPunish_PK10(1)
-			Msg2Player("<color=green>ÄãµÄPKÖµÊÇ10ÒÑ¾­×ï´ó¶ñ¼«£¬Ö±½Ó¹Ø½ø´óÀÎ.<color>");
+			Msg2Player("<color=green>Kh¾p n¬i ®Òu tung tin, quan phñ ®ang r¸o riÕt truy t×m ng­¬i, nh÷ng ng­êi muèn ®­îc träng th­ëng t×m kiÕm ng­¬i kh¾p n¬i, h·y cÈn thËn chót.<color>");
 		else
 			SetDeathPunish_PK10(0)
 		end;

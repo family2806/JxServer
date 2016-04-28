@@ -37,11 +37,11 @@ function OnDeath(Launcher)
 				if (deathcamp == 1) then
 					local npoint = bt_addtotalpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 2))
 					mar_addmissionpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 2))
-					Msg2Player("<color=yellow> ÄúÊÕµ½Á¬Õ¶»ý·Ö"..npoint)
+					Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tÝch lòy Liªn tr¶m "..npoint)
 				else
 					local npoint = bt_addtotalpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 1))
 					mar_addmissionpoint(BT_GetTypeBonus(PL_MAXSERIESKILL, 1))
-					Msg2Player("<color=yellow> ÄúÊÕµ½Á¬Õ¶»ý·Ö"..npoint)
+					Msg2Player("<color=yellow> b¹n nhËn ®­îc ®iÓm tÝch lòy Liªn tr¶m "..npoint)
 				end
 			end
 		end
@@ -75,11 +75,11 @@ function OnDeath(Launcher)
 			BT_BroadSelf();
 		
 			if (GetCurCamp()  == 1) then
-				str  = "ËÎ·½"..launrankname..LaunName.." ÏÂ½ð·½ÖØÉËÈË"..rankname..DeathName..", ×Ü PK Îª"..BT_GetData(PL_KILLPLAYER);
+				str  = "Phe Tèng"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Kim "..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			else
-				str  = "½ð·½"..launrankname..LaunName.." ÏÂËÎ·½ÖØÉËÈË"..rankname..DeathName..", ×Ü PK Îª"..BT_GetData(PL_KILLPLAYER);
+				str  = "Phe Kim"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Tèng "..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			end
-			Msg2Player("<color=pink> ¹§Ï²£¡ÄúÒÑ¾­ÏÂµÃ:"..rankname..DeathName..", ×Ü PK Îª"..BT_GetData(PL_KILLPLAYER));
+			Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER));
 			Msg2MSAll(MISSIONID, str);
 		end
 		PlayerIndex = OrgPlayer;

@@ -2,5 +2,5 @@
 -- ÀîĞÀ 2005-01-26
 
 function main()
-	Say("ÎÒÊÇ£¬¶îÎÒÊÇË­°¡?..",0);
+	Say("Ta lµ…ña mµ ta lµ ai nhØ?..",0);
 end;

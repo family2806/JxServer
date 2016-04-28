@@ -1,7 +1,7 @@
 --Î÷±±ÄÏÇø ·ïÏè¸® ¿ÍÕ»ÀÏ°å¶Ô»°
 
 function main(sel)
-Say("¿ÍÕ»ÀÏ°å£º°³Õâ¼Ò¿ÍÕ»ÓÖ¸É¾»ÓÖ¿í³¨£¬¿Í¹ÙÒª×¡µêÂğ£¿",0);
+Say("Phßng ë ®©y tuy nhá nh­ng s¹ch sÏ! B¶o ®¶m kh¸ch quan sÏ hµi lßng",0);
 end;
 
 

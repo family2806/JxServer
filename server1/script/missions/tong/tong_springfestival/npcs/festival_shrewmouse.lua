@@ -1,17 +1,17 @@
 Include("\\script\\missions\\tong\\tong_springfestival\\head.lua");
 
 ITEM_DROPRATE_TABLE = {
-						{	{6,1,978,1,1,1,1},0.020, "º”ÀŸÕË"	},
-						{	{6,1,981,1,1,1,1},0.010, "—£‘Œœ›⁄Â"	},
-						{	{6,1,982,1,1,1,1},0.005, "–˛ÃÏœ›⁄Â"	},
-						{	{6,1,983,1,1,1,1},0.020, "À™Ωµœ›⁄Â"	},
-						{	{6,1,984,1,1,1,1},0.010, "±˘∑‚œ›⁄Â"	},
-						{	{6,1,994,1,1,1,1},0.016, "∫Æ∑Á”Ò"	},
-						{	{6,1,989,1,1,1,1},0.010, "æ≠—È∑˚ "	},
-						{	{6,1,988,1,1,1,1},0.005, "æ≠—È∑˚ (∏ﬂº∂) "	},
-						{	{6,1,985,1,1,1,1},0.005, "«¨¿§≈≤“∆∑˚ "	},
-						{	{6,1,986,1,1,1,1},0.005, "“∆–Œª√”∞∑˚ "	},
-						{	{6,1,979,1,1,1,1},0.010, "±˘À™∫≈Ω« "	},
+						{	{6,1,978,1,1,1,1},0.020, "Gia TËc hoµn"	},
+						{	{6,1,981,1,1,1,1},0.010, "Huy‘n Hu©n H∑m T‹nh"	},
+						{	{6,1,982,1,1,1,1},0.005, "Huy“n Thi™n H∑m T‹nh"	},
+						{	{6,1,983,1,1,1,1},0.020, "S≠¨ng Gi∏ng H∑m T‹nh"	},
+						{	{6,1,984,1,1,1,1},0.010, "B®ng Phong H∑m T‹nh"	},
+						{	{6,1,994,1,1,1,1},0.016, "Hµn Phong Ng‰c"	},
+						{	{6,1,989,1,1,1,1},0.010, "Kinh nghi÷m phÔ "	},
+						{	{6,1,988,1,1,1,1},0.005, "Kinh nghi÷m phÔ (cao c p) "	},
+						{	{6,1,985,1,1,1,1},0.005, "Cµn Kh´n Na Di phÔ "	},
+						{	{6,1,986,1,1,1,1},0.005, "Di H◊nh Ho∏n ∂nh phÔ "	},
+						{	{6,1,979,1,1,1,1},0.010, "B®ng S≠¨ng Hi÷u gi∏c "	},
 						{	1000,0.15},
 						{	2000,0.15},
 						{	5000,0.15},
@@ -19,7 +19,7 @@ ITEM_DROPRATE_TABLE = {
 						{	20000,0.1189},
 						{	50000,0.015},
 						{	100000,0.0001},
-						{	{6,1,71,1,1,1,1},0.030, "œ…≤›¬∂ "},
+						{	{6,1,71,1,1,1,1},0.030, "Ti™n Th∂o LÈ "},
 					}
 
 
@@ -41,7 +41,7 @@ function main()
 	
 	CastSkill(358, 1); --∑≈“ª∏ˆººƒ‹£ª
 	
-	Msg2Player(format("¥Ú÷– %d %s", nCount, SF_MOUSENAME));
+	Msg2Player(format("ß∏nh trÛng %d %s", nCount, SF_MOUSENAME));
 end;
 
 function add_dropitem()
@@ -57,11 +57,11 @@ function add_dropitem()
 		if (nSum >= nRandNum) then
 			if (type( ITEM_DROPRATE_TABLE[i][1] ) == "table") then
 				AddItem(ITEM_DROPRATE_TABLE[i][1][1], ITEM_DROPRATE_TABLE[i][1][2], ITEM_DROPRATE_TABLE[i][1][3], ITEM_DROPRATE_TABLE[i][1][4], ITEM_DROPRATE_TABLE[i][1][5], ITEM_DROPRATE_TABLE[i][1][6], ITEM_DROPRATE_TABLE[i][1][7])
-				Msg2Player(format("ªÒµ√1 <color=0xB5FDD7>%s",ITEM_DROPRATE_TABLE[i][3]));
+				Msg2Player(format("NhÀn Æ≠Óc 1 <color=0xB5FDD7>%s",ITEM_DROPRATE_TABLE[i][3]));
 			elseif (type( ITEM_DROPRATE_TABLE[i][1] ) == "number") then
 			    local nExp = ITEM_DROPRATE_TABLE[i][1] * festival_get_exptimes();
 				AddOwnExp(nExp);
-				Msg2Player(format("ƒ„ªÒµ√ <color=0xB5FDD7> æ≠—È÷µ.", nExp))
+				Msg2Player(format("NhÀn Æ≠Óc <color=0xB5FDD7> Æi”m kinh nghi÷m.", nExp))
 			end
 			break
 		end

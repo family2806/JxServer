@@ -5,7 +5,7 @@ local tbNpcList =
 {
 	{
 		nNpcId = 950, 
-		szName = "ÒÂÃ±¶¨ÖÆ´óÊ¦", 
+		szName = "Y m·o ®Þnh chÕ ®¹i s­", 
 		szScriptPath = "\\script\\changefeature\\feature_man.lua",
 		nMapId = 934,
 			
@@ -14,7 +14,7 @@ local tbNpcList =
 	},
 	{
 		nNpcId = 950, 
-		szName = "ÒÂÃ±¶¨ÖÆÖúÊÖ", 
+		szName = "Y m·o ®Þnh chÕ trî thñ", 
 		szScriptPath = "\\script\\changefeature\\feature_man.lua",
 		nMapId = 934,
 		nPosX = 50080,
@@ -22,7 +22,7 @@ local tbNpcList =
 	},
 	{
 		nNpcId = 625, 
-		szName = "´¢ÎïÏä®å", 
+		szName = "R­¬ng chøa ®å", 
 		szScriptPath = "\\script\\changefeature\\npc\\box.lua",
 		nMapId = 934,
 		nPosX = 50112,
@@ -30,7 +30,7 @@ local tbNpcList =
 	},
 	{
 		nNpcId = 393, 
-		szName = "³µ·ò", 
+		szName = "Xa phu", 
 		szScriptPath = "\\script\\changefeature\\npc\\chefu.lua",
 		nMapId = 934,
 		

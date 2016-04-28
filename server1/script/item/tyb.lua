@@ -10,7 +10,7 @@ function main()
 	local nMemCount = GetTeamSize();
 	
 	if (GetNpcExpRate() > 100) then
-		Say("¶Ô²»Æğ£¬Ä¿Ç°ÔİÊ±ÎŞ·¨Ê¹ÓÃÍÅÔ²ÔÂ±ı¡£", 0)
+		Say("Xin lçi! T¹m thêi kh«ng thÓ ¨n ®­îc b¸nh Trung Thu ", 0)
 		return 1
 	end
 

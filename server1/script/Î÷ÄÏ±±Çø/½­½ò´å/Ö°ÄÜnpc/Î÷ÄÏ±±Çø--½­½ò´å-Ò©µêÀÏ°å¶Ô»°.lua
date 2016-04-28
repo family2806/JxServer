@@ -9,9 +9,9 @@ function main(sel)
 	UTask_world21 = GetTask(49);
 	Uworld1000 = nt_getTask(1000)	
 	if ((UTask_world21 == 1) and (HaveItem(179) == 0)) then
-		Say("ÊÇÎâÀÏµùÍĞÄãÀ´ÂòÒ©µÄÃ´£¿ÎÒÔç¾Í¸øËû×¼±¸ºÃÁË£¬Ê®¿Å´¨±´ÍèÒ»¹²ÎÆÒø¶ş°ÙÁ½¡£»ØÈ¥¸úÀÏÒ¯×ÓËµÈÃËû×¢ÒâÉíÌåÑ½!",3,"Âò´¨±´Íè/buy","ÂòÒ»Ğ©ÆäËûÒ©/yes","²»Âò/no")
+		Say("Ng« L·o Th¸i nhê ng­¬i ®Õn mua thuèc µ? Ta ®· chuÈn bŞ s½n cho ng­¬i 10 viªn Xuyªn Bèi hoµn, tæng céng 200 l­îng. Nh¾n víi L·o th¸i h·y gi÷ g×n søc kháe!",3,"Mua Xuyªn Bèi hoµn/buy","Mua mét İt thuèc kh¸c/yes","Kh«ng mua ®©u/no")
 	else
-		Say("Ò©µêÀÏ°å£ºÈË³ÔÎå¹ÈÔÓÁ¸£¬Ë­Ã»¸öÍ·ÌÛÄÔÈÈ£¿ÎÒÕâµêËäĞ¡£¬¿ÉÊÇ¾ø¶ÔÉÙ²»ÁË£¡ÄãÒªÂòµãÊ²Ã´Ò©£¿", 3, "½»Ò×/yes", "ÎÒÀ´½ÓÈëÃÅÈÎÎñ/yboss","²»½»Ò×/no");
+		Say("Ng­¬i ®· ¨n 5 cèc t¹p l­¬ng, kh«ng ph¸t háa nhøc ®Çu míi l¹! Chç ta tuy nhá nh­ng tuyÖt ®èi kh«ng thiÕu thø g×! Ng­¬i cã muèn mua İt thuèc kh«ng?", 3, "Giao dŞch/yes", "Ta ®Õn nhËn nhiÖm vô S¬ nhËp/yboss","Kh«ng giao dŞch/no");
 	end
 end;
 
@@ -19,10 +19,10 @@ function buy()
 	if(GetCash() >= 200)then
 		Pay(200)
 		AddEventItem(179) --µÃµ½Ò©
-		Msg2Player("ÄãµÃµ½Ê®¿Å´¨±´Íè¡£")
-		AddNote("ÄãµÃµ½Ê®¿Å´¨±´Íè¡£")
+		Msg2Player("Ng­¬i ®­îc m­êi viªn Xuyªn Bèi hoµn")
+		AddNote("Ng­¬i ®­îc m­êi viªn Xuyªn Bèi hoµn")
 	else
-		Talk(1,"","Ò©µêÀÏ°å£ºÒ©ÎÒ¸øÄãÁô×Å£¬µÈÇ®´Õ¹»ÁËÔÙ¹ıÀ´È¡Ò©°É¡£")
+		Talk(1,"","Thuèc cña ng­¬i ta gi÷ l¹i ®©y, ®îi cã ®ñ tiÒn råi h·y quay l¹i lÊy thuèc!")
 	end
 end;
 

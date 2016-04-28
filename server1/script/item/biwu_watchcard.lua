@@ -3,20 +3,20 @@ function main( nItemIdx )
 	local nMon =  GetItemParam(nItemIdx,1)
 	local nDay =  GetItemParam(nItemIdx,2)
 	--Say("ÄãµÄ¹ÛÖÚÈ¯µÄÊ¹ÓÃÈÕÆÚÎª<color=yellow>2005Äê"..nMon.."ÔÂ"..nDay.."ÈÕ<color>¡£¹ÛÖÚÈ¯Ö»ÄÜÊ¹ÓÃÒ»´Î£¬Ê¹ÓÃºó£¬¼´¿ÉÔÚ¹ÛÖÚÈ¯µÄÈÕÆÚÊ±¶ÎÄÚµÇÈëÎäÁÖ´ó»á×Ü¾öÈü·şÎñÆ÷£¬¹ÛÕ½¡£ÓâÆÚÎŞĞ§¡£ÄãÈ·¶¨ÒªÏÖÔÚÊ¹ÓÃÂğ£¿", 2, "ÎÒÒªÏÖÔÚÊ¹ÓÃ/#sure2usewatchcard("..nItemIdx..")", "»¹ÊÇÉÔµÈ°É/OnCancel")
-	Say("¶Ô²»Æğ£¬ÄãÊ¹ÓÃµÄ¹ÛÖÚ¾íÒÑ¹ıÆÚ£¡",0);
+	Say("Xin lçi! VĞ cña b¹n sö ®· qu¸ h¹n sö dông!",0);
 end
 
 function sure2usewatchcard(nItemIdx)
 	local count = CalcEquiproomItemCount( 6, 1, 443, 1 )
 	if ( count == 0 ) then
-		Say("ß×£¿ÄãµÄ¹ÛÖÚÈ¯ÄØ£¿²»¼ûÀ²£¡²»¼ûÁË¾ÍÓÃ²»ÁË°¡£¡", 0)
+		Say("VĞ cña b¹n ®©u? Kh«ng cã th× kh«ng dïng ®­îc!", 0)
 		return
 	end
 	local nMon =  GetItemParam(nItemIdx,1)
 	local nDay =  GetItemParam(nItemIdx,2)
 	local nDate = nMon * 100 + nDay
 	AddExtPoint(1,nDate)
-	Say("ÄãµÄ¹ÛÖÚÈ¯µÄÊ¹ÓÃÈÕÆÚÎª<color=yellow>2005Äê"..nMon.."ÔÂ"..nDay.."ÈÕ<color>£¬ÇëÔÚÓĞĞ§ÆÚµ±ÌìµÇÂ¼ÎäÁÖ´ó»á±ÈÈü·şÎñÆ÷¹Û¿´±ÈÈü¡£", 0)
+	Say("ÄãµÄ¹ÛÖÚÈ¯µÄÊ¹ÓÃÈÕÆÚÎª<color=yellow>2005Äê"..nMon.."ÔÂ"..nDay.." ngµy<color>, Xin ®¨ng kı m¸y dŞch vô thi ®Êu §¹i héi Vâ l©m trong ngµy cã hiÖu lùc ®Ó xem thi ®Êu!", 0)
 	DelCommonItem(6,1,443)
 end
 

@@ -11,36 +11,36 @@ function main()
 	UTask_tm = GetTask(2)
 	if (UTask_tm == 40*256+20) then
 		if (GetTaskTemp(4) == 31) then  --ÒÑ¾­´ò°ÜÎåÖ»³èÎï
-			Talk(7, "L40_step42", "Íí±²ÌÆÃÅµÜ×Ó£¬¼û¹ı¹¢×ÓÆæ´óÏÀ! ", "ÌÆÒ°ÊÇÄãÊ²Ã´ÈË?", "ÊÇÍí±²Ê¦Êå.", "ºß£¡ËûÊÇÃ»Á³À´¼ûÎÒ£¬»¹ÊÇ²»¸ÒÀ´¼ûÎÒ£¿ÅÉÄãÕâ¸öĞ¡±²À´×öÊ²Ã´?", "Ç°±²Îó»áÁË£¬µ±ÄêÊ¦Êå²»ÊÇ¼ûËÀ²»¾È£¬¶øÊÇÒòÎª±¾ÃÅÁ¢ÓĞÃÅ¹æ£¬²»µÃÎªÍâÈËÖÎ²¡£¬ËùÒÔËûÊµÔÚÇé·ÇµÃÒÑ£¬ÕâĞ©ÄêËûÒ²Ò»Ö±Ê®·ÖÀ¢¾Î!", "ÕâĞ©ÔµÓÉËûÎªÊ²Ã´²»Ç××ÔÀ´ÏòÎÒ½âÊÍ?", "Ç°±²¶ÔÊ¦ÊåÎó»áÉõÉî£¬¿ÖÅÂÒ»¼ûÃæ»¹µÈ²»¼°¿ª¿Ú£¬¾Í?")
+			Talk(7, "L40_step42", "V·n bèi lµ ®Ö tö §­êng M«n, ®· tõng nghe qua C¶nh Tö Kú ®¹i hiÖp! ", "§­êng D· lµ ai?", "Lµ s­ thóc cña v·n bèi.", "Hõ! H¾n kh«ng cßn mÆt mòi nµo ®Õn ®©y gÆp ta, hay ch¼ng d¸m ®Õn gÆp ta? L¹i ph¸i mét tªn tiÓu bèi nh­ ng­¬i ®Õn lµm g×?", "TiÒn bèi hiÓu lÇm råi! N¨m x­a s­ thóc kh«ng ph¶i thÊy chÕt kh«ng cøu, mµ lµ bæn m«n vèn cã m«n quy, kh«ng ®­îc trŞ bÖnh cho ng­êi ngoµi nªn thóc thóc míi bÊt ®¾c dÜ th«i! §· nhiÒu n¨m nay «ng cø m·i ray røc trong lßng!", "Nh÷ng duyªn cí nµy sao h¾n kh«ng ®İch th©n ®Õn gi¶i bµy cïng ta?", "TiÒn bèi biÕt s­ thóc vÉn cßn hiÓu lÇm, e r»ng võa gÆp mÆt kh«ng kŞp më miÖng th×…….")
 		else
-			Talk(1,"","²»¹ÜÄãÊÇË­£¬ÓĞÊ²Ã´ÊÂÏÈ´ò°ÜÁËÎÒµÄ<color=Red>ÎåÖ»¼ÒĞó¡ª¡ª»ÒÀÇ¡¢ÃÍ»¢¡¢½ğÇ®±ª¡¢Ò°Öí¡¢×ØĞÜ<color>ÔÙËµ!")
+			Talk(1,"","MÆc kÖ ng­¬i lµ ai, chuyÖn g× th× còng ph¶i h¹ gôc 5 con gia sóc cña ta <color=Red>Sãi x¸m, M·nh hæ, Kim TiÒn b¸o, Heo rõng, GÊu n©u <color> råi míi nãi!")
 --			AddNote("ÔÚÇà³ÇÉ½Î÷²¿ÕÒµ½¹¢×ÓÆæ£¬ĞèÒªÏÈ´ò°ÜËûµÄÎåÖ»¼ÒĞó²Å»á±»¹¢×ÓÆæÀí»á¡£")
 		end
 	elseif (UTask_tm == 40*256+60) then
 		if (HaveItem(43) == 1) and (HaveItem(44) == 1) and (HaveItem(45) == 1) and (HaveItem(46) == 1) and (HaveItem(47) == 1) then		--ÒÑ¾­µÃµ½ÎåÖÖÒ©²Ä
-			Talk(2, "", "Ç°±²£¬ÕâÎåÖÖ¾ÍÊÇÖÎÁÆ¹Ö²¡µÄÒ©²Ä£¬Ê¦ÊåËµÖ»Òª³ÔÈı´Î¾Í¿ÉÒÔÈ¬ÓúÁË!", " Ì«ºÃÁË£¡ÎÒÅ®¶ùÓĞ¾ÈÁË£¡Ğ»Ğ»Äã£¡Ğ»Ğ»Äã£¡¶àĞ»Ğ»ÄãÊ¦Êå£¬ÊÇÎÒÎó»áÁËËû!")
+			Talk(2, "", "TiÕn bèi, 5 lo¹i nµy lµ thuèc ch÷a bÖnh l¹, chØ cÇn uèng 3 lÇn lµ cã thÓ ch÷a ®­îc bÖnh!", " Tèt l¾m! Con g¸i ta ®­îc cøu råi! §a t¹ ng­¬i, cµng ®a t¹ s­ thóc cña ng­¬i, ta ®· hiÓu lÇm råi!")
 			DelItem(43)
 			DelItem(44)
 			DelItem(45)
 			DelItem(46)
 			DelItem(47)
 			SetTask(2, 40*256+80)
-			AddNote("½»Ò©·½¸ø¹¢×ÓÆæ£¬³É¹¦»¯½âËûÓëÌÆÒ°µÄ¶÷Ô¹")
-			Msg2Player("ÕÒµ½5ÖÖÒ©²Ä¸ø¹¢×ÓÆæ£¬³É¹¦»¯½âËûÓëÌÆÒ°µÄ¶÷Ô¹")
+			AddNote("Giao ph­¬ng thuèc cho C¶nh Tö Kú, ®· hãa gi¶i thµnh c«ng ©n o¸n gi÷a «ng ta vµ §­êng D· ")
+			Msg2Player("KiÕm ®ñ 5 lo¹i d­îc liÖu ®em cho C¶nh Tö Kú, ®· hãa gi¶i thµnh c«ng ©n o¸n gi÷a «ng ta vµ s­ thóc ")
 		else
-			Talk(3, "", "ÄãÕæµÄÓĞ°ì·¨¾ÈÎÒÅ®¶ùÂğ?", "ÌÆÒ°Ê¦ÊåÒÑ¾­¸æËßÁËÎÒÒ©·½£¬ÎÒÕıÔÚÑ°ÕÒÖÎÁÆ¹Ö²¡ËùĞèµÄÎåÖÖÒ©²Ä", "Ì«Ğ»Ğ»ÄãÁË¡£")
+			Talk(3, "", "Ng­¬i qu¶ thËt cã c¸ch cøu con g¸i ta sao?", "§­êng D· s­ thóc ®· nãi cho v·n bèi ph­¬ng thuèc nµy! V·n bèi ®ang t×m 5 lo¹i d­îc liÖu cÇn thiÕt ®Ó ch÷a bÖnh l¹!", "ThËt c¸m ¬n ng­¬i! ")
 		end
 	elseif (UTask_tm >= 40*256+40) and (UTask_tm < 40*256+80) then					--ÉĞÎ´Íê³É40¼¶ÈÎÎñ
-		Talk(1,"","ÄãÕæµÄÓĞ°ì·¨¾ÈÎÒÅ®¶ùÂğ?")
+		Talk(1,"","Ng­¬i qu¶ thËt cã c¸ch cøu con g¸i ta sao?")
 	elseif (UTask_tm >= 40*256+80) and (UTask_tm < 70*256) then					--ÒÑ¾­Íê³É40¼¶ÈÎÎñ£¬ÉĞÎ´³öÊ¦
-		Talk(1,"","ÎÒÎó»áÁËÄãÊ¦Êå£¬ÕæÊÇĞßÀ¢!")
+		Talk(1,"","Ta ®· tr¸ch lÇm s­ thóc ng­¬i, ta thËt lÊy lµm hç thÑn!")
 	else									--ÉĞÎ´Íê³É40¼¶ÈÎÎñ£¨È±Ê¡¶Ô»°£©
-		Talk(1,"","§iÎÒ±ÏÉú×î´óµÄºŞÊÂ£¬¾ÍÊÇÎÒ×îºÃµÄÅóÓÑ¾¹È»ÊÇÒ»¸öÎŞÇéÎŞÒåÖ®±²!")
+		Talk(1,"","§iÒu mµ ta ®au lßng nhÊt trªn ®êi lµ ng­êi b¹n th©n nhÊt cña ta l¹i lµ kÎ v« t×nh v« nghÜa!")
 	end
 end;
 
 function L40_step42()
 	SetTask(2, 40*256+40)
-	AddNote("´ò°Ü¹¢×ÓÆæµÄ5ÖÖ¼ÒĞó£¬ÖªµÀËûÅ®¶ùµÃÁËÆæ¹ÖµÄ²¡£¬ÏëÕÒÌÆÒ°Ê¦ÊåÑ°ÇóÖÎ²¡µÄÒ©·½")
-	Talk(4,"","ÆäÊµÎÒ¾ÍÊÇÉ±ÁËËûÓÖÓĞÊ²Ã´ÓÃ£¿ÎÒÆŞ×ÓÔÙÒ²»î²»¹ıÀ´ÁË£¬±¾À´ÎÒÒÑÁËÎŞÉúÈ¤£¬Ö»ÊÇÎªÁËÄêÓ×µÄÅ®¶ù²Å¹¶»îÖÁ½ñ£¬Ïë²»µ½Á¬ÎÒÎ¨Ò»µÄÅ®¶ùÒ²µÃÉÏÁËÍ¬ÑùµÄ¹Ö²¡£¬Èç¹ûÁ¬Å®¶ùÒ²Ã»ÓĞÁË£¬ÎÒ¡¢ÎÒ»îÏÂÈ¥»¹ÓĞÊ²Ã´ÒâË¼?", "Ç°±²£¬Äã±ğ×Å¼±£¬ÄãÅ®¶ùÒ»¶¨»áÓĞ¾ÈµÄ!", "ÄÜÓĞÊ²Ã´°ì·¨£¿ÄãÊ¦ÊåÊÇÌìÏÂµÚÒ»µÄÉñÒ½£¬Ëû²»ÄÜ³öÊÖÏà¾È£¬»¹ÓĞË­ÄÜ¾ÈµÃÁËÎÒÅ®¶ù!", "ÎÒ×ÔÓĞ°ì·¨£¬ÎÒÕâ¾ÍÈ¥ÕÒÊ¦Êå!")
+	AddNote("§¸nh b¹i 5 lo¹i gia sóc cña C¶nh Tö Kú, biÕt con g¸i «ng ta m¾c c¨n bÖnh k× qu¸i, muèn t×m §ång D· s­ thóc ®Ó nghÜ c¸ch ch÷a trŞ ")
+	Talk(4,"","Kú thùc, ta giÕt h¾n liÖu cã İch g×? Thª tö cña ta còng kh«ng thÓ sèng l¹i ®­îc, vèn ta ®· kh«ng cßn høng thó, chØ mong ®­îc sèng bªn ®øa con g¸i bĞ báng cña ta. Nµo ngê, ®øa con g¸i duy nhÊt còng m¾c ph¶i chøng bÖnh l¹ nh­ vËy. NÕu c¶ con g¸i còng rêi bá ta mµ ®i, ta sèng trªn ®êi cßn cã ı nghÜa g×!", "TiÒn bèi, ®õng n«n nãng! Con g¸i cña ng­êi nhÊt ®Şnh ®­îc cøu!", "Cßn cã c¸ch g× sao? S­ thóc cña ng­¬i lµ thiªn h¹ ®Ö nhÊt thÇn y. Ngoµi h¾n, cßn ai cã thÓ cøu ®­îc con g¸i ta!", "Ta cã c¸ch! §Ó ta ®i t×m S­ thóc!")
 end;

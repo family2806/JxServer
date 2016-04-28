@@ -1,8 +1,8 @@
 tbSHENGRILIHE_GIFT = {
-			{ "<#> ÏÊÄÌ", 0.03, 975 },
-			{ "<#> ¾«·Û", 0.47, 976 },
-			{ "<#> ÌÇ¾«", 0.47, 977 },
-			{ "<#> ¼¦µ°", 0.03, 978 },
+			{ "<#> S÷a t­¬i", 0.03, 975 },
+			{ "<#> Bét tinh", 0.47, 976 },
+			{ "<#> §­êng tinh", 0.47, 977 },
+			{ "<#> Trøng gµ", 0.03, 978 },
 }
 
 function main()
@@ -22,9 +22,9 @@ function main()
 	end;
 	if ( gift_index ~= 0 ) then
 		AddEventItem(tbSHENGRILIHE_GIFT[gift_index][3])
-		Msg2Player("<#> Äú»ñµÃÒ»¸ö"..tbSHENGRILIHE_GIFT[gift_index][1])
+		Msg2Player("<#> B¹n nhËn ®­îc mét c¸i"..tbSHENGRILIHE_GIFT[gift_index][1])
 		WriteLog(date("%y-%m-%d,%H:%M,").."ACCOUNT:"..GetAccount()..",NAME:"..GetName()..",use zhongqiu_lihe , get "..tbSHENGRILIHE_GIFT[gift_index][1])
 	else
-		Say("ÎªÊ²Ã´Ê²Ã´Ò²Ã»ÓÐÄØ?", 0)
+		Say("Sao kh«ng cã g× hÕt vËy?", 0)
 	end
 end

@@ -45,19 +45,19 @@ load_all_track_file()
 
 local tbNpcList = 
 {
-	{szName = "¹í¹È(1 µã)", nNpcId = 1892, nRank = 1, nRate = 19},
-	{szName = "Ä®¹«(2 µã)", nNpcId = 1893, nRank = 2, nRate = 19},
-	{szName = "ÌìË³ (4 µã)", nNpcId = 1894, nRank = 3, nRate = 14},
-	{szName = "ÉÐÏÍ (7 µã)", nNpcId = 1895, nRank = 4, nRate = 10},
-	{szName = "·ÉÀÖ (10 µã)", nNpcId = 1896, nRank = 5, nRate = 9},
-	{szName = "Ü°Öñ(20 µã)", nNpcId = 1897, nRank = 6, nRate = 7},
-	{szName = "Ë®¾­( 30 µã)", nNpcId = 1898, nRank = 7, nRate = 5},
-	{szName = "É½Íå(40 µã)", nNpcId = 1899, nRank = 8, nRate = 5},
+	{szName = "Quû Cèc (1 ®iÓm)", nNpcId = 1892, nRank = 1, nRate = 19},
+	{szName = "MÆc C«ng(2 ®iÓm)", nNpcId = 1893, nRank = 2, nRate = 19},
+	{szName = "Thiªn ThuÉn (4 ®iÓm)", nNpcId = 1894, nRank = 3, nRate = 14},
+	{szName = "Th­îng HiÒn (7 ®iÓm)", nNpcId = 1895, nRank = 4, nRate = 10},
+	{szName = "Phi Nh¹c (10 ®iÓm)", nNpcId = 1896, nRank = 5, nRate = 9},
+	{szName = "Hinh Tróc(20 ®iÓm)", nNpcId = 1897, nRank = 6, nRate = 7},
+	{szName = "Thñy Kinh( 30 ®iÓm)", nNpcId = 1898, nRank = 7, nRate = 5},
+	{szName = "S¬n Loan (40 ®iÓm)", nNpcId = 1899, nRank = 8, nRate = 5},
 	
-	{szName = "×ÙÓ°(50 µã)", nNpcId = 1900, nRank = 9, nRate = 4},
-	{szName = "²×À½ (60 µã)", nNpcId = 1901, nRank = 10, nRate = 4},
+	{szName = "¶nh T«ng (50 ®iÓm)", nNpcId = 1900, nRank = 9, nRate = 4},
+	{szName = "Th­¬ng Lan (60 ®iÓm)", nNpcId = 1901, nRank = 10, nRate = 4},
 	
-	{szName = "Ð¥¿Õ(100 µã)", nNpcId = 1902, nRank = 11, nRate = 4},
+	{szName = "KhiÕu Khung (100 ®iÓm)", nNpcId = 1902, nRank = 11, nRate = 4},
 	
 }
 

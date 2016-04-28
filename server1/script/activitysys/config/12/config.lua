@@ -7,14 +7,14 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	szName = "click npc1",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÔËÊäÈË"},
+	tbMessageParam = {"Ng­êi VËn ChuyÓn"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÎÒÏë°ï»¤ËÍ",2} },
-		{"SetDialogTitle",	{"½ÉÒ»¸ö»ìÔªÁéÂ¶¸øÎÒ¾Í¿ÉÒÔ½Ó»¤ËÍ£¬»¤ËÍ»õµ½µ½ÉÌ··´¦¾Í¿ÉÒÔÊÕµ½·á¸»µÄ½±Àø£¬Ã¿Î»´óÏÀÃ¿Ìì¿ÉÒÔ½Ó3´ÎÈÎÎñ£¬ÔÚ»¤ËÍÐÐ³ÌÄÚ£¬´óÏÀÐèÒª±£»¤Âí³µµÄ°²È«£¬Èç¹ûÂí³µËÀÁË£¬¾Í»áµôÂäÒ»¸ö»ìÔªÁéÂ¶£¬ÈÎÎñ½«»áÊ§°Ü¡£"} },
+		{"AddDialogOpt",	{"Ta muèn hé tèng ",2} },
+		{"SetDialogTitle",	{"Giao nép 1 Hçn Nguyªn Linh Lé cho ta th× cã thÓ tiÕp nhËn nhiÖm vô hé tèng, hé tèng hµng ®Õn chç th­¬ng bu«n th× cã thÓ nhËn ®­îc phÇn th­ëng phong phó, mçi ®¹i hiÖp mçi ngµy cã thÓ tiÕp nhËn nhiÖm vô 3 lÇn, trong hµnh tr×nh hé tèng, ®¹i hiÖp cÇn ph¶I b¶o vÖ sù an toµn cña Xe Ngùa, nÕu Xe Ngùa bÞ chÕt, th× sÏ r¬i ra 1 Hçn Nguyªn Linh Lé vµ nhiÖm vô sÏ thÊt b¹i"} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -29,7 +29,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
 		{"ThisActivity:CheckCamp",	{0, szCAMP_TIP} },
-		{"ThisActivity:CheckTaskDaily",	{TSKI_DAILY_COUNT,MAX_DAILY_COUNT,"½ñÌì´óÏÀÒÑ¾­»¤ËÍ3´ÎÁË£¬Ã÷Ìì¼ÌÐøÅ¶","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_DAILY_COUNT,MAX_DAILY_COUNT,"H«m nay ®¹i hiÖp ®· hé tèng 3 lÇn råi, ®îi ngµy mai tiÕp tôc nhÐ.","<"} },
 	},
 	tbActition = 
 	{
@@ -71,8 +71,8 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"ThisActivity:ServerStart",	{nil} },
-		{"NpcFunLib:AddDialogNpc",	{"ÉÌ··",1905,{{1,1865,2755}}} },
-		{"NpcFunLib:AddDialogNpc",	{"ÔËÊäÈË",1904,{{1,1564,2759}}} },
+		{"NpcFunLib:AddDialogNpc",	{"Th­¬ng Bu«n",1905,{{1,1865,2755}}} },
+		{"NpcFunLib:AddDialogNpc",	{"Ng­êi VËn ChuyÓn",1904,{{1,1564,2759}}} },
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -82,14 +82,14 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	szName = "click npc2",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÉÌ··"},
+	tbMessageParam = {"Th­¬ng Bu«n"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"½ÓÊÕ»¤ËÍÈÎÎñ½±Àø",3} },
-		{"SetDialogTitle",	{"´ÓÔËÊäÈËÄÇÀïÄÃ»õ¸øÎÒ£¬ÎÒ¾ÍÖØÉÍÄã"} },
+		{"AddDialogOpt",	{"NhËn phÇn th­ëng nhiÖm vô hé tèng",3} },
+		{"SetDialogTitle",	{"´ÓNg­êi VËn ChuyÓnÄÇÀïÄÃ»õ¸øÎÒ£¬ÎÒ¾ÍÖØÉÍÄã"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -99,7 +99,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	szName = "Click lingfan",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ÉÌµê"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
@@ -107,7 +107,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Âò¼ÓÑª·û",7} },
+		{"AddDialogOpt",	{"Mua Gia HuyÕt Phï",7} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -117,16 +117,16 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	szName = "buy healing bag",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"¼ÓÑª·û",1,1,1,0.02},
+	tbMessageParam = {"Gia HuyÕt Phï",1,1,1,0.02},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=50000},1} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=50000},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
 		{"ThisActivity:CheckCamp",	{0, szCAMP_TIP} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="¼ÓÑª·û",tbProp={6,1,3146,1,0,0},nExpiredTime=10080},1,EVENT_LOG_TITLE,"Âò¼ÓÑª·û"} },
+		{"PlayerFunLib:GetItem",	{{szName="Gia HuyÕt Phï",tbProp={6,1,3146,1,0,0},nExpiredTime=10080},1,EVENT_LOG_TITLE,"Mua Gia HuyÕt Phï"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú

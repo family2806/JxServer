@@ -8,51 +8,51 @@ function main(sel)
 	if (UTask_em == 40*256+50) then 		
 		UTask_emsub03 = GetByte(GetTask(29),3)
 		if (UTask_emsub03 == 0) then 
-			Say("ĞÁÔ±Íâ£ºÔÚÏÂÆ½Éú×îÏ²»¶½á½»½­ºşÏÀ¿Í£¬ÅóÓÑÃÇËÍÁË¸öÍâºÅ½Ğ¡°ÈüÃÏ³¢¡±£¬±¾ÊÇÃıÔŞ£¬¿ÉÊÇ×î½üÓĞÈËËµÔÚÏÂÊÇ¹ÁÃûµöÓş£¬ÔÚÏÂĞÄÖĞÊ®·Ö²»·Ş¡£²»ÖªÅ®ÏÀ¿É·ñÎªÔÚÏÂ½â´ğ¼¸¸öÒÉ»ó£¿", 2, "ÇëÎÊ/L40_V3_Q1", "ÎÒ»¹ÓĞ±ğµÄÊÂ/no")
+			Say("T¹i h¹ b×nh sinh rÊt thİch kÕt giao b»ng h÷u víi hiÖp kh¸ch giang hå, c¸c b»ng h÷u tÆng cho ta ngo¹i hiÖu lµ 'Tr¹i M¹nh Th­êng' qu¶ lµ qu¸ khen. Nh­ng gÇn ®©y cã ng­êi coi t¹i h¹ chØ lµ h­ danh, trong lßng t¹i h¹ v« cïng tøc giËn. ", 2, "Xin hái /L40_V3_Q1", "Ta cßn cã viÖc kh¸c. /no")
 		elseif (UTask_emsub03 == 3) then 
 			L40_V3_Q1()
 		elseif (UTask_emsub03 == 5) then 
 			L40_V3_Q2()
 		elseif ((UTask_emsub03 == 10) and (HaveItem(168) == 0)) then
 			AddEventItem(168)
-			Talk(1,"","Å®ÏÀ²»ÓÃ¿ÍÆø£¬ÄãĞèÒª¾ÍÄÃÈ¥°É")
+			Talk(1,"","N÷ hiÖp ®õng kh¸ch khİ, ng­êi ®ang cÇn thiÕt th× h·y lÊy ®i")
 		else
-			Talk(1,"","ÄÜÓëÅ®ÏÀ×öÅóÓÑÕæÊÇĞÁÄ³µÄÈÙĞÒ.")
+			Talk(1,"","Cã thÓ kÕt giao b»ng h÷u víi n÷ hiÖp nh­ thÕ nµy th× thËt h¹ng phóc cho T©n mç.")
 		end
 	else
-		Talk(1,"","ĞÁÔ±Íâ£ºÔÚÏÂÆ½Éú×îÏ²»¶½á½»½­ºşÏÀ¿Í£¬ÅóÓÑÃÇËÍÁË¸öÍâºÅ£¬½Ğ×ö¡°ÈüÃÏ³¢¡±£¬ÊµÔÚÊÇÃıÔŞÁË¡£")
+		Talk(1,"","T¹i h¹ b×nh sinh rÊt thİch kÕt giao b»ng h÷u víi hiÖp kh¸ch giang hå, c¸c b»ng h÷u tÆng cho ta ngo¹i hiÖu lµ 'Tr¹i M¹nh Th­êng' qu¶ lµ qu¸ khen.")
 	end
 end;
 
 function no()
-	Talk(1,"","ÄÇÎÒ²»Âé·³Å®ÏÀÁË!")
+	Talk(1,"","VËy t¹i h¹ kh«ng lµm phiÒn n÷a hiÖp n÷a!")
 end;
 
 function L40_V3_Q1()
-	Say("ĞÁÔ±Íâ£ºÃÏ³¢¾ıÊÇÄÄ¹úÈË°¡£¿", 4, "³ş¹ú/f1", "Æë¹ú/L40_V3_Q2", "ÕÔ¹ú/f1", "Îº¹ú/f1")
+	Say("M¹nh Th­êng Qu©n lµ ng­êi n­íc nµo nhØ?", 4, "Së quèc /f1", "TÒ quèc /L40_V3_Q2", "TriÖu quèc /f1", "Ngôy quèc /f1")
 end;
 
 function f1()
-	Talk(1,"","ĞÁÔ±Íâ£ººÃÏñ²»¶Ô°É£¿ÎÒÉÏ´ÎÕâÃ´Ëµ»¹±»±ğÈË³ÜĞ¦ÁËÒ»·¬¡£")
+	Talk(1,"","H×nh nh­ lµ kh«ng ph¶i? LÇn tr­íc ta còng nãi nh­ thÕ nµy bŞ ng­êi kh¸c c­êi. ")
 	SetTask(29, SetByte(GetTask(29),3,3))
 end;
 
 function L40_V3_Q2()
-	Say("ĞÁÔ±Íâ£ºÅ¶£¬Ô­À´ËûÊÇÆë¹úÈË°¡£¡Õ½¹úËÄ¹«×ÓÀï£¬³ıÁËÃÏ³¢¾ı¡¢ĞÅÁê¾ıºÍÆ½Ô­¾ıÒÔÍâ£¬ÄãÖª²»ÖªµÀ»¹ÓĞÒ»¸öÊÇË­Ñ½£¿", 4, "ÁúÑô¾ı/f2", "¾¸¹ù¾ı/f2", "´ºÉê¾ı/L40_V3_prise", "ÉÙÔ­¾ı/f2")
+	Say("Oa! Th× ra lµ ng­êi n­íc TÒ. Thêi ChiÕn Quèc cã 4 danh nh©n: M¹nh Th­êng Qu©n, Tİn L¨ng V­¬ng vµ B×nh Nguyªn Qu©n. Cßn mét ng­êi n÷a lµ ai nhØ?", 4, "Long D­¬ng Qu©n /f2", "TŞnh Qu¸ch Qu©n /f2", "Xu©n Th©n Qu©n /L40_V3_prise", "ThiÕu Nguyªn Qu©n /f2")
 end;
 
 function f2()
-	Talk(1,"","ĞÁÔ±Íâ£ººÃÏñ²»¶Ô°É£¿ÎÒÔõÃ´Ã»ÌıËµ¹ıÄØ£¿")
+	Talk(1,"","H×nh nh­ kh«ng ®óng! Ta ch­a nghe qua bao giê!")
 	SetTask(29, SetByte(GetTask(29),3,5))
 end;
 
 function L40_V3_prise()
-	Talk(4, "select", "¶ÔÁË£¬ÔõÃ´ÎÒÃ»Ïëµ½ÄØ£¿ÌıËµÒÔÇ°ÃÏ³¢¾ıÓĞ3000Ê³¿Í£¬ÎÒËäÈ»Ã»ÓĞÕâÑùµÄÆøÆÇ£¬µ«ÊÇºÜÏ²»¶½á½»ÏñÅ®ÏÀÕâÑùµÄÅóÓÑ¡£Å®ÏÀĞèÒªÎÒ°ïÖúÂğ?", "ÎÒÕıÔÚÕÒ±Ìçô½äÖ¸ ", "×ÏÃ§²»ÔçËµ£¬ÎÒÓĞÒ»¸ö±Ìçô½äÖ¸£¬ËÍ¸øÄã°É!", "§a¶àĞ»Ô±Íâ! ")
+	Talk(4, "select", "§óng råi! Sao ta l¹i kh«ng nghÜ ra nhØ? Nghe nãi n¨m x­a nhµ M¹nh Th­êng Qu©n cã 3000 thùc kh¸ch, ta tuy kh«ng cã khİ ph¸ch nh­ thÕ, nh­ng rÊt thİch kÕt giao b»ng h÷u víi n÷ hiÖp nh­ thÕ nµy! N÷ hiÖp cã cÇn ta gióp ®ì g× kh«ng?", "Ta ®ang t×m Bİch Tû Giíi ChØ ", "Sao kh«ng nãi sím! Ta cã mét chiÕc Bİch Tû Giíi ChØ ®©y! TÆng cho n÷ hiÖp!", "§a t¹ Viªn ngo¹i! ")
 end;
 
 function select()
 	AddEventItem(168)
-Msg2Player("µÃµ½±Ìçô½äÖ¸¡£")
+Msg2Player("T×m ®­îc nhÉn M· n·o ")
 	SetTask(29, SetByte(GetTask(29),3,10))
-	AddNote("ÔÚ³É¶¼ĞÁÔ±Íâ´¦ÕÒµ½Âêè§½äÖ¸. ")
+	AddNote("ë chç T©n viªn ngo¹i t¹i Thµnh §« t×m ®­îc nhÉn M· n·o. ")
 end;

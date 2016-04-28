@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Say("œÂ—Ù<°™°™>Œ‰µ±≈…", 0)
+Say("T≠¨ng D≠¨ng <---->V‚ ßang ph∏i", 0)
 
 end;

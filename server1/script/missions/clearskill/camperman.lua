@@ -1,5 +1,5 @@
 function main()
-	Say("ÄãÔİÊ±ÒªÈëÄÄ·½£¿", 4, "ÕıÒå·½/ChangeCamp", "Ğ°¶ñ·½/ChangeCamp", "É±ÊÖ·½/ChangeCamp", "ÔİÊ±²»»»/OnCancel");
+	Say("B¹n muèn t¹m thêi theo phe nµo?", 4, "Phe chİnh nghÜa /ChangeCamp", "Phe tµ ¸c /ChangeCamp", "Phe s¸t thñ /ChangeCamp", "T¹m thêi kh«ng ®æi /OnCancel");
 end;
 
 function ChangeCamp(nSel)

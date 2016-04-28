@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("»•¡Ÿ∞≤", 0)
+Say("ßi L©m An", 0)
 
 end;

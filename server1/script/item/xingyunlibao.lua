@@ -5,30 +5,30 @@
 TB_LIBAO = 
 {
 	1000000,--×Ü¸ÅÂÊ
-	{0.00125,	{"¾ÅÎ²°×ºü×°",					0,2,9,10,2,}}, --¾ÅÎ²°×ºüôÃ[Ë®ÊôÐÔ]
-	{0.00125,	{"¾ÅÎ²°×ºü×°",					0,2,9,10,3,}}, --¾ÅÎ²°×ºüôÃ[»ðÊôÐÔ]
-	{0.00125,	{"è¯ÁúÅÛ",							0,2,6,10,2,}}, --è¯ÁúÅÛ[Ë®ÊôÐÔ]
-	{0.00125,	{"è¯ÁúÅÛ",							0,2,6,10,3,}}, --è¯ÁúÅÛ[»ðÊôÐÔ]
-	{0.00125,	{"Ìì²ÏÑü´ø",						0,6,0,10,2,}}, --Ìì²ÏÑü´ø[Ë®ÊôÐÔ]
-	{0.00125,	{"Ìì²ÏÑü´ø",						0,6,0,10,3,}}, --Ìì²ÏÑü´ø[»ðÊôÐÔ]
-	{0.00125,	{"°×½ðÑü´ø",						0,6,1,10,2,}}, --°×½ðÑü´ø[Ë®ÊôÐÔ]
-	{0.00125,	{"°×½ðÑü´ø",						0,6,1,10,3,}}, --°×½ðÑü´ø[»ðÊôÐÔ]
-	{0.15,		{"ÏÉ²ÝÂ¶",							6,1,71,1,}},	 --ÏÉ²ÝÂ¶
-	{0.1796,	{"¹ð»¨¾Æ",							6,1,125,1,}},	 --¹ð»¨¾Æ
-	{0.0001,	{"°²°î±ù¾§Ê¯ÏîÁ´",		0,164,}},			 --°²°î ¨C ±ù¾§Ê¯ÏîÁ´
-	{0.0001,	{"°²°î¾Õ»¨Ê¯½äÖ¸",		0,165,}}, 		 --°²°î ¨C ¾Õ»¨Ê¯½äÖ¸
-	{0.0001,	{"°²°î¼¦ÑªÊ¯½äÖ¸",		0,167,}},			 --°²°î ¨C ¼¦ÑªÊ¯½äÖ¸
-	{0.0001,	{"°²°îÌï»ÆÊ¯ÓñÅå",		0,166,}}, 		 --°²°î ¨C Ìï»ÆÊ¯ÓñÅå
-	{0.0004,	{"¶¨¹úÎÙÉ°·¢¹Ú",			0,160,}}, 		 --¶¨¹ú ¨C ÎÙÉ°·¢¹Ú
-	{0.0004,	{"¶¨¹úÇàÉ´³¤ÉÀ",			0,159,}}, 		 --¶¨¹ú ¨C ÇàÉ´³¤ÉÀ
-	{0.0004,	{"¶¨¹úÇàÉ´³¤ÉÀ",			0,162,}},			 --¶¨¹ú ¨C ×ÏÌÙ»¤Íó
-	{0.0004,	{"¶¨¹úÒø²ÏÑü´ø",			0,163,}},			 --¶¨¹ú ¨C Òø²ÏÑü´ø
-	{0.0004,	{"¶¨¹ú³à¾îÈíÑ¥",			0,161,}},			 --¶¨¹ú ¨C ³à¾îÈíÑ¥
-	{0.0002,	{"ÕÕÒ¹ÓñÊ¨×Ó",					0,10,5,10,}},	 --ÕÕÒ¹ÓñÊ¨×Ó80¼¶Âí
-	{0.0002,	{"³àÍÃ",								0,10,5,2,}},	 --³àÍÃ80¼¶Âí
-	{0.0002,	{"ÎäÁÖÃÜ¼®",						6,1,26,1,}},	 --ÎäÁÖÃÜ¼®
-	{0.0002,	{"Ï´Ëè¾­",							6,1,22,1,}},	 --Ï´Ëè¾­
-	{0.65,		{"Õ½¹¦»¨",							6,1,1414,1,}}	 --Õ½¹¦»¨
+	{0.00125,	{"Cöu VÜ B¹ch Hå trang",					0,2,9,10,2,}}, --¾ÅÎ²°×ºüôÃ[Ë®ÊôÐÔ]
+	{0.00125,	{"Cöu VÜ B¹ch Hå trang",					0,2,9,10,3,}}, --¾ÅÎ²°×ºüôÃ[»ðÊôÐÔ]
+	{0.00125,	{"TuyÒn Long bµo",							0,2,6,10,2,}}, --TuyÒn Long bµo[Ë®ÊôÐÔ]
+	{0.00125,	{"TuyÒn Long bµo",							0,2,6,10,3,}}, --TuyÒn Long bµo[»ðÊôÐÔ]
+	{0.00125,	{"Thiªn Tµm Yªu §¸i",						0,6,0,10,2,}}, --Thiªn Tµm Yªu §¸i[Ë®ÊôÐÔ]
+	{0.00125,	{"Thiªn Tµm Yªu §¸i",						0,6,0,10,3,}}, --Thiªn Tµm Yªu §¸i[»ðÊôÐÔ]
+	{0.00125,	{"B¹ch Kim Yªu §¸i",						0,6,1,10,2,}}, --B¹ch Kim Yªu §¸i[Ë®ÊôÐÔ]
+	{0.00125,	{"B¹ch Kim Yªu §¸i",						0,6,1,10,3,}}, --B¹ch Kim Yªu §¸i[»ðÊôÐÔ]
+	{0.15,		{"Tiªn Th¶o Lé ",							6,1,71,1,}},	 --Tiªn Th¶o Lé 
+	{0.1796,	{"QuÕ Hoa Töu",							6,1,125,1,}},	 --QuÕ Hoa Töu
+	{0.0001,	{"An Bang B¨ng Tinh Th¹ch H¹ng Liªn",		0,164,}},			 --°²°î ¨C ±ù¾§Ê¯ÏîÁ´
+	{0.0001,	{"An Bang Cóc Hoa Th¹ch Giíi ChØ",		0,165,}}, 		 --°²°î ¨C ¾Õ»¨Ê¯½äÖ¸
+	{0.0001,	{"An Bang Kª HuyÕt Th¹ch Giíi ChØ ",		0,167,}},			 --°²°î ¨C ¼¦ÑªÊ¯½äÖ¸
+	{0.0001,	{"An Bang §iÒn Hoµng Th¹ch Ngäc Béi",		0,166,}}, 		 --°²°î ¨C Ìï»ÆÊ¯ÓñÅå
+	{0.0004,	{"§Þnh Quèc ¤ Sa Ph¸t Qu¸n",			0,160,}}, 		 --¶¨¹ú ¨C ÎÙÉ°·¢¹Ú
+	{0.0004,	{"§Þnh Quèc Tö §»ng Hé uyÓn",			0,159,}}, 		 --¶¨¹ú ¨C ÇàÉ´³¤ÉÀ
+	{0.0004,	{"§Þnh Quèc Tö §»ng Hé uyÓn",			0,162,}},			 --¶¨¹ú ¨C ×ÏÌÙ»¤Íó
+	{0.0004,	{"§Þnh Quèc Ng©n Tµm Yªu ®¸i",			0,163,}},			 --¶¨¹ú ¨C Òø²ÏÑü´ø
+	{0.0004,	{"§Þnh Quèc XÝch Quyªn NhuyÔn Ngoa",			0,161,}},			 --¶¨¹ú ¨C ³à¾îÈíÑ¥
+	{0.0002,	{"ChiÕu D¹ Ngäc S­ Tö ",					0,10,5,10,}},	 --ChiÕu D¹ Ngäc S­ Tö 80¼¶Âí
+	{0.0002,	{"XÝch Thè ",								0,10,5,2,}},	 --XÝch Thè 80¼¶Âí
+	{0.0002,	{"Vâ L©m MËt TÞch",						6,1,26,1,}},	 --Vâ L©m MËt TÞch
+	{0.0002,	{"TÈy Tñy Kinh",							6,1,22,1,}},	 --TÈy Tñy Kinh
+	{0.65,		{"B«ng hoa chiÕn c«ng",							6,1,1414,1,}}	 --B«ng hoa chiÕn c«ng
 }
 
 function main(sel)
@@ -37,11 +37,11 @@ function main(sel)
 		return 0
 	end;
 	if (GetLevel() < 50) then
-		Msg2Player("50¼¶ÒÔÉÏÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.");
+		Msg2Player("Ng­êi ch¬i cÊp 50 trë lªn ®· n¹p thÎ míi cã thÓ sö dông.");
 		return 1;
 	end;
 	if ( CalcFreeItemCellCount() < 12 ) then
-		Say("ÇëÖØÐÂ°²ÅÅ×°±¸È·±£ÓÐ12¸ö¿ÕÎ».",0);
+		Say("Xin s¾p xÕp l¹i hµnh trang ®Ó ®¶m b¶o cã 12 « trèng.",0);
 	return 1;
 	end
 	local SumPe =  TB_LIBAO[1];
@@ -67,7 +67,7 @@ function award_item(item)
 	elseif getn(item) == 6 then
 		nidx = AddQualityItem(2,item[2], item[3], item[4], item[5],item[6],255,-1,-1,-1,-1,-1,-1)
 	end
-	Msg2Player("Äú»ñµÃÒ»¸ö"..item[1]);
+	Msg2Player("B¹n nhËn ®­îc mét"..item[1]);
 	WriteLog(format("[xingyunlibao]\t date:%s \t Account:%s \t Name:%s \t GetItem:%s \t",GetLocalDate("%Y-%m-%d %H:%M:%S"),GetAccount(),GetName(),item[1]));
 
 end

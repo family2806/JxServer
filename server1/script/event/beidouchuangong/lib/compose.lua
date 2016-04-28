@@ -34,7 +34,7 @@ function  BeiDouChuanGong_ComposeClass:ConsumeMaterial(tbMaterial)
 	return 1;
 end
 function  BeiDouChuanGong_ComposeClass:GetMaterialList(tbMaterial)
-	local szList = format("%-10s%s","ËùĞèÔ­ÁÏ","ËùĞèÊıÁ¿")
+	local szList = format("%-10s%s","Nguyªn liÖu cÇn thiÕt","Sè l­îng cÇn thiÕt")
 	local i;
 	for i=1,getn(tbMaterial) do
 		szList = format("%s<enter>%-10s%d",szList,tbMaterial[i].szName, tbMaterial[i].nCount)
@@ -43,19 +43,19 @@ function  BeiDouChuanGong_ComposeClass:GetMaterialList(tbMaterial)
 end
 function  BeiDouChuanGong_ComposeClass:Compose(tbMaterial,nMoney,Awardfun,...)
 	if self:CheckMaterial(tbMaterial) ~=1 then
-		Say(format("ÄúËÆºõÃ»ÓĞ´ø¹»Ô­ÁÏ? ±ğ¿´ÎÒÀÏ¾Í´òËãÃÉÎÒ, ÒªÇó: \n%s", BeiDouChuanGong_ComposeClass:GetMaterialList(tbMaterial)), 1 , "Õæ²»ºÃÒâË¼, ÎÒ´ı»áÔÙÀ´./OnCancel")
+		Say(format("§¹i hiÖp d­êng nh­ kh«ng mang ®ñ nguyªn liÖu? §õng thÊy ta giµ råi ®Şnh lõa g¹t h¶, yªu cÇu: \n%s", BeiDouChuanGong_ComposeClass:GetMaterialList(tbMaterial)), 1 , "ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel")
 		return 0;
 	end
 	if nMoney > 0 and Pay(nMoney) == 0 then
-		Say(format("²»ĞĞ, Ç®²»¹», ÒªÓĞ<color=yellow>%d<color> Á½",nMoney),0)
+		Say(format("Kh«ng ®­îc råi, kh«ng mang theo ®ñ tiÒn, cÇn cã <color=yellow>%d<color> l­îng",nMoney),0)
 		return 0;
 	elseif nMoney ~= 0 then
-		Msg2Player(format("ĞèÒª <color=yellow>%d<color> Á½",nMoney))
+		Msg2Player(format("CÇn <color=yellow>%d<color> l­îng",nMoney))
 	end
 
 	if self:ConsumeMaterial(tbMaterial) ~= 1 then
 		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
-		Msg2Player("ÖÆ×÷Ê§°Ü, ²¿·ÖÔ­ÁÏ¶ªÊ§.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	if Awardfun then

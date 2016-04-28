@@ -88,7 +88,7 @@ function Soldier2010:SongjinSoldier(nPlayerIdx)
 	local nOldIdx = PlayerIndex;
 	PlayerIndex = nPlayerIdx;
 	if (PlayerFunLib:CheckBT_PL_BATTLEPOINT(3000, ">=") == 1) then
-		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSongjinSoldier, format("%s\t%s","Õ½Ê¿·þ»î¶¯","ËÎ½ð»ýÀÛµãÔÚ3000ÒÔÉÏÓÐ½±Àø"));
+		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSongjinSoldier, format("%s\t%s","Ho¹t ®éng tÊm ¸o chiÕn sü","PhÇn th­ëng khi cã ®iÓm tÝch lòy Tèng Kim trªn 3000"));
 	end
 	PlayerIndex = nOldIdx;
 end
@@ -96,7 +96,7 @@ end
 function Soldier2010:MonsterDrop(nNpcIndex, nPlayerIndex)
 	if (NpcFunLib:CheckNormalMonster("10,20,30,40,50,60,70,80,90", nNpcIndex) == 1) then
 		for i=1,getn(FreedomEvent2010.tbMonsterDrop) do
-			tbDropTemplet:GiveAwardByList(nNpcIndex, nPlayerIndex, FreedomEvent2010.tbMonsterDrop[i], format("%s\t%s","Õ½Ê¿·þ»î¶¯","ÆÕÍ¨É¢¹Ö"), 1);
+			tbDropTemplet:GiveAwardByList(nNpcIndex, nPlayerIndex, FreedomEvent2010.tbMonsterDrop[i], format("%s\t%s","Ho¹t ®éng tÊm ¸o chiÕn sü","Qu¸i phæ th«ng r¬i"), 1);
 		end
 	end
 end
@@ -113,7 +113,7 @@ end
 
 function Soldier2010:UseSoldierBag()
 	if (PlayerFunLib:CheckFreeBagCell(1,"default") == 1) then
-		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSoldierToolBag, format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","¹¤¾ß°ü"));
+		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSoldierToolBag, format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","Tói Dông Cô"));
 		return 1;
 	end
 	return 0;
@@ -123,11 +123,11 @@ function Soldier2010:UseSoldierStick()
 	local nCurExp = tbSoldier_TaskGroup:GetStickExp();
 	local nTransLife = ST_GetTransLifeCount();
 	if (nCurExp >= (nTransLife+1)*self.SOLDIER_STICK_EXP_LIMIT) then
-		Talk(1, "", format("Í¨¹ýÊ¹ÓÃ [%s] ×î¶àÖ»ÓÐ %s ¾­Ñé","³£É½¹÷",format("<color=green>%0.f<color=green>",(nTransLife+1)*self.SOLDIER_STICK_EXP_LIMIT*100000)));
+		Talk(1, "", format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm","ChiÕc gËy Tr­êng S¬n",format("<color=green>%0.f<color=green>",(nTransLife+1)*self.SOLDIER_STICK_EXP_LIMIT*100000)));
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddStickExp(500);
-	PlayerFunLib:AddExp(50000000,0,format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","³£É½¹÷"));
+	PlayerFunLib:AddExp(50000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc gËy Tr­êng S¬n"));
 	return 1;
 end
 
@@ -137,11 +137,11 @@ function Soldier2010:UseSoldierCot()
 	end
 	local nCurExp = tbSoldier_TaskGroup:GetCotExp();
 	if (nCurExp >= self.SOLDIER_COT_EXP_LIMIT) then
-		Talk(1, "", format("Í¨¹ýÊ¹ÓÃ [%s] ×î¶àÖ»ÄÜµÃµ½ %s ¾­Ñé","³£É½Íø",format("<color=green>%d<color=green>",self.SOLDIER_COT_EXP_LIMIT*100000)));
+		Talk(1, "", format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm","ChiÕc vâng Tr­êng S¬n",format("<color=green>%d<color=green>",self.SOLDIER_COT_EXP_LIMIT*100000)));
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddCotExp(150);
-	PlayerFunLib:AddExp(15000000,0,format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","³£É½Íø"));
+	PlayerFunLib:AddExp(15000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc vâng Tr­êng S¬n"));
 	return 1;
 end
 
@@ -152,11 +152,11 @@ function Soldier2010:UseSoldierHat()
 	
 	local nCurExp = tbSoldier_TaskGroup:GetHatExp();
 	if (nCurExp >= self.SOLDIER_HAT_EXP_LIMIT) then
-		Talk(1, "", format("Í¨¹ýÊ¹ÓÃ [%s] ×î¶àÖ»ÄÜµÃµ½ %s ¾­Ñé","Õ½Ê¿Ã±",format("<color=green>%d<color=green>",self.SOLDIER_HAT_EXP_LIMIT*100000)));
+		Talk(1, "", format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm","ChiÕc Mò ChiÕn SÜ",format("<color=green>%d<color=green>",self.SOLDIER_HAT_EXP_LIMIT*100000)));
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddHatExp(8);
-	PlayerFunLib:AddExp(800000,0,format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","Õ½Ê¿Ã±"));
+	PlayerFunLib:AddExp(800000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc Mò ChiÕn SÜ"));
 	return 1;
 end
 
@@ -167,11 +167,11 @@ function Soldier2010:UseSoldierShoes()
 	local nCurExp = tbSoldier_TaskGroup:GetShoesClothExp();
 
 	if (nCurExp >= self.SOLDIER_SHOES_CLOTH_EXP_LIMIT) then
-		Talk(1, "", format("Í¨¹ýÊ¹ÓÃ [%s] ×î¶àÖ»ÄÜµÃµ½ %s ¾­Ñé",format("%s ºÍ %s","²¿¶ÓÐ¬","Õ½Ê¿·þ"),format("<color=green>%0.f<color=green>",self.SOLDIER_SHOES_CLOTH_EXP_LIMIT*100000)));
+		Talk(1, "", format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm",format("%s vµ %s","§«i Giµy Bé §éi","TÊm ¸o ChiÕn SÜ"),format("<color=green>%0.f<color=green>",self.SOLDIER_SHOES_CLOTH_EXP_LIMIT*100000)));
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddShoesClothExp(20);
-	PlayerFunLib:AddExp(2000000,0,format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","²¿¶ÓÐ¬"));
+	PlayerFunLib:AddExp(2000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","§«i Giµy Bé §éi"));
 	return 1;
 end
 
@@ -187,7 +187,7 @@ function Soldier2010:UseSoldierCloth()
 	local nClothCount = tbSoldier_TaskGroup:GetClothCount();
 
 	if (nCurExp >= self.SOLDIER_SHOES_CLOTH_EXP_LIMIT) then
-		Talk(1, "", format("Í¨¹ýÊ¹ÓÃ [%s] ×î¶àÖ»ÄÜµÃµ½ %s ¾­Ñé",format("%s ºÍ %s","²¿¶ÓÐ¬","Õ½Ê¿·þ"),format("<color=green>%0.f<color=green>",self.SOLDIER_SHOES_CLOTH_EXP_LIMIT*100000)));
+		Talk(1, "", format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm",format("%s vµ %s","§«i Giµy Bé §éi","TÊm ¸o ChiÕn SÜ"),format("<color=green>%0.f<color=green>",self.SOLDIER_SHOES_CLOTH_EXP_LIMIT*100000)));
 		return 0;
 	else
 		if (mod((nClothCount+1),50) == 0) then
@@ -198,7 +198,7 @@ function Soldier2010:UseSoldierCloth()
 	end
 	if (nExp > 0) then	
 		tbSoldier_TaskGroup:AddShoesClothExp(nExp);
-		PlayerFunLib:AddExp(nExp*100000,0,format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ %s","Õ½Ê¿·þ"));
+		PlayerFunLib:AddExp(nExp*100000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","TÊm ¸o ChiÕn SÜ"));
 	end
 	local tbItem = FreedomEvent2010.tbClothAwardNormal;
 	if (mod((nClothCount+1),50) == 0) then
@@ -206,7 +206,7 @@ function Soldier2010:UseSoldierCloth()
 	end
 	tbSoldier_TaskGroup:AddClothCount(1);
 	nClothCount = nClothCount + 1;
-	tbAwardTemplet:GiveAwardByList(tbItem, format("Õ½Ê¿·þ»î¶¯\tÊ¹ÓÃ´Î %d %s", nClothCount, "Õ½Ê¿·þ"));
+	tbAwardTemplet:GiveAwardByList(tbItem, format("Ho¹t ®éng tÊm ¸o chiÕn sü \tSö dông lÇn %d %s", nClothCount, "TÊm ¸o ChiÕn SÜ"));
 	return 1;
 end
 

@@ -3,7 +3,7 @@
 
 function OnTimer()
 	StopTimer()
-	Msg2Player("±¦µ¶ÒÑ¾­ĞŞºÃÁË! ")
-	AddNote("±¦µ¶ÒÑ¾­ĞŞºÃÁË! Ìú½³ÕıÔÚµÈÄãÈ¥ÄÃ! ")
+	Msg2Player("B¶o ®ao ®· söa xong råi! ")
+	AddNote("B¶o ®ao ®· söa xong råi! Thî rÌn ®ang ®îi b¹n ®Õn nhËn! ")
 	SetTask(19, 6)
 end;

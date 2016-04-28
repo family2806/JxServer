@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(14,"","Ò»Ìì²»³ªÎ÷É½µ÷£¬Éú»îÒ²ÎŞÎ¶£¬","ÄÄÖÖÓãÊÇ´ºÌìµÄÓã?","°×¹¬ÓãÊÇ´ºÌìµÄÓã","Ê²Ã´ÓãÊÇÏÄÌìµÄÓã?","½ğÓãÊÇÏÄÌìµÄÓã¡£","Ê²Ã´ÓãÊÇÇïÌìµÄÓã?","Ğ¡ÓÎÓãÊÇÇïÌìµÄÓã ","Ê²Ã´ÓãÊÇ¶¬ÌìµÄÓã?","Ê¯ÂİÓãÊÇ¶¬ÌìµÄÓã! ","Ê²Ã´ÓãÔÚË®Àï?","±ÈÄ¿ÓãÔÚË®Àï! ","Ê²Ã´ÓãÔÚ°¶ÉÏ","öÔÓãÊÇÔÚ°¶ÉÏµÄÓã ","»Ø´ğµÄºÜºÃ£¬¹ş¹ş¹ş! ")
+	Talk(14,"","Mét ngµy kh«ng h¸t ®iÖu T©y S¬n, cuéc sèng thËt v« vŞ! ","C¸ g× lµ c¸ mïa xu©n?","B¹ch Cung Ng­ lµ c¸ mïa xu©n! ","C¸ c¸ g× lµ c¸ mïa hÌ?","C¸ chĞp vµng lµ c¸ mïa hÌ! ","C¸ mïa thu lµ c¸ g×?","TiÓu Du Ng­ lµ c¸ mïa thu! ","C¸ mïa ®«ng lµ c¸ g×?","Th¹ch L« Ng­ lµ c¸ mïa ®«ng! ","C¸ g× ë trong n­íc?","Tû Môc Ng­ lµ c¸ trong n­íc! ","C¸ g× lµ c¸ trªn bê?","C¸ l« lµ c¸ trªn bê! ","§¸p rÊt hay! §¸p rÊt hay! Ha ha ha! ")
 end;

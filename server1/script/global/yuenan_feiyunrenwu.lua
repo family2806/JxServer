@@ -70,17 +70,17 @@ end;
 --	return value: yes return 1; no return 0;
 function v_fy_awardcheck(nLevel)
 	if (GetLevel() < nLevel) then
-		Say("Äã»¹Î´´ïµ½µÈ¼¶ÒªÇó!", 0);
+		Say("B¹n ch­a ®¹t ®¼ng cÊp yªu cÇu!", 0);
 		return 0;
 	end;
 	
 	if (v_fy_is_got(nLevel) == 0) then
-		Say("ÄúÒÑÁìÈ¡½±Àø£¬²»ÄÜ¼ÌĞøÁìÈ¡ÁË!", 0);
+		Say("B¹n ®· nhËn phÇn th­ëng, kh«ng thÓ nhËn thªm n÷a!", 0);
 		return 0;
 	end;
 	
 	if (v_fy_is_newrole() == 0) then
-		Say("Äú²»ÊÇ´ÓĞÂÕËºÅÍæ£¬²»ÄÜÁì½±.", 0);
+		Say("B¹n kh«ng ph¶i ch¬i tõ tµi kho¶n míi, kh«ng thÓ nhËn th­ëng.", 0);
 		return 0;
 	end;
 	return 1;
@@ -96,19 +96,19 @@ end;
 
 --	field level 60:	Prize when a role level up at 60:
 function v_fy_60_entrance()
-	Say("½ğ±øÊÆÁ¦ÃÍÈçºéË®£¬ÏåÑô¼´½«Ê§ÊØ£¡»ÊÉÏÒÑÕÙ¼¯¸÷µØÓ¢ĞÛÒåÊ¿ÉÌÌ¸£¬Í¬Ê±ËÍÒ»¼şÖªÒô×°±¸¸ø¸÷Î»ÒÑ´ïµ½60¼¶µÄÓ¢ĞÛºÀ½Ü¡£", 2, 
-	"ÁìÈ¡60¼¶½±Àø/v_fy_60_next",
-	"Ë³±ãÂ·¹ı¿´¿´¶øÒÑ!/no");
+	Say("Kim binh thÕ m¹nh nh­ th¸c lò, T­¬ng D­¬ng s¾p thÊt thñ!, Hoµng Th­îng ®· tô häp anh hïng nghÜa sü kh¾p n¬i bµn b¹c tİnh kÕ, ®ång thêi ban tÆng 1 mãn trang bŞ tri ©n c¸c anh hïng hµo kiÖt ®¹t ®Õn cÊp 60.", 2, 
+	"NhËn phÇn th­ëng cÊp 60/v_fy_60_next",
+	"Nh©n tiÖn ghĞ xem th«i!/no");
 end;
 
 function v_fy_60_next()
 	local tab_Content = {
-		"ÎÒÏëÁì½äÖ¸/v_fy_60_ring",
-		"ÎÒÏëÁìÈ¡ÓñÅå (ÏãÄÒ)/v_fy_60_yu",
-		" »¤Éí·û(ÏîÁ´)/v_fy_60_necklace",
-		"Àë¿ª/no"
+		"Ta muèn nhËn Giíi chØ/v_fy_60_ring",
+		"Ta muèn nhËn ngäc béi (h­¬ng nang)/v_fy_60_yu",
+		" Hé th©n phï (H¹ng liªn)/v_fy_60_necklace",
+		"Rêi khái/no"
 	};
-	Say("ÄãÏëÁìÈ¡Ê²Ã´½±Àø?", getn(tab_Content), tab_Content);
+	Say("Ng­¬i muèn nhËn phÇn th­ëng g×?", getn(tab_Content), tab_Content);
 end;
 
 function v_fy_60_ring()	--ÁìÈ¡60¼¶µÄ½äÖ¸
@@ -119,7 +119,7 @@ function v_fy_60_ring()	--ÁìÈ¡60¼¶µÄ½äÖ¸
 	local nSeries = GetSeries() + 1;
 	local Index1 = random(1, getn(tab_vn_fy_ring[nSeries]));
 	local Index2 = random(1, getn(tab_vn_fy_ring[nSeries][Index1]));
-	local str = "Äú»ñµÃ1 <color=yellow>ËÕÄ¸ÂÌ½äÖ¸?color>";
+	local str = "B¹n nhËn ®­îc 1 <color=yellow>Tæ MÉu Lôc Giíi ChØ<color>";
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 60);
 	AddItemEx(4,tab_vn_fy_ring[nSeries][Index1][Index2],0, 0,3,0, 6,0,200, 6,6,6,6,0,0)
 	Say(str, 0);
@@ -142,13 +142,13 @@ function v_fy_60_necklace()	--ÁìÈ¡60¼¶µÄ»¤Éí·û(ÏîÁ´)
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 60);
 	local szItemName;
 	if (nSex == 0) then
-		szItemName = "çúçê»¤Éí·û";
+		szItemName = "Hæ Ph¸ch Hé Th©n phï ";
 		AddItemEx(4,tab_award[nSeries][Index1][Index2],0, 0,4,1, 6,0,200, 6,6,6,6,0,0);
 	elseif (nSex == 1) then	-- Èç¹ûÊÇ¸öÅ®½ÇÉ«
-		szItemName = "ÂÌËÉÊ¯ÏîÁ´";
+		szItemName = "Lôc Tïng Th¹ch H¹ng Liªn";
 		AddItemEx(4,tab_award[nSeries][Index1][Index2],0, 0,4,0, 6,0,200, 6,6,6,6,0,0);
 	end;
-	local str = "Äú»ñµÃ <color=yellow>"..szItemName.."<color>";
+	local str = "B¹n nhËn ®­îc <color=yellow>"..szItemName.."<color>";
 	Say(str, 0);
 	Msg2Player(str);
 end;
@@ -170,52 +170,52 @@ function v_fy_60_yu()	--ÁìÈ¡60¼¶µÄÏîÁ´
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 60);
 	local szItemName;
 	if (nSex == 0) then
-		szItemName = "ÇàÓñÓñÅå";
+		szItemName = "Thanh Ngäc Ngäc Béi ";
 		AddItemEx(4,tab_award[nSeries][Index1][Index2],0, 0,9,1, 6,2,200, 6,6,6,6,0,0)
 	elseif (nSex == 1) then	-- Èç¹ûÊÇ¸öÄĞ½ÇÉ«
-		szItemName = "×ÏËÕÏãÄÒ";
+		szItemName = "Tö T« H­¬ng Nang";
 		AddItemEx(4,tab_award[nSeries][Index1][Index2],0, 0,9,0, 6,0,200, 6,6,6,6,0,0)
 	end;
-	local str = "Äú»ñµÃ<color=yellow>"..szItemName.."<color>";
+	local str = "B¹n nhËn ®­îc <color=yellow>"..szItemName.."<color>";
 	Say(str, 0);
 	Msg2Player(str);
 end;
 
 --	field level 60:	Prize when a role level up at 90:
 function v_fy_90_entrance()
-	Say("½ğ±øÆøÊÆÃÍÈçºéË®£¬ÏåÑô¼´½«Ê§ÊØ£¡»ÊÉÏÕÙ¼¯Ó¢ĞÛÏÀÊ¿¾È¹ú£¬Í¬Ê±ËÍ1¼şÀñÎï¸øÒÑ´ï90¼¶µÄÓ¢ĞÛºÀ½Ü.", 2, 
-	"ÁìÈ¡90¼¶½±Àø/v_fy_90_next",
-	"Ë³±ãÀ´¿´¿´!/no");
+	Say("Kim binh thÕ m¹nh nh­ th¸c lò, T­¬ng D­¬ng s¾p thÊt thñ! Hoµng Th­îng kªu gäi c¸c anh hïng nghÜa sü hiÖp søc cøu quèc, ®ång thêi ban tÆng 1 mãn lÔ vËt cho c¸c anh hïng hµo kiÖt ®¹t ®Õn cÊp 90.", 2, 
+	"NhËn phÇn th­ëng cÊp 90/v_fy_90_next",
+	"Nh©n tiÖn ghĞ xem th«i!/no");
 end;
 
 v_fy_90_tab_weapon = {
-	["cuiyan"] = {"´ó·çµ¶", "ÍÌÈÕÕ¶"},
-	["emei"] = {"ĞşÌú½£(¶ëÃ¼½£)", "ĞşÌú½£ (¶ëÃ¼Æø"},
-	["tangmen"] = 	 {"°ÔÍõïÚ", "ËéÔÂµ¶", "¿×È¸ôá"},
-	["wudu"] = {"´ó·çµ¶(Îå¶¾ÕÆ)", "´ó·çµ¶(Îå¶¾µ¶)"},
-	["tianwang"] = {"ÆÆÌìêª", "ÆÆÌì´¸", "´ó·çµ¶"},
-	["shaolin"] = {"´ó·çµ¶", "½ğ¹¿°ô"},
-	["wudang"] = {"ĞşÌú½£(Îäµ±½£)", "ĞşÌú½£(Îäµ±Æø"},
-	["kunlun"] = {"´ó·çµ¶", "ĞşÌú½£"},
-	["gaibang"] = 	 {"½ğ¹¿°ô(Ø¤°ïÕÆ)", "¾­°ì(Ø¤°ï¹÷)"},
-	["tianren"] = {"ÆÆÌìêª(ÌìÈÌêª)", "ÆÆÌìêª(ÌìÈÌÕÆ)"}
+	["cuiyan"] = {"§¹i Phong §ao", "Th«n NhËt Tr·m"},
+	["emei"] = {"HuyÒn ThiÕt KiÕm (Nga Mi kiÕm)", "HuyÒn ThiÕt KiÕm (Nga Mi khİ)"},
+	["tangmen"] = 	 {"B¸ V­¬ngTiªu", "To¸i NguyÖt §ao", "Khæng T­íc Linh"},
+	["wudu"] = {"§¹i Phong §ao (Ngò §éc ch­ëng)", "§¹i Phong §ao (Ngò §éc ®ao)"},
+	["tianwang"] = {"Ph¸ Thiªn Kİch", "Ph¸ Thiªn chïy", "§¹i Phong §ao"},
+	["shaolin"] = {"§¹i Phong §ao", "Kim C« Bæng"},
+	["wudang"] = {"HuyÒn ThiÕt KiÕm (Vâ §ang kiÕm)", "HuyÒn ThiÕt KiÕm (Vâ §ang khİ)"},
+	["kunlun"] = {"§¹i Phong §ao", "HuyÒn ThiÕt KiÕm"},
+	["gaibang"] = 	 {"Kim C« Bæng (C¸i bang ch­ëng)", "Kim C« bæng (C¸i Bang c«n)"},
+	["tianren"] = {"Ph¸ Thiªn Kİch (Thiªn NhÉn kİch)", "Ph¸ Thiªn Kİch (Thiªn NhÉn ch­ëng)"}
 };
 
 function v_fy_90_next()
 	local player_Faction = GetFaction();	-- Get Faction Name
 --	player_Faction = "tianren";
 	if (not player_Faction or not v_fy_90_tab_weapon[player_Faction]) then		-- skip if role not in Faction
-		Say("ÇëÄãÏÈ¼ÓÈëÃÅÅÉÔÙÀ´ÕÒÎÒ.", 0);
+		Say("Ng­¬i h·y gia nhËp m«n ph¸i tr­íc råi ®Õn t×m ta.", 0);
 		return
 	end;
 
 	local tab_Content = {}
 	for i = 1, getn(v_fy_90_tab_weapon[player_Faction]) do
-		tinsert(tab_Content, "ÎÒÏëÁìÈ¡"..v_fy_90_tab_weapon[player_Faction][i].."/#v_fy_90_weapon([["..player_Faction.."]],"..i..")");
+		tinsert(tab_Content, "Ta muèn nhËn l·nh"..v_fy_90_tab_weapon[player_Faction][i].."/#v_fy_90_weapon([["..player_Faction.."]],"..i..")");
 	end;
-	tinsert(tab_Content, "Àë¿ª/no");
+	tinsert(tab_Content, "Rêi khái/no");
 
-	Say("ÄãÏëÁìÈ¡Ê²Ã´½±Àø", getn(tab_Content), tab_Content);
+	Say("Ng­¬i muèn nhËn phÇn th­ëng g×?", getn(tab_Content), tab_Content);
 end;
 
 -- Get tanle
@@ -257,15 +257,15 @@ function v_fy_90_weapon(player_Faction, i)
 		return
 	end;
 	local nIndex = random(1, getn(table[i]));
-	local str = "Äú»ñµÃ<color=yellow>"..v_fy_90_tab_weapon[player_Faction][i].."<color>.";
+	local str = "B¹n nhËn ®­îc <color=yellow>"..v_fy_90_tab_weapon[player_Faction][i].."<color>.";
 	if (player_Faction == "emei" or player_Faction == "wudang")  then
-		str = "Äú»ñµÃ<color=yellow>ĞşÌú½£<color>.";
+		str = "B¹n nhËn ®­îc <color=yellow>HuyÒn ThiÕt KiÕm<color>.";
 	elseif (player_Faction == "gaibang") then
-		str = "Äú»ñµÃ<color=yellow>½ğ¹¿°ô<color>.";
+		str = "B¹n nhËn ®­îc <color=yellow>Kim C« Bæng<color>.";
 	elseif (player_Faction == "wudu") then
-		str = "Äú»ñµÃ<color=yellow>´ó·çµ¶<color>.";
+		str = "B¹n nhËn ®­îc <color=yellow>§¸i Phong §ao<color>.";
 	elseif (player_Faction == "tianren") then
-		str = "Äú»ñµÃ<color=yellow>ÆÆÌìêª<color>.";
+		str = "B¹n nhËn ®­îc <color=yellow>Ph¸ Thiªn Kİch<color>.";
 	end;
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 90);
 	AddItemEx(_t[i][1],table[i][nIndex],_t[i][3], _t[i][4],_t[i][5],_t[i][6], _t[i][7],_t[i][8],_t[i][9], _t[i][10],_t[i][11],_t[i][12],_t[i][13],_t[i][14],_t[i][15]);
@@ -275,9 +275,9 @@ end;
 
 --	field level 60:	Prize when a role level up at 100:
 function v_fy_100_entrance()
-	Say("½ğ±øÊÆÁ¦ÃÍÈçºéË®£¬ÏåÑô¼´½«Ê§ÊØ£¡»ÊÉÏÒÑÕÙ¼¯ÌìÏÂÓ¢ĞÛÒåÊ¿ÉÌÁ¿£¬Í¬Ê±ËÍ³ö·ÉÔÆÉñÂíÀ´¸ĞĞ»¸÷Î»Ó¢ĞÛ¡£.", 2, 
-	"ÁìÈ¡100¼¶½±Àø/v_fy_100_next",
-	"Ë³±ã¿´¿´¶øÒÑ!/no");
+	Say("Kim binh thÕ m¹nh nh­ th¸c lò, T­¬ng D­¬ng s¾p thÊt thñ!, Hoµng Th­îng ®· tô häp anh hïng nghÜa sü kh¾p n¬i bµn b¹c tİnh kÕ, ®ång thêi ban tÆng Phi V©n ThÇn M· ®Ó tri ©n c¸c vŞ anh hïng.", 2, 
+	"NhËn phÇn th­ëng cÊp 100/v_fy_100_next",
+	"Nh©n tiÖn ghĞ xem th«i!/no");
 end;
 
 function v_fy_100_next()
@@ -288,7 +288,7 @@ function v_fy_100_next()
 	-- ¼ÓÒ»Æ¥ÉñÂí
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 100);
 	AddItem(0, 10, 8, 1, 0, 0, 0);
-	Msg2Player("Äú»ñµÃ<color=yellow>·ÉÔÆÌìÂícolor>");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>Phi V©n ThÇn M·<color>");
 end;
 
 

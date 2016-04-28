@@ -11,6 +11,6 @@ function main()
 	
 	local tbItem	= racegame_tbMission.tbItemList[nRandId]
 	AddItem(unpack(tbItem.tbProp))
-	Msg2Player(format("»ñµÃ1 <color=yellow>%s<color>", tbItem.szName))
+	Msg2Player(format("NhËn ®­îc 1 <color=yellow>%s<color>", tbItem.szName))
 	DelNpc(nNpcIndex);
 end

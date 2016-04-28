@@ -6,7 +6,7 @@ function tbPlayer:OnEnterMap()
 	
 	--print("tbPlayer:OnEnterMap")
 	
-	Msg2Player("你已进入战龙洞版图")
+	Msg2Player("Ngi  v祇 b秐  Chi課 Long чng")
 	local nProtectTime = 4*18--4秒保护
 	SetProtectTime(nProtectTime)
 	AddSkillState(963, 1, 0, nProtectTime)
@@ -22,7 +22,7 @@ function tbPlayer:OnLeaveMap()
 	
 	--print("tbPlayer:OnLeaveMap")
 	
-	Msg2Player("你已离开战龙洞")
+	Msg2Player("NgI  r阨 kh醝 Chi課 Long чng")
 	--SetLogoutRV(0)--下线跟死亡在同一个点，这里不能改成0，否则下线还在这张地图
 	--DisabledStall(0)	--摆摊
 	SetFightState(0)--非战斗状态

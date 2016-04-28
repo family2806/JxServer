@@ -3,14 +3,14 @@ Include("\\script\\event\\birthday_jieri\\200905\\class.lua");
 Include("\\script\\lib\\awardtemplet.lua")
 tbBirthday0905_msg_award =
 {
-	[1]	= {szName="∞‘Õı«π", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 2},
-	[2]	= {szName="∞‘Õı«π", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 1},
-	[3]	= {szName="∞‘Õı«π", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 1},
-	[4]	= {szName="ÃÏ≤–µ∂", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 1},
-	[5]	= {szName="ÃÏ≤–µ∂", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 2},
-	[6]	= {szName="ÃÏ≤–µ∂", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 3},
-	[7]	= {szName="œ¬»’π≠", tbProp={6, 1, 2073, 1, 0, 0}, nCount = 1 },
-	[8]	= {szName="œ¬»’π≠", tbProp={6, 1, 2073, 1, 0, 0}, nCount = 1},
+	[1]	= {szName="B∏ V≠¨ng Th≠¨ng", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 2},
+	[2]	= {szName="B∏ V≠¨ng Th≠¨ng", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 1},
+	[3]	= {szName="B∏ V≠¨ng Th≠¨ng", tbProp={6, 1, 2071, 1, 0, 0}, nCount = 1},
+	[4]	= {szName="Thi™n Tµn ßao", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 1},
+	[5]	= {szName="Thi™n Tµn ßao", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 2},
+	[6]	= {szName="Thi™n Tµn ßao", tbProp={6, 1, 2072, 1, 0, 0}, nCount = 3},
+	[7]	= {szName="Hπ NhÀt Cung", tbProp={6, 1, 2073, 1, 0, 0}, nCount = 1 },
+	[8]	= {szName="Hπ NhÀt Cung", tbProp={6, 1, 2073, 1, 0, 0}, nCount = 1},
 };
 tbBirthday0905_msg_tskgoal =
 {
@@ -23,7 +23,7 @@ function birthday0905_settask_message(nIdx)
 	end
 	
 	if (GetLevel() < 120) then
-		Say("“ÎπŸ: ƒ˙ªπŒ¥¥ÔµΩ¡Ï»°»ŒŒÒµƒÃıº˛", 0);
+		Say("Dﬁch Quan: ßπi hi÷p ch≠a ÆÒ Æi“u ki÷n Æ” nhÀn nhi÷m vÙ nµy", 0);
 		return
 	end
 	
@@ -32,16 +32,16 @@ function birthday0905_settask_message(nIdx)
 	local ntskdate	= GetTask(tbBirthday0905.tbTask.tsk_msg_date+nIdx); 
 	if (ntskid == 0) then
 		if (ntskdate ~= ndate) then
-			Say("“ÎπŸ: ƒ˙“™≈¨¡¶Õ®π˝øº—È!", 0);
+			Say("Dﬁch Quan: ßπi hi÷p h∑y cË gæng v≠Ót qua thˆ th∏ch nµy!", 0);
 			SetTask(tbBirthday0905.tbTask.tsk_msg_curtsk, nIdx);
 		else
-			Say("“ÎπŸ: ƒ˙ΩÒ»’µƒ»ŒŒÒ ˝¡ø“—ÕÍ≥…. √˜ÃÏ‘Ÿ¿¥∞….", 0);
+			Say("Dﬁch Quan: ßπi hi÷p Æ∑ hoµn thµnh ÆÒ sË l≠Óng nhi÷m vÙ trong ngµy h´m nay rÂi. Ngµy sau h∑y quay lπi nh–.", 0);
 		end
 	else
 		if (ntskid == nIdx) then
-			Say("“ÎπŸ: ƒ˙“—æ≠¡Ï»°¡À¥À»ŒŒÒ.", 0);
+			Say("Dﬁch Quan: ßπi hi÷p Æ∑ nhÀn nhi÷m vÙ nµy rÂi.", 0);
 		else
-			Say("“ÎπŸ: “ª¥Œ÷ªƒ‹¡Ï»°“ª∏ˆ–≈ π»ŒŒÒ.", 0);
+			Say("Dﬁch quan: MÈt l«n chÿ  c„ th” nhÀn Æ≠Óc 1 nhi÷m vÙ t›n s¯.", 0);
 		end
 	end
 end
@@ -52,34 +52,34 @@ function birthday0905_gettask_message(nIdx)
 	local ntskdate	= GetTask(tbBirthday0905.tbTask.tsk_msg_date+nIdx); 
 	local ntskcount	= GetTask(tbBirthday0905.tbTask.tsk_msg_needcount);
 	if (ntskid ~= nIdx) then
-		Say("“ÎπŸ: ƒ˙ªπŒ¥¥ÔµΩ¡Ï»°»ŒŒÒµƒÃıº˛.", 0);
+		Say("Dﬁch quan: Ng≠¨i v…n ch≠a nhÀn nhi÷m vÙ nµy.", 0);
 		return
 	end
 	
 	if (ntskcount < tbBirthday0905_msg_tskgoal[nIdx]) then
-		Say("“ÎπŸ: ƒ„ «√ª”–…˙√¸¡¶∫Õ–≈–ƒÕ®π˝’‚¥Œøº—È¬?", 0);
+		Say("Dﬁch Quan: Ng≠¨i kh´ng ÆÒ s¯c mπnh vµ lﬂng tin Æ” v≠Ót qua thˆ th∏ch nµy sao?", 0);
 		return
 	end
 	
 	if (CalcFreeItemCellCount() < 10) then
-		Say("“ÎπŸ: Œ™¡À±£÷§ŒÔ∆∑µƒ∞≤»´, «Î’˚¿Ì∫√ƒ˙µƒ±≥∞¸“‘∑¿∑≈≤ªœ¬(10∏ˆ∏Ò).", 0);
+		Say("Dﬁch quan: ß” b∂o Æ∂m s˘ an toµn cho vÀt ph»m, xin mÍi h∑y Æ” hµnh trang thıa 10 ´ trËng.", 0);
 		return
 	end
 	
 	SetTask(tbBirthday0905.tbTask.tsk_msg_curtsk, 0);
 	SetTask(tbBirthday0905.tbTask.tsk_msg_date + nIdx, ndate);
 	SetTask(tbBirthday0905.tbTask.tsk_msg_needcount, 0);
-	Say("“ÎπŸ: ◊ˆµ√∫√, ’‚ «ƒ˙”¶µ√µƒΩ±¿¯!", 0);
+	Say("Dﬁch Quan: Lµm tËt læm, Æ©y lµ ph«n th≠Îng x¯ng Æ∏ng dµnh cho Æπi hi÷p!", 0);
 	tbAwardTemplet:GiveAwardByList(tbBirthday0905_msg_award[nIdx], "Hoat dong SNVLTK_Phan thuong nhiem vu tin su")
 end
 
 function birthday0905_cancel_message()
 	local ntsk 	= tbBirthday0905.tbTask.tsk_msg_curtsk;
 	if (GetTask(tbBirthday0905.tbTask.tsk_msg_curtsk) == 0) then
-		Say("“ÎπŸ: ƒ˙ªπŒ¥Ω” ‹»ŒŒÒ¬Ô!", 0);
+		Say("Dﬁch quan: Hi÷n tπi Æπi hi÷p v…n ch≠a nhÀn nhi÷m vÙ mµ!", 0);
 		return
 	end
 	SetTask(tbBirthday0905.tbTask.tsk_msg_curtsk, 0)
 	SetTask(tbBirthday0905.tbTask.tsk_msg_needcount, 0);
-	Say("“ÎπŸ: ƒ˙œ÷‘⁄“—≥…π¶»°œ˚»ŒŒÒ!", 0);
+	Say("Dﬁch quan: ßπi hi÷p Æ∑ hÒy b· thµnh c´ng nhi÷m vÙ hi÷n tπi!", 0);
 end

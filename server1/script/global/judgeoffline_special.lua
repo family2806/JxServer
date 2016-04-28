@@ -1,6 +1,6 @@
 --×¨ÓÃÍĞ¹Ü·şÎñÆ÷
 --ÔÊĞí·şÎñÆ÷ÈËÊıÔÚ750ÒÔÏÂ½øĞĞÍĞ¹Ü
---ÓÉ³ÇÊĞ³µ·ò´¦½øÈë£¨½ö³äÖµÓÃ»§£©
+--ÓÉ³ÇÊĞXa phu´¦½øÈë£¨½ö³äÖµÓÃ»§£©
 
 Include("\\script\\task\\partner\\train\\partner_addtrainnpc.lua")
 tbAnonymValeMap = {835,836,837,838,839,840};
@@ -20,7 +20,7 @@ function GotoAnonymVale()
 			print("jindienter_pos_file error row = "..row)
 		end
 	else
-		Talk(1,"","¶Ô²»Æğ£¬¿Í¹ÙĞèÒª³äÖµ²ÅÄÜ½øÈë<color=yellow>ÎŞÃû¹È<color>")
+		Talk(1,"","Xin lçi! Quı kh¸ch cÇn ph¶i n¹p thÎ míi cã thÓ vµo <color=yellow>V« Danh Cèc<color>")
 	end;
 end;
 
@@ -33,9 +33,9 @@ function AnonymVale_auto()
 		if (nworld >= 0) then
 			SubWorld = nworld;
 			
-			--³µ·ò¼Óµ½×ø±ê£¨1637,3277)£¬(1780,3354)£¬(1736,3462)£¬(1622,3658£©£¬£¨1798,3636)
+			--Xa phu¼Óµ½×ø±ê£¨1637,3277)£¬(1780,3354)£¬(1736,3462)£¬(1622,3658£©£¬£¨1798,3636)
 			for i = 1, getn(tb_jitan_pos) do
-				local npcindex = AddNpc(393, 1, nworld, tb_jitan_pos[i][1] * 32, tb_jitan_pos[i][2] * 32, 1, "³µ·ò")
+				local npcindex = AddNpc(393, 1, nworld, tb_jitan_pos[i][1] * 32, tb_jitan_pos[i][2] * 32, 1, "Xa phu")
 				if (npcindex > 0) then
 					SetNpcScript(npcindex, "\\script\\missions\\newcitydefence\\npc\\chefu.lua")
 				end

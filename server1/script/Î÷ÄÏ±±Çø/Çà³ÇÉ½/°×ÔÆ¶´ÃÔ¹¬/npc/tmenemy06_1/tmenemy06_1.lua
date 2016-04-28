@@ -6,9 +6,9 @@
 function OnDeath()
 	UTask_tm = GetTask(2);
 	if (UTask_tm == 30*256+20) then 
-		Talk(1,"","ºß£¡¾ÍËã´ò°ÜÁËÎÒ£¬ÄãÒ²±ğÏëÇáÒ×µÃµ½¡¶»ğÆ÷Æ×¡·¡£ÀÏÊµ¸æËßÄã£¬¡¶»ğÆ÷Æ×¡·¾ÍÔÚÄÇ¸ö±¦ÏäÀï£¬¿ª±¦ÏäµÄÔ¿³×ÄãÓĞ±¾ÊÂ¾ÍÔÚ¶´ÀïÂıÂıÕÒ°É!")
+		Talk(1,"","Hõ! Muèn ®¸nh b¹i ta µ! §õng t­ëng r»ng dÔ dµng ®o¹t ®­îc 'Háa Khİ Phæ'. Thµnh thËt nãi víi ng­¬i, 'Háa Khİ Phæ' ®ang ®Ó trong r­¬ng b¸u. Ch×a khãa r­¬ng ta ®Ó trong ®éng, ng­¬i cã giái h·y vµo ®éng mµ t×m!")
 		SetTask(2, 30*256+30)
-		AddNote("´ò°ÜÍ·Ä¿¿ñÉ³£¬ÖªµÀ»ğÆ÷Æ×·ÅÔÚ±¦ÏäÀï! ")
-		Msg2Player("´ò°ÜÍ·Ä¿¿ñÉ³£¬ÖªµÀ»ğÆ÷Æ×·ÅÔÚ±¦ÏäÀï! ")
+		AddNote("§¸nh b¹i §¹i §Çu Môc Cuång Sa, biÕt ®­îc Ho¶ Khİ Phæ ®­îc cÊt trong mét b¶o r­¬ng. CÇn ph¶i t×m ®­îc ch×a khãa! ")
+		Msg2Player("§¸nh b¹i §¹i §Çu Môc Cuång Sa, biÕt ®­îc Ho¶ Khİ Phæ ®­îc cÊt trong mét b¶o r­¬ng. CÇn ph¶i t×m ®­îc ch×a khãa! ")
 	end
 end;	

@@ -10,7 +10,7 @@ function refine()
 end
 
 function main()
-	Say("ÎÒµÄµê¿¿µã²ÔÉ½Éú»î£¬ÉÏÃæÓĞÉÏÇ§ÖÖ²İÒ©.",
+	Say("TiÖm ta sèng nhê §iÓm Th­¬ng s¬n, trªn ®ã cã hµng ngµn lo¹i th¶o d­îc.",
 		getn(OPTIONS),
 		OPTIONS)
 end;
@@ -20,8 +20,8 @@ function yes()
 end
 
 if TEACHERSWITCH then
-	tinsert(OPTIONS, "°ïÎÒ·ÅÒ©¾Æ/brew")
+	tinsert(OPTIONS, "Gióp ta cÊt d­îc töu/brew")
 end
-tinsert(OPTIONS, "½»Ò×/yes")
-tinsert(OPTIONS, "ÎÒÏëÖÆ×÷»ìÔªÁéÂ¶refine")
-tinsert(OPTIONS, "²»½»Ò×/Cancel")
+tinsert(OPTIONS, "Giao dŞch/yes")
+tinsert(OPTIONS, "Ta muèn chÕ t¹o Hçn Nguyªn Linh Lé/refine")
+tinsert(OPTIONS, "Kh«ng giao dŞch/Cancel")

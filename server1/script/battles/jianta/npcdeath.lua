@@ -79,9 +79,9 @@ function OnDeath(nNpcIndex)
 		local x, y, nSubWID		= GetNpcPos(nNpcIndex);
 		local sz_jianta_name	= "";
 		if (1 == GetCurCamp()) then
-			sz_jianta_name	= "箭塔(宋)";
+			sz_jianta_name	= "Th竝 ti詎 (T鑞g)";
 		else
-			sz_jianta_name	= "箭塔(金)";
+			sz_jianta_name	= "Th竝 ti詎 (Kim)";
 		end
 		local n_npcidx			= AddNpc(1375, tb_npclvl[n_gamelvl], nSubWID, x, y, 1, sz_jianta_name, 1);	-- 重新生成的新的箭塔
 		SetNpcCurCamp(n_npcidx, GetCurCamp());
@@ -98,11 +98,11 @@ function OnDeath(nNpcIndex)
 		
 		if (rank == 6) then
 			if (GetCurCamp() == 1) then
-				Msg2MSAll(MISSIONID, "<color=yellow> 宋金公告：宋金"..GetName().." 已经杀死金方元帅!!!")
+				Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: T鑞g qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe Kim!!!")
 				SetMissionV(MS_MARSHALDEATH, 1)
 				CloseMission(MISSIONID)
 			else
-				Msg2MSAll(MISSIONID, "<color=yellow> 宋金公告：金军 "..GetName().." 已经杀死宋方元帅!!!")
+				Msg2MSAll(MISSIONID, "<color=yellow> T鑞g Kim c玭g c竜: Kim qu﹏ "..GetName().."  gi誸 頲 Nguy猲 So竔 phe T鑞g!!!")
 				SetMissionV(MS_MARSHALDEATH, 2)
 				CloseMission(MISSIONID)
 			end

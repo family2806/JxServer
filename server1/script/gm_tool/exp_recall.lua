@@ -6,13 +6,13 @@ Include("\\script\\global\\Ãÿ ‚”√µÿ\\√Œæ≥\\npc\\¬∑»À_≈—…Æ.lua")
 Include("\\script\\lib\\log.lua")
 
 function ExpRecall_Input()
-	AskClientForString("ExpRecall_Main", "", 1, 20, "ßiæ≠—È÷µ");
+	AskClientForString("ExpRecall_Main", "", 1, 20, "ßi”m kinh nghi÷m");
 end
 
 function ExpRecall_Main(nVal)
 	local nExpToRecall = tonumber(nVal)
 	if not nExpToRecall then
-		Talk(1, "ExpRecall_Input", "÷ªƒ‹ ‰»Î∫≈¬Î?")
+		Talk(1, "ExpRecall_Input", "Chÿ Æ≠Óc ph–p nhÀp sË")
 		return
 	end
 
@@ -24,10 +24,10 @@ function ExpRecall_Main(nVal)
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDialog  = DailogClass:new(szNpcName)
-	local strTittle  = format(" µ ©≤Ÿ◊˜∫Û:\n\tLevel: <color=yellow>%d<color>\n\tExp: <color=yellow>"..nExp,nLevel).."/"..tl_getUpLevelExp(nLevel+1, ST_GetTransLifeCount()).."<color>"
-	strTittle = strTittle.."\n\t ˝¡øExp –Ë“™ ’ªÿ: <color=yellow>"..nExpToRecall.."<color>\n\tS?Exp ø…“‘ ’ªÿ: <color=yellow>"..nRecalledExp.."<color>\n\t ˝¡ø Exp ªπ≤ªƒ‹ ’ªÿ: <color=yellow>"..nRemainExp.."<color>"
+	local strTittle  = format("Sau khi th˘c hi÷n thao t∏c:\n\tLevel: <color=yellow>%d<color>\n\tExp: <color=yellow>"..nExp,nLevel).."/"..tl_getUpLevelExp(nLevel+1, ST_GetTransLifeCount()).."<color>"
+	strTittle = strTittle.."\n\tSË Exp c«n  thu hÂi: <color=yellow>"..nExpToRecall.."<color>\n\tSË Exp c„ th”  thu hÂi: <color=yellow>"..nRecalledExp.."<color>\n\tSË l≠Óng Exp ch≠a thu hÂi Æ≠Óc: <color=yellow>"..nRemainExp.."<color>"
 	tbDialog.szTitleMsg = strTittle	
-	tbDialog:AddOptEntry(" µ ©", ApplyRecall, {nLevel, nExp, nRecalledExp, nExpToRecall})	
+	tbDialog:AddOptEntry("Th˘c hi÷n", ApplyRecall, {nLevel, nExp, nRecalledExp, nExpToRecall})	
 	tbDialog:Show()
 	--ApplyRecall()
 end
@@ -50,7 +50,7 @@ function GetNextLevelExp(nExpToRecall)
 		end
 		if (nNextLevel <= 10 and nRemainExp > 0) then
 			nNextExp = 0
---			Msg2Player( format("Level “—¥Ô…œœﬁ°£ ˝¡øExp Œ¥ƒ‹ ’ªÿ: <color=green>%d", nRemainExp))			
+--			Msg2Player( format("Level Æ∑  Æπt giÌi hπn. SË l≠Óng Exp ch≠a thu hÂi Æ≠Óc: <color=green>%d", nRemainExp))			
 		else
 			if nRemainExp == 0 then
 				nNextExp = 0
@@ -66,22 +66,22 @@ function ApplyRecall(nLevel, nExp, nRecalledExp, nExpToRecall)
 	if nRecalledExp <= 0 then
 		return 
 	end	
-	tbLog:PlayerActionLog("GMTool_ ’ªÿExp", " ’ªÿ÷Æ«∞", ST_GetTransLifeCount(),GetExp(), nRecalledExp)
+	tbLog:PlayerActionLog("GMTool_ThuHoiExp", "TruocKhiThuHoi", ST_GetTransLifeCount(),GetExp(), nRecalledExp)
 	if nLevel == GetLevel() then
 		ReduceOwnExp(nRecalledExp)
-		Msg2Player("“—ø€≥˝≥…π¶ "..nRecalledExp.." æ≠—È÷µ")
-		tbLog:PlayerActionLog("GMTool_ ’ªÿExp", " ’ªÿ≥…π¶", ST_GetTransLifeCount(),GetExp(), nRecalledExp)
+		Msg2Player("ß∑  trı thµnh c´ng "..nRecalledExp.." Æi”m kinh nghi÷m")
+		tbLog:PlayerActionLog("GMTool_ThuHoiExp", "ThuHoiThanhCong", ST_GetTransLifeCount(),GetExp(), nRecalledExp)
 	else
 		--zhuansheng_clear_prop(GetLevel(), 0)
 		DoClearPropCore()
 		DoClearSkillCore()
 		ST_LevelUp(nLevel-GetLevel());
 		AddOwnExp(nExp)
-		Msg2Player("»•≥˝≥…π¶ "..nRecalledExp.." æ≠—È÷µ")
+		Msg2Player("ß∑  trı thµnh c´ng "..nRecalledExp.." Æi”m kinh nghi÷m")
 		tbLog:PlayerActionLog("GMTool_ThuHoiExp", "ThuHoiThanhCong", ST_GetTransLifeCount(),GetExp(), nRecalledExp)
 		if nRecalledExp < nExpToRecall then
 			tbLog:PlayerActionLog("GMTool_ThuHoiExp", "ExpChuaThuHoiDuoc", ST_GetTransLifeCount(),GetExp(), nExpToRecall - nRecalledExp)
-			Talk(1, "", "Level “—¥Ô…œœﬁ°£ ˝¡øExp Œ¥ƒ‹ ’ªÿ: "..(nExpToRecall - nRecalledExp))
+			Talk(1, "", "Level Æ∑  Æπt giÌi hπn. SË l≠Óng Exp ch≠a thu hÂi Æ≠Óc: "..(nExpToRecall - nRecalledExp))
 		end
 		--KickOutSelf()	
 	end	

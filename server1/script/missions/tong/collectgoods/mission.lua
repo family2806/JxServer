@@ -29,7 +29,7 @@ function EndMission()
 	collg_clearfairy();	--Çå³ı³¡µØÄÚËùÓĞµÄ¹Ö
 	collg_gameover(COLLG_MAPID[2], COLLG_MISSIONID);	--½«ËùÓĞÍæ¼ÒÇå³ı³öµØÍ¼
 	local nTime = tonumber(GetLocalDate("%H%M"));
-	local strGlbNews = "¸÷Î»ÏÀ¿ÍÈ¥ÕÒ»õÎï´ü»ØÀ´ÁË."
+	local strGlbNews = "C¸c hiÖp kh¸ch ®i t×m hµng hãa ®· trë vÒ råi."
 	AddGlobalNews(strGlbNews);
 
 	StopMissionTimer(COLLG_MISSIONID, COLLG_SMALLTIMERID);
@@ -88,7 +88,7 @@ function groupsort(nGroupId)
 	for i=1,nRankCount do
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
-			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", »ñµÃ"..tabPlayer[i][2].." »õÎï´ü"
+			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", nhËn ®­îc "..tabPlayer[i][2].." tói hµng hãa"
 		end
 	end
 	--ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
@@ -99,9 +99,9 @@ function groupsort(nGroupId)
 			Msg2Player(szMsg)
 		end
 		if (GetTask(COLLG_COUNT_ONETIME) == 0) then
-			Msg2Player("ÕæÊÇÒÅº¶£¬ÄãÃ»ÓĞ»õÎï´ü!");
+			Msg2Player("ThËt ®¸ng tiÕc, ng­¬i kh«ng cã tói hµng hãa nµo!");
 		else
-			Msg2Player("ÄãÅÅÃûµÚ <color=yellow>"..i.."<color>, ¿ÉÒÔÀ´¼û<color=yellow>»î¶¯·»×Ü¹Ü<color> Áì½±!");
+			Msg2Player("B¹n xÕp h¹ng thø <color=yellow>"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
 		end;
 	end;
 	

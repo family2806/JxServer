@@ -55,7 +55,7 @@ function main()
 			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ğBOSS7¡°ºÎÈËÎÒ¡±ÓÚ·çÁê¶ÉÄÏ°¶x£º"..posx7..",y£º".. posy7)	
 		end;
 	
-		cbn_mapindex = SubWorldID2Idx(321)--³¤°×É½ÄÏ321		--¶«±±Çø		19£º30
+		cbn_mapindex = SubWorldID2Idx(321)--Tr­êng B¹ch s¬n Nam 321		--¶«±±Çø		19£º30
 		if (cbn_mapindex >= 0) then
 			posx8, posy8 = getadata(xuanjizi)
 			AddNpcEx(747, 95, 4, cbn_mapindex, posx8*32, posy8*32, 1, "è¯çá×Ó", 1)		
@@ -86,12 +86,12 @@ function main()
 			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ğBOSS9¡°º«ÃÉ¡±ÓÚÎ÷É½Óìx£º"..posx10..",y£º".. posy10)
 		end
 		
-		damahu_boss()	--»Æ½ğboss´óÂí»¢£¬Ëæ»ú³öÏÖÔÚÄª¸ß¿ß¡¢³¤°×É½ÄÏ¡¢³¤°×É½±±
+		damahu_boss()	--»Æ½ğboss§¹i M· Hæ £¬Ëæ»ú³öÏÖÔÚM¹c Cao QuËt¡¢Tr­êng B¹ch s¬n Nam ¡¢Tr­êng B¹ch s¬n B¾c
 	end
 	
 	--23:00
 	if (tonumber(date("%H")) == 23) then
-		mg_mapindex = SubWorldID2Idx(340)--Äª¸ß¿ß340	--Î÷±±±±Çø	23£º00
+		mg_mapindex = SubWorldID2Idx(340)--M¹c Cao QuËt340	--Î÷±±±±Çø	23£º00
 		if (mg_mapindex >= 0 ) then
 			posx1, posy1 = getadata(tangburan)
 			AddNpcEx(741, 95, 1, mg_mapindex, posx1*32, posy1*32, 1, "ÌÆ²»È¾", 1)		
@@ -105,7 +105,7 @@ function main()
 			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ğBOSS2¡°Íõ×ô¡±ÓÚÄ®±±²İÔ­x£º"..posx2..",y£º".. posy2)
 		 end
 	 
-		cbb_mapindex = SubWorldID2Idx(322)--³¤°×É½±±322		--¶«±±Çø		23£º00
+		cbb_mapindex = SubWorldID2Idx(322)--Tr­êng B¹ch s¬n B¾c322		--¶«±±Çø		23£º00
 		if (cbb_mapindex >= 0) then
 			posx9, posy9 = getadata(xuanjuedashi)
 			AddNpcEx(740, 95, 0, cbb_mapindex, posx9*32, posy9*32, 1, "Ğş¾õ´óÊ¦", 1)	
@@ -165,23 +165,23 @@ function damahu_boss()
 	damahu_mapid = DAMAHUMAP[zz]
     damahu_mapindex = SubWorldID2Idx(damahu_mapid)
     if (damahu_mapid == 321) then
-    	mapname = "³¤°×É½ÄÏ"
+    	mapname = "Tr­êng B¹ch s¬n Nam "
     	file = "\\settings\\maps\\¶«±±Çø\\³¤°×É½Â´\\xuanjiziboss.txt"
    elseif (damahu_mapid == 322) then
-    	mapname = "³¤°×É½±±"
+    	mapname = "Tr­êng B¹ch s¬n B¾c"
     	file = "\\settings\\maps\\¶«±±Çø\\³¤°×É½Â´\\xuanjuedashiboss.txt"
     elseif (damahu_mapid == 340) then
-    	mapname = "Äª¸ß¿ß"
+    	mapname = "M¹c Cao QuËt"
     	file = "\\settings\\maps\\Î÷±±±±Çø\\Äª¸ß¿ß\\tangburanboss.txt"
     end
     
     if (damahu_mapindex >= 0) then
-    --Ëæ»úÉèÖÃ´óÂí»¢µÃÎåĞĞÊôĞÔ¡¢ºÍÄ£°æid
+    --Ëæ»úÉèÖÃ§¹i M· Hæ µÃÎåĞĞÊôĞÔ¡¢ºÍÄ£°æid
 	rannum = random(10)
     	posx,posy =getadata(file)
-    	local npcidx = AddNpcEx(DAMAHUID[rannum][1], 95, DAMAHUID[rannum][2], damahu_mapindex, posx*32, posy*32, 1, "´óÂí»¢", 1)
+    	local npcidx = AddNpcEx(DAMAHUID[rannum][1], 95, DAMAHUID[rannum][2], damahu_mapindex, posx*32, posy*32, 1, "§¹i M· Hæ ", 1)
     	SetNpcDeathScript(npcidx, "\\script\\missions\\boss\\bossdeath.lua");
-	WriteLog("Ê±¼ä"..date("%H%M%S")..": ³öÏÖ»Æ½ğBOSS'´óÂí»¢' mapid:"..damahu_mapid..", ×ø±êx:"..posx..", y:".. posy..". ´óÂí»¢ID ÊÇ"..DAMAHUID[rannum][1]..", ÎåĞĞÊôĞÔ:"..DAMAHUID[rannum][2])
-	AddGlobalNews("´óÂí»¢³öÏÖÔÚ"..mapname.." ("..floor(posx/8)..","..floor(posy/16)..")")
+	WriteLog("Ê±¼ä"..date("%H%M%S")..": XuÊt hiÖn BOSS Hoµng Kim '§¹i M· Hæ' mapid:"..damahu_mapid..", täa ®é x:"..posx..", y:".. posy..". §¹i M· Hæ (ID lµ:"..DAMAHUID[rannum][1]..", thuéc tİnh ngò hµnh:"..DAMAHUID[rannum][2])
+	AddGlobalNews("§¹i M· Hæ xuÊt hiÖn t¹i "..mapname.." ("..floor(posx/8)..","..floor(posy/16)..")")
 	end
 end

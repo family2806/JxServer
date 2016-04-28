@@ -11,20 +11,20 @@ end;
 
 function Wswear_select()
 	if (GetSex() == 0) then
-		P_sex = "ÉÙÏÀ"
+		P_sex = "ThiÕu hiÖp"
 	else
-		P_sex = "Å®ÏÀ"
+		P_sex = "N÷ hiÖp"
 	end
-	Say("¾²¶½ìøÊ¦£ºËµµÃºÃ£¡Ö»ĞèÒª"..P_sex.." 3000Á½ĞŞ·ğÏñ, Ê²Ã´ÊÂ¶¼ºÃËµ.",2,"¾è 3000 Á½. /Wswear_yes","²»ĞèÒª!/Wswear_no")
+	Say("TŞnh §èc ThiÒn S­: Nãi hay l¾m! ChØ cÇn"..P_sex.."®ãng 3000 l­îng ®Ó söa t­îng PhËt, mäi chuyÖn ®Òu dÔ nãi.",2,"Quyªn 3000 l­îng. /Wswear_yes","Kh«ng cÇn!/Wswear_no")
 end;
 
 function Wswear_yes()
 	if (GetCash() >= 3000) then
 		if(SwearBrother(GetTeam()) == 1)then
 			Pay(3000)
-			Msg2Team("¹§Ï²¶şÎ»½áÒå½ğÀ¼. ")
+			Msg2Team("Chóc mõng hai vŞ ®· kÕt nghÜa Kim Lan. ")
 		else
-			Msg2Team("¶ÓÖĞÓĞ·òÆŞ¹ØÏµ£¬½á°İÊ§°Ü. ")
+			Msg2Team("Trong nhãm cã tån t¹i quan hÖ phu thª, viÖc kÕt b¸i thÊt b¹i. ")
 		end
 	else
 		Talk(1,"", 11376)

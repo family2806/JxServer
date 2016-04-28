@@ -7,6 +7,6 @@
 function OnDeath()
 	UTask_tm = GetTask(2);
 	if ((UTask_tm == 50*256+80) and (HaveItem(48) == 0)) then
-		Msg2Player("µÃµ½¼ÙµÄ¡¶°µÆ÷Æ×¡·£¬Ô­À´ÊÇÒ»±¾ÎŞ×ÖÌìÊé")
+		Msg2Player("LÊy ®­îc ¸m khİ phæ gi¶ m¹o, hãa ra chØ lµ mét quyÓn s¸ch kh«ng cã ch÷ ")
 	end
 end;

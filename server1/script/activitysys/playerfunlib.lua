@@ -77,7 +77,7 @@ function PlayerFunLib:IsCharged(szFailMsg)
 		return 1;
 	else
 		if szFailMsg == "default" then
-			szFailMsg = "ÒªÇóÐèÒª"
+			szFailMsg = "Yªu cÇu cÇn ph¶i n¹p thÎ."
 		end
 		lib:ShowMessage(szFailMsg)
 		return nil
@@ -113,7 +113,7 @@ function PlayerFunLib:CheckLevel(nLevel, szFailMsg, szOption)
 		return 1
 	else
 		if szFailMsg == "default" then
-			szFailMsg = format(" ÐèÒª´ïµ½µÄ¼¶±ð<color=yellow>%d<color>.", nLevel)
+			szFailMsg = format("CÊp ph¶i ®¹t ®Õn <color=yellow>%d<color>.", nLevel)
 		end
 		lib:ShowMessage(szFailMsg)
 	end
@@ -148,7 +148,7 @@ function PlayerFunLib:CheckTotalLevel(nLevel, szFailMsg, szOption)
 		return 1
 	else
 		if szFailMsg == "default" then
-			szFailMsg = format("ÐèÒª´ïµ½µÄ¼¶±ð<color=yellow>%d<color>  »òÕßÒÑ¾­×ªÉú", nLevel)
+			szFailMsg = format("CÊp ph¶i ®¹t ®Õn<color=yellow>%d<color> hoÆc ®· chuyÓn sinh", nLevel)
 		end
 		lib:ShowMessage(szFailMsg)
 	end
@@ -181,7 +181,7 @@ function PlayerFunLib:CheckFreeBagCell(nCount, szFailMsg)
 		return 1
 	else
 		if szFailMsg == "default" then
-			szFailMsg = format("ÐèÒªµÄ×°±¸<color=yellow>%d<color> ¿ÕÎ».", nCount)
+			szFailMsg = format("Hµnh trang cÇn <color=yellow>%d<color> « trèng.", nCount)
 		end
 		lib:ShowMessage(szFailMsg)
 	end
@@ -196,7 +196,7 @@ function PlayerFunLib:CheckFreeBagCellWH(nW, nH, nCount, szFailMsg)
 		return 1
 	else
 		if szFailMsg == "default" then
-			szFailMsg = format("ÎªÈ·±£´óÏÀµÄ²Æ²ú£¬ÇëÁôÏÂ%d %dx%d ×°±¸¿ÕÎ»", nCount, nW, nH)
+			szFailMsg = format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nW, nH)
 		end
 		lib:ShowMessage(szFailMsg)
 	end
@@ -209,7 +209,7 @@ function PlayerFunLib:CheckCashLimit(nMaxCount, szFailMsg)
 		return 1
 	else
 		if szFailMsg == "default" then
-			szFailMsg = format("ÎªÁËÄúµÄÎïÆ·°²È«£¬ÇëÈ·±£Ëù´øµÄÇ®²»³¬¹ý%d Á¿", nMaxCount)
+			szFailMsg = format("V× sù an toµn vËt dông cña b¹n, xin ®¶m b¶o tiÒn mang theo kh«ng v­ît qu¸ %d l­îng", nMaxCount)
 			
 		end
 		lib:ShowMessage(szFailMsg)		
@@ -504,7 +504,7 @@ function PlayerFunLib:PayExtPoint(nExtPointId, nConsumePoint)
 		
 		return 1
 	else
-		Msg2Player(format("´óÏÀËù½ÉµãÊý²»×ã %d", nConsumePoint))
+		Msg2Player(format("§¹i hiÖp ®· nép ®iÓm sè kh«ng ®ñ %d", nConsumePoint))
 		
 		return 
 	end

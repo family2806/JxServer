@@ -74,10 +74,10 @@ MS_CO_PREPARENEWSVALUE = 5; --×¼±¸³¡¼ÆÊ±±äÁ¿
 MS_CO_GAMECOUNT = 6;    --  ¼ÇÂ¼Ò»³¡¿ªÊ¼µÄÓÎÏ·µÄ¸öÊý
 --³£Á¿²¿·Ö£»
 FESTIVAL_SHREWMOUSE = "springfestival07";
-CO_ANIMALNAME = "30ËêÈË";
-CO_MOUSENAME = "°×Öí"; --Ê¥µ®¾«ÁéµÄÃû×Ö
-CO_GIFTNAME = "ÁôÏÂµÄÀñÎï";       --ÀñÎïNPCµÄÃû×Ö
-CO_SIGNNPCNAME = "<color=yellow>ÑÃÃÅ²îÒÛ<color>:";    --±¨ÃûÊ¥µ®ÀÏÈËµÄÃû×Ö
+CO_ANIMALNAME = "¤ng ba m­¬i";
+CO_MOUSENAME = "Heo tr¾ng"; --Ê¥µ®¾«ÁéµÄÃû×Ö
+CO_GIFTNAME = "LÔ vËt ®Ó l¹i";       --ÀñÎïNPCµÄÃû×Ö
+CO_SIGNNPCNAME = "<color=yellow>Nha m«n sai dÞch<color>:";    --±¨ÃûÊ¥µ®ÀÏÈËµÄÃû×Ö
 CO_MAPPOINTFLORDER = "springfestival2006";
 FESTIVAL_OK = 1;    --ÉèÖÃ×´Ì¬¿Ï¶¨±íÊ¾
 FESTIVAL_NO = 0;    --ÉèÖÃ×´Ì¬·ñ¶¨±íÊ¾
@@ -115,17 +115,17 @@ end
 function itemuseplacecheck(nType)   --nType :1¡ª¡ª¹«¹²µÀ¾ß£»2¡ª¡ªÄêÊÞ×¨ÓÃµÀ¾ß£»3¡ª¡ªÆÕÍ¨Íæ¼Ò×¨ÒµµÀ¾ß
     local ww, xx, yy = GetWorldPos();
     if (CO_MAPID[2] ~= ww) then
-	    Talk(1, "", "¸ÃÎïÆ·Ö»ÓÃÓÚ´º¼¾»î¶¯.");
+	    Talk(1, "", "VËt phÈm nµy chØ dïng trong ho¹t ®éng ngµy Xu©n.");
 	        return 0;
 	    end;
 	    
 	    if (GetTask(TK_FE_GROUPID) <= FE_SMALLMAPCOUNT and 2 == nType) then
-    	    Talk(1, "", "Ö»ÓÐ´ò¹ÖÍæ¼Ò²ÅÄÜÊ¹ÓÃ¸ÃÃæ¾ß");
+    	    Talk(1, "", "ChØ cã ng­êi ch¬i '¤ng ba m­¬i' míi cã thÓ sö dông ®¹o cô nµy.");
 	        return 0;
 	    end;
 	    
 	    if (GetTask(TK_FE_GROUPID) > FE_SMALLMAPCOUNT and 3 == nType) then
-    	    Talk(1, "", "Ö»ÓÐÒ»°ãÍæ¼Ò²ÅÄÜÊ¹ÓÃ¸ÃÎïÆ·.");
+    	    Talk(1, "", "ChØ cã ng­êi ch¬i b×nh th­êng míi sö dông ®­îc vËt phÈm nµy.");
         return 0;
     end;
     

@@ -14,15 +14,15 @@ function main()
 	local tb_Msg = {};
 	
 	if (n_date >= JxWeb_Start_Date and n_date <= JxWeb_End_Date) then
-		tb_Msg = {"<dec><npc>".."ÏÖÔÚÕı¾ÙĞĞJX WebµÄOpen Beta»î¶¯£¬¸÷Î»´óÏÀ¸Ï¿ì¼ÓÈëµ½JX WebµÄÊÀ½çÀ´ÁìÈ¡ºÜ¶àÎüÒıÈËµÄ½±Àø°É."};
-		tinsert(tb_Msg, "°ïÖúĞÂÊÖ»î¶¯/jxweb_take_bag_1");
-		tinsert(tb_Msg, "·±ÈÙTOP¾ºÈü»î¶¯/jxweb_other_dec");
+		tb_Msg = {"<dec><npc>".."HiÖn ®ang trong thêi gian diÔn ra ho¹t ®éng Open Beta cña JX WebC¸c vŞ ®¹i hiÖp nhanh ch©n tham gia vµo thÕ giíi cña JX Web ®Ó nhËn lÊy nhiÒu phÇn th­ëng hÊp dÉn."};
+		tinsert(tb_Msg, "Ho¹t ®éng Hç trî t©n thñ/jxweb_take_bag_1");
+		tinsert(tb_Msg, "Ho¹t ®éng §ua TOP phån vinh/jxweb_other_dec");
 	else
 		jxweb_other_dec()
 		return 0;
 	end
 	
-	tinsert(tb_Msg, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tb_Msg, "KÕt thóc ®èi tho¹i/OnCancel");
 	
 	CreateTaskSay(tb_Msg);
 end
@@ -32,9 +32,9 @@ end
 
 
 function jxweb_take_bag_1()
-	CreateTaskSay({"<dec><npc>".."{{°ïÖúĞÂÊÖ}»î¶¯:´Ó01-05-2009µ½24:00 22-05-2009. ÔÚ´ËÆÚ¼ä£¬Ö®Ç°Ò»ÌìÍê³É1¸öÊÕ¼¯ÈÎÎñÔòÔÚµÚ¶şÌìµÄ10h-24h¿ÉÒÔÁìÈ¡{{Á¬ĞÄµ¤}}.", 
-					format("µÃµ½%s/jxweb_take_bag_2", "Á¬ĞÄµ¤"), 
-					"½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({"<dec><npc>".."Ho¹t ®éng {{Hç trî t©n thñ}}:diÔn ra tõ ngµy 01-05-2009 ®Õn 24:00 22-05-2009. Trong thêi gian ho¹t ®éng, ngµy h«m tr­íc hoµn thµnh 1 nhiÖm vô thu thËp th× b¾t ®Çu 10h-24h ngµy h«m sau ®¹i hiÖp sÏ cã thÓ nhËn ®­îc {{Liªn T©m §an}}.", 
+					format("NhËn %s/jxweb_take_bag_2", "Liªn T©m §¬n"), 
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 end
 
 function jxweb_take_bag_2()
@@ -42,12 +42,12 @@ function jxweb_take_bag_2()
 	local ext_value = GetExtPoint(ext_pointid);
 	
 	if (ext_value ~= 1) then
-		CreateTaskSay({"<dec><npc>¸÷Î»Õâ´Î²»ÄÜÁì½±.", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>C¸c h¹ ch­a thÓ nhËn th­ëng lÇn nµy.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end
 	
 	if (CalcFreeItemCellCount() < 2) then
-		Talk(1, "", "±³°üÒªÓĞ2¸ö¿ÕÎ».");
+		Talk(1, "", "Hµnh trang ph¶i cã hai « trèng.");
 		return
 	end
 	
@@ -58,10 +58,10 @@ function jxweb_take_bag_2()
 	SyncItem(nIdx);
 	SetItemBindState(nIdx, -2);
 	
-	local szMsg = format("ÊÕ¼¯µ½ 1 %s",GetItemName(nIdx))
+	local szMsg = format("Thu ®­îc 1 %s",GetItemName(nIdx))
 	
 	Msg2Player(szMsg);
-	CreateTaskSay({"<dec><npc>"..szMsg, "¶àĞ»Ê¦ĞÖ ".."/OnCancel"});
+	CreateTaskSay({"<dec><npc>"..szMsg, "§a t¹ huynh ".."/OnCancel"});
 	
 	WriteLog(format("%s\tName:%s\tAccount:%s\t%s",
 			GetLocalDate("%Y-%m-%d_%X"),
@@ -72,6 +72,6 @@ end
 
 
 function jxweb_other_dec()
-	CreateTaskSay({"<dec><npc>".."{{·±ÈÙµãTOP¾ºÈü}}»î¶¯:´Ó01-05-2009µ½24:00 22-05-2009. ·±ÈÙµã×î¸ßµÄÇ°10Ãû¿ÉÒÔÁìÈ¡ÓÕÈËµÄ½±Æ·.", 
-					"½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({"<dec><npc>".."Ho¹t ®éng {{§ua Top ®iÓm phån vinh}}:diÔn ra tõ ngµy 01-05-2009 ®Õn 24:00 22-05-2009. 10 ng­êi cã ®iÓm phån vinh cao nhÊt sÏ cã thÓ nhËn ®­îc phÇn th­ëng hÊp dÉn.", 
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 end

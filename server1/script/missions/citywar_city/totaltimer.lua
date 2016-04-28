@@ -1,26 +1,26 @@
 Include("\\script\\missions\\citywar_city\\head.lua");
 
 function OnTimer()
-	WriteLog(GetLoop().."µ½Õ½¶·Ê±¼äÁË. ");
+	WriteLog(GetLoop().."§Õn giê thi ®Êu. ");
 	timestate = GetMissionV(MS_STATE);
-	str = format("%sÕù¶áÊ±¼ä½áÊø!!ÏÖÔÚ%d ÅªÖíÒÑ¾­»Ö¸´ÊôĞÔ", GetGameCity(), MS_SYMBOLCOUNT);
+	str = format("%s kÕt thóc thêi gian tranh ®o¹t!! HiÖn t¹i %d Long trô ®· håi phôc thuéc tİnh", GetGameCity(), MS_SYMBOLCOUNT);
 	for i = 1, MS_SYMBOLCOUNT do 
 		if (GetMissionV(MS_SYMBOLBEGIN + i - 1)  == 1) then
-			str = str .. "·ÀÊØ·½"	;
+			str = str .. "Phe phßng thñ "	;
 		else 	
-			str = str .. "½ø¹¥·½";
+			str = str .. "Phe tÊn c«ng ";
 		end;
 	end;
 	
 	if (timestate == 2) then --¿ªÕ½ÖĞ
 		nCount = CheckWin();
 		if (nCount > MS_SYMBOLCOUNT / 2) then 
-			str = format("×îÖÕ½ø¹¥·½ %s: %s È¡µÃÍêÈ«Ê¤Àû! µÃµ½Í³ÖÎÈ¨%s?",str,GetGamerName(2),GetGameCity());
+			str = format("Phe tÊn c«ng cuèi cïng %s: %s giµnh th¾ng lîi hoµn toµn! NhËn ®­îc quyÒn thèng trŞ %s?",str,GetGamerName(2),GetGameCity());
 			AddGlobalNews(str);
 			GameWin(2)
 			return
 		else
-			str = format("×îÖÕ·ÀÊØ·½ %s: %s ÍêÈ«Ê¤Àû! ¼ÌĞøÎ¬³ÖÍ³ÖÎ%s?",str,GetGamerName(2),GetGameCity());
+			str = format("Phe phßng thñ cuèi cïng %s: %s th¾ng lîi hoµn toµn! TiÕp tôc gi÷ quyÒn thèng trŞ %s?",str,GetGamerName(2),GetGameCity());
 			AddGlobalNews(str);
 			GameWin(1)
 			return

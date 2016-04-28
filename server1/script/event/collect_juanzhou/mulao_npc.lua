@@ -4,12 +4,12 @@ Include("\\script\\lib\\pay.lua");	--³äÖµµÄÅĞ¶Ï
 function main()
 	local nDate = tonumber(GetLocalDate("%y%m%d"));
 	if (nDate >= 70314 and nDate <= 70321) then
-		Say("ÀÏ·òÕıÔÚÊÕ¼¯ÉñÃØÃÜÍ¼£¬Èç¹û¸÷Î»¿ÉÒÔ°ïÎÒÕÒ, ÀÏ·òÒ»¶¨ÓèÒÔÖØĞ»", 3,
-					"ÓÃ10ÕÅÉñÃØÃÜÍ¼½»»»ÒøÏä/sure2takeboxaward",
-					"ÓÃ10ÕÅÉñÃØÃÜÍ¼ºÍ½ğÊ¯½»»»½ğÏä/sure2takeboxaward",
-					"ÎÒ»¹ÓĞÆäËûÊÂÇéÒª×ö/OnCancel");
+		Say("L·o phu ®ang thu thËp c¸c m¶nh mËt ®å thÇn bİ, nÕu c¸c vŞ cã thÓ gióp ta t×m, l·o phu nhÊt ®Şnh sÏ tr¶ c«ng hËu hÜ", 3,
+					"§æi10 mËt ®å thÇn bİ lÊy R­¬ng b¹c/sure2takeboxaward",
+					"§æi 10 mËt ®å thÇn bİ vµ Kim th¹ch lÊy R­¬ng vµng/sure2takeboxaward",
+					"Ta cßn viÖc kh¸c ph¶i lµm/OnCancel");
 	else
-		Say("Èç¹û¿ÉÒÔÊÕ¼¯¹»ÉñÃØ¾íÖá£¬½«»á·¢ÏÖ¸ü¶àµÄÒş±Î±¦²Ø",  0);
+		Say("NÕu cã thÓ thu thËp ®­îc m¶nh b¶n ®å thÇn bİ, sÏ ph¸t hiÖn ra thªm nhiÒu ®­îc kho tµng bİ Èn",  0);
 	end;
 end;
 
@@ -17,18 +17,18 @@ function sure2takeboxaward(nSel)
 	local nboxtype = nSel;
 	local nmylevel = GetLevel();
 	if (nmylevel < 50 or IsCharged() ~= 1) then
-		Say("Õæ²»ºÃÒâË¼! Ö»ÓĞÍæ¼Ò <color=yellow>50¼¶ÒÔÉÏ<color>ÒÑ³äÖµÁË²Å¿ÉÒÔ²Î¼ÓÕâ¸ö»î¶¯.", 0);
+		Say("ThËt ng¹i qu¸! ChØ cã ng­êi ch¬i <color=yellow>cÊp tõ 50 trë lªn<color> ®· n¹p thÎ míi cã thÓ tham gia ho¹t ®éng nµy.", 0);
 		return
 	end;
 	
 	local njuanzhou = CalcEquiproomItemCount(6,1,196,-1);
 	if (njuanzhou < 10) then
-		Say("ÕÒµ½10ÕÅÉñÃØÃÜÍ¼Ö®ºó»ØÀ´ÕÒÀÏ·ò!", 0);
+		Say("T×m ®ñ 10 tÊm mËt ®å thÇn bİ råi quay l¹i t×m L·o phu nhĞ!", 0);
 		return
 	end;
 	
 	if (CalcFreeItemCellCount() < 6) then
-		Say("ÇëÏÈÕûÀí±³°ü!", 0);
+		Say("Xin s¾p xÕp l¹i hµnh trang tr­íc ®·!", 0);
 		return
 	end;
 	--¾íÖá¹»ÁË£¬¿´ÒªÊ²Ã´±¦Ïä
@@ -37,23 +37,23 @@ function sure2takeboxaward(nSel)
 			ConsumeEquiproomItem(1,6,1,1376,-1);
 			ConsumeEquiproomItem(10, 6, 1, 196, -1)	--É¾³ıµş¼ÓµÄÉñÃØ¾íÖácount¸ö
 			AddItem(6,1,1377,1,0,0);
-			Msg2Player("µÃµ½<color=yellow>½ğÏä");
-			WriteLog(format("[ÊÕ¼¯ÉñÃØÃÜÍ¼»î¶¯] \t %s\t Ãû×Ö:%s\t Account: %s\t µÃµ½Ò»¸ö½ğÏä",
+			Msg2Player("NhËn ®­îc <color=yellow>R­¬ng vµng");
+			WriteLog(format("[Ho¹t ®éng thu thËp m¶nh mËt ®å thÇn bİ] \t %s\t Tªn:%s\t Account: %s\t nhËn ®­îc mét r­¬ng vµng",
 														GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount()));
 		else
-			Say("Ã»ÓĞ½ğÊ¯ÁË£¬Ö»ÄÜ»»×ßÒøÏä£¬Í¬ÒâÂğ?", 2, 
-						"ÓÃ10ÕÅÉñÃØÃÜÍ¼»»ÒøÏä/sure2takeboxaward", 
-						"ÎÒÕûÀíÏÂ±³°ü/OnCancel");
+			Say("Kh«ng cã Kim th¹ch chØ cã thÓ ®æi lÊy R­¬ng b¹c, ®ång ı chø?", 2, 
+						"§æi10 mËt ®å thÇn bİ lÊy R­¬ng b¹c/sure2takeboxaward", 
+						"§Ó ta s¾p l¹i hµnh trang ®·/OnCancel");
 			return
 		end;
 	else										--°×Òø
 		ConsumeEquiproomItem(10, 6, 1, 196, -1)	--É¾³ıµş¼ÓµÄÉñÃØ¾íÖácount¸ö
 		AddItem(6,1,1378,1,0,0);
-		Msg2Player("µÃµ½ <color=yellow>ÒøÏä");
-		WriteLog(format("[ÊÕ¼¯ÉñÃØÃÜÍ¼»î¶¯]\t %s\t Name: %s\t Account: %s\t µÃµ½1¸öÒøÏä",
+		Msg2Player("NhËn ®­îc <color=yellow>R­¬ng b¹c");
+		WriteLog(format("[Ho¹t ®éng thu thËp m¶nh mËt ®å thÇn bİ]\t %s\t Name: %s\t Account: %s\t nhËn ®­îc 1 R­¬ng b¹c",
 														GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount()));
 	end;
-	Say("ÀÛËÀÁË! ÕâÊÇÀÏ·òµÄÒ»µãĞÄÒâ£¬ÇëÊÕÏÂ£¡", 0);
+	Say("VÊt v¶ qu¸! §©y lµ chót lßng thµnh cña l·o phu, xin h·y nhËn lÊy!", 0);
 end;
 
 function OnCancel()

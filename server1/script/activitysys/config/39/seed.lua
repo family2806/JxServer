@@ -35,11 +35,11 @@ end
 function tbValenTree:IsDuring()
 	local nCurDate = tonumber(GetLocalDate("%Y%m%d"))
 	if ValenAct_nStartDate == nil or nCurDate < ValenAct_nStartDate then
-		Talk(1, "", "»î¶¯ÒÀÈ»Î´¿ªÊ¼£¬Çë¼á³ÖµÈ´ý")
+		Talk(1, "", "Ho¹t ®éng vÉn ch­a b¾t ®Çu, xin h·y kiªn nhÉn chê ®îi")
 		return
 	end 
 	if ValenAct_nEndDate == nil or ValenAct_nEndDate <= nCurDate then
-		Talk(1, "", "´óÏÀÔ­ÁÂ£¬´Ë´Î»î¶¯ÒÑ½áÊø")
+		Talk(1, "", "§¹i hiÖp l­îng thø, ho¹t ®éng lÇn nµy ®· kÕt thóc")
 		return
 	end
 	return 1
@@ -54,7 +54,7 @@ function tbValenTree:IsInMap(szTreeType)
 			end
 		end
 	end
-	local szFailMsg = format("ÐèÒªÔÚÆß´ó³ÇÊÐ£¬°Ë´óÐÂÊÖ´åÒÔÍâÇøÓò²ÅÄÜÖÖ", szTreeType)
+	local szFailMsg = format("CÇn ph¶i trång ë ngoµi khu vùc thÊt ®¹i thµnh thÞ, b¸t ®¹i t©n thñ th«n míi trång ®­îc", szTreeType)
 	Talk(1, "", szFailMsg)
 	return
 end
@@ -66,7 +66,7 @@ function tbValenTree:CheckTeamConfig(szTreeType, nFlag)
 	if nNormSize ~= nil then
 		local nTeamSize = GetTeamSize()
 		if nNormSize and nTeamSize ~= nNormSize then
-			szFailMsg = format("ÇëÈ·±£ %sÄã×é¶Ó", nNormSize)
+			szFailMsg = format("Xin h·y ®¶m b¶o %s ng­êi tæ ®éi", nNormSize)
 			Talk(1, "", szFailMsg)
 			return
 		end
@@ -88,9 +88,9 @@ function tbValenTree:CheckTeamConfig(szTreeType, nFlag)
 			local nRedLineCount = CallPlayerFunction(nMemberIndex, CalcEquiproomItemCount, 6, 1, ValenAct_nRedLineIndex, -1)
 			if nRedLineCount == nil or nRedLineCount <= 0 then
 				if nFlag == ValenAct_nUnGrow then
-					szFailMsg = format("ÇëÈ·ÈÏÄãºÍÄãµÄÓÐÔµÈË¶¼ÓÐºìÏß£¬È»ºóÖÖÊ÷%s", szTreeType)
+					szFailMsg = format("Xin h·y x¸c nhËn ng­¬i vµ ng­êi h÷u duyªn cña ng­¬i ®Òu ®· cã T¬ Hång råi h·y trång c©y%s", szTreeType)
 				else
-					szFailMsg = "ÇëÈ·ÈÏÄãºÍÄãµÄÓÐÔµÈË¶¼ÓÐºìÏß£¬È»ºóÍê³ÉÈÎÎñ"
+					szFailMsg = "Xin h·y x¸c nhËn ng­¬i vµ ng­êi h÷u duyªn cña ng­¬i ®Òu ®· cã T¬ Hång råi h·y hoµn thµnh nhiÖm vô"
 				end
 				Talk(1, "", szFailMsg)
 				return
@@ -103,9 +103,9 @@ function tbValenTree:CheckTeamConfig(szTreeType, nFlag)
 		end
 		if nTmpSexScore ~= ValenAct_tbConfig[szTreeType].nSexScore then
 			if nFlag == ValenAct_nUnGrow then
-				szFailMsg = format("ÐèÒªÒìÐÔ×é¶Ó²ÅÄÜÖÖÊ÷%s!", szTreeType)
+				szFailMsg = format("CÇn ph¶i tæ ®éi cã giíi tÝnh kh¸c nhau míi cã thÓ trång c©y%s!", szTreeType)
 			else
-				szFailMsg = "ÐèÒªÒìÐÔ¼ä×é¶Ó²ÅÄÜÍê³ÉÈÎÎñ"
+				szFailMsg = "CÇn ph¶i tæ ®éi cã giíi tÝnh kh¸c nhau míi cã thÓ hoµn thµnh nhiÖm vô!"
 			end
 			Talk(1, "", szFailMsg)
 			return
@@ -115,9 +115,9 @@ function tbValenTree:CheckTeamConfig(szTreeType, nFlag)
 --By: NgaVN - 	È¥³ýºìÏßÑ°ÕÒÒöÔµºÅ¹¦ÄÜ
 --		if (floor(nRedlineScore/2)*2) ~= nRedlineScore then
 --			if nFlag == ValenAct_nUnGrow then
---				Talk(1, "", format("ÇëÈ·ÈÏÄãµÄ¶ÓÎéÊÇÓëÄãÓÐÔµµÄÈË»òÕßÊÇÄãµÄÅäÅ¼£¬È»ºó²ÅÄÜÀ´%s%s","²¥ÖÖ", szTreeType))
+--				Talk(1, "", format("Xin h·y x¸c nhËn ®éi ngò cña ng­¬i lµ ng­êi h÷u duyªn víi ng­¬i hoÆc ®· lµ phèi ngÉu cña ng­¬i sau ®ã míi ®Õn%s%s","Gieo h¹t", szTreeType))
 --			else
---				Talk(1, "", format("ÇëÈ·ÈÏÄãµÄ¶ÓÎéÊÇÓëÄãÓÐÔµµÄÈË»òÕßÊÇÄãµÄÅäÅ¼£¬È»ºó²ÅÄÜÀ´%s%s","ÕÕ¹Ë", szTreeType))
+--				Talk(1, "", format("Xin h·y x¸c nhËn ®éi ngò cña ng­¬i lµ ng­êi h÷u duyªn víi ng­¬i hoÆc ®· lµ phèi ngÉu cña ng­¬i sau ®ã míi ®Õn%s%s","Ch¨m sãc", szTreeType))
 --			end
 --			return 
 --		end
@@ -135,7 +135,7 @@ function tbValenTree:CheckCondition(szTreeType, nFlag)
 	local nLastTime = pActivity.TaskGroup:GetTask(TSK_SEED_CD_TIME)
 	local nDifTime =  GetCurServerTime() - nLastTime
 	if nDifTime < 15 then
-		Msg2Player(format("Äã¸Õ¸ÕÖÖÁËÒ»¿ÅÖÖ×Ó£¬ÇëµÈ%dÃëºó¼ÌÐøÖÖ", 15 - nDifTime))
+		Msg2Player(format("Ng­¬i võa trång mét h¹t gièng, xin h·y ®îi %d gi©y sau míi trång tiÕp", 15 - nDifTime))
 		return
 	end
 	pActivity.TaskGroup:SetTask(TSK_SEED_CD_TIME, GetCurServerTime()) 
@@ -191,7 +191,7 @@ end
 function tbValenTree:Create(szTreeType)
 	local nSubWordId, nX, nY = GetWorldPos()
 	local szPlayerName = GetName()
-	local szNpcName = format("%s µÄ %s", ValenAct_tbConfig[szTreeType].tbName[1], szPlayerName)
+	local szNpcName = format("%s cña %s", ValenAct_tbConfig[szTreeType].tbName[1], szPlayerName)
 	local nNpcId = ValenAct_tbNpcId[1]
 	local nMapIndex = SubWorldID2Idx(nSubWordId)
 	if nMapIndex and nMapIndex >= 0 then

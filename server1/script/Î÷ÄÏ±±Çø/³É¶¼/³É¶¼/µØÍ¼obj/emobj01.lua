@@ -5,8 +5,8 @@
 function main()
 	SetPropState()
 	AddEventItem(118)
-	Msg2Player("¼ñµ½Ò»¿éÁÁÒø¿ó. ")
+	Msg2Player("NhÆt ®­îc mét miÕng L­îng Ng©n Kho¸ng. ")
 	if (GetTask(1) > 10*256) and (GetTask(1) < 20*256) then
-		AddNote("ÔÚ³É¶¼Î÷±ßµÄÊ÷ÁÖÀïÕÒµ½Ò»¿éÁÁÒø¿ó. ")
+		AddNote("T×m thÊy mét miÕng L­îng Ng©n Kho¸ng trong khu rõng ë phİa t©y Thµnh §«. ")
 	end
 end;

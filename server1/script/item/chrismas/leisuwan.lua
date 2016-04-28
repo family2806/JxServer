@@ -5,6 +5,6 @@ SKILLLEVEL2 = 5;
 SKILLLEVEL3 = 0;
 SKILLLEVEL41 = 20;
 SKILLLEVEL42 = 18;
-SKILLEFECT = "20√Î÷”µƒº”ÀŸ";
+SKILLEFECT = "T®ng tËc ÆÈ di chuy”n trong 20 gi©y";
 
 Include([[\script\item\chrismas\head_jiasu.lua]]);

@@ -26,7 +26,7 @@ tbParam2EquipType = {
 function main(nItemIdx)
 	local n_param = tonumber(GetItemParam(nItemIdx, 1 ))
 	local tb = {nSpecificItem = tbParam2EquipType[n_param], nItem2Consume = nItemIdx}
-	tb.tbLog={"½ðÎÚ±¦Ïä","Ê¹ÓÃ½ðÎÚ±¦Ïä"}
+	tb.tbLog={"BaoRuongKimO","SuDungBaoRuongKimO"}
 	if n_param <= 0 or n_param == 11 then
 		return
 	end	
@@ -43,16 +43,16 @@ function GetDesc(nItem)
 	local n_param = tonumber(GetItemParam( nItem, 1 ))
 	local tbItemName = 
 	{
-		[1] = "½ðÎÚÏîÁ´±¦Ïä",
-		[2] = "½ðÎÚ¿ø±¦Ïä",	
-		[3] = "½ðÎÚÉÏ½ä±¦Ïä",
-		[4] = "½ðÎÚ»¤Íó±¦Ïä",
-		[5] = "½ðÎÚÑü´ø±¦Ïä",
-		[6] = "½ðÎÚÒÂ±¦Ïä",		
-		[7] = "½ðÎÚÎäÆ÷±¦Ïä",
-		[8] = "½ðÎÚÐ¬±¦Ïä",
-		[9] = "½ðÎÚÅå±¦Ïä",
-		[10] = "½ðÎÚÏÂ½ä±¦Ïä",
+		[1] = "B¶o R­¬ng Kim ¤ H¹ng Liªn",
+		[2] = "B¶o R­¬ng Kim ¤ Kh«i",	
+		[3] = "B¶o R­¬ng Kim ¤ Th­îng Giíi",
+		[4] = "B¶o R­¬ng Kim ¤ Hé UyÓn",
+		[5] = "B¶o R­¬ng Kim ¤ Yªu §¸i",
+		[6] = "B¶o R­¬ng Kim ¤ Y",		
+		[7] = "B¶o R­¬ng Kim ¤ Vò KhÝ",
+		[8] = "B¶o R­¬ng Kim ¤ Hµi",
+		[9] = "B¶o R­¬ng Kim ¤ Béi",
+		[10] = "B¶o R­¬ng Kim ¤ H¹ Giíi",
 	}
 	szDesc = szDesc..format("<color=yellow>%s<color>", tbItemName[n_param]);
 	return szDesc;

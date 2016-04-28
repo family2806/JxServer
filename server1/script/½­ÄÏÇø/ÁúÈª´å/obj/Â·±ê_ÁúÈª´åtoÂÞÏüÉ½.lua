@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("È¥ÂŞÏüÉ½", 0)
+Say("§i La Tiªu s¬n", 0)
 
 end;

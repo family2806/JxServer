@@ -1,7 +1,7 @@
 Include("\\script\\lib\\pay.lua")
 IncludeLib("FILESYS")
 tbLANTERNS_NPC = {
-		{ 2, 	36, 280, 600,	"\\settings\\event\\zhongqiuhuodong\\huashan_lantern.txt",		"\\script\\event\\great_night\\lantern\\lantern.lua", "»ªÉ½" },
+		{ 2, 	36, 280, 600,	"\\settings\\event\\zhongqiuhuodong\\huashan_lantern.txt",		"\\script\\event\\great_night\\lantern\\lantern.lua", "Hoa ®¨ng" },
 		{ 21,	37, 300, 600,	"\\settings\\event\\zhongqiuhuodong\\qingcheng_lantern.txt",	"\\script\\event\\great_night\\lantern\\lantern.lua", "Çà³ÇÉ½" },
 		{ 167, 	38, 300, 600,	"\\settings\\event\\zhongqiuhuodong\\diancang_lantern.txt",		"\\script\\event\\great_night\\lantern\\lantern.lua", "µã²ÔÉ½" },
 		{ 193, 	39, 300, 600,	"\\settings\\event\\zhongqiuhuodong\\wuyi_lantern.txt",			"\\script\\event\\great_night\\lantern\\lantern.lua", "ÎäÒÄÉ½" },
@@ -78,9 +78,9 @@ function create_lanterns()
 		local addcount = 0
 		local world = SubWorldID2Idx(tbLANTERNS_NPC[i][1])
 		if (world >= 0) then
-			ClearMapNpcWithName(tbLANTERNS_NPC[i][1], "»¨µÆ");
+			ClearMapNpcWithName(tbLANTERNS_NPC[i][1], "Hoa ®¨ng");
 			SubWorld = world
-			local lantern_count = 0					-- GetGlbValue( tbLANTERNS_NPC[i][2] ) ²»ÔÙ¼ÆËãÉÏ´ÎÊ£Óà»¨µÆÊıÁ¿
+			local lantern_count = 0					-- GetGlbValue( tbLANTERNS_NPC[i][2] ) ²»ÔÙ¼ÆËãÉÏ´ÎÊ£ÓàHoa ®¨ngÊıÁ¿
 			local lantern_addent = tbLANTERNS_NPC[i][3]
 			if ( lantern_count + lantern_addent > tbLANTERNS_NPC[i][4] ) then
 				lantern_addent = tbLANTERNS_NPC[i][4] - lantern_count
@@ -111,7 +111,7 @@ function add_rand_lanterns( npcfile, scriptfile, npcid, count )
 	for k, v in tbrow do
 		xpos = TabFile_GetCell(npcfile, k + 1, 1)
 		ypos = TabFile_GetCell(npcfile, k + 1, 2)
-		local npcidx = AddNpc(npcid, 1, SubWorld, xpos, ypos, 1, "»¨µÆ");
+		local npcidx = AddNpc(npcid, 1, SubWorld, xpos, ypos, 1, "Hoa ®¨ng");
 		if ( npcidx > 0 ) then
 			SetNpcScript(npcidx, scriptfile)
 			SetNpcParam(npcidx,4,1)
@@ -123,24 +123,24 @@ end
 
 function go_lanternplace()
 	if ( IsCharged() ~= 1 ) then
-		Say("<#>ÄãÒª³äÖµ²Å¿ÉÒÔ²Î¼Ó»¨µÆ»î¶¯!", 0)
+		Say("<#>B¹n ph¶i n¹p thÎ míi cã thÓ tham gia Ho¹t ®éng Hoa ®¨ng!", 0)
 		return 0;
 	end;
 	
 	local ntime = tonumber(GetLocalDate("%H%M"));
 	if (ntime < LANTERN_START or ntime >= LANTERN_END) then
-		Say("»¨µÆ»î¶¯Ö»´Ó19h:00µ½21h:00! Çë´ı»áÔÙÀ´£¡", 0)
+		Say("Ho¹t ®éng Hoa ®¨ng chØ b¾t ®Çu tõ 19h:00 ®Õn 21h:00! Xin quay l¹i sau nhĞ!", 0)
 		return 0;
 	end;
 	
-	Say("ÄãÏëµ½ÄÄ¸öÇøÓò²Î¼Ó»¨µÆ£ºÇà³ÇÉ½£¬ÎäÒÄÉ½£¬µã²ÔÉ½£¬»ªÉ½?",5, "<#> Çà³ÇÉ½/#lantern_enter_lantern(21)", "<#> ÎäÒÄÉ½/#lantern_enter_lantern(193)", "<#> ÎäÒÄÉ½/#lantern_enter_lantern(167)", "<#> »ªÉ½/#lantern_enter_lantern(2)", "<#> ¶Ô»°½áÊø!/OnCancel");
+	Say("B¹n muèn ®Õn khu vùc nµo ®Ó tham gia Hoa ®¨ng: Thanh Thµnh s¬n, Vò Di S¬n, §iÓm Th­¬ng s¬n, Hoa s¬n?",5, "<#> Thanh Thµnh s¬n/#lantern_enter_lantern(21)", "<#> Vò Di s¬n/#lantern_enter_lantern(193)", "<#> §iÓm Th­¬ng s¬n/#lantern_enter_lantern(167)", "<#> Hoa S¬n/#lantern_enter_lantern(2)", "<#> KÕt thóc ®èi tho¹i!/OnCancel");
 end;
 
 function del_all_lantern()
 	for i = 1, getn(tbLANTERNS_NPC) do
 		local world = SubWorldID2Idx(tbLANTERNS_NPC[i][1])
 		if (world >= 0) then
-			ClearMapNpcWithName(tbLANTERNS_NPC[i][1], "»ªÉ½");
+			ClearMapNpcWithName(tbLANTERNS_NPC[i][1], "Hoa ®¨ng");
 		end
 	end
 end

@@ -1,31 +1,31 @@
 Include("\\script\\tagnewplayer\\func_check.lua");
 function GetLevel165()
 	if (CheckObject() ~= 3) then
-		Talk(1, "", "Çë¼ì²é²Î¼ÓÌõ¼ş.");
+		Talk(1, "", "Xin h·y kiÓm tra l¹i ®iÒu kiÖn tham gia.");
 		return
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel165) ~= 1) then
-			Talk(1, "", "¸Ã½±ÀøÖ»ÁìÒ»´Î !");
+			Talk(1, "", "PhÇn th­ëng nµy chØ nhËn 1 lÇn !");
 			return
 	end
 	SetBit2GetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel165, 1)
 	LevelUp(165)
-	Msg2Player("´óÏÀ¸Õ¸Õ´ïµ½165¼¶")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡165¼¶½±Àø")
+	Msg2Player("§¹i hiÖp võa ®­îc th¨ng lªn cÊp 165")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."nhËn phÇn th­ëng th¨ng 165 cÊp")
 end
 
 
 function GetLevel120()
 	if (CheckObject() ~= 1) then
-		Talk(1, "", "Çë¼ì²é²Î¼ÓÌõ¼ş.");
+		Talk(1, "", "Xin h·y kiÓm tra l¹i ®iÒu kiÖn tham gia.");
 		return
 	end
 	if (CheckGetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel120) ~= 1) then
-			Talk(1, "", "¸Ã½±ÀøÖ»ÁìÒ»´Î !");
+			Talk(1, "", "PhÇn th­ëng nµy chØ nhËn 1 lÇn !");
 			return
 	end
 	SetBit2GetItem(NWP_EXTPOINT, NWP_E5_BIT_GetLevel120, 1)
 	LevelUp(120)
-	Msg2Player("´óÏÀ¸Õ¸Õ´ïµ½120¼¶")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."°²°î»Æ½ğÁî"..GetAccount().."\t"..GetName().."\t".."ÁìÈ¡ÖØÉúÒ»´ÎºóÉıÎª120¼¶µÄ½±Àø")
+	Msg2Player("§¹i hiÖp võa ®­îc th¨ng lªn cÊp 120")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim LÖnh"..GetAccount().."\t"..GetName().."\t".."nhËn phÇn th­ëng th¨ng 120 cÊp sau khi trïng sinh lÇn 1")
 end

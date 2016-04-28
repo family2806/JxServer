@@ -20,9 +20,9 @@ function main()
 				local pos = GetMapEnterPos(SubWorldIdx2MapCopy(SubWorld))
 				SetPos(pos.x, pos.y)
 				if (GetTask(TASK_LP_COUNT) > 0) then
-					Say("°ï»á½ûµØ, ²»ÄÜ½øÈë! Èç¹ûÓĞÈÎÎñÁîÅÆ£¬ÇëÕÒ°ï»á³µ·ò¶Ô»°.", 0)
+					Say("CÊm ®Şa bang héi, kh«ng ®­îc b­íc vµo! NÕu cã nhiÖm vô lÖnh bµi xin h·y t×m xa phu bang héi ®èi tho¹i.", 0)
 				else
-					Say("°ï»á½ûµØ, Ã»ÓĞÃüÁî£¬²»µÃ½øÈë!", 0)
+					Say("CÊm ®Şa bang héi, kh«ng ®­îc lÖnh kh«ng ®­îc phĞp b­íc vµo!", 0)
 				end;
 			end
 		end
@@ -39,15 +39,15 @@ function tongmap_entrance(bNoExpireWarning)
 			local nTongMapExpireState = tongmap_check_expire(nMapTongID);
 			if (nTongMapExpireState == 2) then
 				nEnterForbidden = 1;
-				Say("°ï»áÇøÓòÒÑ¹ıÊ¹ÓÃÊ±ÏŞ!", 0);
+				Say("Khu vùc bang héi ®· qu¸ thêi h¹n sö dông!", 0);
 			elseif (nTongMapExpireState == 1 and nMyTongID == nMapTongID and bNoExpireWarning ~= 1) then
-				Msg2Player("¹ó°ï°ï»áÇøÓòÒÑ¹ıÊ±ÏŞ<color=yellow>"..tongmap_get_expire_date(nMapTongID).."<color>!");
+				Msg2Player("Khu vùc bang héi cña quı bang ®· s¾p ®Õn kú h¹n <color=yellow>"..tongmap_get_expire_date(nMapTongID).."<color>!");
 			elseif (nMyTongID ~= nMapTongID and TONG_GetTongMapBan(nMapTongID) == 1) then
 				nEnterForbidden = 1;
 				if (GetTask(TASK_LP_COUNT) > 0) then
-					Say("°ï»á½ûµØ, ²»ÄÜ½øÈë! Èç¹ûÓĞÈÎÎñÁîÅÆ£¬ÇëÕÒ°ï»á³µ·ò¶Ô»°.", 0)
+					Say("CÊm ®Şa bang héi, kh«ng ®­îc b­íc vµo! NÕu cã nhiÖm vô lÖnh bµi xin h·y t×m xa phu bang héi ®èi tho¹i.", 0)
 				else
-					Say("°ï»á½ûµØ, Ã»ÓĞÃüÁî£¬²»µÃ½øÈë!", 0)
+					Say("CÊm ®Şa bang héi, kh«ng ®­îc lÖnh kh«ng ®­îc phĞp b­íc vµo!", 0)
 				end
 			end
 			if (nEnterForbidden == 1) then

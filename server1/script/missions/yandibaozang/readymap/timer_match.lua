@@ -25,10 +25,10 @@ function YDBZ_ready_start_match()
 	local teams_count = GetMissionV(YDBZ_READY_TEAM)
 	if (player_count == 0 or teams_count < YDBZ_TEAM_START_LIMIT) then
 		-- È¡Ïû±ÈÈü
-		Msg2MSAll(YDBZ_READY_MISSION,"ÓÉÓÚ×é¶Ó²»×ã£¬²»ÄÜ´ò¿ªÑ×µÛ±¦²Ø")
+		Msg2MSAll(YDBZ_READY_MISSION,"Do v× tæ ®éi kh«ng ®ñ, kh«ng thÓ më b¶o tµng Viªm §Õ")
 		YDBZ_cancel_match();
 	else
-		broadcast("Ñ×µÛ±¦²Ø»î¶¯ÒÑÕýÊ½¿ªÊ¼£¬¸÷Î»¸ßÊÖÕýÔÚ±ÈÈü×´Ì¬¡£");
+		broadcast("Ho¹t ®éng b¶o tµng Viªm §Õ ®· chÝnh thøc b¾t ®Çu, c¸c cao thñ ®ang trong tr¹ng th¸i thi ®Êu");
 		SubWorld = oldworld
 		YDBZ_ready_start_missions(YDBZ_MAP_MAP, SubWorld,YDBZ_MISSION_MATCH,YDBZ_READY_MISSION);	
 		
@@ -63,8 +63,8 @@ function YDBZ_ready_start_match()
 	YDBZ_ready_close_match()
 end
 function YDBZ_ready_match()
-	broadcast(format("Ñ×µÛ±¦²Ø´³¹Ø±¨ÃûÊ±¼äÒÑ½áÊø£¬Çë¸÷ÎäÁÖÈËÊ¿×¼±¸×îºóÒ»´Î£¬»¹ÓÐ%s ¿ªÊ¼.",YDBZ_READY_LIMIT_WAIT));
-	Msg2MSAll(YDBZ_READY_MISSION,format("Ñ×µÛ±¦²Ø´³¹Ø±¨ÃûÊ±¼äÒÑ½áÊø£¬Çë¸÷ÎäÁÖÈËÊ¿×¼±¸×îºóÒ»´Î£¬»¹ÓÐ<color=yellow>%s Ãë<color> ¿ªÊ¼Õù¶á.",YDBZ_READY_LIMIT_WAIT))
+	broadcast(format("Thêi gian b¸o danh v­ît ¶i b¶o tµng viªm ®Õ ®· kÕt thóc, xin mêi c¸c vâ l©m nh©n sü h·y chuÈn bÞ lÇn cuèi, cßn %s b¾t ®Çu.",YDBZ_READY_LIMIT_WAIT));
+	Msg2MSAll(YDBZ_READY_MISSION,format("Thêi gian b¸o danh b¶o tµng Viªm §Õ kÕt thóc, xin mêi c¸c vÞ vâ l©m cao thñ chuÈn bÞ lÇn cuèi. Cßn <color=yellow>%s gi©y<color> b¾t ®Çu tranh ®o¹t.",YDBZ_READY_LIMIT_WAIT))
 	StartMissionTimer(YDBZ_READY_MISSION, YDBZ_READY_TIMER, YDBZ_READY_LIMIT_WAIT * 18);
 	SetMissionV(YDBZ_READY_STATE, 2);
 end
@@ -72,7 +72,7 @@ end
 function YDBZ_ready_broad_talk()
 	local broadstate = GetMissionV(YDBZ_READY_BROAD_STATE)
 	local nlimittime = floor((YDBZ_READY_LIMIT_SIGNUP - (broadstate * YDBZ_READY_LIMIT_BROAD))/60)
-	Msg2MSAll(YDBZ_READY_MISSION,format("Ñ×µÛ±¦²Ø´³¹Ø»¹Ê£<color=yellow>%s ·Ö<color> ½áÊø±¨ÃûÊ±¼ä£¬Çë¿ìÈ¥±¨Ãû.",nlimittime))
+	Msg2MSAll(YDBZ_READY_MISSION,format("V­ît ¶i b¶o tµng viªm ®Õ cßn <color=yellow>%s phót<color> kÕt thóc thêi gian b¸o danh, h·y nhanh nhanh b¸o danh.",nlimittime))
 	SetMissionV(YDBZ_READY_BROAD_STATE,broadstate + 1)
 end
 -- ¹Ø±Õ±ÈÈü¶¨Ê±Æ÷

@@ -36,9 +36,9 @@ function OnTimer()
 	
 	if ( t == RUNGAME_TIME ) then	--¿ªÕ½Ê±¼äµ½£¬ÌáÊ¾ÊØ³Ç¿ªÊ¼£¬²¢Ë¢µÚÒ»Åú¹Ö
 		RunMission(MISSIONID)
-		AddGlobalNews("ÎÀ¹úÕ½ÕùÒÑ¿ªÊ¼, "..tbDEFENCE_ANNOUNCE[citycamp])
-		Msg2MSAll( MISSIONID, "<color=yellow>µÐ¾üÒÑ¿ªÊ¼¹¥³Ç£¬Îª±£ÎÀÎÒÃÇµÄ³Ç³Ø£¬¸÷Î»½«Ê¿³å°¡!" )
-		cd_writelog(cityname.."±£ÎÀ\t³Ç³Ø\t"..GetMSPlayerCount(MISSIONID, 0))
+		AddGlobalNews("ChiÕn tranh vÖ quèc ®· b¾t ®Çu, "..tbDEFENCE_ANNOUNCE[citycamp])
+		Msg2MSAll( MISSIONID, "<color=yellow>Qu©n ®Þch ®· b¾t ®Çu c«ng thµnh, v× ®Ó b¶o vÖ thµnh chóng ta c¸c T­íng sÜ h·y x«ng lªn!" )
+		cd_writelog(cityname.."B¾t ®Çu.\tsè ng­êi\t"..GetMSPlayerCount(MISSIONID, 0))
 		cd_buildfightnpc( t )
 		cd_callAttackCarNpc()
 		--cd_callnpc(t)
@@ -50,18 +50,18 @@ function OnTimer()
 		local RestMin, RestSec = GetMinAndSec(RestTime);
 		
 		if ( mod( t, 9 ) == 0 ) then
-			cd_sendmsg2msall()		--Ã¿¸ô3·ÖÖÓ£¬ÌáÊ¾µ±Ç°XXÀàÐÍ¹Ö£¬»¹ÓÐ¶àÉÙÒªÉ±
+			cd_sendmsg2msall()		--Ã¿¸ô3phótÖÓ£¬ÌáÊ¾µ±Ç°XXÀàÐÍ¹Ö£¬»¹ÓÐ¶àÉÙÒªÉ±
 		end
 		if ( mod(t, 60) == 0 and RestMin ~= 0) then
 			cd_sendmsg2global()
 		end
-		if ( t < LASTREPORT_TIME ) then	--Ã¿¸ô5·ÖÖÓÌáÊ¾½áÊøÊ±¼ä£¬×îºó5·ÖÖÓÃ¿·ÖÖÓÌáÊ¾Ò»´Î
+		if ( t < LASTREPORT_TIME ) then	--Ã¿¸ô5phótÖÓÌáÊ¾½áÊøÊ±¼ä£¬×îºó5phótÖÓÃ¿phótÖÓÌáÊ¾Ò»´Î
 			if ( mod( t, 15 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "ÊØ³Ç½áÊøÊ±¼ä<color=yellow>"..RestMin.."·Ö" )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc thñ thµnh cßn<color=yellow>"..RestMin.."phót" )
 			end
 		else
 			if ( mod( t, 3 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "ÊØ³Ç½áÊøÊ±¼ä<color=yellow>"..RestMin.."·Ö" )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc thñ thµnh cßn<color=yellow>"..RestMin.."phót" )
 			end
 		end
 		if (t >= CALLBOSS_ZHUSHUAI) then
@@ -70,19 +70,19 @@ function OnTimer()
 			end
 		else
 			if ( mod(t, 3) == 0 ) then
-				cd_callnpc(t)			--Ã¿1·ÖÖÓ
+				cd_callnpc(t)			--Ã¿1phótÖÓ
 			end
 		end
-		if ( mod( t, 15 )) == 0 then	--Ã¿¸ô5·ÖÖÓË¢ÈýÖ»¹¥³Ç³µ
+		if ( mod( t, 15 )) == 0 then	--Ã¿¸ô5phótÖÓË¢ÈýÖ»¹¥³Ç³µ
 			cd_callAttackCarNpc()
 		end
 	else
-		if ( mod( t, 18 ) == 0 ) then	--±¨ÃûÊ±¼äÖÐ£¬Ã¿6·ÖÖÓÌáÊ¾±¨Ãû½áÊøÊ±¼ä£¬²¢·¢¹ö¶¯ÏûÏ¢
+		if ( mod( t, 18 ) == 0 ) then	--±¨ÃûÊ±¼äÖÐ£¬Ã¿6phótÖÓÌáÊ¾±¨Ãû½áÊøÊ±¼ä£¬²¢·¢¹ö¶¯ÏûÏ¢
 			RestTime = (RUNGAME_TIME - t) * SMALL_TIME / FRAME2TIME;
 			RestMin, RestSec = GetMinAndSec(RestTime);
 			if ( RestMin > 0 ) then
-				Msg2MSAll( MISSIONID, "±¨ÃûÊ£ÓàÊ±¼äÎª <color=yellow>"..RestMin.."·Ö" )
-				AddGlobalNews("Õ½ÕùÒÑ¿ªÊ¼±¨Ãû£¬Ïë²Î¼ÓÂð?"..tbDEFENCE_ANNOUNCE[citycamp].."¿ªÕ½Ê±¼ä»¹ÓÐ"..RestMin.."·Ö")
+				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
+				AddGlobalNews("Cuéc chiÕn ®· b¾t ®Çu nhËn b¸o danh, cã muèn tham gia kh«ng?"..tbDEFENCE_ANNOUNCE[citycamp].."Thêi gian khai chiÕn cßn"..RestMin.."phót")
 			end
 		end
 	end
@@ -96,9 +96,9 @@ function cd_callAttackCarNpc()
 	end
 	count_1 = cd_addsomenpc(tbTNPC_SOLDIER[npccamp][6], 3, tbGuaiWu, tbAimPos, tbSOLDIER_NAME[6], 1, nil, tbFILE_NPCDEATH[6])
 	if count_1 < 3 then
-		print(count_1,"»ðÅÚ³µÉÙÓÚ3.")
+		print(count_1,"Xe háa ph¸o Ýt h¬n 3.")
 	end
-	Msg2MSAll( MISSIONID, format("<color=yellow>%s ¶Ô·½ÕýÍùÕâÀï½ø¹¥£¬´ó¼ÒÅ¬Á¦·´¿¹°¡®ì!!!<color>", tbSOLDIER_NAME[6]))
+	Msg2MSAll( MISSIONID, format("<color=yellow>%s cña ®èi ph­¬ng ®ang tiÕn c«ng vµo ®©y, mäi ng­êi h·y ra søc chèng ®ì!!!<color>", tbSOLDIER_NAME[6]))
 end
 
 
@@ -114,7 +114,7 @@ function cd_buildfightnpc(t)
 	for i = 1, fileheight do
 		posx = GetTabFileData( WEIBING_POSFILE, i + 1, 1 )
 		posy = GetTabFileData( WEIBING_POSFILE, i + 1, 2 )
-		local npcindex = AddNpc(tbTNPC_SOLDIER[ GetMissionV(MS_CITYCAMP) ][1], 95, SubWorld, posx, posy, 1, "¹¥³Ç½«¾ü", 0)
+		local npcindex = AddNpc(tbTNPC_SOLDIER[ GetMissionV(MS_CITYCAMP) ][1], 95, SubWorld, posx, posy, 1, "VÖ binh thñ thµnh", 0)
 		if (npcindex > 0) then
 			SetNpcDeathScript(npcindex, FILE_SHOUCHENG_DEATH[1])
 			count = count + 1
@@ -128,7 +128,7 @@ function cd_buildfightnpc(t)
 	for i = 1, fileheight do
 		posx = GetTabFileData(JIANGJUN_POSFILE, i + 1, 1)
 		posy = GetTabFileData(JIANGJUN_POSFILE, i + 1, 2)
-		local npcindex = AddNpc(tbTNPC_SOLDIER[ GetMissionV(MS_CITYCAMP) ][2], 95, SubWorld, posx, posy, 1, "ÊØ³Ç½«¾ü", 1)
+		local npcindex = AddNpc(tbTNPC_SOLDIER[ GetMissionV(MS_CITYCAMP) ][2], 95, SubWorld, posx, posy, 1, "T­íng qu©n thñ thµnh", 1)
 		if (npcindex > 0) then
 			SetNpcDeathScript(npcindex, FILE_SHOUCHENG_DEATH[2])
 			count = count + 1
@@ -146,7 +146,7 @@ function cd_buildfightnpc(t)
 		end
 		posx = tbPos_BAOTAI[i][1] * 32
 		posy = tbPos_BAOTAI[i][2] * 32
-		npcindex = AddNpc(npcid, 95, SubWorld, posx, posy, 1, "Éñ±ø", 1)
+		npcindex = AddNpc(npcid, 95, SubWorld, posx, posy, 1, "ThÇn binh", 1)
 		if (npcindex > 0) then
 			SetNpcCurCamp(npcindex, npccamp)
 		end
@@ -232,10 +232,10 @@ function cd_addcommonnpc(tolnpc, bornfile, aimfile, npcid, npclevel, npctitle, b
 	local count_2 = 0
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 
 	local tbborn_pos = {}
@@ -278,7 +278,7 @@ function cd_sendmsg2msall()
 	local restnpc_5 = GetMissionV( MS_MAXCOUNTNPC_1 + 4 )
 	
 	local szMsg = "";
-	Msg2MSAll(MISSIONID, format("Ä¿Ç°ÊØ³ÇÔöÔ®µÄÈËÊýÎª <color=yellow>%d ÈË£¬ÊØ³Ç½«Ê¿Îª <color=yellow>%d ng­êi; ÊØ³ÇÖµ %d µã.",GetMSPlayerCount(MISSIONID, 0),GetMissionV(MS_SHOUCHENGWEIBING),GetMissionV(MS_HOMEDEFENCE)))
+	Msg2MSAll(MISSIONID, format("Sè qu©n tiÕp viÖn thñ thµnh hiÖn t¹i lµ <color=yellow>%d ng­êi; t­íng sü thñ thµnh lµ <color=yellow>%d ng­êi; ®iÓm thñ thµnh %d ®iÓm.",GetMSPlayerCount(MISSIONID, 0),GetMissionV(MS_SHOUCHENGWEIBING),GetMissionV(MS_HOMEDEFENCE)))
 	if (GetMissionV(MS_SMALL_TIME) < CALLBOSS_ZHUSHUAI) then
 		if ( restnpc_1 ~= 0 ) then
 			szMsg = szMsg..tbSOLDIER_NAME[1].." <color=yellow>"..restnpc_1.."<color>ng­êi "
@@ -298,13 +298,13 @@ function cd_sendmsg2msall()
 	end
 	if (szMsg == "") then
 	else
-		Msg2MSAll(MISSIONID, "ÊØ³ÇÕ½Í¨±¨£ºÄ¿Ç°¶Ô·½±øÁ¦Îª"..szMsg)
+		Msg2MSAll(MISSIONID, "Thñ thµnh chiÕn th«ng b¸o: HiÖn binh lùc ®èi ph­¬ng lµ:"..szMsg)
 	end
-	cd_writelog(date("%m%d%H%M\t")..format("Ê£Óà %s %d\t%s %d\t%s %d\t%s %d\t%s %d\t ÊØ³ÇÎÀ±ø%d",tbSOLDIER_NAME[1],restnpc_1,tbSOLDIER_NAME[2],restnpc_2,tbSOLDIER_NAME[3],restnpc_3,tbSOLDIER_NAME[4],restnpc_4,tbSOLDIER_NAME[5],restnpc_5, GetMissionV(MS_SHOUCHENGWEIBING)))
+	cd_writelog(date("%m%d%H%M\t")..format("d­ l¹i %s %d\t%s %d\t%s %d\t%s %d\t%s %d\t VÖ binh thñ thµnh %d",tbSOLDIER_NAME[1],restnpc_1,tbSOLDIER_NAME[2],restnpc_2,tbSOLDIER_NAME[3],restnpc_3,tbSOLDIER_NAME[4],restnpc_4,tbSOLDIER_NAME[5],restnpc_5, GetMissionV(MS_SHOUCHENGWEIBING)))
 end
 
 function cd_sendmsg2global()
-	local szMsg = "ÎÀ¹ú·é»ðÁ¬³Ç"..GetMissionS(MS_S_CD_NAME).."Õ½ÕùÕý´¦ÓÚ¼¤Õ½½×¶Î."..tbDEFENCE_ANNOUNCE[GetMissionV(MS_CITYCAMP)]
+	local szMsg = "VÖ quèc Phong Háa liªn thµnh"..GetMissionS(MS_S_CD_NAME).."ChiÕn tranh ®ang trong giai ®o¹n ¸c liÖt."..tbDEFENCE_ANNOUNCE[GetMissionV(MS_CITYCAMP)]
 	AddGlobalNews(szMsg)
 end
 
@@ -317,16 +317,16 @@ function call_boss_zhushuai()
 	end
 	local citycamp = GetMissionV( MS_CITYCAMP )
 	local npccamp = 1
-	local npcname = "ËÎ¾ü"
+	local npcname = "Qu©n Tèng"
 	if ( citycamp == 1 ) then
 		npccamp = 2
-		npcname = "½ð¾ü"
+		npcname = "Qu©n Kim"
 	end
 	cd_addgoldennpc(npcfile, tbTNPC_SOLDIER[npccamp][5], tbSOLDIER_LEVEL[5], npcname..tbSOLDIER_NAME[5], 1, npccamp, tbFILE_NPCDEATH[5])
 	cd_writelog(date("%m%d%H%M ")..format(" call yuanshuai = %d", filehigh))
 
 	SetMissionV( MS_BOSS5_DOWN, 1 )
-	Msg2MSAll( MISSIONID, "<color=pink>ÊØ³ÇÕ½±¨:"..npcname..tbSOLDIER_NAME[5].."×Ô¼º³öÕó£¬¸÷Î»Ê¿±øÒªÐ¡ÐÄ·ÀÊØ!" )
+	Msg2MSAll( MISSIONID, "<color=pink>Thñ thµnh chiÕn b¸o:"..npcname..tbSOLDIER_NAME[5].."Tù m×nh xuÊt trËn! C¸c Binh sÜ h·y cÈn thËn phßng thñ!!" )
 end
 
 function cd_addgoldennpc(npcfile, npcid, npclevel, npcname, boss, npccamp, deathscript)

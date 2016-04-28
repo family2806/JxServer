@@ -25,12 +25,12 @@ function pActivity:UseNewYearGift()
 	local nCurrTime = tonumber(GetLocalDate("%Y%m%d"))
 	if nCurrTime >= nStartTime and nCurrTime < nEndTime then
 		local tbMiniGameAward = {
-			{szName="Ãæ¾ß-ÁúÖé",tbProp={0,11,75,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
-			{szName="Ãæ¾ß-ÁúÍ·",tbProp={0,11,76,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
-			{szName="Ãæ¾ß-ÁúÉí",tbProp={0,11,77,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
-			{szName="Ãæ¾ß-ÁúÎ²",tbProp={0,11,78,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
+			{szName="MÆt n¹ - Long Ch©u",tbProp={0,11,75,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
+			{szName="MÆt n¹ - §Çu Rång",tbProp={0,11,76,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
+			{szName="MÆt n¹ - Th©n Rång",tbProp={0,11,77,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
+			{szName="MÆt n¹ - §u«i Rång",tbProp={0,11,78,1,0,0},nCount=1,nRate=20,nExpiredTime=10080},
 		}
-		tbAwardTemplet:Give(tbMiniGameAward, 1, {EVENT_LOG_TITLE, "Ê¹ÓÃÐÂÄêÀñÎïÁìÈ¡Ãæ¾ß"})
+		tbAwardTemplet:Give(tbMiniGameAward, 1, {EVENT_LOG_TITLE, "SuDungLeVatNamMoiNhanMatNa"})
 	end
 	
 end
@@ -38,7 +38,7 @@ end
 function pActivity:UseNewYearFireworks()
 	local AWARD_TABLE = tbAwardList["Fireworks"]
 	tbAwardTemplet:Give(AWARD_TABLE, 1, {EVENT_LOG_TITLE, "get gift award by item"})
-	tbVngTransLog:Write("201201_event_tet/", 22, "Ê¹ÓÃÐÂÄêÀñÎï", "N/A", 1)
+	tbVngTransLog:Write("201201_event_tet/", 22, "SuDungPhaoHoaNamMoi", "N/A", 1)
 	local nSkillId = 1175
 	local _,nX32,nY32 = GetWorldPos()
 	CastSkill(nSkillId, 1, nX32*32, nY32*32) -- ÐÂÄê¿ìÀÖÑÌ»¨¼¼ÄÜ
@@ -52,12 +52,12 @@ function pActivity:CheckFireworksUseTime()
 	if nCurrTime >= nStartTime and nCurrTime < nEndTime then
 		return 1
 	else
-		Msg2Player(format("Ä¿Ç°Ê±¼ä²»¶Ô£¬ÇëµÈµ½%3$d-%2$d-%1$d µ½ %5$d-%4$d-%1$d Ê¹ÓÃÅ¶",2012,1,23,1,31))
+		Msg2Player(format("Thêi gian hiÖn t¹i kh«ng ®óng, xin h·y ®îi ®Õn %3$d-%2$d-%1$d ®Õn %5$d-%4$d-%1$d h·y sö dông nhÐ!",2012,1,23,1,31))
 	end
 end
 
 function pActivity:AddPlutus()
-	local szNpcName = "´ó²ÆÉñ"
+	local szNpcName = "§¹i ThÇn Tµi"
 	local nNpcId = 1528
 	local tbNpcPos = {
 		{176,1585,2953},
@@ -75,7 +75,7 @@ function pActivity:AddGiftNpc()
 	if nMapIndex < 0 then
 		return
 	end
-	local szNpcName = "ÐÂÄêÀñÎï"
+	local szNpcName = "LÔ VËt N¨m Míi"
 	local nNpcId = 1288
 	for i=1, getn(%GIFT_POS) do
 		local nX, nY = %GIFT_POS[i][1], %GIFT_POS[i][2]
@@ -95,7 +95,7 @@ function pActivity:ExpiredTime()
 end
 
 function pActivity:CheckGifeGetDaily()
-	if self:CheckTaskDaily(%TSK_GET_NEWYEAR_GIFT_DAILY, %MAX_GET_NEWYEAR_GIFT_DAILY, "½ñÌìÄãÒÑ¾­ÊÕ¼¯¹»ÁË,Ã÷ÌìÔÙÀ´°É", "<") == 1 then
+	if self:CheckTaskDaily(%TSK_GET_NEWYEAR_GIFT_DAILY, %MAX_GET_NEWYEAR_GIFT_DAILY, "H«m nay ng­¬i ®· thu thËp ®ñ, ngµy mai h·y quay l¹i nhÐ!", "<") == 1 then
 		return 1
 	else
 		return 0

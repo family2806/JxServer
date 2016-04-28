@@ -5,5 +5,5 @@
 
 
 function main()
-	Talk(1,"","Õâ¸öºüÀê¾«£¬ÒÔÎªÓĞµã×ËÉ«£¬ÏëÀ´¹´ÒıÎÒÀÏ¹«£¬ÍıÏë!")
+	Talk(1,"","Hõm, con hå ly tinh kia, û cã chót nhan s¾c, ®Şnh ®Õn c­íp chång ta h¶, thËt väng t­ëng!")
 end

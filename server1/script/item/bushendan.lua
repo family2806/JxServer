@@ -11,7 +11,7 @@ function main(nItemIdx)
 		nexp = 10000000;
 	end
 	AddOwnExp(nexp);
-	Msg2Player("祝贺你获得 "..nexp.."经验");
+	Msg2Player("Ch骳 m鮪g b筺 nh薾 頲 "..nexp.."kinh nghi謒 ");
 	WriteLog(format("[Item Use]\t Data:%s\t Account:%s\t Name:%s UseItem:%s\t Effect:Exp Add %d",GetLocalDate("%Y-%m-%d %H:%M:%S"),GetAccount(),GetName(),GetItemName(nItemIdx),nexp));
 
 end

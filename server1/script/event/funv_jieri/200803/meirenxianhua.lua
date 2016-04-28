@@ -12,66 +12,66 @@ funv_jieri_meiren.ntask = 1878
 funv_jieri_meiren.LIMIT_LEVEL = 50
 funv_jieri_meiren.tbitem =
 {
-	meigui = {g=6,d=1,p=1681,szname="Ãµ¹å»¨Êø",nexp=0.001,limit=25},
-	juhua = {g=6,d=1,p=1682,szname="¾Õ»¨Êø",nmanexp=1000000,nmaleexp=1500000,limit=125},
+	meigui = {g=6,d=1,p=1681,szname="Bã hoa hång",nexp=0.001,limit=25},
+	juhua = {g=6,d=1,p=1682,szname="Bã hoa cóc",nmanexp=1000000,nmaleexp=1500000,limit=125},
 }
 function main()
 	local ndate = tonumber(GetLocalDate("%y%m%d%H"))
 	if ndate < funv_jieri_meiren.ndatestart or ndate > funv_jieri_meiren.ndateend then
-		Say("ÔİÊ±Ã»ÓĞ»î¶¯.",0)
+		Say("T¹m thêi ch­a cã ho¹t ®éng.",0)
 		return
 	end
-	Say("ÄÑµÀ¸÷Î»´óÏÀÏëÒªËÍÎÒÊ²Ã´»¨Âğ?",3,"ÎÒÏëËÍÃµ¹å»¨./#funv_jieri_meiren:zengsongmeigui(1)","ÎÒÏëËÍ¾Õ»¨./#funv_jieri_meiren:zengsongjuhua(1)","Àë¿ª/NoChoice")
+	Say("Ch¼ng hay c¸c h¹ muèn tÆng ta hoa g× nhØ?",3,"Ta muèn tÆng bã hoa hång./#funv_jieri_meiren:zengsongmeigui(1)","Ta muèn tÆng bã hoa cóc./#funv_jieri_meiren:zengsongjuhua(1)","Tho¸t ra/NoChoice")
 end
 
 function funv_jieri_meiren:zengsongmeigui(sel)
 	if self:check_level() == 0 then
-		Say("50¼¶ÒÔÉÏ³äÖµµÄÈËÎï²Å¿ÉÒÔËÍ»¨.",0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ tÆng hoa.",0)
 		return
 	end
 	if self:check_pay() == 0 then
-		Say("50¼¶ÒÔÉÏ³äÖµµÄÈËÎï²Å¿ÉÒÔËÍ»¨.",0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ tÆng hoa.",0)
 		return
 	end
 	local ntaskmeigui = self:getTaskByte(self.ntask,3)
 	local tbmeigui = self.tbitem.meigui
 	if ntaskmeigui >= tbmeigui.limit then
-		Say("Ã¿¸öÈËÎï×î¶àÖ»ÄÜËÍ¸øÃÀÈË25ÊøÃµ¹å.",0)
+		Say("Mçi nh©n vËt chØ cã thÓ tÆng cho mü nh©n tèi ®a 25 bã hoa hång.",0)
 		return
 	end
 	local nmeigui = CalcEquiproomItemCount(tbmeigui.g,tbmeigui.d,tbmeigui.p,-1)
 	local nsum = 0
 	if nmeigui < 1 then
-		Say("ÄãÍü¼Ç´øÃµ¹å»¨ÁË.",0)
+		Say("B¹n quªn mang bã hoa hång råi.",0)
 		return
 	end
 	ConsumeEquiproomItem(1,tbmeigui.g,tbmeigui.d,tbmeigui.p,-1)
 	local n_transcount = ST_GetTransLifeCount();
 	local nexp = tl_getUpLevelExp((GetLevel()+1), n_transcount) * tbmeigui.nexp
 	AddOwnExp(nexp)
-	Msg2Player(format("¹§Ï², Äã»ñµÃ <color=yellow>%d<color> ¾­Ñé",nexp))
+	Msg2Player(format("Chóc mõng, b¹n nhËn ®­îc <color=yellow>%d<color> kinh nghiÖm",nexp))
 	self:addTaskByte(self.ntask,3,1)
 end
 
 function funv_jieri_meiren:zengsongjuhua(sel)
 	if self:check_level() == 0 then
-		Say("50¼¶ÒÔÉÏ³äÖµµÄÈËÎï²Å¿ÉÒÔËÍ»¨.",0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ tÆng hoa.",0)
 		return
 	end
 	if self:check_pay() == 0 then
-		Say("50¼¶ÒÔÉÏ³äÖµµÄÈËÎï²Å¿ÉÒÔËÍ»¨.",0)
+		Say("Nh©n vËt ®¼ng cÊp trªn 50 ®· n¹p thÎ míi cã thÓ tÆng hoa.",0)
 		return
 	end
 	local ntaskjuhua = self:getTaskByte(self.ntask,4)
 	local tbjuhua = self.tbitem.juhua
 	if ntaskjuhua >= tbjuhua.limit then
-		Say("Ã¿¸öÈËÎï×î¶àÖ»ÄÜËÍ¸øÃÀÈË125Êø¾Õ»¨.",0)
+		Say("Mçi nh©n vËt chØ cã thÓ tÆng cho mü nh©n tèi ®a 125 bã hoa cóc.",0)
 		return
 	end
 	local njuhua = CalcEquiproomItemCount(tbjuhua.g,tbjuhua.d,tbjuhua.p,-1)
 	local nsum = 0
 	if njuhua < 1 then
-		Say("ÄãÍü¼Ç´ø¾Õ»¨ÁË.",0)
+		Say("B¹n quªn mang bã hoa cóc råi.",0)
 		return
 	end
 	ConsumeEquiproomItem(1,tbjuhua.g,tbjuhua.d,tbjuhua.p,-1)
@@ -82,7 +82,7 @@ function funv_jieri_meiren:zengsongjuhua(sel)
 		nexp = tbjuhua.nmaleexp
 	end
 	AddOwnExp(nexp)
-	Msg2Player(format("¹§Ï²£¬ÄãµÃµ½<color=yellow>%d<color> ¾­Ñé",nexp))
+	Msg2Player(format("Chóc mõng, b¹n nhËn ®­îc <color=yellow>%d<color> kinh nghiÖm",nexp))
 	self:addTaskByte(self.ntask,4,1)
 end
 

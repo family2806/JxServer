@@ -1,7 +1,7 @@
 IncludeLib("BATTLE");
 Include("\\script\\battles\\battlehead.lua");
 
-function main(battleid, mapid, ruleid, level, seriesid)
+function main(battleid, mapid, -----Mission: id, level, seriesid)
 oldSubWorld = SubWorld
 	if (GetGlbValue(GLB_FORBIDBATTLE) == 1) then 
 		print("any battle would be forbided, so this battle is ignored.");
@@ -28,7 +28,7 @@ oldSubWorld = SubWorld
 		BT_SetGameData(GAME_KEY, battlekey) --存放本次战役的Key号
 		BT_SetGameData(GAME_BATTLEID, battleid);
 		BT_SetGameData(GAME_MAPID, mapid);
-		BT_SetGameData(GAME_RULEID, ruleid);
+		BT_SetGameData(GAME_RULEID, -----Mission: id);
 		BT_SetGameData(GAME_LEVEL, level)
 		BT_SetGameData(GAME_BATTLESERIES, seriesid)
 		BT_SetGameData(GAME_ROUND, round)
@@ -39,11 +39,11 @@ oldSubWorld = SubWorld
 	BT_SetGameData(GAME_KEY, battlekey) --存放本次战役的Key号
 	BT_SetGameData(GAME_BATTLEID, battleid);
 	BT_SetGameData(GAME_MAPID, mapid);
-	BT_SetGameData(GAME_RULEID, ruleid);
+	BT_SetGameData(GAME_RULEID, -----Mission: id);
 	BT_SetGameData(GAME_LEVEL, level);
 	BT_SetGameData(GAME_BATTLESERIES, seriesid)
-	OpenMission(ruleid);
-	local logstr_d = "Battle Start :"..battleid.."rule"..ruleid.."Issue"..seriesid;
+	OpenMission(-----Mission: id);
+	local logstr_d = "Battle Start : Battleid: "..battleid.."-----Mission: "..-----Mission: id.."-----Map: "..seriesid;
 	print(logstr_d);
 	WriteLog(logstr_d);
 	SubWorld = oldSubWorld

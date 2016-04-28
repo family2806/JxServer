@@ -5,27 +5,27 @@ DATE_END	= 20111201
 tbVnShop = {}
 tbVnShop.tbFormula = 
 {
-	szComposeTitle = "ÂòÃµ¹åÖÖ×Ó",
+	szComposeTitle = "Mua h¹t gièng hoa hång",
 	nWidth = 1,
 	nHeight = 1,
 	nFreeItemCellLimit = 1,
 	tbMaterial = 
 		{
-			{szName="ÒøÁ½",nJxb=300000, nCount = 1},
+			{szName="Ng©n l­îng",nJxb=300000, nCount = 1},
 		},
-	tbProduct = {szName = "Ãµ¹åÖÖ×Ó", tbProp = {6,1,30156,1,0,0}, nExpiredTime = 20111201},
+	tbProduct = {szName = "H¹t gièng hoa hång", tbProp = {6,1,30156,1,0,0}, nExpiredTime = 20111201},
 }
 
 function tbVnShop:Main()
 	if self.IsAcitve() == 1 then
 		self:ComposeItem()
 	else
-		Talk(1, "", "Ä¿Ç°´óÏÀÃ»ÓÐÈÎºÎÃµ¹åÖÖ×Ó£¬Çë´óÏÀÁÂ½â!")
+		Talk(1, "", "HiÖn t¹i ta kh«ng cßn h¹t gièng hoa hång nµo c¶, xin ®¹i hiÖp thø lçi!")
 	end	
 end
 
 function tbVnShop:ComposeItem()
-	pCompos = tbActivityCompose:new(self.tbFormula, "ÂòÃµ¹åÖÖ×Ó");
+	pCompos = tbActivityCompose:new(self.tbFormula, "Mua h¹t gièng hoa hång");
 	pCompos:ComposeDailog(1);
 end
 
@@ -39,5 +39,5 @@ end
 
 local pEventType = EventSys:GetType("AddNpcOption")
 if tbVnShop:IsAcitve() == 1 then
-	nId = pEventType:Reg("Ð¡··", "Mua Ãµ¹åÖÖ×Ó", tbVnShop.Main,{tbVnShop})
+	nId = pEventType:Reg("Hµng rong", "Mua h¹t gièng hoa hång", tbVnShop.Main,{tbVnShop})
 end	

@@ -4,7 +4,7 @@ IncludeLib("ITEM")
 function main(nItemIdx)		
 	local nMoney = GetItemParam(nItemIdx, 1)
 	Earn(nMoney)
-	Msg2Player("Äú»ñµÃÁË"..nMoney.."Á½Òø×Ó")
+	Msg2Player("B¹n ®¹t ®­îc "..nMoney.." l­îng")
 end
 
 function GetDesc(nItemIdx)
@@ -14,7 +14,7 @@ function GetDesc(nItemIdx)
 	local nMoney = nM1 * 1000000 + nM2 * 1000 + nM3
 	--local szDesc = ""
 	
-	local szDesc = "\nºì°üÖÐ°üº¬ÁËÒø×Ó<color=yellow>"..nMoney.."<color=>Á½"
+	local szDesc = "\nTrong bao l× x× cã <color=yellow>"..nMoney.."<color=> l­îng"
 	return szDesc;
 end
 

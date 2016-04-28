@@ -22,7 +22,7 @@ tbPVLB_Quest.tbQuest = {
 			nLevel = 180,
 			tbItem = 
 			{
-				{szName="ÒøÁ½",nJxb=2000000,nCount=1},
+				{szName="Ng©n l­îng",nJxb=2000000,nCount=1},
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_0_180,
@@ -38,8 +38,8 @@ tbPVLB_Quest.tbQuest = {
 		{
 			tbItem = 
 			{
-				{szName="»Ø³Ç·û(´ó) ",tbProp={6,1,1083,1,0,0},nCount=1, nBindState = -2},
-				{szName="ÌìÉ½Ñ©Á«",tbProp={6,1,1431,1,0,0},nCount=1,nExpiredTime=43200, nBindState = -2},
+				{szName="Håi thµnh phï (lín) ",tbProp={6,1,1083,1,0,0},nCount=1, nBindState = -2},
+				{szName="Thiªn S¬n TuyÕt Liªn",tbProp={6,1,1431,1,0,0},nCount=1,nExpiredTime=43200, nBindState = -2},
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_TS1,
@@ -136,8 +136,8 @@ tbPVLB_Quest.tbQuest = {
 		{
 			tbItem = 
 			{				
-				{szName="±¼åÐ",tbProp={0,10,6,1,0,0},nCount=1, nBindState = -2},
-				{szName="ÐÂÊÖ½ðÅÆ",tbProp={6,1,30144,1,0,0},nCount=1,nExpiredTime=43200, nBindState = -2},
+				{szName="B«n Tiªu",tbProp={0,10,6,1,0,0},nCount=1, nBindState = -2},
+				{szName="T©n Thñ Kim Bµi",tbProp={6,1,30144,1,0,0},nCount=1,nExpiredTime=43200, nBindState = -2},
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_TS2,
@@ -154,7 +154,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 130,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=500e6},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=500e6},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_130,
@@ -173,7 +173,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 140,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=1e9},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=1e9},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_140,
@@ -193,7 +193,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 150,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=2500e6},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=2500e6},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_150,
@@ -214,7 +214,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 160,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=6e9},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=6e9},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_160,
@@ -236,7 +236,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 165,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=7e9},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=7e9},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_165,
@@ -258,7 +258,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 170,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=6500e6},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=6500e6},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_170,
@@ -280,7 +280,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 172,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=6e9},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=6e9},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_172,
@@ -302,7 +302,7 @@ tbPVLB_Quest.tbQuest = {
 		{
 			nLevel = 174,
 			tbItem = {
-				{szName = "§i¾­ÑéÖµ", nExp=5e9},			
+				{szName = "§iÓm Kinh NghiÖm", nExp=5e9},			
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_2_174,
@@ -318,8 +318,8 @@ tbPVLB_Quest.tbQuest = {
 		{
 			tbItem = 
 			{
-				{szName="Ò»¼ÍÇ¬À¤·û",tbProp={6,1,2126,1,0,0}, nBindState = -2, nCount = 1},
-				{szName="¾ÛÁ¦ÄýÉñÍè",tbProp={6,1,30143,1,0,0},nExpiredTime=86400, nCount = 1},
+				{szName="NhÊt Kû Cµn Kh«n Phï",tbProp={6,1,2126,1,0,0}, nBindState = -2, nCount = 1},
+				{szName="Tô Lùc Ng­ng ThÇn Hoµn",tbProp={6,1,30143,1,0,0},nExpiredTime=86400, nCount = 1},
 			},
 		},
 		tbBitTask = tbBITTASK_QUEST_AWARD_TS3,
@@ -413,20 +413,20 @@ function tbPVLB_Quest:Main()
 end
 
 function tbPVLB_Quest:QuestOnProccess(nQuestID)
-	local strTittle = "ÕýÔÚ½øÐÐµÄÈÎÎñ:\n\n"
+	local strTittle = "NhiÖm vô ®ang tiÕn hµnh:\n\n"
 	local tbOpt = {}
 	local tbTempQuest = self.tbQuest[nQuestID]
 	local nIsComplete = 1
 	local nIsCancel = 0
 	if tbTempQuest then
 		local tbRequirement = tbTempQuest.tbRequirement
-		strTittle = strTittle..format("\t\t\t\t%-30s%s\n", "ÒªÇó", "Çé¿ö<color=yellow>")
+		strTittle = strTittle..format("\t\t\t\t%-30s%s\n", "Yªu cÇu", "T×nh tr¹ng<color=yellow>")
 		--ËÎ½ð
 		if tbRequirement.nTK then
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_SONGJIN_QUEST_COUNT)
 			local nRequire = tbRequirement.nTK
 			local str1 = ""
-			local str0 = "ËÎ½ð1000µã"
+			local str0 = "Tèng Kim 1000 ®iÓm"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -441,7 +441,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_COT_QUEST_COUNT)
 			local nRequire = tbRequirement.nVA
 			local str1 = ""
-			local str0 = "´³¹Ø 20"
+			local str0 = "V­ît qua ¶i 20"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -456,7 +456,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_FLD_QUEST_COUNT)
 			local nRequire = tbRequirement.nPLD
 			local str1 = ""
-			local str0 = "ÊÕ¼¯×·¹¦ÁîÈÎÎñ"
+			local str0 = "NV thu thËp Truy C«ng LÖnh"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -471,7 +471,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_YDBZ_QUEST_COUNT)
 			local nRequire = tbRequirement.nVD
 			local str1 = ""
-			local str0 = "Ñ×µÛ´³¹Ø6"
+			local str0 = "V­ît ¶i 6 Viªm §Õ"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -486,7 +486,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_YESOU_QUEST_COUNT)
 			local nRequire = tbRequirement.nDT
 			local str1 = ""
-			local str0 = "Íê³ÉÒ°ÛÅÈÎÎñ"
+			local str0 = "Hoµn thµnh NV D· TÈu"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -501,7 +501,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_KILLER_BOSS_QUEST_COUNT)
 			local nRequire = tbRequirement.nBossST
 			local str1 = ""
-			local str0 = "ÏûÃð90É±ÊÖboss"
+			local str0 = "Tiªu diÖt boss s¸t thñ 90"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -516,7 +516,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_MAIL_QUEST_COUNT)
 			local nRequire = tbRequirement.nTinSu
 			local str1 = ""
-			local str0 = "ÐÅÊ¹ÈÎÎñ"
+			local str0 = "NhiÖm vô TÝn Sø"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -531,7 +531,7 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			local nCurCount = tbVNG_BitTask_Lib:getBitTask(tbBITTASK_VLMC_QUEST_COUNT)
 			local nRequire = tbRequirement.nVLMC
 			local str1 = ""
-			local str0 = "ÎäÁÖÃËÖ÷ÈÎÎñ"
+			local str0 = "NV Vâ L©m Minh Chñ"
 			if nCurCount >= nRequire then
 				nCurCount = nRequire
 				str1 = "<color=green>"..nCurCount.."/"..nRequire.."<color>"
@@ -541,94 +541,94 @@ function tbPVLB_Quest:QuestOnProccess(nQuestID)
 			end
 			strTittle = strTittle..format("\t\t\t\t%-30s%s\n", str0, str1)
 		end	
-		--ÖØÉú
+		--Trïng sinh 
 		if tbRequirement.nTS then
 			local nCurCount = ST_GetTransLifeCount()
 			local nRequire = tbRequirement.nTS
 			local str1 = ""
-			local str0 = "ÖØÉú "
+			local str0 = "Trïng sinh "
 			if nCurCount == nRequire then
 				nCurCount = nRequire
-				str1 = "<color=green>ÒÑÍê³É<color>"
+				str1 = "<color=green>§· hoµn thµnh<color>"
 			else
 				nIsComplete = 0
 				nIsCancel = 1
 				if nCurCount > nRequire then
-					str1 = "<color=red>³¬¹ýÉÏÏÞ<color>"
+					str1 = "<color=red>V­ît giíi h¹n<color>"
 				else
-					str1 = "<color=red>Î´Íê³É<color>"
+					str1 = "<color=red>Ch­a hoµn thµnh<color>"
 				end
 			end
 			strTittle = strTittle..format("\t\t\t\t%-30s%s\n", str0..nRequire, str1)
 		end	
 	end
 	if nIsComplete == 1 then
-		tinsert(tbOpt, {"Íê³ÉÈÎÎñ", tbPVLB_Quest.CompleteQuest, {tbPVLB_Quest, tbTempQuest}})
+		tinsert(tbOpt, {"Hoµn thµnh nhiÖm vô", tbPVLB_Quest.CompleteQuest, {tbPVLB_Quest, tbTempQuest}})
 	else
 		if nIsCancel == 1 then
-			tinsert(tbOpt, {"·ÅÆúÈÎÎñ", tbPVLB_Quest.CancelQuest, {tbPVLB_Quest, tbTempQuest}})
+			tinsert(tbOpt, {"Hñy nhiÖm vô", tbPVLB_Quest.CancelQuest, {tbPVLB_Quest, tbTempQuest}})
 		end
 	end
-	tinsert(tbOpt, {"¹Ø±Õ"})
+	tinsert(tbOpt, {"§ãng"})
 	CreateNewSayEx(strTittle, tbOpt)
 end
 
 function tbPVLB_Quest:HaveNoQuest()
-	local strTittle = "¿É½ÓÈÎÎñ:\n\n"
+	local strTittle = "NhiÖm vô cã thÓ nhËn:\n\n"
 	local tbOpt = {}
 	
 	local nQuestID = self:GetQuestID()
 	--Ã»ÓÐÈÎÎñ
 	if not nQuestID then
-		strTittle = strTittle.."<color=red>\t\t\t\Ã»ÓÐÈÎÎñ<color>\n"
+		strTittle = strTittle.."<color=red>\t\t\t\tKh«ng cã nhiÖm vô nµo<color>\n"
 	else		
 		local tbTempQuest = self.tbQuest[nQuestID]
 		if tbTempQuest then
-			--®· ÒÑÍê³ÉÈÎÎñ
+			--®· ÒÑHoµn thµnh nhiÖm vô
 			if tbVNG_BitTask_Lib:getBitTask(tbTempQuest.tbBitTask) == 1 then
-				strTittle = strTittle.."\t\t\t\t<color=red>ÒÑÍê³É<color>\n"
-			else --Î´½ÓÈÎÎñ
-				strTittle = strTittle..format("\t\t\t\t%-30s%s\n", "ÒªÇó", "ÊýÁ¿<color=yellow>")
+				strTittle = strTittle.."\t\t\t\t<color=red>§· hoµn thµnh<color>\n"
+			else --Î´NhËn nhiÖm vô
+				strTittle = strTittle..format("\t\t\t\t%-30s%s\n", "Yªu cÇu", "Sè l­îng<color=yellow>")
 				--ÃèÊöÈÎÎñ
 				local tbRequirement = tbTempQuest.tbRequirement
 				--ËÎ½ð
 				if tbRequirement.nTK then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ËÎ½ð1000µã", tbRequirement.nTK)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Tèng Kim 1000 ®iÓm", tbRequirement.nTK)
 				end
 				--´³¹Ø
 				if tbRequirement.nVA then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "´³¹Ø 20", tbRequirement.nVA)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "V­ît qua ¶i 20", tbRequirement.nVA)
 				end
 				--ÊÕ¼¯×·¹¦Áî
 				if tbRequirement.nPLD then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ÊÕ¼¯×·¹¦ÁîÈÎÎñ", tbRequirement.nPLD)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "NV thu thËp Truy C«ng LÖnh", tbRequirement.nPLD)
 				end
 				--Ñ×µÛ ®Õ
 				if tbRequirement.nVD then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Ñ×µÛ´³¹Ø6", tbRequirement.nVD)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "V­ît ¶i 6 Viªm §Õ", tbRequirement.nVD)
 				end
 				--Ò°ÛÅ
 				if tbRequirement.nDT then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Íê³ÉÒ°ÛÅÈÎÎñ", tbRequirement.nDT)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Hoµn thµnh NV D· TÈu", tbRequirement.nDT)
 				end
 				--É±ÊÖBOOS
 				if tbRequirement.nBossST then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ÏûÃð90É±ÊÖboss", tbRequirement.nBossST)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Tiªu diÖt boss s¸t thñ 90", tbRequirement.nBossST)
 				end
 				--ÐÅÊ¹
 				if tbRequirement.nTinSu then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ÐÅÊ¹ÈÎÎñ", tbRequirement.nTinSu)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "NhiÖm vô TÝn Sø", tbRequirement.nTinSu)
 				end
-				--ÖØÉú
+				--Trïng sinh 
 				if tbRequirement.nTS then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ÖØÉú"..tbRequirement.nTS, 1)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "Trïng sinh "..tbRequirement.nTS, 1)
 				end
 				--ÎäÁÖÃËÖ÷
 				if tbRequirement.nVLMC then
-					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "ÎäÁÖÃËÖ÷ÈÎÎñ", tbRequirement.nVLMC)
+					strTittle = strTittle..format("\t\t\t\t%-30s%d\n", "NV Vâ L©m Minh Chñ", tbRequirement.nVLMC)
 				end
 				strTittle = strTittle.."<color>"
-				tinsert(tbOpt, {"½ÓÈÎÎñ",tbPVLB_Quest.AcceptQuest, {tbPVLB_Quest, nQuestID}})
+				tinsert(tbOpt, {"NhËn nhiÖm vô",tbPVLB_Quest.AcceptQuest, {tbPVLB_Quest, nQuestID}})
 			end
 		end
 	end
@@ -649,7 +649,7 @@ function tbPVLB_Quest:CompleteQuest(tbTempQuest)
 		return
 	end
 	if tbTempQuest.tbAward.tbItem and CalcFreeItemCellCount() < 59 then
-		Talk(1, "", "ÇëÇåÀí×°±¸¿ÕÎ»£¬È»ºóÁì½±.")
+		Talk(1, "", "Xin h·y dän trèng hµnh trang råi h·y nhËn th­ëng.")
 		return
 	end	
 	tbVNG_BitTask_Lib:setBitTask(tbTempQuest.tbBitTask, 1)
@@ -661,12 +661,12 @@ function tbPVLB_Quest:CompleteQuest(tbTempQuest)
 		tbLog:PlayerActionLog("PhongVanLenhBai", strLog, "ThangDangCap: "..GetLevel())
 	end	
 	if tbAward.tbItem then
-		tbAwardTemplet:Give(tbAward.tbItem, 1, {"·çÔÆÁîÅÆ", strLog})
+		tbAwardTemplet:Give(tbAward.tbItem, 1, {"PhongVanLenhBai", strLog})
 		if tbTempQuest.strLog == "QuestTienHanhTS3" then
-			tbVngTransLog:Write("201109_·çÔÆÁîÅÆ»î¶¯/", 11, "N/A", "¾ÛÁ¦ÄýÉñÍè", 1)
+			tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "N/A", "Tô Lùc Ng­ng ThÇn Hoµn", 1)
 		end
 	end
-	tbVngTransLog:Write("201109_·çÔÆÁîÅÆ»î¶¯/", 11, strLog, "N/A", 1)
+	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, strLog, "N/A", 1)
 end
 
 function tbPVLB_Quest:CancelQuest(tbTempQuest)

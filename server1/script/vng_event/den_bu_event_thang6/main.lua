@@ -25,15 +25,15 @@ do
 	return
 end
 	local tbMainDialog = self:CreateDialog()
-	tbMainDialog.szTitleMsg = "ÄúºÃ"
+	tbMainDialog.szTitleMsg = "Xin chµo"
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[1][1]) == 1 or tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[1][2]) == 1 or tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[1][3]) == 1) then
-		tbMainDialog:AddOptEntry("ÁìÈ¡°×½ğÇ§ËêÊ÷½±Àø", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 1, "DenBuCayThienTueBachKim"})
+		tbMainDialog:AddOptEntry("NhËn phÇn th­ëng c©y thiªn tuÕ B¹ch Kim", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 1, "DenBuCayThienTueBachKim"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[2][1]) == 1) then
-		tbMainDialog:AddOptEntry("ÁìÈ¡²»ËÀÇ§ËêÊ÷½±Àø", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 2, "DenBuCayThienTueBatTu"})
+		tbMainDialog:AddOptEntry("NhËn phÇn th­ëng c©y thiªn tuÕ BÊt Tö", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 2, "DenBuCayThienTueBatTu"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[3][1]) == 1 or tbExtPointLib:GetBitValue(self.nExtPointID, self.tbBit[3][2]) == 1) then
-		tbMainDialog:AddOptEntry("ÁìÈ¡ÔÂÉñÇ§ËêÊ÷½±Àø", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 3, "DenBuCayThienTueNguyetThan"})
+		tbMainDialog:AddOptEntry("NhËn phÇn th­ëng c©y thiªn tuÕ NguyÖt ThÇn", tbVngEventThang6Reward.GetAward, {tbVngEventThang6Reward, 3, "DenBuCayThienTueNguyetThan"})
 	end
 	tbMainDialog:Show()
 end
@@ -43,7 +43,7 @@ do
 	return
 end
 	if (CalcFreeItemCellCount() < 10) then
-		Talk(1, "", "Îª±£ÎÀ²Æ²ú£¬ÇëÁôÏÂ10¸ö×°±¸¿ÕÎ»ºó²ÅÊ¹ÓÃ¸ÃÎïÆ·!")
+		Talk(1, "", "§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa 10 « trèng trong hµnh trang råi míi sö dông vËt phÈm nµy!")
 		return
 	end
 	local tbAward = {}

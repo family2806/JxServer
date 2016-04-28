@@ -6,13 +6,13 @@ function ChangeTongNameResult(old_tong, new_tong, result)
 		local value = GetTask(TASKVALUE_BLEND)
 		value = SetBit(value, 2, 0)
 		SetTask(TASKVALUE_BLEND, value)
-		msg = msg .. "<#>¸ÄÃû³É¹¦£¬½«ÓÚÏÂ´ÎÎ¬»¤ºóÉúĞ§"
+		msg = msg .. "<> ®æi tªn thµnh c«ng , ®em víi lÇn sau duy tr× hËu sinh hiÖu "
 	elseif (result == TONGNAMERES_USED) then
-		msg = msg .. "<#>Õâ¸öÃû×ÖÒÑ¾­±»Ê¹ÓÃÁË"
+		msg = msg .. "<> danh tù nµy ®· bŞ sö dông "
 	elseif (result == TONGNAMERES_APPLY) then
-		msg = msg .. "<#>Õâ¸öÃû×ÖÒÑ¾­±»ÉêÇëÁË"
+		msg = msg .. "<> danh tù nµy ®· bŞ th©n thØnh "
 	else
-		msg = msg .. "<#>Õâ¸öÃû×ÖÎŞĞ§£¬²»ÄÜÊ¹ÓÃ"
+		msg = msg .. "<> danh tù nµy kh«ng cã hiÖu qu¶ , kh«ng thÓ sö dông "
 	end
-	Say(msg, 1, "<#>ÖªµÀÁË/cancel")
+	Say(msg, 1, "<> biÕt /cancel")
 end

@@ -1,7 +1,7 @@
---华山派通往朝阳峰的路标
+--华山派 Tri襲 Dng Phong的路标
 
 function main(sel)
 
-	Say("通往朝阳峰", 0)
+	Say(" Tri襲 Dng Phong", 0)
 
 end;

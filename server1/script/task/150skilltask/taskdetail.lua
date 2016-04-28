@@ -49,7 +49,7 @@ function TaskDetailClass:CallFunction(tbFun, ...)
 		tbFun.Class = self.pTask
 		tbFun.fn = self.pTask[tbFun.szName]
 	else
-		print("»¹²»ÖªµÀº¯Êý", tbFun.szClassName, tbFun.szName)
+		print("Ch­a biÕt hµm sè", tbFun.szClassName, tbFun.szName)
 		return
 	end
 	return tbFun:exec(arg)

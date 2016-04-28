@@ -6,10 +6,10 @@ function OnDeath()
 	if (UTask_world27 == 5) and (random(0,99) < 80) then
 		AddEventItem(228)
 		if (GetItemCount(228) >= 3) then
-			Msg2Player("Ê²Ã´Ê±ºòÄÃµ½3¿éÒ°ÖíÈâÊ²Ã´Ê±ºò²Å¿ÉÒÔ×ß")
-			AddNote("Ê²Ã´Ê±ºòÄÃµ½3¿éÒ°ÖíÈâÊ²Ã´Ê±ºò²Å¿ÉÒÔ×ß")
+			Msg2Player("Khi nµo ng­¬i lÊy ®ùîc 3 miÕng thŞt heo rõng th× míi cã thÓ ®i tiÕp ")
+			AddNote("Khi nµo ng­¬i lÊy ®ùîc 3 miÕng thŞt heo rõng th× míi cã thÓ ®i tiÕp ")
 		else
-			Msg2Player("É±ÁËÒ»Í·Ò°ÖíÄÃµ½Ò»¿éÈâ")
+			Msg2Player("GiÕt ®­îc mét con heo rõng th× b¹n lÊy ®­îc mét miÕng thŞt ")
 		end
 	end
 end;

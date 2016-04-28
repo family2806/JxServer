@@ -31,7 +31,7 @@ function festival_tongjudge(nType, nTongID, nWorkshopID)--ÅĞ¶ÏÊÇ·ñ¾ßÓĞ×Ê¸ñnType:
 	local nLevel = TWS_GetLevel(nTongID, nWorkshopID)
 	local nPCount = TONG_GetMemberCount(nTongID, -1);
 	if (nLevel < 1 or nLevel > 10) then
-		Say("¹ó°ï»¹Î´½¨Éè¸Ã×÷·».", 1, "ÎÒÖªµÀÁË!/OnCancel")
+		Say("Quİ bang vÉn ch­a x©y dùng T¸c Ph­êng nµy.", 1, "Ta biÕt råi!/OnCancel")
 		return 0;
 	end;
 	--local njoinrate = tonumber(gettabfiledata(SFHD_DATAFILE, nLevel + 2, TONGGXD[nType][2]));
@@ -44,7 +44,7 @@ function festival_tongjudge(nType, nTongID, nWorkshopID)--ÅĞ¶ÏÊÇ·ñ¾ßÓĞ×Ê¸ñnType:
 		TWS_ApplySetTaskValue(nTongID, nWorkshopID, HUODONG_TASKID[nType][1], 0);
 	end;
 	if (nTimes >= nMax) then
-		Say("½ñÌì°ï»áÃ»ÓĞ»î¶¯£¬ËûÈÕÔÙÀ´°É.", 1, "ÎÒÖªµÀÁË!/OnCancel")
+		Say("Bang héi h«m nay kh«ng cã ho¹t ®éng nµo, ngµy kh¸c h·y ®Õn t×m ta.", 1, "Ta biÕt råi!/OnCancel")
 		return 0;
 	end;
 	
@@ -52,7 +52,7 @@ function festival_tongjudge(nType, nTongID, nWorkshopID)--ÅĞ¶ÏÊÇ·ñ¾ßÓĞ×Ê¸ñnType:
 	
 	local nGXD = GetContribution();
 	if (nGXD < TONGGXD[nType][1]) then
-		Say("»î¶¯·»×Ü¹Ü: §iÄãµÄ¹±Ï×¶È²»¹»®ñ"..TONGGXD[nType][1]..", ²»ÄÜ²Î¼Ó»î¶¯.", 1, "ÎÒÖªµÀÁË!/OnCancel")
+		Say("Tæng qu¶n Ho¹t ®éng ph­êng: §iÓm cèng hiÕn cña ng­¬i kh«ng ®ñ"..TONGGXD[nType][1]..", kh«ng thÓ tham gia ho¹t ®éng.", 1, "Ta biÕt råi!/OnCancel")
 		TWS_ApplySetTaskValue(nTongID, nWorkshopID, HUODONG_TASKID[nType][1], nTimes); --²»³É¹¦ÈËÊı²»¼Ó
 		return 0;
 	end;
@@ -126,8 +126,8 @@ function cancelgame(nMapID, nMissionID)
 	local nLoop = getn(tabPlayer);
 	for i = 1, nLoop do
 		PlayerIndex = tabPlayer[i];
-		Say("ÓÉÓÚ²Î¼Ó±¨ÃûµÄÈËÊıÉÙÓÚ<color=yellow>5<color> ÈË, ´Ë´Î»î¶¯±»È¡Ïû", 1, "ÎÒÖªµÀÁË!/OnCancel")
-		Msg2Player("ÓÉÓÚ²Î¼Ó±¨ÃûµÄÈËÊıÉÙÓÚ <color=yellow>5<color> ÈË, ´Ë´Î»î¶¯±»È¡Ïû");
+		Say("Do sè ng­êi b¸o danh tham gia İt h¬n <color=yellow>5<color> ng­êi, ho¹t ®éng lÇn nµy bŞ hñy bá.", 1, "Ta biÕt råi!/OnCancel")
+		Msg2Player("Do sè ng­êi b¸o danh tham gia İt h¬n <color=yellow>5<color> ng­êi, ho¹t ®éng lÇn nµy bŞ hñy bá.");
 		NewWorld(GetTask(TK_LEAVERMAPID), GetTask(TK_LEAVERPOSX), GetTask(TK_LEAVERPOSY))
 	end;
 	PlayerIndex = OldPlayer;
@@ -152,12 +152,12 @@ function gogamemap(tabPlayerIdx, tabParam) --
 				--ÔÚÕâÀï¿Û³ı°ï»á¹±Ï×¶È
 			nContri = GetContribution();
 			if (nContri < tabParam[2][1]) then
-				Say("§i¹±Ï×¶È²»¹»®ñ"..tabParam[2][1]..", ²»ÄÜ²Î¼Ó»î¶¯.", 1, "ÎÒÖªµÀÁË!/OnCancel");
+				Say("§iÓm cèng hiÕn kh«ng ®ñ"..tabParam[2][1]..", kh«ng thÓ tham gia ho¹t ®éng.", 1, "Ta biÕt råi!/OnCancel");
 				DelMSPlayer(tabParam[4][3], PlayerIndex, 0);
-				Msg2Player("§i¹±Ï×¶È²»¹»®ñ"..tabParam[2][1]..", ²»ÄÜ²Î¼Ó»î¶¯.");
+				Msg2Player("§iÓm cèng hiÕn kh«ng ®ñ"..tabParam[2][1]..", kh«ng thÓ tham gia ho¹t ®éng.");
 				NewWorld(GetTask(TK_LEAVERMAPID), GetTask(TK_LEAVERPOSX), GetTask(TK_LEAVERPOSY));
 			else
-				Msg2Player("²Î¼Ó°ïÄÚµÄ»î¶¯·»£¬ÏûºÄ<color=red>°ï»á¹±Ï×¶È<color><color=yellow> "..tabParam[2][1].."<color>.")
+				Msg2Player("Tham gia ho¹t ®éng ph­êng cña bang, tiªu hao <color=red>®iÓm cèng hiÕn bang héi<color><color=yellow> "..tabParam[2][1].."<color>.")
 				AddContribution(-1 * tabParam[2][1]);--½ø³¡Ê±¿Û³ı¹±Ï×¶È
 
 				for j = 1, getn(tabParam[3]) do

@@ -45,10 +45,10 @@ tbChangeDestiny =
 	
 	tbMissionInfo = 
 	{
-		[0] = {3,	"ÔÚÒ»³¡¸ß¼¶ËÎ½ðÖÐ»ñµÃ3000ÀÛ»ý»ý·Ö",				"ÄúÒÑÁìÈ¡ÔÚÉñÅ©ÀÏÕß3000ËÎ½ðÀÛ»ý»ý·ÖµÄÈÎÎñ",	},
-		[1] = {1,	"ÔÚ¸ß¼¶¹ý¹ØÈÎÎñÖÐ´ò°ÜÁËÄôß±³¾",						"ÄúÒÑ½ÓÊÜÔÚÉñÅ©ÀÏÕß´ò°ÜÄôß±³¾µÄÈÎÎñ",			},
-		[2] = {2,	"ÔÚ·çÁê¶É´ò°ÜÁËË®ÔôÊ×Áì.",							"ÄúÒÑ½ÓÊÜÔÚÉñÅ©ÀÏÕß´ò°ÜË®ÔôÊ×ÁìµÄÈÎÎñ.",		},
-		[3] = {3,	"4´Î´ò°Ü90¼¶É±ÊÖµÄÈÎÎñ(ÔÚÄôs³¾´¦ÁìÈÎÎñ)",	"ÄúÒÑÁìÈ¡ÔÚÉñÅ©ÀÏÕß´ò°Ü4´óÉ±ÊÖµÄÈÎÎñ",		},
+		[0] = {3,	"Trong mét trËn Tèng Kim cao cÊp thu ®­îc 3000 ®iÓm tÝch lòy",				"§¹i hiÖp ®· nhËn nhiÖm vô 3000 ®iÓm tÝch lòy Tèng Kim ë ThÇn N«ng L·o Gia",	},
+		[1] = {1,	"ë nhiÖm vô v­ît ¶i cao cÊp ®· ®¸nh b¹i NhiÕp ThÝ TrÇn",						"§¹i hiÖp ®· nhËn nhiÖm vô ®¸nh b¹i NhiÕp ThÝ TrÇn ë ThÇn N«ng L·o Gia",			},
+		[2] = {2,	"§· ®¸nh b¹i Thñy TÆc §Çu LÜnh ë Phong L¨ng §é.",							"§¹i hiÖp ®· nhËn nhiÖm vô ®¸nh b¹i Thñy TÆc §Çu LÜnh ë ThÇn N«ng L·o Gia.",		},
+		[3] = {3,	"NhiÖm vô ®¸nh b¹i 4 lÇn s¸t thñ cÊp 90 (NhiÖm vô nµy nhËn NhiÕp ThÝ TrÇn)",	"§¹i hiÖp ®· nhËn nhiÖm vô ®¸nh b¹i tø ®¹i s¸t thñ ë ThÇn N«ng L·o Gia",		},
 	},
 	
 	nPlayerTask	= {2622, 2623, 2624, 2626, 2627, 2628},	-- »î¶¯ÈÎÎñ±äÁ¿

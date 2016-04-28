@@ -51,35 +51,35 @@ end
 
 function pTask:GotoYueGeDao()
 	NewWorld(968, 1436, 3179)
-	Talk(1, "", "´¬·ò: ÉÙÏÀÓĞÌØ±ğÔÂ¸èÁî£¬È¥ÕÒÎäÎÀ¶Ô»°£¬Ëû»áºÍÄãËµÊ¹ÓÃÁîÅÆµÄ·½·¨.")
+	Talk(1, "", "ThuyÒn Phu: ThiÕu hiÖp cã NguyÖt Ca LÖnh ®Æc biÖt nµy, ®i t×m Vâ VÖ ®èi tho¹i tù anh ta sÏ nãi cho ng­¬i biÕt dông ®å ch©n chİnh cña lÖnh bµi nµy.")
 end
 
 local _OnBreak = function(nNpcIndex)
-	Msg2Player("ÊÕ¼¯¼ä¶Ï")
+	Msg2Player("Thu thËp ®øt ®o¹n")
 end
 
 local _GetAward = function(nNpcIndex, dwNpcID, nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	if nNpcIndex == nil then
-		Msg2Player("ÄãÊÕ¼¯Ê§°Ü.")
+		Msg2Player("Ng­¬i thu thËp thÊt b¹i.")
 		return 0
 	end
 	
 	if nNpcIndex <= 0 or GetNpcId(nNpcIndex) ~= dwNpcID then
-		Msg2Player("ÄãÊÕ¼¯Ê§°Ü.")
+		Msg2Player("Ng­¬i thu thËp thÊt b¹i.")
 		return 0
 	end	
 	
-	if PlayerFunLib:CheckFreeBagCell(1,"×°±¸²»×ã®ñ") ~= 1 then
+	if PlayerFunLib:CheckFreeBagCell(1,"Hµnh trang kh«ng ®ñ") ~= 1 then
 		return 0
 	end
 	
-	Msg2Player("ÊÕ¼¯½áÊø!")
+	Msg2Player("Thu thËp kÕt thóc!")
 	
 	local tbAward = {}
 	tbAward = {
-		{szName = "Ê÷Æ¤ÎŞÓïÈİÆ÷", tbProp = {6, 1, 2920, 1, 0, 0}, nBindState = -2,},
+		{szName = "Thô b× v« ng«n dung khİ", tbProp = {6, 1, 2920, 1, 0, 0}, nBindState = -2,},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "ÔÂ¸èµº×¥Ê÷Æ¤150¼¼ÄÜ¾­Ñé»ñµÃµÀ¾ß")
+	tbAwardTemplet:GiveAwardByList(tbAward, "NhiÖm vô kü n¨ng cÊp 150 NguyÖt Ca §¶o §¶o B¸t Thô B× nhËn ®­îc ®¹o cô")
 	G_TASK:ExecEx(szTaskName, nGotoDetailId, nAddStepNum, nTaskId)
 end 
 
@@ -87,7 +87,7 @@ function pTask:GetShuPi(nAddStepNum, nTaskId, szTaskName, nGotoDetailId)
 	local nNpcIndex = GetLastDiagNpc()
 	local dwNpcIndex = GetNpcId(nNpcIndex)
 	
-	Msg2Player("¿ªÊ¼ÊÕ»ñ")
+	Msg2Player("B¾t ®Çu thu ho¹ch")
 	tbProgressBar:OpenByConfig(2, %_GetAward, {nNpcIndex, dwNpcIndex, nAddStepNum, nTaskId, szTaskName, nGotoDetailId}, %_OnBreak, {nNpcIndex})
 end
 
@@ -110,11 +110,11 @@ end
 function pTask:CheckPos()
 	local nMapId, nX, nY = GetWorldPos()
 	if nMapId ~= 968 then
-		Msg2Player("ÇëÊ¹ÓÃÔÂ¸èµºÉÏµÄµÀ¾ß")
+		Msg2Player("H·y sö dung ®¹o cô tren NguyÖt Ca §¶o")
 		return
 	end
 	if self:IsInDistance(nX, nY, %tbPool[968]) ~= 1 then
-		Msg2Player("ÇëÊ¹ÓÃÎü½¡³İÅÔ±ßµÄµÀ¾ß")
+		Msg2Player("H·y sö dông ®¹o cô bªn c¹nh TÈy KiÕm Tr×")
 		return
 	end
 	return 1
@@ -124,7 +124,7 @@ function pTask:OnTime(tbPos)
 	local nX32, nY32, nMapId, nOldNpcIndex = unpack(tbPos)
 	DelNpc(nOldNpcIndex)
 	local tbNpc = {
-		szName = "½£Ú£Ê§°Ü", nLevel = 95, nNpcId = 1860,
+		szName = "Bia §¸ KiÕm Gia", nLevel = 95, nNpcId = 1860,
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegedao\\shibeiex.lua",
 	}
 	self:CallNpcEx(tbNpc, nMapId, nX32, nY32)
@@ -183,17 +183,17 @@ function pTask:ChangeNpc()
 	local nX32, nY32, nMapIndex = GetNpcPos(nNpcIndex) 
 	DelNpc(nNpcIndex)
 	local tbNpc = {
-		szName = "½£Ú£", nLevel = 95, nNpcId = random(1857, 1859),
+		szName = "KiÕm gia", nLevel = 95, nNpcId = random(1857, 1859),
 	}
 	local nNewNpcIndex = self:CallNpcEx(tbNpc, SubWorldIdx2ID(nMapIndex), nX32, nY32)
 	TimerList:AddTimer(self, 60 * 18, {nX32, nY32, SubWorldIdx2ID(nMapIndex), nNewNpcIndex})
-	Msg2Player("ÖÆÔì½£Ú£")
+	Msg2Player("ChÕ t¹o kiÕm gia")
 end
 
 function pTask:NewWorld()
 	local tbWorld = DynamicExecute("\\script\\missions\\yuegedao\\yuegemigu\\yuegemiguworld.lua", "getglobal", "YueGeMiGuWorld")
 	if tbWorld.nRoomCount >= tbWorld.nRoomLimit then
-		Msg2Player("µØÍ¼ÒÑÂúÈË")
+		Msg2Player("B¶n ®å ®· ®Çy ng­êi")
 		return
 	end
 	tbWorld.nRoomCount = tbWorld.nRoomCount + 1
@@ -206,7 +206,7 @@ function pTask:NewWorld()
 	end
 	if nRoomId <= 0 then
 		tbWorld.nRoomCount = tbWorld.nRoomCount - 1
-		Msg2Player("µØÍ¼ÒÑÂúÈË")
+		Msg2Player("B¶n ®å ®· ®Çy ng­êi")
 		NewWorld(959, 1566, 2836)
 		return
 	end

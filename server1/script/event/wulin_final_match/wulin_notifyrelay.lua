@@ -12,10 +12,10 @@ function wl_OnCreateLeague(nLeagueType,szLeagueName, szMemberName, bSucceed)
 		local pappid = SearchPlayer(szMemberName)
 		if (pappid > 0) then
 				PlayerIndex = pappid
-				Say("¹§Ï²£¡³ÉÁ¢£¡"..TAB_TICKETINFO[nLeagueType - 10][1].." ÒÑ³É¹¦",0)
+				Say("Chóc mõng! Thµnh lËp "..TAB_TICKETINFO[nLeagueType - 10][1].." ®· thµnh c«ng",0)
 				--SetTask(TK_WL_TICKET_FACTION1 + nLeagueType - 10 - 1, 1)
 		end
-		AddLocalNews("¹§Ï²ÒÑÍê³ÉÕ½¶ÓÈ¡Ãû "..TAB_TICKETINFO[nLeagueType-10][1].." ¿ÉÒÔ¼Ó"..szLeagueName.." ")
+		AddLocalNews("Chóc mõng ®· hoµn tÊt ®Æt tªn chiÕn ®éi "..TAB_TICKETINFO[nLeagueType-10][1].." cã thÓ gia "..szLeagueName.." ")
 		return 0
 	end
 	print("wl_oncreateleague")
@@ -32,14 +32,14 @@ function wl_OnAddMember(nLeagueType,szLeagueName, szMemberName, bSucceed)
 				if (not FALSE(lid)) then
 					leaguename, time, count = LG_GetLeagueInfo(lid)
 					if (count == 1) then
-						Say("¹§Ï²ÄúÒÑ½¨Á¢³É¹¦"..tostring(TAB_TICKETINFO[nLeagueType - 10][1]).." ³ÉÎª<color=red>"..szLeagueName.."<color>!" , 0)
+						Say("Chóc mõng ng­¬i ®· kiÕn lËp thµnh c«ng"..tostring(TAB_TICKETINFO[nLeagueType - 10][1]).." trë thµnh <color=red>"..szLeagueName.."<color>!" , 0)
 						wl_delleaguecard( nLeagueType-10 )
 					else
-						Say("¹§Ï²ÄúÒÑÈ¡Õ½¶ÓÃû³É¹¦"..tostring(TAB_TICKETINFO[nLeagueType - 10][1]).." ³ÉÎª<color=red>"..szLeagueName.."<color>!" , 0)
+						Say("Chóc mõng ®· ®Æt tªn chiÕn ®éi thnµh c«ng"..tostring(TAB_TICKETINFO[nLeagueType - 10][1]).." trë thµnh <color=red>"..szLeagueName.."<color>!" , 0)
 					end
 				end
 				--SetTask(TK_WL_TICKET_FACTION1 + nLeagueType - 10 - 1, 1)
-			AddLocalNews("¹§Ï²Íæ¼Ò"..GetName().."®·ÒÑ¼ÓÈëÕ½¶Ó£¬³ÉÎª"..szLeagueName.." ")
+			AddLocalNews("Chóc mõng ng­êi ch¬i"..GetName().."®· gia nhËp chiÕn ®éi, trë thµnh"..szLeagueName.." ")
 		end
 	end
 end

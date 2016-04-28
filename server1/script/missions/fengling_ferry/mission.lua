@@ -18,7 +18,7 @@ end
 function RunMission()
 	for i=1, 30 do
 		posx, posy = fld_getadata(npcthiefpos)
-		local npcindex	= AddNpc(724, 95, SubWorld, posx, posy, 0, "Ë®Ôô ");
+		local npcindex	= AddNpc(724, 95, SubWorld, posx, posy, 0, "Thñy TÆc ");
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\shuizeideath.lua");
 	end
 	idx = 0
@@ -30,7 +30,7 @@ function RunMission()
  		end
 		--´ËÊ±ÎªGM·¢²¼ÃüÁî
 		SetFightState(1)
-		PutMessage("´¬¿ªÁË£¬30·ÖÖÓºó½«µ½·çÁê¶É±±°¶.")
+		PutMessage("ThuyÒn ®i råi! 30 phót sau sÏ ®Õn bê B¾c Phong L¨ng §é.")
 		if (idx == 0) then 
  			break
  		end 
@@ -63,7 +63,7 @@ end
 function OnLeave(RoleIndex)
 	oldPlayerIndex = PlayerIndex
 	PlayerIndex = RoleIndex
-	Msg2MSAll(MISSIONID, GetName().."Äã²»ÐÒÔÚ¶É´¬Ê±ÉíÍö.")
+	Msg2MSAll(MISSIONID, GetName().."B¹n kh«ng may tö vong trong lóc ®i thuyÒn.")
 	SetCreateTeam(1)
 	ForbidEnmity(0);
 --	SetTaskTemp(200,0);
@@ -75,11 +75,11 @@ function OnLeave(RoleIndex)
 end
 
 function Landing()
-	Msg2MSAll(MISSIONID, "®· ÒÑµ½·çÁê¶É±±°¶.")
+	Msg2MSAll(MISSIONID, "®· ®Õn bê B¾c Phong L¨ng §é.")
 	
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));		-- by bel µ½°¶ÒÔºó·¢³ö¡°ÏûÃðË®Ôô¡±»î¶¯µÄÁì½±¹«¸æ
 	if (nDate >= jf0904_act_dateS and nDate < jf0904_act_dateE) then
-		local szNews = "¹Ù¸®ºÍ¸÷Î»¸ßÊÖ½«Íê³ÉÏûÃðË®ÔôÕ½ÒÛ£¬¿ìµãÈ¥½»[×·¹¦Áî] ¸ø´¬·òºóÁì½±!";
+		local szNews = "Quan phñ vµ c¸c cao thñ ®· hoµn tÊt chiÕn dÞch tiªu diÖt Thñy TÆc, h·y nhanh chãng giao [Truy C«ng LÖnh] cho ThuyÒn Phu ®Ó nhËn th­ëng!";
 		AddGlobalNews(szNews);
 	end
 	

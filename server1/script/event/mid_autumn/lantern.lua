@@ -23,18 +23,18 @@ function main()
 	end
 	
 	if ( GetTask(LANTERN_TSKID_WCNT) >= MX_LANTERN_COUNT ) then
-		Say("<#> ÄãÒÑ¾­²Â¶ÔÁË100¸öÃÕÓï!°Ñ»ú»áÁô¸ø±ğÈË°É£¡", 0)
+		Say("<#> B¹n ®· ®o¸n ®óng 100 c©u ®è råi! Nh­êng c¬ héi cho ng­êi kh¸c ®i!", 0)
 		return
 	end
 	local rannum = random(100)
 	if ( rannum <= 1 ) then
 		AddItem(6, 1, 900, 1, 0, 0, 0)		--<#>¡°»ğÆáÃÜº¯¡±
-		local str = "<#> ¿´½ÓÏÂÀ´µÄÃÕÓï/#show_riddle (0, '<#> ÃÕÓïÈçÏÂ: <enter>') "
-		Say("<#> Çë×ĞÏ¸¿´£¬×îºó·¢ÏÖÔÚÒ»ÕµµÆÉÏ²Ø×ÅÒ»ÕÅÖ½£¬¼¼ÊõÊ®·Ö¾«Ï¸", 1, str)
-		Msg2Player("<#> ÄãµÃµ½ '»ğÆáÃÜº¯'")
+		local str = "<#> Xem c©u ®è tiÕp theo /#show_riddle (0, '<#> c©u ®è nh­ sau: <enter>') "
+		Say("<#> B¹n ch¨m chó xem, cuèi cïng ph¸t hiÖn trªn ngän ®Ìn giÊu mét m¶nh giÊy, kü thuËt rÊt tinh vi", 1, str)
+		Msg2Player("<#> B¹n nhËn ®­îc 'Háa tÊt MËt Hµm'")
 		WriteLog(date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetName()..",in the mid_autumn get shenzhaoyuan shougao.")
 	else
-		show_riddle(0, "<#> ÃÕÓïÈçÏÂ: <enter>" )
+		show_riddle(0, "<#> c©u ®è nh­ sau: <enter>" )
 	end
 	SetNpcParam(npcidx,4,0)
 	delnpcsafe(npcidx)	--delete npc
@@ -118,27 +118,27 @@ tbl_awards = {
 	{15, nil},
 	{30, nil},
 	{50, nil},
-	{0, {"<#> 1ÏÉ²İÂ¶", 6, 1, 71, 0}},
-	{0, {"<#> 1¸£ÔµÂ¶(Ğ¡) ", 6, 1, 122, 0}},
-	{0, {"<#> 1¸£ÔµÂ¶(ÖĞ) ", 6, 1, 123, 0}},
-	{0, {"<#> 1¸£ÔµÂ¶(´ó) ", 6, 1, 124, 0}},
-	{0, {"<#> 1À¶Ë®¾§", 238}},
-	{0, {"<#> 1ÂÌË®¾§", 240}},		
-	{0, {"<#> 1×ÏË®¾§", 239}},
-	{0, {"<#> 1¿é4¼¶Ğş¾§¿óÊ¯", 6,1,147,4}},
-	{0, {"<#> 1¿é5¼¶Ğş¾§¿óÊ¯", 6,1,147,5}},
-	{0, {"<#> 1¿é6¼¶Ğş¾§¿óÊ¯", 6,1,147,6}},
-	{0, {"<#> 1ÉñÃØ¿óÊ¯", 6, 1, 398, 0}},
-	{0, {"<#> 6¿×ç­É´ÅÛ (½ğ) ", 2,0,2,3,10,0,1,-1}},
-	{0, {"<#> 6¿×ç­É´ÅÛ (Ä¾) ", 2,0,2,3,10,1,1,-1}},
-	{0, {"<#> 6¿×ç­É´ÅÛ (Ë®) ", 2,0,2,3,10,2,1,-1}},
-	{0, {"<#> 6¿×ç­É´ÅÛ (»ğ) ", 2,0,2,3,10,3,1,-1}},
-	{0, {"<#> 6¿×ç­É´ÅÛ (ÍÁ) ", 2,0,2,3,10,4,1,-1}},
-	{0, {"<#> 6¿×¾ÅÎ²°×ºü(½ğ) ", 2,0,2,9,10,0,1,-1}},
-	{0, {"<#> 6¿×¾ÅÎ²°×ºü(Ä¾) ", 2,0,2,9,10,1,1,-1}},
-	{0, {"<#> 6¿×¾ÅÎ²°×ºü(Ë®) ", 2,0,2,9,10,2,1,-1}},
-	{0, {"<#> 6¿×¾ÅÎ²°×ºü(»ğ) ", 2,0,2,9,10,3,1,-1}},
-	{0, {"<#> 6¿×¾ÅÎ²°×ºü(ÍÁ) ", 2,0,2,9,10,4,1,-1}},
+	{0, {"<#> 1 Tiªn Th¶o lé ", 6, 1, 71, 0}},
+	{0, {"<#> 1 Phóc Duyªn lé (tiÓu) ", 6, 1, 122, 0}},
+	{0, {"<#> 1 Phóc Duyªn lé (trung) ", 6, 1, 123, 0}},
+	{0, {"<#> 1 Phóc Duyªn lé (®¹i) ", 6, 1, 124, 0}},
+	{0, {"<#> 1 Lam Thñy Tinh", 238}},
+	{0, {"<#> 1 Lôc Thñy Tinh", 240}},		
+	{0, {"<#> 1 Tö Thñy Tinh", 239}},
+	{0, {"<#> 1 HuyÒn Tinh Kho¸ng Th¹ch cÊp 4", 6,1,147,4}},
+	{0, {"<#> 1 HuyÒn Tinh Kho¸ng Th¹ch cÊp 5", 6,1,147,5}},
+	{0, {"<#> 1 HuyÒn Tinh Kho¸ng Th¹ch cÊp 6", 6,1,147,6}},
+	{0, {"<#> 1 ThÇn Bİ Kho¸ng th¹ch", 6, 1, 398, 0}},
+	{0, {"<#> Mét bé Gi¸ng Sa Bµo 6 thuéc tİnh (Kim) ", 2,0,2,3,10,0,1,-1}},
+	{0, {"<#> Mét bé Gi¸ng Sa Bµo 6 thuéc tİnh (Méc) ", 2,0,2,3,10,1,1,-1}},
+	{0, {"<#> Mét bé Gi¸ng Sa Bµo 6 thuéc tİnh (Thñy) ", 2,0,2,3,10,2,1,-1}},
+	{0, {"<#> Mét bé Gi¸ng Sa Bµo 6 thuéc tİnh (Háa) ", 2,0,2,3,10,3,1,-1}},
+	{0, {"<#> Mét bé Gi¸ng Sa Bµo 6 thuéc tİnh (Thæ) ", 2,0,2,3,10,4,1,-1}},
+	{0, {"<#> Mét bé C÷u VÜ B¹ch Hå 6 thuéc tİnh (Kim) ", 2,0,2,9,10,0,1,-1}},
+	{0, {"<#> Mét bé C÷u VÜ B¹ch Hå 6 thuéc tİnh (Méc) ", 2,0,2,9,10,1,1,-1}},
+	{0, {"<#> Mét bé C÷u VÜ B¹ch Hå 6 thuéc tİnh (Thñy) ", 2,0,2,9,10,2,1,-1}},
+	{0, {"<#> Mét bé C÷u VÜ B¹ch Hå 6 thuéc tİnh (Háa) ", 2,0,2,9,10,3,1,-1}},
+	{0, {"<#> Mét bé C÷u VÜ B¹ch Hå 6 thuéc tİnh (Thæ) ", 2,0,2,9,10,4,1,-1}},
 };
 
 -- ·¢½±
@@ -147,7 +147,7 @@ local szLog = date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetNa
 	if (items[1] ~= 0) then
 		local exp = items[1] * 10000
 		AddOwnExp(exp)
-		Msg2Player("<#> ÄãµÃµ½ " .. exp .. "¾­ÑéÖµ.");
+		Msg2Player("<#> B¹n nhËn ®­îc " .. exp .. "®iÓm kinh nghiÖm.");
 		szLog = szLog.."get "..exp.." point experience;"
 	end
 	local attrs = items[2]
@@ -160,7 +160,7 @@ local szLog = date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetNa
 		elseif (count == 9) then
 			AddQualityItem(attrs[2], attrs[3], attrs[4], attrs[5], attrs[6], attrs[7], attrs[8], attrs[9])
 		end
-		Msg2Player("<#> ÄãµÃµ½" .. attrs[1] .. "!");
+		Msg2Player("<#> B¹n nhËn ®­îc " .. attrs[1] .. "!");
 		szLog = szLog.."get "..attrs[1]..";"
 	end
 	WriteLog(szLog)
@@ -190,7 +190,7 @@ function show_riddle(count, caption)
 			end
 		end
 		ReSort(options)
-		Say(question, 5, options[1], options[2], options[3], options[4], "<#> È¡Ïû/answer_cancel")
+		Say(question, 5, options[1], options[2], options[3], options[4], "<#> Hñy bá /answer_cancel")
 	end
 end
 
@@ -217,17 +217,17 @@ function answer_ok(count)
 		local index = get_odds_award(tbl_odds, 100)
 		if (index >= 1) then
 			issue(tbl_awards[index])
-			Talk(1, "", "<#> ×£ºØÄãÒÑ¾­Á¬Ğø´ğ¶Ô3Ìâ£¡ÇëÁìÈ¡½±Àø.")
+			Talk(1, "", "<#> Chóc mõng b¹n ®· ®¸p ®óng liªn tôc 3 c©u! Xin nhËn phÇn th­ëng.")
 			SetTask(LANTERN_TSKID_WCNT, GetTask(LANTERN_TSKID_WCNT) + 1)
 		end
 	else
-		show_riddle(count + 1, "<#> ´ğ¶ÔÁË.¼ÌĞø.<enter>")
+		show_riddle(count + 1, "<#> b¹n ®· ®¸p ®óng. H·y tiÕp tôc.<enter>")
 	end
 end
 
 -- µÆÃÕ»Ø´ğ´íÎó
 function answer_fail()
-	show_riddle(0, "<#> ´ğ´íÁË.¼ÌĞø.<enter>")
+	show_riddle(0, "<#> b¹n ®· ®¸p sai. H·y tiÕp tôc.<enter>")
 end
 
 -- È¡ÏûµÆÃÕÎÊ´ğ 

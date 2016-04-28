@@ -5,10 +5,10 @@ Include("\\script\\global\\station.lua")
 function main(sel)
 	
 	local mapid = SubWorldIdx2ID(SubWorld);
-	local tbOpp = {"ÒÑÂ·¹ýµÄµØ·½/WayPointFun", "ÒÑÂ·¹ýµÄ³ÇÇø/StationFun", };
+	local tbOpp = {"Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thÞ ®· ®i qua/StationFun", };
 
-	tinsert(tbOpp, "²»ÐèÒª/OnCancel");
-	Say("³µ·ò: Ïëµ½ÄÄÀï?", getn(tbOpp), tbOpp);
+	tinsert(tbOpp, "Kh«ng cÇn ®©u/OnCancel");
+	Say("Xa phu: Muèn ®i ®Õn n¬i nµo?", getn(tbOpp), tbOpp);
 end;
 
 function OnCancel()

@@ -13,17 +13,17 @@ function OnTimer()
 
 	local lsf_level = BT_GetGameData(GAME_LEVEL)
 	if (lsf_level == 1) then
-		resultstr = "³õ¼¶ÇøÓò"
+		resultstr = "Khu vùc S¬ cÊp "
 	elseif (lsf_level == 2) then
-		resultstr = "ÖĞ¼¶ÇøÓò "
+		resultstr = "Khu vùc Trung cÊp "
 	elseif (lsf_level == 3) then
-		resultstr = "¸ß¼¶ÇøÓò"
+		resultstr = "Khu vùc Cao cÊp "
 	end
 	
 	if (t == RUNGAME_TIME) then --Èç¹ûµ½ÁËÕıÊ½¿ªÕ½Ê±¿Ì£¬ÔòÍ£Ö¹±¨Ãû£¬ÕıÊ½½øÈëÕ½¶·½×¶Î
 		RunMission(MISSIONID)
-		AddGlobalCountNews(resultstr.."¼ıËşĞÎÊ½µÄËÎ½ğ±¨ÃûÊ±¼äÒÑµ½£¬Õ½ÒÛÕıÊ½¿ªÊ¼!", 2);
-		Msg2MSAll(MISSIONID, "ËÎ½ğÕıÊ½¿ªÕ½!¸÷Õ½Ê¿£¡³å°¡£¡");
+		AddGlobalCountNews(resultstr.."Thêi gian b¸o danh Tèng Kim h×nh thøc Th¸p tiÔn ®· ®Õn, trËn chiÕn chİnh thøc b¾t ®Çu!", 2);
+		Msg2MSAll(MISSIONID, "Tèng Kim chİnh thøc khai chiÕn! C¸c chiÕn sÜ! X«ng lªn!");
 		WriteLog("jianta battle is entering fight state. now member count="..GetMSPlayerCount(MISSIONID, 1)..":"..GetMSPlayerCount(MISSIONID, 2))
 	end
 
@@ -31,11 +31,11 @@ function OnTimer()
 		RestTime = (RUNGAME_TIME - t) * TIMER_1 / FRAME2TIME
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
-			str1 = resultstr.."<#>¼ıËşĞÎÊ½µÄËÎ½ğÕ½¶·Õı·Ç³£½ôÕÅ, Ä¿Ç°Õı´¦ÓÚ±¨Ãû½×¶Î, Ë­Ïë²ÎÕ½£¬Çë¿ìËÙµ½ÏåÑô»òÕßÖìÏÉÕòµÇ¼Ç±¨Ãû; »òÕßÊ¹ÓÃËÎ½ğÚ¯Êé¿ìËÙµ½±¨Ãû´¦£¬±¨ÃûÊ±¼ä»¹Ê£:"..RestMin.."·ÖÖÓ. ²Î¼ÓÌõ¼ş: 40¼¶ÒÔÉÏ. ±¨Ãû·Ñ3000 Á½. ¿ªÕ½ºó£¬Èç¹û×ÜÈËÊı²»¹»£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø±¨Ãû!";
-			str2 = "<#> ±¨ÃûÊ£ÓàÊ±¼äÎª"..RestMin.."·ÖÖÓ"
+			str1 = resultstr.."<#>TrËn ®¸nh Tèng Kim h×nh thøc Th¸p tiÔn v« cïng c¨ng th¼ng, tr­íc m¾t ®ang ë giai ®o¹n b¸o danh, nh÷ng ai muèn tham chiÕn xin h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®¨ng kı b¸o danh; HoÆc sö dông Tèng Kim chiªu th­ ®Ó nhanh chãng ®Õn ®iÓm b¸o danh, thêi gian b¸o danh cßn:"..RestMin.."phót. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40, phİ b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng sè ng­êi ch­a ®ñ vÉn cã thÓ tiÕp tôc b¸o danh!";
+			str2 = "<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"
 		else
-			str1 = resultstr.."<#>¼ıËşĞÎÊ½µÄËÎ½ğÕ½¶·Õı·Ç³£½ôÕÅ, Ä¿Ç°Õı´¦ÓÚ±¨Ãû½×¶Î, Ë­Ïë²ÎÕ½£¬Çë¿ìËÙµ½ÏåÑô»òÕßÖìÏÉÕòµÇ¼Ç±¨Ãû; »òÕßÊ¹ÓÃËÎ½ğÚ¯Êé¿ìËÙµ½±¨Ãû´¦£¬±¨ÃûÊ±¼ä»¹Ê£:"..RestMin.."·ÖÖÓ"..RestSec.."Ãë¡£²Î¼ÓÌõ¼ş: 40¼¶ÒÔÉÏ. ±¨Ãû·Ñ3000 Á½. ¿ªÕ½ºó£¬Èç¹û×ÜÈËÊı²»¹»£¬ÒÀÈ»¿ÉÒÔ¼ÌĞø±¨Ãû!";
-			str2 = "<#> ±¨ÃûÊ£ÓàÊ±¼äÎª"..RestMin.."·ÖÖÓ"..RestSec.." Ãë"
+			str1 = resultstr.."<#>TrËn ®¸nh Tèng Kim h×nh thøc Th¸p tiÔn v« cïng c¨ng th¼ng, tr­íc m¾t ®ang ë giai ®o¹n b¸o danh, nh÷ng ai muèn tham chiÕn xin h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®¨ng kı b¸o danh; HoÆc sö dông Tèng Kim chiªu th­ ®Ó nhanh chãng ®Õn ®iÓm b¸o danh, thêi gian b¸o danh cßn:"..RestMin.."phót"..RestSec.."gi©y. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40, phİ b¸o danh 3000 l­îng. Sau khi khai chiÕn, nÕu tæng sè ng­êi ch­a ®ñ vÉn cã thÓ tiÕp tôc b¸o danh!";
+			str2 = "<#> Thêi gian b¸o danh cßn l¹i lµ:"..RestMin.."phót"..RestSec.." gi©y"
 		end
 		AddGlobalCountNews(str1, 2);
 		Msg2MSAll(MISSIONID,str2);		--Í¨Öª³¡ÄÚÍæ¼Ò¿ªÕ½Ê£ÓàÊ±¼ä
@@ -102,9 +102,9 @@ function OnTimer()
 		
 		mar_addmissionpoint(250 * tb_jianta_count[1], 1);
 		mar_addmissionpoint(250 * tb_jianta_count[2], 2);
-		--Ã¿Ò»·ÖÖÓÍ¨¸æµ±Ç°Ë«·½»ı·Ö£¬ºÍnpc
+		--Ã¿Ò»phótÍ¨¸æµ±Ç°Ë«·½»ı·Ö£¬ºÍnpc
 		if (mod(t, 3) == 0 ) then
-			msstr = "¹«¸æ£ºÏÖÔÚËÎ½ğË«·½µÄ×Ü»ıÀÛÖµÎª"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
+			msstr = "C«ng c¸o: hiÖn giê tæng tİch lòy cña 2 phe Tèng - Kim lµ "..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
 			Msg2MSAll(MISSIONID, msstr)
 		end
 		

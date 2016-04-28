@@ -4,16 +4,16 @@
 function main()
 	UWorld97 = GetTask(97)
 	if (UWorld97 == 10) then		-- ÒÑ¾­Âò¹ı
-		Talk(1,"","Éò¾Ô£ºÄãÒ»¶¨ÒªºÃºÃ¶Ô´ıÂí¶ù£¬Ã¿ÌìÒª¸øËüÏ´Ôè£¬¶¹±ıÀïÃæÒª²ôÉÏ¾«Ãæ......")
+		Talk(1,"","TrÇm c©u  ng­¬i nhÊt ®Şnh ph¶i thËt tèt ®èi ®·i con ngùa , mçi ngµy cÊp cho nã t¾m , ®Ëu bİnh bªn trong muèn s¶m th­îng tinh mÆt ......")
 	elseif (UWorld97 == 1) and (IsTongMaster() == 1) then			-- ¿ÉÒÔÂòÂí
-		Talk(4,"sele_color","Éò¾Ô£ºÕâÎ»Ó¢ĞÛÇëÁô²½¡£","Íæ¼Ò£ºĞÖÌ¨ÓĞÊ²Ã´ÊÂ£¿","ÌÓ¾Ô£ºÔÚÏÂÉò¾Ô£¬ÏÖÏÂÓĞÒ»Æ¥Ç§ÀïÁ¼¾Ô³öÈÃ£¬¿´ÕâÎ»Ó¢ĞÛÆøÓî²»·²£¬¶¨ÊÇ¿ª×ÚÁ¢ÅÉµÄ´ó×ÚÊ¦£¬ÔÚÏÂµÄ±¦Âíµ±²»ÈèÃ»ÁËÓ¢ĞÛÃûÍ·¡£","Íæ¼Ò£ºÎÒ¿´¿´ÄãµÄ¡°±¦Âí¡±......")
+		Talk(4,"sele_color","TrÇm c©u  vŞ nµy anh hïng xin dõng b­íc . ","Nhµ ch¬i  huynh ®µi cã chuyÖn g× ? ","Trèn c©u  t¹i h¹ trÇm c©u , hiÖn d­íi cã mét thÊt ngµn dÆm l­¬ng c©u ra ®Ó cho , nh×n vŞ nµy anh hïng khİ vò bÊt phµm , nhÊt ®Şnh lµ khai t«ng lËp ph¸i ®İch ®¹i t«ng s­ , t¹i h¹ ®İch BMW khi kh«ng cã nhôc kh«ng cã anh hïng danh tiÕng . ","Nhµ ch¬i  ta xem mét chót ng­¬i “ BMW ”......")
 	else
-		Talk(1,"","Éò¾Ô£ºÇ§ÀïÂí³£ÓĞ£¬¶ø²®ÀÖ²»³£ÓĞ¡£Í½ºô£¡ÄÎºÎ£¡")
+		Talk(1,"","TrÇm c©u  thiªn lı m· th­êng cã , mµ b¸ nh¹c kh«ng th­êng cã . ®å h«  kh«ng biÕt sao ")
 	end
 end
 
 function sele_color()
-	Say("Éò¾Ô£ºÓ¢ĞÛÇë¿´£º",6,"Õâ²»ÊÇÎÚÔÆÌ¤Ñ©Ã´£¡/buy_black","Õâ²»ÊÇ³àÍÃ±¦ÂíÃ´£¡/buy_red","Õâ²»ÊÇ¾øÓ°Ã´£¡/buy_cyan","Õâ²»ÊÇµÄÂ¬Ã´£¡/buy_yellow","Õâ²»ÊÇÕÕÒ¹ÓñÊ¨×ÓÃ´£¡/buy_white","ÕâÊÇÊ²Ã´Âí£¿Ë¡ÌüÏÂÑÛ×¾²»Ê¶¡£/buy_none")
+	Say("TrÇm c©u  anh hïng mêi xem ",6,"§©y kh«ng ph¶i lµ m©y ®en ®¹p tuyÕt sao /buy_black","§©y kh«ng ph¶i lµ xİch thá BMW sao /buy_red","§©y kh«ng ph¶i lµ tuyÖt ¶nh sao /buy_cyan","§©y kh«ng ph¶i lµ ®İch l« sao /buy_yellow","§©y kh«ng ph¶i lµ theo ®ªm ngäc s­ tö sao /buy_white","§©y lµ c¸i g× m· ? thø cho thİnh h¹ m¾t vông vÒ kh«ng biÕt . /buy_none")
 end
 
 function buy_black()
@@ -37,12 +37,12 @@ function buy_white()
 end
 
 function buy_none()
-	Talk(1,"","Éò¾Ô£ºÒ»°ïÖ®Ö÷£¬×ÚÊ¦ÈËÎïÔõ»á²»Ê¶Èç´Ë±¦ÂíÁ¼¾Ô£¿±§Ç¸£¬¿´À´ÔÚÏÂÊÇÈÏ´íÈËÁË¡£")
+	Talk(1,"","TrÇm c©u  ®øng ®Çu mét bang , t«ng s­ nh©n vËt nh­ thÕ nµo kh«ng biÕt nh­ thÕ BMW l­¬ng c©u ? xin lçi , xem ra t¹i h¹ lµ nhËn lÇm ng­êi . ")
 end
 
 function the_buy(i)
 	SetTaskTemp(49,i)
-	Say("Éò¾Ô£º²»´í£¬Ó¢ĞÛ¹ûÈ»Ê¶µÃ£¡ÔÚÏÂ±¾Ò²Éá²»µÃ¾Í´ËÂôÁËËü£¬µ«ÊÇÏÖÏÂ¼±Ğè300ÍòÁ½Òø×Ó£¬¿´Ó¢ĞÛÊÇÕæ²®ÀÖ£¬ÈÌÍ´¸î°®£¬ÍûÓ¢ĞÛÇ§ÍòºÃÉúÉÆ´ıÓÚËü¡£",2,"Ã»ÎÊÌâ£¬ÎÒÒ»¶¨²»»á¿÷´ıËüµÄ/buy_yes","ÕâÒ»Ê±°ë»á¼äÓÖÉÏÄÄÈ¥³ïÕâ±ÊÇ®ÄØ£¿/buy_no")
+	Say("TrÇm c©u  kh«ng tÖ , anh hïng qu¶ nhiªn nhËn biÕt  t¹i h¹ vèn còng kh«ng bá ®­îc v× vËy b¸n nã , nh­ng lµ hiÖn h¹ cÇn 300 v¹n l­îng b¹c , nh×n anh hïng lµ thËt b¸ nh¹c , nhŞn ®au c¾t yªu , ng¾m anh hïng ngµn v¹n h¶o sinh ®èi xö tö tÕ víi nã . ",2,"Kh«ng thµnh vÊn ®Ò , ta nhÊt ®Şnh sÏ kh«ng b¹c ®·i nã /buy_yes","C¸i nµy nhÊt thêi håi l©u ®ang lóc l¹i lªn kia ®i trï sè tiÒn kia ®©y ? /buy_no")
 end
 
 function buy_yes()
@@ -51,12 +51,12 @@ function buy_yes()
 		Pay(3000000)
 		AddItem(0,10,5,i,0,0,0)
 		SetTask(97,100+i)			-- ±äÁ¿¸³Öµ£¬²¢ÇÒ¼Ç×¡ÂòµÄÊÇÊ²Ã´ÑÕÉ«Âí
-		Talk(1,"","Éò¾Ô£ºÂí¶ùÑ½Âí¶ù£¬½ñºóÄã¾Í¸úËæÕâÎ»Ó¢ĞÛÁË£¬Ò»¶¨Òª¹Ô¹ÔµÄÑ½¡£")
+		Talk(1,"","TrÇm c©u  con ngùa nha con ngùa , sau nµy ng­¬i theo vŞ nµy anh hïng , nhÊt ®Şnh ph¶i ngoan ngo·n nha . ")
 	else
-		Talk(1,"","Íæ¼Ò£ºÎÒÏÖÔÚÉíÉÏÒøÁ½´øµÃ²»¹»£¬ÄãÇÒÉÔ´ı¡£")
+		Talk(1,"","Nhµ ch¬i  ta trªn ng­êi b©y giê ng©n l­îng mang ph¶i kh«ng ®ñ , ng­¬i th¶ ®îi chót . ")
 	end
 end
 
 function buy_no()
-	Talk(1,"","Éò¾Ô£º°¦£¬µ±ÕæÒªÒ»ÎÄÇ®ÄÑµ¹Ó¢ĞÛººÂğ£¿")
+	Talk(1,"","TrÇm c©u  ai , thËt ®óng lµ muèn mét v¨n tiÒn lµm khã anh hïng h¸n sao ? ")
 end

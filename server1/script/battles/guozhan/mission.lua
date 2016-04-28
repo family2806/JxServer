@@ -28,8 +28,8 @@ function InitMission()
 	BT_SetView(PL_GETITEM);
 	BT_SetView(PL_MAXSERIESKILL);--Á¬Õ¶´ÎÊı
 	
-	BT_SetGameData(GAME_CAMP1, 0) --ÉèÖÃµ±Ç°ËÎ·½ÈËÊı
-	BT_SetGameData(GAME_CAMP2, 0) --ÉèÖÃµ±Ç°½ğ·½ÈËÊı
+	BT_SetGameData(GAME_CAMP1, 0) --ÉèÖÃµ±Ç°Phe TèngÈËÊı
+	BT_SetGameData(GAME_CAMP2, 0) --ÉèÖÃµ±Ç°Phe KimÈËÊı
 
 	subworldid = SubWorldIdx2ID(SubWorld)
 	ClearMapNpc(subworldid);	
@@ -113,12 +113,12 @@ function InitMission()
 	--¾üÒ½µÄ°Ú·Å
 	doctorxy = GetIniFileData(mapfile, "Area_"..s_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "¾üĞè¹Ù (ËÎ) ");
+	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "Qu©n Nhu quan (Tèng) ");
 
 
 	doctorxy = GetIniFileData(mapfile, "Area_"..j_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "¾üĞè¹Ù (½ğ) ");
+	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "Qu©n Nhu quan (Kim) ");
 	
 	
 	--Ë§ÆìµÄ°Ú·Å
@@ -141,27 +141,27 @@ function InitMission()
 	
 	
 	StartMissionTimer(MISSIONID, 107, TIMER_2);
-	--Ëæ»úÄ£Ê½ĞèÒª´ò¿ªÃ¿X·ÖÖÓ´¥·¢Ò»´ÎµÄ´¥·¢Æ÷£¬ÒÔ²úÉúĞÂÆì
+	--Ëæ»úÄ£Ê½ĞèÒª´ò¿ªÃ¿Xphót´¥·¢Ò»´ÎµÄ´¥·¢Æ÷£¬ÒÔ²úÉúĞÂÆì
 	StartMissionTimer(MISSIONID, 106, TIMER_1);
 	
 	SetMissionV(MS_STATE, 1);--ÔÊĞí±¨ÃûÁË
 	
 	if (level == 1) then
-		lvlstr = "³õ¼¶ÇøÓò"
+		lvlstr = "Khu vùc S¬ cÊp "
 	elseif (level == 2) then
-		lvlstr = "ÖĞ¼¶ÇøÓò"
+		lvlstr = "Khu vùc Trung cÊp "
 	else
-		lvlstr = "¸ß¼¶ÇøÓò "
+		lvlstr = "Khu vùc Cao cÊp "
 	end
 	
 	RestMin, RestSec = GetMinAndSec(1800);
-	local str1 = lvlstr.."ËÎ½ğÕ½³¡£¨±£ÎÀÔªË§£©Õı´¦ÓÚ±¨Ãû½×¶Î. ¸÷Î»ÏÀ¿ÍÏë²Î¼ÓµÄ£¬¸Ï¿ìµ½ÏåÑô»òÕßÖìÏÉÕò±¨Ãû! (»òÕßÓÃËÎ½ğÚ¯Êé.±¨ÃûÊ±¼ä»¹Ê£:"..RestMin.."·ÖÖÓ"..RestSec.."Ãë. §i²Î¼ÓÌõ¼ş: 40¼¶ÒÔÉÏ. ±¨Ãû·Ñ3000 Á½g";
+	local str1 = lvlstr.."ChiÕn tr­êng Tèng Kim (B¶o vÖ Nguyªn So¸i) ®ang trong giai ®o¹n b¸o danh. C¸c hiÖp kh¸ch muèn tham gia h·y nhanh chãng ®Õn T­¬ng D­¬ng hoÆc Chu Tiªn trÊn ®Ó b¸o danh! (hoÆc dïng Tèng Kim Chiªu th­) .Thêi gian b¸o danh cßn l¹i lµ::"..RestMin.."phót"..RestSec.."gi©y. §iÒu kiÖn tham gia: ®¼ng cÊp tõ 40. phİ b¸o danh 3000 l­îng";
 	AddGlobalNews(str1);
-	CreateChannel("ËÎ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½", 9)
-	CreateChannel("½ğ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½", 10)
+	CreateChannel("Phe Tèng"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim", 9)
+	CreateChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim", 10)
 
-	BT_SetMissionName("±£ÎÀÔªË§·½Ê½")
-	BT_SetMissionDesc("±³¾°:¹«Ôª1160Äê, ½ğÖ÷ÍêÑÕÁÁ¼¯ºÏ±øÁ¦, ¾ö¶¨ÄÏÏÂÏûÃğËÎ³¯. ÏåÑôÊÇ½ğ¾üµÄµÚÒ»ÕÏ°­£¬ÏåÑô×¼±¸ÔÚ±ùµ¶ÑÌ»ğÖĞ³ÁÃ»¡£ <enter><enter><color=yellow>±£ÎÀÔªË§: ¿ªÕ½30·ÖÖÓºó£¬Ë«·½ÔªË§ÒÀ´Î³öÏÖ.<enter> Ä¿±ê: ±£ÎÀ±¾·½ÔªË§, ÏûÃğµĞ·½ÔªË§")
+	BT_SetMissionName("Ph­¬ng thøc B¶o vÖ Nguyªn so¸i")
+	BT_SetMissionDesc("Bèi c¶nh: N¨m 1160 C«ng nguyªn, Kim chñ Hoµn Nhan L­îng tËp hîp qu©n lùc, quyÕt ®Şnh Nam h¹, tiªu diÖt Tèng triÒu. T­¬ng D­¬ng lµ trë ng¹i ®Çu tiªn cña qu©n Kim, T­¬ng D­¬ng chuÈn bŞ ngËp ch×m trong khãi löa binh ®ao. <enter><enter><color=yellow>B¶o vÖ Nguyªn so¸i: sau khi khai chiÕn 30 phót, nguyªn so¸i 2 bªn sÏ lÇn luît xuÊt hiÖn.<enter> Môc tiªu: b¶o vÖ Nguyªn So¸i phe m×nh, tiªu diÖt Nguyªn So¸i phe ®Şch")
 
 end
 
@@ -177,7 +177,7 @@ function RunMission()
  		if (pidx > 0) then
  			PlayerIndex = pidx;
  			BT_SetData( PL_LASTDEATHTIME, GetGameTime() )
- 			PutMessage("µĞ¾üÒÑ¿ªÊ¼ĞĞ¶¯! ¸÷Î»×³Ê¿£¡³å°¡!")
+ 			PutMessage("§Şch qu©n ®· b¾t ®Çu hµnh ®éng! C¸c chiÕn sÜ! X«ng lªn!")
 		end
 		if (idx <= 0) then 
 			break
@@ -193,8 +193,8 @@ function EndMission()
 	
 	GameOver()
 	level = BT_GetGameData(GAME_LEVEL);
-	DeleteChannel("ËÎ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½")
-	DeleteChannel("½ğ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½")
+	DeleteChannel("Phe Tèng"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim")
+	DeleteChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim")
 
 
 	SetGlbValue(GLB_BATTLESTATE, 0) --ÉèÖÃ¸ÃÈ«¾Ö±äÁ¿Îª1£¬±êÖ¾µ±Ç°·şÎñÆ÷Õı´¦ÓÚËÎ½ğÕ½ÒÛ½×¶Î£¬´ËÊ±ÏåÑô»òÖìÏÉÕòµÄ³ö¿Úµã×Ô¶¯ÉèÔÚËÎ½ğÕ½ÒÛµÄ±¨Ãûµã£¬·ñÔòÔòÉèÔÚÔ­ËÎ½ğÕ½³¡µØÍ¼
@@ -221,9 +221,9 @@ function OnLeave(RoleIndex)
 	SetPKFlag(0)
 	
 	if (GetCurCamp() == 1) then
-		LeaveChannel(PlayerIndex, "ËÎ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½")
+		LeaveChannel(PlayerIndex, "Phe Tèng"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim")
 	else
-		LeaveChannel(PlayerIndex, "½ğ·½"..szGAME_GAMELEVEL[level].."ËÎ½ğ¹úÕ½")
+		LeaveChannel(PlayerIndex, "Phe Kim"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim")
 	end
 	sf_onplayerleave()
 	SyncTaskValue(700 + PL_BATTLEPOINT);--Í¬²½Íæ¼ÒµÄ×Ü»ı·Ö¸ø¿Í»§¶Ë£¬ÓÃÓÚ»ı·Ö¹ºÂò¹¦ÄÜ

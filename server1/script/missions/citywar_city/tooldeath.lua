@@ -1,12 +1,12 @@
 Include("\\script\\missions\\citywar_city\\head.lua");
 
 function OnDeath(DeathIndex)
-	WriteLog(GetLoop().."Ê²Ã´¹¤¾ß±»Ëğ»µÁË"..DeathIndex)
+	WriteLog(GetLoop().."C«ng cô nµo ®ã bŞ chÕt "..DeathIndex)
 	for i  = 1, g_nMaxTscPerDoor * g_nDoorCount do 
 		if ( DeathIndex == GetMissionV(MS_TSCBEGIN + i  - 1		)) then
 			SetMissionV(MS_TSCBEGIN + i - 1, 0)
-			Msg2MSAll(MISSIONID, "¹¥³ÇÓÃ¾ß¾«Á¶±¦ÏäÁÒÒÑ±»ÊØ³Ç·½ÆÆ»µ. ");
-			WriteLog("¹¥³ÇÓÃ¾ß¾«Á¶±¦ÏäÁÒÒÑ±»ÊØ³Ç·½ÆÆ»µ")
+			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bŞ phe thñ thµnh ph¸ hñy. ");
+			WriteLog("Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bŞ phe thñ thµnh ph¸ hñy. ")
 			return
 		end;
 	end;
@@ -14,8 +14,8 @@ function OnDeath(DeathIndex)
 	for i  = 1, g_nMaxGccPerDoor * g_nDoorCount do 
 		if ( DeathIndex == GetMissionV(MS_GCCBEGIN + i  - 1		)) then
 			SetMissionV(MS_GCCBEGIN + i - 1, 0)
-			Msg2MSAll(MISSIONID, "¹¥³ÇÓÃ¾ß¾«Á¶±¦ÏäÁÒÒÑ±»ÊØ³Ç·½ÆÆ»µ. ");
-			WriteLog("¹¥³ÇÓÃ¾ßÄõÁú³å³µÒÑ±»ÊØ³Ç·½ÆÆ»µ. ");
+			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bŞ phe thñ thµnh ph¸ hñy. ");
+			WriteLog("Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bŞ phe thñ thµnh ph¸ hñy. ");
 			return
 		end;
 	end;
@@ -23,8 +23,8 @@ function OnDeath(DeathIndex)
 	for i  = 1, g_nMaxToolCount do 
 		if (DeathIndex == GetMissionV(MS_TOOLBEGIN + i - 1 )) then
 		SetMissionV(MS_TOOLBEGIN + i - 1, 0)
-		Msg2MSAll(MISSIONID, "Ò»Ãû¹¥³ÇÊ¿±øÓ¢ÓÂÎşÉüÁË. ");
-		WriteLog("Ò»ÃûÊØ³ÇÊ¿±øÓ¢ÓÂÎşÉüÁË. ")
+		Msg2MSAll(MISSIONID, "Mét binh sÜ phô trî thñ thµnh ®· anh dòng hy sinh. ");
+		WriteLog("Mét binh sÜ phô trî thñ thµnh ®· anh dòng hy sinh. ")
 		return
 		end;
 	end;

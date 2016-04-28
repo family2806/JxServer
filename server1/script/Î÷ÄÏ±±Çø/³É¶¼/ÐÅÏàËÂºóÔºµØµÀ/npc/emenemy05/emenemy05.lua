@@ -6,9 +6,9 @@
 function OnDeath()
 	UTask_em = GetTask(1);
 	if (UTask_em == 50*256+60) and (HaveItem(23) == 1) and (random(0,99) < 30) then							--¾È³ö´Èº£·½ÕÉµÄ¸ÅÂÊÊÇ30%
-		Msg2Player("´ò°Ü·´É®Í·Ä¿£¬¾ÈÁË´Èº£·½ÕÉ£¬°Ñ½ðÏßÐå·ð½ð¸Õ¾­¸øËû. ")
+		Msg2Player("§¸nh b¹i tªn Ph¶n T¨ng ®Çu môc, cøu tho¸t ph­¬ng tr­îng Tõ H¶i, giao Kim tuyÕn tó t­îng Kim Cang kinh cho «ng ta. ")
 		DelItem(23)
 		SetTask(1, 50*256+80)
-		AddNote("´ò°Ü·´É®Í·Ä¿£¬¾ÈÁË´Èº£·½ÕÉ£¬°Ñ½ðÏßÐå·ð½ð¸Õ¾­¸øËû. ")
+		AddNote("§¸nh b¹i tªn Ph¶n T¨ng ®Çu môc, cøu tho¸t ph­¬ng tr­îng Tõ H¶i, giao Kim tuyÕn tó t­îng Kim Cang kinh cho «ng ta. ")
 	end
 end;	

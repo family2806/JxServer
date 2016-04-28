@@ -2,15 +2,15 @@
 -- °ïÅÉ¿¨
 -- »ñµÃËæ»úÁùÕÅ¿¨
 
-szTitle="<#>ÇëÑ¡Ôñ×£¸£Óï£º"
+szTitle="<#> H·y chän c©u chóc:"
 Bless=
 {
-	"<#>ÌìÌì¾­ÑéÇ§Ç§Íò£¬½ğ×ÓÔª±¦ĞÉºìÊ¯£¬·ÅÂúÒ»ÏäÓÖÒ»Ïä¡£",
-	"<#>Ã»ÓĞÊ²Ã´±È°ïÅÉÓÑÇé¸üÎÂÅ¯¡¢°ïÀïµÄË§¸çÃÀÅ®ÈÃÎÒÕäÏ§¡£",
-	"<#>ĞÖµÜ½ãÃÃ¾ÍÊÇÔÚÄãÉËĞÄÊ±°²Î¿Äã¡¢ÔÚÄã¿ªĞÄÊ±Ò»Í¬·ÖÏíµÄÈË¡£",
-	"<#>×£°ïÅÉµÄ¸÷Î»ĞÖµÜ½ãÃÃÒ»Äê¿ª¿ªĞÄĞÄ,Ò»Éú¿ì¿ìÀÖÀÖ,Ò»ÊÀÆ½Æ½°²°²",
-	"<#>×£°ïÅÉµÄ¸÷Î»ĞÖµÜ½ãÃÃÌìÌìÁúÂí¾«Éñ,ÔÂÔÂÉíÌå½¡¿µ,ÄêÄê²ÆÔ´¹ã½ø¡£",
-	"<#>°ï»áÊÇ±Ü·çµÄ¸ÛÍå¡¢ÄãÃÇÊÇ¹Ä·çµÄº£°¶£¬À´µ½Õâ¸ö°ïÅÉÊÇÎÒ×î´óµÄĞÒ¸£¡£",
+	"<#> §iÓm kinh nghiÖm ngµn ngµn v¹n, Kim Nguyªn B¶o, Tinh Hång Th¹ch bá ®Çy mét r­¬ng.",
+	"<#> Kh«ng cã g× quı gi¸ h¬n t×nh b¹n h÷u trong bang ph¸i, c¸c anh chŞ em trong bang rÊt ®¸ng tr©n träng. ",
+	"<#> Huynh ®Ö tû muéi lµ nh÷ng ng­¬i an ñi b¹n trong lóc ®au lßng, chia sÏ niÒm vui cïng b¹n trong lóc gÆt h¸i ®­îc thµnh c«ng.",
+	"<#> Chóc huynh ®Ö tû muéi trong bang vui vÎ suèt ®êi, sung tóc c¶ n¨m. ",
+	"<#> Chóc huynh ®Ö trong bang søc kháe dåi dµo, tiÒn v« nh­ n­íc.",
+	"<#> Bang héi lµ n¬i che chë vµ gióp ®ì ta trªn b­íc ®­êng giang hå! Xin ch©n thµnh göi lêi c¶m ¬n vµ chóc søc kháe ®Õn tÊt c¶ c¸c huynh ®Ö tû muéi trong bang héi!",
 }
 
 ITEM_TASK_TEMP=25
@@ -25,7 +25,7 @@ FuncBless={}
 
 function main(sel)
 	if (GetTaskTemp(UNIQUE_USE_TASK_TEMP) > 0) then
-		Msg2Player("ÄãÏÖÔÚÕıÔÚ½øĞĞÆäËû×£¸££¬ÇëÉÔºòÔÙÊÔ¡£");
+		Msg2Player("B¹n hiÖn ®ang ph¸t c©u chóc! Xin vui lßng ®îi mét l¸t!");
 		return 1
 	end
 
@@ -33,7 +33,7 @@ function main(sel)
 	local Result
 	TongName, Result = GetTong();
 	if (TongName == "") then
-		Msg2Player("ÄãÃ»ÓĞ¼ÓÈë°ïÅÉ£¬ÎŞ·¨Ê¹ÓÃ°ïÅÉ¿¨¡£")
+		Msg2Player("B¹n ch­a gia nhËp bang ph¸i, kh«ng thÓ sö dông 'ThiÖp Bang ph¸i'")
 		SetTaskTemp(ITEM_TASK_TEMP,0);
 		SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 		return 1;
@@ -47,7 +47,7 @@ function main(sel)
 	end
 
 	nSelectCount = nSelectCount + 1;
-	FuncBless[nSelectCount] = "È¡Ïû/QueryWiseManCancel"
+	FuncBless[nSelectCount] = "Hñy bá /QueryWiseManCancel"
 
 	Say(szTitle, getn(Bless) + 1, FuncBless);
 	SetTaskTemp(ITEM_TASK_TEMP,sel);
@@ -60,7 +60,7 @@ function PlayerSelect(nSelect)
 	local Result
 	TongName, Result = GetTong();
 	if (TongName == "") then
-		Msg2Player("ÄãÃ»ÓĞ¼ÓÈë°ïÅÉ£¬ÎŞ·¨Ê¹ÓÃ°ïÅÉ¿¨¡£")
+		Msg2Player("B¹n ch­a gia nhËp bang ph¸i, kh«ng thÓ sö dông 'ThiÖp Bang ph¸i'")
 		SetTaskTemp(ITEM_TASK_TEMP,0);
 		SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);
 		return
@@ -77,13 +77,13 @@ function PlayerSelect(nSelect)
 	if (ItemIdx > 0 and ItemGenre == ITEM_GENRE and DetailType == ITEM_DETAIL and ParticularType == ITEM_PARTI) then
 		if (RemoveItemByIndex(ItemIdx) == 1) then
 			local szMsg
-			szMsg = GetName().."<#>¶Ô"..TongName.."<#>°ïÅÉËµ£º"..Bless[nSelect + 1]
+			szMsg = GetName().."<#> nãi víi "..TongName.."<#> chóc Bang ph¸i"..Bless[nSelect + 1]
 			AddGlobalCountNews(szMsg,1);
 		else
-			Msg2Player("ÕÒ²»µ½¿¨Æ¬£¬ÇëÖØÊÔÒ»´Î¡£")
+			Msg2Player("Kh«ng t×m ®­îc thÎ! Xin thö l¹i 1 lÇn!.")
 		end
 	else
-		Msg2Player("¿¨Æ¬Ê¹ÓÃÊ§°Ü£¬ÇëÖØÊÔÒ»´Î¡£")
+		Msg2Player("Sö dông thÎ thÊt b¹i, xin thö l¹i 1 lÇn.")
 	end
 	SetTaskTemp(ITEM_TASK_TEMP,0)
 	SetTaskTemp(UNIQUE_USE_TASK_TEMP, 0);

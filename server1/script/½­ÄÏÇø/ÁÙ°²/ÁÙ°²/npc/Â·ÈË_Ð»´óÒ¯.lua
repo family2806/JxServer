@@ -6,5 +6,5 @@ function main()
 		allbrother_0801_FindNpcTaskDialog(192)
 		return 0;
 	end
-	Talk(1,"","Ğ»´óÒ¯£ºÎÒÄÇÎ÷·şÕæÃ»»°Ëµ£¬±È×Ô¼ºµÄÇ×¹ëÅ®»¹ÒªÇ×£¬×òÌìÎÒÉËÁË·ç£¬ÓĞµã·¢ÉÕ£¬Õâ²»£¬Ëı¾Í¸øÎÒÂòÒ©È¥ÁË¡£")
+	Talk(1,"","T¹ ®¹i gia  ta kia ©u phôc thËt kh«ng cã lêi nãi , so víi m×nh ®İch h«n khuª n÷ cßn ph¶i h«n , ngµy h«m qua ta ®¶ th­¬ng phong , cã chót nãng rÇn lªn , c¸i nµy kh«ng , nµng liÒn mua cho ta thuèc ®i . ")
 end;

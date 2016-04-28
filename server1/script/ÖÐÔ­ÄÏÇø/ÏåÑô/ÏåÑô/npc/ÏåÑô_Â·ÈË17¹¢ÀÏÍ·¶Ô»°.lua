@@ -5,17 +5,17 @@ function main(sel)
 i = random(0,2)
 
 if (i == 0) then
-Say("¹¢ÀÏÍ·£ºÓÖÄÛÓÖ´àµÄ´óÍ·²Ë£¬¼È¿ÉÒÔÏÂ¾Æ£¬ÓÖ¿ÉÒÔÏÂ·¹£¬ÓÖºÃ³ÔÓÖ±ãÒËµÄ´óÍ·²Ë£¡",0)
+Say("Su hµo võa non võa xanh ®©y! NhÊm r­îu, dïng c¬m…võa ngon võa rÎ ®©y!",0)
 return
 end;
 
 if (i == 1) then
-Say("¹¢ÀÏÍ·£ºÕâ´óÍ·²ËÊÇÔÛÃÇÏåÑôµÄÌØ²ú£¬ÓÖ½Ğ¡°Öî¸ğÁÁ²Ë¡±£¬¾İËµÊÇµ±ÄêÖî¸ğ¿×Ã÷ÏÈÉú×¨ÃÅÎªĞĞ¾ü×÷Õ½µÄ½«Ê¿ÃÇ·¢Ã÷µÄÊ³Æ·¡£",0)
+Say("Su hµo nµy lµ ®Æc s¶n cña T­¬ng D­¬ng ta, cßn ®­îc gäi lµ 'Mãn Gia C¸t L­îng'! Bëi ®©y chİnh lµ thùc phÈm mµ n¨m x­a Gia C¸t Khæng Minh tiªn sinh nghÜ ra cho c¸c t­íng sÜ dïng trªn ®­êng x«ng pha chiÕn trËn.",0)
 return
 end;
 
 if (i == 2) then
-Say("¹¢ÀÏÍ·£ºÄª¿´Õâ´óÍ·²Ë³¤µÃÍÁÍ·ÍÁÄÔ¡¢ÆäÃ²²»Ñï£¬ÔÛÃÇÏåÑôµÄÀÏ°ÙĞÕ¿É¶Ù¶Ù·¹¶¼Àë²»ÁËËü£¡",0)
+Say("ChiÕn tranh triÒn miªn! Muèn cã mét b÷a ¨n ngon còng kh«ng ph¶i lµ chuyÖn dÔ!",0)
 end;
 
 end;

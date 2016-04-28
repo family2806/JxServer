@@ -20,7 +20,7 @@ function start_match()
 		cancel_match();
 	else
 		-- Í¨¸æ
-		broadcast("ÁúÖÛ±ÈÈüÕıÊ½¿ªÊ¼£¬»®´¬ÊÖÃÇÕıÅ¬Á¦»®´¬!");
+		broadcast("Cuéc ®ua thuyÒn Rång ®· chİnh thøc b¾t ®Çu, c¸c h¶o thñ ®ang ra søc tranh tµi!");
 
 		-- ³õÊ¼»¯±äÁ¿
 		SetMissionV(VARV_NPC_BATCH, 1);	-- ¹ÖµÄÅú´Î

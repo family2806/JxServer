@@ -6,6 +6,6 @@ local _TaskDetail = TaskDetailClass:NewFun("GetMissionItem", "Action")
 
 function _TaskDetail:Exec(tbParam)
 	local tbAward = tbParam[1]
-	tbAwardTemplet:GiveAwardByList(tbAward, "150¼¶¼¼ÄÜ¶Ô»°ÈÎÎñÁìµ½µÀ¾ß")
+	tbAwardTemplet:GiveAwardByList(tbAward, "NhiÖm vô ®èi tho¹i kü n¨ng cÊp 150 nhËn ®­îc ®¹o cô")
 	return 1
 end

@@ -3,8 +3,8 @@
 
 function main()
 	if (GetSex() == 0) then
-		Talk(1,""," Ğ¡ĞÖµÜ£¬ÄãÒ²Ï²»¶ºÈ²è°¡£¿Ïë¾´²»Èç»áÎî£¬×øÏÂÀ´ºÈÒ»±­²è£¬ÁÄÁÄÌì°É!")
+		Talk(1,""," TiÓu huynh ®Ö! Ng­¬i còng thİch uèng trµ chø? T­¬ng kİnh kh«ng b»ng héi ngé, ngåi xuèng uèng mét t¸ch trµ cïng trß chuyÖn ®i!")
 	else
-		Talk(1,""," ÕâÎ»¹ÃÄï£¬ÄãÏ²»¶ºÈ²èÂğ£¿Ïë¾´²»Èç»áÎî£¬×øÏÂÀ´ºÈÒ»±­²è£¬ÁÄÁÄÌì°É!")
+		Talk(1,""," VŞ c« n­¬ng nµy! C« cã thİch uèng trµ kh«ng? T­¬ng kİnh kh«ng b»ng héi ngé, ngåi xèng uèng mét t¸ch trµ cïng trß chuyÖn ®i!")
 	end
 end;

@@ -3,7 +3,7 @@ tbConfig[1] = --一个细节
 {
 	nId = 1,
 	szMessageType = "NpcOnDeath",
-	szName = "输入详细姓名",
+	szName = "Nh藀 t猲 chi ti誸",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

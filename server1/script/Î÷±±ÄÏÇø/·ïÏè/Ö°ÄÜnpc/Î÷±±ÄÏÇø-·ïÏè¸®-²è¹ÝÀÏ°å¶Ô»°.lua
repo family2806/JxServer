@@ -4,9 +4,9 @@ function main(sel)
 
 i = random(0,1)
 if (i == 0) then
-Say("²è·»ÀÏ°å£º²è¿ÉĞŞĞÄ£¬Òà¿ÉÑøĞÔ£¬Ò»ºøÇå²è£¬¿ÉÒÔÈÃÈËË×Äî¶ÙÏû°¡¡£",0)
+Say("Trµ cã thÓ tu t©m d­ìng t¸nh, mét ngôm trµ xanh cã thÓ khiÕn con ng­êi quªn ®i thÕ tôc.",0)
 else
-Say("²è·»ÀÏ°å£º±¾²è·»µÃÃûÓÚÎª¸½½üµÄÏ²ÓêÍ¤£¬ÍùÀ´²è¿ÍÂçÒï²»¾ø¡£", 0)
+Say("Trµ cña chóng ta næi tiÕng kh¾p n¬i.", 0)
 end;
 
 

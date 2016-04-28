@@ -5,13 +5,13 @@
 -- Desc			:	ÉòÕÑÔ¶µÄÊÖ¸åÒ»ÂÒÆðÎ÷·½
 -------------------------------------------------------------------------
 
-DescLink_ShenZhaoYuan ="<#><link=image:\\spr\\item\\questkey\\taskobj075.spr>ÉòÕÑÔ¶µÄÊÖ¸å<link>"
+DescLink_ShenZhaoYuan ="<#><link=image:\\spr\\item\\questkey\\taskobj075.spr>BÝ quyÕt lµm b¸nh cña ThÈm ThiÖu ViÔn<link>"
 
 function main()
-	Describe(DescLink_ShenZhaoYuan.."<#>£ºÉÜÐËÈýÊ®Äê£¬º¨Õ½ÒÑ¾ÃµÄÖÐÔ­ËÎ¹úÓë±±·½½ð¹úÖ®¼ä½øÈëÁËÏà¶ÔÆ½¾²µÄÒ»Äê¡£Ë«·½°ÕÕ½ÐÝ±ø£¬³ýÁË±ß¾³ÉÏÊ±¶ø·¢ÉúÁãÐÇ³åÍ»£¬´óÊ±´úµÄ·é»ðËÆºõÔÝÊ±Ï¨ÃðÁË¡£ÖÐÔ­µØÇøµÄ°ÙÐÕµÃÒÔÐÝÑøÉúÏ¢£¬Ô­±¾°ÙÀïÄÚôÁÎÞÈËÑÌµÄ´å×¯ËÀÕòÓÖ»À·¢³öÐÂµÄ»îÁ¦¡£ÕâÄêÏÄ¼¾£¬µ¾ËëÉÏ¹ÒÂúÁËÐÇÐÇµãµãµÄÂ¶Ë®¡£<enter>"
-	.."È»¶øÕâÒ»Äê·Åµ½Õû¸öÀúÊ·³¤ºÓÖÐ¶¼±Ø½«ÊÇ¾ªÐÄ¶¯ÆÇ£¬¶øÓÖ»ØÎ¶¾Ã³¤µÄÒ»Äê¡£¼«Î÷µÄ´ó²ÝÔ­ÉÏ£¬ÃÉ¹Å°üÀï´«À´ÁËÓ¤¶ùÃÇÖÉÄÛµÄÌä¿Þ¡£ËûÃÇÁôÁ¬ÓÚÄ¸Ç×±¥ºÍµÄÄÌË®£¬ÏÔÊ¾³ö³¬Ô½Ç°±²µÄÍúÊ¢ÉúÃüÁ¦¡£´óÈËÃÇ¶¼Ëµ£¬ÕâÐ©º¢×Ó½«À´Ò»¶¨»á³ÉÎªÆòÑÕ²¿µÄ°ÍÌØ¶û¡£ËûÃÇ¶¼²»ÔøÏëµ½£¬ÔÚà»à»´ý²¸µÄÓ¤¶ùÖÐ¼ä£¬ÓÐÒ»¸öÈË²»½ö³ÉÎªÁËÃÉ¹Å²¿×åµÄÓ¢ÐÛ£¬ÉõÖÁÍ³Áì×ÅËûµÄµñ¹­ÌúÆïºáÉ¨Å·ÑÇ´óÂ½£¬Íê³ÉÁË¿õ¹ÅË¸½ñµÄ°ÔÒµ¡£ËûµÄÃû×Ö£¬½ÐÌúÄ¾Õæ¡£<enter>"
-	.."Ñô¹âÈ÷Âú´Ó±±ÖÁÄÏ¹ãÙóµÄ»ªÏÄÁìÓò£¬È´¶À¶ÀÕÕ²»µ½Î÷±±±ßÚïÆ¶ñ¤µÄÏÄ¹ú¡£Õâ¸ö´Ó¶Ø»Í³ÇµÄ·çÉ³ÖÐ×ß³öÀ´µÄ¹ú¼Ò£¬ÔâÓöÁË°ÙÄêÄÑÓöµÄºµÔÖ¡£×øÔÚÍõÍ¥Ö®ÉÏ£¬Î÷ÏÄ¹úÖ÷ÈÊÐ¢ÇÞÊ³ÄÑ°²¡£½üÐ©ÄêËû¶ÔÍâÁ¬ËÎ³¼½ð£¬³¤Ðä¹ãÎè£¬¶ÔÄÚÀø¾«Í¼ÖÎ£¬¿ªÒ»´ú·çÆø£¬Ê¹µÃÎ÷ÏÄ¹ú¹ãÓÐÉÂ¸ÊÈ«¾³£¬´¥½ÇÉõÖÁÌ½ÈëÁËÃÉ¹Å¾³ÄÚ¡£È»¶ø£¬ÄÇÐ©Øâº·µÄÓÎÄÁÃñ×åºó´ú£¬ÕýÒÔÒ»ÖÖÌúÑªºÍÎÞÇéµÄ×÷·çÖØ½¨×Å´ó²ÝÔ­µÄÖÈÐò£¬´ó¶¯ÂÒµÄÊ±´úÖÕ½«¹ýÈ¥£¬Ò»¸öÍ³Ò»¶øÇ¿ÊÆµÄ·â½¨¹ú¼Ò½«áÈÆð¡£ÆÄÓÐÕþÖÎÇ°Õ°ÐÔµÄÈÊÐ¢Ô¤¼ûµ½ÁËÕâÒ»µã£¬ÕâÈÃËûÓÇÂÇ²»¿°¡£ÒÑ±»½Ì»¯µÄÎ÷ÏÄ×ÓÃñÃÇµÖµ²²»×¡½ð¹úÇ¿±ø£¬Ò²µÖµ²²»×¡ÃÉ¹ÅÌúÆï£¬ÈÊÐ¢ËÆºõ¿´µ½ÁË´óÏÄÃðÍöÄÇÈÕÌÏÌìµÄ´ó»ð¡£Äñ¶ùÂäÔÚÍõÍ¥ÍâæÒÏ·£¬Ò»µã¶¼Ã»¸Ð¾õµ½ÀäÇåµÄÓùµîÕý±»ÒõôèÁýÕÖ£¬Î÷ÏÄÍõÈÊÐ¢Åç»ðµÄË«Ä¿Öð½¥÷öµ­ÏÂÈ¥£¬ËûÕÙÈëÊÌ´Ó£¬ÒÔÁù°ÙÀï¼Ó¼±¿ìÂíËÍ×ßÁËÒ»·âÐÅ¡£ÄÇ·â¾øÃØµÄÐÅº¯»á²»»á´øÀ´ÁíÒ»³¡Ú¤ÓüÖ®»ðÄØ£¿´Ó½ñÍíµÄÐÇ¿ÕÖÐÎÒµÃ²»µ½´ð°¸¡£¿ÉÊÇ£¬ÕâÒ»ÄêµÄ¾ÅÔÂ×¢¶¨²»»áÆ½¾²¡£<enter>"
-	.."                                             ¹ÛÐÇÕß  ÉòÕÑÔ¶",1,"½áÊø¶Ô»°/no")
+	Describe(DescLink_ShenZhaoYuan.."<#>: Th¸ng 5 n¨m ThiÖu H­ng thø 30, Tèng Kim t¹m nghÞ hßa, 2 bªn ®Òu lui binh ®Ó nghØ ng¬i. D©n chóng n¨m Êy ®­îc mïa, gia ®×nh ®oµn tô. th«n th«n trÊn trÊn ®Òu lµm lÔ t¹ ¬n trêi ®Êt. Tôc thi lµm b¸nh còng tõ ®ã mµ cã.<enter>"
+	.."Ng­¬i cã nghe nãi vª ThiÕt Méc Ch©n ch­a? §ã lµ 1 ®¹i anh hïng cña M«ng Cæ, ®· tõng thèng lÜnh binh M«ng Cæ lµm chÊn ®éng ch©u ¢u vµ th«ng tÝnh gÇn hÕt Trung Nguyªn <enter>"
+	.."Trung Nguuyªn lµ mét vïng ®Êt mµu mì v× vËy lu«n ph¶i ®èi ®Çu víi bao cuéc x©m l­îc.<enter>"
+	.."  ThÈm ThiÖu ViÔn",1,"KÕt thóc ®èi tho¹i/no")
 	return 1
 end
 

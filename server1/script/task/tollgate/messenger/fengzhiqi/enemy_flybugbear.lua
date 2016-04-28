@@ -15,7 +15,7 @@ function messenger_killbugbear()
 	if ( Uworld1213 ~= 0 ) then       --判断是否双倍经验时间
 		if  ( GetGameTime() - Uworld1213 >= 1200 ) then
 			nt_setTask(1213,0)
-			Msg2Player("你的增加双倍经验值的时间已结束!")
+			Msg2Player("Th阨 gian t╪g g蕄 i 甶觤 kinh nghi謒 c馻 b筺  k誸 th骳!")
 		else
 			AddOwnExp(FLYBUGBEAR_EXP)    --给予一倍的经验
 		end

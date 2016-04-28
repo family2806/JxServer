@@ -1,7 +1,7 @@
 -- Î÷É½Óì´¬·ò
 
 function main()
-	Say("ÄãÏë×ø´¬È¥ÑïÖİ? 500Á½!", 2, "ºÃ!×ß!/toyangzhou", "²»×ø´¬ÁË/no");
+	Say("Ng­¬i muèn ngåi thuyÒn ®Õn D­¬ng Ch©u µh? 500 l­îng!", 2, "§­îc th«i! §i nµo!/toyangzhou", "Kh«ng ngåi thuyÒn ®©u/no");
 end
 
 function toyangzhou()
@@ -11,7 +11,7 @@ function toyangzhou()
 		SetFightState(1);
 		Pay( 500 );
 	else
-		Talk( 1,"","²»½»Ç®²»ÄÜÉÏ´¬!");
+		Talk( 1,"","Kh«ng tiÒn kh«ng thÓ lªn thuyÒn!");
 	end
 end
 

@@ -5,7 +5,7 @@ SKILLLEVEL2 = 20;
 SKILLLEVEL3 = 0;
 SKILLLEVEL41 = 5;
 SKILLLEVEL42 = 18;
-ITEMNAME = "±©¿◊π∆";
-ITEMDFFECT = "À˘”–∂‘ ÷—£‘Œ5√Î";
+ITEMNAME = "Bπo L´i CÊ ";
+ITEMDFFECT = "Khi’n ÆËi ph≠¨ng bﬁ cho∏ng 5 gi©y";
 
 Include([[\script\item\springfestival2006\festival_head_haojiao.lua]]);

@@ -8,7 +8,7 @@ end
 --È«²¿ÈıÈËÈüÏà¹ØÊı¾İ
 WLLS_DATA = {
 	
-	name = "×ÔÓÉÈıÈËÈü",
+	name = " tù do ba ng­êi cuéc so tµi ",
 	
 	--µØÍ¼ĞÅÏ¢
 	match_type = {
@@ -71,8 +71,8 @@ WLLS_DATA = {
 	max_member = 3,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÎª <color=red>×ÔÓÉÈıÈËÈü<color>",
-		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÎª<color=red>×ÔÓÉÈıÈËÈü<color>",
+		" lÇn nµy vâ l©m t©n tó liªn cuéc so tµi v× <color=red> tù do ba ng­êi cuéc so tµi <color>",
+		" lÇn nµy vâ l©m t©n tó liªn cuéc so tµi v× <color=red> tù do ba ng­êi cuéc so tµi <color>",
 	},
 	
 	--====Functions====
@@ -81,33 +81,33 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter>  ´Ë´Î"..str_des.."ÔÚ <color=red>×ÔÓÉÈıÈËÈü<color>, Äã¿ÉÒÔÑ¡Ôñ½¨Á¢×é¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó¡£ÔÚ¶Ó³¤ÓëÍæ¼Ò×é¶ÓÍêºó£¬"..str_des.."Óë¹ÙÔ±¶Ô»°£¬Ñ¡ÔñÁªÈü¶Ó"..str_des.."¼ÓÈë¶ÓÓÑµ½±¾¶Ó¾ÍĞĞ£¬Õ½¶Ó³ÉÔ±×î¶àÎª<color=red>3 ÈË<color>.",
-				"ÎÒÏë½¨Á¢"..str_des.."×é¶Ó/wlls_want2create",
-				"ÎÒÖ»¿´¿´/OnCancel")
+			wlls_descript("<enter> lÇn nµy "..str_des.." ë <color=red> tù do ba ng­êi cuéc so tµi <color>, ng­¬i cã thÓ lùa chän thµnh lËp häp thµnh ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c . ë ®éi tr­ëng cïng nhµ ch¬i häp thµnh ®éi hoµn hËu , "..str_des.." cïng quan viªn ®èi tho¹i , lùa chän liªn cuéc so tµi ®éi "..str_des.." gia nhËp ®éi h÷u ®Õn vèn ®éi lµ ®­îc , chiÕn ®éi thµnh viªn nhiÒu nhÊt v× <color=red>3 ng­êi <color>.",
+				" ta muèn thµnh lËp "..str_des.." häp thµnh ®éi /wlls_want2create",
+				" ta chØ nh×n mét chót /OnCancel")
 			return
 		end
 	
 		local n_mytype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		local n_level, n_group = wlls_getcityinfo()
 		local n_next = GetGlbValue(GLB_WLLS_NEXT)
-		local str = "<enter>Ä¿Ç°ÄãµÄÕ½¶ÓÎª<color=yellow>"..str_lgname.."<color><enter>"
-		.. "Õ½¶Ó¶Ó³¤:"..join(wlls_get_mems(n_lid), "Õ½¶Ó³ÉÔ±:") .. "<enter>"
+		local str = "<enter> tr­íc m¾t ng­¬i chiÕn ®éi v× <color=yellow>"..str_lgname.."<color><enter>"
+		.. " chiÕn ®éi ®éi tr­ëng :"..join(wlls_get_mems(n_lid), "ChiÕn ®éi thµnh viªn :") .. "<enter>"
 		if (n_mytype ~= n_next) then
-			str = str .. "<enter>   <color=yellow>×¢Òâ£ºÏÂÆÚÁªÈüÏŞÖÆÎª<color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, Èç¹ûÏëÏÂÆÚÁªÈü£¬Çë½¨Á¢ĞÂµÄÕ½¶Ó.<color><enter>"
+			str = str .. "<enter> <color=yellow> chó ı  h¹ kú liªn cuéc so tµi h¹n chÕ v× <color><color=red>"..WLLS_TAB[n_next].name.."<color><color=yellow>, nÕu nh­ muèn h¹ kú liªn cuéc so tµi , xin/mêi thµnh lËp míi chiÕn ®éi .<color><enter>"
 		end
 		local tb_option = {}
 		if (n_job == 1 and n_mytype == n_next) then
-			str = str.."<enter>Äã¿ÉÒÔÑ¡Ôñ<color=red>¼ÓÈëÆäËû¶ÓÎé<color>»òÕß<color=red>Àë¿ªÁªÈü<color>.<enter><enter>"..
-			"³ÉÁ¢Õ½¶Ó²½Öè: ÔÚ<color=red>ĞİÏ¢Ê±¼äºÍÁªÈüÊ±¼ä<color>, ¶¼¿ÉÒÔÓëÆäËûÍæ¼Ò×é¶Ó, <color=red>ÒìĞÔ<color>, Ñ¡ÔñÍ¬Ò»ÈÃÍ¬¶Ó¼ÓÈë±¾¶Ó. <enter>"..
-			"Àë¿ªÁªÈü: ÔÚ<color=red>ĞİÏ¢Ê±¼ä<color>,Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬ÔÚÁªÈüÊ±¼äÈç¹ûÄãµÄ²»ÊÇ¶Ó<color=red> Î´¼ÓÈëÉÏÆÚÁªÈü<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬Èç¹ûÒÑ²Î¼Ó¾Í²»ÄÜÀë¿ª¡£¶Ó³¤×Ê¸ñ½«±»×ª½»¸øÆäËû¶ÓÔ± <color=yellow>Èç¹ûÃ»ÓĞ³ÉÔ±£¬Õ½¶Ó½«±»½âÉ¢<color>."
-			tb_option[getn(tb_option)+1] = "ÈÃÎÒµÄ¶ÓÓÑ¼ÓÈëÁªÈü¶ÓÎé/wlls_want2addmember"
+			str = str.."<enter> ng­¬i cã thÓ lùa chän <color=red> gia nhËp nh÷ng kh¸c ®éi ngò <color> hoÆc lµ <color=red> rêi ®i liªn cuéc so tµi <color>.<enter><enter>"..
+			" thµnh lËp chiÕn ®éi b­íc : ë <color=red> thêi gian nghØ ng¬i cïng liªn cuéc so tµi thêi gian <color>, còng cã thÓ thay v× h¾n nhµ ch¬i häp thµnh ®éi , <color=red> kh¸c ph¸i <color>, lùa chän cïng ®Ó cho cïng ®éi gia nhËp vèn ®éi . <enter>"..
+			" rêi ®i liªn cuéc so tµi : ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ ng­¬i kh«ng ph¶i lµ ®éi <color=red> kh«ng gia nhËp th­îng kú liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ ®· tham gia th× kh«ng thÓ rêi ®i . ®éi tr­ëng t­ c¸ch ®em bŞ chuyÓn giao cho nh÷ng ®éi viªn kh¸c <color=yellow> nÕu nh­ kh«ng cã thµnh viªn , chiÕn ®éi ®em bŞ gi¶i t¸n <color>."
+			tb_option[getn(tb_option)+1] = "Thªm thµnh viªn vµo ®éi/wlls_want2addmember"
 		else
-			str = str.."<enter>  Äã¿ÉÒÔÑ¡ÔñÀë¿ª¶Ó.<enter><enter>"..
-			"Àë¶Ó£ºÔÚ <color=red>ĞİÏ¢Ê±¼ä<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬ÔÚÁªÈüÊ±¼äÈç¹û×Ô¼ºµÄÁªÈü¶Ó<color=red>Î´¼ÓÈëÉÏ´ÎÁªÈü<color>, Äã¿ÉÒÔÀë¿ªÁªÈü¶Ó£¬Èç¹û¼ÓÈëÁªÈü¾Í²»ÄÜÀë¿ª."
+			str = str.."<enter> ng­¬i cã thÓ lùa chän rêi ®i ®éi .<enter><enter>"..
+			" c¸ch ®éi  ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ m×nh ®İch liªn cuéc so tµi ®éi <color=red> kh«ng gia nhËp lÇn tr­íc liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ gia nhËp liªn cuéc so tµi th× kh«ng thÓ rêi ®i ."
 		end
-		tb_option[getn(tb_option)+1] = "Àë¶Ó/wlls_want2leaveleague"
-		tb_option[getn(tb_option)+1] = "¿´¶ÓÎéÕ½¼¨/wlls_query_mylg"
-		tb_option[getn(tb_option)+1] = "ÎÒÖ»ÊÇÂ·¹ı/OnCancel"
+		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
+		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"
+		tb_option[getn(tb_option)+1] = "Ta chØ ®i ngang qua/OnCancel"
 		wlls_descript(str, tb_option)
 	end,
 	

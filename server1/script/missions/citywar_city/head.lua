@@ -15,10 +15,10 @@ TSK_TEMP_CURCOUNT = 115
 
 tb_CW_MEDICINE =
 {
-	{10, {6,1,1302,1,1,1}, 1000, "Îå»¨ÓñÂ¶Íè-¹¥³ÇÕ½."},
-	{11, {6,1,1303,1,1,1}, 800, "¾Å×ª»¹»êµ¤-¹¥³ÇÕ½"},
-	{12, {6,1,1304,1,1,1}, 800, "Ê×ÎÚ»¹»êµ¤-¹¥³ÇÕ½"},
-	{13, {6,1,1305,1,1,1}, 800, "ÁúÏÑ»¯¶¾µ¤-¹¥³ÇÕ½"},
+	{10, {6,1,1302,1,1,1}, 1000, "Ngò hoa ngäc lé hoµn - c«ng thµnh chiÕn."},
+	{11, {6,1,1303,1,1,1}, 800, "Cöu chuyÓn hoµn hån ®¬n - c«ng thµnh chiÕn"},
+	{12, {6,1,1304,1,1,1}, 800, "Thñ « hoµn hån ®¬n - c«ng thµnh chiÕn"},
+	{13, {6,1,1305,1,1,1}, 800, "Long diªn hãa ®éc ®¬n - c«ng thµnh chiÕn"},
 }
 
 MISSIONID = 6;
@@ -48,7 +48,7 @@ g_nMaxGccPerDoor = 1; --¹¥·½Ã¿¸öÃÅ×î¶à´æÔÚ¹¥³Ç³µµÄÊýÁ¿
 --toolbegin = 62
 --doorbegin = 62 + 6 = 68
 MS_TOOLBEGIN = MS_GCCBEGIN + g_nMaxGccPerDoor * g_nDoorCount;
-g_nMaxToolCount = 6; --ÊØ·½×î´óÍ¬Ê±´æÔÚµÄ¹ÍÓ¶±øÈËÊý
+g_nMaxToolCount = 6; --phe thñ:×î´óÍ¬Ê±´æÔÚµÄ¹ÍÓ¶±øÈËÊý
 
 MS_DOORBEGIN = MS_TOOLBEGIN + g_nMaxToolCount; --¼ÇÂ¼³ÇÃÅ×´Ì¬µÄmission²ÎÊýindex
 MS_KEY = 99
@@ -68,42 +68,42 @@ MAX_CAMP3COUNT = 50 ;--ÔÊÐíÊØ³Ç·½×î´ó¿ÉÒÔÒªÇóÐ­ÖúµÄÆäËü°ï»áÈËÊý
 MAX_CAMP4COUNT = 50 ;--ÔÊÐí¹¥³Ç·½×î´ó¿ÉÒÔÒªÇóÐ­ÖúµÄÆäËü°ï»áÈËÊý
 
 --¹¥ÊØË«·½µÚÒ»´Î½ø³¡Ê±µÄ×ø±ê
-CS_CampPos1 = {221, 1533, 3211};--ÊØ·½
+CS_CampPos1 = {221, 1533, 3211};--phe thñ:
 CS_CampPos2 = {221, 1903, 3608};--¹¥·½
 
 STONENPCID1 = 528;	--Ê¯0±®µÄNpcÄ£°åID
 STONENPCID2 = 530;
-STONELEVEL1 = 10; 	--Ê¯±®µÈ¼¶ÊØ·½µÄÊ¯Öù
+STONELEVEL1 = 10; 	--Ê¯±®µÈ¼¶phe thñ:µÄÊ¯Öù
 STONELEVEL2 = 20;   --¹¥·½µÄÊ¯Öù
-STONENAME = "¶¨³ÇÊ¯Öù";
+STONENAME = "Bia ®¸ ®Þnh thµnh ";
 DOORNPCID =  532;
 DOORLEVEL = 60;
 StonePos = 
 {
-{x = 55232, y = 104928, Name = "¶¨´¨Öù"},
-{x = 53152, y = 107040, Name = "Á¢ÑôÖù"},
-{x = 50976, y = 108992, Name = "Æ½½­Öù"},
+{x = 55232, y = 104928, Name = "§Þnh Xuyªn Trô "},
+{x = 53152, y = 107040, Name = "LËp D­¬ng Trô "},
+{x = 50976, y = 108992, Name = "B×nh Giang Trô "},
 };
 
 
 DoorPos=
 {
-{x = 57472, y = 106944, Name="¶¨´¨ÃÅ"},
-{x = 55296, y = 109088, Name="Á¢ÑôÃÅ"},
-{x = 53184, y = 111136, Name="Æ½½­ÃÅ"},
+{x = 57472, y = 106944, Name="§Þnh Xuyªn m«n"},
+{x = 55296, y = 109088, Name="LËp D­¬ng m«n"},
+{x = 53184, y = 111136, Name="B×nh Giang m«n"},
 };
 
 DOCTORNPCID = 230;
 DoctorPos = 
 {
-{49184,102592,"Ëæ¾ü´ó·ò"},
-{50048,103552,"Ëæ¾ü´ó·ò"},
-{48480,103616,"Ëæ¾ü´ó·ò"},
-{48928,104160,"Ëæ¾ü´ó·ò"},
-{61184,114176,"Ëæ¾ü´ó·ò"},
-{61600,114592,"Ëæ¾ü´ó·ò"},
-{60128,115168,"Ëæ¾ü´ó·ò"},
-{60672,115616,"Ëæ¾ü´ó·ò"},
+{49184,102592,"Tïy Qu©n d­îc Y"},
+{50048,103552,"Tïy Qu©n d­îc Y"},
+{48480,103616,"Tïy Qu©n d­îc Y"},
+{48928,104160,"Tïy Qu©n d­îc Y"},
+{61184,114176,"Tïy Qu©n d­îc Y"},
+{61600,114592,"Tïy Qu©n d­îc Y"},
+{60128,115168,"Tïy Qu©n d­îc Y"},
+{60672,115616,"Tïy Qu©n d­îc Y"},
 }
 
 --Ç°Á½¸öÊÇÍ¶Ê¯³µµÄ×ø±ê£¬ºóÁ½¸öÊÇÍ¶µãµÄ×ø±ê
@@ -169,14 +169,14 @@ ObstaclePos =
 	TAB_RANKBONUS = {0, 1000, 3000, 6000,10000};
 	RANK_SKILL = 661;
 	TAB_RANKMSG = {
-	"Äã±»·âÎª<color=white>Ê¿±ø<color>!",
-	"ÏÖÔÚ±»½ú·âÎª<color=0xa0ff>Ð£Î¾<color>!",
-	"ÏÖÔÚ±»½ú·âÎª<color=0xff>Í³Áì<color>!",
-	"ÏÖÔÚ±»½ú·âÎª<color=yellow>¸±½«<color>!",
-	"ÏÖÔÚ±»½ú·âÎª<color=yellow><bclr=red>´ó½«<bclr><color>!",
-	"Äã±»·âÎª<color=yellow>ÔªË§<color=>!"}
+	"B¹n ®­îc phong lµ <color=white>Binh SÜ<color>!",
+	"HiÖn ®ang ®­îc tÊn phong lµm <color=0xa0ff>HiÖu óy<color>!",
+	"HiÖn ®ang ®­îc tÊn phong lµm <color=0xff>Thèng lÜnh<color>!",
+	"HiÖn ®ang ®­îc tÊn phong lµm <color=yellow>Phã t­íng<color>!",
+	"HiÖn ®ang ®­îc tÊn phong lµm <color=yellow><bclr=red>§¹i t­íng<bclr><color>!",
+	"B¹n ®­îc phong lµ <color=yellow>Nguyªn So¸i<color=>!"}
 	
-	tbRANKNAME={"<color=white>Ê¿±ø<color>", "<color=0xa0ff>Ð£Î¾<color>", "<color=0xff>Í³Áì<color>", "<color=yellow>¸±½«<color.", "<color=yellow><bclr=red>´ó½«<bclr><color>" , "<color=black>ÔªË§<color>"}
+	tbRANKNAME={"<color=white>Binh SÜ<color>", "<color=0xa0ff>HiÖu óy<color>", "<color=0xff>Thèng LÜnh<color>", "<color=yellow>Phã T­íng<color.", "<color=yellow><bclr=red>§¹i T­íng<bclr><color>" , "<color=black>Nguyªn So¸i<color>"}
 	
 	TITLE_BONUSRANK1 = 0		--³ÉÎªÏàÓ¦Í·ÏÎËùÐè»ý·ÖÖµ
 	TITLE_BONUSRANK2 = 10000
@@ -255,7 +255,7 @@ TV_SERIESKILL_REALY = 2305  --Íæ¼Òµ±Ç°µÄÊµ¼ÊÁ¬Õ¶Öµ£¨¸ß¼¶É±±È½ÏµÍ¼¶µÄÍæ¼Ò£¬¼ÆÁ¬Õ¶
 --~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~»ªÀöµÄ·Ö¸îÏß~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function CheckWin()
-	local nResult = 0;--ÊØ·½Ê¯±®µÄÊýÁ¿
+	local nResult = 0;--phe thñ:Ê¯±®µÄÊýÁ¿
 	local nCount = MS_SYMBOLCOUNT;
 	for i  = 1, nCount do 
 		 if (GetMissionV(MS_SYMBOLBEGIN + i - 1) == 2) then 
@@ -267,10 +267,10 @@ end;
 --------------------------------------------------------------------------------------
 function GameWin(nWinner)
 	if (nWinner == 1) then 
-		str = "¾öÈü" .. "ÊØ·½"..GetGamerName(1).."´óÊ¤£¬¼ÌÐø±£³Ö£¡"..GetGameCity().."µÃµ½Í³ÖÎÈ¨£¡¼ÌÐø±£³Ö";
+		str = "Chung cuéc" .. "phe thñ:"..GetGamerName(1).."Th¾ng lîi lín råi, tiÕp tôc duy tr×! "..GetGameCity().."Giµnh quyÒn thèng trÞ! TiÕp tôc duy tr× ";
 		NotifyWarResult(GetWarOfCity(), 0)
 	else
-		str= "¾öÈü" .. "¹¥·½:"..GetGamerName(2) .. "´óÊ¤£¬¼ÌÐø±£³Ö! "..GetGameCity().."µÃµ½Í³ÖÎÈ¨£¡¼ÌÐø±£³Ö";
+		str= "Chung cuéc" .. "phe c«ng:"..GetGamerName(2) .. "Thu ®­îc ®¹i th¾ng lîi! Th¾ng lîi råi! "..GetGameCity().."Giµnh quyÒn thèng trÞ! TiÕp tôc duy tr× ";
 	
 		NotifyWarResult(GetWarOfCity(), 1)
 	end;
@@ -364,7 +364,7 @@ function DelNpcSafe(nNpcIndex)
 	
 	PIdx = NpcIdx2PIdx(nNpcIndex);
 	if (PIdx > 0) then 
-		WriteLog("´íÎó!!! DelNpcÏëÏû³ýÒ»¸ögamer ");
+		WriteLog("Lçi!!! DelNpc muèn xãa bá mét gamer ");
 		return
 	end;
 	

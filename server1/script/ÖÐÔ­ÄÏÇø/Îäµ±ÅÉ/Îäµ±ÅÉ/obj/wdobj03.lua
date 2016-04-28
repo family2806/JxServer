@@ -8,27 +8,27 @@ function main()
 	UTask_wd60sub = GetByte(GetTask(17),3)
 	if (UTask_wd == 60*256+20) then
 		if (UTask_wd60sub == 0) then
-			Talk(1,"","±¦Ïä: <color=Red>ÊØ½«<color> ÔÚ <color=Red>ÏåÑôÑÃÃÅ<color> ÕûÌìÖ»¶®ºÈ¾Æ£¬ÆÛ¸º°ÙĞÕ£¬ÀÏ°ÙĞÕÔ¹ºŞ<color=Red>±©Õş<color>ÔõÄÜÏû³ı£¿")
-			Msg2Player("±¦ÏäÉÏĞ´×Å£ºÈ¥¾¯¸æÏåÑôÊØ½«£¬ÎªÃñ³ı¶ñ. ")
+			Talk(1,"","B¶o r­¬ng: <color=Red>Thñ t­íng<color> trong <color=Red>Nha m«n T­¬ng D­¬ng<color> c¶ ngµy chØ biÕt uèng r­îu, øc hiÕp b¸ t¸nh, l·o b¸ t¸nh o¸n giËn, <color=Red>b¹o chİnh<color> lÇn nµy, lµm sao diÖt ®­îc?")
+			Msg2Player("L¸ bïa trªn b¶o r­¬ng ë Th¸i Tö nham viÕt: §i c¶nh c¸o chñ t­íng T­¬ng D­¬ng, gióp d©n trõ ¸c. ")
 			SetTask(17, SetByte(GetTask(17),3,2))
-			AddNote("±¦ÏäÉÏĞ´×Å£ºÈ¥¾¯¸æÏåÑôÊØ½«£¬ÎªÃñ³ı¶ñ. ")
+			AddNote("L¸ bïa trªn b¶o r­¬ng ë Th¸i Tö nham viÕt: §i c¶nh c¸o chñ t­íng T­¬ng D­¬ng, gióp d©n trõ ¸c. ")
 		elseif (UTask_wd60sub > 0) and (UTask_wd60sub < 5) then
-			Talk(1,"","ÏåÑô±¦ÏäÒÀÈ»ÄÜÉú»îÔÚ<color=Red>±©Õş<color>  <color=Red>ÊØ½«<color>.....")
-			Msg2Player("ÏåÑô°ÙĞÕÒÀÈ»Éú»îÔÚË®Éî»ğÈÈÖ®ÖĞ... ")
+			Talk(1,"","B¸ t¸nh T­¬ng D­¬ng vÉn sèng ®­îc d­íi <color=Red>chİnh s¸ch tµn b¹o<color> cña <color=Red>Thñ t­íng<color>.....")
+			Msg2Player("Nh©n d©n ë thµnh T­¬ng D­¬ng vÉn trong c¶nh dÇu s«i löa báng... ")
 		elseif (UTask_wd60sub == 5) then
 			AddEventItem(71)
-			Talk(1,"","È¡Ïû <color=Red>±©Õş<color> ´ò¿ª±¦Ïä£¬»ñµÃÒ»¾í<color=Red>Ì«ÇåÕæ¾­<color>.")
-			Msg2Player("Ïû³ı±©Õş£¬»ñµÃÒ»²¿Ì«ÇåÕæ¾­. ")
+			Talk(1,"","Xãa bá <color=Red>chİnh s¸ch tµn b¹o<color> cña T­¬ng D­¬ng, më B¶o r­¬ng, lÊy ®­îc 1 quyÓn <color=Red>'Th¸i Thanh Ch©n Kinh'<color>.")
+			Msg2Player("DiÖt xong b¹o quyÒn ë thµnh T­¬ng D­¬ng, cã ®­îc 1 bé Th¸i Thanh Ch©n Kinh. ")
 			SetTask(17, SetByte(GetTask(17),3,10))
-			AddNote("´ò¿ª±¦Ïä»ñµÃÒ»²¿Ì«ÇåÕæ¾­")
+			AddNote("Më B¶o r­¬ng cã ®­îc bé Th¸i Thanh Ch©n Kinh ")
 		elseif (UTask_wd60sub == 10) then
 			if (HaveItem(71) == 0) then
 				AddEventItem(71)
 			else
-				Talk(1,"","±¦ÏäÒÑ¿Õ")
+				Talk(1,"","B¶o r­¬ng ®· rçng")
 			end
 		end
 	else
-		Talk(1,"","Î´½ÓÈÎÎñ£¬Äã²»ÄÜ´ò¿ª±¦Ïä!")
+		Talk(1,"","Ch­a nhËn nhiÖm vô! B¹n kh«ng thÓ më B¶o r­¬ng nµy!")
 	end
 end;

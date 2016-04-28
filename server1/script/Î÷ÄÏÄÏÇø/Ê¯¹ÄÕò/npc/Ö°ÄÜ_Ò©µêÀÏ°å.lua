@@ -4,7 +4,7 @@ Include("\\script\\task\\newtask\\education\\jiaoyutasknpc.lua")
 Include("\\script\\task\\newtask\\newtask_head.lua")
 
 function main()
-		Say("Ê¯¹ÄÕò×æ´«£¬°üÖÎ°Ù²¡£¬¿Í¹ÙÏëÂòÊ²Ã´?", 3, "½»Ò×/yes","ÎÒÀ´½ÓÈëÃÅÈÎÎñ/yboss", "²»½»Ò×/no")
+		Say("Th¹ch Cæ TrÊn tæ truyÒn, b¶o ®¶m trŞ b¸ bÖnh, Kh¸ch quan muèn mua g×?", 3, "Giao dŞch/yes","Ta ®Õn nhËn nhiÖm vô S¬ nhËp/yboss", "Kh«ng giao dŞch/no")
 end;
 
 function yes()

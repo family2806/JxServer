@@ -23,15 +23,15 @@ Include("\\script\\task\\random\\task_head.lua");
 
 function main()
 
-Say("ÎäÁÖÃËÖ÷Ú¯Êé£ºµ±´ËÂÒÊÀ£¬¸÷Î»ÈÔÎªÎÒÎäÁÖÃË¾¡ĞÄ½ßÁ¦£¬¶À¹Â½£¸Ğ¼¤²»¾¡¡£Ç¡·êÅ©ÀúĞÂÄê½«ÖÁ£¬Ôªµ©¼Ñ½Ú£¬ÌØÎ¯ÅÉÎÒÃÅÏÂ´«ÈËÎª¸÷Î»ËÍÉÏÔªµ©ºØÀñ£¬´ó¼Ò¿ÉÒÔÔÚ<color=yellow>12ÔÂ30ÈÕÖÁ1ÔÂ1ÈÕ<color>ÁìÈ¡£¬×îºó×£ºÏ¼Ò°²¿µ£¬ĞÂÄêÈçÒâ£¡ ¡ª¡ª ¶À¹Â½£",
+Say("§Ó tri ©n c¸c anh hïng hiÖp kh¸ch, vµo dŞp TÕt ¢m LŞch, ta muèn tÆng mét sè lÔ vËt, vµo ngµy <color=yellow>30/12 ®Õn 01/01<color> cã thÓ ®Õn chç ta nhËn quµ--§éc C« KiÕm",
 	7,
-	"ÁìÈ¡Ã¿ÈÕµÄ°ËĞ¡Ê±Ë«±¶¾­Ñé/getDoubleExp",
-	"ÁìÈ¡Ã¿ÈÕµÄ¾­Ñé½±Àø/getMoreExp_Confirm",
-	"ÁìÈ¡Ã¿ÈÕµÄÈÎÎñ¾íÖá/getTaskBook",
-	"¹ØÓÚËæ»úÈÎÎñ´¥·¢¸ÅÂÊ·­±¶µÄÏûÏ¢/getRandomTaskInfo",
-	"ÓĞ¹Ø°×¾ÔÍèµÄĞÂÏûÏ¢/getBaijuInfo",
-	"¿ÉÒÔÓÃÍ­Ç®¹ºÂòĞÂµÀ¾ß/getCoppercashInfo",
-	"ÔÄ¶ÁÍê±Ï/OnExit");
+	"NhËn ®iÓm kinh nghiÖm t¨ng gÊp ®«i trong 8 giê mçi ngµy/getDoubleExp",
+	"NhËn phÇn th­ëng ®iÓm kinh nghiÖm mçi ngµy/getMoreExp_Confirm",
+	"NhËn mËt tŞch nhiÖm vô mçi ngµy/getTaskBook",
+	"Liªn quan vÒ tû lÖ t¨ng ®iÓm kinhn nghiÖm cña nhiÖm vô ngÉu nhiªn/getRandomTaskInfo",
+	"Tin tøc míi vÒ B¹ch C©u hoµn/getBaijuInfo",
+	"Cã thÓ sö dông TiÒn ®ång mua dông cô míi/getCoppercashInfo",
+	"§· ®äc xong/OnExit");
 	
 	return 1;
 
@@ -45,13 +45,13 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 	
 	-- Èç¹ûÈÕÆÚ²»¶Ô£¬Ö±½Ó·µ»Ø
 	if isNewYearTime()==0 then
-		Say("ÏÖÔÚÒÑ¾­²»ÊÇÔªµ©ÁËÅ¶£¡", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 
 	-- Èç¹ûµÈ¼¶Î´´ïµ½ 80 ¼¶
 	if GetLevel()<80 then
-		Say("Ö»ÓĞ 80 ¼¶ÒÔÉÏµÄÈË²ÅÄÜÁìÈ¡Ë«±¶¾­ÑéÅ¶£¡", 0);
+		Say("ChØ cã ng­êi ch¬i tõ cÊp 80 trë lªn míi cã thÓ nhËn ®­îc phÇn th­ëng gÊp ®«i ®iÓm kinh nghiÖm!", 0);
 		return
 	end;
 
@@ -62,7 +62,7 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 		
 	elseif GetTask(ID_GETDOUBLEEXP_NUM)>=1 then
 	
-		Say("Äã½ñÌìÒÑ¾­ÁìÈ¡¹ıÁËË«±¶¾­ÑéÁËÅ¶£¡", 0);
+		Say("H«m nay b¹n ®· nhËn phÇn th­ëng gÊp ®«i ®iÓm kinh nghiÖm råi!", 0);
 		return
 		
 	else
@@ -78,11 +78,11 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 		AddSkillState(531,10,1,8*60*60*18);
 		AddSkillState(461,1, 1,8*60*60*18);
 		
-		Msg2Player("ÄúµÃµ½ÁË<color=green> 8 Ğ¡Ê±µÄË«±¶¾­Ñé£¡<color>");
-		WriteTaskLog("µÃµ½ÁË 8 Ğ¡Ê±µÄË«±¶¾­Ñé£¡");
+		Msg2Player("B¹n nhËn ®­îc <color=green>PhÇn th­ëng ®iÓm kinh nghiÖm gÊp ®«i trong 8 giê!<color>");
+		WriteTaskLog("NhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm gÊp ®«i trong 8 giê!");
 		
 	else
-		Say("Ö»ÓĞ 80 ¼¶ÒÔÉÏµÄÈË²ÅÄÜÁìÈ¡Ë«±¶¾­ÑéÅ¶£¡", 0);
+		Say("ChØ cã ng­êi ch¬i tõ cÊp 80 trë lªn míi cã thÓ nhËn ®­îc phÇn th­ëng gÊp ®«i ®iÓm kinh nghiÖm!", 0);
 	end;
 
 end;
@@ -97,19 +97,19 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 	
 	-- Èç¹ûÈÕÆÚ²»¶Ô£¬Ö±½Ó·µ»Ø
 	if isNewYearTime()==0 then
-		Say("ÏÖÔÚÒÑ¾­²»ÊÇÔªµ©ÁËÅ¶£¡", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 	
 	-- Èç¹ûÊÇ·Ç³å¿¨ÓÃ»§
 	if IsCharged()==0 then
-		Say("±¾´ÎÔªµ©»î¶¯Ö»ÓĞ³å¿¨ÓÃ»§²ÅÄÜ²ÎÓëÅ¶£¡", 0);
+		Say("Ho¹t ®éng Nguyªn §¸n lÇn nµy chØ cã n¹p thÎ míi sö dông ®­îc!", 0);
 		return
 	end;
 	
 	-- Èç¹ûµÈ¼¶Î´´ïµ½ 80 ¼¶
 	if GetLevel()<80 then
-		Say("Ö»ÓĞ 80 ¼¶ÒÔÉÏµÄÈË²ÅÄÜÁìÈ¡Õâ¸öÈÎÎñ¾íÖáÅ¶£¡", 0);
+		Say("ChØ cã ng­êi ch¬i tõ cÊp 80 trë lªn míi cã thÓ nhËn ®­îc mËt tŞch nhiÖm vô nµy!", 0);
 		return
 	end;
 	
@@ -120,7 +120,7 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 		
 	elseif GetTask(ID_GETTASKBOOK_NUM)>=1 then
 	
-		Say("Äã½ñÌìÒÑ¾­ÁìÈ¡¹ıÁËÒ»¸öÈÎÎñ¾íÖáÅ¶£¡", 0);
+		Say("H«m nay b¹n ®· nhËn mét mËt tŞch nhiÖm vô råi!", 0);
 		return
 		
 	else
@@ -140,18 +140,18 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 	-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	SyncItem(nRandomItemIndex);
 
-	Msg2Player("ÄúµÃµ½ÁË<color=green>ÈÎÎñ¾íÖáÒ»¸ö£¡<color>");
+	Msg2Player("B¹n nhËn ®ù¬c <color=green>nhiÖm vô ngÉu nhiªn!<color>");
 	
-	WriteTaskLog("µÃµ½ÁËÒ»¸öÈÎÎñ¾íÖá£¬±àºÅÎª£º"..nRandomTaskID);
+	WriteTaskLog("NhËn ®­îc 1 mËt tŞch nhiÖm vô, m· sè lµ:"..nRandomTaskID);
 	
 end;
 
 
 -- Ñ¯ÎÊÍæ¼ÒÊÇ·ñÁìÈ¡¾­Ñé
 function getMoreExp_Confirm()
-	Say("ÄúÔÚ<color=yellow>2005Äê12ÔÂ30ÈÕÖÁ2006Äê1ÔÂ1ÈÕ<color>ÆÚ¼ä£¬Ã¿ÈÕÉÏÏß¶¼»á»ñµÃ¶À¹ÂÃËÖ÷ÔùËÍµÄ´óÅú¾­Ñé¡£<color=yellow>ÕâÈıÌìÖ®ÄÚÃ¿ÌìÄÜÁìÒ»´Î<color>£¬µ«Á½´ÎÁìÈ¡¾­ÑéÖ®¼äÏà¸ôĞèÒª<color=yellow>ÔÚÏß³¬¹ı1Ğ¡Ê±<color>¡£ÄãÒªÏÖÔÚÁìÈ¡Âğ£¿",2,
-		"ºÃ°¡£¬ÎÒÒªÁìÈ¡/getMoreExpMain",
-		"»¹ÊÇÔÙµÈÒ»ÏÂ°É/OnExit");
+	Say("Trong kho¶ng thêi gian tõ <color=yellow>20-12-2005 ®Õn 01-01-2006<color>, mçi ngµy lªn m¹ng ®Òu nhËn ®­îc ®iÓm kinh nghiÖm do Vâ l©m minh chñ tÆng.<color=yellow>Trong vßng 3 ngµy nµy cã thÓ nhËn 1 lÇn <color>, nh­ng 2 lÇn nhËn ph¶i c¸ch nhau <color=yellow>trªn mét giê trªn m¹ng<color>. Ng­¬i ®ång ı nhËn kh«ng?",2,
+		"§­îc råi! Ta muèn nhËn l·nh!/getMoreExpMain",
+		"Th«i ®Ó l¸t ®i/OnExit");
 	return
 end;
 
@@ -166,13 +166,13 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 	
 	-- Èç¹ûÈÕÆÚ²»¶Ô£¬Ö±½Ó·µ»Ø
 	if isNewYearTime()==0 then
-		Say("ÏÖÔÚÒÑ¾­²»ÊÇÔªµ©ÁËÅ¶£¡", 0);
+		Say("Giê ®· hÕt Nguyªn §¸n råi!", 0);
 		return
 	end;
 	
 	-- Èç¹ûÊÇ·Ç³å¿¨ÓÃ»§
 	if IsCharged()==0 then
-		Say("±¾´ÎÔªµ©»î¶¯Ö»ÓĞ³å¿¨ÓÃ»§²ÅÄÜ²ÎÓëÅ¶£¡", 0);
+		Say("Ho¹t ®éng Nguyªn §¸n lÇn nµy chØ cã n¹p thÎ míi sö dông ®­îc!", 0);
 		return
 	end;
 	
@@ -183,14 +183,14 @@ local nDate  = tonumber(GetLocalDate("%y%m%d"));
 			addPlayerExpForLimit(nExp, 0); -- ²»ÏŞÖÆ
 		end;
 		
-		Msg2Player("ÄúµÃµ½ÁËÔªµ©»î¶¯µÄ¾­Ñé½±Àø£º<color=yellow>"..nExp.."<color> µã¾­Ñé£¡");
+		Msg2Player("B¹n nhËn ®­îc phÇn th­ëng trong ho¹t ®éng Nguyªn §¸n:<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm!");
 		
 		writeMoreExpData();  -- ¼ÇÂ¼ÁìÈ¡¾­ÑéµÄÏà¹ØÊı¾İ
 	
-		WriteTaskLog("µÃµ½Ã¿ÈÕµÄ½±Àø¾­Ñé£º"..nExp);
+		WriteTaskLog("nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm mçi ngµy:"..nExp);
 		
 	else
-		Say("ÄãÏÖÔÚµÄÌõ¼ş²»ÄÜ¹»ÁìÈ¡Ã¿ÈÕµÄ¾­Ñé£¬ÔÚ12ÔÂ30ÈÕÖÁ1ÔÂ1ÈÕÆÚ¼ä£¬Ã¿ÈÕÉÏÏß¶¼»á»ñµÃ¶À¹ÂÃËÖ÷ÔùËÍµÄ´óÅú¾­Ñé¡£<color=yellow>ÕâÈıÌìÖ®ÄÚÃ¿ÌìÄÜÁìÒ»´Î<color>£¬µ«Á½´ÎÁìÈ¡¾­ÑéÖ®¼äÏà¸ôĞèÒª<color=yellow>ÔÚÏß³¬¹ı1Ğ¡Ê±<color>Å¶£¡", 0);
+		Say("HiÖn t¹i ng­¬i kh«ng ®ñ ®iÒu kiÖn ®Ó nhËn.<color=yellow>Trong vßng 3 ngµy mçi ngµy sÏ nhËn 1 lÇn<color>, nh­ng 2 lÇn nhËn ph¶i c¸ch nhau <color=yellow>trªn 1 giê trªn m¹ng<color>!", 0);
 		return
 	end;
 
@@ -201,7 +201,7 @@ end;
 -- »ñÈ¡Í­Ç®µÄÌáÊ¾
 function getCoppercashInfo()
 
-	Say("½üÈÕÁÙ°²µÄÒ×ÈİÊõÊ¿ĞÂ¿ª·¢ÁËÊ¥µ®¾«Áé¡¢ĞÂÄêÏÀ¿Í¡¢ĞÂÄêÏÀÅ®¡¢Ñ±Â¹µÈÒ»ÅúÃæ¾ß£¬Í¬Ê±¸÷µØµÄĞĞ½ÅÉÌÈË´¦Ò²ĞÂ½øÁËÀ¶É«Ñı¼§ÀñºĞ£¬½ÚÈÕÀñ»¨ÀñºĞÓëÑ©»¨ÀñºĞ£¬²¢ÇÒ¸÷µØÁã··´¦ĞÂ½øÁËÒ»ÖÖ¿ÉÒÔ×Ô¼º±à¼­×£¸£ÓïÑÔµÄÈçÒâ¿¨£¬»¶Ó­´ó¼ÒÇ°È¥Ñ¡¹º¡£", 0);
+	Say("GÇn ®©y DŞ dung thuËt sÜ ë L©m An cã b¸n mét sè MÆt n¹ Tinh Linh, MÆt n¹ T©n Niªn HiÖp Kh¸ch, MÆt n¹ T©n Niªn HiÖp N÷, MÆt n¹ ThuÇn Léc…Bªn c¹nh ®ã Hµnh c­íc th­¬ng nh©n mét sè n¬i còng cã nhËp vµo mét sè hép lÔ vËt mµu xanh, hép hoa, n¬i Hµng Rong còng cã b¸n ThiÖp Nh­ ı cho ng­êi ch¬i cã thÓ viÕt lêi chóc phóc lªn ®ã, hoan nghªnh mäi ng­êi ®Õn mua!", 0);
 	return
 	
 end;
@@ -209,7 +209,7 @@ end;
 
 function getBaijuInfo()
 
-	Say("ÄúÔÚ <color=yellow>2005Äê12ÔÂ30ÈÕÖÁ2006Äê1ÔÂ1ÈÕ<color> Ã¿Ìì<color=red>0£º00~18£º00<color>£¬Ê¹ÓÃ°×¾ÔÍè¹Ò»ú»ñµÃµÄ¾­Ñé½«·­±¶¡¢¼¼ÄÜ°×¾ÔÍè¹Ò»ú»ñµÃÊìÁ·¶È½«·­ 1.5 ±¶¡£", 0);
+	Say("Trong thêi gian <color=yellow>30/12/2005 ®Õn 01/01/2006<color> mçi ngµy tõ <color=red>0:00~18:00<color>, sö dông B¹ch C©u hoµn treo m¸y nhËn ®­îc t¨ng ®«i ®iÓm kinh nghiÖm, Kü n¨ng B¹ch C©u hoµn treo m¸y nhËn ®­îc kü n¨ng t¨ng 1.5 lÇn ", 0);
 	return
 
 end;
@@ -217,7 +217,7 @@ end;
 
 function getRandomTaskInfo()
 
-	Say("ÄúÔÚ <color=yellow>2005Äê12ÔÂ30ÈÕÖÁ2006Äê1ÔÂ1ÈÕ<color> »ñµÃÁËËæ»úÈÎÎñ´¥·¢¸ÅÂÊ·­±¶µÄºØÀñ£¡", 0);
+	Say("Trong thêi gian <color=yellow>30-12-2005 ®Õn 01-01-2006<color> nhËn ®­îc nhiÖm vô ngÉu nhiªn - phÇn th­ëng nh©n ®«i!", 0);
 	return
 
 end;

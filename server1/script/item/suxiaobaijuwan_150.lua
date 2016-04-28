@@ -20,7 +20,7 @@ Include("\\script\\vng_event\\tochieukynang150\\head.lua")
 --	local szSkillName = GetSkillName(nSkillId)
 --	while nExp > nNextExp do
 --		if GetCurrentMagicLevel(nSkillId, 0) >= GetSkillMaxLevel(nSkillId) then
---			Msg2Player(format("Ê¹ÓÃÌØ±ğ°×¾ÔÍè³É¹¦£¬ <color=yellow> %s <color> ĞŞÁ¶¶ÈÌáÉı<color=yellow> %d <color>", szSkillName, nTotleExp))
+--			Msg2Player(format("Sö dông B¹ch C©u Hoµn §Æc BiÖt thµnh c«ng, <color=yellow> %s <color> ®é tu luyÖn n©ng cao <color=yellow> %d <color>", szSkillName, nTotleExp))
 --			return
 --		end
 --		nNeedAddExp = nNextExp
@@ -29,7 +29,7 @@ Include("\\script\\vng_event\\tochieukynang150\\head.lua")
 --		nNextExp = GetSkillNextExp(nSkillId)
 --	end
 --	AddSkillExp(nSkillId, nExp, 1)
---	Msg2Player(format("Ê¹ÓÃÌØ±ğ°×¾ÔÍè³É¹¦<color=yellow> %s <color> ĞŞÁ¶¶ÈÌáÉı<color=yellow> %d <color>", szSkillName, nTotleExp))
+--	Msg2Player(format("Sö dông B¹ch C©u Hoµn §Æc BiÖt thµnh c«ng, <color=yellow> %s <color> ®é tu luyÖn n©ng cao <color=yellow> %d <color>", szSkillName, nTotleExp))
 --end
 --
 --function tbFastSpeedSkill_Banjuwan_150:CheckSkill(nSkillId)
@@ -65,7 +65,7 @@ Include("\\script\\vng_event\\tochieukynang150\\head.lua")
 --function tbFastSpeedSkill_Banjuwan_150:ShowMenu(nItemIndex)
 --	local tbSkill = self:GetCanUpdateSkill()
 --	
---	local szTitle = "ÇëÑ¡ÔñÄãÏëÔö¼ÓµÄ¼¼ÄÜ:"
+--	local szTitle = "Xin h·y lùa chän kü n¨ng mµ ng­¬i muèn t¨ng:"
 --	
 --	tbOpt = {}
 --	for i=1, getn(tbSkill) do
@@ -73,7 +73,7 @@ Include("\\script\\vng_event\\tochieukynang150\\head.lua")
 --		local szSkillName = GetSkillName(nSkillId)
 --		tinsert(tbOpt, 	{szSkillName, self.UseItem, {self, nItemIndex, nSkillId}}	)
 --	end
---	tinsert(tbOpt , {"È¡Ïû "})
+--	tinsert(tbOpt , {"Hñy bá "})
 --	CreateNewSayEx(szTitle, tbOpt)
 --end
 --
@@ -92,9 +92,9 @@ function main(nItemIndex)
 --	tbFastSpeedSkill_Banjuwan_150:ShowMenu(nItemIndex)
 --	return 1
 	tbTrainSkill150:ResetDailyTask()
-	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbTrainSkill150.tbBIT_BCH_USE, 20, "Ã¿ÈËÖ»ÄÜ×î¶àÊ¹ÓÃ20´Î", "~=") ~= 1 then
+	if tbVNG_BitTask_Lib:CheckBitTaskValue(tbTrainSkill150.tbBIT_BCH_USE, 20, "Mçi nh©n vËt chØ ®­îc sö dông tèi ®a 20 lÇn", "~=") ~= 1 then
 		return 1
 	end
 	tbVNG_BitTask_Lib:addTask(tbTrainSkill150.tbBIT_BCH_USE, 1);
-	Msg2Player("¹§Ï²´óÏÀ³É¹¦»ñµÃ1´Î»»È¡¼¼ÄÜĞŞÁ¶µã150.");
+	Msg2Player("Chóc mõng §¹i HiÖp nhËn thµnh c«ng 1 lÇn ®æi ®iÓm tu luyÖn kÜ n¨ng 150.");
 end

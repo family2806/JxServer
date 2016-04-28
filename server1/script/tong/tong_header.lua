@@ -23,7 +23,7 @@ EVE_LONGMAI		=	15	--ÁúÂö
 
 --ÖÜÄ¿±êÏà¹Ø
 MIN_WEEKGOAL_MEMBER			=	100																--°ï»áÖÜÄ¿±ê×îÉÙÈËÊý
-DAILY_PRICE			=	50	--Ã¿Ìì°ïÖÚ¿Éµ½¼ÀÌ³ÁìÈ¡µÄ½±Àø
+DAILY_PRICE			=	50	--Ã¿Ìì§Ö tö ¿Éµ½¼ÀÌ³ÁìÈ¡µÄ½±Àø
 TB_WEEKGOAL_PRICE_BASE	=	{ 2.5,	4.5,	6.75 }	--Èý¸öÄÑ¶È¼¶±ðµÄ½±Àø»ùÊý
 TB_WEEKGOAL_CHANGE		=	{ 4,	8,		16 }	-- Èý¸öÄÑ¶È¼¶±ðµÄÖÜÊÖ¶¯Ð¡Ê±Êý
 WEEKGOAL_VALUE_PERSON		=	150 * 8															--ÖÜÄ¿±ê¸öÈË¹±Ï×¶ÈÐèÍê³ÉÁ¿
@@ -31,7 +31,7 @@ WEEKGOAL_VALUE_TONG_SYNC	=	WEEKGOAL_VALUE_PERSON / 10										--ÖÜÄ¿±ê°ï»á¹±Ï×¶
 WEEKGOAL_PRICE_PERSON		=	1000															--ÖÜÄ¿±ê¸öÈË½±Àø¾­ÑéÖµ£¨µ¥Î»£ºÍò£©
 WEEKGOAL_PRICE_TONG			=	10																--ÖÜÄ¿±ê°ï»á½±ÀøÕÙ»½ÁîÅÆÊý
 TB_WEEKGOAL_TYPE_ID		= 	{ EVE_SOJIN,	EVE_XINSHI,	EVE_CHUNGGUAN,	EVE_YESHOU }	--ÖÜÄ¿±êÀàÐÍ
-TB_WEEKGOAL_TYPE_NAME		=	{ "ËÎ½ð´óÕ½",	"´³¹ØÈÎÎñ",		"Ò°ÛÅÈÎÎñ",		"ÁúÂöÈÎÎñ" }	--ÖÜÄ¿±êÀàÐÍÃû³Æ
+TB_WEEKGOAL_TYPE_NAME		=	{ "ChiÕn tr­êng Tèng Kim",	"NhiÖm vô TÝn Sø ",		"Th¸ch thøc thêi gian",		"Chuçi nhiÖm vô D· TÈu" }	--ÖÜÄ¿±êÀàÐÍÃû³Æ
 
 --Íæ¼ÒÈÎÎñ±äÁ¿¶¨Òå
 TASKID_CONTRIVALUE			=	2361			--¹±Ï×¼ÛÖµÁ¿
@@ -41,7 +41,7 @@ TASKID_STUNT_LASTDAY		=	1580			--×îºóÒ»´ÎÁìÈ¡°ï»áÌØ¼¼µÄ°ï»áÌìÊý
 TASKID_CITY_LASTDAY			=	1581			--×îºóÒ»´ÎÁìÈ¡³ÇÊÐÌØ¼¼µÄ°ï»áÌìÊý
 TASKID_STUNT_TAKED			=	2444			--ÌØ¼¼ÖÜÆÚÄÚÊÇ·ñÁìÈ¡¹ý
 TASKID_MONEYBOX_LASTTIME	=	2446			--ÌÕÖìÇ®´üÐ§Á¦½ØÖ¹Ê±¼ä
-TASKID_PANAXBOX_OPEND		=	1577			--²Î¹Þ¿ªÆô¹Ø±Õ
+TASKID_PANAXBOX_OPEND		=	1577			--²Î¹Þmë §ãng
 TASKID_PANAXBOX_LASTTIME	=	1578			--²Î¹ÞÊ£ÓàÊ¹ÓÃÊ±¼ä
 TASKID_CITYST_TAKED			=	1579			--ÊÇ·ñÁìÈ¡ÁË³ÇÊÐÌØ¼¼
 TASKID_LASTHERO_DATE		=	2497			--×îºóÒ»´ÎÁìÈ¡·é»ðÓ¢ÐÛÁîµÄÈÕÆÚ£¨ÁìÈ¡Ê±ÅÐ¶Ï£¬¸üÐÂ£©	
@@ -53,10 +53,10 @@ TASKID_CONTRIBUTE_USED		=	2517			--ÀÛ»ýÏûºÄµÄÖÜ¹±Ï×¶È£¨µÝÔö£¬ÁìÈ¡Ê±ÅÐ¶Ï¸üÐÂ£©
 TONGMTSK_WEEK_GOAL_PRICE	=	1001			--ÖÜÄ¿±êÁì½±¼ÇÂ¼
 TONGMTSK_DAILY_PRICE		=	1002			--¼ÀÌ³Áì½±¼ÇÂ¼
 TONGMTSK_TOMASTER			=	1003			--Ê¦áã¹ØÏµ¼ÛÖµÁ¿
-TONGMTSK_SELFCOMMEND_TIME	=	1037			--[°ïÖ÷×Ô¼ö]²ÎÓë°ïÖ÷×Ô¼öµÄÊ±¼ä£¬µ±×îÖÕÓÐ¶à¸ö¾ºÍ¶µÚÒ»Ãû£¬ÔòÒÔÊ±¼äÏÈºóÅÅÐò
-TONGMTSK_MASTERCANDIDATE	=	1038			--[°ïÖ÷×Ô¼ö]ÊÇ(1)·ñ(0)ÊÇ°ïÖ÷ºòÑ¡ÈË
-TONGMTSK_INICONTRIBUTIVENESS=	1039			--[°ïÖ÷×Ô¼ö]ÉêÇë°ïÖ÷Ê±µÄ¹±Ï×¶È
-TONGMTSK_CONTRIBUTIVENESS	=	1040			--[°ïÖ÷×Ô¼ö]¾ºÑ¡µÄ¸öÈË¹±Ï×¶È
+TONGMTSK_SELFCOMMEND_TIME	=	1037			--[Bang chñ ×Ô¼ö]²ÎÓëBang chñ ×Ô¼öµÄÊ±¼ä£¬µ±×îÖÕÓÐ¶à¸ö¾ºÍ¶µÚÒ»Ãû£¬ÔòÒÔÊ±¼äÏÈºóÅÅÐò
+TONGMTSK_MASTERCANDIDATE	=	1038			--[Bang chñ ×Ô¼ö]ÊÇ(1)·ñ(0)ÊÇBang chñ ºòÑ¡ÈË
+TONGMTSK_INICONTRIBUTIVENESS=	1039			--[Bang chñ ×Ô¼ö]ÉêÇëBang chñ Ê±µÄ¹±Ï×¶È
+TONGMTSK_CONTRIBUTIVENESS	=	1040			--[Bang chñ ×Ô¼ö]¾ºÑ¡µÄ¸öÈË¹±Ï×¶È
 
 --°ï»áÈÎÎñ±äÁ¿¶¨Òå
 TONGTSK_WEEKGOAL_COMPLETE	=	1006			--°ï»áÉÏÖÜÄ¿±êÊÇ·ñÍê³É
@@ -72,7 +72,7 @@ TONGTSK_TOTEMINDEX			=	{ 1022, 1023 }	--¼ÇÂ¼Í¼ÌÚÖ®ÖùNPCµÄindex£¬1027Îª×ó±ßµÄ£¬10
 TONGTSK_CITYST_MEMLIMIT		=	1034			--³ÇÊÐÌØ¼¼ÄÜ¹»ÁìÈ¡ÈËÊý
 TONGTSK_MONEYBOX_DROPMAX	=	1035			--ÌÕÖìÇ®´ü·­±¶µôÂäboss±¦Ó¡µÄÏÞÖÆ
 TONGTSK_STUNT_PAUSE			=	1036			--°ï»áÔÝÍ£Î¬»¤ÌØ¼¼
-TONGTSK_OPEN_DATE			=	1041			--[°ïÖ÷×Ô¼ö]°ïÖ÷×Ô¼ö¿ªÆôµÄÊ±¼ä£¬Èç¹ûÎª0±íÊ¾Ã»ÓÐ¿ªÆô
+TONGTSK_OPEN_DATE			=	1041			--[Bang chñ ×Ô¼ö]Bang chñ ×Ô¼ömë µÄÊ±¼ä£¬Èç¹ûÎª0±íÊ¾Ã»ÓÐmë 
 TONGTSK_LAST_WM_DAY			=	1050			--°ï»áÉÏ´ÎÖÜÎ¬»¤ÈÕ×Ó
 TONGTSK_LUP_ORDER			=	1051			--°ï»áÉý¼¶Ãû´Î
 TONGTSK_LUP_PRICE			=	1052			--°ï»áÉý¼¶½±Àø
@@ -120,28 +120,28 @@ TONG_TMPWEEKGOALPRICE		=	104				--ÖÜÄ¿±êÁì½±ÁÙÊ±
 
 --ÍËÒþÏà¹Ø
 TONGMEMBER_RETIRE_MAX_RATE		=	0.5			-- ÍËÒþÈËÊý×î´ó±ÈÀý
-TONGMEMBER_RETIRE_REQUIRE_DAY	=	7			-- ÃüÁîÍËÒþÐèÒª°ïÖÚ7Ìì²»ÔÚÏß²Å¿É½øÐÐ
+TONGMEMBER_RETIRE_REQUIRE_DAY	=	7			-- ÃüÁîÍËÒþÐèÒª§Ö tö 7Ìì²»ÔÚÏß²Å¿É½øÐÐ
 TONGMEMBER_UNRETIRE_REQUIRE_DAY	=	7			-- »Ö¸´ÍËÒþÐèÒªÔÚÍËÒþ7Ììºó²Å¿É½øÐÐ
 
 -- °ï»áÖ°ÎñID
-TONG_MASTER		= 0		--°ïÖ÷
-TONG_ELDER		= 1		--³¤ÀÏ
-TONG_MANAGER	= 2		--¶Ó³¤
-TONG_MASS		= 3		--°ïÖÚ
-TONG_RETIRE		= 4		--ÒþÊ¿
+TONG_MASTER		= 0		--Bang chñ 
+TONG_ELDER		= 1		--Tr­ëng L·o
+TONG_MANAGER	= 2		--§éi tr­ëng
+TONG_MASS		= 3		--§Ö tö 
+TONG_RETIRE		= 4		--Èn sü
 
 -- °ï»áÖ°ÎñÃû³Æ
 TB_TONG_FIGURE_NAME =
 {
-	[TONG_MASTER]	=	"°ïÖ÷",
-	[TONG_ELDER]	=	"³¤ÀÏ",
-	[TONG_MANAGER]	=	"¶Ó³¤",
-	[TONG_MASS]		=	"°ïÖÚ",
-	[TONG_RETIRE]	=	"ÒþÊ¿",
+	[TONG_MASTER]	=	"Bang chñ ",
+	[TONG_ELDER]	=	"Tr­ëng L·o",
+	[TONG_MANAGER]	=	"§éi tr­ëng",
+	[TONG_MASS]		=	"§Ö tö ",
+	[TONG_RETIRE]	=	"Èn sü",
 };
 
-MAX_ELDER_COUNT		=	7		-- ×î´ó³¤ÀÏÊýÁ¿
-MAX_MANAGER_COUNT	=	56		-- ×î´ó¶Ó³¤ÊýÁ¿
+MAX_ELDER_COUNT		=	7		-- ×î´óTr­ëng L·oÊýÁ¿
+MAX_MANAGER_COUNT	=	56		-- ×î´ó§éi tr­ëngÊýÁ¿
 
 
 -- °ï»áÈ¨ÏÞID
@@ -153,28 +153,28 @@ RIGHTID_STUNT		=	2006	-- ÌØ¼¼¹ÜÀí
 DYNMAP_ID_BASE		=	70000	-- ¶¯Ì¬µØÍ¼ÆðÊ¼Öµ
 
 -- ÌØ¼¼Ïà¹Ø
-TB_STUNT_RIGHT_DS	=	{ "°ï»áÁìµ¼²ã", "ËùÓÐ°ï»á³ÉÔ±" }
+TB_STUNT_RIGHT_DS	=	{ "CÊp l·nh ®¹o", "TÊt c¶ thµnh viªn" }
 TB_TOTEMPOLE_POS	=	{ {1665, 3253}, {1657, 3262} }
 TB_CITYID_STUNTID	=
 {
-	[1] = {"·ïÏè", 5},
-	[2] = {"³É¶¼", 1},
-	[3] = {"´óÀí", 6},
-	[4] = {"ãê¾©", 7},
-	[5] = {"ÏåÑô", 3},
-	[6] = {"ÑïÖÝ", 2},
-	[7] = {"ÁÙ°²", 4},
+	[1] = {"Ph­îng T­êng", 5},
+	[2] = {"Thµnh §«", 1},
+	[3] = {"§¹i Lý", 6},
+	[4] = {"BiÖn Kinh", 7},
+	[5] = {"T­¬ng D­¬ng", 3},
+	[6] = {"D­¬ng Ch©u", 2},
+	[7] = {"L©m An", 4},
 }
 TB_STUNT_PAUSESTATE	=
 {
 --[stateid] µ±Ç°×´Ì¬ ÏÂÖÜ×´Ì¬ ×¼Ðí¸Ä±äµÄ×´Ì¬ Î¬»¤ºóµÄ×´Ì¬
-	[0] = {"¹Ø±Õ", "¹Ø±Õ", 1, 0},
-	[1] = {"¹Ø±Õ", "¿ªÆô", 0, 3},
-	[2] = {"¿ªÆô", "¹Ø±Õ", 3, 0},
-	[3] = {"¿ªÆô", "¿ªÆô", 2, 3},
+	[0] = {"§ãng", "§ãng", 1, 0},
+	[1] = {"§ãng", "më ", 0, 3},
+	[2] = {"më ", "§ãng", 3, 0},
+	[3] = {"më ", "më ", 2, 3},
 }
 
 -- °ïÖú×Ô¼öÏà¹Ø
 CAST_DURATION		=	14;				--¾ºÍ¶ÈÕÆÚ
-MASTER_ASIDE_TIME	=	30;				--°ïÖ÷Àë¿ªµÄÊ±¼ä
+MASTER_ASIDE_TIME	=	30;				--Bang chñ Àë¿ªµÄÊ±¼ä
 FORETASKVALUE		=	2240;			--Ç°ÌáÈÎÎñÄ¿±êÖµ

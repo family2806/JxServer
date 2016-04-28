@@ -23,31 +23,31 @@ function luckplanting_0801_main()
 	local nWeek		= tonumber(GetLocalDate("%w"))
 	local tbWeek = {[5] = 1, [6] = 1, [0] = 1}
 	if luckplanting_0801_CheckMap() ~= 1 then
-		Say("²»ºÃÒâË¼£¬Õâ¸öÎÒ²»Çå³ş£¬´óÏÀ»¹ÊÇµ½ĞÂÊÖ´åÎÊÎÊ°É.", 0)
+		Say("Xin lçi, viÖc nµy ta kh«ng râ, ®¹i hiÖp h·y ®Õn t©n thñ th«n hái th¨m.", 0)
 		return 0;
 	end
 	
 	--Ã¿Ìì21µã00 ¨C 22µã00
 	if nTimeHM < luckplanting_0801_GiveTime_S or nTimeHM > luckplanting_0801_GiveTime_E then
-		Say(format("Ã¿Ìì %s - %s²Å·Ö·¢Ê÷Ãç©y.",%_FormatTimeHMToSring(luckplanting_0801_GiveTime_S), %_FormatTimeHMToSring(luckplanting_0801_GiveTime_E)),  0)
+		Say(format("Mçi ngµy vµo thêi ®iÓm %s - %s míi ph©n ph¸t mÇm c©y.",%_FormatTimeHMToSring(luckplanting_0801_GiveTime_S), %_FormatTimeHMToSring(luckplanting_0801_GiveTime_E)),  0)
 		return 0;
 	end
 	
 	if GetLevel() < 80 or IsCharged() == 0 then
-		Say("²»ºÃÒâË¼£¬ÄãµÄµÈ¼¶»¹Î´µ½80¼¶²¢ÇÒ/»òÕß»¹Î´³äÖµ.", 0)
+		Say("Xin lçi, ®¼ng cÊp cña b¹n ch­a ®¹t 80 cÊp vµ/hoÆc ch­a n¹p thÎ.", 0)
 		return 0;
 	end
 	
 	
 	if not luckplanting_0801_IsActDay() then
-		Say(format("»î¶¯<color=yellow>%s<color>»¹Ã»¿ªÊ¼.",luckplanting_0801_szActName), 0)
+		Say(format("Ho¹t ®éng <color=yellow>%s<color> vÉn ch­a b¾t ®Çu.",luckplanting_0801_szActName), 0)
 		return 0;
 	end
 	if nDate ~= floor(nTSKV/256) then
 		nTSKV = nDate * 256 --ÇåÁã²¢¸üĞÂÊ±¼ä
 	end
 	if mod(nTSKV,256) >= TSKV_luckplanting_0801 then --´ÎÊı
-		Say(format("Äã½ñÈÕÒÑÁìµ½<color=yellow>%d<color> ´Î, Ã÷ÌìÔÙÀ´°É.", TSKV_luckplanting_0801), 0)
+		Say(format("B¹n h«m nay ®· nhËn lÊy <color=yellow>%d<color> lÇn, ngµy mai h·y quay l¹i nhĞ.", TSKV_luckplanting_0801), 0)
 		return 0;
 	end
 	local tbItem = {szName="C©y con", tbProp={6, 1, 1642, 1, 0, 0}, nExpiredTime = 20090105}

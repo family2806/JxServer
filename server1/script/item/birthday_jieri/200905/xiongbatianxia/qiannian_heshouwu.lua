@@ -14,21 +14,21 @@ TSK_QIANNIAN_HESHOUWU_PROP = 2597;
 
 function main()
 	if (GetTask(TSK_QIANNIAN_HESHOUWU_PROP) >= 25) then
-		Msg2Player("¸ÃÎïÆ·²»ÄÜÉı¼¶´óÏÀµÄ¹¦Á¦.");
+		Msg2Player("VËt phÈm nµy kh«ng thÓ n©ng cÊp c«ng lùc cña ®¹i hiÖp ®­îc.");
 		return 1;
 	end
 	
 	if (ST_IsTransLife() ~= 1) then
-		Msg2Player("´óÏÀ²»ÄÜ»ñµÃÈÎºÎĞ§¹û.");
+		Msg2Player("§¹i hiÖp kh«ng thÓ thu ®­îc bÊt kú hiÖu qu¶ nµo.");
 		return 1;
 	end
 	
 	local tb_prop = {
-		{pot=3,msg="Ò»µã"},
-		{pot=4,msg="Î´³ĞÅµ"},
-		{pot=5,msg="Ò»Ğ©"},
-		{pot=6,msg="²»ÉÙ"},
-		{pot=7,msg="ÓĞµã¶à"},
+		{pot=3,msg="Mét ®iÓm "},
+		{pot=4,msg="Ch­a høa "},
+		{pot=5,msg="Mét sè "},
+		{pot=6,msg="Kh«ng İt "},
+		{pot=7,msg="H¬i nhiÒu "},
 		};
 	
 	local n_rand = random(1,5);
@@ -41,5 +41,5 @@ function main()
 	
 	SetTask(TSK_QIANNIAN_HESHOUWU_PROP,GetTask(TSK_QIANNIAN_HESHOUWU_PROP)+ n_prop);
 	
-	Msg2Player(format("Ê¹ÓÃºó¿ÉÒÔ»ñµÃ%s Ğ§¹û",tostring(n_prop)));
+	Msg2Player(format("Sau khi sö dông cã thÓ thu ®­îc %s hiÖu qu¶",tostring(n_prop)));
 end

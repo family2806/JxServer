@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(4,"","ÄãÌı¹ıºûµûÈªµÄ´«ËµÂğ?","ÎÄ¹ÃÊÇÒ»¸ö²ÅÃ²Ë«È«µÄÈË£¬ÒÑ¾­ºÍ´òÁÔµÄºÓÀÉÏà°®£¬²»ÁÏ£¬Ëı±»Ò»¸öµØÖ÷×¥ÁË£¬ºÓÀÉ´òÁÔ»ØÀ´£¬ÁªÃËºÍ±ğÈËÒ»Æğ¾ÈËı£¬Ã»Ïëµ½¹Ù±ø×·²¶£¬Á½¸öÈËÒ»ÆğÌøÏÂÁËºûµûºÓ£¬±ä³ÉÁËÒ»¶ÔÔ§ÑìºûµûÓÀÔ¶ÔÚÒ»Æğ.","ÔÚÎÒÃÇ°××å¹ÃÄïÑÛÖĞ£¬ºûµûÈªÊÇÖÒÕê°®ÇéµÄÏóÕ÷£¬Ã¿ÄêÈıÔÂËÄÔÂ£¬ÎÒÃÇ¶¼¼¯ÖĞÔÚºûµûÈª³ª¸èÌøÎè¡£","Ê²Ã´Ê±ºòÎÒ²ÅÄÜÕÒµ½ÎÒµÄÕÉ·ò£¿")
+	Talk(4,"","Ng­¬i cã nghe truyÒn thuyÕt vÒ Hå §iÖp TuyÒn hay kh«ng?","V¨n c« lµ mét ng­êi tµi s¾c ®· cïng Hµ Lang ng­êi thî s¨n th­¬ng yªu nhau, ai biÕt r»ng c« n­¬ng Êy bŞ tªn ®Şa chñ b¾t ®i. Sau khi Hµ Lang ®i s¨n vÒ ®· liÒu m×nh cøu c« Êy.Kh«ng ngê quan binh truy ®uæi, hai ng­êi ®Õn ®­êng cïng ®· nh¶y xuèng suèi Hå §iÖp ®· biÕn thµnh mét ®«i Uyªn ¦¬ng Hå §iÖp m·i m·i bªn nhau kh«ng rêi.","Trong m¾t c¸c c« n­¬ng B¹ch Téc cña chóng ta suèi Hå §iÖp lµ t­îng tr­ng cho mét t×nh yªu chung trinh kh«ng thay ®æi. mçi n¨m ®Õn vµo th¸ng ba th¸ng t­ chóng ta sÏ tËp trung bªn suèi Hå ®iÖp, võa ch¶y ®Çu trang ®iÓm, võa nh¶y móa ca h¸t. ","Khi nµo ta míi cã thÓ t×m ®­îc chång cña ta?")
 end;

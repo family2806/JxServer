@@ -35,7 +35,7 @@ function aexp_gotothd(nSubWorldID)
 	end
 	
 	if(GetExtPoint( 0 ) <= 0 ) then
-		Say("²»ºÃÒâË¼£¡Ö»ÓÐ³äÖµ²Å¿ÉÒÔÈ¥ÌÒ»¨µº ",0)
+		Say("Xin lçi! ChØ cã n¹p thÎ míi ®i ®­îc §µo Hoa ®¶o ",0)
 		return -2
 	end
 
@@ -65,6 +65,6 @@ function aexp_gotothd(nSubWorldID)
 	
 	NewWorld(nSubWorldID,1523,3237)
 	SetFightState(0)
-	Msg2Player("ÄãÒÑÀ´µ½Ò»¸öµ¥¶ÀµÄÊÀ½ç¡£ÔÚÕâÄãµÄÄÜÁ¦»á±»Ó°Ïì£º²»ÄÜºÍÊÀ½ç¡¢ÃÅÅÉºÍÊÀ½çÁªÏµ£»²»ÄÜÊ¹ÓÃÍÁµØ·û£¬ÐÄÐÄÏàÓ¡·û£»²»ÄÜ×é¶Ó£¬²»ÄÜÂòÂô¡£");
+	Msg2Player("B¹n ®· ®Æt ch©n vµo mét thÕ giíi riªng biÖt. T¹i ®©y n¨ng lùc cña b¹n sÏ bÞ ¶nh h­ëng: Kh«ng thÓ t¸n gÉu thµnh thÞ, t¸n gÉu m«n ph¸i, t¸n gÉu thÕ giíi; kh«ng thÓ sö dông Thæ ®Þa phï, T©m T©m T­¬ng ¸nh Phï; kh«ng thÓ tæ chøc ®éi, kh«ng thÓ bu«n b¸n. ");
 	return 1;
 end;

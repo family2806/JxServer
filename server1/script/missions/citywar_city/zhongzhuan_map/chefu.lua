@@ -6,7 +6,7 @@ function main(sel)
 	SetCurCamp(GetCamp())
 	SetFightState(0)
 	BT_LeaveBattle()
-	Say("ÎÒÃÇÕ½³¡ÉÏµÄ³µ·ò³öÉúÈëËÀ£¬ÓÃ×Ô¼ºµÄÉúÃü×¬Ç®£¡Çë¸øÒ»Ğ©ÒøÁ½!", 5, "ÄÇĞ©µØ·½ÒÑ¾­È¥¹ı/WayPointFun", "ÄÇĞ©³ÇÊĞÒÑ¾­È¥¹ı/StationFun", "»Øµ½Ô­µØ/TownPortalFun","Àë¿ªÕ½³¡ /LeaveChefu","²»ĞèÒª/OnCancel");
+	Say("Nh÷ng ng­êi xa phu chiÕn tr­êng chóng t«i vµo sinh ra tö, kiÕm tiÒn b»ng sinh m¹ng m×nh! Xin gióp cho vµi l­îng b¹c!", 5, "Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thŞ ®· ®i qua/StationFun", "Trë l¹i ®Şa ®iÓm cò/TownPortalFun","Rêi khái ®Êu tr­êng /LeaveChefu","Kh«ng cÇn ®©u/OnCancel");
 end;
 
 function OnCancel()

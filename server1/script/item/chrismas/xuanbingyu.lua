@@ -1,6 +1,6 @@
 ITEMTYPE = 1; --公共道具
-szItem = "玄冰玉"
-szEffect = "减速15秒";
+szItem = "Huy襫 B╪g Ng鋍"
+szEffect = "Gi秏 t鑓 15 gi﹜";
 nSkillId = 674;
 nSkillLevel = 15;
 nTime = 15;

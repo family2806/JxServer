@@ -6,24 +6,24 @@ Include("\\script\\event\\jiefang_jieri\\200904\\taskctrl.lua");
 function main()
 	local ndate = tonumber(GetLocalDate("%Y%m%d"));
 	if (ndate >= jf0904_jiu_expiredtime) then
-		Msg2Player("¸ÃÎïÆ·ÒÑ¹ıÆÚ.");
+		Msg2Player("VËt phÈm nµy ®· qu¸ h¹n.");
 		return 0;
 	end
 	
 	if (GetLevel() < 50 or GetExtPoint(0) < 1) then
-		Say("´óÏÀ»¹Î´¹»50¼¶»òÕß»¹Î´³äÖµ£¬ËùÒÔ²»ÄÜ²Î¼Ó»î¶¯", 0);
+		Say("§¹i hiÖp vÉn ch­a ®ñ cÊp 50 hoÆc vÉn ch­a nép thÎ, v× vËy kh«ng thÓ tham gia ho¹t ®éng", 0);
 		return 1;
 	end
 	
 	if CalcFreeItemCellCount() < 10 then
-		Say(format("ÎªÈ·±£²Æ²ú°²È«£¬ÇëÁôÏÂ%d ¿ÕÎ»", 10), 0);
+		Say(format("§Ó b¶o ®¶m an toµn tµi s¶n, xin mêi ®Ó trèng %d «.", 10), 0);
 		return 1;
 	end
 	
 	jf0904_InitTaskctrl();
 	
 	if (GetTask(jf0904_TSK_jiuexp) >= GetTask(jf0904_TSK_jiuexplt)) then
-		Say("ÒÑ´ïµ½×î¸ß¾­Ñé£¬²»ÄÜÔÙÊ¹ÓÃ¾ÆºøÁË.", 0);
+		Say("§· ®¹t ®Õn kinh nghiÖm cao nhÊt, kh«ng thÓ sö dông thªm BÇu R­îu.", 0);
 		return 1;
 	end
 	

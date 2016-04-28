@@ -24,22 +24,22 @@ end
 
 function tbVipAcc2012:main()
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÁìÈ¡", tbVipAcc2012.GetAward, {tbVipAcc2012}})
+	tinsert(tbOpt, {"NhËn", tbVipAcc2012.GetAward, {tbVipAcc2012}})
 	tinsert(tbOpt, {"§ãng"})	
-	CreateNewSayEx("¸øVIPµÄ½±ÀøÎª6ÒÚ²»µş¼Ó¾­ÑéÖµ£¬´óÏÀÏëÁìÈ¡Âğ?", tbOpt)
+	CreateNewSayEx("PhÇn th­ëng dµnh cho VIP lµ 600 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, ®¹i hiÖp cã muèn nhËn ngµy kh«ng?", tbOpt)
 end
 
 function tbVipAcc2012:GetAward()
 		if( self:IsActive() ~= 1) then
-			Talk(1,"","Ä¿Ç°²»ÊÇÁì½±Ê±¼ä£¬Çëµ½Ö÷Ò³¿´ÏêÇé.!")
+			Talk(1,"","HiÖn t¹i kh«ng ph¶i thêi gian nhËn th­ëng, xin h·y ghĞ th¨m trang chñ ®Ó biÕt thªm th«ng tin.!")
 			return
 		end
 		if (tbExtPointLib:GetBitValue(self.nExtpointID, self.nBit1) ~= 1 ) then
- 			Talk(1,"","¶Ô²»Æğ£¬´óÏÀÃ»ÓĞÁì½±Ãûµ¥.")
+ 			Talk(1,"","Xin thø lçi, ®¹i hiÖp kh«ng cã trong danh s¸ch nhËn th­ëng.")
  			return
  		end
 		if (tbExtPointLib:GetBitValue(self.nExtpointID, self.nBit2) ~= 0 ) then
- 			Talk(1,"","´óÏÀÒÑÁì½±£¬²»ÄÜÔÙÁìÁË.")
+ 			Talk(1,"","§¹i hiÖp ®· nhËn th­ëng, kh«ng thÓ nhËn thªm.")
  			return
  		end
  		
@@ -47,12 +47,12 @@ function tbVipAcc2012:GetAward()
 	 		return
 	 	end
 	 	
-		 local tbAward = {szName = "ÁìÈ¡¾­ÑéÖµ", nExp=600e6};
+		 local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=600e6};
 		 	
  		tbAwardTemplet:Give(tbAward, 1,{"VipAcc2012","NhanPhanThuongDiemKinhNghiem"})
 end
 
 local pEventType = EventSys:GetType("AddNpcOption")
 if (tbVipAcc2012:IsActive() ~= 0) then
-	nId = pEventType:Reg("¸øVIPµÄ½±ÀøÎª6ÒÚ²»µş¼Ó¾­ÑéÖµ", tbVipAcc2012.main,{tbVipAcc2012})
+	nId = pEventType:Reg("NguyÖt Nhi", tbVipAcc2012.main,{tbVipAcc2012})
 end	

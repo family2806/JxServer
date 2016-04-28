@@ -16,17 +16,17 @@ function main(nItemIndex)
 	zhongqiu0808_ResetTask()
 	local nDate = tonumber(GetLocalDate("%y%m%d"))
 	if nDate > zhongqiu0808_ItemEndTime then
-		Say("¸ÃÎïÆ·ÒÑ¹ıÊ¹ÓÃÆÚ.",0)
+		Say("VËt phÈm nµy ®· qu¸ h¹n.",0)
 		return 0;
 	end
 	if zhongqiu0808_PlayerLimit() ~= 1 then
 		
-		Say("ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ", 0)
+		Say("Yªu cÇu ®¨ng cÊp ph¶i trªn 50 vµ ®· qua n¹p thÎ.", 0)
 		return 1
 	end
 	local nCurExp = GetTask(zhongqiu0808_TSK_Wangyue)
 	if nCurExp >= zhongqiu0808_TSKV_Wangyue then
-		Say(format("Ê¹ÓÃ¸ÃÎïÆ·ÒÑ´ïÉÏÏŞ%d ¾­Ñé.", zhongqiu0808_TSKV_Wangyue), 0)
+		Say(format("Sö dông vËt phÈm nµy ®· ®¹t giíi h¹n %d kinh nghiÖm.", zhongqiu0808_TSKV_Wangyue), 0)
 		return 1
 	end
 	

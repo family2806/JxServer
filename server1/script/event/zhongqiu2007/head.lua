@@ -14,19 +14,19 @@ TSK_TEMP = 51					--Àà±ğÁÙÊ±±äÁ¿
 
 tb_content =
 {
-	sztalk1 = "×ö±ıÊ¦£ºÕæÊæ·ş£¬ÎÒÕıĞİÏ¢¼¸Ìì.",
-	sztalk2 = "×ö±ıÊ¦£ºÓÖµ½ÖĞÇïÁË£¬ÎÒ×ö±ıµÄÊÖÒÕË­¶¼ÖªµÀ£¬Ã¿ÄêÓĞ²»ÉÙÈËÊ¿À´ÕÒÎÒ°ïÃ¦×ö±ı£¬¿Í¹ÙĞèÒªÊ²Ã´ÄØ?",
-	szgetlvdou = "ÎÒÏë×öÒ»¸öÂÌ¶¹±ı/#makeyuebing(1)",
-	szgetlianzi = "ÎÒÏë×öÒ»¸öÁ«Åº±ı/#makeyuebing(2)",
-	szgetkaoji = "ÎÒÏë×öÒ»¸ö¿¾¼¦ÖĞÇïÔÂ±ı/#makeyuebing(3)",
-	szkaozhu = "ÎÒÏë×öÒ»¸öÉÕÖíÖĞÇïÔÂ±ı/#makeyuebing(4)",
-	szlihe = "ÎÒÏë×öÒ»¸öÖĞÇïÔÂ±ıºĞ/#makeyuebing(5)",
-	szno = "Ë³±ãÂ·¹ı¶øÒÑ/NoChoice",
-	szmakeItemUI = "¶ÔÁË£¬ÎÒÏë×öÖĞÇïÔÂ±ı/makeItemUI",
-	szlevel = "ÕæÊÇÒÅº¶£¬µÈ¼¶²»×ã50¼¶£¬²»ÄÜ²Î¼Ó¸Ã»î¶¯.",
-	szmoney = "ÕæÊÇÒÅº¶£¬ÒøÁ½²»¹»®ñ.",
-	szpay = "ÕæÊÇÒÅº¶£¬Íæ¼ÒÎ´³äÖµ£¬²»ÄÜÓÃÖĞÇï±ı.",
-	szremake = "·µ»Ø/main",
+	sztalk1 = "Thî lµm b¸nh: ThËt tho¶i m¸i, ta ®ang nghØ ng¬i vµi ngµy.",
+	sztalk2 = "Thî lµm b¸nh: L¹i ®Õn Trung Thu n÷a råi, tay nghÒ lµm b¸nh cña ta ai còng biÕt ®Õn, mçi n¨m cã kh«ng İt nh©n sü ®Õn t×m ta gióp lµm b¸nh, kh¸ch quan cÇn g× ¹?",
+	szgetlvdou = "Ta muèn lµm 1 c¸i b¸nh ®Ëu xanh/#makeyuebing(1)",
+	szgetlianzi = "Ta muèn lµm 1 c¸i b¸nh h¹t sen/#makeyuebing(2)",
+	szgetkaoji = "Ta muèn lµm 1 c¸i b¸nh Trung Thu gµ n­íng/#makeyuebing(3)",
+	szkaozhu = "Ta muèn lµm 1 c¸i b¸nh Trung Thu heo quay/#makeyuebing(4)",
+	szlihe = "Ta muèn lµm 1 hép b¸nh Trung Thu/#makeyuebing(5)",
+	szno = "Nh©n tiÖn ghĞ qua th«i/NoChoice",
+	szmakeItemUI = "§óng vËy, ta muèn lµm b¸nh Trung Thu/makeItemUI",
+	szlevel = "ThËt ®¸ng tiÕc, ®¼ng cÊp kh«ng ®ñ 50, kh«ng thÓ tham gia ho¹t ®éng nµy.",
+	szmoney = "ThËt ®¸ng tiÕc, ng©n l­îng mang theo kh«ng ®ñ.",
+	szpay = "ThËt ®¸ng tiÕc, ng­êi ch¬i ch­a n¹p thÎ, kh«ng thÓ dïng b¸nh Trung Thu.",
+	szremake = "Trë l¹i/main",
 	
 }
 
@@ -35,18 +35,18 @@ tb_Mareial_LIHE =
 {
 	100000,
 	{
-		{G=6,D=1,P=1207,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1208,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1209,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1210,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1211,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1212,nrate=0.0125	,szname="ÔÆÓÎÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1213,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1214,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1215,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1216,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1217,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"},
-		{G=6,D=1,P=1218,nrate=0.0125	,szname="ÏÉÓğÍ¼ËéÆ¬"}
+		{G=6,D=1,P=1207,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1208,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1209,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1210,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1211,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1212,nrate=0.0125	,szname="M¶nh tranh V©n Du"},
+		{G=6,D=1,P=1213,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"},
+		{G=6,D=1,P=1214,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"},
+		{G=6,D=1,P=1215,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"},
+		{G=6,D=1,P=1216,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"},
+		{G=6,D=1,P=1217,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"},
+		{G=6,D=1,P=1218,nrate=0.0125	,szname="M¶nh tranh Tiªn Vò"}
 	}
 }
 
@@ -54,45 +54,45 @@ tb_Mareial_LIHE =
 tb_Mareial =
 {
 	szlvdou = {
-		{G=6,D=1,P=1510,szname="ÂÌ¶¹±ı",num=1,nMoney=50000},
-		{G=6,D=1,P=1503,szname="·Û´ü",num=2},
-		{G=6,D=1,P=1504,szname="ÌÇ°ü",num=2},
-		{G=6,D=1,P=1505,szname="µ°´ü",num=2},
-		{G=6,D=1,P=1506,szname="ÂÌ¶¹°ü",num=1},
+		{G=6,D=1,P=1510,szname="B¸nh ®Ëu xanh",num=1,nMoney=50000},
+		{G=6,D=1,P=1503,szname="Tói bét",num=2},
+		{G=6,D=1,P=1504,szname="Tói ®­êng",num=2},
+		{G=6,D=1,P=1505,szname="Tói trøng",num=2},
+		{G=6,D=1,P=1506,szname="Tói ®Ëu xanh",num=1},
 		},
 	szlianzi = {
-		{G=6,D=1,P=1511,szname="Á«Åº±ı",num=1,nMoney=100000},
-		{G=6,D=1,P=1503,szname="Ãæ·Û",num=2},
-		{G=6,D=1,P=1504,szname="ÌÇ",num=2},
-		{G=6,D=1,P=1505,szname="µ°",num=2},
-		{G=6,D=1,P=1507,szname="Á«Åº",num=1},
+		{G=6,D=1,P=1511,szname="B¸nh h¹t sen",num=1,nMoney=100000},
+		{G=6,D=1,P=1503,szname="Tói bét",num=2},
+		{G=6,D=1,P=1504,szname="Tói ®­êng",num=2},
+		{G=6,D=1,P=1505,szname="Tói trøng",num=2},
+		{G=6,D=1,P=1507,szname="Tói h¹t sen",num=1},
 		},
 	szkaoji = {
-		{G=6,D=1,P=1512,szname="¿¾¼¦ÖĞÇï±ı",num=1,nMoney=150000},
-		{G=6,D=1,P=1503,szname="Ãæ·Û",num=3},
-		{G=6,D=1,P=1504,szname="ÌÇ",num=3},
-		{G=6,D=1,P=1505,szname="¼¦µ°",num=3},
-		{G=6,D=1,P=1508,szname="¼¦Èâ",num=1},
+		{G=6,D=1,P=1512,szname="B¸nh Trung Thu gµ n­íng",num=1,nMoney=150000},
+		{G=6,D=1,P=1503,szname="Tói bét",num=3},
+		{G=6,D=1,P=1504,szname="Tói ®­êng",num=3},
+		{G=6,D=1,P=1505,szname="Tói trøng",num=3},
+		{G=6,D=1,P=1508,szname="Tói thŞt gµ",num=1},
 		},
 	szkaozhu = {
-		{G=6,D=1,P=1513,szname="¿¾ÖíÔÂ±ı",num=1,nMoney=200000},
-		{G=6,D=1,P=1503,szname="Ãæ·Û",num=4},
-		{G=6,D=1,P=1504,szname="ÌÇ",num=4},
-		{G=6,D=1,P=1505,szname="µ°",num=4},
-		{G=6,D=1,P=1509,szname="ÖíÈâ",num=1},
+		{G=6,D=1,P=1513,szname="B¸nh Trung Thu heo quay",num=1,nMoney=200000},
+		{G=6,D=1,P=1503,szname="Tói bét",num=4},
+		{G=6,D=1,P=1504,szname="Tói ®­êng",num=4},
+		{G=6,D=1,P=1505,szname="Tói trøng",num=4},
+		{G=6,D=1,P=1509,szname="Tói thŞt heo",num=1},
 		},
 	szlihe = {
-		{G=6,D=1,P=1514,szname="ÖĞÇï±ıºĞ",num=1,nMoney=300000},
-		{G=6,D=1,P=1510,szname="ÂÌ¶¹±ı",num=1},
-		{G=6,D=1,P=1511,szname="Á«Åº±ı",num=1},
-		{G=6,D=1,P=1512,szname="¿¾¼¦ÔÂ±ı",num=1},
-		{G=6,D=1,P=1513,szname="¿¾ÖíÔÂ±ı",num=1},
+		{G=6,D=1,P=1514,szname="Hép b¸nh Trung Thu",num=1,nMoney=300000},
+		{G=6,D=1,P=1510,szname="B¸nh ®Ëu xanh",num=1},
+		{G=6,D=1,P=1511,szname="B¸nh h¹t sen",num=1},
+		{G=6,D=1,P=1512,szname="B¸nh Trung Thu gµ n­íng",num=1},
+		{G=6,D=1,P=1513,szname="B¸nh Trung Thu heo quay",num=1},
 		},		
 }
 
 function funmsg()
 		SZYUEBING = getTaskItemName()
-		szmsg = format("¹§Ï²Äú»ñµÃ%d <color=yellow>%s<color>.",
+		szmsg = format("Chóc mõng b¹n ®· nhËn ®­îc %d <color=yellow>%s<color>.",
 							 tb_Mareial[SZYUEBING][1]["num"],
 							 tb_Mareial[SZYUEBING][1]["szname"])
 		return szmsg
@@ -100,7 +100,7 @@ end
 
 function funtalkmake()
 		SZYUEBING = getTaskItemName()
-		sztalkmake = format("×ö±ıÊ¦£ºÏë×ö%d ¸ö<color=red>%s<color> ĞèÒª %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color> ºÍ%d Á½£¬ÄãÍ¬ÒâÂğ?",
+		sztalkmake = format("Thî lµm b¸nh: Muèn lµm %d c¸i <color=red>%s<color> cÇn %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color> vµ %d l­îng, ng­¬i ®ång ı kh«ng?",
 							 tb_Mareial[SZYUEBING][1]["num"],
 							 tb_Mareial[SZYUEBING][1]["szname"],
 							 tb_Mareial[SZYUEBING][2]["num"],
@@ -117,7 +117,7 @@ end
 
 function funtalkmlimit()
 		SZYUEBING = getTaskItemName()
-		sztalkmlimit= format("£º×ö±ıÊ¦£ºÔ­ÁÏ²»¹»£¬×ö%d <color=red>%s<color> ĞèÒª %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color> ºÍ%d Á½.",
+		sztalkmlimit= format("Thî lµm b¸nh: Nguyªn liÖu mang theo kh«ng ®ñ, lµm %d <color=red>%s<color> cÇn %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color>, %d <color=red>%s<color> vµ %d l­îng.",
 							 tb_Mareial[SZYUEBING][1]["num"],
 							 tb_Mareial[SZYUEBING][1]["szname"],
 							 tb_Mareial[SZYUEBING][2]["num"],
@@ -134,7 +134,7 @@ end
 
 function fungiveitemui()
 		SZYUEBING = getTaskItemName()
-		szgiveitemui= format("×ö±ıÊ¦£ºÏë×ö%d %s ĞèÒª %d %s, %d %s, %d %s, %d %s ºÍ%d Á½.",
+		szgiveitemui= format("Thî lµm b¸nh: Muèn lµm %d %s cÇn %d %s, %d %s, %d %s, %d %s vµ %d l­îng.",
 							 tb_Mareial[SZYUEBING][1]["num"],
 							 tb_Mareial[SZYUEBING][1]["szname"],
 							 tb_Mareial[SZYUEBING][2]["num"],

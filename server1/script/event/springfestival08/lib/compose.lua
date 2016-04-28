@@ -175,12 +175,12 @@ function springfestival08_lib__compose(n_count)
 	local tb_compose = springfestival08_lib_TB_PLCOMPOSE[PlayerIndex]
 	if (springfestival08_lib__checkall(tb_compose[1], n_count)) then
 		if (award_give(tb_compose[2]) > 0) then
-			springfestival08_lib__tellresult(tb_compose[3], "合成成功!")
+			springfestival08_lib__tellresult(tb_compose[3], "H頿 th祅h th祅h c玭g!")
 		else
-			springfestival08_lib__tellresult(tb_compose[5], "合成失败!")
+			springfestival08_lib__tellresult(tb_compose[5], "H頿 th祅h th蕋 b筰!")
 		end
 	else
-		springfestival08_lib__tellresult(tb_compose[4], "原料不够!")
+		springfestival08_lib__tellresult(tb_compose[4], "Kh玭g ng nguy猲 li謚!")
 	end
 	springfestival08_lib_TB_PLCOMPOSE[PlayerIndex] = nil	--清掉，防刷
 end
@@ -206,7 +206,7 @@ end
 function springfestival08_lib_material_compose(tb_compose, str_title, str_text)
 	springfestival08_lib_TB_PLCOMPOSE[PlayerIndex] = tb_compose
 	if (str_text == nil) then
-		str_text = "要求:"..springfestival08_lib_material_name(tb_compose[1])
+		str_text = "Y猽 c莡:"..springfestival08_lib_material_name(tb_compose[1])
 	end
 	GiveItemUI(totext(str_title), totext(str_text), "springfestival08_lib__compose","OnCancel",1)
 end
@@ -222,7 +222,7 @@ function springfestival08_lib_material_name(tb_material, b_front)
 				if (b_front or b_f) then
 					str = str .. " , "
 				else
-					str = str .. "融合"
+					str = str .. "H遖 "
 				end
 			end
 			str = str .. springfestival08_lib_material_name(tb_material[i], b_f)

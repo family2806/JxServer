@@ -88,7 +88,7 @@ function Elect_RandomPL(tabplayindex)
 		for i = 1, 200 do
 			tab_index[i] = tabplayindex[i]
 		end
-		local str = "±¾ÂÖ±ÈÈüÈËÊıÒÑÂú£¬ÇëµÈÏÂÒ»ÂÖ!"
+		local str = "Sè ng­êi thi ®Êu vßng nµy ®· ®Çy, xin ®îi trËn tiÕp theo!"
 		for i = 201, getn(tabplayindex) do 
 			PlayerIndex = tabplayindex[i]
 			Msg2Player(str)
@@ -104,7 +104,7 @@ end
 
 function join_tryout()
 	if (nt_gettask(CP_TASKID_ROUND) >= CP_MAXROUND ) then
-		Say("ÄãµÄ±ÈÈü´ÎÊıÒÑ¹»®· ®ñ"..CP_MAXROUND.."´Î£¬²»ÄÜ¼ÌĞø²Î¼ÓÁË.", 0)
+		Say("Sè lÇn thi ®Êu Vâ l©m kiÖt xuÊt cña b¹n ®· ®ñ"..CP_MAXROUND.."lÇn, kh«ng thÓ tiÕp tôc tham chiÕn.", 0)
 		return
 	end
 	local subworldid = SubWorldIdx2ID (SubWorld)
@@ -120,11 +120,11 @@ function join_tryout()
 	
 	NewWorld(subworldid, CP_MAPPOS_PRE[1], CP_MAPPOS_PRE[2])
 	local mm = RUN_A_TIME - GetMissionV(MS_A_TIME)
-	Msg2Player("ÄãÒÑ½øÈë×¼±¸±ÈÈüÇøÓò£¬±ÈÈü½«ÓÚ"..mm.."·ÖÖÓºó¿ªÊ¼")
+	Msg2Player("B¹n ®· vµo n¬i chuÈn bŞ thi ®Êu. Thi ®Êu sÏ ®­îc tiÕn hµnh vµo"..mm.."phót b¾t ®Çu")
 end
 
 function join_match()
-	WriteLog(date("%Y-%m-%d,%H:%M,").."ÅÅÃûµÚ "..GetMissionV(MS_ROUND).."ĞÇÆÚ"..checkmap(1).."²Î¼Ó±ÈÈüÈËÊıÎª"..GetMSPlayerCount(MISSIONID, 0))
+	WriteLog(date("%Y-%m-%d,%H:%M,").."h¹ng thø "..GetMissionV(MS_ROUND).."thø mÊy"..checkmap(1).."Sè ng­êi tham gia thi ®Êu m«n ph¸i kiÖt xuÊt lµ "..GetMSPlayerCount(MISSIONID, 0))
 	local fieldtab = {}
 	local playertab = {}
 	local org_mapindex = 0
@@ -173,10 +173,10 @@ function join_match()
 		SetCurCamp(2)
 		WL_set_pl_state()
 		SetRevPos(org_mapid, 1)
-		Msg2Player("ÄãÒÑ½øÈëÈü³¡£¬10ÃëÖÓºó½«ÕıÊ½¿ªÊ¼.")
-		Msg2Player("ÄãµÄ¶ÔÊÖ"..eny_plyname.."Ä¿Ç°½á¹û:"..eny_plywin.."Ê¤"..eny_plylose.."Êä"..eny_plytie.."ºÍ")
-		WriteLog(date("%Y-%m-%d %H%M%S,")..GetAccount().."["..GetName().."], ²Î¼Ó±ÈÈü½×¶Î£¬ÄãÄ¿Ç°µÄÕ½¼¨Îª£ºÊ¤"..org_plywin.."Êä"..org_plylose.."ºÍ"..org_plytie..", ÒÑ²Î¼ÓÁË"..nt_gettask(CP_TASKID_ROUND))
-		Msg2Player("½øÈë±ÈÈüÇøÓòºó£¬²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇ»¹¿ÉÒÔÊ¹ÓÃÎïÆ·");
+		Msg2Player("B¹n ®· vµo tr­êng ®Êu, 10 gi©y sau sÏ chİnh thøc b¾t ®Çu.")
+		Msg2Player("§èi thñ cña b¹n"..eny_plyname.."KÕt qu¶ hiÖn t¹i:"..eny_plywin.."th¾ng "..eny_plylose.."thua"..eny_plytie.."hßa")
+		WriteLog(date("%Y-%m-%d %H%M%S,")..GetAccount().."["..GetName().."], giai ®o¹n tham gia chiÕn ®Êu, chiÕn tİch cña b¹n hiÖn t¹i lµ: th¾ng"..org_plywin.."thua"..org_plylose.."hßa"..org_plytie..", ®· tham gia råi"..nt_gettask(CP_TASKID_ROUND))
+		Msg2Player("Sau khi vµo khu vùc thi ®Êu, kh«ng thÓ di chuyÓn vËt phÈm trong hµnh trang, nh­ng vÉn cã thÓ sö dông vËt phÈm trong hµnh trang vµ b¶ng c«ng cô.");
 		SetDeathScript("\\script\\missions\\freshman_match\\match\\playerdeath.lua");
 		
 		PlayerIndex = eny_plyidx
@@ -188,10 +188,10 @@ function join_match()
 		SetCurCamp(3)
 		WL_set_pl_state()
 		SetRevPos(org_mapid, 1)
-		Msg2Player("ÄãÒÑ½øÈëÈü³¡£¬10ÃëÖÓºó½«ÕıÊ½¿ªÊ¼.")
-		Msg2Player("ÄãµÄ¶ÔÊÖ"..eny_plyname.."Ä¿Ç°½á¹û:"..eny_plywin.."Ê¤"..eny_plylose.."Êä"..eny_plytie.."ºÍ")
-		WriteLog(date("%Y-%m-%d %H%M%S,")..GetAccount().."["..GetName().."], ²Î¼Ó±ÈÈü½×¶Î£¬ÄãÄ¿Ç°µÄÕ½¼¨Îª£ºÊ¤"..org_plywin.."Êä"..org_plylose.."ºÍ"..org_plytie..", ÒÑ²Î¼ÓÁË"..nt_gettask(CP_TASKID_ROUND))
-		Msg2Player("½øÈë±ÈÈüÇøÓòºó£¬²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇ»¹¿ÉÒÔÊ¹ÓÃÎïÆ·");
+		Msg2Player("B¹n ®· vµo tr­êng ®Êu, 10 gi©y sau sÏ chİnh thøc b¾t ®Çu.")
+		Msg2Player("§èi thñ cña b¹n"..eny_plyname.."KÕt qu¶ hiÖn t¹i:"..eny_plywin.."th¾ng "..eny_plylose.."thua"..eny_plytie.."hßa")
+		WriteLog(date("%Y-%m-%d %H%M%S,")..GetAccount().."["..GetName().."], giai ®o¹n tham gia chiÕn ®Êu, chiÕn tİch cña b¹n hiÖn t¹i lµ: th¾ng"..org_plywin.."thua"..org_plylose.."hßa"..org_plytie..", ®· tham gia råi"..nt_gettask(CP_TASKID_ROUND))
+		Msg2Player("Sau khi vµo khu vùc thi ®Êu, kh«ng thÓ di chuyÓn vËt phÈm trong hµnh trang, nh­ng vÉn cã thÓ sö dông vËt phÈm trong hµnh trang vµ b¶ng c«ng cô.");
 		SetDeathScript("\\script\\missions\\freshman_match\\match\\playerdeath.lua");
 	end
 	SubWorld = org_mapindex
@@ -205,7 +205,7 @@ function join_match()
 		 	playeridx[i] = pidx
 		end
 		if (getn(playeridx) > 1) then
-			str = "±¾´Î±ÈÈüÈËÊıÒÑÂú£¬ÇëµÈÏÂÒ»´Î!"
+			str = "Sè ng­êi thi ®Êu vßng nµy ®· ®Çy, xin ®îi trËn tiÕp theo!"
 			for i = 1, getn(playeridx) do
 				PlayerIndex = playeridx[i]
 				Msg2Player(str)
@@ -215,7 +215,7 @@ function join_match()
 				NewWorld(SubWorldIdx2ID(SubWorld), CP_MAPPOS_IN[1], CP_MAPPOS_IN[2])
 			end
 		else
-			str = "±¾ÂÖ²Î¼ÓÈËÊı²»¹»£¬²»ÄÜÑ¡ÔñÄãµÄ¶ÔÊÖ£¬±¾ÂÖÄãÊ¤³ö£¬»ñµÃ3·Ö."
+			str = "Sè ng­êi tham gia vßng nµy kh«ng ®ñ, kh«ng chän ®­îc ®èi thñ cña b¹n, vßng nµy b¹n ®· chiÕn th¾ng, ®­îc 3 ®iÓm th­ëng."
 			for i = 1, getn(playeridx) do
 				PlayerIndex = playeridx[i]
 				enyname = GetName()
@@ -225,7 +225,7 @@ function join_match()
 				Ladder_NewLadder(checkmap(2), GetName(), nt_gettask(CP_TASKID_POINT), 1)
 				Msg2Player(str)
 				DelMSPlayer(MISSIONID, PlayerIndex, 1)
-				WriteLog("Íæ¼Ò ["..enyname.."], ÓÉÓÚÃ»ÓĞ¶ÔÊÖ£¬Ä¿Ç°Õ½¼¨Îª£ºÊ¤"..nt_gettask(CP_TASKID_WIN)..", ¸º"..nt_gettask(CP_TASKID_LOSE)..", ºÍ"..nt_gettask(CP_TASKID_TIE)..", ¾öÈü"..nt_gettask(CP_TASKID_POINT))
+				WriteLog("Ng­êi ch¬i ["..enyname.."], do kh«ng cã ®èi thñ, chiÕn tİch hiÖn thêi lµ: th¾ng"..nt_gettask(CP_TASKID_WIN)..", thua"..nt_gettask(CP_TASKID_LOSE)..", hßa"..nt_gettask(CP_TASKID_TIE)..", chung cuéc"..nt_gettask(CP_TASKID_POINT))
 				AddAword(GetLevel(), 60)
 				nt_settask(CP_TASKID_ENEMY, 0)
 				
@@ -238,7 +238,7 @@ end
 
 function GameOver()
 	cp_clearplstate()
-	WriteLog(date("%Y-%m-%d %H%M%S,").."¸ÃµØÍ¼ ["..SubWorldIdx2ID(SubWorld).."]ÎäÁÖĞÂĞãÁªÈüÒÑ½áÊø.")
+	WriteLog(date("%Y-%m-%d %H%M%S,").."§Şa ®å nµy ["..SubWorldIdx2ID(SubWorld).."]Thi ®Êu kiÖt xuÊt ®· kÕt thóc.")
 end
 
 function cp_clearplstate()

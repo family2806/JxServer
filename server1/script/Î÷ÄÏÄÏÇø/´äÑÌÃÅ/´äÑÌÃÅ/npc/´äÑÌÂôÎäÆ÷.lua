@@ -1,4 +1,4 @@
---´äÑÌÃÅ Âô±øÆ÷µÄµÜ×Ó¶Ô»°
+--Thóy YªnÃÅ Âô±øÆ÷µÄµÜ×Ó¶Ô»°
 Include("\\script\\task\\150skilltask\\g_task.lua")
 Include("\\script\\dailogsys\\g_dialog.lua")
 
@@ -14,13 +14,13 @@ function main(sel)
 		end
 
 		local tbDailog = DailogClass:new(szNpcName)
-		tbDailog.szTitleMsg = "<npc>±¾ÃÅ¹¤·òÖØÒªµÄÊÇ±ä»¯ÎŞÇî£¬²»ÏñÒ»°ãµÄÎä¹¦."
-		tbDailog:AddOptEntry("½»Ò×", yes)
-		tbDailog:AddOptEntry("²»½»Ò×", no)
-		G_TASK:OnMessage("´äÑÌ", tbDailog, "DialogWithNpc")
+		tbDailog.szTitleMsg = "<npc>C«ng phu cña bæn m«n quan träng lµ biÕn ho¸ kh«n l­êng, kh«ng nh­ nh÷ng vâ c«ng t©m th­êng kh¸c."
+		tbDailog:AddOptEntry("Giao dŞch", yes)
+		tbDailog:AddOptEntry("Kh«ng giao dŞch", no)
+		G_TASK:OnMessage("Thóy Yªn", tbDailog, "DialogWithNpc")
 		tbDailog:Show()
 	else
-		Talk(1,"","ÃÅÖ÷ÓĞÁî£¬±¾ÃÅ±øÆ÷Ö»ÄÜÂô¸øÍ¬ÃÅ½ãÃÃ.")
+		Talk(1,"","M«n chñ cã lÖnh, binh khİ cña bæn m«n chØ dµnh cho tû muéi ®ång m«n.")
 	end
 end;
 

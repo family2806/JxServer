@@ -3,7 +3,7 @@
 function main(sel)
 
 if(GetItemCount(351) >= 1)then
-	Say("½ğÈËËÍ¸øÎÒÃÇºÜ¶à±¦±´£¬½»¸øÎÒÃÇÈÎÎñÈ¥ÕÒÊ²Ã´É½ºÓÉçğ¢µØÍ¼£¬²»ÖªµÀÓĞÊ²Ã´×÷ÓÃ£¿",4,"ÎÒÕÒµ½Ò»¿éËéÆ¬ /gift1","ÎÒÕÒµ½Á½¿éËéÆ¬/gift2","ÎÒÕÒµ½Ò»¿éËéÆ¬ /gift3","ÎÒ²»»» /no")
+	Say("Ng­êi Kim tÆng cho chóng ta mét sè b¶o bèi, giao cho chóng ta nhiÖm vô ®i t×m tÊm ®Şa ®å 'S¬n hµ x· t¾c' g× ®ã. Kh«ng biÕt lµ nã cã c«ng dông g×?",4,"Ta t×m ®­îc 1 miÕng To¸i phiÕn /gift1","Ta t×m ®­îc 2 miÕng To¸i phiÕn /gift2","Ta t×m ®­îc 1 miÕng To¸i phiÕn /gift3","Ta kh«ng ®æi ®©u /no")
 else
 	default()
 end
@@ -15,11 +15,11 @@ end;
 function default()
 	i = random(0,2)
 	if (i == 0) then
-		Talk(1,"","³Ì´óÒ¯£ºÔÛãê¾©³ÇµÄÄÇ×ùÌúËş£¬¿ÉÓĞĞ©ÄêÍ·À²¡£ÄÇ×ùËşÊÇÓÃÁğÁ§×©¸Ç³ÉµÄ£¬ÒòÆäÉ«ÈçÌú£¬ËùÒÔÀÏ°ÙĞÕ¶¼½ĞËü¡°ÌúËş¡±¡£")
+		Talk(1,"","BiÖn Kinh nµy næi tiÕng lµ nhê cã tßa ThiÕt Th¸p, nh­ng trong ®ã l¹i cã nhiÒu bİ Èn...")
 	elseif (i == 1) then
-		Talk(1,"","³Ì´óÒ¯£ºÈç½ñÕâãê¾©±»½ğÈËÕ¼ÁËÈ¥£¬ÔÛÃÇµÄÈÕ×Ó¿É¿àÀ²¡£")
+		Talk(1,"","B©y giê BiÖn Kinh nµy ®· bŞ ng­êi Kim chiÕm råi! Chóng ta sÏ ph¶i sèng nh÷ng th¸ng ngµy cùc khæ!")
 	else
-		Talk(1,"","³Ì´óÒ¯£º»ÊÉÏÖ»¹Ë×Ô¼ºÔÚÄÏ±ßÏí¸££¬ÄÄ»á¹ÜÎÒÃÇÕâĞ©ÀÏ°ÙĞÕµÄËÀ»î£¡")
+		Talk(1,""," Hoµng th­îng chØ biÕt h­ëng phóc mét m×nh ë ph­¬ng Nam, lµm g× biÕt quan t©m ®Õn sù thèng khæ cña b¸ t¸nh! ")
 	end
 end
 
@@ -36,9 +36,9 @@ if(GetItemCount(351) >= 3)then
 		AddEventItem(353)			-- ĞÉºì±¦Ê¯
 --		AddItem(6, 1, 21, 1, 0, 0, 0)			-- ĞÉºì±¦Ê¯
 	end
-	Say("ÄãµÄµØÍ¼ÒÑÄÃ£¬ËÍ¸øÄãÕâĞ©£¬ÄãÄÃ×Å¡£×î½ü¼¸Äê²»ÊÇºÜ°²ÎÈ! ",0)
+	Say("TÊm b¶n ®å cña ng­¬i ta ®· lÊy råi, tÆng cho ng­¬i nh÷ng thø nµy, ng­¬i h·y gi÷ lÊy. MÊy n¨m nay kh«ng ®­îc yªn æn l¾m! ",0)
 else
-	Say("ÄêÇáÈË²»ÄÜĞ¡¿´ÀÏÕß£¬ÄãÔõÃ´ÓĞ3¸öµØÍ¼ËéÆ¬?",0)
+	Say("Ng­êi b¹n trÎ kh«ng nªn khinh th­êng ng­êi giµ! Ng­¬i lµm g× cã 3 m¶nh b¶n ®å?",0)
 end
 end
 
@@ -52,9 +52,9 @@ if(GetItemCount(351) >= 2)then
 	AddEventItem(x)
 	AddEventItem(353)			-- ĞÉºì±¦Ê¯
 --	AddItem(6, 1, 21, 1, 0, 0, 0)			-- ĞÉºì±¦Ê¯
-	Say("ÄãµÄµØÍ¼ÒÑÄÃ£¬ËÍ¸øÄãÕâĞ©£¬ÄãÄÃ×Å¡£×î½ü¼¸Äê²»ÊÇºÜ°²ÎÈ! ",0)
+	Say("TÊm b¶n ®å cña ng­¬i ta ®· lÊy råi, tÆng cho ng­¬i nh÷ng thø nµy, ng­¬i h·y gi÷ lÊy. MÊy n¨m nay kh«ng ®­îc yªn æn l¾m! ",0)
 else
-	Say("ÄêÇáÈË²»ÄÜĞ¡¿´ÀÏÕß£¬ÄãÔõÃ´ÓĞ3¸öµØÍ¼ËéÆ¬?",0)
+	Say("Ng­êi b¹n trÎ kh«ng nªn khinh th­êng ng­êi giµ! Ng­¬i lµm g× cã 3 m¶nh b¶n ®å?",0)
 end
 end
 
@@ -65,9 +65,9 @@ if(GetItemCount(351) >= 1)then
 	DelItem(351)
 	AddEventItem(353)			-- ĞÉºì±¦Ê¯
 --	AddItem(6, 1, 21, 1, 0, 0, 0)			-- ĞÉºì±¦Ê¯
-	Say("ÄãµÄµØÍ¼ÒÑÄÃ£¬ËÍ¸øÄãÕâĞ©£¬ÄãÄÃ×Å¡£×î½ü¼¸Äê²»ÊÇºÜ°²ÎÈ! ",0)
+	Say("TÊm b¶n ®å cña ng­¬i ta ®· lÊy råi, tÆng cho ng­¬i nh÷ng thø nµy, ng­¬i h·y gi÷ lÊy. MÊy n¨m nay kh«ng ®­îc yªn æn l¾m! ",0)
 else
-	Talk(1,"","ÄêÇáÈË²»ÄÜĞ¡¿´ÀÏÕß£¬ÄãÔõÃ´ÓĞ3¸öµØÍ¼ËéÆ¬?")
+	Talk(1,"","Ng­êi b¹n trÎ kh«ng nªn khinh th­êng ng­êi giµ! Ng­¬i lµm g× cã 3 m¶nh b¶n ®å?")
 end
 end
 

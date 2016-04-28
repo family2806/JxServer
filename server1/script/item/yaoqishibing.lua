@@ -12,12 +12,12 @@ W,X,Y = GetWorldPos();
 nSubWorldID = SubWorldIdx2ID(SubWorld);
 
 if (nSubWorldID ~= CityWarID) then 
-	Msg2Player("Äã²»ÄÜÔÚÕâ¸öµØ·½Ê¹ÓÃÔÆÆì±ø·û£¡")
+	Msg2Player("B¹n kh«ng thÓ sö dông V©n Kú Binh phï t¹i ®©y ")
 	return 1;
 end
 
 if (GetCurCamp() ~= 1) then 
-	Msg2Player("Ö»ÓĞÊØ·½Ò»·½²ÅÄÜÊ¹ÓÃÔÆÆì±ø·û£¡")
+	Msg2Player("ChØ cã phe phßng thñ míi ®­îc sö dông V©n Kú Binh phï t¹i ®©y ")
 	return 1
 end;
 
@@ -25,13 +25,13 @@ end;
 bAdd = 0
 for i  = 1, Count do 
 	if (GetMissionV(MSBegin + i - 1) == 0) then 
-		ToolIndex = AddNpc(NpcTempl, NpcLevel, SubWorld, X * 32, Y * 32, 1, GetName().." ¹ÍÓ¶±ø", 1);
+		ToolIndex = AddNpc(NpcTempl, NpcLevel, SubWorld, X * 32, Y * 32, 1, GetName().." Lİnh ®¸nh thuª ", 1);
 		if (ToolIndex > 0) then
 			SetNpcCurCamp(ToolIndex, 1);
 			SetNpcDeathScript(ToolIndex, "\\script\\missions\\citywar_city\\tooldeath.lua");
 			SetMissionV(MSBegin + i - 1, ToolIndex); 
-			Msg2MSAll(MISSIONID, GetName().."ÅÉÇ²ÁËÒ»ÃûÒ¡ÆìÎäÊ¿£¬¼ÓÈëÕ½¶·£¡");
-			WriteLog(GetLoop()..GetName().."Ôö¼ÓÁËÄ³¸öyaoqi"..ToolIndex)
+			Msg2MSAll(MISSIONID, GetName().."Ph¸i ®Õn mét vâ sÜ ®Ó kĞo cê, hç trî chiÕn ®Êu ");
+			WriteLog(GetLoop()..GetName().."T¨ng thªm mét yaoqi"..ToolIndex)
 			bAdd = 1
 			return 0
 		end;
@@ -39,7 +39,7 @@ for i  = 1, Count do
 end
 
 if (bAdd == 0) then 
-	Msg2Player("Ä¿Ç°ÅÉÀ´µÄÔ®Öú¾üÊıÁ¿ÒÑ¹º£¬ÔİÊ±²»ÓÃÔÙÅÉÁË")
+	Msg2Player("Tr­íc m¾t sè qu©n ph¸i ®Õn hç trî ®· ®ñ, t¹m thêi kh«ng thÓ ph¸i thªm n÷a ")
 	return 1
 end;
 

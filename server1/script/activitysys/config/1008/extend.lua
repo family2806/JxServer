@@ -11,7 +11,7 @@ function pActivity:AddInitNpc()
 		[1] = {176,1446,3255,},		
 	}
 	local tbNpc = {	
-			szName = "ÔÂ¶ù", 
+			szName = "NguyÖt Nhi", 
 			nLevel = 95,
 			nNpcId = 1849,
 			nIsboss = 0,
@@ -55,13 +55,13 @@ function pActivity:GiveRedCandle()
 	end
 	nCount = nHour	
 	if nCount <= 0 then
-		Msg2Player("ÉÏ´ÎÁìÈ¡¼ä¸ô£¬ÄãµÄÉÏÍøÊ±¼ä²»×ãÒ»Ð¡Ê±£¬²»ÄÜÁì")
+		Msg2Player("Kho¶ng c¸ch nhËn lÇn tr­íc, thêi gian trªn m¹ng cña ng­¬i ch­a ®ñ 1 giê, kh«ng thÓ nhËn")
 		return 
 	end
 	local nMaxCount = 3 -  PlayerFunLib:GetTaskDailyCount(%TSK_ONLINE_AWARD_DAILY_LIMIT)
 	nMaxCount = min(nMaxCount, nCount)
 	if nMaxCount <= 0 then
-		Msg2Player("½ñÌìÄã²»ÄÜÁìÈ¡ÁË£¬Ã÷ÌìÔÙÀ´°É.")
+		Msg2Player("H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.")
 		return 
 	end
 	
@@ -72,7 +72,7 @@ function pActivity:GiveRedCandle()
 	SetTask(%TSK_LAST_ONLINETIME,nCurrentOnLineTime)
 	SetTask(%TSK_LAST_ONLINEDATA,nNowDate)
 
-	PlayerFunLib:GetItem(%ITEM_RED_CANDLE,nMaxCount, EVENT_LOG_TITLE, "OnlineÁìºìÀ¯Öò")
+	PlayerFunLib:GetItem(%ITEM_RED_CANDLE,nMaxCount, EVENT_LOG_TITLE, "OnlineNhanNenDo")
 	PlayerFunLib:AddTaskDaily(%TSK_ONLINE_AWARD_DAILY_LIMIT, nMaxCount)
 end
 
@@ -80,7 +80,7 @@ function pActivity:UseCoolTea()
 	local tbAward = {
 		[1] = {nExp=6000000,},
 		[2] = {
-			{szName = "Ãµ¹å", tbProp = {6,1,30172,1,0,0}, nCount = 1, nRate = 50, nExpiredTime = 20120301},
+			{szName = "Hoa hång", tbProp = {6,1,30172,1,0,0}, nCount = 1, nRate = 50, nExpiredTime = 20120301},
 		}
 	}
 	local tbExtAward = {
@@ -98,24 +98,24 @@ function pActivity:UseCoolTea()
 		[1200] = {nExp = 30e6},
 		[1300] = {nExp = 40e6},
 		[1400] = {nExp = 50e6},
-		[1500] = {szName="½ðÎÚÁî",tbProp = {6,1,2349,1,0,0}, nCount=1},
+		[1500] = {szName="Kim ¤ LÖnh",tbProp = {6,1,2349,1,0,0}, nCount=1},
 	}
 	local tbExtLog = {
-		[100] = {"Ê¹ÓÃ½âÈÈ²è100´Î"},
-		[200] = {"Ê¹ÓÃ½âÈÈ²è200´Î"},
-		[300] = {"Ê¹ÓÃ½âÈÈ²è300´Î"},
-		[400] = {"Ê¹ÓÃ½âÈÈ²è400´Î"},
-		[500] = {"Ê¹ÓÃ½âÈÈ²è500´Î"},
-		[600] = {"Ê¹ÓÃ½âÈÈ²è600´Î"},
-		[700] = {"Ê¹ÓÃ½âÈÈ²è700´Î"},
-		[800] = {"Ê¹ÓÃ½âÈÈ²è800´Î"},
-		[900] = {"Ê¹ÓÃ½âÈÈ²è900´Î"},
-		[1000] = {"Ê¹ÓÃ½âÈÈ²è1000´Î"},
-		[1100] = {"Ê¹ÓÃ½âÈÈ²è1100´Î"},
-		[1200] = {"Ê¹ÓÃ½âÈÈ²è1200´Î"},
-		[1300] = {"Ê¹ÓÃ½âÈÈ²è1300´Î"},
-		[1400] = {"Ê¹ÓÃ½âÈÈ²è1400´Î"},
-		[1500] = {"Ê¹ÓÃ½âÈÈ²è1500´Î"},
+		[100] = {"SuDungTraGiaiNhiet100Lan"},
+		[200] = {"SuDungTraGiaiNhiet200Lan"},
+		[300] = {"SuDungTraGiaiNhiet300Lan"},
+		[400] = {"SuDungTraGiaiNhiet400Lan"},
+		[500] = {"SuDungTraGiaiNhiet500Lan"},
+		[600] = {"SuDungTraGiaiNhiet600Lan"},
+		[700] = {"SuDungTraGiaiNhiet700Lan"},
+		[800] = {"SuDungTraGiaiNhiet800Lan"},
+		[900] = {"SuDungTraGiaiNhiet900Lan"},
+		[1000] = {"SuDungTraGiaiNhiet1000Lan"},
+		[1100] = {"SuDungTraGiaiNhiet1100Lan"},
+		[1200] = {"SuDungTraGiaiNhiet1200Lan"},
+		[1300] = {"SuDungTraGiaiNhiet1300Lan"},
+		[1400] = {"SuDungTraGiaiNhiet1400Lan"},
+		[1500] = {"SuDungTraGiaiNhiet1500Lan"},
 	}
 	
 	tbVNG_BitTask_Lib:addTask(%tbBITTSK_LIMIT_TEA_USING,1)
@@ -126,7 +126,7 @@ function pActivity:UseCoolTea()
 	tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "SuDungTraGiaiNhiet"})
 	local tbItemAward = %tbAward_Ext["CoolTea"]
 	if tbItemAward then
-		tbAwardTemplet:Give(tbItemAward, 1 , {%EVENT_LOG_TITLE, "Ê¹ÓÃ½âÈÈ²è"})
+		tbAwardTemplet:Give(tbItemAward, 1 , {%EVENT_LOG_TITLE, "SuDungTraGiaiNhiet"})
 	end
 end
 
@@ -143,19 +143,19 @@ function pActivity:GiveRose(nCount)
 	local nWhiteGiftCount = floor(nCurCount/10) - floor(nLastCount/10)
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 1 then
-		Talk(1, "", "Ä¿Ç°ÒÑ¹ýÁËÃµ¹å»î¶¯ÅÅÃûÍ³¼ÆÊ±¼ä£¬½»Ãµ¹å²»ÄÜËãÈëÅÅÃû.")
+		Talk(1, "", "HiÖn t¹i ®· hÕt thêi gian tæng kÕt xÕp h¹ng sù kiÖn Hoa Hång, nép Hoa Hång kh«ng ®­îc tÝnh vµo ®iÓm xÕp h¹ng.")
 	else
 		%tbTop10:GiveRose(GetName(), GetAccount(), nCurCount)
 	end
 	if nWhiteGiftCount > 0 then
-		local tbAward = {szName = "°×É«ÀñºÐ", tbProp = {6,1,30175,1,0,0}, nCount = nWhiteGiftCount, nExpiredTime = 20120301}
-		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "½»10Ö¦Ãµ¹åµÄ½±Àø"})
+		local tbAward = {szName = "Hép quµ tr¾ng", tbProp = {6,1,30175,1,0,0}, nCount = nWhiteGiftCount, nExpiredTime = 20120301}
+		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "PhanThuongNop10HoaHong"})
 	end	
 end
 
 function pActivity:GiveRoseCheckTime()
 	if %tbTop10:CheckTime() == 1 then
-		Talk(1, "", "ÏµÍ³Õý½øÐÐÅÅÃû£¬ÇëÉÔºòÔÙÀ´.")		
+		Talk(1, "", "HÖ thèng ®ang tiÕn hµnh xÕp h¹ng, xin h·y quay l¹i sau.")		
 		return nil
 	end
 	
@@ -169,7 +169,7 @@ end
 function pActivity:TopListAwardCheckTime()
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 2 then
-		Talk(1, "", "Ä¿Ç°²»ÊÇÁì½±Ê±¼ä£¬Çë´óÏÀ²»Òª×Å¼±.")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i thêi gian nhËn th­ëng, xin ®¹i hiÖp ®õng n«n nãng.")
 		return nil
 	end
 	return 1
@@ -178,41 +178,41 @@ end
 function pActivity:GetTopListAward(nRank)
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 2 then
-		Talk(1, "", "Ä¿Ç°²»ÊÇÁì½±Ê±¼ä£¬Çë´óÏÀ²»Òª×Å¼±.")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i thêi gian nhËn th­ëng, xin ®¹i hiÖp ®õng n«n nãng.")
 		return nil
 	end
 	local ncurrank = %tbTop10:GetCurRank(GetName(), GetAccount())
 	if ncurrank ~= nRank then
-		Talk(1, "", "¸óÏÂÃ»ÓÐ¸Ã½±Àø£¬Çë¼á³ÖÒ»ÏÂ.")
+		Talk(1, "", "C¸c h¹ kh«ng cã phÇn th­ëng nµy, xin h·y kiÓm tra l¹i.")
 		return nil
 	end
 	if tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ROSE_ACTIVITY_AWARD) ~= 0 then
-		Talk(1, "", "¸óÏÂÒÑÁì¸Ã½±ÁË.")
+		Talk(1, "", "C¸c h¹ ®· nhËn phÇn th­ëng nµy råi.")
 		return nil
 	end
 	if %tbTop10:CheckCanGetAward(nRank) == 1 then
-		Talk(1, "", "½±ÀøÒÑÓÐÖ÷ÈËÁË")
+		Talk(1, "", "PhÇn th­ëng ®· cã chñ.")
 		return nil
 	end
 	
 	tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ROSE_ACTIVITY_AWARD, 1)
 	if tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_ROSE_ACTIVITY_AWARD) ~= 1 then
-		Talk(1, "", "²»ÄÜ¸üÐÂ×ÊÁÏ£¬ÇëÁªÏµ¹ÜÀí´¦½â¾ö.")
+		Talk(1, "", "Kh«ng thÓ cËp nhËt d÷ liÖu, xin liªn hÖ ban qu¶n trÞ ®Ó ®­îc gi¶i quyÕt.")
 		return nil
 	end
 	%tbTop10:GiveAward(nRank)
 	local tbAward = {
 		[1] = {tbProp={6,1,30180,1,0,0},nCount=1,tbParam={18,0,0,0,0,0}},
-		[2] = {szName="Ãæ¾ß-Ó¢ÐÛÕ½³¡",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=86400,nUsageTime=-1},
+		[2] = {szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=86400,nUsageTime=-1},
 		[3] = {nExp_tl = 2e9},
 	}
-	tbAwardTemplet:Give(tbAward[nRank], 1, {%EVENT_LOG_TITLE, "ÅÅÃû½±Àø"..nRank})
+	tbAwardTemplet:Give(tbAward[nRank], 1, {%EVENT_LOG_TITLE, "PhanThuongXepHang"..nRank})
 end
 
 function pActivity:BlueGiftAddTask()
 	tbLog = {
-		[500] = "Ê¹ÓÃ500´ÎÂÌÉ«¹û",
-		[1000] = "Ê¹ÓÃ1000´ÎÂÌÉ«¹û",
+		[500] = "SuDung500LanQuaMauXanh",
+		[1000] = "SuDung1000LanQuaMauXanh",
 	}
 	tbVNG_BitTask_Lib:addTask(%tbBITTSK_LIMIT_BLUE_GIFT_USING,1)
 	local val = tbVNG_BitTask_Lib:getBitTask(%tbBITTSK_LIMIT_BLUE_GIFT_USING)
@@ -225,26 +225,26 @@ function pActivity:WhiteGiftAddTask()
 	PlayerFunLib:AddTaskDaily(%TSK_USE_WHITE_GIFT_DAILY_LIMIT, 1)	
 	local val = PlayerFunLib:GetTaskDailyCount(%TSK_USE_WHITE_GIFT_DAILY_LIMIT)
 	if val == 3 then
-		tbLog:PlayerActionLog(%EVENT_LOG_TITLE,"Ê¹ÓÃ3´Î°×É«¹û")
+		tbLog:PlayerActionLog(%EVENT_LOG_TITLE,"SuDung3LanHopQuaTrang")
 	end
 end
 
 function pActivity:UpdateRoseNumber()
 	if tbVNG_BitTask_Lib:IsMaxValue(%tbBITTSK_ROSE_ACTIVITY_UPDATE_ROSE_COUNT) then
-		Talk(1, "", "ÄúÒÑ¸üÐÂÁË.")
+		Talk(1, "", "C¸c h¹ ®· cËp nhËt råi.")
 		return
 	end
 	local nLastCount = GetTask(%TSK_GIVE_ROSE_COUNT)
 	if nLastCount <= 0 then
-		Talk(1, "", "¸óÏÂÎ´½»¸øÎÒÈçºÎÃµ¹å.")
+		Talk(1, "", "C¸c h¹ ch­a nép cho ta Hoa Hång nµo.")
 		return
 	end	
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 1 then
-		Talk(1, "", "Ä¿Ç°ÒÑ¹ýÁËÃµ¹å»î¶¯ÅÅÃûÍ³¼ÆÊ±¼ä£¬½»Ãµ¹å²»ÄÜËãÈëÅÅÃû.")
+		Talk(1, "", "HiÖn t¹i ®· hÕt thêi gian tæng kÕt xÕp h¹ng sù kiÖn Hoa Hång, nép Hoa Hång kh«ng ®­îc tÝnh vµo ®iÓm xÕp h¹ng.")
 	else
 		%tbTop10:GiveRose(GetName(), GetAccount(), nLastCount)
-		Msg2Player(format("¸üÐÂ³É¹¦¡£µ½Ä¿Ç°ÎªÖ¹£¬Ãµ¹åÊýÁ¿ÒÑ½»<color=green>%d<color>", nLastCount))
+		Msg2Player(format("CËp nhËt thµnh c«ng. TÝnh tíi thêi ®iÓm hiÖn t¹i, sè l­îng Hoa Hång ®· nép lµ <color=green>%d<color>", nLastCount))
 		tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ROSE_ACTIVITY_UPDATE_ROSE_COUNT, 1)
 	end	
 end

@@ -5,7 +5,7 @@ function OnDeath()
 	Uworld36 = GetByte(GetTask(36),2)
 	if (Uworld36 == 10) and (random(0,100) < 66) then		-- 任务中，有66%的机率
 		AddEventItem(106)
-		Msg2Player("获得情花")
-		AddNote("在花魁阵获得情花 ")
+		Msg2Player("Nh薾 頲 Hoa T譶h ")
+		AddNote("L蕐 頲 Hoa T譶h trong Hoa Kh玦 tr薾 ")
 	end
 end;

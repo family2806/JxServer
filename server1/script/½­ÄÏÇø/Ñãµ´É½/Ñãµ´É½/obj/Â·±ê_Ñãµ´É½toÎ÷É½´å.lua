@@ -3,6 +3,6 @@
 
 function main(sel)
 
-Say("去西山村", 0)
+Say("T﹜ S琻 th玭", 0)
 
 end;

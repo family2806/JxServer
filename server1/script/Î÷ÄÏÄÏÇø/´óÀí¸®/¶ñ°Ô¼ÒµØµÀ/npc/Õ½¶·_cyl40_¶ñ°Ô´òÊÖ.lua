@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_cy = GetTask(6)
 	if (UTask_cy == 40*256+10) and (random(0,100) < 40) then				-- 40%µÄ»úÂÊ³É¹¦
 		SetTask(6,40*256+20)
-		AddNote("½â¾È±»À§ÔÚÃÜµÀÀïµÄÉÙÅ®£¬ÖªµÀ¶ñ°ÔÒÑ¾­°ÑÆäËûÅ®º¢´øÈ¥²ÔÉ½ÁË. ")
-		Msg2Player("´ò°Ü¶ñ°ÔµÄÖúÊÖ£¬½â¾È±»À§ÔÚÃÜµÀÀïµÄÉÙÅ®£¬ÖªµÀ¶ñ°ÔÒÑ¾­°ÑÆäËûÅ®º¢´øÈ¥²ÔÉ½ÁË. ")
+		AddNote("Gi¶i cøu nh÷ng thiÕu n÷ bÞ b¾t trong mËt ®¹o, ®­îc biÕt tªn ¸c b¸ ®· mang nh÷ng ng­êi con g¸i kh¸c ®i §iÓm Th­¬ng s¬n råi. ")
+		Msg2Player("§¸nh b¹i trî thñ cña tªn ¸c b¸, gi¶i cøu nh÷ng thiÕu n÷ bÞ b¾t trong mËt ®¹o, ®­îc biÕt tªn ¸c b¸ ®· mang nh÷ng ng­êi con g¸i kh¸c ®i §iÓm Th­¬ng s¬n råi. ")
 	end
 end;

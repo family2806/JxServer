@@ -13,7 +13,7 @@ function OnTimer()
 						local y = 3563 * 32 ;
 						--print(x,y,world)
 						YDBZ_add_final_npc(SubWorld,x,y)
-						Msg2MSAll(YDBZ_MISSION_MATCH,"<color=yellow>梁媚儿<color> 在炎帝宝藏最深处将被召唤出")
+						Msg2MSAll(YDBZ_MISSION_MATCH,"<color=yellow>Lng Mi Nhi<color> t筰 n琲 s﹗ th糾 nh蕋 c馻 b秓 t祅g Vi猰 д  頲 g鋓 ra")
 						SetMissionV(YDBZ_STATE_SIGN,3)
 						nsign = 1
 		end

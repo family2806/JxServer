@@ -25,13 +25,13 @@ function springfestival08_lib_AddAward(tbItemList, szActName)
 		elseif nPropCount == 2 then
 			AddGoldItem(tbItemProp[1],tbItemProp[2])
 		end
-		Msg2Player(format("得到1个 %s",szItemName))
+		Msg2Player(format("Nh薾 頲 1 c竔 %s",szItemName))
 		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tget a item %s.",szActName,
 	            GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),szItemName ))
 	end
 	if nExp then
 		AddOwnExp(nExp)
-		Msg2Player(format("得到 %d 经验.", nExp))
+		Msg2Player(format("Nh薾 dc %d kinh nghi謒.", nExp))
 		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tget exp %d.",szActName,
 	            GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(), nExp ))
 	end

@@ -27,7 +27,7 @@ IncludeLib("PARTNER");
 -- ¶ÁÈëÈÎÎñÏµÍ³Í·ÎÄ¼ş£¬°üº¬Ëæ»úÈÎÎñ
 Include("\\script\\task\\system\\task_main.lua");
 
-strPublic       = "<color=green>ÈÎÎñ¾íÖá<color>£º";
+strPublic       = "<color=green>MËt ®å nhiÖm vô<color>:";
 
 function main(nIndex)
 
@@ -42,14 +42,14 @@ local nTaskState = 0;  -- µ±Ç°¾íÖáÈÎÎñµÄ×´Ì¬
 	if (GetProductRegion() == "cn") then
 		-- ÅĞ¶ÏÊÇ·ñÕÙ»½³öÍ¬°é
 		if partnerindex==0 or partnerstate==0 then
-		Msg2Player(strPublic.."<color=yellow>ÄãÃ»ÓĞÕÙ»½Í¬°éÎŞ·¨¶ÁÈ¡¾íÖáÀïÃæµÄÄÚÈİÅ¶£¡<color>");
+		Msg2Player(strPublic.."<color=yellow>B¹n kh«ng cã ®ång hµnh triÖu gäi kh«ng thÓ ®äc néi dung trong mËt ®å.<color>");
 			return 1;
 		end;
 	end;
 	
 	-- ÅĞ¶ÏÃ¿Ìì 8 ´ÎµÄÏŞÖÆÊÇ·ñ·ûºÏ
 	if checkTaskBookEnable()~=1 then
-		Msg2Player(strPublic.."<color=white>Äã½ñÌìÌ«ÀÛÁË£¬»¹ÊÇµÈÃ÷ÌìÔÙ¿ªÆôÕâ¸öÈÎÎñ°É£¡<color>");
+		Msg2Player(strPublic.."<color= v¹nhite>B¹n h«m nay qu¸ mÖt råi, ®Ó ngµy mai lµm tiÕp nhiÖm vô ®i!<color>");
 		return 1;
 	end;
 	
@@ -59,10 +59,10 @@ local nTaskState = 0;  -- µ±Ç°¾íÖáÈÎÎñµÄ×´Ì¬
 	end;
 	
 	if nTaskState>0 and nTaskState<3 then
-		Say("<color=green>ÈÎÎñ¾íÖá<color>£ºÄúµ±Ç°ÓĞ»¹Î´Íê³ÉµÄ¾íÖáÈÎÎñ£¬ÄãÈ·¶¨Òª½ÓÊÜĞÂµÄÈÎÎñÂğ£¿",
+		Say("<color=green>MËt ®å nhiÖm vô<color>: HiÖn t¹i b¹n ch­a hoµn thµnh mËt ®å nhiÖm vô, b¹n x¸c ®Şnh lµm nhiÖm vô míi kh«ng?",
 			2,
-			"ÊÇµÄ£¬ÎÒÒª·ÅÆúÖ®Ç°µÄ¾íÖáÈÎÎñ/#_confirmRandomBookTask("..nIndex..")",
-			"²»ÁË£¬»¹ÊÇµÈµÈ°É/OnTaskExit");
+			"Ph¶i, ta muèn bá qua mËt ®å nhiÖm vô tr­íc ®ã/#_confirmRandomBookTask("..nIndex..")",
+			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnTaskExit");
 		return 1;
 	else
 		
@@ -76,7 +76,7 @@ local nTaskState = 0;  -- µ±Ç°¾íÖáÈÎÎñµÄ×´Ì¬
 		ApplyTask( TaskName(nTaskID) );
 
 		if nResult~=1 then
-			WriteTaskLog("[×´Ì¬Òì³£] ÔÚ Task ID:"..nTaskID..", ²»ÄÜÕıÈ·¹Ø±Õ! Process Îª: TaskBook Main().");
+			WriteTaskLog("[Tr¹ng th¸i dŞ th­êng] ë Task ID:"..nTaskID..", kh«ng ®­îc ®ãng l¹i ®óng c¸ch! Process lµ: TaskBook Main().");
 		end;
 		
 		return 1;
@@ -104,7 +104,7 @@ local nTaskID = GetItemMagicLevel(nIndex, 1);
 	ApplyTask( TaskName(nTaskID) );
 	
 	if nResult~=1 then
-		WriteTaskLog("[×´Ì¬Òì³£] ÔÚ Task ID:"..nTaskID..", ²»ÄÜÕıÈ·¹Ø±Õ! Process Îª: _confirmRandomBookTask, ·ÅÈë²ÎÊıÎª:"..nIndex);
+		WriteTaskLog("[Tr¹ng th¸i dŞ th­êng] ë Task ID:"..nTaskID..", kh«ng ®­îc ®ãng l¹i ®óng c¸ch! Process lµ: _confirmRandomBookTask, tham sè ®­a vµo lµ:"..nIndex);
 	end;
 	
 	return

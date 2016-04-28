@@ -6,54 +6,54 @@ Include("\\script\\vng_event\\20110225_8_thang_3\\head.lua")
 tbVNGWD2011_NpcHead = {}
 tbVNGWD2011_NpcHead.tbCompose =
 	{
-		["∫œ≥…”–…´÷÷◊”"] = 
+		["HÓp thµnh Hπt Mµu Sæc"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("«Ï◊£π˙º ∏æ≈ÆΩ⁄ªÓ∂Ø\t ∫œ≥…%s", "”–…´÷÷◊”"),
+						szComposeTitle = format("Hoπt ÆÈng mıng ngµy QuËc T’ PhÙ N˜\t HÓp thµnh %s", "Hπt Mµu Sæc"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName = "√µπÂª® ¯", tbProp = {6,1,30102,1,0,0}, nCount = 1},
-								{szName = "∫˚µ˚Ω·", tbProp = {6,1,30099,1,0,0}, nCount = 1},
+								{szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nCount = 1},
+								{szName = "Chi’c N¨", tbProp = {6,1,30099,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "”–…´÷÷◊”", tbProp = {6,1,30100,1,0,0}, nExpiredTime = 20110314},
+						tbProduct = {szName = "Hπt Mµu Sæc", tbProp = {6,1,30100,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},
-		["∫œ≥…√µπÂª® ¯"] = 
+		["HÓp thµnh B„ Hoa HÂng"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("«Ï◊£π˙º ∏æ≈ÆΩ⁄ªÓ∂Øt ∫œ≥…%s", "√µπÂª® ¯"),
+						szComposeTitle = format("Hoπt ÆÈng mıng ngµy QuËc T’ PhÙ N˜\t HÓp thµnh %s", "B„ Hoa HÂng"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName = "√µπÂª®", tbProp = {6,1,30097,1,0,0}, nCount = 1},
-								{szName = "ª®œﬂ", tbProp = {6,1,30098,1,0,0}, nCount = 1},
+								{szName = "Hoa HÂng", tbProp = {6,1,30097,1,0,0}, nCount = 1},
+								{szName = "D©y CÈt Hoa", tbProp = {6,1,30098,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "√µπÂª® ¯", tbProp = {6,1,30102,1,0,0}, nExpiredTime = 20110314},
+						tbProduct = {szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},
-		["ÀÕ √µπÂª® ¯"] = 
+		["T∆ng B„ Hoa HÂng"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("«Ï◊£π˙º ∏æ≈ÆΩ⁄ªÓ∂Øt ÀÕ %s", "√µπÂª® ¯"),
+						szComposeTitle = format("Hoπt ÆÈng mıng ngµy QuËc T’ PhÙ N˜\t T∆ng %s", "B„ Hoa HÂng"),
 						nWidth = 0,
 						nHeight = 0,
 						nFreeItemCellLimit = 0,
 						tbMaterial = 
 							{
-								{szName = "√µπÂª® ¯", tbProp = {6,1,30102,1,0,0}, nCount = 1},
+								{szName = "B„ Hoa HÂng", tbProp = {6,1,30102,1,0,0}, nCount = 1},
 							},
 						pProductFun = function (self, nItemCount)
-								%tbVNGWD2011_NpcHead:ExpAward(nItemCount, 5000000, "[VNG][8thang3][ÀÕ √µπÂª® ¯]")
+								%tbVNGWD2011_NpcHead:ExpAward(nItemCount, 5000000, "[VNG][8thang3][T∆ng B„ Hoa HÂng]")
 							end,
 						pLimitFun = function (self, nItemCount) 
 							return %tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nItemCount)
@@ -61,17 +61,17 @@ tbVNGWD2011_NpcHead.tbCompose =
 					},
 					pCompos = nil;					
 			},
-		["ÀÕ √Ê∞¸"] = 
+		["T∆ng B∏nh M◊"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("«Ï◊£π˙º ∏æ≈ÆΩ⁄ªÓ∂Øt ÀÕ %s", "√Ê∞¸"),
+						szComposeTitle = format("Hoπt ÆÈng mıng ngµy QuËc T’ PhÙ N˜\t T∆ng %s", "B∏nh M◊"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName = "√Ê∞¸", tbProp = {6,1,30096,1,0,0}, nCount = 1},
+								{szName = "B∏nh M◊", tbProp = {6,1,30096,1,0,0}, nCount = 1},
 							},					
 						tbProduct = 
 							{
@@ -79,7 +79,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 									[1]=
 										{
 											{pFun = function (tbItem, nItemCount, szLogTitle) %tbVNGWD2011_NpcHead:GetExpBM(1000000)end,},
-											{szName="√µπÂª®",tbProp={6,1,30097,1,0,0},nCount=2,nExpiredTime=20110314},											
+											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=2,nExpiredTime=20110314},											
 										},
 									nRate = 50,
 								},
@@ -87,7 +87,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 									[1]=
 										{
 											{pFun = function (tbItem, nItemCount, szLogTitle) %tbVNGWD2011_NpcHead:GetExpBM(2000000)end,},
-											{szName="√µπÂª®",tbProp={6,1,30097,1,0,0},nCount=1,nExpiredTime=20110314},
+											{szName="Hoa HÂng",tbProp={6,1,30097,1,0,0},nCount=1,nExpiredTime=20110314},
 										},
 									nRate = 50,
 								},
@@ -95,19 +95,19 @@ tbVNGWD2011_NpcHead.tbCompose =
 					},				
 					pCompos = nil;
 			},
-			["¬Ú ª®œﬂ"] = 
+			["Mua D©y CÈt Hoa"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("«Ï◊£π˙º ∏æ≈ÆΩ⁄ªÓ∂Øt ¬Ú %s", "ª®œﬂ"),
+						szComposeTitle = format("Hoπt ÆÈng mıng ngµy QuËc T’ PhÙ N˜\t Mua %s", "D©y CÈt Hoa"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName="“¯¡Ω",nJxb=100000, nCount = 1},
+								{szName="Ng©n l≠Óng",nJxb=100000, nCount = 1},
 							},
-						tbProduct = {szName = "ª®œﬂ", tbProp = {6,1,30098,1,0,0}, nExpiredTime = 20110314},
+						tbProduct = {szName = "D©y CÈt Hoa", tbProp = {6,1,30098,1,0,0}, nExpiredTime = 20110314},
 					},
 					pCompos = nil;
 			},
@@ -153,8 +153,8 @@ function tbVNGWD2011_NpcHead:GetExpBM(nExpAward)
 	end
 	
 	PlayerFunLib:AddTaskDaily(2750, nExpAward/1000000)
-	local tbAward = {szName = "ßiæ≠—È÷µ", nExp=nExpAward}
-	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][ÀÕ√Ê∞¸]")
+	local tbAward = {szName = "ßi”m Kinh Nghi÷m", nExp=nExpAward}
+	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][T∆ng b∏nh m◊]")
 end
 
 function tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nCount)
@@ -166,18 +166,18 @@ function tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nCount)
 						nMaxValue = 1000
 					}
 	if (tbVNG_BitTask_Lib:getBitTask(tbTaskInfo)  >= tbTaskInfo.nMaxValue) then
-		Msg2Player(format("∏Ûœ¬“—≤Œº”◊Ó∂‡∏√ªÓ∂Ø¡À£¨≤ªƒ‹‘Ÿ≤Œº”¡À."))
+		Msg2Player(format("C∏c hπ Æ∑ tham gia tËi Æa hoπt ÆÈng nµy. Kh´ng th” th˘c hi÷n th™m."))
 		return 0
 	end
 	local nNextTskVal = tbVNG_BitTask_Lib:getBitTask(tbTaskInfo) + nCount*5
 	if ( nNextTskVal > tbTaskInfo.nMaxValue) then
-		Msg2Player(format(" ˝¡ø≥¨π˝…œœﬁ£¨¥Ûœ¿÷ªƒ‹ÀÕ<color=yellow>%d <color>√µπÂª® ¯.", (tbTaskInfo.nMaxValue - tbVNG_BitTask_Lib:getBitTask(tbTaskInfo))/5))
+		Msg2Player(format("SË l≠Óng v≠Ót qu∏ giÌi hπn, ßπi hi÷p chÿ c„ th” t∆ng <color=yellow>%d <color>B„ Hoa HÂng n˜a.", (tbTaskInfo.nMaxValue - tbVNG_BitTask_Lib:getBitTask(tbTaskInfo))/5))
 		return 0
 	end
 	return 1	
 end
 
---ÀÕ √µπÂª® ¯
+--T∆ng B„ Hoa HÂng
 function tbVNGWD2011_NpcHead:ExpAward(nCount, nExp, strLog)
 	local tbTaskInfo =
 					{
@@ -187,7 +187,7 @@ function tbVNGWD2011_NpcHead:ExpAward(nCount, nExp, strLog)
 						nMaxValue = 1000
 					}	
 	
-	local tbAward = {szName = "ßiæ≠—È÷µ", nExp=5000000}
+	local tbAward = {szName = "ßi”m Kinh Nghi÷m", nExp=5000000}
 	local tbTSK, tbTSK_FLAG = {}
 	for i = 1, nCount do
 		--add task cho moi lan tang hoa hong

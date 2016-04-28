@@ -9,12 +9,12 @@ function main()
 			DelItem(196)
 			DelItem(198)
 			SetTask(6,40*256+30)
-			AddNote("´ò°Ü¶ñ°ÔµÄÖúÊÖ£¬ÄÃ3°ÑÔ¿³×´ò¿ª3¸öºÚ·¿¼ä£¬¾È³ö±»À§µÄÉÙÅ®. ")
-			Msg2Player("´ò°Ü¶ñ°ÔµÄÖúÊÖ£¬ÄÃ3°ÑÔ¿³×´ò¿ª3¸öºÚ·¿¼ä£¬¾È³ö±»À§µÄÉÙÅ®. ")
+			AddNote("§¸nh b¹i trî thñ cña tªn ¸c b¸, lÊy ba ch×a khãa më cöa ba phßng tèi cøu nh÷ng thiÕu n÷ bŞ b¾t kh¸c. ")
+			Msg2Player("§¸nh b¹i trî thñ cña tªn ¸c b¸, lÊy ba ch×a khãa më cöa ba phßng tèi cøu nh÷ng thiÕu n÷ bŞ b¾t kh¸c. ")
 		else
-			Msg2Player("ÄãÕÒ³öÀ§ÉÙÅ®µÄºÚ°µ·¿¼ä»ú¹Ø£¬µ«ÊÇÖ»ĞèÒª3°ÑÔ¿³×²ÅÄÜ´ò¿ªÕâ¸ö»ú¹Ø. ")
+			Msg2Player("B¹n t×m ra c¬ quan phßng tèi giam c¸c thiÕu n÷, nh­ng cÇn cã 3 chiÕc ch×a khãa míi më ®­îc c¬ quan nµy. ")
 		end
 	else
-		Msg2Player(" ÕâÀïÓĞÒ»¸ö»ú¹Ø£¬µ«ÊÇ²»¶®ÓÃÀ´×öÊ²Ã´µÄ")
+		Msg2Player("ë ®©y cã mét c¬ quan nh­ng kh«ng biÕt dïng lµm g×. ")
 	end
 end;

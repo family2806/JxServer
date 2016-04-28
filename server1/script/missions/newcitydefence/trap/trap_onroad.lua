@@ -15,7 +15,7 @@ function OnNpcTrap(nNpcIdx)
 			local szNpcName = GetNpcName(nNpcIdx)
 			local citycamp = GetMissionV( MS_CITYCAMP )
 			local npccamp = 1
-			local npcname = "ËÎ¾ü"
+			local npcname = "Qu©n Tèng"
 			if ( citycamp == 1 ) then
 				npccamp = 2
 				npcname = "Qu©n Kim"
@@ -24,7 +24,7 @@ function OnNpcTrap(nNpcIdx)
 				DelNpc(nNpcIdx)
 				local ndefence = GetMissionV( MS_HOMEDEFENCE )
 				SetMissionV( MS_HOMEDEFENCE,ndefence - NHOMEDEFENCE_DAMAGE )
-				Msg2MSAll(MISSIONID, format("<color=yellow>%s¶Ô·½¾üÕýÔÚ½ø¹¥£¬ÊØ³ÇÖµ½µ1µã£¬Ä¿Ç°»¹Ê£%s µã!!!",tbSOLDIER_NAME[6],ndefence-1))
+				Msg2MSAll(MISSIONID, format("<color=yellow>%s qu©n ®èi ph­¬ng ®ang tÊn c«ng, ®iÓm thñ thµnh gi¶m 1 ®iÓm, hiÖn t¹i cßn l¹i %s ®iÓm!!!",tbSOLDIER_NAME[6],ndefence-1))
 				if ndefence == 1 then
 					CloseMission( MISSIONID )
 				end
@@ -37,7 +37,7 @@ function main()
 --print(nTrapId.."trapid "..(x*32).."	"..(y*32))
 	if (nTrapId == 1013 or nTrapId == 2012 or nTrapId == 3012) then
 		if (GetMissionV(MS_STATE) == 1) then
-			Talk(1, "", "¿ªÕ½Ç°£¬¸øÎÒ½«Ê¿ÔÚ³ÇÄÚÌýÁî£¬×¼±¸Ó­µÐ!")
+			Talk(1, "", "Tr­íc khi khai chiÕn c¸c t­íng sÜ trong thµnh ®îi lÖnh, chuÈn bÞ nghªnh ®Þch!")
 			if (nTrapId == 1013) then
 				SetPos(1605, 3200)
 			elseif (nTrapId == 2012) then

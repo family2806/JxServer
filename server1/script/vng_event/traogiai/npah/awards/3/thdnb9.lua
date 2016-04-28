@@ -5,8 +5,8 @@ Include("\\script\\vng_event\\traogiai\\NPAH\\vng_ToolAward.lua")
 tbCurSeason = tbAwardClass:New()
 tbCurSeason.nStartDate = 201108180000
 tbCurSeason.nEndDate = 201108252400
-tbCurSeason.strName = "ÁìÈ¡ÌìÏÂµÚÒ»°ï9½±Àø"
-tbCurSeason.strNPC = "Õ½ÐÄ×ðÕß"
+tbCurSeason.strName = "NhËn th­ëng Thiªn H¹ §Ö NhÊt Bang 9"
+tbCurSeason.strNPC = "ChiÕn T©m T«n Gi¶"
 tbCurSeason.nID = 3
 tbCurSeason.tbAccList = {
 	["chikilled2"]={[1]={{nAwardID=2,nCount=3},{nAwardID=3,nCount=1},{nAwardID=4,nCount=5},{nAwardID=5,nCount=3},},[2]={{nAwardID=6,nCount=50},},[3]={{nAwardID=6,nCount=24},},[4]={{nAwardID=7,nCount=50},},[5]={{nAwardID=7,nCount=24},},[6]={{nAwardID=8,nCount=50},},[7]={{nAwardID=8,nCount=24},},[9]={{nAwardID=10,nCount=32},},[10]={{nAwardID=11,nCount=32},},},
@@ -43,22 +43,22 @@ tbCurSeason.tbAccList = {
 	["namthienvuong1223"]={[2]={{nAwardID=6,nCount=16},},[4]={{nAwardID=7,nCount=32},},},	
 }
 tbCurSeason.tbPrizeList = {
-	[1] = {szName = "ÍêÃÀºèÓ°",
-		[1] = {szName="[ÍêÃÀ] ºèÓ°ÉòÔ°Íí×í", nQuality=1, tbProp={0, 536},nCount=1},
-		[2] = {szName="[ÍêÃÀ] ºèÓ°½£¹ÒÎ÷·½", nQuality=1, tbProp={0, 537},nCount=1},
-		[3] = {szName="[ÍêÃÀ] ºèÓ°ÜÙÞ£ÏàÍü", nQuality=1, tbProp={0, 538},nCount=1},
-		[4] = {szName="[ÍêÃÀ] ºèÓ°ºìÐäÕÐ", nQuality=1, tbProp={0, 539},nCount=1},
+	[1] = {szName = "Bé Hång ¶nh Hoµn Mü",
+		[1] = {szName="[Hoµn Mü] Hång ¶nh TrÇm Viªn V·n Tóy", nQuality=1, tbProp={0, 536},nCount=1},
+		[2] = {szName="[Hoµn Mü] Hång ¶nh KiÕm Qua T©y Ph­¬ng", nQuality=1, tbProp={0, 537},nCount=1},
+		[3] = {szName="[Hoµn Mü] Hång ¶nh Môc Tóc T­¬ng Vong", nQuality=1, tbProp={0, 538},nCount=1},
+		[4] = {szName="[Hoµn Mü] Hång ¶nh Hång Tô Chiªu", nQuality=1, tbProp={0, 539},nCount=1},
 	},
-	[2] = {szName="·É·çÓù·ç (ÖØ»÷)",tbProp={0,3475},nCount=1,nQuality = 1,nExpiredTime=259200,},
-	[3] = {szName="·É·çÓù·ç (¸ÅÂÊ»¯½âÉ±Ç¹)",tbProp={0,3474},nCount=1,nQuality = 1,nExpiredTime=259200,},
-	[4] = {szName="»Æ½ðÓ¡ (Ç¿»¯)",tbProp={0,3212},nCount=1,nQuality = 1,nExpiredTime=259200,},
-	[5] = {szName="»Æ½ðÓ¡ (Èõ»¯)",tbProp={0,3222},nCount=1,nQuality = 1,nExpiredTime=259200,},
-	[6] = {szName="°²¿µºì°ü",tbProp={6,1,2105,1,0,0},nCount=1},
-	[7] = {szName="»ÆÕæµ¤",tbProp={6,1,2264,1,0,0},nCount=1},
-	[8] = {szName="×Ï½ðÕæµ¤",tbProp={6,1,2263,1,0,0},tbParam={2000000000},nCount=1},
-	[9] = {szName="·­Óð",tbProp={0,10,7,1,0,0},nCount=1},
-	[10] = {szName="Ãæ¾ß-Ó¢ÐÛÕ½³¡",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=259200},
-	[11] = {szName="»Æ½ðÖ®¹û (100)",tbProp={6,1,30095,1,0,0},nCount=1},
+	[2] = {szName="Phi phong Ngù Phong (Träng kÝch)",tbProp={0,3475},nCount=1,nQuality = 1,nExpiredTime=259200,},
+	[3] = {szName="Phi phong Ngù Phong (X¸c suÊt hãa gi¶i s¸t th­¬ng)",tbProp={0,3474},nCount=1,nQuality = 1,nExpiredTime=259200,},
+	[4] = {szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3212},nCount=1,nQuality = 1,nExpiredTime=259200,},
+	[5] = {szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3222},nCount=1,nQuality = 1,nExpiredTime=259200,},
+	[6] = {szName="Hång bao An khang",tbProp={6,1,2105,1,0,0},nCount=1},
+	[7] = {szName="Hoµng Ch©n §¬n",tbProp={6,1,2264,1,0,0},nCount=1},
+	[8] = {szName="Tö Kim Ch©n §¬n",tbProp={6,1,2263,1,0,0},tbParam={2000000000},nCount=1},
+	[9] = {szName="Phiªn Vò ",tbProp={0,10,7,1,0,0},nCount=1},
+	[10] = {szName="MÆt n¹ - Anh hïng chiÕn tr­êng",tbProp={0,11,482,1,0,0},nCount=1,nExpiredTime=259200},
+	[11] = {szName="Qu¶ Hoµng Kim (100)",tbProp={6,1,30095,1,0,0},nCount=1},
 
 }
 --tbCurSeason.tbFreeBagRequire = {

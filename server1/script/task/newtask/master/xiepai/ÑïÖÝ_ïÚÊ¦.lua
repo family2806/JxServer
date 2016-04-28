@@ -19,6 +19,6 @@ myTaskValue = GetTask(1003)
 		return
 	end
 
-Say("ïÚÊ¦£º¸ÉÎÒÃÇÕâÒ»ĞĞµÄ£¬´©É½ÈëÁëÄÇÊÇ¼Ò³£±ã·¹£¬Ã¿´Î»¤ïÚ¶¼²»ÖªµÀÕâ´Î×Ô¼ºÄÜ²»ÄÜ»î×Å»ØÀ´¡£",0);
+Say("NghÒ b¶o tiªu lÊy nói rõng lµm nhµ! Mçi lÇn ®i lµ mét lÇn kh«ng mong ngµy vÒ! Nh­ng ta vÉn yªu nã!",0);
 
 end

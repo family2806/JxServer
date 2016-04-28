@@ -19,64 +19,64 @@ end
 function main(nItemIdx)
 --Ê¹ÓÃÈËÏŞÖÆ£¿
 	local ForbiddenMap = {44, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 326, 327, 328, 329, 330, 331, 334, 335, 337, 338, 339, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374}
-	local GoldenBoss = {{562, "µÀÇåÕæÈË", 4,12},
-					  {563, "Ò®ÂÉ±ÙÀë", 3,12},
+	local GoldenBoss = {{562, "§¹o Thanh Ch©n Nh©n", 4,12},
+					  {563, "Gia LuËt TŞ Ly", 3,12},
 					  --{564, "ÍêÑÕÑ©ÒÂ", 3,12},
-					  {565, "¶ËÄ¾î£", 3,12},
-					  {566, "¹Å°Ø", 0,12},
-					  {567, "ÖÓÁéĞã", 2,12},
-					  {568, "ºÎÁ¯Æ®", 2,12},
-					  {582, "À¶ÒÁÒÁ", 1,12},
-					  {583, "ÃÏ²ÔÀË", 3,12},
-					  {739, "Íõ×ô", 0,10},
-					  {740, "Ğş¾õ´óÊ¦", 0,12},
-					  {741, "ÌÆ²»È¾", 1,12},
-					  {742, "°×Ó¨Ó¨", 1,12},
-					  {743, "ÇåÏşÊ¦Ì«", 2,12},
-					  {744, "Û³ÏşÙ»", 2,12},
-					  {745, "ºÎÈËÎÒ", 3,12},
+					  {565, "§oan Méc DuÖ ", 3,12},
+					  {566, "Cæ B¸ch", 0,12},
+					  {567, "Chung Linh Tó ", 2,12},
+					  {568, "Hµ Linh Phiªu", 2,12},
+					  {582, "Lam Y Y", 1,12},
+					  {583, "M¹nh Th­¬ng L­¬ng", 3,12},
+					  {739, "V­¬ng T¸ ", 0,10},
+					  {740, "HuyÒn Gi¸c §¹i S­ ", 0,12},
+					  {741, "§­êng BÊt NhiÔm", 1,12},
+					  {742, "B¹ch Doanh Doanh", 1,12},
+					  {743, "Thanh HiÓu S­ Th¸i ", 2,12},
+					  {744, "Yªn HiÓu Tr¸i", 2,12},
+					  {745, "Hµ Nh©n Ng· ", 3,12},
 					  --{746, "µ¥Ë¼ÄÏ", 4,10},
-					  {747, "è¯çá×Ó", 4,12},
-					  {511, "ÕÅ×ÚÕı",5,270},
-			  		  {513, "ÃîÈç",5,270},
-			  		  {523, "ÁøÇàÇà",5,270}}
+					  {747, "TuyÒn C¬ Tö ", 4,12},
+					  {511, "Tr­¬ng T«ng Chİnh",5,270},
+			  		  {513, "DiÖu Nh­ ",5,270},
+			  		  {523, "LiÔu Thanh Thanh",5,270}}
 			  		  
 	local bosspro = {};
 	local W,X,Y = GetWorldPos();
 	local nMapId = W;
 	if ( GetFightState() == 0 ) then	--·ÇÕ½¶·Çø½ûÓÃ
-		Msg2Player("·ÇÕ½¶·×´Ì¬ÏÂ²»ÄÜÊ¹ÓÃ");
+		Msg2Player("Kh«ng ë trong tr¹ng th¸i chiÕn ®Êu th× kh«ng thÓ sö dông");
 		return 1
 	end
 	
 	--tinhpn 20100803: Patch ReQuest
 	if %checkOnlyUseInMap() ~= 1 then
-		Msg2Player("´ËµØ²»ÄÜÊ¹ÓÃ´ËµÀ¾ß")
+		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ")
 		return 1
 	end
 	
 	
 	for i = 249, 318 do	--Ï´ËèµºÉ½¶´
 		if ( i == nMapId ) then
-			Msg2Player("´ËµØ²»ÄÜÊ¹ÓÃ´ËµÀ¾ß");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end	
 	for i = 375, 415 do	--ĞÂÔöËÎ½ğÕ½³¡µØÍ¼ ËÍĞÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
 		if ( i == nMapId ) then
-			Msg2Player("´ËµØ²»ÄÜÊ¹ÓÃ´ËµÀ¾ß");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end
 	for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
 		if( ForbiddenMap[i] == nMapId ) then
-			Msg2Player("´ËµØ²»ÄÜÊ¹ÓÃ´ËµÀ¾ß");
+			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 			return 1
 		end
 	end
 	
 	if (CheckAllMaps(nMapId) == 1) then
-		Msg2Player("´ËµØ²»ÄÜÊ¹ÓÃ´ËµÀ¾ß");
+		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 		return 1
 	end
 	
@@ -93,8 +93,8 @@ function main(nItemIdx)
 		end
 		local npcindex = AddNpcEx( GoldenBossId, 95, GoldenBossSeries, SubWorldID2Idx(W), X * 32, (Y +  5)* 32, 1, GoldenBossName, 1 );
 		SetNpcDeathScript(npcindex, "\\script\\misc\\boss\\callbossdeath.lua");
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount().."£¬["..GetName().."]ÓÃ»Æ½ğÁî·ûÕÙ»½ÁËÒ»¸ö»Æ½ğBoss£º"..GoldenBossName);
-		Msg2Player("ÄãÕÙ»½³öÁËÒ»¸öBoss£º"..GoldenBossName);
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."] Dïng Hoµng Kim lÖnh ®Ó gäi ra 1 Boss Hoµng Kim: "..GoldenBossName);
+		Msg2Player("B¹n gäi ra 1 Boss: "..GoldenBossName);
 
 	return 0	
 end

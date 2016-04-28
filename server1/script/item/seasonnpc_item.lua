@@ -26,12 +26,12 @@ function main()
 		
 	-- ·ÇÕ½¶·×´Ì¬²»ÄÜÊ¹ÓÃ
 	if GetFightState()==0 then
-		Say("Ö»ÄÜÔÚ³ÇÊĞÓëĞÂÊÖ´åµÄÕ½¶·ÇøÓò»òÕßÁ·¼¶µØÍ¼²ÅÄÜÊ¹ÓÃ´ËÎïÆ·£¡", 0);
+		Say("VËt phÈm nµy chØ cã thÓ sö dông ë c¸c khu vùc luyÖn c«ng vµ chiÕn ®Êu!", 0);
 		return 1;
 	end;
 	
 	if CheckAllMaps(subworld)==1 then
-		Say("Ö»ÄÜÔÚ³ÇÊĞÓëĞÂÊÖ´åµÄÕ½¶·ÇøÓò»òÕßÁ·¼¶µØÍ¼²ÅÄÜÊ¹ÓÃ´ËÎïÆ·£¡", 0);
+		Say("VËt phÈm nµy chØ cã thÓ sö dông ë c¸c khu vùc luyÖn c«ng vµ chiÕn ®Êu!", 0);
 		return 1;
 	end;
 	
@@ -40,13 +40,13 @@ function main()
 	
 	-- Ò°ÛÅµÄÍ·ÏÎ
 	local aryBossTitle = {
-		[1] = {"ÓÆÏĞµÄ",
-			   "ĞÄ²»ÔÚÑÉµÄ",
-			   "Ó¹ÀÁµÄ",},
+		[1] = {"nghØ ng¬i",
+			   "l¬ ®·ng",
+			   "l­êi biÕng",},
 			   
-		[2] = {"·ßÅ­µÄ",
-			   "Ğ×ºİµÄ",
-			   "Ãô½İµÄ",},	
+		[2] = {"phÉn né",
+			   "hung ¸c",
+			   "linh ho¹t",},	
 	}
 	
 	local nBossIndex  = {
@@ -61,12 +61,12 @@ function main()
 					x*32, -- ¼ÆËã X Æ«ÒÆ
 					y*32, -- ¼ÆËã Y Æ«ÒÆ
 					1,
-					"£¨"..aryBossTitle[nBossType][random(1,getn(aryBossTitle[nBossType]))].."£©Ò°ÛÅ",
+					" ("..aryBossTitle[nBossType][random(1,getn(aryBossTitle[nBossType]))]..") D· TÈu",
 					1);
 		
 		SetNpcScript(nNpcIndex, "\\script\\global\\seasonnpc_death.lua");
 		
-		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ÕıÔÚ<color=green>"..mapname.."<color>ÓëÒ°ÛÅÇĞ´èÎäÒÕ£¡");
+		Msg2SubWorld("Ng­êi ch¬i <color=yellow>"..GetName().."<color> ®ang <color=green>"..mapname.."<color> cïng D· TÈu thao luyÖn vâ nghÖ!");
 		
 		return 0;
 end;

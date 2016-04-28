@@ -29,11 +29,11 @@ end
 
 function GetBonusTLL(nCount)
 	if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetTLL)~= 1) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	--set bit khi user get item
@@ -42,17 +42,17 @@ function GetBonusTLL(nCount)
 		local nIndex = AddItem(6,1,2352,1,0,0)
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’ªÒµ√ %d ≤‘¿«¡Ó", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."¡Ï»°≤‘¿«¡ÓΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Th≠¨ng lang L÷nh", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Th≠¨ng Lang L÷nh sË l≠Óng "..nCount)
 end
 
 function GetBonusTKCD(nCount)
 	if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetTKCD)~= 1) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	--set bit khi user get item
@@ -62,25 +62,25 @@ function GetBonusTKCD(nCount)
 		SetSpecItemParam(nIndex,1,2000000000)
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’ªÒµ√ %d ◊œΩ’Êµ§", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."¡Ï»°◊œΩ’Êµ§Ω±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Tˆ Kim Ch©n ßan", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Tˆ Kim Ch©n ßan sË l≠Óng "..nCount)
 end
 
 function GetBonusKimTiger(nCount, nTime)
 	if (nTime ==1) then
 		if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetKimTiger)~= 1) then
-			Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+			Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 			return
 		end
 	else
 		if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetKimTiger2)~= 1) then
-			Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+			Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 			return
 		end
 	end
 	
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	--set bit khi user get item
@@ -95,25 +95,25 @@ function GetBonusKimTiger(nCount, nTime)
 		ITEM_SetExpiredTime(nIndex, 259200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’ªÒµ√ %d Ω–«∞◊ª¢Õı", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."¡Ï»°Ω–«∞◊ª¢ÕıΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Kim Tinh Bπch HÊ V≠¨ng", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Kim Tinh Bπch HÊ V≠¨ng sË l≠Óng "..nCount)
 end
 
 function GetBonusHoaTiger(nCount, nTime)
 	if (nTime == 1) then
 		if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetHoaTiger)~= 1) then
-			Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+			Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 			return
 		end
 	else
 		if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetHoaTiger2)~= 1) then
-			Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+			Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 			return
 		end
 	end
 	
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	--set bit khi user get item
@@ -129,17 +129,17 @@ function GetBonusHoaTiger(nCount, nTime)
 		ITEM_SetExpiredTime(nIndex, 259200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’ªÒµ√ %d ª–«Ωª¢Õı", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."¡Ï»°ª–«Ωª¢ÕıΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d H·a Tinh Kim HÊ V≠¨ng", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng H·a Tinh Kim HÊ V≠¨ng sË l≠Óng "..nCount)
 end
 
 function GetBonusCLBHBVLKH1(nCount)
 	if (CheckGetBonusVLKH1(VLKH1_EXTPOINT, nBit_GetCLBHB)~= 1) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï∏√Ω±¡À !");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	--set bit khi user get item
@@ -150,6 +150,6 @@ function GetBonusCLBHBVLKH1(nCount)
 		ITEM_SetExpiredTime(nIndex, 43200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’ªÒµ√ %d æ„¿÷≤ø∫Ï∞¸", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."¡Ï»°æ„¿÷≤ø∫Ï∞¸Ω±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d C©u Lπc BÈ HÂng Bao", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLKH1"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng C©u Lπc BÈ HÂng Bao sË l≠Óng "..nCount)
 end

@@ -5,7 +5,7 @@
 xmas07_makeSnowMan_S = 07120800
 xmas07_makeSnowMan_E = 08011324
 xmas07_makeSnowMan_UseTime = 08013124 --合成雪人 使用雪人
-xmas07_makeSnowMan_ActName = "造雪人活动";
+xmas07_makeSnowMan_ActName = "Ho箃 ng t筼 ngi tuy誸";
 
 xmas2007_SnowManItem_TSK_ExpLimit = 1860
 xmas2007_SnowManItem_ExpMax = 1200000000
@@ -49,7 +49,7 @@ function xmas2007_SnowManItem_AddItem(szItemName,tbItemProp)
 	elseif nPropCount == 2 then
 		AddGoldItem(tbItemProp[1],tbItemProp[2])
 	end
-	Msg2Player(format("获得%s",szItemName))
+	Msg2Player(format("Nh薾 頲 %s",szItemName))
 	WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tget a item %s.",xmas07_makeSnowMan_ActName,
             GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),szItemName ))
 end

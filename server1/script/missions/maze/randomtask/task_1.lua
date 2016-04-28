@@ -1,5 +1,5 @@
 -- 1.	4¸ö½ÇÂä¸÷×ÔÓĞ1¿ÃÊ÷£¬
--- ĞèÒª4¸öÈËÍ¬Ê±¿ªÆô4¿ÃÊ÷£¬¿ªÆôÍê±Ï£¨¶ÁÌõÍê±Ï£©µÄÊ±¼ä²î²»ÄÜ³¬¹ı1Ãë£¬²Å»á³öÏÖBOSS³ÂéÔ.¿ªÆôÊ÷Òª¶ÁÌõ3Ãë¡£
+-- ĞèÒª4¸öÈËÍ¬Ê±¿ªÆô4¿ÃÊ÷£¬¿ªÆôÍê±Ï£¨¶ÁÌõÍê±Ï£©µÄÊ±¼ä²î²»ÄÜ³¬¹ı1Ãë£¬²Å»á³öÏÖBOSSTrÇn TiÒu.¿ªÆôÊ÷Òª¶ÁÌõ3Ãë¡£
 -- Ã¿¿ªÆôÊ§°ÜÒ»´Î¾Í»áË¢³ö4¸öÄÜ´ò¶Ï¿ªÆôµÄĞ¡¹ÖîÚÁúÊÌÎÀ£¬Ö±ÖÁ³É¹¦²ÅÄÜ³öÏÖBOSS¡£»÷°ÜBOSS¾Í¹ı¹Ø¡£
 
 Include("\\script\\missions\\maze\\progressbar.lua")
@@ -65,15 +65,15 @@ end
 
 function pTask:Say(player, nIndex)
 	if (self.m_BossIndex > 0) then
-		player:Say("»ú¹ØÒÑ¿ª£¬²»ÓÃÔÙ¿ª")
+		player:Say("C¬ quan ®· ®­îc më, kh«ng cÇn ph¶i më l¹i")
 		return
 	end
 	local tb = self.m_Trees[nIndex]
 	if (tb.BarId > 0) then
-		player:Say("»ú¹ØÕıÔÚ¿ª£¬²»ÓÃÔÙ¿ª")
+		player:Say("C¬ quan ®ang ®­îc më, kh«ng cÇn ph¶i më l¹i")
 		return
 	end
-	tb.BarId = ProgressBarList:Open("ÕıÔÚ¿³Ê÷", player, 3, self, tb)
+	tb.BarId = ProgressBarList:Open("§ang ®èn c©y", player, 3, self, tb)
 end
 
 function pTask:OnProgressbarBreak(nId, tb, player)
@@ -99,18 +99,18 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 		end
 	end
 	if (nLeftCount == 0) then
-		self:BroadCast("³É¹¦´ò¿ª.")
+		self:BroadCast("Më thµnh c«ng.")
 		self:AddBoss()
 	end
 	return 0
 end
 
 function pTask:AddMonsters()
-	self:BroadCast("³É¹¦´ò¿ª")
+	self:BroadCast("Më thÊt b¹i.")
 	local pos = self:GetPosition().t1_tree
 	for i = 1, self.m_TreeCount do
 		local param = getn(self.m_Monsters) + 1
-		local nNpcIndex = FightNpcManager:AddNpc("ÓñÁúÊÌÎÀ", 1695, self:GetMapId(), pos[i].x, pos[i].y, self, param, 1, 1)
+		local nNpcIndex = FightNpcManager:AddNpc("Ngäc Long ThŞ VÖ", 1695, self:GetMapId(), pos[i].x, pos[i].y, self, param, 1, 1)
 		tinsert(self.m_Monsters, nNpcIndex)
 		self.m_Trees[i].Timeout = 0
 	end
@@ -118,8 +118,8 @@ end
 
 function pTask:AddBoss()
 	local tbPos = self:GetPosition()
-	-- ³öÏÖBOSS³ÂéÔ
-	self.m_BossIndex = FightNpcManager:AddNpc("³ÂéÔ", 1696, self:GetMapId(), tbPos.t1_boss.x, tbPos.t1_boss.y, self, 0, 1, 1)
+	-- ³öÏÖBOSSTrÇn TiÒu
+	self.m_BossIndex = FightNpcManager:AddNpc("TrÇn TiÒu", 1696, self:GetMapId(), tbPos.t1_boss.x, tbPos.t1_boss.y, self, 0, 1, 1)
 end
 
 function pTask:OnDeath(nKilledIndex, pPlayerKiller, nIndex)

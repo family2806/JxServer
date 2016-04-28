@@ -2,6 +2,6 @@
 
 function main(sel)
 
-Talk(4, "", "¶¹¶¹Äï£º²Ì½ã£¬°³¼ÒÄÇÍŞ¶ùÌ«µ·µ°ÁË£¬×ò¶ù¸öÓÖÔÚÄã¼Ò´³ÁË»ö£¬ÎÒ¸øÄãÅâ²»ÊÇ¡£", "²ÌÉôÉô£º´óÃÃ×Ó£¬¿ì±ğÕâÃ´Ëµ£¬Ë­¼ÒµÄàîáÌ²»ÌÔÆø£¿Äã±ÂÍùĞÄÀïÈ¥¡£", "¶¹¶¹Äï£º»¹ÊÇÅ®ÍŞ×ÓºÃ°¡£¬ÇÆÄãÃÇ¼Ò´ä´ä¶à¶®ÊÂ¡£", "²ÌÉôÉô£ºÅ®ÍŞ¶ùÈ·ÊµÌùÄïµÄĞÄ£¬²»¹ı´ä´äËûµù»¹ÊÇÒ»Ö±ÏëÒª¸öáÌ¡£")
+Talk(4, "", "Th¸i tû! §øa bĞ nhµ ta qu¸ tinh nghŞch, h«m qua ph¸ ph¸ch nhµ tû n÷a ph¶i kh«ng?", "Em ®õng nãi nh­ vËy, nhµ ai mµ kh«ng cã trÎ con hiÕu ®éng,®õng qu¸ quan t©m!", "Cßn con bĞ Thóy Thóy nhµ chŞ th× thËt lµ ngoan.", "Ch¾c con bĞ ®· lÊy lßng chŞ...nh­ng cha con bĞ cßn muèn cã con trai.")
 
 end;

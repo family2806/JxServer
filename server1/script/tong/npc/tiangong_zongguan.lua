@@ -2,7 +2,7 @@ Include("\\script\\tong\\workshop\\ws_tiangong.lua")
 function main()
 	local szTongName, nTongID = GetTongName()
 	if nTongID == 0 then
-		Say("<#>ÄãÎ´¼ÓÈë°ïÅÉ£¬À´ÕÒÎÒÓĞÊÂÂğ?", 0)
+		Say("<#>Ng­¬i ch­a gia nhËp bang, t×m ®Õn ta cã viÖc g×?", 0)
 		return
 	end	
 	local nTypeID = wsGetTypeID(NAME_TIANGONG)

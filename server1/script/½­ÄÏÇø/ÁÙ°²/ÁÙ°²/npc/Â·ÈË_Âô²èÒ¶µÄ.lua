@@ -2,5 +2,5 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Talk(1,"","Âô²èÒ¶µÄ£ºÕı×ÚµÄÎ÷ºşÁú¾®£¬ÇÆÒ»ÇÆ£¬ÎÅÒ»ÎÅ£¬Èç¼Ù°ü»»£¡ÕâÎ÷ºşÁú¾®¿ÉÊÇÌìÏÂÃû²è£¬´ı¿ÍËÍÀñ¶¼ÊÇ¼ÑÆ·£¬Âòµã¶ù°É£¿")
+	Talk(1,"","Trong c¸c lo¹i trµ ngon ph¶i kÓ ®Õn Long TÜnh. Trµ Long TÜnh cña T©y Hå chóng ta cã tø tuyÖt lµ 's¾c xanh, h­¬ng nång, vŞ ®Ëm, n­íc trong', cã thÓ xem lµ cùc phÈm trong c¸c lo¹i trµ. ")
 end;

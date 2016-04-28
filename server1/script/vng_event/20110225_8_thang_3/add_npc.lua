@@ -2,7 +2,7 @@ Include("\\script\\vng_event\\20110225_8_thang_3\\head.lua")
 
 tbVNGWD2011_AddNpc = {}
 tbVNGWD2011_AddNpc.nNpcID = 224
-tbVNGWD2011_AddNpc.strName = "‘∞ƒ⁄¿œ’ﬂ"
+tbVNGWD2011_AddNpc.strName = "§ng L∑o Lµm V≠Ín"
 tbVNGWD2011_AddNpc.strScript = "\\script\\vng_event\\20110225_8_thang_3\\npc\\gardener.lua"
 tbVNGWD2011_AddNpc.tbPos = 
 	{

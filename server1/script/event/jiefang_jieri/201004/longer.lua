@@ -17,7 +17,7 @@ function main()
 	--µ¯³ö¶Ô»°¿ò
 --¿ªÆônpcÐ¡ÁúµÄÖ°ÄÜ - modified by DinhHQ - 20110427
 --	if FreedomEvent2010:IsActive1() == 1 then
-		tbDailog:AddOptEntry("»»µÀ¾ß", FreedomEvent2010.LongerEventItemDlg, {FreedomEvent2010})
+		tbDailog:AddOptEntry("§æi ®¹o cô", FreedomEvent2010.LongerEventItemDlg, {FreedomEvent2010})
 --	end
 	
 	tbDailog:Show()

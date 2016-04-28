@@ -16,18 +16,18 @@ function OnDeath(index)
 		-- ÊÇ·ñ¶Ó³¤ÕóÍö
 		local name = GetMissionS(VARS_TEAM_NAME);
 		if (name == GetName()) then
-			broadcast(name .. "¶ÓÎé¶Ó³¤ËÀÍö!");
+			broadcast(name .. "§éi tr­ëng ®éi ngò tö vong!");
 		end
 		
 		-- ÊÇ·ñÈ«¾ü¸²Ãğ
 		if (count == 0) then
-			broadcast(name .. "È«¶ÓËÀÍö!");
+			broadcast(name .. "Toµn ®éi tö vong hÕt!");
 		end
 	end
 
 	DelMSPlayer(MISSION_MATCH, 1);
 	-- ÔÚmissionÄÚÍ¨¸æÍæ¼ÒËÀÍö
-	Msg2MSAll(MISSION_MATCH, GetName() .. "´ËÕ½²»ĞÒ!");	
+	Msg2MSAll(MISSION_MATCH, GetName() .. "Kh«ng may t¹i trËn tö vong!");	
 	
 	-- ´«ËÍ»Ø±¨ÃûµØµã
 	-- local world = GetMissionV(VARV_SIGNUP_WORLD);

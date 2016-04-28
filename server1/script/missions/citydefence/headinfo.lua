@@ -31,10 +31,10 @@ TNPC_CHEFU = 393;
 TNPC_SYMBOL1 = 629;
 TNPC_SYMBOL2 = 630;
 
-					--ÁÐ±ø	Ð¡¶Ó³¤	¸±½«	´ó½«	ÔªË§
+					--TiÓu hiÖu	Ð¡§éi tr­ëng	¸±½«	´ó½«	ÔªË§
 tbTNPC_SOLDIER = {	{1067,	1068,	1069,	1070,	1080},	--ËÎ
 					{1072,	1073,	1074,	1075,	1090}}	--½ð
-tbSOLDIER_NAME = {	"ÁÐ±ø", "¶Ó³¤", "Ç°·æ", "Ö÷½«", "Ö÷Ë§"	}
+tbSOLDIER_NAME = {	"TiÓu hiÖu", "§éi tr­ëng", "Tiªn phong", "Chñ t­íng", "Chñ so¸i"	}
 tbSOLDIER_LEVEL = {	95, 95, 95, 100, 120 }
 tbFILE_NPCDEATH = 
 	{
@@ -62,18 +62,18 @@ tbSIGNMAP_POS = {
 
 
 tbDEFENCE_RETURN = {
-						[1] = { 1520,3228, "·ïÏè¸®", 2 },	--·ïÏè
-						[11] = { 3018,5089, "³É¶¼¸®", 1 },	--³É¶¼
-						[37] = { 1632,3185, "ãê¾©¸®", 2 },	--ãê¾©
-						[78] = { 1439,3214, "ÏåÑô¸®", 1 },	--ÏåÑô
-						[80] = { 1593,3197, "ÑïÖÝ¸®", 1 },	--ÑïÖÝ
-						[162] = { 1470,3269, "´óÀí", 1 },	--´óÀí
-						[176] = { 1392,3313, "ÁÙ°²¸®", 1 },	--ÁÙ°²
+						[1] = { 1520,3228, "Ph­îng T­êng Phñ ", 2 },	--·ïÏè
+						[11] = { 3018,5089, "Thµnh §« Phñ ", 1 },	--³É¶¼
+						[37] = { 1632,3185, "BiÖn Kinh Phñ ", 2 },	--ãê¾©
+						[78] = { 1439,3214, "T­¬ng D­¬ng Phñ ", 1 },	--ÏåÑô
+						[80] = { 1593,3197, "D­¬ng Ch©u Phñ ", 1 },	--ÑïÖÝ
+						[162] = { 1470,3269, "§¹i Lý", 1 },	--§¹i Lý
+						[176] = { 1392,3313, "L©m An Phñ ", 1 },	--ÁÙ°²
 					}
 					
 tbDEFENCE_ANNOUNCE = {
-			"Íæ¼Ò¿ÉÒÔµ½³É¶¼¸®¡¢ÏåÑô¸®¡¢ÁÙ°²¸®¡¢´óÀí¡¢ÑïÖÝ¸®ºÍ³ÇÃÅÎÀ±ø¶Ô»°²Î¼ÓËÎ·½ÊØ³Ç.",
-			"Íæ¼Ò¿ÉÒÔµ½·ïÏè¸®¡¢ãê¾©¸®ºÍ³ÇÃÅÎÀ±ø¶Ô»°²Î¼Ó½ð·½ÊØ³Ç."
+			"Ng­êi ch¬i cã thÓ ®Õn Thµnh §« phñ, T­¬ng D­¬ng phñ, L©m An phñ, §¹i Lý phñ, D­¬ng Ch©u phñ ®èi tho¹i víi VÖ binh thµnh m«n ®Ó tham gia thñ thµnh phe Tèng.",
+			"Ng­êi ch¬i cã thÓ ®Õn Ph­îng T­êng phñ, BiÖn Kinh phñ ®èi tho¹i víi VÖ binh thµnh m«n ®Ó tham gia thñ thµnh phe Kim."
 }
 
 FILE_PLAYERDEATH = 		"\\script\\missions\\citydefence\\playerdeath.lua";

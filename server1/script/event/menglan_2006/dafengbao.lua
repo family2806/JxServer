@@ -1,19 +1,19 @@
 
 tab_goods = {
-	{"À¶Ë®¾§",	0.005, 4,	238},
-	{"×ÏË®¾§",	0.005, 4,	239},
-	{"ÂÌË®¾§",	0.005, 4,	240},
-	{"ÏÉ²ÝÂ¶",	0.65, 6,	1,	71},
-	{"Åû·ç",	0.01, 6,	1,	15},
-	{"ÎäÁÖÃØ¼®",	0.001, 6,	1,	26},
-	{"Ï´Ë®¾§",	0.001, 6,	1,	22},
-	{"ÌúÂÞºº",	0.01, 6,	1,	23},
-	{"ÌìÉ½±¦Â¶",	0.15, 6,	1,	72},
-	{"Ò©Íè°ü",	0.1626, 6,	1,	910},
-	{"°²°î±ù¾§Ê¯ÏîÁ´",	0.0001, 164},
-	{"°²°î¾Õ»¨Ê¯Ö¸»·",	0.0001, 165},
-	{"°²°îÌï»ÆÊ¯ÓñÅå",	0.0001, 166},
-	{"°²°î¼¦ÑªÊ¯½äÖ¸",	0.0001, 167}
+	{"Lam Thñy Tinh",	0.005, 4,	238},
+	{"Tö Thñy Tinh",	0.005, 4,	239},
+	{"Lôc Thñy Tinh",	0.005, 4,	240},
+	{"Tiªn Th¶o Lé ",	0.65, 6,	1,	71},
+	{"Phi Phong",	0.01, 6,	1,	15},
+	{"Vâ L©m MËt TÞch",	0.001, 6,	1,	26},
+	{"TÈy Tñy Kinh",	0.001, 6,	1,	22},
+	{"ThiÕt La H¸n",	0.01, 6,	1,	23},
+	{"Thiªn s¬n  B¶o Lé ",	0.15, 6,	1,	72},
+	{"Bao D­îc hoµn ",	0.1626, 6,	1,	910},
+	{"An Bang B¨ng Tinh Th¹ch H¹ng Liªn",	0.0001, 164},
+	{"An Bang Cóc Hoa Th¹ch ChØ hoµn",	0.0001, 165},
+	{"An Bang §iÒn Hoµng Th¹ch Ngäc Béi",	0.0001, 166},
+	{"An Bang Kª HuyÕt Th¹ch Giíi ChØ ",	0.0001, 167}
 }
 
 function main(nItem)
@@ -36,8 +36,8 @@ function main(nItem)
 		AddGoldItem(0, tab_goods[nIdx][3]);
 	end;
 	if (nIdx < 4 or (nIdx >= 6 and nIdx <= 8) or nIdx >= 11) then
-		WriteLog(date("%Y-%m-%d-%H:%M")..", Íæ¼Ò["..GetName().."] ´ò¿ªÑ¹ËêÇ®°ü£¬µÃµ½ "..tab_goods[nIdx][1]..".");
-		AddGlobalNews("Íæ¼Ò ["..GetName().."] ´ò¿ªÑ¹ËêÇ®°ü£¬µÃµ½ "..tab_goods[nIdx][1]..".");
+		WriteLog(date("%Y-%m-%d-%H:%M")..", Ng­êi ch¬i ["..GetName().."] Më bao l× x×, nhËn ®­îc "..tab_goods[nIdx][1]..".");
+		AddGlobalNews("Ng­êi ch¬i ["..GetName().."] Më bao l× x×, nhËn ®­îc "..tab_goods[nIdx][1]..".");
 	end;
-	Msg2Player("ÄãµÃµ½<color=yellow>"..tab_goods[nIdx][1].."<color>");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>"..tab_goods[nIdx][1].."<color>");
 end;

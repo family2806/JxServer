@@ -3,14 +3,14 @@ IncludeLib("FILESYS")
 Include("\\script\\task\\system\\task_string.lua")
 
 function main()
-	GiveItemUI("ĞŞ°×½ğ×°±¸", "·ÅĞèÒªĞŞµÄ°×½ğ×°±¸½øÈ¥", "repair_platina", "OnCancel", 1);
+	GiveItemUI("Söa trang bŞ b¹ch kim", "H·y bá trang bŞ b¹ch kim cÇn söa vµo", "repair_platina", "OnCancel", 1);
 	return 1;
 end
 
 function repair_platina(nCount)
 
 	if nCount ~= 1 then
-		CreateTaskSay({"·ÅÈëÎïÆ·µÄÊıÁ¿²»ºÍÒªÇó", "ÕæÊÇ¶Ô²»Æğ£¬ÎÒ½«ÖØĞÂ°²ÅÅ/main", "ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºó»ØÀ´./onCancel"});
+		CreateTaskSay({"Sè l­îng vËt phÈm bá vµo kh«ng ®óng yªu cÇu", "Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/main", "ThËt ng¹i qu¸, ta sÏ quay l¹i sau./onCancel"});
 		return
 	end
 	
@@ -18,27 +18,27 @@ function repair_platina(nCount)
 	local nQuality		= GetItemQuality(nItemIndex);			--Æ·ÖÊ
 	
 	if (nQuality ~= 4) then
-		CreateTaskSay({"Çë·ÅĞèÒªĞŞµÄ°×½ğ×°±¸.", "ÕæÊÇ¶Ô²»Æğ£¬ÎÒ½«ÖØĞÂ°²ÅÅ/main", "ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºò»ØÀ´./onCancel"});
+		CreateTaskSay({"H·y bá trang bŞ b¹ch kim cÇn söa.", "Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/main", "ThËt ng¹i qu¸, ta sÏ quay l¹i sau./onCancel"});
 		return
 	end
 
 	
 	if (GetPlatinaLevel(nItemIndex) < 6) then
-		CreateTaskSay({"Ö»ÄÜĞŞ+6ÒÔÉÏµÄ°×½ğ×°±¸.", "ÕæÊÇ¶Ô²»Æğ£¬ÎÒ½«ÖØĞÂ°²ÅÅ/main", "ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºò»ØÀ´./onCancel"});
+		CreateTaskSay({"ChØ cã thÓ söa trang bŞ b¹ch kim +6 trë lªn.", "Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/main", "ThËt ng¹i qu¸, ta sÏ quay l¹i sau./onCancel"});
 		return
 	end
 	
 	if (GetCurDurability(nItemIndex) == GetMaxDurability(nItemIndex)) then
-		CreateTaskSay({"¸Ã×°±¸ÒÑÓĞ×î´óµÄ½áÊµ¶ÈÁË£¬²»ĞèÒªÔÙĞŞÁË", "ÕæÊÇ¶Ô²»Æğ£¬ÎÒ½«ÖØĞÂ°²ÅÅ/main", "ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºò»ØÀ´./onCancel"});
+		CreateTaskSay({"Trang b?nµy c?®ñ ®é bÒn lín nhÊt råi, kh«ng cÇn ph¶i söa thªm", "Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/main", "ThËt ng¹i qu¸, ta sÏ quay l¹i sau./onCancel"});
 		return
 	end
 		
 	if (ConsumeItem(3, 1, 6, 1, 2163, 1) ~= 1) then	-- É¾³ı±³°üÖĞµÄÌúÑªµ¤
-		WriteLog("[ÌúÑªµ¤ĞŞ¸ÄÄ¿Ç°µÄ½áÊµ¶È]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\É¾³ıÌúÑªµ¤Ê§°Ü");
+		WriteLog("[ThiÕt huyÕt ®¬n söa  ®é bÒn hiÖn t¹i]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\tXãa thiÕt huyÕt ®¬n thÊt b¹i");
 		return
 	end
 	
-	Msg2Player("ĞŞ¸Ä³É¹¦!");
+	Msg2Player("Söa ch÷a thµnh c«ng!");
 	
 	SetCurDurability(nItemIndex, GetMaxDurability(nItemIndex));
 end

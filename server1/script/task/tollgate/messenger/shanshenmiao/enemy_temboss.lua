@@ -42,20 +42,20 @@ function messenger_templego(KillerNpcIndex)
 		if ( messenger_choice == 7) then  --Èç¹ûÃ»ÓĞµÃµ½Õâ¸ö¸£Àû£¬ÔòÔö¼Ó»ı·Ö20·ÖÖÓ
 			if ( Uworld1213 == 0 ) then
 				nt_setTask(1213,messenger_nowtime)
-				Msg2Player("ÄãµÃµ½ÁËÉ±¹ÖÊ±Ë«±¶¾­Ñé20·ÖÖÓµÄ½±Àø!")
+				Msg2Player("B¹n nhËn ®­îc phÇn th­ëng t¨ng gÊp ®«i ®iÓm kinh nghiÖm khi giÕt qu¸i trong 20 phót!")
 				AddSkillState( 548, 1, 1,21600)
 			else
-				Msg2Player("Äã³É¹¦ÏÂµÃµ¶Ñı.")
+				Msg2Player("B¹n thµnh c«ng h¹ tªn §ao Yªu.")
 			end
 		elseif ( messenger_choice == 11 ) then  --Ôö¼Ó»ı·Ö10 
 			nt_setTask(1205,Uworld1205+20)
 			tongaward_message(20);	--by Ğ¡É½
-			Msg2Player("§iÄãÔÚĞÅÊ¹ÈÎÎñÖĞµÄÀÛ»ı·ÖÊıÔö¼ÓÁË20·Ö!")
+			Msg2Player("§iÓm tİch lòy trong nhiÖm vô Tİn Sø cña b¹n t¨ng lªn 20 ®iÓm!")
 			AddSkillState( 509, 1, 0, 180)
 		elseif ( messenger_choice == 13 ) then  --¼õÉÙ»ı·Ö10
 			if ( Uworld1205 >= 10 ) then 
 			nt_setTask(1205,Uworld1205-10)
-			Msg2Player("§iÄãÔÚĞÅÊ¹ÈÎÎñÖĞµÄÀÛ»ı·ÖÊı¼õÉÙÁË10·Ö!")
+			Msg2Player("§iÓm tİch lòy trong nhiÖm vô Tİn Sø cña b¹n gi¶m ®i 10 ®iÓm!")
 			AddSkillState( 509, 1, 0, 180)
 			end
 		elseif ( messenger_choice == 16 ) then  --Èç¹ûÃ»ÓĞ´¥·¢¹ı¶¨µã´ò¹ÖµÄÊÂ¼ş£¬´¥·¢ÔÚÄ³µã´òÌØÊâ¹ÖÎïµÄÊÂ¼ş
@@ -63,10 +63,10 @@ function messenger_templego(KillerNpcIndex)
 			if ( lucky_dingdian == 2 ) then
 				if ( Uworld1214 == 0 ) then                            
 					nt_setTask(1214,Uworld1214+10)									--¼ÇÂ¼ÔÚkillfly±íÖĞÈ¡µÃµÄĞĞÊı
-					Msg2Player("ÔÚµ¶Ñı½áÊøÉúÃüÖ®Ç°£¬ËûºÍÄãËµÓÉÓÚ±»µ¶ÊÖÊÖÏÂÏİº¦£¬ËùÒÔ£¬Ëû²ÅÉ±ÈËÎŞÊı¡£Ï£ÍûÄã¿ÉÒÔ°ïËûÏÂµÃ10¸öµ¶ÊÖ£¬½«ÓĞ¾ªÏ²µÈ×ÅÄã!")
+					Msg2Player("Tr­íc khi §ao Yªu t¾t thë anh ta nãi víi b¹n do bŞ thñ h¹ §ao Thñ h·m h¹i nªn anh ta míi giÕt ng­êi v« sè. Hy väng b¹n cã thÓ gióp anh ta h¹ 10 tªn §ao Thñ sÏ cã nhiÒu bÊt ngê cho b¹n ®Êy!")
 					AddSkillState( 509, 1, 0, 180)
 				else 
-					Msg2Player("Äã³É¹¦ÏÂµÃµ¶Ñı.")
+					Msg2Player("B¹n thµnh c«ng h¹ tªn §ao Yªu.")
 					--SetTask2Team(tbBirthday0905.tbTask.tsk_msg_curtsk,tbBirthday0905.tbTask.tsk_msg_needcount, 7);
 				end
 			end
@@ -87,7 +87,7 @@ function messenger_templego(KillerNpcIndex)
 								TabValue5 = templeboss[i][5] * 32
 								newtasknpcindex = AddNpc(templeboss[i][1],templeboss[i][2],Tid,TabValue4,TabValue5,templeboss[i][6],templeboss[i][7],templeboss[i][8]);
 								SetNpcScript(newtasknpcindex, templeboss[i][9]);
-								Msg2Player(templeboss[i][7]..": Äã¸ÒÉ±ÎÒ¸ç¸ç£¬½ñÌìÄãÒª³¥Ãü!")
+								Msg2Player(templeboss[i][7]..": Ng­¬i d¸m giÕt ca ca ta, h«m nay ng­¬i ph¶i nép m¹ng!")
 							end
 						end
 					end
@@ -104,7 +104,7 @@ function messenger_templego(KillerNpcIndex)
 								TabValue5 = templeboss2[i][5] * 32
 								newtasknpcindex = AddNpc(templeboss2[i][1],templeboss2[i][2],Tid,TabValue4,TabValue5,templeboss2[i][6],templeboss2[i][7],templeboss2[i][8]);
 								SetNpcScript(newtasknpcindex, templeboss2[i][9]);
-								Msg2Player(templeboss2[i][7]..": Äã¸ÒÉ±ÎÒ¸ç¸ç£¬½ñÌìÄãÒª³¥Ãü!")
+								Msg2Player(templeboss2[i][7]..": Ng­¬i d¸m giÕt ca ca ta, h«m nay ng­¬i ph¶i nép m¹ng!")
 							end
 						end
 					end
@@ -121,7 +121,7 @@ function messenger_templego(KillerNpcIndex)
 								TabValue5 = templeboss3[i][5] * 32
 								newtasknpcindex = AddNpc(templeboss3[i][1],templeboss3[i][2],Tid,TabValue4,TabValue5,templeboss3[i][6],templeboss3[i][7],templeboss3[i][8]);
 								SetNpcScript(newtasknpcindex, templeboss3[i][9]);
-								Msg2Player(templeboss3[i][7]..": Äã¸ÒÉ±ÎÒ¸ç¸ç£¬½ñÌìÄãÒª³¥Ãü!")
+								Msg2Player(templeboss3[i][7]..": Ng­¬i d¸m giÕt ca ca ta, h«m nay ng­¬i ph¶i nép m¹ng!")
 							end
 						end
 					end
@@ -133,7 +133,7 @@ function messenger_templego(KillerNpcIndex)
 	if ( Uworld1213 ~= 0 ) then       --ÅĞ¶ÏÊÇ·ñË«±¶¾­ÑéÊ±¼ä
 		if  (  messenger_nowtime - Uworld1213 >= 1200 ) then
 			nt_setTask(1213,0)
-			Msg2Player("ÄãµÄÔö¼ÓË«±¶¾­ÑéÊ±¼äÒÑ½áÊø!")
+			Msg2Player("Thêi gian t¨ng gÊp ®«i ®iÓm kinh nghiÖm cña b¹n ®· kÕt thóc!")
 		else
 			AddOwnExp(TEMBOSS_EXP)    --¸øÓèÒ»±¶µÄ¾­Ñé
 		end

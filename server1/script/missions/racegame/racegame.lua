@@ -23,15 +23,15 @@ racegame_tbMission.tbNpcList =
 
 racegame_tbMission.tbItemList = 
 {
-	{szName="¼ÓËÙÍè", tbProp={6, 1, 978, 1, 0, 0} },
-	{szName="À×ËÙÍè", tbProp={6, 1, 990, 1, 0, 0} },
-	{szName="ÐþÌìÏÝÚå", tbProp={6, 1, 982, 1, 0, 0} },
-	{szName="±ù·âÏÝÚå", tbProp={6, 1, 984, 1, 0, 0} },
-	{szName="Ñ£ÔÎÏÝÚå", tbProp={6, 1, 981, 1, 0, 0} },
-	{szName="Ëª½µÏÝÚå", tbProp={6, 1, 983, 1, 0, 0} },
-	{szName="±ùËªºÅ½Ç", tbProp={6, 1, 979, 1, 0, 0} },
-	{szName="±©À×ºÅ½Ç", tbProp={6, 1, 980, 1, 0, 0}},
-	{szName="¶ÜµØ·û", tbProp={6, 1, 987, 1, 0, 0} },
+	{szName="Gia Tèc hoµn", tbProp={6, 1, 978, 1, 0, 0} },
+	{szName="L«i Tèc hoµn", tbProp={6, 1, 990, 1, 0, 0} },
+	{szName="HuyÒn Thiªn H·m TÜnh", tbProp={6, 1, 982, 1, 0, 0} },
+	{szName="B¨ng Phong H·m TÜnh", tbProp={6, 1, 984, 1, 0, 0} },
+	{szName="HuyÔn Hu©n H·m TÜnh", tbProp={6, 1, 981, 1, 0, 0} },
+	{szName="S­¬ng Gi¸ng H·m TÜnh", tbProp={6, 1, 983, 1, 0, 0} },
+	{szName="B¨ng S­¬ng HiÖu gi¸c ", tbProp={6, 1, 979, 1, 0, 0} },
+	{szName="B¹o L«i HiÖu gi¸c", tbProp={6, 1, 980, 1, 0, 0}},
+	{szName="§én §Þa phï ", tbProp={6, 1, 987, 1, 0, 0} },
 }
 
 
@@ -103,7 +103,7 @@ function racegame_tbMission:OnPlayerJoin()
 	DisabledUseTownP(1);	--½ûÖ¹Ê¹ÓÃ»Ø³Ì£»
 	
 	local nTimerCount = GetMissionV(self.tbMissionV.SECOND_COUNTER)
-	local szMsg	= format("±ÈÈü¿ªÊ¼£¬Ê£ÓàÊ±¼äÎª<color=yellow>%d<color> Ãë.", self.nLatencyTime - nTimerCount)
+	local szMsg	= format("Cuéc ®ua b¾t ®Çu, thêi gian cßn l¹i lµ <color=yellow>%d<color> gi©y.", self.nLatencyTime - nTimerCount)
 	Msg2Player(szMsg)
 	return 1
 end
@@ -145,7 +145,7 @@ end
 
 function racegame_tbMission:OnClose()
 	gb_SetTask(self.G_TSK_NAME, self.MissionState, 0)
-	Msg2MSAll(self.nMissionId, "±ÈÈüÊ±¼äÒÑÓÃÍê£¬±ÈÈü½áÊø.")
+	Msg2MSAll(self.nMissionId, "Thêi gian ®ua ®· hÕt, cuéc ®ua kÕt thóc.")
 	self:ClearGoalNpc()
 	self:ClearItemNpc()
 	local nPlayerCount	= GetMSPlayerCount(self.nMissionId, 0)
@@ -202,7 +202,7 @@ end
 function racegame_tbMission:OnTimer()
 	local nTimerCount = GetMissionV(self.tbMissionV.SECOND_COUNTER)
 	nTimerCount = nTimerCount + 10
-	local szMsg	= format("Ê£ÓàÊ±¼äÎª<color=yellow>%d<color> Ãë.", self.nLatencyTime - nTimerCount)
+	local szMsg	= format("Thêi gian cßn l¹i lµ <color=yellow>%d<color> gi©y.", self.nLatencyTime - nTimerCount)
 	
 	if mod(nTimerCount, 100) == 10 then
 		self:AddItemNpc()

@@ -4,38 +4,38 @@ Include("\\script\\global\\station.lua")
 Include([[\script\tong\workshop\tongcolltask.lua]]);
 
 function main()
-	local tabContent = {"×ß¹ıµÄµØ·½/WayPointFun", "×ß¹ıµÄ³ÇÊĞ/want2station"};
+	local tabContent = {"Nh÷ng n¬i ®· ®i qua/WayPointFun", "Nh÷ng thµnh thŞ ®· ®i qua/want2station"};
 	if (GetMapType(SubWorld) == 1 and GetTask(TASK_LP_COUNT) ~= 0)then
 		local nTongID = GetMapParam(SubWorld, 0)
 		if (nTongID ~= 0)then
 			local _,b = GetTongName()
 			if (b ~= nTongID and TONG_GetTongMapBan(nTongID) == 1)then
-				tinsert(tabContent, "¹ó°ïÒÑ´ò¿ª°ï»á½ûµØ£¬Âé·³°ï´«´ï"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."·»×Ü¹Ü°ïÎÒ/chuanhua");
+				tinsert(tabContent, "Quİ bang ®· më cÊm ®Şa bang héi, phiÒn chuyÓn lêi ®Õn "..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."Ph­êng tæng qu¶n gióp ta/chuanhua");
 			end
 		end
 	end
 
-	tinsert(tabContent, "ÄÄÀï¶¼²»ÏëÈ¥!/OnCancel");
-	Say("<#>³µ·ò£º´óÏÀÏëÈ¥ÄÄÀï?", getn(tabContent), tabContent)
+	tinsert(tabContent, "§©u còng kh«ng muèn ®i!/OnCancel");
+	Say("<#>Xa phu: §¹i hiÖp muèn ®i ®©u?", getn(tabContent), tabContent)
 	
 end;
 
 function chuanhua()
-	Say("±¾°ï"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."×Ü¹ÜÕıÃ¦£¬ËùÒÔÖö¸ÀÎÒ´«»°¸øÄã£¬ÄãÏëÎÊÊ²Ã´?", 2, "ÎÊĞÅÏ¢/#rwlp_dedaojianshu(1, 1)", "Àë¿ª/OnCancel")
+	Say("Bæn bang"..tab_Workshop[GetTask(TASK_LP_ZONGGUANIDX)].."Tæng qu¶n ®ang bËn qu¸ nªn c¨n dÆn ta chuyÓn lêi ®Õn ®¹i hiÖp, ®¹i hiÖp muèn hái g×?", 2, "Hái tin tøc/#rwlp_dedaojianshu(1, 1)", "Rêi khái/OnCancel")
 end;
 
 function want2station()
-	Say("<#>´óÏÀÏëÈ¥ÄÄ: ",8, "·ïÏè [800 Á½]/#wlls_want2go(1)", "³É¶¼ [800 Á½]/#wlls_want2go(11)", "´óÀí [800 Á½]/#wlls_want2go(162)", "ãê¾©[800 Á½]/#wlls_want2go(37)", "ÏåÑô [800 Á½]/#wlls_want2go(78)", "ÑïÖİ [800 Á½]/#wlls_want2go(80)", "ÁÙ°² [800 Á½]/#wlls_want2go(176)", "ÄÄÀï¶¼²»ÏëÈ¥!/OnCancel")
+	Say("<#>§¹i hiÖp muèn ®i ®©u: ",8, "Ph­îng T­êng [800 l­îng]/#wlls_want2go(1)", "Thµnh §« [800 l­îng]/#wlls_want2go(11)", "§¹i Lı [800 l­îng]/#wlls_want2go(162)", "BiÖn Kinh [800 l­îng]/#wlls_want2go(37)", "T­¬ng D­¬ng [800 l­îng]/#wlls_want2go(78)", "D­¬ng Ch©u [800 l­îng]/#wlls_want2go(80)", "L©m An [800 l­îng]/#wlls_want2go(176)", "§©u còng kh«ng muèn ®i!/OnCancel")
 end
 
 tbCP_STATION = {
-	[1] = { {1557, 3112}, {1537, 3237}, {1649, 3287}, {1656, 3167}, "·ïÏè¸®" },
-	[11] = { {3193, 5192}, {3266, 5004}, {3011, 5101}, {3031, 4969}, "³É¶¼¸® " },
-	[37] = { {1598, 3000}, {1866, 2930}, {1701, 3224}, {1636, 3191}, "ãê¾©¸®" },
-	[78] = { {1592, 3377}, {1704, 3225}, {1508, 3147}, {1440, 3219}, "ÏåÑô¸®" },
-	[80] = { {1670, 2996}, {1598, 3201}, {1722, 3210}, {1834, 3063}, "ÑïÖİ¸®" },
-	[162] = { {1669, 3129}, {1696, 3280}, {1472, 3273}, "´óÀí¸®" },
-	[176] = { {1603, 2917}, {1692, 3296}, {1375, 3337}, {1356, 3017}, "ÁÙ°²¸®" }
+	[1] = { {1557, 3112}, {1537, 3237}, {1649, 3287}, {1656, 3167}, "Ph­îng T­êng Phñ " },
+	[11] = { {3193, 5192}, {3266, 5004}, {3011, 5101}, {3031, 4969}, "Thµnh §« Phñ " },
+	[37] = { {1598, 3000}, {1866, 2930}, {1701, 3224}, {1636, 3191}, "BiÖn Kinh Phñ " },
+	[78] = { {1592, 3377}, {1704, 3225}, {1508, 3147}, {1440, 3219}, "T­¬ng D­¬ng Phñ " },
+	[80] = { {1670, 2996}, {1598, 3201}, {1722, 3210}, {1834, 3063}, "D­¬ng Ch©u Phñ " },
+	[162] = { {1669, 3129}, {1696, 3280}, {1472, 3273}, "§¹i Lı" },
+	[176] = { {1603, 2917}, {1692, 3296}, {1375, 3337}, {1356, 3017}, "L©m An Phñ " }
 }
 
 function wlls_want2go(stationname)
@@ -44,11 +44,11 @@ function wlls_want2go(stationname)
 		return
 	end
 	if(GetCash() < 800) then
-		Say("³µ·ò: ´Ó°ï»áµ½¸÷´ó³ÇÊĞĞèÒª800 Á½, Ã»ÓĞ´øÂ··ÑÂğ?",0)
+		Say("Xa phu: Tõ bang héi ®Õn c¸c ®¹i thµnh thŞ cÇn cÇn 800 l­îng, kh«ng mang theo lé phİ sao?",0)
 	else
 		local count = getn(tbCP_STATION[stationname]) - 1
 		local randnum = random(count)
-		Msg2Player("×øºÃÁËÂğ£¿ÎÒÃÇ×ß¡£ "..tbCP_STATION[stationname][count+1])
+		Msg2Player("Ngåi yªn ch­a? Chóng ta ®i "..tbCP_STATION[stationname][count+1])
 		NewWorld(stationname, tbCP_STATION[stationname][randnum][1], tbCP_STATION[stationname][randnum][2])
 		SetFightState(0)
 		SetPunish(1)

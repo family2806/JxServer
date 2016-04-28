@@ -8,20 +8,20 @@ function main()
 	end
 	UTask_gb = GetTask(8)
 	if (UTask_gb == 30*256+10) then		--30¼¶ÈÎÎñ¿ªÊ¼
-		Talk(3,"","ÕÔ¶æÖ÷£¬ÂŞ³¤ÀÏÅÉÎÒÀ´ÁË½âÒ»ÏÂÕâ¸öÔÂµÄÎÄÊéÎªÊ²Ã´³Ù³ÙÃ»ÓĞÉÏ½»!","ÄãÓĞËù²»Öª£¬×î½ü³öÁËÒ»¼ş¹ÖÊÂ£¬±¾¶æµÜ×Ó¾­³£»áÈ¥³ÇÎ÷±±µÄÊñ¸ÔÉ½´òµãÄñÊŞ£¬µ«ÊÇÕâ¼¸ÈÕÓĞºÃ¼¸ÅúÈ¥´òÁÔµÄµÜ×Ó¶¼Ê§×ÙÁË£¬Ç°ÍùÑ°ÕÒµÄµÜ×ÓÒ²Ò»È¥²»»Ø","ÓĞÕâÊÂ£¿µÜ×Ó½«È¥Ò»ÌËÊñ¸ÚÉ½!")
+		Talk(3,"","TriÖu §µ chñ! La tr­ëng l·o b¶o ®Ö tö ®Õn hái nguyªn nh©n t¹i sao trÔ hÑn!","Lµ v× gÇn ®©y n¬i ®©y x¶y ra nhiÒu chuyÖn l¹ kú. §Ö tö bæn tr¹i ®Õn Thôc C­¬ng s¬n s¨n b¾n ®Òu kh«ng thÊy trë vÒ! H×nh nh­ trªn ®ã cã ma quû ","Cã chuyÖn nµy sao? §Ö tö sÏ lªn Thôc C­¬ng s¬n mét chuyÕn!")
 		SetTask(8,30*256+20)
-		AddNote("ÕÔ¶æÖ÷¸æËßÄãÔÚÊñ¸ÚÉ½ÓĞµÜ×ÓÊ§×Ù£¬Äã¾ö¶¨È¥µ÷²é")
-		Msg2Player("ÕÔ¶æÖ÷¸æËßÄãÔÚÊñ¸ÚÉ½ÓĞµÜ×ÓÊ§×Ù£¬Äã¾ö¶¨È¥µ÷²é")
+		AddNote("TriÖu ®µ chñ nãi cho b¹n biÕt t¹i Thôc C­¬ng s¬n cã ®Ö tö mÊt tİch, b¹n quyÕt ®Şnh ®i ®iÒu tra ")
+		Msg2Player("TriÖu ®µ chñ nãi cho b¹n biÕt t¹i Thôc C­¬ng s¬n cã ®Ö tö mÊt tİch, b¹n quyÕt ®Şnh ®i ®iÒu tra ")
 	elseif (UTask_gb == 30*256+30) then		--30¼¶ÈÎÎñ½áÊø
-		Talk(3,"","ÕÔ¶æÖ÷£¬ÆäÊµÊñ¸ÔÉ½Àï¸ù±¾Ã»ÓĞÊ²Ã´¹í¹Ö£¬ÄÇĞ©Ê§×ÙµÄĞÖµÜÖ»²»¹ıÊÇ±»½ğ±ø×¥ÆğÀ´ÁË£¬ÎÒÒÑ¾­¾È³öÁËËùÓĞµÄÍ¬ÃÅ","Ô­À´Èç´Ë£¬ÄãÄê¼ÍÇáÇá£¬µ¹ÊÇÓĞÓÂÓĞÄ±£¬Ç°Í¾²»¿ÉÏŞÁ¿°¡£¬Åå·ş!","Õâ·âÎÄÊéÂé·³ÄãÌæÎÒ½»¸øÃÏ³¤ÀÏ£¬ÎÒÒÑ¾­ÔÚÆäÖĞĞ´Ã÷ÁËÊÂÇéµÄÇ°Òòºó¹û£¬ËûÒ»¿´×Ô»áÃ÷ÁË!")
+		Talk(3,"","TriÖu §µ chñ! Kú thùc kh«ng cã ma quû! Mµ lµ bän s¸t thñ Kim quèc ®· phuc ë ®Êy b¾t tÊt c¶ ®Ö tö C¸i bang. T¹i hä ®· cøu ®­îc hä vÒ!","Nguyªn do lµ vËy! Ng­¬i cßn trÎ mµ b¶n lÜnh cao c­êng! Béi phôc!","PhiÒn ng­¬i mang van th­ nµy vÒ cho la t­ëng l·o, trong ®ã ta ®· tr×nh tÊu rÊt chi tiÕt!")
 		SetTask(8,30*256+40)
 		AddEventItem(81)
-		AddNote("¾ÈµÃ±»×¥µÜ×Ó£¬¸æËßÕÔ¶æÖ÷ÊµÇé£¬»ñµÃÎÄÊé ")
-		Msg2Player("¾ÈµÃ±»×¥µÜ×Ó£¬¸æËßÕÔ¶æÖ÷ÊµÇé£¬»ñµÃÎÄÊé")
+		AddNote("Cøu ®­îc c¸c ®Ö tö bŞ b¾t, nãi sù t×nh cho TriÖu §µ chñ, nhËn ®­îc v¨n th­ ")
+		Msg2Player("Cøu ®­îc c¸c ®Ö tö bŞ b¾t, nãi sù t×nh cho TriÖu §µ chñ, nhËn ®­îc v¨n th­ ")
 	elseif ((UTask_gb == 30*256+40) and (HaveItem(81) == 0)) then		-- ÈÎÎñÖĞ£¬µÀ¾ß¶ªÁË
-		Talk(1,"","¶ªÁË°¡£¿¿àÁËÎÒ£¬ÓÖÒªĞ´Ò»±é!")
+		Talk(1,"","MÊt råi µ! Khæ th©n ta l¹i ph¶i viÕt mét quyÓn kh¸c!")
 		AddEventItem(81)
 	else
-		Talk(1,"","½ğ±øºú×÷·ÇÎª£¬¿´À´ÑïÖİ²»°²ÄşÁË!")
+		Talk(1,"","Kim binh ngµy mét léng hµnh. Xem ra D­¬ng Ch©u ®· kh«ng thÓ b×nh yªn n÷a råi!")
 	end
 end;

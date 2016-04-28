@@ -15,10 +15,10 @@ function main()
 	Y1 = floor(BT_GetData(PL_PARAM2) /(32*16))
 
 	if (X1 == 0 or Y1 == 0) then
-		Msg2Player("ÄãÄ¿Ç°Ã»ÓĞ¶áµ½Æì£¬ËùÒÔÎŞ·¨Ê¹ÓÃÆì±ê£¡")--??Ã»ÓĞÊ¹ÓÃÆì±êµÄÌáÊ¾ĞÅÏ¢
+		Msg2Player("B¹n hiÖn ch­a ®o¹t cê, kh«ng thÓ sö dông Cê hiÖu!")--??Ã»ÓĞÊ¹ÓÃÆì±êµÄÌáÊ¾ĞÅÏ¢
 		return 1
 	end
-	strmsg = "ÄãĞèÒª½«Ë§ÆìÔËËÍµ½<color=yellow>"..X1.."£¬"..Y1.."<color>";
+	strmsg = "B¹n cÇn ph¶i chuyÓn So¸i kú ®Õn <color=yellow>"..X1..","..Y1.."<color>";
 	Dist=floor(sqrt((X-X1)*(X-X1)+(Y-Y1)*(Y-Y1)));
 	
 	if(Dist>=InDist) then
@@ -44,7 +44,7 @@ function main()
 		else
 			SetMissionV(MS_TOTALFLAG_J, GetMissionV(MS_TOTALFLAG_J) + 1)
 		end
-		--Èç¹ûÊÇ¹Ì¶¨Ä£Ê½Ê±£¬½«×Ô¶¯Éú³ÉÏÂÒ»¸öÆì
+		--Èç¹ûÊÇ¹Ì¶¨Ä£Ê½Ê±,½«×Ô¶¯Éú³ÉÏÂÒ»¸öÆì
 		if (GetMissionV(MS_FLAGMODE) == 1) then
 			if (GetCurCamp() == 1 and  GetMissionV(MS_TOTALFLAG_S) < TOTALFLAG_FIX) then
 				sf_createflag(GetCurCamp(), BT_GetGameData(GAME_CAMP1AREA), BT_GetGameData(GAME_CAMP2AREA))
@@ -56,9 +56,9 @@ function main()
 
 
 		RestoreOwnFeature();
-		AddSkillState(460, 1, 0, 0 ) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
+		AddSkillState(460, 1, 0, 0 ) --ÑÕÉ«¹â»·,·Ö±çµĞÎÒ
 		AddSkillState(656, 30, 0, 0) --½µÍæ¼ÒµÄËÙ¶È
-		AddSkillState(461, 1, 0, 0) --ÑÕÉ«¹â»·£¬·Ö±çµĞÎÒ
+		AddSkillState(461, 1, 0, 0) --ÑÕÉ«¹â»·,·Ö±çµĞÎÒ
 		
 		OldPlayer = PlayerIndex
 		
@@ -66,8 +66,8 @@ function main()
 		
 		if (GetCurCamp()==1) then
 			sf_setflagplayer(1, 0)
-			Msg2MSAll(MISSIONID, "ËÎ·½<color=yellow>"..GetName().."<color>³É¹¦ËÍ»ØÒ»ÃæË§Æì");--×óÏÂ½ÇµÄ¼´Ê±Õ½¿ö£º"GetCamp·½Íæ¼ÒGetName()³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ£¡"
-			Msg2MSAll(MISSIONID, "ËÎ·½Ã¿ÈË»ñµÃ¶îÍâµÄ<color=yellow>"..award_snapflag.."<color>µã»ı·Ö½±Àø");
+			Msg2MSAll(MISSIONID, "phe Tèng <color=yellow>"..GetName().."<color> ®· chuyÓn thµnh c«ng 1 So¸i Kú ");--×óÏÂ½ÇµÄ¼´Ê±Õ½¿ö£º"GetCamp·½Íæ¼ÒGetName()³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ£¡"
+			Msg2MSAll(MISSIONID, "phe Tèng mçi ng­êi nhËn ®­îc <color=yellow>"..award_snapflag.."<color> ®iÓm tİch lòy");
 			local idx = 0;
 			for i = 1 , 500 do 
 				idx, pidx = GetNextPlayer(MISSIONID,idx, 1);
@@ -82,8 +82,8 @@ function main()
 			end 
 		else
 			sf_setflagplayer(2, 0)
-			Msg2MSAll(MISSIONID, "½ğ·½<color=yellow>"..GetName().."<color>³É¹¦ËÍ»ØÒ»ÃæË§Æì");--×óÏÂ½ÇµÄ¼´Ê±Õ½¿ö£º"GetCamp·½Íæ¼ÒGetName()³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ£¡"
-			Msg2MSAll(MISSIONID, "½ğ·½Ã¿ÈË»ñµÃ¶îÍâµÄ<color=yellow>"..award_snapflag.."<color>µã»ı·Ö½±Àø");
+			Msg2MSAll(MISSIONID, "phe Kim<color=yellow>"..GetName().."<color> ®· chuyÓn thµnh c«ng 1 So¸i Kú ");--×óÏÂ½ÇµÄ¼´Ê±Õ½¿ö£º"GetCamp·½Íæ¼ÒGetName()³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ£¡"
+			Msg2MSAll(MISSIONID, "phe Kim mçi ng­êi nhËn ®­îc <color=yellow>"..award_snapflag.."<color> ®iÓm tİch lòy");
 			local idx = 0;
 			for i = 1 , 500 do 
 				idx, pidx = GetNextPlayer(MISSIONID,idx, 2);
@@ -103,7 +103,7 @@ function main()
 		BT_SetData(PL_PARAM1 ,0)
 		BT_SetData(PL_PARAM2, 0)
 		ST_SyncMiniMapObj(-1, -1);
-		--ÏµÍ³Í¨¸æ£ºX·½£¨¸ÃÍæ¼ÒËùÔÚ·½£©XX£¨Íæ¼ÒÃû£©³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ£¬Ä¿Ç°X£¨¸ÃÍæ¼ÒËùÔÚ·½£©·½¶áµÃµÄË§ÆìÊıÁ¿Îª£ºXX¡£
+		--ÏµÍ³Í¨¸æ£ºX·½£¨¸ÃÍæ¼ÒËùÔÚ·½£©XX£¨Íæ¼ÒÃû£©³É¹¦ÔËËÍË§Æìµ½´ïÄ¿µÄµØ,Ä¿Ç°X£¨¸ÃÍæ¼ÒËùÔÚ·½£©·½¶áµÃµÄË§ÆìÊıÁ¿Îª£ºXX¡£
 		return 0
 	end
 end

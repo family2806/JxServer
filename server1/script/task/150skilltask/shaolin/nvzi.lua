@@ -9,7 +9,7 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>ÎÒÊÇÉ½ÏÂÅ®×Ó"
-	G_TASK:OnMessage("ÉÙÁÖ", tbDailog, "DialogWithNpc")
+	tbDailog.szTitleMsg = "<#><npc>Ta lµ S¬n H¹ N÷ Tö"
+	G_TASK:OnMessage("ThiÕu L©m", tbDailog, "DialogWithNpc")
 	tbDailog:Show() 
 end

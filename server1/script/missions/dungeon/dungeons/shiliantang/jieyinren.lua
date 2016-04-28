@@ -12,11 +12,11 @@ function main()
 	end
 
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<#><npc>ÄãºÃ£¬´óÏÀ¡£Äã¿ÉÒÔ²Î¼ÓÊÔÁ¶£¬ÓĞ±¾ÃÅµÄÊÔÁ¶¿¨ÁËÂğ?"
+	tbDailog.szTitleMsg = "<#><npc>Xin chµo vŞ ®¹i hiÖp, ng­¬i cã thÓ tham gia thİ luyÖn, ®· cã thİ luyÖn thiÕp cña bæn minh ch­a?"
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 	
-	tbDailog:AddOptEntry("ÊÇµÄ£¬Çë´óÈË´øÎÒ½øÈ¥.",enter_shiliantang)
+	tbDailog:AddOptEntry("Chİnh x¸c, xin ®¹i nh©n h·y dÉn ta vµo.",enter_shiliantang)
 	
 	--µ¯³ö¶Ô»°¿ò
 	tbDailog:Show()
@@ -26,17 +26,17 @@ function enter_shiliantang_callback(nPlayerIndex, tbDungeonData, bSaved)
 	local nOldPlayer = PlayerIndex;
 	PlayerIndex = nPlayerIndex;
 	if (tbDungeonData == nil) then
-		if (PlayerFunLib:CheckItemInBag("return {tbProp={6,1,2317,-1,-1,0},}", 1, "±¾´ÎÑ¡Ôñ·Ç³£ÖØÒª£¬Çë³öÊ¾ÊÔÁ¶¿¨²ÅÄÜ²Î¼Ó.") ~= 1) then
+		if (PlayerFunLib:CheckItemInBag("return {tbProp={6,1,2317,-1,-1,0},}", 1, "LÇn tuyÓn chän nµy cùc kú quan träng, xin h·y xuÊt tr×nh thİ luyÖn thiÕp míi cã thÓ tham gia") ~= 1) then
 			return
 		end
 	end
 	
-	tbDungeonManager:OpenDungeon("ÊÔÁ¶ÌÃ");
+	tbDungeonManager:OpenDungeon("Thİ LuyÖn §­êng");
 			
 	PlayerIndex = nOldPlayer;
 end
 function enter_shiliantang()
-	local tbDungeon = tbDungeonManager:GetMineDungeon("ÊÔÁ¶ÌÃ", 1);
+	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon == nil) then
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CheckExist", {925, GetName()},
 			"\\script\\missions\\dungeon\\dungeons\\shiliantang\\jieyinren.lua", "enter_shiliantang_callback", {PlayerIndex});

@@ -53,27 +53,27 @@ end
 
 function GetReputeStr(Repute_Level)
 	if (Repute_Level == 1) then
-		Repute_title = "³õ³ö½­ºş"
+		Repute_title = " s¬ xuÊt giang hå "
 	elseif (Repute_Level == 2) then
-		Repute_title = "ÎŞÃûĞ¡±²"
+		Repute_title = " v« danh tiÓu bèi "
 	elseif (Repute_Level == 3) then
-		Repute_title = "Ä¬Ä¬ÎŞÎÅ"
+		Repute_title = " yªn lÆng kh«ng nghe thÊy "
 	elseif (Repute_Level == 4) then
-		Repute_title = "³õÏÔ·æÃ¢"
+		Repute_title = " s¬ hiÓn phong mang "
 	elseif (Repute_Level == 5) then
-		Repute_title = "Ğ¡ÓĞÃûÆø"
+		Repute_title = " cã chót danh tiÕng "
 	elseif (Repute_Level == 6) then
-		Repute_title = "ÃûÍ·ÏìÁÁ"
+		Repute_title = " danh tiÕng vang déi "
 	elseif (Repute_Level == 7) then
-		Repute_title = "ÍşÕòÒ»·½"
+		Repute_title = " uy trÊn nhÊt ph­¬ng "
 	elseif (Repute_Level == 8) then
-		Repute_title = "°ÁÊÓÈºĞÛ"
+		Repute_title = " ng¹o thŞ quÇn hïng "
 	elseif (Repute_Level == 9) then
-		Repute_title = "Ò»´ú×ÚÊ¦"
+		Repute_title = " mét ®¹i t«ng s­ "
 	elseif (Repute_Level == 10) then
-		Repute_title = "Ğ¦°Á½­ºş"
+		Repute_title = " tiÕu ng¹o giang hå "
 	else
-		Repute_title = "Æ½Ãñ°ÙĞÕ"
+		Repute_title = " b×nh d©n b¸ch tİnh "
 	end
 	return Repute_title
 end

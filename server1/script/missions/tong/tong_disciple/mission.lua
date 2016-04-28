@@ -28,7 +28,7 @@ function EndMission()
 	end;
 	clearfairy();	--Çå³ı³¡µØÄÚËùÓĞµÄ¹Ö
 	gameover(DIS_MAPID[2], DIS_MISSIONID);	--½«ËùÓĞÍæ¼ÒÇå³ı³öµØÍ¼
-	strGlbNews = "ÕĞÄ¼µÜ×ÓµÄÈËÊ¿ÒÑ¾­»ØÀ´ÁË£¬¸÷Î»ÄêÇáÇ¿×³µÄµÜ×ÓÈÃ´ó¼ÒÓÖÏëµ½ÁË×Ô¼ºÓ¢ÓÂµÄ¹ıÈ¥£¬Ò²Îª°ï»áµÄÎ´À´¶ø¸ßĞË."
+	strGlbNews = "Nh÷ng nh©n sü ®i chiªu mé ®Ö tö ®· quay trë vÒ, c¸c ®Ö tö trÎ trung c­êng tr¸ng lµm mäi ng­êi nhí l¹i qu¸ khø hµo hïng cña m×nh, vµ còng mõng cho t­¬ng lai cña bang héi."
 	AddGlobalNews(strGlbNews);
 
 	StopMissionTimer(DIS_MISSIONID, DIS_SMALLTIMERID);
@@ -41,7 +41,7 @@ function OnLeave()
 	SetLogoutRV(0);
 end
 
---ÅÅĞòº¯Êı(¸ù¾İµã»÷¸öÊıÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃû´Î)£»
+--ÅÅĞòº¯Êı(¸ù¾İµã»÷c¸iÊıÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃû´Î)£»
 function groupsort(nGroupId)
 	local OldSubWorld = SubWorld;
 	SubWorld = SubWorldID2Idx(DIS_MAPID[2]);
@@ -70,7 +70,7 @@ function groupsort(nGroupId)
 	local j;
 	local temptab = {};
 	local nCount = getn(tabPlayer);
-	for i = 2, nCount do	--²ÉÓÃÒ»¸öÃ°ÅİÅÅĞò
+	for i = 2, nCount do	--²ÉÓÃÒ»c¸iÃ°ÅİÅÅĞò
 		for j = nCount, i, -1 do
 			if (tabPlayer[j][2] > tabPlayer[j - 1][2]) then	--²ÉÓÃ½µĞòÅÅĞò
 				temptab = tabPlayer[j];
@@ -87,7 +87,7 @@ function groupsort(nGroupId)
 	for i=1,nRankCount do
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
-			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", ÕĞÄ¼µ½"..tabPlayer[i][2].."¸ö"..DIS_MOUSENAME
+			szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", chiªu mé ®­îc "..tabPlayer[i][2].."c¸i"..DIS_MOUSENAME
 		end
 	end
 	--ÅÅĞòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
@@ -97,7 +97,7 @@ function groupsort(nGroupId)
 		if (szMsg ~= nil and szMsg ~= "") then
 			Msg2Player(szMsg)
 		end
-		Msg2Player("ÄãÅÅÃûµÚ<color=yellow>"..i.."<color>, ¿ÉÒÔÀ´¼û<color=yellow>»î¶¯·»×Ü¹Ü<color> Áì½±!");
+		Msg2Player("B¹n xÕp h¹ng thø <color=yellow>"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
 	end;
 	
 	PlayerIndex = OldPlayer;

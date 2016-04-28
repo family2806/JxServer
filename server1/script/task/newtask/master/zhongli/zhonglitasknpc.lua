@@ -15,48 +15,48 @@ function funanbing()
 	local name = GetName()  
 	if ( Uworld1002 == 10 ) or ( Uworld1002 == 20 )then 
 		nt_setTask(1002,20)
-		Describe(name.."<#>£ºÄãÊÇ"..DescLink_FuNanBin.."£¿<enter>¸µÄÏ±ù£ºÃ»´í¡£<enter>"
-				..name.."<#>£ºÎÒÊÇÎåÒ¯½éÉÜÀ´µÄÈË£¬ÕâÀïÓĞËûµÄÇ×±ÊÊéĞÅ¡£ <enter>¸µÄÏ±ù£ºÄãÉ±¹ıÈËÂğ? <enter>"
-				..name.."<#>£º¡­¡­Ã»ÓĞ¡£<enter>¸µÄÏ±ù£ºÄÇÄãÆ¾Ê²Ã´½øÁÙÔ¨ÑÂ¡£Îå¸çµÄĞÅ¿ÉÒÔÒı¼ö£¬µ£±£»¹²»³É¡£ <enter>"
-				..name.."<#>£ºËµÄãµÄÌõ¼ş¡£ <enter>¸µÄÏ±ù£ºÉ±ÈË£¬É±Ò»¸öÄÑÉ±µÄÈË¡£ <enter>"
-				..name.."<#>£ºË­£¿<enter>¸µÄÏ±ù£ºÄş½«¾ü¡£<enter>"
-				..name.."<#>£ºÄÄ¸öÄş½«¾ü¡£ <enter>¸µÄÏ±ù£ºÄÏËÎ´ó½«£¬Í¨µĞÅÑ¹ú£¬×ï²»¿ÉÉâ¡£ <enter>"
-				..name.."<#>£º¸ÃÉ±¡£<enter>¸µÄÏ±ù£ºËû½üÀ´ÔÚÂŞÏüÉ½Ò»´øÓÎÍæ£¬¹À¼Æ²»³ö¼¸ÈÕ¾ÍÒª»ØÓª¡£ÈôµÈËû»ØÈ¥ÖĞ¾ü´óÕÊ£¬Òª½üÉí¶¼½«Íò·ÖÀ§ÄÑ¡£ÄãÈ¥É±ÁËËû£¬²ÅÄÜÈëÎÒÉ½ÑÂ¡£ <enter>"
-				..name.."<#>£ººÃ¡£<enter>",1,"½áÊø¶Ô»°/middlefinish1")
+		Describe(name.."<#>: ¤ng lµ "..DescLink_FuNanBin.."?<enter> Kh«ng sai.<enter>"
+				..name.."<#>: Ngò Gia ph¸i ta ®Õn, ë ®©y cã th­ cã bót tİch cña «ng ta. <enter> Ng­¬i ®· tõng giÕt ng­êi ch­a? <enter>"
+				..name.."<#>:......Ch­a tõng.<enter> ThÕ ng­¬i dùa vµo c¸i g× mµ vµo L©m Uyªn Nhai. Th­ tiÕn cö cña Ngò Ca ch¾c kh«ng ®ñ. <enter>"
+				..name.."<#>: Nãi ®iÒu kiÖn cña «ng xem. <enter> GiÕt ng­êi! GiÕt mét ng­êi khã giÕt. <enter>"
+				..name.."<#>: Lµ ai?<enter> Ninh T­íng Qu©n.<enter>"
+				..name.."<#>: Ninh T­íng Qu©n lµ ai? <enter> §¹i t­íng Nam Tèng, th«ng ®Şch ph¶n quèc, téi kh«ng thÓ tha. <enter>"
+				..name.."<#>: §¸ng chÕt! <enter> H¾n gÇn ®©y du ngo¹n ë La Tiªu S¬n, kh«ng biÕt bao giê vÒ Doanh tr¹i. §îi ®Õn h¾n vÒ trong qu©n doanh th× rÊt khã kh¨n. Ng­¬i chØ cã mét c¬ héi duy nhÊt nµy th«i. <enter>"
+				..name.."<#>: §­îc.<enter>",1,"KÕt thóc ®èi tho¹i/middlefinish1")
 	elseif ( Uworld1002 == 40 ) or ( Uworld1002 == 50 ) then
 		nt_setTask(1002,50)
-		Describe(name.."<#>£ºËûËÀÁË¡£ <enter>"..DescLink_FuNanBin.."<#>£ºÎÒÒÑÊÕµ½ÏûÏ¢£¬ÊÇÎÒĞ¡¿´ÁËÄã£¬"
-				..name.."<#>¡£ <enter>"..name.."<#>£ºÎŞËùÎ½¡£<enter>¸µÄÏ±ù£º½ñºóÓĞÂòÂôÎÒ»áÔÙÁªÏµÄã¡£Ã»ÓĞÂòÂôµÄÊ±ºòÄã²»·ÁÈ¥ÁÙ°²ÕÒÒ»¸ö½ĞÁøÄÏÔÆµÄÈË£¬Ëû»á¸øÄãĞ©ÈÎÎñ£¬×ÔÈ»¶¼ÊÇÓĞ·áºñ³êÀÍµÄ¡£ <enter>"
-				..name.."<#>£ºÎÒÖªµÀÁË¡£ <enter>",1,"½áÊø¶Ô»°/middlefinish2")
+		Describe(name.."<#>: H¾n chÕt råi. <enter>"..DescLink_FuNanBin.."<#>: Ta biÕt råi, ta ®· xem th­êng ng­¬i. "
+				..name.."<#>. <enter>"..name.."<#>: Kh«ng sao. <enter> Sau nµy cã viÖc ta sÏ t×m ng­¬i. Ng­¬i h·y ®i L©m An t×m LiÔu Nam V©n, y sÏ giao nhiÖm vô cho ng­¬i. <enter>"
+				..name.."<#>: ta biÕt råi. <enter>",1,"KÕt thóc ®èi tho¹i/middlefinish2")
 	elseif (( Uworld1002 == 60 ) or ( Uworld1002 == 70 )) and ( GetLevel() >= 30 ) then
-		Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+		Talk(1,"middletask","Cè g¾ng lªn")
 	elseif ( Uworld1002 == 90 ) or ( Uworld1002 == 100 ) then
 		nt_setTask(1002,100)
-		Describe(name.."<#>£ºËûËÀÁË¡£ <enter>"..DescLink_FuNanBin.."<#>£ºÄã¾¹ÕæµÄ°ÑÂ¬ÉÆÏñ¸øÉ±ÁË¡£ <enter>"
-				..name.."<#>£ºËû²»ÈçÎÒ£¬ËùÒÔËûËÀÁË¡£ <enter>¸µÄÏ±ù£ººÃ°É£¬ÕâÊÇÉÏÃæ´«ÏÂÀ´µÄÉÍ¸ñ£¬ÄÃÈ¥¡£ <enter>"
-				..name.."<#>£º¶àĞ»¡£<enter>¸µÄÏ±ù£º²»Ğ»£¬ÄãµÄÄÜÁ¦ÎÒÇå³şÁË¡£É½ÑÂÓĞ¸ö´ó¼Æ»®£¬ÎÒÏ£ÍûÄãÄÜ²ÎÓë½øÀ´¡£ <enter>"
-				..name.."<#>£ºÊÇÊ²Ã´¼Æ»®£¿ <enter>¸µÄÏ±ù£ºÄ¿Ç°»¹Ã»ÓĞ¿¼ÂÇÍ×µ±£¬µ½ÊÊµ±µÄÊ±ºò£¬ÎÒ»á¸æËßÄã¡£ <enter>"
-				..name.."<#>£ºÎÒÖ»Ï£ÍûÄã²»ÒªÆ­ÎÒ¡£ <enter>¸µÄÏ±ù£ºÏÖÔÚµÄÊÀµÀÊÇÊ²Ã´Ñù×Ó£¿¼¢»Ä±éÒ°£¬Ê¬Ê×Ïà¼®£¬¸¸Ä¸Ò××Ó¶øÊ³£¬ÃñÖÚĞ¥ÆğÉ½ÁÖ£¬ÕâÑùµÄÌìÏÂÒÑ²»ÊÇÌìÏÂÈËµÄÌìÏÂ¡£Èç¹ûÎÒÃÇµÄ¼Æ»®³É¹¦£¬ÊÀ¼ä½«¾Í´Ë²»Í¬¡£ÎÒÃÇÔÚµÈ´ıÒ»¸öÆõ»ú£¬Ò»µ©³öÏÖ£¬ÎÒ»áÁ¢¿ÌÍ¨ÖªÄã¡£ <enter>"
-				..name.."<#>£ººÃ¡£<enter>",1,"½áÊø¶Ô»°/middlefinish3") 
+		Describe(name.."<#>: H¾n chÕt råi. <enter>"..DescLink_FuNanBin.."<#>: Ta ®· giÕt ®­îc L­ ThiÖn T­îng. <enter>"
+				..name.."<#>: H¾n kh«ng nh­ ng­¬i, cho nªn h¾n chÕt. <enter> §­îc, ®©y lµ phÇn th­ëng cña ng­¬i, cÇm ®i. <enter>"
+				..name.."<#>: C¸m ¬n.<enter> Ta ®· thÊy râ n¨ng lùc. S¬n tr¹i cã mét kÕ ho¹ch lín, ta hy väng ng­¬i tham gia. <enter>"
+				..name.."<#>:  lµ kÕ ho¹ch g×? <enter> HiÖn vÉn ®ang thu xÕp, ®Õn lóc ta sÏ b¸o cho ng­¬i. <enter>"
+				..name.."<#>: Ta chØ hy väng ng­¬i kh«ng g¹t ta. <enter> Cã tin g× ta sÏ b¸o cho ng­¬i. <enter>"
+				..name.."<#>: §­îc.<enter>",1,"KÕt thóc ®èi tho¹i/middlefinish3") 
 	elseif (( Uworld1002 == 110 ) or ( Uworld1002 == 120 )) and ( GetLevel() >= 40 ) then
-		Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+		Talk(1,"middletask","Cè g¾ng lªn")
 	elseif (( Uworld1002 == 180 ) or ( Uworld1002 == 190 )) and ( GetLevel() >= 50 ) then
-		Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+		Talk(1,"middletask","Cè g¾ng lªn")
 	elseif ( Uworld1002 == 180 ) then
-		Talk(1,"no","¸ÉµÃºÃ£¬ÏÈÈ¥½­ºşÉÏÀúÁ·ÀúÁ·°É£¬ÒÔºóÎÒ»áÔÙÕÒÄã¡£")
+		Talk(1,"no","Lµm tèt l¾m, giê h·y tiÕp tôc luyÖn c«ng, sau nµy sÏ t×m ng­¬i.")
 	elseif ( Uworld1002 == 220 ) or ( Uworld1002 == 230 ) then
 		nt_setTask(1002,230)
-		Describe(DescLink_FuNanBin.."<#>£º³É¹¦ÁË£¿ÎÒ¾ÍÖªµÀÄã»á³É¹¦µÄ¡£",1,"½áÊø¶Ô»°/middlefinish7")
+		Describe(DescLink_FuNanBin.."<#>: Thµnh c«ng råi?  Ta còng biÕt ng­¬i sÏ thµnh c«ng.",1,"KÕt thóc ®èi tho¹i/middlefinish7")
 	elseif (( Uworld1002 == 240 ) or ( Uworld1002 == 250 )) and ( GetLevel() >= 60 ) then
-		Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+		Talk(1,"middletask","Cè g¾ng lªn")
 	elseif ( Uworld1002 == 290 ) or ( Uworld1002 == 300 ) then
 		nt_setTask(1002,300)
-		Describe(DescLink_FuNanBin.."<#>£ºÔõÑù£¬µÃÊÖÁËÂğ¡£ <enter>"
-			..name.."<#>£º¶«Î÷¶¼ÔÚÕâÀï¡£ <enter>¸µÄÏ±ù£ºÌ«ºÃÁË£¡ÎÒ¾ÍÖªµÀÄãÒ»¶¨ÄÜ³É¹¦¡£ <enter>"
-			..name.."<#>£º¡­¡­ÁúÆ÷Æë¼¯£¬ÕæÄÜ¸Ä±äÌìÏÂ²ÔÉúÃüÔËÂğ£¿ <enter>¸µÄÏ±ù£ºÔõÃ´ÓĞ´ËÒ»ÎÊ£¿ <enter>"
-			..name.."<#>£ºÎÒ¡­¡­ÎÒĞÄÀïÓĞĞ©ÒÉÎÊ¡£ <enter>¸µÄÏ±ù£º°¥£¬ÎÒÒ²²»ÖªµÀ¡£ÎÒÖ»ÌıËµ¡®Ê®Áú¾ÛÊ×£¬ÌìÏÂÊ¼¶¨£¬¶ÏÆä×µ¹Ç£¬ĞÂÖ÷³öÊÀ¡¯¡£ <enter>¸µÄÏ±ù£ººÃÁË£¬Ò»¶ÎÊ±¼äÄÚ¿ÉÄÜ²»»áÔÙÕÒÄã¡£»ªÉ½ÅÉÓĞĞ©ÊÂÇéĞèÒªÎÒÈ¥´¦Àí£¬Õâ¶ÎÊ±¼äÄãµÄ¹¦¼¨ÎÒ¶¼ÉÏ±¨ÁË£¬ÒÔºóÉÙ²»ÁË¶àÓĞÒĞÖØ£¬ÄãÇÒ»ØÎåÒ¯´¦ÁìÈ¡ÉÍ¸ñ°É¡£ÔÙ»áÁË¡£ <enter>",1,"½áÊø¶Ô»°/middlefinish9")
+		Describe(DescLink_FuNanBin.."<#>: ThÕ nµo? <enter>"
+			..name.."<#>: Mäi thø ë ®©y. <enter> Tèt qu¸! Ta còng biÕt ng­¬i nhÊt ®Şnh sÏ thµnh c«ng. <enter>"
+			..name.."<#>:......Long Khİ cã ®ñ, cã thÓ thay ®æi vËn mÖnh Thiªn h¹ sao? <enter> T¹i sao l¹i hái vËy? <enter>"
+			..name.."<#>: Ta......Lßng ta cã chót nghi vÊn. <enter> Ta còng kh«ng biÕt. Ta chØ nghe qua 'ThËp Long Tô Thñ, Thiªn H¹ Khëi §Şnh, §o¹n Kú Chóy Cèt, T©n Chñ XuÊt HiÖn'. <enter> §­îc! Trong thêi gian nµy cã thÓ ta sÏ kh«ng t×m ng­¬i. Hoa S¬n ph¸i ®ang cã mét sè vÊn ®Ò cÇn ng­êi gióp ®ì, ng­¬i h·y ®Õn ®ã ®i. Vµ nhí quay vÒ t×m Long Ngò lÜnh th­ëng. <enter>",1,"KÕt thóc ®èi tho¹i/middlefinish9")
 	else
-		Describe(DescLink_FuNanBin.."<#>:½­ºşÏÕ¶ñ£¬µ±ÄêÒ»¿é³öÀ´µÄÊ®Èı¸öµÜĞÖ£¬ÏÖÔÚÒ²Ö»ÓĞÎÒÁË¡£",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_FuNanBin.."<#>: Giang hå hiÓm ¸c, m­êi ba huynh ®Ö giê chØ cßn m×nh ta.",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -66,22 +66,22 @@ function liqiushui()
 	local name = GetName()  
 	if ( Uworld1002 == 130 ) or ( Uworld1002 == 140 ) then
 		nt_setTask(1002,140)
-		Describe(DescLink_LiQiuShui.."<#>£ºÄãÊÇ¸ÉÊ²Ã´µÄ£¿À´´äÑÌÃÅÓĞºÎÄ¿µÄ£¿ <enter>"
-			..name.."<#>£ºÎÒÊÇÑÂÀïµÄÈË¡£ÄÏ±ùÈÃÎÒÀ´ÕÒÄã¡£ <enter>ÛªÇïË®£ººß£¬ÎÒ²»ÊÇ¸æËßËûÃÇ£¬²»ÓÃÕÒĞ©·ÏÎïÀ´Âğ¡£ <enter>"
-			..name.."<#>£ºÃ»Ë­Ô¸Òâ¸ú×ÅÄã¡£ <enter>ÛªÇïË®£ºÓ´£¬¿´²»³öÄã»¹ºÜÓĞĞÔ¸ñ¡£ <enter>"
-			..name.."<#>£ºÓĞÕâ·Ï»°µÄ¹¤·ò£¬ÊÂÇéÔç°ìÍêÁË¡£ <enter>ÛªÇïË®£ººÃ¼Ò»ï£¬¿ÚÆø²»Ğ¡¡£½£ÃÅ¹ØÓĞÃûÊ×½«½ĞĞì×ÔÁ¦£¬ËûÉíÉÏÓĞÎÒÃÇÏëÒªµÄ¶«Î÷¡£ÄãÈ¥°ÑËüÈ¡À´¡£ <enter>"
-			..name.."<#>£ºÊÇÊ²Ã´¶«Î÷£¿ <enter>ÛªÇïË®£ºÒ»¼şîø¼×¡ª¡ª°×ÁúÏ¢¡£ <enter>"
-			..name.."<#>£ºËûÔÚÄÄÀï¡£ <enter>ÛªÇïË®£º¾­»Ê¶´¡£ <enter>",1,"½áÊø¶Ô»°/middlefinish4")
+		Describe(DescLink_LiQiuShui.."<#>: Ng­¬i lµ ai? §Õn Thóy Yªn m«n víi môc ®İch g×? <enter>"
+			..name.."<#>: Ta lµ ng­êi trong héi, Nam B¨ng b¶o ta ®Õn t×m c«. <enter> Hõ! Ta ®· nãi víi hä, kh«ng nªn t×m nh÷ng kÎ v« dông. <enter>"
+			..name.."<#>: Ta vèn còng ch¼ng thİch ®ång hµnh víi c«! <enter> A! Kh«ng ngê ng­¬i còng cã tİnh c¸ch. <enter>"
+			..name.."<#>: Ta sÏ cho c« thÊy b¶n lÜnh cña ta! <enter> Nãi hay l¾m! KhÈu khİ còng kh«ng tÖ. KiÕm m«n cã Tõ Tù Lùc ®ang gi÷ 1 b¶o vËt. §Õn ®ã lÊy nã vÒ cho ta. <enter>"
+			..name.."<#>: Lµ c¸i g×? <enter> 1 bé ¸o gi¸p--B¹ch Long Tøc. <enter>"
+			..name.."<#>: ¤ng ta ë ®©u. <enter> Kinh Hoµng ®éng. <enter>",1,"KÕt thóc ®èi tho¹i/middlefinish4")
 	elseif ( Uworld1002 == 160 ) or ( Uworld1002 == 170 ) then 
 		nt_setTask(1002,170)
-		Describe(DescLink_LiQiuShui.."<#>£º°×ÁúÏ¢£¬Õâ¾ÍÊÇ´«ËµÖĞµÄ±¦Æ÷Âğ¡£Ì«ºÃÁË¡£ <enter>"
-			..name.."<#>£º±¦Æ÷£¿ÄÑµÀ£¬Õâ¸öÊÇ¡®Ìì»ÍÁúÆ÷¡¯¡£ <enter>ÛªÇïË®£ºÄã¾ÓÈ»ÖªµÀÌì»ÍÁúÆ÷£¿ <enter>"
-			..name.."<#>£ºÔ­À´ÌıÒ»¸öÌú½³Ìáµ½¹ı¡£ <enter>ÛªÇïË®£ºÌú½³£¿Ã»Ïëµ½ÊÀ¼äÖªµÀÕâ¼şÊÂµÄÈË»¹²»ÉÙ£¬¿É¼ûÉ½ÍâÓĞÉ½¡£ÅóÓÑ£¬ÊÇÎÒĞ¡¿´ÄãÁË¡£ <enter>"
-			..name.."<#>£º¶¼ÊÇÎªÁÙÔ¨ÑÂ×öÊÂ¶øÒÑ¡£¹ØÓÚÁúÆ÷£¬ÄãÖªµÀ¶àÉÙ£¿ <enter>ÛªÇïË®£ºÌì»ÍÁúÆ÷Óë×éÖ¯µÄÃØÃÜÏ¢Ï¢Ïà¹Ø£¬ÎÒÖ»ÄÜ¸æËßÄãÕâÃ´¶àÁË£¬¶Ô²»Æğ¡£ <enter>ÛªÇïË®£ºÕâÊÇ¸øÄãµÄ¶«Î÷£¬ÊÕºÃ¡£ <enter>",1,"½áÊø¶Ô»°/middlefinish5")
+		Describe(DescLink_LiQiuShui.."<#>: B¹ch Long Tøc lµ b¶o khİ trong truyÒn thuyÕt. Hay qu¸! <enter>"
+			..name.."<#>: B¶o Khİ? Ch¼ng lÏ ®©y lµ Thiªn Hoµng Long Khİ. <enter> Ng­¬i biÕt Thiªn Hoµng Long Khİ? <enter>"
+			..name.."<#>: Ta nghe thî rÌn nh¾c ®Õn. <enter> Thî rÌn? Kh«ng ngê trªn ®êi nµy ng­êi biÕt chuyÖn nµy còng kh«ng İt. B»ng h÷u, ta ®· xem th­êng ng­¬i. <enter>"
+			..name.."<#>: §Òu v× L©m Uyªn Nhai mµ th«i! VÒ Long Khİ, c« biÕt ®­îc bao nhiªu? <enter> Thiªn Hoµng Long Khİ víi bİ mËt cña tæ chøc cã liªn quan, ta chØ cã thÓ nãi víi ng­¬i bÊy nhiªu. <enter> C¸i nµy lµ cña ng­¬i, cÇm lÊy ®i. <enter>",1,"KÕt thóc ®èi tho¹i/middlefinish5")
 	elseif ( Uworld1002 == 180 ) and ( GetLevel() >= 50 ) then
-		Talk(1,"","ÛªÇïË®:Äã³É³¤µÃÈç´ËÖ®¿ì,¿ì»ØÈ¥ÕÒ¸µÄÏ±ù°É,ËûÓĞÖØÒªÈÎÎñ½»¸øÄã.")
+		Talk(1,"","Ng­¬i mau ®i t×m Phã Nam B¨ng, «ng ta cã nhiÖm vô quan träng giao cho ng­¬i.")
 	else 
-		Describe(DescLink_LiQiuShui.."<#>£ºÕâ±²×ÓÇïË®ÊÇ´äÑÌÃÅµÄÈË£¬ÏÂ±²×Ó±ã×ö´äÑÌÃÅµÄ¹í°É¡£",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_LiQiuShui.."<#>: Ta sèng lµm ng­êi cña Thóy Yªn m«n, chÕt lµm quû cña Thóy Yªn m«n.",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -91,20 +91,20 @@ function hanjiangdudiaosou()
 	local name = GetName()  
 	if ( Uworld1002 == 200 ) or ( Uworld1002 == 210 ) then
 		nt_setTask(1002,210)
-		Describe(DescLink_HanJiangDuDiaoSou.."<#>£ºÒ»¸ËÒ»óÒÈÎÆ½Éú£¬Ò»½­ÑÌ²¨Ò»½­³î¡£ <enter>"
-			..name.."<#>£ºº®ÀÏÇ°±²£¬Íí±²ÓĞÀñÁË¡£ <enter>º®½­¶ÀµöÛÅ£ºÄãÕâĞ¡ºóÉú»¹Í¦ÓĞÀñÃ²£¬ÕÒ°³ÓĞÉ¶ÊÂ£¿ <enter>"
-			..name.."<#>£ºÑî°ïÖ÷ÈÃÎÒÀ´ÎÊÄú¼¸¾ä»°¡£ <enter>º®½­¶ÀµöÛÅ£ºÊ²Ã´»°£¿<enter>"
-			..name.."<#>£ºµ±ÄêÔÚÌìÍõ°ïÊ§×ÙµÄÃØÆ÷¡®Áú¶Ï¡¯£¬Äú¿ÉÖªµÀËüµÄÏûÏ¢¡£ <enter>º®½­¶ÀµöÛÅ£ºÅ¶£¬ÕâÊÇĞí¾ÃÒÔÇ°µÄÍùÊÂÀ­£¬°³µÄ¼ÇĞÔ½üÀ´Ô½À´Ô½²î£¬ÄÇĞ©³ÂÄê¾ÉÊÂÔç²»¼ÇµÃÀ­¡£ <enter>"
-			..name.."<#>£ºÀÏÇ°±²£¬°ïÖ÷ÆäÊµÔçÒÑ²éÃ÷£¬Ö»ÊÇ°­ÓÚÄúÊÇ°ïÀïÀÏÈË£¬²»ºÃ³öÃæ£¬ÄúÒªÔÙ²»Ëµ³öÀ´£¬Ğ²Ö»ºÃ²»¾´ÁË¡£ <enter>º®½­¶ÀµöÛÅ£ººÇ£¬ºÇºÇ£¬ºÇºÇºÇºÇ¡£ºÃ£¬ºÃÒ»¸öxxx¡£½üÀ´Õû¸öÁÙÔ¨ÑÂ¶¼ÔÚ´«ËµÄãµÄÊÂ¼££¬¹ûÈ»ÊÇ¾«º·¹û¸Ò¡£²»´í£¬°³ÖªµÀÒşÂ÷²»×¡µÄ£¬¡®Áú¶Ï¡¯¾ÍÔÚ°³ÊÖÀï¡£ <enter>"
-			..name.."<#>£ºÄÇ¾ÍÇëÄú½»³öÀ´°É¡£ <enter>º®½­¶ÀµöÛÅ£º°¥£¬Ïëµ±ÄêÖÓÑî¶şÍõ×İºá¶´Í¤£¬±ø¾«½«ÃÍ£¬°³Ôø¾­ÒÔÎªÄÜ¸Ä±äÕâ²Ğ¿áµÄÊÀµÀ¡£¿Éµ½Í·À´»¹²»ÊÇÂäµÄ¸ö±ø°ÜÉíËÀ£¿ÓĞĞ©ÊÂ£¬ÊÇÌìÃü£¬ÌìÃü²»¿ÉÎ¥°¡£¬ÈËÁ¦ÈçºÎÄÜ¸Ä±ä¡£¸Ä±äÁËÓÖÈçºÎ£¿ÕæµÄ¸üºÃÂğ£¿ <enter>"
-			..name.."<#>£ºÀÏÇ°±²£¬ÒÔºóµÄÊÂÒÔºóÔÙËµ¡£ÏÖÔÚÄú½»³öÁú¶Ï£¬ÎÒ¿É±£ÄúÒ»ÌõĞÔÃü¡£ <enter>º®½­¶ÀµöÛÅ£º¹ş¹ş¹ş£¬°³Ôç¾Í»î¹»ÁË£¬ÕâÌõÀÏÃüËãµÃÊ²Ã´£¿ <enter>"
-			..name.."<#>£ºÄã£¡<enter>º®½­¶ÀµöÛÅ£ºÒªÁú¶Ï¾ÍÈ¥¶´Í¥ºşµ×ÃÔ¹¬°É£¬°³ÔÚÄÇµÈÄã¡£ ",
-			1, "½áÊø¶Ô»°/middlefinish6")
+		Describe(DescLink_HanJiangDuDiaoSou.."<#>: NhÊt c¸n nhÊt l¹p nhiÖm b×nh sinh, nhÊt giang yªn ba nhÊt giang sÇu. <enter>"
+			..name.."<#>: Hµn L·o tiÒn bèi! V·n bèi vÊn an ng­êi! <enter> T×m ta cã viÖc g×? <enter>"
+			..name.."<#>: D­¬ng Bang chñ b¶o ta ®Õn hái «ng vµi chuyÖn. <enter>  ChuyÖn g×?<enter>"
+			..name.."<#>:N¨m x­a B¶o khİ Long §o¹n mÊt tİch t¹i Thiªn V­¬ng Bang, ng­êi biÕt tung tİch cña nã kh«ng. <enter>  ChuyÖn nµy ®· l©u råi, trİ nhí cña ta ngµy cµng kĞm, nh÷ng chuyÖn x­a kia ta ®· kh«ng cßn nhí n÷a.<enter>"
+			..name.."<#>:L·o TiÒn Bèi! Bang chñ ®· sím ®iÒu tra biÕt «ng ®ang gi÷ nã! Ta kh«ng muèn lµm «ng tæn th­¬ng. <enter> Ha! Ha! TiÕng ®ån vÒ ng­¬i qu¶ kh«ng sai. Long §o¹n ®ang ë trong tay ta, xem ng­¬i b¶n lÜnh ra sao!<enter>"
+			..name.."<#>: Xin «ng h·y giao ra. <enter> Nhí n¨m x­a Chung D­¬ng NhŞ V­¬ng tung hoµnh giang §éng §×nh hå, binh hïng t­íng m¹nh, ®Şnh thay ®æi thÕ ®¹o tµn khèc nµy. Nh­ng ®Õn cuèi cïng còng thÊt b¹i? Cã nh÷ng chuyÖn lµ ı trêi, ı trêi kh«ng thÓ thay ®æi! <enter>"
+			..name.."<#>:L·o TiÒn Bèi! ChuyÖn sau nµy ®Ó sau nµy h·y nãi. B©y giê «ng giao Long §o¹n ra, ta cã thÓ b¶o ®¶m tİnh m¹ng cña «ng.<enter> Ha ha ha! Ta sèng kh«ng bao l©u n÷a, c¸i m¹ng giµ nµy th× cã ®¸ng g×? <enter>"
+			..name.."<#>: ¤ng….!<enter> Muèn Long §o¹n th× h·y ®Õn ®¸y Mª cung §éng §×nh hå, ta sÏ ®îi ë ®ã!",
+			1, "KÕt thóc ®èi tho¹i/middlefinish6")
 	elseif ( Uworld1002 >= 220 ) then
-		Describe(name.."<#>£ºº®ÀÏÇ°±²ÕäÖØ£¬ÎÒ»ØÈ¥Ò»¶¨ÎªÄúËµËµ»°¡£ <enter>"..DescLink_HanJiangDuDiaoSou.."<#>£º¿È¿È£¬²»±ØÁË¡£Ğ¡ÅóÓÑ£¬Äã¼Ç×Å£¬ÁúÆ÷Æë¼¯Ö®ÈÕ£¬ÌìÏÂ±ØÈ»´óÂÒ¡£ <enter>"
-			..name.."<#>£ºÔÚÏÂ½÷¼Ç¡£ ", 1, "½áÊø¶Ô»°/no")
+		Describe(name.."<#>: Hµn l·o tiÒn bèi xin b¶o träng, ta vÒ sÏ thay «ng nãi. <enter>"..DescLink_HanJiangDuDiaoSou.."<#>: Kh«ng cÇn ®©u! B¹n trÎ h·y nhí lÊy: ngµy nµo Long Khİ cã ®ñ bé, thiªn h¹ sÏ ®¹i lo¹n. <enter>"
+			..name.."<#>: T¹i h¹ nhí råi. ", 1, "KÕt thóc ®èi tho¹i/no")
 	else
-		Describe(DescLink_HanJiangDuDiaoSou.."<#>:¶Àµöº®½­£¬ĞÄÈçÖ¹Ë®£¬ÈËÒ»±²×Ó£¬»îÃ÷°×¾Í¹»ÁË°É¡£",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_HanJiangDuDiaoSou.."<#>:  §éc c©u hµn giang, t©m nh­ chİnh thñy, ung dung tù t¹i!",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -114,16 +114,16 @@ function shaolinkongji()
 	local name = GetName()  
 	if ( Uworld1002 == 260 ) or ( Uworld1002 == 270 ) then
 		nt_setTask(1002,270)
-		Describe(DescLink_KongJi.."<#>£º°¢ÃÖÍÓ·ğ£¬Ê©Ö÷ºÃÖØµÄÉ±Æø¡£ <enter>"
-			..name.."<#>£ºĞĞĞ×Ö®ÈË£¬µ±È»ÓĞÉ±Æø¡£ <enter>¿Õ¼Å£º¶àÔìÉ±Äõ£¬Ê©Ö÷ÈÕºó»áÂÙÈë°¢±ÇµØÓü£¬¿àº£ÎŞ±ß£¬»ØÍ·ÊÇ°¶°É¡£ <enter>"
-			..name.."<#>£ºÎÒÒÑ¾­»Ø²»ÁËÍ·ÁË¡£ <enter>¿Õ¼Å£ºÖ»Òª·ÅÏÂ£¬±ãÊÇ»ØÍ·¡£ <enter>"
-			..name.."<#>£ºÎÒ·ÅµÃÏÂ×Ô¼º£¬·Å²»ÏÂÍòÃñ¡£ <enter>¿Õ¼Å£ºÒÔÆĞÈøĞÄ³¦ĞĞÀ×öªÊÖ¶Î£¬°¢ÃÖÍÓ·ğ¡£ <enter>"
-			..name.."<#>£ºÉñÉ®£¬µÀ²»Í¬²»ÏàÎªÄ±£¬Çë½»³ö¹óËÂÊÕ²ØµÄÁ½¼şÉñÆ÷°É¡£ <enter>¿Õ¼Å£º°¥£¬Çëµ½ÉÙÁÖºóÉ½É½ÁÖ£¬Æ¶É®ÌÖ½Ì¼¸ÕĞ¡£ <enter>",
-			1, "½áÊø¶Ô»°/middlefinish8")
+		Describe(DescLink_KongJi.."<#>: A Di §µ PhËt!  Thİ chñ s¸t khİ qu¸ nÆng. <enter>"
+			..name.."<#>: Suèt ngµy chØ biÕt chĞm giÕt, ®­¬ng nhiªn s¸t khİ nÆng råi! <enter> T¹o nhiÒu nghiÖp ¸c, Thİ chñ ngµy sau sÏ bŞ ®µy xuèng ®Şa ngôc A Tú,  khæ ¶i v« biªn, quay ®Çu lµ bê. <enter>"
+			..name.."<#>: Ta kh«ng thÓ quay l¹i ®­îc n÷a. <enter> ChØ cÇn bá ®­îc lµ cã thÓ quay ®Çu. <enter>"
+			..name.."<#>: Ta g¹t ®­îc m×nh, kh«ng g¹t ®­îc v¹n d©n. <enter> Bå T¸t sÏ phô hé cho kÓ thiÖn t©m! A Di §µ PhËt! <enter>"
+			..name.."<#>: ThÇn T¨ng! §¹o bÊt ®ång bÊt t­¬ng vi m­u, xin giao hai bé ThÇn khİ mµ quİ tù ®ang gi÷. <enter> H·y ra c¸nh rõng ë hËu s¬n ThiÕu L©m, BÇn T¨ng thä gi¸o vµi chiªu sÏ nãi! <enter>",
+			1, "KÕt thóc ®èi tho¹i/middlefinish8")
 	elseif ( Uworld1002 >= 290 ) then
-		Describe(name.."<#>£ºÉñÉ®£¬µÃ×ïÁË¡£ <enter>"..DescLink_KongJi.."<#>£º°¢ÃÖÍÓ·ğ£¬ÉÆ¶ñ½ÔÓĞ¶¨ÂÛ£¬ÌìÒâ²»¿ÉÎ¥¡£Ê©Ö÷È¥°É£¬Ç°³Ì×ÔÓĞÒò¹û¡£ <enter>",1,"½áÊø¶Ô»°/no")
+		Describe(name.."<#>: ThÇn T¨ng, xin ®¾c téi. <enter>"..DescLink_KongJi.."<#>:A Di §µ PhËt! ThiÖn ¸c ®Òu ®Şnh s½n, ı trêi khã ®æi. Thİ chñ ®i ®i, trªn ®êi ¾t cã nh©n qu¶. <enter>",1,"KÕt thóc ®èi tho¹i/no")
 	else
-		Describe(DescLink_KongJi.."<#>£ºÊÀ¼äÒò¹û£¬×ÔÓĞ¶¨ÂÛ£¬ÒòÔµÇ°ºó£¬Äª¿ŞÄªĞ¦£¬°¢ÃÖÍÓ·ğ¡£",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_KongJi.."<#>: Nh©n qu¶ trªn ®êi ®· ®Şnh s½n. A Di §µ PhËt!",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -136,7 +136,7 @@ function middlefinish1()
 	DelItem(456)
 	AddOwnExp(5000)
 	nt_setTask(1002,30)
-	Msg2Player("¸µÄÏ±ùÈÃÄãÈ¥É±µôÔÚÂŞÏüÉ½ÓÎÍæµÄÄş½«¾ü¡£")
+	Msg2Player("Phã Nam B¨ng b¶o b¹n lªn La Tiªu S¬n ®¸nh b¹i Ninh T­íng Qu©n.")
 end
 
 function middlefinish2()
@@ -145,8 +145,8 @@ function middlefinish2()
 	AddSkillState( 509, 1, 0, 180);
 	prize1()
 	ex_add_zl_level20();
-	Msg2Player("¸µÄÏ±ùËµËû»áÔÙÕÒÄãµÄ.")
-	Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+	Msg2Player("Phã Nam B¨ng nãi sau nµy sÏ t×m b¹n.")
+	Talk(1,"middletask","Cè g¾ng lªn")
 end
 
 function middlefinish3()
@@ -154,14 +154,14 @@ function middlefinish3()
 	AddSkillState( 509, 1, 0, 180);
 	prize1()
 	ex_add_zl_level30();
-	Msg2Player("¸µÄÏ±ùËµÁÙÔ¨ÑÂÓĞ¸ö´ó¼Æ»®,ÒÔºó»áÔÙÕÒÄãµÄ.")
-	Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+	Msg2Player("Phã Nam B¨ng nãi L©m Uyªn Nhai cã mét kÕ ho¹ch lín, sau nµy sÏ t×m b¹n!")
+	Talk(1,"middletask","Cè g¾ng lªn")
 end
 
 function middlefinish4()
 	AddOwnExp(15000)
 	nt_setTask(1002,150)
-	Msg2Player("ÛªÇïË®ÈÃÄãÈ¥¾­»Ê¶´É±µôĞì×ÔÁ¦.")
+	Msg2Player("LÖ Thu Thñy b¶o ®Õn Kinh Hoµng ®éng ®¸nh b¹i Tõ Tù Lùc.")
 end
 
 function middlefinish5()
@@ -171,13 +171,13 @@ function middlefinish5()
 	AddSkillState( 509, 1, 0, 180);
 	prize1()
 	ex_add_zl_level40();
-	Msg2Player("¸µÄÏ±ùÎªÄãÍÑ¹ÇÏ´Ëè£¬ÏÖÔÚÄã¿ÉÒÔÖØĞÂ·ÖÅä×Ô¼ºµÄ¼¼ÄÜµãÁË¡£Èç¹ûÄã²»ÊôÓÚÖĞÁ¢ÕóÓª£¬ÄÇÃ´ÄãµÃ²»µ½Õâ¸öÌØÊâ»ú»á¡£Äã¿ÉÒÔ»ØÈ¥ÕÒ¸µÄÏ±ùÁË¡£")
+	Msg2Player("Phã Nam B¨ng gióp b¹n tÈy tñy, hiÖn giê b¹n cã thÓ thay ®æi ®iÓm kü n¨ng. NÕu b¹n kh«ng thuéc Phe Trung lËp, th× sÏ kh«ng ®­îc tÈy tñy. B¹n cã thÓ vÒ t×m Phã Nam B¨ng.")
 end
 
 function middlefinish6()
 	AddOwnExp(30000)
 	nt_setTask(1002,215)
-	Msg2Player("º®½­¶ÀµöÛÅÈÃÄãÈ¥¶´Í¥ºşµ×ÃÔ¹¬ÕÒËû,×Ô»á¸øÄã¸ö½»´ú.")	
+	Msg2Player("Hµn Giang §éc §iÕu TÈu b¶o b¹n ®Õn Mª cung §éng §×nh hå t×m «ng ta!")	
 end
 
 function middlefinish7()
@@ -186,14 +186,14 @@ function middlefinish7()
 	AddSkillState( 509, 1, 0, 180);
 	prize1()
 	ex_add_zl_level50();
-	Msg2Player("¸µÄÏ±ùËµÒÔºó»áÀ´ÕÒÄãµÄ¡£")
-	Talk(1,"middletask","ºÃºÃÅ¬Á¦¡£")
+	Msg2Player("Phã Nam B¨ng nãi sÏ sau nµy sÏ t×m b¹n.")
+	Talk(1,"middletask","Cè g¾ng lªn")
 end
 
 function middlefinish8()
 	AddOwnExp(50000)
 	nt_setTask(1002,280)
-	Msg2Player("¿Õ¼ÅÉñÉ®ÈÃÄãÈ¥ÉÙÁÖºóÉ½ÕÒËû¡£")	
+	Msg2Player("Kh«ng TŞch ThÇn T¨ng b¶o ®Õn HËu s¬n ThiÕu L©m Tù t×m «ng ta")	
 end
 
 function middlefinish9()
@@ -201,5 +201,5 @@ function middlefinish9()
 	nt_setTask(1002,310)
 	ex_add_zl_level60();
 	AddSkillState( 509, 1, 0, 180);
-	Msg2Player("¸µÄÏ±ùËµËûÒªÈ¥»ªÉ½°ìĞ©ÊÂ£¬ÒÔºóÓĞ»ú»áÔÙ¼ûÁË¡£Äã¿ÉÒÔ»ØÁúÎå´¦ÄÃĞ©Ëû¸øÄãµÄ¶«Î÷¡£")	
+	Msg2Player("Phã Nam B¨ng nãi sÏ ®i Hoa S¬n lµm chót chuyÖn, sau nµy cã dŞp gÆp l¹i. B¹n quay vÒ t×m Long Ngò ")	
 end

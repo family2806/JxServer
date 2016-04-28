@@ -12,12 +12,12 @@ function OnTimer()
 		players_entrance()
 		SubWorld = SubWorldID2Idx(CH_MAPID[1]);
 		CloseMission(CH_PREPAREMISSIONID);
-		gb_SetTask("圣诞活动", 1, 2);
+		gb_SetTask("Ho箃 ng Gi竛g Sinh", 1, 2);
 		SubWorld = OldSubWorld;
 		return
 	elseif (0 == mod(nNewsValue, 2)) then
 		if (nRemain > 0) then
-			Msg2MSAll(CH_PREPAREMISSIONID, "还"..nRemain.."分开始比赛!");
+			Msg2MSAll(CH_PREPAREMISSIONID, "c遪"..nRemain.."ph髏 b総 u Thi u!");
 		end;
 	end;
 end;

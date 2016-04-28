@@ -107,19 +107,19 @@ function BattleWorld:SignupCost(player, tong, err)
 	if (player:GetTiaozhanlingCount() < SIGNUP_TIAOZHANLINGCOUNT or
 		player:GetCash() < SIGNUP_MONEY) then
 		err.Msg = format(
-			"±¨ÃûĞèÒª<color=red>%d<color> ÒøÁ½ºÍcolor=red>%d<color> ÌôÕ½Áî.",
+			"B¸o danh cÇn <color=red>%d<color> ng©n l­îng vµ <color=red>%d<color> khiªu chiÕn lÖnh.",
 			SIGNUP_MONEY,
 			SIGNUP_TIAOZHANLINGCOUNT)
 	elseif (player:ApplyReduceTiaozhanlingCount(SIGNUP_TIAOZHANLINGCOUNT) == 0) then
 		err.Msg = format(
-			"ÄãÈ·¶¨´ø¹»ÁË®ñ <color=red>%d<color>ÌôÕ½Áî",
+			"Ng­¬i cã ch¾c ®· mang ®ñ <color=red>%d<color> khiªu chiÕn lÖnh?",
 			SIGNUP_TIAOZHANLINGCOUNT)
 	else
 		player:Pay(SIGNUP_MONEY)
 		self.m_SignupList[tong] = 1
 		-- Í¬²½Ğí¿É°ï»á
 		self:NotifySignup(tong)
-		player:Say(format("×£ºØ°ï»á<color=red>%s<color> ±¨Ãû³É¹¦", tong))
+		player:Say(format("Chóc mõng bang héi <color=red>%s<color> ®· b¸o danh thµnh c«ng!", tong))
 		-- ÈÕÖ¾
 		self:LogAction("signup", player)
 		return 1
@@ -130,13 +130,13 @@ end
 function BattleWorld:Signup(player, err)
 	local tong = player:GetTong()
 	if (self.m_State ~= STATE_STARTSIGNUP) then
-		err.Msg = "ÏÖÔÚ²»ÄÜ±¨Ãû."
+		err.Msg = "HiÖn t¹i kh«ng thÓ b¸o danh."
 	elseif (player:GetTongMaster() ~= player:GetName()) then
-		err.Msg = "Ö»ÓĞ°ïÖ÷²ÅÄÜ±¨Ãû."
+		err.Msg = "ChØ cã bang chñ míi cã thÓ b¸o danh."
 	elseif (self.m_CityManager:IsViceroy(tong) == 1) then
-		err.Msg = "°ï»áÒÑÕ¼³Ç£¬²»ÓÃ±¨ÃûÁË."
+		err.Msg = "Bang héi ®· chiÕm ®­îc thµnh kh«ng cÇn b¸o danh."
 	elseif (self.m_SignupList[tong] ~= nil) then
-		err.Msg = "°ï»áµÄ´óÏÀÒÑ¾­±¨ÃûÁË."
+		err.Msg = "Bang héi cña c¸c h¹ ®· b¸o danh råi."
 	elseif (self:SignupCost(player, tong, err) == 1) then
 		return 1
 	end
@@ -160,12 +160,12 @@ end
 function BattleWorld:StartSignup()
 	self.m_SignupList = {}
 	self.m_State = STATE_STARTSIGNUP
-	AddLocalCountNews("Æß³Ç´óÕ½¿ªÊ¼±¨Ãû, ÇëÖîÎ»°ïÖ÷¿ìËÙ±¨Ãû, Õ¼³Ç°ï»á²»ÓÃ±¨Ãû.", 5)
+	AddLocalCountNews("ThÊt thµnh ®¹i chiÕn b¾t ®Çu b¸o danh, xin mêi ch­ vŞ bang chñ h·y nhanh chãng b¸o danh, bang chiÕm thµnh kh«ng cÇn b¸o danh.", 5)
 end
 
 function BattleWorld:CloseSignup()
 	self.m_State = STATE_CLOSESIGNUP
-	AddLocalCountNews("Æß³Ç´óÕ½±¨Ãû½áÊø", 3)
+	AddLocalCountNews("B¸o danh thÊt thµnh ®¹i chiÕn ®· kÕt thóc", 3)
 end
 
 function BattleWorld:LoadMap()
@@ -208,7 +208,7 @@ function BattleWorld:Create()
 		self:LoadMap()
 		self.m_TrapFlag = 1
 	end
-	AddLocalCountNews("Æß³Ç´óÕ½ÂíÉÏ¿ªÊ¼£¬´ó¼ÒºÃºÃ×¼±¸", 5)
+	AddLocalCountNews("ThÊt thµnh ®¹i chiÕn s¾p b¾t ®Çu, mäi ng­êi h·y chuÈn bŞ", 5)
 end
 
 function BattleWorld:Destroy()
@@ -236,7 +236,7 @@ function BattleWorld:Start()
 	self.m_TongWarriorCount = {}
 	self.m_Standings = {}				-- Íæ¼ÒÕ½¼¨±í
 	self.m_TopList = {}					-- Ç°Ê®ÃûÍæ¼Ò
-	AddLocalCountNews("Æß³Ç´óÕ½ÒÑ¾­¿ªÊ¼", 3)
+	AddLocalCountNews("ThÊt thµnh ®¹i chiÕn ®· ®­îc b¾t ®Çu", 3)
 	self.m_State = STATE_STARTWAR
 	self.m_StartTime = GetLocalTime()
 end
@@ -256,7 +256,7 @@ function BattleWorld:Close()
 	end
 	self.m_State = STATE_CLOSEWAR
 	self.m_SignupList = {}
-	AddLocalCountNews("Æß³Ç´óÕ½ÒÑ¾­½áÊø", 1)
+	AddLocalCountNews("ThÊt thµnh ®¹i chiÕn ®· kÕt thóc!", 1)
 	WriteLog("[SEVENCITY]close end...")
 end
 
@@ -274,7 +274,7 @@ function BattleWorld:GetStandings(name)
 		tb = {}
 		self.m_Standings[name] = tb
 		tb.KillWarriorCount = 0		-- É±µĞÊı
-		tb.KillMonsterCount = 0		-- »÷ÆÆÁúÖùÊı
+		tb.KillMonsterCount = 0		-- »÷ÆÆLong TrôÊı
 		tb.TimeScore = 0			-- Ê±¼ä»ı·Ö
 	end
 	return tb
@@ -469,13 +469,13 @@ function BattleWorld:CheckPermission(mapid, player, err)
 	local field = self:FindField(mapid)
 	if (not field) then
 		if (err) then
-			err.Msg = "Õ½³¡»¹Ã»¿ª£¬ÔİÊ±²»ÄÜ½øÈë."
+			err.Msg = "ChiÕn tr­êng vÉn ch­a më, t¹m thêi kh«ng thÓ vµo."
 		end
 		self:Log(format("[ERROR SEVENCITY]map(%d) not exist", mapid))
 		return 0
 	elseif (field:GetTongWarriorCount(tong) >= PARAM_LIST.FIELD_TONGMEMBER) then
 		if (err) then
-			err.Msg = "Õ½³¡Ç°·½ÒÑ¹»ÈË£¬ÇëÕÒÆäËûÕ½³¡ÊÔÊÔ¿´ĞèÒªÖ§Ô®Âğ."
+			err.Msg = "ChiÕn tr­êng tiÒn ph­¬ng ®· ®ñ ng­êi, xin h·y t×m chiÕn tr­êng kh¸c thö xem cã cÇn chi viÖn hay kh«ng."
 		end
 		return 0
 	end
@@ -486,20 +486,20 @@ function BattleWorld:CheckMapPermission(player, err)
 	local tong = player:GetTong()
 	local msg = ""
 	if (self.m_State ~= STATE_PREPARING and self.m_State ~= STATE_STARTWAR) then
-		msg = "ÏÖÔÚ²»ÄÜ½øÕ½³¡."
+		msg = "HiÖn t¹i kh«ng thÓ vµo chiÕn tr­êng."
 	elseif (player:GetLevel() < 90) then
-		msg = "<color=red>90¼¶¼°ÒÔÉÏµÄÍæ¼Ò<color> ²ÅÄÜ²Î¼ÓÆß³Ç´óÕ½."
+		msg = "<color=red>Ng­êi ch¬i cÊp 90 vµ cÊp 90 trë lªn<color> míi ®­îc tham gia ThÊt Thµnh §¹i ChiÕn."
 	elseif (tong == nil or tong == "") then
-		msg = "°ï»á³ÉÔ±²ÅÄÜ²Î¼ÓÆß³Ç´óÕ½."
+		msg = "Thµnh viªn bang héi míi cã thÓ tham gia thÊt thµnh ®¹i chiÕn."
 	elseif (self:CheckWarriorTongChange(player:GetName(), tong) == 1) then
-		msg = "Î¥·´°ï»áÕß²»µÃ½øÈëÕ½³¡."
+		msg = "Ng­¬i ®· ph¶n bang kh«ng thÓ tiÕn vµo chiÕn tr­êng."
 	elseif (player:GetJoinTongTime() < 24 * 60) then
-		msg = "¼ÓÈë°ï»á<color=red>Ò»Ìì¼°Ò»ÌìÒÔÉÏ²ÅÄÜ²Î¼ÓÆß³Ç´óÕ½."
+		msg = "Gia nhËp bang héi<color=red> 1 ngµy hoÆc 1 ngµy trë lªn míi ®­îc tham gia ThÊt Thµnh §¹i ChiÕn."
 	elseif (self.m_CityManager:IsViceroy(tong) == 0 and
 			self.m_SignupList[tong] == nil) then
-		msg = "Õ¼³Ç°ï»á»òÒÑ¾­±¨ÃûÕß²ÅÄÜ²Î¼ÓÆß³Ç´óÕ½"
+		msg = "Bang héi chiÕm thµnh hoÆc ®· b¸o danh míi cã thÓ tham gia thÊt thµnh ®¹i chiÕn"
 	elseif (self:GetTongWarriorCount(tong) >= PARAM_LIST.WORLD_TONGMEMBER) then
-		msg = "°ï»á¶àÈË²ÎÕ½²¢µ½×î¸ßË®Æ½£¬ÉÔµÈÆ¬¿ÌÔÙ²Î¼Ó"
+		msg = "Sè ng­êi tham chiÕn cña quı bang ®· ®Õn møc cao nhÊt, h·y ®îi l¸t n÷a tham gia l¹i nhĞ."
 	else
 		return 1
 	end
@@ -621,11 +621,11 @@ function BattleField:OnTime(index)
 	end
 	-- Close award exp - Created by TinhPN - 20110425
 	--player:AddStackExp(TIMEAWARD_EXP)
-	--player:Msg2Player(format("¸óÏÂÁìÈ¡ %d ¾­Ñéµş¼Ó", TIMEAWARD_EXP))
+	--player:Msg2Player(format("C¸c h¹ nhËn %d kinh nghiÖm céng dån", TIMEAWARD_EXP))
 	local score = TIMEAWARD_SCORE
 	local name = player:GetName()
 	BattleWorld:AddTimeScore(name, score)
-	player:Msg2Player(format("¸óÏÂÁìÈ¡ %d ÀÛ¼ÆÊ±¼ä.", score))
+	player:Msg2Player(format("C¸c h¹ nhËn ®­îc %d thêi gian tİch lòy.", score))
 	self:NotifyTimeScore(name, score)
 	return 1
 end
@@ -845,7 +845,7 @@ function BattleField:Start()
 	if (self.m_Monster) then
 		self.m_Monster:StartTimer()
 	end
-	local msg = format("Æß³Ç´óÕ½ [%s]ÒÑ¾­¿ªÊ¼", MAP_INFO[self.m_MapId].Name)
+	local msg = format("ThÊt thµnh ®¹i chiÕn [%s] ®· b¾t ®Çu!", MAP_INFO[self.m_MapId].Name)
 	AddLocalNews(msg)
 end
 
@@ -868,7 +868,7 @@ function BattleField:Close()
 	if (self.m_Monster) then
 		self.m_Monster:CloseTimer()
 	end
-	-- ÉèÖÃÕ¼³Ç°ï£ºÁúÖùÕóÓª¶ÔÓ¦µÄ°ï»á¾ÍÊÇÕ¼³Ç°ï»á
+	-- ÉèÖÃÕ¼³Ç°ï£ºLong TrôÕóÓª¶ÔÓ¦µÄ°ï»á¾ÍÊÇÕ¼³Ç°ï»á
 	local camp = self.m_Monster:GetCamp()
 	local tong = BattleWorld:FindCampTong(camp)
 	if (tong ~= nil) then
@@ -882,9 +882,9 @@ end
 function BattleField:KillWarrior(killer, killed)
 	local killed_name = killed:GetName()
 	local killer_name = killer:GetName()
-	killer:Msg2Player(format("ÄãÒÑ¾­´ò°Ü %s!", killed_name))
-	killer:Msg2Player("´óÏÀÒÑ¾­»ñµÃÒ»·İÉ±µĞ·Ö")
-	killed:Msg2Player(format("ÄãÒÑ¾­±»%s ´ò°Ü!", killer_name))
+	killer:Msg2Player(format("Ng­¬i ®· ®¸nh b¹i %s!", killed_name))
+	killer:Msg2Player("§¹i hiÖp ®· nhËn 1 ®iÓm giÕt ®Şch")
+	killed:Msg2Player(format("Ng­¬i ®· bŞ %s ®¸nh b¹i!", killer_name))
 	BattleWorld:AddKillWarriorCount(killer_name, 1)
 	self:NotifyWarriorKill(killer_name)
 end
@@ -894,14 +894,14 @@ function BattleField:KillMonster(killer)
 	BattleWorld:AddKillMonsterCount(killer_name)
 	self.m_Monster:Down(killer)
 	self:NotifyMonsterDown(killer_name)
-	AddGlobalNews(format("%s ÆÆ»µÁúÖù%s!",
+	AddGlobalNews(format("%s ph¸ vì long trô cña %s!",
 		killer_name,
 		MAP_INFO[self.m_MapId].Name))
 	-- ÈÕÖ¾
 	BattleWorld:LogAction("killdragon", killer)
 end
 
--- ÁúÖù¶¨Ê±Æ÷
+-- Long Trô¶¨Ê±Æ÷
 MonsterTimerList = {}
 
 function MonsterTimerList:OnTime(index, id)
@@ -912,17 +912,17 @@ function MonsterTimerList:OnTime(index, id)
 	return 0
 end
 
--- ÁúÖù
+-- Long Trô
 Monster = {}
 
 function Monster:New(mapid, pos)
 	local obj = clone(Monster)
 	obj.m_Camp = CAMP_MONSTER
-	obj.m_DownTimerId = 0	-- ÁúÖùÎŞµĞ¶¨Ê±Æ÷
-	obj.m_ScoreTimerId = 0	-- ÁúÖù»ı·Ö¶¨Ê±Æ÷
+	obj.m_DownTimerId = 0	-- Long TrôÎŞµĞ¶¨Ê±Æ÷
+	obj.m_ScoreTimerId = 0	-- Long Trô»ı·Ö¶¨Ê±Æ÷
 	obj.m_MapId = mapid
 	obj.m_Pos = pos
-	obj:CreateNpc("ÁúÖù")
+	obj:CreateNpc("Long Trô")
 	return obj
 end
 
@@ -980,13 +980,13 @@ function Monster:Down(killer)
 		self.m_NpcIndex = 0
 		local name = killer:GetName()
 		local tong = BattleWorld:GetWarriorTong(name)
-		local msg = format("[%s] ÁúÖù±»°ï»á%s %s ÆÆ»µ",
+		local msg = format("[%s] long trô bŞ bang héi %s %s ph¸ vì!",
 						MAP_INFO[self.m_MapId].Name,
 						tong,
 						name)
 		AddGlobalNews(msg)
-		killer:Msg2Player(format("[%s]¸óÏÂÒÑ¾­ÆÆ»µÁúÖù", MAP_INFO[self.m_MapId].Name))
-		self:CreateNpc(format("ÆÆ»µÁúÖù[%s]", tong))
+		killer:Msg2Player(format("[%s] C¸c h¹ ®· ph¸ vì long trô!", MAP_INFO[self.m_MapId].Name))
+		self:CreateNpc(format("Long trô [%s]", tong))
 		self:StartTimer()
 		self:CloseScoreTimer()
 		self:StartScoreTimer()

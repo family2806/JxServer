@@ -3,12 +3,12 @@
 function main(sel)
 	i = random(0,3)
 	if (i == 0) then
-		Talk(1,"","¾ÆÂ¥ÀÏ°å£º°³ÃÇ·ïÏè¿ÉÊÇ¸öºÃµØ·½£¬ÓĞÀ¶Ó¯Ó¯µÄÌì£¬ÓĞºìÑŞÑŞµÄ»¨£¬ÓĞ¿¡ÇÎµÄ¹ÃÄïºÍĞ¡»ï¶ù£¬»¹ÓĞÇåÙı´¼ÏãµÄ¸ÊÈª¼ÑÄğ¡ª¡ªÎ÷·ïÃÀ¾Æ¡£")
+		Talk(1,"","Ph­îng T­êng cña chóng ta lµ n¬i rÊt tèt. Cã bÇu trêi xanh th¨m th¼m,hoa th¬m khoe s¾c, tó nam vµ mü n÷, ngoµi ra cßn cã ®é nång cña r­îu vµ sù tinh khiÕt cña dßng suèi...")
 	elseif (i == 1) then
-		Talk(1,"","¾ÆÂ¥ÀÏ°å£ºÎ÷·ï¾Æ²ú×Ô°³ÃÇ·ïÏè£¬ÒòÎª·ïÏèÎ»ÓÚ¹ØÖĞÎ÷²¿£¬ËùÒÔ½Ğ×öÎ÷·ï¾Æ¡£")
+		Talk(1,"","T©y Phông töu lµ ®Æc s¶n cña Ph­îng T­êng. Do Ph­îng T­êng ë phİa T©y bé nªn gäi lµ T©y Phông töu.")
 	elseif (i == 2) then
-		Talk(1,"","¾ÆÂ¥ÀÏ°å£ºÕâÎ÷·ï¾ÆÒÑ¾­ÓĞºÃ¼¸°ÙÄêµÄÀúÊ·ÁË£¬´ÓÌÆ´úÆğ£¬¾Í±»ÁĞÎª¾ÆÖĞÕäÆ·½ø¹±¸ø»Ê¹¬ÄÚÔ·¡£")
+		Talk(1,"","Lo¹i T©y Phông töu nµy ®· cã lŞch sö mÊy tr¨m n¨m, tõ ®êi nhµ §­êng ®· ®­îc liÖt vµo lo¹i cèng phÈm d©ng cho hoµng cung")
 	else
-		Talk(1,"","¾ÆÂ¥ÀÏ°å£ºÈ«·ïÏè×îºÃµÄÎ÷·ï¾Æ£¬³ö×Ô°³ÁøÁÖ¾Æ·»£¬ËùÒÔ°³Õâ¾Æ·»£¬ÔÚ·ïÏè¿ÉÊÇ´ó´óµÄÓĞÃû¡£")
+		Talk(1,"","T©y Phông töu lµ lo¹i r­îu ngon nhÊt Ph­îng T­êng, ra ®êi ë ph­êng r­îu LiÔu L©m chóng ta. V× vËy,ph­êng cña chóng ta cã thÓ nãi lµ cã tiÕng nhÊt ë vïng nµy")
 	end
 end;

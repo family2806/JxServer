@@ -31,7 +31,7 @@ function main(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	
 	if nDate < %StartDate or nDate > %EndDate then
-		Talk(1, "", "²»ÊÇÔÚ»î¶¯Ê±¼äÄÚ£¬²»ÄÜÊ¹ÓÃ´ËµÀ¾ß.")
+		Talk(1, "", "§¹o cô ®ang trong thêi gian chê, ®îi mét l¸t råi h·y sö dông.")
 		return 1
 	end
 	
@@ -47,7 +47,7 @@ function main(nItemIndex)
 	local nCurTime = GetCurServerTime()
 	
 	if nCurTime - nLastUseTime < tbSkillParam.nCD then
-		Msg2Player("²»ÊÇÔÚ»î¶¯Ê±¼äÄÚ£¬²»ÄÜÊ¹ÓÃ´ËµÀ¾ß.")
+		Msg2Player("§¹o cô ®ang trong thêi gian chê, ®îi mét l¸t råi h·y sö dông.")
 		return 1
 	end
 	
@@ -66,7 +66,7 @@ function main(nItemIndex)
 		pActivity:SetTask(tbSkillParam.nTaskIndex, nCurTime)
 		return
 	else
-		Msg2Player("×ß½üÎÒµÄÂí³µ£¬Ê¹ÓÃ´ËµÀ¾ß")
+		Msg2Player("H·y ®Õn gÇn Xe Ngùa cña m×nh ®Ó sö dông ®¹o cô nµy")
 		return 1
 	end
 end

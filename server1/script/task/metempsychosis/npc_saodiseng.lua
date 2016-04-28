@@ -13,35 +13,35 @@ Include("\\script\\task\\metempsychosis\\translife_4.lua")
 Include("\\script\\activitysys\\config\\1005\\check_func.lua")
 -- ±»Ô½ÄÏÇ¿ÖÆÇ¨ÒÆµ½ ±±¶·ÀÏÈË´¦
 function beidou_translife_main()
-	CreateTaskSay({"<dec><npc>ÓÖÀ´Ò»¸öÈË£¿¿´ÆğÀ´£¬ÎÒ´ïµ½<±±¶·³¤ÉúÊõ-ĞÄ·¨Æª> ²»ÔÙÊÇÃØÃÜÁË¡£ÄÑµÀ·Ï³ıÎä¹¦ÈÃÌìÏÂº¦ÅÂÂğ£¿¼ÈÈ»Èç´Ë£¬ÄãÕÒÎÒÓĞÊ²Ã´ÊÂ?",
-		"·ÏÎä¹¦£¿Äã²»ÒªÏÅÎÒ°¡ /zhuansheng_ondialog",
-		"¼ì²éÖØÉú4¼¼ÄÜ»¹Ê£¼¼ÄÜµã/querySkillPoint_4",
-		"Ï´ÖØÉú4¼¼ÄÜ/wantClearSkillPoint_4",
-		"Îä¹¦£¬ĞÄ·¨Ê²Ã´¡£ÓÖÀ´Ò»¸ö·è×Ó/OnCancel"
+	CreateTaskSay({"<dec><npc>L¹i ®Õn 1 ng­êi n÷a? Xem ra chuyÖn ta ®¹t ®­îc <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> kh«ng cßn lµ bİ mËt n÷a råi. LÏ nµo viÖc phÕ vâ c«ng kh«ng lµm cho thiªn h¹ sî h·i hay sao. ViÖc ®· nh­ thÕ nµy råi, ng­¬i t×m ta cã viÖc g×.",
+		"PhÕ vâ c«ng? Ng­êi ®õng däa ta chø?/zhuansheng_ondialog",
+		"KiÓm tra kü n¨ng trïng sinh 4 cßn d­ ®iÓm kü n¨ng/querySkillPoint_4",
+		"TÈy ®iÓm kü n¨ng trïng sinh 4/wantClearSkillPoint_4",
+		"Vâ c«ng, t©m ph¸p c¸i g×! L¹i thªm 1 kÎ ®iªn khïng/OnCancel"
 		});
 end
 
 function zhuansheng_ondialog()
 	if (GetTask(TSK_ZHUANSHENG_FLAG) == 1) then
-		Msg2Player("ÒÑÑ§ <±±¶·³¤ÉúÊõ-»ù´¡Æª>");
+		Msg2Player("§· häc <B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>");
 	end
 	
-	local tbOpp = {"<dec><npc>Ã»´í£¬ÄÑµÀÄã²»ÖªµÀ£¿ĞŞÁ¶±±¶·³¤ÉúÊõÍê£¬ÄãµÄ¼¶±ğ½«Îª10¼¶£¬ËùÒÔ¼¼ÄÜÎä¹¦½«±»·Ï³ı£¬´ïµ½ÏàÓ¦¼¶±ğºó²ÅÄÜ»Ö¸´(90¼¶£¬120¼¶½«»Ö¸´Ô­ÓĞ¼¼ÄÜ)´ËÍâ£¬½«±£ÁôËùÓĞ¼¼ÄÜµãºÍÄãµÄÇ±ÄÜ.<enter> ×ÜµÄÀ´Ëµ£¬´óÏÀĞèÒª´ÓÍ·¿ªÊ¼¡£µ«ÊÇ£¬Ò²²»ÓÃ×Å¼±£¬µÈÄã´ïµ½120 130½«ÖØ³ö½­ºş£¬ÌìÏÂ»¹ÊÇÄãµÄ"};
+	local tbOpp = {"<dec><npc>Kh«ng sai, lÏ nµo ng­¬i kh«ng biÕt? Tu luyÖn B¾c §Èu Tr­êng Sinh ThuËt xong. CÊp bËc cña ®¹i hiÖp sÏ thµnh cÊp 10, tÊt c¶ kü  n¨ng vâ c«ng sÏ bŞ phÕ, ®¹t ®Õn cÊp bËc t­¬ng øng  míi cã thÓ håi phôc (cÊp 90, 120 sÏ kh«i phôc c¸c kü n¨ng vèn cã). Ngoµi ra, sÏ b¶o l­u tÊt c¶ nh÷ng ®iÓm kü n¨ng vµ tiÒm n¨ng cña ®¹i hiÖp.<enter> Nãi chung, ®¹i hiÖp cÇn b¾t ®Çu tõ ®Çu. Nh­ng còng ®õng  qu¸ n«n nãng, ®îi ng­¬i lªn cÊp 120 130 sÏ t¸i xuÊt  giang hå, thiªn h¹ nµy vÉn lµ thiªn h¹ cña ng­¬i mµ."};
 	local n_level = GetLevel();
 	local n_transcount = ST_GetTransLifeCount();
 	
 	local n_date = tonumber(GetLocalDate("%Y%m%d"));
 	
 	if (n_transcount == 0 and n_level == 199 and (n_date >= ZHUANSHENG_ITEM_BEGIN and n_date <= ZHUANSHENG_ITEM_ENDLE)) then --ĞèÒª¼ÓÈëÊ±¼äÏŞÖÆ
-		tinsert(tbOpp, "ÎÒÏëÁË½â±±¶·ÏÉµ¤/zhuansheng_xiandan");
+		tinsert(tbOpp, "Ta muèn t×m hiÓu vÒ B¾c §Èu Tiªn §¬n/zhuansheng_xiandan");
 	end
 	
-	tinsert(tbOpp, "ÇëÎÊĞŞÁ¶ <±±¶·³¤ÉúÊõ-ĞÄ·¨Æª> ĞèÒªÊ²Ã´Ìõ¼ş /zhuansheng_help_require");
-	tinsert(tbOpp, "ÔõÃ´ÑùÄÜÑ§µ½<±±¶·³¤ÉúÊõ-ĞÄ·¨Æª>?/zhuansheng_help_method");
-	tinsert(tbOpp, "ÇëÎÊÎÒµÄµÈ¼¶¿ÉÒÔ±£Áô¼¼ÄÜµãºÍÇ±ÄÜ¶à¾Ã?/zhuansheng_help_prop");
-	tinsert(tbOpp, "ÇëÎÊÎÒ¿ÉÒÔĞŞÁ¶µ½Ê²Ã´³Ì¶È?/zhuansheng_query");
-	tinsert(tbOpp, "ÇëÎÊ¼ÌĞø×ªÉúµÄÊ±¼ä: /zhuansheng_time");
-	tinsert(tbOpp, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tbOpp, "Xin hái tu luyÖn <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> cÇn nh÷ng ®iÒu kiÖn g×?/zhuansheng_help_require");
+	tinsert(tbOpp, "Lµm thÕ nµo cã thÓ häc <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn>?/zhuansheng_help_method");
+	tinsert(tbOpp, "Xin hái ®¼ng cÊp cña ta cã thÓ l­u gi÷ bao nhiªu ®iÓm kü n¨ng vµ tiÒm n¨ng?/zhuansheng_help_prop");
+	tinsert(tbOpp, "Xin hái ta cã thÓ tu luyÖn ®Õn møc ®é nµo råi?/zhuansheng_query");
+	tinsert(tbOpp, "Xin hái thêi gian ®Ó chuyÓn sinh lÇn kÕ tiÕp: /zhuansheng_time");
+	tinsert(tbOpp, "KÕt thóc ®èi tho¹i/OnCancel");
 	
 	CreateTaskSay(tbOpp);
 end
@@ -49,48 +49,48 @@ end
 --×ªÉúµÄÌõ¼ş
 function zhuansheng_help_require()
 	
-	CreateTaskSay({"<dec><npc>§iÌõ¼şºÜ¼òµ¥"
-		.."<enter>  ".."1. ÒªÇóÖØÉúµÈ¼¶:"
-		.."<enter>    "..format("ÖØÉú´ÎÊıÎª %d, µÈ¼¶²»ÄÜĞ¡ÓÚ%d", 1, TB_LEVEL_LIMIT[1])
-		.."<enter>    "..format("ÖØÉú´ÎÊıÎª%d, µÈ¼¶²»ÄÜĞ¡ÓÚ%d", 2, TB_LEVEL_LIMIT[2])
-		.."<enter>    "..format("ÖØÉú´ÎÊıÎª%d, µÈ¼¶²»ÄÜĞ¡ÓÚ%d", 3, TB_LEVEL_LIMIT[3])
-		.."<enter>    "..format("ÖØÉú´ÎÊıÎª%d, µÈ¼¶²»ÄÜĞ¡ÓÚ%d", 4, TB_LEVEL_LIMIT[4])
-		.."<enter>    "..format("ÖØÉú´ÎÊıÎª%d, µÈ¼¶²»ÄÜĞ¡ÓÚ%d", 5, TB_LEVEL_LIMIT[5])
-		.."<enter>  ".."2. ÒÑÑ§ <±±¶·³¤ÉúÊõ-»ù´¡Æª>"
-		.."<enter>  ".."3. ÍÑÏÂËùÓĞ×°±¸."
-		.."<enter>  ".."4. ĞèÒªÍÑÀëÎäÁÖÁªÈüÕ½¶Ó."
-		.."<enter>  ".."5. ²»ĞĞ£¬»¹ÓĞÎªÍê³ÉµÄÈÎÎñ(É±ÊÖ£¬ĞÅÊ¹£¬Ò°ÛÅ)."
-		.."<enter>  ".."6. µÚÒ»´Îµ½µÚÈı´Î×ªÉú£¬ĞèÒª100ÍòÁ½£¬µÚËÄ´Î×ªÉúĞèÒª200ÍòÁ½"
-		.."<enter>  "..format("7. µÚËÄ´Î×ªÉúĞèÒª %d ¸ö%s.", TBITEMNEED_4[1].nCount, TBITEMNEED_4[1].szName)
-		.."<enter>  "..format("8. µÚËÄ´Î×ªÉúĞèÒª%d ¸ö%s.", TBITEMNEED_4[2].nCount, TBITEMNEED_4[2].szName)
-		.."<enter>  ".."9. Î´½Ó»òÕßÎ´Íê³É150¼¼ÄÜÈÎÎñ",
+	CreateTaskSay({"<dec><npc>§iÒu kiÖn rÊt ®¬n gi¶n"
+		.."<enter>  ".."1. Yªu cÇu ®¼ng cÊp trïng sinh:"
+		.."<enter>    "..format("LÇn trïng sinh thø %d, ®¼ng cÊp kh«ng ®­îc nhá h¬n %d", 1, TB_LEVEL_LIMIT[1])
+		.."<enter>    "..format("LÇn trïng sinh thø %d, ®¼ng cÊp kh«ng ®­îc nhá h¬n %d", 2, TB_LEVEL_LIMIT[2])
+		.."<enter>    "..format("LÇn trïng sinh thø %d, ®¼ng cÊp kh«ng ®­îc nhá h¬n %d", 3, TB_LEVEL_LIMIT[3])
+		.."<enter>    "..format("LÇn trïng sinh thø %d, ®¼ng cÊp kh«ng ®­îc nhá h¬n %d", 4, TB_LEVEL_LIMIT[4])
+		.."<enter>    "..format("LÇn trïng sinh thø %d, ®¼ng cÊp kh«ng ®­îc nhá h¬n %d", 5, TB_LEVEL_LIMIT[5])
+		.."<enter>  ".."2. §· häc <B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>"
+		.."<enter>  ".."3. Cëi bá tÊt c¶ trang bŞ vµ ngùa trªn ng­êi."
+		.."<enter>  ".."4. B¾t buéc ph¶i tho¸t khái chiÕn ®éi vâ l©m liªn ®Êu."
+		.."<enter>  ".."5. Kh«ng ®­îc cßn nhiÖm vô ch­a hoµn thµnh (S¸t thñ, tİn sø, D· TÈu)."
+		.."<enter>  ".."6. ChuyÓn sinh lÇn thø 1 ®Õn thø 3 cÇn cã 100 v¹n l­îng, chuyÓn sinh lÇn thø 4 cÇn cã 200 v¹n l­îng"
+		.."<enter>  "..format("7. ChuyÓn sinh lÇn 4 cÇn cã %d c¸i %s.", TBITEMNEED_4[1].nCount, TBITEMNEED_4[1].szName)
+		.."<enter>  "..format("8. ChuyÓn sinh lÇn 4 cÇn cã %d c¸i %s.", TBITEMNEED_4[2].nCount, TBITEMNEED_4[2].szName)
+		.."<enter>  ".."9. Ch­a nhËn hoÆc ch­a hoµn thµnh nhiÖm vô kÜ n¨ng cÊp 150",
 		--.."<enter>¡¡¡¡".."3¡¢±ØĞëÇå³ıÊ¦Í½¹ØÏµ¡£", ¸ÄÎª×ªÉúºó80¼¶ÒÔÏÂ²»ÄÜÊ¹ÓÃÊ¦Í½Áî
-		"ÁË½âÆäËûÊÂ./zhuansheng_ondialog",
-		"ÎÒÖªµÀÁË./OnCancel"});
+		"T×m hiÓu viÖc kh¸c./zhuansheng_ondialog",
+		"Ta hiÓu råi./OnCancel"});
 end
 
 --×ªÉúµÄºÃ´¦
 function zhuansheng_help_effect()
-	CreateTaskSay({"<dec><npc>1. »ñµÃ¼¼ÄÜµãºÍÇ±ÄÜ"
-	.."<enter>  ".."2. »ñµÃ¸ü³¤Ê±¼äµÄ¿¹ĞÔ£¬µÃµ½¸ü¶àµÄÉú´æÄÜÁ¦."
-	.."<enter>  ".."3. Ôö¼ÓÎä¹¦¼¼ÄÜÉÏÏŞ×î¸ß£¬½«»ñµÃ¸üÇ¿µÄ¹¥»÷Á¦ºÍ¸ü¿ìµÄ´ò»÷ËÙ¶È."
-	.."<enter>  ".."4. ¿ÉÒÔÊ¹ÓÃÒ»Ğ©×îĞÂ×°±¸"
-	.."<enter>  ".."5. »ñµÃÒ»´ÎÃâ·ÑÏ´µãµÄ»ú»á",
-		"ÁË½âÆäËûÊÂ./zhuansheng_ondialog",
-		"ÎÒÖªµÀÁË./OnCancel"});
+	CreateTaskSay({"<dec><npc>1. Thu ®­îc ®iÓm d­ kü n¨ng vµ tiÒm n¨ng"
+	.."<enter>  ".."2. Thu ®­îc kh¸ng tİnh cã giíi h¹n cao h¬n, cã ®­îc n¨ng lùc sinh tån nhiÒu h¬n."
+	.."<enter>  ".."3. T¨ng giíi h¹n kü n¨ng vâ c«ng cao nhÊt, sÏ cã ®­îc lùc c«ng kİch m¹nh h¬n vµ tèc ®é ®¸nh nhanh h¬n."
+	.."<enter>  ".."4. Cã thÓ sö dông 1 sè trang bŞ míi nhÊt"
+	.."<enter>  ".."5. Thu ®­îc c¬ héi 1 lÇn tÈy ®iÓm miÔn phİ",
+		"T×m hiÓu viÖc kh¸c./zhuansheng_ondialog",
+		"Ta hiÓu råi./OnCancel"});
 end
 
 --ÈçºÎÑ§Ï°×ªÉú
 function zhuansheng_help_method()
-	CreateTaskSay({"<dec><npc>Èç¹ûÒÑÑ§¹ı<±±¶·³¤ÉúÊõ-»ù´¡Æª>, ÄÇÎÒ¾Í¿ÉÒÔ½ÌÄã<±±¶·³¤ÉúÊõ-ĞÄ·¨Æª>."
-		.. "×ªÉú1-3´Î£¬ĞèÒª100ÍòÁ½¾ÍĞĞ£¬×ªÉú4´Î£¬ĞèÒª200ÍòÁ½£¬¹ş¹ş."
-		.. "<enter>ÌáĞÑÒ»ÏÂ£¬Èç¹ûÏë×ªÉú4£¬Ê×ÏÈÒª½ÓÈÎÎñ£¬È»ºóÈ¥"
-		.. "<color=yellow>³¤°×É½ÄÏ£¬Ò©Íõ¶´4²ã£¬É³Ä®É½¶´3£¬ÂãÀÇ¶´<color> ´ò°Ü <color=yellow> Ëªµ¶£¬´©É½£¬¼²·ç£¬¹÷Ó°<color>"
-		.. "²ÅÓĞÒ»¶¨±ÈÀı»ñµÃÅùö¨µ¯×ªÉú4.", 
-		"ºÃ£¬ÎÒÏëÂíÉÏÑ§./zhuansheng_want_learn",
-		"×ªÉú4ÈÎÎñ/wantGetTranslifeTask_4",
-		"ÎÒÏëÁË½âÏ¸½Ú/zhuansheng_ondialog",
-		"ÎÒÖªµÀÁË OnCancel"});
+	CreateTaskSay({"<dec><npc>NÕu nh­ ng­¬i ®· häc qua <B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>, th× ta cã thÓ ®äc khÈu   quyÕt d¹y ng­¬i <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn>."
+		.. "ChuyÓn sinh lÇn 1 ®Õn lÇn 3 cÇn cã 10 ngµn v¹n l­îng lµ ®­îc, chuyÓn sinh lÇn 4 th× ph¶i 20 ngµn v¹n, ha ha."
+		.. "<enter>Nh¾c nhë mét chót lµ, nÕu nh­ muèn chuyÓn sinh lÇn 4, tr­íc tiªn b¶n th©n m×nh cÇn ph¶i nhËn nhiÖm vô, sau ®ã h·y ®i"
+		.. "<color=yellow>Tr­êng B¹ch S¬n Nam, D­îc V­¬ng §éng TÇng 4, Sa M¹c S¬n §éng 3, Kháa Lang §éng <color> ®¸nh b¹i <color=yellow> S­¬ng §ao, Xuyªn S¬n, TËt Phong, ¶nh C«n <color>"
+		.. "Míi cã tØ lÖ nhÊt ®Şnh nhËn ®­îc Tİch LŞch §¬n vËt cÇn thiÕt ®Ó chuyÓn sinh 4.", 
+		"§­îc, ta muèn häc ngay./zhuansheng_want_learn",
+		"NhËn nhiÖm vô chuyÓn sinh 4/wantGetTranslifeTask_4",
+		"Ta muèn t×m hiÓu chi tiÕt h¬n/zhuansheng_ondialog",
+		"Ta biÕt rå/OnCancel"});
 end
 
 --ÏëÒªÑ§Ï°×ªÉú
@@ -99,15 +99,15 @@ function zhuansheng_want_learn()
 	local n_transcount = ST_GetTransLifeCount()
 	
 	if (n_transcount >= 4) then
-		CreateTaskSay({"<dec><npc>"..format("µÚ %d ×ªÉúÎ´¿ª£¬¾ßÌåÊ±¼ä½«ÉÔºò¸üĞÂ", 5), 
-			"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>"..format("LÇn chuyÓn sinh thø %d vÉn ch­a më, thêi gian cô thÓ sÏ cËp nhËt sau", 5), 
+			"KÕt thóc ®èi tho¹i/OnCancel"});
 		return 0;
 	end
 
 	local nTaskValue = GetTask(2885)
 	local nTmpRes = floor(nTaskValue/100)
 	if nTaskValue > 0 and mod(nTmpRes, 100) < 14 then
-		Msg2Player("ÄãÒÑ½Ó150¼¼ÄÜ£¬ÇëÍê³ÉÈÎÎñºóÀ´¼ûÎÒ")
+		Msg2Player("Ng­¬i ®· nhËn nhiÖm vô kü n¨ng 150, xin h·y hoµn thµnh nhiÖm vô råi h·y ®Õn gÆp ta")
 		return 
 	end
 
@@ -116,17 +116,17 @@ function zhuansheng_want_learn()
 	end
 	
 	if (n_transcount == 0) then
-		CreateTaskSay({"<dec><npc>".."×ªÉúµÚÎå´Î£¬·ÀÓù½«Ôö¼Ó.", 
-			"ºÃ£¬ÎÒÏëÂíÉÏÑ§./#zhuansheng_sure_learn(-1)", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."LÇn chuyÓn sinh thø nhÊt 5 lo¹i phßng ngù sÏ gia t¨ng.", 
+			"§­îc, ta muèn häc ngay./#zhuansheng_sure_learn(-1)", "KÕt thóc ®èi tho¹i/OnCancel"});
 	elseif (n_transcount < 0 or n_transcount >=5) then
-		Say("Òì³£×´¿öÇëÁªÏµ¹ÜÀí²¿´¦Àí", 0);
+		Say("Tr¹ng th¸i bÊt th­êng xin mêi liªn l¹c víi nhµ ®iÒu hµnh xö lı.", 0);
 	else
-		local tbOpp = {"<dec><npc>".."ÇëÑ¡ÔñÏëÔö¼ÓµÄ·ÀÓùµã:"};
+		local tbOpp = {"<dec><npc>".."Xin mêi chän ®iÓm phßng ngù muèn t¨ng:"};
 		
 		for k, sz in TB_BASE_RESIST do
 			tinsert(tbOpp, format("%s%s/#zhuansheng_sure_learn(%d)", "+", sz, k));
 		end
-		tinsert(tbOpp, "½áÊø¶Ô»°/OnCancel")
+		tinsert(tbOpp, "KÕt thóc ®èi tho¹i/OnCancel")
 		CreateTaskSay(tbOpp);
 		
 	end
@@ -143,9 +143,9 @@ function zhuansheng_sure_learn(n_resist)
 		for i = 2, n_transcount do
 			local n_translevel, n_transresist = zhuansheng_get_gre(i);
 			if (n_translevel ~= 0 and n_transresist == n_resist) then
-				CreateTaskSay({"<dec><npc>"..format("ÕâÊÇµÚ%d ´ÎÒÑÑ¡Ôñ×ªÉú %s Ò»¸ö·ÀÓùµã²»ÄÜÑ¡Ôñ¶à´Î£¬ÇëÖØĞÂÑ¡Ôñ.", i, TB_BASE_RESIST[n_resist]),
-								"ÎÒÏëÖØÑ¡/zhuansheng_want_learn",
-								"½áÊø¶Ô»°/OnCancel"});
+				CreateTaskSay({"<dec><npc>"..format("§©y lµ lÇn chuyÓn sinh thø %d vµ ®· chän %s kh«ng thÓ chän nhiÒu lÇn 1 ®iÓm phßng ngù, xin mêi h·y chän l¹i.", i, TB_BASE_RESIST[n_resist]),
+								"Ta muèn chän l¹i/zhuansheng_want_learn",
+								"KÕt thóc ®èi tho¹i/OnCancel"});
 				return 0;
 			end
 		end
@@ -161,7 +161,7 @@ function zhuansheng_sure_learn(n_resist)
 	
 	ST_DoTransLife();		--Ö´ĞĞ×ªÉú£¬»á×Ô¶¯µ÷ÓÃ\\script\\global\\translife.luaµÄmainº¯Êı ·µ»ØÖµÎª1Îª³É¹¦£¬³É¹¦ºó»á¼ÇÂ¼×ªÉúÇ°µÄµÈ¼¶¡£
 	
-	CreateTaskSay({"<dec><npc>ÄãÒÑ¾­Ñ§ <±±¶·³¤ÉúÊõ-ĞÄ·¨Æª> ÁË.", "§a¶àĞ»Ê¦¸¸Ö¸½Ì/OnCancel"});
+	CreateTaskSay({"<dec><npc>Ng­¬i ®· häc <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> råi.", "§a ta s­ phô ®· chØ gi¸o/OnCancel"});
 end
 
 function check_zhuansheng()
@@ -175,12 +175,12 @@ function check_zhuansheng()
 		if tbPVLB_Check:IsNewPlayer() == 1 and tbPVLB_Check:CheckTime() == 1 then
 			local tb = {6, 10, 180, 180, 180}
 			if (GetTask(TSK_ZHUANSHENG_LASTTIME) + tb[ntranscount]*24*60*60 >= GetCurServerTime()) then
-				CreateTaskSay({format(TB_TRANSLIFE_ERRORMSG[12], tb[ntranscount]), "¿ÉÒÔÁË./OnCancel"});
+				CreateTaskSay({format(TB_TRANSLIFE_ERRORMSG[12], tb[ntranscount]), "§­îc råi./OnCancel"});
 				return 0;
 			end
 		else
 			if (GetTask(TSK_ZHUANSHENG_LASTTIME) + TB_TRANSTIME_LIMIT[ntranscount]*24*60*60 >= GetCurServerTime()) then
-				CreateTaskSay({format(TB_TRANSLIFE_ERRORMSG[12], TB_TRANSTIME_LIMIT[ntranscount]), "¿ÉÒÔÁË./OnCancel"});
+				CreateTaskSay({format(TB_TRANSLIFE_ERRORMSG[12], TB_TRANSTIME_LIMIT[ntranscount]), "§­îc råi./OnCancel"});
 				return 0;
 			end
 		end	
@@ -189,7 +189,7 @@ function check_zhuansheng()
 	--type=2 ºÃÏñÊÇÉíÉÏ
 	--type=3 Ó¦¸ÃÊÇ±³°ü
 	if (CalcItemCount(2,0,-1,-1,-1) > 0) then
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[1], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[1], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	--if (check_zhuansheng_league(LG_SHITULEAGUE) == 1) then	--Ê¦Í½¹ØÏµ
@@ -198,29 +198,29 @@ function check_zhuansheng()
 	--end
 	--µ±ÖØÉú4Ê±£¬ÔİÊ±È¡ÏûÁªÈüÀë¿ª¶ÓÎéÌõ¼ş - Modified By DinhHQ - 20110813
 	if ntranscount < 3 and (check_zhuansheng_league(LG_WLLSLEAGUE) == 1) then	--Õ½¶Ó¹ØÏµ
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[6], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[6], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	if (GetTask(TSK_KILLER_ID) ~= 0) then	--É±ÊÖÈÎÎñÍê³É
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[8], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[8], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	if (GetTask(TSK_MESSENGER_FENG) ~= 0 or GetTask(TSK_MESSENGER_SHAN) ~= 0 or GetTask(TSK_MESSENGER_QIAN) ~= 0 ) then	--ĞÅÊ¹ÈÎÎñÍê³É
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[9], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[9], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	if (GetTask(TSK_TASKLINK_STATE) ~= 3 and GetTask(TSK_TASKLINK_STATE) ~= 0) then	--Ò°ÛÅÈÎÎñÍê³É
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[10], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[10], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	
 	if GetTask(TSK_TASKLINK_CancelTaskLevel) ~= 0 or GetTask(TSK_TASKLINK_CancelTaskExp1) ~= 0 or GetTask(TSK_TASKLINK_CancelTaskExp2) ~= 0 then
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[11], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[11], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	
 	if (GetTask(TSK_ZHUANSHENG_FLAG) ~= 1) then							--»ù´¡ÆªµÄÑ§Ï°
-		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[4], "¿ÉÒÔÁË./OnCancel"});
+		CreateTaskSay({TB_TRANSLIFE_ERRORMSG[4], "§­îc råi./OnCancel"});
 		return 0;
 	end
 	
@@ -228,23 +228,23 @@ function check_zhuansheng()
 	if tbPVLB_Check:IsNewPlayer() == 1 and tbPVLB_Check:CheckTime() == 1 then
 		if ntranscount == 0 then
 		 	if GetCash() < 1000000 then
-				CreateTaskSay({"Ä¿Ç°Ç®²»¹»®ñ <color=red>1000000<color>.", "¿ÉÒÔÁË./OnCancel"});
+				CreateTaskSay({"H×nh nh­ tiÒn vÉn ch­a ®ñ <color=red>1000000<color>.", "§­îc råi./OnCancel"});
 				return 0;
 			end
 		elseif ntranscount == 1 then
 			if GetCash() < 20000000 then
-				CreateTaskSay({"Ä¿Ç°Ç®²»¹»®ñ <color=red>20000000<color>.", "¿ÉÒÔÁË./OnCancel"});
+				CreateTaskSay({"H×nh nh­ tiÒn vÉn ch­a ®ñ <color=red>20000000<color>.", "§­îc råi./OnCancel"});
 				return 0;
 			end
 		else
 			if (ntranscount < 3 and GetCash() < ZHUANSHENG_TUITION) then				--jxbÒª1ÒÚ
-				CreateTaskSay({TB_TRANSLIFE_ERRORMSG[2], "¿ÉÒÔÁË./OnCancel"});
+				CreateTaskSay({TB_TRANSLIFE_ERRORMSG[2], "§­îc råi./OnCancel"});
 				return 0;
 			end
 		end
 	else
 		if (ntranscount < 3 and GetCash() < ZHUANSHENG_TUITION) then				--jxbÒª1ÒÚ
-			CreateTaskSay({TB_TRANSLIFE_ERRORMSG[2], "¿ÉÒÔÁË./OnCancel"});
+			CreateTaskSay({TB_TRANSLIFE_ERRORMSG[2], "§­îc råi./OnCancel"});
 			return 0;
 		end
 	end
@@ -253,14 +253,14 @@ function check_zhuansheng()
 		for i=1,getn(TBITEMNEED_4) do
 			local tbProb = TBITEMNEED_4[i].tbProb
 			if CalcItemCount(3,tbProb[1], tbProb[2],tbProb[3], -1) < TBITEMNEED_4[i].nCount then
-				CreateTaskSay({TB_TRANSLIFE_ERRORMSG[13 + i], "¿ÉÒÔÁË./OnCancel"})
+				CreateTaskSay({TB_TRANSLIFE_ERRORMSG[13 + i], "§­îc råi./OnCancel"})
 				return 0
 			end
 		end
 		
 		-- 4×ª¶şÒÚjxb
 		if GetCash() < ZHUANSHENG_TUITION_4 then	
-			CreateTaskSay({TB_TRANSLIFE_ERRORMSG[13], "¿ÉÒÔÁË./OnCancel"});
+			CreateTaskSay({TB_TRANSLIFE_ERRORMSG[13], "§­îc råi./OnCancel"});
 		return 0;
 		end
 	end
@@ -283,11 +283,11 @@ function zhuansheng_help_prop()
 													TB_LEVEL_REMAIN_PROP[nlevel][ntranscount+1][3],
 													TB_LEVEL_REMAIN_PROP[nlevel][ntranscount+1][4];
 	
-	local sz_res = "Ñ¡ÔñÒ»ÖÖ¿¹ĞÔ";
+	local sz_res = "Chän 1 lo¹i kh¸ng tİnh";
 	local sz_addskill = "";
 	
 	if (ntranscount == 0) then
-		sz_res = "ËùÓĞ¿¹ĞÔ";
+		sz_res = "TÊt c¶ kh¸ng tİnh";
 	end
 	
 	if (nlevel == 199 and ncurexp >= ZHUANSHENG_XIANDAN_MINEXP and ntranscount == 0) then
@@ -295,13 +295,13 @@ function zhuansheng_help_prop()
 												TB_LEVEL_REMAIN_PROP[200][ntranscount+1][2],
 												TB_LEVEL_REMAIN_PROP[200][ntranscount+1][3],
 												TB_LEVEL_REMAIN_PROP[200][ntranscount+1][4];
-		sz_addskill = "[Ä¿Ç°¾­ÑéÒÑ³¬¹ı20ÒÚ ]";
+		sz_addskill = "[HiÖn t¹i kinh nghiÖm ®· v­ît qu¸ 2 tû:]";
 	end
 	
-	CreateTaskSay({"<dec><npc>"..format("¸ù¾İ¼¶±ğ %d ÖØÉú%d ´Î, %s Ôö¼Ó <color=yellow>%d<color> Ç±ÄÜ, <color=yellow>%d <color> ¼¼ÄÜ, Ôö¼Ó <color=yellow>%d%%<color> ¿¹ĞÔ(%s), Ôö¼Ó <color=yellow>%d <color> ×î¸ß¼¼ÄÜÉÏÏŞ.", 
+	CreateTaskSay({"<dec><npc>"..format("Theo nh­ cÊp %d cña ng­¬i vµ trïng sinh %d lÇn, %s cã thÓ t¨ng <color=yellow>%d<color> tiÒm n¨ng, <color=yellow>%d <color> kü n¨ng, t¨ng <color=yellow>%d%%<color> kh¸ng tİnh (%s), n©ng cao <color=yellow>%d <color> giíi h¹n kü n¨ng cao nhÊt.", 
 				nlevel, (ntranscount+1), sz_addskill, nprop, nmgpoint, nresist, sz_res, naddskill), 
-		"ÁË½âÆäËûÊÂ./zhuansheng_ondialog",
-		"¿ÉÒÔÁË./OnCancel"});
+		"T×m hiÓu viÖc kh¸c./zhuansheng_ondialog",
+		"§­îc råi./OnCancel"});
 end
 
 
@@ -321,44 +321,44 @@ function zhuansheng_query()
 			nskill = TB_LEVEL_REMAIN_PROP[nlevel][i][4] + nskill;
 			if (nresistid >= 0 and nresistid <= 4) then
 				tbresist[nresistid+1] = tbresist[nresistid+1] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
-				sz_msg = sz_msg.."<enter>"..format("ÖØÉú´ÎÊı %d µÈ¼¶: %d; Ñ¡Ôñ¿¹ĞÔ: %s", i, nlevel, TB_BASE_RESIST[nresistid]);
+				sz_msg = sz_msg.."<enter>"..format("Trïng sinh lÇn %d ®¼ng cÊp: %d; chän kh¸ng tİnh: %s", i, nlevel, TB_BASE_RESIST[nresistid]);
 			elseif (nresistid == 255) then
 				tbresist[1] = tbresist[1] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
 				tbresist[2] = tbresist[2] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
 				tbresist[3] = tbresist[3] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
 				tbresist[4] = tbresist[4] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
 				tbresist[5] = tbresist[5] + TB_LEVEL_REMAIN_PROP[nlevel][i][3];
-				sz_msg = sz_msg.."<enter>"..format("ÖØÉú´ÎÊı %d µÈ¼¶: %d; Ñ¡Ôñ¿¹ĞÔ: %s", i, nlevel, "ËùÓĞ¿¹ĞÔ");
+				sz_msg = sz_msg.."<enter>"..format("Trïng sinh lÇn %d ®¼ng cÊp: %d; chän kh¸ng tİnh: %s", i, nlevel, "TÊt c¶ kh¸ng tİnh");
 			end
 		end
 	end
 	
 	CreateTaskSay({format("%s<enter>%s<enter>%s<enter>%s<enter>%s<enter>%s<enter>%s<enter>%s<enter>%s<enter>%s%s", 
 					"<dec><npc>",
-					format("×ªÉú´ÎÊı: %d", n_transcount),
-					format("»ñµÃ¼¼ÄÜµã: %d", nmgpoint),
-					format("»ñµÃÇ±ÄÜµã: %d", nprop),
-					format("×î¸ß¼¼ÄÜµãÔö¼Ó: %d", nskill),
-					format("»ğ·ÀÔö¼Ó: %d", tbresist[1]),
-					format("±ù·ÀÔö¼Ó: %d", tbresist[2]),
-					format("¶¾·ÀÔö¼Ó: %d", tbresist[3]),
-					format("À×·ÀÔö¼Ó: %d", tbresist[4]),
-					format("ÆÕ·ÀÔö¼Ó: %d", tbresist[5]),
+					format("Sè lÇn chuyÓn sinh: %d", n_transcount),
+					format("Thu ®­îc ®iÓm kü n¨ng: %d", nmgpoint),
+					format("Thu ®­îc ®iÓm tiÒm n¨ng: %d", nprop),
+					format("§iÓm kü n¨ng cao nhÊt t¨ng thªm: %d", nskill),
+					format("Háa phßng t¨ng: %d", tbresist[1]),
+					format("B¨ng phßng t¨ng: %d", tbresist[2]),
+					format("§éc phßng t¨ng: %d", tbresist[3]),
+					format("L«i phßng t¨ng: %d", tbresist[4]),
+					format("Phæ phßng t¨ng: %d", tbresist[5]),
 					sz_msg
 					), 
-			"ÁË½âÆäËûÊÂ./zhuansheng_ondialog",
-			"¿ÉÒÔÁË./OnCancel"});
+			"T×m hiÓu viÖc kh¸c./zhuansheng_ondialog",
+			"§­îc råi./OnCancel"});
 	
 end
 
 
 function zhuansheng_xiandan()
 	
-	CreateTaskSay({"<dec><npc>".."'±±¶·ÏÉµ¤ÊÇÒ»ÖÖÁéÒ©£¬ÄÇÎ»ÎäÁÖ¸ßÊÖÓĞÉîºñµÄÄÚ¹¦£¬ÏëÑ§±±¶·³¤ÉúÊõ£¬¶¼ĞèÒªÓÃµ½£¬Ê¹ÓÃºó¿ÉÒÔÔö¼Ó¹¦Á¦¡£ÖÆÔì±±¶·ÏÉµ¤ĞèÒª199¼¶ºÍ201000Íò¾­Ñé²ÅÄÜÖÆÔì¡£ÔÚÖÆÔì±±¶·ÏÉµ¤Ê±£¬³¬¹ı20ÒÚµÄ¾­Ñé½«×ª»¯ÎªÏÉµ¤¡£µ«ÊÇ£¬¼Ç×¡£¬ĞèÒª×ªÉúÍêºó²ÅÄÜÊ¹ÓÃ£¬Ã¿ÈË×î¶àÊ¹ÓÃÒ»¿ÅÁéÒ©¡£Í¬Ê±ĞèÒªÔÚ30ÌìÄÚÊ¹ÓÃ¡£ÏÉµ¤µÄµ¥Î»Îª100Íò£¬ËùÒÔ£¬¾­ÑéÓàÊı½«±»È¥µô¡£ÄãÏëÖÆÔì±±¶·Áéµ¤Âğ?",
-				"ÖÆÔì±±¶·Áéµ¤ §¬n/zhuansheng_makexiandan",
-				"ÁË½â¾­Ñéµã/zhuansheng_help_xiandan",
-				"ÍæĞ¦¶àÁË½âÒ»ÏÂ./zhuansheng_ondialog",
-				"½áÊø¶Ô»°/OnCancel"
+	CreateTaskSay({"<dec><npc>".."'B¾c ®Èu tiªn ®¬n' lµ lo¹i linh d­îc mµ vŞ vâ l©m cao thñ cã néi c«ng th©m hËu nµo muèn häc 'B¾c ®Èu tr­êng sinh thuËt'  ®Òu ph¶i dïng ®Õn, sau khi sö dông cã thÓ t¨ng thªm nhiÒu phÇn c«ng lùc. ChÕ t¹o B¾c §Èu Tiªn §¬n b¾t buéc cÊp 199 vµ cã 201000 v¹n kinh nghiÖm míi chÕ t¹o ®­îc, lóc chÕ t¹o B¾c §Èu Tiªn §¬n nh÷ng kinh nghiÖm v­ît qu¸ 2 tû sÏ chuyÓn hãa vµo tiªn ®¬n. Nªn nhí r»ng ph¶i chuyÓn sinh xong míi sö dông ®­îc, mçi ng­êi nhiÒu nhÊt sö dông 1 linh ®¬n, ®ång thêi b¾t buéc trong vßng 30 ngµy ph¶i sö dông. Tiªn ®¬n cã ®¬n vŞ kinh nghiÖm lµ 1000 v¹n, v× vËy nh÷ng kinh nghiÖm thõa cã nh÷ng sè kh«ng bŞ l­ît bá ®i. Ng­¬i muèn chÕ t¹o 'B¾c §Èu Tiªn §¬n' kh«ng?",
+				"ChÕ t¹o B¾c §Èu Tiªn §¬n/zhuansheng_makexiandan",
+				"T×m hiÓu vÒ ®iÓm kinh nghiÖm/zhuansheng_help_xiandan",
+				"Ta muèn t×m hiÓu thªm./zhuansheng_ondialog",
+				"KÕt thóc ®èi tho¹i/OnCancel"
 				});
 end
 
@@ -371,7 +371,7 @@ function zhuansheng_makexiandan()
 	end
 	
 	if (GetTask(TSK_ZHUANSHENG_XIANDAN) > 0) then
-		CreateTaskSay({"<dec><npc>".."Ã¿ÈËÖ»ÄÜÖÆÔìÒ»¿Å±±¶·ÏÉµ¤£¬¸óÏÂ²»ÄÜÕâÑù×ö", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Mçi ng­êi chØ cã thÓ chÕ t¹o 1 B¾c §Èu Tiªn §¬n, c¸c h¹ kh«ng thÓ lµm thÕ.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	
@@ -379,14 +379,14 @@ function zhuansheng_makexiandan()
 	if (n_curexp - ZHUANSHENG_XIANDAN_MINEXP >= ZHUANSHENG_XIANDAN_BASEEXP) then
 		local n_addexp = n_curexp - ZHUANSHENG_XIANDAN_MINEXP;
 		n_addexp = floor(n_addexp / 10e7) * 10e7;
-		CreateTaskSay({"<dec><npc>".."ÄãÓĞ"..n_addexp.."¾­Ñé½«±»×ªÎªÏÉµ¤£¬ÄãÈ·¶¨ÏëÖÆÔì±±¶·ÏÉµ¤Âğ?",
-				"¶Ô£¬ÎÒÏëÁ¶ÏÉµ¤!/zhuansheng_surexiandan",
-				"ÎÒÏë¶àÁË½âÒ»ÏÂ./zhuansheng_ondialog",
-				"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Ng­¬i cã"..n_addexp.." kinh nghiÖm sÏ bŞ chuyÓn vµo tiªn ®¬n. Ng­¬i cã x¸c nhËn muèn chÕ t¹o 'B¾c §Èu Tiªn §¬n'?",
+				"§óng råi, ta muèn luyÖn tiªn ®¬n!/zhuansheng_surexiandan",
+				"Ta muèn t×m hiÓu thªm./zhuansheng_ondialog",
+				"KÕt thóc ®èi tho¹i/OnCancel"});
 	else
-		CreateTaskSay({"<dec><npc>".."¸óÏÂµÄ¹¦Á¦²»ÄÜÁ¶³É±±¶·ÏÉµ¤£¬ÏëÁ¶³ÉÏÉµ¤Çë¶àÁ·Ğ©Ê±ÈÕ",
-				"ÎÒÏë¶àÁË½âÒ»ÏÂ./zhuansheng_ondialog",
-				"½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Theo nh­ c«ng lùc cña c¸c h¹ kh«ng thÓ luyÖn thµnh B¾c §Èu Tiªn §¬n, muèn luyÖn thµnh tiªn ®¬n th× xin h·y luyÖn thªm thêi gian n÷a nhĞ!",
+				"Ta muèn t×m hiÓu thªm./zhuansheng_ondialog",
+				"KÕt thóc ®èi tho¹i/OnCancel"});
 	end
 end
 
@@ -399,7 +399,7 @@ function zhuansheng_surexiandan()
 	end
 	
 	if (CalcFreeItemCellCount() < 10) then
-		CreateTaskSay({"<dec><npc>".."×°±¸²»×ã10¸ö¿ÕÎ»£¬ÇëÕûÀí×°±¸", "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({"<dec><npc>".."Hµnh trang kh«ng ®ñ 10 «, xin mêi h·y thu dän hµnh lı.", "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	
@@ -430,10 +430,10 @@ function zhuansheng_surexiandan()
 			SyncItem(nitemidx);
 			SetTask(TSK_ZHUANSHENG_XIANDAN, 1);
 			WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tMakeSuccess,LEVEL:%d,FACTION:%d,ReduceExp:"..n_addexp..",ItemExp:%d",
-						"±±¶·ÏÉµ¤",
+						"B¾c §Èu Tiªn §¬n",
 						GetLocalDate("%Y-%m-%d %X"),GetName(), GetAccount(),
 						GetLevel(), GetLastFactionNumber(), floor(n_addexp / ZHUANSHENG_XIANDAN_BASEEXP)));
-			Msg2Player(format("»ñµÃ1 %s", "±±¶·ÏÉµ¤"));
+			Msg2Player(format("Thu ®­îc 1 %s", "B¾c §Èu Tiªn §¬n"));
 		end
 	end
 	
@@ -441,9 +441,9 @@ end
 
 
 function zhuansheng_help_xiandan()
-	CreateTaskSay({"<dec><npc>".."·²ÊÇ199¼¶ºÍ20¶àÒÚ¾­ÑéĞŞÁ¶±±¶·³¤ÉúÊõ£¬½«Ìá¸ß¿¹ĞÔ£¬µ«ÊÇ£¬¶àÓàµÄ¾­Ñé½«±»ÀË·Ñµô£¬ËùÒÔ£¬ÎÒºÍÒ»Î»ÒşÊ¿·¢Ã÷Ò»ÖÖÏÉµ¤£¬Í¨¹ı±±¶·ÏÉµ¤£¬Äã¿ÉÒÔ±£ÁôÓàÏÂµÄ¾­Ñé£¬ÖØÉúÊ±¿ÉÒÔÓÃµ½.",
-				"ÎÒÏë¶àÁË½âÒ»ÏÂ./zhuansheng_ondialog",
-				"½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({"<dec><npc>".."Phµm nh÷ng ng­êi cã cÊp 199 vµ h¬n 2 tû kinh nghiÖm tu luyÖn 'B¾c §Èu Tr­êng Sinh ThuËt' sÏ ®­îc n©ng cao nh÷ng thuéc tİnh, nh­ng nh÷ng kinh nghiÖm thõa ra sÏ bŞ l·ng phİ. V× vËy cã mét ngµy kia ta vµ 1 vŞ Èn sü ph¸t minh ra lo¹i tiªn ®¬n nµy, th«ng qua 'B¾c §Èu Tiªn §¬n' ng­¬i cã thÓ l­u gi÷ nh÷ng kinh nghiÖm cßn thõa ®Ó lóc trïng sinh xong th× cã thÓ sö dông.",
+				"Ta muèn t×m hiÓu thªm./zhuansheng_ondialog",
+				"KÕt thóc ®èi tho¹i/OnCancel"});
 end
 
 
@@ -454,13 +454,13 @@ function zhuansheng_time()
 	local n_add_time = n_cur_time - n_last_time;
 	
 	if (ntranscount == 0) then
-		CreateTaskSay({"<dec><npc>".."¸óÏÂÎ´Ñ§µ½±±¶·³¤ÉúÊõ£¬Ö»ĞèÒªÂú×ãÌõ¼ş¾ÍÄÜ×ªÉú.", "½áÊø¶Ô»°/OnCancel"})
+		CreateTaskSay({"<dec><npc>".."C¸c h¹ vÉn ch­a häc B¾c §Èu TruyÒn Sinh ThuËt, chØ cÇn ®ñ ®iÒu kiÖn nµy th× cã thÓ chuyÓn sinh ngay lËp tøc.", "KÕt thóc ®èi tho¹i/OnCancel"})
 	else
 		if (n_add_time >= TB_TRANSTIME_LIMIT[ntranscount]*24*60*60) then
-			CreateTaskSay({"<dec><npc>".."ÒÑ¹»×ªÉú¼ä¸ôÊ±¼äÌõ¼ş£¬Ö»ĞèÒªÂú×ãÌõ¼ş¾ÍÄÜ×ªÉú.", "½áÊø¶Ô»°/OnCancel"})
+			CreateTaskSay({"<dec><npc>".."§· ®ñ ®iÒu kiÖn gi·n c¸ch thêi gian chuyÓn sinh, chØ cÇn ®ñ ®iÒu kiÖn th× cã thÓ lËp tøc chuyÓn sinh.", "KÕt thóc ®èi tho¹i/OnCancel"})
 		else
 			
-			CreateTaskSay({"<dec><npc>"..format("»¹ÓĞ %d Ìì²ÅÄÜ¼ÌĞø×ªÉú.",ceil((TB_TRANSTIME_LIMIT[ntranscount]*24*60*60 - n_add_time) / (24*60*60))), "½áÊø¶Ô»°/OnCancel"})
+			CreateTaskSay({"<dec><npc>"..format("Cßn %d ngµy míi cã thÓ tiÕp tôc chuyÓn sinh.",ceil((TB_TRANSTIME_LIMIT[ntranscount]*24*60*60 - n_add_time) / (24*60*60))), "KÕt thóc ®èi tho¹i/OnCancel"})
 		end
 	end
 end

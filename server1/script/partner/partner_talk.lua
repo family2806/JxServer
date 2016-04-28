@@ -30,7 +30,7 @@ function main()
 	local NpcCount = PARTNER_Count()
 	local nSettingIdx = PARTNER_GetSettingIdx(partnerindex)
 	if (partnerindex < 1 or partnerstate == 0) then
-		Msg2Player("ÄãÏÖÔÚÃ»ÓĞÕÙ³öÍ¬°é£¬²»ÄÜÓëÍ¬°é¶Ô»°£¡")
+		Msg2Player("HiÖn b¹n kh«ng thÓ gäi §ång hµnh, kh«ng thÓ ®èi tho¹i víi §ång hµnh!")
 	else
 		local nRowCount0 = TabFile_GetRowCount("partnersex")
 		local RealNpcSex, RealNpcAir
@@ -47,9 +47,9 @@ function main()
 		
 			if GetTask(ID_RANDOMTASK)~=0 and nRandomTaskState<3 then
 			
-					Say("ÄúµÄÍ¬°éÓĞÒ»¸ö <color=green>"..GetTaskText(TaskName(GetTask(ID_RANDOMTASK_WAIT))).."<color> Òª¸øÄú£¬ÄúÏë·ÅÆúÕıÔÚ×öµÄÈÎÎñ¶ø½ÓÊÜĞÂµÄÂğ£¿", 2, 
-						"ÊÇµÄ£¬ÎÒ¶ÔĞÂµÄÈÎÎñ¸ü¸ĞĞËÈ¤Ò»Ğ©/_confirmRandomTask",
-						"²»ÁË£¬ÎÒÖ®Ç°µÄÈÎÎñ»¹Ã»Íê³ÉÄØ/#setRandomTaskState(2)");
+					Say("§ång hµnh cña b¹n cã 1 c¸i <color=green>"..GetTaskText(TaskName(GetTask(ID_RANDOMTASK_WAIT))).."<color> muèn ®­a b¹n, b¹n muèn bá nhiÖm vô hiÖn t¹i ®Ó tiÕp nhËn nhiÖm vô míi?", 2, 
+						"§óng vËy! Ta cã høng thó víi nhiÖm vô míi!/_confirmRandomTask",
+						"Kh«ng ph¶i! NhiÖm vô cña ta ch­a hoµn thµnh!/#setRandomTaskState(2)");
 						
 					return
 				
@@ -80,108 +80,108 @@ function main()
 			if ( PartnerFriendly >= 0 and PartnerFriendly <= 10) then
 				local j = random(2,nRowCount1)
 				local Partner_content = TabFile_GetCell( "friendly_man_w", j ,"friend010")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")				
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")				
 			elseif ( PartnerFriendly >10 and PartnerFriendly <= 19) then
 				local k = random(2,nRowCount1)
 				local Partner_content = TabFile_GetCell( "ffriendly_man_w", k ,"friend1019")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >19 and PartnerFriendly <= 49) then
 			  	local l = random(2,nRowCount1)
 			    local Partner_content = TabFile_GetCell( "friendly_man_w", l ,"friend1949")
-			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >49 and PartnerFriendly <= 84) then
 			   	local m = random(2,nRowCount1)
 			    local Partner_content = TabFile_GetCell( "friendly_man_w", m ,"friend4984")
-			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >84 and PartnerFriendly <= 95) then
 			   	local n = random(2,nRowCount1)
 			    local Partner_content = TabFile_GetCell( "friendly_man_w", n ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >95 and PartnerFriendly <= 100) then
 			  	local o = random(2,nRowCount1)
 			    local Partner_content = TabFile_GetCell( "friendly_man_w", o ,"friend95100")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			end
 		elseif ( peoplesex == 1 ) and ( RealNpcSex == 1 ) then
 			local nRowCount2 = TabFile_GetRowCount("friendly_woman_w")
 			if ( PartnerFriendly >= 0 and PartnerFriendly <= 10) then
 				local p = random(2,nRowCount2)
 				local Partner_content = TabFile_GetCell( "friendly_woman_w", p ,"friend010")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >10 and PartnerFriendly <= 19) then
 				local q = random(2,nRowCount2)
 				local Partner_content = TabFile_GetCell( "friendly_woman_w", q ,"friend1019")
-			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >19 and PartnerFriendly <= 49) then
 			  	local r = random(2,nRowCount2)
 				local Partner_content = TabFile_GetCell( "friendly_woman_w", r ,"friend1949")
-			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >49 and PartnerFriendly <= 84) then
 			   	local s = random(2,nRowCount2)
 			    local Partner_content = TabFile_GetCell( "friendly_woman_w", s ,"friend4984")
-			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+			   	Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >84 and PartnerFriendly <= 95) then
 			   	local t = random(2,nRowCount2)
 			    local Partner_content = TabFile_GetCell( "friendly_woman_w", t ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >95 and PartnerFriendly <= 100) then
 			    local u = random(2,nRowCount2)
 				local Partner_content = TabFile_GetCell( "friendly_woman_w", u ,"friend95100")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			end				
 		elseif ( peoplesex == 0 ) and ( RealNpcSex == 0 ) then
 			local nRowCount3 = TabFile_GetRowCount("friendly_man_m")
 			if ( PartnerFriendly >= 0 and PartnerFriendly <= 10) then
 				local v = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", v ,"friend010")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >10 and PartnerFriendly <= 19) then
 				local w = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", w ,"friend1019")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >19 and PartnerFriendly <= 49) then
 				local x = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", x ,"friend1949")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >49 and PartnerFriendly <= 84) then
 				local y = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", y ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >84 and PartnerFriendly <= 95) then
 				local z = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", z ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >95 and PartnerFriendly <= 100) then
 				local a = random(2,nRowCount3)
 				local Partner_content = TabFile_GetCell( "friendly_man_m", a ,"friend95100")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			end
 		elseif ( peoplesex == 1 ) and ( RealNpcSex == 0 ) then
 			local nRowCount4 = TabFile_GetRowCount("friendly_woman_m")
 			if ( PartnerFriendly >= 0 and PartnerFriendly <= 10) then
 				local b = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", b ,"friend010")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >10 and PartnerFriendly <= 19) then
 				local c = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", c ,"friend1019")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >19 and PartnerFriendly <= 49) then
 				local d = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", d ,"friend1949")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >49 and PartnerFriendly <= 84) then
 				local f = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", f ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >84 and PartnerFriendly <= 95) then
 				local g = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", g ,"friend4984")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			elseif ( PartnerFriendly >95 and PartnerFriendly <= 100) then
 				local h = random(2,nRowCount4)
 				local Partner_content = TabFile_GetCell( "friendly_woman_m", h ,"friend95100")
-				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"½áÊø¶Ô»°/no")
+				Describe(toSprLinkStr(nSettingIdx, 0)..PARTNER_GetName(partnerindex).."<link>:"..Partner_content,1,"KÕt thóc ®èi tho¹i/no")
 			end
 		end
 	end

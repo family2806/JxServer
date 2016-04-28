@@ -2,7 +2,7 @@ ITEMTYPE = 3; --Íæ¼Ò×¨ÓÃµÀ¾ß
         --CastSkill(669,15)
 SKILLTYPE = 700;
 SKILLLEVEL = 5;
-SKILLNAME = "³åÌìÅÚ";
+SKILLNAME = "Ph¸o Trung Thiªn";
 
 Include([[\script\missions\tong\tong_springfestival\head.lua]]);
 
@@ -21,5 +21,5 @@ function main()
         return 1;
     end;
 	CastSkill(SKILLTYPE, SKILLLEVEL)
-	Msg2Player("<#>ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>");
+	Msg2Player("<#> B¹n ®· sö dông mét <color=0xB5FDD7>"..SKILLNAME.."<color>");
 end;

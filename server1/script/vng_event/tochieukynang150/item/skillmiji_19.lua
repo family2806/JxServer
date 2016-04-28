@@ -8,17 +8,17 @@ end
 
 function main(nItemIndex)
 	if tbVNG_BitTask_Lib:getBitTask(tbTrainSkill150.tbBIT_MIJI19) ~= 0 then
-		Talk(1, "", "´óÏÀÒÑÊ¹ÓÃÒ»´Î£¬²»ÄÜÔÙÊ¹ÓÃÁË")	
+		Talk(1, "", "§¹i hiÖp ®· sö dông mét lÇn kh«ng thÓ sö dông n÷a")	
 		return 1
 	end
 	local nTransLife = ST_GetTransLifeCount()
 	if(nTransLife  ~= 2) then
-		Talk(1, "", format("ÖØÉúÈËÎï %d ²»ÄÜÊ¹ÓÃ", nTransLife))
+		Talk(1, "", format("Nh©n vËt trïng sinh %d kh«ng thÓ sö dông", nTransLife))
 		return 1
 	end
 	local nFact = GetLastFactionNumber()
 	if nFact == nil or nFact < 0 or  nFact > 9 then
-		Talk(1, "", "Äã²»¹»Ìõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó´óÏÀ¼ÓÈëÃÅÅÉ")	
+		Talk(1, "", "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm. Yªu cÇu §¹i hiÖp gia nhËp m«n ph¸i")	
 		return
 	end
 	local tb150Skill = tbTrainSkill150.tbFactionList_150[nFact]
@@ -35,6 +35,6 @@ function main(nItemIndex)
 		tbVNG_BitTask_Lib:setBitTask(tbTrainSkill150.tbBIT_MIJI19, 1)
 		return 0
 	end
-	Msg2Player("´óÏÀÃ»ÓĞ´ïµ½18¼¶150¼¶¼¼ÄÜ ");
+	Msg2Player("§¹i hiÖp kh«ng cã kü n¨ng cÊp 150 ®¹t cÊp 18 ");
 	return 1
 end

@@ -14,7 +14,7 @@ Include("\\script\\task\\system\\task_string.lua")
 function main(nItemIdx)
 	local n_fac = GetLastFactionNumber();
 	if (n_fac < 0) then
-		Talk(1, "", "ºÃÏñÕâ±¾ÊéÃèÊöµÄÊÇ¸÷ÃÅÅÉµÄ¸ß¼¶Îä¹¦£¬Äã²»ÁË½âËüÃÇµÄÐþ»ú");
+		Talk(1, "", "Gièng nh­ quyÓn s¸ch nµy miªu t¶ chÝnh lµ c¸c m«n ph¸i cao cÊp vâ c«ng , ng­¬i kh«ng biÕt bän hä huyÒn c¬ ");
 		return 1;
 	end
 	
@@ -35,17 +35,17 @@ function main(nItemIdx)
 	for i = 1, getn(tb_90skill[n_fac]) do
 		local skill = HaveMagic(tb_90skill[n_fac][i]);
 		if (skill ~= -1 and skill ~= 20) then
-			tinsert(tb_Desc, format("Éý¼¶".."%s/#upgrade_skilllevel(%d)", GetSkillName(tb_90skill[n_fac][i]), tb_90skill[n_fac][i]));
+			tinsert(tb_Desc, format("Th¨ng cÊp ".."%s/upgrade_skilllevel(%d)", GetSkillName(tb_90skill[n_fac][i]), tb_90skill[n_fac][i]));
 		end
 	end
 	
 	if (getn(tb_Desc) == 0) then
-		Talk(1, "", "¼¼ÄÜ´ïµ½×î¸ß¼¶»òÕß»¹Î´Ñ§.");
+		Talk(1, "", "Kü n¨ng ®¹t tíi cao cÊp nhÊt hoÆc lµ cßn ch­a häc .");
 		return 1;
 	end
 	
-	tinsert(tb_Desc, 1, "Ñ¡ÔñÐèÒªÉý¼¶µÄ¼¼ÄÜ:");
-	tinsert(tb_Desc, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tb_Desc, 1, " lùa chän cÇn th¨ng cÊp ®Ých kü n¨ng :");
+	tinsert(tb_Desc, "KÕt thóc ®èi tho¹i /OnCancel");
 	CreateTaskSay(tb_Desc);
 	return 1;
 end
@@ -58,7 +58,7 @@ function upgrade_skilllevel(n_skillid)
 	if (ConsumeItem(3, 1, 6, 1, 3562, -1) == 1) then
 		AddMagic(n_skillid, 20);
 		WriteLog(format("[%s]\t%s\tAccount:%s\tName:%s\tUpGrade Skill:%d", 
-				"´ó³ÉÃØ¼®150", 
+				" ®¹i thµnh bÝ tÞch 150", 
 				GetLocalDate("%Y-%m-%d %X"),
 				GetAccount(),
 				GetName(),

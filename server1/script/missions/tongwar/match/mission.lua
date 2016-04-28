@@ -90,12 +90,12 @@ function InitMission()
 	--¾üÒ½µÄ°Ú·Å
 	doctorxy = GetIniFileData(mapfile, "Area_"..s_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "¾üĞè¹Ù (ËÎ) ");
+	bt_add_a_diagnpc(FILE_DOCTOR1, TNPC_DOCTOR1, x * 32 ,y * 32 , "Qu©n Nhu quan (Tèng) ");
 
 
 	doctorxy = GetIniFileData(mapfile, "Area_"..j_area, "doctornpc");
 	x,y = bt_str2xydata(doctorxy)
-	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "¾üĞè¹Ù (½ğ) ");
+	bt_add_a_diagnpc(FILE_DOCTOR2, TNPC_DOCTOR2, x * 32, y * 32, "Qu©n Nhu quan (Kim) ");
 	
 	
 	--Ë§ÆìµÄ°Ú·Å
@@ -124,10 +124,10 @@ function InitMission()
 	SetMissionV(MS_STATE, 1);--ÔÊĞí±¨ÃûÁË
 	SetMissionV(MS_KEYNUMBER, random(1000000+tonumber(date("%y%m%d"))))
 	
-	local str = "ÎäÁÖµÚÒ»°ïÕıÔÚ×¼±¸½×¶Î¡£ÔÚ½ñÈÕ²ÎÕ½Ãûµ¥µÄ°ï»á¿ìµãÈ¥ÎäÁÖÃËÖ÷´¦½øÈë×¼±¸ÇøÓò¡£"
+	local str = "Vâ L©m §Ö NhÊt Bang ®ang trong giai ®o¹n chuÈn bŞ. C¸c bang héi trong danh s¸ch tham chiÕn ngµy h«m nay h·y nhanh chãng ®Õn Vâ L©m Minh Chñ ®Ó vµo khu vùc chuÈn bŞ."
 	AddGlobalNews(str);
 
-	BT_SetMissionName("µÚÒ»Õ½°ï")
+	BT_SetMissionName("§Ö nhÊt bang chiÕn")
 
 end
 

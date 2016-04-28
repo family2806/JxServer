@@ -1,6 +1,6 @@
 -- ====================== ÎÄ¼şĞÅÏ¢ ======================
 
--- ½£ÏÀÇéÔµÍøÂç°æÔ½ÄÏ - ±±¶·ÏÉµ¤
+-- ½£ÏÀÇéÔµÍøÂç°æÔ½ÄÏ - B¾c §Èu Tiªn §¬n
 -- ÎÄ¼şÃû¡¡£ºitem_beidouxiandan.lua
 -- ´´½¨Õß¡¡£º×Ó·Çô~
 -- ´´½¨Ê±¼ä£º2009-02-26 13:30:12
@@ -21,25 +21,25 @@ function main(nItemIndex)
 				
 				SetTask(TSK_ZHUANSHENG_XIANDAN, 2);
 				
-				Msg2Player(format("»ñµÃ%d Ç§Íò¾­Ñé.", n_itemexp));
+				Msg2Player(format("Thu ®­îc %d ngµn v¹n kinh nghiÖm.", n_itemexp));
 				WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tUsed,LEVEL:%d,FACTION:%d,AddExp:%d0000000",
-						"±±¶·ÏÉµ¤",
+						"B¾c §Èu Tiªn §¬n",
 						GetLocalDate("%Y-%m-%d %X"),GetName(), GetAccount(),
 						GetLevel(), GetLastFactionNumber(), n_itemexp));
 			else
 				return 1;
 			end
 		else
-			Say("»¹Î´ÖØÉú¾Í²»ÄÜÊ¹ÓÃ±±¶·ÏÉµ¤.", 0);
+			Say("VÉn ch­a trïng sinh th× kh«ng thÓ sö dông B¾c §Èu Tiªn §¬n ®­îc.", 0);
 			return 1;
 		end
 	else
-		Say("¸Ã±±¶·ÏÉµ¤²»ÊÇ´óÏÀµÄ£¬ËùÒÔ²»ÄÜÊ¹ÓÃ.", 0);
+		Say("B¾c §Èu Tiªn §¬n nµy kh«ng ph¶i cña ®¹i hiÖp nªn kh«ng thÓ sö dông ®­îc.", 0);
 		return 1;
 	end
 end
 
 function GetDesc(nItemIndex)
 	local n_itemexp = GetItemParam(nItemIndex, 1);
-	return format("ÔÚÏÉµ¤ÀïÓĞ£º%d Ç§Íò¾­Ñé.", n_itemexp);
+	return format("Trong Tiªn §¬n cã : %d ngµn v¹n kinh nghiÖm.", n_itemexp);
 end

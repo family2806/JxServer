@@ -1,10 +1,10 @@
 function DisposeItem()
-	GiveItemUI("·ÅÆúÎïÆ·", "·ÅÆúÎïÆ·Ê±£¬´óÏÀÒªĞ¡ĞÄ!", "DisposeConfirm", "onCancel", 1);
+	GiveItemUI("Hñy vËt phÈm", "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm!", "DisposeConfirm", "onCancel", 1);
 end
 
 function DisposeConfirm(nCount)
 	if (nCount ~= 1) then 
-		Talk(1, "", "Ã¿´ÎÖ»ÄÜ·ÅÆúÒ»¸öÎïÆ·!!");
+		Talk(1, "", "Mçi lÇn chØ cã thÓ hñy ®­îc mét vËt phÈm!!");
 		return
 	end
 	
@@ -12,14 +12,14 @@ function DisposeConfirm(nCount)
 	local nBindState = GetItemBindState(nItemIndex)
 	
 	if (nBindState ~= -2) then
-		Talk(1, "", "ĞèÒª·ÅÆúµÄÎïÆ·ÊÇÓÀ¾ÃËø×¡µÄÎïÆ·!");
+		Talk(1, "", "VËt phÈm cÇn hñy ph¶i lµ vËt phÈm khãa vÜnh viÔn!");
 		return
 	end
 	local strItem = GetItemName(nItemIndex)
 	RemoveItemByIndex(nItemIndex)
-	Talk(1, "", "´óÏÀ¿ÉÒÔÖØĞÂÕûÀí´¢ÎïÏäÁË!");
-	Msg2Player("´óÏÀ¸Õ¸Õ·ÅÆúÎïÆ·³É¹¦")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".." ·ÅÆúitem ABHKLB "..GetAccount().."\t"..GetName().."\t".." ·ÅÆúitem "..strItem)
+	Talk(1, "", "§¹i hiÖp cã thÓ s¾p xÕp l¹i r­¬ng chøa ®å råi!");
+	Msg2Player("§¹i hiÖp võa hñy vËt phÈm thµnh c«ng")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".." Hñy item ABHKLB "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
 end
 
 function OnCancel()

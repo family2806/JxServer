@@ -53,11 +53,11 @@ end
 
 
 function wushuangmengjiang()
-	Say("ÎªÁË±íÑïÔÚÕ½³¡µÄ¹¦ÀÍ£¬Èç¹û±¾ÖÜ±íÏÖºÃ£¬½«ÓĞÖØÉÍ", 4, "ÁË½â¹æÔòÏ¸½Ú/getrule", "¿´Õ½³¡ÅÅÃûÍ³¼Æ/getranklist", "¿´Ä¿Ç°µÄÕ½³¡ÅÅÃû/getcurranklist", "ÎÒÏëÁì½±/guanghuan_sure", "Ö»ÊÇÀ´Íæ¶øÒÑ./no")
+	Say("§Ó biÓu d­¬ng c«ng lao trong chiÕn tr­êng, nÕu nh­ trong tuÇn cã biÓu hiÖn tèt sÏ ®­îc träng th­ëng!", 4, "T×m hiÓu chi tiÕt quy t¾c/getrule", "Xem b¶ng tæng kÕt xÕp h¹ng chiÕn tr­êng/getranklist", "Xem b¶ng xÕp h¹ng chiÕn tr­êng hiÖn t¹i/getcurranklist", "Ta muèn lÜnh th­ëng/guanghuan_sure", "ChØ ghĞ ch¬i th«i./no")
 end
 
 function getrule()
-	Say("Ò»ÖÜÄÚ»ñµÃÇ°Ê®ÃûµÄ½«»ñµÃ1µ½10µã£¬ÔÚÒ»ÖÜÄÚÈç¹û´ïµ½µÄµãÊı×î¸ß½«»ñµÃ³¯Í¢ë··âµÄÎŞË«ÃÍ½«ºÍÖØÉÍ", "ÎÒÏëÁË½âÆäËûÊÂÇé/wushuangmengjiang", "½áÊø¶Ô»°/no");
+	Say("Trong vßng 1 tuÇn ®­îc top 10 sÏ ®­îc tõ 1 ®Õn 10 ®iÓm, trong mét tuÇn nÕu nh­ ®¹t ®iÓm cao nhÊt sÏ ®­îc triÒu ®×nh s¾c phong v« song m·nh t­íng vµ ban träng th­ëng!", "Ta muèn t×m hiÓu viÖc kh¸c/wushuangmengjiang", "KÕt thóc ®èi tho¹i/no");
 end
 
 function getranklist()
@@ -66,14 +66,14 @@ function getranklist()
 	for i = 1, 10 do
 		local szname, nrank, nsect, ngender= Ladder_GetLadderInfo(10251, i);
 		if szname ~= nil and nrank ~= 0 then
-			szranklist = format("%s ÅÅÃû%s: <%s> %d\n", szranklist, tbNum[i], szname, nrank);
+			szranklist = format("%s xÕp h¹ng %s: <%s> %d\n", szranklist, tbNum[i], szname, nrank);
 		else
-			szranklist = format("%s ÅÅÃû%s: <%s> %d\n", szranklist, tbNum[i], "Kh«ng", 0);
+			szranklist = format("%s xÕp h¹ng %s: <%s> %d\n", szranklist, tbNum[i], "Kh«ng", 0);
 		end
 	end
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÎÒÏëÁË½âÆäËûÊÂÇé", wushuangmengjiang})
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"Ta muèn t×m hiÓu viÖc kh¸c", wushuangmengjiang})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	CreateNewSayEx(szranklist, tbOpt)
 end
 
@@ -92,12 +92,12 @@ function guanghuan_sure()
 				SetBitTask(2762, 12, 18, nWeek)
 				get_TTTCAward(i)				
 			else
-				Talk(1, "", "´óÏÀ²»ÊÇÒÑ¾­Áì½±ÁËÂğ?")				
+				Talk(1, "", "Ch¼ng ph¶i §¹i hiÖp ®·  nhËn th­ëng råi sao?")				
 			end
 			return		
 		end	
 	end
-	Say("Ö»ÓĞÔÚ±¾ÖÜÄÚ´ïµ½×î¸ßµãµÄÃÍ½«²ÅÄÜ»ñµÃ½±Àø!Ïë»ñÈ¡½±Àø¾ÍÒªÅ¬Á¦É±µĞ", 2, "ÎÒÏëÁË½âÆäËûÊÂÇé/wushuangmengjiang", "½áÊø¶Ô»°/no")
+	Say("ChØ cã m·nh t­íng ®¹t ®iÓm cao nhÊt trong tuÇn míi ®­îc nhËn phÇn th­ëng! Muèn nhËn phÇn th­ëng th× h·y nç lùc giÕt ®Şch!", 2, "Ta muèn t×m hiÓu viÖc kh¸c/wushuangmengjiang", "KÕt thóc ®èi tho¹i/no")
 end
 
 function get_wushuangguanghuan(nCutDownTime)
@@ -109,25 +109,25 @@ end
 end
 
 --Change Song Jin Box bind state - Modified By DinhHQ - 20120319
-local tbProduct = {szName="ËÎ½ğÃØ±¦",tbProp={6, 1, 2741, 1, 0, 0},nBindState=-2}	
+local tbProduct = {szName="Tèng Kim Bİ B¶o",tbProp={6, 1, 2741, 1, 0, 0},nBindState=-2}	
 
 function tetan2mibao()
 	local G = 6
 	local D = 1
-	local P = 2740	-- ÌØÌ½±¦ÏäµÄp
+	local P = 2740	-- §Æc Th¸m B¶o R­¬ngµÄp
 	if GetTask(751) < 2000 then 
-		Say("§iÄúµÄ»ı·Ö²»¹»®ñ.", 1, "¹Ø±Õ/no")
+		Say("§iÓm tİch lòy cña ng­¬i kh«ng ®ñ.", 1, "§ãng/no")
 		return 
 	end
-	-- ÅĞ¶¨ÊÇ·ñ´æÔÚÌØÌ½±¦Ïä
+	-- ÅĞ¶¨ÊÇ·ñ´æÔÚ§Æc Th¸m B¶o R­¬ng
 	local nCount = CalcItemCount(3, G, D, P, -1) 
 	
 	if nCount == 0 then
-		Say("Ã»ÓĞÌØÌ½±¦Ïä²»ÄÜ»».", 1, "¹Ø±Õ/no")
+		Say("Kh«ng cã B¶o R­¬ng §Æc Th¸m kh«ng thÓ ®æi.", 1, "§ãng/no")
 		return
 	end
 	-- ¼õÈ¥±¦Ïä
-	ConsumeItem(3, 1, G, D, P, -1)	-- ÌØÌ½±¦ÏäµÄp
+	ConsumeItem(3, 1, G, D, P, -1)	-- §Æc Th¸m B¶o R­¬ngµÄp
 	tbAwardTemplet:GiveAwardByList(%tbProduct, "tetanbaoxiang2songjingmibao", 1)
 end
 
@@ -136,13 +136,13 @@ function jifen2mibao()
 	local nJifenMark = 500
 	local nEnergy = GetEnergy()
 	if nEnergy < nEnergyMark then
-		Say("ÄúµÄ¾«Á¶Ê¯²»¹»£¬ÏÂ´ÎÔÙÀ´°É", 1, "¹Ø±Õ/no")
+		Say("Tinh Lùc cña ng­¬i kh«ng ®ñ, lÇn sau l¹i ®Õn nhĞ", 1, "§ãng/no")
 		return
 	end
 	
 	local nJifen = nt_getTask(747)
 	if nJifen < nJifenMark then
-		Say("§iÄúµÄ»ı·Ö²»¹»®ñ.", 1, "¹Ø±Õ/no")
+		Say("§iÓm tİch lòy cña ng­¬i kh«ng ®ñ.", 1, "§ãng/no")
 		return
 	end
 	
@@ -157,16 +157,16 @@ nHeight = 1
 nFreeItemCellLimit = 0.02
 
 function duihuangmibao()
-	local szMsg = format("Ñ¡Ôñ»»È¡ĞÎÊ½ :")
+	local szMsg = format("Chän h×nh thøc ®æi :")
 	local tbOpt = {}
 	
 	if CountFreeRoomByWH(nWidth, nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("ÎªÁË±£»¤ÄúµÄÎïÆ·°²È«£¬ÇëÈ·±£×°±¸»¹Ê£1 %dx%d", nWidth, nHeight))
+		Say(format("§Ó b¶o vÖ sù an toµn vËt phÈm cña ng­¬i, vin h·y b¶o ®¶m hµnh trang cßn d­ 1 %dx%d", nWidth, nHeight))
 		return 
 	end
 	
-	tinsert(tbOpt, {"ÌØÌ½±¦Ïä", tetan2mibao})
-	tinsert(tbOpt, {"§i»ı·ÖºÍ¾«Á¶Ê¯", jifen2mibao})
+	tinsert(tbOpt, {"§Æc Th¸m B¶o R­¬ng", tetan2mibao})
+	tinsert(tbOpt, {"§iÓm tİch lòy vµ Tinh Lùc", jifen2mibao})
 	CreateNewSayEx(szMsg, tbOpt)	
 end
 
@@ -180,14 +180,14 @@ function getcurranklist()
 	for i = 1, 10 do
 		local szname, nrank, nsect, ngender= Ladder_GetLadderInfo(10250, i);
 		if szname ~= nil and nrank ~= 0 then
-			szranklist = format("%s ÅÅÃû %s: <%s> %d\n", szranklist, tbNum[i], szname, nrank);
+			szranklist = format("%s xÕp h¹ng %s: <%s> %d\n", szranklist, tbNum[i], szname, nrank);
 		else
-			szranklist = format("%s ÅÅÃû%s: <%s> %d\n", szranklist, tbNum[i], "²»", 0);
+			szranklist = format("%s xÕp h¹ng %s: <%s> %d\n", szranklist, tbNum[i], "Kh«ng", 0);
 		end
 	end
 	local tbOpt = {}
-	tinsert(tbOpt, {"ÎÒÏëÁË½âÆäËû", wushuangmengjiang})
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"Ta muèn t×m hiÓu viÖc kh¸c", wushuangmengjiang})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	CreateNewSayEx(szranklist, tbOpt)
 end
 
@@ -198,6 +198,6 @@ function get_TTTCAward(nRank)
 			{nExp =300e6},
 			{nExp =200e6}								
 		};
-	local szLog = format("ËÎ½ğÌì×Ó²ÎÕ½½±Àø %d", nRank)
+	local szLog = format("PhÇn th­ëng Tèng Kim Thiªn Tö Tham ChiÕn h¹ng %d", nRank)
 	tbAwardTemplet:GiveAwardByList(tbExp[nRank], szLog)
 end

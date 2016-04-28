@@ -2,7 +2,7 @@
 -- by£ºDan_Deng(2003-09-16)
 
 function main()
-	Say("ĞĞ×ß½­ºşµÄÈË£¬¶¼ĞèÒªÒ»Æ¥Õ½Âí£¬ÎÒµÄÂíËäÈ»²»ÊÇÃûÂí£¬µ«ÊÇ£¬ËûµÄÄÍÁ¦¾ªÈË£¬ËüµÄĞÔ¸ñÎÂºÍ£¬¼Û¸ñÒ²²»¹ó.", 2, "½»Ò×/yes", "²»½»Ò×/no")
+	Say("KÎ hµnh tÈu giang hå ®Òu cÇn ph¶i cã mét con ngùa chiÕn, con ngùa cña ta tuy kh«ng ph¶i næi tiÕng nh­ng søc chŞu ®ùng cña nã thËt kinh ng­êi, tİnh nã l¹i «n hoµ, mµ gi¸ tiÒn còng kh«ng ®¾t l¾m.", 2, "Giao dŞch/yes", "Kh«ng giao dŞch/no")
 end;
 
 function yes()

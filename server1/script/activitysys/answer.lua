@@ -54,7 +54,7 @@ function tbRiddle:Show(szFile, nTotalCount, caption, szMsg, szFunFinalOk, szFunS
 			end
 		end
 		self:ReSort(options)
-		tinsert(options,"³·Ïú/OnCancel")
+		tinsert(options,"Hñy bá /OnCancel")
 		Describe(question, getn(options), options )
 	end
 end
@@ -100,7 +100,7 @@ function tbRiddle:answer_ok(count)
 				end
 		end
 		
-		tbRiddle:Show(nil, nil,"Õæ³öÉ«£¡Çë¼ÌÐø! <enter>", nil, nil, nil, nil, count + 1)
+		tbRiddle:Show(nil, nil,"ThËt xuÊt s¾c! Xin tiÕp tôc! <enter>", nil, nil, nil, nil, count + 1)
 	end
 end
 
@@ -112,6 +112,6 @@ function tbRiddle:answer_fail()
 				return
 			end
 	end
-	tbRiddle:Show(nil, nil, "´íÁË! Çë¼ÌÐø! <enter>", nil, nil, nil, nil, 0)
+	tbRiddle:Show(nil, nil, "Sai råi! Xin tiÕp tôc! <enter>", nil, nil, nil, nil, 0)
 end
 

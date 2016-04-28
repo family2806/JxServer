@@ -15,8 +15,8 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,40,EVENT_LOG_TITLE,"ËÎ½ğ´ï3000µãÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ËÎ½ğ´ï3000µãÁìÈ¡ÖÖ×Ó", "40¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,40,EVENT_LOG_TITLE,"TongKimDat3000DiemNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TongKimDat3000DiemNhanHatGiong", "40 H¹t Gièng", 1}},
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú
@@ -33,8 +33,8 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"´³¹Ø17ÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "´³¹Ø17ÁìÈ¡ÖÖ×Ó", "10 ¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"VuotQuaAi17NhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi17NhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -51,8 +51,8 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"´³¹Ø28ÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "´³¹Ø28ÁìÈ¡ÖÖ×Ó", "10¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"VuotQuaAi28NhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi28NhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -70,8 +70,8 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"ÏûÃğË®ÔôÍ·ÁìÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ÏûÃğË®ÔôÍ·ÁìÁìÈ¡ÖÖ×Ó", "10¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinhNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietThuyTacDauLinhNhanHatGiong", "10 H¹t Gièng", 1}},
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -89,8 +89,8 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"ÏûÃğË®Ôô´óÍ·ÁìÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ÏûÃğË®Ôô´óÍ·ÁìÁìÈ¡ÖÖ×Ó", "20 ¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinhNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietThuyTacDaiDauLinhNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -107,8 +107,8 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"Ñ×µÛ¹ı10¹ØÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "Ñ×µÛ¹ı10¹ØÁìÈ¡ÖÖ×Ó", "20¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"VuotQuaAi10ViemDeNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "VuotQuaAi10ViemDeNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -126,8 +126,8 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,50,EVENT_LOG_TITLE,"ÏûÃğ»Æ½ğBOSSÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ÏûÃğ»Æ½ğBOSSÁìÈ¡ÖÖ×Ó", "50¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,50,EVENT_LOG_TITLE,"TieuDietBossHoangKimNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietBossHoangKimNhanHatGiong", "50 H¹t Gièng", 1}},
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -144,8 +144,8 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,3,EVENT_LOG_TITLE,"ÏûÃğÉ±ÊÖBOSSÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ÏûÃğÉ±ÊÖBOSSÁìÈ¡ÖÖ×Ó", "3 ¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,3,EVENT_LOG_TITLE,"TieuDietBossSatThuNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TieuDietBossSatThuNhanHatGiong", "3 H¹t Gièng", 1}},
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -163,7 +163,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"NpcFunLib:DropSingleItem",	{{szName="ÒøÅÌ",tbProp={6,1,3103,1,0,0},nExpiredTime=20120201,},1,"5"} },
+		{"NpcFunLib:DropSingleItem",	{{szName="M©m B¹c",tbProp={6,1,3103,1,0,0},nExpiredTime=20120201,},1,"5"} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
@@ -182,8 +182,8 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"ËÎ½ğ´ï1000µãÁìÈ¡ÖÖ×Ó"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "ËÎ½ğ´ï1000µãÁìÈ¡ÖÖ×Ó", "20¿ÅÖÖ×Ó", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_SEED,20,EVENT_LOG_TITLE,"TongKimDat1000DiemNhanHatGiong"} },
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "TongKimDat1000DiemNhanHatGiong", "20 H¹t Gièng", 1}},
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
@@ -193,19 +193,19 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	szName = "click npc named plutus",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"´ó²ÆÉñ"},
+	tbMessageParam = {"§¹i ThÇn Tµi"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"SetDialogTitle",	{"ÔÚÕâ¸öÎÂÅ¯µÄ´ºÌì£¬¸÷Î»´óÏÀ¿ÉÒÔµ½ÎÒÕâÀïÄÃ¸÷ÖÖË®¹ûºÏ³É<color=yellow> Îå¹ûÒøÅÌºÍÎå¹û½ğÅÌ<color>. °´Êó±êÊ¹ÓÃ<color=yellow> Îå¹ûÒøÅÌºÍÎå¹û½ğÅÌ<color> ½«ÓĞ·áºñ½±Àø£¬Èç¹ûĞÒÔË¿ÉÒÔ»ñµÃ<color=yellow> ĞÂÄêºì°ü£¬Èç¹û´óÏÀ¸øĞÂÄêºì°ü£¨Ğ¡£© <color> ÒÔ¼°10ÍòËÍ¸øÀÏñÄ½»¸øÎÒ£¬ÎÒ½«ËÍ¸øÄã·á¸»µÄ½±Àø¡£ÔÚÕû¸ö»î¶¯ÆÚ¼ä£¬ÎÒ½«ÔÚÕâËæÊ±¹§ºò¸÷Î»µÄ´ó¼İ¹âÁÙ!"} },
-		{"AddDialogOpt",	{"ºÏ³ÉÎå¹ûÒøÅÌ",12} },
-		{"AddDialogOpt",	{"ºÏ³ÉÎå¹û½ğÅÌ",15} },
-		{"AddDialogOpt",	{"ÉÏ½»ĞÂÄêºì°ü (Ğ¡)",18} },
-		{"AddDialogOpt",	{"»»ºì°ü",22} },
-		{"AddDialogOpt",	{"Ãâ·ÑÁì¾­Ñé",28} },
-		{"AddDialogOpt",	{"ÉÏ½»Áú×´Ãæ¾ß",30} },
+		{"SetDialogTitle",	{"Trong tiÕt trêi xu©n Êm ¸p nµy, c¸c ®¹i hiÖp cã thÓ ®Õn chç cña ta ®©y lÊy c¸c lo¹i tr¸i c©y ®Ó hîp thµnh <color=yellow> M©m B¹c Ngò Qu¶ vµ M©m Vµng Ngò Qu¶ <color>. NhÊn chuét sö dông <color=yellow> M©m B¹c Ngò Qu¶ vµ M©m Vµng Ngò Qu¶ <color> sÏ cã phÇn th­ëng hËu hÜnh, nÕu nh­ may m¾n cã thÓ nhËn ®­îc <color=yellow> Bao L× X× N¨m Míi, nÕu nh­ ®¹i hiÖp ®­a Bao L× X× N¨m Míi (nhá) <color> vµ 10 v¹n tÆng cho l·o n¹p giao cho ta th× ta sÏ tÆng cho ng­¬i phÇn th­ëng phong phó. Trong suèt thêi gian ho¹t ®éng ta sÏ lu«n ë ®©y ®Ó cung hËu gi¸ ®¸o cua c¸c ch­ vŞ !"} },
+		{"AddDialogOpt",	{"Hîp thµnh M©m B¹c Ngò Qu¶",12} },
+		{"AddDialogOpt",	{"GhepMamVangNguQua",15} },
+		{"AddDialogOpt",	{"Giao nép Bao L× X× N¨m Míi (nhá)",18} },
+		{"AddDialogOpt",	{"§æi Bao L× X× §á",22} },
+		{"AddDialogOpt",	{"MiÔn phİ nhËn kinh nghiÖm",28} },
+		{"AddDialogOpt",	{"Giao nép mÆt n¹ h×nh rång",30} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -215,14 +215,14 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	szName = "wuguobaiyinpan select",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºÏ³ÉÎå¹ûÒøÅÌÓĞÁ½ÖÖ·½·¨£¬µÚÒ»ÖÖ: 1 ¸öÏã½¶+ 1¸Ì×Ó+ 1èÖ×Ó+ 1ÊÁ×Ó+ 1 Àæ×Ó+ 1 ÒøÅÌ; µÚ¶şÖÖ·½·¨ÊÇ£º1 Ò¬×Ó+ 1 Ä¾¹Ï+1 ·¬ÀóÖ¦+ 1 ÎŞ»¨¹û+ 1 Ã¢¹û+ 1½ğÅÌ. ´óÏÀÏëÊ¹ÓÃÄÄÖÖ. ",0},
+	tbMessageParam = {"Hîp thµnh M©m B¹c Ngò Qu¶ÓĞÁ½ÖÖ·½·¨£¬C¸ch 1: 1 ¸öN¶i Chuèi+ 1Tr¸i Cam+ 1Tr¸i B­ëi+ 1Tr¸i Hång+ 1 Tr¸i Lª+ 1 M©m B¹c; c¸ch 2·½·¨ÊÇ£º1 Dõa+ 1 §u ®ñ+1 Tr¸i M·ng CÇu+ 1 Tr¸i Sung+ 1 Xoµi+ 1M©m Vµng. ´óÏÀÏëÊ¹ÓÃÄÄÖÖ. ",0},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"µÚÒ»ÖÖ",13} },
-		{"AddDialogOpt",	{"µÚ¶şÖÖ",14} },
+		{"AddDialogOpt",	{"C¸ch 1",13} },
+		{"AddDialogOpt",	{"c¸ch 2",14} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
@@ -232,20 +232,20 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	szName = "wuguobaiyinpan plan_1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Îå¹ûÒøÅÌ",1,1,1,0.02,0,50},
+	tbMessageParam = {"M©m B¹c Ngò Qu¶",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ïã½¶",{tbProp={6,1,3098,1,0,0},},1} },
-		{"AddOneMaterial",	{"¸Ì×Ó",{tbProp={6,1,3095,1,0,0},},1} },
-		{"AddOneMaterial",	{"èÖ×Ó",{tbProp={6,1,3097,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÊÁ×Ó",{tbProp={6,1,3099,1,0,0},},1} },
-		{"AddOneMaterial",	{"Àæ×Ó",{tbProp={6,1,3096,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÒøÅÌ",{tbProp={6,1,3103,1,0,0},},1} },
+		{"AddOneMaterial",	{"N¶i Chuèi",{tbProp={6,1,3098,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Cam",{tbProp={6,1,3095,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i B­ëi",{tbProp={6,1,3097,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Hång",{tbProp={6,1,3099,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Lª",{tbProp={6,1,3096,1,0,0},},1} },
+		{"AddOneMaterial",	{"M©m B¹c",{tbProp={6,1,3103,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="Îå¹ûÒøÅÌ",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"ºÏ³ÉÎå¹ûÒøÅÌ"} },
+		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"Hîp thµnh M©m B¹c Ngò Qu¶"} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
@@ -255,20 +255,20 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 	szName = "wuguobaiyinpan plan_2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Îå¹ûÒøÅÌ",1,1,1,0.02,0,50},
+	tbMessageParam = {"M©m B¹c Ngò Qu¶",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ã¢¹û",{tbProp={6,1,3093,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ò¬×Ó",{tbProp={6,1,3100,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ä¾¹Ï",{tbProp={6,1,3101,1,0,0},},1} },
-		{"AddOneMaterial",	{"·¬ÀóÖ¦",{tbProp={6,1,3094,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÎŞ»¨¹û",{tbProp={6,1,3102,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÒøÅÌ",{tbProp={6,1,3103,1,0,0},},1} },
+		{"AddOneMaterial",	{"Xoµi",{tbProp={6,1,3093,1,0,0},},1} },
+		{"AddOneMaterial",	{"Dõa",{tbProp={6,1,3100,1,0,0},},1} },
+		{"AddOneMaterial",	{"§u ®ñ",{tbProp={6,1,3101,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i M·ng CÇu",{tbProp={6,1,3094,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Sung",{tbProp={6,1,3102,1,0,0},},1} },
+		{"AddOneMaterial",	{"M©m B¹c",{tbProp={6,1,3103,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{szName="Îå¹ûÒøÅÌ",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"ºÏ³ÉÎå¹ûÒøÅÌ"} },
+		{"PlayerFunLib:GetItem",	{{szName="M©m B¹c Ngò Qu¶",tbProp={6,1,3105,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"Hîp thµnh M©m B¹c Ngò Qu¶"} },
 	},
 }
 tbConfig[15] = --Ò»¸öÏ¸½Ú
@@ -278,14 +278,14 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	szName = "wuguohuangjinpan select",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºÏ³ÉÎå¹û½ğÅÌÓĞÁ½ÖÖ·ÅÔÚ£¬µÚÒ»ÖÖ: 1Ïã½¶+ 1 ¸Ì×Ó+ 1 èÖ×Ó+ 1 ÊÁ×Ó+ 1Àæ×Ó+ 1 ½ğÅÌ£»µÚ¶şÖÖ·½·¨: 1 Ò¬×Ó + 1Ä¾¹Ï+ 1·¬ÀóÖ¦+ 1 ÎŞ»¨¹û+ 1Ã¢¹û+½ğÅÌ. ´óÏÀÏëÓÃÄÄÖÖ.",0},
+	tbMessageParam = {"GhepMamVangNguQua cã hai c¸ch, c¸ch thø 1: 1 N¶i Chuèi + 1 Tr¸i Cam + 1 Tr¸i B­ëi + 1 Tr¸i Hång + 1 Tr¸i Lª + 1 M©m Vµng; C¸ch thø 2: 1 Tr¸i Dõa + 1 §u §ñ + 1 M·ng CÇu + 1 Tr¸i Sung + 1 Tr¸i Xoµi + M©m Vµng. §¹i hiÖp muèn sö dông c¸ch nµo.",0},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"µÚÒ»ÖÖ",16} },
-		{"AddDialogOpt",	{"µÚ¶şÖÖ",17} },
+		{"AddDialogOpt",	{"C¸ch 1",16} },
+		{"AddDialogOpt",	{"c¸ch 2",17} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -295,20 +295,20 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 	szName = "wuguohuangjinpan plan_1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"½ğÅÌÎå¹û",1,1,1,0.02,0,50},
+	tbMessageParam = {"M©m Vµng Ngò Qu¶",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ïã½¶",{tbProp={6,1,3098,1,0,0},},1} },
-		{"AddOneMaterial",	{"¸Ì×Ó",{tbProp={6,1,3095,1,0,0},},1} },
-		{"AddOneMaterial",	{"èÖ×Ó",{tbProp={6,1,3097,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÊÁ×Ó",{tbProp={6,1,3099,1,0,0},},1} },
-		{"AddOneMaterial",	{"Àæ×Ó",{tbProp={6,1,3096,1,0,0},},1} },
-		{"AddOneMaterial",	{"½ğÅÌ",{tbProp={6,1,3104,1,0,0},},1} },
+		{"AddOneMaterial",	{"N¶i Chuèi",{tbProp={6,1,3098,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Cam",{tbProp={6,1,3095,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i B­ëi",{tbProp={6,1,3097,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Hång",{tbProp={6,1,3099,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Lª",{tbProp={6,1,3096,1,0,0},},1} },
+		{"AddOneMaterial",	{"M©m Vµng",{tbProp={6,1,3104,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"ºÏ³ÉÎå¹û½ğÅÌ"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
 	},
 }
 tbConfig[17] = --Ò»¸öÏ¸½Ú
@@ -318,20 +318,20 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	szName = "wuguohuangjinpan plan_2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Îå¹û½ğÅÌ",1,1,1,0.02,0,50},
+	tbMessageParam = {"M©m Vµng Ngò Qu¶",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"Ã¢¹û",{tbProp={6,1,3093,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ò¬×Ó",{tbProp={6,1,3100,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ä¾¹Ï",{tbProp={6,1,3101,1,0,0},},1} },
-		{"AddOneMaterial",	{"·¬ÀóÖ¦",{tbProp={6,1,3094,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÎŞ»¨¹û",{tbProp={6,1,3102,1,0,0},},1} },
-		{"AddOneMaterial",	{"½ğÅÌ",{tbProp={6,1,3104,1,0,0},},1} },
+		{"AddOneMaterial",	{"Xoµi",{tbProp={6,1,3093,1,0,0},},1} },
+		{"AddOneMaterial",	{"Dõa",{tbProp={6,1,3100,1,0,0},},1} },
+		{"AddOneMaterial",	{"§u ®ñ",{tbProp={6,1,3101,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i M·ng CÇu",{tbProp={6,1,3094,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tr¸i Sung",{tbProp={6,1,3102,1,0,0},},1} },
+		{"AddOneMaterial",	{"M©m Vµng",{tbProp={6,1,3104,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"ºÏ³ÉÎå¹û½ğÅÌ"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,3106,1,0,0},nExpiredTime=20120201,},1,EVENT_LOG_TITLE,"GhepMamVangNguQua"} },
 	},
 }
 tbConfig[18] = --Ò»¸öÏ¸½Ú
@@ -344,15 +344,15 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"",0,0,0,0},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"ĞÂÄïºì°ü(Ğ¡)",{tbProp={6,1,3108,1,0,0},},1} },
-		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=1},100000} },
+		{"AddOneMaterial",	{"Bao L× X× N¨m Míi (nhá)",{tbProp={6,1,3108,1,0,0},},1} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},100000} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_REDBAG_DAILY,MAX_REDBAG_DAILY,"½ñÌì´óÏÀÒÑ½»¹»ÁË£¬µÈÃ÷ÌìÔÙ¼ÌĞøÅ¶","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_REDBAG_DAILY,MAX_REDBAG_DAILY,"H«m nay ®¹i hiÖp ®· giao ®ñ råi, ®îi ngµy mai h·y tiÕp tôc nhĞ!","<"} },
 	},
 	tbActition = 
 	{
 		{"PlayerFunLib:AddExp",	{1000000,1,EVENT_LOG_TITLE,"NopBaoLiXiNamMoiTaiNPCDaiThanTai"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "NopBaoLiXiNamMoiTaiNPCDaiThanTai", "1000000 ¾­ÑéÖµ", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "NopBaoLiXiNamMoiTaiNPCDaiThanTai", "1000000 §iÓm kinh nghiÖm", 1}},
 		{"ThisActivity:AddTaskDaily",	{TSK_REDBAG_DAILY,1} },
 	},
 }
@@ -367,8 +367,8 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "Ö»ÄÜÔÚ¸÷³ÇÊĞ¼°ĞÂÉú´åÊ¹ÓÃ."} },
-		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOBAIYINPAN,MAX_USED_WUGUOBAIYINPAN,"´óÏÀÒÑÁìÈ¡Ì«¶à½±ÀøÁË£¬Òª²»ÊÔÊÔÆäËûµÄÔõÃ´Ñù!","<"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thŞ vµ c¸c t©n thñ th«n."} },
+		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOBAIYINPAN,MAX_USED_WUGUOBAIYINPAN,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -387,8 +387,8 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "Ö»ÄÜÔÚ¸÷³ÇÊĞ¼°ĞÂÉú´åÊ¹ÓÃ."} },
-		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOHUANGJINPAN,MAX_USED_WUGUOHUANGJINPAN,"´óÏÀÒÑÁìÈ¡Ì«¶à½±ÀøÁË£¬Òª²»ÊÔÊÔÆäËûµÄÔõÃ´Ñù!","<"} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thŞ vµ c¸c t©n thñ th«n."} },
+		{"ThisActivity:CheckTask",	{TSK_USED_WUGUOHUANGJINPAN,MAX_USED_WUGUOHUANGJINPAN,"§¹i hiÖp ®· nhËn qu¸ nhiÒu phÇn th­ëng råi, hay lµ thö c¸i kh¸c xem sao!","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -407,8 +407,8 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"PlayerFunLib:IsFightState",	{1, "Ö»ÄÜÔÚÕ½¶·ÇøÓòÊ¹ÓÃ."} },
-		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "Ö»ÄÜÔÚ¸÷³ÇÊĞ¼°ĞÂÊÖ´åÊ¹ÓÃ."} },
+		{"PlayerFunLib:IsFightState",	{1, "ChØ cã thÓ sö dông t¹i c¸c khu vùc chiÕn ®Êu."} },
+		{"PlayerFunLib:CheckInMap",	{"11,1,37,,176,162,78,80,174,121,153,101,99,100,20,53", "ChØ cã thÓ sö dông t¹i c¸c thµnh thŞ vµ c¸c t©n thñ th«n."} },
 		{"ThisActivity:CheckUseZhongzi",	{nil} },
 	},
 	tbActition = 
@@ -423,96 +423,96 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú®á
 	szName = "bao li xi do select",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"»»ºì°ü¿ÉÒÔÊ¹ÓÃÒÔÏÂ±¦Ê¯ÖĞµÄÒ»ÖÖ:",0},
+	tbMessageParam = {"§æi Bao L× X× §á cã thÓ dïng mét trong c¸c lo¹i b¶o th¹ch sau:",0},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTaskDaily",	{2918,2,"½ñÌì´óÏÀÒÑ¾­»»¹»ÁË£¬µÈÃ÷ÌìÔÙÀ´Å¶","<"} },
+		{"PlayerFunLib:CheckTaskDaily",	{2918,2,"H«m nay ®¹i hiÖp ®· ®æi ®ñ råi, ®îi ngµy mai h·y tiÕp tôc nhĞ!","<"} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÓÃ¾§ºì±¦Ê¯",23} },
-		{"AddDialogOpt",	{"ÓÃÀ¶Ë®¾§",24} },
-		{"AddDialogOpt",	{"ÓÃ×ÏË®¾§",25} },
-		{"AddDialogOpt",	{"ÓÃÂÌË®¾§",26} },
+		{"AddDialogOpt",	{"Dïng Tinh Hång B¶o Th¹ch",23} },
+		{"AddDialogOpt",	{"Dïng Lam Thñy Tinh",24} },
+		{"AddDialogOpt",	{"Dïng Tö Thñy Tinh",25} },
+		{"AddDialogOpt",	{"Dïng Lôc Thñy Tinh",26} },
 	},
 }
-tbConfig[23] = --ÓÃ¾§ºì»»ºì°ü®á
+tbConfig[23] = --ÓÃ¾§ºì§æi Bao L× X× §á®á
 {
 	nId = 23,
 	szMessageType = "CreateCompose",
 	szName = "baolixido_1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºì°ü",1,1,1,0.02,0,2},
+	tbMessageParam = {"Bao l× x× ®á",1,1,1,0.02,0,2},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"¾§ºì±¦Ê¯",{tbProp={4,353,1,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tinh Hång B¶o Th¹ch",{tbProp={4,353,1,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckComposeRedEvelopLimit",	{nil} },
 	},
 	tbActition = 
 	{		
-		{"ThisActivity:ComposeRedEvelop",	{"ÓÃ¾§ºì±¦Ê¯»»ºì°ü"} },
+		{"ThisActivity:ComposeRedEvelop",	{"DungTinhHongBaoThachDoiBaoLiXiDo"} },
 	},
 }
-tbConfig[24] = --ÓÃÀ¶Ë®¾§»»ºì°ü®á
+tbConfig[24] = --DungLamThuyTinhDoiBaoLiXiDo®á
 {
 	nId = 24,
 	szMessageType = "CreateCompose",
 	szName = "baolixido_1",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºì°ü®á",1,1,1,0.02,0,2},
+	tbMessageParam = {"Bao l× x× ®á",1,1,1,0.02,0,2},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"À¶Ë®¾§",{tbProp={4,238,1,1,0,0},},1} },
+		{"AddOneMaterial",	{"Lam Thñy Tinh",{tbProp={4,238,1,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckComposeRedEvelopLimit",	{nil} },
 	},
 	tbActition = 
 	{			
-		{"ThisActivity:ComposeRedEvelop",	{"ÓÃÀ¶Ë®¾§»»ºì°ü"} },
+		{"ThisActivity:ComposeRedEvelop",	{"DungLamThuyTinhDoiBaoLiXiDo"} },
 	},
 }
-tbConfig[25] = --ÓÃ×ÏË®¾§»»ºì°ü
+tbConfig[25] = --DungTuThuyTinhDoiBaoLiXiDo
 {
 	nId = 25,
 	szMessageType = "CreateCompose",
 	szName = "baolixido_2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºì°ü®á",1,1,1,0.02,0,2},
+	tbMessageParam = {"Bao l× x× ®á",1,1,1,0.02,0,2},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"×ÏË®¾§",{tbProp={4,239,1,1,0,0},},1} },
+		{"AddOneMaterial",	{"Tö Thñy Tinh",{tbProp={4,239,1,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckComposeRedEvelopLimit",	{nil} },
 	},
 	tbActition = 
 	{
-		{"ThisActivity:ComposeRedEvelop",	{"ÓÃ×ÏË®¾§»»ºì°ü"} },		
+		{"ThisActivity:ComposeRedEvelop",	{"DungTuThuyTinhDoiBaoLiXiDo"} },		
 	},
 }
-tbConfig[26] = --ÓÃÂÌË®¾§»»ºì°ü®á
+tbConfig[26] = --DungLucThuyTinhDoiBaoLiXiDo®á
 {
 	nId = 26,
 	szMessageType = "CreateCompose",
 	szName = "baolixido_2",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"ºì°ü®á",1,1,1,0.02,0,2},
+	tbMessageParam = {"Bao l× x× ®á",1,1,1,0.02,0,2},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"ÂÌË®¾§",{tbProp={4,240,1,1,0,0},},1} },
+		{"AddOneMaterial",	{"Lôc Thñy Tinh",{tbProp={4,240,1,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckComposeRedEvelopLimit",	{nil} },
 	},
 	tbActition = 
 	{
-		{"ThisActivity:ComposeRedEvelop",	{"ÓÃÂÌË®¾§»»ºì°ü"} },		
+		{"ThisActivity:ComposeRedEvelop",	{"DungLucThuyTinhDoiBaoLiXiDo"} },		
 	},
 }
-tbConfig[27] = --Ê¹ÓÃºì°ü®á
+tbConfig[27] = --SuDungBaoLiXiDo
 {
 	nId = 27,
 	szMessageType = "ItemScript",
@@ -526,30 +526,30 @@ tbConfig[27] = --Ê¹ÓÃºì°ü®á
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{2500000,1,EVENT_LOG_TITLE,"Ê¹ÓÃºì°ü"} },
+		{"PlayerFunLib:AddExp",	{2500000,1,EVENT_LOG_TITLE,"SuDungBaoLiXiDo"} },
 	},
 }
 tbConfig[28] =
 {
 	nId = 28,
 	szMessageType = "CreateDialog",
-	szName = "ÁìÈ¡½±Àø¶Ô»°free exp",
+	szName = "§èi tho¹i nhËn phÇn th­ëng free exp",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"´Ó0:00-16-1-2012 µ½ 24:00-17-1-2012, 150¼¶¼°150¼¶ÒÔÉÏµÄ´óÏÀ(ÖØÉú²»ÏŞÖÆ) ¿ÉÒÔÀ´¼ûÎÒÁìÈ¡ÀñÎïÎª²»µş¼ÓµÄÒ»ÒÚ¾­ÑéÖµ, Ã¿¸öÈËÖ»ÄÜÁìÈ¡Î¨Ò»µÄÒ»´Î.",0},
+	tbMessageParam = {"Vµo lóc 0:00-16-1-2012 ®Õn 24:00-17-1-2012, c¸c ®¹i hiÖp cÊp 150 vµ 150 trë lªn (trïng sinh kh«ng giíi h¹n) cã thÓ ®Õn gÆp ta ®Ó nhËn mãn quµ  lµ 100 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, mçi nh©n vËt chØ cã thÓ nhËn mét lÇn duy nhÊt.",0},
 	tbCondition = 
 	{		
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÎÒÏëÁì½±",29} },
+		{"AddDialogOpt",	{"Ta muèn nhËn th­ëng",29} },
 	},
 }
 tbConfig[29] = 
 {
 	nId = 29,
 	szMessageType = "nil",
-	szName = "Áì½±free exp",
+	szName = "nhËn phÇn th­ëng free exp",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -557,13 +557,13 @@ tbConfig[29] =
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckTimeGetFreeExp",	{nil} },
-		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {{nTaskID = 2912,nStartBit = 21,nBitCount = 1,nMaxValue = 1}, 0, "Ã¿¸öÈËÖ»ÄÜÁìÈ¡Ò»´Î", "=="}},	
+		{"tbVNG_BitTask_Lib:CheckBitTaskValue", {{nTaskID = 2912,nStartBit = 21,nBitCount = 1,nMaxValue = 1}, 0, "Mçi nh©n vËt chØ ®­îc nhËn th­ëng 1 lÇn", "=="}},	
 	},
 	tbActition = 
 	{
 		{"tbVNG_BitTask_Lib:setBitTask", {{nTaskID = 2912,nStartBit = 21,nBitCount = 1,nMaxValue = 1}, 1}},
 		{"PlayerFunLib:AddExp",	{100e6,0,EVENT_LOG_TITLE,"MienPhiNhanThuongDiemKinhNghiem"} },
-		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "Ãâ·ÑÁìÈ¡¾­Ñé½±Àø", "100000000 ¾­ÑéÖµ", 1}},
+		{"tbVngTransLog:Write", {"201201_event_tet/", 22, "MienPhiNhanThuongDiemKinhNghiem", "100000000 §iÓm kinh nghiÖm", 1}},
 	},
 }
 tbConfig[30] = --½»ÁúÃæ¾ß
@@ -573,13 +573,13 @@ tbConfig[30] = --½»ÁúÃæ¾ß
 	szName = "give dragon mask",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>»»¾­ÑéÖµ",1,1,1,0.02},
+	tbMessageParam = {"<npc>§æi ®iÓm kinh nghiÖm",1,1,1,0.02},
 	tbCondition = 
 	{		
-		{"AddOneMaterial",	{"Ãæ¾ß-ÁúÖé",{tbProp={0,11,75,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ãæ¾ß- ÁúÍ·",{tbProp={0,11,76,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ãæ¾ß- ÁúÉí",{tbProp={0,11,77,1,0,0},},1} },
-		{"AddOneMaterial",	{"Ãæ¾ß- ÁúÎ²",{tbProp={0,11,78,1,0,0},},1} },
+		{"AddOneMaterial",	{"MÆt n¹ - Long Ch©u",{tbProp={0,11,75,1,0,0},},1} },
+		{"AddOneMaterial",	{"MÆt n¹ - §Çu Rång",{tbProp={0,11,76,1,0,0},},1} },
+		{"AddOneMaterial",	{"MÆt n¹ - Th©n Rång",{tbProp={0,11,77,1,0,0},},1} },
+		{"AddOneMaterial",	{"MÆt n¹ - §u«i Rång",{tbProp={0,11,78,1,0,0},},1} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"ThisActivity:CheckComposeDragonMask",	{nil} },		
 	},

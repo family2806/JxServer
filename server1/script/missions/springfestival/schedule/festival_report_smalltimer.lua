@@ -26,13 +26,13 @@ function OnTimer()
 		if (nTime > 0) then
 			local OldSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(FE_MAPID[2]);
-			Msg2MSAll(FE_MISSIONID, "»î¶¯»¹ÓÐ<color=yellow>"..nTime.."<color>·Ö½áÊø!");
+			Msg2MSAll(FE_MISSIONID, "Ho¹t ®éng vÉn cßn<color=yellow>"..nTime.."<color>phót kÕt thóc!");
 			SubWorld = OldSubWorld;
 		end;
 	end;
 end;
 
---ÅÅÐòº¯Êý(¸ù¾Ýµã»÷¸öÊýÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃû´Î)£»
+--ÅÅÐòº¯Êý(¸ù¾Ýµã»÷c¸iÊýÓÉ¶àµ½ÉÙÈ·¶¨½«Ò»×é³ÉÔ±µÄÃûlÇn)£»
 function groupsort(nGroupId, bSave, szAnimalName)
 	local OldSubWorld = SubWorld;
 	SubWorld = SubWorldID2Idx(FE_MAPID[2]);
@@ -61,7 +61,7 @@ function groupsort(nGroupId, bSave, szAnimalName)
 	local j;
 	local temptab = {};
 	local nCount = getn(tabPlayer);
-	for i = 2, nCount do	--²ÉÓÃÒ»¸öÃ°ÅÝÅÅÐò
+	for i = 2, nCount do	--²ÉÓÃÒ»c¸iÃ°ÅÝÅÅÐò
 		for j = nCount, i, -1 do
 			if (tabPlayer[j][2] > tabPlayer[j - 1][2]) then	--²ÉÓÃ½µÐòÅÅÐò
 				temptab = tabPlayer[j];
@@ -80,13 +80,13 @@ function groupsort(nGroupId, bSave, szAnimalName)
 		if ( tabPlayer[i][1] ~= nil ) then
 			PlayerIndex = tabPlayer[i][1]
 			if (nGroupId > FE_SMALLMAPCOUNT) then
-			    szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..",×¥µ½"..tabPlayer[i][2].."¸ö"..FE_MOUSENAME;
+			    szMsg = szMsg.."<enter> <color=green>"..i.." "..GetName()..", b¾t ®­îc"..tabPlayer[i][2].."c¸i"..FE_MOUSENAME;
 			else
-			    szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", ´òÖÐ"..FE_ANIMALNAME..tabPlayer[i][2].."´Î";
+			    szMsg = szMsg.."<enter> <color=orange>"..i.." "..GetName()..", ®¸nh tróng"..FE_ANIMALNAME..tabPlayer[i][2].."lÇn";
 			end;
 		end
 	end
-	--ÅÅÐòºó´ÓÇ°µ½ºó¾ÍÊÇÃû´ÎµÄÏÈºó
+	--ÅÅÐòºó´ÓÇ°µ½ºó¾ÍÊÇÃûlÇnµÄÏÈºó
 	nCount = nCount;
 	for i = 1, nCount do
 		PlayerIndex = tabPlayer[i][1];
@@ -97,9 +97,9 @@ function groupsort(nGroupId, bSave, szAnimalName)
 			Msg2Player(szMsg)
 		end
 		if (nGroupId > FE_SMALLMAPCOUNT) then
-		    Msg2Player("Äã×¥µ½<color=yellow>"..GetTask(TK_FE_COUNT_ONETIME).."<color>¸ö"..szAnimalName..", Ä¿Ç°ÅÅÃûµÚ<color=yellow>"..i.."<color>.");
+		    Msg2Player("B¹n ®· b¾t ®­îc<color=yellow>"..GetTask(TK_FE_COUNT_ONETIME).."<color>c¸i"..szAnimalName..", hiÖn ®ang xÕp thø <color=yellow>"..i.."<color>.");
 		else
-		    Msg2Player("Ä¿Ç°Äã´òÖÐ<color=yellow>"..szAnimalName..GetTask(TK_FE_COUNT_ONETIME).."<color>´Î"..", Ä¿Ç°ÅÅÃûµÚ<color=yellow>"..i.."<color>.");
+		    Msg2Player("HiÖn t¹i b¹n ®¸nh tróng <color=yellow>"..szAnimalName..GetTask(TK_FE_COUNT_ONETIME).."<color>lÇn"..", hiÖn ®ang xÕp thø <color=yellow>"..i.."<color>.");
 		end;
 	end;
 	

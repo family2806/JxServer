@@ -5,5 +5,5 @@ Include( "\\script\\item\\checkmapid.lua" )
 
 function EatMedicine()
 	CastSkill( 491, 1);			--ÉúÃüÉÏÏŞÌá¸ß30%,È«¿¹Ôö¼Ó30%
-	Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸öÕ½¹Ä");
+	Msg2Player("B¹n ®· sö dông 1 ChiÕn cæ ");
 end

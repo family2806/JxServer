@@ -1,23 +1,23 @@
 --Ê¥µ®ÀñÎï¶Ô»°½Å±¾£»
 Include([[\script\missions\chrismas\ch_head.lua]]);
 ITEM_DROPRATE_TABLE = {
-						{	{6,1,978,1,1,1,1},0.025, "¼ÓËÙÍè"	},
-						{	{6,1,981,1,1,1,1},0.025, "Ñ£ÔÎÏÝÚå"	},
-						{	{6,1,983,1,1,1,1},0.025, "Ëª½µÏÝÚå"	},
-						{	{6,1,991,1,1,1,1},0.025, "ÌìÀ×Óñ"	},
-						{	{6,1,994,1,1,1,1},0.025, "º®·çÓñ"	},
-						{	{6,1,987,1,1,1,1},0.025, "¶ÝµØ·û"	},
-						{	{6,1,989,1,1,1,1},0.018, "¾­Ñé·û"	},
-						{	{6,1,990,1,1,1,1},0.005, "À×ËÙÍè"	},
-						{	{6,1,982,1,1,1,1},0.005, "ÐþÌìÏÝÚå"	},
-						{	{6,1,984,1,1,1,1},0.005, "B±ù·âÏÝÚå"	},
-						{	{6,1,993,1,1,1,1},0.005, "À×ÉñÓñ"	},
-						{	{6,1,992,1,1,1,1},0.005, "Ðþ±ùÓñ"	},
-						{	{6,1,980,1,1,1,1},0.002, "±©À×ºÅ½Ç"	},
-						{	{6,1,979,1,1,1,1},0.002, "±ùËªºÅ½Ç"	},
-						{	{6,1,985,1,1,1,1},0.005, "Ç¬À¤Å²ÒÆ·û"	},
-						{	{6,1,986,1,1,1,1},0.003, "ÒÆÐÎ»»Ó°·û"	},
-						{	{6,1,988,1,1,1,1},0.005, "¾­Ñé·û£¨¸ß¼¶£©"	},
+						{	{6,1,978,1,1,1,1},0.025, "Gia Tèc hoµn"	},
+						{	{6,1,981,1,1,1,1},0.025, "HuyÔn Hu©n H·m TÜnh"	},
+						{	{6,1,983,1,1,1,1},0.025, "S­¬ng Gi¸ng H·m TÜnh"	},
+						{	{6,1,991,1,1,1,1},0.025, "Thiªn L«i Ngäc"	},
+						{	{6,1,994,1,1,1,1},0.025, "Hµn Phong Ngäc"	},
+						{	{6,1,987,1,1,1,1},0.025, "§én §Þa phï "	},
+						{	{6,1,989,1,1,1,1},0.018, "Kinh nghiÖm phï "	},
+						{	{6,1,990,1,1,1,1},0.005, "L«i Tèc hoµn"	},
+						{	{6,1,982,1,1,1,1},0.005, "HuyÒn Thiªn H·m TÜnh"	},
+						{	{6,1,984,1,1,1,1},0.005, "B¨ng Phong H·m TÜnh"	},
+						{	{6,1,993,1,1,1,1},0.005, "L«i ThÇn Ngäc"	},
+						{	{6,1,992,1,1,1,1},0.005, "HuyÒn B¨ng Ngäc"	},
+						{	{6,1,980,1,1,1,1},0.002, "B¹o L«i HiÖu gi¸c"	},
+						{	{6,1,979,1,1,1,1},0.002, "B¨ng S­¬ng HiÖu gi¸c "	},
+						{	{6,1,985,1,1,1,1},0.005, "Cµn Kh«n Na Di phï "	},
+						{	{6,1,986,1,1,1,1},0.003, "Di H×nh Ho¸n ¶nh phï "	},
+						{	{6,1,988,1,1,1,1},0.005, "Kinh nghiÖm phï (cao cÊp) "	},
 						{	500,0.08},
 						{	1000,0.1},
 						{	3000,0.12},
@@ -28,7 +28,7 @@ ITEM_DROPRATE_TABLE = {
 						{	100000,0.024},
 						{	150000,0.01},
 						{	300000,0.005},
-						{	{6,1,402,1,1,1,1},0.001, "ÉñÃØ´óºì°ü"},
+						{	{6,1,402,1,1,1,1},0.001, "ThÇn bÝ §¹i Hång Bao"},
 					}
 					
 					
@@ -47,7 +47,7 @@ function main()
 	
 	CastSkill(358, 1); --·ÅÒ»¸ö¼¼ÄÜ£»
 	
-	Msg2Player("ÄãÒÑÑ¡ÖÐ"..nCount.."Ê¥µ®Àñ°ü");
+	Msg2Player("B¹n ®· chän tróng"..nCount.."bao quµ gi¸ng sinh");
 end;
 
 function add_dropitem()
@@ -63,11 +63,11 @@ function add_dropitem()
 		if (nSum >= nRandNum) then
 			if (type( ITEM_DROPRATE_TABLE[i][1] ) == "table") then
 				AddItem(ITEM_DROPRATE_TABLE[i][1][1], ITEM_DROPRATE_TABLE[i][1][2], ITEM_DROPRATE_TABLE[i][1][3], ITEM_DROPRATE_TABLE[i][1][4], ITEM_DROPRATE_TABLE[i][1][5], ITEM_DROPRATE_TABLE[i][1][6], ITEM_DROPRATE_TABLE[i][1][7])
-				Msg2Player("ÄãµÃµ½1¸ö<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3])
+				Msg2Player("B¹n ®­îc 1 c¸i<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3])
 			elseif (type( ITEM_DROPRATE_TABLE[i][1] ) == "number") then
 			    local nExp = ITEM_DROPRATE_TABLE[i][1] * get_exptimes();
 				AddOwnExp(nExp);
-				Msg2Player("ÄãµÃµ½<color=0xB5FDD7>"..nExp.."¾­Ñé.")
+				Msg2Player("B¹n nhËn ®­îc <color=0xB5FDD7>"..nExp.."®iÓm kinh nghiÖm.")
 			end
 			break
 		end

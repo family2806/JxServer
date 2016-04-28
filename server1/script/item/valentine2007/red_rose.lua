@@ -7,12 +7,12 @@ Include("\\script\\event\\valentine2007\\head.lua");
 
 function main(nItemIdx)
 	if (checkValentine2007Date(20070306) ~= 1) then
-		Say("Õâ¶äÃµ¹å»¨´æ·ÅÊ±¼äÌ«³¤£¬ÒÑ¾­¿İÎ®ÁË¡£", 0);
+		Say("Hoa hång nµy ®Ó ®· l©u, b©y giê ®· kh« hĞo", 0);
 		return 0;
 	end;
 	
 	if (checkValentine2007Limit() ~= 1) then
-		Say("²»ºÃÒâË¼£¬Ö»ÓĞµÈ¼¶´ïµ½<color=yellow>80¼¶<color>ÒÔÉÏµÄÓÃ»§£¬²ÅÄÜÊ¹ÓÃÃµ¹å»¨¡£", 0);
+		Say("ThËt ng¹i qu¸, chØ cã ng­êi ch¬i cÊp trªn 80 <color=yellow>®· n¹p thÎ<color> míi cã thÓ sö dông hoa hång.", 0);
 		return 1;
 	end;
 	
@@ -31,8 +31,8 @@ function main(nItemIdx)
 	
 	local ncurexp = GetTask(TSK_VALENTINE_ROSE_ADDEXP);
 	if (ncurexp >= 100000000) then
-		Say("ÄãÊ¹ÓÃÁËºÜ¶àÃµ¹å£¬Õâ¶äÃµ¹å¶ÔÄãÒÑ¾­Ã»ÓĞĞ§ÓÃÁË", 0);
-		Msg2Player("Ã¿¸öÈËÍ¨¹ıÊ¹ÓÃÃµ¹å×î¶à»ñµÃÒ»ÒÚ¾­Ñé");
+		Say("B¹n ®· sö dông qu¸ nhiÒu hoa hång, kh«ng thÓ sö dông tiÕp tôc!", 0);
+		Msg2Player("Mçi ng­êi sö dông hoa hång chØ nhËn ®­îc tèi ®a lµ 100 triÖu ®iÓm kinh nghiÖm.");
 		return 1;
 	elseif ((ncurexp + nexp) > 100000000) then
 		nexp = 100000000 - ncurexp
@@ -40,8 +40,8 @@ function main(nItemIdx)
 	
 	AddOwnExp(nexp);
 	SetTask(TSK_VALENTINE_ROSE_ADDEXP, ncurexp + nexp)
-	Msg2Player(format("Äã»ñµÃÁË%d¾­ÑéÖµ", nexp));
-	local szlog = format("[2007ÇéÈË½Ú]\t%s\tName:%s\tAccount:%s\tÊ¹ÓÃ%s»ñµÃÁË%d¾­ÑéÖµ",
+	Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm kinh nghiÖm", nexp));
+	local szlog = format("[LÔ t×nh nh©n 2007]\t%s\tName:%s\tAccount:%s\t sö dông %s nhËn ®­îc %d ®iÓm kinh nghiÖm",
 				GetLocalDate("%Y-%m-%d %H:%M:%S"),GetName(),GetAccount(),GetItemName(nItemIdx),nexp);
 	WriteLog(szlog);
 end;

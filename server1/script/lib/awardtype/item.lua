@@ -100,7 +100,7 @@ function ItemType:Give(tbItem, nAmount, tbLogTitle)
 		AddItemByIndex(nItemIndex)		
 	end
 	
-	Msg2Player(format("»ñµÃ%d %s.", nAmount, szName))
+	Msg2Player(format("NhËn ®­îc %d %s.", nAmount, szName))
 	local nPlayerIndex = PlayerIndex
 	local nPak = usepack(self.nPak)
 	CallPlayerFunction(nPlayerIndex, self.WriteLog, self, szName, szCode, nAmount, tbLogTitle)

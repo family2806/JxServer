@@ -17,7 +17,7 @@ function main()
 	end
 	
 	if bUsed == 0 then
-		if (PlayerFunLib:CheckTaskDaily(1901,20,"大侠的见识渊博，不用再检查了","<") ~= 1) then
+		if (PlayerFunLib:CheckTaskDaily(1901,20,"Ki課 th鴆 c馻 i hi謕  r閚g r穒 r錳, kh玭g c莕 ph秈 ki觤 tra n鱝","<") ~= 1) then
 			return
 		end
 		

@@ -17,8 +17,8 @@ end
 function zhongtask5()
 	AddOwnExp(600000)
 	AddExp_Skill_Extend(600000)
-	Msg2Player("ÄãµÃµ½ÁËÁ½¼şÉñÆ÷£¬¿ÉÒÔ»ØÈ¥ÕÒ¸µÄÏ±ùÁË.")
-	Talk(1,"","¿Õ¼ÅÉñÉ®£º°¢ÃÖÍÓ·ğ£¬ÉñÆ÷ÔÚ´Ë£¬Ê©Ö÷ÄÃÈ¥°É¡£")
+	Msg2Player("B¹n nhËn ®­îc hai bé Long Khİ, h·y quay vÒ t×m Phã Nam B¨ng.")
+	Talk(1,"","A Di §µ PhËt, ThÇn Khİ ë ®©y, Thİ chñ lÊy ®i.")
 end
 
 

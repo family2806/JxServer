@@ -40,7 +40,7 @@ function main()
 
 	basemission_CallNpc(tbNpc)
 		
-	Msg2Player("种一颗情人树种子")
+	Msg2Player("Tr錸g 1 H箃 Gi鑞g C﹜ T譶h Nh﹏")
 	
 	local tbPos = cutround_in8(nX, nY, 8)
 	for i = 1, getn(tbPos) do

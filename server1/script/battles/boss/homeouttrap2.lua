@@ -10,7 +10,7 @@ function main()
 				SetFightState(0)
 				BT_SetData( PL_LASTDEATHTIME, GetGameTime() )
 		elseif (GetCurCamp() == 1) then
-			Msg2Player("Ç°·½É½ÂÍÖØµş, Ò»¶¨ÓĞ·ü±ø! Äú²»Ó¦¸ÃËæ±ã½øÈë!!")
+			Msg2Player("Phİa tr­íc s¬n cèc chËp trïng, ch¾c ch¾n cã phôc binh! B¹n kh«ng nªn tù tiÖn x«ng lªn!")
 			SetFightState(1)
 		end;
 end;

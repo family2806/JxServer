@@ -26,7 +26,7 @@ end
 function TaskInfo:Show(nTaskId, player)
 	local tb = self.m_Infos[nTaskId]
 	if (tb) then
-		player:Describe(tb.Info, 1, "ÖªµÀÁË/Cancel")
+		player:Describe(tb.Info, 1, "BiÕt råi/Cancel")
 	end
 end
 

@@ -10,34 +10,34 @@ function main()
 	UTask_tr = GetTask(4);
 	if (GetSeries() == 3) and (GetFaction() == "tianren") then
 		if (UTask_tr == 10*256) and (GetLevel() >= 10) then
-			Say("±¾½ÌµÚ¶ş²ãµÄ<color=Red>ÆßÉ±¶´<color>Àï¹ØÑºÁË<color=Red>Æß¸öËÀÇô<color>£¬ËûÃÇ¶¼ÊÇ±¾½ÌµÄÅÑÍ½£¬Èç¹ûÄãÄÜ¹»´ò°ÜÕâÆß¸ö¼Ò»ï£¬µÃµ½<color=Red>Æß¿éÆßÉ±ÁîÅÆµÄËéÆ¬<color>£¬¾Í¿ÉÒÔ½ú¼¶Îª±¾½ÌµÄÎŞÓ°É±ÊÖ£¬ÄãÓĞÃ»ÓĞµ¨Á¿È¥´³ÆßÉ±¶´°¡£¿", 2, "´³ÆßÉ±¶´ /L10_get_yes", "ÔİÊ±²»´³/L10_get_no")
+			Say("T¹i tÇng hai cña bæn gi¸o, ë <color=Red>ThÊt S¸t §éng<color> cã giam <color=Red>b¶y tªn tö tï<color>, bän chóng ®Òu lµ nh÷ng kÎ ph¶n béi bæn gi¸o, nÕu ng­¬i cã thÓ ®¸nh b¹i ba tªn trong sè bän chóng, lÊy ®­îc <color=Red>m¶nh ThÊt S¸t lÖnh bµi<color>, lµ cã thÓ th¨ng lªn cÊp V« ¶nh S¸t Thñ cña bæn gi¸o, ng­¬i cã muèn vµo trong ThÊt S¸t §éng kh«ng?", 2, "X«ng vµo ThÊt S¸t ®éng /L10_get_yes", "T¹m thêi ch­a vµo /L10_get_no")
 --		elseif (UTask_tr == 10*256+50) and (HaveItem(51) == 1) and  HaveItem(52) == 1 and HaveItem(53) == 1 and HaveItem(54) == 1 and HaveItem(55) == 1 and HaveItem(56) == 1 and (HaveItem(57) == 1) then
 		elseif (UTask_tr == 10*256+50) then		-- ĞŞ¸ÄÈÎÎñÍê³ÉÌõ¼ş£¨2003-09-27£©
 			i = check_token()
 			if (i >= 3) then
-				Talk(1,"L10_prise","ºÜºÃ£¬½øÆßÉ±¶´ÏÂ¹»ÈËÊı²ÅÄÜ³öÀ´£¬·´Ö®£¬ÄãÓĞÊ²Ã´ÊÂ¾Í×Ô¼º´¦Àí")
+				Talk(1,"L10_prise","RÊt tèt! vµo ThÊt S¸t §éng h¹ ®ñ sè ng­êi míi cã thÓ trë ra, ng­îc l¹i ng­¬i cã chuyÖn g× th× tù m×nh xö lı!")
 			else
-				Talk(1,"","ÔõÃ´Ñù£¬Ò»¸öĞ¡Ğ¡µÄ¿¼ÑéÒ²×ö²»ºÃÂğ?")
+				Talk(1,"","ThÕ nµo? Mét cuéc kh¶o nghiÖm nhá nh­ thÕ mµ ng­¬i còng lµm kh«ng xong ­?")
 			end
 		elseif (UTask_tr < 20*256) then								--ÉĞÎ´½Ó10¼¶ÈÎÎñ
-			Talk(1,"","²»ÒªÒÔÎª¼ÓÈë±¾½Ì¾Í°²ÎÈÁË£¬±¾½Ì²»ÊÕ¸»Ô£µÄÈË!")
+			Talk(1,"","§õng nghÜ gia nhËp bæn gi¸o sÏ ¨n kh«ng ngåi råi, bæn gi¸o kh«ng chøa chÊp nh÷ng ng­êi thõa th·i ®©u!")
 		else
-			Talk(1,"","Äã¸Õ¸Õ¼ÓÈëµÜ×Ó£¬Ç¿ÖĞ×ÔÓĞÇ¿ÖĞÊÖ£¬ÄãÒªĞ¡ĞÄ!")
+			Talk(1,"","Ng­¬i míi gia nhËp bæn gi¸o, ng­êi m¹nh cßn cã ng­êi m¹nh h¬n, ng­¬i ph¶i cÈn thËn ®Êy!")
 		end
 	else
-		Talk(1,"","Ö»ÓĞÇ¿Õß²ÅÄÜÉú´æÏÂÀ´£¬Ç¿ÕßÊ¤ÈõÕß£¬Î´Á·ºÃµÄÈË½«±»ËûÈËÏûÃğ£¬¶¼ÊÇ×Ô¼ºµÄÑ¡Ôñ£¬²»Òª¹ÖËûÈË.")
+		Talk(1,"","ChØ cã kÎ m¹nh míi cã thÓ sinh tån trªn thÕ gian, kÎ m¹nh th¾ng kÎ yÕu, nh÷ng ng­êi tu luyÖn ch­a tíi th× sÏ bŞ kÎ kh¸c tiªu diÖt, ©u còng lµ do tù chuèc lÊy, ®õng nªn o¸n tr¸ch ng­êi kh¸c.")
 	end
 end;
 
 function L10_get_yes()
-	Talk(1,"","<color=Red>ÆßÉ±ÁîÅÆ<color> Ò»ÆğÓĞÆß¿é£¬·ÖÔÚ<color=Red>7ÃûËÀÇôÉíÉÏ color>, ÄãÖ»ÓÃÄÃµ½3¿é¾ÍĞĞ.")
+	Talk(1,"","<color=Red>ThÊt S¸t lÖnh bµi<color> cã tÊt c¶ b¶y m¶nh, ph©n ra trªn ng­êi <color=Red>b¶y tªn tö tï<color>, ng­¬i chØ cÇn lÊy 3 m¶nh lµ ®­îc.")
 	SetTask(4, 10*256+50)
-	AddNote("½ÓÆßÉ±¶´ÈÎÎñ£º½øÈëÆßÉ±¶´ÄÃµ½3¿éÆßÉ±ÁîÅÆÆßÉ±ÁîÅÆ. ")
-	Msg2Player("½ÓÆßÉ±¶´ÈÎÎñ£º½øÈëÆßÉ±¶´ÄÃµ½3¿éÆßÉ±ÁîÅÆÆßÉ±ÁîÅÆ. ")
+	AddNote("NhËn nhiÖm vô ThÊt S¸t ®éng cña Vµo ThÊt S¸t ®éng lÊy ba m¶nh ThÊt S¸t lÖnh bµi. ")
+	Msg2Player("NhËn nhiÖm vô ThÊt S¸t ®éng cña Vµo ThÊt S¸t ®éng lÊy ba m¶nh ThÊt S¸t lÖnh bµi. ")
 end;
 
 function L10_get_no()
-	Talk(1,"","×öºÃÁËÀ´¼ûÎÒ!")
+	Talk(1,"","Khi ®· lµm xong råi h·y quay l¹i t×m ta!")
 end;
 
 function L10_prise()
@@ -47,8 +47,8 @@ function L10_prise()
 --	AddMagic(131)
 --	AddMagic(136)
 	add_tr(20)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("Äã±»·âÎªÎŞÓ°É±ÊÖ£¬Ñ§µ½ÌìÈÌÃ¬·¨£¬ÌìÈÌµ¶·¨£¬»ğ·ÀÁ«»¨. ")
-	AddNote("°ÑÆßÉ±ÁîÅÆ´ø¸øÌÃÖ÷£¬Íê³ÉÆßÉ±¶´ÈÎÎñ£¬Éı¼¶ÎªÎŞÓ°É±ÊÖ")
+	Msg2Player("B¹n ®­îc phong lµ V« ¶nh S¸t Thñ! Häc ®­îc Thiªn NhÉn M©u Ph¸p, Thiªn NhÉn §ao ph¸p, Háa PhÇn Liªn Hoa. ")
+	AddNote("§­a c¸c m¶nh ThÊt S¸t lÖnh bµi cho §­êng chñ Ngét Ng¹o, hoµn thµnh nhiÖm vô ThÊt S¸t ®éng, th¨ng cÊp V« ¶nh S¸t Thñ. ")
 end;
 
 function check_token()

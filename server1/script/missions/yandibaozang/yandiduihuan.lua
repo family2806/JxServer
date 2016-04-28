@@ -7,31 +7,31 @@ Include("\\script\\lib\\awardtemplet.lua")
 IncludeLib("ITEM")
 yandiduihuan_tbItemList = 
 {
-	{szName="ìİÈËÖ®³àÑªÔªÎä¼×", nQuality=1, tbProp={0, 442}},
-	{szName="ìİÈËÖ®°ÙÁ¶¿ø", nQuality=1, tbProp={0, 443}},
-	{szName="ìİÈËÖ®ÖğÌìÑ¥", nQuality=1, tbProp={0, 445}},
-	{szName="ìİÈËÖ®½ğÂÆÈíâ¬»¤Íó", nQuality=1, tbProp={0, 446}},
-	{szName="·üôËÖ®»ÃÓ°åì", nQuality=1, tbProp={0, 455}},
-	{szName="·üôËÖ®ÎŞÁ¿±ÙĞ°ÊÖ", nQuality=1, tbProp={0, 456}},
-	{szName="·üôËÖ®ËéĞÄ", nQuality=1, tbProp={0, 457}},
-	{szName="Å®æ´Ö®ºìÑÕ·¢´ø", nQuality=1, tbProp={0, 463}},
-	{szName="Å®æ´Ö®ÁùÒÕÄŞÉÑÊø´ø", nQuality=1, tbProp={0, 464}},
-	{szName="Å®æ´Ö®º®Ïæ", nQuality=1, tbProp={0, 467}},
-	{szName="×£ÈÚÖ®ÁÒÑæÅ­·ç×°", nQuality=1, tbProp={0, 472}},
-	{szName="×£ÈÚÖ®¾ªÖË²»Ãğ×¦", nQuality=1, tbProp={0, 476}},
-	{szName="×£ÈÚÖ®ÆÆÈÕ", nQuality=1, tbProp={0, 477}},
-	{szName="ÉñÅ©Ö®÷ÌÑôµØ»ÊÒÂ", nQuality=1, tbProp={0, 482}},
-	{szName="ÉñÅ©Ö®Å­À×Í·»·", nQuality=1, tbProp={0, 483}},
-	{szName="ÉñÅ©Ö®Ô¦·çÂÄ", nQuality=1, tbProp={0, 485}},
-	{szName="ÉñÅ©Ö®Õ¶ÔÀ", nQuality=1, tbProp={0, 487}},
+	{szName="To¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸p", nQuality=1, tbProp={0, 442}},
+	{szName="To¹i Nh©n B¸ch LuyÖn Kh«i", nQuality=1, tbProp={0, 443}},
+	{szName="To¹i Nh©n Trôc Thiªn Ngoa", nQuality=1, tbProp={0, 445}},
+	{szName="To¸i Nh©n Kim Lò NhuyÔn Vi Hé UyÓn", nQuality=1, tbProp={0, 446}},
+	{szName="Phôc Hi Hoan ¶nh KŞch", nQuality=1, tbProp={0, 455}},
+	{szName="Phôc Hi V« L­îng TŞch Tµ Thñ", nQuality=1, tbProp={0, 456}},
+	{szName="Phôc Hi To¸i T©m", nQuality=1, tbProp={0, 457}},
+	{szName="N÷ Oa Hång Nhan Ph¸t §¸i", nQuality=1, tbProp={0, 463}},
+	{szName="N÷ Oa Lôc NghÖ Nghª Th­êng Thóc §¸i", nQuality=1, tbProp={0, 464}},
+	{szName="N÷ Oa Hµn T­¬ng", nQuality=1, tbProp={0, 467}},
+	{szName="Chóc Dung LiÖt DiÖm Né Phong Trang", nQuality=1, tbProp={0, 472}},
+	{szName="Chóc Dung Kinh Chİch BÊt DiÖt Tr¶o", nQuality=1, tbProp={0, 476}},
+	{szName="Chóc Dung Ph¸ NhËt", nQuality=1, tbProp={0, 477}},
+	{szName="ThÇn N«ng Tiªu D­¬ng §Şa Hoµng Y", nQuality=1, tbProp={0, 482}},
+	{szName="ThÇn N«ng Né L«i §Çu Hoµn", nQuality=1, tbProp={0, 483}},
+	{szName="ThÇn N«ng Ngù Phong L÷", nQuality=1, tbProp={0, 485}},
+	{szName="ThÇn N«ng Tr¶m Nh¹c", nQuality=1, tbProp={0, 487}},
 }
 
 yandiduihuan_Material = 
 {
-	{szName="·ïÃùé³", tbProp={6, 1, 1746}},
-	{szName="Ğş¾§¿óÊ¯", tbProp={6, 1, 147, 8}},
-	{szName="²¹ÌìÊ¯ËéÆ¬ (ÖĞ)", tbProp={6, 1, 1309}},
-	{szName="ÉñÃØ¿óÊ¯", tbProp={6, 1, 398}},
+	{szName="Ph­îng Minh Chïy", tbProp={6, 1, 1746}},
+	{szName="HuyÒn tinh kho¸ng th¹ch cÊp 8", tbProp={6, 1, 147, 8}},
+	{szName="M¶nh Bæ Thiªn Th¹ch (trung)", tbProp={6, 1, 1309}},
+	{szName="ThÇn bİ kho¸ng th¹ch", tbProp={6, 1, 398}},
 }
 yandiduihuan_CostMoney = 10000000 --1QW
 
@@ -76,15 +76,15 @@ function yandiduihuan_GiveStep(nCount)
 	
 	
 	if nCount ~=  nNeedCount + 1 then
-		Msg2Player("·ÅÈëÊıÁ¿²»¶Ô.")
-		return Say("´óÏÀ·ÅÈëµÄ²ÄÁÏ²»¶Ô£¬²»ÄÜ½øĞĞÖØÁ¶£¬ÓÃÓÚÖØÁ¶Ñ×µÛ»Æ½ğ×°±¸µÄÔ­ÁÏÊÇ£º1¸öÑ×µÛ»Æ½ğ×°±¸£¬1¸ö·ïÃùé³£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©", 0)
+		Msg2Player("Bá vµo sè l­îng kh«ng ®óng.")
+		return Say("§¹i hiÖp bá nguyªn liÖu vµo kh«ng ®óng, kh«ng thÓ tiÕn hµnh trïng luyÖn ®­îc. Nguyªn liÖu ®Ó trïng luyÖn trang bŞ hoµng kim Viªm §Õ lµ 1 trang bŞ hoµng kim Viªm §Õ, 1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 m¶nh bæ thiªn th¹ch (trung), 1000 v¹n ng©n l­îng", 0)
 	end
 	
 	local tbAwardItem, nCheckedId = yandiduihuan_checkGoldItem(nCount)
 	
 	if tbAwardItem == nil then
-		Msg2Player("·ÅÈëµÄÑ×µÛ×°±¸²»·ûºÏÒªÇó.")
-		return Say("·ÅÈëµÄÑ×µÛ×°±¸²»·ûºÏÒªÇó.", 0)
+		Msg2Player("Bá trang bŞ viªm ®Õ vµo kh«ng phï hîp víi yªu cÇu.")
+		return Say("Bá trang bŞ viªm ®Õ vµo kh«ng phï hîp víi yªu cÇu.", 0)
 	end
 	
 	for i=1,nCount do
@@ -95,8 +95,8 @@ function yandiduihuan_GiveStep(nCount)
 				nNeedCount = nNeedCount - nItemCount
 				tbNeedCount[nId] = tbNeedCount[nId] - nItemCount
 			else
-				Msg2Player("·ÅÈëÔ­ÁÏ²»¶Ô");
-				return Say(format("¸øÎÒµÄÔ­ÁÏ²»¶Ô£¬ËùÒÔ²»ÄÜÖØÁ¶¡£ÖØÁ¶Ô­ÁÏ£º<color=yellow>%s<color>l?1 <color=yellow>%s<color>, 1¸ö·ïÃùé³£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1000ÍòÒøÁ½", tbAwardItem.szName, tbAwardItem.szName), 0)
+				Msg2Player("Bá vµo nguyªn liÖu kh«ng ®óng");
+				return Say(format("Cung cÊp cho ta nguyªn liÖu kh«ng ®óng nªn kh«ng thÓ trïng luyÖn ®­îc.  Nguyªn liÖu trïng luyÖn<color=yellow>%s<color>lµ 1 <color=yellow>%s<color>, 1 Ph­îng Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹ch (trung), 1000 v¹n ng©n l­îng", tbAwardItem.szName, tbAwardItem.szName), 0)
 			end
 		end
 			
@@ -104,19 +104,19 @@ function yandiduihuan_GiveStep(nCount)
 	if (nNeedCount == 0) then
 		if  Pay(yandiduihuan_CostMoney) == 1 then 
 			local nItemIndex = GetGiveItemUnit(nCheckedId)
-			yandiduihuan_LogEquip(nItemIndex, "Ñ×µÛÖØÁ¶Ö®Ç°")
+			yandiduihuan_LogEquip(nItemIndex, "Tr­íc khi trïng luyÖn Viªm §Õ")
 			for i = 1, nCount do
 				RemoveItemByIndex(GetGiveItemUnit(i))
 			end
 			tbAwardItem.CallBack = yandiduihuan_LogEquip
-			tbAwardTemplet:GiveAwardByList(tbAwardItem, "Ñ×µÛÖØÁ¶Ö®ºó")
-			return Say(format("ÎïÆ· <color=yellow>%s<color> ÒÑÖØÁ¶³É¹¦", tbAwardItem.szName), 0)
+			tbAwardTemplet:GiveAwardByList(tbAwardItem, "Sau khi trïng luyÖn Viªm §Õ")
+			return Say(format("VËt phÈm <color=yellow>%s<color> ®· trïng luyÖn thµnh c«ng", tbAwardItem.szName), 0)
 		else
-			return Say("²»¹»Ç®½øĞĞÖØÁ¶.", 0)
+			return Say("Kh«ng ®ñ tiÒn ®Ó tiÕn hµnh trïng luyÖn nµy.", 0)
 		end
 				
 	else
-		Msg2Player("·ÅÈëÎïÆ·²»ºÏÒªÇó");
+		Msg2Player("Bá vËt phÈm vµo kh«ng ®óng yªu cÇu");
 	end
 end
 
@@ -187,21 +187,21 @@ function yandiduihuan_LogEquip(nItemIndex, szLogTitle)
 	local szItemName	= GetItemName(nItemIndex)
 	
 	local szLogMsg = format("%s, {%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d,%d}", szItemName, 4,uRandSeed,nQuality,nGenre,nDetailType,nParticular,nLevel,nSeries,nLuck,unpack(arynMagLvl))
-	WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\t%s",szLogTitle or "Ñ×µÛÖØÁ¶ºó",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),szLogMsg))	
+	WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\t%s",szLogTitle or "Sau khi trïng luyÖn Viªm §Õ",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),szLogMsg))	
 	
 end
 
 
 function yandiduihuan_main()
-	GiveItemUI("Ñ×µÛ»Æ½ğ×°±¸ÖØÁ¶½çÃæ", "1¸ö·ïÃùé³£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1 ¸öÉñÃØ¿óÊ¯, 1000 ÍòÒøÁ½, 1¸öÑ×µÛ»Æ½ğ×°±¸", "yandiduihuan_GiveStep", "yandiduihuan_OnCancel", 1)
+	GiveItemUI("Giao diÖn trïng luyÖn trang bŞ hoµng kim Viªm §Õ", "1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹c (trung), 1 thÇn bİ kho¸ng th¹ch, 1000 v¹n ng©n l­îng, 1 trang bŞ hoµng kim Viªm §Õ", "yandiduihuan_GiveStep", "yandiduihuan_OnCancel", 1)
 end
 
 
 function yandiduihuan_shuoming()
 	local tbSay = 
 	{
-		"<dec><npc>Ñ×µÛ×°±¸ÖØÁ¶, ĞèÒª1¸ö·ïÃùé³£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1 ¸öÉñÃØ¿óÊ¯, 1000 ÍòÒøÁ½, 1¸öÑ×µÛ»Æ½ğ×°±¸.<enter>Ñ×µÛ×°±¸ÓÃÓÚÖØÁ¶£¬ÖØÁ·ºóµÄ×°±¸ÊÇÒ»ÖÖ»Æ½ğ×°±¸£¬Èç¹ûÊ¹ÓÃìİÈËÖ®³àÑªÔªÎä¼×ÖØÁ·£¬¾ÍÒ»¶¨»á³öìİÈËÖ®³àÑªÔªÎä¼××°±¸ºÍËæ»úÊôĞÔ¡£",
-		"ÎÒÖªµÀÁË/yandiduihuan_OnCancel",
+		"<dec><npc>Ñ×µÛ×°±¸ÖØÁ¶, ĞèÒª1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹c (trung), 1 thÇn bİ kho¸ng th¹ch, 1000 v¹n ng©n l­îng, 1 trang bŞ hoµng kim Viªm §Õ.<enter>Ñ×µÛ×°±¸ÓÃÓÚÖØÁ¶£¬ÖØÁ·ºóµÄ×°±¸ÊÇÒ»ÖÖ»Æ½ğ×°±¸£¬Èç¹ûÊ¹ÓÃTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸pÖØÁ·£¬¾ÍÒ»¶¨»á³öTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸p×°±¸ºÍËæ»úÊôĞÔ¡£",
+		"Ta ®· hiÓu râ råi/yandiduihuan_OnCancel",
 	}
 	CreateTaskSay(tbSay)
 end

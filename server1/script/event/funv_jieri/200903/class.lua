@@ -36,15 +36,15 @@ end
 function tbFunv0903:IsPlayerEligible()
 	
 	if self.nMinLevel and GetLevel() < self.nMinLevel then
-		return nil, format("≤ªπª %dº∂", self.nMinLevel)
+		return nil, format("Kh´ng ÆÒ c p %d", self.nMinLevel)
 	end
 	
 	if self.nMaxLevel and GetLevel() > self.nMaxLevel then
-		return nil, format("“—≥¨π˝ %dº∂", self.nMaxLevel)
+		return nil, format("ß∑ v≠Ót qu∏ c p %d", self.nMaxLevel)
 	end
 	
 	if self.bIsCharged and self.bIsCharged == 1 and IsCharged() ~= 1 then
-		return nil, "¥Ûœ¿ªπŒ¥≥‰÷µ!"
+		return nil, "ßπi hi÷p v…n ch≠a nπp thŒ µ!"
 	end
 	return 1
 end

@@ -1,15 +1,15 @@
 Include("\\script\\lib\\awardtemplet.lua")
 local tbItem = 
 {
-	{szName="∫Ë”∞÷Æ…Ú‘∞ÕÌ◊Ì", nQuality=1, tbProp={0, 204}, nExpiredTime = 1440, nBindState = -2},
-	{szName="∫Ë”∞÷ÆΩ£π“Œ˜∑Ω", nQuality=1, tbProp={0, 205}, nExpiredTime = 1440, nBindState = -2},
-	{szName="∫Ë”∞÷Æ‹Ÿﬁ£œ‡Õ¸", nQuality=1, tbProp={0, 206}, nExpiredTime = 1440, nBindState = -2},
-	{szName="∫Ë”∞÷Æ∫Ï–‰’–", nQuality=1, tbProp={0, 207}, nExpiredTime = 1440, nBindState = -2},
+	{szName=" HÂng ∂nh Th»m Vi™n Uy”n ", nQuality=1, tbProp={0, 204}, nExpiredTime = 1440, nBindState = -2},
+	{szName=" HÂng ∂nh Ki’m Bµi ", nQuality=1, tbProp={0, 205}, nExpiredTime = 1440, nBindState = -2},
+	{szName="HÂng ∂nh MÙc TÛc ", nQuality=1, tbProp={0, 206}, nExpiredTime = 1440, nBindState = -2},
+	{szName=" HÂng ∂nh TÙ Chi™u ", nQuality=1, tbProp={0, 207}, nExpiredTime = 1440, nBindState = -2},
 }
 function main()
 	
 	if  CountFreeRoomByWH(2, 5, 1) < 1 then
-		Talk(1, "", format("Œ™»∑±£¥Ûœ¿≤∆≤˙∞≤»´£¨«Î¡Ùœ¬ %d %dx%d ◊∞±∏ø’Œª", 1, 2, 5))
+		Talk(1, "", format("V◊ b∂o Æ∂m Æπi hi÷p tµi s∂n an toµn , xin/mÍi l≠u lπi %d %dx%d trang bﬁ chÁ trËng ", 1, 2, 5))
 		return 1
 	end
 	

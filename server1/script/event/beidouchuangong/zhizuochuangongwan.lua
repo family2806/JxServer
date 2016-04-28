@@ -12,27 +12,27 @@ function BeiDouChuanGong_main(nStep)
 	if nStep == 1 then
 		tbSay = 
 		{
-			"<dec><npc>À´ÕÒÎÒÊÇÒªÁ¶´«¹¦ÏÉµ¤°É?",
-			"ÎÒÀ´Á¶ÏÉµ¤/#BeiDouChuanGong_main(2)",
-			"ºÍ±±¶·´«¹¦Êõ/#BeiDouChuanGong_main(3)",
-			"Ê¹ÓÃÊ±¼äĞÅÏ¢/#BeiDouChuanGong_main(4)",
-			"½áÊø¶Ô»°/OnCancel",
+			"<dec><npc>§Õn t×m ta ®Ó luyÖn c¸c lo¹i TruyÒn c«ng tiªn ®¬n cã ph¶i kh«ng?",
+			"Ta ®Õn luyÖn c¸c lo¹i tiªn ®an/#BeiDouChuanGong_main(2)",
+			"VÒ B¾c §Èu truyÒn c«ng thuËt/#BeiDouChuanGong_main(3)",
+			"Th«ng tin thêi gian sö dông/#BeiDouChuanGong_main(4)",
+			"KÕt thóc ®èi tho¹i/OnCancel",
 		}
 	elseif nStep == 2 then
 		tbSay = 
 		{
-			"<dec><npc>ÄãÒªÁ¶ÄÄÖÖÏÉµ¤",
-			"°×Õæµ¤/#BeiDouChuanGong_zuodan([[bai]])",
-			"ÑªÕæµ¤/#BeiDouChuanGong_zuodan([[xue]])",
-			"ĞşÕæµ¤/#BeiDouChuanGong_zuodan([[xuan]])",
-			"×Ï½ğÕæµ¤/#BeiDouChuanGong_zuodan([[zijin]])",
-			"½áÊø¶Ô»°/OnCancel",
+			"<dec><npc>Ng­¬i muèn luyÖn lo¹i tiªn ®¬n nµo?",
+			"B¹ch Ch©n §¬n/#BeiDouChuanGong_zuodan([[bai]])",
+			"HuyÕt Ch©n §¬n/#BeiDouChuanGong_zuodan([[xue]])",
+			"HuyÒn Ch©n §¬n/#BeiDouChuanGong_zuodan([[xuan]])",
+			"Tö Kim Ch©n §¬n/#BeiDouChuanGong_zuodan([[zijin]])",
+			"KÕt thóc ®èi tho¹i/OnCancel",
 		}
 	elseif nStep == 3 then
 		tbSay = 
 		{
-			format("<dec><npc>ÏÉµ¤Ìõ¼ş: µ±´«¹¦¸øÒÔÉÏÏÉµ¤Ê±ÒªÓĞ100Íò¾­ÑéÖµ. ÏÉµ¤µÄËùĞèÔ­ÁÏÈçÏÂ.<enter>°×Õæµ¤: 1±±¶·´«¹¦Êõ, 1ÖêÆßĞÇ²İ<enter>ÑªÕæµ¤: 1±±¶·´«¹¦Êõ, 1°ÙÄêÆßĞÇ²İ <enter>ĞşÕæµ¤: 1±±¶·´«¹¦Êõ, 1Ç§ÄêÆßĞÇ²İ<enter>×Ï½ğÕæµ¤: 1±±¶·´«¹¦Êõ, 1¶äÍòÄêÎå²Ê»¨<enter>»ÆÕæµ¤:  ±±´«<enter>3ÖÖÏÉµ¤, Ö»Ğè´ïµ½50¼¶²¢ÇÒ³äÖµÁË¾Í¿ÉÒÔÊ¹ÓÃ²¢ÁìÈ¡30ÒÚ×Ü¾­Ñé, ´ïµ½×î¸ß¾­ÑéºóÒªµÈ %d Ìì²Å¿ÉÒÔÔÙÊ¹ÓÃ. Ö»ÓĞÍæ¼Ò×ªÉú²Å¿ÉÒÔÊ¹ÓÃ×ÏÕæµ¤. ×Ï½ğÕæµ¤ºÍ»Æ½ğÕæµ¤ÁìÈ¡µÄ¾­ÑéÖµ¿ÉÒÔ¹²ÓÃ²¢ÇÒÔÚÊ¹ÓÃÍêÖ®ºóÒª60ºó²Å¿ÉÒÔ¼ÌĞøÊ¹ÓÃ",floor( TSKV_BeiDouChuanGong_UseLimit/(60*60*24) ) ),
-			"½áÊø¶Ô»°/OnCancel",
+			format("<dec><npc>§iÒu kiÖn cña tiªn ®¬n: lóc truyÒn c«ng cho c¸c lo¹i tiªn ®¬n trªn ng­êi ph¶i cã ®ñ 1 triÖu kinh nghiÖm. Tiªn ®¬n cÇn nguyªn liÖu nh­ sau.<enter>B¹ch Ch©n §¬n: 1 b¾c ®Èu truyÒn c«ng thuËt, 1 thÊt tinh th¶o<enter>HuyÕt Ch©n §¬n: 1 b¾c ®Èu truyÒn c«ng thuËt, 1 b¸ch niªn thÊt tinh th¶o <enter>HuyÒn Ch©n §¬n: 1 b¾c ®Èu truyÒn c«ng thuËt, 1 thiªn niªn thÊt tinh th¶o<enter>Tö Kim Ch©n §¬n: 1 b¾c ®Èu truyÒn c«ng thuËt, 1 v¹n niªn ngò th¸i hoa<enter>Hoµng Ch©n §¬n:  bİ truyÒn<enter>3 lo¹i tiªn ®¬n ®Çu, chØ cÇn ®ñ cÊp 50 vµ ®· n¹p thÎ míi cã thÓ sö dông vµ chØ nhËn ®­îc tæng kinh nghiÖm lµ 3 tû, ®¹t ®Õn kinh nghiÖm cao nhÊt ph¶i ®îi %d ngµy míi cã thÓ sö dông l¹i. ChØ cã ng­êi ch¬i chuyÓn sinh míi cã thÓ sö dông Tö Kim Ch©n §¬n. Tö Kim Ch©n §¬n vµ Hoµng Kim Ch©n §¬n nhËn ®iÓm kinh nghiÖm cã thÓ céng dån vµ sö dông xong th× ph¶i ®îi 60 ngµy míi cã thÓ sö dông tiÕp",floor( TSKV_BeiDouChuanGong_UseLimit/(60*60*24) ) ),
+			"KÕt thóc ®èi tho¹i/OnCancel",
 		}
 	elseif nStep == 4 then
 		
@@ -42,9 +42,9 @@ function BeiDouChuanGong_main(nStep)
 		local nTSKVTime_ZiJin	= GetTask(TSK_BeiDouChuanGong_USEDTIME_ZIJIN);
 		local nTSKVTime_Huang	= GetTask(TSK_BeiDouChuanGong_USEDTIME_HUANG);
 		
-		local szMsg_Common = "ÒÔÏÖÔÚµÄ¹¦Á¦, Äã¿ÉÒÔÊ¹ÓÃÆÕÍ¨´«¹¦ÏÉµ¤.";
-		local szMsg_ZiJin  = "ÒÔÏÖÔÚµÄ¹¦Á¦, Äã¿ÉÒÔÊ¹ÓÃ×Ï½ğÕæµ¤.";
-		local szMsg_Huang  = "ÒÔÏÖÔÚµÄ¹¦Á¦, Äã¿ÉÒÔÊ¹ÓÃ»ÆÕæµ¤.";
+		local szMsg_Common = "Víi c«ng lùc hiÖn t¹i, ®¹i hiÖp cã thÓ sö dông phæ th«ng truyÒn c«ng tiªn ®¬n.";
+		local szMsg_ZiJin  = "Víi c«ng lùc hiÖn t¹i, ®¹i hiÖp cã thÓ sö dông Tö Kim Ch©n §¬n.";
+		local szMsg_Huang  = "Víi c«ng lùc hiÖn t¹i, ®¹i hiÖp cã thÓ sö dông Hoµng Ch©n §¬n.";
 		
 		-- ÆÕÍ¨Õæµ¤
 		if nTSKVExp >= 30e8 and nTSKVTime + TSKV_BeiDouChuanGong_UseLimit >= nCurTime then
@@ -57,10 +57,10 @@ function BeiDouChuanGong_main(nStep)
 			local nMin	= floor(nTime / 60 );
 			local nSec	= mod(nTime, 60);
 			
-			szMsg_Common = format("ÏÖÔÚĞèÒªÔÙµÈ <color=yellow>%d Ìì %d Ğ¡Ê± %d ·ÖÖÓ %d Ãë<color> ²Å¿ÉÒÔÊ¹ÓÃÆÕÍ¨´«¹¦ÏÉµ¤.",nDay,nHour,nMin,nSec);
+			szMsg_Common = format("HiÖn t¹i c¸c h¹ cÇn ®îi thªm <color=yellow>%d ngµy %d giê %d phót %d gi©y<color> míi cã thÓ sö dông phæ th«ng truyÒn c«ng tiªn ®¬n.",nDay,nHour,nMin,nSec);
 		end
 		
-		-- ×Ï½ğÕæµ¤
+		-- Tö Kim Ch©n §¬n
 		if nTSKVTime_ZiJin + TSKV_BeiDouChuanGong_UseLimit >= nCurTime then
 			
 			local nTime = (nTSKVTime_ZiJin + TSKV_BeiDouChuanGong_UseLimit - nCurTime);
@@ -71,7 +71,7 @@ function BeiDouChuanGong_main(nStep)
 			local nMin	= floor(nTime / 60 );
 			local nSec	= mod(nTime, 60);
 			
-			szMsg_ZiJin = format("ÏÖÔÚĞèÒªÔÙµÈ <color=yellow>%d Ìì %d Ğ¡Ê± %d ·ÖÖÓ %d Ãë<color> ²Å¿ÉÒÔÊ¹ÓÃ×Ï½ğÕæµ¤.",nDay,nHour,nMin,nSec);
+			szMsg_ZiJin = format("HiÖn t¹i c¸c h¹ cÇn ®îi thªm <color=yellow>%d ngµy %d giê %d phót %d gi©y<color> míi cã thÓ sö dông Tö Kim Ch©n §¬n.",nDay,nHour,nMin,nSec);
 		end
 		
 		-- »ÆÕæµ¤
@@ -85,13 +85,13 @@ function BeiDouChuanGong_main(nStep)
 			local nMin	= floor(nTime / 60 );
 			local nSec	= mod(nTime, 60);
 			
-			szMsg_Huang = format("ÏÖÔÚĞèÒªÔÙµÈ <color=yellow>%d Ìì %d Ğ¡Ê± %d ·ÖÖÓ %d Ãë<color> ²Å¿ÉÒÔÊ¹ÓÃ»ÆÕæµ¤.",nDay,nHour,nMin,nSec);
+			szMsg_Huang = format("HiÖn t¹i c¸c h¹ cÇn ®îi thªm <color=yellow>%d ngµy %d giê %d phót %d gi©y<color> míi cã thÓ sö dông Hoµng Ch©n §¬n.",nDay,nHour,nMin,nSec);
 		end		
 		
 		tbSay = 
 		{
 			format("<dec><npc>%s<enter>%s<enter>%s", szMsg_Common, szMsg_ZiJin, szMsg_Huang),
-			"½áÊø¶Ô»°/OnCancel",
+			"KÕt thóc ®èi tho¹i/OnCancel",
 		}
 	end
 	CreateTaskSay(tbSay)
@@ -99,15 +99,15 @@ end
 
 BeiDouChuanGong_tbItem = 
 {
-	[1] = {szName="±±¶·´«¹¦Êõ", tbProp={6, 1, 1672}, nCount = 1},      
-	[2] = {szName="ÆßĞÇ²İ", tbProp={6, 1, 1673}, nCount = 1},          
-	[3] = {szName="°ÙÄêÆßĞÇ²İ", tbProp={6, 1, 1674}, nCount = 1},      
-	[4] = {szName="Ç§ÄêÆßĞÇ²İ", tbProp={6, 1, 1675}, nCount = 1},      
-	[5] = {szName="°×Õæµ¤", tbProp={6, 1, 1676, 1, 0, 0}, nCount = 1},          
-	[6] = {szName="ÑªÕæµ¤", tbProp={6, 1, 1677, 1, 0, 0}, nCount = 1},          
-	[7] = {szName="ĞşÕæµ¤", tbProp={6, 1, 1678, 1, 0, 0}, nCount = 1},
-	[8] = {szName="ÍòÄêÎå²Ê»¨", tbProp={6, 1, 2265, 1, 0, 0}, nCount = 1},
-	[9] = {szName="×Ï½ğÕæµ¤", tbProp={6, 1, 2263, 1, 0, 0}, nCount = 1},
+	[1] = {szName="B¾c §Èu truyÒn c«ng thuËt", tbProp={6, 1, 1672}, nCount = 1},      
+	[2] = {szName="ThÊt tinh th¶o", tbProp={6, 1, 1673}, nCount = 1},          
+	[3] = {szName="B¸ch niªn thÊt tinh th¶o", tbProp={6, 1, 1674}, nCount = 1},      
+	[4] = {szName="Thiªn niªn thÊt tinh th¶o", tbProp={6, 1, 1675}, nCount = 1},      
+	[5] = {szName="B¹ch Ch©n §¬n", tbProp={6, 1, 1676, 1, 0, 0}, nCount = 1},          
+	[6] = {szName="HuyÕt Ch©n §¬n", tbProp={6, 1, 1677, 1, 0, 0}, nCount = 1},          
+	[7] = {szName="HuyÒn Ch©n §¬n", tbProp={6, 1, 1678, 1, 0, 0}, nCount = 1},
+	[8] = {szName="V¹n Niªn Ngò Th¸i Hoa", tbProp={6, 1, 2265, 1, 0, 0}, nCount = 1},
+	[9] = {szName="Tö Kim Ch©n §¬n", tbProp={6, 1, 2263, 1, 0, 0}, nCount = 1},
 }
 BeiDouChuanGong_tbRecipe = 
 {
@@ -120,15 +120,15 @@ function BeiDouChuanGong_zuodan(szDanType,nStep)
 	local tbRecipe = BeiDouChuanGong_tbRecipe[szDanType]
 	local tbAwardItem = BeiDouChuanGong_tbItem[tbRecipe.tbAwardItem]
 	if nStep ~= 1 then
-		local szTitle = format("¸÷Î»Í¬ÒâÁ·<color=yellow>%s<color> Âğ? Èç¹ûÏÖÔÚÁìÈ¡¾­ÑéÖµ½«»áÓĞËğºÄ.", tbAwardItem.szName)
+		local szTitle = format("C¸c h¹ cã ®ång ı luyÖn <color=yellow>%s<color> kh«ng? NÕu chÊp nhËn kinh nghiÖm hiÖn t¹i cña c¸c h¹ sÏ bŞ tæn hao.", tbAwardItem.szName)
 		local tbOpt = {}
-		tbOpt[1] = format("§ång ?!/#BeiDouChuanGong_zuodan([[%s]],1)", szDanType)
-		tbOpt[2] = "È¡Ïû/OnCancel"
+		tbOpt[1] = format("§ång ı!/#BeiDouChuanGong_zuodan([[%s]],1)", szDanType)
+		tbOpt[2] = "Hñy bá /OnCancel"
 		return Say(szTitle,getn(tbOpt),tbOpt);
 	end
 	
 	if GetExp() < 1000000 then
-		return Say("±§Ç¸, ÏÖÔÚ¾­Ñé²»¹»1°ÙÍò, ²»ÄÜÁ¶µ¤.", 0)
+		return Say("Xin lçi, kinh nghiÖm hiÖn t¹i vÉn ch­a ®ñ 1 triÖu, kh«ng thÓ luyÖn ®an.", 0)
 	end
 	
 	local tbMaterial = {};
@@ -146,7 +146,7 @@ function BeiDouChuanGong_zuodan_complished(nMaxExp, tbAwardItem)
 		nExp = nPlayerCurExp
 	end
 	ReduceOwnExp(nExp);
-	local nItemIndex = BeiDouChuanGong_lib_AddAward(tbAwardItem, "±±¶·´«¹¦")
+	local nItemIndex = BeiDouChuanGong_lib_AddAward(tbAwardItem, "B¾c §Èu truyÒn c«ng")
 	SetSpecItemParam(nItemIndex, 1, mod(nExp, 1e8));	--ÉèÖÃÎïÆ·ÄÜµÃµ½µÄ¾­Ñé
 	SetSpecItemParam(nItemIndex, 2, nExp / 1e8);		--ÉèÖÃÎïÆ·ÄÜµÃµ½µÄ¾­Ñé
 	SyncItem(nItemIndex);

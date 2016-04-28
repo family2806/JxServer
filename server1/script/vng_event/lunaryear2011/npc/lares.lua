@@ -13,26 +13,26 @@ function main()
 	end
 	local tbMainDialog = tbNpcHead:createDialog()
 	if tbLares:getBitValue() == 1 then
-		Talk(1, "", "ÏÖÔÚÎÒºÜÃ¦.")
+		Talk(1, "", "HiÖn giê ta ®ang rÊt bËn.")
 		return
 	else
-		tbMainDialog.szTitleMsg = "ÎÒÒª×¼±¸»ØÌìÍ¥±¨¸æÓñ»Ê´óµÛÊÀ¼äµÄÇé¿ö£¬¸óÏÂĞèÒªÊ²Ã´¾Í¿ìµãËµ!"
-		tbMainDialog:AddOptEntry("ÎÒÖ»Ïë×£ÄãÒ»Â·Æ½°²", tbLares.giveAward, {tbLares})
+		tbMainDialog.szTitleMsg = "Ta ph¶i chuÈn bŞ vÒ trêi ®Ó t©u Ngäc Hoµng t×nh h×nh ë trÇn gian trong n¨m võa qua, c¸c h¹ cÇn g× th× nãi nhanh ®i!"
+		tbMainDialog:AddOptEntry("Ta chØ muèn chóc ngµy th­îng lé b×nh an", tbLares.giveAward, {tbLares})
 	end	
 	tbMainDialog:Show()
 end
 
 function tbLares:giveAward()
 	if tbVNG_LY2011:checkCondition() ~= 1 then
-		Talk(1, "", "Äã²»×ãÌõ¼şÊ¹ÓÃÎïÆ·£¬ÒªÇó50¼¶ÒÔÉÏÇÒÒÑ³äÖµ")
+		Talk(1, "", "B¹n kh«ng ®ñ ®iÒu kiÖn sö dông vËt phÈm! Yªu cÇu cÊp ®é trªn 50 vµ ®·  n¹p thÎ.")
 		return
 	end
 	local nValue = GetTask(self.TSK_ID)
 	nValue = SetBit(nValue, self.BIT_POS, 1)
 	SetTask(self.TSK_ID, nValue)
 	local tbExp = {nExp=50000000}
-	tbAwardTemplet:GiveAwardByList(tbExp, "[VNG][Lunar Year 2011][ËÍÔìÉñ»ØÌì]")
-	Talk(2, "", "...¸óÏÂÕæÊÇºÃĞÄ£¬´º½Úµ½ÁË£¬ÎÒÒ²ÓĞÀñÎïËÍ¸øÄã.", "§a ¶àĞ».")
+	tbAwardTemplet:GiveAwardByList(tbExp, "[VNG][Lunar Year 2011][§­a «ng T¸o vÒ trêi]")
+	Talk(2, "", "...C¸c h¹ thËt tèt bông, tÕt ®Õn råi ta còng cã mãn quµ tÆng ng­¬i.", "§a t¹ ngµy.")
 end
 
 function tbLares:getBitValue()

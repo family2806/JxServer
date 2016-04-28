@@ -16,16 +16,16 @@ function main_former()
 	if (Uworld11 == 100) then			-- ÈÎÎñÍê³É
 		W11_prise()
 	elseif (Uworld11 < 255) and (Uworld11 >= 1) then		-- ÈÎÎñÖĞ
-		Talk(1,"","ÏëÁì½±°¡£¿È¥É±Ê®Ö»Ò°Öí»ØÀ´ÔÙËµ!")
+		Talk(1,"","Muèn l·nh th­ëng h¶? GiÕt m­êi con heo rõng ®i råi h·y nãi!")
 	elseif (Uworld11 > 255) then		-- ÈÎÎñÒÑ¾­Íê³É
-		Talk(1,"","³É¶¼¸½½üÓĞºÜ¶àÉ½£¬¾­³£ÓĞÒ°Öí³öÏÖ£¬´Ë´ÎÓĞÄã²ÅÄÜÈ·±£½ñÄêµÄÊÕ³É.")
+		Talk(1,"","GÇn Thµnh §« cã rÊt nhiÒu nói, th­êng cã heo rõng xuÊt hiÖn,lÇn nµy may nhê cã ng­¬i míi cã thÓ b¶o ®¶m ®­îc thu ho¹ch cña n¨m nay.")
 	else			-- Î´½ÓÈÎÎñ
-		Talk(1,"","Äã¸Ò³åÈëÑÃÃÅ£¿ÕæÊÇ³ÔÁËĞÛĞÄ±ª×Óµ¨ÁË!")
+		Talk(1,"","Ng­¬i d¸m x«ng vµo nha m«n? §óng lµ ¨n gan hïm mËt gÊu!")
 	end
 end;
 
 function W11_prise()
-	Talk(1,"","ÒÑÉ±ËÀÊ®Ö»Ò°Öí£¿Ì«ºÃÁË£¬ÎÒ´ú±í³É¶¼°ÙĞÕ¸ĞĞ»ÄãºÍ¸÷Î»Ó¢ĞÛ¡£ÕâÊÇ500Á½½±ÉÍ!")
+	Talk(1,"","§· giÕt chÕt 10 con heo rõng? Tèt qu¸! Ta thay mÆt tr¨m hä Thµnh §« ®a t¹ ng­¬i vµ c¸c vŞ hiÖp sÜ ®· ra tay. §©y lµ 500 l­îng th­ëng!")
 	Earn(500)
 	SetTask(11,date("%Y%m%d"))
 	i = random(0,99)
@@ -37,5 +37,5 @@ function W11_prise()
 		x = 5
 	end
 	AddRepute(x)
-	Msg2Player("ÈÎÎñÍê³É£¬½±Àø50Á½£¬ÄãµÄÃûÍûÔö¼Ó"..x.."µã.")
+	Msg2Player("NhiÖm vô hoµn thµnh, ®­îc th­ëng 50 l­îng b¹c, ®iÓm thanh thÕ cña b¹n ®­îc t¨ng "..x.."®iÓm.")
 end;

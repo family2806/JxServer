@@ -4,9 +4,9 @@
 function main(sel)
 if (GetCurCamp() == 2) then
 	SetFightState(0)
-	Say("½«¾üĞèÒªÂòÊ²Ã´Âğ?", 2, "ÂòÒ©/yes", "²»Âò/no")
+	Say("Tham gia trËn chiÕn h·y tù ch¨m sãc b¶n th©n, mua thuèc kh«ng?", 2, "Mua thuèc/yes", "Kh«ng mua/no")
 else
-	Talk(1,"","¿´ÄãÔôÃ¼ÊóÑÛ£¬ÏëÆ­ÎÒÂô¸øÄã´ó½ğ¹úµÄÉñÒ©¸øÄã°¡?")
+	Talk(1,"","Cã gi¸n ®iÖp")
 end;
 end;
 

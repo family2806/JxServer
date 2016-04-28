@@ -6,16 +6,16 @@ huihuangzhiguo_advance.nDailyCountLimit = 5;
 huihuangzhiguo_advance.nLevelLimit = 120;
 huihuangzhiguo_advance.tbEXP =  --¹û×Ó¶ÔÓ¦¾­Ñé±í
 {
-	{15000000, "°ÙÄê»Ô»Í¹û"},
-	{23000000, "Ç§Äê»Ô»Í¹û"},
-	{30000000, "ÍòÄê»Ô»Í¹û"},
+	{15000000, "B¸ch Niªn Huy Hoµng qu¶"},
+	{23000000, "Thiªn Niªn Huy Hoµng qu¶"},
+	{30000000, "V¹n Niªn Huy Hoµng qu¶"},
 };
 
 huihuangzhiguo_advance.tbZhenLuTSK =  --Ê¹ÓÃÕäÂ¶TSKIDºÍ¸øÓè¶ÔÓ¦ÎïÆ·±í
 {
-	{2669, {tbProp={6,1,2269,1,0,0}}, "°ÙÄêÕäÂ¶", "°ÙÄê»Ô»Í¹û"},
-	{2670, {tbProp={6,1,2270,1,0,0}}, "Ç§ÄêÕäÂ¶", "Ç§Äê»Ô»Í¹û"},
-	{2671, {tbProp={6,1,2271,1,0,0}}, "ÍòÄêÕäÂ¶", "ÍòÄê»Ô»Í¹û"},
+	{2669, {tbProp={6,1,2269,1,0,0}}, "B¸ch Niªn Tr©n Lé", "B¸ch Niªn Huy Hoµng qu¶"},
+	{2670, {tbProp={6,1,2270,1,0,0}}, "Thiªn Niªn Tr©n Lé", "Thiªn Niªn Huy Hoµng qu¶"},
+	{2671, {tbProp={6,1,2271,1,0,0}}, "V¹n Niªn Tr©n Lé", "V¹n Niªn Huy Hoµng qu¶"},
 };
 
 function huihuangzhiguo_advance:UseGuoZi(nGuoziLevel)
@@ -31,7 +31,7 @@ function huihuangzhiguo_advance:UseGuoZi(nGuoziLevel)
 		return 0;
 	end
 	
-	PlayerFunLib:AddExp(self.tbEXP[nGuoziLevel][1], 0, format("%s ½±Àø",self.tbEXP[nGuoziLevel][2]));
+	PlayerFunLib:AddExp(self.tbEXP[nGuoziLevel][1], 0, format("%s phÇn th­ëng",self.tbEXP[nGuoziLevel][2]));
 	SetTask(2313, GetTask(2313) + 1)
 	return 1;
 end
@@ -42,7 +42,7 @@ function huihuangzhiguo_advance:UseZhenLu(nZhenLuLevel)
 	end
 	
 	self:AddZhenLuCount(nZhenLuLevel);
-	Msg2Player(format("Ê¹ÓÃ%d %s, ¼ñ»Ô»Í¹ûÊ±»¹ÄÜ»ñµÃ%d %s, ¸Ã×´Ì¬½«ÓÚ0Ê±ÏûÊ§", 
+	Msg2Player(format("§¹i hiÖp ®· sö dông %d %s, lóc nhÆt qu¶ huy hoµng cßn cã thÓ thu ®­îc %d %s, tr¹ng th¸i nµy sÏ mÊt vµo 0 giê", 
 										PlayerFunLib:GetTaskDailyCount(self.tbZhenLuTSK[nZhenLuLevel][1]), self.tbZhenLuTSK[nZhenLuLevel][3], 
 										PlayerFunLib:GetTaskDailyCount(self.tbZhenLuTSK[nZhenLuLevel][1]), self.tbZhenLuTSK[nZhenLuLevel][4]));
 	return 1;
@@ -50,7 +50,7 @@ end
 
 function huihuangzhiguo_advance:CheckLevelLimit()
 	if (GetLevel() < self.nLevelLimit) then
-		lib:ShowMessage(format("¼¶%d ÒÔÉÏ(°üÀ¨%d) ²ÅÄÜÊ¹ÓÃ!", self.nLevelLimit, self.nLevelLimit));
+		lib:ShowMessage(format("CÊp %d trë lªn (kÓ c¶ %d) míi cã thÓ sö dông!", self.nLevelLimit, self.nLevelLimit));
 		return 0;
 	end
 	
@@ -65,7 +65,7 @@ function huihuangzhiguo_advance:CheckCountLimit()
 	end
 	
 	if (GetTask(2313) >= self.nDailyCountLimit) then
-		lib:ShowMessage(format("½ñÌì¸óÏÂÒÑÊ¹ÓÃ%d»Ô»Í¹ûÁË£¬¹¦Á¦Ôö¼Ó¹ı¿ìÒ²»á±»·´×÷ÓÃÅ¶¡£µÈÃ÷ÌìÔÙÀ´ÓÃÅ¶", self.nDailyCountLimit));
+		lib:ShowMessage(format("H«m nay c¸c h¹ ®· sö dông %d qu¶ huy hoµng råi, c«ng lùc t¨ng qu¸ nhanh còng sÏ bŞ ph¶n t¸c dông ®ã. §îi ngµy mai råi h·y dïng nhĞ.", self.nDailyCountLimit));
 		return 0;
 	end
 	
@@ -89,7 +89,7 @@ function huihuangzhiguo_advance:GetGuoZiAvd()
 	for i=getn(self.tbZhenLuTSK),1,-1 do --´Ó¸ß¼¶µ½µÍ¼¶±éÀú
 		local nZhenLu = PlayerFunLib:GetTaskDailyCount(self.tbZhenLuTSK[i][1]);
 		if (nZhenLu > 0) then
-			tbAwardTemplet:GiveAwardByList(self.tbZhenLuTSK[i][2], "¼ñ»Ô»Í¹û");
+			tbAwardTemplet:GiveAwardByList(self.tbZhenLuTSK[i][2], "NhÆt qu¶ huy hoµng");
 			self:ReduceZhenLuCount(i);
 			nCount = 1;
 			break;

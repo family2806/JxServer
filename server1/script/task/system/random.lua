@@ -68,7 +68,7 @@ function main()
 		nResult = initRandomTask();
 		
 		if nResult==0 then
-			CDebug:MessageOut("Ëæ»úÈÎÎñÑ¡È¡µ½ÁËÓëÉÏÒ»¸öÈÎÎñÏàÍ¬µÄ ID£¡");
+			CDebug:MessageOut("Tïy theo nhiÖm vô b¹n sÏ chän sè ID t­¬ng øng!");
 		end;
 		
 	end;

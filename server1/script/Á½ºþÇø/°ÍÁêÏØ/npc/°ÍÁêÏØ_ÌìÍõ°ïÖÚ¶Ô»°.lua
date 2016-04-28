@@ -9,11 +9,11 @@ Include("\\script\\global\\¸÷ÅÉ½ÓÒıµÜ×Ó\\ÌìÍõ½ÓÒıµÜ×Ó.lua")
 function main(sel)
 	UTask_world18 = GetTask(46);
 	if(UTask_world18 == 1) and (HaveItem(180) == 0) then
-		Talk(1,"","ÌìÍõµÜ×Ó£ºèÁèËÍè°¡£¬¼ÈÈ»ÊÇ¾ÈÈËµÄ£¬ÄÇ×ÔÈ»ÊÇÒå²»Èİ´Ç£¬ËäÈ»°ïÀïµÄµÜĞÖÃÇÒ²µÈ×ÅÓÃ£¬ÎÒ¾ÍËÍÄãÒ»¿Å°É¡£")
+		Talk(1,"","Tú Bµ Hoµn dÜ nhiªn lµ ®Ó cøu ng­êi. Ta tÆng ng­¬i mét viªn")
 		AddEventItem(180)
 --		SetTask(46, 2)				-- Îª·½±ãÖØ×öÈÎÎñ£¬Ö»¸øµÀ¾ß²»¼Ó±äÁ¿Öµ
-		Msg2Player("ÄãµÃµ½Ò»¿ÅèÁèËÍè¡£")
-		AddNote("ÄãµÃµ½Ò»¿ÅèÁèËÍè¡£")
+		Msg2Player("B¹n nhËn ®­îc 1 Tú Bµ Hoµn")
+		AddNote("B¹n nhËn ®­îc 1 Tú Bµ Hoµn")
 	else
 		default_talk()
 	end

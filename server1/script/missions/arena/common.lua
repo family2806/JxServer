@@ -12,15 +12,15 @@ tbPlayer.TSK_CUR_COUNT = 3177
 
 local TITLE_TABLE =
 {
-	{nMin = 2600, nMax = -1, szTitle = "¾øÊÀ¸ßÊÖ"},
-	{nMin = 2400, nMax = 2600, szTitle = "ÃûÂú½­ºş"},
-	{nMin = 2200, nMax = 2400, szTitle = "ÏÀÃûÔ¶²¥"},
-	{nMin = 2000, nMax = 2200, szTitle = "ÎäÁÖĞÂĞã"},
-	{nMin = 1800, nMax = 2000, szTitle = "Õ¸Â¶Í·½Ç"},
-	{nMin = 1600, nMax = 1800, szTitle = "±¡ÓĞÎ¢Ãû"},
-	{nMin = 1400, nMax = 1600, szTitle = "³õÈë½­ºş"},
-	{nMin = 1200, nMax = 1400, szTitle = "ÈëÃÅµÜ×Ó"},
-	{nMin = -1, nMax = 1200, szTitle = "³õ¿úÃÅ¾¶"},
+	{nMin = 2600, nMax = -1, szTitle = "§éc C« CÇu B¹i"},
+	{nMin = 2400, nMax = 2600, szTitle = "Vâ L©m Chİ T«n"},
+	{nMin = 2200, nMax = 2400, szTitle = "NhÊt §¹i T«ng s­ "},
+	{nMin = 2000, nMax = 2200, szTitle = "TuyÖt ThÕ Cao Thñ"},
+	{nMin = 1800, nMax = 2000, szTitle = "Vang Danh Giang Hå"},
+	{nMin = 1600, nMax = 1800, szTitle = "HiÖp Danh ViÔn B¸"},
+	{nMin = 1400, nMax = 1600, szTitle = "Vâ L©m T©n Tó"},
+	{nMin = 1200, nMax = 1400, szTitle = "Míi nhËp giang hå "},
+	{nMin = -1, nMax = 1200, szTitle = "NhËp M«n §Ö Tö"},
 }
 
 function tbPlayer:GetVictoryRate()

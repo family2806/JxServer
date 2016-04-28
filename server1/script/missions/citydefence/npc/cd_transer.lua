@@ -8,7 +8,7 @@
 Include("\\script\\missions\\citydefence\\head.lua")
 --TASKID_FIRE_ADDR
 function main()
-	Say("³µ·ò:Õ½ÊÆ¼¤ÁÒ£¡ÔçÖªµÀÎÒ¾Í±¨ÃûÈ¥Ç°·½ÁË£¡¶ÔÁË£¡ÄãÓĞÊ²Ã´ÒªËµÂğ£¿",2,"ÎÒÓĞÖØÒªµÄÊÂÇéÒªºÍ½«¾üËµ£¡ÇëËæÎÒµ½ºóÓª£¡/sure2leave", "Ã»Ê²Ã´£¬ÎÒÖ»ÊÇÀ´ÍæµÄ./OnCancel" )
+	Say("Xa phu: ChiÕn tranh ®ang kŞch liÖt! Sím biÕt ta ®· b¸o danh ®i tiÒn ph­¬ng råi! §óng råi! Ng­¬i cã chuyÖn g× vËy?",2,"Ta cã chuyÖn quan träng b¸o víi T­íng qu©n! Xin mêi «ng ta vÒ hËu doanh!/sure2leave", "Kh«ng cã chi! Ta chØ ®Õn ®©y ch¬i./OnCancel" )
 end
 
 function sure2leave()

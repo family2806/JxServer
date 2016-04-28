@@ -7,21 +7,21 @@ Include([[\script\missions\springfestival\signin.lua]]);
 --	¶Ô»»º¯ÊıÖ÷Èë¿Ú
 function sf06_mainentrance()
 	local tab_Content = {
-	"²»³ÉÎÊÌâ!/signin_temp",
-	"ÎÒÒÑ°Ñ¡°30ËêÈË¡±¸Ï×ßÁË!/sf07_getaward",
-	"¹ØÏµµ½¸Ï×ß¡°30ËêÈË¡±»î¶¯/sf07_detail",
-	"×î½üÎÒÌ«Ã¦ÁË£¬ÕÒËûÈË°É!/no"
+	"Kh«ng thµnh vÊn ®Ò!/signin_temp",
+	"Ta ®· ®uæi '¤ng Ba M­¬i' ®i råi!/sf07_getaward",
+	"Liªn quan ®Õn ho¹t ®éng ®uæi '¤ng Ba M­¬i'/sf07_detail",
+	"D¹o nµy ta bËn qu¸, t×m ng­êi kh¸c ®i!/no"
 	}
-	Describe("Ö»Òª´º»Ø<color=yellow>30ËêÈË<color> ¶¼À´ÆÈº¦´åÃñ¡£Îª°ïÖú´åÃñ½â¾öÕâ¸ö»öº¦£¬ÎäÁÖÃËÖ÷¼¯ºÏÁË¸÷Î»ÎäÁÖÈËÊ¿°ïÖú´åÃñÇı¸Ï <color=yellow>30ËêÈË<color>, °ïÖúËûÃÇÓĞÒ»¸öÆ½°²µÄĞÂÄê¡£ÎªÁË±¨´ğÎäÁÖÃËÖ÷¸ßÉĞµÄĞĞÎª£¬¹Ù¸®Ìù³öÁËÇı¸Ï30ËêÈËµÄÈÎÎñ½±Àø <color=yellow> <color>. ÔÚ¸ÃÈÎÎñÖĞ£¬Íæ¼Ò½«ÒªÊ¹ÓÃ½ÚÈÕ±ŞÅÚµÀ¾ßÀ´Çı¸Ï30ËêÈË¡£30ËêµÄÈËÒ²¿ÉÒÔÊ¹ÓÃµÀ¾ß½ø¹¥Íæ¼Ò¡£¸÷Î»ÈËÊ¿¿ÉÒÔµ½ÕâÀï±¨Ãû<color=yellow>§uÇı¸Ï30ËêÈË<color>.ÄãÏë²Î¼ÓÂğ?", getn(tab_Content), tab_Content);
+	Describe("Cø mçi ®é xu©n vÒ lµ <color=yellow>¤ng Ba M­¬i<color> ®Òu ®Õn g©y h¹i d©n lµng. §Ó gióp d©n lµng gi¶i quyÕt tai häa nµy, Vâ L©m Minh Chñ ®· tËp häp c¸c vŞ vâ l©m nh©n sü gióp d©n lµng ®uæi <color=yellow>¤ng Ba M­¬i<color>, gióp hä cã mét n¨m míi yªn b×nh. §Ó ®¸p t¹ nghÜa cö cao quı cña Minh chñ, quan phñ ®· d¸n c¸o thŞ treo th­ëng cho nhiÖm vô ®uæi <color=yellow>¤ng Ba M­¬i<color>. ë nhiÖm vô nµy, ng­êi ch¬i sÏ ph¶i sö dông ®¹o cô Ph¸o hoa TÕt ®Ó ®¸nh ®uæi ¤ng ba m­¬i, ¤ng ba m­¬i còng cã thÓ sö dông ®¹o cô ®Ó tÊn c«ng l¹i ng­êi ch¬i. C¸c nh©n sü cã thÓ ®Õn ®©y ®Ó b¸o danh nhiÖm vô <color=yellow>§uæi «ng ba m­¬i<color>. Ng­¬i cã muèn tham gia kh«ng?", getn(tab_Content), tab_Content);
 end;
 
 function signin_temp()
-	Say("§uÇı¸Ï30ËêÈË¾ÈÖú´åÃñÊÇÒ»¸ö¸ß¹óµÄĞĞÎª£¬ÌåÏÖÁË°®»¤¶¯ÎïµÄ¾«Éñ.", 2, "¹ş¹ş£¬¿ì´øÎÒµ½ÓĞ'30ËêÈË'µÄµØ·½È¥./signin", "µÈÒ»ÏÂ£¬ÎÒÒª×¼±¸¡£/no");
+	Say("§uæi «ng ba m­¬i cøu gióp d©n lµng lµ mét nghÜa cö cao quı, l¹i võa thÓ hiÖn tinh thÇn yªu quı ®éng vËt.", 2, "Ha ha, mau ®­a ta ®Õn n¬i cã '¤ng Ba M­¬i'./signin", "§îi mét l¸t! Ta ph¶i chuÈn bŞ./no");
 end;
 
 --	½éÉÜº¯Êı
 function sf07_detail()
-	Describe("Ã¿´Î 'Çı¸Ï30ËêÈË'»î¶¯½«ÔÚ<color=yellow> 15·ÖÖÓÄÚ¾ÙĞĞ <color>, ÆäÖĞ£¬ÓĞ<color=yellow>5 ·ÖÖÓ<color> À´×¼±¸¡£±¨Ãûºó£¬Äã½«»á±»ËÍµ½×¼±¸ÇøÓò£¬µ±»î¶¯¿ªÊ¼Ê±£¬Äã½«»á±»´øµ½»î¶¯ÇøÓò¡£<color=yellow>15Ãë<color> »î¶¯¿ªÊ¼ºó£¬ÔÚ²Î¼ÓµÄÈËµ±ÖĞ£¬»áÓĞ1µ½2¸öÈË»á»¯ÉíÎª' 30ËêÈË '. Íæ¼Ò±ä³É'30ËêÈË' ĞèÒªÆË×½<color=yellow>Ò°Öí<color> ³öÏÖÔÚÇøÓòÄÚµÄ¡£Ê£ÓàµÄÍæ¼Ò½«ÒªÓÃ<color=yellow>ÅÚÕÌ<color> À´ 'Çı¸Ï' 30ËêÈË, ×èµ²'30ËêÈË' ²¶×½Ò°Öí. »î¶¯½áÊøºó, <color=yellow> ÑÃÃÅ²îÒÛ<color> ½«¸ù¾İÊ¹ÓÃ<color=yellow>ÅÚÕÌ<color> µÄÊıÁ¿À´ÈÓ'30ËêÈË'Áì½±¡£.", 1, "ÎÒÖªµÀÁË./sf06_mainentrance");
+	Describe("Mçi ®ît ho¹t ®éng '§uæi «ng ba m­¬i' sÏ diÔn ra trong vßng <color=yellow>15 phót<color>, trong ®ã cã <color=yellow>5 phót<color> ®Ó chuÈn bŞ. Sau khi b¸o danh, b¹n sÏ ®­îc ®­a ®Õn khu vùc chuÈn bŞ, khi ho¹t ®éng b¾t ®Çu th× b¹n sÏ ®­îc ®­a ®Õn khu vùc ho¹t ®éng. <color=yellow>15 gi©y<color> sau khi ho¹t ®éng b¾t ®Çu, trong sè nh÷ng ng­êi tham gia sÏ cã 1 ®Õn 2 ng­êi ch¬i hãa th©n thµnh '¤ng ba m­¬i'. Ng­êi ch¬i biÕn thµnh '¤ng ba m­¬i' sÏ ph¶i b¾t <color=yellow>Heo rõng<color> xuÊt hiÖn trong khu vùc. Nh÷ng ng­êi ch¬i cßn l¹i sÏ ph¶i dïng <color=yellow>ph¸o viªn<color> ®Ó '®uæi' ¤ng ba m­¬i, ng¨n kh«ng cho '¤ng ba m­¬i' b¾t heo rõng. Sau khi ho¹t ®éng kÕt thóc, <color=yellow>Nha m«n sai dŞch<color> sÏ c¨n cø vµo sè lÇn dïng <color=yellow>ph¸o<color> nĞm tróng '¤ng ba m­¬i' cña ng­êi ch¬i ®Ó tÆng th­ëng.", 1, "Ta biÕt råi./sf06_mainentrance");
 end;
 
 --	¸øÓè½±ÀøÖ÷º¯Êı
@@ -30,12 +30,12 @@ function sf07_getaward()
 	local nRank = GetTask(TK_CO_RANK);
 	
 	if (nCount == 0 or nRank == 0) then
-		Say("ºÃÏñÄã»¹Î´È¥'Çı¸Ï30ËêÈË'.ÏëÁì½±£¬¿ìÈ¥³öÁ¦°É."..CO_ANIMALNAME.."ÅÜÈ¥.", 0);
+		Say("H×nh nh­ ng­¬i ch­a ®i '®uæi ¤ng ba m­¬i'. Muèn nhËn th­ëng h·y mau chãng gãp søc."..CO_ANIMALNAME.."Ch¹y ®i.", 0);
 		return
 	end;
 	
 	if (CalcFreeItemCellCount() < 2) then
-		Say("²»¹»µØ·½·Å£¬ÇëÕûÀí×°±¸.", 0);
+		Say("Kh«ng ®ñ chç chøa, h·y mau s¾p xÕp l¹i hµnh trang.", 0);
 		return
 	end;
 	SetTask(TK_CO_COUNT_ONETIME, 0);
@@ -44,9 +44,9 @@ function sf07_getaward()
     festival_expaward(nRank1);
 	festival_goodsaward(nRank1);
 	if (GetTask(TK_CO_GROUPID) > CO_SMALLMAPCOUNT) then
-		Say("¹ş¹ş£¬ºÜºÃ¡£! ¸Õ¸ÕÄãÕÒµ½ÁË<color=yellow>"..nCount.."¸ö<color>"..CO_MOUSENAME..", ÅÅÃûµÚ <color=yellow>"..nRank.."<color>,ÕâÊÇÄãµÄ½±Àø£¬ÄÃÈ¥°É!", 0)
+		Say("Haha, lµm tèt l¾m! Võa råi ng­¬i ®· t×m thÊy <color=yellow>"..nCount.."c¸i<color>"..CO_MOUSENAME..", xÕp h¹ng thø <color=yellow>"..nRank.."<color>,®©y lµ phÇn th­ëng cña ng­¬i, h·y nhËn lÊy!", 0)
 	else
-		Say("¹ş¹ş£¬×öµÄºÃ¡£Äã´òÖĞ×Ü¹²<color=yellow>"..nCount.." ´Î<color>"..CO_ANIMALNAME..", ÅÅÃûµÚ<color=yellow>"..nRank.."<color>,ÕâÊÇÄãµÄ½±Àø£¬ÄÃÈ¥°É!", 0)
+		Say("Ha ha, lµm tèt l¾m! Ng­¬i ®¸nh tróng tæng céng <color=yellow>"..nCount.." lÇn<color>"..CO_ANIMALNAME..", xÕp h¹ng thø <color=yellow>"..nRank.."<color>,®©y lµ phÇn th­ëng cña ng­¬i, h·y nhËn lÊy!", 0)
 	end;
 end;
 

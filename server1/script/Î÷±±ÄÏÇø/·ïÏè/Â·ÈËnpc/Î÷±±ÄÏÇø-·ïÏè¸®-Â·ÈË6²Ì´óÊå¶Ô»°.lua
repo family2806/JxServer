@@ -7,28 +7,28 @@ function main(sel)
 	if (Uworld75 == 10) and (U75_sub3 < 10) then		-- ÈÎÎñÖÐ£¬½ÓÈ¡×ÓÈÎÎñ
 		if (HaveItem(384) == 1) then
 			SetTask(54,10)
-			AddNote("µ½ÉÙÁÖµÄÄ¾ÈËÏï°ïÖú²Ì´óÊåÕÒ½ðÁ«»¨. ")
-			Msg2Player("µ½ÉÙÁÖµÄÄ¾ÈËÏï°ïÖú²Ì´óÊåÕÒ½ðÁ«»¨. ")
-			Talk(1,"","ÒÅº¶µÄÊÇÎÒÒ»ÉúÑÐ¾¿Ñ§Ï°µ«ÊÇÒ²Ã»ÓÐº¢×Ó¡£ÌýËµÔÚÉÙÁÖµÄÄ¾ÈËÏïÓÐ½ðÁ«»¨£¬¿ÉÒÔ°ïÖúÎÒÓÐº¢×Ó")
+			AddNote("§Õn hÎm ThiÕu L©m Méc Nh©n gióp Th¸i ®¹i thóc t×m hoa sen vµng. ")
+			Msg2Player("§Õn hÎm ThiÕu L©m Méc Nh©n gióp Th¸i ®¹i thóc t×m hoa sen vµng. ")
+			Talk(1,"","TiÕc lµ c¶ ®êi ta nghiªn cøu vâ häc, vÉn ch­a cã con. Nghe nãi trong ThiÕu L©m Méc Nh©n H¹ng cã hoa sen vµng, ®­îc phËt tæ phï hé, cã thÓ gióp ng­êi ta cã con")
 		else
-		 	Talk(1,"","ÏÖÔÚÁ¬Ó°×Ó¶¼²»¼û£¬Ö»ÊÇ´«½øÄã¶ú¶äµÄ»°ÔõÃ´ÄÜÐÅÄØ£¿")
+		 	Talk(1,"","Ngay c¶ bøc th­ còng kh«ng cã, chØ dùa vµo lêi nãi lµm sao tin ng­¬i?")
 		end
 	elseif (Uworld75 == 10) and (U75_sub3 == 10) then		-- ×ÓÈÎÎñÍê³ÉÅÐ¶Ï
 		if (HaveItem(26) == 1) then
 			DelItem(26)
 			SetTask(54,20)
-			AddNote("ÕÒµ½½ðÁ«»¨£¬Íê³ÉÈÎÎñ. ")
-			Msg2Player("ÕÒµ½½ðÁ«»¨£¬Íê³ÉÈÎÎñ. ")
-			Talk(1,"","¹þ¹þ£¡Õâ¾ÍÊÇ´«ËµÖÐµÄÓñÅå°É£¿ºÃÐ¡×Ó£¬Ð»Ð»Äã.")
+			AddNote("T×m ra hoa sen vµng, nhiÖm vô hoµn thµnh. ")
+			Msg2Player("T×m ra hoa sen vµng, nhiÖm vô hoµn thµnh. ")
+			Talk(1,"","Ha ha! Cã ph¶i ®ã lµ ngäc bèi trong truyÒn thuyÕt kh«ng? H¶o tiÓu tö! C¶m ¬n ng­¬i! ViÖc ng­¬i häc quyÒn ph¸p, ta hoµn toµn t¸n thµnh.")
 		else
-			Talk(1,"","»¹Ã»ÕÒµ½½ðÁ«»¨Âð? ")
+			Talk(1,"","Cßn ch­a t×m ®­îc hoa sen vµng µ ")
 		end
 	else
 		i = random(0,1)
 		if (i == 0) then
-			Talk(1,"","²Ì´óÊå£º°³ÃÇÀÏ²Ì¼Ò¼¸´úµ¥´«£¬¿É°³µ½ÏÖÔÚ»¹Ã»¸öÄÐáÌ£¬Õ¦¶ÔµÃ×¡ÁÐ×æÁÐ×Ú£¿")
+			Talk(1,"","L·o th¸i gia chóng ta mÊy ®êi ®¬n truyÒn, kh«ng cã con trai, thËt cã lçi víi liÖt tæ liÖt t«ng!")
 		else
-			Talk(1,"","²Ì´óÊå£º²»Ð¢ÓÐÈý£¬ÎÞºóÎª´óÑ½£¡")
+			Talk(1,"","BÊt hiÕu cã 3 ®iÒu, kh«ng cã ng­êi nèi dâi lµ ®iÒu lín nhÊt!")
 		end
 	end
 end;

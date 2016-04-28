@@ -15,7 +15,7 @@ function BigBoss:Make_Big_Boss(bossid, bosslvl, series, mapid, posx, posy, bossn
 		RemoteExecute("\\script\\mission\\boss\\bigboss.lua", "MakeAllPlayerCanGetReward", 0);
 		WriteLog(date("%H:%M")..","..bossid..","..bosslvl..","..series..","..SubWorldIdx2ID(mapidx)..","..posx..","..posy..","..bossname);
 		AddGlobalNews(str);
-		str1 = format("½­ºş´«Ëµ<color=yellow>%s<color>ÒÑ³öÏÖÔÚ<color=yellow>%s<color>! ½­ºş±ØÈ»»áÓĞÒ»³¡ÑªÕ½!",bossname, strMapName)
+		str1 = format("Giang hå truyÒn r»ng <color=yellow>%s<color> ®· xuÊt hiÖn ë <color=yellow>%s<color>! Giang hå ¾t sÏ cã mét trËn ®Ém m¸u!",bossname, strMapName)
 		Msg2Player(str1);
 	end
 

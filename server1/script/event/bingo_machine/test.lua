@@ -54,8 +54,8 @@ function _Stat(nOdds,n)
 	Gambler:SetBigAward(0)
 	Gambler:SetState(STATE_NORMAL)
 	Gambler:SetFinalAward(0, 0)
-	print("ÀàÐÍ ", "µÈ¼¶", "ÊýÁ¿")
-	Msg2Player("ÀàÐÍ\t µÈ¼¶\t ÊýÁ¿")
+	print("lo¹i h×nh ", "®¼ng cÊp", "Sè lÇn")
+	Msg2Player("Lo¹i h×nh\t §¼ng cÊp\t Sè lÇn")
 	for k, v in tbCount do
 		for k1, v1 in v do
 			print(k, k1, v1)
@@ -87,8 +87,8 @@ function _StatOverFlow(nOdds,n)
 	Gambler:SetBigAward(0)
 	Gambler:SetState(STATE_NORMAL)
 	Gambler:SetFinalAward(0, 0)
-	print("´ó½±", nCount)
-	Msg2Player(format("´ó½±\t %s", nCount))
+	print("Th­ëng lín", nCount)
+	Msg2Player(format("Th­ëng lín\t %s", nCount))
 end
 
 function BingoTestRate(nType, nLevel, nCount)

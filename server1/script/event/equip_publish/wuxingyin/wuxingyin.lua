@@ -1,8 +1,8 @@
 
--- ÎåÐÐÓ¡Éý¼¶
+-- Ngò hµnh ÊnÉý¼¶
 -- 2011.04.25
 
---Change the name "ÎåÐÐÓ¡" to "»Æ½ðÓ¡" - Modified by DinhHQ - 20110605
+--Change the name "Ngò hµnh Ên" to "Hoµng kim Ên" - Modified by DinhHQ - 20110605
 
 Include("\\script\\lib\\composeex.lua")
 Include("\\script\\misc\\eventsys\\type\\npc.lua")
@@ -19,42 +19,42 @@ local tbSuccessRate = {
 	}
 	
 local tbLogAction = {
-	[1] = "»Æ½ðÓ¡Ç¿»¯2¼¶³É¹¦",
-	[2] = "»Æ½ðÓ¡Ç¿»¯3¼¶³É¹¦",
-	[3] = "»Æ½ðÓ¡Ç¿»¯4¼¶³É¹¦",
-	[4] = "»Æ½ðÓ¡Ç¿»¯5¼¶³É¹¦",
-	[5] = "»Æ½ðÓ¡Ç¿»¯6¼¶³É¹¦",
-	[6] = "»Æ½ðÓ¡Èõ»¯2¼¶³É¹¦",
-	[7] = "»Æ½ðÓ¡Èõ»¯3¼¶³É¹¦",
-	[8] = "»Æ½ðÓ¡Èõ»¯4¼¶³É¹¦",
-	[9] = "»Æ½ðÓ¡Èõ»¯5¼¶³É¹¦",
-	[10] = "»Æ½ðÓ¡Èõ»¯6¼¶³É¹¦",
-	[11] = "»Æ½ðÓ¡Ç¿»¯2¼¶Ê§°Ü",
-	[12] = "»Æ½ðÓ¡Ç¿»¯3¼¶Ê§°Ü",
-	[13] = "»Æ½ðÓ¡Ç¿»¯¼¶Ê§°Ü",
-	[14] = "»Æ½ðÓ¡Ç¿»¯5¼¶Ê§°Ü",
-	[15] = "»Æ½ðÓ¡Ç¿»¯6¼¶Ê§°Ü",
-	[16] = "»Æ½ðÓ¡Èõ»¯2¼¶Ê§°Ü",
-	[17] = "»Æ½ðÓ¡Èõ»¯3¼¶Ê§°Ü",
-	[18] = "»Æ½ðÓ¡Èõ»¯4¼¶Ê§°Ü",
-	[19] = "»Æ½ðÓ¡Èõ»¯5¼¶Ê§°Ü",
-	[20] = "»Æ½ðÓ¡Èõ»¯6¼¶Ê§°Ü",
+	[1] = "HoangKimAnCuongHoaCap2ThanhCong",
+	[2] = "HoangKimAnCuongHoaCap3ThanhCong",
+	[3] = "HoangKimAnCuongHoaCap4ThanhCong",
+	[4] = "HoangKimAnCuongHoaCap5ThanhCong",
+	[5] = "HoangKimAnCuongHoaCap6ThanhCong",
+	[6] = "HoangKimAnNhuocHoaCap2ThanhCong",
+	[7] = "HoangKimAnNhuocHoaCap3ThanhCong",
+	[8] = "HoangKimAnNhuocHoaCap4ThanhCong",
+	[9] = "HoangKimAnNhuocHoaCap5ThanhCong",
+	[10] = "HoangKimAnNhuocHoaCap6ThanhCong",
+	[11] = "HoangKimAnCuongHoaCap2ThatBai",
+	[12] = "HoangKimAnCuongHoaCap3ThatBai",
+	[13] = "HoangKimAnCuongHoaCap4ThatBai",
+	[14] = "HoangKimAnCuongHoaCap5ThatBai",
+	[15] = "HoangKimAnCuongHoaCap6ThatBai",
+	[16] = "HoangKimAnNhuocHoaCap2ThatBai",
+	[17] = "HoangKimAnNhuocHoaCap3ThatBai",
+	[18] = "HoangKimAnNhuocHoaCap4ThatBai",
+	[19] = "HoangKimAnNhuocHoaCap5ThatBai",
+	[20] = "HoangKimAnNhuocHoaCap6ThatBai",
 	}	
 
 local tbMaterialA = {
-		[1]={szName="»Æ½ðÓ¡ ( 1¼¶Ç¿»¯)",tbProp={0,3205,},nQuality=1,},		-- level 1
-		[2]={szName="»Æ½ðÓ¡ ( 2¼¶Ç¿»¯)",tbProp={0,3206,},nQuality=1,},
-		[3]={szName="»Æ½ðÓ¡ ( 3¼¶Ç¿»¯)",tbProp={0,3207,},nQuality=1,},
-		[4]={szName="»Æ½ðÓ¡ ( 4¼¶Ç¿»¯)",tbProp={0,3208,},nQuality=1,},
-		[5]={szName="»Æ½ðÓ¡ ( 1¼¶Ç¿»¯)",tbProp={0,3209,},nQuality=1,},
-		[6]={szName="»Æ½ðÓ¡ ( 1¼¶Èõ»¯)",tbProp={0,3215,},nQuality=1,},		-- level 1	
-		[7]={szName="»Æ½ðÓ¡ ( 2¼¶Èõ»¯)",tbProp={0,3216,},nQuality=1,},
-		[8]={szName="»Æ½ðÓ¡ ( 3¼¶Èõ»¯)",tbProp={0,3217,},nQuality=1,},
-		[9]={szName="»Æ½ðÓ¡ ( 4¼¶Èõ»¯)",tbProp={0,3218,},nQuality=1,},
-		[10]={szName="»Æ½ðÓ¡ ( 5¼¶Èõ»¯)",tbProp={0,3219,},nQuality=1,},
+		[1]={szName="Hoµng kim Ên ( c­êng hãa cÊp 1)",tbProp={0,3205,},nQuality=1,},		-- level 1
+		[2]={szName="Hoµng kim Ên ( c­êng hãa cÊp 2)",tbProp={0,3206,},nQuality=1,},
+		[3]={szName="Hoµng kim Ên ( c­êng hãa cÊp 3)",tbProp={0,3207,},nQuality=1,},
+		[4]={szName="Hoµng kim Ên ( c­êng hãa cÊp 4)",tbProp={0,3208,},nQuality=1,},
+		[5]={szName="Hoµng kim Ên ( c­êng hãa cÊp 1)",tbProp={0,3209,},nQuality=1,},
+		[6]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 1)",tbProp={0,3215,},nQuality=1,},		-- level 1	
+		[7]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 2)",tbProp={0,3216,},nQuality=1,},
+		[8]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 3)",tbProp={0,3217,},nQuality=1,},
+		[9]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 4)",tbProp={0,3218,},nQuality=1,},
+		[10]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 5)",tbProp={0,3219,},nQuality=1,},
 		}
 
-local tbAdditive = {szName="ÍõÌú½³Áî·û",tbProp={6,1,2839,},}	-- ÍõÌú½³Áî·û
+local tbAdditive = {szName="V­¬ng ThiÕt T­îng LÖnh Phï",tbProp={6,1,2839,},}	-- V­¬ng ThiÕt T­îng LÖnh Phï
 
 local tbFormulaList = {
 	nWidth = 1,
@@ -64,16 +64,16 @@ local tbFormulaList = {
 	tbMaterial = {},
 	
 	tbProduct = {
-		[1]={szName="»Æ½ðÓ¡ ( 2¼¶Ç¿»¯)",tbProp={0,3206,},nQuality=1,nExpiredTime=7*24*60,},		-- level 2
-		[2]={szName="»Æ½ðÓ¡ ( 3¼¶Ç¿»¯)",tbProp={0,3207,},nQuality=1,nExpiredTime=7*24*60,},
-		[3]={szName="»Æ½ðÓ¡ ( 4¼¶Ç¿»¯)",tbProp={0,3208,},nQuality=1,nExpiredTime=7*24*60,},
-		[4]={szName="»Æ½ðÓ¡ ( 5¼¶Ç¿»¯)",tbProp={0,3209,},nQuality=1,nExpiredTime=7*24*60,},
-		[5]={szName="»Æ½ðÓ¡ ( 6¼¶Ç¿»¯ )",tbProp={0,3210,},nQuality=1,nExpiredTime=30*24*60,},
-		[6]={szName="»Æ½ðÓ¡ ( 2¼¶Èõ»¯)",tbProp={0,3216,},nQuality=1,nExpiredTime=7*24*60,},		-- level 2
-		[7]={szName="»Æ½ðÓ¡ ( 3¼¶Èõ»¯)",tbProp={0,3217,},nQuality=1,nExpiredTime=7*24*60,},
-		[8]={szName="»Æ½ðÓ¡ ( 4¼¶Èõ»¯)",tbProp={0,3218,},nQuality=1,nExpiredTime=7*24*60,},
-		[9]={szName="»Æ½ðÓ¡ ( 5¼¶Èõ»¯)",tbProp={0,3219,},nQuality=1,nExpiredTime=7*24*60,},
-		[10]={szName="»Æ½ðÓ¡ ( 6¼¶Èõ»¯)",tbProp={0,3220,},nQuality=1,nExpiredTime=30*24*60,},
+		[1]={szName="Hoµng kim Ên ( c­êng hãa cÊp 2)",tbProp={0,3206,},nQuality=1,nExpiredTime=7*24*60,},		-- level 2
+		[2]={szName="Hoµng kim Ên ( c­êng hãa cÊp 3)",tbProp={0,3207,},nQuality=1,nExpiredTime=7*24*60,},
+		[3]={szName="Hoµng kim Ên ( c­êng hãa cÊp 4)",tbProp={0,3208,},nQuality=1,nExpiredTime=7*24*60,},
+		[4]={szName="Hoµng kim Ên ( c­êng hãa cÊp 5)",tbProp={0,3209,},nQuality=1,nExpiredTime=7*24*60,},
+		[5]={szName="Hoµng kim Ên ( c­êng hãa cÊp 6 )",tbProp={0,3210,},nQuality=1,nExpiredTime=30*24*60,},
+		[6]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 2)",tbProp={0,3216,},nQuality=1,nExpiredTime=7*24*60,},		-- level 2
+		[7]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 3)",tbProp={0,3217,},nQuality=1,nExpiredTime=7*24*60,},
+		[8]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 4)",tbProp={0,3218,},nQuality=1,nExpiredTime=7*24*60,},
+		[9]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 5)",tbProp={0,3219,},nQuality=1,nExpiredTime=7*24*60,},
+		[10]={szName="Hoµng kim Ên ( nh­îc hãa cÊp 6 )",tbProp={0,3220,},nQuality=1,nExpiredTime=30*24*60,},
 		}
 	}
 	
@@ -166,12 +166,12 @@ function tbWuxingyin:Compose(nComposeCount, nLevel)
 	local nFreeItemCellLimit = self.tbFormula.nFreeItemCellLimit or 1
 	nFreeItemCellLimit = ceil(nFreeItemCellLimit * nComposeCount)
 	if self.tbFormula.nWidth ~= 0 and self.tbFormula.nHeight ~= 0 and CountFreeRoomByWH(self.tbFormula.nWidth, self.tbFormula.nHeight, nFreeItemCellLimit) < nFreeItemCellLimit then
-		Say(format("ÎªÁË±£Ö¤´óÏÀ²Æ²ú°²È«, ÇëÕûÀí³ö %d %dx%dµÄ±³°ü", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
+		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nFreeItemCellLimit, self.tbFormula.nWidth, self.tbFormula.nHeight))
 		return 0
 	end
 	
 	if self:CheckMaterial(tbMaterial, nComposeCount) ~=1 then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>´óÏÀ´øµÄÎïÆ·²»¹»!<color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>"
 		Talk(1, "", szMsg)
 		return 0;
 	end
@@ -181,13 +181,13 @@ function tbWuxingyin:Compose(nComposeCount, nLevel)
 	
 	local tbConsume = {}
 	if bSuccess ~= 1 then
-		tinsert(tbConsume, tbMaterial[2])		-- ºÏ³ÉÊ§°ÜÖ»ÏûºÄÍõÌú½³Áî·û	
+		tinsert(tbConsume, tbMaterial[2])		-- ºÏ³ÉÊ§°ÜÖ»ÏûºÄV­¬ng ThiÕt T­îng LÖnh Phï	
 	else
 		tbConsume = tbMaterial
 	end
 --	print("compose nLevel = " .. tostring(nLevel))
 	if self:ConsumeMaterial(tbConsume, nComposeCount, self.szLogTitle) ~= 1 then
-		Msg2Player("ÖýÔìÊ§°Ü£¬¶ªÊ§²¿·ÖÎïÆ·.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	
@@ -200,7 +200,7 @@ function tbWuxingyin:Compose(nComposeCount, nLevel)
 			self.tbFormula:pProductFun(nComposeCount)
 		end
 	else
-		local szMsg = format("<color=red>ºÏ³ÉÊ§°Ü£¬ÏûºÄ")
+		local szMsg = format("<color=red>Hîp thµnh thÊt b¹i, mÊt ®i")
 		for i=1,getn(tbConsume) do
 			szMsg = szMsg .. tbConsume[i].szName
 		end
@@ -222,7 +222,7 @@ end
 -- ÐÞ¸ÄÉý¼¶ÖÐµÄÌáÊ¾µÀ¾ßÃû
 function tbWuxingyin:ComposeGiveUI()
 	
-	local szTitle = "Éý¼¶»Æ½ðÓ¡"
+	local szTitle = "N©ng cÊp Hoµng kim Ên"
 	local szContent = ""
 	
 	szContent = gsub(szContent, "<color=?%w*>", "")
@@ -239,7 +239,7 @@ function tbWuxingyin:GiveUIOk(nCount)
 	if nLevel > 0 then
 		self:Compose(1, nLevel)
 	else
-		CreateNewSayEx("<color=red>´óÏÀ´øµÄÎïÆ·²»¹»!<color>", {})
+		CreateNewSayEx("<color=red>§¹i hiÖp mang nguyªn liÖu kh«ng ®ñ råi!<color>", {})
 	end
 	return 
 end
@@ -247,10 +247,10 @@ end
 
 function tbWuxingyin:Register()
 	local tbOpt = {}
-	-- Éý¼¶ÎåÐÐÓ¡µÄ¶Ô»°ÄÚÈÝ£¬°üÀ¨Éý¼¶¹«Ê½µÈ
-	local szMsg = "»Æ½ðÓ¡ÉýÒ»¼¶ÍõÌú½³Áî·ûÓÐÒ»¶¨ÅÐ¶¨¸ÅÂÊ,Èç¹ûÉý¼¶Ê§°Ü½«»áÊ§È¥ÍõÌú½³Áî·û£¬¾ßÌåÇé¿öÈçÏÂ:\n"
+	-- Éý¼¶Ngò hµnh ÊnµÄ¶Ô»°ÄÚÈÝ£¬°üÀ¨Éý¼¶¹«Ê½µÈ
+	local szMsg = "V­¬ng ThiÕt T­îng LÖnh Phï cã x¸c suÊt nhÊt ®Þnh t¨ng mét cÊp cña Hoµng kim Ên, nÕu t¨ng cÊp thÊt b¹i th× sÏ mÊt ®i V­¬ng ThiÕt T­îng LÖnh Phï, h×nh thøc cô thÓ nh­ sau:\n"
 	for i=1,5 do 
-		szMsg = szMsg .. format("»Æ½ðÓ¡ %d ¼¶ ( Èõ»¯/Ç¿»¯) +1 ÍõÌú½³Áî·û= »Æ½ðÓ¡ %d ¼¶ ( Èõ»¯/Ç¿»¯ )\n",i,(i+1))
+		szMsg = szMsg .. format("Hoµng kim Ên %d cÊp ( nh­îc hãa/c­êng hãa) +1 V­¬ng ThiÕt T­îng LÖnh Phï = Hoµng kim Ên %d cÊp ( nh­îc hãa/c­êng hãa )\n",i,(i+1))
 	end
 	
 	%tbFormulaList.tbMaterial = {}
@@ -267,9 +267,9 @@ function tbWuxingyin:Register()
 	
 	local p = tbWuxingyin:new(%tbFormulaList, "shengjiwuxingyin", INVENTORY_ROOM.room_giveitem)
 	
-	tinsert(tbOpt, {"Éý¼¶»Æ½ðÓ¡", p.ComposeGiveUI, {p}})
-	tinsert(tbOpt, {"È¡Ïû"})
-	nItem2EquipRegId = pEventType:Reg("³ÇÖÐÌú½³", "Éý¼¶»Æ½ðÓ¡", CreateNewSayEx, {szMsg, tbOpt})
+	tinsert(tbOpt, {"N©ng cÊp Hoµng kim Ên", p.ComposeGiveUI, {p}})
+	tinsert(tbOpt, {"Hñy bá "})
+	nItem2EquipRegId = pEventType:Reg("Thî rÌn trong thµnh", "N©ng cÊp Hoµng kim Ên", CreateNewSayEx, {szMsg, tbOpt})
 end
 
 

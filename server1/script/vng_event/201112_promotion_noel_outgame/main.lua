@@ -7,7 +7,7 @@ tbNoelOnWeb = {
 	nStartDate = 201112210000,
 	nEndDate = 201201312400,
 	nExtPointID = 6,
-	tbLog = {"PromotionNoelQuaySoTrenWeb", "ÔÚÀñ¹Ù´¦Áì½±", {strFolder = "201112_NoelQuaySo/", nPromID = 21, nResult = 1}},
+	tbLog = {"PromotionNoelQuaySoTrenWeb", "NhanThuongTaiLeQuan", {strFolder = "201112_NoelQuaySo/", nPromID = 21, nResult = 1}},
 	tbBitTask = {
 		nTaskID = 2917,
 		nStartBit = 1,
@@ -16,15 +16,15 @@ tbNoelOnWeb = {
 	},
 	nMaxExp = 2e9,
 	tbAward = {
-		[1] = {szName="·­ÓðÂí",tbProp={0,10,7,1,0,0},nCount=1, 
+		[1] = {szName="Ngùa Phiªn Vò",tbProp={0,10,7,1,0,0},nCount=1, 
 		nBitExtPoint = 1},
-		[2] = {szName="½ðÎÚÁî",tbProp={6,1,2349,1,0,0},nCount=1, 
+		[2] = {szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1, 
 		nBitExtPoint = 2},
-		[3] = {szName="Ç¬À¤Ë«¾øÅå",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200, 
+		[3] = {szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nExpiredTime=43200, 
 		nBitExtPoint = 3},
-		[4] = {szName = "1ÒÚ¾­ÑéÖµ", nExp=100e6, 
+		[4] = {szName = "100 triÖu ®iÓm kinh nghiÖm", nExp=100e6, 
 		nBitExtPoint = 4},
-		[5] = {szName = "3Ç§Íò¾­ÑéÖµ", nExp=30e6, 
+		[5] = {szName = "30 triÖu ®iÓm kinh nghiÖm", nExp=30e6, 
 		nBitExtPoint = 5},
 	},
 }
@@ -42,12 +42,12 @@ function tbNoelOnWeb:AddDialog()
 		return
 	end
 	local pEventType = EventSys:GetType("AddNpcOption")
-	nId = pEventType:Reg("Àñ¹Ù", "ºÍÎäÁÖ´«ÆæÒ»ÆðÁìÈ¡½ÚÈÕ³é½±µÄ½±Àø", tbNoelOnWeb.Main,{tbNoelOnWeb})
+	nId = pEventType:Reg("LÔ Quan", "NhËn th­ëng quay sè Vui tÕt cïng Vâ L©m TruyÒn Kú", tbNoelOnWeb.Main,{tbNoelOnWeb})
 end
 
 function tbNoelOnWeb:Main()
 	if not self:IsActive() then
-		Talk(1, "", "ÏÖÔÚÎÞ·¨ÁìÈ¡.")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i thêi gian nhËn th­ëng.")
 		return
 	end
 	local nNpcIndex = GetLastDiagNpc();
@@ -57,18 +57,18 @@ function tbNoelOnWeb:Main()
 	end
 	local tbMainDialog = DailogClass:new(szNpcName)
 	local nFlag = 0
-	local strTittle = "ÎÒÃÇ¸ºÔð·¢·Å³é½±µÄ½±Àø<color=yellow>ÎäÁÖ´«Ææ¹²¶È½ÚÈÕ<color>. ÖÐ½±Ãûµ¥ÈçÏÂ:\n\n"
+	local strTittle = "Ta phô tr¸ch trao phÇn th­ëng ch­¬ng tr×nh quay sè <color=yellow>Vui tÕt cïng Vâ L©m TruyÒn Kú<color>. Danh s¸ch phÇn th­ëng cña c¸c h¹ nh­ sau:\n\n"
 	for i = 1, getn(self.tbAward) do
 		local tb = self.tbAward[i]
 		local nBit = tb.nBitExtPoint
 		if tbExtPointLib:GetBitValue(self.nExtPointID, nBit) == 1 then
 			nFlag = 1
 			strTittle = strTittle..format("<color=yellow>\t\t\t\t%s<color>\n", tb.szName)
-			tbMainDialog:AddOptEntry(format("ÁìÈ¡½±Àø %s", tb.szName), tbNoelOnWeb.getAward, {tbNoelOnWeb, i})
+			tbMainDialog:AddOptEntry(format("NhËn phÇn th­ëng %s", tb.szName), tbNoelOnWeb.getAward, {tbNoelOnWeb, i})
 		end
 	end
 	if nFlag == 0 then
-		strTittle = strTittle..format("<color=yellow>\t\t\t\t%s<color>", "Ã»ÓÐ½±Àø")
+		strTittle = strTittle..format("<color=yellow>\t\t\t\t%s<color>", "Kh«ng cã phÇn th­ëng nµo")
 	end
 	tbMainDialog.szTitleMsg = strTittle	
 	tbMainDialog:Show()
@@ -79,22 +79,22 @@ function tbNoelOnWeb:getAward(nAwardID)
 	if not tb then return end
 	local nBit = tb.nBitExtPoint
 	if tbExtPointLib:GetBitValue(self.nExtPointID, nBit) ~= 1 then
-		Talk(1, "", "¸÷Î»Î´ÖÐ½±.")
+		Talk(1, "", "C¸c h¹ kh«ng tróng phÇn th­ëng nµy.")
 		return
 	end
 	if nAwardID == 1 then
 		if CountFreeRoomByWH(2, 3, 1) < 1 then
-			Talk(1, "", "Îª·ÀÖ¹²Æ²úËðÊ§£¬ÇëÕûÀíºÃÄúµÄ±³°üÒÔ·À·Å²»ÏÂ(2x3¸ö¸ñ£©.")
+			Talk(1, "", "§Ó tr¸nh mÊt m¸t tµi s¶n, xin h·y chõa 1 2x3 «  trèng trong hµnh trang råi míi nhËn th­ëng.")
 			return
 		end
 	elseif nAwardID == 2 or nAwardID == 3 then
 		if CalcFreeItemCellCount() < 1 then
-			Talk(1, "", "Îª·ÀÖ¹²Æ²úËðÊ§£¬ÇëÁô³ö2x3µÄ¿ÕÎ»Ö®ºóÔÙÁìÈ¡½±Àø.")
+			Talk(1, "", "§Ó tr¸nh mÊt m¸t tµi s¶n, xin h·y chõa 1 «  trèng trong hµnh trang råi míi nhËn th­ëng.")
 			return
 		end
 	end
 	if tbExtPointLib:SetBitValue(self.nExtPointID, nBit, 0) ~= 1 then
-		Talk(1, "", "½±ÀøÎ´ÁìÈ¡³É¹¦£¬ÇëÁªÏµÓÎÏ·¹ÜÀíÎ¯Ô±»áÓèÒÔ½â¾ö.")
+		Talk(1, "", "NhËn th­ëng kh«ng thµnh c«ng, xin h·y liªn hÖ ban ®iÒu hµnh cña trß ch¬i ®Ó ®­îc gi¶i quyÕt.")
 			return
 	end
 	if nAwardID == 4 or nAwardID == 5 then
@@ -102,7 +102,7 @@ function tbNoelOnWeb:getAward(nAwardID)
 		local nTskExp = tbVNG_BitTask_Lib:getBitTask(self.tbBitTask)*1e6
 		if nTskExp + nAddExp > self.nMaxExp then
 			nAddExp = self.nMaxExp - nTskExp
-			Msg2Player(format("¾­Ñé³¬¹ý¹æ¶¨½çÏÞ, Ö»ÄÜÁìÈ¡%d µã¾­Ñé.", nAddExp))			
+			Msg2Player(format("Kinh nghiÖm v­ît qu¸ giíi h¹n ch­¬ng tr×nh, chØ nhËn ®­îc %d ®iÓm kinh nghiÖm.", nAddExp))			
 		end
 		tbVNG_BitTask_Lib:addTask(self.tbBitTask, floor(nAddExp/1e6))		
 		tb = {nExp = nAddExp}

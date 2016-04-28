@@ -16,5 +16,5 @@ function main()
 		return 1;
 	end;
 	CastSkill(SKILLTYPE, SKILLLEVEL)
-	Msg2Player("<#>Äã²¼ÖÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>");
+	Msg2Player("<#> B¹n ®· bè trİ mét <color=0xB5FDD7>"..SKILLNAME.."<color>");
 end;

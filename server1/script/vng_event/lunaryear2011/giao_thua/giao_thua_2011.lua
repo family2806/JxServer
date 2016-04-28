@@ -13,7 +13,7 @@ GiaoThua_2011.tbPos =
 	{37,1748,3077},
 }
 
-GiaoThua_2011.tbAwardExp = {szName = "ßiæ≠—È÷µ", nExp = 1e6}
+GiaoThua_2011.tbAwardExp = {szName = "ßi”m kinh nghi÷m", nExp = 1e6}
 GiaoThua_2011.nTimerOut	  = 15*18
 GiaoThua_2011.nTimerCount   = 1680
 GiaoThua_2011.nSearchRange = 16
@@ -39,7 +39,7 @@ function GiaoThua_2011:AddNpc()
 			AddTimer(self.nTimerOut, "GiaoThua_2011:OnTime", nNpcIndex);
 		end
 	end
-	AddGlobalNews("—Ãª®“—‘⁄7≥« –»º∑≈£¨∏˜Œ‰¡÷»À øøÏ»•π€ø¥º∞¡Ï»°ƒÍ≥ıŸ∫¬ª≈∂!!")
+	AddGlobalNews("Ph∏o hoa Æ∑ Æ≠Óc bæn tπi 7 thµnh thﬁ, c∏c nh©n s¸ v‚ l©m h∑y mau Æ’n chi™m ng≠Ïng vµ nhÀn lÈc Æ«u n®m nh–!!!")
 end
 
 function GiaoThua_2011:OnTime(nNpcIndex, nTimerID)
@@ -64,9 +64,9 @@ function GiaoThua_2011:OnTime(nNpcIndex, nTimerID)
 		if tbVNG_LY2011:checkCondition() == 1 then
 			if (GetTask(self.TSK_GET_EXP) < self.nMaxGetExp) then
 				SetTask(self.TSK_GET_EXP, GetTask(self.TSK_GET_EXP) + 1)
-				tbAwardTemplet:GiveAwardByList(self.tbAwardExp, "”≠≥˝œ¶ªÓ∂Øæ≠—ÈΩ±¿¯");
+				tbAwardTemplet:GiveAwardByList(self.tbAwardExp, "Ph«n th≠Îng kinh nghi÷m hoπt ÆÈng Æ„n giao thıa");
 			else
-				Msg2Player("ΩÒÃÏ∏Ûœ¬“—¡Ï»°≥¨∂ÓΩ±¿¯¡À!");
+				Msg2Player("H´m nay c∏c hπ Æ∑ nhÀn th≠Îng v≠Ót qu∏ sË l«n cho ph–p!");
 			end
 		end
 	end

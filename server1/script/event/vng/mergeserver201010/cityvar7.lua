@@ -6,37 +6,37 @@ Include("\\script\\event\\vng\\MergeServer201010\\head.lua")
 
 tbItemBonus_TongCityWar = 
 {
-	{szName = "§i¾­ÑéÖµ", nExp_tl = 20000000},
-	{szName ="¹¥³ÇÕ½Àñ°ü",tbProp={6,1,2377,1,0,0},nExpiredTime=14400, nCount = 2},
-	{szName ="ÑªÕ½ÁîÆì",tbProp={6,1,2212,1,0,0},nExpiredTime=14400, nCount = 2},
-	{szName ="ÉñĞĞ·û",tbProp={6,1,1266,1,0,0},nExpiredTime=10080, nCount = 1},
+	{szName = "§iÓm kinh nghiÖm", nExp_tl = 20000000},
+	{szName ="C«ng Thµnh ChiÕn LÔ Bao",tbProp={6,1,2377,1,0,0},nExpiredTime=14400, nCount = 2},
+	{szName ="HuyÕt ChiÕn LÖnh Kú",tbProp={6,1,2212,1,0,0},nExpiredTime=14400, nCount = 2},
+	{szName ="ThÇn Hµnh Phï",tbProp={6,1,1266,1,0,0},nExpiredTime=10080, nCount = 1},
 }
 function GetBonus_CityTongWar()
 	if checkBangHuiLimit() == 0 then
-			Say("¶Ô²»Æğ£¬´óÏÀÎ´¼ÓÈëÈÎºÎ°ï»á",0);
+			Say("Xin lçi! §¹i hiÖp ch­a gia nhËp bang héi nµo c¶!",0);
 			return
 	end
 	if (MergerSV_TongGetBonusCitywar_Time() ~= 1) then
-		Say("¶Ô²»Æğ£¬Ä¿Ç°²»ÊÊºÏÁì½±",0);
+		Say("Xin lçi! HiÖn t¹i kh«ng thİch hîp ®Ó nhËn phÇn th­ëng nµy",0);
 		return
 	end
 	if (Check_PlayerObj() ~= 1) then
-		Say("¶Ô²»Æğ£¬´óÏÀµÄµÈ¼¶²»ÊÊºÏÁì½±!",0);
+		Say("Xin lçi! §¼ng cÊp ®¹i hiÖp kh«ng thİch hîp nhËn phÇn th­ëng nµy  !",0);
 		return
 	end
-	if (PlayerFunLib:CheckTaskDaily(Task_TongCityWar_Date,1,"¶Ô²»Æğ£¬¸Ã½±ÀøÃ¿ÖÜÖ»ÄÜÁìÈ¡Ò»´Î!","<") ~= 1) then
+	if (PlayerFunLib:CheckTaskDaily(Task_TongCityWar_Date,1,"Xin lçi ®¹i hiÖp, PhÇn th­ëng nµy mçi tuÇn chØ cã thÓ nhËn 1 lÇn !","<") ~= 1) then
 		return
 	end
 	if (GetJoinTongTime() < 60*24) then
-		Talk(1,"","´óÏÀÊÇ¸Õ¼ÓÈë°ï»áµÄÈË£¬ËùÒÔ²»ÄÜÁì½±!")
+		Talk(1,"","§¹i hiÖp lµ ng­êi míi gia nh¹p vµo bang nªn kh«ng thÓ nhËn th­ëng !")
 		return
 	end
 	if (GetTask(Task_TongCityWar_Bonus) >=  4) then
-		Say("¶Ô²»Æğ£¬¸Ã½±Àø×î¶àÖ»ÄÜÁì4´Î!",0);
+		Say("Xin lçi! PhÇn th­ëng nµy chØ nhËn tèi ®a 4 lÇn !",0);
 		return
 	end
 	if (CalcFreeItemCellCount() <10) then
-		Say("¶Ô²»Æğ£¬´óÏÀµÄ×°±¸²»×ã10¸ö¿ÕÎ»!",0);
+		Say("Xin lçi! Hµnh trang ®¹i hiÖp kh«ng ®ñ 10 « trèng !",0);
 		return
 	end
 	if (Check_CityTongWar() ==1) then
@@ -44,7 +44,7 @@ function GetBonus_CityTongWar()
 		SetTask(Task_TongCityWar_Bonus, GetTask(Task_TongCityWar_Bonus) + 1)
 		tbAwardTemplet:GiveAwardByList(tbItemBonus_TongCityWar, "MergerSV_201010");
 	else
-		Say("¶Ô²»Æğ£¬´óÏÀµÄ°ï»áÃ»ÓĞÕ¼ÈÎºÎ³ÇÊĞ!",0);
+		Say("Xin lçi! bang cña ®¹i hiÖp kh«ng cã chiÕm thµnh nµo c¶ !",0);
 		return
 	end
 end

@@ -25,24 +25,24 @@ function main(nItemIndex)
 		local nMin	= floor(nTime / 60 );
 		local nSec	= mod(nTime, 60);
 			
-		szMsg_Huang = format("<color=yellow>%d ÈÕ%d Ê±%d ·Ö%d Ãë<color>",nDay,nHour,nMin,nSec);
+		szMsg_Huang = format("<color=yellow>%d ngµy %d giê %d phót %d gi©y<color>",nDay,nHour,nMin,nSec);
 	end		
 
 	local szTitle;
 	local tbOpt;
 	
 	if szMsg_Huang ~= nil then
-		szTitle	= format("ÄúºÃ<color=yellow>%s<color>, ÔÚ60ÌìÄÚÖ»ÄÜÊ¹ÓÃ1´Î»ÆÕæµ¤£¬´óÏÀ¶àµÈ%sÈ»ºóÔÙÖØÊÔ.",GetName(), szMsg_Huang);
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, trong thêi gian 60 ngµy chØ ®­îc sö dông 1 lÇn Hoµng Ch©n §¬n, ®¹i hiÖp ®îi thªm %s råi h·y thö l¹i.",GetName(), szMsg_Huang);
 		tbOpt = 
 		{
-			"È·ÈÏOnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 	else
-		szTitle	= format("ÄúºÃ <color=yellow>%s<color>, Ê¹ÓÃ»ÆÕæµ¤¿ÉÒÔ»ñµÃ<color=yellow>%s<color> ¾­Ñé¡£È·ÈÏÏëÊ¹ÓÃ?",GetName(), 2000000000)
+		szTitle	= format("Xin chµo <color=yellow>%s<color>, sö dông hoµng ch©n ®¬n cã thÓ nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm. X¸c nhËn muèn sö dông?",GetName(), 2000000000)
 		tbOpt = 
 		{
-			format("È·ÈÏ/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
-			"·ÅÆú/OnCancel"
+			format("X¸c nhËn/#BeiDouChuanGong_UseItem(%d)", nItemIndex),
+			"Hñy bá /OnCancel"
 		}
 	end
 	Say(szTitle, getn(tbOpt), tbOpt);
@@ -65,20 +65,20 @@ function BeiDouChuanGong_UseItem(nItemIndex)
 		local nMin	= floor(nTime / 60 );
 		local nSec	= mod(nTime, 60);
 			
-		szMsg_Huang = format("<color=yellow>%d ÈÕ%d Ê±%d ·Ö%d Ãë<color>",nDay,nHour,nMin,nSec);
+		szMsg_Huang = format("<color=yellow>%d ngµy %d giê %d phót %d gi©y<color>",nDay,nHour,nMin,nSec);
 	end			
 	
 	if szMsg_Huang ~= nil then
-		local szTitle = format("ÄúºÃ<color=yellow>%s<color>, ÔÚ60ÌìÄÚÖ»ÄÜÊ¹ÓÃ1´Î»ÆÕæµ¤£¬´óÏÀ¶àµÈ%sÈ»ºóÔÙÖØÊÔ.",GetName(), szMsg_Huang)
+		local szTitle = format("Xin chµo <color=yellow>%s<color>, trong thêi gian 60 ngµy chØ ®­îc sö dông 1 lÇn Hoµng Ch©n §¬n, ®¹i hiÖp ®îi thªm %s råi h·y thö l¹i.",GetName(), szMsg_Huang)
 		local tbOpt = 
 		{
-			"È·ÈÏ/OnCancel"
+			"X¸c nhËn/OnCancel"
 		}
 		Say(szTitle, getn(tbOpt), tbOpt);
 		
 	else
 		if RemoveItemByIndex(nItemIndex) == 1 then
-			tbAwardTemplet:GiveAwardByList({nExp_tl = 2000000000;}, format("%s Ê¹ÓÃ»ÆÕæµ¤", GetName()));
+			tbAwardTemplet:GiveAwardByList({nExp_tl = 2000000000;}, format("%s sö dông hoµng ch©n ®¬n", GetName()));
 			SetTask(TSK_BeiDouChuanGong_USEDTIME_HUANG, GetCurServerTime());
 			AddSkillState( 509, 1, 0, 180);
 		end
@@ -90,5 +90,5 @@ function OnCancel()
 end
 
 function GetDesc(nItem)
-	return format("\nº¬ÓĞ <color=yellow>%s<color> ¾­Ñé", 2000000000);
+	return format("\nChøa <color=yellow>%s<color> kinh nghiÖm", 2000000000);
 end

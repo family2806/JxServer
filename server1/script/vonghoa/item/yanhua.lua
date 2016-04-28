@@ -17,26 +17,26 @@ Include("\\script\\lib\\awardtemplet.lua")
 
   tbAwardItemDocLap=
   {
-  	{szName = "ÐþÔ³Áî", tbProp = {6, 1, 2351, 1, 0, 0}, nCount = 1, nRate = 0.2},	
-  	{szName = "²ÔÀÇÁî", tbProp = {6, 1, 2352, 1, 0, 0}, nCount = 1, nRate = 0.5},	
-  	{szName = "ÔÆÂ¹Áî", tbProp = {6, 1, 2353, 1, 0, 0}, nCount = 1, nRate = 1},	
-  	{szName = "Çà¾ÔÁî", tbProp = {6, 1, 2369, 1, 0, 0}, nCount = 1, nRate = 1},	
-  	{szName = "»ìÔªÁéÂ¶", tbProp = {6, 1, 2312, 1, 0, 0}, nCount = 1, nRate = 15},	
-  	{szName = "ÐþÌì½õÄÒ", tbProp = {6, 1, 2355, 1, 0, 0}, nCount = 1, nRate = 10},	
-  	{szName = "ÉñÅ©Õæµ¤", tbProp = {6, 1, 2113, 1, 0, 0}, nCount = 1, nRate = 3},	
-  	{szName = "°ËÕä¸£ÔÂÀ¯Öò", tbProp = {6, 1, 1817, 1, 0, 0}, nCount = 1, nRate = 10},	
-  	{szName = "ÌôÕ½Àñ°ü", tbProp = {6, 1, 2006, 1, 0, 0}, nCount = 1, nRate = 7},	
-  	{szName = "°ÙÄêÕäÂ¶", tbProp = {6, 1, 2266, 1, 0, 0}, nCount = 1, nRate = 12},	
-  	{szName = "ÁúÑªÍè", tbProp = {6, 1, 2117, 1, 0, 0}, nCount = 1, nRate = 2},	
-  	{szName = "ÌìÁúÁî", tbProp = {6, 1, 2256, 1, 0, 0}, nCount = 1, nRate = 5},	
-  	{szName = "°×¹ÇÁî", tbProp = {6, 1, 2255, 1, 0, 0}, nCount = 1, nRate = 2},	
-  	{szName = "º£ÁúÖé", tbProp = {6, 1, 2115, 1, 0, 0}, nCount = 1, nRate = 3.3},	
-  	{szName = "ÏÉ²ÝÂ¶( ÌØÐ§)", tbProp = {6, 1, 1181, 1, 0, 0}, nCount = 1, nRate =5 },	
-  	{szName = "ÊÔÁ¶Ìû", tbProp = {6, 1, 2317, 1, 0, 0}, nCount = 1, nRate = 5},	
-  	{szName = "»Ô»Í¹û(¸ß¼¶)", tbProp = {6, 1, 906, 1, 0, 0}, nCount = 1, nRate = 10,nExpiredTime = 10080},	
-  	{szName = "°ÙÄê»Ô»Í¹û", tbProp = {6, 1, 2269, 1, 0, 0}, nCount = 1, nRate = 5},	
-  	{szName = "Ç§Äê»Ô»Í¹û", tbProp = {6, 1, 2270, 1, 0, 0}, nCount = 1, nRate = 2},	
-  	{szName = "ÍòÄÜ»Ô»Í¹û", tbProp = {6, 1, 2271, 1, 0, 0}, nCount = 1, nRate = 1},	
+  	{szName = "HuyÒn Viªn LÖnh", tbProp = {6, 1, 2351, 1, 0, 0}, nCount = 1, nRate = 0.2},	
+  	{szName = "Th­¬ng Lang LÖnh", tbProp = {6, 1, 2352, 1, 0, 0}, nCount = 1, nRate = 0.5},	
+  	{szName = "V©n Léc LÖnh", tbProp = {6, 1, 2353, 1, 0, 0}, nCount = 1, nRate = 1},	
+  	{szName = "Thanh C©u LÖnh", tbProp = {6, 1, 2369, 1, 0, 0}, nCount = 1, nRate = 1},	
+  	{szName = "Hçn Nguyªn Linh Lé", tbProp = {6, 1, 2312, 1, 0, 0}, nCount = 1, nRate = 15},	
+  	{szName = "HuyÒn Thiªn CÈm Nang", tbProp = {6, 1, 2355, 1, 0, 0}, nCount = 1, nRate = 10},	
+  	{szName = "ThÇn N«ng Ch©n §¬n", tbProp = {6, 1, 2113, 1, 0, 0}, nCount = 1, nRate = 3},	
+  	{szName = "NÕn B¸t Tr©n Phóc NguyÖt", tbProp = {6, 1, 1817, 1, 0, 0}, nCount = 1, nRate = 10},	
+  	{szName = "Khiªu ChiÕn LÔ Bao", tbProp = {6, 1, 2006, 1, 0, 0}, nCount = 1, nRate = 7},	
+  	{szName = "B¸ch Niªn Tr©n Lé", tbProp = {6, 1, 2266, 1, 0, 0}, nCount = 1, nRate = 12},	
+  	{szName = "Long HuyÕt Hoµn", tbProp = {6, 1, 2117, 1, 0, 0}, nCount = 1, nRate = 2},	
+  	{szName = "Thiªn Long LÖnh", tbProp = {6, 1, 2256, 1, 0, 0}, nCount = 1, nRate = 5},	
+  	{szName = "B¹ch Cèt LÖnh", tbProp = {6, 1, 2255, 1, 0, 0}, nCount = 1, nRate = 2},	
+  	{szName = "H¶i Long Ch©u", tbProp = {6, 1, 2115, 1, 0, 0}, nCount = 1, nRate = 3.3},	
+  	{szName = "Tiªn Th¶o Lé (®Æc biÖt)", tbProp = {6, 1, 1181, 1, 0, 0}, nCount = 1, nRate =5 },	
+  	{szName = "ThÝ LuyÖn ThiÕp", tbProp = {6, 1, 2317, 1, 0, 0}, nCount = 1, nRate = 5},	
+  	{szName = "Qu¶ Huy Hoµng (cao cÊp)", tbProp = {6, 1, 906, 1, 0, 0}, nCount = 1, nRate = 10,nExpiredTime = 10080},	
+  	{szName = "B¸ch Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2269, 1, 0, 0}, nCount = 1, nRate = 5},	
+  	{szName = "Thiªn Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2270, 1, 0, 0}, nCount = 1, nRate = 2},	
+  	{szName = "V¹n Niªn Huy Hoµng qu¶", tbProp = {6, 1, 2271, 1, 0, 0}, nCount = 1, nRate = 1},	
   };
  
  function tbRandom(tbAward)
@@ -79,7 +79,7 @@ function OnTime(nNpcIndex, nTimerId)
 	
 	
 	tbData.nCount = tbData.nCount + 1
-	--Msg2Player("Äã»ñµÃµÚ¼¸¾­Ñé"..tbData.nCount)
+	--Msg2Player("B¹n nhËn ®­îc kinh nghiÖm lÇn thø "..tbData.nCount)
 	
 	local nPlayerIndex = SearchPlayer(tbData.szPlayerName)
 	
@@ -98,7 +98,7 @@ function OnTime(nNpcIndex, nTimerId)
 				local nTotalEXP = nTaskBeUse + tbAwardEXPQuocKhanh[nValue].nExp_tl/10000
 				lib:DoFunByPlayer(nPlayerIndex, SetTask,Task_BeUse_VongHoa , nTotalEXP)
 				--SetTask(Task_BeUse_VongHoa, GetTask(Task_BeUse_VongHoa) + tbAwardEXPQuocKhanh[nValue].nExp_tl/10000)
-				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardEXPQuocKhanh[nValue] , "ÁìÈ¡Ê¹ÓÃ¹úÇì»¨È¦¾­Ñé")
+				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardEXPQuocKhanh[nValue] , "NhËn EXP sö dông vßng hoa quèc kh¸nh")
 			end
 			if (tbData.nP == 30034) then
 				local nValue = tbRandom(tbAwardEXPDocLap)
@@ -109,7 +109,7 @@ function OnTime(nNpcIndex, nTimerId)
 				local nTotalEXP = nTaskBeUse + tbAwardEXPDocLap[nValue].nExp_tl/10000
 				lib:DoFunByPlayer(nPlayerIndex, SetTask,Task_BeUse_VongHoa , nTotalEXP)
 				--SetTask(Task_BeUse_VongHoa, GetTask(Task_BeUse_VongHoa) +  tbAwardEXPDocLap[nValue].nExp_tl/10000)
-				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardEXPDocLap[nValue] , "ÁìÈ¡Ê¹ÓÃ¶ÀÁ¢»¨È¦¾­Ñé")
+				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardEXPDocLap[nValue] , "NhËn EXP sö dông vßng hoa ®éc lËp")
 			end
 		end
 	end
@@ -121,9 +121,9 @@ function OnTime(nNpcIndex, nTimerId)
 			DelNpc(nNpcIndex)
 			
 			if (tbData.nP == 30034) then
-				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardItemDocLap , "ÁìÈ¡Ê¹ÓÃ¶ÀÁ¢»¨È¦Item")
+				lib:DoFunByPlayer(nPlayerIndex, tbAwardTemplet.GiveAwardByList, tbAwardTemplet,tbAwardItemDocLap , "nhËn th­ëng Item sö dông vßng hoa ®éc lËp")
 			end
-			lib:DoFunByPlayer(nPlayerIndex, Msg2Player,"Ê¹ÓÃ»¨È¦½áÊø!")
+			lib:DoFunByPlayer(nPlayerIndex, Msg2Player,"Thêi gian sö dông vßng hoa kÕt thóc !")
 		end
 		return 0,0
 	else

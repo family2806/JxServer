@@ -4,7 +4,7 @@ tbConfig[1] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 1,
 	szMessageType = "NpcOnDeath",
-	szName = "¥Ú¬‰π÷ŒÔ≤ƒ¡œ¥¸",
+	szName = "TÛi Nguy™n Li÷u Æ∏nh qu∏i r¨i ra",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -22,14 +22,14 @@ tbConfig[2] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = " π”√≤ƒ¡œ¥¸",
+	szName = "Sˆ dÙng TÛi Nguy™n Li÷u",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_MATERIAL_BAG},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"◊∞±∏≤ª◊„ø’Œª"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh´ng ÆÒ chÁ trËng"} },
 		{"lib:CheckDay",	{20120402, 20120501, szOUT_OF_DATE} },
 	},
 	tbActition = 
@@ -41,15 +41,15 @@ tbConfig[3] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 3,
 	szMessageType = "ItemScript",
-	szName = " π”√–¬“¬¡Ï",
+	szName = "Sˆ dÙng Chi’c ∏o L›nh MÌi",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_NEW_UNIFORM},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"ThisActivity:CheckTowTask",	{nIdx_USED_NEW_UNIFORM_COUNT, nIdx_MAX_NEW_UNIFORM_CAN_USE," π”√ŒÔ∆∑’ﬂ“—¥ÔµΩœﬁ÷∆ ˝¡ø","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"◊∞±∏≤ª◊„ø’Œª"} },
+		{"ThisActivity:CheckTowTask",	{nIdx_USED_NEW_UNIFORM_COUNT, nIdx_MAX_NEW_UNIFORM_CAN_USE,"Ng≠¨i sˆ dÙng vÀt ph»m nµy Æ∑ Æπt Æ’n sË l≠Óng giÌi hπn","<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh´ng ÆÒ chÁ trËng"} },
 		{"lib:CheckDay",	{20120402, 20120501, szOUT_OF_DATE} },
 	},
 	tbActition = 
@@ -62,15 +62,15 @@ tbConfig[4] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 4,
 	szMessageType = "ItemScript",
-	szName = " π”√“—∏ƒ“¬¡Ï",
+	szName = "Sˆ dÙng ∏o L›nh ß∑ Sˆa",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_PATCHED_UNIFORM},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"ThisActivity:CheckTask",	{nIdx_USED_PATCHED_UNIFORM_COUNT,nMAX_PATCHED_UNIFORM_CAN_USE,"“—¥ÔµΩœﬁ÷∆£¨≤ªƒ‹ºÃ–¯ π”√","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"◊∞±∏≤ª◊„ø’Œª"} },
+		{"ThisActivity:CheckTask",	{nIdx_USED_PATCHED_UNIFORM_COUNT,nMAX_PATCHED_UNIFORM_CAN_USE,"ß∑ Æπt Æ’n giÌi hπn, kh´ng th” sˆ dÙng ti’p","<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh´ng ÆÒ chÁ trËng"} },
 		{"lib:CheckDay",	{20120402, 20120501, szOUT_OF_DATE} },
 	},
 	tbActition = 
@@ -82,7 +82,7 @@ tbConfig[5] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 5,
 	szMessageType = "FinishSongJin",
-	szName = "ÀŒΩΩ±¿¯>=3000",
+	szName = "Ph«n th≠Îng TËng Kim >=3000",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {-2,"3"},
@@ -93,14 +93,14 @@ tbConfig[5] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,30,EVENT_LOG_TITLE,"ÀŒΩ3000"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,30,EVENT_LOG_TITLE,"TongKim3000"} },
 	},
 }
 tbConfig[6] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 6,
 	szMessageType = "FinishSongJin",
-	szName = "ÀŒΩΩ±¿¯[1000,3000)",
+	szName = "Ph«n th≠Îng TËng Kim [1000,3000)",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {-2,"3"},
@@ -112,14 +112,14 @@ tbConfig[6] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"ÀŒΩ1000"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"TongKim1000"} },
 	},
 }
 tbConfig[7] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 7,
 	szMessageType = "Chuanguan",
-	szName = "¥≥πÿ17",
+	szName = "VuotAi17",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"17"},
@@ -129,14 +129,14 @@ tbConfig[7] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"¥≥πÿ17"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"VuotAi17"} },
 	},
 }
 tbConfig[8] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 8,
 	szMessageType = "Chuanguan",
-	szName = "¥≥πÿ28",
+	szName = "VuotAi28",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"28"},
@@ -146,14 +146,14 @@ tbConfig[8] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"¥≥πÿ28"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"VuotAi28"} },
 	},
 }
 tbConfig[9] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 9,
 	szMessageType = "NpcOnDeath",
-	szName = "ÀÆ‘ÙÕ∑¡Ï∑Á¡Í∂…",
+	szName = "ThÒy T∆c ß«u L‹nh Phong L®ng ßÈ",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -164,14 +164,14 @@ tbConfig[9] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"œ˚√ÀÆ‘ÙÕ∑¡Ï"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinh"} },
 	},
 }
 tbConfig[10] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 10,
 	szMessageType = "NpcOnDeath",
-	szName = "ÀÆ‘Ù¥ÛÕ∑¡Ï∑Á¡Í∂…",
+	szName = "ThÒy T∆c ßπi ß«u L‹nh Phong L®ng ßÈ",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -182,14 +182,14 @@ tbConfig[10] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"œ˚√ÀÆ‘Ù¥ÛÕ∑¡Ï"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
 	},
 }
 tbConfig[11] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 11,
 	szMessageType = "YDBZguoguan",
-	szName = "—◊µ€Ω±¿¯",
+	szName = "Ph«n th≠Îng Vi™m ß’",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {6},
@@ -199,14 +199,14 @@ tbConfig[11] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,15,EVENT_LOG_TITLE,"—◊µ€¥≥πÿ6"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,15,EVENT_LOG_TITLE,"VuotAiViemDe6"} },
 	},
 }
 tbConfig[12] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 12,
 	szMessageType = "NpcOnDeath",
-	szName = "ª∆ΩbossΩ±¿¯",
+	szName = "Ph«n th≠Îng boss Hoµng Kim",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -217,14 +217,14 @@ tbConfig[12] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,30,EVENT_LOG_TITLE,"œ˚√ ¿ΩÁboss"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,30,EVENT_LOG_TITLE,"TieuDietBossTheGioi"} },
 	},
 }
 tbConfig[13] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 13,
 	szMessageType = "NpcOnDeath",
-	szName = "…± ÷bossΩ±¿¯",
+	szName = "Ph«n th≠Îng boss S∏t ThÒ",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -235,21 +235,21 @@ tbConfig[13] = --“ª∏ˆœ∏Ω⁄
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,2,EVENT_LOG_TITLE,"œ˚√…± ÷boss"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,2,EVENT_LOG_TITLE,"TieuDietBossSatThu"} },
 	},
 }
 tbConfig[14] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 14,
 	szMessageType = "ItemScript",
-	szName = " π”√∫Õ œËµ",
+	szName = "Sˆ dÙng Hﬂa Thﬁ B›ch",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_JADE},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"ThisActivity:CheckTask",	{nIdx_USED_JADE_COUNT,nMAX_JADE_COUNT,"∏√ŒÔ∆∑“— π”√¥ÔµΩœﬁ÷∆ ˝¡ø£¨≤ªƒ‹‘ŸºÃ–¯ π”√","<"} },
+		{"ThisActivity:CheckTask",	{nIdx_USED_JADE_COUNT,nMAX_JADE_COUNT,"VÀt ph»m nµy Æ∑ sˆ dÙng Æπt Æ’n sË l≠Óng giÌi hπn, kh´ng th” ti’p tÙc sˆ dÙng","<"} },
 		{"lib:CheckDay",	{20120402, 20120501, szOUT_OF_DATE} },
 	},
 	tbActition = 
@@ -261,26 +261,26 @@ tbConfig[15] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 15,
 	szMessageType = "ClickNpc",
-	szName = "”Î≤√∑Ï ¶∂‘ª∞",
+	szName = "ßËi thoπi vÌi ThÓ May",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"≤√∑Ï ¶"},
+	tbMessageParam = {"ThÓ May"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ªª¬Ã…´≤º¡œ",16} },
-		{"AddDialogOpt",	{"∫œ≥…–¬“¬¡Ï",21} },
-		{"AddDialogOpt",	{"∫œ≥…“—∏ƒ“¬¡Ï",22} },
-		{"AddDialogOpt",	{"∫œ≥…–¬“¬¡Ï(æ≠—Èµ„)",35} },
+		{"AddDialogOpt",	{"ßÊi M∂nh V∂i Mµu Xanh L∏",16} },
+		{"AddDialogOpt",	{"GhepChiecAoLinhMoi",21} },
+		{"AddDialogOpt",	{"GhepAoLinhDaSua",22} },
+		{"AddDialogOpt",	{"GhepChiecAoLinhMoi (Æi”m kinh nghi÷m)",35} },
 	},
 }
 tbConfig[16] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 16,
 	szMessageType = "nil",
-	szName = "ªª¬Ã…´≤º¡œ",
+	szName = "ßÊi M∂nh V∂i Mµu Xanh L∏",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -297,50 +297,50 @@ tbConfig[17] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "∫œ≥…–¬“¬¡Ï",
+	szName = "GhepChiecAoLinhMoi",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"–¬“¬¡Ï",1,1,1,0.02},
+	tbMessageParam = {"∏o L›nh MÌi",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"AddOneMaterial",	{"≤º¡œ",tbITEM_CLOTH,5} },
-		{"AddOneMaterial",	{"ø¯º◊",tbITEM_BUTTONHOLE,5} },
-		{"AddOneMaterial",	{"“¬¡Ï∆∆¡À",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"¬Ã…´≤º¡œ",tbITEM_GREEN_CLOTH,1} },
-		{"AddOneMaterial",	{"œﬂ»¶",tbITEM_SEWING_THREAD,1} },
+		{"AddOneMaterial",	{"M∂nh V∂i",tbITEM_CLOTH,5} },
+		{"AddOneMaterial",	{"Khuy ∏o",tbITEM_BUTTONHOLE,5} },
+		{"AddOneMaterial",	{"∏o L›nh Bﬁ R∏ch",tbITEM_TATTERED_UNIFORM,5} },
+		{"AddOneMaterial",	{"M∂nh V∂i Mµu Xanh L∏",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"CuÈn Chÿ",tbITEM_SEWING_THREAD,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM,1,EVENT_LOG_TITLE,"∫œ≥…–¬“¬¡Ï"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM,1,EVENT_LOG_TITLE,"GhepChiecAoLinhMoi"} },
 	},
 }
 tbConfig[18] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 18,
 	szMessageType = "CreateCompose",
-	szName = "∫œ≥…“—∏ƒ“¬¡Ï",
+	szName = "GhepAoLinhDaSua",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"“¬¡Ï“—∏ƒ",1,1,1,0.02},
+	tbMessageParam = {"∏o L›nh ß∑ Sˆa",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"AddOneMaterial",	{"≤º¡œ",tbITEM_CLOTH,5} },
-		{"AddOneMaterial",	{"ø¯º◊",tbITEM_BUTTONHOLE,5} },
-		{"AddOneMaterial",	{"“¬¡Ï∆∆¡À",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"¬Ã…´≤º¡œ",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"M∂nh V∂i",tbITEM_CLOTH,5} },
+		{"AddOneMaterial",	{"Khuy ∏o",tbITEM_BUTTONHOLE,5} },
+		{"AddOneMaterial",	{"∏o L›nh Bﬁ R∏ch",tbITEM_TATTERED_UNIFORM,5} },
+		{"AddOneMaterial",	{"M∂nh V∂i Mµu Xanh L∏",tbITEM_GREEN_CLOTH,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_PATCHED_UNIFORM,1,EVENT_LOG_TITLE,"∫œ≥…“—∏ƒ“¬¡Ï"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_PATCHED_UNIFORM,1,EVENT_LOG_TITLE,"GhepAoLinhDaSua"} },
 	},
 }
 tbConfig[19] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 19,
 	szMessageType = "ServerStart",
-	szName = "∆Ù∂Øsever",
+	szName = "KhÎi ÆÈng sever",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -356,7 +356,7 @@ tbConfig[20] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 20,
 	szMessageType = "OnLogin",
-	szName = "ÕÊº“µ«¬Ω",
+	szName = "Ng≠Íi ch¨i Æ®ng nhÀp",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {nil},
@@ -374,7 +374,7 @@ tbConfig[21] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 21,
 	szMessageType = "nil",
-	szName = "ºÏ≤Èµ»º∂",
+	szName = "Ki”m tra Æºng c p",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -391,7 +391,7 @@ tbConfig[22] = --“ª∏ˆœ∏Ω⁄
 {
 	nId = 22,
 	szMessageType = "nil",
-	szName = "ºÏ≤Èµ»º∂",
+	szName = "Ki”m tra Æºng c p",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -573,15 +573,15 @@ tbConfig[34] =
 {
 	nId = 34,
 	szMessageType = "ItemScript",
-	szName = " π”√–¬“¬¡Ï(exp)",
+	szName = "Sˆ dÙng Chi’c ∏o L›nh MÌi (exp)",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_NEW_UNIFORM_EXP},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"ThisActivity:CheckTowTask",	{nIdx_USED_NEW_UNIFORM_COUNT, nIdx_MAX_NEW_UNIFORM_CAN_USE,"∏√ŒÔ∆∑ π”√’ﬂ“—¥ÔµΩœﬁ÷∆ ˝¡ø","<"} },
-		{"PlayerFunLib:CheckFreeBagCell",	{1,"◊∞±∏≤ª◊„ø’Œª"} },
+		{"ThisActivity:CheckTowTask",	{nIdx_USED_NEW_UNIFORM_COUNT, nIdx_MAX_NEW_UNIFORM_CAN_USE,"Ng≠¨i sˆ dÙng vÀt ph»m nµy Æ∑ Æπt Æ’n sË l≠Óng giÌi hπn","<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh´ng ÆÒ chÁ trËng"} },
 		{"lib:CheckDay",	{20120402, 20120501, szOUT_OF_DATE} },
 	},
 	tbActition = 
@@ -594,21 +594,21 @@ tbConfig[35] =
 {
 	nId = 35,
 	szMessageType = "CreateCompose",
-	szName = "∫œ≥…–¬“¬¡Ï(æ≠—Èµ„)",
+	szName = "GhepChiecAoLinhMoi (Æi”m kinh nghi÷m)",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"–¬“¬¡Ï(æ≠—Èµ„)",1,1,1,0.02},
+	tbMessageParam = {"Chi’c ∏o L›nh MÌi (Æi”m kinh nghi÷m)",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
-		{"AddOneMaterial",	{"≤º¡œ",tbITEM_CLOTH,5} },
-		{"AddOneMaterial",	{"ø¯º◊",tbITEM_BUTTONHOLE,5} },
-		{"AddOneMaterial",	{"“¬¡Ï∆∆¡À",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"¬Ã…´≤º¡œ",tbITEM_GREEN_CLOTH,1} },
-		{"AddOneMaterial",	{"œﬂ»¶",tbITEM_SEWING_THREAD,1} },
+		{"AddOneMaterial",	{"M∂nh V∂i",tbITEM_CLOTH,5} },
+		{"AddOneMaterial",	{"Khuy ∏o",tbITEM_BUTTONHOLE,5} },
+		{"AddOneMaterial",	{"∏o L›nh Bﬁ R∏ch",tbITEM_TATTERED_UNIFORM,5} },
+		{"AddOneMaterial",	{"M∂nh V∂i Mµu Xanh L∏",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"CuÈn Chÿ",tbITEM_SEWING_THREAD,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM_EXP,1,EVENT_LOG_TITLE,"∫œ≥…–¬“¬¡Ï(Exp)"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM_EXP,1,EVENT_LOG_TITLE,"GhepChiecAoLinhMoi(Exp)"} },
 	},
 }

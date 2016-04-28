@@ -43,7 +43,7 @@ function zhongqiu0808_ComposeClass:ConsumeMaterial(tbMaterial)
 	return 1;
 end
 function zhongqiu0808_ComposeClass:GetMaterialList(tbMaterial, nMoney)
-	local szList = format("%-20s  %s","ÎïÆ·","ÊıÁ¿")
+	local szList = format("%-20s  %s","vËt phÈm ","Sè l­îng")
 	local flag, tbCount = self:CheckMaterial(tbMaterial)
 	local i;
 	for i=1,getn(tbMaterial) do
@@ -54,33 +54,33 @@ function zhongqiu0808_ComposeClass:GetMaterialList(tbMaterial, nMoney)
 		szList = format("%s<enter><color=yellow>%-20s<color>  %s(%d/%d)<color>",szList,tbMaterial[i].szName, szColor, tbCount[i], tbMaterial[i].nCount)
 	end
 	if nMoney ~= 0 then
-			szList = format("%s<enter> ÒÔ¼°%d Á½À´ºÏ³É",szList,  nMoney)
+			szList = format("%s<enter> vµ %d l­îng ®Ó hîp thµnh",szList,  nMoney)
 		end
 	return szList
 end
 function zhongqiu0808_ComposeClass:Compose(tbMaterial, nMoney, Awardfun,...)
 	
 	if self:CheckMaterial(tbMaterial) ~=1 then
-		local szMsg = "<dec><npc><color=red>Ëù´øÔ­ÁÏ²»×ã®ñ<color>."
+		local szMsg = "<dec><npc><color=red>Nguyªn liÖu mang theo kh«ng ®ñ<color>."
 		CreateTaskSay(
 			{
 				szMsg,
-				"ÕæÊÇ²»ºÃÒâË¼£¬ÎÒÉÔºò»ØÀ´./OnCancel",
+				"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./OnCancel",
 				
 			}
 		)
 		return 0;
 	end
 	if nMoney > 0 and Pay(nMoney) == 0 then
-		Say(format("²»ÄÜÁË£¬Ëù´øÇ®²»¹»£¬ĞèÒª<color=yellow>%d<color> Á½",nMoney),0)
+		Say(format("Kh«ng ®­îc råi, kh«ng mang theo ®ñ tiÒn, cÇn cã <color=yellow>%d<color> l­îng",nMoney),0)
 		return 0;
 	elseif nMoney ~= 0 then
-		Msg2Player(format("ĞèÒª <color=yellow>%d<color> Á½",nMoney))
+		Msg2Player(format("CÇn <color=yellow>%d<color> l­îng",nMoney))
 	end
 
 	if self:ConsumeMaterial(tbMaterial) ~= 1 then
 		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
-		Msg2Player("ÖÆÔìÊ§°Ü£¬Ê§È¥Ò»Ğ©Ô­ÁÏ.")
+		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end
 	if type(Awardfun) == "function" then

@@ -2,24 +2,24 @@
 Include("\\script\\event\\birthday_jieri\\200905\\class.lua");
 
 function guoguan_xunbao()
-	Say("Äôß±³¾: ÈÕ19/06/2009 ®ÕÊ±24:00 19/07/2009 Äú¿ÉÒÔ´ÓÎÒÃÇÕâÁì¹ı¹ØÑ°±¦µÄÈÎÎñ.½ÓÊÜÈÎÎñÖ®ºó, µ±Äú²Î¼Ó¸ß¼¶ÌôÕ½½«¿ÉÁìÈ¡¿ªÃÅĞÅÎïĞÛĞÄ½£, ÁìÈ¡µ½ĞÛĞÄ½£µÄÊıÁ¿¶àÉÙÊÇ¸ù¾İÄú´³¹ı15, 20, 25»¹ÊÇ29¹Ø¶ø¶¨µÄ.", 3,
-		"ÁìÈ¡¹ı¹ØÑ°±¦ÈÎÎñ/gettask_chuangguan",
-		"ÎÒÀ´½»¹ı¹ØÑ°±¦µÄÈÎÎñ/fullfilltask_chuangguan",
-		"ÎÒÖ»ÊÇÀ´¿´¿´./OnCancel");
+	Say("NhiÕp Thİ TrÇn: Tõ 19/06/2009 ®Õn 24:00 19/07/2009 ®¹i hiÖp cã thÓ tiÕp nhËn nhiÖm vô “Qu¸ quan tÇm b¶o” tõ ta.Sau khi nhËn nhiÖm vô, khi ®¹i hiÖp tham gia “V­ît ¶i cao cÊp” sÏ cã thÓ nhËn ®­îc tİn vËt khai m«n “Hïng T©m KiÕm”, “Hïng T©m KiÕm” nhËn ®­îc nµy  cã sè l­îng nhiÒu hay İt tïy thuéc vµo viÖc ®¹i hiÖp cã thÓ v­ît qua ®­îc ¶i 15, 20, 25 hay 29.", 3,
+		"NhËn nhiÖm vô “Qu¸ quan tÇm b¶o”/gettask_chuangguan",
+		"Ta ®Õn tr¶ nhiÖm vô “Qu¸ quan tÇm b¶o”/fullfilltask_chuangguan",
+		"Ta chØ ®Õn xem./OnCancel");
 end
 
 function gettask_chuangguan()
 	if (GetLevel() < 90) then
-		Say("Äôß±³¾: Äú²»·ûºÏ½ÓÊÜÈÎÎñµÄÌõ¼ş.", 0);
+		Say("NhiÕp Thİ TrÇn: §¹i hiÖp ch­a ®ñ ®iÒu kiÖn ®Ó nhËn nhiÖm vô nµy.", 0);
 		return
 	end
 	
 	if (GetTask(tbBirthday0905.tbTask.tsk_toll_cg_state) == 1) then
-		Say("Äôß±³¾: ÄúÒÑ½ÓÊÜÁËÈÎÎñ.", 0);
+		Say("NhiÕp Thİ TrÇn: §¹i hiÖp ®· nhËn nhiÖm vô nµy råi.", 0);
 		return
 	end
 	
-	Say("Äôß±³¾: Ì«ºÃÁË, ×£Äú¹ı¹Ø³É¹¦.", 0);
+	Say("NhiÕp Thİ TrÇn: Tèt qu¸, chóc ®¹i hiÖp tham gia v­ît ¶i thµnh c«ng.", 0);
 	SetTask(tbBirthday0905.tbTask.tsk_toll_cg_state, 1);
 	SetTask(tbBirthday0905.tbTask.tsk_toll_cg_passcount, 0);
 end
@@ -31,13 +31,13 @@ function fullfilltask_chuangguan()
 	end
 	
 	if (CalcFreeItemCellCount() < 10) then
-		Say("Äôß±³¾: ÎªÁË±£Ö¤ÎïÆ·µÄ°²È«, ÇëÕûÀíºÃÄúµÄ±³°üÒÔ·À·Å²»ÏÂ(10¸ö¸ñ).", 0);
+		Say("NhiÕp Thİ TrÇn: §Ó b¶o ®¶m sù an toµn cho vËt phÈm, xin mêi h·y ®Ó hµnh trang thõa 10 « trèng.", 0);
 		return
 	end
 	
 	local nToll = GetTask(tbBirthday0905.tbTask.tsk_toll_cg_passcount);
 	if (nToll < 15) then
-		Say("Äôß±³¾: ÄúÃ»ÓĞÍê³ÉÈÎÎñÂğ?", 0);
+		Say("NhiÕp Thİ TrÇn: Ng­¬i kh«ng thÓ hoµn thµnh nhiÖm vô nµy µ?", 0);
 		return
 	end
 	
@@ -51,8 +51,8 @@ function fullfilltask_chuangguan()
 	else
 		nAwardCount = 1;
 	end
-	Say("Äôß±³¾: Ì«ºÃÁË, ®©ÕâÊÇÄúÓ¦µÃµÄ½±Àø!", 0);
-	Msg2Player(format("µÃµ½ %d ĞÛĞÄ½£.", nAwardCount));
+	Say("NhiÕp Thİ TrÇn: Tèt l¾m, ®©y lµ phÇn th­ëng xøng ®¸ng dµnh cho ®¹i hiÖp!", 0);
+	Msg2Player(format("NhËn ®­îc %d Hïng T©m KiÕm.", nAwardCount));
 	SetTask(tbBirthday0905.tbTask.tsk_toll_cg_state, 0);
 	SetTask(tbBirthday0905.tbTask.tsk_toll_cg_passcount, 0);
 	for i = 1, nAwardCount do

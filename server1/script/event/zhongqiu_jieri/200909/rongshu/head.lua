@@ -52,7 +52,7 @@ function tbZhongQiu200909:AddExploit(nCount)
 	TONG_ApplyAddTaskValue(nTongID, %tbTongTSK_Exploit[1], nCount);
 	TONG_ApplyAddTaskValue(nTongID, %tbTongTSK_Exploit[2], nCount);
 	TONG_ApplyAddTaskValue(nTongID, %tbTongTSK_Exploit[3], nCount);
-	Msg2Tong(nTongID, format("°ï»á %s »ñµÃ %d, Ä¿Ç°°ï»á%s %d", "×°ÊÎµã", nCount, "×°ÊÎµã", nOldCount1+ nCount))
+	Msg2Tong(nTongID, format("Bang héi %s t¨ng %d, hiÖn t¹i bang héi %s %d", "®iÓm trang trÝ", nCount, "®iÓm trang trÝ", nOldCount1+ nCount))
 	
 	
 	
@@ -80,7 +80,7 @@ function tbZhongQiu200909:IsTimeAct()
 			return 1	
 		end
 	end
-	Talk(1,"", format("Ä¿Ç°²»ÄÜ½»%s »ñµÃ %s.", "Ê÷Ö¦", "×°ÊÎµã"))
+	Talk(1,"", format("HiÖn t¹i kh«ng thÓ nép %s nhËn %s.", "nh¸nh c©y", "®iÓm trang trÝ"))
 end
 
 -- »ñµÃÄ¿Ç°±êÖ¾Öµ
@@ -102,23 +102,23 @@ function tbZhongQiu200909:GetAwardDailog()
 	local nWeek = tonumber(GetLocalDate("%w"))
 	local nTimeHM = tonumber(GetLocalDate("%H%M"))
 	if (2000 <= nTimeHM and nTimeHM <  2400 and ( nWeek == 5 or nWeek == 6 or nWeek == 0)) then
-		tinsert(tbOpt, {"ÁìÈ¡Ã¿´Î½±Àø", self.GetAward1, {self}})
+		tinsert(tbOpt, {"NhËn phÇn th­ëng mçi ®ît", self.GetAward1, {self}})
 	end
 	
 	if nWeek == 0 and (2000 <= nTimeHM and nTimeHM <  2400) then
-		tinsert(tbOpt, {"ÁìÈ¡ÖÜ½±Àø", self.GetAward2, {self}})
+		tinsert(tbOpt, {"NhËn phÇn th­ëng tuÇn", self.GetAward2, {self}})
 	end
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	if nDate == 20100124 and (2000 <= nTimeHM and nTimeHM <  2400) then
-		tinsert(tbOpt, {"ÁìÈ¡×îÖÕ½±Àø", self.GetAward3, {self}})
+		tinsert(tbOpt, {"NhËn phÇn th­ëng chung cuéc", self.GetAward3, {self}})
 	end
 	if getn(tbOpt) == 0 then
-		Talk(1, "", "Ä¿Ç°²»ÊÇÁì½±Ê±¼ä")
+		Talk(1, "", "HiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
 		return 
 	end
-	tinsert(tbOpt, {"½áÊø¶Ô»°"})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i"})
 	
-	CreateNewSayEx("´óÏÀÐèÒªÁìÈ¡ÄÄÖÖ½±Àø", tbOpt)
+	CreateNewSayEx("§¹i hiÖp cÇn nhËn lo¹i phÇn th­ëng nµo?", tbOpt)
 end
 
 function tbZhongQiu200909:TongInfo()
@@ -126,7 +126,7 @@ function tbZhongQiu200909:TongInfo()
 	if szTongName == nil or szTongName == "" then
 		return
 	end
-	local szMsg = format("Ã¿´Î½±Àø: %d<enter>Ã¿ÖÜ½±Àø: %d<enter> ×îÖÕ½±Àø%d",tbZhongQiu200909:GetTongExploit(1),tbZhongQiu200909:GetTongExploit(2),tbZhongQiu200909:GetTongExploit(3))
+	local szMsg = format("Thµnh tÝch mçi ®ît: %d<enter>Thµnh tÝch tuÇn: %d<enter> Thµnh tÝch chung %d",tbZhongQiu200909:GetTongExploit(1),tbZhongQiu200909:GetTongExploit(2),tbZhongQiu200909:GetTongExploit(3))
 	Say(szMsg, 0)
 end
 
@@ -153,7 +153,7 @@ function tbZhongQiu200909:GetAward1()
 	local nId = 1
 	local nRank = self:GetRank(nId)
 	
-	if not PlayerFunLib:CheckTask(2646, 22000, "Íæ¼ÒÖ»»ñµÃ22000000000´Ó3ÖÖ»î¶¯£ºÃ¿´Î£¬Ã¿ÖÜ£¬×îÖÕ", "<") then
+	if not PlayerFunLib:CheckTask(2646, 22000, "Ng­êi ch¬i chØ nhËn ®­îc 22000000000 tõ 3 lo¹i ho¹t ®éng ®ît, tuÇn, chung cuéc", "<") then
 	
 		return
 	end	
@@ -162,7 +162,7 @@ function tbZhongQiu200909:GetAward1()
 	local nGongdeCount = self:GetTongExploit(nId);
 	
 
-	if not PlayerFunLib:CheckTask(2648, nFlag, "´óÏÀÒÑÁì¸Ã½±ÁË.", "~=") then
+	if not PlayerFunLib:CheckTask(2648, nFlag, "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.", "~=") then
 		return
 	end	
 	
@@ -170,7 +170,7 @@ function tbZhongQiu200909:GetAward1()
 	local nJoinTongTime = GetJoinTongTime()
 	
 	if nJoinTongTime < 12*60 then
-		Talk(1, "", format("ÐèÒª½øÈë°ï»á%d ²ÅÄÜ»ñµÃ½±Àø.", 12))
+		Talk(1, "", format("CÇn ph¶i vµo bang %d giê míi cã thÓ nhËn ®­îc phÇn th­ëng nµy.", 12))
 		return 
 	end
 	local tbAward = 
@@ -191,7 +191,7 @@ function tbZhongQiu200909:GetAward1()
 			
 		PlayerFunLib:SetActivityTask(2648, nFlag)
 	else
-		Talk(1, "", " ²»·ûºÏ´Ë´ÎÁì½±Ìõ¼þ.")
+		Talk(1, "", " kh«ng phï hîp víi ®iÒu kiÖn nhËn th­ëng lÇn nµy.")
 		return
 	end	
 end
@@ -205,17 +205,17 @@ function tbZhongQiu200909:GetAward2()
 	local nId = 2
 	local nRank = self:GetRank(nId)
 	
-	if not PlayerFunLib:CheckTask(2646, 22000, "Íæ¼ÒÖ»»ñµÃ22000000000´Ó3ÖÖ»î¶¯£ºÃ¿´Î£¬Ã¿ÖÜ£¬×îºó", "<") then
+	if not PlayerFunLib:CheckTask(2646, 22000, "Ng­êi ch¬i chØ nhËn ®­îc 22000000000 tõ 3 lo¹i ho¹t ®éng ®ît, tuÇn, chung cuéc", "<") then
 		return
 	end	
 
-	if not PlayerFunLib:CheckTask(2649, tonumber(GetLocalDate("%W%Y")), "´óÏÀÒÑÁì¸Ã½±ÁË.", "~=") then
+	if not PlayerFunLib:CheckTask(2649, tonumber(GetLocalDate("%W%Y")), "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.", "~=") then
 		return
 	end	
 	local nJoinTongTime = GetJoinTongTime()
 	
 	if nJoinTongTime < 48*60 then
-		Talk(1, "", format("ÐèÒª½øÈë°ï»á %d ²ÅÄÜÁìÈ¡¸Ã½±.", 48))
+		Talk(1, "", format("CÇn ph¶i vµo bang %d giê míi cã thÓ nhËn ®­îc phÇn th­ëng nµy.", 48))
 		return 
 	end
 	local tbAward = 
@@ -231,7 +231,7 @@ function tbZhongQiu200909:GetAward2()
 		PlayerFunLib:AddTask(2646, floor(tbAward[nRank].nExp/1e6))
 		PlayerFunLib:SetActivityTask(2649, tonumber(GetLocalDate("%W%Y")))
 	else
-		Talk(1, "", " ²»·ûºÏ¸Ã´ÎÁì½±Ìõ¼þ.")
+		Talk(1, "", " kh«ng phï hîp víi ®iÒu kiÖn nhËn th­ëng lÇn nµy.")
 		return
 	end	
 end
@@ -245,17 +245,17 @@ function tbZhongQiu200909:GetAward3()
 	local nId = 3
 	local nRank = self:GetRank(nId)
 	
-	if not PlayerFunLib:CheckTask(2646, 22000, "Íæ¼ÒÖ»»ñµÃ22000000000 ´Ó3ÖÖ»î¶¯£ºÃ¿´Î£¬Ã¿ÖÜ£¬×îºó", "<") then
+	if not PlayerFunLib:CheckTask(2646, 22000, "Ng­êi ch¬i chØ nhËn ®­îc 22000000000 tõ 3 lo¹i ho¹t ®éng ®ît, tuÇn, chung cuéc", "<") then
 		return
 	end	
 
-	if not PlayerFunLib:CheckTask(2650, 0, "´óÏÀÒÑÁì¸Ã½±ÁË.", "==") then
+	if not PlayerFunLib:CheckTask(2650, 0, "§¹i hiÖp ®· nhËn phÇn th­ëng nµy råi.", "==") then
 		return
 	end	
 	local nJoinTongTime = GetJoinTongTime()
 	
 	if nJoinTongTime < 24*60*7 then
-		Talk(1, "", format("ÐèÒª½øÈë°ï»á %d ²ÅÄÜÁìÈ¡¸Ã½±.", 24*7))
+		Talk(1, "", format("CÇn ph¶i vµo bang %d giê míi cã thÓ nhËn ®­îc phÇn th­ëng nµy.", 24*7))
 		return 
 	end
 	local tbAward = 
@@ -271,7 +271,7 @@ function tbZhongQiu200909:GetAward3()
 		PlayerFunLib:AddTask(2646, floor(tbAward[nRank].nExp/1e6))
 		PlayerFunLib:SetActivityTask(2650, 1)
 	else
-		Talk(1, "", " ²»·ûºÏ¸Ã´ÎÁì½±Ìõ¼þ.")
+		Talk(1, "", " kh«ng phï hîp víi ®iÒu kiÖn nhËn th­ëng lÇn nµy.")
 		return
 	end	
 end
@@ -281,14 +281,14 @@ end
 function tbZhongQiu200909:FlyToTree()
 	local tbPos = 
 	{
-		{121,226,275, "ÁúÃÅÕó"},
-		{100,183,203, "ÖïÏÉÕò"},
-		{101,171,198, "µ¾Ïã´å"},
-		{174,218,192, "ÁúÈª´å"},
-		{53, 220,200, "°ÍÁêÏØ"},
-		{20, 432,359, "½­ÐÂ´å"},
-		{153,232,180, "Ê¯¹ÄÕò"},
-		{99, 189,223, "ÓÀÀÖÕò"},
+		{121,226,275, "Long M«n trÊn"},
+		{100,183,203, "Chu Tiªn trÊn"},
+		{101,171,198, "§¹o H­¬ng th«n"},
+		{174,218,192, "Long TuyÒn th«n"},
+		{53, 220,200, "Ba L¨ng huyÖn"},
+		{20, 432,359, "Giang T©n Th«n"},
+		{153,232,180, "Th¹ch Cæ trÊn"},
+		{99, 189,223, "VÜnh L¹c trÊn"},
 	}
 	local tbOpt = {}
 	for i=1, getn(tbPos) do 
@@ -296,8 +296,8 @@ function tbZhongQiu200909:FlyToTree()
 		tinsert(tbOpt, format("%s(%d,%d)/#tbZhongQiu200909:Fly(%d,%d,%d)", tb[4],tb[2],tb[3], tb[1],tb[2] * 8 ,tb[3] * 16))
 		
 	end
-	tinsert(tbOpt, "·ÅÆú/OnCancel")
-	Say("Xa phu: ´óÏÀÏëÈ¥ÄÄÀï£¿", getn(tbOpt), tbOpt)
+	tinsert(tbOpt, "Hñy bá /OnCancel")
+	Say("Xa phu: §¹i hiÖp muèn ®i n¬i ®©u?", getn(tbOpt), tbOpt)
 end
 function tbZhongQiu200909:Fly(n,x,y)
 	NewWorld(n,x,y)

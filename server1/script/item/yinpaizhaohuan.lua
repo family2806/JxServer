@@ -8,15 +8,15 @@ function main( nItemIdx )
 	local TaskValue=GetTask(yinpai_Task);
 	local nDate = tonumber(GetLocalDate("%Y%m%d"));
 	if(nDate>20080331) then
-		Say("ÁîÅÆÒÑ¹ıÊ¹ÓÃÆÚ£¬Ê§È¥Ğ§Á¦!",0)
+		Say("LÖnh bµi ®· qu¸ h¹n sö dông, bŞ mÊt hiÖu lùc!",0)
 		return 0;
 	end
 	if( IsCharged() == 0) then
-		Say("ÕæÊÇÒÅº¶£¬Ö»ÓĞÒÑ³äÖµÍæ¼Ò²ÅÄÜÊ¹ÓÃ.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ sö dông.",0);
 		return 1; 
 	end
 	if( GetLevel() <90 ) then
-		Say("ÕæÊÇÒÅº¶£¬Ö»ÓĞ90¼¶ÒÔÉÏÍæ¼Ò²ÅÄÜÊ¹ÓÃ.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i cÊp 90 trë lªn míi cã thÓ sö dông.",0);
 		return 1;
 	end
 	nDate = tonumber(GetLocalDate("%d"));
@@ -29,7 +29,7 @@ function main( nItemIdx )
 			return 1;
 		end	
 	else
-		Say("½ñÌìÒÑÊ¹ÓÃ1¸öÒøÅÆÁË£¬µÈÃ÷Ìì²ÅÄÜ¼ÌĞøÊ¹ÓÃÁË!",0);
+		Say("H«m nay ®· sö dông 1 Ng©n Bµi råi! H·y ®îi ngµy mai míi cã thÓ tiÕp tôc sö dông!",0);
 		return 1;
 	end
 	

@@ -2,7 +2,7 @@
 
 function main(sel)
 
-Say("士兵：听说前方战事很紧，死了好多人呢！",0)
+Say("Chi課 trng ti襫 tuy課 r蕋 kh鑓 li謙, ngi ch誸 r蕋 nhi襲. ",0)
 
 end;
 

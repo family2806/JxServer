@@ -8,16 +8,16 @@ Include("\\script\\lib\\timerlist.lua")
 
 IL("NPCINFO")
 
-NPCID_YULONGHUFA 	= 1628	-- îÚÁú»¤·¨
-NPCID_YULONGBOY		= 1629	-- îÚÁúÄĞµÜ×Ó
-NPCID_YULONGGIRL	= 1630	-- îÚÁúÅ®µÜ×Ó
-NPCID_DIALOGBOSS	= 1625	-- Áú¾ÅÌì£¨¶Ô»°£©
+NPCID_YULONGHUFA 	= 1628	-- Ngäc Long Hé Ph¸p
+NPCID_YULONGBOY		= 1629	-- Ngäc Long Nam §Ö Tö
+NPCID_YULONGGIRL	= 1630	-- Ngäc Long N÷ §Ö Tö
+NPCID_DIALOGBOSS	= 1625	-- Long Cöu Thiªn£¨¶Ô»°£©
 NPCID_CUP			= 1627	-- ¾Æ±­	
-NPCID_FIGHTBOSS		= 1657	-- Áú¾ÅÌì£¨Õ½¶·£©
-NPCID_FENGLINGLONG	= 1626	-- ·ïÁáçç
+NPCID_FIGHTBOSS		= 1657	-- Long Cöu Thiªn£¨Õ½¶·£©
+NPCID_FENGLINGLONG	= 1626	-- Ph­îng Lung Linh
 DEATH_YULONGDIZI	= 1
 
-STR_YULONGHUFA = "ÏëÒª¼û×¯Ö÷ÒªÏÈ¹ıÁËÎÒÕâ¹ØÔÙËµ£¬¶¯ÊÖ°É!"
+STR_YULONGHUFA = "Muèn gÆp ®­îc Trang Chñ b¾t buéc ph¶i b­íc qua cöa cña ta tr­íc, xin h·y ra tay ®i!"
 
 pTask = Task:New(49)
 
@@ -26,14 +26,14 @@ end
 
 
 -- µÚÒ»²½
--- ¿ªÊ¼£º³öÏÖîÚÁú»¤·¨ºÍÄĞÅ®îÚÁúµÜ×Ó
+-- ¿ªÊ¼£º³öÏÖNgäc Long Hé Ph¸pºÍÄĞÅ®îÚÁúµÜ×Ó
 -- Íê³É£º»÷°ÜËùÓĞÄĞÅ®îÚÁúµÜ×Ó
 Step1 = Step:New()
 Step1.m_Yulongdizi = {}
 Step1.m_DiziCount = 0
 function Step1:Start(task)
 	local pos = task:GetPosition()
-	local index = DlgNpcManager:AddNpc("îÚÁú»¤·¨",
+	local index = DlgNpcManager:AddNpc("Ngäc Long Hé Ph¸p",
 		NPCID_YULONGHUFA,
 		task:GetMapId(),
 		pos.yulonghufa.x,
@@ -87,11 +87,11 @@ function Step1:AddYulongdizi(pts, name, npcid)
 end
 
 function Step1:Say(player)
-	player:Say("ÏëÒª¼û×¯Ö÷ÒªÏÈ¹ıÁËÎÒÕâ¹ØÔÙËµ£¬¶¯ÊÖ°É!")
+	player:Say("Muèn gÆp ®­îc Trang Chñ b¾t buéc ph¶i b­íc qua cöa cña ta tr­íc, xin h·y ra tay ®i!")
 	if (self.m_SayOnce == 0) then
 		local pos = self.m_Task:GetPosition()
-		self:AddYulongdizi(pos.yulongboys, "îÚÁúÄĞµÜ×Ó", NPCID_YULONGBOY)
-		self:AddYulongdizi(pos.yulonggirls, "îÚÁúÅ®µÜ×Ó", NPCID_YULONGGIRL)
+		self:AddYulongdizi(pos.yulongboys, "Ngäc Long Nam §Ö Tö", NPCID_YULONGBOY)
+		self:AddYulongdizi(pos.yulonggirls, "Ngäc Long N÷ §Ö Tö", NPCID_YULONGGIRL)
 		self.m_SayOnce = 1
 	end
 end
@@ -105,18 +105,18 @@ function Step1:OnDeath(nKilled, pPlayer, nParam)
 end
 
 -- µÚ¶ş²½
--- ¿ªÊ¼£ºÁú¾ÅÌì±äÎªÕ½¶·NPC£¨ÁúÀÏ»¢¼¼ÄÜ£©
+-- ¿ªÊ¼£ºLong Cöu Thiªn±äÎªÕ½¶·NPC£¨ÁúÀÏ»¢¼¼ÄÜ£©
 -- Íê³É£º´òµ½µÍÓÚ50%ÉúÃü
 
 Step2 = Step:New()
 function Step2:Start(task)
 	local mapid = task:GetMapId()
 	local pos = task:GetPosition()
-	local boss = FightNpcManager:AddNpc("Áú¾ÅÌì", NPCID_DIALOGBOSS, mapid, pos.boss.x, pos.boss.y, self, nil, 1, 1)
+	local boss = FightNpcManager:AddNpc("Long Cöu Thiªn", NPCID_DIALOGBOSS, mapid, pos.boss.x, pos.boss.y, self, nil, 1, 1)
 	if (boss > 0) then
 		local nNpcIndex = FightNpcManager:GetNpcIndex(boss)
 		SyncNpc(nNpcIndex)
-		NpcChat(nNpcIndex, "<color=yellow>¸÷Î»ÕæÊÇÈËÖĞÁú·ï£¬¿ÉÒÔÔ½¹ıÖØÖØÎ£ÏÕµ½ÕâÀ´¼ûÎÒ¡£ÏÖÔÚ¸÷Î»Ãæ¶Ô×Å×îºóµÄÊÔÁ¶£¬Ö»Òª´ò°ÜÎÒºÍÎÒÆŞ×Ó¾Í¿ÉÒÔµÃµ½×î¼«Æ·µÄ×°±¸ºÍ×î¸ß¹óµÄÍşÃû. <color>")
+		NpcChat(nNpcIndex, "<color=yellow>C¸c vŞ qu¶ lµ nh©n trung long ph­îng, qu¶ nhiªn cã thÓ v­ît qua ®­îc trïng trïng nguy hiÓm ®Ó ®Õn ®©y gÆp ta. HiÖn t¹i c¸c vŞ ®ang ph¶I ®èi mÆt víi thİ luyÖn cuèi cïng, chØ cÇn ®¸nh b¹i ta vµ Thª Tö cña ta, th× cã thÓ nhËn ®­îc trang bŞ cùc phÈm nhÊt vµ cã uy danh cao quı nhÊt. <color>")
 		self.m_Boss = boss
 		self.m_Timer = TimerList:AddTimer(self, 9)
 	end
@@ -167,7 +167,7 @@ function Step2:Clear()
 end
 
 -- µÚÈı²½
--- ¿ªÊ¼£º³öÏÖ3¸öÒ»Ä£Ò»ÑùµÄÁú¾ÅÌì£¨ÁúÀÏ»¢¼¼ÄÜ£©£¬ÆäÖĞËæ»úÒ»¸öÊÇÕæµÄ
+-- ¿ªÊ¼£º³öÏÖ3¸öÒ»Ä£Ò»ÑùµÄLong Cöu Thiªn£¨ÁúÀÏ»¢¼¼ÄÜ£©£¬ÆäÖĞËæ»úÒ»¸öÊÇÕæµÄ
 -- Íê³É£º°ÑÕæµÄ´òµ½40%µÄÑªÊ±²Å»á½øÈëÏÂÒ»²½
 Step3 = Step:New()
 
@@ -177,7 +177,7 @@ function Step3:Start(task)
 	local tb = {}
 	self.m_BossIndex = random(1, 3)
 	for i = 1, 3 do
-		local idx = self:AddBoss("Áú¾ÅÌì", mapid, pos.bosses[i], i)
+		local idx = self:AddBoss("Long Cöu Thiªn", mapid, pos.bosses[i], i)
 		tinsert(tb, idx)
 	end
 	self.m_Bosses = tb
@@ -243,7 +243,7 @@ function Step3:AddBoss(name, mapid, pt, param)
 	if (boss > 0) then
 		local nNpcIndex = FightNpcManager:GetNpcIndex(boss)
 		SyncNpc(nNpcIndex)
-		NpcChat(nNpcIndex, "<color=yellow>¿´À´ÎÒ°ÜÔÚ¸÷Î»ÊÖÏÂÁË£¬¿´ÎÒµÄ°Ù±äÄ§Éí! <color>")
+		NpcChat(nNpcIndex, "<color=yellow>Xem ra ta b¹i d­íi tay cña c¸c ng­¬i råi, h·y xem ' B¸ch BiÕn Ma Th©n' cña ta ®©y ! <color>")
 		return boss
 	else
 		return 0
@@ -251,26 +251,26 @@ function Step3:AddBoss(name, mapid, pt, param)
 end
 
 -- µÚËÄ²½
--- ¿ªÊ¼£ºÁú¾ÅÌì£¨¶Ô»°NPC£©Ëµ»°£¬·ïÁáçç³öÏÖ
+-- ¿ªÊ¼£ºLong Cöu Thiªn£¨¶Ô»°NPC£©Ëµ»°£¬Ph­îng Lung Linh³öÏÖ
 -- Íê³É£ºÏÔÊ¾Íê¶Ô»°NÃëºó
 Step4 = Step:New()
 function Step4:Start(task)
 	local pos = task:GetPosition()
 	local mapid = task:GetMapId()
-	local boss = FightNpcManager:AddNpc("Áú¾ÅÌì", NPCID_DIALOGBOSS, mapid, pos.boss.x, pos.boss.y, self, nil, 1, 1)
+	local boss = FightNpcManager:AddNpc("Long Cöu Thiªn", NPCID_DIALOGBOSS, mapid, pos.boss.x, pos.boss.y, self, nil, 1, 1)
 	if (boss > 0) then
 		local nNpcIndex = FightNpcManager:GetNpcIndex(boss)
 		SetNpcKind(nNpcIndex, 3)
 		SyncNpc(nNpcIndex)
 		local delay = 4
 		local seconds = 0
-		NpcChat(nNpcIndex, "<color=yellow>¸÷Î»ÕæÊÇ°ÙÄêÒ»ÓöµÄ¸ßÊÖ£¬²»Â÷¸÷Î»£¬îÚÁúÉ½×¯µÄÖ÷ÈËÕıÊÇ´ó½ğ¹úÍõ£¬ËÎ³¯ÃğÍöÊÇ³ÙÔçµÄÊÂÁË£¬¸÷Î»ºÎ±ØÒª×öÕâÑùÎŞÒæµÄÎşÉü£¬»¹²»Èç¼ÓÈë±¾É½×¯Öú´ó½ğÒ»±ÛÖ®Á¦£¬´óÒµÍê³ÉºóÈÙ»ª¸»¹ó¶¼ÊÇ¸÷Î»µÄ¡£²»Öª¸÷Î»ÒâÏÂÈçºÎ£¿<color>")
+		NpcChat(nNpcIndex, "<color=yellow>C¸c vŞ qu¶ lµ nh÷ng cao thñ mµ tr¨m n¨m ta míi ®­îc gÆp mét lÇn, qu¶ nhiªn ®· ®¸nh b¹i ®­îc B¸ch BiÕn Ma Th©n cña ta. Kh«ng giÊu g× c¸c vŞ, Chñ nh©n ®İch thùc cña Ngäc Long S¬n Trang chİnh lµ Quèc V­¬ng cña §¹i Kim, TriÒu Tèngsím muén còng bŞ diÖt vong chØ lµ chuyÖn cña thêi gian mµ th«i, c¸c vŞ hµ tÊt ph¶i hy sinh mét c¸ch v« İch nh­ vËy chi b»ng gia nhËp vµo Bæn S¬n Trang mµ gióp søc phß trî §¹i Kim, sau nµy thµnh ®¹i nghiÖp th× tiÒn tµi phó quı sÏ thuéc vÒ c¸c vŞ! Kh«ng biÕt ı cña c¸c vŞ thÕ nµo? <color>")
 		seconds = seconds + delay
-		NpcChat(nNpcIndex, "<color=yellow>ÄãÃÇÒªÊÇÒ»Ö±ÕâÃ´¹ÌÖ´µÄ»°¾Í²»Òª¹ÖÎÒ²»ÁôÇéÃæÁË£¬ÄãÃÇÒÑ¾­±»ÎÒÏÂÁË½ğ²Ï¾øÃü¹Æ£¬Ö»ÒªÎÒÆŞ×ÓÕĞÕĞÊÖ¹Æ¶¾¾Í»á·¢×÷£¬µ½Ê±ºòÇóÉú²»µÃÇóËÀÎŞÃÅ£¬¹ş¹ş! <color>", seconds)
+		NpcChat(nNpcIndex, "<color=yellow>NÕu nh­ c¸c vŞ vÉn cøng ®Çu cè chÊp nh­ vËy, th× ®õng cã tr¸ch ta h¹ thñ kh«ng l­u t×nh, c¸c ng­¬i ®· bŞ ta h¹ mét ®éc cæ gäi lµ Kim Tµm TuyÖt MÖnh Cæ, chØ cÇn Thª Tö cña ta vÉy tay mét c¸i th× Cæ §éc sÏ ph¸t ra, ®Õn lóc ®ã c¸c ng­¬i sèng kh«ng b»ng sèng chÕt kh«ng b»ng chÕt, ha ha ha! <color>", seconds)
 		seconds = seconds + delay
-		NpcChat(nNpcIndex, "<color=yellow>Ááçç£¬¶¯ÊÖ°É£¬ÈÃÕâÈºÀÏÍç¹Ì³¢³¢ÎÒµÄÀ÷º¦! <color>", seconds)
+		NpcChat(nNpcIndex, "<color=yellow>Linh Lung, ra tay ®i, h·y cho c¸i bän ng­êi ngoan cè nµy nÕm mïi lîi h¹i cña ta! <color>", seconds)
 		seconds = seconds + delay
-		NpcChat(nNpcIndex, "<color=yellow>Ááçç£¡Ááçç£¡ÈËÄØÔõÃ´»¹²»¶¯ÊÖ£¿¿ì¼¤·¢ËûÃÇµÄ¹Æ¶¾£¬ÎÒÊÜ²»ÁËËûÃÇÁË! <color>", seconds)
+		NpcChat(nNpcIndex, "<color=yellow>Lung Linh, Lung Linh, ng­¬i ®©u råi cßn kh«ng ra tay ®i? nhanh ph¸t ®éng Cæ §éc cña ng­¬i ®i, ta chŞu kh«ng nçi bän ng­êi nµy n÷a råi! <color>", seconds)
 		self.m_Timer = TimerList:AddTimer(self, (seconds + 1) * 18, 1)
 		self.m_Boss = boss
 		self.m_Task = task
@@ -304,21 +304,21 @@ end
 
 function Step4:OnTime(id)
 	if (id == 1) then
-		local girl = DlgNpcManager:AddNpc("·ïÁáçç", NPCID_FENGLINGLONG, self.m_MapId, self.m_Pos.fenglinglong.x, self.m_Pos.fenglinglong.y)
+		local girl = DlgNpcManager:AddNpc("Ph­îng Lung Linh", NPCID_FENGLINGLONG, self.m_MapId, self.m_Pos.fenglinglong.x, self.m_Pos.fenglinglong.y)
 		if (girl > 0) then
 			self.m_Girl = girl
 			local nGirlIndex = DlgNpcManager:GetNpcIndex(girl)
 			SetNpcKind(nGirlIndex, 3)
 			SyncNpc(nGirlIndex)
-			NpcChat(nGirlIndex, "<color=yellow>Ìì¸ç£¬ÄãÔõÃ´»¹²»ĞÑÎò£¿¶àÉÙÄêÁËÄã¶¼ÓÃÄÇĞ©ºÃ×°±¸ÓÕ»ó½­ºşºÃºº£¬ÓÃ½£¼ÒÎÅÃûÌìÏÂ£¬É±º¦ÁË²»Öª¶àÉÙÎäÁÖ¸ßÊÖ£¬ÄãÎªÊ²Ã´ÒªÒ»±²×Ó×ö½ğÈËµÄ×ß¹·ÄØ£¿½ñÌìÎÒ²»ÄÜÈÃÄã¼ÌĞøº¦ÈËÁË¡£<color>")
+			NpcChat(nGirlIndex, "<color=yellow>Thiªn Ca, t¹i sao huynh cßn ch­a tØnh ngé l¹i, bao n¨m nay huynh lu«n lÊy nh÷ng trang bŞ tèt ®Ó dô dç c¸c h·o h¸n giang hå, lÊy KiÕm Gia ®Ó lµm vang danh thiªn h¹, giÕt h¹i kh«ng biÕt bao nhiªu vâ l©m cao thñ, v× sao huynh vÉn cø suèt ®êi lµm chã dÉn ®­êng cho bän ng­êi Kim nh­ vËy? H«m nay muéi kh«ng thÓ tiÕp tôc ®Ó cho huynh ph¶i téi l¹i chång lªn téi ®­îc n÷a<color>")
 			local nBoyIndex = FightNpcManager:GetNpcIndex(self.m_Boss)
-			NpcChat(nBoyIndex, "<color=yellow>Ááçç£¡Äã£¡Äã£¡ÚÀ£¡<color>")
+			NpcChat(nBoyIndex, "<color=yellow>Linh Lung, ng­¬i, ng­¬i ! ……<color>")
 		end
 		self.m_Timer = TimerList:AddTimer(self, 2 * 18, 2)
 		return 0
 	elseif (id == 2) then
 		FightNpcManager:DelNpc(self.m_Boss)
-		self.m_Boss = FightNpcManager:AddNpc("Áú¾ÅÌì", NPCID_FIGHTBOSS, self.m_MapId, self.m_Pos.boss.x, self.m_Pos.boss.y, self, nil, 1, 1)
+		self.m_Boss = FightNpcManager:AddNpc("Long Cöu Thiªn", NPCID_FIGHTBOSS, self.m_MapId, self.m_Pos.boss.x, self.m_Pos.boss.y, self, nil, 1, 1)
 		self.m_Timer = TimerList:AddTimer(self, 18 * 5, 3)
 		return 0
 	elseif (id == 3) then

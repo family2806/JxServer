@@ -5,24 +5,24 @@ function main()
 	UTask_cy = GetTask(6)
 	Uworld36 = GetByte(GetTask(36),2)
 	if (Uworld36 == 10) then		--ÈëÃÅÈÎÎñ½øĞĞÖĞ
-		Talk(1,"U36_enter","½øÈëÕ½³¡ºó£¬»ñµÃÇé»¨£¬µ½<color=Red>»¨¿ı³ö¿Ú<color>½»¸øÊ¦½ã¾ÍĞĞ.")
+		Talk(1,"U36_enter","Sau khi vµo trËn, nhËn ®­îc Hoa T×nh, ®Õn <color=Red>lèi ra cña Hoa Kh«i<color> giao cho S­ tû lµ ®­îc.")
 	elseif (Uworld36 == 0) and (GetLevel() >=10) and (GetFaction() ~= "cuiyan") then		--ÈëÃÅÈÎÎñ
-		Say("¸ù¾İÃÅ¹æ£¬Ïë³ÉÎª¼ÇÃûµÜ×Ó£¬ĞèÒª¹ı<color=Red>»¨¿ıÕó<color>, Æ¾½èÓÂ¸ÒºÍÖÇ»Û»ñµÃ<color=Green>Çé»¨<color>, ÄãÏëÊÔÊÔÂğ?",2,"¿ÉÒÔ£¬ÈÃÎÒÊÔÊÔ/enroll_yes","²»£¬ÎÒÖ»ÊÇÀ´²Î¹Û. /no")
+		Say("Theo m«n quy, muèn trë thµnh ®Ö tö kı danh ph¶i qua <color=Red>Hoa Kh«i trËn<color>, dùa vµo sù dòng c¶m vµ tµi trİ lÊy ®­îc <color=Green>Hoa T×nh<color>, ng­¬i cã muèn thö kh«ng?",2,"§­îc, ®Ó ta thö /enroll_yes","Kh«ng, ta chØ ®Õn tham quan. /no")
 	elseif (GetFaction() == "cuiyan") then			-- Í¬ÃÅ
-		Say("Ê¦ÃÃÏëµ½»¨¿ıÕóÁ·¹¦°¡?",2,"¶Ô£¬ÇëÊ¦½ãÈÃÃÃÃÃ½øÈ¥/U36_enter","ÎÒÖ»ÊÇÀ´¿´ÍûÊ¦½ã/no")
+		Say("S­ muéi muèn ®Õn Hoa Kh«i trËn luyÖn c«ng µ?",2,"§óng vËy, xin tû h·y ®Ó cho muéi vµo /U36_enter","Ta chØ ®Õn th¨m tû /no")
 	elseif (UTask_cy == 70*256) then
-		Talk(1,"","Ê¦½ã´Ë´Î»ØÀ´ÊÇ¿´Íû¸÷Î»Ê¦ÃÃ£¬ÓĞÊ²Ã´±ä»¯Âğ?")
+		Talk(1,"","S­ tû lÇn nµy vÒ lµ ®Ó th¨m viÕng c¸c tû muéi, cã g× thay ®æi kh«ng?")
 	else
-		Talk(1,"","»¶Ó­×ğ¿Í¼İÁÙ£¬Çë´Ó»¨¿ıÕóÅÔ±ßµÄÂ·½øÈ¥.")
+		Talk(1,"","Hoan nghªnh t«n kh¸ch gi¸ l©m, xin ®i vµo con ®­êng bªn c¹nh Hoa Kh«i trËn.")
 	end
 end;
 
 function enroll_yes()
-	Talk(1, "U36_enter", "ÕâÀïÊÇ <color=Red>Èë¿Ú<color>. ½øÈëÕóÄÃµ½Çé»¨½»¸øÊ¦½ã¾ÍĞĞ.")
+	Talk(1, "U36_enter", "ë ®©y lµ <color=Red>cæng vµo<color>. Sau khi vµo trËn lÊy ®­îc Hoa T×nh ®Õn Hoa Kh«i trËn giao cho S­ tû lµ ®­îc.")
 	Uworld36 = SetByte(GetTask(36),2,10)
 	SetTask(36,Uworld36)
-	AddNote("½Ó»¨¿ıÈÎÎñ£¬»ñµÃÇé»¨£¬´ø»ØÈ¥¸øÔÚ³ö¿ÚµÄ´äÑÌÃÅµÜ×Ó")
-	Msg2Player("½Ó»¨¿ıÈÎÎñ£¬»ñµÃÇé»¨£¬´ø»ØÈ¥¸øÔÚ³ö¿ÚµÄ´äÑÌÃÅµÜ×Ó")
+	AddNote("TiÕp nhËn nhiÖm vô Hoa Kh«i trËn tiÕn vµo Hoa Kh«i trËn vµ lÊy ®­îc Hoa T×nh mang giao cho ®Ö tö Thóy Yªn m«n ë lèi ra ")
+	Msg2Player("TiÕp nhËn nhiÖm vô Hoa Kh«i trËn tiÕn vµo Hoa Kh«i trËn vµ lÊy ®­îc Hoa T×nh mang giao cho ®Ö tö Thóy Yªn m«n ë lèi ra ")
 end;
 
 function U36_enter()

@@ -1,14 +1,14 @@
 CP_MAPTAB = {
-				{396, 397, "ÉÙÁÖ "},
-				{398, 399, "ÌìÍõ"},
-				{400, 401, "ÌÆÃÅ"},
-			 	{402, 403, "Îå¶¾"},
-			 	{404, 405, "¶ëÃ¼"},
-			 	{406, 407, "´äÑÌ"},
-			 	{408, 409, "Ø¤°ï"},
-			 	{410, 411, "ÌìÈÌ"},
-			 	{412, 413, "Îäµ±"},
-			 	{414, 415, "À¥ÂØ"}
+				{396, 397, "ThiÕu L©m"},
+				{398, 399, "Thiªn V­¬ng"},
+				{400, 401, "§­êng M«n"},
+			 	{402, 403, "Ngò §éc"},
+			 	{404, 405, "Nga Mi"},
+			 	{406, 407, "Thóy Yªn"},
+			 	{408, 409, "C¸i Bang"},
+			 	{410, 411, "Thiªn NhÉn"},
+			 	{412, 413, "Vâ §ang"},
+			 	{414, 415, "C«n L«n"}
 			 }
 MISSIONID = 18;
 MS_STATE = 1; --ÈÎÎñÖÐ¼ÇÂ¼ÈÎÎñ×´Ì¬µÄ±äÁ¿ID
@@ -28,13 +28,13 @@ function CP_CheckOpenTime()
 				mapid = CP_MAPTAB[i][1]
 				mapindex = SubWorldID2Idx(mapid)
 				if (mapindex < 0) then
-					print("ANNOUNCE: ÎäÁÖ´ó»á»á³¡"..CP_MAPTAB[i][3].."²»ÔÚ·þÎñÆ÷ÉÏ, ", mapid);
+					print("ANNOUNCE: Héi tr­êng §¹i héi vâ l©m"..CP_MAPTAB[i][3].."Kh«ng cã trªn sever, ", mapid);
 				else
 					SubWorld = mapindex
 					if(GetMissionV(MS_STATE) == 0) then
 						OpenMission(MISSIONID)
-						str = date( "%mÔÂ%dÈÕ" ).."ÊôÓÚÎäÁÖ"..CP_MAPTAB[ i ][ 3 ].."ÎäÁÖÐÂÐãÁªÈüÒÑ¾­¿ªÊ¼£¬Íæ¼ÒÏë±¨Ãû²Î¼Ó±ÈÈüÇëµ½ÁÙ°²ÓëÎäÁÖÐÂÐãÁªÈü¹ÙÔ±(182, 202)´¦±¨Ãû¡£±¨ÃûÌõ¼þ£ºµÈ¼¶´Ó50µ½89¼¶£¬²Î¼Ó±ÈÈü´ÎÊýÉÙÓÚ40´Î."
-			WriteLog(date( "%YÄê%mÔÂ%dÈÕ%HÊ±M·Ö:" ).."ÎäÁÖ "..CP_MAPTAB[ i ][ 3 ].."Ô¤Ñ¡ÃÅÅÉ±ÈÈüÒÑ¾­¿ªÊ¼!" )
+						str = date( "%mth¸ng%dngµy" ).."cña Vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt ®· b¾t ®Çu, ng­êi ch¬i muèn tham gia h·y ®Õn h·y ®Õn L©m An gÆp Sø gi¶ kiÖt xuÊt (203, 202) b¸o danh. §iÒu kiÖn b¸o danh: §¼ng cÊp tõ cÊp 50 ®Õn cÊp 89, sè trËn thi ®Êu Ýt h¬n 40."
+			WriteLog(date( "%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:" ).."§¹i héi vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!" )
 						AddGlobalCountNews(str, 1)
 						SetMissionV(MS_STATE, 1)
 						SetMissionV(MS_ROUND, 1)						

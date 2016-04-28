@@ -6,17 +6,17 @@ function OnDeath()
 	if (UTask_wu == 10*256+10) then		-- ÔÚÈÎÎñÖĞ£¬°´»úÂÊ´ò³ö£¨È¡Ïû»úÂÊ£©¡£
 		AddEventItem(86)			-- ÎïÆ·Ö©Öë
 		if (GetItemCount(86) >= 10) then
-			Msg2Player("Äã×½µ½ÁË10Ö»¶¾Ö©Öë")
-			AddNote("Äã×½µ½ÁË10Ö»¶¾Ö©Öë")
+			Msg2Player("B¹n ®· b¾t ®­îc 10 con nhÖn ®éc ")
+			AddNote("B¹n ®· b¾t ®­îc 10 con nhÖn ®éc ")
 		else
-			Msg2Player("×½µ½ÁË10Ö»¶¾Ö©Öë")
+			Msg2Player("B¾t ®­îc mét con nhÖn ®éc ")
 		end
 	elseif (GetTask(75) == 10) and (GetTask(52) == 10) and (random(0,99) < 75) then		-- È­ÇãÌìÏÂÈÎÎñ£¬°´»úÂÊµÃµ½
 		AddEventItem(86)
 		if (GetItemCount(86) >= 7) then
-			Msg2Player("×½µ½ÁË7Ö»¶¾Ö©Öë,¿ÉÒÔ»ØÈ¥ÁË£¬·îÃü")
+			Msg2Player("§· b¾t ®­îc 7 con nhÖn ®éc, ®· cã thÓ quay vÒ, phông m¹ng ")
 		else
-			Msg2Player("×¥µ½Ò»Ö»¶¾Ö©Öë ")
+			Msg2Player("B¾t ®­îc mét con nhÖn ®éc ")
 		end
 	end
 end;

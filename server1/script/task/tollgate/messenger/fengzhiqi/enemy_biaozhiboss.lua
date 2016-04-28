@@ -46,19 +46,19 @@ function messenger_gogogo()
 		if ( messenger_choice == 7) then  --Èç¹ûÃ»ÓĞµÃµ½Õâ¸ö¸£Àû£¬ÔòÔö¼Ó»ı·Ö20·ÖÖÓ
 			if ( Uworld1213 == 0 ) then
 				nt_setTask(1213,messenger_nowtime)
-				Msg2Player("ÔÚ20·ÖÖÓÉ±¹ÖÊ±£¬Äã»ñµÃË«±¶¾­ÑéÖµ½±Àø!")
+				Msg2Player("B¹n nhËn ®­îc phÇn th­ëng t¨ng gÊp ®«i ®iÓm kinh nghiÖm khi giÕt qu¸i trong 20 phót!")
 				AddSkillState( 548, 1, 1, 21600)
 			else
-				Msg2Player("ÄãÒÑ½Ó´¥×ø±ê®é")
+				Msg2Player("B¹n ®· tiÕp xóc ®­îc täa ®é")
 			end
 		elseif ( messenger_choice == 11 ) then  --Ôö¼Ó»ı·Ö10 
 			nt_setTask(1205,Uworld1205+20)
 			tongaward_message(20);	--by Ğ¡É½
-			Msg2Player("§iÄãµÄĞÅÊ¹ÈÎÎñ»ı·ÖÔö¼Ó20µã!")
+			Msg2Player("§iÓm tİch lòy trong nhiÖm vô Tİn Sø cña b¹n t¨ng lªn 20 ®iÓm!")
 		elseif ( messenger_choice == 13 ) then  --¼õÉÙ»ı·Ö10
 			if ( Uworld1205 >= 10 ) then 
 				nt_setTask(1205,Uworld1205-10)
-				Msg2Player("ÄãµÄĞÅÊ¹ÈÎÎñ»ı·Ö¼õÉÙ10µã!")
+				Msg2Player("§iÓm tİch lòy trong nhiÖm vô Tİn Sø cña b¹n gi¶m ®i 10 ®iÓm!")
 			end
 		elseif ( messenger_choice == 16 ) then  --Èç¹ûÃ»ÓĞ´¥·¢¹ı¶¨µã´ò¹ÖµÄÊÂ¼ş£¬´¥·¢ÔÚÄ³µã´òÌØÊâ¹ÖÎïµÄÊÂ¼ş,
 			local lucky_dingdian = random(1,3)  --ÔÙ´Î¿ØÖÆ¼¸ÂÊÎª1/3
@@ -68,15 +68,15 @@ function messenger_gogogo()
 					Uworld1214 = random(1,15)                                   
 					nt_setTask(1214,Uworld1214)									--¼ÇÂ¼ÔÚkillfly±íÖĞÈ¡µÃµÄĞĞÊı
 					if ( SubWorldIdx2ID( nMapIndex ) == 387 ) then
-						Msg2Player("ÔÚµ÷²éÁôÏÂµÄ±ê¼ÇÊ±£¬ÄãÕÒµ½Ò»·âĞÅ¡£ĞÅÖĞ¸æËßÄãÈ¥"..killfly[Uworld1214][1]..","..killfly[Uworld1214][2].."¸ÃµØ½Ğ×ö "..killfly[Uworld1214][3].."ÎïÆ·£¡ËûÕıÄÃ×ÅÊ²Ã´±¦±´?")
+						Msg2Player("Trong lóc ®iÒu tra nh÷ng kİ hiÖu ®Ó l¹i b¹n t×m ®­îc 1 bøc th­! Trong th­ b¶o b¹n ®i"..killfly[Uworld1214][1]..","..killfly[Uworld1214][2].."N¬i nµy gäi lµ "..killfly[Uworld1214][3].."VËt phÈm! H¾n ®ang gi÷ b¶o bèi g×?")
 					elseif ( SubWorldIdx2ID( nMapIndex ) == 388 ) then
-						Msg2Player("ÔÚµ÷²éÁôÏÂµÄ±ê¼ÇÊ±£¬ÄãÕÒµ½Ò»·âĞÅ¡£ĞÅÖĞ¸æËßÄãÈ¥"..killfly2[Uworld1214][1]..","..killfly2[Uworld1214][2].."¸ÃµØ½Ğ×ö"..killfly2[Uworld1214][3].."ÎïÆ·£¡ËûÕıÄÃ×ÅÊ²Ã´±¦±´?")
+						Msg2Player("Trong lóc ®iÒu tra nh÷ng kİ hiÖu ®Ó l¹i b¹n t×m ®­îc 1 bøc th­! Trong th­ b¶o b¹n ®i"..killfly2[Uworld1214][1]..","..killfly2[Uworld1214][2].."N¬i nµy gäi lµ "..killfly2[Uworld1214][3].."VËt phÈm! H¾n ®ang gi÷ b¶o bèi g×?")
 					elseif ( SubWorldIdx2ID( nMapIndex ) == 389 ) then
-						Msg2Player("ÔÚµ÷²éÁôÏÂµÄ±ê¼ÇÊ±£¬ÄãÕÒµ½Ò»·âĞÅ¡£ĞÅÖĞ¸æËßÄãÈ¥"..killfly3[Uworld1214][1]..","..killfly3[Uworld1214][2].."¸ÃµØ½Ğ×ö"..killfly3[Uworld1214][3].."ÎïÆ·£¡ËûÕıÄÃ×ÅÊ²Ã´±¦±´?")
+						Msg2Player("Trong lóc ®iÒu tra nh÷ng kİ hiÖu ®Ó l¹i b¹n t×m ®­îc 1 bøc th­! Trong th­ b¶o b¹n ®i"..killfly3[Uworld1214][1]..","..killfly3[Uworld1214][2].."N¬i nµy gäi lµ "..killfly3[Uworld1214][3].."VËt phÈm! H¾n ®ang gi÷ b¶o bèi g×?")
 					end
 				end
 			else
-				Msg2Player("ÄãÒÑ½Ó´¥×ø±ê")
+				Msg2Player("B¹n ®· tiÕp xóc ®­îc täa ®é")
 			end
 			
 		elseif ( messenger_choice == 19 ) then 	--ÔÚ¸ÃbossÉí±ßÔö¼Óif ( messenger_npcindex == killflyboss[i][10]) ¸önpc
@@ -87,7 +87,7 @@ function messenger_gogogo()
 					SetGlbValue(811,GetGlbValue(811)+3)
 					nt_setTask(1215,10)
 					local messenger_npcindex = GetNpcParam(Npcindex,NPC_PARAM_ID) --»ñµÃµ±Ç°ËÀÍönpcµÄ´¢´æ±äÁ¿Öµ£¨¶ÔÓ¦±äÁ¿ÉèÖÃÖµÔÚ¸Ãnpc±»¼ÓÔØ´¦£©
-					Msg2Player("´ËÉ½ÊÇÎÒµÄ£¬´Ë´åÊÇÎÒµÄ£¬Ë­Ïë¹ıÕâÀï£¬°ÑÍ·ÁôÏÂÀ´!£¨É±ËÀËûÒ»¶¨ÄÜ»ñµÃ³öºõÒâÁÏµÄ½±Àø) ")
+					Msg2Player("Nói nµy lµ cña ta, th«n nµy lµ cña ta! Ai muèn ®i qua ®©y h× ®Ó c¸i ®Çu l¹i! (Ch¾c ch¾n giÕt ®­îc tªn nµy sÏ nhËn ®­îc nhiÒu mãn ngoµi ı muèn ®©y!) ")
 					for i=1,getn(killflyboss) do  								  --È¥ËùÓĞbossËÀÍöºóÉú³ÉµÄnpc±í¸ñÖĞÑ°ÕÒ·ûºÏ¸ÃbossË÷ÒıµÄ×ø±ê
 						if ( messenger_npcindex == killflyboss[i][10]) then   	  --Êı×éÄÚÑ°ÕÒ·ûºÏnpcË÷ÒıµÄ±äÁ¿ÊıÖµ
 							Tid = SubWorldID2Idx(killflyboss[i][3]);   			  --Ôö¼Ónpc
@@ -105,7 +105,7 @@ function messenger_gogogo()
 					SetGlbValue(812,GetGlbValue(812)+3)
 					nt_setTask(1215,10)
 					local messenger_npcindex = GetNpcParam(Npcindex,NPC_PARAM_ID) --»ñµÃµ±Ç°ËÀÍönpcµÄ´¢´æ±äÁ¿Öµ£¨¶ÔÓ¦±äÁ¿ÉèÖÃÖµÔÚ¸Ãnpc±»¼ÓÔØ´¦£©
-					Msg2Player("´ËÉ½ÊÇÎÒµÄ£¬´Ë´åÊÇÎÒµÄ£¬Ë­Ïë¹ıÕâÀï£¬°ÑÍ·ÁôÏÂÀ´!£¨É±ËÀËûÒ»¶¨ÄÜ»ñµÃ³öºõÒâÁÏµÄ½±Àø!) ")
+					Msg2Player("Nói nµy lµ cña ta, th«n nµy lµ cña ta! Ai muèn ®i qua ®©y h× ®Ó c¸i ®Çu l¹i! (Ch¾c ch¾n giÕt ®­îc tªn nµy sÏ nhËn ®­îc nhiÒu mãn ngoµi ı muèn ®©y!) ")
 	
 					for i=1,getn(killflyboss2) do  								  --È¥ËùÓĞbossËÀÍöºóÉú³ÉµÄnpc±í¸ñÖĞÑ°ÕÒ·ûºÏ¸ÃbossË÷ÒıµÄ×ø±ê
 						if ( messenger_npcindex == killflyboss2[i][10]) then   	  --Êı×éÄÚÑ°ÕÒ·ûºÏnpcË÷ÒıµÄ±äÁ¿ÊıÖµ
@@ -124,7 +124,7 @@ function messenger_gogogo()
 					SetGlbValue(813,GetGlbValue(813)+3)
 					nt_setTask(1215,10)
 					local messenger_npcindex = GetNpcParam(Npcindex,NPC_PARAM_ID) --»ñµÃµ±Ç°ËÀÍönpcµÄ´¢´æ±äÁ¿Öµ£¨¶ÔÓ¦±äÁ¿ÉèÖÃÖµÔÚ¸Ãnpc±»¼ÓÔØ´¦£©
-					Msg2Player("´ËÉ½ÊÇÎÒµÄ£¬´Ë´åÊÇÎÒµÄ£¬Ë­Ïë¹ıÕâÀï£¬°ÑÍ·ÁôÏÂÀ´!£¨É±ËÀËûÒ»¶¨ÄÜ»ñµÃ³öºõÒâÁÏµÄ½±Àø!) ")
+					Msg2Player("Nói nµy lµ cña ta, th«n nµy lµ cña ta! Ai muèn ®i qua ®©y h× ®Ó c¸i ®Çu l¹i! (Ch¾c ch¾n giÕt ®­îc tªn nµy sÏ nhËn ®­îc nhiÒu mãn ngoµi ı muèn ®©y!) ")
 	
 					for i=1,getn(killflyboss3) do  								  --È¥ËùÓĞbossËÀÍöºóÉú³ÉµÄnpc±í¸ñÖĞÑ°ÕÒ·ûºÏ¸ÃbossË÷ÒıµÄ×ø±ê
 						if ( messenger_npcindex == killflyboss3[i][10]) then   	  --Êı×éÄÚÑ°ÕÒ·ûºÏnpcË÷ÒıµÄ±äÁ¿ÊıÖµ
@@ -147,7 +147,7 @@ function messenger_gogogo()
 	if ( Uworld1213 ~= 0 ) then       --ÅĞ¶ÏÊÇ·ñË«±¶¾­ÑéÊ±¼ä
 		if  (  messenger_nowtime - Uworld1213 >= 1200 ) then
 			nt_setTask(1213,0)
-			Msg2Player("Ë«±¶¾­ÑéÖµÊ±¼äÒÑ½áÊø!")
+			Msg2Player("Thêi gian t¨ng gÊp ®«i ®iÓm kinh nghiÖm cña b¹n ®· kÕt thóc!")
 		else
 			AddOwnExp(FLYBOSS_EXP)    --¸øÓèÒ»±¶µÄ¾­Ñé
 		end
@@ -162,5 +162,5 @@ function messenger_gogogo()
 	
 	SetTask2Team(tbBirthday0905.tbTask.tsk_msg_curtsk,tbBirthday0905.tbTask.tsk_msg_needcount, 3);
 	HideNpc(GetTaskTemp(180),FLYBOSS_RELIVE*18)  --18ìõÎªÒ»Ãë  Òş²Ø¸Ã¶Ô»°ĞÍµÄnpc
-	Talk(1,"","ÄãÒÑµ½´ï×ø±ê®é")
+	Talk(1,"","B¹n ®· ®Õn ®­îc täa ®é")
 end

@@ -1,6 +1,6 @@
 -- ====================== ÎÄ¼şĞÅÏ¢ ======================
 
--- ½£ÏÀÇéÔµÍøÂç°æÒ»¡°´øÒÕÍ¶Ê¦¡±Í·ÎÄ¼ş
+-- ½£ÏÀÇéÔµÍøÂç°æÒ»¡°§¸i nghÖ ®Çu s­¡±Í·ÎÄ¼ş
 
 -- Edited by ×Ó·Çô~
 -- 2008/02/28 12:10
@@ -13,7 +13,7 @@ Include("\\script\\misc\\daiyitoushi\\toushi_resetbase.lua");
 Include("\\script\\lib\\gb_modulefuncs.lua");
 
 
--- ¼ì²é¡°´øÒÕÍ¶Ê¦¡±£¬ÍË³öÃÅÅÉµÄÌõ¼ş£ºµÈ¼¶´ïµ½120¼¶£¬»ò120¼¶ÒÔÉÏ
+-- ¼ì²é¡°§¸i nghÖ ®Çu s­¡±£¬ÍË³öÃÅÅÉµÄÌõ¼ş£ºµÈ¼¶´ïµ½120¼¶£¬»ò120¼¶ÒÔÉÏ
 function toushiCheckApplyState()
 	if (GetLevel() < 120) then
 		return TOUSHI_LVLERR;
@@ -27,7 +27,7 @@ function toushiCheckApplyState()
 end
 
 
--- ¼ì²é¡°´øÒÕÍ¶Ê¦¡±£¬¼ÓÈëĞÂÃÅÅÉÌõ¼ş
+-- ¼ì²é¡°§¸i nghÖ ®Çu s­¡±£¬¼ÓÈëĞÂÃÅÅÉÌõ¼ş
 function toushiCheckTransFactState(nFactionNumb, nStage)
 	local bFlag			= GetTask(TSK_TOUSHI_FLAG);				-- »ñµÃ×ªÍ¶Ê¦ÃÅµÄ±ê¼Ç
 	local nMyFacNumb	= GetLastFactionNumber();				-- »ñµÃÔ­ÃÅÅÉID
@@ -94,9 +94,9 @@ end
 
 function toushiGetSexName(nSex)
 	if (nSex == 0) then
-		return "ÄĞ";
+		return "Nam";
 	else
-		return "Å®";
+		return "N÷ ";
 	end
 end
 
@@ -106,36 +106,36 @@ end
 
 function daiyitoushi_main(nFactionNumb)
 --	if (gb_GetModule("SWITH_DAIYITOUSHI") ~= 1) then
---		Say("¶Ô²»Æğ£¬¸Ã¹¦ÄÜÔİÊ±ÒÑ¹Ø±Õ£¬ÔÙ¿ªÊ±¼ä½«»áÓĞÍ¨Öª", 0);
+--		Say("Xin lçi, c«ng n¨ng nµy t¹m thêi ®· bŞ ®ãng, thêi gian më l¹i sÏ ®ùoc th«ng b¸o sau ", 0);
 --		return 1;
 --	end
 	
 	local nFlag	= GetTask(TSK_TOUSHI_FLAG);
-	local tbDes	= {"<dec><npc>½ñÌìÌìÏÂ´óÂÒ£¬ÎäÁÖ¸÷´óÃÅÅÉË­¶¼Ö»ÊÇÎªÁË×Ô¼ºµÄÀûÒæ£¬ËæÕ½ÊÂ¶ø±Õ¹Ø£¬ÎäÁÖÖĞÔ­±»ËğÊ§¹ı°ë¡£Î´¼Ì³ĞÎäÁÖÏã»ğ£¬ÖØÕñÎäÁÖ£¬×ğÎäÁÖÃËÖ÷Ö®Ãü£¬´Ó¼´ÈÕÆğ£¬¸÷´óÃÅÅÉÉ¾³ı¸÷ÖÖ¹æÔòÀ©´óÃÅ¹æ£¬ÔÊĞíµÜ×Ó¼ÓÈëÆäËûÃÅÅÉ£¬Ò»ÆğÓ¡Ö¤ÎäÑ§£¬´´Á¢ĞÂÆæµÄÎäÁÖ¾øÑ§£¬ÖØÕñÎÒÎäÁÖ¡£"};
+	local tbDes	= {"<dec><npc>Thiªn h¹ ®¹i lo¹n nh­  ngµy h«m nay, c¸c ®¹i m«n ph¸i trong vâ l©m ai còng chØ biÕt lo cho c¸i lîi cña m×nh, tïy theo chiÕn sù mµ bÕ quan,  trung nh©n vâ l©m th× bŞ tæn thÊt h¬n qu¸ nöa. VŞ kÕ vâ l©m h­¬ng háa, trïng t©n chÊn h­ng vâ l©m. T«n mÖnh vâ l©m minh chñ, kÓ tõ h«m nay c¸c ®¹i m«n ph¸i xãa bá c¸c quy t¾c, më réng m«n quy, cho phĞp c¸c ®Ö tö gia nhËp c¸c m«n ph¸i kh¸c, ®Ó cïng nhau Ên chøng vâ häc, s¸ng lËp ra nh÷ng tuyÖt häc vâ c«ng míi l¹, trung h­ng ng· vâ l©m."};
 	
 	if (nFlag == 0) then
-		tinsert(tbDes, format("´øÒÕÍ¶Ê¦£¬×ªÃÅÅÉ/#toushiApplyEnter(%d)", nFactionNumb));
+		tinsert(tbDes, format("§¸i nghÖ ®Çu s­, chuyÓn m«n ph¸i/#toushiApplyEnter(%d)", nFactionNumb));
 	elseif (nFlag == 1) then
-		tinsert(tbDes, format("´øÒÕÍ¶Ê¦£¬°İÈëÃÅÏÂ/#toushiTransEnter(%d)", nFactionNumb));
+		tinsert(tbDes, format("§¸i nghÖ ®Çu s­, b¸i nhËp m«n h¹/#toushiTransEnter(%d)", nFactionNumb));
 	elseif (nFlag == 2 and GetLastFactionNumber() == nFactionNumb) then
-		tbDes	= {"<dec><npc>Èç¹ûÄãÏë¼ÓÈë±¾ÅÉ£¬ÒÔºóÒª×¨ĞÄ¿àÁ·£¬ÔçÈÕÁìÎò³öÎäÑ§¾ø¼¼"};
+		tbDes	= {"<dec><npc>NÕu nh­ ng­¬i ®· muèn gia nhËp bæn ph¶i, sau nµy ph¶i chuyªn t©m mµ khæ luyÖn, sím cã ngµy ngé ra ®­îc tuyÖt kü vâ häc"};
 	else
-		tbDes	= {"<dec><npc>¿´ÆğÀ´<sex> ÕâÎ»ÉíÌôÖØµ££¬ÖØÕñÎäÁÖ."};
+		tbDes	= {"<dec><npc>Xem ra, vŞ <sex> nµy mang g¸nh nÆng trªn vai trïng t©n chÊn h­ng vâ l©m."};
 	end
 	
-	tinsert(tbDes, "½áÊø¶Ô»°/OnCancel");
+	tinsert(tbDes, "KÕt thóc ®èi tho¹i/OnCancel");
 	
 	CreateTaskSay(tbDes);
 end
 --
 
--- ´øÒÕÍ¶Ê¦£¬×ªÍ¶ÃÅÅÉ
+-- §¸i nghÖ ®Çu s­£¬×ªÍ¶ÃÅÅÉ
 function toushiApplyEnter(nFactionNumb)
 	
 	local nTaskValue = GetTask(2885)
 	local nTmpRes = floor(nTaskValue/100)
 	if nTaskValue > 0 and mod(nTmpRes, 100) < 14 then
-		Msg2Player("ÄãÒÑ½Ó150¼¶¼¼ÄÜÈÎÎñ,ÇëÍê³ÉÈÎÎñºóÔÙÀ´¼ûÎÒ")
+		Msg2Player("Ng­¬i ®· nhËn nhiÖm vô kü n¨ng 150, xin h·y hoµn thµnh nhiÖm vô råi h·y ®Õn gÆp ta")
 		return 
 	end
 	local nSex	= GetSex();
@@ -143,7 +143,7 @@ function toushiApplyEnter(nFactionNumb)
 	local szHierarchTitle	= toushiGetHierarchTitle(nFactionNumb);
 	
 	if (GetLastFactionNumber() ~= nFactionNumb) then
-		CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_FLAGERR], "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_FLAGERR], "KÕt thóc ®èi tho¹i/OnCancel"});
 		return
 	end
 	
@@ -151,23 +151,23 @@ function toushiApplyEnter(nFactionNumb)
 	local nCurTime      = tonumber( GetCurServerTime() );
 	--·ÅÆúÊ±¼äÏŞÖÆ×ªÃÅÅÉ- Modified By DinhHQ - 20110813
 --	if ((nCurTime - nLastChange) < TOUSHI_COLDDOWN_TIME) then
---	    CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_TIMEERR], "½áÊø¶Ô»°/OnCancel"});
+--	    CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_TIMEERR], "KÕt thóc ®èi tho¹i/OnCancel"});
 --	    return
 --	end
 	
 	if (nSex == 1) then
-		szDes = "{Èç¹ûÓĞÌìÍõ°ï°ïÖ÷µÄĞÅÎïÑîÓ¢¾ÍÄÜ¼ÓÈëÌìÍõÃÅÅÉ.}";
+		szDes = "{NÕu nh­ cã ®­îc tİn vËt cña bang chñ thiªn v­¬ng bang D­¬ng Anh th× cã thÓ gia nhËp m«n ph¸i thiªn v­¬ng.}";
 	end
 	
-	szDes	= format("<dec><npc>ÎÒÃÇÎäÁÖÎäÑ§²©´ó¾«Éî£¬ÈÃÎÒÊ¦¸µÒ²ÏëÀ©´óÃÅ¹æÒ»ÆğÏìÓ¦ÆäËûÃÅÅÉ£¬½ñÌìÎÒ¸øÄãÀë¿ª±¾ÃÅ£¬Ò²¿ÉÒÔ½ÓÊÕ%s ÃÅÅÉµÜ×Ó. %s<enter>, ×·ÇóÎäÑ§µÄÂ·¹ûÈ»²»Ò×£¬×÷ÎªÊ¦¸µ£¬ÎÒÒ²ĞèÒªÌôÕ½ÄãÒ»ÏÂ¡£Èç¹ûÄã¿ÉÒÔ{´ïµ½120¼¶}ÇÒĞèÒªÕÒ»Ø±¾ÅÉÊ§ÂäÒÑ¾ÃµÄĞÅÎï{ ÃÅÅÉĞÅÎï}, Ê¦¸µ²ÅÄÜÈÃÄãÏÂÉ½.", 
+	szDes	= format("<dec><npc>Vâ häc trong giíi vâ l©m cña chóng ta b¸c ®¹i uyªn th©m, lµm s­ phô ta còng muèn më réng m«n quy ®Ó cïng nhau øng chİnh c¸c m«n ph¸i kh¸c, nay ta ®Ó ng­¬i rêi khái  bæn m«n ta còng cã thÓ thu nhËn %s m«n ph¸i ®Ö tö . %s<enter>, con ®­êng cÇu mong vâ häc qu¶ kh«ng dÔ dµng chót nµo, lµ mét s­ phô ta còng ph¶i thö th¸ch ng­¬i mét phen. NÕu nh­ ng­¬i cã thÓ{{®¹t ®Õn cÊp 120}} h¬n n÷a cßn ph¶i t×m vÒ ®©y cho bæn ph¸i tİn vËt ®· bŞ thÊt l¹c tõ l©u {{ “Tİn VËt M«n Ph¸i”}}, s­ phô  míi cho ng­¬i h¹ s¬n.", 
 				toushiGetSexName(nSex),
 				szDes);
 	
 	
 	CreateTaskSay({szDes,
-					format("%s ·ÅĞÄ£¬µÜ×Ó½«´øĞÅÎï»ØÀ´./OnCancel", szHierarchTitle),
-					format("%s, Çë¿´Õâ¸öÊÇ²»ÊÇÃÅÅÉĞÅÎï?/#toushiApplyMenPaiXinWu(%d)", szHierarchTitle, nFactionNumb),
-					"½áÊø¶Ô»°/OnCancel"
+					format("%s yªn t©m, ®Ö tö sÏ ®em tİn vËt vÒ ®©y./OnCancel", szHierarchTitle),
+					format("%s, Xin mêi xem ®©y cã ph¶i lµ tİn vËt m«n ph¸i?/#toushiApplyMenPaiXinWu(%d)", szHierarchTitle, nFactionNumb),
+					"KÕt thóc ®èi tho¹i/OnCancel"
 				});
 end
 
@@ -175,9 +175,9 @@ end
 function toushiApplyMenPaiXinWu()
 	local bFlag = toushiCheckApplyState();
 	if (bFlag == TOUSHI_SUCCEED) then
-		GiveItemUI("ÉÏ½»ÃÅÅÉĞÅÎï", "·ÅÃÅÅÉĞÅÎï½øÈëÏÂÃæµÄ¿ÕÎ».", "toushiApplyShowXinWu", "OnCancel", 1);
+		GiveItemUI("Tr×nh tİn vËt m«n ph¸i", "Bá tİn vËt m«n ph¸i vµo « trèng bªn d­íi.", "toushiApplyShowXinWu", "OnCancel", 1);
 	else
-		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "KÕt thóc ®èi tho¹i/OnCancel"});
 	end
 end
 
@@ -185,9 +185,9 @@ end
 -- ÕâÀïµÄÍË³öÃÅÅÉ½ö½öÉèÖÃÔÊĞí×ªÍ¶ËûÃÅ±äÁ¿±ê¼Ç
 function toushiApplyShowXinWu(nCount)
 	if (nCount ~= 1) then
-		CreateTaskSay({"<dec><npc>ÃÅÅÉ²»ÊÇĞ¡º¢ÍæµÄ£¬ÄÑ²»³ÉÄãÏëÎÒÑÛ»¨Âğ?", 
-						"ÉÏ½»ÃÅÅÉĞÅÎï/toushiApplyMenPaiXinWu",
-						"ÇëÔÊĞíÎÒÔÙÕÒÒ»´Î/OnCancel"
+		CreateTaskSay({"<dec><npc>Tİn VËt M«n Ph¸i kh«ng ph¶i lµ mãn ®å ch¬i cña trÎ con. Kh«ng lÏ ng­¬i muèn lµm mê m¾t ta hay sao?", 
+						"Tr×nh l¹i m«n ph¸i tİn vËt/toushiApplyMenPaiXinWu",
+						"M¹n phĞp cho ta t×m l¹i mét lÇn n÷a/OnCancel"
 					});
 		return 0;
 	end
@@ -197,32 +197,32 @@ function toushiApplyShowXinWu(nCount)
 	local szKey = join({nG, nD, nP});
 	
 	if (szKey ~= join(TB_TOUSHI_MENPAIXINWU)) then
-		CreateTaskSay({"<dec><npc>ÃÅÅÉ²»ÊÇĞ¡º¢ÍæµÄ£¬ÄÑ²»³ÉÄãÏëÎÒÑÛ»¨Âğ?", 
-						"ÉÏ½»ÃÅÅÉĞÅÎï/toushiApplyMenPaiXinWu",
-						"ÇëÔÊĞíÎÒÔÙÕÒÒ»´Î/OnCancel"
+		CreateTaskSay({"<dec><npc>Tİn VËt M«n Ph¸i kh«ng ph¶i lµ mãn ®å ch¬i cña trÎ con. Kh«ng lÏ ng­¬i muèn lµm mê m¾t ta hay sao?", 
+						"Tr×nh l¹i m«n ph¸i tİn vËt/toushiApplyMenPaiXinWu",
+						"M¹n phĞp cho ta t×m l¹i mét lÇn n÷a/OnCancel"
 					});
 		return 0;
 	end
 	
 	--
 	RemoveItemByIndex(nItemIdx);					-- É¾³ıÃÅÅÉĞÅÎï
-	SetTask(TSK_TOUSHI_FLAG, 1);					-- ÉèÖÃ´øÒÕÍ¶Ê¦ÉêÇë³É¹¦±ê¼Ç
+	SetTask(TSK_TOUSHI_FLAG, 1);					-- ÉèÖÃ§¸i nghÖ ®Çu s­ÉêÇë³É¹¦±ê¼Ç
 	WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tLevel:%d,FactionId:%d%s",
-				"´øÒÕÍ¶Ê¦",
+				"§¸i nghÖ ®Çu s­",
 				GetLocalDate("%Y-%m-%d %X"),
 				GetName(), GetAccount(),
 				GetLevel(), GetLastFactionNumber(),
-				"ÄÃ³öÃÅÅÉĞÅÎï£¬×ªÃÅÅÉÒªÇó³É¹¦"));
+				"§­a ra m«n ph¸i tİn vËt, yªu cÇu chuyÓn m«n ph¸i thµnh c«ng"));
 				
-	CreateTaskSay({"<dec><npc>ÊÇÕâ¸öÁË£¬ÎÒÅú×¼ÄãÏÂÉ½£¬ÎÒÏ£ÍûÄãÔçÈÕÁìÎòµ½ÎäÑ§¾ø¼¼£¬¹â´óÎÒÎäÁÖ.", "µÜ×ÓÒ»¶¨Ìı´ÓÊ¦¸µ½Ì»å/OnCancel"});
+	CreateTaskSay({"<dec><npc>§óng vËt nµy råi, ta phª chuÈn cho ng­¬i h¹ s¬n, ta mong r»ng ng­¬i sím cã ngµy ngé ra ®­îc tuyÖt kü vâ häc ®Ó quang ®¹i ng· vâ l©m.", "§Ö tö nhÊt ®Şnh sÏ nghe lêi d¹y cña s­ phô/OnCancel"});
 end
 
--- ´øÒÕÍ¶Ê¦£¬°İÈëÃÅÇ½
+-- §¸i nghÖ ®Çu s­£¬°İÈëÃÅÇ½
 function toushiTransEnter(nFactionNumb)
 	local nTaskValue = GetTask(2885)
 	local nTmpRes = floor(nTaskValue/100)
 	if nTaskValue > 0 and mod(nTmpRes, 100) < 14 then
-		Msg2Player("ÄãÒÑ½ÓÁË150¼¼ÄÜÈÎÎñ, ÇëÍê³ÉÈÎÎñºóÀ´¼ûÎÒ")
+		Msg2Player("Ng­¬i ®· nhËn nhiÖm vô kü n¨ng 150, xin h·y hoµn thµnh nhiÖm vô råi h·y ®Õn gÆp ta")
 		return 
 	end
 	local bFlag				= toushiCheckTransFactState(nFactionNumb, 1);
@@ -231,25 +231,25 @@ function toushiTransEnter(nFactionNumb)
 	
 	if (bFlag == TOUSHI_SUCCEED) then
 		
-		local szDes = "<dec><npc>Õâ<sex> Î»£¬ÄãÒÑÕÒµ½À´ÎÒÕâµÄÂ·ÁË£¬ÎÒÒªÄãÍü¼ÇÄãÊ¦¸µ½»¸øÄãµÄ¾øÑ§¡£{{ÄãĞèÒªÖªµÀ£¬¼ÈÈ»ÒÑ¾­¼ÓÈë±¾ÃÅ£¬¾Í²»ÄÜÔÙÊ¹ÓÃÖ®Ç°µÄÎäÑ§ÁË£¬µ±È»£¬ÎÒ½«´«ÓëÄã±¾ÃÅµÄÎäÑ§£¬ÈÃÄã¼ÓÈë±¾ÃÅ£¬ÎÒÏàĞÅ£¬½«²»»áËğÊ§ÌåÁ¦¡£}}ÄãÏëºÃÁËÂğ£¬ÄãÕæÏë¼ÓÈë±¾ÃÅÂğ?";
+		local szDes = "<dec><npc>VŞ <sex> nµy, ng­¬i ®· t×m ®­îc ®­êng ®Õn chç cña ta ®©y, ta buéc ng­¬i ph¶i quªn ®i nh÷ng tuyÖt häc mµ ng­¬i ®· l·nh ngé ®­îc tõ s­ phô cña ng­¬i. {{ ng­¬i ph¶i biÕt r»ng ®· lµ gia nhËp bæn m«n, th× nh÷ng vâ c«ng ®· häc tr­íc ®©y kh«ng thÓ sö dông, ®­¬ng nhiªn ta sÏ truyÒn thô vâ c«ng cña bæn ph¸i cho ng­¬i, ®­a ng­¬i gia nhËp bæn ph¸i, ta tin t­ëng r»ng sÏ kh«ng tæn thÊt thÕ lùc.}} ng­¬i ®· nghÜ kü ch­a ®ã, qu¶ thùc lµ ng­¬i muèn gia nhËp bæn ph¸i hay kh«ng?";
 		
 		if (nFactionNumb == 1 and nSex == 1) then
-			szDes = "<dec><npc>Õâ<sex> Î», ÄãÒÑÕÒµ½À´ÎÒÕâµÄÂ·ÁË£¬ÎÒÒªÄãÍü¼ÇÄãÊ¦¸µ½»¸øÄãµÄ¾øÑ§¡£ÓĞÒ»ÌõÊÇ£¬ÎÒÃÅÅÉÔ­±¾²»ÊÕÅ®µÜ×Ó£¬ÊÇÒòÎªÅÂÅ®µÜ×Ó²»ÄÜÁì»á±¾ÃÅ´¿ÑôµÄ¹¦·¨¡£Ö±µ½°ëÄêÇ°£¬±¾°ï°ïÖúÎŞÒâÖĞ»ñµÃÒ»¸ö¹Å·½Ìû£¬²ÅÕÒµ½ÆÆ½â¹¦·¨¡£Ö»ÊÇ£¬¸ÃÒ©·½µÄÃØÒ©Ò²²»ÊÇºÜÍ×£¬ĞèÒª±¾°ï°ïÖú´«¹¦´òÍ¨¾­Âö¡£Èç¹ûÄã¿ÉÒÔÕÒµ½±¾°ïÖ÷ĞÅÎï£¬²ÅÄÜ¼ÓÈë±¾°ï¡£{{´ËÍâ£¬ÄãÒ²ÒªÖªµÀ£¬¼ÈÒÑ¼ÓÈë±¾ÃÅ£¬¾Í²»ÄÜÔÙÊ¹ÓÃÖ®Ç°µÄÎäÑ§ÁË£¬µ±È»£¬ÎÒ½«´«ÓëÄã±¾ÃÅµÄÎäÑ§£¬ÈÃÄã¼ÓÈë±¾ÃÅ£¬ÎÒÏàĞÅ£¬½«²»»áËğÊ§ÌåÁ¦¡£}}ÄãÏëºÃÁËÂğ£¬ÄãÕæÏë¼ÓÈë±¾ÃÅÂğ?";
+			szDes = "<dec><npc>VŞ <sex> nµy, ng­¬i ®· t×m ®­îc ®­êng ®Õn chç cña ta ®©y, ta buéc ng­¬i ph¶i quªn ®i nh÷ng tuyÖt häc mµ ng­¬i ®· l·nh ngé ®­îc tõ s­ phô cña ng­¬i. Cã ®iÒu bæn ph¸i ta vèn dÜ kh«ng thu nhËn n÷ ®Ö tö, lµ v× sî r»ng n÷ ®Ö tö sÏ kh«ng lÜnh ngé ®­îc c«ng ph¸p thuÇn d­¬ng cña bæn ph¸i. M·i cho ®Õn nöa n¨m tr­íc ®©y bæn bang chñ v« t×nh ®¹t ®­îc mét ThiÕp Cæ Ph­¬ng, míi t×m ®­îc c«ng ph¸p chÕ gi¶i. ChØ lµ bİ d­îc ë trong ph­¬ng thuèc nµy còng kh«ng lÊy g× æn ®Şnh cho l¾m, cÇn ph¶i cã bæn bang chñ truyÒn c«ng ®· th«ng kinh m¹ch. NÕu nh­ ng­¬i cã thÓ t×m ®­îc {{ Tİn vËt cña bæn bang chñ }}, míi cã thÓ gia nhËp bæn bang. Ngoµi ra {{ ng­¬i còng ph¶i biÕt r»ng ®· lµ gia nhËp bæn m«n, th× nh÷ng vâ c«ng ®· häc tr­íc ®©y kh«ng thÓ sö dông, ®­¬ng nhiªn ta sÏ truyÒn thô vâ c«ng cña bæn ph¸i cho ng­¬i, ®­a ng­¬i gia nhËp bæn ph¸i, ta tin t­ëng r»ng sÏ kh«ng tæn thÊt thÕ lùc.}} ng­¬i ®· nghÜ kü ch­a ®ã, qu¶ thùc lµ ng­¬i muèn gia nhËp bæn ph¸i hay kh«ng?";
 		end
 		
 		CreateTaskSay({szDes, 
-				format("%s, ÎÒÒÑÏëºÃÁË£¬Ïë¼ÓÈë±¾°ïÃÅÅÉ./#toushiTransSureTodo(%d)", szHierarchTitle, nFactionNumb),
-				format("%s, ÈÃÎÒÔÙÏëÏë/OnCancel", szHierarchTitle),
+				format("%s, ta ®· nghÜ kü råi, muèn gia nhËp m«n ph¸i cña bæn bang./#toushiTransSureTodo(%d)", szHierarchTitle, nFactionNumb),
+				format("%s, ®Ó ta suy nghÜ thªm/OnCancel", szHierarchTitle),
 			});
 		
 	else
-		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "KÕt thóc ®èi tho¹i/OnCancel"});
 	end
 end
 
 -- ÌáÊ¾×ªÖ°³É¹¦ºó,ĞèÒªÉèÖÃ90¼¶¼¼ÄÜÊìÁ·¶È
 function toushiTransSureTodo(nFactionNumb)
-	local tbDescrib		= {"<dec><npc>ÄãĞèÒªÑ¡ÔñÖ÷¹¦Ö®Â·:"};
+	local tbDescrib		= {"<dec><npc>Ng­¬i cÇn ph¶i lùa chän con ®­êng chñ c«ng:"};
 
 	for k, v in TB_DAIYITOUSHI_FACTS[nFactionNumb + 1].tbSkillID[90] do
 		if (type(v) == "table") then
@@ -257,7 +257,7 @@ function toushiTransSureTodo(nFactionNumb)
 		end
 	end
 	
-	tbDescrib[getn(tbDescrib) + 1]	= "ÎÒĞèÒªÔÙÏëÏë/OnCancel";
+	tbDescrib[getn(tbDescrib) + 1]	= "Ta cÇn ph¶i suy nghÜ thªm/OnCancel";
 	
 	CreateTaskSay(tbDescrib);
 end
@@ -281,11 +281,11 @@ function toushiTransSure(nFactionNumb, nMagicIdx)
 			--	ConsumeItem(23, 1, unpack(TB_TOUSHI_YANGYINGXINWU), -1);
 			
 			else
-				CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_TWFEMALEERR], "½áÊø¶Ô»°/OnCancel"});
+				CreateTaskSay({TB_TOUSHI_ERR_MSG[TOUSHI_TWFEMALEERR], "KÕt thóc ®èi tho¹i/OnCancel"});
 				return TOUSHI_TWFEMALEERR;
 			end
 			
-			szLog = "½»ÑîÓ¢µÄĞÅÎï³É¹¦";
+			szLog = "Giao tİn vËt cña D­¬ng Anh thµnh c«ng";
 		end
 		
 		local bTrans = toushiDoTransPlayer(GetLastFactionNumber(), nFactionNumb, nMagicIdx, szLog);			-- ´¦Àí½ÇÉ«Ïà¹ØÊôĞÔ
@@ -294,7 +294,7 @@ function toushiTransSure(nFactionNumb, nMagicIdx)
 		local nCurTime = tonumber( GetCurServerTime() );
 		SetTask(TSK_LAST_CHANGE_FACTION, nCurTime);
 	else
-		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "½áÊø¶Ô»°/OnCancel"});
+		CreateTaskSay({TB_TOUSHI_ERR_MSG[bFlag], "KÕt thóc ®èi tho¹i/OnCancel"});
 	end
 end
 
@@ -422,7 +422,7 @@ function toushiDoTransPlayer(nMyFacNumb, nFactionNumb, nMagicIdx, szLog)
 	
 	SetTask(TB_DAIYITOUSHI_FACTS[nMyFacNumb + 1].nTaskId_Fact, 0);				-- Çå½ÇÉ«Ô­ÃÅÅÉÈÎÎñ±äÁ¿
 	
-	if (GetFaction() ~= "³õÈë½­ºş") then
+	if (GetFaction() ~= "Míi nhËp giang hå ") then
 		SetFaction(TB_DAIYITOUSHI_FACTS[nFactionNumb + 1].szFacName);			-- ½ÇÉ«ÃÅÅÉÃû³Æ
 		
 		SetCamp(TB_DAIYITOUSHI_FACTS[nFactionNumb + 1].nCamp);					-- ¶ÔÓ¦ÃÅÅÉÕóÓª
@@ -439,28 +439,28 @@ function toushiDoTransPlayer(nMyFacNumb, nFactionNumb, nMagicIdx, szLog)
 					TB_DAIYITOUSHI_FACTS[nFactionNumb + 1].nValue_137);			-- ÃÅÅÉÈÎÎñ±äÁ¿,³öÊ¦
 	
 	SetTask(144, 0);	--Ãâ·ÑÏ´µã
-	SetTask(TSK_TOUSHI_FLAG, 0);												-- Çå´øÒÕÍ¶Ê¦³É¹¦±ê¼Ç
-	SetTask(TSK_TOUSHI_COUNT, GetTask(TSK_TOUSHI_COUNT) + 1);					-- ÉèÖÃ´øÒÕÍ¶Ê¦³É¹¦´ÎÊı
+	SetTask(TSK_TOUSHI_FLAG, 0);												-- Çå§¸i nghÖ ®Çu s­³É¹¦±ê¼Ç
+	SetTask(TSK_TOUSHI_COUNT, GetTask(TSK_TOUSHI_COUNT) + 1);					-- ÉèÖÃ§¸i nghÖ ®Çu s­³É¹¦´ÎÊı
 	
 	if (GetByte(GetTask(TSK_ZHENPAILINGDAN_USECNT), 3) ~= 1) then
 		SetItemBindState(AddItem(unpack(TB_TOUSHI_ZHENPAILINGDAN)), -2);			-- ÔùËÍµÄÎïÆ·ÎªÓÀ¾Ã°ó¶¨
 		SetItemBindState(AddItem(unpack(TB_TOUSHI_ZHENPAILINGYAO)), -2);
 		SetTask(TSK_ZHENPAILINGDAN_USECNT, SetByte(GetTask(TSK_ZHENPAILINGDAN_USECNT), 3, 1))
-		szLog = szLog..",»ñµÃÁéµ¤ºÍÁéÒ©";
+		szLog = szLog..", thu ®­îc trÊn ph¸i linh ®¬n vµ trÊn ph¸i linh d­îc";
 	end
 	
 	
-	CreateTaskSay({"<dec><npc>Èç¹ûÄãÒÑÏë¼ÓÈë±¾ÅÉ£¬ÈÕºóĞèÒª×¨ĞÄ¿àÁ·£¬ÔçÈÕÁìÎòÎäÑ§¾ø¼¼¡£ÕâÊÇ±¾ÅÉµÄÁ½¿ÅÁéµ¤£¬¿ÉÒÔ°ïÄãÌá¸ß¹¦Á¦£¬¿ìÄÃÈ¥Ê¹ÓÃ°É.",
-					"½áÊø¶Ô»°/OnCancel"});
+	CreateTaskSay({"<dec><npc>NÕu nh­ ng­¬i ®· muèn gia nhËp bæn ph¶i, sau nµy ph¶i chuyªn t©m mµ khæ luyÖn, sím cã ngµy ngé ra ®­îc tuyÖt kü vâ häc. §©y lµ hai viªn linh d­îc cña bæn ph¸i, cã thÓ gióp ng­¬i n©ng cao c«ng lùc, h·y nhËn lÊy mµ sö dông.",
+					"KÕt thóc ®èi tho¹i/OnCancel"});
 	
 	Msg2Faction(format(TB_DAIYITOUSHI_FACTS[nFactionNumb + 1].szMsg, GetName()));
 	
 	WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tLevel:%d,OldFactionId:%d,NewFactionId:%d,MainMagic:%d,%s",
-				"´øÒÕÍ¶Ê¦",
+				"§¸i nghÖ ®Çu s­",
 				GetLocalDate("%Y-%m-%d %X"),
 				GetName(), GetAccount(),
 				GetLevel(), nMyFacNumb, nFactionNumb,nMagicIdx,
-				"´¦Àí×ªÃÅÅÉ³É¹¦"..szLog));
+				"Xö lı chuyÓn m«n ph¸i thµnh c«ng"..szLog));
 	KickOutSelf();
 end
 
@@ -571,7 +571,7 @@ function toushiAdd150Skill(nMyFacNumb, nFactionNumb, tbOldSkill, tbOldSkillExp, 
 	
 	if (mod(floor(GetTask(TSK_LV150_SKILL) / 100), 100) >= TOUSHI_150SKILL_TASKSTATE) then
 	-- Èç¹û150¼¶¼¼ÄÜÈÎÎñ±äÁ¿ÎªÍê³ÉµÄ´¦Àí
-		--¸Ä±ä150ÈÎÎñÍê³ÉµÄÈÎÎñ±äÁ¿£¬ÃÅÅÉÖ§ÏßµÄĞŞ¸Ä
+		--¸Ä±ä150ÈÎÎñÍê³ÉµÄÈÎÎñ±äÁ¿£¬ÃÅÅÉÖ§ÏßµNamŞ¸Ä
 		SetTask(TSK_LV150_SKILL, TOUSHI_150SKILL_TASKSTATE*100+tbFactStepList[nFactionNumb])
 		
 		local nCount	= getn(tbOldSkillExp.nShuliandu);

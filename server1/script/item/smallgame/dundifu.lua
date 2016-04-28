@@ -11,7 +11,7 @@ function main(nItemID, nNpcIndex)
 	local nX, nY = getposfromfile(szTabPos, 8 + 8 * nMapId, 15 + 8 * nMapId)
 	SetPos(floor(nX / 32), floor(nY / 32))
 	
-	Msg2Player("<#>ÄúÊ¹ÓÃ1<color=0xB5FDD7>¶İµØ·û<color>, ´«µ½µØÍ¼µÄÆäËûÎ»ÖÃ®å.")
+	Msg2Player("<#>Ng­¬i sö dông mét <color=0xB5FDD7>§én Thæ Phï<color>, chuyÓn ®Õn vŞ trİ kh¸c cña b¶n ®å.")
 	return 0
 end
 

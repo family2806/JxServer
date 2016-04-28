@@ -37,7 +37,7 @@ function pActivity:CheckUseZhongzi()
 	if self.nTreeCount < self.MAXTREECOUNT then
 		return 1
 	else
-		Msg2Player("´óÏÀÇëÐÝÏ¢Ò»ÏÂ£¬È»ºó¼ÌÐøÖÖ°×¹ûÊ÷Å¶")
+		Msg2Player("§¹i hiÖp h·y nghØ ng¬i mét l¸t råi h·y tiÕp tôc trång C©y B¸ch Qu¶ nhÐ")
 	end
 end
 
@@ -66,12 +66,12 @@ end
 function pActivity:CheckComposeRedEvelopLimit(nCount)
 	local nTaskVal = PlayerFunLib:GetTaskDailyCount(2918)	
 	if (nTaskVal + nCount) > 2 then
-		Msg2Player(format("ÊýÁ¿³¬¹ýÏÞÖÆ£¬Ö»ÄÜ»»<color=yellow>%d <color>ºì°üÁË.", 2 - nTaskVal))
+		Msg2Player(format("Sè l­îng v­ît qu¸ giíi h¹n, chØ cã thÓ ®æi <color=yellow>%d <color>Bao L× X× §á n÷a.", 2 - nTaskVal))
 		return nil
 	end
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201201050000 or nNowDate >= 201201262400 then
-		Talk(1, "", "ÇëË¡×ï£¬Ä¿Ç°²»ÊÇ»»½±Ê±¼ä.")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian ®æi th­ëng.")
 		return nil
 	end
 	return 1
@@ -83,7 +83,7 @@ function pActivity:ComposeRedEvelop(strLog, nCount)
 	if nUsedCount + nCurCount > 2 then
 		nCurCount = 2 - nUsedCount
 	end
-	local tbAward = {szName="±¦Ïä",tbProp={6,1,30169,1,0,0}, nCount = nCurCount*5,nExpiredTime=20120127, nBindState = -2,}
+	local tbAward = {szName="Bao l× x× ®á",tbProp={6,1,30169,1,0,0}, nCount = nCurCount*5,nExpiredTime=20120127, nBindState = -2,}
 	PlayerFunLib:AddTaskDaily(2918,nCurCount)
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, strLog})
 end
@@ -91,7 +91,7 @@ end
 function pActivity:CheckTimeGetFreeExp()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201201160000 or nNowDate >= 201201172400 then
-		Talk(1, "", "ÇëË¡×ï£¬Ä¿Ç°²»ÊÇ»»½±Ê±¼ä")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
 		return nil
 	end
 	return 1
@@ -100,7 +100,7 @@ end
 function pActivity:CheckComposeDragonMask(nCount)
 	local nTaskVal = PlayerFunLib:GetTaskDailyCount(2919)	
 	if (nTaskVal + nCount) > 5 then
-		Msg2Player(format("ÊýÁ¿³¬¹ý½çÏÞ£¬Ö»ÄÜ»»<color=yellow>%d <color>´ÎÁË.", 5 - nTaskVal))
+		Msg2Player(format("Sè l­îng v­ît qu¸ giíi h¹n, chØ cã thÓ ®æi <color=yellow>%d <color>lÇn n÷a.", 5 - nTaskVal))
 		return nil
 	end
 	return 1
@@ -116,6 +116,6 @@ function pActivity:ComposeDragonMask(nCount)
 	PlayerFunLib:AddTaskDaily(2919,nCurCount)
 	tbAwardTemplet:Give(tbAward, 1, {EVENT_LOG_TITLE, "DoiMatNaRongNhanKinhNghiem"})
 	for i = 1, nCurCount do
-		tbVngTransLog:Write("201201_event_tet/", 22, "DoiMatNaRongNhanKinhNghiem", "10000000 ¾­Ñé", 1)
+		tbVngTransLog:Write("201201_event_tet/", 22, "DoiMatNaRongNhanKinhNghiem", "10000000 §iÓm kinh nghiÖm", 1)
 	end
 end

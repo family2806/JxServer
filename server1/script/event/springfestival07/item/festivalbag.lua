@@ -1,28 +1,28 @@
 Include([[\script\event\springfestival07\head.lua]]);
 
 tab_goods = {
-{"Ğ¡±¬Öñ",	1351	,	80	,},
-{"ÖĞ±¬Öñ",	1352	,	96	,},
-{"´ó±¬Öñ",	1353	,	100	,},
+{"Ph¸o tiÓu",	1351	,	80	,},
+{"Ph¸o trung",	1352	,	96	,},
+{"Ph¸o ®¹i",	1353	,	100	,},
 };
 function main()
 	if (sf07_isactive() == 0) then
-		Say("´ËÎïÆ·ÒÑ¹ıÆÚ", 0);
+		Say("VËt phÈm nµy ®· hÕt h¹n", 0);
 		return 1;
 	end;
 	if (sf07_isrightuser() ~= 1) then
-		Say("<color=yellow>Ö»ÓĞ50¼¶ÒÔÉÏµÄ³äÖµÍæ¼Ò<color>²Å¿ÉÒÔÊ¹ÓÃÑ¹Ëê°ü?", 0);
+		Say("<color=yellow>ChØ cã ng­êi ch¬i cÊp trªn 50 ®· n¹p thÎ<color> míi cã thÓ sö dông bao l× x×.", 0);
 		return 1;
 	end;
 	if (CalcFreeItemCellCount() == 0) then
-		Say("ÇëÏÈÕûÀí±³°ü!", 0);
+		Say("Xin h·y s¾p xÕp l¹i hµnh trang tr­íc ®·!", 0);
 		return 1;
 	end;
 	local nSeed = random(1, 100);
 	for i = 1, getn(tab_goods) do
 		if (tab_goods[i][3] >= nSeed) then
 			AddItem(6, 1, tab_goods[i][2], 1,0,0,0);
-			Msg2Player("ÄãÒÑ¾­´ò¿ª1¸öÑ¹Ëê°ü£¬µÃµ½1 <color=yellow>"..tab_goods[i][1].."<color>.");
+			Msg2Player("B¹n ®· më 1 bao l× x×, nhËn ®­îc 1 <color=yellow>"..tab_goods[i][1].."<color>.");
 			break;
 		end;
 	end;

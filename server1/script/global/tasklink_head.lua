@@ -5,7 +5,7 @@
 
 IncludeLib("FILESYS");
 
-TL_MAXTIMES = 20 -- Ã¿¸öÁ´ÓĞ 20 ¸öÈÎÎñ
+TL_MAXTIMES = 20 -- Ã¿¸öÁ´ÓĞ 20 c¸ nhiÖm vô 
 TL_MAXLINKS = 20 -- Ã¿¸ö»·ÓĞ 20 ¸öÁ´
 TL_MAXLOOPS = 10 -- Íæ¼Ò×Ü¹²¿ÉÒÔ×ö 10 »·µÄÈÎÎñ
 TL_MAXLINKSCOUNT = 4 -- Ã¿¸öÁ´×î¶àÖ»ÄÜ×ö 4 ´Î
@@ -57,21 +57,21 @@ function DealTask()
 -- Ê×ÏÈÈ·¶¨Íæ¼ÒµÄÈÎÎñµÈ¼¶
 local myTaskLevel = GetTaskState(2)
 
-print ("Get The TaskLevel:  "..myTaskLevel)
+print ("Get The TaskLevel: "..myTaskLevel)
 
 -- È»ºóËæ»úËã³ö¸ÃµÈ¼¶Ó¦¸Ã½øĞĞÊ²Ã´ÀàĞÍµÄÈÎÎñ
 local myTaskType = GetTaskType(myTaskLevel)
 
 SetPlayerTaskTpye(myTaskType)
 
-print ("Get The TaskType:  "..myTaskType)
+print ("Get The TaskType: "..myTaskType)
 
 -- ×îºóÔÙ¶ÁÏàÓ¦µÄ±íÈ·¶¨¾ßÌåµÄÈÎÎñÔÚ±í¸ñÖĞµÄĞĞºÅ 
 local myTaskID = GetTaskLink(myTaskType,myTaskLevel)
 
 SaveTaskTableCol(myTaskID)
 
-print ("Get The TaskColID:  "..myTaskID)
+print ("Get The TaskColID: "..myTaskID)
 
 -- Èç¹ûÊÇÊÕ¼¯µØÍ¼ÈÎÎñµÄ»°Ôò¼ÇÂ¼µØÍ¼µÄ±àºÅºÍÒªÊÕ¼¯µÄ¾íÖáÀàĞÍ
 local myTaskMapID = tonumber(TabFile_GetCell(TL_FINDMAPS,myTaskID,"MapID"))
@@ -97,23 +97,23 @@ SaveTaskTableCol(myTaskID)
 		SetTask(1031,myTaskMapID)
 		SetTask(1032,SetByte(GetTask(1032),1,myMapType))
 		SetTask(1032,SetByte(GetTask(1032),2,myMapNum))
-		SetTask(1025,0) -- Çå¿ÕÔ­À´µÄµØÍ¼Ö¾ÊıÁ¿
+		SetTask(1025,0) -- Çå¿ÕÔ­À´µÄ b¶n ®å chİ ÊıÁ¿
 	elseif ( myTaskType == 5 ) then -- Èç¹ûÊÇÊôÓÚÊıÖµÉı¼¶µÄÈÎÎñµÄ»°£¬ÔòÅĞ¶ÏÊÇÄÄÖÖÊıÖµ
 	
 		myTaskValueType = tonumber(TabFile_GetCell(TL_UPGROUND,myTaskID,"NumericType"))
 		
 		if (myTaskValueType == 2) then
-			print("µÃµ½ÁËÉı¼¶¾­ÑéµÄÈÎÎñ£¡")
+			print(" lÊy ®­îc th¨ng cÊp kinh nghiÖm nhiÖm vô ")
 			SetTask(1033,GetLevel())
 			SetTask(1034,GetExp())
 		elseif (myTaskValueType == 3) then
-			print("µÃµ½ÁËÉı¼¶ÉùÍûµÄÈÎÎñ£¡")
+			print(" lÊy ®­îc th¨ng cÊp danh väng ®İch nhiÖm vô ")
 			SetTask(1026,GetRepute())
 		elseif (myTaskValueType == 4) then
-			print("µÃµ½ÁËÉı¼¶¸£ÔµµÄÈÎÎñ£¡")
+			print(" lÊy ®­îc th¨ng cÊp phóc duyªn ®İch nhiÖm vô ")
 			SetTask(1026,FuYuan_Get())
 		elseif (myTaskValueType == 5) then
-			print("µÃµ½ÁËÉı¼¶ PK ÖµµÄÈÎÎñ£¡")
+			print(" lÊy ®­îc th¨ng cÊp PK trŞ gi¸ ®İch nhiÖm vô ")
 			SetTask(1026,GetPK())
 		end
 		
@@ -188,7 +188,7 @@ local myGenre,myDetail,myParticular,myGoodsFive,myLevel,myMagicID,myMagicMax,myM
 -- ÈÎÎñËùĞèÇóÎïÆ·µÄÖÖÀà£¬²»´øÄ§·¨ÊôĞÔºÍ´øÄ§·¨ÊôĞÔ
 local myGoodsClean,myGoodsMagic
 
--- ÈÎÎñËùÒªÇóµÄµØÍ¼Ö¾ ID, µØÍ¼Ö¾µÄÊıÁ¿ºÍµØÍ¼Ö¾µÄÀàĞÍ
+-- ÈÎÎñËùÒªÇóµÄ b¶n ®å chİ  ID,  b¶n ®å chİ µÄÊıÁ¿ºÍ b¶n ®å chİ µÄÀàĞÍ
 local myTaskMaps,myTaskMapNum,myTaskMapType
 
 -- ÈÎÎñËùÒªÇóÉı¼¶µÄÊıÖµºÍÊıÖµÀàĞÍ
@@ -211,7 +211,7 @@ local myTaskID = GetTaskTableCol()
 		
 		myTaskGoods = {myGenre,myDetail,myParticular,myGoodsFive,myLevel}
 		
-		print("ÈÎÎñËùÒªÇóµÄÎïÆ·Îª£º"..myGenre..myDetail..myParticular..myLevel..myGoodsFive)
+		print("NhiÖm vô muèn cÇu vËt phÈm v× "..myGenre..myDetail..myParticular..myLevel..myGoodsFive)
 		if (nTaskGoods[1] == myTaskGoods[1]) and (nTaskGoods[2] == myTaskGoods[2]) and (nTaskGoods[3] == myTaskGoods[3]) and (nTaskGoods[4] == myTaskGoods[4]) and (nTaskGoods[5] == myTaskGoods[5]) then
 			return 1
 		else
@@ -234,14 +234,14 @@ local myTaskID = GetTaskTableCol()
 		myGoodsMagic = {nTaskGoods[1],nTaskGoods[2],nTaskGoods[3],nTaskGoods[4],nTaskGoods[5],nTaskGoods[6],nTaskGoods[7],nTaskGoods[8]}
 		
 		if (myMagicID == "n") then
-			print("ÈÎÎñËùÒªÇóµÄÎïÆ·Îª£º"..myGenre..myDetail..myParticular..myLevel..myGoodsFive)
+			print("NhiÖm vô muèn cÇu vËt phÈm v× "..myGenre..myDetail..myParticular..myLevel..myGoodsFive)
 			if (nTaskGoods[1] == myTaskGoods[1]) and (nTaskGoods[2] == myTaskGoods[2]) and (nTaskGoods[3] == myTaskGoods[3]) and (nTaskGoods[4] == myTaskGoods[4]) and (nTaskGoods[5] == myTaskGoods[5]) then
 				return 1
 			else
 				return 0
 			end			
 		else
-			print("ÈÎÎñËùÒªÇóµÄÎïÆ·Îª£º"..myGenre..myDetail..myParticular..myLevel..myGoodsFive.."Ä§·¨ÊôĞÔ£º"..myMagicID.." ×îĞ¡Öµ£º"..myMagicMin.." ×î´óÖµ£º"..myMagicMax)
+			print("NhiÖm vô muèn cÇu vËt phÈm v× "..myGenre..myDetail..myParticular..myLevel..myGoodsFive.." ma ph¸p thuéc tİnh "..myMagicID.." nhá nhÊt trŞ gi¸ "..myMagicMin.." lín nhÊt trŞ gi¸ "..myMagicMax)
 			if (nTaskGoods[1] == myTaskGoods[1]) and (nTaskGoods[2] == myTaskGoods[2]) and (nTaskGoods[3] == myTaskGoods[3]) and (nTaskGoods[6] == myTaskGoods[6]) and (tonumber(nTaskGoods[7]) >= myTaskGoods[7]) then
 				return 1
 			else
@@ -255,7 +255,7 @@ local myTaskID = GetTaskTableCol()
 		myMagicMin = tonumber(TabFile_GetCell(TL_SHOWGOODS,myTaskID,"MinValue"))
 		myMagicMax = tonumber(TabFile_GetCell(TL_SHOWGOODS,myTaskID,"MaxValue"))
 		
-		print("ÈÎÎñËùÒªÇóµÄÎïÆ·Îª£º"..myMagicID..myMagicMin..myMagicMax)
+		print("NhiÖm vô muèn cÇu vËt phÈm v× "..myMagicID..myMagicMin..myMagicMax)
 		
 		if ( nTaskGoods[1] == myMagicID) and ( nTaskGoods[2] >= myMagicMin ) then
 			return 1
@@ -267,7 +267,7 @@ local myTaskID = GetTaskTableCol()
 	
 		myTaskMapNum = GetTask(1025)
 
-		print ("ÈÎÎñËùÒªÇóµÄµØÍ¼ÊıÁ¿Îª£º"..tonumber(TabFile_GetCell(TL_FINDMAPS,myTaskID,"Num")));
+		print ("NhiÖm vô muèn cÇu b¶n ®å sè l­îng v× "..tonumber(TabFile_GetCell(TL_FINDMAPS,myTaskID,"Num")));
 
 		if (myTaskMapNum>=tonumber(TabFile_GetCell(TL_FINDMAPS,myTaskID,"Num"))) then
 			myTaskMapNum = 0
@@ -283,7 +283,7 @@ local myTaskID = GetTaskTableCol()
 		
 		if (myTaskValueType == 2) then
 		
-		print("Ä¿Ç°µÄÈÎÎñÊÇÉı¼¶¾­ÑéµÄÀàĞÍ")
+		print("Tr­íc m¾t ®İch nhiÖm vô lµ th¨ng cÊp kinh nghiÖm lo¹i h×nh ")
 			if (CountUpLevelExp(GetTask(1033),GetTask(1034)) >= tonumber(TabFile_GetCell(TL_UPGROUND,myTaskID,"NumericValue"))) then
 				return 1
 			else
@@ -291,7 +291,7 @@ local myTaskID = GetTaskTableCol()
 			end
 		elseif (myTaskValueType == 3) then -- ÉùÍûÖµ
 		
-		print("Ä¿Ç°µÄÈÎÎñÊÇÉı¼¶ÉùÍûµÄÀàĞÍ")
+		print("Tr­íc m¾t ®İch nhiÖm vô lµ th¨ng cÊp danh väng ®İch lo¹i h×nh ")
 			if (GetRepute() >= GetTask(1026)) then
 				return 1
 			else
@@ -299,7 +299,7 @@ local myTaskID = GetTaskTableCol()
 			end
 		elseif (myTaskValueType == 4) then -- ¸£ÔµÖµ
 		
-		print("Ä¿Ç°µÄÈÎÎñÊÇÉı¼¶¸£ÔµµÄÀàĞÍ")
+		print("Tr­íc m¾t ®İch nhiÖm vô lµ th¨ng cÊp phóc duyªn ®İch lo¹i h×nh ")
 			if (FuYuan_Get() >= GetTask(1026)) then
 				return 1
 			else
@@ -307,7 +307,7 @@ local myTaskID = GetTaskTableCol()
 			end
 		elseif (myTaskValueType == 5) then -- PK Öµ
 		
-		print("Ä¿Ç°µÄÈÎÎñÊÇÉı¼¶ PK ÖµµÄÀàĞÍ")
+		print("Tr­íc m¾t ®İch nhiÖm vô lµ th¨ng cÊp PK trŞ gi¸ ®İch lo¹i h×nh ")
 			if (GetPK() >= GetTask(1026)) then
 				return 1
 			else
@@ -330,34 +330,34 @@ end
 
 
 
--- ¸øÍæ¼Ò·¢½±ÀøµÄ×Üº¯Êı
+-- ¸øÍæ¼Ò·¢ t­ëng th­ëng µÄ×Üº¯Êı
 function GivePlayerAward()
 
-	-- ´«¸ø½±ÀøÃæ°æµÄ²ÎÊı£º
-	-- Èç¹ûÊÇÎïÆ·µÄ»°ÔòÒÀ´ÎÎª£º½±ÀøÀàĞÍ£¬Quality¡¢Genre¡¢Detail¡¢Particular¡¢Level¡¢GoodsFive¡¢Magiclevel£¬ºÍËµÃ÷ÎÄ×Ö
-	-- Èç¹ûÊÇ½ğÇ®µÄ»°ÔòÒÀ´ÎÎª£º½±ÀøÀàĞÍ£¬½ğÇ®µÄÊıÁ¿
-	-- Èç¹ûÊÇ¾­ÑéµÄ»°ÔòÒÀ´ÎÎª£º½±ÀøÀàĞÍ£¬¾­ÑéµÄÊıÁ¿
-	-- Èç¹ûÊÇËæ»ú»ú»á»òÕßÊÇÈ¡Ïû»ú»áÔòÖ»¼ÇÂ¼µÚÒ»Î»Îª½±ÀøÀàĞÍ
+	-- ´«¸ø t­ëng th­ëng Ãæ°æµÄ²ÎÊı£º
+	-- Èç¹ûÊÇÎïÆ·µÄ»°ÔòÒÀ´ÎÎª£º t­ëng th­ëng ÀàĞÍ£¬Quality¡¢Genre¡¢Detail¡¢Particular¡¢Level¡¢GoodsFive¡¢Magiclevel£¬ºÍËµÃ÷ÎÄ×Ö
+	-- Èç¹ûÊÇ½ğÇ®µÄ»°ÔòÒÀ´ÎÎª£º t­ëng th­ëng ÀàĞÍ£¬½ğÇ®µÄÊıÁ¿
+	-- Èç¹ûÊÇ¾­ÑéµÄ»°ÔòÒÀ´ÎÎª£º t­ëng th­ëng ÀàĞÍ£¬¾­ÑéµÄÊıÁ¿
+	-- Èç¹ûÊÇËæ»ú»ú»á»òÕßÊÇÈ¡Ïû»ú»áÔòÖ»¼ÇÂ¼µÚÒ»Î»Îª t­ëng th­ëng ÀàĞÍ
 	local myAwardArry = {
 							{0,0,0,0,0,0,0,0,""}, 
 						 	{0,0,0,0,0,0,0,0,""},
 						 	{0,0,0,0,0,0,0,0,""}
-				        }
+				    }
 	
-	-- ½±ÀøµÄÊı×é£¬·Ö±ğÎª¸÷ÖÖ½±ÀøµÄÈ¨ÖØ
+	-- t­ëng th­ëng µÄÊı×é£¬·Ö±ğÎª¸÷ÖÖ t­ëng th­ëng µÄÈ¨ÖØ
 	-- ÒÀ´ÎÎª£º½ğÇ®¡¢¾­Ñé¡¢ÎïÆ·¡¢ÔÙËæ»úÒ»´ÎµÄ»ú»á¡¢È¡ÏûÈÎÎñµÄ»ú»á
-	-- 0 ÔòÊÇÄÄ¸ö½±ÀøÀàĞÍÒÑ¾­±»Ñ¡³ö
+	-- 0 ÔòÊÇÄÄ¸ö t­ëng th­ëng ÀàĞÍÒÑ¾­±»Ñ¡³ö
 	local myMainAwardRate = {30,30,30,9,1}
 	
 	local myTaskValue1,myTaskValue2,myMainValue -- ÁÙÊ±±äÁ¿£¬ÓÃÒÔ¼ÇÂ¼¶Áµ½µÄÊıÖµ
-	-- ÓÃÓÚ½±Àø´«ÈëµÄ×Ö·û´®
+	-- ÓÃÓÚ t­ëng th­ëng ´«ÈëµÄ×Ö·û´®
 	local myAwardGoods,myAwardExp,myAwardMoney,myAwardCancal,myAwardChange = "","","","",""
 	
-	local myArawdGoods = {0,0,0,0,0,0} -- ½±ÀøÎïÆ·Ïà¶ÔÓ¦µÄÊı×é
+	local myArawdGoods = {0,0,0,0,0,0} -- t­ëng th­ëng ÎïÆ·Ïà¶ÔÓ¦µÄÊı×é
 	
 	local myAwardType
 	
-	local myAwardArryIndex = 1 -- ÓÃÒÔ¼ÇÂ¼½±ÀøÊı×éÀïÒÑ¾­¼ÇÂ¼ÁË¶àÉÙ¸ö
+	local myAwardArryIndex = 1 -- ÓÃÒÔ¼ÇÂ¼ t­ëng th­ëng Êı×éÀïÒÑ¾­¼ÇÂ¼ÁË¶àÉÙ¸ö
 	
 	local myRandomNum,myRandomSeed -- Ëæ»úÊıºÍËæ»úÖÖ×Ó
 	
@@ -369,51 +369,51 @@ function GivePlayerAward()
 	local _nSeed = SetRandSeed(GetTask(1037))
 	
 	
-	print("¿ªÊ¼½øĞĞ½±ÀøÀàĞÍÑ¡Ôñ£¡")
+	print("B¾t ®Çu tiÕn hµnh t­ëng th­ëng lo¹i h×nh lùa chän ")
 	
-	for i=1,3 do -- Ñ­»·Ñ¡³öÈı¸ö½±ÀøÖÖÀà
+	for i=1,3 do -- Ñ­»·Ñ¡³öÈı¸ö t­ëng th­ëng ÖÖÀà
 		
 		myAwardType,myMainAwardRate = GetAwardTypeForRate(myMainAwardRate)
 		
-		print("µÚ "..i.." ¸öÑ­»·ÖĞÑ¡ÔñÁË½±ÀøÀàĞÍ£º"..myAwardType);
+		print("Thø "..i.." c¸ tuÇn hoµn tróng tuyÓn tr¹ch liÔu t­ëng th­ëng lo¹i h×nh "..myAwardType);
 		
-		if (myAwardType==1) then -- Èç¹û½±ÀøÀàĞÍÊÇÇ®
+		if (myAwardType==1) then -- Èç¹û t­ëng th­ëng ÀàĞÍÊÇÇ®
 		
-			print ("µ±Ç°µÄÈÎÎñÀàĞÍÊÇ£º"..GetTaskTextID(myTaskType).." , µ±Ç°µÄÈÎÎñ±í¸ñĞĞºÅÊÇ£º"..GetTaskTableCol());
+			print ("Tr­íc mÆt ®İch nhiÖm vô lo¹i h×nh lµ "..GetTaskTextID(myTaskType).." , tr­íc mÆt ®İch nhiÖm vô biÓu c¸ch ®­îc sè lµ "..GetTaskTableCol());
 			
 			myTaskValue1 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue1"))
 			myTaskValue2 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue2"))
-			-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ½±Àø¼ÛÖµ
+			-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ t­ëng th­ëng ¼ÛÖµ
 			myMainValue = myTaskValue1 + (myTaskValue2 * (1+(myLinks+myTimes)*0.1))
 			
 			myMainValue = floor((myMainValue / 2) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê½ğÇ®Á¿
 			
-			myAwardMoney = format("%s%s",myMainValue," ½ğÇ®");
+			myAwardMoney = format("%s%s",myMainValue,"Kim tiÒn ");
 			
 			myAwardArry[myAwardArryIndex] = {1,myMainValue,0,0,0,0,0,0,myAwardMoney}
 			myAwardArryIndex = myAwardArryIndex + 1
 			
-			print("È¡µÃÁËÒ»¸ö½ğÇ®µÄ½±Àø£º"..myAwardMoney);
+			print(" lÊy ®­îc mét kim tiÒn ®İch t­ëng th­ëng "..myAwardMoney);
 			
-		elseif (myAwardType==2) then -- Èç¹û½±ÀøµÄÊÇ¾­Ñé
+		elseif (myAwardType==2) then -- Èç¹û t­ëng th­ëng µÄÊÇ¾­Ñé
 		
 			myTaskValue1 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue1"))
 			myTaskValue2 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue2"))
-			-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ½±Àø¼ÛÖµ
+			-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ t­ëng th­ëng ¼ÛÖµ
 			myMainValue = myTaskValue1 + (myTaskValue2 * (1+(myLinks+myTimes)*0.1))
 			
 			myMainValue = floor((myMainValue / 2) * (C_Random(80,120) * 0.01)) -- ¼ÆËãºóµÃ³öµÄÊµ¼Ê¾­ÑéÖµÁ¿
 			
-			myAwardExp = format("%s%s",myMainValue," µã¾­ÑéÖµ")
+			myAwardExp = format("%s%s",myMainValue,"Chót kinh nghiÖm trŞ gi¸ ")
 			
 			myAwardArry[myAwardArryIndex] = {2,myMainValue,0,0,0,0,0,0,myAwardExp}
 			myAwardArryIndex = myAwardArryIndex + 1
 			
-			print("È¡µÃÁËÒ»¸ö¾­ÑéÖµµÄ½±Àø£º"..myAwardExp);
+			print(" lÊy ®­îc mét kinh nghiÖm trŞ gi¸ ®İch t­ëng th­ëng "..myAwardExp);
 			
-		elseif (myAwardType==3) then -- Èç¹û½±ÀøµÄÊÇÎïÆ·
+		elseif (myAwardType==3) then -- Èç¹û t­ëng th­ëng µÄÊÇÎïÆ·
 			
-			myTaskValue1 = GivePlayerAward_Goods(1) -- Ê×ÏÈµÃµ½½±ÀøÎïÆ·µÄĞĞÊı
+			myTaskValue1 = GivePlayerAward_Goods(1) -- Ê×ÏÈµÃµ½ t­ëng th­ëng ÎïÆ·µÄĞĞÊı
 			
 			myQuality = tonumber(TabFile_GetCell(TL_AWARDBASIC,myTaskValue1,"Quality"))
 			myGenre = tonumber(TabFile_GetCell(TL_AWARDBASIC,myTaskValue1,"Genre"))
@@ -428,35 +428,35 @@ function GivePlayerAward()
 			myAwardArry[myAwardArryIndex] = {3,myMainValue,myQuality,myGenre,myDetail,myParticular,myLevel,myGoodsFive,myArawdGoods}
 			myAwardArryIndex = myAwardArryIndex + 1
 			
-			print("È¡µÃÁËÒ»¸öÎïÆ·µÄ½±Àø£º"..myArawdGoods);
+			print(" lÊy ®­îc mét vËt phÈm ®İch t­ëng th­ëng "..myArawdGoods);
 			
-		elseif (myAwardType==4) then -- Èç¹û½±ÀøµÄÊÇÖØĞÂËæ»úÒ»´ÎµÄ»ú»á
+		elseif (myAwardType==4) then -- Èç¹û t­ëng th­ëng µÄÊÇÖØĞÂËæ»úÒ»´ÎµÄ»ú»á
 			
-			myAwardChange = "ÖØĞÂÔÙÑ¡ÔñÒ»´Î"
+			myAwardChange = " lÇn n÷a n÷a lùa chän mét lÇn "
 			myAwardArry[myAwardArryIndex] = {4,0,0,0,0,0,0,0,myAwardExp}
 			myAwardArryIndex = myAwardArryIndex + 1
 			
-			print("È¡µÃÁËÒ»¸öÑ¡Ôñ»ú»áµÄ½±Àø");
+			print(" lÊy ®­îc mét c¬ héi lùa chän ®İch t­ëng th­ëng ");
 		
-		elseif (myAwardType==5) then -- Èç¹û½±ÀøµÄÊÇÒ»´ÎÈ¡ÏûÈÎÎñµÄ»ú»á
+		elseif (myAwardType==5) then -- Èç¹û t­ëng th­ëng µÄÊÇÒ»´ÎÈ¡ÏûÈÎÎñµÄ»ú»á
 		
-			myAwardChange = "Ò»´Î¿ÉÒÔÈ¡ÏûÈÎÎñµÄ»ú»á"
+			myAwardChange = " mét lÇn cã thÓ hñy bá nhiÖm vô c¬ héi "
 			myAwardArry[myAwardArryIndex] = {5,0,0,0,0,0,0,0,myAwardExp}
 			myAwardArryIndex = myAwardArryIndex + 1	
 			
-			print("È¡µÃÁËÒ»´ÎÈ¡Ïû»ú»áµÄ½±Àø");	
+			print(" lÊy ®­îc mét lÇn hñy bá c¬ héi t­ëng th­ëng ");	
 		
 		end
 	end
 	
 	SetRandSeed(_nSeed)
-	-- ·µ»ØÒÑ¾­¹¹ÔìºÃµÄ½±ÀøÊı×é
+	-- ·µ»ØÒÑ¾­¹¹ÔìºÃµÄ t­ëng th­ëng Êı×é
 	return myAwardArry
 
 end
 
 
--- ×Óº¯Êı£¬¸ù¾İ½±ÀøÁ´Ê£ÓàµÄÀàĞÍÈ¡³ö½±Àø
+-- ×Óº¯Êı£¬¸ù¾İ t­ëng th­ëng Á´Ê£ÓàµÄÀàĞÍÈ¡³ö t­ëng th­ëng 
 function GetAwardTypeForRate(myAwardRate)
 
 local i,j,k = 0,0,0
@@ -476,25 +476,25 @@ for i=1,getn(myAwardRate) do
 	end
 end
 
-print ("½Å±¾Ñ¡È¡ÈÎÎñ½±ÀøÀàĞÍÊ±³ö´í£¡");
+print ("Ch©n vèn chän lÊy nhiÖm vô t­ëng th­ëng lo¹i h×nh lóc bŞ lçi ");
 
 end
 
 
--- ËÑÑ°½±ÀøÁĞ±í£¬µÃµ½ÏàÓ¦µÄ½±Àø
--- myAwardType£º½±ÀøµÄÀàĞÍ
--- 1£ºÈÎÎñ»ù±¾½±Àø 2£ºÈÎÎñÁ´Íê³É½±Àø 3:ÈÎÎñ»·Íê³É½±Àø
+-- ËÑÑ° t­ëng th­ëng ÁĞ±í£¬µÃµ½ÏàÓ¦µÄ t­ëng th­ëng 
+-- myAwardType£º t­ëng th­ëng µÄÀàĞÍ
+-- 1£ºÈÎÎñ»ù±¾ t­ëng th­ëng 2£ºÈÎÎñÁ´Íê³É t­ëng th­ëng 3:ÈÎÎñ»·Íê³É t­ëng th­ëng 
 function GivePlayerAward_Goods(myAwardType)
 
-local myTaskValue1,myTaskValue2 -- ´ÓÈÎÎñ±í¸ñÀï¶ÁÈ¡µÄÈÎÎñ½±Àø¼ÛÖµ
+local myTaskValue1,myTaskValue2 -- ´ÓÈÎÎñ±í¸ñÀï¶ÁÈ¡µÄÈÎÎñ t­ëng th­ëng ¼ÛÖµ
 local myLinks,myTimes -- Á¬ĞøÍê³ÉµÄ´ÎÊıÓëÁ´Êı
-local myMainValue -- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ½±Àø¼ÛÖµ
+local myMainValue -- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ t­ëng th­ëng ¼ÛÖµ
 local myTaskType = GetPlayerTaskType()
 local myAwardTextID
 
 local myAwardTable
 
-local FinalAward -- ×îÖÕ·µ»ØµÄ½±Àø
+local FinalAward -- ×îÖÕ·µ»ØµÄ t­ëng th­ëng 
 	
 	if (myAwardType == 1) then
 		myAwardTextID = TL_AWARDBASIC
@@ -510,25 +510,25 @@ local FinalAward -- ×îÖÕ·µ»ØµÄ½±Àø
 	myTaskValue1 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue1"))
 	myTaskValue2 = tonumber(TabFile_GetCell(GetTaskTextID(myTaskType),GetTaskTableCol(),"TaskValue2"))
 	
-	-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ½±Àø¼ÛÖµ
+	-- ¾­¹ı¼Ó³ËÖµ¼ÆËãºóµÄÈÎÎñ t­ëng th­ëng ¼ÛÖµ
 	myMainValue = myTaskValue1 + (myTaskValue2 * (1+(myLinks+myTimes)*0.1))
 	
 	myAwardTable = AssignValue_AwardRate(Task_AwardBasic,myMainValue)
 	
 	FinalAward = TabFile_GetCell(myAwardTextID,GetAward(myAwardTable),"Name")
 	
---	print ("»ñÈ¡ÁË "..myTaskTextID.." ÈÎÎñÀàĞÍÖĞµÄ "..FinalAward.."½±Àø")
+--	print (" lÊy ®­îc liÔu "..myTaskTextID.." nhiÖm vô lo¹i h×nh trung ®İch "..FinalAward.." t­ëng th­ëng ")
 	
-return GetAward(myAwardTable) -- ·µ»Ø½±ÀøËùÔÚµÄĞĞÊı
+return GetAward(myAwardTable) -- ·µ»Ø t­ëng th­ëng ËùÔÚµÄĞĞÊı
 
 end
 
 
--- ÔÚÒÑ¾­ĞÎ³ÉÈ¨ÖØÁĞ±íµÄ½±ÀøÖĞÌôÑ¡³öÒ»¸ö½±Àø£¬·µ»ØÖµÎª½±ÀøËùÔÚµÄ±í¸ñĞĞÊı
+-- ÔÚÒÑ¾­ĞÎ³ÉÈ¨ÖØÁĞ±íµÄ t­ëng th­ëng ÖĞÌôÑ¡³öÒ»¸ö t­ëng th­ëng £¬·µ»ØÖµÎª t­ëng th­ëng ËùÔÚµÄ±í¸ñĞĞÊı
 function GetAward(myAwardVariable)
 
 local i,j,k = 0,0,0
-local myMainRate = 0 -- ×ÜµÄ½±ÀøÈ¨ÖØ
+local myMainRate = 0 -- ×ÜµÄ t­ëng th­ëng È¨ÖØ
 	
 	for i=1,getn(myAwardVariable) do
 		myMainRate = myMainRate + myAwardVariable[i][2]
@@ -571,9 +571,9 @@ function GetPlayerSex()
 local mySex -- ÓÃÒÔÏÔÊ¾ÈËÎïĞÔ±ğµÄ×Ö·û
 
 	if (GetSex() == 0) then
-		mySex = "¹«×Ó"
+		mySex = " c«ng tö "
 	else
-		mySex = "Å®ÏÀ"
+		mySex = " n÷ hiÖp "
 	end
 	
 return mySex
@@ -652,8 +652,8 @@ end
 
 
 
---  //////////////////////////////////////////////////////////////
--- //                  ¶Á±íÓëÈÎÎñµÄÊıÖµ´¦Àí                    //
+-- //////////////////////////////////////////////////////////////
+-- //         ¶Á±íÓëÈÎÎñµÄÊıÖµ´¦Àí          //
 --//////////////////////////////////////////////////////////////
 
 -- ËÑÑ°µÈ¼¶Ïà¶ÔÓ¦ÈÎÎñ±í£¬È·¶¨Íæ¼Òµ±Ç°µÄÈÎÎñÁ´µÚÒ»µÈ¼¶ÊÇÊôÓÚÄÄÒ»¼¶
@@ -687,32 +687,32 @@ function GetTaskType(myTaskLevel)
 	local myMainRate = 0 -- ËùÓĞÈÎÎñÀàĞÍÔÚÒ»¸öµÈ¼¶ÀïµÄ×Ü±ÈÂÊ
 	local myTaskType -- ·µ»ØµÄÈÎÎñÀàĞÍ
 	
-	print("mylevel:   "..myTaskLevel)
+	print("mylevel: "..myTaskLevel)
 	
 	for i = 1,getn(Task_MainLevelRate[myTaskLevel]) do
 		myMainRate = myMainRate + Task_MainLevelRate[myTaskLevel][i]
 	end
 	
-	print ("ÈÎÎñÀàĞÍÈ¨ÖØ×ÜÊı£º "..myMainRate)
+	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng tæng sè  "..myMainRate)
 	
 	
 	-- ¸ù¾İÈ¨ÖØ¹«Ê½×îºóËæ»ú¼ÆËã³öÈÎÎñÀàĞÍ
 	j = C_Random(1,myMainRate)
 	
-	print ("ÈÎÎñÀàĞÍÈ¨ÖØËæ»úÊı£º "..j)
+	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng ngÉu nhiªn ®Õm  "..j)
 	
 	for i = 1,getn(Task_MainLevelRate[myTaskLevel]) do
 		k = k + Task_MainLevelRate[myTaskLevel][i]
 		if ( j < k) then
-		print ("Ñ­»·½áÊø£¬Ñ¡ÔñÁËÈÎÎñÀàĞÍ£º"..i)
+		print ("TuÇn hoµn kÕt thóc , lùa chän nhiÖm vô lo¹i h×nh "..i)
 			return i
 		end
-		print ("Ä¿Ç°Ñ­»·Ê±Ã»ÓĞÑ¡Ôñµ½ÈÎÎñÀàĞÍ¡£ÈÎÎñÈ¨ÖØµÄÀÛ¼Ó×ÜÖµÎª£º "..k)
+		print ("Tr­íc m¾t tuÇn hoµn lóc kh«ng cã lùa chän ®Õn nhiÖm vô lo¹i h×nh . nhiÖm vô quyÒn nÆng ®İch mÖt mái thªm tæng trŞ gi¸ lµ  "..k)
 	end
 	
 	-- Òì³£´¦Àí£¬Èç¹ûÍæ¼Ò¶¼Ñ¡²»µ½ÈÎÎñÀàĞÍµÄ»°¾ÍÑ¡ 4
 	
-	print("½Å±¾ÔÚÑ¡ÔñÈÎÎñÀàĞÍµÄÊ±ºò³ö´í£¡");
+	print("Ch©n vèn ®ang chän tr¹ch nhiÖm vô lo¹i h×nh thêi ®iÓm bŞ lçi ");
 	
 	return 0
 
@@ -753,37 +753,37 @@ end
 function SelectTask(myTaskTable,myTaskLevel)
 
 local i,j,k = 0,0,0
-local myMainRate  = 0 -- ÈÎÎñµÄ×ÜÈ¨ÖØ
+local myMainRate = 0 -- ÈÎÎñµÄ×ÜÈ¨ÖØ
 
-	print ("Ñ¡ÔñµÄÈÎÎñµÈ¼¶ :  "..myTaskLevel.."  ")
+	print (" lùa chän nhiÖm vô cÊp bËc : "..myTaskLevel.." ")
 	
-	print ("ÈÎÎñµÈ¼¶Àï¹²ÓĞ "..getn(myTaskTable[myTaskLevel]).." ¸öÈÎÎñ")
+	print ("NhiÖm vô cÊp bËc trong tæng céng cã "..getn(myTaskTable[myTaskLevel]).." c¸ nhiÖm vô ")
 
 	for i=1,getn(myTaskTable[myTaskLevel]) do
 		myMainRate = myMainRate + myTaskTable[myTaskLevel][i][2]
 	end
 	
-	print ("Ñ¡Ôñµ½µÄ¾ßÌåÈÎÎñ×ÜÈ¨ÖØ£º"..myMainRate)
+	print (" lùa chän ®Õn ®İch cô thÓ nhiÖm vô tæng quyÒn nÆng "..myMainRate)
 	
 	-- ¸ù¾İÈ¨ÖØ¹«Ê½×îºóËæ»ú¼ÆËã³ö¾ßÌåµÄÈÎÎñ
 	j = C_Random(1,myMainRate)
 	
---	print ("ÈÎÎñµÄ×ÜÈ¨ÖØ:  "..myMainRate)
---	print ("Ëæ»úµ½µÄÈÎÎñÈ¨ÖØ  :  "..j)
+--	print ("NhiÖm vô tæng quyÒn nÆng : "..myMainRate)
+--	print ("NgÉu nhiªn ®Õn ®İch nhiÖm vô quyÒn nÆng : "..j)
 	
 	for i=1,getn(myTaskTable[myTaskLevel]) do
 	
 		k = k + myTaskTable[myTaskLevel][i][2]
 		
 		if ( j < k ) then
---			print ("Ñ¡Ôñµ½ÁË±í¸ñÖĞµÄµÚ  "..myTaskTable[myTaskLevel][i][1].."  ĞĞ¡£")
+--			print (" lùa chän ®Õn biÓu c¸ch trung ®İch thø "..myTaskTable[myTaskLevel][i][1].." ®­îc . ")
 			return myTaskTable[myTaskLevel][i][1]
 		end
 			
 	end
 	
 	-- Òì³£´¦Àí£¬Èç¹ûÍæ¼ÒÑ¡²»µ½µÄ»°Ôò·µ»Ø 0
-	print ("½Å±¾ÔÚÑ¡Ôñ¾ßÌåµÄÈÎÎñÊ±³ö´í£¡")
+	print ("Ch©n vèn ®ang chän tr¹ch cô thÓ nhiÖm vô lóc bŞ lçi ")
 	return 0
 	
 end
@@ -876,17 +876,17 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 	
 	if (myTaskType == 1) then
 		
-		print("È¡µÃµÄĞĞºÅ£º"..GetTaskTableCol())
+		print(" lÊy ®­îc ®İch ®­îc sè "..GetTaskTableCol())
 		
 		-- ÎïÆ·Ãû³Æ
 		myTaskOrder = TabFile_GetCell(TL_BUYGOODS,GetTaskTableCol(),"TaskInfo1")
 		
-		print("ÈÎÎñµÄËµÃ÷£º"..TabFile_GetCell(TL_BUYGOODS,GetTaskTableCol(),"TaskInfo1"))
+		print("NhiÖm vô nãi râ "..TabFile_GetCell(TL_BUYGOODS,GetTaskTableCol(),"TaskInfo1"))
 		
 		-- Ä¿µÄµØÃû³Æ
 		myTaskInfo1 = TabFile_GetCell(TL_BUYGOODS,GetTaskTableCol(),"TaskInfo")
 		
-		myTaskMainInfo = format("%s%s%s%s%s","È¥ ",myTaskInfo1," ´¦Âò ",myTaskOrder," À´¸øÎÒ¡£");
+		myTaskMainInfo = format("%s%s%s%s%s","§i ",myTaskInfo1,"Chç mua ",myTaskOrder,"Véi tíi ta . ");
 		
 	elseif (myTaskType == 2) then
 	 
@@ -901,9 +901,9 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		
 		if (myTaskOrder=="n") then
 		
-			myTaskMainInfo = format("%s%s%s","È¥ÕÒ <color=red>",myTaskInfo1,"<color> À´¸øÎÒ¡£");
+			myTaskMainInfo = format("%s%s%s","§i t×m <color=red>",myTaskInfo1,"<color> véi tíi ta . ");
 		else
-			myTaskMainInfo = format("%s%s%s%s%s%s%s","È¥ÕÒ <color=red>",myTaskOrder,"<color> ×îÉÙ ",myTaskInfo2," µÄ ",myTaskInfo1," À´¸øÎÒ¡£");
+			myTaskMainInfo = format("%s%s%s%s%s%s%s","§i t×m <color=red>",myTaskOrder,"<color> İt nhÊt ",myTaskInfo2,"§İch ",myTaskInfo1,"Véi tíi ta . ");
 		end
 		
 	elseif (myTaskType == 3) then 
@@ -915,7 +915,7 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		-- Ä§·¨ÊôĞÔµÄ×î´óÖµ
 		myTaskInfo2 = TabFile_GetCell(TL_SHOWGOODS,GetTaskTableCol(),"MaxValue")
 		
-		myTaskMainInfo = format("%s%s%s%s%s%s%s","È¥ÕÒÒ»Ñù <color=red>",myTaskOrder,"<color> ×îÉÙÎª ",myTaskInfo1," ×î¸ßÎª ",myTaskInfo2," µÄ×°±¸»òÕß¿óÊ¯¸øÎÒ¡£");
+		myTaskMainInfo = format("%s%s%s%s%s%s%s","§i t×m mét d¹ng <color=red>",myTaskOrder,"<color> İt nhÊt v× ",myTaskInfo1,"Cao nhÊt v× ",myTaskInfo2,"§İch trang bŞ hoÆc lµ qu¸ng th¹ch cho ta . ");
 		
 	elseif (myTaskType == 4) then 
 		
@@ -929,12 +929,12 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		myTaskInfo2 = TabFile_GetCell(TL_FINDMAPS,GetTaskTableCol(),"MapType")
 		
 		if (tonumber(myTaskInfo2) == 1) then
-			myTaskInfo3 = "µØÍ¼Ö¾"
+			myTaskInfo3 = " b¶n ®å chİ "
 		else
-			myTaskInfo3 = "ÃØÖ¾"
+			myTaskInfo3 = " bİ chİ "
 		end
 		
-		myTaskMainInfo = format("%s%s%s%s%s%s%s%s","µ½ <color=red>",myTaskOrder,"<color> ´¦¸øÎÒÕÒ ",myTaskInfo1," ¾í",myTaskOrder,myTaskInfo3,"À´¡£")
+		myTaskMainInfo = format("%s%s%s%s%s%s%s%s","§Õn <color=red>",myTaskOrder,"<color> chç cho ta t×m ",myTaskInfo1,"Cuèn ",myTaskOrder,myTaskInfo3,"Tíi . ")
 		
 	elseif (myTaskType == 5) then
 		
@@ -945,24 +945,24 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		myTaskInfo1 = TabFile_GetCell(TL_UPGROUND,GetTaskTableCol(),"NumericValue")
 		
 		if (tonumber(myTaskOrder) == 1) then
-			myTaskInfo2 = "¼¶µÈ¼¶"
+			myTaskInfo2 = " cÊp cÊp bËc "
 		elseif (tonumber(myTaskOrder) == 2) then
-			myTaskInfo2 = "µã¾­ÑéÖµ"
+			myTaskInfo2 = " chót kinh nghiÖm trŞ gi¸ "
 		elseif (tonumber(myTaskOrder) == 3) then
-			myTaskInfo2 = "µãÉùÍû"
+			myTaskInfo2 = " ®iÓm danh väng "
 		elseif (tonumber(myTaskOrder) == 4) then
-			myTaskInfo2 = "µã¸£Ôµ"
+			myTaskInfo2 = " ®iÓm phóc duyªn "
 		elseif (tonumber(myTaskOrder) == 5) then
-			myTaskInfo2 = "µãPKÖµ"
+			myTaskInfo2 = " ®iÓm PK trŞ gi¸ "
 		end
 		
-		myTaskMainInfo = format("%s%s%s%s","È¥ÌáÉı ",myTaskInfo1," ",myTaskInfo2)
+		myTaskMainInfo = format("%s%s%s%s","§i t¨ng lªn ",myTaskInfo1," ",myTaskInfo2)
 		
 	elseif (myTaskType == 6) then
 		-- ĞèÒªÊÕ¼¯µÄÉ½ºÓÉçğ¢Í¼²ĞÆ¬
 		myTaskOrder = TabFile_GetCell(TL_WORLDMAPS,GetTaskTableCol(),"Num")
 		
-		myTaskMainInfo = format("%s%s%s","È¥¸øÎÒÊÕ¼¯ ",myTaskOrder," ÕÅÉ½ºÓÉçğ¢Í¼µÄ²ĞÆ¬À´¡£")
+		myTaskMainInfo = format("%s%s%s","§i cho ta thu tËp ",myTaskOrder,"Tê nói s«ng x· t¾c ®å ®İch m¶nh vôn tíi . ")
 	end
 
 	return myTaskMainInfo
@@ -983,7 +983,7 @@ local myTableRow = TabFile_GetRowCount(myTaskTextID)
 local myColText
 local myReadRate
 
---	print (format("%s%s%s",myTaskTextID,"  :  ",myTableRow))
+--	print (format("%s%s%s",myTaskTextID," : ",myTableRow))
 	
 	for i = 1,20 do
 		myTaskVariable[i]={}
@@ -996,7 +996,7 @@ local myReadRate
 		myTaskIndex[i] = 0
 	end
 
-	for i = 1,20 do  -- ´ÓµÚÒ»¼¶µ½µÚ¶şÊ®¼¶µÄÀú±éÑ­»·
+	for i = 1,20 do -- ´ÓµÚÒ»¼¶µ½µÚ¶şÊ®¼¶µÄÀú±éÑ­»·
 		for j = 2,myTableRow do
 			myColText = format("%s%s","TaskRate",i)
 			myReadRate = tonumber(TabFile_GetCell(myTaskTextID,j,myColText))
@@ -1010,7 +1010,7 @@ local myReadRate
 --		print ("The "..myTaskTextID.." 's Task: "..i.." have: "..getn(myTaskVariable[i]).." members.");
 	end
 	
---	print (format("%s%s%s",myTaskTextID,"  :  ","finshed!!!"))
+--	print (format("%s%s%s",myTaskTextID," : ","finshed!!!"))
 	
 return myTaskVariable
 
@@ -1044,7 +1044,7 @@ local myRate
 			myTableCol = format("%s%s","level",i)
 			myRate = tonumber(TabFile_GetCell(myTaskTextID,j,myTableCol))
 			myTaskVariable[i][k] = myRate
---			print ("MyTaskLevel: "..i.."  MyTaskType: "..k.." MyRate:  "..myRate)
+--			print ("MyTaskLevel: "..i.." MyTaskType: "..k.." MyRate: "..myRate)
 		end
 	end
 
@@ -1053,7 +1053,7 @@ return myTaskVariable
 end
 
 
--- ¹¹Ôì½±ÀøÄÚ´æ±í¸ñ
+-- ¹¹Ôì t­ëng th­ëng ÄÚ´æ±í¸ñ
 function AssignValue_Award(myTaskVariable,myTaskTextID)
 
 local i,j = 0,1
@@ -1070,7 +1070,7 @@ local myTableRow = TabFile_GetRowCount(myTaskTextID)
 	for i = 1,myTableRow - 1 do
 		j = i + 1
 		myTaskVariable[i] = {j,tonumber(TabFile_GetCell(myTaskTextID,j,"TaskValue"))}
-		print("½±ÀøÀàĞÍ£º"..myTaskTextID.."  ÈÎÎñ½±ÀøĞĞºÅ£º"..j.."  ½±Àø¼ÛÖµ£º"..myTaskVariable[i][2])
+		print("T­ëng th­ëng lo¹i h×nh "..myTaskTextID.." nhiÖm vô t­ëng th­ëng ®­îc sè "..j.." t­ëng th­ëng gi¸ trŞ "..myTaskVariable[i][2])
 	end
 	
 return myTaskVariable
@@ -1078,9 +1078,9 @@ return myTaskVariable
 end
 
 
--- ½¨Á¢½±ÀøÈ¨ÖØË÷Òı±í
--- ´«Èë²ÎÊı£ºmyTaskVariable ÊÇÔ­Ê¼µÄ½±Àø¼ÛÖµÁĞ±í£¬myAwardValue ÊÇ¼ÆËãºóµÄÎïÆ·×Ü¼ÛÖµÁ¿
--- ·µ»ØÖµÎªÃ¿¸ö½±ÀøµÄ±í¸ñÎÄ¼şĞĞºÅË÷ÒıÓëÆäÈ¨ÖØ
+-- ½¨Á¢ t­ëng th­ëng È¨ÖØË÷Òı±í
+-- ´«Èë²ÎÊı£ºmyTaskVariable ÊÇÔ­Ê¼µÄ t­ëng th­ëng ¼ÛÖµÁĞ±í£¬myAwardValue ÊÇ¼ÆËãºóµÄÎïÆ·×Ü¼ÛÖµÁ¿
+-- ·µ»ØÖµÎªÃ¿¸ö t­ëng th­ëng µÄ±í¸ñÎÄ¼şĞĞºÅË÷ÒıÓëÆäÈ¨ÖØ
 function AssignValue_AwardRate(myAwardVariable,myAwardValue)
 
 local i,j = 0,0

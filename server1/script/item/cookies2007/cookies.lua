@@ -7,12 +7,12 @@ Include("\\script\\event\\cookies2007\\head.lua");
 
 function main(nItemIdx)
 	if (checkcookies2007Date(20070506) ~= 1) then
-		Say("¸Ã±ıÒÑ¹ıÊ¹ÓÃÆÚ£¬¿ìµãÈÓµô", 0);
+		Say("B¸nh nµy ®· qu¸ h¹n sö dông, h·y nhanh chãng vøt bá.", 0);
 		return 0;
 	end;
 	
 	if (checkcookies2007Limit() ~= 1) then
-		Say("ÕæÊÇ²»ºÃÒâË¼£¬Ö»ÓĞÍæ¼Ò<color=yellow>50¼¶ÒÔÉÏÇÒ³äÖµ<color> ²ÅÄÜ³Ô±ı.", 0);
+		Say("ThËt ng¹i qu¸, chØ cã ng­êi ch¬i <color=yellow>cÊp trªn 50 ®· n¹p thÎ<color> míi cã thÓ ¨n b¸nh.", 0);
 		return 1;
 	end;
 	
@@ -31,8 +31,8 @@ function main(nItemIdx)
 	
 	local ncurexp = GetTask(TSK_33_COOKIES_ADDEXP);
 	if (ncurexp >= 300000000) then
-		Say("ÄúÒÑ³ÔºÜ¶à±ıÁË£¬²»ÄÜÔÙ³ÔÁË.", 0);
-		Msg2Player("³Ô±ıÊ±£¬Ã¿ÈËÖ»»ñµÃ3ÒÚ¾­ÑéÖµ.");
+		Say("B¹n ®· ¨n qu¸ nhiÒu b¸nh, kh«ng thÓ ¨n ®­îc n÷a.", 0);
+		Msg2Player("Mçi ng­êi chØ nhËn ®­îc tèi ®a 300 triÖu ®iÓm kinh nghiÖm khi ¨n b¸nh.");
 		return 1;
 	elseif ((ncurexp + nexp) > 300000000) then
 		nexp = 300000000 - ncurexp
@@ -40,8 +40,8 @@ function main(nItemIdx)
 	
 	AddOwnExp(nexp);
 	SetTask(TSK_33_COOKIES_ADDEXP, ncurexp + nexp)
-	Msg2Player(format("Äú»ñµÃ%d ¾­ÑéÖµ", nexp));
-	local szlog = format("[2007 3ÔÂ3]\t%s\tName:%s\tAccount:%s\t Ê¹ÓÃ%s »ñµÃ%d ¾­ÑéÖµ",
+	Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm kinh nghiÖm", nexp));
+	local szlog = format("[2007Mïng 3 th¸ng 3]\t%s\tName:%s\tAccount:%s\t Sö dông %s nhËn ®­îc %d ®iÓm kinh nghiÖm",
 				GetLocalDate("%Y-%m-%d %H:%M:%S"),GetName(),GetAccount(),GetItemName(nItemIdx),nexp);
 	WriteLog(szlog);
 end;

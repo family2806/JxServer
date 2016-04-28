@@ -2,18 +2,18 @@
 -- Update: Dan_Deng(2003-08-21) ½µµÍ³ö´åµÈ¼¶ÒªÇóÎª5¼¶
 
 function main(sel)
-	Say("´¬·ò£ºÎÒ´ÓĞ¡¾ÍÔÚºş±ß³¤´ó£¬ÎÒÒ¯Ò¯ºÍÎÒµù¶¼ÊÇÓæÃñ£¬Õâ¶´Í¥ºşÇø¾ÍÃ»ÓĞÎÒ²»ÊìµÄµØ·½¡£ÄãÒª×ø´¬Âğ£¿", 2, "È¥ÌìÍõµº/yes", "²»×ø/no")
+	Say("C¶ ®êi ta ®iÒu sèng víi s«ng n­íc!. §éng d×nh hå kh«ng n¬i nµo mµ ta kh«ng biÕt! Kh¸ch quan muèn ®i ®©u?", 2, "§i Thiªn V­¬ng §¶o/yes", "Kh«ng ngåi/no")
 end;
 
 function yes()
 	if (GetLevel() >= 5) then						--µÈ¼¶´ïµ½Ê®¼¶
 		if (GetFaction() == "tianwang") then				--Èç¹ûÍæ¼ÒÊÇÌìÍõ°ïµÜ×Ó£¬×ø´¬²»ÊÕÇ®
-			Say("´¬·ò£ºÔ­À´ÊÇÌìÍõ°ïµÄĞÖµÜ£¬·ÅĞÄºÃÁË£¬ÎÒÃâ·ÑËÍĞÖµÜÈ¥£¡", 1, "¶àĞ»ÁË/ok1")
+			Say("Th× ra lµ m«n ®Ö cña Thiªn V­¬ng Bang! ta sÏ ®­a ng­êi ®i miÔn phİ", 1, "Ngåi ThuyÒn/ok1")
 		else	
-			Say("´¬·ò£ºÓ´£¬ÄÇ¿É²»ÊÇÑ°³£ÈËÈ¥µÄµØ·½£¬È¥¿ÉÒÔ£¬ÄãµÃ¶à¸øĞ©Òø×Ó¡£", 1, "ºÃ°É/ok2")
+			Say("N¬i ®ã nguy hiÓm l¾m! NÕu kh¸ch quan muèn ®i xin cho thªm İt tiÒn", 1, "Ngåi ThuyÒn/ok2")
 		end
 	else		
-		Talk(1,"","´¬·ò£º¶Ô²»Æğ£¬Ã»µ½Ê®¼¶µÄĞÂÊÖ²»ÄÜ×ø´¬³ö´å¡£")
+		Talk(1,"","N¬i ®ã nguy hiÓm l¾m! Khi nµo d¹t ®Õn ®»ng cÊp h¬n 10 ta sÏ ®­a kh¸ch quan ®i")
 	end
 end;
 
@@ -31,6 +31,6 @@ if (GetCash() >= 100) then							--²Î¿¼Öµ
 	NewWorld(59, 1425, 3472)
 	SetFightState(0)							--×ª»»Îª·ÇÕ½¶·×´Ì¬	
 else
-	Say("´¬·ò£ºÎÒ¿É²»ÄÜ°×ÅÜÒ»´Î´¬¡£", 0)		
+	Say("Kh«ng tiÒn kh«ng thÓ ngåi thuyÒn!", 0)		
 end
 end;

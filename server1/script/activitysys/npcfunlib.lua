@@ -211,7 +211,7 @@ end
 
 function NpcFunLib:DropSingleItem(szBuff, nCount, szRate, nNpcIndex)
 	
-	local szLogTitle = "ªÓ∂Ø÷ªµÙ¬‰“ªº˛ŒÔ∆∑"
+	local szLogTitle = "Hoπt ÆÈng chÿ r¨i 1 vÀt ph»m"
 	local nTotalRate = 1000000
 	local nRate = tonumber(szRate) * nTotalRate / 100
 	if random(1, nTotalRate) <= nRate then
@@ -220,7 +220,7 @@ function NpcFunLib:DropSingleItem(szBuff, nCount, szRate, nNpcIndex)
 end
 
 function NpcFunLib:DropAward(nAwardTableId, nCount, nNpcIndex)
-	local szLogTitle = "µÙ¬‰ªÓ∂ØΩ±¿¯≤ø∑÷"
+	local szLogTitle = "R¨i ph«n th≠Îng hoπt ÆÈng"
 	
 	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, lib:ParseAwardTable(nAwardTableId), szLogTitle, nCount)
 end

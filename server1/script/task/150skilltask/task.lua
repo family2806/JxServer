@@ -24,7 +24,7 @@ function TaskClass:AddStep(nAddValue, nTaskId, nBase)
 	local nTaskValue = GetTask(nTaskId)
 	SetTask(nTaskId, nTaskValue+nAddValue*nBase)
 	SyncTaskValue(nTaskId)
-	Msg2Player("<color=yellow>ÈÎÎñÍê³É<color>")
+	Msg2Player("<color=yellow>NhiÖm vô hoµn thµnh <color>")
 end
 
 function TaskClass:LoadConfig(tbTask, g_Task)
@@ -79,7 +79,7 @@ function TaskClass:OnMessage(tbParam)
 			if tbTaskDetail ~= nil then
 				tbTaskDetail:OnMessage(tbParam)
 			else
-				print("ÈÎÎñ¼ä¶Ï, Ã»ÓĞÁ¬ĞøÍê³É")
+				print("NhiÖm vô gi¸n ®o¹n, kh«ng hoµn thµnh liªn tôc")
 			end
 		end
 	end

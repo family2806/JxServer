@@ -3,22 +3,22 @@ function GetDesc(nItem)
 end
 
 function main(nItem)
-	Say("´ò¿ªÎåĞĞ·û½«»ñµÃ4¸ö·û½µµÍ·ÀÓùÄÜÁ¦<color=red> ±¦¿âÊØ»¤Õß<color> Ìì±£¿â", 6, 
-		"»ñµÃ4¸ö³·½ğ·ûget_chejinfu",
-		"»ñµÃ4¸ö³·Ä¾·ûget_chemufu", 
-		"»ñµÃ4¸ö³·Ë®·ûget_cheshuifu", 
-		"»ñµÃ4¸ö³·»ğ·ûget_chehuofu", 
-		"»ñµÃ4¸ö³·ÍÁ·ûget_chetufu", 
-		"ÈÃÎÒÏÈÏëÏë®·/no");
+	Say("Më Ngò Hµnh Phï sÏ nhËn ®­îc 4 tÊm phï lµm gi¶m n¨ng lùc phßng ngù <color=red> B¶o Khè Thñ Hé Gi¶ <color> Thiªn B¶o Khè", 6, 
+		"NhËn ®­îc 4 TriÖt Kim Phï/get_chejinfu",
+		"NhËn ®­îc 4 TriÖt Méc Phï/get_chemufu", 
+		"NhËn ®­îc 4 TriÖt Thñy Phï/get_cheshuifu", 
+		"NhËn ®­îc 4 TriÖt Háa Phï/get_chehuofu", 
+		"NhËn ®­îc 4 TriÖt Thæ Phï/get_chetufu", 
+		"§Ó ta suy nghÜ tr­íc ®·/no");
 	return 1	
 end
 
 function get_chejinfu()
 	if (CalcFreeItemCellCount() < 1) then
-		Talk(1, "", "<#>Çë°²ÅÅÒ»ÏÂ×°±¸£¬ÖÁÉÙÒªÁôÒ»¸ö¿ÕÎ»£¬È»ºóÊ¹ÓÃÎåĞĞ·û")
+		Talk(1, "", "<#>Xin h·y s¾p xÕp l¹i hµnh trang İt nhÊt cßn trèng 1 « råi h·y sö dông Ngò Hµnh Phï")
 		return 1
 	end
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃÎåĞĞ·û»ñµÃ4¸ö³·½ğ·û",
+	WriteLog(format("Account:%s[Name:%s] sö dông Ngò Hµnh Phï nhËn ®­îc 4 TriÖt Kim Phï",
 				GetAccount(),
 				GetName())
 			);
@@ -30,10 +30,10 @@ end
 
 function get_chemufu()
 	if (CalcFreeItemCellCount() < 1) then
-		Talk(1, "", "<#>Çë°²ÅÅÒ»ÏÂ×°±¸£¬ÖÁÉÙÒªÁôÒ»¸ö¿ÕÎ»£¬È»ºóÊ¹ÓÃÎåĞĞ·û")
+		Talk(1, "", "<#>Xin h·y s¾p xÕp l¹i hµnh trang İt nhÊt cßn trèng 1 « råi h·y sö dông Ngò Hµnh Phï")
 		return 1
 	end
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃÎåĞĞ·û»ñµÃ4¸ö³·Ä¾·û",
+	WriteLog(format("Account:%s[Name:%s] sö dông Ngò Hµnh Phï nhËn ®­îc 4 TriÖt Méc Phï",
 				GetAccount(),
 				GetName())
 			);
@@ -45,10 +45,10 @@ end
 
 function get_cheshuifu()
 	if (CalcFreeItemCellCount() < 1) then
-		Talk(1, "", "<#>Çë°²ÅÅÒ»ÏÂ×°±¸£¬ÖÁÉÙÒªÁôÒ»¸ö¿ÕÎ»£¬È»ºóÊ¹ÓÃÎåĞĞ·û")
+		Talk(1, "", "<#>Xin h·y s¾p xÕp l¹i hµnh trang İt nhÊt cßn trèng 1 « råi h·y sö dông Ngò Hµnh Phï")
 		return 1
 	end
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃÎåĞĞ·û»ñµÃ4¸ö³·Ë®·û",
+	WriteLog(format("Account:%s[Name:%s] sö dông Ngò Hµnh Phï nhËn ®­îc 4 TriÖt Thñy Phï",
 				GetAccount(),
 				GetName())
 			);
@@ -60,10 +60,10 @@ end
 
 function get_chehuofu()
 	if (CalcFreeItemCellCount() < 1) then
-		Talk(1, "", "<#>Çë°²ÅÅÒ»ÏÂ×°±¸£¬ÖÁÉÙÒªÁôÒ»¸ö¿ÕÎ»£¬È»ºóÊ¹ÓÃÎåĞĞ·û")
+		Talk(1, "", "<#>Xin h·y s¾p xÕp l¹i hµnh trang İt nhÊt cßn trèng 1 « råi h·y sö dông Ngò Hµnh Phï")
 		return 1
 	end
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃÎåĞĞ·û»ñµÃ4¸ö³·»ğ·û",
+	WriteLog(format("Account:%s[Name:%s] sö dông Ngò Hµnh Phï nhËn ®­îc 4 TriÖt Háa Phï",
 				GetAccount(),
 				GetName())
 			);
@@ -75,10 +75,10 @@ end
 
 function get_chetufu()
 	if (CalcFreeItemCellCount() < 1) then
-		Talk(1, "", "<#>Çë°²ÅÅÒ»ÏÂ×°±¸£¬ÖÁÉÙÒªÁôÒ»¸ö¿ÕÎ»£¬È»ºóÊ¹ÓÃÎåĞĞ·û")
+		Talk(1, "", "<#>Xin h·y s¾p xÕp l¹i hµnh trang İt nhÊt cßn trèng 1 « råi h·y sö dông Ngò Hµnh Phï")
 		return 1
 	end
-	WriteLog(format("Account:%s[Name:%s] Ê¹ÓÃÎåĞĞ·û»ñµÃ4¸ö³·ÍÁ·û",
+	WriteLog(format("Account:%s[Name:%s] sö dông Ngò Hµnh Phï nhËn ®­îc 4 TriÖt Thæ Phï",
 				GetAccount(),
 				GetName())
 			);

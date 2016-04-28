@@ -17,7 +17,7 @@ function OnMagicAttrib(nCallState, nTargetNpcIndex, nLauncherNpcIndex)
     
     if (GetTask(TK_GROUPID) <= SF_SMALLMAPCOUNT) then
         SetTask(SF_COUNT_ONETIME, GetTask(SF_COUNT_ONETIME) + 1);
-        Msg2Player("Äã³É¹¦»÷ÖÐÁË"..SF_ANIMALNAME..GetTask(SF_COUNT_ONETIME).."´Î!");
+        Msg2Player("B¹n ®¸nh tróng "..SF_ANIMALNAME..GetTask(SF_COUNT_ONETIME).."lÇn!");
     end;
     
     PlayerIndex = nOldPlayer;
@@ -25,7 +25,7 @@ function OnMagicAttrib(nCallState, nTargetNpcIndex, nLauncherNpcIndex)
         festival_go_other_place();
         AddSkillState(673, 20, 0, 20 * 18);
         AddSkillState(309, 10, 0, 20 * 18); --²»ÊÜ¹¥»÷
-        Msg2Player(sz_ANIMALNAME.."Ã¿±»¹¥»÷ÁË20´Î¾Í»á<color=yellow>Ñ£ÔÎ20Ãë<color>!");
+        Msg2Player(sz_ANIMALNAME.."Qu¸i thó mçi khi bÞ ph¸o næ tróng 20 lÇn th× sÏ bÞ cho¸ng trong <color=yellow>20 gi©y<color>!");
         nAttackTimes = 0;
     end;
     SetTask(TK_ATTACKED_TIMES, nAttackTimes);

@@ -49,7 +49,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,30,EVENT_LOG_TITLE,"ËÎ½ğ3000"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,30,EVENT_LOG_TITLE,"TongKim3000"} },
 	},
 }
 tbConfig[4] = --Ò»¸öÏ¸½Ú
@@ -68,7 +68,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"ËÎ½ğ1000"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"TongKim1000"} },
 	},
 }
 tbConfig[5] = --Ò»¸öÏ¸½Ú
@@ -85,7 +85,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"´³¹Ø17"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"VuotAi17"} },
 	},
 }
 tbConfig[6] = --Ò»¸öÏ¸½Ú
@@ -102,7 +102,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"´³¹Ø28"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"VuotAi28"} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -120,7 +120,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"ÏûÃğË®ÔôÍ·Áì"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinh"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -138,7 +138,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,20,EVENT_LOG_TITLE,"ÏûÃğË®Ôô´óÍ·Áì"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -155,7 +155,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,15,EVENT_LOG_TITLE,"Ñ×µÛ´³¹Ø10"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,15,EVENT_LOG_TITLE,"VuotAiViemDe10"} },
 	},
 }
 tbConfig[10] = --Ò»¸öÏ¸½Ú
@@ -173,7 +173,7 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,30,EVENT_LOG_TITLE,"ÏûÃğÊÀ½çBOSS"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,30,EVENT_LOG_TITLE,"TieuDietBossTheGioi"} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
@@ -191,7 +191,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,3,EVENT_LOG_TITLE,"ÏûÃğÉ±ÊÖBOSS"} },
+		{"PlayerFunLib:GetItem",	{ITEM_MEIGUIXIANGDAI,3,EVENT_LOG_TITLE,"TieuDietBossSatThu"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -201,17 +201,17 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	szName = "click npc named master hechenghua",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ºÏ³É»¨µÄÈË"},
+	tbMessageParam = {"Thî GhĞp Hoa"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ºÏ³ÉÈıÉ«Ãµ¹å",13} },
-		{"AddDialogOpt",	{"ºÏ³ÉËÄÉ«Ãµ¹å",14} },
-		{"AddDialogOpt",	{"ºÏ³ÉÓÀ¾ÃÃµ¹åÀ¶",15} },
-		{"AddDialogOpt",	{"»»ÂÌ²İ",20} },
-		{"AddDialogOpt",	{"ÔÚÏßÁì½±",21} },
+		{"AddDialogOpt",	{"Hîp thµnh Hoa Hång Tam S¾c",13} },
+		{"AddDialogOpt",	{"Hîp thµnh Hoa Hång Tø S¾c",14} },
+		{"AddDialogOpt",	{"GhepGioHoaHongVinhCuu",15} },
+		{"AddDialogOpt",	{"§æi Cá Xanh",20} },
+		{"AddDialogOpt",	{"NhËn th­ëng trùc tuyÕn",21} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
@@ -221,16 +221,16 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	szName = "compose 3 color rose total",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÄúºÃ",0},
+	tbMessageParam = {"Xin chµo",0},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"·½·¨1",16} },
-		{"AddDialogOpt",	{"·½·¨2",17} },
-		{"AddDialogOpt",	{"·½·¨3",18} },
-		{"AddDialogOpt",	{"·½·¨4",19} },
+		{"AddDialogOpt",	{"C¸ch 1",16} },
+		{"AddDialogOpt",	{"C¸ch 2",17} },
+		{"AddDialogOpt",	{"C¸ch 3",18} },
+		{"AddDialogOpt",	{"C¸ch 4",19} },
 	},
 }
 tbConfig[14] = --Ò»¸öÏ¸½Ú
@@ -240,16 +240,16 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 	szName = "compose 4 color rose",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ËÄÉ«Ãµ¹å",1,1,1,0.02,0,50},
+	tbMessageParam = {"Hoa Hång Tø S¾c",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"°×Ãµ¹å",ITEM_WHITE_ROSE,5} },
-		{"AddOneMaterial",	{"»ÆÃµ¹å",ITEM_YELLOW_ROSE,5} },
-		{"AddOneMaterial",	{"À¶Ãµ¹å",ITEM_GREEN_ROSE,5} },
-		{"AddOneMaterial",	{"ºìÃµ¹å",ITEM_RED_ROSE,5} },
-		{"AddOneMaterial",	{"ÂÌ²İ",ITEM_GRASS,1} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"Hoa Hång Tr¾ng",ITEM_WHITE_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Vµng",ITEM_YELLOW_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Xanh",ITEM_GREEN_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa hång ®á",ITEM_RED_ROSE,5} },
+		{"AddOneMaterial",	{"Cá Xanh",ITEM_GRASS,1} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
 	},
 	tbActition = 
 	{
@@ -263,21 +263,21 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	szName = "compose corbeil",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÓÀ¾ÃÃµ¹åÀ¶",1,1,1,0.02,0,50},
+	tbMessageParam = {"Giá Hoa Hång VÜnh Cöu",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"°×Ãµ¹å",ITEM_WHITE_ROSE,5} },
-		{"AddOneMaterial",	{"»ÆÃµ¹å",ITEM_YELLOW_ROSE,5} },
-		{"AddOneMaterial",	{"À¶Ãµ¹å",ITEM_GREEN_ROSE,5} },
-		{"AddOneMaterial",	{"ºìÃµ¹å",ITEM_RED_ROSE,5} },
-		{"AddOneMaterial",	{"ÂÌ²İ",ITEM_GRASS,2} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
-		{"AddOneMaterial",	{"»¨Êø",ITEM_RIBAND,1} },
+		{"AddOneMaterial",	{"Hoa Hång Tr¾ng",ITEM_WHITE_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Vµng",ITEM_YELLOW_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Xanh",ITEM_GREEN_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa hång ®á",ITEM_RED_ROSE,5} },
+		{"AddOneMaterial",	{"Cá Xanh",ITEM_GRASS,2} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"N¬ Cét Bã Hoa",ITEM_RIBAND,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_CORBEIL,1,EVENT_LOG_TITLE,"ºÏ³ÉÓÀ¾ÃÃµ¹åÀ¶"} },
+		{"PlayerFunLib:GetItem",	{ITEM_CORBEIL,1,EVENT_LOG_TITLE,"GhepGioHoaHongVinhCuu"} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -287,14 +287,14 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 	szName = "compose 3 color rose 1",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÈıÉ«Ãµ¹å",1,1,1,0.02,0,50},
+	tbMessageParam = {"Hoa Hång Tam S¾c",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"°×Ãµ¹å",ITEM_WHITE_ROSE,5} },
-		{"AddOneMaterial",	{"»ÆÃµ¹å",ITEM_YELLOW_ROSE,5} },
-		{"AddOneMaterial",	{"À¶Ãµ¹å",ITEM_GREEN_ROSE,5} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"Hoa Hång Tr¾ng",ITEM_WHITE_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Vµng",ITEM_YELLOW_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Xanh",ITEM_GREEN_ROSE,5} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
 	},
 	tbActition = 
 	{
@@ -308,14 +308,14 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 	szName = "compose 3 color rose 2",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÈıÉ«Ãµ¹å",1,1,1,0.02,0,50},
+	tbMessageParam = {"Hoa Hång Tam S¾c",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"°×Ãµ¹å",ITEM_WHITE_ROSE,5} },
-		{"AddOneMaterial",	{"»ÆÃµ¹å",ITEM_YELLOW_ROSE,5} },
-		{"AddOneMaterial",	{"ºìÃµ¹å",ITEM_RED_ROSE,5} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"Hoa Hång Tr¾ng",ITEM_WHITE_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Vµng",ITEM_YELLOW_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa hång ®á",ITEM_RED_ROSE,5} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
 	},
 	tbActition = 
 	{
@@ -329,14 +329,14 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	szName = "compose 3 color rose 3",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÈıÉ«Ãµ¹å",1,1,1,0.02,0,50},
+	tbMessageParam = {"Hoa Hång Tam S¾c",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"°×Ãµ¹å",ITEM_WHITE_ROSE,5} },
-		{"AddOneMaterial",	{"ºìÃµ¹å",ITEM_RED_ROSE,5} },
-		{"AddOneMaterial",	{"À¶Ãµ¹å",ITEM_GREEN_ROSE,5} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"Hoa Hång Tr¾ng",ITEM_WHITE_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa hång ®á",ITEM_RED_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Xanh",ITEM_GREEN_ROSE,5} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
 	},
 	tbActition = 
 	{
@@ -350,14 +350,14 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	szName = "compose 3 color rose 4",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÈıÉ«Ãµ¹å",1,1,1,0.02,0,50},
+	tbMessageParam = {"Hoa Hång Tam S¾c",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"»ÆÃµ¹å",ITEM_YELLOW_ROSE,5} },
-		{"AddOneMaterial",	{"ºìÃµ¹å",ITEM_RED_ROSE,5} },
-		{"AddOneMaterial",	{"À¶Ãµ¹å",ITEM_GREEN_ROSE,5} },
-		{"AddOneMaterial",	{"»¨Àº",ITEM_BASKET,1} },
+		{"AddOneMaterial",	{"Hoa Hång Vµng",ITEM_YELLOW_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa hång ®á",ITEM_RED_ROSE,5} },
+		{"AddOneMaterial",	{"Hoa Hång Xanh",ITEM_GREEN_ROSE,5} },
+		{"AddOneMaterial",	{"Giá §ùng Hoa",ITEM_BASKET,1} },
 	},
 	tbActition = 
 	{
@@ -392,8 +392,8 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		--{"PlayerFunLib:CheckLevel",	{120,"default",">"} },
-		{"PlayerFunLib:CheckIsTransLife",	{"ÖØÉúÒ»´ÎÒÔÉÏ²ÅÄÜÁì½±"} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_LUCK_BELT,MAX_DAILY_LUCK_BELT,"½ñÌìÄã²»ÄÜÔÙÁìÁË£¬Ã÷ÌìÔÙÀ´°É.","<"} },
+		{"PlayerFunLib:CheckIsTransLife",	{"Trïng sinh 1 trë lªn míi cã thÓ nhËn phÇn th­ëng"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_DAILY_LUCK_BELT,MAX_DAILY_LUCK_BELT,"H«m nay ng­¬i kh«ng thÓ nhËn n÷a, ngµy mai h·y quay l¹i.","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -413,7 +413,7 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
-		{"ThisActivity:CheckTask",	{TSK_3COLOR_ROSE,MAX_3COLOR_ROSE,"ÒÑ´ïµ½ÉÏÏŞ£¬²»ÄÜ¼ÌĞøÊ¹ÓÃÁË","<"} },
+		{"ThisActivity:CheckTask",	{TSK_3COLOR_ROSE,MAX_3COLOR_ROSE,"§· ®¹t ®Õn giíi h¹n, kh«ng thÓ sö dông tiÕp","<"} },
 	},
 	tbActition = 
 	{
@@ -433,7 +433,7 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
-		{"ThisActivity:CheckTask",	{TSK_4COLOR_ROSE,MAX_4COLOR_ROSE,"ÒÑ´ïÉÏÏŞ£¬²»ÄÜ¼ÌĞøÊ¹ÓÃÁË","<"} },
+		{"ThisActivity:CheckTask",	{TSK_4COLOR_ROSE,MAX_4COLOR_ROSE,"§· ®¹t ®Õn giíi h¹n, kh«ng thÓ sö dông tiÕp","<"} },
 	},
 	tbActition = 
 	{
@@ -453,7 +453,7 @@ tbConfig[24] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{2,"default"} },
-		{"ThisActivity:CheckTask",	{TSK_CORBEIL,MAX_CORBEIL,"ÒÑ´ïÉÏÏŞ£¬²»ÄÜ¼ÌĞøÊ¹ÓÃÁË","<"} },
+		{"ThisActivity:CheckTask",	{TSK_CORBEIL,MAX_CORBEIL,"§· ®¹t ®Õn giíi h¹n, kh«ng thÓ sö dông tiÕp","<"} },
 	},
 	tbActition = 
 	{
@@ -520,14 +520,14 @@ tbConfig[28] = --Ò»¸öÏ¸½Ú
 	szName = "click lingfan",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"ÉÌ··"},
+	tbMessageParam = {"Hµng rong"},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Âò»¨Àº",29} },
+		{"AddDialogOpt",	{"Mua Giá §ùng Hoa",29} },
 	},
 }
 tbConfig[29] = --Ò»¸öÏ¸½Ú
@@ -537,11 +537,11 @@ tbConfig[29] = --Ò»¸öÏ¸½Ú
 	szName = "buy basket",
 	nStartDate = 201203050000,
 	nEndDate  = 201204010000,
-	tbMessageParam = {"»¨Àº",1,1,1,0.02,0,50},
+	tbMessageParam = {"Giá §ùng Hoa",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
-		{"AddOneMaterial",	{"ÒøÁ½",{nJxb=1},10000} },
+		{"AddOneMaterial",	{"Ng©n l­îng",{nJxb=1},10000} },
 	},
 	tbActition = 
 	{

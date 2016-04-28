@@ -5,7 +5,7 @@ function OnDeath()
 	UTask_kl = GetTask(9);
 	if (UTask_kl == 40*256+10) then			--´ø×ÅÈÎÎñ
 		SetTask(9,40*256+20)
-		Msg2Player("´ò°ÜÉ½ÔôĞ¡Í·Ä¿£¬Ñª»êÉñ½£±»É½ÔôĞ¡Í·Ä¿²ØÆğÀ´ÁË")
-		AddNote("´ò°ÜÉ½ÔôĞ¡Í·Ä¿£¬Ñª»êÉñ½£±»É½ÔôĞ¡Í·Ä¿²ØÆğÀ´ÁË ")
+		Msg2Player("§¸nh b¹i tªn s¬n tÆc tiÓu ®Çu môc, th× ra HuyÕt Hån ThÇn KiÕm ®· bŞ thñ lÜnh cña tªn tiÓu s¬n tÆc kia cÊt giÊu ")
+		AddNote("§¸nh b¹i tªn s¬n tÆc tiÓu ®Çu môc, th× ra HuyÕt Hån ThÇn KiÕm ®· bŞ thñ lÜnh cña tªn tiÓu s¬n tÆc kia cÊt giÊu ")
 	end
 end;

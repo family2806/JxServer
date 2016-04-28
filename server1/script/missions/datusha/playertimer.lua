@@ -9,7 +9,7 @@ function OnTimer()
 		ForbitSyncName(PIdx2NpcIdx(PlayerIndex),1)
 		ForbitTalk(1)
 		ForbitSyncAura(1)
-		Msg2Player("»»³ÉÕ½¶·×´Ì¬.")	
+		Msg2Player("§æi thµnh tr¹ng th¸i chiÕn ®Êu.")	
 		end
 	end
 end

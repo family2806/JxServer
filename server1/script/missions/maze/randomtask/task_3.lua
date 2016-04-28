@@ -1,4 +1,4 @@
--- 地上放着长着19个分散的雪灵珠，要求收集10个雪灵珠，点击其中一个变成雪灵珠魂，点击雪灵珠魂道具才能召唤出BOSS冷冰，打死BOSS过关。
+-- 地上放着长着19个分散的Tuy誸 Linh Ch﹗，要求收集10个Tuy誸 Linh Ch﹗，点击其中一个变成Tuy誸 Linh Ch﹗魂，点击Tuy誸 Linh Ch﹗魂道具才能召唤出BOSSL穘h B╪g，打死BOSS过关。
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -9,7 +9,7 @@ Include("\\script\\global\\playerlist.lua")
 IL("ITEM")
 
 pTask = Task:New(3)
-pTask.m_NpcId 		= 1697	-- 雪灵珠
+pTask.m_NpcId 		= 1697	-- Tuy誸 Linh Ch﹗
 pTask.m_BarEvent 	= GetProgressBarMaskEvent()
 pTask.m_ItemTimeout = 30
 
@@ -21,7 +21,7 @@ function pTask:OnStart()
 	self.m_Pearls = {}
 	for i = 1, 19 do
 		local tb = {}
-		tb.NpcIndex = DlgNpcManager:AddNpc("雪灵珠", self.m_NpcId, mapid, pos_bead[i].x, pos_bead[i].y, self, tb)
+		tb.NpcIndex = DlgNpcManager:AddNpc("Tuy誸 Linh Ch﹗", self.m_NpcId, mapid, pos_bead[i].x, pos_bead[i].y, self, tb)
 		tb.Bars = {}
 		tb.Index = i
 		tinsert(self.m_Pearls, tb)
@@ -58,15 +58,15 @@ end
 -- 此函数被物品使用脚本调用
 function pTask:CallBoss(player)
 	if (self.m_BossIndex > 0) then
-		player:Say("已经召唤出冷冰.")
+		player:Say("Х tri謚 h錳 ra L穘h B╪g.")
 		return 0
 	end
 	local pos = self:GetPosition().t3_boss
-	self.m_BossIndex = FightNpcManager:AddNpc("冷冰", 1642, self:GetMapId(), pos.x, pos.y, self, 0, 1, 1)
+	self.m_BossIndex = FightNpcManager:AddNpc("L穘h B╪g", 1642, self:GetMapId(), pos.x, pos.y, self, 0, 1, 1)
 	if (self.m_BossIndex > 0) then
 		local nNpcIndex = FightNpcManager:GetNpcIndex(self.m_BossIndex)
 		SyncNpc(nNpcIndex)
-		NpcChat(nNpcIndex, "谁敢偷取我的宝贝?")
+		NpcChat(nNpcIndex, "Ai d竚 nh c緋 b秓 b鑙 c馻 ta?")
 		return 1
 	else
 		return 0
@@ -82,13 +82,13 @@ function pTask:Say(pPlayer, tb)
 	if (tb.NpcIndex <= 0) then
 		return
 	end
-	local nBarId = ProgressBarList:Open("摘到了", pPlayer, 3, self, tb)
+	local nBarId = ProgressBarList:Open("H竔 頲 r錳", pPlayer, 3, self, tb)
 	tinsert(tb.Bars, nBarId)
 end
 
 function pTask:OnTime(tb, nId)
 	local pos = self:GetPosition().t3_bead[tb.Index]
-	tb.NpcIndex = DlgNpcManager:AddNpc("雪灵珠", self.m_NpcId, self:GetMapId(), pos.x, pos.y, self, tb)
+	tb.NpcIndex = DlgNpcManager:AddNpc("Tuy誸 Linh Ch﹗", self.m_NpcId, self:GetMapId(), pos.x, pos.y, self, tb)
 	self.m_Timers[nId] = nil
 end
 
@@ -104,13 +104,13 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 		self.m_Timers[nId] = 1
 		DlgNpcManager:DelNpc(tb.NpcIndex)
 		tb.NpcIndex = 0
-		-- 生成雪灵珠道具并设置超时时间
+		-- 生成Tuy誸 Linh Ch﹗道具并设置超时时间
 		local nItemIndex = player:AddItem(6, 1, 2634, 1, 0, 0)
 		if (nItemIndex > 0) then
 			ITEM_SetExpiredTime(nItemIndex, self.m_ItemTimeout)
 			player:SyncItem(nItemIndex)
-			player:Say("你收集到一个雪灵珠﹗.")
-			self:BroadCast(format("%s 收集到一个雪灵珠﹗", player:GetName()))
+			player:Say("Ngi thu th藀 頲 1 Tuy誸 Linh Ch﹗.")
+			self:BroadCast(format("%s thu th藀 頲 1 Tuy誸 Linh Ch﹗", player:GetName()))
 		else
 			self:LogError("TASK3: failed to add pearl item")
 		end

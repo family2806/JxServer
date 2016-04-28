@@ -46,13 +46,13 @@ GiftsTabfile:release()
 
 function main()
 	if CalcFreeItemCellCount() < 6 then
-		Talk(1,"","×°±¸¿ÕÎ»²»×ã£¬²»ÄÜ´ò¿ª´óºì°ü.")
-		Msg2Player("×°±¸¿ÕÎ»²»×ã£¬²»ÄÜ´ò¿ª´óºì°ü.")
+		Talk(1,"","Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ më ®¹i hång bao.")
+		Msg2Player("Hµnh trang kh«ng ®ñ chç trèng, kh«ng thÓ më ®¹i hång bao.")
 		return 1
 	end
 	local idx = BonusHongbao:randomSelect()
 	if(not idx) then
-		Msg2Player("Äã´ò¿ªÁË´óºì°ü£¬½á¹ûÉ¶¶¼Ã»µÃµ½¡£")
+		Msg2Player("B¹n më ®¹i hång bao ra ph¸t hiÖn bªn trong kh«ng cã g× hÕt.")
 		return 0
 	end
 	BonusHongbao:payBonus(PlayerIndex,idx)

@@ -12,7 +12,7 @@ function OnDeath(nNpcIndex)
 	end
 	
 	if tb2010ZhongQiu:IsActivityTime() ~= 1 then
-		Msg2Player("»î¶¯ÒÑ½áÊø!");
+		Msg2Player("Ho¹t ®éng ®· kÕt thóc!");
 		return
 	end
 	
@@ -22,7 +22,7 @@ function OnDeath(nNpcIndex)
 --	end
 
 	if ST_IsTransLife() ~= 1 and GetLevel() < 50 then
-		Msg2Player("ÐèÒª50¼¶ÒÔÉÏ²ÅÄÜ²Î¼Ó»î¶¯!");
+		Msg2Player("Ph¶i cÊp 50 trë lªn míi cã thÓ tham gia ho¹t ®éng!");
 		return		
 	end
 	
@@ -51,15 +51,15 @@ function OnDeath(nNpcIndex)
 	tb2010ZhongQiu:AwardExp( nAwardExp, 
 													 tbNpcInfo.nTaskId, 
 													 tbNpcInfo.nMaxExp, 
-													 format("³É¹¦´ò°Ü%s", szNpcName), 
-													 format("[ÖÐÇï»î¶¯][´ò°Ü%s]", szNpcName));
+													 format("Thµnh c«ng ®¶ b¹i %s", szNpcName), 
+													 format("[Ho¹t ®éng trung thu][§¸nh b¹i %s]", szNpcName));
 	
 	-- µôÂäÎïÆ·
 	if tbNpcInfo.tbDrop ~= nil then
 		tbDropTemplet:GiveAwardByList(nNpcIndex, 
 																	PlayerIndex, 
 																	tbNpcInfo.tbDrop, 
-																	format("[ÖÐÇï»î¶¯][´ò°Ü %s]", szNpcName), 
+																	format("[Ho¹t ®éng trung thu][§¸nh b¹i %s]", szNpcName), 
 																	1);
 	end
 

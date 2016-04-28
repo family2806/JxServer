@@ -21,7 +21,7 @@ function OnDeath(nNpcIndex)
 		local nModParam = GetNpcParam(tbNpcIndex[nNpcIndex][i],1)
 		local szModName = GetNpcName(tbNpcIndex[nNpcIndex][i])
 		--Msg2Player("Test: "..szModName)
-		if (szModName == "’Ú¡˙ª§Œ¿" and nModParam == 1001) then
+		if (szModName == "Tr n Long HÈ V÷" and nModParam == 1001) then
 			DelNpc(tbNpcIndex[nNpcIndex][i])
 		end
 	end

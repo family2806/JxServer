@@ -5,7 +5,7 @@
 Include("\\script\\missions\\challengeoftime\\include.lua")
 
 function timeout()
-	Msg2MSAll(MISSION_MATCH, "<#> ×öÈÎÎñÊ±¼äÒÑ½áÊø£¬ÄãµÄ¶ÓÎéÌôÕ½Ê§°Ü");
+	Msg2MSAll(MISSION_MATCH, "Thêi gian lµm nhiÖm vô ®· kÕt thóc, ®éi ngò cña b¹n khiªu chiÕn thÊt b¹i");
 end
 
 function OnTimer()

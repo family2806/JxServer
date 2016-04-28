@@ -1,4 +1,4 @@
 function main()
-	Talk(1, "", "<#>Ò»¸ö°´ÃØ·½ÖÆ×÷µÄÊ²½õÔÂ±ı£¬¿ÉÔÚÃ÷ÔÂÀÏÈË´¦Ëæ»ú»»È¡Ò»¼ş¡°¶¨¹ú°²°î¡±»Æ½ğ×°±¸¡£")
+	Talk(1, "", "<#> Cã thÓ ®æi ®­îc Trang bŞ Hoµng Kim '§Şnh Quèc An Bang ' t¹i Minh NguyÖt L·o Nh©n.")
 	return 1
 end

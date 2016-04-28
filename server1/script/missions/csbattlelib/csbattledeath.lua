@@ -29,11 +29,11 @@ function OnDeath(Launcher)
 		
 
 		if ( curcamp == 1) then
-			str  = "<#>黄方:"..LaunName.."<#> 已重伤 ["..DeathName.."<#> ], 可以PK  "..pkcount;
+			str  = "<#> phe V祅g:"..LaunName.."<#> tr鋘g thng r錳 ["..DeathName.."<#> ], PK 頲 "..pkcount;
 		elseif (curcamp == 2) then
-			str  = "<#>紫方:"..LaunName.."<#> 已重伤 ["..DeathName.."<#> ], 可以PK  "..pkcount;
+			str  = "<#> phe T輒:"..LaunName.."<#> tr鋘g thng r錳 ["..DeathName.."<#> ], PK 頲 "..pkcount;
 		elseif (curcamp == 4) then 
-			str = LaunName.."<#> 已重伤 ["..DeathName.."<#> ], 可以PK "..pkcount;
+			str = LaunName.."<#> tr鋘g thng r錳 ["..DeathName.."<#> ], PK 頲 "..pkcount;
 		end;
 		
 		GetBonus(); --该函数由外部填加，用于奖励玩家

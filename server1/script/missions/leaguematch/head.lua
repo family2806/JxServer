@@ -19,7 +19,7 @@ Include("\\script\\lib\\common.lua")
 -- 2006/04/21 ¼ÓÈë×°±¸Éı¼¶ÈÎÎñ - ÅåÀ×Ë¹
 --Include("\\script\\task\\equipex\\head.lua");
 Include("\\script\\tong\\tong_award_head.lua");--°ï»áÖÜÄ¿±ê
-Include("\\script\\task\\task_addplayerexp.lua")  --¸øÍæ¼ÒÀÛ¼Ó¾­ÑéµÄ¹«¹²º¯Êı
+Include("\\script\\task\\task_addplayerexp.lua") --¸øÍæ¼ÒÀÛ¼Ó¾­ÑéµÄ¹«¹²º¯Êı
 
 Include("\\script\\activitysys\\g_activity.lua")
 Include("\\script\\activitysys\\playerfunlib.lua")
@@ -142,141 +142,141 @@ WLLS_FILE_DEATHSCRIPT = "\\script\\missions\\leaguematch\\combat\\playerdeath.lu
 
 --Î¥½ûÒ©Æ·
 WLLS_FORBID_ITEM = {
-	{	"¹¥ËÙÍè", {6, 1, 218, -1, 0, 0}, 511	},
-	{	"ÅÜËÙÍè", {6, 1, 219, -1, 0, 0}, 512	},
-	{	"ÆÕ·ÀÍè", {6, 1, 220, -1, 0, 0}, 513	},
-	{	"¶¾·ÀÍè", {6, 1, 221, -1, 0, 0}, 514	},
-	{	"±ù·ÀÍè", {6, 1, 222, -1, 0, 0}, 515	},
-	{	"»ğ·ÀÍè", {6, 1, 223, -1, 0, 0}, 516	},
-	{	"À×·ÀÍè", {6, 1, 224, -1, 0, 0}, 517	},
-	{	"¼õÉËÍè", {6, 1, 225, -1, 0, 0}, 518	},
-	{	"¼õÔÎÍè", {6, 1, 226, -1, 0, 0}, 519	},
-	{	"¼õ¶¾Íè", {6, 1, 227, -1, 0, 0}, 520	},
-	{	"¼õ±ùÍè", {6, 1, 228, -1, 0, 0}, 521	},
-	{	"ÆÕ¹¥Íè", {6, 1, 229, -1, 0, 0}, 522	},
-	{	"¶¾¹¥Íè", {6, 1, 230, -1, 0, 0}, 523	},
-	{	"±ù¹¥Íè", {6, 1, 231, -1, 0, 0}, 524	},
-	{	"»ğ¹¥Íè", {6, 1, 232, -1, 0, 0}, 525	},
-	{	"À×¹¥Íè", {6, 1, 233, -1, 0, 0}, 526	},
-	{	"³¤ÃüÍè", {6, 1, 234, -1, 0, 0}, 527	},
-	{	"³¤ÄÚÍè", {6, 1, 235, -1, 0, 0}, 528	},
-	{	"°²ºìµ¤", {6, 1, 115, -1, 0, 0}, 450	},
-	{	"ÉçÀ¶µ¤", {6, 1, 116, -1, 0, 0}, 451	},
-	{	"ÄÚÆÕÍè", {6, 1, 117, -1, 0, 0}, 453	},
-	{	"ÄÚ¶¾Íè", {6, 1, 118, -1, 0, 0}, 454	},
-	{	"ÄÚ±ùÍè", {6, 1, 119, -1, 0, 0}, 455	},
-	{	"ÄÚ»ğÍè", {6, 1, 120, -1, 0, 0}, 456	},
-	{	"ÄÚÀ×Íè", {6, 1, 121, -1, 0, 0}, 457	},
-	{	"³¤ÃüÍè", {6, 0, 1, -1, 0, 0}, 256	},
-	{	"¼ÓÅÜÍè", {6, 0, 2, -1, 0, 0}, 257	},
-	{	"´óÁ¦Íè", {6, 0, 3, -1, 0, 0}, 258	},
-	{	"¸ßÉÁÍè", {6, 0, 4, -1, 0, 0}, 259	},
-	{	"¸ßÖĞÍè", {6, 0, 5, -1, 0, 0}, 260	},
-	{	"·ÉËÙÍè", {6, 0, 6, -1, 0, 0}, 261	},
-	{	"±ù·ÀÍè", {6, 0, 7, -1, 0, 0}, 262	},
-	{	"À×·ÀÍè", {6, 0, 8, -1, 0, 0}, 263	},
-	{	"»ğ·ÀÍè", {6, 0, 9, -1, 0, 0}, 264	},
-	{	"¶¾·ÀÍè", {6, 0, 10, -1, 0, 0}, 265	},
-	{	"Àõ×ÓôÕ×Ó", {6, 0, 60, -1, 0, 0}, 401	},
-	{	"ÖíÈâôÕ×Ó", {6, 0, 61, -1, 0, 0}, 402	},
-	{	"Å£ÈâôÕ×Ó", {6, 0, 62, -1, 0, 0}, 403	},
-	{	"°Ù¹ûÂ¶", {6, 1, 73, -1, 0, 0}, 442	},
-	{	"¼ªÏéºì°ü", {6, 1, 19, -1, 0, 0}, 442	},
-	{	"»Æ½ğ±¦Ïä",	{6,	1,	69,	-1,	0,	0},	442},
-	{	"Ä¾ÑüÅÆĞÅÊ¹",	{6,	1,	885,	-1,	0	,0},	542},
-	{	"Í­ÑüÅÆĞÅÊ¹",	{6,	1,	886,	-1,	0	,0},	543},
-	{	"ÒøÑüÅÆĞÅÊ¹",	{6,	1,	887,	-1,	0	,0},	544},
-	{	"½ğÑüÅÆĞÅÊ¹",	{6,	1,	888,	-1,	0	,0},	545},
-	{	"Óù´ÍĞÅÊ¹ÑüÅÆ",	{6,	1,	889,	-1,	0	,0},	546},
-	{	"°üÒ©Íè",	{6,	1,	910,	-1,	0	,0},	635},
-	{	"ÉñÃØºì°üÀñºĞ",	{6,	1,	1074,	-1,	0	,0},	635},
-	{	"ÀñºĞ[»Ô»Í¹û]",	{6,	1,	1075,	-1,	0	,0},	635},
-	{	"¼ÙÈË",		{6,	1,	1389,	-1,	0,	0},	635	},
+	{	" c«ng tèc hoµn ", {6, 1, 218, -1, 0, 0}, 511	},
+	{	" ch¹y tèc hoµn ", {6, 1, 219, -1, 0, 0}, 512	},
+	{	" phæ phßng hoµn ", {6, 1, 220, -1, 0, 0}, 513	},
+	{	" ®éc phßng hoµn ", {6, 1, 221, -1, 0, 0}, 514	},
+	{	" b¨ng phßng hoµn ", {6, 1, 222, -1, 0, 0}, 515	},
+	{	" löa phßng hoµn ", {6, 1, 223, -1, 0, 0}, 516	},
+	{	" l«i phßng hoµn ", {6, 1, 224, -1, 0, 0}, 517	},
+	{	" gi¶m th­¬ng hoµn ", {6, 1, 225, -1, 0, 0}, 518	},
+	{	" gi¶m ngÊt hoµn ", {6, 1, 226, -1, 0, 0}, 519	},
+	{	" gi¶m ®éc hoµn ", {6, 1, 227, -1, 0, 0}, 520	},
+	{	" gi¶m b¨ng hoµn ", {6, 1, 228, -1, 0, 0}, 521	},
+	{	" phæ c«ng hoµn ", {6, 1, 229, -1, 0, 0}, 522	},
+	{	" ®éc c«ng hoµn ", {6, 1, 230, -1, 0, 0}, 523	},
+	{	" b¨ng c«ng hoµn ", {6, 1, 231, -1, 0, 0}, 524	},
+	{	" löa c«ng hoµn ", {6, 1, 232, -1, 0, 0}, 525	},
+	{	" l«i c«ng hoµn ", {6, 1, 233, -1, 0, 0}, 526	},
+	{	" tr­êng mÖnh hoµn ", {6, 1, 234, -1, 0, 0}, 527	},
+	{	" tr­êng bªn trong hoµn ", {6, 1, 235, -1, 0, 0}, 528	},
+	{	" an hång ®an ", {6, 1, 115, -1, 0, 0}, 450	},
+	{	" x· lam ®an ", {6, 1, 116, -1, 0, 0}, 451	},
+	{	" bªn trong phæ hoµn ", {6, 1, 117, -1, 0, 0}, 453	},
+	{	" bªn trong ®éc hoµn ", {6, 1, 118, -1, 0, 0}, 454	},
+	{	" bªn trong b¨ng hoµn ", {6, 1, 119, -1, 0, 0}, 455	},
+	{	" néi háa hoµn ", {6, 1, 120, -1, 0, 0}, 456	},
+	{	" bªn trong l«i hoµn ", {6, 1, 121, -1, 0, 0}, 457	},
+	{	" tr­êng mÖnh hoµn ", {6, 0, 1, -1, 0, 0}, 256	},
+	{	" thªm ch¹y hoµn ", {6, 0, 2, -1, 0, 0}, 257	},
+	{	" ®¹i lùc hoµn ", {6, 0, 3, -1, 0, 0}, 258	},
+	{	" cao nhanh chãng hoµn ", {6, 0, 4, -1, 0, 0}, 259	},
+	{	" trung häc ®Ö nhŞ cÊp hoµn ", {6, 0, 5, -1, 0, 0}, 260	},
+	{	" nhanh chãng hoµn ", {6, 0, 6, -1, 0, 0}, 261	},
+	{	" b¨ng phßng hoµn ", {6, 0, 7, -1, 0, 0}, 262	},
+	{	" l«i phßng hoµn ", {6, 0, 8, -1, 0, 0}, 263	},
+	{	" löa phßng hoµn ", {6, 0, 9, -1, 0, 0}, 264	},
+	{	" ®éc phßng hoµn ", {6, 0, 10, -1, 0, 0}, 265	},
+	{	" lËt tö tèng tö ", {6, 0, 60, -1, 0, 0}, 401	},
+	{	" thŞt heo tèng tö ", {6, 0, 61, -1, 0, 0}, 402	},
+	{	" thŞt bß tèng tö ", {6, 0, 62, -1, 0, 0}, 403	},
+	{	" tr¨m qu¶ lé ", {6, 1, 73, -1, 0, 0}, 442	},
+	{	" c¸t t­êng bao tiÒn l× x× ", {6, 1, 19, -1, 0, 0}, 442	},
+	{	" hoµng kim b¶o r­¬ng ",	{6,	1,	69,	-1,	0,	0},	442},
+	{	" méc lÖnh bµi tin/th¬ khiÕn cho ",	{6,	1,	885,	-1,	0	,0},	542},
+	{	" ®ång lÖnh bµi tin/th¬ khiÕn cho ",	{6,	1,	886,	-1,	0	,0},	543},
+	{	" ng©n lÖnh bµi tin/th¬ khiÕn cho ",	{6,	1,	887,	-1,	0	,0},	544},
+	{	" kim lÖnh bµi tin/th¬ khiÕn cho ",	{6,	1,	888,	-1,	0	,0},	545},
+	{	" ngù tø tin/th¬ khiÕn cho lÖnh bµi ",	{6,	1,	889,	-1,	0	,0},	546},
+	{	" tói viªn thuèc ",	{6,	1,	910,	-1,	0	,0},	635},
+	{	" thÇn bİ bao tiÒn l× x× hép quµ ",	{6,	1,	1074,	-1,	0	,0},	635},
+	{	" hép quµ [ huy hoµng qu¶ ]",	{6,	1,	1075,	-1,	0	,0},	635},
+	{	" ng­êi gi¶ ",		{6,	1,	1389,	-1,	0,	0},	635	},
 	--tinhpn 20100720: forbid item
-	{	"»ØÌìÔÙÔì½õÄÒ", {6, 1, 1781, -1, 0, 0},635},	
-	{	"Ä¾ÖÆ±¦ºĞ", {6, 1, 2318, -1, 0, 0},635},	
-	{	"Í­ÖÆ±¦ºĞ", {6, 1, 2319, -1, 0, 0},635},	
-	{	"ÒøÖÆ±¦ºĞ", {6, 1, 2320, -1, 0, 0},635},	
-	{	"»Æ½ğ±¦Ïä", {6, 1, 2321, -1, 0, 0},635},	
-	{	"°×½ğ±¦Ïä", {6, 1, 2322, -1, 0, 0},635},	
-	{	"É±ÊÖÃØ±¦", {6, 1, 2347, -1, 0, 0},635},	
-	{	"Ò°ÛÅÉñÃØ±¦Ïä", {6, 1, 2374, -1, 0, 0},635},	
-	{	"ÖÁ×ğÃØ±¦", {6, 1, 2375, -1, 0, 0},635},	
-	{	"Ë®Ôô²Æ±¦", {6, 1, 2376, -1, 0, 0},635},	
-	{	"»ØÌìÔÙÔìÀñ°ü", {6, 1, 2527, -1, 0, 0},635},
-	{	"·ÉËÙÍèÀñ°ü", {6, 1, 2520, -1, 0, 0},635},
-	{	"´óÁ¦ÍèÀñ°ü", {6, 1, 2517, -1, 0, 0},635},
+	{	" håi thiªn t¸i t¹o cÈm nang ", {6, 1, 1781, -1, 0, 0},635},	
+	{	" méc chÕ b¶o hép ", {6, 1, 2318, -1, 0, 0},635},	
+	{	" lµm b»ng ®ång b¶o hép ", {6, 1, 2319, -1, 0, 0},635},	
+	{	" lµm b»ng b¹c b¶o hép ", {6, 1, 2320, -1, 0, 0},635},	
+	{	" hoµng kim b¶o r­¬ng ", {6, 1, 2321, -1, 0, 0},635},	
+	{	" b¹ch kim b¶o r­¬ng ", {6, 1, 2322, -1, 0, 0},635},	
+	{	" s¸t thñ bİ b¶o ", {6, 1, 2347, -1, 0, 0},635},	
+	{	" d· tÈu thÇn bİ b¶o r­¬ng ", {6, 1, 2374, -1, 0, 0},635},	
+	{	" chİ t«n bİ b¶o ", {6, 1, 2375, -1, 0, 0},635},	
+	{	" n­íc tÆc tµi b¶o ", {6, 1, 2376, -1, 0, 0},635},	
+	{	" håi thiªn t¸i t¹o lÔ tói ", {6, 1, 2527, -1, 0, 0},635},
+	{	" nhanh chãng hoµn lÔ tói ", {6, 1, 2520, -1, 0, 0},635},
+	{	" ®¹i lùc hoµn lÔ tói ", {6, 1, 2517, -1, 0, 0},635},
 	--Updated by DinhHQ - 20110425
-	{	"¹¥³ÇÕ½Àñ°ü", {6, 1, 2377, -1, 0, 0},635},
-	{	"¶¾·ÀÍèÀñ°ü", {6, 1, 2524, -1, 0, 0},635},
-	{	"³¤ÃüÍèÀñ°ü", {6, 1, 2515, -1, 0, 0},635},
-	{	"¼ÓËÙÍèÀñ°ü", {6, 1, 2516, -1, 0, 0},635},
-	{	"¸ßÉÁÍèÀñ°ü", {6, 1, 2518, -1, 0, 0},635},
-	{	"¸ßÖĞÍèÀñ°ü", {6, 1, 2519, -1, 0, 0},635},
-	{	"·ÉËÙÍèÀñ°ü", {6, 1, 2520, -1, 0, 0},635},
-	{	"±ù·ÀÍèÀñ°ü", {6, 1, 2521, -1, 0, 0},635},
-	{	"À×·ÀÍèÀñ°ü", {6, 1, 2522, -1, 0, 0},635},
-	{	"»ğ·ÀÍèÀñ°ü", {6, 1, 2523, -1, 0, 0},635},
-	{	"¶¾·ÀÍèÀñ°ü", {6, 1, 2524, -1, 0, 0},635},
-	{	"Î¢É½ÁîÅÆÀñ°ü", {6, 1, 2525, -1, 0, 0},635},
-	{	"»¹»êµ¤Àñ°ü", {6, 1, 2830, -1, 0, 0},635},
-	{	"åĞÒ£É¢", {6, 1, 2831, -1, 0, 0},635},
-	{	"»¹»êµ¤", {6, 1, 2837, -1, 0, 0},635},
+	{	" c«ng thµnh chiÕn lÔ tói ", {6, 1, 2377, -1, 0, 0},635},
+	{	" ®éc phßng hoµn lÔ tói ", {6, 1, 2524, -1, 0, 0},635},
+	{	" tr­êng mÖnh hoµn lÔ tói ", {6, 1, 2515, -1, 0, 0},635},
+	{	" gia tèc hoµn lÔ tói ", {6, 1, 2516, -1, 0, 0},635},
+	{	" cao nhanh chãng hoµn lÔ tói ", {6, 1, 2518, -1, 0, 0},635},
+	{	" trung häc ®Ö nhŞ cÊp hoµn lÔ tói ", {6, 1, 2519, -1, 0, 0},635},
+	{	" nhanh chãng hoµn lÔ tói ", {6, 1, 2520, -1, 0, 0},635},
+	{	" b¨ng phßng hoµn lÔ tói ", {6, 1, 2521, -1, 0, 0},635},
+	{	" l«i phßng hoµn lÔ tói ", {6, 1, 2522, -1, 0, 0},635},
+	{	" löa phßng hoµn lÔ tói ", {6, 1, 2523, -1, 0, 0},635},
+	{	" ®éc phßng hoµn lÔ tói ", {6, 1, 2524, -1, 0, 0},635},
+	{	" vi s¬n lÖnh bµi lÔ tói ", {6, 1, 2525, -1, 0, 0},635},
+	{	" hoµn hån ®an lÔ tói ", {6, 1, 2830, -1, 0, 0},635},
+	{	" tiªu dao t¸n ", {6, 1, 2831, -1, 0, 0},635},
+	{	" hoµn hån ®an ", {6, 1, 2837, -1, 0, 0},635},
 }
 
 WLLS_FORBID_STATES = {
-	{"²»¶¯Ã÷Íõ",	15},
-	{"ÈçÀ´ÌìÒ¶",	273},
-	{"¾²ĞÄ¾÷",	33},
-	{"½ğÖÓÕÖ",	42},
-	{"¾ÅÌì¿ñÀ×",	67},
-	{"³àÑæÊÉÌì",	70},
-	{"±ùÀ¶Ë®¾§",	64},
-	{"´©ÒÂÆÆ¼×",	356},
-	{"Íò¶¾Ê´ĞÄ",	73},
-	{"´©ĞÄ¶¾´Ì",	72},
-	{"¶Ï½î¸¯¹Ç",	390},
-	{"±ùĞÄÕ®Ó°",	269},
-	{"»¤Ìåº®±ù",	100},
-	{"Ñ©Ó°",	109},
-	--´Ë¼¼ÄÜÒÑ¸ÄÎª±»¶¯¼¼ÄÜ£¬²»ÔÙÇå³ı	{"´ò¹·Õó",	124},
-	{"»î²»ÁôÊÖ",	277},
-	{"ËéµûÚ¿Óï",	130},
-	{"»ğÁ¬·Ö»¨",	136},
-	{"»ÃÓ°·Éºü",	137},
-	{"ÌìÄ§½âÌå",	150},
-	{"×øÍüÎŞÎÒ",	157},
-	{"Çå·ç·û",	171},
-	{"»ù°ë·û",	174},
-	{"Ò»ÆøÈıÇå",	178},
-	{"±±Ú¤µ½º£",	393},
-	{"ÌìÇåµØ×Ç",	173},
-	{"Ææº®°ÁÑ©",	175},
-	{"×íÏÉ´ò¹Ç",	394},
-	{"¼¼ÄÜÁîÅÆ1",	631},
-	{"¼¼ÄÜÁîÅÆ2",	632},
-	{"¼¼ÄÜÁîÅÆ3",	633},
-	{"¼¼ÄÜÁîÅÆ4",	634},
-	{"¼¼ÄÜÁîÅÆ5",	635},
+	{"BÊt ®éng minh v­¬ng ",	15},
+	{"Nh­ ngµy qua/n÷a l¸ ",	273},
+	{"TÜnh t©m quyÕt ",	33},
+	{"Kim chung tr¸o ",	42},
+	{"Cöu thiªn cuång l«i ",	67},
+	{"Xİch diÔm phÖ ngµy ",	70},
+	{"B¨ng lam thñy tinh ",	64},
+	{"MÆc quÇn ¸o ph¸ gi¸p ",	356},
+	{"V¹n ®éc thùc t©m ",	73},
+	{"Xuyªn tim gai ®éc ",	72},
+	{"§o¹n g©n hñ cèt ",	390},
+	{"B¨ng t©m tr¸i ¶nh ",	269},
+	{"Hé thÓ hµn b¨ng ",	100},
+	{"TuyÕt ¶nh ",	109},
+	--´Ë¼¼ÄÜÒÑ¸ÄÎª±»¶¯¼¼ÄÜ£¬²»ÔÙÇå³ı	{"§¶ cÈu trËn ",	124},
+	{"Ho¹t kh«ng l­u tay ",	277},
+	{"BÓ ®iÖp cuèng ng÷ ",	130},
+	{" löa ngay c¶ ph©n hoa ",	136},
+	{" ¶o ¶nh bay hå ",	137},
+	{"Thiªn ma gi¶i thÓ ",	150},
+	{"Ngåi quªn v« ng· ",	157},
+	{"Giã m¸t phï ",	171},
+	{"C¬ nöa phï ",	174},
+	{"Mét khİ ba thanh ",	178},
+	{"B¾c minh ®Õn h¶i ",	393},
+	{"Ngµy thanh ®Şa träc ",	173},
+	{"Kú hµn ng¹o tuyÕt ",	175},
+	{"Say tiªn ®¸nh cèt ",	394},
+	{"Kü n¨ng lÖnh bµi 1",	631},
+	{"Kü n¨ng lÖnh bµi 2",	632},
+	{"Kü n¨ng lÖnh bµi 3",	633},
+	{"Kü n¨ng lÖnh bµi 4",	634},
+	{"Kü n¨ng lÖnh bµi 5",	635},
 	-- ¹úÕ½ËÎ½ğ¼¼ÄÜ²»ÄÜÔÚÁªÈüÖĞÊ¹ÓÃ=====>
-	{"¼¼ÄÜÏÈ·æ",	958},
-	{"¼¼ÄÜÔªË§",	959},		
-	{"¼¼ÄÜØ©Ïà",	960},
-	{"¼¼ÄÜ»ÊµÛ",	961},
-	{"¼¼ÄÜÌì×Ó",	962},
+	{"Kü n¨ng tiªn phong ",	958},
+	{"Kü n¨ng Nguyªn so¸i ",	959},		
+	{"Kü n¨ng Thõa t­íng ",	960},
+	{"Kü n¨ng hoµng ®Õ ",	961},
+	{"Kü n¨ng thiªn tö ",	962},
 	-- ¹úÕ½ËÎ½ğ¼¼ÄÜ²»ÄÜÔÚÁªÈüÖĞÊ¹ÓÃ<=====
-	--¸üĞÂ×°±¸ÒõÑô»îÑªµ¤ºÍ»ı¹¦ÖúÁ¦Íè - Modified By DinhHQ - 20110810
-	{"»ı¹¦ÖúÁ¦Íè",	1120},
-	{"»ı¹¦ÖúÁ¦Íè",	261},		
-	{"»ı¹¦ÖúÁ¦Íè",	258},
-	{"»ı¹¦ÖúÁ¦Íè",	260},
-	{"ÒõÑô»îÑªµ¤",	1121},
-	{"ÒõÑô»îÑªµ¤",	256},
-	{"ÒõÑô»îÑªµ¤",	259},
-	{"ÒõÑô»îÑªµ¤",	257},
+	--¸üĞÂ×°±¸¢m d­¬ng ho¹t huyÕt ®an ºÍTİch c«ng trî lùc hoµn - Modified By DinhHQ - 20110810
+	{"Tİch c«ng trî lùc hoµn ",	1120},
+	{"Tİch c«ng trî lùc hoµn ",	261},		
+	{"Tİch c«ng trî lùc hoµn ",	258},
+	{"Tİch c«ng trî lùc hoµn ",	260},
+	{"¢m d­¬ng ho¹t huyÕt ®an ",	1121},
+	{"¢m d­¬ng ho¹t huyÕt ®an ",	256},
+	{"¢m d­¬ng ho¹t huyÕt ®an ",	259},
+	{"¢m d­¬ng ho¹t huyÕt ®an ",	257},
 }
 
-WLLS_LEVEL_DESC = {"ÎäÁÖÁªÈü", "ÎäÁÖÁªÈü"}
+WLLS_LEVEL_DESC = {"Vâ L©m liªn ®Êu", "Vâ L©m liªn ®Êu"}
 WLLS_AWARD_TITLE = {85, 81}	--ĞÂĞã¡¢¸ß¼¶³ÆºÅ½±Àø·Ö±ğÊÇ 85 86 87 88 ºÍ 81 82 83 84
 
 
@@ -291,14 +291,14 @@ WLLS_AWARD_TITLE_EX =
 	[7] = {81, 82, 83,84},
 }
 
---ÎäÁÖÁªÈü¹Ú¾ü(¼ÓÑªÅÜ)	200
---ÎäÁÖÁªÈüÑÇ¾ü(¼ÓÑªÅÜ)	201
---ÎäÁÖÁªÈü¼¾¾ü(¼ÓÑªÅÜ)	202
---ÎäÁÖÁªÈüµî¾ü(¼ÓÑªÅÜ)	203
---ÎäÁÖÁªÈü¹Ú¾ü£¨¼ÓÑª¿¹£©	204
---ÎäÁÖÁªÈüÑÇ¾ü2£¨¼ÓÑª¿¹£©	205
---ÎäÁÖÁªÈü¼¾¾ü2£¨¼ÓÑª¿¹£©	206
---ÎäÁÖÁªÈüµî¾ü2£¨¼ÓÑª¿¹£©	207
+--Vâ L©m liªn ®Êu¹Ú¾ü(¼ÓÑªÅÜ)	200
+--Vâ L©m liªn ®ÊuÑÇ¾ü(¼ÓÑªÅÜ)	201
+--Vâ L©m liªn ®Êu¼¾¾ü(¼ÓÑªÅÜ)	202
+--Vâ L©m liªn ®Êuµî¾ü(¼ÓÑªÅÜ)	203
+--Vâ L©m liªn ®Êu¹Ú¾ü£¨¼ÓÑª¿¹£©	204
+--Vâ L©m liªn ®ÊuÑÇ¾ü2£¨¼ÓÑª¿¹£©	205
+--Vâ L©m liªn ®Êu¼¾¾ü2£¨¼ÓÑª¿¹£©	206
+--Vâ L©m liªn ®Êuµî¾ü2£¨¼ÓÑª¿¹£©	207
 
 
 
@@ -354,7 +354,7 @@ end
 --Ã¿³¡½áÊø¼Ó¾­Ñé
 function wlls_award_pl_exp(n_rate, n_alevel)
 	if (GetUUID() == 0) then	--ÏÂÏßµÄ²»¸ø¾­ÑéÁË
-		wlls_award_log("ÒòÎªÍæ¼ÒÒÑÉ¥Ãü£¬²»ÄÜÁì¾­Ñé½±Àø.")
+		wlls_award_log("Bëi v× nhµ ch¬i ®· bá m¹ng , kh«ng thÓ dÉn kinh nghiÖm t­ëng th­ëng .")
 		return
 	end
 	local n_level = GetLevel()
@@ -365,7 +365,7 @@ function wlls_award_pl_exp(n_rate, n_alevel)
 	end
 	local n_exp = (700+floor((n_level*4-350)/5)*100)*60*0.6*n_rate
 	wlls_add_exp(n_exp)
-	local str = "ÁìÈ¡±ÈÈü½±Àø<color=yellow>"..n_exp.."<color>¾­ÑéÖµ"
+	local str = " nhËn lÊy tranh tµi t­ëng th­ëng <color=yellow>"..n_exp.."<color> kinh nghiÖm trŞ gi¸ "
 	wlls_award_log(str)
 	Msg2Player(str)
 end
@@ -675,8 +675,8 @@ function wlls_award_pl(nLevel, nWin, nTie, nTotal)
 		local nPoint	= wlls_GetAddPoint(nLevel, nWin, nTie)
 		SetTask(WLLS_TASKID_POINT, GetTask(WLLS_TASKID_POINT) + nPoint)
 		SetTask(WLLS_TASKID_HONOUR, GetTask(WLLS_TASKID_HONOUR) + nPoint)
-		Msg2Player(format("¹§Ï²Äã»ñµÃ½±Àø--- §iÈÙÓşÖµÎª %d µã", nPoint))
-		wlls_award_log(format("¹§Ï²Äã»ñµÃÁªÈü½±Àø- §iÈÙÓşÖµÎª%d µã. ×Ü¹²ÓĞ %d µã", nPoint, GetTask(WLLS_TASKID_HONOUR)))
+		Msg2Player(format("Chóc mõng ng­¬i ®¹t ®­îc t­ëng th­ëng -- script viet hoa By http://tranhba.com -  vinh dù trŞ gi¸ lµ %d ®iÓm ", nPoint))
+		wlls_award_log(format("Chóc mõng ng­¬i ®¹t ®­îc liªn cuéc so tµi t­ëng th­ëng -  vinh dù trŞ gi¸ lµ %d ®iÓm . tæng céng cã %d ®iÓm ", nPoint, GetTask(WLLS_TASKID_HONOUR)))
 	end
 	SetTask(WLLS_TASKID_TOTAL, GetTask(WLLS_TASKID_TOTAL) + nTotal)
 end
@@ -699,7 +699,7 @@ function wlls_record_one_match_result(n_level, str_lgname, n_result, n_usedtime)
 	local n_point	= wlls_GetAddPoint(n_level, nWin, nTie)
 	LG_ApplyAppendLeagueTask(WLLS_LGTYPE, str_lgname, WLLS_LGTASK_POINT, n_point)
 	LG_ApplyAppendLeagueTask(WLLS_LGTYPE, str_lgname, WLLS_LGTASK_TIME, n_usedtime)
-	_M("±ÈÈüÊ±¼ä×Ü¹²: "..(n_usedtime/18).." Ãë ")
+	_M("Tranh tµi thêi gian tæng céng : "..(n_usedtime/18).." gi©y ")
 	
 	local _, _, n_memcount = LG_GetLeagueInfo(n_lid)
 	local n_oldidx = PlayerIndex
@@ -712,7 +712,7 @@ function wlls_record_one_match_result(n_level, str_lgname, n_result, n_usedtime)
 			if (n_result == 1) then	--Ê¤
 				
 				SetTask(WLLS_TASKID_LGWIN, GetTask(WLLS_TASKID_LGWIN) + 1)
-				if n_level == 2 then --ÎäÁÖÁªÈüÈ¡µÃÊ¤Àû¼Ó»îÔ¾¶È
+				if n_level == 2 then --Vâ L©m liªn ®ÊuÈ¡µÃÊ¤Àû¼Ó»îÔ¾¶È
 					DynamicExecuteByPlayer(n_plidx, "\\script\\huoyuedu\\huoyuedu.lua", "tbHuoYueDu:AddHuoYueDu", "wulinliansai")
 				end
 			elseif (n_result == 0) then	--Æ½
@@ -759,8 +759,8 @@ end
 function wlls_award_pl_Respect(nRespect)
 	
 	AddRespect(nRespect)
-	Msg2Player(format("ÍşÃûÔö¼Ó %d", nRespect))
-	wlls_award_log(format("»ñµÃ1³¡ÁªÈü½±Àø%d µã, ×Ü¹²ÓĞ%d µãÍşÃû", nRespect, GetRespect()))
+	Msg2Player(format("Uy danh gia t¨ng %d", nRespect))
+	wlls_award_log(format("§¹t ®­îc 1 trµng liªn cuéc so tµi t­ëng th­ëng %d ®iÓm , tæng céng cã %d ®iÓm uy danh ", nRespect, GetRespect()))
 end
 
 --Õ½¶Ó²ÎÈü¼ÇÂ¼
@@ -795,7 +795,7 @@ function wlls_award_lg(n_level, str_lgname, n_result, n_usedtime)
 			
 			G_ACTIVITY:OnMessage("LeagueResult", n_level, n_result);
 			
-			tongaward_league()--°ï»áÖÜÄ¿±ê£¬ÎäÁÖÁªÈü\script\tong\tong_award_head.lua
+			tongaward_league()--°ï»áÖÜÄ¿±ê£¬Vâ L©m liªn ®Êu\script\tong\tong_award_head.lua
 			--start
 			if (n_result == 1) then	--Ê¤
 				wlls_award_pl_exp(20 * 4, n_level)
@@ -814,7 +814,7 @@ function wlls_award_lg(n_level, str_lgname, n_result, n_usedtime)
 			SetTask(WLLS_TASKID_ORGCAMP, 0)
 			ST_StopDamageCounter()	-- Í£Ö¹ÉËº¦¼ÆËã
 			if (n_total > 48 ) then
-				local szMsg = format("ÒÑ²Î¼Ó%d ³¡ÁªÈü£¬»¹Ê£%d³¡", nTotalEx, nMaxCountEx - nTotalEx)
+				local szMsg = format("§· tham gia %d trµng liªn cuéc so tµi , cßn l¹i %d trµng ", nTotalEx, nMaxCountEx - nTotalEx)
 				Msg2Player(szMsg)
 			end
 		end
@@ -832,15 +832,15 @@ function wlls_matchresult(str_league1, str_league2, result, n_usedtime)
 		--ÂÖ¿ÕµÄ£¨×¢Òâ£ºÕâÊ±ÈËÔÚ×¼±¸³¡£©
 		str_league2 = ""
 		result = 1
-		str = str.." ®éi ["..str_league1.."] È¡Ê¤"
+		str = str.." i ["..str_league1.."] thñ th¾ng "
 		wlls_award_lg(n_level, str_league1, 1, n_usedtime)
 	else
 		if (result == 1) then	--Ê¤
-			str = str.." ¶Ó ["..str_league1.."]Õ½Ê¤ ["..str_league2.."]!"
+			str = str.." ®éi ["..str_league1.."] chiÕn th¾ng ["..str_league2.."]!"
 			wlls_award_lg(n_level, str_league1, 1, n_usedtime)
 			wlls_award_lg(n_level, str_league2, 2, n_usedtime)
 		else		--Æ½
-			str = str.." ¶Ó["..str_league1.."]Í¬¶Ó["..str_league2.."] ´òÆ½!"
+			str = str.." ®éi ["..str_league1.."] cïng ®éi ["..str_league2.."] ®¸nh ngang tay !"
 			wlls_award_lg(n_level, str_league1, 0, n_usedtime)
 			wlls_award_lg(n_level, str_league2, 0, n_usedtime)
 		end
@@ -921,12 +921,12 @@ function wlls_en_check()
 		end
 	end
 	if(forbiditem_con > 0 or forbiditem_key > 0) then
-		Say("ÄãÕæÊÇ´óµ¨£¬¸Ò²»Ìı´ÓÎäÁÖÃËÖ÷µÄÃüÁî£¬ÉÃ×Ô´ø½ûÖ¹Ò©Æ·½øÈë£¬¿ìÀë¿ª!", 0)
+		Say("Ng­¬i thËt lµ lín gan , d¸m kh«ng nghe tõ minh chñ vâ l©m ®İch ra lÖnh , tù tiÖn mang cÊm chØ thuèc men tiÕn vµo , mau rêi ®i !", 0)
 		return nil
 	end
 	
 --	if (keyitem[1] == 0 and keyitem[2] == 0 and keyitem[3] == 0) then
---		Say("»á³¡¹ÙÔ±£ºÄãµÄ¿ì½İÀ¸Ä¿Ç°Ã»ÓĞ°Ú·ÅÈÎºÎÒ©Æ·£¬Äã»¹ÊÇ°ÑÒ©Æ··ÅÈë¿ì½İÀ¸°É£¡<color=red>½ø³¡ºó½«½ûÖ¹ÒÆ¶¯ÈÎºÎÎïÆ·£¬ÇëÈ·ÈÏÄãµÄ¿ì½İÀ¸ÎïÆ·ÒÑ¾­°Ú·ÅÍê±Ï£¡<color>", 0)
+--		Say("Héi tr­êng quan viªn  ng­¬i kho¸i tiÖp lan tr­íc m¾t kh«ng cã tr­ng bµy bÊt kú thuèc men , ng­¬i vÉn lµ ®em thuèc men bá vµo kho¸i tiÖp lan ®i <color=red> vµo trµng sau ®em cÊm chØ di ®éng bÊt kú vËt phÈm , xin x¸c nhËn ng­¬i kho¸i tiÖp lan vËt phÈm ®· tr­ng bµy xong <color>", 0)
 --		return nil
 --	end
 	
@@ -962,12 +962,12 @@ function wlls_add_exp(n_exp)
 	local b_expswt	= GetBit(n_switch, 1)
 	local b_expsub	= GetBit(n_switch, 2)
 	if (b_expswt ~= 0) then
-		Msg2Player("ÄãÒÑ½¨Á¢¹Ø±ÕÁªÈü¾­Ñé½±Àø£¬ÄãµÄ¾­Ñé½±ÀøÒÑ¾­È¡Ïû¡£ÈçĞèÒª£¬¿ÉÒÔÈ¥¼ûÁªÈü¹ÙÔ±¸ü¸ÄÉèÁ¢.")
+		Msg2Player("Ng­¬i ®· thµnh lËp t¾t liªn cuéc so tµi kinh nghiÖm t­ëng th­ëng , ng­¬i kinh nghiÖm t­ëng th­ëng ®· hñy bá . nh­ cÇn , cã thÓ ®i thÊy liªn cuéc so tµi quan viªn söa ®æi thiÕt lËp .")
 		return
 	end
 	if (b_expsub ~= 0) then
 		n_exp	= n_exp - GetTaskTemp(WLLS_TEMPTASK)
-		Msg2Player("ÄãÖ»ÄÜ»ñµÃÆäÖĞ®ã"..n_exp.."¾­ÑéÖµ")
+		Msg2Player("Ng­¬i chØ cã thÓ ®¹t ®­îc trong ®ã "..n_exp.." kinh nghiÖm trŞ gi¸ ")
 	end
 	tl_addPlayerExp(n_exp)
 end
@@ -996,7 +996,7 @@ function wlls_levelcheck()
 		local n_over = LG_GetMemberTask(WLLS_LGTYPE, str_lgname, str_plname, WLLS_LGMTASK_OVER)
 		if (n_over > 0 and n_sid > n_over) then	--ÒÑ¾­Ô½¼¶£¬ÇÒÊÇÔÚÒÔÇ°Èü¼¾Ô½¼¶µÄ
 			if (str_plname == str_myname) then
-				return "¶Ô²»Æğ£¬ÄãµÄ²Î¼Ó×Ê¸ñÒÑ±»È¡Ïû¡£Ô­Òò¿ÉÄÜÊÇÄãÉÏÆÚ±ÈÈü³¬¹ı<color=red>ÏŞÖÆµÈ¼¶<color>, »òÕß<color=red>¶Ó³¤(Ê¦¸µ)ÒÑÀë¿ªÈü³¡<color>. ÇëÄãÀë¿ªÄ¿Ç°Èü³¡£¬·ñÔòÄãµÄ¶ÓÎé½«²»ÄÜ²Î¼Ó±ÈÈü."
+				return " thËt xin lçi , ng­¬i tham gia t­ c¸ch ®· bŞ hñy bá . nguyªn nh©n cã thÓ lµ ng­¬i th­îng kú tranh tµi v­ît qua <color=red> h¹n chÕ cÊp bËc <color>, hoÆc lµ <color=red> ®éi tr­ëng ( s­ phã ) ®· rêi ®i cuéc so tµi trµng <color>. mêi/xin ng­¬i rêi ®i tr­íc m¾t cuéc so tµi trµng , nÕu kh«ng ng­¬i ®éi ngò ®em kh«ng thÓ tham gia tranh tµi ."
 			end
 			tb[getn(tb)+1] = str_plname
 		end
@@ -1004,7 +1004,7 @@ function wlls_levelcheck()
 	if (getn(tb) == 0) then
 		return nil
 	end
-	return "¶Ô²»Æğ£¬ÔÚÉÏÆÚ±ÈÈüÖĞ£¬Äã¶ÓÖĞÒ»Ğ©³ÉÔ±µÄµÈ¼¶³¬¹ıÏŞÖÆ: <color=red>"..join(tb, "  ").."<color><enter>ÄãµÄ¶Ó²»ÄÜ²Î¼Ó±¾¼¾±ÈÈü¡£Èç¹ûÏë£¬Äã¿ÉÒÔÀë¶Ó."
+	return " thËt xin lçi , ë trªn cao kú tranh tµi trung , ng­¬i ®éi trung mét İt thµnh viªn ®İch cÊp bËc v­ît qua h¹n chÕ : <color=red>"..join(tb, " ").."<color><enter> ng­¬i ®éi kh«ng thÓ tham gia vèn quı tranh tµi . nÕu nh­ muèn , ng­¬i cã thÓ c¸ch ®éi ."
 end
 
 --µÃµ½µ±Ç°·şÎñÆ÷ÉÏËùÓĞÖ¸¶¨ÀàĞÍµÄµØÍ¼£¨¸ñÊ½£º[SubWorld] = GroupIdx£©
@@ -1041,7 +1041,7 @@ function wlls_CheckIsOpen(nLevel)
 	local nClose = GetGlbValue(GLB_WLLS_CLOSE)
 	if (nClose) then
 		if (GetBit(nClose, nLevel) ~= 0) then
-			Say(wlls_npcname().."¶Ô²»Æğ£¬Ö÷»ú"..WLLS_LEVEL_DESC[nLevel].."Ä¿Ç°ÔİÍ£!", 0)
+			Say(wlls_npcname().." thËt xin lçi , chñ c¬ "..WLLS_LEVEL_DESC[nLevel].." tr­íc m¾t t¹m ngõng !", 0)
 			return nil
 		end
 	end

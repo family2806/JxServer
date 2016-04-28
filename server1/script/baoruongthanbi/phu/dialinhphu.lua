@@ -5,11 +5,11 @@ function  main(nItemIndex)
 	
 	
 	if nDate > nItemData then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ£¬×Ô¶¯ÏûÊ§.")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông, tù ®éng mÊt ®i.")
 		return 0;
 	end
 	if (CalcFreeItemCellCount() < 3) then
-		Talk(1,"","×°±¸²»×ã3¸ö¿Õ¸ñ")
+		Talk(1,"","Hµnh trang kh«ng ®ñ 3 « trèng")
 		return 1
 	end
 	for i=1, 2 do
@@ -17,7 +17,7 @@ function  main(nItemIndex)
 		ITEM_SetExpiredTime(ItemIndex, 10080);
 		SyncItem(ItemIndex);
 	end
-	Msg2Player("ÄúÊÕµ½2¸öµØÁé·û")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."ÉñÃØ±¦Ïä"..GetAccount().."\t"..GetName().."\t".."´ò¿ªµØÁé·ûÀñ°üÊÕµ½Á½¸öµØÁé·û")
+	Msg2Player("B¹n nhËn ®­îc 2 §Şa Linh Phï")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."B¶o R­¬ng ThÇn Bİ"..GetAccount().."\t"..GetName().."\t".."Më §¹i Linh Phï LÔ Bao nhËn ®­îc 2 §Şa Linh Phï ")
 	
 end

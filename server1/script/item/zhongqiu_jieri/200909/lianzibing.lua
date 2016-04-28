@@ -12,13 +12,13 @@ function main()
 		
 		if PlayerFunLib:CheckLevel(50,"default",">=") ~= 1 then return 1 end
 		if PlayerFunLib:IsCharged("default") ~= 1 then return 1 end
-		if PlayerFunLib:CheckTask(2653,300,"Ã¿ÈËÖ»ÄÜ´Ó[Á«Åº±ı]»ñµÃ300.000.000 ¾­Ñé£¬","<") ~= 1 then return 1 end
+		if PlayerFunLib:CheckTask(2653,300,"Mçi nh©n vËt chØ thu ®­îc 300.000.000 Exp tõ [b¸nh h¹t sen]","<") ~= 1 then return 1 end
 		
 		PlayerFunLib:AddExp(30000000,0,"MidAutumn,UseItem")
 		PlayerFunLib:AddTask(2653,30)
 		return 0
 	else
-		Talk(1, "", "¸ÃÎïÆ·Ö»ÄÜÔÚ16-11-2009Ö®Ç°Ê¹ÓÃ.")
+		Talk(1, "", "VËt phÈm nµy chØ cã thÓ sö dông tr­íc 16-11-2009.")
 		return 1
 	end
 	return 1

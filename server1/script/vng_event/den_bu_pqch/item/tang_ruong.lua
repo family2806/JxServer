@@ -17,12 +17,12 @@ function main(nItemIndex)
 	local nMaxCount = 0
 	
 	if (IsCityMap() ~=1) then
-		Talk(1, "", "·ÇÕ½¶·³ÇÊĞÇøÓò²ÅÄÜÊ¹ÓÃ")
+		Talk(1, "", "Khu vùc thµnh thŞ phi chiÕn ®Êu míi cã thÓ sö dông")
 		return 1
 	end
 	
 	if (nValueParam <= 0 ) then
-		Talk(1,"","ÒÑÈ¡³öÆäÖĞµÄÈ«²¿¸»¹ó½õºĞÁË£¬¿ÉÒÔ¶ªÆú.")
+		Talk(1,"","§· rót hÕt toµn bé Phó Quı CÈm H¹p trong ®ã råi, cã thÓ vøt ®i.")
 		return 0
 	end
 	
@@ -32,18 +32,18 @@ function main(nItemIndex)
 		nMaxCount = nValueParam
 	end
 	
-	local szTitle = "ÇëÊäÈëĞèÒªÈ¡³öµÄÊı"
+	local szTitle = "Xin mêi nhËp sè cÇn rót"
 	g_AskClientNumberEx(1, nMaxCount, szTitle, {GetPQCH,{nItemIndex}})
 	
 	return 1
 end
 
 function GetPQCH(nItemIndex,nCount)
-	local tbAward = {szName = "¸»¹ó½õºĞ", tbProp = {6,1,2402,1,0,0}, nCount = 1, nExpiredTime = 20160}
+	local tbAward = {szName = "Phó Quı CÈm H¹p", tbProp = {6,1,2402,1,0,0}, nCount = 1, nExpiredTime = 20160}
 	local nItemParam = GetItemParam(nItemIndex,1)
 	
 	if ( nCount > CalcFreeItemCellCount() ) then
-		Talk(1,"",format("×°±¸²»×ã %d ¿ÕÎ»..",nCount))
+		Talk(1,"",format("Hµnh trang kh«ng ®ñ %d « trèng ..",nCount))
 		return
 	end
 	
@@ -52,7 +52,7 @@ function GetPQCH(nItemIndex,nCount)
 	end
 	
 	if ( nCount > nItemParam ) then
-		Talk(1,"",format("Ä¿Ç°ÄãÖ»»¹ÓĞ %d ¸»¹ó½õºĞ..",nItemParam))
+		Talk(1,"",format("HiÖn t¹i b¹n chØ cßn %d Phó Quı CÈm H¹p ..",nItemParam))
 		return	
 	end
 	
@@ -80,5 +80,5 @@ end
 
 function GetDesc(nItemIndex)
 	local nValueParam =GetItemParam(nItemIndex,1)
-	return format("»¹Ê£Óà :<color=yellow>%d<color>¸»¹ó½õºĞ", nValueParam)
+	return format("Cßn d­ l¹i :<color=yellow>%d<color> Phó Quı CÈm H¹p", nValueParam)
 end

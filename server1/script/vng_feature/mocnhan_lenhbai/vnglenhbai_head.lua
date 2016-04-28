@@ -22,7 +22,7 @@ end
 
 function tbVngLenhBai:UseItem(nIndex, nTaskType)
 	if self:isExpired(nIndex) == 1 then
-		Msg2Player("ÎïÆ·¹ıÊ¹ÓÃÆÚ")
+		Msg2Player("VËt phÈm qu¸ h¹n sö dông")
 		return 1
 	end
 	local nNowTaskID = GetTask(ID_RANDOMTASK); 	
@@ -38,14 +38,14 @@ function tbVngLenhBai:UseItem(nIndex, nTaskType)
 		SetTask(self.TSK_UseCountPerDay, nUseState)
 	end	
 	if mod(nUseState, 256) >= nPerDayUseCount then		
-		Talk(1, "", format("Ã¿ÈËÃ¿ÌìÖ»ÄÜÊ¹ÓÃ¸ÃÎïÆ·%d ´Î.", nPerDayUseCount))
+		Talk(1, "", format("Mçi ngµy mçi ng­êi ch¬i chØ ®­îc sö dông vËt phÈm nµy %d lÇn.", nPerDayUseCount))
 		return 1		
 	end		
 	if nTaskState>0 and nTaskState<3 then
-		Say("<color=green>ÁîÅÆÈÎÎñ<color>: Ã÷È·ÓĞËæ»úÈÎÎñÎªÍê³É£¬ÒÀÈ»Ïë¼ÌĞø½ÓĞÂµÄÈÎÎñÂğ?",
+		Say("<color=green>LÖnh bµi nhiÖm vô<color>: HiÖn t¹i cã nhiÖm vô ngÉu nhiªn ch­a hoµn thµnh, vÉn muèn tiÕp nhËn nhiÖm vô míi sao?",
 			2,
-			format("§ó¶Ô£¬ÎÒÏë·ÅÆúÖ®Ç°µÄÈÎÎñ/#tbVngLenhBai:ConfirmRandomBookTask(%d, %d)", nIndex, nTaskType),
-			"²»ÊÇ£¬µÈÒ»ÏÂÏÈ!/OnTaskWait");
+			format("§óng vËy, ta muèn hñy bá nhiÖm vô tr­íc ®©y/#tbVngLenhBai:ConfirmRandomBookTask(%d, %d)", nIndex, nTaskType),
+			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnTaskWait");
 		return 1;
 	else
 		local tbTempList = self.tbTaskList[nTaskType]

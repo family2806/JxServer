@@ -28,9 +28,9 @@ function tbaddJinShanDao_NpcAndTrap:AddMons()
 	end
 	local tbMon =
 	{
-		{713-2, "·ü²¨"},
-		{714-2, "ÆÆÀË"},
-		{715-2, "³Ë·ç"}
+		{713-2, "Phôc Ba"},
+		{714-2, "Ph¸ Lang"},
+		{715-2, "Thõa Phong"}
 	}
 	local nRowCount = TabFile_GetRowCount(npcfile)
 	for i=2, nRowCount do

@@ -20,7 +20,7 @@ function BT2DTFight(orgmissionid,Player1, Player2)
 	local mapid = dt_getfightmap();						--µÃµ½µ¥ÌôµØÍ¼id
 	local mapindex = SubWorldID2Idx(mapid)		--µÃµ½µØÍ¼ºÅmapidµÄË÷Òı
 	if (mapindex < 0) then
-		print("error!µ¥ÌôµØÍ¼²»ÔÚ±¾·şÎñÆ÷ÉÏ£¬ÇëÔËÓª¹Ù¼ì²é");
+		print("Error!Server nµy hiÖn thiÕu khu vùc ®¬n ®Êu! Xin bé phËn kü thuËt kiÓm tra gÊp!");
 		return
 	end;
 
@@ -98,7 +98,7 @@ function dt_EnterMap(newworldindex,pindex)
 		print("newworld"..newworldid.." "..x1.." "..y1)
 		AddMSPlayer(DTMISSIONID,1)
 		SetCurCamp(1);
-		local str2 = "<#>ËÎ·½"..GetName().."½øÈëÁËµ¥ÌôÕ½³¡";
+		local str2 = "<#> phe Tèng"..GetName().."vµo khu vùc ®¬n ®Êu";
 	else
 		local newworldid =	 SubWorldIdx2ID(newworldindex)
 		
@@ -113,10 +113,10 @@ function dt_EnterMap(newworldindex,pindex)
 		AddMSPlayer(DTMISSIONID, 2)
 		SetCurCamp(2);
 		
-		local str2 = "<#>½ğ·½"..GetName().."½øÈëÁËµ¥ÌôÕ½³¡";
+		local str2 = "<#> phe Kim"..GetName().."vµo khu vùc ®¬n ®Êu";
 	end;
-	local str1 = "Äú½øÈëµ¥ÌôÕ½³¡£¬Äú½«ÓĞ3·ÖÖÓÊ±¼äÓë¶ÔÊÖ¾öÒ»ÉúËÀ¡£ÈçÈôÄú»ñµÃÊ¤Àû»áµÃµ½Ò»¶¨µÄ»ı·Ö½±Àø£¬ÄúÓëÄúµÄ¶ÔÊÖ½«±»ËÍ»ØËÎ½ğÕ½³¡¸÷×ÔµÄºóÓª¡£ÈçÈôÊ§°Ü»òÊ±¼ä½áÊø£¬Ôò²»»áµÃµ½ÈÎºÎ½±ÀøºÍ³Í·£¶ø·µ»ØËÎ½ğÕ½³¡¸÷×ÔµÄºóÓª¡£"
-	Talk(1,"",str1.."<enter>    <color=red>Õ½  ¶·  ¿ª  Ê¼£¡")
+	local str1 = "B¹n ®i vµo khu vùc ®¬n ®Êu! B¹n chØ cã 3 phót ®Ó tiªu diÖt ®èi thñ! NÕu b¹n thÊt b¹i hoÆc thêi gian kÕt thóc, b¹n sÏ ®­îc d­a vÒ hËu doanh."
+	Talk(1,"",str1.."<enter>  <color=red>Chİnh thøc khai chiÕn!")
 	Msg2Player(str2);
 	
 	SubWorld = orgworldidx

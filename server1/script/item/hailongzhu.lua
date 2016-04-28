@@ -11,12 +11,12 @@ function main()
 	end
 	
 	if (GetTask(jf0904_TSK_hailongzhu_UseTime) >= 2) then
-		Say("Ã¿ÌìÖ»ÄÜÊ¹ÓÃ2¸öº£ÁúÖé", 0);
+		Say("Mçi ngµy chØ cã thÓ sö dông 2 H¶i Long Ch©u", 0);
 		return 1
 	end
 	
 	SetTask(jf0904_TSK_hailongzhu_UseTime, GetTask(jf0904_TSK_hailongzhu_UseTime)+1);
 	SetTask(jf0904_TSK_shuizei_FulfilTaskTime, GetTask(jf0904_TSK_shuizei_FulfilTaskTime)+1);
-	Say("»ñµÃÒ»´Î¶îÍâ»ú»á²Î¼ÓÏûÃğË®Ôô!", 0);
+	Say("Thu ®­îc c¬ héi thªm mét lÇn tham gia Tiªu diÖt thñy tÆc!", 0);
 end
 

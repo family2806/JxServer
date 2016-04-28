@@ -17,6 +17,6 @@ end
 function zhengbranch4()
 	AddOwnExp(600000)
 	AddExp_Skill_Extend(600000)
-	Msg2Player("ÄãÒÑÉ±ÁËÁú×·Îè¸øÁøÄÏÔÆ±¨³ğ¡£¿ÉÒÔ»ØÈ¥¼ûËûÁË.")
+	Msg2Player("B¹n ®· giÕt ®­îc Long Truy Vò tr¶ thï cho LiÔu Nam V©n. Cã thÓ quay vÒ gÆp «ng ta.")
 	Talk(1,"","Ng­¬i.......")
 end

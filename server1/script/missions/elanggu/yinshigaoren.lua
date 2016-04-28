@@ -6,10 +6,10 @@ function main()
 	local nNpcIndex = GetLastDiagNpc()
 	local szNpcName = GetNpcName(nNpcIndex)
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>¶ñÀÇ°ïÊÇÒ»»ï¾Ó×¡ÔÚ¶ñÀÇ¹ÈµÄÇ¿µÁ£¬Òò´Ë²ÅµÃÃû¶ñÀÇ¹È¡£ÕâĞ©ÈË×¨ÃÅÈ¥»öº¦Á¼Ãñ£¬ÎÛÃï½­ºşÈËÊ¿µÄÃûÓş£¬ºÜ¶àÓ¢ĞÛºÀ½Ü¶¼Ïë³ıÈ¥ËûÃÇ¡£µ«ÊÇ£¬Õâ»ïÈËÓµÓĞÎäÁÖÊ§´«ÒÑ¾ÃµÄ»¤ÌåÉñ¹¦£¬Ò»°ãµÄµ¶Ç¹±øÆ÷¶¼²»ÄÜÉËµ½ËûÃÇ¡£30ÄêÇ°£¬ÓĞÒ»¸ö½­ºşÆæ²Å·¢Ã÷ÁËÇ¬À¤»÷Á¦µ¤£¬ÌıËµ¸Ãµ¤ÍşÁ¦ÎŞÇî£¬Èç¹û´óÏÀ¿ÉÒÔÕÒµ½Ëü£¬¾ÍÄÜÇáËÉ¶Ô·½ËûÃÇµÄ»¤ÌåÉñ¹¦£¬»¹°ÙĞÕÒ»¸ö°²¾²µÄÉú»î¡£."
+	tbDailog.szTitleMsg = "<npc>¸c Lang Bang lµ mét ®¸m c­êng ®¹o trong ¸c Lang Cèc, do ®ã míi cã tªn lµ ¸c Lang Cèc. Bän ng­êi nµy chuyªn ®i lµm h¹i d©n lµnh, lµm « uÕ thanh danh cña nh÷ng ng­êi trong giang hå, rÊt nhiÒu anh hïng h¶o hín ®Òu muèn trõ h¹i nã. Nh­ng mµ nghe ®ån r»ng ®¸m ng­êi cña ¸c Lang Bang nµy ®ang n¾m gi÷ chiªu thøc thÊt truyÒn ®· l©u cña chèn vâ l©m ®ã lµ Hé ThÓ ThÇn C«ng, nh÷ng lo¹i binh khİ ®ao kiÕm b×nh th­êng ®Òu kh«ng thÓ ®· th­¬ng ®­îc nã. 30 n¨m tr­íc cã mét ®¹i hiÖp giang hå kú tµi ®· ph¸t minh ra ®­îc “ Cµn Kh«n Tİch LŞch §¬n”, nghe nãi Cµn Kh«n Tİch LŞch §¬n cã uy lùc v« song, nÕu ®¹i hiÖp cã thÓ t×m ®­îc “Cµn Kh«n Tİch LŞch §¬n”. th× ta nghÜ r»ng sÏ dÔ dµng mµ ®èi phã víi Hé ThÓ ThÇn C«ng cña ®¸m ng­êi ¸c Lang Bang nµy, ®Ó tr¶ l¹i cho b¸ t¸nh ®¹i Tèng cuéc sèng yªn b×nh."
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
-	tinsert(tbDailog, {"ÎÒÏëÀë¿ª!", GoToWaiMian})
-	tinsert(tbDailog, {"µÈÒ»ÏÂ"})
+	tinsert(tbDailog, {"Ta muèn rêi khái ®©y!", GoToWaiMian})
+	tinsert(tbDailog, {"§îi mét l¸t"})
 	CreateNewSayEx(tbDailog.szTitleMsg, tbDailog)
 end
 

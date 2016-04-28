@@ -1,4 +1,4 @@
---½ÌÊ¦½Ú07ÀñºÐ
+--½Ì“S­”½Ú07ÀñºÐ
 Include("\\script\\lib\\award.lua");
 Include("\\script\\event\\teacher_day_200711\\head.lua");
 function main()
@@ -6,19 +6,19 @@ function main()
 	if (nDate >= TeacherDay200711_START_TIME and nDate <= TeacherDay200711_UseLimitTime) then--2007Äê11ÔÂ17ÈÕ ÖÁ2007Äê12ÔÂ02ÈÕ 24µã00
 		local tbAwardItemPic =
 		{
-			{nGID =6, nDID = 1, nPID = 1599, szName = "×ð", nRate = 10},--¡°×ð¡±×Ö	
-			{nGID =6, nDID = 1, nPID = 1600, szName = "Ê¦", nRate = 10},  --¡°Ê¦¡±×Ö	
-			{nGID =6, nDID = 1, nPID = 1601, szName = "ÖØ", nRate = 10},   --¡°ÖØ¡±×Ö	
-			{nGID =6, nDID = 1, nPID = 1602, szName = "µÀ", nRate = 10},   --¡°µÀ¡±×Ö	
-			{nGID =6, nDID = 0, nPID = 20, szName = "Ãµ¹å»¨Óê", nRate = 60},   --Ãµ¹å»¨Óê
+			{nGID =6, nDID = 1, nPID = 1599, szName = "T«n", nRate = 10},--¡°T«n¡±×Ö	
+			{nGID =6, nDID = 1, nPID = 1600, szName = "“S­”", nRate = 10},  --¡°“S­”¡±×Ö	
+			{nGID =6, nDID = 1, nPID = 1601, szName = "Träng", nRate = 10},   --¡°Träng¡±×Ö	
+			{nGID =6, nDID = 1, nPID = 1602, szName = "§¹o", nRate = 10},   --¡°§¹o¡±×Ö	
+			{nGID =6, nDID = 0, nPID = 20, szName = "Mai Kh«i Hoa Vò ", nRate = 60},   --Mai Kh«i Hoa Vò 
 		}
 		local nItemIndex=TeacherDay200711_RandomGetOne(tbAwardItemPic,1,getn(tbAwardItemPic));
 		AddItem(tbAwardItemPic[nItemIndex]["nGID"],tbAwardItemPic[nItemIndex]["nDID"],tbAwardItemPic[nItemIndex]["nPID"],1,0,0);
-		Msg2Player(format("»ñµÃ %d %s",1,tbAwardItemPic[nItemIndex]["szName"]))
-		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.","2007ÄêÔ½ÄÏ½ÌÊ¦½Ú»î¶¯",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),1,tbAwardItemPic[nItemIndex]["szName"] ));
+		Msg2Player(format("NhËn ®­îc %d %s",1,tbAwardItemPic[nItemIndex]["szName"]))
+		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.","Ho¹t ®éng Nhµ gi¸o ViÖt Nam 2007",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),1,tbAwardItemPic[nItemIndex]["szName"] ));
 		return 0;
 	else
-		Say("Ô½ÄÏ½ÌÊ¦½Ú»î¶¯ÒÑ½áÊø",0)
+		Say("Ho¹t ®éng Nhµ gi¸o ViÖt Nam ®· kÕt thóc",0)
 		return 0;
 	end
 end

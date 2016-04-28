@@ -6,22 +6,22 @@ Include("\\script\\lib\\awardtemplet.lua")
 function main(nItemIndex)
 	
 	if tbRefiningIron:IsCarryOn() ~= 1 then
-		Msg2Player("ÒòÎªÊ±¼ä·Å¾ÃÁËËùÒÔº¬½ğºĞ»µÁË");
+		Msg2Player("Hµm Kim H¹p bŞ h­ bëi v× l­u gi÷ qu¸ l©u");
 		return 0;
 	end
 	
 	if CalcFreeItemCellCount() < 1 then
-		CreateTaskSay({"ÇëÕûÀí±³°ü£¡Òª1¸ö¿ÕÎ»£¡",  "¿ÉÒÔÁË./Cancel",});
+		CreateTaskSay({"H·y s¾p xÕp hµnh trang! §Ó trèng 1 «!",  "§­îc råi./Cancel",});
 		return 1;
 	end
 	
 	local tbAwardItem = 
 	{
-		szName="¾«Á¶¸Ö", 
+		szName="ThĞp Tinh LuyÖn", 
 		tbProp={6,1, 2293, 1,0,0},
 		nCount = 8,
 		nExpiredTime=tbRefiningIron.nCloseDate,
 	};
-	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Ê¹ÓÃº¬½ğºĞ");
+	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Sö dông hµm kim h¹p");
 	return 0;
 end

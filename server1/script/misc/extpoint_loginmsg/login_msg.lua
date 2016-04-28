@@ -10,10 +10,10 @@ LOGINMSG_EXTPOINTID	= 7;
 LOGINMSG_BITL			= 1;
 LOGINMSG_BITH			= 4;
 TB_LOGINMSG_BYBIT = {
-[1]	= "╩╤с╜ю╢╣╫╟каЦ╫ёою!",
-[2]	= "в╒рБвтнр╠ё╩╓,╫В╥юйэф╜ио╣╠.",
-[3]	= "йй╤хсно╥рФдт,Ёацтсно╥икиМ.",
-[4]	= "╨оюМ╟╡еей╠╪Д,оМйэ╫║©╣иЗ╩Н.",
+[1]	= "Ch╣o mУng b╧n ╝уn vМi VБ L╘m Truyрn KЗ !",
+[2]	= "ChС Щ b╤o vж b╤n th╘n, cхn thкn bч lУa.",
+[3]	= "Ch╛i game ╝iрu ╝И, tr╦nh ╤nh h╜Кng ╝уn sЬc khoн.",
+[4]	= "S╬p xуp thЙi gian v╣ c╚ng viжc thкt hНp lЩ.",
 };
 
 function extpoint_loginmsg()

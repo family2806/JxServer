@@ -23,33 +23,33 @@ end
 function want_bid_option()
 	local optiontab = {}
 	if (validateDate(CP_BEGIN_BID_DATE, CP_END_BID_DATE)) then	--ÔÚ¾ºÑ¡Áì¶ÓµÄÊ±¼äÊ±
-		talkstr = "Òª¾ºÕùÇøÓò×ÜÁì¶Ó°¡?"
+		talkstr = "Muèn tranh chÊp Tæng LÜnh ®éi cña khu vùc µ?"
 		optiontab = {
-						"¿´Ñ¡×ÜÁì¶ÓµÄ½áÊøÊ±¼ä/look_endbid",
-						"½øÈëÎäÁÖ´ó»áÈü³¡/transtoplace",
-						"ÎÒÏëÒª¾ºÕùÇøÓò×ÜÍ³Áì£¨¸÷°ïÖ÷£©/want_bid",
-						"²é¿´ÎÒÏÖÔÚµÄÌôÕ½×Ü×Ê²ú	1/look_bid_self",
-						"²é¿´ÎÒÏÖÔÚµÄÌôÕ½Çé¿ö/look_bid_first",
-						"µÃµ½ÎäÁÖĞÂĞãÑ¡ÊÖ³ÆºÅ /catch_title",
-						"°ïÖúÎäÁÖ´ó»á/help_championship",
-						"ÎÒÒ»»á»ØÀ´!/OnCancel"
+						"Xem thêi gian kÕt thóc chän Tæng l·nh ®éi/look_endbid",
+						"Vµo §Êu tr­êng Vâ l©m ®¹i héi/transtoplace",
+						"ta muèn tranh chÊp Tæng l·nh ®éi khu vùc (c¸c Bang chñ) /want_bid",
+						"Tra xem tæng vèn th¸ch ®Êu hiÖn nay cña ta/look_bid_self",
+						"Tra xem t×nh h×nh th¸ch ®Êu hiÖn nay cña ta /look_bid_first",
+						"NhËn danh hiÖu tuyÓn thñ kiÖt xuÊt /catch_title",
+						"Gióp ®ì Vâ l©m ®¹i héi/help_championship",
+						"Ta sÏ quay l¹i sau!/OnCancel"
 					}
 	elseif(tonumber(date("%y%m%d%H")) >= CP_UPTO_TRYOUT) then
-		talkstr = "ÏëÒªÈ¡µÃÇøÓòÑ¡ÊÖ×Ê¸ñÂğ?"	--ÒÑ¾­¾ö³ö×ÜÁì¶Ó
+		talkstr = "Muèn nhËn t­ c¸ch tuyÓn thñ cña khu vùc µ?"	--ÒÑ¾­¾ö³ö×ÜÁì¶Ó
 		optiontab = {
-						"±¨Ãû²Î¼ÓÁª'ÎäÁÖĞÂĞã'Èü¡±'/regist_freshman",
-						"ÁìÌôÕ½½ğ/give_back",
-						"ÁìÈ¡ÎäÁÖĞÂĞãÑ¡ÊÖ³ÆºÅ/catch_title",
-						"ÁìÌôÕ½½ğ£¨×ÜÁì¶Ó£©/send_card",
-						"²é¿´ÎäÁÖĞÂĞãÑ¡ÊÖÃûµ¥ºÍ±ÈÈü×Ê¸ñ/look_card",
-						"°ïÖúÎäÁÖ´ó»á/help_championship",
-						"ÎÒÒ»»á»ØÀ´!/OnCancel"
+						"B¸o danh tham gia liªn ®Êu 'kiÖt xuÊt'/regist_freshman",
+						"L·nh l¹i tiÒn th¸ch ®Êu/give_back",
+						"NhËn danh hiÖu tuyÓn thñ kiÖt xuÊt /catch_title",
+						"L·nh l¹i tiÒn th¸ch ®Êu (Tæng L·nh ®éi) /send_card",
+						"Tra xem danh s¸ch tuyÓn thñ kiÖt xuÊt vµ tu c¸ch thi ®Êu/look_card",
+						"Gióp ®ì Vâ l©m ®¹i héi/help_championship",
+						"Ta sÏ quay l¹i sau!/OnCancel"
 			}
 	elseif (tonumber(date("%y%m%d%H")) > CP_END_BID_DATE) then
-		Say("¾ºÕù»î¶¯ÒÑ½áÊø£¡ÇëµÈ´ıÎäÁÖ´ó»áÔ¤Ñ¡Èü¿ªÊ¼£¡Ö®ºó²é¿´½á¹û¡£", 0)
+		Say("Ho¹t ®éng tranh chÊp ®· kÕt thóc! Xin ®îi trËn dù tuyÓn §¹i héi Vâ l©m b¾t ®Çu! Sau nµy h·y tra xem kÕt qu¶. ", 0)
 		return
 	else
-		Say(" ÎäÁÖ´ó»á»î¶¯ÏÖÔÚ¿ªÊ¼£¡Çë×¢ÒâÍ¨ÖªĞÅÏ¢!",0);
+		Say(" Ho¹t ®éng Vâ l©m ®¹i héi hiÖn t¹i ch­a b¾t ®Çu! Vui lßng chó ı tin tøc th«ng b¸o!",0);
 		return
 	end
 
@@ -58,22 +58,22 @@ end
 
 function want_bid()
 	if (GetTongFigure() ~= TONG_MASTER) then
-		Say("Ö»ÓĞ°ïÖ÷ÓĞ×Ê¸ñ²Î¼Ó¾ºÈü£¬Äã»ØÈ¥°É!", 0);
+		Say("ChØ cã Bang chñ míi cã t­ cÊp tham gia th¸ch ®Êu, hay lµ ng­¬i vÒ ®i!", 0);
 		return 0
 	end
 	if(GetLevel() < 90) then
-		Say("90¼¶ÒÔÉÏµÄ°ïÖ÷²Å¿ÉÒÔ¾ºÕù×ÜÁì¶Ó£¡Äã»ØÈ¥°É£¡", 0)
+		Say("§¼ng cÊp cña Bang chñ ph¶i lín h¬n cÊp 90 míi cã thÓ tranh chÊp Tæng L·nh ®éi! Ng­¬i h·y trë vÒ!", 0)
 		return
 	end
 	local strName = GetName();
 	if (str__findicon(strName) == 0) then
-		Say("Ã¿´ÎÍ¶±êÒª100ÍòÕû£¬×îµÍ¼ÛÊÇ100ÍòÁ½£¬Ã¿´ÎÍ¶±ê×î¶àÊÇ5ÒÚÁ½. ", 2, "È·ÈÏ/sure_bid", "È¡Ïû/OnCancel")
+		Say("Sè tiÒn mçi lÇn ®Êu thÇu lµ sè ch½n 100 v¹n, gi¸ thÊp nhÊt lµ 100 v¹n l­îng, mçi lÇn ®Êu thÇu nhiÒu nhÊt lµ 50 ngµn v¹n l­îng. ", 2, "X¸c nhËn/sure_bid", "Hñy bá /OnCancel")
 	end
 end
 
 function sure_bid()
 	if (GetTongFigure() ~= TONG_MASTER) then
-		Say("Ö»ÓĞ°ïÖ÷²ÅÓĞÍ¶±ê×Ê¸ñ£¬Äã»ØÈ¥°É!", 0);
+		Say("ChØ cã Bang chñ míi cã t­ cÊp tham gia th¸ch ®Êu, hay lµ ng­¬i vÒ ®i!", 0);
 		return 0
 	end
 
@@ -81,7 +81,7 @@ function sure_bid()
 	if (not flag) then  
 		return
 	end
-	AskClientForNumber("bit",1000000,500000000, "ÇëÊäÈëÍ¶±êÇ®Êı:");
+	AskClientForNumber("bit",1000000,500000000, "Xin nhËp sè tiÒn ®Êu thÇu vµo:");
 end
 
 function check_bid_title()
@@ -90,7 +90,7 @@ function check_bid_title()
 	for i =1 , 10 do 
 		topten_name = biwu_getdata(LEVELTOP10, "LevelTop10", "Top"..i)
 		if (name == topten_name) then
-			Say("ÄãÒÑ½øÈëÊ®´ó¸ßÊÖÊÀ½ç£¬ÓĞ×Ê¸ñ²Î¼ÓÎäÁÖĞÂĞãÁªÈü´ó»á!Äã²»ÄÜ¾ºÕù×ÜÁì¶Ó£¡»ØÈ¥°É£¡", 0)
+			Say("B¹n ®· vµo thÕ giíi thËp ®¹i cao thñ, cã t­ c¸ch tham gia vµo §¹i héi Vâ l©m kiÖt xuÊt! B¹n kh«ng thÓ tranh chøc Tæng L·nh ®éi! H·y vÒ ®i!", 0)
 			return nil
 		end
 	end
@@ -100,15 +100,15 @@ end
 
 function bit(fee)
 	if( fee < 1000000 ) then
-		Say("¾º¼Û×îµÍÊÇ100Íò.", 0);
+		Say("Gi¸ tranh chøc thÊp nhÊt lµ 100 v¹n.", 0);
 		return 0
 	end
 	if( fee > 500000000 ) then
-		Say("Ã¿´Î¾ºÕù×î¶àÊÇ5ÒÚÁ½.", 0);
+		Say("Mçi lÇn tranh chøc nhiÒu nhÊt lµ 50 ngµn v¹n l­îng.", 0);
 		return 0
 	end
 	if( GetCash() < fee ) then
-		Say("ÄãÇ®²»¹»£¬µÈ×¼±¸¹»ÁËÔÙÀ´°É£¡", 0);
+		Say("B¹n kh«ng ®ñ tiÒn, chuÈn bŞ ®ñ h·y tíi nhĞ!", 0);
 		return 0
 	end
 	biwu_loadfile(BID_DATA);
@@ -121,7 +121,7 @@ function bit(fee)
 	if (mod(fee, 1000000) ~= 0) then
 		dibs = mod(fee, 1000000)
 		fee = intfee * 1000000
-		Msg2Player(" Ã¿´Î¾ºÕùÒª100ÍòÕû£¬ÕÒÄãÇ®Ö®ºó»¹ÓĞÊ£ÓàµÄ"..dibs.."Á½")
+		Msg2Player(" Sè tiÒn mçi lÇn tranh chøc ph¶i lµ sè ch½n 100 v¹n, tr¶ l¹i b¹n tiÒn cßn d­!"..dibs.." l­îng")
 	end
 	Pay(fee);
 	fee = floor(fee/10000)
@@ -132,9 +132,9 @@ function bit(fee)
 		cp_saveback_count(fee)
 		Ladder_NewLadder(10130, MasterName, intfee, 1);
 print("the first bid")
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]¾ºÕù"..fee.."ÍòÁ½.");
-		Say("ÄãµÚÒ»´Î¾º±ê.Õâ´Î¾º±êµÄ¼ÛÇ®ÊÇ"..fee.."ÍòÁ½¡£ÏµÍ³ÒÑ¼Ç×¡ÄãµÄÃû×Ö£¬×Ê½ğºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É.",0);
-		Msg2SubWorld("Íæ¼Ò <color=blue> "..GetName().."<color> ¸Õ¸Õ²Î¼ÓÁËÇøÓò×ÜÁì¶ÓµÄ¾ºÕù")
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tranh chøc"..fee.."v¹n l­îng.");
+		Say("B¹n lÇn ®Çu ®Õn tranh chøc. Sè tiÒn tranh chøc lÇn nµy lµ "..fee.."v¹n l­îng. HÖ thèng ®· ghi tªn, sè tiÒn vµ tµi kho¶n cña b¹n, thao t¸c tham gia tranh chøc cña b¹n ®· hoµn thµnh.",0);
+		Msg2SubWorld("Ng­êi ch¬i <color=blue> "..GetName().."<color> Võa míi tham dù tranh chøc Tæng l·nh ®éi cña khu vùc")
 		return 1
 	end
 print("bid back bid")
@@ -145,9 +145,9 @@ print("bid back bid")
 	biwu_save(BID_DATA);
 	cp_saveback_count(TongBid)
 	Ladder_NewLadder(10130, MasterName, intTongBid, 1);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]¼ÌĞø¾º±ê"..fee.."ÍòÁ½. ÏÖÔÚ×ÜÊıÎª"..TongBid.."ÍòÁ½.");
-		Say("Õâ´Î¾º±êµÄ¿ª¼ÛÊÇ"..fee.."ÍòÁ½. ÏµÍ³ÒÑ¼ÇÂ¼ÏÂÄãµÄÃû×Ö£¬×Ê½ğÊıºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É¡£µ½ÏÖÔÚ£¬ÄãµÄ¾º±ê×Ü×Ê½ğÎª"..TongBid.."ÍòÁ½.", 0);
-		Msg2SubWorld("Íæ¼Ò<color=blue> "..GetName().."<color>¸Õ¸Õ²Å²Î¼ÓÇøÓò×ÜÁì¶ÓµÄ¾ºÕù")
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tiÕp tôc tranh chøc"..fee.."v¹n l­îng. ÏÖÔÚ×ÜÊıÎª"..TongBid.."v¹n l­îng.");
+		Say("Sè tiÒn tranh chøc lÇn nµy cña b¹n lµ "..fee.."v¹n l­îng. ÏµÍ³ÒÑ¼ÇÂ¼ÏÂÄãµÄÃû×Ö£¬×Ê½ğÊıºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É¡£µ½ÏÖÔÚ£¬ÄãµÄ¾º±ê×Ü×Ê½ğÎª"..TongBid.."v¹n l­îng.", 0);
+		Msg2SubWorld("Ng­êi ch¬i <color=blue> "..GetName().."<color> Võa míi tham dù tranh chøc Tæng l·nh ®éi cña khu vùc")
 	return 1
 end
 
@@ -159,12 +159,12 @@ function send_card()	--Ñ¡ÔñÊÇ·ñÅÉ·¢
 	sendmonth , senddate , sendhour = look_the_time( CP_SENDCARD_OPEN )
 	endmonth , enddate , endhour = look_the_time( CP_SENDCARD_END )
 if ( tonumber( date( "%y%m%d%H" ) ) < CP_SENDCARD_OPEN ) then
-	Say(" ×ÜÁì¶Ó×Ê¸ñµ½"..sendmonth.."ÔÂ"..senddate.."ÈÕ"..sendhour..",µ½"..endmonth.."ÔÂ "..enddate.."ÈÕ"..endhour.."½áÊø", 0)
+	Say(" Tæng L·nh ®éi cßn t­ c¸ch ®Õn "..sendmonth.."nguyÖt "..senddate.."nhËt "..sendhour..", ®Õn"..endmonth.."nguyÖt "..enddate.."nhËt "..endhour.." kÕt thóc", 0)
 	return
 end
 
 if ( tonumber( date( "%y%m%d%H" ) ) > CP_SENDCARD_END ) then
-	Say("×ÜÁì¶Ó·¢¾ò²Î¼ÓÎäÁÖĞÂĞãÁªÈü×Ê¸ñÒÑ½áÊø£¬Äã¿ÉÒÔÈ¥²é¿´ÎäÁÖĞÂĞãÁªÈüÑ¡ÊÖµÄÃûµ¥!", 0)
+	Say("Tæng lÜnh ®éi ph¸t quyÕt t­ c¸ch tham gia vâ l©m kiÖt xuÊt ®· kÕt thóc, b¹n cã thÓ ®Õn tra xem danh danh s¸ch tuyÓn thñ trËn vâ l©m kiÖt xuÊt!", 0)
 return
 end
 
@@ -172,16 +172,16 @@ end
 	biwu_loadfile(BID_LEADER)
 	local leader_name = biwu_getdata(BID_LEADER, "Leader_Name", "Name")
 	if (GetName() ~= leader_name) then
-		Say("Äã²»ÊÇÇøÓò×ÜÁì¶Ó£¬Ã»ÓĞ×Ê¸ñÑ¡Ôñ²Î¼ÓÎäÁÖĞÂĞãÁªÈüµÄ×Ê¸ñ!", 0)
+		Say("B¹n kh«ng ph¶i lµ Tæng L·nh ®éi khu vùc, kh«ng cã t­ c¸ch chän t­ c¸ch tham gia trËn vâ l©m kiÖt xuÊt!", 0)
 		return
 	end
 	if ( IsCaptain() ~= 1 ) then
-		Say("Äã²»ÊÇ¶Ó³¤£¬Ó¦ÓÉĞ¡×é¶Ó³¤ÅÉ³ö. ",0);
+		Say("B¹n kh«ng ph¶i lµ ®éi tr­ëng, ph¶i do ®éi tr­ëng cña nhãm ph¸i ra. ",0);
 		return 0
 	end
 	MemCount = GetTeamSize();
 	if ( MemCount <= 1 ) then
-		Say("ÄãµÄ¶ÓÎéÖĞÃ»ÓĞÆäËû³ÉÔ±£¬²»ÄÜÅÉ³ö.",0);
+		Say("Trong ®éi cña b¹n kh«ng cã thµnh viªn kh¸c, kh«ng thÓ ph¸i ra.",0);
 		return 0
 	end
 	local TeamMembers = "";
@@ -190,7 +190,7 @@ end
 		TeamMembers = TeamMembers..","..GetName()
 	end
 	PlayerIndex = orgindex
-	Say("ÄãÒªÅÉ"..TeamMembers.."²Î¼Ó¾öÈü£¿Èç¹ûµÍÓÚ90¼¶µÄ»°½«Ã»ÓĞ×Ê¸ñ²Î¼Ó±ÈÈü¡£Òª<color=yellow>"..endmonth.."ÔÂ "..enddate.."ÈÕ"..endhour.." <color>½áÊø.", 2, "Ïë/ensure", "ÎÒÕıÔÚÏë/OnCancel"); 
+	Say("Ng­¬i muèn ph¸i"..TeamMembers.."Tham gia vßng chung kÕt? NÕu ®¼ng cÊp d­íi 90 sÏ kh«ng ®ñ t­ c¸ch thi ®Êu. CÇn <color=yellow>"..endmonth.."nguyÖt "..enddate.."nhËt "..endhour.." <color> kÕt thóc.", 2, "Muèn/ensure", "ta ®ang suy nghÜ /OnCancel"); 
 	return
 end
 
@@ -209,20 +209,20 @@ function ensure(ncount)	--È·ÈÏÅÉ·¢
 			local flag = provide(TeamMemberName);
 			if (not flag) then 
 				PlayerIndex = orgindex
-				Say("ÄãÒÑÃ»ÓĞÈ¨ÀûÅÉÈË²Î¼Ó¾öÈü", 0)
-				WriteLog(date("%Y-%m-%d %H:%M:%S,")..GetAccount()..",["..GetName().."] ×ÜÁì¶Ó²ÅÓĞ×Ê¸ñÅÉÈË²Î¼Ó±ÈÈü!")
+				Say("Ng­¬i ®· hÕt quyÒn ph¸i ng­êi tham gia vßng chung kÕt", 0)
+				WriteLog(date("%Y-%m-%d %H:%M:%S,")..GetAccount()..",["..GetName().."] Tæng l·mh ®éi  míi cã t­ c¸ch ph¸i ng­êi tham gia thi ®Êu!")
 				break 
 			end
 			nt_settask(CP_TASKID_TITLE, 9)
 			Title_AddTitle(19, 1, TITLETIME);	--ÕâÑùÊÇ¸ø×Ô¼º¼Ó»¹ÊÇ¸ø¶ÓÓÑ£¿
 			Title_ActiveTitle( 19 );
-			Talk(1, "", "ÄãÈ¥µÄÎäÁÖ´ó»áÑ¡ÊÖ³ÆºÅ");
-			Msg2SubWorld("¹§Ï²Íæ¼Ò["..GetName().."]È¡µÃÎèÁÖ´ó»áÑ¡ÊÖ³ÆºÅ")
-			WriteLog(date("%Y-%m-%d %H:%M:%S,")..GetAccount()..",["..GetName().."]×ÜÁì¶Ó²é¿´±ÈÈü×Ê¸ñ")
+			Talk(1, "", "B¹n nhËn ®­îc danh hiÖu tuyÓn thñ Vâ l©m ®¹i héi");
+			Msg2SubWorld("Chóc mõng Ng­êi ch¬i ["..GetName().."] ®· nhËn ®­îc t­ c¸ch tuyÓn thñ Vâ l©m ®¹i héi ")
+			WriteLog(date("%Y-%m-%d %H:%M:%S,")..GetAccount()..",["..GetName().."] Tæng L·nh ®éi xĞt duyÖt t­ c¸ch thi ®Êu")
 		elseif( IsCaptain() ~= 1 and GetTask(CP_TASKID_TITLE) == 9 ) then
-			Msg2Player("ÄãÒÑÓĞ¾öÈüÑ¡ÊÖ×Ê¸ñ")
+			Msg2Player("b¹n ®· cã t­ c¸ch tuyÓn thñ vßng chung kÕt")
 		elseif( IsCaptain() ~= 1 and GetLevel() < 90 ) then
-			Msg2Player("ÄãµÄµÈ¼¶²»µ½90¼¶£¬²»ÄÜÁìÈ¡¾öÈüÑ¡ÊÖµÄ×Ê¸ñ")
+			Msg2Player("®¼ng cÊp cña b¹n ch­a ®¹t ®Õn cÊp 90, kh«ng thÓ nhËn t­ c¸ch tuyÓn thñ vßng chung kÕt")
 		end
 	end
 	PlayerIndex = orgindex
@@ -235,7 +235,7 @@ function provide(MemberName)	--ÅÉ·¢×Ê¸ñ
 		MemberCount = 0;
 	end
 	if ( MemberCount >= 29 ) then
-		Say("ÕâÇøµÄ±ÈÈü¶ÓÎéÒÑÂú£¬Äã²»ÄÜÁìÈ¡Õâ¸ö×Ê¸ñ¡£.", 0);
+		Say("Sè ®éi thi ®Êu cña khu vùc nµy ®· ®ñ, b¹n kh«ng thÓ nhËn ®­îc t­ c¸ch nµy.", 0);
 		return nil
 	end
 	count = tostring(MemberCount + 1);
@@ -251,24 +251,24 @@ function give_back()
 	MasterName = GetName();
 	TongBid = tonumber(biwu_getdata(BID_DATA, MasterName, "Bid"));
 	if (not TongBid) then
-		Say("ÄãÃ»ÓĞ²Î¼Ó¾ºÑ¡Áì¶ÓµÄ»î¶¯£¬ÎªÊ²Ã´»¹ÒªÏëÃ°ÏÕÄØ?", 0)
+		Say("B¹n ch­a tham gia ho¹t ®éng tranh tuyÓn l·nh ®éi, sao còng muèn m¹o hiÓm?", 0)
 		return
 	end
 	biwu_loadfile(BID_LEADER)
 	firstname = biwu_getdata(BID_LEADER, "Leader_Name", "Name")
 	if (firstname ~= "" and firstname ~= nil and firstname == MasterName) then
-		Say("ÄãÒÑÕùÈ¡µ½±¾ÇøµÄ×ÜÁì¶Ó×Ê¸ñ£¬²»ÍË»¹Ç®¸øÄãÁË!", 0)
+		Say("B¹n ®· tranh tuyÓn t­ c¸ch Tæng L·nh ®éi cña khu vùc nµy, kh«ng thÓ tr¶ l¹i tiÒn cho b¹n!", 0)
 		return
 	end
 	if (TongBid == 0) then
-		Say("Äã¾ºÑ¡µÄ·ÑÓÃÎÒÒÑ¾­ÍË»¹¸øÄãÁË.", 0)
+		Say("Sè tiÒn tranh chøc mµ b¹n tranh tuyÓn, ta ®· tr¶ b¹n råi.", 0)
 		return
 	end
 	if (nt_gettask(CP_TASKID_BACKCONT) <= 0) then
-		Say("Äã¾ºÑ¡µÄ·ÑÓÃÎÒÒÑ¾­È«²¿ÍË»¹¸øÄãÁË.", 0)
+		Say("Sè tiÒn tranh chøc mµ b¹n tranh tuyÓn ta ®· tr¶ hÕt cho b¹n råi.", 0)
 		return
 	end
-	Say("Èç¹ûÊıÄ¿´óÓÚ5ÒÚÁ½£¬Ã¿´ÎÄã½«Òª¸¶5ÒÚÁ½¡£ÁìÖ®Ç°ÇëÈ·ÈÏÄã¿ÉÒÔÁìÈ¡ÕâĞ©Ç®.", 2, "ÏÖÔÚÎÒÒÑ¾­ÁìÁË/sure_give_back", "ÎÒµÈÏÂ»ØÀ´/OnCancel")
+	Say("NÕu sè tiÒn lín h¬n 50 ng¹n v¹n l­îng, b¹n sÏ ®­îc tr¶ tiÒn mçi lÇn lín nhÊt lµ 50 ngµn v¹n l­îng. Tr­íc khi l·nh h·y x¸c nhËn b¹n cã thÓ mang ®­îc sè tiÒn nµy.", 2, "HiÖn ta ®· l·nh/sure_give_back", "§îi chót ta quay l¹i/OnCancel")
 end
 
 function sure_give_back()
@@ -276,26 +276,26 @@ function sure_give_back()
 	MasterName = GetName();
 	TongBid = tonumber(biwu_getdata(BID_DATA, MasterName, "Bid"));
 	if (not TongBid) then
-		Say("ÄãÃ»ÓĞ²Î¼Ó¾ºÑ¡Áì¶ÓµÄ»î¶¯£¬ÎªÊ²Ã´»¹ÒªÏëÃ°ÏÕÄØ?", 0)
+		Say("B¹n ch­a tham gia ho¹t ®éng tranh tuyÓn l·nh ®éi, sao còng muèn m¹o hiÓm?", 0)
 		return
 	end
 	biwu_loadfile(BID_LEADER)
 	firstname = biwu_getdata(BID_LEADER, "Leader_Name", "Name")
 	if (firstname ~= "" and firstname ~= nil and firstname == MasterName) then
-		Say("ÄãÒÑÕùÈ¡µ½±¾ÇøµÄ×ÜÁì¶Ó×Ê¸ñ£¬²»ÍË»¹Ç®¸øÄãÁË!", 0)
+		Say("B¹n ®· tranh tuyÓn t­ c¸ch Tæng L·nh ®éi cña khu vùc nµy, kh«ng thÓ tr¶ l¹i tiÒn cho b¹n!", 0)
 		return
 	end
 	if (TongBid == 0) then
-		Say("Äã¾ºÑ¡µÄ·ÑÓÃÎÒÒÑ¾­ÍË»¹¸øÄãÁË.", 0)
+		Say("Sè tiÒn tranh chøc mµ b¹n tranh tuyÓn, ta ®· tr¶ b¹n råi.", 0)
 		return
 	end
 	if (nt_gettask(CP_TASKID_BACKCONT) <= 0) then
-		Say("Äã¾ºÑ¡µÄ·ÑÓÃÎÒÒÑ¾­È«²¿ÍË»¹¸øÄãÁË.", 0)
+		Say("Sè tiÒn tranh chøc mµ b¹n tranh tuyÓn ta ®· tr¶ hÕt cho b¹n råi.", 0)
 		return
 	end
 
 	if (GetCash() > 1500000000) then
-		Say("ºÃÏñÄã´øÀ´µÄÇ®Ì«¶àÁË£¬Òª»¹¸øÄãµÄÇ®ÎÒÔİÊ±±£¹Ü¡£µÈÄãĞèÒªÓÃÇ®µÄÊ±ºòÔÙÀ´Áì°É.", 0)
+		Say("H×nh nh­ b¹n mang theo qu¸ nhiÒu tiÒn, tiÒn cÇn tr¶ l¹i cho b¹n ta t¹m thêi gi÷ lÊy. §îi ®Õn lóc b¹n cã thÓ ®ùng ®­îc tiÒn råi h·y ®Õn l·nh.", 0)
 		return
 	end
 
@@ -309,8 +309,8 @@ function sure_give_back()
 		Earn(BackBid)
 		nt_settask(CP_TASKID_BACKCONT, nt_gettask(CP_TASKID_BACKCONT) - 1)
 		TongBid = TongBid * 100
-		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]µÃµ½5ÒÚÁ½£¬»¹ÓĞ"..TongBid.."ÍòÁ½Ã»ÓĞ²¹»Ø")
-		Say("ÒòÎªÄã¾ºÕùµÄ·ÑÓÃ´óÓÚ50ÒÚÁ½£¬ÎÒÏÈÕÒÄã50ÍòÁ½£¬Äã»¹ÓĞ<color=yellow>"..TongBid.."<color>ÍòÁ½ÔÚÎÒÕâÀï£¬ÏÈ¼ì²éÄãµÄ±³°üÄÜ²»ÄÜ×°ÏÂÕâĞ©Ç®ÔÙÀ´!", 0)
+		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]nhËn ®­îc 50 ngµn v¹n l­îng, cßn l¹i"..TongBid.."v¹n l­îng ch­a tr¶.")
+		Say("V× sè tiÒn tranh chøc cña b¹n lín h¬n 50 ngµn v¹n l­îng, ta tr¶ cho b¹n 50 ngµn v¹n l­îng tr­íc, b¹n cßn l¹i<color=yellow>"..TongBid.."<color>v¹n l­îng ë chç ta, h·y x¸c nhËn hµnh trang cña b¹n cã thÓ chøa ®ñ tiÒn råi h·y quay l¹i nhËn tiÒn!", 0)
 	else
 		BackBid = BackBid * 1000000
 		biwu_setdata(BID_DATA, MasterName, "Bid", tostring(0))
@@ -318,13 +318,13 @@ function sure_give_back()
 		Earn(BackBid)
 		nt_settask(CP_TASKID_BACKCONT, 0)
 		BackBid = BackBid/10000
-		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]µÃµ½ÍË¿î"..BackBid.."ÍòÁ½, ÒÑÍË»¹ËùÓĞ¾ºÕù·ÑÓÃ.")
-		Say("Ta tr?color=yellow>"..BackBid.."<color>ÍòÁ¾¸øÄã£¬Çë½ÓÊÜ!", 0)
+		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]nhËn ®­îc tiÒn tr¶ l¹i"..BackBid.."v¹n l­îng, ®· tr¶ l¹i tÊt c¶ tiÒn tranh chøc.")
+		Say("Ta tr¶<color=yellow>"..BackBid.."<color>v¹n l­îng cho b¹n, xin nhËn lÊy!", 0)
 	end
 end
 
 function catch_title()
-	Say("ÄãÏëÒªÁìÈ¡ÄÄ¸öÃûºÅ£¿", 5, "×ÜÁì¶Ó/leader", "ÊÀ½çÊ®´ó¸ßÊÖ/level_top10", "ÎäÁÖ´ó»áÑ¡ÊÖ/nomal_player", "Ê®´óÃÅÅÉµÄÇ°5´ó¸ßÊÖ/#faction_top5("..GetLastFactionNumber()..")", "²»Ïë/OnCancel");
+	Say("B¹n muèn nhËn danh hiÖu nµo?", 5, "Tæng L·nh ®éi/leader", "ThËp ®¹i cao thñ thÕ giíi/level_top10", "Vâ L©m §¹i héi tuyÓn thñ /nomal_player", "5 h¹ng ®Çu cña mçi ThËp ®¹i m«n ph¸i/#faction_top5("..GetLastFactionNumber()..")", "Kh«ng muèn/OnCancel");
 end
 
 function level_top10()	--ÊÀ½çÊ®´óÁìÈ¡³ÆºÅ
@@ -335,22 +335,22 @@ function level_top10()	--ÊÀ½çÊ®´óÁìÈ¡³ÆºÅ
 			nt_settask(CP_TASKID_TITLE, 9)
 			Title_AddTitle(8, 1, TITLETIME);
 			Title_ActiveTitle( 8 );
-			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]ÁìÈ¡ÁËÎäÁÖ´ó»áÊ®´ó¸ßÊÖÃûºÅ")
-			Msg2Player("ÄãÁìÈ¡ÁËÎäÁÖ´ó»áÊ®´ó¸ßÊÖÃûºÅ");
+			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®· nhËn ®­îc danh hiÖu ThËp ®¹i cao thñ Vâ l©m ®¹i héi")
+			Msg2Player("B¹n nhËn ®­îc danh hiÖu ThËp ®¹i cao thñ Vâ l©m ®¹i héi");
 			return 1
 		end
 	end
-	Say("ÄãÃ»ÓĞ×Ê¸ñÁìÈ¡ÊÀ½çÊ®´ó¸ßÊÖµÄ³ÆºÅ.", 0);
+	Say("B¹n kh«ng cã t­ c¸ch nhËn danh hiÖu ThËp ®¹i cao thñ thÕ giíi.", 0);
 	return
 end
 
 function faction_top5(factionnumber)	--10´óÃÅÅÉÇ°ÎåÁìÈ¡³ÆºÅ
 	if( factionnumber < 0 or factionnumber > 9 ) then
-		Say("Äã²»ÊÇÊ®´óÃÅÅÉµÄÈË.", 0);
+		Say("B¹n kh«ng ph¶i ng­êi cña ThËp ®¹i m«n ph¸i.", 0);
 		return
 	end
 	if( tonumber(date("%y%m%d%H")) < CP_END_TRYOUT ) then
-		Say("ÃÅÅÉÔ¤Ñ¡ÈüÏÖÔÚ»¹Ã»ÓĞ½áÊø£¬»¹Ã»ÓĞ²úÉúÃÅÅÉÇ°Îå£¬²»ÄÜÁìÈ¡ÃûºÅ.", 0)
+		Say("TrËn dù tuyÓn m«n ph¸i hiÖn ch­a kÕt thóc, ch­a t×m ra 5 h¹ng ®øng dÇu m«n ph¸i, kh«ng thÓ cÊp danh hiÖu.", 0)
 		return
 	end
 	biwu_loadfile( Faction[factionnumber + 1][1] );
@@ -360,12 +360,12 @@ function faction_top5(factionnumber)	--10´óÃÅÅÉÇ°ÎåÁìÈ¡³ÆºÅ
 			nt_settask(CP_TASKID_TITLE, 9)
 			Title_AddTitle(factionnumber + 9, 1, TITLETIME);
 			Title_ActiveTitle(factionnumber + 9);
-			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]µÃµ½"..FactionTitle[factionnumber+1].."ÃûºÅ");
-			Msg2Player("ÄãµÃµ½"..FactionTitle[factionnumber+1].."ÃûºÅ");
+			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®¹t ®­îc"..FactionTitle[factionnumber+1].."danh hiÖu");
+			Msg2Player("B¹n ®¹t ®­îc"..FactionTitle[factionnumber+1].."danh hiÖu");
 			return 1
 		end
 	end
-	Say("ÄãÃ»ÓĞ×Ê¸ñÁìÈ¡ÎäÁÖ´ó»áÃÅÅÉ¸ßÊÖ³ÆºÅ",0);
+	Say("B¹n kh«ng ®ñ t­ c¸ch nhËn danh hiÖu Cao thñ m«n ph¸i Vâ l©m ®¹i héi.",0);
 	return
 end
 
@@ -373,7 +373,7 @@ function nomal_player()
 	biwu_loadfile(LEADER_MEMBER)
 	count = tonumber(biwu_getdata(LEADER_MEMBER, "LeadMember", "Count"))
 	if(not count ) then
-		Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:×ÜÁì¶Ó»¹Ã»ÓĞ°ä·¢¸øÄãÔ¤Ñ¡×Ê¸ñ£¬ÄãÃ»ÓĞ×Ê¸ñÁìÈ¡ÃûºÅ!", 0)
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:Tæng L·nh ®éi ch­a cÊp ph¸t t­ c¸ch dù tuyÓn cho b¹n, b¹n kh«ng cã t­ c¸ch ®Ó nhËn danh hiÖu!", 0)
 		return
 	end
 	local name = GetName()
@@ -383,41 +383,41 @@ function nomal_player()
 			nt_settask(CP_TASKID_TITLE, 9)
 			Title_AddTitle(19, 1, TITLETIME);	--ÕâÑùÊÇ¸ø×Ô¼º¼Ó»¹ÊÇ¸ø¶ÓÓÑ£¿
 			Title_ActiveTitle( 19 );
-			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]ÒÑÁìÈ¡µ½ÎäÁÖ´ó»áÑ¡ÊÖÃûºÅ");
-			Msg2Player("ÄãµÃµ½ÎèÁÖ´ó»áÑ¡ÊÖÃûºÅ");
+			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®· nhËn ®­îc danh hiÖu TuyÓn thñ Vâ l©m ®¹i héi ");
+			Msg2Player("B¹n nhËn ®­îc danh hiÖu TuyÓn thñ Vâ l©m ®¹i héi");
 			return
 		end
 	end
-	Say("×ÜÁì¶Ó»¹Ã»ÓĞ¸øÄãÔ¤Ñ¡×Ê¸ñ£¬ÄãÎŞ·¨È¡µÃÕâ¸öÌØ¶÷!", 0)
+	Say("Tæng L·nh ®éi ch­a cÊp ph¸t t­ c¸ch dù tuyÓn cho b¹n, b¹n kh«ng thÓ nhËn ®Æc ©n nµy!", 0)
 end
 
 function leader()	--Áì¶ÓÁìÈ¡³ÆºÅ
 	biwu_loadfile(BID_LEADER)
 	local name = biwu_getdata(BID_LEADER, "Leader_Name", "Name")
 	if(GetName() ~= name) then
-		Say("ÄãÃ»ÓĞ×Ê¸ñÁìÈ¡´ËÇøÓòÁì¶Ó³ÆºÅ.", 0)
+		Say("B¹n kh«ng ®ñ t­ c¸ch nhËn danh hiÖu L·nh ®éi khu vùc nµy.", 0)
 		return
 	end
 	nt_settask(CP_TASKID_TITLE, 9)
 	Title_AddTitle(7, 1, TITLETIME);
 	Title_ActiveTitle(7);
-	WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]ÒÑÁìÈ¡µ½ÎäÁÖ´ó»á×ÜÁì¶Ó³ÆºÅ");
-	Msg2Player("ÄãÁìÈ¡µ½ÎäÁÖ´ó»á×ÜÁì¶Ó");
+	WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®· nhËn ®­îc danh hiÖu Tæng L·nh ®éi Vâ L©m ®¹i héi");
+	Msg2Player("B¹n nhËn ®­îc Tæng L·nh ®éi Vâ L©m ®¹i héi");
 end
 
 function look_bid_first()
 	local MasterName = Ladder_GetLadderInfo(10130, 1);
 	if (not MasterName ) then
-		Say("ÏÖÔÚÃ»ÓĞ¾ºÕù¶ÔÊÖ.", 0)
+		Say("HiÖn kh«ng cã ng­êi tranh chøc.", 0)
 print("no new ladder1")
 		return
 	end
 	if (MasterName == "") then
-		Say("ÏÖÔÚÃ»ÓĞ¾ºÕù¶ÔÊÖ.", 0)
+		Say("HiÖn kh«ng cã ng­êi tranh chøc.", 0)
 print("no new ladder2")
 		return
 	end
-	Say("ÏÖÔÚ¾ºÕùÕßÃÇ²Î¼Ó¾ºÕù×î¸ßÊÇ<color=yellow>"..MasterName.."<color>Íæ¼Ò.", 0)	
+	Say("HiÖn ng­êi tranh chøc ng­êi tham gia tranh chøc cao nhÊt lµ<color=yellow>"..MasterName.."<color> ng­êi ch¬i.", 0)	
 end
 
 function look_bid_self()
@@ -427,7 +427,7 @@ function look_bid_self()
 	MasterName = GetName();
 	TongBid = tonumber(biwu_getdata(BID_DATA, MasterName, "Bid"));
 	if( not TongBid ) then
-		Say("Äã»¹Ã»ÓĞ²Î¼Ó¾ºÕù»î¶¯£¬ÏëÒªÊÔÊÔÂğ?", 0)
+		Say("B¹n ch­a tham gia ho¹t ®éng tranh chøc, cã muèn thö kh«ng?", 0)
 		return
 	end
 	TongBid = TongBid * 100
@@ -439,20 +439,20 @@ function look_bid_self()
 		end
 	end
 	if (flag == 0) then
-		Say("ÄãÏÖÔÚµÄ¾ºÕùÊıÄ¿ÊÇ"..TongBid.."ÍòÁ½, »¹Î´½øÈëÇ°Ê®.", 0)
+		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."v¹n l­îng, ch­a vµo 10 h¹ng ®Çu.", 0)
 	else
-		Say("ÄãÏÖÔÚµÄ¾ºÕùÊıÄ¿ÊÇ"..TongBid.."ÍòÁ½, ÅÅĞĞ"..flag..", ", 0)
+		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."v¹n l­îng, xÕp h¹ng"..flag..", ", 0)
 	end
 end
 
 function look_card()
 	listtab = {
-				"Ñ¡³öÀ´µÄÊÀ½çÊ®´ó¸ßÊÖÃûµ¥/look_list_topten",
-				"Ñ¡³öÀ´µÄÃ¿¸öÃÅÅÉÇ°5/look_list_factop",
-				"×ÜÁì¶ÓºÍÆäËûÑ¡ÊÖ/look_list_member",
-				"»¹ÓĞÊ²Ã´ºÃÊÂÂğ/OnCancel"
+				"Danh s¸ch ThËp ®¹i cao thñ thÕ giíi ®­îc tuyÓn/look_list_topten",
+				"5 h¹ng ®Çu cña mçi m«n ph¸i ®­îc tuyÓn/look_list_factop",
+				"Tæng L·nh ®éi vµ c¸c tuyÓn thñ kh¸c/look_list_member",
+				"cßn g× ®Ñp kh«ng?/OnCancel"
 				}
-	Say("ÄãÒª¿´ÄÄ¸öÃûµ¥? ", getn(listtab), listtab)
+	Say("B¹n muèn xem danh s¸ch nµo? ", getn(listtab), listtab)
 end
 
 function look_list_topten()
@@ -468,19 +468,19 @@ function look_list_topten()
 	end
 	
 	if (ncount > 0) then
-		Say("Ñ¡³öÀ´µÄÊÀ½çÊ®´ó¸ßÊÖÃûµ¥ÈçÏÂ: ", getn(topten_mem), topten_mem)
+		Say("Danh s¸ch ThËp ®¹i cao thñ thÕ giíi ®­îc tuyÓn nh­ sau: ", getn(topten_mem), topten_mem)
 	else
-		Say("ÊÀ½çÊ®´ó¸ßÊÖÃûµ¥»¹Ã»ÓĞ³öÀ´. ", 0)
+		Say("Danh s¸ch ThËp ®¹i cao thñ thÕ giíi hiÖn ch­a xuÊt hiÖn. ", 0)
 	end
 end
 
 function look_list_factop()
 	if (tonumber(date("%y%m%d%H")) < CP_END_TRYOUT) then
-		Say(" ±ÈÈü»¹Î´½áÊø£¬¸÷ÃÅÅÉ»¹Ã»ÓĞ¸ø³öÓĞ×Ê¸ñµÄÃûµ¥. ", 0)
+		Say(" TrËn ®Êu ch­a kÕt thóc, danh s¸ch ®ñ t­ c¸ch ®­îc tuyÓn ë c¸c m«n ph¸i ch­a xuÊt hiÖn. ", 0)
 		return
 	end
-local factab = {"ÉÙÁÖ/#look_list_fac(1)", "ÌìÍõ/#look_list_fac(2)", "ÌÆÃÅ/#look_list_fac(3)", "Îå¶¾/#look_list_fac(4)", "¶ëÃ¼/#look_list_fac(5)", "´äÑÌ/#look_list_fac(6)", "Ø¤°ï/#look_list_fac(7)", "ÌìÈÌ/#look_list_fac(8)", "Îäµ±/#look_list_fac(9)", "À¥ÂØ/#look_list_fac(10)" , "Ã»ÔÙ¿´¼û!/OnCancel"}
-	Say("ÄãÏë¿´ÄÇ¸öÃÅÅÉÑ¡³öÀ´µÄÃûµ¥Âğ£¿", getn(factab), factab)
+local factab = {"ThiÕu L©m/#look_list_fac(1)", "Thiªn V­¬ng/#look_list_fac(2)", "§­êng M«n/#look_list_fac(3)", "Ngò §éc/#look_list_fac(4)", "Nga Mi/#look_list_fac(5)", "Thóy Yªn/#look_list_fac(6)", "C¸i Bang/#look_list_fac(7)", "Thiªn NhÉn/#look_list_fac(8)", "Vâ §ang/#look_list_fac(9)", "C«n L«n/#look_list_fac(10)" , "Kh«ng xem n÷a!/OnCancel"}
+	Say("B¹n muèn xem danh s¸ch ®­îc tuyÓn cña m«n ph¸i ®ã µ?", getn(factab), factab)
 end
 
 function look_list_fac(nfact)
@@ -495,9 +495,9 @@ function look_list_fac(nfact)
 		 end
 	end
 	if (ncount > 0) then
-		Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:"..Faction[nfact][3].."ÖĞÑ¡ÃÅÅÉÃûµ¥:", getn(topfac_mem), topfac_mem);
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:"..Faction[nfact][3].."Danh s¸ch m«n ph¸i tróng tuyÓn:", getn(topfac_mem), topfac_mem);
 	else
-		Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:"..Faction[nfact][3].."ÃÅÅÉÔ¤Ñ¡±ÈÈüÃûµ¥»¹Ã»ÓĞ", 0)
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:"..Faction[nfact][3].."Danh s¸ch tróng tuyÓn thi ®Êu dù tuyÓn m«n ph¸i vÉn ch­a cã.", 0)
 	end
 end
 
@@ -506,14 +506,14 @@ function look_list_member()
 	biwu_loadfile(BID_LEADER)
 	local leader_name = biwu_getdata(BID_LEADER, "Leader_Name", "Name")
 	if (leader_name == "" or leader_name == nil) then
-		Say("ÏÖÔÚÃ»ÓĞ×ÜÁì¶Ó.", 0)
+		Say("HiÖn ch­a cã Tæng L·nh ®éi.", 0)
 		return
 	end
 	biwu_loadfile(LEADER_MEMBER);
 	MemberCount = tonumber(biwu_getdata(LEADER_MEMBER, "LeadMember", "Count"));	--È¡Êı£¬Èç¹û¿ªÊ¼datÎª¿Õ»á²»»áÓĞ´í£¬ĞèÒª³õÊ¼»¯°É£¿
 	if (not MemberCount) then	--²»ÖªµÀdatÎª¿Õ»á·µ»ØÊ²Ã´
 		MemberCount = 0;
-		Say("×ÜÁì¶Ó<color=yellow> "..leader_name.." <color>ÏÖÔÚÃ»ÓĞ×Ê¸ñ¸øÊ£ÓàµÄÍæ¼Ò.", 0)
+		Say("Tæng L·nh ®éi<color=yellow> "..leader_name.." <color>HiÖn ch­a ®­a ra bÊt cø t­ c¸ch nµo cho ng­êi ch¬i cßn l¹i.", 0)
 		return
 	end
 	if (MemberCount <= 10) then
@@ -521,13 +521,13 @@ function look_list_member()
 		for i =1, getn(member_tab) do
 			member_tab[i] = member_tab[i].."/OnCancel"
 		end
-		Say("´ËÇøÓòµÄ×ÜÁì¶ÓÊÇ<color=yellow>"..leader_name.."<color>, ÏÖÒÑÓĞ×Ê¸ñÑ¡ÊÖ°üÀ¨"..MemberCount.."ÈË, Ãûµ¥ÈçÏÂ:", getn(member_tab), member_tab)
+		Say("Tæng L·nh ®éi cña khu vùc nµy lµ<color=yellow>"..leader_name.."<color>, hiÖn ®· ®­a ra t­ c¸ch tuyÓn thñ gåm"..MemberCount.."ng­êi, danh s¸ch nh­ sau:", getn(member_tab), member_tab)
 	else
 		member_tab = member_10_group(1, 10)
 		for i =1, getn(member_tab) do
 			member_tab[i] = member_tab[i].."/#look_list_member1(10)"
 		end
-		Say("´ÎÇøÓòµÄ×ÜÁì¶ÓÊÇ<color=yellow>"..leader_name.."<color>, ÏÖÔÚÒÑ¾­ÓĞ×Ê¸ñµÄÑ¡ÊÖ°üÀ¨"..MemberCount.."ÈË, Ãûµ¥ÈçÏÂ:", getn(member_tab), member_tab)
+		Say("Tæng L·nh ®éi cña khu vùc nµy lµ<color=yellow>"..leader_name.."<color>, hiÖn ®· ®­a ra t­ c¸ch tuyÓn thñ gåm"..MemberCount.."ng­êi, danh s¸ch nh­ sau:", getn(member_tab), member_tab)
 	end				
 end
 
@@ -542,14 +542,14 @@ function look_list_member1(count)
 		for i =1, getn(member_tab) do
 			member_tab[i] = member_tab[i].."/OnCancel"
 		end
-		Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:", getn(member_tab), member_tab)
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:", getn(member_tab), member_tab)
 	else
 		count2 = count + 10
 		member_tab = member_10_group(count1, count2)
 		for i =1, getn(member_tab) do
 			member_tab[i] = member_tab[i].."/#look_list_member2(20)"
 		end
-		Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:", getn(member_tab), member_tab)
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:", getn(member_tab), member_tab)
 	end				
 end
 
@@ -561,7 +561,7 @@ function look_list_member2(count)
 	for i =1, getn(member_tab) do
 		member_tab[i] = member_tab[i].."/OnCancel"
 	end
-	Say("ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±:", getn(member_tab), member_tab)
+	Say("Quan viªn Vâ l©m kiÖt xuÊt:", getn(member_tab), member_tab)
 end
 
 
@@ -586,10 +586,10 @@ function cp_saveback_count(tol_money)
 end
 
 function regist_champion()
-Say("ÎäÁÖĞÂĞãÁªÈü´ó»áÔ¤Ñ¡ÈüÔ²Âú½áÊø¡£ÏÖÔÚ¿ÉÒÔµ½ÎÒ´¦¿´±ÈÈü½á¹ûºÍÁìÈ¡ÏàÓ¦µÄÃûºÅ¡£¾´ÇëÆÚ´ıÎäÁÖ´ó»á¿ªÊ¼.", 0)
+Say("TrËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt ®· kÕt thóc tèt ®Ñp. B©y giê cã thÓ ®Õn chç ta xem kÕt qu¶ thi ®Êu vµ l·nh danh hiÖu t­¬ng øng. Chê mong Vâ l©m ®¹i héi b¾t ®Çu.", 0)
 do return end
 	if (nt_gettask(CP_TASKID_REGIST) == 9) then
-		Say(" ÄãÒÑ´Ó¸÷ÃÅÅÉÔ¤Ñ¡ÈüµÄÃûµ¥ÖĞ±»ÌŞ³ı£¬²»ÄÜ¼ÌĞø±¨Ãû²Î¼Ó.", 0)
+		Say(" B¹n ®· tõ bá t­ c¸ch thi ®Êu dù tuyÓn c¸c m«n ph¸i, kh«ng thÓ tiÕp tôc b¸o danh tham gia.", 0)
 		return
 	end
 	
@@ -626,25 +626,25 @@ do return end
 	end
 	
 	if (nt_gettask(CP_TASKID_TITLE) == 9) then		--ÒÑ¾­È¡µÃ¾öÈüÈ¦×Ê¸ñ
-		Say("ÄãÒÑÈ¡µÃÑ¡ÊÖ×Ê¸ñ£¬²»ÒªÔÙÇÀÎ»ÖÃÁË!", 0)
+		Say("B¹n ®· nhËn ®­îc t­ c¸ch tuyÓn thñ, th× ®õng tíi c­íp vŞ trİ n÷a!", 0)
 		return
 	end
 	
 	if (GetLevel() < 90) then
-		Say("ÄãÒªµ½90¼¶ÒÔÉÏ²Å¿ÉÒÔ½øÈëÎäÁÖ´ó»áÈü³¡£¬¼ÌĞøÁ·¼¶°É!", 0)
+		Say("B¹n ph¶i ®¹t ®­îc cÊp 90 trë lªn míi cã thÓ x©m nhËp ®Êu tr­êng Vâ l©m ®¹i héi, h·y tiÕp tôc luyÖn thªm!", 0)
 		return
 	end
 	
 	if (GetLastFactionNumber() == -1) then
-		Say("ÎäÁÖÃËÖ÷ÓĞÁî: Ö»ÓĞÊ®´óÃÅÅÉµÄÈË²Å¿ÉÒÔ²Î¼ÓÎäÁÖ´ó»á£¬ÄãÎŞÃÅÎŞÅÉ²»ÄÜ²Î¼Ó¡£¼ÓÈëÊ®´óÃÅÅÉÖ®ºó²Å¿ÉÒÔ²Î¼Ó±ÈÈü!", 0)
+		Say("Vâ L©m Minh Chñ cã lÖnh: ChØ cã ng­êi cña ThËp ®¹i ph¸i ®­îc tham gia §¹i héi vâ l©m, ng­¬i kh«ng m«n kh«ng ph¸i kh«ng thÓ tham gia. Sau khi gia nhËp ThËp ®¹i ph¸i míi ®­îc tham gia thi ®Êu!", 0)
 		return
 	end
 	
 	if (nt_gettask(CP_TASKID_REGIST) == CP_UPTO_TRYOUT) then
 		transtoplace()
 	else
-		local talkstr = "±¨Ãû²Î¼ÓÔ¤Ñ¡ÈüÒª½»10ÍòÁ½±¨Ãû·Ñ."
-		Say(talkstr, 2, "ÕâÊÇ10ÍòÁ½./sure_regist", "ÎÒÔÙ¿´¿´/OnCancel")
+		local talkstr = "B¸o danh tham gia trËn dù tuyÓn, cÇn nép 10 v¹n l­îng phİ b¸o danh."
+		Say(talkstr, 2, "ÕâÊÇ10v¹n l­îng./sure_regist", "§Ó ta xem l¹i/OnCancel")
 		return
 	end
 end
@@ -661,12 +661,12 @@ function sure_regist()
 		transtoplace()
 		return
 	end
-	Say("Äã±¨Ãû·Ñ²»×ã£¬¹»10ÍòÁ½ÔÙ»ØÀ´!", 0)
+	Say("B¹n kh«ng cã ®ñ phİ b¸o danh, ®ñ 10 v¹n h·y quay l¹i!", 0)
 
 end
 
 function regist_freshman()
-	Msg2Player( "µ½ÎäÁÖĞÂĞãÁªÈü¹ÙÔ±´¦±¨Ãû²Î¼Ó±ÈÈü" )
+	Msg2Player( " ®Õn Sø gi¶ kiÖt xuÊt b¸o danh tham gia thi ®Êu" )
 	NewWorld( 176, 1624, 3233 )
 end
 
@@ -675,7 +675,7 @@ function look_endbid()
 	local endbid_month = mod(floor(CP_END_BID_DATE / 10000), 100)
 	local endbid_date = mod(floor(CP_END_BID_DATE / 100), 100)
 	local endbid_hour = mod(CP_END_BID_DATE,100)
-	Say("×ÜÁì¶ÓÓĞ×Ê¸ñµ½"..endbid_month.."ÔÂ"..endbid_date.."ÈÕ"..endbid_hour.."Ê±½áÊø, ÏÖÔÚÊ±¼äÊÇ"..date("d ÈÕ% %m ÔÂ %Y Äê H Ê±"), 0)	
+	Say(" Tæng L·nh ®éi cã t­ c¸ch ®Õn"..endbid_month.."nguyÖt "..endbid_date.."nhËt "..endbid_hour.." giê kÕt thóc, thêi gian hiÖn giê lµ "..date("d nhËt % %m nguyÖt %Y Äê H Ê±"), 0)	
 end
 
 function look_the_time( THETIME )

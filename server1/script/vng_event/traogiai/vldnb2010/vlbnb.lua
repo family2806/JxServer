@@ -129,12 +129,12 @@ VLDNB2010 =
 function GetBonusVLDNB2010_main()
 	local ntrue, nIndex = VNG_CompareAccountID(VLDNB2010)
 	if (ntrue < 1 and nIndex < 1 ) then
-		Talk(1,"","¥Ûœ¿ π”√’Àªß≤ª∂‘£¨«ÎºÏ≤È!")
+		Talk(1,"","ßπi hi÷p sˆ dÙng kh´ng ÆÛng tµi kho∂n, xin ki”m tra lπi !")
 		return
 	end
 	------------------------------------------------------------------------------------------------------------------------------------------------
 	local tbOpp = {}
-	local str = "<#> «Î¥Ûœ¿—°‘ÒΩ±¿¯";
+	local str = "<#> ßπi hi÷p xin h∑y ch‰n ph«n th≠Îng";
 			local numCLBHB = VLDNB2010[nIndex].nCLBHB
 			local numTinhLuc = VLDNB2010[nIndex].nTinhLuc
 			local numHVL = VLDNB2010[nIndex].nHVL
@@ -142,21 +142,21 @@ function GetBonusVLDNB2010_main()
 			local numHCD = VLDNB2010[nIndex].nHCD
 			
 			if (numCLBHB>0) then
-				tinsert(tbOpp,"Œ“œÎ¡Ï " .. numCLBHB .. " ∫Ï∞¸æ„¿÷≤ø/#VLDNB_GetBonusCLBHB("..numCLBHB..")");
+				tinsert(tbOpp,"Ta muËn nhÀn " .. numCLBHB .. " C©u Lπc BÈ HÂng Bao/#VLDNB_GetBonusCLBHB("..numCLBHB..")");
 			end
 			if (numTinhLuc>0) then
-			tinsert(tbOpp,"Œ“œÎ¡Ï " .. numTinhLuc .. " —™¡ø/#VLDNB_GetBonusTinhLuc("..numTinhLuc..")");
+			tinsert(tbOpp,"Ta muËn nhÀn " .. numTinhLuc .. " Tinh L˘c/#VLDNB_GetBonusTinhLuc("..numTinhLuc..")");
 			end
 			if (numHVL>0) then
-			tinsert(tbOpp,"Œ“œÎ¡Ï " .. numHVL .. " –˛‘≥¡Ó/#VLDNB_GetBonusHuyenVienLenh("..numHVL..")");
+			tinsert(tbOpp,"Ta muËn nhÀn " .. numHVL .. " Huy“n Vi™n L÷nh/#VLDNB_GetBonusHuyenVienLenh("..numHVL..")");
 			end
 			if (numPhienVu>0) then
-			tinsert(tbOpp,"Œ“œÎ¡Ï " .. numPhienVu .. " ∑≠” #VLDNB_GetBonusPhienVu("..numPhienVu..")");
+			tinsert(tbOpp,"Ta muËn nhÀn " .. numPhienVu .. " Phi™n VÚ/#VLDNB_GetBonusPhienVu("..numPhienVu..")");
 			end
 			if (numHCD>0) then
-			tinsert(tbOpp,"Œ“œÎ¡Ï " .. numHCD .. " ª∆’Êµ§/#VLDNB_GetBonusHoangChanDan("..numHCD..")");
+			tinsert(tbOpp,"Ta muËn nhÀn " .. numHCD .. " Hoµng Ch©n ßan/#VLDNB_GetBonusHoangChanDan("..numHCD..")");
 			end
-			tinsert(tbOpp, "<#>ÕÀ≥ˆ/OnCancel")
+			tinsert(tbOpp, "<#>Tho∏t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
 		return
@@ -166,11 +166,11 @@ end
 
 function VLDNB_GetBonusHoangChanDan(nCount)
 	if (GetBitValue(VLDNB_EXTPOINT, nBit_GetHoangChanDan) ~= 0) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï»°∏√Ω±¿¯¡À!");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	SetBitValue(VLDNB_EXTPOINT, nBit_GetHoangChanDan, 1)
@@ -179,17 +179,17 @@ function VLDNB_GetBonusHoangChanDan(nCount)
 		SetSpecItemParam(nIndex,1,2000000000)
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’¡Ï¡À%d ª∆’Êµ§", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."¡Ï»°ª∆’Êµ§Ω±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Hoµng Ch©n ßan", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Hoµng Ch©n ßan sË l≠Óng "..nCount)
 end
 
 function VLDNB_GetBonusPhienVu(nCount)
 	if (GetBitValue(VLDNB_EXTPOINT, nBit_GetPhienVu) ~= 0) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï»°∏√Ω±¿¯¡À!");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	SetBitValue(VLDNB_EXTPOINT, nBit_GetPhienVu, 1)
@@ -198,17 +198,17 @@ function VLDNB_GetBonusPhienVu(nCount)
 		--ITEM_SetExpiredTime(nIndex, 43200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’¡Ï¡À %d ∑≠”", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Phi™n V? s? l≠Óng "..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Phi™n VÚ", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Phi™n VÚ sË l≠Óng "..nCount)
 end
 
 function VLDNB_GetBonusHuyenVienLenh(nCount)
 	if (GetBitValue(VLDNB_EXTPOINT, nBit_GetHuyenVien) ~= 0) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï»°∏√Ω±¿¯¡À!");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	SetBitValue(VLDNB_EXTPOINT, nBit_GetHuyenVien, 1)
@@ -217,17 +217,17 @@ function VLDNB_GetBonusHuyenVienLenh(nCount)
 		--ITEM_SetExpiredTime(nIndex, 43200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’¡Ï¡À %d –˛‘≥¡Ó", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."¡Ï»°–˛‘≥¡ÓΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Huy“n Vi™n L÷nh", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Huy“n Vi™n L÷nh sË l≠Óng "..nCount)
 end
 
 function VLDNB_GetBonusCLBHB(nCount)
 	if (GetBitValue(VLDNB_EXTPOINT, nBit_GetCLBHB) ~= 0) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï»°∏√Ω±¿¯¡À!");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	if CalcFreeItemCellCount() < 60 then
-		Talk(1, "", "¥Ûœ¿µƒ◊∞±∏≤ª◊„60ø’Œª.");
+		Talk(1, "", "Hµnh trang cÒa Æπi hi÷p kh´ng ÆÒ 60 ´ trËng.");
 		return
 	end
 	SetBitValue(VLDNB_EXTPOINT, nBit_GetCLBHB, 1)
@@ -236,20 +236,20 @@ function VLDNB_GetBonusCLBHB(nCount)
 		ITEM_SetExpiredTime(nIndex, 43200);
 		SyncItem(nIndex)
 	end
-	Msg2Player(format("¥Ûœ¿∏’∏’¡Ï¡À %d ∫Ï∞¸æ„¿÷≤ø", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."¡Ï»°∫Ï∞¸æ„¿÷≤øΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d C©u Lπc BÈ HÂng Bao", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng C©u Lπc BÈ HÂng Bao sË l≠Óng "..nCount)
 end
 
 
 function VLDNB_GetBonusTinhLuc(nCount)
 	if (GetBitValue(VLDNB_EXTPOINT, nBit_GetTinhLuc) ~= 0) then
-		Talk(1, "", "¥Ûœ¿“—¡Ï»°∏√Ω±¿¯¡À!");
+		Talk(1, "", "ßπi hi÷p Æ∑ nhÀn ph«n th≠Îng nµy rÂi !");
 		return
 	end
 	SetBitValue(VLDNB_EXTPOINT, nBit_GetTinhLuc, 1)
 	AddEnergy(nCount)
-	Msg2Player(format("¥Ûœ¿∏’∏’¡Ï¡À %d —™¡ø", nCount))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."¡Ï»°—™¡øΩ±¿¯ ˝¡ø"..nCount)
+	Msg2Player(format("ßπi hi÷p vıa nhÀn Æ≠Óc %d Tinh L˘c", nCount))
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."Bonus VLDNB2010"..GetAccount().."\t"..GetName().."\t".."NhÀn th≠Îng Tinh L˘c sË l≠Óng "..nCount)
 end
 
 function OnCancel()

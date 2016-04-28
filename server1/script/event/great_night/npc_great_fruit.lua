@@ -6,11 +6,11 @@ Include("\\script\\activitysys\\g_activity.lua")
 function main()
 	
 	if (0 == GetCamp()) then
-		Msg2Player("ÄãÉĞÎ´¼ÓÈëÃÅÅÉ£¬²»ÄÜÊ°È¡¹ûÊµ.")
+		Msg2Player("B¹n ch­a gia nhËp m«n ph¸i, kh«ng thÓ h¸i qu¶.")
 		return
 	end
 	if (0 == GetFightState() or GetLife(0) <= 0) then
-		Msg2Player("²»ÄÜÊ°È¡¹ûÊµ.")
+		Msg2Player("kh«ng thÓ h¸i qu¶.")
 		return
 	end
 
@@ -36,11 +36,11 @@ function main()
 	if (nGetSeedLevel ~= GetNpcParam(nNpcIdx, 1)) then -- Èç¹û¼¶±ğ²»¶Ô,²»ÄÜ½øĞĞÊ°È¡
 		--ÕâÀï¸æËßÍæ¼Ò¼¶±ğ²»¶Ô,²»ÄÜÊ°È¡
 		if (1 == GetNpcParam(nNpcIdx, 1)) then
-			Msg2Player("90¼¶ÒÔÏÂµÄÍæ¼Ò¿ÉÒÔÊ°È¡ÕâÀà¹ûÊµ!")
+			Msg2Player("Lo¹i qu¶ nµy ng­êi ch¬i tõ cÊp 90 trë xuèng cã thÓ h¸i!")
 		elseif (2 == GetNpcParam(nNpcIdx, 1)) then
-			Msg2Player("90µ½119¼¶µÄÍæ¼Ò²Å¿ÉÒÔÊ°È¡ÕâÀà¹ûÊµ.")
+			Msg2Player("Lo¹i qu¶ nµy ng­êi ch¬i tõ cÊp 90 ®Õn cÊp 119 míi cã thÓ h¸i.")
 		else
-			Msg2Player("120¼¶ÒÔÉÏµÄÍæ¼Ò²Å¿ÉÒÔÊ°È¡ÕâÀà¹ûÊµ!")
+			Msg2Player("Lo¹i qu¶ nµy ng­êi ch¬i tõ cÊp 120 trë lªn míi cã thÓ h¸i!")
 		end
 		return
 	end;
@@ -55,7 +55,7 @@ function main()
 	--			local nowdate = tonumber(GetLocalDate("%y%m%d"))
 	--			SetSpecItemParam(nItemIndex, 1, nowdate)
 				SyncItem(nItemIndex)
-				Msg2Player("ÄãµÃµ½Ò»¸ö»Ô»Í¹ûÊµ ");
+				Msg2Player("B¹n nhËn ®­îc mét qu¶ Huy Hoµng ");
 			end
 			SetTask(GREADSEED_TIME_TASKID, 0);
 			SetTask(GREADSEED_SEEDID_TASKID, 0);
@@ -66,13 +66,13 @@ function main()
 			G_ACTIVITY:OnMessage("CaiJiHuiHuangZhiGuo");
 
 		else	--Ê±¼äÃ»µ½10ÃëÖÓ;
-			Msg2Player(format("ÄãÒÑÑ¡È¡ÕâÖÖ¹ûÊµ£¬ÃëÖ®ºó²Å¿ÉÒÔÊ°È¡.",
+			Msg2Player(format("B¹n ®· chän qu¶ nµy, %d gi©y sau míi cã thÓ h¸i qu¶!",
 						(10 - (nTime - GetTask(GREADSEED_TIME_TASKID)))
 							))
 			return
 		end;
 	else
-		Msg2Player("ÄãÒÑÑ¡È¡ÕâÖÖ¹ûÊµ£¬10ÃëÖ®ºó¹ûÊµ³ÉÊì¾Í¿ÉÒÔÊ°È¡ÁË.")
+		Msg2Player("B¹n chän qu¶ nµy, 10 gi©y sau qu¶ chİn cã thÓ h¸i ®­îc.")
 		SetTask(GREADSEED_TIME_TASKID, nTime);
 		SetTask(GREADSEED_SEEDID_TASKID, GetNpcParam(nNpcIdx, 2));
 	end;

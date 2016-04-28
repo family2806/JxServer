@@ -5,11 +5,11 @@ function main()
 	local tbDialog =
 	{
 		--"<desc><npc>Äã´òËãÈÃÎÒËÍÄã³öÈ¥Âğ£¿",
-	  	"Àë¿ª/return_city",
-	  	"Ò»»á»ØÀ´ /no",
+	  	"Rêi khái khu vùc/return_city",
+	  	"L¸t n÷a quay l¹i /no",
 	}
 	--CreateTaskSay(tbDialog)
-	Describe("<color=yellow>Õ½Áú¶´´«ËÍÈË: <color>ÄãÈ·¶¨ÒªÎÒ´øÄã³öÈ¥Âğ?",getn(tbDialog), unpack(tbDialog))
+	Describe("<color=yellow>Ng­êi truyÒn tèng ChiÕn Long §éng: <color>ng­¬i ®Şnh nhê ta ®­a ng­¬i ra ­?",getn(tbDialog), unpack(tbDialog))
 end;
 
 function no()

@@ -11,14 +11,14 @@ function main( nItemIndex )
     
     local nPLev = GetLevel()
     if nPLev > 90  or nPLev < 10 or IsCharged() < 1 then
-        Say("Ö»ÓÐ10-90¼¶µÄÈËÎï(°üÀ¨10ºÍ90) ²ÅÄÜÊ¹ÓÃ.", 0)
+        Say("ChØ cã nh©n vËt cÊp ®é tõ 50 ®Õn 90 (bao gåm cÊp 50 vµ 90) míi cã thÓ sö dông.", 0)
         return 1
     end
 	
     tl_addPlayerExp(37540000)	--10¼¶0%Éýµ½120¼¶0%µÄ×Ü¾­ÑéÖµ
 	nPLev = GetLevel()
-	Msg2Player(format("¹§Ï²Äú£¬Ä¿Ç°ÄúµÄµÈ¼¶Îª%d.",nPLev))
-	WriteLog(format("[Ê¹ÓÃÌìÉ½Ñ©Á«]\t%s\tName:%s\tAccount:%s\t ¸Õ³ÔÁËÒ»¸öÌìÉ½Ñ©Á«.",
+	Msg2Player(format("Chóc mõng b¹n, ®¼ng cÊp hiÖn t¹i cña b¹n lµ %d.",nPLev))
+	WriteLog(format("[Sö dông Thiªn S¬n TuyÕt Liªn]\t%s\tName:%s\tAccount:%s\t võa ¨n ®­îc 1 Thiªn S¬n TuyÕt Liªn.",
 			GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount()));
 end
 --

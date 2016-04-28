@@ -13,10 +13,10 @@ function main()
 	local tbDailog = DailogClass:new(szNpcName)
 	local nTaskStep = floor(GetTask(TSK_LV150_SKILL)/100)
 	if nTaskStep < YUEGEDAO_150SKILL_TASKSTATE then
-		tbDailog.szTitleMsg = "<npc>Èç¹û´óÏÀ²»ÅÂ£¬ÄÇ¾ÍºÍÎÒ±ÈÊÔÒ»ÏÂ£¬ÎªÁËÎÅÃûÌìÏÂ£¬Á·µÃ¾øÊÀÎä¹¦£¬»¹ÊÇ±»À§ÔÚÕâÀï£¬ÓÉ±¾³¡±ÈÊÔ¾ö¶¨¡£"
+		tbDailog.szTitleMsg = "<npc>NÕu nh­ ®¹i hiÖp kh«ng hÒ run sî, th× h·y ph©n tµi cao thÊp víi t¹i h¹ ®i, lµ ®Ó vang danh thiªn h¹, luyÖn ®­îc tuyÖt kü hay lµ sÏ bŞ giam cÇm t¹i ®©y, th× do trrËn chiÕn nµy quyÕt ®Şnh."
 	else
-		tbDailog.szTitleMsg = "<npc>Èç¹ûÓĞÔµ£¬¾ÍÄÜÔÙÏà·ê£¬Èç¹ûÎŞÔµ£¬Ò²ÄÜ»¥ÏàË¼Äî£¬´óÏÀ¿ìÀë¿ªµº°É£¬½­ºşÖ®Â·£¬Çë±£ÖØ¡£"
+		tbDailog.szTitleMsg = "<npc>NÕu nh­ h÷u duyªn th× vÉn cã thÓ gÆp l¹i, cßn kh«ng duyªn th× vÉn cã c¸i ®Ó nhí ®Õn nhau, ®¹i hiÖp h·y rêi ®¶o ®i, con ®­êng giang hå tõ nay vÒ sau xin h·y b¶o träng."
 	end
-	G_TASK:OnMessage("ÔÂ¸èµº", tbDailog, "DialogWithNpc")
+	G_TASK:OnMessage("NguyÖt Ca §¶o", tbDailog, "DialogWithNpc")
 	tbDailog:Show() 
 end

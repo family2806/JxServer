@@ -4,7 +4,7 @@ Include("\\script\\task\\newtask\\newtask_head.lua")
 
 
 function main(sel)
-		Say("ĞĞ×ß½­ºş£¬×¼±¸µãÒ©·ÀÉíÊÇ²»ÄÜÉÙµÄ!", 3, "½»Ò×/yes","ÎÒÀ´ÁìÈëÃÅÈÎÎñ/yboss", "²»½»Ò×/no");
+		Say("Hµnh tÈu giang hå, chuÈn bŞ tr­íc İt th­¬ng d­îc phßng th©n sÏ kh«ng thõa ®©u!", 3, "Giao dŞch/yes","Ta ®Õn nhËn nhiÖm vô S¬ nhËp/yboss", "Kh«ng giao dŞch/no");
 end;
 
 

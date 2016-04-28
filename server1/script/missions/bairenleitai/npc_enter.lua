@@ -13,10 +13,10 @@ Include("\\script\\lib\\log.lua")
 function bairen_dialog()
 	
 	local tbOpt = {};
-	tinsert(tbOpt, {"ÎÒÏëÈ¥»Ê³ÇË¾ÀŞÌ¨",onEnterHunbredArena});
-	tinsert(tbOpt, {"¹ØÓÚ»Ê³ÇË¾ÀŞÌ¨",onHelpHunbredArena})
-	tinsert(tbOpt, {"½áÊø¶Ô»°", oncancel})
-	CreateNewSayEx("<npc>»Ê³ÇË¾ÀŞÌ¨¸ø½­ºş¸ßÊÖÒ»¸öÎÅÃûÌìÏÂµÄ»ú»á.Èç¹û×öÀŞÖ÷Á¬Ğø´ò°ÜÌôÕ½Õß¾Í»áÃûÑïÌìÏÂ£¬ÉõÖÁ¿ÉÒÔÖ±½Óµ½»Ê³ÇÎª¹úĞ§Á¦¡£", tbOpt)
+	tinsert(tbOpt, {"Ta muèn vµo L«i §µi Hoµng Thµnh T­",onEnterHunbredArena});
+	tinsert(tbOpt, {"VÒ L«i §µi Hoµng Thµnh T­",onHelpHunbredArena})
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i", oncancel})
+	CreateNewSayEx("<npc>L«i §µi Hoµng Thµnh T­ lµ ®Ó cho nh÷ng cao thñ trªn giang hå cã mét c¬ héi vang danh cña m×nh trong thiªn h¹. Nªu nh­ lµm L«i Chñ liªn tiÕp ®¸nh b¹i nh÷ng ng­êi khiªu chiÕn, sÏ vang danh thiªn h¹, thËm chİ cã thÓ trùc tiÕp ®I vµo Hoµng Thµnh, v× n­íc mµ b¸o ®Òn ¬n.", tbOpt)
 end
 
 function onEnterHunbredArena()
@@ -27,12 +27,12 @@ end
 
 function onHelpHunbredArena()
 	local tbOpt = {};
-	tinsert(tbOpt, {"ÎÒÏëÈ¥»Ê³ÇË¾ÀŞÌ¨",onEnterHunbredArena});
-	tinsert(tbOpt, {"½áÊø¶Ô»°", oncancel});
+	tinsert(tbOpt, {"Ta muèn vµo L«i §µi Hoµng Thµnh T­",onEnterHunbredArena});
+	tinsert(tbOpt, {"KÕt thóc ®èi tho¹i", oncancel});
 	
-	CreateNewSayEx("<npc>»Ê³ÇË¾ÀŞÌ¨{{½«ÓÚÃ¿ÈÕ 12:00¿ªÆğ£¬µ½0:00½áÊø}}. <enter> »Ê³ÇË¾ÀŞÌ¨ÔİÊ±ÉèÓĞ5¸öÀŞÌ¨£¬ÆäÖĞ{{ÀŞÌ¨1 }} ÊÇÖ÷ÀŞÌ¨£¬Ö»ÓĞÔÚÕâ¸öÀŞÌ¨ÉÏÈ¡µÃÊ¤Àû²Å¿ÉÒÔµÃµ½ÎäÁÖÈËÊ¿µÄ³ĞÈÏ."
-		.."Ã¿´ÎÉÏÌ¨ÊÇ{{3·ÖÖÓ}},Èç¹ûÔÚ´ËÆÚ¼äË«·½²»·ÖÊ¤¸º£¬½ìÊ±{{½«È¥±»É±ÉË½ÏÇáµÄÒ»·½}}×öÀŞÖ÷£¬¼ÌĞø½ÓÊÜÆäËû¸ßÊÖµÄÌôÕ½."
-		.."Èç¹ûÃ»ÓĞ¸ßÊÖ¸ÒÌôÕ½ÀŞÖ÷£¬»Ê³ÇË¾½«»áÅÉ³öÊ®´óÃÅÅÉµÄ¸ßÊÖÉÏÌ¨ÌôÕ½£¬ÀŞÖ÷ÒªÔÚ{{ 3 ·ÖÖÓ }}ÄÚ´ò°Ü£¬·ñÔò¾Í»á±»ÈÏ¶¨ÎªÊ§°Ü"
-		.."<enter>×¢Òâ£ºÒªÓÃÇá¹¦ÅÜÉÏÀŞÌ¨±ÈÎä",
+	CreateNewSayEx("<npc>L«i §µi Hoµng Thµnh T­ {{sÏ ®­îc më mçi ngµy vµo lóc 12:00 ®Õn 0:00 sÏ kÕt thóc }}. <enter> L«i §µi Hoµng Thµnh T­ t¹m thêi thiÕt kÕ 5 l«i ®µi, trong ®ã {{L«i §µi 1 }} lµ L«i §µi Chñ, chØ cã giµnh th¾ng lîi ë L«i §µi nµy míi cã thÓ ®­îc nh©n sü vâ l©m c«ng nhËn."
+		.."Mçi lÇn lªn ®µi lµ {{3 phót }}, nÕu nh­ trong kho¶ng thêi gian nµy hai bªn bÊt ph©n th¾ng b¹i, lóc ®ã {{sÏ lÊy ng­êi chŞu s¸t th­¬ng İt h¬n }} lµm l«i chñ, vµ tiÕp nhËn khiªu chiÕn tiÕp tôc cña c¸c cao thñ kh¸c."
+		.."NÕu kh«ng cã cao thñ nµo d¸m khiªu chiÕn víi L«i Chñ, Hoµng thµnh T­ sÏ ph¸i ra cao thñ cña thËp ®¹i m«n ph¸i lªn ®µi khiªu chiÕn, L«i Chñ cÇn ph¶i trong vßng {{ 3 phót }} ®¸no b¹i, nÕu kh«ng sÏ bŞ tİnh lµ b¹i trËn"
+		.."<enter>Chó ı: cÇn ph¶i sö dông khinh c«ng nh¶y lªn l«i ®µi tû vâ.",
 		tbOpt);
 end

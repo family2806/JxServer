@@ -24,9 +24,9 @@ local myCamp = nt_getCamp()
 -- ĞÂÈÎÎñÏµÍ³ÓëĞ°½ÌÖ÷ÏßÏà¹ØµÄ½Å±¾ --
 
 if ( GetSex() == 0 ) then      -- Íæ¼ÒĞÔ±ğÎªÄĞ
-Say("¼ËÅ®£º¶Ô²»Æğ£¬ÎÒÔÚµÈÈË£¬²»½Ó¿Í£¬¹«×Ó»¹ÊÇÕÒ±ğµÄ¹ÃÄï°É£¡",0)
+Say("C«ng tö! §­êng xa mâi mÖt! Vµo uèng víi tiÓu n÷ 1 ly r­îu ®i!",0)
 else			       -- Íæ¼ÒĞÔ±ğÎªÅ®
-Say("¼ËÅ®£ºÎÒÊÇ¸ö¿àÃüÈË£¬ÄãºÎ±ØÄÃÎÒ¿ªĞÄÄØ£¿", 0)
+Say("Xem d¸ng c«ng tö phong trÇn thanh nh·! Cho phĞp tiÓu n÷ ngåi c¹nh nhĞ!", 0)
 end;
 
 end;

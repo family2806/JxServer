@@ -11,7 +11,7 @@ function main()
 	--if ( iRand < 100 ) then
 	--	Say("ÄãÔÚÊ¥µ®Ê÷ĞíÁËÒ»¸öÔ¸£¬Í»È»·¢ÏÖÊ÷ÉÏ¶àÁËÒ»¸öÉÁÉÁ·¢¹âµÄ¶«Î÷",2,"ÕæÓĞÒâË¼£¬ÎÒÀ´ÇÆÇÆ¿´/present","ÎÒ»¹ÊÇ×¨ĞÄĞíÔ¸°É/no")
 	--else
-		Say("Íæ¼Ò: Ê¥µ®Ê÷ÕæºÃ¿´£¡ÔÚÕâĞíÔ¸¿Ï¶¨»áÊµÏÖ!",0)
+		Say("Ng­êi ch¬i: C©y Th«ng ®Ñp qu¸! CÇu nguyÖn ë chç nµy sÏ thµnh hiÖn thËt!",0)
 	--end
 
 end
@@ -27,12 +27,12 @@ function present()
 	if ( nLastTime == 0 and mod( nHour , 100 ) ~= 0 and nMinute < 30 ) then
 		SetGlbValue(9,nHour - 1)
 		SetGlbValue(8,0)
-		AddLocalNews("***Ê¥µ®ÀÏÈËÔÚÊ¥µ®Ê÷ÉÏ¹ÒÁËºÃ¶àÀñÎï£¬´ó¼Ò¸Ï¿ìÈ¥ÄÃ!***")
+		AddLocalNews("***¤ng giµ Noel ®Ó nhiÒu quµ trªn C©y Th«ng, mäi ng­êi mau ®Õn lÊy ®i!***")
 	elseif ( nLastTime ~= nHour and nMinute >= 30 ) then
 		SetGlbValue(9,nHour)
 		SetGlbValue(8,0)
 --		Msg2Player("New hour : ["..nHour.."o'clock] Reset")
-		AddLocalNews("***Ê¥µ®ÀÏÈËÔÚÊ¥µ®Ê÷ÉÏ¹ÒÁËºÃ¶àÀñÎï£¬´ó¼Ò¸Ï¿ìÈ¥ÄÃ!***")
+		AddLocalNews("***¤ng giµ Noel ®Ó nhiÒu quµ trªn C©y Th«ng, mäi ng­êi mau ®Õn lÊy ®i!***")
 	end
 	nLastTime = GetGlbValue(9)
 	nQuantity = GetGlbValue(8)
@@ -42,9 +42,9 @@ function present()
 		SetTask(615,nLastTime)
 --		Msg2Player("AddItem 1,total = "..nQuantity + 1)
 	elseif ( Utask615 == nLastTime ) then
-		Say("²»ÒªÕâÃ´Ì°ĞÄ£¡¸ø±ğÈËÁôµã»ú»á!",0)
+		Say("§õng cã tham thÕ! H·y nh­êng c¬ héi cho ng­êi kh¸c víi!",0)
 	else
-		Say("ºÃ¶«Î÷Ò»Õ£ÑÛ¾Í±»ÄÃÍêÁË£¬1Ğ¡Ê±ºóÔÙ»ØÀ´ÊÔÊÔºÃÔË°É!",0)
+		Say("§å tèt chíp m¾t ®· bŞ lÊy hÕt, 1 giê sau h·y quay l¹i thö vËn may ®i!",0)
 --		SetTask(615,nHour)
 	end		
 
@@ -55,19 +55,19 @@ function onTake()
 	i = random(1,100000)
 	if ( i < 40000 ) then
 		AddItem(6,0,20,1,0,0,0)
-		Msg2Player("Å¶£¡ÊÇÒ»ÊøÃµ¹å£¡ÎÒÏëËÍ¸ø°®ÈË.")
+		Msg2Player("å! Lµ mét ®ãa hoa hång! Ta muèn tÆng nã cho ng­êi yªu.")
 	elseif ( i < 85000 ) then
 		AddItem(6,0,11,1,0,0,0)
-		Msg2Player("Å¶£¡ÊÇ1¸öÀñ»¨£¬ÎÒÒª·Å¸ø´ó¼Ò¿´.")
+		Msg2Player("å! Lµ 1 c©y Ph¸o hoa, ta sÏ b¾n cho mäi ng­êi xem.")
 	elseif ( i < 90000 ) then
 		AddItem(6,1,72,1,0,0,0)
-		Msg2Player("°¡£¡ÊÇ1Æ¿ÌìÉ½±¦Â¶£¡Ï£ÍûËü¿ÉÒÔ¸øÎÒ´øÀ´ºÃÔË.")
+		Msg2Player("å! Lµ 1 b×nh Thiªn S¬n B¶o Lé! Hy väng nã sÏ ®em l¹i may m¾n cho ta.")
 	elseif ( i < 95000 ) then
 		AddItem(6,1,73,1,0,0,0)
-		Msg2Player("ÍÛ£¡1Æ¿°×¹ûÂ¶£¬ÎÒÕıºÃĞèÒªËü!")
+		Msg2Player("Ha! 1 b×nh B¸ch Qu¶ Lé, ta ®ang cÇn nã ®Êy!")
 	else
 		AddItem(6,1,125,1,0,0,0)
-		Msg2Player("°¡£¡1Æ¿¹ğ»¨¾Æ¡£ÎÒÒªÕÒ¸öÅóÓÑ¶ÔÒû!")
+		Msg2Player("Ha? 1 b×nh QuÕ Hoa töu, ta muèn t×m mét ng­êi b¹n cïng nhau ®èi Èm!")
 	end
 
 end

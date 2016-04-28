@@ -26,7 +26,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"return {tbProp={6,1,3086,-1,-1,0},}"},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSK_USED_NEWYEAR_GIFT_DAILY,MAX_USED_NEWYEAR_GIFT_DAILY,"½ñÌìÄúµÄÊ¹ÓÃ´ÎÊıÒÑ¹º,Ã÷ÌìÔÙÀ´°É¡£","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_USED_NEWYEAR_GIFT_DAILY,MAX_USED_NEWYEAR_GIFT_DAILY,"Sè lÇn sö dông cña ng­¬i h«m nay ®· ®ñ, ngµy mai h·y quay l¹i nhĞ!","<"} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
@@ -46,7 +46,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {"return {tbProp={6,1,3087,-1,-1,0},}"},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{TSK_USED_NEWYEAR_FIREWORKS,MAX_USED_NEWYEAR_FIREWORKS,"½ñÌìÄú»ñµÃµÄ½±ÀøÌ«¶àÁË£¬ÇëÊÔÊÔÆäËûµÄ°É!","<"} },
+		{"ThisActivity:CheckTask",	{TSK_USED_NEWYEAR_FIREWORKS,MAX_USED_NEWYEAR_FIREWORKS,"Ng­¬i ®· nhËn ®­îc qu¸ nhiÒu phÇn th­ëng, xin h·y thö c¸i kh¸c ®i!","<"} },
 		{"ThisActivity:CheckFireworksUseTime",	{nil} },
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },

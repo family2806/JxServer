@@ -6,25 +6,25 @@
 --			¹¦ÄÜ£º±¨Ãûµã±¨Ãû¹Ù
 -----------------------------------------------------------------
 Include("\\script\\missions\\citydefence\\headinfo.lua")
-CD_SIGNNPCNAME = "ÊØ³Ç½«¾ü"
+CD_SIGNNPCNAME = "T­íng qu©n thñ thµnh"
 function main()
 	local signmap = SubWorldIdx2ID( SubWorld )
 	if ( signmap == tbDEFENCE_SIGNMAP[1] ) then
 		camp = 1
-		cityname = "ËÎ·½"
+		cityname = "Phe Tèng"
 	elseif ( signmap == tbDEFENCE_SIGNMAP[2] ) then
 		camp = 2
-		cityname = "½ğ·½"
+		cityname = "Phe Kim"
 	else
 		print("citydefence signmap error!!! mapid = "..signmap)
 		return
 	end
-	local guanyuanname = cityname.."ÊØ³Ç½«¾ü"
+	local guanyuanname = cityname.."T­íng qu©n thñ thµnh"
 	
 	local level = GetLevel()
 	if ( level < CD_LEVEL_LIMIT ) then
-		Talk(1, "", CD_SIGNNPCNAME..": Ğ¡¹í´ÓÄÄÀïÀ´£¿²»Ïë»îÁËÂğ£¿µÈ¼¶»¹²»¹»£¡"..CD_LEVEL_LIMIT.."¼¶£¬ÅÜµ½Ç°ÏßÀ´£¬ÄãÒÔÎªÕâÀïÊÇÄÄ£¿²»ÒªÂÒÅÜ£¬²»È»µÄ»°ÔõÃ´ËÀµÄ¶¼²»ÖªµÀ!")
-		Msg2Plalyer("µÈ¼¶¸ßÓÚ"..CD_LEVEL_LIMIT.."¼¶²Å¿ÉÒÔ²Î¼ÓÎÀ¹úÕ½Õù.")
+		Talk(1, "", CD_SIGNNPCNAME..": TiÓu quû tõ ®©u ®Õn? Kh«ng muèn sèng µ? §¼ng cÊp cßn ch­a ®ñ!"..CD_LEVEL_LIMIT.."cÊp, ch¹y ®Õn tiÒn tuyÕn, ng­¬i t­ëng ®©y lµ ®©u? §õng cã mµ ®i lung tung, nÕu kh«ng ng­¬i cã chÕt còng kh«ng biÕt t¹i sao!")
+		Msg2Plalyer("§¼ng cÊp lín h¬n"..CD_LEVEL_LIMIT.."cÊp míi cã thÓ tham gia chiÕn tranh vÖ quèc.")
 		return
 	end
 	local oldSubWorld = SubWorld
@@ -33,7 +33,7 @@ function main()
 	defencesidx = SubWorldID2Idx( defencemap )
 	
 	if ( defencesidx < 0 ) then
-		Say(CD_SIGNNPCNAME..":Ç°·½Õ½³¡³öÏÖÎÊÌâ£¬ÔİÊ±²»ÄÜ½øÈ¥.", 0)
+		Say(CD_SIGNNPCNAME..": ChiÕn tr­êng phİa tr­íc x¶y ra vÊn ®Ò, t¹m thêi kh«ng thÓ vµo.", 0)
 		print("citydefence defencemap error!!!! defencemap = "..defencemap)
 		return
 	end
@@ -41,8 +41,8 @@ function main()
 	SubWorld = defencesidx;
 	local state = GetMissionV(MS_STATE)
 	if ( state ~= 1 and state ~= 2 ) then
-		Say(CD_SIGNNPCNAME..":Ã»ÓĞÊ²Ã´ÒªÙ÷¸æµÄ¾Í²»ÒªÀ´·³ÎÒ!", 0)
-		Msg2Player("ÎÀ¹ú·é»ğÁ¬³Ç"..cityname.."ÊØ³Ç»î¶¯»¹Î´¿ªÊ¼.")
+		Say(CD_SIGNNPCNAME..":Kh«ng cã g× bÈm c¸o ®õng ®Õn quÊy rÇy ta!", 0)
+		Msg2Player("VÖ quèc Phong Háa liªn thµnh"..cityname.."Ho¹t ®éng thñ thµnh vÉn ch­a b¾t ®Çu.")
 		SubWorld = oldSubWorld
 		return
 	end
@@ -53,17 +53,17 @@ function main()
 	SubWorld = oldSubWorld
 	
 	if ( memcount >= MAX_MEMBERCOUNT ) then
-		Talk(2, "", CD_SIGNNPCNAME..":ÄãÊÇË­?", CD_SIGNNPCNAME..":°¡£¡ÄãÏë°ïÎÒ¶Ô¿¹µĞÈË£¿ÄãÕæÊÇ°®¹ú£¡ÎÒ¾üµÄ±øÁ¦³ä×ã£¬ÄãµÄĞÄÒâºÜºÃ£¬µ«ÊÇÇëÄã»ØÈ¥°É¡£")
-		Msg2Player("ÏÖÔÚ²Î¼ÓÎÀ¹úÁ¬³ÇÕ½ÕùµÄÈËÊıÒÑ¾­¹»"..MAX_MEMBERCOUNT.."ÈË£¬²»ÄÜ½øÈëÕ½³¡.")
+		Talk(2, "", CD_SIGNNPCNAME..": Ng­¬i lµ ai?", CD_SIGNNPCNAME..": µ! Ng­¬i muèn gióp ta chèng l¹i kÎ ®Şch? Ng­¬i qu¶ lµ yªu n­íc! Binh lùc qu©n ta rÊt ®Çy ®ñ, ng­¬i cã lßng lµ tèt, nh­ng xin ng­¬i h·y vÒ ®i!")
+		Msg2Player("HiÖn nay sè ng­êi tham gia chiÕn tranh vÖ quèc liªn thµnh ®· ®Çy"..MAX_MEMBERCOUNT.."ng­êi, kh«ng thÓ vµo chiÕn tr­êng.")
 		return
 	end
 	
 	if ( GetTask( TASKID_FIRE_DAY ) == nday and GetTask( TASKID_FIRE_KEY ) ~= randkey ) then	--²»ÔÊĞí±¨Ãû
-		Say(CD_SIGNNPCNAME..": ÎÀ¹úÁ¬³ÇÕ½Õù»î¶¯1ÌìÖ»ÄÜ²Î¼ÓÒ»´Î£¬ÏÂ´ÎÔÙÀ´°É!", 0)
+		Say(CD_SIGNNPCNAME..": Ho¹t ®éng chiÕn tranh vÖ quèc liªn thµnh 1 ngµy chØ cã thÓ tham gia 1 trËn, lÇn sau h·y quay l¹i!", 0)
 	elseif ( nday ~= GetTask( TASKID_FIRE_DAY ) ) then	--ÔÊĞí±¨Ãû
-		Say(CD_SIGNNPCNAME..": Àî¶ş£¡ÄãĞ¡×Ó¸Ï¿ìÈ¥½ĞĞÅÊ¹¹ıÀ´£¬µĞ¾üÓÖ´ò¹ıÀ´ÁË£¡Å¶£¿ÄãÊÇË­£¿ÏÖÔÚÊÇÊ²Ã´Ê±ºòÁË£¿ÓĞÈËÔÚ¹¥ÎÒµÄ³ÇÁË£¬ÄãÒªÊÇĞ¹Â¶¾ü»úÊÇÒª±»Õ¶Í·µÄÖªµÀÂğ£¿",2,"½«¾ü£¡ÎÒÀ´°ïÃ¦ÊØ³Ç£¡/want2joincd1", "°¡(ÄãÃ»ÓĞËµÊ²Ã´£¬Ö»ÊÇĞ¦ÁËÒ»Éù) /laughtoleave")
+		Say(CD_SIGNNPCNAME..": Lı NhŞ! Tªn tiÓu tö nhµ ng­¬i mau ®i kªu Tİn Sö l¹i ®©y, qu©n ®Şch l¹i ®¸nh ®Õn råi! ¥? Ng­¬i lµ ai? B©y giê lµ lóc nµo? Cã ng­êi ®ang tÊn c«ng thµnh cña ta, ng­¬i cßn kĞo dµi qu©n c¬ sÏ bŞ chĞm ®Çu biÕt kh«ng?",2,"T­íng qu©n! Ta ®Õn gióp thñ thµnh!/want2joincd1", "…… (B¹n kh«ng nãi lêi g×, chØ c­êi nh¹t mét tiÕng råi ®i ) /laughtoleave")
 	else
-		Say(CD_SIGNNPCNAME..": °¡£¿Äã²»ÊÇÉÏÕ½³¡ÁËÂğ£¿ÊÇ²»ÊÇÎÒÑÛ»¨°¡£¿enter> ËãÁË£¡Äã×¼±¸½øÈ¥°É!", 2, "ÎÒÏë¼ÓÈë/sure2joincd", "ÎÒÖ»ÊÇÂ·¹ı¿´¿´/OnCancel")
+		Say(CD_SIGNNPCNAME..": ¥? Ch¼ng ph¶i ng­¬i ®· vµo chiÕn tr­êng sao? Hay lµ ta bi hoa m¾t? enter> Th«i ®­îc råi! Ng­¬i chÈun bŞ vµo trong ®ã ®i!", 2, "Ta muèn gia nhËp/sure2joincd", "Ta chØ ghĞ qua xem/OnCancel")
 	end
 end
 
@@ -73,7 +73,7 @@ function sure2joincd()
 	local defencemap = signmap - 2
 	local defencesidx = SubWorldID2Idx( defencemap )
 	if ( defencesidx < 0 ) then
-		Say(CD_SIGNNPCNAME..": Ç°·½Õ½³¡³öÏÖÎÊÌâ£¬ÔİÊ±²»ÄÜ½øÈ¥.", 0)
+		Say(CD_SIGNNPCNAME..": ChiÕn tr­êng phİa tr­íc x¶y ra vÊn ®Ò, t¹m thêi kh«ng thÓ vµo.", 0)
 		print("citydefence defencemap error!!!! defencemap = "..defencemap)
 		return
 	end
@@ -90,7 +90,7 @@ function sure2joincd()
 end
 
 function want2joincd1()
-	Say(CD_SIGNNPCNAME..":°¡£¡ÄãÏëÒª°ïÖúÎÒÃÇ¿¹µĞ£¿°¥Ñ½£¡ÄÇĞ©ÈË²»ÊÇÆÕÍ¨µÄÊ¿±ø£¬ËûÃÇÎäÒÕ¸ßÇ¿£¬ÆïÊõ¸ßÃ÷£¬»¹»á·Å°µÆ÷¡£", 1, "½«¾ü£¡ÄãÃ»ÊÂ°É?/want2joincd2")
+	Say(CD_SIGNNPCNAME..": µ! Ng­¬i muèn gióp chóng ta chèng l¹i kÎ ®Şch? ¸i chµ! MÊy tªn nµy kh«ng gièng binh sÜ tÇm th­êng, bän chóng vâ nghÖ cao c­êng, c­ìi ngùa rÊt tµi, l¹i cßn biÕt phãng ¸m khİ.", 1, "T­íng qu©n! ¤ng kh«ng sao chø?/want2joincd2")
 end
 
 function want2joincd2()
@@ -101,11 +101,11 @@ function want2joincd2()
 	SubWorld = defencesidx
 	local cd_membercount = GetMSPlayerCount(MISSIONID, 0)
 	SubWorld = oldSubWorld
-	Say(CD_SIGNNPCNAME..": ºÃÁË£¡²»Òª¶àËµ£¬×ÜÖ®ÎÒ¾õµÃËûÃÇÀ´Àú¿ÉÒÉ£¬Õ½¶·ÆÚ¼äÈç¹ûÓĞÈË¼ñµ½ÊéĞÅ¾Í´ø¸øÎÒ¿´£¬ÎÒÓĞÖØÉÍ£¡²Î¼ÓÊØ³ÇµÄÈËÊıÊÇ<color=yellow>"..cd_membercount.."<color>ÈË. Äã×¼±¸ºÃÉÏÕ½³¡ÁËÂğ?", 2, "ÊÇµÄ!/sure2joincd", "ÎÒÏÈ×¼±¸Ò»ÏÂ!/OnCancel")
+	Say(CD_SIGNNPCNAME..": §­îc råi! Kh«ng cÇn nãi nhiÒu, nãi chung ta c¶m thÊy lai lŞch cña bän hä rÊt kh¶ nghi, trong lóc chiÕn ®Êu nÕu ng­¬i nhÆt ®­îc th­ hµm th× h·y ®em ®Õn ta xem, ta sÏ träng th­ëng! Sè ng­êi tham gia thñ thµnh lµ<color=yellow>"..cd_membercount.."<color>ng­êi. B¹n ®· s½n sµng vµo chiÕn tr­êng ch­a?", 2, "§óng vËy!/sure2joincd", "§Ó ta chuÈn bŞ ®·!/OnCancel")
 end
 
 function laughtoleave()
-	Talk(1, "", CD_SIGNNPCNAME..": (º¦ÅÂµÃÃ°º¹")
+	Talk(1, "", CD_SIGNNPCNAME..": (Sî ®Õn to¸t må h«i tr¸n")
 end
 
 function OnCancel()

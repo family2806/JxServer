@@ -17,8 +17,8 @@ function main()
 		return 1;
 	end;
 	CastSkill(SKILLTYPE, SKILLLEVEL);
-	Msg2Player("ÄãÊ¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>£¬"..SKILLDESCRIBE);
+	Msg2Player("B¹n ®· sö dông mét <color=0xB5FDD7>"..SKILLNAME.."<color>?"..SKILLDESCRIBE);
 	local nGroupId = GetTask(TK_GROUPID);
 	nGroupId = festival_getgroupid(nGroupId)
-	Msg2MSGroup(SF_MISSIONID, "<color=0xB5FDD7>"..GetName().."<color>Ê¹ÓÃÁËÒ»¸ö<color=0xB5FDD7>"..SKILLNAME.."<color>"..SKILLDESCRIBE, nGroupId);
+	Msg2MSGroup(SF_MISSIONID, "<color=0xB5FDD7>"..GetName().."<color> sö dông <color=0xB5FDD7>"..SKILLNAME.."<color>"..SKILLDESCRIBE, nGroupId);
 end;

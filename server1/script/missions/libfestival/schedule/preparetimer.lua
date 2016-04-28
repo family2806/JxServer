@@ -18,10 +18,10 @@ function OnTimer()
 		return
 	elseif (0 == mod(nNewsValue, 2)) then
 		if (nRemain > 0) then
-			Msg2MSAll(CO_PREPAREMISSIONID, "Ö»ÓÐ"..nRemain.."·ÖÖÓºó»î¶¯½«¿ªÊ¼!");
+			Msg2MSAll(CO_PREPAREMISSIONID, "ChØ cßn"..nRemain.."phót n÷a ho¹t ®éng sÏ b¾t ®Çu!");
 		end;
 	elseif (9 == nNewsValue) then
-        Msg2MSAll(CO_PREPAREMISSIONID, "Ö»ÓÐ30Ãë»î¶¯½«¿ªÊ¼!");
+        Msg2MSAll(CO_PREPAREMISSIONID, "chØ cßn 30 gi©y n÷a ho¹t ®éng sÏ b¾t ®Çu!");
 	end;
 end;
 
@@ -34,7 +34,7 @@ function players_entrance() -- Ëæ»úÈÃÍæ¼Ò½øÈëµ½³¡µØ£»
 	local OldSubWorld = SubWorld;
 	SubWorld = SubWorldID2Idx(CO_MAPID[1]);
 	if (CO_MINIMUM >= GetMSPlayerCount(CO_PREPAREMISSIONID, 0)) then
-		Msg2MSAll(CO_PREPAREMISSIONID, "ÓÉÓÚ²Î¼Ó»î¶¯µÄÈËÊýÉÙÓÚ<color=yellow>"..CO_MINIMUM.." ÈË<color> ËùÒÔ»î¶¯±»È¡Ïû");
+		Msg2MSAll(CO_PREPAREMISSIONID, "Do sè ng­êi tham gia ho¹t ®éng Ýt h¬n <color=yellow>"..CO_MINIMUM.." ng­êi<color>?nªn ®ît ho¹t ®éng nµy bÞ hñy bá.");
 		SubWorld = SubWorldID2Idx(CO_MAPID[2]);
 		CloseMission(CO_MISSIONID)
 		return

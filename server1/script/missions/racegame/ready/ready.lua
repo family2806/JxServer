@@ -42,7 +42,7 @@ function racegame_tbReadyMission:OnTimer()
 	local nTimerCount = GetMissionV(self.tbMissionV.SECOND_COUNTER)
 	
 	nTimerCount = nTimerCount + 1
-	local szMsg = format("Ê£ÓàÊ±¼äÎª <color=yellow>%d<color> Ãë.", self.nLatencyTime - nTimerCount)
+	local szMsg = format("Thêi gian cßn l¹i lµ <color=yellow>%d<color> gi©y.", self.nLatencyTime - nTimerCount)
 	
 	if nTimerCount >= self.nSignUpTime and GetMissionV(self.tbMissionV.MISSION_STATE) ~= 3 then
 		SetMissionV(self.tbMissionV.MISSION_STATE, 3)
@@ -91,7 +91,7 @@ function racegame_tbReadyMission:OnClose()
 				nPlayerMapId = 524
 			end
 			doFunByPlayer(tbPlayer[i], NewWorld, nPlayerMapId, racegame_tbMission.tbSignUpPos[1], racegame_tbMission.tbSignUpPos[2])
-			doFunByPlayer(tbPlayer[i], Msg2Player, "Ç°ÃæÂ·²»Í¨£¬ÇëµÈÏÂ³¡±ÈÈü.")
+			doFunByPlayer(tbPlayer[i], Msg2Player, "§­êng ®i phİa tr­íc kh«ng th«ng, h·y ®îi cuéc ®ua sau.")
 		else
 			local nX, nY = getadata("\\settings\\battles\\maps\\river\\´óÓª2.txt")
 			doFunByPlayer(tbPlayer[i], NewWorld, racegame_tbMission.nMapId, nX/32, nY/32)	
@@ -124,11 +124,11 @@ function racegame_tbReadyMission:OnPlayerJoin()
 		end
 		NewWorld(nPlayerMapId, racegame_tbMission.tbSignUpPos[1], racegame_tbMission.tbSignUpPos[2])
 		if nPlayerCount >= self.nPlayerCountLimit then
-			Msg2Player("²Î¼Ó»î¶¯ÈËÊıÒÑ¹»ÁË£¬Äã²Î¼ÓÏÂÒ»³¡°É!")
-			Say("²Î¼Ó»î¶¯ÈËÊıÒÑ¹»ÁË£¬Äã²Î¼ÓÏÂÒ»³¡°É!", 0)
+			Msg2Player("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!")
+			Say("Sè ng­êi tham gia ho¹t ®éng nµy ®· ®ñ, b¹n h·y tham gia ®ît sau!", 0)
 		elseif GetLevel() < self.nLevelLimit then
-			Msg2Player(format("µÈ¼¶²»×ã %s, ²»ÄÜ²Î¼Ó»î¶¯.", self.nLevelLimit))
-			Say(format("µÈ¼¶²»×ã %s, ²»ÄÜ²Î¼Ó»î¶¯.", self.nLevelLimit), 0)
+			Msg2Player(format("§¼ng cÊp kh«ng ®ñ %s, kh«ng thÓ tham gia ho¹t ®éng.", self.nLevelLimit))
+			Say(format("§¼ng cÊp kh«ng ®ñ %s, kh«ng thÓ tham gia ho¹t ®éng.", self.nLevelLimit), 0)
 		end
 		return 0
 	end

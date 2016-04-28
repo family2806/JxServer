@@ -434,7 +434,7 @@ SKILLS={
 		skill_mintimepercastonhorse_v={{{1,60*18},{15,45*18},{20,40*18},{21,40*18}}},
 		skill_desc=
 			function(level)
-				return "ÀäÈ´Ê±¼ä£º<color=orange>"..floor(Link(level,SKILLS.cuiyan120.skill_mintimepercast_v[1]) / 18).."Ãë<color>\n"
+				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.cuiyan120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"
 			end,
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},
