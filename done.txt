@@ -230,7 +230,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Î�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\obj\Îäµ±ÅÉ-¸æÊ¾ÅÆ2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\obj\Îäµ±ÅÉ-Â·±ê1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\obj\Îäµ±ÅÉ-Ê¯±®1.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\npc\Â·ÈË_ÀîÌìÄ¿.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\npc\Îäµ±ÅÉ_Âô±øÆ÷µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\npc\Îäµ±ÅÉ_ÂôÒ©µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\npc\Îäµ±ÅÉ_Âô×°±¸µÄ¶Ô»°.lua
@@ -334,7 +333,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_¿ÍÕ»ÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ÀîÐã²Å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ÁÔÈË¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ËÕ´óÂè¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ËÕÖÒ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ÌÆÃÅµÜ×Ó¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ÌÆÊå¶Ô»°.lua
@@ -438,7 +436,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\Ì�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc09\trnpc09.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc08\trnpc08.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc07\trnpc07.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc05\trnpc05.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc02\trnpc02.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ1\trap\ÌìÈÌ½ÌÊÒÄÚ1toÌìÈÌ½ÌÊÒÄÚÓÒ2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ1\trap\ÌìÈÌ½ÌÊÒÄÚ1toÌìÈÌ½ÌÊÒÄÚ×ó2.lua
@@ -566,14 +563,12 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\É�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÅÉ\npc\Õ½¶·_sll30_ËþÁÖµÁÔô01.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÃÜÊÒ\trap\ÉÙÁÖÃÜÊÒtoÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÃÜÊÒ\trap\ÉÙÁÖÃÜÊÒ¶þÃÅ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÃÜÊÒ\obj\µØÍ¼_sll40_Ð¡ÃÅµÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÃÜÊÒ\npc\Õ½¶·_sll40_¹ÖÎï01.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\Ç§·ðµî\trap\Ç§·ðµîtoÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\Ä¾ÈËÏï\trap\Ä¾ÈËÏïto´ïÄ¦ÌÃ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\Ä¾ÈËÏï\npc\Õ½¶·_sll10_µÐÈË01.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÂÞººÌÃ\trap\ÂÞººÌÃtoÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÂÞººÌÃ\trap\ÂÞººÌÃtoÒ»°ÙÁã°ËÂÞººÕó.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÂÞººÌÃ\npc\Â·ÈË_ÐþÄÑ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\·½ÕÉìøÊÒ\trap\·½ÕÉìøÊÒtoÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\µÜ×Ó·¿2\trap\µÜ×Ó·¿2toÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\µÜ×Ó·¿1\trap\µÜ×Ó·¿1toÉÙÁÖÅÉ.lua
@@ -582,7 +577,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\´�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\´ïÄ¦ÌÃ\trap\´ïÄ¦ÌÃtoÉÙÁÖÅÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\´ïÄ¦ÌÃ\npc\Â·ÈË_Ðþ±¯.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\²Ø¾­¸ó\trap\²Ø¾­¸ótoÉÙÁÖÅÉ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\²Ø¾­¸ó\npc\Â·ÈË_Ðþ´È.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ÌúËþÃÔ¹¬3\trap\ÌúËþÃÔ¹¬3toÌúËþÃÔ¹¬2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ÌúËþÃÔ¹¬3\obj\trobj03.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ÌúËþÃÔ¹¬3\npc\trenemy05_3\trenemy05_3.lua
@@ -642,7 +636,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË13ÕÅ¹Ñ¸¾¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË14¶¬Ã·¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË15ÁõÔ±Íâ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË16ÆòØ¤¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË17ÌÆÀÏµù¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË18³ÂÈý±¦¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË19ÐÁ´ó¹Ã¶Ô»°.lua
@@ -658,8 +651,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË9Àî×æµÂ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË_½ð¹úÎäÊ¿.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË_ÐÁÆú¼².lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÂëÍ·´¬·ò1¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÂëÍ·´¬·ò2¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÂëÍ·´¬·ò3¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Âí··×Ó¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_æäÕ¾³µ·ò¶Ô»°.lua
@@ -667,7 +658,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾�
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_æÎ¿Í1¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_æÎ¿Í2¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÆòØ¤.lua
-D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Ç®×¯ÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Ìú½³1¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Ìú½³2¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Ïà¹úËÂ×¡³Ö¶Ô»°.lua
@@ -839,7 +829,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_³çÊ¥ËÂÐéÔ²·½ÕÉ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_´¬¼Ò.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_µ«ÐÓ»¨.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_µ¶Á«Ó¢.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_¶¡°¢Åô.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_¶­¿ËÒÑ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_¶ÄÍ½1.lua
@@ -891,13 +880,11 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Ö°ÄÜ_ÔÓ»õµêÀÏ°å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Ö°ÄÜ_ÕÊ·¿ÏÈÉú.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\Ö÷·¿\trap\Ö÷·¿to´äÑÌÃÅ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\Ö÷·¿\npc\Â·ÈË_Òüº¬ÑÌ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\ÊØÓñÌü\trap\ÊØÓñÌüto´äÑÌÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\ÊØÓñÌü\npc\cy20_ontimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\ÊØÓñÌü\npc\Â·ÈË_æÌÏþÙ».lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\ÃÅÂ¥\trap\ÃÅÂ¥to´äÑÌÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\½ûµØÃÔ¹¬\trap\½ûµØÃÔ¹¬to´äÑÌÃÅ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\½ûµØÃÔ¹¬\npc\Â·ÈË_cyl60_ÎÞÃûÀÏÕß.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\½ûµØÃÔ¹¬\npc\Õ½¶·_cyl60_²Ý¿Ü.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\µÜ×Ó·¿2\trap\µÜ×Ó·¿2to´äÑÌÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\µÜ×Ó·¿1\trap\µÜ×Ó·¿1to´äÑÌÃÅ.lua
@@ -920,14 +907,12 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\´äÑÌÂôÎäÆ÷.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\´äÑÌÂôÒ©Æ·.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\´äÑÌÂô×°±¸.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Â·ÈË_´ºÏãÆÅÆÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Â·ÈË_´äÑÌÃÅµÜ×Ó01.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Â·ÈË_´äÑÌÃÅµÜ×Ó02.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Â·ÈË_ÛªÇïË®.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Õ½¶·_cyl10_ºìºü.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Õ½¶·_cylen_´äÑÌÃÅµÜ×Ó.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\°Ù»¨Ìü\trap\°Ù»¨Ìüto´äÑÌÃÅ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\°Ù»¨Ìü\npc\Â·ÈË_ºÎÄºÑ©.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\Ü½ÈØ¶´\trap\Ü½ÈØ¶´to½­½ò´å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÖñË¿¶´Ò»²ã\trap\ÖñË¿¶´Ò»²ãtoÌÆÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÖñË¿¶´Ò»²ã\trap\ÖñË¿¶´Ò»²ãtoÖñË¿¶´¶þ²ã.lua
@@ -944,7 +929,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Õ½¶�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÒéÊÂ´óÌü\trap\ÒéÊÂ´óÌütoÌÆÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÒéÊÂ´óÌü\npc\tmnpc06\tmnpc06.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Ò½Ò©·¿\trap\Ò½Ò©·¿toÌÆÃÅ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Ò½Ò©·¿\npc\tmnpc10\tmnpc10.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Îä¹¦·¿\trap\Îä¹¦·¿toÌÆÃÅ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Îä¹¦·¿\npc\tmnpc05\tmnpc05.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\trap\ÌÆÃÅto°µÆ÷·¿.lua
@@ -975,7 +959,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃ�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\ÌÆÃÅ_Âô±øÆ÷µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\ÌÆÃÅ_ÂôÒ©µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\ÌÆÃÅ_Âô×°±¸µÄ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\ÌÆÃÅ°ïÖúnpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\tmnpc04\tmnpc04.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\tmnpc03\tmnpc03.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\tmnpc02\tmnpc02.lua
@@ -1137,7 +1120,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\¶ëáÒÅÉ_Âô±øÆ÷µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\¶ëáÒÅÉ_ÂôÒ©µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\¶ëáÒÅÉ_Âô×°±¸µÄ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\¶ëáÒÅÉ°ïÖúnpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\emnpc11\emnpc11.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\emnpc09\emnpc09.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\emnpc06\emnpc06.lua
@@ -1206,7 +1188,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË21ÂôÊß²ËµÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË22ËïÍñ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË23ÂäÆÇ×ÓµÜ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË2Ð¤ÆÅÆÅ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË3ÎºÐ¡Ã÷¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË4Ó¦²É¶ù¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË6ÖÜË´Îä¶Ô»°.lua
@@ -1252,7 +1233,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\trap\³¤½­Ô´Í·toÑãÊ¯¶´.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\obj\Î÷ÄÏ±±Çø-³¤½­Ô´Í·-Â·±ê12.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\obj\Î÷ÄÏ±±Çø-³¤½­Ô´Í·-Â·±ê13.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\npc\Â·ÈË_½çÎÞÐ°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\npc\Õ½¶·_ÉñÃØÉ±ÊÖ01.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\npc\Õ½¶·_ÉñÃØÉ±ÊÖ02.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\npc\Õ½¶·_ÉñÃØÉ±ÊÖ03.lua
@@ -1402,7 +1382,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°Ä�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÅ®3¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¾ÆÂ¥ÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¿ÍÕ»ÀÏ°å¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-ÂëÍ·´¬·ò¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-Âí··¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-æäÕ¾³µ·ò¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-æäÕ¾æä¹Ù¶Ô»°.lua
@@ -1600,16 +1579,13 @@ D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À�
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\obj\À¥ÂØÅÉ´¢ÎïÏä2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\obj\Â·±ê_À¥ÂØÅÉto¿ì»îÁÖÃÔ¹¬.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\obj\Â·±ê_À¥ÂØÅÉtoÁúÃÅÕò.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\À¥ÂØ°ïÖúnpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\À¥ÂØÂôÎäÆ÷.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\À¥ÂØÂôÒ©Æ·.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\À¥ÂØÂô×°±¸.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÇðÓ¢.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÉÛÓñ·É.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_Ì¾Ï¢ÀÏÈË.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_Í¯Ï¦ÑÕ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_Ð¡º®.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÓãËØÕæ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÖìÈ±.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØºóÉ½\trap\Àë¿ª.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØºóÉ½\npc\Õ½¶·_ÉÛÓñ·É.lua
@@ -1770,7 +1746,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍ�
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_´óÃÅ°ïÖÚ1¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_´óÃÅ°ïÖÚ2¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_ºÅÁîÌ¨°ïÖÚ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_ÂëÍ·°ïÖÚ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_Âô±øÆ÷µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_ÂôÒ©µÄ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_Âô×°±¸µÄ¶Ô»°.lua
@@ -1859,7 +1834,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\Ä�
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_½á°ÝµÄºÍÉÐ.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_¾ÆµêÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_¿ÍÕ»ÀÏ°å¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Â·ÈË1Åí´óÒ¯¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Â·ÈË2ÌïÌ«ÆÅ¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Â·ÈË3°¢¸£¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Â·ÈË4ÕÔÒøæ·¶Ô»°.lua
@@ -1871,7 +1845,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\Ä�
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_ÌÆÃÅµÜ×Ó¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_ÌìÈÌ½ÌÍ½¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_ÌìÍõ°ïÖÚ¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Ìú½³¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Îäµ±µÜ×Ó¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Ò©µêÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_ÔÓ»õµêÀÏ°å¶Ô»°.lua
@@ -1915,7 +1888,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°�
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁê_Ö°ÄÜ_Îå¶¾É¢ÈË.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁê_Ö°ÄÜ_Ø¤°ïµÜ×Ó.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_³¤½­ÂëÍ·´¬·ò¶Ô»°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¶´Í¥ºþÂëÍ·´¬·ò1¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¶ëáÒµÜ×Ó¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¾ÆµêÀÏ°å¶Ô»°.lua
 D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¿ÍÕ»ÀÏ°å¶Ô»°.lua
@@ -2008,7 +1980,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\Îå¶�
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\trap\ÈëÃÅÃÔ¹¬toÎå¶¾½Ì.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Â·ÈË_Îå¶¾µÜ×Ó2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÇàòÚÕ¯\trap\ÇàòÚÕ¯toÎå¶¾½Ì.lua
-D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÇàòÚÕ¯\npc\Â·ÈË_ÌÀåö.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\Ä«ÖëÕ¯\trap\Ä«ÖëÕ¯toÎå¶¾½Ì.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\Ä«ÖëÕ¯\npc\Â·ÈË_É£Öé.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\½ðÉßÕ¯\trap\½ðÉßÕ¯toÎå¶¾½Ì.lua
@@ -2135,7 +2106,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁúÈª´å\npc\Ö�
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁúÈª´å\npc\Ö°ÄÜ_Ò©µêÀÏ°å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁúÈª´å\npc\Ö°ÄÜ_ÔÓ»õµêÀÏ°å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°É½¶´\trap\Óù»¨Ô°É½¶´toÓù»¨Ô°.lua
-D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°É½¶´\npc\Â·ÈË_²Ü¹«¹«.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°É½¶´\npc\Õ½¶·_»Ê¹¬ÎÀÊ¿.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°\trap\Óù»¨Ô°toÓù»¨Ô°É½¶´.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°\npc\Â·ÈË_²Ü¹«¹«.lua
@@ -2226,7 +2196,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\np
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ìú½³.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ìú½³Ñ§Í½.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_ÑÃÒÛ.lua
-D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ò©µêÀÏ°å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ò©··×Ó.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_ÔÓ»õµêÀÏ°å.lua
 D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_ÕÊ·¿ÏÈÉú.lua
@@ -2315,7 +2284,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\item\h
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\item\nhu_y_le_bao_dai.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\item\nhu_y_le_bao_tieu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\item\nhu_y_le_bao_trung.lua
-D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip2012\main.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\trongcaythang112011\buy_rose_seed.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\trongcaythang112011\ficus_seed.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\trongcaythang112011\kimlangxuan.lua
@@ -2468,7 +2436,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tong_chuwuxiang.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tong_totempole.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\zhandouqu_zongguan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\entrance_trap.lua
-D:\Game\ServerMe\China\JxServer\server1\script\tong\map\map_management.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\spacenorth_trap.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\spacesouth_trap.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\yangzhou\entrance_trap.lua
@@ -2705,7 +2672,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\master\xiepai\Õ½¶
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\master\xiepai\Õ½¶·_ÏÄºî¸´.lua
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\master\xiepai\Õ½¶·_Ð¡ì÷¶ù.lua
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\master\xiepai\Õ½¶·_Ð¤ÎÞ³£.lua
-D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\jiaoyutasknpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\knowmagic.lua
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\Â·ÈË_ÁúÎå.lua
 D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\branch\branch_bwsj.lua
@@ -3636,7 +3602,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\common.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\protocol_gs.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\rule.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\ui.lua
-D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\npc\dialognpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\npc\monster.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\item\nupaolingfu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\gun\extra_gun.lua
@@ -4064,7 +4029,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\cp_checktim
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\factiontop5.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\leveltop10.lua
-D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\tryout\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\tryout\mission.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\tryout\smalltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\tryout\totaltimer.lua
@@ -4081,7 +4045,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\match\missi
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\match\playerdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\match\smalltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\match\totaltimer.lua
-D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\chuangguang30.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\chuangguang30_playerdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\doubleexp.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\include.lua
@@ -4301,7 +4264,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\item\checkmapid.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\chengshidahongbao.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\chrismasbox.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\chuangongdan.lua
-D:\Game\ServerMe\China\JxServer\server1\script\item\chuanjiazhishu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\collectmeat.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\crowninghalo.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\cuiyan-daofa.lua
@@ -4398,7 +4360,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\item\neihuowan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\neipuwan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\nei_wan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\newyear2006_item.lua
-D:\Game\ServerMe\China\JxServer\server1\script\item\noscript.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\nothing.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\oldbox.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\pack.lua
@@ -4867,9 +4828,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_tianzi.lua
 D:\Game\ServerMe\China\JxServer\server1\script\gm_tool\dispose_item.lua
 D:\Game\ServerMe\China\JxServer\server1\script\gm_tool\exp_recall.lua
 D:\Game\ServerMe\China\JxServer\server1\script\gm_tool\laoanmay.lua
-D:\Game\ServerMe\China\JxServer\server1\script\global\addspreadernpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\addxishancunnpc.lua
-D:\Game\ServerMe\China\JxServer\server1\script\global\autoexec.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\autoexec_head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\ban.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\chatroom_addtime.lua
@@ -4884,7 +4843,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\global\del_horse.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\dicegame.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\dlgnpc_list.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\equipenchase_help.lua
-D:\Game\ServerMe\China\JxServer\server1\script\global\extpointfunc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\faeshi.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\fightnpc_list.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\forbidmap.lua
@@ -4895,7 +4853,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\global\journeyer_officer_festival
 D:\Game\ServerMe\China\JxServer\server1\script\global\judgeoffline_.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\judgeoffline_limit.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\judgeoffline_special.lua
-D:\Game\ServerMe\China\JxServer\server1\script\global\localnews.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\login_head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\login_hint.lua
 D:\Game\ServerMe\China\JxServer\server1\script\global\logout.lua
@@ -5106,7 +5063,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\teacherday\master.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\teacherday\medicine.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\teacherday\teacherdayhead.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\superplayeract2007\event.lua
-D:\Game\ServerMe\China\JxServer\server1\script\event\storm\award_npc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\storm\custom.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\storm\function.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\storm\head.lua
@@ -5126,7 +5082,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival08\allbrother
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival08\allbrother\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival08\allbrother\itemlist.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival08\allbrother\taskhead.lua
-D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival07\dialog.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival07\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival07\worker.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival07\item\crackers_n_big.lua
@@ -5202,7 +5157,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\newyeargift_dog\event.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\newbielvlup\event.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\nationalday_2006\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\nationalday_2006\main.lua
-D:\Game\ServerMe\China\JxServer\server1\script\event\nanfangjiefangri\event.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\mothersday\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\mid_autumn06\autoexe.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\mid_autumn06\fairy_of_midautumn06.lua
@@ -5436,7 +5390,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\bonusvlmc\vlmc_main.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\battleinfo.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\battlejoin1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\battlejoin2.lua
-D:\Game\ServerMe\China\JxServer\server1\script\battles\battlemain.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\battletest.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\battle_rank_award.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\bossdeath.lua
@@ -5492,7 +5445,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\playerdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\totaltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\useflagitem.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\centertrap.lua
-D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\doctor.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\homeouttrap1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\homeouttrap2.lua
@@ -5515,7 +5467,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\homeouttrap1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\homeouttrap2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\hometrap1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\hometrap2.lua
-D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\mission.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\npcdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\npcdeath_1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\npcdeath_2.lua
@@ -5546,7 +5497,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\battles\guozhan\playerdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\guozhan\smalltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\guozhan\totaltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\centertrap.lua
-D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\doctor.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\homeouttrap1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\homeouttrap2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\hometrap1.lua
@@ -5821,7 +5771,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\19\variables.l
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\19\xiangsidou.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\19\xiangsilihe.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\18\config.lua
-D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\17\config.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\17\extend.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\17\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\17\registe.lua
@@ -5862,7 +5811,6 @@ D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1010\kienthiet
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1010\kienthietboxs.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1010\registe.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1010\variables.lua
-D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1009\award_ext.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1009\config.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1009\extend.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1009\head.lua

@@ -1,164 +1,216 @@
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\gmscript.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\×Ô¶¯Ë¢BOSS.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÑïÖÝ\npc\ÑïÖÝ_¼ËÅ®1¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÑïÖÝ\npc\ÑïÖÝ_¼ËÔºÀÏð±¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÅ®1¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÅ®2¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÔºÀÏð±¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_Ç®×¯ÀÏ°å¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÑïÖÝ\npc\ÑïÖÝ_¼ËÅ®1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÑïÖÝ\npc\ÑïÖÝ_¼ËÔºÀÏð±¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÅ®1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÅ®2¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_¼ËÔºÀÏð±¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\ÏåÑô\ÏåÑô\npc\ÏåÑô_Ç®×¯ÀÏ°å¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\Îäµ±ÅÉ\Îäµ±ÅÉ\npc\Â·ÈË_ÀîÌìÄ¿.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­ÄÏÇø\µ¾Ïã´å\npc\µ¾Ïã´å_ËÕ´óÂè¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÌìÈÌ½Ì\ÌìÈÌ½ÌÊÒÄÚ3\npc\trnpc05\trnpc05.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÉÙÁÖÃÜÊÒ\obj\µØÍ¼_sll40_Ð¡ÃÅµÄ¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\ÂÞººÌÃ\npc\Â·ÈË_ÐþÄÑ.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\·½ÕÉìøÊÒ\npc\Â·ÈË_·½ÕÉÐþÒò.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÔÓ»õµêÀÏ°å¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\north_boatman1.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\north_boatman3.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\south_boatman1.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\south_boatman3.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÅ®1¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÅ®2¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÔºÀÏð±¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÅ®1¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÅ®2¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÔºÀÏð±¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-ÔÓ»õµêÀÏ°å¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\¹ÅÑô¶´\obj\µØÍ¼_»ú¹Ø1.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ÉÙÁÖÅÉ\²Ø¾­¸ó\npc\Â·ÈË_Ðþ´È.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Â·ÈË16ÆòØ¤¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÂëÍ·´¬·ò1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÂëÍ·´¬·ò2¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_Ç®×¯ÀÏ°å¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\ãê¾©\ãê¾©\npc\ãê¾©_ÔÓ»õµêÀÏ°å¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\north_boatman1.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\north_boatman3.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\south_boatman1.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\ÖÐÔ­±±Çø\·çÁê¶É\npc\south_boatman3.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´óÀí¸®\´óÀí¸®\npc\Â·ÈË_µ¶Á«Ó¢.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\Ö÷·¿\npc\Â·ÈË_Òüº¬ÑÌ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\½ûµØÃÔ¹¬\npc\Â·ÈË_cyl60_ÎÞÃûÀÏÕß.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\´äÑÌÃÅ\npc\Â·ÈË_´ºÏãÆÅÆÅ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏÄÏÇø\´äÑÌÃÅ\°Ù»¨Ìü\npc\Â·ÈË_ºÎÄºÑ©.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\Ò½Ò©·¿\npc\tmnpc10\tmnpc10.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\ÌÆÃÅ\ÌÆÃÅ\npc\ÌÆÃÅ°ïÖúnpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\¶ëáÒÅÉ\¶ëáÒÅÉ\npc\¶ëáÒÅÉ°ïÖúnpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÅ®1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÅ®2¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Ö°ÄÜnpc\Î÷ÄÏ±±Çø-³É¶¼¸®--¼ËÔºÀÏð±¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³É¶¼\³É¶¼\Â·ÈËnpc\Î÷ÄÏ±±Çø-³É¶¼¸®-Â·ÈË2Ð¤ÆÅÆÅ¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷ÄÏ±±Çø\³¤½­Ô´Í·\³¤½­Ô´Í·\npc\Â·ÈË_½çÎÞÐ°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÅ®1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÅ®2¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-¼ËÔºÀÏð±¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-ÂëÍ·´¬·ò¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±ÄÏÇø\·ïÏè\Ö°ÄÜnpc\Î÷±±ÄÏÇø-·ïÏè¸®-ÔÓ»õµêÀÏ°å¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\À¥ÂØ°ïÖúnpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÉÛÓñ·É.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\À¥ÂØÅÉ\À¥ÂØÅÉ\npc\Â·ÈË_ÓãËØÕæ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Î÷±±±±Çø\¹ÅÑô¶´\obj\µØÍ¼_»ú¹Ø1.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌÒ»¨Ô´\npc\ÌÒ»¨Ô´_Â·ÈË4ÂæÓ¢¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï°ïÖúnpc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\Ö°ÄÜ_ÍòÊÂÍ¨.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï_ÂëÍ·°ïÖÚ¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÌìÍõ°ï\ÌìÍõ°ï\npc\ÌìÍõ°ï°ïÖúnpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Â·ÈË1Åí´óÒ¯¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\ÄÏÔÀÕò_Ìú½³¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\ÄÏÔÀÕò\npc\Ö°ÄÜ_ÍòÊÂÍ¨.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\obj\°ÍÁêÏØ-Ê¯±®4.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¶´Í¥ºþÂëÍ·´¬·ò2¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË10ÉÌÈË¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË2¹ÅÀÏÌ«¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË4Ð¡Óæ¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË5ÓÎ¿Í¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¶´Í¥ºþÂëÍ·´¬·ò1¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_¶´Í¥ºþÂëÍ·´¬·ò2¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË10ÉÌÈË¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË2¹ÅÀÏÌ«¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË4Ð¡Óæ¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË5ÓÎ¿Í¶Ô»°.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË6Óá¾ÅÖÝ¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË9°¢·¼¶Ô»°.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_Â·ÈË9°¢·¼¶Ô»°.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\Á½ºþÇø\°ÍÁêÏØ\npc\°ÍÁêÏØ_ÔÓ»õµêÀÏ°å¶Ô»°.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Î÷É½´å\npc\npc_xishanxiaoer.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_01¶¾Éß.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_02¶¾Ð«.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_03Ö©Öë.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_04ó¸òÜ.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_05òÚò¼.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Â·ÈË_ÇØÈãÐÀ&¹Ë×ÏÆ¼.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ç®×¯ÀÏ°å.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_ÉñÃØÌú½³.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Î÷É½´å\npc\npc_xishanxiaoer.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_01¶¾Éß.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_02¶¾Ð«.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_03Ö©Öë.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_04ó¸òÜ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÈëÃÅÃÔ¹¬\npc\Õ½¶·_wuen_05òÚò¼.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\Îå¶¾½Ì\ÇàòÚÕ¯\npc\Â·ÈË_ÌÀåö.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\Óù»¨Ô°É½¶´\npc\Â·ÈË_²Ü¹«¹«.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Â·ÈË_ÇØÈãÐÀ&¹Ë×ÏÆ¼.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ç®×¯ÀÏ°å.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_ÉñÃØÌú½³.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\½­ÄÏÇø\ÁÙ°²\ÁÙ°²\npc\Ö°ÄÜ_Ò©µêÀÏ°å.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\¶«±±Çø\³¤°×É½\³¤°×É½½Å\obj\Â·±ê_³¤°×É½½ÅtoÁÙÓå¹Ø.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip2012\main.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\crystal_5colors.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\star_happiness.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\star_safe.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20120415_bach_bao_ruong\bbr_award.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20120415_bach_bao_ruong\bbr_award.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\vng_event\201203_huyenvulenh\main.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\tong\tong_mix.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\tong\workshop\tongcolltask.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\tong\tong_mix.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\tong\workshop\tongcolltask.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\tong\workshop\ws_huodong.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\tollgate\messenger\posthouse.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\tong\map\map_management.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\tollgate\messenger\posthouse.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\tollgate\killer\nieshichen.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\tasklink\tasklink_award.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\tasklink\tasklink_head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\dragonfive.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\task\metempsychosis\task_head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\tagnewplayer\tbitembk2.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\tagnewplayer\tbitemhk.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\tasklink\tasklink_award.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\tasklink\tasklink_head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\dragonfive.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\newtask\education\jiaoyutasknpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\task\metempsychosis\task_head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\tagnewplayer\tbitembk2.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\tagnewplayer\tbitemhk.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\skill\emei.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\skill\gaibang.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\skill\shaolin.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\skill\gaibang.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\skill\shaolin.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\skill\special\platina.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\shitu\lilian.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\shitu\lilianmasterbonus.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\shitu\shitu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\shitu\shitu.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\shitu\shitu_head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\yandibaozang\head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\tifu\shenxingfu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\yandibaozang\head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\tifu\shenxingfu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\npc\dialognpc.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\maze\maze.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\npc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\championship\tryout\head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\chuangguang30.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\npc.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\npc_death.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\timer_match.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\item\chuangguanbaoxiang.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwmanager.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwtotaltimer.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\bossdeath.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\timer_match.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\challengeoftime\item\chuangguanbaoxiang.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwmanager.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwtotaltimer.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\bossdeath.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\missions\autohang\timer.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\misc\spreader\spreader.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\ex_goldequip_head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\ex_goldequip_lingpai.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\itemexchangevalue.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\misc\spreader\spreader.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\ex_goldequip_head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\ex_goldequip_lingpai.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\misc\itemexchangevalue\itemexchangevalue.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\maps\newworldscript_default.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\lib\player.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\lib\randomitem.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\bosscharm.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\goldenseed.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\levelup_item.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\market_pack.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\newdoggift.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\lib\player.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\lib\randomitem.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\bosscharm.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\chuanjiazhishu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\goldenseed.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\levelup_item.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\market_pack.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\newdoggift.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\noscript.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\songjinmibao.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\techan_xiulibao.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\techan_xiulibao.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\tianxingbaijuwan.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\xinshirenwu\xinshibaoxiang.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\xinnianlibao\xinniangift.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\ib\shenxingfu.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\card\card_shitu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\xinshirenwu\xinshibaoxiang.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\xinnianlibao\xinniangift.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\ib\shenxingfu.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\card\card_shitu.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\caiyao\huitianlibao.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\item\battles\rescript.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\item\battles\rescript.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\addspreadernpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\autoexec.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\baijuwanhead.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\global_tiejiang.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\global_zahuodian.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\gmrole.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\head_qianzhuang.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\jingli.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\judgeoffline.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\login.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\extpointfunc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\global_tiejiang.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\global_zahuodian.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\gmrole.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\head_qianzhuang.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\jingli.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\judgeoffline.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\localnews.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\login.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\login_old.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\map_helper.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\offlineaward.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\offlinelive.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\recoin_goldenequip.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\seasonnpc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\server_playerlevelup.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\shangshanshi.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\shenmi_chapman.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\map_helper.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\offlineaward.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\offlinelive.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\recoin_goldenequip.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\seasonnpc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\server_playerlevelup.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\shangshanshi.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\shenmi_chapman.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\skills_table.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\station.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\translife.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\°ï»á½ÓÒýÈË.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Áã··¹¦ÄÜ.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Â·ÈË_Àñ¹Ù.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Â·ÈË_ÑÃÃÅÎÀ±ø.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Ç®×¯¹¦ÄÜ.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\ËÍÐÅÈÎÎñ.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Ï´pkµÄÀÎÍ·.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\Ï´pkµÄÑÃÒÛ.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\×ÏÉ«¼°»Æ½ð×°±¸ÖýÔì.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\ÌØÊâÓÃµØ\ËÎ½ð±¨Ãûµã\npc\jin_shop.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\ÌØÊâÓÃµØ\ËÎ½ð±¨Ãûµã\npc\song_shop.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\´äÑÌ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\¶ëáÒ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\À¥ÂØ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÉÙÁÖ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌÆÃÅ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌìÈÌ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌìÍõ½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Îäµ±½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Îå¶¾½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Ø¤°ï½ÓÒýµÜ×Ó.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\vn\extpointfunc_proc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\vn\gamebank_proc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\global\cn\extpointfunc_proc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\young_hero\hero.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\station.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\translife.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\°ï»á½ÓÒýÈË.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Áã··¹¦ÄÜ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Â·ÈË_Àñ¹Ù.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Â·ÈË_ÑÃÃÅÎÀ±ø.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Ç®×¯¹¦ÄÜ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\ËÍÐÅÈÎÎñ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Ï´pkµÄÀÎÍ·.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\Ï´pkµÄÑÃÒÛ.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\×ÏÉ«¼°»Æ½ð×°±¸ÖýÔì.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\ÌØÊâÓÃµØ\ËÎ½ð±¨Ãûµã\npc\jin_shop.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\ÌØÊâÓÃµØ\ËÎ½ð±¨Ãûµã\npc\song_shop.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\´äÑÌ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\¶ëáÒ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\À¥ÂØ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÉÙÁÖ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌÆÃÅ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌìÈÌ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\ÌìÍõ½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Îäµ±½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Îå¶¾½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\¸÷ÅÉ½ÓÒýµÜ×Ó\Ø¤°ï½ÓÒýµÜ×Ó.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\vn\extpointfunc_proc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\vn\gamebank_proc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\global\cn\extpointfunc_proc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\young_hero\hero.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\storm\award_npc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\springfestival07\dialog.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\revival\event.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\mid_autumn06\item\lightcage\lightcage.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\nanfangjiefangri\event.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\mid_autumn06\item\lightcage\lightcage.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\menglan_2006\dafengbao_a.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\jiefang_jieri\201004\main.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\jinwu\item2equip.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\change_destiny\npc.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\event\birthday_jieri\200905\npc\npc_zhanxin_zunzhe.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\battlehead.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\battlejoin.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\battles_award_head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\mission.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\smalltimer.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\mission.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\smalltimer.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\head.lua
-ERROR: D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\mission.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\change_destiny\npc.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\event\birthday_jieri\200905\npc\npc_zhanxin_zunzhe.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\battlehead.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\battlejoin.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\battlemain.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\battles_award_head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\mission.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\seizeflag\smalltimer.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\doctor.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\mission.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\marshal\smalltimer.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\jianta\mission.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\doctor.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\head.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\battles\butcher\mission.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\37\config.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\17\config.lua
+COUNT FAIL: D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1009\award_ext.lua
 ERROR: D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1000\config.lua
