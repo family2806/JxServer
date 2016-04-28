@@ -61,7 +61,7 @@ local tbGoldEquip_Coin = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Méng Long ChÝnh Hång T¨ng M·o<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>Méng Long ChÝnh Hång T¨ng M·o<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -79,7 +79,7 @@ local tbGoldEquip_Coin = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>U Lung XÝch YÕt MËt Trang<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>U Lung XÝch YÕt MËt trang<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -96,7 +96,7 @@ local tbGoldEquip_Coin = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Ma S¸t Cö Háa Liªu Thiªn UyÓn<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s ®·»ñµÃ<color=yellow>Ma S¸t Cö Háa Liªu Thiªn Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -113,7 +113,7 @@ local tbGoldEquip_Coin = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>§Þch  Kh¸i TriÒn M·ng Yªu §¸i<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>§Þch Kh¸i TriÒn M·ng yªu ®¸i<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -134,7 +134,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>H¸m Thiªn Hæ §Çu KhÈn Thóc UyÓn<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ<color=yellow>H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -151,7 +151,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ <color=yellow>Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -168,7 +168,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>BÝch H¶i Hång L¨ng Ba<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>BÝch H¶i Hång L¨ng Ba<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -185,7 +185,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>V« Ma B¨ng Tinh ChØ Hoµn<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>V« Ma B¨ng Tinh ChØ Hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -202,7 +202,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng Giíi<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng giíi<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end
@@ -219,7 +219,7 @@ local tbGoldEquip_Coin_2 = {
 			[2] = 
 			{
 				pFun = function (self, nCount, szLogTilte)
-					szAllNews = format("Chóc mõng cao thñ %s ®· nhËn ®­îc <color=yellow>S­¬ng Tinh Phong B¹o ChØ Hoµn<color>", GetName());
+					szAllNews = format("¹§Ï²¸ßÊÖ%s »ñµÃ  <color=yellow>S­¬ng Tinh Phong B¹o chØ hoµn<color>", GetName());
 					AddGlobalNews(szAllNews);
 					LG_ApplyDoScript(1, "", "", "\\script\\event\\msg2allworld.lua", "battle_msg2allworld", szAllNews , "", "")
 				end

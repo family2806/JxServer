@@ -1,6 +1,6 @@
 IncludeLib("FILESYS")
 
-tangburan = "\\settings\\maps\\Î÷±±±±Çø\\Äª¸ß¿ß\\tangburanboss.txt"
+tangburan = "\\settings\\maps\\Î÷±±±±Çø\\M¹c Cao QuËt\\tangburanboss.txt"
 
 wangzuo = "\\settings\\maps\\¶«±±Çø\\Ä®±±²ÝÔ­\\wangzuoboss.txt"
 qingxiaoshitai = "\\settings\\maps\\¶«±±Çø\\Ä®±±²ÝÔ­\\qingxiaoshitaiboss.txt"
@@ -38,28 +38,28 @@ function main()
 		if (mb_mapindex >= 0 ) then
 			posx3, posy3 = getadata(qingxiaoshitai)--Ä®±±²ÝÔ­	19£º30
 			AddNpcEx(743, 95, 2, mb_mapindex, posx3*32, posy3*32, 1, "Çå¾øÊ¦Ì«", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS3¡°Çå¾øÊ¦Ì«¡±ÓÚÄ®±±²ÝÔ­x£º"..posx3..",y£º".. posy3)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS3¡°Çå¾øÊ¦Ì«¡±ÓÚÄ®±±²ÝÔ­x£º"..posx3..",y£º".. posy3)
 		end
 
 		fl_mapindex = SubWorldID2Idx(336)
 		if (fl_mapindex >= 0 ) then
 			posx5, posy5 = getadata(yanxiaoqian)--·çÁê¶É±±°¶336	--ÖÐÔ­±±Çø		19£º30
 			AddNpcEx(744, 95, 2, fl_mapindex, posx5*32, posy5*32, 1, "æÌÏþÙ»", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS5¡°æÌÏþÙ»¡±ÓÚ·çÁê¶É±±°¶x£º"..posx5..",y£º".. posy5)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS5¡°æÌÏþÙ»¡±ÓÚ·çÁê¶É±±°¶x£º"..posx5..",y£º".. posy5)
 		end
 	
 		fl_mapindex = SubWorldID2Idx(336)
 		if (fl_mapindex >= 0 ) then
 			posx7, posy7 = getadata(herenwo)--·çÁê¶ÉÄÏ°¶336	--ÖÐÔ­±±Çø	19£º30
 			AddNpcEx(745, 95, 3, fl_mapindex, posx7*32, posy7*32, 1, "ºÎÈËÎÒ", 1)			
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS7¡°ºÎÈËÎÒ¡±ÓÚ·çÁê¶ÉÄÏ°¶x£º"..posx7..",y£º".. posy7)	
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS7¡°ºÎÈËÎÒ¡±ÓÚ·çÁê¶ÉÄÏ°¶x£º"..posx7..",y£º".. posy7)	
 		end;
 	
 		cbn_mapindex = SubWorldID2Idx(321)--Tr­êng B¹ch s¬n Nam 321		--¶«±±Çø		19£º30
 		if (cbn_mapindex >= 0) then
 			posx8, posy8 = getadata(xuanjizi)
 			AddNpcEx(747, 95, 4, cbn_mapindex, posx8*32, posy8*32, 1, "è¯çá×Ó", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS8¡°è¯çá×Ó¡±ÓÚ³¤°×É½ÄÏx£º"..posx8..",y£º".. posy8)	
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS8¡°è¯çá×Ó¡±ÓÚTr­êng B¹ch s¬n Nam x£º"..posx8..",y£º".. posy8)	
 		end
 	end
 	
@@ -69,21 +69,21 @@ function main()
 		if (mb_mapindex >= 0 ) then
 			posx4, posy4 = getadata(shansinan)
 			AddNpcEx(746, 95, 4, mb_mapindex, posx4*32, posy4*32, 1, "µ¥Ë¼ÄÏ", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS4¡°µ¥Ë¼ÄÏ¡±ÓÚÄ®±±²ÝÔ­x£º"..posx4..",y£º".. posy4)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS4¡°µ¥Ë¼ÄÏ¡±ÓÚÄ®±±²ÝÔ­x£º"..posx4..",y£º".. posy4)
 		end;
 	
 		fl_mapindex = SubWorldID2Idx(336)--·çÁê¶É±±°¶	21£º00
 		if (fl_mapindex >= 0 ) then
 			posx6, posy6 = getadata(baiyingying)
 			AddNpcEx(742, 95, 1, fl_mapindex, posx6*32, posy6*32, 1, "°×Ó¨Ó¨", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS6¡°°×Ó¨Ó¨¡±ÓÚ·çÁê¶É±±°¶x£º"..posx6..",y£º".. posy6)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS6¡°°×Ó¨Ó¨¡±ÓÚ·çÁê¶É±±°¶x£º"..posx6..",y£º".. posy6)
 		end
 
 		xsy_mapindex = SubWorldID2Idx(342)		--Î÷É½Óì342		½­ÄÏÇø		21£º00
 		if (xsy_mapindex >= 0) then
 			posx10, posy10 = getadata(hanmeng)
 			AddNpc(748, 95, xsy_mapindex, posx10*32, posy10*32, 1, "º«ÃÉ", 1)
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS9¡°º«ÃÉ¡±ÓÚÎ÷É½Óìx£º"..posx10..",y£º".. posy10)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS9¡°º«ÃÉ¡±ÓÚÎ÷É½Óìx£º"..posx10..",y£º".. posy10)
 		end
 		
 		damahu_boss()	--»Æ½ðboss§¹i M· Hæ £¬Ëæ»ú³öÏÖÔÚM¹c Cao QuËt¡¢Tr­êng B¹ch s¬n Nam ¡¢Tr­êng B¹ch s¬n B¾c
@@ -95,21 +95,21 @@ function main()
 		if (mg_mapindex >= 0 ) then
 			posx1, posy1 = getadata(tangburan)
 			AddNpcEx(741, 95, 1, mg_mapindex, posx1*32, posy1*32, 1, "ÌÆ²»È¾", 1)		
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS1¡°ÌÆ²»È¾¡±ÓÚÄª¸ß¿ßx£º"..posx1..",y£º".. posy1)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS1¡°ÌÆ²»È¾¡±ÓÚM¹c Cao QuËtx£º"..posx1..",y£º".. posy1)
 		end;
 
 		mb_mapindex = SubWorldID2Idx(341)--Ä®±±²ÝÔ­341	--¶«±±	23£º00
 		if (mb_mapindex >= 0 ) then
 			posx2, posy2 = getadata(wangzuo)
 			AddNpcEx(739, 95, 0, mb_mapindex, posx2*32, posy2*32, 1, "Íõ×ô", 1)			
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS2¡°Íõ×ô¡±ÓÚÄ®±±²ÝÔ­x£º"..posx2..",y£º".. posy2)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS2¡°Íõ×ô¡±ÓÚÄ®±±²ÝÔ­x£º"..posx2..",y£º".. posy2)
 		 end
 	 
 		cbb_mapindex = SubWorldID2Idx(322)--Tr­êng B¹ch s¬n B¾c322		--¶«±±Çø		23£º00
 		if (cbb_mapindex >= 0) then
 			posx9, posy9 = getadata(xuanjuedashi)
 			AddNpcEx(740, 95, 0, cbb_mapindex, posx9*32, posy9*32, 1, "Ðþ¾õ´óÊ¦", 1)	
-			WriteLog("Ê±¼ä"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS9¡°Ðþ¾õ´óÊ¦¡±ÓÚ³¤°×É½±±x£º"..posx9..",y£º".. posy9)
+			WriteLog("Thêi gian"..date("%H%M%S").."£º²úÉú»Æ½ðBOSS9¡°Ðþ¾õ´óÊ¦¡±ÓÚTr­êng B¹ch s¬n B¾cx£º"..posx9..",y£º".. posy9)
 		end
 	end
 end
@@ -172,7 +172,7 @@ function damahu_boss()
     	file = "\\settings\\maps\\¶«±±Çø\\³¤°×É½Â´\\xuanjuedashiboss.txt"
     elseif (damahu_mapid == 340) then
     	mapname = "M¹c Cao QuËt"
-    	file = "\\settings\\maps\\Î÷±±±±Çø\\Äª¸ß¿ß\\tangburanboss.txt"
+    	file = "\\settings\\maps\\Î÷±±±±Çø\\M¹c Cao QuËt\\tangburanboss.txt"
     end
     
     if (damahu_mapindex >= 0) then
@@ -181,7 +181,7 @@ function damahu_boss()
     	posx,posy =getadata(file)
     	local npcidx = AddNpcEx(DAMAHUID[rannum][1], 95, DAMAHUID[rannum][2], damahu_mapindex, posx*32, posy*32, 1, "§¹i M· Hæ ", 1)
     	SetNpcDeathScript(npcidx, "\\script\\missions\\boss\\bossdeath.lua");
-	WriteLog("Ê±¼ä"..date("%H%M%S")..": XuÊt hiÖn BOSS Hoµng Kim '§¹i M· Hæ' mapid:"..damahu_mapid..", täa ®é x:"..posx..", y:".. posy..". §¹i M· Hæ (ID lµ:"..DAMAHUID[rannum][1]..", thuéc tÝnh ngò hµnh:"..DAMAHUID[rannum][2])
-	AddGlobalNews("§¹i M· Hæ xuÊt hiÖn t¹i "..mapname.." ("..floor(posx/8)..","..floor(posy/16)..")")
+	WriteLog("Thêi gian"..date("%H%M%S")..": ³öÏÖ»Æ½ðBOSS'§¹i M· Hæ ' mapid:"..damahu_mapid..", täa ®é x:"..posx..", y:".. posy..". §¹i M· Hæ ID ÊÇ"..DAMAHUID[rannum][1]..", thuéc tÝnh ngò hµnh:"..DAMAHUID[rannum][2])
+	AddGlobalNews("§¹i M· Hæ ³öÏÖÔÚ"..mapname.." ("..floor(posx/8)..","..floor(posy/16)..")")
 	end
 end

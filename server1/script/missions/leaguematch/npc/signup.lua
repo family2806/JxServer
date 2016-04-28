@@ -8,7 +8,7 @@ function wlls_want2transback()
 	SubWorld = n_oldidx
 	if (n_camp) then
 		Say("NÕu rêi khái khu vùc chuÈn bŞ, sÏ kh«ng thÓ thi ®Êu",
-			2, "Rêi khái!/wlls_transback", "Kh«ng cã g×!/OnCancel")
+			2, "Rêi khái!/wlls_transback", "Kh«ng cÇn!/OnCancel")
 	else
 		wlls_transback()
 	end
@@ -39,7 +39,7 @@ function wlls_ready2join()
 	--ÅĞ¶ÏÊÇ·ñÔ½¼¶
 	local str = wlls_levelcheck(n_lid)
 	if (str) then
-		Say("Quan viªn liªn ®Êu: "..str, 2, "Ta muèn rêi khái ®©y!/wlls_want2transback", "Kh«ng cã g×!/OnCancel")
+		Say("Quan viªn liªn ®Êu: "..str, 2, "Ta muèn rêi khái ®©y!/wlls_want2transback", "Kh«ng cÇn!/OnCancel")
 		return nil
 	end
 
@@ -86,7 +86,7 @@ function wlls_en1()
 end
 
 function wlls_en2()
-	Say("Héi tr­êng quan viªn :<color=red> tiÕn vµo chuÈn bŞ khu vùc cïng tranh tµi khu vùc , nhµ ch¬i kh«ng thÓ di ®éng trang bŞ dÆm vËt phÈm , nh­ng lµ nh­ cò cã thÓ sö dông ®¹o cô lan cïng trang bŞ dÆm vËt phÈm . ng­¬i kiÓm tra c«ng cô lan dÆm vËt phÈm ®ñ ch­a ?",2,"X¸c ®Şnh /wlls_en3", "Ta kh«ng cã trang bŞ h¶o !/OnCancel")
+	Say("Quan viªn liªn ®Êu: <color=red>½øÈë×¼±¸ÇøÓòºÍ±ÈÈüÇøÓò£¬Íæ¼Ò²»ÄÜÒÆ¶¯×°±¸ÀïµÄÎïÆ·£¬µ«ÊÇÒÀÈ»¿ÉÒÔÊ¹ÓÃµÀ¾ßÀ¸ºÍ×°±¸ÀïµÄÎïÆ·¡£Äã¼ì²é¹¤¾ßÀ¸ÀïµÄÎïÆ·¹»ÁËÂğ?",2,"X¸c ®Şnh /wlls_en3", "Ta kh«ng cã trang bŞ h¶o !/OnCancel")
 end
 
 function wlls_en3()

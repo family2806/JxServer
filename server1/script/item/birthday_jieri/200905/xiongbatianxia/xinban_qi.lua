@@ -22,7 +22,7 @@ local tbAward =
 	[8] = {szName = "Ma ThÞ Kim Bµi", tbProp = {6, 1, 2082, 1, 0, 0}, nRate = 1.000000},
 	[9] = {szName = "Khiªu chiÕn LÔ bao", tbProp = {6, 1, 2006, 1, 0, 0}, nRate = 20.000000},
 	[10] = {szName = "Tiªn Th¶o Lé ", tbProp = {6, 1, 71, 1, 0, 0}, nRate = 11.966000},
-	[11] = {szName = "Tiªn Th¶o Lé ®Æc biÖt", tbProp = {6, 1, 1181, 1, 0, 0}, nRate = 5.000000},
+	[11] = {szName = "ÌØÐ§Tiªn Th¶o Lé ", tbProp = {6, 1, 1181, 1, 0, 0}, nRate = 5.000000},
 	[12] = {szName = "Kim Tª", tbProp = {4, 979, 1, 1, 0, 0}, nRate = 1.000000},
 	[13] = {szName = "Thiªn Niªn Hµ Thñ ¤", tbProp = {6, 1, 2074, 1, 0, 0}, nRate = 1.000000},
 	[14] = {szName = "Kim Quang B¾c Kinh Chi Méng", nQuality = 1, tbProp = {0, 197}, nRate = 0.001000},

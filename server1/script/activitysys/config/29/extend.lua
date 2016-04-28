@@ -56,7 +56,7 @@ function pActivity:OnGiveLanHua()
 --	self:AddTaskDaily(%TSK_IDX_DAILY_GIVE_LANHUA,1)
 --	PlayerFunLib:ConsumeEquiproomItem({tbProp={6,1,1977,1,0,0},},1)
 --	--PlayerFunLib:AddExp(20000000,1,"赠送军兵兰花获得经验")
---	tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "TangHoaChoNguoiLinh"});
+--	tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "送兰花给Ngi l輓h"});
 --	AddStatData("jiefangri_shangjiaolanhua")
 end
 
@@ -67,7 +67,7 @@ function pActivity:Vng_OnGiveLanHua(nCount)
 	end
 	for i = 1, nCount do
 		self:AddTaskDaily(%TSK_IDX_DAILY_GIVE_LANHUA,1)
-		tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "TangHoaChoNguoiLinh"});
+		tbAwardTemplet:Give({nExp_tl=20000000}, 1, {"EventTangHoa042011", "送兰花给Ngi l輓h"});
 		AddStatData("jiefangri_shangjiaolanhua")
 	end
 end

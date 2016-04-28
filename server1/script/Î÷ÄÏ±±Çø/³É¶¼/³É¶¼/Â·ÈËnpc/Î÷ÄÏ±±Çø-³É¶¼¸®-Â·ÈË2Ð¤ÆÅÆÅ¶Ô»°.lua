@@ -13,7 +13,7 @@ function main(sel)
    elseif (Uworld125 == 30) and (HaveItem(389) == 1) then
    	Talk(6,"Uworld125_change","Rèt cuéc ng­¬i còng ®· ®Õn?","Sao?","Võa nhËn ®­îc bå c©u ®­a th­ cña ch­ëng m«n, gäi ng­¬i lËp tøc quay vÒ Nga Mi","L¹i cã viÖc g× ­?","Trong th­ kh«ng nãi râ, nh­ng theo lëi cña Ch­ëng m«n, th× viÖc nµy rÊt cÇn kİp!")
    elseif (Uworld125 == 10) then
-   	Talk(2,"","ThÕ nµo? Kh«ng t×m ®­îc Thiªn Th­ h¶?","Xin ®õng tøc giËn! §Ö tö nhÊt ®Şnh sÏ t×m ®­îc!")
+   	Talk(2,"","ThÕ nµo? Kh«ng uæng phİ c«ng søc chø?Ã»ÕÒµ½ÌìÊé°¡£¿","Xin ®õng tøc giËn! §Ö tö nhÊt ®Şnh sÏ t×m ®­îc!")
    elseif (Uworld125 == 20) and (HaveItem(388) == 0) then
    	Talk(1,"","Thiªn Th­ ph¶i giao vÒ cho ch­ëng m«n Thanh HiÓu s­ th¸i Nga Mi, kh«ng ph¶i giao cho l·o lµ xong viÖc")
 		AddEventItem(388)

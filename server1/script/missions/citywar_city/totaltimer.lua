@@ -15,12 +15,12 @@ function OnTimer()
 	if (timestate == 2) then --¿ªÕ½ÖĞ
 		nCount = CheckWin();
 		if (nCount > MS_SYMBOLCOUNT / 2) then 
-			str = format("Phe tÊn c«ng cuèi cïng %s: %s giµnh th¾ng lîi hoµn toµn! NhËn ®­îc quyÒn thèng trŞ %s?",str,GetGamerName(2),GetGameCity());
+			str = format("×îÖÕPhe tÊn c«ng  %s: %s È¡µÃÍêÈ«Ê¤Àû! µÃµ½Í³ÖÎÈ¨%s?",str,GetGamerName(2),GetGameCity());
 			AddGlobalNews(str);
 			GameWin(2)
 			return
 		else
-			str = format("Phe phßng thñ cuèi cïng %s: %s th¾ng lîi hoµn toµn! TiÕp tôc gi÷ quyÒn thèng trŞ %s?",str,GetGamerName(2),GetGameCity());
+			str = format("×îÖÕPhe phßng thñ  %s: %s ÍêÈ«Ê¤Àû! ¼ÌĞøÎ¬³ÖÍ³ÖÎ%s?",str,GetGamerName(2),GetGameCity());
 			AddGlobalNews(str);
 			GameWin(1)
 			return

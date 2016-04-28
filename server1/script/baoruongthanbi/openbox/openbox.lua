@@ -256,13 +256,13 @@ tbAwardItem =
 
 }
 function OpenBox_main()
-	GiveItemUI("Më B¶o R­¬ng", "Më b¶o r­¬ng cÇn 1 b¶o r­¬ng vµ 1 ch×a khãa v¹n n¨ng", "ConfirmOpenBox", "OnCancel");
+	GiveItemUI("Më B¶o R­¬ng", "Më B¶o R­¬ngĞèÒª1¸ö±¦ÏäºÍÒ»¸öÍòÄÜÔ¿³×", "ConfirmOpenBox", "OnCancel");
 end
 
 function ConfirmOpenBox(nCount)
 	local nBoxValue, nKeyValue = 0
 	if (nCount ~= 2) then 
-		Talk(1, "", "Më b¶o r­¬ng chØ cÇn 1 B¶o r­¬ng thÇn bİ vµ 1 Ch×a khãa v¹n n¨ng cã cïng m· sè !");
+		Talk(1, "", "Më B¶o R­¬ngÖ»ĞèÒªÒ»¸öÉñÃØ±¦ÏäºÍÒ»¸öÓĞÃÜÂëµÄÍòÄÜÔ¿³×!");
 		return
 	end
 	local lag1, lag2, nBoxIndex,nKeyIndex = 0
@@ -299,27 +299,27 @@ function ConfirmOpenBox(nCount)
 	end
 	 if (result == 1) then
 	--giai nhat
-		--Say("<#> §¹i hiÖp ®· t×m ra m· sè më tÊt c¶ c¸c ng¨n trong B¶o r­¬ng, ®¹i hiÖp muèn nhËn vËt phÈm trong r­¬ng chø ?",2,
+		--Say("<#> ´óÏÀÒÑ¾­ÕÒµ½ÁËMë B¶o R­¬ngÀïËùÓĞ²åÏúµÄÃÜÂë, ´óÏÀÏë»ñµÃÏä×ÓÄÚµÄÎïÆ·Âğ£¿",2,
 				--"Ta muèn nhËn/# GetBonusOpenBox(1,"..nBoxIndex..", "..nKeyIndex..")",
 				--"Hñy bá /OnCancel")
 				GetBonusOpenBox(1,nBoxIndex, nKeyIndex)
 	end
 	if (result == 2) then
 	--giai nhi
---		Say("<#> §¹i hiÖp ®· t×m ra m· sè më ng¨n thø ba trong B¶o r­¬ng, ®¹i hiÖp muèn nhËn vËt phÈm trong r­¬ng chø ?", 2,
+--		Say("<#> ´óÏÀÒÑ¾­ÕÒµ½ÁËMë B¶o R­¬ngÀïµÚÈı¸ö²åÏúµÄÃÜÂë, ´óÏÀÏë»ñµÃÏä×ÓÄÚµÄÎïÆ·Âğ?", 2,
 --				"Ta muèn nhËn/# GetBonusOpenBox(2,"..nBoxIndex..", "..nKeyIndex..")",
 --				"Hñy bá /OnCancel")
 				GetBonusOpenBox(2,nBoxIndex, nKeyIndex)
 	end
 	if (result == 3) then
 	--giai 3
---		Say("<#> §¹i hiÖp ®· t×m ra m· sè më ng¨n thø nh× trong B¶o r­¬ng, ®¹i hiÖp muèn nhËn vËt phÈm trong r­¬ng chø ?", 2,
+--		Say("<#> ´óÏÀÒÑ¾­ÕÒµ½ÁËMë B¶o R­¬ngÀïµÚ¶ş¸ö²åÏúµÄÃÜÂë, ´óÏÀÏë»ñµÃÏä×ÓÄÚµÄÎïÆ·Âğ?", 2,
 --				"Ta muèn nhËn/# GetBonusOpenBox(3,"..nBoxIndex..", "..nKeyIndex..")",
 --				"Hñy bá /OnCancel")
 				GetBonusOpenBox(3,nBoxIndex, nKeyIndex)
 	end
 	if (result == 4) then
---		Say("<#> §¹i hiÖp ®· t×m ra m· sè më ng¨n thø nhÊt trong B¶o r­¬ng, ®¹i hiÖp muèn nhËn vËt phÈm trong r­¬ng chø ?", 2,
+--		Say("<#> ´óÏÀÒÑ¾­ÕÒµ½ÁËMë B¶o R­¬ngÀïµÚÒ»¸ö²åÏúµÄÃÜÂë, ´óÏÀÏë»ñµÃÏä×ÓÄÚµÄÎïÆ·Âğ?", 2,
 --				"Ta muèn nhËn/# GetBonusOpenBox(4,"..nBoxIndex..", "..nKeyIndex..")",
 --				"Hñy bá /OnCancel")
 				GetBonusOpenBox(4,nBoxIndex, nKeyIndex)
@@ -342,8 +342,8 @@ function GetBonusOpenBox(nValue, nBoxIndex, nKeyIndex)
 		RemoveItemByIndex(nBoxIndex)
 		RemoveItemByIndex(nKeyIndex)
 		
-		tbAwardTemplet:GiveAwardByList(tbAWard[nValue], "NhËn th­ëng Item B¶o R­¬ng ThÇn Bİ h¹ng 1");
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhËn th­ëng Item B¶o R­¬ng ThÇn Bİ h¹ng 1");
+		tbAwardTemplet:GiveAwardByList(tbAWard[nValue], "NhËn th­ëng B¶o R­¬ng ThÇn Bİ h¹ng 1");
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "NhËn th­ëng B¶o R­¬ng ThÇn Bİ h¹ng 1");
 		AddEnergy(1000)
 		Msg2Player("Chóc mõng ®¹i hiÖp võa nhËn ®­îc vËt phÈm më b¶o r­¬ng")
 	end
@@ -360,7 +360,7 @@ function GetBonusOpenBox(nValue, nBoxIndex, nKeyIndex)
 		RemoveItemByIndex(nKeyIndex)
 		tbAwardTemplet:GiveAwardByList(tbAWard[nValue], "NhËn th­ëng B¶o R­¬ng ThÇn Bİ h¹ng 2");
 		AddEnergy(500)
-		Msg2Player("Chóc mõng ®¹i hiÖp võa nhËn ®­îc vËt phÈm më b¶o r­¬ng")
+		Msg2Player("¹§Ï²´óÏÀ¸Õ¸ÕÊÕµ½ÁËMë B¶o R­¬ngµÄÎïÆ·")
 	end
 	if (nValue==3) then
 		if (PlayerFunLib:CheckTaskDaily(Task_Daily_OpenBox3,5,"Mçi ngµy chØ cã thÓ më 5 B¶o R­¬ng ThÇn Bİ lo¹i 3 sè","<") ~= 1) then
@@ -375,7 +375,7 @@ function GetBonusOpenBox(nValue, nBoxIndex, nKeyIndex)
 		RemoveItemByIndex(nKeyIndex)
 		tbAwardTemplet:GiveAwardByList(tbAWard[nValue], "NhËn th­ëng B¶o R­¬ng ThÇn Bİ h¹ng 3");
 		AddEnergy(100)
-		Msg2Player("Chóc mõng ®¹i hiÖp võa nhËn ®­îc vËt phÈm më b¶o r­¬ng")
+		Msg2Player("¹§Ï²´óÏÀ¸Õ¸ÕÊÕµ½ÁËMë B¶o R­¬ngµÄÎïÆ·")
 	end
 	if (nValue==4) then
 		if (PlayerFunLib:CheckTaskDaily(Task_Daily_OpenBox4,20,"Mçi ngµy chØ cã thÓ më 20 B¶o R­¬ng ThÇn Bİ lo¹i 2 sè","<") ~= 1) then
@@ -390,7 +390,7 @@ function GetBonusOpenBox(nValue, nBoxIndex, nKeyIndex)
 		RemoveItemByIndex(nKeyIndex)
 		tbAwardTemplet:GiveAwardByList(tbAWard[nValue], "NhËn th­ëng B¶o R­¬ng ThÇn Bİ h¹ng 4");
 		AddEnergy(20)
-		Msg2Player("Chóc mõng ®¹i hiÖp võa nhËn ®­îc vËt phÈm më b¶o r­¬ng")
+		Msg2Player("¹§Ï²´óÏÀ¸Õ¸ÕÊÕµ½ÁËMë B¶o R­¬ngµÄÎïÆ·")
 	end
 end
 

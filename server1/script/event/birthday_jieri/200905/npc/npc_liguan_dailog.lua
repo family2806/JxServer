@@ -55,11 +55,11 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "Hïng T©m KiÕm", tbProp = {6, 1, 2070, 1, 0, 0},	nCount = 1},
+			[1]	= {szName = "HïngĞÄ½£", tbProp = {6, 1, 2070, 1, 0, 0},	nCount = 1},
 		},
 		tbProduct = 
 		{
-			szName="50Íò EXP (1 Hïng T©m KiÕm)",
+			szName="50Íò EXP (1 HïngĞÄ½£)",
 			[1]	= {nExp = 500000},
 			[2] = 
 			{
@@ -83,11 +83,11 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "B¸ V­¬ng Th­¬ng", tbProp = {6, 1, 2071, 1, 0, 0},	nCount = 1},
+			[1]	= {szName = "B¸ÍõÇ¹", tbProp = {6, 1, 2071, 1, 0, 0},	nCount = 1},
 		},
 		tbProduct = 
 		{
-			szName="200 Íò EXP (1 B¸ V­¬ng Th­¬ng)",
+			szName="200 Íò EXP (1 B¸ÍõÇ¹)",
 			[1]	= {nExp = 2000000},
 			[2] = 
 			{
@@ -111,12 +111,12 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "Thiªn Tµn §ao", tbProp = {6, 1, 2072, 1, 0, 0},	nCount = 1},
+			[1]	= {szName = "Thiªn²Ğµ¶", tbProp = {6, 1, 2072, 1, 0, 0},	nCount = 1},
 			
 		},
 		tbProduct = 
 		{
-			szName="200 Íò EXP (1 Thiªn Tµn §ao)",
+			szName="200 Íò EXP (1 Thiªn²Ğµ¶)",
 			[1]	= {nExp = 2000000},
 			[2] = 
 			{
@@ -140,12 +140,12 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "H¹ NhËt Cung", tbProp = {6, 1, 2073, 1, 0, 0},	nCount = 1},
+			[1]	= {szName = "H¹ÈÕ¹­", tbProp = {6, 1, 2073, 1, 0, 0},	nCount = 1},
 			
 		},
 		tbProduct = 
 		{
-			szName="300 Íò EXP (1 H¹ NhËt Cung)",
+			szName="300 Íò EXP (1 H¹ÈÕ¹­)",
 			[1]	= {nExp = 3000000},
 			[2] = 
 			{
@@ -169,13 +169,13 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "Hïng T©m KiÕm", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
-			[2]	= {szName = "B¸ V­¬ng Th­¬ng", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
+			[1]	= {szName = "HïngĞÄ½£", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
+			[2]	= {szName = "B¸ÍõÇ¹", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
 			
 		},
 		tbProduct = 
 		{
-			szName="800 Íò EXP (5 Hïng T©m KiÕm + 2 B¸ V­¬ng Th­¬ng)",
+			szName="800 Íò EXP (5 HïngĞÄ½£ + 2 B¸ÍõÇ¹)",
 			[1]	= {nExp = 8000000},
 			[2] = 
 			{
@@ -199,13 +199,13 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "Hïng T©m KiÕm", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
-			[2]	= {szName = "B¸ V­¬ng Th­¬ng", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
-			[3]	= {szName = "Thiªn Tµn §ao", tbProp = {6, 1, 2072, 1, 0, 0}, nCount = 1},
+			[1]	= {szName = "HïngĞÄ½£", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
+			[2]	= {szName = "B¸ÍõÇ¹", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
+			[3]	= {szName = "Thiªn²Ğµ¶", tbProp = {6, 1, 2072, 1, 0, 0}, nCount = 1},
 		},
 		tbProduct = 
 		{
-			szName="1200 Íò EXP (5 Hïng T©m KiÕm + 2 B¸ V­¬ng Th­¬ng + 1 Thiªn Tµn §ao)",
+			szName="1200 Íò EXP (5 HïngĞÄ½£ + 2 B¸ÍõÇ¹ + 1 Thiªn²Ğµ¶)",
 			[1]	= {nExp = 12000000},
 			[2] = 
 			{
@@ -229,15 +229,15 @@ tbXinwu =
 		szFailMsg = "Sè l­îng kh«ng ®ñ, tËp hîp cho ®ñ råi quay l¹i nhĞ!",
 		tbMaterial = 
 		{
-			[1]	= {szName = "Hïng T©m KiÕm", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
-			[2]	= {szName = "B¸ V­¬ng Th­¬ng", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
-			[3]	= {szName = "Thiªn Tµn §ao", tbProp = {6, 1, 2072, 1, 0, 0}, nCount = 1},
-			[4]	= {szName = "H¹ NhËt Cung", tbProp = {6, 1, 2073, 1, 0, 0}, nCount = 1},
+			[1]	= {szName = "HïngĞÄ½£", tbProp = {6, 1, 2070, 1, 0, 0}, nCount = 5},
+			[2]	= {szName = "B¸ÍõÇ¹", tbProp = {6, 1, 2071, 1, 0, 0}, nCount = 2},
+			[3]	= {szName = "Thiªn²Ğµ¶", tbProp = {6, 1, 2072, 1, 0, 0}, nCount = 1},
+			[4]	= {szName = "H¹ÈÕ¹­", tbProp = {6, 1, 2073, 1, 0, 0}, nCount = 1},
 			
 		},
 		tbProduct = 
 		{
-			szName="2000 Íò EXP (5 Hïng T©m KiÕm+2 B¸ V­¬ng Th­¬ng+1 Thiªn Tµn §ao+1 H¹ NhËt Cung)",
+			szName="2000 Íò EXP (5 HïngĞÄ½£+2 B¸ÍõÇ¹+1 Thiªn²Ğµ¶+1 H¹ÈÕ¹­)",
 			[1]	= {nExp = 20000000},
 			[2] = 
 			{
@@ -274,7 +274,7 @@ function tbBirthday0905:OnDailogMain2(nItemIndex, szDescLink)
 
 	local szTitle = format("Ho¹t ®éng “Chµo mõng phiªn b¶n míi” diÔn ra tõ %s ®Õn %s. Ng­¬i muèn t×m hiÓu ho¹t ®éng nµo?", "19/06/2009", "19/07/2009");
 	
-	local tbSay = self.tbZhuHe:MakeOptByProductName("T¹i h¹ muèn ®æi", nItemIndex, szDescLink)
+	local tbSay = self.tbZhuHe:MakeOptByProductName("ÔÚH¹Ïë§æi", nItemIndex, szDescLink)
 	tinsert(tbSay, 1, "<dec>"..szDescLink..szTitle)
 	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay)
@@ -295,7 +295,7 @@ function tbBirthday0905:OnDailogMain3(nItemIndex, szDescLink)
 --		
 --	end
 
-	local szTitle = "¿ªÃÅĞÅÎï»î¶¯´Ó 19/06/2009 µ½ 24:00 19/07/2009.ÔÚ´ËÆÚ¼ä¸÷Î»¿ÉÒÔÍ¨¹ıÔÚĞÅÊ¹´¦´³¹ØÊÕ¼¯Hïng T©m KiÕm, B¸ V­¬ng Th­¬ng, Thiªn Tµn §ao, H¹ NhËt CungµÈĞÅÎï. ÓÃÕâĞ©ĞÅÎïÀ´»»È¡Ğí¶àÓÕÈËµÄ½±Àø.";
+	local szTitle = "¿ªÃÅĞÅÎï»î¶¯´Ó 19/06/2009 µ½ 24:00 19/07/2009.ÔÚ´ËÆÚ¼ä¸÷Î»¿ÉÒÔÍ¨¹ıÔÚĞÅÊ¹´¦´³¹ØÊÕ¼¯HïngĞÄ½£, B¸ÍõÇ¹, Thiªn²Ğµ¶, H¹ÈÕ¹­µÈĞÅÎï. ÓÃÕâĞ©ĞÅÎïÀ´»»È¡Ğí¶àÓÕÈËµÄ½±Àø.";
 	
 	local tbSay = self.tbXinwu:MakeOptByProductName("", nItemIndex, szDescLink)
 	tinsert(tbSay, 1, "<dec>"..szDescLink..szTitle)
@@ -331,7 +331,7 @@ function tbBirthday0905:OnDailogMain4()
 		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.");
 	end
 	local tbSay = {};
-	local szTitle = format("Ho¹t ®éng {{s¨n b¾t nhİm bĞo ph×}} diÔn ra tõ %s  ®Õn %s. Trong thêi gian nµy ®¹i hiÖp ®¸nh {{Nhİm bĞo ph×}} sÏ cã thÓ nhËn ®­îc nhiÒu phÇn th­ëng hÊp dÉn. {{Nhİm bĞo ph×}} xuÊt hiÖn ë 7 §¹i thµnh thŞ vµ 8 T©n thñ th«n. Mçi ngµy ®¹i hiÖp chØ cã thÓ s¨n tèi ®a 20 {{Nhİm bĞo ph×}}.", "19/06/2009", "19/07/2009");
+	local szTitle = format(" {{²¶·Ê´Ìâ¬}}»î¶¯ ´Ó %s  µ½ %s. ÔÚ´ËÆÚ¼äÄúÊäÈë{{·Ê´Ìâ¬} ¾Í½«»ñµÃÒ»Ğ©ÓÕÈËµÄ½±Àø. {{·Ê´Ìâ¬} ³öÏÖÔÚ7¸ö´ó³ÇÊĞºÍ8¸öĞÂÊÖ´å. Ã¿Thiªn×î¶àÖ»ÄÜ²¶20Ö»{{·Ê´Ìâ¬}.", "19/06/2009", "19/07/2009");
 	tinsert(tbSay, 1, "<dec><npc>"..szTitle)
 	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay);
@@ -343,7 +343,7 @@ function tbBirthday0905:OnDailogMain5()
 		return Talk(1, "", "Ho¹t ®éng ®· kÕt thóc.");
 	end
 	local tbSay = {};
-	local szTitle = format("Ho¹t ®éng {{hç trî t©n thñ}} diÔn ra tõ %s ®Õn %s. Trong thêi gian nµy c¸c vŞ ®¹i hiÖp cã cÊp ®é trong kho¶ng tõ 1-79 cã thÓ t¹i 8 t©n thñ th«n ë NPC {{ChiÕn T©m t«n gi¶}} gÇn LÔ Quan nhËn {{Hç trî t©n thñ}} vµ tham gia ho¹t ®éng {{Hç trî t©n thñ}}. Tham gia ho¹t ®éng hç trî t©n thñ th× c¸c vŞ ®¹i hiÖp sÏ gÆp nhiÒu thuËn lîi khi hµnh hiÖp  trªn giang hå.","19/06/2009", "19/07/2009");
+	local szTitle = format(" {{ĞÂÊÖ°ïÖú}}»î¶¯´Ó %s µ½ %s. ÔÚ´ËÆÚ¼ä1-79µÄÓ¢Hïng¿ÉÒÔÔÚNPCµÄ8¸öĞÂÊÖ´å {{Õ½ĞÄ×ğÕß}} ½Ó½üÀñ¹Ù½ÓÊÜ {{ĞÂÊÖ°ïÖú}} Í¬Ê±²Î¼Ó {{²¶·Ê´Ìâ¬}}»î¶¯. ²Î¼ÓĞÂÊÖ°ïÖú»î¶¯¿ÉÒÔÊ¹¸÷Î»ÔÚ½­ºşÉÏĞĞÏÀ¸ü¼ÓË³Àû","19/06/2009", "19/07/2009");
 	tinsert(tbSay, 1, "<dec><npc>"..szTitle)
 	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay);

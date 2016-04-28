@@ -71,8 +71,8 @@ WLLS_DATA = {
 	max_member = 3,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		" lÇn nµy vâ l©m t©n tó liªn cuéc so tµi v× <color=red> tù do ba ng­êi cuéc so tµi <color>",
-		" lÇn nµy vâ l©m t©n tó liªn cuéc so tµi v× <color=red> tù do ba ng­êi cuéc so tµi <color>",
+		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÎª <color=red> tù do ba ng­êi cuéc so tµi <color>",
+		"´Ë´ÎÎäÁÖĞÂĞãÁªÈüÎª<color=red> tù do ba ng­êi cuéc so tµi <color>",
 	},
 	
 	--====Functions====
@@ -81,7 +81,7 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter> lÇn nµy "..str_des.." ë <color=red> tù do ba ng­êi cuéc so tµi <color>, ng­¬i cã thÓ lùa chän thµnh lËp häp thµnh ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c . ë ®éi tr­ëng cïng nhµ ch¬i häp thµnh ®éi hoµn hËu , "..str_des.." cïng quan viªn ®èi tho¹i , lùa chän liªn cuéc so tµi ®éi "..str_des.." gia nhËp ®éi h÷u ®Õn vèn ®éi lµ ®­îc , chiÕn ®éi thµnh viªn nhiÒu nhÊt v× <color=red>3 ng­êi <color>.",
+			wlls_descript("<enter> lÇn nµy "..str_des.."ÔÚ <color=red> tù do ba ng­êi cuéc so tµi <color>, Äã¿ÉÒÔÑ¡Ôñ½¨Á¢×é¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó¡£ÔÚ¶Ó³¤ÓëÍæ¼Ò×é¶ÓÍêºó£¬"..str_des.." cïng quan viªn ®èi tho¹i , lùa chän liªn cuéc so tµi ®éi "..str_des.." gia nhËp ®éi h÷u ®Õn vèn ®éi lµ ®­îc , chiÕn ®éi thµnh viªn nhiÒu nhÊt v× <color=red>3 ng­êi <color>.",
 				" ta muèn thµnh lËp "..str_des.." häp thµnh ®éi /wlls_want2create",
 				" ta chØ nh×n mét chót /OnCancel")
 			return

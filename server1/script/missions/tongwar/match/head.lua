@@ -80,12 +80,12 @@ function GameOver()
 	
 	if (GetMissionV(MS_MOSTDEATH) == 0) then
 		if (bonus_s > bonus_j ) then
-			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_S).." giµnh ®­îc th¾ng lîi!";
+			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_S).." giµnh th¾ng lîi!";
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			sf_winbouns(GetMissionV(MS_TONGWAR_S), GetMissionV(MS_TONGWAR_J), bonus_s, bonus_j)
 		elseif (bonus_s < bonus_j) then
-			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_J).." giµnh ®­îc th¾ng lîi!";
+			resultstr = "Vâ L©m §Ö NhÊt Bang "..GetMissionS(MS_S_CITYNAME_S).." vµ "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc, tæng ®iÓm hai bªn ®¹t ®­îc lµ:"..bonus_s..":"..bonus_j..","..GetMissionS(MS_S_CITYNAME_J).." giµnh th¾ng lîi!";
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			sf_winbouns(GetMissionV(MS_TONGWAR_J), GetMissionV(MS_TONGWAR_S), bonus_j, bonus_s)
@@ -99,13 +99,13 @@ function GameOver()
 		AddGlobalNews(resultstr)
 
 	elseif (GetMissionV(MS_MOSTDEATH) == 1) then
-		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_S).." giµnh ®­îc th¾ng lîi!"
+		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_S).." giµnh th¾ng lîi!"
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr)
 		sf_winbouns(GetMissionV(MS_TONGWAR_S), GetMissionV(MS_TONGWAR_J), bonus_s, bonus_j)
 		AddGlobalNews(resultstr) 
 	elseif (GetMissionV(MS_MOSTDEATH) == 2) then
-		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_J).." giµnh ®­îc th¾ng lîi!"
+		resultstr = "Vâ L©m §Ö NhÊt Bang"..GetMissionS(MS_S_CITYNAME_S).."Hßa "..GetMissionS(MS_S_CITYNAME_J).." - trËn chiÕn ®· kÕt thóc."..GetMissionS(MS_S_CITYNAME_J).." giµnh th¾ng lîi!"
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr)
 		sf_winbouns(GetMissionV(MS_TONGWAR_J), GetMissionV(MS_TONGWAR_S), bonus_j, bonus_s)

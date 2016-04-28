@@ -116,18 +116,18 @@ YDBZ_map_npcBossEx =
 {
 	[1] = 
 	{
-		[3] = {nil, 1310, "Cæ Thiªn KhuyÕt (Né)", 95, 0, 1, 1, func_npc_getpos},
-		[6] = {nil, 1312, "ChiÕu NhËt MiÖn (Né)",  95, 1, 1, 1, func_npc_getpos},
+		[3] = {nil, 1310, "Cæ Thiªn KhuyÕt(Å­)", 95, 0, 1, 1, func_npc_getpos},
+		[6] = {nil, 1312, "ChiÕu NhËt MiÖn(Å­)",  95, 1, 1, 1, func_npc_getpos},
 	},
 	[2] = 
 	{
-		[3] = {nil, 1317, "B¹ch Lang (Né)",  95, 3, 1, 1, func_npc_getpos},
-		[6] = {nil, 1314, "DiÖu NhÊt (Né)",  95, 2, 1, 1, func_npc_getpos},
+		[3] = {nil, 1317, "B¹ch Lang (Å­)",  95, 3, 1, 1, func_npc_getpos},
+		[6] = {nil, 1314, "DiÖu NhÊt (Å­)",  95, 2, 1, 1, func_npc_getpos},
 	},
 	[3] =
 	{
-		[3] = {nil, 1318, "TÇn HiÓu Th­ (Né)",  95, 4, 1, 1, func_npc_getpos},
-		[6] = {nil, 1319, "L¨ng Tiªu Tö (Né)",  95, 4, 1, 1, func_npc_getpos},
+		[3] = {nil, 1318, "TÇn HiÓu Th­(Å­)",  95, 4, 1, 1, func_npc_getpos},
+		[6] = {nil, 1319, "L¨ng Tiªu Tö(Å­)",  95, 4, 1, 1, func_npc_getpos},
 	},
 }
 
@@ -138,9 +138,9 @@ YDBZ_map_npcYuanJun =
 --Î»ÖÃtable {x,y,nway} nway´ú±íÄÄ¹Ø,40-´ú±íÕù¶áµãboss
 YDBZ_map_npcboss = {
 	{nil, 1311, "ChÝnh Ng«n (Né)",  95, 0, 1, 1, func_npc_getpos},
-	{nil, 1313, "§­êng H¹o (Né)",  95, 1, 1, 1, func_npc_getpos},
-	{nil, 1315, "LÖ ChiÕt Mai (Né)",  95, 2, 1, 1, func_npc_getpos},
-	{nil, 1316, "§oan Méc Li (Né)",  95, 3, 1, 1, func_npc_getpos},
+	{nil, 1313, "§­êng H¹o(Å­)",  95, 1, 1, 1, func_npc_getpos},
+	{nil, 1315, "LÖ ChiÕt Mai(Å­)",  95, 2, 1, 1, func_npc_getpos},
+	{nil, 1316, "§oan Méc Li(Å­)",  95, 3, 1, 1, func_npc_getpos},
 }
 
 YDBZ_map_npcfinal = {

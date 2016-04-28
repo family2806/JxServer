@@ -7,7 +7,7 @@ Include("\\script\\global\\repute_head.lua")
 
 function main()
 	if (GetSex() == 0) then			-- ÄĞÅ®ÓÃ²»Í¬µÄ¶Ô»°
-		Say("VŞ thiÕu hiÖp nµy khİ ph¸ch bÊt phµm!  Cã muèn biÕt t­¬ng lai s¸ng l¹n cña m×nh kh«ng? ChØ cÇn 5000 l­îng! ",2,"§­îc, ®Ó ta xem thö/view_repute_yes","Kh«ng cÇn ®©u/no")
+		Say("ÕÅÌú×ì£ºÕâÎ»NamÆøÓî²»·²£¬Ïë²»ÏëÖªµÀNamÄúµÄ½õĞåÇ°³Ì£¿Ö»Òª500Á½Òø×Ó¡£",2,"§­îc, ®Ó ta xem thö/view_repute_yes","Kh«ng cÇn ®©u/no")
 	else
 		Say("VŞ n÷ hiÖp nµy khİ ph¸ch bÊt phµm!  Cã muèn biÕt t­¬ng lai s¸ng l¹n cña m×nh kh«ng? ChØ cÇn 5000 l­îng!",2,"§­îc, ®Ó ta xem thö/view_repute_yes","Kh«ng cÇn ®©u/no")
 	end

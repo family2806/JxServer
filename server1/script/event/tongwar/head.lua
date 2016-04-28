@@ -507,14 +507,14 @@ function tongwar_enemy()
 	--Change schedule VLDNB 11 - Modified by DinhHQ - 20120507
 	local nDate = tonumber(GetLocalDate("%d"));
 	if (nDate ~= 16 and nDate ~= 17 and nDate ~= 19 and nDate ~= 20 and nDate ~= 21 and nDate ~= 22 and nDate ~= 23) then
-		szmsg = format("<dec><npc>H«m nay %s kh«ng thi ®Êu.", nDate);
+		szmsg = format("<dec><npc>H«m nay lµ ngµy %d, kh«ng cã thi ®Êu.", nDate);
 		CreateTaskSay({szmsg, "Trë vÒ/tongwar_cityowner", "Ta biÕt råi!/OnCancel"});
 		return
 	end;
 	
 	local szGuestCityName = tongwar_getenemycity(szHostcityName, nDate);
 	if (nil == szGuestCityName) then
-		szmsg = format("<dec><npc>H«m nay %s kh«ng thi ®Êu.", nDate);
+		szmsg = format("<dec><npc>H«m nay lµ ngµy %d, kh«ng cã thi ®Êu.", nDate);
 		CreateTaskSay({szmsg, "Trë vÒ/tongwar_cityowner", "Ta biÕt råi!/OnCancel"});
 		return
 	end;

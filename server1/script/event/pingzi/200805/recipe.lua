@@ -114,7 +114,7 @@ pingzi0805.tbRecipe =
 			},
 			{
 				[1] = {szName="B¸nh Kem Nh­ ý", tbProp={6, 1, 1761, 1, 0, 0}}, 
-				[2] = {szName="Tiªn Th¶o Lé ®Æc biÖt", tbProp={6, 1, 1181, 1, 0, 0}},
+				[2] = {szName="ÌØ±ðTiªn Th¶o Lé ", tbProp={6, 1, 1181, 1, 0, 0}},
 				nRate = 1
 			},
 			{

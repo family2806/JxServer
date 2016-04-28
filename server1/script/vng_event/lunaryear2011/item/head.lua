@@ -5,7 +5,7 @@ if not tbVNG_NLY2011_Itemhead then
 end
 tbVNG_NLY2011_Itemhead.tbItems = 
 	{
-		["ThiÖp n¨m míi"] = 
+		["thiepnammoi"] = 
 			{
 				tbTaskInfo =
 					{
@@ -15,9 +15,9 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 100
 					},
 				tbExp = {nExp = 3e6},
-				strName = "ThiÖp n¨m míi"
+				strName = "thiepnammoi"
 			},
-		["B¸nh tÐt"] = 
+		["banhtet"] = 
 			{
 				tbTaskInfo =
 					{
@@ -27,9 +27,9 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 1000
 					},
 				tbExp = {nExp = 5e5},
-				strName = "B¸nh tÐt"
+				strName = "banhtet"
 			},
-		["B¸nh ch­ng"] = 
+		["banhchung"] = 
 			{
 				tbTaskInfo =
 					{
@@ -39,16 +39,16 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 3000
 					},
 				tbExp = {nExp = 1e6},
-				strName = "B¸nh ch­ng",
+				strName = "banhchung",
 				tbItemAward =
 					{
 						[1] = 
 							{
-								{szName="ThiÖp n¨m míi",tbProp={6,1,30088,1,0,0},nCount=1,nRate=50,nExpiredTime=20110220},
+								{szName="thiepnammoi",tbProp={6,1,30088,1,0,0},nCount=1,nRate=50,nExpiredTime=20110220},
 							},
 					}
 			},
-		["ÌØ±ðB¸nh ch­ng"] = 
+		["ÌØ±ðbanhchung"] = 
 			{
 				tbTaskInfo =
 					{
@@ -58,10 +58,10 @@ tbVNG_NLY2011_Itemhead.tbItems =
 						nMaxValue = 6000
 					},
 --				tbExp = {nExp = 20e6},
-				strName = "ÌØ±ðB¸nh ch­ng",
+				strName = "ÌØ±ðbanhchung",
 				tbItemAward =
 					{
-						{szName="ThiÖp n¨m míi",tbProp={6,1,30088,1,0,0},nCount=1,nExpiredTime=20110220},
+						{szName="thiepnammoi",tbProp={6,1,30088,1,0,0},nCount=1,nExpiredTime=20110220},
 					}
 			},
 	}
@@ -112,11 +112,11 @@ function tbVNG_NLY2011_Itemhead:useItem(strItemName)
 	if self:isMaxItemUse(tbItem.tbTaskInfo) == 1 then
 		return 0, "§¹i hiÖp ®·  ®¹t tèi ®a sö dông vËt phÈm nµy!"
 	end
-	if strItemName == "B¸nh ch­ngdacbiet" then
+	if strItemName == "banhchungdacbiet" then
 		if self:CheckBag(2) ~= 1 then
 			return 0, "§Ó b¶o vÖ tµi s¶n, xin vui lßng chõa 2 « trèng trong hµnh trang råi míi sö dông vËt phÈm nµy!"
 		end
-		return self:B¸nh ch­ngdacbiet()
+		return self:banhchungdacbiet()
 	end
 	self:addTask(tbItem.tbTaskInfo, 1)
 	if tbItem.tbExp then 
@@ -132,8 +132,8 @@ function tbVNG_NLY2011_Itemhead:useItem(strItemName)
 	return 1
 end
 
-function tbVNG_NLY2011_Itemhead:B¸nh ch­ngdacbiet()
-	local tbItem = self.tbItems["B¸nh ch­ngdacbiet"]
+function tbVNG_NLY2011_Itemhead:banhchungdacbiet()
+	local tbItem = self.tbItems["banhchungdacbiet"]
 	--Tao bang phan thuong kinh nghiem
 	local tbExp = {
 							{n_Exp =5e6, n_Rate = 20},
@@ -169,10 +169,10 @@ function tbVNG_NLY2011_Itemhead:B¸nh ch­ngdacbiet()
 			}
 	end
 	if (tbExpAward)then
-		tbAwardTemplet:GiveAwardByList(tbExpAward, "[VNG][Lunar Year 2011][ÌØ±ðB¸nh ch­ngÊ¹ÓÃ¾­Ñé½±Àø]");	
+		tbAwardTemplet:GiveAwardByList(tbExpAward, "[VNG][Lunar Year 2011][ÌØ±ðbanhchungÊ¹ÓÃ¾­Ñé½±Àø]");	
 	end
 	if tbItem.tbItemAward then
-		local strLog2 = format("[VNG][Lunar Year 2011][Ê¹ÓÃThiÖp n¨m míi½±Àø %s]", tbItem.strName)
+		local strLog2 = format("[VNG][Lunar Year 2011][Ê¹ÓÃthiepnammoi½±Àø %s]", tbItem.strName)
 		for i =1, getn(tbItem.tbItemAward) do
 			tbAwardTemplet:GiveAwardByList(tbItem.tbItemAward[i], strLog2)
 		end
@@ -233,7 +233,7 @@ function tbVNG_NLY2011_Itemhead:B¸nh ch­ngdacbiet()
 			{szName="Qu¶ Hoµng Kim",tbProp={6,1,907,1,0,0},nCount=1,nRate=1,nExpiredTime=10080},
 			{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=24.9},
 		}
-	tbAwardTemplet:GiveAwardByList(tbItemAward, "[VNG][Lunar Year 2011][ÌØ±ðB¸nh ch­ngÊ¹ÓÃitem½±Àø ]");	
+	tbAwardTemplet:GiveAwardByList(tbItemAward, "[VNG][Lunar Year 2011][ÌØ±ðbanhchungÊ¹ÓÃitem½±Àø ]");	
 	return 1
 end
 function tbVNG_NLY2011_Itemhead:CheckBag(nCellCount)
@@ -253,5 +253,5 @@ function tbVNG_NLY2011_Itemhead:addContribution(nValue)
 	end
 	AddContribution(nValue)
 	Msg2Player(format("B¹n nhËn ®­îc %d ®iÓm cèng hiÕn c¸ nh©n", nValue))
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][Lunar Year 2011][ÌØ±ðB¸nh ch­ngÊ¹ÓÃÎïÆ·½±Àø]"..GetAccount().."\t"..GetName().."\t".."NhËn ®iÓm cèng hiÕn c¸ nh©n sè l­îng "..nValue)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."[VNG][Lunar Year 2011][ÌØ±ðbanhchungÊ¹ÓÃÎïÆ·½±Àø]"..GetAccount().."\t"..GetName().."\t".."NhËn ®iÓm cèng hiÕn c¸ nh©n sè l­îng "..nValue)
 end

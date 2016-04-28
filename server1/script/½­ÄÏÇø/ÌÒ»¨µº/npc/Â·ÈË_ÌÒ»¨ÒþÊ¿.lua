@@ -16,7 +16,7 @@ function main()
 	-- elseif (Uworld137 < 20) then					-- Ã»ÓÐÈ¥¸üÐÂ¼¼ÄÜµÄ£¬²»ÔÊÐíÂò¹Ò»úÒ©
 	--	Talk(1,"","ÌÒ»¨ÒþÊ¿£º¿ìÈ¥°Ý¼ûÄãµÄ±¾ÃÅ³¤±²°É£¬ÎÒÏ²»¶¶®ÀñÃ²µÄºÃº¢×Ó¡£")
 	--elseif (GetLevel() >= 50) then		-- Âò¹Ò»úµÀ¾ßÒ²Òª¼ì²âºÏ·¨ÐÔ
-		-- Say("ÌÒ»¨ÒþÊ¿£ºÌÒ»¨µº³äÂú×ÅÁéÆø£¬ÊÇÁ·¹¦µÄ±¦µØ¡£ºÈÍë<color=red>À°°ËÖà<color>£¬ÇáÇáËÉËÉ¹¦Á¦×Ô¶¯ÌáÉý£¡Ò»Íë¿ÉÎ¬³Ö¹¦Ð§Ò»Ð¡Ê±¡£",3,"ºÃ£¬ÎÒºÈ/buy_yes","ÇëÎÊÒ»ÏÂÀ°°ËÖà¹¦Ð§»¹ÓÐ¶àÉÙÊ±¼ä/check_time","ÏÂ´ÎÔÙËµ°É/OnCancel")
+		-- Say("ÌÒ»¨ÒþÊ¿£ºÌÒ»¨µº³äÂú×ÅÁéÆø£¬ÊÇÁ·¹¦µÄ±¦µØ¡£ºÈÍë<color=red>À°°ËÖà<color>£¬ÇáÇáËÉËÉ¹¦Á¦×Ô¶¯ÌáÉý£¡Ò»Íë¿ÉÎ¬³Ö¹¦Ð§Ò»giê ¡£",3,"ºÃ£¬ÎÒºÈ/buy_yes","ÇëÎÊÒ»ÏÂÀ°°ËÖà¹¦Ð§»¹ÓÐ¶àÉÙÊ±¼ä/check_time","ÏÂ´ÎÔÙËµ°É/OnCancel")
 	--end
 	
 	strNeedLevel = "§µo Hoa §¶o vµ c¸ch tuyÖt víi thÕ giíi bªn ngoµi, ®­êng ®i nguy hiÓm, kh«ng ®Õn<color=red> "..AEXP_NEEDLEVEL.."cÊp<color> mµ muèn vµo ®©y? VÒ luyÖn c«ng thªm ®i!";

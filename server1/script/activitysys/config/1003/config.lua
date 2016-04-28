@@ -51,7 +51,7 @@ tbConfig[3] = --TongKim1000µã
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},20,"EventVuLanBaoHieu\tTongKim1000"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TongKim1000", "20 Hoa Hång §á", 1}},
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TongKim1000", "20 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[4] = --TongKim3000µã
@@ -70,14 +70,14 @@ tbConfig[4] = --TongKim3000µã
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},40,"EventVuLanBaoHieu\tTongKim3000"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TongKim3000", "40 Hoa Hång §á", 1}},
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TongKim3000", "40 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[5] =
 {
 	nId = 5,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi17",
+	szName = "V­ît qua ¶i 17",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"17"},
@@ -87,15 +87,15 @@ tbConfig[5] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},15,"EventVuLanBaoHieu\tVuotAi17"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "VuotAi17", "15 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},15,"ÎäÀ¶±¨Ð¢»î¶¯\tV­ît qua ¶i 17"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "V­ît qua ¶i 17", "15 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[6] =
 {
 	nId = 6,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi28",
+	szName = "V­ît qua ¶i 28",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"28"},
@@ -105,15 +105,15 @@ tbConfig[6] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},25,"EventVuLanBaoHieu\tVuotAi28"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "VuotAi28", "25 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},25,"ÎäÀ¶±¨Ð¢»î¶¯\tV­ît qua ¶i 28"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "V­ît qua ¶i 28", "25 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[7] = --Ë®ÔôÍ·Áì
 {
 	nId = 7,
 	szMessageType = "NpcOnDeath",
-	szName = "TieuDietThuyTacDauLinh",
+	szName = "GiÕt chÕt 1 thñy tÆc ®Çu lÜnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -124,15 +124,15 @@ tbConfig[7] = --Ë®ÔôÍ·Áì
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},10,"EventVuLanBaoHieu\tTieuDietThuyTacDauLinh"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietThuyTacDauLinh", "10 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},10,"ÎäÀ¶±¨Ð¢»î¶¯\tGiÕt chÕt 1 thñy tÆc ®Çu lÜnh"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "GiÕt chÕt 1 thñy tÆc ®Çu lÜnh", "10 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[8] = --Ë®Ôô´óÍ·Áì
 {
 	nId = 8,
 	szMessageType = "NpcOnDeath",
-	szName = "TieuDietThuyTacDaiDauLinh",
+	szName = "Tiªu diÖt thuû tÆc ®¹i ®Çu lÜnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -144,15 +144,15 @@ tbConfig[8] = --Ë®Ôô´óÍ·Áì
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},20,"EventVuLanBaoHieu\tTieuDietThuyTacDaiDauLinh"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietThuyTacDaiDauLinh", "20 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},20,"ÎäÀ¶±¨Ð¢»î¶¯\tTiªu diÖt thuû tÆc ®¹i ®Çu lÜnh"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Tiªu diÖt thuû tÆc ®¹i ®Çu lÜnh", "20 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[9] = --Ñ×µÛ®Õ
 {
 	nId = 9,
 	szMessageType = "YDBZguoguan",
-	szName = "VuotAiViemDe10",
+	szName = "V­ît qua ¶i Viªm §Õ thø 10",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {10},
@@ -162,15 +162,15 @@ tbConfig[9] = --Ñ×µÛ®Õ
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},30,"EventVuLanBaoHieu\tVuotAiViemDe10"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "VuotAiViemDe10", "30 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},30,"ÎäÀ¶±¨Ð¢»î¶¯\tV­ît qua ¶i Viªm §Õ thø 10"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "V­ît qua ¶i Viªm §Õ thø 10", "30 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[10] = --ÊÀ½çboss
 {
 	nId = 10,
 	szMessageType = "NpcOnDeath",
-	szName = "TieuDietBossTheGioi",
+	szName = "Tiªu diÖt boss thÕ giíi",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -181,8 +181,8 @@ tbConfig[10] = --ÊÀ½çboss
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},50,"EventVuLanBaoHieu\tTieuDietBossTheGioi"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietBossTheGioi", "50 Hoa Hång §á", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},50,"ÎäÀ¶±¨Ð¢»î¶¯\tTiªu diÖt boss thÕ giíi"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Tiªu diÖt boss thÕ giíi", "50 Nô Hoa Hång §á", 1}},
 	},
 }
 tbConfig[11] = --É±ÊÖboss
@@ -201,7 +201,7 @@ tbConfig[11] = --É±ÊÖboss
 	tbActition = 
 	{
 		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30132,1,0,0},nExpiredTime=nItemExpiredTime,},5,"EventVuLanBaoHieu\tTieuDietBossS¸tThñ"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietBossSatThu", "5 Hoa Hång §á", 1}},
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietBossSatThu", "5 Nô Hoa Hång §á", 1}},
 	},
 }
 ----add ¶Ô»°npc
@@ -233,7 +233,7 @@ tbConfig[13] = --§æi Cöu Tiªn Ngù YÕn
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"§¼ng cÊp cña ng­¬i kh«ng ®ñ, lÇn sau h·y ®Õn nhÐ!",">="} },
-		{"AddOneMaterial",	{"Hoa Hång §á",{tbProp={6,1,30132,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Nô Hoa Hång §á",{tbProp={6,1,30132,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
@@ -253,8 +253,8 @@ tbConfig[14] = --¶Ô»°Môc KiÒu Liªn
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"GhepThuyTuuHoTien",15} },
-		{"AddDialogOpt",	{"TÆng Hoa Hång §á",16} },
+		{"AddDialogOpt",	{"Hîp thµnh Thóy Tùu Hå Tiªn",15} },
+		{"AddDialogOpt",	{"ËÍNô Hoa Hång §á",16} },
 		{"AddDialogOpt",	{"TÆng Cöu Tiªn Ngù YÕn",18} },
 	},
 }
@@ -269,28 +269,28 @@ tbConfig[15] = --§æi Thóy Tùu Hå Tiªn
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"§¼ng cÊp cña ng­¬i kh«ng ®ñ, lÇn sau h·y ®Õn nhÐ!",">="} },
-		{"AddOneMaterial",	{"Hoa Hång §á",{tbProp={6,1,30131,-1,-1,-1},nExpiredTime=nItemExpiredTime,},5} },
+		{"AddOneMaterial",	{"Nô Hoa Hång §á",{tbProp={6,1,30131,-1,-1,-1},nExpiredTime=nItemExpiredTime,},5} },
 		{"AddOneMaterial",	{"Cöu Tiªn Ngù YÕn",{tbProp={6,1,30128,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
 		{"AddOneMaterial",	{"H¶i VÞ Bång Lai",{tbProp={6,1,30129,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30130,1,0,0},nExpiredTime=nItemExpiredTime,},1,"EventVuLanBaoHieu\tGhepThuyTuuHoTien"} },
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "GhepThuyTuuHoTien", "1 Thóy Tùu Hå Tiªn", 1}},
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30130,1,0,0},nExpiredTime=nItemExpiredTime,},1,"ÎäÀ¶±¨Ð¢»î¶¯\\tHîp thµnh Thóy Tùu Hå Tiªn"} },
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Hîp thµnh Thóy Tùu Hå Tiªn", "1 Thóy Tùu Hå Tiªn", 1}},
 	},
 }
 tbConfig[16] = --ËÍÃµ¹å
 {
 	nId = 16,
 	szMessageType = "CreateCompose",
-	szName = "TÆng Hoa Hång §á",
+	szName = "ËÍNô Hoa Hång §á",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>TÆng Hoa Hång §á",1,1,1,0.02},
+	tbMessageParam = {"<npc>ËÍNô Hoa Hång §á",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"§¼ng cÊp cña ng­¬i kh«ng ®ñ, lÇn sau h·y ®Õn nhÐ!",">="} },
-		{"AddOneMaterial",	{"Hoa Hång §á",{tbProp={6,1,30131,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
+		{"AddOneMaterial",	{"Nô Hoa Hång §á",{tbProp={6,1,30131,-1,-1,-1},nExpiredTime=nItemExpiredTime,},1} },
 		{"ThisActivity:CheckGiveRedRoseLimit", {nil}},
 	},
 	tbActition = 

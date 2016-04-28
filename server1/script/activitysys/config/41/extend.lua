@@ -213,7 +213,7 @@ function pActivity:GetZhuShuaiAward_2(nParam, ResultHandle)
 		CallPlayerFunction(nPlayerIndex,Say,format("Ng­¬i kh«ng ph¶i chñ so¸i cña tuÇn nµy, kh«ng thÓ nhËn %s nµy","PhÇn th­ëng"))
 		return 
 	end
-	CallPlayerFunction(nPlayerIndex, PlayerFunLib.AddExp, PlayerFunLib, nExp, 1, %EVENT_LOG_TITLE, "NhanPhanThuongChuSoai")
+	CallPlayerFunction(nPlayerIndex, PlayerFunLib.AddExp, PlayerFunLib, nExp, 1, %EVENT_LOG_TITLE, "ÁìÈ¡Ö÷Ë§PhÇn th­ëng")
 	CallPlayerFunction(nPlayerIndex, self.AddTaskDaily, self, %TSK_DAILY_EXP_AWARD, 1)
 end
 

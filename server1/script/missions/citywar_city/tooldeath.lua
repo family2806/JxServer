@@ -5,8 +5,8 @@ function OnDeath(DeathIndex)
 	for i  = 1, g_nMaxTscPerDoor * g_nDoorCount do 
 		if ( DeathIndex == GetMissionV(MS_TSCBEGIN + i  - 1		)) then
 			SetMissionV(MS_TSCBEGIN + i - 1, 0)
-			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bÞ phe thñ thµnh ph¸ hñy. ");
-			WriteLog("Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bÞ phe thñ thµnh ph¸ hñy. ")
+			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh Hçn Th¹ch LiÖt ®· bÞ phe thñ thµnh ph¸ hñy. ");
+			WriteLog("Dông cô c«ng thµnh Hçn Th¹ch LiÖt ®· bÞ phe thñ thµnh ph¸ hñy. ")
 			return
 		end;
 	end;
@@ -14,7 +14,7 @@ function OnDeath(DeathIndex)
 	for i  = 1, g_nMaxGccPerDoor * g_nDoorCount do 
 		if ( DeathIndex == GetMissionV(MS_GCCBEGIN + i  - 1		)) then
 			SetMissionV(MS_GCCBEGIN + i - 1, 0)
-			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bÞ phe thñ thµnh ph¸ hñy. ");
+			Msg2MSAll(MISSIONID, "Dông cô c«ng thµnh Hçn Th¹ch LiÖt ®· bÞ phe thñ thµnh ph¸ hñy. ");
 			WriteLog("Dông cô c«ng thµnh NghiÖt Long Xung Xa ®· bÞ phe thñ thµnh ph¸ hñy. ");
 			return
 		end;

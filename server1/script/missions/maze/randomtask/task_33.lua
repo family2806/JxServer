@@ -67,7 +67,7 @@ function pTask:Say(pPlayer)
 end
 
 function pTask:OnProgressbarTimeout(nId, param, player)
-	self:BroadCast("Më thµnh c«ng.")
+	self:BroadCast("§ang më.")
 	self.m_BarId = 0
 	local nNum = random(1, 100)
 	if (nNum <= 30) then

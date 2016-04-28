@@ -17,16 +17,16 @@ tbAwardList["TREE"] = {
 	}
 	
 tbAwardLog["TREE"] = {
-	[1] = "ThuDuoc5QuaXoaiTrenCayBachQua",
-	[2] = "ThuDuoc5DuDuTrenCayBachQua",
-	[3] = "ThuDuoc5QuaBuoiTrenCayBachQua",
-	[4] = "ThuDuoc5QuaLeTrenCayBachQua",
-	[5] = "ThuDuoc5QuaSungTrenCayBachQua",
-	[6] = "ThuDuoc5QuaChuoiTrenCayBachQua",
+	[1] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öXoµi",
+	[2] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸ö§u ®ñ",
+	[3] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öTr¸i B­ëi",
+	[4] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öTr¸i Lª",
+	[5] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öTr¸i Sung",
+	[6] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öN¶i Chuèi",
 	[7] = "ThuDuoc5MangCauTrenCayBachQua",
-	[8] = "ThuDuoc5QuaHongTrenCayBachQua",
-	[9] = "ThuDuoc5QuaDuaTrenCayBachQua",
-	[10] = "ThuDuoc5QuaCamTrenCayBachQua",
+	[8] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öTr¸i Hång",
+	[9] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öDõa",
+	[10] = "ÔÚ°Ù¹ûÊ÷ÉÏÊÕ»ñ5¸öTr¸i Cam",
 	}	
 	
 tbAwardList["WUGUOBAIYINPAN"] = {

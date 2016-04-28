@@ -40,11 +40,11 @@ function main()
 	if FALSE(n_lid) then
 		tb_option[getn(tb_option)+1]	= "Ta muèn ®¨ng kı/wlls_reg_me"
 	else
-		tb_option[getn(tb_option)+1]	= "Ta muèn xem tin tøc/wlls_view_me"
+		tb_option[getn(tb_option)+1]	= "ÎÒµNam ÅÏ¢/wlls_view_me"
 		tb_option[getn(tb_option)+1]	= "Ta muèn thay ®æi th«ng tin/wlls_want2out"
 	end
 	tb_option[getn(tb_option)+1]	= "KÕt thóc ®èi tho¹i/OnCancel"
-	Say(" liªn cuéc so tµi sø gi¶  vâ l©m liªn cuéc so tµi chİnh thøc b¾t ®Çu " .. WLLS_TAB[n_ntype].name .. ", cã thÓ thÊy ta tíi mæ nh÷ng tuyÓn thñ kh¸c ®İch tin tøc hoÆc lµ ghi danh m×nh vµ häp thµnh ®éi ®İch tin tøc ", getn(tb_option), tb_option)
+	Say(" liªn cuéc so tµi sø gi¶  vâ l©m liªn cuéc so tµi chİnh thøc b¾t ®Çu " .. WLLS_TAB[n_ntype].name .. ", ¿ÉÒÔ¼ûÎÒÀ´ÁË½âÆäËûÑ¡ÊÖµNam ÅÏ¢»òÕßµÇ¼Ç×Ô¼ººÍ×é¶ÓµNam ÅÏ¢", getn(tb_option), tb_option)
 end
 
 -- µÇ¼Ç³ÉÔ±
@@ -58,14 +58,14 @@ function wlls_reg_me()
 	-- ´æÈë×ÔÉí»ù±¾Êı¾İ
 	wlls_save_myinfo()
 
-	Talk(1, "wlls_view_me", "Ghi danh thµnh c«ng , cã thÓ söa ®æi tin tøc ")
+	Talk(1, "wlls_view_me", " µÇ¼Ç³É¹¦£¬¿ÉÒÔ¸ü¸Nam ÅÏ¢")
 end
 
 -- ²é¿´×Ô¼º
 function wlls_view_me()
 	-- Èç¹û ¸ÕµÇ¼Ç/¸Õ¸üĞÂ Á¢¼´ÔËĞĞ´Ëº¯Êı ÓĞ¿ÉÄÜÏÔÊ¾Òì³£
 	Describe(wlls_get_infostr(GetName()), 3,
-		" söa ®æi ta c¨n b¶n tin tøc /wlls_reg_refresh", "Söa ®æi kú väng ®éi h÷u ®İch tin tøc /wlls_edit_need('')", "·µ»Ø")
+		" söa ®æi ta c¨n b¶n tin tøc /wlls_reg_refresh", "¸ü¸ÄÆÚÍû¶ÓÓÑµNam ÅÏ¢/wlls_edit_need('')", "Trë vÒ ")
 end
 
 -- ¸üĞÂ×Ô¼ºµÄ»ù±¾ĞÅÏ¢
@@ -113,7 +113,7 @@ function wlls_edit_need(str, b_query)
 	
 	if b_query then
 		tb_option[getn(tb_option)+1] = "Á¢¼´¼ì²é/wlls_reg_query_begin"
-		tb_option[getn(tb_option)+1] = "·µ»Ø/wlls_reg_query_menu"
+		tb_option[getn(tb_option)+1] = "Trë vÒ /wlls_reg_query_menu"
 	else
 		tb_option[getn(tb_option)+1] = "±£Áô¸ü¸Ä/wlls_save_need()"
 		tb_option[getn(tb_option)+1] = "±£Áô¼ì²é/wlls_save_need(1)"
@@ -156,9 +156,9 @@ function wlls_reg_query_menu()
 	for n_idx, tb_fmt in WLLS_REG_TABLE do
 		tb_option[getn(tb_option)+1]	= "°´ÕÕ [" .. tb_fmt[1] .. "] /wlls_reg_query_single(" .. n_idx .. ")"
 	end
-	tb_option[getn(tb_option)+1] = "¸ß¼¶ÁË½â/wlls_edit_need('',1)"
-	tb_option[getn(tb_option)+1] = "·µ»Ø"
-	Say(" liªn cuéc so tµi sø gi¶ : ng­¬i cã thÓ c¨n cø bÊt ®ång lo¹i h×nh tíi mæ tuyÓn thñ , bao gåm giíi tİnh , m«n ph¸i , cÊp bËc .", getn(tb_option), tb_option)
+	tb_option[getn(tb_option)+1] = "¸ßCÊp ÁË½â/wlls_edit_need('',1)"
+	tb_option[getn(tb_option)+1] = "Trë vÒ "
+	Say("ÁªÈüÊ¹Õß: Äã¿ÉÒÔ¸ù¾İ²»Í¬ÀàĞÍÀ´ÁË½âÑ¡ÊÖ£¬°üÀ¨Giíi tİnh , M«n ph¸i ¸i, CÊp bËc .", getn(tb_option), tb_option)
 end
 
 -- ²é¿´¶ÓÓÑ£¨ÊäÈë£©
@@ -168,7 +168,7 @@ end
 
 -- ²é¿´¶ÓÓÑ£¨²éÑ¯£©
 function wlls_reg_query_name_do(str_name)
-	Describe(wlls_get_infostr(str_name), 1, "·µ»Ø/wlls_reg_query_menu", "·µ»Ø")
+	Describe(wlls_get_infostr(str_name), 1, "Trë vÒ /wlls_reg_query_menu", "Trë vÒ ")
 end
 
 -- ×¼±¸µ¥Ïî²éÑ¯
@@ -178,7 +178,7 @@ function wlls_reg_query_single(n_idx)
 	for i = 1, getn(tb_fmt[3]) do
 		tb_option[getn(tb_option)+1]	= wlls_get_oneneed(n_idx, i).."/wlls_reg_query_single_do("..n_idx..","..i..")"
 	end
-	tb_option[getn(tb_option)+1]	= "·µ»Ø/wlls_reg_query_menu"
+	tb_option[getn(tb_option)+1]	= "Trë vÒ /wlls_reg_query_menu"
 	Say(" liªn cuéc so tµi sø gi¶ : tr­íc m¾t dùa theo trËt tù color=yellow>"..tb_fmt[1].."<color> hiÓu râ , xin/mêi lùa chän cÇn t×m ph¹m vi :", getn(tb_option), tb_option)
 end
 
@@ -251,14 +251,14 @@ function wlls_reg_query_do(str_name, b_next)
 	end
 
 	if (not str) then	-- Ã»ÄÜÕÒµ½
-		Say(" liªn cuéc so tµi sø gi¶ : thËt xin lçi , kh«ng thÓ t×m phï hîp ghi danh yªu cÇu thµnh viªn .", 1, "·µ»Ø/wlls_reg_query_menu")
+		Say(" liªn cuéc so tµi sø gi¶ : thËt xin lçi , kh«ng thÓ t×m phï hîp ghi danh yªu cÇu thµnh viªn .", 1, "Trë vÒ /wlls_reg_query_menu")
 		return
 	end
 
 	if (not FALSE(n_lid)) then	-- ºóÃæ»¹ÓĞ
 		tb_option[getn(tb_option)+1]	= "ÏÂÒ»Ò³ /wlls_reg_query_do('" .. safestr(str_name) .. "', 1)"
 	end
-	tb_option[getn(tb_option)+1]	= "·µ»Ø/wlls_reg_query_menu"
+	tb_option[getn(tb_option)+1]	= "Trë vÒ /wlls_reg_query_menu"
 	Describe(str, getn(tb_option), tb_option)
 end
 
@@ -357,7 +357,7 @@ function wlls_get_needinfo(n_data)
 	return str_ret
 end
 
--- ·µ»ØÒ»ÌõĞèÇóĞÅÏ¢µÄ×Ö·û´®
+-- Trë vÒ Ò»ÌõĞèÇóĞÅÏ¢µÄ×Ö·û´®
 function wlls_get_oneneed(n_idx, n_value)
 	local tb		= WLLS_REG_TABLE[n_idx][3]
 	local str_units	= WLLS_REG_TABLE[n_idx][4]
@@ -384,7 +384,7 @@ function wlls_get_oneneed(n_idx, n_value)
 	end
 end
 
--- ·µ»ØÒ»Ìõ³ÉÔ±»ù±¾ĞÅÏ¢µÄ×Ö·û´®
+-- Trë vÒ Ò»Ìõ³ÉÔ±»ù±¾ĞÅÏ¢µÄ×Ö·û´®
 function wlls_get_oneinfo(n_idx, n_value)
 	local tb	= WLLS_REG_TABLE[n_idx][3]
 	local str_units	= WLLS_REG_TABLE[n_idx][4]
@@ -441,7 +441,7 @@ function wlls_check_need(tb_need, n_data)
 	return 1
 end
 
--- ¸ù¾İ ĞÅÏ¢ ·µ»Ø ±£´æµÄÊı¾İ
+-- ¸ù¾İ ĞÅÏ¢ Trë vÒ  ±£´æµÄÊı¾İ
 function wlls_reg_savedata(tb_info)
 	local n_data	= 0;
 	n_data	= SetByte(n_data, 1, tb_info[1] * 16 + tb_info[2])
@@ -451,7 +451,7 @@ function wlls_reg_savedata(tb_info)
 	return n_data
 end
 
--- ¸ù¾İ ±£´æµÄÊı¾İ ·µ»Ø ĞÅÏ¢
+-- ¸ù¾İ ±£´æµÄÊı¾İ Trë vÒ  ĞÅÏ¢
 function wlls_reg_loaddata(n_data)
 	local n_data1	= GetByte(n_data, 1)
 	tb_info	= {

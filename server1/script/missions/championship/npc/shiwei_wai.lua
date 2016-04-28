@@ -41,7 +41,7 @@ function want_enrol()
 	local nHour = mod(CP_UPTO_TRYOUT, 100)
 	local opentime = TRYOUT_TIMER_2 / 60 / 60 / FRAME2TIME
 	if (GetMissionV(MS_STATE) == 0) then
-		local talkstr = "Thi ®Êu dù tuyÓn M«n ph¸i mçi ngµy vµo lóc"..nHour..":00 giê "..opentime..", b©y giê lµ "..date("%H:%M")..", h·y quay l¹i sau!"
+		local talkstr = "Thi ®Êu dù tuyÓn m«n ph¸i mçi ngµy tõ "..nHour..":00 giê "..opentime..", b©y giê lµ "..date("%H:%M")..", h·y quay l¹i sau!"
 		Say(talkstr, 0)
 		return
 	elseif (GetMissionV(MS_STATE) == 2) then
@@ -50,7 +50,7 @@ function want_enrol()
 		return
 	end
 		
-	Say("Thi ®Êu dù tuyÓn M«n ph¸i mçi ngµy vµo lóc"..nHour..":00 giê "..opentime.." giê, thêi gian b¸o danh lµ 5 phót, thêi gian thi ®Êu lµ 10 phót, mçi ng­êi chØ cã thÓ tham gia"..CP_MAXROUND.."vßng thi ®Êu. Sau khi b¸o danh vµo khu vùc chuÈn bÞ, b¹n cã thÓ chän rêi khái hoÆc chê ®Õn lóc thi ®Êu. C¨n cø vµo thµnh tÝch thi ®Êu chän ra 5 ng­êi ®¹i diÖn M«n ph¸i tham gia thi ®Êu vßng chung kÕt khu vùc", 2, "Ta muèn tham gia dù tuyÓn!/sure_enrol_1", "§Ó ta xem l¹i/OnCancel")
+	Say("Thi ®Êu dù tuyÓn m«n ph¸i mçi ngµy tõ "..nHour..":00 giê "..opentime.." giê, thêi gian b¸o danh lµ 5 phót, thêi gian thi ®Êu lµ 10 phót, mçi ng­êi chØ cã thÓ tham gia"..CP_MAXROUND.."vßng thi ®Êu. Sau khi b¸o danh vµo khu vùc chuÈn bÞ, b¹n cã thÓ chän rêi khái hoÆc chê ®Õn lóc thi ®Êu. C¨n cø vµo thµnh tÝch thi ®Êu chän ra 5 ng­êi ®¹i diÖn M«n ph¸i tham gia thi ®Êu vßng chung kÕt khu vùc", 2, "Ta muèn tham gia dù tuyÓn!/sure_enrol_1", "§Ó ta xem l¹i/OnCancel")
 end
 
 function sure_enrol_1()

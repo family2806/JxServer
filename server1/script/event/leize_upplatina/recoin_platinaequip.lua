@@ -34,7 +34,7 @@ function recoin_platina_main()
 	local aryDescribe = {};
 	reloadRecoinPlatinaDate();
 	if (nTodayString < RECOIN_PLATINA_DATE_RANGE[1] or nTodayString > RECOIN_PLATINA_DATE_RANGE[2]) then
-		aryDescribe = {"<dec><npc>Trïng luyÖn trang bŞ b¹ch kim sÏ tån t¹i víi thêi gian, nh­ <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[1]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[1]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[1], 100).." ngµy -"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).." ngµy <color> thËt lµ ®Ñp. H«m nay kh«ng tèt ngµy l¾m cho nªn sÏ kh«ng lµm ®­îc.",
+		aryDescribe = {"<dec><npc>Trïng luyÖn trang bŞ b¹ch kim sÏ tån t¹i víi thêi gian, nh­ <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[1]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[1]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[1], 100).." ngµy -"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).."  ngµy -<color> ÕæÆ¯ÁÁ. ½ñÌì²»ÊÇÊ²Ã´ºÃ ngµy -×ÓËùÒÔ²»ÄÜÖıÔì.",
 			"ThËt tiÕc qu¸, ®· trÔ giê råi, lóc kh¸c h·y quay l¹i./no",};
 	else
 		aryDescribe = {"<dec><npc>Trïng luyÖn trang bŞ b¹ch kim cÇn {1 Kim Tª}, {1 huyÒn tinh kho¸ng th¹ch cÊp 8} vµ mét sè l­îng { m¶nh bæ thiªn th¹ch (trung)}. Trïng luyÖn kh«ng cïng lo¹i trang bŞ hoµng kim sÏ cÇn ®¸ thiªn th¹ch sÏ kh«ng gièng nhau. Tranh thñ vÉn cßn sím h·y göi cho ta lµm sím, ®îi  <color=yellow>"..floor(RECOIN_PLATINA_DATE_RANGE[2]/10000).."n¨m"..mod(floor(RECOIN_PLATINA_DATE_RANGE[2]/100),100).."nguyÖt "..mod(RECOIN_PLATINA_DATE_RANGE[2], 100).."<color> kh«ng gióp ®­îc ng­¬i th× ®õng cã tr¸ch ta.", 
@@ -88,7 +88,7 @@ end;
 
 --ÖØÖıµÄÆğÊ¼
 function want_recoinplatina()
-	GiveItemUI("Trïng luyÖn trang bŞ b¹ch kim", "Xin mêi bá nh÷ng nguyªn liÖu cÇn thiÕt ®Ó trïng luyÖn trang bŞ b¹ch kim vµo « bªn d­íi (1 Kim Tª, 1 huyÒn tinh cÊp 8, vµ mét sè l­îng Bæ Thiªn Th¹ch (Trung))", "do_recoinplatina", "no", 1);
+	GiveItemUI("Trïng luyÖn trang bŞ b¹ch kim", "Çë½«Trïng luyÖn trang bŞ b¹ch kimµÄ±ØĞèÎïÆ··ÅÔÚÏÂÃæ(1¸öKim Tª£¬1¸ö8¼¶Ğş¾§Ê¯ºÍÒ»Ğ©ÊıÁ¿µÄ²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©)", "do_recoinplatina", "no", 1);
 end;
 
 function do_recoinplatina(nCount)
@@ -154,7 +154,7 @@ function do_recoinplatina(nCount)
 				nMarkCount = nMarkCount + 1;
 			else
 				if (tb_material[szItemKey] == nil) then	--²»ÊÇ°ËĞş and ²»ÊÇKim Tª
-					CreateTaskSay({	"<dec><npc>Ngoµi {trang bŞ b¹ch kim} vµ {kim tª}, { huyÒn tinh cÊp 8}, { m¶nh bæ thiªn th¹ch (trung)} lµ nh÷ng nguyªn liÖu ta cÇn. Nh÷ng thø kh¸c xin h·y thu l¹i.",
+					CreateTaskSay({	"<dec><npc>{°×½ğ×°±¸}ºÍ{Kim Tª}, { 8¼°Ğş¾§¿óÊ¯}, { ²¹ÌìÊ¯ËéÆ¬ (ÖĞ)} ÊÇÎÒĞèÒªµÄÔ­ÁÏ. ±ğµÄÇëÔÙÊÕ¼¯À´.",
 						"Ha ha, ®¹i hiÖp còng cã lóc bÊt cÈn, ®Ó ta ®Æt vµo l¹i./want_recoinplatina",
 						"ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no"	});
 					return 0;
@@ -176,7 +176,7 @@ function do_recoinplatina(nCount)
 	
 	local szlog = ""
 	if (nComposeEntryIdx == 0) then		--¾¹È»²»¸ø°×½ğ×°±¸
-		CreateTaskSay({"<dec><npc>Kh«ng ph¶i ng­¬i muèn trïng luyÖn trang bŞ b¹ch kim sao, ng­¬i kh«ng giao cho ta trang bŞ lµm sao ta lµm ®­îc.",
+		CreateTaskSay({"<dec><npc>Äã²»ÊÇÒªTrïng luyÖn trang bŞ b¹ch kimÂï£¬Äã²»°Ñ×¼±¸½»¸øÎÒÎÒÔõÃ´ÖØÖıµÃÁË.",
 			"Thµnh thËt xin lçi, ta sÏ s¾p xÕp l¹i/want_recoinplatina",
 			"§îi 1 l¸t n÷a quay l¹i nhĞ/no"});
 		return 0;
@@ -241,13 +241,13 @@ function do_recoinplatina(nCount)
 --		LockItem(nNewItemIdx);
 --	end
 		
-	szlog = format("[Trïng luyÖn trang bŞ b¹ch kim]\t%s\tAccount:%s\tName:%s\tTrïng luyÖn %s xãa nguyªn liÖu: 1 Kim Tª, 1 huyÒn tinh cÊp 8, %d m¶nh bæ thiªn th¹ch", 
+	szlog = format("[Trïng luyÖn trang bŞ b¹ch kim]\t%s\tAccount:%s\tName:%s\ÖØÖı%s É¾³ıÔ­ÁÏ: 1¿éKim Tª£¬1¿éHuyÒn Tinh Kho¸ng Th¹ch cÊp 8£¬%d¿é²¹ÌìÊ¯ËéÆ¬", 
 				GetLocalDate("%Y-%m-%d %X"), GetAccount(), GetName(),
 				TB_PLATINARECOIN_INFO[nComposeEntryIdx][1], nMarkCount);
 	szBehindItemInfo = getItemInfo(nNewItemIdx);	--ÖØÖıºóµÄĞÅÏ¢
 	WriteLog(szlog);
-	writeRecoinLog("[Thuéc tİnh tr­íc khi trïng luyÖn trang bŞ b¹ch kim]", szBeforeItemInfo);
-	writeRecoinLog("[Thuéc tinh sau khi trïng luyÖn trang bŞ b¹ch kim]", szBehindItemInfo);
+	writeRecoinLog("[Trïng luyÖn trang bŞ b¹ch kimÖ®Ç°µÄÊôĞÔ]", szBeforeItemInfo);
+	writeRecoinLog("[Trïng luyÖn trang bŞ b¹ch kimÖ®ºóµÄÊôĞÔ]", szBehindItemInfo);
 	Msg2Player("Trïng luyÖn thµnh c«ng——<color=green>"..TB_PLATINARECOIN_INFO[nComposeEntryIdx][1]);
 end;
 

@@ -154,11 +154,11 @@ function OnDeath(nNpcIndex)
 		if (GetCurCamp() == 1) then
 			local nNewKillBossCount = GetMissionV(MS_KILLBOSSCOUNT_S) + 1;
 			SetMissionV(MS_KILLBOSSCOUNT_S, nNewKillBossCount);
-			Msg2MSAll(MISSIONID, format("<color=yellow>B¸o c¸o chiÕn dŞch: Tèng binh %s võa lÊy thñ cÊp t­íng qu©n phe Kim! Sè l­îng t­íng qu©n cña phe Kim bŞ phe Tèng s¸t h¹i lµ %d.", GetName(), nNewKillBossCount));
+			Msg2MSAll(MISSIONID, format("<color=yellow>±¨¸æÕ½ÒÛ: Tèng±ø %s ¸Õ¸ÕÈ¡ÁËKim¾ü½«¾üÊ×¼¶! Kim¾ü±»Tèng¾üËùÉ±½«¾üÊıÁ¿Îª%d.", GetName(), nNewKillBossCount));
 		else
 			local nNewKillBossCount = GetMissionV(MS_KILLBOSSCOUNT_J) + 1;
 			SetMissionV(MS_KILLBOSSCOUNT_J, nNewKillBossCount);
-			Msg2MSAll(MISSIONID, format("<color=yellow>B¸o c¸o chiÕn dŞch: Kim binh %s võa lÊy thñ cÊp t­íng qu©n phe Tèng! Sè l­îng t­íng qu©n cña phe Tèng bŞ phe Kim s¸t h¹i lµ %d.", GetName(), nNewKillBossCount));
+			Msg2MSAll(MISSIONID, format("<color=yellow>±¨¸æÕ½ÒÛ: Kim±ù%s ¸Õ¸ÕÈ¡ÁËTèng¾ü½«¾üÊ×¼¶! Tèng¾ü±»Kim¾üËùÉ±½«¾üÊıÁ¿Îª%d.", GetName(), nNewKillBossCount));
 		end
 		 
 	elseif nDeathBossType == 2 then
@@ -172,9 +172,9 @@ function OnDeath(nNpcIndex)
 		end	
 		
 		if (GetCurCamp() == 1) then
-			Msg2MSAll(MISSIONID, format("<color=yellow>B¸o c¸o chiÕn dŞch: Tèng binh %s võa míi tiªu diÖt ®¹i t­íng qu©n phe Kim!!!", GetName()));
+			Msg2MSAll(MISSIONID, format("<color=yellow>±¨¸æÕ½ÒÛ: Tèng¾ü%s ¸Õ¸ÕÏûÃğÁËKim¾ü´ó½«¾ü!!!", GetName()));
 		else
-			Msg2MSAll(MISSIONID, format("<color=yellow>B¸o c¸o chiÕn dŞch: Kim binh %s võa míi tiªu diÖt ®¹i t­íng qu©n phe Tèng!!!", GetName()));
+			Msg2MSAll(MISSIONID, format("<color=yellow>±¨¸æÕ½ÒÛh: Kim¾ü%s ¸Õ¸ÕÏûÃğÁËTèngKim´ó½«¾ü!!!", GetName()));
 		end
 		
 	else 

@@ -298,7 +298,7 @@ end;
 
 function L60_prise()
 	Talk(1, "","Chóc mõng b¹n thµnh nghÖ xuÊt s­! B¹n ®­îc phong lµ Th¸nh N÷. Tõ h«m nay cã thÓ tù do hµnh hiÖp giang hå! B¹n cã thÓ chän gia nhËp m«n ph¸i kh¸c tiÕp tôc häc nghÖ, còng cã thÓ x©y dùng bang héi më réng thÕ lùc trªn giang hå. HoÆc lµm mét ®éc hµnh n÷ hiÖp còng rÊt oai phong! Giang hå kiÕm hiÖp, biÓn réng trêi cao, hy väng b¹n ph¸t triÓn quyÒn c­íc, nhÊt triÓn hång ®å!")
-	Msg2Player("Chóc mõng ng­¬i ®· häc thµnh tµi! Ng­¬i ®· ®­îc phong lµ Th¸nh n÷ Nga Mi ph¸i! Danh väng t¨ng thªm 120 ®iÓm! ")
+	Msg2Player("¹§Ï²ÄãÑ§³É£¬Äã±»·âÎª¶ëÃ¼Ê¥Å®£¬ÃûÍûÔö¼Ó120®iÓm! ")
 --	AddGlobalCountNews("¶ëáÒ"..GetName().."Thµnh tµi xuÊt s­, tõ biÖt c¸c s­ muéi ®ång m«n ®Ó xuèng nói hµnh tÈu giang hå ", 1)
 	Msg2SubWorld("§Ö tö Nga Mi ph¸i "..GetName().."Thµnh tµi xuÊt s­, tõ biÖt c¸c s­ muéi ®ång m«n ®Ó xuèng nói hµnh tÈu giang hå ")
 	AddRepute(120)
@@ -318,7 +318,7 @@ function Uworld125_lose()
 	DelItem(388)
 	AddEventItem(389)
 	SetTask(125,30)
-	Msg2Player("§­a ra V« Tù Thiªn Th­, lÊy Nga My lÖnh tiÔn. ")
+	Msg2Player("½»³öÎŞ×ÖÌìÊé£¬LÊy ®­îc lÖnh tiÔn cña Nga Mi . ")
 	AddNote("LÊy ®­îc lÖnh tiÔn, vÒ Thµnh §« t×m TiÕu Bµ Bµ l·nh th­ëng. ")
 end
 

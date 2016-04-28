@@ -25,7 +25,7 @@ else
 				SetFightState(1)					--Íæ¼Ò×ª»»³ÉÕ½¶·×´Ì¬
     				SetRevPos(13)		  				--ÉèÖÃÖØÉúµã
     				SetTask(1, 10)
-    				Say("Hoan Nghªnh b¹n gia nhËp Nga Mi ph¸i! ",0)  
+    				Say("»¶Ó­Äã¼ÓÈëemei£¡",0)  
 			end
 		else
 			Say("C¨n b¶n cña ng­¬i cßn kĞm l¾m! H·y ®i luyÖn tËp thªm, bao giê ®Õn cÊp 10 l¹i ®Õn t×m ta!", 0)	

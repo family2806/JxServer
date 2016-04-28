@@ -21,7 +21,7 @@ function main()
 
 	local tbarytalk = 
 	{
-		[1]= "<dec><npc>Ta vµ c¸c tû muéi ®· thÊt l¹c nhau råi, ®¹i hiÖp cã thÓ gióp ta t×m muéi muéi ®­îc kh«ng? H·y gióp ta t×m <color=yellow>B¨ng Nhi<color> tr­íc, cã thÓ muéi Êy ®ang ë trong thµnh.",
+		[1]= "<dec><npc>ÎÒºÍ¸÷Î»½ãÃÃÒÑÊ§È¥ÁªÂçÁË£¬´óÏÀ¿ÉÒÔ°ïÎÒÕÒµ½ËıÃÇÂğ£¿¿ìÈ¥ÏÈ°ïÎÒÕÒ<color=yellow>B¨ng Nhi<color> ¿ÉÄÜËıÕıÔÚ³ÇÄÚ.",
 		[2]= "<dec><npc>Th× ra c¸c tû muéi ta nhê ®¹i hiÖp ®i t×m ta, nh­ng giê vÉn ch­a t×m ®­îc <color=yellow>%s<color> n÷a, lµm phiÒn ®¹i hiÖp vËy!",
 		[3]= "<dec><npc>§¹i hiÖp, chóng t«i vÉn ch­a t×m thÊy <color=yellow>%s<color> n÷a, phiÒn ®¹i hiÖp ®i t×m mét chuyÕn n÷a.",
 		[4]= "<dec><npc>Xin chóc mõng, ®¹i hiÖp ®· nhËn ®­îc phÇn th­ëng gi¸ trŞ, hi väng lÇn sau sÏ gÆp l¹i",
@@ -73,7 +73,7 @@ function main()
 		else
 			local arysay = {}
 			arysay[1] = format(tbarytalk[3],sznextgirl)
-			arysay[2] = "§­îc!/NoChoice"
+			arysay[2] = " §­îc!/NoChoice"
 			CreateTaskSay(arysay)
 			return
 		end

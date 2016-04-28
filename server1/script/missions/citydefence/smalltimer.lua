@@ -38,11 +38,11 @@ function OnTimer()
 		end
 		if ( t < LASTREPORT_TIME ) then	--Ã¿¸ô5phótÖÓÌáÊ¾½áÊøÊ±¼ä£¬×îºó5phótÖÓÃ¿phótÖÓÌáÊ¾Ò»´Î
 			if ( mod( t, 15 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc thñ thµnh cßn<color=yellow>"..RestMin.."phót" )
 			end
 		else
 			if ( mod( t, 3 ) == 0 ) then
-				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc thñ thµnh cßn<color=yellow>"..RestMin.."phót" )
 			end
 		end
 	else
@@ -50,7 +50,7 @@ function OnTimer()
 			RestTime = (RUNGAME_TIME - t) * SMALL_TIME / FRAME2TIME;
 			RestMin, RestSec = GetMinAndSec(RestTime);
 			if ( RestMin > 0 ) then
-				Msg2MSAll( MISSIONID, "Thêi gian b¸o danh cßn l¹i lµ:<color=yellow>"..RestMin.."phót" )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc thñ thµnh cßn<color=yellow>"..RestMin.."phót" )
 				AddGlobalNews("Cuéc chiÕn ®· b¾t ®Çu nhËn b¸o danh, cã muèn tham gia kh«ng?"..tbDEFENCE_ANNOUNCE[citycamp].."Thêi gian khai chiÕn cßn"..RestMin.."phót")
 			end
 		end
@@ -145,20 +145,20 @@ function cd_sendmsg2msall()
 	local szMsg = "ChiÕn b¸o thñ thµnh:";
 	Msg2MSAll(MISSIONID, "viÖn binh tham gia thñ thµnh lóc tr­íc gåm<color=yellow>"..GetMSPlayerCount(MISSIONID, 0).." ng­êi")
 	if ( restnpc_1 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[1].." "..restnpc_1.."<color>ng­êi " )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[1].." "..restnpc_1.."<color> ng­êi" )
 	end
 	if ( restnpc_2 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[2].." "..restnpc_2.."<color>ng­êi " )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[2].." "..restnpc_2.."<color> ng­êi" )
 	end
 	if ( restnpc_3 ~= 0 ) then
-		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[3].." "..restnpc_3.."<color>ng­êi " )
+		Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[3].." "..restnpc_3.."<color> ng­êi" )
 	end
 	
 	if ( restnpc_1 == 0 and restnpc_2 == 0 and restnpc_3 == 0 ) then
 		if ( restnpc_4 ~= 0 ) then
-			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[4].." "..restnpc_4.."<color>ng­êi " )
+			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[4].." "..restnpc_4.."<color> ng­êi" )
 		else
-			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[5].." "..restnpc_5.."<color>ng­êi " )
+			Msg2MSAll( MISSIONID, szMsg.."cÇn h¹ thñ thªm<color=yellow>"..tbSOLDIER_NAME[5].." "..restnpc_5.."<color> ng­êi" )
 		end
 	end
 	cd_writelog(date("%m%d%H%M\t")..format("cßn l¹i %s %d\t%s %d\t%s %d\t%s %d\t%s %d",tbSOLDIER_NAME[1],restnpc_1,tbSOLDIER_NAME[2],restnpc_2,tbSOLDIER_NAME[3],restnpc_3,tbSOLDIER_NAME[4],restnpc_4,tbSOLDIER_NAME[5],restnpc_5))

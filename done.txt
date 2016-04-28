@@ -2266,6 +2266,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\¶«±±Çø\³¤°×É½\³¤°�
 D:\Game\ServerMe\China\JxServer\server1\script\¶«±±Çø\³¤°×É½\³¤°×É½±±Â´\trap\³¤°×É½±±Â´to³¤°×É½½Å2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\¶«±±Çø\³¤°×É½\³¤°×É½±±Â´\obj\Â·±ê_³¤°×É½±±Â´.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vonghoa\item\head.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vonghoa\item\vonghoa.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vonghoa\item\vonghoatudo.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vonghoa\item\yanhua.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vonghoa\exchangitem\exchangeitem.lua
@@ -2285,7 +2286,9 @@ D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\trungluyen\globalvar.
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\trungluyen\refine_equip.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\top10\vngglobalvar.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\top10\vngtop10.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\thuongnhanthanbi\moruongfour\openchestfour.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\nangcapvodanh\main.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\nangcapvodanh\ringtable.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\mocnhan_lenhbai\vnglenhbaidanhquai.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\mocnhan_lenhbai\vnglenhbaikhoangthach.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_feature\mocnhan_lenhbai\vnglenhbaitimvatpham.lua
@@ -2302,6 +2305,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vuoncaysinhnhat\lucky_c
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vuoncaysinhnhat\plant.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vuoncaysinhnhat\seed.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vuoncaysinhnhat\tree.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vuoncaysinhnhat\vng_award.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\npc\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\npc\lequan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\vip_account_2011\npc\peachtree.lua
@@ -2344,6 +2348,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\script\ns
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\script\nskt_dropitem.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\script\nskt_songjin.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\npc\nskt_compose_item.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\npc\nskt_gongnv.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\crystal_3colors.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\crystal_4colors.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\ngusackettinh\item\crystal_head.lua
@@ -2398,6 +2403,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\add_
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\mission_award.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\npcdeath_award.lua
+D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\npc\gardener.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\npc\giftbox.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\npc\gongnv.lua
 D:\Game\ServerMe\China\JxServer\server1\script\vng_event\20110225_8_thang_3\npc\head.lua
@@ -2430,6 +2436,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\traogiaithdnb\thdnb7.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\addtongnpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\contribution_entry.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\log.lua
+D:\Game\ServerMe\China\JxServer\server1\script\tong\tong.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\tong_award_head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\tong_contribut_clean.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\tong_header.lua
@@ -2458,6 +2465,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tiangong_zongguan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tianyi_zongguan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tong_chefu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tong_chuwuxiang.lua
+D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\tong_totempole.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\npc\zhandouqu_zongguan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\entrance_trap.lua
 D:\Game\ServerMe\China\JxServer\server1\script\tong\map\map_management.lua
@@ -3628,6 +3636,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\common.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\protocol_gs.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\rule.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\ui.lua
+D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\npc\dialognpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\npc\monster.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\item\nupaolingfu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\qianchonglou\gun\extra_gun.lua
@@ -4036,6 +4045,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\ch_file_npc_hea
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\ch_head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\ch_mission.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\ch_preparemission.lua
+D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\xmas_day.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\schedule\ch_fairy_smalltimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\schedule\ch_preparetimer.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\chrismas\schedule\ch_report_smalltimer.lua
@@ -4104,6 +4114,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwmanager_chengdu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwmanager_xiangyang.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwmission.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\bw\bwtimer.lua
+D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\bigboss.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\bigboss_npc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\bossdown.lua
 D:\Game\ServerMe\China\JxServer\server1\script\missions\boss\callboss_incity.lua
@@ -4337,6 +4348,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\item\huangzhendan.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo3.lua
+D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhiguo_advance.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhihuo_avd1.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhihuo_avd2.lua
 D:\Game\ServerMe\China\JxServer\server1\script\item\huihuangzhihuo_avd3.lua
@@ -4847,6 +4859,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\huoyuedu\award.lua
 D:\Game\ServerMe\China\JxServer\server1\script\huoyuedu\huoyuedu.lua
 D:\Game\ServerMe\China\JxServer\server1\script\huoyuedu\worldtop10.lua
 D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_exit_portal.lua
+D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_ladder.lua
 D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_master.lua
 D:\Game\ServerMe\China\JxServer\server1\script\honor\honor_newworldscript.lua
@@ -4994,6 +5007,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\help.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\201009\npcdeath.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\201009\support.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\200909\rongshu\addnpc.lua
+D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\200909\rongshu\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\200909\rongshu\huweinpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\200909\rongshu\rongshunpc.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\zhongqiu_jieri\200909\rongshu\shitouernpc.lua
@@ -5077,6 +5091,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\tongwar\npc_shizhe.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\tongwar\tongwar_gmscript.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\tongwar\tongwar_signup.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\tienthaolo_200808\head.lua
+D:\Game\ServerMe\China\JxServer\server1\script\event\teacher_day_200711\card.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\teacher_day_200711\composecard.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\teacher_day_200711\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\teachersday06_v\head.lua
@@ -5336,6 +5351,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\jinwu\zimang_
 D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\baihu\equiptable.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\baihu\exchange.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\baihu\item2equip.lua
+D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\baihu\refine_equip.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\equip_publish\baihu\test.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\duanwu_jieri\help.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\cookies2007\event.lua
@@ -5377,6 +5393,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\bingo_machine
 D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\bingo_machine_c.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\bingo_machine_def.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\bingo_machine_gs.lua
+D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\gambler.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\bingo_machine\test.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\beidouchuangong\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\event\beidouchuangong\zhizuochuangongwan.lua
@@ -5821,6 +5838,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\13\config.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\13\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\13\registe.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\12\carriage.lua
+D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\12\config.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\12\extend.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\12\head.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\12\registe.lua
@@ -5871,6 +5889,7 @@ D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\activeing
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\check_func.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\config.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\dailyaward.lua
+D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\exchange_gold_equip.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\exchange_wrong_equip.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\extend.lua
 D:\Game\ServerMe\China\JxServer\server1\script\activitysys\config\1005\head.lua

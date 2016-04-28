@@ -64,7 +64,7 @@ function main()
 	for i=1,nTeamSize do
 		local nIdx = GetTeamMember(i);
 		
-		if (doFunByPlayer(nIdx, PlayerFunLib.CheckTask, PlayerFunLib,TSK_HECA_COUNT,"6000",format("Th«ng qua sö dông [%s] nhiÒu nhÊt chØ ®­îc %s kinh nghiÖm","ThiÖp chóc xu©n","<color=green>600000000<color=green>"),"<") == 1) then
+		if (doFunByPlayer(nIdx, PlayerFunLib.CheckTask, PlayerFunLib,TSK_HECA_COUNT,"6000",format("Í¨¹ýSö dông  [%s] ×î¶àÖ»¿ÉÒÔ %s ¾­Ñé","ThiÖp chóc xu©n","<color=green>600000000<color=green>"),"<") == 1) then
 			doFunByPlayer(nIdx, PlayerFunLib.AddExp, PlayerFunLib, 5000000, 0, format("%s phÇn th­ëng","ThiÖp chóc xu©n"));
 			doFunByPlayer(nIdx, PlayerFunLib.AddTask, PlayerFunLib, TSK_HECA_COUNT, 50);
 		end

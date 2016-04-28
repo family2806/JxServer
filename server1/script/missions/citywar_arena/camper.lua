@@ -41,7 +41,7 @@ function main()
 end;
 
 function OnHelp()
-	Talk(8, "",	"L«i ®µi bang héi lµ n¬i häc hái vâ nghÖ gi÷a c¸c bang héi trªn giang hå! §©y sÏ lµ n¬i thi ®Êu c«ng b»ng", "Muèn tham gia L«i ®µi bang héi, tr­íc hÕt ph¶i gÆp ta ®Ó xin phÐp! Ng­êi xin phÐp ph¶i lµ bang chñ cña bang héi thi ®Êu!", "Sau khi tæ ®éi, ®éi tr­ëng 2 bªn sÏ ®Õn b¸o danh. Bang chñ hai bªn  mçi ng­êi ph¶i ®Æt c­îc thi ®Êu 1000 v¹n l­îng. ", "Sau khi ®Æt c­îc xong, xin phÐp thi ®Êu ®· hoµn thµnh. Trong lóc cã 2 bang héi kh¸c ®ang thi ®Êu, kh«ng cho phÐp b¸o danh", "Xin phÐp thµnh c«ng xong, thµnh viªn cña hai bang héi cã10 phót gia nhËp ®Êu tr­êng. Sau ®ã thi ®Êu sÏ chÝnh thøc b¾t ®Çu!","Th¾ng b¹i phô thuéc vµo ®iÓm tÝch lòy thi ®Êu cña hai bªn. Mçi thµnh viªn bang héi lµm träng th­¬ng ®èi ph­¬ng sÏ ®­îc 3 ®iÓm, ®èi ph­¬ng bÞ trõ 1 ®iÓm", "KÕt thóc thi ®Êu, bang héi nµo tÝch lòy ®iÓm cao h¬n sÏ giµnh th¾ng lîi!", "Ngoµi ra, trong lóc thi ®Êu mét bªn nµo kh«ng cßn thµnh viªn nµo ë l¹i ®Êu tr­êng th× th¾ng lîi sÏ thuéc vÒ bªn kia. ", "Bang héi chiÕn th¾ng cã thÓ thu håi 1000 v¹n l­îng ®· ®ãng, ngoµi ra cßn ®­îc 800 v¹n l­îng tiÒn th­ëng vµ 12.000 ®iÓm kinh nghiÖm bang héi. Bang héi thua cuéc sÏ kh«ng lÊy l¹i ®­îc tiÒn ®· ®ãng, mµ cßn bÞ trõ 14.000 ®iÓm kinh nghiÖm bang héi");
+	Talk(8, "",	"L«i ®µi bang héi lµ n¬i häc hái vâ nghÖ gi÷a c¸c bang héi trªn giang hå! §©y sÏ lµ n¬i thi ®Êu c«ng b»ng", "Muèn tham gia L«i ®µi bang héi, tr­íc hÕt ph¶i gÆp ta ®Ó xin phÐp! Ng­êi xin phÐp ph¶i lµ bang chñ cña bang héi thi ®Êu!", "Sau khi tæ ®éi, ®éi tr­ëng 2 bªn sÏ ®Õn b¸o danh. Bang chñ hai bªn  mçi ng­êi ph¶i ®Æt c­îc thi ®Êu 1000 v¹n l­îng. ", "Sau khi ®Æt c­îc xong, xin phÐp thi ®Êu ®· hoµn thµnh. Trong lóc cã 2 bang héi kh¸c ®ang thi ®Êu, kh«ng cho phÐp b¸o danh", "Xin phÐp thµnh c«ng xong, thµnh viªn cña hai bang héi cã10 phót gia nhËp ®Êu tr­êng. Sau ®ã thi ®Êu sÏ chÝnh thøc b¾t ®Çu!","Th¾ng b¹i phô thuéc vµo ®iÓm tÝch lòy thi ®Êu cña hai bªn. Mçi thµnh viªn bang héi lµm träng th­¬ng ®èi ph­¬ng sÏ ®­îc 3 ®iÓm, ®èi ph­¬ng bÞ trõ 1 ®iÓm", "KÕt thóc thi ®Êu, bang héi nµo tÝch lòy ®iÓm cao h¬n sÏ giµnh th¾ng lîi!", "Ngoµi ra, trong lóc thi ®Êu mét bªn nµo kh«ng cßn thµnh viªn nµo ë l¹i ®Êu tr­êng th× th¾ng lîi sÏ thuéc vÒ bªn kia. ", "Ê¤ÀûµÄ°ï»á½«¿ÉÒÔÊÕ»ØÒÑ½ÉÄÉµÄ1Ç§ÍòÁ½£¬´ËÍâ£¬»¹¿ÉÒÔµÃµ½800ÍòÁ½µÄ½±Àøvµ1Íò2Ç§µã°ï»á¾­Ñé¡£Ê§°ÜµÄ°ï»á²»ÄÜÁì»ØÒÑ½ÉÄÉµÄ·ÑÓÃ£¬»¹Òª¿Û³ý1Íò4Ç§µã°ï»á¾­Ñé");
 end;
 
 function OnReady()
@@ -87,7 +87,7 @@ function OnJoin()
 		if (GetJoinTongTime() >= 7200) then
 			JoinCamp(2);
 		else
-			Say("Thêi gian b¹n gia nhËp bang héi qu¸ ng¾n, kh«ng thÓ tham gia chiÕn ®Êu!", 0);
+			Say("TThêi gian b¹n gia nhËp bang héi qu¸ ng¾n, kh«ng thÓ tham gia chiÕn ®Êu!", 0);
 		end;
 	else
 		ErrorMsg(4)
@@ -98,7 +98,7 @@ function OnFighting()
 	gametime = (floor(GetMSRestTime(MISSIONID,17)/18));
 	RestMin, RestSec = GetMinAndSec(gametime);
 	str1 = "<#> nh©n sè 2 bªn hiÖn t¹i lµ:"..GetMSPlayerCount(MISSIONID, 1).."<#> "..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian cßn d­ "..RestMin.."<#> phót "..RestSec.."<#> gi©y.";
-	str = "<#> hiÖn t¹i bang héi"..GetMissionS(1).."<#> víi"..GetMissionS(2).."<#> ®ang tiÕn hµnh";
+	str = "<#> hiÖn t¹i bang héi"..GetMissionS(1).."<#>vµ"..GetMissionS(2).."<#> ®ang tiÕn hµnh";
 	Say(str..str1, 0);
 end;
 

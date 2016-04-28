@@ -296,7 +296,7 @@ local nType = SelectTreasureType();
 	elseif nType==3 then   -- ÉñÃØÏä×Ó	--by ×Ó·ÇÓã 2008/02/22 È¥³ı±¦Ïä¸ÅÂÊ
 		
 		AddItem(6, 1, 902, 1, 0, 0, 0);
-		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ÀûÓÃ²Ø±¦Í¼ÔÚ<color=green>"..mapname.."<color> ®· ®µo ®­îc 1 <color=green>B¶o r­¬ng cæ<color>£¡");
+		Msg2SubWorld("Ng­êi ch¬i <color=yellow>"..GetName().."<color> sö dông Tµng B¶o §å<color=green>"..mapname.."<color> ®· ®µo ®­îc 1 <color=green>B¶o r­¬ng cæ<color>!");
 		return 1;
 	
 	end;
@@ -362,12 +362,12 @@ local mapname = SubWorldName(mapindex);
 
 	if (nGoods[2]==1) then
 		AddGoldItem(0, nGoods[3]);
-		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
-		AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÀûÓÃ²Ø±¦Í¼ÔÚ"..mapname.."lÊy ®­îc trang bŞ hoµng kim "..nGoods[1].."mét bé!", 2);
+		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>!");
+		AddGlobalCountNews("Ng­êi ch¬i "..GetName().." sö dông Tµng B¶o §å"..mapname.."lÊy ®­îc trang bŞ hoµng kim "..nGoods[1].."mét bé!", 2);
 	else
 		AddItem(nGoods[3],nGoods[4],nGoods[5],nGoods[6],nGoods[7],nGoods[8],0);
-		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
-		-- Msg2SubWorld("Íæ¼Ò<color=yellow>"..GetName().."<color>ÀûÓÃ²Ø±¦Í¼ÔÚ<color=yellow>"..mapname.."<color>´¦ÍÚµ½ÁË<color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n lÊy ®­îc mét <color=yellow>"..nGoods[1].."<color>!");
+		-- Msg2SubWorld("Íæ¼Ò<color=yellow>"..GetName().."<color>ÀûÓÃTµng B¶o §åÔÚ<color=yellow>"..mapname.."<color>´¦ÍÚµ½ÁË<color=yellow>"..nGoods[1].."<color>!");
 	end;
 
 end;
@@ -438,7 +438,7 @@ local i,j = 0,0;
 							1);
 		end;
 					
-		Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> khi ÀûÓÃ²Ø±¦Í¼ÔÚ nhËn ®­îc mét<color=green>"..strName.."<color>");
+		Msg2SubWorld("¹«¸æ£ºNg­êi ch¬i <color=yellow>"..GetName().."<color> sö dông Tµng B¶o §åÍÚ±¦Ê±Óöµ½ÁËÒ»Èº<color=green>"..strName.."<color>");
 		return 1;
 	else
 
@@ -451,7 +451,7 @@ local i,j = 0,0;
 				
 		AddNpcEx(nIndex, 95, nFive, mapindex, x*32, y*32, 1, strName, 1);
 		
-		-- AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." ÀûÓÃ²Ø±¦Í¼ÔÚ"..mapname.."ÍÚ±¦Ê±Óöµ½ÁË"..strName.."µÄ×èÄÓ£¡", 2);
+		-- AddGlobalCountNews("Ng­êi ch¬i "..GetName().." sö dông Tµng B¶o §å"..mapname.."ÍÚ±¦Ê±Óöµ½ÁË"..strName.."µÄ×èÄÓ£¡", 2);
 		return 1;
 	end;
 
@@ -489,16 +489,16 @@ local nIsPublic = 0;
 			
 			WriteTaskLog("Më B¶o r­¬ng nhËn ®­îc mét:"..nGoods[1]);
 			
-			Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn <color=green>"..nGoods[1].."<color>£¡£¡£¡");
+			Msg2SubWorld("Ng­êi ch¬i <color=yellow>"..GetName().."<color> Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn <color=green>"..nGoods[1].."<color>!£¡£¡");
 			
-			AddGlobalCountNews("¹«¸æ£ºÍæ¼Ò "..GetName().." Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn"..nGoods[1].."!!!!!", 5);
+			AddGlobalCountNews("Ng­êi ch¬i "..GetName().." Më B¶o r­¬ng cæ hÕt søc ng¹c nhiªn, ph¸t hiÖn"..nGoods[1].."!!!!!", 5);
 			
 			return
 		else
 			-- Èç¹ûÒÑ¾­²úÉú¹ıµÄ»°Ôò²¹³¥Ò»¸öÇüÔ­ôÕ×Ó
 			AddItem(6, 1, 68, 1, 1, 0, 0);
 			
-			Msg2SubWorld("¹«¸æ£ºÍæ¼Ò <color=yellow>"..GetName().."<color> ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË<color=green>ÇüÔ­ôÕ×Ó<color>£¡");
+			Msg2SubWorld("Ng­êi ch¬i <color=yellow>"..GetName().."<color> ´ò¿ªÒ»¸ö¹Å¾ÉÏä×ÓÊ±¾ªÏ²µÄ·¢ÏÖÁË<color=green>ÇüÔ­ôÕ×Ó<color>!");
 			
 			WriteTaskLog("Më B¶o r­¬ng ngÉu nhiªn nhËn ®­îc mét:"..nGoods[1]..", nh­ng do h¹n chÕ vÒ thêi gian nªn lÊy B¸nh ch­ng ®Ó ®Òn bï!");
 			return
@@ -508,13 +508,13 @@ local nIsPublic = 0;
 	
 	if nGoods[1]=="Tµng B¶o §å" then
 		CreateTreasureMap();
-		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>Tµng B¶o §å<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>Tµng B¶o §å<color>!");
 	elseif (nGoods[2]==1) then
 		AddGoldItem(0, nGoods[3]);
-		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>!");
 	elseif (nGoods[2]==0) then
 		AddItem(nGoods[3],nGoods[4],nGoods[5],nGoods[6],nGoods[7],nGoods[8],0);
-		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>£¡");
+		Msg2Player("B¹n nhËn ®­îc mét <color=yellow>"..nGoods[1].."<color>!");
 	end;
 	
 	-- Ğ´Èë LOG

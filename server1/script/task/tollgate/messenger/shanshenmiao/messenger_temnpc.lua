@@ -32,7 +32,7 @@ function main()
 		elseif ( Uworld1206 == 4 ) then
 			Describe(DescLink_NaLanQingCheng..": Tİn sø lÖnh - Vµng"..name.."Ng­¬i tõ xa tíi vÊt v¶ nhØ, cã ph¶i ®· tr¶i qua kh¶o nghiÖm MiÕu S¬n ThÇn kh«ng, muèn rêi khái µh?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		elseif ( Uworld1206 == 5 ) then
-			Describe(DescLink_NaLanQingCheng..": Ngù Tø lÖnh bµi - Vµng"..name.."Tr­íc giê ta ch­a thÊy qua Ngù Tø Kim Bµi bao giê, h«m nay xem nh­ ®­îc më tÇm nh×n! Ng­¬i ®óng lµ lîi h¹i. Cã ph¶i ng­¬i ®· tr¶i qua kh¶o nghiÖm MiÕu S¬n ThÇn kh«ng, muèn rêi khái µh?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
+			Describe(DescLink_NaLanQingCheng..": Ngù Tø lÖnh bµi - Vµng"..name.."Ö®Ç°ÎÒÎ´¼û¹ıÓù´Í½ğÅÆ£¬½ñÌì×ÜËãÊÇ´ó¿ªÑÛ½çÁË£¬ÄãÕæÊÇÀ÷º¦. Cã ph¶i ng­¬i ®· tr¶i qua kh¶o nghiÖm MiÕu S¬n ThÇn kh«ng, muèn rêi khái µh?",3,"§óng! Ta muèn rêi khái/messenger_comeback","Ta ch­a hoµn thµnh kh¶o nghiÖm, nh­ng kh«ng muèn tiÕp tôc lµm n÷a/messenger_icantdo","Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")
 		end
 	end
 end

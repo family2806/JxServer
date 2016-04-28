@@ -65,8 +65,8 @@ function GetBonusFirstWeek()
 			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 "..strItem)
 		-- Add 50 van luong
 			Earn(500000)
-			Msg2Player("B筺 nh薾 頲 50 v筺 lng");
-			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 50 v筺 lng")
+			Msg2Player("B筺 nh薾 頲 50 万两");
+			WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 50 万两")
 		--Add random 3 loai BCH
 			AddRandomBCH()
 		
@@ -94,8 +94,8 @@ function GetBonusFirstWeek()
 			local szTongName , nTongID = GetTongName()
 			if (nTongID ~= 0) then
 				AddContribution(2000)
-				Msg2Player("B筺 nh薾 頲 2000 甶觤 c鑞g hi課 bang h閕");
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 2000 甶觤 c鑞g hi課 bang h閕")
+				Msg2Player("B筺 nh薾 頲 2000 帮会贡献值");
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 2000 帮会贡献值")
 			end
 			
 			--Add thien long lenh
@@ -135,7 +135,7 @@ function GetBonusEndWeek()
 				--Add 100 van luong
 				Earn(1000000)
 				Msg2Player("Чi hi謕 nh薾 頲 100 v筺 lng")
-				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 100 v筺 lng")
+				WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 100 万两")
 				--Add 3 qua huy hoang
 				for i=1,3 do
 					local ndx = AddItem(6,1,906,1,0,0)
@@ -218,8 +218,8 @@ function GetBonusEndWeek()
 						local szTongName , nTongID = GetTongName()
 						if (nTongID ~= 0) then
 							AddContribution(5000)
-							Msg2Player("B筺 nh薾 頲 5000 甶觤 c鑞g hi課 bang h閕");
-							WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 5000 甶觤 c鑞g hi課 bang h閕")
+							Msg2Player("B筺 nh薾 頲 5000 帮会贡献值");
+							WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Ho祅g Kim L謓h"..GetAccount().."\t"..GetName().."\t".."Nh薾 thng Daily nh薾 頲 5000 帮会贡献值")
 						end
 					-- Add 2 item thien long lenh
 					for i=1,2 do

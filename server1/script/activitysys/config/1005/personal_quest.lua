@@ -663,10 +663,10 @@ function tbPVLB_Quest:CompleteQuest(tbTempQuest)
 	if tbAward.tbItem then
 		tbAwardTemplet:Give(tbAward.tbItem, 1, {"PhongVanLenhBai", strLog})
 		if tbTempQuest.strLog == "QuestTienHanhTS3" then
-			tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "N/A", "Tô Lùc Ng­ng ThÇn Hoµn", 1)
+			tbVngTransLog:Write("201109_PhongVanLenhBai»î¶¯/", 11, "N/A", "Tô Lùc Ng­ng ThÇn Hoµn", 1)
 		end
 	end
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, strLog, "N/A", 1)
+	tbVngTransLog:Write("201109_PhongVanLenhBai»î¶¯/", 11, strLog, "N/A", 1)
 end
 
 function tbPVLB_Quest:CancelQuest(tbTempQuest)

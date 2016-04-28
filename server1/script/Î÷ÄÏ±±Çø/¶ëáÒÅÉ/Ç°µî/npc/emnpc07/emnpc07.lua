@@ -51,9 +51,9 @@ end;
 function select1()
 	Talk(1,"","Cã thËt ®­îc kh«ng? Tèt l¾m!<color=Red>nöa m¶nh g­¬ng kia<color> ë chç <color=Red>t­íng c«ng<color> ta. Chµng ®ang ë <color=Red>trong rõng c©y<color> d­íi ch©n nói.")
 	AddEventItem(18)
-	Msg2Player("NhËn nhiÖm vô cña DiÖu Èn Nga Mi ph¸i, nhËn ®­îc nöa m¶nh g­¬ng ®ång. ")
+	Msg2Player("½Ó¶ëÃ¼ÃîÒşÈÎÎñ£¬NhËn ®­îc nöa m¶nh g­¬ng ®ång. ")
 	SetTask(1,10*256+20)
-	AddNote("GÆp ni c« DiÖu Èn ë ch¸nh ®iÖn (273, 311) , tiÕp nhËn <color=Red>nhiÖm vô g­¬ng ®ång<color>. NhËn nöa m¶nh g­¬ng ®ång. ")
+	AddNote("¼ûÔÚÕıµîµÄÄá¹ÃÃîÒş(273, 311) , ½Ó <color=Red>Í­¾µÈÎÎñ<color>. NhËn ®­îc nöa m¶nh g­¬ng ®ång. ")
 end;
 
 function L10_get_no()

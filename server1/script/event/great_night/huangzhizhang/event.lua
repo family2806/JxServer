@@ -53,9 +53,9 @@ function huang_event_hint()
 	local swith, eventid, awardtimes = greatnight_huang_event()
 	if (swith == 1) then
 		return format("%s%s%s%s%s",
-				"Ho¹t ®éng Hoµng chi ch­¬ng diÔn ra vµo <color=yellow>21h00 ®Õn 23h00<color> mçi tèi. Trong kho¶ng thêi gian nµy, ®¹i hiÖp sÏ ®­îc nh©n ®«i phÇn th­ëng khi tham gia mét ho¹t ®éng yªu cÇu. <enter>Ho¹t ®éng yªu cÇu ngµy h«m nay lµ: <enter>",
+				"Ho¹t ®éng Hoµng chi ch­¬ng´Ó <color=yellow>21h00 µ½23h00<color> Ã¿Íí. ÔÚ´ËÊ±¼ä¶Î²Î¼ÓÒ»¸öÒªÇó»î¶¯, ´óÏÀ¿ÉÁìÈ¡Ë«±¶½±Àø <enter>½ñÈÕµÄÒªÇó»î¶¯ÊÇ<enter>",
 				"Tèng Kim ®¹i chiÕn <enter>",
-				"Th¸ch thøc thêi gian <enter>",
+				"Th¸ch thøc thêi gian gian <enter>",
 				"Chuçi nhiÖm vô D· TÈu <enter>",
 				"Mçi<color=yellow>8 giê tèi <color>, ng­êi ch¬i cã thÓ ®Õn LÔ quan ®Ó t×m hiÓu chi tiÕt ho¹t ®éng.§õng bá lì c¬ héi nhËn quµ cña §éc C« Minh Chñ.")
 		
@@ -76,7 +76,7 @@ end
 
 function huang_event_msg()
 	local name = huang_event_name()
-	return format("Ho¹t ®éng Hoµng chi ch­¬ng sÏ diÔn ra lóc 21h00 ®ªm nay, ho¹t ®éng nh©n ®«i phÇn th­ëng liªn quan lµ: <color=yellow>%s<color>",name)
+	return format("½ñÍíµÄ¡®Ho¹t ®éng Hoµng chi ch­¬ng¡¯½«ÓÚ21h00¿ªÊ¼,ÁìÈ¡Ë«±¶½±ÀøµÄÏà¹Ø»î¶¯ÊÇ£º<color=yellow>%s<color>",name)
 end
 
 function seed_birth_city()

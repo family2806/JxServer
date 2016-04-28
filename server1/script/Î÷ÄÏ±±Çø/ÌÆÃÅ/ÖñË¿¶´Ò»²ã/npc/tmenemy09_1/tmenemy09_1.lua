@@ -9,6 +9,6 @@ function OnDeath()
 		AddEventItem(99) 
 		Msg2Player("NhËn ch×a khãa thø 2 ")
 --		SetTask(2, 64)
-		AddNote("T¹i tÇng thø 1 Tróc T¬ §éng, ®¸nh b¹i g· ®Çu lÜnh lç m·ng, lÊy ®­îc ch×a khãa vµo tÇng thø 2. ")
+		AddNote("ÔÚÖñË¿¶´µÚÒ»²ã£¬´ò°Ü¹ÖÎï£¬NhËn ch×a khãa thø 2 . ")
 	end
 end;

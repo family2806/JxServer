@@ -44,7 +44,7 @@ function main(nItemIdx)
 		return 1;
 	end
 	
-	tinsert(tb_Desc, 1, " lùa chän cÇn th¨ng cÊp ®İch kü n¨ng :");
+	tinsert(tb_Desc, 1, "Ñ¡ÔñĞèÒªTh¨ng cÊp µÄ¼¼ÄÜ:");
 	tinsert(tb_Desc, "KÕt thóc ®èi tho¹i /OnCancel");
 	CreateTaskSay(tb_Desc);
 	return 1;

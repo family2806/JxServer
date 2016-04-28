@@ -76,7 +76,7 @@ function singlediv_apply()
 	end;
 	
 	Say(format("Tr¨m n¨m tu míi cã thÓ cïng thuyÒn, ngµn kiÕp tu míi cã thÓ nªn duyªn.Trong biÓn ng­êi mªnh m«ng, gÆp nhau, th­¬ng yªu nhau h¸ ph¶i chuyÖn dÔ dµng! §¬n ph­¬ng ly h«n cÇn n¹p phİ  <color=yellow>%d l­îng<color>. Ng­¬i thËt sù muèn ®o¹n tuyÖt mèi duyªn nµy chø?",COSTOFSIMGLEDIV), 2,
-		"Xin ly h«n ®¬n ph­¬ng/makesure_apply",
+		"Xin ®¬n ph­¬ng ly h«n/makesure_apply",
 		"§Ó ta xem l¹i/no");
 end;
 
@@ -85,12 +85,12 @@ function makesure_apply()
 	local nDate = GetCurServerTime();
 	SetTask(TK_DATE_APPLYDIV, nDate);
 	
-	WriteLog(format("%s\tAccount:%s[Name:%s] ®· xin ly h«n ®¬n ph­¬ng.",
+	WriteLog(format("%s\tAccount:%s[Name:%s] ÒÑXin ®¬n ph­¬ng ly h«n.",
 				GetLocalDate("%Y-%m-%d %H:%M:%S"),
 				GetAccount(),
 				GetName() ));	
 	Say("NguyÖt L·o: Tuy ng­¬i ®· quyÕt, nh­ng chØ e sau nµy l¹i hèi hËn, ta sÏ cho ng­¬i thêi gian ®Ó suy nghÜ l¹i, mét tuÇn sau h·y ®Õn gÆp ta.", 0);
-	informother(Say, format("Phèi ngÉu %s ®· ®Õn gÆp NguyÖt L·o xin ®¬n ph­¬ng ly h«n, 1 tuÇn sau sÏ tù ®éng <color=yellow>®o¹n tuyÖt quan hÖ phèi ngÉu<color>.",GetName()), 0);
+	informother(Say, format("ÅäÅ¼ %s ®·¼ûÔÂÀÏXin ®¬n ph­¬ng ly h«n£¬1ÖÜºó½«×Ô¶¯<color=yellow>¶Ï¾øÅäÅ¼¹ØÏµ<color>.",GetName()), 0);
 end;
 
 --Í¨ÖªÅäÅ¼

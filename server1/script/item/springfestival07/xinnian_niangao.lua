@@ -31,7 +31,7 @@ function main(nItemIdx)
 	local szmsg = format("Ng­¬i thu ®­îc %d kinh nghiÖm trŞ gi¸ ",nAddExp);
 	if (nCurExp + nAddExp > XINNIAN_MAXEXP) then
 		nAddExp = XINNIAN_MAXEXP - nCurExp;
-		szmsg = format("Ng­¬i thu ®­îc %d kinh nghiÖm trŞ gi¸ , còng n÷a kh«ng muèn ¨n n¨m cao liÔu ",nAddExp);
+		szmsg = format("Ng­¬i thu ®­îc %d kinh nghiÖm trŞ gi¸ £¬ÔÙÒ²²»Ïë³ÔÄê¸âÁË",nAddExp);
 	end;
 	
 	AddOwnExp(nAddExp);

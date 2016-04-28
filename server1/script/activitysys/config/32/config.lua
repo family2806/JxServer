@@ -31,7 +31,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Ta ®Õn nhËn nhiÖm vô Vâ L©m Minh Chñ",3} },
+		{"AddDialogOpt",	{"ÎÒÀ´½ÓNhiÖm vô Vâ L©m Minh Chñ",3} },
 		{"AddDialogOpt",	{"Ta ®Õn nhËn th­ëng nhiÖm vô",4} },
 	},
 }
@@ -39,10 +39,10 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "CreateDialog",
-	szName = "Ta ®Õn nhËn nhiÖm vô hµng ngµy",
+	szName = "ÎÒÀ´½ÓNhiÖm vô hµng ngµy",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· trïng sinh mçi ngµy cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô Vâ L©m Minh Chñ, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
+	tbMessageParam = {"120¼¶ÒÔÉÏ»òÕßÒÑÖØÉúµÄ´óÏÀÃ¿Ìì¿ÉÒÔµ½ÎÒÕâ½ÓÊÜNhiÖm vô Vâ L©m Minh Chñ£¬Ã¿ÖÖÈÎÎñÃ¿Ìì¿ÉÒÔÍê³ÉÒ»´Î£¬Íê³Éºó£¬ÎÒ½«¸øÄãÏàÓ¦µÄ½±Àø!",0},
 	tbCondition = 
 	{
 		{"ThisActivity:IsOpen",	{nil} },
@@ -62,7 +62,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	szName = "Ta ®Õn nhËn th­ëng nhiÖm vô",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"nh÷ng ®¹i hiÖp cÊp 120 trë lªn hoÆc ®· trïng sinh mçi ngµy cã thÓ ®Õn chç cña ta ®©y nhËn nhiÖm vô Vâ L©m Minh Chñ, mçi lo¹i nhiÖm vô mçi ngµy cã thÓ hoµn thµnh 1 lÇn, sau khi hoµn thµnh nhiÖm vô ta sÏ cho ng­¬i phÇn th­ëng xøng ®¸ng!",0},
+	tbMessageParam = {"120¼¶ÒÔÉÏ»òÕßÒÑÖØÉúµÄ´óÏÀÃ¿Ìì¿ÉÒÔµ½ÎÒÕâ½ÓÊÜNhiÖm vô Vâ L©m Minh Chñ£¬Ã¿ÖÖÈÎÎñÃ¿Ìì¿ÉÒÔÍê³ÉÒ»´Î£¬Íê³Éºó£¬ÎÒ½«¸øÄãÏàÓ¦µÄ½±Àø!",0},
 	tbCondition = 
 	{
 		{"ThisActivity:IsOpen",	{nil} },
@@ -177,7 +177,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 {
 	nId = 11,
 	szMessageType = "nil",
-	szName = "Ta kh«ng cÈn thËn lÇm mÊt th­ cña ng­¬i råi",
+	szName = "Ta kh«ng cÈn thËn lÇm mÊt th­ cña ng­¬i råiÁË",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

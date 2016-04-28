@@ -9,6 +9,6 @@ function main(nIndexItem)
 		return 1
 	end
 	CastSkill(1052, 1)
-	Msg2Player("Ng­¬i ®· sö dông 1 Tiªu Diªu T¸n")
+	Msg2Player("ÄãÒÑÊ¹ÓÃ1Tiªu Diªu T¸n")
 	return 0
 end

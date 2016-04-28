@@ -32,7 +32,7 @@ function main()
 	elseif (UTask_world38 == 3) then				-- Îª¼ÆÊ±Æ÷ÈÝ´í¼ÓÈëÊÖ¶¯³¬Ê±´¦Àí
 		i = GetRestSec(6)
 		if (i > 0) then
-			Say("<#> Thêi gian ch­a ®ñ, thuèc ch­a lµm xong ®­îc, ng­¬i ph¶i chê ®îi thªm."..i.."<#> gi©y.", 3, "Ta kh«ng muèn ®îi n÷a, ®Ó mua trùc tiÕp cho råi!/buy","Ta muèn giao dÞch/yes", "VËy th«i ®i/no")
+			Say("<#> Thêi gian ch­a ®ñ, thuèc ch­a lµm xong ®­îc, ng­¬i ph¶i chê ®îi thªm."..i.."<#> gi©y.", 3, "Ta kh«ng muèn ®îi n÷a, ®Ó mua trùc tiÕp cho råi!/buy","ÎÒÏëGiao dÞch/yes", "VËy th«i ®i/no")
 		else
 			StopTimer()						--½áÊø¼ÆÊ±
 			W66_getitem()

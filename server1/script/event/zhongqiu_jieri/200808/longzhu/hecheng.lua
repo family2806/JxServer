@@ -41,9 +41,9 @@ function zhongqiu0808_longzhuhecheng_dialog()
 	
 	local tbSay = 
 	{
-		"<dec><npc>Cã hai lo¹i b¸u vËt, ®¹i hiÖp muèn ®æi g×?<enter>C¸ch 1: 1 bé 'Ngò s¾c long ch©u'  ®æi “Phông nguyÖt qu¶ dung'<enter>C¸ch 2: 1 bé 'Ngò s¾c phông vò' ®æi 'Cèng nguyÖt phï dung'.",
-		"T¹i h¹ muèn ®æi 'Phông nguyÖt qu¶ dung'./#zhongqiu0808_longzhuhecheng_select(1)",
-		"T¹i h¹ muèn ®æi 'Cèng nguyÖt phï dung'./#zhongqiu0808_longzhuhecheng_select(2)",
+		"<dec><npc>ÓĞÁ½ÖÖ±¦Îï£¬´óÏÀÏë»»Ê²Ã´£¿<enter>1:1 ÎåÉ«ÁúÖé»»Phông NguyÖt Qu¶ Dung<enter>2:1 ÎåÉ«·ïÓğ»»Cèng NguyÖt Phï Dung.",
+		"ÎÒÏë»»Phông NguyÖt Qu¶ Dung./#zhongqiu0808_longzhuhecheng_select(1)",
+		"ÎÒÏë»»Cèng NguyÖt Phï Dung./#zhongqiu0808_longzhuhecheng_select(2)",
 		"KÕt thóc ®èi tho¹i/OnCancel",
 	}
 	CreateTaskSay(tbSay)

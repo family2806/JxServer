@@ -13,7 +13,7 @@ function pContributionAward(nCount)
 	if (nTongID > 0) then
 		AddContribution(nCount)
 		Msg2Player("B¹n nhËn ®­îc "..nCount.." ®iÓm cèng hiÕn bang héi")
-		%tbLog:PlayerActionLog(%EVENT_LOG_TITLE, "SuDungVatPham", nCount.." ®iÓm cèng hiÕn bang héi")
+		%tbLog:PlayerActionLog(%EVENT_LOG_TITLE, "SuDungVatPham", nCount.."  ®iÓm cèng hiÕn bang héi")
 	end
 end
 

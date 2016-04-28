@@ -23,14 +23,14 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "click zhangdenggongnv",
 	nStartDate = 201202090000,
 	nEndDate  = 201203010000,
-	tbMessageParam = {"PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé"},
+	tbMessageParam = {"Ch­ëng §¨ng Cung N÷"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"T¬ Hång Thiªn Lı Nh©n Duyªn",4} },
-		{"AddDialogOpt",	{"PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé",13} },
+		{"AddDialogOpt",	{"Ch­ëng §¨ng Cung N÷",13} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -77,7 +77,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	szName = "yinyuan introduction",
 	nStartDate = 201202090000,
 	nEndDate  = 201203010000,
-	tbMessageParam = {"Trong thêi gian ho¹t ®éng, c¸c ®¹i hiÖp cÊp 120 trë lªn mçi ngµy ®Òu cã thÓ ®Õn NguyÖt H¹ L·o Nh©n nhËn 1 T¬ Hång, còng cã thÓ ®Õn PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé nhËn §Ëu Hång hoÆc H¹t Gièng Hoa Hång, nhËn vµ trång §Ëu Hång cÇn ph¶i ®¸p øng ®­îc ®iÒu kiÖn cña ho¹t ®éng, nhËn vµ trång H¹t Gièng Hoa Hång cÇn ph¶i ®¸p øng ®­îc 1 trong 2 ®iÒu kiÖn bÊt kú d­íi ®©y<enter> 1. Hai  ng­êi ch¬i kh¸c nhau vÒ giíi tİnh cïng nhau tæ ®éi, sè nh©n duyªn vµ sè thµnh ngÉu trªn T¬ Hång cña hai ng­êi cïng tæ ®éi<enter> 2. Phu thª hai ng­êi cïng nhau tæ ®éi <enter> khi cïng nhau trång H¹t Gièng Hoa Hång, ng­êi kh¸c giíi tİnh cña ®¹i hiÖp cïng ®éi ngò cÇn ph¶i nu«i d­ìng H¹t Gièng Hoa Hång cña ®èi ph­¬ng, Khi Hoa Hång tr­ëng thµnh, ng­¬i cã thÓ thu thËp DŞ H­¬ng Hoa Hång trªn c©y cña m×nh. nu«i d­ìng Hång §Ëu kh«ng cÇn tæ ®éi, chØ cÇn nu«i d­ìng h¹t gièng cña m×nh lµ ®­îc, nu«i d­ìng H¹t Gièng Hoa Hång/§Ëu Hång cÇn ph¶i kŞp thêi b¾t s©u , nhæ cá, v.v kŞp thêi, nh­ vËy míi nhËn ®­îc cµng nhiÒu phÇn th­ëng. <enter> trong thêi gian ho¹t ®éng trong Kú Tr©n C¸c cã Di Hoa Hßa Méng, ®¹i hiÖp cã thÓ lÊy Di Hoa Hßa Méng giao cho PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé, PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé sÏ cho ng­¬i Cµn Kh«n Tİch LŞch §¬n, ®¹i hiÖp cã thÓ sö dông Cµn Kh«n Tİch LŞch §¬n ®i ¸c Lang Cèc tiªu diÖt ¸c Lang T¶ Sø, ®¸nh b¹i ¸c Lang T¶ Sø sÏ nhËn ®­îc nhiÒu phÇn th­ëng",0},
+	tbMessageParam = {"ÔÚ»î¶¯Ê±¼äÄÚ£¬¸÷Î»120¼¶ÒÔÉÏµÄ´óÏÀÃ¿ÈÕ¶¼¿ÉÒÔµ½NguyÖt H¹ l·o nh©nÄÇÁìÈ¡Ò»ÌõºìÏß£¬Ò²¿ÉÒÔµ½ÕÆµÆ¹¬Å®´¦NhËn §Ëu Hång»òÕßÃÀ¹úÖÖ×Ó£¬ÁìÈ¡ºÍÖÖºì¶¹ĞèÒªÂú×ã»î¶¯Ìõ¼ş£¬ÁìÈ¡ºÍÖÖÃµ¹åÖÖ×ÓĞèÒªÂú×ãÒÔÏÂÆäÖĞÈÎºÎÒ»¸öÌõ¼ş<enter> 1. 2¸öÒìĞÔÍæ¼ÒÒ»Æğ×é¶Ó£¬2ÈËºìÏßÉÏµÄÒöÔµºÅºÍ³ÉÅ¼ºÅÒ»Æğ×é¶Ó<enter> 2. ·òÆŞË«·½Ò»Æğ×é¶Ó<enter>µ±Ò»ÆğÖÖÃµ¹åÖÖ×ÓµÄÊ±ºò£¬Í¬Ò»¶ÓÎéÖĞ´óÏÀµÄÒìĞÔÅóÓÑĞèÒªÅàÑø¶Ô·½µÄÃµ¹åÖÖ×Ó£¬µ±Ãµ¹å³É³¤£¬Äã¿ÉÒÔÊÕ¼¯×Ô¼ºÊ÷ÉÏµÄÒìÏãÃµ¹å£¬ÅàÑøºì¶¹ÎŞĞè×é¶Ó£¬Ö»ĞèÒªÅàÑø×Ô¼ºµÄÖÖ×Ó¾ÍĞĞ£¬ÅàÑøÃµ¹åÖÖ×Ó/ºì¶¹ĞèÒª¼°Ê±³ı³æ£¬°Î²İµÈ£¬ÕâÑù²ÅÄÜ»ñµÃ¸ü¶à½±Àø¡£ <enter> ÔÚ»î¶¯ÆÚ¼ä£¬ÔÚÆæÕä¸óÓĞDi Hoa Hßa Méng£¬´óÏÀ¿ÉÒÔÄÃDi Hoa Hßa Méng½»¸øÕÆµÆ¹¬Å®£¬ÕÆµÆ¹¬Å®½«¸øÄãÇ¬À¤»ıÀúµ¤£¬´óÏÀ¿ÉÒÔÊ¹ÓÃÇ¬À¤»ıÀúµ¤µ½¶öÀÇ¹ÈÏûÃğ¶öÀÇ×óÊ¹£¬´ò°Ü¶öÀÇ×óÊ¹½«»ñµÃºÜ¶à½±Àø¡£",0},
 	tbCondition = 
 	{
 	},
@@ -97,7 +97,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{120,"default",">="} },
 --By: NgaVN	
-		--{"ThisActivity:CheckTaskDaily",	{TSK_GET_REDLINE,0,"H«m nay ng­¬i ®· nhËn D©y Hång råi","=="} },
+		--{"ThisActivity:CheckTaskDaily",	{TSK_GET_REDLINE,0,"½ñÌìÄãÒÑNhËn T¬ HångÁË","=="} },
 		{"ThisActivity:CheckRedline",	{nil} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
@@ -114,14 +114,14 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	szName = "get rose see from gongnv",
 	nStartDate = 201202090000,
 	nEndDate  = 201203010000,
-	tbMessageParam = {format("§Ëu Hång vµ H¹t Gièng Hoa Hång mçi ngµy chØ cã thÓ lÜnh nhËn 1 trong hai c¸i, nÕu nh­ trong ngµy kh«ng nhËn, th× sÏ d­îc céng dån sang ngµy h«m sau ®Ó nhËn, nhiÒu nhÊt chØ cã thÓ céng dån 3 c¸i. <enter> hiÖp sÜ muèn nhËn H¹t Gièng Hoa Hång, cÇn ph¶i ®¸p øng hai ®iÒu kiÖn bÊt kú d­íi ®©y <enter> 1. 2 Ng­êi ch¬i kh¸c giíi tİnh cïng nhau tæ ®éi<enter> 2. D©y T¬ Hång","Cöa hµng tinh lùc"),0},
+	tbMessageParam = {format("ºì¶¹ºÍÃµ¹åÖÖ×ÓÃ¿ÌìÖ»ÄÜÁìÈ¡ÆäÖĞÒ»ÖÖ£¬Èç¹ûÔÚµ±ÈÕ²»ÁìÈ¡£¬½«µş¼Óµ½µÚ¶şÈÕÁìÈ¡£¬×î¶àÖ»ÄÜµş¼Ó3¸ö. <enter> ÏÀÊ¿ÏëNhËn H¹t Gièng Hoa Hång£¬ĞèÒª´ğÓ¦ÒÔÏÂÈÎºÎÌõ¼ş<enter> 1. 2ÒìĞÔÍæ¼ÒÒ»Æğ×é¶Ó<enter> 2. ºìÏß","Cöa hµng tinh lùc"),0},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{120,"default",">="} },
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Ta muèn nhËn H¹t Gièng Hoa Hång",8} },
+		{"AddDialogOpt",	{"ÎÒÏëNhËn H¹t Gièng Hoa Hång",8} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -152,7 +152,7 @@ tbConfig[9] = --Ò»¸öÏ¸½Ú
 	szName = "get redbean from gongnv",
 	nStartDate = 201202090000,
 	nEndDate  = 201203010000,
-	tbMessageParam = {format("§Ëu Hång vµ H¹t Gièng Hoa Hång mçi ngµy chØ cã thÓ lÜnh nhËn 1 trong hai c¸i, nÕu nh­ trong ngµy kh«ng nhËn, th× sÏ d­îc céng dån sang ngµy h«m sau ®Ó nhËn, nhiÒu nhÊt chØ cã thÓ céng dån 3 c¸i. <enter>%s cã Tó NguyÖt Ng­ng Lé, Tó NguyÖt Ng­ng Lé cã thÓ t¨ng thªm 1 lÇn nhËn 1 H¹t Gièng Hoa Hång hoÆc 1 §Ëu Hång <enter> ®¹i hiÖp, ng­¬i ch­a t×m ®­îc nh©n duyªn cña m×nh sao, ng­¬i cã thÓ nhËn §Ëu Hång ®em ®i trång, cã diÒu lµ phÇn th­ëng cña §Ëu Hång kh«ng phong phó b»ng Hoa Hång ®©u nhĞ, hay lµ ®¹i hiÖp ng­¬i nhanh nhanh ®i t×m nh©n duyªn cña m×nh ®i, cïng víi anh ta (c« ta) ®i trång c©y th× thó vŞ h¬n.","Cöa hµng tinh lùc"),0},
+	tbMessageParam = {format("ºì¶¹ºÍÃµ¹åÖÖ×ÓÃ¿ÌìÖ»ÄÜÁìÈ¡ÆäÖĞÒ»ÖÖ£¬Èç¹ûÔÚµ±ÈÕ²»ÁìÈ¡£¬½«µş¼Óµ½µÚ¶şÈÕÁìÈ¡£¬×î¶àÖ»ÄÜµş¼Ó3¸ö. <enter>%s ÓĞĞãÔÂÄıÂ¶£¬ĞãÔÂÄıÂ¶¿ÉÒÔÔö¼ÓÒ»´ÎÁìÈ¡Ò»Ãµ¹åÖÖ×Ó»òÕß1¿Åºì¶¹ <enter>´óÏÀ£¬ÄãÃ»ÓĞÕÒµ½×Ô¼ºµÄÒöÔµÂğ£¬Äã¿ÉÒÔNhËn §Ëu Hång´øÈ¥ÖÖ£¬ÓĞÒ»µãÊÇºì¶¹µÄ½±ÀøÃ»ÓĞÃµ¹åµÄ·á¸»Å¶£¬Òª²»´óÏÀ¿ìµãÈ¥ÕÒ×Ô¼ºµÄÒöÔµ°É£¬ºÍËû£¨Ëı£©È¥ÖÖÊ÷¸üÓĞÈ¤Ğ©","Cöa hµng tinh lùc"),0},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{120,"default",">="} },
@@ -201,7 +201,7 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	{
 		{"ThisActivity:AddTask",	{TSK_SEEDTIME_EX,1} },
 		{"ThisActivity:AddTaskDaily",	{TSK_GET_REDLINE,1} },
-		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Ng­¬i nhËn ®­îc thªm mét lÇn c¬ héi nhËn H¹t Gièng Hoa Hång hoÆc §Ëu Hång"} },
+		{"PlayerFunLib:SimpleMsg",	{"Msg2Player","Äã¶à»ñµÃÒ»´Î»ú»áNhËn H¹t Gièng Hoa Hång»òÕßºì¶¹"} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -226,7 +226,7 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "nil",
-	szName = "PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé",
+	szName = "Ch­ëng §¨ng Cung N÷",
 	nStartDate = 201202090000,
 	nEndDate  = 201203010000,
 	tbMessageParam = {nil},
@@ -239,6 +239,6 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"ThisActivity:AddTaskDaily",	{TSK_REDLINE_NUM,1} },
-		{"PlayerFunLib:AddExp",	{60000000,1,EVENT_LOG_TITLE,"PhÇn th­ëng sö dông Tó NguyÖt Ng­ng Lé"} },
+		{"PlayerFunLib:AddExp",	{60000000,1,EVENT_LOG_TITLE,"Ch­ëng §¨ng Cung N÷"} },
 	},
 }

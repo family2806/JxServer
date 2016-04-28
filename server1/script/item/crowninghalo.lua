@@ -69,7 +69,7 @@ function sel_face()
 	
 	if (getn(tab_face) == 0) then
 		Say("Quİ bang ch­a thªm vµo h×nh thï V« song s¸t trËn, bang chñ hoÆc tr­ëng l·o cã thÓ ®Õn Cét biÓu t­îng ®Ó thay ®æi. Tèi ®a cã 10 khu«n mÉu, cã ®ång ı sö dông V« song s¸t trËn kh«ng?", 2,
-		"Ta c¶m thÊy khu«n mÉu nhİm còng tèt/select_no",
+		"ÊÇµÄ£¬Ta c¶m thÊy lo¹i nµy còng tèt råi/select_no",
 		"KÕt thóc ®èi tho¹i/no");
 		return
 	end;

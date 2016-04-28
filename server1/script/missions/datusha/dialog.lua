@@ -139,7 +139,7 @@ function round_award()
 		end
 	end
 	if nRank then
-		Msg2Player(format("XÕp h¹ng trËn nµy cña ng­¬i lµ %d, ®©y lµ phÇn th­ëng tÆng cho ng­¬i xin h·y nhËn lÊy.", nRank))
+		Msg2Player(format("ÕâÕ½ÄãµÄThø h¹ngÊÇ %d, ÕâÊÇËÍÄãµÄÀñÎïÇëÊÕÏÂ.", nRank))
 		local nAwardCount = getn(DaTuShaRankAward)
 		local nExp = DaTuShaRankAward[nRank]
 		if nRank > nAwardCount then
@@ -150,7 +150,7 @@ function round_award()
 			DaTuShaClass.Scores[szCurName] = -1
 		end
 	else
-		 Talk(1, "", format("XÕp h¹ng cña ng­¬i trong trËn nµy kh«ng n»m trong %d danh s¸ch", MAX_AWARD_COUNT))
+		 Talk(1, "", format("ÄãÕâÕ½µÄThø h¹ng²»ÔÚ %dÃûµ¥ÖĞ", MAX_AWARD_COUNT))
 	end	
 end
 
@@ -206,7 +206,7 @@ function give_award()
 		
 		{"Ta ®Õn nhËn th­ëng cña mçi trËn", round_award},
 		{"Ta ®Õn nhËn th­ëngphÇn th­ëng cña [dòng sü cuèi cïng]" ,last_man_award},
-		{"Ta ®Õn nhËn phÇn th­ëng tæng tİch lòy", final_award},
+		{"ÎÒÀ´ÁìTæng tİch lòy½±Àø", final_award},
 		{"KÕt thóc ®èi tho¹i"},
 	}
 	
@@ -255,15 +255,15 @@ function dialog_main()
 	local szTitle = "<npc>§Ó chän ra nh÷ng nh©n tµi cho qu©n ®éi, triÒu ®×nh ®· quyÕt ®Şnh tuyÓn chän trong d©n chóng nh÷ng cao thñ trİ dòng song toµn. Hoan nghªnh c¸c ch­ vŞ ®Õn tham gia b¸o danh."
 	local tbOpt = 
 	{
-		{"Liªn quan ®Õn Lo¹n ChiÕn Cöu Ch©u Cèc", about, {0}},
-		{"Ta muèn kiÓm tra xem tæng tİch lòy vµ top 10 cña ta", check_rank},
+		{"ÓëLo¹n ChiÕn Cöu Ch©u CècÓĞ¹Ø", about, {0}},
+		{"ÎÒÏë¿´ÎÒµÄTæng tİch lòyºÍÇ°Ê®Thø h¹ng", check_rank},
 		{"Ta ®Õn ®Ó nhËn th­ëng", give_award},
 		{"Ta chØ qua ®­êng mµ th«i"},
 	}
 	local pDungeon = DungeonList[MAP_ID]
 	if pDungeon then
 		if pDungeon.nState == 1 then
-			tinsert(tbOpt, 1, {"B¸o danh tham gia Lo¹n ChiÕn Cöu Ch©u Cèc", join_datusha, {}})
+			tinsert(tbOpt, 1, {"±¨Ãû²Î¼ÓLo¹n ChiÕn Cöu Ch©u Cèc", join_datusha, {}})
 		end
 	end
 	

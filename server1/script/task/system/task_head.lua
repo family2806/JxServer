@@ -403,7 +403,7 @@ function PayAwardMain(taskName, nAlliedTask)
 		nAlliedTask = 0;
 	end;
 	
-		CDebug:MessageOut(taskName.."phÇn th­ëng khi b¾t ®Çu nhiÖm vô ");
+		CDebug:MessageOut(taskName.."B¾t ®Çu nhiÖm vô ¸øÓè½±Àø");
 	
 		for i=1, nRow do
 		
@@ -451,9 +451,9 @@ function PayAwardMain(taskName, nAlliedTask)
 		
 		-- Èç¹ûÈÎÎñ½±ÀøÃ»ÓĞ¿ªÊ¼ĞÂÈÎÎñµÄ»°ÔòÕ¹¿ªÈÎÎñÍê³ÉºóµÄ§èi tho¹i
 		if nIsTaskStart==0 then
-			CDebug:MessageOut(taskName.." Ch­a më nhiÖm vô míi. §iÒu chØnh l¹i thêi gian ph¸t th­ëng");
+			CDebug:MessageOut(taskName.." ÈÎÎñÃ»ÓĞ¿ªÊ¼ĞÂÈÎÎñ£¬Ôòµ÷ÓÃ½áÊø·¢½±Ê±µÄ§èi tho¹i");
 			CreateTaskSay({TaskTalk(taskName, 1, 5),
-						  "KÕt thóc ®èi tho¹i/OnTaskExit"
+						  "½áÊø§èi tho¹i/OnTaskExit"
 						  });
 			return 1;
 		end;
@@ -516,8 +516,8 @@ local i=0;
 		
 		Earn(nMoney);
 		
-		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>tiÒn<color=green>"..nMoney.."<color>");
-		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ tiÒn:"..nMoney);
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>TiÒn"..nMoney.."<color>");
+		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªTiÒn£º"..nMoney);
 	end;
 	
 	-- Èç¹û½±ÀøµÄÀàĞÍÊÇkinh nghiÖm 
@@ -525,8 +525,8 @@ local i=0;
 		nExp = TaskAward(taskName, nRow, Award.ExpNum_Row);
 		AddOwnExp(nExp);
 		
-		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>®iÓm kinh nghiÖm<color=green>"..nExp.."<color>");
-		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ ®iÓm kinh nghiÖm:"..nExp);
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>kinh nghiÖm "..nExp.."<color>");
+		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªkinh nghiÖm £º"..nExp);
 	end;
 
 	-- Èç¹û½±ÀøµÄÀàĞÍÊÇvËt phÈm 
@@ -546,12 +546,12 @@ local i=0;
 			AddItem(nGenre, nDetail, nParticular, nLevel, nGoodsFive, 0, 0);
 		end;
 		
-		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>vËt phÈm<color=green>"..strText..nNum.."c¸i<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>vËt phÈm "..strText..nNum.."c¸i<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc vËt phÈm:"..strText);
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."»ñµÃÁËvËt phÈm £º"..strText);
 		
-		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ vËt phÈm:"..strText);
+		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªvËt phÈm £¬vËt phÈm Îª£º"..strText);
 	end;
 		
 	-- Èç¹û½±ÀøµÄÀàĞÍÊÇTrang bŞ Hoµng Kim
@@ -564,7 +564,7 @@ local i=0;
 			nRandomSeed = GetTmpValue(taskName, TmpType.ItemSeed..nRandomSeedRecord);
 			-- AddItemEx Ö¸ÁîĞèÒª½«»Æ½ğĞòºÅ -1
 			AddItemEx(4, nRandomSeed, 1, 0, nQuality - 1, 0, 0, 0, 0, 0);
-			CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ trang bŞ hoµng kim, sè hiÖu nhiÖm vô lµ:"..nQuality.." NhiÖm vô ngÉu nhiªn:"..nRandomSeed);
+			CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªTrang bŞ Hoµng Kim£¬±àºÅÎª£º"..nQuality.." NhiÖm vô ngÉu nhiªn:"..nRandomSeed);
 		else
 			AddGoldItem(0, nQuality);
 		end;
@@ -572,19 +572,19 @@ local i=0;
 		-- ½±ÀøµÄvËt phÈm ÎÄ×Ö
 		strText     = TranEnableString(TaskAward(taskName, nRow, Award.AwardText_Row));
 		
-		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>trang bŞ hoµng kim:<color=Orange>"..strText.."<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£ºTrang bŞ Hoµng Kim£º<color=Orange>"..strText.."<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc mét bé trang bŞ hoµng kim:"..nQuality);
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."»ñµÃÁËÒ»¼şTrang bŞ Hoµng Kim£º"..nQuality);
 		
-		CDebug:MessageOut(strShowName.."phÇn th­ëng cña nhiÖm vô lµ trang bŞ hoµng kim, sè hiÖu nhiÖm vô lµ:"..nQuality);
+		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªTrang bŞ Hoµng Kim£¬±àºÅÎª£º"..nQuality);
 	end;
 	
 	-- Èç¹û½±ÀøÀàĞÍÊÇ¿ªÊ¼Ò»¸öÈÎÎñ
 	if strType==Award.Task then
 		strTask = TaskAward(taskName, nRow, Award.AwardTask_Row);
 		nResult = ApplyTask(strTask);
-		CDebug:MessageOut(strShowName.."phÇn th­ëng b¾t ®Çu nhiÖm vô tªn lµ:"..strTask..", kÕt qu¶ lµ:"..nResult);
+		CDebug:MessageOut(strShowName.."ÈÎÎñ¸øÓè½±ÀøÎªB¾t ®Çu nhiÖm vô £¬Ãû³ÆÎª£º"..strTask..", kÕt qu¶ lµ:"..nResult);
 		return 1;
 	end;
 	
@@ -616,10 +616,10 @@ local i=0;
 		-- ²úÉúÒ»ÕÅTµng B¶o §å
 		CreateTreasureMap();
 		
-		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>phÇn th­ëng:<color=green>mét tÊm Tµng B¶o §å!<color>");
+		Msg2Player("B¹n nhËn ®­îc<color=White>"..GetTaskText(strShowName).."<color>µÄ½±Àø£º<color=green>Tµng B¶o §åÒ»¸ö£¡<color>");
 		
 		-- Ğ´ LOG
-		WriteTaskLog("trong nhiÖm vô:"..strShowName.."NhËn ®­îc 1 tÊm Tµng B¶o §å.");
+		WriteTaskLog("trong nhiÖm vô:"..strShowName.."»ñµÃÁËÒ»ÕÅTµng B¶o §å¡£");
 	end;
 	
 	
@@ -629,7 +629,7 @@ local i=0;
 		-- »ñÈ¡hÖ thèng phÇn th­ëngÃû
 		strAlliedTask = TaskAward(taskName, nRow, Award.AlliedAward_Row);
 		
-		CDebug:MessageOut(taskName.."Lo¹i phÇn th­ëng:"..strAlliedTask);
+		CDebug:MessageOut(taskName.."µÄ½±ÀøÀàĞÍÎªhÖ thèng phÇn th­ëng£º"..strAlliedTask);
 		
 		-- °Ñ×Ô¼º±¾Éí×ª»»³ÉÒ»¸öÊı×Ö´«½øÈ¥
 		PayAwardMain(strAlliedTask, TaskNo(taskName));
@@ -707,7 +707,7 @@ local nOrder = 0;
 local nFinish = 0;
 
 	if GetTmpValue(taskName, TmpType.KillNpc) ~= nil then
-		CDebug:MessageOut(taskName.."XĞt xem nhiÖm vô ®èi tho¹i lµ cã thÓ hoµn thµnh hay kh«ng, biÕn sè t¹m thêi cña nhiÖm vô giÕt qu¸i kh¸c 0.");
+		CDebug:MessageOut(taskName.." ÅĞ¶Ï§èi tho¹iÈÎÎñÊÇ·ñ¿ÉÒÔÍê³É£¬s¸t qu¸iÈÎÎñµÄÁÙÊ±±äÁ¿²»Îª¿Õ¡£");
 		nOrder = nOrder + 1;
 		nFinish = nFinish + GetTmpValue(taskName, TmpType.KillNpc);	
 	end;
@@ -722,7 +722,7 @@ local nFinish = 0;
 	
 	if nOrder>1 then
 		if nFinish + 1 == nOrder then
-			CDebug:MessageOut(taskName.." nhiÖm vô cã thÓ hoµn thµnh");
+			CDebug:MessageOut(taskName.." §èi tho¹iÈÎÎñ¿ÉÒÔÍê³É");
 			return 1;
 		else
 			return nil;
@@ -766,7 +766,7 @@ local i=0;
 		end;
 	end;
 	
-	rawset(aryTaskText, getn(aryTaskText)+1, "tiÕp tôc nãi chuyÖn tr­íc ®©y/NpcDialog");
+	rawset(aryTaskText, getn(aryTaskText)+1, "¼ÌĞøÔ­À´µÄ§èi tho¹i/NpcDialog");
 	
 	if getn(aryTaskText)>2 then
 		SelectSay(aryTaskText);
@@ -789,7 +789,7 @@ function SelectCollectItemTask(taskName)
 	
 	if nItemRate==0 or nItemRate==nil then return end;
 	
-	CDebug:MessageOut(taskName.." X¸c suÊt giÕt qu¸i nhËn ®­îc vËt phÈm:"..nItemRate);
+	CDebug:MessageOut(taskName.." µÃµ½GiÕt qu¸i r¬i ra vËt phÈmµÄ¸ÅÂÊ£º"..nItemRate);
 	
 		if nRate~=nil or nRate~="" then
 			nRandom = random(1, 100);

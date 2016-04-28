@@ -46,13 +46,13 @@ function tbVNG_VipAcc2011_VLTN:main()
 	local tbMainDialog = tbVNG_Vip_NpcHead:CreateDialog()
 	tbMainDialog.szTitleMsg = "N¨m míi an khang!"
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Tieu2) == 0) then
-	--	tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao tiÓu", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "tieu"})
+	--	tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao-Ð¡", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "tieu"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Trung2) == 0) then
-	--	tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao trung", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "trung"})
+	--	tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao-ÖÐ", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "trung"})
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai) == 1 and tbExtPointLib:GetBitValue(self.nExtPointID, self.nBit_NYLB_Dai2) == 0) then
-		tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao ®¹i", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "dai"})
+		tbMainDialog:AddOptEntry("NhËn nh­ ý lÔ bao-´ó", tbVNG_VipAcc2011_VLTN.GetAward, {tbVNG_VipAcc2011_VLTN, "dai"})
 	end
 	tbMainDialog:Show()
 end

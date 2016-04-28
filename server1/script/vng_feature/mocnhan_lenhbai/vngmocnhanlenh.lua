@@ -72,12 +72,12 @@ function main(nItemIndex)
 			SetNpcParam(npcindex, 3, floor( playerid/100000 ) )
 			SetNpcParam(npcindex, 4, mod( playerid, 100000 ) )
 			SetNpcDeathScript(npcindex, "\\script\\tong\\npc\\muren_death.lua")
-			Msg2Player("Méc nh©n ®· xuÊt hiÖn, h·y mau ®i luyÖn tËp.")			
+			Msg2Player("Méc nh©nÒÑ³öÏÖ£¬¿ìÈ¥Á·Ï°.")			
 			SetTask(TSK_MAXCOUNT, SetByte(n_my_value, 2, n_my_count+1));		
 		end
 		return 0
 	else
-		Msg2Player("Méc nh©n chØ cã thÓ sö dông ë khu vùc chiÕn ®Êu.")
+		Msg2Player("Méc nh©nÖ»ÄÜÔÚÕ½¶·ÇøÓòÊ¹ÓÃ.")
 		return 1
 	end
 end

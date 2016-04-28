@@ -17,20 +17,20 @@ function OnDeath()
 			SetTaskTemp(48,2)
 		elseif (UTask_tmtmp == 2) then 
 			Talk(1,"","tr¸i 3 ph¶i 7")
-			Msg2Player("Cã ®­îc khÈu quyÕt  T¶ Tam H÷u ThÊt ")
+			Msg2Player("µÃµ½¿Ú¾÷¡°tr¸i 3 ph¶i 7")
 			SetTaskTemp(48,3)
 		elseif (UTask_tmtmp == 3) then 
 			Talk(1,"","§¸i Cöu Lı nhÊt ")
-			Msg2Player("Cã ®­îc khÈu quyÕt  §íi Cöu Lı NhÊt ")
+			Msg2Player("µÃµ½¿Ú¾÷¡°§¸i Cöu Lı nhÊt ")
 			SetTaskTemp(48,4)
 		elseif (UTask_tmtmp == 4) then 
 			Talk(1,"","Ngò cø trung ­¬ng")
-			Msg2Player("Cã ®­îc khÈu quyÕt Ngò C­ Trung ¦¥ng ")
+			Msg2Player("µÃµ½¿Ú¾÷¡°Ngò cø trung ­¬ng")
 			SetTaskTemp(48,5)
 		else
 			if (random(1,99) < 40) then		-- ÍêÕûÏÔÊ¾Ò»´Î¿Ú¾÷£¬È»ºó¾Í¸´Î»ÁÙÊ±±äÁ¿£¨ÔÙ¿´ÒªÖØĞÂÀ´¹ı£©
 				SetTaskTemp(48,0)
-				Msg2Player("KhÈu quyÕt hoµn chØnh lµ: NhŞ Tø Vi Kiªn, B¸t HuyÖt VŞ Tóc, T¶ Tam H÷u ThÊt, Ngò C­ Trung ¦¬ng ")
+				Msg2Player("ÍêÕûµÄ¿Ú¾÷Îª£º¶şËÄÎª¼ç£¬Áù°ËÎª×ã£¬tr¸i 3 ph¶i 7£¬§¸i Cöu Lı nhÊt £¬Ngò cø trung ­¬ng")
 			end
 		end
 	end

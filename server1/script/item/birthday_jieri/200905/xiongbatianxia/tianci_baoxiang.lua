@@ -25,7 +25,7 @@ function main(nItemIndex)
 		return 0
 	end
 	if CalcFreeItemCellCount() < 1 then
-		Talk(1,"", format("Chç trèng hµnh trang kh«ng ®ñ %d chç, h·y s¾p xÕp l¹i.", 1))
+		Talk(1,"", format("×°±¸¿ÕÎ»²»×ã%d ¿ÕÎ»£¬ÇëÖØÐÂ°²ÅÅÒ»H¹.", 1))
 		return 1
 	end
 	tbAwardTemplet:GiveAwardByList(%tbItem, "use "..GetItemName(nItemIndex));

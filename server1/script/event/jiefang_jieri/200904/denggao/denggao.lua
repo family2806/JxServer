@@ -28,17 +28,17 @@ tbTop10Award	=
 	{
 		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}}, 
 		[2]	= {szName = "HuyÒn Ch©n §¬n",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
-		[3]	= {szName = "HuyÒn Ch©n §¬n", tbProp = {6, 1, 398, 1, 0, 0}},
+		[3]	= {szName = "ThÇn bÝ kho¸ng th¹ch", tbProp = {6, 1, 398, 1, 0, 0}},
 	},
 	[2]	=
 	{
 		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}}, 
-		[2]	= {szName = "HuyÒn Ch©n §¬n",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
+		[2]	= {szName = "ThÇn bÝ kho¸ng th¹ch",	tbProp = {6, 1, 1678, 1, 0, 0}, tbParam = {1500000000}},
 	},
 	[3]	=
 	{
 		[1]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
-		[3]	= {szName = "HuyÒn Ch©n §¬n", tbProp = {6, 1, 398, 1, 0, 0}},
+		[3]	= {szName = "ThÇn bÝ kho¸ng th¹ch", tbProp = {6, 1, 398, 1, 0, 0}},
 	},
 	[4]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},
 	[5]	= {szName = "Thiªn S¬n TuyÕt Liªn", tbProp = {6, 1, 1431, 1, 0, 0}},

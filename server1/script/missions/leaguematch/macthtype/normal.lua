@@ -33,16 +33,16 @@ end
 
 -- °ïÖúÎÄ×Ö
 -- ¸ñÊ½1£º
---	{" bé m«n tªn ", "Trî gióp néi dung ", 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
+--	{"Bé m«n tªn ", "Trî gióp néi dung ", 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
 --	ÏŞ¶¨£º1¡¢Ö»Õë¶Ôµ¥ÈËÀàĞÍ£»2¡¢Ö»Õë¶Ô¶àÈË£»nil¡¢È«²¿£¨ÏÂÍ¬£©
 -- ¸ñÊ½2£º
---	{" bé m«n tªn ", function(·µ»ØTrî gióp néi dung µÄº¯Êı), 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
+--	{"Bé m«n tªn ", function(·µ»ØTrî gióp néi dung µÄº¯Êı), 1/2(ÏŞ¶¨£¬¿ÉÑ¡)},
 -- ¸ñÊ½3£º
 --	{
---		" bé m«n tªn ",
+--		"Bé m«n tªn ",
 --		{
---			" t©n tó cuéc so tµi trî gióp néi dung ",
---			" cao cÊp cuéc so tµi trî gióp néi dung ",
+--			"ĞÂĞãÈüTrî gióp néi dung ",
+--			"¸ß¼¶ÈüTrî gióp néi dung ",
 --		},
 --		1/2(ÏŞ¶¨£¬¿ÉÑ¡)
 --	},
@@ -91,7 +91,7 @@ tmp_help = {
     5. Èç¹ûÒòÎªÊ¹ÓÃ¼¼ÄÜµ¼ÖÂÑªÁ¿¼õÉÙ¾Í²»±»¼ÆÈë±»´òÖĞ´ÎÊıÄÚ
 ]]
 	},
-	{"Ghi danh quy t¾c ", " <color=red> tranh tµi tİch ph©n <t><color> dïng cho lµm ®øng hµng thø y c­ <t>. kÕt thóc tranh tµi <color=red><pw><color> ®iÓm , cïng <color=red><pt><color> ®iÓm ; bŞ/cha/chŞu ph­¬ng <color=red>0<color> ®iÓm . mçi lÇn <t> kÕt thóc , c¨n cø <color=red> chiÕn ®éi tæng tİch ph©n <color> ®øng hµng . nÕu nh­ tİch ph©n mét d¹ng , ®em c¨n cø <color=yellow> th¾ng lîi tû lÖ <color> ®øng hµng thø . nÕu nh­ th¾ng lîi tû lÖ mét d¹ng , ®em c¨n cø <color=green> mçi chiÕn ®éi tranh tµi tæng thêi gian <color> ®øng hµng thø . tranh tµi giai ®o¹n <t> sau , tİch ph©n ®em lÇn n÷a tİnh to¸n "},
+	{"Ghi danh quy t¾c ", "     <color=red>§i±ÈÈü»ı·Ö <t><color>ÓÃÓÚ×÷ÎªÅÅĞĞÒÀ¾İ <t>. ½áÊø±ÈÈü<color=red><pw><color> ®iÓm , cïng <color=red><pt><color> µã; ¸º·½ <color=red>0<color> µã. Ã¿´Î<t>½áÊø£¬¸ù¾İ<color=red>Õ½¶Ó×Ü»ı·Ö<color>ÅÅÃû. Èç¹û»ı·ÖÒ»Ñù£¬½«¸ù¾İ<color=yellow>Ê¤Àû±ÈÀı<color> ÅÅĞĞ¡£Èç¹ûÊ¤Àû±ÈÀıÒ»Ñù£¬½«¸ù¾İ<color=green> Ã¿¸öÕ½¶Ó±ÈÈü×ÜÊ±¼ä<color> ÅÅĞĞ¡£±ÈÈü½×¶Î<t> ºó£¬»ı·Ö½«ÖØĞÂ¼ÆËã"},
 	{"HiÓu râ nhiÒu h¬n t­êng t×nh ", tmp_help_award},
 }
 

@@ -89,7 +89,7 @@ function common_talk()
 			Talk(1,"","Lµm Ch­ëng m«n kh«ng dÔ dµng chót nµo!")
 		end
 	elseif (Uworld31 == 20) then		--ÈëÃÅÈÎÎñ
-		Talk(4,"enroll_prise","Nghe nãi ng­¬i b¾t cho con g¸i ta 1 con kim t¬ hÇu?","§óng vËy!","Uhm! ThÕ th× ng­¬icã yªu cÇu g×?","V·n bèi muèn b¸i tæ nhËp C«n L«n ph¸i häc nghÖ ")
+		Talk(4,"enroll_prise","Nghe nãi ng­¬i b¾t cho con g¸i ta 1 con kim t¬ hÇu?","§óng vËy!","Uhm! ThÕ th× ng­¬icã yªu cÇu g×?","Íí±²Ïë°İÈëC«n L«nÃÅÏÂÑ§ÒÕ")
 --	elseif (UTask_kl == 5*256+20) then			-- ×ªÃÅÅÉÍê³É
 --		Talk(1,"defection_complete","è¯çá×Ó£ººÃ£¬ºÃ£¡ÄãÒ²×ªÁË¹ıÀ´£¬Îäµ±ÅÉÎŞÈËÒÓ£¡")
 	elseif (GetSeries() == 4) and (GetCamp() == 4) and (GetLevel() >= 60) and (UTask_kl == 70*256) and ((GetTask(5) < 5*256) or (GetTask(5) == 75*256)) then		-- ÖØ·µÊ¦ÃÅÈÎÎñ
@@ -106,15 +106,15 @@ end;
 function check_skill()
 --	if (HaveMagic(275) == -1) then
 --		AddMagic(275)					-- Ëª°ÁC«n L«n
---		Msg2Player("ÄãÑ§»áÁË¡°Ëª°ÁÀ¥ÂØ¡±")
---		Say("è¯çá×Ó£ºÎªÊ¦Õâ´Î±Õ¹Ø¿àË¼ÊıÈÕ£¬ĞÂ´´ÁËÒ»ÕĞ¡°Ëª°ÁÀ¥ÂØ¡±£¬ÏÖÔÚ´«ÊÚÓÚÄã¡£ÄãÑ§ÍêºóÏÈ»ØÈ¥ºÃºÃĞİÏ¢Ò»·¬£¬ÒÔÃâÉËµ½¾­Âö¡£",1,"¶àĞ»Ê¦¸¸/KickOutSelf")
+--		Msg2Player("ÄãÑ§»áÁË¡°Ëª°ÁC«n L«n¡±")
+--		Say("è¯çá×Ó£ºÎªÊ¦Õâ´Î±Õ¹Ø¿àË¼ÊıÈÕ£¬ĞÂ´´ÁËÒ»ÕĞ¡°Ëª°ÁC«n L«n¡±£¬ÏÖÔÚ´«ÊÚÓÚÄã¡£ÄãÑ§ÍêºóÏÈ»ØÈ¥ºÃºÃĞİÏ¢Ò»·¬£¬ÒÔÃâÉËµ½¾­Âö¡£",1,"¶àĞ»Ê¦¸¸/KickOutSelf")
 --	else
 		Say("Cã vÎ nh­ vâ nghÖ cña ng­¬i còng kh«ng kĞm, cã thİch xuèng nói thùc tiÔn mét phen?",2,"§Ö tö còng ®ang cã ı ®ã /goff_yes","§Ö tö muèn tËp luyÖn thªm 1 thêi gian n÷a. /no")
 --	end
 end
 --------------------- ×ªÃÅÅÉÏà¹Ø ------------------------
 function defection_complete()
-	Msg2Player("Hoan nghªnh b¹n gia nhËp C«n L«n ph¸i, trë thµnh PhÊt trÇn ®Ö tö. ")
+	Msg2Player("»¶Ó­Äã¼ÓÈëC«n L«n£¬³ÉÎªC«n L«nµÜ×Ó")
 	SetRevPos(131,57)		  				-- ÉèÖÃÖØÉúµã
 	SetTask(9,10*256)						-- ÈëÃÅ
 	SetFaction("kunlun")      			-- Íæ¼Ò¼ÓÈëC«n L«n
@@ -123,16 +123,16 @@ function defection_complete()
 	SetRank(19)
 	AddMagic(169)
 	Msg2Player("Häc ®­îc H« Phong ph¸p ")
-	AddNote("Gia nhËp C«n L«n ph¸i, trë thµnh PhÊt TrÇn ®Ö tö, häc ®­îc H« Phong ph¸p ")
-	Msg2Faction("kunlun",GetName().." tõ Vâ §ang ®Õn gia nhËp C«n L«n ph¸i. Lùc l­îng bæn ph¸i ®· m¹nh l¹i cµng m¹nh!",GetName())
+	AddNote("¼ÓÈëC«n L«n£¬³ÉÎªC«n L«nµÜ×Ó£¬Häc ®­îc H« Phong ph¸p ")
+	Msg2Faction("kunlun",GetName().." ´ÓÎäµ±¼ÓÈëC«n L«n¡£±¾ÅÉÁ¦Á¿»á¸üÇ¿!",GetName())
 end
 
 -------------------------- ÖØ·µÃÅÅÉÏà¹Ø ---------------------
 function goff_yes()
 	Talk(1,"","§­îc råi! Ng­¬i h·y ®i ®i! §õng quªn r»ng nhê cã chóng ta mµ ng­¬i míi cã ®­îc ngµy h«m nay!")
 	SetTask(9,70*256)
-	AddNote("Rêi khái C«n L«n ph¸i, l¹i tiÕp tôc phiªu b¹t giang hå ")
-	Msg2Player("Rêi khái C«n L«n ph¸i, l¹i tiÕp tôc phiªu b¹t giang hå ")
+	AddNote("Àë¿ªC«n L«n£¬¼ÌĞøÆ¯²´½­ºş")
+	Msg2Player("Àë¿ªC«n L«n£¬¼ÌĞøÆ¯²´½­ºş")
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
@@ -163,13 +163,13 @@ function return_complete()
 --			AddMagic(182)
 --			AddMagic(275)
 		add_kl(70)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-		Msg2Player("B¹n ®· häc tuyÖt häc TrÊn ph¸i S­¬ng Ng¹o C«n L«n, Ngò L«i Chİnh Ph¸p")
+		Msg2Player("ÄãÒÑÑ§»áÕòÅÉ¾øÑ§Ëª°ÁC«n L«n£¬ÎåÀ×Õı·¨")
 --		end
 		SetCamp(3)
 		SetCurCamp(3)
 		SetRank(75)
-		AddNote("§· quay trë l¹i C«n L«n ph¸i, l¹i ghi tªn trong m«n ph¸i ")
-		Msg2Player(GetName().."<#>§­îc phong lµm Hé Ph¸p Ch©n Qu©n cña C«n L«n ph¸i, trë vÒ ph¸i C«n L«n tiÕp tôc tu hµnh. ")
+		AddNote("»Øµ½ÁËC«n L«nÅÉ£¬ÖØĞÂ¼ÇÃÅÅÉÖĞµÄÃû×Ö ")
+		Msg2Player(GetName().."<#>±»·âÎª»¤·¨Õæ¾ı£¬·µ»ØC«n L«n¼ÌĞøĞŞĞĞ. ")
 	else
 		Talk(2,"","ChØ nãi miÖng kh¬i kh¬i, kh«ng ®­a ra hµnh ®éng cô thÓ nµo sao?","Xin lçi! Ta sÏ lËp tøc ®i kiÕm tiÒn!")
 	end

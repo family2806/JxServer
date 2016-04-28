@@ -7,5 +7,5 @@ function main()
 	SetPropState()
 	AddEventItem(135)
 	Msg2Player("T×m ®­îc HuyÒn S©m. ")
-	AddNote("T¹i khu §«ng B¾c Vò L¨ng s¬n t×m ®­îc HuyÒn S©m. ")
+	AddNote("ÕÒµ½T×m ®­îc HuyÒn S©m. ¡£")
 end;

@@ -543,7 +543,7 @@ SKILLS={
 			function(level)
 				return "Kho¶ng c¸ch di h×nh tèi ®a: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_param1_v[1])).."<color>\n"..
 				"Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
-				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n" 
+				"ÆïÂíÊ©Õ¹Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tangmen120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n" 
 			end,
 		skill_skillexp_v={{	{1,17851239},
 							{2,19487603},

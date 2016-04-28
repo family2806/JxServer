@@ -2,8 +2,8 @@ IncludeLib("ITEM");
 
 local tbFactionNumber2Name = 
 {
--- [-1]="Ch­a nhËp ph¸i",
-[-1]="Ch­a nhËp ph¸i",
+-- [-1]="Ng­êi kh«ng tªn",
+[-1]="Ng­êi kh«ng tªn",
  [0]="ThiÕu L©m Ph¸i",
  [1]="Thiªn V­¬ng Bang",
  [2]="§­êng M«n",

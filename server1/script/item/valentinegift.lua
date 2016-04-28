@@ -36,9 +36,9 @@ Bless=
 function main()
 if (gb_GetModule("LÔ vËt t×nh nh©n") == 1) then
 	if (GetSex() == 0) then	--ÄĞ
-		Say("<#>  Sö dông 'LÔ vËt t×nh nh©n' cã thÓ tÆng cho <color=yellow>'ng­êi Êy'<color> mét ®ãa <color=yellow>'Hoa hång t×nh ı'<color> ®ång thêi nãi lªn lêi chóc phóc cña b¹n.", 2, "<#> TÆng hoa hång/want2present", "<#> Hñy bá /OnCancel")
+		Say("<#>    Ê¹ÓÃ¡°LÔ vËt t×nh nh©n¡±¿ÉÒÔËÍ¸øÄúÖĞÒâµÄ<color=yellow>Ëı<color>Ò»¶ä<color=yellow>¡°ÇéÅ¨Ãµ¹å»¨¡±<color>²¢ËÍÉÏÄúµÄ×£¸£¡£", 2, "<#> TÆng hoa hång/want2present", "<#> Hñy bá /OnCancel")
 	elseif (GetSex() == 1) then	--Å®
-		Say("<#>  Sö dông 'LÔ vËt t×nh nh©n' cã thÓ tÆng cho <color=yellow>'ng­êi Êy'<color> mét miÕng <color=yellow>'S« c« la t×nh yªu'<color> ®ång thêi nãi lªn lêi chóc phóc cña b¹n.", 2, "<#> TÆng S« c« la/want2present", "<#> Hñy bá /OnCancel")
+		Say("<#>    Ê¹ÓÃ¡°LÔ vËt t×nh nh©n¡±¿ÉÒÔËÍ¸øÄúÖĞÒâµÄ<color=yellow>Ëû<color>Ò»¿é<color=yellow>¡°ĞÄÒâÇÉ¿ËÁ¦¡±<color>²¢ËÍÉÏÄúµÄ×£¸£¡£", 2, "<#> TÆng S« c« la/want2present", "<#> Hñy bá /OnCancel")
 	end
 end
 	return 1
@@ -120,7 +120,7 @@ function BlessPlayer(szBless)
 		local szParam = GetStringTask(STSK_OTHERNAME).." "..GetTaskTemp(TEMPSK_MAPID).." "..GetName()
 		LG_ApplyDoScript(0, "", "", "\\script\\event\\card.lua", "valentine_bless_anywhere", szParam, "", "")
 	else
-		Say("<#> Kh«ng t×m ra lÔ vËt t×nh nh©n, xin h·y thö l¹i.", 0)
+		Say("<#>ÕÒ²»µ½LÔ vËt t×nh nh©n£¬ÇëÖØÊÔÒ»´Î¡£", 0)
 	end
 end
 

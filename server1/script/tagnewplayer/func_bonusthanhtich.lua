@@ -207,7 +207,7 @@ function GetBonusBK5(nID)
 		SyncItem(nItemIdx)
 		local strItemName = GetItemName(nItemIdx)
 		Msg2Player("Bπn nhÀn Æ≠Óc "..strItemName)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch BK5 nhÀn Æ≠Óc "..strItemName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."BK5Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc "..strItemName)
 end
 
 function GetBonusBK2(nID)
@@ -221,7 +221,7 @@ function GetBonusBK2(nID)
 		SyncItem(nItemIdx)
 		local strItemName = GetItemName(nItemIdx)
 		Msg2Player("Bπn nhÀn Æ≠Óc "..strItemName)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch BK2 nhÀn Æ≠Óc "..strItemName)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."BK2Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc "..strItemName)
 end
 function ShowHKMP()
 	local strFaction = GetFaction()
@@ -252,12 +252,12 @@ function GetBonusHK(nID)
 	SyncItem(nIndex)
 	local strItemName = GetItemName(nIndex)
 	Msg2Player("Bπn nhÀn Æ≠Óc "..strItemName)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch HKMP nhÀn Æ≠Óc "..strItemName)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."HKMPPh«n th≠Îng thµnh t›ch nhÀn Æ≠Óc "..strItemName)
 	--thang cap 90 sau khi Æa trung sinh
 	if (GetLevel() < 90) then
 		LevelUp(90)
-		Msg2Player("Bπn nhÀn Æ≠Óc th®ng c p 90 sau trÔng sinh l«n 1")
-		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc th®ng c p 90 sau trÔng sinh l«n 1")
+		Msg2Player("Bπn nhÀn Æ≠Óc µ⁄“ª¥Œ÷ÿ…˙…˝º∂Œ™90º∂µƒΩ±¿¯")
+		WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc µ⁄“ª¥Œ÷ÿ…˙…˝º∂Œ™90º∂µƒΩ±¿¯")
 	end
 	
 	-- add 5 vo lam mat tich
@@ -389,8 +389,8 @@ function Bonus7()
 	SetBit2GetItem(NWP_EXTPOINT_CheckGetItem, NWP_E6_BIT_GetItemBonusThanhTich7, 1)
 	--M?r≠¨ng chua do thu 1
 	OpenStoreBox(1)
-	Msg2Player("Bπn nhÀn Æ≠Óc mÎ r≠¨ng ch¯a ÆÂ th¯ nh t")
-	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc mÎ r≠¨ng ch¯a ÆÂ th¯ nh t")
+	Msg2Player("Bπn nhÀn Æ≠Óc ¥Úø™µ⁄“ª∏ˆ¥¢ŒÔœ‰")
+	WriteLog(date("%Y%m%d %H%M%S").."\t".."An Bang Hoµng Kim L÷nh"..GetAccount().."\t"..GetName().."\t".."Ph«n th≠Îng thµnh t›ch nhÀn Æ≠Óc ¥Úø™µ⁄“ª∏ˆ¥¢ŒÔœ‰")
 end
 
 function CheckIsSkill90()

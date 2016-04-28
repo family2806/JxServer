@@ -48,7 +48,7 @@ tbNSKT_ItemCompose.tbCrystalCompose =
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("Ho¹t ®éng Ngò Th¸i KÕt Tinh\t Hîp thµnh %s", "KÕt Tinh Ngò S¾c"),
+						szComposeTitle = format("KÕt Tinh Ngò S¾c»î¶¯\t ºÏ³É %s", "KÕt Tinh Ngò S¾c"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
@@ -80,11 +80,11 @@ tbNSKT_ItemCompose.tbCrystalCompose =
 					},
 					pCompos = nil;
 			},
-			["Phiªn Vò Kh«ng H¹n Sö Dông"] = 
+			["Phiªn VòÎÞÏÞÊ¹ÓÃ"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("Ho¹t ®éng Ngò Th¸i KÕt Tinh\t §æi %s", "Phiªn Vò Kh«ng H¹n Sö Dông"),
+						szComposeTitle = format("Ho¹t ®éng Ngò Th¸i KÕt Tinh\t §æi %s", "Phiªn VòÎÞÏÞÊ¹ÓÃ"),
 						nWidth = 2,
 						nHeight = 3,
 						nFreeItemCellLimit = 1,
@@ -106,14 +106,14 @@ tbNSKT_ItemCompose.tbCrystalCompose =
 						nFreeItemCellLimit = 0.02,
 						tbMaterial = 
 							{
-								{szName = "Ng«i Sao May M¾n", tbProp = {6,1,30078,1,0,0}, nCount = 1},
+								{szName = "ÐÒÔËNg«i Sao", tbProp = {6,1,30078,1,0,0}, nCount = 1},
 								{szName = "C©y Th«ng", tbProp = {6,1,30082,1,0,0}, nCount = 1},								
 							},
 						tbProduct = 
 							{
-								{szName="Ng«i Sao H¹nh Phóc",tbProp={6,1,30080,1,0,0},nRate=80,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
-								{szName="Ng«i Sao An Lµnh",tbProp={6,1,30079,1,0,0},nRate=15,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
-								{szName="Ng«i Sao Tr¾ng",tbProp={6,1,30081,1,0,0},nRate=5,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
+								{szName="ÐÒ¸£Ng«i Sao",tbProp={6,1,30080,1,0,0},nRate=80,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
+								{szName="Æ½°²Ng«i Sao",tbProp={6,1,30079,1,0,0},nRate=15,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
+								{szName="°×Ng«i Sao",tbProp={6,1,30081,1,0,0},nRate=5,nCount=1,nExpiredTime=tbNSKT_head.nItemExpiredTime},
 							},
 					},
 					pCompos = nil;

@@ -101,7 +101,7 @@ function main()
 				"<dec><npc>Ng­¬i t×m ta cã viÖc g×?",
 				"PhÇn th­ëng môc tiªu tuÇn c¸ nh©n/#WeekGoalPrice"..param,
 				"NhËn phÇn th­ëng ®iÓm cèng hiÕn mçi ngµy/#GetDayPrice"..param,
---				"½¨ÉèµÈ¼¶ÌáÉı½±Àø/LUP_HelpInfo",
+--				"½¨ÉèµÈcÊpÌáÉı½±Àø/LUP_HelpInfo",
 				-- Ô½ÄÏ°ï»á²»³ö
 --				"·ÂÖÆ°²°îÌ××°/enter_anbang",
 				"Tù tiÕn cö chøc bang chñ/#tong_mastercompetition"..param,
@@ -225,7 +225,7 @@ function tong_mastercompetition()
 		end
 		local nLastContributiveness = TONGM_GetTaskValue(nTongID, nMemberID, TONGMTSK_CONTRIBUTIVENESS);
 		if (nLastContributiveness == 0) then
-			Say("Xin chóc mõng! Ng­¬i ®· t×m ®­îc tèi thiÕu lµ 2240 ®iÓm cèng hiÕn nªn cã thÓ tham gia tranh ®ua c­¬ng vŞ bang chñ, h·y nhËp vµo con sè ®Ó thi thè, con sè cao nhÊt sÏ gÊp 20 lÇn ®iÓm cèng hiÕn c¸ nh©n cña ng­¬i, vµ còng l­u ı lµ mçi lÇn chän läc sÏ trõ 5% phİ thñ tôc.", 2, "X¸c nhËn/inputcontributiveness", "Hñy bá /tong_cancel");
+			Say("¹§Ï²! ÄãÕÒµ½ÁË×îÉÙÎª2240 ®iÓm cèng hiÕnËùÒÔ¿ÉÒÔ²Î¼Ó°ïÖ÷Ö°Î»µÄÕù¶á£¬ÇëÊäÈëÊı×Ö±ÈÈü£¬Êı×Ö×î¸ßµÄ½«µÃµ½20±¶µÄc¸iÈË¹±Ï×¶È£¬Òª×¢ÒâµÄÊÇ£¬Ã¿´ÎÑ¡Ôñ£¬½«¿Û³ı5% ÊÖĞø·Ñ.", 2, "X¸c nhËn/inputcontributiveness", "Hñy bá /tong_cancel");
 		else
 			Say("Sè ®iÓm thi ®ua lµ "..tostring(nLastContributiveness)..", ng­¬i muèn t¨ng thªm sao?", 2, "+/inputcontributiveness", "Hñy bá /tong_cancel");
 		end
@@ -267,7 +267,7 @@ function _tong_startup_compete(nTongID)
 		}
 		cTongLog:WriteInfTB("TONG", "master_compete_date", nTongID, tbMsg)
 
-		Say("§· b¾t ®Çu tù tiÕn cö vµo chøc bang chñ, muèn tranh ®ua chøc bang chñ cÇn ph¶i ra søc cèng hiÕn cho bang héi trong vßng 2 tuÇn s¾p tíi: tham gia c¸c ho¹t ®éng vâ l©m ®Ó t×m 2240 ®iÓm cèng hiÕn c¸ nh©n (®iÓm cèng hiÕn tõ phÇn th­ëng cña bang héi, ®iÓm cèng hiÕn nhËn ë TÕ §µn, ®iÓm cèng hiÕn c¸ nh©n tõ phÇn th­ëng môc tiªu tuÇn ®Òu kh«ng tİnh vµo ®iÓm cèng hiÕn tham gia ho¹t ®éng)", 2, "Tham gia/_foretask", "Hñy bá /tong_cancel");
+		Say("°ïÖ÷¾ºÑ¡»î¶¯ÒÑ¿ªÊ¼£¬Muèn tranh ®ua chøc bang chñ cÇn ph¶i ®ãng gãp nhiÒu cho bang héi trong vßng 2 tuÇn tíi: tham gia c¸c ho¹t ®éng vµ ®¹t ®­îc 2240 ®iÓm cèng hiÕn c¸ nh©n (®iÓm cèng hiÕn dù tr÷ th­ëng tõ bang héi, ®iÓm cèng hiÕn tõ TÕ §µn, ®iÓm cèng hiÕn c¸ nh©n tõ môc tiªu tuÇn sÏ kh«ng ®­îc tİnh)", 2, "Tham gia/_foretask", "Hñy bá /tong_cancel");
 end
 
 --ÉèÖÃÎªºòÑ¡ÈË,²¢°²ÅÅÏÈ¾öÈÎÎñ,Îª°ï»á¹±Ï×2240®iÓm¹±Ï×¶È
@@ -276,7 +276,7 @@ function _foretask()
 	local nMemberID = GetTongMemberID();
 	
 	TONGM_ApplySetTaskValue(nTongID, nMemberID, TONGMTSK_MASTERCANDIDATE, 1);--ÉèÎª°ïÖ÷ºòÑ¡ÈË
-	Say("Xin chóc mõng, ng­¬i ®· trë thµnh ng­êi ®­îc ®Ò cö, h·y mau chãng nhËn l¹i 2240 ®iÓm cèng hiÕn.", 1, "X¸c nhËn/tong_cancel");
+	Say("¹§Ï², ÄãÒÑ³ÉÎª±»ÌáÃûµÄÈË£¬¿ìÈ¥l·nh2240 ®iÓm cèng hiÕn.", 1, "X¸c nhËn/tong_cancel");
 	local tbMsg = {
 		mastercandidat	 = GetTongMemberID()
 		};
@@ -322,10 +322,10 @@ end
 ---·ÂÖÆ¶¨¹ú°²°ó---------------------------------------------------------------------------
 --·ÂÖÆ¶¨¹ú°²°óµÄ±í
 ab_detail = {
-			[1] = {"An Bang §iÒn Hoµng th¹ch ngäc béi", "Tæng qu¶n Ho¹t ®éng ph­êng: Mua <color=yellow>[Pháng chÕ] An Bang §iÒn Hoµng Th¹ch Ngäc Béi<color> cÇn <color=yellow>200<color> ®iÓm cèng hiÕn, ng­¬i ®ång ı kh«ng?", 200, 218},
-			[2] = {"An Bang Cóc hoa Th¹ch chØ hoµn", "Tæng qu¶n Ho¹t ®éng ph­êng: Mua <color=yellow>[Pháng chÕ] An Bang Cóc Hoa Th¹ch ChØ Hoµn <color> cÇn <color=yellow>500<color> ®iÓm cèng hiÕn, ng­¬i ®ång ı kh«ng?", 500, 217},
-			[3] = {"An Bang Kª HuyÕt Th¹ch Giíi ChØ", "Tæng qu¶n Ho¹t ®éng ph­êng: Mua <color=yellow>[Pháng chÕ] An Bang Kª HuyÕt Th¹ch Giíi ChØ<color> cÇn <color=yellow>500<color> ®iÓm cèng hiÕn, ng­¬i ®ång ı kh«ng?", 500, 219},
-			[4] = {"An Bang B¨ng Tinh Th¹ch H¹ng Liªn", "Tæng qu¶n Ho¹t ®éng ph­êng: Mua <color=yellow>[Pháng chÕ] An Bang B¨ng Tinh Th¹ch H¹ng Liªn<color> cÇn <color=yellow>1000<color> ®iÓm cèng hiÕn, ng­¬i ®ång ı kh«ng?", 1000, 216}
+			[1] = {"An Bang §iÒn Hoµng th¹ch ngäc béi", "»î¶¯·»×Ü¹Ü: Âò <color=yellow>[·ÂÖÆ] An Bang §iÒn Hoµng th¹ch ngäc béi<color> ĞèÒª<color=yellow>200<color> ®iÓm cèng hiÕn, ÄãÍ¬ÒâÂğ?", 200, 218},
+			[2] = {"An Bang Cóc hoa Th¹ch chØ hoµn", "»î¶¯·»×Ü¹Ü: Âò <color=yellow>[·ÂÖÆ] An Bang Cóc hoa Th¹ch chØ hoµn <color> ĞèÒª<color=yellow>500<color> ®iÓm cèng hiÕn, ÄãÍ¬ÒâÂğ?", 500, 217},
+			[3] = {"An Bang Kª HuyÕt Th¹ch Giíi ChØ", "»î¶¯·»×Ü¹Ü: Âò <color=yellow>[·ÂÖÆ] An Bang Kª HuyÕt Th¹ch Giíi ChØcolor> ĞèÒª<color=yellow>500<color> ®iÓm cèng hiÕn, ÄãÍ¬ÒâÂğ?", 500, 219},
+			[4] = {"An Bang B¨ng Tinh Th¹ch H¹ng Liªn", "»î¶¯·»×Ü¹Ü: Âò <color=yellow>[·ÂÖÆ] An Bang B¨ng Tinh Th¹ch H¹ng Liªn<color> ĞèÒª<color=yellow>1000<color> ®iÓm cèng hiÕn, ÄãÍ¬ÒâÂğ?", 1000, 216}
 };
 function enter_anbang()
 	--°²°îµÄÑ¡Ïî
@@ -342,7 +342,7 @@ function enter_anbang()
 end;
 
 function tong_ab_about()
-	Say("TÕ §µn:  §©y lµ bé an bang pháng chÕ, tuy thuéc tİnh cã kh¸c víi bé an bang gèc, nh­ng nguyªn liÖu chÕ t¹o th× rÎ h¬n nhiÒu. Ng­¬i cã thÓ mua <color=yellow>[Pháng chÕ] An Bang Cóc Hoa Th¹ch ChØ Hoµn<color>, <color=yellow>[Pháng chÕ] An Bang Kª HuyÕt Th¹ch Giíi ChØ<color>, <color=yellow>[Pháng chÕ] An Bang §iÒn Hoµng Th¹ch Ngäc Béi<color>, <color=yellow>[Pháng chÕ] An Bang B¨ng Tinh Th¹ch H¹ng Liªn<color>.", 0);
+	Say("£º¼ÀÌ³£ºÕâÊÇ·ÂÖÆ°²°î£¬ËäÈ»ĞÔÄÜÓëÕæµÄÓĞ²î±ğ£¬µ«ÊÇÖÆ×÷Ô­ÁÏ±ãÒËºÜ¶à¡£Äã¿ÉÒÔÂò <color=yellow>[·ÂÖÆ] An Bang Cóc hoa Th¹ch chØ hoµn<color>, <color=yellow>[·ÂÖÆ] An Bang Kª HuyÕt Th¹ch Giíi ChØcolor>, <color=yellow>[·ÂÖÆ] An Bang §iÒn Hoµng th¹ch ngäc béi<color>, <color=yellow>[·ÂÖÆ] An Bang B¨ng Tinh Th¹ch H¹ng Liªn<color>.", 0);
 end;
 
 function tong_ab_get(nIndex)
@@ -355,7 +355,7 @@ function tong_ab_get(nIndex)
 	SetTaskTemp(193, 1);
 	
 	if (GetContribution() < ab_detail[nIndex][3]) then
-		Say("TÕ §µn:  §iÓm cèng hiÕn c¸ nh©n kh«ng ®ñ <color=yellow>"..ab_detail[nIndex][3].."<color> ®iÓm, kh«ng thÓ mua bang vËt nµy, h·y cè g¾ng t×m ®iÓm cèng hiÕn tr­íc ®·.", 0);
+		Say("TÕ §µn:  §iÓm cèng hiÕn c¸ nh©n kh«ng ®ñ <color=yellow>"..ab_detail[nIndex][3].."<color> ®iÓm, ²»ÄÜÂò¸ÃÎïÆ·, ÇëÏÈÅ¬Á¦ÕÒ¹±Ï×¶È®·.", 0);
 		Msg2Player("§iÓm cèng hiÕn c¸ nh©n kh«ng ®ñ, kh«ng thÓ sö dông chøc n¨ng nµy.");
 		SetTaskTemp(193, 0);
 		return
@@ -363,7 +363,7 @@ function tong_ab_get(nIndex)
 	
 	AddGoldItem(0, ab_detail[nIndex][4]);
 	AddContribution(-ab_detail[nIndex][3]);
-	Msg2Player("Sö dông <color=yellow>"..ab_detail[nIndex][3].." ®iÓm cèng hiÕn<color> ®Ó mua 1<color=yellow>"..ab_detail[nIndex][1].."<color>.")
+	Msg2Player("Sö dông <color=yellow>"..ab_detail[nIndex][3].." ®iÓm cèng hiÕn<color> ®Ó Âò 1<color=yellow>"..ab_detail[nIndex][1].."<color>.")
 	SetTaskTemp(193, 0);
 end;
 
@@ -389,31 +389,31 @@ aTongLevelUpPrice = {
 	}									}
 
 function LUP_HelpInfo()
-	Say("ChØ cÇn lµ 1 trong <color=red>7<color> bang héi ®øng ®Çu cã ®¼ng cÊp kiÕn thiÕt th¨ng lªn cÊp <color=yellow>2<color> hoÆc <color=yellow>4<color>, "..
-	 	"sÏ do bang chñ ®Õn chç ta nhËn phÇn th­ëng, phÇn th­ëng cã thÓ lµ LÖnh bµi gäi Boss, Vâ thÇn Ên vµ qu¶ Huy Hoµng cao cÊp, thø h¹ng cµng cao th× phÇn th­ëng cµng nhiÒu.",
-	 	3, "Bang héi ta ®¹t ®ñ ®iÒu kiÖn, muèn nhËn phÇn th­ëng/LUP_GetPrice", "Ta muèn xem néi dung phÇn th­ëng/#LUP_PriceInfo(nil)", "BiÕt råi/tong_cancel")	
+	Say("Ö»ĞèÒªÆäÖĞÒ»c¸i <color=red>7<color> ´øÍ·°ï»áµÄ½¨ÉèµÈcÊp´ïµ½cÊp±ğ<color=yellow>2<color> »òÕß<color=yellow>4<color>, "..
+	 	"½«ÓÉ°ïÖ÷µ½ÎÒÕâÁì½±£¬½±Æ·¿ÉÄÜÊÇÕÙ»½bossÁîÅÆ£¬Vâ ThÇn Ên¼°¸ßcÊp»Ô»Í¹û£¬µÈcÊpÔ½¸ß£¬½±ÀøÔ½¶à.",
+	 	3, "Bang héi ta ®¹t ®ñ ®iÒu kiÖn, muèn nhËn phÇn th­ëng/LUP_GetPrice", "ÎÒÏë¿´½±Æ·ÄÚÈİcÊpµÄphÇn th­ëng/#LUP_PriceInfo(nil)", "BiÕt råi/tong_cancel")	
 end
 
 function LUP_PriceInfo(nLevel, nOrder)
 	if (nLevel == nil) then		
-		Say("H·y lùa chän", 4, "PhÇn th­ëng khi ®¼ng cÊp kiÕn thiÕt ®¹t cÊp 2/#LUP_PriceInfo(2)", "PhÇn th­ëng khi ®¼ng cÊp kiÕn thiÕt ®¹t cÊp 4/#LUP_PriceInfo(4)",
+		Say("H·y lùa chän", 4, "µ±½¨ÉèµÈcÊp´ïµ½2cÊpµÄ½±ÀøcÊpµÄphÇn th­ëng/#LUP_PriceInfo(2)", "µ±½¨ÉèµÈcÊp´ïµ½4cÊpµÄphÇn th­ëng/#LUP_PriceInfo(4)",
 			 "Quay l¹i/LUP_HelpInfo", "Rêi khái/tong_cancel")
 	elseif nOrder == nil then
 		local S = {i = 0, l = nLevel}
 		function S:GenParam()
 			self.i = self.i+1
-			return "h¹ng thø "..self.i.."phÇn th­ëng/#LUP_PriceInfo("..self.l..","..self.i..")"
+			return "µÈcÊp "..self.i.."phÇn th­ëng/#LUP_PriceInfo("..self.l..","..self.i..")"
 		end
 		Say("H·y lùa chän", 9, S:GenParam(), S:GenParam(), S:GenParam(), S:GenParam(), S:GenParam(), S:GenParam(), S:GenParam(),
 			"Quay l¹i/#LUP_PriceInfo(nil)", "Rêi khái/tong_cancel")
 	else
-		Say("Bang héi cã thÓ nhËn ®­îc <color=yellow>LÖnh bµi gäi Boss cÊp 10<color><color=green> "..aTongLevelUpPrice[nLevel][nOrder][1].." <color>c¸i, <color=yellow>Vâ ThÇn Ên<color>(Sau khi sö dông, trong 2 giê ®iÓm cèng hiÕn nhËn ®­îc sÏ nh©n ®«i)<color=green> "..aTongLevelUpPrice[nLevel][nOrder][2].." <color> c¸i, <color=yellow>qu¶ Huy Hoµng cao cÊp<color><color=green> "..aTongLevelUpPrice[nLevel][nOrder][3].." <color> qu¶.",2,
+		Say("°ï»á¿ÉÒÔ»ñµÃ<color=yellow>ÕÙ»½bossÁîÅÆ10cÊp<color><color=green> "..aTongLevelUpPrice[nLevel][nOrder][1].." <color>cÊp, <color=yellow>Vâ ThÇn Ên<color>(Sau khi Ê¹ÓÃ, 2Ğ¡Ê±ÄÚ¹±Ï×¶È»ñµÃ½«ÎªË«±¶)<color=green> "..aTongLevelUpPrice[nLevel][nOrder][2].." <color> cÊp, <color=yellow>¸ßcÊp»Ô»Í¹û<color><color=green> "..aTongLevelUpPrice[nLevel][nOrder][3].." <color> qu¶.",2,
 			"Quay l¹i/#LUP_PriceInfo("..nLevel..",nil)", "Rêi khái/tong_cancel")
 	end
 end
 
 function LUP_PriceInfo2()
-	Say("", 4, "PhÇn th­ëng khi ®¼ng cÊp kiÕn thiÕt ®¹t cÊp 2/LUP_PriceInfo2", "PhÇn th­ëng khi ®¼ng cÊp kiÕn thiÕt ®¹t cÊp 2/LUP_PriceInfo4",
+	Say("", 4, "µ±½¨ÉèµÈcÊp´ïµ½2cÊpÊ±µÄ½±Àø/LUP_PriceInfo2", "µ±½¨ÉèµÈcÊp´ïµ½2cÊpÊ±µÄ½±Àø/LUP_PriceInfo4",
 		 "Quay l¹i/LUP_HelpInfo", "Rêi khái/tong_cancel")
 end
 
@@ -433,12 +433,12 @@ function LUP_GetPrice()
 		nLevel = 2
 	end
 	if nOrder <=0 or nOrder > 7 then
-		Say("Kh«ng ®­îc råi, bang héi kh«ng lµ 1 trong <color=red>7<color> bang ®Çu tiªn th¨ng ®Õn cÊp "..nLevel..", kh«ng thÓ nhËn th­ëng.", 0)
+		Say("²»ĞĞÁË, ²»»á²»ÊÇÆäÖĞ1c¸i <color=red>7<color> µÚÒ»c¸i´ïµ½µÈcÊpµÄ°ï»á"..nLevel..", kh«ng thÓ nhËn th­ëng.", 0)
 		return
 	end
 	local nPrice = TONG_GetTaskValue(nTongID, TONGTSK_LUP_PRICE)
 	local nBossFu, nContributionPie, nFruit
-	local szOrder = "Quİ bang lµ bang héi thø <color=red>"..nOrder.."<color> th¨ng ®Õn cÊp <color=yellow>"..nLevel.."<color>."
+	local szOrder = "Quİ bang lµ bang héi thø <color=red>"..nOrder.."<color> ÉıcÊpµ½<color=yellow>"..nLevel.."<color>."
 	if (nPrice == 0)then
 		Say(szOrder..", phÇn th­ëng ®· nhËn hÕt råi.", 0)
 		return
@@ -455,7 +455,7 @@ function LUP_GetPrice()
 	end
 	local tbSel = {}
 	if (nBossFu > 0)then
-		tinsert(tbSel, "NhËn tr­íc "..nBossFu.." c¸i lÖnh bµi gäi Boss cÊp 10/#LUP_GivePrice(1,"..nBossFu..")")
+		tinsert(tbSel, "NhËn tr­íc "..nBossFu.." µÈcÊpÎª10cÊpµÄÕÙ»½bossÁîÅÆ/#LUP_GivePrice(1,"..nBossFu..")")
 	end
 	if (nContributionPie >= 1 and nContributionPie < 20)then
 		tinsert(tbSel, "l·nh"..nContributionPie.." c¸i Vâ ThÇn Ên/#LUP_GivePrice(2,"..nContributionPie..")")
@@ -469,25 +469,25 @@ function LUP_GetPrice()
 		end
 	end
 	if (nFruit >= 1 and nFruit < 20)then
-		tinsert(tbSel, "l·nh"..nFruit.." qu¶ Huy Hoµng cao cÊp/#LUP_GivePrice(3,"..nFruit..")")
+		tinsert(tbSel, "l·nh"..nFruit.." c¸i¸ßcÊp»Ô»Í¹û/#LUP_GivePrice(3,"..nFruit..")")
 	elseif (nFruit >= 20)then
-		tinsert(tbSel, "NhËn tr­íc 20 qu¶ Huy Hoµng cao cÊp/#LUP_GivePrice(3, 20)")
+		tinsert(tbSel, "NhËn tr­íc 20 c¸i¸ßcÊp»Ô»Í¹û/#LUP_GivePrice(3, 20)")
 		if (nFruit >= 40)then
-			tinsert(tbSel, "NhËn tr­íc 40 qu¶ Huy Hoµng cao cÊp/#LUP_GivePrice(3, 40)")
+			tinsert(tbSel, "NhËn tr­íc 40 c¸i¸ßcÊp»Ô»Í¹û/#LUP_GivePrice(3, 40)")
 			if (nFruit >= 60)then
-				tinsert(tbSel, "NhËn tr­íc 60 qu¶ Huy Hoµng cao cÊp/#LUP_GivePrice(3, 60)")
+				tinsert(tbSel, "NhËn tr­íc 60 c¸i¸ßcÊp»Ô»Í¹û/#LUP_GivePrice(3, 60)")
 			end	
 		end
 	end	
 	tinsert(tbSel, "T¹m thêi ch­a lÊy/tong_cancel")
-	Say(szOrder..", hiÖn t¹i cã <color=yellow>"..nBossFu.."<color> c¸i <color=yellow>LÖnh bµi gäi Boss cÊp 10<color>, <color=yellow>"..nContributionPie.."<color> c¸i <color=yellow>Vâ ThÇn Ên<color> vµ <color=yellow> "..nFruit.."<color> <color=yellow>qu¶ Huy Hoµng cao cÊp<color> cã thÓ nhËn, h·y quyÕt ®Şnh xem lÇn nµy muèn nhËn g× vµ sè l­îng bao nhiªu", 
+	Say(szOrder..", hiÖn t¹i cã <color=yellow>"..nBossFu.."<color> c¸i<color=yellow>10cÊpÕÙ»½bossÁîÅÆ<color>, <color=yellow>"..nContributionPie.."<color> c¸i <color=yellow>Vâ ThÇn Ên<color> vµ <color=yellow> "..nFruit.."<color> <color=yellow>¸ßcÊp»Ô»ÍÖ®¹û<color>¿ÉÒÔl·nh£¬Çë¾ö¶¨´Ë´Îl·nhÎïÆ·¼°ÊıÁ¿¶àÉÙ¡£", 
 		getn(tbSel), tbSel)
 end
 
 function LUP_GivePrice(nWhich, num)
-	local aName = {"LÖnh bµi gäi Boss cÊp 10", "Vâ ThÇn Ên", "Qu¶ Huy Hoµng (cao) "}
-	Say("§· nhËn tr­íc <color=yellow>"..num.."<color> <color=yellow>"..aName[nWhich].."<color>, h·y b¶o ®¶m hµnh trang ®ñ chç trèng, nÕu cã rít ra ®Êt bŞ ng­êi kh¸c nhÆt ®­îc còng ®õng tr¸ch ta kh«ng nh¾c nhë.", 
-		2, "Ta biÕt råi!/#LUP_GivePrice_OK("..nWhich..","..num..")", "H·y ®îi ta xÕp l¹i hµnh trang ®·./tong_cancel")
+	local aName = {"10cÊpÕÙ»½bossÁîÅÆ", "Vâ ThÇn Ên", "»Ô»Í¹û(¸ßcÊp) "}
+	Say("§· NhËn tr­íc <color=yellow>"..num.."<color> <color=yellow>"..aName[nWhich].."<color>, h·y b¶o ®¶m hµnh trang ®ñ chç trèng, nÕu cã rít ra ®Êt bŞ ng­êi kh¸c nhÆt ®­îc còng ®õng tr¸ch ta kh«ng nh¾c nhë.", 
+		2, "ÎÒÖªµÀÁË!cÊpµÄ½±Àø/#LUP_GivePrice_OK("..nWhich..","..num..")", "H·y ®îi ta xÕp l¹i hµnh trang ®·./tong_cancel")
 end
 
 function LUP_GivePrice_OK(nWhich, num)
@@ -500,12 +500,12 @@ function LUP_GivePrice_OK(nWhich, num)
 		nLevel = 2
 	end
 	if nOrder <=0 or nOrder > 7 then
-		Say("ThËt ®¸ng tiÕc, quİ bang kh«ng thuéc 1 trong 7 bang ®øng ®Çu ®¹t cÊp "..nLevel..", kh«ng thÓ nhËn th­ëng.", 0)
+		Say("ÕæÊÇÒÅº¶£¬¹ó°ï²»ÊôÓÚ7c¸i×îÇ°ÁĞµÄ°ï»á£¬cÊp±ğ´ïµ½"..nLevel..", kh«ng thÓ nhËn th­ëng.", 0)
 		return
 	end
 	local nPrice = TONG_GetTaskValue(nTongID, TONGTSK_LUP_PRICE)
 	local nBossFu, nContributionPie, nFruit
-	local szOrder = "Quİ bang lµ bang héi thø <color=red>"..nOrder.."<color> th¨ng ®Õn cÊp <color=yellow>"..nLevel.."<color>."
+	local szOrder = "Quİ bang lµ bang héi thø <color=red>"..nOrder.."<color> ÉıcÊpµ½<color=yellow>"..nLevel.."<color>."
 	if (nPrice == 0)then
 		Say(szOrder..", phÇn th­ëng ®· nhËn hÕt råi.", 0)
 		return
@@ -529,7 +529,7 @@ function LUP_GivePrice_OK(nWhich, num)
 		for i = 1,num do
 			AddItem(6,1,1022,10,0,0,0)
 		end
-		local szMsg = GetName().."l·nh°ï»áÉıcÊp½±Àø: LÖnh bµi gäi Boss cÊp 10"..num.."c¸i"
+		local szMsg = GetName().."l·nh°ï»áÉıcÊp½±Àø: 10cÊpÕÙ»½bossÁîÅÆ"..num.."c¸i"
 		Msg2Tong(nTongID, szMsg)
 		TONG_ApplyAddEventRecord(nTongID, szMsg)
 	elseif nWhich == 2 then
@@ -551,7 +551,7 @@ function LUP_GivePrice_OK(nWhich, num)
 				RemoveItemByIndex(idx)
 			end
 		end
-		local szMsg = GetName().."NhËn phÇn th­ëng th¨ng cÊp bang héi: Vâ ThÇn Ên"..num.."c¸i"
+		local szMsg = GetName().."l·nh°ï»áÉıcÊp½±Àø: Vâ ThÇn Ên"..num.."c¸i"
 		Msg2Tong(nTongID, szMsg)
 		TONG_ApplyAddEventRecord(nTongID, szMsg)		
 	elseif nWhich == 3 then
@@ -569,7 +569,7 @@ function LUP_GivePrice_OK(nWhich, num)
 				RemoveItemByIndex(idx)
 			end
 		end
-		local szMsg = GetName().."NhËn phÇn th­ëng th¨ng cÊp bang héi: qu¶ Huy Hoµng cao cÊp"..num.."c¸i"
+		local szMsg = GetName().."l·nh°ï»áÉıcÊp½±Àø: »Ô»Í¹û¸ßcÊp cÊp"..num.."c¸i"
 		Msg2Tong(nTongID, szMsg)
 		TONG_ApplyAddEventRecord(nTongID, szMsg)
 	end	

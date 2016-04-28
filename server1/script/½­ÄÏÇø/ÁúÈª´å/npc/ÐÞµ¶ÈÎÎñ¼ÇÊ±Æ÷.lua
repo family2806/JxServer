@@ -4,6 +4,6 @@
 function OnTimer()
 	StopTimer()
 	Msg2Player("B¶o ®ao ®· söa xong råi! ")
-	AddNote("B¶o ®ao ®· söa xong råi! Thî rÌn ®ang ®îi b¹n ®Õn nhËn! ")
+	AddNote("B¶o ®ao ®· söa xong råi! Ìú½³ÕıÔÚµÈÄãÈ¥ÄÃ! ")
 	SetTask(19, 6)
 end;

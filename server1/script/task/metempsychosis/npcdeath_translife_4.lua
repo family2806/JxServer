@@ -51,5 +51,5 @@ function giveAward(nMapId, nNpcId)
 		Msg2Player("Hµnh trang cña ng­¬i ®· ®Çy, xin h·y s¾p xÕp l¹i!")
 		return 
 	end
-	tbAwardTemplet:GiveAwardByList(%tbAward[nMapId], format("Tiªu diÖt %d nhËn ®­îc TÝch LÞch §¬n",nNpcId), 1)
+	tbAwardTemplet:GiveAwardByList(%tbAward[nMapId], format("ÏûÃð %d »ñµÃTÝch LÞch ®¬n",nNpcId), 1)
 end

@@ -53,7 +53,7 @@ function UNBIND_ITEM(itemIdx)
 		Say("VËt phÈm nµy ®ang ë tr¹ng th¸i më khãa b¶o hiÓm, kh«ng cÇn ph¶i më khãa n÷a!", 0)
 	elseif nBindState == -1 then
 		Say("Sau khi nhÊp nót 'Th¸o' ®Ó më khãa b¶o hiÓm, cÇn ph¶i ®îi <color=green>168 giê<color> sau th× khãa míi cã thÓ hoµn toµn ®­îc më.", 
-			2, "Ta ®ång ı më khãa b¶o hiÓm"..szFunStep2, "§Ó ta xem l¹i/cancel")
+			2, "ÎÒ§ång ı¿ª±£ÏÕËø"..szFunStep2, "§Ó ta xem l¹i/cancel")
 	else
 		Say("VËt phÈm nµy ®­îc khãa b¶o hiÓm vÜnh viÔn, kh«ng thÓ më khãa!", 0)
 	end

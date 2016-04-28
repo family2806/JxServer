@@ -26,7 +26,7 @@ function main()
 						GetLevel(), GetLastFactionNumber()));
 			return 0;
 		else
-			Msg2Player("§· häc <B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn> råi, chØ cÇn häc thªm <B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> lµ cã thÓ c«ng thµnh danh to¹i ®­îc råi.");
+			Msg2Player("ÒÑÑ§<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn> ÁË£¬Ö»ÄÜÔÙÑ§<B¾c §Èu Tr­êng Sinh ThuËt - T©m Ph¸p Thiªn> ¾ÍÄÜ¹¦³ÉÃû¾ÍÁË.");
 			return 1;
 		end
 	

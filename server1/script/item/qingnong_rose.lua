@@ -17,7 +17,7 @@ if (gb_GetModule("LÔ vËt t×nh nh©n") == 1) then
 		if (GetTask(TSK_VALENTINE) == 99) then
 			Msg2Player("<#> B¹n sö dông mét ®ãa hoa hång t×nh ı nhËn ®­îc 100 v¹n ®iÓm kinh nghiÖm, t¨ng ®«i kinh nghiÖm + 20 ®iÓm may m¾n trong nöa giê ")
 		else
-			Msg2Player("<#> B¹n ®· sö dông mét ®ãa hoa hång t×nh ı nhËn ®­îc 100 v¹n ®iÓm kinh nghiÖm, ®ång thêi néi trong nöa giê t¨ng ®«i ®iÓm kinh nghiÖm + 20 ®iÓm may m¾n. B¹n cßn cã thÓ sö dông"..(99 - GetTask(TSK_VALENTINE)).."®ãa hoa hång t×nh ı.")
+			Msg2Player("<#> B¹n sö dông mét ®ãa hoa hång t×nh ı nhËn ®­îc 100 v¹n ®iÓm kinh nghiÖm, t¨ng ®«i kinh nghiÖm + 20 ®iÓm may m¾n trong nöa giê Äú»¹¿ÉÒÔÊ¹ÓÃ"..(99 - GetTask(TSK_VALENTINE)).."®ãa hoa hång t×nh ı.")
 		end
 		return
 	else

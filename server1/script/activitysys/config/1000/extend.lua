@@ -32,29 +32,29 @@ local tbGiveDaisy_AdditionalAward = {
 	[1000] = {szName = "ßi”m kinh nghi÷m", nExp=10000000},
 }
 local tbUseGourd_AdditionalAward = {
-	[50] = {szName = "ßi”m kinh nghi÷m", nExp=3000000},
-	[100] = {szName = "ßi”m kinh nghi÷m", nExp=6000000},
-	[200] = {szName = "ßi”m kinh nghi÷m", nExp=8000000},
-	[300] = {szName = "ßi”m kinh nghi÷m", nExp=10000000},
-	[400] = {szName = "ßi”m kinh nghi÷m", nExp=12000000},
-	[500] = {szName = "ßi”m kinh nghi÷m", nExp=14000000},
-	[600] = {szName = "ßi”m kinh nghi÷m", nExp=16000000},
-	[700] = {szName = "ßi”m kinh nghi÷m", nExp=18000000},
-	[800] = {szName = "ßi”m kinh nghi÷m", nExp=20000000},
-	[900] = {szName = "ßi”m kinh nghi÷m", nExp=25000000},
-	[1000] = {szName = "ßi”m kinh nghi÷m", nExp=30000000},
+	[50] = {szName = "ßißi”m kinh nghi÷m", nExp=3000000},
+	[100] = {szName = "ßißi”m kinh nghi÷m", nExp=6000000},
+	[200] = {szName = "ßißi”m kinh nghi÷m", nExp=8000000},
+	[300] = {szName = "ßißi”m kinh nghi÷m", nExp=10000000},
+	[400] = {szName = "ßißi”m kinh nghi÷m", nExp=12000000},
+	[500] = {szName = "ßißi”m kinh nghi÷m", nExp=14000000},
+	[600] = {szName = "ßißi”m kinh nghi÷m", nExp=16000000},
+	[700] = {szName = "ßißi”m kinh nghi÷m", nExp=18000000},
+	[800] = {szName = "ßißi”m kinh nghi÷m", nExp=20000000},
+	[900] = {szName = "ßißi”m kinh nghi÷m", nExp=25000000},
+	[1000] = {szName = "ßißi”m kinh nghi÷m", nExp=30000000},
 }
 local tbUseWine_ExpAward = {
-	[1] = {szName = "ßi”m kinh nghi÷m", nExp=2000000},
-	[2] = {szName = "ßi”m kinh nghi÷m", nExp=3000000},
-	[3] = {szName = "ßi”m kinh nghi÷m", nExp=4000000},
-	[4] = {szName = "ßi”m kinh nghi÷m", nExp=5000000},
-	[5] = {szName = "ßi”m kinh nghi÷m", nExp=6000000},
-	[6] = {szName = "ßi”m kinh nghi÷m", nExp=6000000},
-	[7] = {szName = "ßi”m kinh nghi÷m", nExp=7000000},
-	[8] = {szName = "ßi”m kinh nghi÷m", nExp=8000000},
+	[1] = {szName = "ßißi”m kinh nghi÷m", nExp=2000000},
+	[2] = {szName = "ßißi”m kinh nghi÷m", nExp=3000000},
+	[3] = {szName = "ßißi”m kinh nghi÷m", nExp=4000000},
+	[4] = {szName = "ßißi”m kinh nghi÷m", nExp=5000000},
+	[5] = {szName = "ßißi”m kinh nghi÷m", nExp=6000000},
+	[6] = {szName = "ßißi”m kinh nghi÷m", nExp=6000000},
+	[7] = {szName = "ßißi”m kinh nghi÷m", nExp=7000000},
+	[8] = {szName = "ßißi”m kinh nghi÷m", nExp=8000000},
 	[9] = {szName = "ßi”m kinh nghi÷m", nExp=9000000},
-	[10] = {szName = "ßi”m kinh nghi÷m", nExp=10000000},
+	[10] = {szName = "ßißi”m kinh nghi÷m", nExp=10000000},
 }
 
 local tbUseWine_ItemAward = {
@@ -108,7 +108,7 @@ local tbUseGourd_ItemAward = {
 	{szName="Phi phong c p Ph∏ Qu©n ( dﬁch chuy”n t¯c thÍi )",tbProp={0,3467},nCount=1,nRate=0.2,nQuality = 1,nExpiredTime=20160,},
 	{szName="Phi phong Ngao tuy’t (Dﬁch chuy”n t¯c thÍi)",tbProp={0,3468},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=20160,},
 	{szName="Phi phong Ngπo Tuy’t (X∏c su t h„a gi∂i s∏t th≠¨ng)",tbProp={0,3469},nCount=1,nRate=0.1,nQuality = 1,nExpiredTime=20160,},
-	{szName = "ßi”m kinh nghi÷m", nExp=7000000, nRate = 25},
+	{szName = "ßißi”m kinh nghi÷m", nExp=7000000, nRate = 25},
 }
 
 function pActivity:VngCheckWeeklyTaskCount(nTaskID, nValue, strComparison, strFailMessage)
@@ -138,7 +138,7 @@ function pActivity:VngGiveDaisyLimit(nCount)
 end
 
 function pActivity:VngGiveDaisy(nCount)
-	local tbAward = {szName = "ßi”m kinh nghi÷m", nExp=1000000}
+	local tbAward = {szName = "ßißi”m kinh nghi÷m", nExp=1000000}
 	for i = 1, nCount do
 		%tbVNG_BitTask_Lib:addTask(%tbGiveDaisyTaskInfo, 1)
 		tbAwardTemplet:Give(tbAward, 1, {"Event_MungPBM", "NopHoaCucVang"})
@@ -161,7 +161,7 @@ function pActivity:VngGourdUseLimit()
 end
 
 function pActivity:VngUseGourd()
-	local tbAward = {szName = "ßi”m kinh nghi÷m", nExp=7000000}
+	local tbAward = {szName = "ßißi”m kinh nghi÷m", nExp=7000000}
 	%tbVNG_BitTask_Lib:addTask(%tbGourdUseTaskInfo, 1)	
 	tbAwardTemplet:Give(tbAward, 1, {"Event_MungPBM", "SudungvatphamBinhHoLoPhongVanNhanPhanThuong"})
 	--Ω±¿¯item

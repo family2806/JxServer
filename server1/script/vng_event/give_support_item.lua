@@ -130,14 +130,14 @@ function ConfirmSupportItem(nCount)
 		if (itemgenre == 6 and detailtype == 1 and parttype == 1781) then
 			local nItemValue= GetItemParam(nItemIndex, 1)
 			if nItemValue < 60 then
-				Talk(1, "", "<color=yellow>CÈm nang thay ®æi trêi ®Êt<color> ph¶i cßn ®ñ gi¸ trŞ lµ 60 míi ®­îc chÊp nhËn!");
+				Talk(1, "", "<color=yellow>CÈm nang thay ®æi trêi ®Êt<color> ĞèÒªÊ£ÓàµÄ¼ÛÖµÎª60²ÅÄÜ½ÓÊÜ!");
 				return
 			end
 		end
 		if (itemgenre == 6 and detailtype == 1 and parttype == 2527) then
 			local nItemValue= GetItemParam(nItemIndex, 1)
 			if nItemValue ~= 0 then
-				Talk(1, "", "<color=yellow>Håi thiªn t¸i t¹o lÔ bao <color>ph¶i cßn ®ñ gi¸ trŞ lµ 60 míi ®­îc chÊp nhËn!");
+				Talk(1, "", "<color=yellow>Håi thiªn t¸i t¹o lÔ bao <color>ĞèÒªÊ£ÓàµÄ¼ÛÖµÎª60²ÅÄÜ½ÓÊÜ!");
 				return
 			end
 		end
@@ -235,42 +235,42 @@ function GiveSupportItem:ProcessGiveItem(nCount)
 	if (nCount_2 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_2)
 		SetTask(self.TASK_COUNT_ITEM_2, nTotal + nCount_2)
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_2 .. " <color>vËt phÈm lo¹i 2 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_2 .. " <color>ÎïÆ·Àà±ğ2 - ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_2 .. " lo¹i 2 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_3 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_3)
 		SetTask(self.TASK_COUNT_ITEM_3, nTotal + nCount_3)
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_3 .. " <color>vËt phÈm lo¹i 3 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_3 .. " <color>ÎïÆ·Àà±ğ3 - ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_3 .. " lo¹i 3 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_4 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_4)
 		SetTask(self.TASK_COUNT_ITEM_4, nTotal + nCount_4)		
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_4 .. " <color>vËt phÈm lo¹i 4 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_4 .. " <color>ÎïÆ·Àà±ğ4 - ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_4 .. " lo¹i 4 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_5 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_5)
 		SetTask(self.TASK_COUNT_ITEM_5, nTotal + nCount_5)
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_5 .. " <color>vËt phÈm lo¹i 5 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_5 .. " <color>5ÀàÎïÆ·- ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_5 .. " lo¹i 5 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_6 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_6)
 		SetTask(self.TASK_COUNT_ITEM_6, nTotal + nCount_6)
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_6 .. " <color>vËt phÈm lo¹i 6 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_6 .. " <color>6ÀàÎïÆ· - ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_6 .. " lo¹i 6 - Tæng sè: " .. nTotalAll)
 	end
 	
 	if (nCount_7 > 0) then
 		local nTotal =  GetTask(self.TASK_COUNT_ITEM_7)
 		SetTask(self.TASK_COUNT_ITEM_7, nTotal + nCount_7)		
-		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_7 .. " <color>vËt phÈm lo¹i 7 - Tæng sè vËt phÈm ®· nép lµ: <color=yellow>" .. nTotalAll .."<color>")
+		Msg2Player("§¹i hiÖp ®· nép <color=yellow>" .. nCount_7 .. " <color>7ÀàÎïÆ· - ÒÑNép ×ÜÎïÆ·ÊıÎª<color=yellow>" .. nTotalAll .."<color>")
 		WriteLog(date("%Y%m%d %H%M%S").."\t".."Giao nép vËt phÈm hæ trî Tèng Kim"..GetAccount().."\t"..GetName().."\t".."Nép " .. nCount_7 .. " lo¹i 7 - Tæng sè: " .. nTotalAll)
 	end
 end

@@ -44,11 +44,11 @@ function main( nItemIdx )
 	end
 	
 	if( IsCharged() == 0) then
-		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i cÊp 90 trë lªn míi cã thÓ sö dông.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ sö dông.",0);
 		return 1; 
 	end
 	if( GetLevel() <90 ) then
-		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i cÊp 90 trë lªn míi cã thÓ sö dông.",0);
+		Say("ThËt ®¸ng tiÕc, chØ cã ng­êi ch¬i ®· n¹p thÎ míi cã thÓ sö dông.",0);
 		return 1;
 	end
 	nDate = tonumber(GetLocalDate("%d"));

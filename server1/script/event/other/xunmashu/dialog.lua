@@ -241,7 +241,7 @@ function tbXunMaShu0903:DialogMain_Box()
 	
 	local tbSay = self.Compose_Box:MakeOptByProductName("T¹i h¹ muèn tinh luyÖn thµnh ")
 	tinsert(tbSay, 1, szTitle)
-	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel")
+	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 	CreateTaskSay(tbSay)
 end
 
@@ -264,12 +264,12 @@ function tbXunMaShu0903:DialogMain_Horse()
 --	if not self.Compose_Horse then
 --		self.Compose_Horse = tbComposeListClass:new("tbXunMaShu0903_ComposeHorse", %tbFormulaList_Horse)
 --	end
---	local szTitle = "<dec><npc>".."ÄãÏëÑ±ÂíÂğ£¿"
+--	local szTitle = "<dec><npc>".."ÄãÏëThuÇn M·Âğ£¿"
 --	
 --	
 --	local tbSay = self.Compose_Horse:MakeOptByProductName("ÑµÁ·")
 --	tinsert(tbSay, 1, szTitle)
---	tinsert(tbSay, "½áÊø¶Ô»°/OnCancel")
+--	tinsert(tbSay, "KÕt thóc ®èi tho¹i/OnCancel")
 --	CreateTaskSay(tbSay)
 end
 
@@ -291,7 +291,7 @@ function tbXunMaShu0903:ExchangeHorse()
 	
 	
 	local szTitle = "ThuÇn M·"
-	local szMaterial = "1 Phi V©n vµ 1 B¾c §Èu ThuÇn M· ThuËt"
+	local szMaterial = "1Phi V©nºÍ1B¾c §Èu ThuÇn M· ThuËt"
 	GiveItemUI(szTitle, szMaterial, "tbXunMaShu0903__ProcessGiveUI", "OnCancel")
 end
 

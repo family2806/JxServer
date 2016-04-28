@@ -79,7 +79,7 @@ function zhongqiu0808_ComposeClass:Compose(tbMaterial, nMoney, Awardfun,...)
 	end
 
 	if self:ConsumeMaterial(tbMaterial) ~= 1 then
-		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
+		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖvËt phÈm ¶ªÊ§¡£",0)
 		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end

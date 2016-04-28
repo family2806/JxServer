@@ -31,7 +31,7 @@ WEEK_CARD_LOTTERY_ID_COUNT = 5;			-- ÖÜ¿¨»»È¡µÄ²ÊÆ±°üº¬µÄºÅÂëÊý
 --							{ { " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 10, 1 }, }
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---							" tiªn th¶o lé 2 c¸ ",
+--							" tiªn th¶o lé 2¸ö",
 --							{ { " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 }, }
 --						 };
 --	Thø 2ÆÚ £¨2004.11.28 - 2004.12.05£©--------------------------------------------------------
@@ -61,7 +61,7 @@ WEEK_CARD_LOTTERY_ID_COUNT = 5;			-- ÖÜ¿¨»»È¡µÄ²ÊÆ±°üº¬µÄºÅÂëÊý
 --							}			
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---							" tiªn th¶o lé 2 c¸ ",
+--							" tiªn th¶o lé 2¸ö",
 --							{
 --								{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
 --							}
@@ -97,7 +97,7 @@ WEEK_CARD_LOTTERY_ID_COUNT = 5;			-- ÖÜ¿¨»»È¡µÄ²ÊÆ±°üº¬µÄºÅÂëÊý
 --							}			
 --						 };
 --	OTHER_PRIZE_AWARD2 = {
---								" tiªn th¶o lé 2 c¸ ",
+--								" tiªn th¶o lé 2¸ö",
 --							{
 --								{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 2, 1 },
 --							}
@@ -132,7 +132,7 @@ WEEK_CARD_LOTTERY_ID_COUNT = 5;			-- ÖÜ¿¨»»È¡µÄ²ÊÆ±°üº¬µÄºÅÂëÊý
 --						}			
 --					 };
 --OTHER_PRIZE_AWARD2 = {
---						" tiªn th¶o lé 3 c¸ ",
+--						" tiªn th¶o lé 3¸ö",
 --						{
 --							{ " tiªn th¶o lé ", { 6, 1, 71, 1, 0, 0, 0 }, 3, 1 },
 --						}
@@ -159,7 +159,7 @@ OTHER_PRIZE_AWARD1 = {
 						}			
 					 };
 OTHER_PRIZE_AWARD2 = {
-						" râ rµng c©u hoµn 1 c¸ ",
+						" râ rµng c©u hoµn 1¸ö",
 						{
 							{ " râ rµng c©u hoµn ", { 6, 1, 130, 1, 0, 0, 0 }, 1, 1 },
 						}
@@ -283,7 +283,7 @@ function onLotteryGold_Gain_Count( nLotteryCount )
 			end
 			Say( szSayContent, 0 );
 			
-			Msg2Player( "<> ngµi thu ®­îc "..(nMonthLotteryCount+nWeekLotteryCount).."<>ÕÅÐÒÔË²ÊÆ±" );
+			Msg2Player( "<>Äú»ñµÃÁË"..(nMonthLotteryCount+nWeekLotteryCount).."<>ÕÅÐÒÔË²ÊÆ±" );
 			WriteLog( format( "[%s] %s(%s) nhËn lÊy %d tê 10 d·y sè vÐ sè %d tê 5 d·y sè vÐ sè \r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nMonthLotteryCount, nWeekLotteryCount ) );
 		else
 			Say( " lÔ quan  may m¾n vÐ sè t¹m thêi kh«ng c¸ch nµo nhËn lÊy , xin hËu thö l¹i , c¸m ¬n . ", 0 );
@@ -346,9 +346,9 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for k = 1, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3] do
 							addAward( FIRST_PRIZE_AWARD[2][nRandAwardIdx][2] );
 						end
-						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) nhËn lÊy thø %d kú ®Ých nhÊt ®¼ng t­ëng phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3], FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<> ngµi thu ®­îc "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] );
-						AddGlobalNews( "<> ®Æc tin tøc tèt , "..GetName().."<> ë D­¬ng Ch©u ®Ých lÔ quan chç së nhËn lÊy ®Ých thø "..format("%03d", nLotteryIssueID).."<> kú may m¾n vÐ sè trung ph¶i nhÊt ®¼ng t­ëng , ®¹t ®­îc "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1]..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> mãn , ®Ó cho chóng ta trung t©m chóc phóc "..szHeOrShe.."<> . chóng ta mong ®îi sù tham dù cña ngµi , c¸m ¬n . ");
+						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) ÁìÈ¡ÁËThø %dÆÚµÄÒ»µÈ½±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, FIRST_PRIZE_AWARD[2][nRandAwardIdx][3], FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<>Äú»ñµÃÁË"..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1] );
+						AddGlobalNews( "<> ®Æc tin tøc tèt , "..GetName().."<#>ÔÚÑïÖÝµÄÀñ¹Ù´¦ËùÁìÈ¡µÄThø "..format("%03d", nLotteryIssueID).."<> kú may m¾n vÐ sè trung ph¶i nhÊt ®¼ng t­ëng , ®¹t ®­îc "..FIRST_PRIZE_AWARD[2][nRandAwardIdx][1]..FIRST_PRIZE_AWARD[2][nRandAwardIdx][3].."<> mãn , ®Ó cho chóng ta trung t©m chóc phóc "..szHeOrShe.."<> . chóng ta mong ®îi sù tham dù cña ngµi , c¸m ¬n . ");
 					end
 					for j = 1, nPrize2Count do
 						local aryProbability = {};
@@ -359,9 +359,9 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for k = 1, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3] do
 							addAward( SECOND_PRIZE_AWARD[2][nRandAwardIdx][2] );
 						end
-						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) nhËn lÊy thø %d kú ®Ých nhÞ ®¼ng t­ëng phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<> ngµi thu ®­îc "..SECOND_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] );
-						AddGlobalNews( format( "§Æc tin tøc tèt , %s ë D­¬ng Ch©u ®Ých lÔ quan chç së nhËn lÊy ®Ých thø %03d kú may m¾n vÐ sè trung ph¶i nhÞ ®¼ng t­ëng , ®¹t ®­îc %s%d c¸ , ®Ó cho chóng ta trung t©m chóc phóc %s . chóng ta mong ®îi sù tham dù cña ngµi , c¸m ¬n . ", GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][1], SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], szHeOrShe ) );
+						Lottery_WriteLog( LOTTERY_GOLD_TYPENAME, format( "[%s] %s(%s) ÁìÈ¡ÁËThø %dÆÚµÄ¶þµÈ½±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<>Äú»ñµÃÁË"..SECOND_PRIZE_AWARD[2][nRandAwardIdx][3].."<> c¸ "..SECOND_PRIZE_AWARD[2][nRandAwardIdx][1] );
+						AddGlobalNews( format( "ÌØºÃÏûÏ¢£¬%sÔÚÑïÖÝµÄÀñ¹Ù´¦ËùÁìÈ¡µÄThø %03dÆÚÐÒÔË²ÊÆ±ÖÐµÃ¶þµÈ½±£¬»ñµÃ%s%d¸ö£¬ÈÃÎÒÃÇÖÔÐÄ×£¸£%s¡£ÎÒÃÇÆÚ´ýÄúµÄ²ÎÓë£¬Ð»Ð»¡£", GetName(), nLotteryIssueID, SECOND_PRIZE_AWARD[2][nRandAwardIdx][1], SECOND_PRIZE_AWARD[2][nRandAwardIdx][3], szHeOrShe ) );
 					end
 					nPrize1TotalCount = nPrize1TotalCount + nPrize1Count;
 					nPrize2TotalCount = nPrize2TotalCount + nPrize2Count;
@@ -375,8 +375,8 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for j = 1, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3] do
 							addAward( OTHER_PRIZE_AWARD1[2][nRandAwardIdx][2] );
 						end
-						WriteLog( format( "[%s] %s(%s) nhËn lÊy thø %d kú ®Ých tam ®¼ng t­ëng ®¹i bé/vá phiÕu phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<> ngµi thu ®­îc "..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] );
+						WriteLog( format( "[%s] %s(%s) ÁìÈ¡ÁËThø %dÆÚµÄÈýµÈ½±´óÌ×Æ±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<>Äú»ñµÃÁË"..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD1[2][nRandAwardIdx][1] );
 					else
 						local aryProbability = {};
 						for k = 1, getn( OTHER_PRIZE_AWARD2[2] ) do
@@ -386,8 +386,8 @@ function onLotteryGold_Prize_Confirm( nCount )
 						for j = 1, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3] do
 							addAward( OTHER_PRIZE_AWARD2[2][nRandAwardIdx][2] );
 						end
-						WriteLog( format( "[%s] %s(%s) nhËn lÊy thø %d kú ®Ých tam ®¼ng t­ëng tiÓu bé/vá phiÕu phÇn th­ëng %d c¸ %s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] ) );
-						Msg2Player( "<> ngµi thu ®­îc "..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] );
+						WriteLog( format( "[%s] %s(%s) ÁìÈ¡ÁËThø %dÆÚµÄÈýµÈ½±Ð¡Ì×Æ±½±Æ· %d¸ö%s\r\n", date("%Y-%m-%d %H:%M:%S"), GetAccount(), GetName(), nLotteryIssueID, OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3], OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] ) );
+						Msg2Player( "<>Äú»ñµÃÁË"..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][3].."<> c¸ "..OTHER_PRIZE_AWARD2[2][nRandAwardIdx][1] );
 					end
 					nOtherPrizeTotalCount = nOtherPrizeTotalCount + 1;
 				end
@@ -438,12 +438,12 @@ function onLotteryGold_QueryPrize()
 				aryaryszPrize2ID[i] = " ( v« Ých ) ";
 			end
 		end
-		szResultPrize1 = "<> th­îng kú (<color=red> thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vÐ sè trung th¶i tin tøc \n";
+		szResultPrize1 = "<#>ÉÏÆÚ(<color=red>Thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vÐ sè trung th¶i tin tøc \n";
 		szResultPrize1 = szResultPrize1.."<><color=yellow> nhÊt ®¼ng t­ëng <color> may m¾n d·y sè \n<color=yellow>";
 		for i = 1, nPrize1Count do
 			szResultPrize1 = szResultPrize1..aryaryszPrize1ID[i].." ";
 		end
-		szResultPrize2 = "<> th­îng kú (<color=red> thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vÐ sè trung th¶i tin tøc \n";
+		szResultPrize2 = "<#>ÉÏÆÚ(<color=red>Thø "..format( "%03d", nPrizeIssueID ).."<><color>) kú may m¾n vÐ sè trung th¶i tin tøc \n";
 		szResultPrize2 = szResultPrize2.."<><color=yellow> nhÞ ®¼ng t­ëng <color> may m¾n d·y sè \n<color=yellow>";
 		for i = 1, nPrize2Count do
 			szResultPrize2 = szResultPrize2..aryaryszPrize2ID[i].." ";
@@ -487,7 +487,7 @@ function onLotteryGold_UpdateIssue()
 					aryaryszPrize2ID[i] = " ( v« Ých ) ";
 				end
 			end
-			local szNewsContent = "<> sè bªn ngoµi  sè bªn ngoµi  thø "..format( "%03d", nPrizeIssueID ).."<> kú may m¾n vÐ sè khai t­ëng n÷a/råi  nhÊt ®¼ng t­ëng may m¾n m· sè lµ ";
+			local szNewsContent = "<#>ºÅÍâ£¡ºÅÍâ£¡Thø "..format( "%03d", nPrizeIssueID ).."<> kú may m¾n vÐ sè khai t­ëng n÷a/råi  nhÊt ®¼ng t­ëng may m¾n m· sè lµ ";
 			for i = 1, nPrize1Count do
 				szNewsContent = szNewsContent..aryaryszPrize1ID[i].." ";
 			end

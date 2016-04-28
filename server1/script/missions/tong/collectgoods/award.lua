@@ -113,7 +113,7 @@ end;
 
 function collg_givecrystal()
 	local nIdx = random(1, 3);
-	local tab_Crystal = {{238, "Lam Thñy Tinh"}, {239, "Tö Thñy Tinh"}, {240, "Lôc Thñy Tinh"}};
+	local tab_Crystal = {{238, "À¶Thñy tinh"}, {239, "×ÏThñy tinh"}, {240, "ÂÌThñy tinh"}};
 	AddItem(4, tab_Crystal[nIdx][1], 0, 0, 0, 0, 0);
 	Msg2Player("B¹n nhËn ®­îc <color=yellow>"..tab_Crystal[nIdx][2].."<color>.");
 end;
@@ -141,7 +141,7 @@ function collg_giveTaskBook()
 	SetItemMagicLevel(nRandomItemIndex, 1, nRandomTaskID);
 	-- Í¬²½ÎïÆ·Ä§·¨ÊôĞÔ
 	SyncItem(nRandomItemIndex);	
-	Msg2Player("B¹n nhËn ®­îc mét <color=green>quyÓn nhiÖm vô<color>!");
+	Msg2Player("B¹n nhËn ®­îc mét <color=green>ÈÎÎñ²ácolor>!");
 	WriteTaskLog("NhËn ®­îc 1 mËt tŞch nhiÖm vô, m· sè lµ:"..nRandomTaskID);
 	return nRandomTaskID;
 end;

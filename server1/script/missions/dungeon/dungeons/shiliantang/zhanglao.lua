@@ -37,7 +37,7 @@ function main()
 		tbDailog:AddOptEntry("Ta ®Õn nhËn phÇn th­ëng",getAward);
 	end
 
-	tbDailog:AddOptEntry("Ta muèn rêi khái thİ luyÖn ®­êng",leave);
+	tbDailog:AddOptEntry("ÎÒÏëÀë¿ªThİ LuyÖn §­êng",leave);
 	
 	--µ¯³ö¶Ô»°¿ò
 	tbDailog:Show()
@@ -71,7 +71,7 @@ function getCallItem()
 	end
 	
 	if (PlayerFunLib:CheckFreeBagCell(1, "default") == 1) then
-		PlayerFunLib:GetItem("return {tbProp={6,1,2315,1,0,0},}",1,"NhËn [Thİ LuyÖn §­êng triÖu tËp phï]")
+		PlayerFunLib:GetItem("return {tbProp={6,1,2315,1,0,0},}",1,"ÁìÈ¡Thİ LuyÖn §­êngÕÙ»½·û")
 	end
 end
 
@@ -85,7 +85,7 @@ end
 function queryMedalCount()
 	local tbDungeon = tbDungeonManager:GetMineDungeon("Thİ LuyÖn §­êng", 1);
 	if (tbDungeon ~= nil) then
-		Talk(1,"",format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbDungeon:GetMedal()));
+		Talk(1,"",format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> Thİ LuyÖn §­êngÑ«ÕÂ.", tbDungeon:GetMedal()));
 	end
 end
 

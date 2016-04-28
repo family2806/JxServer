@@ -34,7 +34,7 @@ function main()
 			szKey2 = szKey
 		else
 			szKey = "®ît nµy"
-			szKey2 = "PhÇn th­ëng ®ît nµy"
+			szKey2 = "®ît nµy½±Àø"
 		end
 		
 		

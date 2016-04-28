@@ -15,7 +15,7 @@ function main(sel)
 			AddNote("GÆp TiÕt TiÓu muéi (383, 315) t×m ®­îc Linh X¹ H­¬ng Nang, nh­ng ph¶i lÊy Ng©n Tr©m ®æi. ")
 			Msg2Player("TiÕt TiÓu muéi xin ®Ò nghÞ lÊy Ng©n Tr©m ®Ó ®æi lÊy Linh X¹ H­¬ng Nang ")
 		elseif ((UTask_emsub01 == 1) and (HaveItem(63) == 1)) then
-			Say("Tr©m b¹c nµy ®Ñp qu¸! H­¬ng nang nµy ®æi cho tû ®©y!", 1, "NhËn ®­îc Linh X¹ H­¬ng Nang tõ chç TiÕt TiÓu muéi /get")
+			Say("Tr©m b¹c nµy ®Ñp qu¸! H­¬ng nang nµy ®æi cho tû ®©y!", 1, "T×m ®­îc Linh X¹ H­¬ng Nang /get")
 			DelItem(63)
 			AddEventItem(166)
 			SetTask(29,SetByte(UTask_emsub01,1,10))

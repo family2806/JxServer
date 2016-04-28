@@ -107,7 +107,7 @@ function OnCheckTaskStart(taskName)
 			--ÈÎÎñÊÇ·ñ¿ÉÒÔÖØ¸´¿ªÊ¼
 			if strType==Condition.CanRestart then
 				if tonumber(strDesc)==1 then
-					CDebug:MessageOut(taskName.." §iÒu kiÖn b¾t ®Çu cña nhiÖm vô lµ cã thÓ b¾t ®Çu l¹i, th«ng qua");
+					CDebug:MessageOut(taskName.." ÈÎÎñµÄÆğÊ¼Ìõ¼şÖĞÓĞ¿ÉÒÔÖØ¸´B¾t ®Çu, th«ng qua");
 					SetTaskStatus(taskName, 0);
 					CloseTask(taskName);
 					nCheck = nCheck + 1;
@@ -287,7 +287,7 @@ function OnTaskStart(taskName)
 		-- Èç¹ûÈÎÎñ¿ªÊ¼ºóµÄ¶Ô»°²»Îª¿ÕµÄ»°ÔòËµÒ»¶Î»°
 		if TaskTalk(taskName, 1, 2)~="" then
 			CreateTaskSay({TaskTalk(taskName, 1, 2),
-						   "KÕt thóc ®èi tho¹i/OnTaskExit"}
+						   "KÕt thóc ®èi tho¹i/OnTaskWait"}
 						  );
 		end;
 		
@@ -448,7 +448,7 @@ function OnTaskSay_Call(taskName, nState)
 			-- Èç¹ûÈÎÎñ¿ªÊ¼¶Ô»°Ã»ÓĞµÄ»°Ö±½Ó¿ªÊ¼
 			if strTalk=="" then
 				CreateTaskSay({TaskTalk(taskName, 1, 2),
-							  "§ãng/OnTaskExit"}
+							  "§ãng/OnTaskWait"}
 					          );
 				SelectTaskStart(TaskNo(taskName));
 				return
@@ -457,13 +457,13 @@ function OnTaskSay_Call(taskName, nState)
 			if strInfo=="" then
 				CreateTaskSay({strTalk,
 							  "TiÕp nhËn nhiÖm vô /#SelectTaskStart("..TaskNo(taskName)..")",
-							  "Kh«ng tiÕp nhËn/#OnTaskExit("..TaskNo(taskName)..")"}
+							  "Kh«ng tiÕp nhËn/#OnTaskWait("..TaskNo(taskName)..")"}
 							  );
 			else
 				CreateTaskSay({strTalk,
 								"TiÕp nhËn nhiÖm vô /#SelectTaskStart("..TaskNo(taskName)..")",
 								"Xem thuyÕt minh nhiÖm vô /#ShowTaskInfo("..TaskNo(taskName)..")",
-								"Kh«ng tiÕp nhËn/#OnTaskExit("..TaskNo(taskName)..")"}
+								"Kh«ng tiÕp nhËn/#OnTaskWait("..TaskNo(taskName)..")"}
 								);
 			end;
 			return
@@ -480,7 +480,7 @@ function OnTaskSay_Call(taskName, nState)
 					
 					aryTaskSay = {strTalk,
 								   "Hoµn thµnh nhiÖm vô /#SelectTaskFinish("..TaskNo(taskName)..")",
-								   "VÉn ch­a hoµn thµnh/OnTaskExit"};
+								   "VÉn ch­a hoµn thµnh/OnTaskWait"};
 								   
 					if CheckTaskCanCancel(taskName)==1 then
 						tinsert(aryTaskSay, getn(aryTaskSay), "Hñy bá nhiÖm vô/#CancelTaskConfirm("..TaskNo(taskName)..")");
@@ -501,7 +501,7 @@ function OnTaskSay_Call(taskName, nState)
 					
 					aryTaskSay = {strTalk,
 								  "Hoµn thµnh nhiÖm vô /OnShowGiveUI",
-								  "VÉn ch­a hoµn thµnh/OnTaskExit"};
+								  "VÉn ch­a hoµn thµnh/OnTaskWait"};
 
 					if CheckTaskCanCancel(taskName)==1 then
 						tinsert(aryTaskSay, getn(aryTaskSay), "Hñy bá nhiÖm vô/#CancelTaskConfirm("..TaskNo(taskName)..")");

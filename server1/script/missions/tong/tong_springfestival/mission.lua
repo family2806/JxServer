@@ -139,7 +139,7 @@ function festival_broadcast(tabMsg, nMsgCount, tabPlayer)
 		if (GetTask(TK_GROUPID) > SF_SMALLMAPCOUNT) then
     		Msg2Player("B¹n lµ ng­êi thø <color=yellow>"..i.."<color> nh©n sü tham gia b¾t niªn thó cã thÓ ®Õn <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
     	else
-    	    Msg2Player("B¹n lµ ng­êi ®¸nh tróng Qu¸i thó <color=yellow>"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
+    	    Msg2Player("B¹n lµ ng­êi thø <color=yellow>¸ö´òÖÐ¹ÖÊÞµÄÈË"..i.."<color>, cã thÓ ®Õn gÆp <color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color> ®Ó nhËn th­ëng!");
     	end;
 	end;
 end;

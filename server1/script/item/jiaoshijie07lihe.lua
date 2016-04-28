@@ -15,10 +15,10 @@ function main()
 		local nItemIndex=TeacherDay200711_RandomGetOne(tbAwardItemPic,1,getn(tbAwardItemPic));
 		AddItem(tbAwardItemPic[nItemIndex]["nGID"],tbAwardItemPic[nItemIndex]["nDID"],tbAwardItemPic[nItemIndex]["nPID"],1,0,0);
 		Msg2Player(format("NhËn ®­îc %d %s",1,tbAwardItemPic[nItemIndex]["szName"]))
-		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.","Ho¹t ®éng Nhµ gi¸o ViÖt Nam 2007",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),1,tbAwardItemPic[nItemIndex]["szName"] ));
+		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.","2007ÄêÔ½ÄÏ½Ì“S­”½Ú»î¶¯",GetLocalDate("%Y-%m-%d %H:%M"),GetName(), GetAccount(),1,tbAwardItemPic[nItemIndex]["szName"] ));
 		return 0;
 	else
-		Say("Ho¹t ®éng Nhµ gi¸o ViÖt Nam ®· kÕt thóc",0)
+		Say("Ô½ÄÏ½Ì“S­”½Ú»î¶¯ÒÑ½áÊø",0)
 		return 0;
 	end
 end

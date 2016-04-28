@@ -441,7 +441,7 @@ end
 -- 获得一个位置相对于玩家位置的大体方位
 function getDirection(posOrigin, posTarget)
 	
-	local tbStr = {"T﹜ nam ", "Nam ", "Йng nam ", "Йng ", "Йng b綾 ", "B綾 ", "T﹜ b綾 ", "T﹜ "};
+	local tbStr = {"T﹜ nam ", "Nam ", "Йng Nam ", "Йng ", "Йng B綾 ", "B綾 ", "T﹜ B綾 ", "T﹜ "};
 
 	
 	local nX	= posOrigin[2] - posTarget[2];

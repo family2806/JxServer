@@ -209,7 +209,7 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	{
 		{"AddDialogOpt",	{"Hîp thµnh Hoa Hång Tam S¾c",13} },
 		{"AddDialogOpt",	{"Hîp thµnh Hoa Hång Tø S¾c",14} },
-		{"AddDialogOpt",	{"GhepGioHoaHongVinhCuu",15} },
+		{"AddDialogOpt",	{"Hîp thµnh Giá Hoa Hång VÜnh Cöu",15} },
 		{"AddDialogOpt",	{"§æi Cá Xanh",20} },
 		{"AddDialogOpt",	{"NhËn th­ëng trùc tuyÕn",21} },
 	},
@@ -277,7 +277,7 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_CORBEIL,1,EVENT_LOG_TITLE,"GhepGioHoaHongVinhCuu"} },
+		{"PlayerFunLib:GetItem",	{ITEM_CORBEIL,1,EVENT_LOG_TITLE,"Hîp thµnh Giá Hoa Hång VÜnh Cöu"} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -527,7 +527,7 @@ tbConfig[28] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Mua Giá §ùng Hoa",29} },
+		{"AddDialogOpt",	{"ÂòGiá §ùng Hoa",29} },
 	},
 }
 tbConfig[29] = --Ò»¸öÏ¸½Ú

@@ -23,7 +23,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 					},
 					pCompos = nil;
 			},
-		["Hîp thµnh Bã Hoa Hång"] = 
+		["ºÏ³ÉBã Hoa Hång"] = 
 			{
 				tbFormula = 
 					{
@@ -40,7 +40,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 					},
 					pCompos = nil;
 			},
-		["TÆng Bã Hoa Hång"] = 
+		["ËÍ Bã Hoa Hång"] = 
 			{
 				tbFormula = 
 					{
@@ -53,7 +53,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 								{szName = "Bã Hoa Hång", tbProp = {6,1,30102,1,0,0}, nCount = 1},
 							},
 						pProductFun = function (self, nItemCount)
-								%tbVNGWD2011_NpcHead:ExpAward(nItemCount, 5000000, "[VNG][8thang3][TÆng Bã Hoa Hång]")
+								%tbVNGWD2011_NpcHead:ExpAward(nItemCount, 5000000, "[VNG][8thang3][ËÍ Bã Hoa Hång]")
 							end,
 						pLimitFun = function (self, nItemCount) 
 							return %tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nItemCount)
@@ -95,7 +95,7 @@ tbVNGWD2011_NpcHead.tbCompose =
 					},				
 					pCompos = nil;
 			},
-			["Mua D©y Cét Hoa"] = 
+			["Âò D©y Cét Hoa"] = 
 			{
 				tbFormula = 
 					{
@@ -154,7 +154,7 @@ function tbVNGWD2011_NpcHead:GetExpBM(nExpAward)
 	
 	PlayerFunLib:AddTaskDaily(2750, nExpAward/1000000)
 	local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=nExpAward}
-	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][TÆng b¸nh m×]")
+	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][ËÍB¸nh M×]")
 end
 
 function tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nCount)
@@ -171,13 +171,13 @@ function tbVNGWD2011_NpcHead:CheckGivingRoseLimit(nCount)
 	end
 	local nNextTskVal = tbVNG_BitTask_Lib:getBitTask(tbTaskInfo) + nCount*5
 	if ( nNextTskVal > tbTaskInfo.nMaxValue) then
-		Msg2Player(format("Sè l­îng v­ît qu¸ giíi h¹n, §¹i hiÖp chØ cã thÓ tÆng <color=yellow>%d <color>Bã Hoa Hång n÷a.", (tbTaskInfo.nMaxValue - tbVNG_BitTask_Lib:getBitTask(tbTaskInfo))/5))
+		Msg2Player(format("ÊıÁ¿³¬¹ıÉÏÏŞ£¬´óÏÀÖ»ÄÜËÍ<color=yellow>%d <color>Bã Hoa Hång.", (tbTaskInfo.nMaxValue - tbVNG_BitTask_Lib:getBitTask(tbTaskInfo))/5))
 		return 0
 	end
 	return 1	
 end
 
---TÆng Bã Hoa Hång
+--ËÍ Bã Hoa Hång
 function tbVNGWD2011_NpcHead:ExpAward(nCount, nExp, strLog)
 	local tbTaskInfo =
 					{

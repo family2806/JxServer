@@ -45,7 +45,7 @@ function messenger_main()
 		Describe(DescLink_XiaoZhen..":"..name..", cã ph¶i ng­¬i ®· th«ng qua kh¶o nghiÖm cña Thiªn B¶o Khè, cã cÇn ra khái ¶i kh«ng?"
 			,3
 			,"§óng! Ta muèn rêi khái/messenger_comeback"
-			,"Ta ch­a hoµn thµnh kh¶o nghiÖm, ta muèn ®i ra mét chót/messenger_icantdo"
+			,"ÎÒ»¹Î´Íê³É¿¼Ñé£¬Ta muèn ®i raÒ»»á/messenger_icantdo"
 			,"Kh«ng ph¶i! Ta cßn muèn thö tiÕp/no")	
 		
 --		if ( Uworld1206 == 0 ) then

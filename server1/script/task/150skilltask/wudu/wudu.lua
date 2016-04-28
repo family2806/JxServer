@@ -120,7 +120,7 @@ tbConfig[4] = {
 tbConfig[5] = {
 	m_nCurStepId = 3,
 	tbMessage = {
-		{"DialogWithNpc", {"V©n BÊt Tµ "}},
+		{"DialogWithNpc", {"V©n BÊt Tµ  "}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},

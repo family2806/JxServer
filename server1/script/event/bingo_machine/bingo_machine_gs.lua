@@ -264,7 +264,7 @@ function BingoMachine:OnGetAward(nSelType)
 	  if nFinalType == 5 then -- ±¦Ïä
 			local _,nTongID = GetTongName()
 			if (nTongID ~= 0)then
-				Msg2Tong(nTongID, format("Thµnh viªn bang héi %s Phong V©n B¶o §iÖn nhËn ®­îc mét b¶o r­¬ng ®ùng ®Çy b¶o vËt!", GetName()))
+				Msg2Tong(nTongID, format("°ï»á³ÉÔ± %s Phong V©n B¶o §iÖn¿ÉÒÔÁìÈ¡Ò»c¸i³äÂú±¦ÎïµÄ±¦Ïä!", GetName()))
 			end			
 		end
 	else  -- Hçn Nguyªn Linh Lé
@@ -291,9 +291,9 @@ function BingoMachine:OnGetAward(nSelType)
 		local nItemIndex = AddItem(6,1,3060,1,0,0);	
 		SetSpecItemParam(nItemIndex, 1, nCoin)
 		SyncItem(nItemIndex)	
-		Say(format("Ng­¬i nhËn ®­îc 1 LÔ Bao chøa %d Hçn Nguyªn Linh Lé!", nCoin), 0);			
-		AddGlobalNews(format("Ng­êi ch¬i:  <color=green>%s<color> nhËn ®­îc %d Hçn Nguyªn Linh Lé trong Th¸i Kim Tr× cña Phong V©n B¶o §iÖn !!!", GetName(), nCoin))
-		Msg2SubWorld(format("Ng­êi ch¬i:  <color=green>%s<color> nhËn ®­îc %d Hçn Nguyªn Linh Lé trong Th¸i Kim Tr× cña Phong V©n B¶o §iÖn !!!", GetName(), nCoin))
+		Say(format("ÄúµÃµ½Ò»c¸iÀñ°ü×°×Å %d  Hçn Nguyªn Linh Lé!", nCoin), 0);			
+		AddGlobalNews(format("Íæ¼Ò:  <color=green>%s<color> µÃµ½ %d Phong V©n B¶o §iÖn²É½ð³ØÖÐµÄHçn Nguyªn Linh Lé!!!", GetName(), nCoin))
+		Msg2SubWorld(format("Íæ¼Ò:  <color=green>%s<color> µÃµ½ %d Phong V©n B¶o §iÖn²É½ð³ØÖÐµÄHçn Nguyªn Linh Lé!!!", GetName(), nCoin))
 	end
 	Gambler:SetBigAward(0)
 	Gambler:SetState(STATE_NORMAL)

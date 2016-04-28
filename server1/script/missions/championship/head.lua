@@ -31,16 +31,16 @@ Faction = {
 			{"\\data\\kunlun_top5.dat", "KunLun_Top5", "C«n L«n"}
 		  }
 FactionTitle = {
-				"Vâ L©m §¹i héi ThiÕu L©m cao thñ ",
-				"Vâ L©m §¹i héi Thiªn V­¬ng cao thñ ",
-				"Vâ L©m §¹i héi §­êng M«n cao thñ ",
-				"Vâ L©m §¹i héi Ngò §éc cao thñ ",
-				"Vâ L©m §¹i héi Nga Mi cao thñ ",
-				"Vâ L©m §¹i héi Thóy Yªn cao thñ ",
-				"Vâ L©m §¹i héi C¸i Bang cao thñ ",
-				"Vâ L©m §¹i héi Thiªn NhÉn  cao thñ ",
-				"Vâ L©m §¹i héi Vâ §ang cao thñ ",
-				"Vâ L©m §¹i héi C«n L«n cao thñ ",
+				"ÎäÁÖ´ó»áThiÕu L©m¸ßÊÖ",
+				"ÎäÁÖ´ó»áThiªn V­¬ng¸ßÊÖ",
+				"ÎäÁÖ´ó»á§­êng M«n¸ßÊÖ",
+				"ÎäÁÖ´ó»áNgò §éc¸ßÊÖ",
+				"ÎäÁÖ´ó»áNga Mi¸ßÊÖ",
+				"ÎäÁÖ´ó»áThóy Yªn¸ßÊÖ",
+				"ÎäÁÖ´ó»áC¸i Bang¸ßÊÖ",
+				"ÎäÁÖ´ó»áThiªn NhÉn¸ßÊÖ",
+				"ÎäÁÖ´ó»áVâ §ang¸ßÊÖ",
+				"ÎäÁÖ´ó»áC«n L«n¸ßÊÖ",
 				}
 CP_TASKID_REGIST = 1083		--1£º±¨¹ıÃû£»9£ºÈ¡ÏûÁËÔ¤Ñ¡Èü×Ê¸ñ
 CP_TASKID_POINT = 1084		--¼ÇÂ¼Ô¤Ñ¡ÈüµÃ·Ö
@@ -101,7 +101,7 @@ CP_FORBID_ITEM = {
 					{	"§éc Phßng hoµn", {6, 1, 221, 1, 0, 0}, 514	},
 					{	"B¨ng Phßng hoµn", {6, 1, 222, 1, 0, 0}, 515	},
 					{	"Háa Phßng hoµn", {6, 1, 223, 1, 0, 0}, 516	},
-					{	"§éc Phßng hoµn", {6, 1, 224, 1, 0, 0}, 517	},
+					{	"L«i Phßng hoµn", {6, 1, 224, 1, 0, 0}, 517	},
 					{	"Gi¶m Th­¬ng hoµn", {6, 1, 225, 1, 0, 0}, 518	},
 					{	"Gi¶m H«n hoµn", {6, 1, 226, 1, 0, 0}, 519	},
 					{	"Gi¶m §éc hoµn", {6, 1, 227, 1, 0, 0}, 520	},
@@ -127,9 +127,9 @@ CP_FORBID_ITEM = {
 					{	"Cao Trung hoµn", {6, 0, 5, 1, 0, 0}, 260	},
 					{	"Phi Tèc hoµn", {6, 0, 6, 1, 0, 0}, 261	},
 					{	"B¨ng Phßng hoµn", {6, 0, 7, 1, 0, 0}, 262	},
-					{	"§éc Phßng hoµn", {6, 0, 8, 1, 0, 0}, 263	},
+					{	"L«i Phßng hoµn", {6, 0, 8, 1, 0, 0}, 263	},
 					{	"Háa Phßng hoµn", {6, 0, 9, 1, 0, 0}, 264	},
-					{	"§éc Phßng hoµn", {6, 0, 10, 1, 0, 0}, 265	},
+					{	"L«i Phßng hoµn", {6, 0, 10, 1, 0, 0}, 265	},
 					{	"B¸nh ch­ng H¹t dÎ ", {6, 0, 60, 1, 0, 0}, 401	},
 					{	"B¸nh ch­ng ThŞt heo", {6, 0, 61, 1, 0, 0}, 402	},
 					{	"B¸nh ch­ng ThŞt bß ", {6, 0, 62, 1, 0, 0}, 403	},
@@ -152,7 +152,7 @@ CP_HELP_TRYOUT = {
 					"<color=yellow>TrËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt<color>, chän ra <color=yellow>5 h¹ng ®Çu<color> trong thËp ®¹i m«n ph¸i ë mçi khu vùc tham gia trËn dù tuyÓn tuyÓn thñ cña '§¹i héi Vâ L©m toµn khu vùc'. TrËn dù tuyÓn b¾t ®Çu tõ 16/5 ®Õn 22/5 kÕt thóc. Më tõ 20:00 ®Õn 24:00 mçi ngµy; thêi gian b¸o danh 5 phót; thêi gian thi ®Êu 10 phót.",
 					"Sau khi trËn dù tuyÓn b¾t ®Çu, ng­êi ch¬i nhá h¬n cÊp 90 cã thÓ b¸o danh thi ®Êu trong §Çu tr­êng §¹i héi Vâ l©m.Ng­êi ch¬i míi tham gia thi ®Êu cÇn nép 10 v¹n l­îng phİ b¸o danh. Mçi ng­êi ch¬i ®· b¸o danh cã thÓ thi ®Êu nhiÒu nhÊt"..CP_MAXROUND.." trËn. NÕu b¹n kh«ng hµi lßng víi thµnh tİch cña nh©n vËt nµy, cã thÓ xãa bá t­ c¸ch thi ®Êu cña nh©n vËt, nh­ng nhËn vËt ®· bŞ xãa bá t­ c¸ch thi ®Êu kh«ng thÓ tiÕp tôc b¸o danh thi ®Êu n÷a.",
 					"TrËn dù tuyÓn dùa trªn hÖ thèng ®iÓm tİch lòy ®Ó chän ra 5 h¹ng ®Çu. Ng­êi ch¬i khi thi ®Êu "..CP_MAXROUND.."trong ®Êu tr­êng,  th¾ng 1 trËn ®­îc 3 ®iÓm, hßa 1 trËn ®­îc 1 ®iÓm, b¹i 1 trËn kh«ng ®­îc ®iÓm. §Õn ngµy 23/5, hÖ thèng sÏ chän ra 5 ng­êi ch¬i cã sè ®iÓm tİch ph©n cao nhÊt ë mçi m«n ph¸i, nhËn ®­îc t­ c¸ch tham gia '§¹i héi Vâ L©m toµn khu vùc'",
-					"Mçi ng­êi ch¬i tham gia b¸o danh trong qu¸ tr×nh tham gia nhËn ®­îc gi¶i th­ëng nhÊt ®Şnh. Mçi lÇn tham gia 1 vßng sÏ ®o¹t ®­îc gi¶i th­ëng nhÊt ®Şnh, ngoµi ra ng­êi ch¬i cßn nhËn ®­îc nh÷ng vËt phÈm nh­: Ph¸o hoa, HuyÒn Tinh Kho¸ng Th¹ch, Phóc Duyªn lé, Tiªn Th¶o Lé, Thñy Tinh) "
+					"²Î¼Ó¹ı³ÌÖĞÃ¿¸ö²Î¼Ó±¨ÃûµÄÍæ¼Ò¶¼¿ÉÒÔÁìÈ¡Ò»¶¨µÄ½±Àø¡£Ã¿²Î¼ÓÒ»¾Ö½«µÃµ½Ò»¶¨µÄ½±Àø£¬³ı´ËÖ®Íâ£¬Íæ¼Ò»¹¿ÉÒÔµÃµ½ÈçÏÂÎïÆ·£ºPh¸o Hoa£¬Ğş¾§¿óÊ¯£¬¸£ÔµÂ¶£¬Ë®¾§) "
 				}
 				
 CP_HELP_BID = {

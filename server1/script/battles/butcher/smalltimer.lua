@@ -66,7 +66,7 @@ function AddTeTan(nNowTimeCount)
 		s_area = BT_GetGameData(GAME_CAMP1AREA) 	-- GAME_CAMP1AREA ËÎ GAME_CAMP1AREA ½ð
 		j_area = BT_GetGameData(GAME_CAMP2AREA)
 		
-		Msg2MSAll(MISSIONID, "§Æc Th¸m míi ®· tiÕn vµo chiÕn tr­êng råi, mäi ng­êi nhanh chãng hµnh ®éng!");
+		Msg2MSAll(MISSIONID, "ÐÂµÄ§Æc Th¸mÒÑ¾­½øÈëÕ½³¡ÁË£¬´ó¼Ò¿ìµãÐÐ¶¯!");
 		
 		SelectPosition(nrandomCount)
 		local tbPosition_s = tbPoint[s_area]
@@ -76,11 +76,11 @@ function AddTeTan(nNowTimeCount)
 			local nIndex = tbIndex[i]
 			tbNpc.szName = "§Æc Th¸m"
 			basemission_CallNpc(tbNpc[1], nNowMapId, tbPosition_s[nIndex].x * 32, tbPosition_s[nIndex].y * 32)
-			local msg = format("T¨ng thªm Tèng Kim §Æc Th¸m: X = %d Y = %d",tbPosition_s[nIndex].x,tbPosition_s[nIndex].y)
+			local msg = format("Ôö¼ÓËÎ½ð§Æc Th¸m: X = %d Y = %d",tbPosition_s[nIndex].x,tbPosition_s[nIndex].y)
 			WriteLog(msg)
 			tbNpc.szName = "§Æc Th¸m"
 			basemission_CallNpc(tbNpc[2], nNowMapId, tbPosition_j[nIndex].x * 32, tbPosition_j[nIndex].y * 32)
-			local msg = format("T¨ng thªm Kim §Æc Th¸m : X = %d Y = %d",tbPosition_j[nIndex].x,tbPosition_j[nIndex].y)
+			local msg = format("Ôö¼Ó½ð¾ü§Æc Th¸m: X = %d Y = %d",tbPosition_j[nIndex].x,tbPosition_j[nIndex].y)
 			WriteLog(msg)
 		end
 	end
@@ -149,7 +149,7 @@ function OnTimer()
 		if (t > RUNGAME_TIME) then
 			--Ã¿Ò»phótÖÓÍ¨¸æµ±Ç°Ë«·½»ýphót£¬ºÍnpc
 			if (mod(t, 3) == 0 ) then
-			msstr = "C«ng c¸o: hiÖn giê tæng tÝch lòy cña 2 phe lµ "..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
+			msstr = "¹«¸æ:µ±Ç°ËÎ½ðË«·½×Ü»ýphótÎª"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
 				Msg2MSAll(MISSIONID, msstr)
 			end
 		

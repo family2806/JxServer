@@ -39,7 +39,7 @@ function main()
 		tbDailog:AddOptEntry("Ch­¬ng 41 ", ch4)
 		tbDailog:AddOptEntry("Ch­¬ng 42 ", ch5)
 	elseif (UTask_wd < 10*256+20) and (GetFaction() == "wudang") then								--ÉÐÎ´½Ó10¼¶ÈÎÎñ
-		tbDailog.szTitleMsg = "<npc>Kh«ng biÕt«§¹o §øc Kinh», sao trë thµnh ®Ö tö cña Vâ §ang?"
+		tbDailog.szTitleMsg = "<npc>²»¶®µÀµÂ¾­£¬ÔõÃ´ÄÜ³ÉÎªVâ §angµÜ×Ó?"
 	elseif (UTask_wd >= 20*256) and (GetFaction() == "wudang") then					--ÒÑ¾­Íê³É10¼¶ÈÎÎñ£¬ÉÐÎ´³öÊ¦
 		tbDailog.szTitleMsg = "<npc>H«m nay ng­¬i ®· häc«§¹o §øc Kinh»ch­a?"
 	elseif (UTask_wd >= 70*256) then							--ÒÑ¾­³öÊ¦

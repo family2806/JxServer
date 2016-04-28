@@ -34,7 +34,7 @@ function CP_CheckOpenTime()
 					if(GetMissionV(MS_STATE) == 0) then
 						OpenMission(MISSIONID)
 						str = date( "%mth¸ng%dngµy" ).."cña Vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt ®· b¾t ®Çu, ng­êi ch¬i muèn tham gia h·y ®Õn h·y ®Õn L©m An gÆp Sø gi¶ kiÖt xuÊt (203, 202) b¸o danh. §iÒu kiÖn b¸o danh: §¼ng cÊp tõ cÊp 50 ®Õn cÊp 89, sè trËn thi ®Êu Ýt h¬n 40."
-			WriteLog(date( "%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:" ).."§¹i héi vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!" )
+			WriteLog(date( "%YÄê%mth¸ng%dngµy%HÊ±M·Ö:" ).."§¹i héi vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!" )
 						AddGlobalCountNews(str, 1)
 						SetMissionV(MS_STATE, 1)
 						SetMissionV(MS_ROUND, 1)						

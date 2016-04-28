@@ -71,8 +71,8 @@ WLLS_DATA = {
 	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		" lÇn nµy t©n tó liªn cuéc so tµi t­íng sÜ nam n÷ hai ng­êi cuéc so tµi m« thøc , mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi , cè g¾ng luyÖn tËp phèi hîp ",
-		" lÇn nµy t©n tó liªn cuéc so tµi t­íng sÜ nam n÷ hai ng­êi cuéc so tµi m« thøc , mäi ng­êi cã thÓ tù do thµnh lËp chiÕn ®éi , cè g¾ng luyÖn tËp phèi hîp ",
+		"±¾´ÎĞÂĞãÁªÈü½«Ê¿song ®Êu nam n÷Ä£Ê½£¬´ó¼Ò¿ÉÒÔ×ÔÓÉ³ÉÁ¢Õ½¶Ó£¬Å¬Á¦Á·Ï°ÅäºÏ",
+		"±¾´ÎĞÂĞãÁªÈü½«Ê¿song ®Êu nam n÷Ä£Ê½£¬´ó¼Ò¿ÉÒÔ×ÔÓÉ³ÉÁ¢Õ½¶Ó£¬Å¬Á¦Á·Ï°ÅäºÏ",
 	},
 	
 	addmem_ex	= ", yªu cÇu <color=red> nam n÷ <color>",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
@@ -84,7 +84,7 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter> lÇn nµy "..str_des.." tham gia <color=red> nam n÷ hai ng­êi cuéc so tµi <color>. ng­¬i cã thÓ m×nh thµnh lËp chiÕn ®éi , còng cã thÓ tham gia ng­êi kh¸c ®İch chiÕn ®éi . ë ®éi tr­ëng cïng h¾n ng­êi häp thµnh ®éi sau , ®em "..str_des.." cïng quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi ngò "..str_des.." lËp tøc t¹o thµnh chiÕn ®éi . thµnh viªn sè l­îng nhiÒu nhÊt v× <color=red>2 ng­êi <color=red>, cÇn kh¸c ph¸i .",
+			wlls_descript("<enter> lÇn nµy "..str_des.." ²Î¼Ó <color=red>song ®Êu nam n÷<color>.Äã¿ÉÒÔ×Ô¼º½¨Á¢Õ½¶Ó£¬Ò²¿ÉÒÔ²Î¼ÓËûÈËµÄÕ½¶Ó¡£ÔÚ¶Ó³¤ÓëËûÈË×é¶Óºó£¬½«"..str_des.." cïng quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi ngò "..str_des.." lËp tøc t¹o thµnh chiÕn ®éi . thµnh viªn sè l­îng nhiÒu nhÊt v× <color=red>2 ng­êi <color=red>, cÇn kh¸c ph¸i .",
 				"Ta muèn t¹o "..str_des.." ®éi/wlls_want2create",
 				"Ta chØ ®i ngang qua/OnCancel")
 			return
@@ -126,7 +126,7 @@ WLLS_DATA = {
 		local nSex	= GetSex()
 		PlayerIndex = nOldIdx
 		if (nSex == GetSex()) then
-			return " lÇn nµy tû vâ dùa theo nam n÷ nam n÷ hai ng­êi cuéc so tµi m« thøc , ng­¬i muèn t×m mét kh¸c ph¸i !"
+			return "±¾´Î±ÈÎä°´ÕÕÄĞÅ®song ®Êu nam n÷Ä£Ê½£¬ÄãÒªÕÒÒ»¸öÒìĞÔ!"
 		end
 	end,
 }	--WLLS_DATA

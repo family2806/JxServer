@@ -27,5 +27,5 @@ function tbTriumphDrum:NpcTalk()
 		nCount = 1,
 		nExpiredTime=60,
 	};
-	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Mua Trèng Kh¶i Hoµn");
+	tbAwardTemplet:GiveAwardByList(tbAwardItem, "¹ºÂòTrèng Kh¶i Hoµn");
 end

@@ -30,7 +30,7 @@ PhongVanLenhBai2011.tbAwardDaily1 =
 	[3] =
 	{
 		{szName = "Tiªn Th¶o Lé ", tbProp = {6,1,71,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
-		{szName = "Tiªn Th¶o Lé ®Æc biÖt", tbProp = {6,1,1181,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
+		{szName = "ÌØ±ðTiªn Th¶o Lé ", tbProp = {6,1,1181,1,0,0}, nCount = 5, nRate = 50, nBindState = -2},
 	},
 	[4] =
 	{
@@ -47,13 +47,13 @@ PhongVanLenhBai2011.tbAwardDaily2 =
 		{szName = "Phó Quý CÈm H¹p", tbProp = {6, 1, 2402,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
 		{szName = "Ngäc Qu¸n", tbProp = {6, 1, 2311,1,0,0}, nCount = 1, nExpiredTime = 10080, nBindState = -2},
 		{szName = "LÖnh bµi ", tbProp = {6, 2, 1020,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2, CallBack = function (nItemIndex) SetItemMagicLevel(nItemIndex, 1, random(211,216)) end},
-		{szName = "Méc nh©n", tbProp = {6, 1, 2969,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Ä¾ÈËLÖnh bµi ", tbProp = {6, 1, 2969,1,0,0}, nCount = 40, nExpiredTime = 10080, nBindState = -2},
 	},
 	[2] =
 	{
 		{szName = "Long HuyÕt Hoµn", tbProp = {6,1,2117,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
 		{szName = "H¶i Long Ch©u", tbProp = {6,1,2115,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
-		{szName = "LÖnh Bµi Thñy TÆc", tbProp = {6,1,2745,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
+		{szName = "Ë®ÔôLÖnh bµi ", tbProp = {6,1,2745,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
 		{szName = "Thiªn B¶o Khè LÖnh", tbProp = {6,1,2813,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
 		{szName = "Viªm §Õ LÖnh", tbProp = {6,1,1617,1,0,0}, nCount = 1, nRate =20, nExpiredTime = 10080, nBindState = -2},
 	},
@@ -80,14 +80,14 @@ PhongVanLenhBai2011.tbWeekendAward =
 	[3] =
 	{
 		{szName = "B¹ch C©u hoµn", tbProp = {6, 1, 74, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 34, nBindState = -2},
-		{szName = "§¹i B¹ch C©u hoµn", tbProp = {6, 1, 130, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
-		{szName = "B¹ch C©u Hoµn ®Æc biÖt", tbProp = {6, 1, 1157, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
+		{szName = "´óB¹ch C©u hoµn", tbProp = {6, 1, 130, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
+		{szName = "ÌØ±ðB¹ch C©u hoµn", tbProp = {6, 1, 1157, 1, 0, 0}, nCount = 1, nExpiredTime = 10080, nRate = 33, nBindState = -2},
 	},
 	[4] =
 	{
-		{szName = "B¹ch C©u Hoµn kü n¨ng", tbProp = {6, 1, 1372,1,0,0}, nRate = 34, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "§¹i B¹ch C©u hoµn(¼¼ÄÜ) ", tbProp = {6, 1, 977,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
-		{szName = "B¹ch C©u Hoµn kü n¨ng ®Æc biÖt", tbProp = {6, 1, 1182,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¹ch C©u hoµn¼¼ÄÜ", tbProp = {6, 1, 1372,1,0,0}, nRate = 34, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "´óB¹ch C©u hoµn(¼¼ÄÜ) ", tbProp = {6, 1, 977,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
+		{szName = "B¹ch C©u hoµnÌØ±ð¼¼ÄÜ", tbProp = {6, 1, 1182,1,0,0}, nRate = 33, nCount = 1, nExpiredTime = 10080, nBindState = -2},
 	},
 	[5] =
 	{
@@ -116,9 +116,9 @@ function PhongVanLenhBai2011:ShowDialogDaily()
 	local tbOpt = {}
 	
 	if (nTime >= 0 and nTime <= 1400) then
-		tinsert(tbOpt,  "NhËn phÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes1()")
+		tinsert(tbOpt,  "PhÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes1()")
 	else
-		tinsert(tbOpt,  "NhËn phÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes2()")
+		tinsert(tbOpt,  "PhÇn th­ëng hµng ngµy/#PhongVanLenhBai2011:GetDailyAwardTimes2()")
 	end
 	
 	if (nDay == 5 or nDay == 6 or nDay == 0) then
@@ -154,8 +154,8 @@ function PhongVanLenhBai2011:GetDailyAwardTimes1()
 	
 	PlayerFunLib:AddTaskDaily(self.TASK_DAILY_AWARD_TIMES1, 1)
 	SetTask(self.TASK_COUNT_DAILY_AWARD_TIMES1, nGetAwardTimes + 1)
-	tbAwardTemplet:Give(self.tbAwardDaily1, 1, {"PhongVanLenhBai2011", "NhanThuongHangNgayLan1"})
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "NhanThuongHangNgayLan1", "N/A", 1)
+	tbAwardTemplet:Give(self.tbAwardDaily1, 1, {"PhongVanLenhBai2011", "ÁìµÚÒ»´ÎPhÇn th­ëng hµng ngµy"})
+	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "ÁìµÚÒ»´ÎPhÇn th­ëng hµng ngµy", "N/A", 1)
 end
 
 function PhongVanLenhBai2011:GetDailyAwardTimes2()

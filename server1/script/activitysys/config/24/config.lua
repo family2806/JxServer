@@ -115,10 +115,10 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Ngao tuyÕt (DŞch chuyÓn tøc thêi)",
+	szName = "Phi phong Ng¹o TuyÕt (×ªÒÆ¼°Ê±)",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Ngao tuyÕt (DŞch chuyÓn tøc thêi)",0,1,1,1},
+	tbMessageParam = {"Phi phong Ng¹o TuyÕt (×ªÒÆ¼°Ê±)",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{4} },
@@ -134,7 +134,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Kinh L«i (DŞch chuyÓn tøc thêi)",
+	szName = "Phi phong Kinh L«i(×ªÒÆ¼°Ê±)",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"Phi phong Kinh L«i (DŞch chuyÓn tøc thêi)",0,1,1,1},
@@ -175,14 +175,14 @@ tbConfig[10] = --Ò»¸öÏ¸½Ú
 	szName = "Phi phong Ng¹o TuyÕt",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc><color=yellow>Phi phong Ng¹o TuyÕt <color> cã mÊy lo¹i d­íi ®©y , ®¹i hiÖp ngµi muèn chän lo¹i nµo?"},
+	tbMessageParam = {"<npc><color=yellow>Phi phong Ng¹o TuyÕt<color> ÓĞÒÔÏÂ¼¸ÖÖ£¬´óÏÀÏëÑ¡ÔñÄÄÒ»ÖÖ?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Phi phong Ngao tuyÕt (DŞch chuyÓn tøc thêi)",7} },
-		{"AddDialogOpt",	{"Phi phong Ng¹o TuyÕt (X¸c suÊt hãa gi¶i s¸t th­¬ng)",13} },
+		{"AddDialogOpt",	{"Phi phong Ng¹o TuyÕt(×ªÒÆ¼°Ê±)",7} },
+		{"AddDialogOpt",	{"Phi phong Ng¹o TuyÕt(¸ÅÂÊ»¯½âÉ±Ç¹)",13} },
 	},
 }
 tbConfig[11] = --Ò»¸öÏ¸½Ú
@@ -192,15 +192,15 @@ tbConfig[11] = --Ò»¸öÏ¸½Ú
 	szName = "Phi phong Kinh L«i",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc><color=yellow>Phi phong Kinh L«i <color>cã mÊy lo¹i d­íi ®ay, ®¹i hiÖp ngµi muèn chän lo¹i nµo?"},
+	tbMessageParam = {"<npc><color=yellow>Phi phong Kinh L«i<color>ÓĞÒÔÏÂ¼¸ÖÖ£¬´óÏÀÏëÑ¡ÔñÄÄÒ»ÖÖ?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Phi phong Kinh L«i (DŞch chuyÓn tøc thêi)",8} },
-		{"AddDialogOpt",	{"Phi phong Kinh L«i (X¸c suÊt hãa gi¶i s¸t th­¬ng)",14} },
-		{"AddDialogOpt",	{"Phi phong Kinh L«i ( Träng kİch )",15} },
+		{"AddDialogOpt",	{"Phi phong Kinh L«i (×ªÒÆ¼°Ê±)",8} },
+		{"AddDialogOpt",	{"Phi phong Kinh L«i (¸ÅÂÊ»¯½âÉ±Ç¹)",14} },
+		{"AddDialogOpt",	{"Phi phong Kinh L«i( ÖØ»÷)",15} },
 	},
 }
 tbConfig[12] = --Ò»¸öÏ¸½Ú
@@ -210,25 +210,25 @@ tbConfig[12] = --Ò»¸öÏ¸½Ú
 	szName = "Phi phong Ngù Phong",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc><color=yellow>Phi phong Ngù Phong<color> cã mÊy lo¹i d­íi ®©y, ®¹i hiÖp ngµi muèn chän lo¹i nµo?"},
+	tbMessageParam = {"<npc><color=yellow>Phi phong Ngù Phong<color> ÓĞÒÔÏÂ¼¸ÖÖ£¬´óÏÀÏëÑ¡ÔñÄÄÒ»ÖÖ?"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Phi phong Ngù Phong (DŞch chuyÓn tøc thêi )",9} },
-		{"AddDialogOpt",	{"Phi phong Ngù Phong (X¸c suÊt hãa gi¶i s¸t th­¬ng)",16} },
-		{"AddDialogOpt",	{"Phi phong Ngù Phong (Träng kİch)",17} },
+		{"AddDialogOpt",	{"Phi phong Ngù Phong (×ªÒÆ¼°Ê±)",9} },
+		{"AddDialogOpt",	{"Phi phong Ngù Phong (¸ÅÂÊ»¯½âÉ±Ç¹)",16} },
+		{"AddDialogOpt",	{"Phi phong Ngù Phong (ÖØ»÷)",17} },
 	},
 }
 tbConfig[13] = --Ò»¸öÏ¸½Ú
 {
 	nId = 13,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Ng¹o TuyÕt (X¸c suÊt hãa gi¶i s¸t th­¬ng)",
+	szName = "Phi phong Ng¹o TuyÕt (¸ÅÂÊ»¯½âÉ±Ç¹)",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Ng¹o TuyÕt (X¸c suÊt hãa gi¶i s¸t th­¬ng)",0,1,1,1},
+	tbMessageParam = {"Phi phong Ng¹o TuyÕt (¸ÅÂÊ»¯½âÉ±Ç¹)",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{4} },
@@ -244,10 +244,10 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Kinh L«i (X¸c suÊt hãa gi¶i s¸t th­¬ng)",
+	szName = "Phi phong Kinh L«i(¸ÅÂÊ»¯½âÉ±Ç¹)",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Kinh L«i (X¸c suÊt hãa gi¶i s¸t th­¬ng)",0,1,1,1},
+	tbMessageParam = {"Phi phong Kinh L«i(¸ÅÂÊ»¯½âÉ±Ç¹)",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{5} },
@@ -263,10 +263,10 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Kinh L«i ( Träng kİch )",
+	szName = "Phi phong Kinh L«i ( ÖØ»÷ )",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Kinh L«i ( Träng kİch )",0,1,1,1},
+	tbMessageParam = {"Phi phong Kinh L«i ( ÖØ»÷ )",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{5} },
@@ -282,10 +282,10 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 {
 	nId = 16,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Ngù Phong (X¸c suÊt hãa gi¶i s¸t th­¬ng)",
+	szName = "Phi phong Ngù Phong (¸ÅÂÊ»¯½âÉ±Ç¹)",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Ngù Phong (X¸c suÊt hãa gi¶i s¸t th­¬ng)",0,1,1,1},
+	tbMessageParam = {"Phi phong Ngù Phong (¸ÅÂÊ»¯½âÉ±Ç¹)",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{6} },
@@ -301,10 +301,10 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "Phi phong Ngù Phong (Träng kİch)",
+	szName = "Phi phong Ngù Phong(ÖØ»÷)",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Phi phong Ngù Phong (Träng kİch)",0,1,1,1},
+	tbMessageParam = {"Phi phong Ngù Phong(ÖØ»÷)",0,1,1,1},
 	tbCondition = 
 	{
 		{"ThisActivity:CheckFortuneRank",	{6} },

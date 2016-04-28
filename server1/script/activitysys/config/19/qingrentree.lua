@@ -28,7 +28,7 @@ local _GetAward = function(nNpcIdx, dwNpcId)
 	Msg2Player("Thu thËp kÕt thóc!")
 	if nTreePickStep == 1 then
 		local tbAward =  {{szName = "LÔ Hép T×nh Nh©n", tbProp = {6, 1, 2702, 1, 0, 0}, nExpiredTime = 20110224},}
-		tbAwardTemplet:GiveAwardByList(tbAward, "Thu thËp LÔ Hép T×nh Nh©n")
+		tbAwardTemplet:GiveAwardByList(tbAward, "ÊÕ¼¯LÔ Hép T×nh Nh©n")
 		AddNpcSkillState(nNpcIdx, 662,1, 1, 0)	-- ¹Ø±Õ¸ÐÌ¾ºÅ
 	end
 end 

@@ -164,7 +164,7 @@ pendantmsg =
 	
 amuletmsg = 
 	{
-		{"§ång H¹ng Liªn","Ng©n H¹ng Liªn","Kim H¹ng Liªn","B¹ch Kim H¹ng Liªn","Ngäc Ch©u H¹ng Liªn","Lôc Tïng Th¹ch H¹ng Liªn","Thñy Tinh H¹ng Liªn ","Khæng T­íc Th¹ch H¹ng Liªn","Tr©n Ch©u H¹ng Liªn","Toµn Th¹ch H¹ng Liªn"},
+		{"§ång H¹ng Liªn","Ng©n H¹ng Liªn","Kim H¹ng Liªn","°×Kim H¹ng Liªn","Ngäc Ch©u H¹ng Liªn","Lôc Tïng Th¹ch H¹ng Liªn","Thñy Tinh H¹ng Liªn ","Khæng T­íc Th¹ch H¹ng Liªn","Tr©n Ch©u H¹ng Liªn","Toµn Th¹ch H¹ng Liªn"},
 		{"Lôc Tïng Th¹ch Hé Th©n phï ","San H« Hé Th©n phï ","Miªu Nh·n Hé Th©n phï ","Hæ T×nh Hé Th©n phï ","Thñy Tinh Hé Th©n phï ","Hæ Ph¸ch Hé Th©n phï ","B¹ch PhØ Thóy Hé Th©n phï ","Hång PhØ Thóy Hé Th©n phï ","Tö PhØ Thóy Hé Th©n phï ","Lôc PhØ Thóy Hé Th©n phï "}
 	}
 
@@ -185,7 +185,7 @@ TF_BONUS_F = 12
 
 
 function main()
-	Talk(1, "GiveUIForThing", "Hîp thµnh nhÉn: Mçi lÇn bá tèi ®a vµo <color=yellow>20<color> lÔ vËt n¨m DËu vµ mét mãn <color=yellow>vò khİ<color> mµu xanh, cã thÓ hîp thµnh ra ®¼ng cÊp t­¬ng øng, trang søc thuéc tİnh ngò hµnh. Ta cµng bá nhiÒu lÔ vËt n¨m DËu vµo thuéc tİnh cña nhÉn cµng cao.<enter>C¸ch thøc ®æi: Vò khİ ®æi nhÉn; kh¨n ®éi hoÆc giµy ®æi ®ai th¾t; y phôc hoÆc yªu ®¸i ®æi d©y chuyÒn")
+	Talk(1, "GiveUIForThing", "ºÏ³É½äÖ¸£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>20<color>¸ö¼¦ÄêÉñÃØÀñÎïºÍÒ»¼şÀ¶É«µÄ<color=yellow>ÎäÆ÷×°±¸<color>£¬¿ÉÒÔºÏ³É³öÓëÆäÏàÓ¦µÈ¼¶¡¢Ngò HµnhÊôĞÔµÄÊ×ÊÎ¡£·ÅÈëµÄ¼¦ÄêÉñÃØÀñÎïµÄÇ±ÖÊÔ½¸ß£¬½äÖ¸µÄÊôĞÔ¾ÍÔ½ºÃ¡£<enter>¶Ò»»·½·¨£ºÎäÆ÷»»½äÖ¸£»¶¥´÷»òĞ¬×Ó»»Ñü×¹£»ÒÂ·ş»òÑü´ø»»¾±´ø¡£")
 end
 
 function GiveUIForThing()

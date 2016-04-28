@@ -119,7 +119,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi17",
+	szName = "V­ît qua ¶i 17",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"17"},
@@ -129,14 +129,14 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"VuotAi17"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,5,EVENT_LOG_TITLE,"V­ît qua ¶i 17"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi28",
+	szName = "V­ît qua ¶i 28",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"28"},
@@ -146,7 +146,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"VuotAi28"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_GREEN_CLOTH,10,EVENT_LOG_TITLE,"V­ît qua ¶i 28"} },
 	},
 }
 tbConfig[9] = --Ò»¸öÏ¸½Ú
@@ -271,9 +271,9 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"§æi M¶nh V¶i Mµu Xanh L¸",16} },
-		{"AddDialogOpt",	{"GhepChiecAoLinhMoi",21} },
-		{"AddDialogOpt",	{"GhepAoLinhDaSua",22} },
-		{"AddDialogOpt",	{"GhepChiecAoLinhMoi (®iÓm kinh nghiÖm)",35} },
+		{"AddDialogOpt",	{"Hîp thµnh ¸o LÝnh Míi",21} },
+		{"AddDialogOpt",	{"Hîp thµnh ¸o LÝnh §· Söa",22} },
+		{"AddDialogOpt",	{"Hîp thµnh ¸o LÝnh Míi(¾­Ñéµã)",35} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -297,7 +297,7 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "GhepChiecAoLinhMoi",
+	szName = "Hîp thµnh ¸o LÝnh Míi",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"¸o LÝnh Míi",1,1,1,0.02},
@@ -307,19 +307,19 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 		{"AddOneMaterial",	{"M¶nh V¶i",tbITEM_CLOTH,5} },
 		{"AddOneMaterial",	{"Khuy ¸o",tbITEM_BUTTONHOLE,5} },
 		{"AddOneMaterial",	{"¸o LÝnh BÞ R¸ch",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"M¶nh V¶i Mµu Xanh L¸",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"ÂÌÉ«M¶nh V¶i",tbITEM_GREEN_CLOTH,1} },
 		{"AddOneMaterial",	{"Cuén ChØ",tbITEM_SEWING_THREAD,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM,1,EVENT_LOG_TITLE,"GhepChiecAoLinhMoi"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM,1,EVENT_LOG_TITLE,"Hîp thµnh ¸o LÝnh Míi"} },
 	},
 }
 tbConfig[18] = --Ò»¸öÏ¸½Ú
 {
 	nId = 18,
 	szMessageType = "CreateCompose",
-	szName = "GhepAoLinhDaSua",
+	szName = "Hîp thµnh ¸o LÝnh §· Söa",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {"¸o LÝnh §· Söa",1,1,1,0.02},
@@ -329,11 +329,11 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 		{"AddOneMaterial",	{"M¶nh V¶i",tbITEM_CLOTH,5} },
 		{"AddOneMaterial",	{"Khuy ¸o",tbITEM_BUTTONHOLE,5} },
 		{"AddOneMaterial",	{"¸o LÝnh BÞ R¸ch",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"M¶nh V¶i Mµu Xanh L¸",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"ÂÌÉ«M¶nh V¶i",tbITEM_GREEN_CLOTH,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_PATCHED_UNIFORM,1,EVENT_LOG_TITLE,"GhepAoLinhDaSua"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_PATCHED_UNIFORM,1,EVENT_LOG_TITLE,"Hîp thµnh ¸o LÝnh §· Söa"} },
 	},
 }
 tbConfig[19] = --Ò»¸öÏ¸½Ú
@@ -573,7 +573,7 @@ tbConfig[34] =
 {
 	nId = 34,
 	szMessageType = "ItemScript",
-	szName = "Sö dông ChiÕc ¸o LÝnh Míi (exp)",
+	szName = "Sö dông ChiÕc ¸o LÝnh Míi(exp)",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
 	tbMessageParam = {tbITEM_NEW_UNIFORM_EXP},
@@ -594,21 +594,21 @@ tbConfig[35] =
 {
 	nId = 35,
 	szMessageType = "CreateCompose",
-	szName = "GhepChiecAoLinhMoi (®iÓm kinh nghiÖm)",
+	szName = "Hîp thµnh ¸o LÝnh Míi(¾­Ñéµã)",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"ChiÕc ¸o LÝnh Míi (®iÓm kinh nghiÖm)",1,1,1,0.02},
+	tbMessageParam = {"¸o LÝnh Míi(¾­Ñéµã)",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,szLEVEL_TIP,">="} },
 		{"AddOneMaterial",	{"M¶nh V¶i",tbITEM_CLOTH,5} },
 		{"AddOneMaterial",	{"Khuy ¸o",tbITEM_BUTTONHOLE,5} },
 		{"AddOneMaterial",	{"¸o LÝnh BÞ R¸ch",tbITEM_TATTERED_UNIFORM,5} },
-		{"AddOneMaterial",	{"M¶nh V¶i Mµu Xanh L¸",tbITEM_GREEN_CLOTH,1} },
+		{"AddOneMaterial",	{"ÂÌÉ«M¶nh V¶i",tbITEM_GREEN_CLOTH,1} },
 		{"AddOneMaterial",	{"Cuén ChØ",tbITEM_SEWING_THREAD,1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM_EXP,1,EVENT_LOG_TITLE,"GhepChiecAoLinhMoi(Exp)"} },
+		{"PlayerFunLib:GetItem",	{tbITEM_NEW_UNIFORM_EXP,1,EVENT_LOG_TITLE,"Hîp thµnh ¸o LÝnh Míi(Exp)"} },
 	},
 }

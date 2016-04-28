@@ -77,7 +77,7 @@ function yandiduihuan_GiveStep(nCount)
 	
 	if nCount ~=  nNeedCount + 1 then
 		Msg2Player("Bá vµo sè l­îng kh«ng ®óng.")
-		return Say("§¹i hiÖp bá nguyªn liÖu vµo kh«ng ®óng, kh«ng thÓ tiÕn hµnh trïng luyÖn ®­îc. Nguyªn liÖu ®Ó trïng luyÖn trang bŞ hoµng kim Viªm §Õ lµ 1 trang bŞ hoµng kim Viªm §Õ, 1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 m¶nh bæ thiªn th¹ch (trung), 1000 v¹n ng©n l­îng", 0)
+		return Say("´óÏÀ·ÅÈëµÄ²ÄÁÏ²»¶Ô£¬²»ÄÜ½øĞĞÖØÁ¶£¬ÓÃÓÚÖØÁ¶Ñ×µÛ»Æ½ğ×°±¸µÄÔ­ÁÏÊÇ£º1¸öÑ×µÛ»Æ½ğ×°±¸£¬1¸öPh­îng Minh Chïy£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ£©", 0)
 	end
 	
 	local tbAwardItem, nCheckedId = yandiduihuan_checkGoldItem(nCount)
@@ -96,7 +96,7 @@ function yandiduihuan_GiveStep(nCount)
 				tbNeedCount[nId] = tbNeedCount[nId] - nItemCount
 			else
 				Msg2Player("Bá vµo nguyªn liÖu kh«ng ®óng");
-				return Say(format("Cung cÊp cho ta nguyªn liÖu kh«ng ®óng nªn kh«ng thÓ trïng luyÖn ®­îc.  Nguyªn liÖu trïng luyÖn<color=yellow>%s<color>lµ 1 <color=yellow>%s<color>, 1 Ph­îng Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹ch (trung), 1000 v¹n ng©n l­îng", tbAwardItem.szName, tbAwardItem.szName), 0)
+				return Say(format("¸øÎÒµÄÔ­ÁÏ²»¶Ô£¬ËùÒÔ²»ÄÜÖØÁ¶¡£ÖØÁ¶Ô­ÁÏ£º<color=yellow>%s<color>l?1 <color=yellow>%s<color>, 1¸öPh­îng Minh Chïy£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1000ÍòÒøÁ½", tbAwardItem.szName, tbAwardItem.szName), 0)
 			end
 		end
 			
@@ -193,14 +193,14 @@ end
 
 
 function yandiduihuan_main()
-	GiveItemUI("Giao diÖn trïng luyÖn trang bŞ hoµng kim Viªm §Õ", "1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹c (trung), 1 thÇn bİ kho¸ng th¹ch, 1000 v¹n ng©n l­îng, 1 trang bŞ hoµng kim Viªm §Õ", "yandiduihuan_GiveStep", "yandiduihuan_OnCancel", 1)
+	GiveItemUI("Giao diÖn trïng luyÖn trang bŞ hoµng kim Viªm §Õ", "1¸öPh­îng Minh Chïy£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1 ¸öThÇn bİ kho¸ng th¹ch, 1000 ÍòÒøÁ½, 1¸öÑ×µÛ»Æ½ğ×°±¸", "yandiduihuan_GiveStep", "yandiduihuan_OnCancel", 1)
 end
 
 
 function yandiduihuan_shuoming()
 	local tbSay = 
 	{
-		"<dec><npc>Ñ×µÛ×°±¸ÖØÁ¶, ĞèÒª1 Phông Minh chïy, 1 huyÒn tinh cÊp 8, 1 bæ thiªn th¹c (trung), 1 thÇn bİ kho¸ng th¹ch, 1000 v¹n ng©n l­îng, 1 trang bŞ hoµng kim Viªm §Õ.<enter>Ñ×µÛ×°±¸ÓÃÓÚÖØÁ¶£¬ÖØÁ·ºóµÄ×°±¸ÊÇÒ»ÖÖ»Æ½ğ×°±¸£¬Èç¹ûÊ¹ÓÃTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸pÖØÁ·£¬¾ÍÒ»¶¨»á³öTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸p×°±¸ºÍËæ»úÊôĞÔ¡£",
+		"<dec><npc>Ñ×µÛ×°±¸ÖØÁ¶, ĞèÒª1¸öPh­îng Minh Chïy£¬1¸ö8¼¶Ğş¾§£¬1¸ö²¹ÌìÊ¯ËéÆ¬£¨ÖĞ), 1 ¸öThÇn bİ kho¸ng th¹ch, 1000 ÍòÒøÁ½, 1¸öÑ×µÛ»Æ½ğ×°±¸.<enter>Ñ×µÛ×°±¸ÓÃÓÚÖØÁ¶£¬ÖØÁ·ºóµÄ×°±¸ÊÇÒ»ÖÖ»Æ½ğ×°±¸£¬Èç¹ûÊ¹ÓÃTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸pÖØÁ·£¬¾ÍÒ»¶¨»á³öTo¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸p×°±¸ºÍËæ»úÊôĞÔ¡£",
 		"Ta ®· hiÓu râ råi/yandiduihuan_OnCancel",
 	}
 	CreateTaskSay(tbSay)

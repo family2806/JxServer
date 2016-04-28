@@ -233,7 +233,7 @@ function wlls_awardinfo(b_Msg)
 			str	= " h¹ng " .. n_sid .. " lÇn nµy liªn cuéc so tµi , kh«ng biÕt néi dung "
 		end
 	else 
-		str	= " h¹ng " .. n_sid .. " lÇn nµy " .. wlls_get_awardinfo(n_type, n_level, n_award)
+		str	= " h¹ng  " .. n_sid .. " lÇn nµy " .. wlls_get_awardinfo(n_type, n_level, n_award)
 	end
 
 	local n_awardex	= GetTask(WLLS_TASKID_AWARDEX)

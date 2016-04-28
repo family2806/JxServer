@@ -130,7 +130,7 @@ function VnPirateBox_main(nIndexItem)
 	local nCount1 = CalcItemCount(3, tbKey1[1], tbKey1[2], tbKey1[3], -1) 
 	local nCount2 = CalcItemCount(3, tbKey2[1], tbKey2[2], tbKey2[3], -1) 
 	if nCount1 == 0 and nCount2 == 0 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc B¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
+		Say("ÐèÒªÓÐchiakhoavang»òÕßchiakhoanhuy²ÅÄÜ´ò¿ªB¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
 		return 1
 	end
 
@@ -160,12 +160,12 @@ function VnPirateBoxGiveAward(nItemIdx, strKeyType)
 		return
 	end
 	if ConsumeItem(3, 1, tbKey[1], tbKey[2], tbKey[3], -1) ~= 1 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc B¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
+		Say("ÐèÒªÓÐchiakhoavang»òÕßchiakhoanhuy²ÅÄÜ´ò¿ªB¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
 		return
 	end
 	
 	if ConsumeItem(3, 1, 6, 1, 2743, -1) ~= 1 then
-		Say("Kh«ng t×m thÊy B¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
+		Say("ÕÒ²»µ½B¶o R­¬ng Thñy TÆc", 1, "§ãng/no")
 		return
 	end
 	tbAwardTemplet:Give(tbAward, 1, {"PhongLangDo", "use_shuizeibaoxiang"})		

@@ -89,7 +89,7 @@ tbMaterial_ = {
 
 _Message =  function (nItemIndex)
 	local handle = OB_Create()
-	local msg = format("<color=green>Ng≠Íi ch¨i <color=yellow>%s<color=green> trÂng C©y ßa vµ nhÀn Æ≠Óc ph«n th≠Îng <color=yellow><%s><color>" ,GetName(),GetItemName(nItemIndex))
+	local msg = format("<color=green>ÕÊº“ <color=yellow>%s<color=green> ÷÷C©y ßaº∞ªÒµ√Ω±¿¯<color=yellow><%s><color>" ,GetName(),GetItemName(nItemIndex))
 	ObjBuffer:PushObject(handle, msg)
 	RemoteExecute("\\script\\event\\msg2allworld.lua", "broadcast", handle)
 	OB_Release(handle)
@@ -240,22 +240,22 @@ function tbSeed:AddPlantCount(kind)
 		end
 	elseif kind == 2 then
 		local tbLogTittle = {
-			[50] = "SuDung50LanHatGiongCayDa",
-			[100] = "SuDung100LanHatGiongCayDa",
-			[200] = "SuDung200LanHatGiongCayDa",
-			[300] = "SuDung300LanHatGiongCayDa",
-			[400] = "SuDung400LanHatGiongCayDa",
-			[500] = "SuDung500LanHatGiongCayDa",
-			[600] = "SuDung600LanHatGiongCayDa",
-			[700] = "SuDung700LanHatGiongCayDa",
-			[800] = "SuDung800LanHatGiongCayDa",
-			[900] = "SuDung900LanHatGiongCayDa",
-			[1000] = "SuDung1000LanHatGiongCayDa",
-			[1100] = "SuDung1100LanHatGiongCayDa",
-			[1200] = "SuDung1200LanHatGiongCayDa",
-			[1300] = "SuDung1300LanHatGiongCayDa",
-			[1400] = "SuDung1400LanHatGiongCayDa",
-			[1501] = "SuDung1500LanHatGiongCayDa",
+			[50] = " π”√50¥ŒC©y ßa÷÷◊”",
+			[100] = " π”√100¥ŒC©y ßa÷÷◊”",
+			[200] = " π”√200¥ŒC©y ßa÷÷◊”",
+			[300] = " π”√300¥ŒC©y ßa÷÷◊”",
+			[400] = " π”√400¥ŒC©y ßa÷÷◊”",
+			[500] = " π”√500¥ŒC©y ßa÷÷◊”",
+			[600] = " π”√600¥ŒC©y ßa÷÷◊”",
+			[700] = " π”√700¥ŒC©y ßa÷÷◊”",
+			[800] = " π”√800¥ŒC©y ßa÷÷◊”",
+			[900] = " π”√900¥ŒC©y ßa÷÷◊”",
+			[1000] = " π”√1000¥ŒC©y ßa÷÷◊”",
+			[1100] = " π”√1100¥ŒC©y ßa÷÷◊”",
+			[1200] = " π”√1200¥ŒC©y ßa÷÷◊”",
+			[1300] = " π”√1300¥ŒC©y ßa÷÷◊”",
+			[1400] = " π”√1400¥ŒC©y ßa÷÷◊”",
+			[1501] = " π”√1500¥ŒC©y ßa÷÷◊”",
 		}
 		local nUsedCount = self:GetPlantCount(kind)
 		if tbLogTittle[nUsedCount] then
@@ -325,9 +325,9 @@ function tbSeed:Grow(Kind)
 	end	
 	tbSeed:AddPlantCount(Kind)
 	if Kind == 2 and tbVNG_BitTask_Lib:getBitTask(tbTaskInfo[Kind]) == 1501 then
-		local tbAward = {szName="R≠¨ng Th«n B›",tbProp={6,1,30158,1,0,0},nCount=1, nExpiredTime = 20111201}
+		local tbAward = {szName="C©y ßa÷÷◊”",tbProp={6,1,30158,1,0,0},nCount=1, nExpiredTime = 20111201}
 		local tbTranslog = {strFolder ="201111_EventTrongCay/", nPromID = 19, nResult = 1}	
-		tbAwardTemplet:Give(tbAward, 1, {"Event_TrongCay", "SuDung1501LanHatGiongCayDaNhanRuongThanBi", tbTranslog})
+		tbAwardTemplet:Give(tbAward, 1, {"Event_TrongCay", " π”√1501¥ŒC©y ßa÷÷◊”¡Ï»°…Ò√ÿ±¶œ‰", tbTranslog})
 	end
 	if (Kind == 7 or Kind == 8 or Kind == 9 or Kind == 10) then
 		local handle = OB_Create()
@@ -466,19 +466,19 @@ tbMaintainInfo = {
 	[1] = {
 		Dlg = "B„n ph©n cho c©y thi™n tu’",
 		Msg = "H∑y ti’n hµnh b„n ph©n cho c©y thi™n tu’",
-		Err = "ßπi hi÷p Æ∑ b„n ph©n cho c©y rÂi",
+		Err = "¥Ûœ¿“—B„n ph©n cho c©y thi™n tu’¡À",
 		Npc = {1253, 1530},
 		},
 	[2] = {
 		Dlg = "T≠Ìi n≠Ìc cho c©y thi™n tu’",
 		Msg = "H∑y ti’n hµnh t≠Ìi n≠Ìc cho c©y thi™n tu’",
-		Err = "ßπi hi÷p Æ∑ t≠Ìi n≠Ìc cho c©y rÂi.",
+		Err = "¥Ûœ¿“—T≠Ìi n≠Ìc cho c©y thi™n tu’¡À.",
 		Npc = {1254, 1531},
 		},
 	[3] = {
 		Dlg = "Di÷t c· dπi cho c©y",
 		Msg = "H∑y ti’n hµnh di÷t c· dπi cho c©y",
-		Err = "ßπi hi÷p Æ∑ di÷t c· cho c©y rÂi",
+		Err = "¥Ûœ¿“—Di÷t c· dπi cho c©y¡À",
 		Npc = {1255, 1453},
 		},
 --	[4] = {

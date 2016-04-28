@@ -29,10 +29,10 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"Giíi thiÖu ho¹t ®éng ®Ëp trøng vui vÎ",3} },
-		{"AddDialogOpt",	{"Dïng Chïy Vµng Nguyªn §¶n ®Ëp trøng",21} },
-		{"AddDialogOpt",	{"Dïng Chïy B¹c Nguyªn §¶n ®Ëp trøng",22} },
-		{"AddDialogOpt",	{"Dïng Chïy §ång Nguyªn §¶n ®Ëp trøng",23} },
-		{"AddDialogOpt",	{"NhËn phÇn th­ëng sö dông Chïy B¹c vµ Chïy Vµng Nguyªn §¶n ®¹t ®Õn 200 lÇn",7} },
+		{"AddDialogOpt",	{"ÓÃNguyªn §¶n½ğ´¸ÔÒµ°",21} },
+		{"AddDialogOpt",	{"ÓÃNguyªn §¶nÒø´¸ÔÒµ°",22} },
+		{"AddDialogOpt",	{"ÓÃNguyªn §¶nÍ­´¸ÔÒµ°g",23} },
+		{"AddDialogOpt",	{"Ê¹ÓÃNguyªn §¶nÒø´¸ºÍ½ğ´¸»ñµÃ½±Àø´ÎÊı´ïµ½200´Î",7} },
 		{"SetDialogTitle",	{"<lua random(1,100) < 100 and [[ ®au ]] or [[ ®¹i hiÖp xin ®õng …]]/>"} },
 	},
 }
@@ -43,7 +43,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	szName = "Giíi thiÖu ho¹t ®éng ®Ëp trøng vui vÎ",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Tõ 0h ngµy 21 th¸ng 12 n¨m 2010 ®Õn 24h ngµy 10 th¸ng 1 n¨m 2011,®¹i hiÖp ng­¬i cã thÓ cÇm Chïy §ång Nguyªn §¶n, Chïy B¹c Nguyªn §¶n, Chïy Vµng Nguyªn §¶n ®Õn chç cña 'Nguyªn §¶n' ®Ó ®Ëp trøng, ng­¬i sÏ nhËn ®­îc niÒm vui bÊt ngê, ®¹i hiÖp nÕu ng­¬i muèn dïng Chïy B¹c Nguyªn §¶n, Chïy §ång Nguyªn §¶n ®Ó ®Ëp trøng, ngoµi viÖc ng­¬i cÇn cã chïy t­¬ng øng ra, cßn cÇn ph¶i tháa m·n 2 ®iÒu kiÖn d­íi ®©y<enter>1, cÇn ph¶i tæ ®éi víi 3 ng­êi, tæ ®éi 3 ng­êi cÇn ph¶i ®eo MÆt N¹ DŞ Dung nhËn ë LÔ Quan t¹i BiÖn Kinh, T­¬ng D­¬ng hoÆc L©m An<enter>2, tæ ®éi 3 ng­êi cÇn ph¶i ®eo MÆt N¹ DŞ Dung cã mµu s¾c gièng nhau, h×nh d¸ng bªn ngoµi th× kh«ng gièng nhau <enter> dïng Chïy Vµng Nguyªn §¶n th× kh«ng cÇn ®iÒu kiÖn g× c¶, trong ®ã Chïy §ång Nguyªn §¶n ng­¬i cã thÓ nhËn ë LÔ Quan, Chïy B¹c Nguyªn §¶n ®¹i hiÖp cã thÓ tham gia c¸c hÖ thèng trß ch¬i trong game th× nhËn ®­îc, Chïy Vµng Nguyªn §¶n b¹n cã thÓ lÊy nã ë Kú Tr©n C¸c."},
+	tbMessageParam = {"´Ó2010Äê12ÔÂ21ÈÕ0hµ½2011Äê1ÔÂ10ÈÕ24h£¬ ´óÏÀ¿ÉÒÔÄÃ×ÅNguyªn §¶nÍ­´¸¡¢Nguyªn §¶nÒø´¸¡¢Nguyªn §¶n½ğ´¸µ½'Nguyªn §¶n'´¦ÔÒµ°£¬Äã½«»ñµÃÒâÍâ¾ªÏ²£¬´óÏÀÈç¹ûÏëÓÃNguyªn §¶nÒø´¸¡¢Nguyªn §¶nÍ­´¸ÔÒµ°£¬³ıÁËĞèÒªÓĞÏëÒªµÄ´¸Íâ£¬»¹ĞèÒªÂú×ãÒÔÏÂÁ½¸öÌõ¼ş<enter>1£¬ĞèÒªÓë3ÈË×é¶Ó£¬3ÈË×é¶ÓĞèÒª´÷ÔÚãê¾©¡¢ÏåÑô»òÕßÁÙ°²LÔ Quan´¦ÁìÈ¡µÄÒ×ÈİÃæ¾ß<enter>2£¬3ÈË×é¶ÓĞèÒª´÷ÑÕÉ«ÏàÍ¬¡¢ÍâĞÎ²»Í¬µÄÒ×ÈİÃæ¾ß<enter> ÓÃNguyªn §¶n½ğ´¸Ôò²»ĞèÒªÈÎºÎÌõ¼ş£¬ÆäÖĞ£¬Nguyªn §¶nÍ­´¸¿ÉÒÔÔÚLÔ Quan´¦ÁìÈ¡£¬Nguyªn §¶nÒø´¸¿ÉÒÔÔÚ²Î¼ÓÏµÍ³ÓÎÏ·ÖĞÁìÈ¡£¬Nguyªn §¶n½ğ´¸¿ÉÒÔÔÚÆæÕä¸óÁìÈ¡¡£"},
 	tbCondition = 
 	{
 	},
@@ -55,21 +55,21 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "nil",
-	szName = "Dïng Chïy Vµng Nguyªn §¶n ®Ëp trøng",
+	szName = "ÓÃNguyªn §¶n½ğ´¸ÔÒµ°",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"Chïy B¹c vµ Chïy Vµng Nguyªn §¶n sö dông trong ho¹t ®éng lÇn nµy nhiÒu nhÊt 200 lÇn","<"} },
-		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2608,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Chïy Vµng Nguyªn §¶n")} },
+		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"´Ë´Î»î¶¯Ê¹ÓÃµÄNguyªn §¶nÒø´¸ºÍ½ğ´¸×î¶àÎª200´Î","<"} },
+		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2608,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Nguyªn §¶n½ğ´¸")} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ItemGoldAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy Vµng Nguyªn §¶n")} },
-		{"ThisActivity:GetGoldExp",	{GoldExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy Vµng Nguyªn §¶n"),TaskVarIdx_GetGoldExpSum,GoldExpLimit} },
+		{"PlayerFunLib:GetItem",	{ItemGoldAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶n½ğ´¸")} },
+		{"ThisActivity:GetGoldExp",	{GoldExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶n½ğ´¸"),TaskVarIdx_GetGoldExpSum,GoldExpLimit} },
 		{"PlayerFunLib:ConsumeEquiproomItem",	{{tbProp={6,1,2608,1,0,0},},1} },
 		{"ThisActivity:AddTask",	{TaskVarIdx_UseSilverHammerTime,1} },
 	},
@@ -78,22 +78,22 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "nil",
-	szName = "Dïng Chïy B¹c Nguyªn §¶n ®Ëp trøng",
+	szName = "ÓÃNguyªn §¶nÒø´¸ÔÒµ°",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"Chïy B¹c vµ Chïy Vµng Nguyªn §¶n sö dông trong ho¹t ®éng lÇn nµy nhiÒu nhÊt 200 lÇn","<"} },
+		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"´Ë´Î»î¶¯Ê¹ÓÃµÄNguyªn §¶nÒø´¸ºÍ½ğ´¸×î¶àÎª200´Î","<"} },
 		{"ThisActivity:CheckCondition",	{nil} },
-		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2607,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Chïy B¹c Nguyªn §¶n")} },
+		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2607,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Nguyªn §¶nÒø´¸")} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ItemSilverAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy B¹c Nguyªn §¶n")} },
-		{"PlayerFunLib:AddExp",	{SilverExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy B¹c Nguyªn §¶n")} },
+		{"PlayerFunLib:GetItem",	{ItemSilverAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶nÒø´¸")} },
+		{"PlayerFunLib:AddExp",	{SilverExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶nÒø´¸")} },
 		{"PlayerFunLib:ConsumeEquiproomItem",	{{tbProp={6,1,2607,1,0,0},},1} },
 		{"ThisActivity:AddTask",	{TaskVarIdx_UseSilverHammerTime,1} },
 	},
@@ -102,22 +102,22 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "nil",
-	szName = "Dïng Chïy §ång Nguyªn §¶n ®Ëp trøng",
+	szName = "ÓÃNguyªn §¶nÍ­´¸ÔÒµ°",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_UseBronzeHammerTime,5,"Chïy §ång Nguyªn §¶n mçi ngµy chØ sö dông nhiÒu nhÊt 5 lÇn","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_UseBronzeHammerTime,5,"Nguyªn §¶nÍ­´¸Ã¿Ìì×î¶àÖ»ÄÜÓÃ5´Î","<"} },
 		{"ThisActivity:CheckCondition",	{nil} },
-		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2606,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Chïy §ång Nguyªn §¶n")} },
+		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,2606,1,0,0},},1,format("Kh«ng cã <color=yellow>%s<color> kh«ng thÓ ®Ëp trøng","Nguyªn §¶nÍ­´¸")} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ItemBronzeAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy §ång Nguyªn §¶n")} },
-		{"PlayerFunLib:AddExp",	{BronzeExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Chïy §ång Nguyªn §¶n")} },
+		{"PlayerFunLib:GetItem",	{ItemBronzeAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶nÍ­´¸")} },
+		{"PlayerFunLib:AddExp",	{BronzeExpAward,1,format("PhÇn th­ëng sö dông %s ®Ëp trøng","Nguyªn §¶nÍ­´¸")} },
 		{"PlayerFunLib:ConsumeEquiproomItem",	{{tbProp={6,1,2606,1,0,0},},1} },
 		{"ThisActivity:AddTaskDaily",	{TaskVarIdx_UseBronzeHammerTime,1} },
 	},
@@ -126,19 +126,19 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "nil",
-	szName = "Ê¹ÓÃChïy B¹c Nguyªn §¶nºÍ½ğ´¸»ñÈ¡½±ÀøÒÑ´ï200´Î",
+	szName = "Ê¹ÓÃNguyªn §¶nÒø´¸ºÍ½ğ´¸»ñÈ¡½±ÀøÒÑ´ï200´Î",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"´óÏÀÃ»ÓĞÊ¹ÓÃ¹»200´ÎChïy B¹c Nguyªn §¶nºÍ½ğ´¸£¬¼ÌĞø¼ÓÓÍÅ¶",">="} },
+		{"ThisActivity:CheckTask",	{TaskVarIdx_UseSilverHammerTime,200,"´óÏÀÃ»ÓĞÊ¹ÓÃ¹»200´ÎNguyªn §¶nÒø´¸ºÍ½ğ´¸£¬¼ÌĞø¼ÓÓÍÅ¶",">="} },
 		{"ThisActivity:CheckTask",	{TaskVarIdx_IsGet300Award,0,"B¹n ®·  lÜnh th­ëng råi","=="} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{Get300Award,1,"Ê¹ÓÃChïy B¹c Nguyªn §¶nºÍ½ğ´¸»ñÈ¡½±ÀøÒÑ´ï200´Î "} },
+		{"PlayerFunLib:AddExp",	{Get300Award,1,"Ê¹ÓÃNguyªn §¶nÒø´¸ºÍ½ğ´¸»ñÈ¡½±ÀøÒÑ´ï200´Î "} },
 		{"ThisActivity:AddTask",	{TaskVarIdx_IsGet300Award,1} },
 	},
 }
@@ -263,14 +263,14 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "nil",
-	szName = "ÁìÈ¡Chïy B¹c Nguyªn §¶n",
+	szName = "ÁìÈ¡Nguyªn §¶nÒø´¸",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_ShiLianTangYinChui,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","Chïy B¹c Nguyªn §¶n"),"=="} },
+		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_ShiLianTangYinChui,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","Nguyªn §¶nÒø´¸"),"=="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -322,33 +322,33 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_GetYiRongMianJu,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","MÆt N¹ DŞ Dung Nguyªn §¶n"),"=="} },
+		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_GetYiRongMianJu,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","Nguyªn §¶nÒ×ÈİÃæ¾ß"),"=="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:AddTaskDaily",	{TaskVarIdx_GetYiRongMianJu,1} },
-		{"PlayerFunLib:GetItem",	{ItemMianJuAward,1,"NhËn tõ LÔ Quan"} },
+		{"PlayerFunLib:GetItem",	{ItemMianJuAward,1,"´ÓLÔ Quan´¦ÁìÈ¡"} },
 	},
 }
 tbConfig[19] = --Ò»¸öÏ¸½Ú
 {
 	nId = 19,
 	szMessageType = "nil",
-	szName = "ÁìÈ¡Chïy §ång Nguyªn §¶n",
+	szName = "ÁìÈ¡Nguyªn §¶nÍ­´¸",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{80,"default",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_GetTongChui,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","Chïy §ång Nguyªn §¶n"),"=="} },
+		{"ThisActivity:CheckTaskDaily",	{TaskVarIdx_GetTongChui,0,format("H«m nay ng­¬i ®· nhËn ë chç cña ta %s råi","Nguyªn §¶nÍ­´¸"),"=="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
 	{
 		{"ThisActivity:AddTaskDaily",	{TaskVarIdx_GetTongChui,1} },
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2606,1,0,0},nExpiredTime=20110121,},5,"NhËn tõ LÔ Quan"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2606,1,0,0},nExpiredTime=20110121,},5,"´ÓLÔ Quan´¦ÁìÈ¡"} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
@@ -374,7 +374,7 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	szName = "Ph¶i ch¨ng sö dông Chïy Vµng",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {format("Ng­¬i x¸c ®Şnh muèn sö dông <color=yellow>%s<color> kh«ng?","Chïy Vµng Nguyªn §¶n")},
+	tbMessageParam = {format("Ng­¬i x¸c ®Şnh muèn sö dông <color=yellow>%s<color> kh«ng?","Nguyªn §¶n½ğ´¸")},
 	tbCondition = 
 	{
 	},
@@ -390,7 +390,7 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 	szName = "Ph¶i ch¨ng sö dông Chïy B¹c",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {format("Ng­¬i x¸c ®Şnh muèn sö dông <color=yellow>%s<color> kh«ng?","Chïy B¹c Nguyªn §¶n")},
+	tbMessageParam = {format("ÄãX¸c nhËnÊ¹ÓÃ<color=yellow>%s<color> Âğ£¿","Nguyªn §¶nÒø´¸")},
 	tbCondition = 
 	{
 	},
@@ -406,7 +406,7 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	szName = "Ph¶i ch¨ng sö dông Chïy §ång",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {format("Ng­¬i x¸c ®Şnh muèn sö dông <color=yellow>%s<color> kh«ng?","Chïy §ång Nguyªn §¶n")},
+	tbMessageParam = {format("ÄãX¸c nhËnÏëÊ¹ÓÃ <color=yellow>%s<color> Âğ?","Nguyªn §¶nÍ­´¸")},
 	tbCondition = 
 	{
 	},
@@ -419,32 +419,32 @@ tbConfig[24] = --Ò»¸öÏ¸½Ú
 {
 	nId = 24,
 	szMessageType = "CreateDialog",
-	szName = "§èi tho¹i LÔ Quan",
+	szName = "LÔ Quan¶Ô»°",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Huan nghªnh tham gia ho¹t ®éng §Ëp Trøng vui vÎ"},
+	tbMessageParam = {"<npc>»¶Ó­²Î¼ÓHo¹t ®éng §Ëp Trøng vui vÎ"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"NhËn MÆt N¹ DŞ Dung",18} },
-		{"AddDialogOpt",	{"ÁìÈ¡Chïy §ång Nguyªn §¶n",19} },
+		{"AddDialogOpt",	{"ÁìÈ¡Nguyªn §¶nÍ­´¸",19} },
 	},
 }
 tbConfig[25] = --Ò»¸öÏ¸½Ú
 {
 	nId = 25,
 	szMessageType = "CreateDialog",
-	szName = "§èi tho¹i Tr­ëng L·o Thİ LuyÖn §­êng",
+	szName = "Tr­ëng l·o Thİ LuyÖn §­êng¶Ô»°",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Huan nghªnh tham gia ho¹t ®éng §Ëp Trøng vui vÎ"},
+	tbMessageParam = {"<npc>»¶Ó­²Î¼ÓHo¹t ®éng §Ëp Trøng vui vÎ"},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"ÁìÈ¡Chïy B¹c Nguyªn §¶n",15} },
+		{"AddDialogOpt",	{"ÁìÈ¡Nguyªn §¶nÒø´¸",15} },
 	},
 }

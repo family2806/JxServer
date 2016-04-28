@@ -33,8 +33,8 @@ jiefang_0804_mieshanzei.tbRecipe =
 function jiefang_0804_mieshanzei:main()
 	local tbSay = 
 	{
-		"<dec><npc>GÇn ®©y, mét nhãm s¬n tÆc th­êng xuyªn ®Õn c¸c th«n trÊn quÊy nhiÔu d©n lµnh, t×nh h×nh ngµy cµng nghiªm träng, c¸c ®¹i hiÖp h·y ra søc ®¸nh ®uæi bän giÆc nµy. Ngoµi c¬ héi nhÆt ®­îc <color=yellow>ThiÕt Ng­u Lang Nha Béi<color> trªn ng­êi bän chóng, l·o phu cßn cã phÇn th­ëng hËu hØ göi tÆng.",
-		format("Ta ®· nhÆt ®­îc ThiÕt Ng­u Lang Nha Béi/#%s:Compose()", self.szName),
+		"<dec><npc>½ñÈÕ£¬Ò»ÅúÉ½Ôô³£³£µ½´åÕòÈ¥É§ÈÅ°ÙĞÕ£¬Çé¿öÈÕÒæÑÏÖØ£¬¸÷Î»´óÏÀ³öÁ¦¸Ï×ßÉ½Ôô. ÓĞ»ú»á¼ñµ½<color=yellow>ThiÕt Ng­u Lang Nha Béi<color> ÔÚÉ½ÔôÉíÉÏ, ´ËÍâÀÏ·ò»¹ÓĞºñÀñÏàÔù.",
+		format("ÎÒ¼ñµ½ThiÕt Ng­u Lang Nha Béi/#%s:Compose()", self.szName),
 		"KÕt thóc ®èi tho¹i/no"
 	}
 	CreateTaskSay(tbSay);

@@ -14,6 +14,6 @@ function main(nItemIndex)
 		Say(format("§Ó b¶o ®¶m tµi s¶n cña ®¹i hiÖp, xin h·y ®Ó trèng %d %dx%d hµnh trang", nCount, nWidth, nHeight))
 		return 1
 	end
-	tbAwardTemplet:GiveAwardByList(%tbAward, "Sö dông Thiªn Long LÔ Hép", 1)
+	tbAwardTemplet:GiveAwardByList(%tbAward, "Ê¹ÓÃThiªn Long LÖnh", 1)
 	return 0
 end

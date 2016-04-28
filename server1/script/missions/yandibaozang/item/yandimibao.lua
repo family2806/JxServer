@@ -54,24 +54,24 @@ tbYdbz_Box_Award =
 	},	
 	["chiakhoavang"] = 
 	{
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
-		{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},
-		{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=5},
-		{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=2},
-		{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2},		
-		{szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
-		{szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
-		{szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
-		{szName="B¶o R­¬ng Kim ¤ Béi",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=10},
+		{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},
+		{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=5},
+		{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=2},
+		{szName="§å Phæ Kim ¤ H¹ Giíi",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.2},		
+		{szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
+		{szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
+		{szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
+		{szName="B¶o R­¬ng Kim ¤ H¹ng Liªn",tbProp={6,1,2800,1,0,0},nCount=1, nRate=0.04},
 		{szName="B¶o R­¬ng Kim ¤ Vò KhÝ",tbProp={6,1,2801,1,0,0},nCount=1, nRate=0.04},		
-		{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=10},
-		{szName="Ngäc Qu¸n",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},
+		{szName="Ch×a Khãa Nh­ ý",tbProp={6,1,2311,1,0,0},nCount=1,nRate=10},
+		{szName="Ch×a Khãa Nh­ ý",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},
 		{szName="Méc Nh©n LÖnh",tbProp={6,1,30105,1,0,0},nCount=2,nRate=3},
 		{szName="Hoµn Hån §¬n",tbProp={6,1,2837,1,0,0},nCount=1,nRate=2,nExpiredTime=43200},
 		{szName="§iÓm kinh nghiÖm 1", 
@@ -116,17 +116,17 @@ tbYdbz_Box_Award =
 					end,
 					nRate = 1,
 		},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
-		{szName="Tö M·ng Chi B¶o (H¹ng Liªn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},		
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},
+		{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,2350,1,0,0},nCount=1,nRate=2},		
 		{szName="Hoµng Kim Ên (C­êng hãa)",tbProp={0,3211},nCount=1,nRate=1.5,nQuality = 1,nExpiredTime=10080,},
 		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=1.5,nQuality = 1,nExpiredTime=10080,},
-		{szName="§å Phæ B¹ch Hæ Vò KhÝ",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.08},
-		{szName="§å Phæ B¹ch Hæ Vò KhÝ",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.04},
-		{szName="§å Phæ B¹ch Hæ Vò KhÝ",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.01},
+		{szName="§å Phæ B¹ch Hæ H¹ng Liªn",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.08},
+		{szName="§å Phæ B¹ch Hæ H¹ng Liªn",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.04},
+		{szName="§å Phæ B¹ch Hæ H¹ng Liªn",tbProp={6,1,2357,1,0,0},nCount=1,nRate=0.01},
 	},
 }
 
@@ -140,7 +140,7 @@ function main(nIndexItem)
 	local nCount1 = CalcItemCount(3, tbKey1[1], tbKey1[2], tbKey1[3], -1) 
 	local nCount2 = CalcItemCount(3, tbKey2[1], tbKey2[2], tbKey2[3], -1) 
 	if nCount1 == 0 and nCount2 == 0 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc Viªm §Õ BÝ B¶o", 1, "§ãng/no")
+		Say("ÐèÒªÓÐ»Æ½ðÔ¿³×»òÕßÈçÒâÔ¿³×²ÅÄÜ´ò¿ªViªm §Õ BÝ B¶o", 1, "§ãng/no")
 		return 1
 	end
 
@@ -171,12 +171,12 @@ function VnYdbzBoxNewAward(nItemIdx, strKeyType)
 		return
 	end
 	if ConsumeItem(3, 1, tbKey[1], tbKey[2], tbKey[3], -1) ~= 1 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc Viªm §Õ BÝ B¶o", 1, "§ãng/no")
+		Say("ÐèÒªÓÐ»Æ½ðÔ¿³×»òÕßÈçÒâÔ¿³×²ÅÄÜ´ò¿ªViªm §Õ BÝ B¶o", 1, "§ãng/no")
 		return
 	end
 	
 	if ConsumeItem(3, 1, 6, 1, 2805, -1) ~= 1 then
-		Say("Kh«ng t×m thÊy Viªm §Õ BÝ B¶o", 1, "§ãng/no")
+		Say("ÕÒ²»µ½Viªm §Õ BÝ B¶o", 1, "§ãng/no")
 		return
 	end
 	tbAwardTemplet:Give(tbAward, 1, {"YDBZ", "use yandimibao"})	

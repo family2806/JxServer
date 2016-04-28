@@ -13,7 +13,7 @@ function main()
 		elseif (HaveItem(207) == 0) then
 			AddEventItem(207)
 			AddNote("B¹n lÊy ®­îc tói v¶i thø b¶y ")
-			Msg2Player("B¹n lÊy ®­îc mét chiÕc tói v¶i ")
+			Msg2Player("B¹n lÊy ®­îc mét chiÕc tói v¶i  ")
 		else
 			Msg2Player("B¹n thÊt väng v× chiÕc r­¬ng nµy trèng rçng.")
 		end

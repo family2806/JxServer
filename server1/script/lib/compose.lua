@@ -6,7 +6,7 @@
 --	Award	合成得到的物品，定义见 award.lua
 --
 --	Result_su, Result_er, Result_fa	分别是合成成功、错误、失败时的结果显示，都有三种表达式：
---		Result == "" 时	Say("合成成功！", 0) / Say("原料不对！", 0) / Say("合成失败！", 0)
+--		Result == "" 时	Say("H頿 th祅h th祅h c玭g!", 0) / Say("Kh玭g ng nguy猲 li謚!", 0) / Say("H頿 th祅h th蕋 b筰!", 0)
 --		type(Result) == "string"时	Say(Result, 0)
 --
 --	Material	合成所需材料
@@ -121,12 +121,12 @@ function __compose(n_count)
 	local tb_compose = TB_PLCOMPOSE[PlayerIndex]
 	if (__checkall(tb_compose[1], n_count)) then
 		if (award_give(tb_compose[2]) > 0) then
-			__tellresult(tb_compose[3], "合成成功！")
+			__tellresult(tb_compose[3], "H頿 th祅h th祅h c玭g!")
 		else
-			__tellresult(tb_compose[5], "合成失败！")
+			__tellresult(tb_compose[5], "H頿 th祅h th蕋 b筰!")
 		end
 	else
-		__tellresult(tb_compose[4], "原料不对！")
+		__tellresult(tb_compose[4], "Kh玭g ng nguy猲 li謚!")
 	end
 	TB_PLCOMPOSE[PlayerIndex] = nil	--清掉，防刷
 end

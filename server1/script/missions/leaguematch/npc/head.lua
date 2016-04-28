@@ -27,7 +27,7 @@ end
 
 --²éÑ¯ÅÅÐÐÇ°10µÄÕ½¶Ó£¨¼¶±ðÁÐ±í£ºÐÂÐã¡¢¸ß¼¶£©
 function wlls_query_level()
-	wlls_descript(" b¹n muèn kiÓm tra ®éi nµo?",
+	wlls_descript("Muèn kiÓm tra cÊp ®é nµo ?",
 		WLLS_LEVEL_DESC[1].." 10 h¹ng ®Çu/#wlls_query_type(1)",
 		WLLS_LEVEL_DESC[2].." 10 h¹ng ®Çu/#wlls_query_type(2)",
 		"Trë l¹i/wlls_query",
@@ -51,7 +51,7 @@ function wlls_query_type(n_level)
 	end
 	tb_option[getn(tb_option)+1] = "Trë l¹i/wlls_query_level"
 	tb_option[getn(tb_option)+1] = "Ta biÕt råi/OnCancel"
-	wlls_descript("§iÒu nµy "..WLLS_LEVEL_DESC[n_level].." bao gåm "..(getn(tb_option) - 1).." b¹n muèn kiÓm tra ®éi nµo?", tb_option)
+	wlls_descript("§iÒu nµy "..WLLS_LEVEL_DESC[n_level].." bao gåm "..(getn(tb_option) - 1).."Muèn kiÓm tra cÊp ®é nµo ?", tb_option)
 end
 
 --²éÑ¯ÅÅÐÐÇ°10µÄÕ½¶Ó£¨Ç°Ê®ÃûÁÐ±í£©
@@ -63,7 +63,7 @@ function wlls_query_top10(n_mtype)
 	for i = 1, 10 do
 		local str_lgname, n_order = Ladder_GetLadderInfo(n_ladder, i)
 		if (not FALSE(n_order)) then
-			tb_option[getn(tb_option)+1] = strfill_left("h¹ng "..(-n_order).." danh ", 7)..str_lgname.."/#wlls_query_top("..n_ladder..","..i..")"
+			tb_option[getn(tb_option)+1] = strfill_left("h¹ng "..(-n_order).."  danh ", 7)..str_lgname.."/#wlls_query_top("..n_ladder..","..i..")"
 		end
 	end
 	if (getn(tb_option) <= 0) then
@@ -138,7 +138,7 @@ function wlls_query_do(n_lid)
 	if (n_rank > 1000) then
 		str_rank = "H¹ng sau 1000"
 	elseif (n_rank > 0) then
-		str_rank = "H¹ng thø "..n_rank.." danh "
+		str_rank = "h¹ng  "..n_rank.."  danh "
 	else
 		str_rank = "Kh«ng ®­îc xÕp h¹ng"
 	end

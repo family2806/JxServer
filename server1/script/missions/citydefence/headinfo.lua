@@ -72,8 +72,8 @@ tbDEFENCE_RETURN = {
 					}
 					
 tbDEFENCE_ANNOUNCE = {
-			"Ng­êi ch¬i cã thÓ ®Õn Thµnh §« phñ, T­¬ng D­¬ng phñ, L©m An phñ, §¹i Lý phñ, D­¬ng Ch©u phñ ®èi tho¹i víi VÖ binh thµnh m«n ®Ó tham gia thñ thµnh phe Tèng.",
-			"Ng­êi ch¬i cã thÓ ®Õn Ph­îng T­êng phñ, BiÖn Kinh phñ ®èi tho¹i víi VÖ binh thµnh m«n ®Ó tham gia thñ thµnh phe Kim."
+			"Íæ¼Ò¿ÉÒÔµ½Thµnh §« Phñ ¡¢T­¬ng D­¬ng Phñ ¡¢L©m An Phñ ¡¢§¹i Lý¡¢D­¬ng Ch©u Phñ ºÍ³ÇÃÅÎÀ±ø¶Ô»°²Î¼ÓËÎ·½ÊØ³Ç.",
+			"Íæ¼Ò¿ÉÒÔµ½Ph­îng T­êng Phñ ¡¢BiÖn Kinh Phñ ºÍ³ÇÃÅÎÀ±ø¶Ô»°²Î¼Ó½ð·½ÊØ³Ç."
 }
 
 FILE_PLAYERDEATH = 		"\\script\\missions\\citydefence\\playerdeath.lua";

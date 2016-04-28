@@ -62,8 +62,8 @@ end;
 function L20_get_yes()
 	Talk(1, "", "VËy th× ta sÏ ®îi ®Ó nghe tin tèt cña ng­¬i nhĞ!")
 	SetTask(10,20*256+10)
-	AddNote("V× B¹ch Doanh Doanh, ®Õn La Tiªu s¬n ®Ô giÕt La Tiªu ThÊt Quû ")
-	Msg2Player("V× B¹ch Doanh Doanh, ®Õn La Tiªu s¬n ®Ô giÕt La Tiªu ThÊt Quû ")
+	AddNote("ÎªNgò §écµ½ÂŞÏöÉ½É±ÂŞÏüÆß¹í")
+	Msg2Player("ÎªNgò §écµ½ÂŞÏöÉ½É±ÂŞÏüÆß¹í")
 end;
 
 function L20_get_no()
@@ -80,10 +80,10 @@ function L20_prise()
 --	AddMagic(66)
 	add_wu(30)			-- µ÷ÓÃskills_table.luaÖĞµÄº¯Êı£¬²ÎÊıÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
 	Msg2Player("Chóc mõng B¹n! §· ®­îc th¨ng lµ Ngò §éc Gi¸o Th«i mÖnh sø gi¶ SÏ ®­îc häc vâ c«ng: Xİch DiÖm Thùc Thiªn, T¹p Nan D­îc Kinh ")
-	AddNote("V× B¹ch Doanh Doanh, ®i giÕt La Tiªu s¬n thÊt quû, ®­îc th¨ng lµ: Th«i MÖnh Sø Gi¶ ")
+	AddNote("ÎªNgò §écÈ¥É±ÂŞÏüÆß¹í£¬±»·âÎª£º´ßÃüÊ¹Õß")
 end;
 
 function Uworld50_20()
 	SetTask(50,30)
-	Msg2Player("Nghe nh÷ng lêi cña B¹ch Doanh Doanh, b¹n còng c¶m thÊy ®ång c¶m, th­¬ng xãt, nh­ng kh«ng biÕt lµm c¸ch nµo ®Ó gióp ®ì ")
+	Msg2Player("ÌıÁËNgò §écµÄ»°ÄãºÜ¸Ğ¶¯Ò²ÉËĞÄ£¬µ«ÊÇ²»ÖªµÀÔõÃ´°ì")
 end

@@ -30,11 +30,11 @@ function main(nItemIndex)
 				return 1;
 			end
 		else
-			Say("VÉn ch­a trïng sinh th× kh«ng thÓ sö dông B¾c §Èu Tiªn §¬n ®­îc.", 0);
+			Say("»¹Î´ÖØÉú¾Í²»ÄÜÊ¹ÓÃB¾c §Èu Tiªn §¬n.", 0);
 			return 1;
 		end
 	else
-		Say("B¾c §Èu Tiªn §¬n nµy kh«ng ph¶i cña ®¹i hiÖp nªn kh«ng thÓ sö dông ®­îc.", 0);
+		Say("¸ÃB¾c §Èu Tiªn §¬n²»ÊÇ´óÏÀµÄ£¬ËùÒÔ²»ÄÜÊ¹ÓÃ.", 0);
 		return 1;
 	end
 end

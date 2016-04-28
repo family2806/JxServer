@@ -33,7 +33,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ H¹ng Liªn",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ H¹ng Liªn", tbProp = {6,1,3178}, nSuccessRate = 10, nMaxSuccessRate = 80},
+			{szName = "B¹ch Hæ H¹ng LiªnÍ¼Æ×", tbProp = {6,1,3178}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		},				
 		nWidth = 2,
 		nHeight = 1,
@@ -44,7 +44,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Kh«i",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Kh«i", tbProp = {6,1,3173}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ Kh«iÍ¼Æ×", tbProp = {6,1,3173}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},
 		nWidth = 2,
 		nHeight = 2,
@@ -55,7 +55,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Th­îng Giíi",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Th­îng Giíi", tbProp = {6,1,3180}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ Th­îng GiíiÍ¼Æ×", tbProp = {6,1,3180}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		nWidth = 1,
 		nHeight = 1,
@@ -66,7 +66,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Hé UyÓn",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Hé UyÓn", tbProp = {6,1,3177}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ Hé UyÓnÍ¼Æ×", tbProp = {6,1,3177}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		
 		nWidth = 1,
@@ -78,7 +78,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Yªu §¸i",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Yªu §¸i", tbProp = {6,1,3176}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ Yªu §¸iÍ¼Æ×", tbProp = {6,1,3176}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},
 		nWidth = 2,
 		nHeight = 1,
@@ -89,7 +89,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Y",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Y", tbProp = {6,1,3174}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ YÍ¼Æ×", tbProp = {6,1,3174}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		nWidth = 2,
 		nHeight = 3,
@@ -100,7 +100,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Vò KhÝ",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Vò KhÝ",tbProp = {6,1,3182}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ Vò KhÝÍ¼Æ×",tbProp = {6,1,3182}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},		
 		
 		nWidth = 2,
@@ -112,7 +112,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Hµi",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Hµi", tbProp = {6,1,3175}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ HµiÍ¼Æ×", tbProp = {6,1,3175}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},			
 		
 		nWidth = 2,
@@ -124,7 +124,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ Béi",
 		tbSpecialMaterial = 
 		{
-			{szName = "§å Phæ B¹ch Hæ Béi", tbProp = {6,1,3179}, nSuccessRate = 10, nMaxSuccessRate = 80},			
+			{szName = "B¹ch Hæ BéiÍ¼Æ×", tbProp = {6,1,3179}, nSuccessRate = 10, nMaxSuccessRate = 80},			
 		},				
 		
 		nWidth = 1,
@@ -136,7 +136,7 @@ tbFormulaList =
 		szName = "B¹ch Hæ H¹ Giíi",
 		tbSpecialMaterial = 
 		{
-			{szName = "B¹ch Hæ §å Phæ H¹ Giíi", tbProp = {6,1,3181}, nSuccessRate = 10, nMaxSuccessRate = 80},		
+			{szName = "B¹ch Hæ H¹ GiíiÍ¼Æ×", tbProp = {6,1,3181}, nSuccessRate = 10, nMaxSuccessRate = 80},		
 		},		
 
 		nWidth = 1,
@@ -358,5 +358,5 @@ end
 tinsert(tbDialogOpt, {"Hñy bá "})
 
 --ÔÝÊ±¹Ø±ÕÖýÔì°×»¢ÐÔÄÜ - Modified By DinhHQ - 20120511
---pEventType:Reg("Thî rÌn trong thµnh", "ChÕ T¹o Trang BÞ B¹ch Hæ", tbItem2BaiHu.SelectParts, {tbItem2BaiHu})
+--pEventType:Reg("Thî rÌn trong thµnh", "ÖýÔìTrang BÞ B¹ch Hæ", tbItem2BaiHu.SelectParts, {tbItem2BaiHu})
 

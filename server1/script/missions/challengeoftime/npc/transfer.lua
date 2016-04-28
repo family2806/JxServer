@@ -36,7 +36,7 @@ end
 function gotonewworld()
 	local ndate = tonumber(GetLocalDate("%H"))
 	if ndate > 22 and ndate < 10 then
-		Say("Trong thêi gian nµy kh«ng thÓ tiÕn hµnh tiÕp tôc V­ît ¶i", 0)
+		Say("´ËÊ±¶Î²»ÄÜTiÕp tôc V­ît ¶i", 0)
 		leave()
 		return 
 	end

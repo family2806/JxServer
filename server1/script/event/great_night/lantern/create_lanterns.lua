@@ -123,17 +123,17 @@ end
 
 function go_lanternplace()
 	if ( IsCharged() ~= 1 ) then
-		Say("<#>B¹n ph¶i n¹p thÎ míi cã thÓ tham gia Ho¹t ®éng Hoa ®¨ng!", 0)
+		Say("<#>ÄãÒª³äÖµ²Å¿ÉÒÔ²Î¼ÓHoa ®¨ng»î¶¯!", 0)
 		return 0;
 	end;
 	
 	local ntime = tonumber(GetLocalDate("%H%M"));
 	if (ntime < LANTERN_START or ntime >= LANTERN_END) then
-		Say("Ho¹t ®éng Hoa ®¨ng chØ b¾t ®Çu tõ 19h:00 ®Õn 21h:00! Xin quay l¹i sau nhĞ!", 0)
+		Say("Hoa ®¨ng»î¶¯Ö»´Ó19h:00µ½21h:00! Çë´ı»áÔÙÀ´£¡", 0)
 		return 0;
 	end;
 	
-	Say("B¹n muèn ®Õn khu vùc nµo ®Ó tham gia Hoa ®¨ng: Thanh Thµnh s¬n, Vò Di S¬n, §iÓm Th­¬ng s¬n, Hoa s¬n?",5, "<#> Thanh Thµnh s¬n/#lantern_enter_lantern(21)", "<#> Vò Di s¬n/#lantern_enter_lantern(193)", "<#> §iÓm Th­¬ng s¬n/#lantern_enter_lantern(167)", "<#> Hoa S¬n/#lantern_enter_lantern(2)", "<#> KÕt thóc ®èi tho¹i!/OnCancel");
+	Say("ÄãÏëµ½ÄÄ¸öÇøÓò²Î¼ÓHoa ®¨ng£ºÇà³ÇÉ½£¬ÎäÒÄÉ½£¬µã²ÔÉ½£¬Hoa ®¨ng?",5, "<#> Thanh Thµnh s¬n/#lantern_enter_lantern(21)", "<#> Vò Di s¬n/#lantern_enter_lantern(193)", "<#> §iÓm Th­¬ng s¬n/#lantern_enter_lantern(167)", "<#> Hoa S¬n/#lantern_enter_lantern(2)", "<#> KÕt thóc ®èi tho¹i!/OnCancel");
 end;
 
 function del_all_lantern()

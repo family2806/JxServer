@@ -120,6 +120,6 @@ function tbTongSupport:GetAward()
 	PlayerFunLib:AddTaskDaily(self.nTSK_Daily_Award_Count, 1)
 	SetTask(self.nTSK_Exp, floor((nExpAward + nTskExp)/1e6))
 	--print(GetTask(self.nTSK_Exp))
-	local tbAward = {szName = "ßi”m Kinh Nghi÷m", nExp=nExpAward}
+	local tbAward = {szName = "ßiKinh nghi÷m÷µ", nExp=nExpAward}
 	tbAwardTemplet:Give(tbAward, 1, {"PhongVanLenhBai", "PhanThuongBangHoiTiepNhanTanThu"})
 end

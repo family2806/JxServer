@@ -441,7 +441,7 @@ end
 
 
 function zhuansheng_help_xiandan()
-	CreateTaskSay({"<dec><npc>".."Phµm nh÷ng ng­êi cã cÊp 199 vµ h¬n 2 tû kinh nghiÖm tu luyÖn 'B¾c §Èu Tr­êng Sinh ThuËt' sÏ ®­îc n©ng cao nh÷ng thuéc tİnh, nh­ng nh÷ng kinh nghiÖm thõa ra sÏ bŞ l·ng phİ. V× vËy cã mét ngµy kia ta vµ 1 vŞ Èn sü ph¸t minh ra lo¹i tiªn ®¬n nµy, th«ng qua 'B¾c §Èu Tiªn §¬n' ng­¬i cã thÓ l­u gi÷ nh÷ng kinh nghiÖm cßn thõa ®Ó lóc trïng sinh xong th× cã thÓ sö dông.",
+	CreateTaskSay({"<dec><npc>".."·²ÊÇ199¼¶ºÍ20¶àÒÚ¾­ÑéĞŞÁ¶±±¶·³¤ÉúÊõ£¬½«Ìá¸ß¿¹ĞÔ£¬µ«ÊÇ£¬¶àÓàµÄ¾­Ñé½«±»ÀË·Ñµô£¬ËùÒÔ£¬ÎÒºÍÒ»Î»ÒşÊ¿·¢Ã÷Ò»ÖÖÏÉµ¤£¬Í¨¹ıB¾c §Èu Tiªn §¬n£¬Äã¿ÉÒÔ±£ÁôÓàÏÂµÄ¾­Ñé£¬ÖØÉúÊ±¿ÉÒÔÓÃµ½.",
 				"Ta muèn t×m hiÓu thªm./zhuansheng_ondialog",
 				"KÕt thóc ®èi tho¹i/OnCancel"});
 end

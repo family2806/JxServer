@@ -71,7 +71,7 @@ tb_Mareial =
 		{G=6,D=1,P=1512,szname="B¸nh Trung Thu gµ n­íng",num=1,nMoney=150000},
 		{G=6,D=1,P=1503,szname="Tói bét",num=3},
 		{G=6,D=1,P=1504,szname="Tói ®­êng",num=3},
-		{G=6,D=1,P=1505,szname="Tói trøng",num=3},
+		{G=6,D=1,P=1505,szname="¼¦Tói trøng",num=3},
 		{G=6,D=1,P=1508,szname="Tói thÞt gµ",num=1},
 		},
 	szkaozhu = {

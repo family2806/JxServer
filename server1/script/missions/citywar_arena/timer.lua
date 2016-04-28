@@ -56,6 +56,6 @@ function ReportBattle(V)
 
 	gametime = (floor(GetMSRestTime(MISSIONID,17)/18));
 	RestMin, RestSec = GetMinAndSec(gametime);
-	str1 = "Giai ®o¹n thi ®Êu <#>: Sè ng­êi hai bªn hiÖn t¹i: phe Vµng"..GetMSPlayerCount(MISSIONID, 1).."<#>, bªn mµu TÝm"..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian cßn d­ "..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
+	str1 = "Giai ®o¹n thi ®Êu <#>: Sè ng­êi hai bªn hiÖn t¹i: phe Vµng"..GetMSPlayerCount(MISSIONID, 1).."<#>, bªn mµu TÝm"..GetMSPlayerCount(MISSIONID, 2).."<#>. Thêi gian cßn d­ "..RestMin.."<#> phót "..RestSec.."<#> gi©y  ";
 	Msg2MSAll(MISSIONID, str1);
 end;

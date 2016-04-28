@@ -20,6 +20,6 @@ function main(nItemIndex)
 		return 1
 	end
 	-- ÅÐ¶Ï±³°ü¿Õ¼ä
-	tbAwardTemplet:GiveAwardByList(%tbAward, "Sö dông §¹i B¹ch C©u Hoµn LÔ Bao", 1)
+	tbAwardTemplet:GiveAwardByList(%tbAward, "Ê¹ÓÃ§¹i B¹ch C©u hoµnÀñ°ü", 1)
 	return 0
 end

@@ -50,7 +50,7 @@ function tbJiefang0904_jiu:OnDailogMain(nItemIndex, szDescLink)
 	szDescLink = szDescLink or "<npc>"
 	self:MakeComposeClas(%tbFormulaList)
 	local tbSay = self.tbComposeList:MakeOptByProductName("§æi", nItemIndex, szDescLink)
-	local szTitle	= "<dec>"..szDescLink.."LÔ quan: Ho¹t ®éng “R­îu mõng th¾ng lîi” diÔn ra tõ ngµy 28-04-2009 ®Õn 24:00 31-05-2009. Trong thêi gian ho¹t ®éng, ®¹i hiÖp cã thÓ thu thËp “Tói mõng chiÕn th¾ng” ®Ó nhËn ®­îc “Bao g¹o”,”N­íc tinh khiÕt”,”Men r­îu”,vµ mua “Nho t­¬i” trong Kú Tr©n C¸c nÕu cÇn . §¹i hiÖp cã thÓ dïng c¸c nguyªn liÖu nµy ®Ó ®èi lÊy BÇu r­îu vµ R­îu nho ®Ó nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ c¸c vËt phÈm cã gi¸ trŞ. Nh­ng h·y nhí kü:®õng uèng r­îu qu¸ nhiÒu sÏ cã h¹i cho søc kháe.";
+	local szTitle	= "<dec>"..szDescLink.."Àñ¹Ù: Õ½Ê¤×£¾Æ»î¶¯´Ó28-04-2009µ½24:00£¬31-05-2009.»î¶¯ÆÚ¼ä£¬´óÏÀ¿ÉÒÔËÑ¼¯ºØÊ¤´ü£¬Men r­îu£¬Èç¹ûĞèÒªµÄ»°»¹¿ÉÔÚÆæÕä¸óÂòNho t­¬i.´óÏÀ¿ÉÒÔÓÃÕâĞ©ÎïÆ·§æiBÇu r­îuºÍR­îu nhoÀ´ÁìÈ¡¾­ÑéÖµ½±ÀøºÍ¸÷ÖÖÓĞ¼ÛÖµµÄÎïÆ·. µ«Òª½÷¼Ç£ºÒû¾Æ¹ı¶ÈÉËÉíÌå.";
 	
 	
 	tinsert(tbSay , 1, szTitle);

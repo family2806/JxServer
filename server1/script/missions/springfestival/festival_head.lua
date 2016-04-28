@@ -155,7 +155,7 @@ if (not __FESTIVAL_HEAD__) then
 				    bOn = 1;
 			end;
 			if (bOn == 0) then
-				Talk(1, "", FE_SIGNNPCNAME.."Chóng ta ®ang chuÈn bÞ kÕ ho¹ch ®èi phã Qu¸i thó, ho¹t ®éng sÏ diÔn ra vµo buæi tr­a 12:00 ®Õn 14:00, buæi tèi tõ 19:00 ®Õn 23:00, ban ®ªm tõ 1:00 ®Õn 3:00, ®Õn lóc ®ã h·y quay l¹i!");
+				Talk(1, "", FE_SIGNNPCNAME.."ÎÒÃÇÕý×¼±¸¶Ô¸¶Qu¸i thó µÄ¼Æ»®£¬»î¶¯½«´Ó12:00 µ½14:00, ÍíÉÏ19:00 µ½ 23:00, ÎçÒ¹1:00 µ½3:00, µ½Ê±ÒªÀ´Å¶!");
 				return
 			else
 				Talk(1, "", FE_SIGNNPCNAME.."Ng­¬i còng muèn ®i ®¸nh Qu¸i thó µ? Nh­ng ng­êi dÉn ®­êng ®· ®i råi, vµo lóc 0 phót, 15 phót, 30 phót, 45phót sÏ quay l¹i.");
@@ -342,7 +342,7 @@ if (not __FESTIVAL_HEAD__) then
 	function itemuseplacecheck(nType)   --nType :1¡ª¡ª¹«¹²µÀ¾ß£»2¡ª¡ªÄêÊÞ×¨ÓÃµÀ¾ß£»3¡ª¡ªÆÕÍ¨Íæ¼Ò×¨ÒµµÀ¾ß
 	    local ww, xx, yy = GetWorldPos();
 	    if (FE_MAPID[2] ~= ww) then
-    	    Talk(1, "", "VËt phÈm nµy chØ dïng trong ho¹t ®éng ngµy Xu©n.");
+    	    Talk(1, "", "¸ÃÎïÆ·Ö»ÓÃÓÚHo¹t ®éng ngµy Xu©n.");
 	        return 0;
 	    end;
 	    

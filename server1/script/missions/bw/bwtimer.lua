@@ -104,7 +104,7 @@ function bw_begin_compete()
 	end;
 		
 	Msg2MSAll(BW_MISSIONID, "§· vµo l«i ®µi, tranh tµi chÝnh thøc b¾t ®©u!");
-	str = GetMissionS(CITYID).."L«i ®µi <color=yellow>"..szCaptainName[1].."<color> cïng<color=yellow>"..szCaptainName[2].."<color> §· vµo l«i ®µi, tranh tµi chÝnh thøc b¾t ®©u!";
+	str = GetMissionS(CITYID).."L«i ®µi <color=yellow>"..szCaptainName[1].."<color> cïng<color=yellow>"..szCaptainName[2].."<color> <#>§· vµo l«i ®µi, tranh tµi chÝnh thøc b¾t ®©u!";
 	--AddGlobalCountNews(str);
 	RunMission(BW_MISSIONID);
 	return

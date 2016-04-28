@@ -34,6 +34,6 @@ function Uworld36_prise()
 	SetTask(36,Uworld36)
 	AddRepute(i)		-- ¼ÓÉùÍû
 	AddNote("§­a cho DiÖu TrÇn B¹ch Ngäc nh­ ı, hoµn thµnh nhiÖm vô, trë thµnh Kı Danh ®Ö tö cña Nga Mi ph¸i ")
-	Msg2Player("§­a cho DiÖu TrÇn B¹ch Ngäc nh­ ı, hoµn thµnh nhiÖm vô, trë thµnh Kı Danh ®Ö tö cña Nga Mi ph¸i, thanh thÕ giang hå ®­îc t¨ng "..i.."®iÓm.")
+	Msg2Player("§­a cho DiÖu TrÇn B¹ch Ngäc nh­ ı, hoµn thµnh nhiÖm vô, trë thµnh Kı Danh ®Ö tö cña Nga Mi ph¸i , ÄãµÄ½­ºşÃûÆøÔö¼Ó"..i.."®iÓm.")
 	Talk(1,"","Chóc mõng muéi nhËn ®­îc B¹ch Ngäc Nh­ ı, thuËn lîi qua ®­îc 4 ¶i thö th¸ch cña tû muéi ta. Tõ nay muéi ®· lµ ®Ö tö cña bæn ph¸i! VÒ sau hoan nghªnh muéi ®Õn Nga Mi du ngo¹n!")
 end

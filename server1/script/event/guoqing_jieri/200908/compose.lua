@@ -30,11 +30,11 @@ tbGuoqing0908.tbFormulaList =
 	{
 		tbMaterial = 
 		{
-			{szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2097}, nCount = 5},
+			{szName="ChiÕc mò tai bÌo", tbProp={6, 1, 2097}, nCount = 5},
 			{szName="HuyÒn tinh kho¸ng th¹ch (cÊp 2)", tbProp={6, 1, 147, 2}},
 			{nJxb = 6e4},
 		},
-		tbProduct = {szName="ChiÕc mò hßa b×nh", tbProp={6, 1, 2098, 1, 0, 0}, nExpiredTime = 20090914}
+		tbProduct = {szName="ChiÕc mò tai bÌo", tbProp={6, 1, 2098, 1, 0, 0}, nExpiredTime = 20090914}
 		
 	},
 	[2] =

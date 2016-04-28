@@ -1,5 +1,5 @@
 function DisposeItem()
-	GiveItemUI("Hñy vËt phÈm", "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm!", "DisposeConfirm", "onCancel", 1);
+	GiveItemUI("Hñy vËt phÈm", "Hñy vËt phÈmÊ±£¬´óÏÀÒªĞ¡ĞÄ!", "DisposeConfirm", "onCancel", 1);
 end
 
 function DisposeConfirm(nCount)
@@ -18,7 +18,7 @@ function DisposeConfirm(nCount)
 	local strItem = GetItemName(nItemIndex)
 	RemoveItemByIndex(nItemIndex)
 	Talk(1, "", "§¹i hiÖp cã thÓ s¾p xÕp l¹i r­¬ng chøa ®å råi!");
-	Msg2Player("§¹i hiÖp võa hñy vËt phÈm thµnh c«ng")
+	Msg2Player("´óÏÀ¸Õ¸ÕHñy vËt phÈm³É¹¦")
 	WriteLog(date("%Y%m%d %H%M%S").."\t".." Hñy item ABHKLB "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
 end
 

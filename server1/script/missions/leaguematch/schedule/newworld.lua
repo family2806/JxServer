@@ -4,7 +4,7 @@ Include("\\script\\maps\\newworldscript_default.lua")
 function OnNewWorld(szParam)
 	local n_mapid = wlls_get_mapid(1)
 	if (not n_mapid) then
-		wlls_error_log("®·½ø´íÁË×¼±¸ÇøÓò")
+		wlls_error_log("®·½ø´íÁË khu vùc chuÈn bŞ")
 		wlls_transback()
 		return
 	end

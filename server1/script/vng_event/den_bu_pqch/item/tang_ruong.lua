@@ -52,7 +52,7 @@ function GetPQCH(nItemIndex,nCount)
 	end
 	
 	if ( nCount > nItemParam ) then
-		Talk(1,"",format("HiÖn t¹i b¹n chØ cßn %d Phó Quý CÈm H¹p ..",nItemParam))
+		Talk(1,"",format("Ä¿Ç°ÄãÖ»»¹ÓÐ %d Phó Quý CÈm H¹p..",nItemParam))
 		return	
 	end
 	
@@ -80,5 +80,5 @@ end
 
 function GetDesc(nItemIndex)
 	local nValueParam =GetItemParam(nItemIndex,1)
-	return format("Cßn d­ l¹i :<color=yellow>%d<color> Phó Quý CÈm H¹p", nValueParam)
+	return format("»¹Ê£Óà :<color=yellow>%d<color>Phó Quý CÈm H¹p", nValueParam)
 end

@@ -10,7 +10,7 @@ function main()
 		AddEventItem(42) 
 		Msg2Player("LÊy ®­îc Háa Khİ Phæ ")
 		SetTask(2, 30*256+50)
-		AddNote("Më r­¬ng lÊy ®­îc Ho¶ Khİ Phæ ")
+		AddNote("¿ªÏä£¬LÊy ®­îc Háa Khİ Phæ  ")
 	elseif (UTask_tm >= 30*256+50) and (UTask_tm <= 30*256+60) and (HaveItem(42) == 0) then			-- µÀ¾ß¶ªÁË
 		AddEventItem(42) 
 		Talk(1,"","Hãa ra 'Háa Khİ Phæ' ng­¬i ®· bá quªn trong r­¬ng b¸u!")

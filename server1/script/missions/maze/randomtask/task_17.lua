@@ -82,7 +82,7 @@ function pTask:Say_Accrue(player, nIndex)
 		player:Say("Xin h·y më §iªu T­îng ra råi l¹i gÆp ta.")
 		return
 	elseif (self.m_TalkIndex == 2) then
-		player:Say("TrËn nµy ®Õn l­ît T­¬ng Kh¾c Tö xuÊt ®Ò, ta nghØ ng¬i mét l¸t.")
+		player:Say("Õâ³¡ÂÖµ½T­¬ng Kh¾c Tö³öÌâ£¬ÎÒÐÝÏ¢Ò»ÏÂ.")
 		return
 	end
 	if (not self.m_AppointPlayer) then
@@ -90,7 +90,7 @@ function pTask:Say_Accrue(player, nIndex)
 		self.m_QuestionSeries = random(0, 4)
 		self.m_AppointSeries = GetAccrueSeries(self.m_QuestionSeries)
 	end
-	local msg = format("%s, Xin h·y më %s tÊt c¶ §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
+	local msg = format("%s, Xin h·y më %s §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
 	player:Say(msg)
 	self:BroadCast(msg)
 end
@@ -100,7 +100,7 @@ function pTask:Say_ConquerIndex(player, nIndex)
 		player:Say("Xin h·y më §iªu T­îng ra råi l¹i gÆp ta.")
 		return
 	elseif (self.m_TalkIndex == 1) then
-		player:Say("TrËn nµy ®Õn l­ît T­¬ng Kh¾c Tö xuÊt ®Ò, ta nghØ ng¬i mét l¸t.")
+		player:Say("Õâ³¡ÂÖµ½T­¬ng Kh¾c Tö³öÌâ£¬ÎÒÐÝÏ¢Ò»ÏÂ.")
 		return
 	end
 	if (not self.m_AppointPlayer) then
@@ -108,7 +108,7 @@ function pTask:Say_ConquerIndex(player, nIndex)
 		self.m_QuestionSeries = random(0, 4)
 		self.m_AppointSeries = GetConquerSeries(self.m_QuestionSeries)
 	end
-	local msg = format("%s, Xin h·y më %s tÊt c¶ §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
+	local msg = format("%s, Xin h·y më %s §iªu T­îng Ngò Hµnh", self.m_AppointPlayer, tbTASK17_SERIESNAME[self.m_QuestionSeries])
 	player:Say(msg)
 	self:BroadCast(msg)
 end

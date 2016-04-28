@@ -59,7 +59,7 @@ function task3()
 UTask_tm = GetTask(2)
 
 if (UTask_tm < 10*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, nhiÖm vô ®ang tiÕn hµnh lµ:")
 end;
 
 if (UTask_tm == 10*256) then	
@@ -71,47 +71,47 @@ Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp
 end;
 
 if (UTask_tm == 20*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm > 20*256) and (UTask_tm < 30*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm == 30*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm > 30*256) and (UTask_tm < 40*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm == 40*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm > 40*256) and (UTask_tm < 50*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm == 50*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm > 50*256) and (UTask_tm < 60*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm == 60*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm > 60*256) and (UTask_tm < 70*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_tm >= 70*256) and (UTask_tm < 80*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·"..UTask_tm.."<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:", 1, "Trïng ph¶n s­ m«n/v8")
+Say("<#> Muèn nhËp m«n häc nghÖ, ph¶i hoµn thµnh nhiÖm vô nhËp m«n. Sau khi nhËp m«n, lÇn l­ît hoµn thµnh 5 nhiÖm vô cña m«n ph¸i, sÏ häc ®­îc vâ c«ng, ®­îc phong danh hiÖu. Hoµn thµnh nhiÖm vô xuÊt s­ th× cã thÓ xuÊt s­. HiÖn ®·"..UTask_tm.."<#>, nhiÖm vô ®ang tiÕn hµnh lµ:", 1, "Trïng ph¶n s­ m«n/v8")
 end;
 
 end;

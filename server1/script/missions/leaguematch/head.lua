@@ -204,20 +204,20 @@ WLLS_FORBID_ITEM = {
 	{	" chÝ t«n bÝ b¶o ", {6, 1, 2375, -1, 0, 0},635},	
 	{	" n­íc tÆc tµi b¶o ", {6, 1, 2376, -1, 0, 0},635},	
 	{	" håi thiªn t¸i t¹o lÔ tói ", {6, 1, 2527, -1, 0, 0},635},
-	{	" nhanh chãng hoµn lÔ tói ", {6, 1, 2520, -1, 0, 0},635},
-	{	" ®¹i lùc hoµn lÔ tói ", {6, 1, 2517, -1, 0, 0},635},
+	{	" nhanh chãng hoµn Àñ°ü", {6, 1, 2520, -1, 0, 0},635},
+	{	" ®¹i lùc hoµn Àñ°ü", {6, 1, 2517, -1, 0, 0},635},
 	--Updated by DinhHQ - 20110425
 	{	" c«ng thµnh chiÕn lÔ tói ", {6, 1, 2377, -1, 0, 0},635},
-	{	" ®éc phßng hoµn lÔ tói ", {6, 1, 2524, -1, 0, 0},635},
-	{	" tr­êng mÖnh hoµn lÔ tói ", {6, 1, 2515, -1, 0, 0},635},
+	{	" ®éc phßng hoµn Àñ°ü", {6, 1, 2524, -1, 0, 0},635},
+	{	" tr­êng mÖnh hoµn Àñ°ü", {6, 1, 2515, -1, 0, 0},635},
 	{	" gia tèc hoµn lÔ tói ", {6, 1, 2516, -1, 0, 0},635},
-	{	" cao nhanh chãng hoµn lÔ tói ", {6, 1, 2518, -1, 0, 0},635},
-	{	" trung häc ®Ö nhÞ cÊp hoµn lÔ tói ", {6, 1, 2519, -1, 0, 0},635},
-	{	" nhanh chãng hoµn lÔ tói ", {6, 1, 2520, -1, 0, 0},635},
-	{	" b¨ng phßng hoµn lÔ tói ", {6, 1, 2521, -1, 0, 0},635},
-	{	" l«i phßng hoµn lÔ tói ", {6, 1, 2522, -1, 0, 0},635},
-	{	" löa phßng hoµn lÔ tói ", {6, 1, 2523, -1, 0, 0},635},
-	{	" ®éc phßng hoµn lÔ tói ", {6, 1, 2524, -1, 0, 0},635},
+	{	" cao nhanh chãng hoµn Àñ°ü", {6, 1, 2518, -1, 0, 0},635},
+	{	" trung häc ®Ö nhÞ cÊp hoµn Àñ°ü", {6, 1, 2519, -1, 0, 0},635},
+	{	" nhanh chãng hoµn Àñ°ü", {6, 1, 2520, -1, 0, 0},635},
+	{	" b¨ng phßng hoµn Àñ°ü", {6, 1, 2521, -1, 0, 0},635},
+	{	" l«i phßng hoµn Àñ°ü", {6, 1, 2522, -1, 0, 0},635},
+	{	" löa phßng hoµn Àñ°ü", {6, 1, 2523, -1, 0, 0},635},
+	{	" ®éc phßng hoµn Àñ°ü", {6, 1, 2524, -1, 0, 0},635},
 	{	" vi s¬n lÖnh bµi lÔ tói ", {6, 1, 2525, -1, 0, 0},635},
 	{	" hoµn hån ®an lÔ tói ", {6, 1, 2830, -1, 0, 0},635},
 	{	" tiªu dao t¸n ", {6, 1, 2831, -1, 0, 0},635},
@@ -675,8 +675,8 @@ function wlls_award_pl(nLevel, nWin, nTie, nTotal)
 		local nPoint	= wlls_GetAddPoint(nLevel, nWin, nTie)
 		SetTask(WLLS_TASKID_POINT, GetTask(WLLS_TASKID_POINT) + nPoint)
 		SetTask(WLLS_TASKID_HONOUR, GetTask(WLLS_TASKID_HONOUR) + nPoint)
-		Msg2Player(format("Chóc mõng ng­¬i ®¹t ®­îc t­ëng th­ëng -- script viet hoa By http://tranhba.com -  vinh dù trÞ gi¸ lµ %d ®iÓm ", nPoint))
-		wlls_award_log(format("Chóc mõng ng­¬i ®¹t ®­îc liªn cuéc so tµi t­ëng th­ëng -  vinh dù trÞ gi¸ lµ %d ®iÓm . tæng céng cã %d ®iÓm ", nPoint, GetTask(WLLS_TASKID_HONOUR)))
+		Msg2Player(format("Chóc mõng ng­¬i ®¹t ®­îc t­ëng th­ëng -- script viet hoa By http://tranhba.com - vinh dù trÞ gi¸ lµ %d ®iÓm ", nPoint))
+		wlls_award_log(format("Chóc mõng ng­¬i ®¹t ®­îc liªn cuéc so tµi t­ëng th­ëng - vinh dù trÞ gi¸ lµ %d ®iÓm . tæng céng cã %d ®iÓm ", nPoint, GetTask(WLLS_TASKID_HONOUR)))
 	end
 	SetTask(WLLS_TASKID_TOTAL, GetTask(WLLS_TASKID_TOTAL) + nTotal)
 end
@@ -926,7 +926,7 @@ function wlls_en_check()
 	end
 	
 --	if (keyitem[1] == 0 and keyitem[2] == 0 and keyitem[3] == 0) then
---		Say("Héi tr­êng quan viªn  ng­¬i kho¸i tiÖp lan tr­íc m¾t kh«ng cã tr­ng bµy bÊt kú thuèc men , ng­¬i vÉn lµ ®em thuèc men bá vµo kho¸i tiÖp lan ®i <color=red> vµo trµng sau ®em cÊm chØ di ®éng bÊt kú vËt phÈm , xin x¸c nhËn ng­¬i kho¸i tiÖp lan vËt phÈm ®· tr­ng bµy xong <color>", 0)
+--		Say("Héi tr­êng quan viªn ng­¬i kho¸i tiÖp lan tr­íc m¾t kh«ng cã tr­ng bµy bÊt kú thuèc men , ng­¬i vÉn lµ ®em thuèc men bá vµo kho¸i tiÖp lan ®i <color=red> vµo trµng sau ®em cÊm chØ di ®éng bÊt kú vËt phÈm , xin x¸c nhËn ng­¬i kho¸i tiÖp lan vËt phÈm ®· tr­ng bµy xong <color>", 0)
 --		return nil
 --	end
 	

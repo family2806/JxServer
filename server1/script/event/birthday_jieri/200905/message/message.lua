@@ -52,7 +52,7 @@ function birthday0905_gettask_message(nIdx)
 	local ntskdate	= GetTask(tbBirthday0905.tbTask.tsk_msg_date+nIdx); 
 	local ntskcount	= GetTask(tbBirthday0905.tbTask.tsk_msg_needcount);
 	if (ntskid ~= nIdx) then
-		Say("DŞch quan: Ng­¬i vÉn ch­a nhËn nhiÖm vô nµy.", 0);
+		Say("DŞch Quan: §¹i hiÖp ch­a ®ñ ®iÒu kiÖn ®Ó nhËn nhiÖm vô nµy.", 0);
 		return
 	end
 	

@@ -49,7 +49,7 @@ function main()
 	elseif (V == 2) then --¿ªÕ½½×¶Î
 		HaveCamp3 = HaveItem(348);
 		if (HaveCamp3 == 1) then
-			Say("B¹n hiÖn ®ang cã DiÖp Lôc Anh Hïng lÖnh. Muèn vµo tham chiÕn hay ra khái ®©y?", 3, "§Õn trung t©m cña ®Êu tr­êng /GoWarCenter", "Rêi khái khu vùc ®Êu tr­êng /LeaveWar", "§Ó ta nghÜ l¹i xem /OnCancel");
+			Say("B¹n hiÖn ®ang cã DiÖp Lôc Anh Hïng lÖnh. Muèn vµo tham chiÕn hay ra khái ®©y?", 3, "§Õn trung t©m cña ®Êu tr­êng /GoWarCenter", "Rêi khái khu vùc ®Êu tr­êng /LeaveWar", "ÈÃ§Ó ta nghÜ l¹i xem /OnCancel");
 		end;
 	elseif (V == 0) then
 		Say("Thêi gian b¸o danh trËn khiªu chiÕn lµn nµy vÇn ch­a ®Õn! ",0);

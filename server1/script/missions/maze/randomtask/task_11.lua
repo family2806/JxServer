@@ -1,5 +1,5 @@
 -- 11.	ÓĞ¸öÃÀÀöµÄÉÙÅ®Ph¸ O¶n Nhi£¬µØÉÏÓĞºÜ¶àhoa£¬ÉÙÅ®ÒªÇóÍæ¼Ò½»ÄÉ1ÒÚÁ½Òø×Ó£¬·ñÔò²É¼¯×îºìµÄÒ»¶ähoa£¬
--- ²»ÂÛ²ÉÁËÄÄ¶ä£¬¶¼²»ÄÜÍê³ÉÈÎÎñ£¬Òª²É¼¯ºÍÉÏ½»3´Î£¬È»ºóPh¸ O¶n Nhi»¹ÊÇ²»ÂúÒâ£¬ÕÙ»½³ö11¸öTiÓu Ph¸ O¶n Nhi£¬»÷°ÜËùÓĞTiÓu Ph¸ O¶n Nhiºó»òÕßÉÏ½»1ÒÚÁ½Òø×Ó¹ı¹Ø¡£
+-- ²»ÂÛ²ÉÁËÄÄ¶ä£¬¶¼²»ÄÜÍê³ÉÈÎÎñ£¬Òª²É¼¯ºÍÉÏ½»3´Î£¬È»ºóPh¸ O¶n Nhi»¹ÊÇ²»ÂúÒâ£¬ÕÙ»½³ö11¸öĞ¡Ph¸ O¶n Nhi£¬»÷°ÜËùÓĞĞ¡Ph¸ O¶n Nhiºó»òÕßÉÏ½»1ÒÚÁ½Òø×Ó¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\fightnpc_list.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
@@ -62,7 +62,7 @@ function pTask:CallMonsters()
 	local pos = self:GetPosition().t11_monster
 	local mapid = self:GetMapId()
 	for i = 1, 11 do
-		local nIndex = FightNpcManager:AddNpc("TiÓu Ph¸ O¶n Nhi", 1705, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
+		local nIndex = FightNpcManager:AddNpc("Ğ¡Ph¸ O¶n Nhi", 1705, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
 		tinsert(self.m_Monsters, nIndex)
 	end
 end
@@ -87,7 +87,7 @@ end
 
 function pTask:BossSay(player)
 	if (self.m_Step == 1) then
-		return "Muèn v­ît ¶i kh«ng? VËy th× ®­a ®©y 500 v¹n l­îng tiÒn m·i lé phİ ®i.", {"§­a", "Kh«ng ®­a", "§Ó ta suy nghÜ"}
+		return "Muèn v­ît ¶i kh«ng? VËy th× ®­a ®©y 500 v¹n l­îng tiÒn m·i lé phİ ®i.", {"§­a", "²»§­a", "§Ó ta suy nghÜ"}
 	elseif (self.m_Step < 5) then
 		local name = player:GetName()
 		local count = self.m_Collections[name]
@@ -96,7 +96,7 @@ function pTask:BossSay(player)
 			return
 		end
 		if (self.m_Step == 2) then
-			player:Say("§ãa hoa nµy kh«ng ®­îc ®á cho l¾m, c¸c ng­¬i l¹i h¸i vµi c¸i ®i.")
+			player:Say("Õâ¶ähoa²»ºì£¬ÄãÃÇÔÙÈ¥ÕªĞ©.")
 			self.m_Collections[name] = count - 1
 			self.m_Step = 3
 		elseif (self.m_Step == 3) then
@@ -109,7 +109,7 @@ function pTask:BossSay(player)
 			self.m_Step = 5
 		end
 	else
-		player:Say("C¸c chŞ em, h·y l«i hä ra mµ ®¸no cho ta mét trËn!")
+		player:Say("½ãÃÃÃÇ£¬§­aÎÒÀ­³öÈ¥´ò!")
 	end
 end
 
@@ -131,7 +131,7 @@ function pTask:OnAnswer(player, sel, nIndex)
 				self:Proceed()
 			end
 		elseif (sel == 2) then
-			player:Say("Kh«ng ®­a°¡£¿ÄÇ¾Í§­aÎÒÕªÒ»¶ä×îºìµÄ»°»ØÀ´.")
+			player:Say("²»§­a°¡£¿ÄÇ¾Í§­aÎÒÕªÒ»¶ä×îºìµÄ»°»ØÀ´.")
 			self.m_Step = 2
 		end
 	end
@@ -146,8 +146,8 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 	end
 	if (tb.NpcIndex > 0) then
 		local name = player:GetName()
-		player:Say("Ng­¬i h¸i ®­îc mét ®ãa hoa mµu ®á")
-		self:BroadCast(format("%s h¸i ®­îc mét ®ãa hoa mµu ®á", name))
+		player:Say("ÄãÕªµ½Ò»¶äºìhoa")
+		self:BroadCast(format("%s Õªµ½Ò»¶äºìhoa®á", name))
 		DlgNpcManager:DelNpc(tb.NpcIndex)
 		tb.NpcIndex = 0
 		local count = self.m_Collections[name] or 0

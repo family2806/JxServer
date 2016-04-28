@@ -34,7 +34,7 @@ function main()
    elseif (Uworld122 >= 30) and (Uworld122 < 60) then
    	Talk(1,"","Cßn ®øng ®©y n÷a µ! Muèn ta ra tay h¶?") 
    elseif (Uworld122 == 70) then
-   	Talk(7,"U122_prise","……","……","§¹i s­?","°¥Ñ½£¬……£¬ÎÒ²»¸Ò°¡!","Ai da! §¹i s­! Ta kh«ng d¸m nhËn ®©u!","Sao l¹i kh«ng? C¸c h¹ ®· cã c«ng cøu c¸c ®Ö tö trong lóc dÇu s«i löa báng, thËt cã ¬n t¸i t¹o.")
+   	Talk(7,"U122_prise","§¹i s­………","§¹i s­………","§¹i s­?","°¥Ñ½£¬§¹i s­………£¬ÎÒ²»¸Ò°¡!","Ai da! §¹i s­! Ta kh«ng d¸m nhËn ®©u!","§¹i s­………¸Ò×÷¸Òµ±£¬Ğ¡×Ó°İ·ş.")
 	else
 		Talk(1,"","Ng­¬i biÕt thÕ nµo lµ 'ThiÒn QuyÒn Quy NhÊt' kh«ng? §ã lµ chØ vâ häc ThiÕu L©m b¸t ®¹i tinh th«ng, lÊy vâ tu thiÒn!")
 	end
@@ -73,7 +73,7 @@ end
 
 function U122_prise()
    if(GetTask(7) >= 70*256) and (GetTask(7) ~= 75*256) then			-- ÊÇÌìÍõµÜ×Ó»ò³öÊ¦µÜ×Ó
-		Talk(2,"HuyÒn Nan: Kim quèc ®ang tiÕp tôc ®éng binh, vâ l©m Trung Nguyªn sÏ l¹i cã mét phen kinh thiªn ®éng ®Şa. ë ®©y l·o t¨ng cã mét quyÓn 'ThiÕu L©m TuyÖt kü', tÆng cho tiÓu h÷u, hy väng ng­¬i ch¨m chØ luyÖn c«ng, kh«ng chØ trë thµnh ®Ö tö cña bæn tù mµ cß cã thÓ lµ ","Sù r¨n d¹y cña ®¹i s­, tiÓu tö sao kh«ng d¸m tu©n theo!")
+		Talk(2,"HuyÒn Nan: Kim quèc ®ang tiÕp tôc ®éng binh, vâ l©m Trung Nguyªn sÏ l¹i cã mét phen kinh thiªn ®éng ®Şa. ë ®©y l·o t¨ng cã mét quyÓn 'ThiÕu L©m TuyÖt kü', tÆng cho tiÓu h÷u, hy väng ng­¬i ch¨m chØ luyÖn c«ng, kh«ng chØ trë thµnh ®Ö tö cña bæn tù mµ cß cã thÓ lµ ","§¹i s­………µÄ·Ô¸À£¬Ğ¡×ÓÔõÃ´²»¸Ò×ñ´Ó!")
 		if (HaveMagic(318) == -1) then		-- ±ØĞëÃ»ÓĞ¼¼ÄÜµÄ²Å¸ø¼¼ÄÜ
 			AddMagic(318,1)
 		end

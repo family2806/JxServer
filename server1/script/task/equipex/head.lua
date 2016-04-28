@@ -38,10 +38,10 @@ aryItem = {
 -- ¼«Æ·µÄ°²°îË÷Òı
 aryTopItem = {
 	--   ÍêÃÀµÄĞòºÅ  ÆÕÍ¨µÄĞòºÅ  ÍêÃÀµÄÎÄ×ÖÃèÊö   ÆÕÍ¨µÄÎÄ×ÖÃèÊö
-	[1]	= {425, 409, "[Hoµn Mü] Cùc PhÈm An Bang Cóc Hoa Th¹ch ChØ Hoµn", "[Cùc phÈm] An Bang Cóc Hoa Th¹ch ChØ Hoµn"},
-	[2] = {427, 411, "[Hoµn Mü] Cùc PhÈm An Bang Kª HuyÕt Th¹ch Giíi ChØ", "[Cùc phÈm] An Bang Kª HuyÕt Th¹ch Giíi ChØ"},
-	[3] = {424, 408, "[Hoµn Mü] Cùc PhÈm An Bang B¨ng Tinh Th¹ch H¹ng Liªn", "[Cùc phÈm] An Bang B¨ng Tinh Th¹ch H¹ng Liªn"},
-	[4] = {426, 410, "[Hoµn Mü] Cùc PhÈm An Bang §iÒn Hoµng Th¹ch Ngäc Béi", "[Cùc phÈm] An Bang §iÒn Hoµng Th¹ch Ngäc Béi"},	
+	[1]	= {425, 409, "[ÍêÃÀ] ¼«Æ· An Bang Cóc Hoa Th¹ch ChØ hoµn", "[¼«Æ·] An Bang Cóc Hoa Th¹ch ChØ hoµn"},
+	[2] = {427, 411, "[ÍêÃÀ] ¼«Æ· An Bang Kª HuyÕt Th¹ch Giíi ChØ ", "[¼«Æ·] An Bang Kª HuyÕt Th¹ch Giíi ChØ "},
+	[3] = {424, 408, "[ÍêÃÀ] ¼«Æ· An Bang B¨ng Tinh Th¹ch H¹ng Liªn", "[¼«Æ·] An Bang B¨ng Tinh Th¹ch H¹ng Liªn"},
+	[4] = {426, 410, "[ÍêÃÀ] ¼«Æ· An Bang §iÒn Hoµng Th¹ch Ngäc Béi", "[¼«Æ·] An Bang §iÒn Hoµng Th¹ch Ngäc Béi"},	
 }
 
 aryNeedItem = {
@@ -54,7 +54,7 @@ aryNeedItem = {
 	[2] = {{"2 B¨ng ThiÒm T¬",        4,   965,    1,   -1,   -1,    0,   2,    0},
 		   {"3 Kª HuyÕt Th¹ch",        4,   966,    1,   -1,   -1,    0,   3,    0},
 		   {"10 Lôc Thñy Tinh",       4,   240,    1,   -1,   -1,    0,   10,   0},
-		   {"An Bang Kª HuyÕt Th¹ch Giíi ChØ ", 0,   0,      0,   -1,   -1,  167,   1,    1}},
+		   {"An Bang Kª HuyÕt Th¹ch Giíi ChØ  ", 0,   0,      0,   -1,   -1,  167,   1,    1}},
 		   	
 	[3] = {{"2 M· N·o",          4,   964,    1,   -1,   -1,    0,   2,    0},
 		   {"1 M¶nh thiªn th¹ch",      4,   968,    1,   -1,   -1,    0,   1,    0},
@@ -127,28 +127,28 @@ end;
 function main_task_001()
 	SetTask(ID_EQUIPEX_TASK, 1);
 	SetTask(ID_EQUIPEX_FINISH, 0);
-	CreateTaskSay({"<dec><npc>§Çu tiªn lµ chÕ t¹o {{An bang cóc hoa th¹ch chØ hoµn}}. H·y gióp ta ®i t×m {{2 Cóc Hoa Th¹ch}} vµ {{1 B¨ng Th¹ch KÕt Tinh}}, vµ {{10 Lam Thñy Tinh}}, nghe ®ån r»ng nh÷ng thø nµy cã b¸n t¹i Kú Tr©n C¸c, ng­¬i h·y ®i xem, dÜ nhiªn kh«ng thÓ thiÕu {{An bang cóc hoa th¹ch chØ hoµn}} cña ng­¬i n÷a.",
+	CreateTaskSay({"<dec><npc>Ê×ÏÈÖÆÔì{{An Bang Cóc Hoa Th¹ch ChØ hoµn}}. ¿ì°ïÎÒÈ¥ÕÒ{{2 Cóc Hoa Th¹ch}} ºÍ{{1 B¨ng Th¹ch KÕt Tinh}}, ºÍ{{10 Lam Thñy Tinh}}, ÌıËµÆæÕä¸óÓĞÂô, ÄãÈ¥¿´¿´£¬²»È»¾ÍÉÙÁËÄãµÄ {{An Bang Cóc Hoa Th¹ch ChØ hoµn}} .",
 				   "HiÓu råi/OnExit"});	
 end;
 
 function main_task_002()
 	SetTask(ID_EQUIPEX_TASK, 2);
 	SetTask(ID_EQUIPEX_FINISH, 0);
-	CreateTaskSay({"<dec><npc>Æä´ÎÖÆÔì{{An Bang Kª HuyÕt Th¹ch Giíi ChØ }}, ¿ì°ïÎÒÈ¥ÕÒ{{2 ±ù²õ×Ó}, {{3 Kª HuyÕt Th¹ch}}, ºÍ{{10 Lôc Thñy Tinh}}. ÌıËµÆæÕä¸óÓĞÂô, ÄãÈ¥¿´¿´£¬²»È»¾ÍÉÙÁËÄãµÄ {{An Bang Kª HuyÕt Th¹ch Giíi ChØ }}.",
+	CreateTaskSay({"<dec><npc>Æä´ÎÖÆÔì{{An Bang Kª HuyÕt Th¹ch Giíi ChØ  }}, ¿ì°ïÎÒÈ¥ÕÒ{{2 ±ù²õ×Ó}, {{3 Kª HuyÕt Th¹ch}}, ºÍ{{10 Lôc Thñy Tinh}}. ÌıËµÆæÕä¸óÓĞÂô, ÄãÈ¥¿´¿´£¬²»È»¾ÍÉÙÁËÄãµÄ {{An Bang Kª HuyÕt Th¹ch Giíi ChØ  }}.",
 				   "HiÓu råi/OnExit"});	
 end;
 
 function main_task_003()
 	SetTask(ID_EQUIPEX_TASK, 3);
 	SetTask(ID_EQUIPEX_FINISH, 0);
-	CreateTaskSay({"<dec><npc>TiÕp theo lµ chÕ t¹o {{An bang b¨ng tinh th¹ch h¹ng liªn}}, h·y gióp ta ®i t×m {{2 M· N·o}} vµ {{1 M¶nh thiªn th¹ch}}, vµ {{5 Tö Thñy Tinh}} vµ {{1 ThÇn bİ kho¸ng th¹ch}}, Nghe ®ån r»ng nh÷ng thø nµy cã b¸n t¹i Kú Tr©n C¸c, ng­¬i h·y ®i xem, dÜ nhiªn kh«ng thÓ thiÕu {{An bang b¨ng tinh th¹ch h¹ng liªn}}.",
+	CreateTaskSay({"<dec><npc>Æä´ÎÖÆÔì{{An Bang B¨ng Tinh Th¹ch H¹ng Liªn}}, ¿ì°ïÎÒÈ¥ÕÒ{{2 M· N·o}} ºÍ{{1 M¶nh thiªn th¹ch}}, ºÍ{{5 Tö Thñy Tinh}} ºÍ{{1 ThÇn Bİ Kho¸ng Th¹ch}}, ÌıËµÆæÕä¸óÓĞÂô, ÄãÈ¥¿´¿´£¬²»È»¾ÍÉÙÁËÄãµÄ {{An Bang B¨ng Tinh Th¹ch H¹ng Liªn}}.",
 				   "HiÓu råi/OnExit"});	
 end;
 
 function main_task_004()
 	SetTask(ID_EQUIPEX_TASK, 4);
 	SetTask(ID_EQUIPEX_FINISH, 0);
-	CreateTaskSay({"<dec><npc>Cuèi cïng lµ chÕ t¹o {{An bang ®iÒn hoµng th¹ch ngäc béi}}. H·y gióp ta ®i t×m {{10 §iÒn Hoµng Th¹ch}}, {{1 Tİn sø kim bµi}} vµ {{1 HuyÒn tinh cÊp 8}}, vµ dÜ nhiªn kh«ng thÓ thiÕu {{An bang ®iÒn hoµng th¹ch ngäc béi}}.",
+	CreateTaskSay({"<dec><npc>×îºóÖÆÔì{{°²°îÌï»ÆÊ¯ÓñÅå}}. ¿ì°ïÎÒÈ¥ÕÒ{{10 §iÒn Hoµng Th¹ch}}, {{1 Tİn sø Kim bµi}} ºÍ{{1 HuyÒn tinh cÊp 8}}, ºÍ²»È»¾ÍÉÙÁËÄãµÄ{{°²°îÌï»ÆÊ¯ÓñÅå}}.",
 				   "HiÓu råi/OnExit"});	
 end;
 
@@ -458,7 +458,7 @@ function ib_nexttask_talk()
 				   "Ta muèn tiÕp tôc chÕ t¹o An bang Hoµn mü - Kª huyÕt th¹ch giíi chØ/#ib_nexttask_main(2)",
 				   "Ta muèn tiÕp tôc chÕ t¹o An bang Hoµn mü - B¨ng tinh th¹ch h¹ng liªn/#ib_nexttask_main(3)",
 				   "Ta muèn tiÕp tôc chÕ t¹o An bang Hoµn mü - §iÒn hoµng th¹ch ngäc béi/#ib_nexttask_main(4)",
-				   "§Ó ta suy nghÜ kü l¹i xem/OnExit"});	
+				   "§Ó ta suy nghÜ l¹i./OnExit"});	
 end;
 
 
@@ -482,18 +482,18 @@ end;
 -- Íæ¼ÒÒª»¹Ô­×°±¸µÄ¶Ô»°
 function ib_nexttask_revert()
 	CreateTaskSay({"<dec><npc>VÉn kh«ng c¶m thÊy hµi lßng sao? Th«i ®­îc, ta cã thÓ gióp {{Kh«i phôc nguyªn tr¹ng}} thµnh {{Trang bŞ An bang phæ th«ng}}, {{Thuéc tİnh cã thÓ sÏ kh¸c chót so víi tr­íc ®©y}}. Kh¸ch quan nªn suy nghÜ kü!",
-				   "Ta muèn kh«i phôc l¹i An Bang Cóc Hoa Th¹ch ChØ Hoµn/#ib_nexttask_revert_talk(1)",
-				   "Ta muèn kh«i phôc l¹i Kª HuyÕt Th¹ch Giíi ChØ/#ib_nexttask_revert_talk(2)",
-				   "Ta muèn kh«i phôc l¹i B¨ng Tinh Th¹ch H¹ng Liªn/#ib_nexttask_revert_talk(3)",
-				   "Ta muèn kh«i phôc l¹i B¨ng §iÒn Hoµng Th¹ch Ngäc Béi/#ib_nexttask_revert_talk(4)",
-				   "§Ó ta suy nghÜ kü l¹i xem/OnExit"});
+				   "ÎÒÏë»¹Ô­An Bang Cóc Hoa Th¹ch ChØ hoµn/#ib_nexttask_revert_talk(1)",
+				   "ÎÒÏë»¹Ô­An Bang Kª HuyÕt Th¹ch Giíi ChØ /#ib_nexttask_revert_talk(2)",
+				   "ÎÒÏë»¹Ô­An Bang B¨ng Tinh Th¹ch H¹ng Liªn/#ib_nexttask_revert_talk(3)",
+				   "ÎÒÏë»¹Ô­An Bang §iÒn Hoµng Th¹ch Ngäc Béi/#ib_nexttask_revert_talk(4)",
+				   "§Ó ta suy nghÜ l¹i./OnExit"});
 end;
 
 -- »¹Ô­µÄÈ·ÈÏ¹ı³Ì
 function ib_nexttask_revert_talk(nId)
 	CreateTaskSay({"<dec><npc>Kh¸ch quan thËt sù muèn kh«i phôc nguyªn tr¹ng trang bŞ An bang nµy sao? Chi phİ lµ {{300  v¹n l­îng}}, cã ®ång ı kh«ng?",
 				   "§­îc, ta ®ång ı!/#ib_nexttask_revert_dialog("..nId..")",
-				   "§Ó ta suy nghÜ kü l¹i xem/OnExit"});
+				   "§Ó ta suy nghÜ l¹i./OnExit"});
 end;
 
 
@@ -600,7 +600,7 @@ end;
 function top_equipex_dialog()
 	CreateTaskSay({"<dec><npc>Giao trang bŞ An bang Cùc phÈm cho ta, ta sÏ gióp chÕ tao thµnh {{Trang bŞ An bang hoµn mü cùc phÈm}}, dÜ nhiªn lµ rÊt khã kh¨n, {{tiÒn c«ng mçi lÇn"..NUM_PAY_TOPITEMTOPERFECT.."  v¹n l­îng}}, cã ®ång ı kh«ng?",
 				   "Tèt qu¸, h·y gióp ta chÕ t¹o thµnh trang bŞ Hoµn mü/top_equipex_give",
-	               "§Ó ta suy nghÜ kü l¹i xem/OnExit"});
+	               "§Ó ta suy nghÜ l¹i./OnExit"});
 end;
 
 function top_equipex_give()
@@ -662,7 +662,7 @@ function top_equipex_main(nCount)
 	
 	AddItemByIndex(nServerItemIndex);
 	
-	Msg2Player("B¹n ®· giao cho Thî rÌn <color=yellow>"..NUM_PAY_TOPITEMTOPERFECT.." v¹n tiÒn c«ng<color>!");
+	Msg2Player("ÄãÒÑGiao vËt phÈm cho thî rÌn <color=yellow>"..NUM_PAY_TOPITEMTOPERFECT.." v¹n tiÒn c«ng<color>!");
 	Msg2Player("ChÕ t¹o thµnh c«ng: <color=yellow>"..aryTopItem[nAryIndex][3].."<color>!");
 	
 	WriteTaskLog("ChÕ t¹o thµnh c«ng:"..aryTopItem[nAryIndex][3]);
@@ -673,7 +673,7 @@ end;
 function top_revert_dialog()
 	CreateTaskSay({"<dec><npc>VÉn kh«ng c¶m thÊy hµi lßng víi {{Trang bŞ An bang hoµn mü [Cùc phÈm]}} sao? Th«i ®­îc, ta cã thÓ gióp {{Kh«i phôc nguyªn tr¹ng}} thµnh {{Trang bŞ An bang Cùc phÈm}}, {{Thuéc tİnh hoµn toµn gièng tr­íc ®©y}}. {{Chi phİ lµ"..NUM_PAY_PERFECTITEM_REVERT.."  v¹n l­îng}}, cã ®ång ı kh«ng?",
 				   "Tèt qu¸, h·y gióp ta chÕ t¹o thµnh trang bŞ Hoµn mü/top_revert_give",
-	               "§Ó ta suy nghÜ kü l¹i xem/OnExit"});	
+	               "§Ó ta suy nghÜ l¹i./OnExit"});	
 end;
 
 
@@ -731,7 +731,7 @@ function top_revert_main(nCount)
 	
 	AddItemByIndex(nServerItemIndex);
 		
-	Msg2Player("B¹n ®· giao cho Thî rÌn <color=yellow>"..NUM_PAY_PERFECTITEM_REVERT.." v¹n tiÒn c«ng<color>!");
+	Msg2Player("ÄãÒÑGiao vËt phÈm cho thî rÌn <color=yellow>"..NUM_PAY_PERFECTITEM_REVERT.." v¹n tiÒn c«ng<color>!");
 	Msg2Player("Kh«ng phôc nguyªn tr¹ng thµnh c«ng: <color=yellow>"..aryTopItem[nAryIndex][4].."<color>!");
 	
 	WriteTaskLog("Kh«ng phôc nguyªn tr¹ng thµnh c«ng:"..aryTopItem[nAryIndex][4]);		

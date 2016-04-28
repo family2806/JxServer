@@ -32,11 +32,11 @@ local _GetAward = function(nNpcIdx, dwNpcId)
 		if GetNpcParam(nNpcIdx, TREE_TYPE) == MEIGUIHUAZI then
 			nAwardCount = floor((GetNpcParam(nNpcIdx, TREE_TASKSCORE)+4)/5)
 			tbAward = {{szName = "LÔ Hép Hoa Hång", tbProp = {6, 1, 2700, 1, 0, 0}, nBindState = -2, nExpiredTime = 20110224, nCount = nAwardCount,},}
-			tbAwardTemplet:GiveAwardByList(tbAward, "LÔ T×nh Nh©n n¨m 2011, thu thËp LÔ Hép T­¬ng T­.")
+			tbAwardTemplet:GiveAwardByList(tbAward, "LÔ T×nh Nh©n n¨m 2011, thu thËp LÔ Hép Hoa Hång")
 		else
 			nAwardCount = floor((GetNpcParam(nNpcIdx, TREE_TASKSCORE)+9)/10)
 			tbAward = {{szName = "LÔ Hép T­¬ng T­", tbProp = {6, 1, 2701, 1, 0, 0}, nBindState = -2, nExpiredTime = 20110224, nCount = nAwardCount,},}
-			tbAwardTemplet:GiveAwardByList(tbAward, "LÔ T×nh Nh©n n¨m 2011, thu thËp LÔ Hép T­¬ng T­.")
+			tbAwardTemplet:GiveAwardByList(tbAward, "LÔ T×nh Nh©n n¨m 2011, thu thËp LÔ Hép Hoa Hång")
 		end
 		AddNpcSkillState(nNpcIdx, 662,1, 1, 0)	-- ¹Ø±Õ¸ÐÌ¾ºÅ
 	end
@@ -200,7 +200,7 @@ function CheckTaskBelongMeiGuiSuc(nNpcIdx)
 	local nPlayer2Idx = GetTeamMember(2)
 	
 	if nTreeOwner ~= nPlayer1Idx and nTreeOwner ~= nPlayer2Idx then
-		lib:ShowMessage("Xin h·y ®¶m b¶o chñ nh©n trång c©y ®ang ë trong tæ ®éi!")
+		lib:ShowMessage("ÇëX¸c nhËnÖÖÊ÷µÄÖ÷ÈËÕýÔÚ¶ÓÖÐ!")
 		return 0
 	end
 	
@@ -232,13 +232,13 @@ function CheckTaskBelongMeiGuiSuc(nNpcIdx)
 		
 		local nFlag1 = CallPlayerFunction(nPlayer1Idx, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
 	 	if nFlag1 ~= 1 then
-			lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn lµm nhiÖm vô!")
+			lib:ShowMessage("ÇëX¸c nhËnÓÐÔµÈËºÍÄã¶¼ÓÐºìÏßºóÀ´×öÈÎÎñ")
 			return 0
 		end
 		
 		local nFlag2 = CallPlayerFunction(nPlayer2Idx, PlayerFunLib.CheckItemInBag, PlayerFunLib, {tbProp={6,1,2696,1,0,0},}, 1, "")
 	 	if nFlag2 ~= 1 then
-			lib:ShowMessage("Xin h·y x¸c nhËn ng­êi cã duyªn víi ng­¬i còng cã D©y Hång råi h·y ®Õn lµm nhiÖm vô!")
+			lib:ShowMessage("ÇëX¸c nhËnÓÐÔµÈËºÍÄã¶¼ÓÐºìÏßºóÀ´×öÈÎÎñ")
 			return 0
 		end
 		

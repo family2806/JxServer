@@ -20,16 +20,16 @@ TB_Material = {
 	["4,501,1"] =	"M¶nh Tµng B¶o §å 12",
 }
 function BaiBaoXiang_Give_UI()
-	GiveItemUI("B¸ch b¶o r­¬ng","§iÒu kiÖn ®Ó ®æi B¸ch b¶o r­¬ng lµ ph¶i më réng r­¬ng thø hai, cïng víi mét con ngùa cÊp 80 bÊt kú vµ mét bé m¶nh Tµng b¶o ®å tõ 1 ®Õn 12.","BaiBaoXiang_Get","no",1)
+	GiveItemUI("B¸ch b¶o r­¬ng","§i¶Ò»»B¸ch b¶o r­¬ngµÄÌõ¼şÊÇ´ò¿ªµÚ¶ş¸öÏä×Ó¡¢Ò»Æ¥80¼¶µÄÂíºÍ1µ½12ÖĞµÄÈÎÒâÒ»ÕÅ²Ø±¦Í¼.","BaiBaoXiang_Get","no",1)
 end			
 
 function BaiBaoXiang_Get(nItemCount)
 	if CheckStoreBoxState(2) > 0 then
-		Say("ThÇn bİ th­¬ng nh©n: §¹i hiÖp ®· cã B¸ch b¶o r­¬ng råi, cÇn g× ®Õn ta n÷a.",1,"§ång ı!/no");
+		Say("ÉñÃØÉÌÈË: ÄúÒÑµÃµ½B¸ch b¶o r­¬ngÁË,»¹ĞèÒªÊ²Ã´¾Íµ½ÎÒÕâ¶ùÀ´.",1,"§ång ı!/no");
 		return 1;
 	end
 	if	CheckStoreBoxState(1) == 0 then
-		Say("ThÇn bİ th­¬ng nh©n: §¹i hiÖp vÉn ch­a më r­¬ng thø hai, ta kh«ng thÓ trao ®æi B¸ch b¶o r­¬ng ®­îc. H·y ®Õn Ba L¨ng HuyÖn më r­¬ng thø hai tr­íc råi h·y t×m ta.",1,"§ång ı!/no");
+		Say("ÉñÃØÉÌÈË: Äú»¹Î´´ò¿ªµÚ¶ş¸öÏä×Ó,ÎÒ²»ÄÜ°ÑB¸ch b¶o r­¬ng»»¸øÄã. ÇëÏÈµ½°ÍÁêÏØ´ò¿ªµÚ¶ş¸øÏä×ÓÖ®ºóÔÙÀ´ÕÒÎÒ.",1,"§ång ı!/no");
 		return 1;	
 	end
 	local tb_enhanceitem_count = {};
@@ -48,7 +48,7 @@ function BaiBaoXiang_Get(nItemCount)
 		
 		
 		if (TB_Material[szItemKey] == nil) then
-				Say("ThÇn bİ th­¬ng nh©n: Kh«ng ®­îc råi, ta chØ cÇn 1 bé tµng b¶o ®å vµ 1 con ngùa cÊp 80, kh«ng cÇn nh÷ng thø kh¸c.",2,"Ha ha, ®Ó ta thö l¹i vËy./BaiBaoXiang_Give_UI","ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no");
+				Say("ÉÌÈË: ²»ĞĞ, ÎÒÃÇÖ»ÒªÒ»ÕÅ²Ø±¦Í¼ºÍÒ»Æ¥Ngùa cÊp 80, ±ğµÄ²»ĞèÒª.",2,"Ha ha, ®Ó ta thö l¹i vËy./BaiBaoXiang_Give_UI","ThËt ng¹i qu¸, ta sÏ quay l¹i sau./no");
 				return
 		end
 		tb_enhanceitem_count[szItemKey][1] = tb_enhanceitem_count[szItemKey][1] + GetItemStackCount(nCurItemIdx);
@@ -71,8 +71,8 @@ function BaiBaoXiang_Get(nItemCount)
 		end
 		
 		 --¸øÎïÆ·
-		Msg2Player("B¹n ®· nhËn ®­îc <color=yellow>B¸ch b¶o r­¬ng<color>.");
-		Say("ThÇn bİ th­¬ng nh©n: Xin chóc mõng, ®¹i hiÖp ®· nhËn ®­îc B¸ch b¶o r­¬ng.",1,"§ång ı!/no");
+		Msg2Player("ÄúÒÑÁìÈ¡µ½ <color=yellow>B¸ch b¶o r­¬ng<color>.");
+		Say("ÉñÃØÉÌÈË: ×£ºØÄúµÃµ½B¸ch b¶o r­¬ng.",1,"§ång ı!/no");
 		OpenStoreBox(2);
 		WriteLog(format("[GuoQing2007_BaiBaoXiang]\t Date:%s\t Account:%s\t Name:%s\t Effect:Get BaiBaoXiang",GetLocalDate("%y-%m-%d %H:%M:%S"),GetAccount(),GetName()));
 

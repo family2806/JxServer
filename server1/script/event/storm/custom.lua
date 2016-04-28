@@ -80,17 +80,17 @@ TB_STORM_TRYTIMES = {1, 2, 1, 1}
 --¿ªÊ¼ÌôÕ½ºóµÄ¶Ô»°
 TB_STORM_DIALOG = {
 	"  Sau khi khiªu chiÕn, ng­êi nhËn ®iÓm tÝch lòy Tèng Kim lÇn nµy sÏ ®­îc ®æi thµnh ®iÓm tÝch lòy Phong Ba. §iÓm tÝch lòy Tèng Kim cña b¹n hiÖn t¹i lµ: <color=yellow>%d<color>",
-	"Kh«ng truy hái nhiÖm vô s¸t thñ ",
-	"NhiÖm vô TÝn Sø ch­a b¾t ®Çu",
+	"²»×·ÎÊs¸t thñ ÈÎÎñ",
+	"NhiÖm vô TÝn Sø »¹Î´¿ªÊ¼",
 	"  Sau khi khiªu chiÕn, hÖ thèng sÏ c¨n cø trong mét giê, sè l­îng hoµn thµnh nhiÖm vô vµ ®é khã chuyÓn ®æi thµnh tÝch lòy Phong Ba h«m nay."
 }
 
 --°ïÖúNpcµÄÎÄ×Ö
 TB_STORM_HELP = {
-	"  Sau khi chiÕn tr­êng Tèng Kim b¾t ®Çu tõ phót phót thø 10, 20, 30, b¹n sÏ nhËn ®­îc khiªu chiÕn Phong Ba qua c¸c giai ®o¹n <color=red> tham gia nhËn th­ëng <color>___tÝch lòy Phong Ba, tæng céng <color=yellow>40<color> phót. NhËn ®­îc <color=red>tÝch lòy Tèng Kim <color>còng cã thÓ ®æi ra tÝch lòy Phong Ba (Cao nhÊt<color=yellow>60<color>®iÓm) .%s<enter>",
-	"  Tham gia nhiÖm vô s¸t thñ cã thÓ nhËn ®­îc <color=red>phÇn th­ëng tham gia <color>___tÝch lòy Phong Ba <color=yellow>40<color> ®iÓm. Thµnh c«ng x«ng ¶i <color=red>tr­íc thêi gian<color>, cã thÓ ®æi thµnh tÝch lòy Phong Ba (Cao nhÊt <color=yellow>60<color> ®iÓm) . Mçi ngµy hai trËn s¸t thñ, lÊy trËn <color=red>thµnh tÝch tèt nhÊt<color> tÝnh tÝch lòy Phong Ba. S¸t thñ cao cÊp mçi ng­êi mçi ngµy chØ nhËn ®­îc cao nhÊt <color=yellow>100<color> ®iÓm tÝch lòy Phong Ba, s¸t thñ s¬ cÊp cao nhÊt nhËn ®­îc <color=yellow>90<color> ®iÓm.",
+	"  ChiÕn tr­êng Tèng Kim¿ªÊ¼µÄµÚ10, 20, 30·ÖÖÓ, Í¨¹ý¸÷½×¶ÎµÄ·ç±©ÌôÕ½Äã½«»áµÃµ½<color=red> ²Î¼ÓÁì½±<color>___·ç±©»ý·Ö, ×Ü¹² <color=yellow>40<color> ·Ö. µÃµ½<color=red>ËÎ½ð»ý·Ö<color>Ò²¿ÉÒÔ¶Ò»»ËÎ½ð»ý·Ö(×î¸ß<color=yellow>60<color>µã) .%s<enter>",
+	"  ²Î¼Ós¸t thñ ÈÎÎñ¿ÉÒÔµÃµ½<color=red>²ÎÓë½±Àø<color>___·ç±©»ý·Ö<color=yellow>40<color> µã. ³É¹¦³å°­<color=red>Ê±¼äÇ°<color>, ¿ÉÒÔ¶Ò»»·ç±©»ý·Ö(×î¸ß <color=yellow>60<color> µã) . Ã¿ÌìÁ½Õós¸t thñ £¬²¼Õó<color=red>×îºÃ³É¼¨<color> ¼ÇÈë·ç±©»ý·Ö. ¸ß¼¶s¸t thñ Ã¿ÌìÃ¿ÈË×î¸ßÖ»ÄÜÁìÈ¡<color=yellow>100<color> ·ç±©»ý·Ö, ³õ¼¶s¸t thñ ×î¸ßÁìÈ¡<color=yellow>90<color> µã.",
 	"NhiÖm vô TÝn Sø ",
-	"  B¾t ®Çu khiªu chiÕn Phong Ba lËp tøc nhËn ®­îc <color=red>phÇn th­ëng tham gia <color>___TÝch lòy Phong Ba <color=yellow>40<color> ®iÓm. §ång thêi c¨n cø theo b¹n trong <color=red>vßng mét giê <color> (Thêi gian trªn m¹ng, thêi gian rêi m¹ng vÉn t¨ng kinh nghiÖm) , hoµn thµnh nhiÖm vô <color=red>sè l­îng vµ ®é khã<color>, cã thÓ nhËn ®­îc tÝch lòy Phong Ba t­¬ng øng (Cao nhÊt <color=yellow>60<color> ®iÓm) . Trong hÖ thèng chuçi nhiÖm vô D· TÈu, mçi ng­êi mçi ngµy nhËn ®­îc tÝch lòy Phong Ba cao nhÊt <color=yellow>100<color>®iÓm.<enter>"
+	"  ·ç±©ÌôÕ½¿ªÊ¼Á¢¼´ÁìÈ¡<color=red>²ÎÓë½±Àø<color>___·ç±©»ý·Ö<color=yellow>40<color> µã. Í¬Ê±¸ù¾ÝÄãÔÚ<color=red>1Ð¡Ê±<color> (ÔÚÏßÊ±¼ä, ÀëÏßÊ±¼äÒÀ¾É¼Ó¾­Ñé) , Íê³ÉÈÎÎñ<color=red>ÊýÁ¿ºÍÄÑ¶È<color>, ¿ÉÒÔµÃµ½ÏàÓ¦µÄ·ç±©»ý·Ö(×î¸ß <color=yellow>60<color> µã) . ÔÚNhiÖm vô D· TÈuÖÐ£¬Ã¿ÈËÃ¿Ìì×î¸ßµÃµ½·ç±©»ý·ÖÊÇ<color=yellow>100<color>µã.<enter>"
 }
 
 --====Task Value====--
@@ -172,7 +172,7 @@ tmp_ab = {
 TB_STORM_AWARD_WEEK = {
 	--ÐèÒªÅÅÃû£¨¸ºÊý£©	½±ÀøÃû³Æ	½±Æ·
 	{-1,	"Mét bé An Bang", 	tmp_ab},
-	{-10,	"NhËn ®­îc mét bé An Bang", {{4,tmp_ab,1}}}
+	{-10,	"µÃµ½Mét bé An Bang", {{4,tmp_ab,1}}}
 }
 
 --ÁÙÊ±Êý×é£º¼¼ÄÜ+1´ó»Æ½ð

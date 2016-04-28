@@ -38,7 +38,7 @@ tbConfig[3] = --Ñ×µÛ®Õ
 {
 	nId = 3,
 	szMessageType = "YDBZguoguan",
-	szName = "VuotAiViemDe5",
+	szName = "V­ît qua ¶i Viªm §Õ thø 5",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {5},
@@ -48,14 +48,14 @@ tbConfig[3] = --Ñ×µÛ®Õ
 	tbActition = 
 	{
 		{"ThisActivity:VngAddWeeklyTask", {nTSK_VIEMDE_WEEKLY_MATCH_COUNT, 1}},
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAiViemDe5"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "V­ît qua ¶i Viªm §Õ thø 5"} },
 	},
 }
-tbConfig[4] =		--VuotAi17
+tbConfig[4] =		--V­ît qua ¶i 17
 {
 	nId = 4,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi17",
+	szName = "V­ît qua ¶i 17",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"17"},
@@ -64,14 +64,14 @@ tbConfig[4] =		--VuotAi17
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAi17"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "V­ît qua ¶i 17"} },
 	},
 }
 tbConfig[5] = --Ñ×µÛ- ´³¹Ø10
 {
 	nId = 5,
 	szMessageType = "YDBZguoguan",
-	szName = "VuotAiViemDe10",
+	szName = "V­ît qua ¶i Viªm §Õ thø 10",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {10},
@@ -80,7 +80,7 @@ tbConfig[5] = --Ñ×µÛ- ´³¹Ø10
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "VuotAiViemDe10"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,1781,1,0,0}, tbParam = {60}, nExpiredTime=24*60,},1,"KyNang150", "V­ît qua ¶i Viªm §Õ thø 10"} },
 	},
 }
 

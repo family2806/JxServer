@@ -26,6 +26,6 @@ function tbVNGWD2011_BowBox:UseItem()
 	end		
 	
 	local tbAward = {szName="ChiÕc N¬",tbProp={6,1,30099,1,0,0},nCount=3,nExpiredTime=20110314}
-	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][Sö dông Hép N¬]")
+	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][Ê¹ÓÃChiÕc N¬ºÐ×Ó]")
 	return 1
 end

@@ -11,7 +11,7 @@ tbVNGForbidItem.tbForbidItem =
 		["Tèng Kim Chiªu th­ "] = {6, 1, 155},
 		["M¹c B¾c TruyÒn Tèng LÖnh"] = {6, 1, 1448},
 		["LÖnh bµi Vi S¬n ®¶o"] = {6, 1, 2432},
-		["LÖnh bµi vi s¬n ®¶o lÔ bao"] = {6, 1, 2525},
+		["LÖnh bµi Vi S¬n ®¶oÀñ°ü"] = {6, 1, 2525},
 	}
 
 tbVNGForbidItem.tbMapSet = 

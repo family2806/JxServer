@@ -50,14 +50,14 @@ function pActivity:HandinString(nComposeCount)
 	
 	if(self:CheckTask(1, 500,"","<") == 1) and 
 		(self:CheckTask(1, 500 - nComposeCount,"",">=") == 1) then
-		PlayerFunLib:AddExp(5000000,1,"Event_QuocKhanhVN","NopDayThung500Lan")
-		tbVngTransLog:Write(%strQK_TranslogFolder, %nQK_PromotionID, "NopDayThung500Lan", "5000000 exp", 1)
+		PlayerFunLib:AddExp(5000000,1,"Event_QuocKhanhVN","NopVatPhamDayThung500Lan")
+		tbVngTransLog:Write(%strQK_TranslogFolder, %nQK_PromotionID, "NopVatPhamDayThung500Lan", "5000000 exp", 1)
 	end
 	
 	if(self:CheckTask(1, 1000,"","<") == 1)  and 
 		(self:CheckTask(1, 1000 - nComposeCount,"",">=") == 1)then
-		PlayerFunLib:AddExp(5000000,1,"Event_QuocKhanhVN","NopDayThung1000Lan")
-		tbVngTransLog:Write(%strQK_TranslogFolder, %nQK_PromotionID, "NopDayThung1000Lan", "5000000 exp", 1)
+		PlayerFunLib:AddExp(5000000,1,"Event_QuocKhanhVN","NopVatPhamDayThung1000Lan")
+		tbVngTransLog:Write(%strQK_TranslogFolder, %nQK_PromotionID, "NopVatPhamDayThung1000Lan", "5000000 exp", 1)
 		AddStatData("jxjiuyue_shangjiaoshengzidadaoshangxian", 1)
 	end 	
 	
@@ -173,7 +173,7 @@ function pActivity:UseFirworks()
 		PlayerFunLib:AddExp(25000000,1,"Event_QuocKhanhVN","SuDung1000LanPhaoHoaQuocKhanh")
 		local tb1000Award = {szName="Tˆ M∑ng Chi B∂o",tbProp={6,1,30140,1,0,0},nExpiredTime = 20111001,tbParam = {10}}
 		local tbTranslog = {strFolder = %strQK_TranslogFolder, nPromID = %nQK_PromotionID, nResult = 1}
-		tbAwardTemplet:Give(tb1000Award, 1, {"Event_QuocKhanhVN", "SuDung1000LanPhaoHoaQuocKhanhNhanVatPham", tbTranslog})
+		tbAwardTemplet:Give(tb1000Award, 1, {"Event_QuocKhanhVN", "SuDung1000LanPhaoHoaQuocKhanh¡Ï¿Ò∆∑", tbTranslog})
 	elseif (self:CheckTask(4, 1100,"","==") == 1) then
 		PlayerFunLib:AddExp(25000000,1,"Event_QuocKhanhVN","SuDung1100LanPhaoHoaQuocKhanh")
 	elseif (self:CheckTask(4, 1200,"","==") == 1) then
@@ -186,7 +186,7 @@ function pActivity:UseFirworks()
 		PlayerFunLib:AddExp(30000000,1,"Event_QuocKhanhVN","SuDung1500LanPhaoHoaQuocKhanh")
 		local tb1500Award = {szName="Tˆ M∑ng Chi B∂o",tbProp={6,1,30140,1,0,0},nExpiredTime = 20111001,tbParam = {6}}
 		local tbTranslog = {strFolder = %strQK_TranslogFolder, nPromID = %nQK_PromotionID, nResult = 1}
-		tbAwardTemplet:Give(tb1500Award, 1, {"Event_QuocKhanhVN", "SuDung1500LanPhaoHoaQuocKhanhNhanVatPham", tbTranslog})
+		tbAwardTemplet:Give(tb1500Award, 1, {"Event_QuocKhanhVN", "SuDung1500LanPhaoHoaQuocKhanh¡ÏŒÔ∆∑", tbTranslog})
 	end	
 	local tbTranslog = {strFolder = %strQK_TranslogFolder, nPromID = %nQK_PromotionID, nResult = 1}
 	tbAwardTemplet:Give(tbAward, 1, {"Event_QuocKhanhVN", "SuDungPhaoHoaQuocKhanhNhanVatPham", tbTranslog})

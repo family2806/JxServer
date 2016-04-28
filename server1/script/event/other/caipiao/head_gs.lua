@@ -217,7 +217,7 @@ end
 --¸ø½±
 function tbCaiPiao:GetAward(tbData)
 	if not tbData or getn(tbData) ~= 4 or not tbData[1] then
-		Talk(1, "", "HiÖn t¹i vÉn ch­a cã kÕt qu¶ mµ")
+		Talk(1, "", "HiÖn t¹i vÉn ch­a cã kÕt qu¶Âï")
 		return 0
 	end
 	local nType			= tbData[1]

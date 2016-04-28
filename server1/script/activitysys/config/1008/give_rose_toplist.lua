@@ -186,9 +186,9 @@ function tbTop10:ShowTopList()
 		CreateNewSayEx("HiÖn t¹i ch­a cã b¶ng xÕp h¹ng",{{"§ãng",OnCancel}})
 		return
 	end
-	--local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "Danh s¸ch 10 ng­êi cã sè l­îng nép nhiÒu nhÊt", "\t\t\t\t\t\tThêi gian tæng kÕt:", self.tbTopList[1][4])
-	local strTittle = "Danh s¸ch 10 ng­êi cã sè l­îng nép nhiÒu nhÊt\n"
-	strTittle = strTittle..format("%-5s%-17s%-12s\n", "Tªn", "Sè l­îng nép", "LÇn nép gÇn nhÊt")	
+	--local strTittle = format("%-13s%s\n%s <color=red>%s<color>\n\n", "", "ÉÏ½»Sè l­îng×î¶àµÄÊ®ÈËÃûµ¥", "\t\t\t\t\t\tThêi gian tæng kÕt:", self.tbTopList[1][4])
+	local strTittle = "ÉÏ½»Sè l­îng×î¶àµÄÊ®ÈËÃûµ¥\n"
+	strTittle = strTittle..format("%-5s%-17s%-12s\n", "Tªn", "ÉÏ½»Sè l­îng", "LÇn nép gÇn nhÊt")	
 	for nRank = 1, getn(self.tbTopList) do
 		strName = self.tbTopList[nRank][1]			
 		local strTotalCount  = self.tbTopList[nRank][3]	

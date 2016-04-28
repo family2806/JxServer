@@ -16,7 +16,7 @@ function main(sel)
 		local tbDailog = DailogClass:new(szNpcName)
 		tbDailog.szTitleMsg = "<npc>C«ng phu cña bæn m«n quan träng lµ biÕn ho¸ kh«n l­êng, kh«ng nh­ nh÷ng vâ c«ng t©m th­êng kh¸c."
 		tbDailog:AddOptEntry("Giao dÞch", yes)
-		tbDailog:AddOptEntry("Kh«ng giao dÞch", no)
+		tbDailog:AddOptEntry("²»Giao dÞch", no)
 		G_TASK:OnMessage("Thóy Yªn", tbDailog, "DialogWithNpc")
 		tbDailog:Show()
 	else

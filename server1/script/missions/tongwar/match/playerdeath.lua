@@ -77,11 +77,11 @@ function OnDeath(Launcher)
 			BT_BroadSelf();
 		
 			if (GetCurCamp()  == 1) then
-				str  = GetMissionS(MS_S_CITYNAME_S)..launrankname..LaunName.." gi’t Æ≠Óc"..GetMissionS(MS_S_CITYNAME_J)..rankname..DeathName..", TÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
+				str  = GetMissionS(MS_S_CITYNAME_S)..launrankname..LaunName.." gi’t Æ≠Óc"..GetMissionS(MS_S_CITYNAME_J)..rankname..DeathName..", tÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
 			else
-				str  = GetMissionS(MS_S_CITYNAME_J)..launrankname..LaunName.." gi’t Æ≠Óc"..GetMissionS(MS_S_CITYNAME_S)..rankname..DeathName..", TÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
+				str  = GetMissionS(MS_S_CITYNAME_J)..launrankname..LaunName.." gi’t Æ≠Óc"..GetMissionS(MS_S_CITYNAME_S)..rankname..DeathName..", tÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER);
 			end
-			Msg2Player("<color=pink> ChÛc mıng! Bπn Æ∑ hπ Æ≠Óc:"..rankname..DeathName..", TÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER));
+			Msg2Player("<color=pink> ChÛc mıng! Bπn Æ∑ hπ Æ≠Óc:"..rankname..DeathName..", tÊng PK lµ "..tongwar_getdata(TONGWAR_RLTASK_KILLPLAYER));
 			Msg2MSAll(MISSIONID, str);
 		end
 		PlayerIndex = OrgPlayer;
@@ -90,7 +90,7 @@ function OnDeath(Launcher)
 	tongwar_setdata(TONGWAR_RLTASK_NDEATH, tongwar_getdata(TONGWAR_RLTASK_NDEATH) + 1)
 	tongwar_setdata(TONGWAR_RLTASK_SERIESKILL, 0)
 	SetTask(TV_SERIESKILL_REALY,0)
-	Msg2Player("<color=green>SË l«n tˆ vong cﬂn lπi:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."l«n")
+	Msg2Player("<color=green>À¿Õˆl«n ˝ªπ £:"..(GetTask(TONGWAR_RLTASK_MAXDEATH)- GetTask(TONGWAR_RLTASK_NDEATH)).."l«n")
 	BT_SortLadder();
 	BT_BroadSelf();
 	sf_onplayerleave()

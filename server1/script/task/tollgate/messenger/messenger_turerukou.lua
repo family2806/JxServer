@@ -36,11 +36,11 @@ end
 --	local Uworld1028 = nt_getTask(1028)  --ÈÎÎñÁ´ÈÎÎñ±äÁ¿
 --
 --	if ( GetLevel() < 120 ) then
---		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äúµ±Ç°µÈ¼¶Ã»ÓĞ´ïµ½×îĞ¡µÄ120¼¶ÒªÇó¡£Çë´ïµ½µÈ¼¶ÔÙÀ´ÕÒÎÒ°É¡£",1,"½áÊø¶Ô»°/no")	
+--		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äúµ±Ç°µÈ¼¶Ã»ÓĞ´ïµ½×îĞ¡µÄ120¼¶ÒªÇó¡£Çë´ïµ½µÈ¼¶ÔÙÀ´ÕÒÎÒ°É¡£",1,"KÕt thóc ®èi tho¹i/no")	
 --	elseif ( Uworld1204 ~= 0 )  then
---		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äúµ±Ç°µÄĞÅÊ¹ÈÎÎñÎ´Íê³É£¬²»ÄÜ½ÓÍ¬ÑùµÄÈÎÎñ£¬ÇëÏÈÍê³É¸ÃÈÎÎñ£¬Ğ»Ğ»¡£",1,"½áÊø¶Ô»°/no")
+--		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äúµ±Ç°µÄĞÅÊ¹ÈÎÎñÎ´Íê³É£¬²»ÄÜ½ÓÍ¬ÑùµÄÈÎÎñ£¬ÇëÏÈÍê³É¸ÃÈÎÎñ£¬Ğ»Ğ»¡£",1,"KÕt thóc ®èi tho¹i/no")
 --	elseif (  messenger_givetime() == 10 ) then  --²é¿´½ñÈÕÊÇ·ñ»¹ÓĞ¹Ø¿¨Ê±¼ä
---		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äú½ñÌìÔÚĞÅÊ¹ÈÎÎñÖĞµÄÊ±¼äÒÑºÄ¾¡£¬ÇëÃ÷ÈÕÔÙÀ´,Ğ»Ğ»¡£",1,"½áÊø¶Ô»°/no")
+--		Describe(DescLink_YiGuan.."£º¶Ô²»Æğ£¬Äú½ñÌìÔÚĞÅÊ¹ÈÎÎñÖĞµÄÊ±¼äÒÑºÄ¾¡£¬ÇëÃ÷ÈÕÔÙÀ´,Ğ»Ğ»¡£",1,"KÕt thóc ®èi tho¹i/no")
 --	else
 --		nt_setTask( 1204,1 )
 --		nt_setTask( 1203,10) --ÉèÖÃĞÅÊ¹ÈÎÎñµÄ²½Öè
@@ -62,11 +62,11 @@ end
 --		SetPos(1414,3191);
 --		Msg2Player("ÈÎÎñ¿ªÊ¼¼ÆÊ±ÁË")
 --	elseif ( nt_getTask(1203) == 20 ) then
---		Describe(DescLink_YiGuan.."£ºÄãÒÑ¾­¿ªÊ¼ÁËÈÎÎñ£¬ÎŞĞèÔÙ¿ªÊ¼ÀÕ¡£",1,"½áÊø¶Ô»°/no")
+--		Describe(DescLink_YiGuan.."£ºÄãÒÑ¾­¿ªÊ¼ÁËÈÎÎñ£¬ÎŞĞèÔÙ¿ªÊ¼ÀÕ¡£",1,"KÕt thóc ®èi tho¹i/no")
 --	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
---		Describe(DescLink_YiGuan.."£ºÄãÒÑ¾­Íê³ÉÁËÈÎÎñ£¬ÔõÃ´»¹Òª¿ªÊ¼ÈÎÎñÄØ£¿ËÙËÙÀë¿ª°É¡£",1,"½áÊø¶Ô»°/no")
+--		Describe(DescLink_YiGuan.."£ºÄãÒÑ¾­Íê³ÉÁËÈÎÎñ£¬ÔõÃ´»¹Òª¿ªÊ¼ÈÎÎñÄØ£¿ËÙËÙÀë¿ª°É¡£",1,"KÕt thóc ®èi tho¹i/no")
 --	elseif ( nt_getTask(1203) == 0 ) then
---		Describe(DescLink_YiGuan.."£ºÄãµÄĞÅÊ¹ÈÎÎñÒÑ¾­Ê§°Ü£¬ÇëËÙËÙÀë¿ª¡£",1,"½áÊø¶Ô»°/no")
+--		Describe(DescLink_YiGuan.."£ºÄãµÄĞÅÊ¹ÈÎÎñÒÑ¾­Ê§°Ü£¬ÇëËÙËÙÀë¿ª¡£",1,"KÕt thóc ®èi tho¹i/no")
 --	end
 --end
 
@@ -75,7 +75,7 @@ function ture_try_starttask()
 		--×Ô¼º¿ªÊ¼ÈÎÎñ
 		local nTeamSize = GetTeamSize();
 		if nTeamSize > 1 and IsCaptain() ~= 1 then
-			Describe(DescLink_YiGuan..": Ng­¬i kh«ng ph¶i ®éi tr­ëng, kh«ng thÓ b¾t ®Çu nhiÖm vô.",1,"½áÊø¶Ô»°/no")
+			Describe(DescLink_YiGuan..": Ng­¬i kh«ng ph¶i ®éi tr­ëng, kh«ng thÓ b¾t ®Çu nhiÖm vô.",1,"KÕt thóc ®èi tho¹i/no")
 			return
 		end
 		
@@ -108,11 +108,11 @@ function ture_try_starttask()
 			)
 		);
 	elseif ( nt_getTask(1203) == 20 or nt_getTask(1203) == 21 ) then
-		Describe(DescLink_YiGuan..": Ng­¬i ®· b¾t ®µu nhiÖm vô, kh«ng cÇn ph¶i l¹i b¾t ®Çu n÷a.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· b¾t ®µu nhiÖm vô, kh«ng cÇn ph¶i l¹i b¾t ®Çu n÷a.",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
-		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, sao l¹i ph¶i b¾t ®Çu n÷a ? Nhanh ch©n rêi khái ®©y ®i.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, sao l¹i ph¶i b¾t ®Çu n÷a ? Nhanh ch©n rêi khái ®©y ®i.",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1203) == 0 ) then
-		Describe(DescLink_YiGuan..": Ng­¬i ®· hoµn thµnh nhiÖm vô Tİn sø råi! Nhanh ch©n rêi khái ®©y ®i!",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": Ng­¬i ®· hoµn thµnh nhiÖm vô Tİn sø råi! Nhanh ch©n rêi khái ®©y ®i!",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 
@@ -210,16 +210,16 @@ end
 
 function ture_continuetask()
 	if ( nt_getTask(1203) == 10 ) then
-		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i vÉn ch­a b¾t ®Çu, kh«ng thÓ tiÕp tôc nhiÖm vô.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i vÉn ch­a b¾t ®Çu, kh«ng thÓ tiÕp tôc nhiÖm vô.",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1203) == 20 ) then
-		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· b¾t ®Çu, h·y nhanh chãng ®i më 5 B¶o R­¬ng ®i.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· b¾t ®Çu, h·y nhanh chãng ®i më 5 B¶o R­¬ng ®i.",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1203) == 21 ) then
 		ture_real_starttask(nt_getTask(1201))
 		Msg2Player("NhiÖm vô cña ng­¬i cã thÓ tiÕp tôc")
 	elseif ( nt_getTask(1203) == 25 or nt_getTask(1203) == 30 ) then
-		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, kh«ng cÇn ph¶i tiÕp tôc n÷a.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· hoµn thµnh, kh«ng cÇn ph¶i tiÕp tôc n÷a.",1,"KÕt thóc ®èi tho¹i/no")
 	elseif ( nt_getTask(1203) == 0 ) then
-		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· thÊt b¹i, nhanh chãng rêi khái ®©y.",1,"½áÊø¶Ô»°/no")
+		Describe(DescLink_YiGuan..": NhiÖm vô cña ng­¬i ®· thÊt b¹i, nhanh chãng rêi khái ®©y.",1,"KÕt thóc ®èi tho¹i/no")
 	end
 end
 

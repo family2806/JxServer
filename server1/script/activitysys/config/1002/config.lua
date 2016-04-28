@@ -46,7 +46,7 @@ tbConfig[3] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_NgoiSaoTuyet\tVuotAi17"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\tV­ît qua ¶i 17"} },
 	},
 }
 tbConfig[4] =
@@ -62,7 +62,7 @@ tbConfig[4] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_NgoiSaoTuyet\tVuotAi28"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},10,"Event_Ñ©ÐÇÐÇ\tV­ît qua ¶i 28"} },
 	},
 }
 tbConfig[5] = 
@@ -78,7 +78,7 @@ tbConfig[5] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_NgoiSaoTuyet\tHoanThanhPLD"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,30118,0,0,0},nExpiredTime=nItemExpiredTime,},20,"Event_Ñ©ÐÇÐÇ\tHoµn thµnh Phong L¨ng §é"} },
 	},
 }
 tbConfig[6] = --É±ÊÖboss

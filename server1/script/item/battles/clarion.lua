@@ -40,19 +40,19 @@ function EatMedicine()	-- 通过判断战场的等级和玩家的阵营来加NPC
 
 	if ( GetLevel() >= 40 and GetLevel() <= 79) then	-- 初级战场
 		if( GetCurCamp() == 1) then		-- 召唤和玩家同一阵营的NPC
-			CallSjNpc( 682, 50, W, X, Y, "的宋军士兵");
+			CallSjNpc( 682, 50, W, X, Y, " T鑞g binh");
 		elseif( GetCurCamp() == 2) then
 			CallSjNpc( 688, 50, W, X, Y, "Kim binh");
 		end
 	elseif ( GetLevel() >= 80 and GetLevel() <= 119) then	-- 中级战场
 		if( GetCurCamp() == 1) then
-			CallSjNpc( 682, 70, W, X, Y, "的宋军士兵");
+			CallSjNpc( 682, 70, W, X, Y, " T鑞g binh");
 		elseif( GetCurCamp() == 2) then
 			CallSjNpc( 688, 70, W, X, Y, "Kim binh");
 		end
 	else	-- 高级战场
 		if( GetCurCamp() == 1) then
-			CallSjNpc( 682, 90, W, X, Y, "的宋军士兵");
+			CallSjNpc( 682, 90, W, X, Y, " T鑞g binh");
 		elseif( GetCurCamp() == 2) then
 			CallSjNpc( 688, 90, W, X, Y, "Kim binh");
 		end
@@ -66,7 +66,7 @@ function CallSjNpc(NpcId, NpcLevel, W, X, Y, Name)
 		AddNpc( NpcId, NpcLevel, SubWorldID2Idx(W), ( X +  3 ) * 32, Y * 32, 1, playername..Name, 0);
 	--end
 	--for j = 1, 2 do
-		--AddNpc( NpcId, NpcLevel, SubWorldID2Idx(W), ( X - j * 3 ) * 32, Y * 32, 1, playername.."的宋军士兵", 0);
+		--AddNpc( NpcId, NpcLevel, SubWorldID2Idx(W), ( X - j * 3 ) * 32, Y * 32, 1, playername.." T鑞g binh", 0);
 	--end
-	--AddNpc( NpcId, NpcLevel, SubWorldID2Idx(W), X * 32, ( Y + 3 ) * 32, 1, playername.."的宋军士兵", 0);
+	--AddNpc( NpcId, NpcLevel, SubWorldID2Idx(W), X * 32, ( Y + 3 ) * 32, 1, playername.." T鑞g binh", 0);
 end

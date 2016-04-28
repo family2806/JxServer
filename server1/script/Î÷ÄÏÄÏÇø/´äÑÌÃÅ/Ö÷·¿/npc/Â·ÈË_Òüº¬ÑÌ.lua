@@ -138,7 +138,7 @@ function defection_complete()
 	SetRank(31)
 	AddMagic(99)
 	Msg2Player("Häc ®­îc Phong Hoa TuyÕt NguyÖt ")
-	AddNote("Gia nhËp Thóy Yªn m«n, trë thµnh Hoa T×, häc ®­îc Phong Hoa TuyÕt NguyÖt ")
+	AddNote("¼ÓÈë´äÑÌÃÅ£¬³ÉÎª»¨æ¾£¬Häc ®­îc Phong Hoa TuyÕt NguyÖt ")
 	Msg2Faction("cuiyan",GetName().." tõ Nga Mi ®Õn gia nhËp Thóy Yªn m«n. Lùc l­îng bæn ph¸i ®· m¹nh l¹i cµng m¹nh!",GetName())
 end
 

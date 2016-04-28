@@ -39,7 +39,7 @@ function ny07_entrance()
 	Say("µ±½ñÎäÁÖ£¬ÈË½Ü±²³ö£¬¸÷´óÃÅÅÉíÂ¾«Í¼Ç¿¡£µ±´ËÂÒÊÀ£¬¸÷Î»ÈÔÎªÎäÁÖÃË¾¡ĞÄ½ßÁ¦¡£Ç¡·ê¼Ñ½Ú£¬¶À¹ÂÃËÖ÷ÌØÎª¸÷Î»ÏÀÊ¿ÏÀÅ®ËÍÉÏ½ÚÈÕºØÀñ£¬×£ºÏ¼Ò°²¿µ£¬ÍòÊÂÈçÒâ£¡", 4,
 	"NhËn phÇn th­ëng ®iÓm kinh nghiÖm mçi ngµy/ny07_getexp",
 	"NhËn mËt tŞch nhiÖm vô mçi ngµy/ny07_getTaskBook",
-	"ÁìÈ¡Ã¿ÈÕµÄÈÙÓşÁîÅÆ/ny07_getmedal",
+	"ÁìÈ¡Ã¿ÈÕµÄLÖnh bµi vinh dù/ny07_getmedal",
 	"Rêi khái/no"
 	);
 end;
@@ -50,7 +50,7 @@ ny07_tab_medal = {
 {"LÖnh bµi vinh dù B¹ch Ng©n",	10	,1255	},
 {"LÖnh bµi vinh dù Thanh ®ång",	30	,1256	},
 {"LÖnh bµi vinh dù",	259	,1294	},
-{"LÖnh bµi vinh dù Hµn thiÕt",	700	,1257	},
+{"º®ÌúLÖnh bµi vinh dù",	700	,1257	},
 };
 function ny07_getmedal()
 	if (GetLevel() < 120) then

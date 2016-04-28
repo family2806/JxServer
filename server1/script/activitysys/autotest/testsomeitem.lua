@@ -125,7 +125,7 @@ function ItemCase:test_Use2_1()
 		local nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 		
 		if nCell == 0 then
-			self:assertTrue(nRet ~= 1, "Hµnh trang ®ñ « nh­ng kh«ng thÓ sö dông")
+			self:assertTrue(nRet ~= 1, "×°±¸¹»µ«ÊÇ²»ÄÜSö dông ")
 		else
 			self:assertTrue(nRet == 1, "Ch­a thªm giíi h¹n « trèng hµnh trang")
 		
@@ -152,9 +152,9 @@ function ItemCase:test_Use3()
 	
 	local nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 	
-	self:assertTrue(nRet == 1, "Nguyªn liÖu kh«ng ®ñ còng cã thÓ sö dông"..nRet)
+	self:assertTrue(nRet == 1, "Ô­ÁÏ²»×ãÒ²¿ÉÒÔSö dông "..nRet)
 	local nCount = CalcEquiproomItemCount(tbProp[1], tbProp[2], tbProp[3],tbProp[4])
-	self:assertEquals(nCount, nOldCount, "Sö dông thÊt b¹i hoµn khÊu nguyªn liÖu")
+	self:assertEquals(nCount, nOldCount, "Sö dông Ê§°Ü»¹¿ÛÔ­ÁÏ")
 	
 	ConsumeEquiproomItem(nCount, tbProp[1], tbProp[2], tbProp[3], tbProp[4])
 	
@@ -163,7 +163,7 @@ function ItemCase:test_Use3()
 	nRet = DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
 
 	
-	self:assertTrue(nRet ~= 1, "Nguyªn liÖu ®ñ còng kh«ng thÓ sö dông")
+	self:assertTrue(nRet ~= 1, "Ô­ÁÏ×ãÒ²²»ÄÜSö dông ")
 	
 	nCount = CalcEquiproomItemCount(tbProp[1], tbProp[2], tbProp[3],tbProp[4])
 	self:assertEquals(nCount, tbRequireItem.nCount, "KhÊu trõ nhiÒu h¬n nguyªn liÖu cÇn thiÕt")	
@@ -179,10 +179,10 @@ function ItemCase:test_Use1()
 	
 	
 	DynamicExecuteByPlayer(PlayerIndex, self.szExePath, "main", self.nItemIndex)
-	self:assertTrue(%tbTestAward.szLogTitle ~= nil, format("Sö dông %s nhËn ®­îc phÇn th­ëng, kh«ng cã nhËt ký", GetItemName(self.nItemIndex)))	
+	self:assertTrue(%tbTestAward.szLogTitle ~= nil, format("Sö dông %s ÊÕµ½½±Æ·£¬Ã»ÓÐ¼ÇÂ¼", GetItemName(self.nItemIndex)))	
 	local tbItem = %tbTestAward.tbItem
 	local nTotalRate = 0
-	self:assertTrue(tbItem ~= nil, format("Sö dông %s nhËn kh«ng ®­îc phÇn th­ëng", GetItemName(self.nItemIndex)))
+	self:assertTrue(tbItem ~= nil, format("Sö dông  %s ÊÕ²»µ½½±Æ·", GetItemName(self.nItemIndex)))
 	
 	if not tbItem then
 		return

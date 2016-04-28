@@ -59,7 +59,7 @@ function tbRefiningIron:UpdataIron(nLevel)
 			nCount = 1,
 			nExpiredTime=self.nCloseDate,
 		};
-		tbAwardTemplet:GiveAwardByList(tbAwardItem, "Th–p tinh luy÷n gÈp th t bπi, tr∂ lπi th–p tinh luy÷n.");
+		tbAwardTemplet:GiveAwardByList(tbAwardItem, "Th–p Tinh Luy÷n∫œ≥… ß∞‹£¨ÕÀªÿTh–p Tinh Luy÷n.");
 		CreateTaskSay({"<dec><npc>ThÀt Æ∏ng ti’c, luy÷n th–p Æ∑ th t bπi! Ta ngh‹ l«n sau sœ thµnh c´ng Æ„!",  "ß≠Óc rÂi./Cancel",});
 		return	
 	end
@@ -72,11 +72,11 @@ function tbRefiningIron:UpdataIron(nLevel)
 		nCount = 1,
 		nExpiredTime=self.nCloseDate,
 	};
-	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Gh–p th–p tinh luy÷n");
+	tbAwardTemplet:GiveAwardByList(tbAwardItem, "∫œ≥…Th–p Tinh Luy÷n");
 	
 	-- ∏ﬂ∆∑÷ Ã· æ
 	if nLevel >= 7 then
-		local szmsg = format("ChÛc mıng cao thÒ %s Æ∑ nhÀn Æ≠Óc th–p tinh luy÷n c p %d. Hi v‰ng ng≠¨i sœ c„ nhi“u may mæn h¨n n˜a!", GetName(), nLevel);
+		local szmsg = format("πßœ≤∏ﬂ ÷ %s “—æ≠µ√µΩ %dº∂Th–p Tinh Luy÷n. œ£Õ˚ƒ„”–∏¸∂‡µƒ–“‘À!", GetName(), nLevel);
 		local _, nTongId = GetTongName(); 
 		if nTongId ~= 0 then
 			Msg2Tong(nTongId, szmsg);

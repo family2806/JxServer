@@ -382,7 +382,7 @@ tbConfig[22] = {
 tbConfig[23] = {
 	m_nCurStepId = 8,
 	tbMessage = {
-		{"DialogWithNpc", {"T∂ HÈ Ph∏p ßoan MÈc Du÷ "}},
+		{"DialogWithNpc", {"T∂ HÈ Ph∏p ßoan MÈc Du÷  "}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},

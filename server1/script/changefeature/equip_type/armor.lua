@@ -25,7 +25,7 @@ function tb:CheckEquip(nItemIndex)
 		return 
 	end
 	if nD ~= 2 then
-		Talk(1, "", "Trang bÞ nµy kh«ng ph¶i lµ kh«i gi¸p.")
+		Talk(1, "", "¸Ã×°±¸²»ÊÇKh«i gi¸p.")
 		return 
 	end
 	return 1

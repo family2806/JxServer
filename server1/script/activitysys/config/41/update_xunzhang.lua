@@ -12,7 +12,7 @@ tbMaterial_Medal = {
 tbMaterial_Shijin = {szName="Th筩h Kim",tbProp={6,1,3136,1,0,0},nExpiredTime=20120501,nCount=1,}
 	
 tbProduct = {
-	[1] = {szName="Huy Hi謚 c蕄 2",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,},
+	[1] = {szName=" Huy Hi謚 c蕄 2",tbProp={6,1,3134,1,0,0},nExpiredTime=20120501,},
 	[2] = {szName="Huy Hi謚 c蕄 3",tbProp={6,1,3135,1,0,0},nExpiredTime=20120501,}
 	}
 
@@ -20,8 +20,8 @@ tbMedalLevelUpRate = {50,35 }
 
 tbMedalLog = {
 	[1] = {
-		szSuccess = "NangcapThanhCongHuyHieuCap2",
-		szFail = "NangcapThatBaiHuyHieuCap2",
+		szSuccess = "升级成功Huy Hi謚 c蕄 2",
+		szFail = "升级失败Huy Hi謚 c蕄 2",
 		},
 	[2] = {
 		szSuccess = "NangcapThanhCongHuyHieuCap3",

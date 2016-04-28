@@ -116,7 +116,7 @@ function main(nIndexItem)
 	local nCount1 = CalcItemCount(3, tbKey1[1], tbKey1[2], tbKey1[3], -1) 
 	local nCount2 = CalcItemCount(3, tbKey2[1], tbKey2[2], tbKey2[3], -1) 
 	if nCount1 == 0 and nCount2 == 0 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc Thiªn Tr× BÝ B¶o", 1, "§ãng/no")
+		Say("ÐèÒªÓÐ»Æ½ðÔ¿³×»òÕßCh×a Khãa Nh­ ý²ÅÄÜ´ò¿ªThiªn Tr× BÝ B¶o", 1, "§ãng/no")
 		return 1
 	end
 
@@ -126,7 +126,7 @@ function main(nIndexItem)
 	end	
 	local tbOpt = {}
 	if nCount1 ~= 0 then
-		tinsert(tbOpt,format("Sö dông Ch×a khãa nh­ ý/#VnTCMJBoxNewAward(%d, '%s')", nIndexItem, "chiakhoanhuy"))
+		tinsert(tbOpt,format("Ê¹ÓÃCh×a Khãa Nh­ ý #VnTCMJBoxNewAward(%d, '%s')", nIndexItem, "chiakhoanhuy"))
 	end
 	if nCount2 ~= 0 then
 		tinsert(tbOpt,format("Sö dông Ch×a khãa vµng/#VnTCMJBoxNewAward(%d, '%s')", nIndexItem, "chiakhoavang"))
@@ -147,13 +147,13 @@ function VnTCMJBoxNewAward(nItemIdx, strKeyType)
 		return
 	end
 	if ConsumeItem(3, 1, tbKey[1], tbKey[2], tbKey[3], -1) ~= 1 then
-		Say("CÇn ph¶i cã Ch×a Khãa Vµng hoÆc Ch×a Khãa Nh­ ý míi cã thÓ më ®­îc Thiªn Tr× BÝ B¶o", 1, "§ãng/no")
+		Say("ÐèÒªÓÐ»Æ½ðÔ¿³×»òÕßCh×a Khãa Nh­ ý²ÅÄÜ´ò¿ªThiªn Tr× BÝ B¶o", 1, "§ãng/no")
 		return
 	end
 	
 	if ConsumeItem(3, 1, 6, 1, 30193, -1) ~= 1 then
-		Say("Kh«ng t×m thÊy Thiªn Tr× BÝ B¶o", 1, "§ãng/no")
+		Say("ÕÒ²»µ½Thiªn Tr× BÝ B¶o", 1, "§ãng/no")
 		return
 	end	
-	tbAwardTemplet:Give(tbAward, 1, {"ThienTriMatCanh", "SuDungThienTriBiBao"})	
+	tbAwardTemplet:Give(tbAward, 1, {"ThienTriMatCanh", "Ê¹ÓÃThiªn Tr× BÝ B¶o"})	
 end

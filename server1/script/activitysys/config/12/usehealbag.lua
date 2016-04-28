@@ -31,7 +31,7 @@ function main(nItemIndex)
 	local nDate = tonumber(GetLocalDate("%Y%m%d"))
 	
 	if nDate < %StartDate or nDate > %EndDate then
-		Talk(1, "", "§¹o cô ®ang trong thêi gian chê, ®îi mét l¸t råi h·y sö dông.")
+		Talk(1, "", "Kh«ng ph¶i trong thêi gian ho¹t ®éng, kh«ng thÓ sö dông ®¹o cô nµy.")
 		return 1
 	end
 	
@@ -47,7 +47,7 @@ function main(nItemIndex)
 	local nCurTime = GetCurServerTime()
 	
 	if nCurTime - nLastUseTime < tbSkillParam.nCD then
-		Msg2Player("§¹o cô ®ang trong thêi gian chê, ®îi mét l¸t råi h·y sö dông.")
+		Msg2Player("Kh«ng ph¶i trong thêi gian ho¹t ®éng, kh«ng thÓ sö dông ®¹o cô nµy.")
 		return 1
 	end
 	

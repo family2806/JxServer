@@ -14,7 +14,7 @@ sjskill_tbSkill = {
 	[467]	= {nLevel_Low = 1, 	nLevel_High = 4, 	nTime = 60, szTips = "%s gi¶m tróng ®éc: %d%%"},
 	[468]	= {nLevel_Low = 1, 	nLevel_High = 4, 	nTime = 60, szTips = "%s gi¶m lµm chËm: %d%%"},
 	[469]	= {nLevel_Low = 1, 	nLevel_High = 4, 	nTime = 60, szTips = "%s gi¶m cho¸ng: %d%%"},
-	[471]	= {nLevel_Low = 2, 	nLevel_High = 10,	nTime = 60, szTips = "Liªn tiÕp %s håi phôc sinh mÖnh %d ®iÓm vµ liªn tiÕp %s håi phôc néi lùc %d ®iÓm"},
+	[471]	= {nLevel_Low = 2, 	nLevel_High = 10,	nTime = 60, szTips = "Liªn tiÕp %s håi phôc sinh mÖnh %d ®iÓmÒÔ¼°Á¬Ðø%s »Ö¸´ÄÚÁ¦ %d µã"},
 	[472]	= {nLevel_Low = 1, 	nLevel_High = 10,	nTime = 60, szTips = "Liªn tiÕp %s håi phôc sinh mÖnh , mçi nöa gi©y håi phôc %d ®iÓm vµ liªn tiÕp %s håi phôc néi lùc , mçi nöa gi©y håi phôc %d ®iÓm"},
 	[473]	= {nLevel_Low = 1, 	nLevel_High = 7, 	nTime = 60, szTips = "%s phßng thñ: t¨ng %d%%"},
 	[474]	= {nLevel_Low = 1, 	nLevel_High = 7, 	nTime = 60, szTips = "%s kh¸ng ®éc:  t¨ng %d%%"},

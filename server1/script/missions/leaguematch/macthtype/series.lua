@@ -106,8 +106,8 @@ WLLS_DATA = {
 	max_member = 2,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		" lÇn nµy tranh tµi v× cïng hÖ hai ng­êi cuéc so tµi ",
-		" lÇn nµy tranh tµi v× cïng hÖ hai ng­êi cuéc so tµi ",
+		"±¾´Î±ÈÈüÎª cïng hÖ hai ng­êi cuéc so tµi ",
+		"±¾´Î±ÈÈüÎª cïng hÖ hai ng­êi cuéc so tµi ",
 	},
 	
 	addmem_ex	= ", cÇn lµ nhµ ch¬i <color=red> cïng hÖ <color> cïng nhau ",	--×é½¨Õ½¶Ó¶îÍâÒªÇó£¨¿ÉÑ¡£©
@@ -132,7 +132,7 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter> lÇn nµy "..str_des.." v× <color=red> cïng hÖ hai ng­êi cuéc so tµi <color>. ng­¬i cã thÓ lùa chän thµnh lËp häp thµnh ®éi , còng cã thÓ gia nhËp nh÷ng chiÕn ®éi kh¸c , sau ®ã , ®éi tr­ëng ®i cïng "..str_des.." quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi "..str_des.." mçi chiÕn ®éi thµnh viªn v× <color=red>2 ng­êi <color> cÇn lµ cïng hÖ ",
+			wlls_descript("<enter> lÇn nµy "..str_des.." Îª<color=red> cïng hÖ hai ng­êi cuéc so tµi <color>. Äã¿ÉÒÔÑ¡Ôñ½¨Á¢×é¶Ó£¬Ò²¿ÉÒÔ¼ÓÈëÆäËûÕ½¶Ó£¬È»ºó£¬¶Ó³¤È¥Óë "..str_des.." quan viªn ®èi tho¹i , lùa chän tranh tµi ®éi "..str_des.." mçi chiÕn ®éi thµnh viªn v× <color=red>2 ng­êi <color> cÇn lµ cïng hÖ ",
 				" ta muèn thµnh lËp "..str_des.." häp thµnh ®éi /wlls_want2create",
 				" ta chØ nh×n mét chót /OnCancel")
 			return

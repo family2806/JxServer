@@ -97,7 +97,7 @@ function defection_yes()
 		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng "..GetRepute().."®iÓm!")
 		AddRepute(-1 * GetRepute())
 	else
-		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200 ®iÓm! ")
+		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200®iÓm! ")
 		AddRepute(-200)
 	end
 	AddNote("D­¬ng Anh phÕ bá vâ c«ng Thiªn V­¬ng bang cña b¹n, ®o¹t l¹i chøc K×nh Thiªn Nguyªn So¸i dång thêi c«ng bè cho thiªn h¹ b¹n ®· ra khái Thiªn V­¬ng Bang. B©y giê ng­¬i cã thÓ gia nhËp ThiÕu L©m ph¸i. ")
@@ -163,7 +163,7 @@ end;
 
 function L60_prise()
 DelItem(96)
-Msg2Player("Chóc mõng b¹n ®· xuÊt s­ thµnh c«ng, b¹n ®­îc phong lµ TrÊn Bang Nguyªn So¸i! Danh väng t¨ng thªm 120 ®iÓm! ")
+Msg2Player("¹§Ï²Äã³öÊ¦³É¹¦£¬Äã±»·âÎªÕò°îÔªË§£¡ÃûÍûÔö¼Ó120®iÓm! ")
 --AddGlobalCountNews(GetName().."ÒÕ³É³öÊ¦£¬¸æ±ğÍ¬ÃÅÊ¦µÜ¿ªÊ¼´³µ´½­ºş¡£", 1)
 Msg2SubWorld("Thiªn V­¬ng"..GetName().."XuÊt s­ thµnh c«ng, c¸o biÖt D­¬ng bang chñ vµ c¸c ®ång m«n huynh ®Ö, tiÕp tôc hµnh tÈu giang hå. ")
 AddRepute(120)
@@ -172,7 +172,7 @@ SetTask(3, 70*256)
 SetFaction("")
 SetCamp(4)			   				--Íæ¼ÒÍË³öThiªn V­¬ng°ï
 SetCurCamp(4)
-AddNote("Quay l¹i TÈm cung Thiªn V­¬ng Bang, ®­a Thiªn V­¬ng Di Th­ cho Bang chñ D­¬ng Anh, hoµn thµnh nhiÖm vô xuÊt s­. Th¨ng chøc K×nh Thiªn Nguyªn So¸i.. ")
+AddNote("·µ»ØThiªn V­¬ng°ïÇŞ¹¬£¬°ÑThiªn V­¬ngÒÅÊé½»¸ø°ïÖ÷Ñîçø£¬Íê³É³öÊ¦ÈÎÎñ¡£ÉıÈÎ¾ªÌìÔªË§.. ")
 end;
 
 function no()

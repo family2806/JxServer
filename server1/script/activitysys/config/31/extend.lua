@@ -49,7 +49,7 @@ function pActivity:GetRabbit()
 		SetNpcScript(nNpcIndex, szLuaFile)	
 		SetNpcTimer(nNpcIndex, 60*18)
 		self.tbNpc[nNpcIndex] = GetName()
-		%tbLog:PlayerActionLog("SinhNhatVoLamTruyenKy","ThoXuatHien",  nW, nX, nY)
+		%tbLog:PlayerActionLog("SinhNhatVoLamTruyenKy","Thá ³öÏÖ",  nW, nX, nY)
 	end
 	
 end
@@ -57,11 +57,11 @@ end
 function pActivity:UseNaiYouBing()
 	print(TSKG_NaiYouBing)
 	if(self:CheckTask(1, 500,"","==") == 1) then
-		PlayerFunLib:AddExp(5000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem500Lan")
+		PlayerFunLib:AddExp(5000000,1,"SinhNhatVoLamTruyenKy","Ê¹ÓÃKem±ý500´Î")
 	elseif (self:CheckTask(1, 1000,"","==") == 1) then
-		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem1000Lan")
+		PlayerFunLib:AddExp(10000000,1,"SinhNhatVoLamTruyenKy","Ê¹ÓÃKem±ý1000´Î")
 	end
-	PlayerFunLib:AddExp(1000000,1,"SinhNhatVoLamTruyenKy","SuDungBanhKem")
+	PlayerFunLib:AddExp(1000000,1,"SinhNhatVoLamTruyenKy","Ê¹ÓÃKem±ý")
 end
 
 function pActivity:UseXiaoDanGao()

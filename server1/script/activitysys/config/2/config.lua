@@ -29,7 +29,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSKI_TREE_LIMIT,MAX_GET_TREE_LIMIT,"H«m nay ng­¬i ®· nhËn C©y Th«ng Gi¸ng Sinh råi, ngµy mai h·y quay l¹i.","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_TREE_LIMIT,MAX_GET_TREE_LIMIT,"½ñÌìÄãÒÑ¾­NhËn C©y Th«ng Gi¸ng SinhÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -48,7 +48,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTaskDaily",	{TSKI_STOCKING_LIMIT,MAX_GET_STOCKING_LIMIT,"H«m nay ng­¬i ®· nhËn TÊt Gi¸ng Sinh råi, ngµy mai h·y quay l¹i.","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSKI_STOCKING_LIMIT,MAX_GET_STOCKING_LIMIT,"½ñÌìÄãÒÑ¾­NhËn TÊt Gi¸ng SinhÁË£¬Ã÷ÌìÔÙÀ´°É","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"default"} },
 	},
 	tbActition = 
@@ -81,7 +81,7 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 	szName = "event introduction",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Vµo lóc 0:00 ngµy 1 th¸ng 12 n¨m 2011 ®Õn 24:00 ngµy 31 th¸ng 12 n¨m 2011, nh÷ng ®¹i hiÖp cÊp 150 trë lªn ( trïng sinh kh«ng giíi h¹n cÊp ®é) cã thÓ tham gia ho¹t ®éng, ®¹i hiÖp cã thÓ ®Õn §¹i Tïng Gi¸ng Sinh t¹i L©m An (198,184), Ph­îng T­êng (198,199), BiÖn Kinh (213,195), §¹i Lý (202,198), T­¬ng D­¬ng (198,201), Thµnh §«(392,316) nhËn C©y Th«ng Gi¸ng Sinh vµ TÊt Gi¸ng Sinh, ®¹i hiÖp cã thÓ ë trong thµnh nhÊn chuét ph¶i ®Ó sö dông ®¹o cô C©y Th«ng Gi¸ng Sinh, nhËn ®­îc mét C©y Th«ng Gi¸ng Sinh, ®¹i hiÖp cã thÓ sö dông Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, Kño Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh ®Ó trang trÝ cho C©y Th«ng Gi¸ng Sinh, ®Ó nhËn ®­îc phÇn th­ëng, Qu¶ Gi¸ng Sinh, §Ìn Lång Gi¸ng Sinh, Qu¶ Gi¸ng Sinh, Chu«ng Gi¸ng Sinh, Sao Gi¸ng Sinh cã thÓ ®¸nh qu¸i r¬i ra t¹i Tr­êng B¹ch S¬n Nam, Kháa Lang §éng, Sa M¹c TÇng 3, M¹c Cao QuËt, TiÕn Cóc §éng. Mçi ngµy vµo lóc 19:00 - 23:00, ®¹i hiÖp cã thÓ mang theo TÊt Gi¸ng Sinh ®Õn §Ønh Tr­êng B¹ch ( T­¬ng D­¬ng-ThÇn BÝ Th­¬ng Nh©n LiÔu Êt-§Ønh Tr­êng B¹ch) ®Ó thu thËp LÔ VËt Gi¸ng Sinh, lÔ vËt sÏ v« cïng hÊp dÉn ®Êy! §Æc biÖt trong thêi gian diÔn ra ho¹t ®éng trong Kú Tr©n C¸c cßn cã vËt phÈm Mò Gi¸ng Sinh, ®¹i hiÖp cã thÓ mang theo Mò Gi¸ng Sinh ®i ®Õn §¹i Tïng Gi¸ng Sinh ®æi lÊy Cµn Kh«n TÝch LÞch §¬n, Cµn Kh«n TÝch LÞch §¬n nµy cã uy lùc v« song, cã thÓ sö dông nã ®Ó ®¸no b¹i ¸c Lang T¶ Sø, ¸c Lang T¶ Sø Èn nÊp trong ¸c Lang Cèc, ®¹i hiÖp cã thÓ th«ng qua Xa Phu t¹i c¸c thµnh thÞ ®Ó ®i vµo ¸c Lang Cèc, ®¸nh b¹i ¸c Lang T¶ Sø cã thÓ nhËn ®­îc phÇn th­ëng v« cïng phong phó .",0},
+	tbMessageParam = {"´Ó2011Äê12ÔÂ1ÈÕ0:00µ½2011Äê12ÔÂ31ÈÕ24:00£¬150¼¶ÒÔÉÏµÄ´óÏÀ£¨ÖØÉú²»ÊÜ¼¶±ðÏÞÖÆ£©¿ÉÒÔ²Î¼Ó»î¶¯£¬´óÏÀ¿ÉÒÔµ½ÁÖ°²(198,184),·ïÏé (198,199),ãê¾© (213,195), ´óÀí (202,198), ÏåÑô(198,201),³É¶¼(392,316) µÄ§¹i Tïng Gi¸ng SinhNhËn C©y Th«ng Gi¸ng SinhºÍÊ¥µ®Íà£¬´óÏÀ¿ÉÒÔÔÚ³ÇÄÚµã»÷Êó±êÓÒ¼üÊ¹ÓÃÊ¥µ®Ê÷µÀ¾ß£¬ÊÕµ½Ò»¿ÅÊ¥µ®Ê÷£¬´óÏÀ¿ÉÒÔÊ¹ÓÃÊ¥µ®¹û£¬Ê¥µ®µÆÁý£¬Ê¥µ®ÖÓ,Ê¥µ®ÐÇÐÇÀ´×°ÊÎÊ¥µ®Ê÷£¬À´½ÓÊÕ½±Æ·£¬Ê¥µ®¹û£¬Ê¥µ®µÆÁý£¬Ê¥µ®¹û£¬Ê¥µ®ÖÓ£¬Ê¥µ®ÐÇÐÇ¿ÉÒÔ´òÔÚ³¤°×É½ÄÏ£¬ÂãÀÇ¶´£¬µÚ3²ãÉ³Ä®£¬Äª¸ß¿ß£¬½ø¾Õ¶´ÂäÏÂµÄ¹ÖÎï¡£Ã¿Ìì19:00- 23:00, ´óÏÀ¿ÉÒÔ´ø×ÅÊ¥µ®Íàµ½³¤°×É½£¨ÏåÑô¡ªÉñÃØÉÌÈËÁøÒÒ¡ª³¤°×¶¥£©ÊÕ¼¯Ê¥µ®ÀñÎï£¬ÀñÎï»á·Ç³£ÓÐÎüÒýÁ¦Å¶£¡ÓÈÆäÊÇÔÚÆæÕä¸óÓÐ»î¶¯µÄÊ±¼äÀï£¬»¹ÓÐNãn gi¸ng sinhÎïÆ·£¬´óÏÀ¿ÉÒÔ´ø×ÅNãn gi¸ng sinhµ½§¹i Tïng Gi¸ng Sinh»»È¡Ç¬À¤TÝch LÞch ®¬n£¬´ËµÆÍþÁ¦ÎÞË«£¬¿ÉÒÔÓÃËüÀ´´ò°Ü¶öÀÇ×óÊ·£¬ËüÒþ²ØÔÚ¶öÀÇ¹È¡£´óÏÀ¿ÉÒÔÍ¨¹ý¸÷³ÇÇøµÄ³µ·òµ½´ï¶öÀÇ¹È£¬´ò°Ü¶öÀÇ×óÊ·¿ÉÒÔÊÕµ½·Ç³£·á¸»µÄ½±Æ·¡£",0},
 	tbCondition = 
 	{
 	},

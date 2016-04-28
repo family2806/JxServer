@@ -69,7 +69,7 @@ function bomb_out_pl(nOrder)--nOrder;µÚ¼¸´Î±»Õ¨µ½
     SubWorld = world
     Msg2Player(str);
     local sstr = GetName().."BÞ s©u næ lµm cho¸ng trong 30 gi©y! MÊt ®i "..nCaseCount.." tói hµng hãa."
-    Msg2MSGroup(COLLG_MISSIONID, "<color=yellow>"..GetName().."<color>BÞ s©u næ <color=yellow>lµm cho¸ng 30 gi©y<color>! MÊt ®i <color=yellow>"..nCaseCount.."<color> tói hµng hãa.", GetTask(TK_GROUPID))
+    Msg2MSGroup(COLLG_MISSIONID, "<color=yellow>"..GetName().."<color>±¬Õ¨³æ<color=yellow>»÷ÔÎ30Ãë<color>! MÊt ®i <color=yellow>"..nCaseCount.."<color> tói hµng hãa.", GetTask(TK_GROUPID))
 end;
 
 --Ëæ»úÑ¡È¡Õ¨µ¯ÈË

@@ -23,8 +23,8 @@ function main()
 		bossid = 603
 		bosslvl = 1
 		i = random (1,5) - 1
-		AddNpc(bossid,bosslvl,mapindex,posx,posy,1,GetName().."µÄÐÒÔËÊ¥µ®Ê÷",1)
---		CallNpc(i,603 + i,10,GetName().."µÄÐÒÔËÊ¥µ®Ê÷",0,1)
+		AddNpc(bossid,bosslvl,mapindex,posx,posy,1,GetName().."C©y th«ng may m¾n",1)
+--		CallNpc(i,603 + i,10,GetName().."C©y th«ng may m¾n",0,1)
 		Msg2Player("B¹n ®· trång thµnh c«ng mét c©y Gi¸ng Sinh may m¾n. H·y mau l¾c nã ®Ó nhËn ®­îc b¶o vËt!")
 		return 0
 	else

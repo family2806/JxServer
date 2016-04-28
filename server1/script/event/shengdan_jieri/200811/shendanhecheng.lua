@@ -76,7 +76,7 @@ local tbFormulaList =
 function shengdan0811_Content(nItemIndex, szDescLink)
 	nItemIndex = nItemIndex or -1
 	szDescLink = szDescLink or "<npc>"
-	local szMsg = "<dec>"..szDescLink.."Ho¹t ®éng gi¸ng sinh n¨m nay diÔn ra tõ 05-12-2008 ®Õn 04-01-2009. Trong thêi gian ho¹t ®éng ng­êi ch¬i cã thÓ thu ®­îc hép quµ xanh th«ng qua ®¸nh qu¸i vµ thu ®­îc hép quµ ®á th«ng qua ñy th¸c trªn m¹ng. Më c¸c hép quµ trªn, quı ®ång ®¹o sÏ thu thËp ®­îc c¸c vËt phÈm cÇn thiÕt ®Ó ®æi lÊy c¸c lo¹i b¸nh kem t¹i NPC ¤ng Giµ TuyÕt. Sö dông c¸c lo¹i b¸nh kem sÏ ®­îc kinh nghiÖm vµ c¸c phÇn quµ gi¸ trŞ. Ngoµi ra, quı ®ång ®¹o cßn cã kh¶ n¨ng nhËn ®­îc c¸c lo¹i phÇn th­ëng ®Æc biÖt nh­: TiÓu B¨ng Tinh, NÕn Tr¾ng vµ NÕn Xanh khi sö dông B¸nh Kem Socola<enter>C¸c h¹ cÇn cã ®ñ nh÷ng vËt phÈm sau ®©y ®Ó ®æi lÊy c¸c lo¹i B¸nh Kem:<enter>"
+	local szMsg = "<dec>"..szDescLink.."½ñÄêµÄÉúÈÕ»î¶¯´Ó05-12-2008 ®Õµ½04-01-2009. »î¶¯ÆÚ¼äÍæ¼Ò¿ÉÒÔÍ¨¹ı´ó¹ÖÊŞ¼¶À¶É«ÀñºĞºÍÍ¨¹ıÍøÉÏÍĞ¹ÜÊÕ¼¯ºìÉ«ÀñºĞ¡£´ò¿ªÀñºĞ£¬Í¬µÀÃÇ¿ÉÒÔµÃµ½ÔÚNPCÑ©ÀÏÒ¯´¦¶Ò»»¸÷ÖÖµ°¸âµÄÎïÆ·¡£Ê¹ÓÃ¸÷Ààµ°¸â¿ÉÒÔµÃµ½¾­ÑéºÍÓĞ¼ÛÖµµÄ½±Æ·¡£³ı´ËÖ®Íâ£¬¸÷Î»»¹¿ÉÄÜ»áµÃµ½ÌØ±ğÀñÎï£ºĞ¡±ù¾§£¬ÓÃÔÚB¸nh Kem SocolaÉÏµÄ°×À¯ÖòºÍÀ¶À¯Öò<enter>¸óÏÂĞèÒªÓĞÒÔÏÂµÄÎïÆ·À´¶Ò»»µ°¸â:<enter>"
 	for i=1, getn(%tbFormulaList) do
 		szMsg = szMsg..shengdan0811_MakeComposeMsg(%tbFormulaList[i]).."<enter>"
 	end

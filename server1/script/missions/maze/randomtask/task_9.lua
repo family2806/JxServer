@@ -1,5 +1,5 @@
--- ÓĞ¸ö±ëº·µÄNPCLé B­uÀ¹Â·£¬ÒªÇóĞèÒª½ÉÄÉ50ÍòÒøÁ½£¬Kh«ng giao népÔò»áÕÙ»½³öThñ H¹ Lé B­u£¬Òª´òËÀNPCºÍ30¸öĞ¡¹Ö²ÅÄÜ¹ı¹Ø¡£
--- Èç¹ûGiao népÁËÇ®Ôò»¹»áÒªÇóÉÏGiao népÄ³¼şËæ»úÎïÆ·£¨Tèng Kim ChiÕu Th­ ¡¢Ngò Hoa Ngäc Lé Hoµn¡¢ÌìÉ½ÓñÂ¶¡¢HuyÒn Tinh cÊp 3-8¡¢Mét trong 3 lo¹i Thñy Tinh¡¢Trang bŞ cÊp 1£©£¬Giao népÔò¹ı¹Ø£¬Kh«ng giao népÔò»á±ä³ÉÕ½¶·NPC£¬É±ËÀ²ÅÄÜ¹ı¹Ø¡£
+-- ÓĞ¸ö±ëº·µÄNPCLé B­uÀ¹Â·£¬ÒªÇóĞèÒª½ÉÄÉ50ÍòÒøÁ½£¬²»Giao népÔò»áÕÙ»½³öLé B­uÊÖÏÂ£¬Òª´òËÀNPCºÍ30¸öĞ¡¹Ö²ÅÄÜ¹ı¹Ø¡£
+-- Èç¹ûGiao népÁËÇ®Ôò»¹»áÒªÇóÉÏGiao népÄ³¼şËæ»úÎïÆ·£¨Tèng Kim ChiÕu Th­ ¡¢Ngò Hoa Ngäc Lé Hoµn¡¢ÌìÉ½ÓñÂ¶¡¢HuyÒn Tinh cÊp 3-8¡¢Mét trong 3 lo¹i Thñy Tinh¡¢Trang bŞ cÊp 1£©£¬Giao népÔò¹ı¹Ø£¬²»Giao népÔò»á±ä³ÉÕ½¶·NPC£¬É±ËÀ²ÅÄÜ¹ı¹Ø¡£
 Include("\\script\\missions\\maze\\task.lua")
 Include("\\script\\global\\dlgnpc_list.lua")
 Include("\\script\\global\\fightnpc_list.lua")
@@ -57,7 +57,7 @@ end
 
 function pTask:Say(player)
 	if (self.m_Step == 1) then
-		return "H·y giao nép <color=red> 50 v¹n <color> l­îng", {"Giao nép", "Kh«ng giao nép", "§Ó ta suy nghÜ l¹i ®·!"}
+		return "H·y giao nép <color=red> 50 v¹n <color> l­îng", {"Giao nép", "²»Giao nép", "§Ó ta suy nghÜ l¹i ®·!"}
 	elseif (self.m_Step == 2) then
 		return format("H·y cho ta<color=red>%s<color>.", self.m_Items[self.m_Want]), {"Cho ", "Kh«ng cho! ", "§Ó ta suy nghÜ l¹i ®·!"}
 	end
@@ -92,7 +92,7 @@ function pTask:OnAnswer1(player, sel)
 		self:BossChange()
 		self.m_Monsters = {}
 		for i = 1, 30 do
-			local nNpcIndex = FightNpcManager:AddNpc("Thñ H¹ Lé B­u", self.m_Task.m_MonsterId, self:GetMapId(), pos_monster.x, pos_monster.y, self, i, 1, 1)
+			local nNpcIndex = FightNpcManager:AddNpc("Lé B­uÊÖÏÂ", self.m_Task.m_MonsterId, self:GetMapId(), pos_monster.x, pos_monster.y, self, i, 1, 1)
 			tinsert(self.m_Monsters, nNpcIndex)
 		end
 	end

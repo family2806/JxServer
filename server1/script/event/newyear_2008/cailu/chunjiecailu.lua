@@ -56,8 +56,8 @@ NewYear2008_cailu.randomitem =
 	ntotialprop = 100,
 	nitem =
 	{
-		{G=6,D=1,P=123,szname="Phóc Duyªn Lé (Trung) ",prop=75},
-		{G=6,D=1,P=124,szname="Phóc Duyªn Lé (§¹i) ",prop=20},
+		{G=6,D=1,P=123,szname="PhócÔµÂ¶(ÖĞ) ",prop=75},
+		{G=6,D=1,P=124,szname="PhócÔµÂ¶(´ó) ",prop=20},
 		{G=6,D=1,P=71,szname="Tiªn Th¶o Lé ",prop=5},		
 	}
 }
@@ -76,11 +76,11 @@ NewYear2008_cailu.randomnexp =
 function main()
 	local nsign = NewYear2008_cailu:checkdate()
 	if nsign == 2 then
-		Say("Ho¹t ®éng h¸i léc ®Çu xu©n ®· kÕt thóc, ®a t¹ c¸c vŞ ®¹i hiÖp ®· tham dù.",0) 	
+		Say("ĞÂÄê²ÉLéc»î¶¯½áÊøÁË£¬¶àĞ»¸÷Î»´óÏÀµÄ²ÎÓë.",0) 	
 		return
 	end
-	local arytalk = {"Ho¹t ®éng h¸i léc ®Çu xu©n ®· b¾t ®Çu, trong thêi gian chØ ®Şnh, Ng­êi ch¬i ®Õn tr­íc c©y ®µo, c©y mai ë thÊt ®¹i thµnh thŞ, t©n thñ th«n thµnh t©m cÇu nguyÖn, sÏ nhËn ®­îc nh÷ng phÇn th­ëng n¨m míi. Ngoµi ra, c¸c vŞ ®¹i hiÖp còng cã thÓ treo thªm liÔn tÕt víi ba ch÷ Phóc - Léc - Thä sÏ nhËn ®­îc nh÷ng phÇn th­ëng bÊt ngê."}
-	arytalk[getn(arytalk)+1] = "Ta muèn treo liÔn Phóc - Léc - Thä ®Ó ®ãn tÕt./#NewYear2008_cailu:onhandwish(1)"
+	local arytalk = {"ĞÂÄê²ÉLéc»î¶¯¿ªÊ¼£¬ÔÚÖ¸¶¨Ê±¼äÄÚ£¬Íæ¼Òµ½7´ó³ÇÊĞ¡¢ĞÂÊÖ´åµÄÌÒÊ÷£¬Ã·Ê÷Ç°³ÏĞÄĞíÔ¸¾Í»áµÃµ½ĞÂÄêÀñÎï. ´ËÍâ£¬¸÷Î»»¹¿ÉÒÔ¹ÒÉÏÓĞPhócLécThäÈı¸ö×ÖµÄ´ºÁªÁìÈ¡ÒâÏë²»µ½µÄ½±Æ·¡£"}
+	arytalk[getn(arytalk)+1] = "ÎÒÒª¹ÒPhócLécThäµÄ´ºÁªÀ´Ó­ĞÂÄê./#NewYear2008_cailu:onhandwish(1)"
 	if nsign == 1 then
 		arytalk[getn(arytalk)+1] = "Ta ®Õn thµnh t©m cÇu nguyÖn./#NewYear2008_cailu:ongivewish(1)"
 	end
@@ -90,7 +90,7 @@ end
 
 function NewYear2008_cailu:onhandwish()
 	if self:checkdate() == 2 then
-		Say("Ho¹t ®éng h¸i léc ®Çu xu©n ®· kÕt thóc, ®a t¹ c¸c vŞ ®¹i hiÖp ®· tham dù.",0) 
+		Say("ĞÂÄê²ÉLéc»î¶¯½áÊøÁË£¬¶àĞ»¸÷Î»´óÏÀµÄ²ÎÓë¡£",0) 
 		return	
 	end
 	
@@ -113,7 +113,7 @@ function NewYear2008_cailu:onhandwish()
 	end
 	for ni,nitem in self.mareial do
 		if CalcEquiproomItemCount(nitem.G,nitem.D,nitem.P,-1) < 1 then
-			Say("LiÔn Phóc - Léc - Thä kh«ng ®ñ, xin h·y thu thËp thªm råi míi treo liÔn.",0)
+			Say("PhócLécThä¶ÔÁª²»¹»£¬ÇëÔÙËÑ¼¯Ò»Ğ©ÔÙÀ´¹Ò.",0)
 			return
 		end
 	end
@@ -133,7 +133,7 @@ function NewYear2008_cailu:ongivewish()
 	
 	local ndate = tonumber(GetLocalDate("%y%m%d%H"))
 	if self:checkdate() == 0 then
-		Say("Ho¹t ®éng h¸i léc cÇu may ®· kÕt thóc, ®a t¹ c¸c vŞ ®¹i hiÖp ®· tham gia ho¹t ®éng.",0) 
+		Say("²ÉLécÇóÔË»î¶¯½áÊøÁË£¬¶àĞ»¸÷Î»´óÏÀµÄ²ÎÓë.",0) 
 		return
 	end
 	
@@ -144,7 +144,7 @@ function NewYear2008_cailu:ongivewish()
 	
 	local ntaskdate = GetTask(self.ntask)
 	if ntaskdate == ndate then
-		Say("B¹n ®· nhËn ®­îc lêi chóc ®Çu xu©n, lÇn sau h·y quay l¹i nhĞ.",0) 
+		Say("ÄãÒÑµÃµ½ĞÂÄê×£Phóc£¬ÏÂ´ÎÔÙÀ´°É¡£",0) 
 		return
 	end
 	SetTask(self.ntask,ndate)
@@ -163,7 +163,7 @@ function NewYear2008_cailu:award()
 			local szstr = format("Chóc mõng b¹n ®· nhËn ®­îc 1 c¸i <color=yellow>%s<color>",nitem.szname)
 			szstrsay = szstr
 			Msg2Player(szstr)
-			self:sdl_writelog("H¸i léc ®Çu xu©n",szstr)
+			self:sdl_writelog("ĞÂ´º²ÉLéc",szstr)
 			break
 		end
 	end
@@ -178,7 +178,7 @@ function NewYear2008_cailu:award()
 			local szstr = format("Chóc mõng b¹n nhËn ®­îc <color=yellow>%s<color> kinh nghiÖm",nitem.nexp)
 			szstrsay = format("%s\n%s",szstrsay,szstr)
 			Msg2Player(szstr)			
-			self:sdl_writelog("H¸i léc ®Çu xu©n",szstr)
+			self:sdl_writelog("ĞÂ´º²ÉLéc",szstr)
 			break
 		end
 	end

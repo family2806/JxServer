@@ -53,7 +53,7 @@ function getInfo()
 		Say("Cung hû! IP cña ng­¬i ®ang cã trong danh s¸ch nhËn th­ëng. H·y cè g¾ng h¬n!",1,"Xin ®a t¹/OnCancel")
 		return
 	else
-		Say("ThËt tiÕc, IP cña ng­¬i kh«ng thuéc trong danh s¸ch nhËn th­ëng. H·y quay l¹i sau nhĞ!",1,"ThËt ng¹i qu¸!/OnCancel")
+		Say("ThËt tiÕc, IP cña ng­¬i kh«ng thuéc trong danh s¸ch nhËn th­ëng. H·y quay l¹i sau nhĞ!£¬ÉÔºóÔÙÀ´Å¶",1,"ThËt ng¹i qu¸!/OnCancel")
 		return
 	end;
 end;

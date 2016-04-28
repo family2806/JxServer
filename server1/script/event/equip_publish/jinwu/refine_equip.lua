@@ -23,7 +23,7 @@ tbJinWuRefineList =
 
 function tbJinWuRefineEquip:ComposeGiveUI()
 	
-	local szTitle = format("  %-15s\t%s", "Trang bŞ Kim ¤", "Ngäc Trïng LuyÖn Kim ¤")
+	local szTitle = format("  %-15s\t%s", "Trang bŞ Kim ¤", "Kim ¤ Trïng LuyÖn Ngäc")
 	local strDesc = format("   %-21s\t%d", "Kim ¤ Kh«i", 2)
 	strDesc = strDesc..format("\n   %-21s\t%d", "Kim ¤ Y Phôc", 3)
 	strDesc = strDesc..format("\n   %-21s\t%d", "Kim ¤ Hµi", 3)
@@ -47,7 +47,7 @@ function tbJinWuRefineEquip:Compose(nComposeCount)
 		end
 	end
 	
-	-- È¡µÃNgäc Trïng LuyÖn Kim ¤µÄÊıÁ¿
+	-- È¡µÃKim ¤ Trïng LuyÖn NgäcµÄÊıÁ¿
   local tbRoomItems =  self:GetRoomItems(self.nRoomType) --  Ã¿´Î¶¼ÖØĞÂ»ñÈ¡£¬ÒÔ·ÀÖ¹ÓĞ±ä»¯	
 	local tbGoldEquip = nil
 	local nEquType = 0		-- ÎäÆ÷Àà±ğ
@@ -80,7 +80,7 @@ function tbJinWuRefineEquip:Compose(nComposeCount)
 	end
 	
 	if tbGoldEquip == nil then
-		Say("Ng­¬i ch­a ®Æt trang bŞ Kim ¤ nµo vµo ®©y c¶.")
+		Say("ÄãÎ´·ÅÈëÈÎºÎTrang bŞ Kim ¤.")
 		return 0	
 	end
 		
@@ -93,10 +93,10 @@ function tbJinWuRefineEquip:Compose(nComposeCount)
 		return 0
 	end	
 
-  local tbItem = {szName = "Ngäc Trïng LuyÖn Kim ¤", tbProp = {6,1,3005,1,0,0}, nCount = tbJinWuRefineList[nEquType].nStone} 
+  local tbItem = {szName = "Kim ¤ Trïng LuyÖn Ngäc", tbProp = {6,1,3005,1,0,0}, nCount = tbJinWuRefineList[nEquType].nStone} 
   local nCount = self:CalcItemCount(tbRoomItems, tbItem)
   if nCount < tbJinWuRefineList[nEquType].nStone then
-		local szMsg = self.tbFormula.szFailMsg or "<color=red>Ngäc Trïng LuyÖn Kim ¤ mµ ng­¬i ®Æt vµo kh«ng ®ñ. <color>"
+		local szMsg = self.tbFormula.szFailMsg or "<color=red>Kim ¤ Trïng LuyÖn Ngäc mµ ng­¬i ®Æt vµo kh«ng ®ñ. <color>"
 		Talk(1, "", szMsg)
 		return 0;
   end
@@ -122,10 +122,10 @@ end
 
 function refine_jinwu()
 		
-	local strDesc = "<npc>ÄÃ <color=yellow>Trang bŞ Kim ¤<color> ÒªÖØÁ·µÄºÍÊıÁ¿<color=yellow> Ngäc Trïng LuyÖn Kim ¤<color> ÏàÓ¦µÄ·ÅÈëÏÂÃæ"
-	strDesc = strDesc..format("\n\t\t\t\t\t%-29s%s", "Trang bŞ Kim ¤", "Ngäc Trïng LuyÖn Kim ¤")
+	local strDesc = "<npc>ÄÃ <color=yellow>Trang bŞ Kim ¤<color> ÒªÖØÁ·µÄºÍÊıÁ¿<color=yellow> Kim ¤ Trïng LuyÖn Ngäc<color> ÏàÓ¦µÄ·ÅÈëÏÂÃæ"
+	strDesc = strDesc..format("\n\t\t\t\t\t%-29s%s", "Trang bŞ Kim ¤", "Kim ¤ Trïng LuyÖn Ngäc")
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Kh«i", 2)
-	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Y Phôc", 3)
+	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Y Phôc·ş", 3)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Hµi", 3)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Yªu §¸i", 2)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Kim ¤ Hé UyÓn", 1)
@@ -143,7 +143,7 @@ function refine_jinwu()
 			tbProduct = {szName="Trang bŞ Kim ¤", tbProp={0, {2055,2084}}},
 		}
 	local p = tbJinWuRefineEquip:new(tbMate, "JinWuRefineEquip", INVENTORY_ROOM.room_giveitem)
-	tinsert(tbOpt, {"Trïng luyÖn trang bŞ Kim ¤", p.ComposeGiveUI, {p}})
+	tinsert(tbOpt, {"ÖØÁ·Trang bŞ Kim ¤", p.ComposeGiveUI, {p}})
 	tinsert(tbOpt, {"Hñy bá "})
 	CreateNewSayEx(strDesc, tbOpt);
 end

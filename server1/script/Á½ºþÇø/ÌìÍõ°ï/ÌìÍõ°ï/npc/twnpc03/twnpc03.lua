@@ -61,7 +61,7 @@ function L20_prise()
 end;
 
 function Uworld121_yanghu()
-	Talk(6,"","Mé TuyÕt! Nµng hµ tÊt ph¶i nh­ vËy chø!","Hµ Tiªn Tö lµ tiªn n÷ khã mµ t×m ®­îc ë nh©n gian! D­¬ng H÷u Sø! Ng­êi cè mµ gi÷ lÊy nhĞ, h·y quªn hÕt nh÷ng sai lÇm ®· qua","NÕu sinh ra trong thêi th¸i b×nh, th× ta ®©u cÇn c¸i h­ danh Thiªn V­¬ng H÷u sø nµy lµm g× chø? ChØ cÇn cïng c« Êy sèng an b×nh ë §éng §×nh hå. Nh­ng ®¸ng tiÕc ngµy nay thiªn h¹ lÇm thanh, c¶nh m¸u ch¶y liªn miªn, ta lµm sao cã thÓ bá mÆc ®Ö tö trong bang mµ kh«ng lo ®­îc chø?",".....….","GÇn ®©y nghe tin truyÒn r»ng ph¸i C«n L«n cã ı ®å tiÕn qu©n vÒ phİa Nam. T¹i §éng §×nh hå ®· ph¸t hiÖn ra tung tİch cña ®Ö tö ph¸i C«n L«n, e r»ng trø¬c tiªn bän hä sÏ m­u ®å h·m h¹i Thiªn v­¬ng bang chóng ta, sù tån vong cña bæn bang ®ang gÆp nguy hiÓm, t¹i h¹ kh«ng thÓ n¶o ®øng ngoµi cuéc ®­îc, sù viÖc ®· ®Õn n­íc nµy ta sÏ tù m×nh Yªn Thuı yªn ®Ó nãi râ cho c« Êy biÕt","Còng chØ cßn c¸ch nµy th«i!")
+	Talk(6,"","Mé TuyÕt! Nµng hµ tÊt ph¶i nh­ vËy chø!","ºÎÏÉ×ÓÊÇÈË¼äÄÑÕÒµÄÏÉÅ®! D­¬ng H÷u Sø.£¡Äã¾ÍºÃºÃÄÃ×Å°É£¬¹ıÈ¥µÄ´í¾ÍÍü¼Ç°É","NÕu sinh ra trong thêi th¸i b×nh, th× ta ®©u cÇn c¸i h­ danh Thiªn V­¬ng H÷u sø nµy lµm g× chø? ChØ cÇn cïng c« Êy sèng an b×nh ë §éng §×nh hå. Nh­ng ®¸ng tiÕc ngµy nay thiªn h¹ lÇm thanh, c¶nh m¸u ch¶y liªn miªn, ta lµm sao cã thÓ bá mÆc ®Ö tö trong bang mµ kh«ng lo ®­îc chø?",".....….","GÇn ®©y nghe tin truyÒn r»ng ph¸i C«n L«n cã ı ®å tiÕn qu©n vÒ phİa Nam. T¹i §éng §×nh hå ®· ph¸t hiÖn ra tung tİch cña ®Ö tö ph¸i C«n L«n, e r»ng trø¬c tiªn bän hä sÏ m­u ®å h·m h¹i Thiªn v­¬ng bang chóng ta, sù tån vong cña bæn bang ®ang gÆp nguy hiÓm, t¹i h¹ kh«ng thÓ n¶o ®øng ngoµi cuéc ®­îc, sù viÖc ®· ®Õn n­íc nµy ta sÏ tù m×nh Yªn Thuı yªn ®Ó nãi râ cho c« Êy biÕt","Còng chØ cßn c¸ch nµy th«i!")
 	SetTask(121,30) --ÉèÖÃÈÎÎñ±äÁ¿30
 	DelItem(10)
 	Msg2Player("Tham väng lín cña C«n L«n ph¸i lµ muèn tiÕn c«ng Thiªn Bang ph¸i, D­¬ng Hå kh«ng thÓ rêi khái ")
@@ -70,7 +70,7 @@ end
 
 function Uworld121_yanghu2()
    if(GetTask(3) >= 70*256) and (GetTask(3) ~= 75*256) then			-- ÊÇÌìÍõµÜ×Ó»ò³öÊ¦µÜ×Ó
-		Talk(2,"","ThËt vÊt v¶ cho ng­¬i®· nãi cho t¹i h¹ biÕt kÕ ho¹ch x©m chiÕm cña ph¸i C«n L«n! §©y cã mét quyÓn mËt tŞch cña Thiªn V­¬ng bang! Xin h·y nhËn lÊy!","Ta nhÊt ®Şnh sÏ chuyªn cÇn rÌn luyÖn vâ nghÖ! Cïng víi D­¬ng H÷u Sø b¶o vÖ giang s¬n Tèng triÒu!")
+		Talk(2,"","ThËt vÊt v¶ cho ng­¬i®· nãi cho t¹i h¹ biÕt kÕ ho¹ch x©m chiÕm cña ph¸i C«n L«n! §©y cã mét quyÓn mËt tŞch cña Thiªn V­¬ng bang! Xin h·y nhËn lÊy!","ÎÒÒ»¶¨¼ÓÇ¿ÁªÏµÎäÒÕ£¬Í¬D­¬ng H÷u Sø.Ò»Æğ±£ÎÀËÎ³¯½­É½")
 		if (HaveMagic(322) == -1) then		-- ±ØĞëÃ»ÓĞ¼¼ÄÜµÄ²Å¸ø¼¼ÄÜ
 			AddMagic(322,1)
 		end

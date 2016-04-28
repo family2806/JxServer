@@ -34,14 +34,14 @@ function huashanqunzhan_SignUpMain(nStep)
 				{"","", "22:00 - 22:45"},
 				{"-","-","-"},
 				{"","","10:00 - 10:45"},
-				{"Thø 7 vµ Chñ nhËt", "3", "15:00 - 15:45"},
+				{"ÖÜÁùºÍÖÜNgµy", "3", "15:00 - 15:45"},
 				{"","","22:00 - 22:45"},
 				{"-","-","-"},
 			}
-			local szMsg = nState == 0 and "TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau." or "TrËn ®Êu ®ang ®­îc tiÕn hµnh."
+			local szMsg = nState == 0 and "TrËn ®Êu vÉn ch­a b¾t ®Çu." or "TrËn ®Êu ®ang ®­îc tiÕn hµnh."
 			tbSay = 
 			{
-				"<dec><npc>"..szMsg.."Thêi gian thi ®Êu nh­ sau:<enter>"..huashanqunzhan_drawtable(tbWorld),
+				"<dec><npc>"..szMsg.."±ÈÈüThêi gianÈçÏÂ:<enter>"..huashanqunzhan_drawtable(tbWorld),
 			}
 		elseif nState == -2 then
 			local tbMacthMission	= tbReadyMission.tbRef
@@ -87,9 +87,9 @@ function huashanqunzhan_SignUpStep(tbMission)
 	if nState == 1 then
 		tbMission:GotoReadyPlace()
 	elseif nState == 0 then
-		Say("TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau.", 0)
+		Say("TrËn ®Êu vÉn ch­a b¾t ®Çu.", 0)
 	elseif nState == -1 then
-		Say("TrËn ®Êu ®ang tiÕn hµnh, xin ®îi ®Õn trËn sau.", 0)
+		Say("TrËn ®Êu vÉn ch­a b¾t ®Çu.", 0)
 	elseif nState == -2 then
 		
 		local tbMacthMission	= tbMission.tbRef

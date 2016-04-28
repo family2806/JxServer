@@ -78,7 +78,7 @@ function shijin_ex_goldequip()
 		sum = sum + tbSHIJIN2GOLDEQUIP[i][3] * 100
 		if( sum >= num ) then
 			AddGoldItem( tbSHIJIN2GOLDEQUIP[i][2][1], tbSHIJIN2GOLDEQUIP[i][2][2] )
-			Msg2Player("<#> B¹n nhËn ®­îc 1 bé "..tbSHIJIN2GOLDEQUIP[i][1])
+			Msg2Player("<#> B¹n nhËn ®­îc 1 b?"..tbSHIJIN2GOLDEQUIP[i][1])
 			WriteLog(date("%y-%m-%d,%H:%M,").."ACCOUNT:"..GetAccount()..",NAME:"..GetName()..", give "..tbCAKE2GIFT[896][1].." in exchange for "..tbSHIJIN2GOLDEQUIP[i][1])
 			break
 		end

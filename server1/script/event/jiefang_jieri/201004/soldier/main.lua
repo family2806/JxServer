@@ -113,7 +113,7 @@ end
 
 function Soldier2010:UseSoldierBag()
 	if (PlayerFunLib:CheckFreeBagCell(1,"default") == 1) then
-		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSoldierToolBag, format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","Tói Dông Cô"));
+		tbAwardTemplet:GiveAwardByList(FreedomEvent2010.tbSoldierToolBag, format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","Tói Dông Cô"));
 		return 1;
 	end
 	return 0;
@@ -127,7 +127,7 @@ function Soldier2010:UseSoldierStick()
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddStickExp(500);
-	PlayerFunLib:AddExp(50000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc gËy Tr­êng S¬n"));
+	PlayerFunLib:AddExp(50000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","ChiÕc gËy Tr­êng S¬n"));
 	return 1;
 end
 
@@ -141,7 +141,7 @@ function Soldier2010:UseSoldierCot()
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddCotExp(150);
-	PlayerFunLib:AddExp(15000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc vâng Tr­êng S¬n"));
+	PlayerFunLib:AddExp(15000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","ChiÕc vâng Tr­êng S¬n"));
 	return 1;
 end
 
@@ -156,7 +156,7 @@ function Soldier2010:UseSoldierHat()
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddHatExp(8);
-	PlayerFunLib:AddExp(800000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","ChiÕc Mò ChiÕn SÜ"));
+	PlayerFunLib:AddExp(800000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","ChiÕc Mò ChiÕn SÜ"));
 	return 1;
 end
 
@@ -171,7 +171,7 @@ function Soldier2010:UseSoldierShoes()
 		return 0;
 	end
 	tbSoldier_TaskGroup:AddShoesClothExp(20);
-	PlayerFunLib:AddExp(2000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","§«i Giµy Bé §éi"));
+	PlayerFunLib:AddExp(2000000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","§«i Giµy Bé §éi"));
 	return 1;
 end
 
@@ -198,7 +198,7 @@ function Soldier2010:UseSoldierCloth()
 	end
 	if (nExp > 0) then	
 		tbSoldier_TaskGroup:AddShoesClothExp(nExp);
-		PlayerFunLib:AddExp(nExp*100000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tSö dông %s","TÊm ¸o ChiÕn SÜ"));
+		PlayerFunLib:AddExp(nExp*100000,0,format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ %s","TÊm ¸o ChiÕn SÜ"));
 	end
 	local tbItem = FreedomEvent2010.tbClothAwardNormal;
 	if (mod((nClothCount+1),50) == 0) then
@@ -206,7 +206,7 @@ function Soldier2010:UseSoldierCloth()
 	end
 	tbSoldier_TaskGroup:AddClothCount(1);
 	nClothCount = nClothCount + 1;
-	tbAwardTemplet:GiveAwardByList(tbItem, format("Ho¹t ®éng tÊm ¸o chiÕn sü \tSö dông lÇn %d %s", nClothCount, "TÊm ¸o ChiÕn SÜ"));
+	tbAwardTemplet:GiveAwardByList(tbItem, format("Ho¹t ®éng tÊm ¸o chiÕn sü\tÊ¹ÓÃ´Î %d %s", nClothCount, "TÊm ¸o ChiÕn SÜ"));
 	return 1;
 end
 

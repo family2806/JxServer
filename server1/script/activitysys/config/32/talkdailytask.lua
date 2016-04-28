@@ -69,7 +69,7 @@ end
 
 function tbTalkDailyTask:CheckCanAccept()
 	if (self:_CheckCanAccept() ~= 1) then
-		Talk(1,"",format("¤ng ta ®· noËn ®­îc th­ cña ta råi, ®a t¹ %s ng­¬i gióp ®ì.",GetSex() == 1 and "Cô " or "Ca Ca"))
+		Talk(1,"",format("¤ng ta ®· noËn ®­îc th­ cña ta råi, ®a t¹ %s ng­¬i gióp ®ì.",GetSex() == 1 and "ChÞ " or "Ca Ca"))
 		return nil;
 	end
 	return 1;
@@ -83,7 +83,7 @@ function tbTalkDailyTask:AcceptTask()
 	if (self:IsHaveTask() == 1) then
 		local tbTask = self:GetTaskData(GetTask(self.TSK_TALK_TASK_ID));
 		if (tbTask ~= nil) then
-			Talk(1,"",format("VÞ nµy %s, Ng­¬i gióp ta mang th­ göi cho<color=yellow>%s<color> ch­a? Ng­¬i nhanh chãng ®i<color=red>%s<color>t×m%s®i, bøc th­ nµy cña ta rÊt gÊp ®Êy.", GetSex() == 1 and "Cô " or "Ca Ca", tbTask.szNpcName, tbTask.szMapName, tbTask.nSex == 1 and "Cô " or "Anh "));
+			Talk(1,"",format("VÞ nµy %s, Ng­¬i gióp ta mang th­ göi cho<color=yellow>%s<color> ch­a? Ng­¬i nhanh chãng ®i<color=red>%s<color>t×m%s®i, bøc th­ nµy cña ta rÊt gÊp ®Êy.", GetSex() == 1 and "ChÞ " or "Ca Ca", tbTask.szNpcName, tbTask.szMapName, tbTask.nSex == 1 and "ChÞ " or "Ca Ca "));
 		end
 		return nil;
 	end
@@ -103,9 +103,9 @@ function tbTalkDailyTask:AcceptTask()
 	SetTask(self.TSK_TALK_TASK_ID, nId);
 	SetTask(self.TSK_TALK_TASK_STATE, 0);
 	
-	Talk(1,"",format("VÞ nµy %s, ng­¬i cã quen<color=yellow>%s<color> cña <color=red>%s<color> kh«ng? §· l©u l¾m råi ta ch­a gÆp %s råi, ng­¬i cã thÓ gióp ta mang th­ ®i kh«ng? %s®ang ë<color=red>%s<color>.", GetSex() == 1 and "Cô " or "Ca Ca", tbTask.szMapName, tbTask.szNpcName, tbTask.nSex == 1 and "Cô " or "Anh ", tbTask.nSex == 1 and "Cô " or "Anh ", tbTask.szMapName));
+	Talk(1,"",format("VÞ nµy %s, ng­¬i cã quen<color=yellow>%s<color> cña <color=red>%s<color> kh«ng? §· l©u l¾m råi ta ch­a gÆp %s råi, ng­¬i cã thÓ gióp ta mang th­ ®i kh«ng? %s®ang ë<color=red>%s<color>.", GetSex() == 1 and "ChÞ " or "Ca Ca", tbTask.szMapName, tbTask.szNpcName, tbTask.nSex == 1 and "ChÞ " or "Ca Ca ", tbTask.nSex == 1 and "ChÞ " or "Ca Ca ", tbTask.szMapName));
 
-	tbAwardTemplet:GiveAwardByList({szName="Th­ cña Long Nhi",tbProp={6,1,2571,1,0,0}}, "TiÕp nhËn nhiÖm vô ®èi tho¹i nhËn ®­îc th­ cña Long Nhi");
+	tbAwardTemplet:GiveAwardByList({szName="Th­ cña Long Nhi",tbProp={6,1,2571,1,0,0}}, "½ÓÊÕ¶Ô»°ÈÎÎñÊÕµ½Th­ cña Long Nhi");
 
 	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("NhËn nhiÖm vô ®èi tho¹i: ®èi tho¹i víi%s",tbTask.szNpcName)))
 
@@ -132,12 +132,12 @@ function tbTalkDailyTask:CheckCompleteTask()
 	local tbTask = self:GetTaskData(nTskId);
 	
 	if (self:IsHaveTask() ~= 1 or tbTask == nil) then
-		Talk(1,"",format("VÞ nµy %s, t×m ta cã chuyÖn g× kh«ng?", GetSex() == 1 and "Cô " or "Ca Ca"));
+		Talk(1,"",format("VÞ nµy %s, t×m ta cã chuyÖn g× kh«ng?", GetSex() == 1 and "ChÞ " or "Ca Ca"));
 		return nil;
 	end
 	
 	if (nState ~= 1) then
-		Talk(1,"",format("VÞ nµy %s,ng­¬i vÉn ch­a gióp ta mang th­ cho<color=yellow>%s<color>. Ng­¬i nhanh nhanh ®i<color=red>%s<color> t×m%s ®i, bøc th­ nµy cña ta rÊt gÊp", GetSex() == 1 and "Cô " or "Ca Ca", tbTask.szNpcName, tbTask.szMapName, tbTask.nSex == 1 and "Cô " or "Anh "));
+		Talk(1,"",format("VÞ nµy %s,ng­¬i vÉn ch­a gióp ta mang th­ cho<color=yellow>%s<color>. Ng­¬i nhanh nhanh ®i<color=red>%s<color> t×m%s ®i, bøc th­ nµy cña ta rÊt gÊp", GetSex() == 1 and "ChÞ " or "Ca Ca", tbTask.szNpcName, tbTask.szMapName, tbTask.nSex == 1 and "ChÞ " or "Ca Ca "));
 		return nil;
 	end
 	

@@ -52,7 +52,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_COMMAND_PIECE_1,1,EVENT_LOG_TITLE,"MuaManhChienCongLenh1"} },
+		{"PlayerFunLib:GetItem",	{ITEM_COMMAND_PIECE_1,1,EVENT_LOG_TITLE,"Mua m¶nh ChiÕn C«ng LÖnh1"} },
 	},
 }
 tbConfig[4] = --ÓëCh­ëng §¨ng Cung N÷µÄ¶Ô»°
@@ -89,7 +89,7 @@ tbConfig[5] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_HAT_PEACE,1,EVENT_LOG_TITLE,"DoiChiecMuHoaBinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_HAT_PEACE,1,EVENT_LOG_TITLE,"»»ChiÕc Mò Hßa B×nh"} },
 	},
 }
 tbConfig[6] = 
@@ -109,7 +109,7 @@ tbConfig[6] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_EAR_HAT_DIRT,1,EVENT_LOG_TITLE,"DoiChiecMuTaiBeo"} },
+		{"PlayerFunLib:GetItem",	{ITEM_EAR_HAT_DIRT,1,EVENT_LOG_TITLE,"»»È¡ChiÕc Mò Tai BÌo"} },
 	},
 }
 tbConfig[7] = 
@@ -129,14 +129,14 @@ tbConfig[7] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_HAT_FREEDOM,1,EVENT_LOG_TITLE,"DoiChiecMuTuDo"} },
+		{"PlayerFunLib:GetItem",	{ITEM_HAT_FREEDOM,1,EVENT_LOG_TITLE,"»»ChiÕc Mò Tù Do"} },
 	},
 }
 tbConfig[8] = 
 {
 	nId = 8,
 	szMessageType = "ItemScript",
-	szName = "Sö dông ChiÕc Mò Tai BÌo",
+	szName = "Ê¹ÓÃChiÕc Mò Tai BÌo",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30197,1,0,0},}},
@@ -150,7 +150,7 @@ tbConfig[8] =
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{6e6,0,EVENT_LOG_TITLE,"Sö dông ChiÕc Mò Tai BÌo"} },
+		{"PlayerFunLib:AddExp",	{6e6,0,EVENT_LOG_TITLE,"Ê¹ÓÃChiÕc Mò Tai BÌo"} },
 		{"ThisActivity:UseHatDirt",	{nil} },
 	},
 }
@@ -158,7 +158,7 @@ tbConfig[9] =
 {
 	nId = 9,
 	szMessageType = "ItemScript",
-	szName = "Sö dông ChiÕc Mò Tù Do",
+	szName = "Ê¹ÓÃChiÕc Mò Tù Do",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30199,1,0,0},}},
@@ -172,7 +172,7 @@ tbConfig[9] =
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{12e6,0,EVENT_LOG_TITLE,"Sö dông ChiÕc Mò Tù Do"} },
+		{"PlayerFunLib:AddExp",	{12e6,0,EVENT_LOG_TITLE,"Ê¹ÓÃChiÕc Mò Tù Do"} },
 		{"ThisActivity:UseHatFreedom",	{nil} },
 	},
 }
@@ -180,7 +180,7 @@ tbConfig[10] =
 {
 	nId = 10,
 	szMessageType = "ItemScript",
-	szName = "Sö dông ChiÕc Mò Hßa B×nh",
+	szName = "Ê¹ÓÃChiÕc Mò Hßa B×nh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30198,1,0,0},}},
@@ -193,7 +193,7 @@ tbConfig[10] =
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{1e6,0,EVENT_LOG_TITLE,"Sö dông ChiÕc Mò Hßa B×nh"} },
+		{"PlayerFunLib:AddExp",	{1e6,0,EVENT_LOG_TITLE,"Ê¹ÓÃChiÕc Mò Hßa B×nh"} },
 		--{"ThisActivity:UseHatPeace",	{nil} },
 		{"tbVNG_BitTask_Lib:addTask", {tbBITTSK_LIMIT_HAT_PEACE_USING, 1}},
 	},

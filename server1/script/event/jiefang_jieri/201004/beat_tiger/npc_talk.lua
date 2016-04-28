@@ -80,5 +80,5 @@ function tbBeatTiger:Award()
 		nCount = 1,
 		nExpiredTime=self.nFlowerDisappearDate,
 	};
-	tbAwardTemplet:GiveAwardByList(tbAwardItem, "Ph¸t hoa sen c¹n");
+	tbAwardTemplet:GiveAwardByList(tbAwardItem, "·¢·ÅHoa Sen C¹n");
 end

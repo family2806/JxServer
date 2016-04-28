@@ -90,7 +90,7 @@ function Mxiao()
 end
 
 function Mao()
-	Say("Ng¹o Mai    ®©y chİnh lµ ta! ",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
+	Say("Ng¹o Mai   ¾ÍÊÇÎÒ! ",2,"T×m hiÓu nh÷ng vÊn ®Ò kh¸c/main","Kh«ng hái n÷a!/nothing")
 end
 
 ----------------- ÈÎÎñ½éÉÜ²¿·İ ----------------------------

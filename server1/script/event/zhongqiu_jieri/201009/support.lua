@@ -69,24 +69,24 @@ tb2010ZhongQiu.tbNpcInfo =
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(1);	
-																															 	 Msg2Player("T¨ng 1 ®iÓm danh väng");
-																															 	 WriteLog(format("%s t¨ng 1 ®iÓm danh väng", szLogTitle));
+																															 	 Msg2Player("Ôö¼Ó 1 ®iÓm danh väng");
+																															 	 WriteLog(format("%s Ôö¼Ó1 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																												 			 end, },		
 										{szName = "2 ®iÓm danh väng", 					nRate = 26,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(2);	
-																															 	 Msg2Player("T¨ng 2 ®iÓm danh väng");
-																															 	 WriteLog(format("%s T¨ng 2 ®iÓm danh väng", szLogTitle));
+																															 	 Msg2Player("Ôö¼Ó2 ®iÓm danh väng");
+																															 	 WriteLog(format("%s Ôö¼Ó2 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																															 end, },	
 										{szName = "3 ®iÓm danh väng", 					nRate = 25,  pFun = function(selfpoint, nItemCount, szLogTitle, nBelongerIndex)
 																															   local nOldPlayerIdx = PlayerIndex;
 																															 	 PlayerIndex = nBelongerIndex;
 																															 	 AddRepute(3);	
-																															 	 Msg2Player("T¨ng 3 ®iÓm danh väng");
-																															 	 WriteLog(format("%sT¨ng 3 ®iÓm danh väng", szLogTitle));
+																															 	 Msg2Player("Ôö¼Ó3 ®iÓm danh väng");
+																															 	 WriteLog(format("%sÔö¼Ó3 ®iÓm danh väng", szLogTitle));
 																															 	 PlayerIndex = nOldPlayerIdx;
 																															 end, },																													 																												 									
 									},
@@ -116,7 +116,7 @@ tb2010ZhongQiu.tbNpcInfo =
 										{szName = "Long HuyÕt Hoµn", nRate = 2,   tbProp = {6, 1, 2117, 1, 0, 0}, },	
 										{szName = "Phi Tèc hoµn", nRate = 2,   tbProp = {6, 0,    6, 1, 0, 0}, },	
 										{szName = "§¹i Lùc hoµn", nRate = 3,   tbProp = {6, 0,    3, 1, 0, 0}, },	
-										{szName = "Tiªn Th¶o Lé ®Æc biÖt",nRate = 4,   tbProp = {6, 1, 1181, 1, 0, 0}, },	
+										{szName = "ÌØÐ§Tiªn Th¶o Lé ",nRate = 4,   tbProp = {6, 1, 1181, 1, 0, 0}, },	
 										{szName = "Khiªu chiÕn LÔ bao", nRate = 8,tbProp = {6, 1, 2006, 1, 0, 0}, },	
 										{szName = "ThÇn bÝ kho¸ng th¹ch", nRate = 0.3,   tbProp = {6, 1,  398, 1, 0, 0}, },	
 										{szName = "Phó Quý CÈm H¹p", nRate = 5,   tbProp = {6, 1, 2402, 1, 0, 0}, nExpiredTime = 20101018,},	
@@ -341,11 +341,11 @@ function tb2010ZhongQiu:GiveItem2HengE_CallBack(szName, nCount)
 	local nOldPlayerIndex = PlayerIndex;	
 	PlayerIndex = nPlayerIndex;
 	
-	Msg2Player(format("§¹i hiÖp lµ ng­êi thø %d nép lång ®Ìn kÐo qu©n.", nCount));
+	Msg2Player(format("´óÏÀÊÇµÚ%d¸ö½»Lång ®Ìn kÐo qu©nµÄÈË.", nCount));
 	
 	if mod(nCount, 1000) == 0 then
 		Msg2Player("Chóc mõng ®¹i hiÖp nhËn ®­îc phÇn th­ëng t¨ng thªm!")
-		tbAwardTemplet:GiveAwardByList({nExp = 5000000}, format("[Ho¹t ®éng trung thu][Lång ®Ìn kÐo qu©n phÇn th­ëng t¨ng thªm] ng­êi thø %d", nCount));	
+		tbAwardTemplet:GiveAwardByList({nExp = 5000000}, format("[ÖÐÇï»î¶¯][Lång ®Ìn kÐo qu©n½±ÀøÔö¼Ó] µÚ%dÈË", nCount));	
 	end
 	
 	PlayerIndex = nOldPlayerIndex;
@@ -354,7 +354,7 @@ end
 -- ÏÔÊ¾ÉÏ½»µÄµÆÁýÊýÄ¿
 function tb2010ZhongQiu:ShowGiveCount(nTaskID)
 	local nCurCount = TaskManager:GetTask(self.nTaskGroupId, nTaskID);
-	CreateTaskSay({format("<dec><npc>C¸c h¹ ®· nép %d Lång ®Ìn kÐo qu©n!", nCurCount),  "§­îc!/Cancel",});
+	CreateTaskSay({format("<dec><npc>¸óÏÂÒÑ½» %d Lång ®Ìn kÐo qu©n!", nCurCount),  "§­îc!/Cancel",});
 end
 
 -- ÉèÖÃÉÏ½»ÊýÄ¿

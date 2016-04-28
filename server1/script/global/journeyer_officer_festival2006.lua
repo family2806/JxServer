@@ -93,25 +93,25 @@ tabGoods = {
     		strsay = " ng­¬i thu ®­îc mét "..szItemName;
     	elseif (nGoodsType == 4) then
     		AddItem(6, 1, 123, 1, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét trung phóc duyªn "
+    		strsay = " ng­¬i thu ®­îc mét ÖÐ¸£Ôµ"
     	elseif (nGoodsType == 5) then
     		AddItem(6, 1, 147, 4, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét 4 cÊp huyÒn tinh "
+    		strsay = " ng­¬i thu ®­îc mét 4¼¶Ðþ¾§"
     	elseif (nGoodsType == 6) then
     		AddItem(6, 1, 124, 1, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét ®¹i phóc duyªn "
+    		strsay = " ng­¬i thu ®­îc mét ´ó¸£Ôµ"
     	elseif (nGoodsType == 7) then
     		AddItem(6, 1, 147, 5, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét 5 cÊp huyÒn tinh "
+    		strsay = " ng­¬i thu ®­îc mét 5¼¶Ðþ¾§"
     	elseif (nGoodsType == 8) then
     		AddItem(6, 1, 147, 6, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét 6 cÊp huyÒn tinh "
+    		strsay = " ng­¬i thu ®­îc mét 6¼¶Ðþ¾§"
     	elseif (nGoodsType == 9) then
     		AddItem(6, 1, 147, 7, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét 7 cÊp huyÒn tinh "
+    		strsay = " ng­¬i thu ®­îc mét 7¼¶Ðþ¾§"
     	elseif (nGoodsType == 10) then
     		AddItem(6, 1, 147, 8, 0, 0, 0);
-    		strsay = " ng­¬i thu ®­îc mét 8 cÊp huyÒn tinh "
+    		strsay = " ng­¬i thu ®­îc mét 8¼¶Ðþ¾§"
     	end;
   		Msg2Player(strsay);
     end;

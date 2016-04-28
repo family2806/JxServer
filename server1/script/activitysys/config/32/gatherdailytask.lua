@@ -96,7 +96,7 @@ function tbGatherDailyTask:AcceptTask()
 	
 	Talk(1,"",format("VŞ nµy %s, s­ phô cña ta nãi r»ng<color=yellow>%s<color> lµ mét loµi hoa rÊt thÇn kú, ta muèn lÊy loµi hoa nµy tÆng cho s­ phô lµm lÔ vËt, ng­¬i cã thÓ gióp ta ®Õn<color=red>%s<color>gióp ta h¸i<color=green>%d<color> ®­îc kh«ng?", GetSex() == 1 and "ChŞ " or "Ca Ca", tbTask.szGatherName, tbTask.szMapName, tbTask.nGatherCount));
 
-	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("NhËn nhiÖm vô thu thËp: thu thËp %d c¸i%s",tbTask.nGatherCount,tbTask.szGatherName)))
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("NhiÖm vô thu thËp£ºÊÕ¼¯ %d ¸ö%s",tbTask.nGatherCount,tbTask.szGatherName)))
 
 	return 1;
 end
@@ -142,7 +142,7 @@ function tbGatherDailyTask:CompleteTask()
 	SetTask(self.TSK_GATHER_TASK_ID, 0)
 	self:_CompleteTask();
 	
-	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Hoµn thµnh nhiÖm vô thu thËp: thu thËp%d c¸i%s",tbTask.nGatherCount,tbTask.szGatherName)))
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Íê³ÉNhiÖm vô thu thËp£ºÊÕ¼¯%d ¸ö%s",tbTask.nGatherCount,tbTask.szGatherName)))
 	AddStatData("richangrenwu_caijicishu")
 	return 1;
 end

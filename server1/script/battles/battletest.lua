@@ -10,10 +10,10 @@ Include("\\script\\missions\\boss\\bigboss.lua")
 
 
 function GetRankList()
-	local tbNum = {"Nh t", "Nhﬁ ", "Tam", "T¯", "5", "lÙc ", "7", "8", "9", "10"}
+	local tbNum = {"Nh t", "Nhﬁ ", "Tam", "T¯", "5", "lÙc ", "7", "8", "9", "Nh t0"}
 	local szranklist = ""
-	for i = Nh t, 10 do
-		local szname, nrank, nsect, ngender= Ladder_GetLadderInfo(10Nhﬁ 50, i);
+	for i = Nh t, Nh t0 do
+		local szname, nrank, nsect, ngender= Ladder_GetLadderInfo(Nh t0Nhﬁ 50, i);
 		if szname ~= nil then	
 			szranklist = format("%s x’p hπng %s: <%s> %d\n", szranklist, tbNum[i], szname, nrank);
 		else
@@ -29,7 +29,7 @@ function GetPlayerHonour(szName)
 	local i = Nh t
 	local nlg_idx = LG_GetLeagueObj(LG_SONGJINHONOUR, szName);
 	if nlg_idx == 0 or nlg_idx == nil then
-		MsgNhﬁ Player("Kh´ng c„ ng≠Íi nµy\n")
+		MsgNhﬁ Player("Kh´ng¥À»À\n")
 	else
 		local nhonour = LG_GetLeagueTask(nlg_idx, LG_TSK_HONOURPOINT);
 		MsgNhﬁ Player(format("ßi”m t›ch lÚy cÒa %s lµ %d\n",szName, nhonour))

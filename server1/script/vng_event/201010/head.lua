@@ -143,5 +143,5 @@ end
  	end 
  	
  	ReduceEnergy(nSum)
-	tbAwardTemplet:GiveAwardByList({tbProp={6,1,30056,1,0,0}, nExpiredTime=20101111, nCount = nCount} , "Event th¸ng 10 - Mua Lam Th¹ch");
+	tbAwardTemplet:GiveAwardByList({tbProp={6,1,30056,1,0,0}, nExpiredTime=20101111, nCount = nCount} , "Event 10ÔÂ - ÂòLam Th¹ch");
  end

@@ -286,7 +286,7 @@ function do_upplatinaeq_process(nItemCount)
 	end
 	
 	if (nComposeEntryIdx == 0) then
-		tbDialog[1] = "<dec><npc>NÕu muèn ta gióp ng­¬i, h·y giao trang bŞ ®ã cho ta.";
+		tbDialog[1] = "<dec><npc>Èç¹ûÏëÎÒ°ïÄã£¬¾Í°ÑÄÇc¸i×°±¸¸øÎÒ.";
 		CreateTaskSay(tbDialog);
 		return
 	end
@@ -379,7 +379,7 @@ function fit_formed_eq(nCurItemIdx)
 	end
 
 	if (tbCurItemProp[1] ~= 0) then	--Èç¹û²»ÊÇ×°±¸(¿ÉÄÜÊÇËğ»µ×°±¸)
-		szErrorMsg = format("<dec><npc>ChØ cÇn ®­a cho ta %s chÕ t¹o trang bŞ b¹ch kim lµ ®ñ, nh÷ng thø kh¸c ng­¬i h·y thu l¹i.", szEqType);
+		szErrorMsg = format("<dec><npc>Ö»ĞèÒª¸øÎÒ%s ChÕ t¹o trang bŞ B¹ch Kim¾Í¹»ÁË£¬ÆäËûµÄ¾Í·ÅÏÂ.", szEqType);
 		return 0, szErrorMsg
 	end
 	
@@ -401,7 +401,7 @@ function fit_formed_eq(nCurItemIdx)
 	
 	
 	if (nCurItemQuality == 4 and GetPlatinaLevel(nCurItemIdx) >= %nOpenLevel) then
-		szErrorMsg = "<dec><npc>Víi søc hiÖn t¹i cña ta chØ cã thÓ gióp ng­¬i c­êng hãa trang bŞ nµy ®Õn cÊp nµy th«i, nh­ng mµ sau nµy ta cã thÓ gióp ng­¬i tu luyÖn tiÕp. Cø tin ta ®i råi sÏ cã mét ngµy ta sÏ gióp ng­¬i c­êng hãa mãn ®å nµy lªn, ®Õn lóc ®ã ng­¬i h·y quay l¹i gÆp ta nhĞ!";
+		szErrorMsg = "<dec><npc>ÒÔÎÒÏÖÔÚµÄÁ¦Á¿£¬Ö»ÄÜ°ïÄãÇ¿»¯¸Ã×°±¸µ½Õâc¸iµÈ¼¶¶øÒÑ£¬µ«ÊÇ£¬ÒÔºóÎÒ»¹ÄÜ¼ÌĞø°ïÄãÁ¶¡£ÏàĞÅÎÒ°É£¬»áÓĞÒ»Ìì£¬ÎÒ°ïÄãÇ¿»¯ËûÃÇÉı¼¶£¬µ½Ê±Äã»ØÀ´ÕÒÎÒÅ¶";
 		return 0, szErrorMsg
 	end;
 	
@@ -434,7 +434,7 @@ function fit_formed_material(nCurItemIdx, tb_material, nPlatinaIdx)
 	end
 	if (tb_material[szItemKey]["nUpgradeLevel"]) then
 		if (GetPlatinaLevel(nPlatinaIdx) ~= tb_material[szItemKey]["nUpgradeLevel"]) then
-			szErrorMsg = "<dec><npc>N©ng cÊp trang bŞ b¹ch kim nµy cã nguyªn liÖu kh«ng ®óng nh­ yªu cÇu";
+			szErrorMsg = "<dec><npc>Éı¼¶¸ÃTrang bŞ B¹ch KimµÄÔ­ÁÏÓĞµÄ²»¶Ô";
 			return 0, szErrorMsg;
 		end
 	end
@@ -483,7 +483,7 @@ function do_upgrade_platina(nEqIdx, nUpgradeEqName, tbMaterialIdx, tb_enhanceite
 	for i = 1, getn(tbMaterialIdx) do
 		if (RemoveItemByIndex(tbMaterialIdx[i]) ~= 1) then
 			WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t xãa vËt phÈm thÊt b¹i:%s",
-						"[Task n©ng cÊp trang bŞ B¹ch Kim ERROR!!]",
+						"[Task Th¨ng cÊp trang bŞ B¹ch KimERROR!!]",
 						GetLocalDate("%y-%m-%d %H:%M:%S"),
 						GetAccount(),
 						GetName(),
@@ -493,11 +493,11 @@ function do_upgrade_platina(nEqIdx, nUpgradeEqName, tbMaterialIdx, tb_enhanceite
 	end
 	
 	if (random() > nUpGradeProb) then
-		CreateTaskSay({"<dec><npc>N©ng cÊp trang bŞ B¹ch Kim thÊt b¹i, bŞ mÊt ®i vËt liÖu chÕ t¹o vµ 1000 v¹n l­îng.", "Ta sÏ quay l¹i sau/cancel"});
-		Msg2Player("N©ng cÊp trang bŞ B¹ch Kim thÊt b¹i, bŞ mÊt ®i vËt liÖu chÕ t¹o vµ 1000 v¹n l­îng.");
+		CreateTaskSay({"<dec><npc>Th¨ng cÊp trang bŞ B¹ch KimÊ§°Ü£¬Ê§È¥ÁËÖÆÔìÎïÆ·ºÍ100ÍòÁ½.", "Ta sÏ quay l¹i sau/cancel"});
+		Msg2Player("Th¨ng cÊp trang bŞ B¹ch KimÊ§°Ü£¬Ê§È¥ÁËÖÆÔìÎïÆ·ºÍ100ÍòÁ½.");
 		
 		WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t gi¸ trŞ l­îng kh«ng ®ñ, x¸c suÊt lµ:%.4f",
-						"[Task n©ng cÊp trang bŞ B¹ch Kim FAIL!!]",
+						"[Task Th¨ng cÊp trang bŞ B¹ch KimÊ§°Ü!!]",
 						GetLocalDate("%y-%m-%d %H:%M:%S"),
 						GetAccount(),
 						GetName(),
@@ -527,25 +527,25 @@ function do_upgrade_platina(nEqIdx, nUpgradeEqName, tbMaterialIdx, tb_enhanceite
 	if nSuccess > 0 then		
 		local szBehindItemInfo	= getItemInfo(nEqIdx);--»ñµÃÉı¼¶ºóµÄÏêÏ¸ĞÅÏ¢
 		
-		CreateTaskSay({"<dec><npc>N©ng cÊp trang bŞ B¹ch Kim thµnh c«ng, nhËn ®­îc 1 trang bŞ B¹ch Kim <color=yellow>"..nUpgradeEqName.."<color>, cÊp"..nItemLevel..".", "Ta sÏ quay l¹i sau/cancel"});
-		Msg2Player("N©ng cÊp trang bŞ B¹ch Kim thµnh c«ng, ®¼ng cÊp lµ"..nItemLevel.."trang bŞ B¹ch Kim:"..nUpgradeEqName);
+		CreateTaskSay({"<dec><npc>Th¨ng cÊp trang bŞ B¹ch Kim³É¹¦£¬»ñµÃÒ»c¸iTrang bŞ B¹ch Kim<color=yellow>"..nUpgradeEqName.."<color>, cÊp"..nItemLevel..".", "Ta sÏ quay l¹i sau/cancel"});
+		Msg2Player("Trang bŞ B¹ch KimÉı¼¶³É¹¦£¬µÈ¼¶Îª"..nItemLevel.."Trang bŞ B¹ch Kim:"..nUpgradeEqName);
 		
-		WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t ÁìÈ¡trang bŞ B¹ch Kim:%s\t %s",
-					"[Task n©ng cÊp trang bŞ B¹ch Kim SUCCESS!!]",
+		WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t ÁìÈ¡Trang bŞ B¹ch Kim:%s\t %s",
+					"[Task Th¨ng cÊp trang bŞ B¹ch KimSUCCESS!!]",
 					GetLocalDate("%Y-%m-%d %H:%M:%S"),
 					GetAccount(),
 					GetName(),
 					nUpgradeEqName,
 					szLog));
-		writeRecoinLog("[Nguyªn liÖu n©ng cÊp trang bŞ B¹ch Kim]", szBeforeItemInfo);
-		writeRecoinLog("[KÕt qu¶ n©ng cÊp trang bŞ B¹ch Kim]", szBehindItemInfo);
+		writeRecoinLog("[Th¨ng cÊp trang bŞ B¹ch KimÔ­ÁÏ]", szBeforeItemInfo);
+		writeRecoinLog("[Th¨ng cÊp trang bŞ B¹ch Kim½á¹û]", szBehindItemInfo);
 	else
-		WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t Thu ®­îc trang bŞ b¹ch kim thÊt b¹i:%s",
-					"[Task n©ng cÊp trang bŞ B¹ch Kim ERROR!!]",
+		WriteLog(format("[%s]\t Date:%s\t Account:%s\t Name:%s\t »ñµÃTrang bŞ B¹ch KimÊ§°Ü:%s",
+					"[Task Th¨ng cÊp trang bŞ B¹ch KimERROR!!]",
 					GetLocalDate("%Y-%m-%d %H:%M:%S"),
 					GetAccount(),
 					GetName(),
 					szLog));
-		writeRecoinLog("[Nguyªn liÖu n©ng cÊp trang bŞ B¹ch Kim]", szBeforeItemInfo);
+		writeRecoinLog("[Trang bŞ B¹ch KimÉı¼¶Ô­ÁÏ]", szBeforeItemInfo);
 	end	
 end

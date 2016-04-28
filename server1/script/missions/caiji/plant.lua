@@ -108,7 +108,7 @@ function main()
 	if nProgressBarId then
 		tbProgressBar:OpenByConfig(nProgressBarId, %_GetAward, {nNpcIndex, dwNpcIndex, szToolType}, %_OnBreak, {nNpcIndex})
 	else
-		Talk(1, "", format("ng­¬i ch­a mang %s hoÆc %s", "thiÕt liªm ®ao", "b¹ch kim liªm ®ao"))
+		Talk(1, "", format("ng­¬i ch­a mang %s »ò %s", "thiÕt liªm ®ao", "b¹ch kim liªm ®ao"))
 	end
 	
 end

@@ -362,7 +362,7 @@ function ShowTheKing(Group)
 
 if (Group == 1) then 
 	HideNpc("ÄÏËÎ½«¾ü",1);
-	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Kim ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
+	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Tèng ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
 	str2 ="H·y tiÕp tôc nç lùc tiªu diÖt t­íng ®Şch!";
 	Msg2MSGroup(1,str1, 1);
 	Msg2MSGroup(1,str2, 2);
@@ -373,7 +373,7 @@ end;
 
 if (Group == 2) then
 	HideNpc("½ğ¹ú´ó½«",1);
-	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Kim ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
+	str1 = "Th¸m tö håi b¸o:Chñ t­íng phe Tèng ®· xuÊt hiÖn! Binh sÜ h·y b¶o vÖ nguyªn so¸i!";
 	str2 = "H·y tiÕp tôc nç lùc tiªu diÖt t­íng ®Şch!";
 	Msg2MSGroup(1,str1, 2);
 	Msg2MSGroup(1,str2, 1);

@@ -54,7 +54,7 @@ function pActivity:AddDukangjiuAward(TSK_EXP_A,TSK_DATE_A,nCount)
 		}
 	}
 	tbAwardTemplet:GiveAwardByRate(tbAward, "PhÇn th­ëng ®æi §ç Khang Töu")
-	Say("R­îu ngon! R­îu ngon, kh«ng ph¶i dÔ dµng cã ng­êi ®Ö tö hiÕu th¶o nh­ vËy. §å ®Ö µ, ta cã mét İt T©y Hå Long TÜnh Trµ tÆng ng­¬i nÌ!")
+	Say("ºÃ¾Æ£¡ºÃ¾Æ£¡²»ÊÇÄÇÃ´ÈİÒ×ÓĞÕâÃ´Ğ¢µÀµÄµÜ×Ó¡£µÜ×Ó£¬ÎÒÓĞÒ»Ğ©T©y Hå Long TÜnh TrµËÍÓëÄã")
 end
 
 --´ò¿ªË¿³ñÏã°üµÃµ½½±Àø

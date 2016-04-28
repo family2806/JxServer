@@ -6,9 +6,9 @@ xmas2007_findgirl_exp = 10000000	--Ñ°ÕÒÉñÃØÉÙÅ®»ñµÃ¾­Ñé
 tb_xmas2007_findgirl_item = --Ñ°ÕÒÉñÃØÉÙÅ®½±Àø
 {
 	100000,--×Ü¸ÅÂÊ
-	{0.00625,{0,143},"§éng s¸t b¹ch kim ®iªu long giíi"},
+	{0.00625,{0,143},"§éng S¸t B¹ch Kim §iªu Long Giíi"},
 	{0.00625,{0,144},"§éng S¸t B¹ch Ngäc Cµn Kh«n Béi"},
-	{0.00625,{0,145},"§éng s¸t b¹ch kim tó phông giíi"},
+	{0.00625,{0,145},"§éng S¸t B¹ch Kim Tó Phông Giíi"},
 	{0.00625,{0,146},"§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn"},
 }
 
@@ -113,9 +113,9 @@ tbxmas2007_callboss_item =		--ÕÙ»½»Æ½ðbossµôÂä±í
 	{100,{4,238,1},1,"Lam Thñy Tinh"},
 	{100,{4,353,1},6,"Tinh Hång B¶o Th¹ch"},
 	{100,{6,1,1007},1,"H¹t Thñy Tinh"},
-	{5,{0,142},1,"§éng s¸t b¹ch kim ®iªu long giíi"},
+	{5,{0,142},1,"§éng S¸t B¹ch Kim §iªu Long Giíi"},
 	{5,{0,143},1,"§éng s¸t b¹ch ngäc cµn long béi"},
-	{5,{0,144},1,"§éng s¸t b¹ch kim tó phông giíi"},
+	{5,{0,144},1,"§éng S¸t B¹ch Kim Tó Phông Giíi"},
 	{5,{0,145},1,"§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn"},
 }
 

@@ -34,7 +34,7 @@ function main()
 	if (nCurNpcType == 1 or nTaskStep - nTaskState == 1) and ((nTaskStep - nTaskState) < -4 or (nTaskStep - nTaskState) > 0) then
 		if ConsumeEquiproomItem(tbItem.nCount, tbItem.tbProp[1], tbItem.tbProp[2], tbItem.tbProp[3], tbItem.tbProp[4]) ~= 1 then
 			
-			Say("C莕 1 n課   th緋 l錸g n.", 0)
+			Say("需要1只N課 点灯.", 0)
 		else
 			SetTask(zhongqiu0808_TSK_TaskState, nTaskStep)
 			Msg2Player(format("Th緋 頲 %s", tbFnagxiang[nCurNpcType]))
@@ -58,7 +58,7 @@ function main()
 	elseif (nTaskStep - nTaskState) >= -4 and (nTaskStep - nTaskState) <= 0  then
 		Msg2Player("n k衞 qu﹏ n祔  頲 th緋 s竛g r錳.")
 	elseif tbFnagxiang[nCurNpcType-1] then
-		Msg2Player(format("Trc ti猲 c莕 ph秈 th緋 s竛g %s", tbFnagxiang[nCurNpcType-1]))
+		Msg2Player(format("首先需要Th緋 頲 %s", tbFnagxiang[nCurNpcType-1]))
 	end
 	
 	

@@ -106,6 +106,6 @@ function YDBZ_tradeXuanYuanLing()
 		ConsumeItem(3, 100, 6,1,2532, -1);
 		tbAwardTemplet:GiveAwardByList({tbProp = {6,1,2351,1,0,0}, szName = "HuyÒn Viªn LÖnh"}, "yandi_tradeXuanyuan");
 	else
-		CreateTaskSay({format("<dec>%s cÇn: <enter>%s", "§æi HuyÒn Viªn lÖnh" ,format("%d %s", 100, "Viªm §Õ LÖnh Kú")), "Ta biÕt råi!/NoChoice"});
+		CreateTaskSay({format("<dec>%s cÇn: <enter>%s", "»»HuyÒn Viªn LÖnh" ,format("%d %s", 100, "Viªm §Õ LÖnh Kú")), "Ta biÕt råi!/NoChoice"});
 	end
 end

@@ -41,7 +41,7 @@ function step2()
 	AddEventItem(189)
 	Msg2Player("§­îc Di Kiªn Chİ ")
 	SetTask(70,6)
-	AddNote("Tõ chç Lç gia lÊy ®­îc Di Kiªn Chİ. ")
+	AddNote("´ÓÂ³ÀÏ´¦§­îc Di Kiªn Chİ ")
 end
 
 function WTask70_prise()

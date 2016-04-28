@@ -26,7 +26,7 @@ tbParam2EquipType = {
 function main(nItemIdx)
 	local n_param = tonumber(GetItemParam(nItemIdx, 1 ))
 	local tb = {nSpecificItem = tbParam2EquipType[n_param], nItem2Consume = nItemIdx}
-	tb.tbLog={"BaoRuongKimO","SuDungBaoRuongKimO"}
+	tb.tbLog={"BaoRuongKimO"," π”√BaoRuongKimO"}
 	if n_param <= 0 or n_param == 11 then
 		return
 	end	

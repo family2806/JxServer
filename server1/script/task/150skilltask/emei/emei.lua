@@ -93,7 +93,7 @@ tbConfig[2] = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"ThisTask:Talk", {"KÝch s¸t Gia LuËt TÞ Ly"}},
+		{"ThisTask:Talk", {"»÷É±Gia LuËt TÞ Ly"}},
 		{"GotoNextMessageStep", {1, 2885}},
 	},
  }
@@ -203,7 +203,7 @@ tbConfig[10] = {
 tbConfig[11] = {
 	m_nCurStepId = 6,
 	tbMessage = {
-		{"DialogWithNpc", {"Nga My Ch­ëng M«n Thanh  HiÓu S­ Th¸i"}},
+		{"DialogWithNpc", {"Nga MiÕÆÃÅÇåÏþÊ¦Ì«"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},

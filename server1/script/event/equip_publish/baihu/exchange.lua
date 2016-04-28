@@ -14,7 +14,7 @@ local tbCompose_XinXiaLing2BaiHuJinPai = tbActivityCompose:new(tbFormula, "xingx
 
 
 --ÔÝÊ±¹Ø±ÕÖýÔì°×»¢×°±¸ÐÔÄÜ -Modified By DinhHQ - 20120511
---pEventType:Reg("Hµng rong", "Mua B¹ch Hæ Kim Bµi", tbCompose_XinXiaLing2BaiHuJinPai.ComposeDailog, {tbCompose_XinXiaLing2BaiHuJinPai})
+--pEventType:Reg("Hµng rong", "ÂòB¹ch Hæ Kim Bµi", tbCompose_XinXiaLing2BaiHuJinPai.ComposeDailog, {tbCompose_XinXiaLing2BaiHuJinPai})
 
 --ÓÃ·çÔÆÊ¯»»B¹ch Hæ LÖnh - Modified By DinhHQ - 20120612
 local tbFormula2 = 
@@ -27,4 +27,4 @@ local tbFormula2 =
 	nFreeItemCellLimit = 1,
 }
 local tbCompose_PVT2BHL = tbActivityCompose:new(tbFormula2, "DungPhongVanThachDoiBachHoLenh")
-pEventType:Reg("Hµng rong", "§æi B¹ch Hæ LÖnh", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})
+pEventType:Reg("Hµng rong", "¶Ò»»B¹ch Hæ LÖnh", tbCompose_PVT2BHL.ComposeDailog, {tbCompose_PVT2BHL})

@@ -154,7 +154,7 @@ end
 
 function tbVNGetGoldEquip:ShowSpecItemDialog(nType, tbItemProp)
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "Xin chän mãn:"
+	tbDailog.szTitleMsg = "Bé Trang BÞ :"
 	for i = 1, getn(tbVnItemName) do
 		tbDailog:AddOptEntry(tbVnItemName[i][1], self.SelectSpecItem, {self, nType, tbItemProp, tbVnItemName[i][2]})
 	end
@@ -169,7 +169,7 @@ end
 
 function tbVNGetGoldEquip:ShowEquipBranchDialog(nType, tbItemProp)		
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "Xin chän hÖ tÊn c«ng chñ ®¹o:"
+	tbDailog.szTitleMsg = "Bé Trang BÞ Ö÷µ¼½ø¹¥ÀàÐÍ:"
 	for nBranch = 1, 12 do
 		tbDailog:AddOptEntry(tbVNFactionBranch[nBranch], self.GetGoldEquip, {self, nType, nBranch, tbItemProp})
 	end
@@ -188,7 +188,7 @@ end
 
 function tbVNGetGoldEquip:ShowEquipBranchByFaction(nType, tbItemProp, nFaction)		
 	local tbDailog = DailogClass:new()
-	tbDailog.szTitleMsg = "Xin chän hÖ tÊn c«ng chñ ®¹o:"
+	tbDailog.szTitleMsg = "Bé Trang BÞ Ö÷µ¼½ø¹¥ÀàÐÍ:"
 	local nCount = getn(tbVNBranchGroupByFaction[nFaction])
 	if not nCount then
 		return
@@ -304,7 +304,7 @@ function tbVNGetGoldEquip:GiveUIOk(tbParam, nCount)
 	local nItemSettingIdx = GetGlodEqIndex(nItemIdx)
 	--¼ì²é·ÅÈë×°±¸ÊÇ·ñ¶ÔÁË
 	if (nItemSettingIdx < tbVNEquiptInfo[tbParam.nOldType].nStartIndex) or (nItemSettingIdx > (tbVNEquiptInfo[tbParam.nOldType].nStartIndex + 229)) then
-		Talk(1, "", format("ChØ ®­îc phÐp ®æi trang bÞ <color=red>%s<color>", tbVNEquiptInfo[tbParam.nOldType].strType))
+		Talk(1, "", format("Ö»ÄÜ§æi trang bÞ <color=red>%s<color>", tbVNEquiptInfo[tbParam.nOldType].strType))
 		return
 	end
 	--¼ì²é²»ÄÜ»»µÄitem

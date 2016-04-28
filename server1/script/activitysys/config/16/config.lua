@@ -102,20 +102,20 @@ tbConfig[6] = --一个细节
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Tham gia 畂竛 Hoa ng",7} },
+		{"AddDialogOpt",	{"参加猜Hoa ng",7} },
 	},
 }
 tbConfig[7] = --一个细节
 {
 	nId = 7,
 	szMessageType = "nil",
-	szName = "Tham gia 畂竛 Hoa ng",
+	szName = "参加猜Hoa ng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"PlayerFunLib:CheckTotalLevel",	{50,"只有50级(包括50级)或者已转生人物才能参加Tham gia 畂竛 Hoa ng",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{50,"只有50级(包括50级)或者已转生人物才能参加参加猜Hoa ng",">="} },
 	},
 	tbActition = 
 	{

@@ -92,7 +92,7 @@ function groupsort(nGroupId, bSave)
 		if (szMsg ~= nil and szMsg ~= "") then
 			Msg2Player(szMsg)
 		end
-		Msg2Player("HiÖn t¹i thu thËp ®­îc <color=yellow>"..GetTask(COLLG_COUNT_ONETIME).."<color> tói hµng hãa, xÕp h¹ng thø <color=yellow>"..i.."<color>, tiÕp tôc cè g¾ng!");
+		Msg2Player("HiÖn t¹i thu thËp ®­îc <color=yellow>"..GetTask(COLLG_COUNT_ONETIME).."<color> tói hµng hãa, ÅÅÃûµÚ<color=yellow>"..i.."<color>, tiÕp tôc cè g¾ng!");
 	end;
 	
 	PlayerIndex = OldPlayer;

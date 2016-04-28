@@ -738,7 +738,7 @@ function ArenaField:TimeClose()
 			
 			self.Visitor = nil;	-- ÌôÕ½Õß
 			
-			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÐn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
@@ -776,7 +776,7 @@ function ArenaField:TimeClose()
 			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: <color=yellow>%s<color>chiÕn th¾ng<color=yellow>%s<color>, trë thµnh L«i Chñ míi!",
 					self.nArenaId, self.Master.szPlayerName, szLoser));
 			
-			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÐn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -819,7 +819,7 @@ function ArenaField:NpcDeath()
 	CallPlayerFunction(self.Master.nPlayerIndex, SetPKFlag, 0)
 	
 	HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = self.nGrade;
-	Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
+	Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÐn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 	self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 	self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -858,7 +858,7 @@ function ArenaField:PlayerDeath(nType)
 			CallPlayerFunction(self.Master.nPlayerIndex, SetPKFlag, 0);
 			
 			HundredArena.tbPlayerList[self.Master.szPlayerName].nGrade = self.nGrade;
-			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÐn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË
@@ -895,7 +895,7 @@ function ArenaField:PlayerDeath(nType)
 			
 			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: <color=yellow>%s<color>chiÕn th¾ng<color=yellow>%s<color>, trë thµnh L«i Chñ míi!",
 					self.nArenaId, self.Master.szPlayerName, szLoser));
-			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÕn!", 
+			Msg2Map(HundredArena.nMapId, format("L«i §µi%d: L«i Chñ lµ<color=yellow>%s<color>, l­ît ®Êu thø %d, ®îi ng­êi ch¬i kh¸c khiªu chiÐn!", 
 								self.nArenaId, self.Master.szPlayerName, self.nGrade));
 			self.TimerID = TimerList:AddTimer(self, tbTimerInfo.nApply, 1);
 			self.nFightState = 1;	-- ÓÖ¿ªÊ¼ÁË

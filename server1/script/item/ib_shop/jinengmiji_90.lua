@@ -31,7 +31,7 @@ sbook_list =
 	[2963] = {	 
 		{328, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga My KiÕm Ph¸p - Tam Nga TÔ TuyÕt"},
 		{380, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga My Ch­ëng Ph¸p - Phong S­¬ng To¸i ¶nh"},
-		{332, 1, 4, 90, "Nga Mi BÝ KÝp", "Nga Mi Phæ §é - Phæ §é Chóng Sinh"},
+		{332, 1, 4, 90, "Nga Mi BÝ KÝph", "Nga Mi Phæ §é - Phæ §é Chóng Sinh"},
 	},
 	[2964] = {	 
 		{336, 1, 5, 90, "Thóy Yªn BÝ KÝp", "Thóy Yªn §¹o Ph¸p - B¨ng Tung V« ¶no"},
@@ -77,7 +77,7 @@ function LearnSkillByBook(index, list, nItemIndex, nPlayerIndex)
 		return 
 	end
 	if CallPlayerFunction(nPlayerIndex, RemoveItemByIndex, nItemIndex) ~= 1 then
-		WriteLog("Hñy Bá BÝ KÝp thÊt b¹i")
+		WriteLog("·ÅÆúThiÕu L©m BÝ KÝpÊ§°Ü")
 		return 
 	end
 	

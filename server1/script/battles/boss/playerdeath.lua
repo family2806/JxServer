@@ -75,11 +75,11 @@ function OnDeath(Launcher)
 			BT_BroadSelf();
 		
 			if (GetCurCamp()  == 1) then
-				str  = "Phe Tèng"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Kim "..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
+				str  = "Phe Tèng"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Kim "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			else
-				str  = "Phe Kim"..launrankname..LaunName.." h¹ träng th­¬ng ng­êi phe Tèng "..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
+				str  = "Phe Kim"..launrankname..LaunName.." ÏÂPhe TèngÖØÉËÈË"..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			end
-			Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER));
+			Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER));
 			Msg2MSAll(MISSIONID, str);
 		end
 		PlayerIndex = OrgPlayer;

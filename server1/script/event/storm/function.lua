@@ -56,9 +56,9 @@ end
 --½«´Ë´Î±ÈÈüÄÉÈëµ½·ç±©»ýphót»î¶¯ÖÐµÄ¶Ô»°
 function storm_ask2start(gameid, b_nonext)
 --	if (storm_can_start(gameid, 1)) then
---		Say("¡¡¡¡·ç±©»î¶¯¿ª·ÅÈÕÆÚÎª9ÔÂ8ÈÕ-10ÔÂ2ÈÕ£¬°üÀ¨ËÎ½ð´óÕ½¡¢Ò°ÛÅÈÎÎñÁ´¡¢É±ÊÖÊÔÁ¶ÈÎÎñ¡£Ã¿Ìì¸ù¾ÝÄãÔÚ¸÷¸öÏµÍ³ÖÐµÄ³É¼¨×ª»¯ÎªÄãµÄ·ç±©»ý·Ö£¨²Î¼ÓÌõ¼þ£º50¼¶¼°ÒÔÉÏÍæ¼Ò£©¡£<enter>"..
---		"¡¡¡¡Ã¿ÈÕ»ý·Ö½«ÔÚÃ¿ÈÕ<color=red>24£º00Çå¿Õ<color>£¬ÇëÔÚ24£º00Ç°ÁìÈ¡»ý·Ö½±Àø¡£<enter>"..
---		"¡¡¡¡Ã¿Ìì<color=red>23£º30<color>¿ªÊ¼µÄËÎ½ð´óÕ½£¬³É¼¨²»¼ÆÈë·ç±©»ý·Ö¡£<enter>"..
+--		Say("¡¡¡¡·ç±©»î¶¯¿ª·ÅÈÕÆÚÎª9ÔÂ8ÈÕ-10ÔÂ2ÈÕ£¬°üÀ¨ËÎ½ð´óÕ½¡¢Ò°ÛÅÈÎÎñÁ´¡¢É±ÊÖÊÔÁ¶ÈÎÎñ¡£Ã¿Ìì¸ù¾ÝÄãÔÚ¸÷¸öÏµÍ³ÖÐµÄ³É¼¨×ª»¯Îªcña b¹n·ç±©»ýphót£¨²Î¼ÓÌõ¼þ£º50¼¶¼°ÒÔÉÏÍæ¼Ò£©¡£<enter>"..
+--		"¡¡¡¡Ã¿ÈÕ»ýphót½«ÔÚÃ¿ÈÕ<color=red>24£º00Çå¿Õ<color>£¬ÇëÔÚ24£º00Ç°ÁìÈ¡»ýphót½±Àø¡£<enter>"..
+--		"¡¡¡¡Ã¿Ìì<color=red>23£º30<color>¿ªÊ¼µÄËÎ½ð´óÕ½£¬³É¼¨²»¼ÆÈë·ç±©»ýphót¡£<enter>"..
 --		"¡¡¡¡ÄãÏÖÔÚÒª¿ªÊ¼½ñÌìµÄ"..storm_gamename(1, "red").."Ö®·ç±©ÌôÕ½Âð£¿", 2,
 --		"ÎÒÒÑ¾­×¼±¸ºÃÁË/#storm_want2start("..gameid..","..tostring(b_nonext)..")",
 --		"ÎÒ»¹ÊÇÏÂ´ÎÔÙ¿ªÊ¼°É/#storm_goon_start("..gameid..","..tostring(b_nonext)..")")
@@ -225,7 +225,7 @@ function storm_calc_today(gameid, newpoint)
 	local addpoint = todaypoint - GetTask(STORM_TASKID_DAY_POINT)	--±¾ÈÕ»ýphótÔö³¤
 	if (addpoint ~= 0) then
 		if (gameid ~= 1 or (floor(todaypoint/5) > floor((todaypoint-addpoint)/5))) then	--ËÎ½ðÒª×ÜphótÔö¼Ó³¬¹ý5phót£¬¸æÖª»ýphótÇé¿ö
-			Msg2Player("TÝch lòy Phong Ba tr­íc m¾t cña b¹n lµ:"..storm_point2str(todaypoint))
+			Msg2Player("ÄãHiÖn t¹iµÄ·ç±©»ýphótÊÇ:"..storm_point2str(todaypoint))
 		end
 		
 		nt_settask(STORM_TASKID_DAY_POINT, todaypoint)

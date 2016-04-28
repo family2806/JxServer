@@ -156,10 +156,10 @@ function toushiApplyEnter(nFactionNumb)
 --	end
 	
 	if (nSex == 1) then
-		szDes = "{NÕu nh­ cã ®­îc tİn vËt cña bang chñ thiªn v­¬ng bang D­¬ng Anh th× cã thÓ gia nhËp m«n ph¸i thiªn v­¬ng.}";
+		szDes = "{Èç¹ûÓĞÌìÍõ°ï°ïÖ÷µNamÅÎïÑîÓ¢¾ÍÄÜ¼ÓÈëÌìÍõÃÅÅÉ.}";
 	end
 	
-	szDes	= format("<dec><npc>Vâ häc trong giíi vâ l©m cña chóng ta b¸c ®¹i uyªn th©m, lµm s­ phô ta còng muèn më réng m«n quy ®Ó cïng nhau øng chİnh c¸c m«n ph¸i kh¸c, nay ta ®Ó ng­¬i rêi khái  bæn m«n ta còng cã thÓ thu nhËn %s m«n ph¸i ®Ö tö . %s<enter>, con ®­êng cÇu mong vâ häc qu¶ kh«ng dÔ dµng chót nµo, lµ mét s­ phô ta còng ph¶i thö th¸ch ng­¬i mét phen. NÕu nh­ ng­¬i cã thÓ{{®¹t ®Õn cÊp 120}} h¬n n÷a cßn ph¶i t×m vÒ ®©y cho bæn ph¸i tİn vËt ®· bŞ thÊt l¹c tõ l©u {{ “Tİn VËt M«n Ph¸i”}}, s­ phô  míi cho ng­¬i h¹ s¬n.", 
+	szDes	= format("<dec><npc>ÎÒÃÇÎäÁÖÎäÑ§²©´ó¾«Éî£¬ÈÃÎÒÊ¦¸µÒ²ÏëÀ©´óÃÅ¹æÒ»ÆğÏìÓ¦ÆäËûÃÅÅÉ£¬½ñÌìÎÒ¸øÄãÀë¿ª±¾ÃÅ£¬Ò²¿ÉÒÔ½ÓÊÕ%s ÃÅÅÉµÜ×Ó. %s<enter>, ×·ÇóÎäÑ§µÄÂ·¹ûÈ»²»Ò×£¬×÷ÎªÊ¦¸µ£¬ÎÒÒ²ĞèÒªÌôÕ½ÄãÒ»ÏÂ¡£Èç¹ûÄã¿ÉÒÔ{´ïµ½120¼¶}ÇÒĞèÒªÕÒ»Ø±¾ÅÉÊ§ÂäÒÑ¾ÃµNamÅÎï{ ÃÅÅÉĞÅÎï}, Ê¦¸µ²ÅÄÜÈÃÄãÏÂÉ½.", 
 				toushiGetSexName(nSex),
 				szDes);
 	
@@ -186,7 +186,7 @@ end
 function toushiApplyShowXinWu(nCount)
 	if (nCount ~= 1) then
 		CreateTaskSay({"<dec><npc>Tİn VËt M«n Ph¸i kh«ng ph¶i lµ mãn ®å ch¬i cña trÎ con. Kh«ng lÏ ng­¬i muèn lµm mê m¾t ta hay sao?", 
-						"Tr×nh l¹i m«n ph¸i tİn vËt/toushiApplyMenPaiXinWu",
+						"Tr×nh tİn vËt m«n ph¸i/toushiApplyMenPaiXinWu",
 						"M¹n phĞp cho ta t×m l¹i mét lÇn n÷a/OnCancel"
 					});
 		return 0;
@@ -198,7 +198,7 @@ function toushiApplyShowXinWu(nCount)
 	
 	if (szKey ~= join(TB_TOUSHI_MENPAIXINWU)) then
 		CreateTaskSay({"<dec><npc>Tİn VËt M«n Ph¸i kh«ng ph¶i lµ mãn ®å ch¬i cña trÎ con. Kh«ng lÏ ng­¬i muèn lµm mê m¾t ta hay sao?", 
-						"Tr×nh l¹i m«n ph¸i tİn vËt/toushiApplyMenPaiXinWu",
+						"Tr×nh tİn vËt m«n ph¸i/toushiApplyMenPaiXinWu",
 						"M¹n phĞp cho ta t×m l¹i mét lÇn n÷a/OnCancel"
 					});
 		return 0;
@@ -234,7 +234,7 @@ function toushiTransEnter(nFactionNumb)
 		local szDes = "<dec><npc>VŞ <sex> nµy, ng­¬i ®· t×m ®­îc ®­êng ®Õn chç cña ta ®©y, ta buéc ng­¬i ph¶i quªn ®i nh÷ng tuyÖt häc mµ ng­¬i ®· l·nh ngé ®­îc tõ s­ phô cña ng­¬i. {{ ng­¬i ph¶i biÕt r»ng ®· lµ gia nhËp bæn m«n, th× nh÷ng vâ c«ng ®· häc tr­íc ®©y kh«ng thÓ sö dông, ®­¬ng nhiªn ta sÏ truyÒn thô vâ c«ng cña bæn ph¸i cho ng­¬i, ®­a ng­¬i gia nhËp bæn ph¸i, ta tin t­ëng r»ng sÏ kh«ng tæn thÊt thÕ lùc.}} ng­¬i ®· nghÜ kü ch­a ®ã, qu¶ thùc lµ ng­¬i muèn gia nhËp bæn ph¸i hay kh«ng?";
 		
 		if (nFactionNumb == 1 and nSex == 1) then
-			szDes = "<dec><npc>VŞ <sex> nµy, ng­¬i ®· t×m ®­îc ®­êng ®Õn chç cña ta ®©y, ta buéc ng­¬i ph¶i quªn ®i nh÷ng tuyÖt häc mµ ng­¬i ®· l·nh ngé ®­îc tõ s­ phô cña ng­¬i. Cã ®iÒu bæn ph¸i ta vèn dÜ kh«ng thu nhËn n÷ ®Ö tö, lµ v× sî r»ng n÷ ®Ö tö sÏ kh«ng lÜnh ngé ®­îc c«ng ph¸p thuÇn d­¬ng cña bæn ph¸i. M·i cho ®Õn nöa n¨m tr­íc ®©y bæn bang chñ v« t×nh ®¹t ®­îc mét ThiÕp Cæ Ph­¬ng, míi t×m ®­îc c«ng ph¸p chÕ gi¶i. ChØ lµ bİ d­îc ë trong ph­¬ng thuèc nµy còng kh«ng lÊy g× æn ®Şnh cho l¾m, cÇn ph¶i cã bæn bang chñ truyÒn c«ng ®· th«ng kinh m¹ch. NÕu nh­ ng­¬i cã thÓ t×m ®­îc {{ Tİn vËt cña bæn bang chñ }}, míi cã thÓ gia nhËp bæn bang. Ngoµi ra {{ ng­¬i còng ph¶i biÕt r»ng ®· lµ gia nhËp bæn m«n, th× nh÷ng vâ c«ng ®· häc tr­íc ®©y kh«ng thÓ sö dông, ®­¬ng nhiªn ta sÏ truyÒn thô vâ c«ng cña bæn ph¸i cho ng­¬i, ®­a ng­¬i gia nhËp bæn ph¸i, ta tin t­ëng r»ng sÏ kh«ng tæn thÊt thÕ lùc.}} ng­¬i ®· nghÜ kü ch­a ®ã, qu¶ thùc lµ ng­¬i muèn gia nhËp bæn ph¸i hay kh«ng?";
+			szDes = "<dec><npc>Õâ<sex> Î», ÄãÒÑÕÒµ½À´ÎÒÕâµÄÂ·ÁË£¬ÎÒÒªÄãÍü¼ÇÄãÊ¦¸µ½»¸øÄãµÄ¾øÑ§¡£ÓĞÒ»ÌõÊÇ£¬ÎÒÃÅÅÉÔ­±¾²»ÊÕN÷ µÜ×Ó£¬ÊÇÒòÎªÅÂN÷ µÜ×Ó²»ÄÜÁì»á±¾ÃÅ´¿ÑôµÄ¹¦·¨¡£Ö±µ½°ëÄêÇ°£¬±¾°ï°ïÖúÎŞÒâÖĞ»ñµÃÒ»¸ö¹Å·½Ìû£¬²ÅÕÒµ½ÆÆ½â¹¦·¨¡£Ö»ÊÇ£¬¸ÃÒ©·½µÄÃØÒ©Ò²²»ÊÇºÜÍ×£¬ĞèÒª±¾°ï°ïÖú´«¹¦´òÍ¨¾­Âö¡£Èç¹ûÄã¿ÉÒÔÕÒµ½±¾°ïÖ÷ĞÅÎï£¬²ÅÄÜ¼ÓÈë±¾°ï¡£{{´ËÍâ£¬ÄãÒ²ÒªÖªµÀ£¬¼ÈÒÑ¼ÓÈë±¾ÃÅ£¬¾Í²»ÄÜÔÙÊ¹ÓÃÖ®Ç°µÄÎäÑ§ÁË£¬µ±È»£¬ÎÒ½«´«ÓëÄã±¾ÃÅµÄÎäÑ§£¬ÈÃÄã¼ÓÈë±¾ÃÅ£¬ÎÒÏàĞÅ£¬½«²»»áËğÊ§ÌåÁ¦¡£}}ÄãÏëºÃÁËÂğ£¬ÄãÕæÏë¼ÓÈë±¾ÃÅÂğ?";
 		end
 		
 		CreateTaskSay({szDes, 
@@ -285,7 +285,7 @@ function toushiTransSure(nFactionNumb, nMagicIdx)
 				return TOUSHI_TWFEMALEERR;
 			end
 			
-			szLog = "Giao tİn vËt cña D­¬ng Anh thµnh c«ng";
+			szLog = "½»ÑîÓ¢µNamÅÎï³É¹¦";
 		end
 		
 		local bTrans = toushiDoTransPlayer(GetLastFactionNumber(), nFactionNumb, nMagicIdx, szLog);			-- ´¦Àí½ÇÉ«Ïà¹ØÊôĞÔ

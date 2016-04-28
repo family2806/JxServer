@@ -21,9 +21,9 @@ TB_ROSETREE_TASKTIME = {20, 20, 15, 10};
 DEC_ROSETREE_SZSEX = {[0]="§¹i hiÖp",[1]="N÷ hiÖp"}
 DEC_ROSETREE_STASK = {"T­íi n­íc","Bãn ph©n","C¾t cá d¹i","DiÖt c«n trïng"};
 DEC_ROSETREE_EVENT = {
-"C©y hoa hång: T«i kh¸t n­íc qu¸, vÞ <color=yellow>n÷ hiÖp<color> nµy, sau <color=yellow>20 gi©y<color> h·y t­íi n­íc cho t«i. NhÊt ®Þnh ph¶i ®óng giê, nh­ vËy t«i míi cã thÓ træ nh÷ng b«ng hoa xinh ®Ñp.",
-"C©y hoa hång: Khi t«i ®ang lín, cÇn rÊt nhiÒu dinh d­ìng, vÞ <color=yellow>®¹i hiÖp<color> nµy, sau <color=yellow>20 gi©y<color> h·y bãn ph©n cho t«i. NÕu kh«ng t«i kh«ng thÓ lín.",
-"C©y hoa hång: Xung quanh t«i cã nhiÒu cá d¹i qu¸, <color=yellow>15 gi©y<color> sau h·y c¾t bá gióp t«i. ChØ cã sù gióp søc cña ®«i b¹n, t«i míi cã thÓ tr­ëng thµnh.",
+"Ãµ¹åÊ÷£ºÎÒºÜ¿Ê£¬ÕâÎ»<color=yellow>N÷ hiÖp<color>£¬<color=yellow>20 Ãëºó<color> Çë¸øÎÒT­íi n­íc¡£Ò»¶¨Òª×¼Ê±£¬ÕâÑùÎÒ²ÅÄÜ±ä³ÉÃÀÀöµÄ»¨¶ä.",
+"Ãµ¹åÊ÷£º µ±ÎÒÔÚ³¤´óÊ±£¬ÐèÒªºÜ¶àÓªÑø£¬ÕâÎ»<color=yellow>§¹i hiÖp<color>£¬<color=yellow>20 Ãëºó<color> Çë¸øÎÒBãn ph©n¡£·ñÔò£¬ÎÒ½«³¤²»´ó.",
+"Ãµ¹åÊ÷£ºÎÒÖÜÎåºÜ¶àÔÓ²Ý <color=yellow>15 Ãëºó<color> ÒªÀ´¸øÎÒC¾t cá d¹i¡£Ö»ÓÐÄãÃÇµÄ°ïÃ¦£¬ÎÒ²ÅÄÜ³É³¤.",
 "C©y hoa hång: ¤i, d­êng nh­ cã nh÷ng con s©u bß lªn ng­êi t«i, <color=yellow>10 gi©y<color> sau xin h·y gióp t«i tiªu diÖt chóng.",
 "C©y hoa hång: C¸m ¬n ®«i b¹n ®· ch¨m nom t«i. HiÖn t¹i t«i ®· træ ra nh÷ng hoa hång rÊt ®Ñp, cã %s xin ®«i b¹n h·y mau chãng h¸i lÊy.",
 };

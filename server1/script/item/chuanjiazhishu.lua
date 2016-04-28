@@ -25,8 +25,8 @@ function main()
 	SetTask(TSK_TeacherDay200711_UseExpLimit,nExpLimit+2000000);
 	if (random(1,10000) <= 150) then
 		AddItem(4,353,1,1,0,0)
-		Msg2Player(format("NhËn ®­îc %d %s",1,"%Y-%m-%d %H:%M"))
-		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.",GetLocalDate("Ho¹t ®éng Nhµ gi¸o ViÖt Nam 2007"),GetName(), GetAccount(),1,"%Y-%m-%d %H:%M"));			
+		Msg2Player(format("NhËn ®­îc %d %s",1,"Tinh Hång B¶o Th¹ch"))
+		WriteLog(format("[%s]\t%s\tName:%s\tAccount:%s\tGetItem %d %s.",GetLocalDate("Ho¹t ®éng Nhµ gi¸o ViÖt Nam 2007"),GetName(), GetAccount(),1,"Tinh Hång B¶o Th¹ch"));			
 	end
 	return 0;
 end

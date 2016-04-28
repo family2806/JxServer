@@ -212,7 +212,7 @@ GameFloor1.tbTrapList =
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\G2front.txt",--TrapµãµÄ×ø±êÎÄ¼ş
 		szTrapFile = ""
 	},
-	["§iÓm truyÒn tèng cña ¢n ThÕ Cao Nh©n"] = 
+	["¢n ThÕ Cao Nh©nµÄ´«ËÍµã"] = 
 	{
 		szPosPath = "\\settings\\maps\\tianchimijing\\floor1\\masterhandtrap.txt",
 		szTrapFile = ""

@@ -55,8 +55,8 @@ function zhongqiu0808_hecheng_dialog()
 	local tbSay = 
 	{
 		"<dec><npc>Ho¹t ®éng B¸nh trung thu Th­ëng NguyÖt ®­îc diÔn ra tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008. Trong thêi gian ho¹t ®éng, ng­êi ch¬i ®¸nh qu¸i sÏ thu thËp ®­îc c¸c “Hép Lång §Ìn”. Më hép lßng ®Ìn sÏ ®­îc c¸c lo¹i lång ®Ìn, ng­êi ch¬i cã thÓ ®æi tõ lång ®Ìn sang c¸c lo¹i b¸nh trung thu. Sö dông B¸nh Trung Thu sÏ nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ c¸c vËt phÈm cã gi¸ trŞ.",
-		"§æi b¸nh trung thu Väng NguyÖt/#zhongqiu0808_hecheng_select(1)",
-		"§æi b¸nh trung thu KiÕn NguyÖt/#zhongqiu0808_hecheng_select(2)",
+		"»»B¸nh trung thu Väng NguyÖt/#zhongqiu0808_hecheng_select(1)",
+		"»»B¸nh trung thu KiÕn NguyÖt/#zhongqiu0808_hecheng_select(2)",
 		"§æi b¸nh trung thu Th­ëng NguyÖt/#zhongqiu0808_hecheng_select(3)",
 		"KÕt thóc ®èi tho¹i/OnCancel",
 	}

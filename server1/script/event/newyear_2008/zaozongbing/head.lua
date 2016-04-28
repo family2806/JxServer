@@ -12,23 +12,23 @@ tbclassname.LIMIT_LEVEL = 50		--µÈ¼¶ÏŞÖÆ
 tbclassname.tb_Mareial =
 {
 	select1 = {
-		{G=6,D=1,P=1662,szname="B¸nh ch­ng h¶o h¹ng",num=1,nMoney=0},
+		{G=6,D=1,P=1662,szname="B¸nh ch­ng th­îng h¹ng",num=1,nMoney=0},
 		{G=6,D=1,P=1653,szname="L¸ b¸nh",num=4},
 		{G=6,D=1,P=1654,szname="G¹o nÕp",num=3},
 		{G=6,D=1,P=1655,szname="§Ëu xanh",num=2},
 		{G=6,D=1,P=1656,szname="ThŞt heo ",num=1},
-		{G=6,D=1,P=1660,szname="Bİ quyÕt lµm b¸nh ch­ng th­îng h¹ng",num=1},
+		{G=6,D=1,P=1660,szname="ÖÆ×÷B¸nh ch­ng th­îng h¹ngÃØ¾÷",num=1},
 		},
 	select2 = {
-		{G=6,D=1,P=1663,szname="B¸nh ch­ng h¶o h¹ng",num=1,nMoney=0},
+		{G=6,D=1,P=1663,szname="B¸nh ch­ng th­îng h¹ng",num=1,nMoney=0},
 		{G=6,D=1,P=1653,szname="L¸ b¸nh",num=4},
 		{G=6,D=1,P=1654,szname="G¹o nÕp",num=3},
 		{G=6,D=1,P=1655,szname="§Ëu xanh",num=2},
 		{G=6,D=1,P=1656,szname="ThŞt heo ",num=1},
-		{G=6,D=1,P=1661,szname="Bİ quyÕt lµm b¸nh ch­ng th­îng h¹ng",num=1}
+		{G=6,D=1,P=1661,szname="ÖÆ×÷B¸nh ch­ng th­îng h¹ngÃØ¾÷",num=1}
 		},
 	select3 = {
-		{G=6,D=1,P=1664,szname="B¸nh ch­ng h¶o h¹ng",num=1,nMoney=20000},
+		{G=6,D=1,P=1664,szname="B¸nh ch­ng th­îng h¹ng",num=1,nMoney=20000},
 		{G=6,D=1,P=1653,szname="L¸ b¸nh",num=4},
 		{G=6,D=1,P=1654,szname="G¹o nÕp",num=3},
 		{G=6,D=1,P=1655,szname="§Ëu xanh",num=2},
@@ -39,11 +39,11 @@ tbclassname.tb_Mareial =
 --		{G=6,D=1,P=1503,szname="·Û°ü",num=4},
 --		{G=6,D=1,P=1504,szname="ÌÇ°ü",num=4},
 --		{G=6,D=1,P=1505,szname="¼¦µ°°ü",num=4},
---		{G=6,D=1,P=1509,szname="ÖíÈâ°ü",num=1},
+--		{G=6,D=1,P=1509,szname="ThŞt heo °ü",num=1},
 --		},
 --	select5 = {
 --		{G=6,D=1,P=1514,szname="ÔÂ±ıÀñºĞ",num=1,nMoney=300000},
---		{G=6,D=1,P=1510,szname="ÂÌ¶¹ÔÂ±ı",num=1},
+--		{G=6,D=1,P=1510,szname="§Ëu xanhÔÂ±ı",num=1},
 --		{G=6,D=1,P=1511,szname="Á«×ÓÔÂ±ı",num=1},
 --		{G=6,D=1,P=1512,szname="¿¾¼¦ÔÂ±ı",num=1},
 --		{G=6,D=1,P=1513,szname="¿¾ÖíÔÂ±ı",num=1},
@@ -53,7 +53,7 @@ tbclassname.tb_Mareial =
 tbclassname.tb_content =
 {
 	sztalk1 = "Thî b¸nh: §ang r¶nh, d¹o nµy sau ta kh«ng cã viÖc g× lµm nhØ!",
-	sztalk2 = "Thî b¸nh: Thêi gian qua thËt nhanh, chíp m¾t ®· ®Õn tÕt råi, tay nghÒ lµm b¸nh ch­ng cña ta vÉn næi tiÕng x­a nay. Mçi n¨m ®Òu kh«ng İt ng­êi ®Õn nhê ta lµm giïm, vŞ kh¸ch quan nµy ch¼ng hay muèn lµm lo¹i nµo?",
+	sztalk2 = "ÔÂ±ıÊ¦¸µ: Ê±¼ä¹ıµÃÕæ¿ì£¬×ªÑÛ¾Í¹ı½ÚÁË£¬µ½ÏÖÔÚÎÒLµm b¸nh ch­ngµÄÊÖÒÕÒÀ¾ÉÓĞÃû. Ã¿Äê¶¼ÓĞ²»ÉÙÈËÀ´ÕÒÎÒ°ïÃ¦£¬²»Öª¿Í¹ÙÏë×öÄÄÖÖ?",
 	nselectsum = 3,
 	szselect1 = format("Ta muèn lµm 1 c¸i %s/#tbclassname:getmakeitemsign(1)",tbclassname.tb_Mareial.select1[1].szname),
 	szselect2 = format("Ta muèn lµm 1 c¸i %s/#tbclassname:getmakeitemsign(2)",tbclassname.tb_Mareial.select2[1].szname),
@@ -85,7 +85,7 @@ end
 
 function tbclassname:funtalkmlimit(nsign)
 		local sztalkmake = tbclassname:funtalkmareial(nsign)
-		sztalkmake = format("%s thiÕu kh«ng thÓ lµm. H×nh nh­ nguyªn liÖu lµm b¸nh ch­ng kh«ng ®ñ.",sztalkmake)
+		sztalkmake = format("È±ÉÙ%s ÎŞ·¨×ö¡£Lµm b¸nh ch­ngµÄÔ­ÁÏºÃÏñ²»¹»ÄØ.",sztalkmake)
 		return sztalkmake
 end
 

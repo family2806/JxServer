@@ -41,11 +41,11 @@ function want_playboat()
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
 				Say(" Xin lçi! Trong ®éi b¹n cã thµnh viªn v­ît <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
-				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn trªn cÊp 90, xin h·y kiÓm tra l¹i råi b¸o danh!");
 				return
 			else
 				Say("Xin lçi! Trong ®éi b¹n cã thµnh viªn ch­a ®¹t <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
-				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn trªn cÊp 90, xin h·y kiÓm tra l¹i råi b¸o danh!");
 				return
 			end
 		end
@@ -70,9 +70,9 @@ function want_playboat()
 	--print("total"..totalboat.."free"..freeboat)
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp "
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp"
 	else
-		strlevel = " 'NhiÖm vô Th¸ch thøc thêi gian' Cao cÊp "
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian cao cÊp"
 	end
 	
 	if (startboat == 1) then
@@ -84,7 +84,7 @@ function want_playboat()
 			return
 		end
 	else
-		Say("Xin lçi! Khu vùc nµy"..strlevel.."HiÖn t¹i kh«ng cã nhiÖm vô khiªu chiÕn thêi gian ®Ó tham gia. B¸o danh vµo  <color=red>®óng mçi tiÕng ®ång hç<color> b¾t ®Çu, lµ".. TIME_SIGNUP .."phót, xin h·y l­u ı th«ng b¸o cña hÖ thèng.",0)
+		Say("²»ºÃÒâË¼£¡Khu vùc nµy"..strlevel.."HiÖn t¹i kh«ng cã nhiÖm vô khiªu chiÕn thêi gian ®Ó tham gia. B¸o danh vµo  <color=red>®óng mçi tiÕng ®ång hç<color> b¾t ®Çu, lµ".. TIME_SIGNUP .."phót, xin h·y l­u ı th«ng b¸o cña hÖ thèng.",0)
 		return
 	end
 	
@@ -146,11 +146,11 @@ function dragon_join()
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
 				Say(" Xin lçi! Trong ®éi b¹n cã thµnh viªn v­ît <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
-				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn trªn cÊp 90, xin h·y kiÓm tra l¹i råi b¸o danh!");
 				return
 			else
 				Say("Xin lçi! Trong ®éi b¹n cã thµnh viªn ch­a ®¹t <color=red>cÊp 90<color>, xin kiÓm tra l¹i råi b¸o danh!",0)
-				Msg2Team("Trong ®éi b¹n cã thµnh viªn ch­a ®¹t cÊp 90, xin kiÓm tra l¹i råi b¸o danh!");
+				Msg2Team("Trong ®éi b¹n cã thµnh viªn trªn cÊp 90, xin h·y kiÓm tra l¹i råi b¸o danh!");
 				return
 			end
 		end
@@ -168,11 +168,11 @@ function dragon_join()
 			havesword = CalcEquiproomItemCount( 6, 1, 400, 90 )
 		end
 		if (havesword < 1 and blevel == 0) then
-			Say("NhiÕp Thİ ThÇn: Xin l­îng thø, tham gia nhiÖm vô khiªu chiÕn thêi gian s¬ cÊp mçi thµnh viªn cÇn ph¶i cã mét S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 trë xuèng, xin h·y chuÈn bŞ råi h·y ®Õn ®©y gÆp ta",0)
+			Say("Äôs³¾: Çë¼ûÁÂ£¬²Î¼ÓNhiÖm vô Th¸ch thøc thêi gian S¬ cÊpµÄ³ÉÔ±ÒªÓĞÒ»¸ö²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë×¼±¸ºÃÖ®ºóÀ´¼ûÎÒ",0)
 			Msg2Team("Trong tæ ®éi cña ng­¬i cã ng­êi kh«ng cã S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 trë xuèng , xin  kiÓm tra l¹i råi h·y b¸o danh tham gia !")
 			return
 		elseif (havesword < 1 and blevel == 1) then
-			Say("NhiÕp Thİ ThÇn: Xin l­îng thø, tham gia nhiÖm vô khiªu chiÕn thêi gian cao cÊp mçi thµnh viªn cÇn ph¶i cã mét S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90 , xin h·y chuÈn bŞ råi h·y ®Õn ®©y gÆp ta",0)
+			Say("Äôs³¾: Çë¼ûÁÂ£¬²Î¼ÓNhiÖm vô Th¸ch thøc thêi gian cao cÊpµÄ³ÉÔ±ÒªÓĞÒ»¸ö²»ÂÛ90¼¶ÒÔÉÏ»¹ÊÇÒÔÏÂµÄÎåĞĞÉ±ÊÖïµ£¬Çë×¼±¸ºÃÖ®ºóÀ´¼ûÎÒ",0)
 			Msg2Team("Trong tæ ®éi cña ng­¬i cã ng­êi kh«ng cã S¸t Thñ Gi¶n ngò hµnh bÊt kú cÊp 90, xin  kiÓm tra l¹i råi h·y b¸o danh tham gia !")
 			return
 		end
@@ -264,9 +264,9 @@ function dragon_join()
 	PlayerIndex = OldPlayer
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp "
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian S¬ cÊp"
 	else
-		strlevel = " 'NhiÖm vô Th¸ch thøc thêi gian' Cao cÊp "
+		strlevel = "NhiÖm vô Th¸ch thøc thêi gian cao cÊp"
 	end
 	Say("Xin lçi! HiÖn t¹i khu vùc <color=red>"..strlevel.."<color>®· kh«ng cßn chç. Xin ®îi vßng sau!",0)
 end

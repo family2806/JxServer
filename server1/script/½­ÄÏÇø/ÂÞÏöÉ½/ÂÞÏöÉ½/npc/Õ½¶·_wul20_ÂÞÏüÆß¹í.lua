@@ -8,9 +8,9 @@ function OnDeath()
 		AddEventItem(85)
 		if (i >= 6) then
 			Msg2Player("B¹n giÕt ®­îc La Tiªu thÊt quû, lÊy ®ñ 7 c¸i ®Çu ")
-			AddNote("B¹n giÕt ®­îc La Tiªu thÊt quû, lÊy ®ñ 7 c¸i ®Çu, giao cho B¹ch Doanh Doanh ")
+			AddNote("B¹n giÕt ®­îc La Tiªu thÊt quû, lÊy ®ñ 7 c¸i ®Çu £¬½»¸ø°×Ó¨Ó¨")
 		else
-			Msg2Player("NhËn ®­îc mét c¸i ®Çu ng­êi ")
+			Msg2Player("µÃµ½Ò»¸ö§Çu ng­êi  ")
 		end
 	end
 end;

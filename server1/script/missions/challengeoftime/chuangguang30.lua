@@ -29,33 +29,33 @@ ChuangGuan30.szMapType = "MËt Phßng cöa ¶i" --¸Ä±äµØÍ¼±íÊ¾
 --Drop Item when kill final boss - Modified By DinhHQ - 20120312
 --Give message to all player in map about the lucky award - Modifed by DinhHQ - 20110510
 function AnnounceLuckyAward(strAwardName)		
-	local strMsg = format("Tæ ®éi cña <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng boss %s, giµnh ®­îc phÇn th­ëng ®Æc biÖt lµ <color=yellow>%s<color>", GetName(), " trong MËt Phßng Cöa ¶i", strAwardName)
+	local strMsg = format("Tæ ®éi cña <color=yellow>%s<color> ®· tiªu diÖt thµnh c«ng boss %s, giµnh ®­îc phÇn th­ëng ®Æc biÖt lµ <color=yellow>%s<color>", GetName(), "ÔÚMËt Phßng cöa ¶iÖÐ", strAwardName)
 	Msg2Team(strMsg)			
 	Msg2SubWorld(strMsg)
 	AddGlobalNews(strMsg)	
 end
 tbVnItemAwardEx = {
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[1]={{szName="§å Phæ Kim ¤ Y",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
-	[10]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[11]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[12]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[13]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[14]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[15]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[16]={{szName="Kim ¤ LÖnh",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
-	[17]={{szName="§å Phæ B¹ch Hæ Béi",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
-	[18]={{szName="§å Phæ B¹ch Hæ Béi",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
-	[19]={{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[1]={{szName="§å Phæ Kim ¤ Kh«i",tbProp={6,1,2280,1,0,0},nCount=1,nRate=5},},
+	[10]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[11]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[12]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[13]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[14]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[15]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[16]={{szName="§å Phæ Kim ¤ KhÝ Giíi",tbProp={6,1,2312,1,0,0},nCount=1,nRate=2},},
+	[17]={{szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
+	[18]={{szName="§å Phæ B¹ch Hæ Kh«i",tbProp={6,1,2311,1,0,0},nCount=1,nRate=5},},
+	[19]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
 	[20]={{szName="Long HuyÕt Hoµn",tbProp={6,1,2379,1,0,0},nCount=1,nRate=10},},
-	[21]={{szName="S¸t Thñ Gi¶n lÔ hép",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
+	[21]={{szName="B¹ch Hæ LÖnh",tbProp={6,1,2397,1,0,0},nCount=1,nRate=10},},
 	[22]={{szName="§¹i lùc hoµn lÔ bao",tbProp={6,1,2517,1,0,0},nCount=1,nRate=10},},
 	[23]={{szName="Thiªn Long LÖnh",tbProp={6,1,26,1,0,0},nCount=1,nRate=15},},
 }

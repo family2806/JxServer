@@ -78,7 +78,7 @@ tbConfig[5] =		--´³¹Ø 17
 {
 	nId = 5,
 	szMessageType = "Chuanguan",
-	szName = "VuotAi17",
+	szName = "V­ît qua ¶i 17",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"17"},
@@ -88,8 +88,8 @@ tbConfig[5] =		--´³¹Ø 17
 	},
 	tbActition = 
 	{	
-		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,10,EVENT_LOG_TITLE,"VuotAi17"} },		
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "VuotAi17", "10 Qu¶ Song Tö", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,10,EVENT_LOG_TITLE,"V­ît qua ¶i 17"} },		
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "V­ît qua ¶i 17", "10 Qu¶ Song Tö", 1}},
 	},
 }
 tbConfig[6] =  --VuotAi28
@@ -133,7 +133,7 @@ tbConfig[8] = --Ë®Ôô´óÍ·Áì
 {
 	nId = 8,
 	szMessageType = "NpcOnDeath",
-	szName = "TieuDietThuyTacDaiDauLinh",
+	szName = "Tiªu diÖt thuû tÆc ®¹i ®Çu lÜnh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -145,15 +145,15 @@ tbConfig[8] = --Ë®Ôô´óÍ·Áì
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },				
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietThuyTacDaiDauLinh", "20 Qu¶ Song Tö",1}},
+		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,20,EVENT_LOG_TITLE,"Tiªu diÖt thuû tÆc ®¹i ®Çu lÜnh"} },				
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Tiªu diÖt thuû tÆc ®¹i ®Çu lÜnh", "20 Qu¶ Song Tö",1}},
 	},
 }
 tbConfig[9] = --Ñ×µÛ- ´³¹Ø10
 {
 	nId = 9,
 	szMessageType = "YDBZguoguan",
-	szName = "VuotAiViemDe10",
+	szName = "V­ît qua ¶i Viªm §Õ thø 10",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {10},
@@ -163,15 +163,15 @@ tbConfig[9] = --Ñ×µÛ- ´³¹Ø10
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,20,EVENT_LOG_TITLE,"VuotAiViemDe10"} },				
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "VuotAiViemDe10", "20 Qu¶ Song Tö",1}},		
+		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,20,EVENT_LOG_TITLE,"V­ît qua ¶i Viªm §Õ thø 10"} },				
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "V­ît qua ¶i Viªm §Õ thø 10", "20 Qu¶ Song Tö",1}},		
 	},
 }
 tbConfig[10] = --»Æ½ðboss
 {
 	nId = 10,
 	szMessageType = "NpcOnDeath",
-	szName = "TieuDietBossTheGioi",
+	szName = "Tiªu diÖt boss Hoµng Kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -182,8 +182,8 @@ tbConfig[10] = --»Æ½ðboss
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,40,EVENT_LOG_TITLE,"TieuDietBossTheGioi"} },				
-		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "TieuDietBossTheGioi", "40 Qu¶ Song Tö",1}},			
+		{"PlayerFunLib:GetItem",	{ITEM_TWIN_PEANUT,40,EVENT_LOG_TITLE,"Tiªu diÖt boss Hoµng Kim"} },				
+		{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Tiªu diÖt boss Hoµng Kim", "40 Qu¶ Song Tö",1}},			
 	},
 }
 tbConfig[11] = --É±ÊÖboss
@@ -229,7 +229,7 @@ tbConfig[13] =
 {
 	nId = 13,
 	szMessageType = "CreateDialog",
-	szName = "§èi tho¹i hîp thµnh vËt phÈm",
+	szName = "Hîp thµnh vËt phÈm¶Ô»°",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"<npc>VÞ ®¹i hiÖp nµy cã cÇn ta gióp g× kh«ng?",0},
@@ -238,15 +238,15 @@ tbConfig[13] =
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Hîp thµnh Trµ gi¶i nhiÖt",14} },
-		{"AddDialogOpt",	{"Hîp thµnh Quµ mµu xanh",15} },	
+		{"AddDialogOpt",	{"Hîp thµnh Trµ Gi¶i NhiÖt",14} },
+		{"AddDialogOpt",	{"Hîp thµnh Hép Quµ Mµu Xanh",15} },	
 	},
 }
 tbConfig[14] =
 {
 	nId = 14,
 	szMessageType = "CreateCompose",
-	szName = "Hîp thµnh Trµ gi¶i nhiÖt",
+	szName = "Hîp thµnh Trµ Gi¶i NhiÖt",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"<npc>Trµ gi¶i nhiÖt",1,1,1,0.02},
@@ -260,15 +260,15 @@ tbConfig[14] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_COOL_TEA,1,EVENT_LOG_TITLE, "Hîp thµnh Trµ gi¶i nhiÖt"} },
-		--{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Hîp thµnh Trµ gi¶i nhiÖt", "1 Trµ gi¶i nhiÖt", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_COOL_TEA,1,EVENT_LOG_TITLE, "Hîp thµnh Trµ Gi¶i NhiÖt"} },
+		--{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Hîp thµnh Trµ Gi¶i NhiÖt", "1 Trµ gi¶i nhiÖt", 1}},
 	},
 }
 tbConfig[15] =
 {
 	nId = 15,
 	szMessageType = "CreateCompose",
-	szName = "Hîp thµnh Quµ mµu xanh",
+	szName = "Hîp thµnh Hép Quµ Mµu Xanh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"<npc>Quµ mµu Xanh",1,1,1,0.02},
@@ -281,8 +281,8 @@ tbConfig[15] =
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_BLUE_ROSE,1,EVENT_LOG_TITLE, "Hîp thµnh Quµ mµu xanh"} },
-		--{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Hîp thµnh Trµ gi¶i nhiÖt", "1 Trµ gi¶i nhiÖt", 1}},
+		{"PlayerFunLib:GetItem",	{ITEM_BLUE_ROSE,1,EVENT_LOG_TITLE, "Hîp thµnh Hép Quµ Mµu Xanh"} },
+		--{"tbVngTransLog:Write", {strTranLogFolder, nPromotionID, "Hîp thµnh Trµ Gi¶i NhiÖt", "1 Trµ gi¶i nhiÖt", 1}},
 	},
 }
 tbConfig[16] =
@@ -359,7 +359,7 @@ tbConfig[20] =
 {
 	nId = 20,
 	szMessageType = "ItemScript",
-	szName = "SuDungHopQuaTrang",
+	szName = "Sö dông Hép quµ tr¾ng",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30175,1,0,0},}},
@@ -372,7 +372,7 @@ tbConfig[20] =
 	},
 	tbActition = 
 	{			
-		{"PlayerFunLib:AddExp",	{5e6,0,EVENT_LOG_TITLE,"SuDungHopQuaTrang"} },
+		{"PlayerFunLib:AddExp",	{5e6,0,EVENT_LOG_TITLE,"Sö dông Hép quµ tr¾ng"} },
 		{"ThisActivity:WhiteGiftAddTask", {nil}},
 	},
 }
@@ -380,7 +380,7 @@ tbConfig[21] =
 {
 	nId = 21,
 	szMessageType = "ItemScript",
-	szName = "SuDungQuaMauXanh",
+	szName = "Sö dông quµ mµu xanh",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30179,1,0,0},}},
@@ -393,7 +393,7 @@ tbConfig[21] =
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{1e6,0,EVENT_LOG_TITLE,"SuDungQuaMauXanh"} },
+		{"PlayerFunLib:AddExp",	{1e6,0,EVENT_LOG_TITLE,"Sö dông quµ mµu xanh"} },
 		{"ThisActivity:CastSkillOnUsingBlueGift",	{nil} },
 		{"ThisActivity:BlueGiftAddTask", {nil}},
 	},
@@ -405,14 +405,14 @@ tbConfig[22] =
 	szName = "§èi tho¹i sù kiÖn hoa hång",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"NÕu c¸c h¹ cã vËt phÈm Hoa Hång cã thÓ giao nép cho ta ®Ó tham gia sù kiÖn Hoa Hång. Néi dung sù kiÖn nh­ sau:<enter>- Thêi gian nép vËt phÈm: <color=red>0h ngµy 2-2-12 ®Õn 24h ngµy 28-2-2012<color><enter>- Thêi gian tæng kÕt cuèi cïng: <color=red>0h20 ngµy 29-2-12<color><enter>- Thêi gian nhËn th­ëng: <color=red>9h ngµy 29-2-12 ®Õn 24h ngµy 29-2-2012<color>",0},
+	tbMessageParam = {"Èç¹û¸óÏÂÓÐHoa Hång¿ÉÒÔ½»¸øÎÒ²Î¼ÓSù kiÖn Hoa Hång¡£»î¶¯ÄÚÈÝÈçÏÂ:<enter>- ÉÏ½»Ê±¼ä: <color=red>2012Äê2ÔÂ2ÈÕ0Ê±µ½2012Äê2ÔÂ28ÈÕ24Ê±<color><enter>- ×îºó×Ü¼ÆÊ±¼äg: <color=red>0h20 µ½29-2-12<color><enter>- Áì½±Ê±¼ä: <color=red>9h  29-2-12µ½24h 29-2-2012<color>",0},
 	tbCondition = 
 	{
 	},
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"CËp nhËt sè l­îng hoa ®· nép ngµy 27",29} },
-		{"AddDialogOpt",	{"giao nép Hoa Hång",23} },
+		{"AddDialogOpt",	{"Giao nép Hoa Hång",23} },
 		{"AddDialogOpt",	{"Xem b¶ng xÕp h¹ng",24} },	
 		{"AddDialogOpt",	{"NhËn phÇn th­ëng xÕp h¹ng",25} },
 	},
@@ -421,7 +421,7 @@ tbConfig[23] = --½»ÂÌÉ«ÀñÎï
 {
 	nId = 23,
 	szMessageType = "CreateCompose",
-	szName = "giao nép Hoa Hång",
+	szName = "Giao nép Hoa Hång",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"<npc>Nép vËt phÈm",1,1,1,0.02},
@@ -456,7 +456,7 @@ tbConfig[25] =
 {
 	nId = 25,
 	szMessageType = "CreateDialog",
-	szName = "§èi tho¹i sù kiÖn hoa hång nhËn th­ëng",
+	szName = "Sù kiÖn Hoa HångÁì½±¶Ô»°",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"Xin chän phÇn th­ëng:",0},
@@ -466,16 +466,16 @@ tbConfig[25] =
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"nhËn phÇn th­ëng h¹ng 1",26} },
-		{"AddDialogOpt",	{"nhËn phÇn th­ëng h¹ng 2",27} },	
-		{"AddDialogOpt",	{"nhËn phÇn th­ëng h¹ng 3",28} },
+		{"AddDialogOpt",	{"PhÇn th­ëng xÕp h¹ng 1",26} },
+		{"AddDialogOpt",	{"PhÇn th­ëng xÕp h¹ng 2",27} },	
+		{"AddDialogOpt",	{"PhÇn th­ëng xÕp h¹ng 3",28} },
 	},
 }
 tbConfig[26] =
 {
 	nId = 26,
 	szMessageType = "nil",
-	szName = "nhËn phÇn th­ëng h¹ng 1",
+	szName = "PhÇn th­ëng xÕp h¹ng 1",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -492,7 +492,7 @@ tbConfig[27] =
 {
 	nId = 27,
 	szMessageType = "nil",
-	szName = "nhËn phÇn th­ëng h¹ng 2",
+	szName = "PhÇn th­ëng xÕp h¹ng 2",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -509,7 +509,7 @@ tbConfig[28] =
 {
 	nId = 28,
 	szMessageType = "nil",
-	szName = "nhËn phÇn th­ëng h¹ng 3",
+	szName = "PhÇn th­ëng xÕp h¹ng 3",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},

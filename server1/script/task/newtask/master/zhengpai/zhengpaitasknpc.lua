@@ -229,7 +229,7 @@ function Uworld1001_finish4()
 	AddSkillState( 509, 1, 0, 180);
 	prize()
 	ex_add_zl_level40();
-	Msg2Player("M¹c SÇu nãi sau nµy sÏ t×m b¹n. C« ta sÏ gióp b¹n tiÕn hµnh tÈy tñy, b©y giê b¹n c¬ héi söa ®iÓm kü n¨ng. NÕu b¹n kh«ng thuéc phe chİnh ph¸i sÏ kh«ng ®­îc c¬ héi nµy.")
+	Msg2Player("M¹c SÇu nãi sau nµy sÏ t×m b¹nËıÎªÄã½øĞĞÁËÍÑ¹ÇÏ´Ëè£¬ÏÖÔÚÄã¿ÉÒÔÖØĞÂ×ÔÓÉ·ÖÅäÒ»´Î¼¼ÄÜµãÁË¡£Èç¹ûÄã²»ÊôÓÚÕıÅÉÕóÓª£¬ÔòµÃ²»µ½Õâ´Î»ú»á¡£")
 	Talk(1,"mastertask","Cè g¾ng lªn")
 end
 

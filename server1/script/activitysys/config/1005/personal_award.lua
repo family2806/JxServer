@@ -240,8 +240,8 @@ function tbPVLB_Award:GetAward(tbAward)
 	if tbAward.tbItem then
 		tbAwardTemplet:Give(tbAward.tbItem, 1, {"PhongVanLenhBai", tbAward.strLog })
 		if tbAward.strLog == "PhanThuongTS1_LVL150_159" then
-			tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, "N/A", "Tô Lùc Ng­ng ThÇn T¸n", 1)
+			tbVngTransLog:Write("201109_PhongVanLenhBai»î¶¯/", 11, "N/A", "Tô Lùc Ng­ng ThÇn T¸n", 1)
 		end
 	end
-	tbVngTransLog:Write("201109_EventPhongVanLenhBai/", 11, tbAward.strLog, "N/A", 1)
+	tbVngTransLog:Write("201109_PhongVanLenhBai»î¶¯/", 11, tbAward.strLog, "N/A", 1)
 end

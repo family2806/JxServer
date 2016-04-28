@@ -17,7 +17,7 @@ Great_Night_DiaStr = {
 }
 
 function onGreat_Night()
-	Describe(format("%s Tr­íc m¾t lµ thêi gian m­a thuËn giã hßa, ®Ó ®¸p t¹ c«ng søc ®ãng gãp c¸c vŞ ®¹i hiÖp, Vâ l©m minh chñ §éc C« KiÕm ®· tæ chøc ho¹t ®éng <color=yellow>'§ªm huy hoµng'<color>. Thêi gian b¾t ®Çu ho¹t ®éng mçi ngµy lµ 12h00. <enter><color=yellow>12h00 tr­a nay sÏ diÔn ra ho¹t ®éng 'Huy chi ch­¬ng', nh÷ng n¬i sÏ xuÊt hiÖn qu¶ hoµng kim lµ:  %s<color><enter><color=yellow>19h45 h«m nay sÏ diÔn ra ho¹t ®éng 'Hoµng chi ch­¬ng', ho¹t ®éng nh©n ®«i phÇn th­ëng lµ: %s<color><enter>",
+	Describe(format("%s ÏÖÔÚÊÇ·çµ÷ÓêË³µÄ»î¶¯,ÎªÁË´ğĞ»¸÷Î»´óÏÀµÄ¹±Ï×£¬ÎäÁÖÃËÖ÷¶À¹Â½£×éÖ¯ÁË»î¶¯<color=yellow>'§ªm Huy Hoµng'<color>. »î¶¯Ê±¼äÊÇÃ¿ÌìµÄ12h00. <enter><color=yellow>ÖĞÎç12h00 ½«½øĞĞ'»ÔÖ®ÕÂ'»î¶¯£¬½«»á³öÏÖ»Æ½ğÖ®¹ûµÄµØ·½ÊÇ£º%s<color><enter><color=yellow>½ñÌì19h45½«½øĞĞ¡®»ÍÖ®ÕÂ¡®»î¶¯£¬ÁìÈ¡Ë«±¶½±ÀøµÄ»î¶¯ÊÇ£º  %s<color><enter>",
 				DescLink_LiGuan,
 				"M¹c B¾c Th¶o Nguyªn",
 				huang_event_name()),

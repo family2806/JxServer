@@ -9,6 +9,6 @@ function OnDeath()
 		SetTask(5, 50*256+50)
 		Earn(10000)
 		Msg2Player("§¸nh b¹i tªn ®Çu môc thæ phØ ThiÕt Cøc, lÊy ®­îc 1 v¹n l­îng bän chóng c­íp ®­îc. ")
-		AddNote("T¹i Thiªn T©m ®éng Phôc Ng­u s¬n, ®¸nh b¹i tªn ®Çu môc thæ phØ ThiÕt Cøc, lÊy ®­îc 1 v¹n l­îng. ")
+		AddNote("ÔÚ·üÅ£É½ÌìĞÄ¶´£¬§¸nh b¹i tªn ®Çu môc thæ phØ ThiÕt Cøc, lÊy ®­îc 1 v¹n l­îng bän chóng c­íp ®­îc. ")
 	end
 end;

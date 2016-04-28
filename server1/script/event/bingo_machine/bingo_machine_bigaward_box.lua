@@ -26,7 +26,7 @@ function main(nItemIndex)
 	local nCount = GetItemParam(nItemIndex, 1);
 	
 	if nCount == 0 then
-		Say("§· nhËn hÕt Hçn Nguyªn Linh Lé bªn trong, cã thÓ hñy ®i.", 0)
+		Say("ÒÑÁìÈ¡ÀïÃæËùÓĞµÄHçn Nguyªn Linh Lé£¬¿ÉÒÔÈ¡Ïû.", 0)
 		return 0
 	end
 	

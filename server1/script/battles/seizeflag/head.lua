@@ -294,11 +294,11 @@ function sf_createflag(camp, area1, area2)
 	
 	sf_addflag(camp , srcx, srcy, desx,desy)
 	if (camp == 1) then
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF>HiÖn t¹i ®· xuÊt hiÖn Tèng So¸i Kú míi, vŞ trİ t¹i <color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF>ÏÖÔÚ²úÉúÁËÒ»ÃæĞÂµÄPhe TèngË§Æì,Î»ÖÃÔÚ<color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
 	elseif (camp == 2) then
-		Msg2MSAll(MISSIONID, "<color=0x9BFF9B>HiÖn t¹i ®· xuÊt hiÖn Kim So¸i Kú míi, vŞ trİ t¹i <color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
+		Msg2MSAll(MISSIONID, "<color=0x9BFF9B>ÏÖÔÚ²úÉúÁËÒ»ÃæĞÂµÄPhe KimË§Æì,Î»ÖÃÔÚ<color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
 	else
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF>HiÖn t¹i ®· xuÊt hiÖn So¸i Kú míi, vŞ trİ t¹i <color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF>ÏÖÔÚ²úÉúÁËÒ»ÃæĞÂµÄË§Æì,Î»ÖÃÔÚ<color=yellow>"..floor(srcx/(32*8))..","..floor(srcy/(32*16)));
 	end
 end
 
@@ -333,7 +333,7 @@ function sf_winbouns(wincamp)
 		failcamp = 1;
 	end
 	if (GetMSPlayerCount(MISSIONID, failcamp) == 0) then
-		WriteLog("Do phe b¹i kh«ng cã ng­êi ch¬i, phe th¾ng kh«ng ®­îc tÆng th­ëng!")
+		WriteLog("ÓÉÓÚ°Ü·½Ã»ÓĞÍæ¼Ò,ËùÒÔÊ¤Àû·½²»ËÍ½±Àø")
 		return
 	end
 --by zero 2007-8-1 »ñµÃËùÓĞÓ®·½
@@ -387,7 +387,7 @@ function sf_winbouns(wincamp)
 	--end
 	
 	local award_over = floor(BATTLES_LOSEGAME_POINT * bt_getgn_awardtimes())
-	bt_camp_getbonus(failcamp, award_over, "LÇn nµy phe ta b¹i! Th¾ng b¹i lµ chuyÖn th­êng t×nh cña binh gia, t­íng sÜ ®õng n¶n lßng! LÇn sau sÏ quyÕt 1 trËn th­ hïng. (NhËn ®­îc <color=yellow>"..award_over.."<color> ®iÓm tİch lòy) ", 50);
+	bt_camp_getbonus(failcamp, award_over, "±¾´ÎËÎ½ğÕ½¶·ÒÑ¾­½áÊøÁË,ÎÒ·½Ê§°Ü£¡²»¹ıÊ¤°ÜÄË±ø¼Ò³£ÊÂ,½«Ê¿ÇĞÎğ»ÒĞÄÉ¥Æø,À´ÈÕÔÙ¾ø´ÆĞÛ£¡(µÃµ½¶îÍâ<color=yellow>"..award_over.."<color> ®iÓm tİch lòy) ", 50);
 	
 	bonuscff1 = BATTLES_WINGAME_POINT * bt_getgn_awardtimes()
    	repute = 3 * bt_getgn_awardtimes()
@@ -405,7 +405,7 @@ function sf_winbouns(wincamp)
 	   		Msg2Player("B¹n nhËn ®­îc "..bonuscff1.." ®iÓm tİch lòy")
 	   		
 			--Storm Ê¤·½½áÊøÌôÕ½,²¢¼ÇÂ¼»ñÊ¤Õß
-                Say("Chóc mõng phe b¹n giµnh th¾ng lîi! Danh väng cña b¹n t¨ng thªm <color=yellow>"..repute.."<color>! Vµ nhËn thªm <color=yellow>"..bonuscff1.."<color> ®iÓm tİch lòy", 1, "KÕt thóc ®èi tho¹i/#storm_end(1)")
+                Say("¹§Ï²ÄãÔÚ±¾³¡Õ½¶·ÖĞ»ñµÃÊ¤Àû,Danh väng cña b¹n t¨ng thªm <color=yellow>"..repute.."<color>®iÓm!²¢µÃµ½¶îÍâµÄ<color=yellow>"..bonuscff1.."<color> ®iÓm tİch lòy", 1, "KÕt thóc ®èi tho¹i/#storm_end(1)")
 			tb_storm_winner[PlayerIndex] = 1
 			
 			bt_addtotalpoint(bonuscff1)
@@ -551,21 +551,21 @@ function GameOver()
 	tb_storm_winner = {}	--Storm	Çå¿Õ»ñÊ¤Õß
 	
 	if (bonus_s > bonus_j ) then
-		resultstr = resultstr.."Tèng Kim - ph­¬ng thøc ®o¹t cê- ®· kÕt thóc, tû lÖ lµ "..BT_GetGameData(GAME_CAMP1)..":"..BT_GetGameData(GAME_CAMP2)..", phe Tèng giµnh ®­îc th¾ng lîi!";
+		resultstr = resultstr.."ËÎ½ğ§o¹t cê µÄÕ½¶·ÒÑ½áÊø,×îÖÕËÎ½ğË«·½»ñµÃµÄË§ÆìÊıÎª"..BT_GetGameData(GAME_CAMP1)..":"..BT_GetGameData(GAME_CAMP2)..",Phe TèngÓ®µÃÁËÊ¤Àû£¡";
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr.."Tû lÖ qu©n sè lµ: Tèng "..GetMSPlayerCount(MISSIONID, 1)..": Kim "..GetMSPlayerCount(MISSIONID, 2)..". Thêi gian kÕt thóc"..date("%H:%M"))
 		BT_ReportResult(1)
 		sf_winbouns(1)
 		RecordBTCount_Win(1)		--ÔÚÃ¿¸öÈËÈÎÎñ±äÁ¿Àï¼ÇÂ¼Ëü´Ë´ÎËÎ½ğÕ½³¡Ê¤¸º×´¿ö
 	elseif (bonus_s < bonus_j) then
-		resultstr = resultstr.."Tèng Kim - ph­¬ng thøc ®o¹t cê- ®· kÕt thóc, tû lÖ lµ "..BT_GetGameData(GAME_CAMP1)..":"..BT_GetGameData(GAME_CAMP2)..", phe Kim giµnh ®­îc th¾ng lîi!"
+		resultstr = resultstr.."ËÎ½ğ§o¹t cê µÄÕ½¶·ÒÑ½áÊø,×îÖÕËÎ½ğË«·½»ñµÃµÄË§ÆìÊıÎª"..BT_GetGameData(GAME_CAMP1)..":"..BT_GetGameData(GAME_CAMP2)..",Phe KimÓ®µÃÁËÊ¤Àû£¡"
 		Msg2MSAll(MISSIONID, resultstr)
 		WriteLog(resultstr.."Tû lÖ qu©n sè lµ: Tèng "..GetMSPlayerCount(MISSIONID, 1)..": Kim "..GetMSPlayerCount(MISSIONID, 2)..". Thêi gian kÕt thóc"..date("%H:%M"))
 		BT_ReportResult(2)
 		sf_winbouns(2)
 		RecordBTCount_Win(2)		--ÔÚÃ¿¸öÈËÈÎÎñ±äÁ¿Àï¼ÇÂ¼Ëü´Ë´ÎËÎ½ğÕ½³¡Ê¤¸º×´¿ö
 	else
-			resultstr = resultstr.."Tèng Kim - ph­¬ng thøc ®o¹t cê - ®· kÕt thóc, tû lÖ lµ "..bonus_s.."";
+			resultstr = resultstr.."ËÎ½ğ§o¹t cê µÄÕ½¶·ÒÑ½áÊø,½á¹ûÎªÆ½¾Ö,×îÖÕËÎ½ğË«·½»ñµÃµÄË§ÆìÊı¶¼Îª"..bonus_s.."";
 			Msg2MSAll(MISSIONID, resultstr);
 			WriteLog(resultstr.."Tû lÖ qu©n sè lµ: Tèng "..GetMSPlayerCount(MISSIONID, 1)..": Kim "..GetMSPlayerCount(MISSIONID, 2)..". Thêi gian kÕt thóc"..date("%H:%M"))
 			local award_over = BATTLES_TIEGAME_POINT * bt_getgn_awardtimes()
@@ -621,10 +621,10 @@ function sf_join(camp)
 	LeaveTeam()
 	if (GetMSPlayerCount(MISSIONID, camp) >= MAX_MEMBERCOUNT ) then
 		if (camp==1) then
-			Msg2Player("Qu©n lùc cña ta hiÖn giê ®· d­ søc tiªu diÖt Kim qu©n. Tr¸ng sÜ xin ®îi trËn sau nhĞ!")
+			Msg2Player("ÒÔÎÒ¾üÏÖÔÚµÄ±øÁ¦ÒÑ×ãÒÔÈ«Ãğ½ğ±ø,½ñºó´óÕ¹ºêÍ¼µÄ»ú»á»¹ºÜ¶à,µÈÏÂÒ»´Î°É£¡")
 			return
 		elseif (camp==2) then
-			Msg2Player("Qu©n lùc cña ta hiÖn giê ®· d­ søc tiªu diÖt Tèng qu©n. Tr¸ng sÜ xin ®îi trËn sau nhĞ!")
+			Msg2Player("ÒÔÎÒ¾üÏÖÔÚµÄ±øÁ¦ÒÑ×ãÒÔÈ«ÃğËÎ¾ü,½ñºó´óÕ¹ºêÍ¼µÄ»ú»á»¹ºÜ¶à,µÈÏÂÒ»´Î°É£¡")
 			return
 		end
 	end
@@ -632,9 +632,9 @@ function sf_join(camp)
 	
 	if (result == 2) then
 		if (camp==1) then
-			Talk(1,"","Ng­êi Kim bän ng­¬i, x©m l­îc giang s¬n, giÕt h¹i ®ång bµo ta! Ta thÒ quyÕt cïng bän ng­¬i mét mÊt mét cßn!")
+			Talk(1,"","ÄãÃÇÕâĞ©½ğÈË,ÇÖÎÒºÓÉ½,É±ÎÒÍ¬°û,×ÅÊµ¿ÉºŞ,ÎÒÃÇÊÄÓëÄãÃÇ¿¹Õ½µ½µ×£¡")
 		else
-			Talk(1,"","Kim quèc ai còng ®Òu dòng sÜ thiÖn chiÕn. Tèng triÒu môc n¸t c¸c ng­¬i sao xøng lµ ®èi thñ!")
+			Talk(1,"","ÏëÎÒ½ğ¹ú½«Ê¿,¸ö¸öÏşÓÂÉÆÕ½,ÆñÊÇÄãÃÇËÎ¹úµÄ¸¯ĞàÖ®Ê¦ÄÜÓëÖ®Æ¥µĞµÄ£¡")
 			return
 		end
 	end
@@ -645,14 +645,14 @@ if (result == 0) then
 		BT_LeaveBattle() -- Çå³ıÍæ¼Ò¿Í»§¶Ëµ±Ç°µÄÅÅÃûÊı¾İ
 		BT_ClearPlayerData()
 		SetTask(2435, 0);--±¾³¡ËÎ½ğÒÑ¾­ÁìÈ¡µÄ°ï»á¹±Ï×¶ÈÇåÁã--by ÁÎÖ¾É½
-			Msg2Player("Nh¾c nhë: cã thÓ Ên phİm ~ ë gãc tr¸i phİa trªn bµn phİm ®Ó xem tin tøc chiÕn sù!");
-			Msg2Player("Nh¾c nhë: b¹n h·y ®Õn Qu©n Nhu quan mua <color=yellow>Cê HiÖu<color> míi cã thÓ ®o¹t So¸i Kú ")
-			Msg2Player("Nh¾c nhë: trong lóc ®ang di chuyÓn So¸i Kú sÏ kh«ng thÓ trë l¹i HËu doanh!")
+			Msg2Player("Õ½³¡ÌáÊ¾:Õ½³¡ÖĞ¿ÉÒÔ°´¼üÅÌ×óÉÏ½ÇµÄ¡«¼üÇĞ»»ÏÔÊ¾µ±Ç°Õ½¶·µÄÇé¿ö");
+			Msg2Player("Õ½³¡ÌáÊ¾:Äã±ØĞëÔÚºóÓª¾üĞè¹Ù´¦¹ºÂò<color=yellow>Æì±ê<color>²ÅÄÜ§o¹t cê ºó²åÆì")
+			Msg2Player("Õ½³¡ÌáÊ¾:µ±Íæ¼Ò´¦ÓÚ³ÖÆì×´Ì¬Ê±,²»ÄÜ½øÈëºóÓª£¡")
 		BT_SetData(PL_ROUND,BT_GetGameData(GAME_ROUND))
 		local nlevel = BT_GetGameData(GAME_LEVEL)
 		G_ACTIVITY:OnMessage("SignUpSongJin", PlayerIndex, nleve)
 	else
-		Say("Muèn tham gia chiÕn tr­êng Tèng Kim h·y ñng hé 3000 l­îng", 0)
+		Say("Ïë²Î¼ÓËÎ½ğÕ½ÒÛ,ÇëÖ§³Ö3000Á½", 0)
 		return 
 	end
 end
@@ -728,7 +728,7 @@ end;
 
 function RecordBTCount_Win(camp)		--ÔÚÃ¿¸öÈËÈÎÎñ±äÁ¿Àï¼ÇÂ¼Ëü´Ë´ÎËÎ½ğÕ½³¡Ê¤¸º×´¿ö
 	if (camp ~= 1 and camp ~= 2) then
-		print("ERROR: Tèng Kim kÕt thóc! L­u tr÷ th«ng tin cã sai sãt!!!")
+		print("ERROR: ËÎ½ğ½áÊø,¼ÇÂ¼Ê¤¸º´ÎÊıÕóÓª³ö´í£¡£¡£¡")
 		return
 	end
 	local OldPlayerIndex = PlayerIndex

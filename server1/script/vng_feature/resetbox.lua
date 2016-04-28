@@ -70,7 +70,7 @@ function ResetBox:AnnounceResetBoxDate()
 	if (GetTask(self.TSK_TIME_ASSIGN) > 0) then
 		local nDate =  self:GetNextDate(GetTask(self.TSK_TIME_ASSIGN), 7)
 		local szDate = mod(nDate, 100) .. "-" .. mod(floor(nDate/100), 100) .. "-" .. floor(nDate/10000)
-		Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng ký xo¸ pass r­¬ng sÏ bÞ hñy bá!")
+		Talk(1, "", "Pass r­¬ng sÏ ®­îc xãa vµo ngµy <color=yellow>" .. szDate  .. "<color>\nNÕu sau 24h ngµy <color=yellow>" .. szDate .. " <color>®¹i hiÖp kh«ng x¸c nhËn th× ®¨ng ký xo¸ pass r­¬ng sÏ bÞ hñy bá! ")
 	end
 end
 

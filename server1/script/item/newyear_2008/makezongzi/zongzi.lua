@@ -11,7 +11,7 @@ tbclassname.mareial =
 		ntask = 1872,
 		tbitem = {
 			{
-				G=6,D=1,P=1662,szname="B¸nh ch­ng th­îng h¹ng",nexp=2000000,
+				G=6,D=1,P=1662,szname="ÉÏµÈB¸nh ch­ng",nexp=2000000,
 				tbrandomitem =
 				{
 					ntotalprop = 100,
@@ -30,11 +30,11 @@ tbclassname.mareial =
 						{G=6,D=1,P=147,LV=7,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 7",prob=0.10	},
 						{G=6,D=1,P=147,LV=8,szname="HuyÒn Tinh Kho¸ng Th¹ch cÊp 8"	 ,prob=0.05	},
 						{G=6,D=1,P=71,LV=1,szname="Tiªn Th¶o Lé "	 ,prob=11.00	},
-						{G=6,D=1,P=1181,LV=1,szname="Tiªn Th¶o Lé ®Æc biÖt"	 ,prob=1.0	},					
+						{G=6,D=1,P=1181,LV=1,szname="ÌØ±ðTiªn Th¶o Lé "	 ,prob=1.0	},					
 					}
 				} 
 			},
-			{G=6,D=1,P=1663,szname="B¸nh ch­ng h¶o h¹ng",nexp=1500000,
+			{G=6,D=1,P=1663,szname="ºÃµÈB¸nh ch­ng",nexp=1500000,
 				tbrandomitem =
 				{
 					ntotalprop = 100,
@@ -52,7 +52,7 @@ tbclassname.mareial =
 					}
 				}
 			},
-			{G=6,D=1,P=1664,szname="B¸nh ch­ng th­êng",nexp=500000},
+			{G=6,D=1,P=1664,szname="Ò»°ãB¸nh ch­ng",nexp=500000},
 		},	
 }
 
@@ -113,7 +113,7 @@ function tbclassname:selectitem(szkey)
 end
 function tbclassname:check()
 	if self:check_date() == 0 then
-		Say("B¸nh ch­ng ®· qu¸ h¹n, kh«ng thÓ sö dông.",0)
+		Say("B¸nh ch­ngÒÑ¹ýÆÚ£¬²»ÄÜÊ¹ÓÃ.",0)
 		return 2
 	end
 	if self:check_level() == 0 then
@@ -125,7 +125,7 @@ function tbclassname:check()
 		return 0
 	end
 	if self:check_exp() == 0 then
-		Say("Ho¹t ®éng lµm b¸nh ch­ng, b¹n ®· ®¹t ®iÓm kinh nghiÖm tèi ®a, kh«ng thÓ sö dông n÷a.",0)
+		Say("×öB¸nh ch­ng»î¶¯£¬ÄúÒÑ´ïµ½×î¸ß¾­ÑéÖµ£¬²»ÄÜÔÙÊ¹ÓÃÁË.",0)
 		return 0
 	end
 	if CalcFreeItemCellCount() < 1 then

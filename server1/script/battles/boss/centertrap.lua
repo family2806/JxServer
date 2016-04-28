@@ -11,7 +11,7 @@ function main()
 		elseif (GetCurCamp() == 2) then
 			SetPos(GetMissionV(MS_HOMEIN_X2), GetMissionV(MS_HOMEIN_Y2))
 			SetFightState(0)
-			Say("HiÖn vÉn ch­a khai chiÕn, kh«ng ®­îc phĞp rêi §¹i Doanh! ", 0)
+			Say("HiÖn vÉn ch­a khai chiÕn, kh«ng ®­îc phĞp rêi §¹i Doanh! ! ", 0)
 		end;
 	else
 		SetFightState(1)

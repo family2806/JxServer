@@ -67,7 +67,7 @@ function pActivity:UseCake(nTask,nLimit,nRes)
 	local nCount = tbVNG_BitTask_Lib:getBitTask(nTask)
 	-- 奖励达1500
 	if(nCount == nLimit)then
-		tbAwardTemplet:Give(%tbAward_Ext["award1500"], 1 , {%EVENT_LOG_TITLE, "SuDungBanhKemChocolatehoacTraicaydat1500"})
+		tbAwardTemplet:Give(%tbAward_Ext["award1500"], 1 , {%EVENT_LOG_TITLE, "使用水果banhkem和巧克力banhkem1500"})
 	end
 	--特别奖励
 	if tbLog[nCount] then
@@ -75,7 +75,7 @@ function pActivity:UseCake(nTask,nLimit,nRes)
 	end
 	--当达到200时的偶然奖励﹜
 	if nRes == 1 then
-			local tbLog50 =  %tbItemOtherAward["use50banhkem"][nCount] or "PhanThuongServersudungbanhkem"
+			local tbLog50 =  %tbItemOtherAward["use50banhkem"][nCount] or "使用banhkem的服务器奖励"
 			tbAwardTemplet:Give(%tbAward_Ext["awardnomal"], 1 , {%EVENT_LOG_TITLE, tbLog50})
 	end
 end

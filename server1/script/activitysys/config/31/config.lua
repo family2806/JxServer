@@ -259,8 +259,8 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"Hîp thµnh B¸nh Kem",16} },
-		{"AddDialogOpt",	{"Hîp thµnh B¸nh Sinh NhËt",17} },
-		{"AddDialogOpt",	{"Hîp thµnh B¸nh Sinh NhËt §Æc BiÖt",18} },
+		{"AddDialogOpt",	{"ºÏ³ÉB¸nh Sinh NhËt",17} },
+		{"AddDialogOpt",	{"ºÏÍ¬ÌØ±ğµÄB¸nh Sinh NhËt",18} },
 	},
 }
 tbConfig[16] = --Ò»¸öÏ¸½Ú
@@ -290,10 +290,10 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "CreateCompose",
-	szName = "Hîp thµnh B¸nh Sinh NhËt",
+	szName = "ºÏ³ÉB¸nh Sinh NhËt",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Hîp thµnh B¸nh Sinh NhËt",1,1,1,0.02},
+	tbMessageParam = {"ºÏ³ÉB¸nh Sinh NhËt",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
@@ -315,19 +315,19 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 {
 	nId = 18,
 	szMessageType = "CreateCompose",
-	szName = "Hîp thµnh B¸nh Sinh NhËt §Æc BiÖt",
+	szName = "ºÏ³ÉÌØ±ğB¸nh Sinh NhËt",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"B¸nh Sinh NhËt §Æc BiÖt",1,1,1,0.02},
+	tbMessageParam = {"ÌØ±ğB¸nh Sinh NhËt",1,1,1,0.02},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"",">="} },
-		{"AddOneMaterial",	{"B¸nh Sinh NhËt Lín",{tbProp={6,1,2861,1,0,0},},1} },
+		{"AddOneMaterial",	{"´óB¸nh Sinh NhËt",{tbProp={6,1,2861,1,0,0},},1} },
 		{"AddOneMaterial",	{"Giá Tr¸i C©y",{tbProp={6,1,2858,1,0,0},},1} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2864,1,0,0},nExpiredTime=20110630,},1,"ÎäÁÖ´«ÆæÉúÈÕ\tHîp thµnh B¸nh Sinh NhËt §Æc BiÖt"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2864,1,0,0},nExpiredTime=20110630,},1,"ÎäÁÖ´«ÆæÉúÈÕ\tºÏ³ÉÌØ±ğB¸nh Sinh NhËt"} },
 		{"AddStatData",	{"jxshengri_tebiedangao", 1} },
 	},
 }
@@ -335,14 +335,14 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 {
 	nId = 19,
 	szMessageType = "ItemScript",
-	szName = "Ê¹ÓÃÄÌÓÍ±ı",
+	szName = "Ê¹ÓÃB¬±ı",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2859,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"CÊp 150 trë lªn hoÆc ®· trïng sinh míi ®­îc sö dông",">="} },
-		{"ThisActivity:CheckTask",	{TSKG_NaiYouBing,1000,"Trong suèt thêi gian ho¹t ®éng mçi nh©n vËt chØ ®­îc sö dông nhiÒu nhÊt 1000  B¸nh Kem","<"} },
+		{"ThisActivity:CheckTask",	{TSKG_NaiYouBing,1000,"ÔÚÕû¸ö»î¶¯Ê±¼äÄÚ£¬Ã¿¸öÈËÎï×î¶àÖ»ÄÜÊ¹ÓÃ1000Kem±ı","<"} },
 	},
 	tbActition = 
 	{
@@ -381,7 +381,7 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"CÊp 150 trë lªn hoÆc ®· trïng sinh míi ®­îc sö dông",">="} },
-		{"ThisActivity:CheckTaskDaily",	{TKSG_DaDanGao,10,"Ã¿Ìì×î¶àÖ»ÄÜÊ¹ÓÃ10¸öB¸nh Sinh NhËt Lín","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TKSG_DaDanGao,10,"Ã¿Ìì×î¶àÖ»ÄÜÊ¹ÓÃ10¸ö´óB¸nh Sinh NhËt","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{10,"Hµnh trang kh«ng ®ñ"} },
 	},
 	tbActition = 
@@ -401,7 +401,7 @@ tbConfig[22] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"CÊp 150 trë lªn hoÆc ®· trïng sinh míi ®­îc sö dông",">="} },
-		{"ThisActivity:CheckTask",	{TKSG_TeBieShengRiBing,400,"ÔÚÕû¸ö»î¶¯Ê±¼äÄÚ£¬Ã¿¸öÈËÎï×î¶àÖ»ÄÜÊ¹ÓÃ400¸öB¸nh Sinh NhËt §Æc BiÖt","<"} },
+		{"ThisActivity:CheckTask",	{TKSG_TeBieShengRiBing,400,"ÔÚÕû¸ö»î¶¯Ê±¼äÄÚ£¬Ã¿¸öÈËÎï×î¶àÖ»ÄÜÊ¹ÓÃ400¸öÌØ±ğB¸nh Sinh NhËt","<"} },
 		{"PlayerFunLib:CheckFreeBagCell",	{10,"Hµnh trang kh«ng ®ñ"} },
 	},
 	tbActition = 

@@ -8,6 +8,6 @@ function OnDeath()
 		Msg2Player("B¹n giÕt ®­îc mét tªn V©n Bé s¬n ¦ng ")
 	elseif (Uworld43 == 69) or (Uworld43 == 70) then		-- ÒÑ¾­É±¹»10¸ö
 		SetTask(43,70)
-		Msg2Player("B¹n giÕt ®­îc m­êi mÊy tªn V©n Bé s¬n ¦ng, nh×n l¹i xem ¦ng chñ cã ph¶n øng g× kh«ng. ")
+		Msg2Player("B¹n giÕt ®­îc mét tªn V©n Bé s¬n ¦ng £¬¿´¿´Ó¥Ö÷ÓÐÊ²Ã´·´Ó¦. ")
 	end
 end

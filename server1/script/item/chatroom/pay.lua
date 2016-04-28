@@ -6,14 +6,14 @@ function main()
 end
 
 function pay_chatroom_enter()
-	AskClientForString("pay_chatroom_time", "", 1, 20, "Xin ®Æt tªn "); 
+	AskClientForString("pay_chatroom_time", "", 1, 20, "ÇëÊäÈëThÎ cho phßng t¸n gÉuÃû×Ö"); 
 end
 
 function pay_chatroom_time(roomname)
 
 	-- ThÎ cho phßng t¸n gÉu³äÖµ²»ĞèÒª½»·Ñ
 	if (ChatRoom_FindRoom(roomname) == 0) then
-		Msg2Player("<#>tªn " .. roomname .. "nµy kh«ng tån t¹i")
+		Msg2Player("<#>ThÎ cho phßng t¸n gÉu" .. roomname .. "nµy kh«ng tån t¹i")
 	else
 		ChatRoom_AddTime(roomname)
 	end

@@ -100,19 +100,19 @@ function JoinCamp(Camp, Type)
 	if (Type == 1) then 
 		if (Camp == 1) then 
 			if (GetMSPlayerCount(MISSIONID,Camp) >= MAX_CAMP1COUNT) then
-				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi thñ thµnh ®· ®Çy, t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end;
 		else 
 			if (GetMSPlayerCount(MISSIONID, Camp) >= MAX_CAMP2COUNT) then
-				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi thñ thµnh ®· ®Çy, t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end
 		end;
 	else
 		if (Camp == 1) then 
 			if (GetMSPlayerCount(MISSIONID,Camp + 2 ) >= MAX_CAMP3COUNT) then
-				Say("HiÖn giê sè ng­êi tham chiÕn bang héi c«ng thµnh ®· ®Çy,t¹m thêi kh«ng thÓ gia nhËp!",0)
+				Say("HiÖn giê sè ng­êi tham chiÕn bang héi thñ thµnh ®· ®Çy, t¹m thêi kh«ng thÓ gia nhËp!",0)
 				return
 			end;
 		else 

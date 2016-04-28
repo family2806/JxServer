@@ -158,7 +158,7 @@ do return end
 	SyncItem(nRandomItemIndex);
 	local strItem = GetItemName(nRandomItemIndex)
 	Msg2Player("B¹n nhËn ®­îc "..strItem)
-	WriteLog(date("%Y%m%d %H%M%S").."\t".." Online nhËn th­ëng  "..GetAccount().."\t"..GetName().."\t".." Online nhËn th­ëng  nhËn ®­îc "..strItem)
+	WriteLog(date("%Y%m%d %H%M%S").."\t".." Online NhËn Th­ëng"..GetAccount().."\t"..GetName().."\t".." Online nhËn th­ëngµÃµ½"..strItem)
 end
 
 function AddMocNhan()
@@ -170,8 +170,8 @@ do return end
 		SetItemBindState(ndx, -2);
 		SyncItem(ndx)
 		local strItem = GetItemName(ndx)
-		Msg2Player("B¹n nhËn ®­îc "..strItem)
-		WriteLog(date("%Y%m%d %H%M%S").."\t".." Online nhËn th­ëng   "..GetAccount().."\t"..GetName().."\t".." Online nhËn th­ëng "..strItem)
+		Msg2Player("B¹n nhËn ®­îc  "..strItem)
+		WriteLog(date("%Y%m%d %H%M%S").."\t".." Online NhËn Th­ëng "..GetAccount().."\t"..GetName().."\t".." Online nhËn th­ëng"..strItem)
 end
 
 function Cancel()

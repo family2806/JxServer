@@ -5,23 +5,23 @@ Include("\\script\\lib\\awardtemplet.lua")
 Include("\\script\\activitysys\\config\\1003\\variables.lua")
 
 local tbUseTTHT_AdditionalAward = {
-	[20] = {szName = "§iÓm Kinh NghiÖm", nExp=2000000},
-	[40] = {szName = "§iÓm Kinh NghiÖm", nExp=4000000},
-	[60] = {szName = "§iÓm Kinh NghiÖm", nExp=6000000},
-	[80] = {szName = "§iÓm Kinh NghiÖm", nExp=8000000},
-	[100] = {szName = "§iÓm Kinh NghiÖm", nExp=10000000},
-	[200] = {szName = "§iÓm Kinh NghiÖm", nExp=12000000},
-	[300] = {szName = "§iÓm Kinh NghiÖm", nExp=14000000},
-	[400] = {szName = "§iÓm Kinh NghiÖm", nExp=16000000},
-	[500] = {szName = "§iÓm Kinh NghiÖm", nExp=18000000},
-	[600] = {szName = "§iÓm Kinh NghiÖm", nExp=20000000},
-	[700] = {szName = "§iÓm Kinh NghiÖm", nExp=20000000},
-	[800] = {szName = "§iÓm Kinh NghiÖm", nExp=20000000},
-	[900] = {szName = "§iÓm Kinh NghiÖm", nExp=20000000},
-	[1000] = {szName = "§iÓm Kinh NghiÖm", nExp=20000000},
-	[1100] = {szName = "§iÓm Kinh NghiÖm", nExp=25000000},
-	[1200] = {szName = "§iÓm Kinh NghiÖm", nExp=25000000},
-	[1300] = {szName = "§iÓm Kinh NghiÖm", nExp=25000000},
+	[20] = {szName = "§iÓm kinh nghiÖm", nExp=2000000},
+	[40] = {szName = "§iÓm kinh nghiÖm", nExp=4000000},
+	[60] = {szName = "§iÓm kinh nghiÖm", nExp=6000000},
+	[80] = {szName = "§iÓm kinh nghiÖm", nExp=8000000},
+	[100] = {szName = "§iÓm kinh nghiÖm", nExp=10000000},
+	[200] = {szName = "§iÓm kinh nghiÖm", nExp=12000000},
+	[300] = {szName = "§iÓm kinh nghiÖm", nExp=14000000},
+	[400] = {szName = "§iÓm kinh nghiÖm", nExp=16000000},
+	[500] = {szName = "§iÓm kinh nghiÖm", nExp=18000000},
+	[600] = {szName = "§iÓm kinh nghiÖm", nExp=20000000},
+	[700] = {szName = "§iÓm kinh nghiÖm", nExp=20000000},
+	[800] = {szName = "§iÓm kinh nghiÖm", nExp=20000000},
+	[900] = {szName = "§iÓm kinh nghiÖm", nExp=20000000},
+	[1000] = {szName = "§iÓm kinh nghiÖm", nExp=20000000},
+	[1100] = {szName = "§iÓm kinh nghiÖm", nExp=25000000},
+	[1200] = {szName = "§iÓm kinh nghiÖm", nExp=25000000},
+	[1300] = {szName = "§iÓm kinh nghiÖm", nExp=25000000},
 }
 
 local tbUseTTHT_ItemAward = {
@@ -51,11 +51,11 @@ local tbUseTTHT_ItemAward = {
 	{szName="H¶i long ch©u",tbProp={6,1,2115,1,0,0},nCount=1,nRate=0.5,nExpiredTime=20160},
 	{szName="Viªm §Õ LÖnh",tbProp={6,1,1617,1,0,0},nCount=1,nRate=0.5,nExpiredTime=20160},
 	{szName="Tèng Kim Chiªu Binh LÔ Bao",tbProp={6,1,30084,1,0,0},nCount=1,nRate=0.5,nExpiredTime=20160},
-	{szName = "§iÓm Kinh NghiÖm", nExp=25000000,nRate=1},
-	{szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=2},
-	{szName = "§iÓm Kinh NghiÖm", nExp=15000000,nRate=3},
-	{szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=10},
-	{szName = "§iÓm Kinh NghiÖm", nExp=6000000,nRate=25},
+	{szName = "§iÓm kinh nghiÖm", nExp=25000000,nRate=1},
+	{szName = "§iÓm kinh nghiÖm", nExp=20000000,nRate=2},
+	{szName = "§iÓm kinh nghiÖm", nExp=15000000,nRate=3},
+	{szName = "§iÓm kinh nghiÖm", nExp=10000000,nRate=10},
+	{szName = "§iÓm kinh nghiÖm", nExp=6000000,nRate=25},
 	{szName="DŞ Dung Bİ ThuËt",tbProp={6,1,2951,1,0,0},nCount=1,nRate=0.5,nExpiredTime=20160},
 	{szName="Kİch C«ng Trî Lùc Hoµn",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
 	{szName="¢m D­¬ng Ho¹t HuyÕt §¬n",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
@@ -93,7 +93,7 @@ function pActivity:GiveRedRoseBud(nCount)
 		--¾­Ñé½±Àø
 		if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbGiveRedRoseBudLimit) ~= 1 then
 			%tbVNG_BitTask_Lib:addTask(%tbGiveRedRoseBudLimit, 1)
-			tbAwardTemplet:Give({szName = "§iÓm Kinh NghiÖm", nExp=1000000}, 1, {"EventVuLanBaoHieu", "DoiNuHoaHongDoNhanKinhNghiem"})
+			tbAwardTemplet:Give({szName = "§iÓm kinh nghiÖm", nExp=1000000}, 1, {"EventVuLanBaoHieu", "DoiNuHoaHongDoNhanKinhNghiem"})
 		end		
 		tbAwardTemplet:Give(tbAward, 1, {"EventVuLanBaoHieu", "DoiNuHoaHongDoNhanVatPham"})
 		tbVngTransLog:Write(%strTranLogFolder, %nPromotionID, "Doi1NuHoaHongDo", "1 Cöu Tiªn Ngù YÕn", 1)
@@ -114,14 +114,14 @@ function pActivity:CheckGiveRedRoseLimit(nCount)
 end
 
 function pActivity:GiveRedRose(nCount)
-	local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=500000}
+	local tbAward = {szName = "§iÓm kinh nghiÖm", nExp=500000}
 	for i = 1, nCount do
 		if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbGiveRedRoseLimit) == 1 then
 			return nil
 		end
 		%tbVNG_BitTask_Lib:addTask(%tbGiveRedRoseLimit, 1)
 		tbAwardTemplet:Give(tbAward, 1, {"EventVuLanBaoHieu", "TangHoaHongDo"})		
-		tbVngTransLog:Write(%strTranLogFolder, %nPromotionID, "TangHoaHongDo", "500000 §iÓm Kinh NghiÖm", 1)
+		tbVngTransLog:Write(%strTranLogFolder, %nPromotionID, "TangHoaHongDo", "500000 §iÓm kinh nghiÖm", 1)
 	end
 end
 
@@ -134,7 +134,7 @@ function pActivity:TTHT_Limit()
 end
 
 function pActivity:Use_TTHT()
-	local tbExpAward = {szName = "§iÓm Kinh NghiÖm", nExp=5000000}
+	local tbExpAward = {szName = "§iÓm kinh nghiÖm", nExp=5000000}
 	%tbVNG_BitTask_Lib:addTask(%tbUseTTHTLimit, 1)	
 	tbAwardTemplet:Give(tbExpAward, 1, {"EventVuLanBaoHieu", "SuDungThuyTuuHoTienNhanKinhNghiem"})
 	--½±Àøitem
@@ -154,18 +154,18 @@ function pActivity:GiveCuuTienLimit(nCount)
 		return nil
 	end
 	if (nTaskVal + nCount) > %nGive_Cuu_Tien_Daily_Max_Count then
-		Msg2Player(format("Sè l­îng v­ît qu¸ giíi h¹n, ng­¬i chØ cã thÓ tÆng <color=yellow>%d <color>Cöu Tiªn Ngù YÕn n÷a.", %nGive_Cuu_Tien_Daily_Max_Count - nTaskVal))
+		Msg2Player(format("ÊıÁ¿³¬¹ıÉÏÏŞ£¬ÄãÖ»ÄÜËÍ<color=yellow>%d <color>Cöu Tiªn Ngù YÕnÁË.", %nGive_Cuu_Tien_Daily_Max_Count - nTaskVal))
 		return nil
 	end
 	return 1
 end
 
 function pActivity:GiveCuuTien(nCount)		
-	local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=1000000}
+	local tbAward = {szName = "§iÓm kinh nghiÖm", nExp=1000000}
 	PlayerFunLib:AddTaskDaily(%TSK_GIVE_CUU_TIEN_NGU_YEN_DAILY, nCount)
 	for i = 1, nCount do		
-		tbAwardTemplet:Give(tbAward, 1, {"EventVuLanBaoHieu", "TangCuuTienNguYen"})
-		tbVngTransLog:Write(%strTranLogFolder, %nPromotionID, "TangCuuTienNguYen", "1000000 §iÓm Kinh NghiÖm", 1)
+		tbAwardTemplet:Give(tbAward, 1, {"EventVuLanBaoHieu", "ËÍCöu Tiªn Ngù YÕn"})
+		tbVngTransLog:Write(%strTranLogFolder, %nPromotionID, "ËÍCöu Tiªn Ngù YÕn", "1000000 §iÓm kinh nghiÖm", 1)
 	end
 	return 1
 end

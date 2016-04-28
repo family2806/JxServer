@@ -133,7 +133,7 @@ function ConfirmTask(nCount)
 			end
 		end
 	end--for
-	Talk(1,"","Ta chØ nhËn nhËn l¹i trang bŞ HuyÒn Viªn ®æi ra trong kho¶ng thêi gian tõ  6 giê 16-8-2010 ®Õn 8 giê 18-08-2010 !")
+	Talk(1,"","Ta chØ nhËn l¹i trang bŞ HuyÒn Viªn ®æi ra 6 giê 16-8-2010 ®Õn 8 giê 18-08-2010!")
 end
 
 function CheckTimeGenItem(nTimeGenItem)

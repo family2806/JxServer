@@ -693,13 +693,13 @@ function GetTaskType(myTaskLevel)
 		myMainRate = myMainRate + Task_MainLevelRate[myTaskLevel][i]
 	end
 	
-	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng tæng sè  "..myMainRate)
+	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng tæng sè "..myMainRate)
 	
 	
 	-- ¸ù¾İÈ¨ÖØ¹«Ê½×îºóËæ»ú¼ÆËã³öÈÎÎñÀàĞÍ
 	j = C_Random(1,myMainRate)
 	
-	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng ngÉu nhiªn ®Õm  "..j)
+	print ("NhiÖm vô lo¹i h×nh quyÒn nÆng ngÉu nhiªn ®Õm "..j)
 	
 	for i = 1,getn(Task_MainLevelRate[myTaskLevel]) do
 		k = k + Task_MainLevelRate[myTaskLevel][i]
@@ -707,7 +707,7 @@ function GetTaskType(myTaskLevel)
 		print ("TuÇn hoµn kÕt thóc , lùa chän nhiÖm vô lo¹i h×nh "..i)
 			return i
 		end
-		print ("Tr­íc m¾t tuÇn hoµn lóc kh«ng cã lùa chän ®Õn nhiÖm vô lo¹i h×nh . nhiÖm vô quyÒn nÆng ®İch mÖt mái thªm tæng trŞ gi¸ lµ  "..k)
+		print ("Tr­íc m¾t tuÇn hoµn lóc kh«ng cã lùa chän ®Õn nhiÖm vô lo¹i h×nh . nhiÖm vô quyÒn nÆng ®İch mÖt mái thªm tæng trŞ gi¸ lµ "..k)
 	end
 	
 	-- Òì³£´¦Àí£¬Èç¹ûÍæ¼Ò¶¼Ñ¡²»µ½ÈÎÎñÀàĞÍµÄ»°¾ÍÑ¡ 4
@@ -768,15 +768,15 @@ local myMainRate = 0 -- ÈÎÎñµÄ×ÜÈ¨ÖØ
 	-- ¸ù¾İÈ¨ÖØ¹«Ê½×îºóËæ»ú¼ÆËã³ö¾ßÌåµÄÈÎÎñ
 	j = C_Random(1,myMainRate)
 	
---	print ("NhiÖm vô tæng quyÒn nÆng : "..myMainRate)
---	print ("NgÉu nhiªn ®Õn ®İch nhiÖm vô quyÒn nÆng : "..j)
+--	print ("ÈÎÎñµÄ×ÜÈ¨ÖØ: "..myMainRate)
+--	print ("Ëæ»úµ½µÄÈÎÎñÈ¨ÖØ : "..j)
 	
 	for i=1,getn(myTaskTable[myTaskLevel]) do
 	
 		k = k + myTaskTable[myTaskLevel][i][2]
 		
 		if ( j < k ) then
---			print (" lùa chän ®Õn biÓu c¸ch trung ®İch thø "..myTaskTable[myTaskLevel][i][1].." ®­îc . ")
+--			print ("Ñ¡Ôñµ½ÁË±í¸ñÖĞµÄThø "..myTaskTable[myTaskLevel][i][1].." ĞĞ¡£")
 			return myTaskTable[myTaskLevel][i][1]
 		end
 			
@@ -901,7 +901,7 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		
 		if (myTaskOrder=="n") then
 		
-			myTaskMainInfo = format("%s%s%s","§i t×m <color=red>",myTaskInfo1,"<color> véi tíi ta . ");
+			myTaskMainInfo = format("%s%s%s","§i t×m <color=red>",myTaskInfo1,"<color>Véi tíi ta . ");
 		else
 			myTaskMainInfo = format("%s%s%s%s%s%s%s","§i t×m <color=red>",myTaskOrder,"<color> İt nhÊt ",myTaskInfo2,"§İch ",myTaskInfo1,"Véi tíi ta . ");
 		end
@@ -962,7 +962,7 @@ local myTaskMainInfo,myTaskOrder,myTaskInfo1,myTaskInfo2,myTaskInfo3
 		-- ĞèÒªÊÕ¼¯µÄÉ½ºÓÉçğ¢Í¼²ĞÆ¬
 		myTaskOrder = TabFile_GetCell(TL_WORLDMAPS,GetTaskTableCol(),"Num")
 		
-		myTaskMainInfo = format("%s%s%s","§i cho ta thu tËp ",myTaskOrder,"Tê nói s«ng x· t¾c ®å ®İch m¶nh vôn tíi . ")
+		myTaskMainInfo = format("%s%s%s","§i cho ta thu tËp ",myTaskOrder," ÕÅÉ½ºÓÉçğ¢Í¼µÄ²ĞÆ¬Tíi . ")
 	end
 
 	return myTaskMainInfo
@@ -1070,7 +1070,7 @@ local myTableRow = TabFile_GetRowCount(myTaskTextID)
 	for i = 1,myTableRow - 1 do
 		j = i + 1
 		myTaskVariable[i] = {j,tonumber(TabFile_GetCell(myTaskTextID,j,"TaskValue"))}
-		print("T­ëng th­ëng lo¹i h×nh "..myTaskTextID.." nhiÖm vô t­ëng th­ëng ®­îc sè "..j.." t­ëng th­ëng gi¸ trŞ "..myTaskVariable[i][2])
+		print(" t­ëng th­ëng ÀàĞÍ£º"..myTaskTextID.." ÈÎÎñ t­ëng th­ëng ĞĞºÅ£º"..j.."  t­ëng th­ëng ¼ÛÖµ£º"..myTaskVariable[i][2])
 	end
 	
 return myTaskVariable

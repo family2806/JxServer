@@ -140,13 +140,13 @@ function NpcXiaozhuzhu:CheckTeam(player)
 			player:Say(format("Xin thø lçi,<color=red>%s<color> kh«ng cã Ngäc Long LÖnh Bµi. Kh«ng ®ñ ®iÒu kiÖn ®i vµo KiÕm Gia tiÕn hµnh thİ luyÖn.", mate:GetName()))
 			return 0
 		elseif (self:VnGetJoinTotal(mate) == 0) then --¼ì²é´ÎÊı°É
-			player:Say(format("<color=red>%s<color>H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
+			player:Say(format("<color=red>%s<color> H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
 			return 0	
 --		elseif (MazePermission:CheckPermission(mate) == 0) then
 --			player:Say(format("Xin thø lçi,<color=red>%s<color> kh«ng ®ñ ®iÒu kiÖn ®i vµo KiÕm Gia tiÕn hµnh thİ luyÖn.", mate:GetName()))
 --			return 0
 --		elseif (MazePermission:QueryLeftCount(mate) == 0) then
---			player:Say(format("<color=red>%s<color>H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
+--			player:Say(format("<color=red>%s<color> H«m nay hÕt sè lÇn ®i vµo thİ luyÖn ë KiÕm Gia råi.", mate:GetName()))
 --			return 0
 		else
 			local m, _, _ = mate:GetWorldPos()

@@ -980,13 +980,13 @@ function Monster:Down(killer)
 		self.m_NpcIndex = 0
 		local name = killer:GetName()
 		local tong = BattleWorld:GetWarriorTong(name)
-		local msg = format("[%s] long trô bÞ bang héi %s %s ph¸ vì!",
+		local msg = format("[%s] Long Trô±»°ï»á%s %s ÆÆ»µ",
 						MAP_INFO[self.m_MapId].Name,
 						tong,
 						name)
 		AddGlobalNews(msg)
-		killer:Msg2Player(format("[%s] C¸c h¹ ®· ph¸ vì long trô!", MAP_INFO[self.m_MapId].Name))
-		self:CreateNpc(format("Long trô [%s]", tong))
+		killer:Msg2Player(format("[%s]¸óÏÂÒÑ¾­ÆÆ»µLong Trô", MAP_INFO[self.m_MapId].Name))
+		self:CreateNpc(format("ÆÆ»µLong Trô[%s]", tong))
 		self:StartTimer()
 		self:CloseScoreTimer()
 		self:StartScoreTimer()

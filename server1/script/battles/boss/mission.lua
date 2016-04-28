@@ -168,7 +168,7 @@ function InitMission()
 	CreateChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Tranh ®o¹t BOSS", 10)
 
 	BT_SetMissionName("H×nh thøc BOSS")
-	BT_SetMissionDesc("Bèi c¶nh: C«ng nguyªn n¨m 1160, Kim chñ Hoµn Nhan L­îng quyÕt ®Şnh thùc hiªn m­u ®å tiªu diÖt tËn gèc ®¹i Tèng sau bao n¨m ra søc chiªu binh m·i m·. §¹i qu©n Kim quèc dån dËp tÊn c«ng vÒ phİa nam môc ®İch chİnh lµ xãa sæ träng ®iÓm T­¬ng D­¬ng. Nhµ Tèng ®· bµy ra mét trËn ®Şa phßng thñ hÕt søc nghiªm ngÆt ë T­¬ng D­¬ng.<enter><enter><color=yellow>H×nh thøc BOSS: lóc chiÕn côc tiÕn hµnh hai bªn sÏ xuÊt hiÖn c¸c t­íng qu©n lín nhá, giÕt t­íng qu©n phe ®Şch vµ b¶o ®¶m sù th¾ng lîi cho bªn m×nh, nÕu nh­ Boss ®¹i cña mçi bªn ®Òu chÕt th× sÏ tİnh theo bªn nµo giÕt sè boss nhá ®­îc th¾ng.<enter>Môc ®İch: B¶o vÖ t­íng qu©n bªn m×nh vµ giÕt t­íng qu©n phe ®Şch.")
+	BT_SetMissionDesc("±³¾°: ¹«Ôª 1160, ½ğÖ÷ÍêÑÕÁÁ¾ö¶¨ÊµÊ©ÏûÃğ´óËÉµÄÆóÍ¼£¬¶øºó¶àÄêÕĞ±øÂòÂí.½ğ¹ú´ó¾üÆµÆµ½ø¹¥ÄÏ·½£¬Ä¿µÄÕıÊÇÏû³ıÏåÑôµÄÖØµã¡£ËÎ³¯ÔÚÏåÑô°Ú³öÁË·Ç³£ÑÏÃÜµÄÕóµØ·ÀÊØ.<enter><enter><color=yellow>H×nh thøc BOSS£ºÕ½¾Ö½øĞĞÊ±£¬Ë«·½½«³öÏÖ´óĞ¡½«¾ü£¬É±µĞ·½½«¾üºÍÈ·±£±¾·½µÄÊ¤Àû£¬Èç¹û¸÷·½µÄ´óBOSS¶¼ËÀÍö£¬Ôò°´ÕÕÉ±ËÀĞ¡BOSSµÄÊıÁ¿ËãÊ¤Àû.<enter>Ä¿µÄ: ±£ÎÀ±¾·½µÄ½«¾ü¼°É±º¦µĞ·½½«¾ü.")
 
 end
 

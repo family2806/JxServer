@@ -10,6 +10,6 @@ function main(nIndexItem)
 		return 1
 	end
 	AddSkillState(462, 6, 0, 60)		-- Ã¿°ëÃëÉúÃü»Ø¸´£ºÔö¼Ó3000µã(×î¶à»Ö¸´20000µãÉúÃü) ºÄÊ±6s
-	Msg2Player("Ng­¬i ®· sö dông 1 Hoµn Hån §¬n")
+	Msg2Player("ÄãÒÑÊ¹ÓÃ1Hoµn Hån §¬n")
 	return 0
 end

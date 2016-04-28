@@ -105,13 +105,13 @@ function wulin_watchticketmain()
 	if (bCheckTicket1 == 1 or bCheckTicket2 == 1) then
 		local checktab = {};
 		if (bCheckTicket1 == 1) then
-			checktab[getn(checktab) + 1] = "21:00 Më th­ëng vâ l©m quan chóng lÖnh/#wulin_checkticket(1)";
+			checktab[getn(checktab) + 1] = "21:00 ¿ªVâ l©m quan chóng lÖnh½±Æ·/#wulin_checkticket(1)";
 		end
 		if (bCheckTicket2 == 1) then
-			checktab[getn(checktab) + 1] = "23:00 Më th­ëng vâ l©m quan chóng lÖnh/#wulin_checkticket(2)";
+			checktab[getn(checktab) + 1] = "23:00 ¿ªVâ l©m quan chóng lÖnh½±Æ·/#wulin_checkticket(2)";
 		end
 		checktab[getn(checktab) + 1] = "Kh«ng cÇn!/OnCancel"
-		Say("B¹n hiÖn t¹i ch­a nhËn phÇn th­ëng vâ l©m quan chóng lÖnh, b¹n cã muèn nhËn kh«ng?", getn(checktab), checktab)
+		Say("ÄúÏÖÔÚÎ´ÁìÈ¡Vâ l©m quan chóng lÖnh½±Àø£¬ÄúÏëÁìÂğ?", getn(checktab), checktab)
 		return
 	end
 	
@@ -125,11 +125,11 @@ function wulin_watchticketmain()
 		
 		local buyidx = wulin_day2buytabidx(today)
 		if (buyidx == 0) then
-			Say("Xin lçi! HiÖn ch­a b¸n vĞ sè Vâ L©m quan chóng lÖnh! H·y quay l¹i sau nhĞ!",0)
+			Say("¶Ô²»Æğ£¬Ä¿Ç°²»ÏúÊÛVâ l©m quan chóng lÖnhÆ±£¬ÇëÉÔºòÔÙÀ´",0)
 			return 
 		end
 		if (GetTask(TV_LASTTIME_BUY) >= tonumber(nowdate)) then
-			Say("B¹n ®· mua mét tê vĞ sè cho ho¹t ®éng Vâ l©m quan chóng lÖnh! H·y ®îi më th­ëng nhĞ!", 0)
+			Say("ÄúÒÑÂòÒ»ÕÅVâ l©m quan chóng lÖnhµÄÆ±ÁË£¬ÇëµÈ¿ª½±Å¶", 0)
 			return 0
 		end
 		
@@ -150,7 +150,7 @@ function wulin_watchticketmain()
 		Say("ChØ cÇn dïng 10 l­îng mua 1 tê vĞ sè (mçi giai ®o¹n chØ ®­îc mua 1 tê) . Mçi ngµy tõ 20:00-21:00 mét lÇn vµ 22:00-23:00 mét lÇn",2, "§­îc!/#wulin_payfor_ticket("..phase..")", "Kh«ng cÇn/OnCancel")
 		return
 	else
-		Say("Xin lçi! VĞ sèm tõ 20:00-21:00 vµ 22:00-23:00 míi b¸n! B©y giê kh¸ch quan cã viÖc g× cÇn gióp ®ì kh«ng?",2,"Ta muèn t×m hiÓu ho¹t ®éng Vâ l©m quan chóng lÖnh/wulin_OnHelp", "Kh«ng cÇn/OnCancel")
+		Say("Xin lçi! VĞ sèm tõ 20:00-21:00 vµ 22:00-23:00 míi b¸n! B©y giê kh¸ch quan cã viÖc g× cÇn gióp ®ì kh«ng?",2,"ÎÒÏëÁË½âVâ l©m quan chóng lÖnh»î¶¯/wulin_OnHelp", "Kh«ng cÇn/OnCancel")
 		return
 	end
 
@@ -160,11 +160,11 @@ function wulin_OnHelp()
 end
 
 function wulin_OnHelp1()
-	Say("Mçi ngµy vµo lóc 21:00 vµ 23:00, hÖ thèng sÏ tÆng cho ng­êi ch¬i tróng th­ëng mét trong: Tiªn Th¶o lé, Thiªn S¬n B¶o Lé, B¸ch Qu¶ Lé, Phóc Duyªn Lé, Ph¸o hoa, Mai Kh«i Hoa Vò, T©m T©m T­¬ng ¸nh Phï…",2,"Trang kÕ /wulin_OnHelp2","§ãng/OnCancel")
+	Say("Ã¿Ìì21:00 ¼°23:00, ÏµÍ³½«ÔùËÍ¸øÍæ¼Ò»ñµÃÆäÖĞÒ»¸öÖĞ½±£ºTiªn Th¶o Lé £¬Thiªn s¬n  B¶o Lé £¬B¸ch Qu¶ Lé £¬¸£ÔµÂ¶£¬Ph¸o Hoa£¬Mai Kh«i Hoa Vò £¬T©m T©m T­¬ng ¸nh phï ",2,"Trang kÕ /wulin_OnHelp2","§ãng/OnCancel")
 end
 
 function wulin_OnHelp2()
-	Say("Ng­êi ch¬i tróng th­ëng, tr­íc 20:00 ngµy h«m sau ph¶i ®Õn L©m An gÆp Vâ l©m Quan viªn nhËn Vâ L©m quan chóng lÖnh, qu¸ thêi gian sÏ kh«ng thÓ nhËn. Tr­íc 24h:00 cña ngµy thø 2 cÇn ph¶i x¸c nhËn t­ c¸ch 'Quan chóng lÖnh' míi cã thÓ ®¨ng nhËp Servre thi ®Êu!",2,"Trang kÕ /wulin_OnHelp3","§ãng/OnCancel")
+	Say("ÖĞ½±Íæ¼Ò£¬ÔÚÏÂÒ»ÈÕ20:00 Ç°Ğèµ½ÁÙ°²¼ûÎäÁÖ¹ÙÔ±ÁìÈ¡Vâ l©m quan chóng lÖnh£¬¹ıÆÚ½«²»ÄÜÁì¡£ÔÚµÚ¶şÌìµÄ24h:00 ĞèÒªÈ·ÈÏ¹ÛÖÚÁî×Ê¸ñ²ÅÄÜµÇÂ½±ÈÈü·şÎñÆ÷!",2,"Trang kÕ /wulin_OnHelp3","§ãng/OnCancel")
 end
 
 
@@ -466,10 +466,10 @@ function wulin_sure_buyticket(no)
 	local msgstr = "";
 	if (no == 1) then
 		SetTask(TV_TICKET1, ticketcount)
-		msgstr = "Ng­¬i ®· ®ñ t­ c¸ch Vâ L©m quan chóng lÖnh. Sau 21h:00 vµ tr­íc 20h:00 ngµy h«m sau cã thÓ ®Õn gÆp ta ®Ó nhËn th­ëng! Ngoµi thêi gian ®ã v« hiÖu!";	
+		msgstr = "ÄúÒÑ¹ºVâ l©m quan chóng lÖnh×Ê¸ñ¡£´ÎÈÕ21h:00 ºó¼°20h:00 Ç°¿ÉÒÔÀ´¼ûÎÒÁì½±!";	
 	else
 		SetTask(TV_TICKET2, ticketcount)			
-		msgstr = "Ng­¬i ®· ®ñ t­ c¸ch Vâ L©m quan chóng lÖnh. Sau 23h:00 vµ tr­íc 20h:00 ngµy h«m sau cã thÓ ®Õn gÆp ta ®Ó nhËn th­ëng! Ngoµi thêi gian ®ã v« hiÖu!";
+		msgstr = "ÄúÒÑ¹ºVâ l©m quan chóng lÖnh×Ê¸ñ¡£´ÎÈÕ23h:00 ºó¼°20h:00 Ç°¿ÉÒÔÀ´¼ûÎÒÁì½±!";
 	end
 	SetTask(TV_LASTTIME_BUY, nowdate)
 	Msg2Player(msgstr)

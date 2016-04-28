@@ -24,7 +24,7 @@ end
 
 function tbVNGWD2011_GongNV:description()	
 	local tbDescDialog = tbVNGWD2011_NpcHead:CreateDialog()
-	tbDescDialog.szTitleMsg = "Thêi gian nµy ®ang diÔn ra ho¹t ®éng mõng ngµy Quèc TÕ Phô N÷. H·y ghÐ th¨m trang chñ cña trß ch¬i ®Ó biÕt thªm chi tiÕt."
+	tbDescDialog.szTitleMsg = "¸ÃÊ±¼äÕý¾ÙÐÐÇì×£Ho¹t ®éng mõng ngµy Quèc TÕ Phô N÷¡£Çëµ½ÓÎÏ·Ö÷Ò³ÁË½âÏêÇé."
 	tbDescDialog:AddOptEntry("Trë l¹i", tbVNGWD2011_GongNV.main, {tbVNGWD2011_GongNV})
 	tbDescDialog:Show()
 end
@@ -38,13 +38,13 @@ function tbVNGWD2011_GongNV:GetExtraAward()
 	tbTSK = tbVNG_WomenDay2011.tbTaskList.TSK100ROSE
 	tbTSK_FLAG = tbVNG_WomenDay2011.tbTaskList.TSK100ROSE_FLAG
 	if (tbVNG_BitTask_Lib:getBitTask(tbTSK_FLAG) == 0 and tbVNG_BitTask_Lib:getBitTask(tbTSK) == 1) then
-		tbDialog:AddOptEntry("PhÇn th­ëng trao tÆng 100 Bã Hoa Hång", tbVNGWD2011_GongNV.ExtraRoseAward, {tbVNGWD2011_GongNV, 100})
+		tbDialog:AddOptEntry("TÆng Bã Hoa Hång½±Àø100Êø", tbVNGWD2011_GongNV.ExtraRoseAward, {tbVNGWD2011_GongNV, 100})
 	end
 	
 	tbTSK = tbVNG_WomenDay2011.tbTaskList.TSK200ROSE
 	tbTSK_FLAG = tbVNG_WomenDay2011.tbTaskList.TSK200ROSE_FLAG
 	if (tbVNG_BitTask_Lib:getBitTask(tbTSK_FLAG) == 0 and tbVNG_BitTask_Lib:getBitTask(tbTSK) == 1) then
-		tbDialog:AddOptEntry("PhÇn th­ëng trao tÆng 200 Bã Hoa Hång", tbVNGWD2011_GongNV.ExtraRoseAward, {tbVNGWD2011_GongNV, 200})
+		tbDialog:AddOptEntry("TÆng Bã Hoa Hång½±Àø200Êø", tbVNGWD2011_GongNV.ExtraRoseAward, {tbVNGWD2011_GongNV, 200})
 	end
 	
 	tbTSK = tbVNG_WomenDay2011.tbTaskList.TSK50GIFT

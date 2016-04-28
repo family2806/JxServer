@@ -21,10 +21,10 @@ TB_PAN_TASKTIME = {20, 20, 20, 20};
 DEC_PAN_SZSEX = {[0]="§¹i hiÖp",[1]="N÷ hiÖp"}
 DEC_PAN_STASK = {"§·i vá ®Ëu xanh","nhµo bét","Bá nh©n vµo b¸nh","Thªm cñi"};
 DEC_PAN_EVENT = {
-"BÕp löa nhá: N÷ hiÖp, xin h·y ®îi 20 gi©y sau míi cã thÓ §·i vá ®Ëu xanh!",
-"BÕp löa nhá: §¹i hiÖp, xin h·y ®îi 20 gi©y sau míi cã thÓ Nhµo bét",
-"BÕp löa nhá: NhŞ vŞ, xin h·y ®îi 20 gi©y sau míi cã thÓ Bá nh©n vµo b¸nh.",
-"BÕp löa nhá: NhŞ vŞ, xin h·y ®îi 20 gi©y sau míi cã thÓ Thªm cñi",
+"Ğ¡»ï·ò: N÷ hiÖp, 20ÃëÖ®ºó²Å¿ÉÒÔ§·i vá ®Ëu xanh!",
+"Ğ¡»ï·ò: §¹i hiÖp, 20ÃëÖ®ºó²Å¿ÉÒÔnhµo bét",
+"Ğ¡»ï·ò: ¶şÎ», 20ÃëÖ®ºó²Å¿ÉÒÔBá nh©n vµo b¸nh.",
+"Ğ¡»ï·ò: ¶şÎ», 20ÃëÖ®ºó²Å¿ÉÒÔThªm cñi",
 "BÕp löa nhá: B¸nh ®· chİn råi, tæng céng cã %s  xin h·y vít ra.",
 };
 

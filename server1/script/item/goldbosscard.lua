@@ -51,32 +51,32 @@ function main(nItemIdx)
 	
 	--tinhpn 20100803: Patch ReQuest
 	if %checkOnlyUseInMap() ~= 1 then
-		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ")
+		Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
 		return 1
 	end
 	
 	
 	for i = 249, 318 do	--Ï´ËèµºÉ½¶´
 		if ( i == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+			Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.");
 			return 1
 		end
 	end	
 	for i = 375, 415 do	--ĞÂÔöËÎ½ğÕ½³¡µØÍ¼ ËÍĞÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
 		if ( i == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+			Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.");
 			return 1
 		end
 	end
 	for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
 		if( ForbiddenMap[i] == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+			Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.");
 			return 1
 		end
 	end
 	
 	if (CheckAllMaps(nMapId) == 1) then
-		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+		Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.");
 		return 1
 	end
 	

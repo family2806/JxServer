@@ -11,13 +11,13 @@ end
 function add472()
 		level = random(1,10);
 		AddSkillState(472, level, 0, 540 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦³ÖĞø»Ö¸´
-		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y håi phôc sinh lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓm vµ 30 gi©y håi phôc néi lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓm")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y håi phôc sinh lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓmºÍ³ÖĞø30ÃëµÄÄÚÁ¦»Ø¸´£¬Ã¿°ëÃë»Ø¸´"..(level*100).."<#> ®iÓm")	
 end
 
 function add490()
 		level = random(10,20);
 		AddSkillState(490, level, 0, 540 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦ÉÏÏŞ
-		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> møc sinh lùc 30 gi©y t¨ng:"..(level*100).."<#> ®iÓm vµ trong 30 gi©y møc néi lùc t¨ng:"..(level*100).."<#> ®iÓm")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> møc sinh lùc 30 gi©y t¨ng:"..(level*100).."<#> ®iÓmºÍ³ÖĞø30ÃëµÄÄÚÁ¦ÉÏÏŞÔö¼Ó£º"..(level*100).."<#> ®iÓm")	
 end
 
 Tab={add471,add472,add490}

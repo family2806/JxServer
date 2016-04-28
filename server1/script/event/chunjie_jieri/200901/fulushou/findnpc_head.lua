@@ -190,20 +190,20 @@ function tbChunjie_Jieri_2009:fulushounpc_start(ntimeid, nnpc_selfid, nnpc_nexti
 		-- ÏÈ¿´ÊÇ²»ÊÇµÚÒ»Ãû¸øµÀ¾ß½±Àø
 		if (nladder == 1) then
 			tbItem = {
-				{szName="¶´²ìÖ®°×½ðµñÁú½ä", nQuality=1, tbProp={0, 143},nRate = 0.5},
-				{szName="¶´²ìÖ®°×ÓñÇ¬À¤Åå", nQuality=1, tbProp={0, 144},nRate = 0.5},
-				{szName="¶´²ìÖ®°×½ðÐâ·ï½ä", nQuality=1, tbProp={0, 145},nRate = 0.5},
-				{szName="¶´²ìÖ®ôä´äÓñÏîÈ¦", nQuality=1, tbProp={0, 146},nRate = 0.5},
-				{szName="ÉñÃØ¿óÊ¯", tbProp={6,1,398,1,1,0},nRate = 0.5},
-				{szName="ÎäÁÖÃØ¼®", tbProp={6,1,26,1,1,0},nRate = 1},
-				{szName="Ï´Ëè¾­", tbProp={6,1,22,1,1,0},nRate = 1},
---				{szName="¶´²ìÖ®°×½ðµñÁú½ä", nQuality=1, tbProp={0, 143},nRate = 20},
---				{szName="¶´²ìÖ®°×ÓñÇ¬À¤Åå", nQuality=1, tbProp={0, 144},nRate = 20},
---				{szName="¶´²ìÖ®°×½ðÐâ·ï½ä", nQuality=1, tbProp={0, 145},nRate = 20},
---				{szName="¶´²ìÖ®ôä´äÓñÏîÈ¦", nQuality=1, tbProp={0, 146},nRate = 10},
---				{szName="ÉñÃØ¿óÊ¯", tbProp={6,1,398,1,1,0},nRate = 10},
---				{szName="ÎäÁÖÃØ¼®", tbProp={6,1,26,1,1,0},nRate = 10},
---				{szName="Ï´Ëè¾­", tbProp={6,1,22,1,1,0},nRate = 10},
+				{szName="§éng S¸t B¹ch Kim §iªu Long Giíi", nQuality=1, tbProp={0, 143},nRate = 0.5},
+				{szName="§éng S¸t B¹ch Ngäc Cµn Kh«n Béi", nQuality=1, tbProp={0, 144},nRate = 0.5},
+				{szName="§éng S¸t B¹ch Kim Tó Phông Giíi", nQuality=1, tbProp={0, 145},nRate = 0.5},
+				{szName="§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn", nQuality=1, tbProp={0, 146},nRate = 0.5},
+				{szName="ThÇn bÝ kho¸ng th¹ch", tbProp={6,1,398,1,1,0},nRate = 0.5},
+				{szName="Vâ L©m MËt TÞch", tbProp={6,1,26,1,1,0},nRate = 1},
+				{szName="TÈy Tñy Kinh", tbProp={6,1,22,1,1,0},nRate = 1},
+--				{szName="§éng S¸t B¹ch Kim §iªu Long Giíi", nQuality=1, tbProp={0, 143},nRate = 20},
+--				{szName="§éng S¸t B¹ch Ngäc Cµn Kh«n Béi", nQuality=1, tbProp={0, 144},nRate = 20},
+--				{szName="§éng S¸t B¹ch Kim Tó Phông Giíi", nQuality=1, tbProp={0, 145},nRate = 20},
+--				{szName="§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn", nQuality=1, tbProp={0, 146},nRate = 10},
+--				{szName="ThÇn bÝ kho¸ng th¹ch", tbProp={6,1,398,1,1,0},nRate = 10},
+--				{szName="Vâ L©m MËt TÞch", tbProp={6,1,26,1,1,0},nRate = 10},
+--				{szName="TÈy Tñy Kinh", tbProp={6,1,22,1,1,0},nRate = 10},
 			};
 			tbAwardTemplet:GiveAwardByRate(tbItem, "chunjie_jieri2009_fulushou")
 			

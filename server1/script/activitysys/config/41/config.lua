@@ -339,7 +339,7 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Mua Thî May",20} },
+		{"AddDialogOpt",	{"Mua Th¹ch Kim",20} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
@@ -349,7 +349,7 @@ tbConfig[20] = --Ò»¸öÏ¸½Ú
 	szName = "compose shijin",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"Thî May",1,1,1,0.02,0,50},
+	tbMessageParam = {"Th¹ch Kim",1,1,1,0.02,0,50},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
@@ -367,7 +367,7 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 	szName = "click npc named caifengshi",
 	nStartDate = 201204020000,
 	nEndDate  = 201205010000,
-	tbMessageParam = {"Thî May"},
+	tbMessageParam = {"Th¹ch Kim"},
 	tbCondition = 
 	{
 	},

@@ -26,7 +26,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "CreateCompose",
-	szName = "Hµng rong b¸n vá bãng hoµng kim_2",
+	szName = "Hµng rongÂô»Æ½ð¿Ç_2",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"Vá bãng hoµng kim",1,1,1,0.02},
@@ -36,7 +36,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2358,1,0,0},nExpiredTime=20100628,},1,"[WC 2010]GhÐp thµnh vá bãng hoµng kim"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={6,1,2358,1,0,0},nExpiredTime=20100628,},1,"[WC 2010]ºÏ³ÉVá bãng hoµng kim"} },
 	},
 }
 tbConfig[3] = --Ò»¸öÏ¸½Ú
@@ -224,7 +224,7 @@ tbConfig[13] = --Ò»¸öÏ¸½Ú
 	{
 		{"AddOneMaterial",	{"Ruét cao su",{tbProp={6,1,2361,1,0,0},},1} },
 		{"AddOneMaterial",	{"ChÊt dÎo",{tbProp={6,1,2362,1,0,0},},1} },
-		{"AddOneMaterial",	{"Vá bãng b¹ch kim",{tbProp={6,1,2359,1,0,0},},1} },
+		{"AddOneMaterial",	{"Bãng b¹ch kim¿Ç",{tbProp={6,1,2359,1,0,0},},1} },
 	},
 	tbActition = 
 	{
@@ -235,18 +235,18 @@ tbConfig[14] = --Ò»¸öÏ¸½Ú
 {
 	nId = 14,
 	szMessageType = "ItemScript",
-	szName = "Sö dông bãng da",
+	szName = "Ê¹ÓÃBãng da",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2363,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckLevel",	{50,"CÊp 50 trë lªn míi cã thÓ sö dông",">="} },
-		{"ThisActivity:CheckTask",	{1,500,"Sö dông bãng da×î¶àÖ»µÃ500000000 ¾­Ñé","<"} },
+		{"ThisActivity:CheckTask",	{1,500,"Ê¹ÓÃBãng da×î¶àÖ»µÃ500000000 ¾­Ñé","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{1000000,0,"[WC 2010]Sö dông bãng da»ñµÃ¾­Ñé"} },
+		{"PlayerFunLib:AddExp",	{1000000,0,"[WC 2010]Ê¹ÓÃBãng da»ñµÃ¾­Ñé"} },
 		{"ThisActivity:AddTask",	{1,1} },
 	},
 }
@@ -254,18 +254,18 @@ tbConfig[15] = --Ò»¸öÏ¸½Ú
 {
 	nId = 15,
 	szMessageType = "ItemScript",
-	szName = "Sö dông bãng hoµng kim",
+	szName = "Ê¹ÓÃBãng hoµng kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2364,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckLevel",	{50,"CÊp 50 trë lªn míi cã thÓ sö dông",">="} },
-		{"ThisActivity:CheckTask",	{2,4000,"Sö dông bãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ 4000000000 ¾­Ñé","<"} },
+		{"ThisActivity:CheckTask",	{2,4000,"Ê¹ÓÃBãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ 4000000000 ¾­Ñé","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{2000000,0,"[WC 2010]Sö dông bãng hoµng kim»ñµÃ¾­Ñé"} },
+		{"PlayerFunLib:AddExp",	{2000000,0,"[WC 2010]Ê¹ÓÃBãng hoµng kim»ñµÃ¾­Ñé"} },
 		{"ThisActivity:AddTask",	{2,2} },
 	},
 }
@@ -273,19 +273,19 @@ tbConfig[16] = --Ò»¸öÏ¸½Ú
 {
 	nId = 16,
 	szMessageType = "ItemScript",
-	szName = "Sö dông bãng b¹ch kim",
+	szName = "Ê¹ÓÃBãng b¹ch kim",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2365,1,0,0},}},
 	tbCondition = 
 	{
 		{"PlayerFunLib:CheckLevel",	{50,"CÊp 50 trë lªn míi cã thÓ sö dông",">="} },
-		{"PlayerFunLib:CheckFreeBagCell",	{10,"×°±¸ÐèÒª10¸ö¿Õ²ÛÒÔÉÏ²ÅÄÜSö dông bãng b¹ch kim"} },
-		{"ThisActivity:CheckTask",	{2,4000,"Sö dông bãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ4000000000 ¾­Ñé","<"} },
+		{"PlayerFunLib:CheckFreeBagCell",	{10,"×°±¸ÐèÒª10¸ö¿Õ²ÛÒÔÉÏ²ÅÄÜÊ¹ÓÃBãng b¹ch kim"} },
+		{"ThisActivity:CheckTask",	{2,4000,"Ê¹ÓÃBãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ4000000000 ¾­Ñé","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{64,1,"[WC 2010]Sö dông bãng b¹ch kim»ñµÃ½±Æ·"} },
+		{"PlayerFunLib:GetAward",	{64,1,"[WC 2010]Ê¹ÓÃBãng b¹ch kim»ñµÃ½±Æ·"} },
 		{"ThisActivity:ExecActivityDetail",	{17} },
 	},
 }
@@ -293,17 +293,17 @@ tbConfig[17] = --Ò»¸öÏ¸½Ú
 {
 	nId = 17,
 	szMessageType = "nil",
-	szName = "Sö dông bãng b¹ch kim_¾­Ñé",
+	szName = "Ê¹ÓÃBãng b¹ch kim_¾­Ñé",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{2,4000,"Sö dông bãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ4000000000 ¾­Ñé","<"} },
+		{"ThisActivity:CheckTask",	{2,4000,"Ê¹ÓÃBãng hoµng kimºÍBãng b¹ch kim×î¶à×Ü¹²Ö»µÃ4000000000 ¾­Ñé","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetAward",	{65,1,"[WC 2010]Sö dông bãng b¹ch kim»ñµÃ¾­Ñé½±Àø"} },
+		{"PlayerFunLib:GetAward",	{65,1,"[WC 2010]Ê¹ÓÃBãng b¹ch kim»ñµÃ¾­Ñé½±Àø"} },
 	},
 }
 tbConfig[18] = --Ò»¸öÏ¸½Ú
@@ -316,11 +316,11 @@ tbConfig[18] = --Ò»¸öÏ¸½Ú
 	tbMessageParam = {{tbProp={6,1,2366,1,0,0},}},
 	tbCondition = 
 	{
-		{"ThisActivity:CheckTask",	{3,1000,"Sö dông Bæ HuyÕt §¬n nhiÒu nhÊt chØ ®­îc 1000000000 kinh nghiÖm","<"} },
+		{"ThisActivity:CheckTask",	{3,1000,"Sö dông Bæ HuyÕt §¬n×î¶àÖ»µÃ1000000000¾­Ñé","<"} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:AddExp",	{10000000,0,"[WC 2010]Sö dông bæ huyÕt ®¬n t¨ng kinh nghiÖm"} },
+		{"PlayerFunLib:AddExp",	{10000000,0,"[WC 2010]Sö dông Bæ HuyÕt §¬nÔö¼Ó¾­Ñé"} },
 		{"ThisActivity:AddTask",	{3,10} },
 	},
 }
@@ -338,7 +338,7 @@ tbConfig[19] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"GhÐp thµnh Vinh DiÖu Chi Y",20} },
-		{"AddDialogOpt",	{"GhÐpt hµnh TiÓu tóc chi ngoa",21} },
+		{"AddDialogOpt",	{"GhÐpt hµnh Tinh ChuÈn Chi Ngoa",21} },
 	},
 }
 tbConfig[20] = --Ò»¸öÏ¸½Ú
@@ -362,17 +362,17 @@ tbConfig[21] = --Ò»¸öÏ¸½Ú
 {
 	nId = 21,
 	szMessageType = "CreateCompose",
-	szName = "GhÐpt hµnh TiÓu tóc chi ngoa",
+	szName = "GhÐpt hµnh Tinh ChuÈn Chi Ngoa",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"TiÓu tóc chi ngoa",0,2,2,1},
+	tbMessageParam = {"Tinh ChuÈn Chi Ngoa",0,2,2,1},
 	tbCondition = 
 	{
-		{"AddOneMaterial",	{"TiÓu tóc chi ngoa",{tbProp={6,1,2368,1,0,0},},99} },
+		{"AddOneMaterial",	{"Tinh ChuÈn Chi Ngoa",{tbProp={6,1,2368,1,0,0},},99} },
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{{tbProp={0,215},nQuality=1,nExpiredTime=86400,},1,"[WC 2010]GhÐpt hµnh TiÓu tóc chi ngoa"} },
+		{"PlayerFunLib:GetItem",	{{tbProp={0,215},nQuality=1,nExpiredTime=86400,},1,"[WC 2010]GhÐpt hµnh Tinh ChuÈn Chi Ngoa"} },
 	},
 }
 tbConfig[22] = --Ò»¸öÏ¸½Ú
@@ -404,7 +404,7 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Ta ®Õn ®Ó ghÐp bãng da",10} },
+		{"AddDialogOpt",	{"ÎÒÀ´GhÐp thµnh bãng da",10} },
 		{"AddDialogOpt",	{"Ta ®Õn ghÐp trang bÞ",19} },
 	},
 }

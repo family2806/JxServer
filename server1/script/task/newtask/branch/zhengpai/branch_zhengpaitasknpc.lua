@@ -217,37 +217,37 @@ function branch_hunhun()
 				nt_setTask(1052,50)
 				Describe(name.."<#>:  Chµo «ng, ta lµ "
 				..name..".<enter>"
-				..DescLink_HunHun.."<#>:  Lµ ng­¬i ­, t¹i sao trÔ nh­ vËy míi ®Õn? Mäi ng­êi ®· vµo vâ tr­êng. Ng­¬i vµo vâ tr­êng ®¸nh mét trËn ®i, ta muèn xem thùc lùc cña ng­¬i.<enter>",
+				..DescLink_HunHun.."<#>£ºÊÇÄã°¡£¬ÔõÃ´ÕâÃ´Íí²Åµ½¡£ÆäËûÈËÔ±Ôç¾Í½ø³¡ÁË¡£ÄãÏÈ½øÈ¥ÑİÎä³¡´òÓ®Ò»³¡£¬ÎÒÒª¿´¿´ÄãµÄÊµÁ¦.<enter>",
 				1,"KÕt thóc ®èi tho¹i/hunhun1")
 			else
 				Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ ®¼ng cÊp nhiÖm vô yªu cÇu, kh«ng thÓ tiÕp nhËn n÷a! ThËt ng¹i qu¸! ")
 			end
 		elseif ( Uworld1052 == 60 ) and ( Uworld1011 == 10 ) then
 			if ( GetLevel() >= 40 ) and ( GetLevel() <  50 ) then
-				Describe(DescLink_HunHun.."<#>:  §¸nh mét trËn pk còng kh«ng xong cßn d¸m ®Õn gÆp ta? Mau ®i ®¸nh th¾ng mét trËn.<enter>",1,"KÕt thóc ®èi tho¹i/no")
+				Describe(DescLink_HunHun.."<#>£ºÂèµÄÒ»³¡pk¶¼´ò²»¹ıÄã»¹ÓĞÁ³À´¼ûÎÒ£¿¿ìÈ¥Ó®Ò»¸öÈËÀ´.<enter>",1,"KÕt thóc ®èi tho¹i/no")
 			else
 				Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ ®¼ng cÊp nhiÖm vô yªu cÇu, kh«ng thÓ tiÕp nhËn n÷a! ThËt ng¹i qu¸! ")
 			end
 		elseif (( Uworld1052 == 60 ) or ( Uworld1052 == 70 )) and ( Uworld1011 == 20 ) then --ÑïÖİÑİÎä³¡Õ½Ê¤ÁËÒ»³¡
 			if ( GetLevel() >= 40 ) and ( GetLevel() <  50 ) then
 				nt_setTask(1052,70)
-				Describe(DescLink_HunHun.."<#>:  Hay l¾m! Ng­¬i qu¶ nhiªn rÊt giái.<enter>"
-				..name.."<#>:  Qu¸ khen!<enter> MÊy n¨m nay ta cø nhøc ®Çu, chuyÖn lµm ¨n ë DiÔn vâ tr­êng vèn rÊt thuËn lîi, tù nhiªn xuÊt hiÖn tªn qu¸i vËt ®¸nh tr¨m trËn tr¨m th¾ng, lµm cho ch¼ng ai d¸m ®Õn khiªu chiÕn. Tªn nµy khiÕn ta ®au ®Çu qu¸.<enter>"
-				..name.."<#>:  ı ng­¬i lµ?<enter>Hçn Hçn: ı cña ta ng­¬i hiÓu mµ.<enter>"
-				..name.."<#>:  H¾n ë ®©u?<enter> Tªn h¾n lµ Du S­¬ng T©n, tªn nµy Èn n¾p rÊt kü. Ta hiÖn vÉn ch­a ®iÒu tra ra tung tİch h¾n. NÕu ng­¬i cã thÓ tiªu diÖt h¾n coi nh­ ®· lËp ®¹i c«ng cho tæ chøc.<enter>",
+				Describe(DescLink_HunHun.."<#>£ººÙºÙ£¬²»´í²»´í¡£Äã¹ûÈ»ÊÇºÃÑùµÄ.<enter>"
+				..name.."<#>£º¹ı½±ÁË.<enter>»ì»ì£ºÕâĞ©ÄêÎÒÒ»Ö±ºÜÍ·Í´£¬±¾À´ÑİÎä³¡ÊÇ¸öÒ»±¾ÍòÀûµÄÂòÂô£¬¿ÉÓĞ¸ö¹ÖÎï¾ÓÈ»ÔÚÕâÀï½ÓÁ¬´òÊ¤ÁËÉÏ°Ù³¡£¬¸ãµÃĞí¶àÈË¶¼²»¸ÒÀ´ÌôÕ½ÁË¡£Õâ¼Ò»ïÈÃÎÒºÜÊÇÒ»¸öÍ·Í´°¡.<enter>"
+				..name.."<#>£ºÄãµÄÒâË¼ÊÇ£¿<enter>»ì»ì£ººÙºÙ£¬ÎÒµÄÒâË¼£¬ÄãÃ÷°×¡£¿¦àê£¡ºßºß.<enter>"
+				..name.."<#>£ºËûÔÚÄÄÀï£¿<enter>»ì»ì£ºËûµÄÃû×Ö½ĞÓåÏæ½ò£¬ÕâÈËÒş±ÎµÃ·Ç³£ºÃ£¬ÎÒµ½ÏÖÔÚ¶¼Ã»·¢ÏÖËûµÄ×Ù¼£¡£ÄãÈç¹ûÄÜ°ÑËû¸Éµô£¬¾ÍÊÇÎª×éÖ¯Á¢ÁË´ó¹¦£¬½ñºóÉıÇ¨µÄºÃ´¦×Ô²»±ØËµ.<enter>",
 				1,"KÕt thóc ®èi tho¹i/hunhun2")
 			else
 				Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ ®¼ng cÊp nhiÖm vô yªu cÇu, kh«ng thÓ tiÕp nhËn n÷a! ThËt ng¹i qu¸! ")
 			end
 		elseif ( Uworld1052 == 1000 )  then 
 			if ( GetLevel() >= 40 ) and ( GetLevel() <  50 ) then
-				Describe(DescLink_HunHun.."<#>:  Huynh ®Ö! Sau nµy chØ hy väng ë ng­¬i th«i.<enter>",
+				Describe(DescLink_HunHun.."<#>£ºĞÖµÜ£¬¹»Íş¹»Á¦°¡£¬½ñºó¾ÍÖ¸ÍûÄãÁË.<enter>",
 				1,"KÕt thóc ®èi tho¹i/no")
 			else
 				Talk(1,"","Huynh ®Ö, cè g¾ng nha.")
 			end
 	else
-			Describe(DescLink_HunHun.."<#>:  Sî c¸i g×? Cµng sî cµng bŞ ng­êi ta ¨n hiÕp.<enter>",1,"KÕt thóc ®èi tho¹i/no")	
+			Describe(DescLink_HunHun.."<#>£ºÓĞĞ©¼Ò»ï¾ÍÊÇÈíÈõ£¬É±ÈË²»¹ıÍ·µãµØ£¬ÅÂ¸öÆ¨£¬Ô½ÅÂÔ½±»ÈËÆÛ¸º.<enter>",1,"KÕt thóc ®èi tho¹i/no")	
 		end
 end
 
@@ -302,9 +302,9 @@ end
 
 function wulaotai2()
 	local name = GetName()  
-	Describe(DescLink_WuLaoTai.."<#>:  ¤i......«i,......B¹n trÎ! C¸m ¬n d­îc töu cña ng­¬i. Ta còng kh«ng biÕt nãi g× h¬n.<enter>"
-	..name.."<#>:  L·o Th¸i th¸i! N¨m ®ã H¹ Lan Chi khi theo chång cã thÊt l¹c 2 viªn B¶o th¹ch. Bµ thÊy qua ch­a? <enter> ThÊy qua råi. Ta lu«n gióp Lan Chi gi÷ nã, ®¸ng tiÕc nã ch­a bao giê vÒ ®©y, b©y giê ng­¬i ®Õn  rÊt ®óng lóc.<enter>"
-	..name.."<#>:  Bµ ®ang gi÷ µ? ThÕ th× tèt qu¸. <enter>Ng« L·o th¸i: CÇm lÊy ®i, tiÓu tö sau nµy h·y b¶o träng.<enter>",
+	Describe(DescLink_WuLaoTai.."<#>£º¿È¡­¡­¿È£¬¡­¡­Ğ¡ÅóÓÑ£¬Ğ»Ğ»ÄãµÄÒ©¾Æ¡£ÎÒ×ÜËã¿ÉÒÔËµ»°ÁË.<enter>"
+	..name.."<#>£ºÀÏÌ«Ì«£¬µ±ÄêºØÀ¼Ö¥¼Ş³ö´åµÄÊ±ºò£¬ËıÔø¾­°ÑÁ½¿ÅÊ¯Í·ÒÅÂäÔÚ´åÀï£¬Äú¿ÉÔø¿´µ½.<enter>ÎâÀÏÌ«Ì«£º¿´µ½ÁË£¬¿´µ½ÁË¡£ÎÒÒ»Ö±°ïÀ¼Ö¥ºÃºÃ±£´æ×Å£¬¿ÉÏ§ËıÒ»Ö±Ã»ÓĞ»ØÀ´£¬ÏÖÔÚÄãÀ´ÁË£¬Ò²ÕıºÃÁËÈ´ÀÏÌ«ÆÅÒ»×®ĞÄÊÂ.<enter>"
+	..name.."<#>£ºÄúÊÕ²Ø×Å£¿ÕâÕæÌ«ºÃÁË.<enter>ÎâÀÏÌ«Ì«£º½«ËüÄÃÈ¥°É£¬ÄêÇáºóÉú£¬Â·ÉÏĞ¡ĞÄ°¡.<enter>",
 	1,"KÕt thóc ®èi tho¹i/wulaotai3")
 end
 

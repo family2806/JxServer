@@ -8,8 +8,8 @@ Include("\\script\\lib\\string.lua")
 --<name> -- [·¢¿¨ÈËÃû×Ö]
 tbMessage={
 	["6,1,1328"] = "Chuc <color=red><playerbless><color> mot Giang Sinh va Nam moi vui ve <color=red><name><color>",
-	["6,1,1329"] = "<color=red><playerbless><color> than yeu, chuc chang mot giang sinh vui ve <color=red><name><color>",
-	["6,1,1330"] = "<color=red><playerbless><color> than yeu, chuc chang mot giang sinh vui ve <color=red><name><color>",
+	["6,1,1329"] = "<color=red><playerbless><color> than yeu, chuc nang mot giang sinh vui ve <color=red><name><color>",
+	["6,1,1330"] = "<color=red><playerbless><color> than yeu, chuc nang mot giang sinh vui ve <color=red><name><color>",
 	["6,1,1331"] = "Voi tat ca tam long, ta xin chuc cho <color=red><playerbless><color> mot Giang sinh vui ve. <color=red><name><color>",
 	["6,1,1332"] = "Voi tat ca tam long, ta xin chuc cho <color=red><playerbless><color> mot nam moi vui ve va hanh phuc <color=red><name><color>",
 	}

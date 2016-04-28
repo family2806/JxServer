@@ -71,7 +71,7 @@ local _GetAward = function(nNpcIndex, dwNpcID, nAddStepNum, nTaskId, szTaskName,
 	tbAward = {
 		{szName = "Triªm TuyÕt B¨ng Liªn", tbProp = {6, 1, 2911, 1, 0, 0}, nBindState = -2,},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "NhiÖm vô kü n¨ng cÊp 150 ph¸i Nga My thu thËp nhËn ®­îc ®¹o cô Triªm TuyÕt B¨ng Liªn")
+	tbAwardTemplet:GiveAwardByList(tbAward, "150¼¶¼¼ÄÜÈÎÎñÅÉ¶ëÃ¼ÊÕ¼¯µÃµ½µÀ¾ßTriªm TuyÕt B¨ng Liªn")
 	G_TASK:ExecEx(szTaskName, nGotoDetailId, nAddStepNum, nTaskId)
 	HideNpc(nNpcIndex, 20 * 18)
 end 

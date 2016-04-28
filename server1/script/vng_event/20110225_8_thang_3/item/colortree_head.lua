@@ -358,13 +358,13 @@ function CheckPlantConditionQingRen()
 	for i = 1, getn(ACTIVITY_MAP) do
 		if nMapId == ACTIVITY_MAP[i] and GetFightState() == 1 then
 			if (offlineCheckPermitRegion() == 0) then
-				lib:ShowMessage("Kh«ng ®­îc trång C©y Mµu S¾c t¹i nh÷ng n¬i gÇn xa phu hoÆc xung quanh nh÷ng n¬i ®«ng ng­êi")
+				lib:ShowMessage("²»ÄÜÔÚ½Ó½ü³µ·ò»òÕß¶àÈËµÄµØ·½ÖÖÖ²C©y Mµu S¾c")
 				return 0
 			end
 			return 1
 		end
 	end
 	
-	lib:ShowMessage("CÇn ph¶i sö dông ë ngoµi ThÊt §¹i Thµnh ThŞ vµ B¸t §¹i T©n Thñ Th«n míi cã thÓ trång H¹t C©y Mµu S¾c")
+	lib:ShowMessage("ĞèÒªÔÚÆß´ó³ÇÊĞºÍ°Ë´óĞÂÊÖ´åÒÔÍâ²ÅÄÜÖÖC©y Mµu S¾c")
 	return 0
 end

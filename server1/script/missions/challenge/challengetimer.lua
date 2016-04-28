@@ -60,7 +60,7 @@ function ReportBattle(V)
 	j_death = GetMissionV(MS_J_DEATHCOUNT);
 	gametime = (floor(GetMSRestTime(MISSIONID,11)/18));
 	RestMin, RestSec = GetMinAndSec(gametime);
-	str1 = "<#> Giai ®o¹n chiÕn ®Êu. T×nh h×nh th­¬ng vong hiÖn t¹i: phe Vµng:"..s_death.."<#> ng­êi, phe TÝm:"..j_death.."<#> ng­êi. Thêi gian cßn l¹i"..RestMin.."<#> phót "..RestSec.."<#> gi©y ";
+	str1 = "<#> Giai ®o¹n chiÕn ®Êu. T×nh h×nh th­¬ng vong hiÖn t¹i: phe Vµng:"..s_death.."<#> ng­êi, phe TÝm:"..j_death.."<#> ng­êi. Thêi gian cßn l¹i"..RestMin.."<#> phót "..RestSec.."<#> gi©y  ";
 	Msg2MSAll(MISSIONID, str1);
 end;
  

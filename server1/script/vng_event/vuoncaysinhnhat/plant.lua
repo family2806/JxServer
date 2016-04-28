@@ -325,31 +325,31 @@ end
 tbMaintainInfo = {
 	[1] = {
 		Dlg = "B„n ph©n cho c©y thi™n tu’",
-		Msg = "H∑y ti’n hµnh b„n ph©n cho c©y thi™n tu’",
+		Msg = "«ÎB„n ph©n cho c©y thi™n tu’",
 		Err = "ßπi hi÷p Æ∑ b„n ph©n cho c©y rÂi",
 		Npc = 1529,
 		},
 	[2] = {
 		Dlg = "T≠Ìi n≠Ìc cho c©y thi™n tu’",
-		Msg = "H∑y ti’n hµnh t≠Ìi n≠Ìc cho c©y thi™n tu’",
+		Msg = "«ÎT≠Ìi n≠Ìc cho c©y thi™n tu’",
 		Err = "ßπi hi÷p Æ∑ t≠Ìi n≠Ìc cho c©y rÂi.",
 		Npc = 1530,
 		},
 	[3] = {
 		Dlg = "Di÷t c· dπi cho c©y",
-		Msg = "H∑y ti’n hµnh di÷t c· dπi cho c©y",
+		Msg = "«ÎDi÷t c· dπi cho c©y",
 		Err = "ßπi hi÷p Æ∑ di÷t c· cho c©y rÂi",
 		Npc = 1531,
 		},
 --	[4] = {
 --		Dlg = "Bæt s©u cho c©y",
---		Msg = "H∑y ti’n hµnh bæt s©u cho c©y",
+--		Msg = "«ÎBæt s©u cho c©y",
 --		Err = "ßπi hi÷p Æ∑ bæt s©u cho c©y rÂi",
 --		Npc = 1532,
 --		},
 	[4] = {
 		Dlg = "Tr»y l∏ cho c©y",
-		Msg = "H∑y ti’n hµnh tr»y l∏ cho c©y",
+		Msg = "«ÎTr»y l∏ cho c©y",
 		Err = "ßπi hi÷p Æ∑ tr»y l∏ rÂi",
 		Npc = {[1] = 1552, [2] = 1554, [3] = 1553, [4] = 1550, [5] = 1555, [6] = 1555, [7] = 1551, [8] = 1551, [9] = 1452, [10] = 1453,},
 		}

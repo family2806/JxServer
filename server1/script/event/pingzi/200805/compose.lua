@@ -69,8 +69,8 @@ function pingzi0805_ComposeClass:Compose(szMsg, tbMaterial, nMoney, Awardfun,...
 	end
 
 	if self:ConsumeMaterial(tbMaterial) ~= 1 then
-		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
-		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
+		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖvËt phÈm ¶ªÊ§¡£",0)
+		Msg2Player("ÖÆ×÷Ê§°Ü£¬²¿·ÖvËt phÈm ¶ªÊ§.")
 		return 0;
 	end
 	if Awardfun then

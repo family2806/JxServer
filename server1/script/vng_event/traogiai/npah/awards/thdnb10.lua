@@ -165,7 +165,7 @@ tbCurSeason.tbPrizeList = {
 		[10]={szName="Kim ¤ Bµn Nh­îc H¹ Giíi",tbProp={0,3264},nCount=1,nQuality = 1,},
 	},
 	[21] = {
-		szName = "Bé trang bÞ Kim ¤ §­êng M«n Ná TiÔn (Max Option)",
+		szName = "Bé trang bÞ Kim ¤ §­êng M«n Ná TiÔn×°±¸ (Max Option)",
 		[1]={szName="Kim ¤ BÝch L¹c H¹ng Liªn",tbProp={0,3365},nCount=1,nQuality = 1,},
 		[2]={szName="Kim ¤ BÝch L¹c Qu¸n",tbProp={0,3366},nCount=1,nQuality = 1,},
 		[3]={szName="Kim ¤ BÝch L¹c Th­îng Giíi",tbProp={0,3367},nCount=1,nQuality = 1,},
@@ -191,7 +191,7 @@ tbCurSeason.tbPrizeList = {
 		[10]={szName="Kim ¤ Lôc Hîp H¹ Giíi",tbProp={0,3434},nCount=1,nQuality = 1,},
 	},
 	[23] = {
-		szName = "Bé trang bÞ Kim ¤ C«n L«n §ao (Max Option)",
+		szName = "Bé trang bÞ Kim ¤ C«n L«n §ao(Max Option)",
 		[1]={szName="Kim ¤ NguyÖt ¶nh H¹ng Liªn",tbProp={0,3445},nCount=1,nQuality = 1,},
 		[2]={szName="Kim ¤ NguyÖt ¶nh §¹o Qu¸n",tbProp={0,3446},nCount=1,nQuality = 1,},
 		[3]={szName="Kim ¤ NguyÖt ¶nh Th­îng Giíi",tbProp={0,3447},nCount=1,nQuality = 1,},
@@ -204,7 +204,7 @@ tbCurSeason.tbPrizeList = {
 		[10]={szName="Kim ¤ NguyÖt ¶nh H¹ Giíi",tbProp={0,3454},nCount=1,nQuality = 1,},
 	},
 	[24] = {
-		szName = "Bé trang bÞ Kim ¤ Nga Mi KiÕm (Max Option)",
+		szName = "Bé trang bÞ Kim ¤ Nga My KiÕm (Max Option)",
 		[1]={szName="Kim ¤ V« ý Ch©u Liªn",tbProp={0,3295},nCount=1,nQuality = 1,},
 		[2]={szName="Kim ¤ V« ý Ph¸t §¸i",tbProp={0,3296},nCount=1,nQuality = 1,},
 		[3]={szName="Kim ¤ V« ý Th­îng Giíi",tbProp={0,3297},nCount=1,nQuality = 1,},

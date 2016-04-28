@@ -140,7 +140,7 @@ function DungeonDlg:OptDungeonDlg(strDungeon, szTile)
 		if (tbDungeon.bHiden ~= 1) then
 			tinsert(tbOpt, {"C m lµm phi“n", DungeonDlg.Hiden, {DungeonDlg, tbDungeon.nDungeonId, 1}});
 		else
-			tinsert(tbOpt, {"B· c m lµm phi“n", DungeonDlg.Hiden, {DungeonDlg, tbDungeon.nDungeonId, 0}});
+			tinsert(tbOpt, {"»°œ˚C m lµm phi“n", DungeonDlg.Hiden, {DungeonDlg, tbDungeon.nDungeonId, 0}});
 		end
 		
 		tinsert(tbOpt, {"Xˆ l˝ lÍi mÍi", DungeonDlg.OptApplyDlg, {DungeonDlg, tbDungeon.nDungeonId, szTile}});
@@ -150,7 +150,7 @@ function DungeonDlg:OptDungeonDlg(strDungeon, szTile)
 	
 	tinsert(tbOpt, {"Tπm bi÷t", DungeonDlg.Cancel, {DungeonDlg}});
 	if szTempTile== nil or szTempTile == "" then
-		szTempTile = format("Ng≠¨i v…n ch≠a mÎ [%s]",strDungeon);
+		szTempTile = format("ƒ„ªπŒ¥Khai mÎ [%s]",strDungeon);
 	end
 	CreateNewSayEx(szTempTile, tbOpt);
 end
@@ -202,7 +202,7 @@ function DungeonDlg:DungeonOpDlg(nDungeonId, szTile)
 	
 	tinsert(tbOpt, {"Tπm bi÷t", DungeonDlg.Cancel, {DungeonDlg}});
 	if szTempTile== nil or szTempTile == "" then
-		szTempTile = format("Ng≠¨i v…n ch≠a mÎ [%s]",strDungeon);
+		szTempTile = format("ƒ„Œ¥Khai mÎ [%s]",strDungeon);
 	end
 	CreateNewSayEx(szTempTile, tbOpt);
 end
@@ -264,7 +264,7 @@ function DungeonDlg:Hiden(nDungeonId, bHiden)
 	local tbDungeon = tbDungeonInfo:GetDungeon(nDungeonId);
 	if (tbDungeon ~= nil and tbDungeon.strOwner == GetName() and (SubWorldIdx2ID(SubWorld) == tbDungeon.nDungeonId or tbDungeon.nOpenMapId == nil or tbDungeon.nOpenMapId == SubWorldIdx2ID(SubWorld))) then
 		tbDungeon.bHiden = bHiden;
-		Talk(1,"",bHiden == 1 and format("Ng≠¨i Æ∑ thi’t Æ∆t [%s] c„ trang th∏i c m lµm phi“n!",tbDungeon.strDungeon) or
+		Talk(1,"",bHiden == 1 and format("ƒ„“—…Ë÷√ [%s] C m lµm phi“n◊¥Ã¨!",tbDungeon.strDungeon) or
 			 format("HÒy b· [%s] trπng th∏i lµm phi“n!",tbDungeon.strDungeon));
 	end
 end

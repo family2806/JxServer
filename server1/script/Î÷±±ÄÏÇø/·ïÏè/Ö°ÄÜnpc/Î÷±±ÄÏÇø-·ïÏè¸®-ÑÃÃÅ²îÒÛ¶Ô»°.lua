@@ -32,7 +32,7 @@ function KillerCallBack(RewardMoney, RewardTaskID, CancelMoney, CancelTaskID, Ow
 	elseif (OwnCount + MyTaskCount > 0) then
 		Say("Ng­¬i ¨n gan hïm mËt gÊu råi h¶? Téi lµm n¸o ®éng nha m«n ng­¬i g¸nh næi kh«ng?", 4, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask", "Xem l¹i nhiÖm vô cña m×nh /ModifyTask", "Kh«ng lµm g× c¶ /DoNothing")
 	else
-		Say("Ng­¬i ¨n gan hïm mËt gÊu råi h¶? Téi lµm n¸o ®éng nha m«n ng­¬i g¸nh næi kh«ng?", 3, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask","Kh«ng lµm g× c¶ /DoNothing")
+		Say("Ng­¬i ¨n gan hïm mËt gÊu råi h¶? Téi lµm n¸o ®éng nha m«n ng­¬i g¸nh næi kh«ng??", 3, "ThiÕt lËp nhiÖm vô truy n· /CreateTask", "TiÕp nhËn nhiÖm vô truy n· /QueryTask","Kh«ng lµm g× c¶ /DoNothing")
 	end
 end;
 

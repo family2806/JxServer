@@ -36,7 +36,7 @@ local _GetAward = function(nItemIndex)
 	Msg2Player("LÊy n­íc hoµn thµnh")
 	PlayerFunLib:ConsumeEquiproomItem({tbProp={6,1,2736,1,0,0},},1)
 	local tbAward =  {{szName = "Thïng N­íc §Çy", tbProp = {6, 1, 2737, 1, 0, 0}, nBindState = -2, nExpiredTime = 20110405},}
-	tbAwardTemplet:GiveAwardByList(tbAward, "TiÕt trång c©y 2011, nhËn ®­îc Thïng N­íc §Çy")
+	tbAwardTemplet:GiveAwardByList(tbAward, "2011Ö²Ê÷½Ú, »ñµÃThïng N­íc §Çy")
 end
 
 function InMap(nMapId)

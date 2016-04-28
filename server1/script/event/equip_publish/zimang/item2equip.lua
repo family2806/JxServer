@@ -148,7 +148,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Kh«i",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Kh«i", tbProp = {6,1,2714}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng Kh«iÍ¼Æ×", tbProp = {6,1,2714}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 2,
@@ -158,7 +158,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Y",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Y", tbProp = {6,1,2715}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng YÍ¼Æ×", tbProp = {6,1,2715}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 3,
@@ -168,7 +168,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Hµi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Hµi", tbProp = {6,1,2716}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng HµiÍ¼Æ×", tbProp = {6,1,2716}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 2,
@@ -178,7 +178,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Yªu §¸i",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Yªu §¸i", tbProp = {6,1,2717}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng Yªu §¸iÍ¼Æ×", tbProp = {6,1,2717}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 1,
@@ -188,7 +188,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Hé UyÓn",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Hé UyÓn", tbProp = {6,1,2718}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng Hé UyÓnÍ¼Æ×", tbProp = {6,1,2718}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 2,
@@ -198,7 +198,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng H¹ng Liªn",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng H¹ng Liªn", tbProp = {6,1,2719}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng H¹ng LiªnÍ¼Æ×", tbProp = {6,1,2719}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 1,
@@ -208,7 +208,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng Béi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Béi", tbProp = {6,1,2720}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng BéiÍ¼Æ×", tbProp = {6,1,2720}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 2,
@@ -216,9 +216,9 @@ tbFormulaList =
 	},
 	[8] = 
 	{
-		szName = "§å Phæ Tö M·ng Th­îng Giíi ChØ",
+		szName = "Tö M·ng Th­îng Giíi ChØ",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng Th­îng Giíi ChØ", tbProp = {6,1,2721}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng Th­îng Giíi ChØ", tbProp = {6,1,2721}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 1,
@@ -228,7 +228,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng H¹ Giíi chØ",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng H¹ Giíi ChØ",tbProp = {6,1,2722}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng H¹ Giíi chØÍ¼Æ×",tbProp = {6,1,2722}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 1,
 		nHeight = 1,
@@ -238,7 +238,7 @@ tbFormulaList =
 	{
 		szName = "Tö M·ng KhÝ Giíi",
 		tbMaterial = tbCommonMaterial,
-		tbAdditive = {szName = "§å Phæ Tö M·ng KhÝ Giíi", tbProp = {6,1,2723}, nSuccessRate = 10, nMaxSuccessRate = 80},
+		tbAdditive = {szName = "Tö M·ng KhÝ GiíiÍ¼Æ×", tbProp = {6,1,2723}, nSuccessRate = 10, nMaxSuccessRate = 80},
 		
 		nWidth = 2,
 		nHeight = 4,

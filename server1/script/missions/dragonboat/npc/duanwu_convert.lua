@@ -7,12 +7,12 @@ tab_dw_material =
 	oar = 	{"M¸i chÌo",{6,1,432}},
 	helm = {"B¸nh l¸i", {6,1,433}},
 	drum = {"Trèng",{6,1,434}},
-	smallboat = { "ThuyÒn Rång nhá ", {6,1,422}, {{"head",1},{ "tail", 1}, {"body",1}, {"bone",1}, {"oar",4}, {"helm",1}, {"drum",1}}  , 100 , "T¹o ThuyÒn rång nhá cÇn 1 ®Çu rång, 1 ®u«i rång, 1th©n rång, 4 m¸i chÌo, 1 b¸nh l¸i vµ 1 trèng." , "dw_convert_sb" },
-	boat = {"ThuyÒn Rång truyÒn thèng", {6,1,423}, { {"smallboat",1}, {"oar",4}}   ,50 ,   "T¹o ThuyÒn rång truyÒn thèng cÇn 1 ThuyÒn rång nhá vµ 4 m¸i chÌo", "dw_convert_nb" },
-	horseboat = { "ThuyÒn Rång ®Çu ngùa", {6,1,424}, {{"smallboat",1}, {"boat",1}, {"head", 1}   }       , 40 ,"T¹o M· ®Çu thuyÒn rång cÇn 1 ThuyÒn rång nhá, 1 ThuyÒn rång truyÒn thèng vµ 1 ®Çu rång" , "dw_convert_hb"  },
-	birdboat = {"ThuyÒn Rång ®Çu Phông", {6,1,425}, {{"horseboat",1}, {"boat",1} , {"head",1} }, 30       ,  "T¹o ThuyÒn rång ®Çu phông cÇn 1 ThuyÒn rång ®Çu ngùa,  1 ThuyÒn rång truyÒn thèng vµ 1 ®Çu rång"  , "dw_convert_bb"     },
-	beastboat = {"ThuyÒn rång h×nh thó ", {6,1,426}, {{"birdboat",1}, {"horseboat",1}, {"head",1} }, 20    ,"T¹o ThuyÒn rång h×nh thó cÇn 1 ThuyÒn rång ®Çu phông, 1 ThuyÒn rång ®Çu ngùa vµ 1 ®Çu rång"  ,"dw_convert_stb"   },
-	hugeboat = {"ThuyÒn Rång to", {6,1,427}, { {"beastboat",1}, {"birdboat",1}, {"horseboat",1}  } ,20  ,"T¹o ThuyÒn rång lo¹i lín cÇn 1 ThuyÒn rång h×nh thó, 1 ThuyÒn rång ®Çu phông vµ 1M· ®Çu thuyÒn rång"  ,"dw_convert_hgb"            },
+	smallboat = { "ThuyÒn Rång nhá ", {6,1,422}, {{"head",1},{ "tail", 1}, {"body",1}, {"bone",1}, {"oar",4}, {"helm",1}, {"drum",1}}  , 100 , "×öĞ¡ÁúÖÛĞèÒª1c¸iLong §Çu, 1 §u«i Rång, 1 Th©n Rång, 4 M¸i chÌo, 1 c¸iB¸nh l¸i£¬1c¸iTrèng." , "dw_convert_sb" },
+	boat = {"ThuyÒn Rång truyÒn thèng", {6,1,423}, { {"smallboat",1}, {"oar",4}}   ,50 ,   "×öThuyÒn Rång truyÒn thèngĞèÒª1 Ğ¡ÁúÖÛºÍ4 M¸i chÌo", "dw_convert_nb" },
+	horseboat = { "ThuyÒn Rång ®Çu ngùa", {6,1,424}, {{"smallboat",1}, {"boat",1}, {"head", 1}   }       , 40 ,"×öThuyÒn Rång ®Çu ngùaĞèÒª1 ThuyÒn Rång nhá 1 ThuyÒn Rång truyÒn thèng ºÍ1 Long §Çu" , "dw_convert_hb"  },
+	birdboat = {"ThuyÒn Rång ®Çu Phông", {6,1,425}, {{"horseboat",1}, {"boat",1} , {"head",1} }, 30       ,  "×öThuyÒn Rång ®Çu PhôngĞèÒª1 ThuyÒn Rång ®Çu ngùa,  1 ThuyÒn Rång truyÒn thèng ºÍ1 Long §Çu"  , "dw_convert_bb"     },
+	beastboat = {"ThuyÒn rång h×nh thó ", {6,1,426}, {{"birdboat",1}, {"horseboat",1}, {"head",1} }, 20    ,"×öÊŞĞÎÁúÖÛcÇn 1 ThuyÒn Rång ®Çu Phông, 1 ThuyÒn Rång ®Çu ngùa ºÍ1 Long §Çu"  ,"dw_convert_stb"   },
+	hugeboat = {"ThuyÒn Rång to", {6,1,427}, { {"beastboat",1}, {"birdboat",1}, {"horseboat",1}  } ,20  ,"×öThuyÒn Rång to lĞèÒª1 ThuyÒn rång h×nh thó 1 ThuyÒn Rång ®Çu Phông ºÍ1 ThuyÒn Rång ®Çu ngùa"  ,"dw_convert_hgb"            },
 }
 
 function printinfo(something)

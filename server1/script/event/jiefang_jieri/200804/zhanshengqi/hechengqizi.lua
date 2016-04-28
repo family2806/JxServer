@@ -29,8 +29,8 @@ jiefang_0804_zhanshengqi.tbRecipe =
 function jiefang_0804_zhanshengqi:main()
 	local tbSay = 
 	{
-		"<dec><npc>Tõ 26-04-2008 ®Õn 24h00 18-05-2008, khi ®¸nh qu¸i sÏ thu thËp ®­îc c¸c m¶nh cê, cã thÓ mang c¸c m¶nh cê ®Õn l·o phu ®Ó hîp thµnh l¸ cê chiÕn th¾ng hoµn chØnh.",
-		format("Ta muèn hîp thµnh L¸ cê chiÕn th¾ng/#%s:Compose()", self.szName),
+		"<dec><npc>´Ó26-04-2008µ½24h00 18-05-2008, ´ò¹Ö½«ËÑ¼¯µ½ÆìµÄËéÆ¬£¬¿ÉÒÔ´øÆìµÄËéÆ¬µ½ÀÏ·òÕâºÏ³ÉÍêÕûµÄL¸ Cê ChiÕn Th¾ng.",
+		format("ÎÒÏëºÏ³ÉL¸ Cê ChiÕn Th¾ng/#%s:Compose()", self.szName),
 		"Ta sÏ ghĞ l¹i sau/no"
 	}
 	CreateTaskSay(tbSay);
@@ -42,5 +42,5 @@ function jiefang_0804_zhanshengqi:Compose()
 		return 0;
 	end
 	local tbRecipe = self.tbRecipe
-	jiefang_0804_ComposeClass:Compose("Hîp thµnh 1 l¸ cê chiÕn th¾ng", tbRecipe.tbItemList, tbRecipe.nMoney,  tbAwardTemplet.GiveAwardByList, tbAwardTemplet, tbRecipe.tbAwardItem, self.szName, 1, Say, "LÔ Quan: Chóc mõng ®¹i hiÖp ®· hîp thµnh l¸ cê chiÕn th¾ng hoµn chØnh!", 0)
+	jiefang_0804_ComposeClass:Compose("ºÏ³É1ÃæL¸ Cê ChiÕn Th¾ng", tbRecipe.tbItemList, tbRecipe.nMoney,  tbAwardTemplet.GiveAwardByList, tbAwardTemplet, tbRecipe.tbAwardItem, self.szName, 1, Say, "Àñ¹Ù: ×£ºØ´óÏÀÒÑ¾­ºÏ³ÉÍêÕûµÄL¸ Cê ChiÕn Th¾ng!", 0)
 end

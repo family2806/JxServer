@@ -11,9 +11,9 @@ function BaoxiangCompose(nItemIdx)
 		tbSay[1] = tbSay[1] .. format("Hi÷n tπi c∏c hπ c„ th” rÛt Æ≠Óc <color=green>%d<color> tinh l˘c tı h´n thπch", max(nCount-STONG_TAKEOUT_LIMIT, 0));
 	end
 	
-	tinsert(tbSay, format("Ch¯a %s/#PutIn('%s', %d)","æ´¡¶","æ´¡¶", nItemIdx));
+	tinsert(tbSay, format("Ch¯a %s/#PutIn('%s', %d)","Tinh l˘c","Tinh l˘c", nItemIdx));
 --	if (nBind == 0 and max(nCount-STONG_TAKEOUT_LIMIT, 0) > 0) then
---		tinsert(tbSay, format("Œ¸»°%s/#TakeOut('%s', %d)","æ´¡¶","æ´¡¶", nItemIdx));
+--		tinsert(tbSay, format("Œ¸»°%s/#TakeOut('%s', %d)","Tinh l˘c","Tinh l˘c", nItemIdx));
 --	end
 	
 	tinsert(tbSay, "ß” ta suy ngh‹ k¸ lπi xem/OnExit");
@@ -24,20 +24,20 @@ end
 function PutIn(szItem, nItemIdx)
 	local tbItemList = 
 	{
-		["æ´¡¶"] =  
+		["Tinh l˘c"] =  
 		{
 			tbFormula = 
 			{
 				
-				szComposeTitle = format("HÂn thπch \t ch¯a %s", "æ´¡¶"),
-				szFailMsg = "ƒ„µƒæ´¡¶≤ª◊„ ÆÒ!",
+				szComposeTitle = format("HÂn thπch \t ch¯a %s", "Tinh l˘c"),
+				szFailMsg = "ƒ„µƒTinh l˘c≤ª◊„ ÆÒ!",
 				nWidth = 1,
 				nHeight = 1,
 				nFreeItemCellLimit = 0,
 				tbMaterial = 
 				{
 					{
-						szName = "æ´¡¶", 
+						szName = "Tinh l˘c", 
 						pGetCount = function () 
 										return GetEnergy() 
 									end, 
@@ -75,19 +75,19 @@ end
 function TakeOut(szItem, nItemIdx)
 	local tbItemList = 
 	{
-		["æ´¡¶"] =  
+		["Tinh l˘c"] =  
 		{
 			tbFormula = 
 			{
 				
-				szComposeTitle = format("HÂn thπch\tRÛt %s", "æ´¡¶"),
+				szComposeTitle = format("HÂn thπch\tRÛt %s", "Tinh l˘c"),
 				nWidth = 1,
 				nHeight = 1,
 				nFreeItemCellLimit = 0,
 				tbMaterial = 
 				{
 					{
-						szName = "ø…“‘»°≥ˆµƒæ´¡¶ ˝¡ø", 
+						szName = "ø…“‘»°≥ˆµƒTinh l˘c ˝¡ø", 
 						pGetCount = function (self) 
 										if (self.nItemIndex ~= nil and type(self.nItemIndex) == "number" and self.nItemIndex > 0) then
 											local nBind = GetItemBindState(self.nItemIndex);
@@ -100,7 +100,7 @@ function TakeOut(szItem, nItemIdx)
 						nCount = 1,
 						pConsume = function (self, nConsumeCount)
 										if ((GetEnergy()+nConsumeCount)>2000000000) then
-											Talk(1, "", "æ´¡¶÷µ“—≥¨π˝…œœﬁ£¨≤ªƒ‹‘Ÿ»°¡À");
+											Talk(1, "", "Tinh l˘c÷µ“—≥¨π˝…œœﬁ£¨≤ªƒ‹‘Ÿ»°¡À");
 											return nil;
 										end
 										if (self.nItemIndex ~= nil and type(self.nItemIndex) == "number" and self.nItemIndex > 0 and AddEnergy(nConsumeCount) == 1) then

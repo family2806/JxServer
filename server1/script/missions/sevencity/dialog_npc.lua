@@ -170,7 +170,7 @@ function process_award(param, result)
 		player:Say("Ng­¬i ®· nhËn qua phÇn th­ëng nµy råi.")
 		return
 	end
-	local caption = format("Ng­¬i cßn cã<color=red>%d<color> C«ng Thµnh LÔ Bao, <color=red>%d<color> VÖ Trô LÔ Bao vµ <color=red>%d<color> phÇn th­ëng kinh nghiÖm ch­a nhËn.",
+	local caption = format("Äã»¹ÓĞ<color=red>%d<color>¹¥³ÇÀñ°ü, <color=red>%d<color>VÖ Trô LÔ BaoºÍ<color=red>%d<color>Î´Áì¾­Ñé½±Àø .",
 						info.BoxCount,
 						info.GuardAwardCount,
 						info.ExpAward)
@@ -179,7 +179,7 @@ function process_award(param, result)
 		tinsert(options, format("Ta muèn nhËn C«ng Thµnh LÔ Bao/#action_awardbox(%d)", info.BoxCount))
 	end
 	if (info.GuardAwardCount > 0) then
-		tinsert(options, format("Ta muèn nhËn VÖ Trô LÔ Bao/#action_guardaward(%d)", info.GuardAwardCount))
+		tinsert(options, format("ÎÒÏë»ñµÃVÖ Trô LÔ Bao/#action_guardaward(%d)", info.GuardAwardCount))
 	end
 	if (info.ExpAward > 0) then
 		tinsert(options, format("Ta muèn nhËn phÇn th­ëng kinh nghiÖm/#action_expaward(%d)", info.ExpAward))

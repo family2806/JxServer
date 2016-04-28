@@ -274,7 +274,7 @@ function rs_getitem_msg(szName)
 	if (nGoldItemIdx < 0  or nGoldItemIdx > getn(TB_ROLENAME_GOLDITEM_INFO[szName])) then
 		return
 	end;
-	szMsg = szMsg.."v…n cﬂn <color=yellow>"..(getn(TB_ROLENAME_GOLDITEM_INFO[szName]) - nGoldItemIdx).."<color> bÈ ch≠a nhÀn<enter>";
+	szMsg = szMsg.."v…n cﬂn <color=yellow>"..(getn(TB_ROLENAME_GOLDITEM_INFO[szName]) - nGoldItemIdx).."<color> bÈ!Œ¥¡Ï<enter>";
 	for i = (nGoldItemIdx + 1), getn(TB_ROLENAME_GOLDITEM_INFO[szName]) do
 		szMsg = szMsg.."<color=yellow>"..TB_ROLENAME_GOLDITEM_INFO[szName][i][1].."<color>,";
 	end;

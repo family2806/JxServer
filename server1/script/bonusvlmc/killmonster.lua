@@ -107,7 +107,7 @@ function VLMC:CancelTask()
 	SetTask(self.TSK_TASK_ID, 0)
 	SetTask(self.TSK_KILL_COUNT, 0)
 	
-	Msg2Player("Hoµn thµnh nhiÖm vô")
+	Msg2Player("Hñy nhiÖm vô thµnh c«ng")
 	
 end
 
@@ -229,7 +229,7 @@ end
 function VLMC:CompleteTask()
 	SetTask(self.TSK_TASK_ID, 0)
 	SetTask(self.TSK_KILL_COUNT, 0)
-	Msg2Player("Hoµn thµnh nhiÖm vô")
+	Msg2Player("Hñy nhiÖm vô thµnh c«ng")
 end
 
 VLMC:_init()

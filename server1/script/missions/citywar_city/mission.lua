@@ -111,7 +111,7 @@ end;
 
 function RunMission()
 	SetMissionV(MS_STATE, 2)
-	str = format("%s c«ng thµnh chiÕn chİnh thøc b¾t ®Çu! Bªn thñ thµnh lµ %s, bªn khiªu chiÕn lµ %s. Ai sÏ giµnh th¾ng lîi chung cuéc ®©y?", GetGameCity(), GetGamerName(1), GetGamerName(2));
+	str = format("%s C«ng Thµnh ChiÕnÕıÊ½¿ªÊ¼!ÊØ³Ç·½ÊÇ£º%s, ÌôÕ½·½ÊÇ£º%s. Ë­»áÈ¡µÃ×îÖÕÊ¤Àû?", GetGameCity(), GetGamerName(1), GetGamerName(2));
 	AddGlobalNews(str);
 end;
 

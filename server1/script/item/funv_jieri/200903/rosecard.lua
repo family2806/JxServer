@@ -29,7 +29,7 @@ local tbBless =
 	"Lu«n m·i ®Ñp nh­ ®ång cá víi ngµn hoa khoe s¾c",
 	"Lu«n ®­îc sèng trong t×nh c¶m cña b¹n bÌ vµ nh÷ng ng­êi th©n yªu",
 	"V÷ng tin vµ thµnh c«ng trong sù nghiÖp",
-	"M·i lu«n ®Ñp dÞu dµng vµ ®Çy quyÕn rò",
+	"Lu«n m·i xinh ®Ñp, dÞu dµng nh­ c« TÊmºÍÓÐ÷ÈÁ¦",
 	"Lu«n ®øng lªn mçi khi vÊp ng·, ®Çy ®ñ dòng khÝ v­ît qua gian khã",
 	"Mét ngµy 8-3 thËt vui vµ nhiÒu ý nghÜa",
 	"Sím t×m ®­îc chç dùa ®Ó lu«n v÷ng b­íc trong ®­êng ®êi",

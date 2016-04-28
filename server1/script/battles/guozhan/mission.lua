@@ -161,7 +161,7 @@ function InitMission()
 	CreateChannel("Phe Kim"..szGAME_GAMELEVEL[level].."Quèc chiÕn tèng kim", 10)
 
 	BT_SetMissionName("Ph­¬ng thøc B¶o vÖ Nguyªn so¸i")
-	BT_SetMissionDesc("Bèi c¶nh: N¨m 1160 C«ng nguyªn, Kim chñ Hoµn Nhan L­îng tËp hîp qu©n lùc, quyÕt ®Şnh Nam h¹, tiªu diÖt Tèng triÒu. T­¬ng D­¬ng lµ trë ng¹i ®Çu tiªn cña qu©n Kim, T­¬ng D­¬ng chuÈn bŞ ngËp ch×m trong khãi löa binh ®ao. <enter><enter><color=yellow>B¶o vÖ Nguyªn so¸i: sau khi khai chiÕn 30 phót, nguyªn so¸i 2 bªn sÏ lÇn luît xuÊt hiÖn.<enter> Môc tiªu: b¶o vÖ Nguyªn So¸i phe m×nh, tiªu diÖt Nguyªn So¸i phe ®Şch")
+	BT_SetMissionDesc("±³¾°:¹«Ôª1160Äê, ½ğÖ÷ÍêÑÕÁÁ¼¯ºÏ±øÁ¦, ¾ö¶¨ÄÏÏÂÏûÃğËÎ³¯. ÏåÑôÊÇ½ğ¾üµÄµÚÒ»ÕÏ°­£¬ÏåÑô×¼±¸ÔÚ±ùµ¶ÑÌ»ğÖĞ³ÁÃ»¡£ <enter><enter><color=yellow>±£ÎÀÔªË§: ¿ªÕ½30phótºó£¬Ë«·½ÔªË§ÒÀ´Î³öÏÖ.<enter> Ä¿±ê: ±£ÎÀ±¾·½ÔªË§, ÏûÃğµĞ·½ÔªË§")
 
 end
 

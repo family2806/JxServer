@@ -33,29 +33,29 @@ function chuangong_main()
 	end
 	
 	if (gb_GetModule("TruyÒn c«ng ") ~= 1) then
-		Say("ThËt xin lçi , truyÒn c«ng chøc n¨ng t¹m thêi t¾t , lÇn n÷a më ra thêi gian liÒn chó ı quan ph­¬ng th«ng b¸o !", 0)
+		Say("¶Ô²»Æğ£¬TruyÒn c«ng ¹¦ÄÜÔİÊ±¹Ø±Õ£¬ÔÙ´Î¿ª·ÅÊ±¼ä¾Í¹Ø×¢¹Ù·½¹«¸æ!", 0)
 		return 
 	end
 	if (GetTask(TV_LAST_APPLY_TIME) > 0) then
-		Say("§éc c« kiÕm "..GetName().." ®· l©u kh«ng gÆp , h«m nay t×m ta cã chuyÖn g× ? ",3, "Ta muèn hái th¨m liªn quan tíi truyÒn c«ng chuyÖn cña t×nh . /chuangong_info", "Ta muèn hñy bá lÇn tr­íc ®İch truyÒn c«ng th©n thØnh !/cg_undo", "Ta ch¼ng qua lµ tíi b¸i pháng mét c¸i minh chñ ng­¬i mµ th«i . /OnCancel")
+		Say("§éc c« kiÕm "..GetName().." ®· l©u kh«ng gÆp , h«m nay t×m ta cã chuyÖn g× ? ",3, "ÎÒÏë´òÌı¹ØÓÚTruyÒn c«ng µÄÊÂÇé¡£/chuangong_info", "ÎÒÏëÈ¡ÏûÉÏ´ÎµÄTruyÒn c«ng ÉêÇë!/cg_undo", "Ta ch¼ng qua lµ tíi b¸i pháng mét c¸i minh chñ ng­¬i mµ th«i . /OnCancel")
 	else
-		Say("§éc c« kiÕm "..GetName().." ®· l©u kh«ng gÆp , h«m nay t×m ta cã chuyÖn g× ? ",2, "Ta muèn hái th¨m liªn quan tíi truyÒn c«ng chuyÖn cña t×nh . /chuangong_info", "Ta ch¼ng qua lµ tíi b¸i pháng mét c¸i minh chñ ng­¬i mµ th«i . /OnCancel")
+		Say("§éc c« kiÕm "..GetName().." ®· l©u kh«ng gÆp , h«m nay t×m ta cã chuyÖn g× ? ",2, "ÎÒÏë´òÌı¹ØÓÚTruyÒn c«ng µÄÊÂÇé¡£/chuangong_info", "Ta ch¼ng qua lµ tíi b¸i pháng mét c¸i minh chñ ng­¬i mµ th«i . /OnCancel")
 	end
 end
 
 function chuangong_info()
 	if (gb_GetModule("TruyÒn c«ng ") ~= 1) then
-		Say("ThËt xin lçi , truyÒn c«ng chøc n¨ng t¹m thêi t¾t , lÇn n÷a më ra thêi gian liÒn chó ı quan ph­¬ng th«ng b¸o !", 0)
+		Say("¶Ô²»Æğ£¬TruyÒn c«ng ¹¦ÄÜÔİÊ±¹Ø±Õ£¬ÔÙ´Î¿ª·ÅÊ±¼ä¾Í¹Ø×¢¹Ù·½¹«¸æ!", 0)
 		return 
 	end
 	local nowday = tonumber(date("%y%m%d"))
 	local applytime = GetTask(TV_LAST_APPLY_TIME)
 	if (applytime == 0) then
-		Describe(strimg.." phµm lµ du lŞch giang hå ®· l©u , cÊp bËc tõ 100 cÊp ®Õn 160 cÊp ng­êi cña , ta còng cã thÓ gióp h¾n ®em mét th©n c«ng lùc chuyÓn thµnh mét viªn ' nguyªn thÇn ®an ' , mét 10 cÊp trë xuèng kh«ng cã vµo m«n ph¸i l¹i kh«ng b¸i s­ ng­êi cña chØ cÇn ¨n råi viªn nµy ' nguyªn thÇn ®an ' liÒn cã thÓ ®¹t ®­îc truyÒn c«ng ng­êi mét th©n c«ng lùc , dÜ nhiªn mét truyÖn hoµn c«ng ng­êi cña vâ c«ng còng kh«ng vÒ phÇn toµn phÕ , bÊt qu¸ còng liÒn cßn d­ l¹i 80 cÊp ®İch tµi nghÖ . h¬n n÷a n¨ng lùc ta cã h¹n , cÊp bËc cµng cao ng­êi cña cµng khã ®em vâ c«ng chuyÓn hãa thµnh ' nguyªn thÇn ®an ' , tû nh­ mét 100~120 ng­êi cña vËt truyÒn c«ng lóc kinh nghiÖm sÏ hao tæn 5% , 121~150 cÊp sÏ hao tæn 10% , mµ 150 cÊp trë lªn sÏ hao tæn 20% , <color=yellow> hái th¨m nh÷ng thø nµy ch¼ng lÏ huynh ®Ö ng­¬i nghÜ truyÒn c«ng ? <color>", 2, "§óng vËy , ta ®· du lŞch giang hå ®· l©u , gÇn nhÊt muèn tho¸i Èn . /chuangong_do", "DÜ nhiªn kh«ng ph¶i , ch¼ng qua lµ tíi hái th¨m mét chót mµ th«i . /OnCancel");
+		Describe(strimg.."·²ÊÇÓÎÀú½­ºşÒÑ¾Ã£¬µÈ¼¶´Ó100¼¶µ½160¼¶µÄÈË£¬ÎÒ¶¼¿ÉÒÔ°ïËû°ÑÒ»ÉíµÄ¹¦Á¦×ª³ÉÒ»¿Å'ÔªÉñµ¤'£¬Ò»¸ö10¼¶ÒÔÏÂÃ»ÈëÃÅÅÉÓÖÃ»°İ¹ıÊ¦µÄÈËÖ»Òª³ÔÁËÕâ¿Å'ÔªÉñµ¤'±ãÄÜ»ñµÃTruyÒn c«ng ÈËµÄÒ»Éí¹¦Á¦£¬µ±È»Ò»¸ö´«Íê¹¦µÄÈËÎä¹¦Ò²²»ÖÁÓÚÈ«·Ï£¬²»¹ıÒ²¾ÍÊ£ÏÂ80¼¶µÄË®Æ½ÁË¡£¶øÇÒÎÒÄÜÁ¦ÓĞÏŞ£¬µÈ¼¶Ô½¸ßµÄÈËÔ½ÄÑ½«ÆäÎä¹¦×ª»¯Îª'ÔªÉñµ¤'£¬±ÈÈçÒ»¸ö100~120µÄÈËÎïTruyÒn c«ng Ê±¾­Ñé»áËğºÄ5%£¬121~150¼¶»áËğºÄ10%£¬¶ø150¼¶ÒÔÉÏ»áËğºÄ20%£¬<color=yellow>´òÌıÕâĞ©ÄÑµÀĞÖµÜÄãÏëTruyÒn c«ng £¿<color>", 2, "§óng vËy , ta ®· du lŞch giang hå ®· l©u , gÇn nhÊt muèn tho¸i Èn . /chuangong_do", "DÜ nhiªn kh«ng ph¶i , ch¼ng qua lµ tíi hái th¨m mét chót mµ th«i . /OnCancel");
 	elseif (nowday >= applytime ) then
-		Describe(strimg.." truyÒn c«ng ®İch chuÈn bŞ ®· tèt l¾m ."..itemstr..".\n ng­¬i nhÊt ®Şnh ph¶i truyÒn c«ng sao ? c¸i nµy mét truyÖn coi nh­ kh«ng thÓ quay ®Çu l¹i a <enter>6 th¸ng 20 ngµy sau ®em t¹m thêi t¾t truyÒn c«ng th©n thØnh , 6 th¸ng 29 ngµy 2400 sau ®em t¹m thêi t¾t truyÒn c«ng chøc n¨ng . ", 3, "§óng vËy , lßng ta ı ®· quyÕt . /chuangong_dosure","Kh«ng , ta muèn hñy bá truyÒn c«ng /cg_undo", "Chê ta suy nghÜ thªm mét ®o¹n ngµy ®i . /OnCancel");
+		Describe(strimg.."TruyÒn c«ng µÄ×¼±¸ÒÑ¾­ºÃÁË."..itemstr..".\n ÄãÈ·¶¨ÒªTruyÒn c«ng Âğ£¿ÕâÒ»´«¿É¾Í²»ÄÜ»ØÍ·ÁË°¡£¡<enter>6 th¸ng 20 ngµy ºó½«ÔİÊ±¹Ø±ÕTruyÒn c«ng ÉêÇë£¬6 th¸ng 29 ngµy 24£º00ºó½«ÔİÊ±¹Ø±ÕTruyÒn c«ng ¹¦ÄÜ¡£", 3, "§óng vËy , lßng ta ı ®· quyÕt . /chuangong_dosure","²»£¬ÎÒÏëÈ¡ÏûTruyÒn c«ng £¡/cg_undo", "Chê ta suy nghÜ thªm mét ®o¹n ngµy ®i . /OnCancel");
 	else
-		Describe(strimg.." ta ®ang chuÈn bŞ truyÒn c«ng cÇn thiÕt ®İch tµi liÖu , ta ph¶i "..(num2datestr(applytime)).." sau míi cã thÓ chuÈn bŞ xong ,", 2, "ThËt lµ phiÒn to¸i minh chñ liÔu , v·n bèi ë chç nµy c¸m ¬n /OnCancel", "Kh«ng , ta muèn hñy bá truyÒn c«ng /cg_undo");
+		Describe(strimg.."ÎÒÕıÔÚ×¼±¸TruyÒn c«ng ËùĞèÒªµÄ²ÄÁÏ£¬ÎÒÒªµ½ "..(num2datestr(applytime)).." sau míi cã thÓ chuÈn bŞ xong ,", 2, "ThËt lµ phiÒn to¸i minh chñ liÔu , v·n bèi ë chç nµy c¸m ¬n /OnCancel", "²»£¬ÎÒÏëÈ¡ÏûTruyÒn c«ng £¡/cg_undo");
 	end
 end
 
@@ -71,9 +71,9 @@ end
 function cg_undo()
 	local nowday = GetTask(TV_LAST_APPLY_TIME)
 	if (nowday > 0) then
-		Describe(strimg.." ta ®Õn "..num2datestr(nowday).." liÒn cã thÓ chuÈn bŞ xong gióp ng­¬i truyÒn c«ng liÔu , ng­¬i thËt kh«ng muèn truyÖn sao ? <enter>6 th¸ng 20 ngµy sau ®em t¹m thêi t¾t truyÒn c«ng th©n thØnh , 6 th¸ng 29 ngµy 2400 sau ®em t¹m thêi t¾t truyÒn c«ng chøc n¨ng . ",2,"§óng vËy , ta kh«ng muèn truyÒn c«ng liÔu /cg_undo_sure", "Kh«ng , ta cßn lµ muèn truyÖn , míi võa råi nhÊt thêi khÈn tr­¬ng nãi sai råi mµ th«i . /OnCancel")
+		Describe(strimg.." ta ®Õn "..num2datestr(nowday).."¾Í¿ÉÒÔ×¼±¸ºÃ°ïÄãTruyÒn c«ng ÁË£¬ÄãÕæµÄ²»Ïë´«Âğ£¿<enter>6 th¸ng 20 ngµy ºó½«ÔİÊ±¹Ø±ÕTruyÒn c«ng ÉêÇë£¬6 th¸ng 29 ngµy 24£º00ºó½«ÔİÊ±¹Ø±ÕTruyÒn c«ng ¹¦ÄÜ¡£",2,"ÊÇµÄ£¬ÎÒ²»ÏëTruyÒn c«ng ÁË£¡/cg_undo_sure", "Kh«ng , ta cßn lµ muèn truyÖn , míi võa råi nhÊt thêi khÈn tr­¬ng nãi sai råi mµ th«i . /OnCancel")
 	else
-		Describe(strimg.." ng­¬i kh«ng cã ®· nãi víi ta muèn truyÒn c«ng a . ch­a nãi qua nh­ thÕ nµo hñy bá ®©y ? ",1,"KÕt thóc ®èi tho¹i /OnCancel")
+		Describe(strimg.."ÄãÃ»ÓĞ¸úÎÒËµ¹ıÒªTruyÒn c«ng °¡¡£Ã»Ëµ¹ıÓÖÔõÃ´È¡ÏûÄØ£¿",1,"KÕt thóc ®èi tho¹i /OnCancel")
 	end
 end
 
@@ -86,59 +86,59 @@ function chuangong_do()
 	local nEndLevel = GetLevel()
 	local nRestExp = GetExp()
 	if (nEndLevel < 100) then
-		Describe(strimg.." a a , vŞ tiÓu huynh ®Ö nµy , lÊy ng­¬i b©y giê ®İch c«ng lùc tùa hå cßn ch­a ®ñ ®Ó lÊy truyÒn cho ng­êi kh¸c ®©u . truyÒn c«ng cÇn <color=yellow>100 cÊp <color> trë lªn , ng­¬i hay lµ ®i nhiÒu ma luyÖn ma luyÖn ®i . ",1,"H¶o ta biÕt /OnCancel")
+		Describe(strimg.."ºÇºÇ£¬ÕâÎ»Ğ¡ĞÖµÜ£¬ÒÔÄãÏÖÔÚµÄ¹¦Á¦ËÆºõ»¹²»×ãÒÔ´«¸ø±ğÈËÄØ¡£TruyÒn c«ng ĞèÒª<color=yellow>100¼¶<color>ÒÔÉÏ£¬Äã»¹ÊÇÈ¥¶àÄ¥Á·Ä¥Á·°É¡£",1,"H¶o ta biÕt /OnCancel")
 		return
 	end
 	if (nEndLevel >= 160) then
-		Describe(strimg.." a a , vŞ huynh ®Ö nµy , v­ît qua 160 cÊp trë lªn lµ kh«ng thÓ truyÒn c«ng ®İch . ",1,"H¶o ta biÕt /OnCancel")
+		Describe(strimg.."ºÇºÇ£¬ÕâÎ»ĞÖµÜ£¬³¬¹ı160¼¶ÒÔÉÏÊÇ²»ÄÜTruyÒn c«ng µÄ¡£",1,"H¶o ta biÕt /OnCancel")
 		return
 	end
 	
 	local nLevelFullExp = tonumber(GetTabFileData(FILE_LEVEL, nEndLevel+ 1, 2))
 	local fPerc = format("%.2f", (nEndLevel)+(nRestExp/nLevelFullExp))
 	
-	local str = strimg.." lÊy ng­¬i b©y giê ®İch vâ c«ng tu vi , nÕu nh­ truyÒn c«ng lêi cña ®em chuyÓn hãa thµnh mét <color=yellow> cÊp bËc :"..fPerc.."<color> ®İch nguyªn thÇn ®an "
+	local str = strimg.."ÒÔÄãÏÖÔÚµÄÎä¹¦ĞŞÎª,Èç¹ûTruyÒn c«ng µÄ»°½«×ª»¯ÎªÒ»¸ö<color=yellow>µÈ¼¶:"..fPerc.."<color> ®İch nguyªn thÇn ®an "
 	str = str..client_main(nEndLevel, nRestExp)
-	Describe(str..", bÊt qu¸ ta cÇn chuÈn bŞ mét tuÇn lÔ , ng­¬i ë ®©y ®o¹n trong lóc tïy thêi cã thÓ tíi hñy bá truyÒn c«ng , dï sao mét ng­êi luyÖn vâ ®Õn c¸i tr×nh ®é nµy kh«ng dÔ dµng , mêi/xin ng­¬i ë n¬i nµy ®o¹n thêi gian suy nghÜ thËt kü c©n nh¾c ®i ",2,"Minh chñ , ta ®· quyÕt t©m quy Èn , ngµi cã thÓ b¾t ®Çu chuÈn bŞ /chuangong_doprepair1","Nh­ vËy a , vËy ta suy nghÜ mét chót n÷a trë l¹i ®i . /OnCancel")
+	Describe(str..",²»¹ıÎÒĞèÒª×¼±¸Ò»¸öĞÇÆÚ,ÄãÔÚÕâ¶ÎÆÚ¼äËæÊ±¿ÉÒÔÀ´È¡ÏûTruyÒn c«ng £¬±Ï¾¹Ò»¸öÈËÁ·Îäµ½Õâ¸ö³Ì¶È²»ÈİÒ×£¬ÇëÄãÔÚÕâ¶ÎÊ±¼äºÃºÃ¿¼ÂÇ¿¼ÂÇ°É",2,"Minh chñ , ta ®· quyÕt t©m quy Èn , ngµi cã thÓ b¾t ®Çu chuÈn bŞ /chuangong_doprepair1","Nh­ vËy a , vËy ta suy nghÜ mét chót n÷a trë l¹i ®i . /OnCancel")
 end
 
 function chuangong_doprepair1()
 	local nowday = tonumber(date("%y%m%d"))
 	local nextday = cg_getnextdate(nowday, 7)
 	SetTask(TV_LAST_APPLY_TIME , nextday);
-	WriteLog("[ truyÒn c«ng ]"..nowday.." Acc:"..GetAccount().."Role:"..GetName().." nãi lªn truyÒn c«ng th©n thØnh ")
-	Describe(strimg.." h¶o  vËy ta lËp tøc chuÈn bŞ ng­¬i truyÒn c«ng sù nghi , mét tuÇn lÔ sau <color=yellow>"..num2datestr(nextday).."<color> ng­¬i trë l¹i , ta cho ng­¬i chİnh thøc truyÒn c«ng  dÜ nhiªn ng­¬i còng tïy thêi cã thÓ tíi ta chç nµy hñy bá truyÒn c«ng . ", 1,"C¸m ¬n minh chñ , vËy ta mét tuÇn lÔ sau trë l¹i /OnCancel")
-	Msg2Player("Ng­¬i ®· thµnh c«ng th©n thØnh truyÒn c«ng , mét tuÇn lÔ sau trë l¹i t×m ®éc c« kiÕm cã thÓ chİnh thøc tiÕn hµnh truyÒn c«ng , còng ®¹t ®­îc nguyªn thÇn ®an  còng cã thÓ tïy thêi t×m ®éc c« kiÕm hñy bá truyÒn c«ng th©n thØnh ")
+	WriteLog("[TruyÒn c«ng ]£º"..nowday.." Acc:"..GetAccount().."Role:"..GetName().." Ìá³öTruyÒn c«ng ÉêÇë£¡")
+	Describe(strimg.."ºÃ£¡ÄÇÎÒ¼´¿Ì×¼±¸ÄãµÄTruyÒn c«ng ÊÂÒË£¬Ò»¸öĞÇÆÚºó<color=yellow>"..num2datestr(nextday).."<color>ÄãÔÙÀ´£¬ÎÒ¸øÄãÕıÊ½TruyÒn c«ng £¡µ±È»ÄãÒ²ËæÊ±¿ÉÒÔÀ´ÎÒÕâÀïÈ¡ÏûTruyÒn c«ng ¡£", 1,"C¸m ¬n minh chñ , vËy ta mét tuÇn lÔ sau trë l¹i /OnCancel")
+	Msg2Player("ÄãÒÑ³É¹¦ÉêÇëTruyÒn c«ng £¬Ò»ÖÜºóÔÙÀ´ÕÒ¶À¹Â½£¿ÉÒÔÕıÊ½½øĞĞTruyÒn c«ng £¬²¢»ñµÃÔªÉñµ¤£¡Ò²¿ÉËæÊ±ÕÒ¶À¹Â½£È¡ÏûTruyÒn c«ng ÉêÇë£¡")
 end
 
 function chuangong_dosure()
 	if (GetLevel() < 100 or GetLevel() >= 160) then
-		Say("CÊp bËc cña ng­¬i İt h¬n 100 cÊp hoÆc v­ît qua 160 cÊp kh«ng thÓ truyÒn c«ng ",0)
+		Say("ÄãµÄµÈ¼¶Ğ¡ÓÚ100¼¶»ò³¬¹ı160¼¶²»ÄÜTruyÒn c«ng £¡",0)
 		return
 	end
 	if (CalcItemCount(2,0,-1,-1,-1) > 0) then
-		Say("ThËt xin lçi , truyÒn c«ng lóc , trªn ng­êi kh«ng thÓ gi¶ bé bÊt kú ®İch trang bŞ , xin/mêi cëi xuèng trang bŞ n÷a truyÒn c«ng ®i ",0)
+		Say("¶Ô²»Æğ£¬TruyÒn c«ng Ê±£¬ÉíÉÏ²»ÄÜ×°ÈÎºÎµÄ×°±¸£¬ÇëÍÑÏÂ×°±¸ÔÙTruyÒn c«ng °É£¡",0)
 		return
 	end
-	Describe(strimg.." truyÒn c«ng cÇn tr¶ 2 tÊm ng©n phiÕu , ng­¬i cã hay kh«ng ®· bá vµo tói ®eo l­ng ? lóc nµy thËt ph¶i h¬n truyÒn c«ng liÔu , ng­¬i nhÊt ®Şnh ph¶i truyÒn c«ng sao ? ",2, "2 tÊm ng©n phiÕu ®· chuÈn bŞ xong , x¸c ®Şnh /chuangong_doit1", "Ta suy nghÜ thªm mét chót /OnCancel")
+	Describe(strimg.."TruyÒn c«ng ĞèÒªÖ§¸¶2ÕÅÒøÆ±£¬ÄãÊÇ·ñÒÑ¾­·ÅÈë±³°ü£¿Õâ»ØÕæµÃÒªTruyÒn c«ng ÁË£¬ÄãÈ·¶¨ÒªTruyÒn c«ng Âğ£¿",2, "2 tÊm ng©n phiÕu ®· chuÈn bŞ xong , x¸c ®Şnh /chuangong_doit1", "Ta suy nghÜ thªm mét chót /OnCancel")
 end
 
 function chuangong_doit1()
 	if (GetLevel() < 100 or GetLevel() >= 160) then
-		Say("CÊp bËc cña ng­¬i İt h¬n 100 cÊp hoÆc v­ît qua 160 cÊp kh«ng thÓ truyÒn c«ng ",0)
+		Say("ÄãµÄµÈ¼¶Ğ¡ÓÚ100¼¶»ò³¬¹ı160¼¶²»ÄÜTruyÒn c«ng £¡",0)
 		return
 	end
-	Describe(strimg.." n÷a x¸c ®Şnh mét lÇn  chó ı  truyÒn c«ng sau khi hoµn thµnh , ng­¬i vai trß sÏ tù ®éng ®o¹n tuyÕn . lÇn n÷a ®¨ng vµo sau , ë l­ng trong tói x¸ch tøc sÏ tån t¹i nguyªn thÇn ®an mét qu¶ . ",2, "X¸c ®Şnh /chuangong_doit", "Ta suy nghÜ thªm mét chót /OnCancel")
+	Describe(strimg.."ÔÙÈ·¶¨Ò»´Î£¡×¢Òâ£ºTruyÒn c«ng Íê³Éºó£¬ÄãµÄ½ÇÉ«½«»á×Ô¶¯¶ÏÏß¡£ÖØĞÂµÇÈëºó£¬ÔÚ±³°üÖĞ¼´»á´æÔÚÔªÉñµ¤Ò»Ã¶¡£",2, "X¸c ®Şnh /chuangong_doit", "Ta suy nghÜ thªm mét chót /OnCancel")
 end
 
 function chuangong_doit()
 	if (GetLevel() < 100 or GetLevel() >= 160) then
-		Say("CÊp bËc cña ng­¬i İt h¬n 100 cÊp hoÆc v­ît qua 160 cÊp kh«ng thÓ truyÒn c«ng ",0)
+		Say("ÄãµÄµÈ¼¶Ğ¡ÓÚ100¼¶»ò³¬¹ı160¼¶²»ÄÜTruyÒn c«ng £¡",0)
 		return
 	end
-	local result = qz_use_silver(2, " truyÒn c«ng ")
+	local result = qz_use_silver(2, "£ÛTruyÒn c«ng £İ")
 	if ( result == 0) then
-		Describe(strimg.." l­ng cña ng­¬i trong tói x¸ch kh«ng cã 2 tÊm ng©n phiÕu , ta kh«ng thÓ cho ng­¬i truyÒn c«ng ", 1, "Oh , thËt xin lçi , ta trë vÒ chuÈn bŞ /OnCancel")	
+		Describe(strimg.."ÄãµÄ±³°üÖĞÃ»ÓĞ2ÕÅÒøÆ±£¬ÎÒ²»ÄÜ¸øÄãTruyÒn c«ng £¡", 1, "Oh , thËt xin lçi , ta trë vÒ chuÈn bŞ /OnCancel")	
 		return
 	elseif (result ~= 1) then
 		return 
@@ -147,7 +147,7 @@ function chuangong_doit()
 	
 	local nowday = tonumber(date("%y%m%d"))
 	
-	local logstr = "[ truyÒn c«ng ]"..nowday.." Acc:"..GetAccount().."Role:"..GetName().." truyÒn c«ng thµnh c«ng Level:"..GetLevel().." Exp:"..GetExp();
+	local logstr = "[TruyÒn c«ng ]£º"..nowday.." Acc:"..GetAccount().."Role:"..GetName().." TruyÒn c«ng ³É¹¦£¡Level:"..GetLevel().." Exp:"..GetExp();
 	
 	
 	DoClearSkillCore()

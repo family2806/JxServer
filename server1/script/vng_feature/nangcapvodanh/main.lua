@@ -55,9 +55,9 @@ function tbVnRingUpgrade:SelectOption1(strRingType, nLevel)
 		{"Hñy bá"},
 	}
 	if nLevel > 4 then
-		CreateNewSayEx(format("N©ng cÊp nhÉn <color=yellow>%s<color> lªn  cÊp <color=yellow>%d<color>  cho phĞp gi÷ l¹i kh¸ng tİnh vµ hiÖu øng hiÖn t¹i cña nhÉn, xin c¸c h¹ h·y chän kh¸ng tİnh vµ hiÖu øng cña nhÉn hiÖn t¹i ®ang cã:", strRingName, nLevel), tbOpt)
+		CreateNewSayEx(format("NangCap½äÖ¸ <color=yellow>%s<color> ³É <color=yellow>%d<color>  ÔÊĞí±£Áô½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦£¬Çë¸óÏÂÑ¡ÔñÄ¿Ç°½äÖ¸ÒÑÓĞµÄ¿¹ĞÔºÍĞ§Ó¦¡£", strRingName, nLevel), tbOpt)
 	else
-		CreateNewSayEx(format("N©ng cÊp nhÉn <color=yellow>%s<color> lªn  cÊp <color=yellow>%d<color>  cho phĞp c¸c h¹ tïy ı chän kh¸ng vµ hiÖu øng cho nhÉn cña m×nh, xin h·y lùa chän kh¸ng tİnh:", strRingName, nLevel), tbOpt)
+		CreateNewSayEx(format("NangCap½äÖ¸ <color=yellow>%s<color> ³É <color=yellow>%d<color> ÔÊĞí¸óÏÂËæÒâÑ¡Ôñ×Ô¼º½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦£¬ÇëÑ¡Ôñ¿¹ĞÔ:", strRingName, nLevel), tbOpt)
 	end
 end
 
@@ -70,9 +70,9 @@ function tbVnRingUpgrade:SelectOption2(strRingType, nLevel, nOption1)
 		{"Hñy bá"},
 	}
 	if nLevel > 4 then
-		CreateNewSayEx(format("N©ng cÊp nhÉn <color=yellow>%s<color> lªn  cÊp <color=yellow>%d<color>  cho phĞp gi÷ l¹i kh¸ng tİnh vµ hiÖu øng hiÖn t¹i cña nhÉn, xin c¸c h¹ h·y chän kh¸ng tİnh vµ hiÖu øng cña nhÉn hiÖn t¹i ®ang cã:", strRingName, nLevel), tbOpt)
+		CreateNewSayEx(format("NangCap½äÖ¸ <color=yellow>%s<color> ³É <color=yellow>%d<color>  ÔÊĞí±£Áô½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦£¬Çë¸óÏÂÑ¡ÔñÄ¿Ç°½äÖ¸ÒÑÓĞµÄ¿¹ĞÔºÍĞ§Ó¦ ", strRingName, nLevel), tbOpt)
 	else
-		CreateNewSayEx(format("N©ng cÊp nhÉn <color=yellow>%s<color> lªn  cÊp <color=yellow>%d<color>  cho phĞp c¸c h¹ tïy ı chän kh¸ng vµ hiÖu øng cho nhÉn cña m×nh, xin h·y lùa chän kh¸ng tİnh:", strRingName, nLevel), tbOpt)
+		CreateNewSayEx(format("NangCap½äÖ¸ <color=yellow>%s<color> ³É <color=yellow>%d<color>  ÔÊĞí¸óÏÂËæÒâÑ¡Ôñ×Ô¼º½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦£¬ÇëÑ¡Ôñ¿¹ĞÔ:", strRingName, nLevel), tbOpt)
 	end
 end
 
@@ -83,7 +83,7 @@ function tbVnRingUpgrade:ConfirmSelectedOption(strRingType, nLevel, nOption1, nO
 		{"Ta muèn chän l¹i", tbVnRingUpgrade.SelectOption1, {tbVnRingUpgrade, strRingType, nLevel}},		
 		{"Hñy bá"},
 	}
-	CreateNewSayEx(format("C¸c h¹ ®· lùa chän n©ng cÊp lªn nhÉn <color=yellow>%s<color>  cÊp <color=yellow>%d<color>  <color=yellow>%s - %s<color>, ng­¬i cã muèn chÕ t¹o ngay kh«ng?", strRingName, nLevel, tbOpt1Name[nOption1], tbOpt2Name[nOption2]), tbOpt)
+	CreateNewSayEx(format("¸óÏÂÒÑÑ¡ÔñNangCapÎª½äÖ¸<color=yellow>%s<color>  ¼¶<color=yellow>%d<color>  <color=yellow>%s - %s<color>, ÄãÏëÂíÉÏÖÆÔìÂğ?", strRingName, nLevel, tbOpt1Name[nOption1], tbOpt2Name[nOption2]), tbOpt)
 end
 
 function tbVnRingUpgrade:UpgradeSelectedRing2(strRingType, nLevel, nFirstOpt, nSecondOpt)
@@ -142,7 +142,7 @@ function tbVnRingDowngrade:SelectLevel(strRingType)
 --		{format("Ta cã nhÉn cÊp %d", 10), tbVnRingDowngrade.SelectOption1, {tbVnRingDowngrade, strRingType, 10}},
 		{"Hñy bá"},
 	}
-	CreateNewSayEx("Chøc n¨ng h¹ cÊp nhÉn <color=yellow>[Tinh X¶o] V« Danh<color> gióp c¸c h¹ huû bá kh¸ng tİnh vµ hiÖu øng cña tÊt c¶ c¸c nhÉn <color=yellow>[Tinh X¶o]<color> cÊp 4 trë lªn vµ ®­a nhÉn vÒ cÊp 3, tõ ®©y c¸c h¹ cã thÓ dïng chøc n¨ng n©ng cÊp ®Ó chän l¹i kh¸ng tİnh vµ hiÖu øng cho nhÉn cña m×nh. §Ó viÖc h¹ cÊp ®­îc thµnh c«ng, tr­íc tiªn ta cÇn biÕt thuéc tİnh cña nhÉn c¸c h¹ nh­ thÕ nµo?", tbOpt)
+	CreateNewSayEx("½µ¼¶½äÖ¸¹¦ÄÜ<color=yellow>[¾«ÖÂ] ÎŞÃû<color> °ï¸óÏÂÈ¥³ıËùÓĞ½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦<color=yellow>[¾«ÖÂ]<color> 4¼¶ÒÔÉÏ×ö»Ø3¼¶£¬´Ó´Ë¸óÏÂ¿ÉÒÔÓÃNangCap¹¦ÄÜÀ´Ñ¡Ôñ×Ô¼º½äÖ¸µÄ¿¹ĞÔºÍĞ§Ó¦¡£ ÒªÏë½µ¼¶³É¹¦£¬Ê×ÏÈÎÒĞèÒªÖªµÀÄã½äÖ¸µÄÊôĞÔÔõÃ´Ñù?", tbOpt)
 end
 
 function tbVnRingDowngrade:SelectOption1(strRingType, nLevel)
@@ -304,7 +304,7 @@ function tbVnRingUpgrade:MainDialog()
 		{"[Tinh X¶o] Cµn Kh«n Giíi ChØ", tbVnRingUpgrade.SelectRing, {tbVnRingUpgrade, "CanKhonGioiChi"}},
 		{"Hñy bá"},
 	}
-	local msg = "Ta cã thÓ gióp c¸c h¹ n©ng cÊp, h¹ cÊp, trïng luyÖn c¸c lo¹i nhÉn <color=yellow>[Tinh X¶o]V« Danh<color>, tr­íc tiªn ng­¬i h·y chän lo¹i nhÉn?"
+	local msg = "ÎÒ¿ÉÒÔ°ï¸óÏÂNangCap, ½µ¼¶, ÖØÁ· ¸÷ÖÖ½äÖ¸<color=yellow>[¾«ÖÂ]ÎŞÃû<color>, Ê×ÏÈÄãÒªÑ¡Ôñ½äÖ¸ÖÖÀà?"
 	CreateNewSayEx(msg, tbOpt)
 end
 pEventType:Reg("Thî rÌn thÇn bİ", "Liªn quan ®Õn nhÉn V« Danh", tbVnRingUpgrade.MainDialog, {tbVnRingUpgrade});

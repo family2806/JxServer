@@ -114,7 +114,7 @@ function tbKillDailyTask:CompleteTask()
 	
 	self:_CompleteTask();
 	
-	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Hoµn thµnh nhiÖm cô giĞt qu¸i: kİch s¸t%d con%s",tbTask.nKillCount, tbTask.szMonsterName)));
+	WriteLog(format("[%s]\t%s\t%s\t%s","NhiÖm vô hµng ngµy",GetName(), GetAccount(),format("Íê³ÉNhiÖm vô S¸t qu¸i £º»÷É±%d con%s",tbTask.nKillCount, tbTask.szMonsterName)));
 	AddStatData("richangrenwu_shaguaicishu")
 	return 1;
 end

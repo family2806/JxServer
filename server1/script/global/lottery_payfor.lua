@@ -187,7 +187,7 @@ function doPayforGreateGold()
 			AddGoldItem(0, 142)
 			Msg2Player("Ngµi ®¹t ®­îc nh· ®iÓn chi hån  B¾c Kinh chi méng mét ®«i hoµng kim chiÕc nhÉn ")
 			WriteLog(GetAccount()..","..GetName().." trung liÔu ¸o vËn Trung quèc ®éi t­ëng bµi ®Õm ®İch hoµng kim vĞ sè ®¹i t­ëng , ®¹t ®­îc ¸o vËn chiÕc nhÉn trang bŞ mét bé . vĞ sè ID"..GetGlbValue(dayGOLD_TIMESTEMP).."-".. GetGlbValue(dayGOLD_SERIES))
-			msg = " nhiÖt liÖt chóc mõng : nhµ ch¬i "..GetName().." trung liÔu nh· ®iÓn thŞnh héi Trung quèc ®éi t­ëng bµi ®Õm c¹nh ®o¸n ®İch hoµng kim ®¹i t­ëng , ®¹t ®­îc nh· ®iÓn chi hån  B¾c Kinh chi méng cao cÊp hoµng kim chiÕc nhÉn mét ®«i ";
+			msg = "ÈÈÁÒ chóc mõng : nhµ ch¬i "..GetName().." trung liÔu ÑÅµäÊ¢»áÖĞ¹ú¶Ó½±ÅÆÊı¾º²ÂµÄ»Æ½ğ´ó½±£¬»ñµÃÑÅµäÖ®»ê¡¢±±¾©Ö®ÃÎ¸ß¼¶»Æ½ğ½äÖ¸Ò»¶Ô£¡";
 			AddGlobalNews(msg);
 		end
 	else

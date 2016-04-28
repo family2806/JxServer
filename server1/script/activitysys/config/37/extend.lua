@@ -117,18 +117,18 @@ function pActivity:ComposeXmasGift(nCount)
 	for i=1,nCount do
 		local nSuccess = 70
 		if self:CheckRandom(nSuccess,"GhepHopQuaNoelThatBai") == 1 then
-			PlayerFunLib:GetItem({szName = "Hép quµ gi¸ng sinh", tbProp={6,1,3080,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepHopQuaNoelThanhCong")
+			PlayerFunLib:GetItem({szName = "Hép quµ gi¸ng sinh", tbProp={6,1,3080,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "³É¹¦ºÏ³ÉHép quµ gi¸ng sinh")
 		end
 	end
 end
 
--- ºÏ³É¤ng Giµ Noel (nhá)
+-- ºÏ³É¤ng Giµ Noel£¨Ð¡£©
 function pActivity:ComposeXmasPerson_S(nCount)
 	for i=1,nCount do
 	--Change request Event Noel - Modified by DinhHQ - 20111129
 		local nSuccess = 70
 		if self:CheckRandom(nSuccess, "GhepNguoiTuyet(nho)ThatBai") == 1 then
-			PlayerFunLib:GetItem({szName = "¤ng Giµ Noel (nhá)", tbProp={6,1,3077,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepNguoiTuyet(nho)ThanhCong")
+			PlayerFunLib:GetItem({szName = "¤ng Giµ Noel£¨Ð¡£©", tbProp={6,1,3077,1,0,0},nExpiredTime=20120101,},1, EVENT_LOG_TITLE, "GhepNguoiTuyet(nho)ThanhCong")
 		end
 	end
 end
@@ -215,13 +215,13 @@ function pActivity:UseXmasPerson_L()
 			{szName="Tö M·ng Chi B¶o (NhÉn D­íi)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={9,0,0,0,0,0}},
 			{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.1,tbParam={4,0,0,0,0,0}},
 			{szName="Tö M·ng Chi B¶o (Vò KhÝ)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.07,tbParam={6,0,0,0,0,0}},
-			{szName = "§iÓm kinh nghiÖm", nExp=8000000,nRate=35},
-			{szName = "§iÓm kinh nghiÖm", nExp=10000000,nRate=16},
-			{szName = "§iÓm kinh nghiÖm", nExp=15000000,nRate=6},
-			{szName = "§iÓm kinh nghiÖm", nExp=20000000,nRate=1.37},
-			{szName = "§iÓm kinh nghiÖm", nExp=50000000,nRate=0.5},
-			{szName = "§iÓm kinh nghiÖm", nExp=100000000,nRate=0.5},
-			{szName = "§iÓm kinh nghiÖm", nExp=200000000,nRate=0.01},
+			{szName = "§iÓm Kinh NghiÖm", nExp=8000000,nRate=35},
+			{szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=16},
+			{szName = "§iÓm Kinh NghiÖm", nExp=15000000,nRate=6},
+			{szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=1.37},
+			{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=0.5},
+			{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=0.5},
+			{szName = "§iÓm Kinh NghiÖm", nExp=200000000,nRate=0.01},
 		},		
 	}
 	local tbUseLog = {
@@ -292,7 +292,7 @@ end
 function pActivity:CheckTimeGetCompensation()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201112020900 or nNowDate >= 201112040000 then
-		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i ®· qua thêi gian nhËn th­ëng")
 		return nil
 	end
 	return 1
@@ -301,7 +301,7 @@ end
 function pActivity:CheckTimeGetFreeExp()
 	local nNowDate = tonumber(GetLocalDate("%Y%m%d%H%M"))
 	if nNowDate < 201112240000 or nNowDate >= 201112252400 then
-		Talk(1, "", "Xin thø lçi, hiÖn t¹i kh«ng ph¶i lµ thêi gian nhËn th­ëng")
+		Talk(1, "", "Xin thø lçi, hiÖn t¹i ®· qua thêi gian nhËn th­ëng")
 		return nil
 	end
 	return 1
@@ -319,30 +319,30 @@ function pActivity:UseXmasPerson_Pink()
 		return nil
 	end
 	local tbExpAward = {
-		[1] = {szName = "§iÓm kinh nghiÖm", nExp = 6e6},
+		[1] = {szName = "§iÓm Kinh NghiÖm", nExp = 6e6},
 		[2] = {{szName="Ng«i Sao",tbProp={6,1,3081,1,0,0},nCount=1,nRate=40, nExpiredTime = 20120101},},
 	}
 	tbAwardTemplet:Give(tbExpAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	local tbBonusAward = {
-		[100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 5e6}, "PhanThuongSuDung100OngGiaNoelHong"},
-		[200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung200OngGiaNoelHong"},
-		[300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "PhanThuongSuDung300OngGiaNoelHong"},
-		[400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung400OngGiaNoelHong"},
-		[500] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung500OngGiaNoelHong"},
-		[600] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung600OngGiaNoelHong"},
-		[700] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "PhanThuongSuDung700OngGiaNoelHong"},
-		[800] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung800OngGiaNoelHong"},
-		[900] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "PhanThuongSuDung900OngGiaNoelHong"},
-		[1000] = {{szName = "MÆt n¹ V­¬ng Gi¶", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "PhanThuongSuDung1000OngGiaNoelHong"},
-		[1100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1100OngGiaNoelHong"},
-		[1200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1200OngGiaNoelHong"},
-		[1300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "PhanThuongSuDung1300OngGiaNoelHong"},
-		[1400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 50e6}, "PhanThuongSuDung1400OngGiaNoelHong"},
-		[1500] = {{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, "PhanThuongSuDung1500OngGiaNoelHong"},
+		[100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 5e6}, "Ê¹ÓÃ100O¸ö¤ng Giµ Noel½±Àø"},
+		[200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "Ê¹ÓÃ200O¸ö¤ng Giµ Noel½±Àø"},
+		[300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 10e6}, "Ê¹ÓÃ300O¸ö¤ng Giµ Noel½±Àø"},
+		[400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "Ê¹ÓÃ400O¸ö¤ng Giµ Noel½±Àø"},
+		[500] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "Ê¹ÓÃ500O¸ö¤ng Giµ Noel½±Àø"},
+		[600] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "Ê¹ÓÃ600O¸ö¤ng Giµ Noel½±Àø"},
+		[700] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 20e6}, "Ê¹ÓÃ700O¸ö¤ng Giµ Noel½±Àø"},
+		[800] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "Ê¹ÓÃ800O¸ö¤ng Giµ Noel½±Àø"},
+		[900] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 30e6}, "Ê¹ÓÃ900O¸ö¤ng Giµ Noel½±Àø"},
+		[1000] = {{szName = "MÆt n¹ V­¬ng Gi¶", tbProp = {0,11,561,1,0,0}, nExpiredTime = 20160, nCount=1}, "Ê¹ÓÃ1000O¸ö¤ng Giµ Noel½±Àø"},
+		[1100] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "Ê¹ÓÃ1100O¸ö¤ng Giµ Noel½±Àø"},
+		[1200] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "Ê¹ÓÃ1200O¸ö¤ng Giµ Noel½±Àø"},
+		[1300] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 40e6}, "Ê¹ÓÃ1300O¸ö¤ng Giµ Noel½±Àø"},
+		[1400] = {{szName = "§iÓm kinh nghiÖm kh«ng céng dån", nExp = 50e6}, "Ê¹ÓÃ1400O¸ö¤ng Giµ Noel½±Àø"},
+		[1500] = {{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1}, "Ê¹ÓÃ1500O¸ö¤ng Giµ Noel½±Àø"},
 	}
 	if tbBonusAward[nCurCount] then
 		tbAwardTemplet:Give(tbBonusAward[nCurCount][1], 1 , {EVENT_LOG_TITLE, tbBonusAward[nCurCount][2]})
-		Msg2Player(format("Chóc mõng c¸c h¹ sö dông ®Õn %d vËt phÈm ¤ng giµ Noel hång, nhËn ®­îc phÇn th­ëng %s", nCurCount, tbBonusAward[nCurCount][1].szName))
+		Msg2Player(format("×£ºØ¸óÏÂÊ¹ÓÃµ½%d¤ng Giµ NoelÎïÆ·£¬»î¶¯½±Àø%s", nCurCount, tbBonusAward[nCurCount][1].szName))
 	end
 	local tbItemAward = {
 		{szName="Kim ¤ LÖnh",tbProp={6,1,2349,1,0,0},nCount=1,nRate=0.1},
@@ -372,13 +372,13 @@ function pActivity:UseXmasPerson_Pink()
 		{szName="Hoµng Kim Ên (Nh­îc hãa)",tbProp={0,3221},nCount=1,nRate=0.11,nQuality = 1,nExpiredTime=10080,},
 		{szName="Cµn Kh«n Song TuyÖt Béi",tbProp={6,1,2219,1,0,0},nCount=1,nRate=0.1,nExpiredTime=43200},
 		{szName="Ngò Hµnh Kú Th¹ch",tbProp={6,1,2125,1,0,0},nCount=1,nRate=20},
-		{szName = "§iÓm kinh nghiÖm", nExp=5000000,nRate=40},
-		{szName = "§iÓm kinh nghiÖm", nExp=8000000,nRate=13},
-		{szName = "§iÓm kinh nghiÖm", nExp=10000000,nRate=10},
-		{szName = "§iÓm kinh nghiÖm", nExp=15000000,nRate=5},
-		{szName = "§iÓm kinh nghiÖm", nExp=20000000,nRate=1},
-		{szName = "§iÓm kinh nghiÖm", nExp=50000000,nRate=0.5},
-		{szName = "§iÓm kinh nghiÖm", nExp=100000000,nRate=0.01},
+		{szName = "§iÓm Kinh NghiÖm", nExp=5000000,nRate=40},
+		{szName = "§iÓm Kinh NghiÖm", nExp=8000000,nRate=13},
+		{szName = "§iÓm Kinh NghiÖm", nExp=10000000,nRate=10},
+		{szName = "§iÓm Kinh NghiÖm", nExp=15000000,nRate=5},
+		{szName = "§iÓm Kinh NghiÖm", nExp=20000000,nRate=1},
+		{szName = "§iÓm Kinh NghiÖm", nExp=50000000,nRate=0.5},
+		{szName = "§iÓm Kinh NghiÖm", nExp=100000000,nRate=0.01},
 	}
 	tbAwardTemplet:Give(tbItemAward, 1 , {EVENT_LOG_TITLE, "SuDungOngGiaNoelHong"})
 	

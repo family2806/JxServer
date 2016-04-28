@@ -79,7 +79,7 @@ tbMissionDialog[9] = {
 	"Ng­êi ch¬i:Sao?!",
 	"NguyÖt Ca §¶o Chñ:Kh«ng cÇn c¶m ¬n ta, mét tr¨m n¨m tr­íc, cã mét cao nh©n duy nhÊt luËn kiÕm thµnh c«ng ®· cã mét yªu cÇu víi NguyÖt Ca §¶o chóng t«i.",
 	"NguyÖt Ca §¶o Chñ: ë ®©y cã mét cÈm hép, còng lµ do vÞ cao nh©n ®ã l­u l¹i cho thiÕu hiÖp, thiÕu hiÖp ph¶i xuèng nói míi ®­îc më ra, vµ kinh vâ häc m«n ph¸i nµy xin ®­a lu«n cho thiÕu hiÖp",
-	"Ng­êi ch¬i:§a t¹!",
+	"Ng­êi ch¬i:§a t¹! ",
 }
 
 tbConfig.tbNpcPos = {
@@ -301,7 +301,7 @@ tbConfig[15] = {
 tbConfig[16] = {
 	m_nCurStepId = 9,
 	tbMessage = {
-		{"DialogWithNpc", {"Bia §¸ KiÕm Gia"}},
+		{"DialogWithNpc", {"½£Ú£Bia §¸"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -340,7 +340,7 @@ tbConfig[18] = {
 tbConfig[19] = {
 	m_nCurStepId = 11,
 	tbMessage = {
-		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶oÖ÷£º"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -364,7 +364,7 @@ tbConfig[20] = {
 tbConfig[21] = {
 	m_nCurStepId = 12,
 	tbMessage = {
-		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶oÖ÷£º"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -381,7 +381,7 @@ tbConfig[22] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"CreateDialog", {"<npc>Hoan nghªnh ®Õn NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
+		{"CreateDialog", {"<npc>»¶Ó­µ½NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
 	},
 }
 
@@ -407,7 +407,7 @@ tbConfig[24] = {
 	tbCondition = {
 	},
 	tbAction = {
-		{"CreateDialog", {"<npc>Hoan nghªnh ®Õn NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
+		{"CreateDialog", {"<npc>»¶Ó­µ½NguyÖt Ca §¶o", {{25, "Ng­¬i x¸c nhËn muèn ®i NguyÖt Ca MËt Cèc?"}}}},
 	},
 }
 	
@@ -426,7 +426,7 @@ tbConfig[25] = {
 tbConfig[26] = {
 	m_nCurStepId = 13,
 	tbMessage = {
-		{"DialogWithNpc", {"NguyÖt Ca §¶o Chñ"}},
+		{"DialogWithNpc", {"NguyÖt Ca §¶oÖ÷£º"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},

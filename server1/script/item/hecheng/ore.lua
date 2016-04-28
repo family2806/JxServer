@@ -161,8 +161,8 @@ function OreLevelUp(nCount)
 					", sö dông"..worth.."Gi¸ trŞ "..lvl.." HuyÒn Tinh Kho¸ng Th¹ch, hîp thµnh ra"..
 					num.."c¸i"..lvl2.." HuyÒn Tinh Kho¸ng Th¹ch, hÖ thèng nhËn ®­îc"..
 					worth-worth2.."Gi¸ trŞ cßn thõa l¹i.")
-	Talk(1, "", "B¹n ®· hîp thµnh ra <color=yellow>"..num.."<color> <color=yellow>"..lvl2.."<color> HuyÒn Tinh Kho¸ng Th¹ch ")
-	Msg2Player("B¹n ®¹t ®­îc"..num.." viªn HuyÒn Tinh Kho¸ng Th¹ch")
+	Talk(1, "", "B¹n ®· hîp thµnh ra <color=yellow>"..num.."<color>c¸i<color=yellow>"..lvl2.."<color> HuyÒn Tinh Kho¸ng Th¹ch ")
+	Msg2Player("B¹n ®¹t ®­îc"..num.."c¸iĞş¾§¿óÊ¯")
 	return
 end
 
@@ -178,7 +178,7 @@ end
 
 
 function main()
-	Talk(1, "GiveUIForOre", "ºÏ³É¸ß¼¶Ğş¾§¿óÊ¯£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>50<color> <color=yellow>Í¬Ò»µÈ¼¶<color>µÄĞş¾§¿óÊ¯£¬¾Í¿ÉÒÔºÏ³É³ö¸ßÒ»µÈ¼¶µÄĞş¾§¿óÊ¯¡£µ«ÊÇ£¬×î¸ßÖ»ÄÜºÏ³É³öµÈ¼¶Îª<color=yellow>5<color>µÄĞş¾§¿óÊ¯¡£")
+	Talk(1, "GiveUIForOre", "ºÏ³É¸ß¼¶Ğş¾§¿óÊ¯£ºÃ¿´Î×î¶à·ÅÈë<color=yellow>50<color>c¸i<color=yellow>Í¬Ò»µÈ¼¶<color>µÄĞş¾§¿óÊ¯£¬¾Í¿ÉÒÔºÏ³É³ö¸ßÒ»µÈ¼¶µÄĞş¾§¿óÊ¯¡£µ«ÊÇ£¬×î¸ßÖ»ÄÜºÏ³É³öµÈ¼¶Îª<color=yellow>5<color>µÄĞş¾§¿óÊ¯¡£")
 	return
 end
 

@@ -241,7 +241,7 @@ function CSP_JEnterClearMap_Skill2()
 		return -1;
 	end
 	
-	CSP_WriteLog(format("§· sö dông %d B¹ch Ngäc, tiÕn vµo ®¶o tÈy tñy", CSP_NEEDJEWEL_SKILL2));
+	CSP_WriteLog(format("Sö dông råi %dB¹ch Ngäc,½øÈëÏ´Ëèµº", CSP_NEEDJEWEL_SKILL2));
 	-- ¼ÇÂ¼½øµºÏ´µãÀàĞÍ
 	SetTask(CSP_TID_ClearType, CSP_CTYPE_SKILL); -- Ï´¼¼ÄÜµã
 	CSP_EnterClearMapCore(); -- ½øÈëÏ´Ëèµº
@@ -261,7 +261,7 @@ function CSP_JEnterClearMap_Prop2()
 		return -1;
 	end
 	
-	CSP_WriteLog(format("§· sö dông %d Tö Ngäc, tiÕn vµo ®¶o tÈy tñy", CSP_NEEDJEWEL_PROP2));
+	CSP_WriteLog(format("Sö dông råi %dTö Ngäc,½øÈëÏ´Ëèµº", CSP_NEEDJEWEL_PROP2));
 	-- ¼ÇÂ¼½øµºÏ´µãÀàĞÍ
 	SetTask(CSP_TID_ClearType, CSP_CTYPE_PROP); -- Ï´Ç±ÄÜµã
 	CSP_EnterClearMapCore(); -- ½øÈëÏ´Ëèµº
@@ -285,7 +285,7 @@ function CSP_JEnterClearMap_All2()
 		return -1;
 	end
 	
-	CSP_WriteLog(format("§· sö dông %d %s vµ %d %s, tiÕn vµo ®¶o tÈy tñy",CSP_NEEDJEWEL_SKILL2, "B¹ch Ngäc", CSP_NEEDJEWEL_PROP2, "Tö Ngäc") );
+	CSP_WriteLog(format("§·Sö dông råi %d %s ºÍ %d %s, ½øÈëÏ´Ëèµº",CSP_NEEDJEWEL_SKILL2, "B¹ch Ngäc", CSP_NEEDJEWEL_PROP2, "Tö Ngäc") );
 	SetTask(CSP_TID_ClearType, CSP_CTYPE_ALL); -- Ï´¼¼ÄÜµãºÍÇ±ÄÜµã
 	CSP_EnterClearMapCore(); -- ½øÈëÏ´Ëèµº
 	Msg2Player("TiÕn vµo ®¶o TÈy tñy, b¹n cã thÓ cã v« sè lÇn tÈy ®iÓm kü n¨ng. ");

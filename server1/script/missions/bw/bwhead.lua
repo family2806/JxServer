@@ -54,7 +54,7 @@ function LeaveGame()
 	camp = GetCamp();--»Ö¸´Ô­Ê¼ÕóÓª
 	SetFightState(0)
 	if (GetCurCamp() == 2) then
-		LeaveChannel(PlayerIndex, "L«i ®µi Gi¸p");
+		LeaveChannel(PlayerIndex, "L«i ®µi gi¸p");
 	elseif (GetCurCamp() == 3) then
 		LeaveChannel(PlayerIndex, "L«i ®µi Êt");
 	end;
@@ -118,7 +118,7 @@ function JoinCamp(Camp)
 
 	if (Camp == 1) then
 		NewWorld(CS_CampPos[1][1], CS_CampPos[1][2], CS_CampPos[1][3])
-		EnterChannel(PlayerIndex, "L«i ®µi Gi¸p");
+		EnterChannel(PlayerIndex, "L«i ®µi gi¸p");
 	elseif (Camp == 2) then
 		NewWorld(CS_CampPos[2][1], CS_CampPos[2][2], CS_CampPos[2][3])
 		EnterChannel(PlayerIndex, "L«i ®µi Êt");

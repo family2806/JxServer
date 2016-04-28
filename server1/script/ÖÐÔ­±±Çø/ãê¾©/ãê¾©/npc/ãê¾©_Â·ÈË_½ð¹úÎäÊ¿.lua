@@ -20,10 +20,10 @@ function enroll_S3_step3()
 end;
 
 function enroll_S3_correct()
-	Talk(1,"","Kh¸ l¾m! ChØ cã ng­êi nµo cã ®­îc phÈm chÊt kiªn tr× bÊt biÕn th× míi cã t­ c¸ch lµm nªn ®¹i sù. TÆng ng­oi mãn nµy. ")
+	Talk(1,"","ºÜºÃ¡£ChØ cã ng­êi nµo cã ®­îc phÈm chÊt kiªn tr× bÊt biÕn th× míi cã thÓ thùc hiÖn lı t­ëng cña m×nh. ")
 	AddEventItem(218)
 	Msg2Player("Nh©n ®­îc Kiªn Tinh Th¹ch ")
-	AddNote("Chøng minh ®­îc sù kiªn quyÕt cña m×nh, nhËn ®­îc Kiªn Tinh Th¹ch ")
+	AddNote("Ö¤Ã÷ÄãµÄ¼á¾ö£¬Nh©n ®­îc Kiªn Tinh Th¹ch ")
 end;
 
 function enroll_S3_wrong()

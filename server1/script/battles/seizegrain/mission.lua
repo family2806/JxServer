@@ -3,7 +3,7 @@ IncludeLib("TITLE");
 Include("\\script\\battles\\battlehead.lua")
 Include("\\script\\battles\\seizegrain\\head.lua")
 Include("\\script\\task\\newtask\\branch\\branch_bwsj.lua")
---Phng th鴆 V薾 lng中PL_PARAM3用于当玩家属于背粮士兵时的标记
+--V薾 lng模式中PL_PARAM3用于当玩家属于背粮士兵时的标记
 
 
 function InitMission()
@@ -159,9 +159,9 @@ function InitMission()
 	AddGlobalNews(str1);
 	CreateChannel("Phe T鑞g"..szGAME_GAMELEVEL[level].."V薾 lng", 9)
 	CreateChannel("Phe Kim"..szGAME_GAMELEVEL[level].."V薾 lng", 10)
-	BT_SetMissionName("Phng th鴆 V薾 lng")
-	BT_SetMissionDesc("背景:1160年，Phe Kim主将完颜亮密谋夺取宋国，出兵南下，但是，到达襄阳就遇到了该城士兵的激烈反抗。激烈的大战从此打响.<enter><enter><color=yellow>Phng th鴆 V薾 lng: 运输粮车上的粮包回本方的大本营，哪方运输的粮包多，哪方就获胜.<enter>火石:用于烧毁对方粮车.")
-	WriteLog(lvlstr.."Phe T鑞g大战Phng th鴆 V薾 lng开始报名。地图ID是"..subworldid..".Th阨 gian:"..date("%H:%M"))
+	BT_SetMissionName("V薾 lng模式")
+	BT_SetMissionDesc("背景:1160年，Phe Kim主将完颜亮密谋夺取宋国，出兵南下，但是，到达襄阳就遇到了该城士兵的激烈反抗。激烈的大战从此打响.<enter><enter><color=yellow>V薾 lng模式: 运输粮车上的粮包回本方的大本营，哪方运输的粮包多，哪方就获胜.<enter>火石:用于烧毁对方粮车.")
+	WriteLog(lvlstr.."Phe T鑞g大战V薾 lng模式开始报名。地图ID是"..subworldid..".Th阨 gian:"..date("%H:%M"))
 	
 end;
 
@@ -175,10 +175,10 @@ function RunMission()
 	elseif (level == 2) then
 		lvlstr = "Khu v鵦 Trung c蕄 "
 	else
-		lvlstr = "Khu v鵦 Cao c蕄 "
+		lvlstr = "Khu v鵦 Cao c蕄  "
 	end
 	
-	WriteLog(format("%s Phe T鑞g大战Phng th鴆 V薾 lng已开始. 地图ID是： %d. 开战时间: %s Phe T鑞g人数比例为%d:%d",
+	WriteLog(format("%s Phe T鑞g大战V薾 lng模式已开始. 地图ID是： %d. 开战时间: %s Phe T鑞g人数比例为%d:%d",
 				lvlstr, subworldid, GetLocalDate("%y-%m-%d %H:%M"),GetMSPlayerCount(MISSIONID, 1),GetMSPlayerCount(MISSIONID, 2)))
 	
 	local idx = 0;

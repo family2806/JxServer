@@ -13,10 +13,10 @@ ITEM_RED_ROSE		= {szName="Hoa hång ®á",tbProp={6,1,3120,1,0,0},}
 ITEM_BASKET		= {szName="Giá §ùng Hoa",tbProp={6,1,3123,1,0,0},nExpiredTime=20120401,}
 ITEM_GRASS		= {szName="Cá Xanh",tbProp={6,1,3124,1,0,0},nExpiredTime=20120401,}
 ITEM_RIBAND		= {szName="N¬ Cét Bã Hoa",tbProp={6,1,3126,1,0,0},}
-ITEM_3COLOR_ROSE		= {szName="Bã Hång Tam S¾c",tbProp={6,1,3121,1,0,0},nExpiredTime=20120401,}
-ITEM_4COLOR_ROSE		= {szName="Bã Hång Tø S¾c",tbProp={6,1,3122,1,0,0},nExpiredTime=20120401,}
+ITEM_3COLOR_ROSE		= {szName="ÈýÉ«N¬ Cét Bã Hoa",tbProp={6,1,3121,1,0,0},nExpiredTime=20120401,}
+ITEM_4COLOR_ROSE		= {szName="ËÄÉ«N¬ Cét Bã Hoa",tbProp={6,1,3122,1,0,0},nExpiredTime=20120401,}
 ITEM_CORBEIL		= {szName="Giá Hoa Hång VÜnh Cöu",tbProp={6,1,3127,1,0,0},nExpiredTime=20120401,}
-ACTION_LOG_COMPOSE_3COLOR_ROSE		= "ºÏ³ÉBã Hång Tam S¾c"
+ACTION_LOG_COMPOSE_3COLOR_ROSE		= "ºÏ³ÉÈýÉ«N¬ Cét Bã Hoa"
 ACTION_COMPOSE_GRASS		= "DoiCoXanh"
 TSK_DAILY_LUCK_BELT		= 4
 ITEM_LUCY_BELT		= {szName="Tói May M¾n",tbProp={6,1,3128,1,0,0},nExpiredTime=20120401,nBindState = -2,}

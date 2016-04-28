@@ -79,7 +79,7 @@ function want_playboat()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra lai råi ®Õn b¸o danh tham gia! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
 				return
 			else
 				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>ch­a ®Õn cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
@@ -107,7 +107,7 @@ function want_playboat()
 	print("total"..totalboat.."free"..freeboat)
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "thuyÒn rång cao cÊp"
+		strlevel = "®ua thuyÒn rång s¬ cÊp"
 	else
 		strlevel = "thuyÒn rång cao cÊp"
 	end
@@ -157,7 +157,7 @@ function dragon_join()
 		return
 	end
 	if (GetCash() < 50000 or bhaveboat == 0 and blevel == 1) then
-		Say(" Xin lçi! Tham gia thi ®Êu thuyÒn rång cÇn nép<color=red> 5 v¹n l­îng vµ "..boatstr.."<color=red>míi ®­îc, tiÒn cña b¹n kh«ng ®ñ hoÆc kh«ng mang theo thuyÒn rång truyÒn thèng! ChuÈn bŞ ®ñ råi h·y ®Õn!", 0)
+		Say(" Xin lçi! Tham gia thi ®Êu thuyÒn rång cÇn nép<color=red> 5 v¹n l­îng vµ "..boatstr.."<color=red>²ÅĞĞ, ÄãµÄÇ®²»¹»»òÕßÃ»´øThuyÒn Rång truyÒn thèng! ×¼±¸ºÃÁËÔÙÀ´!", 0)
 		return
 	end
 	
@@ -172,7 +172,7 @@ function dragon_join()
 		
 		if (blevel ~= bmbrlevel) then
 			if (blevel == 0) then
-				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra lai råi ®Õn b¸o danh tham gia! ",0)
+				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>v­ît qu¸ cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
 				return
 			else
 				Say(" Xin lçi! Trong ®éi cña b¹n cã ®éi viªn cã ®¼ng cÊp <color=red>ch­a ®Õn cÊp 90<color>, kh«ng thÓ tham gia thi ®Êu! KiÓm tra l¹i råi ®Õn b¸o danh tham gia! ",0)
@@ -226,20 +226,20 @@ function dragon_join()
 	PlayerIndex = OldPlayer
 	local strlevel ="";
 	if (blevel == 0) then
-		strlevel = "thuyÒn rång cao cÊp"
+		strlevel = "®ua thuyÒn rång s¬ cÊp"
 	else
-		strlevel = "thuyÒn rång cao cÊp"
+		strlevel = "®ua thuyÒn rång s¬ cÊp"
 	end
 	Say("Xin lçi! HiÖn t¹i<color=red>"..strlevel.."<color> ®· kh«ng cßn chç. Xin ®îi vßng sau!",0)
 end
 
 function dragon_award()
-	Say(" Cuéc ®ua thuyÒn rång ®ang s«i næi. L·o phu ®ang thu nhËn thuyÒn rång. B¹n muèn dïng lo¹i thuyÒn nµo ®Ó ®æi phÇn th­ëng?",7,"ThuyÒn rång nhá ®æi B¸nh ch­ng nh©n ®Ëu/dousha","ThuyÒn rång truyÒn thèng ®æi B¸nh ch­ng nh©n nÊm/xianggu","M· ®Çu thuyÒn rång ®æi B¸nh ch­ng nh©n trøng/danhuang"," ThuyÒn rång ®Çu phông ngÉu nhiªn ®æi lÊy Tiªn Th¶o lé, Thñy Tinh, B¶o Th¹ch, Thiªn S¬n B¶o Lé /birdboat_award","ThuyÒn rång h×nh thó ngÉu nhiªn ®æi lÊy Kho¸ng th¹ch thÇn bİ, 5-HuyÕn Tinh kho¸ng th¹ch cÊp 8/beastboat_award","ThuyÒn rång lo¹i lín ngÉu nhiªn ®æi lÊy §Şnh Quèc An Bang, 1 bé trang bŞ hoµng kim HiÖp Cèt Nhu T×nh/hugeboat_award","Kh«ng cÇn!/OnCancel");
+	Say(" Cuéc ®ua thuyÒn rång ®ang s«i næi. L·o phu ®ang thu nhËn thuyÒn rång. B¹n muèn dïng lo¹i thuyÒn nµo ®Ó ®æi phÇn th­ëng?",7,"ThuyÒn rång nhá ®æi B¸nh ch­ng nh©n ®Ëu/dousha","ThuyÒn Rång truyÒn thèng»»È¡Ïã¹½ôÕ×Ó/xianggu","M· ®Çu thuyÒn rång ®æi B¸nh ch­ng nh©n trøng/danhuang"," ThuyÒn rång ®Çu phông ngÉu nhiªn ®æi lÊy Tiªn Th¶o lé, Thñy Tinh, B¶o Th¹ch, Thiªn S¬n B¶o Lé /birdboat_award","ÊŞÍ·ÁúÖÛËæ»ú»»È¡ThÇn bİ kho¸ng th¹ch£¬5-Ğş¾§¿óÊ¯8¼¶/beastboat_award","ThuyÒn rång lo¹i lín ngÉu nhiªn ®æi lÊy §Şnh Quèc An Bang, 1 bé trang bŞ hoµng kim HiÖp Cèt Nhu T×nh/hugeboat_award","Kh«ng cÇn!/OnCancel");
 end
 
 function dragon_golden()
 	--Say("Àñ¹Ù£ºÁúÖÛ´óÈüÕıÔÚÈç»ğÈçİ±µÄ½øĞĞÖĞ£¬ÒªµÈµ½<color=red>»î¶¯½áÊø<color>ºó²ÅÄÜÀ´Áì½±Å¶¡£",0);
-	Say(" B¹n muèn nhËn phÇn th­ëng thi ®Êu nµo?", 3, "thuyÒn rång cao cÊp/dragon_golden_low","§ua thuyÒn rång cao cÊp/dragon_golden_high","Kh«ng cÇn!/OnCancel");
+	Say(" B¹n muèn nhËn phÇn th­ëng thi ®Êu nµo?", 3, "®ua thuyÒn rång s¬ cÊp/dragon_golden_low","§ua thuyÒn rång cao cÊp/dragon_golden_high","Kh«ng cÇn!/OnCancel");
 end
 
 function dragon_golden_low()
@@ -247,7 +247,7 @@ function dragon_golden_low()
 		RoleName, Data = Ladder_GetLadderInfo(10141, i);
 		if( GetName() ==  RoleName) then
 			if(GetTask(1507) ~= 0) then
-				Say(" ÄãÒÑÁìÈ¡thuyÒn rång cao cÊpÅÅÃûÇ°Ê®½±Àø!",0);
+				Say(" ÄãÒÑÁìÈ¡®ua thuyÒn rång s¬ cÊpÅÅÃûÇ°Ê®½±Àø!",0);
 				return 0
 			end			
 			if(CalcFreeItemCellCount() < 6) then
@@ -259,7 +259,7 @@ function dragon_golden_low()
 			return 1
 		end
 	end
-	Say(" Äã²»ÔÚthuyÒn rång cao cÊpÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
+	Say(" Äã²»ÔÚ®ua thuyÒn rång s¬ cÊpÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
 end
 
 function dragon_golden_high()
@@ -279,7 +279,7 @@ function dragon_golden_high()
 			return 1
 		end
 	end
-	Say(" B¹n kh«ng n»m trong 10 tªn ®øng ®Çu b¶ng xÕp h¹ng ®ua thuyÒn rång cao cÊp, kh«ng thÓ l·nh th­ëng.",0);
+	Say(" ²»ÔÚthuyÒn rång cao cÊpÅÅÃûÇ°Ê®ĞĞÁĞ, ²»ÄÜÁì½±.",0);
 end
 
 function aboutboat()
@@ -288,9 +288,9 @@ end
 
 function aboutmaking()
 	local a = "ThuyÒn rång nhá = 1 ®Çu rång + 1 ®u«i rång + 1 th©n rång + 1s­ên rång + 4 m¸i chÌo + 1 b¸nh l¸i + 1 trèng";
-	local b = "<enter>ThuyÒn rång truyÒn thèng = 1 ThuyÒn rång nhá + 4 m¸i chÌo";
-	local c = "<enter>M· ®Çu thuyÒn rång = 1 ThuyÒn rång nhá + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
-	local d = " ThuyÒn rång ®Çu phông = 1 ThuyÒn rång ®Çu ngùa + 1 ThuyÒn rång truyÒn thèng + 1 ®Çu rång";
+	local b = "<enter>ThuyÒn Rång truyÒn thèng = 1 Ğ¡ÁúÖÛ+ 4 ½°";
+	local c = "<enter>ÂíÍ·ÁúÖÛ= 1 Ğ¡ÁúÖÛ+ 1 ThuyÒn Rång truyÒn thèng + 1 ÁúÍ·";
+	local d = " ÄñÍ·ÁúÖÛ = 1 ÂíÍ·ÁúÖÛ + 1 ThuyÒn Rång truyÒn thèng + 1 ÁúÍ·";
 	local e = "<enter>ThuyÒn rång h×nh thó = 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa + 1 ®Çu rång";
 	local f = "<enter>ThuyÒn rång lo¹i lín = 1 ThuyÒn rång h×nh thó + 1 ThuyÒn rång ®Çu phông + 1 ThuyÒn rång ®Çu ngùa";
 	Talk(2,"",a..b..c,d..e..f);
@@ -301,7 +301,7 @@ function abouthistory()
 end
 
 function aboutjoin()
-	Talk(2,"","Ng­êi ch¬i gi÷ <color=red>ThuyÒn rång nhá vµ ThuyÒn rång truyÒn thèng<color> lµm <color=red>®éi tr­ëng<color>, dÉn theo c¸c ®éi viªn ®Õn <color=red>LÔ quan<color> b¸o danh tham gia ®ua thuyÒn rång s¬ vµ cao cÊp, mçi giê tæ chøc 1 lÇn, <color=red>®óng giê <color> ®­a ra th«ng b¸o b¾t ®Çu tiÕp nhËn b¸o danh. Thêi gian b¸o danh lµ 5phót.","Thi ®Êu s¬ cÊp cho phĞp nhiÒu nhÊt <color=red>8<color> ®éi cïng tham gia ®èi øng víi 8 tÊm b¶n ®å thuyÒn rång;Thi ®Êu cao cÊp cho phĞp nhiÒu nhÊt <color=red>16<color> ®éi cïng tham gia ®èi øng víi 16 tÊm b¶n ®å thuyÒn rång. NÕu sè tªn b¸o danh LÔ quan ë thµnh thŞ nµo ®ã ®· ®Çy. Mêi ng­êi ch¬i ®Õn LÔ quan c¸c thµnh thŞ kh¸c b¸o danh.");
+	Talk(2,"","Íæ¼ÒÓÃ <color=red>Ğ¡ÁúÖÛºÍThuyÒn Rång truyÒn thèng<color> ×÷Îª<color=red>¶Ó³¤<color>, Áì×Å¸÷Î»¶ÓÓÑµ½<color=red>Àñ¹Ù´¦<color> ±¨Ãû²Î¼Ó³õ¼¶ºÍthuyÒn rång cao cÊp£¬Ã»Ğ¡Ê±¾ÙĞĞÒ»´Î,<color=red>µ½Ê± <color>Í¨Öª¿ªÊ¼½ÓÊÜ±¨Ãû¡£±¨ÃûÊ±¼äÎªÎå·ÖÖÓ.","Thi ®Êu s¬ cÊp cho phĞp nhiÒu nhÊt <color=red>8<color> ®éi cïng tham gia ®èi øng víi 8 tÊm b¶n ®å thuyÒn rång;Thi ®Êu cao cÊp cho phĞp nhiÒu nhÊt <color=red>16<color> ®éi cïng tham gia ®èi øng víi 16 tÊm b¶n ®å thuyÒn rång. NÕu sè tªn b¸o danh LÔ quan ë thµnh thŞ nµo ®ã ®· ®Çy. Mêi ng­êi ch¬i ®Õn LÔ quan c¸c thµnh thŞ kh¸c b¸o danh.");
 end
 
 function aboutnotice()
@@ -309,7 +309,7 @@ function aboutnotice()
 end
 
 function dousha()
-	Say(" ³Ô¶¹É³ôÕ×ÓËæ»ú»ñµÃ <color=red>1 Íò, 2 Íò, 5 Íò¾­ÑéÖµ<color> »òÕß²Î¼Ó<color=red>thuyÒn rång cao cÊp<color>, ÄãÕæÏë»»Âğ?",2,"ta muèn ®æi/dousha_yes","Kh«ng cÇn!/OnCancel");
+	Say(" ³Ô¶¹É³ôÕ×ÓËæ»ú»ñµÃ <color=red>1 Íò, 2 Íò, 5 Íò¾­ÑéÖµ<color> »òÕß²Î¼Ó<color=red>®ua thuyÒn rång s¬ cÊp<color>, ÄãÕæÏë»»Âğ?",2,"ta muèn ®æi/dousha_yes","Kh«ng cÇn!/OnCancel");
 end
 
 function dousha_yes()
@@ -328,12 +328,12 @@ function dousha_yes()
 end
 
 function xianggu()
-	Say(" ¡n B¸nh ch­ng nh©n nÊm ngÉu nhiªn nhËn ®­îc <color=red>5 v¹n, 10 v¹n, 25 v¹n ®iÓm kinh nghiÖm<color>hoÆc tham gia<color=red>thuyÒn rång cao cÊp<color>, cã thËt b¹n muèn ®æi kh«ng?",2,"ta muèn ®æi/xianggu_yes","Kh«ng cÇn!/OnCancel");
+	Say(" ¡n³ÔÏã¹½ôÕ×ÓËæ»ú»ñµÃ<color=red>5 Íò, 10 Íò, 25 Íò¾­ÑéÖµ<color>»òÕß²Î¼Ó<color=red>thuyÒn rång cao cÊp<color>, ÄãÕæµÄÏë»»Âğ?",2,"ta muèn ®æi/xianggu_yes","Kh«ng cÇn!/OnCancel");
 end
 
 function xianggu_yes()
 	if(CalcEquiproomItemCount(6,1,423,1) <= 0) then
-		Say(" B¹n kh«ng cã <color=red>ThuyÒn rång truyÒn thèng<color>, kh«ng thÓ ®æi phÇn th­ëng!",0);
+		Say(" ÄãÃ»ÓĞ<color=red>ThuyÒn Rång truyÒn thèng<color>,²»ÄÜ»»½±Àø!",0);
 		return
 	end	
 	if(CalcFreeItemCellCount() < 1) then
@@ -403,8 +403,8 @@ function beastboat_award()
 	local nNowDate = tonumber(date("%d"));	
 	if ( nNowDate == DWORELASTDATE ) then	--Èç¹ûÉÏ´ÎÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊÇµ±ÌìµÄ»°
 		if ( DWORENOWCOUNT >= DWOREMAXCOUNT ) then	--´ïµ½ÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹ch×î´óÊı²»ÄÜÔÙ»»
-			print(" H«m nay dïng thuyÒn rång h×nh thó ®æi huyÒn tinh vµ kho¸ng th¹ch thÇn bİ ®· v­ît møc.")
-			Say(" H«m nay dïng thuyÒn rång h×nh thó ®æi huyÒn tinh vµ kho¸ng th¹ch thÇn bİ qu¸ nhiÒu.L·o phu kh«ng cßn hµng n÷a. H·y thö ®i c¸c thµnh thŞ kh¸c hoÆc ngµy mai h·y ®Õn!",0);
+			print(" ½ñÌìÓÃÊŞÍ·ÁúÖÛ»»È¡Ğş¾§ºÍThÇn bİ kho¸ng th¹chÒÑ³¬¹ıÊıÁ¿.")
+			Say(" ½ñÌìÓÃÊŞÍ·ÁúÖÛ»»È¡Ğş¾§ºÍThÇn bİ kho¸ng th¹chÌ«¶à¡£ÀÏ·òÃ»ÓĞ»õÁË¡£È¥ÆäËû³ÇÊĞ°É£¬Ã÷ÌìÔÙÀ´!",0);
 			return
 		end
 	else	--Èç¹ûÓÃÊŞĞÎÁúÖÛ»»È¡Ğş¾§¡¢ThÇn bİ kho¸ng th¹chÊıÈÕÆÚÓëµ±Ç°²»ÊÇÍ¬Ò»Ìì
@@ -434,7 +434,7 @@ function hugeboat_award()
 		return
 	end	
 	if(CalcFreeItemCellCount() < 6) then
-		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ!",0);
+		Say(" Chç trèng hµnh trang cña b¹n kh«ng ®ñ. S¾p xÕp l¹i råi h·y ®æi nhĞ! ",0);
 		return
 	end
 	
@@ -442,7 +442,7 @@ function hugeboat_award()
 	if ( nNowDate == DWGOLDENLASTDATE ) then	--Èç¹ûÉÏ´ÎÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸ÊÇµ±ÌìµÄ»°
 		if ( DWGOLDENNOWCOUNT >= DWGOLDENMAXCOUNT ) then	--´ïµ½ÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸×î´óÊı²»ÄÜÔÙ»»
 			print(" H«m nay dïng thuyÒn rång lo¹i lín ®æi Trang bŞ hoµng kim ®· ®¹t møc.")
-			Say(" H«m nay dïng thuyÒn rång lo¹i lín ®æi Trang bŞ hoµng kim ®· qu¸ nhiÒu. L·o phu kh«ng cßn hµng n÷a. H·y ®i thµnh thŞ kh¸c thö xem, hoÆc ngµy mai h·y ®Õn!",0);
+			Say(" H«m nay dïng thuyÒn rång lo¹i lín ®æi Trang bŞ hoµng kim ®· ®¹t møc. È¥ÆäËû³ÇÊĞ°É£¬Ã÷ÌìÔÙÀ´!",0);
 			return
 		end
 	else	--Èç¹ûÓÃ¾ŞĞÍÁúÖÛ»»È¡»Æ½ğ×°±¸ÈÕÆÚÓëµ±Ç°²»ÊÇÍ¬Ò»Ìì

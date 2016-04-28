@@ -23,11 +23,11 @@ GUOQINGLIHE_DATE_END = 070924	--ÀñºĞ×îºóÊ¹ÓÃÊ±¼ä
 function main(sel)
 	local nData = tonumber(GetLocalDate("%y%m%d"))
 	if nData >= GUOQINGLIHE_DATE_END then
-		Talk(1,"","Kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.")
+		Talk(1,"","ThËt ®¸ng tiÕc, vËt phÈm nµy ®· qu¸ h¹n sö dông.")
 		return 0 
 	end
 	if ( CalcFreeItemCellCount() < 5 ) then
-		Talk(1,"","Kh«ng ®ñ chç trèng, h·y s¾p xÕp l¹i hµnh trang.")
+		Talk(1,"","ThËt ®¸ng tiÕc, vËt phÈm nµy ®· qu¸ h¹n sö dông.")
 		return 1
 	end
 	local SumPe =  TB_LIBAO[1];

@@ -85,10 +85,10 @@ function repair_goldequip(nItemIndex, nGenre, nQuality, nDetailType, nParticular
 	szSayMsg = 
 	{
 		"Chñ tiÖm:  "..get_repair_qualityname(nQuality).."trang bŞ nµy lµ b¸u vËt vâ l©m, söa ch÷a kh«ng dÔ dµng, ®¹i hiÖp muèn söa ®¬n gi¶n h·y lµ söa kü?",	
-		"Chñ tiÖm: §é bÒn "..get_repair_qualityname(nQuality).." trªn trang bŞ ®¹i hiÖp ®· bŞ hao mßn, cã muèn söa kh«ng?",		
+		"Chñ tiÖm:  ´óÏÀµÄ"..get_repair_qualityname(nQuality).." trªn trang bŞ ®¹i hiÖp ®· bŞ hao mßn, cã muèn söa kh«ng?",		
 	}
 	
-	--print("»Æ½ğ°ü×°±¸Î¬ĞŞ(FixDur, CurMaxDur, OrgMaxDur): "..nFixDur..","..nCurMaxDur..","..nOrgMaxDur);
+	--print("Hoµng Kim°ü×°±¸Î¬ĞŞ(FixDur, CurMaxDur, OrgMaxDur): "..nFixDur..","..nCurMaxDur..","..nOrgMaxDur);
 	if (nFixDur > 0) and (nCurMaxDur == nOrgMaxDur) then
 		-- Ö»ÄÜĞŞÄÍ¾Ã¶È
 		--print("Ö»ÄÜĞŞÄÍ¾Ã¶È");
@@ -120,7 +120,7 @@ function RePairGE_Costly()
 		-- ÒÔ v¹nÁ½×÷ÏÔÊ¾µ¥Î»
 		_nCostlyW = floor(nCostlyPrice / 10000);
 		_nCostly = mod(nCostlyPrice, 10000);
-		Talk(1,"","¤ng chñ: Söa ch÷a cÇn".._nCostlyW.." v¹n".._nCostly.." l­îng, ng©n l­îng trªn ng­êi b¹n kh«ng ®ñ!")
+		Talk(1,"","Chñ tiÖm:  ĞŞÀíĞè".._nCostlyW.." v¹n".._nCostly.." l­îng, ng©n l­îng trªn ng­êi b¹n kh«ng ®ñ!")
 	end
 
 end;
@@ -147,7 +147,7 @@ function RePairGE_Cheap()
 		-- ÒÔ v¹nÁ½×÷ÏÔÊ¾µ¥Î»
 		_nCheapW = floor(nCheapPrice / 10000);
 		_nCheap = mod(nCheapPrice, 10000);
-		Talk(1,"","¤ng chñ: Phİ söa ch÷a cÇn [".._nCheapW.." v¹n".._nCheap.." l­îng]trªn ng­êi b¹n mang kh«ng ®ñ ng©n l­îng!")
+		Talk(1,"","Chñ tiÖm:  ĞŞÀí·ÑÓÃĞè[".._nCheapW.." v¹n".._nCheap.." l­îng]trªn ng­êi b¹n mang kh«ng ®ñ ng©n l­îng!")
 	end
 end;
 
@@ -157,12 +157,12 @@ function RepairGE_ReStoreMax()
 	nOrgMaxDur = GetTaskTemp(TTID_OrgMaxDur);
 	nCurMaxDur = GetTaskTemp(TTID_CurMaxDur);
 	-- if (nCurMaxDur > nOrgMaxDur) then
-	--	WriteLog(GetLoop()..date("%m%d-%H:%M").."»Æ½ğ×°±¸ÄÍ¾Ã¶ÈÉÏÏŞÓĞ´í!")
+	--	WriteLog(GetLoop()..date("%m%d-%H:%M").."Hoµng Kim×°±¸ÄÍ¾Ã¶ÈÉÏÏŞÓĞ´í!")
 	--	return -1;
 	-- end
 	
 	if (nCurMaxDur == nOrgMaxDur) then
-		Talk(1, "", "Bé trang bŞ nµy t¹m thêi kh«ng cÇn söa!")
+		Talk(1, "", "Chñ tiÖm:  ÄúµÄ×°±¸ÔİÊ±²»ĞèÒªĞŞÀí¡£")
 		return 1;
 	end
 	
@@ -178,7 +178,7 @@ function RepairGE_ReStoreMax()
 	elseif (j240 > 0) then
 		DelItemEx(240)
 	else
-		Talk(1,"","Kh¸ch quan kh«ng cã Thñy Tinh")
+		Talk(1,"","Chñ tiÖm:  ÄúÉíÉÏÃ»ÓĞË®¾§¡£")
 		return -1;
 	end
 
@@ -199,18 +199,18 @@ function RepairGE_ReStoreMax_Oil()
 	nOrgMaxDur = GetTaskTemp(TTID_OrgMaxDur);
 	nCurMaxDur = GetTaskTemp(TTID_CurMaxDur);
 	-- if (nCurMaxDur > nOrgMaxDur) then
-	--	WriteLog(GetLoop()..date("%m%d-%H:%M").."»Æ½ğ×°±¸ÄÍ¾Ã¶ÈÉÏÏŞÓĞ´í!")
+	--	WriteLog(GetLoop()..date("%m%d-%H:%M").."Hoµng Kim×°±¸ÄÍ¾Ã¶ÈÉÏÏŞÓĞ´í!")
 	--	return -1;
 	-- end
 	
 	if (nCurMaxDur == nOrgMaxDur) then
-		Talk(1, "", "Bé trang bŞ nµy t¹m thêi kh«ng cÇn söa!")
+		Talk(1, "", "Chñ tiÖm:  ÄúµÄ×°±¸ÔİÊ±²»ĞèÒªĞŞÀí¡£")
 		return 1;
 	end
 	
 	local nBindState = GetItemBindState(nItemIndex);
 	if (nBindState == 0) then
-		Talk(1, "", "Chñ tiÖm: <color=yellow> Tu Phôc ThÇn Du<color> chØ cã thÓ söa ch÷a<color=red> trang bŞ ë tr¹ng th¸i khãa <color>")
+		Talk(1, "", "Chñ tiÖm:  <color=yellow>ĞŞ¸´ÉñÓÍ<color>Ö»ÄÜĞŞ¸´<color=red>°ó¶¨<color>×´Ì¬µÄ×°±¸¡£")
 		return 1;
 	end
 	
@@ -220,7 +220,7 @@ function RepairGE_ReStoreMax_Oil()
 	if (nOilCount > 0) then
 		ConsumeEquiproomItem(1, 6, 1, 2565, -1);
 	else
-		Talk(1,"","Chñ tiÖm: Ng­¬i kh«ng mang theo Tu Phôc ThÇn Du")
+		Talk(1,"","Chñ tiÖm:  ÄúÉíÉÏÃ»ÓĞĞŞ¸´ÉñÓÍ¡£")
 		return -1;
 	end
 
@@ -244,9 +244,9 @@ end;
 function RePairGE_About()
 	_szInfo = 
 	{
-		"<color=green>Söa ®¬n gi¶n:<color> gi¸ rÏ h¬n, sau khi söa ch÷a ®é bÒn trang bŞ lín nhÊt sÏ gi¶m xuèng<enter>",	
-		"<color=green>Söa kü:<color> gi¸ cao h¬n, sau khi söa ch÷a ®é bÒn lín nhÊt trang kh«ng bŞ gi¶m xuèng<enter>",		
-		"<color=green>Kh«i phôc giíi h¹n ®é bÒn: <color>Sö dông thñy tinh ®Ó kh«i phôc l¹i giíi h¹n "..get_repair_qualityname(nQuality).."®é bÒn trªn trang bŞ.",
+		"<color=green>¼òĞŞ:<color>¼Û¸ñ±ãÒË£¬µ«ĞŞÀíºó×°±¸ÄÍ¾Ã¶ÈÉÏÏŞ»á½µµÍ<enter>",	
+		"<color=green>¾«ĞŞ:<color>¼Û¸ñ°º¹ó£¬ĞŞÀíºó×°±¸ÄÍ¾Ã¶ÈÉÏÏŞ²»»á½µµÍ<enter>",		
+		"<color=green>ĞŞ¸´ÄÍ¾Ã¶ÈÉÏÏŞ:<color>Ê¹ÓÃË®¾§¿ÉÒÔĞŞ¸´"..get_repair_qualityname(nQuality).."®é bÒn trªn trang bŞ.",
 		" <enter>Tu Phôc ThÇn Du chØ cã thÓ söa ch÷a trang bŞ khãa",
 	}
 	szInfo = _szInfo[1].._szInfo[2].._szInfo[3].._szInfo[4];
@@ -256,7 +256,7 @@ end;
 
 -- ¹ØÓÚHoµng Kim×°±¸Ä¥ËğÉÏÏŞµÄĞŞ¸´
 --function RePairGE_AboutRestorMax()
---	Talk(1, "", "Ê¹ÓÃ<color=red>Ë®¾§<color>¿ÉÒÔĞŞ¸´»Æ½ğ×°±¸µÄ²¿·ÖÄÍ¾Ã¶ÈÉÏÏŞ")
+--	Talk(1, "", "Ê¹ÓÃ<color=red>Ë®¾§<color>¿ÉÒÔĞŞ¸´Hoµng Kim×°±¸µÄ²¿·ÖÄÍ¾Ã¶ÈÉÏÏŞ")
 --end;
 
 -----------------------------------------------------------------------------

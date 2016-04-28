@@ -167,7 +167,7 @@ end
 
 -- À´µ½ÁúÈª´åÓë¸µÀ×ÊéµÄ¶Ô»°
 function task_level30_09()
-	Talk(17,"task_level30_10","Khô! Khô! Ai da! NghÌo thËt lµ khæ!..","L·o b¸ b¸......","§Õn mêi l·o giµ nµy uèng ruîu ch¨ng?","L·o tr­îng phu......","Bé ta giµ l¾m råi ­?","L·o tiªn sinh...","µ...... B¹n trÎ cã chuyÖn g×?","Nghe nãi Tiªn sinh am hiÓu vïng Giang Nam, ta muèn hái th¨m mét ng­êi?","Ha ha ha! B¹n trÎ hái ®óng råi ng­êi råi! Ta ®· cã biÖt hiÖu lµ Giang Nam V¹n Sù Th«ng th× kh«ng cã chuyÖn g× kh«ng biÕt.","Ha ha! ThÕ th× c¸m ¬n l·o tiªn sinh.","VËy th× ®­a tiÒn ®©y.","H¶?!","H¶ c¸i g×? Ch¼ng lÏ muèn biÕt chuyÖn mµ kh«ng ph¶i tr¶ tiÒn sao?","ViÖc nµy......Ta muèn biÕt Th¸i Nghª vî cña D­¬ng Ch©u Tiªu S­ H¹ HÇu Phôc hiÖn ®ang ë ®©u mÊt bao nhiªu tiÒn?","T×m ng­êi µ......Th©n phËn ng­êi muèn t×m cµng cao th× ph¶i tr¶ cµng nhiÒu tiÒn, cho nªn muèn biÕt Th¸i Nghª vî cña H¹ HÇu Phôc......","Ng­êi nµy lai lŞch kh«ng ®¬n gi¶n, vËy ph¶i mÊt 1 v¹n l­îng.","C¸i g×! §óng lµ......#??%%?%");
+	Talk(17,"task_level30_10","Khô! Khô! Ai da! NghÌo thËt lµ khæ!..","L·o b¸ b¸......","§Õn mêi l·o giµ nµy uèng ruîu ch¨ng?","L·o tr­îng phu......","Bé ta giµ l¾m råi ­?","L·o tiªn sinh...","µ...... B¹n trÎ cã chuyÖn g×?",".....….ÌıÎÅÀÏÏÈÉú¶Ô½­ÄÏÊÇÎŞÊÂ²»Ïş£¬²»Öª¿É·ñÏòÄú´òÌıÒ»¸öÈË£¿","Ha ha ha! B¹n trÎ hái ®óng råi ng­êi råi! Ta ®· cã biÖt hiÖu lµ Giang Nam V¹n Sù Th«ng th× kh«ng cã chuyÖn g× kh«ng biÕt.","Ha ha! ThÕ th× c¸m ¬n l·o tiªn sinh.","VËy th× ®­a tiÒn ®©y.","H¶?!","H¶ c¸i g×? Ch¼ng lÏ muèn biÕt chuyÖn mµ kh«ng ph¶i tr¶ tiÒn sao?","ChuyÖn nµy......ÎÒÏëÖªµÀÑïÖİïÚÊ¦ÏÄºî¸´Ö®Ç°µÄÆŞ×Ó²ÊÄŞÏÖÔÚÔÚºÎ´¦ĞèÒª½»¶àÉÙÇ®°¡£¿","T×m ng­êi µ......Th©n phËn ng­êi muèn t×m cµng cao th× ph¶i tr¶ cµng nhiÒu tiÒn, cho nªn muèn biÕt Th¸i Nghª vî cña H¹ HÇu Phôc......","Ng­êi nµy lai lŞch kh«ng ®¬n gi¶n, vËy ph¶i mÊt 1 v¹n l­îng.","C¸i g×! §óng lµ......#??%%?%");
 end
 
 -- ÓÃÒÔÅĞ¶ÏÍæ¼ÒÉíÉÏËù³ÖÓĞµÄ½ğÇ®ÊÇ·ñ´ïµ½ÒªÇó
@@ -199,7 +199,7 @@ end
 
 -- Ö®Ç°Ã»ÓĞÇ®£¬µÈÉíÉÏÓĞÁË×ã¹»µÄÒø×Ó¸ø¸µÀ×ÊéºóµÄ¶Ô»°
 function task_level30_13()
-	Talk(10,"task_level30_11","ThÕ nµo? §em tiÒn ®i hái ng­êi kh¸c µ?","......¤ng ®Õm thö xem.?§au lßng?","B¹n trÎ? Ng­¬i lµm sao thÕ? T¹i sao l¹i r¬i n­íc m¾t?","Kh«ng sao......bŞ c¸t v« m¾t th«i......","Võa ®óng 1 v¹n l­îng. Th¸i Nghª vèn lµ vî cña H¹ HÇu Phôc, nh­ng do H¹ HÇu Phôc ®am mª töu s¾c, phô rÉy Th¸i Nghª. Cuèi cïng Th¸i Nghª quyÕt ®Şnh chon con ®­êng cña m×nh","Th¸i Nghª quyÕt t©m khæ luyÖn ®éc thuËt, trong 10 n¨m ng¾n ngñi ®· luyÖn thµnh......","ThÕ c« ta ®ang ë ®©u?","Th¸i Nghª lµ mét trong Ngò §¹i H­¬ng chñ Ngò §éc gi¸o MÆc Thï H­¬ng chñ!","Th× ra lµ vËy....ThÕ t¹m biÖt ë ®©y vËy.","LÇn sau nhí ®em nhiÒu tiÒn qua..");
+	Talk(10,"task_level30_11","ThÕ nµo? §em tiÒn ®i hái ng­êi kh¸c µ?",".....….ÄãÊıÊı¿´°É¡££¨ĞÄÍ´£©","B¹n trÎ? Ng­¬i lµm sao thÕ? T¹i sao l¹i r¬i n­íc m¾t?","Kh«ng sao......bŞ c¸t v« m¾t th«i......","Võa ®óng 1 v¹n l­îng. Th¸i Nghª vèn lµ vî cña H¹ HÇu Phôc, nh­ng do H¹ HÇu Phôc ®am mª töu s¾c, phô rÉy Th¸i Nghª. Cuèi cïng Th¸i Nghª quyÕt ®Şnh chon con ®­êng cña m×nh","Th¸i Nghª quyÕt t©m khæ luyÖn ®éc thuËt, trong 10 n¨m ng¾n ngñi ®· luyÖn thµnh......","ThÕ c« ta ®ang ë ®©u?","Th¸i Nghª lµ mét trong Ngò §¹i H­¬ng chñ Ngò §éc gi¸o MÆc Thï H­¬ng chñ!","Th× ra lµ vËy....ThÕ t¹m biÖt ë ®©y vËy.","LÇn sau nhí ®em nhiÒu tiÒn qua..");
 end
 
 -- À´µ½Îå¶¾½ÌºóÓëÉ£ÖéµÄ¶Ô»°
@@ -263,7 +263,7 @@ end
 
 -- À´µ½Îäµ±ÅÉºóÓëÒ¦Ê¯ÃÅµÄ¶Ô»°
 function task_level40_01()
-	Talk(9,"task_level40_01_01"," (Trªn cæ h¾n ®eo sîi d©y chuyÒn g× l¹ qu¸??","Sîi d©y chuyÒn nµy huynh tõ ®©u mµ cã?","Sîi d©y chuyÒn nµy? Ta còng kh«ng râ......S­ phô nãi lóc nhÆt ta vÒ trªn ng­êi ®· cã nã "," (§óng lµ huynh råi! VËy sîi nµy nhÊt ®Şnh lµ TrÊn Minh Chi Liªn råi!?","ThÕ ThiÕu hiÖp cã tõng nghÜ sÏ ®i t×m mÑ kh«ng?","ChuyÖn nµy ta tr­íc giê ch­a nghÜ tíi, S­ phô hiÖn nay Quèc gia l©m n¹n, chóng ta nh÷ng ng­êi tËp vâ nªn gãp mét phÇn søc lùc.","Nh­ng cã thÓ mÑ ng­¬i ®ang chê ng­¬i? Ta t­ëng cã thÓ gióp huynh t×m l¹i mÑ m×nh.","ThËt µ? Ng­¬i ®· gÆp qua mÑ ta?","Cã lÏ cã mét ng­êi ®óng thËt lµ mÑ ng­¬i......ta còng kh«ng ch¾c l¾m, hay lµ cïng ta ®i th¨m bµ ta mét chuyÕn?");
+	Talk(9,"task_level40_01_01",".....….£¨Ëû²±×ÓÉÏ´÷×ÅµÄÏîÁ´ÔõÃ´ÕâÃ´ÆæÌØ£¿£©","Sîi d©y chuyÒn nµy huynh tõ ®©u mµ cã?","Sîi d©y chuyÒn nµy? Ta còng kh«ng râ......S­ phô nãi lóc nhÆt ta vÒ trªn ng­êi ®· cã nã "," (§óng lµ huynh råi! VËy sîi nµy nhÊt ®Şnh lµ TrÊn Minh Chi Liªn råi!?","ThÕ ThiÕu hiÖp cã tõng nghÜ sÏ ®i t×m mÑ kh«ng?","ChuyÖn nµy ta tr­íc giê ch­a nghÜ tíi, S­ phô hiÖn nay Quèc gia l©m n¹n, chóng ta nh÷ng ng­êi tËp vâ nªn gãp mét phÇn søc lùc.","Nh­ng cã thÓ mÑ ng­¬i ®ang chê ng­¬i? Ta t­ëng cã thÓ gióp huynh t×m l¹i mÑ m×nh.","ThËt µ? Ng­¬i ®· gÆp qua mÑ ta?","Cã lÏ cã mét ng­êi ®óng thËt lµ mÑ ng­¬i......ta còng kh«ng ch¾c l¾m, hay lµ cïng ta ®i th¨m bµ ta mét chuyÕn?");
 end
 
 -- ¶Ô»°À©Õ¹
@@ -321,7 +321,7 @@ local curCamp = nt_getCamp()
 	myText1 = "280.000 ®iÓm kinh nghiÖm"
 	myText2 = "B¹n ®· ®­îc tÈy toµn bé ®iÓm kü n¨ng!"	
 	
-	Msg2Player("B¹n nhËn ®­îc TrÊn Minh Chi Liªn!");
+	Msg2Player("B¹n nhËn ®­îcÕòÚ¤Ö®Á´£¡");
 	
 	if (curCamp==2) then
 		AddOwnExp(280000)
@@ -350,7 +350,7 @@ end
 
 -- ÔÚÁúÈª´åÓë¸µÀ×ÊéµÄ¶Ô»°
 function task_level50_01()
-	Talk(5,"task_level50_01_01","Tiªn sinh! ¤ng biÕt lai lŞch cña d©y chuyÒn nµy?","VËt nµy......kh«ng ph¶i lµ 'TrÊn Minh Chi Liªn' trong 'Thiªn Hoµng Long Khİ' sao?","VËy cuèi cïng Long Khİ cã bİ mËt g×?","Ng­¬i cã biÕt  'Thiªn Hoµng Long Khİ' tæng céng cã 8 c¸i, ®­îc chÕ t¹o t¹i Hµm D­¬ng. Sau ®ã TÇn Thñy Hoµng qua ®êi nã còng mÊt tİch theo. NÕu tËp hîp ®ñ 8 mãn sÏ biÕt ®­îc 1 bİ mËt kinh ng­êi.","Mét bİ mËt kinh ng­êi? VËy cuèi cïng lµ thÕ nµo?");
+	Talk(5,"task_level50_01_01","Tiªn sinh! ¤ng biÕt lai lŞch cña d©y chuyÒn nµy?","VËt nµy......kh«ng ph¶i lµ 'TrÊn Minh Chi Liªn' trong 'Thiªn Hoµng Long Khİ' sao?","VËy cuèi cïng Long Khİ cã bİ mËt g×?","Ng­¬i cã biÕt  'Thiªn Hoµng Long Khİ' tæng céng cã 8 c¸i, ®­îc chÕ t¹o t¹i Hµm D­¬ng. Sau ®ã TÇn Thñy Hoµng qua ®êi nã còng mÊt tİch theo. NÕu tËp hîp ®ñ 8 mãn sÏ biÕt ®­îc 1 bİ mËt kinh ng­êi.",".....….Ò»¸ö¾ªÈËµÄÃØÃÜ£¿ÄÇµ¹µ×ÊÇÊ²Ã´Âï£¿");
 end
 
 
@@ -430,12 +430,12 @@ local curCamp = nt_getCamp()
 		AddItem(6,1,71,1,1,1)  --Ôö¼ÓÒ»¸öÏÉ²İÂ¶
 		ex_add_xp_level50();
 	
-		Msg2Player("B¹n nhËn ®­îc 350.000 ®iÓm kinh nghiÖm");
-		Msg2Player("B¹n nhËn ®­îc mét b×nh Tiªn Th¶o Lé ");
+		Msg2Player("B¹n nhËn ®­îc 350000 µã¾­ÑéÖµ");
+		Msg2Player("B¹n nhËn ®­îcÒ»¸öÏÉ²İÂ¶");
 	else
 		AddOwnExp(350000)
 		AddExp_Skill_Extend(350000)
-		Msg2Player("B¹n nhËn ®­îc 350.000 ®iÓm kinh nghiÖm");
+		Msg2Player("B¹n nhËn ®­îc 350000 µã¾­ÑéÖµ");
 	end
 	
 	Talk(8,"","Ng­¬i......T¹i sao ng­¬i l¹i truy s¸t ta?","RÊt ®¬n gi¶n! Ta muèn lÊy 'Bµn Long C«i' cña «ng","Hõ......Th× ra lµ v× thø nµy.","RÊt tiÕc mét th¸ng tr­íc ®· bŞ Hoµn Nhan Hïng Khang c­íp ®i......","Hoµn Nhan Hïng Khang?","Lµ Quèc s­ §¹i Kim Hoµn Nhan Hïng Khang! Cã b¶n lÜnh th× h·y ®Õn t×m h¾n!",".....….","Sî g× chø! Ta sÏ ®Õn <color=yellow>Thiªn NhÉn Gi¸o<color> xem thö!");
@@ -463,7 +463,7 @@ end
 
 -- ¶Ô»°À©Õ¹
 function task_level60_03_01()
-	Talk(4,"task_level60_04","ViÖc nµy......®Ó  ta nghÜ xem,  T­íng lÜnh Liªu §Şnh n­íc Tèng ®ang chèng l¹i §¹i Kim ta, nÕu ng­¬i cã thÓ ®¸nh th¾ng h¾n cã lÏ ta sÏ cho ng­¬i gÆp Hïng Khang.","T¹i sao ta ph¶i nghe lêi c«?","Ha ha! ChØ sî trªn thÕ gian nµy ngoµi ta ra kh«ng cã ai biÕt hµnh tung cña Hïng Khang.","VËy ®­îc, cho ta biÕt Liªu §Şnh ®ang ë ®©u?");
+	Talk(4,"task_level60_04","ViÖc nµy......®Ó  ta nghÜ xem,  T­íng lÜnh Liªu §Şnh n­íc Tèng ®ang chèng l¹i §¹i Kim ta, nÕu ng­¬i cã thÓ ®¸nh th¾ng h¾n cã lÏ ta sÏ cho ng­¬i gÆp Hïng Khang.","T¹i sao ta ph¶i nghe lêi c«?","Ha ha! ChØ sî trªn thÕ gian nµy ngoµi ta ra kh«ng cã ai biÕt hµnh tung cña Hïng Khang.",".....….ÄÇºÃ°É£¬¸æËßÎÒÁÎ¶¨ÏÖÔÚÔÚÊ²Ã´µØ·½¡£");
 end
 
 -- ÅĞ¶ÏÍæ¼ÒµÈ¼¶ÊÇ·ñ´ïµ½ 60 ¼¶
@@ -491,9 +491,9 @@ function task_level60_06()
 	
 	AddOwnExp(800000)
 	AddExp_Skill_Extend(800000)
-	Msg2Player("B¹n nhËn ®­îc 800.000 ®iÓm kinh nghiÖm!");
+	Msg2Player("B¹n nhËn ®­îc 800000 µã¾­ÑéÖµ£¡");
 	
-	Talk(10,"",":......",".....Ch¼ng ngê Liªu §Şnh ta......cuèi cïng chÕt d­íi tay ng­êi Tèng!","Liªu t­íng qu©n, ta víi ng­¬i vèn kh«ng thï kh«ng o¸n, nh­ng v× thñ cÊp ng­¬i cã thÓ gióp ta cã ®­îc mãn ®å ®ang cÇn.","Ha ha......Ta ch¼ng ngê ®Çu cña Liªu §Şnh ta chØ ®¸ng ®æi mét vËt g× th«i sao?","Bµn Long C«i trong Thiªn Hoµng Long Khİ.",":......","B¹n trÎ......Lêi cña bän Kim kh«ng ®¸ng tin......","Thiªn Hoµng Long Khİ mµ ng­¬i muèn t×m...mét khi tËp hîp ®ñ cã thÓ gióp §¹i Tèng ®o¹t l¹i giang s¬n, còng cã thÓ gióp §¹i Kim x©m chiÕm ®¹i giang nam b¾c, b¸ t¸nh sinh linh ®å th¸n!"," Tµ chİnh x­a nay vèn kh«ng ®éi trêi chung! ThËt uæng cho ng­¬i.....",".....….");
+	Talk(10,"",":......",":......ÎÒÍòÍòÃ»Ïëµ½ÎÒÁÎ¶¨¡­¡­×îÖÕ¾¹È»ÊÇËÀÔÚ´óÒ»¸öËÎ×ÓÃñµÄÊÖÀï£¡","Liªu t­íng qu©n, ta víi ng­¬i vèn kh«ng thï kh«ng o¸n, nh­ng v× thñ cÊp ng­¬i cã thÓ gióp ta cã ®­îc mãn ®å ®ang cÇn.","Ha ha......Ta ch¼ng ngê ®Çu cña Liªu §Şnh ta chØ ®¸ng ®æi mét vËt g× th«i sao?","Bµn Long C«i trong Thiªn Hoµng Long Khİ.",":......","B¹n trÎ......Lêi cña bän Kim kh«ng ®¸ng tin......","Thiªn Hoµng Long Khİ mµ ng­¬i muèn t×m...mét khi tËp hîp ®ñ cã thÓ gióp §¹i Tèng ®o¹t l¹i giang s¬n, còng cã thÓ gióp §¹i Kim x©m chiÕm ®¹i giang nam b¾c, b¸ t¸nh sinh linh ®å th¸n!"," Tµ chİnh x­a nay vèn kh«ng ®éi trêi chung! ThËt uæng cho ng­¬i.....",".....….");
 end
 
 -- Íæ¼ÒÕ½Ê¤ÁËÁÎ¶¨Ö®ºó»Øµ½ÁúÃÅÕòÓë¶ËÄ¾ÇåµÄ¶Ô»°
@@ -505,6 +505,6 @@ end
 function task_level60_08()
 	nt_setTask(1003,430)
 	ex_add_xp_level60();
-	Msg2Player("B¹n nhËn ®­îc Bµn Long C«i!");
+	Msg2Player("B¹n nhËn ®­îcÌì»ÍÁúÆ÷Ö®Ò»µÄÅÍÁú¹å£¡");
 	AddSkillState( 509, 1, 0, 180);
 end

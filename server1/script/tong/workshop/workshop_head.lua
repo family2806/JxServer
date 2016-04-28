@@ -249,20 +249,20 @@ function SVR_CheckLevelUp(nTongID, nID, nToLevel)
 	if (nRet == 0) then
 		return 1
 	elseif (nRet == 1) then
-		Msg2Player("T¸c ph­êng nµy ®· ®¹t ®Õn cÊp cao nhÊt, muèn n©ng cÊp t¸c ph­êng cÇn ph¶i n©ng ®¼ng cÊp kiÕn thiÕt tr­íc!")
+		Msg2Player("¸Ã×÷·»ÒÑ´ïµ±Ç°×î´óµÈcÊp£¬ÏëÌá¸ß×÷·»µÈcÊpĞèÒª¸ü¸ßµÄ°ï»á½¨ÉèµÈcÊp£¡")
 	elseif (nRet == 2) then
-		Msg2Player("Ng©n s¸ch kiÕn thiÕt bang kh«ng ®ñ, kh«ng thÓ n©ng cÊp t¸c ph­êng nµy.")
+		Msg2Player("°ï»á½¨Éè»ù½ğ²»×ã£¬²»ÄÜÉıcÊp¸Ã×÷·»¡£")
 	elseif (nRet == 3) then
-		Msg2Player("Bang héi ®ang t¹m ngõng ho¹t ®éng, kh«ng thÓ n©ng cÊp t¸c ph­êng!")	
+		Msg2Player("°ï»á´¦ÓÚÔİÍ£×´Ì¬£¬²»ÄÜÉıcÊp×÷·»£¡")	
 	elseif (nRet == 4) then
-		Msg2Player("Sau khi n©ng cÊp, ng©n s¸ch chiÕn bŞ thÊp h¬n ng©n s¸ch b¶o tr× hµng tuÇn, kh«ng thÓ n©ng cÊp t¸c ph­êng nµy!")	
+		Msg2Player("ÉıcÊpºóÕ½±¸»ù½ğµÍÓÚÖÜÎ¬»¤Õ½±¸»ù½ğ£¬²»ÄÜÉıcÊp¸Ã×÷·»£¡")	
 	end	
 	return 0
 end
 
 function SVR_DoLevelUp(nTongID, nID, nToLevel)
 		--Ê¹ÓÃµÈcÊp
-	Say("Ng­¬i cã thÓ n©ng ®¼ng cÊp sö dông t¸c ph­êng b»ng víi ®¼ng cÊp t¸c ph­êng, cã ®ång ı kh«ng?", 2, "Muèn/#SetUSeLevel("..nTongID..","..
+	Say("ÄãÏÖÔÚ¿ÉÒÔÁ¢¼´ÌáÉı×÷·»Ê¹ÓÃµÈcÊpÎªµ±Ç°×÷·»µÈcÊp£¬ÒªÉè¶¨Âğ£¿", 2, "Muèn/#SetUSeLevel("..nTongID..","..
 		nID..")", "Kh«ng muèn/cancel")
 	return 1
 end
@@ -273,7 +273,7 @@ function SetUSeLevel(nTongID, nID)
 		TWS_ApplySetUseLevel(nTongID, nID, nLevel)
 		TWS_ApplySetUseLevelSet(nTongID, nID, nLevel)
 	end
-	Msg2Player("§¼ng cÊp sö dông t¸c ph­êng ®­îc n©ng lªn b»ng víi ®¼ng cÊp t¸c ph­êng!")
+	Msg2Player("×÷·»Ê¹ÓÃµÈcÊpÒÑµ÷ÕûÎª×÷·»µ±Ç°µÈcÊp£¡")
 end
 
 function SVR_CheckOpen(nTongID, nID)
@@ -342,7 +342,7 @@ function SVR_CheckLearn(nTongID, eType)
 	if (nRet == 0) then
 		return 1
 	elseif (nRet == 1) then
-		Msg2Player("Sè l­îng t¸c ph­êng ®· ®¹t giíi h¹n, muèn x©y dùng thªm cÇn ph¶i n©ng ®¼ng cÊp kiÕn thiÕt lªn!")	
+		Msg2Player("¹ó°ï×÷·»ÊıÁ¿ÒÑ´ïµ±Ç°ÉÏÏŞ£¬Ïë½¨¸ü¶àµÄ×÷·»ĞèÒªÌá¸ß°ï»á½¨ÉèµÈcÊp£¡")	
 	elseif (nRet == 2) then
 		Msg2Player("T¸c ph­êng nµy ®· cã råi!")
 	elseif (nRet == 3) then
@@ -391,7 +391,7 @@ function SVR_CheckDegrade(nTongID, nID, nToLevel)
 	if (nRet == 0) then
 		return 1
 	elseif (nRet == 1) then
-		Msg2Player("T¸c ph­êng ®· ë cÊp thÊp nhÊt, kh«ng thÓ gi¶m cÊp n÷a!")
+		Msg2Player("×÷·»ÒÑ´ï×îµÍµÈcÊp£¬²»ÄÜÔÙ½µcÊp£¡")
 	end
 	return 0	
 end
@@ -420,42 +420,42 @@ function SetULConfirm(nTongID, nID)
 		nCurLevelSet = nUpperLevel
 	end
 	local eType = TWS_GetType(nTongID, nID)
-	Say("<#>HiÖn t¹i, <color=yellow>"..wsGetName(eType).."<color>®¼ng cÊp thùc tÕ lµ <color=blue>"..
-		nLevel.."<color>, ®¼ng cÊp sö dông lµ <color=blue>"..nCurLevel.."<color>\n ®· ®­îc ®iÒu chØnh ®¼ng cÊp sö dông, "..
-		"sau khi <color=red>b¶o tr× hµng tuÇn<color> sÏ cã hiÖu lùc, ®¼ng cÊp sö dông hiÖn t¹i lµ <color=blue>"..nCurLevelSet.."<color>, "..
-		"ng­¬i muèn ®iÒu chØnh ®¼ng cÊp sö dông cho tuÇn sau thÕ nµo?",3,"CÊp 1 ®Õn 5/#SetUseLevelSet("..nTongID..","..nID..",1)",
-		"CÊp 6 ®Õn 10/#SetUseLevelSet("..nTongID..","..nID..",2)", "Ta muèn rêi khái!/cancel")
+	Say("<#>HiÖn t¹i, <color=yellow>"..wsGetName(eType).."<color>Êµ¼ÊµÈcÊpÎª<color=blue>"..
+		nLevel.."<color>cÊp£¬Ê¹ÓÃµÈcÊpÎª<color=blue>"..nCurLevel.."<color>cÊp\n¾­¹ıµ÷ÕûµÄÊ¹ÓÃµÈcÊpÉè¶¨£¬"..
+		"ThiÕt lËp ÔÚÏÂ´Î<color=red>ÖÜÎ¬»¤<color>ºóÉúĞ§¡£µ±Ç°¸ÃÊ¹ÓÃµÈcÊpÉè¶¨Îª<color=blue>"..nCurLevelSet.."<color>cÊp£¬"..
+		"ÄãÒªThiÕt lËp ÏÂÖÜÉúĞ§µÄÊ¹ÓÃµÈcÊpÉè¶¨µ÷ÕûÎª¶àÉÙ£¿",3,"1~5cÊp/#SetUseLevelSet("..nTongID..","..nID..",1)",
+		"6~10cÊp/#SetUseLevelSet("..nTongID..","..nID..",2)", "Ta muèn rêi khái!/cancel")
 end
 
 function SetUseLevelSet(nTongID, nID, nFlag)
 	if nFlag == 1 then
-		Say("H·y lùa chän ®¼ng cÊp:  ", 6, "CÊp 1/#SUS_Chose("..nTongID..","..nID..",1)", "CÊp 2/#SUS_Chose("..nTongID..","..nID..",2)",
-			"CÊp 3/#SUS_Chose("..nTongID..","..nID..",3)", "CÊp 4/#SUS_Chose("..nTongID..","..nID..",4)",
-			"CÊp 5/#SUS_Chose("..nTongID..","..nID..",5)", "Trë l¹i/#SetULConfirm("..nTongID..","..nID..")")
+		Say("ÇëÑ¡ÔñÒ»¸öµÈcÊp£º", 6, "1cÊp/#SUS_Chose("..nTongID..","..nID..",1)", "2cÊp/#SUS_Chose("..nTongID..","..nID..",2)",
+			"3cÊp/#SUS_Chose("..nTongID..","..nID..",3)", "4cÊp/#SUS_Chose("..nTongID..","..nID..",4)",
+			"5cÊp/#SUS_Chose("..nTongID..","..nID..",5)", "Trë l¹i/#SetULConfirm("..nTongID..","..nID..")")
 	elseif nFlag == 2 then
-		Say("H·y lùa chän ®¼ng cÊp:  ", 6, "CÊp 6/#SUS_Chose("..nTongID..","..nID..",6)", "CÊp 7/#SUS_Chose("..nTongID..","..nID..",7)",
-			"CÊp 8/#SUS_Chose("..nTongID..","..nID..",8)", "CÊp 9/#SUS_Chose("..nTongID..","..nID..",9)",
-			"CÊp 10/#SUS_Chose("..nTongID..","..nID..",10)", "Trë l¹i/#SetULConfirm("..nTongID..","..nID..")")
+		Say("ÇëÑ¡ÔñÒ»¸öµÈcÊp£º", 6, "6cÊp/#SUS_Chose("..nTongID..","..nID..",6)", "7cÊp/#SUS_Chose("..nTongID..","..nID..",7)",
+			"8cÊp/#SUS_Chose("..nTongID..","..nID..",8)", "9cÊp/#SUS_Chose("..nTongID..","..nID..",9)",
+			"10cÊp/#SUS_Chose("..nTongID..","..nID..",10)", "Trë l¹i/#SetULConfirm("..nTongID..","..nID..")")
 	end
 end
 
 function SUS_Chose(nTongID, nID, nLevel)
 	local nWsLevel = TWS_GetLevel(nTongID, nID)
 	if (nLevel > nWsLevel)then
-		Say("§¼ng cÊp sö dông ®­îc chän kh«ng thÓ lín h¬n ®¼ng cÊp t¸c ph­êng hiÖn t¹i", 1, "BiÕt råi/cancel")
+		Say("ËùÑ¡µÄÊ¹ÓÃµÈcÊp²»ÄÜ´óÓÚµ±Ç°×÷·»µÈcÊp", 1, "BiÕt råi/cancel")
 		return
 	end
 	local nUpperLevel = tongGetWorkshopUpperLevel(nTongID, TONG_GetBuildLevel(nTongID))	
 	if (nLevel > nUpperLevel)then
-		Say("§¼ng cÊp sö dông t¸c ph­êng hiÖn t¹i cña quı bang sÏ giíi h¹n ë cÊp: <color=red>"..nUpperLevel.."<color>, ËùÑ¡µÄÊ¹ÓÃµÈcÊp²»ÄÜ³¬¹ı´ËÖµ", 1, "BiÕt råi/cancel")
+		Say("¹ó°ïÄ¿Ç°×÷·»Ê¹ÓÃµÈcÊpÉÏÏŞÎª£º<color=red>"..nUpperLevel.."<color>cÊp£¬ËùÑ¡µÄÊ¹ÓÃµÈcÊp²»ÄÜ³¬¹ı´ËÖµ", 1, "BiÕt råi/cancel")
 		return
 	end
 	local eType = TWS_GetType(nTongID, nID)
 	local szMsg = "<color=white>"..GetName().."<color>thiÕt lËp <color=red>"..wsGetName(eType)..
-	"<color> ®¼ng cÊp sö dông lµ <color=green>"..nLevel.."<color>, ".."Thay ®æi nµy sÏ cã hiÖu lùc sau mét tuÇn"
+	"<color>Ê¹ÓÃµÈcÊpÉè¶¨Îª<color=green>"..nLevel.."<color>cÊp£¬".."Thay ®æi nµy sÏ cã hiÖu lùc sau mét tuÇn"
 	Msg2Tong(nTongID, szMsg)
 	-- °ï»áÊÂ¼ş¼ÇÂ¼
-	TONG_ApplyAddEventRecord(nTongID, GetName().."ThiÕt lËp "..wsGetName(eType).." ®¼ng cÊp sö dông hiÖn t¹i lµ "..nLevel.."cÊp");
+	TONG_ApplyAddEventRecord(nTongID, GetName().."ThiÕt lËp "..wsGetName(eType).."Ê¹ÓÃµÈcÊpÉè¶¨Îª"..nLevel.."cÊp");
 	TWS_ApplySetUseLevelSet(nTongID, nID, nLevel)
 end
 

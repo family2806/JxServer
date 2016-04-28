@@ -68,15 +68,15 @@ QY_NEWBOSS_FIXURE_INFO = {
 	[1] = {
 					--Name					ID,LEVEL,SERVERS,MAPID,X,Y,	NORMALX,NORMALY,SZMSG
 					{"Lo¹n thÕ anh hµo",	1194,95,0,	181,1635*32,3077*32,	1632*32,3065*32,"Cao thñ ThiÕu L©m - Lo¹n ThÕ Anh Hµo - xuÊt hiÖn t¹i L­ìng Thñy §éng!"},
-					{"Truy mÖnh c­ sÜ",			1195,95,1,	319,1671*32,3761*32,	1666*32,3747*32,"Cao thñ §­êng M«n - Truy MÖnh C­ Sü - xuÊt hiÖn t¹i L©m Du Quan!"},
-					{"Hå DiÖp Bèi Bèi",			1198,95,2,	167,1571*32,3107*32,	1559*32,3116*32,"Cao thñ Thóy Yªn -Hå §iÖp Bèi Bèi - xuÊt hiÖn t¹i §iÓm Th­¬ng S¬n!"},
+					{"Truy mÖnh c­ sÜ",			1195,95,1,	319,1671*32,3761*32,	1666*32,3747*32,"ÌÆÃÅ¸ßÊÖ- Truy mÖnh c­ sÜ- ³öÏÖÔÚÁÙÓå¹Ø!"},
+					{"Hå DiÖp Bèi Bèi",			1198,95,2,	167,1571*32,3107*32,	1559*32,3116*32,"´äÑÌ¸ßÊÖ-Hå DiÖp Bèi Bèi- ³öÏÖÔÚµã²ÔÉ½!"},
 					{"Ngäc H¶i L©u",1199,95,3,	123,1621*32,3329*32,	1620*32,3343*32,"Cao thñ C¸i Bang - Ngäc H¶i Väng Ng· - xuÊt hiÖn t¹i L·o Hæ §éng!"},
-					{"Cæ ®¹o phong",				1201,95,4,	 90,1789*32,3391*32,	1789*32,3376*32,"Cao thñ Vâ §ang - Cæ §¹o Phong - xuÊt hiÖn t¹i Phôc Ng­u S¬n!"},
+					{"Cæ ®¹o phong",				1201,95,4,	 90,1789*32,3391*32,	1789*32,3376*32,"Îäµ±¸ßÊÖ-Cæ ®¹o phong- ³öÏÖÔÚ·üÅ£É½!"},
 									},
 	[2] = {
-					{"Nh¶ Háa N÷ Nh©n",		1202,95,4,	 41,2042*32,2911*32,	2037*32,2896*32,"Cao thñ C«n Lu©n - Nh· Háa N÷ Nh©n - xuÊt hiÖn t¹i Phôc Ng­u S¬n T©y!"},
+					{"Nh¶ Háa N÷ Nh©n",		1202,95,4,	 41,2042*32,2911*32,	2037*32,2896*32,"À¥ÂØ¸ßÊÖ - Nh¶ Háa N÷ Nh©n- ³öÏÖÔÚ·üÅ£É½Î÷!"},
 					{"Thanh H­¬ng",1200,95,3,  21,2527*32,4197*32,	2518*32,4205*32,"Cao thñ Thiªn NhÉn - Hoa PhÊn Thanh H­¬ng - xuÊt hiÖn t¹i Thanh Thµnh S¬n!"},
-					{"Nga Mi HuyÕt",				1197,95,2,	  9,2288*32,5762*32,	2278*32,5747*32,"Cao thñ Nga Mi - Nga ChiÕn HuyÕt - xuÊt hiÖn t¹i Tr­êng Giang Nguyªn §Çu!"},
+					{"Nga Mi HuyÕt",				1197,95,2,	  9,2288*32,5762*32,	2278*32,5747*32,"¶ëÃ¼¸ßÊÖ- Nga Mi HuyÕt - ³öÏÖÔÚ³¤½­Ô´Í·!"},
 					{"ThÇn Tiªn d· bÊt nh­ thö",1196,95,1,	 93,1626*32,3187*32,	1620*32,3181*32,"Cao thñ Ngò §éc - ThÇn Tiªn - xuÊt hiÖn t¹i TiÕn Cóc §éng!"},
 					{"Thiªn V­¬ng",				1193,95,0,	 70,1798*32,3153*32,	1781*32,3153*32,"Cao thñ Thiªn V­¬ng - Thiªn V­¬ng QuÇn Anh - xuÊt hiÖn t¹i Vâ Di S¬n!"},
 									},

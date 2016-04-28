@@ -101,8 +101,8 @@ BeiDouChuanGong_tbItem =
 {
 	[1] = {szName="Bæc ß»u truy“n c´ng thuÀt", tbProp={6, 1, 1672}, nCount = 1},      
 	[2] = {szName="Th t tinh th∂o", tbProp={6, 1, 1673}, nCount = 1},          
-	[3] = {szName="B∏ch ni™n th t tinh th∂o", tbProp={6, 1, 1674}, nCount = 1},      
-	[4] = {szName="Thi™n ni™n th t tinh th∂o", tbProp={6, 1, 1675}, nCount = 1},      
+	[3] = {szName="∞ŸƒÍTh t tinh th∂o", tbProp={6, 1, 1674}, nCount = 1},      
+	[4] = {szName="«ßƒÍTh t tinh th∂o", tbProp={6, 1, 1675}, nCount = 1},      
 	[5] = {szName="Bπch Ch©n ß¨n", tbProp={6, 1, 1676, 1, 0, 0}, nCount = 1},          
 	[6] = {szName="Huy’t Ch©n ß¨n", tbProp={6, 1, 1677, 1, 0, 0}, nCount = 1},          
 	[7] = {szName="Huy“n Ch©n ß¨n", tbProp={6, 1, 1678, 1, 0, 0}, nCount = 1},

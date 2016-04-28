@@ -36,7 +36,7 @@ function hairpin()
 		AddEventItem(63)
 		Msg2Player("Mua ®­îc Ng©n Tr©m ")
 --		SetTask(29, 4)
-		AddNote("Mua ®­îc Ng©n Tr©m ë tiÖm t¹p hãa Thµnh §« ")
+		AddNote("ÔÚ³É¶¼ÔÓ»õÆÌMua ®­îc Ng©n Tr©m  ")
 	else
 		Say("Cã ®ñ tiÒn råi h·y ®Õn mua ®i, h·y xem nh÷ng mãn hµng kh¸c tr­íc ®i.", 2, "Ta muèn mua hµng hãa kh¸c /yes", "Kh«ng giao dÞch/no")		
 	end

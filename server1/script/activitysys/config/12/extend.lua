@@ -149,7 +149,7 @@ local tbFormula = {
 	nWidth = 0,
 	nHeight = 0,
 	szComposeTitle = "Hçn Nguyªn Linh Lé",
-	szFailMsg = "Ng­¬i kh«ng cã Hçn Nguyªn Linh Lé"
+	szFailMsg = "ÄãÃ»ÓÐHçn Nguyªn Linh Lé"
 }
 
 tbFormula.tbMaterial = {
@@ -165,6 +165,6 @@ tbFormula.tbMaterial = {
 	},
 }
 	
-pActivity.pCompose = tbActivityCompose:new(tbFormula, "Giao Hçn Nguyªn Linh Lé")
+pActivity.pCompose = tbActivityCompose:new(tbFormula, "½ÉHçn Nguyªn Linh Lé")
 
 

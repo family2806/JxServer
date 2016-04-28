@@ -429,7 +429,7 @@ function pActivity:ReceivePlayerPaiMing(nParam, ResultHandle)
 		return
 	end
 	if nPaiMing == nil then
-		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ThiÕu HiÖp tr­íc m¾t ng­¬i ch­a cã xÕp h¹ng Töu L­îng cña ngµy h«m tr­íc")
+		CallPlayerFunction(nPlayerIndex, Talk, 1, "", "ÉÙÏÀÄ¿Ç°Ã»ÓĞ×òÈÕTöu L­îngÅÅÃû")
 		return
 	end
 	local szPaiMing = format("%-32s%-10d\n", szName, nPaiMing)

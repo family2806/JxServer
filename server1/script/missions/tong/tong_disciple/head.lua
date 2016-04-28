@@ -103,7 +103,7 @@ if (not CHRISMAS_HEAD) then
 		--½øÐÐ¼ÆÊý
 		local nTimes = GetTask(DIS_TK_PLAYTIMES);
 		if (GetTask(DIS_TK_PLAYTIMES) >= DIS_MAXPLAYTIMES) then
-			Talk(1, "", "<color=yellow>Tæng qu¶n Ho¹t ®éng ph­êng<color>: Mét ngµy chØ cã thÓ tham gia 5 ®ît ho¹t ®éng Chiªu mé ®Ö tö!");
+			Talk(1, "", "<color=yellow>»î¶¯·»×Ü¹Ü<color>: Ã¿ÌìÖ»ÄÜ²Î¼Ó5´Î§Ö töÕÐÄ¼»î¶¯ ");
 			return
 		end;
 		

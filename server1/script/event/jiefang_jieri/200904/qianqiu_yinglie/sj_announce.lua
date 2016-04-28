@@ -21,7 +21,7 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 			local old_player = PlayerIndex;
 			-- 积分排名
 --			Msg2MSAll(MISSIONID, strfill_center(format("积分最高%d个人排名", 10), 30));
---			Msg2MSAll(MISSIONID, strfill_center("序", 4)..strfill_center("玩家名", 20)..strfill_center("积分", 6));
+--			Msg2MSAll(MISSIONID, strfill_center("序", 4)..strfill_center("T猲 ngi ch琲", 20)..strfill_center("积分", 6));
 --			for i = 1, 10 do 
 --				local szname, npoint = BT_GetTopTenInfo(i, PL_TOTALPOINT);
 --				if (szname and szname ~= "") then
@@ -33,7 +33,7 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 			tbPlayer = {};
 			battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_SER);
 			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("Top li猲 tr秏", 30));
-			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("Li猲 tr秏", 6));
+			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("T猲 ngi ch琲", 20)..strfill_center("Li猲 tr秏", 6));
 			for i = 1, 5 do
 				if tbPlayer[i] and tbPlayer[i] > 0 then
 					PlayerIndex = tbPlayer[i];
@@ -48,7 +48,7 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 			tbPlayer = {};
 			battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_PK);
 			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("TOP PK", 30));
-			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("PK", 6));
+			Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("T猲 ngi ch琲", 20)..strfill_center("PK", 6));
 			for i = 1, 5 do 
 				if tbPlayer[i] and tbPlayer[i] > 0 then
 					PlayerIndex = tbPlayer[i];
@@ -64,7 +64,7 @@ function TB_QIANQIU_YINGLIE0904:announce(lsf_level, n_time)
 				tbPlayer = {};
 				battle_rank_GetSortPlayer0808(tbPlayer, 0, battle_rank_sort_NPC);
 				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("TOP NPC", 30));
-				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("玩家名", 20)..strfill_center("NPC", 6));
+				Msg2MSAll(MISSIONID, "<color=green>"..strfill_center("STT", 4)..strfill_center("T猲 ngi ch琲", 20)..strfill_center("NPC", 6));
 				for i = 1, 5 do 
 					if tbPlayer[i] and tbPlayer[i] > 0 then
 						PlayerIndex = tbPlayer[i];

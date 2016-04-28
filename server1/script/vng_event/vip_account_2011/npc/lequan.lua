@@ -39,6 +39,6 @@ function tbVNG_VipAcc2011_LeQuan:GetAward()
 	end
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBitPos2) == 0 and tbExtPointLib:SetBitValue(self.nExtPointID, self.nBitPos2, 1) == 1) then
 		local tbAward = {szName="Bao L× X× N¨m Míi",tbProp={6,1,30091,1,0,0},nCount=1,nExpiredTime=20110207,nBindState = -2}
-		tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][NhËn bao l× x× n¨m míi t¹i NPC LÔ Quan]")
+		tbVNG_Vip_NpcHead:GiveAward(tbAward, "[VNG][VIPAcc2011][ÔÚÀñ¹ÙNPC´¦NhËnºì°ü]")
 	end
 end

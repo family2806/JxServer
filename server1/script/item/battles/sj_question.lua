@@ -54,13 +54,13 @@ end
 function add471()
 		level = random(2,10);
 		AddSkillState(471, level, 0, 12 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦
-		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> håi phôc sinh lùc trong nöa gi©y"..(level*500).."<#> ®iÓm vµ håi phôc néi lùc trong nöa gi©y"..(level*500).."<#> ®iÓm")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> håi phôc sinh lùc trong nöa gi©y"..(level*500).."<#> ®iÓmºÍ³ÖĞø°ëÃëµÄÄÚÁ¦»Ø¸´"..(level*500).."<#> ®iÓm")	
 end
 
 function add472()
 		level = random(1,10);
 		AddSkillState(472, level, 0, 540 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦³ÖĞø»Ö¸´
-		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y håi phôc sinh lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓm vµ 30 gi©y håi phôc néi lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓm")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y håi phôc sinh lùc, håi phôc mçi nöa gi©y"..(level*100).."<#> ®iÓmºÍ³ÖĞø30ÃëµÄÄÚÁ¦»Ø¸´£¬Ã¿°ëÃë»Ø¸´"..(level*100).."<#> ®iÓm")	
 end
 
 function add473()
@@ -162,7 +162,7 @@ end
 function add490()
 		level = random(10,20);
 		AddSkillState(490, level, 0, 540 )	--Ôö¼ÓÍæ¼ÒÑªÁ¿ºÍÄÚÁ¦ÉÏÏŞ
-		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y møc néi lùc t¨ng::"..(level*100).."<#> ®iÓm vµ trong 30 gi©y møc néi lùc t¨ng:"..(level*100).."<#> ®iÓm")	
+		Msg2Player("<#> B¹n nhËn ®­îc <color=0xB5FDD7> 30 gi©y møc néi lùc t¨ng::"..(level*100).."<#> ®iÓmºÍ³ÖĞø30ÃëµÄÄÚÁ¦ÉÏÏŞÔö¼Ó£º"..(level*100).."<#> ®iÓm")	
 end
 
 function add493()

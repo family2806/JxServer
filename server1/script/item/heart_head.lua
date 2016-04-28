@@ -147,7 +147,7 @@ end
 --´Ëº¯ÊýÎª³É¹¦²éÑ¯ÐÅÏ¢µÄ»Øµ÷º¯Êý£¬²ÎÊý¸öÊýºÍ²ÎÊýË³Ðò²»ÔÊÐí¸Ä±ä
 function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, PlayerLevel, MapName, nPosX, nPosY, nSex, nWorldRank, nSubWorldID, nFightMode, bTargetProtect,nMapTemplateID,  bForever)
 	if (nSubWorldID > 70000) then
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0);
 		end
@@ -155,7 +155,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end
 	for i = 1, getn(tbBATTLEMAP) do 
 		if ( nSubWorldID == tbBATTLEMAP[i] ) then
-			Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+			Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 			if (bForever == 0) then
 				AddItem(6,1,18,1,0,0,0);
 			end
@@ -164,7 +164,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end
 	
 	if (nSubWorldID >= 375 and nSubWorldID <= 386) then
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0)
 		end;
@@ -172,7 +172,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end
 	
 	if (nSubWorldID >= 416 and nSubWorldID <= 511) then
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0)
 		end;
@@ -180,7 +180,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end
 	
 	if (nSubWorldID == 44 or  nSubWorldID == 197 or nSubWorldID == 208 or nSubWorldID == 209 or nSubWorldID == 210 or nSubWorldID == 211 or nSubWorldID == 212 or (nSubWorldID >= 213 and nSubWorldID <= 223) or nSubWorldID == 336 or nSubWorldID == 341 or nSubWorldID == 342	or nSubWorldID == 175	or nSubWorldID == 337	or nSubWorldID == 338	or nSubWorldID == 339 or ( nSubWorldID >= 387 and  nSubWorldID <= 395 )) then 
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0)
 		end;
@@ -188,7 +188,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end;
 	
 	if (FORBITMAP_LIST[nSubWorldID] == 1 or FORBIT_TEMPLATEMAP_LIST[nMapTemplateID] == 1 ) then
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.")
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.")
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0)
 		end
@@ -196,7 +196,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	end
 
 	if checkActMaps(nSubWorldID) == 1 then
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0);
 		end
@@ -243,7 +243,7 @@ function _LoverCallBack(TargetName, MoneyToPay, LifeMax, ManaMax, PKValue, Playe
 	
 	-- ÅäÅ¼±»±£»¤(¿ÉÄÜÊÇÔÚ×Ô¶¯¹Ò»úÖÐ£¬ÐÄÐÄÏàÓ³·û¹¦ÄÜ±»ÆÁ±Î£¬²»ÄÜÊ¹ÓÃ)
 	if (bTargetProtect > 0) then 
-		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ sö dông T©m T©m T­¬ng ¸nh Phï.");
+		Msg2Player("Xin lçi! Phèi ngÉu cña b¹n ®ang ë khu vùc ®Æc biÖt kh«ng thÓ dÉn vµo.");
 		if (bForever == 0) then
 			AddItem(6,1,18,1,0,0,0);
 		end

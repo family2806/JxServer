@@ -221,14 +221,14 @@ function wl_FinalTakeMatch( nTaskID, nCount )
 	--Ò»µÈ½±½±Àø
 	if (nTaskID == ZONEAWARD_TASKID_FIRST) then
 		if( nCount == nil or nCount <= 0 ) then
-			-- print("ÁìÈ¡ÏÉ²İÂ¶ÊıÄ¿²»´óÓÚ 0 »ò nil ¡£")
+			-- print("ÁìÈ¡Tiªn Th¶o Lé ÊıÄ¿²»´óÓÚ 0 »ò nil ¡£")
 			WriteLog("PhÇn th­ëng vâ l©m ®¹i héi bŞ lçi!!    L·nh 'Tiªn Th¶o Lé' kh«ng ®­îc v­ît qu¸ møc 0 hoÆc nil")
 			return 0
 		end;
 		
 		if( wl_get_awardcount( nAwardLevel , nTaskID ) < nCount ) then
 			Say("Sè l­îng nhËn ®­îc h×nh nh­ kh«ng ®óng!", 0)
-			-- print("ÓĞÈË³¢ÊÔÁìÈ¡¹ı¶àµÄÏÉ²İÂ¶£¡	["..GetName().."]:SecondAward:"..nCount.."/"..GetTask( nTaskID ));
+			-- print("ÓĞÈË³¢ÊÔÁìÈ¡¹ı¶àµÄTiªn Th¶o Lé £¡	["..GetName().."]:SecondAward:"..nCount.."/"..GetTask( nTaskID ));
 			WriteLog("PhÇn th­ëng vâ l©m ®¹i héi bŞ lçi!!    Cã ng­êi l·nh th­ëng 'Tiªn Th¶o Lé' v­ît qu¸ sè lÇn cho phĞp! ["..GetName().."]:SecondAward:"..nCount.."/"..GetTask( nTaskID ));
 			return 0
 		end;
@@ -625,47 +625,47 @@ function wl_awardgolditem( fact, taskid )
 	
 	if( fact == 1 ) then
 		AddGoldItem(0,19)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 H¸m Thiªn Hæ §Çu KhÈn Thóc UyÓn")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öº³Ìì»¢Í·½ôÊøÑü")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Thiªn V­¬ng, phÇn th­ëng lµ 1 KhÈn Thóc UyÓn")
 		return 1
 	elseif ( fact == 2 ) then
 		AddGoldItem(0,80)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Thiªn Quang Thóc Thiªn Ph­îc §Şa Hoµn")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öÌì¹âÖ®ÊøÌì¸¿µØ»·")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu §­êng M«n, phÇn th­ëng lµ 1 Ph­îc §Şa Hoµn")
 		return 1
 	elseif( fact == 3 ) then
 		AddGoldItem(0,59)
-		Msg2Player("Chóc mõng, nhËn ®­îc mét U Lung Ng©n ThiÒm Hé Thñ ")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öÓÄëÊÖ®Òøó¸»¤ÊÖ")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Ngò §éc, phÇn th­ëng lµ 1 Ng©n ThiÒm Hé Thñ ")
 		return 1
 	elseif( fact == 6 ) then
 		AddGoldItem(0,100)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 §Şch Kh¸i Th¶o Gian Th¹ch Giíi")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öµĞâéÖ®²İ¼äÊ¯½ä")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu C¸i Bang, phÇn th­ëng lµ 1 Gian Th¹ch Giíi")
 		return 1
 	elseif( fact == 7 ) then
 		AddGoldItem(0,113)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc phÇn th­ëng Ma ThŞ NghiÖp Háa U Minh Giíi")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öÄ§ÊÈÖ®Òµ»ğÓÄÚ¤½ä")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Thiªn NhÉn, phÇn th­ëng lµ 1 U Minh Giíi")
 		return 1
 	elseif( fact == 4 ) then
 		AddGoldItem(0,35)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 V« Gian B¹ch Ngäc Bµn ChØ ")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öÎŞ¼äÖ®°×Óñ°ãÖ¸")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Nga My, phÇn th­ëng lµ 1 V« Gian B¹ch Ngäc Bµn ChØ ")
 		return 1
 	elseif( fact == 5 ) then
 		AddGoldItem(0,50)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Tª Hoµn Thóy Ngäc ChØ Hoµn")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öÆÜ»ËÖ®´äÓñÖ¸»·")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Thóy Yªu, phÇn th­ëng lµ 1 Ngäc ChØ Hoµn")
 		return 1
 	elseif( fact == 8 ) then
 		AddGoldItem(0,125)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 CËp Phong Thanh Tïng Ph¸p Giíi")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸ö¼°·áÖ®ÇàËÉ·¨½ä")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu Vâ §ang, phÇn th­ëng lµ 1 Thanh Tïng Ph¸p Giíi")
 		return 1
 	elseif( fact == 9 ) then
 		AddGoldItem(0,130)
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 S­¬ng Tinh Phong B¹o chØ hoµn")
+		Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸öËª¾§Ö®·ç±©Ö¸»·")
 		WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", nhËn ®­îc gi¶i nhÊt ®¬n ®Êu C«n L«n, phÇn th­ëng lµ 1 S­¬ng Tinh Phong B¹o chØ hoµn")
 		return 1
 	else
@@ -712,7 +712,7 @@ function wl_joinaward()		--Çø·ş²ÎÈüµÃ½±
 		if( awardtype == 5 ) then
 			Say("Lµ "..zonename.."tuyÓn thñ trong khu vùc, ng­¬i cã thÓ nhËn ®­îc"..WL_TAB_ACTORAWARD_INFO[ awardtype ][ 1 ]..", nhËn ngay b©y giê chø? Tr­íc khi nhËn xin s¾p xÕp l¹i hµnh trang!", 2, "NhËn ngay ®©y!/#wl_FinalTakeMatch("..ZONEAWARD_TASKID_ACTORAWARD..")", "§îi mét l¸t ®i!/OnCancel" )
 		else
-			Say("Quan viªn Vâ l©m kiÖt xuÊt:"..zonename.."Trong b¶ng thµnh tİch xÕp h¹ng thø "..awardtype..", tuyÓn thñ trong khu vùc, ng­¬i cã thÓ nhËn ®­îc "..WL_TAB_ACTORAWARD_INFO[ awardtype ][ 1 ]..", nhËn ngay b©y giê chø? Tr­íc khi nhËn xin s¾p xÕp l¹i hµnh trang!", 2, "NhËn ngay ®©y!/#wl_FinalTakeMatch("..ZONEAWARD_TASKID_ACTORAWARD..")", "§îi mét l¸t ®i!/OnCancel" )
+			Say("Quan viªn Vâ l©m kiÖt xuÊt:"..zonename.."Trong b¶ng thµnh tİch xÕp h¹ng thø "..awardtype.."h¹ng, do lµ Tæng l·nh ®éi, b¹n nhËn ®­îc "..WL_TAB_ACTORAWARD_INFO[ awardtype ][ 1 ]..", nhËn ngay b©y giê chø? Tr­íc khi nhËn xin s¾p xÕp l¹i hµnh trang!", 2, "NhËn ngay ®©y!/#wl_FinalTakeMatch("..ZONEAWARD_TASKID_ACTORAWARD..")", "§îi mét l¸t ®i!/OnCancel" )
 		end
 	end
 	
@@ -721,7 +721,7 @@ end;
 function wl_addgolditem_random()
 	local serial = random( WL_GOLDITEMCOUNT )
 	AddGoldItem(WL_TAB_MATCHAWARD[serial][3][1], WL_TAB_MATCHAWARD[serial][3][2])
-	Msg2Player("Chóc mõng, b¹n nhËn ®­îc mét "..WL_TAB_MATCHAWARD[serial][1])
+	Msg2Player("Chóc mõng, b¹n nhËn ®­îcÒ»¸ö"..WL_TAB_MATCHAWARD[serial][1])
 	WriteLog(date("%y-%m-%d,%H:%M").."Account==["..GetAccount().."] RoleName=="..GetName()..", phÇn th­ëng trang bŞ Hoµng Kim "..WL_TAB_MATCHAWARD[serial][1])
 end;
 
@@ -764,15 +764,15 @@ function wl_awardall( firstcnt, secondcnt, thirdcnt )	--ÁìÈ¡Çø·ş½±Àø
 	
 	str = str.."ng­¬i cßn cã thÓ nhËn:"
 	if( awardfst > 0 ) then
-		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardfst).."PhÇn th­ëng Qu¸n Qu©n___Tiªn Th¶o lé /#wl_want2takeaward(1,"..awardfst..")"
+		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardfst).."Qu¸n qu©n½±Àø_Tiªn Th¶o Lé /#wl_want2takeaward(1,"..awardfst..")"
 	end
 	
 	if( awardsec > 0 ) then
-		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardsec).."PhÇn th­ëng ¸ Qu©n___T¨ng ®«i ®iÓm kinh nghiÖm trong 30 phót/#wl_want2takeaward(2,"..awardsec..")"
+		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardsec).."¸ qu©n½±Àø_ÔÚ30·ÖÖÓÄÚÔö¼ÓË«±¶¾­ÑéÖµ/#wl_want2takeaward(2,"..awardsec..")"
 	end
 	
 	if ( awardthd > 0 ) then
-		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardthd).."PhÇn th­ëng h¹ng 3___T¨ng ®«i ®iÓm kinh nghiÖm trong 15 phót/#wl_want2takeaward(3,"..awardthd..")"
+		tbOpp[ getn( tbOpp ) + 1 ] = tostring(awardthd).."H¹ng 3½±Àø_ÔÚ15·ÖÖÓÄÚÔö¼ÓË«±¶¾­ÑéÖµ/#wl_want2takeaward(3,"..awardthd..")"
 	end
 	tbOpp[ getn( tbOpp ) + 1 ] = "§îi mét l¸t ®i!/OnCancel"
 	Say( str, getn( tbOpp ), tbOpp )
@@ -784,7 +784,7 @@ function wl_want2takeaward(title,awardcount)
 	local taskid = 0
 	local tbOpp = {}
 	if ( title == 1) then
-		str = "ng­¬i cã thÓ nhËn ®­îc"..awardcount.."1 Tiªn Th¶o lé, nhËn b©y giê chø?"
+		str = "ng­¬i cã thÓ nhËn ®­îc"..awardcount.."1 Tiªn Th¶o lé £¬ÏÖÔÚ¾ÍÁìÂğ£¿"
 		cbFunc = "c¸i/#wl_FinalTakeMatch"
 		taskid = ZONEAWARD_TASKID_FIRST
 	elseif ( title == 2 ) then
@@ -817,7 +817,7 @@ function wl_want2doubleexp_30( taskid, count )	--ÁìÈ¡¸ qu©n½±Àø
 	end;
 	
 	local doubletime = 30 * count
-	Say("Ng­¬i muèn nhËn lµ "..count.."phÇn th­ëng ¸ Qu©n + "..doubletime.."phót t¨ng ®«i ®iÓm kinh nghiÖm ®óng kh«ng?", 2, "Muèn/#wl_FinalTakeMatch("..taskid..","..count..")", "§îi mét l¸t ta quay l¹i nhËn!/OnCancel")
+	Say("Ng­¬i muèn nhËn lµ "..count.."¸ qu©n½±Àø+ "..doubletime.."phót t¨ng ®«i ®iÓm kinh nghiÖm ®óng kh«ng?", 2, "Muèn/#wl_FinalTakeMatch("..taskid..","..count..")", "§îi mét l¸t ta quay l¹i nhËn!/OnCancel")
 end
 
 function wl_want2doubleexp_15( taskid, count )	--ÁìÈ¡H¹ng 3½±Àø
@@ -899,7 +899,7 @@ function wl_taketitle()
 	
 	tbOpp[ getn( tbOpp ) + 1 ] = "§îi l¸t ®Ó ta suy nghÜ ®·/OnCancel"
 	
-	Say("Ng­¬i cã thÓ nhËn ®­îc danh hiÖu sau ®©y, suy nghÜ xem sao:", getn( tbOpp ), tbOpp)
+	Say("ng­¬i cã thÓ nhËn ®­îcÒÔÏÂDanh hiÖu£¬ÏëÏë¿´:", getn( tbOpp ), tbOpp)
 end
 
 function wl_sure2taketitle( sectionname , awardtype)

@@ -73,7 +73,7 @@ function L10_buy_yes1()
 	if (GetCash() >= 400) then
 		Pay(400)
 		AddEventItem(77)
-		Msg2Player("Cã Kim L¨ng Xu©n ")
+		Msg2Player("Cã Kim L¨ng Xu©n  ")
 	else
 		L10_buy_noMoney()
 	end

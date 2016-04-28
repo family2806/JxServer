@@ -205,7 +205,7 @@ function tbComposeClass:Compose(tbFormula, szLogTitle, nComposeCount, pFun, ...)
 	end
 
 	if self:ConsumeMaterial(tbMaterial, nComposeCount, szLogTitle) ~= 1 then
-		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖÎïÆ·¶ªÊ§¡£",0)
+		--Say("ÖÆ×÷Ê§°Ü£¬²¿·ÖvËt phÈm ¶ªÊ§¡£",0)
 		Msg2Player("ChÕ t¹o thÊt b¹i, mÊt ®i mét sè nguyªn liÖu.")
 		return 0;
 	end

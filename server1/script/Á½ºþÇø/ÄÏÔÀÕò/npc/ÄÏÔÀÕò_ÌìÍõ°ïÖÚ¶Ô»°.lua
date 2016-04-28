@@ -25,10 +25,10 @@ else
 				--SetFightState(1)					--Íæ¼Ò×ª»»³ÉÕ½¶·×´Ì¬	
     				--SetRevPos(21)		  				--ÉèÖÃÖØÉúµã
     				--SetTask(3, 10)
-    				Say("Hoan Nghªnh b¹n gia nhËp Thiªn V­¬ng bang! ",0)  
+    				Say("»¶Ó­Äã¼ÓÈëtianwang£¡",0)  
 			end
 		else
-			Say("C¨n b¶n cña ng­¬i cßn kĞm l¾m! H·y ®i luyÖn tËp thªm, bao giê ®Õn cÊp 10 l¹i ®Õn t×m ta!", 0)	
+			Say("tianwangÖÚ£ºÑ§ÎäÖ®µÀ£¬ÓûËÙÔò²»´ï¡£ÄãµÈ¼¶²»¹»£¬µÈĞŞÁ·µ½Ê®¼¶Ö®ºóÔÙÀ´ÕÒÎÒ°É£¡", 0)	
 		end
 	end
 end;			

@@ -7,7 +7,7 @@ function OnDeath()
 		AddNote("§­îc Nga Mi V« Tù Thiªn Th­ ")
 --	elseif (Uworld125 == 20) and (HaveItem(387) == 0) then
 --		AddEventItem(387)
---		Msg2Player("ÖØ»ñ¶ëáÒÎŞ×ÖÌìÊé¡£")
---		AddNote("ÖØ»ñ¶ëáÒÎŞ×ÖÌìÊé¡£")
+--		Msg2Player("ÖØ§­îc Nga Mi V« Tù Thiªn Th­ ¡£")
+--		AddNote("ÖØ§­îc Nga Mi V« Tù Thiªn Th­ ¡£")
 	end
 end

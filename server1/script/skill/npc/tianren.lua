@@ -315,7 +315,7 @@ SKILLS={
 		skill_desc=
 			function(level)
 				return "Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercast_v[1]) / 18).." gi©y<color>\n"..
-				"Thêi gian kh«i phôc chiªu thøc trªn ngùa: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n"..
+				"ÆïÂíÊ©Õ¹Thêi gian kh«i phôc chiªu thøc: <color=orange>"..floor(Link(level,SKILLS.tianren120.skill_mintimepercastonhorse_v[1]) / 18).." gi©y<color>\n"..
 				"X¸c suÊt <color=orange>"..floor(100 -Link(level,SKILLS.quntisuijizoudong.missle_missrate[1])).."%<color> khiÕn cho tèi ®a "..
 				floor(Link(level,SKILLS.quntisuijizoudong.missle_hitcount[1])).." môc tiªu gÇn bÞ ho¶ng lo¹n trong <color=orange>"..
 				floor(Link(level,SKILLS.quntisuijizoudong.randmove[2]) / 18).." gi©y<color>\n"..

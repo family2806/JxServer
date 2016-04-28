@@ -13,7 +13,7 @@ function main(sel)
 end
 
 function Turn_On()
---	Talk(1,"","»ú¹Ø´ò¿ªÁË¡£")
+--	Talk(1,"","C¬ quan ®· më ra¡£")
 	Msg2Player("C¬ quan ®· më ra")
 	Cur_Switchs = SetBit(GetTask(41),12,1)
 	SetTask(41,Cur_Switchs)
@@ -21,7 +21,7 @@ function Turn_On()
 end
 
 function Turn_Off()
---	Talk(1,"","»ú¹Ø¹Ø±ÕÁË¡£")
+--	Talk(1,"","C¬ quan ®· khãa l¹i¡£")
 	Msg2Player("C¬ quan ®· khãa l¹i")
 	Cur_Switchs = SetBit(GetTask(41),12,0)
 	SetTask(41,Cur_Switchs)

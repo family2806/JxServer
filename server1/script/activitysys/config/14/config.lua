@@ -25,7 +25,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 {
 	nId = 2,
 	szMessageType = "nil",
-	szName = "PhÇn th­ëng toµn server cña [§éc C« Thiªn Phong]",
+	szName = "[§éc C« Thiªn Phong]È«²¿serverµÄ½±Àø",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {nil},
@@ -53,6 +53,6 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"PhÇn th­ëng toµn server cña [§éc C« Thiªn Phong]",2} },
+		{"AddDialogOpt",	{"[§éc C« Thiªn Phong]È«²¿serverµÄ½±Àø",2} },
 	},
 }

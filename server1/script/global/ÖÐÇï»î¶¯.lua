@@ -35,9 +35,9 @@ STR_About_Rules  = { " ë n¬i nµy vui mõng ®İch trong cuéc sèng ,  vâng kiÕm  còn
     " phÈm b¸nh Trung thu ", 
     " th­ëng tr¨ng s¸ng ",   --5
     " ta ®· hiÓu ",
-    " vâng kiÕm cïng nhµ ch¬i cïng nhau ¨n mõng trung thu quèc kh¸nh , cïng c¸c thµnh phè ®İch lÔ quan ®èi tho¹i lùa chän sai mª trß ch¬i , còng mçi lÇn nép <color=red> mét ngµn l­îng <color> , liÒn cã thÓ b¾t ®Çu sai mª trß ch¬i . yªu cÇu <color=red> liªn tôc ®¸p ®èi víi n¨m ®¹o ®Ò môc <color> liÒn cã thÓ ngÉu nhiªn ®¹t ®­îc mét <color=red> ®Æc thï mét ch÷ ®éc nhÊt <color> , kú t¸c dông lµ cïng b×nh th­êng mét ch÷ ®éc nhÊt hîp thµnh ra <color=red> líp m­êi cÊp ®İch b×nh th­êng mét ch÷ ®éc nhÊt <color> , cïng víi ë tham gia tËp th¬ tõ ho¹t ®éng trung ®æi lÊy phÇn th­ëng . ",
-    " vâng kiÕm cïng nhµ ch¬i cïng nhau ¨n mõng trung thu quèc kh¸nh , ®ang ho¹t ®éng trong lóc , mäi ng­êi cã thÓ ë lÔ quan chç dïng mét İt mét ch÷ ®éc nhÊt ®iÒn th¬ tõ lÊy nhËn lÊy bÊt ®ång phÇn th­ëng , cã ba lo¹i ®­êng t¾t tíi ®¹t ®­îc mét ch÷ ®éc nhÊt <color=red> ®¸nh tr¸ch <color><color=red> ®¹t ®­îc b×nh th­êng mét ch÷ ®éc nhÊt <color><color=red> ®o¸n ch÷ mª <color><color=red> ®¹t ®­îc ®Æc thï mét ch÷ ®éc nhÊt <color><color=red> hîp thµnh mét ch÷ ®éc nhÊt <color><color=red> th¨ng cÊp b×nh th­êng mét ch÷ ®éc nhÊt <color> , nhËn lÊy mçi lo¹i phÇn th­ëng ®Òu cÇn thÊt xøng mét b×nh th­êng ch÷ cïng mét c¸ ®Æc thï ch÷ . ",
-    " vâng kiÕm cïng nhµ ch¬i cïng nhau ¨n mõng trung thu quèc kh¸nh , ë <color=red> th¸ng chİn hai m­¬i t¸m ngµy trung thu <color> ngµy ®ã ®İch <color=red>19:00~24:00<color> lóc ®o¹n trong , phï hîp ®iÒu kiÖn ®İch nhµ ch¬i còng cã thÓ ®Õn lÔ quan chç miÔn phİ nhËn lÊy mét lÇn ngµy lÔ tÆng phÈm <color=red> t¸m tr©n phóc th¸ng ®oµn viªn bİnh <color> cïng <color=red> hoa quÕ r­îu <color> , yªu ­íc b»ng h÷u phÈm b¸nh Trung thu th­ëng tr¨ng s¸ng . ",
+    "    ½£ÍøºÍÍæ¼ÒÒ»ÆğÇì×£ÖĞ thu ¹úÇì£¬Óë¸÷³ÇÊĞµÄÀñ¹Ù¶Ô»°Ñ¡Ôñ²ÂÃÕÓÎÏ·£¬²¢Ã¿´Î½ÉÄÉ<color=red>Ò»Ç§Á½<color>£¬¾Í¿ÉÒÔ¿ªÊ¼²ÂÃÕÓÎÏ· . ÒªÇó<color=red>Á¬Ğø´ğ¶ÔÎåµÀÌâÄ¿<color>¾Í¿ÉÒÔËæ»ú»ñµÃÒ»¸ö<color=red>ÌØÊâµ¥×Ö<color>£¬Æä×÷ÓÃÊÇÓëÆÕÍ¨µ¥×ÖºÏ³É³ö<color=red>¸ßÒ»¼¶µÄÆÕÍ¨µ¥×Ö<color>£¬ÒÔ¼°ÔÚ²Î¼Ó tËp th¬ tõ »î¶¯ÖĞ»»È¡½±Æ· . ",
+    "    ½£ÍøºÍÍæ¼ÒÒ»ÆğÇì×£ÖĞ thu ¹úÇì£¬ÔÚ»î¶¯ÆÚ¼ä£¬´ó¼Ò¿ÉÒÔÔÚÀñ¹Ù´¦ÓÃÒ»Ğ©µ¥×ÖÌîÊ«´ÊÒÔÁìÈ¡²»Í¬µÄ½±Æ·£¬ÓĞÈıÖÖÍ¾¾¶À´»ñµÃµ¥×Ö£º<color=red>´ò¹Ö<color>£¨<color=red>»ñµÃÆÕÍ¨µ¥×Ö<color>£©¡¢<color=red> ®o¸n ch÷ mª <color>£¨<color=red>»ñµÃÌØÊâµ¥×Ö<color>£©¡¢<color=red>ºÏ³Éµ¥×Ö<color>£¨<color=red>Éı¼¶ÆÕÍ¨µ¥×Ö<color>£©£¬ÁìÈ¡Ã¿ÖÖ½±Æ·¶¼ĞèÒªÆ¥ÅäÒ»¸öÆÕÍ¨×ÖÓëÒ»¸öÌØÊâ×Ö . ",
+    "    ½£ÍøºÍÍæ¼ÒÒ»ÆğÇì×£ÖĞ thu ¹úÇì£¬ÔÚ<color=red>¾ÅÔÂ¶şÊ®°ËÈÕÖĞ thu <color>µ±ÌìµÄ <color=red>19:00~24:00<color> Ê±¶ÎÀï£¬·ûºÏÌõ¼şµÄÍæ¼Ò¶¼¿ÉÒÔµ½Àñ¹Ù´¦Ãâ·ÑÁìÈ¡Ò»´Î½ÚÈÕÔùÆ·£¨<color=red> t¸m tr©n phóc th¸ng ®oµn viªn bİnh <color>ºÍ<color=red> hoa quÕ r­îu <color>£©£¬ÑûÔ¼ÅóÓÑ phÈm b¸nh Trung thu  th­ëng tr¨ng s¸ng  . ",
     " vâng kiÕm cïng nhµ ch¬i cïng nhau ¨n mõng trung thu quèc kh¸nh , ®ang ho¹t ®éng trong lóc , <color=red> Hoa S¬n <color><color=red> nói Thanh Thµnh <color><color=red> Vò di s¬n <color> ba phong c¶nh khu nhµ ch¬i còng cã thÓ thÊy th¸ng c¶nh , cung mäi ng­êi ng¾m tr¨ng nãi chuyÖn phiÕm  chôp h×nh l­u niÖm . ",
     " hái th¨m nh÷ng kh¸c ho¹t ®éng nãi râ " }	--11
 STR_Gift 	 = { " thËt xin lçi , ngµi cßn kh«ng cã sung t¹p . xin/mêi tr­íc sung t¹p . ",
@@ -56,7 +56,7 @@ STR_Guess 	 = { " thËt xin lçi ng­êi tuæi trÎ , ng©n l­îng cã ph¶i hay kh«ng quª
     " ngµi lÊy ®­îc mét ch÷ ",
     " ®o¸n ch÷ mª ",   	--10
     " qu¶ nhiªn b·o häc th¬ s¸ch , l·o phu kİnh nÓ , n¬i nµy lµ høa hÑn ®İch phÇn th­ëng  ®­a ngµi mét <color=red> ®Æc thï mét ch÷ ®éc nhÊt <color> . ng­êi tuæi trÎ cßn ph¶i kh«ng nªn ®Ó cho l·o phu thi l¹i thi ngµi ? ",
-    " còng chØ kĞm nh­ vËy mét chót n÷a/råi , ®õng n¶n chİ , ®ãn thªm n÷a lÖ ®i  cßn ph¶i kh«ng muèn l¹i ®Ó cho l·o phu thi thi ngµi ? " }
+    "     còng chØ kĞm nh­ vËy mét chót n÷a/råi , ®õng n¶n chİ , ®ãn thªm n÷a lÖ ®i »¹Òª²»ÒªÔÙÈÃÀÏ·ò¿¼¿¼Äú£¿" }
 STR_Reward_Note  = { " ta chç nµy cã mét İt tµn ph¸ th¬ , nÕu nh­ ngµi trªn ng­êi võa lóc cã trong lóc <color=red> thiÕu sãt ®İch mét ch÷ ®éc nhÊt <color> , ta sÏ ®­a cho ngµi mét mãn lÔ phÈm . ",
     " qu¶ nhiªn lµ anh hïng xuÊt thiÕu niªn a ",
     " chóc mõng a  ngµi lÊy ®­îc ",
@@ -80,8 +80,8 @@ STR_Reward_Poem  = { " minh __ bao l©u cã , ®em __ hái thanh thiªn ",
 STR_Reward_Reward	 = { "£¨ÑÌ»¨+2Á£PKÒ©Íè£©",
     " hÇu n¨m c¸t t­êng tói ",
     " tiªn th¶o lé ",
-    " t¸m tr©n phóc th¸ng ®oµn viªn bİnh ",
-    " hoa quÕ r­îu ",
+    "£¨ t¸m tr©n phóc th¸ng ®oµn viªn bİnh £©",
+    "£¨ hoa quÕ r­îu £©",
     " cèng th¸ng phï dung ",
     " phông th¸ng qu¶ dong ",
     " ®Şnh quèc an bang hoµng kim trang bŞ mét mãn trong ®ã " }
@@ -113,12 +113,12 @@ STR_Combin_Word  = { " minh ",
     " ng¾m ",
     " nguyÖn " }
 STR_Combin_Request	 = { "£¨ÔÂ+¾Æ£©",
-    "£¨Ã÷+Ê±£©",
-    "£¨Çï+²Ê£©",
-    "£¨¸è+Îè£©",
-    "£¨Ó°+ÔÚ£©",
-    "£¨¾Ù+ÈË£©",
-    "£¨Íû+Ë¼£©" }
+    "£¨ minh +Ê±£©",
+    "£¨ thu +²Ê£©",
+    "£¨ ca +Îè£©",
+    "£¨ ¶nh +ÔÚ£©",
+    "£¨ gi¬ +ÈË£©",
+    "£¨ ng¾m +Ë¼£©" }
 STR_Combin_Func  = { "/Combin1",
     "/Combin2",
     "/Combin3",

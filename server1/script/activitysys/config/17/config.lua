@@ -61,7 +61,7 @@ tbConfig[4] = --一个细节
 {
 	nId = 4,
 	szMessageType = "ItemScript",
-	szName = "使用水贼的财宝(旧)",
+	szName = "使用T礽 B秓 Th駓 T芻(旧)",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,2376,1,-1,0},}},

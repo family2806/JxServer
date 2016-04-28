@@ -101,7 +101,7 @@ function init_task()
 end;
 
 function lp_confirm(nLevel, nWorkshopIdx, nCount, bOK)
-	local szContent = "<color=yellow>"..nCount.."<color>vŞ <color=yellow>"..nLevel.."<color> trë lªn ë c¸c bang héi kh¸c nhau<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>";
+	local szContent = "<color=yellow>"..nCount.."<color> vŞ<color=yellow>"..nLevel.."<color> trë lªn ë c¸c bang héi kh¸c nhau<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>";
 	
 	nt_SetTask(TASK_LP_ZONGGUANIDX, nWorkshopIdx);
 	nt_SetTask(TASK_LP_ZONGGUANLEVEL, nLevel);
@@ -109,7 +109,7 @@ function lp_confirm(nLevel, nWorkshopIdx, nCount, bOK)
 	if (bOK == 1) then
 		Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> d¹o nµy tinh thÇn kh«ng ®­îc tèt, muèn lªn kinh øng thİ nh­ng cÇn ph¶i thu thËp ®ñ Th­ tiÕn cö cña c¸c danh sü n¬i ®©y. PhiÒn ng­¬i ®i t×m gióp "..szContent.."Th­ tiÕn cö cña hä.", 1, "Ta biÕt råi!/lp_confirmtwo");
 	else
-		Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> muèn ng­¬i t×m gióp "..szContent.."Th­ tiÕn cö, ng­¬i kh«ng cã thêi gian sao?",2 ,"Ta vÉn ch­a nhËn nhiÖm vô nµy./lp_confirmtwo", "Ta thËt sù kh«ng muèn nhËn nhiÖm vô nµy./OnCancel");
+		Say("bæn bang<color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>Ï£ÍûÄãÎªËûÈ¥ÕÒ"..szContent.."Th­ tiÕn cö cña hä.ÄãÕæµÄÃ»ÓĞÊ±¼äÂğ£¿",2 ,"Ta vÉn ch­a nhËn nhiÖm vô nµy./lp_confirmtwo", "Ta thËt sù kh«ng muèn nhËn nhiÖm vô nµy./OnCancel");
 	end;
 end;
 
@@ -127,5 +127,5 @@ function lp_confirmtwo()
 	end;
 
 	nt_SetTask(TASK_LP_COUNT, nCount);
-	Msg2Player("B¹n ®ång ı ®i gÆp <color=yellow>"..nCount.."<color> <color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color> ®Ó nhËn nhiÖm vô Th­ tiÕn cö, ®¼ng cÊp <color=yellow>"..tab_Workshop[nWorkshopIdx].." ph­êng<color> cÇn ®¹t cÊp <color=yellow>"..nLevel.."<color>.");
+	Msg2Player("B¹n ®ång ı ®i gÆp <color=yellow>"..nCount.."<color> <color=yellow>"..tab_Workshop[nWorkshopIdx].."Ph­êng tæng qu¶n<color>¶Ô»°£¬»ñµÃ¼öÊéµÄÈÎÎñ£¬<color=yellow>"..tab_Workshop[nWorkshopIdx].." ph­êng<color> cÇn ®¹t cÊp <color=yellow>"..nLevel.."<color>.");
 end;

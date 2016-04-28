@@ -29,7 +29,7 @@ function main(sel)
 		Talk(1,"","¢n nh©n, ng­êi quªn lÊy ®¹o bµo råi!")
 	else
 		local Buttons = store_sel_extend();
-		Say("Con trai ta lªn Vâ §ang s¬n h¸i l¸ d©u t»m bÞ sãi hoang trong <color=Red>Háa Lang ®éng<color> ha ®i mÊt. Ai cã thÓ cøu ®­îc con ta?!", getn(Buttons), Buttons);
+		Say("Kh¸ch quan muèn mua g×? ®å ¨n, ®å mÆc hay ®å dïng?", getn(Buttons), Buttons);
 	end
 end;
 

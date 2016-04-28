@@ -46,7 +46,7 @@ function Uworld38_prise()
 	i = ReturnRepute(15,19,2)		-- È±Ê¡ÉùÍû£¬×î´óÎŞËğºÄµÈ¼¶£¬Ã¿¼¶µİ¼õ
 	AddRepute(i)
 	AddNote("VÒ ®Õn Thiªn V­¬ng ®¶o, ®em Liªn Lai Xu©n giao cho T«n §¹o LÜnh, hoµn thµnh nhiÖm vô Kı danh ®Ö tö. ")
-	Msg2Player("VÒ ®Õn Thiªn V­¬ng ®¶o, ®em Liªn Lai Xu©n giao cho T«n §¹o LÜnh, hoµn thµnh nhiÖm vô Kı danh ®Ö tö, Danh väng cña b¹n t¨ng thªm. "..i.."®iÓm.")
+	Msg2Player("VÒ ®Õn Thiªn V­¬ng ®¶o, ®em Liªn Lai Xu©n giao cho T«n §¹o LÜnh, hoµn thµnh nhiÖm vô Kı danh ®Ö tö. £¬ÄãµÄÃûÍûÔö¼Ó. "..i.."®iÓm.")
 end;
 
 function no()

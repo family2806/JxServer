@@ -37,27 +37,27 @@ function learn()
 	
 	G_ACTIVITY:OnMessage("ClickNpc", tbDailog, nNpcIndex)
 	
-	tbDailog.szTitleMsg = DescLink_WuShi.."<#>:½­ºşÉÏµ¶¹âÑªÓ°£¬½£ÆøËÄÆğ£¬ÎÒÀÏ¿©£¬Ã»ÓĞÄêÇáºóÉúÄÇÑùÍæÃüÀ­£¬ÈË¾ÍÊÇÕâÑù£¬¶àÁËÇ£¹Ò£¬×öÊÂÇéµÄÊ±ºò¾ÍÃ»ÁË¾ö¾ø¡£àË£¬²»ËµÕâ¸öÀ­¡£ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
-	tbDailog:AddOptEntry("ÎÒÕıÔÚ×ö½ÌÓıÈÎÎñ£¬À´ÕÒÄú°ïÃ¦µÄ", education_wushi)
-	tbDailog:AddOptEntry("ÎÒÕâÀïÓĞ¸öÂôÏÊÈâµÄÈÎÎñ", education_collectmeat)
-	tbDailog:AddOptEntry("ÎÒÏëÏòÄúÑ§Ï°Çá¹¦", education_fly)
+	tbDailog.szTitleMsg = DescLink_WuShi.."<#>:D¹o nµy kh«ng hiÓu sao l¹i cã nhiÒu ng­êi ®Õn t×m ta thÕ! §õng nãi lµ ng­¬i còng t×m ta nhĞ!"
+	tbDailog:AddOptEntry("Ta ®ang lµm nhiÖm vô S¬ nhËp, ®Õn t×m ng­êi xin gióp ®ì!", education_wushi)
+	tbDailog:AddOptEntry("Ta ®ang cã nhiÖm vô b¸n thŞt t­¬i", education_collectmeat)
+	tbDailog:AddOptEntry("Ta muèn häc Khinh c«ng", education_fly)
 	if ( Uworld1067 < 10 ) and ( Uworld1000 > 200 ) then		
-		--tbDailog.szTitleMsg = DescLink_WuShi.."<#>:½­ºşÉÏµ¶¹âÑªÓ°£¬½£ÆøËÄÆğ£¬ÎÒÀÏ¿©£¬Ã»ÓĞÄêÇáºóÉúÄÇÑùÍæÃüÀ­£¬ÈË¾ÍÊÇÕâÑù£¬¶àÁËÇ£¹Ò£¬×öÊÂÇéµÄÊ±ºò¾ÍÃ»ÁË¾ö¾ø¡£àË£¬²»ËµÕâ¸öÀ­¡£ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
-		--tbDailog:AddOptEntry("ÎÒÕıÔÚ×ö½ÌÓıÈÎÎñ£¬À´ÕÒÄú°ïÃ¦µÄ", education_wushi)
-		--tbDailog:AddOptEntry("ÎÒÕâÀïÓĞ¸öÂôÏÊÈâµÄÈÎÎñ", education_collectmeat)
-		--tbDailog:AddOptEntry("ÎÒÏëÏòÄúÑ§Ï°Çá¹¦", education_fly)
+		--tbDailog.szTitleMsg = DescLink_WuShi.."<#>:D¹o nµy kh«ng hiÓu sao l¹i cã nhiÒu ng­êi ®Õn t×m ta thÕ! §õng nãi lµ ng­¬i còng t×m ta nhĞ!"
+		--tbDailog:AddOptEntry("Ta ®ang lµm nhiÖm vô S¬ nhËp, ®Õn t×m ng­êi xin gióp ®ì!", education_wushi)
+		--tbDailog:AddOptEntry("Ta ®ang cã nhiÖm vô b¸n thŞt t­¬i", education_collectmeat)
+		--tbDailog:AddOptEntry("Ta muèn häc Khinh c«ng", education_fly)
 		tbDailog:AddOptEntry("Ta muèn chuyÓn ®æi kü n¨ng Ngò hµnh", education_changewuxing)
-		--tbDailog:AddOptEntry("Ã»Ê²Ã´£¬Ëæ±ã×ª×ª¶øÒÑ", no)
+		--tbDailog:AddOptEntry("Kh«ng cã g×! ChØ lµ ®i ngang qua th«i!", no)
 	else
-		--tbDailog.szTitleMsg = DescLink_WuShi.."<#>:½­ºşÉÏµ¶¹âÑªÓ°£¬½£ÆøËÄÆğ£¬ÎÒÀÏ¿©£¬Ã»ÓĞÄêÇáºóÉúÄÇÑùÍæÃüÀ­£¬ÈË¾ÍÊÇÕâÑù£¬¶àÁËÇ£¹Ò£¬×öÊÂÇéµÄÊ±ºò¾ÍÃ»ÁË¾ö¾ø¡£àË£¬²»ËµÕâ¸öÀ­¡£ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿"
+		--tbDailog.szTitleMsg = DescLink_WuShi.."<#>:D¹o nµy kh«ng hiÓu sao l¹i cã nhiÒu ng­êi ®Õn t×m ta thÕ! §õng nãi lµ ng­¬i còng t×m ta nhĞ!"
 		
-		--Describe(DescLink_WuShi.."<#>:½­ºşÉÏµ¶¹âÑªÓ°£¬½£ÆøËÄÆğ£¬ÎÒÀÏ¿©£¬Ã»ÓĞÄêÇáºóÉúÄÇÑùÍæÃüÀ­£¬ÈË¾ÍÊÇÕâÑù£¬¶àÁËÇ£¹Ò£¬×öÊÂÇéµÄÊ±ºò¾ÍÃ»ÁË¾ö¾ø¡£àË£¬²»ËµÕâ¸öÀ­¡£ÄãÕÒÎÒÓĞÊ²Ã´ÊÂÇéÂğ£¿",
-		--4,"ÎÒÕıÔÚ×ö½ÌÓıÈÎÎñ£¬À´ÕÒÄú°ïÃ¦µÄ/education_wushi",
-		--"ÎÒÕâÀïÓĞ¸öÂôÏÊÈâµÄÈÎÎñ/education_collectmeat",
-		--"ÎÒÏëÏòÄúÑ§Ï°Çá¹¦/education_fly",
-		--"Ã»Ê²Ã´£¬Ëæ±ã×ª×ª¶øÒÑ/no")
+		--Describe(DescLink_WuShi.."<#>:D¹o nµy kh«ng hiÓu sao l¹i cã nhiÒu ng­êi ®Õn t×m ta thÕ! §õng nãi lµ ng­¬i còng t×m ta nhĞ!",
+		--4,"Ta ®ang lµm nhiÖm vô S¬ nhËp, ®Õn t×m ng­êi xin gióp ®ì!/education_wushi",
+		--"Ta ®ang cã nhiÖm vô b¸n thŞt t­¬i/education_collectmeat",
+		--"Ta muèn häc Khinh c«ng/education_fly",
+		--"Kh«ng cã g×! ChØ lµ ®i ngang qua th«i!/no")
 	end
-	tbDailog:AddOptEntry("Ã»Ê²Ã´£¬Ëæ±ã×ª×ª¶øÒÑ", no)
+	tbDailog:AddOptEntry("Kh«ng cã g×! ChØ lµ ®i ngang qua th«i!", no)
 	tbDailog:Show()
 end
 

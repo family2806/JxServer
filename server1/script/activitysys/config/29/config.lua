@@ -15,7 +15,7 @@ tbConfig[1] = --Ò»¸öÏ¸½Ú
 	tbActition = 
 	{
 		{"AddDialogOpt",	{"TÆng Hoa Lan",2} },
---		{"SetDialogTitle",	{"<npc>22/04/2011~22/05, Nh©n sü cÊp 120 trë lªn cã thÓ tÆng Hoa Lan Rõng, Tói G¹o, ChiÕc ¸o cho ta, ta sÏ hËu ®·I ng­¬i chu ®¸o."} },
+--		{"SetDialogTitle",	{"<npc>22/04/2011~22/05, 120¼¶ÒÔÉÏÈËÊ¿¿ÉÒÔTÆng Hoa Lan£¬Ã×´ü£¬ÒÂ·ş¸øÎÒ£¬ÎÒ½«ºñ´ıÄãÖÜµ½."} },
 	},
 }
 tbConfig[2] = --Ò»¸öÏ¸½Ú

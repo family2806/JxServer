@@ -42,11 +42,11 @@ function main()
 	end;
 	local str = "B¹n ®· më mét <color=yellow>"..GOODSNAME.."<color>?";
 	if (nExp <= 0) then
-		Say("B¹n nhËn ®­îc<color=yellow>"..EXP_MAXIMUM.."<color> ®iÓm kinh nghiÖm, kh«ng thÓ sö dông ph¸o n÷a!", 0);
+		Say("B¹n ®· nhËn ®­îc <color=yellow>"..EXP_MAXIMUM.."<color> ®iÓm kinh nghiÖm, kh«ng thÓ sö dông ph¸o n÷a!", 0);
 		return 1;
 	end;
 	AddOwnExp(nExp);
-	str = str.."B¹n nhËn ®­îc<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm.";
+	str = str.."B¹n ®· nhËn ®­îc <color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm.";
 	SetTask(TASKID_TOTALEXP, GetTask(TASKID_TOTALEXP) + nExp);
 	
 	local nSeed = random(1, 10000);

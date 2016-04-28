@@ -101,7 +101,7 @@ end
 function gsp_phase_prize()
 	local nValue = GetTask(GSP_TASKID_ROLEREINFO);
 	if (GetByte(nValue, GSP_TASKID_TAG_BYTE_ROLETYPE) ~= GSP_TASKID_ROLETYPE_CDKEY) then
-		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n ch­a sö dông cd-key kİch ho¹t tµi kho¶n nµy, kh«ng thÓ l·nh th­ëng. Mäi chi tiÕt xin xem trªn trang web.");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: ÄãÎ´Ê¹ÓÃ cd-key ¼¤»î¸ÃÕËºÅ£¬²»ÄÜÁì½±¡£ÏêÇéÇë¿´ÍøÒ³ÉÏµÄĞÅÏ¢.");
 		return 0;
 	end
 	
@@ -111,7 +111,7 @@ function gsp_phase_prize()
 	local nBit = 0;
 	-----------------
 	if (nLevel < 30) then
-		Talk(1, "", "<color=green>Th«ng c¸o<color>: HiÖn ®¼ng cÊp cña b¹n lµ "..GetLevel().."cÊp, ch­a l·nh gi¶i th­ëng.<enter>Khi b¹n ®Õn cÊp 30, 40, 50, 80 h·y ®Õn nhËn gi¶i th­ëng! Cè lªn! <enter><enter><color=green>H­íng dÉn<color>: Cho phĞp b¹n sö dông <color=yellow>Hoµng Kim S­ ®å thiÕp<color>.");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: Ä¿Ç°ÄãµÄµÈ¼¶Îª"..GetLevel().."cÊp, ch­a l·nh gi¶i th­ëng.<enter>Khi b¹n ®Õn cÊp 30, 40, 50, 80 h·y ®Õn nhËn gi¶i th­ëng! Cè lªn! <enter><enter><color=green>H­íng dÉn<color>: Cho phĞp b¹n sö dông <color=yellow>Hoµng Kim S­ ®å thiÕp<color>.");
 		return 0;
 	end
 	if (nLevel >= 30 and GetBit(nValue, GSP_TASKID_TAG_BIT_30BONUS) == 0) then
@@ -147,9 +147,9 @@ function gsp_phase_prize()
 		nValue = SetBit(nValue, nBit, 1); -- ÉèÖÃÁìÈ¡±ê¼Ç
 		print("Value:"..nValue)
 		SetTask(GSP_TASKID_ROLEREINFO, nValue);
-		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n nhËn ®­îc"..nPrizeLevel.."phÇn th­ëng cña giai ®o¹n nµy! Cè g¾ng nç lùc thªm nhĞ!");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: Äã»ñµÃ"..nPrizeLevel.."phÇn th­ëng cña giai ®o¹n nµy! Cè g¾ng nç lùc thªm nhĞ!");
 	else
-		Talk(1, "", "<color=green>Th«ng c¸o<color>: B¹n ®· l·nh gi¶i th­ëng, h·y cè g¾ng!");
+		Talk(1, "", "<color=green>Th«ng c¸o<color>: ÄãÒÑÁì½±£¬¼ÓÓÍÅ¶!");
 	end
 end
 
@@ -292,7 +292,7 @@ function take_castellan_remedy2()
 		local now = date("%Y-%m-%d %H:%M:%S")
 		local name = GetName()
 		WriteLog(now .. " Båi th­êng cho bang héi ®ang chiÕm thµnh" .. name .. "nhËn ®­îc 60 thÇn bİ ®¹i hång bao")
-		Msg2Player("<#> B¹n nhËn ®­îc 60 c¸i thÇn bİ ®¹i hång bao")
+		Msg2Player("<#> Äã»ñµÃnhËn ®­îc 60 thÇn bİ ®¹i hång bao")
 
 		tong, res = GetTong()
 		if (res == 1 and tong ~= "") then

@@ -20,7 +20,7 @@ function tbVnShop:Main()
 	if self.IsAcitve() == 1 then
 		self:ComposeItem()
 	else
-		Talk(1, "", "HiÖn t¹i ta kh«ng cßn h¹t gièng hoa hång nµo c¶, xin ®¹i hiÖp thø lçi!")
+		Talk(1, "", "Ä¿Ç°´óÏÀÃ»ÓÐÈÎºÎH¹t gièng hoa hång£¬Çë´óÏÀÁÂ½â!")
 	end	
 end
 
@@ -39,5 +39,5 @@ end
 
 local pEventType = EventSys:GetType("AddNpcOption")
 if tbVnShop:IsAcitve() == 1 then
-	nId = pEventType:Reg("Hµng rong", "Mua h¹t gièng hoa hång", tbVnShop.Main,{tbVnShop})
+	nId = pEventType:Reg("Hµng rong", "Mua H¹t gièng hoa hång", tbVnShop.Main,{tbVnShop})
 end	

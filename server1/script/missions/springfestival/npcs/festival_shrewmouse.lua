@@ -8,7 +8,7 @@ ITEM_DROPRATE_TABLE = {
 						{	{6,1,984,1,1,1,1},0.010, "B®ng Phong H∑m T‹nh"	},
 						{	{6,1,994,1,1,1,1},0.016, "Hµn Phong Ng‰c"	},
 						{	{6,1,989,1,1,1,1},0.010, "Kinh nghi÷m phÔ "	},
-						{	{6,1,988,1,1,1,1},0.005, "Kinh nghi÷m phÔ (cao c p) "	},
+						{	{6,1,988,1,1,1,1},0.005, "Kinh nghi÷m phÔ (∏ﬂº∂) "	},
 						{	{6,1,985,1,1,1,1},0.005, "Cµn Kh´n Na Di phÔ "	},
 						{	{6,1,986,1,1,1,1},0.005, "Di H◊nh Ho∏n ∂nh phÔ "	},
 						{	{6,1,979,1,1,1,1},0.010, "B®ng S≠¨ng Hi÷u gi∏c "	},
@@ -53,7 +53,7 @@ function add_dropitem()
 		if (nSum >= nRandNum) then
 			if (type( ITEM_DROPRATE_TABLE[i][1] ) == "table") then
 				AddItem(ITEM_DROPRATE_TABLE[i][1][1], ITEM_DROPRATE_TABLE[i][1][2], ITEM_DROPRATE_TABLE[i][1][3], ITEM_DROPRATE_TABLE[i][1][4], ITEM_DROPRATE_TABLE[i][1][5], ITEM_DROPRATE_TABLE[i][1][6], ITEM_DROPRATE_TABLE[i][1][7])
-				Msg2Player("Bπn Æ≠Óc 1 c∏i<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3]);
+				Msg2Player("ƒ„ ’µΩ“ªc∏i<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3]);
 			elseif (type( ITEM_DROPRATE_TABLE[i][1] ) == "number") then
 			    local nExp = ITEM_DROPRATE_TABLE[i][1] * festival_get_exptimes();
 				AddOwnExp(nExp);

@@ -8,6 +8,6 @@ function OnDeath()
 	if (Uworld36 == 70) and (HaveItem(17) == 0) and (random(0,100) < 40) then			--Ã»ÓÐ°×ÓñÈçÒâÊ±£¬40%¸ÅÂÊ
 		AddEventItem(17)
 		Msg2Player("NhËn ®­îc B¹ch Ngäc Nh­ ý. ")
-		AddNote("§¸nh b¹i Toµn Thiªn Ph¸, nhËn ®­îc B¹ch Ngäc Nh­ ý. ")
+		AddNote("´ò°Ü×êÌìÆÂ£¬NhËn ®­îc B¹ch Ngäc Nh­ ý. ")
 	end
 end;

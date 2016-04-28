@@ -109,8 +109,8 @@ function pTask:OnProgressbarTimeout(nId, tb, player)
 		if (nItemIndex > 0) then
 			ITEM_SetExpiredTime(nItemIndex, self.m_ItemTimeout)
 			player:SyncItem(nItemIndex)
-			player:Say("Ngi thu th藀 頲 1 Tuy誸 Linh Ch﹗.")
-			self:BroadCast(format("%s thu th藀 頲 1 Tuy誸 Linh Ch﹗", player:GetName()))
+			player:Say("你收集到一个Tuy誸 Linh Ch﹗﹗.")
+			self:BroadCast(format("%s 收集到一个Tuy誸 Linh Ch﹗﹗", player:GetName()))
 		else
 			self:LogError("TASK3: failed to add pearl item")
 		end

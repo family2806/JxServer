@@ -164,7 +164,7 @@ function sltDungeon:OnMonsterTimer(nInterval, nNpcIndex)
 					self.bBattleOver = 1;
 					for i=1,getn(self.tbMember) do
 						if (self.tbMember[i].bInDungeon == 1) then
-							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "T¹m thêi ®ît thİch kh¸ch nµy ®· bŞ dÑp lo¹n bëi c¸c h¹, b©y giê cã thÓ ®Õn tr­ëng l·o Thİ LuyÖn §­êng ®Ó nhËn th­ëng.");
+							doFunByPlayer(self.tbMember[i].nIndex, Msg2Player, "´Ì¿ÍÔİÊ±±»¸óÏÂ°ÚÆ½ÁË£¬ÏÖÔÚ¿ÉÒÔµ½Thİ LuyÖn §­êng³¤ÀÏ´¦Áì½±.");
 						end
 					end
 				end
@@ -265,7 +265,7 @@ function sltDungeon:OnEnterMap()
 	local strName = GetName();
 
 	if (self.strOwner ~= strName) then
-		Talk(1,"","§©y kh«ng ph¶i <color=red>Thİ LuyÖn §­êng<color> do c¸c h¹ më!");
+		Talk(1,"","Õß²»ÊÇ <color=red>Thİ LuyÖn §­êng<color> ÓÉ¸óÏÂ´ò¿ª");
 		return 0;
 	end
 	
@@ -419,7 +419,7 @@ function sltDungeon:OnDungeonOpen(tbDungeonData)
 		--self.nMonsterOnStage = 0;
 		
 		--Ìí¼Ó´«ËÍÊ¯±®
-		local nnpcidx = AddNpc(309, 1, SubWorldID2Idx(self.nDungeonId), self.tbTrapPos[1], self.tbTrapPos[2],1, "Tr­ëng l·o Thİ LuyÖn §­êng");
+		local nnpcidx = AddNpc(309, 1, SubWorldID2Idx(self.nDungeonId), self.tbTrapPos[1], self.tbTrapPos[2],1, "Thİ LuyÖn §­êng³¤ÀÏ");
 		SetNpcScript(nnpcidx, "\\script\\missions\\dungeon\\dungeons\\shiliantang\\zhanglao.lua");
 		
 		self.tbTimer = clone(tbTimerClass);
@@ -559,11 +559,11 @@ function sltDungeon:CheckOwnerInDungeon()
 	local tbDungeon = tbDungeonManager:GetMineDungeon(self.strDungeon, 1);
 	local nMapId = SubWorldIdx2ID(SubWorld);
 	if (tbDungeon == nil) then
-		Talk(1,"","C¸c h¹ vÉn ch­a khai më <color=red>Thİ LuyÖn §­êng<color>!");
+		Talk(1,"","¸óÏÂ»¹Î´´ò¿ª <color=red>Thİ LuyÖn §­êng<color>!");
 		return nil;
 	end
 	if (nMapId ~= tbDungeon.nDungeonId) then
-		Talk(1,"","C¸c h¹ kh«ng ë trong <color=red>Thİ LuyÖn §­êng<color>, hoÆc ng­êi më<color=red>Thİ LuyÖn §­êng<color> kh«ng ph¶i lµ c¸c h¹, kh«ng thÓ dïng thao t¸c nµy!");
+		Talk(1,"","¸óÏÂ²»ÔÚ <color=red>Thİ LuyÖn §­êng<color>, »òÕß´ò¿ª color=red>Thİ LuyÖn §­êng<color> µÄÈË²»ÊÇ¸óÏÂ£¬²»ÄÜÊ¹ÓÃ¸Ã²Ù×÷!");
 		return nil;
 	end
 	return 1;
@@ -637,7 +637,7 @@ function sltDungeon:CallTower()
 			return
 		end
 		tbMember.nCallTower = tbMember.nCallTower - 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> »ú»áÕÙ»½cung kş binh", tbMember.nCallTower));
 		tbDungeon.tbTower[nTowerIdx].nNpcIdx = nNpcIdx;
 		WriteLog(format("[%s] [%s] in [%s] dungeon(%0.f) call tower. Left call chance %d", GetLocalDate("%Y-%m-%d %H:%M:%S"), strName, "Thİ LuyÖn §­êng", tbDungeon.nDungeonId, tbMember.nCallTower));
 		SetNpcActiveRegion(nNpcIdx, 1);
@@ -665,12 +665,12 @@ function sltDungeon:CallBackTower()
 		end
 		
 		if (bFound == 0 or nNpcIdx == 0) then
-			Talk(1,"","GÇn ®©y kh«ng cã cung tiÔn thñ cã thÓ triÖu tËp!");
+			Talk(1,"","×î½üÃ»ÓĞcung kş binh¿ÉÒÔÕÙ»½!");
 			return
 		end
 		
 		if (tbMember == nil) then
-			Talk(1,"","Ng­¬i kh«ng thÓ triÖu tËp cung tiÔn thñ!");
+			Talk(1,"","Äã²»ÄÜÕÙ»½cung kş binh");
 			return
 		end
 		
@@ -681,8 +681,8 @@ function sltDungeon:CallBackTower()
 		
 		tbMember.nMedal = tbMember.nMedal - 2;
 		tbMember.nCallTower = tbMember.nCallTower + 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ <color=green>%d<color> Thİ LuyÖn §­êngÑ«ÕÂ.", tbMember.nMedal));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½cung kş binh", tbMember.nCallTower));
 
 		tbDungeon.tbTower[nTowerIdx].nNpcIdx = 0;
 		DelNpc(nNpcIdx);
@@ -696,7 +696,7 @@ function sltDungeon:AddCallTowerChance(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nCallTower = tbMember.nCallTower + nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½cung kş binh", tbMember.nCallTower));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddShooterCount",nCount});
 		end
 	end
@@ -728,7 +728,7 @@ function sltDungeon:AddMedal(nCount)
 		local tbMember = tbDungeonManager:GetMember(SubWorldIdx2ID(SubWorld), strName);
 		if (tbMember ~= nil) then
 			tbMember.nMedal = tbMember.nMedal + nCount;
-			doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
+			doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> Thİ LuyÖn §­êngÑ«ÕÂ.", tbMember.nMedal));
 			RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddMedalCount",nCount});
 		end
 	end
@@ -795,8 +795,8 @@ function sltDungeon:BuyChance()
 		
 		tbMember.nMedal = tbMember.nMedal - 5;
 		tbMember.nCallTower = tbMember.nCallTower + 1;
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> huy ch­¬ng thİ luyÖn ®­êng.", tbMember.nMedal));
-		doFunByPlayer(tbMember.nIndex, Msg2Player, format("HiÖn t¹i c¸c h¹ cã <color=green>%d<color> c¬ héi triÖu tËp cung tiÔn thñ", tbMember.nCallTower));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> Thİ LuyÖn §­êngÑ«ÕÂ.", tbMember.nMedal));
+		doFunByPlayer(tbMember.nIndex, Msg2Player, format("Ä¿Ç°¸óÏÂÓĞ<color=green>%d<color> »ú»áÕÙ»½cung kş binh", tbMember.nCallTower));
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddShooterCount",1});
 		RemoteExc("\\script\\mission\\dungeon\\datamanager.lua", "tbDDManager:CallFun", {self.nMapTemplet, self.nDungeonId, self.strOwner, "AddMedalCount",-5});
 		return 1;

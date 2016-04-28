@@ -4,7 +4,7 @@ tbConfig[1] = --¾ÛÁ¦ÄýÉñÉ¢
 {
 	nId = 1,
 	szMessageType = "ItemScript",
-	szName = "SuDungTuLucNgungThanTan",
+	szName = "Sö dông Tô lùc ng­ng thÇn t¸n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30142,1,0,0},}},
@@ -16,14 +16,14 @@ tbConfig[1] = --¾ÛÁ¦ÄýÉñÉ¢
 	tbActition = 
 	{		
 		{"tbVNG_BitTask_Lib:setBitTask", {tbBITTSK_TU_LUC_NGUNG_THAN_TAN_LIMIT_USE, 1}},
-		{"PlayerFunLib:AddExp",	{500e6,0,"PhongVanLenhBai","SuDungTuLucNgungThanTan"} },
+		{"PlayerFunLib:AddExp",	{500e6,0,"PhongVanLenhBai","Sö dông Tô lùc ng­ng thÇn t¸n"} },
 	},
 }
 tbConfig[2] = --¾ÛÁ¦ÄýÉñÍè
 {
 	nId = 2,
 	szMessageType = "ItemScript",
-	szName = "SuDungTuLucNgungThanHoan",
+	szName = "Sö dông Tô lùc ng­ng thÇn hoµn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30143,1,0,0},}},
@@ -35,7 +35,7 @@ tbConfig[2] = --¾ÛÁ¦ÄýÉñÍè
 	tbActition = 
 	{		
 		{"tbVNG_BitTask_Lib:setBitTask", {tbBITTSK_TU_LUC_NGUNG_THAN_HOAN_LIMIT_USE, 1}},
-		{"PlayerFunLib:AddExp",	{1000e6,0,"PhongVanLenhBai","SuDungTuLucNgungThanHoan"} },
+		{"PlayerFunLib:AddExp",	{1000e6,0,"PhongVanLenhBai","Sö dông Tô lùc ng­ng thÇn hoµn"} },
 	},
 }
 tbConfig[3] =

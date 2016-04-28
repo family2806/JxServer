@@ -25,11 +25,11 @@ function detail()
 end;
 
 tab_Content = {
-	{"Ph¸o trung", "3 viªn ph¸o tiÓu", 50, {1352, "Ph¸o trung"}, {1, 1351, "Ph¸o tiÓu"}, "NÕu lµm thÊt b¹i, quý kh¸ch sÏ mÊt ®i 1 viªn ph¸o tiÓu"},
-	{"Phong ph¸o tiÓu", "10 viªn ph¸o tiÓu, 2 viªn ph¸o trung vµ 1000 l­îng.", 20, {1354, "phong ph¸o tiÓu ®Æc biÖt"}, {0, 1357, "phong ph¸o tiÓu th­êng"}, "NÕu lµm thÊt b¹i, quý kh¸ch sÏ nhËn ®­îc 1 Phong ph¸o tiÓu th­êng. NÕu thµnh c«ng, sÏ nhËn ®­îc 1 Phong ph¸o tiÓu ®Æc biÖt"},
-	{"Ph¸o ®¹i", "3 viªn ph¸o trung", 50, {1353, "Ph¸o ®¹i"}, {1, 1352, "Ph¸o trung"}, "NÕu lµm thÊt b¹i, quý kh¸ch sÏ mÊt ®i 1 viªn ph¸o trung"},
-	{"Phong ph¸o trung", "10 viªn ph¸o trung, 2 viªn ph¸o ®¹i vµ 3000 l­îng.", 20, {1355, "Phong ph¸o trung ®Æc biÖt"}, {0, 1358, "Phong ph¸o trung th­êng"}, "NÕu lµm thÊt b¹i, quý kh¸ch sÏ nhËn ®­îc Phong ph¸o trung th­êng. NÕu thµnh c«ng, sÏ nhËn ®­îc Phong ph¸o trung ®Æc biÖt"},
-	{"Phong ph¸o ®¹i", "100 viªn ph¸o ®¹i vµ 5000 l­îng.", 15, {1356, "Phong ph¸o ®¹i ®Æc biÖt"}, {0, 1359, "Phong ph¸o ®¹i th­êng"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½Phong ph¸o ®¹i th­êng. Èç¹û³É¹¦ÁË, ½«µÃµ½Phong ph¸o ®¹i ®Æc biÖt"},
+	{"Ph¸o trung", "3 viªn ph¸o tiÓu", 50, {1352, "Ph¸o trung"}, {1, 1351, "Ph¸o tiÓu"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«ËðÊ§1¿ÅPh¸o tiÓu"},
+	{"Phong ph¸o tiÓu", "10¿ÅPh¸o tiÓu, 2¿ÅPh¸o trungºÍ1000Á½.", 20, {1354, "phong ph¸o tiÓu ®Æc biÖt"}, {0, 1357, "phong ph¸o tiÓu th­êng"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½1phong ph¸o tiÓu th­êng. Èç¹û³É¹¦ÁË, ½«µÃµ½1phong ph¸o tiÓu ®Æc biÖt"},
+	{"Ph¸o ®¹i", "3¿ÅPh¸o trung", 50, {1353, "Ph¸o ®¹i"}, {1, 1352, "Ph¸o trung"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«Ê§È¥1¿ÅPh¸o trung"},
+	{"Phong ph¸o trung", "10¿ÅPh¸o trung, 2¿ÅPh¸o ®¹iºÍ3000Á½.", 20, {1355, "Phong ph¸o trung ®Æc biÖt"}, {0, 1358, "Phong ph¸o trung th­êng"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«½«µÃµ½Phong ph¸o trung th­êng. Èç¹û³É¹¦ÁË, ½«µÃµ½Phong ph¸o trung ®Æc biÖt"},
+	{"Phong ph¸o ®¹i", "100 viªn ph¸o ®¹i vµ 5000 l­îng.", 15, {1356, "Phong ph¸o ®¹i ®Æc biÖt"}, {0, 1359, "ÆÕÍ¨Phong ph¸o ®¹i"}, "Èç¹ûÖÆ×÷Ê§°Ü,Äã½«µÃµ½ÆÕÍ¨Phong ph¸o ®¹i. Èç¹û³É¹¦ÁË, ½«µÃµ½Phong ph¸o ®¹i ®Æc biÖt"},
 };
 function confirm_make(nIndex)
 	Say("Muèn chÕ t¹o 1 <color=yellow>"..tab_Content[nIndex][1].."<color> cÇn cã <color=yellow>"..tab_Content[nIndex][2].."<color>. Nh­ng ch­a ch¾c thµnh c«ng ®©u nhÐ! "..tab_Content[nIndex][6].."Lµm chø?", 2, "Ta muèn lµm /#make_crackers("..nIndex..")", "Ta ch­a s½n sµng!/no");

@@ -56,7 +56,7 @@ function useyu(szName)
 	Msg2Player("<#><color=0xB5FDD7>"..OldName.."<color> ®· nh¾m vµo b¹n sö dông <color=0xB5FDD7>"..szItem.."<color>?"..szEffect);
 	
 	PlayerIndex = OldPlayer;
-	Msg2Player("<#> B¹n<color=0xB5FDD7>"..szName.."<color> sö dông <color=0xB5FDD7>"..szItem.."<color>?"..szEffect);
+	Msg2Player("<#> B¹n<color=0xB5FDD7>"..szName.."<color> sö dông <color=0xB5FDD7>"..szItem.."<color>?Áî¶ÔÊÖ"..szEffect);
 end;
 
 

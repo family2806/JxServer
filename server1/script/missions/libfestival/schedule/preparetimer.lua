@@ -21,7 +21,7 @@ function OnTimer()
 			Msg2MSAll(CO_PREPAREMISSIONID, "ChØ cßn"..nRemain.."phót n÷a ho¹t ®éng sÏ b¾t ®Çu!");
 		end;
 	elseif (9 == nNewsValue) then
-        Msg2MSAll(CO_PREPAREMISSIONID, "chØ cßn 30 gi©y n÷a ho¹t ®éng sÏ b¾t ®Çu!");
+        Msg2MSAll(CO_PREPAREMISSIONID, "ChØ cßn30Ãë»î¶¯½«¿ªÊ¼!");
 	end;
 end;
 

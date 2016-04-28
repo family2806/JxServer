@@ -47,5 +47,5 @@ function True9()
 	Uworld36 = SetByte(GetTask(36),1,60)
 	SetTask(36,Uworld36)
 	AddNote("T¹i B¸n S¬n yªu gÆp Hµ Linh Phiªu, tr¶ lêi chİnh x¸c ba c©u ®èi, qua cöa ¶i thø ba ")
-	Msg2Player("T¹i B¸n S¬n Yªu gÆp Hµ Linh Phiªu, tr¶ lêi chİnh x¸c ba c©u ®èi, qua cöa ¶i thø ba. VÒ Toµn Thiªn Pha NhËp KhÈu cña B¸n s¬n Yªu t×m T¹ V©n La s­ muéi tiÕp nhËn thö th¸ch 'vâ c«ng'. ")
+	Msg2Player("T¹i B¸n S¬n yªu gÆp Hµ Linh Phiªu, tr¶ lêi chİnh x¸c ba c©u ®èi, qua cöa ¶i thø ba . »Ø×êÌìÆÂÕÒĞ»ÔÆÂŞÊ¦ÃÃ½ÓÎä¹¦¿¼Ñé. ")
 end;

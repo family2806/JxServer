@@ -68,7 +68,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 			AddOwnExp(myLevel * (20+0.1*myLevel)-10)
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 			PlayerIndex = otherIndex
-			Msg2Player(myName.."®­îc 1 tÊm ThiÖp giai l·o, gióp cho duyªn phËn cña c¸c b¹n thªm gÇn nhau h¬n. §Õn nay, b¹n ®· tİch lòy"..otherNum.."tÊm thiÖp giai l·o.")
+			Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬°ÑÄãÃÇthªm gÇn nhau h¬n. HiÖn nay, b¹n ®· tİch lòy"..otherNum.."tÊm thiÖp giai l·o.")
 			AddOwnExp(otherLevel * (10+0.07*otherLevel))
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 			if(myNum > 98) then --´ïµ½99¸ö£¬Óë×ÓÙÉÀÏÀ²
@@ -103,7 +103,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 		Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o! B¹n vµ "..otherName.."duyªn phËn thªm gÇn nhau h¬n. B¹n hiÖn ®· tİch lòy ®­îc"..myNum.."tÊm thiÖp giai l·o.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --»ØĞ´ĞÅÏ¢
 		PlayerIndex = otherIndex
-		Msg2Player(myName.."®­îc 1 tÊm thiÖp giai l·o, gióp cho duyªn phËn cña c¸c b¹n thªm gÇn nhau h¬n. §Õn nay, b¹n ®· tİch lòy"..otherNum.."tÊm thiÖp giai l·o.")
+		Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬ÓëÄãduyªn phËn thªm gÇn nhau h¬n. B¹n hiÖn ®· tİch lòy ®­îc"..otherNum.."tÊm thiÖp giai l·o.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,otherNum)) --»ØĞ´ĞÅÏ¢
 		PlayerIndex = oldPlyIdx
 		return 0
@@ -113,7 +113,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 	Msg2Player("B¹n ®­îc 1 tÊm ThiÖp Giai L·o, ®ång thêi cïng "..otherName.."b¾t ®Çu b¾t ®Çu cuéc t×nh duyªn. ")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = otherIndex
-	Msg2Player(myName.."®­îc 1 tÊm ThiÖp Giai L·o, ®ång thêi cïng b¹n b¾t ®Çu cuéc t×nh duyªn.")
+	Msg2Player(myName.."µÃµ½Ò»ÕÅÓë×ÓÙÉÀÏ¿¨£¬²¢ÇÒºÍÄãb¾t ®Çu b¾t ®Çu cuéc t×nh duyªn. ")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = oldPlyIdx
 	return 0

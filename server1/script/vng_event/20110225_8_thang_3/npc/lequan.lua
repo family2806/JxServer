@@ -39,5 +39,5 @@ function tbVNGWD2011_LeQuan:GetAward()
 	SetTask(self.TSK_DAY_LIMIT, nCurDay)
 Msg2Player(GetTask(self.TSK_DAY_LIMIT))
 	local tbAward = {szName="B¸nh M×",tbProp={6,1,30096,1,0,0},nCount=10,nExpiredTime=20110314}
-	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][NhËn b¸nh m× t¹i NPC LÔ Quan]")
+	tbAwardTemplet:GiveAwardByList(tbAward, "[VNG][8thang3][ÔÚNPCÀñ¹Ù´¦NhËnB¸nh M×]")
 end

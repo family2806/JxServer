@@ -50,7 +50,7 @@ function newyear0901_hongbao_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	szDescLink = szDescLink or "<npc>"
 	
 	local tbSay = newyear0901_hongbao_Compose:MakeOptByProductName("Ta muèn ®æi", nItemIndex, szDescLink);
-	tinsert(tbSay , 1, "<dec>"..szDescLink.."Ho¹t ®éng bao l× x× may m¾n diÔn ra tõ ngµy 16-01-2009 ®Õn 15-02-2009. Trong thêi gian ho¹t ®éng, ®¹i hiÖp thu thËp Lam B¶o R­¬ng ®Ó nhËn ®­îc ch÷ Phóc vµ Thä; thu thËp Hång B¶o R­¬ng ®Ó nhËn ch÷ Léc. §¹i hiÖp cã thÓ dïng c¸c ch÷ ®ã ®Ó ®èi lÊy ThŞnh V­îng Hång Bao vµ Ph¸t Tµi Hång Bao ®Ó nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ c¸c vËt phÈm cã gi¸ trŞ. §Æc biÖt khi sö dông Ph¸t Tµi Hång Bao sÏ thu ®­îc bé Ngò Qu¶ vµ cã thÓ ®æi nhiÒu phÇn th­ëng gi¸ trŞ kh¸c.");
+	tinsert(tbSay , 1, "<dec>"..szDescLink.."ºÃÔËÑ¹ËêÇ®°ü»î¶¯´Ó16-01-2009µ½15-02-2009. »î¶¯ÆÚ¼ä£¬ÒªµÃµ½PhócºÍThä×Ö¾ÍÒªÊÕ¼¯À¶±¦Ïä£»ÊÕ¼¯ºì±¦Ïä¿ÉÒÔµÃµ½Léc×Ö¡£´óÏÀ¿ÉÒÔÓÃÕâĞ©×Ö¶Ò»»ThŞnh V­îng Hång BaoºÍPh¸t Tµi Hång BaoÀ´ÁìÈ¡¾­ÑéºÍ±ğµÄÓĞ¼ÛÖµµÄÎïÆ·.");
 	tinsert(tbSay , getn(tbSay)+1, "KÕt thóc ®èi tho¹i/OnCancel");
 	CreateTaskSay(tbSay);
 end

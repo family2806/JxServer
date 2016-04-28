@@ -16,7 +16,7 @@ function main()
 			end
 			OpenMission(MISSIONID)
 			str = date( "%mth¸ng%dngµy" ).."cña Vâ l©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt m«n ph¸i ®· b¾t ®Çu, ng­êi ch¬i muèn b¸o danh tham gia thi ®Êu h·y ®Õn L©m An ®èi tho¹i víi Sø gi¶ kiÖt xuÊt. §iÒu kiÖn b¸o danh: §¼ng cÊp tõ cÊp 50 ®Õn cÊp 90, sè lÇn tham gia thi ®Êu Ýt h¬n 40."
-			WriteLog(date( "%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:" ).."Vâ L©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt m«n ph¸i ®· b¾t ®Çu!" )
+			WriteLog(date( "%YÄê%mth¸ng%dngµy%HÊ±M·Ö:" ).."Vâ L©m"..CP_MAPTAB[ i ][ 3 ].."Thi ®Êu kiÖt xuÊt m«n ph¸i ®· b¾t ®Çu!" )
 			AddGlobalCountNews( str, 1 )
 			SetMissionV( MS_STATE, 1 )
 			SetMissionV( MS_ROUND, 1 )

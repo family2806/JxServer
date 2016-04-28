@@ -43,5 +43,5 @@ function main(nItemIdx)
 		return 1;
 	end;
 	WriteLog("[Thµnh chñ LÔ phÈm]/t"..GetLocalDate("%Y-%m-%d %H:%M:%S\t").."Name:"..GetName().." Account:"..GetAccount().." NhËn ®­îc"..GetItemName(nNewIdx));
-	Msg2Player("B¹n nhËn ®­îc <color=white>"..GetItemName(nNewIdx).."<color>");
+	Msg2Player("Äú NhËn ®­îc<color=white>"..GetItemName(nNewIdx).."<color>");
 end;

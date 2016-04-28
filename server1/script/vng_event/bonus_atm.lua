@@ -68,5 +68,5 @@ end
 
 local pEventType = EventSys:GetType("AddNpcOption")
 if (BonusATM2011:IsActive() ~= 0) then
-	nId = pEventType:Reg("L‘ Quan", "NhÀn th≠Îng HÂng Bao An Khang", BonusATM2011.GetAward,{BonusATM2011})
+	nId = pEventType:Reg("L‘ Quan", "¡ÏΩ±HÂng Bao An Khang", BonusATM2011.GetAward,{BonusATM2011})
 end	

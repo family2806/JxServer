@@ -8,7 +8,7 @@ ITEM_DROPRATE_TABLE = {
 						{	{6,1,984,1,1,1,1},0.010, "B¨ng Phong H·m TÜnh"	},
 						{	{6,1,994,1,1,1,1},0.016, "Hµn Phong Ngäc"	},
 						{	{6,1,989,1,1,1,1},0.010, "Kinh nghiÖm phï "	},
-						{	{6,1,988,1,1,1,1},0.005, "Kinh nghiÖm phï (cao cÊp) "	},
+						{	{6,1,988,1,1,1,1},0.005, "Kinh nghiÖm phï (¸ß¼¶) "	},
 						{	{6,1,985,1,1,1,1},0.005, "Cµn Kh«n Na Di phï "	},
 						{	{6,1,986,1,1,1,1},0.005, "Di H×nh Ho¸n ¶nh phï "	},
 						{	{6,1,979,1,1,1,1},0.010, "B¨ng S­¬ng HiÖu gi¸c "	},
@@ -45,7 +45,7 @@ function add_dropitem()
 			elseif (type( ITEM_DROPRATE_TABLE[i][1] ) == "number") then
 			    local nExp = ITEM_DROPRATE_TABLE[i][1] * festival_get_exptimes();
 				AddOwnExp(nExp);
-				Msg2Player("B¹n nhËn ®­îc <color=0xB5FDD7>"..nExp.."®iÓm kinh nghiÖm.");
+				Msg2Player("B¹n nhËn ®­îc 1 <color=0xB5FDD7>"..nExp.."®iÓm kinh nghiÖm.");
 			end
 			break
 		end

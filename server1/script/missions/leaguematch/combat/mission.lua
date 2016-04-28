@@ -36,8 +36,8 @@ function EndMission()
 			else --ÈËÊýÏàµÈ
 				local n_dmg1	= wlls_get_ms_damage(i)
 				local n_dmg2	= wlls_get_ms_damage(i+1)
-				local str1	= "<color=yellow> §éi cña b¹n nhËn <color=red>"..n_dmg1.."<color> ®iÓm, ®èi thñ tróng <color=red>"..n_dmg2.."<color> s¸t th­¬ng"
-				local str2	= "<color=yellow> §éi cña b¹n nhËn <color=red>"..n_dmg2.."<color> ®iÓm, ®èi thñ tróng <color=red>"..n_dmg1.."<color> s¸t th­¬ng"
+				local str1	= "<color=yellow> §éi cña b¹n nhËn <color=red>"..n_dmg1.."<color> s¸t th­¬ng, ®èi ph­¬ng nhËn <color=red>"..n_dmg2.."<color> s¸t th­¬ng"
+				local str2	= "<color=yellow> §éi cña b¹n nhËn <color=red>"..n_dmg2.."<color> s¸t th­¬ng, ®èi ph­¬ng nhËn <color=red>"..n_dmg1.."<color> s¸t th­¬ng"
 				if (n_dmg1 < n_dmg2) then
 					Msg2MSGroup(WLLS_MSID_COMBAT, str1.." KÕt qu¶: ®éi b¹n th¾ng!", i)
 					Msg2MSGroup(WLLS_MSID_COMBAT, str2.." KÕt qu¶: ®éi b¹n thua!", i + 1)
@@ -117,10 +117,10 @@ function OnLeave( org_player )
 			local n_oldidx = PlayerIndex
 			PlayerIndex	= org_player
 			local n_our_dmg	= ST_GetDamageCounter()
-			Msg2Player("<color=yellow>S¸t th­¬ng ®éi b¹n tróng ph¶i lµ <color=red>"..n_our_dmg.."<color> ®iÓm, ®èi thñ tróng <color=red>"..n_emy_dmg.."<color> s¸t th­¬ng")
+			Msg2Player("<color=yellow>S¸t th­¬ng ®éi b¹n tróng ph¶i lµ <color=red>"..n_our_dmg.."<color> s¸t th­¬ng, ®èi ph­¬ng nhËn <color=red>"..n_emy_dmg.."<color> s¸t th­¬ng")
 			PlayerIndex	= n_oldidx
 			
-			Msg2MSGroup(WLLS_MSID_COMBAT, "<color=yellow>S¸t th­¬ng ®éi b¹n tróng ph¶i lµ <color=red>"..n_emy_dmg.."<color> ®iÓm, ®èi thñ tróng <color=red>"..n_our_dmg.."<color> s¸t th­¬ng", emy_camp)
+			Msg2MSGroup(WLLS_MSID_COMBAT, "<color=yellow>S¸t th­¬ng ®éi b¹n tróng ph¶i lµ <color=red>"..n_emy_dmg.."<color> s¸t th­¬ng, ®èi ph­¬ng nhËn <color=red>"..n_our_dmg.."<color> s¸t th­¬ng", emy_camp)
 			
 			--µÃ³ö±ÈÈü½á¹û
 			local n_usedtime = (GetGlbValue(GLB_WLLS_TIME) + 1) * WLLS_TIMER_FIGHT_FREQ * WLLS_FRAME2TIME

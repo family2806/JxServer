@@ -66,7 +66,7 @@ tb_gold2planita_material =
 tbUpGradeProcess = {
 [1] = {
 				tbUpItemList = tb_gold2planita_material,
-				szErrorMsg = "<dec><npc> sai lÇm <color=yellow> b¹ch kim trang bŞ <color>, ta cßn cÇn <color=yellow> thÇn bİ qu¸ng th¹ch <color>, color=yellow> cÊp t¸m huyÒn tinh qu¸ng th¹ch <color> , <color=yellow> bæ ngµy ®¸ bÓ phiÕn  trung <color>, xin/mêi l­u l¹i nh÷ng vËt kh¸c .",
+				szErrorMsg = "<dec><npc>´íÎó<color=yellow>°×½ğ×°±¸<color>, ÎÒ»¹Ğè<color=yellow> thÇn bİ qu¸ng th¹ch <color>, color=yellow> cÊp t¸m huyÒn tinh qu¸ng th¹ch <color> £¬<color=yellow> bæ ngµy ®¸ bÓ phiÕn  trung <color>, ÇëÁôÏÂÆäËû¶«Î÷.",
 				nItemQuality = 1,
 				szGetEquipIDFunc = "GetGlodEqIndex",
 				szContinueFunc = "want_upgoldeq",

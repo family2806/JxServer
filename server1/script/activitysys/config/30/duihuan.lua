@@ -106,8 +106,8 @@ local tbBookAward = {
 	{szName="KÝch C«ng Trî Lùc Hoµn",tbProp={6,1,2952,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
 	{szName="¢m D­¬ng Ho¹t HuyÕt §¬n",tbProp={6,1,2953,1,0,0},nCount=1,nRate=1,nExpiredTime=20160},
 	{szName="Méc Nh©n LÖnh",tbProp={6,1,30105,1,0,0},nCount=5,nRate=9.664},
-	{szName="50000 §iÓm Cèng HiÕn Bang Héi",nCount=1,nRate=2, pFun = function() %pContributionAward(50000) end},
-	{szName="100000 §iÓm Cèng HiÕn Bang Héi",nCount=1,nRate=1, pFun = function() %pContributionAward(100000) end},
+	{szName="50000 ¸ö ®iÓm cèng hiÕn bang héi",nCount=1,nRate=2, pFun = function() %pContributionAward(50000) end},
+	{szName="100000 ¸ö ®iÓm cèng hiÕn bang héi",nCount=1,nRate=1, pFun = function() %pContributionAward(100000) end},
 	{szName="Tö M·ng Chi B¶o (Nãn)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.01,tbParam={1,0,0,0,0,0}},
 	{szName="Tö M·ng Chi B¶o (§ai L­ng)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.02,tbParam={4,0,0,0,0,0}},
 	{szName="Tö M·ng Chi B¶o (Bao Tay)",tbProp={6,1,30140,1,0,0},nCount=1,nRate=0.01,tbParam={3,0,0,0,0,0}},
@@ -346,7 +346,7 @@ function pActivity:TeacherAward()
 	end
 	local tbTeacherEXP = { {nExp_tl=1,nCount = 100000000,}, }
 	local tbTranslog = {strFolder = "201111_20Thang11/", nPromID = 16, nResult = 1}
-	tbAwardTemplet:Give(tbTeacherEXP,1,{%szEventName, "NhanPhanThuongTaiNPCDaiLaoSu", tbTranslog})
+	tbAwardTemplet:Give(tbTeacherEXP,1,{%szEventName, "ÁìÈ¡½±ÀøÔÚNPC§¹i L·o S­", tbTranslog})
 	self:AddTask(%TSK_TeacherAward, 1)
 end
 
@@ -377,14 +377,14 @@ function pActivity:SelectJinWu(nIndex)
 		Say(format("§Ó ®¶m b¶o an toµn cho tµi s¶n cña b¹n, xin h·y ®¶m b¶o r»ng Ýt nhÊt <color=yellow>%d <color> « trèng hµnh trang",nFreeItemCellLimit))
 		return 
 	end
-	tbAwardTemplet:Give(%tbJinwu[nIndex], 1, {%szEventName, "SuDung700LanCuonSach_JinWu"})
+	tbAwardTemplet:Give(%tbJinwu[nIndex], 1, {%szEventName, "SuDung700LanCuonSach_½ðÎÚ"})
 	self:AddTask(%TSK_JinwuAward, 1)
 end
 
 function pActivity:UseZhienhua()
 	local tbUseLog = {
-		[10] = "SuDungHoaTriAn10Lan",
-		[20] = "SuDungHoaTriAn20Lan",
+		[10] = "Ê¹ÓÃHoa Tri ¢n10´Î",
+		[20] = "Ê¹ÓÃHoa Tri ¢n20´Î",
 		}
 	self:AddTask(%TSK_UsedZhienhua,1)
 	local nUseTime = self:GetTask(%TSK_UsedZhienhua)
@@ -397,8 +397,8 @@ end
 
 function pActivity:UseTianyuhun()
 	local tbUseLog = {
-		[10] = "SuDungThienVuHon10Lan",
-		[20] = "SuDungThienVuHon20Lan",
+		[10] = "Ê¹ÓÃThiªn Vò Hån10´Î",
+		[20] = "Ê¹ÓÃThiªn Vò Hån20´Î",
 		}
 	self:AddTask(%TSK_UsedTianyuhun,1)
 	local nUseTime = self:GetTask(%TSK_UsedTianyuhun)

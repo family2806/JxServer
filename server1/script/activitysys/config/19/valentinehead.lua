@@ -361,6 +361,6 @@ function CheckPlantConditionQingRen()
 		end
 	end
 	
-	lib:ShowMessage("CÇn ph¶i sö dông ë ngoµi ThÊt §¹i Thµnh ThŞ vµ B¸t §¹i T©n Thñ Th«n míi cã thÓ trång H¹t C©y T×nh Nh©n")
+	lib:ShowMessage("ĞèÒªÔÚÆß´ó³ÇÊĞ¼°°Ë´óĞÂÊÖ´åÒÔÍâ²ÅÄÜÖÖC©y t×nh nh©nÖÖ")
 	return 0
 end

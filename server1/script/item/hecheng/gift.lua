@@ -257,7 +257,7 @@ function GiftLevelUp(nCount)
 end
 
 function main()
-	Talk(1, "GiveUIForGift", "Hîp thµnh LÔ vËt n¨m DËu: §Æt nhiÒu nhÊt lµ 20 c¸i <color=yellow>LÔ vËt n¨m DËu<color>, th× cã kh¶ n¨ng hîp thµnh ®­îc LÔ vËt n¨m dËu cao cÊp h¬n. NÕu b¹n cßn d­ <color=yellow>B¨ng Tinh<color> trong dŞp lÔ gi¸ng sinh còng cã thÓ bá vµo ®Ó t¨ng x¸c xuÊt cao h¬n. ")
+	Talk(1, "GiveUIForGift", "ºÏ³É¼¦ÄêÉñÃØÀñÎï£ºÖ»ÄÜ·ÅÈë×î¶à20¸ö<color=yellow>¼¦ÄêÉñÃØÀñÎï<color>£¬¾Í¿ÉÄÜºÏ³É¸ü¸ß¼¶LÔ vËt n¨m DËu¡£Èç¹ûÄãÓĞÊ¥µ®»î¶¯Ê±Ê£ÏÂµÄ<color=yellow>±ù¾§<color>Ò²¿ÉÒÔ·ÅÈëÀ´Ìá¸ßºÏ³ÉµÄ¼¸ÂÊ¡£")
 end
 
 function onCancel()

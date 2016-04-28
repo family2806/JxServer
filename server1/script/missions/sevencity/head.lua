@@ -1,32 +1,32 @@
 SCRIPT_WARRIORDEATH = "\\script\\missions\\sevencity\\warrior_death.lua"	-- ÕÊº“À¿ÕˆΩ≈±æ
 SCRIPT_MONSTERDEATH	= "\\script\\missions\\sevencity\\monster_death.lua"	-- ¡˙÷˘À¿ÕˆΩ≈±æ
 
-FIELD_CHENGDU	= 926	-- Chi’n tr≠Íng Thµnh ß´
-FIELD_BIANJING	= 927	-- Chi’n tr≠Íng Bi÷n Kinh
-FIELD_DALI		= 928	-- Chi’n tr≠Íng ßπi L˝
-FIELD_FENGXIANG	= 929	-- Chi’n tr≠Íng Ph≠Óng T≠Íng
-FIELD_LINAN 	= 930	-- Chi’n tr≠Íng L©m An
-FIELD_XIANGYANG	= 931	-- Chi’n tr≠Íng T≠¨ng D≠¨ng
-FIELD_YANGZHOU	= 932	--Chi’n tr≠Íng D≠¨ng Ch©u
+FIELD_CHENGDU	= 926	-- Thµnh ß´’Ω≥°
+FIELD_BIANJING	= 927	-- Bi÷n Kinh’Ω≥°
+FIELD_DALI		= 928	-- ßπi L˝’Ω≥°
+FIELD_FENGXIANG	= 929	-- Ph≠Óng T≠Íng’Ω≥°
+FIELD_LINAN 	= 930	-- L©m An’Ω≥°
+FIELD_XIANGYANG	= 931	-- T≠¨ng D≠¨ng’Ω≥°
+FIELD_YANGZHOU	= 932	--D≠¨ng Ch©u’Ω≥°
 
 FIELD_LIST = {
-	FIELD_CHENGDU,		-- Chi’n tr≠Íng Thµnh ß´
-	FIELD_BIANJING,		-- Chi’n tr≠Íng Bi÷n Kinh
-	FIELD_DALI,			-- Chi’n tr≠Íng ßπi L˝
-	FIELD_FENGXIANG,	-- Chi’n tr≠Íng Ph≠Óng T≠Íng
-	FIELD_LINAN,		-- Chi’n tr≠Íng L©m An
-	FIELD_XIANGYANG,	-- Chi’n tr≠Íng T≠¨ng D≠¨ng
-	FIELD_YANGZHOU,		--Chi’n tr≠Íng D≠¨ng Ch©u
+	FIELD_CHENGDU,		-- Thµnh ß´’Ω≥°
+	FIELD_BIANJING,		-- Bi÷n Kinh’Ω≥°
+	FIELD_DALI,			-- ßπi L˝’Ω≥°
+	FIELD_FENGXIANG,	-- Ph≠Óng T≠Íng’Ω≥°
+	FIELD_LINAN,		-- L©m An’Ω≥°
+	FIELD_XIANGYANG,	-- T≠¨ng D≠¨ng’Ω≥°
+	FIELD_YANGZHOU,		--D≠¨ng Ch©u’Ω≥°
 }
 
 BATTLE_LIST = {
-	[11	] = FIELD_CHENGDU,		-- Chi’n tr≠Íng Thµnh ß´
-	[37	] = FIELD_BIANJING,		-- Chi’n tr≠Íng Bi÷n Kinh
-	[162] = FIELD_DALI,			-- Chi’n tr≠Íng ßπi L˝
-	[1	] = FIELD_FENGXIANG,	-- Chi’n tr≠Íng Ph≠Óng T≠Íng
-	[176] = FIELD_LINAN,		-- Chi’n tr≠Íng L©m An
-	[78	] = FIELD_XIANGYANG,	-- Chi’n tr≠Íng T≠¨ng D≠¨ng
-	[80	] = FIELD_YANGZHOU,		--Chi’n tr≠Íng D≠¨ng Ch©u
+	[11	] = FIELD_CHENGDU,		-- Thµnh ß´’Ω≥°
+	[37	] = FIELD_BIANJING,		-- Bi÷n Kinh’Ω≥°
+	[162] = FIELD_DALI,			-- ßπi L˝’Ω≥°
+	[1	] = FIELD_FENGXIANG,	-- Ph≠Óng T≠Íng’Ω≥°
+	[176] = FIELD_LINAN,		-- L©m An’Ω≥°
+	[78	] = FIELD_XIANGYANG,	-- T≠¨ng D≠¨ng’Ω≥°
+	[80	] = FIELD_YANGZHOU,		--D≠¨ng Ch©u’Ω≥°
 }
 
 PARAM_LIST = {
@@ -47,49 +47,49 @@ MAP_INFO = {
 	[FIELD_FENGXIANG] = {
 		CityIndex = 1,
 		CityName = "Ph≠Óng T≠Íng",
-		Name = "Chi’n tr≠Íng Ph≠Óng T≠Íng",
+		Name = "Ph≠Óng T≠Íng’Ω≥°",
 		OutPos = {1, 1643, 3271},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {56608, 112416},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_CHENGDU	] = {
 		CityIndex = 2,
 		CityName = "Thµnh ß´",
-		Name = "Chi’n tr≠Íng Thµnh ß´",
+		Name = "Thµnh ß´’Ω≥°",
 		OutPos = {11, 3187, 5183},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {54976, 105600},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_DALI		] = {
 		CityIndex = 3,
 		CityName = "ßπi L˝",
-		Name = "Chi’n tr≠Íng ßπi L˝",
+		Name = "ßπi L˝’Ω≥°",
 		OutPos = {162, 1681, 3277},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {55040, 105568},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_BIANJING	] = {
 		CityIndex = 4,
 		CityName = "Bi÷n Kinh",
-		Name = "Chi’n tr≠Íng Bi÷n Kinh",
+		Name = "Bi÷n Kinh’Ω≥°",
 		OutPos = {37, 1693, 3213},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {56192, 108384},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_XIANGYANG] = {
 		CityIndex = 5,
 		CityName = "T≠¨ng D≠¨ng",
-		Name = "Chi’n tr≠Íng T≠¨ng D≠¨ng",
+		Name = "T≠¨ng D≠¨ng’Ω≥°",
 		OutPos = {78, 1583, 3381},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {54944, 105568},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_YANGZHOU	] = {
 		CityIndex = 6,
 		CityName = "D≠¨ng Ch©u",
-		Name = "Chi’n tr≠Íng D≠¨ng Ch©u",
+		Name = "D≠¨ng Ch©u’Ω≥°",
 		OutPos = {80, 1693, 3219},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {55008, 105568},		-- ¡˙÷˘◊¯±Í
 		},
 	[FIELD_LINAN	]= {
 		CityIndex = 7,
 		CityName = "L©m An",
-		Name = "Chi’n tr≠Íng L©m An",
+		Name = "L©m An’Ω≥°",
 		OutPos = {176, 1690, 3290},			-- ≥ˆ’Ω≥°Œª÷√
 		MonsterPos = {56160, 108512},		-- ¡˙÷˘◊¯±Í
 		},

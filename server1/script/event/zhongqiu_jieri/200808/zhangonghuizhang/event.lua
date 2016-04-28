@@ -9,10 +9,10 @@ function zhongqiu0808_zhangonghuizhang(nBattleLevel, i)
 	if nDate >= zhongqiu0808_ZhanGongStartTime and nDate <= zhongqiu0808_ZhanGongEndTime then
 		if zhongqiu0808_PlayerLimit() == 1 and nBattleLevel == 3  then
 			if BT_GetData(PL_CURRANK) == 5 then
-				Msg2Player("TÆng ®¹i hiÖp 1 Huy ch­¬ng chiÕn c«ng v× thµnh tÝch xuÊt s¾c!")
+				Msg2Player("ËÍ´óÏÀÒ»¹ýHuy ch­¬ng chiÕn c«ng£¬ÒòÎª³É¼¨³öÉ«!")
 				tbAwardTemplet:GiveAwardByList(tbItem,tbItem.szName )
 			else
-				Msg2Player("Huy ch­¬ng chiÕn c«ng chØ cã thÓ tÆng cho ng­êi ch¬i ®¹t danh hiÖu ®¹i t­íng, h·y cè g¾ng h¬n trong lÇn sau!")
+				Msg2Player("Huy ch­¬ng chiÕn c«ngÖ»ÄÜËÍ¸ø´ïµ½´ó½«³ÆºÅµÄÍæ¼Ò£¬ÏÂ´Î¸üÅ¬Á¦µãÅ¶!")
 			end
 		end
 	end
@@ -39,7 +39,7 @@ function zhongqiu0808_gongxuanlingpai_ok()
 	local tbItem = 	{szName="C«ng tr¹ng lÖnh bµi", tbProp={6, 1, 1819, 1, 0, 0}}
 	local nPoint = 2000
 	if nt_getTask(747) < nPoint then
-		Say(format("§iÓm tÝch lòy cña b¹n kh«ng ®ñ %d, kh«ng ®ñ ®Ó ®æi C«ng tr¹ng lÖnh bµi.", nPoint),0);
+		Say(format("§iÄúµÄ»ý·Ö²»¹»®ñ %d, ²»ÄÜ»»È¡C«ng tr¹ng lÖnh bµi.", nPoint),0);
 		return 0;
 	end
 	nt_setTask(747, floor(nt_getTask(747) - nPoint));

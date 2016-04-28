@@ -22,10 +22,10 @@ function main()
 	tbDailog:Show()
 	
 --	if (GetTask(TV_LAST_APPLY_TIME) > 0) then
---		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",3,"ÎÒÊÇÌØÀ´°İ·ÃÒ»ÏÂÃËÖ÷Äã¡£/old_main", "ÎÒÏë´òÌı¹ØÓÚ´«¹¦µÄÊÂÇé¡£/chuangong_info", "ÎÒÏëÈ¡ÏûÉÏ´ÎµÄ´«¹¦ÉêÇë!/cg_undo")
+--		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",3,"Ta ®Õn b¸i pháng Minh chñ.¡£/old_main", "ÎÒÏë´òÌı¹ØÓÚ´«¹¦µÄÊÂÇé¡£/chuangong_info", "ÎÒÏëÈ¡ÏûÉÏ´ÎµÄ´«¹¦ÉêÇë!/cg_undo")
 --	else
---		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",2,"ÎÒÊÇÌØÀ´°İ·ÃÒ»ÏÂÃËÖ÷Äã¡£/old_main", "ÎÒÏë´òÌı¹ØÓÚ´«¹¦µÄÊÂÇé¡£/chuangong_info" )
---		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",1,"ÎÒÊÇÌØÀ´°İ·ÃÒ»ÏÂÃËÖ÷Äã¡£/old_main");
+--		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",2,"Ta ®Õn b¸i pháng Minh chñ.¡£/old_main", "ÎÒÏë´òÌı¹ØÓÚ´«¹¦µÄÊÂÇé¡£/chuangong_info" )
+--		Describe(strimg..GetName().."ºÃ¾Ã²»¼ûÁË£¬½üÈÕÕÒÎÒÓĞÊ²Ã´ÊÂ£¿",1,"Ta ®Õn b¸i pháng Minh chñ.¡£/old_main");
 --	end
 end
 
@@ -91,7 +91,7 @@ function U39_progress()
 	if (str == "") then								-- ¸ù¾İ¼ì²é½á¹ûÏàÓ¦¶Ô»°
 		Talk(1,"", 11343)
 	else
-		Talk(1,"","Ng­¬i hiÖn giê ®· ®i ®iÒu tra ®­îc c¸c m«n ph¸i: "..str..", hy väng cã thÓ nhanh mét chót. ")
+		Talk(1,"","Ng­¬i hiÖn giê ®· ®i ®iÒu tra ®­îc c¸c m«n ph¸i: "..str..", Ï£Íû¿ÉÒÔ¿ìÒ»®iÓm. ")
 	end
 end
 
@@ -115,7 +115,7 @@ function biguan_talk()
 			npc_string(1, "Giang hå tr­íc nay lu«n rÊt nh¹y c¶m, ch¾c ng­¬i còng hiÓu. Vµ ta còng v× d¹o nµy c¸c danh sü tho¸i Èn cña thËp ®¹i m«n ph¸i ®· t¸i xuÊt giang hå, v× an ®Şnh cña vâ l©m mµ ta quyÕt ®Şnh nh­ vËy."),
 			speak_string(1, "NÕu lµ v× chuyÖn yªn ®Şnh vâ l©m, lÏ nµo minh chñ l¹i kh«ng ra mÆt lªn tiÕng viÖc nµy?"),
 			npc_string(1, "Lªn tiÕng? HiÖn giê còng ch­a ph¶i lóc, huèng g× ®Õn ta còng kh«ng muèn t×m hiÓu sù t×nh bªn trong, nãi g× ®Õn viÖc lªn tiÕng, tÊt c¶ ®Òu ch­a râ rµng, v× thÕ ta cÇn cã thêi gian ®Ó t×m hiÓu. C¸c h¹ h·y quay vÒ tr­íc ®i, ta cã viÖc cÇn ph¶i gi¶i quyÕt."),
-			speak_string(1, "Th«i ®­îc råi, nÕu ®· nh­ thÕ ta còng kh«ng lµm mÊt thêi gian cña bang chñ n÷a. µ, cßn lêi cuèi cïng ta muèn nãi lµ, c¸c nh©n sü vâ l©m v× chuyÖn nµy mµ b¨n kho¨n, riªng ta còng v× chuyÖn nµy mµ b«n ba kh¾p n¬i, nªn còng hi väng minh chñ sím c«ng bè ch©n t­íng cña vô viÖc. Ta xin c¸o tõ."),
+			speak_string(1, "ËãÁË£¬Èç¹ûÕâÑùÎÒ¾Í²»ÀË·Ñ°ïÖ÷µÄÊ±¼äÁË¡£°¡£¬×îºóÎÒÏëËµµÄÊÇ£¬¸÷VŞÎäÁÖÈËÊ¿ÄÔÖĞÎŞÊı£¬Ö»ÓĞÎÒÒòÎªÕâ¼şÊÂËÄ´¦±¼²¨£¬Òò´ËÒ²Ï£ÍûÃËÖ÷ÔçÈÕ¹«²¼Õâ¼şÊÂµÄÕæÏà¡£ÎÒÏÈ¸æ´Ç¡£"),
 			self_string(1, "Xem ra chØ cã rêi khái Hoµnh S¬n Ph¸i, tù tay ®i ®iÒu tra vô viÖc nµy th«i. ViÖc liªn quan ®Õn ®éc c« ®¹i hiÖp, nhÊt ®Şnh ph¶i tõ <color=white>Cöa chİnh ®¹i s¶nh<color> xuÊt hµnh mµ th«i."),
 		}
 		describe_talk(tDialog)
@@ -197,5 +197,5 @@ function yuegedao_fix()
 	local tbAward = {
 		{szName = "NguyÖt Ca LÖnh", tbProp = {6,1,2908,1,0,0,}, nBindState = -2,},
 	}
-	tbAwardTemplet:GiveAwardByList(tbAward, "§Õn §éc C« KiÕm - Hoµnh S¬n Ph¸i nhËn NguyÖt Ca LÖnh")	
+	tbAwardTemplet:GiveAwardByList(tbAward, "µ½¶À¹Â½£- ºâÉ½ÅÉµÃµ½NguyÖt Ca LÖnh")	
 end

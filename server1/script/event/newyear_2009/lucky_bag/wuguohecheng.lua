@@ -61,7 +61,7 @@ function newyear0901_wuguo_dialogmain(tbFormulaList, nItemIndex, szDescLink)
 	szDescLink = szDescLink or "<npc>"
 	
 	local tbSay = newyear0901_wuguo_Compose:MakeOptByProductName("Ta muèn nhËn l·nh", nItemIndex, szDescLink);
-	tinsert(tbSay , 1, "<dec>"..szDescLink.."NÕu nh­ t×m ®ñ 5 lo¹i hoa qu¶ 'M·ng CÇu, Dõa, §u §ñ, Xoµi, Sung' th× sÏ thu ®­îc cµng nhiÒu may m¾n.");
+	tinsert(tbSay , 1, "<dec>"..szDescLink.."Èç¹ûÕÒ¹»M·ng CÇu£¬Dõa£¬§u §ñ£¬Xoµi£¬SungÕâÎåÖÖË®¹û½«»áµÃµ½¸ü¶àµÄĞÒÔË.");
 	tinsert(tbSay , getn(tbSay)+1, "KÕt thóc ®èi tho¹i/OnCancel");
 	CreateTaskSay(tbSay);
 end

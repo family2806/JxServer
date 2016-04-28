@@ -45,7 +45,7 @@ function TrungDaiLongControl(nPartType)
 		return 1
 	end
 	if (nPartType == 30054) then--如果是大龙
-		tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 N╩ Th╪g Long, Use Чi Long");		
+		tbAwardTemplet:GiveAwardByList(tbCTL, "Event 1000 N╩ Th╪g Long, Use 大龙");		
 		tbAwardTemplet:GiveAwardByList(tbAwardItemUseDaiLong, "Event 1000 N╩ Th╪g Long");
 		local nExp, nTaskValue = GetValueByRandom(tbAwardExp)
 		SetTask(Task_Use_TrungDaiLong, GetTask(Task_Use_TrungDaiLong) + nTaskValue)

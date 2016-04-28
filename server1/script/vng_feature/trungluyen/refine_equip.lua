@@ -16,7 +16,7 @@ function tbVNG_RefineEquip:ShowDialog()
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng Yªu §¸i", 1)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng Hé UyÓn", 1)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng H¹ng Liªn", 2)
-	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng Béi", 2)
+	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "×ÏÃ§Ngäc cÇnÅå", 2)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng Giíi ChØ", 2)
 	strDesc = strDesc..format("\n\t\t\t<color=yellow>%-34s<color=red>%d<color>", "Tö M·ng KhÝ Giíi", 3)
 	Describe(strDesc, 2, "Ta muèn trïng luyÖn/#tbVNG_RefineEquip:main()", "§ãng/OnCancel")
@@ -25,7 +25,7 @@ end
 function tbVNG_RefineEquip:main()	
 	local nTaskVal = PlayerFunLib:GetTaskDailyCount(nTSK_DAILY_REFINE_LIMIT)
 	if nTaskVal >= nDAILY_REFINE_MAX_COUNT then
-		Talk(1, "", format("Mçi ngµy chØ cã thÓ trïng luyÖn trang bÞ <color=red>%d<color> lÇn, mai råi h·y quay l¹i!", nDAILY_REFINE_MAX_COUNT))
+		Talk(1, "", format("Ã¿ÌìÖ»ÄÜÖØÁ·Trang bÞ <color=red>%d<color> ´Î£¬Ã÷ÌìÔÙÀ´°É!", nDAILY_REFINE_MAX_COUNT))
 		return
 	end
 	
@@ -36,7 +36,7 @@ function tbVNG_RefineEquip:main()
 	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng Yªu §¸i", 1)
 	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng Hé UyÓn", 1)
 	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng H¹ng Liªn", 2)
-	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng Béi", 2)
+	strDesc = strDesc..format("\n%-29s%d", "×ÏÃ§Ngäc cÇnÅå", 2)
 	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng Giíi ChØ", 2)
 	strDesc = strDesc..format("\n%-29s%d", "Tö M·ng KhÝ Giíi", 3)
 	GiveItemUI("Trïng luyÖn Tö M·ng", strDesc, "RefineUIConfirm", "OnCancel")
@@ -80,37 +80,37 @@ function RefineUIConfirm(nCount)
 	PlayerFunLib:AddTaskDaily(nTSK_DAILY_REFINE_LIMIT, 1)
 	local nNextEquipIdx = AddGoldItem(0, nGoldEquipID)
 	if nNextEquipIdx <= 0 then
-		Msg2Player("Trïng luyÖn trang bÞ thÊt b¹i, mÊt mét sè nguyªn liÖu!")
+		Msg2Player("Trïng luyÖn Tö M·ngÊ§°Ü£¬Ê§È¥Ò»Ð©Ô­ÁÏ!")
 		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","AddTrangBiThatBai", "", "", "", SubWorld)
 		return
 	end
 	Msg2Player("<color=green>Trïng luyÖn Tö M·ng³É¹¦£¬Çë¼ì²éTrang bÞ")
-	tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","AddTrangBiThanhCong", GetItemName(nNextEquipIdx), GetGlodEqIndex(nNextEquipIdx), 1, SubWorld)
+	tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","AddTrang bÞ³É¹¦", GetItemName(nNextEquipIdx), GetGlodEqIndex(nNextEquipIdx), 1, SubWorld)
 end
 
 function tbVNG_RefineEquip:CheckItems(tbGold, tbStone)
 	--¼ì²é·ÅÈëµÄ»Æ½ðTrang bÞ
 	if getn(tbGold) > 1 or getn(tbGold) <= 0 then
-		return 0, "Mçi lÇn chØ trïng luyÖn 1 trang bÞ Tö M·ng"
+		return 0, "Ã¿´ÎÖ»ÄÜÖØÁ·Ò»´Î×ÏòþTrang bÞ"
 	end
 	
 	local nGoldEquipID = GetGlodEqIndex(tbGold[1])
 	
 	--·ÅÈëµÄ²»ÊÇ×ÏòþTrang bÞ
 	if not tbRE_Formula[nGoldEquipID] then
-		return 0, "Trang bÞ bá vµo kh«ng hîp lÖ, xin ®¹i hiÖp kiÓm tra l¹i."
+		return 0, "Trang bÞ·ÅÈë²»ºÏÀí£¬Çë´óÏÀ¼ì²é."
 	end
 	
 	--¼ì²éËøµÄ×´Ì¬
 	local nBindState = GetItemBindState(tbGold[1])
 	if nBindState ~= 0 then
-		return 0, "Trang bÞ ®ang trong tr¹ng th¸i khãa vÜnh viÔn, kh«ng thÓ trïng luyÖn!."
+		return 0, "Trang bÞÕý´¦ÓÚÓÀ¾ÃËø×¡×´Ì¬£¬²»ÄÜÖØÁ·!."
 	end
 	
 	--¼ì²é
 	local nG, _, _ = GetItemProp(tbGold[1])
 	if nG == 7 then
-		return 0, "Trang bÞ ®· bÞ háng, kh«ng thÓ trïng luyÖn!."
+		return 0, "Trang bÞ»µÁË£¬²»ÄÜÖØÁ·!."
 	end
 	
 	--¼ì²éNgäc cÇnµÄÊýÁ¿
@@ -122,7 +122,7 @@ function tbVNG_RefineEquip:CheckItems(tbGold, tbStone)
 	--¼ì²é·ÅÈëµÄNgäc cÇnµÄºÏÀíÐÔ
 	for i = 1, getn(tbStone) do
 		if self:CheckStone(tbStone[i]) ~= 1 then
-			return 0, "VËt phÈm bá vµo kh«ng hîp lÖ, xin h·y kiÓm tra l¹i!"
+			return 0, "·ÅÈëµÄVËt phÈm kh«ng hîp lÖ£¬Çë¼ì²é!"
 		end
 	end	
 	
@@ -148,34 +148,34 @@ function tbVNG_RefineEquip:ConsumeItems(tbGold, tbStone)
 		local strStoneName = GetItemName(nStoneIdx)
 		if IsMyItem(nStoneIdx) ~= 1 then
 			tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","NgocTrungLuyenKhongConTrenNguoi", strStoneName, strItemCode, 1, SubWorld)
-			return 0, "VËt phÈm kh«ng cßn trªn ng­êi, trïng luyÖn thÊt b¹i, mÊt mét sè nguyªn liÖu!!"
+			return 0, "NgocTrungLuyenKhongConTrenNguoi£¬TrungLuyenThatBai£¬Ê§È¥Ò»Ð©ÎïÆ·!!"
 		end
 		if RemoveItemByIndex(nStoneIdx) ~= 1 then
 			tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","XoaNguyenLieuThatBai", strStoneName, strItemCode, 1, SubWorld)
-			return 0, "Trïng luyÖn trang bÞ thÊt b¹i, mÊt mét sè nguyªn liÖu!"
+			return 0, "Trïng luyÖn Tö M·ngÊ§°Ü£¬Ê§È¥Ò»Ð©Ô­ÁÏ!"
 		else			
 			tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","XoaNguyenLieuThanhCong", strStoneName, strItemCode, 1, SubWorld)
 			nStoneRemoved = nStoneRemoved + 1
 		end
 	end
 	if nStoneRemoved ~= getn(tbStone) then
-		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","TrungLuyenThatBai", "SoLuongNgocKhongDongBo")
-		return 0, "Trïng luyÖn trang bÞ thÊt b¹i, mÊt mét sè nguyªn liÖu!"
+		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","TrungLuyenThatBai", "·ÅÈëNgäc cÇnµÄÊýÁ¿²»Í¬²½")
+		return 0, "Trïng luyÖn Tö M·ngÊ§°Ü£¬Ê§È¥Ò»Ð©Ô­ÁÏ!"
 	end
 	--consume gold equip
 	local nGoldEquipIdx = tbGold[1]
 	local strEquipName = GetItemName(nGoldEquipIdx)
 	local nEquipID = GetGlodEqIndex(nGoldEquipIdx)
 	if IsMyItem(nGoldEquipIdx) ~= 1 then
-		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","TrangBiKhongConTrenNguoi", strEquipName, nEquipID, 1, SubWorld)
-		return 0, "VËt phÈm kh«ng cßn trªn ng­êi, trïng luyÖn thÊt b¹i, mÊt mét sè nguyªn liÖu!!"
+		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","Trang bÞ²»ÔÚÉíÉÏ", strEquipName, nEquipID, 1, SubWorld)
+		return 0, "NgocTrungLuyenKhongConTrenNguoi£¬TrungLuyenThatBai£¬Ê§È¥Ò»Ð©ÎïÆ·!!"
 	end
 	
 	if RemoveItemByIndex(nGoldEquipIdx) ~= 1 then
-		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","XoaTrangBiThatBai", strEquipName, nEquipID, 1, SubWorld)
-		return 0, "Trïng luyÖn thÊt b¹i, mÊt mét sè nguyªn liÖu!!"
+		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","É¾³ýTrang bÞÊ§°Ü", strEquipName, nEquipID, 1, SubWorld)
+		return 0, "TrungLuyenThatBai£¬Ê§È¥Ò»Ð©ÎïÆ·!!"
 	else	
-		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","XoaTrangBiThanhCong", strEquipName, nEquipID, 1, SubWorld)
+		tbLog:PlayerActionLog("Trïng luyÖn Tö M·ng","³É¹¦É¾³ýTrang bÞ", strEquipName, nEquipID, 1, SubWorld)
 		return 1
 	end	
 end

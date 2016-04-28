@@ -11,17 +11,17 @@ Include("\\script\\activitysys\\config\\1007\\variables.lua")
 
 --æ≠—ÈΩ±¿¯
 local tbUseBTT_AdditionalAward = {
-	[50] 		= {szName = "ßi”m Kinh Nghi÷m", nExp=5000000},
-	[100] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=5000000},
-	[200] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=5000000},
-	[300] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=10000000},
-	[400] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=10000000},
-	[500] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=10000000},
-	[600] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=15000000},
-	[700] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=15000000},
-	[800] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=20000000},
-	[900] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=25000000},
-	[1000] 	= {szName = "ßi”m Kinh Nghi÷m", nExp=50000000},
+	[50] 		= {szName = "ßi”m kinh nghi÷m", nExp=5000000},
+	[100] 	= {szName = "ßi”m kinh nghi÷m", nExp=5000000},
+	[200] 	= {szName = "ßi”m kinh nghi÷m", nExp=5000000},
+	[300] 	= {szName = "ßi”m kinh nghi÷m", nExp=10000000},
+	[400] 	= {szName = "ßi”m kinh nghi÷m", nExp=10000000},
+	[500] 	= {szName = "ßi”m kinh nghi÷m", nExp=10000000},
+	[600] 	= {szName = "ßi”m kinh nghi÷m", nExp=15000000},
+	[700] 	= {szName = "ßi”m kinh nghi÷m", nExp=15000000},
+	[800] 	= {szName = "ßi”m kinh nghi÷m", nExp=20000000},
+	[900] 	= {szName = "ßi”m kinh nghi÷m", nExp=25000000},
+	[1000] 	= {szName = "ßi”m kinh nghi÷m", nExp=50000000},
 }
 
 --local tbLogUseIceCrystals = {
@@ -72,12 +72,12 @@ local tbUseBTT_ItemAward = {
 	[37] = {szName="ßÂ PhÊ Kim § Th≠Óng GiÌi",				tbProp = {6,1,2989,1,0,0},nCount=1, nRate = 0.04},
 	[38] = {szName="ßÂ PhÊ Kim § Hπ GiÌi",						tbProp = {6,1,2990,1,0,0},nCount=1, nRate = 0.04},
 	[39] = {szName="ßÂ PhÊ Kim § Kh› GiÌi",						tbProp = {6,1,2991,1,0,0},nCount=1, nRate = 0.04},
-	[40] = {szName = "ßi”m Kinh Nghi÷m", 							nExp=5000000, nRate = 15},
-	[41] = {szName = "ßi”m Kinh Nghi÷m", 							nExp=10000000, nRate = 10},
-	[42] = {szName = "ßi”m Kinh Nghi÷m", 							nExp=20000000, nRate = 2},
+	[40] = {szName = "ßi”m kinh nghi÷m", 							nExp=5000000, nRate = 15},
+	[41] = {szName = "ßi”m kinh nghi÷m", 							nExp=10000000, nRate = 10},
+	[42] = {szName = "ßi”m kinh nghi÷m", 							nExp=20000000, nRate = 2},
 	[43] = {szName="Hµnh Hi÷p L÷nh",						        tbProp = {6,1,2566,1,0,0},nCount=1, nRate = 10},   --20111019
 	[44] = {szName="Qu∂ Hoµng Kim",						            tbProp={6,1,907,1,0,0},nCount=1,nRate=1, nExpiredTime=10080},            --20111019
-	[45] = {szName="HÈp qu∂ huy hoµng",					    	tbProp={6,1,1075,1,0,0},nCount=1, nRate = 2, nExpiredTime=10080},       --20111019
+	[45] = {szName="Qu∂ Hoµng Kim∫–",					    	tbProp={6,1,1075,1,0,0},nCount=1, nRate = 2, nExpiredTime=10080},       --20111019
 }
 	
 --Function Ωªª∆ Øœﬁ÷∆
@@ -97,7 +97,7 @@ end
 
 --Function Ωªª∆ Ø
 function pActivity:HandInHoangThach(nCount)		
-	local tbAward = {szName = "ßi”m Kinh Nghi÷m", nExp=1000000};
+	local tbAward = {szName = "ßi”m kinh nghi÷m", nExp=1000000};
 	
 	for i = 1, nCount do
 		if %tbVNG_BitTask_Lib:isMaxBitTaskValue(%tbGiveHoangThachLimit) == 1 then
@@ -122,13 +122,13 @@ function pActivity:UseBTT_Limit()
 end
 
 function pActivity:Use_BTT()
-	local tbExpAward = {szName = "ßi”m Kinh Nghi÷m", nExp=6000000}
+	local tbExpAward = {szName = "ßi”m kinh nghi÷m", nExp=6000000}
 	%tbVNG_BitTask_Lib:addTask(%tbUseBTTLimit, 1)	
 	--æ≠—ÈΩ±¿¯
-	tbAwardTemplet:Give(tbExpAward, 1, {"Event_PNVN", "SuDungBangTinhThachNhanVatPham"});
+	tbAwardTemplet:Give(tbExpAward, 1, {"Event_PNVN", "SuDungBangTinhThachNhanKinhNghiem"});
 	--itemΩ±¿¯
 	local tbTranslog = {strFolder = %strTranLogFolder, nPromID = %nPromotionID, nResult = 1}	
-	tbAwardTemplet:Give(%tbUseBTT_ItemAward, 1, {"Event_PNVN", "SuDungBangTinhThachNhanVatPham", tbTranslog});
+	tbAwardTemplet:Give(%tbUseBTT_ItemAward, 1, {"Event_PNVN", "SuDungBangTinhThachNhanKinhNghiem", tbTranslog});
 	local nTaskVal = %tbVNG_BitTask_Lib:getBitTask(%tbUseBTTLimit);
 	--≥¨∂Óæ≠—ÈΩ±¿¯
 	if %tbUseBTT_AdditionalAward[nTaskVal] then

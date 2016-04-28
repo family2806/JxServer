@@ -123,13 +123,13 @@ TONGWAR_CITY = {"Ph­îng T­êng","Thµnh §«","§¹i Lý","BiÖn Kinh","T­¬ng D­¬ng","D­
 TONGWAR_CITYID = {['Ph­îng T­êng']=1,['Thµnh §«']=2,['§¹i Lý']=3,['BiÖn Kinh']=4,['T­¬ng D­¬ng']=5,['D­¬ng Ch©u']=6,['L©m An']=7}
 --Change schedule VLDNB 11 - Modified by DinhHQ - 20120507
 TONGWAR_CALENDAR = {
-			format("<color=red>%s<color><color=yellow>|<color>L©m An vs T­¬ng D­¬ng<color=yellow>|<color>BiÖn Kinh vs D­¬ng Ch©u<color=yellow>|<color>\nThµnh §« vs §¹i Lý<color=yellow>|<color>Ph­îng T­êng kh«ng thi ®Êu.", "16/05"),
-			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êng vs BiÖn Kinh<color=yellow>|<color>T­¬ng D­¬ng vs D­¬ng \nCh©u<color=yellow>|<color>L©m An vs §¹i Lý<color=yellow>|<color>Thµnh §« kh«ng thi ®Êu.", "17/05"),
-			format("<color=red>%s<color><color=yellow>|<color>Thµnh §« vs L©m An<color=yellow>|<color>Ph­îng T­êng vs T­¬ng D­¬ng<color=yellow>|<color>\nD­¬ng Ch©u vs §¹i Lý<color=yellow>|<color>BiÖn Kinh kh«ng thi ®Êu.", "19/05"),
-			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinh vs T­¬ng D­¬ng<color=yellow>|<color>Thµnh §« vs D­¬ng Ch©u<color=yellow>|<color>Ph­îng T­êng vs §¹i Lý<color=yellow>|<color>L©m An kh«ng thi ®Êu.", "20/05"),
-			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êng vs Thµnh §«<color=yellow>|<color>L©m An vs D­¬ng Ch©u<color=yellow>|<color>\nBiÖn Kinh vs §¹i Lý<color=yellow>|<color>T­¬ng D­¬ng kh«ng thi ®Êu.", "21/05"),
-			format("<color=red>%s<color><color=yellow>|<color>Thµnh §« vs BiÖn Kinh<color=yellow>|<color>Ph­îng T­êng vs L©m An <color=yellow>|<color>\nT­¬ng D­¬ng vs §¹i Lý<color=yellow>|<color>D­¬ng Ch©u kh«ng thi ®Êu.", "22/05"),
-			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinh vs L©m An<color=yellow>|<color>Thµnh §« vs T­¬ng D­¬ng<color=yellow>|<color>\nPh­îng T­êng vs D­¬ng Ch©u<color=yellow>|<color>§¹i Lý kh«ng thi ®Êu.", "23/05"),
+			format("<color=red>%s<color><color=yellow>|<color>L©m An vs T­¬ng D­¬ng<color=yellow>|<color>BiÖn Kinh vs D­¬ng Ch©u<color=yellow>|<color>\nThµnh §« vs §¹i Lý<color=yellow>|<color>Ph­îng T­êng²»±ÈÈü.", "16/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êngvs BiÖn Kinh<color=yellow>|<color>T­¬ng D­¬ngvsD­¬ng Ch©u<color=yellow>|<color>L©m Anvs§¹i Lý<color=yellow>|<color>Thµnh §«²»±ÈÈü.", "17/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Thµnh §« vs L©m An<color=yellow>|<color>Ph­îng T­êngvs T­¬ng D­¬ng<color=yellow>|<color>\D­¬ng Ch©u vs §¹i Lý<color=yellow>|<color>BiÖn Kinh²»±ÈÈü.", "19/05"),
+			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinh vs T­¬ng D­¬ng<color=yellow>|<color>Thµnh §«vs D­¬ng Ch©u<color=yellow>|<color>Ph­îng T­êngvs §¹i Lý<color=yellow>|<color>L©m An²»±ÈÈü.", "20/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Ph­îng T­êngvs Thµnh §«<color=yellow>|<color>L©m Anvs D­¬ng Ch©u<color=yellow>|<color>\BiÖn Kinhvs §¹i Lý<color=yellow>|<color>T­¬ng D­¬ng²»±ÈÈü.", "21/05"),
+			format("<color=red>%s<color><color=yellow>|<color>Thµnh §«vs BiÖn Kinh<color=yellow>|<color>Ph­îng T­êngvs L©m An<color=yellow>|<color>\T­¬ng D­¬ngvs §¹i Lý<color=yellow>|<color>D­¬ng Ch©u²»±ÈÈü.", "22/05"),
+			format("<color=red>%s<color><color=yellow>|<color>BiÖn Kinhvs L©m An<color=yellow>|<color>Thµnh §«vs T­¬ng D­¬ng<color=yellow>|<color>\Ph­îng T­êngvs D­¬ng Ch©u<color=yellow>|<color>§¹i Lý²»±ÈÈü.", "23/05"),
 			}
 			
 PHB_WULIN = 10227 --ÎäÁÖÊ®´óÅÅÃû

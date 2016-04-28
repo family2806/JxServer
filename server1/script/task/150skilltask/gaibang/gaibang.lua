@@ -162,7 +162,7 @@ tbConfig[7] = {
 		{"ThisTask:CheckMissionCondition", {}},
 	},
 	tbAction = {
-		{"ThisTask:Talk", {"ß∑ bπi Mπnh Th≠¨ng L≠¨ng"}},
+		{"ThisTask:Talk", {"¥Ú∞‹¡ÀMπnh Th≠¨ng L≠¨ng"}},
 		{"GotoNextMessageStep", {1, 2885}},
 	},
 }

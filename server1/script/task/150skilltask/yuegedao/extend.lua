@@ -187,7 +187,7 @@ function pTask:ChangeNpc()
 	}
 	local nNewNpcIndex = self:CallNpcEx(tbNpc, SubWorldIdx2ID(nMapIndex), nX32, nY32)
 	TimerList:AddTimer(self, 60 * 18, {nX32, nY32, SubWorldIdx2ID(nMapIndex), nNewNpcIndex})
-	Msg2Player("Ch’ tπo ki’m gia")
+	Msg2Player("÷∆‘ÏKi’m gia")
 end
 
 function pTask:NewWorld()

@@ -5,11 +5,11 @@ if not tbCardShop then
 end
 tbCardShop.composeList =
 	{
-		["Thi÷p Xu©n1"] = 
+		["Thi÷p Xu©n 1"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n1"),
+						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n 1"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
@@ -23,11 +23,11 @@ tbCardShop.composeList =
 					},
 					pCompos = nil;
 			},
-		["Thi÷p Xu©n 2"] = 
+		["Thi÷p Xu©n2"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n 2"),
+						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n2"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
@@ -37,15 +37,15 @@ tbCardShop.composeList =
 								{szName = "Tinh HÂng B∂o Thπch", tbProp = {4,353,1,1,0,0}, nCount = 1},
 								{szName = "PhÛc Duy™n LÈ (ßπi)", tbProp = {6,1,124,1,0,0}, nCount = 1},
 							},
-						tbProduct = {szName = "Thi÷p Xu©n", tbProp = {6,1,30090,1,0,0}, nExpiredTime = tbVNG_LY2011.nEndDay},
+						tbProduct = {szName = "Thi÷p Xu©n ", tbProp = {6,1,30090,1,0,0}, nExpiredTime = tbVNG_LY2011.nEndDay},
 					},
 					pCompos = nil;
 			},
-		["Thi÷p Xu©n 3"] = 
+		["Thi÷p Xu©n3"] = 
 			{
 				tbFormula = 
 					{
-						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n 3"),
+						szComposeTitle = format("Hoπt ÆÈng lµm b∏nh Æ„n xu©n\t HÓp thµnh %s", "Thi÷p Xu©n3"),
 						nWidth = 1,
 						nHeight = 1,
 						nFreeItemCellLimit = 0.02,
@@ -66,10 +66,10 @@ function main()
 		return
 	end
 	local tbMainDialog = tbNpcHead:createDialog()
-	tbMainDialog.szTitleMsg = "VÌi <color=red>1 <color>Tinh HÂng B∂o Thπch,<color=red>1 <color>B◊nh PhÛc Duy™n LÈ (ßπi)  vµ <color=red>1 <color>trong 3 loπi thÒy tinh lµ ßπi hi÷p sœ c„ ngay 1  t m thi÷p xu©n thÀt Æ—p."
-	tbMainDialog:AddOptEntry("Mua thi÷p bªng Lam ThÒy Tinh", tbCardShop.buyCard, {tbCardShop,"Thi÷p Xu©n1"})
-	tbMainDialog:AddOptEntry("Mua thi÷p bªng Tˆ ThÒy Tinh", tbCardShop.buyCard, {tbCardShop, "Thi÷p Xu©n 2"})
-	tbMainDialog:AddOptEntry("Mua thi÷p bªng LÙc ThÒy Tinh", tbCardShop.buyCard, {tbCardShop, "Thi÷p Xu©n 3"})
+	tbMainDialog.szTitleMsg = "“‘<color=red>1 <color>Tinh HÂng B∂o Thπch,<color=red>1 <color>∏£‘µ¬∂(¥Û )  ∆ø∫Õ<color=red>1 <color>∆‰÷–“ª÷÷ÀÆæßƒ„Ω´¬Ì…œªÒµ√“ª’≈∆Ø¡¡µƒThi÷p Xu©n."
+	tbMainDialog:AddOptEntry("”√Lam ThÒy Tinh¬Úø®", tbCardShop.buyCard, {tbCardShop,"Thi÷p Xu©n 1"})
+	tbMainDialog:AddOptEntry("”√Tˆ ThÒy Tinhø®", tbCardShop.buyCard, {tbCardShop, "Thi÷p Xu©n2"})
+	tbMainDialog:AddOptEntry("”√LÙc ThÒy Tinhø®", tbCardShop.buyCard, {tbCardShop, "Thi÷p Xu©n3"})
 	tbMainDialog:Show()
 end
 

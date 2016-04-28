@@ -75,8 +75,8 @@ WLLS_DATA = {
 	max_member = 1,	--Ã¿¸öÕ½¶ÓµÄ×î´óÈËÊı
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		" th¸ng nµy thÓ thøc liªn ®Êu lµ ®¬n ®Êu tù do ",
-		" th¸ng nµy thÓ thøc liªn ®Êu lµ ®¬n ®Êu tù do ",
+		"´Ë´ÎÊÇ ®¬n ®Êu tù do £¬¸÷Î»ÏÀ¿ÍÅ¬Á¦Á·Ï°£¬µÈ¸»¹óµÄÒ»Ìì",
+		"´Ë´ÎÊÇ ®¬n ®Êu tù do £¬¸÷Î»ÏÀ¿ÍÅ¬Á¦Á·Ï°£¬µÈ¸»¹óµÄÒ»Ìì",
 	},
 	
 	--====Functions====
@@ -85,7 +85,7 @@ WLLS_DATA = {
 		local str_des = wlls_get_desc(1)
 		local n_lid, n_mtype, n_job, str_lgname, n_memcount = wlls_lg_info()
 		if (FALSE(n_lid)) then
-			wlls_descript("<enter> lÇn nµy "..str_des.." v× lµ <color=red> tù do ®¬n ®Êu <color> nªn kh«ng cÇn thµnh lËp chiÕn ®éi, hÖ thèng sÏ tù ®éng ®¨ng kı khi ng­¬i tham gia. ")
+			wlls_descript("<enter> lÇn nµy "..str_des.."Îª<color=red> ®¬n ®Êu tù do <color>, ²»ĞèÒª½¨Á¢Õ½¶Ó£¬ÏµÍ³½«¼ÇÂ¼ÄãµÄµÚÒ»´Î±ÈÈü")
 			return
 		end
 	

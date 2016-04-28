@@ -24,7 +24,7 @@ end;
 
 function U43_50()
 	SetTask(43,60)
-	Msg2Player("Ng­¬i thËt sù ®· giÕt chÕt thiÕu chñ? ")
+	Msg2Player("Ng­¬i…Ng­¬i thËt sù ®· giÕt thiÕu chñ? ")
 end
 
 function U43_70()

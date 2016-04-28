@@ -75,7 +75,7 @@ function pTask:Say(player, nIndex)
 		return
 	end
 	if (tb.Status == 1) then
-		player:Say("Trô nµy ®· ®­îc më råi")
+		player:Say("Trô TöÒÑ´ò¿ª")
 		return
 	end
 	local nBarId = ProgressBarList:Open("§ang më", player, 3, self, tb)

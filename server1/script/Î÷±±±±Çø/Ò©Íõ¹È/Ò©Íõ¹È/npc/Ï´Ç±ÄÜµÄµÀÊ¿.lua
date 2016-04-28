@@ -55,7 +55,7 @@ function main()
 end
 
 function sele3()
-	Talk(2,"","Ng­¬i t­ëng gióp ng­êi kh¸c c¶i t¹o kinh m¹ch lµ c«ng viÖc nhÑ nhµng µ? Ta ph¶i tèn rÊt nhiÒu søc lùc, xong viÖc l¹i ph¶i mÊt thêi gian rÊt dµi ®Ó tÜnh d­ìng! Viªn Tinh Hång b¶o th¹ch cña ng­¬i cã thÓ gióp ta kh«i phôc nguyªn khİ!","NÕu kh«ng cho xem th× th«i vËy, râ rµng ®· mang ra cho ta nh×n thÊy råi, vËy mµ cßn tiÕc kh«ng d¸m ®em 1 viªn Tinh Hång b¶o th¹ch ra! VËy mµ cßn muèn ta gióp ng­¬i c¶i t¹o kinh m¹ch sao? Hõm! Th«i®õng nghÜ ®Õn n÷a!")
+	Talk(2,"","Ng­¬i t­ëng gióp ng­êi kh¸c c¶i t¹o kinh m¹ch lµ c«ng viÖc nhÑ nhµng µ? Ta ph¶i tèn rÊt nhiÒu søc lùc, xong viÖc l¹i ph¶i mÊt thêi gian rÊt dµi ®Ó tÜnh d­ìng! Viªn Tinh Hång b¶o th¹ch cña ng­¬i cã thÓ gióp ta kh«i phôc nguyªn khİ!","ÒªÊÇ²»¸ø¿´¾ÍËãÁË£¬Ã÷ÏÔÊÇÒÑ¾­´ø¸øÎÒ¿´ÁË£¬ÕâÑù»¹²»¸ÒÄÃ³ö1¿ÅĞÉºì±¦Ê¯….£¡ÕâÑù»¹ÏëÒªÎÒ°ïÄã¸ÄÔì¾­Âö£¬Ïë¶¼±ğÏë!")
 end
 
 function W76_step()

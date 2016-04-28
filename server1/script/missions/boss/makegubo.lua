@@ -9,5 +9,5 @@ function main()
 	posx = 1546*32
 	posy = 3278*32
 	AddNpcEx(bossid,bosslvl,0,mapindex,posx,posy,1, "Cæ B¸ch", 1)
-	AddGlobalNews("Nghe nãi Thiªn V­¬ng Bang chñ T¶ sø Cæ B¸ch vµ c¸c ®Çu môc cña Thiªn NhÉn Gi¸o ®· xuÊt hiÖn t¹i Mª Cung sa m¹c (193, 204) §«n Hoµng. ")
+	AddGlobalNews("ÌıËµÌìÍõ°ïÖ÷×óÊ¹Cæ B¸chºÍÌìÈÌ½ÌµÄÍ·Ä¿ÒÑ³öÏÖÔÚ¶Ø»ÍµÄÉ³Ä®ÃÔ¹¬(193, 204). ")
 end; 

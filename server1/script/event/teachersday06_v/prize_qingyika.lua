@@ -26,7 +26,7 @@ function vt06_giveprize(nIdx, nCount, nExp)
 	local nOwnedExp = GetTask(TK_EXPLIMIT);
 	
 	if (nOwnedExp >= VT06_EXPLIMIT) then
-		Say("B¹n nhËn ®­îc<color=yellow>"..VT06_EXPLIMIT.."<color> ®iÓm kinh nghiÖm, kh«ng thÓ nhËn thªm!", 0);
+		Say("B¹n ®· nhËn ®­îc <color=yellow>"..VT06_EXPLIMIT.."<color> ®iÓm kinh nghiÖm, kh«ng thÓ nhËn thªm!", 0);
 		return
 	end;
 	
@@ -44,5 +44,5 @@ function vt06_giveprize(nIdx, nCount, nExp)
 	nOwnedExp = nOwnedExp + nExp;
 	SetTask(TK_EXPLIMIT, nOwnedExp);
 	AddOwnExp(nExp);
-	Say("B¹n nhËn ®­îc<color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm.", 0);
+	Say("B¹n ®· nhËn ®­îc <color=yellow>"..nExp.."<color> ®iÓm kinh nghiÖm.", 0);
 end;

@@ -10,47 +10,47 @@ UTask_em = GetTask(1)
 
 if (UTask_em < 10*256) then						--Î´½Ó¶ëáÒÅÉÈëÃÅÈÎÎñ£¬Î´Èë¶ëáÒÅÉ
 	if (GetFaction() ~= "") then				--Èç¹ûÍæ¼ÒÒÑ¾­ÊôÓÚÁíÒ»ÃÅÅÉ
-		Say("Thİ chñ cã g× chØ gi¸o ch¨ng?", 3, "T×m hiÓu quı ph¸i/org", "T×m hiÓu c¸c vŞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config")
+		Say("TuÖ Ni£ºÊ©Ö÷ÓĞºÎÊÂÏàÑ¯£¿", 3, "T×m hiÓu quı ph¸i/org", "T×m hiÓu c¸c vŞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config")
 		return
 	else
-		Say("Thİ chñ muèn gia nhËp m«n ph¸i hay cã g× cÇn gióp ®ì?", 4, "T×m hiÓu quı ph¸i/org", "T×m hiÓu c¸c vŞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config", "Lµm sao ®Ó nhËp m«n?/task1")
+		Say("TuÖ Ni£ºÊ©Ö÷Ïë¼ÓÈë±¾ÅÉÂğ£¿»òÕßÓĞÊ²Ã´ĞèÒªÆ¶ÄáÏàÖúµÄ£¿", 4, "T×m hiÓu quı ph¸i/org", "T×m hiÓu c¸c vŞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config", "Lµm sao ®Ó nhËp m«n?/task1")
 		return	
 	end
 end;
 	
 if (UTask_em == 70*256) then					--¶ëáÒÅÉÒÑ¾­³öÊ¦		
-	Say("Th× ra lµ tû muéi ®ång m«n! Kh«ng biÕt cã g× chØ gi¸o!", 4, "T×m hiÓu l¹i Nga My Ph¸i/org", "T×m hiÓu l¹i ®ång m«n tr­íc kia/member", "T×m hiÓu l¹i bè côc n¬i nµy/config", "Cßn nhiÖm vô nµo ®Ó lµm n÷a/task3")
+	Say("TuÖ Ni£ºÔ­À´ÊÇÒÔÇ°µÄÊ¦ÃÃ£¬ÓĞÊ²Ã´¿ÉÒÔ°ïÄãµÄÂğ£¿", 4, "T×m hiÓu l¹i Nga My Ph¸i/org", "T×m hiÓu l¹i ®ång m«n tr­íc kia/member", "T×m hiÓu l¹i bè côc n¬i nµy/config", "Cßn nhiÖm vô nµo ®Ó lµm n÷a/task3")
 	return
 end;	
 
-Say("S­ muéi cã g× muèn hái?", 4, "§èi tho¹i víi Long Ngò /Uworld1000_word", "T×m hiÓu bæn ph¸i/org", "T×m hiÓu bè côc n¬i nµy/config", "T×m hiÓu bè côc n¬i nµy/config")
+Say("TuÖ Ni£ºÊ¦ÃÃÓĞºÎÊÂÏàÑ¯£¿", 4, "§èi tho¹i víi Long Ngò /Uworld1000_word", "T×m hiÓu bæn ph¸i/org", "T×m hiÓu bè côc n¬i nµy/config", "T×m hiÓu bè côc n¬i nµy/config")
 
 end;
 
 ----------------------------------------------------------------------------------------------
 
 function org()
-Say("Muèn t×m hiÓu ph­¬ng diÖn nµo?", 4, "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
+Say("TuÖ Ni£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 
 function member()
-Say("Muèn t×m hiÓu ai?", 13, "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
+Say("TuÖ Ni£ºÏëÁË½âË­£¿", 13, "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 
 function config()
-Say("Muèn t×m hiÓu ph­¬ng diÖn nµo?", 4, "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3", "Sau nói/c4")
+Say("TuÖ Ni£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3", "Sau nói/c4")
 end;
 
 
 function task1()
-Say("Bæn ph¸i chØ thu nhËn ®Ö tö n÷. Muèn nhËp m«n häc nghÖ, cÇn th«ng qua nhiÖm vô nhËp m«n.")
+Say("TuÖ Ni£º±¾ÅÉÖ»ÊÕË®ÏµÅ®µÜ×Ó¡£ÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıºÍ°ÍÁêÏØµÄ¶ëÃ¼ÃÅÅÉ½ÓÓ¦ÈË¶Ô»°Íê³ÉÈëÃÅ¡£")
 end;
 
 
 function task2()
-Say("<#>: Ng­¬i ®· xuÊt s­, kh«ng cÇn lµm nhiÖm vô cña bæn ph¸i, hiÖn ®·", 0)
+Say("TuÖ Ni£ºÄãÒÑ³öÊ¦£¬²»±ØÔÙ×ö±¾ÅÉÈÎÎñÁË¡£", 0)
 end;
 
 
@@ -59,59 +59,59 @@ function task3()
 UTask_em = GetTask(1)
 
 if (UTask_em < 10*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, nhiÖm vô ®ang tiÕn hµnh lµ:")
 end;
 
 if (UTask_em == 10*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÒÑÈëÃÅ£¬½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 10*256) and (UTask_em < 20*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 20*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 20*256) and (UTask_em < 30*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 30*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 30*256) and (UTask_em < 40*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 40*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 40*256) and (UTask_em < 50*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 50*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 50*256) and (UTask_em < 60*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 60*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 60*256) and (UTask_em < 70*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ıÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕıÔÚ½øĞĞÖĞµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em >= 70*256) and (UTask_em < 80*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn"..UTask_em.."<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:", 1, "NhiÖm vô xuÊt s­ /v8")
+Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn"..UTask_em.."<#>, nhiÖm vô ®ang tiÕn hµnh lµ:", 1, "NhiÖm vô xuÊt s­ /v8")
 end;
 
 end;
@@ -119,19 +119,19 @@ end;
 ----------------------------------------------------------------------------------------------
 
 function o1()
-Say(" Nga Mi lµ m«n ph¸i do n÷ nhi s¸ng lËp.'Nga Mi' võa lµ tªn gäi cña vŞ s­ tæ s¸ng lËp m«n ph¸i võa lµ th¸nh ®Şa nói Nga Mi ", 4, "BiÕt råi/ok", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
+Say("TuÖ Ni£º¶ëáÒÅÉÊÇÒ»¸öÓÉÅ®×ÓËù´´µÄÎäÁÖÃÅÅÉ£¬ºóÒò×æÊ¦ÈëÁË·ğÃÅ£¬ÓÖÒÔ³ÆÅ®×ÓÎª¡°¶êÃ¼¡±ºÍ·ğ½ÌÊ¥µØÖ®¡°¶ëÃ¼É½¡±µÄË«ÖØº¬Òå¶øµÃÃû¡£", 4, "BiÕt råi/ok", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o2()
-Say("Nga Mi s¬n thuéc vïng T©y Nam, thÕ nói quanh co uèn l­în, trïng trïng ®iÖp ®iÖp", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
+Say("TuÖ Ni£º¶ëáÒÉ½Î»ÓÚÊñµØÎ÷ÄÏ£¬ÒòÉ½ÊÆåÔåÆ£¬Èç¶ğÃ¼Ï¸¶ø³¤£¬ÃÀ¶øÑŞ£¬¹ÊÃû¡£É½Âö·åÂÍÆğ·ü£¬ÖØÑÒµü´ä£¬ÆøÊÆ°õíç£¬ĞÛĞãÓÄÆæ£¬ËØÓĞ¡°¶ëáÒÌìÏÂĞã¡±µÄÃÀÓş¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "§Şa vŞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o3()
-Say("cïng víi  ThiÕu L©m vµ Vâ §ang hîp thµnh 3 danh m«n ch¸nh ph¸i lín ë Trung Nguyªn. C¸c m«n ph¸i trong thiªn h¹ do n÷ nhi s¸ng lËp th× bæn m«n ®øng ®Çu", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Æc s¾c m«n ph¸i/o4")
+Say("TuÖ Ni£ºÓëÉÙÁÖ¡¢Îäµ±²¢³ÆÎªÖĞÔ­ÕıÅÉÎäÁÖµÄÈı´óÃÅÅÉ£¬ÔÚÌìÏÂÅ®×ÓËù´´µÄÃÅÅÉÖĞ£¬ÒÔ¶ëáÒÅÉÎªµÚÒ»¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o4()
-Say("Nga Mi ph¸i quy luËt nghiªm kh¾c. C¸c ®Ö tö ®Òu ph¶i gi÷ m×nh trong s¹ch. Kh«ng nh÷ng vâ nghÖ cao c­êng mµ cÇm k× thi häa còng tinh th«ng", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3")
+Say("TuÖ Ni£º¶ëáÒÅÉÃÅ¹æ¼«ÑÏ£¬ÃÅÏÂµÜ×Ó½ÔÎªÅ®×Ó¡£¶ëáÒµÜ×Ó¾ù½àÉí×ÔºÃ£¬²»½öÎä¹¦¸ßÇ¿£¬¶øÇÒ¶à²Å¶àÒÕ£¬ÇÙÆåÊé»­ÎŞËù²»Í¨¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VŞ trİ ®Şa lı /o2", "§Şa vŞ giang hå /o3")
 end;
 
 --------------------------------
@@ -191,19 +191,19 @@ end;
 --------------------------------
 
 function c1()
-Say("D­íi ch©n nói cã 2 h­íng ®i. §«ng  ®i Thµnh §«, Nam ®i Tr­êng Giang Nguyªn ®Çu.", 4, "BiÕt råi/ok", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3", "Sau nói/c4")
+Say("TuÖ Ni£ºÉ½½ÅÓĞÁ½¸öÂ·¿Ú£¬¶«±ßÂ·¿ÚÍ¨Íù³É¶¼£¬ÄÏ±ßÂ·¿ÚÍ¨Íù³¤½­Ô´Í·¡£", 4, "BiÕt råi/ok", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3", "Sau nói/c4")
 end;
 
 function c2()
-Say("Trªn nói gåm cã: Thanh ¢m ®×nh (239,331) , Toµn Thiªn Ph¸ (221,321) , Nghªnh Kh¸ch Th¹ch (227,322) , B¸n S¬n Ph¸ (229,320) ", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "KiÕn tróc chİnh/c3", "Sau nói/c4")
+Say("TuÖ Ni£ºÉÏÉ½Í¾ÖĞÒÀ´ÎÓĞÇåÒôÍ¤¡¢×êÌìÆÂ¡¢Ó­¿ÍÊ¯¡¢°ëÉ½ÆÂµÈ¾°µã¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "KiÕn tróc chİnh/c3", "Sau nói/c4")
 end;
 
 function c3()
-Say("tr­íc nói cã TiÒn ®iÖn (237,311) , Gi¶ng Kinh ®­êng (240,308) , Chİnh ®iÖn (248,304) , T¶ Biªn ®iÖn (246,304) ", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "Sau nói/c4")
+Say("TuÖ Ni£ºÓĞÇ°µî¡¢½²¾­ÌÃ¡¢Õıµî¡¢×óÆ«µîµÈÖ÷Òª½¨Öş£¬¿ÉÒÔ½øÈë¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "Sau nói/c4")
 end;
 
 function c4()
-Say("Sau nói cã M·nh Hæ ®éng (281,297) vµ Ng¹c Ng­ hå (303,308) .", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3")
+Say("TuÖ Ni£ººóÉ½ÓĞÃÍ»¢É½¶´ºÍöùÓãºş¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chİnh/c3")
 end;
 
 --------------------------------

@@ -22,7 +22,7 @@ if (UTask_tr < 10*256) then						--Î´½ÓÌìÈÌ½ÌÈëÃÅÈÎÎñ£¬Î´ÈëÌìÈÌ½Ì
 end;
 	
 if (UTask_tr == 70*256) then					--ÌìÈÌ½ÌÒÑ¾­³öÊ¦		
-	Say("Kh«ng ph¶i ng­¬i ®· xuÊt s­ råi sao, cßn chuyÖn g× kh«ng biÕt n÷a?", 6, "TiÕp tôc t×m hiÓu Thiªn NhÉn Gi¸o/org", "T×m hiÓu l¹i ®ång m«n tr­íc kia/member", "T×m hiÓu l¹i bè côc n¬i nµy/config", "Cßn nhiÖm vô nµo ®Ó lµm n÷a/task3","T×m hiÓu së tr­êng luyÖn c«ng/map_help","T×m hiÓu vâ nghÖ bæn m«n/skill_help")
+	Say("Kh«ng ph¶i ng­¬i ®· xuÊt s­ råi sao, cßn chuyÖn g× kh«ng biÕt n÷a?", 6, "TiÕp tôc t×m hiÓu Thiªn NhÉn Gi¸o/org", "T×m hiÓu l¹i ®ång m«n tr­íc kia/member", "ÖØĞÂT×m hiÓu bè côc n¬i nµy/config", "Cßn nhiÖm vô nµo ®Ó lµm n÷a/task3","T×m hiÓu së tr­êng luyÖn c«ng/map_help","T×m hiÓu vâ nghÖ bæn m«n/skill_help")
 	return
 end;	
 
@@ -94,7 +94,7 @@ Say("<#> Muèn nhËp m«n häc nghÖ, tr­íc tiªn ph¶i th«ng qua hoµn thµnh nhiÖm vô n
 end;
 
 if (UTask_tr > 40*256) and (UTask_tr < 50*256) then	
-Say("<#> Muèn nhËp m«n häc nghÖ, tr­íc tiªn ph¶i th«ng qua hoµn thµnh nhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng, ®­îc phong Danh hiÖu. Sau khi hoµn thµnh nhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­.HiÖn ®· "..UTask_tr.."<#>, nhiÖm vô ®ang tiÕn hµnh lµ:", 1, "nhiÖm vô hµnh thİch/v5")
+Say("<#> Muèn nhËp m«n häc nghÖ, tr­íc tiªn ph¶i th«ng qua hoµn thµnh nhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng, ®­îc phong Danh hiÖu. Sau khi hoµn thµnh nhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­.HiÖn ®· "..UTask_tr.."<#>, nhiÖm vô ®ang tiÕn hµnh lµ: ", 1, "nhiÖm vô hµnh thİch/v5")
 end;
 
 if (UTask_tr == 50*256) then	

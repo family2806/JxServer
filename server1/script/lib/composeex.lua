@@ -438,7 +438,7 @@ function tbActivityCompose:ComposeCountComfirm(nMaxCount, nCount)
 --	print("nCount = " .. nCount)
 --	print("nMaxCount = " .. nMaxCount)
 	if nCount > nMaxCount then
-		Say(format("Ng­¬i nhËp sè l­îng hîp thµnh ®· v­ît qu¸<color=red>%d<color>, xin h·y nhËp l¹i", nMaxCount))
+		Say(format("ÄãÊäÈëµÄºÏ³ÉSè l­îng³¬¹ıÁË<color=red>%d<color>, ÇëÔÙÊäÈë", nMaxCount))
 		return 0
 	end
 	

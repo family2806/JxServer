@@ -44,7 +44,7 @@ WLLS_DATA = {
 			map = {{404, 564, 405, ""}},
 		},
 		{
-			name = " thóy yªn ",
+			name = " Thóy Yªn ",
 			level = 1,
 			ladder = nTmpLadderBase + 5,
 			map = {{406, 565, 407, ""}},
@@ -56,7 +56,7 @@ WLLS_DATA = {
 			map = {{408, 566, 409, ""}},
 		},
 		{
-			name = " thiªn nhÉn ",
+			name = " Thiªn NhÉn ",
 			level = 1,
 			ladder = nTmpLadderBase + 7,
 			map = {{410, 567, 411, ""}},
@@ -104,7 +104,7 @@ WLLS_DATA = {
 			map = {{548, 574, 549, ""}},
 		},
 		{
-			name = " thóy yªn ",
+			name = " Thóy Yªn ",
 			level = 2,
 			ladder = nTmpLadderBase + 15,
 			map = {{550, 575, 551, ""}},
@@ -116,7 +116,7 @@ WLLS_DATA = {
 			map = {{552, 576, 553, ""}},
 		},
 		{
-			name = " thiªn nhÉn ",
+			name = " Thiªn NhÉn ",
 			level = 2,
 			ladder = nTmpLadderBase + 17,
 			map = {{554, 577, 555, ""}},

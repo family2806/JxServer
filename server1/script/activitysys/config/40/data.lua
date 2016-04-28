@@ -81,12 +81,12 @@ tbItemAward = {
 
 tbItemOtherAward = {
 	["3Color_Rose"] = {
-		[500] = "SuDung500LanBoHongTuSac",
-		[1000] = "SuDung1000LanBoHongTuSac",
+		[500] = "SuDung500LanBoHongTamSac",
+		[1000] = "SuDung1000LanBoHongTamSac",
 		},
 	["4Color_Rose"] = {
-		[500] = "SuDung500LanBoHongTuSac",
-		[1000] = "SuDung1000LanBoHongTuSac",
+		[500] = "SuDung500LanBoHongTamSac",
+		[1000] = "SuDung1000LanBoHongTamSac",
 		[1500] = "SuDung1500LanBoHongTuSac",
 		},
 	["Corbeil"] = {
@@ -173,5 +173,5 @@ tbLuckBeltAward = {
 tbLuckBelt = {
 	[1] = {nRate = 45, szActionLog = "SuDungTuiMayManNhanBoHongTamSac",},
 	[2] = {nRate = 45, szActionLog = "SuDungTuiMayManNhanBoHongTuSac",},
-	[3] = {nRate = 10, szActionLog = "SuDungTuiMayManNhanGioHoaHongVinhCuu",},
+	[3] = {nRate = 10, szActionLog = " π”√–“‘À¥¸¡Ï»°Gi· Hoa HÂng V‹nh Cˆu",},
 	}	

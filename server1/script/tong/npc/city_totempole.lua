@@ -135,8 +135,8 @@ function stunt_huangjinling1()
 		SetTask(TASKID_CITY_LASTDAY, getRelativeDay(nTongID))
 		SetTask(TASKID_CITYST_TAKED, GetTask(TASKID_CITYST_TAKED) + 1)
 		totempole_dec("NhËn ®­îc 1 <color=yellow>Hoµng Kim LÖnh!<color>")
-		Msg2Tong(nTongID, GetName().."NhËn ®­îc 1 Hoµng Kim LÖnh kü n¨ng thµnh thŞ")
-		TONG_ApplyAddEventRecord(nTongID, GetName().."NhËn ®­îc 1 Hoµng Kim LÖnh kü n¨ng thµnh thŞ")
+		Msg2Tong(nTongID, GetName().."»ñµÃ 1 Kü n¨ng thµnh thŞ: »ÆKimÁî")
+		TONG_ApplyAddEventRecord(nTongID, GetName().."»ñµÃ 1 Kü n¨ng thµnh thŞ: »ÆKimÁî")
 	end
 end
 
@@ -335,8 +335,8 @@ function wsh_getwushuangshazhen()
 		SyncItem(nItem)
 		totempole_dec("NhËn ®­îc <color=yellow>Vo song s¸t trËn<color>.")
 		Msg2Player("NhËn thµnh c«ng 1 <color=yellow>V« song s¸t trËn<color>.");
-		Msg2Tong(nTongID, GetName().."NhËn ®­îc kü n¨ng thµnh thŞ - V« song s¸t trËn")
-		TONG_ApplyAddEventRecord(nTongID, GetName().."NhËn ®­îc kü n¨ng thµnh thŞ - V« song s¸t trËn")
+		Msg2Tong(nTongID, GetName().."»ñµÃKü n¨ng thµnh thŞ:  - ÎŞË«É±Õó")
+		TONG_ApplyAddEventRecord(nTongID, GetName().."»ñµÃKü n¨ng thµnh thŞ: - ÎŞË«É±Õó")
 	end;
 	
 	SetTaskTemp(193, 0);
@@ -451,7 +451,7 @@ function removeface()
 		Say("Ch­a chän khu«n mÉu V« song s¸t trËn nµo.", 0);
 		return
 	end;
-	Say("Muèn hñy bá khu«n mÉu nµo?", getn(tab_sel), tab_sel);
+	Say("ÏëHñy báÄÄÖÖ¿ò¼Ü ", getn(tab_sel), tab_sel);
 end;
 
 function getfacecount()
@@ -481,7 +481,7 @@ function deloneface(nIdx)
 		return
 	end;
 	TONG_ApplySetTaskValue(nTaskID, TTK_FACE[nIdx], 0);
-	Msg2Player("Hñy bá 1 khu«n mÉu V« song s¸t trËn cña bang héi.");
+	Msg2Player("Hñy bá1¸ö°ï»áÎŞË«É±Õó¿ò¼Ü.");
 end;
 -------------------------------------------------------------
 --¶ÍÎä»ê-----
@@ -646,7 +646,7 @@ function stunt_wushenbless1()
 		SetTask(TASKID_STUNT_LASTWEEK, TONG_GetTaskValue(nTongID, TONGTSK_STUNT_MAINPERIOD))
 		SetTask(TASKID_CITY_LASTDAY, getRelativeDay(nTongID))
 		SetTask(TASKID_CITYST_TAKED, GetTask(TASKID_CITYST_TAKED) + 1)
-		totempole_dec("NhËn ®­îc <color=yellow>Vâ ThÇn Tø Phóc<color>, sau khi sö dông sÏ nhËn ®­îc 2 giê nh©n ®«i ®iÓm cèng hiÕn (chØ víi ho¹t ®éng Tèng Kim, nhiÖm vô tİn sø, thö th¸ch thêi gian, vâ l©m liªn ®Êu, D· TÈu, ®ªm Huy Hoµng).")
+		totempole_dec("»ñµÃ <color=yellow>ÎäÉñËÄ¸£<color>, Ê¹ÓÃºó½«»ñµÃ2Ğ¡Ê±Ë«±¶¹±Ï×¶È(Ö»ÓĞËÎKim»î¶¯£¬ĞÅÊ¹ÈÎÎñ£¬Ê±¼äÌôÕ½£¬ÎäÁÖÁªÈü£¬Ò°ÛÅ£¬»Ô»ÍÒ¹).")
 	else
 		Msg2Player("NhËn Vâ thÇn tø phóc thÊt b¹i!")
 	end

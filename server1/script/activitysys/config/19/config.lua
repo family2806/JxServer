@@ -36,7 +36,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 {
 	nId = 3,
 	szMessageType = "CreateDialog",
-	szName = "T¬ HångThiªn Lı Nh©n Duyªn cña NguyÖt L·o",
+	szName = "ÔÂÀÏµÄT¬ Hång Thiªn Lı Nh©n Duyªn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"B¸ch Niªn Tu §¾c §ång ThuyÒn §é, Thiªn Niªn Tu Lai Céng ChÈm Miªn, Ta sö dông D©y Hång nµy ®Ó rµng buéc nh©n duyªn trªn thÕ gian nµy"},
@@ -54,7 +54,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 {
 	nId = 4,
 	szMessageType = "CreateDialog",
-	szName = "T¬ Hång Thiªn Lı Nh©n Duyªn cña Ch­ëng §¨ng Cung N÷",
+	szName = "Ch­ëng §¨ng Cung N÷µÄT¬ Hång Thiªn Lı Nh©n Duyªn",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"H¹t Gièng C©y Hoa Hång vµ §Ëu T­¬ng T­ ng­¬i chØ ®ùoc nhËn mét trong 2 lo¹i"},
@@ -64,7 +64,7 @@ tbConfig[4] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"AddDialogOpt",	{"Giíi thiÖu ho¹t ®éng'T¬ Hång Thiªn Lı Nh©n Duyªn'",5} },
+		{"AddDialogOpt",	{"½éÉÜ'T¬ Hång Thiªn Lı Nh©n Duyªn'",5} },
 		{"AddDialogOpt",	{"NhËn H¹t Gièng Hoa Hång",7} },
 		{"AddDialogOpt",	{"NhËn §Ëu T­¬ng T­",8} },
 	},
@@ -73,10 +73,10 @@ tbConfig[5] = --Ò»¸öÏ¸½Ú
 {
 	nId = 5,
 	szMessageType = "CreateDialog",
-	szName = "Giíi ThiÖu ho¹t ®éng T¬ Hång Thiªn Lı Nh©n Duyªn",
+	szName = "½éÉÜT¬ Hång Thiªn Lı Nh©n Duyªn»î¶¯",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"Vµo lóc 0h/13/02/2011 ®Õn 24h/23/02/2011, nh÷ng hiÖp sü cã ®¼ng c¸p 150 vµ 150 trë lªn cã thÓ mua H¹t Gièng C©y T×nh Nh©n t¹i shop Tinh Lùc, HiÖp sü ng­¬i cã thÓ ®em H¹t Gièng C©y T×nh Nh©n trång C©y T×nh Nh©n ë ngoµi ThÊt §¹i Thµnh ThŞ vµ B¸t §¹i T©n Thñ Th«n, khi H¹t Gièng C©y T×nh Nh©n lín lªn trë thµnh C©y T×nh Nh©n, HiÖp Sü cã thÓ thu ho¹ch LÔ Hép T×nh Nh©n ë trªn C©y T×nh Nh©n, mçi ngµy HiÖp Sü cã thÓ ®Õn chç cña NguyÖt H¹ L·o Nh©n ®Ó nhËn mét D©y Hång, trªn mçi D©y Hång ®Òu cã mét Sè Nh©n Duyªn , khi Ng­¬i nhËn xong D©y Hång th× cã thÓ ®Õn chç cña Ch­ëng §¨ng Cung N÷ nhËn §Ëu T­¬ng T­ hoÆc lµ H¹t Gièng Hoa Hång, mçi ngµy HiÖp Sü cã  2 c¬ héi nhËn H¹t Gièng Hoa Hång hoÆc §Ëu T­¬ng T­, mçi mét c¬ héi ng­¬i cã thÓ lùa chän nhËn 1 H¹t Gièng Hoa Hång hoÆc §Ëu T­¬ng T­, nÕu nh­ trong ngµy c¬ héi nhËn H¹t Gièng Hoa Hång hoÆc §Ëu T­¬ng T­ cña Ng­¬i ch­a dïng hÕt , nh­ vËy ng­¬i cã thÓ tİch lòy c¬ héi nhËn ®Õn ngµy h«m sau tiÕp tôc nhËn, mçi HiÖp Sü chØ ®­îc tİch lòy c¬ héi nhËn H¹t Gièng Hoa Hång hoÆc §Ëu T­¬ng T­ tèi ®a lµ 6 lÇn, v­ît qu¸ 6 lÇn th× kh«ng thÓ tiÕp tôc tİch lòy ®­îc n÷a, vËt phÈm Quúnh T­¬ng Ngäc DŞch t¹i shop Tinh Lùc cã thÓ gióp Ng­¬i t¨ng thªm mét lÇn c¬ héi nhËn H¹t Gièng Hoa Hång hoÆc §Ëu T­¬ng T­, nhËn vµ trång §Ëu T­¬ng T­ kh«ng cã h¹n chÕ, nhËn vµ trång H¹t Gièng Hoa Hång yªu cÇu ph¶i tháa m·n 1 trong hai ®iÒu kiÖn d­íi ®©y.\n1. hai ng­êi ch¬i kh¸c giíi tİnh cïng tæ ®éi víi nhau sè Nh©n Duyªn trªn D©y Hång cña 2 ng­êi ch¬i cïng tæ ®éi ph¶i hîp thµnh ®«i ( sè cÆp ch½n ). \n2.Phu thª 2 ng­êi tæ ®éi \nhiÖp sü ng­¬i cã thÓ cïng víi ng­êi b¹n kh¸c giíi cña m×nh cïng nhau ®Õn bªn ngoµi ThÊt §¹i Thµnh ThŞ vµ B¸t §¹i T©n Thñ Th«n ®Ó trång H¹t Gièng Hoa Hång, hai ng­êi kh¸c giíi tİnh cïng tæ ®éi sÏ cïng nhau ch¨m sãc MÇm C©y Hoa Hång mµ ng­êi kia trång xuèng, trong thêi gian MÇm C©y Hoa Hång lín lªn thµnh C©y Hoa Hång Në §Çy Hoa, HiÖp sü ph¶i kŞp thêi tiÕn hµnh t­íi n­íc, bãn ph©n, b¾t s©u, nhæ cá , viÖc mµ ng­¬i b¾t s©u t­íi n­íc, nhæ cá, bãn ph©n cµng kŞp thêi nhanh chãng th× trªn C©y Hoa Hång cuèi cïng ®­îc ch¨m sãc sÏ cho cµng nhiÒu LÔ Hép Hoa Hång, khi C©y Hoa Hång lín lªn thµnh C©y Hoa Hång Në §Çy Hoa, Ng­¬i cã thÓ thu ho¹ch LÔ Hép Hoa Hång ë trªn C©y Hoa Hång cña ng­¬i trång, trång §Ëu T­¬ng T­ kh«ng cÇn tæ ®éi , trång C©y T­¬ng T­ còng ph¶i t­íi n­íc, b¾t s©u, nhæ cá, bãn ph©n, nÕu viÖc Ng­¬i t­íi n­íc, nhæ cá, bãn ph©n, b¾t s©u cµng kŞp thêi ®óng lóc th× phÇn th­ëng nhËn ®ùoc cuèi cïng cµng phong phó, sau khi C©y T­¬ng T­ tr­ëng thµnh , HiÖp sü ng­¬i cã thÓ thu ho¹ch LÔ Hép T­¬ng T­ víi sè l­îng t­¬ng øng."},
+	tbMessageParam = {"´Ó 0h/13/02/2011 µ½ 24h/23/02/2011, ÄÇÀïÁìÒ»ÌõºìÏß£¬ÔÚÃ¿ÌõºìÏßÉÏ¶¼ÓĞÒ»¸öÒöÔµºÅ£¬µ±ÄãÁìÍêºìÏßºó£¬¾Í¿ÉÒÔµ½Ch­ëng §¨ng Cung N÷ÄÇÀïNhËn §Ëu T­¬ng T­»òÕßÊÇÃµ¹åÖÖ×Ó£¬Ã¿ÌìÏÀÊ¿ÓĞÁ½´Î»ú»áNhËn H¹t Gièng Hoa Hång»òÕßÏàË¼¶¹£¬Ã¿´Î»ú»áÄã¿ÉÒÔÑ¡ÔñÁìÈ¡Ò»¿ÅÃµ¹åÖÖ×Ó»òÕßÏàË¼¶¹£¬Èç¹ûÔÚµ±ÈÕNhËn H¹t Gièng Hoa Hång»òÕßÏàË¼¶¹µÄ»ú»áÎ´ÓÃÍê£¬¾ÍÄÜÀÛ»ıÁìÈ¡»ú»áµ½ÏÂÒ»ÈÕ¼ÌĞøÁìÈ¡£¬Ã¿Î»ÏÀÊ¿NhËn H¹t Gièng Hoa Hång»òÕßÏàË¼¶¹µÄ»ú»á×î¶àÖ»ÄÜÀÛ»ı6´Î£¬³¬¹ı6´Î¾Í²»ÄÜ¼ÌĞøÀÛ»ıÁË£¬¾«Á¶Ê¯ÉÌµêÇíÏàÓñÒ×ÎïÆ·¿ÉÒÔ°ïÄãÔö¼ÓÒ»´ÎNhËn H¹t Gièng Hoa Hång»òÕßÏàË¼¶¹µÄ»ú»áÁìÈ¡ºÍÖÖÏàË¼¶¹ÎŞÏŞÖÆ£¬ÁìÈ¡ºÍÖÖÃµ¹åÖÖ×ÓÒªÇóÂú×ãÏÂÃæÆäÖĞÒ»¸öÌõ¼ş\n1.Á½¸öÒìĞÔÍæ¼Ò×é¶Ó£¬Á½ÈËºìÏßÉÏµÄÒöÔµºÅÒª³É¶Ô£¨ÕûÊıºÅ£©¡£\n2.·òÆŞÁ½ÈË×é¶Ó\ÏÀÊ¿¿ÉÒÔÓëÒìĞÔÅóÓÑÒ»Æğµ½Æß´ó³ÇÇø»òÕß°Ë´óĞÂÊÖ´åÍâÖÖÃµ¹åÖÖ×Ó£¬ÒìĞÔÁ½ÈËÒ»Æğ×é¶ÓÕÕ¹Ë±ğÈËÖÖÏÂµÄÃµ¹åÊ÷Ñ¿£¬ÔÚÃµ¹åÊ÷Ñ¿³¤³ÉÃµ¹åÊ÷¿ªÂú»¨µÄ¹ı³ÌÖĞ£¬ÏÀÊ¿ĞèÒª¼°Ê±½øĞĞ½½Ë®£¬Ê©·Ê£¬³ı³æ£¬°Î²İ£¬³ı³æ½½Ë®£¬°Î²İÊ©·ÊÔ½¼°Ê±¿ìËÙ£¬Ôò×îºóÔÚ±»ÕÕ¹ËµÄÃµ¹åÊ÷ÉÏµÄÃµ¹åÀñºĞ¾ÍÔ½¶à£¬µ±Ãµ¹åÊ÷³¤´ó³É¿ªÂúÃµ¹å»¨µÄÃµ¹åÊ÷£¬Äã¿ÉÒÔ²ÉÕªÄãÖÖµÄÃµ¹åÊ÷ÉÏµÄÃµ¹åÀñºĞ£¬ÖÖÏàË¼¶¹²»ĞèÒª×é¶Ó£¬ÖÖÏàË¼Ê÷Ò²ĞèÒª½½Ë®£¬³ı³æ£¬°Î²İ£¬Ê©·Ê£¬ËùÒÔ£¬ÕâĞ©¹¤×÷×öµÄÔ½¼°Ê±£¬×îºóÊÕµ½µÄ½±Æ·¾ÍÔ½·á¸»£¬ÏàË¼Ê÷³É³¤ºó£¬ÏÀÊ¿¿ÉÒÔ²ÉÕªÏàÓ¦ÊıÁ¿µÄÏàË¼ÀñºĞ¡£"},
 	tbCondition = 
 	{
 	},
@@ -109,7 +109,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 {
 	nId = 7,
 	szMessageType = "CreateDialog",
-	szName = "NhËn H¹t Gièng Hoa Hång ë chç Ch­ëng §¨ng Cung N÷",
+	szName = "ÔÚCh­ëng §¨ng Cung N÷´¦NhËn H¹t Gièng Hoa Hång",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"§Ëu T­¬ng T­ vµ H¹t Gièng C©y Hoa Hång tiÓu hiÖp ng­¬i chØ ®­îc nhËn 1 trong hai lo¹i, tiÓu hiÖp nÕu ng­¬i muèn nhËn H¹t Gièng C©y Hoa Hång, cÇn ph¶i tháa m·n 1 trong 2 ®iÒu kiÖn d­íi ®©y<enter>1. Hai ng­êi ch¬i kh¸c giíi tİnh tæ ®éi víi nhau, Sè Nh©n Duyªn cña 2 ng­êi ch¬i cïng tæ ®éi ph¶i lµ sè ch½n ( sè cÆp ch½n )<enter>2. Phu thª 2 ng­êi tæ ®éi víi nhau"},
@@ -126,7 +126,7 @@ tbConfig[8] = --Ò»¸öÏ¸½Ú
 {
 	nId = 8,
 	szMessageType = "CreateDialog",
-	szName = "NhËn §Ëu T­¬ng T­ ë chç Ch­ëng §¨ng Cung N÷",
+	szName = "ÔÚCh­ëng §¨ng Cung N÷´¦NhËn §Ëu T­¬ng T­",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {"§Ëu T­¬ng T­ vµ H¹t Gièng C©y Hoa Hång tiÓu hiÖp ng­¬i chØ cã thÓ nhËn 1 trong 2 lo¹i nµy, tiÓu hiÖp ng­¬i ch­a t×m ®­îc nh©n duyªn cña m×nh ­, ng­¬i cã thÓ nhËn 1 §Ëu T­¬ng T­ ë chç cña ta råi ®i trång, chØ cã ®iÒu phÇn th­ëng trång §Ëu T­¬ng T­ kh«ng phong phó b»ng trång C©y Hoa Hång, tiÓu hiÖp hay lµ ng­¬i nhanh chãng ®i t×m nh©n duyªn cña m×nh ®i."},

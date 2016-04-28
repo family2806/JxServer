@@ -250,7 +250,7 @@ function pActivity:_CallMuKeBoss(nMapId)
 	AddGlobalNews(szInfo)
 	AddGlobalNews(szInfo)
 	
-	local szMsg = format("%s\tmap%d(%s) bªn ngoµi (%d,%d) xuÊt hiÖn boss [ Méc Kh¸ch ], khu vùc nµy ®· giao Long ¢m Th¸nh Thñy tæng sè l­îng lµ [%d]"
+	local szMsg = format("%s\tmap%d(%s)ÍâÃæ(%d,%d) ³öÏÖboss [Méc Kh¸ch], ´ËÇøÓòÒÑ¾­½»ÁË[%d]ÁúÒûÊ¥Ë®"
 		, GetLocalDate("%Y-%m-%d %H:%M:%S")
 		, nMapId, %tbPoolCount[nMapId].szName, tbNpc.nPosX, tbNpc.nPosY
 		, %tbPoolCount[nMapId].nTotal)

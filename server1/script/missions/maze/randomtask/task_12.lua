@@ -83,13 +83,13 @@ function pTask:OnProgressbarTimeout(nId, nIndex)
 		self:BroadCast("Më kh«ng ®óng thø tù, xin h·y më l¹i")
 		self.m_SeriesIndex = 1
 	else
-		self:BroadCast("Më thµnh c«ng.")
+		self:BroadCast("§ang më.")
 		self.m_SeriesIndex = self.m_SeriesIndex + 1
 		if (self.m_SeriesIndex > getn(self.m_Series)) then
 			local mapid = self:GetMapId()
 			local pos = self:GetPosition().t12_monster
 			for i = 1, 18 do
-				local nNpcIndex = FightNpcManager:AddNpc("§ång Nh©n", 1712, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
+				local nNpcIndex = FightNpcManager:AddNpc("§ång Nh©n ", 1712, mapid, pos[i].x, pos[i].y, self, i, 1, 1)
 				tinsert(self.m_Monsters, nNpcIndex)
 			end
 		end
@@ -112,7 +112,7 @@ function pTask:OnDeath(nKilledIndex, pPlayer, nIndex)
 		if (self.m_BossIndex > 0) then
 			FightNpcManager:DelNpc(self.m_BossIndex)
 		end
-		self.m_BossIndex = FightNpcManager:AddNpc("§ång Nh©n", 1713, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
+		self.m_BossIndex = FightNpcManager:AddNpc("§ång Nh©n ", 1713, self:GetMapId(), pos_boss.x, pos_boss.y, self, 0, 1, 1)
 	else
 		self.m_BossIndex = 0
 		self:Proceed()

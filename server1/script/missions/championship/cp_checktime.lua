@@ -33,8 +33,8 @@ function CP_CheckOpenTime()
 					SubWorld = mapindex
 					if(GetMissionV(MS_STATE) == 0) then
 						OpenMission(MISSIONID)
-						str = date("%mth¸ng%dngµy").."§¹i héi vâ l©m"..CP_MAPTAB[i][3].."M«n ph¸i ®Êu dù tuyÓn ®· b¾t ®Çu, mêi ®Õn Héi tr­êng vâ l©m ®¹i héi ë L©m An b¸o danh thi ®Êu. §iÒu kiÖn b¸o danh: §¼ng cÊp lín h¬n cÊp 90, sè lÇn tham gia ph¶i İt h¬n 20 lÇn. LÇn ®Çu b¸o danh nép 10 v¹n l­îng."
-						WriteLog(date("%Yn¨m%mth¸ng%dngµy%Hgiê%Mphót:").."§¹i héi vâ l©m"..CP_MAPTAB[i][3].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!")
+						str = date("%mth¸ng%dngµy").."Vâ l©m ®¹i héi"..CP_MAPTAB[i][3].."ÃÅÅÉÔ¤Ñ¡±ÈÈü¿ªÊ¼ÁË, Çëµ½Î»ÓÚÁÙ°²µÄVâ l©m ®¹i héi»á³¡±¨Ãû±ÈÈü. §i±¨ÃûÌõ¼ş: 90¼¶ÒÔÉÏ, ÖÁÉÙ²Î¼Ó20´Î. Ê×´Î±¨ÃûÒª½»10ÍòÁ½."
+						WriteLog(date("%YÄê%mth¸ng%dngµy%Ê±%M·Ö:").."Vâ l©m ®¹i héi"..CP_MAPTAB[i][3].."Thi ®Êu dù tuyÓn m«n ph¸i ®· b¾t ®Çu!")
 						AddGlobalCountNews(str, 1)
 						SetMissionV(MS_STATE, 1)
 						SetMissionV(MS_ROUND, 1)						

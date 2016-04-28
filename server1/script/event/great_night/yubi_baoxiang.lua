@@ -91,7 +91,7 @@ function main(nIndexItem)
 	-- ÅÐ¶¨Ch×a Khãa Nh­ ýÊÇ·ñ´æÔÚ
 	local nCount = CalcItemCount(3, 6, 1, 2744, -1) 
 	if nCount == 0 then
-		Say("Ph¶i cã Ch×a Khãa Nh­ ý míi më ®­îc Ngäc BÝch B¶o R­¬ng", 1, "§ãng/no")
+		Say("ÒªÓÐCh×a Khãa Nh­ ý²Å¿ÉÒÔ´ò¿ªNgäc BÝch B¶o R­¬ng", 1, "§ãng/no")
 		return 1
 	end
 

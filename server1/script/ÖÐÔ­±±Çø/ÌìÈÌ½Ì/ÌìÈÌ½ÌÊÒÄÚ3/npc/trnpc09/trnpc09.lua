@@ -143,7 +143,7 @@ function goff_yes()
 	Talk(1,"","Tèt! Nhí ®õng sa vµo nh÷ng c¸m dç cña Nam triÒu. ")
 	SetTask(4,70*256)
 	AddNote("Rêi khái Thiªn NhÉn Gi¸o, tiÕp tôc hµnh tÈu giang hå. ")
-	Msg2Player("Ban rêi khái Thiªn NhÉn Gi¸o, tiÕp tôc hµnh tÈu giang hå. ")
+	Msg2Player("ÄãRêi khái Thiªn NhÉn Gi¸o, tiÕp tôc hµnh tÈu giang hå. ")
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
@@ -180,7 +180,7 @@ function defection_yes()			-- ×ªÅÉ£¬ÊÕ»ØÔ­ÃÅÅÉÎä¹¦¼¼ÄÜ
 		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng "..GetRepute().."®iÓm!")
 		AddRepute(-1 * GetRepute())
 	else
-		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200 ®iÓm! ")
+		Msg2Player("V× hµnh vi bÊt trung víi m«n ph¸i, danh väng cña b¹n gi¶m xuèng 200®iÓm! ")
 		AddRepute(-200)
 	end
 	AddNote("Sau khi bá ®i c¸c kü n¨ng vµ danh hiÖu tr­ëng l·o cña Thiªn NhÉn Gi¸o, B©y giê b¹n cã thÓ gia nhËp C¸i Bang. ")
@@ -226,14 +226,14 @@ function return_complete()
 		Msg2Player("B¹n ®· häc ®­îc trÊn ph¸i tuyÖt häc: Thiªn Ma Gi¶i ThÓ, Du Thiªn Ho¸n NhËt, Ma DiÖm ThÊt S¸t. ")
 --		end
 		AddNote("Quay trë l¹i Thiªn NhÉn Gi¸o, l¹i ®øng vµo hµng ngò. ")
-		Msg2Player(GetName().."Quay trë l¹i Thiªn NhÉn Gi¸o, ®­îc phong lµm Th¸nh Gi¸o tr­ëng l·o. ")
+		Msg2Player(GetName().."Quay trë l¹i Thiªn NhÉn Gi¸o, l¹i ®øng vµo hµng ngò. £¬±»·âÎªÊ¥½Ì³¤ÀÏ. ")
 	else
 		Talk(2,"","Sao? Ng­¬i chØ ®em bao nhiªu ng©n l­îng th«i sao?","Xin lçi! §Ó ta kiÓm tra l¹i.")
 	end
 end;
 
 function return_uncompleted()
-	Talk(1,"","õ, nhanh lªn!")
+	Talk(1,"","¿ì®iÓm!")
 end;
 
 ----------------------- ³öÊ¦ÈÎÎñ ------------------------
@@ -258,8 +258,8 @@ function L60_prise()
 	SetFaction("")
 	SetCamp(4)
 	SetCurCamp(4)
-	AddNote("Quay l¹i Thiªn NhÉn §¹i ®×nh, ®­a quyÓn s¸ch da dª cho Hoµn Nhan Hïng LiÖt, hoµn thµnh nhiÖm vô xuÊt s­. Th¨ng cÊp T¸t M·n Ph¸p S­. ")
-	Msg2Player("Chóc mõng B¹n! XuÊt s­ thµnh c«ng! §­îc phong lµ T¸t M·n Ph¸p S­! Danh väng t¨ng thªm 120 ®iÓm! ")
+	AddNote("Quay trë l¹i Thiªn NhÉn Gi¸o, l¹i ®øng vµo hµng ngò. £¬°ÑÑòÆ¤¾í¸øÍêÑÕºéÁÒ£¬Íê³É³öÊ¦ÈÎÎñ£¬ÉıÎªÈøÂú·¨Íõ ")
+	Msg2Player("¹§Ï²ÄãÒÕ³É³öÊ¦£¡ÄãÒÑ±»·âÎªÌìÈÌ½ÌµÄÈøÂú·¨Íõ£¬ÃûÍûÔö¼Ó120®iÓm! ")
 	AddRepute(120)
 end;
 

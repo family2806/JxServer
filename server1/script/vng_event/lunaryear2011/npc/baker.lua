@@ -25,7 +25,7 @@ function tbBaker:introduction()
 end
 function tbBaker:composeItem()
 	local tbComposeDialog = tbNpcHead:createDialog()
-	tbComposeDialog.szTitleMsg = "NÕu cã ®ñ nguyªn liÖu ta sÏ gióp ng­¬i lµm [B¸nh ch­ng ®Æc biÖt]"
+	tbComposeDialog.szTitleMsg = "Èç¹ûÓĞ×ã¹»µÄÔ­ÁÏ£¬ÎÒ½«°ïÄã×öB¸nh ch­ng ®Æc biÖt]"
 	tbComposeDialog:AddOptEntry("Lµm b¸nh", tbBaker.doCompose, {tbBaker})
 	tbComposeDialog:AddOptEntry("Trë l¹i", tbBaker.main, {tbBaker})
 	tbComposeDialog:Show()

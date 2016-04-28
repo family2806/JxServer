@@ -1,4 +1,4 @@
--- V©n BÊt Tµ! Â·ÈËNPC ½ğÉßÕ¯Ö÷V©n BÊt Tµ! 40¼¶ÈÎÎñ
+-- Ngò §éc Â·ÈËNPC ½ğÉßÕ¯Ö÷V©n BÊt Tµ! 40¼¶ÈÎÎñ
 -- by£ºDan_Deng(2003-08-05)
 -- update by: xiaoyang(2004\4\13) ¼ÓÈë90¼¶ÃÅÅÉÈÎÎñ
 
@@ -15,8 +15,8 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>V©n BÊt Tµ! Gi¸o chóng ta cã v« vµn ®éc d­îc, cã mét sè ®éc d­îc lµ dïng hµng tr¨m lo¹i ®éc vËt mµ luyÖn chÕ, lo¹i ®éc bİ truyÒn nµy, chØ cÇn ch¹m nhÑ mét chót th«i, th× sÏ chÕt kh«ng cã vÕt tİch"
-	G_TASK:OnMessage("V©n BÊt Tµ!", tbDailog, "DialogWithNpc")
+	tbDailog.szTitleMsg = "<npc>Ngò §éc Gi¸o chóng ta cã v« vµn ®éc d­îc, cã mét sè ®éc d­îc lµ dïng hµng tr¨m lo¹i ®éc vËt mµ luyÖn chÕ, lo¹i ®éc bİ truyÒn nµy, chØ cÇn ch¹m nhÑ mét chót th«i, th× sÏ chÕt kh«ng cã vÕt tİch"
+	G_TASK:OnMessage("Ngò §éc", tbDailog, "DialogWithNpc")
 	tbDailog:AddOptEntry("Ta ®Õn t×m «ng cã viÖc kh¸c", main2)
 	tbDailog:Show() 
 end
@@ -37,11 +37,11 @@ function main2()
 	elseif (Uworld124 == 20 ) and (HaveItem(385) == 0) then
       Talk(1,"","B»ng h÷u! §õng cã véi vµng nh­ vËy! Th­ ta vÉn cßn ch­a ®­a,ng­¬i lµm sao cã thÓ ®i gÆp §­êng D· ")
       AddEventItem(385)
-      Msg2Player("TiÕp nhËn th­ tİn cña V©n BÊt Tµ ")
+      Msg2Player("½Ó¹ıV©n BÊt Tµ!µÄĞÅ")
 	elseif (Uworld124 == 30) and (HaveItem(386) == 1) then
 		DelItem(386)
 		SetTask(124,35)
-      Talk(5,"Uworld124_jump","Sao h¶?","Çy! §· bŞ h¾n ph¸t hiÖn ra trong th­ cã ®éc!","Sao l¹i thÕ ®­îc! Ta bá ®éc rÊt bİ mËt cÈn thËn h¾n lµm sao cã thÓ ®iÒu tra ra ®­îc! §­a l¹i cho ta!","A!...Trªn th­ nµy l¹i cã mét lo¹i kŞch ®éc kh¸c!","V©n BÊt Tµ! H¹i ng­êi th× còng sÏ ®Õn lóc bŞ ng­êi h¹i! Ng­¬i sèng kh«ng hÕt ngµy h«m nay ®©u!")        
+      Talk(5,"Uworld124_jump","Sao h¶?","Çy! §· bŞ h¾n ph¸t hiÖn ra trong th­ cã ®éc!","Sao l¹i thÕ ®­îc! Ta bá ®éc rÊt bİ mËt cÈn thËn h¾n lµm sao cã thÓ ®iÒu tra ra ®­îc! §­a l¹i cho ta!","A!...Trªn th­ nµy l¹i cã mét lo¹i kŞch ®éc kh¸c!","V©n BÊt Tµ!£¡º¦ÈËÖÕÓĞ±»º¦Ê±£¡Äã»î²»¹ı½ñÌìÁË!")        
 	elseif (Uworld124 == 35) then
 		Talk(1,"Uworld124_jump","Qua ®©y! Cïng ch¬i víi tiÓu V©n ®i!")
 	elseif (Uworld124 == 40) and (HaveItem(387) == 0) then
@@ -50,7 +50,7 @@ function main2()
 	elseif (Uworld124 >= 40) then			-- ÈÎÎñÍê³É
 		Talk(1,"","Ng­¬i. ThËt qu¸ ¸c ®éc! ")
 	else
-		Skill150Dialog("V©n BÊt Tµ! Gi¸o chóng ta cã v« vµn ®éc d­îc, cã mét sè ®éc d­îc lµ dïng hµng tr¨m lo¹i ®éc vËt mµ luyÖn chÕ, lo¹i ®éc bİ truyÒn nµy, chØ cÇn ch¹m nhÑ mét chót th«i, th× sÏ chÕt kh«ng cã vÕt tİch")
+		Skill150Dialog("ÎÒÃÇNgò §éc½ÌÓĞÎŞÊıÖÖ¶¾Ò©£¬ÓĞÒ»Ğ©¶¾Ò©ÊÇÓÃ¼¸°ÙÖÖ¶¾ÎïÁ·³ÉÁË£¬ÕâÖÖÃÜÁ·µÄ¶¾Ö»ÒªÅöµ½Ò»µãµã¾Í»á²»Â©ºÛ¼£µÄËÀÈ¥")
 	end
 end;
 

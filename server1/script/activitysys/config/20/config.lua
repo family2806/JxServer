@@ -133,7 +133,7 @@ tbConfig[8] = --一个细节
 	},
 	tbActition = 
 	{		
-		{"PlayerFunLib:AddExp",	{3000000,0,"Event_Thang6","NopVatPhamLuaVang"} },
+		{"PlayerFunLib:AddExp",	{3000000,0,"Event_Thang6","缴L骯 V祅g物品"} },
 	},
 }
 tbConfig[9] = --一个细节

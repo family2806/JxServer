@@ -66,7 +66,7 @@ function liqiushui()
 	local name = GetName()  
 	if ( Uworld1002 == 130 ) or ( Uworld1002 == 140 ) then
 		nt_setTask(1002,140)
-		Describe(DescLink_LiQiuShui.."<#>: Ng­¬i lµ ai? §Õn Thóy Yªn m«n víi môc ®İch g×? <enter>"
+		Describe(DescLink_LiQiuShui.."<#>: ¤ng lµ ¸ÉÊ²Ã´µÄ£¿À´´äÑÌÃÅÓĞºÎÄ¿µÄ£¿ <enter>"
 			..name.."<#>: Ta lµ ng­êi trong héi, Nam B¨ng b¶o ta ®Õn t×m c«. <enter> Hõ! Ta ®· nãi víi hä, kh«ng nªn t×m nh÷ng kÎ v« dông. <enter>"
 			..name.."<#>: Ta vèn còng ch¼ng thİch ®ång hµnh víi c«! <enter> A! Kh«ng ngê ng­¬i còng cã tİnh c¸ch. <enter>"
 			..name.."<#>: Ta sÏ cho c« thÊy b¶n lÜnh cña ta! <enter> Nãi hay l¾m! KhÈu khİ còng kh«ng tÖ. KiÕm m«n cã Tõ Tù Lùc ®ang gi÷ 1 b¶o vËt. §Õn ®ã lÊy nã vÒ cho ta. <enter>"

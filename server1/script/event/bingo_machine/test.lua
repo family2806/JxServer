@@ -55,7 +55,7 @@ function _Stat(nOdds,n)
 	Gambler:SetState(STATE_NORMAL)
 	Gambler:SetFinalAward(0, 0)
 	print("loπi h◊nh ", "Æºng c p", "SË l«n")
-	Msg2Player("Loπi h◊nh\t ßºng c p\t SË l«n")
+	Msg2Player("¿‡–Õ\t Æºng c p\t SË l«n")
 	for k, v in tbCount do
 		for k1, v1 in v do
 			print(k, k1, v1)

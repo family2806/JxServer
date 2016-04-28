@@ -109,7 +109,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 {
 	nId = 6,
 	szMessageType = "ItemScript",
-	szName = "SuDungTuiMayMan",
+	szName = "Sö dông tói may m¾n",
 	nStartDate = nil,
 	nEndDate  = nil,
 	tbMessageParam = {{tbProp={6,1,30111,1,0,0},}},
@@ -119,6 +119,6 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"tbAwardTemplet:Give",	{tbLuckyBagAward,1,{"PhuQuyCamHap","SuDungTuiMayMan"}} },
+		{"tbAwardTemplet:Give",	{tbLuckyBagAward,1,{"PhuQuyCamHap","Sö dông tói may m¾n"}} },
 	},
 }

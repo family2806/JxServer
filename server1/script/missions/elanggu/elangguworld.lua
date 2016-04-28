@@ -17,10 +17,10 @@ ELangGuWorld.tbNpcTypeList = --npcµÄÀàĞÍ
 		nIsboss = 1, --¶Ô»°npc¿ÉÒÔ²»ĞèÒªÕâ¸ö
 		szPosPath = "\\settings\\maps\\elanggu\\elangshizhe.txt",
 	},
-	["DÉn Gi¶ ¸c Lang Cèc"] = 
+	["Ác Lang CècÒıÕß"] = 
 	{
 		nNpcId = 108,
-		szName = "DÉn Gi¶ ¸c Lang Cèc",
+		szName = "Ác Lang CècÒıÕß",
 		nLevel = 95,
 		bNoRevive = 1,
 		szPosPath = "\\settings\\maps\\elanggu\\yinshigaoren.txt",
@@ -55,13 +55,13 @@ function ELangGuWorld:UseItemKillNpc()
 	
 	local nMapId, nX, nY = GetWorldPos()
 	if not self:IsInMap(nMapId) then
-		Talk(1, "", "§¹o cô nµy chØ cã thÓ sö dông t¹i ¸c Lang Cèc!")
+		Talk(1, "", "¸ÃµÀ¾ßÖ»ÄÜÔÚÁc Lang CècÊ¹ÓÃ!")
 		return 
 	end	
 	
 	local nSignIndex = self:GetNearestNpc(nX, nY)
 	if nSignIndex <= 0 then
-		Msg2Player("Cù ly c¸ch qu¸ xa ¸c Lang T¶ Sø, xin h·y ®Õn gÇn råi h·y sö dông!")
+		Msg2Player("Àë¸c Lang T¶ SøµÄ¾àÀëÌ«Ô¶£¬Çë½Ó½üºóÊ¹ÓÃ!")
 		return
 	end
 	local nX32, nY32, nMapIndex = GetNpcPos(nSignIndex)

@@ -127,7 +127,7 @@ local szLog = date("%y-%m-%d,%H:%M,").."Account:"..GetAccount()..",Name:"..GetNa
 		elseif (count == 9) then
 			AddQualityItem(attrs[2], attrs[3], attrs[4], attrs[5], attrs[6], attrs[7], attrs[8], attrs[9])
 		end
-		Msg2Player("B¹n nhËn ®­îc mét" .. attrs[1] .. "!");
+		Msg2Player("B¹n ®¹t ®­îc1¸ö" .. attrs[1] .. "!");
 		szLog = szLog.."get "..attrs[1]..";"
 	end
 	WriteLog(szLog)

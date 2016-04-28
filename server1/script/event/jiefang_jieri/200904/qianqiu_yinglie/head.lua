@@ -117,7 +117,7 @@ function TB_QIANQIU_YINGLIE0904:sorter_award(game_level)
 		for i = 1, 3 do
 			if tbPlayer[i] and tbPlayer[i] > 0 then
 				PlayerIndex = tbPlayer[i];
-				Msg2Player(format("B¶ng xÕp h¹ng liªn tr¶m: ®øng thø %d", i));
+				Msg2Player(format("Á¬Õ¶B¶ng xÕp h¹ng ®iÓm: ®øng thø %d", i));
 				self:add_rank_award(i);
 			end
 		end
@@ -204,7 +204,7 @@ function TB_QIANQIU_YINGLIE0904:add_end_award(tb_player, b_win)
 			
 			if (player_total_point >= 6000 and self:check_right() == 1) then
 				tbAwardTemplet:GiveAwardByList(tb_award);
-				Msg2Player(format("Do v× ®iÓm tèng kim trªn 6000, nªn sÏ ®­îc th­ëng %d Tèng Kim lÔ bao", tb_award.nCount))
+				Msg2Player(format("ÓÉÓÚËÎ½ğµãÔÚ6000ÒÔÉÏ£¬Òò´Ë¿ÉÒÔÁìÈ¡ %dTèng Kim lÔ bao", tb_award.nCount))
 			end
 		end
 		PlayerIndex = old_player;

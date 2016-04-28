@@ -99,7 +99,7 @@ function check_award_condition(city_id, nlg_tsk, show_talk)
 	
 	if (ntskvalue >= TB_MAINCITY_AWARDARY[nlg_tsk][7]) then
 		if (show_talk) then
-			Say("<#>Ngi ch糿g ph秈  nh薾 ph莕 thng tu莕 n祔 r錳 sao?", 0);
+			Say("<#>Ngi 不是已经领取这周的奖励了吗?", 0);
 		end;
 		return 0;
 	end;

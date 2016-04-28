@@ -248,10 +248,10 @@ end
 function OnNpcTalk()
 	local szMapName = t.SZ_FRUIT_MAP_NAME
 	local szDesc = format("<color=yellow>%s<color>HiÖn t¹i trong vâ l©m m­a hßa giã thuËn. ®Ó tá lßng c¶m t¹ ®èi víi c¸c vŞ giang hå ®¹i hiÖp, Vâ L©m Minh Chñ §éc C« KiÕm ®¾c ı vµo<color=yellow>00:00-28-04-2011~00:00-29-05-2011<color>më ra mét ho¹t ®éng<color=yellow> “H¹t Hoµng Kim”<color>víi quy m« lín.<enter>", "Vâ L©m Minh Chñ TruyÒn Nh©n")
-	szDesc = format("%strong thêi gian ho¹t ®éng mçi ngµy <color=yellow>13:15, 13:35, 19:00, 19:20<color>t¹i<color=yellow>%s<color>b¶n ®å sÏ xuÊt hiÖn 3 H¹t Hoµng Kim , mét thêi gian sau ®ã c¸c vŞ ®¹i hiÖp cã thÓ thu thËp ®­îc Qu¶ cña nã, khi sö dông sÏ lµm t¨ng c«ng lùc cña Qu¶ Hoµng Kim.<enter>", szDesc, szMapName)
+	szDesc = format("%sÃ¿ÈÕ»î¶¯ÆÚ¼ä<color=yellow>13:15, 13:35, 19:00, 19:20<color>ÔÚ<color=yellow>%s<color>°æÍ¼ÉÏ½«³öÏÖ3¿ÅH¹t Hoµng Kim£¬Ò»¶ÎÊ±¼äºó¸÷Î»´óÏÀ½«¿ÉÊÕ»ñËüµÄ¹ûÊµ£¬Ê¹ÓÃÊ±½«»áÔö¼ÓQu¶ Hoµng KimµÄ¹¦Á¦.<enter>", szDesc, szMapName)
 	szDesc = format("%s chØ cã thÓ th«ng qua ta ®©y míi cã thÓ ®­a ng­¬i ®Õn<color=yellow>%s<color>", szDesc, szMapName)
 	Describe(szDesc, 2,
-		"Xin h·y ®­a ta ®Õn ChiÕn Long §éng/OnGoToNewLiangShuiDong",
+		"Çë´øÎÒµ½ChiÕn Long §éng/OnGoToNewLiangShuiDong",
 		"HiÓu råi/no"
 	)
 end
@@ -264,7 +264,7 @@ function _AddOutNpc()
 	local nOffset = 3
 	local tbNpcPos = t.TB_ENTER_POS
 	local tbNpc = {
-		szName = "Ng­êi truyÒn tèng ChiÕn Long §éng", 
+		szName = "ChiÕn Long §éng´«ËÍÈË", 
 		szTitle = "<npc>Ta cã thÓ ®­a ng­¬i vÒ thµnh",
 		nLevel = 95,
 		nNpcId = 238,

@@ -47,7 +47,7 @@ function dt_winbonus(nCamp)
 		RoleIndex = GetMissionV(MS_PL_INDEX_2)
 		WinnerName = GetMissionS(2);
 		LoserName =  GetMissionS(1)
-		str = "Phe Kim"..WinnerName.."®· s¸t träng th­¬ng ng­êi phe Tèng"..LoserName.."giµnh th¾ng lîi!";
+		str = "Phe Kim"..WinnerName.."¸ÕÔÚÓëphe Tèng "..LoserName.."giµnh th¾ng lîi!";
 	end
 	Msg2MSAll(DTMISSIONID, str)
 	

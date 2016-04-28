@@ -51,9 +51,9 @@ function ExChangeItem_main()
 	
 	local tbOpp = {}
 	local str = "<#> §¹i hiÖp muèn ®æi phÇn th­ëng nµo ?";
-	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa Quèc Kh¸nh(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 2 V¹n)/#DoExChangeItem(1)");
-	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa §éc LËp(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 Hoa Hång §á)/#DoExChangeItem(2)");
-	tinsert(tbOpp,"Ta muèn ®æi Vßng Hoa Tù Do((1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 Hoa Hång §á)/#DoExChangeItem(3)");
+	tinsert(tbOpp,"ÎÒÏë»»Vßng Hoa Quèc Kh¸nh(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 2 Íò)/#DoExChangeItem(1)");
+	tinsert(tbOpp,"ÎÒÏë»»Vßng Hoa §éc LËp(1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 ºìHoa Hång)/#DoExChangeItem(2)");
+	tinsert(tbOpp,"ÎÒÏë»»Vßng Hoa Tù Do((1 Hoa Cóc Vµng + 1 Hoa Cóc Tr¾ng + 1 Hoa Cóc TÝm + 1 ºìHoa Hång)/#DoExChangeItem(3)");
 	tinsert(tbOpp, "<#>Tho¸t/OnCancel")
 	if ( getn( tbOpp ) == 0 ) then
 		Say(str, 0);
@@ -75,7 +75,7 @@ function DoExChangeItem(numIndexExchange)
 	end
 	if (numIndexExchange == 1) then
 		if (GetCash() < 20000 ) then
-			Talk(1, "", "§æi Vßng Hoa Quèc Kh¸nh cÇn 2 v¹n l­îng !");
+			Talk(1, "", "»»Vßng Hoa Quèc Kh¸nhÐèÒª2 ÍòÁ½ !");
 			return
 		end
 		if Pay(20000) ~= 1 then

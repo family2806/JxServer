@@ -7,6 +7,6 @@ Uworld122 = GetTask(122)
 		Talk(1,"","Ng­¬i l¹i ph¸ háng ®¹i sù cña Kim quèc! Kim chñ nhÊt ®Şnh kh«ng bu«ng tha ng­¬i!")
 		SetTask(122,60)  -- ÉèÖÃÈÎÎñ±äÁ¿Îª60
 		Msg2Player("GiÕt chÕt t­íng Th¸c NhÜ H¸n n­íc Kim, tiÕn th¼ng vµo doanh tr¹i cøu Th­êng B¸ch Lİ vµ Lı §Şch Phong. ")
-		AddNote("GiÕt chÕt t­íng Th¸c NhÜ H¸n n­íc Kim, tiÕn th¼ng vµo doanh tr¹i cøu Th­êng B¸ch Lİ vµ Lı §Şch Phong. ")
+		AddNote("GiÕt chÕt t­íng Th¸c NhÜ H¸n n­íc Kim, tiÕn th¼ng vµo doanh tr¹i cøu Th­êng B¸ch Lİ vµ Lı §Şch Phong. . ")
 	end
 end

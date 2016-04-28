@@ -28,13 +28,13 @@ function tbVNG_VIPAcc_ItemHead:useItem(strItemType)
 	local strItemName = ""
 	if(strItemType == "tieu") then
 		tbAward = {nExp=200000000}
-		strItemName = "Nh­ ı lÔ bao tiÓu"
+		strItemName = "ÁìtieuÀñ°ü"
 	elseif (strItemType == "trung") then
 		tbAward = {nExp=300000000}
-		strItemName = "Nh­ ı lÔ bao trung"
+		strItemName = "ÁìtrungÀñ°ü"
 	elseif (strItemType == "dai") then
 		tbAward = {nExp=400000000}
-		strItemName = "Nh­ ı lÔ bao ®¹i"
+		strItemName = "ÁìdaiÀñ°ü"
 	end
 	tbAwardTemplet:GiveAwardByList(tbAward, format("[VNG][VipAcc2011][PhÇn th­ëng kinh nghiÖm sö dông vËt phÈm %s]", strItemName))	
 	return 1

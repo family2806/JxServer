@@ -36,21 +36,21 @@ function ws_main(nTongID, nWorkshopID)
 		"NhËn ®­îc tói ®å nghÒ/#use_xiulibao("..nTongID..","..nWorkshopID..")",
 		"Kh«ng cÇn ®©u/cancel"
 	}
-	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: ViÖc söa ch÷a lo¹i thÇn binh lîi khİ trong bang ®Òu do mét tay ta ®¶m tr¸ch.", getn(aryszContent), aryszContent);
+	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÕıÈçºÃÂíĞèÅäºÃ°°£¬ºÃµÄ±ø¼×ÉñÆ÷×ÔÈ»Ò²ĞèÇÉ¶áÌì¹¤Ö®ÊÖÀ´Î¬»¤£¡", getn(aryszContent), aryszContent);
 	return 1;
 end
 
 --------------------------------------------------------------------------------------------
 VALUE_XIULIBAO_CONTRIBUTION = 50	--×Ï½ğ¸äĞèÒªµÄ¸öÈË¹±Ï×¶È
 function use_xiulibao(nTongID, nWorkshopID)
-	Say("Tæng qu¶n Thiªn c«ng ph­êng: Hµnh tÈu giang hå, trang bŞ th­êng xuyªn bŞ h­ háng? Giê ®©y ng­¬i cã thÓ mua tói ®å nghÒ, kh«ng cÇn quay vÒ thµnh, chØ cÇn dïng nã th× ng­¬i cã thÓ söa trang bŞ bÊt cø ®©u, vµ ®­¬ng nhiªn ph¶i tr¶ chi phİ t­¬ng ®­¬ng. Tói ®å nghÒ cã thêi h¹n sö dông lµ 1 tuÇn, cÇn tiªu phİ <color=yellow>"..VALUE_XIULIBAO_CONTRIBUTION.."<color> ®iÓm cèng hiÕn ®Ó ®æi, ng­¬i cã ®ång ı kh«ng?", 3,
+	Say("Tæng qu¶n Thiªn c«ng ph­êng:³öÀ´ĞĞ×ß½­ºş£¬×°±¸×ÜÊÇ»á¾­³£»µ°É£¿ÏÖÔÚÄãÖ»ÒªÂòÒ»¸öĞŞÀí°ü£¬ÎŞĞè»Ø³Ç£¬ÔÚÄãÏëĞŞÀí×°±¸µÄÊ±ºòÖ»ÒªÊ¹ÓÃĞŞÀí°ü±ã¿ÉÒÔÏñÔÚµêÀïÒ»ÑùĞŞÀí×°±¸ÁË¡£µ±È»ÄãĞŞÀí×°±¸Ê±ËùºÄµÄ²ÄÁÏÇ®Ò²»¹ÊÇÒª¸¶µÄ¡£Ò»¸öĞŞÀí°ü¿ÉÒÔÊ¹ÓÃÒ»¸öĞÇÆÚµÄÊ±¼ä£¬¶øÖ»ĞèÒª»¨·Ñ<color=yellow>"..VALUE_XIULIBAO_CONTRIBUTION.."<color> ®iÓm cèng hiÕn ®Ó ®æi, ng­¬i cã ®ång ı kh«ng?", 3,
 	"§æi 1 tói ®å nghÒ/#tg_sure2xiulibao("..nTongID..","..nWorkshopID..")",
 	"Tói ®å nghÒ lµ g×?/tg_helpxiulibao",
 	"Ta biÕt råi/cancel")
 end
 
 function tg_helpxiulibao()
-	Say("Tæng qu¶n Thiªn c«ng ph­êng: Tói ®å nghÒ sÏ gióp ng­¬i söa ch÷a trang bŞ bÊt kÓ thêi gian vµ ®Şa ®iÓm, chØ cÇn nhÊp chuét ph¶i sö dông th× còng sÏ gièng nh­ ®Õn c¸c cöa hµng trong thµnh, vµ dÜ nhiªn còng ph¶i tr¶ mét chi phİ t­¬ng ®­¬ng. Tói ®å nghÒ cã thêi h¹n sö dông lµ mét tuÇn, thêi gian sÏ tİnh tõ khi b¾t ®Çu mua, v× thÕ cã mua nhiÒu c¸i cïng mét lóc th× còng kh«ng cã t¸c dông.", 0)
+	Say("Tæng qu¶n Thiªn c«ng ph­êng:ĞŞÀí°ü¿ÉÒÔÈÃÄãËæÊ±ËæµØµÄĞŞÀí×°±¸£¬Ö»ÒªÓÒ¼ü®iÓm»÷Ê¹ÓÃ±ã¿ÉÒÔÏñÔÚµê×ÓÀïÒ»ÑùĞŞÀí×°±¸£»µ«Òª×¢ÒâµÄÊÇÄãÒÀÈ»Òª¸¶ĞŞÀí·Ñ¡£Ò»¸öĞŞÀí°ü¿ÉÒÔÊ¹ÓÃÒ»¸öĞÇÆÚ£¬Ê±¼ä´ÓÄã¹ºÂò¿ªÊ¼¼ÆËã£¬ËùÒÔÒ»´ÎÂòºÜ¶àµÄ»°Ò²ÊÇÃ»ÓĞÓÃµÄ£¬Ò»¸öĞÇÆÚÖ»ÒªÂòÒ»¸ö¾ÍºÃÁË¡£", 0)
 end
 
 function tg_sure2xiulibao(nTongID, nWorkshopID)
@@ -125,7 +125,7 @@ end
 
 function repair_ok2(nTongID, nWorkshopID)
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) <= 0) then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: H«m nay bËn viÖc qu¸, kh«ng thÓ gióp ng­¬i söa gia cè trang bŞ, ngµy mai h·y ®Õn nhĞ!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:½ñÌìÌ«Ã¦ÁË£¬²»ÄÜ¸øÄãÇ¿»¯ĞŞÀí£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
 		return 0;
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -147,18 +147,18 @@ function CommonRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 	local nRepairLevel = aLevelRepairLevel[nLevel]
 	if (nRepairLevel < 2)then
 		if (quality ~= 0)then
-			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §¼ng cÊp Thiªn c«ng ph­êng hiÖn t¹i kh«ng thÓ söa chöa trang bŞ nµy.", 0)
+			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ä¿Ç°µÈ¼¶µÄÌì¹¤·»ÉĞ²»ÄÜĞŞÀíÕâÖÖ×°±¸¡£", 0)
 			return
 		end
 	elseif (nRepairLevel < 3)then
 		if (quality == 1 or quality == 4)then
-			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §¼ng cÊp Thiªn c«ng ph­êng hiÖn t¹i kh«ng thÓ söa chöa trang bŞ nµy.", 0)
+			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ä¿Ç°µÈ¼¶µÄÌì¹¤·»ÉĞ²»ÄÜĞŞÀíÕâÖÖ×°±¸¡£", 0)
 			return
 		end
 	end
 	
 	if quality == 4 then
-		Say("<#>Tæng qu¶n thiªn c«ng ph­êng: Trang bŞ b¹ch kim kh«ng thÓ söa ®­îc.", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:°×½ğ×°±¸²»ÄÜĞŞÀí.", 0)
 		return
 	end
 		
@@ -177,7 +177,7 @@ function CommonRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 		if (nLostDur < 1) then
 			nLostDur = 1;
 		end
-		Say("Tæng qu¶n Thiªn c«ng ph­êng: <#>", 3, "Söa kü: "..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  "..(nCostContribution*3).."®iÓm/#Costly_Repair("..
+		Say("Tæng qu¶n Thiªn c«ng ph­êng:<#>", 3, "Söa kü: "..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  "..(nCostContribution*3).."®iÓm/#Costly_Repair("..
 			nTongID..","..nWorkshopID..","..nItemIdx..","..nCostlyPrice..","..(nCostContribution*3)..")", 
 		"Söa ®¬n gi¶n: "..nCheapPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  "..nCostContribution.." ®iÓm, ®é bÒn gi¶m "..nLostDur.."®iÓm/#Cheap_Repair("..
 			nTongID..","..nWorkshopID..","..nItemIdx..","..nCheapPrice..","..nCostContribution..")", "Kh«ng cÇn ®©u/cancel")
@@ -189,7 +189,7 @@ function CommonRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 	if (nCostContribution <= 0)then
 		nCostContribution = 1
 	end
-	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Söa ch÷a trang bŞ nµy cÇn tiªu hao:  "..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn: <color=yellow>"..nCostContribution.."<color> ®iÓm, ng­¬i ®ång ı kh«ng?", 2, "Söa ch÷a/#TG_Repair("..
+	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ĞŞÀí´Ë×°±¸Ğè»¨·Ñ:"..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  <color=yellow>"..nCostContribution.."<color> ®iÓm, ng­¬i ®ång ı kh«ng?", 2, "Söa ch÷a/#TG_Repair("..
 		nTongID..","..nWorkshopID..","..nItemIdx..","..nCostlyPrice..","..nCostContribution..")", "Kh«ng cÇn ®©u/cancel")
 end
 
@@ -199,7 +199,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 	local nFixDur = nMaxDur - nCurDur
 	_dbgMsg("Gi¸ trŞ l­îng cßn l¹i"..TWS_GetDayOutput(nTongID, nWorkshopID))
 	if (TWS_GetDayOutput(nTongID, nWorkshopID) <= 0)then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: H«m nay bËn viÖc qu¸, kh«ng thÓ gióp ng­¬i söa gia cè, ngµy mai h·y ®Õn nhĞ!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:½ñÌìÊµÔÚÃ¦ÀÛÁË£¬²»ÄÜÔÙ¸øÄãÇ¿»¯ĞŞÀí£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
 		return
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -207,18 +207,18 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 	local nRepairLevel = aLevelRepairLevel[nLevel]
 	if (nRepairLevel < 2)then
 		if (quality ~= 0)then
-			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §¼ng cÊp Thiªn c«ng ph­êng hiÖn t¹i kh«ng thÓ söa chöa trang bŞ nµy.", 0)
+			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ä¿Ç°µÈ¼¶µÄÌì¹¤·»ÉĞ²»ÄÜĞŞÀíÕâÖÖ×°±¸¡£", 0)
 			return
 		end
 	elseif (nRepairLevel < 3)then
 		if (quality == 1 or quality == 4)then
-			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §¼ng cÊp Thiªn c«ng ph­êng hiÖn t¹i kh«ng thÓ söa chöa trang bŞ nµy.", 0)
+			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ä¿Ç°µÈ¼¶µÄÌì¹¤·»ÉĞ²»ÄÜĞŞÀíÕâÖÖ×°±¸¡£", 0)
 			return
 		end
 	end
 	
 	if quality == 4 then
-		Say("<#>Tæng qu¶n thiªn c«ng ph­êng: Trang bŞ b¹ch kim kh«ng thÓ söa ®­îc.", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:°×½ğ×°±¸²»ÄÜĞŞÀí.", 0)
 		return
 	end
 	
@@ -237,7 +237,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 		nFixDur = floor(nDstDur - nMaxDur)
 	end
 	if (nFixDur <= 0)then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Trang bŞ nµy kh«ng thÓ gia cè n÷a!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:´Ë×°±¸ÒÑ²»ĞèÔÙÇ¿»¯ÁË£¡", 0)
 		return
 	end	
 	local nEnhancePrice = nDurPrice * nFixDur * 1.5
@@ -249,7 +249,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 			nFixDur = 0
 		end
 --		if (GetOrgMaxDurability(nItemIdx) ~= nMaxDur)then
---			Say("<#>Ìì¹¤·»×Ü¹Ü£º×î´óÄÍ¾Ã¶ÈÓĞËğÊ§µÄ×°±¸²»ÄÜÇ¿»¯ĞŞÀí£¡")
+--			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:×î´óÄÍ¾Ã¶ÈÓĞËğÊ§µÄ×°±¸²»ÄÜÇ¿»¯ĞŞÀí£¡")
 --			return
 --		end
 		local nItemLevel = GetItemLevel(nItemIdx);
@@ -264,7 +264,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 			nFixDur = floor(nDstDur - nMaxDur)
 		end	
 		if (nFixDur <= 0)then
-			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Trang bŞ nµy kh«ng thÓ gia cè n÷a!", 0)
+			Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:´Ë×°±¸ÒÑ²»ĞèÔÙÇ¿»¯ÁË£¡", 0)
 			return
 		end	
 		--¼ÓÉÏÇ¿»¯ËùĞè¼Û¸ñ
@@ -279,7 +279,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 		if (nCostContribution <= 0)then
 			nCostContribution = 1
 		end
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Söa gia cè trang bŞ nµy cÇn tiªu phİ: "..nPayPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn: <color=yellow>"..nCostContribution..
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ç¿»¯ĞŞÀí´Ë×°±¸Ğè»¨·Ñ:"..nPayPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  <color=yellow>"..nCostContribution..
 		"<color> ®iÓm, sau khi gia cè, ®é bÒn cña trang bŞ lµ "..nDstDur, 2, "Söa ch÷a/#EH_Costly_Repair("..
 			nTongID..","..nWorkshopID..","..nItemIdx..","..nPayPrice..
 				","..nCostContribution..","..nEnhancePrice..")", "Kh«ng cÇn ®©u/cancel")
@@ -290,7 +290,7 @@ function EnhanceRepair(nItemIdx, nPrice, nItemPrice, nTongID, nWorkshopID)
 	if (nCostContribution <= 0)then
 		nCostContribution = 1
 	end
-	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Söa gia cè trang bŞ nµy cÇn tiªu phİ: "..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn: <color=yellow>"..nCostContribution.."<color> ®iÓm, sau khi gia cè, ®é bÒn cña trang bŞ lµ "..nDstDur, 2, "Söa ch÷a/#Enhance_Repair("..
+	Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:Ç¿»¯ĞŞÀí´Ë×°±¸Ğè»¨·Ñ:"..nCostlyPrice.." l­îng, tiªu hao ®iÓm cèng hiÕn:  <color=yellow>"..nCostContribution.."<color> ®iÓm, sau khi gia cè, ®é bÒn cña trang bŞ lµ "..nDstDur, 2, "Söa ch÷a/#Enhance_Repair("..
 		nTongID..","..nWorkshopID..","..nItemIdx..","..nCostlyPrice..
 			","..nCostContribution..","..nEnhancePrice..")", "Kh«ng cÇn ®©u/cancel")
 end
@@ -305,11 +305,11 @@ end
 
 function TG_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribution)
 	if (GetCash() < nCostPrice) then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Ng©n l­îng kh«ng ®ñ, cã ®ñ råi h·y quay l¹i t×m ta!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄÒøÁ½²»×ã£¬±¸ÆëÒø×ÓÔÙÀ´°É£¡", 0)
 		return
 	end
 	if (GetContribution() < nCostContribution) then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄ¹±Ï×¶È²»×ã£¬ÒªÊ¹ÓÃ°ï»áÉèÊ©£¬µ±È»Òª¶Ô°ï»áÓĞ¹±Ï×²ÅĞĞ£¡", 0)
 		return
 	end
 	Pay(nCostPrice)
@@ -320,11 +320,11 @@ end
 
 function Enhance_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribution, nEnhancePrice)
 	if (GetCash() < nCostPrice) then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Ng©n l­îng kh«ng ®ñ, cã ®ñ råi h·y quay l¹i t×m ta!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄÒøÁ½²»×ã£¬±¸ÆëÒø×ÓÔÙÀ´°É£¡", 0)
 		return
 	end
 	if (GetContribution() < nCostContribution) then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄ¹±Ï×¶È²»×ã£¬ÒªÊ¹ÓÃ°ï»áÉèÊ©£¬µ±È»Òª¶Ô°ï»áÓĞ¹±Ï×²ÅĞĞ£¡", 0)
 		return
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -341,7 +341,7 @@ end
 function Costly_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribution)
 	local nCurMaxDur = GetMaxDurability(nItemIdx)
 	if (GetContribution() < nCostContribution)then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄ¹±Ï×¶È²»×ã£¬ÒªÊ¹ÓÃ°ï»áÉèÊ©£¬µ±È»Òª¶Ô°ï»áÓĞ¹±Ï×²ÅĞĞ£¡", 0)
 		return
 	end
 	if (GetCash() >= nCostPrice) then
@@ -352,7 +352,7 @@ function Costly_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribu
 		--TWS_ApplyAddDayOutput(nTongID, nWorkshopID, nCostContribution)
 		WriteLog(date("%H%M%S")..":"..GetAccount().."("..GetName()..") sö dông ("..nCostPrice..") l­îng, ("..nCostContribution..") ®iÓm cèng hiÕn, söa kü trang bŞ Hoµng Kim (ItemGenTime:"..GetItemGenTime(nItemIdx).." CurDur:"..nCurMaxDur..")");
 	else
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Ng©n l­îng kh«ng ®ñ, cã ®ñ råi h·y quay l¹i t×m ta!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄÒøÁ½²»×ã£¬±¸ÆëÒø×ÓÔÙÀ´°É£¡", 0)
 		return
 	end
 end
@@ -360,7 +360,7 @@ end
 function Cheap_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribution)
 	local nCurMaxDur = GetMaxDurability(nItemIdx)
 	if (GetContribution() < nCostContribution)then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄ¹±Ï×¶È²»×ã£¬ÒªÊ¹ÓÃ°ï»áÉèÊ©£¬µ±È»Òª¶Ô°ï»áÓĞ¹±Ï×²ÅĞĞ£¡", 0)
 		return
 	end
 	local nFixDur = nCurMaxDur - GetCurDurability(nItemIdx)
@@ -377,7 +377,7 @@ function Cheap_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribut
 		--TWS_ApplyAddDayOutput(nTongID, nWorkshopID, nCostContribution)
 		WriteLog(date("%H%M%S")..":"..GetAccount().."("..GetName()..") sö dông ("..nCostPrice..") l­îng, "..nCostContribution.." ®iÓm cèng hiÕn, söa ®¬n gi¶n trang bŞ Hoµng Kim (ItemGenTime:"..GetItemGenTime(nItemIdx).." CurDur:"..nFixMaxDur..") , ®é bÒn lín nhÊt gi¶m xuèng, "..nLostDur.."®iÓm");
 	else
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Ng©n l­îng kh«ng ®ñ, cã ®ñ råi h·y quay l¹i t×m ta!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄÒøÁ½²»×ã£¬±¸ÆëÒø×ÓÔÙÀ´°É£¡", 0)
 		return
 	end
 end
@@ -385,7 +385,7 @@ end
 function EH_Costly_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContribution, nEnhancePrice)
 	local nCurMaxDur = GetMaxDurability(nItemIdx)
 	if (GetContribution() < nCostContribution)then
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y gãp søc cho bang héi tr­íc ®·!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄ¹±Ï×¶È²»×ã£¬ÒªÊ¹ÓÃ°ï»áÉèÊ©£¬µ±È»Òª¶Ô°ï»áÓĞ¹±Ï×²ÅĞĞ£¡", 0)
 		return
 	end
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
@@ -399,9 +399,9 @@ function EH_Costly_Repair(nTongID, nWorkshopID, nItemIdx, nCostPrice, nCostContr
 		EH_SetCurDurability(nItemIdx, nCurMaxDur* (1+aLevelEnhanceAdd[nLevel]/100))
 		TWS_ApplyAddDayOutput(nTongID, nWorkshopID, -nEnhancePrice)
 		TONG_ApplyAddTaskValue(nTongID, TONGTSK_WEEK_WSCONSUME, (nEnhancePrice+5000)/10000)
-		WriteLog(date("%H%M%S")..":"..GetAccount().."("..GetName()..") sö dông ("..nCostPrice..") l­îng, ("..nCostContribution..") ®iÓm cèng hiÕn, söa gia cè trang bŞ Hoµng Kim (ItemGenTime:"..GetItemGenTime(nItemIdx).." CurDur:"..nCurMaxDur..")");
+		WriteLog(date("%H%M%S")..":"..GetAccount().."("..GetName()..") sö dông ("..nCostPrice..") l­îng, ("..nCostContribution..")®iÓm¹±Ï×¶È£¬Ç¿»¯¾«ĞŞ»Æ½ğ×°±¸(ItemGenTime:"..GetItemGenTime(nItemIdx).." CurDur:"..nCurMaxDur..")");
 	else
-		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng: Ng©n l­îng kh«ng ®ñ, cã ®ñ råi h·y quay l¹i t×m ta!", 0)
+		Say("<#>Tæng qu¶n Thiªn c«ng ph­êng:ÄãµÄÒøÁ½²»×ã£¬±¸ÆëÒø×ÓÔÙÀ´°É£¡", 0)
 		return
 	end
 end
@@ -439,9 +439,9 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 			if(aLevelRepairLevel[nUseLevel] == 1) then
 				szRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>"
 			elseif(aLevelRepairLevel[nUseLevel] == 2) then
-				szRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>, <color=Violet>trang bŞ tİm<color>"
+				szRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>¡¢<color=Violet>×Ï×°<color>"
 			else
-				szRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>, <color=Violet>trang bŞ tİm<color>¡¢<color=gold>»Æ½ğ×°±¸<color>"
+				szRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>¡¢<color=Violet>×Ï×°<color>¡¢<color=gold>»Æ½ğ×°±¸<color>"
 			end
 		else
 			nScale = "--"
@@ -470,9 +470,9 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 		if(aLevelRepairLevel[nUseLevel + 1] == 1) then
 			szNextRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>"
 		elseif(aLevelRepairLevel[nUseLevel + 1] == 2) then
-			szNextRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>, <color=Violet>trang bŞ tİm<color>"
+			szNextRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>¡¢<color=Violet>×Ï×°<color>"
 		else
-			szNextRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>, <color=Violet>trang bŞ tİm<color>¡¢<color=gold>»Æ½ğ×°±¸<color>"
+			szNextRepairKind = "<color=white>Trang bŞ tr¾ng<color>, <color=water>trang bŞ xanh<color>¡¢<color=Violet>×Ï×°<color>¡¢<color=gold>»Æ½ğ×°±¸<color>"
 		end
 	else		
 		nNextMaintainFund = "--"
@@ -485,34 +485,34 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 	if (nWorkshopID ~= 0)then
 		local state 
 		if bPause == 1 then state="<color=yellow>T¹m ngõng" elseif bOpen == 1 then state="<color=green>Khai më" else state="<color=red>§ãng cöa" end
-		local szMsg = "Tr¹ng th¸i t¸c ph­êng: "..state.."<color>\n"..
-			"§¼ng cÊp t¸c ph­êng: <color=gold>"..nCurLevel.."<color>\n"..
-			"§¼ng cÊp sö dông hiÖn t¹i: <color=gold>"..nUseLevel.."<color>\n"..
-			"Chñng lo¹i trang bŞ cã thÓ söa ch÷a: "..szRepairKind.."\n"..
-			"§iÓm ­u ®·i söa ch÷a: <color=gold>"..nScale.."<color> phÇn tr¨m\n"..
-			"Söa gia cè ®é bÒn v­ît giíi h¹n: <color=gold>"..nAdvanceEnhance.."%<color>\n"..
-			"Mçi ngµy tæng l­îng söa gia cè t¨ng lªn: <color=gold>"..dAdvanceRepairCount.."<color> lÇn\n"..		
-			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=gold>"..nMaintainFund.." v¹n<color>\n"..
-			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=gold>"..nOpenFund.." v¹n<color>\n"..
-			"Ng©n s¸ch kiÕn thiÕt ®Ó n©ng cÊp: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+		local szMsg = "×÷·»×´Ì¬:"..state.."<color>\n"..
+			"×÷·»µÈ¼¶:<color=gold>"..nCurLevel.."<color>\n"..
+			"µ±Ç°Ê¹ÓÃµÈ¼¶:<color=gold>"..nUseLevel.."<color>\n"..
+			"¿ÉÎ¬ĞŞµÄ×°±¸ÖÖÀà:"..szRepairKind.."\n"..
+			"Î¬ĞŞ×°±¸ÓÅ»İ¶È:<color=gold>"..nScale.."<color> phÇn tr¨m\n"..
+			"Ç¿»¯ĞŞÀíÄÍ¾Ã¶È³¬¹ıÉÏÏŞ:<color=gold>"..nAdvanceEnhance.."%<color>\n"..
+			"Ã¿ÌìÇ¿»¯ĞŞÀí×ÜÁ¿Ìá¸ß:<color=gold>"..dAdvanceRepairCount.."<color> lÇn\n"..		
+			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ:<color=gold>"..nMaintainFund.." v¹n<color>\n"..
+			"¿ªÆôËùĞè½¨Éè»ù½ğ:<color=gold>"..nOpenFund.." v¹n<color>\n"..
+			"Éı¼¶ËùĞè½¨Éè»ù½ğ:<color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
 			"<color=green>§¼ng cÊp sö dông kÕ tiÕp <color>\n"..
-			"<color=water>Chñng lo¹i trang bŞ cã thÓ söa ch÷a: "..szNextRepairKind.."\n"..
-			"§iÓm ­u ®·i söa ch÷a: <color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
-			"Söa gia cè ®é bÒn v­ît giíi h¹n: <color=Violet>"..nNextAdvanceEnhance.."%<color>\n"..
-			"Mçi ngµy tæng l­îng söa gia cè t¨ng lªn: <color=Violet>"..dNextAdvanceRepairCount.."<color> lÇn\n"..	
-			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
-			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
+			"<color=water>¿ÉÎ¬ĞŞµÄ×°±¸ÖÖÀà:"..szNextRepairKind.."\n"..
+			"Î¬ĞŞ×°±¸ÓÅ»İ¶È:<color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
+			"Ç¿»¯ĞŞÀíÄÍ¾Ã¶È³¬¹ıÉÏÏŞ:<color=Violet>"..nNextAdvanceEnhance.."%<color>\n"..
+			"Ã¿ÌìÇ¿»¯ĞŞÀí×ÜÁ¿Ìá¸ß:<color=Violet>"..dNextAdvanceRepairCount.."<color> lÇn\n"..	
+			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ:<color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"¿ªÆôËùĞè½¨Éè»ù½ğ:<color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	else
-		local szMsg = "Tr¹ng th¸i t¸c ph­êng: <color=water>Î´½¨Á¢<color>\n"..
-			"Ng©n s¸ch kiÕn thÕt cÇn ®Ó x©y dùng: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
+		local szMsg = "×÷·»×´Ì¬:<color=water>Î´½¨Á¢<color>\n"..
+			"½¨Á¢ËùĞè½¨Éè»ù½ğ:<color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
 			"<color=green>§¼ng cÊp kÕ tiÕp <color>\n"..
-			"<color=water>Chñng lo¹i trang bŞ cã thÓ söa ch÷a: "..szNextRepairKind.."\n"..
-			"§iÓm ­u ®·i söa ch÷a: <color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
-			"Söa gia cè ®é bÒn v­ît giíi h¹n: <color=Violet>"..nNextAdvanceEnhance.."%<color>\n"..
-			"Mçi ngµy tæng l­îng söa gia cè t¨ng lªn: <color=Violet>"..dNextAdvanceRepairCount.."<color> lÇn\n"..	
-			"Ng©n s¸ch chiÕn bŞ chi cho phİ b¶o tr× bang mçi ngµy: <color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
-			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
+			"<color=water>¿ÉÎ¬ĞŞµÄ×°±¸ÖÖÀà:"..szNextRepairKind.."\n"..
+			"Î¬ĞŞ×°±¸ÓÅ»İ¶È:<color=Violet>"..nNextScale.."<color> phÇn tr¨m\n"..
+			"Ç¿»¯ĞŞÀíÄÍ¾Ã¶È³¬¹ıÉÏÏŞ:<color=Violet>"..nNextAdvanceEnhance.."%<color>\n"..
+			"Ã¿ÌìÇ¿»¯ĞŞÀí×ÜÁ¿Ìá¸ß:<color=Violet>"..dNextAdvanceRepairCount.."<color> lÇn\n"..	
+			"Ã¿ÈÕÎ¬»¤ÏûºÄÕ½±¸»ù½ğ:<color=Violet>"..nNextMaintainFund.." v¹n<color>\n"..
+			"¿ªÆôËùĞè½¨Éè»ù½ğ:<color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	end
 end

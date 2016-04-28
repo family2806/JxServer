@@ -5,7 +5,7 @@ tbITEM_SEWING_THREAD		= {szName="CuÈn Chÿ", tbProp={6,1,3138,1,0,0}, nExpiredTim
 tbITEM_BUTTONHOLE		= {szName="Khuy ∏o", tbProp={6,1,3140,1,0,0}, nExpiredTime=20120501,}
 tbITEM_CLOTH		= {szName="M∂nh V∂i", tbProp={6,1,3139,1,0,0}, nExpiredTime=20120501,}
 tbITEM_NEW_UNIFORM		= {szName="∏o L›nh MÌi", tbProp={6,1,3142,1,0,0}, nExpiredTime=20120501,}
-tbITEM_NEW_UNIFORM_EXP		= {szName="Chi’c ∏o L›nh MÌi (Æi”m kinh nghi÷m)", tbProp={6,1,30192,1,0,0}, nExpiredTime=20120501,}
+tbITEM_NEW_UNIFORM_EXP		= {szName="∏o L›nh MÌi(æ≠—Èµ„)", tbProp={6,1,30192,1,0,0}, nExpiredTime=20120501,}
 tbITEM_PATCHED_UNIFORM		= {szName="∏o L›nh ß∑ Sˆa", tbProp={6,1,3141,1,0,0}, nExpiredTime=20120501,}
 tbITEM_JADE		= {szName="Hﬂa Thﬁ B›ch", tbProp={6,1,3145,1,0,0}, nExpiredTime=20120501,}
 nIdx_USED_PATCHED_UNIFORM_COUNT		= 1

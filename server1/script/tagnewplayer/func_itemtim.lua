@@ -35,7 +35,7 @@ tbItem=
 tbWeapon=
 {
 	{strName ="§ao"},
-	{strName ="Phi §ao"},
+	{strName ="·É§ao"},
 	{strName ="Phi Tiªu"},
 	{strName ="KiÕm"},
 	{strName ="Th­¬ng"},
@@ -189,7 +189,7 @@ function Addweapon(tbSeries)
 					local nItemIndex = nil
 					if (strItemName == "§ao") then
 						nItemIndex = AddQualityItem(2,0,0,1,10,0,0,30,219,9,290,135,-1)				
-					elseif (strItemName == "Phi §ao") then
+					elseif (strItemName == "·É§ao") then
 						nItemIndex = AddQualityItem(2,0,1,1,10,0,0,30,219,9,290,140,-1)						
 					elseif (strItemName == "Phi Tiªu") then
 						nItemIndex = AddQualityItem(2,0,1,0,10,0,0,30,219,9,290,140,-1)						

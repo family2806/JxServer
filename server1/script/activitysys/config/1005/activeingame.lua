@@ -8,7 +8,7 @@ function tbPVLBActive:AddDialog(tbOpt)
 	if tbPVLB_Check:CheckTime() ~= 1 then
 		return
 	end
-	tinsert(tbOpt, "Ta muËn nhÀn PhongVanLenhBai/#tbPVLBActive:main()")
+	tinsert(tbOpt, "Ta muËn nhÀn Phong V©n L÷nh Bµi/#tbPVLBActive:main()")
 	tinsert(tbOpt, "Ph«n th≠Îng bang hÈi ti’p nhÀn t©n thÒ/#tbTongSupport:main()")
 end
 
@@ -24,9 +24,9 @@ function tbPVLBActive:main()
 		Talk(1, "", "D˜ li÷u kh´ng cÀp nhÀt, xin vui lﬂng li™n h÷ ban qu∂n trﬁ Æ” Æ≠Óc gi∂i quy’t.")
 		return
 	end
-	local tbItem = {szName="PhongVanLenhBai",tbProp={6,1,30141,1,0,0},nCount=1,nExpiredTime=86400,nBindState=-2};	
+	local tbItem = {szName="Phong V©n L÷nh Bµi",tbProp={6,1,30141,1,0,0},nCount=1,nExpiredTime=86400,nBindState=-2};	
 	local tbTranslog = {strFolder = "201109_EventPhongVanLenhBai/", nPromID = 11, nResult = 1}
-	tbAwardTemplet:Give(tbItem, 1, {"PhongVanLenhBai", "¡Ï»°PhongVanLenhBai¿Ò∆∑", tbTranslog})
+	tbAwardTemplet:Give(tbItem, 1, {"Phong V©n L÷nh Bµi", "¡Ï»°Phong V©n L÷nh Bµi¿Ò∆∑", tbTranslog})
 end
 
 function tbPVLBActive:ActiveCondition()

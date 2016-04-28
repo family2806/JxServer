@@ -12,7 +12,7 @@ Message=
     {"<#> NguyÖn cïng ng­êi m·i m·i bªn nhau","<#> §õng nãi nh÷ng lêi ®­êng mËt, ®õng tÆng nhau nh÷ng mãn ®¸t tiÒn! C¸i em cÇn chİnh lµ tr¸i tim thËt lßng cña anh!"},
     {"<#> Ng­êi vµ ta m·i kh¾ng khİt bªn nhau, xin ®õng phô rÉy mèi l­¬ng duyªn!","<#> MÆc cho thêi gian yªu nhau bao l©u, mong ng­êi lu«n ©u yÕm bªn ta, xin ®õng phô rÉy mèi l­¬ng duyªn!"},
     {"<#> Tr­êng T­¬ng T­ ","<#> Thiªn tr­êng lé viÔn hån phi khæ, méng hån bÊt ®¸o quan s¬n nan. Tr­êng t­¬ng t­ xĞ n¸t t©m can."},
-    {"<#> Tö Thanh B¶o KiÕm cña ta","<#> Tö Thanh B¶o KiÕm cña ta ph¸t ra tİn hiÖu tu..tu. Hãa ra ı trung nh©n lµ ng­êi, cßn bá ®i ®©u?"},
+    {"<#> Tö Thanh B¶o KiÕm cña ta","<#> Tö Thanh B¶o KiÕm cña ta·¢³öà½~à½µÄÑ¶ºÅ£¬Ô­À´ÎÒµÄÒâÖĞÈËÊÇÄã£¬»¹ÅÜ¡£"},
     {"<#> Ng­êi ®· c­íp mÊt hån ta","<#> Ng­êi sao c­íp mÊt hån ta ®Ó ngµy ®ªm ta mang m·i h×nh bãng ng­êi!"},
 }
 

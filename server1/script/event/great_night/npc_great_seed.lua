@@ -22,7 +22,7 @@ function main()
 		end
 		return
 	elseif nSeedLevel == 4 and nGetSeedLevel ~= 3 then
-			Msg2Player("ChØ cã ng­êi ch¬i tõ cÊp 120 trë lªn míi cã thÓ h¸i qu¶ nµy!")
+			Msg2Player("Ö»ÓĞLo¹i qu¶ nµy ng­êi ch¬i tõ cÊp 120 trë lªn míi cã thÓ h¸i!")
 			return
 	end;
 	Msg2Player("Qu¶ vÉn ch­a chİn, ph¶i ®îi 5 phót n÷a.")

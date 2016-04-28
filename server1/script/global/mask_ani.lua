@@ -95,14 +95,14 @@ function exchange_mask_Confirm( nCount )
 
 		end
 	else
-		Talk(1,"","Xin/mêi n÷a cÈn thËn kiÓm tra mét c¸i , ngµi cho ta trang bŞ kh«ng phï hîp yªu cÇu nga ")
+		Talk(1,"","Xin/mêi n÷a cÈn thËn kiÓm tra mét c¸i , ngµi cho ta trang bŞ kh«ng phï hîp yªu cÇu nga £¡")
 	end
 	
 end
 
 function about()
 
-	Say("Ngµi cÇn chuÈn bŞ trõ vò khİ bªn ngoµi ®İch mét bé <color=red> mµu xanh da trêi thuéc tİnh <color> trang bŞ (9 mãn ) cïng <color=red>20 v¹n <color> l­îng b¹c , th× cã nhÊt ®Şnh c¬ héi lÊy ®­îc mét thÇn kú ®éng vËt mÆt n¹ , bao gåm  kim ®iªu  tuyÕt lang  ®«ng b¾c hæ  tuyÕt tr¸ch  t«ng hïng  b¹ch heo  mai hoa léc cïng kim ti hÇu . ngµi cÇn chuÈn bŞ 9 mãn trang bŞ chia ra lµm  c¸i mò  y phôc  ®ai l­ng  hé cæ tay / thñ tr¹c  hé th©n phï / gi©y chuyÒn  ngäc béi / h­¬ng nang  th­îng chiÕc nhÉn  h¹ chiÕc nhÉn  giµy . bÊt qu¸ xin chó ı , ®æi mÆt n¹ v« luËn lµ hay kh«ng thµnh c«ng , trang bŞ cïng kiÕm hiÖp tiÒn còng sÏ biÕn mÊt . ",1,"Nga , ta hiÓu , c¸m ¬n /no")
+	Say("ÄúĞèÒª×¼±¸³ıÎäÆ÷ÍâµÄÒ»Ì×<color=red>À¶É«ÊôĞÔ<color>×°±¸(9¼ş)ºÍ<color=red>20Íò<color>Á½Òø×Ó£¬¾ÍÓĞÒ»¶¨µÄ»ú»áµÃµ½Ò»¸öÉñÆæµÄ¶¯ÎïÃæ¾ß£¬°üÀ¨£º½ğµñ¡¢Ñ©ÀÇ¡¢¶«±±»¢¡¢Ñ©¹Ö¡¢×ØĞÜ¡¢°×Öí¡¢Ã·»¨Â¹ºÍ½ğË¿ºï¡£ÄúĞèÒª×¼±¸µÄ9¼ş×°±¸·Ö±ğÎª£ºC¸i mò ¡¢Y phôc ¡¢§ai l­ng ¡¢»¤Íó/Thñ tr¹c ¡¢»¤Éí·û/Gi©y chuyÒn ¡¢Ngäc béi /ÏãÄÒ¡¢ÉÏChiÕc nhÉn ¡¢ÏÂChiÕc nhÉn ¡¢Giµy ¡£²»¹ıÇë×¢Òâ£¬¶Ò»»Ãæ¾ßÎŞÂÛÊÇ·ñ³É¹¦,×°±¸ºÍ½£ÏÀ±Ò¶¼»áÏûÊ§¡£",1,"Nga , ta hiÓu , c¸m ¬n /no")
 end
 
 

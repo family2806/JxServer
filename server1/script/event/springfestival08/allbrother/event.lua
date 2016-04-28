@@ -198,7 +198,7 @@ function allbrother_0801_TaskPersonTaskAward() --
 			local tbAward = {0, allbrother_0801_TaskFindItemAward, 1}
 			springfestival08_lib_material_compose({allbrother_0801_tbTaskList[nTaskId].tbList, tbAward, "Hoµn thµnh nhiÖm vô ", "VËt phÈm nhiÖm vô kh«ng ®óng hoÆc sè l­îng kh«ng ®ñ", "NhiÖm vô sai"}, "Giao vËt phÈm")
 		else
-			Say("NhiÖm vô vÉn ch­a hoµn thµnh", 0)	
+			Say("ÒÀ¾ÉÃ»ÓĞHoµn thµnh nhiÖm vô ", 0)	
 		end
 	else
 		allbrother_0801_TaskFindNpcAward();
@@ -254,7 +254,7 @@ function allbrother_0801_TaskFindNpcAward()
 		springfestival08_lib_AddAward(allbrother_0801_tbLingPai[nCurRate], allbrother_0801_szActName)
 		return 1;
 	else
-		Say("B¹n d­êng nh­ vÉn ch­a hoµn thµnh nhiÖm vô.", 0)
+		Say("ÄãºÃÏñ»¹Ã»ÓĞHoµn thµnh nhiÖm vô .", 0)
 	end
 end
 
@@ -277,7 +277,7 @@ function allbrother_0801_TeamTaskAward()
 		end
 	end
 	local tbAward = {0, allbrother_0801_TeamTaskAwardFun, 1}
-	springfestival08_lib_material_compose({allbrother_0801_tbLingPai, tbAward, "Hoµn thµnh nhiÖm vô ", "VËt phÈm nhiÖm vô kh«ng ®óng hoÆc sè l­îng kh«ng ®ñ", "NhiÖm vô sai"}, "Giao vËt phÈm", "8 lo¹i lÖnh bµi B¾c §Èu M«n (Thiªn Xu LÖnh, Thiªn Toµn LÖnh, Thiªn C¬ LÖnh, Thiªn QuyÒn LÖnh, Ngäc Hoµnh LÖnh, Khai D­¬ng LÖnh, Dao Quang LÖnh, ThÊt Tinh LÖnh)")
+	springfestival08_lib_material_compose({allbrother_0801_tbLingPai, tbAward, "Hoµn thµnh nhiÖm vô ", "VËt phÈm nhiÖm vô kh«ng ®óng hoÆc sè l­îng kh«ng ®ñ", "NhiÖm vô sai"}, "Giao vËt phÈm", "8ÖÖ±±¶·ÃÅÁîÅÆ(Thiªn Xu LÖnh£¬Thiªn Toµn LÖnh£¬Thiªn C¬ LÖnh£¬Thiªn QuyÒn LÖnh£¬Ngäc Hoµnh LÖnh£¬Khai D­¬ng LÖnh£¬Dao Quang LÖnh£¬ThÊt Tinh LÖnh)")
 end
 
 --function allbrother_0801_CheckAllTeamTaskLimit()

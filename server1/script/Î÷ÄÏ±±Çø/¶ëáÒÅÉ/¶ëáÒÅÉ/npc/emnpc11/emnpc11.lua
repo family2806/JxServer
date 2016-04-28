@@ -22,7 +22,7 @@ function main()
 		DelItem(20)
 		SetTask(1, 10*256+80)
 		AddNote("Mang g­¬ng ®ång giao cho t­íng c«ng cña DiÖu Èn vµ chuyÓn nh÷ng t©m huyÕt cña huynh Êy ®Õn DiÖu Èn s­ tû ")
-		Msg2Player("Mang g­¬ng ®ång giao cho t­íng c«ng cña DiÖu Èn vµ chuyÓn nh÷ng t©m huyÕt cña huynh Êy ®Õn DiÖu Èn s­ tû ")
+		Msg2Player("Mang g­¬ng ®ång giao cho t­íng c«ng cña DiÖu Èn vµ chuyÓn nh÷ng t©m huyÕt cña huynh Êy ®Õn DiÖu Èn s­ tû  ")
 	elseif (UTask_em >= 10*256+80) then 					--ÈÎÎñÍê³ÉºóµÄ¶Ô»°
 		Talk(1,"","Bao l©u ta còng ®îi nµng vÒ!")
 	else

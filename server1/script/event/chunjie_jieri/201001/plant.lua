@@ -35,8 +35,8 @@ tbTreeMap = {
 
 -- √∑ª®÷÷¿‡±Ì
 tbTreeName = {
-	[1] = "≥§ Ÿ√∑",
-	[2] = "∞≤øµ√∑",
+	[1] = "Mai Tr≠Íng Th‰",
+	[2] = "Mai An Khang",
 	[3] = "Mai Thﬁnh V≠Óng",
 	[4] = "Mai Hπnh PhÛc",
 	[5] = "Mai Tµi PhÛ"
@@ -53,8 +53,8 @@ tbTreeRate = {
 -- Ω±¿¯±Ì
 tbAwardList = {
 	-- 		25ª˝∑÷		15->24ª˝∑÷	1->14ª˝∑÷	0ª˝∑÷
-	[1] = {30000000,	25000000,	20000000,	0},		-- ≥§ Ÿ√∑
-	[2]	= {20000000,	15000000,	10000000,	0},		-- ∞≤øµ√∑
+	[1] = {30000000,	25000000,	20000000,	0},		-- Mai Tr≠Íng Th‰
+	[2]	= {20000000,	15000000,	10000000,	0},		-- Mai An Khang
 	[3] = {10000000,	8000000,	6000000,	0},		-- Mai Thﬁnh V≠Óng
 	[4] = {8000000,		6000000,	4000000,	0},		-- Mai Hπnh PhÛc
 	[5] = {6000000,		4000000,	3000000,	0},		-- Mai Tµi PhÛ
@@ -261,7 +261,7 @@ function tbSeed:Grow(Kind)
 		tbSeed:AddPlantCount()
 	end
 	PlayerIndex = player
-	-- »Áπ˚ «"∞≤øµ√∑"ªÚ"≥§ Ÿ√∑"£¨æÕ»´≤ø∆µµ¿Õ®∏Ê
+	-- »Áπ˚ «"Mai An Khang"ªÚ"Mai Tr≠Íng Th‰"£¨æÕ»´≤ø∆µµ¿Õ®∏Ê
 	if (Kind == 1 or Kind == 2) then
 		local handle = OB_Create()
 		local msg = format("ChÛc mıng %s Æ∑ trong thµnh c´ng %s!", GetName(), tbTreeName[Kind])
@@ -367,7 +367,7 @@ end
 tbMaintainInfo = {
 	[1] = {
 		Dlg = "B„n ph©n cho c©y mai",
-		Msg = "H∑y ti’n hµnh b„n ph©n cho c©y mai",
+		Msg = "‘ŸB„n ph©n cho c©y mai",
 		Err = "ßπi hi÷p Æ∑ b„n ph©n cho c©y rÂi",
 		Npc = 1529,
 		},
@@ -385,13 +385,13 @@ tbMaintainInfo = {
 		},
 	[4] = {
 		Dlg = "Bæt s©u cho c©y",
-		Msg = "H∑y ti’n hµnh bæt s©u cho c©y",
-		Err = "ßπi hi÷p Æ∑ bæt s©u cho c©y rÂi",
+		Msg = "‘ŸºÃ–¯Bæt s©u cho c©y",
+		Err = "¥Ûœ¿“—æ≠Bæt s©u cho c©y¡À",
 		Npc = 1532,
 		},
 	[5] = {
 		Dlg = "Tr»y l∏ cho c©y",
-		Msg = "H∑y ti’n hµnh tr»y l∏ cho c©y",
+		Msg = "‘ŸTr»y l∏ cho c©y",
 		Err = "ßπi hi÷p Æ∑ tr»y l∏ rÂi",
 		Npc = 1533,
 		}

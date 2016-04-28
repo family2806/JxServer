@@ -27,7 +27,7 @@ YueGeDaoWorld.tbNpcTypeList = --npcµƒ¿‡–Õ
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\yuegewuwei1.txt",
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegedao\\yuegewuwei1.lua",
 	},
-	["Nguy÷t Ca V‚ V÷ 2"] = 
+	["Nguy÷t Ca V‚ V÷2"] = 
 	{
 		nNpcId = 1847,
 		szName = "Nguy÷t Ca V‚ V÷",
@@ -36,10 +36,10 @@ YueGeDaoWorld.tbNpcTypeList = --npcµƒ¿‡–Õ
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\yuegewuwei2.txt",
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegedao\\yuegewuwei2.lua",
 	},
-	["Nguy÷t Ca ß∂o ChÒ"] = 
+	["Nguy÷t Ca ß∂o÷˜"] = 
 	{
 		nNpcId = 1849,
-		szName = "Nguy÷t Ca ß∂o ChÒ",
+		szName = "Nguy÷t Ca ß∂o÷˜",
 		nLevel = 95,
 		bNoRevive = 0,
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\yuegedaozhu.txt",
@@ -72,10 +72,10 @@ YueGeDaoWorld.tbNpcTypeList = --npcµƒ¿‡–Õ
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\shibei.txt",
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegedao\\shibei.lua",
 	},
-	["Bia ß∏ Ki’m Gia"] = 
+	["Ω£⁄£Bia ß∏"] = 
 	{
 		nNpcId = 1860,
-		szName = "Bia ß∏ Ki’m Gia",
+		szName = "Ω£⁄£Bia ß∏",
 		nLevel = 95,
 		bNoRevive = 0,
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\shibeiex.txt",
@@ -105,10 +105,10 @@ YueGeDaoWorld.tbNpcTypeList = --npcµƒ¿‡–Õ
 		bNoRevive = 0,
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\shenzhibuqingdewulingrenshi.txt",
 	},
-	["Thuy“n Phu Nguy÷t Ca ß∂o"] = 
+	["Nguy÷t Ca ß∂o¥¨∑Ú"] = 
 	{
 		nNpcId = 240,
-		szName = "Thuy“n Phu Nguy÷t Ca ß∂o",
+		szName = "Nguy÷t Ca ß∂o¥¨∑Ú",
 		nLevel = 95,
 		szPosPath = "\\settings\\maps\\yuegedao\\yuegedao\\chuanfu.txt",
 		szScriptPath = "\\script\\missions\\yuegedao\\yuegedao\\chuanfu.lua",

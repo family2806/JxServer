@@ -66,7 +66,7 @@ function catch_title()	--10´óÃÅÅÉÇ°ÎåÁìÈ¡danh hiÖu
 			return 1
 		end
 	end
-	Say("Sø gi¶ kiÖt xuÊt: Ban kh«ng ®ñ t­ c¸ch nhËn danh hiÖu Vâ l©m kiÖt xuÊt.",0);
+	Say("Sø gi¶ kiÖt xuÊt: Äã²»¹»×Ê¸ñÁìÈ¡ÎäÁÖĞÂĞãÁªÈüdanh hiÖu.",0);
 	return
 end
 
@@ -102,17 +102,17 @@ end
 function regist_freshman()
 
 	if (GetLevel() >= 90  ) then
-		Say("Sø gi¶ kiÖt xuÊt: CÊp 90 hoÆc cao h¬n kh«ng ®­îc phĞp tham gia thi ®Êu Vâ l©m m«n ph¸i kiÖt xuÊt. B¹n cã thÓ vµo xem thi ®Êu mµ th«i!", 0)
+		Say("Sø gi¶ kiÖt xuÊt: 90¼¶»òÕß¸ü¸ß¼¶±ğµÄ½«²»ÄÜ²Î¼ÓÎäÁÖĞÂĞãÁªÈü£¬Äã¿ÉÒÔ½øÈë¿´!", 0)
 		return
 	end
 	
 	if ( GetLevel() < 50 ) then
-		Say( "Sø gi¶ kiÖt xuÊt: §¼ng cÊp cña b¹n ch­a ®¹t yªu cÇu (cÊp50) , kh«ng ®­îc phĞp b¸o danh thi ®Êu nh­ng b¹n cã thÓ vµo xem.", 0 )
+		Say( "Sø gi¶ kiÖt xuÊt: ÄãµÄµÈ¼¶²»¹»50¼¶ÒªÇó£¬²»ÄÜ±¨Ãû±ÈÈü£¬µ«ÊÇÄã¿ÉÒÔ½øÈë¿´.", 0 )
 		return
 	end
 	
 	if (GetLastFactionNumber() == -1) then
-		Say("Sø gi¶ kiÖt xuÊt: ChØ cã ng­êi cña ThËp ®¹i ph¸i ®­îc tham gia §¹i héi vâ l©m, ng­¬i kh«ng cã m«n ph¸i kh«ng thÓ tham gia. Sau khi gia nhËp ThËp ®¹i ph¸i míi ®­îc tham gia thi ®Êu!", 0)
+		Say("Sø gi¶ kiÖt xuÊt: Äã²»ÊÇÊ®´óÃÅÅÉµÄÈË£¬²»ÄÜ²Î¼Ó±ÈÈü¡£¼ÓÈëÊ®´óÃÅÅÉºó£¬²ÅÄÜ²Î¼Ó±ÈÈü!", 0)
 		return
 	end
 	
@@ -120,7 +120,7 @@ function regist_freshman()
 		Msg2Player( "B¹n ®· b¸o danh råi, trùc tiÕp ®Õn gÆp Sø gi¶ kiÖt xuÊt lµ cã thÓ vµo." )
 		transtoplace()
 	else
-		local talkstr = "Sø gi¶ kiÖt xuÊt: Ng­¬i míi lÇn ®Çu tham gia Vâ l©m kiÖt xuÊt? Cã muèn tham gia kh«ng?"
+		local talkstr = "Sø gi¶ kiÖt xuÊt: ÄãµÚÒ»´Î²ÎÎäÁÖĞÂĞãÁªÈüÂğ?Ïë²Î¼ÓÂğ£¿"
 		Say( talkstr, 2, "Ta muèn b¸o danh/sure_regist", "§Ó ta xem l¹i/OnCancel" )
 		return
 	end

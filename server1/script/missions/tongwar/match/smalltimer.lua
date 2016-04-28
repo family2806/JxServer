@@ -42,7 +42,7 @@ function OnTimer()
 
 		--Ã¿Ò»phótÖÓÍ¨¸æµ±Ç°Ë«·½»ýphót£¬ºÍnpc
 		if (mod(t, 3) == 0 ) then
-			msstr = "C«ng bè: HiÖn t¹i, tæng ®iÓm liªn minh"..GetMissionS(MS_S_CITYNAME_S).." vµ liªn minh"..GetMissionS(MS_S_CITYNAME_J).." lµ <color=yellow>"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
+			msstr = "¹«²¼£ºÄ¿Ç°£¬ÁªÃË×Üphót"..GetMissionS(MS_S_CITYNAME_S).." vµ liªn minh"..GetMissionS(MS_S_CITYNAME_J).." lµ <color=yellow>"..GetMissionV(MS_TOTALPOINT_S)..":"..GetMissionV(MS_TOTALPOINT_J);
 			Msg2MSAll(MISSIONID, msstr)
 		end
 		if (mod(t, 30) == 0) then

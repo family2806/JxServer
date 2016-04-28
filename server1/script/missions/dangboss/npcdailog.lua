@@ -42,7 +42,7 @@ function tbDangBossDailog:Main()
 		format("Ta muèn b¸o danh tham gia ho¹t ®éng ®Êu ng­u/#%s:DailogSignUp(1)", self.szClassName),
 		format("Ta lµ ng­êi th¾ng cuéc vµ ®Õn nhËn th­ëng/#%s:GetAward(1)", self.szClassName),
 		format("Ta muèn t×m hiÓu ho¹t ®éng ®Êu ng­u/#%s:Explain()", self.szClassName),
-		"KÕt thóc ®èi tho¹i/OnCancel",
+		"Ta sÏ quay l¹i sau!/OnCancel",
 		
 	}
 	
@@ -150,7 +150,7 @@ function tbDangBossDailog:GetAward(nStep, nCurCount)
 			format("<dec><npc>H«m nay cã thÓ nhËn %d phÇn th­ëng, <color=red>(NÕu nh­ h«m nay kh«ng nhËn ngµy mai sÏ mÊt ®i)<color>Ng­¬i muèn:", nTotalCount),
 			format("NhËn tÊt c¶/#%s:GetAward(2, %d)", self.szClassName, nTotalCount),
 			format("ChØ nhËn 1 phÇn/#%s:GetAward(2, 1)", self.szClassName, 1),
-			"KÕt thóc ®èi tho¹i/OnCancel"
+			"Ta sÏ quay l¹i sau!/OnCancel"
 		}
 		CreateTaskSay(tbSay)
 	elseif nStep == 2 then

@@ -128,13 +128,13 @@ function marshal_down(camp)
 		npcidx_s = AddNpc(GetMissionV(MS_TRANK1_S + 6 - 1), GetMissionV(MS_RANK1LVL_S + 6 - 1), SubWorld, x*32, y*32, 1, "Nguy猲 So竔 phe T鑞g", 1)
 		SetNpcCurCamp(npcidx_s, 1)
 		SetNpcDeathScript(npcidx_s, tabFILE_NPCDEATH[6])
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF>T鑞g Kim chi課 b竜: Nguy猲 So竔 phe T鑞g  xu蕋 hi謓")
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF>宋金战报: Nguy猲 So竔 phe T鑞g已出现")
 	else
 		enterpos = GetIniFileData(mapfile, "Area_"..j_area, "generalpos");
 		x,y = bt_str2xydata(enterpos)	
 		npcidx_j = AddNpc(GetMissionV(MS_TRANK1_J + 6 - 1), GetMissionV(MS_RANK1LVL_J + 6 - 1), SubWorld, x*32, y*32, 1, "Nguy猲 So竔 phe Kim", 1)
 		SetNpcCurCamp(npcidx_j, 2)
 		SetNpcDeathScript(npcidx_j, tabFILE_NPCDEATH[6])
-		Msg2MSAll(MISSIONID, "<color=0x9BFF9B>T鑞g Kim chi課 b竜: Nguy猲 So竔 phe Kim  xu蕋 hi謓")
+		Msg2MSAll(MISSIONID, "<color=0x9BFF9B>宋金战报: Nguy猲 So竔 phe Kim已出现")
 	end		
 end

@@ -42,13 +42,13 @@ end
 	Msg2Player("B¹n ®· ®o¹t So¸i Kú, h·y mau chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)));
 	W,X1,Y1 = GetWorldPos();
 	if (GetCurCamp() == 1) then
-		Msg2MSAll(MISSIONID, "<color=0x00FFFF> phe Tèng <color=yellow>"..GetName().."<color=0x00FFFF> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x00FFFF>®· ®o¹t ®­îc So¸i Kú, hiÖn ®ang chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
+		Msg2MSAll(MISSIONID, "<color=0x00FFFF> phe Tèng <color=yellow>"..GetName().."<color=0x00FFFF> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x00FFFF>Î»ÖÃ¶áÈ¡Ë§Æì,Ä¿Ç°ÕýÇ°Íù<color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
 		AddSkillState(460, 1, 0, 1000000 ) --ÑÕÉ«¹â»·,·Ö±çµÐÎÒ
 		AddSkillState(656,30,0,100000) --½µÍæ¼ÒµÄËÙ¶È
 		ST_SyncMiniMapObj(x, y);
 		sf_setflagplayer(1, PlayerIndex)
 	else
-		Msg2MSAll(MISSIONID, "<color=0x9BFF9B> phe Kim <color=yellow>"..GetName().."<color=0x9BFF9B> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x9BFF9B> ®· ®o¹t ®­îc So¸i Kú, hiÖn ®ang chuyÓn ®Õn <color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
+		Msg2MSAll(MISSIONID, "<color=0x9BFF9B> phe Kim <color=yellow>"..GetName().."<color=0x9BFF9B> t¹i <color=yellow>"..floor(X1/8)..","..floor(Y1/16).."<color=0x9BFF9B>Î»ÖÃ¶áÈ¡Ë§Æì,Ä¿Ç°ÕýÇ°Íù<color=yellow>"..floor(x/(32*8))..","..floor(y/(32*16)))
 		AddSkillState(461, 1, 0, 1000000 ) --ÑÕÉ«¹â»·,·Ö±çµÐÎÒ
 		AddSkillState(656,30,0,100000) --½µÍæ¼ÒµÄËÙ¶È
 		ST_SyncMiniMapObj(x, y);

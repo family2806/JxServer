@@ -11,7 +11,7 @@ function main()
 end;
 
 function enroll_S2_A()
-	Say("§êi ng­êi kh«ng ai kh«ng cã hiÓm nguy! Qua råi sÏ rÌn luyªn thªm b¶n tÝnh kiªn c­êng",3,"H·y cè g¾ng næ lùc nhÐ. V× n­íc v× d©n. V× thiªn h¹ b¸ t¸nh /enroll_S2_wrongA","§Ó ta suy nghÜ, t×m mét c¸ch gi¶i quyÕt tèt nhÊt /enroll_S2_correct","Cho dï ®­îc lîi cho m×nh th× còng ®õng lµm cho ng­êi kh¸c bÞ tæn th­¬ng /enroll_S2_wrongA")
+	Say("§êi ng­êi kh«ng ai kh«ng cã hiÓm nguy! Qua råi sÏ rÌn luyªn thªm b¶n tÝnh kiªn c­êng",3,"H·y cè g¾ng nç lùc nhÐ! V× n­íc v× d©n! V× b¸ t¸nh thiªn h¹./enroll_S2_wrongA","§Ó ta suy nghÜ, t×m mét c¸ch gi¶i quyÕt tèt nhÊt /enroll_S2_correct","Cho dï ®­îc lîi cho m×nh th× còng ®õng lµm cho ng­êi kh¸c bÞ tæn th­¬ng /enroll_S2_wrongA")
 end;
 
 function enroll_S2_B()
@@ -22,7 +22,7 @@ function enroll_S2_correct()
 	Talk(1,"","Xem nh­ ta vµ ng­¬i cã duyªn! TÆng ng­¬i Qu¶ng Ho¾c H­¬ng nµy ®Ó lµm quµ tao ngé!")
 	AddEventItem(122)
 	Msg2Player("NhËn ®­îc Qu¶ng Ho¾c H­¬ng ")
-	AddNote("Tr¶ lêi ®­îc c©u hái cña T©n KhÝ TËt, nhËn ®­îc Qu¶ng Ho¾c H­¬ng ")
+	AddNote("»Ø´ðÐÁÆú¼²µÄÎÊÌâ£¬NhËn ®­îc Qu¶ng Ho¾c H­¬ng  ")
 end;
 
 function enroll_S2_wrongA()

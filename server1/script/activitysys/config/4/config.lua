@@ -104,7 +104,7 @@ tbConfig[6] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,10,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinh"} },
 	},
 }
 tbConfig[7] = --Ò»¸öÏ¸½Ú
@@ -122,7 +122,7 @@ tbConfig[7] = --Ò»¸öÏ¸½Ú
 	},
 	tbActition = 
 	{
-		{"PlayerFunLib:GetItem",	{ITEM_WATER,20,EVENT_LOG_TITLE,"TieuDietThuyTacDaiDauLinh"} },
+		{"PlayerFunLib:GetItem",	{ITEM_WATER,20,EVENT_LOG_TITLE,"TieuDietThuyTacDauLinh"} },
 	},
 }
 tbConfig[8] = --Ò»¸öÏ¸½Ú
@@ -404,7 +404,7 @@ tbConfig[23] = --Ò»¸öÏ¸½Ú
 	szName = "nil",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>H¹t MÇm cã thÓ t×m thÊy t¹i M¹c Cao QuËt, Tr­êng B¹ch S¬n Nam, Tr­êng B¹ch S¬n B¾c, Sa M¹c 1, Sa M¹c 2, Sa M¹c 3, Kháa Lang §éng, Tói Thuèc T¨ng Tr­ëng cã thÓ t×m thÊy t¹i Hµng Rong, B×nh N­íc cã thÓ th«ng qua tham gia Tèng Kim, V­ît ¶i, Phong L¨ng §é, Viªm §Õ, Boss Hoµng Kim, Boss S¸t Thñ. PhÈm Mµu S¾c cã t¹i Kú Tr©n C¸c, khi ®¹i hiÖp t×m ®ñ 4 lo¹i vËt phÈm nµy cã thÓ ®Õn chç cña ta ®©y hîp thµnh c¸c lo¹i Hoa Ph­îng s¾c mµu ®Ó ®æi phÇn th­ëng phong phó",0},
+	tbMessageParam = {"<npc>ÖÖ×Ó¿ÉÒÔÔÚÄª¸ß¿ß¡¢³¤°×É½ÄÏ¡¢³¤°×É½±±¡¢É³Ä®1¡¢É³Ä®2¡¢É³Ä®3¡¢ÂãÀÇ¶´ÕÒµ½£¬Tói Thuèc T¨ng Tr­ëng¿ÉÒÔÔÚHµng rongÀïÕÒµ½£¬Ë®Æ¿¿ÉÒÔÍ¨¹ı²Î¼ÓËÎ½ğ¡¢´³¹Ø¡¢·çÁê¶È¡¢Ñ×µÛ¡¢»Æ½ğBoss¡¢É±ÊÖBoss¡£ÓĞÉ«ÎïÆ·ÔÚÆæÕä¸ó£¬´óÏÀÕÒÂúÕâËÄ¼şÎïÆ·£¬¿ÉÒÔµ½ÎÒµÄµØ·½ºÏ³É¸÷ÖÖÓĞÉ«»¨·ïÀ´»»È¡·á¸»µÄ½±Æ·¡£",0},
 	tbCondition = 
 	{
 	},

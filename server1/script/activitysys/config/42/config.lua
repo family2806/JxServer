@@ -28,7 +28,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	{
 		{"PlayerFunLib:CheckTotalLevel",	{150,"default",">="} },
 		{"PlayerFunLib:CheckItemInBag",	{{tbProp={6,1,3188,1,0,0},},1,"Ng­¬i kh«ng cã L­u Linh §¬n"} },
-		{"ThisActivity:CheckTaskDaily",	{TSK_HANDIN_LIULINGDAN,3,"H«m nay ng­¬i kh«ng thÓ tiÕp tôc giao nép L­u Linh §¬n n÷a","<"} },
+		{"ThisActivity:CheckTaskDaily",	{TSK_HANDIN_LIULINGDAN,3,"½ñÌìÄã²»ÄÜ¼ÌÐøGiao nép L­u Linh §¬nÁË","<"} },
 	},
 	tbActition = 
 	{

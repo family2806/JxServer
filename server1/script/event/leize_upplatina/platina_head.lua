@@ -72,7 +72,7 @@ TB_GOLD2PLANITA_ITEM_SP1	= {
 tbUpGradeProcess = {
 [1] = {
 				tbUpItemList = TB_GOLD2PLANITA_ITEM,
-				szErrorMsg = "<dec><npc>Ngo¹i trõ <color=yellow>trang bŞ hoµng kim<color>, chØ cã <color=yellow>L«i Tr¹ch Chïy<color> lµ thø nguyªn liÖu ta cÇn, xin mêi h·y lÊy nh÷ng thø nguyªn liÖu kh¸c ra!",
+				szErrorMsg = "<dec><npc>³ı<color=yellow>»Æ½ğ×°±¸Ö®Íâ<color>, Ö»ÓĞ<color=yellow>L«i Tr¹ch Chïy<color>ÊÇÎÒÃÇĞèÒªµÄÎïÆ·£¬Çë°Ñ±ğµÄÎïÆ·´ø×ß!",
 				nItemQuality = 1,
 				szGetEquipIDFunc = "GetGlodEqIndex",
 				szContinueFunc = "want_upgoldeq",
@@ -86,7 +86,7 @@ tbUpGradeProcess = {
 				szDoProcessFunc = "UpgradePlatinaItem"},
 [4] = {
 				tbUpItemList = TB_GOLD2PLANITA_ITEM_SP1,
-				szErrorMsg = "<dec><npc>Ngo¹i trõ <color=yellow>trang bŞ hoµng kim<color>, chØ cã <color=yellow>L«i Tr¹ch Chïy<color> lµ thø nguyªn liÖu ta cÇn, xin mêi h·y lÊy nh÷ng thø nguyªn liÖu kh¸c ra!",
+				szErrorMsg = "<dec><npc>³ı<color=yellow>»Æ½ğ×°±¸Ö®Íâ<color>, Ö»ÓĞ<color=yellow>L«i Tr¹ch Chïy<color>ÊÇÎÒÃÇĞèÒªµÄÎïÆ·£¬Çë°Ñ±ğµÄÎïÆ·´ø×ß!",
 				nItemQuality = 1,
 				szGetEquipIDFunc = "GetGlodEqIndex",
 				szContinueFunc = "want_upgoldeq",

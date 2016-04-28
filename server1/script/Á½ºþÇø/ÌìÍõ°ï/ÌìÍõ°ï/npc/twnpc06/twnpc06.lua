@@ -23,7 +23,7 @@ function main()
 				AddEventItem(149)
 				Msg2Player("NhËn ®­îc 3 qu¶ trøng ")
 				SetTask(14, 7)
-				AddNote("Mang Liªn Tö giao cho Hµ tÈu, nhËn ®­îc 3 qu¶ trøng ")
+				AddNote("°ÑÁ«×Ó½»¸øºÉÉ©£¬NhËn ®­îc 3 qu¶ trøng ")
 			else
 				Talk(1,"","H·t sen cã b¸n t¹i tiÖm t¹p ho¸ ë Ba L¨ng huyÖn")
 			end

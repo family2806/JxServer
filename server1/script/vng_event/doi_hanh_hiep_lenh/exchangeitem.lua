@@ -19,7 +19,7 @@ function tbVng_Exchange_HHL:AddDialog(tbDialog)
 	if self:IsActive() ~= 1 then
 		return
 	end
---	tbDialog:AddOptEntry("PhucHoiHanhHiepLenh", tbVng_Exchange_HHL.Recover_Item_UI, {tbVng_Exchange_HHL})
+--	tbDialog:AddOptEntry("PhÙc hÂi Hµnh Hi÷p L÷nh", tbVng_Exchange_HHL.Recover_Item_UI, {tbVng_Exchange_HHL})
 end
 
 function OnCancel() end
@@ -50,13 +50,13 @@ function Do_Recover(nCount)
 			Talk(1, "", "Thao t∏c th t bπi, m t mÈt sË nguy™n li÷u.")
 			return
 		else
-			tbLog:PlayerActionLog("PhucHoiHanhHiepLenh", "XoaHanhHiepLenhCu", "SoLuong: "..nRemovedCount)
+			tbLog:PlayerActionLog("PhÙc hÂi Hµnh Hi÷p L÷nh", "XoaHanhHiepLenhCu", "SoLuong: "..nRemovedCount)
 		end		
 	end
 	local tbAward = {szName = "Hµnh Hi÷p L÷nh", tbProp = {6,1,2566,1,0,0}, nCount = nItemCount}
-	tbAwardTemplet:Give(tbAward, 1, {"PhucHoiHanhHiepLenh", "NhanHanhHiepLenhMoi"})
+	tbAwardTemplet:Give(tbAward, 1, {"PhÙc hÂi Hµnh Hi÷p L÷nh", "¡Ï»°–¬Hµnh Hi÷p L÷nh"})
 end
 
 function tbVng_Exchange_HHL:Recover_Item_UI()
-	GiveItemUI("PhÙc hÂi Hµnh Hi÷p L÷nh", "Xin b· vµo Hµnh Hi÷p L÷nh", "Do_Recover", "OnCancel")
+	GiveItemUI("Hµnh Hi÷p L÷nhΩ±¿¯", "«Î∑≈»ÎHµnh Hi÷p L÷nh", "Do_Recover", "OnCancel")
 end

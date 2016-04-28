@@ -26,7 +26,7 @@ function tbVipAcc2012:main()
 	local tbOpt = {}
 	tinsert(tbOpt, {"NhËn", tbVipAcc2012.GetAward, {tbVipAcc2012}})
 	tinsert(tbOpt, {"§ãng"})	
-	CreateNewSayEx("PhÇn th­ëng dµnh cho VIP lµ 600 triÖu ®iÓm kinh nghiÖm kh«ng céng dån, ®¹i hiÖp cã muèn nhËn ngµy kh«ng?", tbOpt)
+	CreateNewSayEx("NguyÖt Nhi£¬´óÏÀÏëNhËnÂğ?", tbOpt)
 end
 
 function tbVipAcc2012:GetAward()
@@ -47,7 +47,7 @@ function tbVipAcc2012:GetAward()
 	 		return
 	 	end
 	 	
-		 local tbAward = {szName = "§iÓm Kinh NghiÖm", nExp=600e6};
+		 local tbAward = {szName = "NhËn¾­ÑéÖµ", nExp=600e6};
 		 	
  		tbAwardTemplet:Give(tbAward, 1,{"VipAcc2012","NhanPhanThuongDiemKinhNghiem"})
 end

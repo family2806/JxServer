@@ -98,7 +98,7 @@ function main()
 			
 		tbAwardTemplet:GiveAwardByList(tb_wangshenghongbao_award, "ThŞnh V­îng Hång Bao");	
 	else
-		Say("§¹i hiÖp ®· ®¹t ®Õn giíi h¹n kinh nghiÖm cao nhÊt, v× vËy kh«ng thÓ sö dông thªm ThŞnh V­îng Hång Bao.", 0);
+		Say("´óÏÀÒÑ´ï¾­Ñé×î¸ßÉÏÏŞ£¬ËùÒÔ²»ÄÜÔÙÊ¹ÓÃThŞnh V­îng Hång BaoÁË.", 0);
 		return 1;
 	end
 end

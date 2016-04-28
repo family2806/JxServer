@@ -17,7 +17,7 @@ ITEM_DROPRATE_TABLE = {
 						{	{6,1,979,1,1,1,1},0.002, "B¨ng S­¬ng HiÖu gi¸c "	},
 						{	{6,1,985,1,1,1,1},0.005, "Cµn Kh«n Na Di phï "	},
 						{	{6,1,986,1,1,1,1},0.003, "Di H×nh Ho¸n ¶nh phï "	},
-						{	{6,1,988,1,1,1,1},0.005, "Kinh nghiÖm phï (cao cÊp) "	},
+						{	{6,1,988,1,1,1,1},0.005, "Kinh nghiÖm phï (¸ß¼¶) "	},
 						{	500,0.08},
 						{	1000,0.1},
 						{	3000,0.12},
@@ -63,7 +63,7 @@ function add_dropitem()
 		if (nSum >= nRandNum) then
 			if (type( ITEM_DROPRATE_TABLE[i][1] ) == "table") then
 				AddItem(ITEM_DROPRATE_TABLE[i][1][1], ITEM_DROPRATE_TABLE[i][1][2], ITEM_DROPRATE_TABLE[i][1][3], ITEM_DROPRATE_TABLE[i][1][4], ITEM_DROPRATE_TABLE[i][1][5], ITEM_DROPRATE_TABLE[i][1][6], ITEM_DROPRATE_TABLE[i][1][7])
-				Msg2Player("B¹n ®­îc 1 c¸i<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3])
+				Msg2Player("Äã»ñµÃ1c¸i<color=0xB5FDD7>"..ITEM_DROPRATE_TABLE[i][3])
 			elseif (type( ITEM_DROPRATE_TABLE[i][1] ) == "number") then
 			    local nExp = ITEM_DROPRATE_TABLE[i][1] * get_exptimes();
 				AddOwnExp(nExp);

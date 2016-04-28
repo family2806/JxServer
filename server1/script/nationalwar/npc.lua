@@ -416,7 +416,7 @@ function nw_emperororder_congratulate_words(words)
 		NW_OpenCongratulation(words, 30)
 		NW_SetTask(NW_TASKNO_CONGRATULATION, GetCurServerTime())
 		AddGlobalCountNews(format("[ÆÕÌìÍ¬Çì] ½«ÔÚÊÀ½çÆµµÀ×ª²¥\"<color=red>%s<color>\" ×£ºØÌì×Ó¶¼½«µÃµ½·âÉÍ!", words), 10)
-		Say("ThÇn lÜnh chØ vµ sÏ ®i thu xÕp ngay lËp tøc.")
+		Say("ThÇn lÜnh chØ.½«Á¢¼´È¥ÕûÀí.")
 	end
 end
 
@@ -432,7 +432,7 @@ function nw_emperororder_absolve()
 	if (time <= NW_GetTask(NW_TASKNO_ABSOLVE) + SECONDS_ONEWEEK) then
 		Say("BÖ h¹ tõ bi, kh¾p thÕ gian ®Òu biÕt. Nh­ng lo¹i h×nh ngôc nµy kh«ng thÓ láng lÎo ®­îc")
 	else
-		Say("ThÇn lÜnh chØ, ®· x¸ ph¹m nh©n thiªn h¹")
+		Say("ThÇn lÜnh chØ.£¬ ÒÑÉâÃâÌìÏÂ·¸ÈË")
 		NW_SetTask(NW_TASKNO_ABSOLVE, time)
 		AddGlobalCountNews("[§¹i x¸ thiªn h¹] TÊt c¶ ph¹m nh©n nhÊt th¶y miÔn téi, ®Òu cã thÓ ®èi tho¹i víi lao ®Çu ®Ó xin vÒ nhµ.", 3)
 	end
@@ -545,7 +545,7 @@ function nw_emperororder_forbidtalk_input(name)
 	local currtime = GetCurServerTime()
 	NW_SetTask(NW_TASKNO_FORBIDCHATTIME, currtime)
 	AddGlobalCountNews(format("[ÌìÏÂÚ¯Êé]\"<color=red>%s<color>\"¼¤Å­Ìì×Ó£¬½ûÑÔ°ëĞ¡Ê±Ê¾Íş.", name), 3)
-	Say(format("ThÇn lÜnh chØ: CÊm nãi <color=red>%s<color> trong vßng nöa giê.", name))
+	Say(format("ThÇn lÜnh chØ.£º½ûÑÔ <color=red>%s<color> °ëĞ¡Ê±ÄÚ", name))
 end
 
 -- ÃñĞÄÊÇ¸Ë³Ó/ÆÀÒéµ±½ñÌì×Ó
@@ -606,7 +606,7 @@ function nw_comment_celebrate(count)
 		local item = GetGiveItemUnit(i);
 		local genre, detail, particular = GetItemProp(item)
 		if (genre ~= 6 or detail ~= 1 or particular ~= 197) then
-			Say("ChØ cã thÓ dïng th­ëng thiÖn lÖnh ®Ó t¸n d­¬ng Thiªn Tö")
+			Say("Ö»ÄÜÓÃÉÆÁî½±T¸n d­¬ng Thiªn Tö")
 			return
 		else
 			total_count = total_count + GetItemStackCount(item)
@@ -641,7 +641,7 @@ function nw_comment_criticize(count)
 		local item = GetGiveItemUnit(i);
 		local genre, detail, particular = GetItemProp(item)
 		if (genre ~= 6 or detail ~= 1 or particular ~= 198) then
-			Say("ChØ cã thÓ dïng ph¹t ¸c lÖnh tè c¸o Thiªn Tö")
+			Say("Ö»ÄÜÓÃ·£¶ñÁîTè c¸o Thiªn Tö")
 			return
 		else
 			total_count = total_count + GetItemStackCount(item)

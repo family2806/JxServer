@@ -50,7 +50,7 @@ function ThrowPlayer()
 		end
 	}
 	local pCompose = tbActivityCompose:new()
-	pCompose:_init(tbFormula, "§ao Th­¬ng KiÕm cña Thiªn Tr× MËt c¶nh ®æi lÊy Khinh C«ng.")
+	pCompose:_init(tbFormula, "ÓÃÌì³ØÃØ¾³µÄ§ao th­¬ng KiÕm »»È¡Çá¹¦.")
 	local nRetCode = pCompose:Compose(1)
 	if nRetCode == 1 then
 		--Bonus award - Modified By DinhHQ - 20120405

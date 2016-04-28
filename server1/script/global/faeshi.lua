@@ -45,7 +45,7 @@ function main()
 			aryszContent[nCityIndex + 2] = "<>"..arraycityindextoname[nCityIndex].."§· v« bang, kh«ng thÓ tiÕn hµnh/oncancel"
 		else
 			nNum = GetGlbValue(arraycitytoglobalvalue[nCityIndex])
-			aryszContent[nCityIndex + 2] = "<>Trõng ph¹t Bang héi"..strTongName.."chiÕm Thµnh"..arraycityindextoname[nCityIndex].."(ChiÕn c«ng:"..nNum..")"..aryCallBackFun[nCityIndex]
+			aryszContent[nCityIndex + 2] = "<>³Í·£°ï»á"..strTongName.."chiÕm Thµnh"..arraycityindextoname[nCityIndex].."(ChiÕn c«ng:"..nNum..")"..aryCallBackFun[nCityIndex]
 		end
 	end	
 	
@@ -55,13 +55,13 @@ end
 function onpunish()
 	--¸ù¾ÝµØÍ¼Ë÷Òý³Í·£
 	if (nGlobalCityIndex < 1) then
-		Say("<> kh«ng cã muèn trõng ph¹t Thµnh thÞ ", 0)
+		Say("<>Ã»ÓÐÒª³Í·£µÄ³ÇÊÐ", 0)
 		return
 	end
 
 	local strCityTongName = GetCityOwner(nGlobalCityIndex)
 	if (strCityTongName == nil or strCityTongName == "" ) then
-		Say("<> Thµnh thÞ <color=red>"..arraycityindextoname[nIndex].."<color> kh«ng ng­êi chiÕm lÜnh , kh«ng c¸ch nµo tiÕn hµnh trõng ph¹t ", 0)
+		Say("<>³ÇÊÐ<color=red>"..arraycityindextoname[nIndex].."<color> kh«ng ng­êi chiÕm lÜnh , kh«ng c¸ch nµo tiÕn hµnh trõng ph¹t ", 0)
 		return
 	end
 
@@ -74,16 +74,16 @@ end
 function onconfirm(nIndex)
 	local strCityTongName = GetCityOwner(nIndex)
 	if (strCityTongName == nil or strCityTongName == "" ) then
-		Say("<> Thµnh thÞ <color=red>"..arraycityindextoname[nIndex].."<color> kh«ng ng­êi chiÕm lÜnh , kh«ng c¸ch nµo tiÕn hµnh trõng ph¹t ", 0)
+		Say("<>³ÇÊÐ<color=red>"..arraycityindextoname[nIndex].."<color> kh«ng ng­êi chiÕm lÜnh , kh«ng c¸ch nµo tiÕn hµnh trõng ph¹t ", 0)
 		return
 	end
 
 	--¸øÈ«¾Ö±äÁ¿¸³Öµ
 	nGlobalCityIndex = nIndex	
 	strMsg={	
-		"<> ChiÕm lÜnh <color=red>"..arraycityindextoname[nIndex].."<color> Thµnh thÞ ®Ých bang héi lµ :<color=red>"..strCityTongName.."<color>, ng­¬i nhÊt ®Þnh ph¶i sö dông ph¹t ¸c lµm sao ? ",
-		"<> X¸c ®Þnh /onpunish",
-		"<> Ta suy nghÜ mét chót n÷a /oncancel"		
+		"<>Õ¼Áì<color=red>"..arraycityindextoname[nIndex].."<color> Thµnh thÞ ®Ých bang héi lµ :<color=red>"..strCityTongName.."<color>, ng­¬i nhÊt ®Þnh ph¶i sö dông ph¹t ¸c lµm sao ? ",
+		"<>È·¶¨/onpunish",
+		"<>ÎÒÔÙ¿¼ÂÇ¿¼ÂÇ/oncancel"		
 	};
 	
 	Say(strMsg[1], 2, strMsg[2], strMsg[3]);
@@ -134,7 +134,7 @@ function onchecknum()
 		if (strTongName == nil or strTongName == "") then
 			arr[nCityIndex] = "<><color=red>"..arraycityindextoname[nCityIndex].."<color> kh«ng ng­êi chiÕm lÜnh , chiÕn c«ng v× :<color=red>"..nNum.."<color>"
 		else
-			arr[nCityIndex] = "<> ChiÕm lÜnh <color=red>"..arraycityindextoname[nCityIndex].."<color> ®Ých bang héi lµ :<color=red>"..strTongName.."<color>, Thµnh thÞ chiÕn c«ng v× :<color=red>"..nNum.."<color>"
+			arr[nCityIndex] = "<>Õ¼Áì<color=red>"..arraycityindextoname[nCityIndex].."<color> ®Ých bang héi lµ :<color=red>"..strTongName.."<color>, Thµnh thÞ chiÕn c«ng v× :<color=red>"..nNum.."<color>"
 		end
 		if (nCityIndex == 1) then
 		    strInfo = arr[nCityIndex]
@@ -164,7 +164,7 @@ function onchecknum1()
 		if (strTongName == nil or strTongName == "") then
 			arr[nCityIndex] = "<><color=red>"..arraycityindextoname[nCityIndex].."<color> kh«ng ng­êi chiÕm lÜnh , Thµnh thÞ chiÕn c«ng v× :<color=red>"..nNum.."<color>"
 		else
-			arr[nCityIndex] = "<> ChiÕm lÜnh <color=red>"..arraycityindextoname[nCityIndex].."<color> ®Ých bang héi lµ :<color=red>"..strTongName.."<color>, Thµnh thÞ chiÕn c«ng v× :<color=red>"..nNum.."<color>"
+			arr[nCityIndex] = "<>Õ¼Áì<color=red>"..arraycityindextoname[nCityIndex].."<color> ®Ých bang héi lµ :<color=red>"..strTongName.."<color>, Thµnh thÞ chiÕn c«ng v× :<color=red>"..nNum.."<color>"
 		end
 		if (nCityIndex == 5) then
 		    strInfo = arr[nCityIndex]
@@ -181,7 +181,7 @@ end
 
 function onsubmitconfirm(nCount)
 	if (nCount < 1) then
-		Msg2Player("Ng­¬i kh«ng cã nãi ®ãng ph¹t ¸c lµm ")
+		Msg2Player("ÄãÃ»ÓÐ§Ò giao ph¹t ¸c lµm ")
 		return
 	end
 	
@@ -193,7 +193,7 @@ function onsubmitconfirm(nCount)
 		if (ItemGenre ~= AEXP_PUNISHMEDIAL_NGENTYPE or
 			DetailType ~= AEXP_PUNISHMEDIAL_DETAILTYPE or
 			ParticularType ~= AEXP_PUNISHMEDIAL_PARTYPE) then
-				Msg2Player("<> ng­¬i thËt gièng nh­ cã ®å kh«ng ph¶i lµ ph¹t ¸c lµm yªu ")
+				Msg2Player("<>ÄãºÃÏñÓÐ¶«Î÷²»ÊÇ·£¶ñÁîÓ´£¡")
 				return 0			
 		end
 	end
@@ -225,5 +225,5 @@ function onsubmitconfirm(nCount)
 		savevalue()
 	end	
 	
-	Say("<> Thµnh thÞ <color=red>"..arraycityindextoname[nGlobalCityIndex].."<color>, chiÕm lÜnh bang héi :<color=red>"..strCityTongName.."<color>, ng­¬i ®Ò giao liÔu "..nTotalNum.." c¸ ph¹t ¸c lµm ®èi víi nã trõng ph¹t , tr­íc m¾t nªn Thµnh thÞ chiÕn c«ng v× :<color=red>"..nSpareNum.."<color>",0)
+	Say("<>³ÇÊÐ<color=red>"..arraycityindextoname[nGlobalCityIndex].."<color>, chiÕm lÜnh bang héi :<color=red>"..strCityTongName.."<color>, ng­¬i ®Ò giao liÔu "..nTotalNum.." c¸ ph¹t ¸c lµm ®èi víi nã trõng ph¹t , tr­íc m¾t nªn Thµnh thÞ chiÕn c«ng v× :<color=red>"..nSpareNum.."<color>",0)
 end

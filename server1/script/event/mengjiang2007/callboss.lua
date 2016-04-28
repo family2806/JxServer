@@ -99,7 +99,7 @@ function CallBoss( lingpai  )
 		for i=1,5 do
 			summonBoss(i);
 		end
-		Msg2SubWorld(format("Ng­êi ch¬i %s t¹i %s(%d,%d) ®· sö dông %s, lµm cho Kim Quang T­íng Qu©n xuÊt hiÖn.",GetName(),SubWorldName(SubWorld),floor(X/8),floor((Y+5)/16),"Ngäc Bµi"));
+		Msg2SubWorld(format("Íæ¼Ò %s ÔÚ %s(%d,%d) ÒÑ¾­Ê¹ÓÃ£¬Ê¹Kim Quang T­íng Qu©n³öÏÖ.",GetName(),SubWorldName(SubWorld),floor(X/8),floor((Y+5)/16),"Ngäc Bµi"));
 		WriteLog(format("[TriÖu håi m·nh t­íng]\t%s\tAccount:%s\tName:%s\t%s sö dông thµnh c«ng",
 			GetLocalDate("%Y-%m-%d %H:%M:%S"),
 			GetAccount(),

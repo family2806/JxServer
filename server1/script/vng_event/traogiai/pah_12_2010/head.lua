@@ -38,7 +38,7 @@ end
 
 function tbPAH122010_Head:getAward()
 	if (tbExtPointLib:GetBitValue(self.nExtPointID, self.nBitPos) == 1) then
-		Talk(1, "", "Ch¼ng ph¶i ®¹i hiÖp ®·  nhËn th­ëng råi sao? §õng tham lam qu¸.")
+		Talk(1, "", "´óÏÀ²»ÊÇNhËn½±ÁËÂğ?²»ÒªÌ«Ì°ĞÄÁË¡£")
 		return
 	end
 	local strAccount = GetAccount()

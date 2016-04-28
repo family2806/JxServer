@@ -25,7 +25,7 @@ function PasswordAccepted(nValue)
 end
 
 function DisposeItem()
-	GiveItemUI("Hñy vËt phÈm", "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm!", "DisposeConfirm", "onCancel", 1);
+	GiveItemUI("Hñy vËt phÈm", "´óÏÀHñy vËt phÈmÒªĞ¡ĞÄ!", "DisposeConfirm", "onCancel", 1);
 end
 
 function DisposeMoney()
@@ -56,7 +56,7 @@ function DisposeConfirm(nCount)
 		RemoveItemByIndex(nItemIndex)
 		WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy Item "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
 	end--for
-	Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
+	Msg2Player("Hñy vËt phÈm²Ù×÷³É¹¦")
 	Talk(1, "", "Thao t¸c thµnh c«ng, kiÓm tra l¹i!");	
 end
 

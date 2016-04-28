@@ -199,7 +199,7 @@ function sf_winbouns(wincamp)
 			bt_addtotalpoint(bonuscff1)
 			Msg2Player("B¹n nhËn ®­îc "..bonuscff1.." ®iÓm tİch lòy")
 			--Storm Ê¤·½½áÊøÌôÕ½£¬²¢¼ÇÂ¼»ñÊ¤Õß
-			Say("Chóc mõng phe b¹n giµnh th¾ng lîi! Danh väng cña b¹n t¨ng thªm <color=yellow>"..repute.."<color>! Vµ nhËn thªm <color=yellow>"..bonuscff1.."<color> ®iÓm tİch lòy", 1, "KÕt thóc ®èi tho¹i/#storm_end(1)")
+			Say("¹§Ï²¹ó·½È¡µÃÊ¤Àû! Danh väng cña b¹n t¨ng thªm   <color=yellow>"..repute.."<color>! Vµ nhËn thªm <color=yellow>"..bonuscff1.."<color> ®iÓm tİch lòy", 1, "KÕt thóc ®èi tho¹i/#storm_end(1)")
 			tb_storm_winner[PlayerIndex] = 1
 
 			
@@ -322,7 +322,7 @@ function GameOver()
 			RecordBTCount_Win(1)		--ÔÚÃ¿¸öÈËÈÎÎñ±äÁ¿Àï¼ÇÂ¼Ëü´Ë´ÎËÎ½ğÕ½³¡Ê¤¸º×´¿ö
 			sf_winbouns(1)
 		elseif (bonus_s < bonus_j) then
-			resultstr = resultstr.."ChiÕn sù ®· kÕt thóc, tû lÖ ®iÓm tİch lòy lµ "..bonus_s..":"..bonus_j..", phe Kim giµnh ®­îc th¾ng lîi!"
+			resultstr = resultstr.."ChiÕn sù ®· kÕt thóc, tû lÖ ®iÓm tİch lòy lµ  "..bonus_s..":"..bonus_j..", phe Kim giµnh ®­îc th¾ng lîi!"
 			Msg2MSAll(MISSIONID, resultstr)
 			WriteLog(resultstr)
 			BT_ReportResult(2)

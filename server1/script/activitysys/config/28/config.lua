@@ -27,7 +27,7 @@ tbConfig[2] = --Ò»¸öÏ¸½Ú
 	szName = "Giíi thiÖu ho¹t ®éng TiÕt Trång C©y",
 	nStartDate = nil,
 	nEndDate  = nil,
-	tbMessageParam = {"<npc>Mïa xu©n ®· ®Õn, ta muèn trång thªm hoa mµu, vµo kho¶ng thêi gian 0h/28/03/2011 ®Õn 24h/04/04/2011, tiÓu hiÖp ng­¬i cã thÓ ®Õn chç cña ta ®©y ®Ó lÊy Thïng Gç sau ®ã ®Õn bªn §Çm N­íc t¹i Chu Tiªn TrÊn (206,189), Long TuyÒn Th«n (223,189) hoÆc Th¹ch Cæ TrÊn (217,184) ®Ó gióp ta lÊy n­íc, mçi ngµy mçi ng­êi chØ cã thÓ lÊy n­íc nhiÒu nhÊt 5 lÇn, tiÓu hiÖp ng­¬i h•y lÊy n­íc ®Çy thïng cho ta, ta sÏ cho ng­¬i phÇn th­ëng thËt hËu hÜnh; nÕu nh­ nhµ ng­¬i cã thÓ ®em Long ¢m Th¸nh Thñy l¹i ®©y cho ta, ta sÏ tÆng ng­¬i phÇn th­ëng phong phó, khi ta nhËn ®­îc Long ¢m Th¸nh Thñy ®¹t ®Õn sè l­îng 500 lÇn, th× ë ngoµi th«n cña chóng ta sÏ xuÊt hiÖn 1 Méc Kh¸ch rÊt dòng m·nh, nÕu trong vßng 15 phót nhµ ng­¬i cã thÓ ®¸nh b¹i h¾n, th× sÏ nhËn ®­îc phÇn th­ëng ®¸ng gi¸, nÕu trong vßng 15 phót ng­¬i kh«ng ®¸nh b¹i ®­îc h¾n th× Méc Kh¸ch sÏ rêi khái ®ã, Long ¢m Th¸nh Thñy ng­¬i cã thÓ ®i t×m ë trong Kú Tr©n C¸c.",0},
+	tbMessageParam = {"<npc>´ºÌìµ½ÁË£¬ÎÒÏë¶àÖÖ»¨£¬´Ó2011Äê03ÔÂ28ÈÕ0Ê±µ½2011Äê04ÔÂ04ÈÕ24Ê±£¬Ğ¡ÏÀ¿ÉÒÔµ½ÎÒÕâNhËn Thïng Gç£¬È»ºóµ½ÖìÏÉÕò(206,189), ÁúÈªÕò (223,189)»òÕßÊ¯¹ÄÕò (217,184)µÄË®Ì¶°ïÎÒÌáË®£¬Ã¿ÌìÃ¿ÈË×î¶àÖ»ÄÜÄÃ5´Î£¬Ğ¡ÏÀÒª°ÑË®ÌáÂú¸øÎÒ£¬ÎÒ½«¸øÄã·áºñµÄ½±Àø£»Èç¹ûÄã¿ÉÒÔ°ÑLong ¢m Th¸nh Thñy´ø¸øÎÒ£¬ÎÒ½«ËÍÄã·á¸»½±Æ·£¬µ±ÎÒ»ñµÃLong ¢m Th¸nh ThñyÊıÁ¿´ïµ½500´Î£¬Èç¹ûÔÚ15·ÖÖÓÄÚÄã²»ÄÜ´ò°ÜËû£¬ÄÇÄ¾¿Í½«Àë¿ªÄÇÀï£¬Long ¢m Th¸nh Thñy¿ÉÒÔÔÚÆæÕä¸óÕÒµ½¡£.",0},
 	tbCondition = 
 	{
 	},
@@ -46,7 +46,7 @@ tbConfig[3] = --Ò»¸öÏ¸½Ú
 	tbCondition = 
 	{
 		{"ThisActivity:CheckActivityTime",	{nil} },
-		{"PlayerFunLib:CheckTotalLevel",	{nActivityPlayerLevelLimit,"§¼ng cÊp cña ng­¬i kh«ng ®ñ, kh«ng thÓ nhËn Thïng Gç",">="} },
+		{"PlayerFunLib:CheckTotalLevel",	{nActivityPlayerLevelLimit,"ÄãµÄµÈ¼¶²»¹»£¬²»ÄÜNhËn Thïng Gç",">="} },
 		{"PlayerFunLib:CheckFreeBagCell",	{1,"Hµnh trang kh«ng ®ñ"} },
 		{"ThisActivity:CheckMuTong",	{nil} },
 		{"ThisActivity:CheckTaskDaily",	{nTskIdx_DaylyGiveWater,nMaxDaylyGiveWaterCount,"H«m nay ng­¬i ®· vÊt v¶ l¾m råi, ngµy mai l¹i ®Õn nhĞ","<"} },

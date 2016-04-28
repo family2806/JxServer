@@ -35,8 +35,8 @@ function main(sel)
 	elseif (UTask_tr > 60*256+20) then
 		Talk(1,"","Xøng ®¸ng lµ b¹n tèt! §­îc! Ta nhËn ng­¬i lµ h¶o huynh ®Ö!")
 	else
-		Talk(1,"","ÆòØ¤£º´óÏÀ£¬ÓĞ¾ÆÂğ£¿ÇóÄãÉÍÎÒÒ»¿Ú¾ÆºÈ°É£¡ÎÒ¿ÉÒÔÃ»·¹³Ô£¬¿É²»ÄÜÃ»¾ÆºÈ°¡¡£")
---		Talk(1,"","ÆòØ¤£º´óÏÀ£¬ÓĞ¾ÆÂğ£¿ÇóÄãÉÍÎÒÒ»¿Ú¾ÆºÈ°É£¡ÎÒ¿ÉÒÔÃ»·¹³Ô£¬¿É²»ÄÜÃ»¾ÆºÈ°¡¡£")
+		Talk(1,"","VŞ thiÕu hiÖp nµy, h·y ph¸t huy tinh thÇn hiÖp nghÜa v« t­ ®i! ThËt ®¸ng th­¬ng cho KhiÕu hãa tö ta! Cho ta xin m­êi mÊy v¹n l­îng ®i!")
+--		Talk(1,"","VŞ thiÕu hiÖp nµy, h·y ph¸t huy tinh thÇn hiÖp nghÜa v« t­ ®i! ThËt ®¸ng th­¬ng cho KhiÕu hãa tö ta! Cho ta xin m­êi mÊy v¹n l­îng ®i!")
 	end
 end;
 

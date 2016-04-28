@@ -101,12 +101,12 @@ function main()
 	
 	-- ÔÚ global\systemconfig.lua ÖÐÅäÖÃÆæÕä¸ó¿ª¹Ø
 	if SYSCFG_SHOP_OPEN ~= 1 then
-		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më<color>")
+		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më ! <color>")
 		return 0
 	end
 
 	if GetTripMode() == TRIP_MODE_SERVER then
-		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më<color>")
+		Msg2Player("<color=yellow>Kú Tr©n C¸c ch­a më ! <color>")
 		return 0
 	end
 	local nMapID, _, _ = GetWorldPos()

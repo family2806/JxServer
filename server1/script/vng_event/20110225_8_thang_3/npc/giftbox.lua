@@ -50,7 +50,7 @@ function tbVNGWD2011_GiftBox:UseItem()
 			{szName="H¶i long ch©u",tbProp={6,1,2115,1,0,0},nCount=1,nRate=7},
 			{szName="Long HuyÕt Hoµn",tbProp={6,1,2117,1,0,0},nCount=1,nRate=7},
 			{szName="B¹ch C©u hoµn",tbProp={6,1,74,1,0,0},nCount=1,nRate=5},
-			{szName="B¹ch C©u Hoµn ®Æc biÖt",tbProp={6,1,1157,1,0,0},nCount=1,nRate=3},
+			{szName="ÌØÐ§B¹ch C©u hoµn",tbProp={6,1,1157,1,0,0},nCount=1,nRate=3},
 			{szName="NhÊt Kû Cµn Kh«n Phï",tbProp={6,1,2126,1,0,0},nCount=1,nRate=0.2,nExpiredTime=43200},
 			{szName="Hçn Nguyªn Linh Lé",tbProp={6,1,2312,1,0,0},nCount=1,nRate=4},
 		}

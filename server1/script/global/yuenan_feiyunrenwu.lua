@@ -192,13 +192,13 @@ v_fy_90_tab_weapon = {
 	["cuiyan"] = {"§¹i Phong §ao", "Th«n NhËt Tr·m"},
 	["emei"] = {"HuyÒn ThiÕt KiÕm (Nga Mi kiÕm)", "HuyÒn ThiÕt KiÕm (Nga Mi khİ)"},
 	["tangmen"] = 	 {"B¸ V­¬ngTiªu", "To¸i NguyÖt §ao", "Khæng T­íc Linh"},
-	["wudu"] = {"§¹i Phong §ao (Ngò §éc ch­ëng)", "§¹i Phong §ao (Ngò §éc ®ao)"},
+	["wudu"] = {"§¹i Phong §ao(Îå¶¾ÕÆ)", "§¹i Phong §ao(Îå¶¾µ¶)"},
 	["tianwang"] = {"Ph¸ Thiªn Kİch", "Ph¸ Thiªn chïy", "§¹i Phong §ao"},
 	["shaolin"] = {"§¹i Phong §ao", "Kim C« Bæng"},
 	["wudang"] = {"HuyÒn ThiÕt KiÕm (Vâ §ang kiÕm)", "HuyÒn ThiÕt KiÕm (Vâ §ang khİ)"},
 	["kunlun"] = {"§¹i Phong §ao", "HuyÒn ThiÕt KiÕm"},
-	["gaibang"] = 	 {"Kim C« Bæng (C¸i bang ch­ëng)", "Kim C« bæng (C¸i Bang c«n)"},
-	["tianren"] = {"Ph¸ Thiªn Kİch (Thiªn NhÉn kİch)", "Ph¸ Thiªn Kİch (Thiªn NhÉn ch­ëng)"}
+	["gaibang"] = 	 {"Kim C« Bæng(Ø¤°ïÕÆ)", "Kim C« bæng (C¸i Bang c«n)"},
+	["tianren"] = {"Ph¸ Thiªn Kİch(ÌìÈÌêª)", "Ph¸ Thiªn Kİch(ÌìÈÌÕÆ)"}
 };
 
 function v_fy_90_next()
@@ -263,7 +263,7 @@ function v_fy_90_weapon(player_Faction, i)
 	elseif (player_Faction == "gaibang") then
 		str = "B¹n nhËn ®­îc <color=yellow>Kim C« Bæng<color>.";
 	elseif (player_Faction == "wudu") then
-		str = "B¹n nhËn ®­îc <color=yellow>§¸i Phong §ao<color>.";
+		str = "B¹n nhËn ®­îc <color=yellow>§¹i Phong §ao<color>.";
 	elseif (player_Faction == "tianren") then
 		str = "B¹n nhËn ®­îc <color=yellow>Ph¸ Thiªn Kİch<color>.";
 	end;
@@ -288,7 +288,7 @@ function v_fy_100_next()
 	-- ¼ÓÒ»Æ¥ÉñÂí
 	v_fy_tkvalueadd(V_FY_TK_GETSIGN, 100);
 	AddItem(0, 10, 8, 1, 0, 0, 0);
-	Msg2Player("B¹n nhËn ®­îc <color=yellow>Phi V©n ThÇn M·<color>");
+	Msg2Player("B¹n nhËn ®­îc <color=yellow>·ÉÔÆÌìÂícolor>");
 end;
 
 

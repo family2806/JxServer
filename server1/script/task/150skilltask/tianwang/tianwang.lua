@@ -74,7 +74,7 @@ tbConfig[1] = {
 tbConfig[2] = {
 	m_nCurStepId = 1,
 	tbMessage = {
-		{"DialogWithNpc", {"Di÷p Hµnh Ki÷m Di÷p Hµnh Ki÷m"}},
+		{"DialogWithNpc", {"Di÷p Hµnh Ki÷m Di÷p Hµnh Ki÷m Di÷p Hµnh Ki÷m Di÷p Hµnh Ki÷m"}},
 	},
 	tbCondition = {
 		{"ThisTask:CheckMissionCondition", {}},
@@ -105,7 +105,7 @@ tbConfig[4] = {
 	},
 	tbAction = {
 		{"GetMissionItem", {{{tbProp = {6,1,2918,1,0,0,}, nBindState = -2,},}}},
-		{"ThisTask:Talk", {"ß∏nh bπi Hoµn Nhan Kh∂ H˚"}},
+		{"ThisTask:Talk", {"¥Ú∞‹Hoµn Nhan Kh∂ H˚"}},
 		{"GotoNextMessageStep", {1, 2885}},
 	},
 }

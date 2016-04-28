@@ -26,7 +26,7 @@ lingpai_pay={5000,10000,20000,30000,1000000};
 lingpai_name={"Méc Bµi","§ång Bµi","Ng©n Bµi","Kim Bµi","Ngäc Bµi"};
 function lingpaizhizao_do(lingpai_level)
 	if( IsCharged() == 0) then --³äÖµ
-		Say("ChØ cã ng­êi ch¬i cÊp 90 trë lªn (bao gåm cÊp 90) ®· n¹p thÎ míi cã thÓ tham gia chÕ t¹o lÖnh bµi.",0);
+		Say("Ö»ÓĞ90¼¶ÒÔÉÏ£¨º¬90¼¶£©µÄ³äÖµÍæ¼Ò²Å¿ÉÒÔ²Î¼ÓÖÆÔìKim Bµi.",0);
 		return 
 	end
 	if( GetLevel() <90) then --µÈ¼¶
@@ -65,7 +65,7 @@ function lingpaizhizao_do(lingpai_level)
 end
 
 function lingbaizhizao_content()
-	CreateTaskSay({"<dec><npc><enter>§Ó chÕ t¹o Méc Bµi cÇn cã 5 Vâ L©m MËt Th­ vµ 5000 l­îng, nÕu chÕ t¹o thÊt b¹i sÏ tæn thÊt 4 Vâ L©m MËt Th­ vµ 5000 l­îng.<enter><enter>§Ó chÕ t¹o §ång Bµi cÇn cã 5 Méc Bµi vµ 1 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 Méc Bµi vµ 1 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Ng©n Bµi cÇn cã 5 §ång Bµi vµ 2 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 §ång Bµi vµ 2 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Kim Bµi cÇn cã 5 Ng©n Bµi vµ 3 v¹n l­îng, nÕu chÕ t¹o thÊt b¹i sÏ mÊt 4 Ng©n Bµi vµ 3 v¹n l­îng.<enter><enter>§Ó chÕ t¹o Ngäc Bµi cÇn cã 5 Kim Bµi vµ 100 v¹n l­îng. ChÕ t¹o Ngäc Bµi cã x¸c suÊt thµnh c«ng lµ 100%.",
+	CreateTaskSay({"<dec><npc><enter>ÖÆÔìMéc BµiĞèÒª5·İÎäÁÖÃÜ¼şºÍ5000Á½£¬Èç¹ûÖÆÔìÊ§°Ü½«ËğºÄ4·İÎäÁÖÃÜ¼şºÍ5000Á½.<enter><enter>ÖÆÔì§ång BµiÒª5¸öMéc BµiºÍ1ÍòÁ½£¬Èç¹ûÖÆÔìÊ§°Ü½«ËğÊ§4¸öMéc BµiºÍ1ÍòÁ½.<enter><enter>ÖÆÔìNg©n BµiÒª5¸ö§ång BµiºÍ2ÍòÁ½£¬Èç¹ûÖÆÔìÊ§°Ü½«»áËğÊ§4¸ö§ång BµiºÍ2ÍòÁ½.<enter><enter>ÖÆÔìKim BµiÒª5¸öNg©n BµiºÍ3ÍòÁ½£¬Èç¹ûÊ§°ÜµÄ»°»áËğÊ§4¸öNg©n BµiºÍ3ÍòÁ½.<enter><enter>ÖÆÔìNgäc BµiÒª5¸öKim BµiºÍ100ÍòÁ½. ÖÆÔìNgäc BµiµÄ³É¹¦ÂÊÊÇ100%.",
 		"Trë l¹i/main",
 		"BiÕt råi/OnCancel"
 		});

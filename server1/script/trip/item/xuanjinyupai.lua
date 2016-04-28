@@ -24,8 +24,8 @@ function dialog_menu()
 	local tbOpt =
 	{
 		{"Liªn server", across_server},
-		{"KiÓm tra ng©n l­îng server liªn kÕt", show_across_server_money},
-		{"§iÓm cèng hiÕn server liªn kÕt", tbTripBattlePoint2Exp.DialogMain, {tbTripBattlePoint2Exp}},
+		{"¼ì²éLiªn serverÒøÁ½", show_across_server_money},
+		{"Liªn server¹±Ï×¶È", tbTripBattlePoint2Exp.DialogMain, {tbTripBattlePoint2Exp}},
 		{"KÕt thóc ®èi tho¹i"},
 	}
 	CreateNewSayEx("HuyÒn Kim Ngäc Bµi", tbOpt)
@@ -49,13 +49,13 @@ function show_across_server_money()
 		{"Trë vÒ", dialog_menu},
 		{"KÕt thóc ®èi tho¹i"},
 	}
-	local szTitle = format("<color=yellow>%s<color>Ng­¬i cã <color=yellow>%d<color> ng©n l­îng server liªn kÕt, <color=yellow> sè ng©n l­îng nµy lµ ng­¬i cã thÓ ®em tõ server nguån ®Õn server c«ng céng, hoµn toµn kh«ng ph¶i sè ng©n l­îng cña server c«ng céng. Ng©n l­îng server c«ng céng ng­¬i cã thÓ ®İch th©n ®Õn server c«ng céng ®Ó kiÓm tra. <color>", GetName(), GetTask(TSK_TRIP_MONEY))
+	local szTitle = format("<color=yellow>%s<color>ÄãÓĞ <color=yellow>%d<color> Liªn serverÒøÁ½, <color=yellow> ¸ÃÒøÁ½ÊıÊÇÄã¿ÉÒÔ´ÓÔ´Í··şÎñÆ÷´øµ½¹«¹²·şÎñÆ÷£¬Íê³ÉµÄ²»ÊÇ¹«¹²·şÎñÆ÷µÄÒøÁ½Êı¡£¹«¹²·şÎñÆ÷£¬Äã¿ÉÒÔÇ××Ôµ½¹«¹²·şÎñÆ÷¼ì²é¡£ <color>", GetName(), GetTask(TSK_TRIP_MONEY))
 	CreateNewSayEx(szTitle, tbOpt)
 end
 
 function sign_up(nServerId)
 	local _, nValue = GetRoleEquipValue()
-	local szTitle = format("TrŞ sè binh gi¸p hiÖn t¹i cña ng­¬i lµ %d, Ng­¬i muèn ®i Tèng Kim Liªn Server cÊp ®é nµo? <enter>", nValue)
+	local szTitle = format("ÄãÄ¿Ç°µÄ±ø¼×ÊıÖµÎª%d, ÄãÏëÈ¥ËÎ½ğLiªn serverµÄÄÄ¸ö¼¶±ğ? <enter>", nValue)
 	local tbOpt = {}
 	for i=1, getn(BattleManagerDef) do
 		local nMapId = BattleManagerDef[i][2]
@@ -99,4 +99,4 @@ function get_item()
 	tbAwardTemplet:Give({szName="HuyÒn Kim Ngäc Bµi",tbProp={6,1,3035,1,0,0},}, 1, {"TRIP", "get item"})
 end
 
---EventSys:GetType("AddNpcOption"):Reg("VÖ binh thµnh m«n","Ta muèn nhËn huyÒn Kim Ngäc Bµi", get_item)
+--EventSys:GetType("AddNpcOption"):Reg("VÖ binh thµnh m«n","ÎÒÏëÁìÈ¡HuyÒn Kim Ngäc Bµi", get_item)

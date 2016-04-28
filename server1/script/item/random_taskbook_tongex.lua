@@ -71,7 +71,7 @@ function main(nIndex)
 	
 	
 	if nTaskState>0 and nTaskState<3 then
-		Say("<color=green>LÖnh bµi nhiÖm vô<color>: HiÖn t¹i cã nhiÖm vô ngÉu nhiªn ch­a hoµn thµnh, vÉn muèn tiÕp nhËn nhiÖm vô míi sao?",
+		Say("<color=green>LÖnh bµi nhiÖm vô<color>:Äúµ±Ç°ÓĞ»¹Î´Íê³ÉµÄËæ»úÈÎÎñ£¬ÄãÈ·¶¨Òª½ÓÊÜĞÂµÄÈÎÎñÂğ£¿",
 			2,
 			"§óng vËy, ta muèn hñy bá nhiÖm vô tr­íc ®©y/#_confirmRandomBookTask("..nIndex..")",
 			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnTaskWait");

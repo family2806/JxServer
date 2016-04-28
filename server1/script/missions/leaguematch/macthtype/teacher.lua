@@ -74,19 +74,19 @@ WLLS_DATA = {
 	help_msg = {
 		[" giíi thiÖu vâ l©m t©n tó liªn cuéc so tµi "]	=
 			{
-				" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. nhµ ch¬i ®i gÆp <color=red> kiÖt xuÊt sø gi¶ <color> ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo kiÖt xuÊt ngay c¶ ®Êu héi tr­êng tiÕn hµnh liªn cuéc so tµi . ®éi tr­ëng ( s­ phã cÊp bËc cÇn 80- 119, ®éi viªn ( ®å ®Ö ) 50- 90",
-				" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. nhµ ch¬i ®i gÆp <color=red> kiÖt xuÊt sø gi¶ <color> ghi danh thµnh lËp chiÕn ®éi , sau ®ã tiÕn vµo kiÖt xuÊt ngay c¶ ®Êu héi tr­êng tiÕn hµnh liªn cuéc so tµi . ®éi tr­ëng ( s­ phã cÊp bËc cÇn 120 trë lªn , ®éi viªn ( ®å ®Ö ) 50- 90",
+				"    ±¾´ÎÁªÈüÎª <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. Íæ¼ÒÈ¥¼û <color=red>½Ü³öÊ¹Õß<color> ±¨Ãû³ÉÁ¢Õ½¶Ó, È»ºó½øÈë½Ü³öÁ¬¶·»á³¡½øĞĞÁªÈü. ¶Ó³¤(Ê¦¸µµÈ¼¶ĞèÒª 80- 119, ¶ÓÔ±(Í½µÜ) 50- 90",
+				"    ±¾´ÎÁªÈüÎª<color=red> thÇy trß hai ng­êi cuéc so tµi <color>. Íæ¼ÒÈ¥¼û <color=red>½Ü³öÊ¹Õß<color> ±¨Ãû³ÉÁ¢Õ½¶Ó, È»ºó½øÈë½Ü³öÁ¬¶·»á³¡½øĞĞÁªÈü. ¶Ó³¤(Ê¦¸µµÈ¼¶ĞèÒª120 ÒÔÉÏ, ¶ÓÔ±(Í½µÜ) 50- 90",
 			},
 		[" thµnh lËp liªn t¸i qu¸ tr×nh "]	= " nhµ ch¬i cã thÓ m×nh thµnh lËp chiÕn ®éi hoÆc lµ gia nhËp nh÷ng chiÕn ®éi kh¸c . ®éi tr­ëng cÇn lµ kh«ng xuÊt s­ ®å ®Ö . ®éi tr­ëng ®i gÆp <s> ghi danh liªn cuéc so tµi ",
 		[" rêi ®i liªn cuéc so tµi ®éi "]	= " ë <color=red> c¸ch nghØ ng¬i giai ®o¹n ­íc chõng <color>, nhµ ch¬i cã thÓ tù ®i tho¸t khái chiÕn ®éi . ë liªn cuéc so tµi giai ®o¹n , nÕu nh­ ng­¬i chiÕn ®éi <color=red> ch­a tíi liªn cuéc so tµi thêi ®iÓm <color>, nhµ ch¬i cã thÓ tù ®i rêi ®i chiÕn ®éi , nÕu nh­ ®· liªn cuéc so tµi liÔu th× kh«ng thÓ rêi ®i . <color=yellow> rêi ®i chiÕn ®éi sau , th× kh«ng thÓ dÉn ®øng hµng t­ëng <color>. nÕu nh­ ®éi tr­ëng rêi ®i ®éi , chiÕn ®éi còng sÏ bŞ gi¶i t¸n . <color=yellow> nÕu nh­ chiÕn ®éi kh«ng cã ai liÔu , liÒn tù ®éng gi¶i t¸n <color>. mçi lÇn ngay c¶ ®Êu kÕt thóc , c¸i nµo chiÕn ®éi kh«ng phï hîp lÇn sau liªn cuéc so tµi liÒn tù ®éng bŞ gi¶i t¸n ",
 	},
 	
 	text_main = {	--officerÖ÷¶Ô»°£¨Ä©Î²²îÒì²¿·Ö£©
-		" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
-		" lÇn nµy liªn cuéc so tµi v× <color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
+		"±¾´ÎÁªÈüÎª<color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
+		"±¾´ÎÁªÈüÎª<color=red> thÇy trß hai ng­êi cuéc so tµi <color>. ",
 	},
 	
-	text_creat = " ®ang x©y lËp chiÕn ®éi tham gia thÇy trß hai ng­êi cuéc so tµi sau , ng­¬i cã thÓ <color=red> m×nh lµ ®éi tr­ëng <color>. nÕu nh­ cã s­ phã , sÏ ph¶i tõ <color=red> s­ phã lµm ®éi tr­ëng <color>.<enter>"
+	text_creat = "    ÔÚ½¨Á¢Õ½¶Ó²Î¼Ó thÇy trß hai ng­êi cuéc so tµi ºó£¬Äã¿ÉÒÔ<color=red>×Ô¼ºÊÇ¶Ó³¤<color>.Èç¹ûÓĞÊ¦¸µ£¬¾ÍÒªÓÉ<color=red> Ê¦¸µ×ö¶Ó³¤<color>.<enter>"
 		.." <color=red> nÕu nh­ ch­a tíi liªn cuéc so tµi thêi gian <color> cïng víi <color=red> kh«ng so qua bÊt kú mét cuéc <color>, ng­¬i cã thÓ rêi ®i chiÕn ®éi . nÕu nh­ s­ phã rêi ®i chiÕn ®éi , c¸i ®ã ®éi lËp tøc bŞ gi¶i t¸n . ng­¬i x¸c ®Şnh thµnh lËp chiÕn ®éi liÔu sao ?",
 	
 	--====Functions====
@@ -112,13 +112,13 @@ WLLS_DATA = {
 		end
 		local tb_option = {}
 		if (n_job == 1 and n_mytype == n_next) then
-			str = str.."<enter> ng­¬i cã thÓ chän <color=red> gia nhËp nh÷ng kh¸c ®éi <color> hoÆc lµ <color=red> rêi ®i liªn cuéc so tµi ®éi <color>.<enter><enter>"..
+			str = str.."<enter>  Äã¿ÉÒÔÑ¡<color=red> ¼ÓÈëÆäËû¶Ó<color> »òÕß <color=red> rêi ®i liªn cuéc so tµi ®éi <color>.<enter><enter>"..
 			" thµnh lËp chiÕn ®éi b­íc : ë <color=red> thêi gian nghØ ng¬i cïng liªn cuéc so tµi thêi gian <color>, còng cã thÓ thay v× h¾n nhµ ch¬i häp thµnh ®éi , <color=red> kh¸c ph¸i <color>, lùa chän cïng ®Ó cho cïng ®éi gia nhËp vèn ®éi . <enter>"..
-			" rêi ®i liªn cuéc so tµi : ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ ng­¬i kh«ng ph¶i lµ ®éi <color=red> kh«ng gia nhËp th­îng kú liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ ®· tham gia th× kh«ng thÓ rêi ®i . ®éi tr­ëng t­ c¸ch ®em bŞ chuyÓn giao cho nh÷ng ®éi viªn kh¸c <color=yellow> nÕu nh­ kh«ng cã thµnh viªn , chiÕn ®éi ®em bŞ gi¶i t¸n <color>."
+			"Àë¿ªÁªÈü: ÔÚ<color=red>ĞİÏ¢Ê±¼ä<color>,Äã¿ÉÒÔ rêi ®i liªn cuéc so tµi ®éi £¬ÔÚÁªÈüÊ±¼äÈç¹ûÄãµÄ²»ÊÇ¶Ó<color=red> Î´¼ÓÈëÉÏÆÚÁªÈü<color>, Äã¿ÉÒÔ rêi ®i liªn cuéc so tµi ®éi £¬Èç¹ûÒÑ²Î¼Ó¾Í²»ÄÜÀë¿ª¡£¶Ó³¤×Ê¸ñ½«±»×ª½»¸øÆäËû¶ÓÔ± <color=yellow>Èç¹ûÃ»ÓĞ³ÉÔ±£¬Õ½¶Ó½«±»½âÉ¢<color>."
 			tb_option[getn(tb_option)+1] = "Thªm thµnh viªn vµo ®éi/wlls_want2addmember"
 		else
 			str = str.."<enter> ng­¬i cã thÓ lùa chän rêi ®i ®éi .<enter><enter>"..
-			" c¸ch ®éi  ë <color=red> thêi gian nghØ ng¬i <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , ë liªn cuéc so tµi thêi gian nÕu nh­ m×nh ®İch liªn cuéc so tµi ®éi <color=red> kh«ng gia nhËp lÇn tr­íc liªn cuéc so tµi <color>, ng­¬i cã thÓ rêi ®i liªn cuéc so tµi ®éi , nÕu nh­ gia nhËp liªn cuéc so tµi th× kh«ng thÓ rêi ®i ."
+			"Àë¶Ó£ºÔÚ <color=red>ĞİÏ¢Ê±¼ä<color>, Äã¿ÉÒÔ rêi ®i liªn cuéc so tµi ®éi £¬ÔÚÁªÈüÊ±¼äÈç¹û×Ô¼ºµÄÁªÈü¶Ó<color=red>Î´¼ÓÈëÉÏ´ÎÁªÈü<color>, Äã¿ÉÒÔ rêi ®i liªn cuéc so tµi ®éi £¬Èç¹û¼ÓÈëÁªÈü¾Í²»ÄÜÀë¿ª."
 		end
 		tb_option[getn(tb_option)+1] = "Ta muèn rêi ®éi/wlls_want2leaveleague"
 		tb_option[getn(tb_option)+1] = "Xem t×nh h×nh thi ®Êu hiÖn t¹i/wlls_query_mylg"

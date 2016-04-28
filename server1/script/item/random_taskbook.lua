@@ -59,7 +59,7 @@ local nTaskState = 0;  -- µ±Ç°¾íÖáÈÎÎñµÄ×´Ì¬
 	end;
 	
 	if nTaskState>0 and nTaskState<3 then
-		Say("<color=green>MËt ®å nhiÖm vô<color>: HiÖn t¹i b¹n ch­a hoµn thµnh mËt ®å nhiÖm vô, b¹n x¸c ®Şnh lµm nhiÖm vô míi kh«ng?",
+		Say("<color=green>MËt ®å nhiÖm vô<color>:Äúµ±Ç°ÓĞ»¹Î´Íê³ÉµÄ¾íÖáÈÎÎñ£¬ÄãÈ·¶¨Òª½ÓÊÜĞÂµÄÈÎÎñÂğ£¿",
 			2,
 			"Ph¶i, ta muèn bá qua mËt ®å nhiÖm vô tr­íc ®ã/#_confirmRandomBookTask("..nIndex..")",
 			"Kh«ng ph¶i, ®îi mét l¸t ®·!/OnTaskExit");

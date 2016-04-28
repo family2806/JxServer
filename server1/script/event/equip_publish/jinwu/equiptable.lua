@@ -153,7 +153,7 @@ tbEquip_jinwu =
 		[19]={szName="Kim § ∏nh Huy’t Gi∏p",tbProp={0,2240,},nQuality=1,},
 		[20]={szName="Kim § LÙc HÓp ßπo Bµo",tbProp={0,2250,},nQuality=1,},
 		[21]={szName="Kim § Th∏i Hﬂa ßπo Bµo",tbProp={0,2260,},nQuality=1,},
-		[22]={szName="Kim § Nguy÷t ∂nh B∂o ßao",tbProp={0,2270,},nQuality=1,},
+		[22]={szName="Kim § Nguy÷t ∂nh ßπo Bµo",tbProp={0,2270,},nQuality=1,},
 		[23]={szName="Kim § T≠Íng V©n ßπo Bµo",tbProp={0,2280,},nQuality=1,},
 	},
 	[7] = 
@@ -179,7 +179,7 @@ tbEquip_jinwu =
 		[19]={szName="Kim § ∏nh Huy’t ßao",tbProp={0,2241,},nQuality=1,},
 		[20]={szName="Kim § LÙc HÓp Ki’m",tbProp={0,2251,},nQuality=1,},
 		[21]={szName="Kim § Th∏i Hﬂa Ki’m",tbProp={0,2261,},nQuality=1,},
-		[22]={szName="Kim § Nguy÷t ∂nh B∂o ßao",tbProp={0,2271,},nQuality=1,},
+		[22]={szName="Kim § Nguy÷t ∂nh ßπo Bµo",tbProp={0,2271,},nQuality=1,},
 		[23]={szName="Kim § T≠Íng V©n B∂o Ki’m",tbProp={0,2281,},nQuality=1,},
 	},
 	[8] = 

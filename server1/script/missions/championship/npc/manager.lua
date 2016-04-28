@@ -132,8 +132,8 @@ function bit(fee)
 		cp_saveback_count(fee)
 		Ladder_NewLadder(10130, MasterName, intfee, 1);
 print("the first bid")
-		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tranh chøc"..fee.."v¹n l­îng.");
-		Say("B¹n lÇn ®Çu ®Õn tranh chøc. Sè tiÒn tranh chøc lÇn nµy lµ "..fee.."v¹n l­îng. HÖ thèng ®· ghi tªn, sè tiÒn vµ tµi kho¶n cña b¹n, thao t¸c tham gia tranh chøc cña b¹n ®· hoµn thµnh.",0);
+		WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tranh chøc"..fee.."Íò l­îng.");
+		Say("B¹n lÇn ®Çu ®Õn tranh chøc. Sè tiÒn tranh chøc lÇn nµy lµ "..fee.."Íò l­îng¡£ÏµÍ³ÒÑ¼Ç×¡ÄãµÄÃû×Ö£¬×Ê½ğºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É.",0);
 		Msg2SubWorld("Ng­êi ch¬i <color=blue> "..GetName().."<color> Võa míi tham dù tranh chøc Tæng l·nh ®éi cña khu vùc")
 		return 1
 	end
@@ -145,8 +145,8 @@ print("bid back bid")
 	biwu_save(BID_DATA);
 	cp_saveback_count(TongBid)
 	Ladder_NewLadder(10130, MasterName, intTongBid, 1);
-	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tiÕp tôc tranh chøc"..fee.."v¹n l­îng. ÏÖÔÚ×ÜÊıÎª"..TongBid.."v¹n l­îng.");
-		Say("Sè tiÒn tranh chøc lÇn nµy cña b¹n lµ "..fee.."v¹n l­îng. ÏµÍ³ÒÑ¼ÇÂ¼ÏÂÄãµÄÃû×Ö£¬×Ê½ğÊıºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É¡£µ½ÏÖÔÚ£¬ÄãµÄ¾º±ê×Ü×Ê½ğÎª"..TongBid.."v¹n l­îng.", 0);
+	WriteLog(date("%Y-%m-%d %H:%M:%S").." "..GetAccount()..", ["..GetName().."]tiÕp tôc tranh chøc"..fee.."Íò l­îng. ÏÖÔÚ×ÜÊıÎª"..TongBid.."Íò l­îng.");
+		Say("Sè tiÒn tranh chøc lÇn nµy cña b¹n lµ "..fee.."Íò l­îng. ÏµÍ³ÒÑ¼ÇÂ¼ÏÂÄãµÄÃû×Ö£¬×Ê½ğÊıºÍÕË»§£¬²Î¼Ó¾º±êµÄ²Ù×÷ÒÑÍê³É¡£µ½ÏÖÔÚ£¬ÄãµÄ¾º±ê×Ü×Ê½ğÎª"..TongBid.."Íò l­îng.", 0);
 		Msg2SubWorld("Ng­êi ch¬i <color=blue> "..GetName().."<color> Võa míi tham dù tranh chøc Tæng l·nh ®éi cña khu vùc")
 	return 1
 end
@@ -159,12 +159,12 @@ function send_card()	--Ñ¡ÔñÊÇ·ñÅÉ·¢
 	sendmonth , senddate , sendhour = look_the_time( CP_SENDCARD_OPEN )
 	endmonth , enddate , endhour = look_the_time( CP_SENDCARD_END )
 if ( tonumber( date( "%y%m%d%H" ) ) < CP_SENDCARD_OPEN ) then
-	Say(" Tæng L·nh ®éi cßn t­ c¸ch ®Õn "..sendmonth.."nguyÖt "..senddate.."nhËt "..sendhour..", ®Õn"..endmonth.."nguyÖt "..enddate.."nhËt "..endhour.." kÕt thóc", 0)
+	Say(" Tæng L·nh ®éi cßn t­ c¸ch ®Õn "..sendmonth.."nguyÖt "..senddate.."nhËt "..sendhour..", ®Õn"..endmonth.."nguyÖt  "..enddate.."nhËt "..endhour.." kÕt thóc", 0)
 	return
 end
 
 if ( tonumber( date( "%y%m%d%H" ) ) > CP_SENDCARD_END ) then
-	Say("Tæng lÜnh ®éi ph¸t quyÕt t­ c¸ch tham gia vâ l©m kiÖt xuÊt ®· kÕt thóc, b¹n cã thÓ ®Õn tra xem danh danh s¸ch tuyÓn thñ trËn vâ l©m kiÖt xuÊt!", 0)
+	Say("×ÜÁì¶Ó·¢¾ò²Î¼ÓÎäÁÖĞÂĞãÁªÈü×Ê¸ñÒÑ kÕt thóc£¬Äã¿ÉÒÔÈ¥²é¿´ÎäÁÖĞÂĞãÁªÈüÑ¡ÊÖµÄÃûµ¥!", 0)
 return
 end
 
@@ -190,7 +190,7 @@ end
 		TeamMembers = TeamMembers..","..GetName()
 	end
 	PlayerIndex = orgindex
-	Say("Ng­¬i muèn ph¸i"..TeamMembers.."Tham gia vßng chung kÕt? NÕu ®¼ng cÊp d­íi 90 sÏ kh«ng ®ñ t­ c¸ch thi ®Êu. CÇn <color=yellow>"..endmonth.."nguyÖt "..enddate.."nhËt "..endhour.." <color> kÕt thóc.", 2, "Muèn/ensure", "ta ®ang suy nghÜ /OnCancel"); 
+	Say("Ng­¬i muèn ph¸i"..TeamMembers.."Tham gia vßng chung kÕt? NÕu ®¼ng cÊp d­íi 90 sÏ kh«ng ®ñ t­ c¸ch thi ®Êu. CÇn <color=yellow>"..endmonth.."nguyÖt  "..enddate.."nhËt "..endhour.." <color> kÕt thóc.", 2, "Muèn/ensure", "ta ®ang suy nghÜ /OnCancel"); 
 	return
 end
 
@@ -268,7 +268,7 @@ function give_back()
 		Say("Sè tiÒn tranh chøc mµ b¹n tranh tuyÓn ta ®· tr¶ hÕt cho b¹n råi.", 0)
 		return
 	end
-	Say("NÕu sè tiÒn lín h¬n 50 ng¹n v¹n l­îng, b¹n sÏ ®­îc tr¶ tiÒn mçi lÇn lín nhÊt lµ 50 ngµn v¹n l­îng. Tr­íc khi l·nh h·y x¸c nhËn b¹n cã thÓ mang ®­îc sè tiÒn nµy.", 2, "HiÖn ta ®· l·nh/sure_give_back", "§îi chót ta quay l¹i/OnCancel")
+	Say("Èç¹ûÊıÄ¿´óÓÚ5ÒÚ l­îng£¬Ã¿´ÎÄã½«Òª¸¶5ÒÚ l­îng¡£ÁìÖ®Ç°ÇëÈ·ÈÏÄã¿ÉÒÔÁìÈ¡ÕâĞ©Ç®.", 2, "HiÖn ta ®· l·nh/sure_give_back", "§îi chót ta quay l¹i/OnCancel")
 end
 
 function sure_give_back()
@@ -309,8 +309,8 @@ function sure_give_back()
 		Earn(BackBid)
 		nt_settask(CP_TASKID_BACKCONT, nt_gettask(CP_TASKID_BACKCONT) - 1)
 		TongBid = TongBid * 100
-		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]nhËn ®­îc 50 ngµn v¹n l­îng, cßn l¹i"..TongBid.."v¹n l­îng ch­a tr¶.")
-		Say("V× sè tiÒn tranh chøc cña b¹n lín h¬n 50 ngµn v¹n l­îng, ta tr¶ cho b¹n 50 ngµn v¹n l­îng tr­íc, b¹n cßn l¹i<color=yellow>"..TongBid.."<color>v¹n l­îng ë chç ta, h·y x¸c nhËn hµnh trang cña b¹n cã thÓ chøa ®ñ tiÒn råi h·y quay l¹i nhËn tiÒn!", 0)
+		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®¹t ®­îc5ÒÚ l­îng£¬»¹ÓĞ"..TongBid.."Íò l­îngÃ»ÓĞ²¹»Ø")
+		Say("ÒòÎªÄã¾ºÕùµÄ·ÑÓÃ´óÓÚ50ÒÚ l­îng£¬ÎÒÏnhËt ÒÄã50Íò l­îng£¬Äã»¹ÓĞ<color=yellow>"..TongBid.."<color>Íò l­îngÔÚÎÒÕâÀï£¬ÏÈ¼ì²éÄãµÄ±³°üÄÜ²»ÄÜ×°ÏÂÕâĞ©Ç®ÔÙÀ´!", 0)
 	else
 		BackBid = BackBid * 1000000
 		biwu_setdata(BID_DATA, MasterName, "Bid", tostring(0))
@@ -318,7 +318,7 @@ function sure_give_back()
 		Earn(BackBid)
 		nt_settask(CP_TASKID_BACKCONT, 0)
 		BackBid = BackBid/10000
-		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]nhËn ®­îc tiÒn tr¶ l¹i"..BackBid.."v¹n l­îng, ®· tr¶ l¹i tÊt c¶ tiÒn tranh chøc.")
+		WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]nhËn ®­îc tiÒn tr¶ l¹i"..BackBid.."Íò l­îng, ÒÑÍË»¹ËùÓĞ¾ºÕù·ÑÓÃ.")
 		Say("Ta tr¶<color=yellow>"..BackBid.."<color>v¹n l­îng cho b¹n, xin nhËn lÊy!", 0)
 	end
 end
@@ -350,7 +350,7 @@ function faction_top5(factionnumber)	--10´óÃÅÅÉÇ°ÎåÁìÈ¡³ÆºÅ
 		return
 	end
 	if( tonumber(date("%y%m%d%H")) < CP_END_TRYOUT ) then
-		Say("TrËn dù tuyÓn m«n ph¸i hiÖn ch­a kÕt thóc, ch­a t×m ra 5 h¹ng ®øng dÇu m«n ph¸i, kh«ng thÓ cÊp danh hiÖu.", 0)
+		Say("ÃÅÅÉÔ¤Ñ¡ÈüÏÖÔÚ»¹Ã»ÓĞ kÕt thóc£¬»¹Ã»ÓĞ²úÉúÃÅÅÉÇ°Îå£¬²»ÄÜÁìÈ¡danh hiÖu.", 0)
 		return
 	end
 	biwu_loadfile( Faction[factionnumber + 1][1] );
@@ -373,7 +373,7 @@ function nomal_player()
 	biwu_loadfile(LEADER_MEMBER)
 	count = tonumber(biwu_getdata(LEADER_MEMBER, "LeadMember", "Count"))
 	if(not count ) then
-		Say("Quan viªn Vâ l©m kiÖt xuÊt:Tæng L·nh ®éi ch­a cÊp ph¸t t­ c¸ch dù tuyÓn cho b¹n, b¹n kh«ng cã t­ c¸ch ®Ó nhËn danh hiÖu!", 0)
+		Say("Quan viªn Vâ l©m kiÖt xuÊt:×ÜÁì¶Ó»¹Ã»ÓĞ°ä·¢¸øÄãÔ¤Ñ¡×Ê¸ñ£¬ÄãÃ»ÓĞ×Ê¸ñÁìÈ¡danh hiÖu!", 0)
 		return
 	end
 	local name = GetName()
@@ -383,8 +383,8 @@ function nomal_player()
 			nt_settask(CP_TASKID_TITLE, 9)
 			Title_AddTitle(19, 1, TITLETIME);	--ÕâÑùÊÇ¸ø×Ô¼º¼Ó»¹ÊÇ¸ø¶ÓÓÑ£¿
 			Title_ActiveTitle( 19 );
-			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]®· nhËn ®­îc danh hiÖu TuyÓn thñ Vâ l©m ®¹i héi ");
-			Msg2Player("B¹n nhËn ®­îc danh hiÖu TuyÓn thñ Vâ l©m ®¹i héi");
+			WriteLog(date("%Y%m%d %H:%M:%S")..GetAccount()..",["..GetName().."]ÒÑÁìÈ¡µ½ÎäÁÖ´ó»áÑ¡ÊÖdanh hiÖu");
+			Msg2Player("B¹n ®¹t ®­îcÎèÁÖ´ó»áÑ¡ÊÖdanh hiÖu");
 			return
 		end
 	end
@@ -427,7 +427,7 @@ function look_bid_self()
 	MasterName = GetName();
 	TongBid = tonumber(biwu_getdata(BID_DATA, MasterName, "Bid"));
 	if( not TongBid ) then
-		Say("B¹n ch­a tham gia ho¹t ®éng tranh chøc, cã muèn thö kh«ng?", 0)
+		Say("Äã»¹Ã»ÓĞ²Î¼Ó¾ºÕù»î¶¯£¬ÏëÒªÊÔÊnguyÖt ğ?", 0)
 		return
 	end
 	TongBid = TongBid * 100
@@ -439,9 +439,9 @@ function look_bid_self()
 		end
 	end
 	if (flag == 0) then
-		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."v¹n l­îng, ch­a vµo 10 h¹ng ®Çu.", 0)
+		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."Íò l­îng, »¹Î´½øÈëÇ°Ê®.", 0)
 	else
-		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."v¹n l­îng, xÕp h¹ng"..flag..", ", 0)
+		Say("Sè tiÒn tranh chøc cña b¹n hiÖn lµ "..TongBid.."Íò l­îng, ÅÅĞĞ"..flag..", ", 0)
 	end
 end
 
@@ -476,7 +476,7 @@ end
 
 function look_list_factop()
 	if (tonumber(date("%y%m%d%H")) < CP_END_TRYOUT) then
-		Say(" TrËn ®Êu ch­a kÕt thóc, danh s¸ch ®ñ t­ c¸ch ®­îc tuyÓn ë c¸c m«n ph¸i ch­a xuÊt hiÖn. ", 0)
+		Say(" ±ÈÈü»¹Î´ kÕt thóc£¬¸÷ÃÅÅÉ»¹Ã»ÓĞ¸ø³öÓĞ×Ê¸ñµÄÃûµ¥. ", 0)
 		return
 	end
 local factab = {"ThiÕu L©m/#look_list_fac(1)", "Thiªn V­¬ng/#look_list_fac(2)", "§­êng M«n/#look_list_fac(3)", "Ngò §éc/#look_list_fac(4)", "Nga Mi/#look_list_fac(5)", "Thóy Yªn/#look_list_fac(6)", "C¸i Bang/#look_list_fac(7)", "Thiªn NhÉn/#look_list_fac(8)", "Vâ §ang/#look_list_fac(9)", "C«n L«n/#look_list_fac(10)" , "Kh«ng xem n÷a!/OnCancel"}
@@ -586,7 +586,7 @@ function cp_saveback_count(tol_money)
 end
 
 function regist_champion()
-Say("TrËn dù tuyÓn §¹i héi Vâ l©m kiÖt xuÊt ®· kÕt thóc tèt ®Ñp. B©y giê cã thÓ ®Õn chç ta xem kÕt qu¶ thi ®Êu vµ l·nh danh hiÖu t­¬ng øng. Chê mong Vâ l©m ®¹i héi b¾t ®Çu.", 0)
+Say("ÎäÁÖĞÂĞãÁªÈü´ó»áÔ¤Ñ¡ÈüÔ²Âú kÕt thóc¡£ÏÖÔÚ¿ÉÒÔµ½ÎÒ´¦¿´±ÈÈü½á¹ûºÍÁìÈ¡ÏàÓ¦µÄdanh hiÖu¡£¾´ÇëÆÚ´ıÎäÁÖ´ó»á¿ªÊ¼.", 0)
 do return end
 	if (nt_gettask(CP_TASKID_REGIST) == 9) then
 		Say(" B¹n ®· tõ bá t­ c¸ch thi ®Êu dù tuyÓn c¸c m«n ph¸i, kh«ng thÓ tiÕp tôc b¸o danh tham gia.", 0)
@@ -643,8 +643,8 @@ do return end
 	if (nt_gettask(CP_TASKID_REGIST) == CP_UPTO_TRYOUT) then
 		transtoplace()
 	else
-		local talkstr = "B¸o danh tham gia trËn dù tuyÓn, cÇn nép 10 v¹n l­îng phİ b¸o danh."
-		Say(talkstr, 2, "ÕâÊÇ10v¹n l­îng./sure_regist", "§Ó ta xem l¹i/OnCancel")
+		local talkstr = "±¨Ãû²Î¼ÓÔ¤Ñ¡ÈüÒª½»10Íò l­îng±¨Ãû·Ñ."
+		Say(talkstr, 2, "ÕâÊÇ10Íò l­îng./sure_regist", "§Ó ta xem l¹i/OnCancel")
 		return
 	end
 end
@@ -661,7 +661,7 @@ function sure_regist()
 		transtoplace()
 		return
 	end
-	Say("B¹n kh«ng cã ®ñ phİ b¸o danh, ®ñ 10 v¹n h·y quay l¹i!", 0)
+	Say("Äã±¨Ãû·Ñ²»×ã£¬¹»10Íò l­îngÔÙ»ØÀ´!", 0)
 
 end
 
@@ -675,7 +675,7 @@ function look_endbid()
 	local endbid_month = mod(floor(CP_END_BID_DATE / 10000), 100)
 	local endbid_date = mod(floor(CP_END_BID_DATE / 100), 100)
 	local endbid_hour = mod(CP_END_BID_DATE,100)
-	Say(" Tæng L·nh ®éi cã t­ c¸ch ®Õn"..endbid_month.."nguyÖt "..endbid_date.."nhËt "..endbid_hour.." giê kÕt thóc, thêi gian hiÖn giê lµ "..date("d nhËt % %m nguyÖt %Y Äê H Ê±"), 0)	
+	Say(" Tæng L·nh ®éi cã t­ c¸ch ®Õn"..endbid_month.."nguyÖt "..endbid_date.."nhËt "..endbid_hour.."Ê± kÕt thóc, ÏÖÔÚÊ±¼äÊÇ"..date("d nhËt % %m nguyÖt  %Y Äê H Ê±"), 0)	
 end
 
 function look_the_time( THETIME )

@@ -77,7 +77,7 @@ function OnDeath(Launcher)
 			if (GetCurCamp()  == 1) then
 				str  = "Ng­êi ch¬i "..launrankname..LaunName.." h¹ träng th­¬ng ng­êi ch¬i "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			else
-				str  = "Ng­êi ch¬i "..launrankname..LaunName.." h¹ träng th­¬ng ng­êi ch¬i "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
+				str  = "Ng­êi ch¬i "..launrankname..LaunName.." É±ËÀÁËNg­êi ch¬i "..rankname..DeathName..", tæng PK lµ "..BT_GetData(PL_KILLPLAYER);
 			end
 			Msg2Player("<color=pink> Chóc mõng! B¹n ®· h¹ ®­îc:"..rankname..DeathName..", Tæng PK lµ "..BT_GetData(PL_KILLPLAYER));
 			Msg2MSAll(MISSIONID, str);

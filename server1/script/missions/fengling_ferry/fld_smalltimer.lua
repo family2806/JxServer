@@ -36,14 +36,14 @@ function OnTimer()
 		posx, posy = fld_getadata(npcthiefpos)
 		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "Th駓 t芻 u l躰h", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h  xu蕋 hi謓.")
+		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h已出现.")
 	end
 	
 	if (t == UPBOSS_TIME2) then		-- 20分钟
 		posx, posy = fld_getadata(npcthiefpos)
 		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "Th駓 t芻 u l躰h", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h  xu蕋 hi謓.")
+		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h已出现.")
 		
 		if (check_new_shuizeitask() == 1) then
 			for i = 1, 2 do
@@ -58,7 +58,7 @@ function OnTimer()
 		posx, posy = fld_getadata(npcthiefpos)
 		npcindex = AddNpc(725, 85, SubWorld, posx, posy, 1, "Th駓 t芻 u l躰h", 1)
 		SetNpcDeathScript(npcindex, "\\script\\missions\\fengling_ferry\\bossdeath.lua");
-		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h  xu蕋 hi謓.")
+		Msg2MSAll(MISSIONID, "Th駓 t芻 u l躰h已出现.")
 	end		
 	
 	-- 活跃度

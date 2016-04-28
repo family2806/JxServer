@@ -339,14 +339,14 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 	-- …æ‘≠¡œ
 	for i = 1, nItemCount do
 		if (GetGiveItemUnit(i) ~= nEquipItemIdx and RemoveItemByIndex(GetGiveItemUnit(i)) ~= 1) then
-			WriteLog("[Task n©ng c p trang bﬁ Bπch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t X„a vÀt ph»m th t bπi\t"..GetItemName(GetGiveItemUnit(i)));
+			WriteLog("[Task Th®ng c p trang bﬁ Bπch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t X„a vÀt ph»m th t bπi\t"..GetItemName(GetGiveItemUnit(i)));
 			return
 		end
 	end
 	if (random() > nUpGradeProb) then
 		CreateTaskSay({"<dec><npc>N©ng c p trang bﬁ Bπch Kim th t bπi, bﬁ m t Æi vÀt li÷u ch’ tπo vµ 1000 vπn l≠Óng.", "Ta sœ quay lπi sau/no"});
 		Msg2Player("N©ng c p trang bﬁ Bπch Kim th t bπi, bﬁ m t Æi vÀt li÷u ch’ tπo vµ 1000 vπn l≠Óng.");
-		WriteLog("[Task n©ng c p trang bﬁ Bπch Kim FAIL!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Gi∏ trﬁ l≠Óng kh´ng ÆÒ, x∏c su t lµ"..nUpGradeProb);
+		WriteLog("[Task Th®ng c p trang bﬁ Bπch Kim FAIL!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Gi∏ trﬁ l≠Óng kh´ng ÆÒ, x∏c su t lµ"..nUpGradeProb);
 		return
 	end;
 	
@@ -367,14 +367,14 @@ function do_upgradeequip_process(nItemCount, nStep, bPreview)
 			SetItemBindState(nEquipItemIdx, nItemBindState)
 		end;
 		local szBehindItemInfo = getItemInfo(nEquipItemIdx);--ªÒµ√…˝º∂∫ÛµƒœÍœ∏–≈œ¢
-		CreateTaskSay({"<dec><npc>N©ng c p trang bﬁ Bπch Kim thµnh c´ng, nhÀn Æ≠Óc 1 trang bﬁ Bπch Kim <color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."<color>, c p"..nItemLevel..".", "Ta sœ quay lπi sau/no"});
-		Msg2Player("N©ng c p trang bﬁ Bπch Kim thµnh c´ng, Æºng c p lµ"..nItemLevel.."trang bﬁ Bπch Kim:"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]);
-		WriteLog("[Task n©ng c p trang bﬁ Bπch Kim SUCCESS!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t nhÀn Æ≠Óc trang bﬁ Bπch Kim"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."\t"..szLog);
-		writeRecoinLog("[Nguy™n li÷u n©ng c p trang bﬁ Bπch Kim]", szBeforeItemInfo);
-		writeRecoinLog("[K’t qu∂ n©ng c p trang bﬁ Bπch Kim]", szBehindItemInfo);
+		CreateTaskSay({"<dec><npc>Th®ng c p trang bﬁ Bπch Kim≥…π¶£¨µ√µΩ1Ã◊∞◊Ω◊∞±∏<color=yellow>"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."<color>, c p"..nItemLevel..".", "Ta sœ quay lπi sau/no"});
+		Msg2Player("Th®ng c p trang bﬁ Bπch Kim≥…π¶,µ»º∂ «"..nItemLevel.."trang bﬁ Bπch Kim:"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4]);
+		WriteLog("[Task Th®ng c p trang bﬁ Bπch Kim SUCCESS!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t nhÀn Æ≠Óc trang bﬁ Bπch Kim"..TB_PLATINAEQ_GOLDEQ[nComposeEntryIdx][4].."\t"..szLog);
+		writeRecoinLog("[Th®ng c p trang bﬁ Bπch Kim‘≠¡œ]", szBeforeItemInfo);
+		writeRecoinLog("[Th®ng c p trang bﬁ Bπch KimΩ·π˚]", szBehindItemInfo);
 	else
-		WriteLog("[Task n©ng c p trang bﬁ Bπch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t NhÀn Æ≠Óc trang bﬁ Bπch Kim th t bπi \t"..szLog);
-		writeRecoinLog("[Nguy™n li÷u n©ng c p trang bﬁ Bπch Kim]", szBeforeItemInfo);
+		WriteLog("[Task Th®ng c p trang bﬁ Bπch Kim ERROR!!]"..GetLocalDate("%Y-%m-%d %H:%M:%S").."\t"..GetAccount().."\t"..GetName().."\t Th®ng c p trang bﬁ Bπch Kim ß∞‹\t"..szLog);
+		writeRecoinLog("[Th®ng c p trang bﬁ Bπch Kim‘≠¡œ]", szBeforeItemInfo);
 	end;
 end;
 ----Ω´ª∆Ω◊∞±∏¥Ú‘Ï≥…∞◊Ω◊∞±∏ END

@@ -64,7 +64,7 @@ function wl_getfactionsticket()
 		tabticket[i] = TAB_TICKETINFO[i][1].."/#wl_getticket("..i..")"
 	end
 	tabticket[getn(tabticket)+ 1] = "Cho ta suy nghÜ chót!/OnCancel";
-	Say("   Ng­¬i muèn nhËn ®­îc vÐ vµo thi ®Êu cña m«n ph¸i nµo?", getn(tabticket), tabticket);
+	Say(" Ng­¬i cÇn vÐ vµo lo¹i h×nh thi ®Êu nµo?", getn(tabticket), tabticket);
 end
 
 --»ñÈ¡Ä³¸öÃÅÅÉµÄÃÅÆ±
@@ -93,7 +93,7 @@ function wl_getticket( matchtype)
 	end
 --	local usedcount = GetTask(TK_WL_TICKET_FACTION1 + matchtype - 1)
 --	if (usedcount >= MAX_TICKETCOUNT) then
---		Say("ÎäÁÖ´ó»á¹ÙÔ±£º¶Ô²»Æð£¡¸ÃÏîÈüÄãÄÜÁìÈ¡µÄ×î´ó×Ê¸ñÆ±ÊýÁ¿ÊÇ"..MAX_TICKETCOUNT..",ÄúÒÑ¾­ÁìÍê¸ÃÏîÈüµÄ×Ê¸ñÆ±ÁË£¬²»ÄÜÔÙÁìÁË¡£",0)
+--		Say("ÎäÁÖ´ó»á¹ÙÔ±£º¶Ô²»Æð£¡Sè l­îng phiÕu t­ c¸ch tham gia lín nhÊt cña môc nµy lµ "..MAX_TICKETCOUNT..",ÄúÒÑ¾­ÁìÍê¸ÃÏîÈüµÄ×Ê¸ñÆ±ÁË£¬²»ÄÜÔÙÁìÁË¡£",0)
 --		return
 --	end
 	
@@ -116,7 +116,7 @@ function wl_suregetticket(matchtype, count)
 		return
 	end
 --	if (usedcount >= MAX_TICKETCOUNT) then
---		Say("ÎäÁÖ´ó»á¹ÙÔ±£º¶Ô²»Æð£¡".."¸ÃÏîÈüÄãÄÜÁìÈ¡µÄ×î´ó×Ê¸ñÆ±ÊýÁ¿ÊÇ<color=yellow> "..MAX_TICKETCOUNT.." <color>,ÄúÒÑ¾­ÁìÍê¸ÃÏîÈüµÄ×Ê¸ñÆ±ÁË£¬²»ÄÜÔÙÁìÁË¡£",0)
+--		Say("ÎäÁÖ´ó»á¹ÙÔ±£º¶Ô²»Æð£¡".."Sè l­îng phiÕu t­ c¸ch tham gia lín nhÊt cña môc nµy lµ <color=yellow> "..MAX_TICKETCOUNT.." <color>,ÄúÒÑ¾­ÁìÍê¸ÃÏîÈüµÄ×Ê¸ñÆ±ÁË£¬²»ÄÜÔÙÁìÁË¡£",0)
 --		return
 --	end
 	

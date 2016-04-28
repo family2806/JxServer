@@ -40,7 +40,7 @@ pActivity.tbCompose = {}
 function pActivity:composegrassdialog()
 	
 	local nSelectCount = getn(%tbSelectMoney)
-	local szTitle = format("§æi Cá Xanh cã %d lo¹i h×nh thøc", nSelectCount)
+	local szTitle = format("»»Cá XanhÓÐ%dÖÖÄ£Ê½", nSelectCount)
 	for i=1, nSelectCount do
 		szTitle = format("%s, lo¹i thø %d yªu cÇu %s", szTitle, i, %tbSelectMoney[i])
 		if i ~= nSelectCount then
@@ -117,7 +117,7 @@ function pActivity:tocompose(nMoneyIndex, nRoseIndex)
 	end
 	
 	if nMaxCount <= 0 then
-		Say("Th«ng qua c¸ch nµy ng­¬i ®· ®æi Cá Xanh ®¹t ®Õn giíi h¹n, xin h·y thö c¸ch kh¸c xem sao!")
+		Say("Í¨¹ý´ËÖÖ·½·¨ÄúÒÑ»»È¡µÄCá Xanh´ïµ½ÉÏÏÞ£¬ÇëÊÔÊÔÆäËû·½·¨!")
 		return
 	end
 	local bAskNumber = 1

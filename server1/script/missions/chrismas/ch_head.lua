@@ -133,7 +133,7 @@ if (not CHRISMAS_HEAD) then
 				bOn = 1;
 			end;
 			if (bOn == 0) then
-				Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: Mçi ngµy tõ 12:00-4:00 vµ buæi tèi 19:00-23:00 triÓn khai ho¹t ®éng Gi¸ng Sinh,  hiÖn t¹i ch­a ®Õn thêi gian ho¹t ®éng hoÆc ho¹t ®éng ch­a b¾t ®Çu!");
+				Talk(1, "", "<color=yellow>Ê¥µ®ÀÏÈË<color>: ´ÓÃ¿ÌìµÄ12:00-4:00 ºÍÍíÉÏ19:00-23:00¿ªÕ¹Ho¹t ®éng Gi¸ng Sinh, ÏÖÔÚ»¹Ã»ÓĞµ½»î¶¯Ê±¼ä»òÕß»î¶¯»¹Ã»ÓĞ¿ªÊ¼!");
 				return
 			else
 				Talk(1, "", "<color=yellow>¤ng giµ Noel<color>: Trß ch¬i ®ang tiÕn hµnh, h·y chê l­ît sau ®i! Mçi trËn ®óng 15 phót, 30 phót, 45 phót b¾t ®Çu.");

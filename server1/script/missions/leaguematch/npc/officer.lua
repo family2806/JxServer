@@ -19,7 +19,7 @@ function main()
 		local n_mtype = LG_GetLeagueTask(n_lid, WLLS_LGTASK_MTYPE)
 		local n_mylevel = WLLS_TAB[n_mytype].match_type[n_mtype].level
 		if (n_mylevel ~= n_level) then
-			wlls_descript("<enter> c¸c h¹ ®· gia nhËp <color=red>"..WLLS_LEVEL_DESC[n_mylevel].."<color> ta lµ <color=red>"..WLLS_LEVEL_DESC[n_level].."<color>, cã ph¶i hay kh«ng t×m lén ng­êi ?", wlls_add_option({}, "Kh«ng cã chuyÖn g× "))
+			wlls_descript("<enter> c¸c h¹ ®· gia nhËp <color=red>"..WLLS_LEVEL_DESC[n_mylevel].."<color> ®iÓm vinh dù ta lµ <color=red>"..WLLS_LEVEL_DESC[n_level].."<color> ®iÓm vinh dù, cã ph¶i hay kh«ng t×m lén ng­êi ?", wlls_add_option({}, "Kh«ng cã chuyÖn g× "))
 			return
 		end
 		
@@ -51,7 +51,7 @@ function wlls_wantaward()
 	local n_matchphase = GetGlbValue( GLB_WLLS_PHASE )
 	local str_des = wlls_get_desc(1)
 	local n_awardmin = wlls_get_award_min()
-	local str = "<enter> Gi¶i th­ëng liªn ®Êu bao gåm ®iÓm <color=red>xÕp h¹ng<color> vµ ®iÓm <color=red>vinh dù<color>. Sau khi kÕt thóc giai ®o¹n liªn ®Êu <color=red> dùa vµo sè trËn chiÕn th¾ng<color> ®Ó xÕp thø h¹ng. <color=red>"..n_awardmin.." ®éi xÕp h¹ng cao nhÊt<color> sÏ nhËn ®­îc <color=red>phÇn th­ëng ®Æc biÖt<color>.Cã thÓ dïng ®iÓm vinh dù ®Ó mua vËt phÈm!"
+	local str = "<enter> Gi¶i th­ëng liªn ®Êu bao gåm ®iÓm <color=red>xÕp h¹ng<color> ®iÓm vinh dù vµ ®iÓm <color=red>vinh dù<color> ®iÓm vinh dù. Sau khi kÕt thóc giai ®o¹n liªn ®Êu <color=red> dùa vµo sè trËn chiÕn th¾ng<color> ®iÓm vinh dù ®Ó xÕp thø h¹ng. <color=red>"..n_awardmin.." ®éi xÕp h¹ng cao nhÊt<color> ®iÓm vinh dù sÏ nhËn ®­îc <color=red>phÇn th­ëng ®Æc biÖt<color> ®iÓm vinh dù.Cã thÓ dïng ®iÓm vinh dù ®Ó mua vËt phÈm!"
 	local tb_option = {}
 	if (n_matchphase == 1) then
 		tb_option[getn(tb_option)+1] = "Ta muèn nhËn phÇn th­ëng xÕp h¹ng!/wlls_wantaward_rank"
@@ -72,7 +72,7 @@ function wlls_wantaward_rank()
 		local str_des = wlls_get_desc(1)
 		local n_type = GetGlbValue(GLB_WLLS_TYPE)
 		local tb_award = WLLS_TAB[n_type].award_rank[nLevel][nAward]
-		local str = "<enter>  ChiÕn ®éi: <color=yellow>"..szLGName.."<color> trong "..str_des.." xÕp h¹ng <color=yellow>"..nRank.."<color>. NhËn ®­îc "..tb_award[2].." ®iÓm danh väng."
+		local str = "<enter>  ChiÕn ®éi: <color=yellow>"..szLGName.."<color> ®iÓm vinh dù trong "..str_des.." xÕp h¹ng <color=yellow>"..nRank.."<color> ®iÓm vinh dù. NhËn ®­îc "..tb_award[2].." ®iÓm danh väng."
 		if (tb_award[3]) then	--ÓĞ¶Ó³¤¶îÍâ½±Àø
 			if (LG_GetMemberTask(WLLS_LGTYPE, szLGName, GetName(), WLLS_LGMTASK_JOB) == 1) then
 				str = str.." ®éi tr­ëng nhËn ®­îc "..tb_award[3].." ®iÓm danh väng."
@@ -104,7 +104,7 @@ function wlls_checkaward_rank(b_silent)
 	end
 	if (FALSE(n_lid) or n_rank <= 0 or n_rank > n_awardmin) then
 		if (not b_silent) then
-			wlls_descript("<enter> "..str_des.." <color=red>"..n_awardmin.."<color> tr­íc m¾t ®· ®øng hµng , gièng nh­ c¸c h¹ ®İch chiÕn ®éi kh«ng cã ë bªn trong !"..n_awardmin.." ®Ó cho ta gióp ng­¬i kiÓm tra mét c¸i ")
+			wlls_descript("<enter> lÇn nµy "..str_des.." <color=red>"..n_awardmin.."<color> ®iÓm vinh dù tr­íc m¾t ®· ®øng hµng , gièng nh­ c¸c h¹ ®İch chiÕn ®éi kh«ng cã ë bªn trong !"..n_awardmin.." ®Ó cho ta gióp ng­¬i kiÓm tra mét c¸i ")
 		end
 		return nil
 	end
@@ -190,7 +190,7 @@ function wlls_wantaward_title()
 	
 	SetTask(1122, n_title)	--µ±Ç°Íæ¼ÒÁìÈ¡µÄÊÇÄÄ¸öÍ·ÏÎID
 	local tb = {"V« §Şch ", " ¸ qu©n ", "H¹ng Ba", "H¹ng T­"}
-	Msg2Player("C¸c h¹ ng­¬i ®¹t ®­îc danh hiÖu <color=yellow>"..wlls_get_desc(1)..tb[n_rank].."<color>! nªn danh hiÖu cã thÓ duy tr× <color=yellow>20<color> ngµy .")
+	Msg2Player("C¸c h¹ ng­¬i ®¹t ®­îc danh hiÖu <color=yellow>"..wlls_get_desc(1)..tb[n_rank].."<color> ®iÓm vinh dù! nªn danh hiÖu cã thÓ duy tr× <color=yellow>20<color> ®iÓm vinh dù ngµy .")
 end
 
 --×îÖÕÁìÈ¡ÅÅĞĞ½±Àø
@@ -207,14 +207,14 @@ function wlls_getaward_rank()
 		SetTask(WLLS_TASKID_GOTAWARD, n_got)
 		local nPoint	= tb_award[2]
 		Msg2Player("Chóc mõng, b¹n ®¹t ®­îc "..str_des.." danh hiÖu: Gi¸ trŞ vinh dù "..tb_award[2].." ®iÓm")
-		wlls_award_log(format("§¹t ®­îc ®øng hµng t­ëng %s: danh väng trŞ gi¸ %d ®iÓm ",
+		wlls_award_log(format("»ñµÃÅÅÃû½± %s: ÃûÍûÖµ%d  ®iÓm",
 											str_des, tb_award[2]))
 		if (tb_award[3]) then	--ÓĞ¶Ó³¤¶îÍâ½±Àø
 			--¸ÃÅĞ¶ÏÖ»¶Ô¶Ó³¤²»ÄÜ×ªÒÆµÄÇé¿ö£¨Ê¦Í½Èü£©°²È«
 			if (LG_GetMemberTask(WLLS_LGTYPE, str_lgname, GetName(), WLLS_LGMTASK_JOB) == 1) then
 				nPoint	= nPoint + tb_award[3]
 				Msg2Player("Chóc mõng, b¹n ®¹t ®­îc "..str_des.."danh hiÖu, gi¶i th­ëng(®éi tr­ëng): Gi¸ trŞ vinh dù "..tb_award[3].." ®iÓm")
-				wlls_award_log(format("§¹t ®­îc ®øng hµng t­ëng %s ( ®éi tr­ëng ): danh väng trŞ gi¸ %d ®iÓm ",
+				wlls_award_log(format("»ñµÃÅÅÃû½± %s (¶Ó³¤): ÃûÍûÖµ %d  ®iÓm",
 											str_des, tb_award[3]))
 			end
 		end
@@ -238,12 +238,12 @@ function wlls_cancreate(n_level)
 	if (n_mylevel ~= n_level) then
 		if (n_level == 1) then
 			if (n_mylevel < n_level) then
-				wlls_descript("<enter>  <color=red>Vâ l©m liªn ®Êu<color> héi tô tÊt c¶ c¸c anh hïng, nh­ng cÊp ®é cña b¹n kh«ng ®ñ! Ph¶i ®¹t level "..WLLS_LEVEL_JUNIOR.." trë lªn th× míi cã thÓ tham gia!")
+				wlls_descript("<enter>  <color=red>Vâ l©m liªn ®Êu<color> ®iÓm vinh dù héi tô tÊt c¶ c¸c anh hïng, nh­ng cÊp ®é cña b¹n kh«ng ®ñ! Ph¶i ®¹t level "..WLLS_LEVEL_JUNIOR.." trë lªn th× míi cã thÓ tham gia!")
 			else
-				wlls_descript("<enter> c¸c h¹ ®· lµ ®Ønh ®Ønh næi danh giang hå ®¹i hiÖp , <color=red> vâ l©m t©n tó liªn cuéc so tµi <color> lµ muèn chän lùa tuæi trÎ tµi cao ng­êi cña míi , ng­¬i cÇn ë phİa sau tr­íc mÆt ®ïa bìn uy phong sao ? nÕu kh«ng ng­¬i tham gia <color=red> vâ l©m liªn cuéc so tµi <color> ®i !")
+				wlls_descript("<enter> c¸c h¹ ®· lµ ®Ønh ®Ønh næi danh giang hå ®¹i hiÖp , <color=red> vâ l©m t©n tó liªn cuéc so tµi <color> ®iÓm vinh dù lµ muèn chän lùa tuæi trÎ tµi cao ng­êi cña míi , ng­¬i cÇn ë phİa sau tr­íc mÆt ®ïa bìn uy phong sao ? nÕu kh«ng ng­¬i tham gia <color=red> vâ l©m liªn cuéc so tµi <color> ®iÓm vinh dù ®i !")
 			end
 		else
-			wlls_descript("<enter> <color=red> vâ l©m liªn cuéc so tµi <color> vÉn lµ anh hïng thiªn h¹ luyÖn kiÕm chç , cÊp bËc cña ng­¬i kh«ng ®ñ !"..WLLS_LEVEL_SENIOR.." cÊp , anh hïng thiªn h¹ tô tËp , ®Çm rång hang hæ , chØ sî ng­¬i ch¼ng qua lµ hËu bèi , tèt nhÊt lµ luyÖn nhiÒu tËp !")
+			wlls_descript("<enter> <color=red> vâ l©m liªn cuéc so tµi <color> ®iÓm vinh dù vÉn lµ anh hïng thiªn h¹ luyÖn kiÕm chç , cÊp bËc cña ng­¬i kh«ng ®ñ !"..WLLS_LEVEL_SENIOR.." cÊp , anh hïng thiªn h¹ tô tËp , ®Çm rång hang hæ , chØ sî ng­¬i ch¼ng qua lµ hËu bèi , tèt nhÊt lµ luyÖn nhiÒu tËp !")
 		end
 		return nil
 	end
@@ -322,7 +322,7 @@ function wlls_createleague(str_lgname)
 		end
 	end
 	if (str) then
-		Say(wlls_npcname()..str, 2, "NhËp l¹i!/wlls_inputstr_lgname", "Kh«ng cÇn !/OnCancel")
+		Say(wlls_npcname()..str, 2, "NhËp l¹i!/wlls_inputstr_lgname", "Kh«ng cÇn!/OnCancel")
 		return
 	end
 	local n_next = GetGlbValue(GLB_WLLS_NEXT)
@@ -347,7 +347,7 @@ function wlls_want2addmember()
 		str = str.." <color=yellow>"..teammember[i];
 	end
 
-	Say(str, 2, "Cho gia nhËp /wlls_sure2addmember","Kh«ng cÇn !/OnCancel")
+	Say(str, 2, "Cho gia nhËp /wlls_sure2addmember","Kh«ng cÇn!/OnCancel")
 end
 
 --Ìí¼Ó³ÉÔ±£¨×îÖÕ£©
@@ -373,7 +373,7 @@ end
 --¼ì²é×é¶Ó¶ÓÔ±ÊÇ·ñ¿ÉÒÔ±»Ìí¼Óµ½µ±Ç°¶ÓÎéÖĞ£¬Thµnh c«ng ·µ»Ø×é¶Ó¶ÓÔ±Ãûµ¥¡¢Õ½¶ÓÀàĞÍ¡¢Õ½¶ÓÃû£¬·ñÔò·µ»Ønil
 function wlls_checkteam()
 	if (IsCaptain() ~= 1) then
-		Say(wlls_npcname().." thËt xin lçi ! ng­¬i cÇn lµ <color=red> ®éi tr­ëng <color> ë <color=red> tiÓu tæ <color>, míi cã thÓ ghi danh gia nhËp chiÕn ®éi ®éi viªn .",0)
+		Say(wlls_npcname().." thËt xin lçi ! ng­¬i cÇn lµ <color=red> ®éi tr­ëng <color> ®iÓm vinh dù ë <color=red> tiÓu tæ <color> ®iÓm vinh dù, míi cã thÓ ghi danh gia nhËp chiÕn ®éi ®éi viªn .",0)
 		return nil
 	end
 
@@ -446,16 +446,16 @@ function wlls_want2leaveleague()
 	local n_job = LG_GetMemberTask(WLLS_LGTYPE, str_lgname, GetName(), WLLS_LGMTASK_JOB)
 	local str = wlls_npcname().." ng­¬i nghÜ rêi ®i chiÕn ®éi ["..str_lgname.."] ph¶i kh«ng?"
 	if(n_memcount <= 1) then
-		str = str .. " ng­¬i b©y giê lµ <color=red> duy nhÊt thµnh viªn <color> ë ng­¬i chiÕn ®éi . nÕu nh­ ng­¬i rêi ®i chiÕn ®éi , chiÕn ®éi ®em bŞ gi¶i t¸n ."
+		str = str .. " ng­¬i b©y giê lµ <color=red> duy nhÊt thµnh viªn <color> ®iÓm vinh dù ë ng­¬i chiÕn ®éi . nÕu nh­ ng­¬i rêi ®i chiÕn ®éi , chiÕn ®éi ®em bŞ gi¶i t¸n ."
 	elseif (not FALSE(n_job)) then
 		local n_type = LG_GetLeagueTask(n_lid, WLLS_LGTASK_STYPE)
 		if (n_type == 3) then	--Ê¦Í½Èü
-			str = str .. " tr­íc m¾t ng­¬i lµ <color=red> ®éi tr­ëng ( s­ phã )<color> nÕu nh­ ng­¬i rêi ®i chiÕn ®éi , ®å ®Ö cña ng­¬i ®em <color=red> kh«ng thÓ tham gia liªn cuéc so tµi <color>."
+			str = str .. " tr­íc m¾t ng­¬i lµ <color=red> ®éi tr­ëng ( s­ phã )<color> ®iÓm vinh dù nÕu nh­ ng­¬i rêi ®i chiÕn ®éi , ®å ®Ö cña ng­¬i ®em <color=red> kh«ng thÓ tham gia liªn cuéc so tµi <color> ®iÓm vinh dù."
 		else	--ÆäËûÁªÈü
-			str = str .. " tr­íc m¾t ng­¬i lµ <color=red> ®éi tr­ëng <color>, nÕu nh­ ng­¬i rêi ®i tiÓu tæ , ®éi tr­ëng chøc vô ®em chuyÓn giao cho thµnh viªn kh¸c ."
+			str = str .. " tr­íc m¾t ng­¬i lµ <color=red> ®éi tr­ëng <color> ®iÓm vinh dù, nÕu nh­ ng­¬i rêi ®i tiÓu tæ , ®éi tr­ëng chøc vô ®em chuyÓn giao cho thµnh viªn kh¸c ."
 		end
 	end
-	Say(str, 2, "§èi víi !/wlls_sure2leaveleague","Kh«ng cÇn !/OnCancel")
+	Say(str, 2, "§èi víi !/wlls_sure2leaveleague","Kh«ng cÇn!/OnCancel")
 end
 
 --Àë¿ªÕ½¶Ó£¨È·ÈÏ¶Ô»°£©
@@ -466,7 +466,7 @@ function wlls_sure2leaveleague()
 		return
 	end
 	
-	Say(wlls_npcname().." khi ng­¬i rêi ®i tiÓu tæ sau , ®em <color=yellow> kh«ng thÓ nhËn lÊy chiÕn ®éi t­ëng th­ëng <color>, ng­¬i x¸c ®Şnh muèn rêi ®i sao ?", 2, "§èi víi !/wlls_leaveleague_final","Kh«ng cÇn !/OnCancel")
+	Say(wlls_npcname().." khi ng­¬i rêi ®i tiÓu tæ sau , ®em <color=yellow> kh«ng thÓ nhËn lÊy chiÕn ®éi t­ëng th­ëng <color> ®iÓm vinh dù, ng­¬i x¸c ®Şnh muèn rêi ®i sao ?", 2, "§èi víi !/wlls_leaveleague_final","Kh«ng cÇn!/OnCancel")
 end
 
 --Àë¿ªÕ½¶Ó£¨×îÖÕ£©
@@ -495,9 +495,9 @@ function wlls_want2signmap()
 	if (FALSE(n_lid)) then
 		local str_des = wlls_get_desc(1)
 		if (WLLS_TAB[n_type].max_member == 1) then
-			wlls_descript("B¹n ch­a cã "..str_des.." nhãm, nÕu tham gia vµo liªn ®Êu, chóng t«i sÏ t¹o cho b¹n mét nhãm", "Ta muèn t¹o nhãm!/#wlls_createleague()", "Kh«ng cÇn !/OnCancel")
+			wlls_descript("B¹n ch­a cã "..str_des.." nhãm, nÕu tham gia vµo liªn ®Êu, chóng t«i sÏ t¹o cho b¹n mét nhãm", "Ta muèn t¹o nhãm!/#wlls_createleague()", "Kh«ng cÇn!/OnCancel")
 		else
-			wlls_descript("<enter> "..str_des.." nhãm, ph¶i cã chiÕn ®éi míi cã thÓ vµo héi tr­êng!")
+			wlls_descript("<enter> lÇn nµy "..str_des.." nhãm, ph¶i cã chiÕn ®éi míi cã thÓ vµo héi tr­êng!")
 		end
 		return
 	end
@@ -514,7 +514,7 @@ function wlls_want2signmap()
 	--´«ËÍµ½±¨Ãû ®iÓmµØÍ¼
 	local n_signmap = wlls_get_mapid(1, n_mtype, n_group)
 	NewWorld(n_signmap, WLLS_MAPPOS_SIGN[1], WLLS_MAPPOS_SIGN[2])
-	Msg2Player("B¹n ®Õn <color=yellow>"..wlls_get_desc(3, n_mtype, n_group).."<color> khu vùc liªn ®Êu")
+	Msg2Player("B¹n ®Õn <color=yellow>"..wlls_get_desc(3, n_mtype, n_group).."<color> ®iÓm vinh dù khu vùc liªn ®Êu")
 	tbLog:PlayerActionLog("TinhNangKey","BaoDanhThamGiaLienDau")
 end
 
@@ -549,8 +549,8 @@ end
 --¾­ÑéÁìÈ¡¿ª¹Ø
 function wlls_show_expswitch()
 	local b_exps = GetBit(GetTask(WLLS_TASKID_SWITCH), 1)
-	local str = "<enter> vâ l©m liªn cuéc so tµi t­ëng th­ëng rÊt phong phó , nÕu nh­ c¸c ng­¬i muèn sö dông kinh nghiÖm trŞ gi¸ sÏ tíi ta chç nµy , më ra kinh nghiÖm trŞ gi¸ , ng­¬i cã thÓ khãa l¹i m×nh kinh nghiÖm trŞ gi¸ t­ëng th­ëng .<enter>"
-	str = str.."<enter> tr­íc m¾t ng­¬i t¾t / më ra tr¹ng th¸i v× "..iif(b_exps == 0, "<color=red> më ra color> ( cã thÓ nhËn lÊy kinh nghiÖm trŞ gi¸ ) ", "<color=red> t¾t <color> ( kh«ng thÓ nhËn lÊy kinh nghiÖm trŞ gi¸ ) ")..""
+	local str = "<enter> lÇn nµy vâ l©m liªn cuéc so tµi t­ëng th­ëng rÊt phong phó , nÕu nh­ c¸c ng­¬i muèn sö dông kinh nghiÖm trŞ gi¸ sÏ tíi ta chç nµy , më ra kinh nghiÖm trŞ gi¸ , ng­¬i cã thÓ khãa l¹i m×nh kinh nghiÖm trŞ gi¸ t­ëng th­ëng .<enter>"
+	str = str.."<enter> tr­íc m¾t ng­¬i t¾t / më ra tr¹ng th¸i v× "..iif(b_exps == 0, "<color=red> më ra color> ( cã thÓ nhËn lÊy kinh nghiÖm trŞ gi¸ ) ", "<color=red> t¾t <color> ®iÓm vinh dù ( kh«ng thÓ nhËn lÊy kinh nghiÖm trŞ gi¸ ) ")..""
 	wlls_descript(str, iif(b_exps == 0, "Ta muèn t¾t t­ëng th­ëng /wlls_set_expswitch(1)", "Ta muèn më ra t­ëng th­ëng /wlls_set_expswitch(0)"), "Tèt , ta thµnh lËp tèt l¾m !/OnCancel")
 end
 
@@ -567,17 +567,17 @@ function wlls_buy_honour()
 		return
 	end
 
-	Msg2Player("B¹n cã <color=yellow>"..GetTask(WLLS_TASKID_HONOUR).."<color>")
+	Msg2Player("B¹n cã <color=yellow>"..GetTask(WLLS_TASKID_HONOUR).."<color> ®iÓm vinh dù ®iÓm vinh dù")
 	if (GetBoxLockState() == 0) then
 		Sale(146,11) -- ÉÌµêµÄÈÙÓş»ı·Ö±àºÅÎª11
 	else
-		Say(wlls_npcname()..": më khãa r­¬ng tr­íc khi mua! ", 0)
+		Say(wlls_npcname().."ÇëMë ra Ïä×ÓËøºóÔÙÂò! ", 0)
 	end
 end
 
 
 function wlls_ShowRespect()
-	Talk(1, "", "§iÓm vinh dù cña b¹n hiÖn t¹i lµ <color=yellow>"..GetRespect().."<color>")
+	Talk(1, "", "§iÓm vinh dù cña b¹n hiÖn t¹i lµ <color=yellow>"..GetRespect().."<color> ®iÓm vinh dù")
 end
 
 --ÓÃÈÙÓş»»È¡ÉÌÆ·
@@ -593,10 +593,10 @@ function wlls_buy_Respect()
 --	end
 	
 	
-	Msg2Player("B¹n ®ang cã <color=yellow>"..GetRespect().."<color>")
+	Msg2Player("B¹n ®ang cã <color=yellow>"..GetRespect().."<color> ®iÓm vinh dù")
 	if (GetBoxLockState() == 0) then
 		Sale(173,13) -- ÉÌµêµÄÈÙÓş»ı·Ö±àºÅÎª11
 	else
-		Say(wlls_npcname()..": më khãa r­¬ng tr­íc khi mua! ", 0)
+		Say(wlls_npcname().."ÇëMë ra Ïä×ÓËøºóÔÙÂò! ", 0)
 	end
 end

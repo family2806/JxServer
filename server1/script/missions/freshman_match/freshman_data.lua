@@ -35,15 +35,15 @@ FactionData = {
 
 FactionTitle = {
 				"ThiÕu L©m kiÖt xuÊt",
-				"Thiªn V­¬ng kiÖt xuÊt",
-				"§­êng M«n  kiÖt xuÊt",
-				"Ngò §éc kiÖt xuÊt",
-				"Nga Mi  kiÖt xuÊt",
-				"Thóy Yªn kiÖt xuÊt",
-				"C¸i Bang kiÖt xuÊt",
-				"Thiªn NhÉn  kiÖt xuÊt",
-				"Vâ §ang  kiÖt xuÊt",
-				"C«n L«n  kiÖt xuÊt"
+				"Thiªn V­¬ngÎäÁÖÐÂÐã",
+				"§­êng M«n ÎäÁÖÐÂÐã",
+				"Ngò §écÎäÁÖÐÂÐã",
+				"Nga Mi ÎäÁÖÐÂÐã",
+				"Thóy YªnÎäÁÖÐÂÐã",
+				"C¸i BangÎäÁÖÐÂÐã",
+				"Thiªn NhÉn ÎäÁÖÐÂÐã",
+				"Vâ §ang ÎäÁÖÐÂÐã",
+				"C«n L«nÎäÁÖÐÂÐã"
 				}
 				
 CP_MAPTAB = {

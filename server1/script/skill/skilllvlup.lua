@@ -67,10 +67,10 @@ function SOSkillLevelUp.Luanhuan_ji()
 	return 1
 end
 
---唐门T輈h L辌h Lo筺 Ho祅 K輈h升级限制
+--唐门霹雳Lo筺 Ho祅 K輈h升级限制
 function SOSkillLevelUp.Pililuanhuan_ji()
 	local perSkills={{45,"T輈h L辌h n"},{351,"Lo筺 Ho祅 K輈h"}}
-	local mainSkill = {1110,"T輈h L辌h Lo筺 Ho祅 K輈h"}
+	local mainSkill = {1110,"霹雳Lo筺 Ho祅 K輈h"}
 	local mlvl = HaveMagic(mainSkill[1]),plvl
 	local i
 	if(mlvl>19) then

@@ -148,7 +148,7 @@ function main()
     	local n_itemid 			= tb_tree_itemid[n_tree_idx];
     	local nItemIdx 			= DropItem(subworld, x * 32, y * 32, -1, 6, 1, n_itemid, 1, 0, 0, 0);
 	else
-		Say("§¹i hiÖp ®· ®¹t ®Õn giíi h¹n kinh nghiÖm cao nhÊt, v× vËy kh«ng thÓ sö dông Ph¸t Tµi Hång Bao.", 0);
+		Say("´óÏÀÒÑ´ï¾­Ñé×î¸ßÉÏÏŞ£¬ËùÒÔ²»ÄÜÔÙÊ¹ÓÃPh¸t Tµi Hång BaoÁË.", 0);
 		return 1;
 	end
 end

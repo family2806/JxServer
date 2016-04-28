@@ -32,7 +32,7 @@ function ws_main(nTongID, nWorkshopID)
 	if SVR_CheckUse(nTongID, nWorkshopID, "Tæng qu¶n LÔ phÈm ph­êng") ~= 1 then
 		return 0
 	end
-	Say("<#>Tæng qu¶n LÔ phÈm ph­êng: Ngµy ngµy tÆng ®¹i lÔ, th¸ng th¸ng cã tin vui. TÕt nay kh«ng nhËn lÔ, cã ch¨ng nhËn hång bao!", 2, 
+	Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÌìÌìËÍ´óÀñ£¬ÈÕÈÕÓĞ¾ªÏ²¡£½ñÄê¹ı½Ú²»ÊÕÀñ£¬ÒªÊÕ¾ÍÊÕ´óºì°ü£¡", 2, 
 	"NhËn hång bao/#use_g_1_ok".."("..nTongID..","..nWorkshopID..")", "Kİch ho¹t tói hµnh trang/#partner_bag".."("..nTongID..
 	","..nWorkshopID..")", "Kh«ng cÇn ®©u/cancel");
 	return 1;
@@ -41,34 +41,34 @@ end
 function partner_bag(nTongID, nWorkshopID)
 	local nBagLevel = GetPartnerBagLevel()
 	if (nBagLevel >=10 )then
-		Say("<#>Tæng qu¶n LÔ phÈm ph­êng: Tói hµnh trang cña ng­¬i ®· më réng hÕt møc råi", 1, "BiÕt råi/cancel")
+		Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÄãµÄ×ÓÄ¸´üÒÑ¾­ÊÇ×î´óÁË£¬ÔÙ´ó¾Í±³²»¶¯¿©", 1, "BiÕt råi/cancel")
 		return
 	end	
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (nBagLevel >= nLevel)then
-		Say("Tæng qu¶n LÔ phÈm ph­êng: HiÖn t¹i tói hµnh trang cña ng­¬i ®¹t cÊp "..nBagLevel..". HiÖn t¹i, ®¼ng cÊp sö dông cña LÔ phÈm ph­êng kh«ng ®ñ ®Ó n©ng cÊp tói hµnh trang.", 
+		Say("Tæng qu¶n LÔ phÈm ph­êng£ºÏÖÔÚÄãµÄ×ÓÄ¸´üÎª"..nBagLevel..". HiÖn t¹i, ®¼ng cÊp sö dông cña LÔ phÈm ph­êng kh«ng ®ñ ®Ó n©ng cÊp tói hµnh trang.", 
 			1, "Lóc kh¸c ta quay l¹i vËy./cancel")
 			return
 	end
-	Say("Tæng qu¶n LÔ phÈm ph­êng: HiÖn t¹i tói hµnh trang cña ng­¬i ®¹t cÊp "..nBagLevel..", sö dông <color=yellow>"..aLevelPriceBag[nBagLevel+1].."<color> ®iÓm cèng hiÕn ®Ó níi réng tói hµnh trang, cã ®ång ı kh«ng?",2,
-		"ThËt tèt qu¸, níi réng cµng lín cµng tèt./#YaoBag("..nTongID..","..nWorkshopID..")", "T¹m thêi ch­a cÇn thiÕt./cancel")
+	Say("Tæng qu¶n LÔ phÈm ph­êng£ºÏÖÔÚÄãµÄ×ÓÄ¸´üÎª"..nBagLevel..", sö dông <color=yellow>"..aLevelPriceBag[nBagLevel+1].."<color> ®iÓm cèng hiÕn ®Ó níi réng tói hµnh trang, cã ®ång ı kh«ng?",2,
+		"ThËt tèt qu¸, níi réng cµng lín cµng tèt./#YaoBag("..nTongID..","..nWorkshopID..")", "ÏÈKh«ng cÇn ®©u/cancel")
 end
 
 function YaoBag(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	local nToLevel = GetPartnerBagLevel()+1
 	if (nToLevel > nLevel)then
-		Say("Tæng qu¶n LÔ phÈm ph­êng: HiÖn t¹i, ®¼ng cÊp sö dông cña LÔ phÈm ph­êng kh«ng ®ñ ®Ó n©ng cÊp tói hµnh trang.", 
+		Say("Tæng qu¶n LÔ phÈm ph­êng£ºÄ¿Ç°ÔÛÀñÎï·»µÄÊ¹ÓÃµÈ¼¶»¹²»ÄÜ¹»Éı¼¶ÄãµÄ×ÓÄ¸´ü¡£", 
 			1, "Lóc kh¸c ta quay l¹i vËy./cancel")
 			return
 	end
 	if (GetContribution() < aLevelPriceBag[nToLevel])then
-		Say("<#>Tæng qu¶n LÔ phÈm ph­êng: §iÓm cèng hiÕn kh«ng ®ñ, h·y ra søc v× bang héi ®·.", 1, "Kh«ng ®ñ sao/cancel")
+		Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÄãµÄ¹±Ï×¶È²»¹»ÄØ£¬ÔÙ¶àÎª°ï»á×öĞ©ÊÂÇé°É", 1, "Kh«ng ®ñ sao/cancel")
 		return
 	end
 	AddContribution(-aLevelPriceBag[nToLevel])
 	SetPartnerBagLevel(nToLevel)
-	Say("<#>Tæng qu¶n LÔ phÈm ph­êng: H·y tin t­ëng vµo kh¶ n¨ng cña ta, ng­¬i xem, tói hµnh trang cña ng­¬i "..nToLevel.."®· lµm xong råi, sau nµy cã thÓ ®Õn nhËn nhiÒu hång bao h¬n.", 1, 
+	Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÏàĞÅÎÒµÄÊÖÒÕ°É£¬Á¢µÈ¿ÉÈ¡¡£ßÏ£¬Äã¿´£¬ÄãµÄ"..nToLevel.."®· lµm xong råi, sau nµy cã thÓ ®Õn nhËn nhiÒu hång bao h¬n.", 1, 
 		"Qu¶ nhiªn danh bÊt h­ truyÒn/cancel")
 	Msg2Player("Tói hµnh trang ®· ®¹t cÊp "..nToLevel..", kh«ng gian chøa lín h¬n ")
 end
@@ -108,10 +108,10 @@ function use_g_1_ok(nTongID, nWorkshopID)
 			local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	_dbgMsg("Sè nhËp vµo cßn l¹i *100: "..TWS_GetDayOutput(nTongID, nWorkshopID))
 			if (TWS_GetDayOutput(nTongID, nWorkshopID) < 100) then
-		Say("<#>Tæng qu¶n LÔ phÈm ph­êng: ThËt ®¸ng tiÕc, h«m nay lÔ phÈm ®· ph¸t xong, ngµy mai h·y ®Õn vËy!", 0)
+		Say("<#>Tæng qu¶n LÔ phÈm ph­êng£º¶Ô²»Æğ£¬½ñÌìµÄÀñÆ·ÒÑ¾­·¢·ÅÍê±Ï£¬ÇëÃ÷ÌìÔÙÀ´°É£¡", 0)
 				return 0;
 			end
-	Say("<#>Tæng qu¶n LÔ phÈm ph­êng: CÇn sö dông <color=yellow>"..aLevelHongBaoPrice[nLevel].."<color> ®iÓm cèng hiÕn ®Ó ®æi lÊy 1 hång bao", 2, 
+	Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÄãĞèÒª»¨·Ñ<color=yellow>"..aLevelHongBaoPrice[nLevel].."<color> ®iÓm cèng hiÕn ®Ó ®æi lÊy 1 hång bao", 2, 
 		"§­îc. /#use_g_1_ok2".."("..nTongID..","..nWorkshopID..")", "Kh«ng muèn/cancel");
 	else
 		Talk(1,"","Thêi gian nhËn vËt phÈm lµ tõ 12h30 ®Õn 22h h»ng ngµy !")
@@ -122,11 +122,11 @@ end
 function use_g_1_ok2(nTongID, nWorkshopID)
 	local nLevel = TWS_GetUseLevel(nTongID, nWorkshopID)
 	if (GetContribution() < aLevelHongBaoPrice[nLevel]) then
-		Say("<#>Tæng qu¶n LÔ phÈm ph­êng: ThËt ®¸ng tiÕc, ®iÓm cèng hiÕn kh«ng ®ñ, kh«ng thÓ nhËn ®¹i hång bao!", 0)
+		Say("<#>Tæng qu¶n LÔ phÈm ph­êng£º¶Ô²»Æğ£¬ÄãµÄ¹±Ï×¶È²»×ã£¬ÔõÄÜÁìÈ¡ºì°üÄØ£¡", 0)
 		return
 	end
 	if (GetTaskTemp(196) ~= 0)then
-		Say("<#>Tæng qu¶n LÔ phÈm ph­êng: VËt phÈm nµy ch­a cã, h·y ®îi khi kh¸c!", 0)
+		Say("<#>Tæng qu¶n LÔ phÈm ph­êng£ºÄúÒªµÄ¶«Î÷»¹Ã»µ½»õ£¬ÇëÉÔµÈÆ¬¿Ì£¡", 0)
 		return
 	end
 	if CalcFreeItemCellCount() < 2 then
@@ -219,7 +219,7 @@ function GET_DESC(nTongID, nWorkshopID, nType)
 			"Ng©n s¸ch kiÕn thiÕt ban ®Çu: <color=Violet>"..nNextOpenFund.." v¹n<color>\n"
 		return szMsg
 	else
-		local szMsg = "Tr¹ng th¸i t¸c ph­êng: <color=water>Ch­a thµnh lËp<color>\n"..
+		local szMsg = "Tr¹ng th¸i t¸c ph­êng: <color=water>Î´½¨Á¢<color>\n"..
 			"Ng©n s¸ch kiÕn thÕt cÇn ®Ó x©y dùng: <color=gold>"..nUpgradeCostFund.." v¹n<color>\n"..
 			"<color=green>§¼ng cÊp kÕ tiÕp <color>\n"..
 			"<color=water>S¶n l­îng thÇn bİ hång bao mçi ngµy t¨ng lªn: <color=Violet>"..dNextHongBaoCount.."<color> lÇn\n"..	

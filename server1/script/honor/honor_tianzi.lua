@@ -60,8 +60,8 @@ function tbHonor_Sys_2009:page_gen(tb_pageinfo, str_parameter)
 	    if(tbTianzi.szEmperor == nil or tbTianzi.szEmperor == "") then
             strEmperor = "V« hÖ ";
 	        strTitle = "V« hÖ ";
-	        strBeginTime = "<color=yellow>V«<color>";
-	        strEndTime = "<color=yellow>V«<color>";
+	        strBeginTime = "<color=yellow>V« hÖ <color>";
+	        strEndTime = "<color=yellow>V« hÖ <color>";
 	        strTong = "V« hÖ ";
 	        strScore = "V« hÖ "
 	        

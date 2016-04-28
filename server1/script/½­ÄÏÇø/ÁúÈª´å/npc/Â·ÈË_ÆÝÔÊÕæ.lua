@@ -23,7 +23,7 @@ end
 
 function Uworld_wuget()
 	if (GetCamp() == 0) and (GetTask(75) < 255) then		-- °×ÃûÎ´Ñ§Ò°ÇòÈ­µÄ£¬²»ÔÊÐí½ÓÈÎÎñ
-		Talk(1,"","Khµ khµ!. xem c¸i t­íng ®i kh«ng c¶n ®­îc giã cña ng­¬i, nãi ra chuyÖn nµy cã h÷u Ých g× ®©u, hay lµ th«i vËy. Khµ khµ... ")
+		Talk(1,"","Khµ khµ khµ khµ. . ¿´Ñù×ÓÈ¥Ò²²»ÄÜÄãÁË£¬Ëµ³öÕâ¼þÊÂÓÐÊ²Ã´ºÃ´¦£¬ËãÁË¡£Khµ khµ khµ khµ. ¡£")
 	else
 		Say("Ngò §éc gi¸o, V©n BÊt Tµ...",2,"Ng­¬i ®îi ®Êy, ta sÏ d¹y cho ng­¬i biÕt thÕ nµo lµ chÝnh ®¹o /Uworld_wduok","V©n BÊt Tµ c¶ ®êi dïng ®éc, ta kh«ng muèn g©y tíi h¾n ®Ó chÕt, ng­¬i tù gi÷ m×nh ®ã /Uworld_wduno")
 	end

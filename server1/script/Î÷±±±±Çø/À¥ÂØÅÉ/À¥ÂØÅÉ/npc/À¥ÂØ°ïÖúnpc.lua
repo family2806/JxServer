@@ -15,7 +15,7 @@ function main(sel)
 	elseif (player_faction ~= "") then			-- ·Ç±¾ÃÅ³öÊ¦¡¢ÆäËüÃÅÅÉ£¨ÃÅÅÉ²»Îª¿Õ¼´Ö¸·ÇĞÂÊÖ£©
 		Say("Hoan nghªnh ®· ®Õn C«n L«n ph¸i, ®­êng xa vÊt v¶ ®Õn ®©y, kh«ng biÕt cã ®iÒu g× chØ gi¸o?","T×m hiÓu quı ph¸i/faction","Kh«ng hái n÷a!/nothing")
 	else													-- ĞÂÊÖ
-		Say("C«n L«n ph¸i §¹o ph¸p tæ tiªn, rÊt hoan nghªnh quı vŞ tham quan häc nghÖ ",4,"T×m hiÓu quı ph¸i/faction","Kh«ng hái n÷a!/nothing","T×m hiÓu ®iÒu kiÖn nhËp m«n/task_get","Kh«ng hái n÷a!/nothing")
+		Say("C«n L«n ph¸i §¹o ph¸p tæ tiªn, rÊt hoan nghªnh quı vŞ tham quan häc nghÖ ",4,"T×m hiÓu quı ph¸i/faction","T×m hiÓu c¸c vŞ ®¹o tr­ëng/member","T×m hiÓu ®iÒu kiÖn nhËp m«n/task_get","Kh«ng hái n÷a!/nothing")
 	end
 end
 

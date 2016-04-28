@@ -25,7 +25,7 @@ function main2()
 	Uworld123 = GetTask(123)
 	if (GetFaction() == "tangmen") and (GetSeries() == 1) then		-- §­êng M«nÃÅÅÉÈÎÎñ
 		if (UTask_tm == 30*256) and (GetLevel() >= 30) then		--30¼¶ÈÎÎñÆô¶¯
-			Talk(3, "L30_get", "<color=Red>phßng Háa khİ<color> cña <color=Red>§­êng V©n<color> s­ thóc thËt ®¸ng th­¬ng. Hai n¨m tr­íc cã mét g· lai lŞch bÊt minh b¾t cãc TiÓu Xuyªn, ®øa con ®éc nhÊt cña «ng, muèn Ğp «ng giao ra Bİ kiÕp <color=Red>'Háa Khİ Phæ'<color> cña bæn m«n.", "§­êng V©n s­ thóc kh«ng d¸m quay l­ng l¹i víi m«n quy. KÕt qu¶ lµ ngµy thø 2 g· kia ®­a tíi c¸nh tay cña TiÓu Xuyªn. S­ thóc chØ cã ®øa con trai nµy, nh­ng l¹i kh«ng thÓ giao 'Háa Khİ phæ' cho chóng ®­îc. Nµo ngê, l¹i ®æi lÊy thi thÓ cña TiÓu Xuyªn. S­ thóc ®au ®ín tét cïng, thÒ nhÊt ®Şnh ph¶i tr¶ mèi thï s©u ®Ëm!", "Nh­ng v× §­êng V©n s­ thóc tiÕt lé §­êng M«n Bİ kiÕp, nªn ph¶i chŞu sù trõng ph¹t cña m«n quy c¶ ®êi kh«ng thÓ rêi khái §­êng M«n nöa b­íc. Thï hËn kia e r»ng kiÕp nµy kh«ng thÓ tr¶ ®­îc!")
+			Talk(3, "L30_get", "<color=Red>phßng Háa khİ<color> cña <color=Red>§­êng V©n<color> s­ thóc thËt ®¸ng th­¬ng. Hai n¨m tr­íc cã mét g· lai lŞch bÊt minh b¾t cãc TiÓu Xuyªn, ®øa con ®éc nhÊt cña «ng, muèn Ğp «ng giao ra Bİ kiÕp <color=Red>'Háa Khİ Phæ'<color> cña bæn m«n.", "§­êng V©n s­ thóc kh«ng d¸m quay l­ng l¹i víi m«n quy. KÕt qu¶ lµ ngµy thø 2 g· kia ®­a tíi c¸nh tay cña TiÓu Xuyªn. S­ thóc chØ cã ®øa con trai nµy, nh­ng l¹i kh«ng thÓ giao 'Háa Khİ phæ' cho chóng ®­îc. Nµo ngê, l¹i ®æi lÊy thi thÓ cña TiÓu Xuyªn. S­ thóc ®au ®ín tét cïng, thÒ nhÊt ®Şnh ph¶i tr¶ mèi thï s©u ®Ëm!", "µ«ÊÇÓÉÓÚÌÆÔÆÊ¦ÊåĞ¹Â©ÁË§­êng M«nÃØóÅ£¬±ØĞë½ÓÊÜÃÅ¹æ´¦·££¬ËùÒÔËûÖÕÉú²»ÄÜÔÙÀë¿ª§­êng M«n°ë²½£¬´Ë³ğ´ËºŞ¿ÖÅÂ½ñÉú¶¼±¨²»ÁËÁË£¡!")
 		elseif (UTask_tm == 30*256+50) then
 			Talk(2, "", "T¹i h¹ ®· t×m ®­îc tªn thæ phØ b¾t cãc con trai cña §­êng V©n s­ thóc, ®o¹t vÒ <color=Red> 'Háa Khİ Phæ'<color>.", " Tèt l¾m,<color=Red>§­êng V©n<color> s­ thóc nhÊt ®Şnh sÏ c¶m thÊy an ñi phÇn nµo. H·y giao <color=Red> 'Háa Khİ Phæ'<color>cho «ng Êy. ¤ng ta ë trong <color=Red>phßng Háa khİ<color>.")
 			Msg2Player("VÒ phßng tÕ tæ t×m §­êng BÊt NhiÔm, ®­îc biÕt §­êng V©n s­ thóc ®ang ë Háa Khİ phßng. ")
@@ -63,7 +63,7 @@ function main2()
 			Talk(1,"","N÷ hiÖp quªn mang Bİ kiÕp ®i råi!")
 		end
 		AddEventItem(377)
-		Msg2Player("LÊy l¹i bİ kİp §­êng m«n ")
+		Msg2Player("ÄÃµ½§­êng M«nÃØóÅ")
 	elseif (Uworld123 == 70) or (Uworld123 == 75) then			-- ÈÎÎñÍê³É
 		Talk(1,"Uworld123_prise","Ha ha ha. Ta sÏ ®îi tin mõng cña ng­¬i. ThËt lßng c¶m ¬n ng­¬i!")
 	elseif (Uworld123 >= 10) and (Uworld123 < 80) then		-- ÌÆ²»È¾ÈÎÎñ½øĞĞÖĞ
@@ -121,7 +121,7 @@ end
 function Uworld123_step3()
 	AddEventItem(377)
 	SetTask(123,60)
-	Msg2Player("LÊy ®­îc bİ kİp §­êng M«n. ")
+	Msg2Player("ÄÃµ½§­êng M«nÃØóÅ. ")
 end
 
 function Uworld123_prise()

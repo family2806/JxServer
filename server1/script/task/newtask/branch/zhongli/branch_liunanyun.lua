@@ -237,7 +237,7 @@ function Uworld1056_zfz1()
 	elseif ( GetLevel() < 40 ) then
 		Talk(1,"","Xin lçi! §¼ng cÊp cña ng­¬i ch­a ®¹t yªu cÇu cña nhiÖm vô, ®îi ®Õn cÊp 40, sau khi tiÕp nhËn nhiÖm vô Chİnh tuyÕn t­¬ng øng míi ®Õn t×m ta.")
 	elseif ( GetLevel() >= 50 ) then
-		Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ yªu cÇu cña nhiÖm vô, kh«ng thÓ tiÕp nhËn nhiÖm vô.")
+		Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ yªu cÇu cña nhiÖm vô, kh«ng thÓ tiÕp nhËn nhiÖm vô.?")
 	elseif ( Uworld1002 < 120 ) then
 		Talk(1,"","Xin lçi! B¹n ch­a lµm nhiÖm vô Chİnh tuyÕn phe Trung t­¬ng øng víi ®¼ng cÊp, h·y ®Õn <color=red>BiÖn Kinh<color>t×m Phã Nam B¨ng.")
 	else
@@ -291,7 +291,7 @@ function Uworld1057_zfz1()
 	elseif ( GetLevel() < 50 ) then
 		Talk(1,"","Xin lçi! §¼ng cÊp cña ng­¬i ch­a ®¹t yªu cÇu cña nhiÖm vô, ®îi ®Õn cÊp 50, sau khi tiÕp nhËn nhiÖm vô Chİnh tuyÕn t­¬ng øng míi ®Õn t×m ta.")
 	elseif ( GetLevel() >= 60 ) then
-		Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ yªu cÇu cña nhiÖm vô, kh«ng thÓ tiÕp nhËn nhiÖm vô.")
+		Talk(1,"","Xin lçi! §¼ng cÊp cña b¹n v­ît qu¸ yªu cÇu cña nhiÖm vô, kh«ng thÓ tiÕp nhËn nhiÖm vô.?")
 	elseif ( Uworld1002 < 190 ) then
 		Talk(1,"","Xin lçi! B¹n ch­a lµm nhiÖm vô Chİnh tuyÕn phe Trung t­¬ng øng víi ®¼ng cÊp, h·y ®Õn <color=red>BiÖn Kinh<color>t×m Phã Nam B¨ng.")
 	else

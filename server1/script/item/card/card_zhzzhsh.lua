@@ -68,7 +68,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 			AddOwnExp(myLevel * (20+0.1*myLevel)-10)
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --回写信息
 			PlayerIndex = otherIndex
-			Msg2Player(myName.."頲 1 Uy猲 Μng M藅, gi髉 cho duy猲 ph薾 c馻 c竎 b筺 th猰 g莕 nhau h琻. Hi謓 nay, b筺  t輈h l騳"..otherNum.."Uy猲 Μng M藅.")
+			Msg2Player(myName.."得到一张执子之手卡，把你们th猰 g莕 nhau h琻. Hi謓 nay, b筺  t輈h l騳"..otherNum.."Uy猲 Μng M藅.")
 			AddOwnExp(otherLevel * (10+0.07*otherLevel))
 			SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --回写信息
 			if(myNum > 98) then --达到99个，与子偕老啦
@@ -103,7 +103,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 		Msg2Player("B筺 頲 1 Uy猲 Μng M藅, c飊g"..otherName.."duy猲 ph薾 th猰 g莕 nhau h琻. B筺 hi謓  t輈h l騳 頲"..myNum.."Uy猲 Μng M藅.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,myNum)) --回写信息
 		PlayerIndex = otherIndex
-		Msg2Player(myName.."頲 1 Uy猲 Μng M藅, duy猲 ph薾 c馻 b筺 th猰 g莕 nhau h琻. Hi謓 nay, b筺 t輈h l騳 頲"..otherNum.."Uy猲 Μng M藅.")
+		Msg2Player(myName.."得到一张执子之手卡，与你duy猲 ph薾 th猰 g莕 nhau h琻. B筺 hi謓  t輈h l騳 頲"..otherNum.."Uy猲 Μng M藅.")
 		SetTask(TID_CARDNUMBER,SetByte(GetTask(TID_CARDNUMBER),GETBYTE,otherNum)) --回写信息
 		PlayerIndex = oldPlyIdx
 		return 0
@@ -113,7 +113,7 @@ function PickUp( nItemIndex, nPlayerIndex )
 	Msg2Player("B筺 頲 1 Uy猲 Μng M藅, ng th阨 c飊g"..otherName.."b総 u b総 u cu閏 t譶h duy猲. ")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = otherIndex
-	Msg2Player(myName.."c 1 Uy猲 Μng M藅, ng th阨 c飊g b筺 b総 u cu閏 t譶h duy猲.")
+	Msg2Player(myName.."得到一张执子之手卡，并且和你b総 u b総 u cu閏 t譶h duy猲. ")
 	SetTask(TID_VALIDATION,code)
 	PlayerIndex = oldPlyIdx
 	return 0

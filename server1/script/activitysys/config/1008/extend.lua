@@ -143,13 +143,13 @@ function pActivity:GiveRose(nCount)
 	local nWhiteGiftCount = floor(nCurCount/10) - floor(nLastCount/10)
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 1 then
-		Talk(1, "", "HiÖn t¹i ®· hÕt thêi gian tæng kÕt xÕp h¹ng sù kiÖn Hoa Hång, nép Hoa Hång kh«ng ®­îc tÝnh vµo ®iÓm xÕp h¹ng.")
+		Talk(1, "", "Ä¿Ç°ÒÑ¹ýÁËHoa hång»î¶¯ÅÅÃûÍ³¼ÆÊ±¼ä£¬½»Hoa hång²»ÄÜËãÈëÅÅÃû.")
 	else
 		%tbTop10:GiveRose(GetName(), GetAccount(), nCurCount)
 	end
 	if nWhiteGiftCount > 0 then
 		local tbAward = {szName = "Hép quµ tr¾ng", tbProp = {6,1,30175,1,0,0}, nCount = nWhiteGiftCount, nExpiredTime = 20120301}
-		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "PhanThuongNop10HoaHong"})
+		tbAwardTemplet:Give(tbAward, 1 , {%EVENT_LOG_TITLE, "½»10Ö¦Hoa hångµÄ½±Àø"})
 	end	
 end
 
@@ -236,15 +236,15 @@ function pActivity:UpdateRoseNumber()
 	end
 	local nLastCount = GetTask(%TSK_GIVE_ROSE_COUNT)
 	if nLastCount <= 0 then
-		Talk(1, "", "C¸c h¹ ch­a nép cho ta Hoa Hång nµo.")
+		Talk(1, "", "¸óÏÂÎ´½»¸øÎÒÈçºÎHoa hång.")
 		return
 	end	
 	local nPhase = %tbTop10:GetPhase()
 	if nPhase ~= 1 then
-		Talk(1, "", "HiÖn t¹i ®· hÕt thêi gian tæng kÕt xÕp h¹ng sù kiÖn Hoa Hång, nép Hoa Hång kh«ng ®­îc tÝnh vµo ®iÓm xÕp h¹ng.")
+		Talk(1, "", "Ä¿Ç°ÒÑ¹ýÁËHoa hång»î¶¯ÅÅÃûÍ³¼ÆÊ±¼ä£¬½»Hoa hång²»ÄÜËãÈëÅÅÃû.")
 	else
 		%tbTop10:GiveRose(GetName(), GetAccount(), nLastCount)
-		Msg2Player(format("CËp nhËt thµnh c«ng. TÝnh tíi thêi ®iÓm hiÖn t¹i, sè l­îng Hoa Hång ®· nép lµ <color=green>%d<color>", nLastCount))
+		Msg2Player(format("¸üÐÂ³É¹¦¡£µ½Ä¿Ç°ÎªÖ¹£¬Hoa hångÊýÁ¿ÒÑ½»<color=green>%d<color>", nLastCount))
 		tbVNG_BitTask_Lib:setBitTask(%tbBITTSK_ROSE_ACTIVITY_UPDATE_ROSE_COUNT, 1)
 	end	
 end
