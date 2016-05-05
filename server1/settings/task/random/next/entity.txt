@@ -1,295 +1,295 @@
 TaskName	TaskType	Genre	Detail	Particular	Level	GoodsFive	Quality	GoodsNum	DelGoods	RecordSeed	Money	KillNpcName	DropRate	TalkNpcName	TalkNpcMap	TaskText
-ÈÎÎñÃû³Æ	ÈÎÎñÀàÐÍ	×ÜÀà	·ÖÀà	Ï¸Àà	µÈ¼¶	ÎåÐÐ	»Æ½ð±àºÅ	ÊýÁ¿	ÊÇ·ñÉ¾³ý 	¼ÇÂ¼Ëæ»úÖÖ×Ó	Ö§¸¶µÄ½ðÇ®	É±¹Ö¼ÆÊý±àºÅ	µôÂä°Ù·Ö±È	¶Ô»°ÈËÎïÃû×Ö	¶Ô»°ÈËÎïµØÍ¼	ÈÎÎñÃèÊö
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	1	n	n		1	1							³¤ÃüÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	2	n	n		1	1							¼ÓÅÜÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	3	n	n		1	1							´óÁ¦Íè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	4	n	n		1	1							¸ßÉÁÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	5	n	n		1	1							¸ßÖÐÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	6	n	n		1	1							·ÉËÙÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	7	n	n		1	1							±ù·ÀÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	8	n	n		1	1							À×·ÀÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	9	n	n		1	1							»ð·ÀÍè
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	ÊÕ¼¯ÎïÆ·	6	0	10	n	n		1	1							¶¾·ÀÍè
+Tªn nhiÖm vô 	Lo¹i h×nh nhiÖm vô 	Tæng lo¹i	Ph©n lo¹i	Lo¹i nhá 	®¼ng cÊp	Ngò Hµnh	M· sè Hoµng Kim	Sè l­îng	cã thÓ xãa	Log ghi l¹i H¹t ngÉu nhiªn	Gi¸ 	M· sè thèng kª sè l­îng qu¸i bÞ giÕt	Tû lÖ r¬i	Tªn nh©n vËt §èi tho¹i	Khu vùc nh©n vËt §èi tho¹i	Miªu t¶ nhiÖm vô 
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	§èi tho¹i													VÖ binh thµnh m«n	L©m An	
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	1	n	n		1	1							Tr­êng MÖnh hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	2	n	n		1	1							Gia Bµo hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	3	n	n		1	1							§¹i Lùc hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	4	n	n		1	1							Cao ThiÓm hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	5	n	n		1	1							Cao Trung hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	6	n	n		1	1							Phi Tèc hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	7	n	n		1	1							B¨ng Phßng hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	8	n	n		1	1							L«i Phßng hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	9	n	n		1	1							Háa Phßng hoµn
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	thu thËp vËt phÈm 	6	0	10	n	n		1	1							§éc Phßng hoµn
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	¶Ô»°													Äôß±³¾	ÏåÑô	
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	ÊÕ¼¯ÎïÆ·	6	1	400	90	0		1	1							½ð90É±ÊÖïµ
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	ÊÕ¼¯ÎïÆ·	6	1	400	90	1		1	1							Ä¾90É±ÊÖïµ
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	ÊÕ¼¯ÎïÆ·	6	1	400	90	2		1	1							Ë®90É±ÊÖïµ
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	ÊÕ¼¯ÎïÆ·	6	1	400	90	3		1	1							»ð90É±ÊÖïµ
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	ÊÕ¼¯ÎïÆ·	6	1	400	90	4		1	1							ÍÁ90É±ÊÖïµ
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	§èi tho¹i													NhiÕp ThÝ TrÇn	T­¬ng D­¬ng	
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	thu thËp vËt phÈm 	6	1	400	90	0		1	1							S¸t thñ gi¶n cÊp 90 (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	thu thËp vËt phÈm 	6	1	400	90	1		1	1							S¸t thñ gi¶n cÊp 90 (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	thu thËp vËt phÈm 	6	1	400	90	2		1	1							S¸t thñ gi¶n cÊp 90 (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	thu thËp vËt phÈm 	6	1	400	90	3		1	1							S¸t thñ gi¶n cÊp 90 (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	thu thËp vËt phÈm 	6	1	400	90	4		1	1							S¸t thñ gi¶n cÊp 90 (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	¶Ô»°													Ìú½³	³É¶¼	
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	149	n	n		1	1							ÐþÌúÔ­¿ó
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	150	n	0		1	1							½ðÊôÐÔ¿×È¸Ô­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	150	n	1		1	1							Ä¾ÊôÐÔ¿×È¸Ô­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	150	n	2		1	1							Ë®ÊôÐÔ¿×È¸Ô­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	150	n	3		1	1							»ðÊôÐÔ¿×È¸Ô­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	150	n	4		1	1							ÍÁÊôÐÔ¿×È¸Ô­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	151	n	n		1	1							ÃØÒøÔ­¿ó
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	152	n	0		1	1							½ðÊôÐÔÜ½ÈØÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	152	n	1		1	1							Ä¾ÊôÐÔÜ½ÈØÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	152	n	2		1	1							Ë®ÊôÐÔÜ½ÈØÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	152	n	3		1	1							»ðÊôÐÔÜ½ÈØÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	152	n	4		1	1							ÍÁÊôÐÔÜ½ÈØÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	153	n	n		1	1							ÖìÉ°Ô­¿ó
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	154	n	0		1	1							½ðÊôÐÔÖÓÈéÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	154	n	1		1	1							Ä¾ÊôÐÔÖÓÈéÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	154	n	2		1	1							Ë®ÊôÐÔÖÓÈéÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	154	n	3		1	1							»ðÊôÐÔÖÓÈéÔ­Ê¯
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	ÊÕ¼¯ÎïÆ·	6	1	154	n	4		1	1							ÍÁÊôÐÔÖÓÈéÔ­Ê¯
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	§èi tho¹i													Thî rÌn	Thµnh §«	
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	149	n	n		1	1							HuyÒn ThiÕt Nguyªn Kho¸ng
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	150	n	0		1	1							Khæng T­íc Nguyªn Th¹ch (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	150	n	1		1	1							Khæng T­íc Nguyªn Th¹ch (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	150	n	2		1	1							Khæng T­íc Nguyªn Th¹ch (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	150	n	3		1	1							Khæng T­íc Nguyªn Th¹ch (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	150	n	4		1	1							Khæng T­íc Nguyªn Th¹ch (Thæ) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	151	n	n		1	1							MËt Ng©n Nguyªn Kho¸ng
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	152	n	0		1	1							Phï Dung Nguyªn Th¹ch (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	152	n	1		1	1							Phï Dung Nguyªn Th¹ch (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	152	n	2		1	1							Phï Dung Nguyªn Th¹ch (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	152	n	3		1	1							Phï Dung Nguyªn Th¹ch (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	152	n	4		1	1							Phï Dung Nguyªn Th¹ch (Thæ) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	153	n	n		1	1							Chu Sa Nguyªn Kho¸ng
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	154	n	0		1	1							Chung Nhò Nguyªn Th¹ch (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	154	n	1		1	1							Chung Nhò Nguyªn Th¹ch (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	154	n	2		1	1							Chung Nhò Nguyªn Th¹ch (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	154	n	3		1	1							Chung Nhò Nguyªn Th¹ch (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	thu thËp vËt phÈm 	6	1	154	n	4		1	1							Chung Nhò Nguyªn Th¹ch (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ãµ¹å»¨	¶Ô»°													Àñ¹Ù	³É¶¼	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ãµ¹å»¨	ÊÕ¼¯ÎïÆ·	6	0	20	n	n		9	1							¾Å¶äÃµ¹å»¨
+NgÉu nhiªn_MËt §å_Thu thËp Hoa hång	§èi tho¹i													LÔ Quan	Thµnh §«	
+NgÉu nhiªn_MËt §å_Thu thËp Hoa hång	thu thËp vËt phÈm 	6	0	20	n	n		9	1							9 Hoa hång
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	383	n	n		1	1							»Æ½ðÍ¼Æ×-¶¨¹úÖ®ÇàÉ´³¤ÉÀ
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	384	n	n		1	1							»Æ½ðÍ¼Æ×-¶¨¹úÖ®ÎÙÉ°·¢¹Ú
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	385	n	n		1	1							»Æ½ðÍ¼Æ×-¶¨¹úÖ®³à¾îÈíÑ¥
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	386	n	n		1	1							»Æ½ðÍ¼Æ×-¶¨¹úÖ®×ÏÌÙ»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	387	n	n		1	1							»Æ½ðÍ¼Æ×-¶¨¹úÖ®Òø²ÏÑü´ø
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	thu thËp vËt phÈm 	6	1	27	n	n		1	1							Tô TiÔn thuËt. B¹o Vò Lª Hoa
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	thu thËp vËt phÈm 	6	1	28	n	n		1	1							H·m TÜnh thuËt.Lo¹n Hoµn KÝch
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	thu thËp vËt phÈm 	6	1	45	n	n		1	1							Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	thu thËp vËt phÈm 	6	1	46	n	n		1	1							Phi Tiªu thuËt. Cöu Cung Phi Tinh
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	388	n	n		1	1							»Æ½ðÍ¼Æ×-°²°îÖ®±ù¾§Ê¯ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	389	n	n		1	1							»Æ½ðÍ¼Æ×-°²°îÖ®¾Õ»¨Ê¯Ö¸»·
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	390	n	n		1	1							»Æ½ðÍ¼Æ×-°²°îÖ®Ìï»ÆÊ¯ÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	ÊÕ¼¯ÎïÆ·	6	1	391	n	n		1	1							»Æ½ðÍ¼Æ×-°²°îÖ®¼¦ÑªÊ¯½äÖ¸
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	thu thËp vËt phÈm 	6	1	47	n	n		1	1							Ngò §éc Ch­ëng Ph¸p. QuyÓn 1
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	thu thËp vËt phÈm 	6	1	48	n	n		1	1							Ngò §éc §ao ph¸p. QuyÓn 2
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	thu thËp vËt phÈm 	6	1	49	n	n		1	1							Ngò §éc NhiÕp T©m thuËt. QuyÓn 3
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	27	n	n		1	1							Ðä¼ýÊõ¡¤±©ÓêÀæ»¨
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	28	n	n		1	1							ÏÝÚåÊõ¡¤ÂÒ»·»÷
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	45	n	n		1	1							·Éµ¶Êõ¡¤Éã»êÔÂÓ°
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	46	n	n		1	1							·ÉïÚÊõ¡¤¾Å¹¬·ÉÐÇ
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	thu thËp vËt phÈm 	6	1	42	n	n		1	1							DiÖt KiÕm MËt TÞch
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	thu thËp vËt phÈm 	6	1	43	n	n		1	1							Nga Mi  PhËt Quang Ch­ëng MËt TÞch
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	thu thËp vËt phÈm 	6	1	59	n	n		1	1							Phæ §é MËt TÞch
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	47	n	n		1	1							Îå¶¾ÕÆ·¨¡¤¾íÒ»
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	48	n	n		1	1							Îå¶¾µ¶·¨¡¤¾í¶þ
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	49	n	n		1	1							Îå¶¾ÉåÐÄÊõ¡¤¾íÈý
+NgÉu nhiªn_MËt §å_Thu thËpThóy Yªn MËt tÞch kü n¨ng	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËpThóy Yªn MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	40	n	n		1	1							Thóy Yªn §ao ph¸p
+NgÉu nhiªn_MËt §å_Thu thËpThóy Yªn MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	41	n	n		1	1							Thóy Yªn Song ®ao
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	42	n	n		1	1							Ãð½£ÃØ¼®
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	43	n	n		1	1							¶ëáÒ·ð¹âÕÆÃØ¼®
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	59	n	n		1	1							ÆÕ¶ÉÃØ¼®
+NgÉu nhiªn_MËt §å_Thu thËpC¸i Bang MËt tÞch kü n¨ng	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËpC¸i Bang MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	54	n	n		1	1							C¸i Bang Ch­ëng Ph¸p
+NgÉu nhiªn_MËt §å_Thu thËpC¸i Bang MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	55	n	n		1	1							C¸i Bang C«n ph¸p
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯´äÑÌ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯´äÑÌ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	40	n	n		1	1							´äÑÌµ¶·¨
-Ëæ»ú_¾íÖá_ÊÕ¼¯´äÑÌ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	41	n	n		1	1							´äÑÌË«µ¶
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	thu thËp vËt phÈm 	6	1	35	n	n		1	1							V©n Long KÝch. M©u ph¸p
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	thu thËp vËt phÈm 	6	1	36	n	n		1	1							L­u Tinh. §ao ph¸p
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	thu thËp vËt phÈm 	6	1	53	n	n		1	1							NhiÕp Hån. Chó thuËt
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	54	n	n		1	1							Ø¤°ïÕÆ·¨
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	55	n	n		1	1							Ø¤°ï¹÷·¨
+NgÉu nhiªn_MËt §å_Thu thËpVâ §ang MËt tÞch kü n¨ng	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËpVâ §ang MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	33	n	n		1	1							Th¸i Cùc QuyÒn Phæ. QuyÓn 3
+NgÉu nhiªn_MËt §å_Thu thËpVâ §ang MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	34	n	n		1	1							Th¸i Cùc KiÕm Phæ. QuyÓn 2
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	35	n	n		1	1							ÔÆÁú»÷¡¤Ã¬·¨
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	36	n	n		1	1							Á÷ÐÇ¡¤µ¶·¨
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	53	n	n		1	1							Éã»ê¡¤×çÖä
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	thu thËp vËt phÈm 	6	1	50	n	n		1	1							Ngù Phong thuËt
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	thu thËp vËt phÈm 	6	1	51	n	n		1	1							Ngù L«i thuËt
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	thu thËp vËt phÈm 	6	1	52	n	n		1	1							Ngù T©m thuËt
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îäµ±¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îäµ±¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	33	n	n		1	1							Ì«¼«È­Æ×¡¤¾íÈý
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îäµ±¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	34	n	n		1	1							Ì«¼«½£Æ×¡¤¾í¶þ
+NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	56	n	n		1	1							ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1
+NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	57	n	n		1	1							ThiÕu L©m C«n ph¸p. QuyÓn 2
+NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	thu thËp vËt phÈm 	6	1	58	n	n		1	1							ThiÕu L©m §ao ph¸p. QuyÓn 3
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	50	n	n		1	1							Ô¦·çÊõ
-Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	51	n	n		1	1							Ô¦À×Êõ
-Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	52	n	n		1	1							Ô¦ÐÄÊõ
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	thu thËp vËt phÈm 	6	1	37	n	n		1	1							Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	thu thËp vËt phÈm 	6	1	38	n	n		1	1							Thiªn V­¬ng Th­¬ng ph¸p. QuyÓn 2
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	thu thËp vËt phÈm 	6	1	39	n	n		1	1							Thiªn V­¬ng §ao ph¸p.QuyÓn 3
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	56	n	n		1	1							ÉÙÁÖÈ­·¨¡¤¾íÒ»
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	57	n	n		1	1							ÉÙÁÖ¹÷·¨¡¤¾í¶þ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	58	n	n		1	1							ÉÙÁÖµ¶·¨¡¤¾íÈý
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	§èi tho¹i													TrÇn Tam B¶o	BiÖn Kinh	
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						168	1	1							Thiªn Hoµng Long Long §µi
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						169	1	1							Thiªn Hoµng Long B¹ch Long Tøc
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						170	1	1							Thiªn Hoµng Long TrÊn Minh Liªn
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						171	1	1							Thiªn Hoµng Long Cöu HiÖn chØ 
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						172	1	1							Thiªn Hoµng Long Ngäc Tiªu Diªu
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						173	1	1							Thiªn Hoµng Long Hoµng Kim L©n
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						174	1	1							Thiªn Hoµng Long Bµn Long c«i
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						175	1	1							Thiªn Hoµng Long Long Khèc Thiªn Lý 
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	thu thËp Trang bÞ Hoµng Kim						176	1	1							Thiªn Hoµng Long Né Long §ång
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	37	n	n		1	1							ÌìÍõ´¸·¨¡¤¾íÒ»
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	38	n	n		1	1							ÌìÍõÇ¹·¨¡¤¾í¶þ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	ÊÕ¼¯ÎïÆ·	6	1	39	n	n		1	1							ÌìÍõµ¶·¨¡¤¾íÈý
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	§èi tho¹i													TrÇn Tam B¶o	BiÖn Kinh	
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						177	1	1							Kim Phong Thanh D­¬ng Kh«i
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						178	1	1							Kim Phong Kú L©n HuyÕt
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						179	1	1							Kim Phong Tr¹c Liªn Quang
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						180	1	1							Kim Phong C«ng CÈn Tam Th¸n
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						181	1	1							Kim Phong §o¹t Hån Ngäc ®¸i
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						182	1	1							Kim Phong HËu NghÖ dÉn cung
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						183	1	1							Kim Phong Lan §×nh Ngäc
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						184	1	1							Kim Phong Thiªn Lý Th¶o Th­îng Phi
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	thu thËp Trang bÞ Hoµng Kim						185	1	1							Kim Phong §ång T­íc Xu©n Th©m
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	¶Ô»°													³ÂÈý±¦	ãê¾©	
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						168	1	1							Ìì»ÍÁúÆ÷Ö®ÁúÌ§Í·
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						169	1	1							Ìì»ÍÁúÆ÷Ö®°×ÁúÏ¢
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						170	1	1							Ìì»ÍÁúÆ÷Ö®ÕòÚ¤Ö®Á´
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						171	1	1							Ìì»ÍÁúÆ÷Ö®¾ÅÏÖÖ®Ö¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						172	1	1							Ìì»ÍÁúÆ÷Ö®ÓñåÐÒ£
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						173	1	1							Ìì»ÍÁúÆ÷Ö®»Æ½ðÁÛ
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						174	1	1							Ìì»ÍÁúÆ÷Ö®ÅÍÁú¹å
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						175	1	1							Ìì»ÍÁúÆ÷Ö®Áú¿ÞÇ§Àï
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	ÊÕ¼¯»Æ½ð×°±¸						176	1	1							Ìì»ÍÁúÆ÷Ö®Å­ÁúÖ®Í«
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	§èi tho¹i													§inh Viªn ngo¹i	L©m An	
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	490	1	n	n		1	1							M¶nh Tµng B¶o §å 1
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	491	1	n	n		1	1							M¶nh Tµng B¶o §å 2
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	492	1	n	n		1	1							M¶nh Tµng B¶o §å 3
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	493	1	n	n		1	1							M¶nh Tµng B¶o §å 4
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	494	1	n	n		1	1							M¶nh Tµng B¶o §å 5
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	495	1	n	n		1	1							M¶nh Tµng B¶o §å 6
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	496	1	n	n		1	1							M¶nh Tµng B¶o §å 7
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	497	1	n	n		1	1							M¶nh Tµng B¶o §å 8
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	498	1	n	n		1	1							M¶nh Tµng B¶o §å 9
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	499	1	n	n		1	1							M¶nh Tµng B¶o §å 10
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	500	1	n	n		1	1							M¶nh Tµng B¶o §å 11
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	thu thËp vËt phÈm 	4	501	1	n	n		1	1							M¶nh Tµng B¶o §å 12
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	¶Ô»°													³ÂÈý±¦	ãê¾©	
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						177	1	1							½ð·ãÖ®ÇàÑô¿ø
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						178	1	1							½ð·ãÖ®÷è÷ëÑª
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						179	1	1							½ð·ãÖ®åªÖ®Á´¹â
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						180	1	1							½ð·ãÖ®¹«½÷ÈýÌ¾
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						181	1	1							½ð·ãÖ®¶á»êÓñ´ø
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						182	1	1							½ð·ãÖ®ºóôàÒý¹­
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						183	1	1							½ð·ãÖ®À¼Í¤Óñ
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						184	1	1							½ð·ãÖ®Ç§Àï²ÝÉÏ·É
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	ÊÕ¼¯»Æ½ð×°±¸						185	1	1							½ð·ãÖ®Í­È¸´ºÉî
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	§èi tho¹i													Thî rÌn	D­¬ng Ch©u	
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	thu thËp vËt phÈm 	0	0	0	10	0		1	1							HuyÒn ThiÕt KiÕm (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	thu thËp vËt phÈm 	0	0	0	10	1		1	1							HuyÒn ThiÕt KiÕm (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	thu thËp vËt phÈm 	0	0	0	10	2		1	1							HuyÒn ThiÕt KiÕm (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	thu thËp vËt phÈm 	0	0	0	10	3		1	1							HuyÒn ThiÕt KiÕm (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	thu thËp vËt phÈm 	0	0	0	10	4		1	1							HuyÒn ThiÕt KiÕm (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	¶Ô»°													¶¡Ô±Íâ	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	490	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬1
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	491	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬2
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	492	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬3
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	493	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬4
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	494	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬5
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	495	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬6
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	496	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬7
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	497	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬8
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	498	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬9
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	499	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬10
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	500	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬11
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	ÊÕ¼¯ÎïÆ·	4	501	1	n	n		1	1							²Ø±¦Í¼ËéÆ¬12
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	§èi tho¹i													Thî rÌn	D­¬ng Ch©u	
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	thu thËp vËt phÈm 	0	0	1	10	0		1	1							§¹i Phong §ao (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	thu thËp vËt phÈm 	0	0	1	10	1		1	1							§¹i Phong §ao (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	thu thËp vËt phÈm 	0	0	1	10	2		1	1							§¹i Phong §ao (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	thu thËp vËt phÈm 	0	0	1	10	3		1	1							§¹i Phong §ao (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	thu thËp vËt phÈm 	0	0	1	10	4		1	1							§¹i Phong §ao (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						159	1	1							¶¨¹úÖ®ÇàÉ´³¤ÉÀ
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						160	1	1							¶¨¹úÖ®ÎÙÉ°·¢¹Ú
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						161	1	1							¶¨¹úÖ®³à¾îÈíÑ¥
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						162	1	1							¶¨¹úÖ®×ÏÌÙ»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						163	1	1							¶¨¹úÖ®Òø²ÏÑü´ø
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	§èi tho¹i													Thî rÌn	D­¬ng Ch©u	
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	thu thËp vËt phÈm 	0	0	2	10	0		1	1							Kim C« Bæng (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	thu thËp vËt phÈm 	0	0	2	10	1		1	1							Kim C« Bæng (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	thu thËp vËt phÈm 	0	0	2	10	2		1	1							Kim C« Bæng (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	thu thËp vËt phÈm 	0	0	2	10	3		1	1							Kim C« Bæng (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	thu thËp vËt phÈm 	0	0	2	10	4		1	1							Kim C« Bæng (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						186	1	1							ÏÀ¹ÇÖ®ÌúÑªÉÀ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						187	1	1							ÏÀ¹ÇÖ®¶àÇé»·
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						188	1	1							ÏÀ¹ÇÖ®µ¤ÐÄ½ä
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						189	1	1							ÏÀ¹ÇÖ®ÇéÒâ½á
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	§èi tho¹i													Thî rÌn	D­¬ng Ch©u	
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	thu thËp vËt phÈm 	0	0	3	10	0		1	1							Ph¸ Thiªn KÝch (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	thu thËp vËt phÈm 	0	0	3	10	1		1	1							Ph¸ Thiªn KÝch (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	thu thËp vËt phÈm 	0	0	3	10	2		1	1							Ph¸ Thiªn KÝch (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	thu thËp vËt phÈm 	0	0	3	10	3		1	1							Ph¸ Thiªn KÝch (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	thu thËp vËt phÈm 	0	0	3	10	4		1	1							Ph¸ Thiªn KÝch (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	¶Ô»°													³ÇÃÅÎÀ±ø	ÁÙ°²	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						190	1	1							ÈáÇéÖ®½íàþÄÞÉÑ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						191	1	1							ÈáÇéÖ®ÊçÅ®ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						192	1	1							ÈáÇéÖ®·ïÒÇ½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	ÊÕ¼¯»Æ½ð×°±¸						193	1	1							ÈáÇéÖ®»ÛÐÄÓñÅå
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	§èi tho¹i													Thî rÌn	D­¬ng Ch©u	
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	thu thËp vËt phÈm 	0	0	4	10	0		1	1							Ph¸ Thiªn Chïy (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	thu thËp vËt phÈm 	0	0	4	10	1		1	1							Ph¸ Thiªn Chïy (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	thu thËp vËt phÈm 	0	0	4	10	2		1	1							Ph¸ Thiªn Chïy (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	thu thËp vËt phÈm 	0	0	4	10	3		1	1							Ph¸ Thiªn Chïy (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	thu thËp vËt phÈm 	0	0	4	10	4		1	1							Ph¸ Thiªn Chïy (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	¶Ô»°													Ìú½³	ÑïÖÝ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	ÊÕ¼¯ÎïÆ·	0	0	0	10	0		1	1							½ðÊôÐÔÐþÌú½£
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	ÊÕ¼¯ÎïÆ·	0	0	0	10	1		1	1							Ä¾ÊôÐÔÐþÌú½£
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	ÊÕ¼¯ÎïÆ·	0	0	0	10	2		1	1							Ë®ÊôÐÔÐþÌú½£
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	ÊÕ¼¯ÎïÆ·	0	0	0	10	3		1	1							»ðÊôÐÔÐþÌú½£
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	ÊÕ¼¯ÎïÆ·	0	0	0	10	4		1	1							ÍÁÊôÐÔÐþÌú½£
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	thu thËp vËt phÈm 	0	1	0	10	0		1	1							B¸ V­¬ng Tiªu (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	thu thËp vËt phÈm 	0	1	0	10	1		1	1							B¸ V­¬ng Tiªu (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	thu thËp vËt phÈm 	0	1	0	10	2		1	1							B¸ V­¬ng Tiªu (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	thu thËp vËt phÈm 	0	1	0	10	3		1	1							B¸ V­¬ng Tiªu (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	thu thËp vËt phÈm 	0	1	0	10	4		1	1							B¸ V­¬ng Tiªu (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	¶Ô»°													Ìú½³	ÑïÖÝ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	ÊÕ¼¯ÎïÆ·	0	0	1	10	0		1	1							½ðÊôÐÔ´ó·çµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	ÊÕ¼¯ÎïÆ·	0	0	1	10	1		1	1							Ä¾ÊôÐÔ´ó·çµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	ÊÕ¼¯ÎïÆ·	0	0	1	10	2		1	1							Ë®ÊôÐÔ´ó·çµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	ÊÕ¼¯ÎïÆ·	0	0	1	10	3		1	1							»ðÊôÐÔ´ó·çµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	ÊÕ¼¯ÎïÆ·	0	0	1	10	4		1	1							ÍÁÊôÐÔ´ó·çµ¶
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	thu thËp vËt phÈm 	0	1	1	10	0		1	1							Tóy NguyÖt §ao (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	thu thËp vËt phÈm 	0	1	1	10	1		1	1							Tóy NguyÖt §ao (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	thu thËp vËt phÈm 	0	1	1	10	2		1	1							Tóy NguyÖt §ao (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	thu thËp vËt phÈm 	0	1	1	10	3		1	1							Tóy NguyÖt §ao (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	thu thËp vËt phÈm 	0	1	1	10	4		1	1							Tóy NguyÖt §ao (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	¶Ô»°													Ìú½³	ÑïÖÝ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	ÊÕ¼¯ÎïÆ·	0	0	2	10	0		1	1							½ðÊôÐÔ½ð¹¿°ô
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	ÊÕ¼¯ÎïÆ·	0	0	2	10	1		1	1							Ä¾ÊôÐÔ½ð¹¿°ô
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	ÊÕ¼¯ÎïÆ·	0	0	2	10	2		1	1							Ë®ÊôÐÔ½ð¹¿°ô
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	ÊÕ¼¯ÎïÆ·	0	0	2	10	3		1	1							»ðÊôÐÔ½ð¹¿°ô
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	ÊÕ¼¯ÎïÆ·	0	0	2	10	4		1	1							ÍÁÊôÐÔ½ð¹¿°ô
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	thu thËp vËt phÈm 	0	1	2	10	0		1	1							Khæng T­íc Linh (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	thu thËp vËt phÈm 	0	1	2	10	1		1	1							Khæng T­íc Linh (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	thu thËp vËt phÈm 	0	1	2	10	2		1	1							Khæng T­íc Linh (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	thu thËp vËt phÈm 	0	1	2	10	3		1	1							Khæng T­íc Linh (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	thu thËp vËt phÈm 	0	1	2	10	4		1	1							Khæng T­íc Linh (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	¶Ô»°													Ìú½³	ÑïÖÝ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	ÊÕ¼¯ÎïÆ·	0	0	3	10	0		1	1							½ðÊôÐÔÆÆÌìêª
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	ÊÕ¼¯ÎïÆ·	0	0	3	10	1		1	1							Ä¾ÊôÐÔÆÆÌìêª
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	ÊÕ¼¯ÎïÆ·	0	0	3	10	2		1	1							Ë®ÊôÐÔÆÆÌìêª
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	ÊÕ¼¯ÎïÆ·	0	0	3	10	3		1	1							»ðÊôÐÔÆÆÌìêª
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	ÊÕ¼¯ÎïÆ·	0	0	3	10	4		1	1							ÍÁÊôÐÔÆÆÌìêª
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	§èi tho¹i													TrÇn Tam B¶o	BiÖn Kinh	
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	1	n		1	1							Hoµng Ngäc Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	2	n		1	1							C¶m L·m Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	3	n		1	1							Phï Dung Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	4	n		1	1							PhØ Thóy Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	5	n		1	1							Thóy Lùu Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	6	n		1	1							Tæ MÉu Lôc Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	7	n		1	1							H¶i Lam B¶o Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	8	n		1	1							Hång B¶o Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	9	n		1	1							Lam B¶o Th¹ch Giíi ChØ
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	thu thËp vËt phÈm 	0	3	0	10	n		1	1							Toµn Th¹ch Giíi ChØ
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	¶Ô»°													Ìú½³	ÑïÖÝ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	ÊÕ¼¯ÎïÆ·	0	0	4	10	0		1	1							½ðÊôÐÔÆÆÌì´¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	ÊÕ¼¯ÎïÆ·	0	0	4	10	1		1	1							Ä¾ÊôÐÔÆÆÌì´¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	ÊÕ¼¯ÎïÆ·	0	0	4	10	2		1	1							Ë®ÊôÐÔÆÆÌì´¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	ÊÕ¼¯ÎïÆ·	0	0	4	10	3		1	1							»ðÊôÐÔÆÆÌì´¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	ÊÕ¼¯ÎïÆ·	0	0	4	10	4		1	1							ÍÁÊôÐÔÆÆÌì´¸
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	§èi tho¹i													§oan Méc Thanh	Long M«n trÊn	
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	1	n		1	1							§ång H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	2	n		1	1							Ng©n H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	3	n		1	1							Kim H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	4	n		1	1							B¹ch Kim H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	5	n		1	1							Ngäc Ch©u H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	6	n		1	1							Lôc Tïng Th¹ch H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	7	n		1	1							Thñy Tinh H¹ng Liªn 
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	8	n		1	1							Khæng T­íc Th¹ch H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	9	n		1	1							Tr©n Ch©u H¹ng Liªn
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	thu thËp vËt phÈm 	0	4	0	10	n		1	1							Toµn Th¹ch H¹ng Liªn
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	ÊÕ¼¯ÎïÆ·	0	1	0	10	0		1	1							½ðÊôÐÔ°ÔÍõïÚ
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	ÊÕ¼¯ÎïÆ·	0	1	0	10	1		1	1							Ä¾ÊôÐÔ°ÔÍõïÚ
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	ÊÕ¼¯ÎïÆ·	0	1	0	10	2		1	1							Ë®ÊôÐÔ°ÔÍõïÚ
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	ÊÕ¼¯ÎïÆ·	0	1	0	10	3		1	1							»ðÊôÐÔ°ÔÍõïÚ
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	ÊÕ¼¯ÎïÆ·	0	1	0	10	4		1	1							ÍÁÊôÐÔ°ÔÍõïÚ
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	§èi tho¹i													LÔ Quan	BiÖn Kinh	
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	1	n		1	1							Lôc Tïng Th¹ch Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	2	n		1	1							San H« Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	3	n		1	1							Miªu Nh·n Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	4	n		1	1							Hæ T×nh Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	5	n		1	1							Thñy Tinh Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	6	n		1	1							Hæ Ph¸ch Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	7	n		1	1							B¹ch PhØ Thóy Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	8	n		1	1							Hång PhØ Thóy Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	9	n		1	1							Tö PhØ Thóy Hé Th©n phï 
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	thu thËp vËt phÈm 	0	4	1	10	n		1	1							Lôc PhØ Thóy Hé Th©n phï 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	ÊÕ¼¯ÎïÆ·	0	1	1	10	0		1	1							½ðÊôÐÔËéÔÂµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	ÊÕ¼¯ÎïÆ·	0	1	1	10	1		1	1							Ä¾ÊôÐÔËéÔÂµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	ÊÕ¼¯ÎïÆ·	0	1	1	10	2		1	1							Ë®ÊôÐÔËéÔÂµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	ÊÕ¼¯ÎïÆ·	0	1	1	10	3		1	1							»ðÊôÐÔËéÔÂµ¶
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	ÊÕ¼¯ÎïÆ·	0	1	1	10	4		1	1							ÍÁÊôÐÔËéÔÂµ¶
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	1	n		1	1							Hu©n Y H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	2	n		1	1							M¹t LÞ H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	3	n		1	1							Nhò H­¬ng H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	4	n		1	1							Lan Hoa H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	5	n		1	1							Hîp Hoan H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	6	n		1	1							Tö T« H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	7	n		1	1							TrÇm §µn H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	8	n		1	1							Tiªn X¹ H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	9	n		1	1							Giµ Nam H­¬ng Nang
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	thu thËp vËt phÈm 	0	9	0	10	n		1	1							Long Tiªn H­¬ng Nang
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	ÊÕ¼¯ÎïÆ·	0	1	2	10	0		1	1							½ðÊôÐÔ¿×È¸ôá
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	ÊÕ¼¯ÎïÆ·	0	1	2	10	1		1	1							Ä¾ÊôÐÔ¿×È¸ôá
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	ÊÕ¼¯ÎïÆ·	0	1	2	10	2		1	1							Ë®ÊôÐÔ¿×È¸ôá
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	ÊÕ¼¯ÎïÆ·	0	1	2	10	3		1	1							»ðÊôÐÔ¿×È¸ôá
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	ÊÕ¼¯ÎïÆ·	0	1	2	10	4		1	1							ÍÁÊôÐÔ¿×È¸ôá
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	1	n		1	1							Du Diªn Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	2	n		1	1							Kinh B¹ch Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	3	n		1	1							§µo Hoa Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	4	n		1	1							Mai Hoa  Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	5	n		1	1							Ngò S¾c Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	6	n		1	1							Thanh Ngäc Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	7	n		1	1							BÝch Ngäc Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	8	n		1	1							MÆc Ngäc Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	9	n		1	1							Hoµng Ngäc Ngäc Béi 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	thu thËp vËt phÈm 	0	9	1	10	n		1	1							D­¬ng Chi B¹ch Ngäc
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	¶Ô»°													³ÂÈý±¦	ãê¾©	
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	1	n		1	1							»ÆÓñ½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	2	n		1	1							éÏé­Ê¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	3	n		1	1							Ü½ÈØÊ¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	4	n		1	1							ôä´ä½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	5	n		1	1							´äÁñÊ¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	6	n		1	1							×æÄ¸ÂÌ½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	7	n		1	1							º£À¶±¦Ê¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	8	n		1	1							ºì±¦Ê¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	9	n		1	1							À¶±¦Ê¯½äÖ¸
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	ÊÕ¼¯ÎïÆ·	0	3	0	10	n		1	1							×êÊ¯½äÖ¸
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	thu thËp vËt phÈm 	0	8	0	10	0		1	1							Long Phông HuyÕt Ngäc Tr¹c (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	thu thËp vËt phÈm 	0	8	0	10	1		1	1							Long Phông HuyÕt Ngäc Tr¹c (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	thu thËp vËt phÈm 	0	8	0	10	2		1	1							Long Phông HuyÕt Ngäc Tr¹c (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	thu thËp vËt phÈm 	0	8	0	10	3		1	1							Long Phông HuyÕt Ngäc Tr¹c (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	thu thËp vËt phÈm 	0	8	0	10	4		1	1							Long Phông HuyÕt Ngäc Tr¹c (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	¶Ô»°													¶ËÄ¾Çå	ÁúÃÅÕò	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	1	n		1	1							Í­ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	2	n		1	1							ÒøÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	3	n		1	1							½ðÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	4	n		1	1							°×½ðÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	5	n		1	1							ÓñÖéÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	6	n		1	1							ÂÌËÉÊ¯ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	7	n		1	1							Ë®¾§ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	8	n		1	1							¿×È¸Ê¯ÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	9	n		1	1							ÕäÖéÏîÁ´
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	ÊÕ¼¯ÎïÆ·	0	4	0	10	n		1	1							×êÊ¯ÏîÁ´
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	thu thËp vËt phÈm 	0	8	1	10	0		1	1							Thiªn Tµm Hé UyÓn (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	thu thËp vËt phÈm 	0	8	1	10	1		1	1							Thiªn Tµm Hé UyÓn (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	thu thËp vËt phÈm 	0	8	1	10	2		1	1							Thiªn Tµm Hé UyÓn (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	thu thËp vËt phÈm 	0	8	1	10	3		1	1							Thiªn Tµm Hé UyÓn (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	thu thËp vËt phÈm 	0	8	1	10	4		1	1							Thiªn Tµm Hé UyÓn (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	¶Ô»°													Àñ¹Ù	ãê¾©	
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	1	n		1	1							ÂÌËÉÊ¯»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	2	n		1	1							Éºº÷»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	3	n		1	1							Ã¨ÑÛ»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	4	n		1	1							»¢¾¦»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	5	n		1	1							Ë®¾§»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	6	n		1	1							çúçê»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	7	n		1	1							°×ôä´ä»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	8	n		1	1							ºìôä´ä»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	9	n		1	1							×Ïôä´ä»¤Éí·û
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	ÊÕ¼¯ÎïÆ·	0	4	1	10	n		1	1							ÂÌôä´ä»¤Éí·û
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	thu thËp vËt phÈm 	0	7	3	10	0		1	1							Th«ng Thiªn Ph¸t Qu¸n (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	thu thËp vËt phÈm 	0	7	3	10	1		1	1							Th«ng Thiªn Ph¸t Qu¸n (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	thu thËp vËt phÈm 	0	7	3	10	2		1	1							Th«ng Thiªn Ph¸t Qu¸n (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	thu thËp vËt phÈm 	0	7	3	10	3		1	1							Th«ng Thiªn Ph¸t Qu¸n (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	thu thËp vËt phÈm 	0	7	3	10	4		1	1							Th«ng Thiªn Ph¸t Qu¸n (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	1	n		1	1							Ñ¬ÒÂÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	2	n		1	1							ÜÔÀòÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	3	n		1	1							ÈéÏãÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	4	n		1	1							À¼»¨ÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	5	n		1	1							ºÏ»¶ÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	6	n		1	1							×ÏËÕÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	7	n		1	1							³ÁÌ´ÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	8	n		1	1							ÏÉ÷êÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	9	n		1	1							åÈéªÏãÄÒ
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	ÊÕ¼¯ÎïÆ·	0	9	0	10	n		1	1							ÁúÏÑÏãÄÒ
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	thu thËp vËt phÈm 	0	7	4	10	0		1	1							YÓm NhËt Kh«i (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	thu thËp vËt phÈm 	0	7	4	10	1		1	1							YÓm NhËt Kh«i (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	thu thËp vËt phÈm 	0	7	4	10	2		1	1							YÓm NhËt Kh«i (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	thu thËp vËt phÈm 	0	7	4	10	3		1	1							YÓm NhËt Kh«i (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	thu thËp vËt phÈm 	0	7	4	10	4		1	1							YÓm NhËt Kh«i (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	1	n		1	1							ÂÌòÄÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	2	n		1	1							¾©°×ÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	3	n		1	1							ÌÒ»¨ÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	4	n		1	1							Ã·»¨ÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	5	n		1	1							ÎåÉ«ÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	6	n		1	1							ÇàÓñÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	7	n		1	1							±ÌÓñÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	8	n		1	1							Ä«ÓñÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	9	n		1	1							»ÆÓñÓñÅå
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	ÊÕ¼¯ÎïÆ·	0	9	1	10	n		1	1							ÑòÖ¬°×Óñ
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	thu thËp vËt phÈm 	0	6	1	10	0		1	1							B¹ch Kim Yªu §¸i (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	thu thËp vËt phÈm 	0	6	1	10	1		1	1							B¹ch Kim Yªu §¸i (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	thu thËp vËt phÈm 	0	6	1	10	2		1	1							B¹ch Kim Yªu §¸i (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	thu thËp vËt phÈm 	0	6	1	10	3		1	1							B¹ch Kim Yªu §¸i (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	thu thËp vËt phÈm 	0	6	1	10	4		1	1							B¹ch Kim Yªu §¸i (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	ÊÕ¼¯ÎïÆ·	0	8	0	10	0		1	1							½ðÊôÐÔÁú·ïÑªÓñïí
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	ÊÕ¼¯ÎïÆ·	0	8	0	10	1		1	1							Ä¾ÊôÐÔÁú·ïÑªÓñïí
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	ÊÕ¼¯ÎïÆ·	0	8	0	10	2		1	1							Ë®ÊôÐÔÁú·ïÑªÓñïí
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	ÊÕ¼¯ÎïÆ·	0	8	0	10	3		1	1							»ðÊôÐÔÁú·ïÑªÓñïí
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	ÊÕ¼¯ÎïÆ·	0	8	0	10	4		1	1							ÍÁÊôÐÔÁú·ïÑªÓñïí
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	thu thËp vËt phÈm 	0	5	1	10	0		1	1							Thiªn Tµm Ngoa (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	thu thËp vËt phÈm 	0	5	1	10	1		1	1							Thiªn Tµm Ngoa (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	thu thËp vËt phÈm 	0	5	1	10	2		1	1							Thiªn Tµm Ngoa (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	thu thËp vËt phÈm 	0	5	1	10	3		1	1							Thiªn Tµm Ngoa (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	thu thËp vËt phÈm 	0	5	1	10	4		1	1							Thiªn Tµm Ngoa (Thæ) 
 
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	ÊÕ¼¯ÎïÆ·	0	8	1	10	0		1	1							½ðÊôÐÔÌì²Ï»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	ÊÕ¼¯ÎïÆ·	0	8	1	10	1		1	1							Ä¾ÊôÐÔÌì²Ï»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	ÊÕ¼¯ÎïÆ·	0	8	1	10	2		1	1							Ë®ÊôÐÔÌì²Ï»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	ÊÕ¼¯ÎïÆ·	0	8	1	10	3		1	1							»ðÊôÐÔÌì²Ï»¤Íó
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	ÊÕ¼¯ÎïÆ·	0	8	1	10	4		1	1							ÍÁÊôÐÔÌì²Ï»¤Íó
-
-Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	¶Ô»°													¹Ü¼Ò	ÌÆÃÅ	
-Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	ÊÕ¼¯ÎïÆ·	0	7	3	10	0		1	1							½ðÊôÐÔÍ¨Ìì·¢¹Ú
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	§èi tho¹i													Qu¶n Gia	§­êng M«n	
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	thu thËp vËt phÈm 	0	5	3	10	0		1	1							Phi Phông Ngoa (Kim) 
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	thu thËp vËt phÈm 	0	5	3	10	1		1	1							Phi Phông Ngoa (Méc) 
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	thu thËp vËt phÈm 	0	5	3	10	2		1	1							Phi Phông Ngoa (Thñy) 
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	thu thËp vËt phÈm 	0	5	3	10	3		1	1							Phi Phông Ngoa (Háa) 
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	thu thËp vËt phÈm 	0	5	3	10	4		1	1							Phi Phông Ngoa (Thæ) 
 Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	ÊÕ¼¯ÎïÆ·	0	7	3	10	1		1	1							Ä¾ÊôÐÔÍ¨Ìì·¢¹Ú
 Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	ÊÕ¼¯ÎïÆ·	0	7	3	10	2		1	1							Ë®ÊôÐÔÍ¨Ìì·¢¹Ú
 Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	ÊÕ¼¯ÎïÆ·	0	7	3	10	3		1	1							»ðÊôÐÔÍ¨Ìì·¢¹Ú

@@ -15,6 +15,7 @@ Include("\\script\\misc\\vngpromotion\\ipbonus\\ipbonus_2_head.lua")
 Include("\\script\\event\\jiefang_jieri\\200904\\qianqiu_yinglie\\head.lua");
 
 Include("\\script\\battles\\doubleexp.lua")
+BATTLES_JOINFEE = 10000
 FRAME2TIME = 18;	--18帧游戏时间相当于1秒钟
 BAOMING_TIME = 10		-- 10分钟报名时间	
 FIGHTING_TIME = 60		-- 60分钟比赛时间

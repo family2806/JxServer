@@ -1,89 +1,89 @@
 prize_Quality	prize_item	nItemGenre	nItemDetailType	nItemParticularType	nItemLevel	nItemSeries	ItemLuck	nItemMagicLevel	prize_name
-1	5	2	0	0	1	0	5	0	ÃÎÁúÖ®½ğË¿ÕıºìôÂôÄ
-1	5	6	0	0	1	0	5	0	·üÄ§Ö®×Ï½ğ¹÷
-1	5	11	0	0	1	0	5	0	ËÄ¿ÕÖ®½µÄ§½äµ¶
-1	5	16	0	0	1	0	5	0	º³ÌìÖ®½ğ»·´óÑÛÉñ´¸
-1	5	21	0	0	1	0	5	0	¼ÌÒµÖ®±¼À××êÁúÇ¹
-1	5	26	0	0	1	0	5	0	ÓùÁúÖ®ÁÁÒø±¦µ¶
-1	5	31	0	0	1	0	5	0	ÎŞ¼äÖ®ÒĞÌì½£
-1	5	39	0	0	1	0	5	0	ÎŞ÷ÊÖ®Ï´ÏóÓñ¿Û
-1	5	42	0	0	1	0	5	0	ÎŞ³¾Ö®ÇåĞÄÏòÉÆÖé
-1	5	46	0	0	1	0	5	0	ÆÜ»ËÖ®·ïÒÇµ¶
-1	5	51	0	0	1	0	5	0	±Ìº£Ö®Ô§ÑìÁ¬»·µ¶
-1	5	60	0	0	1	0	5	0	ÓÄëÊÖ®Ä«ÖëÈíÂÄ
-1	5	61	0	0	1	0	5	0	Ú¤»ÃÖ®Ğ°É²¶¾ÈĞ
-1	5	67	0	0	1	0	5	0	Öä¸¿Ö®ÃğÀ×¾±·û
-1	5	71	0	0	1	0	5	0	±ùº®Ö®µ¯Ö¸·Éµ¶
-1	5	76	0	0	1	0	5	0	Ìì¹âÖ®»¨ÓêÂşÌì
-1	5	81	0	0	1	0	5	0	É­»ÄÖ®·ÉĞÇ¶á»ê
-1	5	87	0	0	1	0	5	0	µØÆÇÖ®ºÚÑæ³åÌìÁ´
-1	5	92	0	0	1	0	5	0	Í¬³ğÖ®½µÁúØ¤ÒÂ
-1	5	96	0	0	1	0	5	0	µĞâéÖ®ÂÌÓñÕÈ
-1	5	101	0	0	1	0	5	0	Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹
-1	5	106	0	0	1	0	5	0	Ä§»ÍÖ®½ğ¼×¿ø
-1	5	115	0	0	1	0	5	0	Ä§ÊÈÖ®É½º£·ÉºèÂÄ
-1	5	119	0	0	1	0	5	0	ÁèÔÀÖ®ÎŞ¼«ĞşÓñÅå
-1	5	121	0	0	1	0	5	0	¼°·áÖ®ÕæÎä½£
-1	5	126	0	0	1	0	5	0	Ëª¾§Ö®Ç§Äêº®Ìú
-1	5	132	0	0	1	0	5	0	À×ñ·Ö®ÌìµØ»¤·û
-1	5	136	0	0	1	0	5	0	Îí»ÃÖ®±±Ú¤µÀ¹Ú
-1	5	159	0	0	1	0	5	0	¶¨¹úÖ®ÇàÉ´³¤ÉÀ
-1	5	160	0	0	1	0	5	0	¶¨¹úÖ®ÎÙÉ°·¢¹Ú
-1	5	161	0	0	1	0	5	0	¶¨¹úÖ®³à¾îÈíÑ¥
-1	5	162	0	0	1	0	5	0	¶¨¹úÖ®×ÏÌÙ»¤Íó
-1	5	163	0	0	1	0	5	0	¶¨¹úÖ®Òø²ÏÑü´ø
-1	5	164	0	0	1	0	5	0	°²°îÖ®±ù¾§Ê¯ÏîÁ´
-1	5	165	0	0	1	0	5	0	°²°îÖ®¾Õ»¨Ê¯Ö¸»·
-1	5	166	0	0	1	0	5	0	°²°îÖ®Ìï»ÆÊ¯ÓñÅå
-1	5	167	0	0	1	0	5	0	°²°îÖ®¼¦ÑªÊ¯½äÖ¸
-1	4	186	0	0	1	0	5	0	ÏÀ¹ÇÖ®ÌúÑªÉÀ
-1	4	187	0	0	1	0	5	0	ÏÀ¹ÇÖ®¶àÇé»·
-1	4	188	0	0	1	0	5	0	ÏÀ¹ÇÖ®µ¤ĞÄ½ä
-1	4	189	0	0	1	0	5	0	ÏÀ¹ÇÖ®ÇéÒâ½á
-1	4	190	0	0	1	0	5	0	ÈáÇéÖ®½íàşÄŞÉÑ
-1	4	191	0	0	1	0	5	0	ÈáÇéÖ®ÊçÅ®ÏîÁ´
-1	4	192	0	0	1	0	5	0	ÈáÇéÖ®·ïÒÇ½äÖ¸
-1	4	193	0	0	1	0	5	0	ÈáÇéÖ®»ÛĞÄÓñÅå
-1	4	168	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®ÁúÌ§Í·
-1	4	169	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®°×ÁúÏ¢
-1	4	170	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®ÕòÚ¤Ö®Á´
-1	4	171	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®¾ÅÏÖÖ®Ö¸
-1	4	172	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®ÓñåĞÒ£
-1	4	173	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®»Æ½ğÁÛ
-1	4	174	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®ÅÍÁú¹å
-1	4	175	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®Áú¿ŞÇ§Àï
-1	4	176	0	0	1	0	5	0	Ìì»ÍÁúÆ÷Ö®Å­ÁúÖ®Í«
-1	4	177	0	0	1	0	5	0	½ğ·ãÖ®ÇàÑô¿ø
-1	4	178	0	0	1	0	5	0	½ğ·ãÖ®÷è÷ëÑª
-1	4	179	0	0	1	0	5	0	½ğ·ãÖ®åªÖ®Á´¹â
-1	4	180	0	0	1	0	5	0	½ğ·ãÖ®¹«½÷ÈıÌ¾
-1	4	181	0	0	1	0	5	0	½ğ·ãÖ®¶á»êÓñ´ø
-1	4	182	0	0	1	0	5	0	½ğ·ãÖ®ºóôàÒı¹­
-1	4	183	0	0	1	0	5	0	½ğ·ãÖ®À¼Í¤Óñ
-1	4	184	0	0	1	0	5	0	½ğ·ãÖ®Ç§Àï²İÉÏ·É
-1	4	185	0	0	1	0	5	0	½ğ·ãÖ®Í­È¸´ºÉî
-0	1	6	1	26	1	0	5	0	ÎäÁÖÃØ¼®
-0	1	6	1	22	1	0	5	0	Ï´Ëè¾­
-2	2	0	8	1	10	0	5	-1	6¿×Ìì²Ï»¤Íó
-2	2	0	8	1	10	1	5	-1	6¿×Ìì²Ï»¤Íó
-2	2	0	8	1	10	2	5	-1	6¿×Ìì²Ï»¤Íó
-2	2	0	8	1	10	3	5	-1	6¿×Ìì²Ï»¤Íó
-2	2	0	8	1	10	4	5	-1	6¿×Ìì²Ï»¤Íó
-2	2	0	8	0	10	0	5	-1	6¿×Áú·ïÑªÓñïí
-2	2	0	8	0	10	1	5	-1	6¿×Áú·ïÑªÓñïí
-2	2	0	8	0	10	2	5	-1	6¿×Áú·ïÑªÓñïí
-2	2	0	8	0	10	3	5	-1	6¿×Áú·ïÑªÓñïí
-2	2	0	8	0	10	4	5	-1	6¿×Áú·ïÑªÓñïí
-0	1	4	239	1	1	0	5	0	×ÏË®¾§
-0	1	4	238	1	1	0	5	0	À¼Ë®¾§
-0	1	4	240	1	1	0	5	0	ÂÌË®¾§
-0	1	4	353	1	1	0	5	0	ĞÉºì±¦Ê¯
-0	3	6	1	147	6	0	5	0	Áù¼¶Ğş¾§¿óÊ¯
-0	3	6	1	147	5	0	5	0	Îå¼¶Ğş¾§¿óÊ¯
-0	3	6	1	147	4	0	5	0	ËÄ¼¶Ğş¾§¿óÊ¯
-0	1	6	1	124	1	0	5	0	¸£ÔµÂ¶£¨´ó£©
-0	1	6	1	123	1	0	5	0	¸£ÔµÂ¶£¨ÖĞ£©
-0	1	6	1	122	1	0	5	0	¸£ÔµÂ¶£¨Ğ¡£©
-0	1	6	1	71	1	0	5	0	ÏÉ²İÂ¶
-0	1	6	1	72	1	0	5	0	ÌìÉ½ÓñÂ¶
-0	1	6	1	73	1	0	5	0	°Ù¹ûÂ¶
+1	5	2	0	0	1	0	5	0	Méng Long Kim Ti Chİnh Hång Cµ Sa
+1	5	6	0	0	1	0	5	0	Phôc Ma Tö Kim C«n
+1	5	11	0	0	1	0	5	0	Tø Kh«ng Gi¸ng Ma Giíi ®ao
+1	5	16	0	0	1	0	5	0	H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy
+1	5	21	0	0	1	0	5	0	KÕ NghiÖp B«n L«i Toµn Long th­¬ng
+1	5	26	0	0	1	0	5	0	Ngù Long L­îng Ng©n B¶o ®ao
+1	5	31	0	0	1	0	5	0	V« Gian û Thiªn KiÕm
+1	5	39	0	0	1	0	5	0	V« Ma TÈy T­îng Ngäc KhÊu 
+1	5	42	0	0	1	0	5	0	V« TrÇn Thanh T©m H­íng ThiÖn Ch©u
+1	5	46	0	0	1	0	5	0	Tª Hoµng Phông Nghi ®ao
+1	5	51	0	0	1	0	5	0	Bİch H¶i Uyªn ¦¬ng Liªn Hoµn ®ao
+1	5	60	0	0	1	0	5	0	U Lung MÆc Thï NhuyÔn Lı 
+1	5	61	0	0	1	0	5	0	Minh ¶o Tµ S¸t §éc NhËn
+1	5	67	0	0	1	0	5	0	Chó Ph­îc DiÖt L«i C¶nh Phï 
+1	5	71	0	0	1	0	5	0	B¨ng Hµn §¬n ChØ Phi §ao
+1	5	76	0	0	1	0	5	0	Thiªn Quang Hoa Vò M¹n Thiªn
+1	5	81	0	0	1	0	5	0	S©m Hoang Phi Tinh §o¹t Hån
+1	5	87	0	0	1	0	5	0	§Şa Ph¸ch H¾c DiÖm Xung Thiªn Liªn
+1	5	92	0	0	1	0	5	0	§ång Cõu Gi¸ng Long C¸i Y
+1	5	96	0	0	1	0	5	0	§Şch Kh¸i Lôc Ngäc Tr­îng
+1	5	101	0	0	1	0	5	0	Ma S¸t Quû Cèc U Minh Th­¬ng
+1	5	106	0	0	1	0	5	0	Ma Hoµng Kim Gi¸p Kh«i
+1	5	115	0	0	1	0	5	0	Ma ThŞ s¬n  H¶i Phi Hång Lı 
+1	5	119	0	0	1	0	5	0	L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi
+1	5	121	0	0	1	0	5	0	CËp Phong Ch©n Vò KiÕm
+1	5	126	0	0	1	0	5	0	S­¬ng Tinh Thiªn Niªn Hµn ThiÕt
+1	5	132	0	0	1	0	5	0	L«i Khung Thiªn §Şa Hé phï 
+1	5	136	0	0	1	0	5	0	Vô ¶o B¾c Minh §¹o qu¸n
+1	5	159	0	0	1	0	5	0	§Şnh Quèc Thanh Sa Tr­êng Sam
+1	5	160	0	0	1	0	5	0	§Şnh Quèc ¤ Sa Ph¸t Qu¸n
+1	5	161	0	0	1	0	5	0	§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa
+1	5	162	0	0	1	0	5	0	§Şnh Quèc Tö §»ng Hé uyÓn
+1	5	163	0	0	1	0	5	0	§Şnh Quèc Ng©n Tµm Yªu ®¸i
+1	5	164	0	0	1	0	5	0	An Bang B¨ng Tinh Th¹ch H¹ng Liªn
+1	5	165	0	0	1	0	5	0	An Bang Cóc Hoa Th¹ch ChØ hoµn
+1	5	166	0	0	1	0	5	0	An Bang §iÒn Hoµng Th¹ch Ngäc Béi
+1	5	167	0	0	1	0	5	0	An Bang Kª HuyÕt Th¹ch Giíi ChØ 
+1	4	186	0	0	1	0	5	0	HiÖp Cèt ThiÕt HuyÕt Sam
+1	4	187	0	0	1	0	5	0	HiÖp Cèt §a T×nh Hoµn
+1	4	188	0	0	1	0	5	0	HiÖp Cèt §an T©m Giíi
+1	4	189	0	0	1	0	5	0	HiÖp Cèt T×nh ı KÕt
+1	4	190	0	0	1	0	5	0	Nhu T×nh C©n Quèc Nghª Th­êng
+1	4	191	0	0	1	0	5	0	Nhu T×nh Thôc N÷ H¹ng Liªn
+1	4	192	0	0	1	0	5	0	Nhu T×nh  Phông Nghi Giíi ChØ 
+1	4	193	0	0	1	0	5	0	Nhu T×nh  TuÖ T©m Ngäc Béi
+1	4	168	0	0	1	0	5	0	Thiªn Hoµng Long Long §µi
+1	4	169	0	0	1	0	5	0	Thiªn Hoµng Long B¹ch Long Tøc
+1	4	170	0	0	1	0	5	0	Thiªn Hoµng Long TrÊn Minh Liªn
+1	4	171	0	0	1	0	5	0	Thiªn Hoµng Long Cöu HiÖn chØ 
+1	4	172	0	0	1	0	5	0	Thiªn Hoµng Long Ngäc Tiªu Diªu
+1	4	173	0	0	1	0	5	0	Thiªn Hoµng Long Hoµng Kim L©n
+1	4	174	0	0	1	0	5	0	Thiªn Hoµng Long Bµn Long c«i
+1	4	175	0	0	1	0	5	0	Thiªn Hoµng Long Long Khèc Thiªn Lı 
+1	4	176	0	0	1	0	5	0	Thiªn Hoµng Long Né Long §ång
+1	4	177	0	0	1	0	5	0	Kim Phong Thanh D­¬ng Kh«i
+1	4	178	0	0	1	0	5	0	Kim Phong Kú L©n HuyÕt
+1	4	179	0	0	1	0	5	0	Kim Phong Tr¹c Liªn Quang
+1	4	180	0	0	1	0	5	0	Kim Phong C«ng CÈn Tam Th¸n
+1	4	181	0	0	1	0	5	0	Kim Phong §o¹t Hån Ngäc ®¸i
+1	4	182	0	0	1	0	5	0	Kim Phong HËu NghÖ dÉn cung
+1	4	183	0	0	1	0	5	0	Kim Phong Lan §×nh Ngäc
+1	4	184	0	0	1	0	5	0	Kim Phong Thiªn Lı Th¶o Th­îng Phi
+1	4	185	0	0	1	0	5	0	Kim Phong §ång T­íc Xu©n Th©m
+0	1	6	1	26	1	0	5	0	Vâ L©m MËt TŞch
+0	1	6	1	22	1	0	5	0	TÈy Tñy Kinh
+2	2	0	8	1	10	0	5	-1	Thiªn Tµm Hé UyÓn 6 thuéc tİnh Èn
+2	2	0	8	1	10	1	5	-1	Thiªn Tµm Hé UyÓn 6 thuéc tİnh Èn
+2	2	0	8	1	10	2	5	-1	Thiªn Tµm Hé UyÓn 6 thuéc tİnh Èn
+2	2	0	8	1	10	3	5	-1	Thiªn Tµm Hé UyÓn 6 thuéc tİnh Èn
+2	2	0	8	1	10	4	5	-1	Thiªn Tµm Hé UyÓn 6 thuéc tİnh Èn
+2	2	0	8	0	10	0	5	-1	Long Phông HuyÕt Ngäc Tr¹c 6 thuéc tİnh Èn
+2	2	0	8	0	10	1	5	-1	Long Phông HuyÕt Ngäc Tr¹c 6 thuéc tİnh Èn
+2	2	0	8	0	10	2	5	-1	Long Phông HuyÕt Ngäc Tr¹c 6 thuéc tİnh Èn
+2	2	0	8	0	10	3	5	-1	Long Phông HuyÕt Ngäc Tr¹c 6 thuéc tİnh Èn
+2	2	0	8	0	10	4	5	-1	Long Phông HuyÕt Ngäc Tr¹c 6 thuéc tİnh Èn
+0	1	4	239	1	1	0	5	0	Tö Thñy Tinh
+0	1	4	238	1	1	0	5	0	Lam Thñy Tinh
+0	1	4	240	1	1	0	5	0	Lôc Thñy Tinh
+0	1	4	353	1	1	0	5	0	Tinh Hång B¶o Th¹ch
+0	3	6	1	147	6	0	5	0	HuyÒn Tinh Kho¸ng Th¹ch cÊp 6 
+0	3	6	1	147	5	0	5	0	HuyÒn Tinh Kho¸ng Th¹ch cÊp 5
+0	3	6	1	147	4	0	5	0	HuyÒn Tinh Kho¸ng Th¹ch cÊp 4
+0	1	6	1	124	1	0	5	0	Phóc Duyªn Lé (§¹i) 
+0	1	6	1	123	1	0	5	0	Phóc Duyªn Lé (Trung) 
+0	1	6	1	122	1	0	5	0	Phóc Duyªn Lé (TiÓu) 
+0	1	6	1	71	1	0	5	0	Tiªn Th¶o Lé 
+0	1	6	1	72	1	0	5	0	Thiªn s¬n  B¶o Lé 
+0	1	6	1	73	1	0	5	0	B¸ch Qu¶ Lé 

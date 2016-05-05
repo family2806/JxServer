@@ -1,15 +1,15 @@
 2004/01/06ÐÞ¸ÄµÄ°æ±¾¡£
-1¡¢ÐÞ¸ÄÐÒÔËÊôÐÔÄÜ¹»³öÏÖµÄµØ·½ºÍ¼¸ÂÊ£º
-Ö»ÓÐÄ¾ÏµµÄ½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹¿ÉÒÔ³öÏÖÐÒÔËÊôÐÔ¡£´Ó1/100µ½1/1000
-2¡¢»ØÑª²»³öÏÖÔÚÎäÆ÷£¨Ô¶¡¢½ü³Ì£©¡¢ÊÎÎï£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹£©ÉÏ£¬»Ø¸´ÊýÖµÓë¼¸ÂÊÏìÓ¦Ìá¸ß¡£
-3¡¢ºÏ²¢»ØÄÚÏî¡£
-4¡¢»ØÌåÖ»ÄÜ³öÏÖÔÚ½äÖ¸ºÍÏîÁ´ÉÏ¡£
-5¡¢½µµÍÍâ¹¦Ïµ¶¾ÉËº¦ÖµÎª£º5~50
-6¡¢½µµÍÄÚ¹¦Ïµ¶¾ÉËº¦ÖµÎª£º5~50
-7¡¢ÌáÉýÔö¼ÓÉúÃüÉÏÏÞ4~7¼¶£¨60~140£©µÄ¼¸ÂÊ£¬½µµÍÔö¼ÓÉúÃüÉÏÏÞ9¡¢10¼¶µÄ¼¸ÂÊ¡£
-8¡¢ÌáÉýÔö¼ÓÄÚÁ¦ÉÏÏÞ3~6¼¶£¨40~120£©µÄ¼¸ÂÊ£¬½µµÍÔö¼ÓÄÚÁ¦ÉÏÏÞ9¡¢10¼¶µÄ¼¸ÂÊ¡£
-9¡¢ÌáÉýÆÕ¹¥ÉËº¦3~6¼¶µÄ¼¸ÂÊ£¬½µµÍÆÕ¹¥ÉËº¦9¡¢10¼¶µÄ¼¸ÂÊ¡£
-10¡¢ÌáÉý¶¾¹¥ÉËº¦3~6¼¶µÄ¼¸ÂÊ£¬½µµÍ¶¾¹¥ÉËº¦9¡¢10¼¶µÄ¼¸ÂÊ¡£
-11¡¢ÌáÉý±ù¹¥ÉËº¦3~6¼¶µÄ¼¸ÂÊ£¬½µµÍ±ù¹¥ÉËº¦9¡¢10¼¶µÄ¼¸ÂÊ¡£
-12¡¢ÌáÉý»ð¹¥ÉËº¦3~6¼¶µÄ¼¸ÂÊ£¬½µµÍ»ð¹¥ÉËº¦9¡¢10¼¶µÄ¼¸ÂÊ¡£
-13¡¢ÌáÉýÀ×¹¥ÉËº¦3~6¼¶µÄ¼¸ÂÊ£¬½µµÍÀ×¹¥ÉËº¦9¡¢10¼¶µÄ¼¸ÂÊ¡£
+1, Khu vùc cã thÓ lµm thay ®æi ®iÓm may m¾n 
+ChØ cã NhÉn, D©y chuyÒn, §ai ®Çu hÖ Méc míi xuÊt hiÖn thuéc tÝnh may m¾n, tõ1/100 ®Õn 1/1000
+2, Håi Sinh lùc chØ cã thÓ xuÊt hiÖn trªn vò khÝ (cËn hoÆc xa) , trang bÞ (NhÉn, D©y chuyÒn, §ai th¾t) 
+3, häp thµnh c¸c lo¹i håi néi lùc.
+4, Håi thÓ lùc chØ cã thÓ xuÊt hiÖn trªn NhÉn vµ D©y chuyÒn
+5, gi¶m §éc s¸t - ngo¹i c«ng:5~50
+6, gi¶m §éc s¸t - néi c«ng: 5~50
+7, t¨ng tû lÖ Sinh lùc tèi ®a tõ cÊp 4#7 (60~140) , gi¶m tû lÖ Sinh lùc tèi ®a tõ cÊp 9#10. 
+8, t¨ng tû lÖ Néi lùc tèi ®a tõ cÊp 3~6 (40~120) , gi¶m tû lÖ Néi lùc tèi ®a tõ cÊp 9#10.
+9, t¨ng tû lÖ s¸t th­¬ng VËt lý tõ cÊp 3~6; gi¶m tû lÖ s¸t th­¬ng VËt lý tõ cÊp 9#10.
+10, n©ng cao tû lÖ §éc s¸t tõ cÊp 3~6; gi¶m tû lÖ §éc s¸t tõ cÊp 9 # 10.
+11, n©ng cao tû lÖ B¨ng s¸t tõ cÊp 3~6, gi¶m tû lÖ B¨ng s¸t tõ cÊp 9 # 10.
+12, n©ng cao tû lÖ Ho¶ s¸t tõ cÊp 3~6, gi¶m tû lÖ Ho¶ s¸t tõ cÊp 9 # 10.
+13, n©ng cao tû lÖ L«i s¸t tõ cÊp 3~6, gi¶m tû lÖ L«i s¸t tõ cÊp 9 # 10.

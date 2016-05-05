@@ -1,102 +1,102 @@
 Name	Quality	Genre	Detail	Particular	Level	GoodsFive	Magiclevel	ItemValue	ItemRate
-ÎïÆ·Ãû³Æ	ÊÇ·ñ»Æ½ð	´óÀà	·ÖÀà	Ï¸Àà	µÈ¼¶	ÎåÐÐ	Ä§·¨µÈ¼¶	¼ÛÖµÁ¿	¸ÅÂÊ
-¹Å¾ÉÏä×Ó	0	6	1	902	1	0	0	6000000	3988
-ÉñÃØ¿óÊ¯	0	6	1	398	1	0	0	100000000	1
-4¼¶Ðþ¾§¿óÊ¯	0	6	1	147	4	0	0	900000	500
-5¼¶Ðþ¾§¿óÊ¯	0	6	1	147	5	0	0	3300000	500
-6¼¶Ðþ¾§¿óÊ¯	0	6	1	147	6	0	0	12600000	100
-7¼¶Ðþ¾§¿óÊ¯	0	6	1	147	7	0	0	36770000	20
-8¼¶Ðþ¾§¿óÊ¯	0	6	1	147	8	0	0	126040000	1
-¸£ÔµÂ¶£¨Ð¡£©	0	6	1	122	1	0	0	600000	500
-¸£ÔµÂ¶£¨ÖÐ£©	0	6	1	123	1	0	0	1200000	200
-¸£ÔµÂ¶£¨´ó£©	0	6	1	124	1	0	0	3000000	100
-ÏÉ²ÝÂ¶	0	6	1	71	1	0	0	400000	200
-ÐÉºì±¦Ê¯	0	4	353	1	1	0	0	4500000	300
-À¶Ë®¾§	0	4	238	1	1	0	0	5000000	500
-ÂÌË®¾§	0	4	240	1	1	0	0	5000000	500
-×ÏË®¾§	0	4	239	1	1	0	0	5000000	500
-Ï´Ëè¾­	0	6	1	22	1	0	0	42000000	30
-ÎäÁÖÃØ¼®	0	6	1	26	1	0	0	55000000	30
-¶¨¹úÖ®ÇàÉ´³¤ÉÀ	1	159	1	1	1	0	0	45000000	20
-¶¨¹úÖ®ÎÙÉ°·¢¹Ú	1	160	1	1	1	0	0	120000000	20
-¶¨¹úÖ®³à¾îÈíÑ¥	1	161	1	1	1	0	0	12000000	20
-¶¨¹úÖ®×ÏÌÙ»¤Íó	1	162	1	1	1	0	0	12000000	20
-¶¨¹úÖ®Òø²ÏÑü´ø	1	163	1	1	1	0	0	12000000	20
-°²°îÖ®±ù¾§Ê¯ÏîÁ´	1	164	1	1	1	0	0	200000000	20
-°²°îÖ®¾Õ»¨Ê¯Ö¸»·	1	165	1	1	1	0	0	150000000	20
-°²°îÖ®Ìï»ÆÊ¯ÓñÅå	1	166	1	1	1	0	0	120000000	20
-°²°îÖ®¼¦ÑªÊ¯½äÖ¸	1	167	1	1	1	0	0	150000000	20
-½ð¸Õ²»ÆÆ¡¤Í¬°éÃØ¼®	0	6	1	834	6	0	0	3000000	25
-°Ù¶¾²»ÇÖ¡¤Í¬°éÃØ¼®	0	6	1	835	6	0	0	3000000	25
-±ùÑ©³õÈÚ¡¤Í¬°éÃØ¼®	0	6	1	836	6	0	0	3000000	25
-Õæ»ð¿¹Á¦¡¤Í¬°éÃØ¼®	0	6	1	837	6	0	0	3000000	25
-À×öª»¤¼×¡¤Í¬°éÃØ¼®	0	6	1	838	6	0	0	3000000	25
-Æ½ºÍÆø¾÷¡¤Í¬°éÃØ¼®	0	6	1	849	6	0	0	3000000	25
-Ðé¿ÕÉÁÓ°¡¤Í¬°éÃØ¼®	0	6	1	850	6	0	0	3000000	25
-»áÉñ¾²ÐÄ¡¤Í¬°éÃØ¼®	0	6	1	851	6	0	0	3000000	25
-ÎÞÄîÐÄ¾­¡¤Í¬°éÃØ¼®	0	6	1	852	6	0	0	3000000	25
-ÎåÐÐÎÞÏà¡¤Í¬°éÃØ¼®	0	6	1	853	6	0	0	3000000	25
-ÃÖÆøÆ®×Ù¡¤Í¬°éÃØ¼®	0	6	1	854	6	0	0	3000000	25
-»¨·ÉµúÎè¡¤Í¬°éÃØ¼®	0	6	1	855	6	0	0	3000000	25
-ÎÞÈËÎÞÎÒ¡¤Í¬°éÃØ¼®	0	6	1	901	6	0	0	3000000	25
-ÐÔ°ÁÈý¶¬¡¤Í¬°éÃØ¼®	0	6	1	859	6	0	0	3000000	25
-µãÑª½ØÂö¡¤Í¬°éÃØ¼®	0	6	1	860	6	0	0	3000000	25
-Íò¶¾²»¸´¡¤Í¬°éÃØ¼®	0	6	1	861	6	0	0	3000000	25
-ÉíÇáÈçÑà¡¤Í¬°éÃØ¼®	0	6	1	862	6	0	0	3000000	25
-ÄýÒô¹éÔª¡¤Í¬°éÃØ¼®	0	6	1	863	6	0	0	3000000	25
-Ò×¹Ç¾­¡¤Í¬°éÃØ¼®	0	6	1	864	6	0	0	3000000	25
-ÊøÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	865	6	0	0	3000000	25
-»ºÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	866	6	0	0	3000000	25
-Ñ£Ä¿¶¨ÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	867	6	0	0	3000000	25
-ÒæÊÙÒõÑô¡¤Í¬°éÃØ¼®	0	6	1	868	6	0	0	3000000	25
-°²¸§Ö®Óï¡¤Í¬°éÃØ¼®	0	6	1	869	6	0	0	3000000	25
-ÈýÉúÓÐÐÒ¡¤Í¬°éÃØ¼®	0	6	1	870	6	0	0	3000000	25
-¹íÃÔ÷È»ó¡¤Í¬°éÃØ¼®	0	6	1	871	6	0	0	3000000	25
-¶áÃü²øÈÆ¡¤Í¬°éÃØ¼®	0	6	1	872	6	0	0	3000000	25
-ÑýºüÙ»Ó°¡¤Í¬°éÃØ¼®	0	6	1	873	6	0	0	3000000	25
-»óÉñÂÒÐÄ¡¤Í¬°éÃØ¼®	0	6	1	874	6	0	0	3000000	25
-¹ÂÉíËéÓ°¡¤Í¬°éÃØ¼®	0	6	1	875	6	0	0	3000000	25
-ËÀÍöî¿°í¡¤Í¬°éÃØ¼®	0	6	1	876	6	0	0	3000000	25
-Éî»êÄî³ª¡¤Í¬°éÃØ¼®	0	6	1	877	6	0	0	3000000	25
-¼°ÆÇÖ®Öä¡¤Í¬°éÃØ¼®	0	6	1	878	6	0	0	3000000	25
-»¯ËèÎÞÒâ¡¤Í¬°éÃØ¼®	0	6	1	879	6	0	0	3000000	25
-ÈÚ¹ÇÎÞ×Ù¡¤Í¬°éÃØ¼®	0	6	1	880	6	0	0	3000000	25
-°µ¶¾Ö®ÊÖ¡¤Í¬°éÃØ¼®	0	6	1	882	6	0	0	3000000	25
-Èý·üÖ®Æø¡¤Í¬°éÃØ¼®	0	6	1	883	6	0	0	3000000	25
-½ð¸Õ²»ÆÆ¡¤Í¬°éÃØ¼®	0	6	1	834	7	0	0	3000000	25
-°Ù¶¾²»ÇÖ¡¤Í¬°éÃØ¼®	0	6	1	835	7	0	0	3000000	25
-±ùÑ©³õÈÚ¡¤Í¬°éÃØ¼®	0	6	1	836	7	0	0	3000000	25
-Õæ»ð¿¹Á¦¡¤Í¬°éÃØ¼®	0	6	1	837	7	0	0	3000000	25
-À×öª»¤¼×¡¤Í¬°éÃØ¼®	0	6	1	838	7	0	0	3000000	25
-Æ½ºÍÆø¾÷¡¤Í¬°éÃØ¼®	0	6	1	849	7	0	0	3000000	25
-Ðé¿ÕÉÁÓ°¡¤Í¬°éÃØ¼®	0	6	1	850	7	0	0	3000000	25
-»áÉñ¾²ÐÄ¡¤Í¬°éÃØ¼®	0	6	1	851	7	0	0	3000000	25
-ÎÞÄîÐÄ¾­¡¤Í¬°éÃØ¼®	0	6	1	852	7	0	0	3000000	25
-ÎåÐÐÎÞÏà¡¤Í¬°éÃØ¼®	0	6	1	853	7	0	0	3000000	25
-ÃÖÆøÆ®×Ù¡¤Í¬°éÃØ¼®	0	6	1	854	7	0	0	3000000	25
-»¨·ÉµúÎè¡¤Í¬°éÃØ¼®	0	6	1	855	7	0	0	3000000	25
-ÎÞÈËÎÞÎÒ¡¤Í¬°éÃØ¼®	0	6	1	901	7	0	0	3000000	25
-ÐÔ°ÁÈý¶¬¡¤Í¬°éÃØ¼®	0	6	1	859	7	0	0	3000000	25
-µãÑª½ØÂö¡¤Í¬°éÃØ¼®	0	6	1	860	7	0	0	3000000	25
-Íò¶¾²»¸´¡¤Í¬°éÃØ¼®	0	6	1	861	7	0	0	3000000	25
-ÉíÇáÈçÑà¡¤Í¬°éÃØ¼®	0	6	1	862	7	0	0	3000000	25
-ÄýÒô¹éÔª¡¤Í¬°éÃØ¼®	0	6	1	863	7	0	0	3000000	25
-Ò×¹Ç¾­¡¤Í¬°éÃØ¼®	0	6	1	864	7	0	0	3000000	25
-ÊøÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	865	7	0	0	3000000	25
-»ºÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	866	7	0	0	3000000	25
-Ñ£Ä¿¶¨ÉíÊõ¡¤Í¬°éÃØ¼®	0	6	1	867	7	0	0	3000000	25
-ÒæÊÙÒõÑô¡¤Í¬°éÃØ¼®	0	6	1	868	7	0	0	3000000	25
-°²¸§Ö®Óï¡¤Í¬°éÃØ¼®	0	6	1	869	7	0	0	3000000	25
-ÈýÉúÓÐÐÒ¡¤Í¬°éÃØ¼®	0	6	1	870	7	0	0	3000000	25
-¹íÃÔ÷È»ó¡¤Í¬°éÃØ¼®	0	6	1	871	7	0	0	3000000	25
-¶áÃü²øÈÆ¡¤Í¬°éÃØ¼®	0	6	1	872	7	0	0	3000000	25
-ÑýºüÙ»Ó°¡¤Í¬°éÃØ¼®	0	6	1	873	7	0	0	3000000	25
-»óÉñÂÒÐÄ¡¤Í¬°éÃØ¼®	0	6	1	874	7	0	0	3000000	25
-¹ÂÉíËéÓ°¡¤Í¬°éÃØ¼®	0	6	1	875	7	0	0	3000000	25
-ËÀÍöî¿°í¡¤Í¬°éÃØ¼®	0	6	1	876	7	0	0	3000000	25
-Éî»êÄî³ª¡¤Í¬°éÃØ¼®	0	6	1	877	7	0	0	3000000	25
-¼°ÆÇÖ®Öä¡¤Í¬°éÃØ¼®	0	6	1	878	7	0	0	3000000	25
-»¯ËèÎÞÒâ¡¤Í¬°éÃØ¼®	0	6	1	879	7	0	0	3000000	25
-ÈÚ¹ÇÎÞ×Ù¡¤Í¬°éÃØ¼®	0	6	1	880	7	0	0	3000000	25
-°µ¶¾Ö®ÊÖ¡¤Í¬°éÃØ¼®	0	6	1	882	7	0	0	3000000	25
-Èý·üÖ®Æø¡¤Í¬°éÃØ¼®	0	6	1	883	7	0	0	3000000	25
+tªn vËt phÈm 	cã ph¶i lµ Hoµng Kim hay kh«ng? 	Lo¹i lín	Ph©n lo¹i	Lo¹i nhá 	®¼ng cÊp	Ngò Hµnh	§¼ng cÊp Ma Ph¸p	L­îng gi¸ trÞ 	Tû lÖ 
+R­¬ng cò 	0	6	1	902	1	0	0	6000000	4000
+ThÇn bÝ kho¸ng th¹ch	0	6	1	398	1	0	0	100000000	2
+HuyÒn Tinh Kho¸ng Th¹ch cÊp 4	0	6	1	147	4	0	0	900000	260
+HuyÒn Tinh Kho¸ng Th¹ch cÊp 5	0	6	1	147	5	0	0	3300000	100
+HuyÒn Tinh Kho¸ng Th¹ch cÊp 6	0	6	1	147	6	0	0	12600000	50
+HuyÒn Tinh Kho¸ng Th¹ch cÊp 7	0	6	1	147	7	0	0	36770000	10
+HuyÒn Tinh Kho¸ng Th¹ch cÊp 8	0	6	1	147	8	0	0	126040000	2
+Phóc Duyªn Lé (TiÓu) 	0	6	1	122	1	0	0	600000	200
+Phóc Duyªn Lé (Trung) 	0	6	1	123	1	0	0	1200000	76
+Phóc Duyªn Lé (§¹i) 	0	6	1	124	1	0	0	3000000	50
+Tiªn Th¶o Lé 	0	6	1	71	1	0	0	400000	200
+Tinh Hång B¶o Th¹ch	0	4	353	1	1	0	0	4500000	100
+Lam Thñy Tinh	0	4	238	1	1	0	0	6000000	100
+Lôc Thñy Tinh	0	4	240	1	1	0	0	6000000	100
+Tö Thñy Tinh	0	4	239	1	1	0	0	6000000	100
+TÈy Tñy Kinh	0	6	1	22	1	0	0	42000000	10
+Vâ L©m MËt TÞch	0	6	1	26	1	0	0	55000000	10
+§Þnh Quèc Thanh Sa Tr­êng Sam	1	159	1	1	1	0	0	80000000	10
+§Þnh Quèc ¤ Sa Ph¸t Qu¸n	1	160	1	1	1	0	0	180000000	10
+§Þnh Quèc XÝch Quyªn NhuyÔn Ngoa	1	161	1	1	1	0	0	15000000	10
+§Þnh Quèc Tö §»ng Hé uyÓn	1	162	1	1	1	0	0	15000000	10
+§Þnh Quèc Ng©n Tµm Yªu ®¸i	1	163	1	1	1	0	0	15000000	10
+An Bang B¨ng Tinh Th¹ch H¹ng Liªn	1	164	1	1	1	0	0	260000000	10
+An Bang Cóc Hoa Th¹ch ChØ hoµn	1	165	1	1	1	0	0	260000000	10
+An Bang §iÒn Hoµng Th¹ch Ngäc Béi	1	166	1	1	1	0	0	180000000	10
+An Bang Kª HuyÕt Th¹ch Giíi ChØ 	1	167	1	1	1	0	0	260000000	10
+Kim Cang BÊt ph¸. §ång hµnh MËt tÞch 	0	6	1	834	6	0	0	5000000	100
+B¸ch §éc BÊt X©m. §ång hµnh MËt tÞch 	0	6	1	835	6	0	0	5000000	100
+B¨ng TuyÕt S¬ Dung. §ång hµnh MËt tÞch 	0	6	1	836	6	0	0	5000000	100
+Ch©n Háa Kh¸ng Lùc. §ång hµnh MËt tÞch 	0	6	1	837	6	0	0	5000000	100
+L«i §×nh Hé gi¸p. §ång hµnh MËt tÞch 	0	6	1	838	6	0	0	5000000	100
+B×nh Hoµ KhÝ QuyÕt. §ång hµnh MËt tÞch 	0	6	1	849	6	0	0	5000000	90
+H­ Kh«ng ThiÓm ¶nh. §ång hµnh MËt tÞch 	0	6	1	850	6	0	0	5000000	90
+Héi ThÇn TÜnh t©m. §ång hµnh MËt tÞch 	0	6	1	851	6	0	0	5000000	90
+V« NiÖm V« Kinh. §ång hµnh MËt tÞch 	0	6	1	852	6	0	0	5000000	90
+Ngò Hµnh V« T­íng. §ång hµnh MËt tÞch 	0	6	1	853	6	0	0	5000000	90
+Di KhÝ Phiªu Tung. §ång hµnh MËt tÞch 	0	6	1	854	6	0	0	5000000	90
+Hoa KhÝ §iÖp Vò. §ång hµnh MËt tÞch 	0	6	1	855	6	0	0	5000000	90
+V« Nh©n V« Ng·. §ång hµnh MËt tÞch 	0	6	1	901	6	0	0	5000000	90
+TÝnh Ng¹o Tam §«ng. §ång hµnh MËt tÞch 	0	6	1	859	6	0	0	5000000	90
+§iÓm HuyÕt TiÖt M¹ch. §ång hµnh MËt tÞch 	0	6	1	860	6	0	0	5000000	90
+V¹n §éc BÊt Phôc. §ång hµnh MËt tÞch 	0	6	1	861	6	0	0	5000000	90
+Th©n Khinh Nh­ YÕn. §ång hµnh MËt tÞch 	0	6	1	862	6	0	0	5000000	90
+Ng­ng ¢m Quy Nguyªn. §ång hµnh MËt tÞch 	0	6	1	863	6	0	0	5000000	90
+DÞch Cèt Kinh. §ång hµnh MËt tÞch 	0	6	1	864	6	0	0	5000000	90
+Thóc Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	865	6	0	0	5000000	90
+Ho·n Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	866	6	0	0	5000000	90
+HuyÒn Môc §Þnh Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	867	6	0	0	5000000	90
+Ých Thä ¢m D­¬ng. §ång hµnh MËt tÞch 	0	6	1	868	6	0	0	5000000	90
+An Phñ Chi Ng÷. §ång hµnh MËt tÞch 	0	6	1	869	6	0	0	5000000	90
+Tam Sinh H÷u H¹nh. §ång hµnh MËt tÞch 	0	6	1	870	6	0	0	5000000	90
+Quû Mª Ma HoÆc. §ång hµnh MËt tÞch 	0	6	1	871	6	0	0	5000000	90
+§o¹t MÖnh TriÒn NhiÔu. §ång hµnh MËt tÞch 	0	6	1	872	6	0	0	5000000	90
+Yªu Hå Tr¸i ¶nh. §ång hµnh MËt tÞch 	0	6	1	873	6	0	0	5000000	90
+HoÆc ThÇn Lo¹n T©m. §ång hµnh MËt tÞch 	0	6	1	874	6	0	0	5000000	90
+C« Th©n To¸i ¶nh. §ång hµnh MËt tÞch 	0	6	1	875	6	0	0	5000000	90
+Tö Vong Ki B¸n. §ång hµnh MËt tÞch 	0	6	1	876	6	0	0	5000000	90
+Th©m Hån NiÖm X­íng. §ång hµnh MËt tÞch 	0	6	1	877	6	0	0	5000000	90
+CËp Hån Chó. §ång hµnh MËt tÞch 	0	6	1	878	6	0	0	5000000	90
+Hãa Tñy V« ý. §ång hµnh MËt tÞch 	0	6	1	879	6	0	0	5000000	90
+Dung Cèt V« Tung. §ång hµnh MËt tÞch 	0	6	1	880	6	0	0	5000000	90
+¸m §éc Chi Thñ. §ång hµnh MËt tÞch 	0	6	1	882	6	0	0	5000000	90
+Tam Phôc Chi KhÝ. §ång hµnh MËt tÞch 	0	6	1	883	6	0	0	5000000	90
+Kim Cang BÊt ph¸. §ång hµnh MËt tÞch 	0	6	1	834	7	0	0	6000000	40
+B¸ch §éc BÊt X©m. §ång hµnh MËt tÞch 	0	6	1	835	7	0	0	6000000	40
+B¨ng TuyÕt S¬ Dung. §ång hµnh MËt tÞch 	0	6	1	836	7	0	0	6000000	40
+Ch©n Háa Kh¸ng Lùc. §ång hµnh MËt tÞch 	0	6	1	837	7	0	0	6000000	40
+L«i §×nh Hé gi¸p. §ång hµnh MËt tÞch 	0	6	1	838	7	0	0	6000000	40
+B×nh Hoµ KhÝ QuyÕt. §ång hµnh MËt tÞch 	0	6	1	849	7	0	0	6000000	30
+H­ Kh«ng ThiÓm ¶nh. §ång hµnh MËt tÞch 	0	6	1	850	7	0	0	6000000	30
+Héi ThÇn TÜnh t©m. §ång hµnh MËt tÞch 	0	6	1	851	7	0	0	6000000	30
+V« NiÖm V« Kinh. §ång hµnh MËt tÞch 	0	6	1	852	7	0	0	6000000	30
+Ngò Hµnh V« T­íng. §ång hµnh MËt tÞch 	0	6	1	853	7	0	0	6000000	30
+Di KhÝ Phiªu Tung. §ång hµnh MËt tÞch 	0	6	1	854	7	0	0	6000000	30
+Hoa KhÝ §iÖp Vò. §ång hµnh MËt tÞch 	0	6	1	855	7	0	0	6000000	30
+V« Nh©n V« Ng·. §ång hµnh MËt tÞch 	0	6	1	901	7	0	0	6000000	30
+TÝnh Ng¹o Tam §«ng. §ång hµnh MËt tÞch 	0	6	1	859	7	0	0	6000000	30
+§iÓm HuyÕt TiÖt M¹ch. §ång hµnh MËt tÞch 	0	6	1	860	7	0	0	6000000	30
+V¹n §éc BÊt Phôc. §ång hµnh MËt tÞch 	0	6	1	861	7	0	0	6000000	30
+Th©n Khinh Nh­ YÕn. §ång hµnh MËt tÞch 	0	6	1	862	7	0	0	6000000	30
+Ng­ng ¢m Quy Nguyªn. §ång hµnh MËt tÞch 	0	6	1	863	7	0	0	6000000	30
+DÞch Cèt Kinh. §ång hµnh MËt tÞch 	0	6	1	864	7	0	0	6000000	30
+Thóc Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	865	7	0	0	6000000	30
+Ho·n Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	866	7	0	0	6000000	30
+HuyÒn Môc §Þnh Th©n ThuËt. §ång hµnh MËt tÞch 	0	6	1	867	7	0	0	6000000	30
+Ých Thä ¢m D­¬ng. §ång hµnh MËt tÞch 	0	6	1	868	7	0	0	6000000	30
+An Phñ Chi Ng÷. §ång hµnh MËt tÞch 	0	6	1	869	7	0	0	6000000	30
+Tam Sinh H÷u H¹nh. §ång hµnh MËt tÞch 	0	6	1	870	7	0	0	6000000	30
+Quû Mª Ma HoÆc. §ång hµnh MËt tÞch 	0	6	1	871	7	0	0	6000000	30
+§o¹t MÖnh TriÒn NhiÔu. §ång hµnh MËt tÞch 	0	6	1	872	7	0	0	6000000	30
+Yªu Hå Tr¸i ¶nh. §ång hµnh MËt tÞch 	0	6	1	873	7	0	0	6000000	30
+HoÆc ThÇn Lo¹n T©m. §ång hµnh MËt tÞch 	0	6	1	874	7	0	0	6000000	30
+C« Th©n To¸i ¶nh. §ång hµnh MËt tÞch 	0	6	1	875	7	0	0	6000000	30
+Tö Vong Ki B¸n. §ång hµnh MËt tÞch 	0	6	1	876	7	0	0	6000000	30
+Th©m Hån NiÖm X­íng. §ång hµnh MËt tÞch 	0	6	1	877	7	0	0	6000000	30
+CËp Hån Chó. §ång hµnh MËt tÞch 	0	6	1	878	7	0	0	6000000	30
+Hãa Tñy V« ý. §ång hµnh MËt tÞch 	0	6	1	879	7	0	0	6000000	30
+Dung Cèt V« Tung. §ång hµnh MËt tÞch 	0	6	1	880	7	0	0	6000000	30
+¸m §éc Chi Thñ. §ång hµnh MËt tÞch 	0	6	1	882	7	0	0	6000000	30
+Tam Phôc Chi KhÝ. §ång hµnh MËt tÞch 	0	6	1	883	7	0	0	6000000	30

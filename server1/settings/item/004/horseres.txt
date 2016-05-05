@@ -1,262 +1,222 @@
 ÂíÆ¥±àºÅ	ÂíÆ¥²¿¼þ±àºÅ	ËµÃ÷
-1	0	µÚÒ»ÐÐÊÇÃ»ÓÐ×°±¸µÄÇé¿ö£¬ÔÚ´Ë´¦ÎÞÒâÒå¡£
-2	10	ÆÕÍ¨»ÆÂí
-3	10	ÆÕÍ¨»ÆÂí
-4	10	ÆÕÍ¨»ÆÂí
-5	10	ÆÕÍ¨»ÆÂí
-6	10	ÆÕÍ¨»ÆÂí
-7	10	ÆÕÍ¨»ÆÂí
-8	10	ÆÕÍ¨»ÆÂí
-9	10	ÆÕÍ¨»ÆÂí
-10	10	ÆÕÍ¨»ÆÂí
-11	10	ÆÕÍ¨»ÆÂí
-12	6	ÆÕÍ¨ÇàÂí
-13	6	ÆÕÍ¨ÇàÂí
-14	6	ÆÕÍ¨ÇàÂí
-15	6	ÆÕÍ¨ÇàÂí
-16	6	ÆÕÍ¨ÇàÂí
-17	6	ÆÕÍ¨ÇàÂí
-18	6	ÆÕÍ¨ÇàÂí
-19	6	ÆÕÍ¨ÇàÂí
-20	6	ÆÕÍ¨ÇàÂí
-21	6	ÆÕÍ¨ÇàÂí
-22	9	ÆÕÍ¨°×Âí
-23	9	ÆÕÍ¨°×Âí
-24	9	ÆÕÍ¨°×Âí
-25	9	ÆÕÍ¨°×Âí
-26	9	ÆÕÍ¨°×Âí
-27	9	ÆÕÍ¨°×Âí
-28	9	ÆÕÍ¨°×Âí
-29	9	ÆÕÍ¨°×Âí
-30	9	ÆÕÍ¨°×Âí
-31	9	ÆÕÍ¨°×Âí
-32	5	ÆÕÍ¨ºÚÂí
-33	5	ÆÕÍ¨ºÚÂí
-34	5	ÆÕÍ¨ºÚÂí
-35	5	ÆÕÍ¨ºÚÂí
-36	5	ÆÕÍ¨ºÚÂí
-37	5	ÆÕÍ¨ºÚÂí
-38	5	ÆÕÍ¨ºÚÂí
-39	5	ÆÕÍ¨ºÚÂí
-40	5	ÆÕÍ¨ºÚÂí
-41	5	ÆÕÍ¨ºÚÂí
-42	8	ÆÕÍ¨ºìÂí
-43	8	ÆÕÍ¨ºìÂí
-44	8	ÆÕÍ¨ºìÂí
-45	8	ÆÕÍ¨ºìÂí
-46	8	ÆÕÍ¨ºìÂí
-47	8	ÆÕÍ¨ºìÂí
-48	8	ÆÕÍ¨ºìÂí
-49	8	ÆÕÍ¨ºìÂí
-50	8	ÆÕÍ¨ºìÂí
-51	8	ÆÕÍ¨ºìÂí
-52	7	ÎÚÔÆÌ¤Ñ©£¬¶¥¼¶ºÚ
-53	2	³àÍÃ£¬¶¥¼¶ºì
-54	11	¾øÓ°£¬¶¥¼¶Çà
-55	4	µÄÂ¬£¬¶¥¼¶»Æ
-56	3	ÕÕÒ¹ÓñÊ¨×Ó£¬¶¥¼¶°×
-57	7	ÎÚÔÆÌ¤Ñ©£¬¶¥¼¶ºÚ
-58	2	³àÍÃ£¬¶¥¼¶ºì
-59	11	¾øÓ°£¬¶¥¼¶Çà
-60	4	µÄÂ¬£¬¶¥¼¶»Æ
-61	3	ÕÕÒ¹ÓñÊ¨×Ó£¬¶¥¼¶°×
-62	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-63	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-64	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-65	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-66	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-67	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-68	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-69	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-70	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-71	12	±¼Ïü£¬¶¥¼¶÷îºÚ
-72	13	·­Óð£¬¶¥¼¶Ñ©°×
-73	13	·­Óð£¬¶¥¼¶Ñ©°×
-74	13	·­Óð£¬¶¥¼¶Ñ©°×
-75	13	·­Óð£¬¶¥¼¶Ñ©°×
-76	13	·­Óð£¬¶¥¼¶Ñ©°×
-77	13	·­Óð£¬¶¥¼¶Ñ©°×
-78	13	·­Óð£¬¶¥¼¶Ñ©°×
-79	13	·­Óð£¬¶¥¼¶Ñ©°×
-80	13	·­Óð£¬¶¥¼¶Ñ©°×
-81	13	·­Óð£¬¶¥¼¶Ñ©°×
-82	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-83	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-84	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-85	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-86	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-87	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-88	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-89	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-90	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-91	14	·ÉÔÆ£¬¶¥¼¶Çà°×
-92	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-93	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-94	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-95	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-96	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-97	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-98	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-99	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-100	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-101	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
-102	16	¾øµØ£¬¶¥¼¶÷îºÚ
-103	16	¾øµØ£¬¶¥¼¶÷îºÚ
-104	16	¾øµØ£¬¶¥¼¶÷îºÚ
-105	16	¾øµØ£¬¶¥¼¶÷îºÚ
-106	16	¾øµØ£¬¶¥¼¶÷îºÚ
-107	16	¾øµØ£¬¶¥¼¶÷îºÚ
-108	16	¾øµØ£¬¶¥¼¶÷îºÚ
-109	16	¾øµØ£¬¶¥¼¶÷îºÚ
-110	16	¾øµØ£¬¶¥¼¶÷îºÚ
-111	16	¾øµØ£¬¶¥¼¶÷îºÚ
-112	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-113	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-114	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-115	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-116	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-117	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-118	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-119	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-120	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-121	17	Óâ»Ô£¬¶¥¼¶Ñªºì
-122	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-123	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-124	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-125	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-126	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-127	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-128	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-129	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-130	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-131	18	ÌÚÎí£¬¶¥¼¶×Ø»Æ
-132	19	³¬¹â£¬¶¥¼¶×Øºì
-133	19	³¬¹â£¬¶¥¼¶×Øºì
-134	19	³¬¹â£¬¶¥¼¶×Øºì
-135	19	³¬¹â£¬¶¥¼¶×Øºì
-136	19	³¬¹â£¬¶¥¼¶×Øºì
-137	19	³¬¹â£¬¶¥¼¶×Øºì
-138	19	³¬¹â£¬¶¥¼¶×Øºì
-139	19	³¬¹â£¬¶¥¼¶×Øºì
-140	19	³¬¹â£¬¶¥¼¶×Øºì
-141	19	³¬¹â£¬¶¥¼¶×Øºì
-142	20	»¢Íõ
-143	20	»¢Íõ
-144	20	»¢Íõ
-145	20	»¢Íõ
-146	20	»¢Íõ
-147	20	»¢Íõ
-148	20	»¢Íõ
-149	20	»¢Íõ
-150	20	»¢Íõ
-151	20	»¢Íõ
-152	21	»ð¾¦½ð»¢Íõ
-153	21	»ð¾¦½ð»¢Íõ
-154	21	»ð¾¦½ð»¢Íõ
-155	21	»ð¾¦½ð»¢Íõ
-156	21	»ð¾¦½ð»¢Íõ
-157	21	»ð¾¦½ð»¢Íõ
-158	21	»ð¾¦½ð»¢Íõ
-159	21	»ð¾¦½ð»¢Íõ
-160	21	»ð¾¦½ð»¢Íõ
-161	21	»ð¾¦½ð»¢Íõ
-162	22	½ð¾¦°×»¢Íõ
-163	22	½ð¾¦°×»¢Íõ
-164	22	½ð¾¦°×»¢Íõ
-165	22	½ð¾¦°×»¢Íõ
-166	22	½ð¾¦°×»¢Íõ
-167	22	½ð¾¦°×»¢Íõ
-168	22	½ð¾¦°×»¢Íõ
-169	22	½ð¾¦°×»¢Íõ
-170	22	½ð¾¦°×»¢Íõ
-171	22	½ð¾¦°×»¢Íõ
-172	23	Áú¾¦ºÚ»¢Íõ
-173	23	Áú¾¦ºÚ»¢Íõ
-174	23	Áú¾¦ºÚ»¢Íõ
-175	23	Áú¾¦ºÚ»¢Íõ
-176	23	Áú¾¦ºÚ»¢Íõ
-177	23	Áú¾¦ºÚ»¢Íõ
-178	23	Áú¾¦ºÚ»¢Íõ
-179	23	Áú¾¦ºÚ»¢Íõ
-180	23	Áú¾¦ºÚ»¢Íõ
-181	23	Áú¾¦ºÚ»¢Íõ
-182	24	º¹ÑªÁú¾Ô
-183	24	º¹ÑªÁú¾Ô
-184	24	º¹ÑªÁú¾Ô
-185	24	º¹ÑªÁú¾Ô
-186	24	º¹ÑªÁú¾Ô
-187	24	º¹ÑªÁú¾Ô
-188	24	º¹ÑªÁú¾Ô
-189	24	º¹ÑªÁú¾Ô
-190	24	º¹ÑªÁú¾Ô
-191	24	º¹ÑªÁú¾Ô
-192	13	·çÔÆ°×Âí
-193	13	·çÔÆ°×Âí
-194	13	·çÔÆ°×Âí
-195	13	·çÔÆ°×Âí
-196	13	·çÔÆ°×Âí
-197	13	·çÔÆ°×Âí
-198	13	·çÔÆ°×Âí
-199	13	·çÔÆ°×Âí
-200	13	·çÔÆ°×Âí
-201	13	·çÔÆ°×Âí
-202	13	·çÔÆÕ½Âí
-203	13	·çÔÆÕ½Âí
-204	13	·çÔÆÕ½Âí
-205	13	·çÔÆÕ½Âí
-206	13	·çÔÆÕ½Âí
-207	13	·çÔÆÕ½Âí
-208	13	·çÔÆÕ½Âí
-209	13	·çÔÆÕ½Âí
-210	13	·çÔÆÕ½Âí
-211	13	·çÔÆÕ½Âí
-212	13	·çÔÆÉñÂí
-213	13	·çÔÆÉñÂí
-214	13	·çÔÆÉñÂí
-215	13	·çÔÆÉñÂí
-216	13	·çÔÆÉñÂí
-217	13	·çÔÆÉñÂí
-218	13	·çÔÆÉñÂí
-219	13	·çÔÆÉñÂí
-220	13	·çÔÆÉñÂí
-221	13	·çÔÆÉñÂí
-222	25	Ê¨×Ó
-223	25	Ê¨×Ó
-224	25	Ê¨×Ó
-225	25	Ê¨×Ó
-226	25	Ê¨×Ó
-227	25	Ê¨×Ó
-228	25	Ê¨×Ó
-229	25	Ê¨×Ó
-230	25	Ê¨×Ó
-231	25	Ê¨×Ó
-232	26	ÂæÍÕ
-233	26	ÂæÍÕ
-234	26	ÂæÍÕ
-235	26	ÂæÍÕ
-236	26	ÂæÍÕ
-237	26	ÂæÍÕ
-238	26	ÂæÍÕ
-239	26	ÂæÍÕ
-240	26	ÂæÍÕ
-241	26	ÂæÍÕ
-242	27	²ÝÄàÂí
-243	27	²ÝÄàÂí
-244	27	²ÝÄàÂí
-245	27	²ÝÄàÂí
-246	27	²ÝÄàÂí
-247	27	²ÝÄàÂí
-248	27	²ÝÄàÂí
-249	27	²ÝÄàÂí
-250	27	²ÝÄàÂí
-251	27	²ÝÄàÂí
-252	28	Ã·»¨Â¹
-253	28	Ã·»¨Â¹
-254	28	Ã·»¨Â¹
-255	28	Ã·»¨Â¹
-256	28	Ã·»¨Â¹
-257	28	Ã·»¨Â¹
-258	28	Ã·»¨Â¹
-259	28	Ã·»¨Â¹
-260	28	Ã·»¨Â¹
-261	28	Ã·»¨Â¹
+1	0	Dßng thø nhÊt cho biÕt kh«ng cã trang bÞ. Cßn l¹i ®Òu v« nghÜa
+2	10	Phæ th«ng Hoµng M· 
+3	10	Phæ th«ng Hoµng M· 
+4	10	Phæ th«ng Hoµng M· 
+5	10	Phæ th«ng Hoµng M· 
+6	10	Phæ th«ng Hoµng M· 
+7	10	Phæ th«ng Hoµng M· 
+8	10	Phæ th«ng Hoµng M· 
+9	10	Phæ th«ng Hoµng M· 
+10	10	Phæ th«ng Hoµng M· 
+11	10	Phæ th«ng Hoµng M· 
+12	6	Phæ Th«ng Thanh M· 
+13	6	Phæ Th«ng Thanh M· 
+14	6	Phæ Th«ng Thanh M· 
+15	6	Phæ Th«ng Thanh M· 
+16	6	Phæ Th«ng Thanh M· 
+17	6	Phæ Th«ng Thanh M· 
+18	6	Phæ Th«ng Thanh M· 
+19	6	Phæ Th«ng Thanh M· 
+20	6	Phæ Th«ng Thanh M· 
+21	6	Phæ Th«ng Thanh M· 
+22	9	Phæ Th«ng B¹ch M· 
+23	9	Phæ Th«ng B¹ch M· 
+24	9	Phæ Th«ng B¹ch M· 
+25	9	Phæ Th«ng B¹ch M· 
+26	9	Phæ Th«ng B¹ch M· 
+27	9	Phæ Th«ng B¹ch M· 
+28	9	Phæ Th«ng B¹ch M· 
+29	9	Phæ Th«ng B¹ch M· 
+30	9	Phæ Th«ng B¹ch M· 
+31	9	Phæ Th«ng B¹ch M· 
+32	5	Phæ Th«ng H¾c M· 
+33	5	Phæ Th«ng H¾c M· 
+34	5	Phæ Th«ng H¾c M· 
+35	5	Phæ Th«ng H¾c M· 
+36	5	Phæ Th«ng H¾c M· 
+37	5	Phæ Th«ng H¾c M· 
+38	5	Phæ Th«ng H¾c M· 
+39	5	Phæ Th«ng H¾c M· 
+40	5	Phæ Th«ng H¾c M· 
+41	5	Phæ Th«ng H¾c M· 
+42	8	Phæ Th«ng Hång M· 
+43	8	Phæ Th«ng Hång M· 
+44	8	Phæ Th«ng Hång M· 
+45	8	Phæ Th«ng Hång M· 
+46	8	Phæ Th«ng Hång M· 
+47	8	Phæ Th«ng Hång M· 
+48	8	Phæ Th«ng Hång M· 
+49	8	Phæ Th«ng Hång M· 
+50	8	Phæ Th«ng Hång M· 
+51	8	Phæ Th«ng Hång M· 
+52	7	¤ V©n §¹p TuyÕt
+53	2	XÝch Thè 
+54	11	TuyÖt ¶nh
+55	4	§Ých L« 
+56	3	ChiÕu D¹ Ngäc S­ Tö 
+57	7	¤ V©n §¹p TuyÕt
+58	2	XÝch Thè 
+59	11	TuyÖt ¶nh
+60	4	§Ých L« 
+61	3	ChiÕu D¹ Ngäc S­ Tö 
+62	12	B«n Tiªu
+63	12	B«n Tiªu
+64	12	B«n Tiªu
+65	12	B«n Tiªu
+66	12	B«n Tiªu
+67	12	B«n Tiªu
+68	12	B«n Tiªu
+69	12	B«n Tiªu
+70	12	B«n Tiªu
+71	12	B«n Tiªu
+72	13	Phiªn Vò 
+73	13	Phiªn Vò 
+74	13	Phiªn Vò 
+75	13	Phiªn Vò 
+76	13	Phiªn Vò 
+77	13	Phiªn Vò 
+78	13	Phiªn Vò 
+79	13	Phiªn Vò 
+80	13	Phiªn Vò 
+81	13	Phiªn Vò 
+82	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+83	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+84	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+85	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+86	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+87	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+88	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+89	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+90	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+91	14	TuyÖt thÕ phi m·, l«ng tr¾ng nh­ tuyÕt
+92	15	XÝch Long C©u, huyÕt hång cao cÊp
+93	15	XÝch Long C©u, huyÕt hång cao cÊp
+94	15	XÝch Long C©u, huyÕt hång cao cÊp
+95	15	XÝch Long C©u, huyÕt hång cao cÊp
+96	15	XÝch Long C©u, huyÕt hång cao cÊp
+97	15	XÝch Long C©u, huyÕt hång cao cÊp
+98	15	XÝch Long C©u, huyÕt hång cao cÊp
+99	15	XÝch Long C©u, huyÕt hång cao cÊp
+100	15	XÝch Long C©u, huyÕt hång cao cÊp
+101	15	XÝch Long C©u, huyÕt hång cao cÊp
+102	16	TuyÖt §Þa, öu h¾c cao cÊp
+103	16	TuyÖt §Þa, öu h¾c cao cÊp
+104	16	TuyÖt §Þa, öu h¾c cao cÊp
+105	16	TuyÖt §Þa, öu h¾c cao cÊp
+106	16	TuyÖt §Þa, öu h¾c cao cÊp
+107	16	TuyÖt §Þa, öu h¾c cao cÊp
+108	16	TuyÖt §Þa, öu h¾c cao cÊp
+109	16	TuyÖt §Þa, öu h¾c cao cÊp
+110	16	TuyÖt §Þa, öu h¾c cao cÊp
+111	16	TuyÖt §Þa, öu h¾c cao cÊp
+112	17	Du Huy, huyÕt hång cao cÊp
+113	17	Du Huy, huyÕt hång cao cÊp
+114	17	Du Huy, huyÕt hång cao cÊp
+115	17	Du Huy, huyÕt hång cao cÊp
+116	17	Du Huy, huyÕt hång cao cÊp
+117	17	Du Huy, huyÕt hång cao cÊp
+118	17	Du Huy, huyÕt hång cao cÊp
+119	17	Du Huy, huyÕt hång cao cÊp
+120	17	Du Huy, huyÕt hång cao cÊp
+121	17	Du Huy, huyÕt hång cao cÊp
+122	18	§»ng Vô, t«ng hoµng cao cÊp
+123	18	§»ng Vô, t«ng hoµng cao cÊp
+124	18	§»ng Vô, t«ng hoµng cao cÊp
+125	18	§»ng Vô, t«ng hoµng cao cÊp
+126	18	§»ng Vô, t«ng hoµng cao cÊp
+127	18	§»ng Vô, t«ng hoµng cao cÊp
+128	18	§»ng Vô, t«ng hoµng cao cÊp
+129	18	§»ng Vô, t«ng hoµng cao cÊp
+130	18	§»ng Vô, t«ng hoµng cao cÊp
+131	18	§»ng Vô, t«ng hoµng cao cÊp
+132	19	Siªu Quang, t«ng hång cao c©p
+133	19	Siªu Quang, t«ng hång cao c©p
+134	19	Siªu Quang, t«ng hång cao c©p
+135	19	Siªu Quang, t«ng hång cao c©p
+136	19	Siªu Quang, t«ng hång cao c©p
+137	19	Siªu Quang, t«ng hång cao c©p
+138	19	Siªu Quang, t«ng hång cao c©p
+139	19	Siªu Quang, t«ng hång cao c©p
+140	19	Siªu Quang, t«ng hång cao c©p
+141	19	Siªu Quang, t«ng hång cao c©p
+142	20	Hæ V­¬ng
+143	20	Hæ V­¬ng
+144	20	Hæ V­¬ng
+145	20	Hæ V­¬ng
+146	20	Hæ V­¬ng
+147	20	Hæ V­¬ng
+148	20	Hæ V­¬ng
+149	20	Hæ V­¬ng
+150	20	Hæ V­¬ng
+151	20	Hæ V­¬ng
+152	21	Háa Tinh Kim Hæ V­¬ng
+153	21	Háa Tinh Kim Hæ V­¬ng
+154	21	Háa Tinh Kim Hæ V­¬ng
+155	21	Háa Tinh Kim Hæ V­¬ng
+156	21	Háa Tinh Kim Hæ V­¬ng
+157	21	Háa Tinh Kim Hæ V­¬ng
+158	21	Háa Tinh Kim Hæ V­¬ng
+159	21	Háa Tinh Kim Hæ V­¬ng
+160	21	Háa Tinh Kim Hæ V­¬ng
+161	21	Háa Tinh Kim Hæ V­¬ng
+162	22	Kim Tinh B¹ch Hæ V­¬ng
+163	22	Kim Tinh B¹ch Hæ V­¬ng
+164	22	Kim Tinh B¹ch Hæ V­¬ng
+165	22	Kim Tinh B¹ch Hæ V­¬ng
+166	22	Kim Tinh B¹ch Hæ V­¬ng
+167	22	Kim Tinh B¹ch Hæ V­¬ng
+168	22	Kim Tinh B¹ch Hæ V­¬ng
+169	22	Kim Tinh B¹ch Hæ V­¬ng
+170	22	Kim Tinh B¹ch Hæ V­¬ng
+171	22	Kim Tinh B¹ch Hæ V­¬ng
+172	23	Long Tinh H¾c Hæ V­¬ng
+173	23	Long Tinh H¾c Hæ V­¬ng
+174	23	Long Tinh H¾c Hæ V­¬ng
+175	23	Long Tinh H¾c Hæ V­¬ng
+176	23	Long Tinh H¾c Hæ V­¬ng
+177	23	Long Tinh H¾c Hæ V­¬ng
+178	23	Long Tinh H¾c Hæ V­¬ng
+179	23	Long Tinh H¾c Hæ V­¬ng
+180	23	Long Tinh H¾c Hæ V­¬ng
+181	23	Long Tinh H¾c Hæ V­¬ng
+182	24	H·n HuyÕt Long C©u
+183	24	H·n HuyÕt Long C©u
+184	24	H·n HuyÕt Long C©u
+185	24	H·n HuyÕt Long C©u
+186	24	H·n HuyÕt Long C©u
+187	24	H·n HuyÕt Long C©u
+188	24	H·n HuyÕt Long C©u
+189	24	H·n HuyÕt Long C©u
+190	24	H·n HuyÕt Long C©u
+191	24	H·n HuyÕt Long C©u
+192	13	Phong V©n B¹ch M·
+193	13	Phong V©n B¹ch M·
+194	13	Phong V©n B¹ch M·
+195	13	Phong V©n B¹ch M·
+196	13	Phong V©n B¹ch M·
+197	13	Phong V©n B¹ch M·
+198	13	Phong V©n B¹ch M·
+199	13	Phong V©n B¹ch M·
+200	13	Phong V©n B¹ch M·
+201	13	Phong V©n B¹ch M·
+202	13	Phong V©n ChiÕn M·
+203	13	Phong V©n ChiÕn M·
+204	13	Phong V©n ChiÕn M·
+205	13	Phong V©n ChiÕn M·
+206	13	Phong V©n ChiÕn M·
+207	13	Phong V©n ChiÕn M·
+208	13	Phong V©n ChiÕn M·
+209	13	Phong V©n ChiÕn M·
+210	13	Phong V©n ChiÕn M·
+211	13	Phong V©n ChiÕn M·
+212	13	Phong V©n ThÇn M·
+213	13	Phong V©n ThÇn M·
+214	13	Phong V©n ThÇn M·
+215	13	Phong V©n ThÇn M·
+216	13	Phong V©n ThÇn M·
+217	13	Phong V©n ThÇn M·
+218	13	Phong V©n ThÇn M·
+219	13	Phong V©n ThÇn M·
+220	13	Phong V©n ThÇn M·
+221	13	Phong V©n ThÇn M·

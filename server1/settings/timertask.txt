@@ -113,3 +113,5 @@ TASK	SCRIPT
 112	\script\missions\killbossmatch\missionhead_ready.lua
 113	\script\missions\killbossmatch\missionhead.lua
 114	\script\missions\newpracticemap\timer.lua
+115	\script\global\volamht\baotri.lua
+116	\script\global\volamht\hancheip.lua

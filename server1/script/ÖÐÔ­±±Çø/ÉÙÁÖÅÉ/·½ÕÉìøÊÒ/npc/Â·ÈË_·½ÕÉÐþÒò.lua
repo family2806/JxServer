@@ -1,4 +1,4 @@
--- ÉÙÁÖ Â·ÈËNPC ·½ÕÉĞşÒò 10¼¶ÈÎÎñ¡¢40¼¶ÈÎÎñ
+-- ThiÕu L©mÂ·ÈËNPC ·½ÕÉĞşÒò 10¼¶ÈÎÎñ¡¢40¼¶ÈÎÎñ
 -- by£ºDan_Deng(2003-08-01)
 -- Update£ºDan_Deng(2003-10-27)ÖØĞ´ÖØ·µÊ¦ÃÅÈÎÎñ£¬²¢ÖØĞÂÕûÀí½Å±¾
 
@@ -12,7 +12,7 @@ Include("\\script\\dailogsys\\g_dialog.lua")
 
 function main()
 	if (vt06_isactive() ~= 0) then
-		Say("ÕÒÎÒÓĞÊ²Ã´ÊÂ ", 2, "ÏëÇë½Ì´óÊ¦ /oldentence", "Çì×£¶÷Ê¦½Ú£¬ÔÚÏÂÕÒ¹»ÁË¶÷Ê¦¿¨ºÍ¸ßÍ½¿¨ /vt06_prizeenter");
+		Say("T×m ta cã viÖc g×?", 2, "Muèn thØnh gi¸o ®¹i s­!/oldentence", "Mõng lÔ ¢n S­, t¹i h¹ ®· t×m ®ñ “ThÎ ¢n S­” vµ “ThÎ Cao §å”./vt06_prizeenterr");
 		return
 	end;
 	
@@ -24,12 +24,12 @@ function main()
 		szNpcName = NpcName2Replace(szNpcName)
 	end
 	local tbDailog = DailogClass:new(szNpcName)
-	tbDailog.szTitleMsg = "<npc>×î½üÎÒÓĞºÜ¶àÊÂÒª½â¾ö£¬ÄãÀ´ÕâÓĞÊ²Ã´ÊÂ?"
-	G_TASK:OnMessage("ÉÙÁÖ ", tbDailog, "DialogWithNpc")
+	tbDailog.szTitleMsg = "<npc> gÇn ®©y ta cã rÊt nhiÒu viÖc cÇn gi¶i quyÕt, ng­¬i tíi ®©y cã viÖc g×?"
+	G_TASK:OnMessage("ThiÕu L©m", tbDailog, "DialogWithNpc")
 	if (GetLevel() >= 120 and GetTask(LV120_SKILL_STATE) ~= 19 and GetLastFactionNumber() == 0) then
-		tbDailog:AddOptEntry("Ñ§120¼¼ÄÜ.", lvl120skill_learn)
+		tbDailog:AddOptEntry("Häc kü n¨ng 120", lvl120skill_learn)
 	end
-	tbDailog:AddOptEntry("ÏëÇë½ÌÆäËûÊÂ", oldentence)
+	tbDailog:AddOptEntry("Muèn thØnh gi¸o viÖc kh¸c", oldentence)
 	tbDailog:Show() 
 end
 
@@ -40,40 +40,40 @@ function oldentence()
 	
 	if (UTask_sl == 70*256) and (GetFaction() == "shaolin") then			-- »ØÊ¦´íÎóĞŞÕı
 		SetFaction("")
-		Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 		return
 	elseif (UTask_sl == 70*256) and (GetTask(3) >= 5*256) and (GetTask(3) < 10*256) then		-- ÒÔÇ°½Ó¹ıÈëÃÅÈÎÎñµÄ
 		SetTask(3,0)
-		Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 		return
 	elseif (UTask_sl == 80*256) and (GetCamp() == 4) then			-- »ØÊ¦´íÎóĞŞÕı
 		SetTask(7,70*256)
-		Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 		return
 	elseif (GetTask(3) == 70*256) and (GetTask(7) == 70*256) then			-- ×ªÃÅÅÉ´íÎóĞŞÕı
 		SetTask(3,75*256)
-		Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+		Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 		return
-	elseif (UTask_sl == 80*256 and nFactID == 0 and GetCamp() == 1 and GetFaction() == "³õÈë½­ºş ") then
+	elseif (UTask_sl == 80*256 and nFactID == 0 and GetCamp() == 1 and GetFaction() == "Vµo ®Êu tr­êng") then
 		 local _, nTongID = GetTong();
 		 if (nTongID == 0) then
 			SetFaction("shaolin");
-			Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+			Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 			return
 		end
-	elseif (UTask_sl == 70*256 and nFactID == 0 and GetCamp() ~= 4 and GetFaction() == "³õÈë½­ºş") then
+	elseif (UTask_sl == 70*256 and nFactID == 0 and GetCamp() ~= 4 and GetFaction() == "Vµo ®Êu tr­êng") then
 		 local _, nTongID = GetTong();
 		 if (nTongID == 0) then
 			SetFaction("");
 			SetCurCamp(GetCamp());
-			Say("ÏµÍ³·¢Éú´íÎó£¬ÒÑ¼°Ê±»Ö¸´!",0)
+			Say("Ph¸t hiÖn lçi hÖ thèng, ®· kŞp thêi phôc håi!",0)
 			return
 		end
 	end
 	
-	local tbDes = {"´øÒÕÍ¶Ê¦/#daiyitoushi_main(0)", "ÏëÇë½ÌÆäËûÊÂ/common_talk"};
+	local tbDes = {"NghÖ thuËt Toushi/#daiyitoushi_main(0)", "Muèn thØnh gi¸o viÖc kh¸c/common_talk"};
 	
-	Say("×î½üÎÒÓĞºÜ¶àÊÂÒª½â¾ö£¬ÕÒÎÒÓĞÊ²Ã´ÊÂ ", getn(tbDes), tbDes);
+	Say("×î½üÎÒÓĞºÜ¶àÊÂÒª½â¾ö£¬T×m ta cã viÖc g×?", getn(tbDes), tbDes);
 end
 
 function common_talk()
@@ -146,7 +146,7 @@ function goff_yes()
 end
 
 function return_sele()
-	Say("³öÊ¦Íê¾Í²»ÊÇÉÙÁËµÜ×ÓÁË£¬µ±ÈÕÊÇ²»ÄÜÁË£¬µ«ÊÇ£¬Èç¹û²Î¿¼·ğÀí£¬ÉÙÁÖ×ÜÊÇ»á½ÓÄÉÖØ·µÃÅÅÉµÄÈË.",2,"ÎÒÏë·µ»ØÉÙÁÖ /return_yes","²»ĞèÒª/no")
+	Say("³öÊ¦Íê¾Í²»ÊÇÉÙÁËµÜ×ÓÁË£¬µ±ÈÕÊÇ²»ÄÜÁË£¬µ«ÊÇ£¬Èç¹û²Î¿¼·ğÀí£¬ÉÙÁÖ×ÜÊÇ»á½ÓÄÉÖØ·µÃÅÅÉµÄÈË.",2,"ÎÒÏë·µ»ØThiÕu L©m/return_yes","²»ĞèÒª/no")
 end;
 
 function return_yes()

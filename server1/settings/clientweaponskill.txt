@@ -1,33 +1,33 @@
 Id	WeaponType	SkillId
-1	¿ÕÊÖ	53
-2	µ¥ÊÖ½£1	53
-3	µ¥ÊÖ½£2	53
-4	µ¥ÊÖ½£3	53
-5	µ¥ÊÖµ¶1	53
-6	µ¥ÊÖµ¶2	53
-7	µ¥ÊÖµ¶3	53
-8	³¤Ç¹Àà1	1
-9	³¤Ç¹Àà2	1
-10	³¤Ç¹Àà3	1
-11	³¤¹÷Àà1	1
-12	³¤¹÷Àà2	1
-13	³¤¹÷Àà3	1
-14	Ë«½£Àà1	53
-15	Ë«½£Àà2	53
-16	Ë«½£Àà3	53
-17	Ë«´¸Àà1	53
-18	Ë«´¸Àà2	53
-19	Ë«´¸Àà3	53
-20	°µÆ÷	2
-21	µ¥ÊÖ½£4	53
-22	µ¥ÊÖ½£5	53
-23	µ¥ÊÖµ¶4	53
-24	µ¥ÊÖµ¶5	53
-25	³¤Ç¹Àà4	1
-26	³¤Ç¹Àà5	1
-27	³¤¹÷Àà4	1
-28	³¤¹÷Àà5	1
-29	Ë«½£Àà4	53
-30	Ë«½£Àà5	53
-31	Ë«´¸Àà4	53
-32	Ë«´¸Àà5	53
+1	Tay kh«ng	53
+2	®¬n thñ kiÕm 1	53
+3	®¬n thñ kiÕm 2	53
+4	®¬n thñ kiÕm 3	53
+5	®¬n thñ ®ao 1	53
+6	®¬n thñ ®ao 2	53
+7	®¬n thñ ®ao 3	53
+8	Lo¹i tr­êng th­¬ng 1	1
+9	Lo¹i tr­êng th­¬ng 2	1
+10	Lo¹i tr­êng th­¬ng 3	1
+11	Lo¹i tr­êng c«n 1	1
+12	Lo¹i tr­êng c«n 2	1
+13	Lo¹i tr­êng c«n 3	1
+14	Lo¹i Song kiÕm 1	53
+15	Lo¹i Song kiÕm 2	53
+16	Lo¹i Song kiÕm 3	53
+17	Lo¹i Song chïy 1	53
+18	Lo¹i Song chïy 2	53
+19	Lo¹i Song chïy 3	53
+20	¸m khÝ 	2
+21	®¬n thñ kiÕm 4	53
+22	®¬n thñ kiÕm 5	53
+23	®¬n thñ ®ao 4	53
+24	®¬n thñ ®ao 5	53
+25	Lo¹i tr­êng th­¬ng 4	1
+26	Lo¹i tr­êng th­¬ng 5	1
+27	Lo¹i tr­êng c«n 4	1
+28	Lo¹i tr­êng c«n 5	1
+29	Lo¹i Song kiÕm 4	53
+30	Lo¹i Song kiÕm 5	53
+31	Lo¹i Song chïy 4	53
+32	Lo¹i Song chïy 5	53

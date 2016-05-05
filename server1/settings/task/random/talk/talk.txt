@@ -1,11 +1,11 @@
 TaskName	TaskStart	TaskStarted	TaskNow	TaskEnd	TaskFinish	TaskInfo
-ÈÎÎñÃû³Æ	ÈÎÎñ¿ªÊ¼Ê±µÄ¶Ô»°	ÈÎÎñ¿ªÊ¼ºóµÄ¶Ô»°	ÈÎÎñ½øÐÐÖÐµÄ¶Ô»°	ÈÎÎñ½áÊøÊ±µÄ¶Ô»°	ÈÎÎñ·¢½±Ê±µÄ¶Ô»°	ÈÎÎñÏà¹ØµÄËµÃ÷ÐÅÏ¢
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	<dec><pan>Äã¿ÉÖªµÀ¹ýÁ½Ìì¾ÍÊÇ{´äÑÌÃÅ}Àï¡°Ç¾Þ±Ê¹Õß¡±{ºÎÄºÑ©}µÄÉúÈÕÁË£¬ËýÊÇÎÒºÜÒªºÃµÄÒ»¸öÅóÓÑ£¬ºÃ¼¸´ÎÓÐÎ£ÄÑÊ±¶àµÃËýÏàÖú£¬Ò»Ö±Ïë±¨µÀËýÈ´Î´ÄÜÈçÔ¸£¬ÎÒÏëËýÒ»¸ö¹ÃÄï¼Ò×ÜÊÇ°®ÃÀµÄ°É£¿Äã¿ÉÒÔ°ïÎÒËÍÒ»¶ä¸Õ²É¼¯ÏÂÀ´µÄ{Ãµ¹å»¨}¸øËýÂð£¿	<pan>{´äÑÌÃÅ}¾ÍÔÚ{´óÀí}µÄ³ÇÍâ£¬¾ÝËµÃµ¹å»¨¿ÉÒÔÔÚ{ÏåÑô}µÄÉñÃØÉÌÈË{ÁøÒÒ}´¦¿ÉÒÔÂòµ½£¬ÎÒÃÇ»¹ÊÇ¿ìÐ©¹ýÈ¥°É¡£	ºÎÄºÑ©£ºÕâÎ»<sex>À´´Ë¿ÉÓÐºÎÊÂÄØ£¿	ºÎÄºÑ©£º°¥Ñ½~£¡ÄãÔõÃ´ÖªµÀÃ÷Ìì¾ÍÊÇÎÒµÄÉúÈÕ£¿ÊµÔÚÊÇÌ«¸ÐÐ»ÄãÁË£¬Õâ»¨¶äÕæÆ¯ÁÁ£¡	ºÎÄºÑ©£ºÎÒÉí±ßÓÐÐ©ÎÒÓÃ²»×ÅµÄ¶«Î÷£¬<sex>ÄãÌôÌô¿´°É£¬»òÐí¶ÔÄãÐÐ×ß½­ºþÓÐËù°ïÖú¡£	
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	<dec><pan>¾ÝËµÑÛÏÂÈ«¹ú¸÷µØÕýÄÖÎÁÒß£¬¸÷´ó³ÇÊÐµÄÒ©ÆÌµÄ´æ»õ¶¼ÒÑÊÛÍê£¬Äã¿ÉÒÔ¸øÏåÑôµÄÒ©µêÀÏ°å´øÈ¥ 10 ¸öÎå»¨ÓñÂ¶ÍèÂð£¿		Ò©µêÀÏ°å£º°¦¡­¡­½üÀ´µÄÒ©Îï´æ»õÊµÔÚÊÇÉÙµÃÎÞ·¨ÏëÏó£¬ÈËÃÇÓÖ·äÓµ¶øÀ´ÇÀ¹º£¬ÕâÎ»<sex>À´´Ë¿ÉÓÐºÎÊÂ£¿	Ò©µêÀÏ°å£ºàÅ£¬ËäÈ»Õâ 10 Æ¿Ò©Ö»ÊÇ±­Ë®³µÐ½£¬µ«ÕâÎ»<sex>µÄºÃÒâÎÒ»¹ÊÇÐÄÁìÁË¡£	Ò©µêÀÏ°å£ºÎÒÉí±ßÓÐÕâÐ©ÎÒÓÃ²»×ÅµÄ¶«Î÷£¬<sex>ÄãÌôÌô¿´°É£¬»òÐí¶ÔÄãÐÐ×ß½­ºþÓÐËù°ïÖú¡£	
-Ëæ»ú_¶Ô»°_ÏåÑôÑÃÃÅÎÀ±ø	<dec><pan>¾ÝËµÃûÕð½­ºþµÄ´óµÁÂíÈý¼×ÒÑ¾­½«Ä¿±ê¶Ô×¼ÁËÏåÑôµÄ´ó»§ÈË¼ÒÖìÔ±ÍâµÄ±¦ÏäÉÏ£¬¶øÇÒ¸ù¾ÝÄ³Ð©´«ÎÅÕâÂíÈý¼××îÏ²»¶×°°ç³ÉÀÏÎÌÄ£Ñù»ì½ø³Ç£¬ÎÒÃÇ×îºÃ¸Ï½ôÈ¥Í¨ÖªÒ»ÏÂ{ÏåÑô}µÄ{ÑÃÃÅÎÀ±ø}£¬ÈÃËûÃÇÌáÇ°×öºÃ×¼±¸¡£		ÑÃÃÅÎÀ±ø£ººß£¬ÕâÑùÎõÎõÈÁÈÁµÄÌ«Æ½Ê¢ÊÀÎÒ»¹²»ÏàÐÅÓÐË­¸Ò³öÁË±ª×Óµ¨µÄÔÚÀÏ×ÓÑÛÆ¤µ×ÏÂ·¸ÊÂ£¡	ÑÃÃÅÎÀ±ø£ºÊ²Ã´£¿ÂíÊ²Ã´Èý¼×ÒªÀ´ÀÏ×ÓµÄµØÆ¤ÐÐÇÔ£¿ÕâÄã·ÅÐÄ£¬ÄÄÅÂËûÊÇ±ä³ÉÒ»Ö»ÂìÒÏÒ²ÌÓ²»¹ýÀÏ×ÓµÄ·¨ÑÛ£¡	ÑÃÃÅÎÀ±ø£º¿´<sex>¸ÏÀ´±¨¸öÐÅÒ²²»ÈÝÒ×£¬ÕâÑù°É£¬ÎÒÉí±ßÓÐÕâÐ©ÎÒÓÃ²»×ÅµÄ¶«Î÷£¬ÄãÌôÌô¿´°É£¬»òÐí¶ÔÄãÐÐ×ß½­ºþÓÐËù°ïÖú¡£	
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	<dec><pan>½üÀ´ÎÒÌýËµÁËÒ»¼þºÜÓÐÒâË¼µÄÊÂÇé£¬{³É¶¼}µÄÒ»¸ö{Ìú½³Ñ§Í½}¾¹È»ÏëÒªÑÐÖÆ³öÒ»ÖÖ¿ÉÒÔÊ¹ÈË·ÉÉýÓÚÌì¼ÊµÄÊÂÎï£¬¶øÇÒÐèÒªºÜ¶àÑÌ»¨ÅÚÕÌµÈ¶«Î÷×÷Îª²ÄÁÏ£¬Äã¿ÉÒÔ´øÒ»¸ö{ÑÌ»¨}È¥¸øËûÂð£¿ÎÒµ¹ºÜÏëÖªµÀËû×öµÄµ¹µ×ÊÇ¸öÊ²Ã´ÑùµÄ¶«Î÷ÄØ¡£	¾ÝËµÑÌ»¨¿ÉÒÔÔÚ{ÏåÑô}µÄ{ÉñÃØÉÌÈËÁøÒÒ}´¦ÂòµÃµ½£¬	Ìú½³Ñ§Í½£º°¦£¬ÄÑµÀ×öÊ²Ã´ÊÂÇé¶¼Òª¿´±ðÈËµÄÑÛÉñÂð£¿ÎÒÕâÒ»±²×ÓÄÑµÀÕæµÄÖ»ÊÇÔÚÕâÀï´¸´¸´ò´ò×ö¸öÐ¡Ìú½³£¿	Ìú½³Ñ§Í½£ººÇºÇ£¬ÕâÊÀ¼ä×ÜËãÓÐ¸öÃ÷°×ÈËÖ§³ÖÎÒÁË£¬Ð»Ð»ÄãµÄÑÌ»¨£¬µ½Ê±ºòµÈÎÒ¼¯ÆëÁËËùÓÐµÄ²ÄÁÏ¡­¡­ÄÇÐ©³°Ð¦ÎÒµÄÈË¾ÍÖªµÀÊ²Ã´ÊÇ³ÕÈËËµÃÎÁË¡£		
-Ëæ»ú_¶Ô»°_³É¶¼ÐÁ¶þÉô	<dec><pan>ÌýËµÔÚ³É¶¼µÄÐÁ¶þÉôËýµÄÕÉ·ò²¡ÁË£¬ÐèÒª 3 ¸öÊ×ÎÚ»¹Éñµ¤·½¿ÉÒ½ÖÎ£¬ÎÒÏëËûÃÇµÄÈÕ×ÓÒ²¹ýµÃÍ¦Þ×¾Ý°É£¿²»ÈçÎÒÃÇÂòÁË¸øËûÃÇËÍÈ¥£¿		ÐÁ¶þÉô£º°¦£¬ÕæÊÇÈÕ¿àÊ¤ËÆÒ»ÈÕ£¬ÑÛÏÂ¹Ù¸®Òª´ß½»Ë°ÒøµÄÊ±ºòÎÒÃÇ¼ÒµÄÀÏÍ·×ÓÓÖ²¡µ¹ÁË£¬´ó·òËµÐèÒª 3 ¸öÊ×ÎÚ»¹Éñµ¤·½ÄÜÖÎÓú£¬ÎÒÃÇÕâÐ©Ð¡»§ÈË¼ÒÄÄÀ´µÄÇ®È¥ÂòÄÇ¶«Î÷Ñ½£¡	ÐÁ¶þÉô£º°¡£¬ÊµÔÚÊÇÌ«¸ÐÐ»ÕâÎ»<sex>ÁË£¬Ã»Ïëµ½µ±½ñÊÀ¼ä»¹ÓÐÈç´ËÐÄ³¦ºÃµÄÈËÄÅ£¡	ÐÁ¶þÉô£º<sex>µÄ¶÷µÂÎÒÃÇÎÞÒÔÎª±¨£¬ÕâÃ´¶àÄêÀ´ÎÒÉí±ß¾ÍÕâµã¶«Î÷ÁË£¬Äã¿´¿´ÄÜ²»ÄÜÓÃµÃ×Å£¿	
-Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù	<dec><pan>ÌýËµ{ÑïÖÝ}µÄ{æäÕ¾æä¹Ù}×î½üÓöµ½ÁËµãÐ¡Âé·³£¬ÎÒÃÇÈ¥¿´¿´ÊÇ·ñÄÜ°ïµ½Ëû°É£¿					
-Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù_01		æäÕ¾æä¹Ù£ºÕâÏÂÎÒ¿ÉÒªÈËÍ·ÂäµØÁË£¬Ç°Ð©ÈÕ×Ó»ÊÉÏÉí±ßµÄ´óºìÈË{²Ì¹«¹«}ÏÂ½­ÄÏÀ´ÓÎÍæÊ±ÎÒ²»Ð¡ÐÄ¶¥×²ÁËËûÒ»¾ä£¬ËûÊ²Ã´Ò²²»Ëµ¾ÍÀë¿ªÁË£¬Èç¹ûËû¼ÇºÞÔÚÐÄµÄ»°ÎÒ¾ÍÊÇÓÐ¾ÅÌõÃüÒ²²»¹»ÅãµÄÑ½£¡ÕâÎ»<sex>¿´ÆðÀ´ÓÎÀú½­ºþÆÄ¾Ã£¬ÄúÄÜ²»ÄÜ°ïÎÒÈ¥ÊèÍ¨ÊèÍ¨£¿	²Ì¹«¹«£ºÄã¿ÉÖªµÀÕâÀïÊÇ»Ê¹¬ÖØµØÃ´£¿À´ÕÒÎÒÓÐÊ²Ã´ÊÂ£¿	²Ì¹«¹«£ººÙºÙ£¬ÄãËµµÄÊÇÑïÖÝµÄÄÇ¸öÉµÐ¡×ÓÂð£¿·ÅÐÄ£¬±¾¹¬´óÈËÓÐ´óÁ¿£¬²»»áºÍËûÒ»°ã¼ûÊ¶£¬Äã¾ÍÈÃËûÒÔºóÊ¶È¤µã¡£	²Ì¹«¹«£º¿´ÄãÅÜÁËÕâÃ´ÀÏÔ¶À´°ïËûËµÇéÒ²ËãÊÇÒåÆø¿É¼Î£¬±¾¹¬¾ÍÉÍÄãÒ»Ð©¸ö¶«Î÷°É£¡	
-Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç	<dec><pan>ÌýËµ{ÑïÖÝ}Ò»Î»½Ð{Éò·ç}µÄ¹«×Ó×î½üÓöµ½ÁËµãÐ¡Âé·³£¬ÎÒÃÇÈ¥¿´¿´ÊÇ·ñÄÜ°ïµ½Ëû°É£¿					
-Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç_01		Éò·ç£º°¦£¬×Ô´ÓÎÒÉÏ¸öÔÂ´Ó{ãê¾©}»ØÀ´Ö®ºó¾ÍÒ»Ö±¶ÔÒ»¸öÈËÄîÄî²»Íü£¬ËýÄÇÓÕÈËµÄË«Ã¼£¬¶àÇéµÄºì´½£¬Ê¹ÎÒÒ»ÈÕ²»¼û¾Í²è·¹²»Ë¼£¬ã¾ã²Ö±½ñÄÅ¡£Äã¿É·ñÌæÎÒ´«Ò»¾ä»°¸øÄÇÎ»½Ð{ÈçÓñ}µÄ¹ÃÄï£¬¸æËßËýÖ»ÒªËýÔ¸Òâ£¬ÎÒËæÊ±¿ÉÒÔ·ÅÆúÒ»ÇÐÓëËýÔÚÒ»Æð¡£	ÈçÓñ£ºßÏ£¡ÕâÎ»<sex>ÔõÃ´ÄÑµÃÓÐÈç´ËµÄÑÅÐËÀ´ÎÒÕâÀï¹ä£¿ÅÂ²»Ö»ÊÇÏë¼û¼ûÎÒÕâÃ´¼òµ¥°É£¿	ÈçÓñ£ºÊ²Ã´£¿ÄãËµµÄÊÇÄÇ¸ö½ÐÉò·çµÄÉµÐ¡×Ö£¿¹þ¹þ£¬±ðºÍÀÏÄï¿ªÕâ¸öÍæÐ¦ÁË£¬¾ÍÆ¾ËûÄÇµãËáÎÄ×ÖÒ²ÏëÌÖÀÏÄïµÄ»¶ÐÄ£¿	ÈçÓñ£º¿´Äã´óÀÏÔ¶À´¶ºÎÒ¿ªÐÄÒ²Í¦²»ÈÝÒ×µÄ£¬ÎÒÕâÀïÓÐÒ»Ð©¶«Î÷²»¶®ÄãÓÃ²»ÓÃµÄ×Å£¬¾Í¶¼¸øÁËÄã°É¡£	
+Tªn nhiÖm vô 	Thêi gian b¾t ®Çu nhiÖm vô 	Sau khi b¾t ®Çu nhiÖm vô 	TiÕn hµnh nhiÖm vô 	Thêi gian kÕt thóc nhiÖm vô 	Thêi gian ph¸t gi¶i	ThuyÕt minh liªn quan nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	<dec><pan>Hai ngµy n÷a lµ sinh nhËt cña "T­êng Vi Sø Gi¶" Hµ Mé TuyÕt. §ã lµ 1 c« g¸i rÊt ®¸ng yªu! Ng­¬i cã thÓ gióp ta mang mét ®ãa hoa hång t­¬i ®Õn tÆng c« Êy kh«ng?	<pan>Hoa hång cã thÓ ®Õn ThÇn BÝ Th­¬ng Nh©n ë T­¬ng D­¬ng ®Ó mua! H·y gióp ta nhÐ! 	HiÖp kh¸ch t×m ta <sex>cã chuyÖn g×?	¤i! Sao ng­êi biÕt mai lµ sinh nhËt cña ta? §ãa hoa nµy tuyÖt ®Ñp! Ta xin ch©n thµnh c¶m t¹!	Ta cã b¶o vËt ®©y!<sex>xem thö ®i! Cã thÓ gióp ng­¬i hµnh tÈu giang hå.	
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	<dec><pan>c¶ n­íc hiÖn dang bÞ bÖnh dÞch. Thuèc trong thµnh ®ang thiÕu trÇm träng. Ng­¬i cã thÓ gióp ta mang 10 Ngò Hoa Ngäc Lé Hoµn nµy cho Chñ D­îc §iÕm T­¬ng D­¬ng kh«ng?		ChËc! Ai còng  tranh nhau mua thuèc!Kh¸ch quan <sex> ch¾c kh«ng ngo¹i lÖ!?	¤i! 10 lä thuèc nµy cã thÓ cøu thªm ®­îc 100 ng­êi!<sex>Xin ®a t¹ hiÖp kh¸ch!	Chñ d­îc ®iÕm:Ta cã b¶o vËt ®©y!<sex>xem thö ®i! Cã thÓ gióp cho ng­¬i hµnh tÈu giang hå!	
+NgÉu nhiªn_§èi tho¹i_VÖ binh nha m«n	<dec><pan>Nghe nãi b¨ng c­íp M· Tam Gi¸p danh chÊn giang hå ®· ®Õn T­¬ng D­¬ng. Ta ph¶i lËp tøc cÊp b¸o cho VÖ binh Nha m«n ®Ó hä cã sù chuÈn bÞ tr­íc!		Hõ! Ch¼ng lÏ bän chóng muèn vuèt r©u hïm ­?	M· Tam Gi¸p nµo d¸m ®Õn ®©y c­íp bãc chø? Ng­¬i yªn t©m, mét con kiÕn còng kh«ng tho¸t khái m¾t ta!	HiÖp kh¸ch <sex>vÊt v¶ qu¸! Ta cã vµi thø kh«ng dïng, xin tÆng cho hiÖp kh¸ch!	
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	<dec><pan>Nghe nãi thî rÌn ë Thµnh §« ®ang chÕ t¹o 1 thø gióp ng­êi cã thÓ bay lªn trêi, cÇn rÊt nhiÒu c©y ph¸o hoa lµm vËt liÖu, chóng ta h·y mang thªm ph¸o hoa ®Õn! Ta nãng lßng muèn xem ®å h¾n ®ang chÕ t¹o!	Ph¸o hoa cã thÓ mua t¹i  ThÇn BÝ Th­¬ng Nh©n ( T­¬ng D­¬ng) 	LÏ nµo lµm viÖc g× còng e dÌ sî sÖt? LÏ nµo c¶ ®êi ta chØ lµm mét tªn thî rÌn bÐ nhá sao?	Khµ khµ! C¶m ¬n ph¸o hoa cña ng­¬i! §îi ta thu thËp ®ñ vËt liÖu...Bän c­êi nh¹o ta sÏ biÕt thÕ nµo lµ lîi h¹i! 		
+NgÉu nhiªn_§èi tho¹i_ T©n NhÞ ThÈm (Thµnh §«) 	<dec><pan>Nghe nãi chång cña T©n NhÞ ThÈm ë Thµnh §« ®ang l©m träng bÖnh,cÇn 3 ¤ §Çu Hoµn ThÇn §¬n ®Ó ch÷a trÞ! Ta nghÜ hä ®ang v« cïng khæ së? H·y mau gióp ®ì hä!		ThËt lµ häa v« ®¬n chÝ! Quan phñ ®ßi nép thuÕ ngay lóc c¸i l·o nhµ ta ®ang l©m träng bÖnh! §¹i phu nãi cÇn 3 ¤ ®Çu Hoµn ®Ó ch÷a,nhµ nghÌo nh­ bän ta lÊy tiÒn ®©u ra mµ mua ®­îc thuèc nµy!	V« cïng biÕt ¬n hiÖp kh¸ch! <sex> Nµo ngê trªn thÕ gian cßn ng­êi cã tÊm lßng nh©n ¸i ®Õn thÕ!	¢n ®øc cña hiÖp kh¸ch <sex>kh«ng cã chi ®Òn ®¸p! Cã chót lßng thµnh, mong HiÖp kh¸ch kh«ng chª!	
+NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u	<dec><pan>Nghe nãi gÇn ®©y DÞch Quan ë D­¬ng Ch©u gÆp chót phiÒn phøc! H·y ®i xem thö cã gióp ®­îc g× cho «ng ta kh«ng?					
+NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u_01		Hu! Hu!§Çu ta s¾p r¬i råi! MÊy ngµy tr­íc lì miÖng xóc ph¹m Th¸i C«ng C«ng. H¾n lµ kÎ nho nhen Ých kû! Hu! Hu! Vî con ta ai nu«i b©y giê! Xin h·y cøu ta!	Hoµng Cung träng ®Þa. §Õn t×m ta v× viÖc g×?	Ng­¬i nãi c¸i g· tiÓu tö ë D­¬ng Ch©u ®ã µ? Yªn t©m! Bæn §¹i nh©n ®¹i l­îng bao dung kh«ng chÊp g× ®©u! B¶o h¾n ®õng lo phiÒn!	Ng­¬i ®­êng xa ®Õn gióp h¾n, qu¶ lµ ng­êi träng nghÜa khÝ! Bæn nh©n sÏ th­ëng cho ng­¬i chót quµ!	
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) 	<dec><pan>Nghe nãi gÇn ®©y C«ng TövThÈm Phong ë D­¬ng Ch©u gÆp chót phiÒn phøc, h·y ®i xem thö cã gióp ®­îc g× cho «ng ta kh«ng?					
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01		Sau khi tõ BiÖn Kinh trë vÒ ta cø m·i nhí mét ng­êi.C« ta cã vÎ ®Ñp mª ng­êi, sãng m¾t ®a t×nh khiÕn ta mét ngµy kh«ng gÆp ¨n ngñ kh«ng yªn! Ng­¬i cã thÓ gióp ta chuyÓn lêi cho Nh­ Ngäc c« n­¬ng, nÕu nµng b»ng lßng lÊy ta, ta nguyÖn tõ bá tÊt c¶ ®Ó ®­îc sèng cïng nµng.	VÞ hiÖp kh¸ch <sex> nµy  cã nh· høng uèng víi ta vµi chung kh«ng?	Sao? Ng­¬i nãi lµ c¸i g· ThÈm Phong ®ã µ? Ha ha! §õng trªu ghÑo bæn n­¬ng chø! Dùa vµo c¸i mí v¨n ch­¬ng rÎ tiÒn ®ã mµ muèn c­íi ®­îc ta sao?	Xem ng­¬i tõ xa ®Õn khiÕn ta vui lßng, còng kh«ng dÔ g×! Ta chót quµ män tÆng cho ng­¬i!	

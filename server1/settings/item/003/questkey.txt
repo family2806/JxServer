@@ -1,345 +1,345 @@
 Ãû³Æ	ItemGenre	DetailType	¶¯»­ÎÄ¼şÃû	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	ËµÃ÷ÎÄ×Ö	ParticularType
-´äÓğô¢	4	0	\spr\item\questkey\taskobj001.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-´óÂüÍÓÂŞ»¨	4	1	\spr\item\questkey\taskobj002.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÒøÑ©Óã	4	2	\spr\item\questkey\taskobj003.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-±ÌÉÑ·ïµû	4	3	\spr\item\questkey\taskobj004.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ºìòÇò¾	4	4	\spr\item\questkey\taskobj005.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÓêÍ­¹ÛÒô	4	5	\spr\item\questkey\taskobj006.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-³öÊ¦½ûµØÈÎÎñË¿ÅÁ	4	6	\spr\item\questkey\taskobj007.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÂæÍÕÍ·¹Ç	4	7	\spr\item\questkey\taskobj008.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-½ğË¿ºï	4	8	\spr\item\questkey\taskobj009.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ñª»êÉñ½£	4	9	\spr\item\questkey\taskobj010.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»ÂÆÍ··¢	4	10	\spr\item\questkey\taskobj011.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-·üôËËø	4	11	\spr\item\questkey\taskobj012.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ñ×µÛËø	4	12	\spr\item\questkey\taskobj013.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÉÙê»Ëø	4	13	\spr\item\questkey\taskobj014.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ò§çïËø	4	14	\spr\item\questkey\taskobj015.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-»ÆµÛËø	4	15	\spr\item\questkey\taskobj016.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÎåÉ«Ê¯	4	16	\spr\item\questkey\taskobj017.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-°×ÓñÈçÒâ	4	17	\spr\item\questkey\taskobj018.spr	41	1	1	ÉÏµÈ°×ÓñÖÆ×÷µÄÈçÒâ£¬¹â»¬Ô²Èó¡£¶ëáÒÅÉÈëÃÅÆ¾Ö¤¡£	0
-×ó°ëÃæÍ­¾µ	4	18	\spr\item\questkey\taskobj019.spr	41	1	1	Ò»¿é²ĞÈ±µÄ»ÆÍ­¾µµÄ×ó°ëÃæ¡£	0
-ÓÒ°ëÃæÍ­¾µ	4	19	\spr\item\questkey\taskobj019-1.spr	41	1	1	Ò»¿é²ĞÈ±µÄ»ÆÍ­¾µµÄÓÒ°ëÃæ¡£	0
-Í­¾µ	4	20	\spr\item\questkey\taskobj020.spr	41	1	1	Ò»ÃæÍêÕûµÄ»ÆÍ­¾µ¡£	0
-Ü½ÈØ½õ¼¦Í¼	4	21	\spr\item\questkey\taskobj021.spr	41	1	1	ËÎ»Õ×ÚÃû×÷£¬Ãè»æÁËÒ»·ùÜ½ÈØÑ¹½õ¼¦£¬½õ¼¦Ï·ºûµûµÄÉú»ú°»È»µÄ»­¾í£¬ÓÃ±Ê¾«Ï¸£¬»ªÀö¸»¹ó¡£	0
-°ÙÄñ³¯·ïÇúÆ×	4	22	\spr\item\questkey\taskobj022.spr	41	1	1	ÇúÖĞ¼«Æ·£¬Ê§´«ÒÑ¾Ã¡£ÃèÄ¡µÄÊÇÌìÏÂ°ÙÄñÏò·ï»ËºØÊÙµÄ»­Ãæ¡£ 	0
-½ğÏßĞåÏñ½ğ¸Õ¾­	4	23	\spr\item\questkey\taskobj023.spr	41	1	1	¾­ÖĞ·ğÏñÓë¾­ÎÄ½ÔÓÃ½ğÏßĞå³É£¬ÄË·ğÃÅÖÁ±¦¡£	0
-ÑÌÓñÖ¸»·	4	24	\spr\item\questkey\taskobj024.spr	41	1	1	·ÛºìÉ«µÄÓñÖÊÖ¸»·£¬¶ëáÒÅÉµÄÕÆÃÅĞÅÎï¡£	0
-×êÊ¯	4	25	\spr\item\questkey\taskobj025.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-½ğÁ«»¨	4	26	\spr\item\questkey\taskobj026.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-°ãÈô²¨ÂŞÃÛ¶àĞÄ¾­	4	27	\spr\item\questkey\taskobj027.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò×¹Ç¾­	4	28	\spr\item\questkey\taskobj028.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»´®ÄîÖé	4	29	\spr\item\questkey\taskobj029.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»¸ùìøÕÈ	4	30	\spr\item\questkey\taskobj030.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»¸öÄ¾Óã	4	31	\spr\item\questkey\taskobj031.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»Ö»²§ÓÛ	4	32	\spr\item\questkey\taskobj032.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÇàÉ«ÖñÕÈ	4	33	\spr\item\questkey\taskobj033.spr	41	1	2	ÇàÉ«µÄ¶ÌÖñÕÈ£¬Ğ¡ÇÉ¾«ÖÂ£¬ÌÆÃÅÈëÃÅÆ¾Ö¤¡£	0
-°×É«ÖñÕÈ	4	34	\spr\item\questkey\taskobj034.spr	41	1	2	°×É«µÄ¶ÌÖñÕÈ£¬Ğ¡ÇÉ¾«ÖÂ£¬ÌÆÃÅÈëÃÅÆ¾Ö¤¡£	0
-×ÏÉ«ÖñÕÈ	4	35	\spr\item\questkey\taskobj035.spr	41	1	2	×ÏÉ«µÄ¶ÌÖñÕÈ£¬Ğ¡ÇÉ¾«ÖÂ£¬ÌÆÃÅÈëÃÅÆ¾Ö¤¡£	0
-Ä§ÓêÕë	4	36	\spr\item\questkey\taskobj036.spr	41	1	2	Ò»ÖÖÏóÎÃĞëÒ»ÑùµÄÏ¸Õë£¬Í¨ÌåÆáºÚ£¬ÄÜ¹»É±ÈËÓÚÎŞĞÎ£¬ÌÆÃÅµÄ¶ÀÃÅ°µÆ÷¡£	0
-¹ÖÊ¯ÕóË¿ÅÁÒ»	4	37	\spr\item\questkey\taskobj040.spr	41	1	1	Ò»Ìõ°×É«µÄË¿ÅÁ£¬ÉÏĞ´Ò»¸ö¡°ÉÃ¡±×Ö¡£	0
-¹ÖÊ¯ÕóË¿ÅÁ¶ş	4	38	\spr\item\questkey\taskobj038.spr	41	1	1	Ò»Ìõ°×É«µÄË¿ÅÁ£¬ÉÏĞ´Ò»¸ö¡°´³¡±×Ö¡£	0
-¹ÖÊ¯ÕóË¿ÅÁÈı	4	39	\spr\item\questkey\taskobj037.spr	41	1	1	Ò»Ìõ°×É«µÄË¿ÅÁ£¬ÉÏĞ´Ò»¸ö¡°Õß¡±×Ö¡£	0
-¹ÖÊ¯ÕóË¿ÅÁËÄ	4	40	\spr\item\questkey\taskobj039.spr	41	1	1	Ò»Ìõ°×É«µÄË¿ÅÁ£¬ÉÏĞ´Ò»¸ö¡°ËÀ¡±×Ö¡£	0
-½ğÏîÈ¦	4	41	\spr\item\questkey\taskobj041.spr	41	1	1	½ğÖÊÏîÈ¦£¬Ç¶ÓĞ±¦Ê¯£¬Ê®·Ö¾«ÖÂ¡£	0
-»ğÆ÷Æ×	4	42	\spr\item\questkey\taskobj042.spr	41	1	1	ÌÆÃÅÃØóÅ£¬ÀïÃæÏêÏ¸¼ÇÔØÁËÌÆÃÅËùÓĞ»ğÆ÷µÄÖÆ·¨ºÍÓÃ·¨¡£	0
-ó¸òÜµÄÆ¤	4	43	\spr\item\questkey\taskobj043.spr	41	1	1	Ò»ÖÖÖÎÁÆ¹Ö²¡µÄÒ©²Ä¡£	0
-¶¾ÉßµÄµ¨	4	44	\spr\item\questkey\taskobj044.spr	41	1	1	Ò»ÖÖÖÎÁÆ¹Ö²¡µÄÒ©²Ä¡£	0
-ó¿ËÚµÄ¿Ç	4	45	\spr\item\questkey\taskobj045.spr	41	1	1	Ò»ÖÖÖÎÁÆ¹Ö²¡µÄÒ©²Ä¡£	0
-¶¾Ğ«µÄÎ²	4	46	\spr\item\questkey\taskobj046.spr	41	1	1	Ò»ÖÖÖÎÁÆ¹Ö²¡µÄÒ©²Ä¡£	0
-½©²ÏµÄÍ·	4	47	\spr\item\questkey\taskobj047.spr	41	1	1	Ò»ÖÖÖÎÁÆ¹Ö²¡µÄÒ©²Ä¡£	0
-°µÆ÷Æ×	4	48	\spr\item\questkey\taskobj048.spr	41	1	1	ÌÆÃÅÃØóÅ£¬ÀïÃæÏêÏ¸¼ÇÔØÁËÌÆÃÅËùÓĞ°µÆ÷µÄÖÆ·¨ºÍÓÃ·¨¡£	0
-ÆßĞÇ¾øÃü½£	4	49	\spr\item\questkey\taskobj049.spr	41	1	1	Ò»±ú²ĞÆÆÉúĞâµÄÌú½£¡£	0
-ÓíÍõ½£	4	50	\spr\item\questkey\taskobj050.spr	41	1	1	Ò»°Ñ¹ÅÆÓµÄ±¦½££¬²ØÓÚ»ªÉ½Ö®ÉÏ¡£	0
-ÁîÅÆËéÆ¬Ò»	4	51	\spr\item\questkey\taskobj051-1.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚÒ»¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬¶ş	4	52	\spr\item\questkey\taskobj051-2.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚ¶ş¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬Èı	4	53	\spr\item\questkey\taskobj051-3.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚÈı¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬ËÄ	4	54	\spr\item\questkey\taskobj051-4.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚËÄ¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬Îå	4	55	\spr\item\questkey\taskobj051-5.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚÎå¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬Áù	4	56	\spr\item\questkey\taskobj051-6.spr	41	1	1	ÆßÉ±ÁîÅÆµÄµÚÁù¿éËéÆ¬¡£	0
-ÁîÅÆËéÆ¬Æß	4	57	\spr\item\questkey\taskobj051.spr	41	1	2	ÆßÉ±ÁîÅÆµÄµÚÆß¿éËéÆ¬¡£	0
-ÈÕÔÂË«ÂÖ	4	58	\spr\item\questkey\taskobj052.spr	41	1	1	Ò»Ö»½ğÉ«µÄÈÕÂÖºÍÒ»Ö»ÒøÉ«µÄÔÂÂÖ£¬ÊÇÌìÈÌ½ÌÈÕÔÂË«Ì³Ì³Ö÷µÄ¶ÀÃÅ±øÈĞ¡£	0
-¸ëÑªºì	4	59	\spr\item\questkey\taskobj053.spr	41	1	1	Ò»ÖÖÑªºìÉ«µÄ±¦Ê¯¡£	0
-±ù¾§À¶	4	60	\spr\item\questkey\taskobj054.spr	41	1	1	Ò»ÖÖÀ¼É«µÄ±¦Ê¯¡£	0
-×æÄ¸ÂÌ	4	61	\spr\item\questkey\taskobj055.spr	41	1	1	Ò»¸öÂÌÉ«µÄ±¦Ê¯¡£	0
-ÔÆÃÎ×Ï	4	62	\spr\item\questkey\taskobj056.spr	41	1	1	Ò»ÖÖ×ÏÉ«µÄ±¦Ê¯¡£	0
-Òøô¢	4	63	\spr\item\questkey\taskobj057.spr	41	1	2	Ò»Ö»Å®×ÓÊ¹ÓÃµÄÒøô¢¡£	0
-ÏãÄÒ	4	64	\spr\item\questkey\taskobj058.spr	41	1	2	·ÛºìÉ«µÄÏãÄÒ£¬ÉÏĞåÔ§Ñì¡£	0
-Ä¾Í°	4	65	\spr\item\questkey\taskobj059.spr	41	1	1	Ò»Ö»Ä¾Í°¡£	0
-²ĞÆÆµÄÌì²ÏµÀÅÛ	4	66	\spr\item\questkey\taskobj060.spr	41	1	2	Ò»¼ş±»»ğÀÇÒ§ÆÆµÄ»ÒÉ«µÀÅÛ¡£	0
-Ìì²Ï  	4	67	\spr\item\questkey\taskobj061.spr	41	1	1	Ò»ÖÖ°×É«µÄ²Ï£¬ÆäË¿ÈáÈÍÎŞ±È¡£	0
-²¹ºÃµÄÌì²ÏµÀÅÛ	4	68	\spr\item\questkey\taskobj062.spr	41	1	2	Ò»¼şÍêºÃµÄ»ÒÉ«µÀÅÛ	0
-ÓñÇåÕæ¾­	4	69	\spr\item\questkey\taskobj063.spr	41	1	1	µÀ½ÌÈıÇå±¦µä¡£	0
-ÉÏÇåÕæ¾­	4	70	\spr\item\questkey\taskobj064.spr	41	1	1	µÀ½ÌÈıÇå±¦µä¡£	0
-Ì«ÇåÕæ¾­	4	71	\spr\item\questkey\taskobj065.spr	41	1	1	µÀ½ÌÈıÇå±¦µä¡£	0
-ºúĞë	4	72	\spr\item\questkey\taskobj066.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÉÈ×Ó	4	73	\spr\item\questkey\taskobj067.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÊÖÅÁ	4	74	\spr\item\questkey\taskobj068.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-°âÖ¸	4	75	\spr\item\questkey\taskobj069.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-»İÈª¾Æ	4	76	\spr\item\questkey\taskobj070.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-½ğÁê´º	4	77	\spr\item\questkey\taskobj071.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-°Ù»¨Äğ	4	78	\spr\item\questkey\taskobj072.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Çí»¨Â¶	4	79	\spr\item\questkey\taskobj073.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ë«¹µ´óÇú	4	80	\spr\item\questkey\taskobj074.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÎÄÊé	4	81	\spr\item\questkey\taskobj075.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-É½ºÓÉçğ¢Í¼	4	82	\spr\item\questkey\taskobj076.spr	41	2	1	ÈÎÎñµÀ¾ß	0
-²¼´ü	4	83	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»¸ù¿×È¸ÓğÃ«	4	84	\spr\item\questkey\taskobj078.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-ÈËÍ·	4	85	\spr\item\questkey\taskobj079.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ö©Öë	4	86	\spr\item\questkey\taskobj080.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ä¾Ïã¶¦	4	87	\spr\item\questkey\taskobj081.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÓñÉºº÷	4	88	\spr\item\questkey\taskobj082.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Õò½ÌÖ®±¦	4	89	\spr\item\questkey\taskobj083.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-ÅîÀ³´º	4	90	\spr\item\questkey\taskobj084.spr	41	1	1	¶´Í¥¼ÑÄğ£¬¾ÆÖĞÏÉÆ·¡£Èë¿Ú´¼Ïã£¬»ØÎ¶Ãà³¤£¬ºó¾¢¼«´ó£¬ºÜÊÊºÏ´ÖºÀ×³ºº´óÍë³©Òû£¬Ò»×í·½Ğİ¡£	0
-¼¦ÑªÊ¯	4	91	\spr\item\questkey\taskobj085.spr	41	1	1	Ò»ÖÖº±¼ûµÄ±¦Ê¯£¬É«Èç¼¦Ñª£¬ÏÊºìÑŞÀö¡¢¾§Ó¨ÌŞÍ¸¡£Ïà´«ÄÜĞË¼Ò±ÜĞ°¡¢Ï¢ÔÖ»¤Éí£¬´øÀ´ºÃÔË¡£	0
-Ò»Ãæ½õÆì	4	92	\spr\item\questkey\taskobj086.spr	41	1	2	Ò»ÃæºìÉ«µÄ½õÆì£¬ÉÏÊé¡°°®ÃñÈç×Ó¡±ËÄ¸ö½ğ×Ö¡£	0
-»ğòáòæÁÛÆ¬	4	93	\spr\item\questkey\taskobj087.spr	41	1	1	ÀàËÆÒ»ÖÖÍÉÆ¤£¬ÉÏÓĞîø¼×Ê½µÄÁÛÆ¬¡£	0
-ÂÌÃ«¹ê	4	94	\spr\item\questkey\taskobj088.spr	41	1	1	Ò»ÖÖÕäÏ¡¶¯Îï£¬Òò¹ê¼×ÉÏÉúÓĞ´óÁ¿Ë¿×´ÂÌÔå¶øµÃÃû¡£	0
-Îå²ÊÊ¯	4	95	\spr\item\questkey\taskobj089.spr	41	1	1	´«ËµÖĞÒ»ÖÖÏóÕ÷ĞÒ¸£¡¢±£ÓÓÆ½°²µÄÆæÊ¯£¬¹â½àÈçÓñ£¬ÄÜ¹»É¢·¢³öÎå²Ê¹âÃ¢¡£	0
-ÌìÍõÒÅÊé	4	96	\spr\item\questkey\taskobj090.spr	41	1	1	ÌìÍõ°ïÃÜÊé£¬ÀïÃæ²»½ö¼ÇÔØÁË´óÊ¥ÌìÍõÑîÃ´ĞĞ¾ü²¼ÕóµÄĞÄµÃÃÜÒª£¬»¹ÏêÏ¸¼ÇÂ¼ÁË¶´Í¥ºş¸÷´¦¾üÊÂÒªµØºÍË®Â·ÒªÈûµÄ·Ö²¼¡£	0
-ÊéĞÅ¡¢ÃÜĞÅ¡¢ÃÜº¯µÈ	4	97	\spr\item\questkey\taskobj091.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ô¿³×Ò»	4	98	\spr\item\questkey\taskobj092.spr	41	1	1	ÓÃÀ´¿ªÆô±¦Ïä£¬±¦ÏäÀïÃæ²ØÓĞÌÆÃÅÃØóÅ¡¶»ğÆ÷Æ×¡·¡£	0
-Ô¿³×¶ş	4	99	\spr\item\questkey\taskobj092-1.spr	41	1	1	ÓÃÀ´½øÈëÌÆÃÅÖñË¿¶´µÚ¶ş²ã¡£	0
-Ô¿³×Èı	4	100	\spr\item\questkey\taskobj092-2.spr	41	1	1	ÓÃÀ´½øÈëÌÆÃÅÖñË¿¶´µÚÈı²ã¡£	0
-ÌìÍõ°ïÔ¿³×	4	101	\spr\item\questkey\taskobj092-3.spr	41	1	1	Ò»°Ñ¿ªÆô±¦ÏäµÄÔ¿³×¡£	0
-Ê¥¶´Ô¿³×	4	102	\spr\item\questkey\taskobj092-4.spr	41	1	1	Ò»°Ñ´ò¿ªÊ¥¶´±¦ÏäµÄÔ¿³×¡£	0
-Ô¿³×ÎŞ	4	103	\spr\item\questkey\taskobj092-5.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ô¿³×	4	104	\spr\item\questkey\taskobj092-6.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ô¿³×	4	105	\spr\item\questkey\taskobj092.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Çé»¨	4	106	\spr\item\questkey\taskobj093.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-µ±¹é	4	107	\spr\item\questkey\taskobj094.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-´¨Üº	4	108	\spr\item\questkey\taskobj095.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-Âé»Æ	4	109	\spr\item\questkey\taskobj096.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-»³Ï¥	4	110	\spr\item\questkey\taskobj097.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-Ò¹Ã÷Öé	4	111	\spr\item\questkey\taskobj098.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-×ÏÜÙŞ£	4	112	\spr\item\questkey\taskobj099.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-µØ½õ²İ	4	113	\spr\item\questkey\taskobj100.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Üç²İ	4	114	\spr\item\questkey\taskobj101.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-»¢¶ú²İ	4	115	\spr\item\questkey\taskobj102.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÁéÖ¥	4	116	\spr\item\questkey\taskobj103.spr	41	1	1	"Ò»ÖÖÕäÏ¡Ò©²Ä£¬ÄÜ¹»ÒæĞÄÆø£¬ÔöÖÇ»Û£¬¾ÃÊ³ÇáÉí²»ÀÏ£¬¾ßÓĞÆğËÀ»ØÉúµÄ¹¦Ğ§£¬ÓĞ""ÏÉ²İ""Ö®³Æ¡£"	0
-É½Àïºì	4	117	\spr\item\questkey\taskobj104.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÁÁÒø¿ó	4	118	\spr\item\questkey\taskobj105.spr	41	1	1	Ò»ÖÖï­ÁÁµÄÒøÉ«¿óÊ¯£¬¿ÉÓÃÀ´ĞŞ²¹Í­¾µ¡£	0
-¼¦ÍÈ	4	119	\spr\item\questkey\taskobj106.spr	41	1	1	Ò»Ö§Íâ½¹ÄÚÄÛ¡¢ÓÍ¹â¿É¼û¡¢ÏãÆøÆË±Ç¡¢ÈÃÈË´¹ÏÑÓûµÎµÄ¼¦ÍÈ¡£	0
-»ğºü	4	120	\spr\item\questkey\taskobj107.spr	41	1	1	Ò»ÖÖÌåĞÎÏ¸³¤µÄĞ¡ºüÀê£¬È«ÉíÑªºìÉ«£¬¹ÊÃû»ğºü£¬»úÃô¿É°®¡£	0
-³àÍ­¿ó	4	121	\spr\item\questkey\taskobj108.spr	41	1	1	Ò»ÖÖ¿óÊ¯¡£	0
-¹ãŞ½Ïã	4	122	\spr\item\questkey\taskobj109.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÉÕ¼¦	4	123	\spr\item\questkey\taskobj110.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ê¯Í·	4	124	\spr\item\questkey\taskobj111.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ğ¡»Æ¹·	4	125	\spr\item\questkey\taskobj112.spr	41	1	1	Ò»Ö»»ÆÉ«µÄĞ¡ÍÁ¹·¡£	0
-Ğ¡»ÒÂ¿	4	126	\spr\item\questkey\taskobj113.spr	41	1	1	Ò»Ö»»ÒÉ«³öĞ¡Ã«Â¿¡£	0
-¶Ï½£¡°ÑÚÈÕ¡±	4	127	\spr\item\questkey\taskobj114.spr	41	1	2	Ò»±úÔ¶¹ÅµÄ¶Ï½££¬ÃûÔ»¡°ÑÚÈÕ¡±¡£	0
-¶Ï½£¡°¶ÏË®¡±	4	128	\spr\item\questkey\taskobj115.spr	41	1	2	Ò»±úÔ¶¹ÅµÄ¶Ï½££¬ÃûÔ»¡°¶ÏË®¡±¡£	0
-¶Ï½£¡°×ªÆÇ¡±	4	129	\spr\item\questkey\taskobj116.spr	41	1	2	Ò»±úÔ¶¹ÅµÄ¶Ï½££¬ÃûÔ»¡°×ªÆÇ¡±¡£	0
-¶Ï½£¡°È¥Ğ°¡±	4	130	\spr\item\questkey\taskobj117.spr	41	1	2	Ò»±úÔ¶¹ÅµÄ¶Ï½££¬ÃûÔ»¡°È¥Ğ°¡±¡£	0
-¶Ï½£¡°Ãğ»ê¡±	4	131	\spr\item\questkey\taskobj118.spr	41	1	2	Ò»±úÔ¶¹ÅµÄ¶Ï½££¬ÃûÔ»¡°Ãğ»ê¡±¡£	0
-ÑòÆ¤Êé	4	132	\spr\item\questkey\taskobj119.spr	41	1	1	Ò»¾í¼ÇÔØÁË½ğ¹ú¹ú½ÌÈøÂú½Ì¾­ÎÄµÄÃÜÊé£¬²ØÔÚÌìÈÌ½ÌÊ¥¶´ÀïÃæ¡£	0
-»­Ã¼²İ	4	133	\spr\item\questkey\taskobj120.spr	41	1	2	Ò»ÖÖÉú³¤ÔÚÉ½Ò°¼äµÄ²İ±¾Ö²Îï¡£	0
-ºÏ»¶	4	134	\spr\item\questkey\taskobj121.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-Ğş²Î	4	135	\spr\item\questkey\taskobj122.spr	41	1	1	Ò»ÖÖÒ©²Ä£¬ÄÜ¹»×ÌÒõ½µ»ğ¡¢½â¶¾ÈóÔï¡£	0
-·À¼º	4	136	\spr\item\questkey\taskobj123.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-ÖìÉ°	4	137	\spr\item\questkey\taskobj124.spr	41	1	1	Ò»ÖÖÖĞÒ©²Ä¡£	0
-´ÅÌú¿ó	4	138	\spr\item\questkey\taskobj125.spr	41	1	1	Ò»ÖÖ¿óÊ¯¡£	0
-»Ê¹¬Í¨ĞĞÁî	4	139	\spr\item\questkey\taskobj126.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»Ã¶ĞÜµ¨	4	140	\spr\item\questkey\taskobj127.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»°üÅøËª	4	141	\spr\item\questkey\taskobj128.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-÷êÏã	4	142	\spr\item\questkey\taskobj129.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÑÛ¾µÍõòşÉß	4	143	\spr\item\questkey\taskobj130.spr	41	2	1	ÈÎÎñµÀ¾ß	0
-ºÎÊ×ÎÚ	4	144	\spr\item\questkey\taskobj131.spr	41	1	1	Ò»ÖÖÒ©²Ä£¬ÄÜ¹»²¹¸ÎÉö£¬Òæ¾«Ñª£¬ÎÚĞë·¢£¬Ç¿½î¹Ç¡£	0
-ÌìÍõÁî	4	145	\spr\item\questkey\taskobj132.spr	41	1	1	Ä¾ÖÊÁîÅÆ£¬ÉÏ¿Ì¡°ÌìÍõ¡±¶ş×Ö£¬ËäÈ»Ã²²»ÆğÑÛ£¬µ«È´ÊÇÌìÍõ°ïĞÅÎï£¬²»¿ÉĞ¡êï¡£	0
-ÍÃ×Ó	4	146	\spr\item\questkey\taskobj133.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-°×»¨ÉßÉà²İ	4	147	\spr\item\questkey\taskobj134.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Á«×Ó	4	148	\spr\item\questkey\taskobj135.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Èı¸ö¼¦µ°	4	149	\spr\item\questkey\taskobj136.spr	41	1	1	ÆÕÍ¨µÄ¼¦µ°¡£	0
-ÎåÌõòÇò¾	4	150	\spr\item\questkey\taskobj137.spr	41	1	1	ÆÕÍ¨µÄºÖÉ«òÇò¾¡£	0
-¾ŞÊ¯	4	151	\spr\item\questkey\taskobj138.spr	41	2	2	ÈÎÎñµÀ¾ß	0
-ÏåÑôËÍÍù·ïÏèµÄ¹«ÎÄ	4	152	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑô¸®ËÍÍù·ïÏè¸®µÄæäÕ¾¹«ÎÄ¡£	0
-·ïÏèËÍÍù´óÀíµÄ¹«ÎÄ	4	153	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏè¸®ËÍÍù´óÀí¸®µÄæäÕ¾¹«ÎÄ¡£	0
-·ïÏèËÍÍùÁÙ°²µÄ¹«ÎÄ	4	154	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏè¸®ËÍÍùÁÙ°²¸®µÄæäÕ¾¹«ÎÄ¡£	0
-³É¶¼ËÍÍùãê¾©µÄ¹«ÎÄ	4	155	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼¸®ËÍÍùãê¾©¸®µÄæäÕ¾¹«ÎÄ¡£	0
-´óÀíËÍÍùÏåÑôµÄ¹«ÎÄ	4	156	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀí¸®ËÍÍùÏåÑô¸®µÄæäÕ¾¹«ÎÄ¡£	0
-´óÀíËÍÍùÑïÖİµÄ¹«ÎÄ	4	157	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀí¸®ËÍÍùÑïÖİ¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ÏåÑôËÍÍù³É¶¼µÄ¹«ÎÄ	4	158	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑô¸®ËÍÍù³É¶¼¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ÌìÈÌÃÜĞÅ	4	159	\spr\item\questkey\taskobj091.spr	41	1	1	Ò»·âÃÜ¼ã¡£	0
-ÌúËşÔ¿³×Ò»	4	160	\spr\item\questkey\taskobj092-6.spr	41	1	1	´ò¿ªÌúËşµÚÒ»µÀ»ú¹ØµÄÔ¿³×¡£	0
-ÌúËşÔ¿³×¶ş	4	161	\spr\item\questkey\taskobj092-6.spr	41	1	1	´ò¿ªÌúËşµÚ¶şµÀ»ú¹ØµÄÔ¿³×¡£	0
-ÌúËşÔ¿³×Èı	4	162	\spr\item\questkey\taskobj092-6.spr	41	1	1	´ò¿ªÌúËşµÚÈıµÀ»ú¹ØµÄÔ¿³×¡£	0
-Îäµ±ÕÆÃÅÊéĞÅ	4	163	\spr\item\questkey\taskobj091.spr	41	1	1	Ò»·âÊé¼ò¡£	0
-ÈóÄïµÄ»ØĞÅ	4	164	\spr\item\questkey\taskobj091.spr	41	1	1	Ò»·âÊé¼ò¡£	0
-Âêè§½äÖ¸	4	165	\spr\item\equip\ring\obj-ring09.spr	41	1	1	Ò»¸öÂêè§½äÖ¸¡£	0
-Áé÷êÏãÄÒ	4	166	\spr\item\equip\waist\obj-waist08.spr	41	1	2	Ò»¸öÁé÷êÏãÄÒ¡£	0
-Ó¥¾¦»¤Éí·û	4	167	\spr\item\equip\nick\obj-neck14.spr	41	2	1	Ò»¸öÓ¥¾¦»¤Éí·û¡£	0
-±Ìçô½äÖ¸	4	168	\spr\item\equip\ring\obj-ring04.spr	41	1	1	Ò»¸ö±Ìçô½äÖ¸¡£	0
-ÑïÖİËÍÍù·ïÏèµÄ¹«ÎÄ	4	169	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİ¸®ËÍÍù·ïÏè¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ãê¾©ËÍÍù´óÀíµÄ¹«ÎÄ	4	170	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©¸®ËÍÍù´óÀí¸®µÄæäÕ¾¹«ÎÄ¡£	0
-³É¶¼ËÍÍùÁÙ°²µÄ¹«ÎÄ	4	171	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼¸®ËÍÍùÁÙ°²¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ÁÙ°²ËÍÍùãê¾©µÄ¹«ÎÄ	4	172	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²¸®ËÍÍùãê¾©¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ÁÙ°²ËÍÍùÏåÑôµÄ¹«ÎÄ	4	173	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²¸®ËÍÍùÏåÑô¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ãê¾©ËÍÍùÑïÖİµÄ¹«ÎÄ	4	174	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©¸®ËÍÍùÑïÖİ¸®µÄæäÕ¾¹«ÎÄ¡£	0
-ÑïÖİËÍÍù³É¶¼µÄ¹«ÎÄ	4	175	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİ¸®ËÍÍù³É¶¼¸®µÄæäÕ¾¹«ÎÄ¡£	0
-µ¯¹­	4	176	\spr\item\questkey\taskobj139.spr	41	1	1	¸Õ×öºÃµÄµ¯¹­£¬ÊÇĞ¡º¢×Ó×îÏ²»¶µÄ¶«Î÷Ö®Ò»¡£	0
-Ê÷è¾	4	177	\spr\item\questkey\taskobj142.spr	41	1	1	Ñ¾×ÖĞÍµÄÊ÷è¾¡£	0
-Å£Æ¤	4	178	\spr\item\questkey\taskobj143.spr	41	1	1	Ò»°ãµÄÊìÅ£Æ¤¡£	0
-´¨±´Íè	4	179	\spr\item\questkey\taskobj144.spr	41	1	1	³£ÓÃµÄÖ¹¿ÈÁ¼Ò©¡£	0
-èÁèËÍè	4	180	\spr\item\questkey\taskobj144.spr	41	1	1	ÖÎÁÆ·çº®µÄÒ»°ãÒ©Æ·¡£	0
-¶ú»·	4	181	\spr\item\questkey\taskobj145.spr	41	1	1	Ò»¶ÔĞ¡Ğ¡µÄ½ğÖÊ¶ú»·¡£	0
-×ÏÑÌÓñÅå	4	182	\spr\item\questkey\taskobj140.spr	41	1	1	Ò»¿éºÜ¾ÉµÄ´äÓñÓñÅå£¬ÓñÊ¯ÉÏÓĞºÜ¶àÎÛµã¡£	0
-×Ö»­	4	183	\spr\item\questkey\taskobj141.spr	41	1	1	Ò»·ù¹ÅÀÏµÄ×Ö»­£¬¿´ÉÏÈ¥ÒÑ¾­°ß²µ²»¿°¡£	0
-½ğÑü´ø	4	184	\spr\item\equip\sash\obj-sash09.spr	41	2	1	ÈÎÎñµÀ¾ß	0
-»¢¹Ç	4	185	\spr\item\questkey\taskobj146.spr	41	1	1	ÀÏ»¢µÄ¹ÇÍ·£¬ÖĞÒ©ÈëÒ©³£ÓÃ¡£	0
-÷êÏã»¢¹Ç¸à	4	186	\spr\item\questkey\taskobj147.spr	41	1	1	Ò»ÖÖÖĞÒ©£¬ÓÃÓÚÖÎÁÆ¹Ø½ÚÌÛÍ´¡£	0
-ÎåÏã¶¹¸¯¸É	4	187	\spr\item\questkey\taskobj148.spr	41	1	1	ÖìÏÉÕò¿ÍÕ»ÄÃÊÖ²ËÊ½£¬Ô¶½üÎÅÃû¡£	0
-»üÉñÂ¼	4	188	\spr\item\questkey\taskobj075.spr	41	1	1	ËÎ³õÖ¾¹ÖĞ¡Ëµ£¬º¬150¸öÉñ¹Ö¹ÊÊÂ¡£	0
-ÒÄ¼áÖ¾	4	189	\spr\item\questkey\taskobj075.spr	41	1	1	ËÎ´úÖ¾¹ÖĞ¡Ëµ£¬ºÜÓĞÃûÆø¡£	0
-ºÉ»¨ÉÈ	4	190	\spr\item\questkey\taskobj067.spr	41	1	1	ĞåÓĞºÉ»¨µÄ³ñÉÈ£¬ÎÄÈËÑÅÊ¿Ï²ÓÃÖ®Îï¡£	0
-ÊÖ»·	4	191	\spr\item\equip\bangle\obj-bangle06.spr	41	1	2	ÆÕÍ¨µÄÅ®×ÓÓÃÊÖ»·£¬¹ÅÆÓ´ó·½£¬ÓĞĞ©ÄêÔÂÁË¡£	0
-Ô§ÑìÅÁ	4	192	\spr\item\questkey\taskobj068.spr	41	1	1	ĞåÓĞÔ§ÑìÏ·Ë®Í¼ÑùµÄÊÖÅÁ£¬×ö¹¤¾«Ï¸¡£	0
-BUG	4	193	\spr\item\questkey\taskobj005.spr	41	1	1	¹§Ï²£¬ÄãÓöµ½bugÁË£¡	0
-ÏÊ»¨	4	194	\spr\item\questkey\flower.spr	330	1	1	ÃÀÀöµÄ»¨¶ä£¬¿ÉÒÔ±í´ï×Ô¼ºµÄ°®ĞÄ¡£	1
-ÔÀÍõ½£	4	195	\spr\item\questkey\ÔÀÍõ½£.spr	41	2	3	ÔÀ·ÉµÄÅå½££¬½¨Á¢°ï»áµÄĞÅÎï¡£	1
-ÌúÔ¿³×	4	196	\spr\item\questkey\taskobj092-6.spr	41	1	1	µã²ÔÉ½¶´Àï¼ñµ½µÄÒ»°ÑÌúÔ¿³×	0
-Í­Ô¿³×	4	197	\spr\item\questkey\taskobj092-6.spr	41	1	1	µã²ÔÉ½¶´Àï¼ñµ½µÄÒ»°ÑÍ­Ô¿³×	0
-ÒøÔ¿³×	4	198	\spr\item\questkey\taskobj092-6.spr	41	1	1	µã²ÔÉ½¶´Àï¼ñµ½µÄÒ»°ÑÒøÔ¿³×	0
-ÖĞÔ­µØĞÎÍ¼	4	199	\spr\item\questkey\taskobj076.spr	41	2	1	ÈÎÎñµÀ¾ß	0
-°ËºÅ²¼´ü	4	200	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-¶şºÅ²¼´ü	4	201	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ø¤°ïÔ¿³×±û	4	202	\spr\item\questkey\taskobj092-6.spr	41	1	1	ÔÚØ¤°ïÃÜ¶´Àï¼ñµ½µÄÔ¿³×£¬Ô¿³×ÉÏ±ê¼Ç×ÅÒ»¸ö¡°±û¡±×Ö	0
-Ø¤°ïÔ¿³×¼×	4	203	\spr\item\questkey\taskobj092-6.spr	41	1	1	ÔÚØ¤°ïÃÜ¶´Àï¼ñµ½µÄÔ¿³×£¬Ô¿³×ÉÏ±ê¼Ç×ÅÒ»¸ö¡°¼×¡±×Ö	0
-Ø¤°ïÔ¿³×ÒÒ	4	204	\spr\item\questkey\taskobj092-6.spr	41	1	1	ÔÚØ¤°ïÃÜ¶´Àï¼ñµ½µÄÔ¿³×£¬Ô¿³×ÉÏ±ê¼Ç×ÅÒ»¸ö¡°ÒÒ¡±×Ö	0
-¾ÅºÅ²¼´ü	4	205	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÁùºÅ²¼´ü	4	206	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÆßºÅ²¼´ü	4	207	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÈıºÅ²¼´ü	4	208	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ËÄºÅ²¼´ü	4	209	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÎåºÅ²¼´ü	4	210	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ò»ºÅ²¼´ü	4	211	\spr\item\questkey\taskobj077.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-¼ûĞÔ·åÉ½¶´Ô¿³×	4	212	\spr\item\questkey\taskobj092.spr	41	1	1	ÔÚ¼ûĞÔ·åÉ½¶´ÖĞ¼ñµ½µÄÒ»°ÑÔ¿³×	0
-±ùÀÎÔ¿³×	4	213	\spr\item\questkey\taskobj092.spr	41	1	1	´ò¿ª±ùÀÎÓÃµÄÔ¿³×	0
-²§ÓÛ	4	214	\spr\item\questkey\taskobj032.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ìøÕÈ	4	215	\spr\item\questkey\taskobj030.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ä¾Óã	4	216	\spr\item\questkey\taskobj031.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÄîÖé	4	217	\spr\item\questkey\taskobj029.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-¼á¾§Ê¯	4	218	\spr\item\questkey\taskobj025.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-Ö¤Ã÷ÊéĞÅ	4	219	\spr\item\questkey\taskobj091.spr	41	1	1	ãê¾©µÄÆòØ¤Ğ´¸øÉÙÁÖÅÉÖª¿ÍÉ®µÄÖ¤Ã÷ÊéĞÅ	0
-Ê®°üÅøËª	4	220	\spr\item\questkey\taskobj128.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÕæÄ¾Ïã¶¦	4	221	\spr\item\questkey\taskobj081.spr	41	1	1	·¢³öÓÄÓÄÀ¶¹âµÄÕæÄ¾Ïã¶¦	0
-±Ù¶¾Öé	4	222	\spr\item\questkey\taskobj083.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-µÚ¶ş¸ù¿×È¸ÓğÃ«	4	223	\spr\item\questkey\taskobj079.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-µÚÈı¸ù¿×È¸ÓğÃ«	4	224	\spr\item\questkey\taskobj080.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-µÚËÄ¸ù¿×È¸ÓğÃ«	4	225	\spr\item\questkey\taskobj081.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-µÚÎå¸ù¿×È¸ÓğÃ«	4	226	\spr\item\questkey\taskobj082.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-µÚÒ»¸ù¿×È¸ÓğÃ«	4	227	\spr\item\questkey\taskobj078.spr	41	1	2	ÈÎÎñµÀ¾ß	0
-Ò°ÖíÈâ	4	228	\spr\item\questkey\taskobj150.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-ÆÆµ¶	4	229	\spr\item\questkey\taskobj152.spr	41	1	2	Ò»°ÑÆÆËğµÄµ¶£¬È±ÁËºÃ¼¸¸ö¿Ú×Ó	0
-±¦µ¶	4	230	\spr\item\questkey\taskobj151.spr	41	1	2	Ò»°ÑÉÁ×Åº®¹âµÄ±¦µ¶£¬µ¶ïÉ´¦¿Ì×ÅÒ»¸ö¡°Åí¡±×Ö	0
-Ñô´ºÁéÖ¥	4	231	\spr\item\questkey\taskobj153.spr	41	1	1	Ò»ÖÖº±¼ûµÄÒ°ÉúÁéÖ¥	0
-°×Ñ©°ÙºÏ	4	232	\spr\item\questkey\taskobj103.spr	41	1	1	Ò»ÖÖÆæÌØµÄ°ÙºÏ»¨£¬·Ç³£Ï¡ÉÙ	0
-·¹Àº	4	233	\spr\item\questkey\taskobj154.spr	41	1	1	Ò»¸öÆÕÍ¨·¹Àº£¬ÀïÃæÊ¢×ÅÈÈÆøÌÚÌÚµÄ·¹²Ë	0
-°¢ÇíµÄ½äÖ¸	4	234	\spr\item\equip\ring\obj-ring09.spr	41	1	1	Ò»Ö»Âêè§ËùÖÆµÄ½äÖ¸£¬ÑùÊ½¾«ÃÀ±ğÖÂ	0
-ÎŞÃûÀÏÕßµÄÊéĞÅ	4	235	\spr\item\questkey\taskobj091.spr	41	1	1	¶Ï³¦¹ÈÖĞµÄÎŞÃûÀÏÕßĞ´¸øµ±½ñÕÆÃÅµÄÊéĞÅ	0
-´ÌÉ±ÃÜº¯	4	236	\spr\item\questkey\taskobj091.spr	41	1	1	½ğ¹úÃÜÁî´ÌÉ±ÕÅ¿¡µÄº¯¼ş	0
-´äÑÌ½ûµØË¿ÅÁ	4	237	\spr\item\questkey\taskobj007.spr	41	1	1	ÈÎÎñµÀ¾ß	0
-À¼Ë®¾§	4	238	\spr\item\questkey\baoshi_zhuanxu.spr	333	1	1	ÔÌ²Ø¿ÉÒÔ¸Ä±äÊÂÎïÎåĞĞÖ®ÆøµÄË®¾§¡£	1
-×ÏË®¾§	4	239	\spr\item\questkey\baoshi_xingtian.spr	333	1	1	ÔÌ²Ø¿ÉÒÔÌáÉıÊÂÎïµÈ¼¶ÄÜÁ¦µÄË®¾§¡£	1
-ÂÌË®¾§	4	240	\spr\item\questkey\baoshi_nvwa.spr	333	1	1	ÔÌ²Ø¿ÉÒÔ¸Ä±äÊÂÎïÄ§Á¦ÕÆÎÕµÄË®¾§¡£	1
-»ªÉ½Ó¢ĞÛÁî	4	241	\spr\item\questkey\taskobj126.spr	41	1	1	²Î¼Ó»ªÉ½Ó¢ĞÛ»áµÄĞÅÎï¡£	0
-ÎŞÓÃµÄĞÅº¯	4	242	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	243	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡·ïÏèµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	244	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡³É¶¼µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	245	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡´óÀíµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	246	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡ãê¾©µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	247	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡ÏåÑôµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	248	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÁÙ°²ËÍ×¡ÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	249	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	250	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	251	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	252	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍùÁÙ°²µÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	253	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	254	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍù³É¶¼µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	255	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍù´óÀíµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	256	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍùãê¾©µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	257	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍùÏåÑôµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	258	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó·ïÏèËÍÍùÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	259	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	260	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	261	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	262	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡ÁÙ°²µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	263	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡·ïÏèµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	264	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	265	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡´óÀíµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	266	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡ãê¾©µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	267	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡ÏåÑôµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	268	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó³É¶¼ËÍ×¡ÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	269	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	270	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	271	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	272	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍ×¡ÁÙ°²µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	273	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍ×¡·ïÏèµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	274	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍÍù³É¶¼µÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	275	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	276	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍ×¡ãê¾©µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	277	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍ×¡ÏåÑôµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	278	\spr\item\questkey\taskobj075.spr	41	1	1	´Ó´óÀíËÍ×¡ÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	279	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	280	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	281	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	282	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍ×¡ÁÙ°²µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	283	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍ×¡·ïÏèµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	284	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍÍù³É¶¼µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	285	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍ×¡´óÀíµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	286	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	287	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍ×¡ÏåÑôµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	288	\spr\item\questkey\taskobj075.spr	41	1	1	´Óãê¾©ËÍ×¡ÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	289	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	290	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	291	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	292	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍ×¡ÁÙ°²µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	293	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍ×¡·ïÏèµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	294	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍÍù³É¶¼µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	295	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍ×¡´óÀíµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	296	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍ×¡ãê¾©µÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	297	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	298	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÏåÑôËÍ×¡ÑïÖİµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	299	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	300	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	301	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	302	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍ×¡ÁÙ°²µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	303	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍ×¡·ïÏèµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	304	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍÍù³É¶¼µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	305	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍ×¡´óÀíµÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	306	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍ×¡ãê¾©µÄĞÅº¯	0
-æäÕ¾ĞÅº¯	4	307	\spr\item\questkey\taskobj075.spr	41	1	1	´ÓÑïÖİËÍ×¡ÏåÑôµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	308	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	309	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	310	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	311	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	312	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	313	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	314	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	315	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	316	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	317	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	318	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	319	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	320	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	321	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	322	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	323	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	324	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	325	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	326	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	327	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	328	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	329	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	330	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	331	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	332	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	333	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	334	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	335	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	336	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	337	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	338	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	339	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	340	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÎŞÓÃµÄĞÅº¯	4	341	\spr\item\questkey\taskobj075.spr	41	1	1	ÎŞÓÃµÄĞÅº¯	0
-ÒøÔª±¦	4	342	\spr\item\questkey\obj_item_cards.spr	339	1	1	´ó¿é°×ÒøÔª±¦£¬Ïàµ±ÓÚ10Ôªµã¿¨Ò»ÕÅ¡£	1
-½ğÔª±¦	4	343	\spr\item\questkey\obj_item_cardg.spr	340	1	1	´ó¿é»Æ½ğÔª±¦£¬Ïàµ±ÓÚ35Ôªµã¿¨Ò»ÕÅ¡£	1
+Thóy Vò tr©m	4	0	\spr\item\questkey\taskobj001.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+§¹i M¹n ®µ la hoa	4	1	\spr\item\questkey\taskobj002.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+C¸ Ng©n TuyÕt	4	2	\spr\item\questkey\taskobj003.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Bİch th­êng Phông §iÖp 	4	3	\spr\item\questkey\taskobj004.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Trïng ®á 	4	4	\spr\item\questkey\taskobj005.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Vò §ång Quan ©m 	4	5	\spr\item\questkey\taskobj006.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Kh¨n t¬ cÊm ®Şa 	4	6	\spr\item\questkey\taskobj007.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+X­¬ng ®Çu l¹c ®µ	4	7	\spr\item\questkey\taskobj008.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Kim T¬ HÇu	4	8	\spr\item\questkey\taskobj009.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+HuyÕt Hån ThÇn KiÕm	4	9	\spr\item\questkey\taskobj010.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+1 nóm tãc	4	10	\spr\item\questkey\taskobj011.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Phôc Hy táa 	4	11	\spr\item\questkey\taskobj012.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Viªm §Õ táa 	4	12	\spr\item\questkey\taskobj013.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+ThiÕu H¹o táa 	4	13	\spr\item\questkey\taskobj014.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Chuyªn Hóc táa 	4	14	\spr\item\questkey\taskobj015.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Hoµng ®Õ táa 	4	15	\spr\item\questkey\taskobj016.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ngò S¾c Th¹ch 	4	16	\spr\item\questkey\taskobj017.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+B¹ch Ngäc Nh­ ı 	4	17	\spr\item\questkey\taskobj018.spr	41	1	1	VËt chøng ®Ó gia  nhËp Nga Mi.	0
+M¶nh g­¬ng (tr¸i) 	4	18	\spr\item\questkey\taskobj019.spr	41	1	1	M¶nh g­¬ng bªn tr¸i. VËt phÈm nhiÖm vô.	0
+M¶nh g­¬ng (ph¶i) 	4	19	\spr\item\questkey\taskobj019-1.spr	41	1	1	M¶nh g­¬ng bªn ph¶i.VËt phÈm nhiÖm vô.	0
+G­¬ng §ång	4	20	\spr\item\questkey\taskobj020.spr	41	1	1	1 tÊm g­¬ng §ång hoµn chØnh.	0
+Phï Dung CÈm Kª ®å 	4	21	\spr\item\questkey\taskobj021.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+B¸ch §iÓu TriÒu Phông	4	22	\spr\item\questkey\taskobj022.spr	41	1	1	VËt phÈm nhiÖm vô. 	0
+Kim TuyÕn Tó T­îng Kim Cang Kinh 	4	23	\spr\item\questkey\taskobj023.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+Yªn Ngäc ChØ hoµn 	4	24	\spr\item\questkey\taskobj024.spr	41	1	1	Tİn vËt cña ch­ëng m«n Nga mi. VËt phÈm nhiÖm vô 	0
+Toµn th¹ch 	4	25	\spr\item\questkey\taskobj025.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Kim Liªn hoa 	4	26	\spr\item\questkey\taskobj026.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+B¸t Nh· Ba La MËt T©m kinh	4	27	\spr\item\questkey\taskobj027.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+DŞch C©n Kinh	4	28	\spr\item\questkey\taskobj028.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Trµng h¹t 	4	29	\spr\item\questkey\taskobj029.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+ThiÒn tr­îng 	4	30	\spr\item\questkey\taskobj030.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Méc ng­ 	4	31	\spr\item\questkey\taskobj031.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+B¸t nhµ s­ 	4	32	\spr\item\questkey\taskobj032.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+GËy Tróc Xanh 	4	33	\spr\item\questkey\taskobj033.spr	41	1	2	Tİn vËt gia nhËp §­êng m«n 	0
+GËy Tróc Tr¾ng 	4	34	\spr\item\questkey\taskobj034.spr	41	1	2	Tİn vËt gia nhËp §­êng m«n.	0
+GËy Tróc Tİm 	4	35	\spr\item\questkey\taskobj035.spr	41	1	2	Tİn vËt gia nhËp §­êng m«n.	0
+Ma Vò Ch©m	4	36	\spr\item\questkey\taskobj036.spr	41	1	2	§­êng M«n §éc M«n ¸m khİ.	0
+Kh¨n t¬ Qu¸i th¹ch trËn 1 	4	37	\spr\item\questkey\taskobj040.spr	41	1	1	Trªn kh¨n cã thªu ch÷ "ThiÖn" 	0
+Kh¨n t¬ Qu¸i th¹ch trËn 2 	4	38	\spr\item\questkey\taskobj038.spr	41	1	1	Trªn kh¨n cã thªu ch÷ "SÊm" 	0
+Kh¨n t¬ Qu¸i th¹ch trËn 3 	4	39	\spr\item\questkey\taskobj037.spr	41	1	1	Trªn kh¨n cã thªu ch÷ "Gi¶" 	0
+Kh¨n t¬ Qu¸i th¹ch trËn 4	4	40	\spr\item\questkey\taskobj039.spr	41	1	1	Trªn kh¨n cã thªu ch÷ "Tö" 	0
+Kim H¹ng Khuyªn	4	41	\spr\item\questkey\taskobj041.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+Háa Khİ Phæ 	4	42	\spr\item\questkey\taskobj042.spr	41	1	1	§­êng M«n MËt tŞch, vËt phÈm nhiÖm vô.	0
+Da Cãc	4	43	\spr\item\questkey\taskobj043.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+Gan R¾n ®éc	4	44	\spr\item\questkey\taskobj044.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+Hoa Anh Tóc	4	45	\spr\item\questkey\taskobj045.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+§u«i RÕt ®éc 	4	46	\spr\item\questkey\taskobj046.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+§Çu Thiªn tµm 	4	47	\spr\item\questkey\taskobj047.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+¸m Khİ Phæ 	4	48	\spr\item\questkey\taskobj048.spr	41	1	1	§­êng M«n MËt tŞch, ghi t©t c¶ c¸c bİ quyÕt chÕ t¹o ¸m khİ.	0
+ThÊt Tinh TuyÖt MÖnh KiÕm 	4	49	\spr\item\questkey\taskobj049.spr	41	1	1	Mét thanh kiÕm ®· rØ sĞt.	0
+Vò V­¬ng KiÕm 	4	50	\spr\item\questkey\taskobj050.spr	41	1	1	Mét thanh b¶o kiÕm cæ, ®­îc l­u gi÷ trªn Hoa s¬n.	0
+M¶nh lÖnh bµi 1 	4	51	\spr\item\questkey\taskobj051-1.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 2 	4	52	\spr\item\questkey\taskobj051-2.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 3 	4	53	\spr\item\questkey\taskobj051-3.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 4	4	54	\spr\item\questkey\taskobj051-4.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 5	4	55	\spr\item\questkey\taskobj051-5.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 6	4	56	\spr\item\questkey\taskobj051-6.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+M¶nh lÖnh bµi 7	4	57	\spr\item\questkey\taskobj051.spr	41	1	2	VËt phÈm nhiÖm vô 	0
+NhËt NguyÖt Song lu©n 	4	58	\spr\item\questkey\taskobj052.spr	41	1	1	Thiªn NhÉn ®éc m«n binh khİ.	0
+C¸p HuyÕt Hång 	4	59	\spr\item\questkey\taskobj053.spr	41	1	1	Lo¹i b¶o th¹ch mµu hång huyÕt.	0
+B¨ng Tinh Lam 	4	60	\spr\item\questkey\taskobj054.spr	41	1	1	1 lo¹i b¶o th¹ch mµu xanh.	0
+Tæ MÉu Lôc  	4	61	\spr\item\questkey\taskobj055.spr	41	1	1	1 lo¹i b¶o th¹ch mµu lôc.	0
+V©n Méng Tö 	4	62	\spr\item\questkey\taskobj056.spr	41	1	1	1 lo¹i b¶o th¹ch mµu tİm.	0
+Ng©n tr©m	4	63	\spr\item\questkey\taskobj057.spr	41	1	2	Mét chiÕc Ng©n tr©m cña n÷ giíi.	0
+H­¬ng Nang	4	64	\spr\item\questkey\taskobj058.spr	41	1	2	VËt phÈm nhiÖm vô.	0
+Thïng gç 	4	65	\spr\item\questkey\taskobj059.spr	41	1	1	VËt phÈm nhiÖm vô.	0
+Thiªn Tµm §¹o bµo bŞ r¸ch	4	66	\spr\item\questkey\taskobj060.spr	41	1	2	ChiÕc ®¹o bµo bŞ sãi c¾n r¸ch.	0
+Thiªn Tµm 	4	67	\spr\item\questkey\taskobj061.spr	41	1	1	Loµi t»m mµu tr¾ng, t¬ ch¾c v« song.	0
+Thiªn Tµm §¹o bµo hoµn chØnh	4	68	\spr\item\questkey\taskobj062.spr	41	1	2	ChiÕc ®¹o bµo ®· v¸ hoµn chØnh 	0
+Ngäc Thanh Ch©n Kinh 	4	69	\spr\item\questkey\taskobj063.spr	41	1	1	§¹o gi¸o Tam Thanh B¶o §iÓn..	0
+Th­îng Thanh Ch©n Kinh 	4	70	\spr\item\questkey\taskobj064.spr	41	1	1	§¹o gi¸o Tam Thanh B¶o §iÓn..	0
+Th¸i Thanh Ch©n Kinh 	4	71	\spr\item\questkey\taskobj065.spr	41	1	1	§¹o gi¸o Tam Thanh B¶o §iÓn..	0
+R©u c»m 	4	72	\spr\item\questkey\taskobj066.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+C¸i Qu¹t  	4	73	\spr\item\questkey\taskobj067.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Thñ ph¸ch 	4	74	\spr\item\questkey\taskobj068.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ban chØ 	4	75	\spr\item\questkey\taskobj069.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+HuÖ TuyÒn Töu	4	76	\spr\item\questkey\taskobj070.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Kim L¨ng Xu©n 	4	77	\spr\item\questkey\taskobj071.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+B¸ch Hoa Nh­ìng 	4	78	\spr\item\questkey\taskobj072.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Kinh Hoa Lé 	4	79	\spr\item\questkey\taskobj073.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Song C©u §¹i Khóc	4	80	\spr\item\questkey\taskobj074.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+V¨n th­ 	4	81	\spr\item\questkey\taskobj075.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+S¬n Hµ X· T¾c §å 	4	82	\spr\item\questkey\taskobj076.spr	41	2	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i 	4	83	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò	4	84	\spr\item\questkey\taskobj078.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+§Çu ng­êi  	4	85	\spr\item\questkey\taskobj079.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+NhÖn	4	86	\spr\item\questkey\taskobj080.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Méc H­¬ng §Ønh 	4	87	\spr\item\questkey\taskobj081.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ngäc San h« 	4	88	\spr\item\questkey\taskobj082.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+TrÊn gi¸o chi b¶o	4	89	\spr\item\questkey\taskobj083.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Bång Lai Xu©n	4	90	\spr\item\questkey\taskobj084.spr	41	1	1	Lµ "Tiªn Töu" ë §éng §×nh Hå, mïi vŞ th¬m nång, nuèt råi vÉn cßn tiÕc, rÊt thİch hîp víi c¸c vŞ ®¹i h¸n.	0
+Kª HuyÕt Th¹ch 	4	91	\spr\item\questkey\taskobj085.spr	41	1	1	Lo¹i b¶o th¹ch quı hiÕm, cã thÓ xua ®uæi tµ ma	0
+Mét l¸ cê GÊm	4	92	\spr\item\questkey\taskobj086.spr	41	1	2	Mét l¸ cê GÊm mµu hång, phİa trªn cã thªu 4 ch÷ Vµng "Yªu d©n nh­ con".	0
+Háa Tİch DŞch L©n PhiÕn	4	93	\spr\item\questkey\taskobj087.spr	41	1	1	Mét tÊm da cã thÓ dïng ®Ó may ¸o gi¸p.	0
+Lôc Thñ Quy	4	94	\spr\item\questkey\taskobj088.spr	41	1	1	Mét lo¹i ®éng vËt quı hiÕm, vá nã cøng cã thÓ thÓ sö dông nhiÒu ph­¬ng diÖn.	0
+Ngò s¾c th¹ch	4	95	\spr\item\questkey\taskobj089.spr	41	1	1	T­îng tr­ng cho h¹nh phóc, an b×nh. Ph¸t ra hµo quang ngò s¾c lung linh	0
+Thiªn V­¬ng di th­ 	4	96	\spr\item\questkey\taskobj090.spr	41	1	1	MËt th­ cña Thiªn V­¬ng Bang, ghi l¹i c¸c ph­¬ng thøc bè trËn	0
+Th­ tİn, MËt tİn, mËt hµm 	4	97	\spr\item\questkey\taskobj091.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ch×a khãa 1 	4	98	\spr\item\questkey\taskobj092.spr	41	1	1	Dïng më b¶o r­¬ng lÊy "Háa Khİ Phæ ".	0
+Ch×a khãa 2 	4	99	\spr\item\questkey\taskobj092-1.spr	41	1	1	Ch×a khãa ®Ó lªn tÇng 2 Tróc T¬ ®éng.	0
+Ch×a khãa 3 	4	100	\spr\item\questkey\taskobj092-2.spr	41	1	1	Ch×a khãa ®Ó lªn tÇng 3 Tróc T¬ ®éng 	0
+Ch×a khãa Thiªn V­¬ng bang	4	101	\spr\item\questkey\taskobj092-3.spr	41	1	1	Dïng ®Ó më b¶o r­¬ng.	0
+Ch×a khãa Th¸nh ®éng 	4	102	\spr\item\questkey\taskobj092-4.spr	41	1	1	Dïng ®Ó më b¶o r­¬ng trong Th¸nh ®éng. 	0
+Ch×a khãa 	4	103	\spr\item\questkey\taskobj092-5.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ch×a khãa 	4	104	\spr\item\questkey\taskobj092-6.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ch×a khãa 	4	105	\spr\item\questkey\taskobj092.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+T×nh hoa	4	106	\spr\item\questkey\taskobj093.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+§­¬ng Quy 	4	107	\spr\item\questkey\taskobj094.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+Xuyªn Khung 	4	108	\spr\item\questkey\taskobj095.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+Ma Hoµng 	4	109	\spr\item\questkey\taskobj096.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+Hoµi TÊt 	4	110	\spr\item\questkey\taskobj097.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+D¹ Minh Ch©u	4	111	\spr\item\questkey\taskobj098.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tö Môc Tóc 	4	112	\spr\item\questkey\taskobj099.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+§Şa CÈm Th¶o 	4	113	\spr\item\questkey\taskobj100.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+ThiÕn Th¶o 	4	114	\spr\item\questkey\taskobj101.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Hæ NhÜ Th¶o 	4	115	\spr\item\questkey\taskobj102.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Linh Chi	4	116	\spr\item\questkey\taskobj103.spr	41	1	1	Tiªn d­îc, t¨ng c­êng khİ lùc, cã thÓ c¶i tö hoµn sinh 	0
+S¬n Lı Hång 	4	117	\spr\item\questkey\taskobj104.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+L­îng Ng©n Kho¸ng 	4	118	\spr\item\questkey\taskobj105.spr	41	1	1	Lo¹i kho¸ng th¹ch cã thÓ dïng ®Ó v¸ g­¬ng §ång	0
+§ïi gµ 	4	119	\spr\item\questkey\taskobj106.spr	41	1	1	VËt phÈm ®Ó dô Háa hå.	0
+Háa Hå 	4	120	\spr\item\questkey\taskobj107.spr	41	1	1	Lo¹i c¸o th©n nhá vµ dµi, nhanh nhÑn ®¸ng yªu.	0
+Xİch §ång kho¸ng 	4	121	\spr\item\questkey\taskobj108.spr	41	1	1	1 lo¹i kho¸ng th¹ch.	0
+Qu¶ng Ho¾c H­¬ng 	4	122	\spr\item\questkey\taskobj109.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Gµ n­íng 	4	123	\spr\item\questkey\taskobj110.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+§¸ 	4	124	\spr\item\questkey\taskobj111.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+TiÓu Hoµng cÈu 	4	125	\spr\item\questkey\taskobj112.spr	41	1	1	Lo¹i chã hoang nhá, l«ng mµu vµng	0
+TiÓu Kh«i l­ 	4	126	\spr\item\questkey\taskobj113.spr	41	1	1	Lo¹i La lóc nhá l«ng cã mµu x¸m tro	0
+§o¹n KiÕm YÓm NhËt	4	127	\spr\item\questkey\taskobj114.spr	41	1	2	1 thanh kiÕm cæ 	0
+§o¹n KiÕm §o¹n Thñy	4	128	\spr\item\questkey\taskobj115.spr	41	1	2	1 thanh kiÕm cæ 	0
+§o¹n KiÕm ChuyÓn Ph¸ch	4	129	\spr\item\questkey\taskobj116.spr	41	1	2	1 thanh kiÕm cæ.	0
+§o¹n KiÕm Khø Tµ	4	130	\spr\item\questkey\taskobj117.spr	41	1	2	1 thanh kiÕm cæ.	0
+§o¹n KiÕm DiÖt Hån	4	131	\spr\item\questkey\taskobj118.spr	41	1	2	1 thanh kiÕm cæ.	0
+S¸ch da dª 	4	132	\spr\item\questkey\taskobj119.spr	41	1	1	Mét quyÓn mËt th­ giÊu trong th¸nh ®éng Thiªn NhÉn gi¸o.	0
+Häa mi th¶o	4	133	\spr\item\questkey\taskobj120.spr	41	1	2	Lo¹i th¶o méc chØ sèng ë c¸c vïng s¬n  c­íc hoang d·.	0
+Hîp hoan 	4	134	\spr\item\questkey\taskobj121.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+HuyÒn S©m	4	135	\spr\item\questkey\taskobj122.spr	41	1	1	Lo¹i d­îc liÖu, cã thÓ th¨ng ©m gi¸ng háa, gi¶i ®éc nhuËn tr­êng.	0
+Phßng Kû 	4	136	\spr\item\questkey\taskobj123.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+Chu Sa 	4	137	\spr\item\questkey\taskobj124.spr	41	1	1	Mét lo¹i d­îc liÖu trong §«ng Y.	0
+Tõ ThiÕt Kho¸ng 	4	138	\spr\item\questkey\taskobj125.spr	41	1	1	1 lo¹i kho¸ng th¹ch.	0
+LÖnh bµi th«ng hµnh	4	139	\spr\item\questkey\taskobj126.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+MËt gÊu 	4	140	\spr\item\questkey\taskobj127.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Bao Tİn th¹ch 	4	141	\spr\item\questkey\taskobj128.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+X¹ H­¬ng 	4	142	\spr\item\questkey\taskobj129.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Nh·n Kİnh V­¬ng M·ng Xµ 	4	143	\spr\item\questkey\taskobj130.spr	41	2	1	VËt phÈm nhiÖm vô  	0
+Hµ Thñ ¤ 	4	144	\spr\item\questkey\taskobj131.spr	41	1	1	Lo¹i d­îc liÖu, cã thÓ tr¸ng d­¬ng c­êng cèt, ®en tãc tr¾ng da..	0
+Thiªn V­¬ng lÖnh 	4	145	\spr\item\questkey\taskobj132.spr	41	1	1	Trªn kh¾c 2 ch÷ "Thiªn V­¬ng", lµ tİn vËt vña bang ph¸i.	0
+Thá 	4	146	\spr\item\questkey\taskobj133.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+B¹ch Hoa Xµ ThiÖt th¶o	4	147	\spr\item\questkey\taskobj134.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+H¹t sen  	4	148	\spr\item\questkey\taskobj135.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+3 qu¶ trøng gµ 	4	149	\spr\item\questkey\taskobj136.spr	41	1	1	Lo¹i trøng gµ th«ng th­êng.	0
+5 con trïng ®á 	4	150	\spr\item\questkey\taskobj137.spr	41	1	1	Lo¹i Trïng ®á th­êng thÊy.	0
+§¸ to	4	151	\spr\item\questkey\taskobj138.spr	41	2	2	VËt phÈm nhiÖm vô  	0
+C«ng v¨n T­¬ng D­¬ng - Ph­îng T­êng 	4	152	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n  tõ T­¬ng D­¬ng ®­a ®Õn Ph­îng T­êng  	0
+C«ng v¨n Ph­îng T­êng - §¹i Lı  	4	153	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ Ph­îng T­êng ®­a ®Õn §¹i Lı  	0
+C«ng v¨n Ph­îng T­êng - L©m An  	4	154	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ Ph­îng T­êng ®­a ®Õn L©m An  	0
+C«ng v¨n Thµnh §« - BiÖn Kinh 	4	155	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ Thµnh §« ®­a ®Õn BiÖn Kinh  	0
+C«ng v¨n §¹i Lı - T­¬ng D­¬ng  	4	156	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ §¹i Lı ®­a ®Õn T­¬ng D­¬ng  	0
+C«ng v¨n §¹i Lı - D­¬ng Ch©u  	4	157	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ §¹i Lı ®­a ®Õn D­¬ng Ch©u  	0
+C«ng v¨n T­¬ng D­¬ng - Thµnh §«  	4	158	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ T­¬ng D­¬ng ®­a ®Õn Thµnh §« 	0
+Thiªn NhÉn MËt th­ 	4	159	\spr\item\questkey\taskobj091.spr	41	1	1	1 bøc mËt th­.	0
+Ch×a khãa ThiÕt Th¸p 1 	4	160	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa më  c¬ quan thø nhÊt	0
+Ch×a khãa ThiÕt Th¸p 2 	4	161	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa më  c¬ quan thø 2.	0
+Ch×a khãa ThiÕt Th¸p 3 	4	162	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa më  c¬ quan thø 3.	0
+Th­ tİn cña ch­ëng m«n Vâ §ang	4	163	\spr\item\questkey\taskobj091.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+Th­ håi ©m cña NhuËn N­¬ng 	4	164	\spr\item\questkey\taskobj091.spr	41	1	1	VËt phÈm nhiÖm vô 	0
+NhÉn M· n·o	4	165	\spr\item\equip\ring\obj-ring09.spr	41	1	1	Mét chiÕc nhÉn M· N·o	0
+Linh X¹ H­¬ng Nang	4	166	\spr\item\equip\waist\obj-waist08.spr	41	1	2	Mét tói Linh X¹ h­¬ng	0
+¦ng T×nh Hé Th©n phï 	4	167	\spr\item\equip\nick\obj-neck14.spr	41	2	1	1 c¸i ¦ng T×nh Hé Th©n phï.	0
+Bİch Tû Giíi ChØ, 	4	168	\spr\item\equip\ring\obj-ring04.spr	41	1	1	Mét chiÕc Bİch Tû Giíi ChØ, 	0
+C«ng v¨n D­¬ng Ch©u - Ph­îng T­êng  	4	169	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ D­¬ng Ch©u ®­a ®Õn Ph­îng T­êng 	0
+C«ng v¨n BiÖn Kinh - §¹i Lı  	4	170	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ BiÖn Kinh ®­a ®Õn §¹i Lı  	0
+C«ng v¨n Thµnh §« - L©m An  	4	171	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ Thµnh §« ®­a ®Õn L©m An  	0
+C«ng v¨n L©m An - BiÖn Kinh  	4	172	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ L©m An ®­a ®Õn BiÖn Kinh  	0
+C«ng v¨n L©m An - T­¬ng D­¬ng 	4	173	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ L©m An ®­a ®Õn T­¬ng D­¬ng  	0
+C«ng v¨n BiÖn Kinh - D­¬ng Ch©u  	4	174	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ BiÖn Kinh ®­a ®Õn D­¬ng Ch©u  	0
+C«ng v¨n D­¬ng Ch©u - Thµnh §«  	4	175	\spr\item\questkey\taskobj075.spr	41	1	1	C«ng v¨n tõ D­¬ng Ch©u ®­a ®Õn Thµnh §« 	0
+Giµn n¸ 	4	176	\spr\item\questkey\taskobj139.spr	41	1	1	Mét c¸i giµn n¸ võa lµm xong	0
+Ch¹c c©y 	4	177	\spr\item\questkey\taskobj142.spr	41	1	1	Nh¸nh c©y cã h×nh ch÷ Y.	0
+Da tr©u 	4	178	\spr\item\questkey\taskobj143.spr	41	1	1	Lo¹i da Tr©u thuéc theo c¸ch th«ng th­êng 	0
+Xuyªn Bèi hoµn	4	179	\spr\item\questkey\taskobj144.spr	41	1	1	Lo¹i thuèc th­êng dïng ®Ó trŞ ho	0
+Tú Bµ hoµn	4	180	\spr\item\questkey\taskobj144.spr	41	1	1	Lo¹i thuèc th­êng dïng ®Ó trŞ phong hµn.	0
+Hoa tai 	4	181	\spr\item\questkey\taskobj145.spr	41	1	1	Mét ®«i khuyªn tai nhá b»ng vµng.	0
+Tö Yªn Ngäc Béi 	4	182	\spr\item\questkey\taskobj140.spr	41	1	1	Mét miÕng Thóy Ngäc Ngäc Béi ®· cò, ®iªu kh¶m rÊt ®Ñp	0
+Tranh ch÷ 	4	183	\spr\item\questkey\taskobj141.spr	41	1	1	Mét bøc tranh ch÷ cæ x­a 	0
+Kim Yªu §¸i	4	184	\spr\item\equip\sash\obj-sash09.spr	41	2	1	VËt phÈm nhiÖm vô  	0
+Hæ cèt 	4	185	\spr\item\questkey\taskobj146.spr	41	1	1	D­îc liÖu th­êng dïng trong §«ng Y.	0
+X¹ H­¬ng Hæ cèt cao	4	186	\spr\item\questkey\taskobj147.spr	41	1	1	Lo¹i §«ng d­îc chuyªn trŞ c¸c chøng viªm khíp	0
+Ngò H­¬ng ®Ëu hñ 	4	187	\spr\item\questkey\taskobj148.spr	41	1	1	Mãn ¨n næi tiÕng ë Chu Tiªn trÊn	0
+Kª ThÇn Lôc 	4	188	\spr\item\questkey\taskobj075.spr	41	1	1	Mét d¹ng tiÓu thuyÕt thÇn qu¸i thêi Tèng	0
+Di Kiªn Chİ 	4	189	\spr\item\questkey\taskobj075.spr	41	1	1	Mét d¹ng tiÓu thuyÕt thÇn qu¸i thêi Tèng 	0
+Qu¹t l¸ sen	4	190	\spr\item\questkey\taskobj067.spr	41	1	1	Lo¹i qu¹t c¸c v¨n sÜ thİch dïng	0
+Vßng tay	4	191	\spr\item\equip\bangle\obj-bangle06.spr	41	1	2	Lo¹i vßng n÷ giíi th­êng ®eo 	0
+Kh¨n Uyªn ¦¬ng	4	192	\spr\item\questkey\taskobj068.spr	41	1	1	Lo¹i kh¨n quÊn cã thªu h×nh ong b­ím, kü thuËt tinh x¶o. 	0
+BUG	4	193	\spr\item\questkey\taskobj005.spr	41	1	1	Chóc mõng! B¹n ®· bŞ bug! 	0
+Hoa t­¬i	4	194	\spr\item\questkey\flower.spr	330	1	1	Cã thÓ ®Ó biÓu ®¹t t×nh c¶m cña m×nh.	1
+Nh¹c V­¬ng KiÕm	4	195	\spr\item\questkey\ÔÀÍõ½£.spr	41	2	3	Béi kiÕm cña Nh¹c Phi, tİn vËt ®Ó kiÕn lËp bang héi	1
+Ch×a khãa S¾t	4	196	\spr\item\questkey\taskobj092-6.spr	41	1	1	Mét chiÕc ch×a khãa t×m thÊy trong §iÓm Th­¬ng ®éng	0
+Ch×a khãa  §ång	4	197	\spr\item\questkey\taskobj092-6.spr	41	1	1	Mét chiÕc ch×a khãa t×m thÊy trong §iÓm Th­¬ng ®éng	0
+Ch×a khãa B¹c	4	198	\spr\item\questkey\taskobj092-6.spr	41	1	1	Mét chiÕc ch×a khãa t×m thÊy trong §iÓm Th­¬ng ®éng	0
+Trung nguyªn ®Şa ®å 	4	199	\spr\item\questkey\taskobj076.spr	41	2	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 8	4	200	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 2	4	201	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ch×a khãa C¸i bang Bİnh 	4	202	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa mËt ®éng C¸i bang, trªn kh¾c 1 ch÷  "Bİnh" 	0
+Ch×a khãa C¸i bang Gi¸p 	4	203	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa mËt ®éng C¸i bang, trªn kh¾c 1 ch÷  "Gi¸p" 	0
+Ch×a khãa C¸i bang Êt 	4	204	\spr\item\questkey\taskobj092-6.spr	41	1	1	Ch×a khãa mËt ®éng C¸i bang, trªn kh¾c 1 ch÷  "Êt" 	0
+Tói v¶i thø 9 	4	205	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 6	4	206	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 7 	4	207	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 3 	4	208	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 4 	4	209	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 5 	4	210	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Tói v¶i thø 1 	4	211	\spr\item\questkey\taskobj077.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ch×a khãa KiÕn Tİnh phong s¬n  ®éng 	4	212	\spr\item\questkey\taskobj092.spr	41	1	1	Ch×a khãa t×m thÊy trong KiÕn Tİnh Phong s¬n  ®éng 	0
+Ch×a khãa b¨ng lao 	4	213	\spr\item\questkey\taskobj092.spr	41	1	1	Ch×a khãa ®Ó më b¨ng lao	0
+B¸t nhµ s­ 	4	214	\spr\item\questkey\taskobj032.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+ThiÒn tr­îng 	4	215	\spr\item\questkey\taskobj030.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Méc ng­ 	4	216	\spr\item\questkey\taskobj031.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Trµng h¹t 	4	217	\spr\item\questkey\taskobj029.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Kiªn Tinh Th¹ch	4	218	\spr\item\questkey\taskobj025.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Th­ tİn chøng minh	4	219	\spr\item\questkey\taskobj091.spr	41	1	1	Th­ do nh÷ng ¨n mµy ë BiÖn Kinh giao cho ThiÕu L©m Tù 	0
+10 bao tİn th¹ch	4	220	\spr\item\questkey\taskobj128.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Méc H­¬ng §Ønh thËt	4	221	\spr\item\questkey\taskobj081.spr	41	1	1	Méc H­¬ng §Ønh thËt, ph¸t ra ¸nh s¸ng huyÒn ¶o	0
+Tİch §éc Ch©u 	4	222	\spr\item\questkey\taskobj083.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò thø 2 	4	223	\spr\item\questkey\taskobj079.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò thø 3 	4	224	\spr\item\questkey\taskobj080.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò thø 4 	4	225	\spr\item\questkey\taskobj081.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò thø 5 	4	226	\spr\item\questkey\taskobj082.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+Khæng t­íc vò thø 1 	4	227	\spr\item\questkey\taskobj078.spr	41	1	2	VËt phÈm nhiÖm vô  	0
+ThŞt heo rõng	4	228	\spr\item\questkey\taskobj150.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Ph¸ ®ao	4	229	\spr\item\questkey\taskobj152.spr	41	1	2	Mét thanh ®ao bŞ g·y mÎ rÊt nham nhë 	0
+B¶o ®ao 	4	230	\spr\item\questkey\taskobj151.spr	41	1	2	Mét thanh ®ao ph¸t ra ¸nh s¸ng l¹nh, trªn kh¾c mét ch÷ "Bµnh" 	0
+D­¬ng Xu©n Linh Chi 	4	231	\spr\item\questkey\taskobj153.spr	41	1	1	Lo¹i d­îc th¶o chØ mäc ë nh÷ng vïng hoang d· 	0
+B¹ch TuyÕt B¸ch Hîp	4	232	\spr\item\questkey\taskobj103.spr	41	1	1	Lo¹i B¸ch hîp hoa ®Æc thï, rÊt hiÕm thÊy	0
+Giá c¬m 	4	233	\spr\item\questkey\taskobj154.spr	41	1	1	Lo¹i giá tre dïng ®ùng thøc ¨n	0
+NhÉn cña A Kinh, 	4	234	\spr\item\equip\ring\obj-ring09.spr	41	1	1	Lo¹i nhÉn ®eo b»ng M· N·o, ®iªu kh¶m rÊt tinh tÕ 	0
+Th­ v« danh 	4	235	\spr\item\questkey\taskobj091.spr	41	1	1	Th­ cña "V« Danh l·o gi¶" göi cho ch­ëng m«n hiÖn thêi	0
+Thİch s¸t mËt hµm	4	236	\spr\item\questkey\taskobj091.spr	41	1	1	MËt hµm thİch s¸t Tr­¬ng TuÊn cña Kim quèc	0
+Thóy Yªn CÊm ®Şa ph¸ch 	4	237	\spr\item\questkey\taskobj007.spr	41	1	1	VËt phÈm nhiÖm vô  	0
+Lam Thñy Tinh	4	238	\spr\item\questkey\baoshi_zhuanxu.spr	333	1	1	Lo¹i Thñy tinh cã thÓ lµm thay ®æi ngò hµnh cña trang bŞ 	1
+Tö Thñy Tinh	4	239	\spr\item\questkey\baoshi_xingtian.spr	333	1	1	Lo¹i Thñy tinh cã thÓ n©ng cÊp trang bŞ.  	1
+Lôc Thñy Tinh	4	240	\spr\item\questkey\baoshi_nvwa.spr	333	1	1	Lo¹i thñy tinh cã thÓ gióp thay ®æi c¸c thuéc tİnh cña trang bŞ 	1
+Hoa s¬n  Anh hïng lÖnh	4	241	\spr\item\questkey\taskobj126.spr	41	1	1	Tİn vËt ®Ó tham gia Hoa s¬n  Anh Hïng héi 	0
+Bøc hµm th­ v« dông	4	242	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	243	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn Ph­îng T­êng	0
+DŞch tr¹m hµm th­ 	4	244	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn Thµnh §«	0
+DŞch tr¹m hµm th­ 	4	245	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn §¹i Lı 	0
+DŞch tr¹m hµm th­ 	4	246	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn BiÖn Kinh 	0
+DŞch tr¹m hµm th­ 	4	247	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn T­¬ng D­¬ng 	0
+DŞch tr¹m hµm th­ 	4	248	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ L©m An ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	249	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	250	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	251	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	252	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn L©m An 	0
+Bøc hµm th­ v« dông	4	253	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	254	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn Thµnh §«	0
+DŞch tr¹m hµm th­ 	4	255	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn §¹i Lı 	0
+DŞch tr¹m hµm th­ 	4	256	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn BiÖn Kinh 	0
+DŞch tr¹m hµm th­ 	4	257	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn T­¬ng D­¬ng 	0
+DŞch tr¹m hµm th­ 	4	258	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Ph­îng T­êng ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	259	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	260	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	261	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	262	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Thµnh §« ®­a ®Õn L©m An 	0
+DŞch tr¹m hµm th­ 	4	263	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Thµnh §« ®­a ®Õn Ph­îng T­êng	0
+Bøc hµm th­ v« dông	4	264	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	265	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Thµnh §« ®­a ®Õn §¹i Lı 	0
+DŞch tr¹m hµm th­ 	4	266	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Thµnh §« ®­a ®Õn BiÖn Kinh 	0
+DŞch tr¹m hµm th­ 	4	267	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ Thµnh §« ®­a ®Õn T­¬ng D­¬ng 	0
+DŞch tr¹m hµm th­ 	4	268	\spr\item\questkey\taskobj075.spr	41	1	1	tõ Thµnh §« ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	269	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	270	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	271	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	272	\spr\item\questkey\taskobj075.spr	41	1	1	tõ §¹i Lı ®­a ®Õn L©m An 	0
+DŞch tr¹m hµm th­ 	4	273	\spr\item\questkey\taskobj075.spr	41	1	1	tõ §¹i Lı ®­a ®Õn Ph­îng T­êng	0
+DŞch tr¹m hµm th­ 	4	274	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ §¹i Lı ®­a ®Õn Thµnh §«	0
+Bøc hµm th­ v« dông	4	275	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	276	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ §¹i Lı ®­a ®Õn BiÖn Kinh 	0
+DŞch tr¹m hµm th­ 	4	277	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ §¹i Lı ®­a ®Õn T­¬ng D­¬ng 	0
+DŞch tr¹m hµm th­ 	4	278	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ §¹i Lı ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	279	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	280	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	281	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	282	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn L©m An 	0
+DŞch tr¹m hµm th­ 	4	283	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn Ph­îng T­êng	0
+DŞch tr¹m hµm th­ 	4	284	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn Thµnh §«	0
+DŞch tr¹m hµm th­ 	4	285	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn §¹i Lı 	0
+Bøc hµm th­ v« dông	4	286	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	287	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn T­¬ng D­¬ng 	0
+DŞch tr¹m hµm th­ 	4	288	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ BiÖn Kinh ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	289	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	290	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	291	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	292	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ T­¬ng D­¬ng ®­a ®Õn L©m An 	0
+DŞch tr¹m hµm th­ 	4	293	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ T­¬ng D­¬ng ®­a ®Õn Ph­îng T­êng	0
+DŞch tr¹m hµm th­ 	4	294	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ T­¬ng D­¬ng ®­a ®Õn Thµnh §«	0
+DŞch tr¹m hµm th­ 	4	295	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ T­¬ng D­¬ng ®­a ®Õn §¹i Lı 	0
+DŞch tr¹m hµm th­ 	4	296	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ T­¬ng D­¬ng ®­a ®Õn BiÖn Kinh 	0
+Bøc hµm th­ v« dông	4	297	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	298	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­  tõ T­¬ng D­¬ng ®­a ®Õn D­¬ng Ch©u 	0
+Bøc hµm th­ v« dông	4	299	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	300	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	301	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+DŞch tr¹m hµm th­ 	4	302	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn L©m An 	0
+DŞch tr¹m hµm th­ 	4	303	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn Ph­îng T­êng	0
+DŞch tr¹m hµm th­ 	4	304	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn Thµnh §«	0
+DŞch tr¹m hµm th­ 	4	305	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn §¹i Lı 	0
+DŞch tr¹m hµm th­ 	4	306	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn BiÖn Kinh 	0
+DŞch tr¹m hµm th­ 	4	307	\spr\item\questkey\taskobj075.spr	41	1	1	Hµm th­ tõ D­¬ng Ch©u ®­a ®Õn T­¬ng D­¬ng 	0
+Bøc hµm th­ v« dông	4	308	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	309	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	310	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	311	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	312	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	313	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	314	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	315	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	316	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	317	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	318	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	319	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	320	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	321	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	322	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	323	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	324	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	325	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	326	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	327	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	328	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	329	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	330	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	331	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	332	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	333	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	334	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	335	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	336	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	337	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	338	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	339	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	340	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Bøc hµm th­ v« dông	4	341	\spr\item\questkey\taskobj075.spr	41	1	1	Bøc hµm th­ v« dông	0
+Ng©n Nguyªn b¶o	4	342	\spr\item\questkey\obj_item_cards.spr	339	1	1	Cã thÓ ®æi ra giê ch¬i hoÆc tiÒn §ång	1
+Kim Nguyªn b¶o	4	343	\spr\item\questkey\obj_item_cardg.spr	340	1	1	B¶o vËt rÊt hiÖu dông trong VLTK	1

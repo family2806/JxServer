@@ -1,72 +1,70 @@
 Name	Type	Genre	Detail	Particular	Serise	Level	Param1	Param2	Param3	Param4	Param5	Param6	Proba	Costly	Msg	Log
-1¼¶Ðþ¾§	1	6	1	147	0	1	0						226680	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÃÎÁúÖ®½ðË¿ÕýºìôÂôÄ	2	2	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-·üÄ§Ö®×Ï½ð¹÷	2	6	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ËÄ¿ÕÖ®½µÄ§½äµ¶	2	11	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-º³ÌìÖ®½ð»·´óÑÛÉñ´¸	2	16	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-¼ÌÒµÖ®±¼À××êÁúÇ¹	2	21	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÓùÁúÖ®ÁÁÒø±¦µ¶	2	26	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÎÞ¼äÖ®ÒÐÌì½£	2	31	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÎÞ÷ÊÖ®Ï´ÏóÓñ¿Û	2	39	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÎÞ³¾Ö®ÇåÐÄÏòÉÆÖé	2	42	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÆÜ»ËÖ®·ïÒÇµ¶	2	46	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-±Ìº£Ö®Ô§ÑìÁ¬»·µ¶	2	51	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÓÄëÊÖ®Ä«ÖëÈíÂÄ	2	60	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ú¤»ÃÖ®Ð°É²¶¾ÈÐ	2	61	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Öä¸¿Ö®ÃðÀ×¾±·û	2	67	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-±ùº®Ö®µ¯Ö¸·Éµ¶	2	71	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì¹âÖ®»¨ÓêÂþÌì	2	76	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-É­»ÄÖ®·ÉÐÇ¶á»ê	2	81	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-µØÆÇÖ®ºÚÑæ³åÌìÁ´	2	87	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Í¬³ðÖ®½µÁúØ¤ÒÂ	2	92	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-µÐâéÖ®ÂÌÓñÕÈ	2	96	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹	2	101	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ä§»ÍÖ®½ð¼×¿ø	2	106	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ä§ÊÈÖ®É½º£·ÉºèÂÄ	2	115	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÁèÔÀÖ®ÎÞ¼«ÐþÓñÅå	2	119	0	0	0	1	0						30	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-¼°·áÖ®ÕæÎä½£	2	121	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ëª¾§Ö®Ç§Äêº®Ìú	2	126	0	0	0	1	0						10	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-À×ñ·Ö®ÌìµØ»¤·û	2	132	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Îí»ÃÖ®±±Ú¤µÀ¹Ú	2	136	0	0	0	1	0						50	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®ÁúÌ§Í·	2	168	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®°×ÁúÏ¢	2	169	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®ÕòÚ¤Ö®Á´	2	170	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®¾ÅÏÖÖ®Ö¸	2	171	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®ÓñåÐÒ£	2	172	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®»Æ½ðÁÛ	2	173	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®ÅÍÁú¹å	2	174	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®Áú¿ÞÇ§Àï	2	175	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ìì»ÍÁúÆ÷Ö®Å­ÁúÖ®Í«	2	176	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®ÇàÑô¿ø	2	177	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®÷è÷ëÑª	2	178	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®åªÖ®Á´¹â	2	179	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®¹«½÷ÈýÌ¾	2	180	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®¶á»êÓñ´ø	2	181	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®ºóôàÒý¹­	2	182	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®À¼Í¤Óñ	2	183	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®Ç§Àï²ÝÉÏ·É	2	184	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-½ð·ãÖ®Í­È¸´ºÉî	2	185	0	0	0	1	0						5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÎäÁÖÃØ¼®	1	6	1	26	0	1	0						1000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-Ï´Ëè¾­	1	6	1	22	0	1	0						1000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Ìì²Ï»¤Íó	12	0	8	1	0	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Ìì²Ï»¤Íó	12	0	8	1	1	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Ìì²Ï»¤Íó	12	0	8	1	2	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Ìì²Ï»¤Íó	12	0	8	1	3	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Ìì²Ï»¤Íó	12	0	8	1	4	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Áú·ïÑªÓñïí	12	0	8	0	0	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Áú·ïÑªÓñïí	12	0	8	0	1	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Áú·ïÑªÓñïí	12	0	8	0	2	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Áú·ïÑªÓñïí	12	0	8	0	3	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-6¿×Áú·ïÑªÓñïí	12	0	8	0	4	10	-1	-1	-1	-1	-1	-1	5000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-×ÏË®¾§	1	4	239	1	0	1	0						5000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-À¼Ë®¾§	1	4	238	1	0	1	0						5000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÂÌË®¾§	1	4	240	1	0	1	0						5000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÐÉºì±¦Ê¯	1	4	353	1	0	1	0						10000	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-5¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	6	0						25580	1	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-4¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	5	0						50000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-3¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	4	0						100000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-3¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	1	0						30000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-2¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	1	0						50000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-1¼¶Ðþ¾§¿óÊ¯	1	6	1	147	0	1	0						150000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-ÌìÉ½ÓñÂ¶	1	6	1	72	0	1	0						100000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
-°Ù¹ûÂ¶	1	6	1	73	0	1	0						100000	0	<player>´ò¿ªÉñÃØ´óºì°ü£¬¾ªÏ²µØ·¢ÏÖÒ»¸ö<name>¡£	1
+Tiªn Th¶o Lé 	1	6	1	71	0	1	0						200000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+§Þnh Quèc Thanh Sa Tr­êng Sam	2	159	0	0	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+§Þnh Quèc ¤ Sa Ph¸t Qu¸n	2	160	0	0	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+§Þnh Quèc XÝch Quyªn NhuyÔn Ngoa	2	161	0	0	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+§Þnh Quèc Tö §»ng Hé uyÓn	2	162	0	0	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+§Þnh Quèc Ng©n Tµm Yªu ®¸i	2	163	0	0	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+An Bang B¨ng Tinh Th¹ch H¹ng Liªn	2	164	0	0	0	1	0						500	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+An Bang Cóc Hoa Th¹ch ChØ hoµn	2	165	0	0	0	1	0						500	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+An Bang §iÒn Hoµng Th¹ch Ngäc Béi	2	166	0	0	0	1	0						500	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+An Bang Kª HuyÕt Th¹ch Giíi ChØ 	2	167	0	0	0	1	0						500	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Long §µi	2	168	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long B¹ch Long Tøc	2	169	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long TrÊn Minh Liªn	2	170	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Cöu HiÖn chØ 	2	171	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Ngäc Tiªu Diªu	2	172	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Hoµng Kim L©n	2	173	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Bµn Long c«i	2	174	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Long Khèc Thiªn Lý 	2	175	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn Hoµng Long Né Long §ång	2	176	0	0	0	1	0						2000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong Thanh D­¬ng Kh«i	2	177	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong Kú L©n HuyÕt	2	178	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong Tr¹c Liªn Quang	2	179	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong C«ng CÈn Tam Th¸n	2	180	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong §o¹t Hån Ngäc ®¸i	2	181	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong HËu NghÖ dÉn cung	2	182	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong Lan §×nh Ngäc	2	183	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong Thiªn Lý Th¶o Th­îng Phi	2	184	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Kim Phong §ång T­íc Xu©n Th©m	2	185	0	0	0	1	0						5000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Vâ L©m MËt TÞch	1	6	1	26	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+TÈy Tñy Kinh	1	6	1	22	0	1	0						1000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Tö Thñy Tinh	1	4	239	1	0	1	0						6000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Lam Thñy Tinh	1	4	238	1	0	1	0						6000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Lôc Thñy Tinh	1	4	240	1	0	1	0						6000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Tinh Hång B¶o Th¹ch	1	4	353	1	0	1	0						10000	1	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phóc Duyªn Lé (§¹i) 	1	6	1	124	0	1	0						160000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phóc Duyªn Lé (Trung) 	1	6	1	123	0	1	0						200000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phóc Duyªn Lé (TiÓu) 	1	6	1	122	0	1	0						100000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn s¬n  B¶o Lé 	1	6	1	72	0	1	0						121400	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+B¸ch Qu¶ Lé 	1	6	1	73	0	1	0						100000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+ThiÕt La H¸n	1	6	1	23	0	1	0						10000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phi Phong	1	6	1	15	0	1	0						3000	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Tô TiÔn thuËt. B¹o Vò Lª Hoa	1	6	1	27	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+H·m TÜnh thuËt.Lo¹n Hoµn KÝch	1	6	1	28	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Th¸i Cùc QuyÒn Phæ. QuyÓn 3	1	6	1	33	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Th¸i Cùc KiÕm Phæ. QuyÓn 2	1	6	1	34	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+V©n Long KÝch. M©u ph¸p	1	6	1	35	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+L­u Tinh. §ao ph¸p	1	6	1	36	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1	1	6	1	37	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn V­¬ng Th­¬ng ph¸p. QuyÓn 2	1	6	1	38	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thiªn V­¬ng §ao ph¸p.QuyÓn 3	1	6	1	39	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thóy Yªn §ao ph¸p	1	6	1	40	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Thóy Yªn Song ®ao	1	6	1	41	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+DiÖt KiÕm MËt TÞch	1	6	1	42	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Nga Mi  PhËt Quang Ch­ëng MËt TÞch	1	6	1	43	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh	1	6	1	45	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phi Tiªu thuËt. Cöu Cung Phi Tinh	1	6	1	46	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngò §éc Ch­ëng Ph¸p. QuyÓn 1	1	6	1	47	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngò §éc §ao ph¸p. QuyÓn 2	1	6	1	48	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngò §éc NhiÕp T©m thuËt. QuyÓn 3	1	6	1	49	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngù Phong thuËt	1	6	1	50	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngù L«i thuËt	1	6	1	51	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Ngù T©m thuËt	1	6	1	52	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+NhiÕp Hån. Chó thuËt	1	6	1	53	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+C¸i Bang Ch­ëng Ph¸p	1	6	1	54	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+C¸i Bang C«n ph¸p	1	6	1	55	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1	1	6	1	56	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+ThiÕu L©m C«n ph¸p. QuyÓn 2	1	6	1	57	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+ThiÕu L©m §ao ph¸p. QuyÓn 3	1	6	1	58	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1
+Phæ §é MËt TÞch	1	6	1	59	0	1	0						200	0	<player> më ThÇn bÝ §¹i Hång Bao, nhËn ®­îc 1 <name>.	1

@@ -1,158 +1,158 @@
 ParentTaskId	TaskId	MinLevel	MaxLevel	Value	Text	Title	Desc
-1001	1050	20	30	10	<color=red>·ïÏè<color>µÄ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>¸æËßÄã×î½ü½­ºþÉÏ³öÏÖÁËÒ»Ì×±¦¼×¡ª<color=red>Ìì»ÍÁúÆ÷<color>£¬»ñµÃÕâÌ×îø¼×µÄÈË£¬½«ÓµÓÐÎÞÉÏÍþÁ¦£¬³ÉÎª²»ÀÏ²»ËÀµÄÕ½Éñ¡£ÌìÁúËÂÓÐ¸öÒ»¸ö<color=red>³ÕÉ®<color>£¬ËûÖªµÀÐí¶à³£ÈË²»ÖªµÀµÄÃØÃÜ£¬Ò²ÐíËû»áÖªµÀÓÐ¹ØÌì»ÍÁúÆ÷µÄÏûÏ¢¡£	ÁúÆ÷³õÏÖ	½­ºþÉÏ³öÏÖÁËÒ»Ì×¾øÊÀîø¼×¡ª¡ªÌì»ÍÁúÆ÷¡£´«Ëµ»ñµÃÕâÌ×îø¼×µÄÈË£¬½«ÓµÓÐÎÞÉÏÍþÁ¦£¬³ÉÎª²»ÀÏ²»ËÀµÄÕ½Éñ¡£°ÁÔÆ×ÚÈÃÄúÈ¥´òÌ½ÓÐ¹ØÌì»ÍÁúÆ÷µÄÏûÏ¢¡£Ô­À´Ìì»ÍÁúÆ÷¾¹È»ÓëÔÀ·É½«¾üÖ®ËÀÓÐ×ÅÃÜÇÐµÄ¹ØÏµ¡­
-1001	1050	20	30	20	µ½´óÀí<color=red>ÌìÁúËÂ<color>ÕÒ³ÕÉ®<color=red>£¨167£¬176£©<color>´òÌý»ÍÁúÆ÷µÄÏûÏ¢¡£		
-1001	1050	20	30	30	Óë³ÕÉ®¶Ô»°¡£³ÕÉ®ÊÕ¼¯Î§ÆåÍ¼Æ×³É³Õ£¬ÒªµÃµ½<color=red>Ìì²ÐµØÈ±Í¼Æ×<color>£¬²Å¿Ï¸æËßÄãÁ÷´«½­ºþÉÏÌì»ÍÁúÆ÷µÄ¾ßÌåÀ´Àú¡£		
-1001	1050	20	30	40	ÔÚ<color=red>ÌìÁúËÂÍâ<color>É±²Ø±¦¿Í£¬ÄÃµ½Îå±¾<color=red>Ìì²ÐµØÈ±Í¼Æ×<color>¡£		
-1001	1050	20	30	50	½«Îå±¾Ìì²ÐµØÈ±Í¼Æ×½»Óë³ÕÉ®ºó£¬²Å·¢ÏÖÔ­À´´ËÈËÊÇ¼Ù°ç³ÕÉ®µÄ´åÃñ¡£		
-1001	1050	20	30	60	ÈÎÎñÍê³É£¡ÎÞÄÎÖ®ÏÂ£¬Ö»ºÃ»Ø<color=red>·ïÏè<color>ÕÒ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>¡£		
-1001	1050	20	30	70	°ÁÔÆ×ÚÏëÆðËûµÄÀÏÅóÓÑ<color=red>¼ýÍ·<color>ÔÚÈô¸ÉÄêÇ°ÔøÌáÆð¹ýÓÐ¹Ø»ÍÁúÆ÷µÄÊÂÇé¡£		
-1001	1050	20	30	80	µ½<color=red>»ªÉ½ÅÉ<color>ÕÒÒþ¾ÓÁËÊ®ÄêµÄ¼ýÍ·<color=red>£¨155£¬204£©<color>£¬ÏòËû´òÌý»ÍÁúÆ÷µÄÏûÏ¢¡£		
-1001	1050	20	30	90	¼ýÍ·Ëµ»ÍÁúÆ÷Óë<color=red>ÔÀ¼Ò¾ü<color>ÓÐ¹Ø¡£µ±ÄêÔÀ·É½«¾ü²¢Ã»ÓÐËÀÔÚ·ç²¨Í¤£¬Ëû±»½­ºþÏÀÒåÖÐÈË½â¾ÈÁË³öÀ´¡£²»¹ýÔÚÒþ¾Óºó²»¾Ã£¬È´±»<color=red>ÉñÃØ´Ì¿Í<color>´ÌÉ±ÉíÍö¡£		
-1001	1050	20	30	100	È¥ÕÒ<color=red>·ïÏè<color>µÄá¯ÐÛ<color=red>£¨192£¬201£©<color>£¬ËûÊÇÔÀ·É½«¾üµ±ÄêÊÌÎÀµÄºó´ú£¬Ò²ÐíÖªµÀÏûÏ¢¡£		
-1001	1050	20	30	110	á¯ÐÛÌý¹ýÄãµÄ»°£¬¸æËßÄãÔÀ·É½«¾üµ±ÄêÉÏÕóÈ·ÊµÓÐÒ»Ì×·Ç³£ÉñÆæµÄ¿ø¼×£¬²»¹ýºóÀ´Ëæ×ÅÔÀ·ÉµÄÀëÆæ±»´Ì£¬¿ø¼×Ò²²»ÖªËù×ÙÁË¡£²»¹ýËû¶àÄê²éÌ½£¬ÖÕÓÚ·¢ÏÖÒ»¸ö½Ð<color=red>ÅËÈçÁú<color>µÄÈË£¬ÊÇÕâ¸ö¼Ò»ï´ÌÉ±ÁËÔÀ·É½«¾ü¡£		
-1001	1050	20	30	120	ÈÎÎñÍê³É£¡ÔÚ<color=red>·ïÏè<color>³ÇÍâÕÒµ½ÅËÈçÁú<color=red>£¨220£¬190£©<color>£¬ÎªÔÀ·É½«¾ü±¨³ð¡£É±ËÀÅËÈçÁúºóµÃÖª£¬ÆäÊµµ±Äêº¦ËÀ½«¾üµÄÁíÓÐÆäÈË£¬Ëû²»¹ýÖ»ÊÇ¸öÐ¡à¶ÂÞ£¬»°Ã»ËµÍê¾ÍËÀÁË...ÔÚÌì»ÍÁúÆ÷±³ºóÓÐ¸ü´óµÄÒõÄ±¡­		
-1001	1050	20	30	130	ÄãÉ±µôÁËÅËÈçÁú£¬¿ÉÒÔ»ØÈ¥´ð¸´°ÁÔÆ×ÚÁË¡£		
-1001	1050	20	30	140	¸æËß<color=red>·ïÏè<color>µÄ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>ÄãÒÑ¾­É±ËÀÁËÅËÈçÁú¡£		
-1001	1050	20	30	1000	ÈÎÎñÍê³É£¡¿ÉÏò°ÁÔÆ×ÚÁìÈ¡¸Ã½×¶Î´ó½±¡£		
-1001	1051	30	40	10	´óËÎÃû½³<color=red>Ä½ÈÝ²»î¿<color>ÕýÔÚÁÙ°²ÎªËÎÖ÷ºØÊÙÖýÔìÒ»Ì×±¦¼×£¬ËûÐèÒª<color=red>½ðÏµµÄ°µÊôÐÔ¿óÊ¯<color>Ò»¿Å¡£	Ãû½³Ö®Ê¯	À´×ÔÁÙ°²µÄÌØÊâÈÎÎñ£¬Ãû½³ÈËÄ½ÈÝ²»î¿ËÆºõÓöµ½ÁËÌØÊâµÄÂé·³£¬°ÁÔÆ×ÚµÄÉñÉ«¼äÆÄÓÐÓÇÓô£¬Ò»Î»½³Ê¦ËÆºõÎÞ·¨ÁîËûÈç´Ë¶¯ÈÝ£¬¾¿¾¹Õâ¸öÈÎÎñÀï£¬Òþ²ØÁËÊ²Ã´ÃØÃÜ£¿
-1001	1051	30	40	20	°ÁÔÆ×ÚÈÃÄãÈ¥³É¶¼ÕÒÒ»Ãû½ÐºØÀ¼Ö¥<color=red>£¨385£¬324£©<color>µÄÅ®×Ó¡£ËýÔøÊÇÄ½ÈÝ²»î¿µÄ¹ØÃÅµÜ×Ó£¬ÊÖÉÏÓÐÁ½¿Å´ËÀà±¦Ê¯¡£		
-1001	1051	30	40	30	ºØÀ¼Ö¥Ëµµ±Äê³É»éÀë¿ªÀÏ¼ÒÊ±£¬ÕâÊ¯Í·±ã²»¼ûÁË×ÙÓ°¡£Ò²ÐíÊÇÒÅÂäÔÚ½­½ò´å£¬Äã¿ÉÒÔÈ¥ÎÊÎÊ´åÀïµÄ<color=red>ÎâÀÏÌ«Ì«<color>£¬²¢¸øÄãÒ»¼þ<color=red>Ò»¿××°±¸<color>£¬Öö¸ÀËµÁô×ÅÕâÉí¿ø¼×£¬Ò»µ©ÓÐ<color=red>ÊôÐÔ±¦Ê¯<color>£¬¿ÉÄÜ»á·¢ÉúÐ©Ææ¹ÖµÄÊÂÇé¡£		
-1001	1051	30	40	40	ÈÎÎñÍê³É£¡µ½<color=red>½­½ò´å<color>ÏçÎâÀÏÌ«<color=red>£¨432£¬387£©<color>´òÌýÓÐ¹Ø±¦Ê¯µÄÏÂÂä¡£		
-1001	1051	30	40	50	ÎâÀÏÌ«Ì«ËÆºõÉíÈ¾¹Ö²¡£¬ÎÞ·¨Ëµ»°¡£		
-1001	1051	30	40	60	Äã¾ö¶¨»Ø<color=red>·ïÏè<color>ÕÒ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>ÉÌÁ¿ÏÂÒ»²½µÄÐÐ¶¯¡£		
-1001	1051	30	40	70	°ÁÔÆ×ÚËµËû°ïÄ½ÈÝ²»î¿Õâ¸öÃ¦£¬ÊÇÒòÎªµ±ÄêËûÔøÖýÔìÁËÒ»°Ñ·æÀûÎÞ±ÈµÄØ°Ê×£¬Õâ°ÑØ°Ê×ºÜÓÐ¿ÉÄÜ¾ÍÊÇµ±ÄêÐÐ´ÌÔÀ·ÉÖ®ÈËÒÅÁôÏÂÀ´µÄ¡£¿ÉÊÇ¼¸Ê®ÄêÀ´Ä½ÈÝ²»î¿Ò»Ö±±Õ¿Ú²»Ì¸£¬Èç¹ûÕÒµ½¿óÊ¯£¬Ò²ÐíÄÜÈÃËû¿ª¿Ú¡£ÏÖÔÚÕâÑù¿´À´£¬ÏÔÈ»ÓÐÈËÔÚ±³ºó°µÖÐ¿ØÖÆ×ÅÒ»ÇÐ£¬×èÖ¹ÄãÃÇ²éµ½ÊÂÊµÕæÏà¡£		
-1001	1051	30	40	80	ÔÆ×Ú»³ÒÉÎâÀÏÌ«Ì«ÊÇ±»ÈË¹ÊÒâÏÂ¶¾¡£ËûÈÃÄãÈ¥<color=red>·üÅ£É½<color>É±50Í·ÇàÀÇ£¬È¡³öÀÇ¹ÇËèÎªÆäÒ½ÖÎ¡£		
-1001	1051	30	40	90	É±ËÀ50Í·ÇàÀÇºó£¬»Øµ½°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>´¦¡£		
-1001	1051	30	40	100	ÈÎÎñÍê³É£¡°ÁÔÆ×Ú¸æËßÄã£¬ºÃÁÔÊÖ<color=red>¹¨°¢Å£<color>»áÓÃÀÇ¹ÇÅÝÖÆÒ©¾Æ£¬ÕâÖÖÒ©¾ÆÊæ½î»îÑª¿ÉÒÔÖÎÎâÀÏÌ«µÄ²¡¡£³ö·¢Ç°£¬°ÁÔÆ×Ú¸øÁËÄãÒ»¿ÅÆæ¹ÖµÄ<color=red>¸ÅÂÊ±¦Ê¯<color>£¬Áô×ÅËü£¬ÒÔºó»áÓÐÒâÏë²»µ½µÄ×÷ÓÃ¡£		
-1001	1051	30	40	110	ÔÚ<color=red>ÏåÑô<color>ÕÒµ½¹¨°¢Å£<color=red>£¨193£¬199£©<color>¡£¹¨°¢Å£ÕýÎª·üÅ£É½ÉÏ³öÃ»µÄ¶ñÀÇ<color=red>(224£¬196)<color>ÉËÄÔ½î£¬Äã¾ö¶¨°ïËû½â¾öÕâ¸öÂé·³¡£		
-1001	1051	30	40	120	À´µ½<color=red>·üÅ£É½<color=red>£¬É±µô¶ñÀÇ<color=red>£¨223£¬196£©<color>¡£		
-1001	1051	30	40	130	»Øµ½<color=red>ÏåÑô<color>£¬¸æËß¹¨°¢Å£ÒÑ¾­É±µôÁË¶ñÀÇ¡£		
-1001	1051	30	40	140	¹¨°¢Å£½«ÅÝÖÆºÃµÄ<color=red>ÀÇ¹Ç¾Æ<color>½»¸øÄã¡£		
-1001	1051	30	40	150	µ½<color=red>½­½ò´å<color>ÕÒµ½ÒÑ¾­ÉíÖØ¾ç¶¾µÄÎâÀÏÌ«Ì«<color=red>£¨432£¬387£©<color>¡£		
-1001	1051	30	40	160	½«ÀÇ¹Ç¾Æ¸øÎâÀÏÌ«·þÓÃ¡£		
-1001	1051	30	40	170	ÎâÀÏÌ«Ì«ÒûÏÂÒ©¾ÆºóÖÕÓÚ¿ÉÒÔËµ»°ÁË£¬Ô­À´ËýÒ»Ö±°ïºØÀ¼Ö®±£´æ×ÅÄÇ<color=red>Á½¿ÅÊôÐÔ±¦Ê¯<color>¡£Äã¿ÉÒÔ»ØÈ¥ÕÒ°ÁÔÆ×Ú¸´ÃüÁË¡£		
-1001	1051	30	40	180	µÃµ½±¦Ê¯ºó£¬¿ÉÒÔµ½<color=red>·ïÏè<color>Ïò°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>¸´ÃüÁË¡£		
-1001	1051	30	40	1000	ÈÎÎñÍê³É£¡°ÁÔÆ×Ú½«ÆäÖÐÒ»¿ÅÊôÐÔ¿óÊ¯ËÍ¸øÁËÄã¡£Äã¿ÉÒÔ´ø×ÅµÃµ½µÄ´ø¿×<color=red>îø¼×<color>£¬<color=red>¸ÅÂÊ±¦Ê¯<color>£¬ºÍÕâ¿Å<color=red>ÊôÐÔ¿óÊ¯<color>£¬È¥ÕÒ<color=red>ÁÙ°²<color>ÉñÃØÌú½³£¬ÓÐ¿ÉÄÜºÏ³öÒ»¼þºÃµÄ×°±¸¡£		
-1001	1052	40	50	10	°ÁÔÆ×Ú¸æËßÄãÎä¼¼±ØÐëÓëÈË¶·²ÅÄÜ²»¶ÏÌá¸ß£¬²¢´«ÊÚÁËÄãÒ»Ð©×÷Õ½Ê±µÄÎä¹¦¼¼ÇÉÒÔ¼°ÐÄÀíÕ½Êõ¡£	¼ÙÈëÁÙÔ¨	°ÁÔÆ×ÚÄªÃûÆäÃîµÄÈÃÄãÈ¥±ÈÎä³¡½øÐÐ±ÈÈü£¬ÄÇÊÇ¾öÉúËÀµÄµØ·½£¬ÔÚÏÊÑªºÍµ¶½£±³ºó£¬ÓÐÉÈ°µÃÅÕýÇÄÈ»´ò¿ª¡£
-1001	1052	40	50	20	È¥<color=red>±ÈÎä³¡<color>£¨ÑïÖÝ/³É¶¼/ÏåÑô£©´òÒ»³¡ÀÞÌ¨Èü£¬Êµ¼Ê¸ÐÊÜÕæÕýµÄÐ×ÏÕ¡£		
-1001	1052	40	50	30	pk»ØÀ´£¬°Á¸æËßÄã£¬Ïë³öÈËÍ·µØ£¬ÓÐËù×÷Îª£¬Î¬»¤½­ºþÀïÒ»µãÕýÆø¾ÍÐèÒª²»¶ÏÐÞÁ·¡£ËûÒÑ´ÓÄ½ÈÝ²»î¿¿ÚÖÐµÃÖª£¬ÔÀ½«¾ü±»´ÌÉ±Ò»ÊÂ£¬ÓëÎäÁÖÖÐÁ¢ÃÅÅÉ<color=red>ÁÙÔ¨ÑÂ<color>ÓÐÄª´ó¹ØÏµ¡£ÕâÊÇÒ»¸ö²»ÎÊÊÇ·ÇÖ»¿´Ç®²ÆµÄ°µÉ±×éÖ¯¡£Ïë°ì·¨»ìµ½Õâ¸ö×éÖ¯Àï£¬´òÌýÇå³þÇé¿ö¡£		
-1001	1052	40	50	40	ÈÎÎñÍê³É£¡°ÁÔÆ×ÚÈÃÄãÈ¥<color=red>ÑïÖÝ<color>±ÈÎä³¡ÍâÕÒÒ»¸ö»ì»ì<color=red>£¨231£¬190£©<color>£¬Í¨¹ýËû´òÈëµ½É±ÊÖ×éÖ¯ÁÙÔ¨ÑÂÄÚ²¿£¬²é³öµ±Äê´ÌÉ±ÔÀÔªË§µÄÖ÷Ê¹ÈË¡£		
-1001	1052	40	50	50	À´±ÈÎä³¡ÍâÕÒµ½»ì»ì<color=red>£¨231£¬190£©<color>£¬ËûÒª¿´Ò»¿´ÄãµÄÊµÁ¦¡£		
-1001	1052	40	50	60	½øÈë<color=red>±ÈÎä³¡<color>´òÓ®Ò»³¡±ÈÈü¡£		
-1001	1052	40	50	70	´Ó±ÈÎä³¡³öÀ´ºóÓë»ì»ì<color=red>£¨231£¬190£©<color>¶Ô»°£¬µÃÖªÔøÓÐÈËÔÚ×î¸ßµÈ¼¶µÄpkÈüÖÐÁ¬Õ½ÉÏ°Ù³¡¶ø²»°Ü£¬ËûºÍÄã´ò¶ÄÄãÕÒ²»µ½<color=red>ÓåÏæ½ò<color>£¬¼´Ê¹ÕÒµ½Ò²ÎÞ·¨Õ½Ê¤ÓåÏæ½ò¡£		
-1001	1052	40	50	80	ÈÎÎñÍê³É£¡ÔÚÈ¥Ö®Ç°£¬Äã¾ö¶¨ÏÈ»ØÈ¥ÎÊÒ»ÎÊÔÚ<color=red>·ïÏè<color>µÄ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>¡£		
-1001	1052	40	50	90	°ÁÔÆ×Ú¸æËßÄã£¬<color=red>ÓåÏæ½ò<color>ºÜÓÐ¿ÉÄÜÒþ²ØÔÚ<color=red>³É¶¼<color>³ÇÍâ£¬Ëû²»ÊÇ¸ö»µÈË£¬¿ÉÒÔÁôËûÒ»Ãü¡£		
-1001	1052	40	50	100	ÔÚ<color=red>³É¶¼<color>³ÇÍâÕÒµ½ÓåÏæ½ò<color=red>£¨421£¬304£©<color>¡£		
-1001	1052	40	50	110	Ò»³¡¶ñÕ½Ö®ºó£¬½«ÓåÏæ½ò´ò°Ü¡£Äã¿ÉÒÔ»ØÈ¥·ïÏèÕÒ°ÁÔÆ×ÚÁË¡£		
-1001	1052	40	50	120	»Ø<color=red>·ïÏè<color>ÕÒ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>¸´Ãü¡£		
-1001	1052	40	50	1000	ÈÎÎñÍê³É£¡µÃµ½½×¶Î½±Àø¡£		
-1001	1053	50	60	10	<color=red>ÑïÖÝ<color>»ì»ì<color=red>£¨231£¬190£©<color>¸æËßÄã£¬×éÖ¯ÖÐÈ·ÊµÓÐÈËºÅ³Æ×Ô¼ºÐÐ´ÌÁËÔÀ·É£¬²»¹ýÕâ¸öÈËÒÑ²Î¼ÓËÎ½ð´óÕ½¡£ÐèÒªÄãÈ¥<color=red>ËÎ½ðÕ½³¡<color>²éÕÒ´ËÈËµÄÏÂÂä¡£	É±ÊÖ¼´·ç	ÖÕÓÚµ½´ïÁËÂ·³ÌÖÐ¶ÌÔÝµÄÖÕµã£¬¿ÉÒÔ²é³öµ±Äê´ÌÉ±ÔÀÔªË§µÄ×ï¿ýÁË°É£¬µ±Ò»ÇÐ½áÊø£¬Ò²Ðí¶¼¿ÉÒÔËÉ¿ÚÆø£¬È»¶ø£¬ÊÂÇéÕæµÄÄÜÈç´Ë¼òµ¥£¿µÈ´ý×ÅÄãµÄ£¬ËÆºõÊÇ¼èÏÕµÄ¿ªÊ¼£¬¶ø·ÇÖÕÖ¹£¬ÆðÂë£¬µÃÏÈ´ÓÇ§ÍòÈËµÄÕ½³¡ÉÏ»îÏÂÀ´°É¡£
-1001	1053	50	60	20	È¥ËÎ½ðÕ½³¡²Î¼ÓÁ½¹ú¼äµÄ´óÕ½£¬²¢Òª»ñµÃ<color=red>¶þ°Ù¸ö»ý·Ö<color>¡£¿´À´£¬ÓÐÒ»¸öÕæÕýÎ£ÏÕµÄÈÎÎñÔÚµÈ´ý×ÅÄã¡£		
-1001	1053	50	60	25	»Ø<color=red>ÑïÖÝ<color>Ïò»ì»ì<color=red>£¨231£¬190£©<color>¸´Ãü¡£		
-1001	1053	50	60	27	ÈÎÎñÍê³É£¡»ì»ìÈÃÄã¼ÌÐø»Ø´ðËÎ½ðµÄÒ»Ð©ÎÊÌâ¡£		
-1001	1053	50	60	30	Äã×¼±¸¿ªÊ¼»Ø´ðËÎ½ðÎÊÌâÁË¡£		
-1001	1053	50	60	40	ÎÊÌâÈ«²¿»Ø´ðÕýÈ·ºó£¬·½¿É¼ÌÐøÓë»ì»ì¶Ô»°¡£		
-1001	1053	50	60	50	»ì»ìËµÄãÒÑÓÐ×ã¹»¾­Ñé£¬Ëû¸æËßÄãÒªÐ­Öú´ËÈË´ÌÉ±ËÎ½ðÁ½¹úµÄ<color=red>¾üÖÐÖ÷½«<color>£¬Ô­À´ËûÃÇÊÇÁ½Í·ÊÕÇ®¡£		
-1001	1053	50	60	60	ÈÎÎñÍê³É£¬»ì»ìÖÕÓÚ¸æËßÁËÄãµ±Äê´ÌÉ±ÔÀÔªË§µÄ´øÍ·ÈË£¬ËûÃû½Ð<color=red>Æë¼´·ç£¨208£¬160£©<color>¡£		
-1001	1053	50	60	70	ÔÚ<color=red>ÁÙ°²³ÇÍâ<color>£¬ÕÒµ½ÁËÕâ¸öÉñÃØÉ±ÊÖÆë¼´·ç<color=red>£¨208£¬160£©<color>²¢³É¹¦½«ËûÉ±ËÀ£¬Õýµ±°µ×ÔÇìÐÒÊ±£¬²Å·¢ÏÖÕâÒÀÈ»ÊÇÒ»³¡Æ­¾Ö¡£¾¿¾¹ÕæÕýµÄÉ±ÊÖÔÚÄÄÀï£¿		
-1001	1053	50	60	80	»ØÀ´<color=red>·ïÏè<color>ÕÒ°ÁÔÆ×Ú<color=red>£¨198£¬206£©<color>£¬Ñ¯ÎÊÏÂÒ»²½µÄÐÐ¶¯¡£		
-1001	1053	50	60	1000	ÈÎÎñÍê³É£¡°ÁÔÆ×Ú¸æËßÄã£¬Õâ¿ÖÅÂÊÇ¸öÌì´óµÄÃØÃÜ¡£Õâ±³ºó£¬Ò»¶¨ÓÐ¹É²»ÎªÈËÖªµÄÊÆÁ¦ÔÚ°µÖÐ×÷Ëî¡£¿´À´ËûÒª×Ô¼ºÇ××ÔÈ¥²éÌ½ÁË¡£		
-1002	1054	20	30	10	<color=red>ÁÙ°²<color>µÄÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>Ëµ½­ºþÉÏÊ¹½£¸ßÊÖÁÈÁÈÎÞ¼¸µÄÔ­ÒòÊÇÃ»ÓÐ¾øÊÀ±¦½£¡£¾ÝËµÑïÖÝ¸ÛµÄÓæÃñÔÚ±©·çÓêÀï·¢ÏÖº£µ×³öÆæÒìµÄ¾°Ïó£¬´«ËµÕâÊÇÀûÆ÷³öÊÀµÄÕ÷Õ×¡£	Éñ±øÕ§ÏÖ	·±»ªÈÈÄÖµÄÑïÖÝ¸ÛÍâ£¬Ò¹°ë¾«¹âËÄÆð£¬Ë®²¨Èç³±£¬ÓÐÒ»°Ñ¾øÊÀµÄ±¦½£½«³öÏÖ£¬¶øÄãÐèÒª×öµÄ£¬ËÆºõÊÇ½«ËüÈ¡µ½ÊÖÖÐ¡£
-1002	1054	20	30	20	ÁøÄÏÔÆÈÃÄãÈ¥<color=red>ÑïÖÝ<color>ÕÒËûµÄÅóÓÑ<color=red>½­Ò»Ïô£¨204£¬192£©<color>´òÌý¹ØÓÚÉñ±ø³öÊÀµÄÏûÏ¢£¬È¥Ç°ÏÈÎª½­É±ÎåÊ®Ö»<color=red>ÇØÁê<color>µÄ´Ìâ¬¡£		
-1002	1054	20	30	30	É±µô´Ìâ¬ºó£¬µ½<color=red>ÑïÖÝ<color>ÕÒ½­Ò»Ïô<color=red>£¨204£¬192£©<color>¶Ô»°¡£½­Ò»ÏôÌýËµÄãÊÇÁøÄÏÔÆ½éÉÜ¹ýÀ´µÄ¸ßÐË²»ÒÑ£¬ËûËµÆäÊµ×Ô¼º¶ÔÆ·½£Ò»ÐÐÒ²²»Éõ¶®£¬Äã¿ÉÒÔÈ¥ÕÒ¸ö½Ð<color=red>ÀÖÇåÇï<color>µÄÈË£¬ËûÔø¾­ÊÇÆ·½£ÐÐÀïµÄÃû¼Ò¡£		
-1002	1054	20	30	40	ÈÎÎñÍê³É£¡µ½<color=red>ÑïÖÝÊé»­Ì¯<color>ÕÒÀÖÇåÇï<color=red>£¨211£¬195£©<color>¡£		
-1002	1054	20	30	50	ÀÖÇåÇïÔø¾­ÊÇÆ·½£ÐÐÀïÊýµÃ×ÅµÄÈËÎï.Ö»ÊÇÒòÎªÒ»´ÎÒâÍâ¶ø·ÏÁËÊÖ£¬ÒÔÖÁÓÚ²»µÃ²»ÒÔÒ»Ð©×Ö»­¶ÈÈÕ¡£²¢ÇÒËûÇ·ÁË¶Ä³¡Ò»´ó±ÈÇ®£¬ÒÔÎÞÁ¦ÔÙ°ïÖúÄãÁË¡£		
-1002	1054	20	30	60	¾ö¶¨°ïÀÖÇåÇï½â¾öËûµÄ¶ÄÕ®¡£µ½<color=red>ÑïÖÝ¶Ä³¡<color>ÕÒµ½¶Ä¹÷<color=red>£¨218£¬197£©<color>¡£		
-1002	1054	20	30	70	µ½<color=red>ÑïÖÝ¶Ä³¡<color>ÕÒµ½¶Ä¹÷<color=red>£¨218£¬197£©<color>¡£¶Ä¹÷ËµÈç¹û¿ÉÒÔ°Ñ³ÇÍâ³¯Ìì°ï°ïÖ÷<color=red>Â·³¤Ìì<color>É±ÁË£¬¾ÍÃâ³ý¶ÄÕ®.		
-1002	1054	20	30	80	ÔÚ<color=red>ÑïÖÝ³ÇÍâ<color>ÕÒµ½³¯Ìì°ï°ïÖ÷Â·³¤Ìì<color=red>£¨250£¬179£©<color>¡£		
-1002	1054	20	30	90	É±µôÂ·³¤Ìì£¬ÈÎÎñÍê³É¡£¿ÉÒÔ»ØÈ¥ÕÒ¶Ä¹÷»Ø¸´ÁË¡£		
-1002	1054	20	30	100	»Øµ½<color=red>ÑïÖÝ¶Ä³¡<color>ÕÒµ½¶Ä¹÷<color=red>£¨218£¬197£©<color>¡£		
-1002	1054	20	30	110	ÈÎÎñÍê³É£¡µ±¶Ä¹÷ÌýËµÄã°ÑÂ·³¤ÌìÉ±ÁË£¬×ÅÊµÏÅµÃ²»Çá£¬Á¢¿Ì´ðÓ¦ÃâµôÀÖÇåÇïµÄ¶ÄÕ®¡£		
-1002	1054	20	30	120	»ØÀ´ÕÒµ½ÀÖÇåÇï£¬¸æËßËû¶ÄÕ®µÄÊÂÇéÒÑ¾­½â¾ö¡£ÀÖ¸ÐÌ¾µÀ£¬Á¬ÄêÇáÈË¶¼Èç´ËÕñ×÷£¬Ëû¸ü²»ÄÜ»Ä·Ï.²¢ËµÈ·ÓÐ±¦Æ÷³öÃ»º£ÉÏ.Ö»ÒªÄãÄÜÅªµ½£¬ËûÒ»¶¨°ïÄãÆ·½£¡£		
-1002	1054	20	30	130	±¦½£¾ÍÔÚ³ÇÍâ£¬µ«ÒÑ±»ÎäÁÖÈËÎï»ñµÃÁË£¬¿´À´ÊÆ±Ø»áÓÐÒ»³¡ÁúÕù»¢¶·µÈ×ÅÄã¡­		
-1002	1054	20	30	140	ÔÚ<color=red>ÑïÖÝ³ÇÍâ<color=red>É±µôÈý¸öÎäÁÖÈËÎïºó£¬µÃµ½ÁË±¦½£¡£¿ÉÒÔ»ØÑïÖÝÕÒÀÖÇåÇï<color=red>£¨211£¬195£©<color>ÁË¡£		
-1002	1054	20	30	150	»Ø<color=red>ÑïÖÝ<color>ÕÒÀÖÇåÇï<color=red>£¨211£¬195£©<color>Æ·½£¡£ÀÖÇåÇïÒÅº¶µÄ¸æËßÄã£¬ÒòÎªÕâ°Ñ½£ÔÚÎ´¿ª¹â³öÊÀÖ®Ç°Õ´È¾ÁËÎÛ×Ç»ÞÆø£¬ËùÒÔÒÑ¾­·ÏµôÁË¡£		
-1002	1054	20	30	1000	ÈÎÎñÍê³É£¡ÄãÓÃÓÂ¸ÒÖ¤ÊµÁË×Ô¼ºµÄÄÜÁ¦¡£×ÔÐÅµÄÈ­Í·²ÅÊÇ×îºÃµÄÎäÆ÷¡£		
-1002	1055	30	40	10	<color=red>ÁÙ°²<color>µÄÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>Ëµ½üÀ´Î÷±±ïÚ¾ÖµÄïÚ³µÁ¬Ðø±»½Ù£¬»¤ËÍïÚÊ¦ÎÞÒ»ÐÒÃâ£¬Î÷±±Ò»ÏßÈýÊ®Áù´óïÚ¾Ö»¨´ó¼ÛÇ®ÇëÄãÈ¥²é³öÐ×·¸.	µÁÃûºÉ»¨	Î÷±±ÈýÊ®Áù´óïÚ¾ÖÁª±£µÄïÚ³µ±»½Ù£¬ÑªÁ÷³ÉºÓ£¬Ò»ÇÐµÄÏßË÷¾ÓÈ»Ö¸ÏòÄÇÑùÒ»Èº²»¿ÉÄÜµÄÈË£¬ÕâÊÇÕæµÄÂð£¿
-1002	1055	30	40	20	µ½<color=red>·ïÏè<color>Ë«Ó¥ïÚ¾ÖïÚ¾ÖÖ÷ÈË<color=red>£¨193£¬199£©<color>ÄÇ²éÌ½Çé¿ö¡£		
-1002	1055	30	40	30	Ë«Ó¥ïÚ¾ÖÖ÷ÈËÈÃÄãÈ¥ÕÒÐÒÃâÓöÄÑµÄÌË×ÓÊÖ<color=red>°¢Å£<color>£¬ËûÏ£ÍûÄãÄÜ°ïÃ¦ÆÆ´Ë´ó°¸¡£		
-1002	1055	30	40	40	ÔÚ<color=red>·ïÏè<color>³ÇÀïÕÒµ½°¢Å£<color=red>£¨196£¬203£©<color>£¬ÓëÆä¶Ô»°¡£		
-1002	1055	30	40	50	°¢Å£Ëµ±»½ÙºóµÄïÚ³µÁôÏÂÁË×îºóÒ»Á¾Ã»ÈË¶¯£¬¾ÝËµ½ÙïÚµÄÈËÎä¹¦Ö®¸ßÁîÈË¸ù±¾¿´²»ÇåÃæÄ¿¡£×îºóËû½»¸øÄãÒ»¼þ<color=red>îø¼×<color>£¬ËµÊÇµÁÔôËùÁô¡£		
-1002	1055	30	40	60	ÈÎÎñÍê³É!Õâ¼þîø¼×µÄ¼×Æ¬ÉÏ¿ÌÓÐÒ»Ö»³¤Ç¹£¬ÕâÊÇ³É¶¼<color=red>ÀäÇ¹ïÚ¾Ö<color>µÄÓ¡ÕÂ£¬Äã¾ö¶¨È¥ÄÇÀï×ßÒ»ÌË¡£		
-1002	1055	30	40	70	ÔÚ<color=red>³É¶¼<color>ÕÒµ½ÀäÇ¹ïÚ¾ÖºØÀÏ°å<color=red>£¨376£¬316£©<color>¡£ïÚ¾ÖÖ÷ÈËËµ¶ù×Ó×î½ü»¼ÁËÖØ²¡£¬ÐèÒªÒÔ<color=red>ÎåÊ®¸±ºïÄÔ<color>×öÒ©Òý£¬Äã¾ö¶¨°ïËûÕâ¸öÃ¦¡£		
-1002	1055	30	40	80	ÔÚ<color=red>Êñ¸ÔÉ½<color>ÉÏÉ±ÎåÊ®Ö»»Òºï£¬ÄÃºïÄÔÀ´ÖÎºØÀÏ°åµÄ¶ù×Ó¡£		
-1002	1055	30	40	90	ºØÀÏ°å<color=red>£¨376£¬316£©<color>·Ç³£¸Ð¼¤Äã¾ÈÁËËû¶ù×Ó¡£ËûËµÕâºÜ¿ÉÄÜÊÇ×î½ü½­ºþÉÏÐËÆðµÄ<color=red>µÁÔôºÉ»¨µÁ<color>ËùÎª.ËûÃÇÊ±³£³öÃ»ÔÚ<color=red>À¥ÂØÅÉ<color>¸½½ü¡£		
-1002	1055	30	40	100	ÈÎÎñÍê³É£¡ºØÀÏ°å½¨ÒéÄã²»Òª¶ÔºÉ»¨µÁ¸Ï¾¡É±¾ø£¬²¢¸øÄãÒ»¿Å<color=red>¸ÅÂÊ±¦Ê¯<color>. 		
-1002	1055	30	40	110	ÔÚ<color=red>À¥ÂØÅÉ<color>ÍâÕÒµ½ÁËÈý¸öÅ®×Ó£ººÉ»¨µÁ±ÌÓñ<color=red>£¨234£¬212£©<color>¡¢ºÉ»¨µÁÈçÑÌ<color=red>£¨237£¬214£©<color>¡¢ºÉ»¨µÁÔøÃÎ<color=red>£¨236£¬212£©<color>£¬ËýÃÇ¾ÍÊÇºÉ»¨µÁµÄÊ×Áì¡£´ò°ÜËýÃÇ¡£		
-1002	1055	30	40	120	»Ø<color=red>³É¶¼<color>£¬ïÚ¾ÖÖ÷ÈËºØÀÏ°å<color=red>£¨376£¬316£©<color>ËµËýÃÇÆäÊµ¶¼ÊÇºÃÈË¼ÒµÄº¢×Ó£¬Ö»ÊÇÔÚ³öÓÎÊ±±»Ò»»ïïÚÊ¦ÎêÈè£¬ºóÀ´±»ÒìÈËÊÕÁô²ÅÈç´Ë£¬¼ÈÈ»Ç®²Æ¶¼ÒÑ³¥»¹£¬ÇëÄã·Å¹ýËýÃÇ¡£		
-1002	1055	30	40	130	ÖªµÀÁËºÉ»¨µÁµÄÕæÊµÀ´Àú£¬¿ÉÒÔ»ØÈ¥ÕÒÁøÄÏÔÆ¸´ÃüÁË¡£		
-1002	1055	30	40	140	ÔÚ<color=red>ÁÙ°²<color>ÕÒµ½ÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>£¬¸æËßËûÓÐ¹ØÁ«»¨µÁÒ»ÊÂ¡£		
-1002	1055	30	40	1000	ÈÎÎñÍê³É£¡ÁøÄÏÔÆ¸øÁËÄãÒ»¿Å<color=red>ÊôÐÔ¿óÊ¯<color>£¬¸æËßÄãÓÃ<color=red>¸ÅÂÊ±¦Ê¯<color>£¬´ø¿×<color=red>îø¼×<color>ºÍÕâ¿Å¿óÊ¯Ò»Æð£¬¿ÉÒÔÈ¥<color=red>ÁÙ°²<color>ÉñÃØÌú½³´¦´òÔìÒ»¼þÉñÃØ×°±¸¡£		
-1002	1056	40	50	10	<color=red>ÁÙ°²<color>ÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>ËµÒªÏëµ±Ò»¸öºÃÉ±ÊÖ£¬±ØÐëÏÈÑ§»á¹Û²ì±ðÈËµÄ³öÕÐ£¬ÕÒ³öÆÆÕÀ£¬Ò»»÷±ØÉ±£¬ÈÃÄãÈ¥<color=red>±ÈÎä³¡<color>²Î¼ÓÒ»³¡ÀÞÌ¨Èü¡£	°ÔÎäÌìÏÂ	ÕâÊÀÉÏÓÐÃ»ÓÐ²»ËÀµÄÕ½Éñ£¿ÕâÈË¼äÊÇ·ñ´æÔÚÓÀÔ¶ÎÞ·¨Õ½Ê¤µÄ¶ÔÊÖ£¿µ±ËûÒ»´ÎÓÖÒ»´Î´ÓËÀÍö±ßÔµÂõ¹ýµÄÊ±ºò£¬¾Í³ÉÎªÁËÒ»¸öÉñ»°¡£ÄãÐèÒª´òÆÆËüÂð£¿»òÕßÌÉÔÚÂñÔáËÀÕßµÄÂÒ·ØÏç¡£
-1002	1056	40	50	20	È¥<color=red>±ÈÎä³¡<color>£¨ÑïÖÝ/³É¶¼/ÏåÑô£©´òÒ»³¡±ÈÈü£¬¸ÐÊÜÓëÈË¶·µÄÐ×ÏÕ¡£		
-1002	1056	40	50	25	ÁøÄÏÔÆ½è±ÈÎä¸æËßÄã£¬ÈËÍâÓÐÈË£¬ÌìÍâÓÐÌìµÄµÀÀí¡£		
-1002	1056	40	50	27	ÈÎÎñÍê³É£¡Íê³ÉÀÞÌ¨Èü¡£		
-1002	1056	40	50	30	»Ø<color=red>ÁÙ°²<color>ÕÒµ½ÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>¡£		
-1002	1056	40	50	40	ÕâÒ»´ÎÁøÄÏÔÆÈÃÄãÈ¥±ÈÎä³¡<color=red>´òÊ¤<color>Ò»³¡±ÈÈü£¬¿´À´ÓÐÖØÒªµÄÊÂ¼´½«·¢ÉúÁË¡£		
-1002	1056	40	50	50	ÈÎÎñÍê³Éºó£¬ÁøÄÏÔÆËµÔÚ³É¶¼±ÈÎä³¡ÓÐ¸öÁ¬Ê¤ÉÏ°Ù³¡µÄ<color=red>ÓåÏæ½ò<color>£¬ÊÇ±ÈÎä³¡ÀÏ°åµÄÑÛÖÐ¶¤ÈâÖÐ´Ì£¬ÒªÄãÈ¥É±µôËû¡£		
-1002	1056	40	50	60	ÈÎÎñÍê³É£¡Äã¾ö¶¨µ½<color=red>³É¶¼<color>É±µôÔøÐÛ°Ô±ÈÎä³¡µÄÓåÏæ½ò<color=red>£¨421£¬304£©<color>¡£ÓåÏæ½òËäÈ»²»ÊÇ»µÈË£¬µ«ÈËÔÚ½­ºþÉí²»ÓÉ¼º£¬¾­¹ýÒ»³¡¶ñÕ½£¬ÉíÎªÉ±ÊÖµÄÄã½«ÓåÏæ½ò»÷°Ü¡£		
-1002	1056	40	50	70	Ò»³¡¶ñÕ½Ö®ºó£¬½«ÓåÏæ½ò´ò°Ü¡£»Ø<color=red>ÁÙ°²<color>ÕÒÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>¡£		
-1002	1056	40	50	80	»Ø<color=red>ÁÙ°²<color>ÏòÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>¸´Ãü¡£		
-1002	1056	40	50	1000	ÈÎÎñÍê³É£¡µÃµ½½×¶Î½±Àø¡£		
-1002	1057	50	60	10	<color=red>ÁÙ°²<color>ÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>ËµÓÐ¸öÖØÒªÈÎÎñÒª½»¸øÄã£¬²»¹ýÄã»¹ÐèÒªÄ¥Á·£¬¿ÉÒÔÏÈÈ¥´òÒ»³¡<color=red>ËÎ½ð´óÕ½<color>£¬ÖÁÉÙµÃµ½<color=red>Á½°Ù¸ö»ý·Ö<color>¡£	¶àÄêÖ®ÃØ	ÁøÄÏÔÆ¾ÓÈ»ÊÇÕâÑùµÄÈË£¿Ëû¾¹È»ÔøÓÐ¹ýÄÇÑù²ÒÍ´µÄ¾­Àú£¿ÄêÉÙÊ±ºòµÄ¹ý´í£¬ÕæÒªÔâµ½Èç´ËµÄ³Í·£Âð£¿Ì«ºÝ¶¾µÄÊÖ¶Î£¬×ÝÊ¹Ê¦³öÓÐÃûÒ²²»¿ÉÔ­ÁÂ£¡ÊÖÀïµÄµ¶£¬Õâ´Î¾ø²»ÓÌÔ¥¡£
-1002	1057	50	60	20	²Î¼ÓËÎ½ð´óÕ½£¬»ñµÃ×ã¹»µÄ»ý·Ö£¬¿´À´£¬×îÖØÒªµÄÈÎÎñÔÚµÈ×ÅÄãÁË¡­		
-1002	1057	50	60	30	»Ø<color=red>ÁÙ°²<color>ÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>´¦¸´Ãü£¬µÃµ½½±Àø¡£		
-1002	1057	50	60	40	ÈÎÎñÍê³É£¡»Ø´ðÁøÄÏÔÆ¼¸¸ö¹ØÓÚËÎ½ðµÄÎÊÌâ¡£		
-1002	1057	50	60	50	ÐèÒª»Ø´ð12µÀÓÐ¹ØÐÂ°æËÎ½ð´óÕ½µÄÎÊÌâ¡£		
-1002	1057	50	60	60	ÔÚ´ðÌâ¹ý³ÌÖÐÈô»Ø´ð´íÎó£¬Ôò´ÓµÚÒ»ÌâÖØÐÂ¿ªÊ¼»Ø´ð¡£		
-1002	1057	50	60	70	´ð¶ÔËùÓÐÎÊÌâºó£¬ÁøÄÏÔÆ¸æËßÄãÒ»¸öÁîÈËÕð¾ªµÄÏûÏ¢¡£ËûµÀ³öÖ®ËùÒÔ±»ÆÈµ±ÉÏÖÐ¼äÈËÕâ¸ö½ÇÉ«£¬ÍêÈ«ÊÇ°Ýµ±Äê½­ºþ¶ÀÐÐ¿Í<color=red>Áú×·Îè<color>Ëù´Í.ËûÒòÎªÄêÉÙÆøÊ¢¶ø´íÉ±ÁËÁú×·ÎèµÄ¶ÀÉú¶ù×Ó£¬ÁúÒ»Å­ÏÂ½«ÁøÑË¸î£¬ÁîËûÒ²Ã»ÓÐ¶ù×Ó¡£ÕÒÁËÕâÃ´¾Ã£¬ÅÎÁËÕâÃ´¾Ã£¬¾ÍÊÇÎªÁËÕÒÒ»¸öÄÜÉ±µôÁú×·ÎèµÄÈË¡£		
-1002	1057	50	60	80	ÈÎÎñÍê³É£¡Áú×·Îè<color=red>£¨216£¬185£©<color>¾«ÉÆÒ×ÈÝÊõ£¬³£°ç×öÅ®×Ó.È¥<color=red>´óÀí<color>½«ÆäÕÒµ½¡£		
-1002	1057	50	60	90	É±µôÁú×·Îè<color=red>£¨216£¬185£©<color>£¬ÎªÁøÄÏÔÆ±¨³ð¡£¿ÉÒÔ»ØÈ¥ÕÒÁøÄÏÔÆ»Ø¸´ÁË¡£		
-1002	1057	50	60	100	»ØÀ´µ½<color=red>ÁÙ°²<color>£¬½«Áú×·ÎèÒÑËÀÒ»ÊÂ¸æËßÁøÄÏÔÆ<color=red>£¨171£¬190£©<color>¡£		
-1002	1057	50	60	1000	ÈÎÎñÍê³É£¡ÁøÄÏÔÆÏ²¼«¶øÆü¡£		
-1003	1058	20	30	10	<color=red>ãê¾©<color>µÄÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>Í¸Â¶´óÕ½ÔÚ¼´£¬Ï£ÍûÄãÄÜ¶à¼ÓÄ¥Á·×Ô¼º¡£	ÍØ°Ï»³´¨	Ô­À´ÕÒµ½Ò»¸ö½øÉíÖ®µÀ²¢²»ÊÇ·Ç³£À§ÄÑµÄÊÂÇé¡£Óöµ½ãê¾©³ÇµÄïÚÍ·ÍØ°Ï»³´¨µÄÊ±ºò£¬ÄãÒ²Ðí»¹²»ÖªµÀ£¬½ñºóµÄÂ·´Ó´Ë¿ªÊ¼²»Í¬ÁË¡£
-1003	1058	20	30	20	ÍØ°Ï»³´¨ÈÃÄãÈ¥<color=red>³É¶¼ÌÆÃÅ<color>É±ÎåÊ®Ö»ºÚÒ¶ºï¡£¿ÉÒÔ»ØÈ¥ÕÒÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>ÁË¡£		
-1003	1058	20	30	30	³É¹¦É±ÍêÁËºÚÒ¶ºï£¬ÍØ°Ï»³´¨·Ç³£ÂúÒâ¡£		
-1003	1058	20	30	40	ÈÎÎñÍê³É£¡ÍØ°Ï»³´¨ÈÃÄãÈ¥<color=red>³É¶¼<color>ÕÒÒ»¸ö½Ð×Þ³¤¾Ã<color=red>£¨392£¬318£©<color>µÄÏ¸×÷ÄÃÐ©ÖØÒªµÄ¶«Î÷£¬Ó¦¸ÃÊÇËÎ·½µÄ<color=red>²¼·ÀÍ¼<color>¡£		
-1003	1058	20	30	50	×Þ³¤¾ÃÈÃÄãÄÃ×Å<color=red>ÑòÆ¤¾í<color>¸Ï½ô³ö³Ç£¬·ñÔò¾Í³ö²»È¥ÁË¡£		
-1003	1058	20	30	60	ÈÎÎñÍê³É£¡×Þ³¤¾ÃÖö¸ÀÄãÄÃ×Å¾íÖáÈ¥<color=red>ÑïÖÝ<color>ÕÒÒ»¸ö½ÐÉò·ç<color=red>£¨210£¬192£©<color>µÄÄÐ×Ó¡£		
-1003	1058	20	30	70	ÓëÉò·ç¶Ô»°£¬È´·¢ÏÖËû¾ÓÈ»ÊÇËÎ³¯ÎäÊ¿¼Ù°çµÄ¡£		
-1003	1058	20	30	80	Õâ¼Ò»ïÂîÄãÊÇ½ð¹·£¬²»É±ËûºÎÒÔÆ½·ß£¡		
-1003	1058	20	30	90	¸ÉµôÁË¼Ù°çÉò·çµÄÎäÊ¿£¬ÕâÔ­À´²»¹ýÊÇÖ»Ö½ÀÏ»¢¡£»ØÈ¥¸æËßÍØ°Ï»³´¨Õâ¸öÏûÏ¢°É£¬¿´À´½ð¹úÏ¸×÷µÄÐÐ¶¯ÒÑ±»ÄÏËÎÕÆÎÕÁË²»ÉÙ¡£		
-1003	1058	20	30	100	»Øµ½<color=red>ãê¾©<color>ÓëÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>¶Ô»°£¬ËûºÜÂúÒâÄãµÄ°ìÊÂÄÜÁ¦£¬¿´À´´ó½ðÈ·ÊµÊÇÈ±ÉÙÈË²ÅÁË¡£ÈÎÎñÍê³É¡£		
-1003	1059	30	40	10	ÔÙ´ÎÕÒµ½ÍØ°Ï»³´¨£¬ÓëËû¶Ô»°¡£	ÅÑ¹úÖ®³¼	ÍØ°Ï»³´¨¶ÔÄãÔ½ÐÅÈÎ£¬ÄÇÖÖÎ£»ú¸Ð¾ÍÔ½ÖØ£¬Í¸¹ýÔ½À´Ô½»ë×ÇµÄºôÎü£¬¿ÕÆøÀï´«À´ÁËÅ¨ÁÒµÄÑªÐÈÆø¡£
-1003	1059	30	40	20	ÍØ°Ï»³´¨ÈÃÄãÈ¥<color=red>ÎäÒÄÉ½<color>É±µôÎåÊ®Ö»»ÆÀÇ¡£		
-1003	1059	30	40	30	Íê³ÉÁËÉ±ÀÇÈÎÎñ£¬ÍØ°Ï»³´¨·Ç³£ÂúÒâÄãµÄ°ìÊÂÄÜÁ¦¡£		
-1003	1059	30	40	40	ÈÎÎñÍê³É£¡ÍØ°Ï»³´¨ÈÃÄãËÙÈ¥<color=red>ÏåÑô<color>Ñ°ÕÒ´ó½ðÔÚÄÏËÎµÄÏ¸×÷Ê×ÁìÁõÔÌ¹Å<color=red>£¨201£¬199£©<color>£¬´òÌ½¹ØÓÚ½ð¹ú³öÊ¹ÄÏËÎµÄ¹ÙÔ±<color=red>Ê©ÒËÉú<color>£¬´ËÈËËÆºõÓÐ³öÂô¹ú¼ÒµÄÏÓÒÉ¡£		
-1003	1059	30	40	50	ÁõÔÌ¹ÅÒþ²ØµÃºÜÉî£¬Òª²»ÊÇÄãÁÁ³öÍØ°ÏµÄÁîÅÆ£¬ËûµÄ±íÏÖË¿ºÁ¿´²»³öÊÇÒ»Ãû´ó½ð¹úµÄÏ¸×÷¡£		
-1003	1059	30	40	60	ÁõÔÌ¹Å¸æËßÄãÊ©ÒËÉúÈ·ÊµÓÐÅÑ¹úÇãÏò£¬Äã¾ö¶¨ÂíÉÏ»ØÈ¥Í¨ÖªÍØ°Ï»³´¨¡£		
-1003	1059	30	40	70	»Ø<color=red>ãê¾©<color>ÓëÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>¶Ô»°£¬¸æËßËûÊ©ÒËÉúµÄ¿ÉÒÉÐÐÎª¡£ÍØ°ÏÌýºó·Ç³£ÉúÆø£¡		
-1003	1059	30	40	80	ÈÎÎñÍê³É£¡ÍØ°Ï»³´¨ÈÃÄãÈ¥<color=red>ÁÙ°²<color>ÕÒÇ±·üÒÑ¾ÃµÄÏ¸×÷£¬´ËÈË³£°ç×ö×íºº<color=red>£¨211£¬189£©<color>Á÷Á¬ÓÚ¾ÆÂ¥±ß£¬Í¨¹ýËû½«Ê©ÒËÉúÇÜÄÃ»ØÀ´¡£		
-1003	1059	30	40	90	Óë×íºº¶Ô»°£¬ËûÐÀÏ²Èô¿ñ£¬×÷ÎªÇ±·üÁÙ°²´ïÊ®¶àÔØµÄ½ð¹úÎäÊ¿£¬Ëû¶ÔÄãµÄµ½À´Á÷Â¶³öÒ»ÖÖÇ¿ÁÒµÄÇé¸Ð¡£		
-1003	1059	30	40	100	»¯×°Îª¾Æ¹íµÄÏ¸×÷Ìá¹©¸øÁËÄãÒ»ÇÐÍ¨ÐÐ±ãÀû£¬Äã¿ÉÒÔË³ÀûµÄÈ¥×½ÄÃ<color=red>Ê©ÒËÉú<color>ÁË¡£		
-1003	1059	30	40	110	ÄãÔÚ<color=red>ÁÙ°²³ÇÍâ<color>³É¹¦×¥×¡ÁËÊ©ÒËÉú<color=red>£¨211£¬211£©<color>£¬¿ÉÒÔ»ØÈ¥ÏòÍØ°Ï»³´¨¸´ÃüÁË¡£		
-1003	1059	30	40	120	»Ø<color=red>ãê¾©<color>ÓëÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>¶Ô»°£¬Ëû¶ÔÄã´óÎªÔÞÐí¡£ÈÎÎñÍê³É£¡		
-1003	1060	40	50	10	ÍØ°Ï»³´¨Ëµ£¬½üÈÕÌýÎÅÄÏËÎ¾³ÄÚÕý¾ÙÐÐÀÞÌ¨±ÈÎä£¬¾ÝËµÐí¶àÒþ¾ÓÒÑ¾ÃµÄ¸ßÊÖ·×·×¸´³ö£¬Ëû¾õµÃÆäÖÐ±ØÓÐÒþÇé¡£	ÏåÑô´óºÀ	ÄÏ³¯³¯Í¢´óÐË±ÈÎäÈüÊÂ£¬ÔÚ¸÷µØ·×·×ÉèÁ¢ÀÞÌ¨£¬Òþ¾ÓµÄ¸ßÊÖ·×·×¸´³ö£¬Ï°ÎäÖ®·çÊ¢ÐÐ´ó½­ÄÏ±±£¬Õâ¿É²»ÊÇ¸öºÃÕ×Í·¡£
-1003	1060	40	50	20	ÍØ°Ï»³´¨ÈÃÄãÈ¥ÕÒ<color=red>ÏåÑô<color>ÁõÔÌ¹Å<color=red>£¨201£¬199£©<color>µ÷²éËÎ³¯±ÈÎä³¡µÄÇé¿ö¡£		
-1003	1060	40	50	30	ÁõÔÌ¹ÅËµ£¬ÄÏËÎ³¯Í¢Ìá¹©¸øÎäÁÖÈËÊ¿µÄ±ÈÎäÀÞÌ¨£¬ÓÃÒâÔÚÓÚÐûÑïÏ°ÎäÖ®·ç£¬¿É¼ûÄÏÍ¢ÕýÔ¤Ä±Ç¿»¯±ß·À£¬³äÊµ¾üÁ¦£¬ÒÔ¶Ô¿¹´ó½ð¡£		
-1003	1060	40	50	40	Äã¾ö¶¨Ç××ÔÈ¥<color=red>±ÈÎä³¡<color>£¨ÑïÖÝ/³É¶¼/ÏåÑô£©²Î¼ÓÒ»³¡pk±ÈÈü¡£±ÈÈüÍêºóÔÙ»Ø<color=red>ÏåÑô<color>ÓëÁõÔÌ¹Å<color=red>£¨201£¬199£©<color>ÏêÏ¸ÉÌÁ¿¶Ô²ß¡£		
-1003	1060	40	50	50	ÁõÔÌ¹ÅÔÚÌýÄã½éÉÜÏêÏ¸Çé¿öÊ±ËÆºõ·Ç³£½¹¼±¡£		
-1003	1060	40	50	60	ÁõÔÌ¹ÅÈÃÄãÁ¢¼´»Ø<color=red>ãê¾©<color>ÕÒµ½ÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>£¬ÏêÏ¸½éÉÜÀÞÌ¨ÈüµÄÇé¿ö£¬²»ÒªÒÅÂ©ÈÎºÎÒ»¸öÏ¸Î¢µÄµØ·½¡£		
-1003	1060	40	50	70	ÍØ°Ï»³´¨Ìý¹ýÄãµÄ½éÉÜ·Ç³£Æø·ß¡£		
-1003	1060	40	50	80	ÍØ°Ï»³´¨ÈÃÄãÈ¥±ÈÎä³¡Õ½Ê¤Ò»³¡£¬Îª´ó½ð¹úÕù¿ÚÆø¡£´òÓ®²Å¿ÉÒÔ»ØÈ¥ÕÒËû¡£		
-1003	1060	40	50	90	ÄÏËÎ³¯Í¢ÖÐÌáÒéÍÆ¹ãÀÞÌ¨ÈüµÄ¹ÙÔ±ÄËÊÇ<color=red>ÏåÑô<color>´óºÀÈîÃ÷Ô¶<color=red>£¨222£¬200£©<color>£¬´ËÈË±¾ÄËÉÙÁÖËÂµÄË×¼ÒµÜ×Ó£¬Ò²ËãÊÇÎäÁÖÖÐÈË£¬²Å»áÌáÒéÕâÖÖÇ¿¹úÖ®µÀ£¬Ä¿Ç°ËûÔÚÏåÑôÒ°Íâ³ï±¸ÀÞÌ¨ÈüÊÂÒËµÄÊ±ºò¡£		
-1003	1060	40	50	100	ÍØ°Ï»³´¨ÈÃÄãÈ¥É±µôÈîÃ÷Ô¶¡£		
-1003	1060	40	50	110	Äã³É¹¦¸ÉµôÁËÈîÃ÷Ô¶£¬¿ÉÒÔ»Ø<color=red>ãê¾©<color>ÏòÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>¸´ÃüÁË¡£		
-1003	1060	40	50	120	ÍØ°Ï»³´¨´ðÓ¦Äã£¬Ò»¶¨Ïò³¯Í¢ÍÆ¼öÄãÕâÑùº±¼ûµÄÈË²Å¡£ÈÎÎñÍê³É£¡		
-1003	1061	50	60	10	ÍØ°Ï»³´¨¹ûÈ»ÑÔ³ö±ØÐÐ£¬ËûËµÍêÑÕÇìÎõ´óÈËÒÑÏò»ÊÉÏÙ÷Ã÷£¬ßªÉýÄãÎªÆ½ÄÏ¾ü¶¼²ìÐ£Î¾¡£	¾øÉ±	¼¸Ê®Íò´ó¾ü¿ª°ÎµÄ³¾ÍÁ»¹Î´É¢È¥£¬Ò»×®×®²»ÀûµÄÏûÏ¢±ã²»¶Ï´«À´£¬´ó¾üÊÜ×èÏåÑô³Ç£¬²»ÔÚ¶¬¼¾µ½À´Ç°ÄÃÏÂ¸Ã³Ç£¬Ê¿Æø¾üÐÄ¶¼½«´óÊÜÓ°Ïì¡£
-1003	1061	50	60	20	ÍØ°Ï»³´¨ÒÑ±£¼öÄãÎª¹ûÒã¶¼Î¾£¬¿ÉÄãÈ±ÉÙ¾ü¹¦£¬¹ÊÈÃÄãÈ¥²ÎÓë<color=red>ËÎ½ð´óÕ½<color>£¬»ñÈ¡<color=red>¶þ°Ù¸ö»ý·Ö<color>¡£		
-1003	1061	50	60	30	ÄÃµ½ÁË×ã¹»µÄ»ý·Ö£¬»Ø<color=red>ãê¾©<color>ÓëÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>¶Ô»°¡£		
-1003	1061	50	60	40	ÍØ°Ï»³´¨¶ÔÄã´ó¼ÓÔÞÉÍ£¬ËûËµ»ÊÉÏ×¼±¸ÕÙ¼ûÄã£¬ËùÒÔÔ¤ÏÈÎÊÎÊÄã<color=red>ËÎ½ðÕ½³¡<color>µÄÒ»Ð©ÌâÄ¿¡£		
-1003	1061	50	60	50	ÕýÊ½¿ªÊ¼ÎÊ´ðÁË£¬ËÆºõÍØ°Ï×¼±¸µÄÏàµ±³ä·Ö£¬¿´À´»ÊµÛÉí±ßµÄÈËÒ²²»ºÃµ±°¡¡£		
-1003	1061	50	60	60	ÎÊÌâµÄ»Ø´ð×ÜËã¹ý¹ØÀ­£¡		
-1003	1061	50	60	70	¶ÔÓÚÄãµÄ»Ø´ð£¬ÍØ°Ï¸Ðµ½·Ç³£ÂúÒâ£¬¿´À´ÄãÈ·ÊµÔÚËÎ½ðÕ½³¡ÉÏÄ¥Á·³öÁËÒ»Éí¹¦·ò¡£.		
-1003	1061	50	60	80	ÍØ°Ï»³´¨¶ÔÄã´ó¼ÓÔÞÉÍ¡£²»¹ýËûËÆºõÁ³É«²»Ì«ºÃ£¬·¢ÉúÁËÒ»Ð©Ê²Ã´À§ÄÑÄØ£¿		
-1003	1061	50	60	90	ÍØ°ÏÁ¬ÉùµÄÌ¾Ï¢Ô­À´ÊÇÎªÁË´ó¾üÄÏÏÂÊÜ×èµÄÊÂÇé¡£		
-1003	1061	50	60	100	½ð¹ú´ó¾üÄÏÏÂ£¬ÊÜÀ§ÏåÑô£¬Äã·îÃü´ÌÉ±<color=red>ÏåÑô<color>ÊØ±¸Ê¹Ê¢Òü<color=red>£¨169£¬219£©<color>¡£		
-1003	1061	50	60	110	µ¶µ¶ËÆÃ÷ÔÂËÉ·ç£¬ÕÐÕÐÈçÉñÁú°ÚÎ²£¬Ê¢ÒüµÄÕ¶Âíµ¶²îÒ»µãÒªÁËÄãµÄÃü¡£ÉúËÀÒ»Ïß£¬ÖÕ¾¿ÊÇÄãÔËÆøºÃÁËÒ»µã¡£¿ÉÒÔ»Øµ½<color=red>ãê¾©<color>ÕÒÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>ÁË¡£		
-1003	1061	50	60	120	»Øµ½<color=red>ãê¾©<color>ÍØ°Ï»³´¨<color=red>£¨209£¬190£©<color>´¦¡£ÍØ°Ï»³´¨´óÏ²¹ýÍû£¬ËûÍêÈ«ÒÔ¼Ò¹úÎª¼ºÈÎ£¬·Â·ðÊÇ¼Ü¹ú¼ÒµÄ»úÆ÷°ã£¬´Ó²»ÖªÆ£¾ëµÄÔËÐÐ×Å¡£		
+1001	1050	20	30	10	<color=red>Ng¹o V©n T«ng<color> ë Ph­îng T­êng <color=red> (198,206)<color> cho b¹n biÕt gÇn ®©y trªn giang hå xuÊt hiÖn mét bé B¶o gi¸p <color=red>Thiªn Hoµng Long KhÝ<color>, ng­êi cã bé gi¸p nµy sÏ cã søc m¹nh v« th­îng. Thiªn Long Tù cã <color=red>Si T¨ng<color>, y biÕt ®­îc nhiÒu bÝ mËt, cã lÏ y biÕt tin tøc liªn quan ®Õn Thiªn Hoµng Long KhÝ.	Long KhÝ xuÊt hiÖn	Giang hå xuÊt hiÖn mét bé Kh¶i gi¸p tuyÖt thÕ.... Thiªn Hoµng Long KhÝ. Ng­êi ®o¹t ®­îc bé gi¸p nµy sÏ cã søc m¹nh rÊt lín. Ng¹o V¨n T«ng b¶o b¹n dß th¸m tung tÝch. Ng¹o V©n T«ng b¶o b¹n ®iÒu tra tung tÝch Thiªn Hoµng Long KhÝ. Thiªn Hoµng Long KhÝ cã liªn quan mËt thiÕt víi c¸i chÕt cña Nh¹c Phi T­êng qu©n… 
+1001	1050	20	30	20	§Õn Thiªn Long Tù <color=red> §¹i Lý<color> t×m Si T¨ng<color=red> (167,176)<color> hái th¨m tin tøc cña Long KhÝ.		
+1001	1050	20	30	30	§èi tho¹i víi Si T¨ng. Si T¨ng muèn cã <color=red>Thiªn Tµn §Þa KhuyÕt §å phæ<color> míi nãi ra lai lÞch cña Long KhÝ.		
+1001	1050	20	30	40	Ra ngoµi <color=red> Thiªn Long Tù<color> ®¸nh b¹i Tµng B¶o kh¸ch, lÊy ®­îc 5 cuèn <color=red> Thiªn Tµn §Þa KhuyÕt §å phæ<color>.		
+1001	1050	20	30	50	Sau khi ®­a 5 cuèn Thiªn Tµn §Þa KhuyÕt §å phæ cho Si T¨ng, míi ph¸t hiÖn Si T¨ng lµ gi¶.		
+1001	1050	20	30	60	Hoµn thµnh nhiÖm vô! B¹n quay vÒ <color=red> Ph­îng T­êng<color> t×m Ng¹o V©n T«ng  <color=red> (198,206)<color>.		
+1001	1050	20	30	70	Ng¹o V©n T«ng nhí ra <color=red>TiÔn §Çu<color> mÊy n¨m tr­íc ®· tõng nh¾c ®Õn Hoµng Long KhÝ.		
+1001	1050	20	30	80	§Õn <color=red>Hoa S¬n ph¸i<color> t×m TiÔn §Çu<color=red> (155,204)<color>, hái  tin tøc cña Long KhÝ.		
+1001	1050	20	30	90	TiÔn §Çu nãi <color=red>Thiªn Hoµng Long KhÝ cã liªn quan ®Õn Nh¹c Phi<color>. N¨m x­a Nh¹c Phi kh«ng ph¶i chÕt t¹i Phong Ba §×nh, ¤ng ®­îc c¸c hiÖp kh¸ch che giÊu. Nh­ng Èn c­ kh«ng l©u, l¹i bÞ <color=red>ThÝch kh¸ch thÇn bÝ<color> ¸m s¸t.		
+1001	1050	20	30	100	§Õn <color=red>Ph­îng T­êng<color> t×m SÇm Hïng<color=red> (192,201)<color>, may ra cã thÓ biÕt chót tin tøc		
+1001	1050	20	30	110	SÇm Hïng kh¼ng ®Þnh Nh¹c t­íng qu©n cã 1 bé ¸o gi¸p thÇn k×, nh­ng sau khi bÞ thÝch s¸t, ¸o gi¸p còng kh«ng thÊy tung tÝch. SÇm Hïng biÕt chÝnh <color=red>Phan Nh­ Long<color> lµ ng­êi ®· ¸m s¸t Nh¹c Phi.		
+1001	1050	20	30	120	§Õn <color=red>Ph­îng T­êng<color> t×m Phan Nh­ Long <color=red> (220,190)<color>, b¸o thï cho Nh¹c Phi t­íng qu©n. Phan Nh­ Long vâ nghÖ chØ tÇm th­êng, lµm sao ®ñ søc ¸m s¸t Nh¹c Nhi! Râ rµng vÉn cßn 1 ©m m­u kh¸c! Hoµn thµnh nhiÖm vô! 		
+1001	1050	20	30	130	B¹n ®¸nh b¹i Phan Nh­ Long, cã thÓ quay vÒ gÆp Ng¹o V©n T«ng phôc mÖnh.		
+1001	1050	20	30	140	vÒ <color=red> Ph­îng T­êng<color> gÆp Ng¹o V©n T«ng <color=red> (198,206)<color> b¸o tin ®· ®¸nh b¹i Phan Nh­ Long.		
+1001	1050	20	30	1000	Hoµn thµnh nhiÖm vô! Cã thÓ gÆp Ng¹o V©n T«ng l·nh th­ëng.		
+1001	1051	30	40	10	<color=red>Mé Dung BÊt Ky<color> ®ang chÕ t¹o cho hoµng cung 1 bé b¶o gi¸p ®Ó chóc thä, «ng ta cÇn 1 viªn kho¸ng th¹ch (Kim)<color=red><color>.	T×m Kho¸ng th¹ch	Thî rÌn Mé Dung BÊt Ki th× kh«ng vui, V©n T«ng th× nh­ ®ang suy nghÜ xa x¨m! Rèt cuéc lµ cã chuyÖn g× nghiªm träng vËy?
+1001	1051	30	40	20	Ng¹o V©n T«ng b¶o b¹n ®i Thµnh §« t×m H¹ Lan Chi <color=red> (385,324)<color>. C« ta tõng lµ ®Ö tö cña Mé Dung BÊt Ky, trong tay cã 2 lo¹i B¶o th¹ch nµy.		
+1001	1051	30	40	30	H¹ Lan Chi b¶o b¹n ®Õn Giang T©n Th«n t×m <color=red>Ng« L·o th¸i<color>		
+1001	1051	30	40	40	Hoµn thµnh nhiÖm vô! §Õn Giang T©n th«n t×m <color=red><color>Ng« l·o th¸i<color=red> (432,387)<color> hái th¨m tung tÝch B¶o th¹ch.		
+1001	1051	30	40	50	Ng« L·o th¸i h×nh nh­ th©n mang bÖnh l¹, kh«ng thÓ nãi chuyÖn.		
+1001	1051	30	40	60	B¹n quyÕt ®Þnh quay vÒ <color=red>Ph­îng T­êng<color> t×m Ng¹o V©n T«ng<color=red> (198,206)<color> th­¬ng l­îng b­íc tiÕp theo.		
+1001	1051	30	40	70	Ng¹o V©n T«ng cho biÕt n¨m x­a vò khÝ s¸t h¹i Nh¹c Phi lµ do Mé Dung BÊt Ky chÕ t¹o. B©y giê «ng ta ®ang rÊt hèi hËn. Nh­ng «ng ta ®ang t×m b¶o th¹ch ®Ó lµm g×? Xem ra vÉn cßn bÝ Èn! 		
+1001	1051	30	40	80	V©n T«ng nghi ngê Ng« l·o th¸i bÞ ng­êi kh¸c cè ý h¹ ®éc, sai b¹n ®Õn <color=red>Phôc Ng­u S¬n<color>  ®¸nh 50 con Sãi xanh, lÊy x­¬ng sãi vÒ lµm thuèc.		
+1001	1051	30	40	90	Sau khi giÕt 50 con Sãi xanh, vÒ gÆp Ng¹o V©n T«ng <color=red> (198,206)<color>.		
+1001	1051	30	40	100	NhiÖm vô hoµn thµnh! Ng¹o V©n T«ng ®­a x­¬ng sãi cho <color=red>Cung A Ng­u<color> bµo chÕ D­îc töu trÞ bÖnh cho Ng« L·o th¸i		
+1001	1051	30	40	110	§Õn <color=red>T­¬ng D­¬ng<color> t×m Cung A Ng­u<color=red> (193,199)<color>.¤ng ta ®ang gÆp r¾c rèi v× ¸c lang trªn Phôc Ng­u S¬n <color=red> (224,196)<color>, b¹n quyÕt ®Þnh ra tay.		
+1001	1051	30	40	120	§Õn <color=red>Phôc Ng­u S¬n<color=red> diÖt ¸c lang<color=red> (223,196)<color>.		
+1001	1051	30	40	130	Quay l¹i <color=red>T­¬ng D­¬ng<color>, b¸o víi Cung A Ng­u ®· giÕt ¸c lang.		
+1001	1051	30	40	140	Cung A Ng­u ®­a cho b¹n Lang Cèt töu ®· bµo chÕ xong <color=red><color>		
+1001	1051	30	40	150	§Õn <color=red>Giang T©n Th«n<color> ®­a thuèc cho Ng« L·o th¸i<color=red> (432,387)<color>.		
+1001	1051	30	40	160	Giao Lang Cèt töu cho Ng« l·o th¸i.		
+1001	1051	30	40	170	Ng« L·o th¸i cho biÕt: ®· gióp H¹ Lan Chi gi÷ 2 viªn <color=red>B¶o th¹ch thuéc tÝnh<color>. B¹n cã thÓ quay vÒ t×m Ng¹o V©n T«ng phôc mÖnh.		
+1001	1051	30	40	180	Cã ®­îc B¶o th¹ch, quay vÒ <color=red>Ph­îng T­êng<color> gÆp Ng¹o V©n T«ng <color=red> (198,206)<color> phôc mÖnh.		
+1001	1051	30	40	1000	NhiÖm vô hoµn thµnh!		
+1001	1052	40	50	10	Ng¹o V©n T«ng truyÒn d¹y cho b¹n mét vµi bÝ quyÕt vâ c«ng ®Ó hµnh tÈu giang hå! Xem ra b¹n thËt lµ may m¾n!	Gi¶ nhËp L©m Uyªn	Ng¹o V©n T«ng b¶o b¹n ®i thi ®Êu vâ tr­êng 1 trËn ®Ó thÓ hiÖn b¶n lÜnh! §©y lµ c¬ héi ®Ó b¹n lÊy ®­îc niÒm tin víi «ng ta.
+1001	1052	40	50	20	§i <color=red>Tû vâ tr­êng<color> (D­¬ng Ch©u/Thµnh §«/T­¬ng D­¬ng) ®Êu 1 trËn chøng minh b¶n lÜnh		
+1001	1052	40	50	30	Quay l¹i gÆp Ng¹o V©n T«ng, biÕt ®­îc chuyÖn Nh¹c Phi bÞ giÕt cã liªn quan ®Õn tæ chøc s¸t thñ cña <color=red>L©m Uyªn Nhai<color>. §©y lµ mét tæ chøc s¸t thñ kh«ng mµng thÞ phi chØ biÕt tiÒn b¹c mµ th«i.		
+1001	1052	40	50	40	NhiÖm vô hoµn thµnh! Ng¹o V©n T«ng b¶o b¹n ®Õn <color=red>D­¬ng Ch©u<color> t×m Hçn Hçn<color=red> (231,190)<color>,th«ng qua ng­êi nµy cã thÓ th©m nhËp néi bé tæ chøc L©m Uyªn Nhai.		
+1001	1052	40	50	50	§Õn gÆp Hçn Hçn <color=red> (231,190)<color>, h¾n muèn biÕt thùc lùc cña b¹n.		
+1001	1052	40	50	60	Vµo <color=red>Tû vâ tr­êng<color> ®Êu mét trËn chøng tá b¶n lÜnh!		
+1001	1052	40	50	70	Ra khái vâ tr­êng gÆp Hçn Hçn <color=red> (231,190)<color>, h¾n ®¸nh c­îc víi b¹n b¹n sÏ kh«ng t×m ®­îc<color=red>Du S­¬ng T©n<color>, cho dï t×m ®­îc còng kh«ng cã c¸ch nµo ®¸nh th¾ng h¾n.		
+1001	1052	40	50	80	NhiÖm vô hoµn thµnh! Tr­íc khi ®i, b¹n quyÕt ®Þnh quay l¹i <color=red>Ph­îng T­êng<color> t×m Ng¹o V©n T«ng<color=red> (198,206)<color>.		
+1001	1052	40	50	90	Ng¹o V©n T«ng cho biÕt <color=red>Du S­¬ng T©n<color> ®ang ë <color=red>Thµnh §«<color>, h¾n kh«ng ph¶i lµ ng­êi xÊu, cã thÓ kh«ng giÕt h¾n.		
+1001	1052	40	50	100	§Õn <color=red>Thµnh §«<color> t×m ®­îc Du S­¬ng T©n<color=red> (421,304)<color>.		
+1001	1052	40	50	110	Sau mét trËn ¸c chiÕn, ®¸nh b¹i Du S­¬ng T©n. B¹n cã thÓ quay vÒ t×m Ng¹o V©n T«ng.		
+1001	1052	40	50	120	VÒ <color=red>Ph­îng T­êng<color> gÆp Ng¹o V©n T«ng<color=red> (198,206)<color> phôc mÖnh.		
+1001	1052	40	50	1000	NhiÖm vô hoµn thµnh! NhËn ®­îc phÇn th­ëng.		
+1001	1053	50	60	10	<color=red>Hçn Hçn<color> ë D­¬ng Ch©u <color=red> (231,190)<color> cho b¹n biÕt, trong tæ chøc cã ng­êi tù x­ng ®· hµnh thÝch Nh¹c Phi, nh­ng ng­êi nµy ®· tham gia ®¹i chiÕn Tèng Kim. B¹n ®Õn <color=red>ChiÕn tr­êng Tèng Kim<color> t×m tung tÝch cña ng­êi nµy.	S¸t thñ Tøc Phong	Cuèi cïng ®· t×m ®­îc kÎ n¨m x­a ®· hµnh thÝch Nh¹c Nguyªn So¸i, nh­ng ch¼ng lÏ mäi viÖc chØ ®¬n gi¶n nh­ vËy ­?
+1001	1053	50	60	20	Vµo ChiÕn tr­êng Tèng Kim ®¹t 200 ®iÓm tÝch lòy <color=red> <color>. Xem ra hiÓm nguy thËt sù ®ang chê b¹n phÝa tr­íc!		
+1001	1053	50	60	25	VÒ <color=red>D­¬ng Ch©u<color>gÆp Hçn Hçn<color=red> (231,190)<color> phôc mÖnh.		
+1001	1053	50	60	27	NhiÖm vô hoµn thµnh! Hçn Hçn hái b¹n mét sè vÊn ®Ò vÒ Tèng Kim.		
+1001	1053	50	60	30	B¹n chuÈn bÞ tr¶ lêi vÒ vÊn ®Ò Tèng Kim.		
+1001	1053	50	60	40	Sau khi tr¶ lêi chÝnh x¸c toµn bé vÊn ®Ò, tiÕp tôc ®èi tho¹i víi Hçn Hçn.		
+1001	1053	50	60	50	Hçn Hçn rÊt thÝch b¹n. H¾n b¶o b¹n thÝch s¸t<color=red>Nguyªn So¸i<color> cña c¶ Tèng vµ Kim. Th× ra h¾n lµ kÎ ®ßn sãc 2 ®Çu.		
+1001	1053	50	60	60	NhiÖm vô hoµn thµnh, Hçn Hçn cho b¹n biÕt kÎ n¨m x­a ®· chñ m­u giÕt Nh¹c Nguyªn So¸i lµ<color=red>TÒ Tøc Phong?208,160)<color>.		
+1001	1053	50	60	70	§Õn <color=red>L©m An<color> t×m ®­îc s¸t thñ TÒ Tøc Phong<color=red> (208,160)<color> nh­ng sao l¹i h¹ thñ h¾n qu¸ dÔ dµng. Ch¼ng lÏ…		
+1001	1053	50	60	80	Quay l¹i<color=red>Ph­îng T­êng<color> t×m Ng¹o V©n T«ng<color=red> (198,206)<color> xin chØ thÞ.		
+1001	1053	50	60	1000	NhiÖm vô hoµn thµnh! Ng¹o V©n T«ng nãi muèn ®Ých th©n ®iÒu tra.Hoµn thµnh nhiÖm vô! 		
+1002	1054	20	30	10	<color=red>L©m An<color>LiÔu Nam V©n<color=red> (171,190)<color>nãi: Nghe nãi Ng­ d©n D­¬ng Ch©u trong 1 ®ªm m­a giã b·o bïng ph¸t hiÖn d­íi ®¸y biÓn xuÊt hiÖn c¶nh t­îng kú dÞ, cÇn ph¶i ®iÒu tra.	ThÇn Binh S¹ HiÖn	D­¬ng Ch©u phån hoa n¸o nhiÖt, ban ®ªm bèn bÒ rùc rì, thËt lµ mét n¬i an b×nh. Nh­ng... 
+1002	1054	20	30	20	LiÔu Nam V©n b¶o b¹n ®i <color=red>D­¬ng Ch©u<color> t×m <color=red>Giang NhÊt Tiªu<color>. Tr­íc khi ®i h·y b¾t 50 con nhÝm ë <color=red>TÇn L¨ng<color>.		
+1002	1054	20	30	30	Sau khi giÕt NhÝm, ®Õn <color=red>D­¬ng Ch©u<color> t×m Giang NhÊt Tiªu<color=red> (204,192)<color> Giang NhÊt Tiªu l¹i b¶o b¹n h·y ®i t×m <color=red>L¹c Thanh Thu<color>, cã thÓ biÕt ®­îc chót tin tøc.		
+1002	1054	20	30	40	§Õn <color=red>D­¬ng Ch©u<color> t×m L¹c Thanh Thu<color=red> (211,195)<color>.		
+1002	1054	20	30	50	L¹c Thanh Thu kh«ng muèn gióp b¹n		
+1002	1054	20	30	60	QuyÕt ®Þnh gióp L¹c Thanh Thu gi¶i quyÕt kho¶n nî. §Õn <color=red>D­¬ng Ch©u<color> t×m b¶o kª sßng b¹c <color=red> (218,197)<color>.		
+1002	1054	20	30	70	§Õn <color=red>D­¬ng Ch©u<color> t×m b¶o kª sßng b¹c<color=red> (218,197)<color>. H¾n b¶o nÕu cã thÓ h¹ thñ Tr­êng Thiªn Bang chñ <color=red> <color>th× khái ph¶i tr¶ nî.		
+1002	1054	20	30	80	§Õn <color=red>D­¬ng Ch©u<color> t×m Tr­êng Thiªn Bang chñ<color=red> (250,179)<color>.		
+1002	1054	20	30	90	H¹ thñ Lé Tr­êng Thiªn, nhiÖm vô hoµn thµnh. Quay vÒ t×m b¶o kª sßng b¹c.		
+1002	1054	20	30	100	VÒ <color=red>D­¬ng Ch©u<color> t×m b¶o kª sßng b¹c<color=red> (218,197)<color>.		
+1002	1054	20	30	110	NhiÖm vô hoµn thµnh! L¹c Thanh Thu ®­îc xãa nî 		
+1002	1054	20	30	120	B¶o kiÕm ë ngoµi thµnh, nh­ng ®ang bÞ tranh giµnh. Xem ra 1 trËn long tranh hæ ®Êu lµ khã tr¸nh khái		
+1002	1054	20	30	130	B¶o kiÕm ë ngoµi thµnh, nh­ng ®ang bÞ tranh giµnh. Xem ra 1 trËn long tranh hæ ®Êu lµ khã tr¸nh khái		
+1002	1054	20	30	140	Ra <color=red>D­¬ng Ch©u<color=red> th¾ng  3 nh©n vËt Vâ L©m, lÊy ®­îc b¶o kiÕm, quay vÒ t×m L¹c Thanh Thu<color=red> (211,195)<color>.		
+1002	1054	20	30	150	VÒ <color=red>D­¬ng Ch©u<color> t×m L¹c Thanh Thu<color=red> (211,195)<color>. L¹c Thanh Thu thë dµi, nãi ®Êy kh«ng ph¶i lµ b¶o kiÕm. Nh­ng b¹n còng ®· hoµn thµnh nhiÖm vô 		
+1002	1054	20	30	1000	NhiÖm vô hoµn thµnh! B¹n ®· chøng minh ®­îc r»ng: dòng c¶m míi chÝnh lµ vò khÝ tèt nhÊt.		
+1002	1055	30	40	10	<color=red>L©m An<color>LiÔu Nam V©n<color=red> (171,190)<color> nãi gÇn ®©y Tiªu xa cña Tiªu côc T©y B¾c liªn tiÕp bÞ c­íp. C¶ 36 tiªu cô T©y B¾c bá ra mét kho¶n tiÒn lín nhê b¹n ®iÒu tra thñ ph¹m	§¹o Danh Hµ B¾c	Tiªu xa cña 36 Tiªu côc lín ë T©y B¾c liªn tiÕp bÞ c­íp, ®©y ®óng lµ sù thËt?
+1002	1055	30	40	20	§Õn <color=red>Ph­îng T­êng<color>Chñ Song ¦ng Tiªu côc <color=red> (193,199)<color> hái th¨m t×nh h×nh.		
+1002	1055	30	40	30	Chñ nh©n Song ¦ng Tiªu côc b¶o b¹n ®i t×m <color=red>A Ng­u<color>, «ng ta hi väng b¹n cã thÓ gióp ph¸ nghi ¸n nµy.		
+1002	1055	30	40	40	§Õn <color=red>Ph­îng T­êng<color> t×m A Ng­u<color=red> (196,203)<color>		
+1002	1055	30	40	50	A Ng­u cho biÕt kÎ c­êng ®¹o vâ c«ng cao c­êng kh«ng ®Ó ng­êi kh¸c thÊy mÆt		
+1002	1055	30	40	60	NhiÖm vô hoµn thµnh! Trªn ¸o gi¸p nµy cã kh¾c 1 c©y Tr­êng th­¬ng, ®©y lµ Ên ch­¬ng cña <color=red>L·nh Th­¬ng Tiªu côc Thµnh §«<color>,b¹n quyÕt ®Þnh ®Õn ®ã 1 chuyÕn.		
+1002	1055	30	40	70	§Õn <color=red>Thµnh §«<color> t×m L·nh S­¬ng tiªu côc <color=red> (376,316)<color>.Chñ tiªu côc nãi gÇn ®©y m¾c bÖnh nÆng, cÇn cã<color=red>50 bé ãc khØ<color>lµm thuèc, b¹n quyÕt ®Þnh gióp «ng ta.		
+1002	1055	30	40	80	§i <color=red>Thôc C­¬ng S¬n<color> giÕt 50 con khØ x¸m, lÊy ãc khØ vÒ trÞ bÖnh. B¹n ®· giÕt ®­îc 1062 con khØ 		
+1002	1055	30	40	90	¤ng chñ H¹<color=red> (376,316)<color> v« cïng c¶m kÝch vµ cho biÕt: viÖc nµy cã thÓ lµ do bän ®¹o tÆc Hµ Hoa §¹o thùc hiÖn<color=red><color>.Chóng th­êng xuÊt hiÖn ë <color=red>C«n L«n ph¸i<color>.		
+1002	1055	30	40	100	NhiÖm vô hoµn thµnh! ¤ng chñ H¹ khuyªn b¹n kh«ng nªn ®uæi cïng giÕt tËn Hµ Hoa §¹o		
+1002	1055	30	40	110	§Õn <color=red>C«n L«n ph¸i<color> ®¸nh b¹i 3 thñ lÜnh cña Hµ Hoa §¹o: BÝch Ngäc<color=red> (234,212)<color>,  Nh­ Yªn<color=red> (237,214)<color>,  T¨ng Méng<color=red> (236,212)<color>		
+1002	1055	30	40	120	VÒ  <color=red>Thµnh §«<color>, «ng chñ H¹ chñ tiªu côc <color=red> (376,316)<color>nãi bän hä thËt ra lµ con c¸i nhµ lµnh, chØ v× lóc ®i d¹o bÞ mét tªn Tiªu s­ lµm nhôc, sau ®ã bÞ kÎ kh¸c b¾t gi÷ míi trë nªn nh­ thÕ, tiÒn tµi ®· lÊy l¹i ®­îc råi,xin ng­¬i h		
+1002	1055	30	40	130	BiÕt ®­îc lai lÞch thÊt sù cña Hµ Hoa §¹o, cã thÓ quay vÒ gÆp LiÔu Nam V©n phôc mÖnh.		
+1002	1055	30	40	140	§Õn <color=red>L©m An<color> t×m LiÔu Nam V©n <color=red> (171,190)<color>,b¸o cho anh ta biÕt 1 chuyÖn cã liªn quan ®Õn Liªn Hoa §¹o.		
+1002	1055	30	40	1000	NhiÖm vô hoµn thµnh!		
+1002	1056	40	50	10	<color=red>L©m An<color> LiÔu Nam V©n <color=red> (171,190)<color> muèn b¹n thi ®Êu 1 trËn trong <color=red> Tû vâ tr­êng<color> ®Ó chøng minh b¶n lÜnh	B¸ Vâ Thiªn H¹ 	B¹n ch­a thÓ chøng minh m×nh lµ ng­êi m¹nh nhÊt. VËy b¹n sÏ lµm g×?
+1002	1056	40	50	20	§i <color=red>Tû vâ tr­êng<color> (D­¬ng Ch©u/Thµnh §«/T­¬ng D­¬ng) ®Êu 1 trËn chøng minh b¶n lÜnh		
+1002	1056	40	50	25	LiÔu Nam V©n m­în viÖc Tû vâ ®Ó d¹y b¹n ®¹o lý "Nh©n ngo¹i h÷u nh©n, Thiªn ngo¹i h÷u thiªn"		
+1002	1056	40	50	27	NhiÖm vô hoµn thµnh! Hoµn thµnh thi ®Êu l«i ®µi.		
+1002	1056	40	50	30	VÒ <color=red>L©m An<color> t×m LiÔu Nam V©n<color=red> (171,190)<color>.		
+1002	1056	40	50	40	LÇn nµy LiÔu Nam V©n b¶o b¹n ®Õn Tû vâ tr­êng<color=red> ®¸nh th¾ng<color>mét trËn, xem ra cã chuyÖn quan träng s¾p x¶y ra.		
+1002	1056	40	50	50	Sau khi nhiÖm vô hoµn thµnh, LiÔu Nam V©n l¹i sai b¹n ®i chinh phôc <color=red>Du S­¬ng T©n<color>ë Thµnh §«		
+1002	1056	40	50	60	NhiÖm vô hoµn thµnh! B¹n quyÕt ®Þnh ®Õn <color=red>Thµnh §«<color> t×m Du S­¬ng T©n <color=red> (421,304)<color>. Th¾ng ®­îc h¾n qu¶ kh«ng ph¶i chuyÖn dÔ dµng!		
+1002	1056	40	50	70	Sau mét trËn ¸c chiÕn, ®¸nh b¹i Du S­¬ng T©n. Quay vÒ  <color=red>L©m An<color> t×m LiÔu Nam V©n<color=red> (171,190)<color>.		
+1002	1056	40	50	80	VÒ <color=red>L©m An<color>gÆp LiÔu Nam V©n<color=red> (171,190)<color> phôc mÖnh.		
+1002	1056	40	50	1000	NhiÖm vô hoµn thµnh! NhËn ®­îc phÇn th­ëng.		
+1002	1057	50	60	10	<color=red>L©m An<color>LiÔu Nam V©n<color=red> (171,190)<color> muèn  b¹n ®¸nh 1 trËn <color=red> ®¹i chiÕn Tèng Kim<color>, Ýt nhÊt ®­îc 200 ®iÓm tÝch lòy<color=red><color> ®Ó kiÓm nghiÖm b¶n lÜnh.	BÝ mËt nhiÒu n¨m	LiÔu Nam V©n mÆc dï lµ ng­êi nh­ vËy?VËy mµ «ng ta tõng cã qu¸ khø ®au th­¬ng nh­ thÕ? Sai lÇm tuæi trÎ nªn gÆp ph¶i sù trõng ph¹t nh­ thÕ sao?Thñ ®o¹n qu¸ ®éc ¸c! §ao trong tay, lÇn nµy tuyÖt ta ®èi kh«ng ®­îc do dù.
+1002	1057	50	60	20	Tham gia §¹i chiÕn Tèng Kim, ®¹t ®ñ ®iÓm tÝch lòy, xem ra nhiÖm vô quan träng nhÊt ®ang ®îi b¹n!		
+1002	1057	50	60	30	VÒ <color=red>L©m An<color>LiÔu Nam V©n <color=red> (171,190)<color> phôc mÖnh, lÊy ®­îc phÇn th­ëng.		
+1002	1057	50	60	40	NhiÖm vô hoµn thµnh! Tr¶ lêi LiÔu Nam V©n c¸c vÊn ®Ò vÒ Tèng Kim.		
+1002	1057	50	60	50	CÇn ph¶i tr¶ lêi 12 vÊn ®Ò vÒ §¹i chiÕn Tèng Kim 		
+1002	1057	50	60	60	Trong qu¸ tr×nh tr¶ lêi nÕu ®¸p sai, ph¶i tr¶ lêi l¹i tõ ®Çu.		
+1002	1057	50	60	70	LiÔu Nam V©n cho b¹n biÕt ®¹i s¸t thñ <color=red>Long Truy Vò<color> ®· t¸i xuÊt giang hå. Ng­êi nµy n¨m x­a ®· h¹i chÕt con cña LiÔu Nam V©n. Träng tr¸ch nµy b¹n g¸nh nçi kh«ng?		
+1002	1057	50	60	80	NhiÖm vô hoµn thµnh! Long Truy Vò <color=red> (216,185)<color> tinh th«ng DÞ dung thuËt, th­êng gi¶ trang thµnh phô n÷. Cã thÓ h¾n ®ang ë <color=red> ®¹i Lý<color>		
+1002	1057	50	60	90	 Long Truy Vò hÑn b¹n ngoµi <color=red> ®¹i Lý<color=red>. GiÕt Long Truy Vò<color=red> (216,185)<color>, b¸o thï cho LiÔu Nam V©n.		
+1002	1057	50	60	100	Quay vÒ <color=red>L©m An<color> b¸o tin cho LiÔu Nam V©n <color=red> (171,190)<color>.		
+1002	1057	50	60	1000	NhiÖm vô hoµn thµnh! LiÔu Nam V©n rÊt vui mõng.		
+1003	1058	20	30	10	<color=red>BiÖn Kinh <color>Th¸c B¹t <color=red> (209,190)<color> rÊt tinh th«ng binh ph¸p. H·y t×m «ng ta ®Ó häc hái!	Th¸c B¹t Hoµi Xuyªn	GÆp Tiªu ®Çu thµnh BiÖn Kinh Th¸c B¹t Hoµi Xuyªn, b¹n b¾t ®Çu hoang mang vÒ tiÒn ®å cña m×nh
+1003	1058	20	30	20	Th¸c B¹t nhê b¹n ®Õn <color=red> ®­êng M«n<color> b¾t 50 con H¾c DiÖp HÇu. B¹n ®· b¾t ®­îc1063 con H¾c DiÖp HÇu.		
+1003	1058	20	30	30	B¾t ®ñ H¾c DiÖp HÇu, Th¸c B¹t Hoµi Xuyªn rÊt hµi lßng		
+1003	1058	20	30	40	NhiÖm vô hoµn thµnh! Th¸c B¹t  nhê b¹n ®Õn <color=red>Thµnh §«<color> t×m Tr©u Tr­êng Cöu<color=red> (392,318)<color> ®Ó lÊy Bè Phßng ®å cña Nam Tèng<color=red><color>.		
+1003	1058	20	30	50	Tr©u Tr­êng Cöu khuyªn b¹n mang <color=red>s¸ch da dª<color> lËp tøc rêi khái thµnh,  nÕu kh«ng sÏ kh«ng kÞp.		
+1003	1058	20	30	60	NhiÖm vô hoµn thµnh! Tr©u Tr­êng Cöu sai b¹n mang mËt tÞch ®i <color=red>D­¬ng Ch©u<color> t×m ThÈm Phong<color=red> (210,192)<color>.		
+1003	1058	20	30	70	§èi tho¹i víi ThÈm Phong, ph¸t hiÖn ng­êi nµy lµ binh sÜ Tèng triÒu gi¶ d¹ng.		
+1003	1058	20	30	80	Tªn nµy m¾ng b¹n lµ Kim CÈu, kh«ng giÕt h¾n lµm sao h¶ giËn! 		
+1003	1058	20	30	90	Quay vÒ b¸o cho Th¸c B¹t Hoµi Xuyªn, xem ra ©m m­u cña Kim Quèc ®· dÇn cã manh mèi		
+1003	1058	20	30	100	VÒ <color=red>BiÖn Kinh<color> gÆp Th¸c B¹t <color=red> (209,190)<color>, ¤ng ta rÊt hµi lßng! NhiÖm vô hoµn thµnh.		
+1003	1059	30	40	10	L¹i ®i t×m Th¸c B¹t Hoµi Xuyªn 	Ph¶n Quèc Chi ThÇn	Th¸c B¹t Hoµi Xuyªn ngµy cµng tÝn nhiÖm b¹n, ®ång nghÜa víi viÖc hiÓm nguy cµng ngµy cµng cao
+1003	1059	30	40	20	Th¸c B¹t b¶o b¹n ®Õn <color=red>Vò Di S¬n<color> giÕt 50 con Sãi vµng. B¹n giÕt xong 1063 con Sãi vµng		
+1003	1059	30	40	30	Hoµn thµnh nhiÖm vô giÕt sãi, Th¸c B¹t Hoµi Xuyªn v« cïng hµi lßng!		
+1003	1059	30	40	40	NhiÖm vô hoµn thµnh! L¹i ®i <color=red>T­¬ng D­¬ng<color> t×m L­u UÈn Cæ<color=red> (201,199)<color>, dß th¸m lai lÞch cña <color=red>Thi Nghi Sinh<color>,ng­êi nµy h×nh nh­ lµ mËt th¸m		
+1003	1059	30	40	50	L­u UÈn Cæ phong l­u nho nh·, biÓu hiÖn cña «ng ta kh«ng chót g× gièng mét tªn gian tÕ cña §¹i Kim.		
+1003	1059	30	40	60	L­u UÈn Cæ cho biÕt Thi Nghi Sinh thËt sù cã biÓu hiÖn ph¶n quèc, b¹n lËp tøc quay l¹i b¸o cho Th¸c B¹t Hoµi Xuyªn.		
+1003	1059	30	40	70	VÒ <color=red>BiÖn Kinh<color>gÆp Th¸c B¹t <color=red> (209,190)<color> b¸o tin. Th¸c B¹t v« cïng tøc giËn! 		
+1003	1059	30	40	80	NhiÖm vô hoµn thµnh! Th¸c B¹t  b¶o b¹n ®i <color=red>L©m An<color> t×m tªn gian tÕ <color=red> (211,189)<color>, lîi dông h¾n ®Ó trõ Thi Nghi Sinh		
+1003	1059	30	40	90	§èi tho¹i víi Tóy H¸n, h¾n chÝnh lµ gia tÕ cña Kim Quèc Èn c­ ë L©m An		
+1003	1059	30	40	100	Tóy H¸n v« t×nh cung cÊp cho b¹n tin tøc cña <color=red>Thi Nghi Sinh<color>.		
+1003	1059	30	40	110	Ra <color=red>L©m An<color> b¾t  ®­îc Thi Nghi Sinh <color=red> (211,211)<color>, vÒ gÆp Th¸c B¹t phôc mÖnh		
+1003	1059	30	40	120	VÒ <color=red>BiÖn Kinh<color>gÆp Th¸c B¹t <color=red> (209,190)<color> phôc mÖnh. NhiÖm vô hoµn thµnh! 		
+1003	1060	40	50	10	GÇn ®©y nghe nãi Nam Tèng tæ chøc thi ®Êu l«i ®µi, cã nhiÒu cao thñ Èn danh l¹i xuÊt hiÖn. NhÊt ®Þnh ®ang cã 1 ©m m­u lín.	T­¬ng D­¬ng §¹i Hµo	GÇn ®©y nghe nãi Nam Tèng tæ chøc thi ®Êu l«i ®µi, cã nhiÒu cao thñ Èn danh l¹i xuÊt hiÖn. NhÊt ®Þnh ®ang cã 1 ©m m­u lín.
+1003	1060	40	50	20	Th¸c B¹t b¶o b¹n ®i t×m <color=red>T­¬ng D­¬ng<color>L­u ¤n Cæ<color=red> (201,199)<color> ®iÒu tra thùc h­ tû thÝ L«i ®µi		
+1003	1060	40	50	30	L­u UÈn Cæ cho biÕt: môc ®Ých lµ ph¸t ®éng phong trµo luyÖn vâ, cã thÓ thÊy Nam Tèng ®ang muèn t¨ng c­êng biªn phßng, chuÈn bÞ qu©n lùc ®Ó chèng l¹i §¹i Kim.		
+1003	1060	40	50	40	B¹n quyÕt ®Þnh ®Õn <color=red>Tû vâ tr­êng<color> (D­¬ng Ch©u/Thµnh §«/T­¬ng D­¬ng) thö søc. Sau ®ã quay l¹i <color=red>T­¬ng D­¬ng<color> gÆp L­u ¤n Cæ<color=red> (201,199)<color> xin chØ thÞ!		
+1003	1060	40	50	50	L­u UÈn Cæ nghe b¹n kÓ râ t×nh h×nh v« cïng lo l¾ng.		
+1003	1060	40	50	60	L­u UÈn Cæ b¶o b¹n lËp tøc quay vÒ <color=red>BiÖn Kinh<color> t×m Th¸c B¹t <color=red> (209,190)<color>,t×nh h×nh rÊt khÈn cÊp!		
+1003	1060	40	50	70	Th¸c B¹t  nghe b¹n kÓ xong v« cïng tøc giËn.		
+1003	1060	40	50	80	Th¸c B¹t  b¶o b¹n ®Õn Tû vâ tr­êng ®¸nh th¾ng 1 trËn v× uy danh cña §¹i Kim. NÕu thua ®õng quay vÒ!		
+1003	1060	40	50	90	Ng­êi ®Ò x­íng thi ®Êu l«i ®µi lµ <color=red>T­¬ng D­¬ng<color> ®¹i hµo NguyÔn Minh ViÔn<color=red> (222,200)<color>,vèn lµ §Ö tö tôc gia cña ThiÕu L©m Tù 		
+1003	1060	40	50	100	Th¸c B¹t b¶o b¹n ®i h¹ thñ NguyÔn Minh ViÔn.		
+1003	1060	40	50	110	KÕt liÔu NguyÔn Minh ViÔn, quay vÒ <color=red>BiÖn Kinh<color>gÆp Th¸c B¹t <color=red> (209,190)<color> phôc mÖnh.		
+1003	1060	40	50	120	NhiÖm vô hoµn thµnh! TiÒn ®å réng thªnh thang		
+1003	1061	50	60	10	Th¸c B¹t qu¶ nhiªn gi÷ lêi! Hoµng th­îng phong cho b¹n lµm B×nh Nam Qu©n §« S¸t HiÖu óy.	TuyÖt S¸t	Th¸c B¹t qu¶ nhiªn gi÷ lêi! Hoµng th­îng phong cho b¹n lµm B×nh Nam Qu©n §« S¸t HiÖu óy.
+1003	1061	50	60	20	B¹n c¶m thÊy ch­a lËp ®­îc c«ng lao g×, muèn tham gia <color=red> ®¹i chiÕn Tèng Kim<color> lÊy <color=red>200 ®iÓm tÝch lòy<color>.		
+1003	1061	50	60	30	§¹t ®ñ ®iÓm tÝch lòy, vÒ <color=red>BiÖn Kinh<color>gÆp Th¸c B¹t <color=red> (209,190)<color> th­¬ng l­îng.		
+1003	1061	50	60	40	Th¸c B¹t cho biÕt Hoµng Th­îng chuÈn bÞ triÖu kiÕn b¹n, cÇn ph¶i chuÈn bÞ tr­íc c¸c kiÕn thøc qu©n sù nhÊt lµ <color=red>ChiÕn tr­êng Tèng Kim<color>.		
+1003	1061	50	60	50	B¾t ®Çu chuÈn bÞ tr¶ lêi! Xem ra b¹n rÊt tù tin!		
+1003	1061	50	60	60	B¹n ®· tr¶ lêi xong vÊn ®Ò! 		
+1003	1061	50	60	70	Th¸c B¹t v« cïng hµi lßng, xem ra b¹n ®· thËt sù l·o luyÖn		
+1003	1061	50	60	80	Th¸c B¹t Hoµi Xuyªn s¾c mÆt cã vÎ ®¨m chiªu! NhÊt ®Þnh ®· cã chuyÖn		
+1003	1061	50	60	90	Th¸c B¹t than thë hãa ra lµ v× viÖc §¹i qu©n Nam h¹ gÆp khã kh¨n.		
+1003	1061	50	60	100	 Kim binh ®ang khèn khã t¹i T­¬ng D­¬ng, b¹n phông mÖnh ®i trõ <color=red>Sö ThÞnh Do·n<color> ë T­¬ng D­¬ng <color=red> (169,219)<color>.		
+1003	1061	50	60	110	Tr¶m M· ®ao cña ThÞnh Do·n suýt chót n÷a ®· lÊy m¹ng cña b¹n. Nh­ng b¹n vÉn lµ anh hïng! Quay vÒ <color=red>BiÖn Kinh<color> gÆp Th¸c B¹t <color=red> (209,190)<color>.		
+1003	1061	50	60	120	VÒ <color=red>BiÖn Kinh<color> gÆp Th¸c B¹t <color=red> (209,190)<color>. LÇn nµy b¹n ®· lËp ®­îc c«ng to		

@@ -1,119 +1,119 @@
 problemid	problemcontent	channelA	channelB	channelC
-1	ÏÂÃæÄÄÖÖÊÂÊÇÍ¬°é²»ÄÜ×öµÄ	°ïÖúÍæ¼Ò´ò¹Ö	¸øÓëÍæ¼ÒÈÎÎñ	°ïÖú¹Ö´òÍæ¼Ò
-2	Ê²Ã´ÊÇÍ¬°é	Í¬°é¾ÍÊÇÒ»¸öÅã°éÄã¹²Í¬´³µ´½­ºþµÄNPC	Í¬°éÊÇ¸öÂô¶«Î÷µÄNPC	Í¬°éÊÇÒ»¸öÍæ¼Ò
-3	ÔÚÓÎÏ·ÖÐµÄµÚÒ»¸öÍ¬°éÊÇÈçºÎ»ñµÃµÄÄØ	Í¨¹ýÈÎÎñ»ñµÃ	ÔÚ³¤¸èÃÅ¹ÍÓ¶	ÔÚÒ°ÍâËµ·þ
-4	Äã¿ÉÒÔ¸úÍ¬°é¶Ô»°Âð	¿ÉÒÔ	²»¿ÉÒÔ	²»Çå³þ
-5	Í¬°éµÄÕÙ»½°´Å¥ÊÇÔÚÄÄÀï	Íæ¼Ò¿ì½ÝÀ¸	Í¬°é¿ì½ÝÀ¸	Í¬°éÊôÐÔÀ¸
-6	µ±ÄãÔÝÊ±²»ÏëÈÃÍ¬°é¸ú×ÅÄãÊ±¸ÃÔõÃ´°ì	µã»÷ÕÙ»½Í¬°é°´Å¥	µã»÷½ö¸úËæ°´Å¥	µã»÷½âÉ¢Í¬°é°´Å¥
-7	ÈçºÎÈÃÍ¬°éÈ¥¹¥»÷µÐÈË	µãÑ¡¶Ô»°°´Å¥	µãÑ¡½ö¸úËæ°´Å¥	µãÑ¡Ö÷¶¯¹¥»÷°´Å¥
-8	ÈçºÎÈÃÍ¬°éÖ»¸ú×ÅÄã	µãÑ¡½ö¸úËæ°´Å¥	µãÑ¡Ö÷¶¯¹¥»÷°´Å¥	Ñ¡ÔñÍ¬°éÈ»ºóÔÚ×Ô¼ºÉí±ßµã×ó¼ü
-9	ÓÃÀ´²é¿´Í¬°éµÄÊôÐÔ½çÃæµÄ°´Å¥ÊÇ¿ì½ÝÀ¸ÉÏ´Ó×óÊýÆðµÄµÚ¼¸¸ö	µÚ8¸ö	µÚ5¸ö	µÚ1¸ö
-10	ÓÃÀ´²é¿´Í¬°éµÄ¼¼ÄÜ½çÃæµÄ°´Å¥ÊÇ¿ì½ÝÀ¸ÉÏ´ÓÓÒÊýÆðµÄµÚ¼¸¸ö	µÚ9¸ö	µÚ8¸ö	µÚ2¸ö
-11	ÈçºÎ¸ø×Ô¼ºµÄÍ¬°éÆðÃû×Ö	ÄÔ´üÀïËæ±ãÏë1¸ö£¬ÊÂ¾ÍÕâÃ´³ÉÁË	¸ø¹Ù·½Ð´ÐÅ	ÔÚÍ¬°éÊôÐÔÃæ°åµÄÐÕÃûÀ¸ÀïÊäÈë
-12	Í¬°é»èÃÔºóÒª¹ý¶à³¤Ê±¼ä²ÅÄÜÔÙ´ÎÕÙ»½	3·ÖÖÓ	5·ÖÖÓ	10·ÖÖÓ
-13	ÏëÈÃÍ¬°é»Ø¸´ÉúÃüÔõÃ´°ì	¸øËûÂòÒ©³Ô	Ö»ÒªÈÃÍ¬°é´¦ÓÚ·ÇÕÙ»½³ö×´Ì¬¾Í¿ÉÒÔ×Ô¶¯»Ø¸´	¶ÔËûÓÃ¸¨Öú¼¼ÄÜ
-14	µ±Í¬°éÉúÃüÖµ½µµ½0Ê±Ëû½«»á½øÈë	ËÀÍö×´Ì¬	¿ñÂÒ×´Ì¬	»èÃÔ×´Ì¬
-15	µ±Ò»¸öÍ¬°é´¦ÓÚ¡°½ö¸úËæ¡±×´Ì¬£¬µ±ÓÐµÐÈË¹¥»÷ËûÊ±Ëû»á	·´»÷µÐÈË	Ê¹ÓÃ»Ø¸´¼¼ÄÜ	Ê²Ã´¶¼²»×öÖ»ÊÇ¸úËæÍæ¼Ò
-16	µ±Ò»¸öÍ¬°é´¦ÓÚ¡°¹¥»÷¡±×´Ì¬£¬µ±¸½½üÓÐµÐÈËÊ±Ëû»á	¸ù¾ÝÍ¬°éÐÔ¸ñµÄ²»Í¬»áÓÐ²»Í¬µÄ·´Ó¦	³åÉÏÈ¥¹¥»÷µÐÈË	Ê²Ã´¶¼²»×ö
-17	Ò»µ©Äã½âÉ¢ÁËÒ»¸öÍ¬°éºóÄãÄÜÕÒ»ØËûÂð	ÄÜ	²»ÄÜ	Ö»ÒªÈ¥³¤¸èÃÅ¾ÍÄÜÕÒ»Ø
-18	½âÉ¢Í¬°é°´Å¥ÊÇÔÚ	Í¬°é¿ì½ÝÀ¸Àï	Íæ¼Ò¿ì½ÝÀ¸Àï	Í¬°éÊôÐÔÃæ°åÀï
-19	Í¬°é¿ì½ÝÀ¸¿ÉÒÔÍÏ¶¯Âð	ÄÜ	²»ÄÜ	²»Çå³þ
-20	ÓÃÀ´ÓëÍ¬°é¶Ô»°µÄ°´Å¥ÊÇ¿ì½ÝÀ¸ÉÏ´Ó×óÊýÆðµÄµÚ¼¸¸ö	µÚ1¸ö	µÚ4¸ö	µÚ7¸ö
-21	µ±Äãµã»÷ÁË½âÉ¢Í¬°éµÄ°´Å¥ºó	ÄãµÄÍ¬°é¾Í»á±»½âÉ¢	ÄãµÄÍ¬°é»á±»ÕÙ»Ø	ÏµÍ³»áÏòÄãÈ·ÈÏÊÇ·ñ¼ÌÐø²Ù×÷
-22	ÄÜÈÃÍ¬°é²»È¥¹¥»÷µÐÈËµÄ°´Å¥½ÐÊ²Ã´	½ö¹¥»÷	½ö¸úËæ	²»¹¥»÷
-23	ÒÔÏÂÄÄ¸ö°´Å¥ÊÇÍ¬°é¿ì½ÝÀ¸ÉÏÃ»ÓÐ	ÕÙ»½Í¬°é	½âÉ¢Í¬°é	Ö÷¶¯¹¥»÷
-24	µ±Í¬°é½áÊø»èÃÔ×´Ì¬ºó£¬ËûµÄÉúÃüÖµÎªÔ­À´µÄ	10%	50%	100%
-25	µ±Í¬°é´¦ÓÚ¡°½ö¸úËæ¡±×´Ì¬Ê±£¬ÒªµãÊ²Ã´°´Å¥²ÅÄÜÈÃÍ¬°éÈ¥¹¥»÷µÐÈË	Ö÷¶¯¹¥»÷	½âÉ¢Í¬°é	ÕÙ»½Í¬°é
-26	ÔÚÏµÍ³Ñ¯ÎÊÄã¡°ÄãÈ·¶¨Òª½âÉ¢Õâ¸öÍ¬°é£¿¡±µÄÊ±ºòÄãÑ¡¡°ÊÇ¡±£¬ÕâÒâÎ¶×Å	ÄãÒªÕÙ»ØÄãµÄÍ¬°é	ÄãÓÀÔ¶µÄÅ×ÆúÁËÕâ¸öÍ¬°é	Äã°ïÕâ¸öÍ¬°éÉý¼¶
-27	½âÉ¢Í¬°é°´Å¥ÊÇÓÃÀ´¸ÉÊ²Ã´µÄÄØ	ÔÝÊ±ÊÕÆðÄãµÄÍ¬°é	ÓÀ¾ÃµØÅ×ÆúÕâ¸öÍ¬°é	ÈÃÄãµÄÍ¬°é¹¥»÷
-28	ÒÔÏÂËµ·¨ÄÄ¸öÊÇ¶ÔµÄ	½âÉ¢ÁËµÄÍ¬°é¿ÉÒÔÕÒ»Ø	½ö¸úËæ×´Ì¬µÄÍ¬°é»á¹¥»÷µÐÈË	Äã²»¿ÉÒÔÖ¸¶¨Í¬°éÈ¥´òÄ³¸öµÐÈË
-29	¡°ÕÙ»½Í¬°é¡±°´Å¥³ýÁËÄÜ°ÑÍ¬°éÕÙ»½³öÀ´Íâ»¹ÓÐÊ²Ã´¹¦ÄÜ	ÕÙ»ØÄãµÄÍ¬°é	ÃüÁîÄãµÄÍ¬°é¹¥»÷	½âÉ¢ÄãµÄÍ¬°é
-30	ÒÔÏÂÄÄ¸öÊÇÍ¬°éÃ»ÓÐµÄÊôÐÔ	Éí·¨	Á¦Á¿	ÐÒÔË
-31	ÒÔÏÂÄÄ¸öÊÇÍ¬°éÓÐµÄÊôÐÔ	ÈËÆ·	ÐÒÔË	ÄÚ¹¦
-32	Á¦Á¿Ó°ÏìÍ¬°éµÄ	ÉÁ±Ü	ÃüÖÐ	É±ÉË
-33	Í¬°éÉý¼¶Ê±£¬ÊôÐÔµÄÌáÉý·½·¨ÊÇ	·ÖÅäÇ±ÄÜµã	·ÖÅä×ÊÖÊµã	×Ô¶¯ÌáÉý
-34	Í¬°éµÄÒÆ¶¯ËÙ¶ÈÓÉÊ²Ã´¾ö¶¨	Íæ¼ÒµÄÒÆ¶¯ËÙ¶È	Í¬°éµÄÅÜËÙ	Íæ¼ÒµÄÉí·¨
-35	É±ÉËÊÇÖ¸	Í¬°é²»Ëã¼¼ÄÜµÄ¹¥»÷Öµ	Í¬°éËãÉÏ¼¼ÄÜµÄ¹¥»÷Öµ	Í¬°éËãÉÏËùÓÐµÄ¼Ó³ÉµÄ¹¥»÷Öµ
-36	ÒÔÏÂÄÄÒ»ÏîÊôÐÔ¾ö¶¨Í¬°éµÄ¹¥»÷·½Ê½	ÐÔ¸ñ	Á¦Á¿	ÉÁ±Ü
-37	ÒÔÏÂÄÄÒ»ÏîÊôÐÔÊÇÓÐ×ÊÖÊµÄ	ÐÔ¸ñ	É±ÉË	ÅÜËÙ
-38	Í¬°éÎå·À´ÓÉÏÖÁÏÂµÄÅÅÁÐË³ÐòÎª	ÆÕ·À£¬¶¾·À£¬±ù·À£¬»ð·À£¬À×·À	ÆÕ·À£¬±ù·À£¬À×·À£¬»ð·À£¬¶¾·À	ÆÕ·À£¬±ù·À£¬»ð·À£¬¶¾·À£¬À×·À
-39	Í¬°éÓÐÅÜËÙ¼°ÐÒÔËÊôÐÔÂð	Ö»ÓÐÅÜËÙ	Ö»ÓÐÐÒÔË	Á½Õß¶¼ÓÐ
-40	ÒÔÏÂÄÄÖÖÊôÐÔÊÇÍ¬°éÓÐ¶øÍæ¼ÒÃ»ÓÐµÄ	Á¦Á¿	ÃüÖÐ	¾«Á¦
-41	ÒÔÏÂÄÄÖÖÊôÐÔÊÇÍæ¼ÒÓÐ¶øÍ¬°éÃ»ÓÐµÄ	ÐÔ¸ñ	ÄÚ¹¦	ÃüÖÐ
-42	ÒÔÏÂ¼¸×éÊôÐÔÈ«¶¼ÓµÓÐ×ÊÖÊµÄÒ»×éÊÇ	ÉúÃü¡¢ÅÜËÙ¡¢ÐÒÔË	ÃüÖÐ¡¢Á¦Á¿¡¢ÄÚ¹¦	ÉÁ±Ü¡¢Éí·¨¡¢ÐÒÔË
-43	¾ö¶¨ÊôÐÔ³É³¤µÄ¿ìÂýµÄÊôÐÔÊÇ	Á¦Á¿	É±ÉË	×ÊÖÊ
-44	Í¬°é×ÊÖÊ¾ö¶¨µÄÊôÐÔÖµÔöÁ¿»áÔÚÒÔÏÂÄÄ¸ö¼¶±ðÊ±»á·¢ÉúÐ¡±ä¶¯	20	70	90
-45	Í¬°éÓÐ×î¸ßµÈ¼¶Âð	ÓÐ	Ã»ÓÐ	ÓÃÌØÊâµÀ¾ß¿ÉÒÔÍ»ÆÆµÈ¼¶ÉÏÏÞ
-46	Í¬°éµÄ×î¸ßµÈ¼¶ÊÇ	80	100	120
-47	×ÊÖÊ×î¸ßÊÇ¶àÉÙ	5	8	10
-48	Í¬°éÄÜ´©×°±¸Âð	ÄÜ	²»ÄÜ	²»Ò»¶¨
-49	ÈÎÎñ¿ÉÒÔÌáÉýÍ¬°éµÄ×ÊÖÊÂð	½ÌÓýÈÎÎñ¿ÉÒÔ	Ä¿Ç°»¹²»¿ÉÒÔ	ÐÞÁ¶ÈÎÎñ¿ÉÒÔ
-50	Í¬°é×ÊÖÊ¾ö¶¨µÄÊôÐÔÖµÔöÁ¿»á·¢Éú¸Ä±äµÄ¼¸¸ö¼¶±ðÊÇ	10¼¶¡¢30¼¶¡¢40¼¶¡¢90¼¶	10¼¶¡¢30¼¶¡¢50¼¶¡¢90¼¶	10¼¶¡¢20¼¶¡¢50¼¶¡¢90¼¶
-51	ÒÔÏÂ¹ØÓÚ×ÊÖÊµÄËµ·¨ÄÄ¸öÊÇÕýÈ·µÄ	Á½¸ö×ÊÖÊÍêÈ«ÏàÍ¬µÄÍ¬°éÉý¼¶µÄÊ±ºò»á³öÏÖ²î±ð	Á½¸ö×ÊÖÊÍêÈ«ÏàÍ¬µÄÍ¬°éÉý¼¶µÄÊ±ºò»áÃ»ÓÐ²î±ð	×ÊÖÊÖ»ÓÐÒ»¸ö
-52	ÒÔÏÂÄÄÒ»ÏîÊÇÓÂÃÍÐÍµÄÍ¬°éµÄÌØÕ÷	ÉúÃüÖµ½µµ½30%ÒÔÏÂÌÓÅÜ	¹¥»÷¶ÔÊÖÊ±²»¿¼ÂÇ×ÔÉíËðÉË	¹¥»÷Ñª×îÉÙµÄµÐÈË
-53	µ±ÔÚÓÂÃÍÐÍµÄÍ¬°éµÄÊÓÏß·¶Î§ÄÚÓÐ¶à¸öµÐÈË£¬ÄÇÃ´Ëû»á	¹¥»÷Ñª×îÉÙµÄµÐÈË	ÌÓÅÜ	¹¥»÷ÀëËû×î½üµÄµÐÈË
-54	ÄÄÖÖÀàÐÍµÄÍ¬°é»áÈ¥¹¥»÷Ñª×îÉÙµÄµÐÈË	ÓÂÃÍÐÍ	ÎÀÖ÷ÐÍ	Á÷Ã¥ÐÍ
-55	Á÷Ã¥ÐÍµÄÍ¬°é»áÌÓÅÜÂð	»á	²»»á	²»Çå³þ
-56	Á÷Ã¥ÐÍµÄÍ¬°é»áÔÚÑªµÍÓÚ¶àÉÙÊ±ÌÓÅÜ	10%	20%	30%
-57	µ±ÔÚÎÀÖ÷ÐÍµÄÍ¬°éµÄÊÓÏß·¶Î§ÄÚÓÐµÐÈË£¬ÄÇÃ´Ëû»á	°ïÍæ¼Ò¼ÓÑª	Ê²Ã´¶¼²»×ö	ÊÓÖ÷ÈËµÄ×´¿ö¶ø¶¨
-58	ÎÀÖ÷ÐÍµÄÍ¬°é»áÔÚÑªµÍÓÚ¶àÉÙÊ±ÌÓÅÜ	20%	30%	²»»áÌÓÅÜ
-59	ÒÔÏÂÄÄÏîÊÇÅ³ÈõÐÍÍ¬°éµÄÌØµã	ÊÜµ½¹¥»÷»áÌÓÅÜ	»á¹¥»÷ÀëËû×î½üµÄ¶ÔÊÖ	»á¹¥»÷ÑªÉÙµÄ¶ÔÊÖ
-60	Å³ÈõÐÍµÄÍ¬°é»áÔÚÑªµÍÓÚ¶àÉÙÊ±ÌÓÅÜ	10%	20%	30%
-61	²»»áÌÓÅÜµÄÍ¬°éÀàÐÍÓÐ	ÎÀÖ÷ÐÍ¡¢Á÷Ã¥ÐÍ	ÓÂÃÍÐÍ¡¢ÎÀÖ÷ÐÍ	Á÷Ã¥ÐÍ¡¢Å³ÈõÐÍ
-62	²¢²»¿¼ÂÇ×ÔÉíËðÉËµÄÍ¬°éÀàÐÍÓÐ	ÓÂÃÍÐÍ¡¢ÎÀÖ÷ÐÍ	ÎÀÖ÷ÐÍ¡¢Á÷Ã¥ÐÍ	Á÷Ã¥ÐÍ¡¢Å³ÈõÐÍ
-63	»áÌÓÅÜµÄÍ¬°éÀàÐÍÓÐ	ÓÂÃÍÐÍ¡¢ÎÀÖ÷ÐÍ	ÎÀÖ÷ÐÍ¡¢Á÷Ã¥ÐÍ	Á÷Ã¥ÐÍ¡¢Å³ÈõÐÍ
-64	Í¬°éµÄ×ÊÖÊ¿ÉÒÔÌáÉýÂð	¿ÉÒÔ	Ä¿Ç°²»¿ÉÒÔ	²»ÖªµÀ
-65	ÏàÍ¬×ÊÖÊµÄÍ¬°éÉý¼¶Ê±ÊôÐÔµÄÌáÉýÏàÍ¬Âð	ÏàÍ¬	²»ÏàÍ¬	¿ÉÄÜÏàÍ¬
-66	ÒÔÏÂÄÄÒ»¸öÊôÐÔÊÇÃ»ÓÐ×ÊÖÊµÄ	ÉúÃü	ÐÒÔË	¾«Á¦
-67	Ç×ÃÜ¶È¾ÍÊÇ·´Ó³____¹ØÏµµÄÊýÖµ	Í¬°éÓëÍæ¼Ò	Í¬°éÓëÍ¬°é	Íæ¼ÒÓëÍæ¼Ò
-68	Í¬°éµÄ¾ø¼¼µÄÊÇ	´ò¹ÖµÄ¹¥»÷¼¼ÄÜ	ÔöÇ¿Í¬°é×Ô¼ºµÄ±»¶¯¸¨Öú¼¼ÄÜ	ÔöÇ¿Ö÷ÈËµÄÖ÷¶¯¸¨Öú¼¼ÄÜ
-69	Í¬°éµÄ¾ø¼¼ÈçºÎÉý¼¶	Ñ§Ï°¼¼ÄÜÊé	¼Ó¼¼ÄÜµã	Í¨¹ýÊìÁ·¶È
-70	Ëæ×ÅÍ¬°éµÄ³É³¤£¬Í¬°é»á¸Ä±äÄ£ÑùÂð	²»ÖªµÀ	²»»á	»á
-71	Èç¹ûÖ÷ÈËÅÜµÄÌ«¿ì£¬ÀëÍ¬°éºÜÔ¶ÁË£¬Í¬°é»áÔõÃ´°ì	ÃÔÂ·£¬×ßÉ¢	±»Í¬²½µ½Ö÷ÈËÉí±ß	±»ºÃÐÄÈËËÍ»ØÀ´
-72	Í¬°éµÄµÍ¼¶Îä¹¦¼¼ÄÜ»á¶Ô¸ß¼¶Îä¹¦¼¼ÄÜ¼Ó³ÉÂð	»á	²»»á°É	²»ÖªµÀ
-73	Í¬°éµÄ×î¶à¿ÉÒÔÑ§Ï°¶àÉÙ±¾¿¹ÐÔ¼¼ÄÜÊé	10	15	20
-74	Í¬°éÔ½¼¶´ò¹Ö£¬¾­Ñé»á²»»áÓÐË¥¼õ	²»ÖªµÀ	²»»á	»á
-75	35¼¶ÒÔÇ°£¬Í¬°éÔÚ¶àÉÙ¼¶µØÍ¼´ò¹ÖÉý¼¶×î¿ì	15	25	35
-76	¶ÔÒ»¸ö4¼¶µÄ¼¼ÄÜÓÃÁËÒ»±¾8¼¶µÄ¼¼ÄÜÊé£¬½á¹û»áÔõÑù	ÉýÎª5¼¶	ÉýÎª8¼¶	²»ÄÜÊ¹ÓÃ
-77	Í¬°éµÄÎä¹¦ÈçºÎÉý¼¶	ÓÃ¾­ÑéÉý¼¶	¿¿¼¼ÄÜÊìÁ·¶È	Ê¹ÓÃ¼¼ÄÜÊé
-78	Í¬°éµÄÎåÐÐ¿¹ÐÔ¼¼ÄÜÈçºÎÉý¼¶	ÓÃ¾­ÑéÉý¼¶	¿¿¼¼ÄÜÊìÁ·¶È	Ê¹ÓÃ¼¼ÄÜÊé
-79	Í¬°éµÄ³öÕÐÀ¸Àï¿ÉÒÔ·ÅÐ©Ê²Ã´¼¼ÄÜ	±»¶¯¼¼ÄÜ	ÎåÐÐ¿¹ÐÔ¼¼ÄÜ	Ö÷¶¯¼¼ÄÜ
-80	ÒÅÍü¼¼ÄÜ°´Å¥µÄ×÷ÓÃÊÇ	ÒÅÍü¸½¼Ó¼¼ÄÜµÄ	ÊÇÓÃÀ´½âÉ¢Í¬°éµÄ	ÊÇÓÃÀ´ÕÙ»ØÍ¬°éµÄ
-81	ÔÚÏµÍ³Ñ¯ÎÊÄã¡°ÄãÈ·¶¨ÒªÒÅÍüÕâ¸ö¼¼ÄÜ£¿¡±µÄÊ±ºòÄãÑ¡¡°ÊÇ¡±£¬ÕâÒâÎ¶×Å	ÄãÒªÕÙ»ØÄãµÄÍ¬°é	ÄãÓÀÔ¶µÄÒÅÍüÁËÕâ¸ö¼¼ÄÜ	ÄãÊ¹ÓÃÁËÕâ¸ö¼¼ÄÜ
-82	µ±ÄãÒÅÍüÁËÒ»¸ö¼¼ÄÜÖ®ºóÄã¿ÉÒÔÔÙ´ÎÑ§Ï°ËüÂð	¿ÉÒÔ	²»¿ÉÒÔ	²»Ò»¶¨
-83	ÄãÓÐÒ»Ïî¸½¼Ó¼¼ÄÜÎª6¼¶£¬ÄãÊ¹ÓÃÁËÒ»±¾¸Ã¼¼ÄÜµÄ5¼¶¼¼ÄÜÊé£¬ÕâÊ±ºò»á	ÄãµÄ¼¼ÄÜ½µÎª5¼¶	ÄãµÄ¼¼ÄÜÉýÎª7¼¶	ÏµÍ³ÌáÊ¾Äã²»ÄÜÊ¹ÓÃ¸Ã¼¼ÄÜÊé
-84	µ±³öÕÐÀ¸Îª¿Õ»áÔõÃ´Ñù	²»»áÎª¿Õ	Í¬°é»áËæ»úÊ¹ÓÃÎä¹¦	Í¬°é±äµÃ²»»á¹¥»÷
-85	ÎåÐÐ¿¹ÐÔ¼¼ÄÜÈçºÎ»ñµÃ	ÔÚnpc´¦Ñ§	Ê¹ÓÃ¼¼ÄÜÊé	Í¨¹ýÈÎÎñ»ñµÃ
-86	Í¬°é¿ÉÒÔÑ§Ï°¸½¼Ó¼¼ÄÜµÄÊýÁ¿ÓëÊ²Ã´ÓÐ¹Ø	Í¬°éµÄÎåÐÐ	Í¬°éµÄµÈ¼¶	Íæ¼ÒµÄµÈ¼¶
-87	Í¬°éÓÐ¼¸Àà¼¼ÄÜ	1	4	6
-88	¾ø¼¼µÄ»ñµÃÌõ¼þÊÇ	Í¨¹ý¾çÇéÈÎÎñ	Í¬°é¼¼ÄÜÈ«Âú	Ç×ÃÜ¶È´ïµ½100
-89	Í¬°é¸½¼Ó¼¼ÄÜÈçºÎÉý¼¶	ÓÃ¾­ÑéÉý¼¶	¿¿¼¼ÄÜÊìÁ·¶È	Ê¹ÓÃ¼¼ÄÜÊé
-90	ÔÚÍ¬°éµÄ³öÕÐÀ¸ÀïÓÐËÄ¸ö¡°¼¼ÄÜA¡±ºÍÒ»¸ö¡°¼¼ÄÜB¡±£¬ÄÇ¸ÃÍ¬°éÔÚÕ½¶·ÖÐÊ¹ÓÃ¼¼ÄÜBµÄ¼¸ÂÊÊÇ¶àÉÙ	20%	40%	60%
-91	³ðÉ±¡¢ÍÀÉ±Ä£Ê½ÏÂ£¬Íæ¼Ò»òÆäÍ¬°éÉ±ËÀÁËµÐ·½Íæ¼Ò£¬°´Ô­ÓÐÍæ¼Òpk¹æÔò³¤pkÖµ£»ÄÇÃ´Íæ¼Ò»òÆäÍ¬°éÉ±ËÀÁËµÐ·½Íæ¼ÒµÄÍ¬°é£¬³¤¶àÉÙµãpkÖµ	1µã	2µã	²»³¤
-92	Ò»¸öÍæ¼Ò×î¶àÄÜ´ø¼¸¸öÍ¬°é	2¸ö	4¸ö	5¸ö
-93	Õ½¶·Ä£Ê½ÏÂ£¬Íæ¼Ò»òÆäÍ¬°éÉ±ËÀÁËµÐ·½Íæ¼Ò£¬°´Ô­ÓÐÍæ¼Òpk¹æÔò´¦Àí£»ÄÇÃ´Íæ¼Ò»òÆäÍ¬°éÉ±ËÀÁËµÐ·½Íæ¼ÒµÄÍ¬°é£¬³¤¶àÉÙµãpkÖµ	1µã	²»³¤	2µã
-94	ÕÙ»½Í¬°é²Ù×÷¿ÉÒÔÁ¬Ðø½øÐÐÂð	¿ÉÒÔ	²»¿ÉÒÔ	²»Ò»¶¨
-95	Á½´ÎÕÙ»½Í¬°éµÄ¼ä¸ôÊ±¼äÎª	°ë·ÖÖÓ	1·ÖÖÓ	2·ÖÖÓ
-96	ÄÜÑ§Ï°¸½¼Ó¼¼ÄÜµÄ¸öÊýÈçºÎÔö¼Ó	È¥NPC´¦Ñ§Ï°	Ëæ×ÅÍ¬°éµÄµÈ¼¶Ôö¼Ó¶øÔö¼Ó	Í¨¹ý¼¼ÄÜÊéÑ§Ï°
-97	ÓÃÀ´ÇÐ»»Í¬°éµÄ°´Å¥ÊÇ¿ì½ÝÀ¸ÉÏ´Ó×óÊýÆðµÄµÚ¼¸¸ö	µÚ1¸ö	µÚ4¸ö	µÚ9¸ö
-98	ÒªÇÐ»»Í¬°éÓÐ¼¸ÖÖ²Ù×÷·½·¨	1ÖÖ	2ÖÖ	3ÖÖ
-99	Í¬°éÄÜÊ¹ÓÃ½ð´´Ò©Âð	ÄÜ	²»ÄÜ	ÔÚÍ¬°éÉúÃüÐ¡ÓÚ30%µÄÊ±ºò¿ÉÒÔ
-100	ÒÅÍü¼¼ÄÜ°´Å¥ÊÇÓÃÀ´×öÊ²Ã´ÓÃµÄ	ÒÅÍüÎä¹¦¼¼ÄÜ	ÒÅÍü¾ø¼¼	ÒÅÍü¸½¼Ó¼¼ÄÜ
-101	ÖØÇì»°Àï¡®ÉÕ¸Þ ¡¯ÊÇÊ²Ã´ÒâË¼	ÉÕÏã°Ý·ð	ÉÕ¿¾	ÂÒÀ´
-102	ÖØÇì»°Àï¡®¾¨·áºÓ³º¡¯ÊÇÊ²Ã´ÒâË¼	°Ñº£ÏÊÄÃµ½µ­Ë®ÀïÑøÖ³	´ó¾ªÐ¡¹Ö	Ë®ÕÇ´¬¸ß
-103	¹ã¶«»°ÒÔÏÂÈý¸ö´ÊÖÐ²»Í¬ÒâË¼µÄÊÇ	Ã©Äá 	´óÏçÀï 	Ä¾×ì
-104	¹ã¶«»°ÒÔÏÂÈý¸ö´ÊÖÐ²»Í¬ÒâË¼µÄÊÇ	¶¤×ô 	¹Ï×ô	µø×ô
-105	³¤É³»°Ìî¿Õ£¬ÏÂÃæÕâ¾ä»°¡®Ð¡Àõ×Ó£¬²»Ìý»°†ª£¬ÇÃÄãÁ½____¡¯¡£Õâ¸ö¾ä×Ó×îºóÓ¦¸ÃÌîÈëµÄ´Ê»ãÊÇÊ²Ã´	ÒÒ¹­	±û¹­	¶¡¹­
-106	³¤É³»°Ìî¿Õ£¬ÏÂÃæÕâ¾ä»°'Äã¹úÔÑ¼Ò»ï£¬¹íÎè____µÄ£¬Ã°µÃÄÄ¸ö³ÝÄãßÖ¡£'	Ê®Áù	Ê®Æß	Ê®°Ë 
-107	³É¶¼»°ÎÊ´ð£ºÎçË¯µÄÒ¹²æÎÊÀÏöÏÓã£º¡°ÇÐÄÄ¸öËúËú£¿¡±£¬ÎçË¯µÄÒ¹²æÊÇÎÊÀÏöÏÓã	ÇÐµ°¸âÂð	ÐÞÀíËúËúÃ×Âð	È¥ÄÄÀï
-108	³É¶¼»°ÎÊ´ð£ºÄÐ£ºÎÊÄã½²¼þÊÂ¡£öµÑÀÊéÏÂÌ¨ÁË¡£ Å®£º¹í³¶£¡ ÄÐ£º¹í³¶ÎÒ²»³¶¡£ ÎÊ£º´ÓÕâ¶Î¶Ô»°£¬ÎÒÃÇ¿ÉÒÔÖªµÀÊ²Ã´£¿	ÓÐ¸ö¹í½ÐöµÑÀÊé	Å®µÄ²»ÏàÐÅÊÀ½çÉÏÓÐ¹í	ÄÐµÄËµËûËµµÄÊÇÊµ»°
-109	Ìì½ò»°¡®Ó´£¡½é²»áËÄàÁËÃ´¡£¡¯ÎÊ£ºÕâ¾ä»°Ê²Ã´ÒâË¼	µôÈëÄà¹µ	¸Ðµ½¿Ö¾å	±§Ô¹ºó»Ú
-110	Ìì½ò»°¡®ÄãÍæ¹ýÕâÃæ¶ùÃ´£¿¡¯ÎÊ£ºÕâ¾ä»°Ê²Ã´ÒâË¼£¿	ÄãÓÃ¹ýÕâÖÖÃæ·ÛÃ´	ÄãÍæ¹ýÓÎÏ·µÄÕâ¸ö¹Ø¿¨Ã´	ÄãÕâ¸öÈËÌ«²»¸øÃæ×ÓÁË
-111	Ì¨ÖÝ»°ÎÊÌâ£ºÅ®£º¿ìµã£¡ÄãÍÛÔÚµÃ×°¸Ü…Þ£¿ÄÐ£ºÎÒÔÚ½Ó¿â¡£ÎÊ£ºÄÐµÄÏÖÔÚ¿ÉÄÜÔÚ×öÊ²Ã´	½Ó»õÎï	´©¿ã×Ó	ÕÕ¾µ×Ó
-112	Ì¨ÖÝ»°ÎÊÌâ£º¼×£ºÄãÔÚµÃ×°¸Ü…Þ?ÒÒ: ¶Ç×ÓÍ»È»ÌÛÁË ÎÊ:¡°¸Ü…Þ¡°ÊÇÊ²Ã´ÒâË¼ 	¸Ü¸Ë	¼×Ñ¯ÎÊÒÒµÄ³úÍ··ÅÔÚÄÄÀï	×öÊ²Ã´µÄÒâË¼
-113	ÉÂÎ÷»°£º¼×£º½ñ¶ù¸ö°Ñ¶î¶öÈÕËúßÖ£¡ ÒÒ£º×ß£¬†AÅÝâÉÆñ£¡  ÎÊ£ºËûÃÇ´òËãÏÂÒ»²½×öÊ²Ã´£¿	ºÈÌÀ	³Ô·¹	ÕÒÃÀÅ®
-114	ÉÂÎ÷»°£º¼×£º¶îÒªÑóÓó²ç²ç£¿ÒÒ£ºÞúÑÛµØºÜ£¬ÉÙÖ¨ÍÛ£¬µÈÄã´ó»ØÀ´Ê°¶ÞÄã¡£ÎÊ£ºÒÒ´ðÓ¦ÁË¼×µÄÇëÇóÁËÂð£¿ 	ÍêÈ«´ðÓ¦ÁË	´ðÓ¦ÓÉÆä¸¸Ç×½â¾ö	Ã»ÓÐ´ðÓ¦
-115	ÎÒÃÇÒ»°ãËµÄ³ÈË´³ÁËÊ²Ã´»ö»áÂîËû¡°ÕæÃ»ÓÃ£¡¡±ÄÇÄãÖªµÀÄÏ²ýÈËÔõÃ´ËµÂð	¸ÂÈø¸â	É­²»Àï±î	ÎÁ¹·
-116	¡°³Ô·¹¡±ÔÚÄÏ²ý»°ÀïÔõÃ´Äî	Ïº»ì	Æþ·´	¼Ù¸£¶÷£¨¸£¶÷Á¬ÔÚÒ»ÆðÄî£©
-117	Îäºº»°ÀïÕâ¾äµÄ¿ÕÏ¶Ó¦¸ÃÊÇ½²Ê²Ã´£º×öÌâÕâÂý£¬Ò»à©¶¼²»____	Ë£À­	ÂéÀ­	Ë¢¿ì
-118	Îäºº»°ÀïÕâ¾äµÄ¿ÕÏ¶Ó¦¸ÃÊÇ½²Ê²Ã´£º____´øÎÒÉý¼¶Èö£¡ 	¸ç¸ç	¹Õ×Ó	¿é×Ó
+1	ViÖc nµo §ång hµnh kh«ng thÓ lµm?	Gióp ng­êi ch¬i ®¸nh qu¸i	Giao nhiÖm vô cho ng­êi ch¬i	Gióp qu¸i ®¸nh ng­êi ch¬i
+2	§ång hµnh lµ sao?	Lµ 1 NPC cïng b¹n phiªu b¹t giang hå 	§ång hµnh lµ NPC b¸n ®å	§ång hµnh lµ mét ng­êi ch¬i
+3	Trong trß ch¬i lµm sao cã ®­îc §ång hµnh?	Hoµn thµnh nhiÖm vô sÏ häc ®­îc	§Õn Tr­êng Ca m«n ®Ó nhËn l·nh	LuyÖn c«ng  nhËn ®­îc
+4	Cã thÓ ®èi tho¹i víi §ång hµnh kh«ng?	Cã thÓ 	Kh«ng thÓ 	Kh«ng râ 
+5	PhÝm gäi §ång hµnh ë ®©u?	B¶ng c«ng cô cña ng­êi ch¬i	B¶ng c«ng cô cña §ång hµnh	B¶ng thuéc tÝnh §ång hµnh
+6	T¹m thêi kh«ng muèn cïng §ång hµnh lµm nhiÖm vô?	NhÊn nót gäi §ång hµnh	NhÊn nót theo sau	NhÊn nót gi¶i t¸n nhãm
+7	Lµm sao ®Ó §ång hµnh tÊn c«ng kÎ ®Þch?	NhÊn nót ®èi tho¹i víi §ång hµnh	NhÊn nót theo sau	NhÊn nót chñ ®éng c«ng kÝch
+8	Lµm sao ®Ó §ång hµnh theo sau m×nh?	NhÊn nót theo sau	NhÊn nót chñ ®éng c«ng kÝch	nhÊp chuét tr¸i vµo ®ång hµnh
+9	Tõ bªn tr¸i sang nót thø mÊy dïng ®Ó xem thuéc tÝnh cña §ång hµnh?	Thø 8	Nót thø 5	Thø 1
+10	§Ó xem kü n¨ng cña §ång hµnh nhÊn nót thø mÊy tõ bªn ph¶i sang?	Thø 8	Nót thø 7	Nót thø 2
+11	Lµm sao ®Æt tªn cho §ång hµnh?	Tù nghÜ mét tªn lµ ®­îc	Göi tªn cho GM	NhËp vµo tªn nh©n vËt trong b¶n thuéc tÝnh ®ång hµnh
+12	§ång hµnh sau khi h«n mª ph¶i mÊt mét thêi gian dµi míi cã thÓ gäi l¹i	3 phót	5 phót	10 phót
+13	Muèn håi phôc sinh lùc cho §ång hµnh?	Uèng d­îc liÖu	ChØ cÇn §ång hµnh kh«ng xuÊt hiÖn 	Dïng kü n¨ng hç trî §ång hµnh 
+14	Khi sinh lùc cña §ång hµnh gi¶m ®Õn 0, sÏ nh­ thÕ nµo?	tr¹ng th¸i tö vong	tr¹ng th¸i ho¶ng lo¹n	tr¹ng th¸i h«n mª 
+15	Khi §ång hµnh ë tr¹ng th¸i "theo sau" khi bÞ ®Þch tÊn c«ng sÏ 	Ph¶n c«ng kÎ ®Þch	Sö dông kü n¨ng håi phôc 	ChØ cÇn theo sau ng­êi ch¬i
+16	Khi ng­êi ch¬i ë tr¹ng th¸i "c«ng kÝch", khi bªn c¹nh cã kÎ ®Þch sÏ 	TÝnh c¸ch cña §ång hµnh kh«ng gièng nhau sÏ cã ph¶n øng kh¸c nhau.	TiÕn lªn c«ng kÝch kÎ ®Þch	Kh«ng lµm g× hÕt
+17	Sau khi gi¶i t¸n nhãm cã thÓ t×m l¹i §ång hµnh kh«ng?	Cã thÓ 	Kh«ng	§Õn Tr­êng Ca M«n sÏ t×m ®­îc
+18	Nót gi¶i t¸n §ång hµnh ë 	B¶ng c«ng cô §ång hµnh	B¶ng c«ng cô ng­êi ch¬i	giao diÖn thuéc tÝnh cña §ång hµnh
+19	B¶ng c«ng cô §ång hµnh cã thÓ di chuyÓn kh«ng?	Cã thÓ 	Kh«ng	Kh«ng râ 
+20	Tõ bªn tr¸i sang nót nµo lµ nót ®èi tho¹i víi §ång hµnh?	Thø 1	Thø 4	Nót thø 7
+21	Sau khi nhÊn nót gi¶i t¸n nhãm	§ång hµnh sÏ bÞ gi¶i t¸n	§ång hµnh sÏ bÞ triÖu håi	HÖ thèng sÏ hái b¹n cã tiÕp tôc thao t¸c kh«ng
+22	Nót yªu cÇu §ång hµnh kh«ng tÊn c«ng kÎ ®Þch?	chñ ®éng c«ng kÝch 	Theo sau	Kh«ng tÊn c«ng
+23	Nót nµo d­íi ®©y trong b¶n c«ng cô §ång hµnh kh«ng cã?	Gäi §ång hµnh	Gi¶i t¸n §ång hµnh	chñ ®éng c«ng kÝch 
+24	Khi §ång hµnh tho¸t khái tr¹ng th¸i h«n mª, sinh lùc sÏ phôc håi nguyªn vÑn	10%	50%	100%
+25	Khi §ång hµnh ë tr¹ng th¸i "theo sau", nhÊn nót nµo ®Ó §ång hµnh tÊn c«ng kÎ ®Þch?	chñ ®éng c«ng kÝch 	Gi¶i t¸n §ång hµnh	Gäi §ång hµnh
+26	Khi hÖ thèng hái: "B¹n muèn gi¶i t¸n §ång hµnh nµy?" nÕu b¹n chän " X¸c nhËn", lËp tøc: 	B¹n muèn Gäi §ång hµnh	bá §ång hµnh nµy	B¹n gióp §ång hµnh th¨ng cÊp
+27	Nót gi¶i t¸n §ång hµnh ®Ó lµm g×?	T¹m thêi cÊt §ång hµnh vµo	Xãa ®i vÜnh viÔn §ång hµnh nµy	Muèn §ång hµnh tÊn c«ng 
+28	Nh÷ng c©u sau ®©y c©u nµo ®óng?	Gi¶i t¸n xong vÉn cã thÓ t×m l¹i	§ång hµnh sÏ tÊn c«ng kÎ ®Þch khi ë tr¹ng th¸i "theo sau".	B¹n kh«ng thÓ chØ ®Þnh §ång hµnh ®¸nh mçi kÎ ®Þch
+29	Nót "Gäi §ång hµnh" cßn cã chøc n¨ng nµo kh¸c?	Gäi §ång hµnh	Ra lÖnh cho §ång hµnh tÊn c«ng 	Gi¶i t¸n §ång hµnh
+30	Thuéc tÝnh nµo §ång hµnh kh«ng cã?	Th©n ph¸p	Søc m¹nh	May m¾n
+31	Thuéc tÝnh nµo §ång hµnh cã?	Nh©n phÈm	May m¾n	Néi c«ng
+32	Søc m¹nh ¶nh h­ëng §ång hµnh?	Tr¸nh nÐ 	ChÝnh x¸c	S¸t th­¬ng
+33	Khi §ång hµnh th¨ng cÊp, c¸ch n©ng thuéc tÝnh lµ: 	N©ng ®iÓm tiÒm n¨ng	N©ng ®iÓm t­ chÊt	Tù ®éng n©ng
+34	C¸i g× ¶nh h­ëng ®Õn tèc ®é di chuyÓn cña §ång hµnh?	Tèc ®é di chuyÓn cña Ng­êi ch¬i	Tèc ®é ch¹y cña §ång hµnh	Th©n ph¸p cña Ng­êi ch¬i
+35	S¸t th­¬ng lµ: 	TrÞ sè cña kü n¨ng c«ng kÝch 	TrÞ sè hiÖn cã trªn  kü n¨ng c«ng kÝch 	tÊt c¶ c¸c kü n¨ng c«ng kÝch 
+36	Thuéc tÝnh nµo quyÕt ®Þnh c¸ch tÊn c«ng?	TÝnh c¸ch	Søc m¹nh	Tr¸nh nÐ 
+37	Thuéc tÝnh nµo d­íi ®©y cã t­ chÊt?	TÝnh c¸ch	S¸t th­¬ng	Tèc ®é ch¹y
+38	Phßng thñ cña §ång hµnh s¾p theo thø tù lµ: 	phßng vËt lý, phßng ®éc, phßng b¨ng, phßng háa, phßng l«i  	phßng vËt lý, phßng b¨ng, phßng l«i, phßng háa, phßng ®éc 	phßng vËt lý, phßng b¨ng, phßng háa, phßng ®éc, phßng l«i  
+39	§ång hµnh cã tèc ®é ch¹y vµ thuéc tÝnh may m¾n kh«ng?	ChØ cã tèc ®é ch¹y	ChØ cã may m¾n	Hai lo¹i ®Òu cã 
+40	Thuéc tÝnh nµo d­íi ®©y ng­êi ch¬i kh«ng cã?	Søc m¹nh	ChÝnh x¸c	Tinh lùc
+41	Thuéc tÝnh nµo §ång hµnh kh«ng cã?	TÝnh c¸ch	Néi c«ng	ChÝnh x¸c
+42	C¸c nhãm thuéc tÝnh d­íi ®©y, nhãm nµo thuéc t­ chÊt?	Sinh lùc, tèc ®é ch¹y, may m¾n	ChÝnh x¸c, søc m¹nh, néi c«ng	NÐ tr¸nh, th©n ph¸p, may m¾n
+43	Thuéc tÝnh quyÕt ®Þnh  sù tr­ëng thµnh nhanh chËm lµ g×?	Søc m¹nh	S¸t th­¬ng	T­ chÊt
+44	TrÞ sè thuéc tÝnh ¶nh h­ëng t­ chÊt cña §ång hµnh sÏ bÞ biÕn ®æi ë ®¼ng cÊp nµo?	20	70	90
+45	§ång hµnh cã ®¼ng cÊp cao nhÊt kh«ng?	Cã 	Kh«ng cã 	Dïng vËt phÈm ®Æc biÖt cã thÓ t¨ng ®¼ng cÊp
+46	§¼ng cÊp cao nhÊt cña §ång hµnh lµ 	80	100	120
+47	T­ chÊt cao nhÊt lµ bao nhiªu?	5	8	10
+48	§ång hµnh cã thÓ mÆc trang bÞ kh«ng?	Cã thÓ 	Kh«ng	Kh«ng nhÊt ®Þnh
+49	Lµm nhiÖm vô cã thÓ t¨ng t­ chÊt cña §ång hµnh kh«ng?	NhiÖm vô s¬ nhËp cã thÓ 	HiÖn t¹i vÉn ch­a ®­îc	Lµm nhiÖm vô cã thÓ 
+50	TrÞ sè thuéc tÝnh ¶nh h­ëng t­ chÊt cña §ång hµnh sÏ bÞ biÕn ®æi ë ®¼ng cÊp nµo?	CÊp 10, cÊp 30, cÊp 40, cÊp 90	CÊp 10, cÊp 30, cÊp 50, cÊp 90	CÊp 10, cÊp 20, cÊp 50, cÊp 90
+51	§Þnh nghÜa vÒ t­ chÊt d­íi ®©y c©u nµo ®óng?	§ång hµnh t­ chÊt gièng nhau khi th¨ng cÊp cã g× kh¸c biÖt?	§ång hµnh cã t­ chÊt gièng nhau khi t¨ng cÊp cã g× kh¸c biÖt?	T­ chÊt chØ cã 1
+52	§Æc ®iÓm cña §ång hµnh Dòng M·nh lµ?	Sinh lùc gi¶m 30% sÏ ch¹y	TÊn c«ng ®èi thñ kh«ng sî bÞ th­¬ng	TÊn c«ng kÎ ®Þch cã m¸u Ýt
+53	Trong ph¹m vi cã nhiÒu kÎ ®Þch, §ång hµnh Dòng M·nh sÏ:	TÊn c«ng kÎ ®Þch cã m¸u Ýt	Bá ch¹y	TÊn c«ng kÎ ®Þch ®øng gÇn
+54	Lo¹i §ång hµnh nµo tÊn c«ng kÎ ®Þch Ýt m¸u nhÊt?	Dòng M·nh	VÖ Chñ 	L­u Mang
+55	§ång hµnh L­u Mang cã bá ch¹y kh«ng?	Gi¶m	Kh«ng gi¶m	Kh«ng râ 
+56	§ång hµnh L­u Mang lóc hÕt m¸u sÏ bá ch¹y	10%	20%	30%
+57	Trong ph¹m vi cã nhiÒu kÎ ®Þch, §ång hµnh VÖ Chñ sÏ: 	Gióp ng­êi ch¬i t¨ng m¸u	Kh«ng lµm g× hÕt	Tïy c¬ øng biÕn
+58	§ång hµnh VÖ Chñ mÊt bao nhiªu m¸u míi bá ch¹y?	20%	30%	SÏ kh«ng bá ch¹y
+59	§Æc ®iÓm cña §ång hµnh Näa Nh­îc? 	BÞ tÊn c«ng sÏ bá ch¹y	SÏ tÊn c«ng kÎ ®Þch ë gÇn	SÏ tÊn c«ng kÎ ®Þch m¸u Ýt
+60	M¸u cña §ång hµnh Näa Nh­îc gi¶m ®Õn bao nhiªu sÏ bá ch¹y?	10%	20%	30%
+61	§ång hµnh kh«ng bá ch¹y cã: 	VÖ Chñ, L­u Mang	Dòng M·nh, VÖ Chñ 	L­u Mang, Näa Nh­îc
+62	§ång hµnh kh«ng nghÜ ®Õn tæn th­¬ng b¶n th©n cã 	Dòng M·nh, VÖ Chñ 	VÖ Chñ, L­u Mang	L­u Mang, Näa Nh­îc
+63	§ång hµnh sÏ bá ch¹y cã 	Dòng M·nh, VÖ Chñ 	VÖ Chñ, L­u Mang	L­u Mang, Näa Nh­îc
+64	T­ chÊt cña §ång hµnh cã thÓ t¨ng kh«ng?	Cã thÓ 	Kh«ng thÓ 	Kh«ng biÕt
+65	§ång hµnh cã t­ chÊt gièng nhau khi t¨ng cÊp thuéc tÝnh cã t¨ng gièng nhau kh«ng?	Gièng nhau	Kh«ng gièng nhau	Cã thÓ gièng nhau
+66	Thuéc tÝnh nµo kh«ng cã t­ chÊt?	Sinh lùc	May m¾n	Tinh lùc
+67	§é th©n mËt lµ chØ gi¸ trÞ cña quan hÖ: 	§ång hµnh vµ ng­êi ch¬i	§ång hµnh víi §ång hµnh	Ng­êi ch¬i víi ng­êi ch¬i
+68	TuyÖt chiªu cña §ång hµnh lµ: 	Kü n¨ng ®¸nh qu¸i 	T¨ng kü n¨ng hç trî bÞ ®éng cña §ång hµnh 	T¨ng kü n¨ng hç trî chñ ®éng cña Chñ nh©n 
+69	TuyÖt kü cña §ång hµnh th¨ng cÊp nh­ thÕ nµo?	Häc MËt tÞch	T¨ng ®iÓm kü n¨ng	Th«ng qua ®é thuÇn thôc
+70	Theo sù tr­ëng thµnh cña §ång hµnh cã sù thay ®æi g× kh«ng?	Kh«ng biÕt	Kh«ng gi¶m	Gi¶m
+71	NÕu Chñ nh©n ch¹y qu¸ nhanh, §ång hµnh lµm thÕ nµo?	BÞ l¹c ®­êng	Theo sau chñ nh©n	§­îc ng­êi h¶o t©m ®­a vÒ 
+72	Kü n¨ng cÊp thÊp cña §ång hµnh cã hç trî cho kü n¨ng cao cÊp kh«ng?	Gi¶m	Kh«ng cã 	Kh«ng biÕt
+73	§ång hµnh cã thÓ häc bao nhiªu MËt tÞch kh¸ng tÝnh	10	15	20
+74	§ång hµnh ®¸nh qu¸i v­ît cÊp, ®iÓm kinh nghiÖm cã suy gi¶m kh«ng?	Kh«ng biÕt	Kh«ng gi¶m	Gi¶m
+75	Tr­íc cÊp 35, §ång hµnh cã bao nhiªu khu vùc ®¸nh qu¸i th¨ng cÊp mau nhÊt?	15	25	35
+76	§èi víi kü n¨ng cÊp 4, dïng 1 cuèn MËt tÞch cÊp 8 kÕt qu¶ thÕ nµo? 	th¨ng lªn cÊp 5	th¨ng lªn cÊp 8	Kh«ng thÓ sö dông
+77	Vâ c«ng §ång hµnh th¨ng cÊp nh­ thÕ nµo?	Dïng ®iÓm kinh nghiÖm th¨ng cÊp	Dùa vµo ®é thuÇn thôc kü n¨ng	Sö dông MËt tÞch
+78	Ngò hµnh kü n¨ng kh¸ng tÝnh cña §ång hµnh lµm thÕ nµo th¨ng cÊp?	Dïng ®iÓm kinh nghiÖm th¨ng cÊp	Dùa vµo ®é thuÇn thôc kü n¨ng	Sö dông MËt tÞch
+79	Vâ c«ng cña §ång hµnh cã bao nhiªu kü n¨ng? 	Kü n¨ng bÞ ®éng 	Ngò hµnh Kü n¨ng kh¸ng tÝnh	Kü n¨ng chñ ®éng
+80	T¸c dông cña nót xãa kü kü n¨ng lµ 	Xãa vâ c«ng hç trî 	Dïng ®Ó gi¶i t¸n §ång hµnh	Dïng ®Ó Gäi §ång hµnh 
+81	HÖ thèng hái b¹n "B¹n muèn xãa kü n¨ng nµy?"  b¹n chän "X¸c nhËn" nghÜa lµ 	B¹n muèn Gäi §ång hµnh	B¹n muèn xãa vÜnh viÔn kü n¨ng nµy 	B¹n ®· sö dông kü n¨ng nµy 
+82	Sau khi xãa 1 kü n¨ng cã thÓ häc l¹i kü n¨ng ®ã kh«ng?	Cã thÓ 	Kh«ng thÓ 	Kh«ng nhÊt ®Þnh
+83	B¹n cã mét kü n¨ng hç trî cÊp 6,  nÕu sö dông 1 quyÓn MËt tÞch kü n¨ng cÊp 5, lóc nµy: 	Kü n¨ng cña b¹n gi¶m xuèng  cÊp 5 	Kü n¨ng cña b¹n t¨ng lªn cÊp 7	HÖ thèng hiÓn thÞ b¹n kh«ng thÓ sö dông MËt tÞch 
+84	B¶ng kü n¨ng nÕu ®Ó trèng sÏ nh­ thÕ nµo?	Kh«ng thÓ ®Ó trèng	B¶ng kü n¨ng kh«ng thÓ ®Ó trèng	Kh«ng thÓ ®Ó trèng
+85	Lµm thÕ nµo ®¹t ®­îc Ngò hµnh kü n¨ng kh¸ng tÝnh	§Õn npc ®Ó häc	Sö dông MËt tÞch	Hoµn thµnh nhiÖm vô sÏ häc ®­îc
+86	Sè l­îng kü n¨ng hç trî cña §ång hµnh häc ®­îc cã quan hÖ víi: 	Thuéc tÝnh cña §ång hµnh	§¼ng cÊp cña §ång hµnh	§¼ng cÊp cña ng­êi ch¬i
+87	§ång hµnh cã mÊy lo¹i kü n¨ng?	1	4	6
+88	§iÒu kiÖn ®Ó häc ®­îc tuyÖt kü?	Th«ng qua nhiÖm vô Hoµng Kim	kü n¨ng "§ång hµnh" cao nhÊt lµ bao nhiªu?	§é th©n mËt ®¹t ®Õn 100
+89	Kü n¨ng hç trî cña §ång hµnh t¨ng nh­ thÕ nµo?	Dïng ®iÓm kinh nghiÖm th¨ng cÊp	Dùa vµo ®é thuÇn thôc kü n¨ng	Sö dông MËt tÞch
+90	Trong b¶ng kü n¨ng §ång hµnh cã 4 kü n¨ng "A" vµ 1 kü n¨ng "B". VËy trong lóc chiÕn ®Êu tû lÖ sö dông kü n¨ng "B" cña §ång hµnh lµ bao nhiªu?	20%	40%	60%
+91	Sau khi ng­êi ch¬i më d¹ng thøc cõu s¸t. §ång hµnh cña ng­êi ch¬i giÕt chÕt §ång hµnh cña ®èi ph­¬ng th× ®iÓm PK sÏ t¨ng bao nhiªu? 	1 ®iÓm	2 ®iÓm	Kh«ng nhiÒu
+92	1 ng­êi c¬i cã thÓ nhËn ®­îc bao nhiªu §ång hµnh?	2	4	5
+93	Sau khi ng­êi ch¬i më d¹ng thøc chiÕn ®Êu. §ång hµnh cña ng­êi ch¬i giÕt chÕt §ång hµnh cña ®èi ph­¬ng th× ®iÓm PK sÏ t¨ng bao nhiªu? 	1 ®iÓm	Kh«ng nhiÒu	2 ®iÓm
+94	Thao t¸c gäi §ång hµnh cã thÓ thùc hiÖn liªn tiÕp kh«ng?	Cã thÓ 	Kh«ng thÓ 	Kh«ng nhÊt ®Þnh
+95	Thêi gian gi÷a 2 lÇn gäi §ång hµnh lµ:	nöa phót	1 phót	2 phót
+96	Kü n¨ng hç trî cña §ång hµnh ®­îc t¨ng nh­ thÕ nµo?	§Õn chç NPc ®Ó häc	SÏ t¨ng lªn mçi khi §ång hµnh t¨ng cÊp	Th«ng qua häc MËt tÞch kü n¨ng
+97	Nót dïng ®Ó gäi §ång hµnh n»m thø mÊy trªn b¶ng c«ng cô §ång hµnh?	Thø 1	Thø 4	Thø 8
+98	Muèn thay ®æi ®ång hµnh, cã mÊy ph­¬ng thøc?	1	2	3
+99	§ång hµnh cã thÓ dïng Kim S¸ng d­îc kh«ng?	Cã thÓ 	Kh«ng	Khi m¸u cña §ång hµnh gi¶m xuèng chØ cßn 30%, sÏ 
+100	Nót "Hñy kü n¨ng" dïng ®Ó lµm g×?	Hñy kü n¨ng 	Hñy tuyÖt kû 	Hñy kü n¨ng hç trî 
+101	Ng­êi Trïng Kh¸nh nãi "Thiªu cao" cã nghÜa lµ g×?	§èt h­¬ng lÔ PhËt	N­íng thøc ¨n	Ch¹y lo¹n
+102	Ng­êi Trïng Kh¸nh nãi "k×nh phong hµ triÖt" nghÜa lµ g×?	Nu«i c¸ 	Thñy qu¸i	N­íc lò vÒ 
+103	TiÕng Qu¶ng §«ng cã 3 tõ d­íi ®©y kh«ng ®ång nghÜa lµ 	m©u ni 	§¹i H­¬ng Lý 	Méc Chñy
+104	TiÕng Qu¶ng §«ng cã 3 tõ d­íi ®©y kh«ng ®ång nghÜa lµ 	§inh t¸ 	Qua t¸ 	TrËt t¸ 
+105	MËt ®å "§ång hµnh luyÖn cÊp" 1	§Õn Ph­îng T­êng giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 2	§Õn Ph­îng T­êng giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+106	MËt ®å "§ång hµnh luyÖn cÊp" 3	§Õn Ph­îng T­êng giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 4	§Õn Hoa s¬n  giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+107	MËt ®å "§ång hµnh luyÖn cÊp" 5	§Õn Hoa s¬n  giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 6	§Õn Hoa s¬n  giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+108	MËt ®å "§ång hµnh luyÖn cÊp" 7	§Õn KiÕm C¸c T©y B¾c giÕt 50 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 8	§Õn KiÕm C¸c T©y B¾c giÕt 100 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+109	MËt ®å "§ång hµnh luyÖn cÊp" 9	§Õn KiÕm C¸c T©y B¾c giÕt 150 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 10	§Õn Kim Quang ®éng giÕt 50 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+110	MËt ®å "§ång hµnh luyÖn cÊp" 11	§Õn Kim Quang ®éng giÕt 100 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 12	§Õn Kim Quang ®éng giÕt 150 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+111	MËt ®å "§ång hµnh luyÖn cÊp" 13	§Õn Kinh Hoµng ®éng giÕt 50 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 14	§Õn Kinh Hoµng ®éng giÕt 100 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+112	MËt ®å "§ång hµnh luyÖn cÊp" 15	§Õn Kinh Hoµng ®éng giÕt 150 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 16	§Õn Táa V©n ®éng giÕt 50 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+113	MËt ®å "§ång hµnh luyÖn cÊp" 17	§Õn Táa V©n ®éng giÕt 100 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 18	§Õn Táa V©n ®éng giÕt 150 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+114	MËt ®å "§ång hµnh luyÖn cÊp" 19	§Õn TÇn L¨ng giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 20	§Õn TÇn L¨ng giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+115	MËt ®å "§ång hµnh luyÖn cÊp" 21	§Õn TÇn L¨ng giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 22	§Õn tÇng 1 TÇn L¨ng giÕt 50 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+116	MËt ®å "§ång hµnh luyÖn cÊp" 23	§Õn tÇng 1 TÇn L¨ng giÕt 100 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 24	§Õn tÇng 1 TÇn L¨ng giÕt 150 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+117	MËt ®å "§ång hµnh luyÖn cÊp" 25	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 26	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+118	MËt ®å "§ång hµnh luyÖn cÊp" 27	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn	MËt ®å "§ång hµnh luyÖn cÊp" 28	§Õn tÇng 3 TÇn L¨ng giÕt 50 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn

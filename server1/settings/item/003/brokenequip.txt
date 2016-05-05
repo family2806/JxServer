@@ -1,2 +1,2 @@
-Ãû³Æ	µÀ¾ßÖÖÀà	¶¯»­ÎÄ¼şÃû	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	¼Û¸ñ	ËµÃ÷ÎÄ×Ö
-Ëğ»µµÄ×°±¸	7	\spr\item\equip\brokenequip.spr	348	1	1	1	Ëğ»µµÄ×°±¸¡£
+Ãû³Æ	ItemGenre	¶¯»­ÎÄ¼şÃû	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	¼Û¸ñ	ËµÃ÷ÎÄ×Ö
+Trang bŞ tæn h¹i	7	\spr\item\equip\brokenequip.spr	348	1	1	1	Trang bŞ ®· hao mßn.

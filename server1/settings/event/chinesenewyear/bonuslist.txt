@@ -1,107 +1,107 @@
 mID	Type	TypeName	Name	Worth	P1	P2	P3	P4	P5	P6	P7	P8	P9	P10	P11	P12	Message	Announce
-1	1	»Æ½ð×°±¸	¶´²ìÖ®°×½ðµñÁú½ä	0	143												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-2	1	»Æ½ð×°±¸	¶´²ìÖ®°×ÓñÇ¬À¤Åå	1000000000	144												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-3	1	»Æ½ð×°±¸	¶´²ìÖ®°×½ðÐâ·ï½ä	2000000000	145												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-4	1	»Æ½ð×°±¸	¶´²ìÖ®ôä´äÓñÏîÈ¦	2000000000	146												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-5	1	»Æ½ð×°±¸	°²°îÖ®±ù¾§Ê¯ÏîÁ´	1200000000	164												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-6	1	»Æ½ð×°±¸	°²°îÖ®¾Õ»¨Ê¯Ö¸»·	400000000	165												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-7	1	»Æ½ð×°±¸	°²°îÖ®Ìï»ÆÊ¯ÓñÅå	400000000	166												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-8	1	»Æ½ð×°±¸	°²°îÖ®¼¦ÑªÊ¯½äÖ¸	500000000	167												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-9	1	»Æ½ð×°±¸	ÏÀ¹ÇÖ®ÌúÑªÉÀ	400000000	186												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-10	1	»Æ½ð×°±¸	ÏÀ¹ÇÖ®¶àÇé»·	1200000000	187												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-11	1	»Æ½ð×°±¸	ÏÀ¹ÇÖ®µ¤ÐÄ½ä	400000000	188												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-12	1	»Æ½ð×°±¸	ÏÀ¹ÇÖ®ÇéÒâ½á	400000000	189												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-13	1	»Æ½ð×°±¸	ÈáÇéÖ®½íàþÄÞÉÑ	400000000	190												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-14	1	»Æ½ð×°±¸	ÈáÇéÖ®ÊçÅ®ÏîÁ´	1200000000	191												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-15	1	»Æ½ð×°±¸	ÈáÇéÖ®·ïÒÇ½äÖ¸	400000000	192												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-16	1	»Æ½ð×°±¸	ÈáÇéÖ®»ÛÐÄÓñÅå	400000000	193												Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ»Æ½ð×°±¸£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-17	2	¼¼ÄÜÊé	Ðä¼ýÊõ¡¤±©ÓêÀæ»¨	20000000	6	1	27	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-18	2	¼¼ÄÜÊé	ÏÝÚåÊõ¡¤ÂÒ»·»÷	6000000	6	1	28	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-19	2	¼¼ÄÜÊé	Ì«¼«È­Æ×¡¤¾íÈý	40000000	6	1	33	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-20	2	¼¼ÄÜÊé	Ì«¼«½£Æ×¡¤¾í¶þ	60000000	6	1	34	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-21	2	¼¼ÄÜÊé	ÔÆÁú»÷¡¤Ã¬·¨	30000000	6	1	35	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-22	2	¼¼ÄÜÊé	Á÷ÐÇ¡¤µ¶·¨	60000000	6	1	36	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-23	2	¼¼ÄÜÊé	ÌìÍõ´¸·¨¡¤¾íÒ»	30000000	6	1	37	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-24	2	¼¼ÄÜÊé	ÌìÍõÇ¹·¨¡¤¾í¶þ	70000000	6	1	38	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-25	2	¼¼ÄÜÊé	ÌìÍõµ¶·¨¡¤¾íÈý	15000000	6	1	39	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-26	2	¼¼ÄÜÊé	´äÑÌµ¶·¨	30000000	6	1	40	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-27	2	¼¼ÄÜÊé	´äÑÌË«µ¶	15000000	6	1	41	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-28	2	¼¼ÄÜÊé	Ãð½£ÃØ¼®	35000000	6	1	42	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-29	2	¼¼ÄÜÊé	¶ëáÒ·ð¹âÕÆÃØ¼®	45000000	6	1	43	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-30	2	¼¼ÄÜÊé	·Éµ¶Êõ¡¤Éã»êÔÂÓ°	30000000	6	1	45	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-31	2	¼¼ÄÜÊé	·ÉïÚÊõ¡¤¾Å¹¬·ÉÐÇ	20000000	6	1	46	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-32	2	¼¼ÄÜÊé	Îå¶¾ÕÆ·¨¡¤¾íÒ»	20000000	6	1	47	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-33	2	¼¼ÄÜÊé	Îå¶¾µ¶·¨¡¤¾í¶þ	15000000	6	1	48	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-34	2	¼¼ÄÜÊé	Îå¶¾ÉåÐÄÊõ¡¤¾íÈý	6000000	6	1	49	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-35	2	¼¼ÄÜÊé	Ô¦·çÊõ	10000000	6	1	50	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-36	2	¼¼ÄÜÊé	Ô¦À×Êõ	12000000	6	1	51	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-37	2	¼¼ÄÜÊé	Ô¦ÐÄÊõ	6000000	6	1	52	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-38	2	¼¼ÄÜÊé	Éã»ê¡¤×çÖä	6000000	6	1	53	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-39	2	¼¼ÄÜÊé	Ø¤°ïÕÆ·¨	30000000	6	1	54	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-40	2	¼¼ÄÜÊé	Ø¤°ï¹÷·¨	20000000	6	1	55	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-41	2	¼¼ÄÜÊé	ÉÙÁÖÈ­·¨¡¤¾íÒ»	20000000	6	1	56	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-42	2	¼¼ÄÜÊé	ÉÙÁÖ¹÷·¨¡¤¾í¶þ	10000000	6	1	57	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-43	2	¼¼ÄÜÊé	ÉÙÁÖµ¶·¨¡¤¾íÈý	30000000	6	1	58	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-44	2	¼¼ÄÜÊé	ÆÕ¶ÉÃØ¼®	6000000	6	1	59	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»±¾¼¼ÄÜÊé£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-45	2	±¦Îï	ÎäÁÖÃØ¼®	70000000	6	1	26	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-46	2	±¦Îï	Ï´Ëè¾­	35000000	6	1	22	1									Àñ¹ÙËÍ¸øÄãÒ»±¾¡¶<name>¡·¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-47	2	±¦Îï	À¶Ë®¾§	8000000	4	238	1	1									Àñ¹ÙËÍ¸øÄãÒ»¿Å<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-48	2	±¦Îï	ÂÌË®¾§	8000000	4	240	1	1									Àñ¹ÙËÍ¸øÄãÒ»¿Å<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-49	2	±¦Îï	×ÏË®¾§	9000000	4	239	1	1									Àñ¹ÙËÍ¸øÄãÒ»¿Å<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-50	2	±¦Îï	ÐÉºì±¦Ê¯	9000000	4	353	1	1									Àñ¹ÙËÍ¸øÄãÒ»¿Å<name>¡£	<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-51	2	±¦Îï	ÃâËÀÁî	0														<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-52	2	±¦Îï	ÖØÉúÁî	0														<player>¼¦ÄêÐÐ´óÔË£¬Àñ¹ÙËÍ¸ø<player>Ò»¼þ±¦Îï£º<name>£¬×£<player>¼ªÏéÈçÒâ¡£
-53	2	ÆÕÍ¨ÀñÆ·	Åû·ç	200000	6	1	15	1									Àñ¹ÙËÍ¸øÄãÒ»¼þ<name>¡£	
-54	2	ÆÕÍ¨ÀñÆ·	Ãµ¹å»¨	20000	6	0	20	1									Àñ¹ÙËÍ¸øÄãÒ»¶ä<name>¡£	
-55	2	ÆÕÍ¨ÀñÆ·	¸£ÔµÂ¶£¨´ó£©	3000000	6	1	124	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-56	2	ÆÕÍ¨ÀñÆ·	¸£ÔµÂ¶£¨ÖÐ£©	1200000	6	1	123	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-57	2	ÆÕÍ¨ÀñÆ·	¸£ÔµÂ¶£¨Ð¡£©	600000	6	1	122	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-58	2	ÆÕÍ¨ÀñÆ·	ÌìÉ½ÓñÂ¶	500000	6	1	72	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-59	2	ÆÕÍ¨ÀñÆ·	°Ù¹ûÂ¶	500000	6	1	73	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-60	2	ÆÕÍ¨ÀñÆ·	ÐÄÐÄÏàÓ³·û	50000	6	1	18	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-61	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-Ñ©±ª	2000000	0	11	27	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-62	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-ÇàÀÇ	2000000	0	11	30	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-63	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-´Ìâ¬	2000000	0	11	35	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-64	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-×ØÐÜ	2000000	0	11	38	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-65	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-Ò°Å£	2000000	0	11	40	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-66	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-ÑÛ¾µòþÉß	2000000	0	11	43	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-67	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-½ðµñ	0	0	11	47	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-68	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-½ðÃ¨	2000000	0	11	54	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-69	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-½ðË¿ºï	2000000	0	11	61	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-70	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-Ã·»¨Â¹	2000000	0	11	65	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-71	2	Ãæ¾ß	Ò×ÈÝÃæ¾ß-°×Öí	2000000	0	11	66	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-72	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ¾­ÑéÌáÉý50%	200000	531	5	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-73	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ¾­ÑéÌáÉý100%	5000000	531	10	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-74	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ¾­ÑéÌáÉý150%	800000	531	15	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-75	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ¾­ÑéÌáÉý200%	1200000	531	20	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-76	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÉúÃüÉÏÏÞÌáÉý1000µã	500000	527	10	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-77	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÄÚÀïÉÏÏÞÌáÉý1000µã	500000	528	10	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-78	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÑªÄÚË«»Ø20µã/°ëÃë	100000	532	10	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-79	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÐÒÔË¼Ó10µã	200000	530	5	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-80	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÐÒÔË¼Ó30µã	500000	530	15	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-81	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÐÒÔË¼Ó50µã	1000000	530	25	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-82	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÐÒÔË¼Ó80µã	2000000	530	40	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-83	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚÐÒÔË¼Ó100µã	3000000	530	50	1	32400									Àñ¹Ù¸øÄã¼ÓÁËÒ»ÖÖÄÜÁ¦£¬¿ÉÒÔ<name>¡£	
-84	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ²»ËðÑª	0														
-85	3	ÁÙÊ±×´Ì¬	°ëÐ¡Ê±ÄÚ²»ºÄÄÚ	0														
-86	2	ÐÂÐÍ´ó²¹Íè	¹¥ËÙÍè	80000	6	1	218	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-87	2	ÐÂÐÍ´ó²¹Íè	ÅÜËÙÍè	10000	6	1	219	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-88	2	ÐÂÐÍ´ó²¹Íè	ÆÕ·ÀÍè	10000	6	1	220	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-89	2	ÐÂÐÍ´ó²¹Íè	¶¾·ÀÍè	10000	6	1	221	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-90	2	ÐÂÐÍ´ó²¹Íè	±ù·ÀÍè	10000	6	1	222	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-91	2	ÐÂÐÍ´ó²¹Íè	»ð·ÀÍè	10000	6	1	223	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-92	2	ÐÂÐÍ´ó²¹Íè	À×·ÀÍè	10000	6	1	224	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-93	2	ÐÂÐÍ´ó²¹Íè	¼õÉËÍè	10000	6	1	225	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-94	2	ÐÂÐÍ´ó²¹Íè	¼õÔÎÍè	10000	6	1	226	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-95	2	ÐÂÐÍ´ó²¹Íè	¼õ¶¾Íè	10000	6	1	227	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-96	2	ÐÂÐÍ´ó²¹Íè	¼õ±ùÍè	10000	6	1	228	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-97	2	ÐÂÐÍ´ó²¹Íè	ÆÕ¹¥Íè	10000	6	1	229	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-98	2	ÐÂÐÍ´ó²¹Íè	¶¾¹¥Íè	10000	6	1	230	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-99	2	ÐÂÐÍ´ó²¹Íè	±ù¹¥Íè	10000	6	1	231	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-100	2	ÐÂÐÍ´ó²¹Íè	»ð¹¥Íè	10000	6	1	232	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-101	2	ÐÂÐÍ´ó²¹Íè	À×¹¥Íè	10000	6	1	233	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-102	2	ÐÂÐÍ´ó²¹Íè	³¤ÃüÍè	10000	6	1	234	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-103	2	ÐÂÐÍ´ó²¹Íè	³¤ÄÚÍè	10000	6	1	235	1									Àñ¹ÙËÍ¸øÄãÒ»¸ö<name>¡£	
-104	4	¾­ÑéÖµ	¾­ÑéÖµ1Íòµã	20000	10000												Àñ¹Ù¸øÄã½±ÀøÁË<name>¡£	
-105	4	¾­ÑéÖµ	¾­ÑéÖµ5Íòµã	100000	50000												Àñ¹Ù¸øÄã½±ÀøÁË<name>¡£	
-106	4	¾­ÑéÖµ	¾­ÑéÖµ10Íòµã	200000	100000												Àñ¹Ù¸øÄã½±ÀøÁË<name>¡£	
+1	1	Trang bÞ Hoµng Kim	§éng S¸t B¹ch Kim §iªu Long Giíi	0	143												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+2	1	Trang bÞ Hoµng Kim	§éng S¸t B¹ch Ngäc Cµn Kh«n Béi	1000000000	144												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+3	1	Trang bÞ Hoµng Kim	§éng S¸t B¹ch Kim Tó Phông Giíi	2000000000	145												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+4	1	Trang bÞ Hoµng Kim	§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn	2000000000	146												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+5	1	Trang bÞ Hoµng Kim	An Bang B¨ng Tinh Th¹ch H¹ng Liªn	1200000000	164												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+6	1	Trang bÞ Hoµng Kim	An Bang Cóc Hoa Th¹ch ChØ hoµn	400000000	165												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+7	1	Trang bÞ Hoµng Kim	An Bang §iÒn Hoµng Th¹ch Ngäc Béi	400000000	166												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+8	1	Trang bÞ Hoµng Kim	An Bang Kª HuyÕt Th¹ch Giíi ChØ 	500000000	167												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+9	1	Trang bÞ Hoµng Kim	HiÖp Cèt ThiÕt HuyÕt Sam	400000000	186												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+10	1	Trang bÞ Hoµng Kim	HiÖp Cèt §a T×nh Hoµn	1200000000	187												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+11	1	Trang bÞ Hoµng Kim	HiÖp Cèt §an T©m Giíi	400000000	188												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+12	1	Trang bÞ Hoµng Kim	HiÖp Cèt T×nh ý KÕt	400000000	189												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+13	1	Trang bÞ Hoµng Kim	Nhu T×nh C©n Quèc Nghª Th­êng	400000000	190												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+14	1	Trang bÞ Hoµng Kim	Nhu T×nh Thôc N÷ H¹ng Liªn	1200000000	191												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+15	1	Trang bÞ Hoµng Kim	Nhu T×nh  Phông Nghi Giíi ChØ 	400000000	192												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+16	1	Trang bÞ Hoµng Kim	Nhu T×nh  TuÖ T©m Ngäc Béi	400000000	193												LÔ quan tÆng b¹n 1 <name>.	<player>LÔ quan tÆng b¹n <player>1 bé Trang bÞ Hoµng Kim:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+17	2	MËt tÞch kü n¨ng	Tô TiÔn thuËt. B¹o Vò Lª Hoa	20000000	6	1	27	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+18	2	MËt tÞch kü n¨ng	H·m TÜnh thuËt.Lo¹n Hoµn KÝch	6000000	6	1	28	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+19	2	MËt tÞch kü n¨ng	Th¸i Cùc QuyÒn Phæ. QuyÓn 3	40000000	6	1	33	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+20	2	MËt tÞch kü n¨ng	Th¸i Cùc KiÕm Phæ. QuyÓn 2	60000000	6	1	34	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+21	2	MËt tÞch kü n¨ng	V©n Long KÝch. M©u ph¸p	30000000	6	1	35	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+22	2	MËt tÞch kü n¨ng	L­u Tinh. §ao ph¸p	60000000	6	1	36	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+23	2	MËt tÞch kü n¨ng	Thiªn V­¬ng Chïy Ph¸p. QuyÓn 1	30000000	6	1	37	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+24	2	MËt tÞch kü n¨ng	Thiªn V­¬ng Th­¬ng ph¸p. QuyÓn 2	70000000	6	1	38	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+25	2	MËt tÞch kü n¨ng	Thiªn V­¬ng §ao ph¸p.QuyÓn 3	15000000	6	1	39	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+26	2	MËt tÞch kü n¨ng	Thóy Yªn §ao ph¸p	30000000	6	1	40	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+27	2	MËt tÞch kü n¨ng	Thóy Yªn Song ®ao	15000000	6	1	41	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+28	2	MËt tÞch kü n¨ng	DiÖt KiÕm MËt TÞch	35000000	6	1	42	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+29	2	MËt tÞch kü n¨ng	Nga Mi  PhËt Quang Ch­ëng MËt TÞch	45000000	6	1	43	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+30	2	MËt tÞch kü n¨ng	Phi §ao thuËt. NhiÕp Hån NguyÖt ¶nh	30000000	6	1	45	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+31	2	MËt tÞch kü n¨ng	Phi Tiªu thuËt. Cöu Cung Phi Tinh	20000000	6	1	46	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+32	2	MËt tÞch kü n¨ng	Ngò §éc Ch­ëng Ph¸p. QuyÓn 1	20000000	6	1	47	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+33	2	MËt tÞch kü n¨ng	Ngò §éc §ao ph¸p. QuyÓn 2	15000000	6	1	48	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+34	2	MËt tÞch kü n¨ng	Ngò §éc NhiÕp T©m thuËt. QuyÓn 3	6000000	6	1	49	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+35	2	MËt tÞch kü n¨ng	Ngù Phong thuËt	10000000	6	1	50	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+36	2	MËt tÞch kü n¨ng	Ngù L«i thuËt	12000000	6	1	51	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+37	2	MËt tÞch kü n¨ng	Ngù T©m thuËt	6000000	6	1	52	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+38	2	MËt tÞch kü n¨ng	NhiÕp Hån. Chó thuËt	6000000	6	1	53	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+39	2	MËt tÞch kü n¨ng	C¸i Bang Ch­ëng Ph¸p	30000000	6	1	54	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+40	2	MËt tÞch kü n¨ng	C¸i Bang C«n ph¸p	20000000	6	1	55	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+41	2	MËt tÞch kü n¨ng	ThiÕu L©m QuyÒn Ph¸p. QuyÓn 1	20000000	6	1	56	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+42	2	MËt tÞch kü n¨ng	ThiÕu L©m C«n ph¸p. QuyÓn 2	10000000	6	1	57	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+43	2	MËt tÞch kü n¨ng	ThiÕu L©m §ao ph¸p. QuyÓn 3	30000000	6	1	58	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+44	2	MËt tÞch kü n¨ng	Phæ §é MËt TÞch	6000000	6	1	59	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 quyÓn MËt tÞch kü n¨ng:<name>, Chóc <player> C¸t T­êng Nh­ ý 
+45	2	B¶o vËt	Vâ L©m MËt TÞch	70000000	6	1	26	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+46	2	B¶o vËt	TÈy Tñy Kinh	35000000	6	1	22	1									LÔ quan tÆng b¹n 1 quyÓn "<name>".	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+47	2	B¶o vËt	Lam Thñy Tinh	8000000	4	238	1	1									LÔ quan tÆng b¹n 1 viªn <name>.	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+48	2	B¶o vËt	Lôc Thñy Tinh	8000000	4	240	1	1									LÔ quan tÆng b¹n 1 viªn <name>.	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+49	2	B¶o vËt	Tö Thñy Tinh	9000000	4	239	1	1									LÔ quan tÆng b¹n 1 viªn <name>.	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+50	2	B¶o vËt	Tinh Hång B¶o Th¹ch	9000000	4	353	1	1									LÔ quan tÆng b¹n 1 viªn <name>.	<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+51	2	B¶o vËt	MiÔn Tö lÖnh	0														<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+52	2	B¶o vËt	Trïng Sinh lÖnh	0														<player>LÔ quan tÆng b¹n <player>1 mãn b¶o vËt:<name>. Chóc <player> C¸t T­êng Nh­ ý 
+53	2	LÔ vËt th«ng th­êng	Phi Phong	200000	6	1	15	1									LÔ quan tÆng b¹n 1 bé <name>.	
+54	2	LÔ vËt th«ng th­êng	Hoa hång	20000	6	0	20	1									LÔ quan tÆng b¹n 1 ®ãa <name>.	
+55	2	LÔ vËt th«ng th­êng	Phóc Duyªn Lé (§¹i) 	3000000	6	1	124	1									LÔ quan tÆng b¹n 1 <name>.	
+56	2	LÔ vËt th«ng th­êng	Phóc Duyªn Lé (Trung) 	1200000	6	1	123	1									LÔ quan tÆng b¹n 1 <name>.	
+57	2	LÔ vËt th«ng th­êng	Phóc Duyªn Lé (TiÓu) 	600000	6	1	122	1									LÔ quan tÆng b¹n 1 <name>.	
+58	2	LÔ vËt th«ng th­êng	Thiªn s¬n  B¶o Lé 	500000	6	1	72	1									LÔ quan tÆng b¹n 1 <name>.	
+59	2	LÔ vËt th«ng th­êng	B¸ch Qu¶ Lé 	500000	6	1	73	1									LÔ quan tÆng b¹n 1 <name>.	
+60	2	LÔ vËt th«ng th­êng	T©m T©m T­¬ng ¸nh phï 	50000	6	1	18	1									LÔ quan tÆng b¹n 1 <name>.	
+61	2	MÆt n¹ 	MÆt n¹ - TuyÕt B¸o	2000000	0	11	27	1									LÔ quan tÆng b¹n 1 <name>.	
+62	2	MÆt n¹ 	MÆt n¹ - Thanh lang	2000000	0	11	30	1									LÔ quan tÆng b¹n 1 <name>.	
+63	2	MÆt n¹ 	MÆt n¹ - NhÝm	2000000	0	11	35	1									LÔ quan tÆng b¹n 1 <name>.	
+64	2	MÆt n¹ 	MÆt n¹ - GÊu n©u	2000000	0	11	38	1									LÔ quan tÆng b¹n 1 <name>.
+65	2	MÆt n¹ 	MÆt n¹ -Tr©u rõng	2000000	0	11	40	1									LÔ quan tÆng b¹n 1 <name>.
+66	2	MÆt n¹ 	MÆt n¹ - Nh·n KÝnh M·ng xµ 	2000000	0	11	43	1									LÔ quan tÆng b¹n 1 <name>.
+67	2	MÆt n¹ 	MÆt n¹ - Kim §iªu	0	0	11	47	1									LÔ quan tÆng b¹n 1 <name>.
+68	2	MÆt n¹ 	MÆt n¹ - Kim Miªu	2000000	0	11	54	1									LÔ quan tÆng b¹n 1 <name>.
+69	2	MÆt n¹ 	MÆt n¹ - Kim T¬ HÇu	2000000	0	11	61	1									LÔ quan tÆng b¹n 1 <name>.
+70	2	MÆt n¹ 	MÆt n¹ - H­¬u ®èm	2000000	0	11	65	1									LÔ quan tÆng b¹n 1 <name>.
+71	2	MÆt n¹ 	MÆt n¹ - Heo tr¾ng	2000000	0	11	66	1									LÔ quan tÆng b¹n 1 <name>.
+72	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kinh nghiÖm t¨ng 50%	200000	531	5	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+73	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kinh nghiÖm t¨ng 100%	5000000	531	10	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+74	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kinh nghiÖm t¨ng 150%	800000	531	15	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+75	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kinh nghiÖm t¨ng 200%	1200000	531	20	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+76	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê Sinh lùc t¨ng 1000 ®iÓm	500000	527	10	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+77	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê Néi lùc t¨ng 1000 ®iÓm	500000	528	10	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+78	3	Tr¹ng th¸i t¹m thêi	Néi nöa giê Sinh lùc vµ Néi lùc håi phôc 40®iÓm/gi©y	100000	532	10	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+79	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê May m¾n t¨ng 10 ®iÓm	200000	530	5	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+80	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê May m¾n t¨ng 30 ®iÓm	500000	530	15	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+81	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê May m¾n t¨ng 50 ®iÓm	1000000	530	25	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+82	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê May m¾n t¨ng 80 ®iÓm	2000000	530	40	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+83	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê May m¾n t¨ng 100 ®iÓm	3000000	530	50	1	32400									LÔ quan gióp b¹n t¨ng thªm n¨ng lùc, cã thÓ <name>.
+84	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kh«ng mÊt m¸u	0													
+85	3	Tr¹ng th¸i t¹m thêi	Néi trong nöa giê kh«ng Néi lùc	0													
+86	2	§¹i B¶o hoµn (míi) 	C«ng Tèc hoµn	80000	6	1	218	1									LÔ quan tÆng b¹n 1 <name>.
+87	2	§¹i B¶o hoµn (míi) 	Bµo Tèc hoµn	10000	6	1	219	1									LÔ quan tÆng b¹n 1 <name>.
+88	2	§¹i B¶o hoµn (míi) 	Phæ Phßng hoµn	10000	6	1	220	1									LÔ quan tÆng b¹n 1 <name>.
+89	2	§¹i B¶o hoµn (míi) 	§éc Phßng hoµn	10000	6	1	221	1									LÔ quan tÆng b¹n 1 <name>.
+90	2	§¹i B¶o hoµn (míi) 	B¨ng Phßng hoµn	10000	6	1	222	1									LÔ quan tÆng b¹n 1 <name>.
+91	2	§¹i B¶o hoµn (míi) 	Háa Phßng hoµn	10000	6	1	223	1									LÔ quan tÆng b¹n 1 <name>.
+92	2	§¹i B¶o hoµn (míi) 	L«i Phßng hoµn	10000	6	1	224	1									LÔ quan tÆng b¹n 1 <name>.
+93	2	§¹i B¶o hoµn (míi) 	Gi¶m Th­¬ng hoµn	10000	6	1	225	1									LÔ quan tÆng b¹n 1 <name>.
+94	2	§¹i B¶o hoµn (míi) 	Gi¶m H«n hoµn	10000	6	1	226	1									LÔ quan tÆng b¹n 1 <name>.
+95	2	§¹i B¶o hoµn (míi) 	Gi¶m §éc hoµn	10000	6	1	227	1									LÔ quan tÆng b¹n 1 <name>.
+96	2	§¹i B¶o hoµn (míi) 	Gi¶m B¨ng hoµn	10000	6	1	228	1									LÔ quan tÆng b¹n 1 <name>.
+97	2	§¹i B¶o hoµn (míi) 	Phæ C«ng hoµn	10000	6	1	229	1									LÔ quan tÆng b¹n 1 <name>.
+98	2	§¹i B¶o hoµn (míi) 	§éc C«ng hoµn	10000	6	1	230	1									LÔ quan tÆng b¹n 1 <name>.
+99	2	§¹i B¶o hoµn (míi) 	B¨ng C«ng hoµn	10000	6	1	231	1									LÔ quan tÆng b¹n 1 <name>.
+100	2	§¹i B¶o hoµn (míi) 	Háa C«ng hoµn	10000	6	1	232	1									LÔ quan tÆng b¹n 1 <name>.
+101	2	§¹i B¶o hoµn (míi) 	L«i C«ng hoµn	10000	6	1	233	1									LÔ quan tÆng b¹n 1 <name>.
+102	2	§¹i B¶o hoµn (míi) 	Tr­êng MÖnh hoµn	10000	6	1	234	1									LÔ quan tÆng b¹n 1 <name>.
+103	2	§¹i B¶o hoµn (míi) 	Tr­êng Néi hoµn	10000	6	1	235	1									LÔ quan tÆng b¹n 1 <name>.
+104	4	TrÞ kinh nghiÖm	TrÞ kinh nghiÖm 1v¹n 	20000	10000												LÔ quan tÆng b¹n <name>.
+105	4	TrÞ kinh nghiÖm	TrÞ kinh nghiÖm 5 v¹n	100000	50000												LÔ quan tÆng b¹n <name>.
+106	4	TrÞ kinh nghiÖm	TrÞ kinh nghiÖm 10 v¹n	200000	100000												LÔ quan tÆng b¹n <name>.

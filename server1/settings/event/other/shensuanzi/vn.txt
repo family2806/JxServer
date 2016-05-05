@@ -1,20 +1,20 @@
-RoundStartMsg	¿ªÊ¼µÚ%dÂÖµÄ´ğÌâ
-RoundTimeOut	±¾ÂÖ½áÊø
-CountDownMsg	»¹ÓĞ%dÃë ¾Íµ½ÏÂÒ»ÂÖ£¬Çë×¢Òâ×¼±¸
-ActNotInDate	»î¶¯»¹Ã»¿ªÊ¼¡£
-NAME	Ãû×Ö
-UseTime	×ÜÊ¹ÓÃÊ±¼ä
-LimitMsg	Õæ¿ÉÏ§£¬Äã»¹Ã»Âú×ã²Î¼ÓÕâÂÖ¡£
-AlreadyAnswer	±¾ÂÖÒÑ¾­»Ø´ğ¹ıÁË¡£
-Question	ÇëÎÊ %s µÄ½á¹ûÊÇ¶àÉÙÄØ?
-InputAnswer	ÊäÈë´ğ°¸
-AnswerTooLate	»Ø´ğµÃÌ«ÍíÁË¡£
-Congratulate	¹§Ï²´ğ¶ÔÁË¡£Ê¹ÓÃÊ±¼ä%dÃë
-WrongAnswer	ÄãÊäÈëµÄ´ğ°¸²»ÕıÈ·¡£
-ForbitWord	ÄãÊäÈëµÄÊÇ·Ç·¨×Ö·û¡£
-NpcName	ÉñËã×Ó
-LevelLimit	µÈ¼¶²»×ã%d£¬²»ÄÜ²Î¼Ó
-InputAnswerTitle	ÊäÈë´ğ°¸
-LastRoundEnd	½ñÌìµÄ»î¶¯µ½´Ë½áÊø¡£
-RankTitle	ÅÅÃûÈçÏÂ£º
-NoRank	±¾ÂÖÃ»ÓĞÅÅÃû
+RoundStartMsg	C©u hái cña ®ît %d b¾t ®Çu
+RoundTimeOut	§ît nµy ®· kÕt thóc
+CountDownMsg	Cßn %d gi©y b¾t ®Çu ®ît kÕ tiÕp, xin h·y chuÈn bŞ
+ActNotInDate	Ho¹t ®éng vÉn ch­a b¾t ®Çu.
+NAME	Tªn
+UseTime	Thêi gian sö dông
+LimitMsg	ThËt ®¸ng tiÕc, ®¹i hiÖp vÉn ch­a ®ñ ®Ó tham gia ®ît nµy
+AlreadyAnswer	§ît nµy ®· tr¶ lêi råi.
+Question	KÕt qu¶ cña %s lµ bao nhiªu?
+InputAnswer	NhËp ®¸p ¸n
+AnswerTooLate	Tr¶ lêi qu¸ muén.
+Congratulate	Tr¶ lêi ®óng. Thêi gian sö dông %d gi©y
+WrongAnswer	Tr¶ lêi sai. KÕt qu¶ ®óng lµ %d
+ForbitWord	NhËp ®¸p ¸n kh«ng chuÈn 
+NpcName	ThÇn to¸n tö
+LevelLimit	CÊp bËc kh«ng ®ñ %d, kh«ng thÓ tham gia
+InputAnswerTitle	NhËp ®¸p ¸n
+LastRoundEnd	Ho¹t ®éng cña ngµy h«m nay ®· kÕt thóc.
+RankTitle	B¶ng xÕp h¹ng:
+NoRank	§ît nµy kh«ng cã b¶ng xÕp h¹ng

@@ -7,153 +7,153 @@ Type=String
 [MoveKind]
 Type=IndexList
 Value=Ô­µØ|Ö±Ïß·ÉĞĞ|Ëæ»ú·ÉĞĞ|»·ĞĞ·ÉĞĞ|°¢»ùÃ×µÂÂİĞıÏß|¸ú×ÙÄ¿±ê·ÉĞĞ|Íæ¼Ò¶¯×÷Àà|Å×ÎïÏß|»ØĞı,100
-StaticName=ĞĞ¶¯ÀàĞÍ
+StaticName=Lo¹i h×nh hµnh ®éng
 
 
 [FollowKind]
 Type=IndexList
 Value=²»¸ú×Ù|¸ú×ÙNPC|¸ú×Ù×Óµ¯
-StaticName=¸ú×ÙÀàĞÍ
+StaticName=B¸m theoLo¹i h×nh
 
 
 [AnimFile1]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼ş1
+StaticName=File ¶nh ®éng 1
 
 [SndFile1]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼ş1
+StaticName=File tiÕng 1
 
 [AnimFile2]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼ş2
+StaticName=File ¶nh ®éng 2
 
 [SndFile2]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼ş2
+StaticName=File tiÕng 2
 
 [AnimFile3]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼ş3
+StaticName=File ¶nh ®éng 3
 
 [SndFile3]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼ş3
+StaticName=File tiÕng 3
 
 [AnimFile4]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼ş4
+StaticName=File ¶nh ®éng 4
 
 [SndFile4]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼ş4
+StaticName=File tiÕng 4
 
 [AnimFileB1]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼ş1
+StaticName=File ¶nh ®éng 1
 
 [SndFileB1]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼şB1
+StaticName=File tiÕng B1
 
 [AnimFileB2]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼şB2
+StaticName=File ¶nh ®éng B2
 
 [SndFileB2]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼şB2
+StaticName=File tiÕng B2
 
 [AnimFileB3]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼şB3
+StaticName=File ¶nh ®éng B3
 
 [SndFileB3]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼şB3
+StaticName=File tiÕng B3
 
 [AnimFileB4]
 Type=EventEdit
-StaticName=¶¯»­ÎÄ¼şB4
+StaticName=File ¶nh ®éng B4
 
 [SndFileB4]
 Type=EventEdit
-StaticName=ÉùÒôÎÄ¼şB4
+StaticName=File tiÕng B4
 
 
 [MissleHeight]
 Type=Number
 Value=
-StaticName=×Óµ¯¸ß¶È
+StaticName=Cao ®é cña ®¹n
 
 
 [CollidRange]
 Type=Number
 Value=
-StaticName=Åö×²·¶Î§
+StaticName=Ph¹m vi va ch¹m
 
 [IsRangeDmg]
 Type=IndexList
-Value=·ñ|ÊÇ
-StaticName=ÊÇ·ñÇøÓòÉËº¦
+Value=§óng/sai
+StaticName=S¸t th­¬ng khu vùc hay kh«ng
 
 [DmgRange]
 Type=Number
-StaticName=ÇøÓòÉËº¦´óĞ¡
+StaticName=Cì s¸t th­¬ng khu vùc
 
 [LifeTime]
 Type=Number
-StaticName=ÉúÃüÊ±¼ä
+StaticName=Thêi gian sinh mÖnh
 
 [Speed]
 Type=Number
-StaticName=·ÉĞĞËÙ¶È
+StaticName=Tèc ®é ch¹y
 
 
 [LoopPlay]
 Type=IndexList
-StaticName=¶¯»­ÖØ¸´²¥·Å
-Value=·ñ|ÊÇ
+StaticName=Ch¬i l¹i ®o¹n ho¹t h×nh
+Value=§óng/sai
 
 
 [ResponseSkill]
 Type=String
-StaticName=Ïà¹Ø¼¼ÄÜ
+StaticName=kü n¨ng t­¬ng quan
 
 
 [CanDestroy]
 Type=IndexList
-Value=·ñ|ÊÇ
-StaticName=¿É±»ÆÆ»µ
+Value=§óng/sai
+StaticName=Cã thÓ bŞ tiªu diÖt
 
 [ColVanish]
 Type=IndexList
-Value=·ñ|ÊÇ
-StaticName=Åö×²»áÏûÍö
+Value=§óng/sai
+StaticName=Va ®Ëp bŞ tiªu vong
 
 [CanSlow]
 Type=IndexList
-Value=·ñ|ÊÇ
-StaticName=¿É¼õËÙ
+Value=§óng/sai
+StaticName=Cã thÓ gi¶m tèc
 
 [CanColFriend]
 Type=IndexList
-Value=·ñ|ÊÇ
-StaticName=¿ÉÅö×²ÓÑ·½
+Value=§óng/sai
+StaticName=Cã thÓ va ch¹m phe b¹n h÷u
 
 
 [Param1]
 Type=Number
-StaticName=²ÎÊı1
+StaticName=Tham sè 1
 
 
 [Param2]
 Type=Number
-StaticName=²ÎÊı2
+StaticName=Tham sè 2
 
 [Param3]
 Type=Number
-StaticName=²ÎÊı3
+StaticName=Tham sè 3
 
 [AnimFileInfo1]
 Type=String
@@ -181,18 +181,23 @@ Type=String
 
 [MultiShow]
 Type=IndexList
-StaticName=ÊÇ·ñ¶àĞ§¹ûÏÔÊ¾
-Value=·ñ|ÊÇ
+StaticName=HiÓn thŞ ®a hiÖu qu¶ hay kh«ng
+Value=§óng/sai
 
 [SubLoop]
 Type=IndexList
-StaticName=ÊÇ·ñÑ­»·ÏÔÊ¾
-Value=·ñ|ÊÇ
+StaticName=HiÓn thŞ tuÇn hoµn hay kh«ng
+Value=§óng/sai
 
 [SubStart]
 Type=Number
-StaticName=Ñ­»·²¥·Å³õÖ¡
+StaticName=Khung h×nh ®Çu tiªn Play tuÇn hoµn
 
 [SubStop]
 Type=Number
-StaticName=Ñ­»·²¥·ÅÄ©Ö¡
+StaticName=Khung h×nh cuèi cïng Play tuÇn hoµn
+
+
+	
+	
+

@@ -1,154 +1,154 @@
 Name	ItemGenre	DetailType	ParticularType	Descript
-»Æ½ðÍ¼Æ×-ÃÎÁúÖ®Õý»ÆÉ®Ã±	6	1	239	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÉÙÁÖÈ­·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-ÃÎÁúÖ®½ðË¿ÕýºìôÂôÄ	6	1	240	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÉÙÁÖÈ­·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-ÃÎÁúÖ®ÐþË¿·¨´ø	6	1	241	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>ÉÙÁÖÈ­·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-ÃÎÁúÖ®·ð·¨ÐþÅå	6	1	242	¡£
-»Æ½ðÍ¼Æ×-ÃÎÁúÖ®×Ï½ð°ãÈô½ä	6	1	243	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÉÙÁÖÈ­·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-·üÄ§Ö®×Ï½ð¹÷	6	1	244	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼Ó¹¥»÷ÃüÖÐÂÊµãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-·üÄ§Ö®ÎÞÁ¿½ð¸ÕÍó	6	1	245	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>ÉÙÁÖ¹÷·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-·üÄ§Ö®ÎÚ½ðÈíÌÐ	6	1	246	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä7¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>ÉÙÁÖ¹÷·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-·üÄ§Ö®·ðÐÄÈí¿Û	6	1	247	¡£
-»Æ½ðÍ¼Æ×-·üÄ§Ö®ÆÕ¶ÉÉ®Ð¬	6	1	248	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ËÄ¿ÕÖ®½µÄ§½äµ¶	6	1	249	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ËÄ¿ÕÖ®´ïÄ¦É®Ð¬	6	1	250	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ8¼¶ÒÔÉÏ<enter>ÉÙÁÖµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ËÄ¿ÕÖ®»¤·¨Ñü´ø	6	1	251	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÉÙÁÖµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ËÄ¿ÕÖ®ÈíÆ¤»¤Íó	6	1	252	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÉÙÁÖµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ËÄ¿ÕÖ®½äÂÉ·¨½ä	6	1	253	¡£
-»Æ½ðÍ¼Æ×-º³ÌìÖ®½ð»·´óÑÛÉñ´¸	6	1	254	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦µãÊý6¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÉúÃü°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-º³ÌìÖ®ÎäÉñÏâ½ð¼×	6	1	255	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÐþÌú¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÁ¦Á¿µãÊý8¼¶ÒÔÉÏ<enter>ÌìÍõ´¸·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-º³ÌìÖ®ÍþÎäÊøÑü»·	6	1	256	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÌìÍõ´¸·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-º³ÌìÖ®»¢Í·½ôÊøÍó	6	1	257	¡£
-»Æ½ðÍ¼Æ×-º³ÌìÖ®³ËÁúÕ½Ñ¥	6	1	258	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÐþÌú¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÉí·¨µãÊý6¼¶ÒÔÉÏ<enter>ÌìÍõ´¸·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-¼ÌÒµÖ®±¼À××êÁúÇ¹	6	1	259	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦µãÊý6¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÉúÃü°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¼ÌÒµÖ®ÐþÎä»Æ½ðîø	6	1	260	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÌìÍõÇ¹·¨¡¤¾í¶þ<enter>ÐþÌú¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¼ÌÒµÖ®°×»¢ÎÞË«¿Û	6	1	261	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÌìÍõÇ¹·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-¼ÌÒµÖ®»ðÔÆ÷è÷ëÊÖ	6	1	262	¡£
-»Æ½ðÍ¼Æ×-¼ÌÒµÖ®ÖìÈ¸ÁèÔÆÑ¥	6	1	263	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÐþÌú¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ8¼¶ÒÔÉÏ<enter>ÌìÍõÇ¹·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-ÓùÁúÖ®ÁÁÒø±¦µ¶	6	1	264	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦µãÊý5¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÉúÃü°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ÓùÁúÖ®Õ½Éñ¹Ò×¹	6	1	265	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ7¼¶ÒÔÉÏ<enter>ÌìÍõµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ÓùÁúÖ®ÌìÃÅÊøÑü»·	6	1	266	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÌìÍõµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ÓùÁúÖ®Ñ¸·ç·¢¹¿	6	1	267	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÉí·¨µãÊý8¼¶ÒÔÉÏ<enter>ÌìÍõµ¶·¨¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ÓùÁúÖ®¾øÃüÖ¸»·	6	1	268	¡£
-»Æ½ðÍ¼Æ×-ÎÞ¼äÖ®ÒÐÌì½£	6	1	269	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ¼äÖ®Çå·çÈíåì	6	1	270	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ãð½£ÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ¼äÖ®·÷ÔÆË¿´ø	6	1	271	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ãð½£ÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ¼äÖ®ÇÙÔÏ»¤Íó	6	1	272	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ãð½£ÃØ¼®<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼äÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ¼äÖ®°×Óñ°ãÖ¸	6	1	273	¡£
-»Æ½ðÍ¼Æ×-ÎÞ÷ÊÖ®Ä¦Äá¹Ú	6	1	274	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÄÚ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ÎÞ÷ÊÖ®ÇïË®Á÷¹â´ø	6	1	275	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÄÚ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>¶ëáÒ·ð¹âÕÆÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ÷ÊÖ®±ù¾§Ö¸»·	6	1	276	¡£
-»Æ½ðÍ¼Æ×-ÎÞ÷ÊÖ®Ï´ÏóÓñ¿Û	6	1	277	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦µãÊý6¼¶ÒÔÉÏ<enter>¶ëáÒ·ð¹âÕÆÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÄÚ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ÷ÊÖ®ºìç»Èí¶NÐ¬	6	1	278	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>¶ëáÒ·ð¹âÕÆÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ³¾Ö®ÓñÅ®ËØÐÄ¹Ú	6	1	279	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä7¼¶ÒÔÉÏ<enter>ÆÕ¶ÉÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ³¾Ö®ÇåÐÄÏòÉÆÖé	6	1	280	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÆÕ¶ÉÃØ¼®<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ÎÞ³¾Ö®´È±¯Óñ°ãÖ¸	6	1	281	¡£
-»Æ½ðÍ¼Æ×-ÎÞ³¾Ö®¾²Ó°Á÷ËÕ	6	1	282	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÆÕ¶ÉÃØ¼®
-»Æ½ðÍ¼Æ×-ÎÞ³¾Ö®·ð¹âÖ¸»·	6	1	283	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¶ëáÒ·ð¹âÕÆÃØ¼®<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÉËº¦×ª»¯ÎªÄÚÁ¦°Ù·Ö±È£¨Ä¾ÊôÐÔ£©6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ÆÜ»ËÖ®·ïÒÇµ¶	6	1	284	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È6¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÆÜ»ËÖ®»ÛÐÄ³¤Éú¿Û	6	1	285	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌµ¶·¨
-»Æ½ðÍ¼Æ×-ÆÜ»ËÖ®·çÑ©°×ÔÆÊø´ø	6	1	286	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌµ¶·¨
-»Æ½ðÍ¼Æ×-ÆÜ»ËÖ®±ù×Ù½õÍó	6	1	287	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌµ¶·¨<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÆÜ»ËÖ®´äÓñÖ¸»·	6	1	288	¡£
-»Æ½ðÍ¼Æ×-±Ìº£Ö®Ô§ÑìÁ¬»·µ¶	6	1	289	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌË«µ¶<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÄÚ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-±Ìº£Ö®»·ÖéÐûÇå½í	6	1	290	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼äÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌË«µ¶
-»Æ½ðÍ¼Æ×-±Ìº£Ö®ºìÁå½ðË¿´ø	6	1	291	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>´äÑÌË«µ¶
-»Æ½ðÍ¼Æ×-±Ìº£Ö®ºìÁå²¨	6	1	292	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼Ó»ð·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÊÜ½üÉí¹¥»÷Ê±ÉËº¦·´µ¯7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>´äÑÌË«µ¶
-»Æ½ðÍ¼Æ×-±Ìº£Ö®ÏËÏ¸Ö¸»·	6	1	293	¡£
-»Æ½ðÍ¼Æ×-ÓÄëÊÖ®½ðÉß·¢´ø	6	1	294	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Îå¶¾ÕÆ·¨¡¤¾íÒ»<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÄÚ¹¦Ïµ¶¾¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÓÄëÊÖ®³àÐ«ÃØ×°	6	1	295	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>Îå¶¾ÕÆ·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-ÓÄëÊÖ®ÇàòÚ²øÑü	6	1	296	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>Îå¶¾ÕÆ·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-ÓÄëÊÖ®Òøó¸»¤ÊÖ	6	1	297	¡£
-»Æ½ðÍ¼Æ×-ÓÄëÊÖ®Ä«ÖëÈíÂÄ	6	1	298	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È7¼¶ÒÔÉÏ<enter>Îå¶¾ÕÆ·¨¡¤¾íÒ»
-»Æ½ðÍ¼Æ×-Ú¤»ÃÖ®Ð°É²¶¾ÈÐ	6	1	299	ËùÐè²ÄÁÏ<color=yellow><enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>Îå¶¾µ¶·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-Ú¤»ÃÖ®ÓÄ¹Æ°µÒÂ	6	1	300	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Îå¶¾µ¶·¨¡¤¾í¶þ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Ú¤»ÃÖ®¶¾Ð«Ö¸»·	6	1	301	¡£
-»Æ½ðÍ¼Æ×-Ú¤»ÃÖ®¸¯¹Ç»¤Íó	6	1	302	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Îå¶¾µ¶·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-Ú¤»ÃÖ®Ë«»·Éß¿Û	6	1	303	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Îå¶¾µ¶·¨¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-Öä¸¿Ö®ÆÆ¼×Í·»·	6	1	304	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Îå¶¾ÉåÐÄÊõ¡¤¾íÈý<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Öä¸¿Ö®ÃðÀ×¾±·û	6	1	305	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Îå¶¾ÉåÐÄÊõ¡¤¾íÈý<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Öä¸¿Ö®ÓÄ»ÃÖ¸»·	6	1	306	¡£
-»Æ½ðÍ¼Æ×-Öä¸¿Ö®´©ÐÄ¶¾Íó	6	1	307	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Îå¶¾ÉåÐÄÊõ¡¤¾íÈý
-»Æ½ðÍ¼Æ×-Öä¸¿Ö®Ê´¹ÇÓñÅå	6	1	308	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Îå¶¾ÉåÐÄÊõ¡¤¾íÈý
-»Æ½ðÍ¼Æ×-±ùº®Ö®µ¯Ö¸·Éµ¶	6	1	309	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-±ùº®Ö®ÐþÒÂÊø¼×	6	1	310	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>·Éµ¶Êõ¡¤Éã»êÔÂÓ°<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-±ùº®Ö®ÐÄ¼ýÑü¿Û	6	1	311	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>·Éµ¶Êõ¡¤Éã»êÔÂÓ°
-»Æ½ðÍ¼Æ×-±ùº®Ö®ÐþÌì±ù»ðÅå	6	1	312	¡£
-»Æ½ðÍ¼Æ×-±ùº®Ö®ÔÂÓ°Ñ¥	6	1	313	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>·Éµ¶Êõ¡¤Éã»êÔÂÓ°
-»Æ½ðÍ¼Æ×-Ìì¹âÖ®»¨ÓêÂþÌì	6	1	314	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ìì¹âÖ®¶¨ÐÄÄýÉñ·û	6	1	315	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ðä¼ýÊõ¡¤±©ÓêÀæ»¨<enter>ÃØÒø¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ìì¹âÖ®É­ÂÞÊøÑü	6	1	316	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ðä¼ýÊõ¡¤±©ÓêÀæ»¨
-»Æ½ðÍ¼Æ×-Ìì¹âÖ®µØÐÐÇ§ÀïÑ¥	6	1	317	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ðä¼ýÊõ¡¤±©ÓêÀæ»¨
-»Æ½ðÍ¼Æ×-Ìì¹âÖ®ÊøÌì¸¿µØ»·	6	1	318	¡£
-»Æ½ðÍ¼Æ×-É­»ÄÖ®·ÉÐÇ¶á»ê	6	1	319	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-É­»ÄÖ®½ðÇ®Á¬»·¼×	6	1	320	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ8¼¶ÒÔÉÏ<enter>·ÉïÚÊõ¡¤¾Å¹¬·ÉÐÇ
-»Æ½ðÍ¼Æ×-É­»ÄÖ®»êÒ§ÑüÊø	6	1	321	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>·ÉïÚÊõ¡¤¾Å¹¬·ÉÐÇ
-»Æ½ðÍ¼Æ×-É­»ÄÖ®ÐþÌúÏâÓñÅå	6	1	322	¡£
-»Æ½ðÍ¼Æ×-É­»ÄÖ®ÐÇÔÉ·ÉÂÄ	6	1	323	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>·ÉïÚÊõ¡¤¾Å¹¬·ÉÐÇ<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-µØÆÇÖ®ÎåÐÐÁ¬»·¹Ú	6	1	324	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÏÝÚåÊõ¡¤ÂÒ»·»÷<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä6¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-µØÆÇÖ®ºÚÑæ³åÌìÁ´	6	1	325	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÏÝÚåÊõ¡¤ÂÒ»·»÷<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-µØÆÇÖ®Åùö¨À×»ð½ä	6	1	326	¡£
-»Æ½ðÍ¼Æ×-µØÆÇÖ®¿ÛÐÄïí	6	1	327	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>ÏÝÚåÊõ¡¤ÂÒ»·»÷
-»Æ½ðÍ¼Æ×-µØÆÇÖ®·çº®ÊøÑü	6	1	328	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÏÝÚåÊõ¡¤ÂÒ»·»÷
-»Æ½ðÍ¼Æ×-Í¬³ðÖ®ÓùÁúÓñÅå	6	1	329	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Ø¤°ïÕÆ·¨
-»Æ½ðÍ¼Æ×-Í¬³ðÖ®½µÁúØ¤ÒÂ	6	1	330	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÍâ¹¦×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>Ø¤°ïÕÆ·¨
-»Æ½ðÍ¼Æ×-Í¬³ðÖ®Ç±ÁúÑü´ø	6	1	331	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Ø¤°ïÕÆ·¨
-»Æ½ðÍ¼Æ×-Í¬³ðÖ®¿ºÁú»¤ÊÖ	6	1	332	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ø¤°ïÕÆ·¨<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÄÚ¹¦Ïµ»ð¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Í¬³ðÖ®¼ûÁú°âÖ¸	6	1	333	¡£
-»Æ½ðÍ¼Æ×-µÐâéÖ®ÂÌÓñÕÈ	6	1	334	ËùÐè²ÄÁÏ<color=yellow><enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ø¤°ï¹÷·¨
-»Æ½ðÍ¼Æ×-µÐâéÖ®¾Å´üØ¤ÒÂ	6	1	335	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä8¼¶ÒÔÉÏ<enter>Ø¤°ï¹÷·¨
-»Æ½ðÍ¼Æ×-µÐâéÖ®²øÃ§Ñü´ø	6	1	336	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ø¤°ï¹÷·¨
-»Æ½ðÍ¼Æ×-µÐâéÖ®¹·¼¹Æ¤»¤Íó	6	1	337	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä×î´óÖµ6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-µÐâéÖ®²Ý¼äÊ¯½ä	6	1	338	¡£
-»Æ½ðÍ¼Æ×-Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹	6	1	339	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼Ó¹¥»÷ÃüÖÐÂÊµãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷6¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ä§É·Ö®²ÐÑôÓ³Ñª¼×	6	1	340	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµ7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ä§É·Ö®³àæ÷ËøÑü¿Û	6	1	341	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÔÆÁú»÷¡¤Ã¬·¨
-»Æ½ðÍ¼Æ×-Ä§É·Ö®¾Ù»ðÁÇÌì»·	6	1	342	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÔÆÁú»÷¡¤Ã¬·¨
-»Æ½ðÍ¼Æ×-Ä§É·Ö®ÔÆÁúÍÂÖé½ä	6	1	343	¡£
-»Æ½ðÍ¼Æ×-Ä§ÊÈÖ®ÁÒÑæ¹ÚÃá	6	1	344	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Á÷ÐÇ¡¤µ¶·¨<enter>Ü½ÈØÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ä§ÊÈÖ®À÷Ä§ÊÉÐÄ´ø	6	1	345	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Á÷ÐÇ¡¤µ¶·¨
-»Æ½ðÍ¼Æ×-Ä§ÊÈÖ®Òµ»ðÓÄÚ¤½ä	6	1	346	¡£
-»Æ½ðÍ¼Æ×-Ä§ÊÈÖ®ÑªÓñÆßÉ±Åå	6	1	347	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Á÷ÐÇ¡¤µ¶·¨
-»Æ½ðÍ¼Æ×-Ä§ÊÈÖ®É½º£·ÉºèÂÄ	6	1	348	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Á÷ÐÇ¡¤µ¶·¨<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ä§»ÍÖ®½ð¼×¿ø	6	1	349	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Éã»ê¡¤×çÖä<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Ä§»ÍÖ®°´³ö»¢ÏîÈ¦	6	1	350	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Ä§»ÍÖ®Ïª¹ÈÊøÑü´ø	6	1	351	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>Éã»ê¡¤×çÖä
-»Æ½ðÍ¼Æ×-Ä§»ÍÖ®ÑªÒÂÊÞïí	6	1	352	¡£
-»Æ½ðÍ¼Æ×-Ä§»ÍÖ®ÈÛ½ð¶ÏÈÕ½ä	6	1	353	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Éã»ê¡¤×çÖä
-»Æ½ðÍ¼Æ×-ÁèÔÀÖ®Ì«¼«½£	6	1	354	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÄÚ¹¦ÏµÀ×ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-ÁèÔÀÖ®ÎÞÎÒÊø´ø	6	1	355	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£ºÔö¼ÓÄÚ¹¦ÏµÀ×ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ì«¼«È­Æ×¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ÁèÔÀÖ®Å­À×·¨½ä	6	1	356	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Ì«¼«È­Æ×¡¤¾íÈý
-»Æ½ðÍ¼Æ×-ÁèÔÀÖ®ÎÞ¼«ÐþÓñÅå	6	1	357	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ì«¼«È­Æ×¡¤¾íÈý<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-ÁèÔÀÖ®ÌìµØÐþ»Æ½ä	6	1	358	¡£
-»Æ½ðÍ¼Æ×-¼°·áÖ®ÕæÎä½£	6	1	359	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼Ó¹¥»÷ÃüÖÐÂÊµãÊý8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-¼°·áÖ®ÈýÇå·û	6	1	360	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¼°·áÖ®ÐþË¿Èý¶Î½õ	6	1	361	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ì«¼«½£Æ×¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-¼°·áÖ®´äÓñÐþ»ÆÍó	6	1	362	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ì«¼«½£Æ×¡¤¾í¶þ
-»Æ½ðÍ¼Æ×-¼°·áÖ®ÇàËÉ·¨½ä	6	1	363	¡£
-»Æ½ðÍ¼Æ×-Ëª¾§Ö®Ç§Äêº®Ìú	6	1	364	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÃüÖÐÎüÈ¡ÆäÄÚÁ¦8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷7¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-Ëª¾§Ö®Á÷ÐÇ¸ÏÔÂ¿Û	6	1	365	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦·çÊõ
-»Æ½ðÍ¼Æ×-Ëª¾§Ö®Çå·çÂÆ´ø	6	1	366	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Ô¦·çÊõ
-»Æ½ðÍ¼Æ×-Ëª¾§Ö®ÌìÇå±ù¾§ÊÖ	6	1	367	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦·çÊõ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ï´Ëè¾­
-»Æ½ðÍ¼Æ×-Ëª¾§Ö®·ç±©Ö¸»·	6	1	368	¡£
-»Æ½ðÍ¼Æ×-À×ñ·Ö®º®ËÉ±ù°Ø¹Ú	6	1	369	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦À×Êõ<enter>¿×È¸Ê¯£ºÄÚ¹¦ÏµÀ×¹¥ÉËº¦µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®
-»Æ½ðÍ¼Æ×-À×ñ·Ö®ÌìµØ»¤·û	6	1	370	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ8¼¶ÒÔÉÏ<enter>Ô¦·çÊõ
-»Æ½ðÍ¼Æ×-À×ñ·Ö®·çÀ×Çà½õ´ø	6	1	371	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Ô¦À×Êõ
-»Æ½ðÍ¼Æ×-À×ñ·Ö®ÁéÓñÔÌÀ×Íó	6	1	372	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>¿×È¸Ê¯£ºÔö¼ÓÀ×·À×î´óÖµ8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦À×Êõ
-»Æ½ðÍ¼Æ×-À×ñ·Ö®¾ÅÌìÒýÀ×½ä	6	1	373	¡£
-»Æ½ðÍ¼Æ×-Îí»ÃÖ®±±Ú¤µÀ¹Ú	6	1	374	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦ÐÄÊõ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-Îí»ÃÖ®Ì«Ô¨ÕæÎäÁ´	6	1	375	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÎäÁÖÃØ¼®<enter>ÃØÒø¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ8¼¶ÒÔÉÏ<enter>Ô¦ÐÄÊõ
-»Æ½ðÍ¼Æ×-Îí»ÃÖ®ÊøÐÄÖ¸»·	6	1	376	¡£
-»Æ½ðÍ¼Æ×-Îí»ÃÖ®ÇåÓ°ÐþÓñÅå	6	1	377	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>¿×È¸Ê¯£º¼õÉÙ³Ù»ºÊ±¼ä8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä7¼¶ÒÔÉÏ<enter>Ô¦ÐÄÊõ
-»Æ½ðÍ¼Æ×-Îí»ÃÖ®ËÉ·çÑ©Ó°Ñ¥	6	1	378	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ô¦ÐÄÊõ<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÀ×·À×î´óÖµ6¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý6¼¶ÒÔÉÏ<enter>ÖÓÈéÊ¯£º¼õÉÙÑ£ÔÎÊ±¼ä6¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶´²ìÖ®°×½ðµñÁú½ä	6	1	379	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÉí·¨µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÁ¦Á¿µãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÌåÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÐÒÔËÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶´²ìÖ®°×ÓñÇ¬À¤Åå	6	1	380	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÉí·¨µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÁ¦Á¿µãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÌåÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÐÒÔËÖµ7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶´²ìÖ®°×½ðÐâ·ï½ä	6	1	381	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÉí·¨µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÁ¦Á¿µãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÌåÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÐÒÔËÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶´²ìÖ®ôä´äÓñÏîÈ¦	6	1	382	ËùÐè²ÄÁÏ<color=yellow><enter>¿×È¸Ê¯£ºÔö¼ÓÉí·¨µãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÁ¦Á¿µãÊý7¼¶ÒÔÉÏ<enter>ÖìÉ°¿ó£ºÔö¼ÓÌåÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÐÒÔËÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶¨¹úÖ®ÇàÉ´³¤ÉÀ	6	1	383	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£º¼õÉÙÊÜÉË¶¯×÷Ê±¼ä7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶¨¹úÖ®ÎÙÉ°·¢¹Ú	6	1	384	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý8¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼ÓÆÕ·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶¨¹úÖ®³à¾îÈíÑ¥	6	1	385	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>ÃØÒø¿ó£ºÔö¼ÓÒÆ¶¯ËÙ¶È7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶¨¹úÖ®×ÏÌÙ»¤Íó	6	1	386	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙ³Ù»ºÊ±¼ä°Ù·Ö±È7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-¶¨¹úÖ®Òø²ÏÑü´ø	6	1	387	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÉúÃü×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£º¼õÉÙÖÐ¶¾Ê±¼ä°Ù·Ö±È7¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-°²°îÖ®±ù¾§Ê¯ÏîÁ´	6	1	388	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓËùÓÐ¿¹ÐÔ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-°²°îÖ®¾Õ»¨Ê¯Ö¸»·	6	1	389	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó±ù·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-°²°îÖ®Ìï»ÆÊ¯ÓñÅå	6	1	390	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó¶¾·À×î´óÖµ8¼¶ÒÔÉÏ
-»Æ½ðÍ¼Æ×-°²°îÖ®¼¦ÑªÊ¯½äÖ¸	6	1	391	ËùÐè²ÄÁÏ<color=yellow><enter>ÐþÌú¿ó£ºÔö¼ÓÄÚÁ¦×î´óÖµµãÊý7¼¶ÒÔÉÏ<enter>Ü½ÈØÊ¯£ºÔö¼Ó»ð·À×î´óÖµ8¼¶ÒÔÉÏ
+§å phæ Hoµng Kim - Méng Long ChÝnh Hoµng T¨ng M·o	6	1	239	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch<enter>MËt Ng©n Kho¸ng: T¨ng phÇn tr¨m STVL hÖ ngo¹i c«ng, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng háa, cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>ThiÕu L©m QuyÒn Ph¸p quyÓn 1
+§å phæ Hoµng Kim - Méng Long Kim Ti ChÝnh Hång Cµ Sa	6	1	240	Nguyªn liÖu <color=yellow><enter>HuyÒn ThiÕt Kho¸ng t¨ng møc sinh lùc cÊp 7 trë lªn.<enter>Vâ L©m MËt TÞch.<enter>MËt Ng©n Kho¸ng: t¨ng møc néi lùc cÊp 6 trë lªn. <enter>HuyÒn ThiÕt Kho¸ng: gi¶m thêi gian phôc håi cÊp 5 trë lªn. <enter>Phï Dung Th¹ch: t¨ng phßng thñ vËt lý cÊp 5 trë lªn.<enter>ThiÕu L©m QuyÒn Ph¸p quyÓn 1.
+§å phæ Hoµng Kim - Méng Long HuyÒn Ti Ph¸p §¸i	6	1	241	VËt liªu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: t¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch:  thêi gian lµm chËm cÊp trªn 7<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Phï dung th¹ch: thêi gian tróng ®éc cÊp trªn 8<enter>Chu Nhò Th¹ch: gi¶m cho¸ng cÊp trªn 8<enter>ThiÕu L©m QuyÒn Ph¸p quyÓn 1
+§å phæ Hoµng Kim - Méng Long PhËt Ph¸p HuyÒn Béi	6	1	242	.
+§å phæ Hoµng Kim - Méng Long §¹t Ma T¨ng Hµi	6	1	243	.
+§å phæ Hoµng Kim - Phôc Ma Tö Kim C«n	6	1	244	Nguyªn liÖu yªu cÇu:  <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng ®é chÝnh x¸c cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: Hót néi lùc cÊp 5 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Phôc Ma HuyÒn Hoµng Cµ Sa	6	1	245	.
+§å phæ Hoµng Kim - Phôc Ma ¤ Kim NhuyÔn §iÒu	6	1	246	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 7<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>ThiÕu L©m C«n Ph¸p quyÓn 2
+§å phæ Hoµng Kim - Phôc Ma PhËt T©m NhuyÔn KhÊu	6	1	247	.
+§å phæ Hoµng Kim - Phôc Ma Phæ §é T¨ng Hµi	6	1	248	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch<enter>MËt Ng©n Kho¸ng: T¨ng tèc ®é ch¹y, cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 6 trë lªn<enter>Chung Nhò Th¹ch: Thêi gian lµm chËm, cÊp 6 trë lªn
+§å phæ Hoµng Kim - Tø Kh«ng Gi¸ng Ma Giíi §ao	6	1	249	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL c«ng cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: Hót néi lùc cÊp 6 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Tø Kh«ng Tö Kim Cµ Sa	6	1	250	.
+§å phæ Hoµng Kim - Tø Kh«ng Hé Ph¸p Yªu §¸i	6	1	251	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>ThiÕu L©m §ao Ph¸p quyÓn 3
+§å phæ Hoµng Kim - Tø Kh«ng NhuyÔn B× Hé UyÓn	6	1	252	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: Gi¶m cho¸ng, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng háa, cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>ThiÕu L©m §ao Ph¸p - quyÓn 3
+§å phæ Hoµng Kim - Tø Kh«ng Giíi LuËt Ph¸p Giíi	6	1	253	.
+§å phæ Hoµng Kim - H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy	6	1	254	Nguyªn liÖu yªu cÇu: <color=yellow><enter>Khæng T­íc Th¹ch: T¨ng ®iÓm ngo¹i c«ng cÊp 6 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: Hót sinh lùc cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 8 trë lªn<enter>Chung Nhò Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 7 trë lªn
+§å phæ Hoµng Kim - H¸m Thiªn Vò ThÇn T­¬ng Kim Gi¸p	6	1	255	.
+§å phæ Hoµng Kim - H¸m Thiªn Uy Vò Thóc Yªu §¸i	6	1	256	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>Thiªn V­¬ng Chïy Ph¸p quyÓn 1
+§å phæ Hoµng Kim - H¸m Thiªn Hæ §Çu KhÈn Thóc UyÓn	6	1	257	.
+§å phæ Hoµng Kim - H¸m Thiªn Thõa Long ChiÕn Ngoa	6	1	258	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é di chuyÓn cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng  kh¸ng l«i cÊp 6 trë lªn<enter>Chung Nhò Th¹ch: T¨ng th©n ph¸p cÊp 5 trë lªn<enter>Thiªn V­¬ng Chïy Ph¸p
+§å phæ Hoµng Kim - KÕ NghiÖp B«n L«i Toµn Long Th­¬ng	6	1	259	Nguyªn liÖu yªu cÇu: <color=yellow><enter>Khæng T­íc Th¹ch: T¨ng sinh khÝ cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: Hót sinh lùc cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Chung Nhò Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 5 trë lªn.
+§å phæ Hoµng Kim - KÕ NghiÖp HuyÒn Vò Hoµng Kim Kh¶i	6	1	260	CÇn cã:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng (lo¹i t¨ng Sinh lùc)<enter>Thiªn V­¬ng Th­¬ng Ph¸p.QuyÓn 2 <enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i gi¶m thêi gian bÞ th­¬ng )<enter>Phï Dung Th¹ch cÊp 8 trë lªn (lo¹i t¨ng Phßng thñ) 
+§å phæ Hoµng Kim - KÕ NghiÖp B¹ch Hæ V« Song KhÊu	6	1	261	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>Thiªn V­¬ng Th­¬ng Ph¸p quyÓn 2
+§å phæ Hoµng Kim - KÕ NghiÖp Háa V©n Kú L©n thñ 	6	1	262	.
+§å phæ Hoµng Kim - KÕ NghiÖp Chu T­íc L¨ng V©n Ngoa	6	1	263	.
+§å phæ Hoµng Kim - Ngù Long L­îng Ng©n B¶o §ao	6	1	264	Nguyªn liÖu yªu cÇu: <color=yellow><enter>Khæng T­íc Th¹ch: T¨ng sinh khÝ cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: Hót sinh lùc cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Chung Nhò Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 5 trë lªn.
+§å phæ hoµng kim - Ngù Long ChiÕn ThÇn Qua Trôy	6	1	265	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng l«i, cÊp 7 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng háa, cÊp 8 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng kh¸ng tÊt c¶, cÊp 7 trë lªn<enter>Thiªn V­¬ng §ao Ph¸p - quyÓn 3
+§å phæ Hoµng Kim - Ngù Long Thiªn M«n Thóc Yªu Hoµn	6	1	266	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: Gi¶m thêi gian lµm chËm cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng háa cÊp 6 trë lªn<enter>Phï Dung Th¹ch: Gi¶m thêi gian tróng ®éc cÊp 5 trë lªn<enter>Thiªn V­¬ng §ao Ph¸p
+§å phæ Hoµng Kim - Ngù Long TÊn Phong Hé UyÓn	6	1	267	.
+§å phæ Hoµng Kim - Ngù Long TuyÖt MÖnh ChØ Hoµn	6	1	268	.
+§å phæ Hoµng Kim - V« Gian û Thiªn KiÕm	6	1	269	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: Hót néi lùc cÊp 5 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - V« Gian Thanh Phong Truy Y	6	1	270	.
+§å phæ Hoµng Kim - V« Gian PhÊt V©n Ti §¸i	6	1	271	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng:  T¨ng néi lùc cÊp trªn 8<enter>DiÖt KiÕm MËt TÞch
+§å phæ Hoµng Kim - V« Gian CÇm VËn Hé UyÓn	6	1	272	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>DiÖt KiÕm MËt TÞch<enter>Phï Dung Th¹ch: Gi¶m thêi gian lµm chËm, cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - V« Gian B¹ch Ngäc Bµn ChØ 	6	1	273	.
+§å phæ Hoµng Kim - V« Ma Ma Ni Qu¸n	6	1	274	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>Phï Dung Th¹ch: Thêi gian lµm chËm cÊp trªn 8<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t néi c«ng cÊp trªn 8
+§å phæ Hoµng Kim - V« Ma Tö Kh©m Cµ Sa	6	1	275	.
+§å phæ Hoµng Kim - V« Ma B¨ng Tinh ChØ Hoµn	6	1	276	.
+§å phæ Hoµng Kim - V« Ma TÈy T­îng Ngäc KhÊu	6	1	277	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng sinh khÝ cÊp 6 trë lªn<enter>Nga My PhËt Quang Ch­ëng MËt TÞch<enter>Khæng T­íc Th¹ch: T¨ng b¨ng s¸t néi c«ng cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - M¶nh Hång Truy NhuyÔn Th¸p Hµi 	6	1	278	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é di chuyÓn cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i cÊp 5 trë lªn<enter>Nga My PhËt Quang Ch­ëng MËt TÝch
+§å phæ Hoµng Kim - V« TrÇn Ngäc N÷ Tè T©m Qu¸n	6	1	279	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 7<enter>Phæ §é MËt TÞch
+§å phæ Hoµng Kim - V« TrÇn Thanh T©m H­íng ThiÖn Ch©u	6	1	280	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>Phæ §é MËt TÞch<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng l«i cÊp 5 trë lªn<enter>Phï Dunh Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>Chu Sa Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn
+§å phæ Hoµng Kim - V« TrÇn Tõ Bi Ngäc Bµn ChØ 	6	1	281	.
+§å phæ Hoµng Kim - V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi	6	1	282	.
+§å phæ hoµng kim - V« TrÇn PhËt Quang ChØ Hoµn	6	1	283	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng l«i, cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng néi lùc, cÊp 8 trë lªn<enter>Nga Mi PhËt Quang Ch­ëng MËt TÞch<enter>Chung Nhò Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn<enter>Phï Dung Th¹ch: ChuyÓn hãa s¸t th­¬ng thµnh néi lùc (hÖ méc), cÊp 6 trë lªn
+§å phæ Hoµng Kim - Tª Hoµng Phông Nghi §ao	6	1	284	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: Hót néi lùc cÊp 4 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Tª Hoµng TuÖ T©m Khinh Sa Y	6	1	285	.
+§å phæ Hoµng Kim - Tª Hoµng Phong TuyÕt B¹ch V©n Thóc §¸i	6	1	286	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Thóy Yªn §ao Ph¸p
+§å phæ Hoµng Kim - Tª Hoµng B¨ng Tung CÈm UyÓn	6	1	287	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Thóy Yªn §ao Ph¸p<enter>Phï Dung Th¹ch: Gi¶m thêi gian lµm chËm, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Tª Hoµng Thóy Ngäc ChØ Hoµn	6	1	288	.
+§å phæ Hoµng Kim - BÝch H¶i Uyªn ¦¬ng Liªn Hoµn ®ao	6	1	289	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 6 trë lªn<enter>Thóy Yªn Song §ao<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t néi c«ng cÊp 4 trë lªn
+§å phæ Hoµng Kim - BÝch H¶i Hoµn Ch©u Vò Liªn	6	1	290	.
+§å phæ Hoµng Kim - BÝch H¶i Hång Linh Kim Ti §¸i	6	1	291	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Thóy Yªn Song §ao
+§å phæ Hoµng Kim - BÝch H¶i Hång L¨ng Ba	6	1	292	CÇn cã:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng cÊp 6 trë lªn (lo¹i t¨ng Sinh lùc)<enter>MËt Ng©n Kho¸ng cÊp 7 trë lªn (lo¹i t¨ng Néi lùc)<enter>Chung Nhò Th¹ch cÊp 6 trë lªn (lo¹i t¨ng phßng Háa)<enter>HuyÒn ThiÕt Kho¸ng cÊp 7 trë lªn (lo¹i t¨ng kh¶ n¨ng ph¶n ®ßn)<enter>MËt Ng©n Kho¸ng cÊp 7 trë lªn (lo¹i gi¶m thêi gian bÞ th­¬ng )<enter>Thóy Yªn Song §ao
+§å phæ Hoµng Kim - BÝch H¶i Khiªn TÕ ChØ Hoµn	6	1	293	.
+§å phæ Hoµng Kim - U Lung Kim Xµ Ph¸t §¸i	6	1	294	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>Ngò §éc Ch­ëng Ph¸p<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®éc s¸t néi c«ng cÊp 5 trë lªn
+§å phæ Hoµng Kim - U Lung XÝch HiÕt MËt Trang	6	1	295	.
+§å phæ Hoµng Kim - U Lung Thanh Ng« TriÒn Yªu	6	1	296	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>Ngò §éc Ch­ëng Ph¸p quyÓn 1
+§å phæ Hoµng Kim - U Lung Ng©n ThiÒm Hé UyÓn	6	1	297	.
+§å phæ Hoµng Kim - U Lung MÆc Thï NhuyÔn Lý 	6	1	298	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng sinh khÝ cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng tèc ®é di chuyÓn cÊp 6 trë lªn<enter>Ngò §éc Ch­ëng Ph¸p
+§å phæ Hoµng Kim - Minh ¶o Tµ S¸t §éc NhËn	6	1	299	Nguyªn liÖu yªu cÇu: <color=yellow><enter>Vâ L©m MËt TÞch<enter>MËt Ng©n Kho¸ng: Hót néi lùc cÊp 4 trë lªn<enter>Chu Sa Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 5 trë lªn<enter>Ngò §éc §ao Ph¸p
+§å phæ Hoµng Kim - Minh ¶o U Cæ ¸m Y	6	1	300	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Ngò §éc §ao Ph¸p - quyÓn 2<enter>MËt Ng©n Kho¸ng: Thêi gian phôc håi, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Chung Nhò Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn
+§å phæ Hoµng Kim - Minh ¶o Thanh HiÕt ChØ Hoµn	6	1	301	.
+§å phæ Hoµng Kim - Minh ¶o Hñ Cèt Hé UyÓn	6	1	302	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Ngò §éc §ao Ph¸p quyÓn 2
+§å phæ Hoµng Kim - Minh ¶o Song Hoµn Xµ Hµi	6	1	303	.
+§å phæ Hoµng Kim - Chó Ph­îc Ph¸ Gi¸p §Çu Hoµn	6	1	304	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Ngò §éc NhiÕp T©m ThuËt - quyÓn 3<enter>MËt Ng©n Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch<enter>Chung Nhò Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn
+§å phæ Hoµng Kim - Chó Ph­îc DiÖt L«i C¶nh Phï 	6	1	305	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng trÞ møc sinh lùc cÊp 6 trë lªn<enter>Ngò §éc NhiÕp T©m ThuËt<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 5 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng ®éc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>Chu Sa Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn
+§å phæ Hoµng Kim - Chó Ph­îc U ¶o ChØ Hoµn	6	1	306	.
+§å phæ Hoµng Kim - Chó Ph­îc Xuyªn T©m §éc UyÓn	6	1	307	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 7<enter>Ngò §éc NhiÕp T©m ThuËt quyÓn 3
+§å phæ Hoµng Kim - Chó Ph­îc B¨ng Háa §éc Cèt Ngoa	6	1	308	.
+§å phæ Hoµng Kim - B¨ng Hµn §¬n ChØ Phi §ao	6	1	309	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>HuyÒn ThiÕt Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - B¨ng Hµn HuyÒn Y Thóc Gi¸p	6	1	310	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Phi §ao ThuËt - NhiÕp Hån NguyÖt ¶nh<enter>MËt Ng©n Kho¸ng: Thêi gian phôc håi, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - B¨ng Hµn T©m TiÔn Yªu KhÊu	6	1	311	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>Phi §ao ThuËt - NhiÕp Hån NguyÖt ¶nh
+§å phæ Hoµng Kim - B¨ng Hµn HuyÒn Thiªn B¨ng Háa Béi	6	1	312	.
+§å phæ Hoµng Kim - B¨ng Hµn NguyÖt ¶nh Ngoa	6	1	313	.
+§å phæ Hoµng Kim - Thiªn Quang Hoa Vò M¹n Thiªn	6	1	314	CÇn cã:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>MËt Ng©n Kho¸ng cÊp 7 trë lªn (lo¹i t¨ng s¸t th­¬ng vËt lý hÖ Ngo¹i c«ng)<enter>Chu Sa Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng ®éng t¸c xuÊt chiªu hÖ Ngo¹i c«ng)<enter>Phï Dung Th¹ch cÊp 7 trë lªn (lo¹i t¨ng s¸t th­¬ng vËt lý hÖ Ngo¹i c«ng)<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Thiªn Quang §Þnh T©m Ng­ng ThÇn phï 	6	1	315	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>Tô TiÔn ThuËt B¹o Vò Lª Hoa<enter>MËt Ng©n Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 5 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Thiªn Quang S©m La Thóc Yªu	6	1	316	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Tô TiÔn ThuËt - B¹o Vò Lª Hoa
+§å phæ Hoµng Kim - Thiªn Quang Phong B¹o Hµn ThiÕt Tr¹c	6	1	317	.
+§å phæ Hoµng Kim - Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn	6	1	318	.
+§å phæ Hoµng Kim - S©m Hoang Phi Tinh §o¹t Hån	6	1	319	Nguyªn liÖu yªu cÇu:<color=yellow><enter>HuyÒn thiÕt kho¸ng: Sinh lùc tèi ®a cÊp 7 trë lªn<enter>MËt ng©n kho¸ng: STVL ngo¹i c«ng % cÊp 5 trë lªn<enter>Chu sa kho¸ng: TrÞ néi lùc tèi ®a cÊp 5 trë lªn<enter>HuyÒn thiÕt kho¸ng: Tèc ®é ®¸nh cÊp 5 trë lªn<enter>Phï dung th¹ch: STVL ngo¹i c«ng ®iÓm cÊp 4 trë lªn<enter>Vâ l©m mËt tÞch
+§å phæ Hoµng Kim - S©m Hoang Kim TiÒn Liªn Hoµn Gi¸p	6	1	320	.
+§å phæ Hoµng Kim - S©m Hoang Hån Gi¶o Yªu Thóc	6	1	321	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>Phi Tiªu ThuËt - Cöu Cung Phi Tinh
+§å phæ Hoµng Kim - S©m Hoang HuyÒn ThiÕt T­¬ng Ngäc Béi	6	1	322	.
+§å phæ Hoµng Kim - S©m Hoang Tinh VÉn Phi Lý 	6	1	323	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Phi tiªu thuËt - Cöu Cung Phi Tinh<enter>MËt Ng©n Kho¸ng: T¨ng tèc ®é di chuyÓn, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i, cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, 7###<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - §Þa Ph¸ch Ngò Hµnh Liªn Hoµn Qu¸n	6	1	324	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>H·m TØnh ThuËt - Lo¹n Hoµn KÝch<enter>Phï Dung Th¹ch: Thêi gian lµm chËm, cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - §Þa Ph¸ch H¾c DiÖm Xung Thiªn Liªn	6	1	325	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 6 trë lªn<enter>H·m TÜnh ThuËt Lo¹n Hoµn KÝch<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>Chu Sa Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn
+§å phæ Hoµng Kim - §Þa Ph¸ch TÝch LÞch L«i Háa Giíi	6	1	326	.
+§å phæ Hoµng Kim - §Þa Ph¸ch KhÊu T©m Tr¹c	6	1	327	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>H·m TÜnh ThuËt - Lo¹n Hoµn KÝch
+§å phæ Hoµng Kim - §Þa Ph¸ch §Þa Hµnh Thiªn Lý Ngoa	6	1	328	.
+§å phæ Hoµng Kim - §ång Cõu Phi Long §Çu Hoµn	6	1	329	.
+§å phæ Hoµng Kim - §ång Cõu Gi¸ng Long C¸i Y	6	1	330	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng møc néi lùc tèi ®a cÊp 5 trë lªn<enter>Chung Nhò Th¹ch: T¨ng sinh khÝ cÊp 4 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: Gi¶m thêi gian phôc håi cÊp 5 trë lªn<enter>C¸i Bang Ch­ëng Ph¸p
+§å phæ Hoµng Kim - §ång Cõu TiÒm Long Yªu §¸i	6	1	331	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Phï Dung Th¹ch: Thêi gian lµm chËm cÊp trªn 8<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>C¸i Bang Ch­ëng Ph¸p
+§å phæ Hoµng Kim - §ång Cõu Kh¸ng Long Hé UyÓn	6	1	332	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>C¸i Bang Ch­ëng Ph¸p<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng háa s¸t néi c«ng cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - §ång Cõu KiÕn Long Ban ChØ 	6	1	333	.
+§å phæ Hoµng Kim - §Þch Kh¸i Lôc Ngäc Tr­îng	6	1	334	Nguyªn liÖu yªu cÇu: <color=yellow><enter>Vâ L©m MËt TÞch<enter>MËt Ng©n Kho¸ng: Hót néi lùc cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 6 trë lªn<enter>C¸i Bang C«n Ph¸p
+§å phæ Hoµng Kim - §Þch Kh¸i Cöu §¹i C¸i Y	6	1	335	.
+§å phæ Hoµng Kim - §Þch Kh¸i TriÒn M·ng Yªu §¸i	6	1	336	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>C¸i Bang C«n Ph¸p
+§å phæ Hoµng Kim - §Þch Kh¸i CÈu TÝch B× Hé UyÓn	6	1	337	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: Gi¶m cho¸ng, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: Thêi gian tróng ®éc, cÊp 6 trë lªn
+§å phæ Hoµng Kim - §Þch Kh¸i Th¶o Gian Th¹ch Giíi	6	1	338	.
+§å phæ Hoµng Kim - Ma S¸t Quû Cèc U Minh Th­¬ng	6	1	339	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng ®é chÝnh x¸c cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 5 trë lªn<enter]Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Ma S¸t Tµn D­¬ng ¸nh HuyÕt Gi¸p	6	1	340	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>MËt Ng©n Kho¸ng: Thêi gian phôc håi, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Ma S¸t XÝch Ký Táa Yªu KhÊu	6	1	341	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: Gi¶m cho¸ng cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>V©n Long KÝch - M©u Ph¸p
+§å phæ Hoµng Kim - Ma S¸t Cö Háa LiÖu Thiªn UyÓn	6	1	342	.
+§å phæ Hoµng Kim - Ma S¸t V©n Long Thæ Ch©u Giíi	6	1	343	.
+§å phæ Hoµng Kim - Ma ThÞ LiÖt DiÖm Qu¸n MiÖn	6	1	344	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>L­u Tinh §ao Ph¸p<enter>Phï Dung Th¹ch: Gi¶m cho¸ng, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Ma ThÞ LÖ Ma PhÖ T©m Liªn	6	1	345	.
+§å phæ Hoµng Kim - Ma ThÞ NghiÖp Háa U Minh Giíi	6	1	346	.
+§å phæ Hoµng Kim - Ma ThÞ HuyÕt Ngäc ThÊt S¸t Béi	6	1	347	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: Kh¸ng háa cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>L­u Tinh §ao Ph¸p
+§å phæ Hoµng Kim - Ma ThÞ s¬n  H¶i Phi Hång Lý 	6	1	348	CÇn cã:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng cÊp 7 trë lªn (lo¹i t¨ng Sinh lùc)<enter>L­u Tinh. §ao ph¸p <enter>Chu Sa Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (t¨ng tèc ®é di chuyÓn)<enter>Phï Dung Th¹ch cÊp 8 trë lªn (lo¹i t¨ng phßng B¨ng)<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - Ma Hoµng Kim Gi¸p Kh«i	6	1	349	CÇn cã:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng cÊp 7 trë lªn (lo¹i t¨ng Sinh lùc)<enter>NhiÕp Hån. Tr­íc Chó <enter>Chu Sa Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch cÊp 8 trë lªn (lo¹i t¨ng phßng B¨ng) 
+§å phæ Hoµng Kim - Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn	6	1	350	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc  cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i cÊp 5 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng sinh khÝ cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>Chu Sa Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn
+§å phæ Hoµng Kim - Ma Hoµng Khª Cèc Thóc Yªu §¸i	6	1	351	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: Thêi gian tróng ®éc cÊp trªn 8<enter>NhiÕp Hån - bïa chó
+§å phæ Hoµng Kim - Ma Hoµng HuyÕt Y Thó Tr¹c	6	1	352	.
+§å phæ Hoµng Kim - Ma Hoµng §¨ng §¹p Ngoa	6	1	353	.
+§å phæ hoµng kim - L¨ng Nh¹c Th¸i Cùc KiÕm	6	1	354	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Khæng T­íc Th¹ch: L«i s¸t néi c«ng, cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng néi lùc, cÊp 8 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng háa, cÊp 7 trë lªn<enter>Chung Nhò Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - L¨ng Nh¹c V« Ng· §¹o Bµo	6	1	355	.
+§å phæ hoµng kim - L¨ng Nh¹c Né L«i Ph¸p Giíi	6	1	356	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 7<enter>Th¸i Cùc QuyÒn Phæ quyÓn 3
+§å phæ Hoµng Kim - L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi	6	1	357	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 8 trë lªn<enter>Th¸i Cùc QuyÒn Phæ<enter>Chu Sa Kho¸ng: T¨ng møc néi lùc cÊp 8 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp 7 trë lªn
+§å phæ Hoµng Kim - L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng giíi	6	1	358	.
+§å phæ Hoµng Kim - CËp Phong Ch©n Vò KiÕm	6	1	359	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng % STVL ngo¹i c«ng cÊp 8 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng ®é chÝnh x¸c cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: T¨ng tèc ®é ®¸nh ngo¹i c«ng cÊp 7 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng ®iÓm STVL ngo¹i c«ng cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 6 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - CËp Phong Tam Thanh Phï 	6	1	360	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng b¨ng cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 5 trë lªn
+§å phæ Hoµng Kim - CËp Phong HuyÒn Ti Tam §o¹n CÈm	6	1	361	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Vâ L©m MËt TÞch<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Th¸i Cùc KiÕm Phæ quyÓn 2
+§å phæ Hoµng Kim - CËp Phong Thóy Ngäc HuyÒn Hoµng Béi	6	1	362	.
+§å phæ Hoµng Kim - CËp Phong Thanh Tïng Ph¸p Giíi	6	1	363	.
+§å phæ Hoµng Kim - S­¬ng Tinh Thiªn Niªn Hµn ThiÕt	6	1	364	Nguyªn liÖu yªu cÇu:<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: Hót néi lùc cÊp 6 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng STVL ngo¹i c«ng % cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng tèc ®é ®¸nh cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng STVL ngo¹i c«ng ®iÓm cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng b¨ng s¸t ngo¹i c«ng cÊp 6 trë lªn<enter>Vâ l©m mËt tÞch
+§å phæ Hoµng Kim - S­¬ng Tinh Ng¹o S­¬ng §¹o Bµo	6	1	365	.
+§å phæ Hoµng Kim - S­¬ng Tinh Thanh Phong Lò §¸i	6	1	366	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 7<enter>Ngù Phong ThuËt
+§å phæ Hoµng Kim - S­¬ng Tinh Thiªn Thanh B¨ng Tinh Thñ 	6	1	367	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Ngù Phong ThuËt<enter>Vâ L©m MËt TÞch<enter>Khæng T­íc Th¹ch: T¨ng kh¸ng ®éc, cÊp 8 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>TÈy Tñy Kinh
+§å phæ Hoµng Kim - S­¬ng Tinh Phong B¹o ChØ Hoµn	6	1	368	.
+§å phæ Hoµng Kim - L«i Khung Hµn Tïng B¨ng B¸ch Quan	6	1	369	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Ngù L«i ThuËt<enter>Khæng T­íc Th¹ch: L«i s¸t néi c«ng, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc, cÊp 7 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 7 trë lªn<enter>Vâ L©m MËt TÞch
+§å phæ Hoµng Kim - L«i Khung Thiªn §Þa Hé Phï 	6	1	370	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 7 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp 6 trë lªn<enter>Khæng T­íc Th¹ch: T¨ng PTVL cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 4 trë lªn<enter>Ngù Phong ThuËt
+§å phæ Hoµng Kim - L«i Khung Phong L«i Thanh CÈm §¸i	6	1	371	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 7<enter>Ngù L«i ThuËt
+§å phæ Hoµng Kim - L«i Khung Linh Ngäc ¤n L«i	6	1	372	.
+§å phæ Hoµng Kim - L«i Khung Cöu Thiªn DÉn L«i Giíi	6	1	373	.
+§å phæ Hoµng Kim - Vô ¶o B¾c Minh §¹o Qu¸n	6	1	374	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 6 trë lªn<enter>Ngù T©m ThuËt<enter>Chu Sa Kho¸ng: T¨ng trÞ møc néi lùc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp 5 trë lªn
+§å phæ Hoµng Kim - Vô ¶o Ki B¸n Phï Chó 	6	1	375	.
+§å phæ Hoµng Kim - Vô ¶o Thóc T©m ChØ Hoµn	6	1	376	.
+§å phæ Hoµng Kim - Vô ¶o Thanh ¶nh HuyÒn Ngäc Béi	6	1	377	VËt liªu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc cÊp trªn 8<enter>Khæng T­íc Th¹ch: thêi gian lµm chËm cÊp trªn 8<enter>Phï Dung Th¹ch: T¨ng phßng thñ vËt lý cÊp trªn 7<enter>Chu Sa Kho¸ng: T¨ng néi lùc cÊp trªn 8<enter>Chung Nhò Th¹ch: Gi¶m cho¸ng cÊp trªn 7<enter>Ngù T©m ThuËt
+§å phæ Hoµng Kim - Vô ¶o Tung Phong TuyÕt ¶nh ngoa	6	1	378	VËt liÖu yªu cÇu<color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng sinh lùc, cÊp 8 trë lªn<enter>Ngù T©m ThuËt<enter>MËt Ng©n Kho¸ng: T¨ng tèc ®é di chuyÓn, cÊp 7 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng l«i, cÊp 6 trë lªn<enter>Chu Sa Kho¸ng: T¨ng néi lùc, cÊp 6 trë lªn<enter>Chung Nhò Th¹ch: Thêi gian gi¶m cho¸ng, cÊp 6 trë lªn
+§å phæ Hoµng Kim - ®éng S¸t B¹ch Kim §iªu Long Giíi	6	1	379	.
+§å phæ Hoµng Kim - ®éng S¸t B¹ch Ngäc Cµn Kh«n Béi	6	1	380	CÇn cã: <color=yellow><enter>Khæng T­íc Th¹ch: CÊp 7 trë lªn (lo¹i t¨ng th©n ph¸p)<enter>Phï Dung Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng søc m¹nh)<enter>Chu Sa Kho¸ng: cÊp 7 trë lªn (lo¹i t¨ng thÓ lùc)<enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>MËt Ng©n Kho¸ng (lo¹i t¨ng Sinh lùc)<enter>Phï Dung Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng may m¾n) .
+§å phæ Hoµng Kim - ®éng S¸t B¹ch Kim Tó Phông Giíi	6	1	381	CÇn cã:<color=yellow><enter>Khæng T­íc Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng th©n ph¸p)<enter>Phï Dung Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng søc m¹nh)<enter>Chu Sa Kho¸ng: cÊp 7 trë lªn (lo¹i t¨ng thÓ lùc)<enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>MËt Ng©n Kho¸ng (lo¹i t¨ng Sinh lùc)<enter>Phï Dung Th¹ch: cÊp 8 trë lªn (lo¹i t¨ng may m¾n) .
+§å phæ Hoµng Kim - ®éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn	6	1	382	CÇn cã:<color=yellow><enter>Khæng T­íc Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng th©n ph¸p)<enter>Phï Dung Th¹ch: cÊp 7 trë lªn (lo¹i t¨ng søc m¹nh)<enter>Chu Sa Kho¸ng: cÊp 7 trë lªn (lo¹i t¨ng thÓ lùc)<enter>HuyÒn ThiÕt Kho¸ng cÊp 8 trë lªn (lo¹i t¨ng Néi lùc)<enter>MËt Ng©n Kho¸ng (lo¹i t¨ng Sinh lùc)<enter>Phï Dung Th¹ch: cÊp 8 trë lªn (lo¹i t¨ng may m¾n) .
+§å phæ Hoµng Kim - §Þnh Quèc Thanh Sa Tr­êng Sam	6	1	383	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 5 trë lªn<enter>MËt Ng©n Kho¸ng: Gi¶m thêi gian phôc håi cÊp 4 trë lªn
+§å phæ Hoµng Kim - §Þnh Quèc ¤ Sa Ph¸t Qu¸n	6	1	384	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng PTVL tèi ®a cÊp 4 trë lªn
+§å phæ Hoµng Kim - §Þnh Quèc XÝch Quyªn NhuyÔn Ngoa	6	1	385	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 4 trë lªn<enter>MËt Ng©n Kho¸ng: T¨ng tèc ®é di chuyÓn cÊp 4 trë lªn
+§å phæ Hoµng Kim - §Þnh Quèc Tö §»ng Hé uyÓn	6	1	386	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 4 trë lªn<enter>Phï Dung Th¹ch: Gi¶m thêi gian lµm chËm cÊp 4 trë lªn
+§å phæ Hoµng Kim - §Þnh Quèc Ng©n Tµm Yªu ®¸i	6	1	387	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc sinh lùc cÊp 4 trë lªn<enter>Phï Dung Th¹ch: Gi¶m thêi gian tróng ®éc cÊp 4 trë lªn
+§å phæ Hoµng Kim - An Bang B¨ng Tinh Th¹ch H¹ng Liªn	6	1	388	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng kh¸ng tÊt c¶ cÊp 7 trë lªn
+§å phæ Hoµng Kim - An Bang Cóc Hoa Th¹ch ChØ hoµn	6	1	389	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng b¨ng cÊp 4 trë lªn
+§å phæ Hoµng Kim - An Bang §iÒn Hoµng Th¹ch Ngäc Béi	6	1	390	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc néi lùc cÊp 5 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng ®éc cÊp 4 trë lªn
+§å phæ Hoµng Kim - An Bang Kª HuyÕt Th¹ch Giíi ChØ 	6	1	391	Nguyªn liÖu yªu cÇu: <color=yellow><enter>HuyÒn ThiÕt Kho¸ng: T¨ng møc néi lùc cÊp 6 trë lªn<enter>Phï Dung Th¹ch: T¨ng kh¸ng háa cÊp 4 trë lªn

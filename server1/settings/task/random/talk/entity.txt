@@ -1,15 +1,15 @@
 TaskName	TaskType	Genre	Detail	Particular	Level	GoodsFive	Quality	GoodsNum	DelGoods	Money	KillNpcName	TalkNpcName	TalkNpcMap	TaskText
-ÈÎÎñÃû³Æ	ÈÎÎñÀàÐÍ	×ÜÀà	·ÖÀà	Ï¸Àà	µÈ¼¶	ÎåÐÐ	»Æ½ð±àºÅ	ÊýÁ¿	ÊÇ·ñÉ¾³ýÎïÆ· 	Ö§¸¶µÄ½ðÇ®	É±¹Ö¼ÆÊý±àºÅ	¶Ô»°ÈËÎïÃû×Ö	¶Ô»°ÈËÎïµØÍ¼	ÈÎÎñÃèÊö
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	¶Ô»°										6	ºÎÄºÑ©	´äÑÌÃÅ	
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	ÊÕ¼¯ÎïÆ·	6	0	20	1	0		1	1					1¸öÃµ¹å»¨
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	¶Ô»°											Ò©µêÀÏ°å	ÏåÑô	
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	ÊÕ¼¯ÎïÆ·	1	2	0	5	0		10	1					10¸öÎå»¨ÓñÂ¶
-Ëæ»ú_¶Ô»°_ÏåÑôÑÃÃÅÎÀ±ø	¶Ô»°											ÑÃÃÅÎÀ±ø	ÏåÑô	
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	¶Ô»°											Ìú½³Ñ§Í½	³É¶¼	
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	ÊÕ¼¯ÎïÆ·	6	0	11	1	0		1	1					1¸öÑÌ»¨
-Ëæ»ú_¶Ô»°_³É¶¼ÐÁ¶þÉô	¶Ô»°											ÐÁ¶þÉô	³É¶¼	
-Ëæ»ú_¶Ô»°_³É¶¼ÐÁ¶þÉô	ÊÕ¼¯ÎïÆ·	1	1	0	5	0		3	1					3¸öÊ×ÎÚ»¹Éñµ¤
-Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù	¶Ô»°											æäÕ¾æä¹Ù	ÑïÖÝ	
-Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù_01	¶Ô»°											²Ì¹«¹«	ÁÙ°²	
-Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç	¶Ô»°											Éò·ç	ÑïÖÝ	
-Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç_01	¶Ô»°											ÈçÓñ	ãê¾©	
+Tªn nhiÖm vô 	Lo¹i h×nh nhiÖm vô 	Tæng lo¹i	Ph©n lo¹i	Lo¹i nhá 	®¼ng cÊp	Ngò Hµnh	M· sè Hoµng Kim	Sè l­îng	cã thÓ xãa  	Gi¸ 	M· sè thèng kª sè l­îng qu¸i bÞ giÕt	Tªn nh©n vËt §èi tho¹i	Khu vùc nh©n vËt §èi tho¹i	Miªu t¶ nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	§èi tho¹i										6	Hµ Mé TuyÕt	Thóy Yªn m«n	
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	thu thËp vËt phÈm 	6	0	20	1	0		1	1					1 Hoa hång
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	§èi tho¹i											Chñ d­îc ®iÕm 	T­¬ng D­¬ng	
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	thu thËp vËt phÈm 	1	2	0	5	0		10	1					10 Ngò Hoa B¶o Lé 
+NgÉu nhiªn_§èi tho¹i_VÖ binh nha m«n	§èi tho¹i											VÖ Binh Nha M«n	T­¬ng D­¬ng	
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	§èi tho¹i											Häc trß thî rÌn 	Thµnh §«	
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	thu thËp vËt phÈm 	6	0	11	1	0		1	1					1 Ph¸o Hoa
+NgÉu nhiªn_§èi tho¹i_ T©n NhÞ ThÈm (Thµnh §«) 	§èi tho¹i											T©n NhÞ ThÈm	Thµnh §«	
+NgÉu nhiªn_§èi tho¹i_ T©n NhÞ ThÈm (Thµnh §«) 	thu thËp vËt phÈm 	1	1	0	5	0		3	1					3 ¤ ®Çu Hoµn thÇn ®¬n
+NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u	§èi tho¹i											DÞch Quan	D­¬ng Ch©u	
+NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u_01	§èi tho¹i											Th¸i C«ng C«ng	L©m An	
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) 	§èi tho¹i											ThÈm Phong	D­¬ng Ch©u	
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01	§èi tho¹i											Nh­ Ngäc	BiÖn Kinh	

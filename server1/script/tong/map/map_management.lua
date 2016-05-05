@@ -6,7 +6,7 @@ Include("\\script\\tong\\tong_header.lua");
 Include("\\script\\tong\\addtongnpc.lua");
 
 
-TONGMAP_PRICE_ITEM		=	{ 4, 1290, 1, -1, "ÇàÍ­¶¦" };
+TONGMAP_PRICE_ITEM		=	{ 4, 1290, 1, -1, "Thanh ®ång ®Ønh" };
 TONGMAP_CREATE_PRICE	=	4;
 TONGMAP_CHANGE_PRICE	=	10;
 TONGMAP_RECHARGE_PRICE	=	1;
@@ -21,20 +21,20 @@ WEEK_SECOND_SUM			=	DAY_SECOND_SUM * 7;					-- 1ÖÜµÄÃëÊı
 function tongmap_management()
 	local _, nTongID = GetTongName();
 	if (nTongID == 0 or TONGM_GetFigure(nTongID, GetTongMemberID()) ~= TONG_MASTER) then
-		CreateTaskSay({"<dec><npc>Ö»ÓĞ°ïÖ÷²ÅÄÜÎª°ï»á½¨ÉèÇøÓò", "¿ÉÒÔ!/cancel"});
+		CreateTaskSay({"<dec><npc>ChØ cã bang chñ míi cã thÓ x©y dùng khu vùc cho bang", "§­îc!/cancel"});
 		return
 	end
 	local aryTalk  = {};
 	if (TONG_GetTongMap(nTongID) == 0) then
-		tinsert(aryTalk, "<dec><npc>ÎŞÂÛÄÄ¸ö°ï»á¶¼¿ÉÒÔ½¨Éè×Ô¼ºµÄÇøÓò¡£½¨Éè×Ô¼ºµÄÇøÓòĞèÒª <color=yellow>4 ÇàÍ­¶¦<color>, Ê¹ÓÃÊ±¼äÎª <color=yellow>2 ÖÜ<color>. ÇàÍ­¶¦¿ÉÒÔÑÓ³¤°ï»áÇøÓòÊ¹ÓÃÊ±¼ä£¬Ãµ¹åÇàÍ­¶¦ÓĞÑÓ³¤Ò»ÖÜµÄÊ¹ÓÃÊ±¼ä.");
-		tinsert(aryTalk, "½øÈ¥¿´¿´ \tongmap_preview_1");
-		tinsert(aryTalk, "½¨Éè°ï»áÇøÓò/tongmap_create_1");
+		tinsert(aryTalk, "<dec><npc>ÎŞÂÛÄÄc¸i°ï»á¶¼¿ÉÒÔ½¨Éè×Ô¼ºµÄÇøÓò¡£½¨Éè×Ô¼ºµÄÇøÓòĞèÒª <color=yellow>4 Thanh ®ång ®Ønh<color>, Ê¹ÓÃÊ±¼äÎª <color=yellow>2 ÖÜ<color>. Thanh ®ång ®Ønh¿ÉÒÔÑÓ³¤°ï»áÇøÓòÊ¹ÓÃÊ±¼ä£¬Ãµ¹åThanh ®ång ®ØnhÓĞÑÓ³¤Ò»ÖÜµÄÊ¹ÓÃÊ±¼ä.");
+		tinsert(aryTalk, "Vµo xem thö/tongmap_preview_1");
+		tinsert(aryTalk, "X©y dùng khu vùc bang héi/tongmap_create_1");
 	else
-		tinsert(aryTalk, "<dec><npc>ÄãµÄ°ï»áÇøÓòÊ¹ÓÃÊ±¼äÎª <color=yellow>"..tongmap_get_expire_date(nTongID).."<color>");
+		tinsert(aryTalk, "<dec><npc>Khu vùc bang héi cña b¹n cã thêi h¹n sö dông lµ <color=yellow>"..tongmap_get_expire_date(nTongID).."<color>");
 --		tinsert(aryTalk, "Ç¨ÒÆ°ï»áµØÍ¼/tongmap_change_1");
-		tinsert(aryTalk, "ÑÓ³¤°ï»áÇøÓòÊ¹ÓÃÊ±¼ä./tongmap_recharge_1");
+		tinsert(aryTalk, "KĞo dµi thêi gian sö dông khu vùc bang héi./tongmap_recharge_1");
 	end
-	tinsert(aryTalk, "È¡Ïû/cancel");
+	tinsert(aryTalk, "Hñy bá /cancel");
 	CreateTaskSay(aryTalk);
 end
 		
@@ -42,12 +42,12 @@ end
 function tongmap_preview_1()
 	local aryTalk  =
 	{
-		"<dec><npc>Ñ¡ÔñÏë¿´ÇøÓò",
+		"<dec><npc>Lùa chän khu vùc muèn xem",
 	};
 	for nMapCopyId, szMapCopyName in aDynMapCopyName do
 		tinsert(aryTalk, szMapCopyName.."/#tongmap_preview_2("..nMapCopyId..")");
 	end
-	tinsert(aryTalk, "È¡Ïû /cancel");
+	tinsert(aryTalk, "Hñy bá /cancel");
 	CreateTaskSay(aryTalk);
 end
 function tongmap_preview_2(nMapCopyId)
@@ -59,20 +59,20 @@ end
 function tongmap_create_1()
 	local aryTalk  =
 	{
-		"<dec><npc>ÇëÑ¡ÔñÏë½¨ÉèµÄÇøÓò<enter>½¨Éè°ï»áÇøÓòĞèÒªÓĞ"..TONGMAP_CREATE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5]..", ¿ÉÒÔÔÚÁ½ÖÜÄÚÊ¹ÓÃ. :",
+		"<dec><npc>H·y lùa chän khu vùc muèn x©y dùng<enter>X©y dùng khu vùc bang héi cÇn cã"..TONGMAP_CREATE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5]..", cã thÓ sö dông trong 2 tuÇn. :",
 	};
 	for nMapCopyId, szMapCopyName in aDynMapCopyName do
 		tinsert(aryTalk, szMapCopyName.."/#tongmap_create_2("..nMapCopyId..")");
 	end
-	tinsert(aryTalk, "È¡Ïû/cancel");
+	tinsert(aryTalk, "Hñy bá /cancel");
 	CreateTaskSay(aryTalk);
 end
 function tongmap_create_2(nMapCopyId)
 	local aryTalk  = 
 	{
-		"<dec><npc>ÄãÈ·¶¨½¨Éè  "..aDynMapCopyName[nMapCopyId].." Ñ¡Ôñ¸ÃÇøÓò<enter>½¨Éè°ï»áÇøÓòĞèÒªÓĞ"..TONGMAP_CREATE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5].." ¿ÉÒÔÔÚÁ½ÖÜÄÚÊ¹ÓÃ.",
-		"È·ÈÏ/#tongmap_create_3("..nMapCopyId..")",
-		"È¡Ïû/cancel",
+		"<dec><npc>Ng­¬i x¸c ®Şnh muèn x©y dùng  "..aDynMapCopyName[nMapCopyId].." Chän khu vùc nµy? <enter>X©y dùng khu vùc bang héi cÇn cã"..TONGMAP_CREATE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5].." cã thÓ sö dông trong  2 tuÇn.",
+		"X¸c nhËn/#tongmap_create_3("..nMapCopyId..")",
+		"Hñy bá /cancel",
 	};
 	CreateTaskSay(aryTalk);
 end
@@ -82,43 +82,43 @@ function tongmap_create_3(nMapCopyId)
 		return
 	end
 	if (TONG_GetTongMap(nTongID) ~= 0) then
-		CreateTaskSay({"<dec><npc>¹ó°ïÒÑÓĞ°ï»áÇøÓòÁË.", "ºÃµÄ!/cancel"});
+		CreateTaskSay({"<dec><npc>Quı bang ®· cã khu vùc bang héi råi.", "§­îc!/cancel"});
 		return
 	end
 	if (CalcEquiproomItemCount(TONGMAP_PRICE_ITEM[1], TONGMAP_PRICE_ITEM[2], TONGMAP_PRICE_ITEM[3], TONGMAP_PRICE_ITEM[4]) < TONGMAP_CREATE_PRICE) then
-		CreateTaskSay({"<dec><npc>½¨Éè°ï»áÇøÓòĞèÒª4 ÇàÍ­¶¦!", "ºÃµÄ!/cancel"});
+		CreateTaskSay({"<dec><npc>½¨Éè°ï»áÇøÓòĞèÒª4 Thanh ®ång ®Ønh!", "§­îc!/cancel"});
 		return
 	end
 	-- ¿ÛÇ®
 	if (ConsumeEquiproomItem(TONGMAP_CREATE_PRICE, TONGMAP_PRICE_ITEM[1], TONGMAP_PRICE_ITEM[2], TONGMAP_PRICE_ITEM[3], TONGMAP_PRICE_ITEM[4]) ~= 1) then
-		WriteLog("[ERR] µ±¿Û³ı°ï»á½¨Éè·ÑÓÃÊ±·¢Éú´íÎó!\t"..GetAccount().."("..GetName()..")");
+		WriteLog("[ERR] Lçi x¶y ra khi trõ chi phİ x©y dùng bang héi!\t"..GetAccount().."("..GetName()..")");
 		return
 	end
 	-- ´´½¨µØÍ¼
 	TONG_ApplyCreatMap(nTongID, nMapCopyId);
 	-- ÉèÖÃÓĞĞ§ÈÕÆÚ
 	local szExpireDate = tongmap_add_expire_date(nTongID, TONGMAP_CREATE_WEEK);
-	CreateTaskSay({"<dec><npc>½¨Éè³É¹û°ï»áÇøÓò£¬ÓĞĞ§ÆÚµ½<color=yellow>"..szExpireDate.."<color>", "¼ÌĞøÑÓÊ±/tongmap_recharge_1", "Àë¿ª/cancel"});
+	CreateTaskSay({"<dec><npc>X©y dùng thµnh c«ng khu vùc bang héi, cã hiÖu lùc ®Õn <color=yellow>"..szExpireDate.."<color>", "TiÕp tóc gia h¹n/tongmap_recharge_1", "Rêi khái/cancel"});
 end
 
 ---- Ç¨ÒÆ°ï»áµØÍ¼
 --function tongmap_change_1()
 --	local aryTalk  =
 --	{
---		"<dec><npc>ÇëÑ¡ÔñÒªÇ¨ÒÆµ½ÄÄ¸öµØÍ¼£¨¼Û¸ñ "..TONGMAP_CHANGE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5].."£©£º",
+--		"<dec><npc>ÇëÑ¡ÔñÒªÇ¨ÒÆµ½ÄÄc¸iµØÍ¼£¨¼Û¸ñ "..TONGMAP_CHANGE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5].."£©£º",
 --	};
 --	for nMapCopyId, szMapCopyName in aDynMapCopyName do
 --		tinsert(aryTalk, szMapCopyName.."/#tongmap_change_2("..nMapCopyId..")");
 --	end
---	tinsert(aryTalk, "È¡Ïû/cancel");
+--	tinsert(aryTalk, "Hñy bá /cancel");
 --	CreateTaskSay(aryTalk);
 --end
 --function tongmap_change_2(nMapCopyId)
 --	local aryTalk  = 
 --	{
---		"<dec><npc>ÄãÈ·¶¨ÒªÇ¨ÒÆµ½ "..aDynMapCopyName[nMapCopyId].." Õâ¸öµØÍ¼£¨¼Û¸ñ "..TONGMAP_CHANGE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5].."£©£¿",
+--		"<dec><npc>ÄãÈ·¶¨ÒªÇ¨ÒÆµ½ "..aDynMapCopyName[nMapCopyId].." Õâc¸iµØÍ¼£¨¼Û¸ñ "..TONGMAP_CHANGE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5].."£©£¿",
 --		"È·¶¨/#tongmap_change_3("..nMapCopyId..")",
---		"È¡Ïû/cancel",
+--		"Hñy bá /cancel",
 --	};
 --	CreateTaskSay(aryTalk);
 --end
@@ -128,11 +128,11 @@ end
 --		return
 --	end
 --	if (TONG_GetTongMap(nTongID) == 0) then
---		CreateTaskSay({"<dec><npc>¹ó°ï»¹Ã»ÓĞ°ï»áµØÍ¼£¡", "ºÃµÄ/cancel"});
+--		CreateTaskSay({"<dec><npc>¹ó°ï»¹Ã»ÓĞ°ï»áµØÍ¼£¡", "ºÃµÄ/tongmap_recharge_2"});
 --		return
 --	end
 --	if (CalcEquiproomItemCount(TONGMAP_PRICE_ITEM[1], TONGMAP_PRICE_ITEM[2], TONGMAP_PRICE_ITEM[3], TONGMAP_PRICE_ITEM[4]) < TONGMAP_CHANGE_PRICE) then
---		CreateTaskSay({"<dec><npc>Äã²»¹»Ç®Ç¨ÒÆ°ï»áµØÍ¼°¢£¬Í¬Ñ§£¡", "ºÃµÄ/cancel"});
+--		CreateTaskSay({"<dec><npc>Äã²»¹»Ç®Ç¨ÒÆ°ï»áµØÍ¼°¢£¬Í¬Ñ§£¡", "ºÃµÄ/tongmap_recharge_2"});
 --		return
 --	end
 --	-- ¿ÛÇ®
@@ -150,7 +150,7 @@ function tongmap_recharge_1()
 	if (nTongID == 0 or TONGM_GetFigure(nTongID, GetTongMemberID()) ~= TONG_MASTER) then
 		return
 	end
-	GiveItemUI("ÑÓ³¤°ï»áÇøÓò£¬Çë·ÅÈë "..TONGMAP_PRICE_ITEM[5]..","..TONGMAP_RECHARGE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5].."¿ÉÒÔÑÓÆÚÊ¹ÓÃ1ÖÜ. \n".."¿ÉÒÔÊ¹ÓÃµ½"..tongmap_get_expire_date(nTongID), "tongmap_recharge_2", "cancel");
+	GiveItemUI("Gia h¹n khu vùc bang héi "..TONGMAP_PRICE_ITEM[5]..","..TONGMAP_RECHARGE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5].."Cã thÓ gia h¹n sö dông thªm 1 tuÇn. \n".."Thêi h¹n sö dông ®Õn: "..tongmap_get_expire_date(nTongID), "tongmap_recharge_2", "cancel");
 end
 function tongmap_recharge_2(nItemCount)
 	local _, nTongID = GetTongName();
@@ -169,8 +169,8 @@ function tongmap_recharge_2(nItemCount)
 	if (nRechargeWeek <= 0) then
 		local aryTalk =
 		{
-			"<dec><npc>ĞèÒª·ÅÈë×îÉÙ "..TONGMAP_RECHARGE_PRICE.."¸ö"..TONGMAP_PRICE_ITEM[5]..".",
-			"ÔÙ¿ª /#tongmap_recharge_1()",
+			"<dec><npc>CÇn ph¶i ®­a vµo tèi thiÓu "..TONGMAP_RECHARGE_PRICE.."c¸i"..TONGMAP_PRICE_ITEM[5]..".",
+			"Më l¹i/#tongmap_recharge_1()",
 			"²»ĞèÒª/cancel",
 		}
 		CreateTaskSay(aryTalk);
@@ -179,13 +179,13 @@ function tongmap_recharge_2(nItemCount)
 	-- ¿ÛÇ®
 	for i = 1, nRechargeWeek * TONGMAP_RECHARGE_PRICE do
 		if (RemoveItemByIndex(aryTongMapItem[i]) ~= 1) then
-			WriteLog("[ERR] ¿Û³ı°ï»áÇøÓòÑÓÆÚÊ±·¢ÉúÒì³£!\t"..GetAccount().."("..GetName()..")");
+			WriteLog("[ERR] Lçi x¶y ra khi khÊu trõ chi phİ gia h¹n khu vùc bang héi!\t"..GetAccount().."("..GetName()..")");
 			return
 		end
 	end
 	-- ÉèÖÃÓĞĞ§ÈÕÆÚ
 	local szExpireDate = tongmap_add_expire_date(nTongID, nRechargeWeek);
-	CreateTaskSay({"<dec><npc>ÑÓÆÚ³É¹¦ <color=yellow>"..nRechargeWeek.."<color> ÖÜ, ÓĞĞ§ÆÚµ½<color=yellow>"..szExpireDate.."<color>", "¼ÌĞøÑÓÊ±/tongmap_recharge_1", "Àë¿ª/cancel"});
+	CreateTaskSay({"<dec><npc>Gia h¹n thµnh c«ng thªm <color=yellow>"..nRechargeWeek.."<color> tuÇn, cã hiÖu lùc ®Õn <color=yellow>"..szExpireDate.."<color>", "TiÕp tóc gia h¹n/tongmap_recharge_1", "Rêi khái/cancel"});
 end
 
 -- Ôö¼Ó°ï»áµØÍ¼ÓĞĞ§ÈÕÆÚ£¨µ¥Î»ÎªÖÜ£©

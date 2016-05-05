@@ -7,16 +7,16 @@ IncludeLib("FILESYS")
 IncludeLib("TITLE")
 IncludeLib("ITEM")
 
---Ãû´ÎµÄÎÄ×ÖÃèÊö
-TB_STORM_LADDERNAME = {"¹Ú¾ü", "ÑÇ¾ü", "µÚ3Ãû", " µÚ4Ãû", " µÚ5Ãû",
-	"µÚ6Ãû", " µÚ7Ãû", " µÚ8Ãû", " µÚ9Ãû", " µÚ10Ãû", "²»ÔÚÅÅÃû°ñÉÏ", "Ã»ÓĞÅÅÃû"}
+--danh ´ÎµÄÎÄ×ÖÃèÊö
+TB_STORM_LADDERNAME = {"Qu¸n qu©n", "¸ qu©n", "H¹ng 3", " H¹ng 4", " H¹ng 5",
+	"H¹ng 6", " H¹ng 7", " H¹ng 8", " H¹ng 9", " H¹ng 10", "kh«ng cã trong b¶ng xÕp h¹ng", "Kh«ng cã xÕp h¹ng"}
 
 --ÎäÁÖÃË´«ÈË	
-STORM_WLMCR = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>ÎäÁÖ´«ÈË<link>"
+STORM_WLMCR = "<#><link=image[0,1]:\\spr\\npcres\\passerby\\passerby092\\passerby092_st.spr>Vâ l©m truyÒn nh©n<link>"
 
 --¼ì²éÖ¸¶¨µÄawardtype
---awardid == nil	·µ»Ø£º»ı·Ö+/-ÅÅĞĞ	¿ÉÒÔÁìÈ¡µÄËùÓĞ½±Àø
---awardid > 0		·µ»Ø£ºnil²»¿ÉÒÔÁìÈ¡	·ñÔò·µ»Ø»ı·Ö+/-ÅÅĞĞ
+--awardid == nil	·µ»Ø£º»ıphót+/-ÅÅĞĞ	¿ÉÒÔl·nhÈ¡µÄËùÓĞ½±Àø
+--awardid > 0		·µ»Ø£ºnil²»¿ÉÒÔl·nhÈ¡	·ñÔò·µ»Ø»ıphót+/-ÅÅĞĞ
 function storm_checkaward(awardtype, awardid)
 	storm_anotherday()
 	
@@ -25,7 +25,7 @@ function storm_checkaward(awardtype, awardid)
 	end
 	
 	if (GetTask(TB_STORM_AWARD[awardtype][3]) > 0) then
-		Say("²»ºÃÒâË¼! "..TB_STORM_AWARD[awardtype][1].."ÄãµÄ½±ÀøÒÑ¾­ÁìÈ¡¹ıÁË!", 0)
+		Say("Xin lçi! "..TB_STORM_AWARD[awardtype][1].."phÇn th­ëng cña ng­¬i ®· nhËn qua råi!", 0)
 		return nil
 	end
 	
@@ -41,7 +41,7 @@ function storm_checkaward(awardtype, awardid)
 		local awardlevel = awardvalue
 		for i = 1, getn(TB_STORM_AWARD[awardtype][5]) do
 			if (awardvalue >= TB_STORM_AWARD[awardtype][5][i][1]) then
-				if (awardlevel == TB_STORM_AWARD[awardtype][5][i][1] or getn(tb_award) == 0) then	--²»ÄÜÁìµÍ¼¶½±Àø
+				if (awardlevel == TB_STORM_AWARD[awardtype][5][i][1] or getn(tb_award) == 0) then	--²»ÄÜl·nhµÍ¼¶½±Àø
 					awardlevel = TB_STORM_AWARD[awardtype][5][i][1]
 					tb_award[getn(tb_award)+1] = i
 				end
@@ -50,7 +50,7 @@ function storm_checkaward(awardtype, awardid)
 		return awardvalue, tb_award
 	else
 		if (awardvalue < TB_STORM_AWARD[awardtype][5][awardid][1]) then
-			Say("ÎäÁÖ´«ÈË£ºÄãºÃÏñÃ»ÓĞÁì´Ë½±Æ·!", 0)
+			Say("Vâ l©m truyÒn nh©n: H×nh nh­ ng­¬i kh«ng thÓ nhËn phÇn th­ëng nµy!", 0)
 			return nil
 		else
 			return awardvalue
@@ -61,27 +61,27 @@ end
 --Ö÷¶Ô»°
 function storm_main()
 	if (GetTask(STORM_TASKID_LETTER) ~= 2) then
-		Describe(STORM_WLMCR.."<#> ½­ºşºÀ½ÜËÄº£Îª¼Ò£¡ ¾ÙÍ·ÍûÔÂ, µÍÍ·ÍûË®£¡Í»È»Ïëµ½Ò»¾ä»°£º¼ÙÊ¹ÈËÉúÓÀÆ½Ì¹, Ó¢ĞÛºÀ½Ü¸ü±ÈË­!", 1, "°İÊ¦9ÔÂ·ç±©»î¶¯/storm_main")
-		Msg2Player("ÄãµÃµ½ÉòÉÙÔ¶µÄÉñÃØÊÖ¸å")
+		Describe(STORM_WLMCR.."<#> KiÕp giang hå lÊy s«ng nói lµ nhµ! NgÈng mÆt nh×n tr¨ng, cuèi ®Çu mh×n n­íc! Chît nghÜ ®Õn c©u th¬: Vİ thö ®­êng ®êi b»ng ph¼ng m·i, anh hïng hµo kiÖt cã h¬n ai!", 1, "B¾t ®Çu ho¹t ®éng Phong ba th¸ng 9/storm_main")
+		Msg2Player("B¹n nhËn ®­îc b¶n th¶o thÇn bİ cña ThÈm ThiÖu ViÔn")
 		AddItem(6, 1, 898, 1, 0 ,0)
 		SetTask(STORM_TASKID_LETTER, 2)
 	else
 		local tb_option = {}
-		tb_option[getn(tb_option)+1] = "ÎÒÏëÁìÈ¡½ñÈÕ½±Àø/#storm_award(1)"
+		tb_option[getn(tb_option)+1] = "Ta muèn l·nh phÇn th­ëng h«m nay/#storm_award(1)"
 		if (GetTask(STORM_TASKID_DAY_LASTAWARD) == 0) then
-			tb_option[getn(tb_option)+1] = "ÎÒÏëÁìÈ¡×òÈÕ½±Àø/#storm_award(4)"
+			tb_option[getn(tb_option)+1] = "Ta muèn l·nh phÇn th­ëng h«m qua/#storm_award(4)"
 		end
-		tb_option[getn(tb_option)+1] = "ÎÒÏëÁìÈ¡ÉÏÖÜ½±Àø/#storm_award(2)"
-		tb_option[getn(tb_option)+1] = "ÎÒÏëÁìÈ¡ÉÏÔÂ½±Àø/#storm_award(3)"
-		tb_option[getn(tb_option)+1] = "ÁË½âÎÒµÄ»ıÀÛµã/#storm_query(0)"
-		tb_option[getn(tb_option)+1] = "ÁË½â·ç±©»î¶¯/storm_help"
-		tb_option[getn(tb_option)+1] = "²»ĞèÒª!/OnCancel"
-		Describe(STORM_WLMCR.."<#> ÇëÔÚ»î¶¯Ö÷Ò³Ôö¼Ó»î¶¯ÏêÇé", getn(tb_option), tb_option)
+		tb_option[getn(tb_option)+1] = "Ta muèn l·nh phÇn th­ëng tuÇn tr­íc/#storm_award(2)"
+		tb_option[getn(tb_option)+1] = "Ta muèn l·nh phÇn th­ëng th¸ng tr­íc/#storm_award(3)"
+		tb_option[getn(tb_option)+1] = "T×m hiÓu ®iÓm tİch lòy cña ta/#storm_query(0)"
+		tb_option[getn(tb_option)+1] = "T×m hiÓu ho¹t ®éng Phong Ba/storm_help"
+		tb_option[getn(tb_option)+1] = "Kh«ng cÇn!/OnCancel"
+		Describe(STORM_WLMCR.."<#> Xin xem th«ng tin chi tiÕt ho¹t ®éng trªn trang chñ ", getn(tb_option), tb_option)
 	end
 	storm_anotherday()
 end
 
---ÁìÈ¡½±Àø£¨²é¿´½±Àø£©
+--l·nhÈ¡½±Àø£¨²é¿´½±Àø£©
 function storm_award(awardtype)
 	local awardvalue, tb_award = storm_checkaward(awardtype)
 	if (awardvalue == nil) then
@@ -90,46 +90,46 @@ function storm_award(awardtype)
 	
 	local str = ""
 	if (awardvalue >= 0) then
-		str = "Äã"..TB_STORM_AWARD[awardtype][1].."·ç±©»ı·ÖÊÇ:"..storm_point2str(awardvalue)
+		str = "B¹n "..TB_STORM_AWARD[awardtype][1].."tİch lòy Phong Ba lµ:"..storm_point2str(awardvalue)
 	elseif (awardvalue == -12) then
-		str = TB_STORM_AWARD[awardtype][1].."ÅÅĞĞ°ñÉÏÃ»ÓĞ"
+		str = TB_STORM_AWARD[awardtype][1].."kh«ng cã trong b¶ng xÕp h¹ng"
 	elseif (awardvalue == -11) then
-		str = "Äã"..TB_STORM_AWARD[awardtype][1].."ÅÅĞĞ°ñÉÏÃ»ÓĞ"
+		str = "B¹n "..TB_STORM_AWARD[awardtype][1].."kh«ng cã trong b¶ng xÕp h¹ng"
 	elseif (awardvalue >= -3) then
-		str = "Äã"..TB_STORM_AWARD[awardtype][1].."9ÔÂ·ç±©»î¶¯ÖĞ"..storm_point2str(TB_STORM_LADDERNAME[-awardvalue])
+		str = "B¹n "..TB_STORM_AWARD[awardtype][1].."trong ho¹t ®éng Phong ba th¸ng 9"..storm_point2str(TB_STORM_LADDERNAME[-awardvalue])
 	else
-		str = "Äã"..TB_STORM_AWARD[awardtype][1].."9ÔÂ·ç±©»î¶¯ÖĞÅÅÃû"..storm_point2str(-awardvalue).."Ãû "
+		str = "B¹n "..TB_STORM_AWARD[awardtype][1].."trong ho¹t ®éng Phong ba th¸ng 9ÅÅdanh "..storm_point2str(-awardvalue).."danh "
 	end
 	
 	local awardcount = getn(tb_award)
 	if (awardcount > 0) then
 		local tb_option = {}
 		if (awardcount == 1) then
-			str = str..", Äã¿ÉÒÔÁìÈ¡½±Æ·: <enter>"
+			str = str..", B¹n ¿ÉÒÔl·nhÈ¡½±Æ·: <enter>"
 			str = str.."<color=green>"..TB_STORM_AWARD[awardtype][5][tb_award[1]][2].."<color><enter>"
-			str = str.."<enter>, ÏÖÔÚÁìÈ¡Âğ?"
-			Say("ÎäÁÖ´«ÈË:"..str, 2, "ÎÒÒªÁì½±/#storm_getaward("..awardtype..","..tb_award[1]..",0)", "ÎÒÏëÒ»Ïë/OnCancel")
+			str = str.."<enter>, nhËn b©y giê chø?"
+			Say("Vâ l©m truyÒn nh©n:"..str, 2, "Ta muèn nhËn phÇn th­ëng/#storm_getaward("..awardtype..","..tb_award[1]..",0)", "§Ó ta suy nghÜ l¹i/OnCancel")
 		else
-			str = str..", Äã¿ÉÒÔÔÚÒÔÏÂ½±Æ·ÖĞÈÎÑ¡Ò»¸ö: <enter>"
+			str = str..", B¹n ¿ÉÒÔT¹iÒÔÏÂ½±ÆphótĞÈÎÑ¡Ò»¸ö: <enter>"
 			for i = 1, getn(tb_award) do
 				if (i >= 2) then
-					str = str.."»ò"
+					str = str.."hoÆc   "
 				end
 				local awardname = TB_STORM_AWARD[awardtype][5][tb_award[tb_award[i]]][2]
 				str = str.."<color=green>"..awardname.."<color><enter>"
-				tb_option[getn(tb_option)+1] = "Áì"..awardname.."/#storm_getaward("..awardtype..","..tb_award[i]..",0)"
+				tb_option[getn(tb_option)+1] = "l·nh"..awardname.."/#storm_getaward("..awardtype..","..tb_award[i]..",0)"
 			end
-			str = str.."<enter> È·¶¨ÁËÂğ?"
-			tb_option[getn(tb_option)+1] = "²»ĞèÒª!/OnCancel"
-			Say("ÎäÁÖ´«ÈË:"..str, getn(tb_option), tb_option)
+			str = str.."<enter> QuyÕt ®Şnh xong ch­a?"
+			tb_option[getn(tb_option)+1] = "Kh«ng cÇn!/OnCancel"
+			Say("Vâ l©m truyÒn nh©n:"..str, getn(tb_option), tb_option)
 		end
 	else
-		Say("ÎäÁÖ´«ÈË:"..str..", ÄãÎŞ·¨Áì½±", 0)
+		Say("Vâ l©m truyÒn nh©n:"..str..", B¹n ÎŞ·¨l·nh½±", 0)
 		return
 	end
 end
 
---ÁìÈ¡Ö¸¶¨½±Æ·
+--l·nhÈ¡Ö¸¶¨½±Æ·
 function storm_getaward(awardtype, awardid, sure)
 	local awardvalue = storm_checkaward(awardtype, awardid)
 	if (not storm_checkaward(awardtype, awardid)) then
@@ -137,10 +137,10 @@ function storm_getaward(awardtype, awardid, sure)
 	end
 
 	if (sure == 1) then
-		Say("Áì½±Ç°ÕûÀí±³°ü!", 2, "ÎÒÒÑ¾­×¼±¸ºÃÁË!/#storm_getaward("..awardtype..","..awardid..",2)", "ÎÒ»¹ÒªÔÙÕûÀíÏÂ±³°ü/OnCancel")
+		Say("l·nh½±Ç°ÕûÀí±³°ü!", 2, "Ta ®· s½n sµng!/#storm_getaward("..awardtype..","..awardid..",2)", "Ta cßn ph¶i s¾p xÕp l¹i hµnh trang/OnCancel")
 	elseif (sure == 2) then
 		if (CalcFreeItemCellCount() < storm_countallaward(TB_STORM_AWARD[awardtype][5][awardid][3])) then
-			Say("ÄãµÄ±³°üÃ»ÓĞ¿Õ¼ä£¬ÕûÀíÒ»ÏÂ!", 0)
+			Say("B¹n µÄ±³°üÃ»ÓĞ¿Õ¼ä£¬ÕûÀíÒ»ÏÂ!", 0)
 		else
 			if (awardtype == 1 or awardtype == 4) then
 				local mapid = tostring(SubWorldIdx2ID(SubWorld))
@@ -148,26 +148,26 @@ function storm_getaward(awardtype, awardid, sure)
 				SetGlbValue(46, plcount)
 				Ladder_NewLadder(10195, mapid, plcount, 1)
 			end
-			local str = "µÃµ½"..TB_STORM_AWARD[awardtype][1].."·ç±©»ı·Ö½±Àø"..TB_STORM_AWARD[awardtype][5][awardid][2]
+			local str = "NhËn ®­îc"..TB_STORM_AWARD[awardtype][1].."PhÇn th­ëng tİch lòy Phong Ba "..TB_STORM_AWARD[awardtype][5][awardid][2]
 			WriteLog("[STORM_AWARD]\t"..date("%y-%m-%d,%H:%M").."\t"..GetAccount().."\t"..GetName().."\t"..awardvalue.."\t"..str)
 			Msg2Player(str)
 			SetTask(TB_STORM_AWARD[awardtype][3], 1)
 			storm_giveallaward(TB_STORM_AWARD[awardtype][5][awardid][3])
 			if (awardvalue >= 0) then
-				str = awardvalue.."·ç±©»ı·Ö"
+				str = awardvalue.."®iÓm tİch lòy Phong Ba"
 			else
-				str = "ÅÅµÚ"..(-awardvalue).."Ãû"
+				str = "XÕp h¹ng thø "..(-awardvalue).."danh "
 			end
 			if (awardtype == 2 or awardtype == 3 or awardid <= 2) then	--´ó½±·¢²¼¹«¸æ
-				AddGlobalNews(GetName().."ÔÚ"..TB_STORM_AWARD[awardtype][1].."·ç±©»î¶¯ÖĞµÃµ½"..TB_STORM_AWARD[awardtype][5][awardid][2].." ")
+				AddGlobalNews(GetName().."T¹i"..TB_STORM_AWARD[awardtype][1].."·ç±©»î¶¯ÖĞNhËn ®­îc"..TB_STORM_AWARD[awardtype][5][awardid][2].." ")
 			end
 		end
 	else
-		Say("ÄãÈ·¶¨ÁìÈ¡<color=red>"..TB_STORM_AWARD[awardtype][5][awardid][2].."<color> ÊÇÂğ? ÁìÍêÖ®ºó²»ÄÜÁìÁË"..TB_STORM_AWARD[awardtype][1].."±ğµÄ½±Àø!", 2, "ÖªµÀÁË! ÎÒÖ»ÁìÕâ¸öËãÁË£¡/#storm_getaward("..awardtype..","..awardid..",1)", "²»ĞèÒª!/OnCancel")
+		Say("B¹n È·¶¨l·nhÈ¡<color=red>"..TB_STORM_AWARD[awardtype][5][awardid][2].."<color> ÊÇÂğ? l·nhÍêÖ®ºó²»ÄÜl·nhÁË"..TB_STORM_AWARD[awardtype][1].."phÇn th­ëng kh¸c n÷a!", 2, "ÖªµÀÁË! ÎÒÖ»l·nhÕâ¸öËãÁË£¡/#storm_getaward("..awardtype..","..awardid..",1)", "Kh«ng cÇn!/OnCancel")
 	end
 end
 
---²éÑ¯¸öÈË·ç±©»ı·ÖÇé¿ö
+--²éÑ¯¸öÈË®iÓm tİch lòy Phong BaÇé¿ö
 function storm_query(querytype)
 	storm_anotherday()
 	
@@ -176,22 +176,22 @@ function storm_query(querytype)
 	local var_width, var_align
 	if (querytype == 1) then
 		if (GetTask(STORM_TASKID_DAY) <= STORM_END_DAY) then
-			str = "Äã½ñÈÕµÄ·ç±©»ı·ÖÈçÏÂ: <enter>%½ñÈÕ×Ü»ı·ÖÊÇ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT))
+			str = "B¹n ½ñnhËt µÄ®iÓm tİch lòy Phong BaÈçÏÂ: <enter>%½ñnhËt ×Ü»ıphótÊÇ:"..storm_point2str(GetTask(STORM_TASKID_DAY_POINT))
 			var_width = {12,8,8,10}
 			var_align = 2
-			tb_sheet[getn(tb_sheet)+1] = {"»î¶¯Ãû", "´ÎÊı", "×´Ì¬", "×î¸ß»ı·Ö"}
+			tb_sheet[getn(tb_sheet)+1] = {"»î¶¯danh ", "Sè lÇn", "Tr¹ng th¸i ", "§iÓm tİch lòy cao nhÊt"}
 			for i = 1, STORM_GAMEID_MAX do
 				if (TB_STORM_TASKID[i] ~= nil) then
 					local trycount = GetTask(TB_STORM_TASKID[i][STORM_TASKIDX_TRYCOUNT])
 					local state = ""
 					if storm_valid_game(i) then
-						state = "<color=red>ÕıÔÚ½øĞĞ<color>"
+						state = "<color=red>ÕıT¹i½øĞĞ<color>"
 					elseif (trycount <= 0) then
-						state = "<color=blue>»¹Î´½øĞĞ<color>"
+						state = "<color=blue>Ch­a tiÕn hµnh<color>"
 					elseif (trycount < TB_STORM_TRYTIMES[i]) then
-						state = "<color=green>ÒÑ¾­½øĞĞÁË<color>"
+						state = "<color=green>§· tiÕn hµnh<color>"
 					else
-						state = "<color=8947848>ÒÑ½áÊøÁË<color>"
+						state = "<color=8947848>§· kÕt thóc<color>"
 					end
 					tb_sheet[getn(tb_sheet)+1] = {
 						storm_gamename(i),
@@ -202,34 +202,34 @@ function storm_query(querytype)
 				end
 			end
 		else
-			str = "»î¶¯<color=red>9ÔÂ·ç±©<color>ÒÑ½áÊø!"
+			str = "ho¹t ®éng <color=red>Phong ba th¸ng 9<color> ®· kÕt thóc!"
 		end
 	elseif (querytype == 2) then
-		str = "  Äã×î½üµÄ·ç±©»ı·ÖÊÇ:<enter>%s"
+		str = "  B¹n ×î½üµÄtİch lòy Phong Ba lµ:<enter>%s"
 		var_width = {8,10,6,8,10}
 		var_align = 2
 		tb_sheet[getn(tb_sheet)+1] = {
-			"§i½ñÌìµÄ»ı·ÖÊÇ", storm_point2str(GetTask(STORM_TASKID_DAY_POINT)), "",
-			"§i×òÌìµÄ»ı·Ö", storm_point2str(GetTask(STORM_TASKID_DAY_LASTPOINT))
+			"§iÓm tİch lòy h«m nay", storm_point2str(GetTask(STORM_TASKID_DAY_POINT)), "",
+			"§iÓm tİch lòy h«m qua", storm_point2str(GetTask(STORM_TASKID_DAY_LASTPOINT))
 		}
 		tb_sheet[getn(tb_sheet)+1] = {
-			"§iÕâÖÜµÄ»ı·Ö", storm_point2str(GetTask(STORM_TASKID_WEEK_POINT)), "",
-			"§iÉÏÖÜµÄ»ı·Ö", storm_point2str(GetTask(STORM_TASKID_WEEK_LASTPOINT))
+			"§iÓm tİch lòy tuÇn nµy", storm_point2str(GetTask(STORM_TASKID_WEEK_POINT)), "",
+			"§iÓm tİch lòy tuÇn tr­íc", storm_point2str(GetTask(STORM_TASKID_WEEK_LASTPOINT))
 		}
 		tb_sheet[getn(tb_sheet)+1] = {
-			"§iÕâ¸öÔÂµÄ»ı·Ö", storm_point2str(GetTask(STORM_TASKID_MONTH_POINT)), "",
-			"§iÉÏ¸öÔÂµÄ»ı·Ö", storm_point2str(GetTask(STORM_TASKID_MONTH_LASTPOINT))
+			"§iÓm tİch lòy th¸ng nµy", storm_point2str(GetTask(STORM_TASKID_MONTH_POINT)), "",
+			"§iÓm tİch lòy th¸ng tr­íc", storm_point2str(GetTask(STORM_TASKID_MONTH_LASTPOINT))
 		}
 		tb_sheet[getn(tb_sheet)+1] = {
-			"ÉÏÖÜÅÅÃû", "<color=yellow>"..TB_STORM_LADDERNAME[storm_getrank(2)].."<color>", "",
-			"ÉÏÔÂÅÅÃû", "<color=yellow>"..TB_STORM_LADDERNAME[storm_getrank(3)].."<color>"
+			"ÉÏTuÇnÅÅdanh ", "<color=yellow>"..TB_STORM_LADDERNAME[storm_getrank(2)].."<color>", "",
+			"ÉÏnguyÖt ÅÅdanh ", "<color=yellow>"..TB_STORM_LADDERNAME[storm_getrank(3)].."<color>"
 		}
 	else
-		Say("ÄãÏëÁË½âÊ²Ã´ÎÊÌâ?", 3, "ÎÒ½ñÌìµÄ·ç±©»ı·Ö/#storm_query(1)", "ÎÒ×î½üµÄ·ç±©»ı·Ö/#storm_query(2)", "Ã»ÓĞÊ²Ã´!/OnCancel")
+		Say("B¹n ÏëÁË½âÊ²Ã´ÎÊÌâ?", 3, "ÎÒ½ñÌìµÄ®iÓm tİch lòy Phong Ba/#storm_query(1)", "ÎÒ×î½üµÄ®iÓm tİch lòy Phong Ba/#storm_query(2)", "Kh«ng cã chuyÖn g× ®©u!/OnCancel")
 		return
 	end
 	str = format(str, maketable(tb_sheet, var_width, var_align))
-	Say(str, 2, "¼ÌĞøÁË½â/#storm_query(0)", "Ã»Ê²Ã´£¬Ğ»Ğ»!/OnCancel")
+	Say(str, 2, "TiÕp tôc t×m hiÓu/#storm_query(0)", "Kh«ng cã g×, c¸m ¬n!/OnCancel")
 end
 
 --»î¶¯ËµÃ÷¡ª¡ª×Ü
@@ -237,36 +237,36 @@ function storm_help()
 	local tb_option = {}
 	for i = 1, STORM_GAMEID_MAX do
 		if (TB_STORM_TASKID[i] ~= nil) then
-			tb_option[getn(tb_option)+1] = "Óë·ç±©»î¶¯ÓĞ¹ØµÄ-"..TB_STORM_DESCRIBE[i].."°ïÖú/#storm_help_game("..i..")"
+			tb_option[getn(tb_option)+1] = "Liªn quan ho¹t ®éng Phong Ba-"..TB_STORM_DESCRIBE[i].."gióp ®ì/#storm_help_game("..i..")"
 		end
 	end
-	tb_option[getn(tb_option)+1] = "Óë·ç±©»î¶¯ÓĞ¹ØµÄ/#storm_help_award(0)"
-	tb_option[getn(tb_option)+1] = "ÖªµÀÁË!/OnCancel"
-	Say("  ·ç±©»î¶¯´Ó8/9/µ½2/10, °üÀ¨ËÎ½ğÕ½³¡, Ò°ÛÅÈÎÎñÁ´, É±ÊÖÊÔÁ¶ÈÎÎñ. Ã¿Ìì½«»á¸ù¾İÏµÍ³ÖĞµÄ³É¼¨¸ø³ö<color=yellow>·ç±©»ı·Ö<color> (²Î¼ÓÌõ¼ş: 50¼¶ÒÔÉÏÍæ¼Ò) .Ã¿ÈÕ¼¸·Ö½«ÔÚ<color=red>24:00Ö®ºóÇåÁã<color>, ÇëÔÚ24:00Ç°Áì½±.<enter>. Ã¿Ìì <color=red>23:30<color> ËÎ½ğÕ½³¡¿ªÊ¼, ³É¼¨²»¼ÇÂ¼½ø·ç±©»ı·Ö.", getn(tb_option), tb_option)
+	tb_option[getn(tb_option)+1] = "Liªn quan phÇn th­ëng ho¹t ®éng Phong Ba/#storm_help_award(0)"
+	tb_option[getn(tb_option)+1] = "Ta biÕt råi!/OnCancel"
+	Say("  ·ç±©»î¶¯´Ó8/9/®Õn2/10, °üÀ¨ËÎ½ğÕ½³¡, Ò°ÛÅÈÎÎñÁ´, É±ÊÖÊÔÁ¶ÈÎÎñ. Ã¿Ìì½«»á¸ù¾İÏµÍ³ÖĞµÄ³É¼¨¸ø³ö<color=yellow>®iÓm tİch lòy Phong Ba<color> (²Î¼ÓÌõ¼ş: 50¼¶ÒÔÉÏÍæ¼Ò) .Ã¿nhËt mÊyphót½«T¹i<color=red>24:00Ö®ºóÇåÁã<color>, ÇëT¹i24:00Ç°l·nh½±.<enter>. Ã¿Ìì <color=red>23:30<color> ËÎ½ğÕ½³¡¿ªÊ¼, ³É¼¨²»¼ÇÂ¼½ø®iÓm tİch lòy Phong Ba.", getn(tb_option), tb_option)
 end
 
 --»î¶¯ËµÃ÷¡ª¡ªÌôÕ½
 function storm_help_game(gameid)
 	local str = TB_STORM_HELP[gameid]
-	if (gameid == 1) then	--ËÎ½ğĞèÒª²¹³äËµÃ÷·ÖÊıÉÏÏŞ
-		str = format(str, "¸ß¼¶ËÎ½ğÕ½³¡, Ã¿ÈËÃ¿Ìì×î¶àÖ»ÄÜÁìÈ¡µÄ·ç±©»ı·ÖÊÇ<color=yellow>100<color> µã. ³õÖĞ¼¶ËÎ½ğÕ½³¡×î¶à·Ö±ğµÃµ½<color=yellow>80<color>, <color=yellow>90<color> µã.")
+	if (gameid == 1) then	--ËÎ½ğĞèÒª²¹³äËµÃ÷phótÊıÉÏÏŞ
+		str = format(str, "¸ß¼¶ËÎ½ğÕ½³¡, Ã¿ÈËÃ¿Ìì×î¶àÖ»ÄÜl·nhÈ¡µÄ®iÓm tİch lòy Phong BaÊÇ<color=yellow>100<color> µã. ³õÖĞ¼¶ËÎ½ğÕ½³¡×î¶àphót±ğNhËn ®­îc<color=yellow>80<color>, <color=yellow>90<color> µã.")
 	end
-	Say(str, 2, "ÒªÁË½â±ğµÄ/storm_help", "ÖªµÀÁË!/OnCancel")
+	Say(str, 2, "Muèn t×m hiÓu nh÷ng thø kh¸c/storm_help", "Ta biÕt råi!/OnCancel")
 end
 
 --»î¶¯ËµÃ÷¡ª¡ª½±Àø
 function storm_help_award(awardtype,start)
 	if (awardtype == 0) then
-		Say("  Ã¿ÌìÍæ¼Ò¿ÉÒÔµ½ÎäÁÖ´«ÈË´¦, ¸ù¾İ<color=red>·ç±©»ı·Ö<color> ¿ÉÒÔÁìÈ¡ÏàÓ¦µÄ½±Àø, Í¬Ê±£¬Ã¿ÖÜ£¬Ã¿ÔÂ¶¼ÓĞÏàÓ¦µÄ·ç±©»ı·ÖÅÅĞĞ<color=red>ÅÅÃûÇ°Ê®<color>¿ÉÒÔÔÚµ±ÔÂµÄµÚ¶ş¸öĞÇÆÚµ½ÎäÁÖ´«ÈË´¦Áì½±", 4,
-			"¿´ÈÕ½±Àø/#storm_help_award(1)",
-			"¿´ÖÜ½±Àø/#storm_help_award(2)",
-			"¿´ÔÂ½±Àø/#storm_help_award(3)",
-			"ÖªµÀÁË!/OnCancel")
+		Say("  Ã¿ÌìÍæ¼Ò¿ÉÒÔ®ÕnÎäÁÖ´«ÈË´¦, ¸ù¾İ<color=red>®iÓm tİch lòy Phong Ba<color> ¿ÉÒÔl·nhÈ¡ÏàÓ¦µÄ½±Àø, Í¬Ê±£¬Ã¿TuÇn£¬Ã¿nguyÖt ¶¼ÓĞÏàÓ¦µÄ®iÓm tİch lòy Phong BaÅÅĞĞ<color=red>ÅÅdanh Ç°Ê®<color>¿ÉÒÔT¹iµ±nguyÖt µÄµÚ¶ş¸öĞÇÆÚ®ÕnÎäÁÖ´«ÈË´¦l·nh½±", 4,
+			"Xem phÇn th­ëng ngµy/#storm_help_award(1)",
+			"Xem phÇn th­ëng tuÇn/#storm_help_award(2)",
+			"Xem phÇn th­ëng th¸ng/#storm_help_award(3)",
+			"Ta biÕt råi!/OnCancel")
 		return
 	end
 	
-	local tb_awardstr = {"ÈÕ", "ÖÜ", "ÔÂ"}
-	local str = "·ç±©»ı·Ö"..tb_awardstr[awardtype].."½±Æ·ÈçÏÂ:"
+	local tb_awardstr = {"nhËt ", "TuÇn", "nguyÖt "}
+	local str = "®iÓm tİch lòy Phong Ba"..tb_awardstr[awardtype].."PhÇn th­ëng nh­ sau:"
 	if (not start) then
 		start = 1
 	end
@@ -282,44 +282,44 @@ function storm_help_award(awardtype,start)
 		local awardvalue = TB_STORM_AWARD[awardtype][5][i][1]
 		if (lastvalue ~= awardvalue) then
 			if (awardvalue >= 0) then
-				str = str.."<enter>".."»ıÀÛ"..storm_point2str(awardvalue,3).."·Ö"
+				str = str.."<enter>".."Tİch lòy"..storm_point2str(awardvalue,3).."phót"
 			else
 				if (lastvalue) then
-					str = str.."<enter>"..tb_awardstr[awardtype].."ÅÅÔÚµÚ"..storm_point2str(1-lastvalue).."µ½"..storm_point2str(-awardvalue).."¼¸"
+					str = str.."<enter>"..tb_awardstr[awardtype].."ÅÅT¹iµÚ"..storm_point2str(1-lastvalue).."®Õn"..storm_point2str(-awardvalue).."mÊy"
 				else
-					str = str.."<enter>"..tb_awardstr[awardtype].."ÅÅÔÚµÚ"..storm_point2str(-awardvalue).."¼¸"
+					str = str.."<enter>"..tb_awardstr[awardtype].."ÅÅT¹iµÚ"..storm_point2str(-awardvalue).."mÊy"
 				end
 			end
 			lastvalue = awardvalue
 		else
-			str = str.."»ò"
+			str = str.."hoÆc   "
 		end
 		str = str.."<color=yellow>"..TB_STORM_AWARD[awardtype][5][i][2].."<color>"
 	end
 	local tb_option = {}
 	if (start > 1) then
-		tb_option[getn(tb_option)+1] = "ÉÏÒ»Ò³/#storm_help_award("..awardtype..","..(start-PERPAGE)..")"
+		tb_option[getn(tb_option)+1] = "Trang tr­íc/#storm_help_award("..awardtype..","..(start-PERPAGE)..")"
 	end
 	if (start + count < getn(TB_STORM_AWARD[awardtype][5])) then
-		tb_option[getn(tb_option)+1] = "ÏÂÒ»Ò³/#storm_help_award("..awardtype..","..(start+PERPAGE)..")"
+		tb_option[getn(tb_option)+1] = "Trang kÕ /#storm_help_award("..awardtype..","..(start+PERPAGE)..")"
 	end
-	tb_option[getn(tb_option)+1] = "ÏëÒªÁË½â±ğµÄ/storm_help"
-	tb_option[getn(tb_option)+1] = "ÎÒÖªµÀÁË!/OnCancel"
+	tb_option[getn(tb_option)+1] = "ÏëMuèn t×m hiÓu nh÷ng thø kh¸c/storm_help"
+	tb_option[getn(tb_option)+1] = "ÎÒTa biÕt råi!/OnCancel"
 	Say(str, getn(tb_option), tb_option)
 end
 
---µÃµ½¸ÃÍæ¼ÒÔÚÖ¸¶¨ÅÅĞĞÖĞµÄÃû´Î
+--NhËn ®­îc¸ÃÍæ¼ÒT¹iÖ¸¶¨ÅÅĞĞÖĞµÄdanh ´Î
 function storm_getrank(laddertype)
 	local ladderid = nil
-	if (laddertype == 1) then	--ÈÕÅÅĞĞ£¬ÔİÎŞ
+	if (laddertype == 1) then	--nhËt ÅÅĞĞ£¬ÔİÎŞ
 		return 12
-	elseif (laddertype == 2) then	--ÖÜÅÅĞĞ
+	elseif (laddertype == 2) then	--TuÇnÅÅĞĞ
 		local weekid = GetTask(STORM_TASKID_WEEK) - STORM_LADDER_WEEK
-		if(weekid >= 1 and weekid <= 4) then 	--Ö»ÓĞ2¡¢3¡¢4¡¢5ÖÜÓĞÉÏÖÜ
+		if(weekid >= 1 and weekid <= 4) then 	--Ö»ÓĞ2¡¢3¡¢4¡¢5TuÇnÓĞÉÏTuÇn
 			ladderid = STORM_LADDERID_WEEK1 + weekid - 1
 		end
-	elseif (laddertype == 3) then	--ÔÂÅÅĞĞ
-		if (GetTask(STORM_TASKID_MONTH) == 10) then	--Ö»ÓĞ10ÔÂÓĞÉÏÖÜ
+	elseif (laddertype == 3) then	--nguyÖt ÅÅĞĞ
+		if (GetTask(STORM_TASKID_MONTH) == 10) then	--Ö»ÓĞ10nguyÖt ÓĞÉÏTuÇn
 			ladderid = STORM_LADDERID_MONTH
 		end
 	else

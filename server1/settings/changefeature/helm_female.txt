@@ -1,19 +1,19 @@
 Name	Feature	Price
-¹âÍ·	0	500
-ÇàÃ±	1	500
-¹ÛÒô·¨¹Ú	2	500
-Æ¤ëĞ	6	500
-Ğş¹Çô¢	7	500
-ĞşÏ¬ÃæÕÖ	8	500
-´ÖÌúÍ·»·	9	500
-¼¦Î²îÎ	10	500
-ÁúÑªÍ·»·	11	500
-Ô²Ã±	12	500
-Ë«·ï³¯Ìì¹Ú	13	500
-ÁúÁÛ¿ø	14	500
-²¼Ã±	15	500
-ÁğÁ§²æ	16	500
-Çà¾§²æ	17	500
-»Æ²¼·¢´ø	18	500
-ÇàÁğÁ§·¢²æ	19	500
-½ğ·ïÕ¹³á	20	500
+Thİch Ni M·o	0	500
+Thiªn Thanh M·o	1	500
+Xİch ¶nh ph¸t Qu¸n	2	500
+B×Trô 	6	500
+Thó Cèt Tr©m	7	500
+HuyÒn Tª DiÖn Tr¸o	8	500
+Th« ThiÕt §Çu Hoµn	9	500
+Kª VÜ Thoa	10	500
+Long HuyÕt §Çu hoµn	11	500
+Viªn M·o	12	500
+Song Phông TriÒu Thiªn Qu¸n	13	500
+Long L©n Kh«i	14	500
+Bè M·o	15	500
+L­u Ly Thoa	16	500
+Thanh Tinh Thoa	17	500
+Hoµng Bè Ph¸t §¸i	18	500
+Thanh L­u Ly Ph¸t Xoa	19	500
+Kim Phông TriÓn Sİ 	20	500

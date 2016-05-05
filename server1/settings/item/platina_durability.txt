@@ -1,141 +1,141 @@
 PlatinaItem	OldLevel	MaxDurability	Comment
-0	5	1000%	[Ìì´ÍµÄ]ÃÎÁúÖ®Õý»ÆÉ®Ã±
-1	5	1000%	[Ìì´ÍµÄ]ÃÎÁúÖ®½ðË¿ÕýºìôÂôÄ
-2	5	1000%	[Ìì´ÍµÄ]ÃÎÁúÖ®ÐþË¿·¨´ø
-3	5	800	[Ìì´ÍµÄ]ÃÎÁúÖ®·ð·¨ÐþÅå
-4	5	800	[Ìì´ÍµÄ]ÃÎÁúÖ®×Ï½ð°ãÈô½ä
-5	5	1000%	[Ìì´ÍµÄ]·üÄ§Ö®×Ï½ð¹÷
-6	5	1000%	[Ìì´ÍµÄ]·üÄ§Ö®ÎÞÁ¿½ð¸ÕÍó
-7	5	1000%	[Ìì´ÍµÄ]·üÄ§Ö®ÎÚ½ðÈíÌÐ
-8	5	800	[Ìì´ÍµÄ]·üÄ§Ö®·ðÐÄÈí¿Û
-9	5	1000%	[Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ð¬
-10	5	1000%	[Ìì´ÍµÄ]ËÄ¿ÕÖ®½µÄ§½äµ¶
-11	5	1000%	[Ìì´ÍµÄ]ËÄ¿ÕÖ®´ïÄ¦É®Ð¬
-12	5	1000%	[Ìì´ÍµÄ]ËÄ¿ÕÖ®»¤·¨Ñü´ø
-13	5	1000%	[Ìì´ÍµÄ]ËÄ¿ÕÖ®ÈíÆ¤»¤Íó
-14	5	800	[Ìì´ÍµÄ]ËÄ¿ÕÖ®½äÂÉ·¨½ä
-15	5	1000%	[Ìì´ÍµÄ]º³ÌìÖ®½ð»·´óÑÛÉñ´¸
-16	5	1000%	[Ìì´ÍµÄ]º³ÌìÖ®ÎäÉñÏâ½ð¼×
-17	5	1000%	[Ìì´ÍµÄ]º³ÌìÖ®ÍþÎäÊøÑü»·
-18	5	1000%	[Ìì´ÍµÄ]º³ÌìÖ®»¢Í·½ôÊøÍó
-19	5	1000%	[Ìì´ÍµÄ]º³ÌìÖ®³ËÁúÕ½Ñ¥
-20	5	1000%	[Ìì´ÍµÄ]¼ÌÒµÖ®±¼À××êÁúÇ¹
-21	5	1000%	[Ìì´ÍµÄ]¼ÌÒµÖ®ÐþÎä»Æ½ðîø
-22	5	1000%	[Ìì´ÍµÄ]¼ÌÒµÖ®°×»¢ÎÞË«¿Û
-23	5	1000%	[Ìì´ÍµÄ]¼ÌÒµÖ®»ðÔÆ÷è÷ëÊÖ
-24	5	1000%	[Ìì´ÍµÄ]¼ÌÒµÖ®ÖìÈ¸ÁèÔÆÑ¥
-25	5	1000%	[Ìì´ÍµÄ]ÓùÁúÖ®ÁÁÒø±¦µ¶
-26	5	800	[Ìì´ÍµÄ]ÓùÁúÖ®Õ½Éñ¹Ò×¹
-27	5	1000%	[Ìì´ÍµÄ]ÓùÁúÖ®ÌìÃÅÊøÑü»·
-28	5	1000%	[Ìì´ÍµÄ]ÓùÁúÖ®Ñ¸·ç·¢¹¿
-29	5	800	[Ìì´ÍµÄ]ÓùÁúÖ®¾øÃüÖ¸»·
-30	5	1000%	[Ìì´ÍµÄ]ÎÞ¼äÖ®ÒÐÌì½£
-31	5	1000%	[Ìì´ÍµÄ]ÎÞ¼äÖ®Çå·çÈíåì
-32	5	1000%	[Ìì´ÍµÄ]ÎÞ¼äÖ®·÷ÔÆË¿´ø
-33	5	1000%	[Ìì´ÍµÄ]ÎÞ¼äÖ®ÇÙÔÏ»¤Íó
-34	5	800	[Ìì´ÍµÄ]ÎÞ¼äÖ®°×Óñ°ãÖ¸
-35	5	1000%	[Ìì´ÍµÄ]ÎÞ÷ÊÖ®Ä¦Äá¹Ú
-36	5	1000%	[Ìì´ÍµÄ]ÎÞ÷ÊÖ®ÇïË®Á÷¹â´ø
-37	5	800	[Ìì´ÍµÄ]ÎÞ÷ÊÖ®±ù¾§Ö¸»·
-38	5	800	[Ìì´ÍµÄ]ÎÞ÷ÊÖ®Ï´ÏóÓñ¿Û
-39	5	1000%	[Ìì´ÍµÄ]ÎÞ÷ÊÖ®ºìç»Èí¶NÐ¬
-40	5	1000%	[Ìì´ÍµÄ]ÎÞ³¾Ö®ÓñÅ®ËØÐÄ¹Ú
-41	5	800	[Ìì´ÍµÄ]ÎÞ³¾Ö®ÇåÐÄÏòÉÆÖé
-42	5	800	[Ìì´ÍµÄ]ÎÞ³¾Ö®´È±¯Óñ°ãÖ¸
-43	5	800	[Ìì´ÍµÄ]ÎÞ³¾Ö®¾²Ó°Á÷ËÕ
-44	5	800	[Ìì´ÍµÄ]ÎÞ³¾Ö®·ð¹âÖ¸»·
-45	5	1000%	[Ìì´ÍµÄ]ÆÜ»ËÖ®·ïÒÇµ¶
-46	5	800	[Ìì´ÍµÄ]ÆÜ»ËÖ®»ÛÐÄ³¤Éú¿Û
-47	5	1000%	[Ìì´ÍµÄ]ÆÜ»ËÖ®·çÑ©°×ÔÆÊø´ø
-48	5	1000%	[Ìì´ÍµÄ]ÆÜ»ËÖ®±ù×Ù½õÍó
-49	5	800	[Ìì´ÍµÄ]ÆÜ»ËÖ®´äÓñÖ¸»·
-50	5	1000%	[Ìì´ÍµÄ]±Ìº£Ö®Ô§ÑìÁ¬»·µ¶
-51	5	1000%	[Ìì´ÍµÄ]±Ìº£Ö®»·ÖéÐûÇå½í
-52	5	1000%	[Ìì´ÍµÄ]±Ìº£Ö®ºìÁå½ðË¿´ø
-53	5	800	[Ìì´ÍµÄ]±Ìº£Ö®ºìÁå²¨
-54	5	800	[Ìì´ÍµÄ]±Ìº£Ö®ÏËÏ¸Ö¸»·
-55	5	1000%	[Ìì´ÍµÄ]ÓÄëÊÖ®½ðÉß·¢´ø
-56	5	1000%	[Ìì´ÍµÄ]ÓÄëÊÖ®³àÐ«ÃØ×°
-57	5	1000%	[Ìì´ÍµÄ]ÓÄëÊÖ®ÇàòÚ²øÑü
-58	5	1000%	[Ìì´ÍµÄ]ÓÄëÊÖ®Òøó¸»¤ÊÖ
-59	5	1000%	[Ìì´ÍµÄ]ÓÄëÊÖ®Ä«ÖëÈíÂÄ
-60	5	1000%	[Ìì´ÍµÄ]Ú¤»ÃÖ®Ð°É²¶¾ÈÐ
-61	5	1000%	[Ìì´ÍµÄ]Ú¤»ÃÖ®ÓÄ¹Æ°µÒÂ
-62	5	800	[Ìì´ÍµÄ]Ú¤»ÃÖ®¶¾Ð«Ö¸»·
-63	5	1000%	[Ìì´ÍµÄ]Ú¤»ÃÖ®¸¯¹Ç»¤Íó
-64	5	1000%	[Ìì´ÍµÄ]Ú¤»ÃÖ®Ë«»·Éß¿Û
-65	5	1000%	[Ìì´ÍµÄ]Öä¸¿Ö®ÆÆ¼×Í·»·
-66	5	800	[Ìì´ÍµÄ]Öä¸¿Ö®ÃðÀ×¾±·û
-67	5	800	[Ìì´ÍµÄ]Öä¸¿Ö®ÓÄ»ÃÖ¸»·
-68	5	1000%	[Ìì´ÍµÄ]Öä¸¿Ö®´©ÐÄ¶¾Íó
-69	5	800	[Ìì´ÍµÄ]Öä¸¿Ö®Ê´¹ÇÓñÅå
-70	5	1000%	[Ìì´ÍµÄ]±ùº®Ö®µ¯Ö¸·Éµ¶
-71	5	1000%	[Ìì´ÍµÄ]±ùº®Ö®ÐþÒÂÊø¼×
-72	5	1000%	[Ìì´ÍµÄ]±ùº®Ö®ÐÄ¼ýÑü¿Û
-73	5	800	[Ìì´ÍµÄ]±ùº®Ö®ÐþÌì±ù»ðÅå
-74	5	1000%	[Ìì´ÍµÄ]±ùº®Ö®ÔÂÓ°Ñ¥
-75	5	1000%	[Ìì´ÍµÄ]Ìì¹âÖ®»¨ÓêÂþÌì
-76	5	800	[Ìì´ÍµÄ]Ìì¹âÖ®¶¨ÐÄÄýÉñ·û
-77	5	1000%	[Ìì´ÍµÄ]Ìì¹âÖ®É­ÂÞÊøÑü
-78	5	1000%	[Ìì´ÍµÄ]Ìì¹âÖ®µØÐÐÇ§ÀïÑ¥
-79	5	800	[Ìì´ÍµÄ]Ìì¹âÖ®ÊøÌì¸¿µØ»·
-80	5	1000%	[Ìì´ÍµÄ]É­»ÄÖ®·ÉÐÇ¶á»ê
-81	5	1000%	[Ìì´ÍµÄ]É­»ÄÖ®½ðÇ®Á¬»·¼×
-82	5	1000%	[Ìì´ÍµÄ]É­»ÄÖ®»êÒ§ÑüÊø
-83	5	800	[Ìì´ÍµÄ]É­»ÄÖ®ÐþÌúÏâÓñÅå
-84	5	1000%	[Ìì´ÍµÄ]É­»ÄÖ®ÐÇÔÉ·ÉÂÄ
-85	5	1000%	[Ìì´ÍµÄ]µØÆÇÖ®ÎåÐÐÁ¬»·¹Ú
-86	5	800	[Ìì´ÍµÄ]µØÆÇÖ®ºÚÑæ³åÌìÁ´
-87	5	800	[Ìì´ÍµÄ]µØÆÇÖ®Åùö¨À×»ð½ä
-88	5	1000%	[Ìì´ÍµÄ]µØÆÇÖ®¿ÛÐÄïí
-89	5	1000%	[Ìì´ÍµÄ]µØÆÇÖ®·çº®ÊøÑü
-90	5	800	[Ìì´ÍµÄ]Í¬³ðÖ®ÓùÁúÓñÅå
-91	5	1000%	[Ìì´ÍµÄ]Í¬³ðÖ®½µÁúØ¤ÒÂ
-92	5	1000%	[Ìì´ÍµÄ]Í¬³ðÖ®Ç±ÁúÑü´ø
-93	5	1000%	[Ìì´ÍµÄ]Í¬³ðÖ®¿ºÁú»¤ÊÖ
-94	5	800	[Ìì´ÍµÄ]Í¬³ðÖ®¼ûÁú°âÖ¸
-95	5	1000%	[Ìì´ÍµÄ]µÐâéÖ®ÂÌÓñÕÈ
-96	5	1000%	[Ìì´ÍµÄ]µÐâéÖ®¾Å´üØ¤ÒÂ
-97	5	1000%	[Ìì´ÍµÄ]µÐâéÖ®²øÃ§Ñü´ø
-98	5	1000%	[Ìì´ÍµÄ]µÐâéÖ®¹·¼¹Æ¤»¤Íó
-99	5	800	[Ìì´ÍµÄ]µÐâéÖ®²Ý¼äÊ¯½ä
-100	5	1000%	[Ìì´ÍµÄ]Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹
-101	5	1000%	[Ìì´ÍµÄ]Ä§É·Ö®²ÐÑôÓ³Ñª¼×
-102	5	1000%	[Ìì´ÍµÄ]Ä§É·Ö®³àæ÷ËøÑü¿Û
-103	5	1000%	[Ìì´ÍµÄ]Ä§É·Ö®¾Ù»ðÁÇÌì»·
-104	5	800	[Ìì´ÍµÄ]Ä§É·Ö®ÔÆÁúÍÂÖé½ä
-105	5	1000%	[Ìì´ÍµÄ]Ä§»ÍÖ®½ð¼×¿ø
-106	5	800	[Ìì´ÍµÄ]Ä§»ÍÖ®°´³ö»¢ÏîÈ¦
-107	5	1000%	[Ìì´ÍµÄ]Ä§»ÍÖ®Ïª¹ÈÊøÑü´ø
-108	5	1000%	[Ìì´ÍµÄ]Ä§»ÍÖ®ÑªÒÂÊÞïí
-109	5	800	[Ìì´ÍµÄ]Ä§»ÍÖ®ÈÛ½ð¶ÏÈÕ½ä
-110	5	1000%	[Ìì´ÍµÄ]Ä§ÊÈÖ®ÁÒÑæ¹ÚÃá
-111	5	1000%	[Ìì´ÍµÄ]Ä§ÊÈÖ®À÷Ä§ÊÉÐÄ´ø
-112	5	800	[Ìì´ÍµÄ]Ä§ÊÈÖ®Òµ»ðÓÄÚ¤½ä
-113	5	800	[Ìì´ÍµÄ]Ä§ÊÈÖ®ÑªÓñÆßÉ±Åå
-114	5	1000%	[Ìì´ÍµÄ]Ä§ÊÈÖ®É½º£·ÉºèÂÄ
-115	5	1000%	[Ìì´ÍµÄ]ÁèÔÀÖ®Ì«¼«½£
-116	5	1000%	[Ìì´ÍµÄ]ÁèÔÀÖ®ÎÞÎÒÊø´ø
-117	5	800	[Ìì´ÍµÄ]ÁèÔÀÖ®Å­À×·¨½ä
-118	5	800	[Ìì´ÍµÄ]ÁèÔÀÖ®ÎÞ¼«ÐþÓñÅå
-119	5	800	[Ìì´ÍµÄ]ÁèÔÀÖ®ÌìµØÐþ»Æ½ä
-120	5	1000%	[Ìì´ÍµÄ]¼°·áÖ®ÕæÎä½£
-121	5	800	[Ìì´ÍµÄ]¼°·áÖ®ÈýÇå·û
-122	5	1000%	[Ìì´ÍµÄ]¼°·áÖ®ÐþË¿Èý¶Î½õ
-123	5	1000%	[Ìì´ÍµÄ]¼°·áÖ®´äÓñÐþ»ÆÍó
-124	5	800	[Ìì´ÍµÄ]¼°·áÖ®ÇàËÉ·¨½ä
-125	5	1000%	[Ìì´ÍµÄ]Ëª¾§Ö®Ç§Äêº®Ìú
-126	5	800	[Ìì´ÍµÄ]Ëª¾§Ö®Á÷ÐÇ¸ÏÔÂ¿Û
-127	5	1000%	[Ìì´ÍµÄ]Ëª¾§Ö®Çå·çÂÆ´ø
-128	5	1000%	[Ìì´ÍµÄ]Ëª¾§Ö®ÌìÇå±ù¾§ÊÖ
-129	5	800	[Ìì´ÍµÄ]Ëª¾§Ö®·ç±©Ö¸»·
-130	5	1000%	[Ìì´ÍµÄ]À×ñ·Ö®º®ËÉ±ù°Ø¹Ú
-131	5	800	[Ìì´ÍµÄ]À×ñ·Ö®ÌìµØ»¤·û
-132	5	1000%	[Ìì´ÍµÄ]À×ñ·Ö®·çÀ×Çà½õ´ø
-133	5	1000%	[Ìì´ÍµÄ]À×ñ·Ö®ÁéÓñÔÌÀ×Íó
-134	5	800	[Ìì´ÍµÄ]À×ñ·Ö®¾ÅÌìÒýÀ×½ä
-135	5	1000%	[Ìì´ÍµÄ]Îí»ÃÖ®±±Ú¤µÀ¹Ú
-136	5	800	[Ìì´ÍµÄ]Îí»ÃÖ®Ì«Ô¨ÕæÎäÁ´
-137	5	800	[Ìì´ÍµÄ]Îí»ÃÖ®ÊøÐÄÖ¸»·
-138	5	800	[Ìì´ÍµÄ]Îí»ÃÖ®ÇåÓ°ÐþÓñÅå
-139	5	1000%	[Ìì´ÍµÄ]Îí»ÃÖ®ËÉ·çÑ©Ó°Ñ¥
+0	5	1000%	[Thiªn Tø] Méng Long ChÝnh Hång T¨ng M·o
+1	5	1000%	[Thiªn Tø] Méng Long Kim Ti ChÝnh Hång Cµ Sa
+2	5	1000%	[Thiªn Tø] Méng Long HuyÒn Ti Ph¸t §¸i
+3	5	800	[Thiªn Tø] Méng Long PhËt Ph¸p HuyÒn Béi
+4	5	800	[Thiªn Tø] Méng Long Tö Kim Bµn Nh­îc Giíi
+5	5	1000%	[Thiªn Tø] Phôc Ma Tö Kim C«n
+6	5	1000%	[Thiªn Tø] Phôc Ma V« L­îng Kim C­¬ng UyÓn
+7	5	1000%	[Thiªn Tø] Phôc Ma ¤ Kim NhuyÔn §iÒu
+8	5	800	[Thiªn Tø] Phôc Ma PhËt T©m NhuyÔn KhÊu
+9	5	1000%	[Thiªn Tø] Phôc Ma Phæ §é T¨ng Hµi
+10	5	1000%	[Thiªn Tø] Tø Kh«ng Gi¸ng Ma Giíi §ao
+11	5	1000%	[Thiªn Tø] Tø Kh«ng §¹t Ma T¨ng Hµi
+12	5	1000%	[Thiªn Tø] Tø Kh«ng Hé Ph¸p Yªu §¸i
+13	5	1000%	[Thiªn Tø] Tø Kh«ng NhuyÔn B× Hé UyÓn
+14	5	800	[Thiªn Tø] Tø Kh«ng Giíi LuËt Ph¸p Giíi
+15	5	1000%	[Thiªn Tø] H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy
+16	5	1000%	[Thiªn Tø] H¸m Thiªn Vò ThÇn T­¬ng Kim Gi¸p
+17	5	1000%	[Thiªn Tø] H¸m Thiªn Uy Vò Thóc Yªu Hoµn
+18	5	1000%	[Thiªn Tø] H¸m Thiªn Hæ §Çu KhÈn Thóc UyÓn
+19	5	1000%	[Thiªn Tø] H¸m Thiªn Thõa Long ChiÕn Ngoa
+20	5	1000%	[Thiªn Tø] KÕ NghiÖp B«n L«i Toµn Long Th­¬ng
+21	5	1000%	[Thiªn Tø] KÕ NghiÖp HuyÒn Vò Hoµng Kim Kh¶i
+22	5	1000%	[Thiªn Tø] KÕ NghiÖp B¹ch Hæ V« Song KhÊu
+23	5	1000%	[Thiªn Tø] KÕ  NghiÖp Háa V©n Kú L©n Thñ
+24	5	1000%	[Thiªn Tø] KÕ NghiÖp Chu T­íc L¨ng V©n Ngoa
+25	5	1000%	[Thiªn Tø] Ngù Long L­îng Ng©n B¶o §ao
+26	5	800	[Thiªn Tø] Ngù Long ChiÕn ThÇn Phi Qu¸i Gi¸p
+27	5	1000%	[Thiªn Tø] Ngù Long Thiªn M«n Thóc Yªu Hoµn
+28	5	1000%	[Thiªn Tø] Ngù Long TÊn Phong Hé YÓn
+29	5	800	[Thiªn Tø] Ngù Long TuyÖt MÖnh ChØ Hoµn
+30	5	1000%	[Thiªn Tø] V« Gian û Thiªn KiÕm
+31	5	1000%	[Thiªn Tø] V« Gian Thanh Phong NhuyÔn Lý
+32	5	1000%	[Thiªn Tø] V« Gian PhËt V©n Ti §¸i
+33	5	1000%	[Thiªn Tø] V« Gian CÇm VËn Hé UyÓn
+34	5	800	[Thiªn Tø] V« Gian B¹ch Ngäc Bµn ChØ
+35	5	1000%	[Thiªn Tø] V« Ma Ma Ni Qu¸n
+36	5	1000%	[Thiªn Tø] V« Ma Thu Thñy L­u Quang §¸i
+37	5	800	[Thiªn Tø] V« Ma B¨ng Tinh ChØ Hoµn
+38	5	800	[Thiªn Tø] V« Ma TÈy T­îng Ngäc KhÊu
+39	5	1000%	[Thiªn Tø] V« Ma Hång Truy NhuyÔn Th¸p Hµi
+40	5	1000%	[Thiªn Tø] V« TrÇn Ngäc N÷ Tè T©m Qu¸n
+41	5	800	[Thiªn Tø] V« TrÇn Thanh T©m H­íng ThiÖn Ch©u
+42	5	800	[Thiªn Tø] V« TrÇn Tõ Bi Ngäc Ban ChØ
+43	5	800	[Thiªn Tø] V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi
+44	5	800	[Thiªn Tø] V« TrÇn PhËt Quang ChØ Hoµn
+45	5	1000%	[Thiªn Tø] Tª Hoµng Phông Nghi §ao
+46	5	800	[Thiªn Tø] Tª Hoµng TuÖ T©m Khinh Sa Y
+47	5	1000%	[Thiªn Tø] Tª Hoµng Phong TuyÕt B¹ch V©n Thóc §¸i
+48	5	1000%	[Thiªn Tø] Tª Hoµng B¨ng Tung CÈm Uyªn
+49	5	800	[Thiªn Tø] Tª Hoµng Thóy Ngäc ChØ Hoµn
+50	5	1000%	[Thiªn Tø] BÝch H¶i Uyªn ¦¬ng Liªn Hoµn §ao
+51	5	1000%	[Thiªn Tø] BÝch H¶i Hoµn Ch©u Vò Liªn
+52	5	1000%	[Thiªn Tø] BÝch H¶i Hång Linh Kim Ti §¸i
+53	5	800	[Thiªn Tø] BÝch H¶i Hång L¨ng Ba
+54	5	800	[Thiªn Tø] BÝch H¶i Tiªm TÕ ChØ Hoµn
+55	5	1000%	[Thiªn Tø] U Lung Kim Xµ Ph¸t §¸i
+56	5	1000%	[Thiªn Tø] U Lung XÝch YÕt MËt Trang
+57	5	1000%	[Thiªn Tø] U Lung Thanh Ng« TriÒn Yªu
+58	5	1000%	[Thiªn Tø] U Lung Ng©n ThiÒm Hé UyÓn
+59	5	1000%	[Thiªn Tø] U Lung MÆc Thï NhuyÔn Lý
+60	5	1000%	[Thiªn Tø] Minh ¶o Tµ S¸t §éc NhËn
+61	5	1000%	[Thiªn Tø] Minh ¶o U §éc ¸m Y
+62	5	800	[Thiªn Tø] Minh ¶o §éc YÕt ChØ Hoµn
+63	5	1000%	[Thiªn Tø] Minh ¶o Hñ Cèt Hé UyÓn
+64	5	1000%	[Thiªn Tø] Minh ¶o Song Hoµn Xµ Hµi
+65	5	1000%	[Thiªn Tø] Chó Ph­îc Ph¸ Gi¸p §Çu Hoµn
+66	5	800	[Thiªn Tø] Chó Ph­îc DiÖt L«i C¶nh Phï
+67	5	800	[Thiªn Tø] Chó Ph­îc U ¶o ChØ Hoµn
+68	5	1000%	[Thiªn Tø] Chó Ph­îc Xuyªn T©m §éc UyÓn
+69	5	800	[Thiªn Tø] Chó Ph­îc Thùc Cèt Ngäc Béi
+70	5	1000%	[Thiªn Tø] B¨ng Hµn §¬n ChØ Phi §ao
+71	5	1000%	[Thiªn Tø] B¨ng Hµn HuyÒn Y Thóc Gi¸p
+72	5	1000%	[Thiªn Tø] B¨ng Hµn T©m TiÔn Yªu KhÊu
+73	5	800	[Thiªn Tø] B¨ng Hµn HuyÒn Thiªn B¨ng Háa Béi
+74	5	1000%	[Thiªn Tø] B¨ng Hµn NguyÖt ¶nh Ngoa
+75	5	1000%	[Thiªn Tø] Thiªn Quang Hoa Vò M¹n Thiªn
+76	5	800	[Thiªn Tø] Thiªn Quang §Þnh T©m Ng­ng ThÇn Phï
+77	5	1000%	[Thiªn Tø] Thiªn Quang S©m La Thóc §¸i
+78	5	1000%	[Thiªn Tø] Thiªn Quang §Þa Hµnh Thiªn Lý Ngoa
+79	5	800	[Thiªn Tø] Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn
+80	5	1000%	[Thiªn Tø] S©m Hoang Phi Tinh §o¹t Hån
+81	5	1000%	[Thiªn Tø] S©m Hoang Kim TiÒn Liªn Hoµn Gi¸p
+82	5	1000%	[Thiªn Tø] S©m Hoang Hån Gi¶o Yªu Thóc
+83	5	800	[Thiªn Tø] S©m Hoang HuyÒn ThiÕt T­¬ng Ngäc Béi
+84	5	1000%	[Thiªn Tø] S©m Hoang Tinh VÉn Phi Lý
+85	5	1000%	[Thiªn Tø] §Þa Ph¸ch Ngò Hµnh Liªn Hoµn Qu¸n
+86	5	800	[Thiªn Tø] §Þa Ph¸ch H¾c DiÖm Xung Thiªn Liªn
+87	5	800	[Thiªn Tø] §Þa Ph¸ch TÝch LÞch L«i Háa Giíi
+88	5	1000%	[Thiªn Tø] §Þa Ph¸ch KhÊu T©m Tr¹c
+89	5	1000%	[Thiªn Tø] §Þa Ph¸ch Phong Hµn Thóc Yªu
+90	5	800	[Thiªn Tø] §ång Cõu Ngù Long Ngäc Béi
+91	5	1000%	[Thiªn Tø] Ngù Long Gi¸ng Long C¸i Y
+92	5	1000%	[Thiªn Tø] §ång Cõu TiÒm Long Yªu §¸i
+93	5	1000%	[Thiªn Tø] §ång Cõu Kh¸ng Long Hé Thñ
+94	5	800	[Thiªn Tø] §ång Cõu KiÕn Long Ban ChØ
+95	5	1000%	[Thiªn Tø] §Þch Kh¸i Lôc Ngäc Tr­îng
+96	5	1000%	[Thiªn Tø] §Þch Kh¸i Cöu §¹i C¸i Y
+97	5	1000%	[Thiªn Tø] §Þch Kh¸i TriÒn M·ng Yªu §¸i
+98	5	1000%	[Thiªn Tø] §Þch Kh¸i CÈu TÝch B× Hé UyÓn
+99	5	800	[Thiªn Tø] §Þch Kh¸i Th¶o Gian Th¹ch Giíi
+100	5	1000%	[Thiªn Tø] Ma S¸t Quû Cèc U Minh Th­¬ng
+101	5	1000%	[Thiªn Tø] Ma S¸t Tµn D­¬ng Anh HuyÕt Gi¸p
+102	5	1000%	[Thiªn Tø] Ma S¸t XÝch Ký Táa Yªu KhÊu
+103	5	1000%	[Thiªn Tø] Ma S¸t Cö Háa Liªu Thiªn Uyªn
+104	5	800	[Thiªn Tø] Ma S¸t V©n Long Thæ Ch©u Giíi
+105	5	1000%	[Thiªn Tø] Ma Hoµng Kim Gi¸p Kh«i
+106	5	800	[Thiªn Tø] Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn
+107	5	1000%	[Thiªn Tø] Ma Hoµng Khª Cèc Thóc Yªu §¸i
+108	5	1000%	[Thiªn Tø] Ma Hoµng HuyÕt Y Thó Tr¹c
+109	5	800	[Thiªn Tø] Ma Hoµng Dung Kim §o¹n NhËt Giíi
+110	5	1000%	[Thiªn Tø] Ma ThÞ LiÖt DiÖm Qu¸n MiÖn
+111	5	1000%	[Thiªn Tø] Ma ThÞ LÖ Ma PhÖ T©m Liªn
+112	5	800	[Thiªn Tø] Ma ThÞ NghiÖp Háa U Minh Giíi
+113	5	800	[Thiªn Tø] Ma ThÞ HuyÕt Ngäc ThÊt S¸t Béi
+114	5	1000%	[Thiªn Tø] Ma ThÞ S¬n H¶i Phi Hång Lý
+115	5	1000%	[Thiªn Tø] L¨ng Nh¹c Th¸i Cùc KiÕm
+116	5	1000%	[Thiªn Tø] L¨ng Nh¹c V« Ng· Thóc §¸i
+117	5	800	[Thiªn Tø] L¨ng Nh¹c Né L«i Ph¸p Giíi
+118	5	800	[Thiªn Tø] L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi
+119	5	800	[Thiªn Tø] L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng Giíi
+120	5	1000%	[Thiªn Tø] CËp Phong Ch©n Vò KiÕm
+121	5	800	[Thiªn Tø] CËp Phong Tam Thanh Phï
+122	5	1000%	[Thiªn Tø] CËp Phong HuyÒn Ti Tam §o¹n CÈm
+123	5	1000%	[Thiªn Tø] CËp Phong Thóy Ngäc HuyÒn Hoµng UyÓn
+124	5	800	[Thiªn Tø] CËp Phong Thanh Tïng Ph¸p Giíi
+125	5	1000%	[Thiªn Tø] S­¬ng Tinh Thiªn Niªn Hµn ThiÕt
+126	5	800	[Thiªn Tø] S­¬ng Tinh L­u Tinh C¶n NguyÖt KhÊu
+127	5	1000%	[Thiªn Tø] S­¬ng Tinh Thanh Phong Lò §¸i
+128	5	1000%	[Thiªn Tø] S­¬ng Tinh Thiªn Thanh B¨ng Tinh Thñ
+129	5	800	[Thiªn Tø] S­¬ng Tinh Phong B¹o ChØ Hoµn
+130	5	1000%	[Thiªn Tø] L«i Khung Hµn Tïng B¨ng B¹ch Quan
+131	5	800	[Thiªn Tø] L«i Khung Thiªn §Þa Hé Phï
+132	5	1000%	[Thiªn Tø] L«i Khung Phong L«i Thanh CÈm §¸i
+133	5	1000%	[Thiªn Tø] L«i Khung Linh Ngäc UÈn L«i
+134	5	800	[Thiªn Tø] L«i Khung Cöu Thiªn DÉn L«i Giíi
+135	5	1000%	[Thiªn Tø] Vô ¶o B¾c Minh §¹o Quan
+136	5	800	[Thiªn Tø] Vô ¶o Th¸i Uyªn Ch©n Vò Liªn
+137	5	800	[Thiªn Tø] Vô ¶o Thóc T©m ChØ Hoµn
+138	5	800	[Thiªn Tø] Vô ¶o Thanh Anh HuyÒn Ngäc Béi
+139	5	1000%	[Thiªn Tø] Vô ¶o Tïng Phong L«i ¶nh Ngoa

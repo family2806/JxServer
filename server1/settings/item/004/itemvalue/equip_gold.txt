@@ -1,300 +1,300 @@
 NAME	GENRE	INDEX	VALUE
-ÃÎÁúÖ®Õı»ÆÉ®Ã±	0	1	700000000
-ÃÎÁúÖ®½ğË¿ÕıºìôÂôÄ	0	2	1200000000
-ÃÎÁúÖ®ĞşË¿·¨´ø	0	3	1500000000
-ÃÎÁúÖ®·ğ·¨ĞşÅå	0	4	400000
-ÃÎÁúÖ®´ïÄ¦É®Ğ¬	0	5	1000000000
-·üÄ§Ö®×Ï½ğ¹÷	0	6	800000000
-·üÄ§Ö®Ğş»ÆôÂôÄ	0	7	700000
-·üÄ§Ö®ÎÚ½ğÈíÌĞ	0	8	1200000000
-·üÄ§Ö®·ğĞÄÈí¿Û	0	9	900000
-·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬	0	10	1200000000
-ËÄ¿ÕÖ®½µÄ§½äµ¶	0	11	2400000000
-ËÄ¿ÕÖ®×Ï½ğôÂôÄ	0	12	120000
-ËÄ¿ÕÖ®»¤·¨Ñü´ø	0	13	1800000000
-ËÄ¿ÕÖ®ÈíÆ¤»¤Íó	0	14	1800000000
-ËÄ¿ÕÖ®½äÂÉ·¨½ä	0	15	150000
-º³ÌìÖ®½ğ»·´óÑÛÉñ´¸	0	16	6000000000
-º³ÌìÖ®ÎäÉñÏâ½ğ¼×	0	17	170000
-º³ÌìÖ®ÍşÎäÊøÑü»·	0	18	2400000000
-º³ÌìÖ®»¢Í·½ôÊøÍó	0	19	190000
-º³ÌìÖ®³ËÁúÕ½Ñ¥	0	20	2000000000
-¼ÌÒµÖ®±¼À××êÁúÇ¹	0	21	6000000000
-¼ÌÒµÖ®ĞşÎä»Æ½ğîø	0	22	2000000000
-¼ÌÒµÖ®°×»¢ÎŞË«¿Û	0	23	2000000000
-¼ÌÒµÖ®»ğÔÆ÷è÷ëÊÖ	0	24	240000
-¼ÌÒµÖ®ÖìÈ¸ÁèÔÆÑ¥	0	25	250000
-ÓùÁúÖ®ÁÁÒø±¦µ¶	0	26	1500000000
-ÓùÁúÖ®Õ½Éñ¹Ò×¹	0	27	2000000000
-ÓùÁúÖ®ÌìÃÅÊøÑü»·	0	28	1500000000
-ÓùÁúÖ®Ñ¸·ç»¤Íó	0	29	290000
-ÓùÁúÖ®¾øÃüÖ¸»·	0	30	300000
-ÎŞ¼äÖ®ÒĞÌì½£	0	31	2000000000
-ÎŞ¼äÖ®Çå·çç»ÒÂ	0	32	320000
-ÎŞ¼äÖ®·÷ÔÆË¿´ø	0	33	1800000000
-ÎŞ¼äÖ®ÇÙÔÏ»¤Íó	0	34	1800000000
-ÎŞ¼äÖ®°×Óñ°ãÖ¸	0	35	350000
-ÎŞ÷ÊÖ®Ä¦Äá¹Ú	0	36	1800000000
-ÎŞ÷ÊÖ®×Ï½óôÂôÄ	0	37	370000
-ÎŞ÷ÊÖ®±ù¾§Ö¸»·	0	38	380000
-ÎŞ÷ÊÖ®Ï´ÏóÓñ¿Û	0	39	700000000
-ÎŞ÷ÊÖ®ºìç»Èí¶NĞ¬	0	40	1800000000
-ÎŞ³¾Ö®ÓñÅ®ËØĞÄ¹Ú	0	41	1200000000
-ÎŞ³¾Ö®ÇåĞÄÏòÉÆÖé	0	42	800000000
-ÎŞ³¾Ö®´È±¯Óñ°ãÖ¸	0	43	430000
-ÎŞ³¾Ö®·ğĞÄ´ÈÓÓÑüÅä	0	44	440000
-ÎŞ³¾Ö®·ğ¹âÖ¸»·	0	45	1500000000
-ÆÜ»ËÖ®·ïÒÇµ¶	0	46	2400000000
-ÆÜ»ËÖ®»ÛĞÄÇáÉ´ÒÂ	0	47	470000
-ÆÜ»ËÖ®·çÑ©°×ÔÆÊø´ø	0	48	1800000000
-ÆÜ»ËÖ®±ù×Ù½õÍó	0	49	1800000000
-ÆÜ»ËÖ®´äÓñÖ¸»·	0	50	500000
-±Ìº£Ö®Ô§ÑìÁ¬»·µ¶	0	51	800000000
-±Ìº£Ö®»·ÖéÓêÁ´	0	52	520000
-±Ìº£Ö®ºìÁå½ğË¿´ø	0	53	1000000000
-±Ìº£Ö®ºìÁå²¨	0	54	800000000
-±Ìº£Ö®ÏËÏ¸Ö¸»·	0	55	550000
-ÓÄëÊÖ®½ğÉß·¢´ø	0	56	600000000
-ÓÄëÊÖ®³àĞ«ÃØ×°	0	57	570000
-ÓÄëÊÖ®ÇàòÚ²øÑü	0	58	1500000000
-ÓÄëÊÖ®Òøó¸»¤ÊÖ	0	59	590000
-ÓÄëÊÖ®Ä«ÖëÈíÂÄ	0	60	800000000
-Ú¤»ÃÖ®Ğ°É²¶¾ÈĞ	0	61	1500000000
-Ú¤»ÃÖ®ÓÄ¹Æ°µÒÂ	0	62	1000000000
-Ú¤»ÃÖ®¶¾Ğ«Ö¸»·	0	63	630000
-Ú¤»ÃÖ®¸¯¹Ç»¤Íó	0	64	1500000000
-Ú¤»ÃÖ®Ë«»·ÉßĞ¬	0	65	650000
-Öä¸¿Ö®ÆÆ¼×Í·»·	0	66	1000000000
-Öä¸¿Ö®ÃğÀ×¾±·û	0	67	800000000
-Öä¸¿Ö®ÓÄ»ÃÖ¸»·	0	68	680000
-Öä¸¿Ö®´©ĞÄ¶¾Íó	0	69	800000000
-Öä¸¿Ö®±ù»ğÊ´¹ÇÑ¥	0	70	700000
-±ùº®Ö®µ¯Ö¸·Éµ¶	0	71	1500000000
-±ùº®Ö®ĞşÒÂÊø¼×	0	72	1000000000
-±ùº®Ö®ĞÄ¼ıÑü¿Û	0	73	1500000000
-±ùº®Ö®ĞşÌì±ù»ğÅå	0	74	740000
-±ùº®Ö®ÔÂÓ°Ñ¥	0	75	750000
-Ìì¹âÖ®»¨ÓêÂşÌì	0	76	1800000000
-Ìì¹âÖ®¶¨ĞÄÄıÉñ·û	0	77	1500000000
-Ìì¹âÖ®É­ÂŞÊøÑü	0	78	1500000000
-Ìì¹âÖ®·ç±©º®Ìúïí	0	79	790000
-Ìì¹âÖ®ÊøÌì¸¿µØ»·	0	80	800000
-É­»ÄÖ®·ÉĞÇ¶á»ê	0	81	1200000000
-É­»ÄÖ®½ğÇ®Á¬»·¼×	0	82	820000
-É­»ÄÖ®»êÒ§ÑüÊø	0	83	1500000000
-É­»ÄÖ®ĞşÌúÏâÓñÅå	0	84	840000
-É­»ÄÖ®ĞÇÔÉ·ÉÂÄ	0	85	1200000000
-µØÆÇÖ®ÎåĞĞÁ¬»·¹Ú	0	86	1000000000
-µØÆÇÖ®ºÚÑæ³åÌìÁ´	0	87	800000000
-µØÆÇÖ®Åùö¨À×»ğ½ä	0	88	880000
-µØÆÇÖ®¿ÛĞÄïí	0	89	1000000000
-µØÆÇÖ®µØĞĞÇ§ÀïÑ¥	0	90	900000
-Í¬³ğÖ®·ÉÁúÍ·»·	0	91	910000
-Í¬³ğÖ®½µÁúØ¤ÒÂ	0	92	1500000000
-Í¬³ğÖ®Ç±ÁúÑü´ø	0	93	1500000000
-Í¬³ğÖ®¿ºÁú»¤ÊÖ	0	94	1200000000
-Í¬³ğÖ®¼ûÁú°âÖ¸	0	95	950000
-µĞâéÖ®ÂÌÓñÕÈ	0	96	3500000000
-µĞâéÖ®¾Å´üØ¤ÒÂ	0	97	970000
-µĞâéÖ®²øÃ§Ñü´ø	0	98	1800000000
-µĞâéÖ®¹·¼¹Æ¤»¤Íó	0	99	1200000000
-µĞâéÖ®²İ¼äÊ¯½ä	0	100	1000000
-Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹	0	101	2000000000
-Ä§É·Ö®²ĞÑôÓ³Ñª¼×	0	102	1200000000
-Ä§É·Ö®³àæ÷ËøÑü¿Û	0	103	1500000000
-Ä§É·Ö®¾Ù»ğÁÇÌìÍó	0	104	1040000
-Ä§É·Ö®ÔÆÁúÍÂÖé½ä	0	105	1050000
-Ä§»ÍÖ®½ğ¼×¿ø	0	106	1200000000
-Ä§»ÍÖ®°´³ö»¢ÏîÈ¦	0	107	800000000
-Ä§»ÍÖ®Ïª¹ÈÊøÑü´ø	0	108	1000000000
-Ä§»ÍÖ®ÑªÒÂÊŞïí	0	109	1090000
-Ä§»ÍÖ®µÅÌ¤Ñ¥	0	110	1100000
-Ä§ÊÈÖ®ÁÒÑæ¹ÚÃá	0	111	1500000000
-Ä§ÊÈÖ®À÷Ä§ÊÉĞÄÁ´	0	112	1120000
-Ä§ÊÈÖ®Òµ»ğÓÄÚ¤½ä	0	113	1130000
-Ä§ÊÈÖ®ÑªÓñÆßÉ±Åå	0	114	1000000000
-Ä§ÊÈÖ®É½º£·ÉºèÂÄ	0	115	500000000
-ÁèÔÀÖ®Ì«¼«½£	0	116	1500000000
-ÁèÔÀÖ®ÎŞÎÒµÀÅÛ	0	117	1170000
-ÁèÔÀÖ®Å­À×·¨½ä	0	118	1500000000
-ÁèÔÀÖ®ÎŞ¼«ĞşÓñÅå	0	119	1800000000
-ÁèÔÀÖ®ÌìµØĞş»Æ½ä	0	120	1200000
-¼°·áÖ®ÕæÎä½£	0	121	6000000000
-¼°·áÖ®ÈıÇå·û	0	122	2000000000
-¼°·áÖ®ĞşË¿Èı¶Î½õ	0	123	1500000000
-¼°·áÖ®´äÓñĞş»ÆÅå	0	124	1240000
-¼°·áÖ®ÇàËÉ·¨½ä	0	125	1250000
-Ëª¾§Ö®Ç§Äêº®Ìú	0	126	1500000000
-Ëª¾§Ö®°ÁËªµÀÅÛ	0	127	1270000
-Ëª¾§Ö®Çå·çÂÆ´ø	0	128	1500000000
-Ëª¾§Ö®ÌìÇå±ù¾§ÊÖ	0	129	1800000000
-Ëª¾§Ö®·ç±©Ö¸»·	0	130	1300000
-À×ñ·Ö®º®ËÉ±ù°Ø¹Ú	0	131	900000000
-À×ñ·Ö®ÌìµØ»¤·û	0	132	800000000
-À×ñ·Ö®·çÀ×Çà½õ´ø	0	133	1500000000
-À×ñ·Ö®ÁéÓñÔÌÀ×	0	134	1340000
-À×ñ·Ö®¾ÅÌìÒıÀ×½ä	0	135	1350000
-Îí»ÃÖ®±±Ú¤µÀ¹Ú	0	136	400000000
-Îí»ÃÖ®î¿°í·ûÖä	0	137	1370000
-Îí»ÃÖ®ÊøĞÄÖ¸»·	0	138	1380000
-Îí»ÃÖ®ÇåÓ°ĞşÓñÅå	0	139	800000000
-Îí»ÃÖ®ËÉ·çÑ©Ó°Ñ¥	0	140	1200000000
-ÑÅµäÖ®»ê	0	141	1410000
-±±¾©Ö®ÃÎ	0	142	1420000
-¶´²ìÖ®°×½ğµñÁú½ä	0	143	1430000
-¶´²ìÖ®°×ÓñÇ¬À¤Åå	0	144	800000000
-¶´²ìÖ®°×½ğĞâ·ï½ä	0	145	1500000000
-¶´²ìÖ®ôä´äÓñÏîÈ¦	0	146	1500000000
-¶¨ÒµÍ·¹Ú	0	147	1470000
-¶¨ÒµÕ½ÅÛ	0	148	1480000
-¶¨ÒµÑü´ø	0	149	1490000
-¶¨Òµ»¤Íó	0	150	1500000
-¶¨ÒµÕ½Ñ¥	0	151	1510000
-¶¨Òµ°âÖ¸	0	152	1520000
-¶¨¹úÍ·¹Ú	0	153	1530000
-¶¨¹úÕ½ÅÛ	0	154	1540000
-¶¨¹úÑü¹¿	0	155	1550000
-¶¨¹ú»¤Íó	0	156	1560000
-¶¨¹úÕ½Ñ¥	0	157	1570000
-¶¨¹ú°âÖ¸	0	158	1580000
-¶¨¹úÖ®ÇàÉ´³¤ÉÀ	0	159	200000000
-¶¨¹úÖ®ÎÙÉ°·¢¹Ú	0	160	300000000
-¶¨¹úÖ®³à¾îÈíÑ¥	0	161	80000000
-¶¨¹úÖ®×ÏÌÙ»¤Íó	0	162	100000000
-¶¨¹úÖ®Òø²ÏÑü´ø	0	163	80000000
-°²°îÖ®±ù¾§Ê¯ÏîÁ´	0	164	350000000
-°²°îÖ®¾Õ»¨Ê¯Ö¸»·	0	165	250000000
-°²°îÖ®Ìï»ÆÊ¯ÓñÅå	0	166	250000000
-°²°îÖ®¼¦ÑªÊ¯½äÖ¸	0	167	250000000
-Ìì»ÍÁúÆ÷Ö®ÁúÌ§Í·	0	168	1680000
-Ìì»ÍÁúÆ÷Ö®°×ÁúÏ¢	0	169	1690000
-Ìì»ÍÁúÆ÷Ö®ÕòÚ¤Ö®Á´	0	170	1700000
-Ìì»ÍÁúÆ÷Ö®¾ÅÏÖÖ®Ö¸	0	171	1710000
-Ìì»ÍÁúÆ÷Ö®ÓñåĞÒ£	0	172	1720000
-Ìì»ÍÁúÆ÷Ö®»Æ½ğÁÛ	0	173	1730000
-Ìì»ÍÁúÆ÷Ö®ÅÍÁú¹å	0	174	1740000
-Ìì»ÍÁúÆ÷Ö®Áú¿ŞÇ§Àï	0	175	1750000
-Ìì»ÍÁúÆ÷Ö®Å­ÁúÖ®Í«	0	176	1760000
-½ğ·ãÖ®ÇàÑô¿ø	0	177	1770000
-½ğ·ãÖ®÷è÷ëÑª	0	178	1780000
-½ğ·ãÖ®åªÖ®Á´¹â	0	179	1790000
-½ğ·ãÖ®¹«½÷ÈıÌ¾	0	180	1800000
-½ğ·ãÖ®¶á»êÓñ´ø	0	181	1810000
-½ğ·ãÖ®ºóôàÒı¹­	0	182	1820000
-½ğ·ãÖ®À¼Í¤Óñ	0	183	1830000
-½ğ·ãÖ®Ç§Àï²İÉÏ·É	0	184	1840000
-½ğ·ãÖ®Í­È¸´ºÉî	0	185	1850000
-ÏÀ¹ÇÖ®ÌúÑªÉÀ	0	186	1860000
-ÏÀ¹ÇÖ®¶àÇé»·	0	187	1870000
-ÏÀ¹ÇÖ®µ¤ĞÄ½ä	0	188	1880000
-ÏÀ¹ÇÖ®ÇéÒâ½á	0	189	1890000
-ÈáÇéÖ®½íàşÄŞÉÑ	0	190	1900000
-ÈáÇéÖ®ÊçÅ®ÏîÁ´	0	191	1910000
-ÈáÇéÖ®·ïÒÇ½äÖ¸	0	192	1920000
-ÈáÇéÖ®»ÛĞÄÓñÅå	0	193	1930000
-§¹i M? H? Trİch Tinh hoµn	0	194	
-§¹i M? H? §­êng Ngh? gi¸p	0	195	
-§¹i M? H? Lôc Ph? Thóy H? Th©n ph? 	0	196	
-§¹i M? H? B¾c Kinh Chi Méng	0	197	
-§¹i M? H? B¹ch Kim yªu ®¸i	0	198	
-§¹i M? H? Thiªn Tµm H? UyÓn	0	199	
-§¹i M? H? Ng? S¾c Ngäc Béi	0	200	
-§¹i M? H? Thiªn Tµm Ngoa	0	201	
-§¹i M? H? Nha §iÓn Chi Hån	0	202	
-§¹i M? H? B«n L«i Toµn Long th­¬ng	0	203	
+Méng Long Chİnh Hång T¨ng M·o	0	1	100000
+Méng Long Kim Ti Chİnh Hång Cµ Sa	0	2	700000000
+Méng Long HuyÒn Ti Ph¸t ®¸i	0	3	300000
+Méng Long PhËt Ph¸p HuyÒn Béi	0	4	400000
+Méng Long §¹t Ma T¨ng hµi	0	5	500000
+Phôc Ma Tö Kim C«n	0	6	800000000
+Phôc Ma HuyÒn Hoµng Cµ Sa	0	7	700000
+Phôc Ma ¤ Kim NhuyÔn §iÒu	0	8	800000
+Phôc Ma PhËt T©m NhuyÔn KhÊu	0	9	900000
+Phôc Ma Phæ §é T¨ng hµi	0	10	1000000
+Tø Kh«ng Gi¸ng Ma Giíi ®ao	0	11	2400000000
+Tø Kh«ng Tö Kim Cµ Sa	0	12	120000
+Tø Kh«ng Hé ph¸p Yªu ®¸i	0	13	130000
+Tø Kh«ng NhuyÔn B× Hé UyÓn	0	14	140000
+Tø Kh«ng Giíi LuËt Ph¸p giíi	0	15	150000
+H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy	0	16	6000000000
+H¸m Thiªn Vò ThÇn T­¬ng Kim Gi¸p	0	17	170000
+H¸m Thiªn Uy Vò Thóc yªu ®¸i	0	18	180000
+H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn	0	19	190000
+H¸m Thiªn Thõa Long ChiÕn Ngoa	0	20	200000
+KÕ NghiÖp B«n L«i Toµn Long th­¬ng	0	21	6000000000
+KÕ NghiÖp HuyÒn Vò Hoµng Kim Kh¶i	0	22	1500000000
+KÕ NghiÖp B¹ch Hæ V« Song khÊu	0	23	230000
+KÕ NghiÖp HáaV©n Kú L©n Thñ 	0	24	240000
+KÕ NghiÖp Chu T­íc L¨ng V©n Ngoa	0	25	250000
+Ngù Long L­îng Ng©n B¶o ®ao	0	26	1500000000
+Ngù Long ChiÕn ThÇn Phi Qu¶i gi¸p	0	27	270000
+Ngù Long Thiªn M«n Thóc Yªu hoµn	0	28	280000
+Ngù Long TÊn Phong Hé yÓn	0	29	290000
+Ngù Long TuyÖt MÖnh ChØ hoµn	0	30	300000
+V« Gian û Thiªn KiÕm	0	31	2000000000
+V« Gian Thanh Phong Truy Y	0	32	320000
+V« Gian PhÊt V©n Ti ®¸i	0	33	330000
+V« Gian CÇm VËn Hé UyÓn	0	34	340000
+V« Gian B¹ch Ngäc Bµn ChØ 	0	35	350000
+V« Ma Ma Ni qu¸n	0	36	360000
+V« Ma Tö Kh©m Cµ Sa	0	37	370000
+V« Ma B¨ng Tinh ChØ Hoµn	0	38	380000
+V« Ma TÈy T­îng Ngäc KhÊu 	0	39	700000000
+V« Ma Hång Truy NhuyÔn Th¸p hµi	0	40	1000000000
+V« TrÇn Ngäc N÷ Tè T©m qu¸n	0	41	410000
+V« TrÇn Thanh T©m H­íng ThiÖn Ch©u	0	42	800000000
+V« TrÇn Tõ Bi Ngäc Ban ChØ 	0	43	430000
+V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi	0	44	440000
+V« TrÇn PhËt Quang ChØ Hoµn	0	45	450000
+Tª Hoµng Phông Nghi ®ao	0	46	2400000000
+Tª Hoµng TuÖ T©m Khinh Sa Y	0	47	470000
+Tª Hoµng Phong TuyÕt B¹ch V©n Thóc §¸i	0	48	480000
+Tª Hoµng B¨ng Tung CÈm uyÓn	0	49	490000
+Tª Hoµng Thóy Ngäc ChØ Hoµn	0	50	500000
+Bİch H¶i Uyªn ¦¬ng Liªn Hoµn ®ao	0	51	800000000
+Bİch H¶i Hoµn Ch©u Vò Liªn	0	52	520000
+Bİch H¶i Hång Linh Kim Ti ®¸i	0	53	530000
+Bİch H¶i Hång L¨ng Ba	0	54	500000000
+Bİch H¶i Khiªn TÕ ChØ hoµn	0	55	550000
+U Lung Kim Xµ Ph¸t ®¸i	0	56	600000000
+U Lung Xİch YÕt MËt trang	0	57	570000
+U Lung Thanh Ng« TriÒn yªu	0	58	580000
+U Lung Ng©n ThÒm Hé UyÓn	0	59	590000
+U Lung MÆc Thï NhuyÔn Lı 	0	60	400000000
+Minh ¶o Tµ S¸t §éc NhËn	0	61	1500000000
+Minh ¶o U §éc ¸m Y	0	62	620000
+Minh ¶o §éc YÕt ChØ Hoµn	0	63	630000
+Minh ¶o Hñ Cèt Hé uyÓn	0	64	640000
+Minh ¶o Song Hoµn Xµ Hµi	0	65	650000
+Chó Ph­îc Ph¸ gi¸p ®Çu hoµn	0	66	660000
+Chó Ph­îc DiÖt L«i C¶nh Phï 	0	67	800000000
+Chó Ph­îc U ¶o ChØ Hoµn	0	68	680000
+Chó Ph­îc Xuyªn T©m §éc UyÓn	0	69	690000
+Chó Ph­îc B¨ng Háa Thùc Cèt Ngoa	0	70	700000
+B¨ng Hµn §¬n ChØ Phi §ao	0	71	2500000000
+B¨ng Hµn HuyÒn Y Thóc Gi¸p	0	72	720000
+B¨ng Hµn T©m TiÔn Yªu KhÊu	0	73	730000
+B¨ng Hµn HuyÒn Thiªn B¨ng Háa Béi	0	74	740000
+B¨ng Hµn NguyÖt ¶nh Ngoa	0	75	750000
+Thiªn Quang Hoa Vò M¹n Thiªn	0	76	1800000000
+Thiªn Quang §Şnh T©m Ng­ng ThÇn Phï 	0	77	770000
+Thiªn Quang S©m La Thóc §¸i	0	78	780000
+Thiªn Quang Song B¹o Hµn ThiÕt Tr¹c	0	79	790000
+Thiªn Quang Thóc Thiªn Ph­îc §Şa Hoµn	0	80	800000
+S©m Hoang Phi Tinh §o¹t Hån	0	81	1200000000
+S©m Hoang KimTiÒn Liªn Hoµn Gi¸p	0	82	820000
+S©m Hoang Hån Gi¶o Yªu Thóc	0	83	830000
+S©m Hoang HuyÒn ThiÕt T­¬ng Ngäc Béi	0	84	840000
+S©m Hoang Tinh VÉn Phi Lı 	0	85	850000
+§Şa Ph¸ch Ngò hµnh Liªn Hoµn Qu¸n	0	86	860000
+§Şa Ph¸ch H¾c DiÖm Xung Thiªn Liªn	0	87	800000000
+§Şa Ph¸ch Tİch LŞch L«i Háa Giíi	0	88	880000
+§Şa Ph¸ch KhÊu T©m tr¹c	0	89	890000
+§Şa Ph¸ch §Şa Hµnh Thiªn Lı Ngoa	0	90	900000
+§ång Cõu Phi Long §Çu hoµn	0	91	910000
+§ång Cõu Gi¸ng Long C¸i Y	0	92	600000000
+§ång Cõu TiÒm Long Yªu §¸i	0	93	930000
+§ång Cõu Kh¸ng Long Hé UyÓn	0	94	1200000000
+§ång Cõu KiÕn Long Ban ChØ 	0	95	950000
+§Şch Kh¸i Lôc Ngäc Tr­îng	0	96	3500000000
+§Şch Kh¸i Cöu §¹i C¸i Y	0	97	970000
+§Şch Kh¸i TriÒn M·ng yªu ®¸i	0	98	980000
+§Şch Kh¸i CÈu Tİch B× Hé uyÓn	0	99	990000
+§Şch Kh¸i Th¶o Gian Th¹ch giíi	0	100	1000000
+Ma S¸t Quû Cèc U Minh Th­¬ng	0	101	2000000000
+Ma S¸t Tµn D­¬ng ¶nh HuyÕt Gi¸p	0	102	1020000
+Ma S¸t Xİch Kı Táa Yªu KhÊu	0	103	1030000
+Ma S¸t Cö Háa Liªu Thiªn uyÓn	0	104	1040000
+Ma S¸t V©n Long Thæ Ch©u giíi	0	105	1050000
+Ma Hoµng Kim Gi¸p Kh«i	0	106	500000000
+Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn	0	107	800000000
+Ma Hoµng Khª Cèc Thóc yªu ®¸i	0	108	1080000
+Ma Hoµng HuyÕt Y Thó Tr¹c	0	109	1090000
+Ma Hoµng §¨ng §¹p Ngoa	0	110	1100000
+Ma ThŞ LiÖt DiÖm Qu¸n MiÖn	0	111	1110000
+Ma ThŞ LÖ Ma PhÖ T©m Liªn	0	112	1120000
+Ma ThŞ NghiÖp Háa U Minh Giíi	0	113	1130000
+Ma ThŞ HuyÕt Ngäc ThÊt S¸t Béi	0	114	1140000
+Ma ThŞ s¬n  H¶i Phi Hång Lı 	0	115	500000000
+L¨ng Nh¹c Th¸i Cùc Qu¸n	0	116	1160000
+L¨ng Nh¹c V« Ng· ®¹o bµo	0	117	1170000
+L¨ng Nh¹c Né L«i Thóc yªu	0	118	1180000
+L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi	0	119	1500000000
+L¨ng Nh¹c Thiªn §Şa HuyÒn Hoµng giíi	0	120	1200000
+CËp Phong Ch©n Vò KiÕm	0	121	6000000000
+CËp Phong Tam Thanh Phï 	0	122	1200000000
+CËp Phong HuyÒn Ti Tam §o¹n cÈm	0	123	1230000
+CËp Phong Thóy Ngäc HuyÒn Hoµng Béi	0	124	1240000
+CËp Phong Thanh Tïng Ph¸p giíi	0	125	1250000
+S­¬ng Tinh Thiªn Niªn Hµn ThiÕt	0	126	1500000000
+S­¬ng Tinh Ng¹o S­¬ng ®¹o bµo	0	127	1270000
+S­¬ng Tinh Thanh Phong Lò ®¸i	0	128	1280000
+S­¬ng Tinh Thiªn Tinh B¨ng Tinh thñ 	0	129	1290000
+S­¬ng Tinh Phong B¹o chØ hoµn	0	130	1300000
+L«i Khung Hµn Tung B¨ng B¹ch quan	0	131	1310000
+L«i Khung Thiªn §Şa Hé phï 	0	132	700000000
+L«i Khung Phong L«i Thanh CÈm ®¸i	0	133	1330000
+L«i Khung Linh Ngäc UÈn L«i	0	134	1340000
+L«i Khung Cöu Thiªn DÉn L«i giíi	0	135	1350000
+Vô ¶o B¾c Minh §¹o qu¸n	0	136	400000000
+Vô ¶o Ki B¸n phï chó 	0	137	1370000
+Vô ¶o Thóc T©m chØ hoµn	0	138	1380000
+Vô ¶o Thanh ¶nh HuyÒn Ngäc Béi	0	139	1390000
+Vô ¶o Tung Phong TuyÕt ¶nh ngoa	0	140	1400000
+V« Danh ChØ Hoµn	0	141	1410000
+V« Danh Giíi ChØ 	0	142	1420000
+§éng S¸t B¹ch Kim §iªu Long Giíi	0	143	1430000
+§éng S¸t B¹ch Ngäc Cµn Kh«n Béi	0	144	800000000
+§éng S¸t B¹ch Kim Tó Phông Giíi	0	145	1500000000
+§éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn	0	146	1500000000
+§Şnh NghiÖp §Çu qu¸n	0	147	1470000
+§Şnh NghiÖp ChiÕn bµo	0	148	1480000
+§Şnh NghiÖp Yªu ®¸i	0	149	1490000
+§Şnh NghiÖp Hé uyÓn	0	150	1500000
+§Şnh NghiÖp ChiÕn ngoa	0	151	1510000
+§Şnh NghiÖp Ban chØ 	0	152	1520000
+§Şnh Quèc §Çu qu¸n	0	153	1530000
+§Şnh Quèc ChiÕn bµo	0	154	1540000
+§Şnh Quèc Yªu c« 	0	155	1550000
+§Şnh Quèc Hé uyÓn	0	156	1560000
+§Şnh Quèc ChiÕn ngoa	0	157	1570000
+§Şnh Quèc Ban chØ 	0	158	1580000
+§Şnh Quèc Thanh Sa Tr­êng Sam	0	159	200000000
+§Şnh Quèc ¤ Sa Ph¸t Qu¸n	0	160	300000000
+§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	0	161	80000000
+§Şnh Quèc Tö §»ng Hé uyÓn	0	162	100000000
+§Şnh Quèc Ng©n Tµm Yªu ®¸i	0	163	80000000
+An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	164	350000000
+An Bang Cóc Hoa Th¹ch ChØ hoµn	0	165	250000000
+An Bang §iÒn Hoµng Th¹ch Ngäc Béi	0	166	250000000
+An Bang Kª HuyÕt Th¹ch Giíi ChØ 	0	167	250000000
+Thiªn Hoµng Long Long §µi	0	168	1680000
+Thiªn Hoµng Long B¹ch Long Tøc	0	169	1690000
+Thiªn Hoµng Long TrÊn Minh Liªn	0	170	1700000
+Thiªn Hoµng Long Cöu HiÖn chØ 	0	171	1710000
+Thiªn Hoµng Long Ngäc Tiªu Diªu	0	172	1720000
+Thiªn Hoµng Long Hoµng Kim L©n	0	173	1730000
+Thiªn Hoµng Long Bµn Long c«i	0	174	1740000
+Thiªn Hoµng Long Long Khèc Thiªn Lı 	0	175	1750000
+Thiªn Hoµng Long Né Long §ång	0	176	1760000
+Kim Phong Thanh D­¬ng Kh«i	0	177	1770000
+Kim Phong Kú L©n HuyÕt	0	178	1780000
+Kim Phong Tr¹c Liªn Quang	0	179	1790000
+Kim Phong C«ng CÈn Tam Th¸n	0	180	1800000
+Kim Phong §o¹t Hån Ngäc ®¸i	0	181	1810000
+Kim Phong HËu NghÖ dÉn cung	0	182	1820000
+Kim Phong Lan §×nh Ngäc	0	183	1830000
+Kim Phong Thiªn Lı Th¶o Th­îng Phi	0	184	1840000
+Kim Phong §ång T­íc Xu©n Th©m	0	185	1850000
+HiÖp Cèt ThiÕt HuyÕt Sam	0	186	1860000
+HiÖp Cèt §a T×nh Hoµn	0	187	1870000
+HiÖp Cèt §an T©m Giíi	0	188	1880000
+HiÖp Cèt T×nh ı KÕt	0	189	1890000
+Nhu T×nh C©n Quèc Nghª Th­êng	0	190	1900000
+Nhu T×nh Thôc N÷ H¹ng Liªn	0	191	1910000
+Nhu T×nh  Phông Nghi Giíi ChØ 	0	192	1920000
+Nhu T×nh  TuÖ T©m Ngäc Béi	0	193	1930000
+§¹i M· Hæ Trİch Tinh hoµn	0	194	
+§¹i M· Hæ §­êng Nghª gi¸p	0	195	
+§¹i M· Hæ Lôc PhØ Thóy Hé Th©n phï 	0	196	
+§¹i M· Hæ B¾c Kinh Chi Méng	0	197	
+§¹i M· Hæ B¹ch Kim yªu ®¸i	0	198	
+§¹i M· Hæ Thiªn Tµm Hé UyÓn	0	199	
+§¹i M· Hæ Ngò S¾c Ngäc Béi	0	200	
+§¹i M· Hæ Thiªn Tµm Ngoa	0	201	
+§¹i M· Hæ Nha §iÓn Chi Hån	0	202	
+§¹i M· Hæ B«n L«i Toµn Long th­¬ng	0	203	
 Hång ¶nh ThÈm Viªn UyÓn	0	204	
 Hång ¶nh KiÕm Bµi	0	205	
 Hång ¶nh Môc Tóc	0	206	
-Hång ¶nh T? Chiªu	0	207	
-Tu? Thanh	0	208	
+Hång ¶nh Tô Chiªu	0	207	
+TuÖ Thanh	0	208	
 Duyªn Qu©n	0	209	
 [Hoµn Mü] An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	210	
-[Hoµn Mü] An Bang Cóc Hoa Th¹ch Ch? Hoµn	0	211	
+[Hoµn Mü] An Bang Cóc Hoa Th¹ch ChØ Hoµn	0	211	
 [Hoµn Mü] An Bang §iÒn Hoµng Th¹ch Ngäc Béi	0	212	
-[Hoµn Mü] An Bang K? HuyÕt Th¹ch Giíi Ch?	0	213	
+[Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	213	
 Vinh DiÖu Chi Y	0	214	
 Tinh ChuÈn Chi Ngoa	0	215	
 An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	216	
-An Bang Cóc hoa Th¹ch ch? hoµn	0	217	
+An Bang Cóc hoa Th¹ch chØ hoµn	0	217	
 An Bang §iÒn Hoµng th¹ch ngäc béi	0	218	
-An Bang K? HuyÕt Th¹ch Giíi Ch?	0	219	
+An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	219	
 [§Şnh thêi] Méng Long Chİnh Hoµng T¨ng M·o	0	220	
-[§Şnh thêi] Méng Long Kim Ty Chİnh Hång C? Sa	0	221	
+[§Şnh thêi] Méng Long Kim Ty Chİnh Hång Cµ Sa	0	221	
 [§Şnh thêi] HuyÒn ThiÕt Ph¸t §¸i	0	222	
 [§Şnh thêi] PhËt Ph¸p HuyÒn Béi	0	223	
 [§Şnh thêi] Méng Long §¹t Ma T¨ng Hµi	0	224	
-[§Şnh thêi] Phôc Ma T? Kim C«n	0	225	
-[§Şnh thêi] Phôc Ma HuyÒn Hoµng C? Sa	0	226	
-[§Şnh thêi] Phôc Ma ? Kim NhuyÔn Thao	0	227	
+[§Şnh thêi] Phôc Ma Tö Kim C«n	0	225	
+[§Şnh thêi] Phôc Ma HuyÒn Hoµng Cµ Sa	0	226	
+[§Şnh thêi] Phôc Ma ¤ Kim NhuyÔn Thao	0	227	
 [§Şnh thêi] Phôc Ma PhËt T©m NhuyÔn KhÊu	0	228	
-[§Şnh thêi] Phôc Ma Ph? §é T¨ng Hµi	0	229	
-[§Şnh thêi] T? Kh«ng Gi¸ng Ma Giíi §ao	0	230	
-[§Şnh thêi] T? Kh«ng T? Kim C? Sa	0	231	
-[§Şnh thêi] T? Kh«ng H? Ph¸p Yªu §¸i	0	232	
-[§Şnh thêi] T? Kh«ng NhuyÔn B? H? UyÓn	0	233	
-[§Şnh thêi] T? Kh«ng Giíi LuËt Ph¸p Giíi	0	234	
+[§Şnh thêi] Phôc Ma Phæ §é T¨ng Hµi	0	229	
+[§Şnh thêi] Tø Kh«ng Gi¸ng Ma Giíi §ao	0	230	
+[§Şnh thêi] Tø Kh«ng Tö Kim Cµ Sa	0	231	
+[§Şnh thêi] Tø Kh«ng Hé Ph¸p Yªu §¸i	0	232	
+[§Şnh thêi] Tø Kh«ng NhuyÔn B× Hé UyÓn	0	233	
+[§Şnh thêi] Tø Kh«ng Giíi LuËt Ph¸p Giíi	0	234	
 [§Şnh thêi] H·m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy	0	235	
-[§Şnh thêi] H·m Thiªn V? ThÇn T­¬ng Kim Gi¸p	0	236	
-[§Şnh thêi] H·m Thiªn Uy V? Thóc Yªu Hoµn	0	237	
-[§Şnh thêi] H·m Thiªn H? §Çu KhÈn Thóc UyÓn	0	238	
+[§Şnh thêi] H·m Thiªn Vâ ThÇn T­¬ng Kim Gi¸p	0	236	
+[§Şnh thêi] H·m Thiªn Uy Vò Thóc Yªu Hoµn	0	237	
+[§Şnh thêi] H·m Thiªn Hæ §Çu KhÈn Thóc UyÓn	0	238	
 [§Şnh thêi] H·m Thiªn Thõa Long ChiÕn Ngoa	0	239	
 [§Şnh thêi] Tôc NghiÖp B«n L«i Toµn Long Th­¬ng	0	240	
-[§Şnh thêi] Tôc NghiÖp HuyÒn V? Hoµng Kim Kh¶i	0	241	
-[§Şnh thêi] Tôc NghiÖp B¹ch H? V? Song KhÊu	0	242	
-[§Şnh thêi] Tôc NghiÖp Háa V©n K? L©n Th?	0	243	
+[§Şnh thêi] Tôc NghiÖp HuyÒn Vâ Hoµng Kim Kh¶i	0	241	
+[§Şnh thêi] Tôc NghiÖp B¹ch Hæ V« Song KhÊu	0	242	
+[§Şnh thêi] Tôc NghiÖp Háa V©n Kú L©n Thñ	0	243	
 [§Şnh thêi] Tôc NghiÖp Chu T­íc L¨ng V©n Ngoa	0	244	
-[§Şnh thêi] Ng? Long L­îng Ng©n B¶o §ao	0	245	
-[§Şnh thêi] Ng? Long ChiÕn ThÇn Qua Trôy	0	246	
-[§Şnh thêi] Ng? Long Long Thiªn M«n Thóc Yªu Hoµn	0	247	
-[§Şnh thêi] Ng? Long TÊn Phong H? UyÓn	0	248	
-[§Şnh thêi] Ng? Long TuyÖt MÖnh Ch? Hoµn	0	249	
-[§Şnh thêi] V? Gian ? Thiªn KiÕm	0	250	
-[§Şnh thêi] V? Gian Thanh Phong Tri Y	0	251	
-[§Şnh thêi] V? Gian PhÊt V©n Ty §¸i	0	252	
-[§Şnh thêi] V? Gian CÇm VËn H? UyÓn	0	253	
-[§Şnh thêi] V? Gian B¹ch Ngäc Ban Ch?	0	254	
-[§Şnh thêi] V? Ma Ma Ni Qu¸n	0	255	
-[§Şnh thêi] V? Ma T? Kh©m C? Sa	0	256	
-[§Şnh thêi] V? Ma B¨ng Tinh Ch? Hoµn	0	257	
-[§Şnh thêi] V? Ma TÈy T­îng Ngäc KhÊu	0	258	
-[§Şnh thêi] V? Ma Hång Tri NhuyÔn Th¸p Hµi	0	259	
-[§Şnh thêi] V? TrÇn Ngäc N? T? T©m Qu¸n	0	260	
-[§Şnh thêi] V? TrÇn Thanh T©m H­íng ThiÖn Ch©u	0	261	
-[§Şnh thêi] V? TrÇn T? Bi Ngäc Ban Ch?	0	262	
-[§Şnh thêi] V? TrÇn PhËt T©m T? Hùu Yªu Phèi	0	263	
-[§Şnh thêi] V? TrÇn PhËt Quang Ch? Hoµn	0	264	
-[§Şnh thêi] Th? Hoµng Phông Nghi §ao	0	265	
-[§Şnh thêi] Th? Hoµng Tu? T©m Kinh Sa Y	0	266	
-[§Şnh thêi] Th? Hoµng Phong TuyÕt B¹ch V©n Yªu §¸i	0	267	
-[§Şnh thêi] Th? Hoµng B¨ng Tuy CÈm UyÓn	0	268	
-[§Şnh thêi] Th? Hoµng Thóy Ngäc Ch? Hoµn	0	269	
+[§Şnh thêi] Ngù Long L­îng Ng©n B¶o §ao	0	245	
+[§Şnh thêi] Ngù Long ChiÕn ThÇn Qua Trôy	0	246	
+[§Şnh thêi] Ngù Long Long Thiªn M«n Thóc Yªu Hoµn	0	247	
+[§Şnh thêi] Ngù Long TÊn Phong Hé UyÓn	0	248	
+[§Şnh thêi] Ngù Long TuyÖt MÖnh ChØ Hoµn	0	249	
+[§Şnh thêi] V« Gian û Thiªn KiÕm	0	250	
+[§Şnh thêi] V« Gian Thanh Phong Tri Y	0	251	
+[§Şnh thêi] V« Gian PhÊt V©n Ty §¸i	0	252	
+[§Şnh thêi] V« Gian CÇm VËn Hé UyÓn	0	253	
+[§Şnh thêi] V« Gian B¹ch Ngäc Ban ChØ	0	254	
+[§Şnh thêi] V« Ma Ma Ni Qu¸n	0	255	
+[§Şnh thêi] V« Ma Tö Kh©m Cµ Sa	0	256	
+[§Şnh thêi] V« Ma B¨ng Tinh ChØ Hoµn	0	257	
+[§Şnh thêi] V« Ma TÈy T­îng Ngäc KhÊu	0	258	
+[§Şnh thêi] V« Ma Hång Tri NhuyÔn Th¸p Hµi	0	259	
+[§Şnh thêi] V« TrÇn Ngäc N÷ Tè T©m Qu¸n	0	260	
+[§Şnh thêi] V« TrÇn Thanh T©m H­íng ThiÖn Ch©u	0	261	
+[§Şnh thêi] V« TrÇn Tõ Bi Ngäc Ban ChØ	0	262	
+[§Şnh thêi] V« TrÇn PhËt T©m Tõ Hùu Yªu Phèi	0	263	
+[§Şnh thêi] V« TrÇn PhËt Quang ChØ Hoµn	0	264	
+[§Şnh thêi] Thª Hoµng Phông Nghi §ao	0	265	
+[§Şnh thêi] Thª Hoµng TuÖ T©m Kinh Sa Y	0	266	
+[§Şnh thêi] Thª Hoµng Phong TuyÕt B¹ch V©n Yªu §¸i	0	267	
+[§Şnh thêi] Thª Hoµng B¨ng Tuy CÈm UyÓn	0	268	
+[§Şnh thêi] Thª Hoµng Thóy Ngäc ChØ Hoµn	0	269	
 [§Şnh thêi] Bİch H¶i Uyªn ¦¬ng Liªn Hoµn §ao	0	270	
-[§Şnh thêi] Bİch H¶i Hoµn Ch©u V? Liªn	0	271	
+[§Şnh thêi] Bİch H¶i Hoµn Ch©u Vò Liªn	0	271	
 [§Şnh thêi] Bİch H¶i Hång Linh Kim Ty §¸i	0	272	
 [§Şnh thêi] Bİch H¶i Hång Linh Ba	0	273	
-[§Şnh thêi] Bİch H¶i Tiªm T? Ch? Hoµn	0	274	
-[§Şnh thêi] U Lung Kim X? Ph¸t §¸i	0	275	
-[§Şnh thêi] U Lung Xİch H¹t B? Trang	0	276	
-[§Şnh thêi] U Lung Thanh Ng? TriÒn Yªu	0	277	
-[§Şnh thêi] U Lung Ng©n ThiÒm H? Th?	0	278	
-[§Şnh thêi] U Long MÆc Th? NhuyÔn L?	0	279	
-[§Şnh thêi] Minh Hoan T? S¸t §éc §ao	0	280	
-[§Şnh thêi] V? Ho¸n U C? ¸m Y	0	281	
-[§Şnh thêi] V? Ho¸n §éc H¹t Ch? Hoµn	0	282	
-[§Şnh thêi] V? Ho¸n H? Cèt H? UyÓn	0	283	
-[§Şnh thêi] V? Ho¸n Song Hoµn X? Hµi	0	284	
-[§Şnh thêi] Ch? Phäc Ph? Gi¸p §Çu Hoµn	0	285	
-[§Şnh thêi] Ch? Phäc DiÖt L«i C¶nh Ph?	0	286	
-[§Şnh thêi] Ch? Phäc U Hoan Ch? Hoµn	0	287	
-[§Şnh thêi] Ch? Phäc Xuyªn T©m §éc UyÓn	0	288	
-[§Şnh thêi] Ch? Phäc B¨ng Háa Thùc Cèt Ngoa	0	289	
-[§Şnh thêi] B¨ng Hµn §µn Ch? Phi §ao	0	290	
+[§Şnh thêi] Bİch H¶i Tiªm TÕ ChØ Hoµn	0	274	
+[§Şnh thêi] U Lung Kim Xµ Ph¸t §¸i	0	275	
+[§Şnh thêi] U Lung Xİch H¹t Bİ Trang	0	276	
+[§Şnh thêi] U Lung Thanh Ng« TriÒn Yªu	0	277	
+[§Şnh thêi] U Lung Ng©n ThiÒm Hé Thñ	0	278	
+[§Şnh thêi] U Long MÆc Thï NhuyÔn L÷	0	279	
+[§Şnh thêi] Minh Hoan Tµ S¸t §éc §ao	0	280	
+[§Şnh thêi] Vô Ho¸n U Cæ ¸m Y	0	281	
+[§Şnh thêi] Vô Ho¸n §éc H¹t ChØ Hoµn	0	282	
+[§Şnh thêi] Vô Ho¸n Hñ Cèt Hé UyÓn	0	283	
+[§Şnh thêi] Vô Ho¸n Song Hoµn Xµ Hµi	0	284	
+[§Şnh thêi] Chó Phäc Ph¸ Gi¸p §Çu Hoµn	0	285	
+[§Şnh thêi] Chó Phäc DiÖt L«i C¶nh Phï	0	286	
+[§Şnh thêi] Chó Phäc U Hoan ChØ Hoµn	0	287	
+[§Şnh thêi] Chó Phäc Xuyªn T©m §éc UyÓn	0	288	
+[§Şnh thêi] Chó Phäc B¨ng Háa Thùc Cèt Ngoa	0	289	
+[§Şnh thêi] B¨ng Hµn §µn ChØ Phi §ao	0	290	
 [§Şnh thêi] B¨ng Hµn HuyÒn y Thóc Gi¸p	0	291	
 [§Şnh thêi] B¨ng Hµn T©m TiÔn Yªu KhÊu	0	292	
 [§Şnh thêi] B¨ng Hµn HuyÒn Thiªn B¨ng Háa Béi	0	293	
 [§Şnh thêi] B¨ng Hµn NguyÖt ¶nh Ngoa	0	294	
-[§Şnh thêi] Thiªn Quang Hoa V? M¹n Thiªn	0	295	
-[§Şnh thêi] Thiªn Ngoa §Şnh T©m Ng­ng ThÇn Ph?	0	296	
+[§Şnh thêi] Thiªn Quang Hoa Vò M¹n Thiªn	0	295	
+[§Şnh thêi] Thiªn Ngoa §Şnh T©m Ng­ng ThÇn Phï	0	296	
 [§Şnh thêi] Thiªn Ngoa S©m La Thóc Yªu	0	297	
 [§Şnh thêi] Thiªn Ngoa Phong B·o Hµn ThiÕt Träc	0	298	
 [§Şnh thêi] Thiªn Ngoa Thóc Thiªn Phäc §Şa Hoµn	0	299	
@@ -302,191 +302,191 @@ An Bang K? HuyÕt Th¹ch Giíi Ch?	0	219
 [§Şnh thêi] S©m Hoang Kim TiÒn Liªn Hoµn Gi¸p	0	301	
 [§Şnh thêi] S©m Hoang Hån Gi¶o Yªu Thóc	0	302	
 [§Şnh thêi] S©m Hoang HuyÒn ThiÕt T­¬ng Ngäc Béi	0	303	
-[§Şnh thêi] S©m Hoang Tinh V©n Phi L?	0	304	
-[§Şnh thêi] §Şa Ph¸ch Ng? Hµnh Liªn Hoµn Qu¸n	0	305	
+[§Şnh thêi] S©m Hoang Tinh V©n Phi L÷	0	304	
+[§Şnh thêi] §Şa Ph¸ch Ngò Hµnh Liªn Hoµn Qu¸n	0	305	
 [§Şnh thêi] §Şa Ph¸ch H¾c DiÖm Xung Thiªn Liªn	0	306	
 [§Şnh thêi] §Şa Ph¸ch TŞch LŞch L«i Háa Giíi	0	307	
 [§Şnh thêi] §Şa Ph¸ch KhÊu T©m Träc	0	308	
-[H¹n ch? thêi gian] §Şa Ph¸ch Phong Hµn Thóc Yªu	0	309	
-[H¹n ch? thêi gian] §ång Cõu Ng? Long Ngäc Béi	0	310	
+[H¹n chÕ thêi gian] §Şa Ph¸ch Phong Hµn Thóc Yªu	0	309	
+[H¹n chÕ thêi gian] §ång Cõu Ngù Long Ngäc Béi	0	310	
 [§Şnh thêi] §ång Cøu Gi¸ng Long C¸i Y	0	311	
 [§Şnh thêi] §ång Cõu TiÒm Long Yªu §¸i	0	312	
-[§Şnh thêi] §ång Cõu Kh¸ng Long H? Th?	0	313	
-[§Şnh thêi] §ång Cõu KiÕn Long Ban Ch?	0	314	
+[§Şnh thêi] §ång Cõu Kh¸ng Long Hé Thñ	0	313	
+[§Şnh thêi] §ång Cõu KiÕn Long Ban ChØ	0	314	
 [§Şnh thêi] §Şch Kh¸i Lôc Ngäc Tr­îng	0	315	
 [§Şnh thêi] §Şch Kh¸i Cöu §¸i C¸i Y	0	316	
 [§Şnh thêi] §Şch Kh¸i Phôc M·ng Yªu §¸i	0	317	
-[§Şnh thêi] §Şch Kh¸i CÈu Tİch B? H? UyÓn	0	318	
+[§Şnh thêi] §Şch Kh¸i CÈu Tİch B× Hé UyÓn	0	318	
 [§Şnh thêi] §Şch Kh¸i Th¶o Gian Th¹ch Giíi	0	319	
-[§Şnh thêi] Ma S¸t Qu? Cèc U Minh Th­¬ng	0	320	
+[§Şnh thêi] Ma S¸t Quû Cèc U Minh Th­¬ng	0	320	
 [§Şnh thêi] Ma S¸t Tµn D­¬ng ¸nh HuyÕt Gi¸p	0	321	
-[§Şnh thêi] Ma S¸t Xİch K? Táa Yªu KhÊu	0	322	
-[§Şnh thêi] Ma S¸t C? Háa Liªu Thiªn UyÓn	0	323	
-[§Şnh thêi] Ma S¸t V©n Long Th? Ch©u Giíi	0	324	
+[§Şnh thêi] Ma S¸t Xİch Kı Táa Yªu KhÊu	0	322	
+[§Şnh thêi] Ma S¸t Cö Háa Liªu Thiªn UyÓn	0	323	
+[§Şnh thêi] Ma S¸t V©n Long Thæ Ch©u Giíi	0	324	
 [§Şnh thêi] Ma Hoµng Kim Gi¸p Kh«i	0	325	
-[§Şnh thêi] Ma Hoµng ¸n XuÊt H? H¹ng Khuyªn	0	326	
-[§Şnh thêi] Ma Hoµng Kh? Cèc Thóc Yªu §¸i	0	327	
-[§Şnh thêi] Ma Hoµng HuyÕt Y Th? Träc	0	328	
+[§Şnh thêi] Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn	0	326	
+[§Şnh thêi] Ma Hoµng Khª Cèc Thóc Yªu §¸i	0	327	
+[§Şnh thêi] Ma Hoµng HuyÕt Y Thó Träc	0	328	
 [§Şnh thêi] Ma Hoµng §¨ng §¹p Ngoa	0	329	
-[§Şnh thêi] Ma Th? LiÖt Háa Qu¸n MiÖn	0	330	
-[§Şnh thêi] Ma Th? LŞch Ma Ph? T©m Liªn	0	331	
-[§Şnh thêi] Ma Th? NghiÖp Háa U Minh Giíi	0	332	
-[§Şnh thêi] Ma Th? HuyÕt Ngäc ThÊt S¸t Béi	0	333	
-[§Şnh thêi] Ma Hoµng S¬n H¶i Phi Hång L?	0	334	
+[§Şnh thêi] Ma ThŞ LiÖt Háa Qu¸n MiÖn	0	330	
+[§Şnh thêi] Ma ThŞ LŞch Ma PhÖ T©m Liªn	0	331	
+[§Şnh thêi] Ma ThŞ NghiÖp Háa U Minh Giíi	0	332	
+[§Şnh thêi] Ma ThŞ HuyÕt Ngäc ThÊt S¸t Béi	0	333	
+[§Şnh thêi] Ma Hoµng S¬n H¶i Phi Hång L÷	0	334	
 [§Şnh thêi] L¨ng Nh¹c Th¸i Cùc KiÕm	0	335	
-[§Şnh thêi] L¨ng Nh¹c V? Ng? §¹o Bµo	0	336	
-L¨ng Nh¹c N? L«i Giíi (k? h¹n)	0	337	
-[§Şnh thêi] L¨ng Nh¹c V? Cùc HuyÒn Ngäc Béi	0	338	
+[§Şnh thêi] L¨ng Nh¹c V« Ng· §¹o Bµo	0	336	
+L¨ng Nh¹c Né L«i Giíi (kú h¹n)	0	337	
+[§Şnh thêi] L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi	0	338	
 [§Şnh thêi] L¨ng Nh¹c Thiªn §Şa HuyÒn Hoµng Giíi	0	339	
-[§Şnh thêi] CËp Phong Ch©n V? KiÕm	0	340	
-[§Şnh thêi] CËp Phong Tam Thanh Ph?	0	341	
+[§Şnh thêi] CËp Phong Ch©n Vâ KiÕm	0	340	
+[§Şnh thêi] CËp Phong Tam Thanh Phï	0	341	
 [§Şnh thêi] CËp Phong HuyÒn Ty Tam §o¹n CÈm	0	342	
 [§Şnh thêi] CËp Phong Thóy Ngäc HuyÒn Hoµng Béi	0	343	
 [§Şnh thêi] CËp Phong Thanh Tïng Ph¸p Giíi	0	344	
 [§Şnh thêi] S¬n Tinh Thiªn Niªn Hµn ThiÕt	0	345	
 [§Şnh thêi] S­¬ng Tinh Ng¹o S­¬ng §¹o Bµo	0	346	
-[§Şnh thêi] S­¬ng Tinh Thanh Phong L? §¸i	0	347	
-[§Şnh thêi] S­¬ng Tinh Thiªn Thanh B¨ng Tinh Th?	0	348	
-[§Şnh thêi] S­¬ng Tinh Phong B¹o Ch? Hoµn	0	349	
+[§Şnh thêi] S­¬ng Tinh Thanh Phong L÷ §¸i	0	347	
+[§Şnh thêi] S­¬ng Tinh Thiªn Thanh B¨ng Tinh Thñ	0	348	
+[§Şnh thêi] S­¬ng Tinh Phong B¹o ChØ Hoµn	0	349	
 [§Şnh thêi] L«i Khung Hµn Tïng B¨ng B¸ch Qu¸n	0	350	
-[§Şnh thêi] L«i Khung Thiªn §Şa H? Ph?	0	351	
+[§Şnh thêi] L«i Khung Thiªn §Şa Hé Phï	0	351	
 [§Şnh thêi] L«i Khung Phong TuyÕt Thanh CÈm §¸i	0	352	
 [§Şnh thêi] L«i Khung Linh Ngäc UÈn L«i	0	353	
 [§Şnh thêi] L«i Khung Cöu Thiªn DÉn L«i Giíi	0	354	
-[§Şnh thêi] V? Ho¸n B¾c Minh §¹o Qu¸n	0	355	
-[§Şnh thêi] V? Hoan Ki Ban Ph? Ch?	0	356	
-[§Şnh thêi] V? Hoan Thóc T©m Ch? Hoµn	0	357	
-[§Şnh thêi] V? Hoan Thanh ¶nh HuyÒn Ngäc Béi	0	358	
-[§Şnh thêi] V? Hoan Tïng Phong TuyÕt ¶nh Ngoa	0	359	
+[§Şnh thêi] Vô Ho¸n B¾c Minh §¹o Qu¸n	0	355	
+[§Şnh thêi] Vô Hoan Ki Ban Phï Chó	0	356	
+[§Şnh thêi] Vô Hoan Thóc T©m ChØ Hoµn	0	357	
+[§Şnh thêi] Vô Hoan Thanh ¶nh HuyÒn Ngäc Béi	0	358	
+[§Şnh thêi] Vô Hoan Tïng Phong TuyÕt ¶nh Ngoa	0	359	
 [§Şnh thêi] §éng S¸t B¹ch Kim §iªu Long Giíi	0	360	
 [§Şnh thêi] §éng S¸t B¹ch Ngäc Cµn Kh«n Béi	0	361	
-[§Şnh thêi] §éng S¸t B¹ch Kim T? Phông Giíi	0	362	
-[§Şnh thêi] §éng S¸t Ph? Thóy Ngäc H¹ng Khuyªn	0	363	
-[§Şnh thêi] §¹i M? H? Trİch Tinh Hoµn	0	364	
-[§Şnh thêi] §¹i M? H? §­êng Ngh? Gi¸p	0	365	
-[§Şnh thêi] §¹i M? H? Lôc Ph? Thóy H? Th©n Ph?	0	366	
-[§Şnh thêi] §¹i M? H? B¾c Kinh Chi Méng	0	367	
-[§Şnh thêi] §¹i M? H? B¹ch Kim Yªu §¸i	0	368	
-[§Şnh thêi] §¹i M? H? Thiªn Tµm H? UyÓn	0	369	
-[§Şnh thêi] §¹i M? H? Ng? S¾c Ngäc Béi	0	370	
-[§Şnh thêi] §¹i M? H? Thiªn Tµm Ngoa	0	371	
-[§Şnh thêi] §¹i M? H? Nh? §iÓn Chi Hån	0	372	
-[§Şnh thêi] §¹i M? H? B«n L«i Toµn Long Th­¬ng	0	373	
+[§Şnh thêi] §éng S¸t B¹ch Kim Tó Phông Giíi	0	362	
+[§Şnh thêi] §éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn	0	363	
+[§Şnh thêi] §¹i M· Hæ Trİch Tinh Hoµn	0	364	
+[§Şnh thêi] §¹i M· Hæ §­êng Nghª Gi¸p	0	365	
+[§Şnh thêi] §¹i M· Hæ Lôc PhØ Thóy Hé Th©n Phï	0	366	
+[§Şnh thêi] §¹i M· Hæ B¾c Kinh Chi Méng	0	367	
+[§Şnh thêi] §¹i M· Hæ B¹ch Kim Yªu §¸i	0	368	
+[§Şnh thêi] §¹i M· Hæ Thiªn Tµm Hé UyÓn	0	369	
+[§Şnh thêi] §¹i M· Hæ Ngò S¾c Ngäc Béi	0	370	
+[§Şnh thêi] §¹i M· Hæ Thiªn Tµm Ngoa	0	371	
+[§Şnh thêi] §¹i M· Hæ Nh· §iÓn Chi Hån	0	372	
+[§Şnh thêi] §¹i M· Hæ B«n L«i Toµn Long Th­¬ng	0	373	
 [§Şnh thêi] Hång ¶nh TrÇm Viªn V·n Tóy	0	374	
 [§Şnh thêi] Hång ¶nh KiÕm Qua T©y Ph­¬ng	0	375	
 [§Şnh thêi] Hång ¶nh Môc Tóc T­¬ng Vong	0	376	
-[§Şnh thêi] Hång ¶nh Hång T? Chiªu	0	377	
-[§Şnh thêi] Th? Tóc Kim Giíi	0	378	
-[§Şnh thêi] Th? Tóc Ng©n Giíi	0	379	
+[§Şnh thêi] Hång ¶nh Hång Tô Chiªu	0	377	
+[§Şnh thêi] ThÕ Tóc Kim Giíi	0	378	
+[§Şnh thêi] ThÕ Tóc Ng©n Giíi	0	379	
 [§Şnh thêi] §Şnh Quèc Thanh Sa Tr­êng Sam	0	380	
 [§Şnh thêi] §Şnh Quèc Thanh Sa Ph¸t Qu¸n	0	381	
 [§Şnh thêi] §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	0	382	
-[§Şnh thêi] §Şnh Quèc T? §»ng H? UyÓn	0	383	
+[§Şnh thêi] §Şnh Quèc Tö §»ng Hé UyÓn	0	383	
 [§Şnh thêi] §Şnh Quèc Ng©n Tµm Yªu §¸i	0	384	
 [§Şnh thêi] An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	385	
-[§Şnh thêi] An Bang Cóc Hoa Th¹ch Ch? Hoµn	0	386	
+[§Şnh thêi] An Bang Cóc Hoa Th¹ch ChØ Hoµn	0	386	
 [§Şnh thêi] An Bang §iÒn Hoµng Th¹ch Ngäc Béi	0	387	
-[§Şnh thêi] An Bang K? HuyÕt Th¹ch Giíi Ch?	0	388	
+[§Şnh thêi] An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	388	
 [Liªn ®Êu] §Şnh Quèc Thanh sa Tr­êng sam	0	389	
-[Liªn ®Êu] §Şnh Quèc ? Sa Ph¸t Qu¸n	0	390	
+[Liªn ®Êu] §Şnh Quèc ¤ Sa Ph¸t Qu¸n	0	390	
 [Liªn ®Êu] §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	0	391	
-[Liªn ®Êu] §Şnh Quèc T? §»ng H? UyÓn	0	392	
+[Liªn ®Êu] §Şnh Quèc Tö §»ng Hé UyÓn	0	392	
 [Liªn ®Êu] §Şnh Quèc Ng©n Tµm Yªu §¸i	0	393	
 [Liªn ®Êu] An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	394	
-[Liªn ®Êu] An Bang Cóc hoa Th¹ch ch? hoµn	0	395	
+[Liªn ®Êu] An Bang Cóc hoa Th¹ch chØ hoµn	0	395	
 [Liªn ®Êu] An Bang §iÒn Hoµng th¹ch ngäc béi	0	396	
-[Liªn ®Êu] An Bang K? HuyÕt Th¹ch Giíi Ch?	0	397	
+[Liªn ®Êu] An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	397	
 §Şnh Quèc Thanh sa Tr­êng sam	0	398	
-§Şnh Quèc ? Sa Ph¸t Qu¸n	0	399	
+§Şnh Quèc ¤ Sa Ph¸t Qu¸n	0	399	
 §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	0	400	
-§Şnh Quèc T? §»ng H? UyÓn	0	401	
+§Şnh Quèc Tö §»ng Hé UyÓn	0	401	
 §Şnh Quèc Ng©n Tµm Yªu §¸i	0	402	
 [Cùc phÈm] §Şnh Quèc Thanh Sa Tr­êng Sam	0	403	
 [Cùc phÈm] §Şnh Quèc Thanh Sa Ph¸t Qu¸n	0	404	
 [Cùc phÈm] §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	0	405	
-[Cùc phÈm] §Şnh Quèc T? §»ng H? UyÓn	0	406	
+[Cùc phÈm] §Şnh Quèc Tö §»ng Hé UyÓn	0	406	
 [Cùc phÈm] §Şnh Quèc Ng©n Tµm Yªu §¸i	0	407	
 [Cùc phÈm] An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	408	
-[Cùc phÈm] An Bang Cóc Hoa Th¹ch Ch? Hoµn	0	409	
+[Cùc phÈm] An Bang Cóc Hoa Th¹ch ChØ Hoµn	0	409	
 [Cùc phÈm] An Bang §iÒn Hoµng Th¹ch Ngäc Béi	0	410	
-[Cùc phÈm] An Bang K? HuyÕt Th¹ch Giíi Ch?	0	411	
+[Cùc phÈm] An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	411	
 [Cùc phÈm] HiÖn Cèt ThiÕt HuyÕt Sam	0	412	
 [Cùc phÈm] HiÖn Cèt §a T×nh Hoµn	0	413	
 [Cùc phÈm] HiÖn Cèt §an T©m Giíi	0	414	
-[Cùc phÈm] HiÖn Cèt T×nh ? KÕt	0	415	
-[Cùc phÈm] Nhu T×nh C©n Quèc Ngh? Th­êng	0	416	
-[Cùc phÈm] Nhu T×nh Thôc N? H¹ng Liªn	0	417	
-[Cùc phÈm] Nhu T×nh Phông Nghi Giíi Ch?	0	418	
-[Cùc phÈm] Nhu T×nh Tu? T©m Ngäc Béi	0	419	
+[Cùc phÈm] HiÖn Cèt T×nh ı KÕt	0	415	
+[Cùc phÈm] Nhu T×nh C©n Quèc Nghª Th­êng	0	416	
+[Cùc phÈm] Nhu T×nh Thôc N÷ H¹ng Liªn	0	417	
+[Cùc phÈm] Nhu T×nh Phông Nghi Giíi ChØ	0	418	
+[Cùc phÈm] Nhu T×nh TuÖ T©m Ngäc Béi	0	419	
 [Tinh ChÕ] §éng S¸t B¹ch Kim §iªu Long Giíi	0	420	
 [Tinh ChÕ] §éng S¸t B¹ch Ngäc Cµn Kh«n Béi	0	421	
-[Tinh ChÕ] §éng S¸t B¹ch Kim T? Phông Giíi	0	422	
-[Tinh ChÕ] §éng S¸t Ph? Thóy Ngäc H¹ng Khuyªn	0	423	
+[Tinh ChÕ] §éng S¸t B¹ch Kim Tó Phông Giíi	0	422	
+[Tinh ChÕ] §éng S¸t PhØ Thóy Ngäc H¹ng Khuyªn	0	423	
 [Hoµn Mü] Cùc PhÈm An Bang B¨ng Tinh Th¹ch H¹ng Liªn	0	424	
-[Hoµn Mü] Cùc PhÈm An Bang Cóc Hoa Th¹ch Ch? Hoµn	0	425	
+[Hoµn Mü] Cùc PhÈm An Bang Cóc Hoa Th¹ch ChØ Hoµn	0	425	
 [Hoµn Mü] Cùc PhÈm An Bang §iÒn Hoµng Th¹ch Ngäc Béi	0	426	
-[Hoµn Mü] Cùc PhÈm An Bang K? HuyÕt Th¹ch Giíi Ch?	0	427	
-Cµn Kh«n Giíi Ch?	0	428	
-[§Şnh thêi] Th? Tóc Toµn Giíi	0	429	
+[Hoµn Mü] Cùc PhÈm An Bang Kª HuyÕt Th¹ch Giíi ChØ	0	427	
+Cµn Kh«n Giíi ChØ	0	428	
+[§Şnh thêi] ThÕ Tóc Toµn Giíi	0	429	
 [Pháng chÕ] Hång ¶nh TrÇm Viªn V·n Tóy	0	430	
 [Pháng chÕ] Hång ¶nh KiÕm Qua T©y Ph­¬ng	0	431	
 [Pháng chÕ] Hång ¶nh Môc Tóc T­¬ng Vong	0	432	
-[Pháng chÕ] Hång ¶nh Hång T? Chiªu	0	433	
+[Pháng chÕ] Hång ¶nh Hång Tô Chiªu	0	433	
 [Hoµn Mü] Hång ¶nh TrÇm Viªn V·n Tóy	0	434	
 [Hoµn Mü] Hång ¶nh KiÕm Qua T©y Ph­¬ng	0	435	
 [Hoµn Mü] Hång ¶nh Môc Tóc T­¬ng Vong	0	436	
-[Hoµn Mü] Hång ¶nh Hång T? Chiªu	0	437	
-ChÊp T? Chi Th?	0	438	
-D? T? Giai L·o	0	439	
+[Hoµn Mü] Hång ¶nh Hång Tô Chiªu	0	437	
+ChÊp Tö Chi Thñ	0	438	
+D÷ Tö Giai L·o	0	439	
 Minh NguyÖt KÕt	0	440	
 ThiÒn Quyªn Liªn	0	441	
-To¹i Nh©n Xİch HuyÕt Nguyªn V? Gi¸p	0	442	2000000000
+To¹i Nh©n Xİch HuyÕt Nguyªn Vò Gi¸p	0	442	2000000000
 To¹i Nh©n B¸ch LuyÖn Kh«i	0	443	1800000000
 To¹i Nh©n ThÊt L­u Quang Yªu KhÊu	0	444	
 To¹i Nh©n Trôc Thiªn Ngoa	0	445	1500000000
-To¸i Nh©n Kim L? NhuyÔn Vi H? UyÓn	0	446	1500000000
+To¸i Nh©n Kim Lò NhuyÔn Vi Hé UyÓn	0	446	1500000000
 To¸i Nh©n §o¹n Th­¬ng	0	447	
-To¸i Nh©n V? L©m Linh	0	448	2200000000
-To¹i Nh©n B¸t Nh? Ngäc Ban Ch?	0	449	
-To¹i Nh©n Thiªn PhËt Ngäc Ban Ch?	0	450	
+To¸i Nh©n Vò L©m Linh	0	448	2200000000
+To¹i Nh©n B¸t Nh· Ngäc Ban ChØ	0	449	
+To¹i Nh©n Thiªn PhËt Ngäc Ban ChØ	0	450	
 To¹i Nh©n HuyÒn Kim L­u Ly Béi	0	451	
-Phôc Hi Hçn §én Ng? Linh Y	0	452	
-Phôc Hi Th? H? M¹o	0	453	
+Phôc Hi Hçn §én Ngù Linh Y	0	452	
+Phôc Hi Thª Hµ M¹o	0	453	
 Phôc Hi Ph­¬ng Phi Ngäc Lung Yªu Hoµn	0	454	
 Phôc Hi Hoan ¶nh KŞch	0	455	1500000000
-Phôc Hi V? L­îng TŞch T? Th?	0	456	1500000000
+Phôc Hi V« L­îng TŞch Tµ Thñ	0	456	1500000000
 Phôc Hi To¸i T©m	0	457	1200000000
 Phôc Hi Khóc Du Xu©n	0	458	1800000000
-Phôc Hi B¸i Tinh Giíi Ch?	0	459	
-Phôc Hi Lo¹i NguyÖt Giíi Ch?	0	460	
-Phôc Hi H? Ph¸ch H? Ph?	0	461	
-N? Oa Bİch TŞch NhuyÔn H? CÇu	0	462	
-N? Oa Hång Nhan Ph¸t §¸i	0	463	1500000000
-N? Oa Lôc Ngh? Ngh? Th­êng Thóc §¸i	0	464	1500000000
-N? Oa §¹p L·ng L?	0	465	
-N? Oa B? §Ò TŞnh TÈm CÈm UyÓn	0	466	
-N? Oa Hµn T­¬ng	0	467	2000000000
-N? Oa NiÖm N? KiÒu	0	468	1800000000
-N? Oa DËt Th¸i Ch? Hoµn	0	469	
-N? Oa Tiªu T­¬ng Ch? Hoµn	0	470	
-N? Oa ¸m H­¬ng Thu Thñy KÕt	0	471	
-Chóc Dung LiÖt DiÖm N? Phong Trang	0	472	1800000000
+Phôc Hi B¸i Tinh Giíi ChØ	0	459	
+Phôc Hi Lo¹i NguyÖt Giíi ChØ	0	460	
+Phôc Hi Hæ Ph¸ch Hé Phï	0	461	
+N÷ Oa Bİch TŞch NhuyÔn Hå CÇu	0	462	
+N÷ Oa Hång Nhan Ph¸t §¸i	0	463	1500000000
+N÷ Oa Lôc NghÖ Nghª Th­êng Thóc §¸i	0	464	1500000000
+N÷ Oa §¹p L·ng L÷	0	465	
+N÷ Oa Bå §Ò TŞnh TÈm CÈm UyÓn	0	466	
+N÷ Oa Hµn T­¬ng	0	467	2000000000
+N÷ Oa NiÖm N« KiÒu	0	468	1800000000
+N÷ Oa DËt Th¸i ChØ Hoµn	0	469	
+N÷ Oa Tiªu T­¬ng ChØ Hoµn	0	470	
+N÷ Oa ¸m H­¬ng Thu Thñy KÕt	0	471	
+Chóc Dung LiÖt DiÖm Né Phong Trang	0	472	1800000000
 Chóc Dung PhÇn D­¬ng Qu¸n	0	473	
 Chóc Dung Thiªn Viªm L­u Yªn CÈm §¸i	0	474	
 Chóc Dung TuyÖt TrÇn Ngoa	0	475	
 Chóc Dung Kinh Chİch BÊt DiÖt Tr¶o	0	476	1500000000
-Chóc Dung Ph? NhËt	0	477	1500000000
+Chóc Dung Ph¸ NhËt	0	477	1500000000
 Chóc Dung Tóy Th¸i B×nh	0	478	1800000000
-Chóc Dung B¸ch LiÖt Ban Ch?	0	479	
-Chóc Dung Thiªn §oµn Ban Ch?	0	480	
-Chóc Dung Tam Tiªn TrÊn T©y Ph?	0	481	
+Chóc Dung B¸ch LiÖt Ban ChØ	0	479	
+Chóc Dung Thiªn §oµn Ban ChØ	0	480	
+Chóc Dung Tam Tiªn TrÊn T©y Phï	0	481	
 ThÇn N«ng Tiªu D­¬ng §Şa Hoµng Y	0	482	2000000000
-ThÇn N«ng N? L«i §Çu Hoµn	0	483	1500000000
+ThÇn N«ng Né L«i §Çu Hoµn	0	483	1500000000
 ThÇn N«ng MÆc L©n TriÒn Yªu	0	484	
-ThÇn N«ng Ng? Phong L?	0	485	1800000000
+ThÇn N«ng Ngù Phong L÷	0	485	1800000000
 ThÇn N«ng Th­¬ng M·ng Cæn Long UyÓn	0	486	
 ThÇn N«ng Tr¶m Nh¹c	0	487	1200000000
 ThÇn N«ng Thiªn TŞnh Sa	0	488	2200000000
 ThÇn N«ng NhiÕp Hån C¸t T­êng Giíi	0	489	
-ThÇn N«ng C©u Ph¸ch Nh? ? Giíi	0	490	
+ThÇn N«ng C©u Ph¸ch Nh­ ı Giíi	0	490	
 ThÇn N«ng ¢m D­¬ng S¸t T©m KÕt	0	491	

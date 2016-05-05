@@ -1,42 +1,42 @@
-TaskName	AwardType	AwardText	Genre	Detail	Particular	Level	GoodsFive	Quality	RandomSeed	GoodsNum	MoneyNum	ExpNum	ReputeNum	AwardTask	SelectEvent	ArrayID	ArrayRate	AilledAward
-ÈÎÎñÃû³Æ	½±ÀøÀàÐÍ	½±ÀøÎÄ×Ö	×ÜÀà	·ÖÀà	Ï¸Àà	µÈ¼¶	ÎåÐÐ	»Æ½ð×°±¸	Ëæ»úÖÖ×Ó	ÎïÆ·ÊýÁ¿	½ðÇ®	¾­Ñé	ÉùÍû	¿ªÊ¼ÈÎÎñÃû³Æ	ÔÚÊÂ¼þÀïËæ»úÑ¡Ôñ	Êý×éID	Êý×éÄÚ¸ÅÂÊ	½±ÀøË÷Òý
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	¾­Ñé	30Íò¾­Ñé										300000				1	15	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	¾­Ñé	50Íò¾­Ñé										500000				1	45	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	¾­Ñé	100Íò¾­Ñé										1000000				1	30	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	¾­Ñé	500Íò¾­Ñé										5000000				1	10	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	ÎïÆ·	ÉñÃØ´óºì°ü	6	1	402	1	0			1						2	5	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	ÎïÆ·	Ãµ¹å»¨Óê	6	0	20	1	0			1						2	70	
-Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	Ëæ»úÈÎÎñ¾íÖá	Ëæ»úÈÎÎñ¾íÖá														2	25	
+TaskName	AwardType	AwardText	Genre	Detail	Particular	Level	GoodsFive	Quality	GoodsNum	MoneyNum	ExpNum	ReputeNum	AwardTask	SelectEvent	ArrayID	ArrayRate	AilledAward
+Tªn nhiÖm vô 	Lo¹i h×nh phÇn th­ëng	tªn phÇn th­ëng	Tæng lo¹i	Ph©n lo¹i	Lo¹i nhá 	®¼ng cÊp	Ngò Hµnh	Trang bÞ Hoµng Kim	Sè l­îng vËt phÈm	TiÒn	kinh nghiÖm 	Danh väng	Tªn nhiÖm vô b¾t ®Çu	Chän ngÉu nhiªn trong sù kiÖn	ID ph©n bè 	tû lÖ ph©n bè 	hÖ thèng phÇn th­ëng
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	kinh nghiÖm 	30 v¹n kinh nghiÖm									300000				1	15	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	kinh nghiÖm 	50 v¹n kinh nghiÖm									500000				1	45	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	kinh nghiÖm 	100 v¹n kinh nghiÖm									1000000				1	30	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	kinh nghiÖm 	500 v¹n kinh nghiÖm									5000000				1	10	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	vËt phÈm 	ThÇn bÝ §¹i Hång Bao	6	1	402	1	0		1						2	5	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	vËt phÈm 	Mai Kh«i Hoa Vò 	6	0	20	1	0		1						2	70	
+NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	NgÉu nhiªn_MËt ®å nhiÖm vô 	NgÉu nhiªn_MËt ®å nhiÖm vô 													2	25	
 
-Ëæ»ú_É±¹Ö_Äª¸ß·ÉÉ³	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_Äª¸ßÄ®Ôô	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_Äª¸ßÉ³µÁ	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×±±µ¶Õ¶	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×±±Âä¹â	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×±±º®Ç¹	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×±±¶áÆÇ	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×ÄÏ²ùÎè	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×ÄÏ½µ´¸	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×ÄÏÀä¹­	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_³¤°×ÄÏËªµ¶	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
+NgÉu nhiªn_S¸t qu¸i_Phi Sa	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_M¹c TÆc	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_Sa §¹o	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_§ao Tr¶m (Tr­êng B¹ch b¾c) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ L¹c Quang (Tr­êng B¹ch b¾c) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ Hµn Th­¬ng (Tr­êng B¹ch b¾c) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_§o¹t Ph¸ch (Tr­êng B¹ch b¾c) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ S¶n Vò 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ Gi¸ng Chïy 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ L·nh §ao 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ S­¬ng §ao 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
 
-Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Óê	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Ñ×	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Óð	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®Èý¼²·ç	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®Èý¼²µç	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷ÔÆ	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷¹â	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷·ç	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_Ò©ÍõËÄ÷ÙØ°	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_Ò©ÍõËÄ´©É½	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_Ò©ÍõËÄµ¶¿Í	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´ºÚ½í	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´ÀÇ°ô	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´Ó°¹÷	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_¼ö¾Õ¶´µ¶¿Í	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_¼ö¾Õ¶´¶áÃüÁ­	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_¼ö¾Õ¶´»¨±ª×Ó	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ÐùÔ¯¶´´óÏó	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ÐùÔ¯¶´»ÆºÓÏó	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
-Ëæ»ú_É±¹Ö_ÐùÔ¯¶´ÑÛ¾µÉß	½±ÀøË÷Òý																	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯
+NgÉu nhiªn_S¸t qu¸i_ tÇng 3 Sa M¹c_ TËt Vò 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ tÇng 3 Sa M¹c_ TËt Viªm	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt Vò 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt Phong	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt §iÖn	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u V©n	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u Quang	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u Phong	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ KÕ Chñy	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ Xuyªn s¬n 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ §ao Kh¸ch	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_H¾c C©n (Kho¶ Lang ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ Lang Bæng (Kho¶ Lang ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_¶nh C«n (Kho¶ Lang ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_§ao Kh¸ch (TiÕn Cóc ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_§o¹t MÖnh Liªm (TiÕn Cóc ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_ B¸o §èm (TiÕn Cóc ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_Voi (C¸n Viªn ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_Voi Hoµng Hµ (C¸n Viªn ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch
+NgÉu nhiªn_S¸t qu¸i_Nh·n KÝnh Xµ (C¸n Viªn ®éng) 	hÖ thèng phÇn th­ëng																NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch

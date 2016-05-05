@@ -1,11 +1,11 @@
 TASK_ID_FIRST	TASK_ID_LAST	TASK_NAME	SYNC_FLAG	TASK_DESCRIBE
-¿ªÊ¼ID£¨IDÕ¼ÓÃ²»Á¬ÐøÇë¿ÕÐÐ£©	½áÊøID	ÈÎÎñÃû³Æ	0£º²»Í¬²½£¬1£ºÍ¬²½µ½¿Í»§¶Ë	ÈÎÎñÃèÊö
-1002		°ï»áÖÜÄ¿±ê½±Àø		
-1003		°ï»áÖÜÄ¿±ê¸ö½±Àø		
-1004		°ï»áÉÏÖÜ¸öÈËÄ¿±ê¹±Ï×¶È		
-1005		°ï»áÉÏÖÜ¸öÈË½±Àø		
-1006		°ï»áÉÏÖÜÄ¿±êÍê³ÉÇé¿ö	1	
-1007		°ï»á½¨ÉèµÈ¼¶ÉÏ´ÎÌáÉýÊ±¼ä(ÌìÊý)		
-1043	1044	·é»ðÓ¢ÐÛÁî»î¶¯		
+ID b¾t ®Çu?ID chiÕm dông kh«ng liªn tôc, h·y xãa tr¾ng dßng) 	ID kÕt thóc	Tªn nhiÖm vô 	0: kh«ng ®ång bé, 1: ®ång bé víi client	Miªu t¶ nhiÖm vô 
+1002		PhÇn th­ëng môc tiªu tuÇn		
+1003		PhÇn th­ëng c¸ nh©n môc tiªu tuÇn		
+1004		§iÓm cèng hiÕn môc tiªu c¸ nh©n tuÇn tr­íc		
+1005		PhÇn th­ëng c¸ nh©n tuÇn tr­íc		
+1006		Møc ®é hoµn thµnh môc tiªu tuÇn tr­íc	1	
+1007		Thêi gian th¨ng cÊp ®¼ng cÊp sö dông lÇn tr­íc (sè ngµy)		
+1043	1044	Ho¹t ®éng Phong Háa Anh Hïng LÖnh		
 1046		ÌÞ³ý°ï»á³ÉÔ±µÄ¼ÆÊý		
 1047		ÌÞ³ý°ï»á³ÉÔ±µÄ¼ÆÊýÈÕÆÚ		

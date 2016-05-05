@@ -792,7 +792,7 @@ passerby338	NormalNpc	spr\npcres\passerby\passerby338
 passerby339	NormalNpc	spr\npcres\passerby\passerby339																
 yanhua	NormalNpc	\spr\skill\²¹³ä																
 passerby_wulin	NormalNpc	spr\npcres\passerby\passerby_wulin																
-passerby_menzhu	NormalNpc	spr\npcres\passerby\passerby_wulin																
+passerby_mengzhu	NormalNpc	spr\npcres\passerby\passerby_wulin																
 passerby_jianfeng	NormalNpc	spr\npcres\passerby\passerby_jianfeng																
 passerby_yunxia	NormalNpc	spr\npcres\passerby\passerby_yunxia																
 passerby_qixiyanhuo	NormalNpc	spr\npcres\passerby\passerby_qixiyanhuo																
@@ -916,5 +916,7 @@ boss112	NormalNpc	spr\npcres\boss\boss112
 boss113	NormalNpc	spr\npcres\boss\boss113																
 boss116	NormalNpc	spr\npcres\boss\boss116																
 boss118	NormalNpc	spr\npcres\boss\boss118																
-passerby370	NormalNpc	spr\npcres\passerby\passerby370																
-passerby371	NormalNpc	spr\npcres\passerby\passerby371																
+boss135	NormalNpc	spr\npcres\boss\boss135																
+passerby377	NormalNpc	spr\npcres\passerby\passerby377																
+passerby380	NormalNpc	spr\npcres\passerby\passerby380																
+passerby381	NormalNpc	spr\npcres\passerby\passerby381																

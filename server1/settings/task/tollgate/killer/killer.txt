@@ -1,161 +1,161 @@
-Id	BossName	MapName	MapId	XPos	YPos	BossPath
-1	×¿ÀäÇÙ	·üÁ÷¶´	73	193	184	×¿ÀäÇÙÔÚ·üÁ÷¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½µ½´ï
-2	ÏôÌì°Á	·üÁ÷¶´	73	177	189	ÏôÌì°ÁÔÚ·üÁ÷¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½µ½´ï
-3	ÄÂÚ¤½Ü	·üÁ÷¶´	73	205	193	ÄÂÚ¤½ÜÔÚ·üÁ÷¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½µ½´ï
-4	±ÏÓÈ·Å	·üÁ÷¶´	73	217	190	±ÏÓÈ·ÅÔÚ·üÁ÷¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½µ½´ï
-5	Â½¾ÃÓÄ	½£¸óÖÐÔ­	43	200	189	Â½¾ÃÓÄÔÚ½£¸óÖÐÔ­£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷£¬Í¾¾¶ÌìÐÄ¶´ºóµ½´ï
-6	²½Ïù³¾	½£¸óÖÐÔ­	43	214	196	²½Ïù³¾ÔÚ½£¸óÖÐÔ­£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷£¬Í¾¾¶ÌìÐÄ¶´ºóµ½´ï
-7	¹È½£Çï	½£¸óÖÐÔ­	43	225	191	¹È½£ÇïÔÚ½£¸óÖÐÔ­£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷£¬Í¾¾¶ÌìÐÄ¶´ºóµ½´ï
-8	ÉÛ»ªÈÝ	½£¸óÖÐÔ­	43	223	171	ÉÛ»ªÈÝÔÚ½£¸óÖÐÔ­£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷£¬Í¾¾¶ÌìÐÄ¶´ºóµ½´ï
-9	¹Ø×ÓÄ®	°×Ë®¶´ÃÔ¹¬	71	210	196	¹Ø×ÓÄ®ÔÚ°×Ë®¶´ÖÐÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½ºóµ½´ï
-10	Åí´Ìº£	°×Ë®¶´ÃÔ¹¬	71	200	192	Åí´Ìº£ÔÚ°×Ë®¶´ÖÐÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½ºóµ½´ï
-11	±Ì¸¡Æ½	°×Ë®¶´ÃÔ¹¬	71	197	199	±Ì¸¡Æ½ÔÚ°×Ë®¶´ÖÐÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½ºóµ½´ï
-12	ÕÉÀäÉ½	°×Ë®¶´ÃÔ¹¬	71	199	205	ÕÉÀäÉ½ÔÚ°×Ë®¶´ÖÐÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÁêÉ½ºóµ½´ï
-13	Ïô½£Ñ©	»ðÀÇ¶´ÃÔ¹¬	83	189	192	Ïô½£Ñ©ÔÚ»ðÀÇ¶´ÃÔ¹¬£¬Ç°ÍùÎäµ±ÅÉµ½´ï
-14	¿ÂÉÙÒ¯	»ðÀÇ¶´ÃÔ¹¬	83	195	180	¿ÂÉÙÒ¯ÔÚ»ðÀÇ¶´ÃÔ¹¬£¬Ç°ÍùÎäµ±ÅÉµ½´ï
-15	ÕÆ°Ë·½	»ðÀÇ¶´ÃÔ¹¬	83	215	189	ÕÆ°Ë·½ÔÚ»ðÀÇ¶´ÃÔ¹¬£¬Ç°ÍùÎäµ±ÅÉµ½´ï
-16	ÃÎÒÒ·Ç	»ðÀÇ¶´ÃÔ¹¬	83	212	199	ÃÎÒÒ·ÇÔÚ»ðÀÇ¶´ÃÔ¹¬£¬Ç°ÍùÎäµ±ÅÉµ½´ï
-17	Ë¾Í½¾øØ°	ÃÍ»¢¶´	14	224	200	Ë¾Í½¾øØ°ÔÚÃÍ»¢¶´£¬Ç°Íù¶ëÃ¼ÅÉµ½´ï
-18	ÉÏ¹ÙÀË	ÃÍ»¢¶´	14	214	207	ÉÏ¹ÙÀËÔÚÃÍ»¢¶´£¬Ç°Íù¶ëÃ¼ÅÉµ½´ï
-19	ÑôÇåÒþ	ÃÍ»¢¶´	14	203	196	ÑôÇåÒþÔÚÃÍ»¢¶´£¬Ç°Íù¶ëÃ¼ÅÉµ½´ï
-20	ÎºÕ¼Éê	ÃÍ»¢¶´	14	213	200	ÎºÕ¼ÉêÔÚÃÍ»¢¶´£¬Ç°Íù¶ëÃ¼ÅÉµ½´ï
-21	Ò¦ÊØÇï	½ð¹â¶´ÃÔ¹¬	4	197	187	Ò¦ÊØÇïÔÚ½ð¹â¶´ÃÔ¹¬£¬ÓÉ·ïÏèÇ°Íù½£¸óÊñµÀÎ÷±±ºóµ½´ï
-22	ÙÜ°Ô¶«	½ð¹â¶´ÃÔ¹¬	4	219	203	ÙÜ°Ô¶«ÔÚ½ð¹â¶´ÃÔ¹¬£¬ÓÉ·ïÏèÇ°Íù½£¸óÊñµÀÎ÷±±ºóµ½´ï
-23	Á¼Ë¼ÄÏ	½ð¹â¶´ÃÔ¹¬	4	218	185	Á¼Ë¼ÄÏÔÚ½ð¹â¶´ÃÔ¹¬£¬ÓÉ·ïÏèÇ°Íù½£¸óÊñµÀÎ÷±±ºóµ½´ï
-24	×¿ÆßÀÉ	½ð¹â¶´ÃÔ¹¬	4	192	180	×¿ÆßÀÉÔÚ½ð¹â¶´ÃÔ¹¬£¬ÓÉ·ïÏèÇ°Íù½£¸óÊñµÀÎ÷±±ºóµ½´ï
-25	ÇÇ¶¦Ìì	°×ÔÆ¶´ÃÔ¹¬	22	215	199	ÇÇ¶¦Ìì°×ÔÆ¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-26	ÖÙÎÞ¼«	°×ÔÆ¶´ÃÔ¹¬	22	223	190	ÖÙÎÞ¼«°×ÔÆ¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-27	ÆúÇÙÊ¿	°×ÔÆ¶´ÃÔ¹¬	22	236	200	ÆúÇÙÊ¿°×ÔÆ¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-28	¶¡ÎÄêÅ	°×ÔÆ¶´ÃÔ¹¬	22	215	209	¶¡ÎÄêÅ°×ÔÆ¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-29	·âÎåÓ¡	Ñà×Ó¶´ÃÔ¹¬	77	171	219	·âÎåÓ¡ÔÚÑà×Ó¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-30	¿µ²»»Ú	Ñà×Ó¶´ÃÔ¹¬	77	180	209	¿µ²»»ÚÔÚÑà×Ó¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-31	·½ÒíÑ×	Ñà×Ó¶´ÃÔ¹¬	77	206	204	·½ÒíÑ×ÔÚÑà×Ó¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-32	ÄþÐÄ¿ñ	Ñà×Ó¶´ÃÔ¹¬	77	202	220	ÄþÐÄ¿ñÔÚÑà×Ó¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-33	¾£¸ºÉú	Ò©Íõ¶´Ò»²ã	141	196	204	¾£¸ºÉúÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-34	»ôÕò·É	Ò©Íõ¶´Ò»²ã	141	194	201	»ôÕò·ÉÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-35	¹ÜÎÞÑá	Ò©Íõ¶´Ò»²ã	141	207	204	¹ÜÎÞÑáÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-36	Ò¶ÓÀ¶÷	Ò©Íõ¶´Ò»²ã	141	204	199	Ò¶ÓÀ¶÷ÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-37	Å·Ö¾·å	ÎäÒÄÉ½	193	156	185	Å·Ö¾·åÔÚÎäÒÄÉ½£¬ÓÉÁúÈª´å»òÕßÎå¶¾½ÌÇ°Íù
-38	¶À¹ÂÏÀ	ÎäÒÄÉ½	193	114	166	¶À¹ÂÏÀÔÚÎäÒÄÉ½£¬ÓÉÁúÈª´å»òÕßÎå¶¾½ÌÇ°Íù
-39	Ïî¸¡ÑÂ	ÎäÒÄÉ½	193	120	169	Ïî¸¡ÑÂÔÚÎäÒÄÉ½£¬ÓÉÁúÈª´å»òÕßÎå¶¾½ÌÇ°Íù
-40	Äß´óÖÛ	ÎäÒÄÉ½	193	180	198	Äß´óÖÛÔÚÎäÒÄÉ½£¬ÓÉÁúÈª´å»òÕßÎå¶¾½ÌÇ°Íù
-41	ÓáÌ¾½­	¾­»Ê¶´ÃÔ¹¬	5	202	217	ÓáÌ¾½­ÔÚ¾­»Ê¶´ÃÔ¹¬£¬ÓÉ³É¶¼¸®Ç°Íù½£¸óÊñµÀÎ÷ÄÏºóµ½´ï
-42	ÏÄÐÛ·É	¾­»Ê¶´ÃÔ¹¬	5	180	211	ÏÄÐÛ·ÉÔÚ¾­»Ê¶´ÃÔ¹¬£¬ÓÉ³É¶¼¸®Ç°Íù½£¸óÊñµÀÎ÷ÄÏºóµ½´ï
-43	ËÎÎä·æ	¾­»Ê¶´ÃÔ¹¬	5	200	205	ËÎÎä·æÔÚ¾­»Ê¶´ÃÔ¹¬£¬ÓÉ³É¶¼¸®Ç°Íù½£¸óÊñµÀÎ÷ÄÏºóµ½´ï
-44	Â·ÉÐÈÊ	¾­»Ê¶´ÃÔ¹¬	5	219	226	Â·ÉÐÈÊÔÚ¾­»Ê¶´ÃÔ¹¬£¬ÓÉ³É¶¼¸®Ç°Íù½£¸óÊñµÀÎ÷ÄÏºóµ½´ï
-45	ÈÎ×Úºâ	·ïÑÛ¶´ÃÔ¹¬	168	220	201	ÈÎ×ÚºâÔÚ·ïÑÛ¶´ÃÔ¹¬£¬ÓÉ´óÀíÇ°Íùµã²ÔÉ½£¬Í¾¾¶ÁúÑÛ¶´ºóµ½´ï
-46	º«ÇäÁú	·ïÑÛ¶´ÃÔ¹¬	168	220	189	º«ÇäÁúÔÚ·ïÑÛ¶´ÃÔ¹¬£¬ÓÉ´óÀíÇ°Íùµã²ÔÉ½£¬Í¾¾¶ÁúÑÛ¶´ºóµ½´ï
-47	³ØÆ·Õæ	·ïÑÛ¶´ÃÔ¹¬	168	205	182	³ØÆ·ÕæÔÚ·ïÑÛ¶´ÃÔ¹¬£¬ÓÉ´óÀíÇ°Íùµã²ÔÉ½£¬Í¾¾¶ÁúÑÛ¶´ºóµ½´ï
-48	ÖÓÌúÍÈ	·ïÑÛ¶´ÃÔ¹¬	168	190	183	ÖÓÌúÍÈÔÚ·ïÑÛ¶´ÃÔ¹¬£¬ÓÉ´óÀíÇ°Íùµã²ÔÉ½£¬Í¾¾¶ÁúÑÛ¶´ºóµ½´ï
-49	µóÒ×µ¶	ÉñÏÉ¶´	23	212	198	µóÒ×µ¶ÔÚÉñÏÉ¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-50	Í¿²ÐÉú	ÉñÏÉ¶´	23	221	192	Í¿²ÐÉúÔÚÉñÏÉ¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-51	ÅÓÎÞ¾¸	ÉñÏÉ¶´	23	233	198	ÅÓÎÞ¾¸ÔÚÉñÏÉ¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-52	Àî»ª¶É	ÉñÏÉ¶´	23	221	207	Àî»ª¶ÉÔÚÉñÏÉ¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-53	ÆÝÓ°É³	¼¦¹Ú¶´	91	192	188	ÆÝÓ°É³ÔÚ¼¦¹Ú¶´£¬ÓÉÏåÑôÇ°Íù·üÅ£É½¶«ºóµ½´ï
-54	Î£ÈÊ×Ó	¼¦¹Ú¶´	91	191	174	Î£ÈÊ×ÓÔÚ¼¦¹Ú¶´£¬ÓÉÏåÑôÇ°Íù·üÅ£É½¶«ºóµ½´ï
-55	¹ËÔ¶Ïª	¼¦¹Ú¶´	91	211	185	¹ËÔ¶ÏªÔÚ¼¦¹Ú¶´£¬ÓÉÏåÑôÇ°Íù·üÅ£É½¶«ºóµ½´ï
-56	ê°Í¤¹È	¼¦¹Ú¶´	91	207	193	ê°Í¤¹ÈÔÚ¼¦¹Ú¶´£¬ÓÉÏåÑôÇ°Íù·üÅ£É½¶«ºóµ½´ï
-57	ÑÖ×ÔÓÓ	¼ûÐÔ·åÉ½¶´	135	217	185	ÑÖ×ÔÓÓÔÚ¼ûÐÔ·åÉ½¶´£¬Ç°ÍùÀ¥ÂØÅÉµ½´ï
-58	Ì·Ç§ÆÙ	¼ûÐÔ·åÉ½¶´	135	226	190	Ì·Ç§ÆÙÔÚ¼ûÐÔ·åÉ½¶´£¬Ç°ÍùÀ¥ÂØÅÉµ½´ï
-59	Ê¯¹ÊÇÅ	¼ûÐÔ·åÉ½¶´	135	201	193	Ê¯¹ÊÇÅÔÚ¼ûÐÔ·åÉ½¶´£¬Ç°ÍùÀ¥ÂØÅÉµ½´ï
-60	Ó¦²ÉÏÀ	¼ûÐÔ·åÉ½¶´	135	192	181	ÑÖ×ÔÓÓÔÚ¼ûÐÔ·åÉ½¶´£¬Ç°ÍùÀ¥ÂØÅÉµ½´ï
-61	ÃÏÌ¤ºç	ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬	12	224	198	ÃÏÌ¤ºçÔÚÐÅÏàËÂºóÔºµØµÀÃÔ¹¬£¬Ç°Íù³É¶¼µ½´ï
-62	ÒóÏ¢ºÞ	ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬	12	215	194	ÒóÏ¢ºÞÔÚÐÅÏàËÂºóÔºµØµÀÃÔ¹¬£¬Ç°Íù³É¶¼µ½´ï
-63	»ôÇàËª	ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬	12	212	200	»ôÇàËªÔÚÐÅÏàËÂºóÔºµØµÀÃÔ¹¬£¬Ç°Íù³É¶¼µ½´ï
-64	ÃàË¼µÀ	ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬	12	222	204	ÃàË¼µÀÔÚÐÅÏàËÂºóÔºµØµÀÃÔ¹¬£¬Ç°Íù³É¶¼µ½´ï
-65	Ð¦ÍûÊä	ÏìË®¶´	24	224	202	Ð¦ÍûÊäÔÚÏìË®¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-66	¸ßÄËÀ«	ÏìË®¶´	24	237	205	¸ßÄËÀ«ÔÚÏìË®¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-67	ÃÏ×ÓÓð	ÏìË®¶´	24	244	211	ÃÏ×ÓÓðÔÚÏìË®¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-68	ÌÆÒåÖ®	ÏìË®¶´	24	258	201	ÌÆÒåÖ®ÔÚÏìË®¶´£¬ÓÉ³É¶¼Ç°ÍùÇà³ÇÉ½ºóµ½´ï
-69	Â¦Î¤ÉÆ	ÌìÐÄ¶´ÃÔ¹¬	42	199	183	Â¦Î¤ÉÆÔÚÌìÐÄ¶´ÃÔ¹¬£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷ºóµ½´ï
-70	Â³ï£ï£	ÌìÐÄ¶´ÃÔ¹¬	42	190	197	Â³ï£ï£ÔÚÌìÐÄ¶´ÃÔ¹¬£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷ºóµ½´ï
-71	Ê·ÏôÉ½	ÌìÐÄ¶´ÃÔ¹¬	42	204	187	Ê·ÏôÉ½ÔÚÌìÐÄ¶´ÃÔ¹¬£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷ºóµ½´ï
-72	Î÷ÃÅÎÞ½ä	ÌìÐÄ¶´ÃÔ¹¬	42	213	194	Î÷ÃÅÎÞ½äÔÚÌìÐÄ¶´ÃÔ¹¬£¬ÓÉãê¾©Ç°Íù·üÅ£É½Î÷ºóµ½´ï
-73	½äÇéÖ¸	¶´Í¥ºþµ×É½¶´	66	215	202	½äÇéÖ¸ÔÚ¶´Í¥ºþµ×É½¶´£¬ÓÉÌìÍõ°ïµ½´ï
-74	À×»Ã¿Í	¶´Í¥ºþµ×É½¶´	66	212	207	À×»Ã¿ÍÔÚ¶´Í¥ºþµ×É½¶´£¬ÓÉÌìÍõ°ïµ½´ï
-75	Ò¶ÎåÁú	¶´Í¥ºþµ×É½¶´	66	229	202	Ò¶ÎåÁúÔÚ¶´Í¥ºþµ×É½¶´£¬ÓÉÌìÍõ°ïµ½´ï
-76	Ñ¦Ð¡°Ù	¶´Í¥ºþµ×É½¶´	66	207	199	Ñ¦Ð¡°ÙÔÚ¶´Í¥ºþµ×É½¶´£¬ÓÉÌìÍõ°ïµ½´ï
-77	ÎìÐçÈÖ	Óñ»ª¶´ÃÔ¹¬	194	215	210	ÎìÐçÈÖÔÚÓñ»ª¶´ÃÔ¹¬£¬ÓÉÎå¶¾½ÌÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-78	ÑîÑæ¾ý	Óñ»ª¶´ÃÔ¹¬	194	221	200	ÑîÑæ¾ýÔÚÓñ»ª¶´ÃÔ¹¬£¬ÓÉÎå¶¾½ÌÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-79	ÓáÏôÇ¿	Óñ»ª¶´ÃÔ¹¬	194	192	194	ÓáÏôÇ¿ÔÚÓñ»ª¶´ÃÔ¹¬£¬ÓÉÎå¶¾½ÌÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-80	¹ÁÓþÛÅ	Óñ»ª¶´ÃÔ¹¬	194	185	216	¹ÁÓþÛÅÔÚÓñ»ª¶´ÃÔ¹¬£¬ÓÉÎå¶¾½ÌÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-81	ÍôÊÅË®	Ç§Ñ°ËþÒ»²ã	164	223	195	ÍôÊÅË®ÔÚÇ§Ñ°ËþÒ»²ã£¬ÓÉ´óÀíµ½´ï
-82	ÑàÁ÷óÏ	Ç§Ñ°ËþÒ»²ã	164	222	183	ÑàÁ÷óÏÔÚÇ§Ñ°ËþÒ»²ã£¬ÓÉ´óÀíµ½´ï
-83	É£²×º£	Ç§Ñ°ËþÒ»²ã	164	215	192	É£²×º£ÔÚÇ§Ñ°ËþÒ»²ã£¬ÓÉ´óÀíµ½´ï
-84	ÆÑÊ®Èý	Ç§Ñ°ËþÒ»²ã	164	196	190	ÆÑÊ®ÈýÔÚÇ§Ñ°ËþÒ»²ã£¬ÓÉ´óÀíµ½´ï
-85	ºòÆò½£	ÏéÔÆ¶´¶þ²ã	117	208	188	ºòÆò½£ÔÚÏéÔÆ¶´ÃÔ¹¬£¬ÓÉØ¤°ïµ½´ï
-86	ºîÑà½ò	ÏéÔÆ¶´¶þ²ã	117	191	194	ºîÑà½òÔÚÏéÔÆ¶´ÃÔ¹¬£¬ÓÉØ¤°ïµ½´ï
-87	ÉÛÆßÉ²	ÏéÔÆ¶´¶þ²ã	117	207	196	ÉÛÆßÉ²ÔÚÏéÔÆ¶´ÃÔ¹¬£¬ÓÉØ¤°ïµ½´ï
-88	ÓÎÍòÀï	ÏéÔÆ¶´¶þ²ã	117	210	203	ÓÎÍòÀïÔÚÏéÔÆ¶´ÃÔ¹¬£¬ÓÉØ¤°ïµ½´ï
-89	³ðÒüÉ¼	ºâÉ½ÅÉ	56	183	215	³ðÒüÉ¼ÔÚºâÉ½ÅÉ£¬ÓÉ°ÍÁêÏØÇ°ÍùÄÏÔÀÕòºóµ½´ï
-90	ÉÏ¹ÙÛ¤	ºâÉ½ÅÉ	56	192	211	ÉÏ¹ÙÛ¤ÔÚºâÉ½ÅÉ£¬ÓÉ°ÍÁêÏØÇ°ÍùÄÏÔÀÕòºóµ½´ï
-91	ÈüÔ¶²´	ºâÉ½ÅÉ	56	188	202	ÈüÔ¶²´ÔÚºâÉ½ÅÉ£¬ÓÉ°ÍÁêÏØÇ°ÍùÄÏÔÀÕòºóµ½´ï
-92	½¯ÐþÔ¶	ºâÉ½ÅÉ	56	203	197	½¯ÐþÔ¶ÔÚºâÉ½ÅÉ£¬ÓÉ°ÍÁêÏØÇ°ÍùÄÏÔÀÕòºóµ½´ï
-93	ÇüÂ»ÈÙ	Ñ©±ª¶´ËÄ²ã	148	192	206	ÇüÂ»ÈÙÔÚÑ©±ª¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-94	Â¬¹á±±	Ñ©±ª¶´ËÄ²ã	148	195	205	Â¬¹á±±ÔÚÑ©±ª¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-95	½â¹éÄÏ	Ñ©±ª¶´ËÄ²ã	148	199	207	½â¹éÄÏÔÚÑ©±ª¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-96	´ÔÎÞÓ°	Ñ©±ª¶´ËÄ²ã	148	203	200	´ÔÎÞÓ°ÔÚÑ©±ª¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-97	ÙþÆàÇå	Ñò½Ç¶´ÃÔ¹¬	196	191	190	ÙþÆàÇåÔÚÑò½Ç¶´ÃÔ¹¬£¬ÓÉÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-98	°×²ÔÑÒ	Ñò½Ç¶´ÃÔ¹¬	196	206	184	°×²ÔÑÒÔÚÑò½Ç¶´ÃÔ¹¬£¬ÓÉÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-99	±åÁôÉÆ	Ñò½Ç¶´ÃÔ¹¬	196	221	199	±åÁôÉÆÔÚÑò½Ç¶´ÃÔ¹¬£¬ÓÉÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-100	²ÌÐÇ³½	Ñò½Ç¶´ÃÔ¹¬	196	207	209	²ÌÐÇ³½ÔÚÑò½Ç¶´ÃÔ¹¬£¬ÓÉÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-101	ÏîÁî±°	ÀÏ»¢¶´ÃÔ¹¬	123	200	200	ÏîÁî±°ÔÚÀÏ»¢¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°Íù»ÆºÓÔ´Í·ºóµ½´ï
-102	²ÜÈÊ¸¦	ÀÏ»¢¶´ÃÔ¹¬	123	213	203	²ÜÈÊ¸¦ÔÚÀÏ»¢¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°Íù»ÆºÓÔ´Í·ºóµ½´ï
-103	³Ì¸²²¨	ÀÏ»¢¶´ÃÔ¹¬	123	197	210	³Ì¸²²¨ÔÚÀÏ»¢¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°Íù»ÆºÓÔ´Í·ºóµ½´ï
-104	µË°²¿ü	ÀÏ»¢¶´ÃÔ¹¬	123	194	206	µË°²¿üÔÚÀÏ»¢¶´ÃÔ¹¬£¬ÓÉÁúÃÅÕòÇ°Íù»ÆºÓÔ´Í·ºóµ½´ï
-105	Ó¦Ð¥·ç	Áé¹È¶´ÃÔ¹¬	94	208	195	Ó¦Ð¥·çÔÚÁé¹È¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-106	·¶³¯Ëª	Áé¹È¶´ÃÔ¹¬	94	219	198	·¶³¯ËªÔÚÁé¹È¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-107	·ëË«Òí	Áé¹È¶´ÃÔ¹¬	94	198	203	·ëË«ÒíÔÚÁé¹È¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-108	¸µÇðÐÞ	Áé¹È¶´ÃÔ¹¬	94	201	190	¸µÇðÐÞÔÚÁé¹È¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-109	ÂæÁúÏÍ	ÁÙÓå¹Ø	319	207	206	ÂæÁúÏÍÔÚÁÙÓå¹Ø£¬ÓÉãê¾©µ½´ï
-110	¹ÅÇåÑï	ÁÙÓå¹Ø	319	232	204	¹ÅÇåÑïÔÚÁÙÓå¹Ø£¬ÓÉãê¾©µ½´ï
-111	¹ØÌìÎÊ	ÁÙÓå¹Ø	319	241	227	¹ØÌìÎÊÔÚÁÙÓå¹Ø£¬ÓÉãê¾©µ½´ï
-112	ºØÉÙÐÛ	ÁÙÓå¹Ø	319	226	213	ºØÉÙÐÛÔÚÁÙÓå¹Ø£¬ÓÉãê¾©µ½´ï
-113	ËÕ¹ÅÒ÷	´óÇõ¶´ÃÔ¹¬	72	203	195	ËÕ¹ÅÒ÷ÔÚ´óÇõ¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-114	ºúÒ»ÀÉ	´óÇõ¶´ÃÔ¹¬	72	225	200	ºúÒ»ÀÉÔÚ´óÇõ¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-115	»ÆÍò½Ù	´óÇõ¶´ÃÔ¹¬	72	198	202	»ÆÍò½ÙÔÚ´óÇõ¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-116	½­³ÁÑã	´óÇõ¶´ÃÔ¹¬	72	195	186	½­³ÁÑãÔÚ´óÇõ¶´£¬ÓÉ°ÍÁêÏØÇ°ÍùÎäÒÄÉ½ºóµ½´ï
-117	¹¢ÈÝ¸´	É½±¦¶´ÃÔ¹¬	76	206	196	¹¢ÈÝ¸´ÔÚÉ½±¦¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-118	½ª×ÔÒ£	É½±¦¶´ÃÔ¹¬	76	198	197	½ª×ÔÒ£ÔÚÉ½±¦¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-119	¿×Ó¹ÈË	É½±¦¶´ÃÔ¹¬	76	229	191	¿×Ó¹ÈËÔÚÉ½±¦¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-120	Áè¾¡ÖÒ	É½±¦¶´ÃÔ¹¬	76	201	189	Áè¾¡ÖÒÔÚÉ½±¦¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºóµ½´ï
-121	Ò¶ÒäÓ¢	±ùºÓ¶´ÃÔ¹¬	201	221	200	Ò¶ÒäÓ¢ÔÚ±ùºÓ¶´ÃÔ¹¬£¬ÓÉÓÀÀÖÕòµ½´ï
-122	Âæ¶û½ð	±ùºÓ¶´ÃÔ¹¬	201	206	199	Âæ¶û½ðÔÚ±ùºÓ¶´ÃÔ¹¬£¬ÓÉÓÀÀÖÕòµ½´ï
-123	ÄªÄÏÖñ	±ùºÓ¶´ÃÔ¹¬	201	212	207	ÄªÄÏÖñÔÚ±ùºÓ¶´ÃÔ¹¬£¬ÓÉÓÀÀÖÕòµ½´ï
-124	ÇØ×ÎÓÎ	±ùºÓ¶´ÃÔ¹¬	201	229	210	ÇØ×ÎÓÎÔÚ±ùºÓ¶´ÃÔ¹¬£¬ÓÉÓÀÀÖÕòµ½´ï
-125	¹¼ÎÞ³£	ÑãÊ¯¶´ÃÔ¹¬	10	218	187	¹¼ÎÞ³£ÔÚÑãÊ¯¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°Íù³¤½­Ô´Í·ºóµ½´ï
-126	ÁøËÄÒ¯	ÑãÊ¯¶´ÃÔ¹¬	10	231	201	ÁøËÄÒ¯ÔÚÑãÊ¯¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°Íù³¤½­Ô´Í·ºóµ½´ï
-127	Ê©´óÉÙ	ÑãÊ¯¶´ÃÔ¹¬	10	219	201	Ê©´óÉÙÔÚÑãÊ¯¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°Íù³¤½­Ô´Í·ºóµ½´ï
-128	ËïÎÄ±ë	ÑãÊ¯¶´ÃÔ¹¬	10	209	196	ËïÎÄ±ëÔÚÑãÊ¯¶´ÃÔ¹¬£¬ÓÉ³É¶¼Ç°Íù³¤½­Ô´Í·ºóµ½´ï
-129	Í¯²»¸´	Ü½ÈØ¶´ÃÔ¹¬	202	193	177	Í¯²»¸´ÔÚÜ½ÈØ¶´ÃÔ¹¬£¬ÓÉ½­½ò´åµ½´ï
-130	ÌÆ²©ÎÅ	Ü½ÈØ¶´ÃÔ¹¬	202	214	182	ÌÆ²©ÎÅÔÚÜ½ÈØ¶´ÃÔ¹¬£¬ÓÉ½­½ò´åµ½´ï
-131	ÌÕµºÖ÷	Ü½ÈØ¶´ÃÔ¹¬	202	201	196	ÌÕµºÖ÷ÔÚÜ½ÈØ¶´ÃÔ¹¬£¬ÓÉ½­½ò´åµ½´ï
-132	ÌïÎÞµÀ	Ü½ÈØ¶´ÃÔ¹¬	202	189	166	ÌïÎÞµÀÔÚÜ½ÈØ¶´ÃÔ¹¬£¬ÓÉ½­½ò´åµ½´ï
-133	Ô¬ÄîÏ¦	Á½Ë®¶´ÃÔ¹¬	181	199	194	Ô¬ÄîÏ¦ÔÚÁ½Ë®¶´ÃÔ¹¬£¬ÓÉÁÙ°²Ç°ÍùÂÞÏöÉ½ºó¡¢»òÕßÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-134	Ö£×¿Èº	Á½Ë®¶´ÃÔ¹¬	181	203	185	Ö£×¿ÈºÔÚÁ½Ë®¶´ÃÔ¹¬£¬ÓÉÁÙ°²Ç°ÍùÂÞÏöÉ½ºó¡¢»òÕßÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-135	ÕÂÔª³ç	Á½Ë®¶´ÃÔ¹¬	181	212	189	ÕÂÔª³çÔÚÁ½Ë®¶´ÃÔ¹¬£¬ÓÉÁÙ°²Ç°ÍùÂÞÏöÉ½ºó¡¢»òÕßÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-136	Ð»ÖÙºî	Á½Ë®¶´ÃÔ¹¬	181	211	201	Ð»ÖÙºîÔÚÁ½Ë®¶´ÃÔ¹¬£¬ÓÉÁÙ°²Ç°ÍùÂÞÏöÉ½ºó¡¢»òÕßÁúÈª´åÇ°ÍùÑãµ´É½ºóµ½´ï
-137	Î×¾ÅÍÀ	Ò©Íõ¶´Èý²ã	143	192	197	Î×¾ÅÍÀÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-138	Ô¬ÌìÊÙ	Ò©Íõ¶´Èý²ã	143	191	203	Ô¬ÌìÊÙÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-139	ÔÀÉÐÀ¥	Ò©Íõ¶´Èý²ã	143	205	195	ÔÀÉÐÀ¥ÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-140	Õ²¸²ÔÆ	Ò©Íõ¶´Èý²ã	143	204	203	Õ²¸²ÔÆÔÚÒ©Íõ¶´£¬ÓÉÁúÃÅÕòÇ°ÍùÒ©Íõ¹Èºóµ½´ï
-141	¼Ö½éÈÊ	¼ö¾Õ¶´ÃÔ¹¬	93	205	204	¼Ö½éÈÊÔÚ¼ö¾Õ¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-142	Ö£¾ÅÈÕ	¼ö¾Õ¶´ÃÔ¹¬	93	205	191	Ö£¾ÅÈÕÔÚ¼ö¾Õ¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-143	ÖÜ³þ²®	¼ö¾Õ¶´ÃÔ¹¬	93	217	200	ÖÜ³þ²®ÔÚ¼ö¾Õ¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-144	×¯ÃúÖÒ	¼ö¾Õ¶´ÃÔ¹¬	93	201	197	×¯ÃúÖÒÔÚ¼ö¾Õ¶´ÃÔ¹¬£¬ÓÉÑïÖÝÇ°ÍùÊñ¸ÚÉ½ºóµ½´ï
-145	¸ÊÕý¹Â	É³Ä®É½¶´	225	198	207	¸ÊÕý¹ÂÔÚÉ³Ä®É½¶´£¬ÓÉÀ¥ÂØÇ°Íù¿ì»îÁÖºó£¬µ½´ïÉ³Ä®µØ±í£¬É³Ä®É½¶´ÎªËæ»úÃÔ¹¬£¬Ðè×ÔÐÐÓÉÉ³Ä®µØ±íÇ°Íù
-146	ÎäÒ»ÊÀ	É³Ä®É½¶´	225	157	202	ÎäÒ»ÊÀÔÚÉ³Ä®É½¶´£¬ÓÉÀ¥ÂØÇ°Íù¿ì»îÁÖºó£¬µ½´ïÉ³Ä®µØ±í£¬É³Ä®É½¶´ÎªËæ»úÃÔ¹¬£¬Ðè×ÔÐÐÓÉÉ³Ä®µØ±íÇ°Íù
-147	Ñô·çÒÝ	É³Ä®É½¶´	225	181	211	Ñô·çÒÝÔÚÉ³Ä®É½¶´£¬ÓÉÀ¥ÂØÇ°Íù¿ì»îÁÖºó£¬µ½´ïÉ³Ä®µØ±í£¬É³Ä®É½¶´ÎªËæ»úÃÔ¹¬£¬Ðè×ÔÐÐÓÉÉ³Ä®µØ±íÇ°Íù
-148	ºÎÉúÍü	É³Ä®É½¶´	225	178	194	ºÎÉúÍüÔÚÉ³Ä®É½¶´£¬ÓÉÀ¥ÂØÇ°Íù¿ì»îÁÖºó£¬µ½´ïÉ³Ä®µØ±í£¬É³Ä®É½¶´ÎªËæ»úÃÔ¹¬£¬Ðè×ÔÐÐÓÉÉ³Ä®µØ±íÇ°Íù
-149	ÔøÖ¹Ô¹	ò¿ÓÈ¶´ÃÔ¹¬	75	213	199	ÔøÖ¹Ô¹ÔÚò¿ÓÈ¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºó£¬Í¾¾¶É½±¦¶´ºóµ½´ï
-150	ÎÀ±ß³Ç	ò¿ÓÈ¶´ÃÔ¹¬	75	219	195	ÎÀ±ß³ÇÔÚò¿ÓÈ¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºó£¬Í¾¾¶É½±¦¶´ºóµ½´ï
-151	¹ËÊØÌÚ	ò¿ÓÈ¶´ÃÔ¹¬	75	228	199	¹ËÊØÌÚÔÚò¿ÓÈ¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºó£¬Í¾¾¶É½±¦¶´ºóµ½´ï
-152	Öî¸ð¾ªºè	ò¿ÓÈ¶´ÃÔ¹¬	75	204	197	Öî¸ð¾ªºèÔÚò¿ÓÈ¶´ÃÔ¹¬£¬ÓÉ°ÍÁêÏØÇ°ÍùÃçÁëºó£¬Í¾¾¶É½±¦¶´ºóµ½´ï
-153	ÅË´õÑÕ	³¤°×É½ÄÏÂ´	321	156	187	ÅË´õÑÕÔÚ³¤°×É½ÄÏÂ´£¬ÓÉãê¾©Ç°ÍùÁÙÓå¹Øºó£¬Í¾¾¶³¤°×É½µ½´ï
-154	Á¬¾£Ì©	³¤°×É½ÄÏÂ´	321	185	171	Á¬¾£Ì©ÔÚ³¤°×É½ÄÏÂ´£¬ÓÉãê¾©Ç°ÍùÁÙÓå¹Øºó£¬Í¾¾¶³¤°×É½µ½´ï
-155	±«³¹É½	³¤°×É½ÄÏÂ´	321	161	163	±«³¹É½ÔÚ³¤°×É½ÄÏÂ´£¬ÓÉãê¾©Ç°ÍùÁÙÓå¹Øºó£¬Í¾¾¶³¤°×É½µ½´ï
-156	ÍòºûÐÇ	³¤°×É½ÄÏÂ´	321	139	160	ÍòºûÐÇÔÚ³¤°×É½ÄÏÂ´£¬ÓÉãê¾©Ç°ÍùÁÙÓå¹Øºó£¬Í¾¾¶³¤°×É½µ½´ï
-157	ñÒÌìÃõ	Äª¸ß¿ß	340	152	171	ñÒÌìÃõÔÚÄª¸ß¿ß£¬ÓÉÁúÃÅÕòµ½´ï
-158	¶ÎÁèÔÂ	Äª¸ß¿ß	340	215	172	¶ÎÁèÔÂÔÚÄª¸ß¿ß£¬ÓÉÁúÃÅÕòµ½´ï
-159	×óØýÃû	Äª¸ß¿ß	340	159	171	×óØýÃûÔÚÄª¸ß¿ß£¬ÓÉÁúÃÅÕòµ½´ï
-160	ÈÎ²Ôñ·	Äª¸ß¿ß	340	241	172	ÈÎ²Ôñ·ÔÚÄª¸ß¿ß£¬ÓÉÁúÃÅÕòµ½´ï
+Id	BossName	BossInfo
+1	Tr¸c L·nh CÇm	trong Phôc L­u ®éng (193,184) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+2	Tiªu Thiªn Ng¹o	trong Phôc L­u ®éng (177,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+3	Môc Minh KiÖt	trong Phôc L­u ®éng (205,193) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+4	TÊt V­u Phãng	trong Phôc L­u ®éng (217,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+5	Lôc Cöu U	trong KiÕm C¸c Trung Nguyªn (200,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+6	Bé Hiªu TrÇn	trong KiÕm C¸c Trung Nguyªn (214,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+7	Cèc KiÕm Thu	trong KiÕm C¸c Trung Nguyªn (225,191) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+8	ThiÖu Hoa Dung	trong KiÕm C¸c Trung Nguyªn (223,171) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+9	Quan Tö M¹c	Trong B¹ch Thñy ®éng (210,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+10	Bµnh ThÝch H¶i	trong B¹ch Thñy ®éng (200,192) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+11	BÝch Phï B×nh	trong B¹ch Thñy ®éng (197,199) .. Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+12	Tr­îng L·nh s¬n 	trong B¹ch Thñy ®éng ( (199,205) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+13	Tiªu KiÕm TuyÕt	trong Háa Lang ®éng (189,192) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+14	Kha ThiÕu Gia	trong Háa Lang ®éng (195,180) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+15	Ch­ëng B¸t Ph­¬ng	trong Háa Lang ®éng (215,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+16	Méng Êt  Phi	trong Háa Lang ®éng (212,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+17	T­ §å TuyÖt Chñy	trong M·nh Hæ ®éng (224,220) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+18	Th­îng Quan L·ng	trong M·nh Hæ ®éng (214,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+19	D­¬ng Thanh Èn	trong M·nh Hæ ®éng (203,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+20	Ngôy Chiªm Th©n	trong M·nh Hæ ®éng (213,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+21	§µo §o¹t Thu	trong Kim Quang ®éng (197,187) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+22	Xµ B¸ §«ng 	trong Kim Quang ®éng (219,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+23	L­¬ng T­ Nam 	trong Kim Quang ®éng (218,185) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+24	Tr¸c ThÊt Lang	trong Kim Quang ®éng (192,180) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+25	KiÒu §Ønh Thiªn	trong B¹ch V©n ®éng (215,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+26	Träng V« CÊp 	trong B¹ch V©n ®éng (223,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+27	KhÝ CÇm SÜ 	trong B¹ch V©n ®éng (236,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+28	§inh V¨n Dôc	trong B¹ch V©n ®éng (215,209) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+29	Phong Ngò Ên	trong YÕn Tö ®éng (171,219) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+30	Khang  BÊt Hèi	trong YÕn Tö ®éng (180,209) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+31	Ph­¬ng Dùc Viªm	trong YÕn Tö ®éng (206,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+32	Ninh T©m Cuång	trong YÕn Tö ®éng (202,220) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+33	H×nh Phô Sinh	trong tÇng 1 D­îc V­¬ng ®éng (196,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+34	Ho¾c TrÊn Phi	trong tÇng 1 D­îc V­¬ng ®éng (194,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+35	Qu¶n V« YÕm	trong tÇng 1 D­îc V­¬ng ®éng (207,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+36	DiÖp VÜnh ¢n	trong tÇng 1 D­îc V­¬ng ®éng (204,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+37	¢u chÝ Phong	trong Vò Di s¬n (156,185) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+38	§éc C« HiÖp 	trong Vò Di s¬n (114,166) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+39	H¹ng Phï Nhai	trong Vò Di s¬n (120,169) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+40	Nghª §¹i Chu	trong Vò Di s¬n (180,198) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+41	Du Th¸n Giang 	trong Kinh Hoµng ®éng (202,217) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+42	H¹ Hïng Phi	trong Kinh Hoµng ®éng (180,211) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+43	Tèng Vò Phong	trong Kinh Hoµng ®éng (200,205) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+44	Lé Th­îng Nh©n	trong Kinh Hoµng ®éng (219,226) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+45	NhËm T«ng Hoµnh	trong Phông Nh·n ®éng (220,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+46	Hµn Khanh Long	trong Phông Nh·n ®éng (220,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+47	Tr× PhÈm Ch©n	trong Phông Nh·n ®éng (205,182) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+48	Chung ThiÕt Thèi	trong Phông Nh·n ®éng (190,183) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+49	§iªu DÞch §ao	trong ThÇn Tiªn ®éng (212,198) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+50	§å Tµn Sinh	trong ThÇn Tiªn ®éng (221,192) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+51	Bµng V« TÜnh	trong ThÇn Tiªn ®éng (233,198) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+52	Lý Hoa §é	trong ThÇn Tiªn ®éng (221,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+53	ThÝch ¶nh Sa	trong Kª Qu¸n ®éng (192,188) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+54	Nguy Nh©n Tö 	trong Kª Qu¸n ®éng (191,174) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+55	Cè ViÔn Khª 	trong Kª Qu¸n ®éng (211,185) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+56	Tang Ninh Cèc	trong Kª Qu¸n ®éng (207,193) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+57	Diªm Tù H÷u	trong KiÕn TÝnh Phong s¬n  ®éng (217,185) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+58	§µm Thiªn Béc	trong KiÕn TÝnh Phong s¬n  ®éng (226,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+59	Th¹ch Cè KiÒu	trong KiÕn TÝnh Phong s¬n  ®éng (201,193) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+60	øng Th¸i HiÖp	trong KiÕn TÝnh Phong s¬n  ®éng (192,181) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+61	M¹nh §¹p Hång	trong MËt ®¹o TÝn T­íng tù (224,198) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+62	¢n  Tøc HËn	trong MËt ®¹o TÝn T­íng tù (215,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+63	Ho¾c Thanh S­¬ng	trong MËt ®¹o TÝn T­íng tù (212,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+64	Miªn T­ §¹o	trong MËt ®¹o TÝn T­íng tù (222,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+65	TiÕu Väng Du	trong H­ëng Thñy ®éng (224,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+66	Cao N·i Kho¸t	trong H­ëng Thñy ®éng (237,205) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+67	M¹nh Tö  Vò 	trong H­ëng Thñy ®éng (244,211) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+68	§­êng NghÜa Chi	trong H­ëng Thñy ®éng (258,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+69	L©u Vi ThiÖn	trong Thiªn T©m ®éng (199,183) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+70	Lç Tranh Tranh	trong Thiªn T©m ®éng (190,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+71	Sö Tiªu s¬n 	trong Thiªn T©m ®éng (204,187) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+72	T©y M«n V« Giíi	trong Thiªn T©m ®éng (213,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+73	Giíi T×nh ChØ 	trong s¬n  ®éng d­íi ®¸y §éng §×nh Hå (215,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+74	L«i HuyÔn Kh¸ch	trong s¬n  ®éng d­íi ®¸y §éng §×nh Hå (212,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+75	DiÖp Ngò Long	trong s¬n  ®éng d­íi ®¸y §éng §×nh Hå (229,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+76	TiÕt TiÓu B¸ch	trong s¬n  ®éng d­íi ®¸y §éng §×nh Hå (207,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+77	MËu TuÊt Nhung	trong Ngäc Hoa ®éng (215,210) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+78	D­¬ng DiÔm Qu©n	trong Ngäc Hoa ®éng (221,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+79	Du Tiªu C­êng	trong Ngäc Hoa ®éng (192,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+80	C« Dù  TÈu	trong Ngäc Hoa ®éng (185,216) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+81	U«ng  ThÖ Thñy	trong tÇng 1 Thiªn TÇm th¸p (223,195) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+82	YÕn L­u  Sanh	trong tÇng 1 Thiªn TÇm th¸p (222,183) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+83	Tang Th­¬ng H¶i	trong tÇng 1 Thiªn TÇm th¸p (215,192) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+84	Bå ThËp Tam 	trong tÇng 1 Thiªn TÇm th¸p (196,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+85	HËu  KhÊt KiÕm	trong tÇng  2 T­êng V©n ®éng (208,188) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+86	HËu YÕn T©n	trong tÇng  2 T­êng V©n ®éng (191,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+87	ThiÖu ThÊt S¸t	trong tÇng  2 T­êng V©n ®éng (207,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+88	Du V¹n Lý 	trong tÇng  2 T­êng V©n ®éng (210,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+89	Cõu DuÉn Sam	ë Hoµnh s¬n  ph¸i (183,215) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+90	Th­îng Quan ChÊt	ë Hoµnh s¬n  ph¸i (192,211) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+91	T¸i ViÔn B¹c	ë Hoµnh s¬n  ph¸i (188,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+92	T­ëng HuyÒn ViÔn	ë Hoµnh s¬n  ph¸i (203,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+93	KhuÊt Léc Vinh	trong tÇng 4 TuyÕt B¸o ®éng (192,206) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+94	L« Qu¸n B¾c 	trong tÇng 4 TuyÕt B¸o ®éng (195,205) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+95	Gi¶i Qui Nam 	trong tÇng 4 TuyÕt B¸o ®éng (195,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+96	Tïng V« ¶nh	trong tÇng 4 TuyÕt B¸o ®éng (203,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+97	TiÔn Thª Thanh 	trong D­¬ng Gi¸c ®éng (191,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+98	B¹ch Th­¬ng Nham	trong D­¬ng Gi¸c ®éng (206,184) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+99	BiÖn L­u ThiÖn	 trong D­¬ng Gi¸c ®éng (221,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+100	Th¸i Tinh ThÇn	trong D­¬ng Gi¸c ®éng (207,209) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+101	H¹ng LÖnh Ti	trong L·o Hæ ®éng (200,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+102	Tµo Nh©n  Phñ 	trong L·o Hæ ®éng (213,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+103	Tr×nh Phóc Ba	trong L·o Hæ ®éng (197,210) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+104	§Æng An Khuª 	trong L·o Hæ ®éng (194,206) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+105	øng  Tiªu Phong	trong Linh Cèc ®éng (208,195) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+106	Th­¬ng TriÒu S­¬ng	trong Linh Cèc ®éng (219,198) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+107	Phïng Song Dùc	trong Linh Cèc ®éng (198,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+108	Phã Kh©u Tu	trong Linh Cèc ®éng (201,190) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+109	L¹c Long HiÒn	trªn L©m Du Quan (207,206) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+110	Cæ Thanh D­¬ng	trªn L©m Du Quan (232,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+111	Quan Thiªn VÊn	trªn L©m Du Quan (241,227) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+112	H¹ ThiÕu Hïng	trªn L©m Du Quan (226,213) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+113	T« Cæ Ng©m	trong §¹i Tï ®éng (203,195) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+114	Hå NhÊt Lang	trong §¹i Tï ®éng (225,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+115	Hoµng V¹n KiÕp	trong §¹i Tï ®éng (198,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+116	Giang TrÇm Nh¹n 	trong §¹i Tï ®éng (195,186) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+117	C¶nh Dung Phôc	Trong S¬n B¶o ®éng (206,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+118	Kh­¬ng Tù Dao	trong S¬n B¶o ®éng (198,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+119	Khæng Dong Nh©n	trong S¬n B¶o ®éng (229,191) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+120	L¨ng TËn Trung	trong S¬n B¶o ®éng (201,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+121	DiÖp øc Anh	trong B¨ng Hµ ®éng (221,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+122	L¹c NhÜ Kim	trong B¨ng Hµ ®éng (206,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+123	M¹c Nam Tróc	trong B¨ng Hµ ®éng (212,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+124	TÇn Tö Du	trong B¨ng Hµ ®éng (229,210) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+125	C« V« Th­êng	trong B¨ng Hµ ®éng (218,187) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+126	LiÔu Tø Gia	trong Nh¹n Th¹ch ®éng (231,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+127	Thi §¹i ThiÕu	trong Nh¹n Th¹ch ®éng (219,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+128	T«n V¨n B­u 	trong Nh¹n Th¹ch ®éng (209,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+129	§ång BÊt Phôc	trong Phï Dung ®éng (193,177) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+130	§­êng B¸c V¨n	trong Phï Dung ®éng (214,182) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+131	§µo §¶o Chñ 	trong Phï Dung ®éng (201,196) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+132	§iÒn V« §¹o	trong Phï Dung ®éng (189,166) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+133	Viªn NiÖm TÞch	trong L­ìng Thñy ®éng (199,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+134	TrÞnh Tr¸c QuÇn	trong L­ìng Thñy ®éng (203,185) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+135	Ch­¬ng Nguyªn Sïng	trong L­ìng Thñy ®éng (212,189) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+136	T¹ Träng HËu	trong L­ìng Thñy ®éng (211,201) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+137	Vu Cöu  §å	trong tÇng 3 D­îc V­¬ng ®éng (192,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+138	Viªn Thiªn Thä 	trong tÇng 3 D­îc V­¬ng ®éng (191,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+139	Nh¹c Th­îng C«n	trong tÇng 3 D­îc V­¬ng ®éng (205,195) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+140	Chiªm Phóc V©n	trong tÇng 3 D­îc V­¬ng ®éng (204,203) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+141	Gi¶ Giíi Nh©n	trong tÇng 3 D­îc V­¬ng ®éng (205,204) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+142	TrÞnh Cöu NhËt	trong TiÕn Cóc ®éng (205,191) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+143	Chu Së B¸ 	trong TiÕn Cóc ®éng (217,200) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+144	Trang Minh Trung	trong TiÕn Cóc ®éng (201,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+145	Cam ChÝnh C« 	trong Sa M¹c s¬n  ®éng (198,207) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+146	Vò NhÊt ThÕ 	trong Sa M¹c s¬n  ®éng (157,202) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+147	D­¬ng Phong  DËt	trong Sa M¹c s¬n  ®éng (181,211) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+148	Hµ Sinh Vong	trong Sa M¹c s¬n  ®éng (178,194) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+149	T¨ng ChØ ãan	trong Kho¶ Lang ®éng (213,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+150	VÖ Biªn Thµnh	trong Kho¶ Lang ®éng (219,195) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+151	Cè Thñ §»ng	trong Kho¶ Lang ®éng (228,199) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+152	Gia C¸t Kinh Hång	trong Kho¶ Lang ®éng (204,197) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+153	Phan Ng¹t Nh¹n	ë Tr­êng B¹ch nam (156,187) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+154	Liªn H×nh Th¸i	ë Tr­êng B¹ch nam (185,171) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+155	Bµo TriÖt s¬n 	ë Tr­êng B¹ch nam (161,163) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+156	V¹n Hå Tinh	ë Tr­êng B¹ch nam (139,160) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+157	Trö Thiªn MÉn	ë Tr­êng B¹ch nam (152,171) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+158	§o¹n L¨ng NguyÖt	ë M¹c Cao QuËt (215,172) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+159	T¶  DËt Minh	ë M¹c Cao QuËt (159,171) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!
+160	NhËm Th­¬ng Khung	ë M¹c Cao QuËt (241,172) . Ta kh«ng tin ng­¬i th¾ng ®­îc h¾n!

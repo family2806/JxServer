@@ -1,111 +1,111 @@
 TaskID	TaskName	EventID	TaskType	CanCancel	TaskText
-ÈÎÎñID	ÈÎÎñÃû³Æ	¹éÊôÊÂ¼þID	ËùÊôµÄÊÂ¼þÀàÐÍ	¿ÉÒÔÈ¡Ïû	ÈÎÎñµÄ¼òÒªÃèÊö
-101	Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	3	Ëæ»ú_¶Ô»°	0	¸ø´äÑÌÃÅµÄºÎÄºÑ©ËÍÒ»¶äÃµ¹å»¨µÄÈÎÎñ
-102	Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	3	Ëæ»ú_¶Ô»°	0	¸øÏåÑôÒ©µêÀÏ°å´ø 10 ¸öÎå»¨ÓñÂ¶ÍèµÄÈÎÎñ
-103	Ëæ»ú_¶Ô»°_ÏåÑôÑÃÃÅÎÀ±ø	3	Ëæ»ú_¶Ô»°	0	¸øÏåÑôµÄÑÃÃÅÎÀ±ø´«»°ÈÎÎñ
-104	Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	3	Ëæ»ú_¶Ô»°	0	¸ø³É¶¼Ìú½³Ñ§Í½ËÍÑÌ»¨µÄÈÎÎñ
-105	Ëæ»ú_¶Ô»°_³É¶¼ÐÁ¶þÉô	3	Ëæ»ú_¶Ô»°	0	¸ø³É¶¼ÐÁ¶þÉôËÍ 3 ¸öÊ×ÎÚ»¹Éñµ¤µÄÈÎÎñ
-106	Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù	3	Ëæ»ú_¶Ô»°	0	°ïÖúÑïÖÝæä¹Ù´«»°µÄÈÎÎñ
-107	Ëæ»ú_¶Ô»°_ÑïÖÝæäÕ¾æä¹Ù_01	3	Ëæ»ú_¶Ô»°	0	°ïÖúÑïÖÝæä¹Ù´«»°µÄÈÎÎñ
-108	Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç	3	Ëæ»ú_¶Ô»°	0	°ïÖúÑïÖÝÉò·ç´«»°µÄÈÎÎñ
-109	Ëæ»ú_¶Ô»°_ÑïÖÝÉò·ç_01	3	Ëæ»ú_¶Ô»°	0	°ïÖúÑïÖÝÉò·ç´«»°µÄÈÎÎñ
+ID nhiÖm vô 	Tªn nhiÖm vô 	ID sù kiÖn	TÊt c¶ c¸c vÊn ®Ò liªn quan ®Õn sù kiÖn	 cã thÓ hñy bá	Miªu t¶ s¬ l­îc nhiÖm vô 
+101	NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô tÆng hoa cho Hµ Mé TuyÕt
+102	NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	3	NgÉu nhiªn_§èi tho¹i	0	Giao 10 Ngò Hoa Ngäc Lé Hoµn cho chñ D­îc §iÕm T­¬ng D­¬ng
+103	NgÉu nhiªn_§èi tho¹i_VÖ binh nha m«n	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô chuyÓn lêi cho_VÖ binh nha m«n
+104	NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô ®­a ph¸o hoa cho häc trß thî rÌn
+105	NgÉu nhiªn_§èi tho¹i_ T©n NhÞ ThÈm (Thµnh §«) 	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô ®­a 3 ¤ §Çu Hoµn ThÇn §¬n cho T©n NhÞ ThÈm (Thµnh §«) 
+106	NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô chuyÓn lêi gióp DÞch Quan D­¬ng Ch©u
+107	NgÉu nhiªn_§èi tho¹i__DÞch Quan_D­¬ng Ch©u_01	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô chuyÓn lêi gióp DÞch Quan D­¬ng Ch©u
+108	NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) 	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô chuyÓn lêi gióp ThÈm Phong (D­¬ng Ch©u) 
+109	NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01	3	NgÉu nhiªn_§èi tho¹i	0	NhiÖm vô chuyÓn lêi gióp ThÈm Phong (D­¬ng Ch©u) 
 
-201	Ëæ»ú_ÊÕ¼¯_³¤ÃüÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö³¤ÃüÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-202	Ëæ»ú_ÊÕ¼¯_¼ÓÅÜÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö¼ÓÅÜÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-203	Ëæ»ú_ÊÕ¼¯_´óÁ¦Íè	3	Ëæ»ú_ÊÕ¼¯	0	´øÒ»¸ö´óÁ¦Íè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-204	Ëæ»ú_ÊÕ¼¯_¸ßÉÁÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö¸ßÉÁÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-205	Ëæ»ú_ÊÕ¼¯_¸ßÖÐÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö¸ßÖÐÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-206	Ëæ»ú_ÊÕ¼¯_·ÉËÙÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÒ»¸ö·ÉËÙÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-207	Ëæ»ú_ÊÕ¼¯_±ù·ÀÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö±ù·ÀÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-208	Ëæ»ú_ÊÕ¼¯_À×·ÀÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸öÀ×·ÀÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-209	Ëæ»ú_ÊÕ¼¯_»ð·ÀÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö»ð·ÀÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-210	Ëæ»ú_ÊÕ¼¯_¶¾·ÀÍè	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö¶¾·ÀÍè¸øÁÙ°²µÄ³ÇÃÅÎÀ±øµÄÈÎÎñ
-211	Ëæ»ú_ÊÕ¼¯_ÐþÌúÔ­¿ó	3	Ëæ»ú_ÊÕ¼¯	0	´øÈý¸öÐþÌúÔ­¿ó¸ø³É¶¼Ìú½³µÄÈÎÎñ
-212	Ëæ»ú_ÊÕ¼¯_¿×È¸Ô­Ê¯	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸ö¿×È¸Ô­Ê¯¸ø³É¶¼Ìú½³µÄÈÎÎñ
-213	Ëæ»ú_ÊÕ¼¯_ÃØÒøÔ­¿ó	3	Ëæ»ú_ÊÕ¼¯	0	´øÈý¸öÃØÒøÔ­¿ó¸ø³É¶¼Ìú½³µÄÈÎÎñ
-214	Ëæ»ú_ÊÕ¼¯_Ü½ÈØÔ­Ê¯	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸öÜ½ÈØÔ­Ê¯¸ø³É¶¼Ìú½³µÄÈÎÎñ
-215	Ëæ»ú_ÊÕ¼¯_ÖìÉ°Ô­¿ó	3	Ëæ»ú_ÊÕ¼¯	0	´øÈý¸öÖìÉ°Ô­¿ó¸ø³É¶¼Ìú½³µÄÈÎÎñ
-216	Ëæ»ú_ÊÕ¼¯_ÖÓÈéÔ­Ê¯	3	Ëæ»ú_ÊÕ¼¯	0	´øÁ½¸öÖÓÈéÔ­Ê¯¸ø³É¶¼Ìú½³µÄÈÎÎñ
-217	Ëæ»ú_ÊÕ¼¯_½ð90É±ÊÖïµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯½ðÊôÐÔ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-218	Ëæ»ú_ÊÕ¼¯_Ä¾90É±ÊÖïµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯Ä¾ÊôÐÔ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-219	Ëæ»ú_ÊÕ¼¯_Ë®90É±ÊÖïµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯Ë®ÊôÐÔ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-220	Ëæ»ú_ÊÕ¼¯_»ð90É±ÊÖïµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯»ðÊôÐÔ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-221	Ëæ»ú_ÊÕ¼¯_ÍÁ90É±ÊÖïµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ÍÁÊôÐÔ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-222	Ëæ»ú_ÊÕ¼¯_ÑÌ»¨	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 5 ¸öÑÌ»¨¸ø³É¶¼Ìú½³Ñ§Í½µÄÈÎÎñ
-223	Ëæ»ú_ÊÕ¼¯_Åû·ç	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 2 ¸öÅû·ç¸ø´óÀíÎäÁÖÃË´«ÈËµÄÈÎÎñ
-224	Ëæ»ú_ÊÕ¼¯_ÐÄÐÄ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 1 ¸öÐÄÐÄÏàÓ³·û¸ø½­½ò´åÔÂÏÂÀÏÈËµÄÈÎÎñ
-225	Ëæ»ú_ÊÕ¼¯_ÌìÉ½ÓñÂ¶	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 1 ¸öÌìÉ½ÓñÂ¶¸øÁúÃÅÒ©µêÀÏ°åµÄÈÎÎñ
-226	Ëæ»ú_ÊÕ¼¯_°Ù¹ûÂ¶	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 1 ¸ö°Ù¹ûÂ¶¸øÁÙ°²Ò©µêÀÏ°åµÄÈÎÎñ
-227	Ëæ»ú_ÊÕ¼¯_Ð¡¸£Ôµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 1 ¸öÐ¡¸£ÔµÂ¶¸øãê¾©Àñ¹ÙµÄÈÎÎñ
-228	Ëæ»ú_ÊÕ¼¯_´ó¸£Ôµ	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 1 ¸ö´ó¸£ÔµÂ¶¸øãê¾©Àñ¹ÙµÄÈÎÎñ
+201	NgÉu nhiªn_Thu thËp_Tr­êng MÖnh hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Tr­êng MÖnh hoµn cho vÖ binh L©m An.
+202	NgÉu nhiªn_Thu thËp_Gia Bµo hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Gia Bµo Hoµn cho vÖ binh L©m An 
+204	NgÉu nhiªn_Thu thËp_Cao ThiÓm hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Cao ThiÓm hoµn cho vÖ binh L©m An 
+205	NgÉu nhiªn_Thu thËp_Cao Trung hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Cao Trung hoµn cho vÖ binh L©m An 
+207	NgÉu nhiªn_Thu thËp_B¨ng Phßng hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 B¨ng Phßng hoµn cho vÖ binh L©m An 
+208	NgÉu nhiªn_Thu thËp_L«i phßng hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 L«i phßng hoµn cho vÖ binh L©m An 
+209	NgÉu nhiªn_Thu thËp_Háa phßng hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Háa phßng hoµn cho vÖ binh L©m An 
+210	NgÉu nhiªn_Thu thËp_§éc phßng hoµn	3	NgÉu nhiªn_Thu thËp	0	Mang 2 §éc phßng hoµn cho vÖ binh L©m An 
+211	NgÉu nhiªn_Thu thËp_HuyÒn ThiÕt Nguyªn Kho¸ng	3	NgÉu nhiªn_Thu thËp	0	Mang 3 HuyÒn ThiÕt Nguyªn Kho¸ng cho Thî rÌn Thµnh §« 
+212	NgÉu nhiªn_Thu thËp_Khæng T­íc Nguyªn Th¹ch 	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Khæng T­íc Nguyªn Th¹ch cho Thî rÌn Thµnh §« 
+213	NgÉu nhiªn_Thu thËp_MËt Ng©n Nguyªn Kho¸ng	3	NgÉu nhiªn_Thu thËp	0	Mang 3 MËt Ng©n Nguyªn Kho¸ng cho Thî rÌn Thµnh §« 
+214	NgÉu nhiªn_Thu thËp_Phï Dung Nguyªn Th¹ch 	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Phï Dung Nguyªn Th¹ch cho Thî rÌn Thµnh §« 
+215	NgÉu nhiªn_Thu thËp_Chu Sa Nguyªn Kho¸ng	3	NgÉu nhiªn_Thu thËp	0	Mang 3 Chu Sa Nguyªn Kho¸ng cho Thî rÌn Thµnh §« 
+216	NgÉu nhiªn_Thu thËp_Chung Nhò Nguyªn Th¹ch 	3	NgÉu nhiªn_Thu thËp	0	Mang 2 Chung Nhò Nguyªn Th¹ch cho Thî rÌn Thµnh §« 
+217	NgÉu nhiªn_Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Kim) 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Kim) cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+218	NgÉu nhiªn_Thu thËp__S¸t Thñ Gi¶n cÊp 90 (Méc) 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Méc) cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+219	NgÉu nhiªn_Thu thËp_ S¸t Thñ Gi¶n cÊp 90 (Thñy) 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Thñy) cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+220	NgÉu nhiªn_Thu thËp_ S¸t Thñ Gi¶n cÊp 90 (Háa) 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Háa) cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+221	NgÉu nhiªn_Thu thËp_ S¸t Thñ Gi¶n cÊp 90 (Thæ) 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_S¸t Thñ Gi¶n cÊp 90 (Thæ) cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+222	NgÉu nhiªn_Thu thËp_Ph¸o Hoa	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_5 ph¸o hoa cho Häc trß thî rÌn (Thµnh §«) 
+224	NgÉu nhiªn_Thu thËp_T©m T©m	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_1 T©m T©m T­¬ng ¸nh phï cho NguyÖt L·o (Giang T©n th«n) 
+225	NgÉu nhiªn_Thu thËp_Thiªn s¬n  B¶o Lé 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_1 Thiªn s¬n  B¶o Lé cho Chñ D­îc §iÕm (Long M«n) 
+226	NgÉu nhiªn_Thu thËp_B¸ch Qu¶ Lé 	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_1 B¸ch Qu¶ Lé cho Chñ D­îc §iÕm (L©m An) 
+227	NgÉu nhiªn_Thu thËp_TiÓu Phóc Duyªn	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_1 TiÓu Phóc Duyªn Lé  cho LÔ Quan (BiÖn Kinh) 
+228	NgÉu nhiªn_Thu thËp_§¹i Phóc Duyªn	3	NgÉu nhiªn_Thu thËp	0	Thu thËp_1 §¹i Phóc Duyªn Lé  cho LÔ Quan (BiÖn Kinh) 
 
-229	Ëæ»ú_ÊÕ¼¯_Ò»¼¶Ðþ¾§	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 10 ¸öÒ»¼¶Ðþ¾§¸ø·ïÏèÌú½³µÄÈÎÎñ
-230	Ëæ»ú_ÊÕ¼¯_¶þ¼¶Ðþ¾§	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 5 ¸ö¶þ¼¶Ðþ¾§¸ø·ïÏèÌú½³µÄÈÎÎñ
-231	Ëæ»ú_ÊÕ¼¯_Èý¼¶Ðþ¾§	3	Ëæ»ú_ÊÕ¼¯	0	ÊÕ¼¯ 2 ¸öÈý¼¶Ðþ¾§¸ø·ïÏèÌú½³µÄÈÎÎñ
-232	Ëæ»ú_ÊÕ¼¯_ËÄ¼¶Ðþ¾§	3	Ëæ»ú_ÊÕ¼¯		ÊÕ¼¯ 1 ¸öËÄ¼¶Ðþ¾§¸ø·ïÏèÌú½³µÄÈÎÎñ
+301	NgÉu nhiªn_S¸t qu¸i_TÈu Th¹ch	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn M¹c Cao QuËt ®¸nh TÈu Th¹ch 
+302	NgÉu nhiªn_S¸t qu¸i_Phi Sa	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn M¹c Cao QuËt ®¸nh Phi Sa 
+303	NgÉu nhiªn_S¸t qu¸i_M¹c TÆc	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn M¹c Cao QuËt ®¸nh M¹c TÆc
+304	NgÉu nhiªn_S¸t qu¸i_Sa §¹o	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn M¹c Cao QuËt ®¸nh Sa §¹o
+305	NgÉu nhiªn_S¸t qu¸i_§ao Tr¶m (Tr­êng B¹ch b¾c) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch b¾c ®¸nh 24 tªn §ao Tr¶m
+306	NgÉu nhiªn_S¸t qu¸i_ L¹c Quang (Tr­êng B¹ch b¾c) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch b¾c ®¸nh 24 tªn L¹c Quang
+307	NgÉu nhiªn_S¸t qu¸i_ Hµn Th­¬ng (Tr­êng B¹ch b¾c) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch b¾c ®¸nh 24 tªn Hµn Th­¬ng
+308	NgÉu nhiªn_S¸t qu¸i_§o¹t Ph¸ch (Tr­êng B¹ch b¾c) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch b¾c ®¸nh 24 tªn §o¹t Ph¸ch
+309	NgÉu nhiªn_S¸t qu¸i_ S¶n Vò 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch nam ®¸nh 24 tªn S¶n Vò 
+310	NgÉu nhiªn_S¸t qu¸i_ Gi¸ng Chïy 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch nam ®¸nh 24 tªnGi¸ng Chïy
+311	NgÉu nhiªn_S¸t qu¸i_ L·nh §ao 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch nam ®¸nh 24 tªn L·nh §ao
+312	NgÉu nhiªn_S¸t qu¸i_ S­¬ng §ao 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Tr­êng B¹ch nam ®¸nh 24 tªn S­¬ng §ao
+313	NgÉu nhiªn_S¸t qu¸i_ tÇng 3 Sa M¹c_ TËt Vò 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 3 Sa M¹c ®¸nh 24 tªn TËt Vò 
+314	NgÉu nhiªn_S¸t qu¸i_ tÇng 3 Sa M¹c_ TËt Viªm	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 3 Sa M¹c ®¸nh 24 tªn TËt Viªm
+315	NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt Vò 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 3 Sa M¹c ®¸nh 24 tªn  TËt Vò 
+316	NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt Phong	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 3 Sa M¹c ®¸nh 24 tªn  TËt Phong
+317	NgÉu nhiªn_S¸t qu¸i_tÇng 3 Sa M¹c_ TËt §iÖn	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 3 Sa M¹c ®¸nh 24 tªn TËt §iÖn
+318	NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u V©n	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 2 Sa M¹c ®¸nh 24 tªn  L­u V©n
+319	NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u Quang	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 2 Sa M¹c ®¸nh 24 tªn  L­u Quang
+320	NgÉu nhiªn_S¸t qu¸i_tÇng 2 Sa M¹c_ L­u Phong	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 2 Sa M¹c ®¸nh 24 tªn  L­u Phong
+321	NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ KÕ Chñy	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 4 D­îc V­¬ng ®éng ®¸nh 24 tªn KÕ Trñy
+322	NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ Xuyªn s¬n 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 4 D­îc V­¬ng ®éng ®¸nh 24 tªn Xuyªn s¬n.
+323	NgÉu nhiªn_S¸t qu¸i_tÇng 4 D­îc V­¬ng_ §ao Kh¸ch	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn tÇng 4 D­îc V­¬ng ®éng ®¸nh 24 tªn §ao Kh¸ch
+324	NgÉu nhiªn_S¸t qu¸i_H¾c C©n (Kho¶ Lang ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Kho¶ Lang ®éng ®¸nh 24 tªn H¾c C©n
+325	NgÉu nhiªn_S¸t qu¸i_ Lang Bæng (Kho¶ Lang ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Kho¶ Lang ®éng ®¸nh 24 tªn Lang Bæng
+326	NgÉu nhiªn_S¸t qu¸i_¶nh C«n (Kho¶ Lang ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn Kho¶ Lang ®éng ®¸nh 24 tªn ¶nh C«n
+327	NgÉu nhiªn_S¸t qu¸i_§ao Kh¸ch (TiÕn Cóc ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn TiÕn Cóc ®éng ®¸nh 24 tªn §ao Kh¸ch
+328	NgÉu nhiªn_S¸t qu¸i_§o¹t MÖnh Liªm (TiÕn Cóc ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn TiÕn Cóc ®éng ®¸nh 24 tªn §o¹t MÖnh Liªm
+329	NgÉu nhiªn_S¸t qu¸i_ B¸o §èm (TiÕn Cóc ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn TiÕn Cóc ®éng ®¸nh 24 tªn B¸o §èm
+330	NgÉu nhiªn_S¸t qu¸i_Voi (C¸n Viªn ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn C¸n Viªn §«ng ®¸nh 24 con Voi
+331	NgÉu nhiªn_S¸t qu¸i_Voi Hoµng Hµ (C¸n Viªn ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn C¸n Viªn §«ng ®¸nh 24 con Voi Hoµng Hµ 
+332	NgÉu nhiªn_S¸t qu¸i_Nh·n KÝnh Xµ (C¸n Viªn ®éng) 	3	NgÉu nhiªn_S¸t qu¸i	0	§Õn C¸n Viªn §«ng ®¸nh 24 con Nh·n KÝnh Xµ 
 
-301	Ëæ»ú_É±¹Ö_Äª¸ß×ßÊ¯	3	Ëæ»ú_É±¹Ö	0	È¥Äª¸ß¿ßÉ±ËÀ 24 ¸ö×ßÊ¯µÄÈÎÎñ
-302	Ëæ»ú_É±¹Ö_Äª¸ß·ÉÉ³	3	Ëæ»ú_É±¹Ö	0	È¥Äª¸ß¿ßÉ±ËÀ 24 ¸ö·ÉÉ³µÄÈÎÎñ
-303	Ëæ»ú_É±¹Ö_Äª¸ßÄ®Ôô	3	Ëæ»ú_É±¹Ö	0	È¥Äª¸ß¿ßÉ±ËÀ 24 ¸öÄ®ÔôµÄÈÎÎñ
-304	Ëæ»ú_É±¹Ö_Äª¸ßÉ³µÁ	3	Ëæ»ú_É±¹Ö	0	È¥Äª¸ß¿ßÉ±ËÀ 24 ¸öÉ³µÁµÄÈÎÎñ
-305	Ëæ»ú_É±¹Ö_³¤°×±±µ¶Õ¶	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½±±Â´É±ËÀ 24 ¸öµ¶Õ¶µÄÈÎÎñ
-306	Ëæ»ú_É±¹Ö_³¤°×±±Âä¹â	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½±±Â´É±ËÀ 24 ¸öÂä¹âµÄÈÎÎñ
-307	Ëæ»ú_É±¹Ö_³¤°×±±º®Ç¹	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½±±Â´É±ËÀ 24 ¸öº®Ç¹µÄÈÎÎñ
-308	Ëæ»ú_É±¹Ö_³¤°×±±¶áÆÇ	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½±±Â´É±ËÀ 24 ¸ö¶áÆÇµÄÈÎÎñ
-309	Ëæ»ú_É±¹Ö_³¤°×ÄÏ²ùÎè	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½ÄÏÂ´É±ËÀ 24 ¸ö²ùÎèµÄÈÎÎñ
-310	Ëæ»ú_É±¹Ö_³¤°×ÄÏ½µ´¸	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½ÄÏÂ´É±ËÀ 24 ¸ö½µ´¸µÄÈÎÎñ
-311	Ëæ»ú_É±¹Ö_³¤°×ÄÏÀä¹­	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½ÄÏÂ´É±ËÀ 24 ¸öÀä¹­µÄÈÎÎñ
-312	Ëæ»ú_É±¹Ö_³¤°×ÄÏËªµ¶	3	Ëæ»ú_É±¹Ö	0	È¥³¤°×É½ÄÏÂ´É±ËÀ 24 ¸öËªµ¶µÄÈÎÎñ
-313	Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Óê	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´ÈýÉ±ËÀ 24 ¸ö¼²ÓêµÄÈÎÎñ
-314	Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Ñ×	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´ÈýÉ±ËÀ 24 ¸ö¼²Ñ×µÄÈÎÎñ
-315	Ëæ»ú_É±¹Ö_É³Ä®Èý¼²Óð	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´ÈýÉ±ËÀ 24 ¸ö¼²ÓðµÄÈÎÎñ
-316	Ëæ»ú_É±¹Ö_É³Ä®Èý¼²·ç	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´ÈýÉ±ËÀ 24 ¸ö¼²·çµÄÈÎÎñ
-317	Ëæ»ú_É±¹Ö_É³Ä®Èý¼²µç	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´ÈýÉ±ËÀ 24 ¸ö¼²µçµÄÈÎÎñ
-318	Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷ÔÆ	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´¶þÉ±ËÀ 24 ¸öÁ÷ÔÆµÄÈÎÎñ
-319	Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷¹â	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´¶þÉ±ËÀ 24 ¸öÁ÷¹âµÄÈÎÎñ
-320	Ëæ»ú_É±¹Ö_É³Ä®¶þÁ÷·ç	3	Ëæ»ú_É±¹Ö	0	È¥É³Ä®É½¶´¶þÉ±ËÀ 24 ¸öÁ÷·çµÄÈÎÎñ
-321	Ëæ»ú_É±¹Ö_Ò©ÍõËÄ÷ÙØ°	3	Ëæ»ú_É±¹Ö	0	È¥Ò©Íõ¶´ËÄ²ãÉ±ËÀ 24 ¸ö÷ÙØ°µÄÈÎÎñ
-322	Ëæ»ú_É±¹Ö_Ò©ÍõËÄ´©É½	3	Ëæ»ú_É±¹Ö	0	È¥Ò©Íõ¶´ËÄ²ãÉ±ËÀ 24 ¸ö´©É½µÄÈÎÎñ
-323	Ëæ»ú_É±¹Ö_Ò©ÍõËÄµ¶¿Í	3	Ëæ»ú_É±¹Ö	0	È¥Ò©Íõ¶´ËÄ²ãÉ±ËÀ 24 ¸öµ¶¿ÍµÄÈÎÎñ
-324	Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´ºÚ½í	3	Ëæ»ú_É±¹Ö	0	È¥ò¿ÓÈ¶´É±ËÀ 24 ¸öºÚ½íµÄÈÎÎñ
-325	Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´ÀÇ°ô	3	Ëæ»ú_É±¹Ö	0	È¥ò¿ÓÈ¶´É±ËÀ 24 ¸öÀÇ°ôµÄÈÎÎñ
-326	Ëæ»ú_É±¹Ö_ò¿ÓÈ¶´Ó°¹÷	3	Ëæ»ú_É±¹Ö	0	È¥ò¿ÓÈ¶´É±ËÀ 24 ¸öÓ°¹÷µÄÈÎÎñ
-327	Ëæ»ú_É±¹Ö_¼ö¾Õ¶´µ¶¿Í	3	Ëæ»ú_É±¹Ö	0	È¥¼ö¾Õ¶´É±ËÀ 24 ¸öµ¶¿ÍµÄÈÎÎñ
-328	Ëæ»ú_É±¹Ö_¼ö¾Õ¶´¶áÃüÁ­	3	Ëæ»ú_É±¹Ö	0	È¥¼ö¾Õ¶´É±ËÀ 24 ¸ö¶áÃüÁ­µÄÈÎÎñ
-329	Ëæ»ú_É±¹Ö_¼ö¾Õ¶´»¨±ª×Ó	3	Ëæ»ú_É±¹Ö	0	È¥¼ö¾Õ¶´É±ËÀ 24 ¸ö»¨±ª×ÓµÄÈÎÎñ
-330	Ëæ»ú_É±¹Ö_ÐùÔ¯¶´´óÏó	3	Ëæ»ú_É±¹Ö	0	È¥ÐùÔ¯¶´É±ËÀ 24 Í·´óÏóµÄÈÎÎñ
-331	Ëæ»ú_É±¹Ö_ÐùÔ¯¶´»ÆºÓÏó	3	Ëæ»ú_É±¹Ö	0	È¥ÐùÔ¯¶´É±ËÀ 24 Í·»ÆºÓÏóµÄÈÎÎñ
-332	Ëæ»ú_É±¹Ö_ÐùÔ¯¶´ÑÛ¾µÉß	3	Ëæ»ú_É±¹Ö	0	È¥ÐùÔ¯¶´É±ËÀ 24 ÌõÑÛ¾µÉßµÄÈÎÎñ
-
-501	Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×PKÍè¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-502	Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÎåÐÐ90¼¶É±ÊÖïµ¸øÏåÑôÄôß±³¾µÄÈÎÎñ
-503	Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×¿óÊ¯¸ø³É¶¼Ìú½³µÄÈÎÎñ
-504	Ëæ»ú_¾íÖá_ÊÕ¼¯Ãµ¹å»¨	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯¾Å¶äÃµ¹å»¨¸ø³É¶¼Àñ¹ÙµÄÈÎÎñ
-505	Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×¶¨¹úÍ¼Æ×¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-506	Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×°²°îÍ¼Æ×¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-507	Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-508	Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯Îå¶¾¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-509	Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-510	Ëæ»ú_¾íÖá_ÊÕ¼¯´äÑÌ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯´äÑÌ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-511	Ëæ»ú_¾íÖá_ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-512	Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-513	Ëæ»ú_¾íÖá_ÊÕ¼¯Îäµ±¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯Îäµ±¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-514	Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-515	Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-516	Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-517	Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×Ìì»ÍÁúÆ÷¸øãê¾©³ÂÈý±¦µÄÈÎÎñ
-518	Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×½ð·ã×°±¸¸øãê¾©³ÂÈý±¦µÄÈÎÎñ
-519	Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×²Ø±¦Í¼ËéÆ¬¸ø¶¡Ô±ÍâµÄÈÎÎñ
-520	Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯¶¨¹úÈ«Ì×¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-521	Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÏÀ¹ÇÈ«Ì×¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-522	Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯ÈáÇéÈ«Ì×¸øÁÙ°²³ÇÃÅÎÀ±øµÄÈÎÎñ
-523	Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×ÐþÌú½£¸øÑïÖÝÌú½³µÄÈÎÎñ
-524	Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×´ó·çµ¶¸øÑïÖÝÌú½³µÄÈÎÎñ
-525	Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×½ð¹¿°ô¸øÑïÖÝÌú½³µÄÈÎÎñ
-526	Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×ÆÆÌìêª¸øÑïÖÝÌú½³µÄÈÎÎñ
-527	Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×ÆÆÌì´¸¸øÑïÖÝÌú½³µÄÈÎÎñ
-528	Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×°ÔÍõïÚ¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
-529	Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×ËéÔÂµ¶¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
+501	NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	4	NgÉu nhiªn_MËt §å	0	Thu thËp ®ñ D­îc hoµn (PK) cho vÖ binh L©m An
+502	NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	4	NgÉu nhiªn_MËt §å	0	Thu thËp S¸t Thñ Gi¶n cÊp 90 cho NhiÕp ThÝ TrÇn (T­¬ng D­¬ng) 
+503	NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Kho¸ng Th¹ch cho Thî rÌn Thµnh §«
+504	NgÉu nhiªn_MËt §å_Thu thËp Hoa hång	4	NgÉu nhiªn_MËt §å	0	Thu thËp 9 Hoa hång cho LÔ Quan (Thµnh §«) 
+507	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng §­êng M«n cho Qu¶n gia §­êng M«n
+508	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng Ngò §éc cho Qu¶n gia §­êng M«n 
+509	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng Nga Mi cho Qu¶n gia §­êng M«n
+510	NgÉu nhiªn_MËt §å_Thu thËpThóy Yªn MËt tÞch kü n¨ng	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng Thóy Yªn cho Qu¶n gia §­êng M«n
+511	NgÉu nhiªn_MËt §å_Thu thËpC¸i Bang MËt tÞch kü n¨ng	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng C¸i Bang cho Qu¶n gia §­êng M«n
+512	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	4	NgÉu nhiªn_MËt §å	0	Thu thËpMËt tÞch kü n¨ng Thiªn NhÉn cho Qu¶n gia §­êng M«n
+513	NgÉu nhiªn_MËt §å_Thu thËpVâ §ang MËt tÞch kü n¨ng	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng Vâ §ang  cho Qu¶n gia §­êng M«n
+514	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng C«n L«n cho Qu¶n gia §­êng M«n
+515	NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng ThiÕu L©m cho Qu¶n gia §­êng M«n
+516	NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	4	NgÉu nhiªn_MËt §å	0	Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng cho Qu¶n gia §­êng M«n
+517	NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	4	NgÉu nhiªn_MËt §å	0	Thu thËp bé Thiªn Hoµng Long KhÝ cho TrÇn Tam B¶o (BiÖn Kinh) 
+518	NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé trang bÞ Kim Phong cho TrÇn Tam B¶o (BiÖn Kinh) 
+519	NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét béTµng B¶o §å To¸i PhiÕn cho §inh Viªn Ngo¹i
+523	NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé HuyÒn ThiÕt KiÕm cho Thî rÌn (D­¬ng Ch©u) 
+524	NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé §¹i Phong §ao cho Thî rÌn (D­¬ng Ch©u) 
+525	NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Kim C« Bæng cho Thî rÌn (D­¬ng Ch©u) 
+526	NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét béPh¸ Thiªn KÝch cho Thî rÌn (D­¬ng Ch©u) 
+527	NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Ph¸ Thiªn Chïy cho thî rÌn D­¬ng Ch©u
+528	NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé B¸ V­¬ng Tiªu cho Qu¶n gia §­êng M«n
+529	NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Tóy NguyÖt §ao cho Qu¶n gia §­êng M«n
+530	NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Khæng T­íc Linh cho Qu¶n gia §­êng M«n
+531	NgÉu nhiªn_MËt §å_Thu thËp NhÉn	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé NhÉn cho TrÇn Tam B¶o (BiÖn Kinh) 
+532	NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé D©y chuyÒn cho §oan Méc Thanh ( Long M«n trÊn) 
+533	NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Hé Th©n phï cho LÔ Quan ( BiÖn Kinh) 
+534	NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé H­¬ng Nang cho Qu¶n gia §­êng M«n
+535	NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Ngäc Béi cho Qu¶n gia §­êng M«n
+536	NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé  Ngäc Tr¹c cho Qu¶n gia §­êng M«n 
+537	NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Hé uyÓn cho Qu¶n gia §­êng M«n
+538	NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Th«ng Thiªn Ph¸t Qu¸n cho Qu¶n gia §­êng M«n
+539	NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé YÓm NhËt kh«i  cho Qu¶n gia §­êng M«n
+540	NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé B¹ch Kim yªu ®¸i cho Qu¶n gia §­êng M«n
+541	NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Thiªn Tµm Ngoa cho  Qu¶n gia §­êng M«n
+542	NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	4	NgÉu nhiªn_MËt §å	0	Thu thËp mét bé Phi Phông Ngoa cho Qu¶n gia §­êng M«n
 530	Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×¿×È¸ôá¸øÌÆÃÅ¹Ü¼ÒµÄÈÎÎñ
 531	Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×½äÖ¸¸øãê¾©³ÂÈý±¦µÄÈÎÎñ
 532	Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	4	Ëæ»ú_¾íÖá	0	ÊÕ¼¯È«Ì×ÏîÁ´¸øÁúÃÅÕò¶ËÄ¾ÇåµÄÈÎÎñ

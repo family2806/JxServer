@@ -1,382 +1,382 @@
 index_Name	index_ItemGenre	index_DetailType	index_ParticualrType	index_taskid	index_level	index_content
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá1	6	1	447	6	15	È¥·ïÏè³ÇÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá2	6	1	448	7	15	È¥·ïÏè³ÇÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá3	6	1	449	8	15	È¥·ïÏè³ÇÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá4	6	1	450	9	15	È¥»ªÉ½É±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá5	6	1	451	10	15	È¥»ªÉ½É±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá6	6	1	452	11	15	È¥»ªÉ½É±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá7	6	1	453	12	25	È¥½£¸óÎ÷±±É±»ðÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá8	6	1	454	13	25	È¥½£¸óÎ÷±±É±»ðÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá9	6	1	455	14	25	È¥½£¸óÎ÷±±É±»ðÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá10	6	1	456	15	35	È¥½ð¹â¶´ÃÔ¹¬É±²Ý¿Ü¼×50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá11	6	1	457	16	35	È¥½ð¹â¶´ÃÔ¹¬É±²Ý¿Ü¼×100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá12	6	1	458	17	35	È¥½ð¹â¶´ÃÔ¹¬É±²Ý¿Ü¼×150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá13	6	1	459	18	45	È¥¾­»Ê¶´ÃÔ¹¬É±ÍÁ·Ë¼×50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá14	6	1	460	19	45	È¥¾­»Ê¶´ÃÔ¹¬É±ÍÁ·Ë¼×100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá15	6	1	461	20	45	È¥¾­»Ê¶´ÃÔ¹¬É±ÍÁ·Ë¼×150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá16	6	1	462	21	45	È¥ËøÔÆ¶´ÃÔ¹¬É±É½ÔôÒÒ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá17	6	1	463	22	45	È¥ËøÔÆ¶´ÃÔ¹¬É±É½ÔôÒÒ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá18	6	1	464	23	45	È¥ËøÔÆ¶´ÃÔ¹¬É±É½ÔôÒÒ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá19	6	1	465	24	25	È¥ÇØÁêÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá20	6	1	466	25	25	È¥ÇØÁêÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá21	6	1	467	26	25	È¥ÇØÁêÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá22	6	1	468	27	35	È¥ÇØÊ¼»ÊÁêµØÏÂÒ»²ãÉ±Ìú×¦50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá23	6	1	469	28	35	È¥ÇØÊ¼»ÊÁêµØÏÂÒ»²ãÉ±Ìú×¦100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá24	6	1	470	29	35	È¥ÇØÊ¼»ÊÁêµØÏÂÒ»²ãÉ±Ìú×¦150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá25	6	1	471	30	75	È¥ÇØÊ¼»ÊÁêµØÏÂ¶þ²ãÉ±ºìòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá26	6	1	472	31	75	È¥ÇØÊ¼»ÊÁêµØÏÂ¶þ²ãÉ±ºìòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá27	6	1	473	32	75	È¥ÇØÊ¼»ÊÁêµØÏÂ¶þ²ãÉ±ºìòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá28	6	1	474	33	85	È¥ÇØÊ¼»ÊÁêµØÏÂÈý²ãÉ±Ä¾ÈË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá29	6	1	475	34	85	È¥ÇØÊ¼»ÊÁêµØÏÂÈý²ãÉ±Ä¾ÈË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá30	6	1	476	35	85	È¥ÇØÊ¼»ÊÁêµØÏÂÈý²ãÉ±Ä¾ÈË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá31	6	1	477	36	85	È¥±ùºÓ¶´ÃÔ¹¬É±·ÉÁ­50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá32	6	1	478	37	85	È¥±ùºÓ¶´ÃÔ¹¬É±·ÉÁ­100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá33	6	1	479	38	85	È¥±ùºÓ¶´ÃÔ¹¬É±·ÉÁ­150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá34	6	1	480	39	10	È¥ÓÀÀÖÕòÍâÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá35	6	1	481	40	10	È¥ÓÀÀÖÕòÍâÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá36	6	1	482	41	10	È¥ÓÀÀÖÕòÍâÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá37	6	1	483	42	75	È¥³¤½­Ô´Í·É±¶ñÄá50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá38	6	1	484	43	75	È¥³¤½­Ô´Í·É±¶ñÄá100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá39	6	1	485	44	75	È¥³¤½­Ô´Í·É±¶ñÄá150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá40	6	1	486	45	85	È¥ÑãÊ¯¶´ÃÔ¹¬É±ºÚ½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá41	6	1	487	46	85	È¥ÑãÊ¯¶´ÃÔ¹¬É±ºÚ½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá42	6	1	488	47	85	È¥ÑãÊ¯¶´ÃÔ¹¬É±ºÚ½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá43	6	1	489	48	15	È¥³É¶¼³ÇÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá44	6	1	490	49	15	È¥³É¶¼³ÇÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá45	6	1	491	50	15	È¥³É¶¼³ÇÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá46	6	1	492	51	55	È¥³É¶¼ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬É±Ð×É®50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá47	6	1	493	52	55	È¥³É¶¼ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬É±Ð×É®100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá48	6	1	494	53	55	È¥³É¶¼ÐÅÏàËÂºóÔºµØµÀÃÔ¹¬É±Ð×É®150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá49	6	1	495	54	15	È¥¶ëáÒÅÉÍâÉ±Âíºï50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá50	6	1	496	55	15	È¥¶ëáÒÅÉÍâÉ±Âíºï100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá51	6	1	497	56	15	È¥¶ëáÒÅÉÍâÉ±Âíºï150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá52	6	1	498	57	25	È¥ÃÍ»¢¶´Ñ¨ÃÔ¹¬É±°×É·»¢50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá53	6	1	499	58	25	È¥ÃÍ»¢¶´Ñ¨ÃÔ¹¬É±°×É·»¢100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá54	6	1	500	59	25	È¥ÃÍ»¢¶´Ñ¨ÃÔ¹¬É±°×É·»¢150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá55	6	1	501	60	25	È¥½£¸óÎ÷ÄÏÉ±´Ìâ¬50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá56	6	1	502	61	25	È¥½£¸óÎ÷ÄÏÉ±´Ìâ¬100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá57	6	1	503	62	25	È¥½£¸óÎ÷ÄÏÉ±´Ìâ¬150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá58	6	1	504	63	10	È¥½­½ò´åÍâÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá59	6	1	505	64	10	È¥½­½ò´åÍâÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá60	6	1	506	65	10	È¥½­½ò´åÍâÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá61	6	1	507	66	45	È¥Çà³ÇÉ½É±½ðµñ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá62	6	1	508	67	45	È¥Çà³ÇÉ½É±½ðµñ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá63	6	1	509	68	45	È¥Çà³ÇÉ½É±½ðµñ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá64	6	1	510	69	35	È¥°×ÔÆ¶´ÃÔ¹¬É±Á÷ÀË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá65	6	1	511	70	35	È¥°×ÔÆ¶´ÃÔ¹¬É±Á÷ÀË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá66	6	1	512	71	35	È¥°×ÔÆ¶´ÃÔ¹¬É±Á÷ÀË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá67	6	1	513	72	45	È¥ÉñÏÉ¶´ÃÔ¹¬É±³¤µ¶50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá68	6	1	514	73	45	È¥ÉñÏÉ¶´ÃÔ¹¬É±³¤µ¶100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá69	6	1	515	74	45	È¥ÉñÏÉ¶´ÃÔ¹¬É±³¤µ¶150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá70	6	1	516	75	55	È¥ÏìË®¶´ÃÔ¹¬É±À¶½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá71	6	1	517	76	55	È¥ÏìË®¶´ÃÔ¹¬É±À¶½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá72	6	1	518	77	55	È¥ÏìË®¶´ÃÔ¹¬É±À¶½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá73	6	1	519	78	15	È¥ÌÆÃÅÍâÉ±Âíºï50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá74	6	1	520	79	15	È¥ÌÆÃÅÍâÉ±Âíºï100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá75	6	1	521	80	15	È¥ÌÆÃÅÍâÉ±Âíºï150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá76	6	1	522	81	85	È¥Ü½ÈØ¶´ÃÔ¹¬É±·ÉÁ­50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá77	6	1	523	82	85	È¥Ü½ÈØ¶´ÃÔ¹¬É±·ÉÁ­100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá78	6	1	524	83	85	È¥Ü½ÈØ¶´ÃÔ¹¬É±·ÉÁ­150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá79	6	1	525	84	15	È¥ãê¾©³ÇÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá80	6	1	526	85	15	È¥ãê¾©³ÇÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá81	6	1	527	86	15	È¥ãê¾©³ÇÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá82	6	1	528	87	55	È¥ÌúËþÃÔ¹¬Ò»²ãÉ±µ¶±ø50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá83	6	1	529	88	55	È¥ÌúËþÃÔ¹¬Ò»²ãÉ±µ¶±ø100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá84	6	1	530	89	55	È¥ÌúËþÃÔ¹¬Ò»²ãÉ±µ¶±ø150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá85	6	1	531	90	55	È¥ÌúËþÃÔ¹¬¶þ²ãÉ±Ç¹±ø50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá86	6	1	532	91	55	È¥ÌúËþÃÔ¹¬¶þ²ãÉ±Ç¹±ø50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá87	6	1	533	92	55	È¥ÌúËþÃÔ¹¬¶þ²ãÉ±Ç¹±ø50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá88	6	1	534	93	45	È¥·üÅ£É½Î÷É±ÇàÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá89	6	1	535	94	45	È¥·üÅ£É½Î÷É±ÇàÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá90	6	1	536	95	45	È¥·üÅ£É½Î÷É±ÇàÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá91	6	1	537	96	55	È¥ÌìÐÄ¶´ÃÔ¹¬É±¶Ïêª50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá92	6	1	538	97	55	È¥ÌìÐÄ¶´ÃÔ¹¬É±¶Ïêª100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá93	6	1	539	98	55	È¥ÌìÐÄ¶´ÃÔ¹¬É±¶Ïêª150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá94	6	1	540	99	25	È¥½£¸óÖÐÔ­É±»ÒÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá95	6	1	541	100	25	È¥½£¸óÖÐÔ­É±»ÒÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá96	6	1	542	101	25	È¥½£¸óÖÐÔ­É±»ÒÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá97	6	1	543	102	15	È¥ÌìÈÌ½ÌÊÒÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá98	6	1	544	103	15	È¥ÌìÈÌ½ÌÊÒÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá99	6	1	545	104	15	È¥ÌìÈÌ½ÌÊÒÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá100	6	1	546	105	15	È¥ÌìÈÌ½ÌÊÒÄÚµÚÒ»²ãÉ±òùòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá101	6	1	547	106	15	È¥ÌìÈÌ½ÌÊÒÄÚµÚÒ»²ãÉ±òùòð100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá102	6	1	548	107	15	È¥ÌìÈÌ½ÌÊÒÄÚµÚÒ»²ãÉ±òùòð150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá103	6	1	549	108	15	È¥ÆßÉ±¶´ÃÔ¹¬É±Ã§ºº50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá104	6	1	550	109	15	È¥ÆßÉ±¶´ÃÔ¹¬É±Ã§ºº100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá105	6	1	551	110	15	È¥ÆßÉ±¶´ÃÔ¹¬É±Ã§ºº150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá106	6	1	552	111	10	È¥ÖìÏÉÕòÍâÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá107	6	1	553	112	10	È¥ÖìÏÉÕòÍâÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá108	6	1	554	113	10	È¥ÖìÏÉÕòÍâÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá109	6	1	555	114	10	È¥°ÍÁêÏØÍâÉ±½ðÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá110	6	1	556	115	10	È¥°ÍÁêÏØÍâÉ±½ðÃ¨100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá111	6	1	557	116	10	È¥°ÍÁêÏØÍâÉ±½ðÃ¨150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá112	6	1	558	117	15	È¥ÄÏÔÀÕòÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá113	6	1	559	118	15	È¥ÄÏÔÀÕòÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá114	6	1	560	119	15	È¥ÄÏÔÀÕòÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá115	6	1	561	120	75	È¥ÌÒ»¨Ô´É±Ã·»¨Â¹50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá116	6	1	562	121	75	È¥ÌÒ»¨Ô´É±Ã·»¨Â¹100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá117	6	1	563	122	75	È¥ÌÒ»¨Ô´É±Ã·»¨Â¹150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá118	6	1	564	123	65	È¥ºâÉ½ÅÉÍâÉ±½ðµñ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá119	6	1	565	124	65	È¥ºâÉ½ÅÉÍâÉ±½ðµñ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá120	6	1	566	125	65	È¥ºâÉ½ÅÉÍâÉ±½ðµñ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá121	6	1	567	126	15	È¥ÌìÍõµºÉ½¶´É±½ðÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá122	6	1	568	127	15	È¥ÌìÍõµºÉ½¶´É±½ðÃ¨100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá123	6	1	569	128	15	È¥ÌìÍõµºÉ½¶´É±½ðÃ¨150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá124	6	1	570	129	55	È¥¶´Í¥ºþµ×É½¶´Ò»²ãÉ±öùÓã50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá125	6	1	571	130	55	È¥¶´Í¥ºþµ×É½¶´Ò»²ãÉ±öùÓã100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá126	6	1	572	131	55	È¥¶´Í¥ºþµ×É½¶´Ò»²ãÉ±öùÓã150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá127	6	1	573	132	65	È¥ÇàÂÝµºÉ±À¶½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá128	6	1	574	133	65	È¥ÇàÂÝµºÉ±À¶½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá129	6	1	575	134	65	È¥ÇàÂÝµºÉ±À¶½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá130	6	1	576	135	75	È¥ÇàÂÝµºÉ½¶´É±Ìú×¦50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá131	6	1	577	136	75	È¥ÇàÂÝµºÉ½¶´É±Ìú×¦100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá132	6	1	578	137	75	È¥ÇàÂÝµºÉ½¶´É±Ìú×¦150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá133	6	1	579	138	25	È¥ÎäÁêÉ½É±²ÔÓ¥50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá134	6	1	580	139	25	È¥ÎäÁêÉ½É±²ÔÓ¥100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá135	6	1	581	140	25	È¥ÎäÁêÉ½É±²ÔÓ¥150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá136	6	1	582	141	25	È¥°×Ë®¶´ÃÔ¹¬É±Í­´¸50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá137	6	1	583	142	25	È¥°×Ë®¶´ÃÔ¹¬É±Í­´¸100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá138	6	1	584	143	25	È¥°×Ë®¶´ÃÔ¹¬É±Í­´¸150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá139	6	1	585	144	75	È¥´óÇõ¶´ÃÔ¹¬É±Í­´¸50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá140	6	1	586	145	75	È¥´óÇõ¶´ÃÔ¹¬É±Í­´¸100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá141	6	1	587	146	75	È¥´óÇõ¶´ÃÔ¹¬É±Í­´¸150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá142	6	1	588	147	25	È¥·üÁ÷¶´ÃÔ¹¬É±öùÓã50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá143	6	1	589	148	25	È¥·üÁ÷¶´ÃÔ¹¬É±öùÓã100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá144	6	1	590	149	25	È¥·üÁ÷¶´ÃÔ¹¬É±öùÓã150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá145	6	1	591	150	35	È¥ÃçÁëÉ±Ò°Å£50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá146	6	1	592	151	35	È¥ÃçÁëÉ±Ò°Å£100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá147	6	1	593	152	35	È¥ÃçÁëÉ±Ò°Å£150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá148	6	1	594	153	95	È¥ò¿ÓÈ¶´ÃÔ¹¬É±ÀÇ°ô50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá149	6	1	595	154	95	È¥ò¿ÓÈ¶´ÃÔ¹¬É±ÀÇ°ô100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá150	6	1	596	155	95	È¥ò¿ÓÈ¶´ÃÔ¹¬É±ÀÇ°ô150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá151	6	1	597	156	75	È¥É½±¦¶´ÃÔ¹¬É±»ðÑ×»¢50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá152	6	1	598	157	75	È¥É½±¦¶´ÃÔ¹¬É±»ðÑ×»¢100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá153	6	1	599	158	75	È¥É½±¦¶´ÃÔ¹¬É±»ðÑ×»¢150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá154	6	1	600	159	35	È¥Ñà×Ó¶´ÃÔ¹¬É±òùòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá155	6	1	601	160	35	È¥Ñà×Ó¶´ÃÔ¹¬É±òùòð100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá156	6	1	602	161	35	È¥Ñà×Ó¶´ÃÔ¹¬É±òùòð150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá157	6	1	603	162	85	È¥ÎäÁê¶´ÃÔ¹¬É±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá158	6	1	604	163	85	È¥ÎäÁê¶´ÃÔ¹¬É±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá159	6	1	605	164	85	È¥ÎäÁê¶´ÃÔ¹¬É±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá160	6	1	606	165	15	È¥ÏåÑô³ÇÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá161	6	1	607	166	15	È¥ÏåÑô³ÇÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá162	6	1	608	167	15	È¥ÏåÑô³ÇÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá163	6	1	609	168	65	È¥ÏåÑô³ÇÑÃÃÅÃØµÀÉ±µ¶±ø50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá164	6	1	610	169	65	È¥ÏåÑô³ÇÑÃÃÅÃØµÀÉ±µ¶±ø100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá165	6	1	611	170	65	È¥ÏåÑô³ÇÑÃÃÅÃØµÀÉ±µ¶±ø150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá166	6	1	612	171	15	È¥ÑïÖÝ³ÇÍâÉ±´Ìâ¬50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá167	6	1	613	172	15	È¥ÑïÖÝ³ÇÍâÉ±´Ìâ¬100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá168	6	1	614	173	15	È¥ÑïÖÝ³ÇÍâÉ±´Ìâ¬150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá169	6	1	615	174	25	È¥»ðÀÇ¶´ÃÔ¹¬É±²ÔÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá170	6	1	616	175	25	È¥»ðÀÇ¶´ÃÔ¹¬É±²ÔÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá171	6	1	617	176	25	È¥»ðÀÇ¶´ÃÔ¹¬É±²ÔÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá172	6	1	618	177	35	È¥·üÅ£É½¶«É±ÇàÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá173	6	1	619	178	35	È¥·üÅ£É½¶«É±ÇàÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá174	6	1	620	179	35	È¥·üÅ£É½¶«É±ÇàÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá175	6	1	621	180	45	È¥¼¦¹Ú¶´ÃÔ¹¬É±»ðÔÆ»¢50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá176	6	1	622	181	45	È¥¼¦¹Ú¶´ÃÔ¹¬É±»ðÔÆ»¢100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá177	6	1	623	182	45	È¥¼¦¹Ú¶´ÃÔ¹¬É±»ðÔÆ»¢150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá178	6	1	624	183	35	È¥Êñ¸ÔÉ½É±»Òºï50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá179	6	1	625	184	35	È¥Êñ¸ÔÉ½É±»Òºï100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá180	6	1	626	185	35	È¥Êñ¸ÔÉ½É±»Òºï150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá181	6	1	627	186	95	È¥¼ö¾Õ¶´ÃÜ¹¬É±µ¶¿Í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá182	6	1	628	187	95	È¥¼ö¾Õ¶´ÃÜ¹¬É±µ¶¿Í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá183	6	1	629	188	95	È¥¼ö¾Õ¶´ÃÜ¹¬É±µ¶¿Í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá184	6	1	630	189	75	È¥Áé¹È¶´ÃÜ¹¬É±×ØÐÜ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá185	6	1	631	190	75	È¥Áé¹È¶´ÃÜ¹¬É±×ØÐÜ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá186	6	1	632	191	75	È¥Áé¹È¶´ÃÜ¹¬É±×ØÐÜ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá187	6	1	633	192	10	È¥µ¾Ïã´åÍâÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá188	6	1	634	193	10	È¥µ¾Ïã´åÍâÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá189	6	1	635	194	10	È¥µ¾Ïã´åÍâÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá190	6	1	636	195	15	È¥Ä¾ÈËÏïÉ±Ä¾ÈË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá191	6	1	637	196	15	È¥Ä¾ÈËÏïÉ±Ä¾ÈË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá192	6	1	638	197	15	È¥Ä¾ÈËÏïÉ±Ä¾ÈË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá193	6	1	639	198	45	È¥ÉÙÁÖÃÜÊÒÉ±Í­ÈË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá194	6	1	640	199	45	È¥ÉÙÁÖÃÜÊÒÉ±Í­ÈË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá195	6	1	641	200	45	È¥ÉÙÁÖÃÜÊÒÉ±Í­ÈË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá196	6	1	642	201	85	È¥·ÉÌì¶´ÃÔ¹¬É±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá197	6	1	643	202	85	È¥·ÉÌì¶´ÃÔ¹¬É±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá198	6	1	644	203	85	È¥·ÉÌì¶´ÃÔ¹¬É±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá199	6	1	645	204	85	È¥·çÁê¶ÉÉ±Éñ±Û50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá200	6	1	646	205	85	È¥·çÁê¶ÉÉ±Éñ±Û100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá201	6	1	647	206	85	È¥·çÁê¶ÉÉ±Éñ±Û150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá202	6	1	648	207	55	È¥ÏéÔÆ¶´Ò»²ãÉ±µ¶¿Í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá203	6	1	649	208	55	È¥ÏéÔÆ¶´Ò»²ãÉ±µ¶¿Í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá204	6	1	650	209	55	È¥ÏéÔÆ¶´Ò»²ãÉ±µ¶¿Í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá205	6	1	651	210	65	È¥ÏéÔÆ¶´¶þ²ãÉ±É½Ôô50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá206	6	1	652	211	65	È¥ÏéÔÆ¶´¶þ²ãÉ±É½Ôô100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá207	6	1	653	212	65	È¥ÏéÔÆ¶´¶þ²ãÉ±É½Ôô150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá208	6	1	654	213	65	È¥ÏéÔÆ¶´Èý²ãÉ±ÀÇ°ô50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá209	6	1	655	214	65	È¥ÏéÔÆ¶´Èý²ãÉ±ÀÇ°ô100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá210	6	1	656	215	65	È¥ÏéÔÆ¶´Èý²ãÉ±ÀÇ°ô150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá211	6	1	657	216	65	È¥ÏéÔÆ¶´ËÄ²ãÉ±ÓñÃæ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá212	6	1	658	217	65	È¥ÏéÔÆ¶´ËÄ²ãÉ±ÓñÃæ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá213	6	1	659	218	65	È¥ÏéÔÆ¶´ËÄ²ãÉ±ÓñÃæ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá214	6	1	660	219	75	È¥ÏéÔÆ¶´Îå²ãÉ±¶Û¸«50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá215	6	1	661	220	75	È¥ÏéÔÆ¶´Îå²ãÉ±¶Û¸«100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá216	6	1	662	221	75	È¥ÏéÔÆ¶´Îå²ãÉ±¶Û¸«150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá217	6	1	663	222	85	È¥ÑôÖÐ¶´ÃÔ¹¬É±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá218	6	1	664	223	85	È¥ÑôÖÐ¶´ÃÔ¹¬É±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá219	6	1	665	224	85	È¥ÑôÖÐ¶´ÃÔ¹¬É±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá220	6	1	666	225	10	È¥ÁúÃÅÕòÍâÉ±½ðÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá221	6	1	667	226	10	È¥ÁúÃÅÕòÍâÉ±½ðÃ¨100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá222	6	1	668	227	10	È¥ÁúÃÅÕòÍâÉ±½ðÃ¨150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá223	6	1	669	228	45	È¥»ÆºÓÔ´Í·É±°×»¢50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá224	6	1	670	229	45	È¥»ÆºÓÔ´Í·É±°×»¢100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá225	6	1	671	230	45	È¥»ÆºÓÔ´Í·É±°×»¢150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá226	6	1	672	231	75	È¥ÀÏ»¢¶´ÃÔ¹¬É±³¤Ç¹50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá227	6	1	673	232	75	È¥ÀÏ»¢¶´ÃÔ¹¬É±³¤Ç¹100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá228	6	1	674	233	75	È¥ÀÏ»¢¶´ÃÔ¹¬É±³¤Ç¹150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá229	6	1	675	234	95	È¥ÐùÔ¯¶´ÃÔ¹¬É±»ÆºÓÏó50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá230	6	1	676	235	95	È¥ÐùÔ¯¶´ÃÔ¹¬É±»ÆºÓÏó100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá231	6	1	677	236	95	È¥ÐùÔ¯¶´ÃÔ¹¬É±»ÆºÓÏó150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá232	6	1	678	237	55	È¥ÁôÏÉ¶´Ò»²ãÉ±¶Ìêª50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá233	6	1	679	238	55	È¥ÁôÏÉ¶´Ò»²ãÉ±¶Ìêª100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá234	6	1	680	239	55	È¥ÁôÏÉ¶´Ò»²ãÉ±¶Ìêª150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá235	6	1	681	240	65	È¥ÁôÏÉ¶´¶þ²ãÉ±ÓñÃæ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá236	6	1	682	241	65	È¥ÁôÏÉ¶´¶þ²ãÉ±ÓñÃæ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá237	6	1	683	242	65	È¥ÁôÏÉ¶´¶þ²ãÉ±ÓñÃæ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá238	6	1	684	243	65	È¥ÁôÏÉ¶´Èý²ãÉ±Á÷ÀË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá239	6	1	685	244	65	È¥ÁôÏÉ¶´Èý²ãÉ±Á÷ÀË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá240	6	1	686	245	65	È¥ÁôÏÉ¶´Èý²ãÉ±Á÷ÀË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá241	6	1	687	246	65	È¥ÁôÏÉ¶´ËÄ²ãÉ±Æ½Ç¹50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá242	6	1	688	247	65	È¥ÁôÏÉ¶´ËÄ²ãÉ±Æ½Ç¹100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá243	6	1	689	248	65	È¥ÁôÏÉ¶´ËÄ²ãÉ±Æ½Ç¹150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá244	6	1	690	249	75	È¥ÁôÏÉ¶´Îå²ãÉ±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá245	6	1	691	250	75	È¥ÁôÏÉ¶´Îå²ãÉ±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá246	6	1	692	251	75	È¥ÁôÏÉ¶´Îå²ãÉ±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá247	6	1	693	252	75	È¥ÁôÏÉ¶´Áù²ãÉ±ÐÐÕß50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá248	6	1	694	253	75	È¥ÁôÏÉ¶´Áù²ãÉ±ÐÐÕß100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá249	6	1	695	254	75	È¥ÁôÏÉ¶´Áù²ãÉ±ÐÐÕß150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá250	6	1	696	255	55	È¥±ùÑ¨ÃÔ¹¬É±Ñ©¹Ö50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá251	6	1	697	256	55	È¥±ùÑ¨ÃÔ¹¬É±Ñ©¹Ö100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá252	6	1	698	257	55	È¥±ùÑ¨ÃÔ¹¬É±Ñ©¹Ö150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá253	6	1	699	258	45	È¥¼ûÐÔ·åÉ½¶´É±¶Û¸«50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá254	6	1	700	259	45	È¥¼ûÐÔ·åÉ½¶´É±¶Û¸«100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá255	6	1	701	260	45	È¥¼ûÐÔ·åÉ½¶´É±¶Û¸«150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá256	6	1	702	261	85	È¥É³Ä®µØ±íÉ±É³Ð«50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá257	6	1	703	262	85	È¥É³Ä®µØ±íÉ±É³Ð«100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá258	6	1	704	263	85	È¥É³Ä®µØ±íÉ±É³Ð«150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá259	6	1	705	264	95	È¥É³Ä®É½¶´1É±Á÷ÔÆ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá260	6	1	706	265	95	È¥É³Ä®É½¶´1É±Á÷ÔÆ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá261	6	1	707	266	95	È¥É³Ä®É½¶´1É±Á÷ÔÆ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá262	6	1	708	267	95	È¥É³Ä®É½¶´2É±Á÷ÔÆ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá263	6	1	709	268	95	È¥É³Ä®É½¶´2É±Á÷ÔÆ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá264	6	1	710	269	95	È¥É³Ä®É½¶´2É±Á÷ÔÆ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá265	6	1	711	273	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá266	6	1	712	273	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá267	6	1	713	273	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá268	6	1	714	273	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá269	6	1	715	274	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá270	6	1	716	275	15	È¥Ò©Íõ¹ÈÉ±ÁéÃ¨150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá271	6	1	717	276	35	È¥Ò©Íõ¶´Ò»²ãÉ±Ìú×¦50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá272	6	1	718	277	35	È¥Ò©Íõ¶´Ò»²ãÉ±Ìú×¦100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá273	6	1	719	278	35	È¥Ò©Íõ¶´Ò»²ãÉ±Ìú×¦150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá274	6	1	720	279	75	È¥Ò©Íõ¶´¶þ²ãÉ±Í­´¸50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá275	6	1	721	280	75	È¥Ò©Íõ¶´¶þ²ãÉ±Í­´¸100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá276	6	1	722	281	75	È¥Ò©Íõ¶´¶þ²ãÉ±Í­´¸150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá277	6	1	723	282	85	È¥Ò©Íõ¶´Èý²ãÉ±À¶½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá278	6	1	724	283	85	È¥Ò©Íõ¶´Èý²ãÉ±À¶½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá279	6	1	725	284	85	È¥Ò©Íõ¶´Èý²ãÉ±À¶½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá280	6	1	726	285	95	È¥Ò©Íõ¶´ËÄ²ãÉ±´©É½50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá281	6	1	727	286	95	È¥Ò©Íõ¶´ËÄ²ãÉ±´©É½100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá282	6	1	728	287	95	È¥Ò©Íõ¶´ËÄ²ãÉ±´©É½150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá283	6	1	729	288	85	È¥¹ÅÑô¶´ÃÔ¹¬É±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá284	6	1	730	289	85	È¥¹ÅÑô¶´ÃÔ¹¬É±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá285	6	1	731	290	85	È¥¹ÅÑô¶´ÃÔ¹¬É±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá286	6	1	732	291	95	È¥Äª¸ß¿ßÉ±·ÉÉ³50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá287	6	1	733	292	95	È¥Äª¸ß¿ßÉ±·ÉÉ³100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá288	6	1	734	293	95	È¥Äª¸ß¿ßÉ±·ÉÉ³150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá289	6	1	735	294	10	È¥Ê¯¹ÄÕòÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá290	6	1	736	295	10	È¥Ê¯¹ÄÕòÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá291	6	1	737	296	10	È¥Ê¯¹ÄÕòÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá292	6	1	738	297	15	È¥´äÑÌÃÅÍâÉ±ä½ÐÜ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá293	6	1	739	298	15	È¥´äÑÌÃÅÍâÉ±ä½ÐÜ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá294	6	1	740	299	15	È¥´äÑÌÃÅÍâÉ±ä½ÐÜ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá295	6	1	741	300	65	È¥½ûµØÃÔ¹¬É±ºÚ½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá296	6	1	742	301	65	È¥½ûµØÃÔ¹¬É±ºÚ½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá297	6	1	743	302	65	È¥½ûµØÃÔ¹¬É±ºÚ½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá298	6	1	744	303	15	È¥´óÀí¸®ÍâÉ±»ðòá50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá299	6	1	745	304	15	È¥´óÀí¸®ÍâÉ±»ðòá100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá300	6	1	746	305	15	È¥´óÀí¸®ÍâÉ±»ðòá150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá301	6	1	747	306	55	È¥¶ñ°Ô¼ÒµØµÀÉ±¶ñ°Ô50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá302	6	1	748	307	55	È¥¶ñ°Ô¼ÒµØµÀÉ±¶ñ°Ô100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá303	6	1	749	308	55	È¥¶ñ°Ô¼ÒµØµÀÉ±¶ñ°Ô150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá304	6	1	750	309	55	È¥Ç§Ñ°ËþÒ»²ãÉ±Ã§ºº50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá305	6	1	751	310	55	È¥Ç§Ñ°ËþÒ»²ãÉ±Ã§ºº100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá306	6	1	752	311	55	È¥Ç§Ñ°ËþÒ»²ãÉ±Ã§ºº150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá307	6	1	753	312	55	È¥Ç§Ñ°Ëþ¶þ²ãÉ±Á÷ÀË50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá308	6	1	754	313	55	È¥Ç§Ñ°Ëþ¶þ²ãÉ±Á÷ÀË100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá309	6	1	755	314	55	È¥Ç§Ñ°Ëþ¶þ²ãÉ±Á÷ÀË150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá310	6	1	756	315	65	È¥Ç§Ñ°ËþÈý²ãÉ±Ë«·æ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá311	6	1	757	316	65	È¥Ç§Ñ°ËþÈý²ãÉ±Ë«·æ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá312	6	1	758	317	65	È¥Ç§Ñ°ËþÈý²ãÉ±Ë«·æ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá313	6	1	759	318	45	È¥µã²ÔÉ½É±â¦áû50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá314	6	1	760	319	45	È¥µã²ÔÉ½É±â¦áû100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá315	6	1	761	320	45	È¥µã²ÔÉ½É±â¦áû150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá316	6	1	762	321	45	È¥·ïÑÛ¶´ÃÔ¹¬É±ºìòð50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá317	6	1	763	322	45	È¥·ïÑÛ¶´ÃÔ¹¬É±ºìòð100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá318	6	1	764	323	45	È¥·ïÑÛ¶´ÃÔ¹¬É±ºìòð150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá319	6	1	765	324	75	È¥ÁúÑÛ¶´ÃÔ¹¬É±Àû¸«50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá320	6	1	766	325	75	È¥ÁúÑÛ¶´ÃÔ¹¬É±Àû¸«100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá321	6	1	767	326	75	È¥ÁúÑÛ¶´ÃÔ¹¬É±Àû¸«150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá322	6	1	768	327	35	È¥ÍÁ·ËÃÔ¹¬É±Ã§ºº50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá323	6	1	769	328	35	È¥ÍÁ·ËÃÔ¹¬É±Ã§ºº100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá324	6	1	770	329	35	È¥ÍÁ·ËÃÔ¹¬É±Ã§ºº150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá325	6	1	771	330	45	È¥µã²Ô¶´Ò»²ãÉ±Ã§ºº50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá326	6	1	772	331	45	È¥µã²Ô¶´Ò»²ãÉ±Ã§ºº100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá327	6	1	773	332	45	È¥µã²Ô¶´Ò»²ãÉ±Ã§ºº150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá328	6	1	774	333	45	È¥µã²Ô¶´¶þ²ãÉ±ÓñÃæ50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá329	6	1	775	334	45	È¥µã²Ô¶´¶þ²ãÉ±ÓñÃæ100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá330	6	1	776	335	45	È¥µã²Ô¶´¶þ²ãÉ±ÓñÃæ150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá331	6	1	777	336	45	È¥µã²Ô¶´Èý²ãÉ±ºÚ½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá332	6	1	778	337	45	È¥µã²Ô¶´Èý²ãÉ±ºÚ½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá333	6	1	779	338	45	È¥µã²Ô¶´Èý²ãÉ±ºÚ½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá334	6	1	780	339	85	È¥ÎÞÃû¶´ÃÔ¹¬É±³¤Ç¹50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá335	6	1	781	340	85	È¥ÎÞÃû¶´ÃÔ¹¬É±³¤Ç¹100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá336	6	1	782	341	85	È¥ÎÞÃû¶´ÃÔ¹¬É±³¤Ç¹150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá337	6	1	783	342	10	È¥ÁúÈª´åÍâÉ±°×Öí50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá338	6	1	784	343	10	È¥ÁúÈª´åÍâÉ±°×Öí100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá339	6	1	785	344	10	È¥ÁúÈª´åÍâÉ±°×Öí150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ1¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá340	6	1	786	345	15	È¥ÁÙ°²³ÇÍâÉ±´Ìâ¬50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá341	6	1	787	346	15	È¥ÁÙ°²³ÇÍâÉ±´Ìâ¬100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá342	6	1	788	347	15	È¥ÁÙ°²³ÇÍâÉ±´Ìâ¬150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ5¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá343	6	1	789	348	25	È¥ÂÞÏöÉ½É±»ÒÀÇ50Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá344	6	1	790	349	25	È¥ÂÞÏöÉ½É±»ÒÀÇ100Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá345	6	1	791	350	25	È¥ÂÞÏöÉ½É±»ÒÀÇ150Ö»£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ15¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá346	6	1	792	351	45	È¥Áú¹¬¶´ÃÔ¹¬É±ºÚ½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá347	6	1	793	352	45	È¥Áú¹¬¶´ÃÔ¹¬É±ºÚ½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá348	6	1	794	353	45	È¥Áú¹¬¶´ÃÔ¹¬É±ºÚ½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ35¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá349	6	1	795	354	85	È¥Á½Ë®¶´ÃÔ¹¬É±Ó°¹÷50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá350	6	1	796	355	85	È¥Á½Ë®¶´ÃÔ¹¬É±Ó°¹÷100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá351	6	1	797	356	85	È¥Á½Ë®¶´ÃÔ¹¬É±Ó°¹÷150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá352	6	1	798	357	55	È¥ÄõÁú¶´ÃÔ¹¬É±Æ½Ç¹50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá353	6	1	799	358	55	È¥ÄõÁú¶´ÃÔ¹¬É±Æ½Ç¹100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá354	6	1	800	359	55	È¥ÄõÁú¶´ÃÔ¹¬É±Æ½Ç¹150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá355	6	1	801	360	35	È¥ÎäÒÄÉ½É±Ñ©±ª50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá356	6	1	802	361	35	È¥ÎäÒÄÉ½É±Ñ©±ª100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá357	6	1	803	362	35	È¥ÎäÒÄÉ½É±Ñ©±ª150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ25¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá358	6	1	804	363	55	È¥Óñ»ª¶´ÃÔ¹¬É±À¶½í50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá359	6	1	805	364	55	È¥Óñ»ª¶´ÃÔ¹¬É±À¶½í100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá360	6	1	806	365	55	È¥Óñ»ª¶´ÃÔ¹¬É±À¶½í150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ45¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá361	6	1	807	366	65	È¥Ñò½Ç¶´ÃÔ¹¬É±÷ÙØ°50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá362	6	1	808	367	65	È¥Ñò½Ç¶´ÃÔ¹¬É±÷ÙØ°100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá363	6	1	809	368	65	È¥Ñò½Ç¶´ÃÔ¹¬É±÷ÙØ°150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ55¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá364	6	1	810	369	85	È¥ÇåÏª¶´ÃÔ¹¬É±·ÉÁ­50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá365	6	1	811	370	85	È¥ÇåÏª¶´ÃÔ¹¬É±·ÉÁ­100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá366	6	1	812	371	85	È¥ÇåÏª¶´ÃÔ¹¬É±·ÉÁ­150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá367	6	1	813	372	75	È¥ÁÙÓå¹ØÉ±±¼À×50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá368	6	1	814	373	75	È¥ÁÙÓå¹ØÉ±±¼À×50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá369	6	1	815	374	75	È¥ÁÙÓå¹ØÉ±±¼À×50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ65¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá370	6	1	816	375	85	È¥³¤°×É½½ÅÉ±¶À²½50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá371	6	1	817	376	85	È¥³¤°×É½½ÅÉ±¶À²½100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá372	6	1	818	377	85	È¥³¤°×É½½ÅÉ±¶À²½150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ75¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá373	6	1	819	378	95	È¥³¤°×É½ÄÏÂ´É±Ëªµ¶50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá374	6	1	820	379	95	È¥³¤°×É½ÄÏÂ´É±Ëªµ¶100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá375	6	1	821	380	95	È¥³¤°×É½ÄÏÂ´É±Ëªµ¶150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá376	6	1	822	381	95	È¥³¤°×É½±±Â´É±µ¶Õ¶50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá377	6	1	823	382	95	È¥³¤°×É½±±Â´É±µ¶Õ¶100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá378	6	1	824	383	95	È¥³¤°×É½±±Â´É±µ¶Õ¶150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá379	6	1	825	384	95	È¥Ä®±±²ÝÔ­É±ÃÉ¹ÅÎäÊ¿50¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá380	6	1	826	385	95	È¥Ä®±±²ÝÔ­É±ÃÉ¹ÅÎäÊ¿100¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
-Í¬°éÐÞÁ¶ÈÎÎñ¾íÖá381	6	1	827	386	95	È¥Ä®±±²ÝÔ­É±ÃÉ¹ÅÎäÊ¿150¸ö£¬Í¬°éµÈ¼¶ÒªÇó²»µÍÓÚ85¼¶
+MËt ®å "§ång hµnh luyÖn cÊp" 1	6	1	447	6	15	§Õn Ph­îng T­êng giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 2	6	1	448	7	15	§Õn Ph­îng T­êng giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 3	6	1	449	8	15	§Õn Ph­îng T­êng giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 4	6	1	450	9	15	§Õn Hoa s¬n  giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 5	6	1	451	10	15	§Õn Hoa s¬n  giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 6	6	1	452	11	15	§Õn Hoa s¬n  giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 7	6	1	453	12	25	§Õn KiÕm C¸c T©y B¾c giÕt 50 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 8	6	1	454	13	25	§Õn KiÕm C¸c T©y B¾c giÕt 100 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 9	6	1	455	14	25	§Õn KiÕm C¸c T©y B¾c giÕt 150 con Sãi ®á, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 10	6	1	456	15	35	§Õn Kim Quang ®éng giÕt 50 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 11	6	1	457	16	35	§Õn Kim Quang ®éng giÕt 100 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 12	6	1	458	17	35	§Õn Kim Quang ®éng giÕt 150 tªn Th¶o KhÊu Gi¸p, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 13	6	1	459	18	45	§Õn Kinh Hoµng ®éng giÕt 50 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 14	6	1	460	19	45	§Õn Kinh Hoµng ®éng giÕt 100 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 15	6	1	461	20	45	§Õn Kinh Hoµng ®éng giÕt 150 tªn Thæ PhØ Gi¸p, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 16	6	1	462	21	45	§Õn Táa V©n ®éng giÕt 50 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 17	6	1	463	22	45	§Õn Táa V©n ®éng giÕt 100 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 18	6	1	464	23	45	§Õn Táa V©n ®éng giÕt 150 tªn s¬n  tÆc Êt, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 19	6	1	465	24	25	§Õn TÇn L¨ng giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 20	6	1	466	25	25	§Õn TÇn L¨ng giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 21	6	1	467	26	25	§Õn TÇn L¨ng giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 22	6	1	468	27	35	§Õn tÇng 1 TÇn L¨ng giÕt 50 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 23	6	1	469	28	35	§Õn tÇng 1 TÇn L¨ng giÕt 100 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 24	6	1	470	29	35	§Õn tÇng 1 TÇn L¨ng giÕt 150 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 25	6	1	471	30	75	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 26	6	1	472	31	75	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 27	6	1	473	32	75	§Õn tÇng 2 TÇn L¨ng giÕt 50 coi D¬i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 28	6	1	474	33	85	§Õn tÇng 3 TÇn L¨ng giÕt 50 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 29	6	1	475	34	85	§Õn tÇng 3 TÇn l¨ng L¨ng giÕt 100 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 30	6	1	476	35	85	§Õn tÇng 3 TÇn l¨ng L¨ng giÕt 150 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 31	6	1	477	36	85	§Õn B¨ng Hµ ®éng giÕt 50 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 32	6	1	478	37	85	§Õn B¨ng Hµ ®éng giÕt 100 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 33	6	1	479	38	85	§Õn B¨ng Hµ ®éng giÕt 150 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 34	6	1	480	39	10	VÜnh L¹c trÊn giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 35	6	1	481	40	10	VÜnh L¹c trÊn giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 36	6	1	482	41	10	VÜnh L¹c trÊn giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 37	6	1	483	42	75	§Õn Tr­êng Giang Nguyªn ®Çu giÕt 50 ¸c Ni, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 38	6	1	484	43	75	§Õn Tr­êng Giang Nguyªn ®Çu giÕt 100 ¸c Ni, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 39	6	1	485	44	75	§Õn Tr­êng Giang Nguyªn ®Çu giÕt 150 ¸c Ni, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 40	6	1	486	45	85	§Õn Nh¹n Th¹ch ®éng giÕt 50 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 41	6	1	487	46	85	§Õn Nh¹n Th¹ch ®éng giÕt 100 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 42	6	1	488	47	85	§Õn Nh¹n Th¹ch ®éng giÕt 150 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 43	6	1	489	48	15	§Õn Thµnh §« giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 44	6	1	490	49	15	§Õn Thµnh §« giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 45	6	1	491	50	15	§Õn Thµnh §« giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 46	6	1	492	51	55	§Õn MËt ®¹o TÝn T­íng tù giÕt 50 tªn Hung T¨ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 47	6	1	493	52	55	§Õn MËt ®¹o TÝn T­íng tù giÕt 100 tªn Hung T¨ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 48	6	1	494	53	55	§Õn MËt ®¹o TÝn T­íng tù giÕt 150 tªn Hung T¨ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 49	6	1	495	54	15	§Õn Nga Mi ph¸i giÕt 50 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 50	6	1	496	55	15	§Õn Nga Mi ph¸i giÕt 100 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 51	6	1	497	56	15	§Õn Nga Mi ph¸i giÕt 150 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 52	6	1	498	57	25	§Õn M·nh Hæ ®éng giÕt 50 con B¹ch S¸t Hæ, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 53	6	1	499	58	25	§Õn M·nh Hæ ®éng giÕt 100 con B¹ch S¸t Hæ, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 54	6	1	500	59	25	§Õn M·nh Hæ ®éng giÕt 150 con B¹ch S¸t Hæ, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 55	6	1	501	60	25	§Õn KiÕm C¸c T©y Nam giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 56	6	1	502	61	25	§Õn KiÕm C¸c T©y Nam giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 57	6	1	503	62	25	§Õn KiÕm C¸c T©y Nam giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 58	6	1	504	63	10	§Õn Giang T©n th«n giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 59	6	1	505	64	10	§Õn Giang T©n th«n giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 60	6	1	506	65	10	§Õn Giang T©n th«n giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 61	6	1	507	66	45	§Õn Thanh Thµnh s¬n  giÕt 50 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 62	6	1	508	67	45	§Õn Thanh Thµnh s¬n  giÕt 100 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 63	6	1	509	68	45	§Õn Thanh Thµnh s¬n  giÕt 150 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 64	6	1	510	69	35	§Õn B¹ch V©n ®éng giÕt 50 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 65	6	1	511	70	35	§Õn B¹ch V©n ®éng giÕt 100 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 66	6	1	512	71	35	§Õn B¹ch V©n ®éng giÕt 150 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 67	6	1	513	72	45	§Õn ThÇn Tiªn ®éng giÕt 50 tªn Tr­êng ®ao, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 68	6	1	514	73	45	§Õn ThÇn Tiªn ®éng giÕt 100 tªn Tr­êng ®ao, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 69	6	1	515	74	45	§Õn ThÇn Tiªn ®éng giÕt 150 tªn Tr­êng ®ao, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 70	6	1	516	75	55	§Õn H­ëng Thñy ®éng giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 71	6	1	517	76	55	§Õn H­ëng Thñy ®éng giÕt 100 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 72	6	1	518	77	55	§Õn H­ëng Thñy ®éng giÕt 150 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 73	6	1	519	78	15	§Õn §­êng M«n giÕt 50 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 74	6	1	520	79	15	§Õn §­êng M«n giÕt 100 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 75	6	1	521	80	15	§Õn §­êng M«n giÕt 150 con khØ ngùa, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 76	6	1	522	81	85	§Õn Phï Dung ®éng giÕt 50 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 77	6	1	523	82	85	§Õn Phï Dung ®éng giÕt 100 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 78	6	1	524	83	85	§Õn Phï Dung ®éng giÕt 150 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 79	6	1	525	84	15	§Õn BiÖn Kinh giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 80	6	1	526	85	15	§Õn BiÖn Kinh giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 81	6	1	527	86	15	§Õn BiÖn Kinh giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 82	6	1	528	87	55	§Õn tÇng 1 ThiÕt Th¸p giÕt 50 tªn §ao binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 83	6	1	529	88	55	§Õn tÇng 1 ThiÕt Th¸p giÕt 100 tªn §ao binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 84	6	1	530	89	55	§Õn tÇng 1 ThiÕt Th¸p giÕt 150 tªn §ao binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 85	6	1	531	90	55	§Õn tÇng 2 ThiÕt Th¸p giÕt 50 tªn Th­¬ng binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 86	6	1	532	91	55	§Õn tÇng 2 ThiÕt Th¸p giÕt 50 tªn Th­¬ng binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 87	6	1	533	92	55	§Õn tÇng 2 ThiÕt Th¸p giÕt 50 tªn Th­¬ng binh, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 88	6	1	534	93	45	§Õn Phôc Ng­u s¬n t©y giÕt 50 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 89	6	1	535	94	45	§Õn Phôc Ng­u s¬n t©y giÕt 100 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 90	6	1	536	95	45	§Õn Phôc Ng­u s¬n t©y giÕt 150 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 91	6	1	537	96	55	§Õn Thiªn T©m ®éng giÕt 50 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 92	6	1	538	97	55	§Õn Thiªn T©m ®éng giÕt 100 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 93	6	1	539	98	55	§Õn Thiªn T©m ®éng giÕt 150 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 94	6	1	540	99	25	§Õn KiÕm C¸c Trung Nguyªn giÕt 50 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 95	6	1	541	100	25	§Õn KiÕm C¸c Trung Nguyªn giÕt 100 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 96	6	1	542	101	25	§Õn KiÕm C¸c Trung Nguyªn giÕt 150 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 97	6	1	543	102	15	§Õn Thiªn NhÉn  gi¸o  giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 98	6	1	544	103	15	§Õn Thiªn NhÉn  gi¸o  giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 99	6	1	545	104	15	§Õn Thiªn NhÉn  gi¸o  giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 100	6	1	546	105	15	§Õn tÇng 1 Thiªn NhÉn  gi¸o giÕt 50 con D¬i, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 101	6	1	547	106	15	§Õn tÇng 1 Thiªn NhÉn  gi¸o giÕt 100 con D¬i, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 102	6	1	548	107	15	§Õn tÇng 1 Thiªn NhÉn  gi¸o giÕt 150 con D¬i, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 103	6	1	549	108	15	§Õn ThÊt S¸t ®éng giÕt 50 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 104	6	1	550	109	15	§Õn ThÊt S¸t ®éng giÕt 100 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 105	6	1	551	110	15	§Õn ThÊt S¸t ®éng giÕt 150 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 106	6	1	552	111	10	§Õn Chu Tiªn trÊn giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 107	6	1	553	112	10	§Õn Chu Tiªn trÊn giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 108	6	1	554	113	10	§Õn Chu Tiªn trÊn giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 109	6	1	555	114	10	§Õn Ba L¨ng huyÖn giÕt 50 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 110	6	1	556	115	10	§Õn Ba L¨ng huyÖn giÕt 100 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 111	6	1	557	116	10	§Õn Ba L¨ng huyÖn giÕt 150 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 112	6	1	558	117	15	§Õn Nam Nh¹c trÊn giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 113	6	1	559	118	15	§Õn Nam Nh¹c trÊn giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 114	6	1	560	119	15	§Õn Nam Nh¹c trÊn giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 115	6	1	561	120	75	§Õn §µo Hoa Nguyªn giÕt 50 con H­¬u ®èm, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 116	6	1	562	121	75	§Õn §µo Hoa Nguyªn giÕt 100 con H­¬u ®èm, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 117	6	1	563	122	75	§Õn §µo Hoa Nguyªn giÕt 150 con H­¬u ®èm, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 118	6	1	564	123	65	§Õn Hoµnh s¬n  ph¸i giÕt 50 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 119	6	1	565	124	65	§Õn Hoµnh s¬n  ph¸i giÕt 100 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 120	6	1	566	125	65	§Õn Hoµnh s¬n  ph¸i giÕt 150 con Kim §iªu, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 121	6	1	567	126	15	§Õn Thiªn V­¬ng  ®¶o s¬n  ®éng giÕt 50 con Kim Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 122	6	1	568	127	15	§Õn Thiªn V­¬ng  ®¶o s¬n  ®éng giÕt 100 con Kim Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 123	6	1	569	128	15	§Õn Thiªn V­¬ng  ®¶o s¬n  ®éng giÕt 150 con Kim Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 124	6	1	570	129	55	§Õn tÇng 1 §éng §×nh Hå giÕt 50 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 125	6	1	571	130	55	§Õn tÇng 1 §éng §×nh Hå giÕt 100 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 126	6	1	572	131	55	§Õn tÇng 1 §éng §×nh Hå giÕt 150 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 127	6	1	573	132	65	§Õn Thanh Loa ®¶o giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 128	6	1	574	133	65	§Õn Thanh Loa ®¶o giÕt 100 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 129	6	1	575	134	65	§Õn Thanh Loa ®¶o giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 130	6	1	576	135	75	§Õn Thanh Loa ®¶o s¬n  ®éng giÕt 50 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 131	6	1	577	136	75	§Õn Thanh Loa ®¶o s¬n  ®éng giÕt 100 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 132	6	1	578	137	75	§Õn Thanh Loa ®¶o s¬n  ®éng giÕt 150 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 133	6	1	579	138	25	§Õn Vò L¨ng s¬n  giÕt 50 con Th­¬ng ¦ng, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 134	6	1	580	139	25	§Õn Vò L¨ng s¬n  giÕt 100 con Th­¬ng ¦ng, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 135	6	1	581	140	25	§Õn Vò L¨ng s¬n  giÕt 150 con Th­¬ng ¦ng, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 136	6	1	582	141	25	§Õn B¹ch Thñy ®éng giÕt 50 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 137	6	1	583	142	25	§Õn B¹ch Thñy ®éng giÕt 100 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 138	6	1	584	143	25	§Õn B¹ch Thñy ®éng giÕt 150 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 139	6	1	585	144	75	§Õn §¹i Tï ®éng giÕt 50 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 140	6	1	586	145	75	§Õn §¹i Tï ®éng giÕt 100 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 141	6	1	587	146	75	§Õn §¹i Tï ®éng giÕt 150 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 142	6	1	588	147	25	§Õn Phôc L­u ®éng giÕt 50 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 143	6	1	589	148	25	§Õn Phôc L­u ®éng giÕt 100 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 144	6	1	590	149	25	§Õn Phôc L­u ®éng giÕt 150 con c¸ sÊu, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 145	6	1	591	150	35	§Õn Miªu LÜnh giÕt 50 con tr©u rõng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 146	6	1	592	151	35	§Õn Miªu LÜnh giÕt 100 con tr©u rõng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 147	6	1	593	152	35	§Õn Miªu LÜnh giÕt 150 con tr©u rõng, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 148	6	1	594	153	95	§Õn Kho¶ Lang ®éng giÕt 50 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 149	6	1	595	154	95	§Õn Kho¶ Lang ®éng giÕt 100 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 150	6	1	596	155	95	§Õn Kho¶ Lang ®éng giÕt 150 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 151	6	1	597	156	75	§Õn S¬n B¶o ®éng giÕt 50 Háa Viªm Hæ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 152	6	1	598	157	75	§Õn S¬n B¶o ®éng giÕt 100 Háa Viªm Hæ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 153	6	1	599	158	75	§Õn S¬n B¶o ®éng giÕt 150 Háa Viªm Hæ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 154	6	1	600	159	35	§Õn YÕn Tö ®éng giÕt 50 con D¬i, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 155	6	1	601	160	35	§Õn YÕn Tö ®éng giÕt 100 con D¬i, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 156	6	1	602	161	35	§Õn YÕn Tö ®éng giÕt 150 con D¬i, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 157	6	1	603	162	85	§Õn Vò L¨ng ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 158	6	1	604	163	85	§Õn Vò L¨ng ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 159	6	1	605	164	85	§Õn Vò L¨ng ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 160	6	1	606	165	15	§Õn T­¬ng D­¬ng giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 161	6	1	607	166	15	§Õn T­¬ng D­¬ng giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 162	6	1	608	167	15	§Õn T­¬ng D­¬ng giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 163	6	1	609	168	65	§Õn T­¬ng D­¬ng mËt ®¹o giÕt 50 tªn §ao binh §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 164	6	1	610	169	65	§Õn T­¬ng D­¬ng mËt ®¹o giÕt 100 tªn §ao binh, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 165	6	1	611	170	65	§Õn T­¬ng D­¬ng mËt ®¹o giÕt 150 tªn §ao binh, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 166	6	1	612	171	15	§Õn D­¬ng Ch©u giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 167	6	1	613	172	15	§Õn D­¬ng Ch©u giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 168	6	1	614	173	15	§Õn D­¬ng Ch©u giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 169	6	1	615	174	25	§Õn Háa Lang ®éng giÕt 50 con Th­¬ng H©n, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 170	6	1	616	175	25	§Õn Háa Lang ®éng giÕt 100 con Th­¬ng H©n, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 171	6	1	617	176	25	§Õn Háa Lang ®éng giÕt 150 con Th­¬ng H©n, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 172	6	1	618	177	35	§Õn Phôc Ng­u s¬n  §«ng giÕt 50 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 173	6	1	619	178	35	§Õn Phôc Ng­u s¬n  §«ng giÕt 100 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 174	6	1	620	179	35	§Õn Phôc Ng­u s¬n  §«ng giÕt 150 con Sãi xanh, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 175	6	1	621	180	45	§Õn Kª Qu¸n ®éng giÕt 50 con Háa V©n Hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 176	6	1	622	181	45	§Õn Kª Qu¸n ®éng giÕt 100 con Háa V©n Hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 177	6	1	623	182	45	§Õn Kª Qu¸n ®éng giÕt 150 con Háa V©n Hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 178	6	1	624	183	35	§Õn Thôc C­¬ng s¬n  giÕt 50 con khØ x¸m, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 179	6	1	625	184	35	§Õn Thôc C­¬ng s¬n  giÕt 100 con khØ x¸m, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 180	6	1	626	185	35	§Õn Thôc C­¬ng s¬n  giÕt 150 con khØ x¸m, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 181	6	1	627	186	95	§Õn TiÕn Cóc ®éng giÕt 50 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 182	6	1	628	187	95	§Õn TiÕn Cóc ®éng giÕt 100 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 183	6	1	629	188	95	§Õn TiÕn Cóc ®éng giÕt 150 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 184	6	1	630	189	75	§Õn Linh Cèc ®éng giÕt 50 con GÊu n©u, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 185	6	1	631	190	75	§Õn Linh Cèc ®éng giÕt 100 con GÊu n©u, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 186	6	1	632	191	75	§Õn Linh Cèc ®éng giÕt 150 con GÊu n©u, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 187	6	1	633	192	10	§Õn §¹o H­¬ng th«n giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 188	6	1	634	193	10	§Õn §¹o H­¬ng th«n giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 189	6	1	635	194	10	§Õn §¹o H­¬ng th«n giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 190	6	1	636	195	15	§Õn Méc Nh©n H¹ng giÕt 50 tªn Méc nh©n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 191	6	1	637	196	15	§Õn Méc Nh©n H¹ng L¨ng giÕt 100 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 192	6	1	638	197	15	§Õn Méc Nh©n H¹ng L¨ng giÕt 150 Méc nh©n, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 193	6	1	639	198	45	§Õn ThiÕu L©m MËt thÊt giÕt 50 tªn §ång nh©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 194	6	1	640	199	45	§Õn ThiÕu L©m MËt thÊt giÕt 100 tªn §ång nh©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 195	6	1	641	200	45	§Õn ThiÕu L©m MËt thÊt giÕt 150 tªn §ång nh©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 196	6	1	642	201	85	§Õn Phi Thiªn ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 197	6	1	643	202	85	§Õn Phi Thiªn ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 198	6	1	644	203	85	§Õn Phi Thiªn ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 199	6	1	645	204	85	§Õn Phong L¨ng §é giÕt 50 tªn ThÇn Tý, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 200	6	1	646	205	85	§Õn Phong L¨ng §é giÕt 100 tªn ThÇn Tý, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 201	6	1	647	206	85	§Õn Phong L¨ng §é giÕt 150 tªn ThÇn Tý, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 202	6	1	648	207	55	§Õn tÇng 1 T­êng V©n ®éng giÕt 50 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 203	6	1	649	208	55	§Õn tÇng 1 T­êng V©n ®éng giÕt 100 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 204	6	1	650	209	55	§Õn tÇng 1 T­êng V©n ®éng giÕt 150 tªn §ao Kh¸ch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 205	6	1	651	210	65	§Õn tÇng 2 T­êng V©n ®éng giÕt 50 tªn s¬n  tÆc, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 206	6	1	652	211	65	§Õn tÇng 2 T­êng V©n ®éng giÕt 100 tªn s¬n  tÆc, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 207	6	1	653	212	65	§Õn tÇng 2 T­êng V©n ®éng giÕt 150 tªn s¬n  tÆc, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 208	6	1	654	213	65	§Õn tÇng 3 T­êng V©n ®éng giÕt 50 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 209	6	1	655	214	65	§Õn tÇng 3 T­êng V©n ®éng giÕt 100 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 210	6	1	656	215	65	§Õn tÇng 3 T­êng V©n ®éng giÕt 150 Lang Bæng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 211	6	1	657	216	65	§Õn tÇng 4 T­êng V©n ®éng giÕt 50 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 212	6	1	658	217	65	§Õn tÇng 4 T­êng V©n ®éng giÕt 100 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 213	6	1	659	218	65	§Õn tÇng 4 T­êng V©n ®éng giÕt 150 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 214	6	1	660	219	75	§Õn tÇng 5 T­êng V©n ®éng giÕt 50 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 215	6	1	661	220	75	§Õn tÇng 5 T­êng V©n ®éng giÕt 100 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 216	6	1	662	221	75	§Õn tÇng 5 T­êng V©n ®éng giÕt 150 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 217	6	1	663	222	85	§Õn D­¬ng Trung ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 218	6	1	664	223	85	§Õn D­¬ng Trung ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 219	6	1	665	224	85	§Õn D­¬ng Trung ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 220	6	1	666	225	10	§Õn Long M«n trÊn giÕt 50 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 221	6	1	667	226	10	§Õn Long M«n trÊn giÕt 100 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 222	6	1	668	227	10	§Õn Long M«n trÊn giÕt 150 con Kim Miªu.
+MËt ®å "§ång hµnh luyÖn cÊp" 223	6	1	669	228	45	§Õn Hoµng hµ Nguyªn ®Çu giÕt 50 con B¹ch hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 224	6	1	670	229	45	§Õn Hoµng hµ Nguyªn ®Çu giÕt 100 con B¹ch hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 225	6	1	671	230	45	§Õn Hoµng hµ Nguyªn ®Çu giÕt 150 con B¹ch hæ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 226	6	1	672	231	75	§Õn L·o Hæ ®éng giÕt 50 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 227	6	1	673	232	75	§Õn L·o Hæ ®éng giÕt 100 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 228	6	1	674	233	75	§Õn L·o Hæ ®éng giÕt 150 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 229	6	1	675	234	95	§Õn C¸n Viªn ®éng giÕt 50 con Voi Hoµng hµ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 230	6	1	676	235	95	§Õn C¸n Viªn ®éng giÕt 100 con Voi Hoµng hµ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 231	6	1	677	236	95	§Õn C¸n Viªn ®éng giÕt 150 con Voi Hoµng hµ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 232	6	1	678	237	55	§Õn tÇng 1 L­u Tiªn ®éng giÕt 50 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 233	6	1	679	238	55	§Õn tÇng 1 L­u Tiªn ®éng giÕt 100 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 234	6	1	680	239	55	§Õn tÇng 1 L­u Tiªn ®éng giÕt 150 tªn §o¶n KÝch, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 235	6	1	681	240	65	§Õn tÇng 2 L­u Tiªn ®éng giÕt 50 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 236	6	1	682	241	65	§Õn tÇng 2 L­u Tiªn ®éng giÕt 100 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 237	6	1	683	242	65	§Õn tÇng 2 L­u Tiªn ®éng giÕt 150 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 238	6	1	684	243	65	§Õn tÇng 3 L­u Tiªn ®éng giÕt 50 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 239	6	1	685	244	65	§Õn tÇng 3 L­u Tiªn ®éng giÕt 100 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 240	6	1	686	245	65	§Õn tÇng 3 L­u Tiªn ®éng giÕt 150 tªn L­u Lang, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 241	6	1	687	246	65	§Õn tÇng 4 L­u Tiªn ®éng giÕt 50 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 242	6	1	688	247	65	§Õn tÇng 4 L­u Tiªn ®éng giÕt 100 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 243	6	1	689	248	65	§Õn tÇng 4 L­u Tiªn ®éng giÕt 150 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 244	6	1	690	249	75	§Õn tÇng 5 L­u Tiªn ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 245	6	1	691	250	75	§Õn tÇng 5 L­u Tiªn ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 246	6	1	692	251	75	§Õn tÇng 5 L­u Tiªn ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 247	6	1	693	252	75	§Õn tÇng 6 L­u Tiªn ®éng giÕt 50 tªn Hµnh Gi¶, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 248	6	1	694	253	75	§Õn tÇng 6 L­u Tiªn ®éng giÕt 100 tªn Hµnh Gi¶, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 249	6	1	695	254	75	§Õn tÇng 6 L­u Tiªn ®éng giÕt 150 tªn Hµnh Gi¶, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 250	6	1	696	255	55	§Õn B¨ng HuyÖt ®éng giÕt 50 con TuyÕt Qu¸i, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 251	6	1	697	256	55	§Õn B¨ng HuyÖt ®éng giÕt 100 con TuyÕt Qu¸i, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 252	6	1	698	257	55	§Õn B¨ng HuyÖt ®éng giÕt 150 con TuyÕt Qu¸i, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 253	6	1	699	258	45	§Õn KiÕn TÝnh Phong s¬n  ®éng giÕt 50 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 254	6	1	700	259	45	§Õn KiÕn TÝnh Phong s¬n  ®éng giÕt 100 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 255	6	1	701	260	45	§Õn KiÕn TÝnh Phong s¬n  ®éng giÕt 150 tªn §én Phñ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 256	6	1	702	261	85	§Õn Sa m¹c §Þa biÓu giÕt 50 con bß c¹p, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 257	6	1	703	262	85	§Õn Sa m¹c §Þa biÓu giÕt 100 con bß c¹p, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 258	6	1	704	263	85	§Õn Sa m¹c §Þa biÓu giÕt 150 con bß c¹p, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 259	6	1	705	264	95	§Õn tÇng 1 Sa M¹c s¬n  ®éng giÕt 50 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 260	6	1	706	265	95	§Õn tÇng 1 Sa M¹c s¬n  ®éng giÕt 100 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 261	6	1	707	266	95	§Õn tÇng 1 Sa M¹c s¬n  ®éng giÕt 150 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 262	6	1	708	267	95	§Õn tÇng 2 Sa M¹c s¬n  ®éng giÕt 50 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 263	6	1	709	268	95	§Õn tÇng 2 Sa M¹c s¬n  ®éng giÕt 100 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 264	6	1	710	269	95	§Õn tÇng 2 Sa M¹c s¬n  ®éng giÕt 150 tªn L­u V©n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 265	6	1	711	270	35	§Õn Kho¸i Ho¹t l©m giÕt 50 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 266	6	1	712	271	35	§Õn Kho¸i Ho¹t l©m giÕt 100 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 267	6	1	713	272	35	§Õn Kho¸i Ho¹t l©m giÕt 150 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 268	6	1	714	273	15	§Õn D­îc V­¬ng  giÕt 50 con Linh Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 269	6	1	715	274	15	§Õn D­îc V­¬ng cèc giÕt 100 con Linh Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 270	6	1	716	275	15	§Õn D­îc V­¬ng cèc giÕt 150 con Linh Miªu, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 271	6	1	717	276	35	§Õn tÇng 1 D­îc V­¬ng ®éng giÕt 50 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 272	6	1	718	277	35	§Õn tÇng 1 D­îc V­¬ng ®éng giÕt 100 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 273	6	1	719	278	35	§Õn tÇng 1 D­îc V­¬ng ®éng giÕt 150 tªn ThiÕt Tr¶o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 274	6	1	720	279	75	§Õn tÇng 2 D­îc V­¬ng ®éng giÕt 50 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 275	6	1	721	280	75	§Õn tÇng 2 D­îc V­¬ng ®éng giÕt 100 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 276	6	1	722	281	75	§Õn tÇng 2 D­îc V­¬ng ®éng giÕt 150 tªn §ång Chïy, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 277	6	1	723	282	85	§Õn tÇng 3 D­îc V­¬ng ®éng giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 278	6	1	724	283	85	§Õn tÇng 3 D­îc V­¬ng ®éng giÕt 100 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 279	6	1	725	284	85	§Õn tÇng 3 D­îc V­¬ng ®éng giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 280	6	1	726	285	95	§Õn tÇng 4 D­îc V­¬ng ®éng giÕt 50 tªn Xuyªn s¬n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 281	6	1	727	286	95	§Õn tÇng 4 D­îc V­¬ng ®éng giÕt 100 tªn Xuyªn s¬n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 282	6	1	728	287	95	§Õn tÇng 4 D­îc V­¬ng ®éng giÕt 150 tªn Xuyªn s¬n, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 283	6	1	729	288	85	§Õn Cæ D­¬ng ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 284	6	1	730	289	85	§Õn Cæ D­¬ng ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 285	6	1	731	290	85	§Õn Cæ D­¬ng ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 286	6	1	732	291	95	§Õn M¹c Cao QuËt giÕt 50 tªn Phi Sa, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 287	6	1	733	292	95	§Õn M¹c Cao QuËt giÕt 100 tªn Phi Sa, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 288	6	1	734	293	95	§Õn M¹c Cao QuËt giÕt 150 tªn Phi Sa, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 289	6	1	735	294	10	§Õn Th¹ch Cæ trÊn giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 290	6	1	736	295	10	§Õn Th¹ch Cæ trÊn giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 291	6	1	737	296	10	§Õn Th¹ch Cæ trÊn giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 292	6	1	738	297	15	§Õn Thóy Yªn m«n giÕt 50 con Ho¸n hïng, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 293	6	1	739	298	15	§Õn Thóy Yªn m«n giÕt 100 con Ho¸n hïng, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 294	6	1	740	299	15	§Õn Thóy Yªn m«n giÕt 150 con Ho¸n hïng, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 295	6	1	741	300	65	§Õn CÊm ®Þa mª cung giÕt 50 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 296	6	1	742	301	65	§Õn CÊm ®Þa mª cung giÕt 100 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 297	6	1	743	302	65	§Õn CÊm ®Þa mª cung giÕt 150 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 298	6	1	744	303	15	§Õn §¹i Lý giÕt 50 con Th»n l»n ®á, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 299	6	1	745	304	15	§Õn §¹i Lý giÕt 100 con Th»n l»n ®á, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 300	6	1	746	305	15	§Õn §¹i Lý giÕt 150 con Th»n l»n ®á, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 301	6	1	747	306	55	§Õn ¸c B¸ Gia ®Þa ®¹o giÕt 50 tªn ¸c B¸, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 302	6	1	748	307	55	§Õn ¸c B¸ Gia ®Þa ®¹o giÕt 100 tªn ¸c B¸, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 303	6	1	749	308	55	§Õn ¸c B¸ Gia ®Þa ®¹o giÕt 150 tªn ¸c B¸, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 304	6	1	750	309	55	§Õn tÇng 1 Thiªn TÇm th¸p giÕt 50 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 305	6	1	751	310	55	§Õn tÇng 1 Thiªn TÇm th¸p giÕt 100 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 306	6	1	752	311	55	§Õn tÇng 1 Thiªn TÇm th¸p giÕt 150 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 307	6	1	753	312	55	§Õn tÇng 2 Thiªn TÇm th¸p giÕt 50 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 308	6	1	754	313	55	§Õn tÇng 2 Thiªn TÇm th¸p giÕt 100 tªn L­u L·ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 309	6	1	755	314	55	§Õn tÇng 2 Thiªn TÇm th¸p giÕt 150 tªn L­u Lang, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 310	6	1	756	315	65	§Õn tÇng 3 Thiªn TÇm th¸p giÕt 50 tªn Song Phong, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 311	6	1	757	316	65	§Õn tÇng 3 Thiªn TÇm th¸p giÕt 100 tªn Song Phong, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 312	6	1	758	317	65	§Õn tÇng 3 Thiªn TÇm th¸p giÕt 150 tªn Song Phong, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 313	6	1	759	318	45	§Õn §iÓm Th­¬ng s¬n  giÕt 50 con X¸ LÞ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 314	6	1	760	319	45	§Õn §iÓm Th­¬ng s¬n  giÕt 100 con X¸ LÞ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 315	6	1	761	320	45	§Õn §iÓm Th­¬ng s¬n  giÕt 150 con X¸ LÞ, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 316	6	1	762	321	45	§Õn Phông Nh·n ®éng giÕt 50 con D¬i ®á, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 317	6	1	763	322	45	§Õn Phông Nh·n ®éng giÕt 100 con D¬i ®á, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 318	6	1	764	323	45	§Õn Phông Nh·n ®éng giÕt 150 con D¬i ®á, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 319	6	1	765	324	75	§Õn Long Nh·n ®éng  giÕt 50 con Lîi Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 320	6	1	766	325	75	§Õn Long Nh·n ®éng  giÕt 100 con Lîi Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 321	6	1	767	326	75	§Õn Long Nh·n ®éng  giÕt 150 con Lîi Phñ, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 322	6	1	768	327	35	§Õn Thæ PhØ ®éng giÕt 50 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 323	6	1	769	328	35	§Õn Thæ PhØ ®éng giÕt 100 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 324	6	1	770	329	35	§Õn Thæ PhØ ®éng giÕt 150 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 325	6	1	771	330	45	§Õn tÇng 1 §iÓm Th­¬ng ®éng giÕt 50 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 326	6	1	772	331	45	§Õn tÇng 1 §iÓm Th­¬ng ®éng giÕt 100 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 327	6	1	773	332	45	§Õn tÇng 1 §iÓm Th­¬ng ®éng giÕt 150 tªn M·ng H¸n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 328	6	1	774	333	45	§Õn tÇng 2 §iÓm Th­¬ng ®éng giÕt 50 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 329	6	1	775	334	45	§Õn tÇng 2 §iÓm Th­¬ng ®éng giÕt 100 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 330	6	1	776	335	45	§Õn tÇng 2 §iÓm Th­¬ng ®éng giÕt 150 tªn Ngäc DiÖn, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 331	6	1	777	336	45	§Õn tÇng 3 §iÓm Th­¬ng ®éng giÕt 50 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 332	6	1	778	337	45	§Õn tÇng 3 §iÓm Th­¬ng ®éng giÕt 100 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 333	6	1	779	338	45	§Õn tÇng 3 §iÓm Th­¬ng ®éng giÕt 150 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 334	6	1	780	339	85	§Õn V« Danh ®éng giÕt 50 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 335	6	1	781	340	85	§Õn V« Danh ®éng giÕt 100 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 336	6	1	782	341	85	§Õn V« Danh ®éng giÕt 150 tªn Tr­êng Th­¬ng, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 337	6	1	783	342	10	§Õn Long TuyÒn th«n giÕt 50 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 338	6	1	784	343	10	§Õn Long TuyÒn th«n giÕt 100 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 339	6	1	785	344	10	§Õn Long TuyÒn th«n giÕt 150 con Heo tr¾ng.
+MËt ®å "§ång hµnh luyÖn cÊp" 340	6	1	786	345	15	§Õn L©m An giÕt 50 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 341	6	1	787	346	15	§Õn L©m An giÕt 100 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 342	6	1	788	347	15	§Õn L©m An giÕt 150 con nhÝm, §ång hµnh ®¼ng cÊp tõ 5 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 343	6	1	789	348	25	§Õn La Tiªu s¬n  giÕt 50 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 344	6	1	790	349	25	§Õn La Tiªu s¬n  giÕt 100 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 345	6	1	791	350	25	§Õn La Tiªu s¬n  giÕt 150 con Sãi x¸m, §ång hµnh ®¼ng cÊp tõ 15 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 346	6	1	792	351	45	§Õn Long Cung ®éng giÕt 50 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 347	6	1	793	352	45	§Õn Long Cung ®éng giÕt 100 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 348	6	1	794	353	45	§Õn Long Cung ®éng giÕt 150 tªn H¾c C©n, §ång hµnh ®¼ng cÊp tõ 35 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 349	6	1	795	354	85	§Õn L­ìng Thñy ®éng giÕt 50 tªn ¶nh C«n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 350	6	1	796	355	85	§Õn L­ìng Thñy ®éng giÕt 100 tªn ¶nh C«n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 351	6	1	797	356	85	§Õn L­ìng Thñy ®éng giÕt 150 tªn ¶nh C«n, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 352	6	1	798	357	55	§Õn NghiÖt Long ®éng giÕt 50 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 353	6	1	799	358	55	§Õn NghiÖt Long ®éng giÕt 100 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 354	6	1	800	359	55	§Õn NghiÖt Long ®éng giÕt 150 tªn B×nh Th­¬ng, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 355	6	1	801	360	35	§Õn Vò Di s¬n  giÕt 50 tªn TuyÕt B¸o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 356	6	1	802	361	35	§Õn Vò Di s¬n  giÕt 100 tªn TuyÕt B¸o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 357	6	1	803	362	35	§Õn Vò Di s¬n  giÕt 150 tªn TuyÕt B¸o, §ång hµnh ®¼ng cÊp tõ 25 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 358	6	1	804	363	55	§Õn Ngäc Hoa ®éng giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 359	6	1	805	364	55	§Õn Ngäc Hoa ®éng giÕt 100 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 360	6	1	806	365	55	§Õn Ngäc Hoa ®éng giÕt 50 tªn Lam C©n, §ång hµnh ®¼ng cÊp tõ 45 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 361	6	1	807	366	65	§Õn D­¬ng Gi¸c ®éng giÕt 50 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 362	6	1	808	367	65	§Õn D­¬ng Gi¸c ®éng giÕt 100 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 363	6	1	809	368	65	§Õn D­¬ng Gi¸c ®éng giÕt 150 tªn KÕ Chñy, §ång hµnh ®¼ng cÊp tõ 55 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 364	6	1	810	369	85	§Õn Thanh Khª ®éng giÕt 50 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 365	6	1	811	370	85	§Õn Thanh Khª ®éng giÕt 100 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 366	6	1	812	371	85	§Õn Thanh Khª ®éng giÕt 150 tªn Phi Liªm, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 367	6	1	813	372	75	§Õn L©m Du Quan  giÕt 50 tªn B«n L«i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 368	6	1	814	373	75	§Õn L©m Du Quan  giÕt 50 tªn B«n L«i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 369	6	1	815	374	75	§Õn L©m Du Quan  giÕt 50 tªn B«n L«i, §ång hµnh ®¼ng cÊp tõ 65 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 370	6	1	816	375	85	§Õn Tr­êng B¹ch s¬n  giÕt 50 tªn §éc Bé, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 371	6	1	817	376	85	§Õn Tr­êng B¹ch s¬n  giÕt 100 tªn §éc Bé, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 372	6	1	818	377	85	§Õn Tr­êng B¹ch s¬n  giÕt 150 tªn §éc Bé, §ång hµnh ®¼ng cÊp tõ 75 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 373	6	1	819	378	95	§Õn Tr­êng B¹ch nam  giÕt 50 tªn S­¬ng §ao, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 374	6	1	820	379	95	§Õn Tr­êng B¹ch nam  giÕt 100 tªn S­¬ng §ao, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 375	6	1	821	380	95	§Õn Tr­êng B¹ch nam  giÕt 150 tªn S­¬ng §ao, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 376	6	1	822	381	95	§Õn Tr­êng B¹ch b¾c  giÕt 50 tªn §ao Tr¶m, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 377	6	1	823	382	95	§Õn Tr­êng B¹ch b¾c  giÕt 100 tªn §ao Tr¶m, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 378	6	1	824	383	95	§Õn Tr­êng B¹ch b¾c  giÕt 150 tªn §ao Tr¶m, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 379	6	1	825	384	95	§Õn M¹c B¾c Th¶o Nguyªn giÕt 50 tªn M«ng Cæ Vâ sÜ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 380	6	1	826	385	95	§Õn M¹c B¾c Th¶o Nguyªn giÕt 100 tªn M«ng Cæ Vâ sÜ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn
+MËt ®å "§ång hµnh luyÖn cÊp" 381	6	1	827	386	95	§Õn M¹c B¾c Th¶o Nguyªn giÕt 150 tªn M«ng Cæ Vâ sÜ, §ång hµnh ®¼ng cÊp tõ 85 trë lªn

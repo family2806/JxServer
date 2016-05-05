@@ -1,19 +1,19 @@
 Name	Feature	Price
-¹âÍ·	0	500
-çûÂ®Ã±	1	500
-ÅþÂ¬Ã±	2	500
-¶·óÒ	6	500
-ÇàÉ·ÃæÕÖ	7	500
-ÐÞÂÞ·¢½á	8	500
-Ô½ÃÀ¹Ú	9	500
-ÀÅçð¹Ú	10	500
-Í¨Ìì·¢¹Ú	11	500
-Í­¿ø	12	500
-¸Ö¿ø	13	500
-ÑÚÈÕ¿ø	14	500
-ÆÆ²¼½í	15	500
-°×Ê³»·	16	500
-ÕªÐÇ»·	17	500
-²¼½í	18	500
-Öìç²¹Ú	19	500
-ÎÚ²ÏÃ±	20	500
+Sa Di Giíi C« 	0	500
+Phï Dung M·o	1	500
+Tú L« m·o	2	500
+Tróc L¹p	6	500
+Nh©n B× DiÖn Tr¸o	7	500
+Tu La Ph¸t kÕt	8	500
+Phi YÕn Qu¸n	9	500
+Anh L¹c Qu¸n	10	500
+Th«ng Thiªn Ph¸t Qu¸n	11	500
+ThiÕt Kh«i	12	500
+Ng©n Kh«i	13	500
+YÓm NhËt kh«i	14	500
+Ph¸ Bè C©n	15	500
+Song TÇng L­u Ly Hoµn	16	500
+TrÝch Tinh hoµn	17	500
+Bè C©n	18	500
+Chu Khëi Qu¸n	19	500
+¤ Tµm M·o	20	500

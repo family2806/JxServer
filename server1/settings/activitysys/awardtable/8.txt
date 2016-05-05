@@ -1,2 +1,2 @@
 TableId	AwardName	LuaBuff	Count	Rate	AwardId	ActivityId
-8	玄晶矿石[8级]	"return {szName=\"玄晶矿石[8级]\",tbProp={6,1,147,8,0,0},}"	1	100	50	1
+8	Huy襫 tinh kho竛g th筩h c蕄 8	"return {szName=\"玄晶矿石[8级]\",tbProp={6,1,147,8,0,0},}"	1	100	50	1

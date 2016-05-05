@@ -1,44 +1,44 @@
 TaskName	Rate
-µÚ¶þ²ãÈÎÎñÃû³Æ	Ñ¡È¡Ê±µÄÈ¨ÖØ
-Ëæ»ú_¾íÖá_ÊÕ¼¯Íè×Ó	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯É±ÊÖïµ	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿óÊ¯	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ãµ¹å»¨	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÍ¼Æ×	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯°²°îÍ¼Æ×	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌÆÃÅ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îå¶¾¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶ëÃ¼¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯´äÑÌ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ø¤°ï¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÈÌ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Îäµ±¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯À¥ÂØ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÉÙÁÖ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÌìÍõ¼¼ÄÜÊé	1000
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×Ìì»Í	2000
-Ëæ»ú_¾íÖá_ÊÕ¼¯È«Ì×½ð·ã	2000
-Ëæ»ú_¾íÖá_ÊÕ¼¯²Ø±¦Í¼ËéÆ¬	2000
-Ëæ»ú_¾íÖá_ÊÕ¼¯¶¨¹úÈ«Ì×	100
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏÀ¹ÇÈ«Ì×	100
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÈáÇéÈ«Ì×	100
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÐþÌú½£	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯´ó·çµ¶	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯½ð¹¿°ô	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌìêª	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÆÆÌì´¸	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯°ÔÍõïÚ	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ËéÔÂµ¶	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯¿×È¸ôá	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯½äÖ¸	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏîÁ´	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Éí·û	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÏãÄÒ	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÓñÅå	5000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Óñïí	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯»¤Íó	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Í¨Ìì·¢¹Ú	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯ÑÚÈÕ¿ø	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯°×½ðÑü´ø	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯Ìì²ÏÑ¥	10000
-Ëæ»ú_¾íÖá_ÊÕ¼¯·É·ïÑ¥	10000
+Tªn nhiÖm vô TÇng 2	Chän cÊp ®é thêi gian
+NgÉu nhiªn_MËt §å_Thu thËp D­îc hoµn 	5000
+NgÉu nhiªn_MËt §å_Thu thËp S¸t Thñ Gi¶n	5000
+NgÉu nhiªn_MËt §å_Thu thËp Kho¸ng Th¹ch	5000
+NgÉu nhiªn_MËt §å_Thu thËp Hoa hång	5000
+NgÉu nhiªn_MËt §å_Thu thËp §Þnh Quèc §å Phæ 	1000
+NgÉu nhiªn_MËt §å_Thu thËp An Bang §å Phæ 	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (§­êng M«n) 	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Ngò §éc) 	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng (Nga Mi) 	1000
+NgÉu nhiªn_MËt §å_Thu thËpThóy Yªn MËt tÞch kü n¨ng	1000
+NgÉu nhiªn_MËt §å_Thu thËpC¸i Bang MËt tÞch kü n¨ng	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn NhÉn	1000
+NgÉu nhiªn_MËt §å_Thu thËpVâ §ang MËt tÞch kü n¨ng	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng C«n L«n	1000
+NgÉu nhiªn_MËt §å_Thu thËp ThiÕu L©m MËt tÞch kü n¨ng	1000
+NgÉu nhiªn_MËt §å_Thu thËp MËt tÞch kü n¨ng Thiªn V­¬ng	1000
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Thiªn Hoµng 	2000
+NgÉu nhiªn_MËt §å_Thu thËp mét bé Kim Phong	2000
+NgÉu nhiªn_MËt §å_Thu thËp Tµng B¶o §å To¸i PhiÕn 	2000
+NgÉu nhiªn_MËt §å_Thu thËp toµn bé §Þnh Quèc 	100
+NgÉu nhiªn_MËt §å_Thu thËp mét béHiÖp Cèt	100
+NgÉu nhiªn_MËt §å_Thu thËp mét béNhu T×nh	100
+NgÉu nhiªn_MËt §å_Thu thËp HuyÒn ThiÕt KiÕm	10000
+NgÉu nhiªn_MËt §å_Thu thËp §¹i Phong §ao	10000
+NgÉu nhiªn_MËt §å_Thu thËp Kim C« Bæng	10000
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn KÝch	10000
+NgÉu nhiªn_MËt §å_Thu thËp Ph¸ Thiªn Chïy	10000
+NgÉu nhiªn_MËt §å_Thu thËp B¸ V­¬ng Tiªu	10000
+NgÉu nhiªn_MËt §å_Thu thËp Tóy NguyÖt §ao	10000
+NgÉu nhiªn_MËt §å_Thu thËp Khæng T­íc Linh	10000
+NgÉu nhiªn_MËt §å_Thu thËp NhÉn	5000
+NgÉu nhiªn_MËt §å_Thu thËp D©y chuyÒn	5000
+NgÉu nhiªn_MËt §å_Thu thËpHé Th©n phï 	5000
+NgÉu nhiªn_MËt §å_Thu thËp H­¬ng Nang	5000
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Béi	5000
+NgÉu nhiªn_MËt §å_Thu thËp Ngäc Tr¹c 	10000
+NgÉu nhiªn_MËt §å_Thu thËp Hé uyÓn	10000
+NgÉu nhiªn_MËt §å_Thu thËp Th«ng Thiªn Ph¸t Qu¸n	10000
+NgÉu nhiªn_MËt §å_Thu thËp YÓm NhËt Kh«i	10000
+NgÉu nhiªn_MËt §å_Thu thËp B¹ch Kim yªu ®¸i	10000
+NgÉu nhiªn_MËt §å_Thu thËpThiªn Tµm Ngoa	10000
+NgÉu nhiªn_MËt §å_Thu thËp Phi Phông Ngoa	10000

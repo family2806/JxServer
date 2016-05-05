@@ -1,67 +1,67 @@
 Name	Type	Genre	Detail	Particular	Serise	Level	Param1	Param2	Param3	Param4	Param5	Param6	Proba	Costly	Msg	Log
-À¶Ë®¾§	1	4	238	1	0	1	0						50000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-×ÏË®¾§	1	4	239	1	0	1	0						50000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÂÌË®¾§	1	4	240	1	0	1	0						50000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ĞÉºì±¦Ê¯	1	4	353	49	0	1	0						50000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ï´Ëè¾­	1	6	1	22	0	1	0						10000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÎäÁÖÃØ¼®	1	6	1	26	0	1	0						10000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÏÉ²İÂ¶	1	6	1	71	0	1	0						150000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¸£ÔµÂ¶£¨´ó£©	1	6	1	124	0	1	0						207050	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ğş¾§¿óÊ¯[4¼¶]	1	6	1	147	0	4	0						160000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ğş¾§¿óÊ¯[5¼¶]	1	6	1	147	0	5	0						40000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ğş¾§¿óÊ¯[6¼¶]	1	6	1	147	0	6	0						15000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÌØĞ§ÏÉ²İÂ¶	1	6	1	1181	0	1	0						50000	0	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÃÎÁúÖ®½ğË¿ÕıºìôÂôÄ	2	2	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-·üÄ§Ö®×Ï½ğ¹÷	2	6	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ËÄ¿ÕÖ®½µÄ§½äµ¶	2	11	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-º³ÌìÖ®½ğ»·´óÑÛÉñ´¸	2	16	0	0	0	1	0						6	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-º³ÌìÖ®³ËÁúÕ½Ñ¥	2	20	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¼ÌÒµÖ®±¼À××êÁúÇ¹	2	21	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÓùÁúÖ®ÁÁÒø±¦µ¶	2	26	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÓùÁúÖ®ÌìÃÅÊøÑü»·	2	28	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÎŞ¼äÖ®ÒĞÌì½£	2	31	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÎŞ÷ÊÖ®Ï´ÏóÓñ¿Û	2	39	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÎŞ÷ÊÖ®ºìç»Èí¶NĞ¬	2	40	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÎŞ³¾Ö®ÇåĞÄÏòÉÆÖé	2	42	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÆÜ»ËÖ®·ïÒÇµ¶	2	46	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÆÜ»ËÖ®±ù×Ù½õÍó	2	49	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-±Ìº£Ö®Ô§ÑìÁ¬»·µ¶	2	51	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÓÄëÊÖ®½ğÉß·¢´ø	2	56	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÓÄëÊÖ®Ä«ÖëÈíÂÄ	2	60	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ú¤»ÃÖ®Ğ°É²¶¾ÈĞ	2	61	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Öä¸¿Ö®ÃğÀ×¾±·û	2	67	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-±ùº®Ö®µ¯Ö¸·Éµ¶	2	71	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ìì¹âÖ®»¨ÓêÂşÌì	2	76	0	0	0	1	0						6	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ìì¹âÖ®¶¨ĞÄÄıÉñ·û	2	77	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-É­»ÄÖ®·ÉĞÇ¶á»ê	2	81	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-µØÆÇÖ®ºÚÑæ³åÌìÁ´	2	87	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Í¬³ğÖ®½µÁúØ¤ÒÂ	2	92	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Í¬³ğÖ®¿ºÁú»¤ÊÖ	2	94	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-µĞâéÖ®ÂÌÓñÕÈ	2	96	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ä§É·Ö®¹í¹ÈÓÄÚ¤Ç¹	2	101	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ä§»ÍÖ®½ğ¼×¿ø	2	106	0	0	0	1	0						6	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ä§»ÍÖ®°´³ö»¢ÏîÈ¦	2	107	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ä§ÊÈÖ®É½º£·ÉºèÂÄ	2	115	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÁèÔÀÖ®ÎŞ¼«ĞşÓñÅå	2	119	0	0	0	1	0						6	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÁèÔÀÖ®ÌìµØĞş»Æ½ä	2	121	0	0	0	1	0						6	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¼°·áÖ®ÈıÇå·û	2	122	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Ëª¾§Ö®Ç§Äêº®Ìú	2	126	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-À×ñ·Ö®ÌìµØ»¤·û	2	132	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-Îí»ÃÖ®±±Ú¤µÀ¹Ú	2	136	0	0	0	1	0						60	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¶¨¹úÖ®ÇàÉ´³¤ÉÀ	2	159	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¶¨¹úÖ®ÎÙÉ°·¢¹Ú	2	160	0	0	0	1	0						5000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¶¨¹úÖ®³à¾îÈíÑ¥	2	161	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¶¨¹úÖ®×ÏÌÙ»¤Íó	2	162	0	0	0	1	0						20000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-¶¨¹úÖ®Òø²ÏÑü´ø	2	163	0	0	0	1	0						20000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-°²°îÖ®±ù¾§Ê¯ÏîÁ´	2	164	0	0	0	1	0						1000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-°²°îÖ®¾Õ»¨Ê¯Ö¸»·	2	165	0	0	0	1	0						5000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-°²°îÖ®Ìï»ÆÊ¯ÓñÅå	2	166	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-°²°îÖ®¼¦ÑªÊ¯½äÖ¸	2	167	0	0	0	1	0						5000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÏÀ¹ÇÖ®ÌúÑªÉÀ	2	186	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÏÀ¹ÇÖ®¶àÇé»·	2	187	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÏÀ¹ÇÖ®µ¤ĞÄ½ä	2	188	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÏÀ¹ÇÖ®ÇéÒâ½á	2	189	0	0	0	1	0						5000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÈáÇéÖ®½íàşÄŞÉÑ	2	190	0	0	0	1	0						5000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÈáÇéÖ®ÊçÅ®ÏîÁ´	2	191	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÈáÇéÖ®·ïÒÇ½äÖ¸	2	192	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
-ÈáÇéÖ®»ÛĞÄÓñÅå	2	193	0	0	0	1	0						10000	1	<player>M? th¦Ình thT ?1i h?ng bao, nh?n ?-?c 1 <name>	1
+Lam Thñy Tinh	1	4	238	1	0	1	0						50000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tö Thñy Tinh	1	4	239	1	0	1	0						50000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Lôc Thñy Tinh	1	4	240	1	0	1	0						50000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tinh Hång B¶o Th¹ch	1	4	353	49	0	1	0						50000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+TÈy Tñy Kinh	1	6	1	22	0	1	0						10000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Vâ L©m MËt TŞch	1	6	1	26	0	1	0						10000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tiªn Th¶o Lé 	1	6	1	71	0	1	0						150000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Phóc Duyªn Lé (§¹i) 	1	6	1	124	0	1	0						207050	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HuyÒn Tinh cÊp 4	1	6	1	147	0	4	0						160000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HuyÒn Tinh cÊp 5	1	6	1	147	0	5	0						40000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HuyÒn Tinh cÊp 6	1	6	1	147	0	6	0						15000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tiªn Th¶o Lé ®Æc biÖt (8 giê)	1	6	1	1181	0	1	0						50000	0	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Méng Long Kim Ti Chİnh Hång Cµ Sa	2	2	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Phôc Ma Tö Kim C«n	2	6	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tø Kh«ng Gi¸ng Ma Giíi ®ao	2	11	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy	2	16	0	0	0	1	0						6	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+H¸m Thiªn Thõa Long ChiÕn Ngoa	2	20	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+KÕ NghiÖp B«n L«i Toµn Long th­¬ng	2	21	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ngù Long L­îng Ng©n B¶o ®ao	2	26	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ngù Long Thiªn M«n Thóc Yªu hoµn	2	28	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+V« Gian û Thiªn KiÕm	2	31	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+V« Ma TÈy T­îng Ngäc KhÊu 	2	39	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+V« Ma Hång Truy NhuyÔn Th¸p hµi	2	40	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+V« TrÇn Thanh T©m H­íng ThiÖn Ch©u	2	42	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tª Hoµng Phông Nghi ®ao	2	46	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Tª Hoµng B¨ng Tung CÈm uyÓn	2	49	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Bİch H¶i Uyªn ¦¬ng Liªn Hoµn ®ao	2	51	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+U Lung Kim Xµ Ph¸t ®¸i	2	56	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+U Lung MÆc Thï NhuyÔn Lı 	2	60	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Minh ¶o Tµ S¸t §éc NhËn	2	61	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Chó Ph­îc DiÖt L«i C¶nh Phï 	2	67	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+B¨ng Hµn §¬n ChØ Phi §ao	2	71	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Thiªn Quang Hoa Vò M¹n Thiªn	2	76	0	0	0	1	0						6	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Thiªn Quang §Şnh T©m Ng­ng ThÇn Phï 	2	77	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+S©m Hoang Phi Tinh §o¹t Hån	2	81	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şa Ph¸ch H¾c DiÖm Xung Thiªn Liªn	2	87	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§ång Cõu Gi¸ng Long C¸i Y	2	92	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§ång Cõu Kh¸ng Long Hé UyÓn	2	94	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şch Kh¸i Lôc Ngäc Tr­îng	2	96	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ma S¸t Quû Cèc U Minh Th­¬ng	2	101	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ma Hoµng Kim Gi¸p Kh«i	2	106	0	0	0	1	0						6	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn	2	107	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Ma ThŞ s¬n  H¶i Phi Hång Lı 	2	115	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi	2	119	0	0	0	1	0						6	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+CËp Phong Ch©n Vò KiÕm	2	121	0	0	0	1	0						6	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+CËp Phong Tam Thanh Phï 	2	122	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+S­¬ng Tinh Thiªn Niªn Hµn ThiÕt	2	126	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+L«i Khung Thiªn §Şa Hé phï 	2	132	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Vô ¶o B¾c Minh §¹o qu¸n	2	136	0	0	0	1	0						60	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şnh Quèc Thanh Sa Tr­êng Sam	2	159	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şnh Quèc ¤ Sa Ph¸t Qu¸n	2	160	0	0	0	1	0						5000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şnh Quèc Xİch Quyªn NhuyÔn Ngoa	2	161	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şnh Quèc Tö §»ng Hé uyÓn	2	162	0	0	0	1	0						20000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+§Şnh Quèc Ng©n Tµm Yªu ®¸i	2	163	0	0	0	1	0						20000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+An Bang B¨ng Tinh Th¹ch H¹ng Liªn	2	164	0	0	0	1	0						1000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+An Bang Cóc Hoa Th¹ch ChØ hoµn	2	165	0	0	0	1	0						5000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+An Bang §iÒn Hoµng Th¹ch Ngäc Béi	2	166	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+An Bang Kª HuyÕt Th¹ch Giíi ChØ 	2	167	0	0	0	1	0						5000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HiÖp Cèt ThiÕt HuyÕt Sam	2	186	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HiÖp Cèt §a T×nh Hoµn	2	187	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HiÖp Cèt §an T©m Giíi	2	188	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+HiÖp Cèt T×nh ı KÕt	2	189	0	0	0	1	0						5000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Nhu T×nh C©n Quèc Nghª Th­êng	2	190	0	0	0	1	0						5000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Nhu T×nh Thôc N÷ H¹ng Liªn	2	191	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Nhu T×nh  Phông Nghi Giíi ChØ 	2	192	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1
+Nhu T×nh  TuÖ T©m Ngäc Béi	2	193	0	0	0	1	0						10000	1	<player>Më thµnh thŞ ®¹i hång bao, nhËn ®­îc 1 <name>	1

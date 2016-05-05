@@ -1,1 +1,25 @@
 HOUR	MIN	SCRIPT	d	DESC
+0	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+1	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+2	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+3	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+4	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+5	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+6	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+7	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+8	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+9	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+10	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+11	1	\script\missions\fengling_ferry\fldmap_boat1.lua
+12	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+13	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+14	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+15	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+16	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+17	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+18	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+19	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+20	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+21	2	\script\missions\fengling_ferry\fldmap_boat1.lua
+22	0	\script\missions\fengling_ferry\fldmap_boat1.lua
+23	7	\script\missions\fengling_ferry\fldmap_boat1.lua

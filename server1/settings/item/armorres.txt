@@ -1,6 +1,6 @@
 ¿ø¼×±àºÅ	²¿¼þ±àºÅ	ËµÃ÷
-1	20	¿ø¼×±àºÅÊÇarmorµÄ¸ÃÊýÖµÐÐµÄ×°±¸
-2	2	²¿¼þ±àºÅÊÇÈËÎï×ÊÔ´²¿¼þ±íÀïÃæ¸ÃÐÐµÄÊý×Ö£¬ÒªÔÚÒ»°ãµÄ±àºÅÉÏ¼Ó1¡£¼°È¡Öµ2-22¡£
+1	20	Sè hiÖu kh«i gi¸p c¨n cø vµo trÞ sè armor cña trang bÞ 
+2	2	Sè hiÖu trang bÞ cÇn theo ®óng thø tù trong file gèc, phÝa tr­íc sè hiÖu th­êng cã thªm sè 1.Tèi ®a lµ 22.
 3	2	
 4	2	
 5	2	

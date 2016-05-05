@@ -1,12 +1,12 @@
 TextID	When	Where	Who	Why1	Why2	What
-8001	ÎÒ½üÀ´ÌýËµ	n	n	ÎÒºÜÏë¿´Ò»¿´	n	Õâ¸öÊÀ½çÉÏÓÐÒ»ÖÖ
-8002	×î½üÎÒÌýÈËËµ	n	n	ÎÒºÜÏë¼ûÊ¶¼ûÊ¶	n	Ä¿Ç°ÓÐÒ»ÖÖ
-8003	Äã¿ÉÌýËµ¹ý	n	n	ÎÒ²»´óÏàÐÅ	n	Ò»Î»´óÏÀÔø¾­ÓµÓÐÒ»¼þ
-8004	n	n	n	ÎÒÕâ±²×Ó»¹Ã»¼û¹ýÄÇÑùµÄ¶«Î÷	n	Ò»Î»½ÐÎ÷ÃÅ´µ·çµÄ´óÏÀÔø¾­ÓµÓÐÒ»¼þ
-8005	n	n	n	ÎÒ»îÁËÕâÃ´¾Ã»¹Ã»¼û¹ýÄÇÑùµÄ¶«Î÷	n	Ò»Î»½Ð¹Â¶Àµ¶µÄ´óÏÀÔø¾­ÓµÓÐÒ»¼þ
-8006	n	n	n	n	n	Ò»Î»Ãû½Ð¹Â¶ÀµÄ½£µÄ´óÏÀÔø¾­ÓµÓÐ¹ýÒ»¼þ
-8007	n	n	n	n	n	Ò»Î»Ãû½ÐÄªÏ²µÄ´óÏÀÔø¾­ÓµÓÐÒ»¼þ
-8008	n	n	n	n	n	Ò»Î»Ãû½ÐÄÏ¹¬ÏÂÓêµÄ´óÏÀÔø¾­ÓµÓÐ¹ýÒ»¼þ
+8001	gÇn ®©y ta nghe nãi	n	n	ta rÊt muèn xem thö 	n	thÕ giíi nµy cã mét lo¹i
+8002	gÇn ®©y ta nghe nãi	n	n	ta rÊt muèn biÕt	n	tr­íc m¾t cã mét lo¹i
+8003	ta ®­îc nghe qua	n	n	ta kh«ng tin l¾m	n	mét vÞ §¹i HiÖp ®· tõng cã mét bé 
+8004	n	n	n	c¶ ®êi nµy ta ch­a thÊy qua mãn ®å nh­ thÕ 	n	vÞ §¹i HiÖp tªn gäi T©y M«n Xuy Phong ®· tõng cã mét bé 
+8005	n	n	n	ta sèng ®· l©u n¨m ch­a thÊy qua mãn ®å nµy	n	vÞ §¹i HiÖp tªn gäi C« §éc §ao ®· tõng cã mét bé 
+8006	n	n	n	n	n	vÞ §¹i HiÖp tªn gäi C« §éc KiÕm ®· tõng cã mét bé 
+8007	n	n	n	n	n	vÞ M¹c HØ §¹i HiÖp  ®· tõng cã mét bé 
+8008	n	n	n	n	n	Nam Cung H¹ Vò §¹i HiÖp ®· tõng cã mét bé 
 8009	n	n	n	n	n	n
 8010	n	n	n	n	n	n
 8011	n	n	n	n	n	n

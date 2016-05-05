@@ -1,49 +1,49 @@
 MAGIC_ID	MAGATTRLVL_START	MAGATTRLVL_END	DESC	FIT_EQUIP	REMARK
-126	1	10	Ôö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦°Ù·Ö±È	ÎäÆ÷	MAGATTRLVL_STARTºÍMAGATTRLVL_END±íÊ¾µÄ¶¼ÊÇµÈ¼¶Ä§·¨ÊôÐÔ±àºÅ£¬¶ÔÓ¦ÓÚmagicattriblevel.txtµÄÐÐºÅ¼õ1
-166	11	20	Ôö¼Ó¹¥»÷ÃüÖÐÂÊµãÊý	ÎäÆ÷	
-115	21	30	Ôö¼ÓÍâ¹¥ÏµÎä¹¦³öÕÐ¶¯×÷	ÎäÆ÷	
-58	31	40	ºöÂÔµÐÈËÉÁ±ÜÂÊ°Ù·Ö±È	ÎäÆ÷	
-43	41	50	ÓÀ²»Ä¥Ëð	²»¿ÉÏâÇ¶ 	
-150	51	60	Ôö¼ÓÎïÀí»¤¼×	²»¿ÉÏâÇ¶	
-111	61	70	Ôö¼ÓÒÆ¶¯ËÙ¶È	Ð¬×Ó	
-117	71	80	ÊÜ½üÉí¹¥»÷Ê±ÉËº¦·´µ¯	ÒÂ·þ	
-113	81	90	¼õÉÙÊÜÉË¶¯×÷Ê±¼ä	ÒÂ·þ	
-112	91	100	À©´óÊÓÒ°·¶Î§	²»¿ÉÏâÇ¶	
-139	101	110	Ôö¼ÓËùÓÐÎä¹¦µÈ¼¶	½äÖ¸ ÎäÆ÷£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©	
-114	111	120	Ôö¼ÓËùÓÐ¿¹ÐÔ	ÏîÁ´£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©	
-136	121	130	ÃüÖÐÎüÈ¡ÆäÉúÃü°Ù·Ö±È	ÎäÆ÷	
-137	131	140	ÃüÖÐÎüÈ¡ÆäÄÚÁ¦°Ù·Ö±È	ÎäÆ÷	
-85	141	150	Ôö¼ÓÉúÃü×î´óÖµµãÊý	ËùÓÐ×°±¸ÀàÐÍ	
-89	151	160	Ôö¼ÓÄÚÁ¦×î´óÖµµãÊý	ËùÓÐ×°±¸ÀàÐÍ
-93	161	170	Ôö¼ÓÌåÁ¦×î´óÖµµãÊý	ËùÓÐ×°±¸ÀàÐÍ
-88	171	180	Ã¿°ëÃëÉúÃü»Ø¸´	ÒÂ·þ Ð¬×Ó Ñü´ø Ã±×Ó »¤Íó
-92	181	190	Ã¿°ëÃëÄÚÁ¦»Ø¸´	Ñü×¹£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©
-96	191	200	Ã¿°ëÃëÌåÁ¦»Ø¸´	½äÖ¸ ÏîÁ´£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©
-97	201	210	Ôö¼ÓÁ¦Á¿µãÊý	½äÖ¸ ÏîÁ´ Ñü×¹£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©
-121	211	220	Ôö¼ÓÍâ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý	ÎäÆ÷
-125	221	230	Ôö¼ÓÍâ¹¦Ïµ¶¾¹¥ÉËº¦µãÊý	ÎäÆ÷
-123	231	240	Ôö¼ÓÍâ¹¦Ïµ±ù¹¥ÉËº¦µãÊý	ÎäÆ÷
-122	241	250	Ôö¼ÓÍâ¹¦Ïµ»ð¹¥ÉËº¦µãÊý	ÎäÆ÷
-124	251	260	Ôö¼ÓÍâ¹¦ÏµÀ×¹¥ÉËº¦µãÊý	ÎäÆ÷
-134	261	270	ÉËº¦×ª»¯ÎªÄÚÁ¦	ÒÂ·þ Ð¬×Ó Ñü´ø Ã±×Ó »¤Íó
-104	271	280	Ôö¼ÓÆÕ·À×î´óÖµ	ÒÂ·þ Ð¬×Ó Ñü´ø Ã±×Ó »¤Íó
-101	281	290	Ôö¼Ó¶¾·À×î´óÖµ	ËùÓÐ×°±¸ÀàÐÍ
-105	291	300	Ôö¼Ó±ù·À×î´óÖµ	ËùÓÐ×°±¸ÀàÐÍ
-102	301	310	Ôö¼Ó»ð·À×î´óÖµ	ËùÓÐ×°±¸ÀàÐÍ
-103	311	320	Ôö¼ÓÀ×·À×î´óÖµ	ËùÓÐ×°±¸ÀàÐÍ
-99	321	330	Ôö¼ÓÍâ¹¦µãÊý	ËùÓÐ×°±¸ÀàÐÍ
-110	331	340	¼õÉÙÑ£ÔÎÊ±¼ä°Ù·Ö±È	ËùÓÐ×°±¸ÀàÐÍ
-135	341	350	Ôö¼ÓÐÒÔËÖµ	½äÖ¸ Ñü×¹ ÏîÁ´£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©
-106	351	360	¼õÉÙ³Ù»ºÊ±¼ä°Ù·Ö±È	ËùÓÐ×°±¸ÀàÐÍ
-98	361	370	Ôö¼ÓÉí·¨µãÊý	ÒÂ·þ Ð¬×Ó Ñü´ø Ã±×Ó »¤Íó ½äÖ¸ ÏîÁ´ Ñü×¹£¨½äÖ¸¡¢ÏîÁ´¡¢Ñü×¹ÏâÇ¶¹¦ÄÜÔÝÎ´¿ª·Å£©
-108	371	380	¼õÉÙÖÐ¶¾Ê±¼ä°Ù·Ö±È	ËùÓÐ×°±¸ÀàÐÍ
-140	381	390	¼Ó½ðÏµÎä¹¦µÈ¼¶	²»¿ÉÏâÇ¶
-142	391	400	¼ÓË®ÏµÎä¹¦µÈ¼¶	²»¿ÉÏâÇ¶
-141	401	410	¼ÓÄ¾ÏµÎä¹¦µÈ¼¶	²»¿ÉÏâÇ¶
-143	411	420	¼Ó»ðÏµÎä¹¦µÈ¼¶	²»¿ÉÏâÇ¶
-144	421	430	¼ÓÍÁÏµÎä¹¦µÈ¼¶	²»¿ÉÏâÇ¶
-168	431	440	Ôö¼ÓÄÚ¹¦ÏµÆÕ¹¥ÉËº¦µãÊý	ÎäÆ÷
-169	441	450	Ôö¼ÓÄÚ¹¦Ïµ±ù¹¥ÉËº¦µãÊý	ÎäÆ÷
-170	451	460	Ôö¼ÓÄÚ¹¦Ïµ»ð¹¥ÉËº¦µãÊý	ÎäÆ÷
-171	461	470	Ôö¼ÓÄÚ¹¦ÏµÀ×¹¥ÉËº¦µãÊý	ÎäÆ÷
-172	471	480	Ôö¼ÓÄÚ¹¦Ïµ¶¾¹¥ÉËº¦µãÊý	ÎäÆ÷
+126	1	10	T¨ng s¸t th­¬ng vËt lý hÖ Ngo¹i c«ng 	Vò khÝ 	MAGATTRLVL_START vµ MAGATTRLVL_END ®Òu lµ biÓu thÞ ®¼ng cÊp thuéc tÝnh, gi¶m 1 so víi magicattriblevel. Txt
+166	11	20	T¨ng c«ng kÝch chÝnh x¸c 	Vò khÝ 	
+115	21	30	T¨ng tèc ®é xuÊt chiªu hÖ Ngo¹i c«ng	Vò khÝ 	
+58	31	40	Bá qua tèc ®é di chuyÓn cña ®èi ph­¬ng	Vò khÝ 	
+43	41	50	Kh«ng thÓ ph¸ hñy	Kh«ng thÓ kh¶m n¹m 	
+150	51	60	T¨ng phßng thñ vËt lý 	Kh«ng thÓ kh¶m n¹m	
+111	61	70	T¨ng tèc ®é di chuyÓn	hµi	
+117	71	80	T¨ng ph¶n ®ßn cËn chiÕn	Y phôc	
+113	81	90	Gi¶m thêi gian bÞ th­¬ng 	Y phôc	
+112	91	100	T¨ng ph¹m vi s¸t th­¬ng	Kh«ng thÓ kh¶m n¹m	
+139	101	110	T¨ng ®¼ng cÊp tÊt c¶ vò khÝ 	NhÉn,  Vò khÝ 	
+114	111	120	Kh¸ng tÊt c¶	D©y chuyÒn	
+136	121	130	Hót sinh lùc ®èi ph­¬ng	Vò khÝ 	
+137	131	140	Hót Néi lùc ®èi ph­¬ng	Vò khÝ 	
+85	141	150	Sinh lùc t¨ng 	TÊt c¶ c¸c trang bÞ 	
+89	151	160	Néi lùc t¨ng 	TÊt c¶ c¸c trang bÞ 
+93	161	170	ThÓ lùc t¨ng 	TÊt c¶ c¸c trang bÞ 
+88	171	180	Mçi nöa gi©y Sinh lùc håi phôc 	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn
+92	181	190	Mçi n÷a gi©y Néi lùc håi phôc 	§ai th¾t
+96	191	200	Mçi n÷a gi©y ThÓ lùc håi phôc 	NhÉn, D©y chuyÒn
+97	201	210	Søc m¹nh t¨ng 	NhÉn, D©y chuyÒn, §ai th¾t
+121	211	220	T¨ng s¸t th­¬ng VËt lý hÖ Ngo¹i c«ng 	Vò khÝ 
+125	221	230	T¨ng ®éc s¸t hÖ Ngo¹i c«ng 	Vò khÝ 
+123	231	240	T¨ng b¨ng s¸t hÖ Ngo¹i c«ng 	Vò khÝ 
+122	241	250	T¨ng b¨ng háa hÖ Ngo¹i c«ng 	Vò khÝ 
+124	251	260	T¨ng b¨ng L«i hÖ Ngo¹i c«ng 	Vò khÝ 
+134	261	270	chuyÓn hãa s¸t th­¬ng thµnh Néi lùc	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn
+104	271	280	Phßng thñ t¨ng 	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn
+101	281	290	Phßng ®éc t¨ng 	TÊt c¶ c¸c trang bÞ 
+105	291	300	Phßng b¨ng t¨ng 	TÊt c¶ c¸c trang bÞ 
+102	301	310	Phßng háa t¨ng 	TÊt c¶ c¸c trang bÞ 
+103	311	320	Phßng L«i t¨ng 	TÊt c¶ c¸c trang bÞ 
+99	321	330	T¨ng Ngo¹i c«ng	TÊt c¶ c¸c trang bÞ 
+110	331	340	Gi¶m cho¸ng 	TÊt c¶ c¸c trang bÞ 
+135	341	350	T¨ng May m¾n 	NhÉn, §ai th¾t, D©y chuyÒn
+106	351	360	Gi¶m ®éng t¸c lµm chËm	TÊt c¶ c¸c trang bÞ 
+98	361	370	T¨ng th©n ph¸p	Y phôc, hµi, Yªu ®¸i, M·o, Hé uyÓn, NhÉn, D©y chuyÒn, §ai th¾t
+108	371	380	gi¶m thêi gian tróng ®éc	TÊt c¶ c¸c trang bÞ 
+140	381	390	T¨ng ®¼ng cÊp kü n¨ng hÖ Kim	Kh«ng thÓ kh¶m n¹m
+142	391	400	T¨ng ®¼ng cÊp kü n¨ng hÖ Thñy	Kh«ng thÓ kh¶m n¹m
+141	401	410	T¨ng ®¼ng cÊp kü n¨ng hÖ Méc	Kh«ng thÓ kh¶m n¹m
+143	411	420	T¨ng ®¼ng cÊp kü n¨ng hÖ Háa	Kh«ng thÓ kh¶m n¹m
+144	421	430	T¨ng ®¼ng cÊp kü n¨ng hÖ Thæ 	Kh«ng thÓ kh¶m n¹m
+168	431	440	T¨ng s¸t th­¬ng VËt lý hÖ Néi c«ng	Vò khÝ 
+169	441	450	T¨ng B¨ng s¸t hÖ Néi c«ng	Vò khÝ 
+170	451	460	T¨ng Ho¶ s¸t hÖ Néi c«ng	Vò khÝ 
+171	461	470	T¨ng L«i s¸t hÖ Néi c«ng	Vò khÝ 
+172	471	480	T¨ng s¸t th­¬ng §éc hÖ Néi c«ng	Vò khÝ 

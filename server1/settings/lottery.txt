@@ -1,255 +1,255 @@
 QId	Tip	Content	ChooseCount	Price	Choose1	Choose2	Choose3	Choose4	Choose5	Choose6	Choose7	Choose8	Choose9	Choose10	BeginSaleTime	EndSaleTime	BeginPayForTime	EndPayForTime	Answer	BonusRate	MaxBonus
-1	14ºÅ½±ÅÆ°ñ	14ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408130700	408132400	408150900	408222200	0	50	10000000
-3	15ºÅ½±ÅÆ°ñ	15ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408140700	408142400	408160900	408222200	3	50	10000000
-5	16ºÅ½±ÅÆ°ñ	16ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408150700	408152400	408170900	408222200	7	50	10000000
-7	17ºÅ½±ÅÆ°ñ	17ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408160700	408162400	408200900	408222200	2	50	10000000
-9	18ºÅ½±ÅÆ°ñ	18ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408170700	408172400	408200900	408222200	3	50	10000000
-11	19ºÅ½±ÅÆ°ñ	19ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408180700	408182400	408200900	408222200	7	50	10000000
-13	20ºÅ½±ÅÆ°ñ	20ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408190700	408192400	408210900	408222200	7	50	10000000
-15	21ºÅ½±ÅÆ°ñ	21ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408200700	408202400	408220900	408232200	7	50	10000000
-17	22ºÅ½±ÅÆ°ñ	22ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408210700	408212400	408230900	408242200	6	50	10000000
-19	23ºÅ½±ÅÆ°ñ	23ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408220700	408222400	408240900	408252200	3	50	10000000
-21	24ºÅ½±ÅÆ°ñ	24ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408230700	408232400	408250900	408262200	7	50	10000000
-23	25ºÅ½±ÅÆ°ñ	25ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408240700	408242400	408260900	408272200	6	50	10000000
-25	26ºÅ½±ÅÆ°ñ	26ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408250700	408252400	408270900	408282200	3	50	10000000
-27	27ºÅ½±ÅÆ°ñ	27ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408260700	408262400	408280900	408292200	5	50	10000000
-29	28ºÅ½±ÅÆ°ñ	28ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408270700	408272400	408290900	408302200	5	50	10000000
-31	29ºÅ½±ÅÆ°ñ	29ºÅÖĞ¹ú¶ÓÔÚÑÅµäÊ¢»áÉÏ»ñµÃµÄ½ğÒøÍ­ÅÆÊıÁ¿µ¥Ë«µÄ¾º²Â	8	5000	µ¥µ¥µ¥	µ¥Ë«µ¥	µ¥µ¥Ë«	Ë«µ¥µ¥	Ë«Ë«µ¥	Ë«µ¥Ë«	µ¥Ë«Ë«	Ë«Ë«Ë«			408280700	408282400	408300900	408312200	2	50	10000000
-2	14ÈÕ¶á½ğ¾º²Â	Å®×ÓÆø²½Ç¹£¬ÄĞ×ÓË«ÈËÊ®Ã×ÌøÌ¨¾öÈü¹Ú¾ü»ñµÃÕß	10	5000	ÕÔÓ±»Û£¬ÌïÁÁ£¯ºú¼Ñ	¶ÅÀö£¬ÌïÁÁ£¯ºú¼Ñ	¼Ó¶û½ğÄÈ£¬ÌïÁÁ£¯ºú¼Ñ	ÕÔÓ±»Û£¬ºÕ¶ûÄ·£¯Å¦²®Àï	¶ÅÀö£¬ºÕ¶ûÄ·£¯Å¦²®Àï	¼Ó¶û½ğÄÈ£¬ºÕ¶ûÄ·£¯Å¦²®Àï	ÕÔÓ±»Û£¬ÆäËûÑ¡ÊÖ	¶ÅÀö£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬ÌïÁÁ£¯ºú¼Ñ	ÆäËû¿ÉÄÜ	408130700	408132400	408150900	408222200	0	50	10000000
-4	15ÈÕ¶á½ğ¾º²Â	ÄĞ×Ó100Ã×ÍÜÓ¾¾öÈü¹Ú¾ü£¬ÄĞ×ÓÀºÇò±ÈÈüÊ¤¸º	8	5000	Ë¹Â¬µÂÅµ·ò£¬ÖĞ¹úÊ¤Î÷°àÑÀ	±±µº¿µ½é£¬ÖĞ¹úÊ¤Î÷°àÑÀ	ººÉ­£¬ÖĞ¹úÊ¤Î÷°àÑÀ	Ë¹Â¬µÂÅµ·ò£¬ÖĞ¹ú¸ºÎ÷°àÑÀ	±±µº¿µ½é£¬ÖĞ¹ú¸ºÎ÷°àÑÀ	ººÉ­£¬ÖĞ¹ú¸ºÎ÷°àÑÀ	ÆäËûÑ¡ÊÖ£¬ÖĞ¹úÊ¤Î÷°àÑÀ	ÆäËûÑ¡ÊÖ£¬ÖĞ¹ú¸ºÎ÷°àÑÀ			408140700	408142400	408160900	408222200	5	50	10000000
-6	16ÈÕ¶á½ğ¾º²Â	Å®×Ó100Ã×ÍÜÓ¾£¬ÄĞ×ÓÌå²ÙÍÅÌå¾öÈü¹Ú¾ü	9	5000	ÂŞÑ©¾ê£¬ÖĞ¹úÌå²ÙÄĞ¶Ó	ÇíË¹£¬ÖĞ¹úÌå²ÙÄĞ¶Ó	ÂŞÑ©¾ê£¬ÃÀ¹úÌå²ÙÄĞ¶Ó	ÇíË¹£¬ÃÀ¹úÌå²ÙÄĞ¶Ó	ÂŞÑ©¾ê£¬ÆäËû¹ú¼ÒÌå²ÙÄĞ¶Ó	ÇíË¹£¬ÆäËû¹ú¼ÒÌå²ÙÄĞ¶Ó	ÆäËûÑ¡ÊÖ£¬ÖĞ¹úÌå²ÙÄĞ¶Ó	ÆäËûÑ¡ÊÖ£¬ÃÀ¹úÌå²ÙÄĞ¶Ó	ÆäËû¿ÉÄÜ		408150700	408152400	408170900	408222200	5	50	10000000
-8	17ÈÕ¶á½ğ¾º²Â	Å®×ÓÅå½£¸öÈËÏîÄ¿£¬ÄĞ×Ó200Ã×µûÓ¾¹Ú¾ü£¬Å®×ÓÀİÇò±ÈÈü	8	5000	Ì·Ñ©£¬·Æ¶ûÆÕË¹£¬ÖĞ¹úÊ¤ÃÀ¹ú	Ì·Ñ©£¬ÆäËûÑ¡ÊÖ£¬ÖĞ¹úÊ¤ÃÀ¹ú	ÆäËûÑ¡ÊÖ£¬·Æ¶ûÆÕË¹£¬ÖĞ¹úÊ¤ÃÀ¹ú	Ì·Ñ©£¬·Æ¶ûÆÕË¹£¬ÖĞ¹ú¸ºÃÀ¹ú	Ì·Ñ©£¬ÆäËûÑ¡ÊÖ£¬ÖĞ¹ú¸ºÃÀ¹ú	ÆäËûÑ¡ÊÖ£¬·Æ¶ûÆÕË¹£¬ÖĞ¹ú¸ºÃÀ¹ú	ÆäËûÑ¡ÊÖ£¬ÆäËûÑ¡ÊÖ£¬ÖĞ¹úÊ¤ÃÀ¹ú	ÆäËûÑ¡ÊÖ£¬ÆäËûÑ¡ÊÖ£¬ÖĞ¹ú¸ºÃÀ¹ú			408160700	408162400	408200900	408222200	6	50	10000000
-10	18ÈÕ¶á½ğ¾º²Â	ÄĞ×ÓÌå²Ù¸öÈËÈ«ÄÜ£¬ÄĞ×Ó69¹«½ï¼¶¾ÙÖØ¹Ú¾ü	10	5000	ÑïÍş£¬ÕÅ¹úÕş	ëøº£±õ£¬ÕÅ¹úÕş	±£ÂŞ-¹şÄ·£¬ÕÅ¹úÕş	ÑïÍş£¬¶íÂŞË¹Ñ¡ÊÖ	ëøº£±õ£¬¶íÂŞË¹Ñ¡ÊÖ	±£ÂŞ-¹şÄ·£¬¶íÂŞË¹Ñ¡ÊÖ	ÑïÍş£¬ÆäËûÑ¡ÊÖ	ëøº£±õ£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬ÕÅ¹úÕş	ÆäËû¿ÉÄÜ	408170700	408172400	408200900	408222200	3	50	10000000
-12	19ÈÕ¶á½ğ¾º²Â	Å®×Ó200Ã×ÍÜÓ¾£¬ÄĞ×Ó¾ÙÖØ77¹«½ï¼¶¹Ú¾ü	8	5000	ÆëêÍ£¬Õ¼Ğñ¸Õ	ÇíË¹£¬Õ¼Ğñ¸Õ	±È¶ûµÂ£¬Õ¼Ğñ¸Õ	ÆëêÍ£¬ÆäËûÑ¡ÊÖ	ÇíË¹£¬ÆäËûÑ¡ÊÖ	±È¶ûµÂ£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬Õ¼Ğñ¸Õ	ÆäËû¿ÉÄÜ			408180700	408182400	408200900	408222200	6	50	10000000
-14	20ÈÕ¶á½ğ¾º²Â	Å®×ÓÈáµÀ78¹«½ïÒÔÉÏ¼¶£¬Æ¹ÅÒÇòÅ®Ë«¾öÈü£¬Å®×Ó±Ä´²¹Ú¾ü	10	5000	Ëï¸£Ã÷£¬Íõéª£¯ÕÅâùÄş£¬»ÆÉºÉÇ	Ëï¸£Ã÷£¬Å£½£·æ£¯¹ùÔ¾£¬»ÆÉºÉÇ	Ëï¸£Ã÷£¬ÆäËûÑ¡ÊÖ£¬»ÆÉºÉÇ	ÆäËûÑ¡ÊÖ£¬Íõéª£¯ÕÅâùÄş£¬»ÆÉºÉÇ	ÆäËûÑ¡ÊÖ£¬Å£½£·æ£¯¹ùÔ¾£¬»ÆÉºÉÇ	Ëï¸£Ã÷£¬Íõéª£¯ÕÅâùÄş£¬ÆäËûÑ¡ÊÖ	Ëï¸£Ã÷£¬Å£½£·æ£¯¹ùÔ¾£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬Íõéª£¯ÕÅâùÄş£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬Å£½£·æ£¯¹ùÔ¾£¬ÆäËûÑ¡ÊÖ	ÆäËû¿ÉÄÜ	408190700	408192400	408210900	408222200	8	50	10000000
-16	21ÈÕ¶á½ğ¾º²Â	ÑÅµäÊ¢»áÆ¹ÅÒÇòÅ®µ¥£¬Å®×Ó100Ã×¾öÈü¹Ú¾ü	10	5000	ÕÅâùÄş£¬°¢Áú	ÕÅâùÄş£¬¿¨À¼µÂ	ÕÅâùÄş£¬ÍşÁ®Ä·Ë¹	ÕÅâùÄş£¬À­ÅµÍŞ	ÕÅâùÄş£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬°¢Áú	ÆäËûÑ¡ÊÖ£¬¿¨À¼µÂ	ÆäËûÑ¡ÊÖ£¬ÍşÁ®Ä·Ë¹	ÆäËûÑ¡ÊÖ£¬À­ÅµÍŞ	ÆäËû¿ÉÄÜ	408200700	408202400	408220900	408232200	5	50	10000000
-18	22ÈÕ¶á½ğ¾º²Â	ÄĞ×Ó100Ã×¾öÈü£¬Å®×Ó¸ßµÍ¸Ü¹Ú¾ü	9	5000	¸ñÁÖ£¬ÖĞ¹úÅ®Ñ¡ÊÖ	±«Íş¶û£¬ÖĞ¹úÅ®Ñ¡ÊÖ	¸ñÁÖ£¬»ô¶û½ğÄÈ	±«Íş¶û£¬»ô¶û½ğÄÈ	¸ñÁÖ£¬ÆäËûÑ¡ÊÖ	±«Íş¶û£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬ÖĞ¹úÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬»ô¶û½ğÄÈ	ÆäËû¿ÉÄÜ		408210700	408212400	408230900	408242200	9	50	10000000
-20	23ÈÕ¶á½ğ¾º²Â	ÌøÂíºÍË«¸ÜºÍÌï¾¶Å®×Ó20¹«Àï¾º×ß¹Ú¾ü	10	5000	ÀîĞ¡Åô£¬ÀîĞ¡Åô£¬ÍõÀöÆ¼	ÀîĞ¡Åô£¬ÀîĞ¡Åô£¬ËÎºì¾ê	ÀîĞ¡Åô£¬ÀîĞ¡Åô£¬Äá¹ÅÀ­Ò®ÍŞ	ÆäËûÑ¡ÊÖ£¬ÀîĞ¡Åô£¬ÍõÀöÆ¼	ÆäËûÑ¡ÊÖ£¬ÀîĞ¡Åô£¬ËÎºì¾ê	ÆäËûÑ¡ÊÖ£¬ÀîĞ¡Åô£¬Äá¹ÅÀ­Ò®ÍŞ	ÀîĞ¡Åô£¬ÆäËûÑ¡ÊÖ£¬ÍõÀöÆ¼	ÀîĞ¡Åô£¬ÆäËûÑ¡ÊÖ£¬ËÎºì¾ê	ÀîĞ¡Åô£¬ÆäËûÑ¡ÊÖ£¬Äá¹ÅÀ­Ò®ÍŞ	ÆäËû¿ÉÄÜ	408220700	408222400	408240900	408252200	10	50	10000000
-22	24ÈÕ¶á½ğ¾º²Â	Å®×Ó³Å¸ËÌø¸ß£¬ÄĞ×ÓÌøË®ÈıÃ×°å¾ö¹Ú¾ü	10	5000	·Ñ°Â·¨ÅµÍŞ£¬ÈøÎÚ¶¡	ÒÁĞÁ°ÍÒ®ÍŞ£¬ÈøÎÚ¶¡	·Ñ°Â·¨ÅµÍŞ£¬Åí²ª	ÒÁĞÁ°ÍÒ®ÍŞ£¬Åí²ª	·Ñ°Â·¨ÅµÍŞ£¬¶à²¼ÂŞË¹¿Æ¿Ë	ÒÁĞÁ°ÍÒ®ÍŞ£¬¶à²¼ÂŞË¹¿Æ¿Ë	·Ñ°Â·¨ÅµÍŞ£¬ÆäËûÑ¡ÊÖ	ÒÁĞÁ°ÍÒ®ÍŞ£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬Åí²ª	ÆäËû¿ÉÄÜ	408230700	408232400	408250900	408262200	4	50	10000000
-24	25ÈÕ¶á½ğ¾º²Â	Å®×ÓÁ´Çò±ÈÈüÖĞ¹úÄÜ·ñ»ñµÃ½±ÅÆ£¬ÊÇË­»ñµÃ¹Ú¾ü	7	5000	ÄÜ£¬¹ËÔ­£¬ÄªÀ×Åµ	ÄÜ£¬ÕÅÎÄĞã£¬ÄªÀ×Åµ	ÄÜ£¬¹ËÔ­£¬ÆäËûÑ¡ÊÖ	ÄÜ£¬¹ËÔ­£¬ÆäËûÑ¡ÊÖ	²»ÄÜ£¬ÄªÀ×Åµ	²»ÄÜ£¬ÆäËûÑ¡ÊÖ	ÆäËû¿ÉÄÜ				408240700	408242400	408260900	408272200	6	50	10000000
-26	26ÈÕ¶á½ğ¾º²Â	ÌøË®Å®×ÓÈıÃ×°å¾öÈü£¬ÄĞ×ÓÌúÈËÈıÏî¾öÈü¹Ú¾ü	10	5000	¹ù¾§¾§£¬ÃÀ¹úÑ¡ÊÖ	ÎâÃôÏ¼£¬ÃÀ¹úÑ¡ÊÖ	¹ù¾§¾§£¬°Ä´óÀûÑÇÑ¡ÊÖ	ÎâÃôÏ¼£¬°Ä´óÀûÑÇÑ¡ÊÖ	¹ù¾§¾§£¬¼ÓÄÃ´óÑ¡ÊÖ	ÎâÃôÏ¼£¬¼ÓÄÃ´óÑ¡ÊÖ	¹ù¾§¾§£¬Ó¢¹úÑ¡ÊÖ	ÎâÃôÏ¼£¬Ó¢¹úÑ¡ÊÖ	¹ù¾§¾§£¬ÆäËû¹ú¼ÒÑ¡ÊÖ	ÆäËû¿ÉÄÜ	408250700	408252400	408270900	408282200	9	50	10000000
-28	27ÈÕ¶á½ğ¾º²Â	ÄĞ110Ã×¿çÀ¸¾öÈü£¬Å®×Ó10000Ã×¾öÈü¹Ú¾ü	10	5000	ÁõÏè£¬ËïÓ¢½Ü	°¢À¼-Ô¼º²Ñ·£¬ËïÓ¢½Ü	ÁõÏè£¬À­µÂ¿ËÀï·ò	°¢À¼-Ô¼º²Ñ·£¬À­µÂ¿ËÀï·ò	ÁõÏè£¬°¢µÂÀ×	°¢À¼-Ô¼º²Ñ·£¬°¢µÂÀ×	ÁõÏè£¬ÆäËûÑ¡ÊÖ	°¢À¼-Ô¼º²Ñ·£¬ÆäËûÑ¡ÊÖ	ÆäËûÑ¡ÊÖ£¬ËïÓ¢½Ü	ÆäËû¿ÉÄÜ	408260700	408262400	408280900	408292200	7	50	10000000
-30	28ÈÕ¶á½ğ¾º²Â	 ÄĞ×ÓÌøË®Ê®Ã×Ì¨£¬¾²Ë®ÄĞ×Ó500Ã×Ë«ÈËÆ¤Í§¹Ú¾ü 	10	5000	ÌïÁÁ£¬ĞÙÑÀÀû	ºÕ¶ûÄ·£¬ĞÙÑÀÀû	µÂË¹ÅÁµÙ£¬ĞÙÑÀÀû	ÌïÁÁ£¬²¨À¼	ºÕ¶ûÄ·£¬²¨À¼	µÂË¹ÅÁµÙ£¬²¨À¼	ÌïÁÁ£¬µÂ¹ú	ºÕ¶ûÄ·£¬µÂ¹ú	µÂË¹ÅÁµÙ£¬µÂ¹ú	ÆäËû¿ÉÄÜ	408270700	408272400	408290900	408302200	10	50	10000000
-32	29ÈÕ¶á½ğ¾º²Â	ÂíÀ­ËÉ±ÈÈü¹Ú¾ü	7	5000	¿ÏÄáÑÇ	Ä¦Âå¸ç	Î÷°àÑÀ	Òâ´óÀû	ÆÏÌÑÑÀ	ÈÕ±¾	ÆäËû¹ú¼ÒÑ¡ÊÖ				408280700	408282400	408300900	408312200	4	50	10000000
-1000	ÖĞ¹ú½±ÅÆÊıÄ¿	ÖĞ¹ú°ÂÔË´ú±í¶ÓÔÚ2004ÄêÑÅµäÊ¢»áÉÏ½«µÃµ½½ğÒøÍ­ÅÆÊıÄ¿	7	5000	¿ÏÄáÑÇ	Ä¦Âå¸ç	Î÷°àÑÀ	Òâ´óÀû	ÆÏÌÑÑÀ	ÈÕ±¾	ÆäËû¹ú¼ÒÑ¡ÊÖ				408130700	408210700	408300900	408312200	921888	50	10000000
-2001		ÖØ·ê£¨´òÒ»×Ö£©	4	0	Óï	¹Û	Åó	ÖÚ											2	50	10000000
-2002		¾Åµã£¨´òÒ»×Ö£©	4	0	ÈĞ	·ç	Öó	Íè											4	50	10000000
-2003		Ò»ÈÕ£¨´òÒ»×Ö£©	4	0	Ìï	·ò	·ò	¾É											4	50	10000000
-2004		ÓïÉù£¨´òÒ»×Ö£©	4	0	ÃÎ	ÚÏ	Íµ	×º											2	50	10000000
-2005		ÁÄÕ«£¨´òÒ»×Ö£©	4	0	ÅÄ	ãå	½Ü	²ï											4	50	10000000
-2006		¶şÔÂÆ½£¨´òÒ»×Ö£©	4	0	Åó	ÅÖ	¹é	¿Æ											1	50	10000000
-2007		¶şĞ¡½ã£¨´òÒ»×Ö£©	4	0	Ëï	ÃÃ	×Ë	Æë											3	50	10000000
-2008		ËêÄ©»áÃæ£¨´òÒ»×Ö£©	4	0	ö¦	Í´	Öà	Ïæ											1	50	10000000
-2009		¶«Õ÷Î÷ÌÖ£¨´òÒ»×Ö£©	4	0	¸¶	Üç	Ö¤	Ú¦											3	50	10000000
-2010		ÈËÈËÈÃ×ù£¨´òÒ»×Ö£©	4	0	×ø	×¯	´Ó	×İ											2	50	10000000
-2011		Õ¾ÁËÁ½Ìì£¨´òÒ»×Ö£©	4	0	Çç	°µ	ÆØ	²Ï											2	50	10000000
-2012		ÄÚ¸ó×óÏà£¨´òÒ»×Ö£©	4	0	Ù»	íô	¸ñ	ÇÍ											3	50	10000000
-2013		ÊØÖê´ıÍÃ£¨´òÒ»×Ö£©	4	0	çæ	Áø	Ê¤	´ı											2	50	10000000
-2014		·«Ó°ÈëÄ¿£¨´òÒ»×Ö£©	4	0	É£	æµ	µÓ	½¢											4	50	10000000
-2015		ÖñÏÂÒ»ÊÒ£¨´òÒ»×Ö£©	4	0	çÆ	íÓ	¼ò	ĞÂ											3	50	10000000
-2016		°ëĞßÍµÃé£¨´òÒ»×Ö£©	4	0	×Å	ÉÆ	áÈ	ğ½											1	50	10000000
-2017		°ÙÄêÖñÁÖ£¨´òÒ»×Ö£©	4	0	³ï	Öñ	°Ø	¿Å											1	50	10000000
-2018		½­¶«¶şÇÇ£¨´òÒ»×Ö£©	4	0	ÎÖ	ÇÅ	¸Ü	Óé											4	50	10000000
-2019		Ã÷ÌìÈÕÈ«Ê³£¨´òÒ»×Ö£©	4	0	ÔÂ	ºç	Åğ	ê»											1	50	10000000
-2020		ÍÆ¿ªÈËÓÖÀ´£¨´òÒ»×Ö£©	4	0	ÓÓ	åû	‚g	Ì¯											4	50	10000000
-2021		¶ÉÍ·ÓàÂäÈÕ£¨´òÒ»×Ö£©	4	0	Öâ	ãè	Ï£	Ê¶											2	50	10000000
-2022		»Æ»èÈÕ°ëÂä£¨´òÒ»×Ö£©	4	0	Ãû	ÑÇ	Ö¼	Íø											1	50	10000000
-2023		¿×È¸¶«ÄÏ·É£¨´òÒ»×Ö£©	4	0	ÏË	±Õ	Ëï	¼Ğ											3	50	10000000
-2024		ÓÃÈ­Í·Ëµ»°£¨´òÒ»×Ö£©	4	0	·Ù	Óş	Ï²	¶Ì											2	50	10000000
-2025		ÔÂÒĞÖ¦£¬¶Å¾éÌä£¨´òÒ»×Ö£©	4	0	Åï	Ôá	Úò	ËÖ											1	50	10000000
-2026		²ĞÔÂĞ±ÕÕÓ°³É¶Ô£¨´òÒ»×Ö£©	4	0	éã	½Ç	¶à	Åó											3	50	10000000
-2027		¼½ÖĞÁ½ÓöÕæĞÄÈË£¨´òÒ»×Ö£©	4	0	½©	Åì	Ïä	Ïö											1	50	10000000
-2028		Îª¹«Ã÷¶ÏÆúÎÚÉ´£¨´òÒ»×Ö£©	4	0	Ä¾	Ö¹	°ì	·ç											1	50	10000000
-2029		µÃÔÂÂ¥Ç°ÏÈµÃÔÂ£¨´òÒ»×Ö£©	4	0	ëß	Òõ	óÌ	Åï											4	50	10000000
-2030		ÏàË¼ÈËµ½½áÍ¬ĞÄ£¨´òÒ»×Ö£©	4	0	¸ë	Ğü	Ëó	ç³											2	50	10000000
-2031		ÉÙĞ¡Àë¼ÒÀÏ´ó»Ø£¨´òÒ»×Ö£©	4	0	Æú	¼â	ÉÆ	ÄÜ											2	50	10000000
-2032		Ò»È¥ÈÕ±¾ÒôÑ¶ÎŞ£¨´òÒ»×Ö£©	4	0	ê»	èÃ	ñ·	ĞÒ											2	50	10000000
-2033		·çÖĞ¿ÕºòÁ¢ÖÕÏü£¨´òÒ»×Ö£©	4	0	ÔÙ	Ùí	ºì	Ñ²											2	50	10000000
-2034		Ø¥ÔØº¬ÀáÎ÷±±Íû£¨´òÒ»×Ö£©	4	0	Ê¡	Íş	×È	Ã£											4	50	10000000
-2035		Â¥±ßÇÅÅÏÁøÌõÒ¡£¨´òÒ»×Ö£©	4	0	Áº	µÃ	µ¯	±ò											4	50	10000000
-2036		´óºÓÉÏÏÂÊ§ÌÏÌÏ£¨´òÒ»×Ö£©	4	0	¿Õ	Ææ	Îö	·¯											2	50	10000000
-2037		ÔÂÒÆ»¨Ó°µ½¸ßÌ¨£¨´òÒ»×Ö£©	4	0	»¸	³á	èñ	ÄÜ											4	50	10000000
-2038		ÖØÂÍµşáÖÒ»¸ù²İ£¨´òÒ»×Ö£©	4	0	Àõ	ãô	×Â	±¦											3	50	10000000
-2039		·¶½ø°øÍíÈ¥Ë®±ß£¨´òÒ»×Ö£©	4	0	Ô·	±ä	×İ	Çà											1	50	10000000
-2040		ĞÂÔÂÈıĞÇÕÕÖ¦Í·£¨´òÒ»×Ö£©	4	0	¾Î	²É	À¤	Ï¸											2	50	10000000
-2041		´åÖĞ¹ÅÊ÷Ö¦°ë¿İ£¨´òÒ»×Ö£©	4	0	è¦	Ïë	¹Ä	õ¤											3	50	10000000
-2042		Ò»¹³ĞÂÔÂĞ±¹ÒÊ÷ÉÒ£¨´òÒ»×Ö£©	4	0	ºÅ	ºÌ	Òµ	Ğş											2	50	10000000
-2043		±ğºó£¬ĞÂ²İ£¬¿Õ¶ÔÔÂ£¨´òÒ»×Ö£©	4	0	Øá	Ó±	ĞÂ	Ï®											1	50	10000000
-2044		ÎôÈÕÒ»±ğºó£¬Ê®ÔØ·½Ïà·ê£¨´òÒ»×Ö£©	4	0	ÄÎ	ĞÒ	èÃ	¿à											4	50	10000000
-2045		²ĞĞÇÈıÁ½µã£¬¹ÂÑãºá¿Õ·É£¨´òÒ»×Ö£©	4	0	È®	Áù	Ø¤	ÊÏ											2	50	10000000
-2046		¹ëÖĞÇÎÀöÈË£¬º¬Ğß¶©Ô§ÃË£¨´òÒ»×Ö£©	4	0	È¾	×Ü	Ëµ	ÍŞ											4	50	10000000
-2047		¿´ËÆÒ»²İÒ»Ä¾£¬ÑÉÖªµÎË®³É¾Ş£¨´òÒ»×Ö£©	4	0	Ş¡	äú	Æª	ºâ											1	50	10000000
-2048		Ò»¶ÔÃ÷ÔÂºÁ²»²Ğ£¬ÂäÔÚÉ½½Å×óÓÒÕ¾£¨´òÒ»×Ö£©	4	0	±À	¸à	·ş	³Ç											1	50	10000000
-2049		Ò»Æ¬²ĞÔÆÕÚÌì¶¥£¬ÈıÌõ´¹ÁøÎè¶«·ç£¨´òÒ»×Ö£©	4	0	²Î	Çà	·¶	±ä											1	50	10000000
-2050		ÎÔ¿´¿ÕÉ½ÏÎÔ¶Ê÷£¬²»¼°Î÷±ßÌı¼ıÉù£¨´òÒ»×Ö£©	4	0	½¨	¿Õ	Åó	ÍÏ											1	50	10000000
-2051		éÜÇ°µÎË®£¨´òÒ»×Ö£©	4	0	ãå	±±	¼³	Ú°											1	50	10000000
-2052		ÇïÉ«²Ø´º£¨´òÒ»×Ö£©	4	0	Ïã	ÇÖ	ÓÄ	¶ğ											1	50	10000000
-2053		ÅÚ´òË«³µ£¨´òÒ»×Ö£©	4	0	ê¿	µÍ	ºä	Êé											3	50	10000000
-2054		Î÷ºş´ºÄ©£¨´òÒ»×Ö£©	4	0	Âä	ºÓ	Ñë	ãè											4	50	10000000
-2055		¾ÆÆåÎª°é£¨´òÒ»×Ö£©	4	0	Êë	ä¿	Ëê	æí											2	50	10000000
-2056		ÂÀ²¼´³¹ØÖĞ£¨´òÒ»×Ö£©	4	0	Æ·	ãÌ	Ë³	Ö»											2	50	10000000
-2057		ÎİÇ°Ò»¶ÏËÉ£¨´òÒ»×Ö£©	4	0	Î¼	áå	é§	Åï											3	50	10000000
-2058		Ê®Á½ºÏÒ»½ï£¨´òÒ»×Ö£©	4	0	ÇÛ	É¼	Ìå	³¾											1	50	10000000
-2059		ÈÕÄºÁøÉÒÍ·£¨´òÒ»×Ö£©	4	0	ÉÒ	ÃÎ	±ë	èó											2	50	10000000
-2060		ğ©Ê×Çî¾­Êé£¨´òÒ»×Ö£©	4	0	Èõ	¶÷	¸Ş	Õä											3	50	10000000
-2061		¸ÊÂ¶ãåÌÒÀî£¨´òÒ»×Ö£©	4	0	¼½	ÁØ	îª	Àº											2	50	10000000
-2062		ÖÛÈËÒ»Ò¹¹é£¨´òÒ»×Ö£©	4	0	·¯	èÃ	³¤	Àı											4	50	10000000
-2063		ÖñÁÖĞ¡Â·×İºá£¨´òÒ»×Ö£©	4	0	óß	°Ü	äæ	Á¸											1	50	10000000
-2064		»Æ»èĞÂÔÂÕÕÀ¸Ç°£¨´òÒ»×Ö£©	4	0	¾Í	ËÖ	ğ©	ÀÈ											2	50	10000000
-2065		Ò£ÒäÄµµ¤Âú³ÇÏã£¨´òÒ»×Ö£©	4	0	ãµ	±à	Âä	±¤											3	50	10000000
-2066		Ç³²İ´¹Â¶Á½ÒÀÒÀ£¨´òÒ»×Ö£©	4	0	ÆÚ	Ğ¯	Âú	Ïæ											3	50	10000000
-2067		½­ÅÏ¶ÏÑî½Ó²ĞÎß£¨´òÒ»×Ö£©	4	0	Îò	Ù»	íÃ	µ´											4	50	10000000
-2068		ÂÒÌïÉ¢Âä°ëºşÒõ£¨´òÒ»×Ö£©	4	0	Ãì	Î¼	ËÖ	³Ç											2	50	10000000
-2069		ÓÎ°ÕáºÉ½ºÏÄ¿Ãß£¨´òÒ»×Ö£©	4	0	Ãñ	¼×	Ö§	À´											1	50	10000000
-2070		±ğÊ±Ç¡ÔÚËê³ıÏ¦£¨´òÒ»×Ö£©	4	0	Àö	²í	ÉÙ	²½											2	50	10000000
-2071		ãéÂŞ½­ÅÏ¼ûÔÂÃ÷£¨´òÒ»×Ö£©	4	0	³¤	Éı	¹¤	ÈÕ											4	50	10000000
-2072		Óêö«Ï¼·ÉĞ±Ñã¹ı£¨´òÒ»×Ö£©	4	0	Éş	èó	ÉÒ	¼Ù											4	50	10000000
-2073		ÓñÉĞÓĞè¦£¬ÈËÔõ¿ÉÃâ£¨´òÒ»×Ö£©	4	0	±¦	ËÚ	½ğ	Äş											3	50	10000000
-2074		ÍõÆÅ½ĞÂô£¬»§»§´«Éù£¨´òÒ»×Ö£©	4	0	µ­	·Ë	ğ­	àş											3	50	10000000
-2075		ÒÑÇ²ÈºÍÜ×÷Á½²¿£¬¸üÈ¥Ã÷ÔÂ³ÉÈıÈË£¨´òÒ»×Ö£©	4	0	¼Ñ	´À	µş	º®											2	50	10000000
-2076		Óæ£¨´òÒ»³ÉÓï£©	4	0	ÈçÓãµÃË®	ÒÀÉ½°øË®	Ğ¡ÇÅÁ÷Ë®	Á÷ÄêËÆË®											1	50	10000000
-2077		´Ó£¨´òÒ»³ÉÓï£©	4	0	×Ô´Ó¶àÇé	Ô¹ÉùÔØµÀ	ÈçÓ°ËæĞÎ	ÍöÃüÖ®Í½											3	50	10000000
-2078		·´»÷£¨´òÒ»³ÉÓï£©	4	0	ºó·¢ÖÆÈË	Í¬¹éÓÚ¾¡	·À»¼Î´È»	Ç°³µÖ®¼ø											1	50	10000000
-2079		ÏÖ´ú¾ç£¨´òÒ»³ÉÓï£©	4	0	Ã÷¼ûÍòÀï	ÎŞÃûĞ¡×ä	ÓÚ½ñÎªÁÒ	´¦±ä²»¾ª											3	50	10000000
-2080		Å×ĞåÇò£¨´òÒ»³ÉÓï£©	4	0	Ê·²»¾øÊé	ÏÈ¶ÃÎª¿ì	ÄÚÓÇÍâ»¼	Ç§½ğÒ»ÖÀ£¬Í¶ÆäËùºÃ											4	50	10000000
-2081		µ¥ÏàË¼£¨´òÒ»³ÉÓï£©	4	0	ÈËĞÄË¼¶¨	ÎâÏÂ°¢ÃÉ	Êµ²»ÏàÂ÷	Ò»ÍùÇéÉî											4	50	10000000
-2082		¾øÊÀºÃ½££¨´òÒ»³ÉÓï£©	4	0	¾®¾®ÓĞÌõ	¶úÄ¿Ò»ĞÂ	ÌìÏÂÎŞË«	ËØĞĞ²»Á¼											3	50	10000000
-2083		Ã÷ÔÂ¼¸Ê±ÓĞ£¨´òÒ»³ÉÓï£©	4	0	ÁúÕù»¢¶·	Ò»³¯Ò»Ï¦	ÖÃÉíÊÂÍâ	ÉúËÀ¹ØÍ·											2	50	10000000
-2084		Ê®ÎåµÄÔÂÁÁ£¨´òÒ»³ÉÓï£©	4	0	³¤ºÓÂäÈÕ	Õı´ó¹âÃ÷	Ç§Àï¹²æ¿¾ê	ÔÂÉÏÎ÷Â¥											2	50	10000000
-2085		Í·ĞüÁº£¬×¶´Ì¹É£¨´òÒ»³ÉÓï£©	4	0	³¤ÖÎ¾Ã°²	´ºÅ¯»¨¿ª	×ÔÇ¿²»Ï¢	Çå¾ı²à											3	50	10000000
-2086		³¤¿ÕÍòÀïËÍÏàË¼£¨´òÒ»³ÉÓï£©	4	0	ÉÆÊ¼ÉÆÖÕ	ÎŞÃûĞ¡×ä	ºóÀ´¾ÓÉÏ	¿í´óÎª»³											4	50	10000000
-2087		»æĞÎÍ¼Ó°À´×·²¶£¨´òÒ»³ÉÓï£©	4	0	ĞÄÈçµ¶¸î	²»ÕÛ²»¿Û	ÒÔÃ²È¡ÈË	¿ÚÈôĞüºÓ											3	50	10000000
-2088		Ö÷Ô×ÌìÏÂÎªÄ¸ÒÇ£¨´òÒ»³ÉÓï£©	4	0	ÈË¸¡ÓÚÊÂ	ÉúÀÏ²¡ËÀ	´óÏ²¹ıÍû	ºóÀ´¾ÓÉÏ											4	50	10000000
-2089		È«¹úÉÏÏÂÏ²ÑóÑó£¨´òÒ»³ÉÓï£©	4	0	ÈçÊÍÖØ¸º	Ï¢ÊÂÄşÈË	ÀÖÔÚÆäÖĞ	Ò»ÊÇÒ»£¬¶şÊÇ¶ş											3	50	10000000
-2090		ºîÃÅÒ»ÈëÉîËÆº££¨´òÒ»³ÉÓï£©	4	0	»ö´Ó¿Ú³ö	ÊÒåÇÈËÔ¶	ĞĞ½«¾ÍÄ¾	ºóÀ´¾ÓÉÏ											2	50	10000000
-2091		Æ¾¾ı´«Óï±¨Æ½°²£¨´òÒ»³ÉÓï£©	4	0	ÈÙ¹é¹ÊÀï	»®Ò»²»¶ş	ÓĞËù×÷Îª	´óÍ¬Ğ¡Òì											1	50	10000000
-2092		¶£ßÌËµÏòËµÊéÈË£¨´òÒ»³ÉÓï£©	4	0	´ó´ò³öÊÖ	ÏÂÂä²»Ã÷	ÑÔ¶øÎŞĞÅ	²»Òí¶ø·É											3	50	10000000
-2093		Î¨ÓĞÆßÃÃ¼Ş¶­ÀÉ£¨´òÒ»³ÉÓï£©	4	0	ÈıÔª¼°µÚ	ÑÔ¹ıÆäÊµ	ÁùÉñÎŞÖ÷	´ËÒ»Ê±±ËÒ»Ê±											3	50	10000000
-2094		¡°ÀîåÓ£¬È¥°ÑËÎ½­½ĞÀ´£¡¡±£¨´òÒ»³ÉÓï£©	4	0	ÖÜ¶ø¸´Ê¼	¼ûÒìË¼Ç¨	²»ÑÔ¶øÓ÷	ºô·ç»½Óê											4	50	10000000
-2095		´ó¶úÔô£¬²»¼ÇÔ¯ÃÅÉäêªÊ±Ò®£¨´òÒ»³ÉÓï£©	4	0	Í´¶¨Ë¼Í´	»Ø¹â·µÕÕ	¸÷ÓĞËù³¤	ÇóÈ«Ôğ±¸											4	50	10000000
-2096		¿Õ°×£¨´òÒ»³ÉÓï£©	4	0	ĞéÓĞÆä±í	Ñ°ËÀÃÙ»î	ÃÀ²»Ê¤ÊÕ	ĞãÉ«¿É²Í											1	50	10000000
-2097		Å­·¢³å¹Ú£¨´òÒ»³ÉÓï£©	4	0	ÉúÆø²ª²ª	ºÃÉ«Ö®Í½	Ñ°¸ù¾¿µ×	Èæ×Ó¿É½Ì											1	50	10000000
-2098		Ö»ĞíÊ¤£¬²»Ğí°Ü£¨´òÒ»³ÉÓï£©	4	0	Òõ²îÑô´í	ÍË±ÜÈıÉá	ÑÔ¶øÓĞĞÅ	Î©ÀûÊÇÍ¼											4	50	10000000
-2099		ÍòË®Ç§É½Ö»µÈÏĞ£¨´òÒ»³ÉÓï£©	4	0	Ö¾ÔÚ±ØµÃ	ÎÄÒÔÔØµÀ	ĞĞÈôÎŞÊÂ	Ò»Âíµ±ÏÈ											3	50	10000000
-2100		²»Ê¶´ºÏÄÓëÇï¶¬£¨´òÒ»³ÉÓï£©	4	0	Óû°Õ²»ÄÜ	»¨»¨ÊÀ½ç	ÊÓÍ¬Â·ÈË	ÓĞÉúÖ®Äê											4	50	10000000
-2101		ºÃÊ«ºÃÔÂÇìÖĞÇï£¨´òÒ»³ÉÓï£©	4	0	¸ß·çÁÁ½Ú	Ò»´¥¼´·¢	²ã³ö²»Çî	Ò»±¾Õı¾­											1	50	10000000
-2102		²»·Á×ß²½ÌøÂíÆå£¨´òÒ»³ÉÓï£©	4	0	²»Ê¡ÈËÊÂ	Ö¸ÈÕ¿É´ı	Ò¡Í·°ÚÎ²	¹â¹ÖÂ½Àë											2	50	10000000
-2103		ÓÖ¶ÈÒ»Äê£¬¸÷ÌíÒ»Ëê£¨´òÒ»³ÉÓï£©	4	0	ÅÅÉ½µ¹º£	¸÷ÓĞËù³¤	Í¦Éí¶ø³ö	Ò»Ã«²»°Î											2	50	10000000
-2104		ÀèÃ÷¼´Æğ£¬È÷É¨Í¥³ı£¨´òÒ»³ÉÓï£©	4	0	ÓĞÉúÖ®Äê	ÉÏ³ËÖ®×÷	¸ñ¸ñ²»Èë	ÏşÖ®ÒÔÀí											4	50	10000000
-2105		²Ùµ¶¹íÎó×÷ÀËÀï°×Ìõ£¨´òÒ»³ÉÓï£©	4	0	ÃûÕıÑÔË³	³ÉÈËÖ®ÃÀ	¼ûÒìË¼Ç¨	Ò»Ä£Ò»Ñù											1	50	10000000
-2106		Ã°³äÇÕ²î£¨´òÒ»Ë×Óï£©	4	0	ÈçÍ¬	³ĞÈÃ	¼ÙÊ¹	»òÕß											3	50	10000000
-2107		°ËÃæÍ¸·ç£¨´òÒ»Ë×Óï£©	4	0	Æø²»´òÒ»´¦À´	ÊÜÆø°ü	ÉÏÁº²»ÕıÏÂÁºÍá	½üÄ«ÕßºÚ											1	50	10000000
-2108		ÄÜÒûÒ»±­ÎŞ£¨´òÒ»Ë×Óï£©	4	0	¸ÉÂğ	Ë×»°Ëµ	»ìµÃÏÂÈ¥	ĞĞĞĞºÃ											1	50	10000000
-2109		ÓÎ×ÓÉíÉÏÒÂ£¨´òÒ»Ë×Óï£©	4	0	Äî¾É	ºúÂÒ	Ç½Í·Ò»¸ù²İ	±ğÀ´ÕâÒ»Ì×											4	50	10000000
-2110		´Ó²»×ö¿÷ĞÄÊÂ£¨´òÒ»Ë×Óï£©	4	0	ÀÏºÃÈË	»ìµÃÏÂÈ¥	Ñ°¿ªĞÄ	¸ÉÂğ											1	50	10000000
-2111		È¥ÄêÒ»µÎÏàË¼Àá£¬ÖÁ½ñÎ´Á÷µ½Èù±ß£¨´òÒ»Ë×Óï£©	4	0	Ëµ²»³ö¿Ú	ºÃ´óµÄÃæ×Ó	²»ÁôÇé	ÄÑÎªÇé											2	50	10000000
-2112		´Ó´Ë¾ıÍõ²»Ôç³¯£¨´òÒ»Ë×Óï£©	4	0	»ú»áÄÑµÃ	Ã»Ö÷¼û	¸Ï³±Á÷ 	ÀÏ²»×Ô¾õ											2	50	10000000
-2113		³¤±Ç´ó¶ú£¨´òÒ»Ë×Óï£©	4	0	ÏóÄ£ÏóÑù	ÀÏ´óÄÑ	ÎÅÃûÌìÏÂ	ÂÒµ¯ÇÙ											1	50	10000000
-2114		¹ıÎå¹ØÕ¶Áù½«£¨´òÒ»Ë×Óï£©	4	0	¿´ÔÚÑÛÀï¼ÇÔÚĞÄÀï	Ëµ´ó»°	É¶ÍæÒâ¶ù	³ö¿ÚÉËÈË											4	50	10000000
-2115		»ÆÈªÓĞÂ·ºÃ»¹Ïç£¨´òÒ»Ë×Óï£©	4	0	Ò»»·¿ÛÒ»»·	Ã»×¼»¹ĞĞ	¹í²ÅÖªµÀ	Ã»ÓĞ²»Í¸·çµÄÇ½											3	50	10000000
-2116		ÈçÂÄ±¡±ù£¨´òÒ»Ë×Óï£©	4	0	²»Ì¤Êµ	ÕÕÕâÑùÏÂÈ¥	¸ÉµÉÑÛ	ÓĞ¹ıÖ®¶øÎŞ²»¼°											1	50	10000000
-2117		²»ÔÚ¼Ò£¨´òÒ»Ë×Óï£©	4	0	ÁïÖ®´ó¼ª	ÍâĞĞ	ÓĞËù·¢ÏÖ	ÈíÓ²²»³Ô											2	50	10000000
-2118		ÏÎÔ¶É½ÍÌ³¤½­£¨´òÒ»Ë×Óï£©	4	0	´òĞÄÑÛÀïÔ¸Òâ	Î¸¿Ú²»Ğ¡	²»ÖĞÒâ	¶à¹ÜÏĞÊÂ											2	50	10000000
-2119		ĞĞÒ½£¨´òÒ»Ë×Óï£©	4	0	³Ô²»ÁË¶µ×Å×ß	Õâµ±¿Ú	×ß×ÅÇÆ	³Ô±¥ÁË³ÅµÄ											3	50	10000000
-2120		ĞİÈ¥ÒĞÎ£À¸£¨´òÒ»Ë×Óï£©	4	0	Ã«ÊÖÃ«½Å	¿¿²»×¡	¹ÜµÃ¿í	¼ÙË¹ÎÄ											2	50	10000000
-2121		Ò¹Ò¹¿´»¨Âä£¨ÀñÃ²ÓÃÓï£©	4	0	´ËÖÂ	¶àĞ»	ÀÍ¼İ	¿ÍÆø											2	50	10000000
-2122		ÀÉÃ²£¨»¨»ÜÃû£©	4	0	Ç¾Ş±	Ë®ÏÉ	Ü½ÈØ	½ğ¹ğ											3	50	10000000
-2123		´ÈÄ¸ÊÖÉÏÏß£¨À¥³æÃû£©	4	0	ÕÕÒ¹°×	·ÄÖ¯Äï	º®ºÅ³æ	Ê®½ãÃÃ											2	50	10000000
-2124		Ìï£¨ÀÖÇúÃû£©	4	0	ºµÌìÀ×	´ºÁî²··µ	¹âÃ÷ĞĞ	Ï²ÑóÑó											1	50	10000000
-2125		°é¾ıÈç°é»¢£¨¶¯ÎïÃû£©	4	0	¶«±±»¢	ÁçÑò	ºÓÀê	¿ÖÁú											4	50	10000000
-2126		ÔÚ¼ÒÈÕÈÕºÃ¹ı£¨ÈËÊÂÓÃÓï£©	4	0	²ú¼Ù	³ö²î	¼Ç¹ı	ÉıÇ¨											2	50	10000000
-2127		¹Û¹âÍÅÏ²µÇ³¯ÑôÍ¤£¨ÖĞ¹úµØÃû£©	4	0	ÇåÁ÷¡¢º¬É½	°ÄÃÅ	ÄÇÇú¡¢°¢Àï	À´±ö¡¢ÁÙ¹ğ¡¢Æ½ÀÖ¡¢ÉÏË¼¡¢ÁéÉ½											4	50	10000000
-2128		ÏÂ·ÅÁÖ³¡¹²»¼ÄÑ£¨ÖĞ¹úµØÃû£©	4	0	ÃÜÔÆ¡¢»³Èá	ÈªÖİ	ÇåÁ÷¡¢º¬É½	Í©è÷											4	50	10000000
-2129		ÌÒ»¨ÆËÃæÀ´£¨Ñ¨Î»£©	4	0	²»Èİ¡¢Çú²î	²»Èİ¡¢ÍâÁê	ĞĞ¼ä¡¢Ïã¸½	²»Èİ¡¢Æø³å											3	50	10000000
-2130		Í¥Ç°Ã·»¨ËêÄ©¿ª£¨ÃûÊ¤£©	4	0	ÎÔ·ğËÂ	Â¹ÃÅÉ½	´ó·ğËÂ	°×ÔÆ¹Û											2	50	10000000
-2131		Ëµ»°ºÍÆø£¨ÌåÓıÔË¶¯£©	4	0	ÏàÆË	¾º×ß	ÅÅÇò	ÈáµÀ											4	50	10000000
-2132		¹ÅÍù½ñÀ´£¨¹ÅÈËÃû£©	4	0	ÕÅ·É	ÎäËÉ	Ê·½ø	Â½ÓÎ											3	50	10000000
-2133		ÏÌÑôÒ»Æ¬ÔÂ£¨¹ÅÈËÃû£©	4	0	Áø¹«È¨	ÇØÃ÷	Àî°×	ÌÆÃ÷»Ê											2	50	10000000
-2134		Ä¾À¼Ö®×Ó£¨Ê³Îï£©	4	0	Î÷ÇÛ	Çà¹û	»¨Éú	Ò¬ÈØ											3	50	10000000
-2135		ÖØÂÍµşáÖ£¨À¥³æ£©	4	0	ÃÛ·ä	ó«òë	ºÚÉ½ÒÏ	ºÓòßòÑ											1	50	10000000
-2136		¹ÂÑã°§ÃùÉùÉùĞø£¨ÈËÃû£©	4	0	ÑÕÕæÇä	Ğì±¯ºè	Â½´óÄê	Ö£°åÇÅ											2	50	10000000
-2137		ºóÊÂÖÕÄÑ¼Ì£¨Ò©²ÄÃû£©	4	0	µ±¹é	µØÓÜ	Ë®ËÕ	Ğø¶Ï											4	50	10000000
-2138		ÑºËÍÉú³½¸Ù£¨Ë®ä°ÈËÃû¶ş£©	4	0	½âÕä¡¢½â±¦	Ê±Ç¨¡¢°²µÀÈ«	ÑàÇà¡¢ÇØÃ÷	ËÎ½­¡¢ÎâÓÃ											1	50	10000000
-2139		°×¹Ç¾«Ô­ĞÎ±ÏÂ¶£¨Ë×Óï£©	4	0	¼ûºÃ¾ÍÊÕ	¶Ô²»ÉÏºÅ	¹ÖÏÖÏó	Ğ¡µÀÏûÏ¢											3	50	10000000
-2140		³öË®Ü½ÈØ£¨»¨»ÜÃû£©	4	0	ÀäÏã	ºµºÉ»¨	ÈÌ¶¬	Ä¾À¼											2	50	10000000
-2141		´ºÈÕÄğ³öºÃ¾ÆÀ´£¨»¨»ÜÃû£©	4	0	ËÄ¼¾±¨´º	ºÏ»¶»¨	´ºÒ»Æ·	É½²è											1	50	10000000
-2142		ÈÆÊ÷ÎŞÒÀÔÂÕı¸ß£¨´ÊÇúÅÆ£©	4	0	ºÏ»¶	Ò¹·ÉÈµ	Ğ¡ºìÂ¥	½âÔ©½á											2	50	10000000
-2143		×òÈÕ¸®ÉÏÊÙ°Õ£¬½ñÈÕÓÖÎÅ³ö¼Ş£¬´ı°ìºØÀñ£¨ËÎ´Ê¾ä£©	4	0	ÇïÀ´Êé¸üÊè	ÎŞ¿ÉÄÎºÎ»¨ÂäÈ¥	°×ÁËÉÙÄêÍ·	È´ÊÇ¾ÉÊ±ÏàÊ¶											2	50	10000000
-2144		°×·¢»¹Ïç£¨ÖĞÒ©Ãû£©	4	0	ºÏÏã	²Ô¶ú	Îå¼Ó²Î	µ±¹é											4	50	10000000
-2145		ÎŞË¿ÖñÖ®ÂÒ¶ú£¨ĞÕÊÏ£©	4	0	Ä½Èİ	ÀÖÕı	ÍêÑÕ	ÇåË®											2	50	10000000
-2146		²Ê¼ãÃî±Ê¸³Å£Äê£¨ÈËÃû£©	4	0	ÑÕÁ¼	ÎÄ³ó	¹ÜÄş	ÑîĞŞ											2	50	10000000
-2147		ÁºÎäµÛÑ·Î»£¨ÈËÃû£©	4	0	ÏôÈÃ	¶ÅÇ¨	ÖÜÍ¨	ÀÖºÍ											1	50	10000000
-2148		½­Á÷ÓĞÉù½üº®É½£¨ÃûÊ¤¹Å¼££©	4	0	ÉßÉ½	Âä±Ê¶´	³±ÒôËÂ	ÎŞÁ¿¹Û											3	50	10000000
-2149		»ºÁ÷£¨µØÃû£©	4	0	Ò×ÃÅ	Ë«½­	¶¼ÔÈ	ĞìË®											4	50	10000000
-2150		½­±ßÒ»Ê÷´¹´¹·¢£¨Ê÷Ä¾Ãû£©	4	0	Ë®É¼	ÇçÓê	Ä¾éÈ	×Øéµ											1	50	10000000
-2151		¾Ù±­ÑûÃ÷ÔÂ£¬_______________¡£	4	0	¶ÔÓ°³ÉÈıÈË	Ó°Í½ËæÎÒÉí	ÎÒÎèÓ°ÁãÂÒ	ÏàÔ¼åãÔÆºº											1	50	10000000
-2152		Ë­ÑÔ´ç²İĞÄ£¬ _______________¡£	4	0	±¨µÃÈı´ºêÍ	´ÈÄ¸ÊÖÖĞÏß	ÓÎ×ÓÉíÉÏÒÂ	Òâ¿Ö³Ù³Ù¹é											1	50	10000000
-2153		¶«ÁÙíÙÊ¯£¬_____________¡£	4	0	ÒÔ¹Û²×º£	É½µºñµÖÅ	ºé²¨Ó¿Æğ	Ê÷Ä¾´ÔÉú											1	50	10000000
-2154		ÀÏæ÷·üèÀ£¬____________¡£	4	0	Ö¾ÔÚÇ§Àï	Ö¾ÔÚ°ÙÀï	Ö¾ÔÚÒ»Àï	Ö¾ÔÚÊ®Àï											1	50	10000000
-2155		Ï¦ÑôÎŞÏŞºÃ£¬____________¡£	4	0	Ö»ÊÇ½ü»Æ»è	ÏòÍíÒâ²»ÊÊ	Çı³µµÇ¹ÅÔ­	Ï¦ÑôÎŞÏŞºÃ											1	50	10000000
-2156		ºÎµ±¹²¼ôÎ÷´°Öò£¬_____________¡£ 	4	0	È´»°°ÍÉ½Ò¹ÓêÊ±	¾ıÎÊ¹éÆÚÎ´ÓĞÆÚ	°ÍÉ½Ò¹ÓêÕÇÇï³Ø	Ò»ºø×Ç¾ÆÏ²Ïà·ê											1	50	10000000
-2157		³úºÌÈÕµ±Îç£¬____________¡£	4	0	º¹µÎºÌÏÂÍÁ	Ë­ÖªÅÌÖĞ²Í	ÈÕµ±Îç³úºÌ	¾ÙÍ·ÍûÃ÷ÔÂ											1	50	10000000
-2158		²»ÖªÏ¸Ò¶Ë­²Ã³ö£¬_____________¡£	4	0	¶şÔÂ´º·çËÆ¼ôµ¶	ÍòÌõ´¹ÏÂÂÌË¿ÌĞ	ÔªÔÂ´º·çËÆ¼ôµ¶	±ÌÓñ×±³ÉÒ»Ê÷¸ß											1	50	10000000
-2159		°×ÈÕµÇÉ½Íû·é»ğ£¬_____________¡£	4	0	»Æ»èÒûÂí°ø½»ºÓ	¹«Ö÷ÅıÅÃÓÄÔ¹¶à	ÓêÑ©·×·×Á¬´óÄ®	¿Õ¼ûÆÏÌÑÈëºº¼Ò											1	50	10000000
-2160		»Æº×Â¥Ç°´ºË®À«£¬_____________¡£	4	0	Ò»±­»¹Òä¹ÊÈËÎŞ	¶ÅÁêÏô´Î¾ı	µ½¹ÇÊÇ·ç³¾	¼ÅÄ¯Á¯ÎáµÀ											1	50	10000000
-2161		ÄÏ³¯ËÄ°Ù°ËÊ®ËÂ£¬_____________¡£	4	0	¶àÉÙÂ¥Ì¨ÑÌÓêÖĞ	Ë®´åÉ½¹ù¾ÆÆì·ç	Ç§ÀïİºÌäÂÌÓ³½­	¶àÉÙÂ¥Ì¨·çÓêÖĞ											1	50	10000000
-2162		¶«·ç²»ÓëÖÜÀÉ±ã£¬_____________¡£	4	0	Í­È¸´ºÉîËø¶şÇÇ	×Ô½«Ä¥Ï´ÈÏÇ°³¯	¶«·ç²»ÓëÖÜÀÉ±ã	ÕÛêª³ÁÉ³ÌúÎ´Ïú											1	50	10000000
-2163		ÉÌÅ®²»ÖªÍö¹úºŞ£¬_____________¡£	4	0	¸ô½­ÓÌ³ªºóÍ¥»¨	ÑÌÁıº®Ë®ÔÂÁıÉ³	Ò¹²´ÇØ»´½ü¾Æ	À´Ê±»¹ÏÂ¶ÅÁêÎŞ											1	50	10000000
-2164		¶şÊ®ËÄÇÅÃ÷ÔÂÒ¹£¬_____________¡£	4	0	ÓñÈËºÎ´¦½Ì´µóï	ÇàÉ½ÒşÒşË®Ò£Ò£	Çï¾¡½­ÄÏ²İÄ¾µò	Ò£Ïë×ÏÄà·âÚ¯°Õ											1	50	10000000
-2165		Í£³µ×ø°®·ãÁÖÍí£¬_____________¡£	4	0	ËªÒ¶ºìÓÚ¶şÔÂ»¨	°×ÔÆÉú´¦ÓĞÈË¼Ò	Ô¶ÉÏº®É½Ê¯¾¶Ğ±	Â«»¨ÉîÔó¾²´¹ÂÚ											1	50	10000000
-2166		³éµ¶¶ÏË®Ë®¸üÁ÷£¬_____________¡£	4	0	¾Ù±­Ïû³î³î¸ü³î	Âí·ÅÆ½É³Ò¹²»ÊÕ	Íò¹ÅÈÙ»ªµ©Äº	ºÚÉ½ÄÏÃæ¸üÎŞÖİ											1	50	10000000
-2167		´²Ç°Ã÷ÔÂ¹â£¬_____________¡£	4	0	ÒÉÊÇµØÉÏËª	¾ÙÍ·ÍûÃ÷ÔÂ	µÍÍ·Ë¼¹ÊÏç	ºÓË®»è¸´³¿											1	50	10000000
-2168		´ÈÄ¸ÊÖÖĞÏß£¬_____________¡£	4	0	ÓÎ×ÓÉíÉÏÒÂ	ÁÙĞĞÃÜÃÜ·ì	Òâ¿Ö³Ù³Ù¹é	Á¶ĞÔ¾²ÆÜ°×											1	50	10000000
-2169		Ë­ÑÔ´ç²İĞÄ£¬_____________¡£	4	0	±¨µÃÈı´ºêÍ	·çÑÌÍòÀï³î	ÎªÂ¥ÍûÔ½ÖĞ	ÏòÍíµÇÁÙ´¦											1	50	10000000
-2170		ÂÌ´°Ã÷ÔÂÔÚ£¬_____________¡£	4	0	ÇàÊ·¹ÅÈË¿Õ	µÇÁÙ°×ÔÆÍí	ÁôºŞ´ËÒÅ·ç	¿Í³îÄÜ¼¸ÈÕ											1	50	10000000
-2171		ÎôÈËÒÑ³Ë°×ÔÆÈ¥£¬_____________¡£	4	0	´ËµØ¿ÕÓà»Æº×Â¥	°×ÔÆÇ§ÔØ¿ÕÓÆÓÆ	»Æº×Ò»È¥²»¸´·µ	ÈÕÄºÏç¹ØºÎ´¦ÊÇ											1	50	10000000
-2172		Çç´¨ÀúÀúººÑôÊ÷£¬_____________¡£	4	0	·¼²İİÂİÂğĞğÄÖŞ	»Æº×Ò»È¥²»¸´·µ	°×ÔÆÇ§ÔØ¿ÕÓÆÓÆ	ÈÕÄºÏç¹ØºÎ´¦ÊÇ											1	50	10000000
-2173		ÕıÊÇ½­ÄÏºÃ·ç¾°£¬_____________¡£	4	0	Âä»¨Ê±½ÚÓÖ·ê¾ı	áªÍõÕ¬ÀïÑ°³£¼û	´Ş¾ÅÌÃÇ°¼¸¶ÈÎÅ	·çµÆÕÕÒ¹ÓûÈı¸ü											1	50	10000000
-2174		ÂåÑôÇ×ÓÑÈçÏàÎÊ£¬_____________¡£	4	0	Ò»Æ¬±ùĞÄÔÚÓñºø	º®ÓêÁ¬½­Ò¹ÈëÎâ	Æ½Ã÷ËÍ¿Í³şÉ½¹Â	·îÖãÆ½Ã÷½ğµî¿ª											1	50	10000000
-2175		µ«Ê¹Áú³Ç·É½«ÔÚ£¬_____________¡£	4	0	²»½ÌºúÂí¶ÈÒõÉ½	Æ½Ã÷ËÍ¿Í³şÉ½¹Â	º®ÓêÁ¬½­Ò¹ÈëÎâ	·îÖãÆ½Ã÷½ğµî¿ª											1	50	10000000
-2176		´óÄ®·ç³¾ÈÕÉ«»è£¬_____________¡£	4	0	ºìÆì°ë¾í³öÔ¯ÃÅ	Ç°¾üÒ¹Õ½ä¬ºÓ±±	ÒÑ±¨ÉúÇÜÍÂ¹È»ë	×òÒ¹·ç¿ªÂ¶¾®ÌÒ											1	50	10000000
-2177		Î¼³Ç³¯ÓêÒØÇá³¾£¬_____________¡£	4	0	¿ÍÉáÇàÇàÁøÉ«ĞÂ	¹ğÆÇ³õÉúÇïÂ¶Î¢	È°¾ı¸ü¾¡Ò»±­¾Æ	ÇáÂŞÒÑ±¡Î´¸üÒÂ											1	50	10000000
-2178		È°¾ı¸ü¾¡Ò»±­¾Æ£¬_____________¡£	4	0	Î÷³öÑô¹ØÎŞ¹ÊÈË	¿ÍÉáÇàÇàÁøÉ«ĞÂ	¹ğÆÇ³õÉúÇïÂ¶Î¢	Î¼³Ç³¯ÓêÒØÇá³¾											1	50	10000000
-2179		ºì¶¹ÉúÄÏ¹ú£¬_____________¡£	4	0	´ºÀ´·¢¼¸Ö¦	Á÷Ë®ÈçÓĞÒâ	ÂäÈÕÂúÇïÉ½	Çàö°Èë¿´ÎŞ											1	50	10000000
-2180		Ô¸¾ı¶à²Éß¢£¬_____________¡£	4	0	´ËÎï×îÏàË¼	ºì¶¹ÉúÄÏ¹ú	´º²İÃ÷ÄêÂÌ	ÌìÆøÍíÀ´Çï											1	50	10000000
-2181		¶ÀÔÚÒìÏçÎªÒì¿Í£¬_____________¡£	4	0	Ã¿·ê¼Ñ½Ú±¶Ë¼Ç×	öÇÓßåÄ³öÇ§ÃÅÁø	¸óµÀ»Ø¿´ÉÏÔ·»¨	Îª³ËÑôÆøĞĞÊ±Áî											1	50	10000000
-2182		Ò£ÖªĞÖµÜµÇ¸ß´¦£¬_____________¡£	4	0	±é²åÜïİÇÉÙÒ»ÈË	²»ÊÇå·ÓÎÍæÎï»ª	³¿Ò¡ÓñÅåÇ÷½ğµî	É½ÖĞÏ°¾²¹Û³¯éÈ											1	50	10000000
-2183		Ä®Ä®Ë®Ìï·É°×ğØ£¬_____________¡£	4	0	ÒõÒõÏÄÄ¾ßù»Æğ¿	É½ÖĞÏ°¾²¹Û³¯éÈ	ËÉÏÂÇåÕ«ÕÛÂ¶¿û	Ò°ÀÏÓëÈËÕùÏ¯°Õ											1	50	10000000
-2184		³ÇãÚ¸¨ÈıÇØ£¬_____________¡£	4	0	·çÑÌÍûÎå½ò	³¿Õ÷·¸ÑÌíã	Ï¦í¬ÔÚÔÆ¹Ø	·ç¾°×¤Àë»¶											1	50	10000000
-2185		º£ÄÚ´æÖª¼º£¬_____________¡£	4	0	ÌìÑÄÈô±ÈÁÚ	¾ıÍõÎŞ´¦Ëù	Ì¨é¿ÈôÆ½Éú	Î÷ÁêËÉ™xÀä											1	50	10000000
-2186		¶«±ßÈÕÍ·Î÷±ßÓê£¬_____________¡£	4	0	µÀÊÇÎŞÇçÈ´ÓĞÇç	ÎÅÀÉ½­ÉÏ³ª¸èÉù	ÑîÁøÇàÇà½­Ë®Æ½	É½ÉÏ²ã²ãÌÒÀî»¨											1	50	10000000
-2187		»¨ºìÒ×Ë¥ËÆÀÉÒâ£¬_____________¡£	4	0	Ë®Á÷ÎŞÏŞËÆÙ¯³î	É½ÌÒºì»¨ÂúÉÏÍ·	Êñ½­´ºË®ÅÄÉ½Á÷	ÔÆ¼äÑÌ»ğÊÇÈË¼Ò											1	50	10000000
-2188		Ò°¿õÌìµÍÊ÷£¬_____________¡£	4	0	½­ÇåÔÂ½üÈË	ÒÆÖÛ²´ÑÌä¾	ÈÕÄº¿Í³îĞÂ	¶Ë¾Ó³ÜÊ¥Ã÷											1	50	10000000
-2189		´ºÃß²»¾õÏş£¬_____________¡£	4	0	´¦´¦ÎÅÌäÄñ	É½¹âºöÎ÷Âä	³ØÔÂ½¥¶«ÉÏ	Ò¹À´·çÓêÉù											1	50	10000000
-2190		Ò¹À´·çÓêÉù£¬_____________¡£	4	0	»¨ÂäÖª¶àÉÙ	¸Ğ´Ë»³¹ÊÈË	°ËÔÂºşË®Æ½	ÆøÕôÔÆÃÎÔó											1	50	10000000
-2191		ÂÌÊ÷´å±ßºÏ£¬_____________¡£	4	0	ÇàÉ½¹ùÍâĞ±	»Æ½ğÈ¼¹ğ¾¡	¹ÊÈË¾ß¼¦Êò	ÑûÎÒÖÁÌï¼Ò											1	50	10000000
-2192		´ıµ½ÖØÑôÈÕ£¬_____________¡£	4	0	»¹À´¾Í¾Õ»¨	¿ªĞùÃæ³¡ÆÔ	°Ñ¾Æ»°É£Âé	´ıµ½ÖØÑôÈÕ											1	50	10000000
-2193		·çÃùÁ½°¶Ò¶£¬_____________¡£	4	0	ÔÂÕÕÒ»¹ÂÖÛ	É½êÔÌıÔ³³î	²×½­¼±Ò¹Á÷	ÎÅËµÃ·»¨Ôç											1	50	10000000
-2194		ÈıÊ®¹¦Ãû³¾ÓëÍÁ£¬_____________¡£	4	0	°ËÇ§ÀïÂ·ÔÆºÍÔÂ	Ò»³¡³îÃÎ¾ÆĞÑÊ±	¾ÆóÛ¸èÏ¯Äª´ÇÆµ	È°¾ıÄª×÷¶ÀĞÑÈË											1	50	10000000
-2195		×³Ê¿¼¢²ÍºúÂ²Èâ£¬_____________¡£	4	0	Ğ¦Ì¸¿ÊÒûĞÙÅ«Ñª	ÂúÄ¿É½ºÓ¿ÕÄîÔ¶	Ò»ÏòÄê¹âÓĞÏŞÉí	Ï¸Ëã¸¡ÉúÇ§ÍòĞ÷											1	50	10000000
-2196		ÎŞ¿ÉÄÎºÎ»¨ÂäÈ¥£¬_____________¡£	4	0	ËÆÔøÏàÊ¶Ñà¹éÀ´	¼¸»ØÊèÓêµÎÔ²ºÉ	Íí»¨ºìÆ¬ÂäÍ¥É¯	ÇúÀ»¸ÉÓ°ÈëÁ¹²¨											1	50	10000000
-2197		Ñç°ÕÓÖ³É¿Õ£¬_____________¡£	4	0	»êÃÔ´ºÃÎÖĞ	À´±ãĞ³ÖÔËØ	Çï²¨ºáÓûÁ÷	ÑÛÉ«°µÏà¹³											1	50	10000000
-2198		ÁÃÂÒ´º³îÈçÁøĞõ£¬_____________¡£	4	0	ÒÀÒÀÃÎÀïÎŞÑ°´¦	°Ù²İÇ§»¨º®Ê³Â·	ÀáÑÛÒĞÂ¥Æµ¶ÀÓï	Ïã³µÏµÔÚË­¼ÒÊ÷											1	50	10000000
-2199		Ó¯Ó¯Ò»Ë®¼ä£¬_____________¡£ 	4	0	ÂöÂö²»µÃÓï	ºÓººÇåÇÒÇ³ 	ÏËÏËßªËØÊÖ 	ÆüÌéÁãÈçÓê 											1	50	10000000
-2200		ÌöÌöÇ£Å£ĞÇ£¬_____________¡£	4	0	ğ¨ğ¨ºÓººÅ®	Ò»È¥¸´¼¸Ğí	ÔıÔıÅª»úèÌ 	ÆüÌéÁãÈçÓê 											1	50	10000000
-2201		´º·çÓÖÂÌ½­ÄÏ°¶£¬_____________¡£	4	0	Ã÷ÔÂºÎÊ±ÕÕÎÒ»¹	·ç¹â²»ÓëËÄÊ±Í¬ 	ÖÓÉ½Ö»¸ôÊıÖØÉ½ 	¾©¿Ú¹ÏÖŞÒ»Ë®¼ä											1	50	10000000
-2202		´ºÉ«ÂúÔ°¹Ø²»×¡£¬_____________¡£	4	0	Ò»Ö¦ºìĞÓ³öÇ½À´	Ó¦Á¯åì³İÓ¡²ÔÌ¦	Ğ¡¿Û²ñìé¾Ã²»¿ª 	×Ü°ÑĞÂÌÒ»»¾É·û 											1	50	10000000
-2203		°Ù´¨¶«µ½º££¬_____________¡£ 	4	0	ºÎÊ±¸´Î÷¹é	Ñô´º²¼µÂÔó 	Ÿj»Æ»ªÒ¶Ë¥ 	Ñô´º²¼µÂÔó 											1	50	10000000
-2204		ÉÙ×³²»Å¬Á¦£¬_____________¡£ 	4	0	ÀÏ´óÍ½ÉË±¯	³¯Â¶´ıÈÕ•„ 	ÍòÎïÉú¹â»Ô 	Ÿj»Æ»ªÒ¶Ë¥ 											1	50	10000000
-2205		É½ÍâÇàÉ½Â¥ÍâÂ¥£¬_____________¡£	4	0	Î÷ºş¸èÎè¼¸Ê±Ğİ	Ö±°Ñº¼Öİµ±ãêÖİ 	·ç¹â²»ÓëËÄÊ±Í¬ 	»¨ÓĞÇåÏãÔÂÓĞÒõ											1	50	10000000
-2206		³¼ĞÄÒ»Æ¬´ÅÕëÊ¯£¬_____________¡£ 	4	0	²»Ö¸ÄÏ·½²»¿ÏĞİ	»Ø´ÓÑï×Ó´ó½­Í· 	¼¸ÈÕËæ·ç±±º£ÓÎ	¸è¹ÜÂ¥Í¤ÉùÏ¸Ï¸ 											1	50	10000000
-2207		ÍõÊ¦±±¶¨ÖĞÔ­ÈÕ£¬_____________¡£ 	4	0	¼Ò¼ÀÎŞÍü¸æÄËÎÌ	¼Ò¼ÀÎŞÍü¸æÈêÎÌ	µ«±¯²»¼û¾ÅÖİÍ¬ 	ËÀºóÔ­ÖªÍòÊÂ¿Õ											1	50	10000000
-2208		±¬ÖñÉùÖĞÒ»Ëê³ı£¬_____________¡£	4	0	´º·çËÍÅ¯ÈëÍÀËÕ	×Ü°ÑĞÂÌÒ»»¾É·û 	Ç§ÃÅÍò»§Í«Í«ÈÕ 	·áÄêÁô¿Í×ã¼¦ëà 											1	50	10000000
-2209		Éúµ±×÷ÈË½Ü£¬_____________¡£	4	0	ËÀÒàÎª¹íĞÛ	ÖÁ½ñË¼ÏîÓğ 	²ÔÃ£ÔÆº£¼ä	²»¿Ï¹ı½­¶« 											1	50	10000000
-2210		½ÓÌìÁ«Ò¶ÎŞÇî±Ì£¬_____________¡£ 	4	0	Ó³ÈÕºÉ»¨±ğÑùºì	±Ï¾¹Î÷ºşÁùÔÂÖĞ	·ç¹â²»ÓëËÄÊ±Í¬ 	ÎóÈëÅº»¨Éî´¦ 											1	50	10000000
-2211		´ºÏüÒ»¿ÌÖµÇ§½ğ£¬_____________¡£	4	0	»¨ÓĞÇåÏãÔÂÓĞÒõ	¸è¹ÜÂ¥Í¤ÉùÏ¸Ï¸ 	ÇïÇ§ÔºÂäÒ¹³Á³Á 	Áø°µ»¨Ã÷ÓÖÒ»´å											1	50	10000000
-2212		É½ÖØË®¸´ÒÉÎŞÂ·£¬_____________¡£ 	4	0	Áø°µ»¨Ã÷ÓÖÒ»´å	·áÄêÁô¿Í×ã¼¦ëà 	ÒÂ¹Ú¼òÆÓ¹Å·ç´æ 	ÖùÕÈÎŞÊ±Ò¹ßµÃÅ 											1	50	10000000
-2213		Õù¶É£¬Õù¶É£¬_____________¡£	4	0	¾ªÆğÒ»Ì²Å¸ğØ 	³Á×í²»Öª¹éÂ· 	³£¼ÇÏªÍ¤ÈÕÄº	ÎóÈëÅº»¨Éî´¦ 											1	50	10000000
-2214		ÍùÊÂÒÑ³É¿Õ£¬_____________¡£ 	4	0	»¹ÈçÒ»ÃÎÖĞ	¸ßÂ¥Ë­ÓëÉÏ 	¹Ê¹úÃÎÖØ¹é 	³¤¼ÇÇïÇçÍû 											1	50	10000000
-2215		ÓûÇîÇ§ÀïÄ¿£¬_____________¡£ 	4	0	¸üÉÏÒ»²ãÂ¥	»ÆºÓÈëº£Á÷ 	°×ÈÕÒÀÉ½¾¡	¾ÙÍ·ÍûÃ÷ÔÂ											1	50	10000000
-2216		ÀÏæ÷·üèÀ£¬_____________¡£ 	4	0	Ö¾ÔÚÇ§Àï	ÖÕÎªÍÁ»Ò 	éàÓĞ¾¹Ê± 	×³ĞÄ²»ÒÑ 											1	50	10000000
-2217		ÈÕÔÂÖ®ĞĞ£¬_____________¡£	4	0	Èô³öÆäÖĞ 	ºé²¨Ó¿Æğ 	Èô³öÆäÀï 	¸èÒÔÓ½Ö¾ 											1	50	10000000
-2218		±¾ÊÇÍ¬¸ùÉú£¬_____________¡£	4	0	Ïà¼åºÎÌ«¼±	äõİÄÒÔÎªÖ­ 	¶¹ÔÚ¸ªÖĞÆü 	Öó¶¹³Ö×÷¸ş											1	50	10000000
-2219		¶Ô¾Æµ±¸è£¬_____________¡£	4	0	ÈËÉú¼¸ºÎ	ÎÚÈµÄÏ·É	ÓÆÓÆÎÒĞÄ	¹ÄÉª´µóÏ											1	50	10000000
-2220		_____________£¬±ØÓĞÎÒÊ¦ÑÉ¡£	4	0	ÈıÈËĞĞ	¶şÈËĞĞ	Ò»ÈËĞĞ	ËÄÈËĞĞ											1	50	10000000
-2221		³¤·ç¼¸ÍòÀï£¬_____________¡£	4	0	´µ¶ÈÓñÃÅ¹Ø	Ì¾Ï¢Î´Ó¦ÏĞ	²ÔÃ£ÔÆº£¼ä	Ë¼¹é¶à¿àÑÕ											1	50	10000000
+1	14####	14###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408130700	408132400	408150900	408222200	0	50	10000000
+3	15####	15###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408140700	408142400	408160900	408222200	3	50	10000000
+5	16####	16###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408150700	408152400	408170900	408222200	7	50	10000000
+7	17####	17###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408160700	408162400	408200900	408222200	2	50	10000000
+9	18####	18###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408170700	408172400	408200900	408222200	3	50	10000000
+11	19####	19###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408180700	408182400	408200900	408222200	7	50	10000000
+13	20####	20###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408190700	408192400	408210900	408222200	7	50	10000000
+15	21####	21###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408200700	408202400	408220900	408232200	7	50	10000000
+17	22####	22###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408210700	408212400	408230900	408242200	6	50	10000000
+19	23####	23###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408220700	408222400	408240900	408252200	3	50	10000000
+21	24####	24###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408230700	408232400	408250900	408262200	7	50	10000000
+23	25####	25###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408240700	408242400	408260900	408272200	6	50	10000000
+25	26####	26###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408250700	408252400	408270900	408282200	3	50	10000000
+27	27####	27###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408260700	408262400	408280900	408292200	5	50	10000000
+29	28####	28###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408270700	408272400	408290900	408302200	5	50	10000000
+31	29####	29###?#?####?##???##?#####	8	5000	§¬n ®¬n ®¬n	§¬n song ®¬n	§¬n ®¬n song	Song ®¬n ®¬n	Song song ®¬n	Song ®¬n song	§¬n song song	Song song song			408280700	408282400	408300900	408312200	2	50	10000000
+2	14##?##	Qu¸n qu©n sóng tr­êng n÷, nh¶y m­êi mĞt ®«i nam ®¹t ®­îc	10	5000	TriÖu DÜnh TuÖ, §iÒn L­¬ng / Hå Giai	§ç Vò, §iÒn L­¬ng / Hå Giai	Gia NhÜ Kim Na, §iÒn L­¬ng / Hå Giai	TriÖu DÜnh TuÖ, H¸ch Nhi MÉu / N÷u B¸ Lı 	§ç Vò, H¸ch Nhi MÉu / N÷u B¸ Lı 	Gia NhÜ Kim Na, H¸ch Nhi MÉu / N÷u B¸ Lı 	TriÖu DÜnh TuÖ, TuyÓn thñ kh¸c	§ç Vò, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, §iÒn L­¬ng / Hå Giai	Kh¶ n¨ng kh¸c 	408130700	408132400	408150900	408222200	0	50	10000000
+4	15##?##	##100#?##?##?#####???	8	5000	T­ l« nÆc nh­îc phu, Trung Quèc th¾ng T©y Ban Nha	B¾c §¶o Khang Giíi, Trung Quèc th¾ng T©y Ban Nha	H¸n S¹m, Trung Quèc th¾ng T©y Ban Nha	T­ l« nÆc nh­îc phu, Trung Quèc thua T©y Ban Nha	B¾c §¶o Khang Giíi, Trung Quèc thua T©y Ban Nha	H¸n S©m, Trung Quèc thua T©y Ban Nha	TuyÓn thñ kh¸c, Trung Quèc th¾ng T©y Ban Nha	TuyÓn thñ kh¸c, Trung Quèc thua T©y Ban Nha			408140700	408142400	408160900	408222200	5	50	10000000
+6	16##?##	##100#?#?#######?##	9	5000	La TuyÕt Quyªn, §éi thÓ dôc dông cô nam Trung Quèc	Quúnh T­, §éi thÓ dôc dông cô nam Trung Quèc	La TuyÕt Quyªn, §éi thÓ dôc dông cô nam Mü 	Quúnh T­, §éi thÓ dôc dông cô nam Mü 	La TuyÕt Quyªn, §éi thÓ dôc dông cô nam n­íc kh¸c	Quúnh T­, §éi thÓ dôc dông cô nam n­íc kh¸c	TuyÓn thñ kh¸c, §éi thÓ dôc dông cô nam Trung Quèc	TuyÓn thñ kh¸c, §éi thÓ dôc dông cô nam Mü 	Kh¶ n¨ng kh¸c 		408150700	408152400	408170900	408222200	5	50	10000000
+8	17##?##	######?#?##200#?###?#####?	8	5000	§µm TuyÕt, Phi NhÜ Phæ Kú, Trung Quèc th¾ng Mü 	§µm TuyÕt, TuyÓn thñ kh¸c, Trung Quèc th¾ng Mü 	TuyÓn thñ kh¸c, Phi NhÜ Phæ Kú, Trung Quèc th¾ng Mü 	§µm TuyÕt, Phi NhÜ Phæ Kú, Trung Quèc thua Mü 	§µm TuyÕt, TuyÓn thñ kh¸c, Trung Quèc thua Mü 	TuyÓn thñ kh¸c, Phi NhÜ Phæ Kú, Trung Quèc thua Mü 	TuyÓn thñ kh¸c, TuyÓn thñ kh¸c, Trung Quèc th¾ng Mü 	TuyÓn thñ kh¸c, TuyÓn thñ kh¸c, Trung Quèc thua Mü 			408160700	408162400	408200900	408222200	6	50	10000000
+10	18##?##	#######??##69####?##	10	5000	D­¬ng Uy, Tr­¬ng Quèc Ch¸nh	§»ng H¶i T©n, Tr­¬ng Quèc Ch¸nh	##-##?###	D­¬ng Uy, tuyÓn thñ Nga	§»ng H¶i T©n, tuyÓn thñ Nga	##-##?###?#	D­¬ng Uy, TuyÓn thñ kh¸c	§»ng H¶i T©n, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, Tr­¬ng Quèc Ch¸nh	Kh¶ n¨ng kh¸c 	408170700	408172400	408200900	408222200	3	50	10000000
+12	19##?##	##200#?#?###?77#####	8	5000	TÒ Huy, ChiÕm Hóc C­¬ng	Quúnh T­, ChiÕm Hóc C­¬ng	Peter, ChiÕm Hóc C­¬ng	TÒ Huy, TuyÓn thñ kh¸c	Quúnh T­, TuyÓn thñ kh¸c	Peter, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, ChiÕm Hóc C­¬ng	Kh¶ n¨ng kh¸c 			408180700	408182400	408200900	408222200	6	50	10000000
+14	20##?##	###?78#####?######??##?###	10	5000	T«n Phóc Minh, V­¬ng Nam / Tr­¬ng TrŞ Ninh, Hoµng San S¸n	T«n Phóc Minh, Ng­u KiÕm Phong / Qu¸ch D­îc, Hoµng San S¸n	T«n Phóc Minh, TuyÓn thñ kh¸c, Hoµng San S¸n	TuyÓn thñ kh¸c, V­¬ng Nam / Tr­¬ng TrŞ Ninh, Hoµng San S¸n	TuyÓn thñ kh¸c, Ng­u KiÕm Phong / Qu¸ch D­îc, Hoµng San S¸n	T«n Phóc Minh, V­¬ng Nam / Tr­¬ng TrŞ Ninh, TuyÓn thñ kh¸c	T«n Phóc Minh, Ng­u KiÕm Phong / Qu¸ch D­îc, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, V­¬ng Nam / Tr­¬ng TrŞ Ninh, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, Ng­u KiÕm Phong / Qu¸ch D­îc, TuyÓn thñ kh¸c	Kh¶ n¨ng kh¸c 	408190700	408192400	408210900	408222200	8	50	10000000
+16	21##?##	?########?##100##?##	10	5000	Tr­¬ng TrŞ Ninh, A Long	Tr­¬ng TrŞ Ninh, Hµ Lan	Tr­¬ng TrŞ Ninh, Uy Liªm MÉu Kú 	Tr­¬ng TrŞ Ninh, La Nh­îc Oa	Tr­¬ng TrŞ Ninh, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, A Long	TuyÓn thñ kh¸c, Hµ Lan	TuyÓn thñ kh¸c, Uy Liªm MÉu Kú 	TuyÓn thñ kh¸c, La Nh­îc Oa	Kh¶ n¨ng kh¸c 	408200700	408202400	408220900	408232200	5	50	10000000
+18	22##?##	##100##??##?####	9	5000	Kalh, n÷ tuyÓn thñ Trung Quèc	Bao Uy Nhi, n÷ tuyÓn thñ Trung Quèc	Kalh, Ho¾c Nhi Kim Na	Bao Uy Nhi, Ho¾c Nhi Kim Na	Kalh, TuyÓn thñ kh¸c	Bao Uy Nhi, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, TuyÓn thñ Trung Quèc	TuyÓn thñ kh¸c, Ho¾c Nhi Kim Na	Kh¶ n¨ng kh¸c 		408210700	408212400	408230900	408242200	9	50	10000000
+20	23##?##	??########20#?#?##	10	5000	Lı TiÓu B»ng, Lı TiÓu B»ng, V­¬ng LÖ B×nh	Lı TiÓu B»ng, Lı TiÓu B»ng, Tèng Hång Quyªn	Lı TiÓu B»ng, Lı TiÓu B»ng, Ni -c« -lai	TuyÓn thñ kh¸c, Lı TiÓu B»ng, V­¬ng LÖ B×nh	TuyÓn thñ kh¸c, Lı TiÓu B»ng, Tèng Hång Quyªn	TuyÓn thñ kh¸c, Lı TiÓu B»ng, Ni -c« -lai	Lı TiÓu B»ng, TuyÓn thñ kh¸c, V­¬ng LÖ B×nh	Lı TiÓu B»ng, TuyÓn thñ kh¸c, Tèng Hång Quyªn	Lı TiÓu B»ng, TuyÓn thñ kh¸c, Ni -c« -lai	Kh¶ n¨ng kh¸c 	408220700	408222400	408240900	408252200	10	50	10000000
+22	24##?##	Qu¸n qu©n nh¶y cao n÷, nh¶y cÇu ba mĞt man	10	5000	feiferowa, Bå ¤ §inh	Ispanawa, Bå ¤ §inh	feiferowa, Bµnh Bét	Ispanawa, Bµnh Bét	feiferowa, Tobsik	Ispanawa, Tobsik	feiferowa, TuyÓn thñ kh¸c	Ispanawa, TuyÓn thñ kh¸c	TuyÓn thñ kh¸c, Bµnh Bét	Kh¶ n¨ng kh¸c 	408230700	408232400	408250900	408262200	4	50	10000000
+24	25##?##	§éi n÷ nĞm t¹ Trung Quèc cã thÓ ®o¹t huy ch­¬ng, ai lµ qu¸n qu©n 	7	5000	cã thÓ, Cè Nguyªn, M¹c L«i Nh­îc	cã thÓ, Tr­¬ng V¨n Tó, M¹c L«i Nh­îc	cã thÓ, Cè Nguyªn, TuyÓn thñ kh¸c	cã thÓ, Cè Nguyªn, TuyÓn thñ kh¸c	kh«ng thÓ, M¹c L«i Nh­îc	kh«ng thÓ, TuyÓn thñ kh¸c	Kh¶ n¨ng kh¸c 				408240700	408242400	408260900	408272200	6	50	10000000
+26	26##?##	Qu¸n qu©n nh¶y cÇu ba mĞt n÷, H¹ng ba robèt nam 	10	5000	Qu¸ch Tinh Tinh, TuyÓn thñ Mü 	Ng« MÉn Hµ, TuyÓn thñ Mü 	Qu¸ch Tinh Tinh, TuyÓn thñ Australia	Ng« MÉn Hµ, TuyÓn thñ Australia	Qu¸ch Tinh Tinh, TuyÓn thñ Canada	Ng« MÉn Hµ, TuyÓn thñ Canada	Qu¸ch Tinh Tinh, TuyÓn thñ Anh	Ng« MÉn Hµ, TuyÓn thñ Anh	Qu¸ch Tinh Tinh, TuyÓn thñ n­íc kh¸c	Kh¶ n¨ng kh¸c 	408250700	408252400	408270900	408282200	9	50	10000000
+28	27##?##	#110#?##??##10000##?##	10	5000	L­u T­êng, T«n Anh KiÖt	?#-##??#?#	L­u T­êng, Lad klif	?#-##??###?#	L­u T­êng, Atele	?#-##???#?	L­u T­êng, TuyÓn thñ kh¸c	?#-##??##?#	TuyÓn thñ kh¸c, T«n Anh KiÖt	Kh¶ n¨ng kh¸c 	408260700	408262400	408280900	408292200	7	50	10000000
+30	28##?##	 ##?####??###500####?## 	10	5000	§iÒn L­¬ng, Hungary	H¸ch Nhi MÉu, Hungary	Desfater, Hungary	§iÒn L­¬ng, Ba Lan	H¸ch Nhi MÉu, Ba Lan	Desfater, Ba Lan	§iÒn L­¬ng, §øc	H¸ch Nhi MÉu, §øc	Desfater, §øc	Kh¶ n¨ng kh¸c 	408270700	408272400	408290900	408302200	10	50	10000000
+32	29##?##	Qu¸n qu©n Marathon	7	5000	Kenya	Ma Rèc	T©y Ban Nha	italy	Bå §µo Nha	NhËt B¶n	TuyÓn thñ n­íc kh¸c				408280700	408282400	408300900	408312200	4	50	10000000
+1000	Sè huy ch­¬ng cña Trung Quèc	###?#??#2004#?#######???###	7	5000	Kenya	Ma Rèc	T©y Ban Nha	italy	Bå §µo Nha	NhËt B¶n	TuyÓn thñ n­íc kh¸c				408130700	408210700	408300900	408312200	921888	50	10000000
+2001		trïng phïng (®¸nh 1 ch÷) 	4	0	ng÷ 	quan 	b»ng 	chóng 											2	50	10000000
+2002		cöu ®iÓm (®¸nh 1 ch÷) 	4	0	nhÉn	Phong 	chö 	hoµn 											4	50	10000000
+2003		nhÊt nhËt (®¸nh 1 ch÷) 	4	0	®iÒn 	phï 	phï 	cùu 											4	50	10000000
+2004		ng÷ thanh (®¸nh 1 ch÷) 	4	0	méng 	am 	th©u 	chuÕ 											2	50	10000000
+2005		liªu trai (®¸nh 1 ch÷) 	4	0	ph¸ch 	méc 	kiÖt 	s¸ 											4	50	10000000
+2006		NhŞ NguyÖt b×nh (®¸nh 1 ch÷) 	4	0	b»ng 	b¸n 	quy 	khoa 											1	50	10000000
+2007		NhŞ tiÓu th­ (®¸nh 1 ch÷) 	4	0	t«n 	muéi 	t­ 	tÒ 											3	50	10000000
+2008		tuÕ m¹t cè diÖn (®¸nh 1 ch÷) 	4	0	tŞnh 	thèng 	chóc 	t­¬ng 											1	50	10000000
+2009		®«ng chinh t©y th¶o (®¸nh 1 ch÷) 	4	0	phã 	thiÕn 	chøng 	can											3	50	10000000
+2010		Nh©n nh©n nh­îng to¹ (®¸nh 1 ch÷) 	4	0	to¹ 	trang 	tßng 	sØ 											2	50	10000000
+2011		tr¹m liÔu l­ìng thiªn (®¸nh 1 ch÷) 	4	0	t×nh 	¸m 	béc 	tµm 											2	50	10000000
+2012		néi c¸c t¶ t­íng (®¸nh 1 ch÷) 	4	0	thanh	dŞ 	c¸ch 	tiªu 											3	50	10000000
+2013		¤m c©y ®îi thá (®¸nh 1 ch÷) 	4	0	kha 	liÔu 	th¾ng 	§·i 											2	50	10000000
+2014		phµm ¶nh nhËp môc (®¸nh 1 ch÷) 	4	0	tang 	nhµn 	®Şch 	h¹m 											4	50	10000000
+2015		tróc h¹ nhÊt thÊt (®¸nh 1 ch÷) 	4	0	tÊn 	thİch 	gi¶n 	t©n 											3	50	10000000
+2016		b¸n tu th©u miÓu (®¸nh 1 ch÷) 	4	0	tr­íc	thiÖn 	quËt	loan											1	50	10000000
+2017		B¸ch niªn tróc l©m (®¸nh 1 ch÷) 	4	0	trï 	tróc 	b¸ /b¸ch 	kho¶ 											1	50	10000000
+2018		Giang ®«ng nhŞ KiÒu (®¸nh 1 ch÷) 	4	0	èc 	kiÒu 	cèng  	ng« 											4	50	10000000
+2019		minh thiªn nhËt thuyªn tù (®¸nh 1 ch÷) 	4	0	nguyÖt 	hång 	b»ng 	h¹o 											1	50	10000000
+2020		th«i khai nh©n hùu lai (®¸nh 1 ch÷) 	4	0	h÷u 	nghiªn 	hiÖp 	than 											4	50	10000000
+2021		®é ®Çu d­ l¹c nhËt (®¸nh 1 ch÷) 	4	0	tröu 	mŞch 	hy 	chİ 											2	50	10000000
+2022		Hoµngh«n nhËt b¸n l¹c (®¸nh 1 ch÷) 	4	0	danh 	¸ 	chØ 	vâng 											1	50	10000000
+2023		khæng t­íc ®«ng nam phi (®¸nh 1 ch÷) 	4	0	khiªn 	bÕ 	t«n 	gi¸p 											3	50	10000000
+2024		dông quyÒn ®Çu thuyÕt tho¹i (®¸nh 1 ch÷) 	4	0	phÇn 	dù 	hû 	®o¶n 											2	50	10000000
+2025		nguyÖt û chi, ®ç quyªn ®Ò (®¸nh 1 ch÷) 	4	0	b»ng 	t¸ng 	hoµng 	t« 											1	50	10000000
+2026		Tµn nguyÖt tµ chiÕu ¶nh thµnh ®èi (®¸nh 1 ch÷) 	4	0	tå 	gi¸c 	®a 	b»ng 											3	50	10000000
+2027		kı trung l­ìng ngé ch©n t©m nh©n (®¸nh 1 ch÷) 	4	0	c­¬ng 	bµnh 	s­¬ng	tiªu 											1	50	10000000
+2028		vŞ c«ng minh ®o¹n khİ « sa (®¸nh 1 ch÷) 	4	0	Méc	chØ 	biÖn 	Phong 											1	50	10000000
+2029		§¾c nguyÖt l©u tiÒn tiªn ®¾c nguyÖt (®¸nh 1 ch÷) 	4	0	mª 	¢m 	cïng 	b»ng 											4	50	10000000
+2030		T©m t­¬ng t­ nh©n ®¸o kÕt ®ång t©m (®¸nh 1 ch÷) 	4	0	c¸p 	huyÒn 	thoa 	phi 											2	50	10000000
+2031		ThiÕu tiÓu li gia l·o ®¹i håi (®¸nh 1 ch÷) 	4	0	khİ 	tiªm 	thiÖn 	Cã thÓ 											2	50	10000000
+2032		NhÊt khø nhËt b¶n ©m tÊn v« (®¸nh 1 ch÷) 	4	0	h¹o 	yÓu 	khung 	h·nh 											2	50	10000000
+2033		Phong trung kh«ng hÇu lËp chung tiªu (®¸nh 1 ch÷) 	4	0	t¸i 	tóc 	Hång 	tuÇn 											2	50	10000000
+2034		trÊp t¶i hµm lÖ t©y b¾c väng (®¸nh 1 ch÷) 	4	0	TØnh 	uy 	t­ 	mang 											4	50	10000000
+2035		l©u biªn kiÒu b¹n liÔu ®iÒu dao /diªu (®¸nh 1 ch÷) 	4	0	l­¬ng 	§¾c 	®µn	b©n 											4	50	10000000
+2036		®¹i hµ th­íng h¹ thÊt thao thao (®¸nh 1 ch÷) 	4	0	Kh«ng 	kú 	tİch 	phµn 											2	50	10000000
+2037		nguyÖt di hoa ¶nh ®¸o cao ®µi (®¸nh 1 ch÷) 	4	0	hoµn 	sİ 	an 	Cã thÓ 											4	50	10000000
+2038		trïng loan ®iÖp ch­íng nhÊt c¨n th¶o (®¸nh 1 ch÷) 	4	0	lËt 	tø 	truÊt 	b¶o 											3	50	10000000
+2039		ph¹m tiÕn bµng v·n khø Thñy biªn (®¸nh 1 ch÷) 	4	0	uyÓn 	biÕn 	sØ 	Thanh 											1	50	10000000
+2040		t©n nguyÖt tam tinh chiÕu chi ®Çu (®¸nh 1 ch÷) 	4	0	cøu 	biÖn 	kh«n 	tÕ 											2	50	10000000
+2041		th«n trung cæ thô chi b¸n kh« (®¸nh 1 ch÷) 	4	0	hµ 	t­ëng 	Trèng	minh											3	50	10000000
+2042		nhÊt c©u t©n nguyÖt tµ qu¶i thô sao /tiªu (®¸nh 1 ch÷) 	4	0	hµo	hoµ 	nghiÖp 	HuyÒn 											2	50	10000000
+2043		biÖt hËu, t©n th¶o, kh«ng ®èi nguyÖt (®¸nh 1 ch÷) 	4	0	kho¸i	dÜnh 	t©n 	tËp 											1	50	10000000
+2044		tİch nhËt nhÊt biÖt hËu, thËp T¶i ph­¬ng t­¬ng phïng (®¸nh 1 ch÷) 	4	0	n¹i 	h·nh 	yÓu 	hé 											4	50	10000000
+2045		Tµn Tinh tam l­ìng ®iÓm, c« h¹n hoµnh kh«ng phi (®¸nh 1 ch÷) 	4	0	khuyÓn 	lôc 	c¸i 	thŞ 											2	50	10000000
+2046		khuª trung tiÕu lÖ nh©n, hµm tu ®İnh uyªn minh (®¸nh 1 ch÷) 	4	0	nhiÔm 	tæng 	thuyÕt 	khuª 											4	50	10000000
+2047		kh¸n tù nh¸t  th¶o nhÊt Méc, yªn tri tİch thñy thµnh cù (®¸nh 1 ch÷) 	4	0	cõ 	l©m  	biªn	hµnh 											1	50	10000000
+2048		nhÊt ®èi minh nguyÖt hµo bÊt tµn, l¹c t¹i s¬n  c­íc t¶ h÷u tr¹m (®¸nh 1 ch÷) 	4	0	b¨ng 	cao 	phôc 	thµnh 											1	50	10000000
+2049		nhÊt phiÕn tµn v©n giµ thiªn ®Ønh, tam ®iÒu thuú liÔu vò ®«ng phong (®¸nh 1 ch÷) 	4	0	sam 	Thanh 	ph¹m 	biÕn 											1	50	10000000
+2050		ngo¹ kh¸n kh«ng s¬n  hµm viÔn thô, bÊt cËpt©y biªn thİnh tiÔn thanh (®¸nh 1 ch÷) 	4	0	kiÕn 	Kh«ng 	b»ng 	®µ 											1	50	10000000
+2051		thiÒm tiÒn trİch thñy (®¸nh 1 ch÷) 	4	0	méc 	b¾c 	cÊp 	khuÊt											1	50	10000000
+2052		Thu S¾c Tµng xu©n (®¸nh 1 ch÷) 	4	0	h­¬ng 	x©m 	u 	nga 											1	50	10000000
+2053		ph¸o ®¶ song xa (®¸nh 1 ch÷) 	4	0	c©n	®ª 	oanh 	th­ 											3	50	10000000
+2054		t©y hå xu©n m¹t (®¸nh 1 ch÷) 	4	0	l¹c 	hµ 	­¬ng 	mŞch 											4	50	10000000
+2055		Töu kú vi b¹n (®¸nh 1 ch÷) 	4	0	thôc 	kú 	tuÕ 	duy 											2	50	10000000
+2056		l÷ bè sÊm quan trung /tróng (®¸nh 1 ch÷) 	4	0	phÈm 	l­ 	thuËn 	chØ 											2	50	10000000
+2057		èc tiÒn nhÊt ®o¸n t«ng (®¸nh 1 ch÷) 	4	0	vŞ 	hoµng 	c­ 	b»ng 											3	50	10000000
+2058		thËp l­ìng hîp nhÊt c©n (®¸nh 1 ch÷) 	4	0	cÇn 	sam 	thÓ 	TrÇn											1	50	10000000
+2059		nhËt mé liÔu sao ®Çu (®¸nh 1 ch÷) 	4	0	sao 	méng 	b­u 	ph¹m 											2	50	10000000
+2060		h¹o ®Çu cïng kinh th­ (®¸nh 1 ch÷) 	4	0	nh­îc 	©n 	cao 	tr©n 											3	50	10000000
+2061		cam lé méc ®µolı (®¸nh 1 ch÷) 	4	0	kı 	l©m 	®­êng 	lam 											2	50	10000000
+2062		ch©u nh©n nhÊt d¹ quy (®¸nh 1 ch÷) 	4	0	phµn 	yÓu 	Tr­êng 	lÖ 											4	50	10000000
+2063		tróc l©m tiÓu lé tóng hoµnh (®¸nh 1 ch÷) 	4	0	phÖ 	b¹i 	phò 	l­¬ng 											1	50	10000000
+2064		Hoµng h«n t©n nguyÖtchiÕu lan tiÒn (®¸nh 1 ch÷) 	4	0	tùu 	t« 	h¹o 	lang 											2	50	10000000
+2065		diªu øc mÉu ®an m·n thµnh h­¬ng (®¸nh 1 ch÷) 	4	0	ng¹c 	biªn 	l¹c 	b¶o  											3	50	10000000
+2066		thiÓn th¶o thuú lé l­ìng y y (®¸nh 1 ch÷) 	4	0	kú 	huÒ 	m·n 	t­¬ng 											3	50	10000000
+2067		giang b¹n®o¹n d­¬ng tiÕp tµn vu (®¸nh 1 ch÷) 	4	0	ngé 	thanh	lung 	®·ng 											4	50	10000000
+2068		lo¹n ®iÒn t¸n l¹c b¸n hå ©m (®¸nh 1 ch÷) 	4	0	diÓu 	vŞ 	t« 	thµnh 											2	50	10000000
+2069		du b¹i d©n s¬n  hîp môc miªn (®¸nh 1 ch÷) 	4	0	d©n 	Gi¸p 	chi 	lai 											1	50	10000000
+2070		biÖt thêi c¸p t¹i tuÕ trõ tŞch (®¸nh 1 ch÷) 	4	0	lÖ 	xo¸ 	thiÕu	bé 											2	50	10000000
+2071		cèt la giang b¹n kiÕn nguyÖt minh (®¸nh 1 ch÷) 	4	0	Tr­êng 	th¨ng 	c«ng 	nhËt 											4	50	10000000
+2072		Vò tÔ hµ phi tµ nh¹n qua /qu¸ (®¸nh 1 ch÷) 	4	0	th»ng 	ph¹m 	sao 	gi¸  											4	50	10000000
+2073		Ngäc th­îng h÷u hµ, nh©n chÈm kh¶ miÔn (®¸nh 1 ch÷) 	4	0	b¶o 	tóc 	Kim	ninh 											3	50	10000000
+2074		V­¬ng bµ khiÕu m¹i, hé hé truyÒn thanh (®¸nh 1 ch÷) 	4	0	®¹m 	phØ 	hå 	qu¾c 											3	50	10000000
+2075		dÜ khiÓn quÇn khuª t¸c l­ìng bé, canh khø minh nguyÖt thµnh tam nh©n (®¸nh 1 ch÷) 	4	0	giai 	xuÈn 	®iÖp 	Hµn 											2	50	10000000
+2076		Ng­ (§¸nh 1 thµnh ng÷) 	4	0	Nh­ Ng­ §¾c Thñy	Y s¬n Bµng Thñy	TiÓu KiÒu L­u Thñy	L­u Niªn Tù Thñy											1	50	10000000
+2077		Tßng (§¸nh 1 thµnh ng÷) 	4	0	Tù Tßng §a T×nh	O¸n Thanh T¶i §¹o	Nh­ ¶nh Tïy Th©n	Vong MÖnh Chi §å											3	50	10000000
+2078		Ph¶n Kİch (§¸nh 1 thµnh ng÷) 	4	0	HËu Ph¸t Thİch Nh©n	§ång Quy V« TËn	Phßng Ho¹n VŞ Nhiªn	TiÒn Xa Chi Gi¸m											1	50	10000000
+2079		KŞch hiÖn ®¹i (§¸nh 1 thµnh ng÷) 	4	0	Minh HiÖn V¹n Lı 	V« Danh TiÓu Tèt	Vu Kim Vi LiÖt	Së BiÕn BÊt Kinh											3	50	10000000
+2080		Tung Tó CÇu (§¸nh 1 thµnh ng÷) 	4	0	Sö BÊt TuyÖt Th­ 	Tiªn §æ VŞ Kho¸i	Néi ¦u Ngo¹i Ho¹n	Thiªn Kim NhÊt Trİ, §Çu Kú Së H÷u											4	50	10000000
+2081		 T­¬ng T­ (§¸nh 1 thµnh ng÷) 	4	0	Nh©n T©m T­ §Şnh	Ng« H¹ A M«ng	Thùc BÊt T­¬ng M·n	NhÊt V·ng T×nh Th©m											4	50	10000000
+2082		TuyÖt thÕ h¶o KiÕm (§¸nh 1 thµnh ng÷) 	4	0	TÜnh TÜnh H÷u §iÒu	NhÜ Môc NhÊt T©n	Thiªn H¹ V« Song	Tè Hµnh BÊt L­¬ng											3	50	10000000
+2083		Minh NguyÖt Kû Thêi (§¸nh 1 thµnh ng÷) 	4	0	Long Tranh Hæ ®Êu	NhÊt Trµo NhÊt tŞch	Trİ Th©n Sù Xø 	Sinh Tö quan ®Çu											2	50	10000000
+2084		Tr¨ng r»m (§¸nh 1 thµnh ng÷) 	4	0	Tr­êng Hµ L¹c NhËt 	Chİnh §¹i Quang Minh	Thiªn Lı Céng ThiÒn Quyªn	NguyÖt Th­îng T©y LÇu											2	50	10000000
+2085		§Çu treo xµ, bót ®©m ch©n (§¸nh 1 thµnh ng÷) 	4	0	Tr­êng Tr× Cöu An	Xu©n No·n Hoa Khai	Tù C­êng BÊt Tøc	Thanh Qu©n T¾c											3	50	10000000
+2086		Tr­êng Kh«ng v¹n l Tèng t­¬ng t­ (§¸nh 1 thµnh ng÷) 	4	0	ThiÖn Thñy ThiÖn Chung	V« Danh TiÓu Tèt	HËu Lai C­ Th­îng	Khoan §¹i Vi Hoµn 											4	50	10000000
+2087		Héi H×nh §å ¶nh Lai Truy Béc (§¸nh 1 thµnh ng÷) 	4	0	T©m Nh­ §ao C¸t 	BÊt ChiÕc BÊt KhÊu 	DÜ M¹o Thñ Nh©n 	KhÈu Nh­îc HuyÒn Hµ 											3	50	10000000
+2088		Chñ TÓ thiªn h¹ Vi MÉu nghÜa (§¸nh 1 thµnh ng÷) 	4	0	Nh©n Phï Vu Sù 	Sinh L·o BÖnh Tö 	§¹i HØ Qu¸ Väng	HËu Lai C­ Th­îng											4	50	10000000
+2089		Toµn Quèc th­îng h¹ hØ d­ong d­¬ng (§¸nh 1 thµnh ng÷) 	4	0	Nh­ Thİch Träng Phô 	Tøc Sù Ninh Nh©n	L¹c T¹i Kú Träng	Mét lµ mét, hai lµ hai											3	50	10000000
+2090		HÇu m«n nhÊt nhËp th©m tù h¶i (§¸nh 1 thµnh ng÷) 	4	0	Häa Tßng KhÈu XuÊt	ThÊt NhÜ Nh©n ViÔn	Hµnh T­¬ng Tùu Méc	HËu Lai C­ Th­îng											2	50	10000000
+2091		B×nh qu©n truyÒn ng÷ b¸o b×nh an (§¸nh 1 thµnh ng÷) 	4	0	Vinh Quy Cæ Lı 	Ho¹ch nhÊt bÊt nhŞ 	H÷u Së T¸c Vi	§¹i §ång TiÓu DŞ 											1	50	10000000
+2092		Ninh ninh thuyÕt h­íng thuyÕt th­ nh©n (§¸nh 1 thµnh ng÷) 	4	0	§¹i §¶ XuÊt Thñ 	H¹ L¹c BÊt Minh	Ng«n Nhi BÊt Tİn	BÊt Dùc Nhi Phi											3	50	10000000
+2093		Duy H÷u ThÊt Muéi Gi¸ §æng lang (§¸nh 1 thµnh ng÷) 	4	0	Tam Nguyªn CËp §Ö	Ng«n Qu¸ Kú Thùc	Lôc ThÇn V« Chñ 	Thö NhÊt Thêi BØ NhÊt Thêi											3	50	10000000
+2094		"Lı §¹t! b¾t Tèng Giang vÒ ®©y!" (§¸nh 1 thµnh ng÷) 	4	0	Ch©u Nhi Phôc Thñy	KiÕn dŞ t­ thiªn	BÊt Ng«n Nhi Dô 	H« Phong Ho¸n Vò 											4	50	10000000
+2095		BÊt kı viªn m«n kİch thêi lang (§¸nh 1 thµnh ng÷) 	4	0	Thèng §Şnh T­ Thèng	Håi Quang Ph¶n ChiÕu	C¸c H÷u Së Tr­êng 	CÇu Toµn Tr¸ch BŞ 											4	50	10000000
+2096		Kh«ng B¹ch (§¸nh 1 thµnh ng÷) 	4	0	H­ H÷u Kú BiÓu	TÇm Tö MŞch Ho¹t	MÜ BÊt Th¾ng Thu	Tó S¾c Kh¶ Xan											1	50	10000000
+2097		Né Ph¸t Xung Quan (§¸nh 1 thµnh ng÷) 	4	0	Sinh Khİ Bét Bét	H¶o S¾c Chi §å	TÇm C¨n Cøu §Ó	Nhô Tö Kh¶ Gi¸o											1	50	10000000
+2098		ChØ høa th¾ng, bÊt høa b¹i (§¸nh 1 thµnh ng÷) 	4	0	¢m Soa ¢m Th¸c	Thèi TŞ Tam X¸ 	Ng«n Nhi H÷u Tİn 	Duy Lîi ThŞ §å 											4	50	10000000
+2099		 V¹n Thñy Thiªn s¬n chØ ®¼ng nhµn (§¸nh 1 thµnh ng÷) 	4	0	Chİ T¹i TÊt §¾c 	V¨n DÜ T¶i §¹o	Hµnh Nh­îc V« Sù 	NhÊt m· ®­¬ng tiªn											3	50	10000000
+2100		BÊt thøc Xu©n h¹ d÷ Thu ®«ng (§¸nh 1 thµnh ng÷) 	4	0	Dôc B¹i BÊt N¨ng	Hoa Hoa ThÕ Giíi	ThŞ §ång Lé Nh©n	H÷u Sinh chi niªn 											4	50	10000000
+2101		H¶o thi h¶o nguyÖt kh¸nh trung thu (§¸nh 1 thµnh ng÷) 	4	0	Cao Phong L­îng TiÕt 	NhÊt Xóc Tøc Ph¸t 	T»ng XuÊt BÊt Cïng	NhÊt Bæn Ch¸nh Kinh											1	50	10000000
+2102		BÊt phßng tÈu bé khiÕu m· kú (§¸nh 1 thµnh ng÷) 	4	0	BÊt TØnh Nh©n Sù 	ChØ nhËt kh¶ ®·i 	Dao §Çu B·i VÜ 	Quang Qu¸i Lôc Li 											2	50	10000000
+2103		Hùu ®é nhÊt Niªn,C¸c thªm nhÊt tuÕ (§¸nh 1 thµnh ng÷) 	4	0	Bµi s¬n §¶o H¶i 	C¸c H÷u Së Tr­êng 	§İnh Th©n Nhi XuÊt 	NhÊt Mao BÊt B¹t 											2	50	10000000
+2104		Lª minh tøc khëi, Töu t¶o ®i×nh trõ (§¸nh 1 thµnh ng÷) 	4	0	H÷u Sinh chi niªn 	Th­îng thõa chi t¸c	C¸ch c¸ch bÊt nhËp	HiÓu chi tù lı 											4	50	10000000
+2105		Thao ®ao quû ngé t¸c l­¬ng lı (§¸nh 1 thµnh ng÷) 	4	0	danh chİnh ng«n thuËn	Thµnh nh©n chi mü 	KiÕn dŞ t­ thiªn	NhÊt ¶nh nhÊt d¹ng											1	50	10000000
+2106		m¹o sung kh©m sai (®¸nh 1 c©u tôc ng÷) 	4	0	nh­ §ång 	thõa nh­îng 	gi¶ sö 	hoÆc gi¶ 											3	50	10000000
+2107		b¸t diÖn thÊu phong (®¸nh 1 c©u tôc ng÷) 	4	0	khİ bÊt ®¶ nhÊt xø lai 	thô khİ bao 	th­îng l­¬ng bÊt chİnh h¹ l­¬ng oai 	cËn mÆc gi¶ h¾c 											1	50	10000000
+2108		n¨ng Èm nhÊt b«i v« (®¸nh 1 c©u tôc ng÷) 	4	0	lµm g×? 	Tôc ng÷ nãi 	Hçn ®¾c h¹ khø 	Hµnh Hµnh h¶o 											1	50	10000000
+2109		Du tö th­îng nh©n y (®¸nh 1 c©u tôc ng÷) 	4	0	NiÖm cùu 	Hå lo¹n	T­êng ®Çu nhÊt c¨n th¶o 	BiÖt lai gi¸ nhÊt s¸o 											4	50	10000000
+2110		Tßng bÊt tè khuy t©m sù (®¸nh 1 c©u tôc ng÷) 	4	0	L·o h¶o nh©n 	Hçn ®¾c h¹ khø 	T©m khai t©m 	lµm g×? 											1	50	10000000
+2111		Khø niªn nhÊt trİch t­¬ng t­ lÖ, chİ kiªn vŞ l­u ®¸o tai biªn (®¸nh 1 c©u tôc ng÷) 	4	0	ThuyÕt BÊt XuÊt khÈu	H¶o ®¹i diÖn tö 	BÊt l­u t×nh 	Nan vŞ t×nh 											2	50	10000000
+2112		Tïng thö bÊt qu©n v­¬ng bÊt t¶o triÒu (®¸nh 1 c©u tôc ng÷) 	4	0	C¬ héi hiÕm cãc 	Kh«ng chñ kiÕn 	?## 	L·o bÊt tù gi¸c 											2	50	10000000
+2113		Tai to mÆt lín (®¸nh 1 c©u tôc ng÷) 	4	0	T­îng m« T­îng d¹ng	L·o ®¹i nan 	Vang danh thiªn h¹ 	Lo¹n ®µn cÇm											1	50	10000000
+2114		Qu¸ ngò quan tr¶m lôc t­íng (®¸nh 1 c©u tôc ng÷) 	4	0	Kh¸n t¹i nh·n lı kı t¹i t©m lı 	Nãi kho¸c 	X¶ ngo¹n ı nhi 	XuÊt khÈu s¸t nh©n  											4	50	10000000
+2115		Hoµng tuyÒn h÷u lé h¶o hoµn h­¬ng (®¸nh 1 c©u tôc ng÷) 	4	0	NhÊt hoµn khÊu nhÊt hoµn	Mét chuÈn hoµn hµnh 	Quû tµi tri ®¹o 	Mét h÷u bÊt thÊu phong t­êng ®İch 											3	50	10000000
+2116		nh­ lı b¹t b¨ng (®¸nh 1 c©u tôc ng÷) 	4	0	BÊt ®¹p thùc	Theo vÇy mµ nãi	H·n trõng nh·n 	H÷u qu¸ chi nhi v« bÊt cËp											1	50	10000000
+2117		BÊt t¹i gia ( ®¸nh 1 c©u tôc ng÷) 	4	0	L­u chi ®¹i c¸t 	Ngo¹i Hµnh 	H÷u së ph¸t hiÖn 	NhuyÔn ng¹nh bÊt thùc											2	50	10000000
+2118		Hµm viÔn s¬n th«n tr­êng giang (®¸nh 1 c©u tôc ng÷) 	4	0	§¶ t©m nh·n lı nguyªn ı 	VŞ khÈu bÊt thiÓu 	BÊt tróng ı 	§a qu¶n nhµn sù 											2	50	10000000
+2119		Hµnh y (®¸nh 1 c©u tôc ng÷) 	4	0	NgËt bÊt liÖu ®©u gi¶ tÈu 	Gi¸ ®­¬ng khÈu 	TÈu tr­íc tiªu	ngËt b·o liÔu sinh ®İch  											3	50	10000000
+2120		H­u khø û nguy lan (®¸nh 1 c©u tôc ng÷) 	4	0	Mao thñ mao c­íc  	Kh«ng dùa ®­îc  	Kh«ng qu¶n ®­îc 	Gi¶ t­ v¨n 											2	50	10000000
+2121		§ªm ®ªm ng¾m hoa r¬i (Nh÷ng c©u nãi kh¸ch s¸o) 	4	0	®Õn ®©y 	§a t¹ 	Lµm phiÒn	Kh¸ch s¸o											2	50	10000000
+2122		Lang M¹o (Tªn hoa) 	4	0	t­êng vi 	Thñy Tiªn 	Phï dung	Kim quÕ 											3	50	10000000
+2123		Tõ mÉu thñ th­îng tuyÕn (Tªn c«n trïng) 	4	0	chiÕu d¹ b¹ch 	ph­¬ng  chøc n­¬ng 	Hµn hiÖu trïng 	thËp tû muéi 											2	50	10000000
+2124		§iÒn (Tªn ca khóc) 	4	0	h¹n thiªn l«i 	xu©n lÖnh bèc ph¶n 	Quang minh hµnh 	hû d­¬ng d­¬ng 											1	50	10000000
+2125		B¹n víi vua nh­ lµm b¹n víi Hæ (Tªn ®éng vËt) 	4	0	§«ng B¾c hæ 	Linh d­¬ng 	Hµ li 	Khñng Long 											4	50	10000000
+2126		Cuéc sèng mçi ngµy thuËn lîi (DiÔn ®¹t cho ng­êi) 	4	0	s¶n  gi¶ 	XuÊt sai	Nhí 	T¨ng 											2	50	10000000
+2127		quan  quang ®oµn hû ®¨ng triÒu d­¬ng ®×nh (§Şa danh Trung Quèc) 	4	0	Thanh L­u,Hµm s¬n  	Ma cao 	Na Khóc, A Lı 	Lai T©n, l©m QuÕ, B×nh L¹c, Th­îng T­, Linh s¬n  											4	50	10000000
+2128		h¹ phãng l©m trµng céng ho¹n nan (§Şa danh Trung Quèc) 	4	0	MËt V©n, Hoµi Nhu	TuyÒn Ch©u 	Thanh L­u,Hµm s¬n  	§ång tö 											4	50	10000000
+2129		®µo hoa béc diÖn lai (huyÖt vŞ) 	4	0	BÊt dung, khuc sai 	BÊt dung, Ngo¹i l¨ng	Hµnh gian, h­¬ng phô 	BÊt dung, khİ xung 											3	50	10000000
+2130		§×nh TiÒn Mai Hoa TuÕ M¹c Khai (Danh th¾ng) 	4	0	Ngäa PhËt tù 	Léc M«n s¬n  	§¹i PhËt tù 	B¹hc V©n Quan  											2	50	10000000
+2131		ThuyÕt tho¹i hîp khİ (M«n thÓ thao ) 	4	0	bãi t­íng 	c¹nh tÈu 	bãng chuyÒn  	Nhu §¹o 											4	50	10000000
+2132		Cæ väng kim lai (Tªn cæ nh©n) 	4	0	Tr­¬ng Phi 	Vâ Tßng 	Sö TiÕn	Lôc Du 											3	50	10000000
+2133		Hµm D­¬ng NhÊt PhiÕn NguyÖt (Tªn cæ nh©n) 	4	0	LiÔu C«ng QuyÒn 	TÇn Minh 	Lı B¹ch 	§­êng Minh Hoµng 											2	50	10000000
+2134		Méc Lan chi tö (Thùc vËt) 	4	0	T©y CÇn  	Thanh qu¶ 	§Ëu phéng 	Bét dõa 											3	50	10000000
+2135		Trïng Loan §iÖp Ch­íng (C«n trïng) 	4	0	ong	Bä ngùa 	KiÕn ®en 	Chuån chuån n­íc  											1	50	10000000
+2136		C« Nh¹n Bi Minh Thanh Thanh Tôc (Tªn ng­êi) 	4	0	Nhan Ch©n Khanh 	Tõ Bi Hång 	Lôc §¹i Niªn 	TrŞnh B¶n KiÒu 											2	50	10000000
+2137		HËu sù chung nan tiÕp (Tªn thuèc) 	4	0	§­¬ng Quy 	§Şa du 	Thñy t« 	tôc ®o¹n 											4	50	10000000
+2138		¸p Tèng Sinh ThÇn C­¬ng (tªn ng­êi trong Thñy Hö) 	4	0	Gi¶i Tr©n, Gi¶i B¶o	Thêi Thiªn, An §¹o Toµn	YÕn Thanh, TÇn Minh 	TÇn Minh, Ng« Dông 											1	50	10000000
+2139		Ch¸y nhµ lßi mÆt chuét (Tôc ng÷) 	4	0	kiÕn h¶o tùu thu 	®èi bÊt  th­îng  hiÖu 	Qu¸i hiÖn t­îng 	Tin tøc  											3	50	10000000
+2140		XuÊt Thñy Phï Dung (Tªn hoa) 	4	0	l·nh h­¬ng 	h¹n hµ hoa 	nhÉn ®«ng 	Méc lan											2	50	10000000
+2141		Xu©n NhËt Nh­ìng XuÊt H¶o Töu Lai (Tªn hoa) 	4	0	tø quı b¸o xu©n 	c¸c hîp hoan hoa 	xu©n nhÊt phÈm 	s¬n  trµ 											1	50	10000000
+2142		NhiÔu tïng v« y nguyÖt chİnh cao (Tõ khóc bµi) 	4	0	Hîp hoan 	d¹ phi th­íc 	tiÓu hång l©u 	gi¶i oan kÕt 											2	50	10000000
+2143		T¸c nhËt phñ th­îng thä b·i, kim nhËt hùu v¨n xuÊt gi¸, ®·i biÖn h¹ lÔ (Tèng tõ có) 	4	0	Thu lai th­ canh s¬ 	V« kh¶ n¹i hµ hoa l¹c khø 	b¹ch liÔu thiÕu niªn ®Çu  	kh­íc thŞ cùu thêi t­¬ng thøc 											2	50	10000000
+2144		B¹ch ph¸t hoµn h­¬ng (Tªn thuèc §«ng Y) 	4	0	Hîp h­¬ng 	Th­¬ng nhÜ 	Ngò hoa s©m 	§­¬ng Quy 											4	50	10000000
+2145		V« t¬ tróc chi lo¹n nhÜ (Hä tªn) 	4	0	Mé dung 	L¹c ch¸nh 	hoµn nhan 	Thanh Thñy											2	50	10000000
+2146		Th¸i tiªn diÖu bót phó ng­u niªn (Tªn ng­êi) 	4	0	nhan l­¬ng 	v¨n  xó 	qu¶n ninh 	d­¬ng tu 											2	50	10000000
+2147		D­¬ng vâ ®Õ tèn vŞ (Tªn ng­êi) 	4	0	tiªu nh­îng 	®ç thiªn 	chu th«ng 	nh¹c hoµ 											1	50	10000000
+2148		Giang l­u h÷u thanh cËn l·nh s¬n (Danh lam th¾ng c¶nh) 	4	0	Xµ s¬n  	l¹c  bót ®çng 	trµo ©m tù 	V« l­îng quan 											3	50	10000000
+2149		Ho·n l­u (§Şa danh) 	4	0	dŞch m«n 	song giang 	®« qu©n 	tõ thñy											4	50	10000000
+2150		Giang biªn nhÊt tïng thïy thïy ph¸t (Tªn c©y cèi) 	4	0	Thñy sam 	t×nh vò 	Méc cËn 	t«ng l­ 											1	50	10000000
+2151		cö b«i  yªu minh nguyÖt,__----------------	4	0	®èi ¶nh thµnh tam nh©n 	¶nh ®å tuú ng· th©n 	ng· vò ¶nh linh lo¹n 	t­¬ng ­íc m¹c v©n h¸n 											1	50	10000000
+2152		thuú ng«n thèn th¶o T©m,  __----------------	4	0	b¸o ®¾c tam xu©n huy 	tõ mÉu thñ trung tuyÕn 	du tö th­îng nh©n y 	ı khæng tr× tr× quy 											1	50	10000000
+2153		®«ng l©m kiÖt th¹ch,----------------	4	0	dÜ qu¸n th­¬ng H¶i	s¬n  ®¶o tñng trÜ 	hång ba dòng khëi 	thô méc tïng sinh 											1	50	10000000
+2154		l·o kı phôc lŞch,____________.	4	0	Chİ t¹i thiªn lı 	Chİ t¹i B¸ch lı 	Chİ t¹i nhÊt lı 	Chİ t¹i thËp lı 											1	50	10000000
+2155		tŞch d­¬ng v« h¹n h¶o,____________.	4	0	chØ kú cËn hoµng h«n 	h­íng v·n ı bÊt qu¸t 	khu xa ®¨ng cæ nguyªn 	tŞch d­¬ng V« h¹n h¶o											1	50	10000000
+2156		hµ ®­¬ng céng tiÔn ¸ song chóc, ---------------- 	4	0	kh­íc tho¹i ba s¬n  d¹ vò thêi 	qu©n vÊn quy kú vŞ h÷u kú 	ba s¬n  d¹ vò tr­íng thu tr× 	nhÊt  hå träc töu  hû t­¬ng phïng 											1	50	10000000
+2157		sõ hoµ nhËt ®­¬ng ngä,____________.	4	0	h·n tİch hoµ h¹ thæ 	thuú tri bµn  trung  san  	nhËt  ®­¬ng ngä sõ hoµ 	cö ®Çu väng minh nguyÖt 											1	50	10000000
+2158		XuÊtBÊt tri tÕ DiÖp thuú tµi XuÊt,----------------	4	0	NhŞ nguyÖt xu©n phong tù tiÔn ®ao 	v¹n ®iÒu thuú h¹ lôc ®iÒu thao 	nguyªn nguyÖt  xu©n phong tù tiÔn ®ao 	bİch ngäc trang thµnh nhÊt thô cao											1	50	10000000
+2159		b¹ch nhËt ®¨ng s¬n  väng phong háa,----------------	4	0	Hoµng h«n Èm m· bµng giao hµ 	c«ng chñ tú bµ u o¸n ®a 	Vò TuyÕt ph©n ph©n liªn ®¹i m¹c 	Kh«ng kiÕn bå ®µo nhËp h¸n gia 											1	50	10000000
+2160		Hoµng h¹c l©u tiÒn xu©n thñy kho¸t,----------------	4	0	NhÊt b«i hoµn øc cè nh©n v« 	®ç l¨ng tiªu thø qu©n 	®¸o cèt thŞ phong trÇn	tŞch mŞch l©n  ng« §¹o 											1	50	10000000
+2161		Nam triÒu tø b¸ch b¸t quü thËp tù,----------------	4	0	®a thiÓu l©u ®µi yªn Vò trung 	Thñy th«n s¬n  qu¸ch töu  kú phong 	Thiªn  lı oanh ®Ò lôc ¸nh giang 	®a thiÓu l©u ®µi phong vò trung 											1	50	10000000
+2162		®«ng phong bÊt d­ ch©u  lang tiÖn,----------------	4	0	§ång t­íc xu©n th©m táa nhŞ kiÒu 	tù t­íng ma tÈy nhËn tiÒn triÒu 	®«ng phong bÊt d÷ ch©u lang tiÖn 	triÕt kİch trÇm sa thiÕt vŞ tiªu 											1	50	10000000
+2163		th­¬ng nh÷ bÊt tri vong quèc hËn, ----------------	4	0	c¸ch giang do x­íng hËu ®×nh hoa 	yªn lung Hµn Thñy nguyÖt lung sa 	d¹ b¹c tÇn hoµi cËn töu	lai thêi hoµn h¹ ®ç l¨ng v« 											1	50	10000000
+2164		NhŞ thËp tø kiÒu minh nguyÖt d¹,----------------	4	0	Ngäc Nh©n hµ xø  giao xuy tiªu 	Thanh s¬n  Èn Èn thñy diªu  diªu 	Thu tÉn giang Nam th¶o méc®iªu 	diªu t­ëng tö nª phong chiÕu b¹i 											1	50	10000000
+2165		®×nh xa to¹ ¸i phong l©m v·n,----------------	4	0	S­¬ng diÖp hång vu nhŞ nguyÖt hoa 	b¹ch v©n sinh xø h÷u nh©n gia 	viÔn th­íng hµn s¬n  th¹ch kİnh tµ 	l­ ha th©m tr¹ch tÜnh thuú lu©n 											1	50	10000000
+2166		trõu ®ao §o¹n Thñy thñy canh l­u,----------------	4	0	cö b«i tiªu sÇu sÇu canh sÇu 	m· phãng b×nh sa d¹ bÊt thu 	v¹n cæ vinh hoa ®¸n mé 	H¾c s¬n  nam diÖn c¸nh v« ch©u 											1	50	10000000
+2167		sµng tiÒn Minh nguyÖt quang, ----------------	4	0	nghi thŞ ®Şa th­îng s­¬ng 	cö ®Çu väng minh nguyÖt 	®ª ®Çu t­ cè h­¬ng 	hµ thñy h«n phóc thÇn 											1	50	10000000
+2168		tõ mÉu thñ trung tuyÕn,----------------	4	0	du tö th­îng nh©n y 	l©m hµnh mËt mËt phïng 	ı khæng tr× tr× quy 	luyÖn tİnh tÜnh tª b¹ch 											1	50	10000000
+2169		thuú ng«n thèn th¶o t©m,----------------	4	0	b¸o ®¾c tam xu©n huy 	Phong yªn v¹n lı sÇu 	vŞ l©u väng viÖt trung	h­íng v·n ®¨ng l©m xø 											1	50	10000000
+2170		Lôc song minh nguyÖt t¹i,----------------	4	0	Thanh sö cæ nh©n kh«ng 	l©m b¹ch V©n v·n 	l­u hËn thö di phong 	Kh¸ch sÇu n¨ng c¬ nhËt											1	50	10000000
+2171		Tİch nh©n dÜ thõa b¹ch v©n khø,----------------	4	0	thö ®Şa kh«ng d­ Hoµng h¹c l©u 	b¹ch v©n thiªn t¶i kh«ng du du 	Hoµng h¹c nhÊt khø bÊt phôc ph¶n 	nhËt mé h­¬ng quan hµ xø thŞ 											1	50	10000000
+2172		t×nh xuyªn lŞch lŞch h¸n d­¬ng thô,----------------	4	0	ph­¬ng th¶o thª thª anh vò ch©u 	Hoµng h¹c nhÊt khø bÊt phôc ph¶n 	b¹ch v©n thiªn t¶i kh«ng du du 	nhËt mé h­¬ng quan hµ xø thŞ 											1	50	10000000
+2173		Ch¸nh thŞ giang nam h¶o phong c¶nh,----------------	4	0	l¹c hoa thêi tiÕt hùu phïng qu©n 	kú v­¬ng tr¹ch lı tÇm th­êng kiÕn 	th«i cöu ®­êng tiÒn kû ®¹c v¨n 	Phong ®¨ng chiÕu d¹ dôc tam canh 											1	50	10000000
+2174		l¹c d­¬ng th©n h÷u nh­ t­¬ng vÊn, ---------------- 	4	0	nhÊt phiÕn b¨ng t©m t¹i ngäc hå 	Hµn vò liªn giang d¹ nhËp ng« 	b×nh minh Tèng kh¸ch së s¬n  c« 	phông tröu b×nh minh kim ®iÖn khai 											1	50	10000000
+2175		®¶n sø long thµnh phi t­íng t¹i, ----------------	4	0	BÊt gi¸o hå m· ®é ¢m s¬n  	b×nh minh Tèng kh¸ch së s¬n  c« 	Hµn vò liªn giang d¹ nhËp ng« 	phông tröu b×nh minh kim ®iÖn khai 											1	50	10000000
+2176		®¹i m¹c phong trÇn nhËt s¾c h«n, ----------------	4	0	Hång kú b¸n quyÓn xuÊt viªn m«n 	tiÒn qu©n d¹ chiÕn thao hµ b¾c 	dÜ b¸o sinh cÇm thæ dôc hån 	t¹c d¹ phong khai lé tØnh ®µo 											1	50	10000000
+2177		vŞ thµnh triÒu vò Êp khinh trÇn,----------------	4	0	Kh¸ch x¸ thanh thanh liÔu s¾c t©n 	quÕ ph¸ch s¬ sinh thu lé vi 	khuyÕn qu©n canh tÉn nhÊt b«i töu	khinh la dÜ b¹c vŞ canh y  											1	50	10000000
+2178		khuyÕn qu©n canh tÉn nhÊt b«i töu,----------------	4	0	t©y xuÊt d­¬ng quan v« cè nh©n 	Kh¸ch x¸ thanh thanh liÔu s¾c t©n 	quÕ ph¸ch s¬ sinh thu lé vi 	vŞ thµnh triÒu vò Êp khinh trÇn											1	50	10000000
+2179		Hång ®Ëu Sinh Nam quèc,----------------	4	0	xu©n lai Ph¸t c¬ chi 	L­u Thñy nh­ H÷u ı 	l¹c  nhËt m·n thu s¬n  	Thanh ai  nhËp khan v« 											1	50	10000000
+2180		Nguyªn qu©n ®a biÖn th¶i hiÖt,----------------	4	0	thö vËt tèi t­¬ng t­ 	Hång ®Ëu sinh Nam quèc 	xu©n th¶o minh niªn lôc 	Thiªn khİ v·n lai thu 											1	50	10000000
+2181		®éc t¹i di h­¬ng vi dŞ kh¸ch, ----------------	4	0	mçi phïng giai tiÕt béi t­ th©n	loan d­ quınh xuÊt thiªn m«n liÔu 	c¸c ®¹o håi khan th­îng uyÓn hoa 	vi thõa d­¬ng khİ hµnh thêi lÖnh											1	50	10000000
+2182		diªu tri huynh ®Ö ®¨ng cao xø, ----------------	4	0	biªn th¸p chu du thiÓu nhÊt nh©n 	BÊt thŞ thÇn du ngo¹n vËt hoa 	thÇn diªu ngäc béi xu kim ®iÖn 	s¬n  trung  tËp tÜnh  qu¸n triÒu cÈn 											1	50	10000000
+2183		m¹c m¹c thñy ®iÒn phi b¹ch lé, ---------------	4	0	¢m ©m h¹ méc chuyªn hoµng ly 	s¬n  trung  tËp tÜnh  qu¸n triÒu cÈn 	t«ng h¹ thanh trai chiÕt lé quú 	D· l·o d÷ nh©n tranh tŞch b¹i 											1	50	10000000
+2184		thµnh khuyÕt phô tam tÇn, ----------------	4	0	Phong yªn väng ngò t©n 	thÇn chinh ph¹m yªn ®¾ng 	tŞch ®iÒm t¹i V©n quan 	Phong c¶nh tró li hoan 											1	50	10000000
+2185		H¶i néi tån tri kû, ----------------	4	0	Thiªn nhai nh­îc bØ l©n 	qu©n V­¬ng v« xø së 	®µi t¹ nh­îc b×nh sinh 	¸ l¨ng t«ng gi¶ l·nh 											1	50	10000000
+2186		®«ng biªn nhËt ®Çu ¸  biªn vò, ----------------	4	0	§¹o thŞ v« t×nh kh­íc h÷u t×nh 	v¨n lang giang th­îng x­íng ca thanh 	d­¬ng liÔu thanh thanh giang thñy b×nh 	s¬n  th­îng t»ng t»ng ®µo lı hoa 											1	50	10000000
+2187		Hoa Hång dŞ suy tù lang ı, ----------------	4	0	Thñy l­u v« h¹n tù n«ng sÇu 	s¬n  ®µo hång hoa m·n th­îng ®Çu 	thôc giang xu©n thñy ph¸ch s¬n  l­u 	V©n d¶n nhµn yªn háa thŞ nh©n gia 											1	50	10000000
+2188		D· kho¸ng thiªn ®ª thô, ----------------	4	0	giang thanh nguyÖt cËn nh©n 	di ch©u b¹c yªn chö 	nhËt mé kh¸ch sÇu t©n 	®oan c­ sØ th¸nh minh 											1	50	10000000
+2189		xu©n miªn bÊt cèc hiÓu, ----------------	4	0	xø xø v¨n ®Ò ®iÓu 	s¬n  quang hèt ¸ l¹c  	Tr× nguyÖt tiÖm ®«ng th­íng 	d¹ lai phong vò thanh 											1	50	10000000
+2190		d¹ lai Phong vò thanh, ----------------	4	0	Hoa l¹c tri ®a thiÓu 	c¶m thö hoµi cè nh©n 	b¸t quü nguyÖt hå thñy b×nh 	khİ ch­ng v©n méng tr¹ch 											1	50	10000000
+2191		Lôc thô th«n biªn hîp, ----------------	4	0	Thanh s¬n  qu¸ch ngo¹i tµ 	Hoµng Kim nhiªn quÕ tÉn  	cè nh©n cô kª thö 	yªu ng· chİ®iÒn gia 											1	50	10000000
+2192		§·i ®¸otrïng d­¬ng nhËt, ----------------	4	0	hoµn lai tùu cóc hoa 	khai hiªn diÖn tr­êng bæ 	b¶ töu tho¹i tang l©m	§·i ®¸o trïng d­¬ng nhËt 											1	50	10000000
+2193		Phong minh l­ìng ng¹n diÖp, ----------------	4	0	nguyÖt chiÕu nhÊt c« ch©u 	s¬n  minh thİnh viªn sÇu 	th­¬ng giang cÊp d¹ l­u 	v¨n thuyÕt mai hoa t¶o 											1	50	10000000
+2194		tam thËp c«ng danh trÇn d÷ thæ, ----------------	4	0	b¸t  Thiªn lı Lé V©n hoµ nguyÖt 	nhÊt tr­êng sÇu méng töu tØnh thêi 	Töu diªn ca tŞch m¹c tõ tÇn 	khuyÕn qu©n m¹c t¸c ®éc tØnh nh©n 											1	50	10000000
+2195		tr¸ng sÜ c¬ san  hå lç nhôc, ----------------	4	0	tiÕu ®µm kh¸t Èm hung n« huyÕt 	m·n môc s¬n  hµ kh«ng niÖm viÔn 	nhÊt h­íng niªn quang h÷u h¹n th©n 	tÕ to¸n phï sinh thiªn  v¹n tù 											1	50	10000000
+2196		V« kh¶ n¹i hµ hoa l¹c khø, ----------------	4	0	tù t¨ng t­¬ng chİ yÕn quy lai 	kû håi s¬ vò tİch viªn hµ 	v·n hoa hång phiÕn l¹c ®×nh sa 	khóc lan h·n ¸nh nhËp l­¬ng  ba 											1	50	10000000
+2197		YÕn b¹i hùu thµnh kh«ng, ----------------	4	0	hån mª xu©n méng trung	lai tiÖn hµi trung tè 	Thu ba hoµnh dôc l­u 	nh·n s¾c ¸m t­¬ng c©u 											1	50	10000000
+2198		liªu lo¹n xu©n sÇu nh­ liÔu nhø, ----------------	4	0	y y méng lı v« tÇm xø 	B¸ch th¶o thiªn hoa hµn thùc lé 	lÖ nh·n û l©u tÇn ®éc ng÷ 	h­¬ng xa hÖ t¹i thuú gia thô 											1	50	10000000
+2199		doanh doanh nhÊt thñy nhµn, ---------------- 	4	0	m¹ch m¹ch bÊt ®¾c ng÷ 	hµ h¸n thanh th¶ tiªn  	khiªn  khiªn  tr¹c tè thñ  	khÊp di linh nh­ vò  											1	50	10000000
+2200		®iÒu  ®iÒu  khiªn ng­u tinh, ----------------	4	0	gi¶o gi¶o hµ h¸n nh÷ 	nhÊt khø phôc kû høa 	tr¸p léng c¬ trø 	khÊp di linh nh­ vò  											1	50	10000000
+2201		xu©n phong hùu lôc giang nam ng¹n, ----------------	4	0	Minh nguyÖt hµ thêi chiÕu ng· hoµn 	Phong Quang BÊt d÷ tø thêi ®ång  	Chung s¬n  chØ c¸ch s¸c trïng s¬n  	kinh khÈu qua ch©u nhÊt  Thñy nhµn 											1	50	10000000
+2202		xu©n s¾c m·n viªn quan bÊt tró,  ----------------	4	0	nhÊt chi hång h¹nh xuÊt t­êng lai 	øng liªn kü xØ Ên th­¬ng ®µi 	tiÓu khÊu  sµi phi cöu bÊt khai  	tæng b¶ t©n ®µo ho¸n cùu phï  											1	50	10000000
+2203		B¸ch xuyªn ®«ng ®¸o h¶i,  ---------------- 	4	0	hµ thêi phóc ¸ quy 	D­¬ng Xu©n bè ®øc tr¹ch  	phµn Hoµng hoa diÖp suy  	D­¬ng Xu©n bè ®øc tr¹ch  											1	50	10000000
+2204		tr¸ng BÊt nç lùc, ---------------- 	4	0	l·o ®¹i ®å th­¬ng bi 	triÒu lé ®·i nhËt hy 	v¹n vËt sinh quang huy  	phµn Hoµng hoa diÖp suy  											1	50	10000000
+2205		s¬n  ngo¹i thanh s¬n  l©u ngo¹i l©u, ----------------	4	0	¸  hå ca vò kû thêi h­u 	trùc b¶ hµng ch©u  ®­¬ng biÖn ch©u 	Phong Quang BÊt d÷ tø thêi ®ång  	Hoa h÷u thanh h­¬ng nguyÖt h÷u ©m 											1	50	10000000
+2206		thÇn t©m nhÊt phiÕn tõ ch©m th¹ch, ---------------- 	4	0	BÊt chØ Nam ph­¬ng bÊt kh¼ng h­u 	håi tïng D­¬ng tö ®¹i giang ®Çu  	kû nhËt tuú Phong b¾c h¶i du 	ca qu¶n l©u ®×nh thanh tÕ tÕ  											1	50	10000000
+2207		V­¬ng s­ b¾c ®Şnh trung nguyªn nhËt, ----------------	4	0	gia tÕ v« vong c¸o n·i «ng 	gia tÕ v« vong c¸o nh÷ «ng 	®¶n bi bÊt kiÕn cöu ch©u ®ång  	tö hËu nguyªn tri  v¹n sù kh«ng 											1	50	10000000
+2208		béc tróc thanh trung nhÊt tuÕ trõ, ----------------	4	0	xu©n phong tèng huyªn nhËp ®å t« 	tæng b¶ t©n ®µo ho¸n cùu phï  	Thiªn m«n  v¹n hé ®ång ®ång nhËt  	phong niªn l­u kh¸ch tóc kª ®ån  											1	50	10000000
+2209		Sinh ®­¬ng t¸c nh©n kiÖt, ----------------	4	0	tö diÖc vi quû hïng 	chİ kim t­ h¹ng vò  	Th­¬ng mang V©n H¶i nhµn 	BÊt kh¼ng qu¸ giang ®«ng  											1	50	10000000
+2210		tiÕp thiªn liªn diÖp v« cïng bİch,  ---------------- 	4	0	¸nh nhËt hµ hoa biÖt  d¹ng hång 	tÊt c¸nh ¸  hå lôc nguyÖt trung 	Phong Quang BÊt d÷ tø thêi ®ång  	ngé nhËp ngÉu hoa th©m xø 											1	50	10000000
+2211		xu©n tiªu nhÊt kh¾c trŞ Thiªn Kim, ----------------	4	0	Hoa h÷u thanh h­¬ng nguyÖt h÷u ©m 	ca qu¶n l©u ®×nh thanh tÕ tÕ  	Thu thiªn viÖn l¹c d¹ trÇm trÇm 	liÔu ¸m hoa minh hùu nhÊt th«n 											1	50	10000000
+2212		s¬n  trïng Thñy phôc nghi v« lé, ---------------- 	4	0	liÔu ¸m hoa minh hùu nhÊt th«n 	phong niªn l­u kh¸ch tóc kª ®ån  	y  quan  gi¶n béc cæ phong tån  	trô tr­îng v« thêi d¹ khÊu m«n  											1	50	10000000
+2213		tranh ®é, tranh ®é, ----------------	4	0	kinh khëi nhÊt than ©u lé  	trÇm tóy bÊt tri  quy lé  	th­êng kı hÒ  ®×nh nhËt mé 	ngé nhËp ngÉu hoa th©m xø 											1	50	10000000
+2214		v·ng sù dÜ thµnh kh«ng, ---------------- 	4	0	hoµn nh­ nhÊt méng trung 	Cao l©u thuú d÷ th­îng  	cè quèc méng trïng quy  	Tr­êng  kı thu t×nh väng  											1	50	10000000
+2215		Dôc cïng thiªn ı môc,  ---------------- 	4	0	Canh th­îng nhÊt t»ng l©u 	Hoµng hµ nhËp h¶i l­u  	b¹ch nhËt y s¬n  tÉn 	cö ®Çu väng minh nguyÖt 											1	50	10000000
+2216		l·o kı phôc lŞch, ---------------- 	4	0	Chİ t¹i thiªn lı 	chung vi  thæ h«i  	du h÷u c¸nh thêi  	tr¸ng t©m bÊt dÜ  											1	50	10000000
+2217		nhËt nguyÖt  chi hµnh, ----------------	4	0	Nh­îc xuÊt kú trung	hång ba dòng khëi  	Nh­îc xuÊt kú lı  	ca dÜ vŞnh chİ  											1	50	10000000
+2218		b¶n thŞ ®ång c¨n sinh, ----------------	4	0	t­¬ng tiªn hµ th¸i cÊp 	léc thóc dÜ vi trÊp  	®Ëu t¹i phñ trung khÊp  	chö ®Ëu tr× t¸c kh­¬ng 											1	50	10000000
+2219		®èi töu ®­¬ng ca, ----------------	4	0	Nh©n Sinh kû hµ 	¤ th­íc nam phi 	du du ng· t©m 	cæ s¾t xuy sinh -------------											1	50	10000000
+2220		, tÊt h÷u ng· s­ yªn.	4	0	Tam Nh©n Hµnh 	NhŞ Nh©n Hµnh 	NhÊt Nh©n Hµnh 	Tø Nh©n Hµnh 											1	50	10000000
+2221		Tr­êng Phong kû v¹nlı, ----------------	4	0	Xuy ®é Ngäc m«n quan 	th¸n tøc vŞ øng gian 	Th­¬ng mang V©n H¶i nhµn 	T­ quy ®a hé nhan 											1	50	10000000

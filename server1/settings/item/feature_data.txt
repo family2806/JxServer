@@ -1,194 +1,194 @@
 FEATURE	DESC	TEAM_MASK_PRICE	TONG_MASK_PRICE
-140	Ò×ÈÝÃæ¾ß-Î÷±±É½ÔôÊ×Áì	466	2187
-141	Ò×ÈÝÃæ¾ß-Î÷ÄÏÉ½ÔôÊ×Áì	466	2187
-142	Ò×ÈÝÃæ¾ß-½­ÄÏÉ½ÔôÊ×Áì	466	2187
-143	Ò×ÈÝÃæ¾ß-¶«±±É½ÔôÊ×Áì	466	2187
-144	Ò×ÈÝÃæ¾ß-»ª±±É½ÔôÊ×Áì	466	2187
-145	Ò×ÈÝÃæ¾ß-ÄÏ²¿É½ÔôÊ×Áì	466	2187
-148	Ò×ÈÝÃæ¾ß-É½ÔôÊ×Áì	466	2187
-0	Ò×ÈÝÃæ¾ß-¶«±±»¢	780	3660
-1	Ò×ÈÝÃæ¾ß-»ªÄÏ»¢	780	3660
-2	Ò×ÈÝÃæ¾ß-°×»¢	780	3660
-149	Ò×ÈÝÃæ¾ß-Î÷±±É½Ôô¼×	466	2187
-150	Ò×ÈÝÃæ¾ß-Î÷±±É½ÔôÒÒ	466	2187
-151	Ò×ÈÝÃæ¾ß-Î÷ÄÏÉ½Ôô¼×	466	2187
-152	Ò×ÈÝÃæ¾ß-Î÷ÄÏÉ½ÔôÒÒ	466	2187
-153	Ò×ÈÝÃæ¾ß-½­ÄÏÉ½Ôô¼×	466	2187
-154	Ò×ÈÝÃæ¾ß-½­ÄÏÉ½ÔôÒÒ	466	2187
-155	Ò×ÈÝÃæ¾ß-»ªÄÏÉ½Ôô¼×	466	2187
-3	Ò×ÈÝÃæ¾ß-½ðÇ®±ª	780	3660
-5	Ò×ÈÝÃæ¾ß-»ÒÀÇ	780	3660
-6	Ò×ÈÝÃæ¾ß-»ðÀÇ	780	3660
-156	Ò×ÈÝÃæ¾ß-»ªÄÏÉ½ÔôÒÒ	466	2187
-157	Ò×ÈÝÃæ¾ß-¶«±±É½Ôô¼×	466	2187
-158	Ò×ÈÝÃæ¾ß-¶«±±É½ÔôÒÒ	466	2187
-159	Ò×ÈÝÃæ¾ß-»ª±±É½Ôô¼×	466	2187
-160	Ò×ÈÝÃæ¾ß-»ª±±É½ÔôÒÒ	466	2187
-161	Ò×ÈÝÃæ¾ß-ÖÐÔ­É½Ôô¼×	466	2187
-162	Ò×ÈÝÃæ¾ß-ÖÐÔ­É½ÔôÒÒ	466	2187
-8	Ò×ÈÝÃæ¾ß-Ñ©ÀÇ	780	3660
-9	Ò×ÈÝÃæ¾ß-ºüÀê	780	3660
-10	Ò×ÈÝÃæ¾ß-ºìºü	780	3660
-163	Ò×ÈÝÃæ¾ß-É½Ôô¼×	466	2187
-164	Ò×ÈÝÃæ¾ß-É½ÔôÒÒ	466	2187
-165	Ò×ÈÝÃæ¾ß-É½Ôô±û	466	2187
-166	Ò×ÈÝÃæ¾ß-É½Ôô¶¡	466	2187
-167	Ò×ÈÝÃæ¾ß-É½ÔôÎì	466	2187
-168	Ò×ÈÝÃæ¾ß-É½Ôô¼º	466	2187
-169	Ò×ÈÝÃæ¾ß-É½Ôô¸ý	466	2187
-11	Ò×ÈÝÃæ¾ß-Ò°Öí	780	3660
-15	Ò×ÈÝÃæ¾ß-×ØÐÜ	780	3660
-16	Ò×ÈÝÃæ¾ß-ºÚÐÜ	780	3660
-176	Ò×ÈÝÃæ¾ß-¹ÖÈË	933	4375
-190	Ò×ÈÝÃæ¾ß-Ä¾ÈË	933	4375
-191	Ò×ÈÝÃæ¾ß-Í­ÈË	933	4375
-192	Ò×ÈÝÃæ¾ß-Å®´Ì¿Í	933	4375
-193	Ò×ÈÝÃæ¾ß-Äá¹ÃÇåºÍ	933	4375
-470	Ò×ÈÝÃæ¾ß-ÃîÒþ	933	4375
-471	Ò×ÈÝÃæ¾ß-Ò¶±ùºÛ	933	4375
-18	Ò×ÈÝÃæ¾ß-Ñï×Óöù	780	3660
-19	Ò×ÈÝÃæ¾ß-»ðòáòæ	780	3660
-21	Ò×ÈÝÃæ¾ß-ÂÌÉ«òþÉß	780	3660
-473	Ò×ÈÝÃæ¾ß-ÇØÒÐ·ç	933	4375
-474	Ò×ÈÝÃæ¾ß-Ð»ÔÆÂÜ	933	4375
-476	Ò×ÈÝÃæ¾ß-ÇàÁ«×Ó	933	4375
-478	Ò×ÈÝÃæ¾ß-Í¯Ï¦ÑÕ	933	4375
-480	Ò×ÈÝÃæ¾ß-ÎºÁËÎÌ	933	4375
-411	Ò×ÈÝÃæ¾ß-Õ½¶·ºÍÉÐ	933	4375
-483	Ò×ÈÝÃæ¾ß-ÂÞ¿ïÉú	933	4375
-22	Ò×ÈÝÃæ¾ß-½ð»·òþÉß	780	3660
-23	Ò×ÈÝÃæ¾ß-³àÁ·òþÉß	780	3660
-32	Ò×ÈÝÃæ¾ß-â¦áû	780	3660
-485	Ò×ÈÝÃæ¾ß-ÌÆ³ð	933	4375
-486	Ò×ÈÝÃæ¾ß-ÌÆÏÐ	933	4375
-487	Ò×ÈÝÃæ¾ß-ÌÆÔÆ	933	4375
-488	Ò×ÈÝÃæ¾ß-ÌÆÒ°	933	4375
-491	Ò×ÈÝÃæ¾ß-ÏÄ³Ï	933	4375
-492	Ò×ÈÝÃæ¾ß-ºÚÃæÀÉ¾ý	933	4375
-493	Ò×ÈÝÃæ¾ß-ÍÀÒì	933	4375
-33	Ò×ÈÝÃæ¾ß-ä½ÐÜ	780	3660
-34	Ò×ÈÝÃæ¾ß-ÁéÃ¨	780	3660
-35	Ò×ÈÝÃæ¾ß-²ØÓòºï	780	3660
-412	Ò×ÈÝÃæ¾ß-Õ½¶·Äá¹Ã	933	4375
-49	Ò×ÈÝÃæ¾ß-½ð¹ú¹ÙÔ±	933	4375
-1042	Ò×ÈÝÃæ¾ß-Áú°Ë	933	4375
-501	Ò×ÈÝÃæ¾ß-ÁÎáª	933	4375
-502	Ò×ÈÝÃæ¾ß-·ïôâÈç	933	4375
-680	Ò×ÈÝÃæ¾ß-Ðì×ÔÁ¦	933	4375
-505	Ò×ÈÝÃæ¾ß-½£Ê®Èý	933	4375
-36	Ò×ÈÝÃæ¾ß-»ÒÒ¶ºï	780	3660
-37	Ò×ÈÝÃæ¾ß-ºÚÒ¶ºï	780	3660
-39	Ò×ÈÝÃæ¾ß-²ò	780	3660
-506	Ò×ÈÝÃæ¾ß-Ñà¾Å	933	4375
-507	Ò×ÈÝÃæ¾ß-ÅíÁ¬µÂ	933	4375
-508	Ò×ÈÝÃæ¾ß-Áõ·ÉÁú	933	4375
-509	Ò×ÈÝÃæ¾ß-ÄªÐ¡Ó¨	933	4375
-510	Ò×ÈÝÃæ¾ß-Ì·ÈýÍÈ	933	4375
-652	Ò×ÈÝÃæ¾ß-ÉñÃØÖÐÄêÄÐ×Ó	933	4375
-664	Ò×ÈÝÃæ¾ß-ÁúÎå	933	4375
-40	Ò×ÈÝÃæ¾ß-Ñ©¹Ö	780	3660
-41	Ò×ÈÝÃæ¾ß-¸òó¡	780	3660
-44	Ò×ÈÝÃæ¾ß-Ð«×Ó	780	3660
-669	Ò×ÈÝÃæ¾ß-Â·³¤Ìì	933	4375
-670	Ò×ÈÝÃæ¾ß-ÎäÁÖÈËÎï	933	4375
-671	Ò×ÈÝÃæ¾ß-ÅËÈçÁú	933	4375
-673	Ò×ÈÝÃæ¾ß-ÃÉ¹ÅÎäÊ¿	933	4375
-674	Ò×ÈÝÃæ¾ß-Ë®Ôô	933	4375
-675	Ò×ÈÝÃæ¾ß-ºÉ»¨µÁ	933	4375
-676	Ò×ÈÝÃæ¾ß-Áú×·Îè	933	4375
-694	Ò×ÈÝÃæ¾ß-ÁÎ¶¨	1257	5892
-45	Ò×ÈÝÃæ¾ß-Ö©Öë	780	3660
-46	Ò×ÈÝÃæ¾ß-òÚò¼	780	3660
-54	Ò×ÈÝÃæ¾ß-Âä¹â	571	2187
-56	Ò×ÈÝÃæ¾ß-ÒøÑÀ	571	2187
-57	Ò×ÈÝÃæ¾ß-Ëªµ¶	571	2187
-59	Ò×ÈÝÃæ¾ß-Àä¹­	571	2187
-63	Ò×ÈÝÃæ¾ß-º®Ç¹	571	2187
-94	Ò×ÈÝÃæ¾ß-±¼À×	571	2187
-109	Ò×ÈÝÃæ¾ß-¶À²½	571	2187
-113	Ò×ÈÝÃæ¾ß-½µ´¸	571	2187
-134	Ò×ÈÝÃæ¾ß-³àÕÆ	571	2187
-157	Ò×ÈÝÃæ¾ß-ÀÇ°ô	571	2187
-851	Ò×ÈÝÃæ¾ß-²½Ïù³¾	571	2187
-852	Ò×ÈÝÃæ¾ß-ÇÇ¶¦Ìì	571	2187
-853	Ò×ÈÝÃæ¾ß-µóÒ×µ¶	571	2187
-854	Ò×ÈÝÃæ¾ß-Î÷ÃÅÎÞ½ä	571	2187
-855	Ò×ÈÝÃæ¾ß-ºòÆò½£	571	2187
-856	Ò×ÈÝÃæ¾ß-Ó¦Ð¥·ç	571	2187
-857	Ò×ÈÝÃæ¾ß-Ô¬ÄîÏ¦	571	2187
-858	Ò×ÈÝÃæ¾ß-ñÒÌìÃõ	571	2187
-511	Ò×ÈÝÃæ¾ß-ÕÅ×ÚÕý	857	5357
-523	Ò×ÈÝÃæ¾ß-ÁøÇàÇà	857	5357
-602	Ò×ÈÝÃæ¾ß-ÉÈ¿Í	857	5357
-582	Ò×ÈÝÃæ¾ß-À¶ÒÁÒÁ	1428	5892
-566	Ò×ÈÝÃæ¾ß-¹Å°Ø	1428	5892
-562	Ò×ÈÝÃæ¾ß-µÀÇåÕæÈË	1428	5892
-563	Ò×ÈÝÃæ¾ß-Ò®ÂÉ±ÙÀë	1428	5892
-564	Ò×ÈÝÃæ¾ß-ÍêÑÕÑ©ÒÂ	1428	5892
-565	Ò×ÈÝÃæ¾ß-¶ËÄ¾î£	1428	5892
-567	Ò×ÈÝÃæ¾ß-ÖÓÁéÐã	1428	5892
-568	Ò×ÈÝÃæ¾ß-ºÎÁ¯Æ®	1428	5892
-583	Ò×ÈÝÃæ¾ß-ÃÏ²×ÀË	1428	5892
-739	Ò×ÈÝÃæ¾ß-Íõ×ô	1428	5892
-740	Ò×ÈÝÃæ¾ß-Ðþ¾õ´óÊ¦	1428	5892
-741	Ò×ÈÝÃæ¾ß-ÌÆ²»È¾	1428	5892
-742	Ò×ÈÝÃæ¾ß-°×Ó¨Ó¨	1428	5892
-743	Ò×ÈÝÃæ¾ß-Çå¾øÊ¦Ì«	1428	5892
-744	Ò×ÈÝÃæ¾ß-æÌÏþÙ»	1428	5892
-745	Ò×ÈÝÃæ¾ß-ºÎÈËÎÒ	1428	5892
-746	Ò×ÈÝÃæ¾ß-µ¥Ë¼ÄÏ	1428	5892
-747	Ò×ÈÝÃæ¾ß-è¯çá×Ó	1428	5892
-748	Ò×ÈÝÃæ¾ß-º«ÃÉ	1428	5892
-1138	Ò×ÈÝÃæ¾ß-ÏÄ³Ï	1428	5892
-1139	Ò×ÈÝÃæ¾ß-ËÕ´ÊÜ°	1428	5892
-1140	Ò×ÈÝÃæ¾ß-ÌÆÌìÐÄ	1428	5892
-1061	Ò×ÈÝÃæ¾ß-³ÉÄêÀ×½£	1428	5892
-1062	Ò×ÈÝÃæ¾ß-³ÉÄêÐ¦Ëª	1428	5892
-1063	Ò×ÈÝÃæ¾ß-³ÉÄê»ðÈÐ	1428	5892
-1064	Ò×ÈÝÃæ¾ß-³ÉÄêº£ÌÄ	1428	5892
-1065	Ò×ÈÝÃæ¾ß-³ÉÄê½ð·æ	1428	5892
-1043	Ò×ÈÝÃæ¾ß-ÇàÄêÀ×½£	1428	5892
-1044	Ò×ÈÝÃæ¾ß-ÇàÄêÐ¦Ëª	1428	5892
-1045	Ò×ÈÝÃæ¾ß-ÇàÄê»ðÈÐ	1428	5892
-1046	Ò×ÈÝÃæ¾ß-ÇàÄêº£ÌÄ	1428	5892
-1047	Ò×ÈÝÃæ¾ß-ÇàÄê½ð·æ	1428	5892
-1056	Ò×ÈÝÃæ¾ß-ÉÙÄêÀ×½£	1714	7142
-1057	Ò×ÈÝÃæ¾ß-ÉÙÄêÐ¦Ëª	1714	7142
-1058	Ò×ÈÝÃæ¾ß-ÉÙÄê»ðÈÐ	1714	7142
-1059	Ò×ÈÝÃæ¾ß-ÉÙÄêº£ÌÄ	1714	7142
-1060	Ò×ÈÝÃæ¾ß-ÉÙÄê½ð·æ	1714	7142
-4	Ò×ÈÝÃæ¾ß-Ñ©±ª	1142	3660
-7	Ò×ÈÝÃæ¾ß-ÇàÀÇ	1142	3660
-12	Ò×ÈÝÃæ¾ß-´Ìâ¬	1142	3660
-17	Ò×ÈÝÃæ¾ß-Ò°Å£	1142	3660
-20	Ò×ÈÝÃæ¾ß-ÑÛ¾µòþÉß	1142	3660
-31	Ò×ÈÝÃæ¾ß-½ðÃ¨	1142	3660
-38	Ò×ÈÝÃæ¾ß-½ðË¿ºï	1142	3660
-42	Ò×ÈÝÃæ¾ß-Ã·»¨Â¹	1142	3660
-43	Ò×ÈÝÃæ¾ß-°×Öí	1142	3660
-623	Ò×ÈÝÃæ¾ß-Ê¥µ®ÀÏÈË(ºì)	2000	7142
-624	Ò×ÈÝÃæ¾ß-Ê¥µ®ÌìÊ¹(ºì)	2000	7142
-726	½ÚÈÕÃæ¾ß-´óÍ·ÍÞÍÞ	1714	7142
-727	½ÚÈÕÃæ¾ß-ÎèÄÏÊ¨×Ó	1714	7142
-728	½ÚÈÕÃæ¾ß-Îè±±Ê¨×Ó	1714	7142
-729	½ÚÈÕÃæ¾ß-ÎèÁúÖé	1714	7142
-730	½ÚÈÕÃæ¾ß-ÎèÁúÍ·	1714	7142
-731	½ÚÈÕÃæ¾ß-ÎèÁúÉí	1714	7142
-732	½ÚÈÕÃæ¾ß-ÎèÁúÎ²	1714	7142
-1122	Ò×ÈÝÃæ¾ß-ÐÂÄêÏÀ¿Í	2000	7142
-1123	Ò×ÈÝÃæ¾ß-ÐÂÄêÏÀÅ®	2000	7142
-1124	Ò×ÈÝÃæ¾ß-Ñ©ÍÃ	2000	7142
-1125	Ò×ÈÝÃæ¾ß-Ñ±Â¹	2000	7142
-1126	Ò×ÈÝÃæ¾ß-Ê¥µ®¾«Áé(À¶)	2000	7142
-1127	Ò×ÈÝÃæ¾ß-Ê¥µ®¾«Áé(×Ï)	2000	7142
-1128	Ò×ÈÝÃæ¾ß-Ê¥µ®¾«Áé(ºì)	2000	7142
-1129	Ò×ÈÝÃæ¾ß-Ê¥µ®¾«Áé(»Æ)	2000	7142
-1130	Ò×ÈÝÃæ¾ß-Ê¥µ®ÀÏÈË(À¶)	2000	7142
-1131	Ò×ÈÝÃæ¾ß-Ê¥µ®ÀÏÈË(·Û)	2000	7142
-1132	Ò×ÈÝÃæ¾ß-Ê¥µ®ÀÏÈË(°×)	2000	7142
-1133	Ò×ÈÝÃæ¾ß-Ê¥µ®ÀÏÈË(»Æ)	2000	7142
-1134	Ò×ÈÝÃæ¾ß-Ê¥µ®ÌìÊ¹(À¶)	2000	7142
-1135	Ò×ÈÝÃæ¾ß-Ê¥µ®ÌìÊ¹(·Û)	2000	7142
-1136	Ò×ÈÝÃæ¾ß-Ê¥µ®ÌìÊ¹(°×)	2000	7142
-1137	Ò×ÈÝÃæ¾ß-Ê¥µ®ÌìÊ¹(»Æ)	2000	7142
-1141	Ò×ÈÝÃæ¾ß-ÄêÊÞ	2000	7142
+140	MÆt n¹ - T©y B¾c S¬n tÆc ®Çu lÜnh 	466	2187
+141	MÆt n¹ - T©y Nam S¬n tÆc ®Çu lÜnh 	466	2187
+142	MÆt n¹ - Giang Nam S¬n tÆc ®Çu lÜnh 	466	2187
+143	MÆt n¹ - §«ng B¾c S¬n tÆc ®Çu lÜnh 	466	2187
+144	MÆt n¹ - Hoa B¾c S¬n tÆc ®Çu lÜnh 	466	2187
+145	MÆt n¹ - Nam Bé S¬n tÆc ®Çu lÜnh 	466	2187
+148	MÆt n¹ - S¬n tÆc ®Çu lÜnh	466	2187
+0	MÆt n¹ - §«ng B¾c Hæ 	780	3660
+1	MÆt n¹ - Hoa Nam Hæ 	780	3660
+2	MÆt n¹ - B¹ch Hæ 	780	3660
+149	MÆt n¹ - T©y B¾c S¬n tÆc Gi¸p 	466	2187
+150	MÆt n¹ - T©y B¾c S¬n tÆc Êt 	466	2187
+151	MÆt n¹ - T©y Nam S¬n tÆc Gi¸p 	466	2187
+152	MÆt n¹ - T©y Nam S¬n tÆc Êt 	466	2187
+153	MÆt n¹ - Giang Nam S¬n tÆc Gi¸p 	466	2187
+154	MÆt n¹ - Giang Nam S¬n tÆc Êt 	466	2187
+155	MÆt n¹ - Hoa Nam S¬n tÆc Gi¸p 	466	2187
+3	MÆt n¹ - Kim TiÒn B¸o	780	3660
+5	MÆt n¹ - Sãi x¸m 	780	3660
+6	MÆt n¹ - Sãi ®á 	780	3660
+156	MÆt n¹ - Hoa Nam S¬n tÆc Êt 	466	2187
+157	MÆt n¹ - §«ng B¾c S¬n tÆc Gi¸p 	466	2187
+158	MÆt n¹ - §«ng B¾c S¬n tÆc Êt 	466	2187
+159	MÆt n¹ - Hoa B¾c S¬n tÆc Gi¸p 	466	2187
+160	MÆt n¹ - Hoa B¾c S¬n tÆc Êt 	466	2187
+161	MÆt n¹ - Trung Nguyªn S¬n tÆc Gi¸p 	466	2187
+162	MÆt n¹ - Trung Nguyªn S¬n tÆc Êt 	466	2187
+8	MÆt n¹ - Sãi tuyÕt 	780	3660
+9	MÆt n¹ - Hå Ly 	780	3660
+10	MÆt n¹ - Hång Hå 	780	3660
+163	MÆt n¹ - S¬n tÆc Gi¸p 	466	2187
+164	MÆt n¹ - S¬n tÆc Êt 	466	2187
+165	MÆt n¹ - S¬n tÆc BÝnh 	466	2187
+166	MÆt n¹ - S¬n tÆc §inh 	466	2187
+167	MÆt n¹ - S¬n tÆc MËu 	466	2187
+168	MÆt n¹ - S¬n tÆc Kû 	466	2187
+169	MÆt n¹ - S¬n tÆc Canh 	466	2187
+11	MÆt n¹ - Heo rõng 	780	3660
+15	MÆt n¹ - GÊu n©u	780	3660
+16	MÆt n¹ - GÊu ®en	780	3660
+176	MÆt n¹ - Qu¸i thó 	933	4375
+190	MÆt n¹ - Méc nh©n	933	4375
+191	MÆt n¹ - §ång nh©n	933	4375
+192	MÆt n¹ - N÷ thÝch kh¸ch	933	4375
+193	MÆt n¹ - DiÖu Nh­ 	933	4375
+470	MÆt n¹ - DiÖu Èn 	933	4375
+471	MÆt n¹ - DiÖp B¨ng H©n	933	4375
+18	MÆt n¹ - D­¬ng Tö Ng¹c 	780	3660
+19	MÆt n¹ - Th»n l»n ®á 	780	3660
+21	MÆt n¹ - R¾n xanh 	780	3660
+473	MÆt n¹ - TÇn û Phong	933	4375
+474	MÆt n¹ - T¹ V©n La	933	4375
+476	MÆt n¹ - Thanh Liªn Tö 	933	4375
+478	MÆt n¹ - §ång TÞch Nhan	933	4375
+480	MÆt n¹ - Ngôy LiÔu ¤ng	933	4375
+411	MÆt n¹ - Hßa Th­îng chiÕn ®Êu	933	4375
+483	MÆt n¹ - La Khu«ng Sinh	933	4375
+22	MÆt n¹ - Kim Hoµn M·ng Xµ 	780	3660
+23	MÆt n¹ - XÝch LuyÖn M·ng Xµ 	780	3660
+32	MÆt n¹ - X¸ LÞ 	780	3660
+485	MÆt n¹ - §­êng Cõu	933	4375
+486	MÆt n¹ - §­êng Nhµn 	933	4375
+487	MÆt n¹ - §­êng V©n	933	4375
+488	MÆt n¹ - §­êng D· 	933	4375
+491	MÆt n¹ - H¹ Thµnh	933	4375
+492	MÆt n¹ - H¾c DiÖn Lang Qu©n	933	4375
+493	MÆt n¹ - §å DÞ 	933	4375
+33	MÆt n¹ - Ho¸n Hïng 	780	3660
+34	MÆt n¹ - Linh Miªu 	780	3660
+35	MÆt n¹ - Tµng Vùc HÇu 	780	3660
+412	MÆt n¹ - Ni c« chiÕn ®Êu	933	4375
+49	MÆt n¹ - Kim Quèc Quan viªn	933	4375
+1042	MÆt n¹ - Long B¸t	933	4375
+501	MÆt n¹ - LiÖu Kú 	933	4375
+502	MÆt n¹ - Phông HÊp Nh­ 	933	4375
+680	MÆt n¹ - Tõ Tù Lùc 	933	4375
+505	MÆt n¹ - KiÕm ThËp Tam	933	4375
+36	MÆt n¹ - KhØ x¸m 	780	3660
+37	MÆt n¹ - H¾c DiÖp HÇu 	780	3660
+39	MÆt n¹ - Sµi 	780	3660
+506	MÆt n¹ - YÕn Cöu	933	4375
+507	MÆt n¹ - Bµnh Liªn §øc	933	4375
+508	MÆt n¹ - L­u Phi Long 	933	4375
+509	MÆt n¹ - M¹c TiÓu Oanh	933	4375
+510	MÆt n¹ - §µm Tam Tho¸i	933	4375
+652	MÆt n¹ - Nam trung niªn ThÇn bÝ 	933	4375
+664	MÆt n¹ - Long Ngò 	933	4375
+40	MÆt n¹ - TuyÕt Qu¸i 	780	3660
+41	MÆt n¹ - Cãc	780	3660
+44	MÆt n¹ - Bß c¹p 	780	3660
+669	MÆt n¹ - Lé Tr­êng Thiªn 	933	4375
+670	MÆt n¹ - Lôc l©m	933	4375
+671	MÆt n¹ - Phan Nh­ Long 	933	4375
+673	MÆt n¹ - M«ng Cæ Vâ sÜ 	933	4375
+674	MÆt n¹ - Thñy TÆc 	933	4375
+675	MÆt n¹ - Hµ Hoa §¹o	933	4375
+676	MÆt n¹ - Long Truy Vò 	933	4375
+694	MÆt n¹ - Liªu §Þnh	1257	5892
+45	MÆt n¹ - NhÖn	780	3660
+46	MÆt n¹ - RÕt	780	3660
+54	MÆt n¹ - L¹c Quang	571	2187
+56	MÆt n¹ - Ng©n Nha	571	2187
+57	MÆt n¹ - S­¬ng §ao	571	2187
+59	MÆt n¹ - L·nh §ao	571	2187
+63	MÆt n¹ - Hµn Th­¬ng	571	2187
+94	MÆt n¹ - B«n L«i	571	2187
+109	MÆt n¹ - §éc Bé 	571	2187
+113	MÆt n¹ - Gi¸ng Chïy	571	2187
+134	MÆt n¹ - XÝch Ch­ëng	571	2187
+157	MÆt n¹ - Lang Bæng	571	2187
+851	MÆt n¹ - Bé Hi TrÇn	571	2187
+852	MÆt n¹ - KiÒu §Ønh Thiªn 	571	2187
+853	MÆt n¹ - §iªu DÞch §ao	571	2187
+854	MÆt n¹ - T©y M«n Giíi	571	2187
+855	MÆt n¹ - HÇu KhÊt KiÕm	571	2187
+856	MÆt n¹ - øng KhiÕu Phong	571	2187
+857	MÆt n¹ - Viªn NiÖm TÞch	571	2187
+858	MÆt n¹ - Ch÷ Thiªn MÉn 	571	2187
+511	MÆt n¹ - Tr­¬ng T«ng ChÝnh	857	5357
+523	MÆt n¹ - LiÔu Thanh Thanh	857	5357
+602	MÆt n¹ - PhiÕn Kh¸ch	857	5357
+582	MÆt n¹ - Lam Y Y	1428	5892
+566	MÆt n¹ - Cæ B¸ch	1428	5892
+562	MÆt n¹ - §¹o Thanh Ch©n Nh©n	1428	5892
+563	MÆt n¹ - Gia LuËt TÞ Ly	1428	5892
+564	MÆt n¹ - Hoµn Nhan TuyÕt Y	1428	5892
+565	MÆt n¹ - §oan Méc DuÖ 	1428	5892
+567	MÆt n¹ - Chung Linh Tó 	1428	5892
+568	MÆt n¹ - Hµ Linh Phiªu	1428	5892
+583	MÆt n¹ - M¹nh Th­¬ng L­¬ng	1428	5892
+739	MÆt n¹ - V­¬ng T¸ 	1428	5892
+740	MÆt n¹ - HuyÒn Gi¸c §¹i S­ 	1428	5892
+741	MÆt n¹ - §­êng BÊt NhiÔm	1428	5892
+742	MÆt n¹ - B¹ch Doanh Doanh	1428	5892
+743	MÆt n¹ - Thanh TuyÖt S­ Th¸i	1428	5892
+744	MÆt n¹ - Yªn HiÓu Tr¸i	1428	5892
+745	MÆt n¹ - Hµ Nh©n Ng· 	1428	5892
+746	MÆt n¹ - §¬n T­ Nam	1428	5892
+747	MÆt n¹ - TuyÒn C¬ Tö 	1428	5892
+748	MÆt n¹ - Hµn M«ng	1428	5892
+1138	MÆt n¹ - H¹ Thµnh	1428	5892
+1139	MÆt n¹ - T« Tõ Hinh	1428	5892
+1140	MÆt n¹ - §­êng Thiªn T©m	1428	5892
+1061	MÆt n¹ - Thµnh Niªn L«i KiÕm	1428	5892
+1062	MÆt n¹ - Thµnh Niªn TiÕu S­¬ng	1428	5892
+1063	MÆt n¹ - Thµnh Niªn Háa NhËn	1428	5892
+1064	MÆt n¹ - Thµnh Niªn H¶i §­êng	1428	5892
+1065	MÆt n¹ - Thµnh Niªn Kim Phong	1428	5892
+1043	MÆt n¹ - Thanh Niªn L«i KiÕm	1428	5892
+1044	MÆt n¹ - Thanh Niªn TiÕu S­¬ng	1428	5892
+1045	MÆt n¹ - Thanh Niªn Háa NhËn	1428	5892
+1046	MÆt n¹ - Thanh Niªn H¶i §­êng	1428	5892
+1047	MÆt n¹ - Thanh Niªn Kim Phong	1428	5892
+1056	MÆt n¹ - ThiÕu Niªn L«i KiÕm	1714	7142
+1057	MÆt n¹ - ThiÕu Niªn TiÕu S­¬ng	1714	7142
+1058	MÆt n¹ - ThiÕu Niªn Háa NhËn	1714	7142
+1059	MÆt n¹ - ThiÕu Niªn H¶i §­êng	1714	7142
+1060	MÆt n¹ - ThiÕu Niªn Kim Phong	1714	7142
+4	MÆt n¹ - TuyÕt B¸o	1142	3660
+7	MÆt n¹ - Thanh lang	1142	3660
+12	MÆt n¹ - NhÝm	1142	3660
+17	MÆt n¹ -Tr©u rõng	1142	3660
+20	MÆt n¹ - Nh·n KÝnh M·ng xµ 	1142	3660
+31	MÆt n¹ - Kim Miªu	1142	3660
+38	MÆt n¹ - Kim T¬ HÇu	1142	3660
+42	MÆt n¹ - H­¬u ®èm	1142	3660
+43	MÆt n¹ - Heo tr¾ng	1142	3660
+623	MÆt n¹ - ¤ng Giµ N«el (®á) 	2000	7142
+624	MÆt n¹ - Thiªn Sø Gi¸ng Sinh (®á) 	2000	7142
+726	MÆt n¹ - §Çu «ng ®Þa	1714	7142
+727	MÆt n¹ - Nam S­ 	1714	7142
+728	MÆt n¹ - B¾c S­ 	1714	7142
+729	MÆt n¹ - Long Ch©u	1714	7142
+730	MÆt n¹ - §Çu Rång	1714	7142
+731	MÆt n¹ - Th©n Rång	1714	7142
+732	MÆt n¹ - §u«i Rång	1714	7142
+1122	MÆt n¹ - T©n Niªn HiÖp Kh¸ch	2000	7142
+1123	MÆt n¹ - T©n Niªn HiÖp N÷ 	2000	7142
+1124	MÆt n¹ - Thá tr¾ng	2000	7142
+1125	MÆt n¹ - TuÇn Léc	2000	7142
+1126	MÆt n¹ - Tinh Linh (xanh) 	2000	7142
+1127	MÆt n¹ - Tinh Linh (tÝm) 	2000	7142
+1128	MÆt n¹ - Tinh Linh (®á) 	2000	7142
+1129	MÆt n¹ - Tinh Linh (vµng) 	2000	7142
+1130	MÆt n¹ - ¤ng Giµ N«el (xanh) 	2000	7142
+1131	MÆt n¹ - ¤ng Giµ N«el (Hång phÊn) 	2000	7142
+1132	MÆt n¹ - ¤ng Giµ N«el (tr¾ng) 	2000	7142
+1133	MÆt n¹ - ¤ng Giµ N«el (vµng) 	2000	7142
+1134	MÆt n¹ - Thiªn Sø Gi¸ng Sinh (xanh) 	2000	7142
+1135	MÆt n¹ - Thiªn Sø Gi¸ng Sinh (Hång phÊn) 	2000	7142
+1136	MÆt n¹ - Thiªn Sø Gi¸ng Sinh (tr¾ng) 	2000	7142
+1137	MÆt n¹ - Thiªn Sø Gi¸ng Sinh (vµng) 	2000	7142
+1141	MÆt n¹ - Niªn Thó 	2000	7142

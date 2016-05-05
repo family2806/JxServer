@@ -74,7 +74,7 @@ enemy090	enemy090_st.spr	enemy090_st.spr	enemy090_pst.spr										enemy090_st.s
 enemy091	enemy091_st.spr	enemy091_st.spr	enemy091_pst.spr	enemy091_wlk.spr	enemy091_wlk.spr	enemy091_wlk.spr	enemy091_wlk.spr	enemy091_bat.spr	enemy091_die.spr	enemy091_at.spr	enemy091_at.spr	enemy091_at.spr	enemy091_st.spr	enemy091_wlk.spr
 enemy092	enemy092_st.spr	enemy092_st.spr	enemy092_pst.spr										enemy092_st.spr	
 enemy093	enemy093_st.spr	enemy093_st.spr	enemy093_pst.spr	enemy093_wlk.spr	enemy093_wlk.spr	enemy093_wlk.spr	enemy093_wlk.spr	enemy093_bat.spr	enemy093_die.spr	enemy093_at.spr	enemy093_at.spr	enemy093_at.spr	enemy093_st.spr	enemy093_wlk.spr
-enemy094	enemy094_st.spr	enemy094_st.spr	enemy094_pst.spr										enemy094_st.spr	
+enemy094	enemy094_st.spr	enemy094_st.spr	enemy094_pst.spr	enemy094_wlk.spr	enemy094_wlk.spr	enemy094_wlk.spr	enemy094_wlk.spr	enemy094_bat.spr	enemy094_die.spr	enemy094_at.spr	enemy094_at.spr	enemy094_at.spr	enemy094_st.spr	enemy094_wlk.spr
 enemy095	enemy095_st.spr	enemy095_st.spr	enemy095_pst.spr	enemy095_wlk.spr	enemy095_wlk.spr	enemy095_wlk.spr	enemy095_wlk.spr	enemy095_bat.spr	enemy095_die.spr	enemy095_at.spr	enemy095_at.spr	enemy095_at.spr	enemy095_st.spr	enemy095_wlk.spr
 enemy096	enemy096_st.spr	enemy096_st.spr	enemy096_pst.spr										enemy096_st.spr	
 enemy097	enemy097_st.spr	enemy097_st.spr	enemy097_pst.spr	enemy097_wlk.spr	enemy097_wlk.spr	enemy097_wlk.spr	enemy097_wlk.spr	enemy097_bat.spr	enemy097_die.spr	enemy097_at.spr	enemy097_at.spr	enemy097_at.spr	enemy097_st.spr	enemy097_wlk.spr
@@ -691,7 +691,7 @@ passerby248	passerby248.spr	passerby248.spr	passerby248.spr	passerby248.spr	pass
 passerby249	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr	passerby249.spr
 passerby250	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr	passerby250.spr
 passerby251	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr	passerby251.spr
-passerby252	passerby252_st02.spr	passerby252_st01.spr	passerby252_st02.spr											
+passerby252	passerby252_st02.spr	passerby252_st02.spr	passerby252_st03.spr											
 boss077	boss077_st01.spr	boss077_st02.spr	boss077_st02.spr	boss077_wlk.spr	boss077_wlk.spr	boss077_wlk.spr	boss077_wlk.spr	boss077_bat.spr	boss077_die.spr	boss077_at01.spr	boss077_at02.spr	boss077_at02.spr	boss077_st02.spr	boss077_wlk.spr
 boss078	boss078_st01.spr	boss078_st02.spr	boss078_st02.spr	boss078_wlk.spr	boss078_wlk.spr	boss078_wlk.spr	boss078_wlk.spr	boss078_bat.spr	boss078_die.spr	boss078_at01.spr	boss078_at01.spr	boss078_at01.spr	boss078_st02.spr	boss078_wlk.spr
 enemy232	enemy232_st01.spr	enemy232_st01.spr	enemy232_st01.spr	enemy232_wlk.spr	enemy232_wlk.spr	enemy232_wlk.spr	enemy232_wlk.spr	enemy232_bat.spr	enemy232_die.spr	enemy232_at01.spr	enemy232_at01.spr	enemy232_at01.spr	enemy232_st01.spr	enemy232_wlk.spr
@@ -789,7 +789,7 @@ passerby338	yuenanqingyi_st01.spr	yuenanqingyi_st02.spr	yuenanqingyi_st02.spr	yu
 passerby339	passerby339.spr	passerby339.spr	passerby339.spr											
 yanhua	ÑÌ»¨.spr	ÑÌ»¨.spr	ÑÌ»¨.spr											
 passerby_wulin	passerby_wulin.spr	passerby_wulin.spr	passerby_wulin.spr											
-passerby_menzhu	passerby_mengzhu.spr	passerby_mengzhu.spr	passerby_mengzhu.spr											
+passerby_mengzhu	passerby_mengzhu.spr	passerby_mengzhu.spr	passerby_mengzhu.spr											
 passerby_jianfeng	jianfeng_st01.spr	jianfeng_st02.spr	jianfeng_st02.spr	jianfeng_wlk.spr	jianfeng_wlk.spr	jianfeng_wlk.spr	jianfeng_wlk.spr	jianfeng_bat.spr	jianfeng_die.spr	jianfeng_at01.spr	jianfeng_at02.spr	jianfeng_at02.spr	jianfeng_st02.spr	jianfeng_wlk.spr
 passerby_yunxia	yunxia_st01.spr	yunxia_st02.spr	yunxia_st02.spr	yunxia_wlk.spr	yunxia_wlk.spr	yunxia_wlk.spr	yunxia_wlk.spr	yunxia_bat.spr	yunxia_die.spr	yunxia_at01.spr	yunxia_at02.spr	yunxia_at02.spr	yunxia_st02.spr	yunxia_wlk.spr
 passerby_qixiyanhuo	qixiyanhuo.spr	qixiyanhuo.spr	qixiyanhuo.spr											
@@ -913,5 +913,7 @@ boss112	boss112_st01.spr	boss112_st02.spr	boss112_st02.spr	boss112_wlk.spr	boss1
 boss113	boss113_st01.spr	boss113_st02.spr	boss113_st02.spr	boss113_wlk.spr	boss113_wlk.spr	boss113_wlk.spr	boss113_wlk.spr	boss113_bat.spr	boss113_die.spr	boss113_at01.spr	boss113_at02.spr	boss113_at02.spr	boss113_st02.spr	boss113_wlk.spr
 boss116	boss116_st01.spr	boss116_st02.spr	boss116_st02.spr	boss116_wlk.spr	boss116_wlk.spr	boss116_wlk.spr	boss116_wlk.spr	boss116_bat.spr	boss116_die.spr	boss116_at01.spr	boss116_at02.spr	boss116_at02.spr	boss116_st02.spr	boss116_wlk.spr
 boss118	boss118_st01.spr	boss118_st02.spr	boss118_st02.spr	boss118_wlk.spr	boss118_wlk.spr	boss118_wlk.spr	boss118_wlk.spr	boss118_bat.spr	boss118_die.spr	boss118_at01.spr	boss118_at02.spr	boss118_at02.spr	boss118_st02.spr	boss118_wlk.spr
-passerby370	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr	passerby370.spr
-passerby371	passerby371.spr	passerby371.spr	passerby371.spr											
+boss135	boss135_st01.spr	boss135_st02.spr	boss135_st02.spr	boss135_wlk.spr	boss135_wlk.spr	boss135_wlk.spr	boss135_wlk.spr	boss135_wlk.spr	boss135_die.spr	boss135_at01.spr	boss135_at02.spr	boss135_at02.spr	boss135_st02.spr	boss135_wlk.spr
+passerby377	passerby377_st01.spr	passerby377_st01.spr	passerby377_st01.spr											
+passerby380	passerby380_st01.spr	passerby380_st01.spr	passerby380_st01.spr											
+passerby381	passerby381.spr	passerby381.spr	passerby381.spr											

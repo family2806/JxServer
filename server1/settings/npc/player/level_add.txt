@@ -1,6 +1,6 @@
 Ïµ±ð	LifePerLevel	StaminaMalePerLevel	StaminaFemalePerLevel	ManaPerLevel	LifePerVitality	StaminaPerVitality	ManaPerEnergy	LeadExpShare	fireres	coldres	poisonres	lightingres	physicres	StaminaMaleBase	StaminaFemaleBase
-½ðÏµ	4	9	8	1	8	0	1	25	-25	0	25	0	0	180	180
-Ä¾Ïµ	3	9	8	2	5	0	3	25	0	0	0	25	-15	180	180
-Ë®Ïµ	3	9	8	2	6	0	3	25	25	0	0	-25	0	180	180
-»ðÏµ	3	9	8	1	7	0	2	25	0	-25	0	0	15	180	180
-ÍÁÏµ	1	9	8	3	3	0	4	25	0	25	-25	0	0	180	180
+hÖ Kim	4	9	8	1	8	0	1	25	-25	0	25	0	0	180	180
+hÖ Méc	3	9	8	2	5	0	3	25	0	0	0	25	-15	180	180
+hÖ Thñy	3	9	8	2	6	0	3	25	25	0	0	-25	0	180	180
+hÖ Háa	3	9	8	1	7	0	2	25	0	-25	0	0	15	180	180
+hÖ Thæ 	1	9	8	3	3	0	4	25	0	25	-25	0	0	180	180

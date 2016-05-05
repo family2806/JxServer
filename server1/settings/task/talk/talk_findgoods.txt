@@ -1,21 +1,21 @@
 TextID	When	Where	Who	Why1	Why2	What
-8001	Ç°Ìì	³É¶¼¸®	Ãû½ÐÂíÔ±Íâ	Â·¹ýâù´ºÔºÊ±	·¢ÏÖ×Ô¼ºµÄ	²»¼ûÁË
-8002	×òÌì	·ïÏè¸®	Ãû½ÐÐì×¨Ô±	ÔÚ¾Æ¹ÝºÈ¾ÆÊ±	·¢¾õ×Ô¼ºµÄ	Ê§×ÙÁË
-8003	ÈýÌìÇ°	´óÀí¸®	Ãû½ÐÀî´ó×ì	ÔÚÒ°ÍâÐ¡½âÊ±	n	±»ÈËÍµÁË
-8004	ËÄÌìÇ°	ãê¾©¸®	Ãû½ÐÖìµÂ¸£	´ÓâùºìÔº³öÀ´Ê±	n	n
-8005	ÎåÌìÇ°	ÏåÑô¸®	×Ô³ÆÎªÂ½Ðã²Å	´Óâù·¼Ôº³öÀ´Ê±	n	n
-8006	Ò»¸öÔÂÇ°	ÑïÖÝ¸®	×Ô³ÆÎªÁÎ½«¾ü	´ÓÂíÉÏË¤ÏÂÀ´Ö®ºó	n	n
-8007	Á½¸öÔÂÇ°	ÁÙ°²¸®	×Ô³ÆÎªÎäÁÖÃË´«ÈË	Ò»¾õË¯ÐÑÖ®ºó	n	n
-8008	Èý¸öÔÂÇ°	ÁúÃÅÕò	×Ô³ÆÎªÌìÍõ°ïµÜ×Ó	ÔÚ×í¾ÆÐÑÀ´Ö®ºó	n	n
-8009	n	ÓÀÀÖÕò	×Ô³ÆÎªÎäµ±ÅÉµÜ×Ó	ÍíÉÏ´ÓÒÀÒÀÂ¥³öÀ´Ö®ºó	n	n
-8010	n	ÁúÈª´å	×Ô³ÆÎª¶À¹Âµ¶	ÍíÉÏ´Ó»ã´ºÂ¥³öÀ´Ö®ºó	n	n
-8011	n	Ê¯¹ÄÕò	×Ô³ÆÎªÌÆÃÅÕÆÃÅ	n	n	n
-8012	n	µ¾Ïã´å	×Ô³ÆÎªÎäµ±ÕÆÃÅ	n	n	n
-8013	n	ÖìÏÉÕò	×Ô³ÆÎªÀ¥ÂØÅÉ´óµÜ×Ó	n	n	n
-8014	n	½­½ò´å	×Ô³ÆÎªÌìÍõ°ï°ïÖ÷Ö®·ò	n	n	n
-8015	n	°ÍÁêÏØ	×Ô³ÆÎªÍêÑÕ²»ÁÒ	n	n	n
-8016	n	ÄÏÔÀÕò	×Ô³ÆÎªÎ÷·½Çó°Ü	n	n	n
-8017	n	n	×Ô³ÆÎªÄÏ¹¬·ÉÏÉ	n	n	n
-8018	n	n	×Ô³ÆÎªÌÆÃÅ¸±ÕÆÃÅ	n	n	n
-8019	n	n	×Ô³ÆÎªÌìÈÌÊ×Ï¯½ÌÍ½	n	n	n
-8020	n	n	×Ô³ÆÎª¹Â¶À³¤Ç¹	n	n	n
+8001	h«m kia	Thµnh §« Phñ 	tªn gäi M· Viªn ngo¹i	khi trªn ®­êng qua Hi Xu©n ViÖn	ph¸t hiÖn ra m×nh	kh«ng nh×n thÊy n÷a
+8002	h«m qua	Ph­îng T­êng Phñ 	tªn gäi Tõ Chuyªn Viªn	lóc uèng r­îu tiÖm r­îu	ph¸t gi¸c m×nh	mÊt tÝch råi!
+8003	3 ngµy tr­íc	§¹i Lý	tªn gäi Lý §¹i Chñy	khi ë ngoµi thµnh	n	bÞ lÊy trém
+8004	4 ngµy tr­íc	BiÖn Kinh Phñ 	tªn gäi Chu §øc Phóc	Lóc tõ Hi Hång ViÖn ®i ra	n	n
+8005	5 ngµy tr­íc	T­¬ng D­¬ng Phñ 	tù x­ng lµ Lôc Tó Tµi	lóc tõ Hi Ph­¬ng ViÖn ra	n	n
+8006	1 th¸ng tr­íc	D­¬ng Ch©u Phñ 	tù x­ng lµ Liªu T­íng Qu©n	Sau khi lËp tøc qu¼ng xuèng ®Êt	n	n
+8007	hai th¸ng tr­íc	L©m An Phñ 	x­ng lµ Vâ L©m TruyÒn Nh©n	sau khi võa ngñ dËy	n	n
+8008	3 th¸ng tr­íc	Long M«n trÊn	tù x­ng lµ §Ö tö Thiªn V­¬ng 	sau khi say r­îu tØnh l¹i	n	n
+8009	n	VÜnh L¹c trÊn	x­ng lµ ®Ö tö Vâ §ang 	buæi tèi sau khi tõ Y Y lÇu ®i ra	n	n
+8010	n	Long TuyÒn th«n	x­ng lµ §éc C« §ao	buæi tèi sau khi tõ Hèi Xu©n LÇu ®i ra	n	n
+8011	n	Th¹ch Cæ trÊn	x­ng lµ Ch­ëng M«n §­êng M«n	n	n	n
+8012	n	§¹o H­¬ng th«n	X­ng lµ Ch­ëng m«n Vâ §ang	n	n	n
+8013	n	Chu Tiªn trÊn	Tù x­ng lµ §¹i §Ö Tö C«n L«n Ph¸i	n	n	n
+8014	n	Giang T©n Th«n	tù x­ng lµ chång cña Bang chñ Thiªn V­¬ng Bang	n	n	n
+8015	n	Ba L¨ng huyÖn	Tù x­ng lµ Hoµn Nhan BÊt LiÖt	n	n	n
+8016	n	Nam Nh¹c trÊn	Tù x­ng lµ T©y Ph­¬ng CÇu B¹i	n	n	n
+8017	n	n	Tù x­ng lµ Nam Cung Phi Tiªn	n	n	n
+8018	n	n	tù x­ng lµ Phã Ch­ëng M«n D­êng M«n	n	n	n
+8019	n	n	tù x­ng lµ gi¸o ®Çu Thiªn NhÉn Gi¸o	n	n	n
+8020	n	n	tù x­ng lµ C« §éc Tr­êng Th­¬ng	n	n	n

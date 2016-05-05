@@ -4,8 +4,6 @@
 
 Include("\\settings\\trigger_include.lua")
 Include("\\script\\missions\\challengeoftime\\include.lua")
-Include("\\script\\missions\\challengeoftime\\chuangguang30.lua")
-
 
 function OnTrigger()
 	-- DEBUG
@@ -14,11 +12,6 @@ function OnTrigger()
 	-- 重启missions
 	close_missions(map_map, MISSION_MATCH, VARV_STATE);
 	start_missions(map_map, MISSION_MATCH);
-	
-	--闯关调整 2011.03.02
-	ChuangGuan30:KickOutAll()
-	ClearMapNpc(CHUANGGUAN30_MAP_ID)
-	-- 添加计时器
-	DynamicExecute("\\script\\missions\\challengeoftime\\chuangguang30.lua", "ChuangGuan30:AddTime")
 end
---OnTrigger();
+
+OnTrigger();

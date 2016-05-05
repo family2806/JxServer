@@ -1,12 +1,12 @@
 TextID	When	Where	Who	Why1	Why2	What
-8001	Ç°¼¸Ìì	n	n	ÎÒµÄÒ»¸öÅóÓÑÄÏ¹¬ÏÂÓê	n	ÓÎÍæÊ±ÃÔÂ·ÁË
-8002	×òÌì	n	n	ÎÒµÄÒ»¸öÅóÓÑÄÏ¹¬Ğ¡Óê	n	ºÍÈË±ÈÎäÊ±ÍüÁËÔõÃ´×ß³öÀ´ÁË
-8003	Ç°Ìì	n	n	ÎÒµÄÒ»¸öÅóÓÑ¹Â¶Àµ¶	n	´òÁÔÊ±ÃÔÂ·ÁË
-8004	Ç°Ğ©ÈÕ×Ó	n	n	ÎÒµÄÒ»¸öÅóÓÑÂ½Ğã²Å	n	Ñ°ÈË¸´³ğÊ±ÃÔÂ·ÁË
-8005	Ç°Ò»¶ÎÊ±¼ä	n	n	ÎÒµÄÅóÓÑÎäÁÖÃË´«ÈË	n	ĞŞÁ¶Ê±ÍüÁË»ØÀ´µÄÂ·ÁË
-8006	n	n	n	ÎÒµÄÅóÓÑÌÆÃÅÕÆÃÅ	n	Ñ°ÕÒËû¶ªÊ§µÄÂíÊ±ÃÔÂ·ÁË
-8007	n	n	n	ÎÒµÄÅóÓÑÎäµ±ÕÆÃÅ	n	n
-8008	n	n	n	ÎÒµÄÅóÓÑÌìÍõ°ïÖ÷	n	n
+8001	mÊy ngµy tr­íc	n	n	mét ng­êi b¹n Nam Cung H¹ Vò 	n	lóc ®i ch¬i l¹c ®­êng
+8002	h«m qua	n	n	mét ng­êi b¹n Nam Cung TiÓu Vò 	n	Khi m¶i lo tØ ®Êu víi ng­êi quªn mÊt lµm sao ®Ó ®i ra. 
+8003	h«m kia	n	n	mét ng­êi b¹n ta lµ C« §éc §ao	n	khi ®i s¨n bŞ l¹c ®­êng
+8004	vµi ngµy tr­íc	n	n	mét ng­êi b¹n ta lµ Lôc Tó Tµi	n	l¹c ®­êng khi t×m ng­êi phôc thï 
+8005	1 kho¶ng thêi gian tr­íc	n	n	b¹n ta Vâ L©m TruyÒn Nh©n	n	tu luyÖn quªn mÊt ®­êng quay vÒ 
+8006	n	n	n	b¹n ta Ch­ëng M«n §­êng M«n	n	l¹c ®­êng lóc t×m ngùa bŞ mÊt
+8007	n	n	n	b¹n ta Ch­ëng M«n Vâ §ang	n	n
+8008	n	n	n	b¹n ta Bang chñ Thiªn V­¬ng	n	n
 8009	n	n	n	n	n	n
 8010	n	n	n	n	n	n
 8011	n	n	n	n	n	n

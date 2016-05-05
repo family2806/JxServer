@@ -1,9 +1,9 @@
 TextID	When	Where	Who	Why1	Why2	What
-8001	ºÜ¾ÃÒÔÇ°	n	ÓĞÒ»Î»´óÏÀËµ¹ı	ÏëÒª³ÉÎª¾ø¶¥µÄÎäÁÖ¸ßÊÖ	n	Ã»ÓĞÒ»¶¨·İÁ¿µÄ
-8002	ÎÒ¼ÇµÃÔÚÊ®¶àÄêÇ°	n	ÓĞÒ»Î»ÎäÁÖÖÁ×ğËµ¹ı	ÏëÒª³ÉÎªÍòÈËÕ°ÑöµÄÏÀÊ¿	n	Ã»ÓĞ´ïµ½Ò»¶¨ÊıÁ¿µÄ
-8003	n	n	ÓĞÒ»Î»ÃûÕğ½­ºşµÄ¸ßÊÖÔø¾­Ëµ¹ı	ÏëÒª³Æ°ÔÎäÁÖ	n	n
-8004	n	n	ÓĞÒ»Î»Ê¥ÈËÔø¾­Ëµ¹ı	ÏëÒªµÃµ½½­ºşµÚÒ»ÈËµÄ³ÆºÅ	n	n
-8005	n	n	n	ÏëÒªÍê³ÉÊÕ¸´ÎÒ³¯½®ÍÁµÄ´óÒµ	n	n
+8001	ngµy x­a rÊt l©u	n	cã vŞ ®¹i hiÖp ®· tõng nãi	muèn trë thµnh Cao thñ vâ l©m tuyÖt ®Ønh	n	kh«ng cã ph©n l­îng nhÊt ®Şnh
+8002	ta nhí m­êi mÊy n¨m tr­íc	n	cã vŞ Vâ l©m chİ t«n tõng nãi	muèn trë thµnh hiÖp sÜ ®­îc mu«n ng­êi ng­ìng mé 	n	kh«ng ®¹t ®­îc sè l­îng nhÊt ®Şnh
+8003	n	n	cã vŞ cao thñ danh chÊn giang hå tõng nãi	muèn x­ng b¸ vâ l©m 	n	n
+8004	n	n	cã vŞ qu¸i nh©n tõng nãi	muèn ®¹t ®­îc danh hiÖu lµ ng­êi ®Ö nhÊt giang hå 	n	n
+8005	n	n	n	muèn hoµn thµnh ®¹i nghiÖp thu phôc Hoµng TriÒu C­¬ng Thæ 	n	n
 8006	n	n	n	n	n	n
 8007	n	n	n	n	n	n
 8008	n	n	n	n	n	n

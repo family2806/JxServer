@@ -1,22 +1,22 @@
 TaskName	AwardType	Genre	Detail	Particular	Level	GoodsFive	Quality	GoodsNum	MoneyNum	ExpNum	ReputeNum	AwardTask	SelectEvent	ArrayID	ArrayRate	AwardText
-ÈÎÎñÃû³Æ	½±ÀøÀàĞÍ	×ÜÀà	·ÖÀà	Ï¸Àà	µÈ¼¶	ÎåĞĞ	»Æ½ğ×°±¸	ÎïÆ·ÊıÁ¿	½ğÇ®	¾­Ñé	ÉùÍû	¿ªÊ¼ÈÎÎñÃû³Æ	ÔÚÊÂ¼şÀïËæ»úÑ¡Ôñ	Êı×éID£¬ÏŞ3¸ö	Êı×éÄÚµÄ¸ÅÂÊ£¨%£©	½±ÀøÎÄ×Ö
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	¾­Ñé									1000				1	99	1000¾­Ñé
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	Ëæ»úÈÎÎñ¾íÖá													1	1	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_´äÑÌºÎÄºÑ©	¾­Ñé									5000						5000¾­Ñé
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	¾­Ñé									10000				1	98	10000¾­Ñé
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	Ëæ»úÈÎÎñ¾íÖá													1	2	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_ÏåÑôÒ©µêÀÏ°å	¾­Ñé									15000						15000¾­Ñé
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	¾­Ñé									5000				1	98	5000¾­Ñé
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	Ëæ»úÈÎÎñ¾íÖá													1	2	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_³É¶¼Ìú½³Ñ§Í½	¾­Ñé									10000						10000¾­Ñé
-Ëæ»ú_¶Ô»°_³É¶¼ĞÁ¶şÉô	¾­Ñé									8000				1	96	8000¾­Ñé
-Ëæ»ú_¶Ô»°_³É¶¼ĞÁ¶şÉô	Ëæ»úÈÎÎñ¾íÖá													1	4	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_³É¶¼ĞÁ¶şÉô	¾­Ñé									12000						12000¾­Ñé
-Ëæ»ú_¶Ô»°_ÑïÖİæäÕ¾æä¹Ù	¿ªÊ¼ÈÎÎñ											Ëæ»ú_¶Ô»°_ÑïÖİæäÕ¾æä¹Ù_01				
-Ëæ»ú_¶Ô»°_ÑïÖİæäÕ¾æä¹Ù_01	¾­Ñé									5000				1	90	5000¾­Ñé
-Ëæ»ú_¶Ô»°_ÑïÖİæäÕ¾æä¹Ù_01	Ëæ»úÈÎÎñ¾íÖá													1	10	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_ÑïÖİæäÕ¾æä¹Ù_01	¾­Ñé									10000						10000¾­Ñé
-Ëæ»ú_¶Ô»°_ÑïÖİÉò·ç	¿ªÊ¼ÈÎÎñ											Ëæ»ú_¶Ô»°_ÑïÖİÉò·ç_01				
-Ëæ»ú_¶Ô»°_ÑïÖİÉò·ç_01	¾­Ñé									5000				1	90	5000¾­Ñé
-Ëæ»ú_¶Ô»°_ÑïÖİÉò·ç_01	Ëæ»úÈÎÎñ¾íÖá													1	10	Ò»¸öÈÎÎñ¾íÖá
-Ëæ»ú_¶Ô»°_ÑïÖİÉò·ç_01	¾­Ñé									10000						10000¾­Ñé
+Tªn nhiÖm vô 	Lo¹i h×nh phÇn th­ëng	Tæng lo¹i	Ph©n lo¹i	Lo¹i nhá 	®¼ng cÊp	Ngò Hµnh	Trang bŞ Hoµng Kim	Sè l­îng vËt phÈm	TiÒn	kinh nghiÖm 	Danh väng	Tªn nhiÖm vô b¾t ®Çu	Chän ngÉu nhiªn trong sù kiÖn	Nhãm sè ID, tèi ®a 3	Tû lÖ (%) trong nhãm sè 	tªn phÇn th­ëng
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	kinh nghiÖm 									1000				1	99	1.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	1	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_Thóy Yªn Hµ Mé TuyÕt	kinh nghiÖm 									5000						5.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	kinh nghiÖm 									10000				1	98	10.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	2	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i__ Chñ d­îc ®iÕm (T­¬ng D­¬ng) 	kinh nghiÖm 									15000						15.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	kinh nghiÖm 									5000				1	98	5.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	2	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_Häc trß thî rÌn (Thµnh §«) 	kinh nghiÖm 									10000						10.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_ T©n NhŞ ThÈm (Thµnh §«) 	kinh nghiÖm 									8000				1	96	8.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_ T©n NhŞ ThÈm (Thµnh §«) 	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	4	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_ T©n NhŞ ThÈm (Thµnh §«) 	kinh nghiÖm 									12000						12.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i__DŞch Quan_D­¬ng Ch©u	B¾t ®Çu nhiÖm vô 											NgÉu nhiªn_§èi tho¹i__DŞch Quan_D­¬ng Ch©u_01				
+NgÉu nhiªn_§èi tho¹i__DŞch Quan_D­¬ng Ch©u_01	kinh nghiÖm 									5000				1	90	5.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i__DŞch Quan_D­¬ng Ch©u_01	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	10	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i__DŞch Quan_D­¬ng Ch©u_01	kinh nghiÖm 									10000						10.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) 	B¾t ®Çu nhiÖm vô 											NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01				
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01	kinh nghiÖm 									5000				1	90	5.000 ®iÓm kinh nghiÖm 
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01	NgÉu nhiªn_MËt ®å nhiÖm vô 													1	10	1 MËt ®å nhiÖm vô 
+NgÉu nhiªn_§èi tho¹i_ThÈm Phong (D­¬ng Ch©u) _01	kinh nghiÖm 									10000						10.000 ®iÓm kinh nghiÖm 

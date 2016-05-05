@@ -1,8 +1,8 @@
 TYPE	NAME	DESC	COEFFICIENT	OPEN_ICON	CLOSE_ICON	UNFOUNDED_ICON	SCRIPT
-1	±ø¼×·»	ÀûÓÃÕò°ïÖ®Ê¯¸½ÒÔÆä´òÔì¹¤ÒÕ¿ÉÌá¸ßÌáÈ¡ÊôÐÔ¿óÊ¯¡¢ÏâÇ¶×Ï×°¡¢´òÔì»Æ½ð×°±¸µÄ³É¹¦¸ÅÂÊ¡£	1.4	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_1.spr	\script\tong\workshop\ws_bingjia.lua
-2	Ìì¹¤·»	ÆäÎ¬ÐÞ¼¼ÒÕ²»µ«¿ÉÒÔÊ¹ÐÞÀí»¨·Ñ¸üÉÙµÄÇ®£¬»¹¿ÉÒÔÇ¿»¯ÐÞÀí×°±¸¡£	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_1.spr	\script\tong\workshop\ws_tiangong.lua
-3	Ãæ¾ß·»	·ÂÖÆÒ×ÈÝÊõÊ¿Ôø¾­··ÂôµÄÃæ¾ß£¬¿ÉÒÔÓÃ½ÏÉÙµÄÍ­Ç®Âòµ½£»»¹¿ÉÓÃ¹±Ï×¶È¹ºÂò°ï»á×ÔÖÆµÄÃæ¾ß¡£	1.2	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_1.spr	\script\tong\workshop\ws_mianju.lua
-4	ÊÔÁ¶·»	¿ÉÌá¹©Ë«±¶¾­Ñé£¬¸¨Öú°ï»á³ÉÔ±ºÍÍ¬°éµÄÐÞÁ¶¡£	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_1.spr	\script\tong\workshop\ws_shilian.lua
-5	ÌìÒâ·»	²ú³öÈÎÎñÁîÅÆ£¬Ê¹ÓÃºó¿ÉÒÔËæ»ú½Óµ½¸÷ÖÖÈÎÎñ¡£	0.8	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_1.spr	\script\tong\workshop\ws_tianyi.lua
-6	ÀñÎï·»	·¢·Å°ï»áÉñÃØºì°ü£¬Ìá¹©¸ø°ï»á³ÉÔ±¾ªÏ²µÄÀñÎï¡£	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_1.spr	\script\tong\workshop\ws_liwu.lua
-7	»î¶¯·»	Îª°ï»á³ÉÔ±°²ÅÅÓéÀÖ¡¢ÏûÇ²µÄ»î¶¯¡£<enter><color=orange>²ú³öBossÕÙ»½·û<enter>ÕÐÄ¼µÜ×Ó»î¶¯<enter>´òÄêÊÞ»î¶¯<enter>ÊÕ¼¯Îï×Ê»î¶¯<color>	0.6	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_1.spr	\script\tong\workshop\ws_huodong.lua
+1	Khu Binh gi¸p 	TrÊn bang chi th¹ch gióp t¨ng cao x¸c suÊt thµnh c«ng khi luyÖn ®¸ thuéc tÝnh, chÕ t¹o trang bÞ tÝm vµ trang bÞ hoµng kim.	1.4	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\±ø¼×·»_1.spr	\script\tong\workshop\ws_bingjia.lua
+2	Khu Thiªn C«ng 	Kü n¨ng söa ch÷a kh«ng nh÷ng gióp gi¶m chi phÝ söa mµ cßn cã thÓ gióp gia cè trang bÞ.	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ìì¹¤·»_1.spr	\script\tong\workshop\ws_tiangong.lua
+3	Khu MÆt n¹ 	MÆt n¹ pháng chÕ theo mÆt n¹ cña DÞ Dung ThuËt Sü, vµ còng cã thÓ dïng ®iÓm cèng hiÕn ®Ó ®æi.	1.2	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\Ãæ¾ß·»_1.spr	\script\tong\workshop\ws_mianju.lua
+4	Khu LuyÖn tËp	Cã thÓ gióp nh©n ®«i kinh nghiÖm.	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÊÔÁ¶·»_1.spr	\script\tong\workshop\ws_shilian.lua
+5	Khu Thiªn ý 	ChÕ t¹o c¸c lÖnh bµi nhiÖm vô, sau khi sö dông sÏ ngÉu nhiªn tiÕp nhËn c¸c nhiÖm vô.	0.8	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÌìÒâ·»_1.spr	\script\tong\workshop\ws_tianyi.lua
+6	Khu LÔ vËt 	Ph©n ph¸t thÇn bÝ hång bao vµ lÔ phÈm cho bang chóng.	1	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\ÀñÎï·»_1.spr	\script\tong\workshop\ws_liwu.lua
+7	Khu ho¹t ®éng 	Tæ chøc c¸c ho¹t ®éng thó vÞ cho bang chóng. <enter><color=orange>Ho¹t ®éng chiªu mé ®Ö tö<enter>Ho¹t ®éng ®¸nh niªn thó<color>	0.6	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_0.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_2.spr	\spr\Ui3\°ï»á½çÃæ\×÷·»ÐÅÏ¢Ò³\»î¶¯·»_1.spr	\script\tong\workshop\ws_huodong.lua

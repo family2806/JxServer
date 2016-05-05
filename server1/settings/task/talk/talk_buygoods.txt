@@ -1,21 +1,21 @@
 TextID	When	Where	Who	Why1	Why2	What
-8001	×òÌì	n	Ãû½ÐÂíÔ±Íâ	n	n	¼Û¸ñÊ®·Ö±ãÒË
-8002	Ç°Ìì	n	Ãû½ÐÐì×¨Ô±	n	n	ÖÊÁ¿ÌØ±ðºÃ
-8003	¸Õ¸Õ	n	Ãû½ÐÀî´ó×ì	n	n	ÕýÔÚ´ò°ËÕÛ
-8004	n	n	Ãû½ÐÖìµÂ¸£	n	n	ÕýÔÚ´òÆßÕÛ
-8005	n	n	×Ô³ÆÎªÂ½Ðã²Å	n	n	ÕýÔÚÇå²ÖË¦Âô
-8006	n	n	×Ô³ÆÎªÁÎ½«¾ü	n	n	ÕýÔÚ´óË¦Âô
-8007	n	n	×Ô³ÆÎªÎäÁÖÃË´«ÈË	n	n	ÊÇÓÉÃûÊ¦Ð°ÃÅËùÔì
-8008	n	n	×Ô³ÆÎªÌìÍõ°ïµÜ×Ó	n	n	ÄËº±¼ûµÄ¼«Æ·
-8009	n	n	×Ô³ÆÎªÎäµ±ÅÉµÜ×Ó	n	n	ÄËÎïÃÀ¼ÛÁ®Ö®¼«Æ·
-8010	n	n	×Ô³ÆÎª¶À¹Âµ¶	n	n	ÊÇÓÉÃû½³¸É½¬ËùÔì
-8011	n	n	×Ô³ÆÎªÌÆÃÅÕÆÃÅ	n	n	ÄËÉÏ¹Åº±¼ûµÄÆæÎï
-8012	n	n	×Ô³ÆÎªÎäµ±ÕÆÃÅ	n	n	n
-8013	n	n	×Ô³ÆÎªÀ¥ÂØÅÉ´óµÜ×Ó	n	n	n
-8014	n	n	×Ô³ÆÎªÌì»úËã	n	n	n
-8015	n	n	×Ô³ÆÎªÍêÑÕ²»ÁÒ	n	n	n
-8016	n	n	×Ô³ÆÎªÎ÷·½Çó°Ü	n	n	n
-8017	n	n	×Ô³ÆÎªÄÏ¹¬·ÉÏÉ	n	n	n
-8018	n	n	×Ô³ÆÎªÌÆÃÅ¸±ÕÆÃÅ	n	n	n
-8019	n	n	×Ô³ÆÎªÌìÈÌÊ×Ï¯½ÌÍ½	n	n	n
-8020	n	n	×Ô³ÆÎª¹Â¶À³¤Ç¹	n	n	n
+8001	h«m qua	n	tªn gäi M· Viªn ngo¹i	n	n	gi¸ hÕt søc rÎ 
+8002	h«m kia	n	tªn gäi Tõ Chuyªn Viªn	n	n	chÊt l­îng rÊt tèt
+8003	võa míi	n	tªn gäi Lý §¹i Chñy	n	n	®ang ®¸nh b¸t chiÕt
+8004	n	n	tªn gäi Chu §øc Phóc	n	n	®ang ®¸nh thÊt chiÕt
+8005	n	n	tù x­ng lµ Lôc Tó Tµi	n	n	®ang vÐt kho b¸n hÕt
+8006	n	n	tù x­ng lµ Liªu T­íng Qu©n	n	n	®ang bu«n b¸n lín
+8007	n	n	x­ng lµ Vâ L©m TruyÒn Nh©n	n	n	lµ do danh s­ tµ m«n chÕ t¹o
+8008	n	n	tù x­ng lµ §Ö tö Thiªn V­¬ng 	n	n	vËt phÈm hiÕm thÊy
+8009	n	n	x­ng lµ ®Ö tö Vâ §ang 	n	n	vËt phÈm ®¾t gi¸ 
+8010	n	n	x­ng lµ §éc C« §ao	n	n	lµ do thî rÌn chÕ t¹o
+8011	n	n	x­ng lµ Ch­ëng M«n §­êng M«n	n	n	k× vËt hiÕm thÊy
+8012	n	n	X­ng lµ Ch­ëng m«n Vâ §ang	n	n	n
+8013	n	n	Tù x­ng lµ §¹i §Ö Tö C«n L«n Ph¸i	n	n	n
+8014	n	n	Tù x­ng lµ Thiªn C¬ To¸n	n	n	n
+8015	n	n	Tù x­ng lµ Hoµn Nhan BÊt LiÖt	n	n	n
+8016	n	n	Tù x­ng lµ T©y Ph­¬ng CÇu B¹i	n	n	n
+8017	n	n	Tù x­ng lµ Nam Cung Phi Tiªn	n	n	n
+8018	n	n	tù x­ng lµ Phã Ch­ëng M«n D­êng M«n	n	n	n
+8019	n	n	tù x­ng lµ gi¸o ®Çu Thiªn NhÉn Gi¸o	n	n	n
+8020	n	n	tù x­ng lµ C« §éc Tr­êng Th­¬ng	n	n	n

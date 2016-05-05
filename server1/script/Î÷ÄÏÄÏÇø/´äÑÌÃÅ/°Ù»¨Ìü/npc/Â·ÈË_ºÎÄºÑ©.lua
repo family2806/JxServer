@@ -16,51 +16,51 @@ function main()
 		if (UTask_cy == 30*256+40) and (HaveItem(2) == 1) and (HaveItem(3) == 1) and (HaveItem(4) == 1) then
 			L30_prise()
 		elseif ((UTask_cy == 30*256) and (GetLevel() >= 30)) then		--30¼¶ÈÎÎñÆô¶¯
-			Talk(1,"L30_get","²»¾ÃÇ°ÎÒ»úÔµÇÉºÏ£¬µÃµ½ÁËÒ»ÖÖ½Ð×ö¡°ÓðÒÂÄÞÉÑ¡±µÄ²è»¨µÄÖÖ×Ó£¬ÕâÖÖ²è»¨Æ·ÖÖÊ®·ÖÕäÏ¡£¬ÅàÓýÆðÀ´Ò²Ê®·ÖÀ§ÄÑ¡£Èç¹ûÃ»ÓÐÕÆÎÕÃØ¾÷£¬ÊÇºÜÄÑ³É¹¦µÄ£¬ÎÒÏÖÔÚÕýÔÚ·¸³îÄØ! ")
+			Talk(1,"L30_get","Tr­íc ®©y kh«ng l©u ta cã duyªn may gÆp mét lo¹i hoa trµ gäi lµ ' Vò Y Nghª Th­êng', lo¹i hoa trµ nµy v« cïng quÝ hiÕm vµ khã trång. NÕu nh­ kh«ng n¾m v÷ng ®­îc bÝ quyÕt, th× rÊt khã thµnh c«ng, ta b©y giê ®ang lo l¾ng ®©y! ")
 		elseif (UTask_cy > 30*256) and (UTask_cy < 40*256) then
-			Talk(1,"","ÔõÃ´£¿ÎÒÒ¯Ò¯ÒÑ¾­¸æËßÄãÖÖ'ÓðÒÂÄÞÉÑ'µÄ·½·¨ÁË?")
+			Talk(1,"","ThÕ nµo? ¤ng ta ®· nãi víi ng­¬i c¸ch trång 'Vò Y Nghª Th­êng' ch­a?")
 		elseif (UTask_cy >= 40*256) then
-			Talk(1,"","ÓðÒÂÄÞÉÑ»¨¿ªºÜ¿ì£¬¶¼ÊÇºóÒ»Æð¿´²è»¨")
+			Talk(1,"","Vò Y Nghª Th­êng rÊt mau ra hoa, ®Õn lóc ®ã cïng nhau xem hoa trµ! ")
 		else
-			Talk(1,"","Ò¯Ò¯ËûÒ²Ï²»¶¿´²è»¨Âð?")
+			Talk(1,"","¤ng Êy còng thÝch xem hoa trµ sao?")
 		end
 	elseif(Uworld121 == 10) and (HaveItem(373) == 1) then		--ÅÐ¶ÏÈÎÎñÊÇ·ñÆô¶¯ÒÔ¼°±³°üÖÐÊ±ºòÓÐÖÜÐ¡Èª¼ôµ¶
-		Talk(8,"Uworld121_lose","ºÎÏÉ×Ó£¡ÕâÀïÓÐÒ»°ÑÕÅÐ¡Èª¼ôµ¶","Ð»Ð»£¡","²»¿ÍÆø£¡ÄÜ¿´µ½ÏÉ×ÓµÄÈÝÃ²ÊÇÎÒµÄÈÙÐÒ.","(Äã»¹Òª¼ÌÐøËµ£¬¿´¼ûÄºÑ©ÄÃÆð¼ôµ¶£¬ÏñÔÆÐãÒ»Ñù¼ôÁË¼¸´Î)","ºÎ¹ÃÄï£¡Äã×öÊ²Ã´£¿","ÎÒºÍÄãÓÖ²»ÈÏÊ¶£¬ÄãÕâÃ´Ô¶À´¸øÎÒËÍ¼ôµ¶£¬ÊÇËû¶Ô²»¶Ô£¿","ËûÊÇË­?","¡­¡­ÄÜ°ïÄºÑ©Ò»¸öÃ¦Âð?")
+		Talk(8,"Uworld121_lose","Hµ Tiªn Tö! ë ®©y cã 1 c©y kÐo Tr­¬ng TiÓu TuyÒn.","C¸m ¬n!","§õng kh¸ch s¸o! §­îc thÊy diÖn m¹o cña Tiªn Tö lµ vinh h¹nh cña t¹i h¹."," (B¹n vÉn ph¶i tiÕp tôc nãi, thÊy Mé TuyÕt vung kÐo lªn, gièng nh­ V©n Tó ph¸t kÐo nhiÒu lÇn) ","Hµ c« n­¬ng! C« ë ®©y lµm g×?"," Ta vµ ng­¬i vèn kh«ng quen biÕt nhau, ng­¬i l¹i b»ng lßng nhËn lêi ®i xa ngµn dÆm ®em kÐo tÆng ta, cßn «ng Êy th× sao?","¤ng ta lµ ai?",".....Cã thÓ gióp Mé TuyÕt thªm mét chuyÖn ®­îc kh«ng?")
 	elseif(Uworld121 == 10 ) then										--Èç¹û½ÓÊÜÁËÈÎÎñµ«Ã»ÓÐÈÎÎñµÀ¾ß¼ôµ¶
-		Talk(1,"","Õâ°Ñ¼ôµ¶ÊÇÎÒÐÁ¿àÇóÕÅÐ¡ÈªÊ¦²®×öµÄ£¬Äã¿´¿´ÄÜ²»ÄÜÕÒµ½ËûµÄ×¡´¦?.")
+		Talk(1,"","C©y kÐo nµy lµ ta nhê Tr­¬ng TiÓu TuyÒn s­ b¸ chÞu khã rÌn cho ta, ng­¬i xem cã ph¶i ®· ®Ó ë chç «ng ta hay kh«ng?.")
 	elseif (Uworld121 == 20) and (HaveItem(10) == 0) then		-- Í··¢¶ªÁË
 		AddEventItem(10)
-		Msg2Player("ÓÖÕÒµ½Ò»´éÍ··¢")
-		Talk(1,"","Íü´øÍ··¢ÁË.")
+		Msg2Player("L¹i t×m ®­îc mét chïm tãc ")
+		Talk(1,"","Quªn mang theo tãc råi.")
 	elseif (Uworld121 >= 20) and (Uworld121 < 30) then			--ÔÚÓëÑîºþ¶Ô»°Ç°
-		Talk(1,"","ÇëÄã´«»°¸øÄºÑ©¡£¶àÐ»")
+		Talk(1,"","Hy väng ng­¬i chuyÓn lêi giïm Mé TuyÕt. Xin ®a t¹!")
 	elseif(Uworld121 == 30) then
-		Talk(8,"Uworld121_Step4","ºÎ¹ÃÄï£¡²»ÒªÔÙËµÁË£¬ÎÒÖªµÀÁË.","ºÎ¹ÃÄïÄãÎó»áÁË£¬À¥ÂØÆóÍ¼°ÔÍõ£¬ÑîºþÊÇÒªµÈËùÓÐÊÂÇé½áÊøÁËÔÙÉÏ´äÑÌ¼ûÄã.","ËûÕæµÄ´ðÓ¦ÎÒµÄÒªÇóÁËÂð?",".....Õâ¸öÊÂÇéËû²»»áËµµÄ.","¹þ¹þ¹þ£¡ºÎÄºÑ©°¡ºÎÄºÑ©£¬ÄãÔõÃ´ÕâÃ´ÌìÕæ°¡?","ºÎ¹ÃÄï.....","Ëû³öÉíÊÇ»¹Ã»ÓÐÎÒÄØ£¬ÓÐÎÒÊÇËûÒÑ¾­ÀÏÁË!.....")
+		Talk(8,"Uworld121_Step4","Hµ c« n­¬ng!","Kh«ng cÇn nãi n÷a! Ta hiÓu råi.","Hµ c« n­¬ng ®· hiÓu lÇm råi, C«n L«n m­u ®å b¸ v­¬ng, D­¬ng H÷u sø ®îi mäi viÖc kÕt thóc råi sÏ lªn Thuý Yªn M«n gÆp nµng.","H¾n thËt sù cã ®¸p øng yªu cÇu cña ta kh«ng?",".....ViÖc nµy th× «ng ta kh«ng nãi.","Ha ha ha! Hµ Mé TuyÕt ¬i Hµ Mé TuyÕt, t¹i sao ng­¬i l¹i m¬ méng h·o huyÒn nh­ vËy?","Hµ c« n­¬ng.....")
 	elseif(Uworld121 == 40) and (HaveItem(376) == 0) then
-		Talk(1,"","Ã»ÓÐÄÃÐå¾î£¬ÇðÓ¢Ò»¶¨²»»áÂúÒâµÄ.")
+		Talk(1,"","Ch­a cã lÊy kh¨n thªu, Kh©u Anh ch¾c lµ kh«ng ®Ó ý ®Õn c« n­¬ng råi.")
 		AddEventItem(376)
-		Msg2Player("¶áÀ´Ðå¾î. ")
+		Msg2Player("§o¹t l¹i kh¨n thªu. ")
 	else
-		Talk(1,"","ÎÒ×î´óµÄÃÎÏë¾ÍÊÇÖÖ³öÌìÏÂ×îÃÀµÄ²è»¨")
+		Talk(1,"","T©m nguyÖn lín nhÊt cña ta lµ trång ®­îc hoa trµ ®Ñp nhÊt thiªn h¹.")
 	end
 end;
 
 function L30_get()
-	Say("ÌýËµ´óÀí³ÇÓÐÒ»¸öÐÕ¶ÎµÄ»¨Å©£¬ÊÇÖÖ²è»¨µÄÄÜÊÖ£¬¿ÉÊÇËûÐÔÇé¹Å¹Ö£¬ºÜ¶àÈËÇë½ÌËû¶¼ÎÞ¹¦¶ø·µ",2,"µÈÎÒÏëÏë°ì·¨°ïÄã/L30_get_yes","Ã¿¸öÈË¶¼»áÓöµ½×è°­£¬¿ÖÅÂÎÒÒ²Ã»ÓÐÆäËû°ì·¨. /L30_get_no")
+	Say(" Nghe nãi ë thµnh §¹i Lý cã mét ng­êi trång hoa hä §oµn, biÕt trång hoa trµ. Nh­ng mµ tÝnh t×nh h¾n kú l¹, cã rÊt nhiÒu ng­êi ®Õn thØnh gi¸o, nh­ng ®Òu ph¶i uæng c«ng quay vÒ.",2,"§Ó ta nghÜ c¸ch gióp ng­¬i t×m c¸ch /L30_get_yes","Mäi ng­êi ®Òu ®ang gÆp trë ng¹i, e r»ng ta còng kh«ng cã c¸ch nµo kh¸c. /L30_get_no")
 end;
 
 function L30_get_yes()
-	Talk(1,"","Õæ¸ÐÐ»Äã!")
+	Talk(1,"","ThËt c¸m ¬n ng­¬i!")
 	SetTask(6,30*256+10)
-	AddNote("ÔÚ´óÀí¼û¶ÎÀÏÅ©Çë½ÌÖÖÖ²ÓðÒÂÄÞÉÑµÄ·½·¨. ")
-	Msg2Player("ÔÚ´óÀí¼û¶ÎÀÏÅ©Çë½ÌÖÖÖ²ÓðÒÂÄÞÉÑµÄ·½·¨. ")
+	AddNote("GÆp §oµn l·o n«ng ë thµnh §¹i Lý ®Ó thØnh gi¸o ph­¬ng ph¸p nu«i d­ìng Vò Y Nghª Th­êng. ")
+	Msg2Player("GÆp §oµn l·o n«ng ë thµnh §¹i Lý ®Ó thØnh gi¸o ph­¬ng ph¸p nu«i d­ìng Vò Y Nghª Th­êng. ")
 end;
 
 function L30_get_no()
 end;
 
 function L30_prise()
-	Talk(1,"","Ô­À´»¹ÓÐÕâÑùµÄÃØ¾÷£¬ÕæÊÇÐ»Ð»ÄãÁË¡£ÎÒÉýÄãÎªÒ»Æ·»¨Ê¹°É")
+	Talk(1,"","Ho¸ ra vÉn cßn bÝ quyÕt nh­ vËy, ®a t¹ tiÓu muéi! Ta phong muéi lµ NhÊt PhÈm Hoa Sø.")
 	SetTask(6,40*256)
 	SetRank(34)
 	DelItem(2)
@@ -69,26 +69,26 @@ function L30_prise()
 --	AddMagic(105)
 --	AddMagic(113)
 	add_cy(40)			-- µ÷ÓÃskills_table.luaÖÐµÄº¯Êý£¬²ÎÊýÎªÑ§µ½¶àÉÙ¼¶¼¼ÄÜ¡£
-	Msg2Player("¹§Ï²Äã£¡±»·âÎªÒ»Æ·»¨Ê¹£¡Ñ§»áÎä¹¦Óê´òÀæ»¨£¬¸¡ÔÆÉ¢Ñ©. ")
-	AddNote("¶áµÃÖÖÓðÒÂÄÞÉÑµÄÃØ¾÷£¬Íê³ÉÈÎÎñ£¬±»·âÎª£ºÒ»Æ·»¨Ê¹")
+	Msg2Player("Chóc mõng b¹n! §· ®­îc phong thµnh NhÊt PhÈm Hoa Sø! Häc xong vâ c«ng Vò §¶ Lª Hoa, Phï V©n T¸n TuyÕt. ")
+	AddNote("§o¹t ®­îc bÝ quyÕt trång hoa Vò Y Nghª Th­êng, hoµn thµnh nhiÖm vô, ®­îc phong lµ: NhÊt PhÈm Hoa Sø. ")
 end;
 
 function Uworld121_lose()
-	Talk(5,"","¹ÃÄïÖ±Ëµ.","»¹ÇëÄã°ÑÕâÍ··¢´ø¸øÌìÍõ°ïµÄÓÒÊ¹Ñîºþ£¬¸æËßËûÈç¹û7ÔÂÖ®Ç°²»À´´äÑÌÕÒÎÒµÄ»°´Ó½ñÍùºóÎÒºÍËû¾ÍÃ»ÓÐ»ú»áÔÙ¼ûÁË.","¹ûÈ»ÊÇÑîºþ£¡ÑîÓÒÊ¹ÎÄ²ÅÎäµÂÖ»ÊÇÒ»Ê±µÄÑ¡Ôñ£¬ÊÇÈËÖÐÁú·ï£¬ºÎ¹ÃÄïÐÝÏ¢Ò»ÏÂ","ÎÒÒ²²»Ïë°ïÄã£¬ºô....","ºÃ°É£¡ÎÒ×ß.")
+	Talk(5,"","C« n­¬ng cø nãi.","Xin ng­¬i h·y ®­a mí tãc nµy cho H÷u Sø D­¬ng Hå cña Thiªn V­¬ng Bang, nãi víi «ng Êy r»ng nÕu tr­íc th¸ng 7 «ng Êy kh«ng ®Õn Thuý Yªn m«n th× tõ ®©y vÒ sau ta vµ h¾n xem nh­ kh«ng cßn c¬ héi gÆp l¹i.","Qu¶ nhiªn lµ D­¬ng Hå! D­¬ng H÷u Sø v¨n tµi vâ ®øc chØ lµ sù lùa chän nhÊt thêi, lµ nh©n trung long phông. Hµ c« n­¬ng xin nghÜ l¹i.","Ng­¬i còng kh«ng muèn gióp ta? Hu hu...."," §­îc råi! Ta ®i.")
 	DelItem(373)
 	AddEventItem(10)
-	Msg2Player("ÌæºÎÄºÑ©´ø»°¸øÑîºþ£¬µÃµ½ºÎÄºÑ©µÄÒ»Æ¥Ë¿³ñ. ")
-	AddNote("°ïºÎÄºÑ©´ø»°¸øÑîºþ")
+	Msg2Player("NhËn lêi Hµ Mé TuyÕt, gióp c« Êy chuyÓn lêi ®Õn D­¬ng Hå, nhËn ®­îc mét khóc lôa cña Hµ Mé TuyÕt. ")
+	AddNote("NhËn lêi Hµ Mé TuyÕt, gióp c« Êy chuyÓn lêi ®Õn D­¬ng Hå. ")
 	SetTask(121,20) --ÈÎÎñ±äÁ¿ÉèÖÃÎª20
 end
 
 function Uworld121_Step4()
-	Talk(4,"Uworld121_sijin",".....?","ËäÈ»Äã²»ÈÊµ«ÊÇÎÒÒ²²»ÄÜ²»Òå¡£ÕâÀïÓÐÒ»¿éÐå¾î£¬Äã´øËûÈ¥ÕÒÀ¥ÂØµÄÇðÓ¢.ÎÒ¾Í°ïËû×îºóÒ»´Î¡£","ÎÒÈ¥.....Ï£ÍûÏÉ¹ÃÏëÇå³þ.","±ð¶àËµÁË!")
+	Talk(4,"Uworld121_sijin",".....….","Tuy h¾n bÊt nh©n nh­ng ta còng kh«ng thÓ bÊt nghÜa. ë ®©y cã mét c¸i kh¨n thªu, ng­¬i h·y d¾t h¾n ®i t×m Kh©u Anh C«n L«n ph¸i. Xem nh­ ta gióp h¾n lÇn cuèi cïng.","VËy ta ®i.....mong Tiªn c« nghÜ l¹i."," §õng nhiÒu lêi!")
 end
 
 function Uworld121_sijin()
 	AddEventItem(376)
-	Msg2Player("½ÓÊÜÐå¾î. ")
-	AddNote("ÄÃµ½ºÎÄºÑ©µÄÐå¾î£¬´ø×ÅÈ¥ÕÒÀ¥ÂØµÄÇðÓ¢. ")
+	Msg2Player("NhËn chiÕc kh¨n thªu. ")
+	AddNote("NhËn ®­îc chiÕc kh¨n thªu cña Hµ Mé TuyÕt, ®em ®i t×m Kh©u Anh cña C«n L«n ph¸i. ")
 	SetTask(121,40) --ÈÎÎñ±äÁ¿ÉèÖÃÎª40
 end

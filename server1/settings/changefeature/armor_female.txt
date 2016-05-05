@@ -1,17 +1,17 @@
 Name	Feature	Price
-É®ÒÂ£¨Å®£©	0	600
-ÔÂ°×ôÂôÄ£¨Å®£©	1	600
-Æß±¦ôÂôÄ£¨Å®£©	2	600
-Êñ½õÒÂ	6	600
-ºÚõõôÃ	7	600
-ÃÔ»êÉÑ	8	600
-½õÉÀ	9	600
-ÇàÂŞÉÀ	10	600
-³ÁÏãÉÀ	11	600
-ÏâÌúÅ®¼×	12	600
-ÑªÍ­¼×	13	600
-Åùö¨½ğ·ï¼×	14	600
-ÆÆÂéÒÂ	15	600
-°ÙµüÈ¹	18	600
-ÔÂ»ªÈ¹	19	600
-ÁôÏÉÈ¹	20	600
+Sa Ni phôc	0	600
+NguyÖn B¹ch cµ sa	1	600
+ThÊt B¶o cµ sa 	2	600
+Linh Xµ y	6	600
+Hæ B× y	7	600
+Cöu VÜ B¹ch Hå trang	8	600
+CÈm Sam	9	600
+Thanh La sam	10	600
+TrÇm H­¬ng sam	11	600
+Kh¶m ThiÕt n÷ gi¸p	12	600
+Xİch Nh¹n gi¸p	13	600
+Tİch LŞch Kim Phông gi¸p	14	600
+Ph¸ Ma y	15	600
+B¹ch §iÖp quÇn	18	600
+NguyÖt Hoa quÇn	19	600
+L­u Tiªn QuÇn	20	600

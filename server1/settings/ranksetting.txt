@@ -1,82 +1,90 @@
 RANKID	RANKSTR
-1	É¨µØÉ®
-2	»¤ÔºÎäÉ®
-3	»¤ËÂ½ð¸Õ
-4	»¤·¨ÂÞºº
-5	´«¾­ÂÞºº
-6	·üÄ§ÌìÍõ
-7	µÀÍ¯
-8	ÏÐÉ¢µÀÈË
-9	ÇåÐÞµÀÈË
-10	Ñ²É½µÀÈË
-11	Èë¹ÛµÀÈË
-12	ÕÆ¾­µÀÈË
-13	²¼ÒÂÄá
-14	ÓðÒÂÄá
-15	½õÒÂÄá
-16	°×Á«ÏÉ×Ó
-17	ÇàÁ«ÏÉ×Ó
-18	É¢»¨ÌìÅ®
-19	·÷³¾µÜ×Ó
-20	·î½£µÜ×Ó
-21	×ÏÎ¢»¤·¨
-22	Ì«Î¢»¤·¨
-23	ÌìÎ¢»¤·¨
-24	ÊÚ·ûÌì½«
-25	ÔÓÒÛ
-26	×¯¶¡
-27	»¤Ôº
-28	½×Ç°»¤ÎÀ
-29	Èë¸óµÜ×Ó
-30	ËÄÀÏÃÅÈË
-31	»¨æ¾
-32	ÈýÆ·»¨Ê¹
-33	¶þÆ·»¨Ê¹
-34	Ò»Æ·»¨Ê¹
-35	»¨ÏÉ
-36	»¨¾«
-37	ÎÞ´üµÜ×Ó
-38	Ö´´üµÜ×Ó
-39	Ö´²§µÜ×Ó
-40	Ö´°ôµÜ×Ó
-41	ÁúÍ·
-42	´óÁúÍ·
-43	ÊÌÎÀ
-44	ÊÌÎÀ³¤
-45	ÊØÕ¯º·½«
-46	ÕÆ¶æÍ·Áì
-47	Ë®µÀÍ³Áì
-48	»¤µº½«¾ü
-49	Îå¶¾Í¯×Ó
-50	¶á»êÉ¢ÈË
-51	´ßÃüÊ¹Õß
-52	ºÚ°µÑÖÂÞ
-53	ÎÞâúÂÞÉ²
-54	¹Æ¶¾×ðÕß
-55	É±ÊÖ
-56	ÎÞÓ°É±ÊÖ
-57	ËÀÊ¿
-58	ÓÄÚ¤ËÀÊ¿
-59	ÕÆÆìÊ¹
-60	»¤½ÌÊ¹
-61	ÎÞÃûÐ¡±²
-62	ÎÞÁ¿ÊÍ×ð
-63	ÐþÎäÉñÊÌ
-64	½ð¶¥Ê¥Å®
-65	ÏÉ·ûÕæ¾ý
-66	Ç§ÊÖÉñÎÀ
-67	»¨Éñ
-68	åÐÒ£ÉñØ¤
-69	ÇæÌìÔªË§
-70	ÓÄÚ¤¹íÊ¹
-71	ÈøÂú·¨Íõ
-72	»¤·¨³¤ÀÏ
-73	ÐþÎäÕæÈË
-74	Ê¥Å®
-75	»¤ÅÉÕæ¾ý
-76	Áù¸ó³¤ÀÏ
-77	»¨ÉñÊ¹
-78	¾Å´ü³¤ÀÏ
-79	Õò°ïÔªË§
-80	ÓÄÚ¤¹íÍõ
-81	Ê¥½Ì³¤ÀÏ
+1	T¶o §Þa T¨ng
+2	Hé ViÖn Vâ T¨ng
+3	Hé Tù Kim Cang 
+4	Hé Ph¸p La H¸n
+5	TruyÒn Kinh La H¸n
+6	Phôc Ma Thiªn V­¬ng 
+7	§¹o §ång
+8	Nhµn T¶n §¹o S­ 
+9	Thanh Tu §¹o S­ 
+10	TuÇn S¬n §¹o Nh©n
+11	NhËp Quan §¹o Nh©n
+12	Ch­ëng Kinh §¹o Nh©n
+13	Bè Y Ni
+14	Vò Y Ni
+15	CÈm Y Ni
+16	B¹ch Liªn Tiªn Tö 
+17	Thanh Liªn Tiªn Tö 
+18	T¶n Hoa Thiªn N÷ 
+19	PhÊt TrÇn §Ö Tö 
+20	Phông KiÕm §Ö Tö 
+21	Tö Vi Hé Ph¸p
+22	Th¸i Vi Hé Ph¸p
+23	Thiªn Vi Hé Ph¸p
+24	Thô Phï Thiªn T­íng
+25	T¹p dÞch
+26	Lµng D
+27	Hé ViÖn
+28	Giíi TiÒn Hé VÖ
+29	NhËp C¸c §Ö Tö
+30	Tû L·o M«n Nh©n
+31	Hoa T×
+32	Tam PhÈm Hoa Sø
+33	NhÞ PhÈm Hoa Sø
+34	NhÊt PhÈm Hoa Sø
+35	Hoa Tiªn
+36	Hoa Tinh
+37	V« §¹i §Ö Tö
+38	ChÊp §¹i §Ö Tö
+39	ChÊp B¸t §Ö Tö
+40	ChÊp Bæng §Ö Tö
+41	Long §Çu
+42	§¹i Long §Çu
+43	ThÞ vÖ
+44	 ThÞ vÖ tr­ëng
+45	Thñ Tr¹i H·n T­íng
+46	Ch­ëng §¸ §Çu LÜnh
+47	Thñy §¹o Thèng LÜnh
+48	Hé §¶o T­íng Qu©n
+49	Ngò §éc §ång Tö
+50	§o¹t Hån T¶n Nh©n
+51	Th«i MÖnh Sø Gi¶
+52	H¾c ¸m Diªm La
+53	V« §éng La S¸t
+54	Co §éc T«n Gi¶
+55	S¸t Thñ
+56	V« ¶nh S¸t Thñ
+57	Tö SÜ
+58	U Minh Tö SÜ
+59	Ch­ëng Kú Sø
+60	Hé Gi¸o Sø
+61	V« Danh TiÓu Bèi
+62	V« L­îng Gi¶i T«n
+63	HuyÒn Vâ ThÇn ThÞ
+64	Kim §Ønh Th¸nh N÷
+65	Tiªn Phï Ch©n Qu©n
+66	Thiªn Thñ ThÇn VÖ
+67	Hoa ThÇn
+68	Tiªu Dao ThÇn C¸i
+69	K×nh Thiªn Nguyªn So¸i
+70	U Minh Quû Sø
+71	T¸t M·n Ph¸p V­¬ng
+72	Hé Ph¸p Tr­ëng L·o
+73	HuyÒn Vâ Ch©n Nh©n
+74	Th¸nh n÷
+75	Hé Ph¸i Ch©n Qu©n
+76	Lôc C¸c Tr­ëng L·o
+77	Hoa ThÇn Sø
+78	Cöu §¹i Tr­ëng L·o
+79	TrÊn Bang Nguyªn So¸i
+80	U Minh Quû V­¬ng
+81	Th¸nh Gi¸o Tr­ëng L·o
+82	Hoa S¬n NhËp M«n §Ö Tö
+83	Hoa S¬n ThÝ LuyÖn §Ö Tö
+84	Hoa S¬n Hé VÖ Tr­ëng	
+85	Tø §¹i KiÕm VÖ
+86	Hoa S¬n Hµo KiÖt
+87	Hoa S¬n KiÕm Kh¸ch
+88	Thiªn Tiªn KiÕm ThÇn
+89	V« L­îng Thiªn T«n

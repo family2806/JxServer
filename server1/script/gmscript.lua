@@ -145,13 +145,13 @@ function wulin_signmap2premap( signmapid )
 end
 function wulin_newmatchinfocome(matchtype, map, who, oppt)
 	print("newmatchinfo"..matchtype..","..map..","..who.."vs"..oppt)
---ÃÅÅÉÈüÊ±£¬GLB_MATCHLEAGUEINFO -> GLB_MATCHLEAGUEINFO + 10*2Ö®¼ä´æ·Å£¬Ã¿Ïî±ÈÈüËùÔÚµÄ±¨ÃûµØÍ¼±àºÅ
---µ±who == 9999Ê±£¬±íÊ¾ÃÅÅÉÈü£¬´ËÊ±²»´æ·Å×ÔÒÑºÍ¶ÔÊÖÐÅÏ¢£¬ÒòÎªÃ¿Ïî±ÈÈüµÄÑ¡ÊÖÔÚÍ¬Ò»µØÍ¼±ÈÈü
+--ÃÅÅÉÈüÊ±£¬GLB_MATCHLEAGUEINFO -> GLB_MATCHLEAGUEINFO + 10*2Ö®¼ä´æ·Å£¬Ã¿Ïîcuéc thiËùÔÚµÄ±¨ÃûµØÍ¼±àºÅ
+--µ±who == 9999Ê±£¬±íÊ¾ÃÅÅÉÈü£¬´ËÊ±²»´æ·Å×ÔÒÑºÍ¶ÔÊÖÐÅÏ¢£¬ÒòÎªÃ¿Ïîcuéc thiµÄÑ¡ÊÖÔÚÍ¬Ò»µØÍ¼cuéc thi
 	if (who == 9999) then
 		if (matchtype > 0 and matchtype <= 10) then
 			SetGlbValue(GLB_MATCHLEAGUEINFO + (matchtype - 1) * 2, map)
 			--SetGlbValue(GLB_MATCHLEAGUEINFO + (matchtype - 1) * 2 + 1, 0)
-			print("ÃÅÅÉÈû: type"..matchtype.."ÇøÓòÎª"..map)
+			print("TrËn m«n ph¸i: type"..matchtype.."khu vùc"..map)
 		end
 		return
 	end
@@ -161,15 +161,15 @@ function wulin_newmatchinfocome(matchtype, map, who, oppt)
 			if (GetGlbValue(GLB_MATCHLEAGUEINFO + 20 + (matchtype - 1)  * 32 * 2 + i * 2 ) == 0) then
 				SetGlbValue(GLB_MATCHLEAGUEINFO + 20 + (matchtype - 1)  * 32 * 2 + i * 2, who)
 				SetGlbValue(GLB_MATCHLEAGUEINFO + 20 + (matchtype - 1)  * 32 * 2 + i * 2 + 1, oppt)
-				print("ÃÅÅÉÌÔÌ­Èü: type"..matchtype.." "..who.." VS "..oppt)
+				print("vâ ®Êu lo¹i trùc tiÕp: type"..matchtype.." "..who.." VS "..oppt)
 				return
 			end
 		end
 	else 
---·ÇÃÅÅÉÈüÊ±£¬GLB_MATCHLEAGUEINFO -> GLB_MATCHLEAGUEINFO + N * 2´æ·Å±ÈÈüµÄÐÅÏ¢ µÚn¸ö´æ·ÅÕ½¶ÓºÅnµÄËùÔÚ±¨ÃûµØÍ¼ÒÔ¼°¶ÔÊÖµÄÕ½¶Ó±àºÅ
+--·ÇÃÅÅÉÈüÊ±£¬GLB_MATCHLEAGUEINFO -> GLB_MATCHLEAGUEINFO + N * 2´æ·Åcuéc thiµÄÐÅÏ¢ µÚn¸ö´æ·ÅÕ½¶ÓºÅnµÄËùÔÚ±¨ÃûµØÍ¼ÒÔ¼°¶ÔÊÖµÄÕ½¶Ó±àºÅ
 		SetGlbValue(GLB_MATCHLEAGUEINFO + ( who - 1) * 2 , map)
 		SetGlbValue(GLB_MATCHLEAGUEINFO + ( who - 1) * 2 + 1,oppt)
-		print("±ÈÈü"..matchtype.." map:"..map.." "..who.." VS "..oppt)
+		print("cuéc thi"..matchtype.." map:"..map.." "..who.." VS "..oppt)
 	end
 end
 
@@ -191,13 +191,13 @@ function wulin_openzonematch(signmapid, matchphase, zoneid1, zoneid2)
 		tongname2 = WL_TAB_ZONEINFO[zoneid2]
 	end
 	
-	local resultstr = "ÏÖÔÚ£¬ÎäÁÖ´ó»áÇøÓòÍÅÌåÈüÒÑ¾­¿ªÊ¼! ¿ªÕ½Ë«·½Îª£º["..tongname1.."] ºÍ["..tongname2.."], ÇëÁ½ÇøÓòµÄÑ¡ÊÖ×¥½ôµ½³ÇÇø²ÎÈü!";
+	local resultstr = "B©y giê, cuéc tranh tµi gi÷a hai bªn ®· b¾t ®Çu: ["..tongname1.."] vµ ["..tongname2.."], hai bªn h·y chó ý ®Õn tham gia tranh tµi!";
 	Msg2SubWorld(resultstr)
 	--µ±Ç°·þÎñÆ÷´æÔÚ¸Ã±¨ÃûµãµØÍ¼
 	if (subWorld >=0) then
 		oldSubWorld = SubWorld
 		local nMatchMap = -1
-		--ÕÒµ½¸Ã±¨ÃûµãµØÍ¼Ëù¹ÜÏ½µÄÕ½³¡µØÍ¼¿ÕÏÐµÄ£¬ÓÃËüÀ´´òÕâ¸ö±ÈÈü
+		--ÕÒµ½¸Ã±¨ÃûµãµØÍ¼Ëù¹ÜÏ½µÄÕ½³¡µØÍ¼¿ÕÏÐµÄ£¬ÓÃËüÀ´´òÕâ¸öcuéc thi
 		for i = 1, getn(WL_MAPTAB_ZONE) do 
 			if (WL_MAPTAB_ZONE[i][1] == signmapid) then
 				for j = 1, getn(WL_MAPTAB_ZONE[i][2]) do 
@@ -227,7 +227,7 @@ function wulin_openzonematch(signmapid, matchphase, zoneid1, zoneid2)
 	end
 end
 
---´ò¿ª±ÈÈü
+--´ò¿ªcuéc thi
 function wulin_openmatch(matchtype, signmapid, matchphase)
 	print("openmatch"..matchtype..","..signmapid..","..matchphase)
 	--Èç¹ûmatchtype==0ÔòÇå³ýËùÓÐÊý¾Ý
@@ -426,7 +426,7 @@ end;
 end;
 
 function GotoStation(nStation)
-Msg2Player("×øÎÈÁËÂð£¿ÔÛÃÇ×ß"..GetStationName(nStation))
+Msg2Player("Ngåi yªn ch­a? chóng ta ®i"..GetStationName(nStation))
 nW , nX, nY = GetStationPos(nStation);
 NewWorld(nW, nX , nY );
 end;
@@ -711,10 +711,10 @@ function AddSkills(Party,Level)
 		end
 	end
 	if(Party ==nil) then
-		Msg2Player("Ïë×èµ²ÎÒ°¡£¿Ã»ÄÇÃ´ÈÝÒ×!")
+		Msg2Player("Ng­¬i muèn dõng l¹i µ? §©u cã dÔ dµng nh­ vËy!")
 	else
 		if(skillMap[Party]==nil) then
-			Msg2Player("ÃÅÅÉÊäÈë´íÎó!")
+			Msg2Player("Lèi vµo vâ ®µi!")
 			return
 		end
 		for i=1,getn(skillMap[Party]) do
@@ -967,9 +967,9 @@ function CallNpc(Series,NpcID,NpcLvl,Name,Revive,IsBoss)
 	end	;
 	function Revive2Str(r)
 		if (r ~= 0) then
-			return "¿ÉÒÔÔÙÉú"
+			return "Cã thÓ trïng sinh"
 		end
-		return "²»¿ÉÔÙÉú"
+		return "Kh«ng thÓ trïng sinh"
 	end
 	function IsBoss2Str(b)
 		if(b==0) then
@@ -1062,29 +1062,29 @@ function ShowSeed(worldidx, mapid, seedlevel, count, SeedPosFile,szMapName, nBat
 	local szScriptFile = "\\script\\event\\great_night\\npc_great_seed.lua"
 	--ÆÕÍ¨¹ûÊµ¶Ô°×
 	local szGrowScriptFile = "\\script\\event\\great_night\\npc_great_fruit.lua"
-	--»Æ½ðÖÖ×Ó¶Ô°×
+	--H¹t Hoµng Kim¶Ô°×
 	local szGoldFruitScriptFile = "\\script\\event\\great_night\\golden_fruit.lua";
 	
-	local nBeginNumber = gb_GetTask("»Ô»ÍÖÖ×Ó",12)
+	local nBeginNumber = gb_GetTask("Qu¶ Huy Hoµng",12)
 	local nNpcTmpl = 1110
 	local szNpcScriptFile = szScriptFile
-	local szNpcName = "»Ô»ÍÖÖ×Ó"
+	local szNpcName = "Qu¶ Huy Hoµng"
 	if mod(nBatch	,2 ) == 0 then
 		--Èç¹ûÎª¹ûÊµÅú´Î£¬ÔòÇå³ýÖÖ×ÓNPC
-		ClearMapNpcWithName(mapid, "»Ô»ÍÖÖ×Ó")
-		ClearMapNpcWithName(mapid, "»Æ½ðÖÖ×Ó");
+		ClearMapNpcWithName(mapid, "Qu¶ Huy Hoµng")
+		ClearMapNpcWithName(mapid, "H¹t Hoµng Kim");
 		if seedlevel == 4  then
 			nNpcTmpl = 1118
 			szNpcScriptFile = szGoldFruitScriptFile
-			szNpcName = "»Æ½ðÖ®¹ûÊµ"
+			szNpcName = "Qu¶ Hoµng Kim"
 		else
 			nNpcTmpl = 1111
 			szNpcScriptFile = szGrowScriptFile
-			szNpcName = "»Ô»Í¹ûÊµ"
+			szNpcName = "Qu¶ §¹i Hoµng Kim"
 		end
 	elseif seedlevel ==  4 then
 			nNpcTmpl = 1117
-			szNpcName = "»Æ½ðÖÖ×Ó"
+			szNpcName = "H¹t Hoµng Kim"
 	end
 	--
 	local nLineCount = TabFile_GetRowCount(SeedPosFile) - 1;
@@ -1097,12 +1097,12 @@ function ShowSeed(worldidx, mapid, seedlevel, count, SeedPosFile,szMapName, nBat
 				local nNPCIndex = AddNpc(nNpcTmpl , 1, worldidx, nPosX * 32, nPosY * 32);
 				if (nNPCIndex > 0) then
 					nBeginNumber = nBeginNumber + 1
-					gb_SetTask("»Ô»ÍÖÖ×Ó",12,nBeginNumber)
+					gb_SetTask("Qu¶ Huy Hoµng",12,nBeginNumber)
 					SetNpcScript(nNPCIndex, szNpcScriptFile );
 					SetNpcParam(nNPCIndex, 1, seedlevel);
 					SetNpcParam(nNPCIndex, 2, nBeginNumber*10000 +  nCurDate ); --  nCurDate --¼ÓÉÏµ±Ç°ÈÕÆÚ
-					if szNpcName == "»Æ½ðÖ®¹ûÊµ" or szNpcName == "»Æ½ðÖÖ×Ó" then
-						Msg2SubWorld("<color=yellow>"..szNpcName.."<color>".." ³öÏÖÔÚ"..szMapName.." ("..floor(nPosX / 8)..","..floor(nPosY / 16)..") . ")
+					if szNpcName == "Qu¶ Hoµng Kim" or szNpcName == "H¹t Hoµng Kim" then
+						Msg2SubWorld("<color=yellow>"..szNpcName.."<color>".."xuÊt hiÖn trong"..szMapName.." ("..floor(nPosX / 8)..","..floor(nPosY / 16)..") . ")
 					end
 				end;
 			end;
@@ -1144,7 +1144,7 @@ function festival_shrewmouse(nMapID)
 	
 	SubWorld = nMapIndex;
 	CloseMission(FESTIVAL_06_PREPAREMISSIONID);
-	local nState = gb_GetModule("2006´º»î¶¯") 
+	local nState = gb_GetModule("ho¹t ®éng mïa xu©n 2006") 
     if (nState == 1) then
 	OpenMission(FESTIVAL_06_PREPAREMISSIONID);
 	SetGlbValue(FESTIVAL_06_GLOBALVALUE, FESTIVAL_06_STATESTART); 

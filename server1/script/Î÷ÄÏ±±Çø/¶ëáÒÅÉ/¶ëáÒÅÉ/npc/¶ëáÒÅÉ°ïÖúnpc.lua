@@ -2,7 +2,7 @@
 
 Include("\\script\\global\\map_helper.lua")
 Include("\\script\\task\\newtask\\education\\dragonfive.lua")
-npc_name = "»ÛÄá"
+npc_name = "TuÖ Ni"
 
 function main(sel)
 
@@ -10,47 +10,47 @@ UTask_em = GetTask(1)
 
 if (UTask_em < 10*256) then						--Î´½Ó¶ëáÒÅÉÈëÃÅÈÎÎñ£¬Î´Èë¶ëáÒÅÉ
 	if (GetFaction() ~= "") then				--Èç¹ûÍæ¼ÒÒÑ¾­ÊôÓÚÁíÒ»ÃÅÅÉ
-		Say("»ÛÄá£ºÊ©Ö÷ÓÐºÎÊÂÏàÑ¯£¿", 3, "ÁË½â¹óÅÉ/org", "ÁË½â¸÷Î»Å®ÏÀ/member", "ÁË½â´ËµØ²¼¾Ö/config")
+		Say("TuÖ Ni£ºÊ©Ö÷ÓÐºÎÊÂÏàÑ¯£¿", 3, "T×m hiÓu quý ph¸i/org", "T×m hiÓu c¸c vÞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config")
 		return
 	else
-		Say("»ÛÄá£ºÊ©Ö÷Ïë¼ÓÈë±¾ÅÉÂð£¿»òÕßÓÐÊ²Ã´ÐèÒªÆ¶ÄáÏàÖúµÄ£¿", 4, "ÁË½â¹óÅÉ/org", "ÁË½â¸÷Î»Å®ÏÀ/member", "ÁË½â´ËµØ²¼¾Ö/config", "ÈçºÎÈëÃÅ/task1")
+		Say("TuÖ Ni£ºÊ©Ö÷Ïë¼ÓÈë±¾ÅÉÂð£¿»òÕßÓÐÊ²Ã´ÐèÒªÆ¶ÄáÏàÖúµÄ£¿", 4, "T×m hiÓu quý ph¸i/org", "T×m hiÓu c¸c vÞ n÷ hiÖp/member", "T×m hiÓu bè côc n¬i nµy/config", "Lµm sao ®Ó nhËp m«n?/task1")
 		return	
 	end
 end;
 	
 if (UTask_em == 70*256) then					--¶ëáÒÅÉÒÑ¾­³öÊ¦		
-	Say("»ÛÄá£ºÔ­À´ÊÇÒÔÇ°µÄÊ¦ÃÃ£¬ÓÐÊ²Ã´¿ÉÒÔ°ïÄãµÄÂð£¿", 4, "ÖØÐÂÁË½â¶ëáÒÅÉ/org", "ÖØÐÂÁË½âÒÔÇ°µÄÍ¬ÃÅ/member", "ÖØÐÂ»Ø¹Ë´ËµØ²¼¾Ö/config", "»¹ÓÐÊ²Ã´ÈÎÎñ¿É×ö/task2")
+	Say("TuÖ Ni£ºÔ­À´ÊÇÒÔÇ°µÄÊ¦ÃÃ£¬ÓÐÊ²Ã´¿ÉÒÔ°ïÄãµÄÂð£¿", 4, "T×m hiÓu l¹i Nga My Ph¸i/org", "T×m hiÓu l¹i ®ång m«n tr­íc kia/member", "T×m hiÓu l¹i bè côc n¬i nµy/config", "Cßn nhiÖm vô nµo ®Ó lµm n÷a/task3")
 	return
 end;	
 
-Say("»ÛÄá£ºÊ¦ÃÃÓÐºÎÊÂÏàÑ¯£¿", 4, "ÁË½â±¾ÅÉ/org", "ÁË½âÍ¬ÃÅ/member", "ÁË½â´ËµØ²¼¾Ö/config", "ÁË½âÈÎÎñ/task3")
+Say("TuÖ Ni£ºÊ¦ÃÃÓÐºÎÊÂÏàÑ¯£¿", 4, "§èi tho¹i víi Long Ngò /Uworld1000_word", "T×m hiÓu bæn ph¸i/org", "T×m hiÓu bè côc n¬i nµy/config", "T×m hiÓu bè côc n¬i nµy/config")
 
 end;
 
 ----------------------------------------------------------------------------------------------
 
 function org()
-Say("»ÛÄá£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "ÃÅÅÉÆðÔ´/o1", "µØÀíÎ»ÖÃ/o2", "½­ºþµØÎ»/o3", "ÃÅÅÉÌØÉ«/o4")
+Say("TuÖ Ni£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "Khëi nguyªn m«n ph¸i/o1", "VÞ trÝ ®Þa lý /o2", "§Þa vÞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 
 function member()
-Say("»ÛÄá£ºÏëÁË½âË­£¿", 13, "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("TuÖ Ni£ºÏëÁË½âË­£¿", 13, "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 
 function config()
-Say("»ÛÄá£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "Í¨ÍùºÎµØ/c1", "Ç°É½/c2", "Ö÷½¨ÖþÈº/c3", "ºóÉ½/c4")
+Say("TuÖ Ni£ºÏëÁË½âÄÄ·½Ãæ£¿", 4, "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chÝnh/c3", "Sau nói/c4")
 end;
 
 
 function task1()
-Say("»ÛÄá£º±¾ÅÉÖ»ÊÕË®ÏµÅ®µÜ×Ó¡£ÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýºÍ°ÍÁêÏØµÄ¶ëÃ¼ÃÅÅÉ½ÓÓ¦ÈË¶Ô»°Íê³ÉÈëÃÅ¡£")
+Say("TuÖ Ni£º±¾ÅÉÖ»ÊÕË®ÏµÅ®µÜ×Ó¡£ÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýºÍ°ÍÁêÏØµÄ¶ëÃ¼ÃÅÅÉ½ÓÓ¦ÈË¶Ô»°Íê³ÉÈëÃÅ¡£")
 end;
 
 
 function task2()
-Say("»ÛÄá£ºÄãÒÑ³öÊ¦£¬²»±ØÔÙ×ö±¾ÅÉÈÎÎñÁË¡£", 0)
+Say("TuÖ Ni£ºÄãÒÑ³öÊ¦£¬²»±ØÔÙ×ö±¾ÅÉÈÎÎñÁË¡£", 0)
 end;
 
 
@@ -59,59 +59,59 @@ function task3()
 UTask_em = GetTask(1)
 
 if (UTask_em < 10*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "ÈëÃÅÈÎÎñ/v1")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, nhiÖm vô ®ang tiÕn hµnh lµ:")
 end;
 
 if (UTask_em == 10*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÒÑÈëÃÅ£¬½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "Í­¾µÈÎÎñ/v2")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÒÑÈëÃÅ£¬½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 10*256) and (UTask_em < 20*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "Í­¾µÈÎÎñ/v2")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, giê ®· nhËp m«n, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 20*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "·ü»¢ÈÎÎñ/v3")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 20*256) and (UTask_em < 30*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "·ü»¢ÈÎÎñ/v3")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 30*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "»ðºüÈÎÎñ/v4")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 30*256) and (UTask_em < 40*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "»ðºüÈÎÎñ/v4")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 40*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "ÇúÆ×ÈÎÎñ/v5")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 40*256) and (UTask_em < 50*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "ÇúÆ×ÈÎÎñ/v5")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 50*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "ÐÅÏàËÂÈÎÎñ/v6")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 50*256) and (UTask_em < 60*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "ÐÅÏàËÂÈÎÎñ/v6")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em == 60*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "³öÊ¦ÈÎÎñ/v7")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£Äã½ÓÏÂÀ´¿ÉÒÔ×öµÄÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em > 60*256) and (UTask_em < 70*256) then	
-Say("»ÛÄá£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "³öÊ¦ÈÎÎñ/v7")
+Say("TuÖ Ni£ºÏëÒªÈëÃÅÑ§ÒÕ£¬¿ÉÒÔÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñÊµÏÖ¡£ÈëÃÅºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬¿ÉÒÔÑ§µ½Îä¹¦£¬»ñµÃÍ·ÏÎ¡£Íê³É³öÊ¦ÈÎÎñºó£¬¾Í¿ÉÒÕ³É³öÊ¦¡£ÄãÄ¿Ç°ÕýÔÚ½øÐÐÖÐµÄÈÎÎñÊÇ£º", 1, "<#>, tiÕp theo cã thÓ tiÕn hµnh:")
 end;
 
 if (UTask_em >= 70*256) and (UTask_em < 80*256) then	
-Say("<#> ÏëÈëÃÅÑ§ÒÕ£¬Ê×ÏÈÒªÍ¨¹ýÍê³ÉÈëÃÅÈÎÎñ£¬È»ºó£¬ÒÀ´ÎÍê³ÉÎå¸öÃÅÅÉÈÎÎñ£¬½«»áÑ§µ½Îä¹¦£¬±»·â³ÆºÅ¡£Íê³É³öÊ¦ÈÎÎñºó£¬½«»áÒÕ³É³öÊ¦¡£Ä¿Ç°"..UTask_em.."<#>,ÔÚ½øÐÐµÄÈÎÎñÎª:", 1, "³öÊ¦ÈÎÎñ /v8")
+Say("<#> Muèn nhËp m«n häc nghÖ,tr­íc tiªn ph¶i th«ng qua hoµn thµnh NhiÖm vô nhËp m«n. Sau ®ã lÇn l­ît hoµn thµnh 5 NhiÖm vô cña m«n ph¸i. SÏ häc ®­îc vâ c«ng,®­îc phong Danh hiÖu.Sau khi hoµn thµnh NhiÖm vô xuÊt s­ sÏ thµnh nghÖ xuÊt s­. HiÖn"..UTask_em.."<#>, nhiÖm vô ®ang tiÕn hµnh lµ:", 1, "NhiÖm vô xuÊt s­ /v8")
 end;
 
 end;
@@ -119,131 +119,131 @@ end;
 ----------------------------------------------------------------------------------------------
 
 function o1()
-Say("»ÛÄá£º¶ëáÒÅÉÊÇÒ»¸öÓÉÅ®×ÓËù´´µÄÎäÁÖÃÅÅÉ£¬ºóÒò×æÊ¦ÈëÁË·ðÃÅ£¬ÓÖÒÔ³ÆÅ®×ÓÎª¡°¶êÃ¼¡±ºÍ·ð½ÌÊ¥µØÖ®¡°¶ëÃ¼É½¡±µÄË«ÖØº¬Òå¶øµÃÃû¡£", 4, "ÖªµÀÁË/ok", "µØÀíÎ»ÖÃ/o2", "½­ºþµØÎ»/o3", "ÃÅÅÉÌØÉ«/o4")
+Say("TuÖ Ni£º¶ëáÒÅÉÊÇÒ»¸öÓÉÅ®×ÓËù´´µÄÎäÁÖÃÅÅÉ£¬ºóÒò×æÊ¦ÈëÁË·ðÃÅ£¬ÓÖÒÔ³ÆÅ®×ÓÎª¡°¶êÃ¼¡±ºÍ·ð½ÌÊ¥µØÖ®¡°¶ëÃ¼É½¡±µÄË«ÖØº¬Òå¶øµÃÃû¡£", 4, "BiÕt råi/ok", "VÞ trÝ ®Þa lý /o2", "§Þa vÞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o2()
-Say("»ÛÄá£º¶ëáÒÉ½Î»ÓÚÊñµØÎ÷ÄÏ£¬ÒòÉ½ÊÆåÔåÆ£¬Èç¶ðÃ¼Ï¸¶ø³¤£¬ÃÀ¶øÑÞ£¬¹ÊÃû¡£É½Âö·åÂÍÆð·ü£¬ÖØÑÒµü´ä£¬ÆøÊÆ°õíç£¬ÐÛÐãÓÄÆæ£¬ËØÓÐ¡°¶ëáÒÌìÏÂÐã¡±µÄÃÀÓþ¡£", 4, "ÖªµÀÁË/ok", "ÃÅÅÉÆðÔ´/o1", "½­ºþµØÎ»/o3", "ÃÅÅÉÌØÉ«/o4")
+Say("TuÖ Ni£º¶ëáÒÉ½Î»ÓÚÊñµØÎ÷ÄÏ£¬ÒòÉ½ÊÆåÔåÆ£¬Èç¶ðÃ¼Ï¸¶ø³¤£¬ÃÀ¶øÑÞ£¬¹ÊÃû¡£É½Âö·åÂÍÆð·ü£¬ÖØÑÒµü´ä£¬ÆøÊÆ°õíç£¬ÐÛÐãÓÄÆæ£¬ËØÓÐ¡°¶ëáÒÌìÏÂÐã¡±µÄÃÀÓþ¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "§Þa vÞ giang hå /o3", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o3()
-Say("»ÛÄá£ºÓëÉÙÁÖ¡¢Îäµ±²¢³ÆÎªÖÐÔ­ÕýÅÉÎäÁÖµÄÈý´óÃÅÅÉ£¬ÔÚÌìÏÂÅ®×ÓËù´´µÄÃÅÅÉÖÐ£¬ÒÔ¶ëáÒÅÉÎªµÚÒ»¡£", 4, "ÖªµÀÁË/ok", "ÃÅÅÉÆðÔ´/o1", "µØÀíÎ»ÖÃ/o2", "ÃÅÅÉÌØÉ«/o4")
+Say("TuÖ Ni£ºÓëÉÙÁÖ¡¢Îäµ±²¢³ÆÎªÖÐÔ­ÕýÅÉÎäÁÖµÄÈý´óÃÅÅÉ£¬ÔÚÌìÏÂÅ®×ÓËù´´µÄÃÅÅÉÖÐ£¬ÒÔ¶ëáÒÅÉÎªµÚÒ»¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VÞ trÝ ®Þa lý /o2", "§Æc s¾c m«n ph¸i/o4")
 end;
 
 function o4()
-Say("»ÛÄá£º¶ëáÒÅÉÃÅ¹æ¼«ÑÏ£¬ÃÅÏÂµÜ×Ó½ÔÎªÅ®×Ó¡£¶ëáÒµÜ×Ó¾ù½àÉí×ÔºÃ£¬²»½öÎä¹¦¸ßÇ¿£¬¶øÇÒ¶à²Å¶àÒÕ£¬ÇÙÆåÊé»­ÎÞËù²»Í¨¡£", 4, "ÖªµÀÁË/ok", "ÃÅÅÉÆðÔ´/o1", "µØÀíÎ»ÖÃ/o2", "½­ºþµØÎ»/o3")
+Say("TuÖ Ni£º¶ëáÒÅÉÃÅ¹æ¼«ÑÏ£¬ÃÅÏÂµÜ×Ó½ÔÎªÅ®×Ó¡£¶ëáÒµÜ×Ó¾ù½àÉí×ÔºÃ£¬²»½öÎä¹¦¸ßÇ¿£¬¶øÇÒ¶à²Å¶àÒÕ£¬ÇÙÆåÊé»­ÎÞËù²»Í¨¡£", 4, "BiÕt råi/ok", "Khëi nguyªn m«n ph¸i/o1", "VÞ trÝ ®Þa lý /o2", "§Þa vÞ giang hå /o3")
 end;
 
 --------------------------------
 
 function m1()
-Say("Î»ÖÃ£º<color=blue>ÕýµîÀï<color>    ×ø±ê£º<color=blue>199,200<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>²»¹¶ÑÔÐ¦£¬µ«ÊÇÎªÈË´ÈºÍ£¬¿íÈÝ»í´ï¡£Ò»ÐÄÏë°Ñ¶ëáÒÅÉ·¢Ñï¹â´ó£¬¾ßÓÐÇ¿ÁÒµÄ×ÔÎÒÎþÉüÒâÊ¶¡£", 13, "ÖªµÀÁË/ok", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>ChÝnh ®iÖn<color>  Täa ®é: <color=blue>199,200<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter>TrÇm mÆc Ýt nãi nh­ng rÊt khoan dung ®é l­îng. QuyÕt t©m ph¸t d­¬ng quang ®¹i Nga Mi ph¸i.V× nhiÖm vô s½n sµngthÓ hy sinh c¶ b¶n th©n", 13, "BiÕt råi/ok", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m2()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½½ÅÇåÒôÍ¤<color>    ×ø±ê£º<color=blue>239,332<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>¾«ÓÚ²èµÀ£¬µ«ÊÇÐÔ¸ñ¹Â°Á£¬ÀäÈô±ùËª£¬Ä¿ÎÞÏÂ³¾£¬ËäÈ»½­ºþÉÏÓÐÊý²»ÇåµÄÈË°Ýµ¹ÔÚËýµÄÊ¯ÁñÈ¹ÏÂ£¬ËýÈ´×ÜÊÇ²»Àí²»²Ç¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Thanh ¢m ®×nh<color>  Täa ®é: <color=blue>239,332<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter>tinh th«ng trµ ®¹o nh­ng tÝnh c¸ch kiªu c¨ng. BiÕt bao trang nam tö ®· ®æ lÖ v× c« ta", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m3()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½Ó­¿ÍÊ¯<color>    ×ø±ê£º<color=blue>227,322<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>¾«ÓÚÒôÂÉ£¬´Ï»ÛÃô¸Ð£¬ÔÚ¸ÐÇéÉÏ·Ç³£ñæ³Ö£¬×ÜÊÇ°Ñ¸ÐÇéÂñÔÚÐÄµ×£¬¾ö²»ÇáÒ×±íÂ¶¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Nghªnh Kh¸ch Th¹ch<color>  Täa ®é: <color=blue>227,322<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter>tinh th«ng ©m luËt, th«ng minh lanh lîi, sèng néi t©m", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m4()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½°ëÉ½ÆÂ<color>    ×ø±ê£º<color=blue>229,320<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>²ÅÅ®Ò»¸ö£¬ÆøÖÊæµ¾²µäÑÅ£¬±íÃæÉÏµ¥´¿ÉÆÁ¼¡¢¶à³îÉÆ¸Ð£¬ÆäÊµÍâÈáÄÚ¸Õ£¬Ãæ¶Ô¸ÐÇéÊ±·Ç³£µÄÖ´×Å£¬Ã÷ÖªÇ°·½ÊÇÍòÕÉÐüÑÂ£¬Ò²»áºÁ²»ÓÌÔ¥µØÌøÏÂÈ¥¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>B¸n S¬n Ph¸<color>  Täa ®é: <color=blue>229,320<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> bªn ngoµi ®a sÇu ®a c¶m nh­ng bªn trong cøng r¾n ®«i khicè chÊp. Mét khi ®· quyÕt ®Þnh chuyÖn g× th× khã ai ng¨n c¶n ®­îc", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m5()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½×êÌìÆÂÈë¿Ú<color>    ×ø±ê£º<color=blue>221,321<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>Ò»¸ö»îÆÃ¿ªÀÊ£¬»úÁé¿É°®µÄÐ¡¹ÃÄï¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Toµn Thiªn Ph¸<color>  Täa ®é: <color=blue>221,321<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> lµ ng­êi ho¹t b¸t vui vÎ, nh©n hËu ®¸ng yªu!", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m6()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½ºóÌÃ¸½½ü<color>    ×ø±ê£º<color=blue>242,305<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>ÐÔ¸ñËæºÍ¿ÉÇ×£¬³äÂú°®ÐÄ£¬Ï²»¶Ð¡¶¯Îï£¬µ«ÓÐÊ±ÏÔµÃ¹ýÓÚÈíÈõ¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>HËu ®­êng<color>  Täa ®é: <color=blue>242,305<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> th©n thiÖn dÔ gÇn, yªu th­¬ng sóc vËt, ®«i lóc rÊt nhu nh­îc", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m7()
-Say("Î»ÖÃ£º<color=blue>×óÆ«µîÀï<color>    ×ø±ê£º<color=blue>201,199<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>ÐÔÇéÎÈÖØ´ó·½£¬ÐÄË¼çÇÃÜ£¬ÔÚÖÚ¶àÊ¦½ãÃÃÖÐ£¬ºÍÇØÒÐ·çµÄ¸ÐÇé×îºÃ¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>T¶ Biªn ®iÖn<color>  Täa ®é: <color=blue>201,199<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter>tÝnh t×nh phãng kho¸ng, hµnh xö thËn träng, rÊt yªu quý  TÇn û Phong", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m8()
-Say("Î»ÖÃ£º<color=blue>¶ëÃ¼É½×êÌìÆÂ³ö¿Ú<color>    ×ø±ê£º<color=blue>231,313<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>ÐÔ¸ñÄÚÏò£¬³ÁÄ¬¹ÑÑÔ¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Toµn Thiªn Ph¸<color>  Täa ®é: <color=blue>231,313<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> lµ ng­êi sèng néi t©m, trÇm tÜnh Ýt nãi!", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m9()
-Say("Î»ÖÃ£º<color=blue>Ç°µîÀï<color>    ×ø±ê£º<color=blue>200,198<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>ÐÔÇéÈáÈõ£¬ÅÇ»²ÔÚ·ð×æÓëºì³¾Ö®¼ä£¬¿àÁË×Ô¼º£¬Ò²¿àÁË×Ô¼ºËù°®µÄÈË¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>TiÒn ®iÖn<color>  Täa ®é: <color=blue>200,198<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> lµ ng­êi nhu nh­îc, lu«n l­ìng lù gi÷a hång trÇn vµ câi phËt. NhiÒu lóc tù lµm khæ m×nh vµ khæ c¶ ng­êi kh¸c!", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m10()
-Say("Î»ÖÃ£º<color=blue>½²¾­ÌÃÀï<color>    ×ø±ê£º<color=blue>197,200<color>    ×÷ÓÃ£º<color=blue>ÈÎÎñ<color><enter>ÎªÈË¹û¶Ï£¬°®Ô÷·ÖÃ÷¡£", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Gi¶ng Kinh ®­êng <color>  Täa ®é: <color=blue>197,200<color>  phô tr¸ch <color=blue>nhiÖm vô<color><enter> lµ ng­êi quyÕt ®o¸n, yªu ghÐt râ rµng", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m11()
-Say("Î»ÖÃ£º<color=blue>¹ã³¡<color>    ×ø±ê£º<color=blue>247,305<color>    ×÷ÓÃ£º<color=blue>±øÆ÷½»Ò×<color>", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÐÄ/m12", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Qu·ng tr­êng<color>  Täa ®é: <color=blue>247,305<color>  phô tr¸ch <color=blue>Giao dÞch binh khÝ<color>", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu T©m/m12", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m12()
-Say("Î»ÖÃ£º<color=blue>¹ã³¡<color>    ×ø±ê£º<color=blue>246,307<color>    ×÷ÓÃ£º<color=blue>×°±¸½»Ò×<color>", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃî½à/m13")
+Say("VÞ trÝ: <color=blue>Qu·ng tr­êng<color>  Täa ®é: <color=blue>246,307<color>  phô tr¸ch <color=blue>Giao dÞch trang bÞ<color>", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu KhiÕt/m13")
 end;
 
 function m13()
-Say("Î»ÖÃ£º<color=blue>¹ã³¡<color>    ×ø±ê£º<color=blue>244,306<color>    ×÷ÓÃ£º<color=blue>Ò©Æ·½»Ò×<color>", 13, "ÖªµÀÁË/ok", "ÕÆÃÅÇåÏþÊ¦Ì«/m1", "ÕÛÃ·ÏÉ×ÓÒ¶±ùºÛ/m2", "·÷ÔÆÏÉ×ÓÇØÒÐ·ç/m3", "ºá²¨ÏÉ×ÓºÎÁ¯Æ®/m4", "ÒÆ¹âÏÉ×ÓÐ»ÔÆÂÜ/m5", "Ó³Ñ©ÏÉ×ÓÄÂÔÆ´È/m6", "°ÝÔÂÏÉ×ÓËÕ´ÊÜ°/m7", "Äá¹ÃÃî³¾/m8", "Äá¹ÃÃîÒþ/m9", "Äá¹ÃÃîÈç/m10", "Äá¹ÃÃîÁé/m11", "Äá¹ÃÃîÐÄ/m12")
+Say("VÞ trÝ: <color=blue>Qu·ng tr­êng<color>  Täa ®é: <color=blue>244,306<color>  phô tr¸ch <color=blue>Giao dÞch d­îc phÈm<color>", 13, "BiÕt råi/ok", "Ch­ëng m«n Thanh HiÓu S­ Th¸i/m1", "ChiÕt Mai Tiªn Tö DiÖp B¨ng Ng©n/m2", "PhÊt V©n Tiªn Tö TÇn û Phong/m3", "Hoµnh Ba Tiªn Tö Hµ Linh Phiªu/m4", "Di Quang Tiªn Tö T¹ V©n La/m5", "¸nh TuyÕt Tiªn Tö Môc V©n Tõ /m6", "B¸i NguyÖt Tiªn Tö T« Tõ Hinh/m7", "Ni C« DiÖu TrÇn/m8", "Ni C« DiÖu Èn/m9", "Ni C« DiÖu Nh­ /m10", "Ni C« DiÖu Linh/m11", "Ni C« DiÖu T©m/m12")
 end;
 
 --------------------------------
 
 function c1()
-Say("»ÛÄá£ºÉ½½ÅÓÐÁ½¸öÂ·¿Ú£¬¶«±ßÂ·¿ÚÍ¨Íù³É¶¼£¬ÄÏ±ßÂ·¿ÚÍ¨Íù³¤½­Ô´Í·¡£", 4, "ÖªµÀÁË/ok", "Ç°É½/c2", "Ö÷½¨ÖþÈº/c3", "ºóÉ½/c4")
+Say("TuÖ Ni£ºÉ½½ÅÓÐÁ½¸öÂ·¿Ú£¬¶«±ßÂ·¿ÚÍ¨Íù³É¶¼£¬ÄÏ±ßÂ·¿ÚÍ¨Íù³¤½­Ô´Í·¡£", 4, "BiÕt råi/ok", "Tr­íc nói/c2", "KiÕn tróc chÝnh/c3", "Sau nói/c4")
 end;
 
 function c2()
-Say("»ÛÄá£ºÉÏÉ½Í¾ÖÐÒÀ´ÎÓÐÇåÒôÍ¤¡¢×êÌìÆÂ¡¢Ó­¿ÍÊ¯¡¢°ëÉ½ÆÂµÈ¾°µã¡£", 4, "ÖªµÀÁË/ok", "Í¨ÍùºÎµØ/c1", "Ö÷½¨ÖþÈº/c3", "ºóÉ½/c4")
+Say("TuÖ Ni£ºÉÏÉ½Í¾ÖÐÒÀ´ÎÓÐÇåÒôÍ¤¡¢×êÌìÆÂ¡¢Ó­¿ÍÊ¯¡¢°ëÉ½ÆÂµÈ¾°µã¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "KiÕn tróc chÝnh/c3", "Sau nói/c4")
 end;
 
 function c3()
-Say("»ÛÄá£ºÓÐÇ°µî¡¢½²¾­ÌÃ¡¢Õýµî¡¢×óÆ«µîµÈÖ÷Òª½¨Öþ£¬¿ÉÒÔ½øÈë¡£", 4, "ÖªµÀÁË/ok", "Í¨ÍùºÎµØ/c1", "Ç°É½/c2", "ºóÉ½/c4")
+Say("TuÖ Ni£ºÓÐÇ°µî¡¢½²¾­ÌÃ¡¢Õýµî¡¢×óÆ«µîµÈÖ÷Òª½¨Öþ£¬¿ÉÒÔ½øÈë¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "Sau nói/c4")
 end;
 
 function c4()
-Say("»ÛÄá£ººóÉ½ÓÐÃÍ»¢É½¶´ºÍöùÓãºþ¡£", 4, "ÖªµÀÁË/ok", "Í¨ÍùºÎµØ/c1", "Ç°É½/c2", "Ö÷½¨ÖþÈº/c3")
+Say("TuÖ Ni£ººóÉ½ÓÐÃÍ»¢É½¶´ºÍöùÓãºþ¡£", 4, "BiÕt råi/ok", "C¸c vïng l©n cËn/c1", "Tr­íc nói/c2", "KiÕn tróc chÝnh/c3")
 end;
 
 --------------------------------
 
 function v1()							
-Talk(6, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬Äã¿ÉÒÔ¼ÓÈë¶ëáÒÅÉ£¬³ÉÎª<color=blue>²¼ÒÂÄá<color>£¬Ñ§»áÎä¹¦<color=blue>Æ®Ñ©´©ÔÆ<color>¡£<enter>µÚÒ»²½£ºÔÚÉ½ÏÂ<color=blue>ÇåÒôÍ¤<color>Óöµ½<color=blue>Ò¶±ùºÛ<color>£¬½Óµ½ÈÎÎñ£¬¹ý¡°²è¡±¹Ø¡£", "µÚ¶þ²½£ºÔÚÉÏÉ½Â·µÄ<color=blue>Ó­¿ÍÊ¯<color>ÅÔÓöµ½<color=blue>ÇØÒÐ·ç<color>£¬¹ý¡°ÇÙ¡±¹Ø¡£", "µÚÈý²½£ºÔÚÉÏÉ½Â·µÄ<color=blue>°ëÉ½ÆÂ<color>´¦Óöµ½<color=blue>ºÎÁ¯Æ®<color>£¬¹ý¡°ÎÄ¡±¹Ø¡£", "µÚËÄ²½£ºÔÚ<color=blue>×êÌìÆÂÈë¿Ú<color>´¦Óöµ½<color=blue>Ð»ÔÆÂÜ<color>£¬´³×êÌìÆÂ£¬´ò°Ü<color=blue>ÓðÒÂÄá<color>£¬µÃµ½<color=red>°×ÓñÈçÒâ<color>¡£", "µÚÎå²½£ºµ½<color=blue>Õýµî<color>½«<color=red>°×ÓñÈçÒâ<color>½»¸ø<color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>£¬ÈÎÎñÍê³É¡£")
+Talk(6, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, cã thÓ gia nhËp Nga Mi ph¸i, trë thµnh <color=blue>Bè Y Ni<color>, häc ®­îc vâ c«ng <color=blue>Phiªu TuyÕt Xuyªn V©n<color>.<enter>TiÕp nhËn nhiÖm vô, cÇn ph¶i ®¹t ®iÒu kiÖn sau: Ngò hµnh thuéc tÝnh: hÖ Thñy, ®¼ng cÊp ®¹t ®Õn 10, kh«ng lµm nhiÖm vô nhËp m«n cña bÊt kú m«n ph¸i nµo", "B­íc 1: §Õn <color=blue>Thanh ¢m ®×nh<color> gÆp <color=blue>DiÖp B¨ng H©n<color>, tiÕp nhËn nhiÖm vô, qua 'Trµ quan'", "B­íc 2: §Õn <color=blue>Nghªnh Kh¸ch Th¹ch<color> gÆp <color=blue>TÇn û Phong <color>, qua 'CÇm quan'", "B­íc 3: §Õn <color=blue>B¸n S¬n Ph¸<color> gÆp <color=blue>Hµ Linh Phiªu<color>, qua 'V¨n quan'", "B­íc 4: §Õn <color=blue>Toµn Thiªn Ph¸<color> gÆp <color=blue>T¹ V©n L©u <color>,x«ng Toµn Thiªn Ph¸, ®¸nh b¹i <color=blue>Vò Y Ni<color>, lÊy ®­îc <color=red>B¹ch Ngäc Nh­ ý<color>.")
 end;
 
 
 function v2()
-Talk(9, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>ÓðÒÂÄá<color>£¬Ñ§»áÎä¹¦<color=blue>¶ëÃ¼½£·¨¡¢¶ëáÒÕÆ·¨¡¢Çï·çÒ¶<color>¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>Ç°µî<color>Óöµ½<color=blue>Äá¹ÃÃîÒþ<color>£¬½Óµ½ÈÎÎñ£¬µÃµ½<color=red>×ó°ëÃæÍ­¾µ<color>¡£", "µÚ¶þ²½£ºÔÚ<color=blue>É½ÏÂ<color>ÕÒµ½<color=blue>ÃîÒþÏà¹«£¨240,328£©<color>£¬µÃµ½<color=red>ÓÒ°ëÃæÍ­¾µ<color>¡£", "µÚÈý²½£ºÔÚ<color=blue>³É¶¼Ìú½³ÆÌ<color>ÕÒµ½<color=blue>Ìú½³<color>£¬½Óµ½ÈÎÎñÑ°ÕÒ<color=red>ÁÁÒø¿ó<color>¡£", "µÚËÄ²½£ºµ½³É¶¼<color=blue>Î÷½¼Ê÷ÁÖ<color>ÖÐÕÒµ½<color=red>ÁÁÒø¿ó<color>¡£", "µÚÎå²½£º°ÑÁÁÒø¿ó½»¸ø³É¶¼<color=blue>Ìú½³<color>£¬µÃµ½ÐÞ²¹ºÃµÄÍêÕû<color=red>Í­¾µ<color>¡£", "µÚÁù²½£º»Øµ½<color=blue>Ç°µî<color>£¬Óë<color=blue>ÃîÒþ<color>¶Ô»°£¬½Óµ½ÈÎÎñ£¬°Ñ<color=red>Í­¾µ<color>½»¸ø<color=blue>ÃîÒþÏà¹«<color>¡£Èç¹ûÍ­¾µ¶ªÊ§£¬ÐèÒªÖØÐÂ×öÈÎÎñ¡£", "µÚÆß²½£ºÀ´µ½<color=blue>É½ÏÂ<color>£¬°Ñ<color=red>Í­¾µ<color>½»¸ø<color=blue>ÃîÒþÏà¹«<color>¡£", "µÚ°Ë²½£º»Øµ½<color=blue>Ç°µî<color>£¬Ïò<color=blue>Äá¹ÃÃîÒþ<color>¸´Ãü£¬ÈÎÎñÍê³É¡£")
+Talk(9, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>Vò Y Ni<color>, häc ®­îc vâ c«ng <color=blue>Nga Mi KiÕm ph¸p,Nga Mi Ch­ëng ph¸p,Thu Phong DiÖp<color>.<enter>TiÕp nhËn nhiÖm vô nµy cÇn ph¶i lµ ®Ö tö trªn cÊp 10", "B­íc 1: §Õn <color=blue>TiÒn ®iÖn<color> gÆp <color=blue>Ni C« DiÖu Èn<color>, tiÕp nhËn nhiÖm vô,  ®i lÊy <color=red>nöa m¶nh g­¬ng tr¸i<color>.", "B­íc 2: §Õn <color=blue>D­íi nói<color> t×m <color=blue>DiÖu Èn t­íng c«ng (240,328)<color>, lÊy ®­îc <color=red>nöa m¶nh g­¬ng ph¶i<color>.", "B­íc 3: §Õn <color=blue>Thµnh §«<color> t×m <color=blue>thî rÌn <color>, tiÕp nhËn nhiÖm vô ®i t×m <color=red>L­îng Ng©n Kho¸ng<color>.", "B­íc 4: Ra <color=blue>cæng phÝa t©y Thµnh §«<color> ®Ó t×m <color=red>L­îng Ng©n Kho¸ng<color>.", "B­íc 5: giao L­îng Ng©n Kho¸ng cho <color=blue>thî rÌn <color>, nhËn ®­îc <color=red>tÊm g­¬ng hoµn chØnh<color>.", "B­íc 6: Trë vÒ <color=blue>TiÒn ®iÖn<color>,®èi tho¹i víi <color=blue>DiÖu Èn<color>, sau ®ã mang <color=red>g­¬ng ®ång<color> cho <color=blue>DiÖu Èn t­íng c«ng<color>. NÕu g­¬ng ®ång bÞ mÊt, ph¶i thùc hiÖn nhiÖm vô l¹i tõ ®Çu.", "B­íc 7: L¹i xuèng <color=blue>ch©n nói<color>, giao <color=red>g­¬ng ®ång<color> cho <color=blue>DiÖu Èn t­íng c«ng<color>.")
 end;
 
 
 function v3()
-Talk(4, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>½õÒÂÄá<color>£¬Ñ§»áÎä¹¦<color=blue>ËÄÏóÍ¬¹é¡¢ÍûÔÂ¡¢·çÓêÆ®Ïã<color>¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>½²¾­ÌÃ<color>Óöµ½<color=blue>Äá¹ÃÃîÈç<color>£¬½Óµ½ÈÎÎñ£¬È¥<color=blue>ºóÉ½ÃÍ»¢É½¶´<color>ÊÕ·þÃÍ»¢¡£", "µÚ¶þ²½£ºÔÚ<color=blue>ºóÉ½ÃÍ»¢É½¶´<color>£¬Á¬Ðø´ò°Ü<color=blue>»¢Íõ°×»¢¾«£¨221,202£©<color>Èý´Î¡£", "µÚÈý²½£º»Øµ½<color=blue>½²¾­ÌÃ<color>£¬Ïò<color=blue>Äá¹ÃÃîÈç<color>¸´Ãü£¬ÈÎÎñÍê³É¡£")
+Talk(4, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>CÈm Y Ni<color>, häc ®­îc vâ c«ng <color=blue>Tø T­îng §ång Quy,Väng NguyÖt,Phong Vò Phiªu H­¬ng<color>.<enter>TiÕp nhËn nhiÖm vô cÇn ph¶i lµ ®Ö tö cÊp 20 vµ ®· hoµn thµnh nhiÖm vô g­¬ng ®ång.", "B­íc 1: §Õn <color=blue>Gi¶ng Kinh ®­êng <color> gÆp <color=blue>Ni C« DiÖu Nh­<color>, tiÕp nhËn nhiÖm vô, ®Õn <color=blue>M·nh Hæ ®éng<color> thu phôc m·nh hæ ", "B­íc 2: §Õn <color=blue>M·nh Hæ ®éng<color>,liªn tôc ®¸nh b¹i <color=blue>B¹ch hæ tinh (221,202)<color> 3 lÇn")
 end;
 
 
 function v4()
-Talk(5, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>°×Á«ÏÉ×Ó<color>£¬Ñ§»áÎä¹¦<color=blue>Ò»Ò¶ÖªÇï¡¢Á÷Ë®¡¢±ùÐÄ¾÷<color>¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>ºóÌÃ¸½½ü<color>Óöµ½<color=blue>ÄÂÔÆ´È<color>£¬½Óµ½ÈÎÎñ£¬È¥<color=blue>ºóÉ½öùÓãºþ<color>Ñ°ÕÒ<color=red>»ðºü<color>¡£", "µÚ¶þ²½£ºÈ¥ÕÒ»ðºüÖ®Ç°£¬ÏÈÈ¥<color=blue>³É¶¼ÔÓ»õµê<color>Âò<color=red>¼¦ÍÈ<color>¡£", "µÚÈý²½£ºÔÚ<color=blue>ºóÉ½öùÓãºþ<color>´ò°Ü<color=blue>òáòæÍõ<color>£¬ÕÒµ½<color=red>»ðºü<color>¡£", "µÚËÄ²½£º»Øµ½<color=blue>ºóÌÃ¸½½ü<color>£¬½«<color=red>»ðºü<color>½»¸ø<color=blue>ÄÂÔÆ´È<color>£¬ÈÎÎñÍê³É¡£Èç¹û»ðºü¶ªÊ§£¬±ØÐëÖØÐÂ×öÈÎÎñ¡£")
+Talk(5, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>B¹ch Liªn Tiªn tö<color>, häc ®­îc vâ c«ng <color=blue>NhÊt DiÖp Tri Thu, L­u Thñy, B¨ng T©m QuyÕt<color>.<enter>TiÕp nhËn nhiÖm vô cÇn ph¶i lµ ®Ö tö cÊp 30 vµ ®· hoµn thµnh nhiÖm vô thu phôc m·nh hæ ", "B­íc 1: §Õn <color=blue>hËu §­êng <color> gÆp <color=blue>Môc V©n Tõ<color>, tiÕp nhËn nhiÖm vô, ®Õn <color=blue>Ng¹c Ng­ hå<color> t×m <color=red>Háa hå<color>.", "B­íc 2: Tr­íc khi ®i t×m Háa hå, cÇn ®Õn <color=blue>Thµnh §«<color> mua <color=red> ®ïi gµ<color>.", "B­íc 3: §Õn <color=blue>Ng¹c Ng­ hå<color> ®¸nh b¹i <color=blue>Th»n l»n chóa<color>, t×m ®­îc <color=red>Háa hå<color>.")
 end;
 
 
 function v5()
-Talk(8, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>ÇàÁ«ÏÉ×Ó<color>£¬Ñ§»áÎä¹¦<color=blue>²»Ãð²»¾ø¡¢ÃÎµû<color>¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>×óÆ«µî<color>Óöµ½<color=blue>ËÕ´ÊÜ°<color>£¬½Óµ½ÈÎÎñ£¬Ñ°ÕÒ<color=red>¡¶°ÙÄñ³¯·ï¡·ÇúÆ×<color>¡£", "µÚ¶þ²½£ºµ½<color=blue>Çà³ÇÉ½ÉñÏÉ¶´<color>ÕÒµ½Òþ¾ÓµÄ<color=blue>¸ßÈË£¨234,204£©<color>£¬ÏÈ´ò°ÜËûÑøµÄ<color=blue>ÁéÊÞ<color>£¬È»ºó½Óµ½ÈÎÎñ£¬Ïë°ì·¨µÃµ½<color=red>¡¶Ü½ÈØ½õ¼¦Í¼¡·<color>¡£", "µÚÈý²½£ºµ½<color=blue>³É¶¼Ì«Æ½ïÚ¾Ö<color>£¬Óë<color=blue>ïÚ¾ÖÀÏ°å£¨377,316£©<color>¶Ô»°£¬½Óµ½ÈÎÎñ£¬Ïë°ì·¨Åªµ½<color=red>Áé÷êÏãÄÒ¡¢Ó¥¾¦»¤Éí·û<color>ºÍ<color=red>±Ìçô½äÖ¸<color>¡£", "µÚËÄ²½£ºÔÚ³É¶¼<color=blue>Ñ¦Ð¡ÃÃ£¨383,315£©<color>´¦µÃµ½<color=red>Áé÷êÏãÄÒ<color>£»ÔÚ³É¶¼ÐÅÏàËÂ<color=blue>´ÈÔÆ·¨Ê¦£¨402,319£©<color>´¦µÃµ½<color=red>Ó¥¾¦»¤Éí·û<color>£»ÔÚ³É¶¼<color=blue>ÐÁÔ±Íâ£¨400,309£©<color>´¦µÃµ½<color=red>±Ìçô½äÖ¸<color>¡£", "µÚÎå²½£º»Øµ½<color=blue>³É¶¼Ì«Æ½ïÚ¾Ö<color>£¬ÓÃÈýÑù¶«Î÷Ïò<color=blue>ïÚ¾ÖÀÏ°å<color>»»È¡<color=red>¡¶Ü½ÈØ½õ¼¦Í¼¡·<color>¡£", "µÚÁù²½£º»Øµ½<color=blue>Çà³ÇÉ½ÉñÏÉ¶´<color>£¬ÓÃ¡¶Ü½ÈØ½õ¼¦Í¼¡·Ïò<color=blue>¸ßÈË<color>»»È¡<color=red>¡¶°ÙÄñ³¯·ï¡·ÇúÆ×<color>¡£", "µÚÆß²½£º»Øµ½¶ëáÒ<color=blue>×óÆ«µî<color>£¬½«<color=red>¡¶°ÙÄñ³¯·ï¡·ÇúÆ×<color>½»¸ø<color=blue>ËÕ´ÊÜ°<color>£¬ÈÎÎñÍê³É¡£Èç¹û¡¶°ÙÄñ³¯·ï¡·ÇúÆ×¶ªÊ§£¬±ØÐëÖØÐÂ×öÈÎÎñ¡£")
+Talk(8, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>Thanh Liªn Tiªn tö<color>, häc ®­îc vâ c«ng <color=blue>BÊt DiÖt BÊt TuyÖt, Méng §iÖp<color>.<enter>TiÕp nhËn nhiÖm vô cÇn ph¶i lµ ®Ö tö cÊp 40 vµ ®· hoµn thµnh nhiÖm vô Háa hå ", "B­íc 1: §Õn <color=blue>T¶ Biªn ®iÖn<color> gÆp <color=blue>T« Tõ Hinh<color>, tiÕp nhËn nhiÖm vô, ®i t×m <color=red>khóc phæ 'B¸ch §iÓu TriÒu Phông'<color>.", "B­íc 2: §Õn <color=blue>ThÇn Tiªn ®éng<color> t×m <color=blue>Cao nh©n (234,204)<color>, tr­íc tiªn ®¸nh b¹i <color=blue>Linh thó<color>, sau ®ã nhËn nhiÖm vô ®i t×m <color=red>'Phï Dung CÈm Kª ®å'<color>.", "B­íc 3: Trë vÒ <color=blue>Thµnh §« t×m Th¸i B×nh Tiªu Côc<color>, gÆp <color=blue>chñ Tiªu côc (377,316)<color>, tiÕp nhËn nhiÖm vô, ®i t×m <color=red>Linh X¹ H­¬ng Nang, ¦ng T×nh Hé Th©n phï<color> vµ <color=red>BÝch Tû Giíi ChØ<color>.", "B­íc 4: ®i t×m <color=blue>TiÕt TiÓu Muéi (383,315)<color> ®Ó lÊy <color=red>Linh X¹ H­¬ng Nang<color>?®Õn  TÝn T­íng tù t×m <color=blue>Tõ V©n Ph¸p s­ (402,319)<color> ®Ó lÊy <color=red>¦ng T×nh Hé Th©n phï<color>?t×m <color=blue>T©n Viªn ngo¹i (400,309)<color> ®Ó lÊy <color=red>BÝch Tû Giíi ChØ<color>.", "B­íc 5: Trë vÒ gÆp <color=blue>Chñ Tiªu Côc<color>, giao <color=blue>3 thø «ng ta cÇn<color>, lÊy ®­îc <color=red>'Phï Dung CÈm Kª ®å'<color>.", "B­íc 6: Trë l¹i <color=blue>ThÇn Tiªn ®éng<color>, giao 'Phï Dung CÈm Kª ®å' cho <color=blue>Cao nh©n<color> ®æi lÊy <color=red>'B¸ch §iÓu TriÒu Phông'<color>.")
 end;
 
 
 function v6()
-Talk(5, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>É¢»¨ÌìÅ®<color>£¬Ñ§»áÎä¹¦<color=blue>·ð¹âÆÕÕÕ¡¢·ðÐÄ´ÈÓÓ¡¢´Èº½ÆÕ¶É<color>¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>Õýµî<color>Óöµ½<color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>£¬½Óµ½ÈÎÎñ£¬½«<color=red>¡¶½ðÏßÐåÏñ½ð¸Õ¾­¡·<color>ËÍÍù<color=blue>³É¶¼ÐÅÏàËÂ<color>¡£", "µÚ¶þ²½£ºÔÚ<color=blue>³É¶¼ÐÅÏàËÂ<color>£¬Óë<color=blue>´ÈÔÆ·¨Ê¦<color>¶Ô»°£¬µÃÖª·½ÕÉ´Èº£´óÊ¦È¥ÁË<color=blue>ºóÔºµØµÀ<color>¡£", "µÚÈý²½£º½øÈë<color=blue>ºóÔºµØµÀ<color>£¬´ò°Ü<color=blue>ÅÑÉ®Í·Ä¿<color>£¬¾È³ö´Èº£´óÊ¦£¬½»³ö<color=red>¡¶½ðÏßÐåÏñ½ð¸Õ¾­¡·<color>¡£Èç¹û¡¶½ðÏßÐåÏñ½ð¸Õ¾­¡·¶ªÊ§£¬±ØÐëÖØÐÂ×öÈÎÎñ¡£", "µÚËÄ²½£º»Øµ½¶ëáÒ<color=blue>Õýµî<color>£¬Ïò<color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>¸´Ãü£¬ÈÎÎñÍê³É¡£")
+Talk(5, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>T¸n Hoa Thiªn N÷<color>, häc ®­îc vâ c«ng <color=blue>PhËt Quang Phæ ChiÕu, Tõ Hµng Phæ §é<color>.<enter>TiÕp nhËn nhiÖm vô cÇn ph¶i lµ ®Ö tö cÊp 50 vµ ®· hoµn thµnh nhiÖm vô Khóc phæ ", "B­íc 1: §Õn <color=blue>ChÝnh ®iÖn<color> gÆp <color=blue>Ch­ëng m«n Thanh HiÓu S­ Th¸i<color>, tiÕp nhËn nhiÖm vô, giao <color=red>'Kim TuyÕn Tó T­îng Kim Cang Kinh'<color> ®Õn <color=blue>TÝn T­íng tù<color>.", "B­íc 2: §Õn <color=blue>TÝn T­íng tù<color>, gÆp <color=blue>Tõ V©n Ph¸p s­<color>,biÕt ®­îc ph­¬ng tr­îng Tõ H¶i ®¹i s­ ®· ®Õn <color=blue> ®Þa ®¹o hËu viÖn<color>.", "B­íc 3: §i vµo <color=blue> ®Þa ®¹o hËu viÖn<color>, ®¸nh b¹i <color=blue>Ph¶n t¨ng ®Çu môc<color>, cøu ®­îc Tõ H¶i ®¹i s­, giao <color=red>'Kim TuyÕn Tó T­îng Kim Cang Kinh'<color>.NÕu 'Kim TuyÕn Tó T­îng Kim Cang Kinh' bÞ mÊt, ph¶i thùc hiÖn nhiÖm vô l¹i tõ ®Çu.")
 end;
 
 
 function v7()
-Talk(4, "", "Í¨¹ýÍê³ÉÕâ¸öÈÎÎñ£¬ÄãÉýÎª<color=blue>½ð¶¥Ê¥Å®<color>£¬Ë³Àû³öÊ¦¡£<enter>µÚÒ»²½£ºÔÚ<color=blue>Õýµî<color>Óöµ½<color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>£¬½Óµ½ÈÎÎñ£¬¶á»ØÕÆÃÅÐÅÎï<color=red>ÑÌÓñÖ¸»·<color>¡£", "µÚ¶þ²½£ºÔÚ<color=blue>³¤½­Ô´Í·<color>´ò°ÜÅÑÍ½<color=blue>ÇåºÍ<color>£¬µÃµ½<color=red>ÑÌÓñÖ¸»·<color>¡£", "µÚÈý²½£º»Ø¶ëáÒ<color=blue>Õýµî<color>£¬½«<color=red>ÑÌÓñÖ¸»·<color>½»¸ø<color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>£¬ÈÎÎñÍê³É¡£Èç¹ûÑÌÓêÖ¸»·¶ªÊ§£¬±ØÐëÖØÐÂ×öÈÎÎñ¡£")
+Talk(4, "", "Th«ng qua hoµn thµnh nhiÖm vô nµy, ng­¬i ®­îc phong lµ <color=blue>Th¸nh N÷<color>, thuËn lîi xuÊt s­.<enter>TiÕp nhËn nhiÖm vô cÇn ph¶i lµ ®Ö tö cÊp 50 vµ ®· hoµn thµnh nhiÖm vô TÝn T­íng tù ", "B­íc 1: §Õn <color=blue>ChÝnh ®iÖn<color> gÆp <color=blue>Ch­ëng m«n Thanh HiÓu S­ Th¸i<color>, tiÕp nhËn nhiÖm vô, ®o¹t l¹i tÝn vËt <color=red>Yªn Ngäc ChØ hoµn<color>.", "B­íc 2: §Õn <color=blue>Tr­êng Giang nguyªn ®Çu<color> ®¸nh b¹i ph¶n ®å <color=blue>Thanh Hßa<color>, lÊy ®­îc <color=red>Yªn Ngäc ChØ hoµn<color>.")
 end;
 
 function v8()
-Talk(3,"","Í¨¹ýÖØ·µÊ¦ÃÅÈÎÎñ£¬Äã±»·âÎª<color=blue> ½ð¶¥Ê¥Å® <color>,Ñ§µ½ÕòÅÉ¾øÑ§<color=blue> ²»Ãð²»¾ø£¬·ð¹âÆÕÕÕ<color>.","µÚÒ»²½£ºÄãµÄµÈ¼¶³¬¹ý60¼¶ºó£¬ÔÚ<color=blue> Õýµî <color>¼û <color=blue>ÕÆÃÅÇåÏþÊ¦Ì«<color>, ÇëÇóÖØ·µ¶ëáÒÅÉ.","µÚ¶þ²½£ºÍ¨¹ý½»<color=red>50000Á½<color>, ÖØ·µ¶ëáÒÅÉ.")
+Talk(3,"","Th«ng qua nhiÖm vô trïng ph¶n s­ m«n, ng­¬i ®­îc phong lµ<color=blue> Kim §Ønh Th¸nh N÷<color>, häc ®­îc tuyÖt häc trÊn ph¸i<color=blue> BÊt DiÖt BÊt TuyÖt, PhËt Quang Phæ ChiÕu, Thanh ¢m Ph¹n X­íng<color>.","B­íc 1: Sau khi ®¼ng cÊp cña b¹n v­ît qua cÊp 60 t¹i<color=blue> Ch¸nh ®iÖn <color>gÆp <color=blue>Ch­ëng m«n Thanh HiÓu S­ Th¸i<color>, thØnh cÇu trïng ph¶n Nga My Ph¸i.","B­íc 2: Th«ng qua giao nép <color=red>50000 l­îng<color>, trïng ph¶n Nga My Ph¸i.")
 end;
 
 --------------------------------

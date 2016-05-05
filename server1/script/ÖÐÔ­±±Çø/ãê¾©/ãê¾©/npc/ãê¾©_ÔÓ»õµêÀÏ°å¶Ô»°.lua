@@ -2,7 +2,7 @@
 Include("\\script\\global\\global_zahuodian.lua");
 
 function main(sel)
-Say("ÔÓ»õµêÀÏ°å£ºÄúÒªµãÊ²Ã´£¿Èç½ñÕâÊÀµÀ´ó¼Ò¶¼¹ýµÄ²»ÈÝÒ×£¬ËùÒÔÎÒÕâµêÀïµÄ¶«Î÷¶¼²»¹ó£¬Äã¿´¿´ÐèÒªÐ©Ê²Ã´£¿", 2, "½»Ò×/yes", "²»½»Ò×/no");
+Say("ÔÓ»õµêÀÏ°å£ºÄúÒªµãÊ²Ã´£¿Èç½ñÕâÊÀµÀ´ó¼Ò¶¼¹ýµÄ²»ÈÝÒ×£¬ËùÒÔÎÒÕâµêÀïµÄ¶«Î÷¶¼²»¹ó£¬Äã¿´¿´ÐèÒªÐ©Ê²Ã´£¿", 2, "Giao dÞch/yes", "Ta sÏ quay l¹i sau/no");
 
 end;
 

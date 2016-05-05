@@ -1,23 +1,24 @@
 Id	Title	Time	EVENT_MOVE	EVENT_ATTACK	EVENT_SITE	EVENT_RIDE	EVENT_USEITEM	EVENT_ARRANGEITEM	EVENT_DROPITEM	EVENT_CHANGEEQUIP	EVENT_TRADE	EVENT_CHANGEFIGHTSTATE	EVENT_ATTACKED	EVENT_DEATH	EVENT_REVIVE	EVENT_BUYITEM	EVENT_SELLITEM	EVENT_TALK	comment
-1	²É¼¯ÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	»Ô»ÍÖ®¹û
-2	²É¼¯ÖÐ...	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	»Æ½ðÖ®¹û
-3	²É¼¯ÖÐ...	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	»Ô»ÍÖ®¹û
-4	Ê°È¡ÖÐ...	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ôÕ×ÓÏä
-5	´ò¿ªÖÐ...	10	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	¿ªÒ©
-6	´òË®ÖÐ...	8	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2011ÄêÖ²Ê÷½Ú´òË®
-7	²É¼¯ÖÐ...	4	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2011Äê7ÔÂ»î¶¯
-8	´ò¿ªÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Ñ×µÛ±¦²Ø´ò¿ªÃØ±¦
-9	ÖÎÁÆÖÐ...	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	150¼¶¼¼ÄÜØ¤°ïÈÎÎñ
-10	ÁìÎòÖÐ...	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	150¼¶¼¼ÄÜÊìÁ·¶È
-11	´ò¿ªÖÐ...	6	1	0	1	1	0	0	0	0	0	0	0	1	1	0	0	0	ÌìÖ®±¦Ïä
-12	´ò¿ªÖÐ...	0	1	0	1	1	0	0	0	0	0	0	0	1	1	0	0	0	»ìÔªÁéÂ¶°ü
-13	Ê°È¡ÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	3ÃëÊ°È¡
-14	Ê³ÓÃÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2012ÖÐÇï¹úÇì»î¶¯Ê³ÓÃÉñÆæµÄÔÂ±ý
-15	ëçÖÆÖÐ...	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2012Äê11ÔÂ»î¶¯ÔîÌ¨¶ÁÌõëçÖÆÀ°Èâ
-16	µã»ðÖÐ...	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013ÄêÔªÏü»î¶¯µãµÆÁý
-17	É¨Ä¹¼À¾Æ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013ÄêÔªÏü»î¶¯µãµÆÁý
+1	§ang thu thËp…	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Qu¶ Huy Hoµng
+2	§ang thu thËp…	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Qu¶ Hoµng Kim
+3	§ang thu thËp…	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Qu¶ Huy Hoµng
+4	§ang nhÆt…	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Hép b¸nh ch­ng
+5	§ang më…	10	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Më thuèc
+6	§ang thu thËp…	8	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Qu¶ Hoµng Kim
+7	§ang quay sè…	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Quay sè nhËn th­ëng
+8	§ang chµo cê…	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Nghi thøc chµo cê
+9	§ang trÞ liÖu	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	NhiÖm vô cÊp 150 C¸i Bang
+10	§ang l·nh ngé	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	§é tu luyÖn kü n¨ng cÊp 150
+11	§ang më…	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	më tinh luyÖn th¹ch
+12	§ang nhÆt…	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thu thËp 3 gi©y
+13	§ang ¨n…	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	¡n B¸nh Trung Thu.
+14	§ang trång...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	C©y trång
+15	§ang nhÆt…	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Kim tiÒn v« sè
+16	§ang më …	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ÑÌ»¨±¬Öñ
+17	§ang thao t¸c …	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ÑÌ»¨±¬Öñ
 18	ÉÏÏãÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013ÄêÔªÏü»î¶¯µãµÆÁý
 19	´¹µöÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013ÄêÎåÔÂ»î¶¯
 20	¿¾ÓãÖÐ...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013ÄêÎåÔÂ»î¶¯
 21	¼ÀµìÏÈÏÍ...	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013Äê¶ËÎç»î¶¯
 22	ÄÃÈ¡Á¹²è...	3	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2013Äê¶ËÎç»î¶¯
+1000	§ang thu ho¹ch…	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ho¹t ®éng thu thËp Ng«i Sao H¹nh Phóc

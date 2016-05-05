@@ -1,6 +1,6 @@
 EventID	EventName	EventText
-ÊÂ¼þID	ÊÂ¼þÃû³Æ	ÊÂ¼þÃèÊö
-1	ÒýÇæ²âÊÔÈÎÎñ	ÓÃÓÚ²âÊÔÈÎÎñÒýÇæËù×öµÄÒ»ÏµÁÐÈÎÎñ
-3	Í¬°éÈÎÎñ	ÓÉÍ¬°éËù¸øÄãµÄÒ»ÏµÁÐËæ»úÈÎÎñ
-4	¾íÖáÈÎÎñ	ÓÉ¾íÖáËù´¥·¢µÄÒ»ÏµÁÐÈÎÎñ
+ID sù kiÖn	Tªn sù kiÖn	Miªu t¶ sù kiÖn
+1	Ph­¬ng thøc test	¸p dông gièng Ph­¬ng thøc test ®Ó kiÓm tra
+3	NhiÖm vô b¹n ®ång hµnh	NhiÖm vô ngÉu nhiªn do b¹n ®ång hµnh giao 
+4	NhiÖm vô mËt ®å	NhiÖm vô do mËt ®å giao
 5	×°±¸Éý¼¶ÈÎÎñ	¶¨¹ú°²°î×°±¸Ç¿»¯µÄÒ»ÏµÁÐÈÎÎñ
